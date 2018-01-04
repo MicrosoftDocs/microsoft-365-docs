@@ -1,0 +1,76 @@
+<svg id="ICONS" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 105">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #55d2f6;
+      }
+
+      .cls-2, .cls-5, .cls-6 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #2bc7f4;
+      }
+
+      .cls-2, .cls-5, .cls-7 {
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-3 {
+        fill: #d1e55c;
+      }
+
+      .cls-4 {
+        fill: #bad80a;
+      }
+
+      .cls-5, .cls-7 {
+        stroke: #556a8a;
+      }
+
+      .cls-7, .cls-9 {
+        fill: #fff;
+      }
+
+      .cls-8 {
+        fill: #556a8a;
+      }
+    </style>
+  </defs>
+  <title>ms365enterprise-information-end-user-collab-tool-6</title>
+  <circle class="cls-1" cx="75" cy="55.3" r="24.5"/>
+  <circle class="cls-2" cx="75" cy="55.8" r="41"/>
+  <g>
+    <circle class="cls-3" cx="75" cy="16.8" r="11"/>
+    <path class="cls-4" d="M86,16.8a11,11,0,0,1-22,0Z"/>
+    <g>
+      <circle class="cls-5" cx="75" cy="13.05" r="3.75"/>
+      <path class="cls-5" d="M69,22.8a6,6,0,1,1,12,0"/>
+    </g>
+  </g>
+  <g>
+    <circle class="cls-3" cx="109" cy="80.8" r="11"/>
+    <path class="cls-4" d="M120,80.8a11,11,0,1,1-22,0Z"/>
+    <g>
+      <circle class="cls-5" cx="109" cy="77.05" r="3.75"/>
+      <path class="cls-5" d="M103,86.8a6,6,0,0,1,12,0"/>
+    </g>
+  </g>
+  <g>
+    <circle class="cls-3" cx="42" cy="80.8" r="11"/>
+    <path class="cls-4" d="M53,80.8a11,11,0,0,1-22,0Z"/>
+    <g>
+      <circle class="cls-5" cx="42" cy="77.05" r="3.75"/>
+      <path class="cls-5" d="M36,86.8a6,6,0,0,1,12,0"/>
+    </g>
+  </g>
+  <g>
+    <rect class="cls-6" x="54.5" y="35.5" width="40" height="40"/>
+    <path class="cls-7" d="M70,37.5v7l-2.5,2-2.5-2v-7a7.72,7.72,0,0,0-5,7c0,3.1,2,5.37,5,6.26V71.69c0,1.28,1.22,2.85,2.5,2.85S70,73,70,71.57V50.76c2-.72,5-3.16,5-6.26C75,41.79,72,38.41,70,37.5Z"/>
+    <path class="cls-8" d="M87,59H83V45l2-2-2.18-6h-1.9L79,43l2,2V59H77v3h2a3.07,3.07,0,0,1-2,2.63V72.5C77,74.6,78.42,76,79.78,76h4.44C85.58,76,87,74.6,87,72.5V64.63A3.07,3.07,0,0,1,85,62h2Z"/>
+    <rect class="cls-9" x="80" y="64" width="1" height="10"/>
+    <rect class="cls-9" x="83" y="64" width="1" height="10"/>
+  </g>
+</svg>

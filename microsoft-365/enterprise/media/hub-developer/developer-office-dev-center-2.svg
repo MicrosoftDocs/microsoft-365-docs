@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 105">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #556a8a;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: #c8edfb;
+      }
+
+      .cls-4 {
+        fill: none;
+        stroke: #556a8a;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-5 {
+        fill: #d83b01;
+      }
+
+      .cls-6 {
+        fill: #e5e5e5;
+      }
+    </style>
+  </defs>
+  <title>ms365enterprise-developer-office-2</title>
+  <g id="ICONS">
+    <g>
+      <polygon class="cls-1" points="92.69 79 55.31 79 51 83 97 83 92.69 79"/>
+      <polygon class="cls-1" points="77 81 71 81 72 70 76 70 77 81"/>
+      <rect class="cls-2" x="20" y="14" width="109" height="59" rx="4" ry="4" transform="translate(149 87) rotate(180)"/>
+      <path class="cls-3" d="M129.5,28V18a4,4,0,0,0-4-4H24.5a4,4,0,0,0-4,4V28Z"/>
+      <rect class="cls-4" x="20" y="14" width="109" height="59" rx="4" ry="4" transform="translate(149 87) rotate(180)"/>
+    </g>
+    <polygon class="cls-5" points="91.88 62.5 91.88 62 91.88 28.83 78.63 25 55.9 33.47 55.78 57.91 63.88 54.74 63.88 34.74 79.88 31.68 79.88 61.08 56.7 57.91 78.88 65.91 78.88 65.91 92 62.39 91.88 62.5 91.88 62.5"/>
+    <polygon class="cls-1" points="109.04 86 38.96 86 31.76 92 116.24 92 109.04 86"/>
+    <polygon class="cls-6" points="37.28 90 39.68 88 108.32 88 110.72 90 37.28 90"/>
+  </g>
+</svg>

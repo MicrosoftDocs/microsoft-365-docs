@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 105">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #c6df33;
+      }
+
+      .cls-2 {
+        fill: #d1e55c;
+      }
+
+      .cls-2, .cls-9 {
+        fill-rule: evenodd;
+      }
+
+      .cls-3, .cls-5 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        stroke: #ababab;
+      }
+
+      .cls-3, .cls-4, .cls-5, .cls-9 {
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-4 {
+        fill: none;
+        stroke: #bad80a;
+      }
+
+      .cls-5 {
+        stroke: #55d2f6;
+      }
+
+      .cls-6 {
+        fill: #ffc52b;
+      }
+
+      .cls-7 {
+        fill: #ffb900;
+      }
+
+      .cls-8, .cls-9 {
+        fill: #2bc7f4;
+      }
+
+      .cls-9 {
+        stroke: #556a8a;
+      }
+    </style>
+  </defs>
+  <title>ms365enterprise-admin-security-fasttrack-security-4</title>
+  <g id="ICONS">
+    <g>
+      <g>
+        <circle class="cls-1" cx="41.23" cy="54.56" r="30.48" transform="translate(-26.51 45.14) rotate(-45)"/>
+        <path class="cls-2" d="M62.78,33a30.49,30.49,0,0,1,0,43.11L19.67,33A30.49,30.49,0,0,1,62.78,33Z"/>
+      </g>
+      <g>
+        <polygon class="cls-3" points="97.81 21.5 106.7 37 97.81 52.5 80.03 52.5 71.13 37 80.03 21.5 97.81 21.5"/>
+        <polygon class="cls-3" points="97.81 56.5 106.7 72 97.81 87.5 80.03 87.5 71.13 72 80.03 56.5 97.81 56.5"/>
+        <line class="cls-4" x1="108.25" y1="60" x2="88.76" y2="70.3"/>
+        <polyline class="cls-4" points="88.92 69.98 88.92 37.25 110.25 49"/>
+        <polygon class="cls-5" points="129.75 37.5 139.25 54 129.75 70.5 110.75 70.5 101.25 54 110.75 37.5 129.75 37.5"/>
+        <g>
+          <path class="cls-6" d="M122.34,51.29,128.53,41h-7.45l-9.82,14.25h7.13L111.78,67.5l6.09-5.43L120.21,60l10-8.7Z"/>
+          <path class="cls-7" d="M122.34,51.29,128.53,41h-4.28l-9.82,14.25h7.13l-3.67,6.82L120.21,60l10-8.7Z"/>
+        </g>
+        <circle class="cls-8" cx="88.92" cy="37.57" r="5.2"/>
+        <circle class="cls-8" cx="88.92" cy="69.98" r="5.2"/>
+      </g>
+    </g>
+    <path class="cls-9" d="M40.5,73.45h-.26C27.86,67.28,21.93,52.89,26.57,40.56c.26-.26.26-.51.52-.51h.77a10.45,10.45,0,0,0,5.67,1.8c2.58,0,4.38-1.54,5.67-2.57L40,38.5h1l.77.77a9.11,9.11,0,0,0,5.93,2.57A9.68,9.68,0,0,0,53.13,40h.77a.55.55,0,0,1,.52.51C59.06,52.89,53.13,67.28,41,73.45Z"/>
+  </g>
+</svg>

@@ -1,0 +1,64 @@
+<svg id="ICONS" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 105">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #e5e5e5;
+      }
+
+      .cls-3, .cls-4, .cls-7 {
+        fill: none;
+      }
+
+      .cls-3 {
+        stroke: #2bc7f4;
+      }
+
+      .cls-3, .cls-5, .cls-7 {
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-5 {
+        fill: #c6df33;
+        stroke: #bad80a;
+      }
+
+      .cls-6 {
+        fill: #f3f8d6;
+      }
+
+      .cls-7 {
+        stroke: #556a8a;
+      }
+
+      .cls-8 {
+        fill: #55d2f6;
+      }
+    </style>
+  </defs>
+  <title>ms365enterprise-information-end-user-work-securely-3</title>
+  <g>
+    <g>
+      <circle class="cls-1" cx="63.84" cy="58.72" r="38.72"/>
+      <path class="cls-2" d="M63.51,96.67c-21.06,0-38.33-16.78-38.49-37.4V58.16h77v1.11C101.83,79.89,84.57,96.67,63.51,96.67Z"/>
+      <circle class="cls-3" cx="63.84" cy="58.72" r="38.72"/>
+      <ellipse class="cls-3" cx="63.84" cy="58.72" rx="17.04" ry="38.72"/>
+      <line class="cls-3" x1="25" y1="59" x2="103" y2="59"/>
+      <rect class="cls-4" x="25.12" y="20" width="77.44" height="77.44"/>
+    </g>
+    <path class="cls-3" d="M96.12,36.71C88.82,39.92,77.2,42,64.12,42s-24.7-2.08-32-5.29"/>
+    <path class="cls-3" d="M96.12,81c-7.3-3.21-18.92-5.29-32-5.29s-24.7,2.08-32,5.29"/>
+  </g>
+  <path class="cls-5" d="M91,9c-.27,0-.53,0-.79,0s-.52,0-.79,0A19.72,19.72,0,0,0,69.75,28.71c0,5.52,1,6.15,3.15,11.83,5.71,14.9,17.35,28.38,17.35,28.38s11.64-13.48,17.35-28.38c2.18-5.68,3.15-6.31,3.15-11.83A19.72,19.72,0,0,0,91,9Z"/>
+  <circle class="cls-6" cx="90.25" cy="28" r="18"/>
+  <g>
+    <rect class="cls-7" x="84" y="13.4" width="12" height="16" rx="6" ry="6"/>
+    <path class="cls-1" d="M100,39.17a.86.86,0,0,1-.89.83H80.89a.86.86,0,0,1-.89-.83V25.83a.86.86,0,0,1,.89-.83H99.11a.86.86,0,0,1,.89.83Z"/>
+    <path class="cls-8" d="M100,25.71V39.87L84.93,24.8H99.09A.92.92,0,0,1,100,25.71Z"/>
+    <path class="cls-7" d="M100,39.17a.86.86,0,0,1-.89.83H80.89a.86.86,0,0,1-.89-.83V25.83a.86.86,0,0,1,.89-.83H99.11a.86.86,0,0,1,.89.83Z"/>
+  </g>
+</svg>

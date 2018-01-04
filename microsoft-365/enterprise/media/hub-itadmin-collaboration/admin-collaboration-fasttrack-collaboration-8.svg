@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 105">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-8 {
+        fill: #fff;
+      }
+
+      .cls-1 {
+        stroke: #55d2f6;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-8 {
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        stroke: #ababab;
+      }
+
+      .cls-3, .cls-9 {
+        fill: none;
+      }
+
+      .cls-3 {
+        stroke: #bad80a;
+      }
+
+      .cls-4 {
+        fill: #2bc7f4;
+      }
+
+      .cls-5 {
+        fill: #556a8a;
+      }
+
+      .cls-6 {
+        fill: #ffc52b;
+      }
+
+      .cls-7 {
+        fill: #ffb900;
+      }
+
+      .cls-8 {
+        stroke: #556a8a;
+      }
+    </style>
+  </defs>
+  <title>ms365enterprise-admin-collaboration-fasttrack-collaboration-8</title>
+  <g id="ICONS">
+    <g>
+      <g>
+        <polygon class="cls-1" points="54.5 28 68.75 52.5 54.5 77 26 77 11.75 52.5 26 28 54.5 28"/>
+        <polygon class="cls-2" points="91.33 17 100.83 33.5 91.33 50 72.33 50 62.83 33.5 72.33 17 91.33 17"/>
+        <polygon class="cls-1" points="124.5 36 134 52.5 124.5 69 105.5 69 96 52.5 105.5 36 124.5 36"/>
+      </g>
+      <polygon class="cls-2" points="91.33 55 100.83 71.5 91.33 88 72.33 88 62.83 71.5 72.33 55 91.33 55"/>
+      <polyline class="cls-3" points="81.83 69.81 81.83 34.84 114.36 53.47 81.67 70.16"/>
+      <circle class="cls-4" cx="81.83" cy="35.19" r="5.56"/>
+      <circle class="cls-4" cx="81.83" cy="69.81" r="5.56"/>
+      <circle class="cls-5" cx="114.36" cy="53.47" r="5.56"/>
+    </g>
+    <g>
+      <path class="cls-6" d="M129,26l7.82-13h-9.41L115,31h9l-8.33,15.48,7.69-6.86,3-2.63L139,26Z"/>
+      <path class="cls-7" d="M129,26l7.82-13h-5.41L119,31h9l-4.64,8.62,3-2.63L139,26Z"/>
+    </g>
+    <g>
+      <g>
+        <circle class="cls-8" cx="31" cy="42.79" r="5"/>
+        <path class="cls-8" d="M23,55.79a8,8,0,0,1,16,0"/>
+      </g>
+      <g>
+        <circle class="cls-8" cx="50" cy="42.79" r="5"/>
+        <path class="cls-8" d="M42,55.79a8,8,0,0,1,16,0"/>
+      </g>
+      <g>
+        <circle class="cls-8" cx="40" cy="53.25" r="6"/>
+        <path class="cls-8" d="M30,69a10,10,0,0,1,20,0"/>
+      </g>
+      <rect class="cls-9" x="10" y="18" width="64" height="64"/>
+    </g>
+  </g>
+</svg>

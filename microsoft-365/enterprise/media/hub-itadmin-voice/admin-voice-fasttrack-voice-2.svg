@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 105">
+  <defs>
+    <style>
+      .cls-1, .cls-10, .cls-2, .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-1 {
+        stroke: #2bc7f4;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-9 {
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        stroke: #ababab;
+      }
+
+      .cls-3 {
+        stroke: #55d2f6;
+      }
+
+      .cls-4, .cls-9 {
+        fill: none;
+      }
+
+      .cls-4 {
+        stroke: #bad80a;
+      }
+
+      .cls-5 {
+        fill: #2bc7f4;
+      }
+
+      .cls-6 {
+        fill: #556a8a;
+      }
+
+      .cls-7 {
+        fill: #ffc52b;
+      }
+
+      .cls-8 {
+        fill: #ffb900;
+      }
+
+      .cls-9 {
+        stroke: #556a8a;
+      }
+
+      .cls-10 {
+        opacity: 0.4;
+      }
+    </style>
+  </defs>
+  <title>ms365enterprise-admin-voice-fasttrack-voice-2</title>
+  <g id="ICONS">
+    <g>
+      <path class="cls-1" d="M66.86,49.46A10.11,10.11,0,0,0,65,46.41,14,14,0,0,0,61.18,43v-.34A11.34,11.34,0,0,0,49.85,31.47a11.13,11.13,0,0,0-6,1.68A15.16,15.16,0,0,0,31.67,27a14.92,14.92,0,0,0-15,14.68c0,.56.14,1,.14,1.54C12.52,45.32,10,49,10,53.57A12.39,12.39,0,0,0,22.06,65.83C22.7,70.41,28.47,74,35.5,74c6,0,11.07-2.6,12.83-6.21A14,14,0,0,0,66.86,49.46Z"/>
+      <g>
+        <g>
+          <g>
+            <polygon class="cls-2" points="92.33 19 101.83 35.5 92.33 52 73.33 52 63.83 35.5 73.33 19 92.33 19"/>
+            <polygon class="cls-3" points="125.5 38 135 54.5 125.5 71 106.5 71 97 54.5 106.5 38 125.5 38"/>
+          </g>
+          <polygon class="cls-2" points="92.33 57 101.83 73.5 92.33 90 73.33 90 63.83 73.5 73.33 57 92.33 57"/>
+          <polyline class="cls-4" points="82.83 71.81 82.83 36.84 115.36 55.47 82.67 72.16"/>
+          <circle class="cls-5" cx="82.83" cy="37.19" r="5.56"/>
+          <circle class="cls-5" cx="82.83" cy="71.81" r="5.56"/>
+          <circle class="cls-6" cx="115.36" cy="55.47" r="5.56"/>
+        </g>
+        <g>
+          <path class="cls-7" d="M130,28l7.82-13h-9.41L116,33h9l-8.33,15.48,7.69-6.86,3-2.63L140,28Z"/>
+          <path class="cls-8" d="M130,28l7.82-13h-5.41L120,33h9l-4.64,8.62,3-2.63L140,28Z"/>
+        </g>
+        <g>
+          <path class="cls-9" d="M26.92,49.2V48a11,11,0,0,1,22,0V49.2"/>
+          <path class="cls-9" d="M29,57.34s-.81,8.95,6.51,8.14"/>
+          <path class="cls-6" d="M31,48V59H26.57l-.24-.11A5.12,5.12,0,0,1,24,55V48Z"/>
+          <rect class="cls-6" x="34" y="63" width="9" height="6" rx="3" ry="3"/>
+        </g>
+        <rect class="cls-10" x="29" y="48" width="2" height="11"/>
+        <path class="cls-6" d="M45,48V59h4.43l.24-.11A5.12,5.12,0,0,0,52,55V48Z"/>
+        <rect class="cls-10" x="45" y="48" width="2" height="11"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,92 @@
+<svg id="Illustrations" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 140">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #556a8a;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: #ace8f9;
+      }
+
+      .cls-4 {
+        fill: none;
+      }
+
+      .cls-4, .cls-5 {
+        stroke: #556a8a;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-5 {
+        fill: #fcfcfc;
+      }
+
+      .cls-6 {
+        fill: #414042;
+      }
+
+      .cls-7 {
+        fill: #e5e5e5;
+      }
+
+      .cls-8 {
+        fill: #999;
+      }
+
+      .cls-9 {
+        fill: #acacac;
+      }
+
+      .cls-10 {
+        fill: #0072c6;
+      }
+
+      .cls-11 {
+        fill: #bad80a;
+      }
+    </style>
+  </defs>
+  <title>information-worker-product-help-intune-3</title>
+  <g>
+    <g>
+      <g>
+        <polygon class="cls-1" points="169.53 105.75 163.78 105.75 164.74 92.33 168.58 92.33 169.53 105.75"/>
+        <polygon class="cls-1" points="191.28 104 141.72 104 136 108 197 108 191.28 104"/>
+      </g>
+      <path class="cls-2" d="M231,26V94H102V26a4,4,0,0,1,4-4H227A4,4,0,0,1,231,26Z"/>
+      <path class="cls-3" d="M231,26v8H102V26a4,4,0,0,1,4-4H227A4,4,0,0,1,231,26Z"/>
+      <path class="cls-4" d="M231,94V26a4,4,0,0,0-4-4H106a4,4,0,0,0-4,4V94Z"/>
+      <rect class="cls-5" x="208" y="42" width="93" height="69" rx="4" ry="4"/>
+      <path class="cls-6" d="M309,117H201.2a4,4,0,0,1-4.2-3H313S311.83,117,309,117Z"/>
+      <polygon class="cls-5" points="200 113 208 108 301 108 310 113 200 113"/>
+      <rect class="cls-7" x="212" y="46" width="85" height="54"/>
+    </g>
+    <rect class="cls-5" x="88" y="57" width="30" height="56" rx="4" ry="4"/>
+    <rect class="cls-7" x="91" y="64" width="24" height="41"/>
+    <path class="cls-8" d="M106.27,62H98.73c-.4,0-.73-.45-.73-1s.33-1,.73-1h7.54c.4,0,.73.45.73,1S106.67,62,106.27,62Z"/>
+    <polygon class="cls-9" points="256 106 253 105.58 253 103.61 256 103 256 106"/>
+  </g>
+  <g>
+    <path class="cls-10" d="M170,69.8c-8.71,0-8.53-1.39-8.53-6.66h-7.21c0,5.27.45,6.66-8.26,6.66V72h24Z"/>
+    <polygon class="cls-10" points="176 68 182 63.5 176 59.12 176 68"/>
+    <path class="cls-10" d="M178.4,65V62H142V42h32v7h3V40.66c0-.83-1.17-1.66-2-1.66H140.66A1.79,1.79,0,0,0,139,40.66V63.34A1.79,1.79,0,0,0,140.66,65h13.6c.06,4.16,7.16,4.16,7.21,0Z"/>
+    <circle class="cls-10" cx="158" cy="51.5" r="4"/>
+    <path class="cls-10" d="M185.61,50H161v3h23V74H174V66h-3v9.61A1.37,1.37,0,0,0,172.39,77h13.23A1.37,1.37,0,0,0,187,75.61V51.39A1.37,1.37,0,0,0,185.61,50ZM180,76h-3l-.08-1H180Z"/>
+  </g>
+  <g>
+    <rect class="cls-1" x="266" y="32.07" width="2" height="25" rx="0.5" ry="0.5"/>
+    <path class="cls-2" d="M292,46l-20-8.65v15.4C272,58.3,281.16,63,292,63s20-4.7,20-10.26V37.28Z"/>
+    <path class="cls-4" d="M292,46l-20-8.65v15.4C272,58.3,281.16,63,292,63s20-4.7,20-10.26V37.28Z"/>
+    <polygon class="cls-11" points="311 36.61 291.81 42.48 273 36.86 273 44 292 52.04 311 44 311 36.61"/>
+    <polygon class="cls-7" points="263 33 292 22.07 320 33 292 45 263 33"/>
+    <polygon class="cls-4" points="321 33 292 22.07 263 33 292 45.99 321 33"/>
+    <path class="cls-1" d="M265,58V54c0-2.2.72-4,1.6-4h.8c.88,0,1.6,1.8,1.6,4v4Z"/>
+  </g>
+  <rect class="cls-8" x="100" y="107" width="6" height="2" rx="1" ry="1"/>
+</svg>

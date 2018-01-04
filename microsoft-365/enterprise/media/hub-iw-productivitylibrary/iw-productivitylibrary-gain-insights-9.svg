@@ -1,0 +1,49 @@
+<svg id="ICONS" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 105">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #00bcf2;
+      }
+
+      .cls-2 {
+        fill: #556a8a;
+      }
+
+      .cls-3 {
+        fill: none;
+        stroke: #ffb900;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-4 {
+        fill: #ffb900;
+      }
+
+      .cls-5 {
+        fill: #fff;
+      }
+
+      .cls-6 {
+        fill: #2bc7f4;
+      }
+    </style>
+  </defs>
+  <title>ms365enterprise-information-end-user-gain-insights-9</title>
+  <g>
+    <g>
+      <path class="cls-1" d="M102.52,34.11A40,40,0,1,0,107,52.5,40,40,0,0,0,102.52,34.11ZM66.71,75.53a22.73,22.73,0,0,1,0-45.45A22.7,22.7,0,0,1,87.58,43.8,22.75,22.75,0,0,1,66.71,75.53Z"/>
+      <path class="cls-2" d="M102.52,34.11,87.58,43.8a22.84,22.84,0,0,0-16-13.21L80.4,14.8A40,40,0,0,1,102.52,34.11Z"/>
+    </g>
+    <g>
+      <polyline class="cls-3" points="18.99 87 67.6 46.45 107 86 142.38 54.44"/>
+      <polygon class="cls-4" points="142.88 64.95 140.89 64.77 141.81 54.95 131.95 54.75 131.99 52.75 144 53 142.88 64.95"/>
+    </g>
+    <g>
+      <path class="cls-2" d="M85,52c0,3.76-8.17,13-18.24,13S48.53,55.78,48.53,52c0-4.12,8.17-12,18.24-12S85,48.26,85,52Z"/>
+      <circle class="cls-5" cx="66.77" cy="52.52" r="8.64"/>
+      <circle class="cls-6" cx="66.77" cy="52.52" r="5.76"/>
+      <circle class="cls-5" cx="68.69" cy="49.64" r="2.88"/>
+    </g>
+  </g>
+</svg>

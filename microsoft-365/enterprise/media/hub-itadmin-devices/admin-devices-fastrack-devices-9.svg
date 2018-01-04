@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 105">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-8 {
+        fill: #fff;
+      }
+
+      .cls-1 {
+        stroke: #55d2f6;
+      }
+
+      .cls-1, .cls-10, .cls-2, .cls-3 {
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        stroke: #ababab;
+      }
+
+      .cls-10, .cls-11, .cls-3 {
+        fill: none;
+      }
+
+      .cls-3 {
+        stroke: #bad80a;
+      }
+
+      .cls-4 {
+        fill: #2bc7f4;
+      }
+
+      .cls-5 {
+        fill: #556a8a;
+      }
+
+      .cls-6 {
+        fill: #ffc52b;
+      }
+
+      .cls-7 {
+        fill: #ffb900;
+      }
+
+      .cls-9 {
+        fill: #e5e5e5;
+      }
+
+      .cls-10 {
+        stroke: #556a8a;
+      }
+    </style>
+  </defs>
+  <title>ms365enterprise-admin-devices-fastrack-devices-9</title>
+  <g id="ICONS">
+    <g>
+      <g>
+        <polygon class="cls-1" points="57.38 30 71.63 54.5 57.38 79 28.88 79 14.63 54.5 28.88 30 57.38 30"/>
+        <polygon class="cls-2" points="95.33 19 104.83 35.5 95.33 52 76.33 52 66.83 35.5 76.33 19 95.33 19"/>
+        <polygon class="cls-1" points="128.5 37.22 138 53.72 128.5 70.22 109.5 70.22 100 53.72 109.5 37.22 128.5 37.22"/>
+      </g>
+      <polygon class="cls-2" points="95.33 57 104.83 73.5 95.33 90 76.33 90 66.83 73.5 76.33 57 95.33 57"/>
+      <polyline class="cls-3" points="85.83 71.03 85.83 36.06 118.36 54.68 85.67 71.37"/>
+      <circle class="cls-4" cx="85.83" cy="36.4" r="5.56"/>
+      <circle class="cls-4" cx="85.83" cy="71.03" r="5.56"/>
+      <circle class="cls-5" cx="118.36" cy="54.68" r="5.56"/>
+    </g>
+    <g>
+      <path class="cls-6" d="M133,27.21l7.82-13h-9.41L119,32.21h9l-8.33,15.48,7.69-6.86,3-2.63,12.69-11Z"/>
+      <path class="cls-7" d="M133,27.21l7.82-13h-5.41L123,32.21h9l-4.64,8.62,3-2.63,12.69-11Z"/>
+    </g>
+    <g>
+      <path class="cls-8" d="M57.49,42.61h-28a2,2,0,0,0-2,2V61.78a2,2,0,0,0,2,2h28a2,2,0,0,0,2-2V44.58A2,2,0,0,0,57.49,42.61Z"/>
+      <path class="cls-9" d="M59.48,44.3v5.41h-32V44.3a1.79,1.79,0,0,1,1.78-1.8H57.71A1.79,1.79,0,0,1,59.48,44.3Z"/>
+      <path class="cls-10" d="M57,42H29a2,2,0,0,0-2,2V62a2,2,0,0,0,2,2H57a2,2,0,0,0,2-2V44A2,2,0,0,0,57,42Z"/>
+      <rect class="cls-11" x="27" y="39" width="33" height="33"/>
+      <polygon class="cls-5" points="49.12 69 36.88 69 35 71 51 71 49.12 69"/>
+      <rect class="cls-5" x="42" y="65" width="2" height="4"/>
+    </g>
+  </g>
+</svg>

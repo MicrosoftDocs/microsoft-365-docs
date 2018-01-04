@@ -1,0 +1,81 @@
+<svg id="ICONS" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 105">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-4, .cls-6 {
+        fill: none;
+      }
+
+      .cls-1 {
+        stroke: #ffb900;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-6, .cls-7, .cls-8 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-6, .cls-7 {
+        stroke-width: 2px;
+      }
+
+      .cls-2, .cls-7 {
+        stroke: #2bc7f4;
+      }
+
+      .cls-3 {
+        fill: #fff;
+        stroke: #556a8a;
+      }
+
+      .cls-4 {
+        stroke: #fff;
+      }
+
+      .cls-5 {
+        fill: #bad80a;
+      }
+
+      .cls-6 {
+        stroke: #ace8f9;
+      }
+
+      .cls-7 {
+        fill: #55d2f6;
+      }
+
+      .cls-8 {
+        fill: #ace8f9;
+        stroke: #d7f4fd;
+      }
+    </style>
+  </defs>
+  <title>ms365enterprise-information-end-user-chat-bsed-11</title>
+  <g>
+    <g>
+      <path class="cls-1" d="M56.6,22.05H93.06a9.55,9.55,0,0,1,9.6,9.51V51.64a9.55,9.55,0,0,1-9.6,9.51H73L62.66,71.05V61.15H56.6A9.55,9.55,0,0,1,47,51.64V31.56A9.55,9.55,0,0,1,56.6,22.05Z"/>
+      <path class="cls-2" d="M36.8,12H70.2A8.77,8.77,0,0,1,79,20.74V39.2a8.77,8.77,0,0,1-8.8,8.74H51.83L42,57.05v-9H37a9,9,0,0,1-9-8.85V20.74A8.77,8.77,0,0,1,36.8,12Z"/>
+    </g>
+    <g>
+      <path class="cls-3" d="M110,33H60a4,4,0,0,0-4,4V74a4,4,0,0,0,4,4h5V89L76,78h38V37A4,4,0,0,0,110,33Z"/>
+      <g>
+        <circle class="cls-4" cx="103" cy="69" r="5"/>
+        <path class="cls-4" d="M95,82a8,8,0,0,1,16,0"/>
+      </g>
+      <line class="cls-2" x1="62" y1="42" x2="81" y2="42"/>
+      <line class="cls-2" x1="62" y1="48" x2="102" y2="48"/>
+      <line class="cls-2" x1="62" y1="54" x2="102" y2="54"/>
+      <path class="cls-3" d="M110.93,33H60.07A4,4,0,0,0,56,37V74a4,4,0,0,0,4.07,4h5.09V89L76.34,78H115V37A4,4,0,0,0,110.93,33Z"/>
+      <path class="cls-5" d="M119.91,56H91.09A3.05,3.05,0,0,0,88,59V80a3.05,3.05,0,0,0,3.09,3h3.09v8l8.24-8h17.5A3.05,3.05,0,0,0,123,80V59A3.05,3.05,0,0,0,119.91,56Z"/>
+      <g>
+        <circle class="cls-4" cx="107" cy="66" r="5"/>
+        <path class="cls-4" d="M99,79a8,8,0,0,1,16,0"/>
+      </g>
+      <line class="cls-6" x1="62" y1="42" x2="81" y2="42"/>
+      <line class="cls-6" x1="62" y1="48" x2="102" y2="48"/>
+      <line class="cls-6" x1="62" y1="54" x2="86" y2="54"/>
+    </g>
+    <g>
+      <path class="cls-7" d="M109,11l-.5,0-.5,0A12.5,12.5,0,0,0,95.5,23.5c0,3.5.62,3.9,2,7.5,3.62,9.45,11,18,11,18s7.38-8.55,11-18c1.38-3.6,2-4,2-7.5A12.5,12.5,0,0,0,109,11Z"/>
+      <circle class="cls-8" cx="108.5" cy="23" r="7"/>
+    </g>
+  </g>
+</svg>

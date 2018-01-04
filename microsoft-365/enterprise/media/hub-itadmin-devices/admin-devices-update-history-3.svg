@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 105">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #55d2f6;
+      }
+
+      .cls-2, .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        opacity: 0.6;
+      }
+
+      .cls-3 {
+        opacity: 0.7;
+      }
+
+      .cls-4 {
+        fill: #ffc52b;
+      }
+
+      .cls-5 {
+        fill: #bad80a;
+      }
+
+      .cls-6 {
+        fill: #ace8f9;
+      }
+
+      .cls-7 {
+        fill: none;
+      }
+
+      .cls-8 {
+        fill: #d7f4fd;
+      }
+
+      .cls-9 {
+        fill: #556a8a;
+      }
+    </style>
+  </defs>
+  <title>ms365enterprise-admin-devices-update-history-3</title>
+  <g id="ICONS">
+    <circle class="cls-1" cx="31" cy="65" r="10"/>
+    <circle class="cls-1" cx="125" cy="68" r="18"/>
+    <circle class="cls-2" cx="55" cy="69" r="24"/>
+    <circle class="cls-3" cx="98" cy="48" r="36"/>
+    <circle class="cls-4" cx="108" cy="79" r="7"/>
+    <circle class="cls-5" cx="120" cy="20" r="5"/>
+    <g>
+      <path class="cls-6" d="M102,52.5a27,27,0,0,1-27,27c-.34,0-.67,0-1,0a27,27,0,0,1,0-53.94c.33,0,.66,0,1,0A27,27,0,0,1,102,52.5Z"/>
+      <g>
+        <rect class="cls-7" x="43" y="20.5" width="64" height="64"/>
+        <path class="cls-8" d="M102,52.5a27,27,0,0,1-27,27c-.34,0-.67,0-1,0V25.53c.33,0,.66,0,1,0A27,27,0,0,1,102,52.5Z"/>
+        <polygon class="cls-9" points="75 53.59 75 35 73 35 73 54.41 85.14 66.56 86.56 65.14 75 53.59"/>
+        <path class="cls-9" d="M75,24.5A28,28,0,0,0,49,42.15V29H47V44H63V42H51A25.61,25.61,0,0,1,75,26.5a26,26,0,1,1-24.73,34h-2.1A28,28,0,1,0,75,24.5Z"/>
+        <rect class="cls-7" x="43" y="20.5" width="64" height="64"/>
+      </g>
+    </g>
+  </g>
+</svg>

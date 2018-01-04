@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 105">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #556a8a;
+      }
+
+      .cls-2 {
+        fill: #adbdca;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-4 {
+        fill: #c8edfb;
+      }
+
+      .cls-5, .cls-6 {
+        fill: none;
+      }
+
+      .cls-5 {
+        stroke: #556a8a;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-7 {
+        fill: #d83b01;
+      }
+
+      .cls-8 {
+        fill: #ffb900;
+      }
+    </style>
+  </defs>
+  <title>ms365enterprise-admin-collaboration-proplus-deployment-3</title>
+  <g id="ICONS">
+    <g>
+      <g>
+        <g>
+          <polygon class="cls-1" points="117.17 94.25 32.93 94.25 38.2 88.84 112.24 88.84 117.17 94.25"/>
+          <polygon class="cls-2" points="109.25 92 40.85 92 43.25 90 106.92 90 109.25 92"/>
+          <polygon class="cls-1" points="93.69 82 56.31 82 52 86 98 86 93.69 82"/>
+          <polygon class="cls-1" points="77.21 83.44 72.17 83.44 73.18 73.36 76.2 73.36 77.21 83.44"/>
+          <rect class="cls-3" x="20" y="17" width="109" height="59" rx="4" ry="4" transform="translate(149 93) rotate(180)"/>
+          <path class="cls-4" d="M130,30.5v-10a4,4,0,0,0-4-4H25a4,4,0,0,0-4,4v10Z"/>
+          <rect class="cls-5" x="20" y="17" width="109" height="59" rx="4" ry="4" transform="translate(149 93) rotate(180)"/>
+        </g>
+        <rect class="cls-6" x="11.5" y="11" width="127" height="91"/>
+      </g>
+      <rect class="cls-7" x="32" y="24" width="38" height="18"/>
+      <rect class="cls-8" x="72" y="24" width="18" height="18"/>
+      <rect class="cls-7" x="92" y="24" width="18" height="18"/>
+      <rect class="cls-8" x="32" y="45" width="18" height="18"/>
+      <rect class="cls-8" x="72" y="45" width="18" height="18"/>
+      <rect class="cls-7" x="52" y="45" width="18" height="18"/>
+    </g>
+  </g>
+</svg>
