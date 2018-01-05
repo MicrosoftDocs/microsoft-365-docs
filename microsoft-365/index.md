@@ -22,7 +22,7 @@ ms.date: 09/25/2017
                             <li class="fullSpan intro">[Microsoft 365](https://www.microsoft.com/microsoft-365/default.aspx) is a complete, intelligent solution, including Office 365, Windows 10, and Enterprise Mobility + Security, that empowers everyone to be creative and work together, securely.
                             </li>
                             <li>
-                                <a href="https://docs.microsoft.com/microsoft-365-enterprise/" target="blank">
+                                <a href="https://docs.microsoft.com/microsoft-365/enterprise/" target="blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -42,7 +42,7 @@ ms.date: 09/25/2017
                                 </a>
                             </li>
                             <li>
-                                <a href="https://docs.microsoft.com/microsoft-365-business/" target="blank">
+                                <a href="https://docs.microsoft.com/microsoft-365/business/" target="blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
