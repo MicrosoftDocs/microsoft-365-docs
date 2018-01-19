@@ -8,7 +8,7 @@ ms.topic: hub-page
 ms.localizationpriority: high
 audience: microsoft-business 
 title: Microsoft 365 Business documentation and resources
-description: Learn about the product documentation and resources available for Microsoft 365 Business partners, IT admins, information workers, and business owners.
+description: Learn about the product documentation and resources available for Microsoft 365 Business partners, IT admins, end user professionals, and business owners.
 ms.date: 11/01/2017
 ---
 <div id="main" class="v2">
@@ -1822,11 +1822,11 @@ ms.date: 11/01/2017
                 </ul>
             </li>
             <li>
-                <a href="#i-worker">Information worker</a>
-                <ul id="i-worker">
+                <a href="#end-user-pro">End user professional</a>
+                <ul id="end-user-pro">
                     <li>
-                        <a data-default="true" href="#i-worker-1">Set up devices</a>
-                        <ul id="i-worker-1" class="cardsC">
+                        <a data-default="true" href="#end-user-pro-1">Set up devices</a>
+                        <ul id="end-user-pro-1" class="cardsC">
                             <li class="fullSpan">
                                 <div class="container intro">
                                     <p>Employees and other users can follow the guidance here to set up devices.</p>
@@ -1911,8 +1911,8 @@ ms.date: 11/01/2017
                         </ul>
                     </li>
                     <li>
-                        <a data-default="true" href="#i-worker-2">Product help</a>
-                        <ul id="i-worker-2" class="cardsC">
+                        <a data-default="true" href="#end-user-pro-2">Product help</a>
+                        <ul id="end-user-pro-2" class="cardsC">
                             <li class="fullSpan">
                                 <div class="container intro">
                                     <p>When you're using Office or Windows and have a question about how to do something, you can search the product help for info. </p>

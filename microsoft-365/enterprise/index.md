@@ -194,8 +194,13 @@ description: Learn about the product documentation and resources available for M
                         </ul>
                     </li>
                     <li>
-                        <a href="#it-collab">Office 365 and Collaboration</a>
+                        <a href="#it-collab">Collaboration</a>
                         <ul id="it-collab" class="cardsG">
+                            <li class="fullSpan">
+                                <div class="container intro">
+                                    <p style="font-size:1.5em">Office 365</p>
+                                </div>
+                            </li>
                             <li class="fullSpan">
                                 <div class="container intro">
                                     <p>See these guidance and resources to enhance user productivity by helping users access, edit, manage, and seamlessly share the content they need.</p>
@@ -296,52 +301,14 @@ description: Learn about the product documentation and resources available for M
                                     </div>
                                 </a>
                             </li>
-                            <li>
-                                <a href="http://aka.ms/myadvisor" target="_blank">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1">
-                                                        <img src="media/hub-itadmin-collaboration/admin-collaboration-advisor-6.svg" alt="My Advisor" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>My Advisor</h3>
-                                                    <p>Take advantage of the Practical Guidance available through My Advisor&mdash;a comprehensive self-service guide and toolset for planning and managing Microsoft Teams and Skype for Business Online.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://fasttrack.microsoft.com/microsoft365/capabilities?view=collaboration" target="_blank">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1">
-                                                        <img src="media/hub-itadmin-collaboration/admin-collaboration-fasttrack-collaboration-8.svg" alt="FastTrack for collaboration" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>FastTrack for collaboration</h3>
-                                                    <p>Get practices, tools, resources, and experts for the Microsoft 365 collaboration capabilities.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a data-default="true" href="#o365proplus">Office 365 ProPlus</a>
-                        <ul id="o365proplus" class="cardsG">
                             <li class="fullSpan">
                                 <div class="container intro">
-                                    <p>Office 365 ProPlus is the latest version of Microsoft Office downloaded and installed on client devices and kept current by ongoing updates from the Microsoft cloud.</p>
+                                    <p style="font-size:1.5em">Office 365 ProPlus</p>
+                                </div>
+                            </li>
+                            <li class="fullSpan">
+                                <div class="container intro">
+                                    <p>Office 365 ProPlus is the latest version of the Microsoft Office, downloaded and installed on devices and kept current by ongoing updates from the Microsoft cloud.</p>
                                 </div>
                             </li>
                             <li>
@@ -433,6 +400,49 @@ description: Learn about the product documentation and resources available for M
                                                 <div class="cardText">
                                                     <h3>Overview of update channels for Office 365 ProPlus</h3>
                                                     <p>Learn about the options you have to control how often Office 365 ProPlus is updated with new features.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="fullSpan">
+                                <div class="container intro">
+                                    <p style="font-size:1.5em">Resources</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="http://aka.ms/myadvisor" target="_blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="media/hub-itadmin-collaboration/admin-collaboration-advisor-6.svg" alt="My Advisor" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>My Advisor</h3>
+                                                    <p>Take advantage of the Practical Guidance available through My Advisor&mdash;a comprehensive self-service guide and toolset for planning and managing Microsoft Teams and Skype for Business Online.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://fasttrack.microsoft.com/microsoft365/capabilities?view=collaboration" target="_blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="media/hub-itadmin-collaboration/admin-collaboration-fasttrack-collaboration-8.svg" alt="FastTrack for collaboration" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>FastTrack for collaboration</h3>
+                                                    <p>Get practices, tools, resources, and experts for the Microsoft 365 collaboration capabilities.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -743,11 +753,11 @@ description: Learn about the product documentation and resources available for M
                 </ul>
             </li>
             <li>
-                <a href="#i-worker">Information worker</a>
-                <ul id="i-worker">
+                <a href="#end-user-pro">End user professional</a>
+                <ul id="end-user-pro">
                     <li>
-                        <a data-default="true" href="#i-worker-1">Product Help</a>
-                        <ul id="i-worker-1" class="cardsG">
+                        <a data-default="true" href="#end-user-pro-1">Product Help</a>
+                        <ul id="end-user-pro-1" class="cardsG">
                             <li class="fullSpan">
                                 <div class="container intro">
                                     <p>When you're using Office 365 or Windows 10, or your devices are managed by your company, and you have a question about how to do something, you can search the product Help for info, get training and tips, and watch short videos and tutorials. </p>
@@ -889,8 +899,8 @@ description: Learn about the product documentation and resources available for M
                         </ul>
                     </li>
                     <li>
-                        <a data-default="true" href="#i-worker-2">Productivity Library</a>
-                        <ul id="i-worker-2" class="cardsG">
+                        <a data-default="true" href="#end-user-pro-2">Productivity Library</a>
+                        <ul id="end-user-pro-2" class="cardsG">
                             <li class="fullSpan">
                                 <div class="container intro">
                                     <p>Employees and other users can get curated training, watch videos, read recommendations, and more from the <a href="https://www.microsoft.com/microsoft-365/success/" target="_blank">Microsoft 365 Enterprise Productivity Library</a>.</p>
