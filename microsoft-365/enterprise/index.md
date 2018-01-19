@@ -165,7 +165,7 @@ description: Learn about the product documentation and resources available for M
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Existing Microsoft IT infrastructure</h3>
-                                                    <p>If you already have Windows 10 Enterprise, Office 365, or EMS, learn about exit criteria for Microsoft 365 Enterprise to determine what you need to change.</p>
+                                                    <p>If you already have Windows 10 Enterprise, Office 365, or EMS, get exit criteria for Microsoft 365 Enterprise to determine what you need to change.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -278,13 +278,13 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
-                                <a href="TBD" target="_blank">
+                                <a href="secure-sharepoint-online-sites-and-files.md" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="media/hub-itadmin-collaboration/admin-collaboration-sharepoint-online.svg" alt="SharePoint Online" />
+                                                        <img src="media/hub-itadmin-collaboration/admin-collaboration-sharepoint-online.svg" alt="Secure SharePoint Online sites and files" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -309,25 +309,6 @@ description: Learn about the product documentation and resources available for M
                                                 <div class="cardText">
                                                     <h3>My Advisor</h3>
                                                     <p>Take advantage of the Practical Guidance available through My Advisor&mdash;a comprehensive self-service guide and toolset for planning and managing Microsoft Teams and Skype for Business Online.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="http://partnercenter.microsoft.com/" target="_blank">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1">
-                                                        <img src="media/hub-itadmin-collaboration/admin-collaboration-certified-partner-7.svg" alt="Find a Microsoft-certified partner" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Find a Microsoft-certified partner</h3>
-                                                    <p>If you don't have a Microsoft account team, you can visit the Partner Center to find a Microsoft-certified partner in your area.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -495,11 +476,11 @@ description: Learn about the product documentation and resources available for M
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="TBD" alt="Security and compliance in Office 365" />
+                                                        <img src="media/hub-itadmin-security/admin-security-security-compliance-o365.svg" alt="Security and compliance in Office 365" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>SSecurity and compliance in Office 365</h3>
+                                                    <h3>Security and compliance in Office 365</h3>
                                                     <p>Learn how to protect your data, comply with legal or regulatory standards, and monitor your security stature with Office 365.</p>
                                                 </div>
                                             </div>
@@ -527,7 +508,7 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
-                                <a href="TBD" target="_blank">
+                                <a href="secure-email-recommended-policies.md" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -546,7 +527,7 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
-                                <a href="https://docs.microsoft.com/microsoft-365/enterprise/secure-sharepoint-online-sites-and-files" target="_blank">
+                                <a href="sharepoint-file-access-policies.md" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
