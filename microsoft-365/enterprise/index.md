@@ -87,7 +87,7 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
-                                <a href="https://docs.microsoft.com/microsoft-365/enterprise/services-overview" target="_blank">
+                                <a href="services-overview.md" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -106,7 +106,7 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
-                                <a href="https://docs.microsoft.com/microsoft-365/enterprise/architecture-models-posters" target="_blank">
+                                <a href="architecture-models-posters.md" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -461,7 +461,7 @@ description: Learn about the product documentation and resources available for M
                                 </div>
                             </li>
                             <li>
-                                <a href="https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-policies-configurations" target="_blank">
+                                <a href="microsoft-365-policies-configurations.md" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
