@@ -3,9 +3,13 @@
 
 # Plan and Deploy Office 365 ProPlus Infrastructure for Microsoft 365
 
-**Summary:** The steps and exit criteria to deploy the <name> infrastructure for Microsoft 365 Enterprise.
+**Summary:** The steps and exit criteria to deploy the Office 365 ProPlus infrastructure for Microsoft 365 Enterprise.
 
-<intro>
+This phase of the Microsoft 365 Deployment guidance walks you through planning and deploying Office 365 ProPlus client applications as part of your Microsoft 365 implementation. The Office 365 ProPlus client application deployment that you complete in this phase relies on the Microsoft 365 infrastructure and the configurations that you deployed in the previous phases. Be sure that you have successfully met the exit criteria for all the previous phases before you begin planning and deploying Office 365 ProPlus client applications.
+
+More than likely, you will be deploying the Office 365 ProPlus client applications to a variety of types of devices in your organization; laptops, desktops, and a combination of company provided and personal mobile devices. Some users of these devices will have administrative access to them, some will not. The quality of network connectivity between the devices and the distribution source will vary and the frequency at which you want those devices to receive feature updates depends on the job role of the user and their business needs. Finally, it is likely that you already have multiple tools and procedures for distributing and maintaining software in your environment.
+This phase of the Microsoft 365 deployment guidance provides you with five different Office 365 ProPlus deployment methods that you can use. You may end up using one, some, or all of them depending on your environment, business needs, and the tools you have available.
+
 
 If you already have <infrastructure element or workload> deployed, please see the Exit criteria <add link> to make sure that your <infrastructure element or workload> meets the required and optional criteria for Microsoft 365 Enterprise. 
 
