@@ -2,7 +2,7 @@
 title: "Microsoft 365 Enterprise Foundation Infrastructure"
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 01/29/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -33,7 +33,7 @@ Use the following phases to build out the foundation infrastructure in your orga
 - [Phase 5: Mobile device management](mobility-infrastructure.md)
 - [Phase 6: Information protection](infoprotect-infrastructure.md)
 
->[!Important:] 
+> [!Important:] 
 > You must complete the exit critera for each of the six phases to ensure that your on-premises and cloud infrastructure meets the requirements of Microsoft 365.
 
 ## Next step

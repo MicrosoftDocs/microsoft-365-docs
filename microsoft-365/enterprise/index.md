@@ -8,7 +8,7 @@ keywords: Microsoft 365, Microsoft 365 Enterprise, Microsoft 365 documentation, 
 ms.localizationpriority: high
 audience: microsoft-business
 ms.prod: microsoft-365-enterprise
-ms.date: 12/10/2017
+ms.date: 01/29/2018
 title: Microsoft 365 Enterprise documentation and resources
 description: Learn about the product documentation and resources available for Microsoft 365 Enterprise IT admins, information workers, and partners.
 ---
