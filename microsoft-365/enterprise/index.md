@@ -283,7 +283,7 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
-                                <a href="collaboration-sharepoint-online.md.md" target="_blank">
+                                <a href="collaboration-sharepoint-online.md" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
