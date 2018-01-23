@@ -22,4 +22,4 @@ Step through each section to determine if your infrastructure meets the required
 
 ## Required exit criteria for identity
 
-[!INCLUDE [Deployment exit criteria for identity](./includes/deployment-exit-criteria-identity.md)]
+

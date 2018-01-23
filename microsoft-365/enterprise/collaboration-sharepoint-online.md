@@ -27,7 +27,7 @@ If you already have a SharePoint Online deployed, please see the exit criteria t
 
 ## Step 1: Build out your Microsoft 365 Enterprise foundation infrastructure 
 
-Ensure that your organization has built the [foundation infrastructure](foundation-infrastructure.md) for Microsoft 365 Enterprise and that it meets at a minimum the required exit criteria for all six phases.
+Ensure that your organization has built the [foundation infrastructure](deploy-foundation-infrastructure.md) for Microsoft 365 Enterprise and that it meets at a minimum the required exit criteria for all six phases.
 
 ## Step 2: Plan and deploy SharePoint Online for Microsoft 365 Enterprise
 

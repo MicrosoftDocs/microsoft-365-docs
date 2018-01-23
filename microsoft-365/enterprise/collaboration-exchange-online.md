@@ -23,11 +23,11 @@ description: "Summary: The steps and exit criteria to deploy Exchange Online for
 
 [introduction paragraphs]
 
-If you already have a Exchange Online deployed, please see the [exit criteria](collab-exo-microsoft-365-ent.md#exit-criteria-for-exchange-online) to make sure that the Exchange Online configuration meets the required and optional criteria for Microsoft 365 Enterprise.
+If you already have a Exchange Online deployed, please see the exit criteria to make sure that the Exchange Online configuration meets the required and optional criteria for Microsoft 365 Enterprise.
 
 ## Step 1: Build out your Microsoft 365 Enterprise foundation infrastructure 
 
-Ensure that your organization has built the [foundation infrastructure](foundation-infrastructure.md) for Microsoft 365 Enterprise and that it meets at a minimum the required exit criteria for all six phases.
+Ensure that your organization has built the [foundation infrastructure](deploy-foundation-infrastructure.md) for Microsoft 365 Enterprise and that it meets at a minimum the required exit criteria for all six phases.
 
 ## Step 2: Plan and deploy Exchange Online for Microsoft 365 Enterprise
 
