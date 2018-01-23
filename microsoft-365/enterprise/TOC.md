@@ -1,6 +1,6 @@
 # [Microsoft 365 Enterprise documentation and resources](index.md)
 # [Deploy Microsoft 365 Enterprise](deploy-microsoft-365-enterprise.md)
-## [Foundation infrastructure](foundation-infrastructure.md)
+## [Foundation infrastructure](deploy-foundation-infrastructure.md)
 ### [Phase 1: Networking](networking-infrastructure.md)
 ### [Phase 2: Identity](identity-infrastructure.md)
 ### [Phase 3: Windows 10 Enterprise](windows10-infrastructure.md)
