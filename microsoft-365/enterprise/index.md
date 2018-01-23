@@ -154,7 +154,7 @@ description: Learn about the product documentation and resources available for M
                                 </div>
                             </li>
                             <li>
-                                <a href="TBD" target="_blank">
+                                <a href="deploy-with-existing-infrastructure.md" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -173,7 +173,7 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
-                                <a href="TBD" target="_blank">
+                                <a href="deploy-microsoft-365-enterprise.md" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -264,7 +264,7 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
-                                <a href="TBD" target="_blank">
+                                <a href="collaboration-exchange-online.md" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -283,7 +283,7 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
-                                <a href="secure-sharepoint-online-sites-and-files.md" target="_blank">
+                                <a href="collaboration-sharepoint-online.md.md" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -461,26 +461,7 @@ description: Learn about the product documentation and resources available for M
                                 </div>
                             </li>
                             <li>
-                                <a href="microsoft-365-policies-configurations.md" target="_blank">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1">
-                                                        <img src="media/hub-itadmin-security/admin-security-identity-access-configs-1.svg" alt="Identity and device access configurations" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Identity and device access configurations</h3>
-                                                    <p>Learn about general Microsoft recommendations and best practices on how to apply policy and configuration to ensure that your employees are both secure and productive.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="TBD" target="_blank">
+                                <a href="https://support.office.com/article/dcb83b2c-ac66-4ced-925d-50eb9698a0b2" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -511,6 +492,46 @@ description: Learn about the product documentation and resources available for M
                                                 <div class="cardText">
                                                     <h3>Threat protection and security for enterprise</h3>
                                                     <p>Learn how you can help protect your organization against threats in Windows 10.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <!-- Replace the one above when this page goes live
+                            <li>
+                                <a href="https://docs.microsoft.com/en-us/windows/security/" target="_blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="media/hub-itadmin-security/admin-security-windows10-threats-5.svg" alt="Secure corporate data and manage risk with Windows 10 Enterprise" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Windows 10 Enterprise Security</h3>
+                                                    <p>Learn about the security features built into Windows 10 Enterprise and how you can use these to secure corproate data and manage risk.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            -->
+                            <li>
+                                <a href="microsoft-365-policies-configurations.md" target="_blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="media/hub-itadmin-security/admin-security-identity-access-configs-1.svg" alt="Identity and device access configurations" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Identity and device access configurations</h3>
+                                                    <p>Learn about general Microsoft recommendations and best practices on how to apply policy and configuration to ensure that your employees are both secure and productive.</p>
                                                 </div>
                                             </div>
                                         </div>
