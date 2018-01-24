@@ -1,5 +1,5 @@
 ---
-title: "Phase 3: Mobile device management infrastructure for Microsoft 365 Enterprise"
+title: "Phase 5: Mobile device management infrastructure for Microsoft 365 Enterprise"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -14,7 +14,7 @@ ms.custom:
 description: "Summary: The steps and exit criteria to deploy the mobility infrastructure for Microsoft 365 Enterprise."
 ---
 
-# Phase 3: Mobile device management infrastructure for Microsoft 365 Enterprise
+# Phase 5: Mobile device management infrastructure for Microsoft 365 Enterprise
 
 **Summary:** The steps and exit criteria to deploy the mobility infrastructure for Microsoft 365 Enterprise.
 
