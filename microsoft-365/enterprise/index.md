@@ -150,7 +150,7 @@ description: Learn about the product documentation and resources available for M
                         <ul id="deploy" class="cardsG">
                             <li class="fullSpan">
                                 <div class="container intro">
-                                    <p>Get step-by-step guidance on how to play for and deploy Office 365, Windows 10 Enterprise, and Enterprise Mobility + Security together for an integrated and secure infrastructure that enables teamwork and unlocks creativity.</p>
+                                    <p>Get step-by-step guidance on how to plan for and deploy Office 365, Windows 10 Enterprise, and Enterprise Mobility + Security together for an integrated and secure infrastructure that enables teamwork and unlocks creativity.</p>
                                 </div>
                             </li>
                             <li>
@@ -164,8 +164,8 @@ description: Learn about the product documentation and resources available for M
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Existing Microsoft IT infrastructure</h3>
-                                                    <p>If you already have Windows 10 Enterprise, Office 365, or EMS, get exit criteria for Microsoft 365 Enterprise to determine what you need to change.</p>
+                                                    <h3>I have an existing Microsoft IT infrastructure</h3>
+                                                    <p>If you already have Windows 10 Enterprise, Office 365, or EMS, review exit criteria for Microsoft 365 Enterprise to determine what you need to change.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -183,7 +183,7 @@ description: Learn about the product documentation and resources available for M
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Microsoft 365 Enterprise deployment process</h3>
+                                                    <h3>I want to deploy Microsoft 365 Enterprise from scratch</h3>
                                                     <p>Step through the phases of the end-to-end deployment process for typical IT areas of responsibility and components of Microsoft 365 Enterprise.</p>
                                                 </div>
                                             </div>
@@ -203,7 +203,7 @@ description: Learn about the product documentation and resources available for M
                             </li>
                             <li class="fullSpan">
                                 <div class="container intro">
-                                    <p>See these guidance and resources to enhance user productivity by helping users access, edit, manage, and seamlessly share the content they need.</p>
+                                    <p>Use these resources to set up Office 365 services and empower teams in your organization to collaborate more effectively with tools like team chat, online meetings, co-authoring and secure file sharing, and group email.</p>
                                 </div>
                             </li>
                             <li>
