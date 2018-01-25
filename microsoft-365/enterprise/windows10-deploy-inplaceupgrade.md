@@ -76,7 +76,7 @@ TBD
 TBD
 
 ## Step 2: Remediate
-Make sure you've completed Phase 1: Networking and Phase 2: Identity before proceeding.
+Make sure you've completed [Phase 1: Networking](networking-infrastructure.md) and [Phase 2: Identity](identity-infrastructure.md) before proceeding.
 
 ### Client readiness
 TBD
@@ -87,7 +87,7 @@ TBD
 #### Telemetry
 TBD
 
-## Enable
+## Step 3: Enable
 TBD
 
 ### In-place upgrade to Windows 10 Enterprise
