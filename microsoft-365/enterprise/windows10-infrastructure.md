@@ -16,8 +16,8 @@ ms.author: celested
 There are multiple ways you can deploy Windows 10 Enterprise for your organization. To learn all about these scenarios and understand the capabilities and limitations of each, see [Windows 10 deployment scenarios](https://docs.microsoft.com/windows/deployment/windows-10-deployment-scenarios).
 
 Here, we'll focus on how you can configure and deploy a Windows 10 Enterprise image with Office 365 ProPlus through these deployment scenarios:
-* Using System Center Configuration Manager (Configuration Manager) as an in-place upgrade
-* Using Windows AutoPilot 
+* [Using System Center Configuration Manager (Configuration Manager) as an in-place upgrade](windows10-deploy-inplaceupgrade.md)
+* [Using Windows AutoPilot](windows10-deploy-autopilot.md)
 
 TBD
 

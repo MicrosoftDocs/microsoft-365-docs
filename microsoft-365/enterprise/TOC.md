@@ -6,7 +6,7 @@
 ### [Phase 3: Windows 10 Enterprise](windows10-infrastructure.md)
 #### [Configure and deploy Windows 10 Enterprise as an in-place upgrade](windows10-deploy-inplaceupgrade.md)
 #### [Configure and deploy Windows 10 Enterprise with Windows AutoPilot](windows10-deploy-autopilot.md)
-### [Phase 4: Office 365 ProPlus](microsoft-365-plan-deploy-Office365ProPlus.md)
+### [Phase 4: Office 365 ProPlus](office365-proplus-infrastructure.md)
 ### [Phase 5: Mobile device management](mobility-infrastructure.md)
 ### [Phase 6: Information protection](infoprotect-infrastructure.md)
 ## [Collaboration workloads](collaboration-workloads.md)
