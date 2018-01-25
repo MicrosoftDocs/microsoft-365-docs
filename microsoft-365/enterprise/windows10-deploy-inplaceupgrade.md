@@ -79,10 +79,31 @@ Security clients (like antivirus, anti-malware, and anti-spam) are typically fou
 * Instability after upgrading to Windows 10 (like crashing and reduced performance)
 
 #### Antivirus
-Assess current antivirus software. Windows 10 comes with Windows Defender Antivirus to protect devices from malware, viruses, and security threats. We recommend Windows Defender Antivirus. To enable Windows Defender Antivirus, see TBD[placeholder - replace with link].
+Assess current antivirus software. Windows 10 comes with Windows Defender Antivirus to protect devices from malware, viruses, and security threats. We recommend Windows Defender Antivirus. To enable Windows Defender Antivirus, see TBD[placeholder - replace with link] and [Protect devices with Windows Defender Antivirus](https://go.microsoft.com/fwlink/?linkid=860254).
 
 To learn about antivirus solutions from other providers, see [Consumer antivirus software providers for Windows](https://go.microsoft.com/fwlink/?linkid=67345).
 
+### App readiness
+Each Windows 10 release provides improved app compatibility. However, some apps may not be compatible. Depending on the app, you may need to only do a simple upgrade or configuration update before upgrading to Windows 10. In other circumstances, you may need to remove an app entirely.
+
+Be sure to assess business critical apps and understand the impact of upgrading to the next OS. Prioritize the workloads that impact the least number of people during deployment. 
+
+See the following Upgrade Readiness resources to help with app inventory, driver compatibility issues, and usage information:
+* [Manage Windows Upgrades with Upgrade Readiness](https://go.microsoft.com/fwlink/?linkid=860255)
+* [Configure Windows telemetry](https://go.microsoft.com/fwlink/?linkid=859970)
+
+> [!NOTE]
+> Upgrade Readiness may not be able to assess compatibility for custom and line-of-business (LOB) apps in an organization.
+
+### Language packs
+In-place upgrades have have limitations when it comes to language packs. The language stays consistent throughout the upgrade. Verify the language version and make sure it stays consistent. For example, Windows 7 with English as the default won’t change when upgraded to Windows 10. For more info, see:
+* [Default language pack on your OS](https://go.microsoft.com/fwlink/?linkid=860282)
+* [Finding language packs on each Widnows 10 deployment](https://go.microsoft.com/fwlink/?linkid=860283)
+
+For a Microsoft 365 powered device, you'll also need to download Office 365 ProPlus language packs that applies to the client. These come in 32-bit (x86) or 65-bit (x64). A specific language must be installed as the default. You can install other languages later. For more info, see:
+* [Choose between 65-bit or 32-bit version of Office](https://go.microsoft.com/fwlink/?linkid=862361)
+* [Language accessory pack for Office](https://go.microsoft.com/fwlink/?linkid=860280)
+* [Add an additional language pack](https://go.microsoft.com/fwlink/?linkid=860281)
 
 ### Governance and business processes
 TBD

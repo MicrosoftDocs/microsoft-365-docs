@@ -106,7 +106,7 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
-                                <a href="architecture-models-posters.md" target="_blank">
+                                <a href="https://docs.microsoft.com/office365/enterprise/microsoft-cloud-it-architecture-resources" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -263,6 +263,7 @@ description: Learn about the product documentation and resources available for M
                                     </div>
                                 </a>
                             </li>
+                            <!-- These are collaboration workloads that still need to be developed. Commenting out for now.
                             <li>
                                 <a href="collaboration-exchange-online.md" target="_blank">
                                     <div class="cardSize">
@@ -301,6 +302,7 @@ description: Learn about the product documentation and resources available for M
                                     </div>
                                 </a>
                             </li>
+                            -->
                             <li class="fullSpan">
                                 <div class="container intro">
                                     <p style="font-size:1.5em">Office 365 ProPlus</p>
