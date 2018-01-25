@@ -12,6 +12,7 @@ ms.author: celested
 ---
 
 # Configure and deploy Windows 10 Enterprise as an in-place upgrade
+Use this guide to quickly configure and deploy a Windows 10 Enterprise image using System Center Configuration Manager (Configuration Manager) as an in-place upgrade.
 
 ## Step 1: Assess
 Before upgrading an OS in an enterprise environment, take the following technical aspects into account:
@@ -70,7 +71,18 @@ This guide assumes you have enough network bandwidth to support the deployment o
 * x64 and x86 - Changing from a 32-bit OS to a 64-bit isn't supported. For more info, see [Windows 10 deployment scenario > In-place upgrade](https://docs.microsoft.com/en-us/windows/deployment/windows-10-deployment-scenarios#in-place-upgrade).
 
 ### Apps
-TBD
+
+#### Security
+Security clients (like antivirus, anti-malware, and anti-spam) are typically found on all PCs within an organization. Because these programs hook into the deeper levels of the OS, you may need to perform a compatibility assessment before starting any Windows 10 migrations. You may need to upgrade, reconfigure, or even replace Some software. Not performing this assessment can lead to:
+* Native app compatibility checks failing and preventing an in-place upgrade from starting.
+* Broken functionality in the security software.
+* Instability after upgrading to Windows 10 (like crashing and reduced performance)
+
+#### Antivirus
+Assess current antivirus software. Windows 10 comes with Windows Defender Antivirus to protect devices from malware, viruses, and security threats. We recommend Windows Defender Antivirus. To enable Windows Defender Antivirus, see TBD[placeholder - replace with link].
+
+To learn about antivirus solutions from other providers, see [Consumer antivirus software providers for Windows](https://go.microsoft.com/fwlink/?linkid=67345).
+
 
 ### Governance and business processes
 TBD

@@ -1,44 +1,27 @@
 ---
-title: "Phase 4: Information protection infrastructure for Microsoft 365 Enterprise"
-ms.author: josephd
-author: JoeDavies-MSFT
-manager: laurawi
-ms.date: 01/29/2018
-ms.audience: ITPro
-ms.topic: article
-ms.service: o365-solutions
-localization_priority: Normal
-ms.collection: Ent_O365
-ms.custom:
-- Strat_O365_Enterprise
-description: "Summary: The steps and exit criteria to deploy the information protection infrastructure for Microsoft 365 Enterprise."
+title: Phase 6 - Information protection infrstructure for Microsoft 365 Enterprise
+description: Requirements and prerequisites for information protection with Microsoft 365 Enterprise. 
+keywords: Microsoft 365, Microsoft 365 Enterprise, Microsoft 365 documentation, Windows 10 Enterprise, Azure Information Protection
+author: cabailey 
+ms.author: cabailey 
+manager: mbaldwin 
+ms.date: 01/29/2018 
+ms.topic: article 
+audience: microsoft-business
+ms.prod: microsoft-365-enterprise
+ms.service: information-protection 
+ms.assetid: 664fed0f-1b26-4e15-82d2-8ef6e2d2344f
+audience: ITPro
 ---
 
-# Phase 4: Information protection infrastructure for Microsoft 365 Enterprise
+# Phase 6: Information protection infrastructure for Microsoft 365 Enterprise
 
-**Summary:** The steps and exit criteria to deploy the security infrastructure for Microsoft 365 Enterprise.
+Use Azure Information Protection labels to classify, and optionally protect your organization's documents and emails. These labels can be applied automatically by administrators who define rules and conditions, manually by users, or a combination where users are given recommendations.
 
->[!Note to readers:] 
-> This document represents a work-in-progress and a prototype for a foundation infrastructure article in the Microsoft 365 Enterprise deployment content set. At this time, this article is not intended to be a technically complete and product team-reviewed article ready for publication. 
+## Plan and deploy your Microsoft 365 Enterprise information protection 
 
-[Intro paragraph]
+1. Review the [requirements for Azure Information Protection](https://docs.microsoft.com/information-protection/get-started/requirements).
+2. Follow the [deployment roadmap for classification, labeling, and protection](https://docs.microsoft.com/information-protection/plan-design/deployment-roadmap#deployment-roadmap-for-classification-labeling-and-protection).
 
-If you already have a security infrastructure deployed, please see the Exit criteria article (link TBD) to make sure that your security infrastructure meets the required and optional criteria for Microsoft 365 Enterprise.
-
-## Plan and deploy your Microsoft 365 Enterprise security infrastructure 
-
-Use the following steps to build out your new security infrastructure in the cloud or to adapt your existing on-premises or hybrid security infrastructure for the requirements and capabilities of Microsoft 365 Enterprise.
-
-- Step 1: step 1 title (link TBD)
-- Step 2: step 2 title (link TBD)
-- Step 3: step 3 title (link TBD)
-
-
-<!---
-- [Step 1: step 1 title](phase4-step01-name.md)
-- [Step 2: step 2 title](phase4-step02-name.md)
-- [Step 3: step 3 title](phase4-step03-name.md)
---->
-
-When have completed these steps, go to the Exit criteria article (link TBD) for this phase to ensure that you meet the required configuration for Microsoft 365.
+The entire library of Azure Information Protection documentation is [available online](https://docs.microsoft.com/information-protection/).
 
