@@ -176,7 +176,7 @@ Microsoft uses telemetry data to help keep Windows devices secure by identifying
 * [Ensure telemetry is enabled on all endpoints](https://go.microsoft.com/fwlink/?linkid=859970)
 * [Use Intune to set the telemetry level](https://go.microsoft.com/fwlink/?linkid=860460)
 
-## 3. Deployment phase
+## Step 3. Deployment phase
 When ready, complete these:
 
 1. Enable auto-enrollment using Azure AD Premium.
