@@ -1,9 +1,8 @@
 ---
 title: Windows 10 Enterprise infrastructure for Microsoft 365 Enterprise | Microsoft docs
-description: Provides a high-level guidance on the steps you need to deploy Windows 10 Enterprise on PCs as part of Microsoft 365 Enterprise.
-keywords: Microsoft 365, Microsoft 365 Enterprise, Microsoft 365 documentation, Windows 10 Enterprise, deployment, in-place upgrade, Configuration Manager
+description: Provides guidance on configuring and deploying a Windows 10 Enterprise image using System Center Configuration Manager as an in-place upgrade.
+keywords: Microsoft 365, Microsoft 365 Enterprise, Microsoft 365 documentation, Windows 10 Enterprise, deployment, in-place upgrade, Configuration Manager, System Center Configuration Manager
 author: CelesteDG
-ms.localizationpriority: high
 audience: microsoft-business
 ms.prod: microsoft-365-enterprise
 ms.topic: article
@@ -12,7 +11,8 @@ ms.author: celested
 ---
 
 # Configure and deploy Windows 10 Enterprise as an in-place upgrade
-Use this guide to quickly configure and deploy a Windows 10 Enterprise image using System Center Configuration Manager (Configuration Manager) as an in-place upgrade.
+
+Follow this guide to configure and deploy a Windows 10 Enterprise image using System Center Configuration Manager (Configuration Manager) as an in-place upgrade.
 
 ## Step 1: Assess
 Before upgrading an OS in an enterprise environment, take the following technical aspects into account:
@@ -25,7 +25,7 @@ This guide is meant only to provide Microsoft's best recommendations around thes
 ### 1.1 Infrastructure
 
 #### Group Policy
-Windows 10 introduces many new features and removes and changes many others in Windows 7 and 8.1, including new Group Policy settings which need to be tested and implemented as part of a Windows 10 migration. The following resources provide examples on assessing current group policies for Windows, including Group Policy Objects in the Active Directory structure. For more details,see: 
+Windows 10 introduces many new features and removes and changes many others in Windows 7 and 8.1, including new Group Policy settings which need to be tested and implemented as part of a Windows 10 migration. The following resources provide examples on assessing current group policies for Windows, including Group Policy Objects in the Active Directory structure:
 * [Manage Windows 10 with administrative templates](https://go.microsoft.com/fwlink/?linkid=860226)
 * [Group Policy settings that apply to Windows 10](https://docs.microsoft.com/windows/client-management/group-policies-for-enterprise-and-education-editions)
 
@@ -80,7 +80,7 @@ Security clients (like antivirus, anti-malware, and anti-spam) are typically fou
 
 **Antivirus**
 
-Assess current antivirus software. Windows 10 comes with Windows Defender Antivirus to protect devices from malware, viruses, and security threats. We recommend Windows Defender Antivirus. To enable Windows Defender Antivirus, see TBD[placeholder - replace with link] and [Protect devices with Windows Defender Antivirus](https://go.microsoft.com/fwlink/?linkid=860254).
+Assess current antivirus software. Windows 10 comes with Windows Defender Antivirus to protect devices from malware, viruses, and security threats. We recommend Windows Defender Antivirus. To enable Windows Defender Antivirus, see [Windows Defender Antivirus](windows10-enable-security-features.md#windows-defender-antivirus) and [Protect devices with Windows Defender Antivirus](https://go.microsoft.com/fwlink/?linkid=860254).
 
 To learn about antivirus solutions from other providers, see [Consumer antivirus software providers for Windows](https://go.microsoft.com/fwlink/?linkid=67345).
 
@@ -122,11 +122,11 @@ For the group of pilot users, create a device collection on Configuration Manage
 
 There are three servicing channels for OS deployment rings:
 * Windows Insider Program - Provides organizations with the opportunity to test and provide feedback on features that are shipped in the next feature update.
-* Semi-Annual Channel - Provides new functionality with twice-per-year feature update releases.
+* Semi-Annual Channel - Provides new functionality with twice-per-year feature update releases. Organizations can choose when to deploy updates from the Semi-Annual Channel.
 * Long-Term Servicing Channel (LTSC) - Used for specialized devices and receives new feature releases about every three years.
 
 For more info, see:
-* [windows Insider Program, Semi-Annual Channel, and Long-Term Servicing Channel](https://go.microsoft.com/fwlink/?linkid=860293)
+* [Windows Insider Program, Semi-Annual Channel, and Long-Term Servicing Channel](https://go.microsoft.com/fwlink/?linkid=860293)
 * [Build deployment rings for Windows 10 updates](https://go.microsoft.com/fwlink/?linkid=860294)
 * [Manage software updates using Intune in Azure Portal](https://docs.microsoft.com/intune/windows-update-for-business-configure)
 
@@ -138,11 +138,13 @@ For Microsoft 365 powered devices, you must also be able to support the six-mont
 * First-release for Deferred Channel
 
 Each group has different configuration files, as users from the Current Channel are used as a pilot to test earlier updates. For more info, see:
-* [ Update process for Office 365 ProPlus](https://go.microsoft.com/fwlink/?linkid=860299)
+* [Update process for Office 365 ProPlus](https://go.microsoft.com/fwlink/?linkid=860299)
 * [Manage updates to Office 365 ProPlus](https://go.microsoft.com/fwlink/?linkid=860300)
 * [Configure update settings for Office 365 ProPlus](https://go.microsoft.com/fwlink/?linkid=860301)
 * [Update channels for Office 365 ProPlus](https://go.microsoft.com/fwlink/?linkid=860302)
 * [Version and build numbers of update channel releases](https://go.microsoft.com/fwlink/?linkid=860304)
+
+For more info, see [Phase 4: Office 365 ProPlus infrastructure for Microsoft 365 Enterprise](office365proplus-infrastructure.md).
 
 ## Step 2: Remediate
 Once you've completed the scenarios and requirements in [Step 1: Assess](#step-1-assess), you can move to this stage.
@@ -167,7 +169,7 @@ When setting up your networking infrastructure as part your in-place upgrade, ma
 ### 2.2 Identity
 Intelligent security for Microsoft 365 Enterprise, in which the right users have access to the right resources with an appropriate level of access, begins with identity management. For more details about setting up your Microsoft 365 Enterprise identity infrastructure, see [Phase 2: Identity](identity-infrastructure.md).
 
-When setting up your identity infrastructure as part of your in-place upgrade, make sure you complete these steps:
+When setting up your identity infrastructure as part of your in-place upgrade, make sure you complete these tasks:
 1. [Add a domain and users to Office 365](http://go.microsoft.com/fwlink/?LinkID=526338).
 2. [Install and run the Office 365 IdFix tool](http://go.microsoft.com/fwlink/?LinkId=733662), which scans your on-premises Active Directory environment and identifies problems that might impact directory synchronization and slow your migration to Office 365.
 3. Configure Active Directory for directory synchronization with Office 365 and [integrate on-premises directories with Azure AD](http://go.microsoft.com/fwlink/?LinkId=733661).
@@ -189,12 +191,12 @@ Confirm that Windows 10 works with Office 365. Be sure you're using the latest O
 See [System Center Configuration Manager](#system-center-configuration-manager).
 
 ### 2.5 Telemetry
-Microsoft uses telemetry data to help keep Windows devices secure by identifying malware trends and other threats and to help us improve the quality of Windows and Microsoft services. Customers must ensure that the telemetry and diagnostics service is enabled at a minimum level of Basic on all endpoints in their organization. **By default, this service is enabled and set to the Enhanced level.** However, it’s good practice to check and ensure that they are receiving sensor data. Setting levels through policies overrides device level settings. For more info, see:
+Microsoft uses telemetry data to help keep Windows devices secure by identifying malware trends and other threats and to help us improve the quality of Windows and Microsoft services. You must ensure that the telemetry and diagnostics service is enabled at a minimum level of Basic on all endpoints in your organization. **By default, this service is enabled and set to the Enhanced level.** However, it’s good practice to check and ensure that they are receiving sensor data. Setting levels through policies overrides device-level settings. For more info, see:
 * [Ensure telemetry is enabled on all endpoints](https://go.microsoft.com/fwlink/?linkid=859970)
 * [Use Intune to set the telemetry level](https://go.microsoft.com/fwlink/?linkid=860460)
 
 ## Step 3: Enable
-When ready, enable:
+When ready, complete these:
 * [In-place upgrade to Windows 10 Enterprise](#31-in-place-upgrade-to-windows-10-enterprise)
 * [Windows Defender Antivirus](#32-windows-defender-antivirus)
 
@@ -233,7 +235,7 @@ When ready, enable:
 
     For a Microsoft 365 powered device, you can deploy Office 365 ProPlus with Windows 10 Enterprise using Configuration Manager. You can also add other apps as needed.
 
-    **To deploy Office 365 ProPlus**
+    To deploy Office 365 ProPlus, follow the steps in [Phase 4: Office 365 ProPlus infrastructure for Microsoft 365 Enterprise](office365proplus-infrastructure.md). During this phase, make sure you complete these steps:
     
     1. Download the Office 2016 Deployment Tool (ODT) in conjunction with Configuration Manager to help with Office 365 ProPlus deployments. 
     2. Edit the configuration XML file to fit specific deployment needs (like version, language, and product element). 
@@ -274,14 +276,12 @@ When ready, enable:
     Use Configuration Manager and MDT to monitor your deployment. Deployment Workbench enables access to the computer remotely using the Diagnostics and Recovery Toolset (DaRT) (optional). Deployments can be monitored in Configuration Manager. For more info, see [Monitor the Windows 10 deployment with Configuration Manager](https://go.microsoft.com/fwlink/?linkid=860705).
 
 ### 3.2 Windows Defender Antivirus
-TBD
+See [Enable Windows 10 Enterprise security features > Windows Defender Antivirus](windows10-enable-security-features.md#windows-defender-antivirus)
 
 
 
 ## Learn more
-[Microsoft 365 Enterprise product page](https://www.microsoft.com/microsoft-365/enterprise)
-
-[Windows 10](https://docs.microsoft.com/windows/windows-10)
-
+[Microsoft 365 Enterprise product page](https://www.microsoft.com/microsoft-365/enterprise)</br>
+[Windows 10](https://docs.microsoft.com/windows/windows-10)</br>
 [Deploy and update Windows 10](https://docs.microsoft.com/windows/deployment/)
 

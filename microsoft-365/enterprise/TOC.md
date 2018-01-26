@@ -6,12 +6,15 @@
 ### [Phase 3: Windows 10 Enterprise](windows10-infrastructure.md)
 #### [Configure and deploy Windows 10 Enterprise as an in-place upgrade](windows10-deploy-inplaceupgrade.md)
 #### [Configure and deploy Windows 10 Enterprise with Windows AutoPilot](windows10-deploy-autopilot.md)
-### [Phase 4: Office 365 ProPlus](office365-proplus-infrastructure.md)
+#### [Enable Windows 10 Enterprise security features](windows10-enable-security-features.md)
+### [Phase 4: Office 365 ProPlus](office365proplus-infrastructure.md)
 ### [Phase 5: Mobile device management](mobility-infrastructure.md)
 ### [Phase 6: Information protection](infoprotect-infrastructure.md)
+<!-- These are still being worked on
 ## [Collaboration workloads](collaboration-workloads.md)
 ### [Exchange Online](collaboration-exchange-online.md)
 ### [SharePoint Online](collaboration-sharepoint-online.md)
+-->
 ## [Deployment of Microsoft 365 Enterprise with existing infrastructure](deploy-with-existing-infrastructure.md)
 # Resources
 ## [Identity and device access configurations](microsoft-365-policies-configurations.md)
