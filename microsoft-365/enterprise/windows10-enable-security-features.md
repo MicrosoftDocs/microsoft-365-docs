@@ -38,10 +38,9 @@ You can obtain reporting by using a configuration tool, such as System Center Co
 * [Windows Defender ATP portal overview](https://go.microsoft.com/fwlink/?linkid=861596)
 
 ### Troubleshooting
-See the following for information on basic troubleshooting of error and event codes:
-•	Review event logs and error codes to troubleshoot issues with Windows Defender AV
-Customers can also submit issues (such as false positives) by using the Windows Defender Security Intelligence submission system:
-•	Submit issues to Microsoft
+For info on basic troubleshooting of error and event codes, see [Review event logs and error codes to troubleshoot issues with Windows Defender AV](https://docs.microsoft.com/en-us/windows/threat-protection/windows-defender-antivirus/troubleshoot-windows-defender-antivirus).
+
+You can also submit issues (such as false positives) by using the Windows Defender Security Intelligence submission system. To learn how, see [Submit issues to Microsoft](https://www.microsoft.com/en-us/wdsi/filesubmission).
 
 ## Windows Defender Exploit Guard
 Windows Defender Exploit Guard is a new set of host intrusion prevention capabilities for Windows 10. For more info about Windows Defender Exploit Guard, the  minimum requirements, and how you can manage this feature, see [Windows Defender Exploit Guard](https://docs.microsoft.com/windows/threat-protection/windows-defender-exploit-guard/windows-defender-exploit-guard).
