@@ -198,19 +198,41 @@ When ready, complete these:
 
     By uploading this information to the [Microsoft Store for Business](https://go.microsoft.com/fwlink/?linkid=691471) or Partner Center admin portal, you'll be able to assign devices to your organization. These portals also provide additional options and customizations to configure your devices.
 
-3. Deploy Office 365 ProPlus apps to Windows 10 devices using Intune.
+3. Deploy Office 365 ProPlus 2016 apps to Windows 10 devices using Intune.
 
-    For a Microsoft 365 powered device, you'll need to deploy the Office 365 ProPlus suite to Windows 10 user groups. To do this:
+    For a Microsoft 365 powered device, you'll need to deploy the Office 365 ProPlus 2016 suite to Windows 10 user groups. To do this:
     1. Configure the app suite by choosing specific Office 365 ProPlus apps.
-    2. Configure app information, like the suite name and description TBD
+    2. Configure app information, such as suite name, description, and category.
+    3. Configure app settings, including versioning (32-bit versus 64-bit), the update channel, and languages.
+    4. Save these configurations.
+
+    The app suite should show up in the app panel. If you see an error message, see [Assign Office 365 ProPlus apps to devices that run Windows 10](https://go.microsoft.com/fwlink/?linkid=857153) to help troubleshoot the issue.
 
 4. Deploy Windows AutoPilot.
 
-    TBD
+    You can manage devices for your organization and apply an AutoPilot deployment profile to your devices. When people in your organization run the OOBE for the device, the profile configures Windows based on the AutoPilot deployment profile you applied to the device. As part of the overall process, you need to perform these tasks:
+    1. Add devices
+    2. Group devices (optional)
+    3. Create AutoPilot deployment profile
+    4. Apply AutoPilot deployment profile
+
+    For step-by-step guidance see [Manage Windows device deployment with Windows AutoPilot](https://go.microsoft.com/fwlink/?linkid=852442).
+
+    For end users, they can set up a device that's been configured through AutoPilot by:
+    1. Turning on the new Windows 10 device.
+    2. Selecting the language.
+    3. Connecting to a network.
+    4. Entering their Azure AD email and password.
+
+    Azure AD Join and MDM then automatically enroll the device. MDM also applies organization-configured policies, settings, and apps.
 
 5. Manage Windows device deployment with Windows AutoPilot deployment.
 
-    TBD
+    You can manage new devices in the [Microsoft Store for Business](https://go.microsoft.com/fwlink/?linkid=691471). New devices must meet these requirements:
+    * Have Windows 10, version 1703 or later installed
+    * Have not been through Windows OOBE
+
+    For more info, see [Manage AutoPilot deployment profiles using Microsoft Store for Business](https://go.microsoft.com/fwlink/?linkid=852441).
 
 ## Learn more
 [Microsoft 365 Enterprise product page](https://www.microsoft.com/microsoft-365/enterprise)</br>
