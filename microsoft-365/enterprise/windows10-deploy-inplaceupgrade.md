@@ -14,7 +14,7 @@ ms.author: celested
 
 Follow this guide to configure and deploy a Windows 10 Enterprise image using System Center Configuration Manager (Configuration Manager) as an in-place upgrade.
 
-## Step 1: Assess
+## Step 1: Consideration phase
 Before upgrading an OS in an enterprise environment, take the following technical aspects into account:
 * [Infrastructure](#11-infrastructure)
 * [Apps](#12-apps)
@@ -146,8 +146,8 @@ Each group has different configuration files, as users from the Current Channel 
 
 For more info, see [Phase 4: Office 365 ProPlus infrastructure for Microsoft 365 Enterprise](office365proplus-infrastructure.md).
 
-## Step 2: Remediate
-Once you've completed the scenarios and requirements in [Step 1: Assess](#step-1-assess), you can move to this stage.
+## Step 2: Testing phase
+Once you've completed the scenarios and requirements in [Step 1: Consideration phase](#step-1-consideration-phase), you can move to this stage.
 * [Networking](#21-networking)
 * [Identity](#22-identity)
 * [Client readiness](#23-client-readiness)
@@ -195,7 +195,7 @@ Microsoft uses telemetry data to help keep Windows devices secure by identifying
 * [Ensure telemetry is enabled on all endpoints](https://go.microsoft.com/fwlink/?linkid=859970)
 * [Use Intune to set the telemetry level](https://go.microsoft.com/fwlink/?linkid=860460)
 
-## Step 3: Enable
+## Step 3: Deployment phase
 When ready, complete these:
 * [In-place upgrade to Windows 10 Enterprise](#31-in-place-upgrade-to-windows-10-enterprise)
 * [Windows Defender Antivirus](#32-windows-defender-antivirus)

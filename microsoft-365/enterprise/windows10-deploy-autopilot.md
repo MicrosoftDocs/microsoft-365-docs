@@ -14,7 +14,7 @@ ms.author: celested
 
 Follow this guide to configure and deploy a Windows 10 Enterprise using Windows AutoPilot&mdash;a collection of technologies used to set up and pre-configure new devices, getting them ready for productive use. To learn more about Windows AutoPilot, including benefits and scenarios, see [Overview of Windows AutoPilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
 
-## Step 1: Assess
+## Step 1: Consideration phase
 This guide makes several assumptions regarding essential, business-critical considerations before upgrading an OS in an enterprise environment.
 
 **Requirements**
@@ -120,9 +120,8 @@ Each group has different configuration files, as users from the Current Channel 
 
 For more info, see [Phase 4: Office 365 ProPlus infrastructure for Microsoft 365 Enterprise](office365proplus-infrastructure.md).
 
-
-## Step 2: Remediate
-Once you've completed the scenarios and requirements in [Step 1: Assess](#step-1-assess), you can move to this stage. 
+## Step 2: Testing phase
+Once you've completed the scenarios and requirements in [Step 1: Consideration phase](#step-1-consideration-phase), you can move to this stage. 
 
 To use Windows AutoPilot, make sure you are ready to perform these tasks:
 * [Networking](#21-networking)
@@ -177,7 +176,7 @@ Microsoft uses telemetry data to help keep Windows devices secure by identifying
 * [Ensure telemetry is enabled on all endpoints](https://go.microsoft.com/fwlink/?linkid=859970)
 * [Use Intune to set the telemetry level](https://go.microsoft.com/fwlink/?linkid=860460)
 
-## 3. Enable
+## 3. Deployment phase
 When ready, complete these:
 
 1. Enable auto-enrollment using Azure AD Premium.
