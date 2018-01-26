@@ -79,6 +79,7 @@ Security clients (like antivirus, anti-malware, and anti-spam) are typically fou
 * Instability after upgrading to Windows 10 (like crashing and reduced performance)
 
 **Antivirus**
+
 Assess current antivirus software. Windows 10 comes with Windows Defender Antivirus to protect devices from malware, viruses, and security threats. We recommend Windows Defender Antivirus. To enable Windows Defender Antivirus, see TBD[placeholder - replace with link] and [Protect devices with Windows Defender Antivirus](https://go.microsoft.com/fwlink/?linkid=860254).
 
 To learn about antivirus solutions from other providers, see [Consumer antivirus software providers for Windows](https://go.microsoft.com/fwlink/?linkid=67345).
@@ -118,6 +119,7 @@ Be sure to have a pilot group of users selected from different parts of the busi
 For the group of pilot users, create a device collection on Configuration Manager. The list of devices should correspond to the list of the first users upgraded to Windows 10. 
 
 **Windows 10 deployment rings**
+
 There are three servicing channels for OS deployment rings:
 * Windows Insider Program - Provides organizations with the opportunity to test and provide feedback on features that are shipped in the next feature update.
 * Semi-Annual Channel - Provides new functionality with twice-per-year feature update releases.
@@ -129,6 +131,7 @@ For more info, see:
 * [Manage software updates using Intune in Azure Portal](https://docs.microsoft.com/intune/windows-update-for-business-configure)
 
 **Office 365 ProPlus**
+
 For Microsoft 365 powered devices, you must also be able to support the six-month update channel for both IT and business users. One way to do so is to have three groups:
 * Current Channel
 * Deferred Channel
