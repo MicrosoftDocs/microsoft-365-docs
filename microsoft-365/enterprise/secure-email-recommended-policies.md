@@ -5,7 +5,7 @@ author: barlanmsft
 manager: angrobe
 ms.prod: microsoft-365-enterprise
 ms.topic: article
-ms.date: 08/30/2017
+ms.date: 01/18/2018
 ms.author: barlan
 ms.reviewer: jsnow
 ms.custom: it-pro
@@ -15,20 +15,32 @@ ms.custom: it-pro
 
 This article describes recommended policies to help you secure organizational email and email clients that support Modern Authentication and Conditional Access. These recommendations are in addition to the [common identity and access policy recommendations](identity-access-policies.md).
 
-The following recommendations are based on three different tiers of security and protection for your email that can be applied based on the granularity of your needs: **baseline**, **sensitive**, and **highly regulated**. You can learn more about these security tiers, and the recommended client operating systems, referenced by these recommendations in the [recommended security policies and configurations introduction](microsoft-365-policies-configurations.md).
+The following recommendations are based on three different layers of security and protection for your email that can be applied based on the granularity of your needs:
 
->[!NOTE]
->All security groups created as part of these recommendations must be created with Office features enabled. This is specifically important for the deployment of AIP when securing documents in SharePoint.
+- **Baseline**: Microsoft recommends you establish a minimum standard for protecting data, as well as the identities and devices that access your data. Microsoft provides strong default protection that meets the needs of many organizations. Some organizations require additional capabilities to meet their baseline requirements.
+- **Sensitive**: Some customers have a subset of data that must be protected at higher levels. You can apply increased protection to specific data sets in your Office 365 environment. Microsoft recommends protecting identities and devices that access sensitive data with comparable levels of security. 
+- **Highly regulated**: Some organizations may have a very small amount of data that is highly classified, trade secret, or regulated data. Microsoft provides capabilities to help organizations meet these requirements, including added protection for identities and devices.
+
+See the [recommended security policies and configurations introduction](microsoft-365-policies-configurations.md) topic for more details.
+
+> [!IMPORTANT]
+> All security groups created as part of these recommendations must be created with Office features enabled. This is specifically important for the deployment of Azure Information Protection (AIP) when securing documents in SharePoint Online.
 >
 >![Office features enabled for security groups](./media/security-group.png)
 >
 
 ## Baseline
-To create a new conditional access policy, log in to the Microsoft Azure portal with your administrator credentials. Then navigate to **Azure Active Directory > Security > Conditional access**.
+To create a new conditional access policy: 
 
-You can add a new policy (+Add) as shown in the following screen shot:
+1. Go to the [Azure portal](https://portal.azure.com), and sign in with your credentials. After you've successfully signed in, you see the Azure Dashboard.
 
-![Baseline CA policy](./media/secure-email/baseline-ca-policy.png)
+2. Choose **Azure Active Directory** from the left menu.
+
+3. Under the **Security** section, choose **Conditional access**.
+
+4. Choose **New policy** as shown in the screen-shot below:
+
+![Baseline CA policy](./media/secure-email/CA-EXO-policy-1.png)
 
 The following tables describe the appropriate settings necessary to express the policies required for each level of protection.
 
@@ -52,43 +64,53 @@ The following table describes the conditional access policy settings to implemen
 
 ### Require a compliant or domain joined device
 
-To create a new Intune Conditional Access Policy for Exchange Online, log in to the [Microsoft Management portal (http://manage.microsoft.com)](http://manage.microsoft.com/) with your administrator credentials and then navigate to **Policy > Conditional Access > Exchange Online Policy**.
+To create a conditional access policy for Exchange Online:
 
-![Exchange online policy](./media/secure-email/exchange-online-policy.png)
+1. Go to the [Azure portal](https://portal.azure.com), and sign in with your credentials. After you've successfully signed in, you see the Azure Dashboard.
 
-You must set a Conditional Access policy specifically for Exchange Online in the Intune Management portal to require a compliant or domain joined device.
+2. Choose **Azure Active Directory** from the left menu.
 
-|Categories|Type|Properties|Values|Notes|
-|:---------|:---|:---------|:-----|:----|
-|**Application access**|Outlook and other apps that user modern authentication|All platforms|True|Selected|
-|||Windows must meet the following requirement|Device must be domain joined or compliant|Selected (List)|
-|||Selected platform|False||
-||Outlook Web Access (OWA)|Block non-compliant devices on same platform as Outlook|True|Check|
-||Exchange ActiveSync apps that use basic authentication|Block non-compliant devices on platforms supported by Microsoft Intune|True|Check|
-|||Block all other devices on platforms not supported by Microsoft Intune|True|Check|
-|**Policy deployment**|Target groups|Select the Active Directory groups to target with this policy|||
-|||All users|False||
-|||Selected security groups|True|Selected|
-|||Modify|Select specific security group containing targeted users||
-||Exempt groups|Select the Active Directory groups to exempt from this policy (overrides members of the Targeted Groups list)|||
-|||No exempt users|True|Selected|
-|||Selected security groups|False|||
+3. Under the **Security** section, choose **Conditional access**.
 
-### Mobile application management conditional access for Exchange Online
+4. Choose **New policy**.
 
-You must set a Conditional Access policy specifically for Exchange Online in the Intune Management portal to manage mobile apps.
+5. Enter a policy name, then choose the **Users and groups** you want to apply the policy for.
 
-To manage mobile apps, log in to the Microsoft Azure portal with your administrator credentials, and then navigate to **Intune App Protection > Settings > Conditional Access > Exchange Online**.
+6. Choose **Cloud apps**.
 
-|Categories|Type|Properties|Values|Notes|
-|:---------|:---|:---------|:-----|:----|
-|**App access**|Allowed apps|Enable app access|Allow apps that support Intune app policies|Selected (list) – This results in a list of apps/platform combinations supported by Intune app policies|
-|**User access**|Allowed apps|Restricted user groups|Add users groups – Select specific security group containing targeted users|Start with security group including pilot users|
-|||Exempt user groups|Exception security groups|||
+7. Choose **Select apps**, select **Office 365 Exchange Online** from the **Cloud apps** list, click on **Select**. Once the **Office 365 Exchange Online** app is selected, click **Done**.
 
-#### Apply to
+8. Choose **Grant** from the **Access controls** section.
 
-Once your pilot project has been completed, these policies should be applied to all users in your organization.
+9. Choose **Grant access**, select both **Require device to be marked as compliant** and **Require domain joined (Hybrid Azure AD)**, then choose **Select**.
+
+10. Click **Create** to create the Exchange Online conditional access policy.
+
+	> [!NOTE]
+	> Beginning with Intune on Azure, you have to create all conditional access policies in the Azure Active Directory workload. Intune provides a link to Azure AD conditional access policies workload from its portal  for convenience.
+
+	> [!IMPORTANT]
+	> If you need assistance on migrating conditional access policies previously created in the Intune classic portal to the Intune on Azure portal, see the [reassign conditional access policies from Intune classic portal to the Azure portal](https://docs.microsoft.com/intune/conditional-access-intune-reassign) topic. 
+
+### App-based conditional access for Exchange Online
+
+You can add one more security layer by setting up an app-based conditional access policy for Exchange Online in the Intune on Azure portal. When you apply an app-based conditional access for Exchange Online you require users to use a specific app (E.g. Microsoft Outlook app) to access corporate e-mail.
+
+To add an app-based conditional access policy:
+
+1. Go to the [Azure portal](https://portal.azure.com), and sign in with your Intune credentials. After you've successfully signed in, you see the Azure Dashboard.
+
+2. Choose **More services** from the left menu, then type: "**Intune**".
+
+3. Choose **Intune App Protection**.
+
+4. On the **Intune mobile application management** blade choose **All Settings**.
+
+5. Choose **Exchange Online** under the **Conditional access** section.
+
+6. Select **Allow apps that support Intune app policies**, then choose the app (E.g. Microsoft Outlook).
+
+7. Choose **Restricted user groups**, click **Select groups**, select the user or group you want to apply the policy for, then click **Select**.
 
 ## Sensitive
 
@@ -113,7 +135,7 @@ The following table describes the conditional access policy settings to implemen
 ### Require a compliant or domain joined device
 (See baseline instructions)
 
-### Mobile application management conditional access for Exchange online
+### App-based conditional access for Exchange online
 
 (See baseline instructions)
 
@@ -140,7 +162,7 @@ The following table describes the conditional access policy settings to implemen
 
 ### Require a compliant or domain joined device
 (See baseline instructions)
-### Mobile application management conditional access for Exchange online
+### App-based conditional access for Exchange online
 (See baseline instructions)
 #### Apply to
 Once the pilot project has been completed, these policies should be applied to users in your organization who require access to email considered highly regulated.
@@ -172,7 +194,7 @@ To create a new app protection policy, log in to the Microsoft Azure portal with
 
 Add a new policy (+Add) as shown in the following screen shot:
 
-![Intune mobile application management](./media/secure-email/intune-mobile-app-mgmt.png)
+![Intune mobile application management](./media/secure-email/CA-EXO-policy-2.png)
 
 >[!NOTE]
 >There are slight differences in the app protection policy options between iOS and Android. The below policy is specifically for Android.
@@ -208,11 +230,13 @@ The following tables describe the recommended Intune app protection policy setti
 
 When complete, remember to click "Create". Repeat the above steps and replace the selected platform (dropdown) with iOS. This creates two app policies, so once you create the policy, then assign groups to the policy and deploy it.
 
+- See [how to create and assign app protection policies](https://docs.microsoft.com/intune/app-protection-policies) for more details.
+
 ### Intune mobile device management
-You create the following Configuration and Compliance policies by logging into the [Microsoft Management portal (http://manage.microsoft.com)](https://manage.microsoft.com/) with your administrator credentials.
+You create the following device configuration profiles and device compliance policies by logging into the [Intune on Azure portal](https://portal.azure.com) with your Intune credentials.
 
 #### iOS email profile
-In the [Intune management portal (https://manage.microsoft.com)](https://manage.microsoft.com/) create the following Configuration policies at **Policy > Configuration Policies > Add > iOS Email Policy**.
+In the [Intune on Azure portal](https://portal.azure.com), you can create the following device configuration profiles at **Device configuration > Profiles > Create Profile > Platform (iOS) > Profile type (E-mail)**.
 
 |Categories|Type|Properties|Values|Notes|
 |:---------|:---|:---------|:-----|:----|
@@ -228,26 +252,8 @@ In the [Intune management portal (https://manage.microsoft.com)](https://manage.
 |||Allow email to be sent from third party applications|True||
 |||Synchronize recently used email addresses|True|Check|
 
-#### iOS app sharing profile
-In the [Intune management portal (https://manage.microsoft.com)](https://manage.microsoft.com/) create the following Configuration policies at **Policy > Configuration Policies > Add > iOS app sharing policy**.
-
-|Categories|Type|Properties|Values|Notes|
-|:---------|:---|:---------|:-----|:----|
-|**Security**|All|All|Not configured||
-|**Cloud**|All|All|Not configured||
-|**Applications**|Browser|All|Not configured||
-||Apps|Allow installing apps|Not configured||
-|||Require a password to access application store|Not configured||
-|||All in-app purchases|Not configured||
-|||Allow managed documents in other managed apps (iOS 8.0 and later)|No|Selected – Drop down|
-|||Allow unmanaged documents in other managed apps|Not configured||
-|||Allow video conferencing|Not configured||
-|||Allow the user to trust new enterprise app authors|Not configured||
-||Games|All|Not configured||
-||Media content|All|Not configured|||
-
 #### Android email profile
-In the [Intune management portal (https://manage.microsoft.com)](https://manage.microsoft.com/) create the following Configuration policies at **Policy > Configuration Policies > Add > Android Email Policy**.
+In the [Intune on Azure portal](https://portal.azure.com), you can create the following device configuration profiles at **Device configuration > Profiles > Create Profile > Platform (Android) > Profile type (E-mail)**.
 
 |Categories|Type|Properties|Values|Notes|
 |:---------|:---|:---------|:-----|:----|
@@ -268,7 +274,7 @@ In the [Intune management portal (https://manage.microsoft.com)](https://manage.
 |||Notes|True|Check|
 
 #### Android for work email profile
-In the [Intune management portal (https://manage.microsoft.com)](https://manage.microsoft.com/) create the following Configuration policies at **Policy > Configuration Policies > Add > Android > Email Profile (Android for Work - Gmail)**.
+In the [Intune on Azure portal](https://portal.azure.com), you can create the following device configuration profiles at **Device configuration > Profiles > Create Profile > Platform (Android for Work) > Profile type (E-mail)**.
 
 |Categories|Type|Properties|Values|Notes|
 |:---------|:---|:---------|:-----|:----|
@@ -280,25 +286,8 @@ In the [Intune management portal (https://manage.microsoft.com)](https://manage.
 ||Synchronization settings|Number of days of email to synchronize|Two weeks|Selected – Drop down|
 |||Use SSL|True|Check|
 
-#### Android for work app sharing profile
-In the [Intune management portal (https://manage.microsoft.com)](https://manage.microsoft.com/) create the following Configuration policies at **Policy > Configuration Policies > Add > Android for Work app sharing policy**.
-
-|Categories|Type|Properties|Values|Notes|
-|:---------|:---|:---------|:-----|:----|
-|**Security**|Password|Minimum password length|Not configured||
-|||Number of repeated sign-in failures before the work profile is removed|Not configured||
-|||Minutes of inactivity before device locks|Not configured||
-|||Password expiration (days)|Not configured||
-|||Remember password history|Not configured||
-|||Require a password to unlock mobile device|Not configured||
-|||Allow fingerprint unlock (Android 6.0+)|Not configured||
-|||Allow Smart Lock and other trust agents (Android 6.0+)|Not configured||
-||Work profile settings|Allow data sharing between work and personal profiles|Apps in work profile can handle sharing request from personal profile|Selected – Drop down|
-|||Hide work profile notifications when the device is locked (Android 6.0+)|Not configured||
-|||Set default app permission policy (Android 6.0+)|Not configured|||
-
 #### Device compliance policy
-In the [Intune management portal (https://manage.microsoft.com)](https://manage.microsoft.com/) create the following Configuration policies at **Policy > Compliance Policies > Add**.
+In the [Intune on Azure portal](https://portal.azure.com), you can create the following device compliance policies at **Device compliance > Policies > Create Policy > Platform (iOS, Android or others) > Settings**.
 
 |Categories|Type|Properties|Values|Notes|
 |:---------|:---|:---------|:-----|:----|
