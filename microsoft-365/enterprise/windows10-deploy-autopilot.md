@@ -22,7 +22,7 @@ This guide makes several assumptions regarding essential, business-critical cons
 Make sure you have the following requirements deployed and licensed.
 
 | Product | License |
-|---|---|
+|:---|:---|
 | Microsoft Intune | E3, E5, or Intune standalone |
 | Azure AD Premium | E3 or E5 |
 | Office 365 ProPlus | Business Premium, E3, E5, or Office 365 ProPlus standalone |
@@ -181,15 +181,28 @@ When ready, complete these:
 
 1. Enable auto-enrollment using Azure AD Premium.
 
-    TBD
+    To allow this functionality, see [Enable Windows 10 automatic enrollment](https://go.microsoft.com/fwlink/?linkid=860990).
 
 2. Register device ID.
 
-    TBD
+    To register devices, you need to acquire their hardware IDs. Currently, we are working with hardware vendors to enable them to provide hardware IDs or upload them on their customer’s behalf.
 
-3. Deploy Office 365 ProPlus 2016 apps to Windows 10 devices using Intune.
+    Currently, Surface supports AutoPilot. AutoPilot support from other hardware manufacturers are upcoming. 
 
-    TBD
+    To capture the hardware ID information manually, use the Get-WindowsAutoPilotInfo PowerShell script. The script generates a CSV file with the device's hardware ID. Install the PowerShellGet module, download the PowerShell script, run it, save the CSV file, and then upload it to the Microsoft Store for Business.
+
+    For more info, see:
+    * [Overview of registering devices to your organization](https://go.microsoft.com/fwlink/?linkid=860991)
+    * [Install and upgrade PowerShellGet module](https://go.microsoft.com/fwlink/?linkid=861001)
+    * [Use PowerShell to get the device hardware ID](https://go.microsoft.com/fwlink/?linkid=861007)
+
+    By uploading this information to the [Microsoft Store for Business](https://go.microsoft.com/fwlink/?linkid=691471) or Partner Center admin portal, you'll be able to assign devices to your organization. These portals also provide additional options and customizations to configure your devices.
+
+3. Deploy Office 365 ProPlus apps to Windows 10 devices using Intune.
+
+    For a Microsoft 365 powered device, you'll need to deploy the Office 365 ProPlus suite to Windows 10 user groups. To do this:
+    1. Configure the app suite by choosing specific Office 365 ProPlus apps.
+    2. Configure app information, like the suite name and description TBD
 
 4. Deploy Windows AutoPilot.
 
