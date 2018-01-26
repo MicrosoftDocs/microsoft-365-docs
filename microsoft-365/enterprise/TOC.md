@@ -6,7 +6,6 @@
 ### [Phase 3: Windows 10 Enterprise](windows10-infrastructure.md)
 #### [Configure and deploy Windows 10 Enterprise as an in-place upgrade](windows10-deploy-inplaceupgrade.md)
 #### [Configure and deploy Windows 10 Enterprise with Windows AutoPilot](windows10-deploy-autopilot.md)
-<<<<<<< HEAD
 ### [Phase 4: Office 365 ProPlus](office365-proplus-infrastructure.md)
 #### [Step 1:  Technical inventory, environment assessment and business requirements](office365proplus-perform-techinventory-envassess-busrequirements)
 #### [Step 2 : Classify the target devices into deployment groups](office365proplus-classify-target-devices-deployment-groups)
@@ -15,15 +14,6 @@
 #### [Office 365 ProPlus exit criteria for Microsoft 365 Enterprise](office365proplus-exit-criteria)
 ### [Phase 5: Mobile device management](mobility-infrastructure.md)
 ### [Phase 6: Information protection](infoprotect-infrastructure.md)
-#### [Enable Windows 10 Enterprise security features](windows10-enable-security-features.md)
-### [Phase 5: Mobile device management](mobility-infrastructure.md)
-### [Phase 6: Information protection](infoprotect-infrastructure.md)
-<!-- These are still being worked on
-## [Collaboration workloads](collaboration-workloads.md)
-### [Exchange Online](collaboration-exchange-online.md)
-### [SharePoint Online](collaboration-sharepoint-online.md)
--->
->>>>>>> 0926f46a03cfacce1ecd1ad8dc7d4e0a07afe49f
 ## [Deployment of Microsoft 365 Enterprise with existing infrastructure](deploy-with-existing-infrastructure.md)
 # Resources
 ## [Identity and device access configurations](microsoft-365-policies-configurations.md)

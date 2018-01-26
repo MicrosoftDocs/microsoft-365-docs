@@ -733,7 +733,7 @@ ms.date: 11/01/2017
                                 </div>
                             </li>
                             <li>
-                                <a href="http://videoplayercdn.osi.office.net/embed/0705c337-f3e8-4d28-bb6c-530cd28e99f2_1280x720_3400.mp4" target="_blank">
+                                <a href="http://videoplayercdn.osi.office.net/embed/0705c337-f3e8-4d28-bb6c-530cd28e99f2" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
