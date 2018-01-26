@@ -18,6 +18,7 @@ Follow this guide to configure and deploy a Windows 10 Enterprise using Windows 
 This guide makes several assumptions regarding essential, business-critical considerations before upgrading an OS in an enterprise environment.
 
 **Requirements**
+
 Make sure you have the following requirements deployed and licensed.
 
 | Product | License |
