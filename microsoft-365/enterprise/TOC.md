@@ -10,9 +10,11 @@
 ### [Phase 4: Office 365 ProPlus](office365proplus-infrastructure.md)
 ### [Phase 5: Mobile device management](mobility-infrastructure.md)
 ### [Phase 6: Information protection](infoprotect-infrastructure.md)
+<!-- These are still being worked on
 ## [Collaboration workloads](collaboration-workloads.md)
 ### [Exchange Online](collaboration-exchange-online.md)
 ### [SharePoint Online](collaboration-sharepoint-online.md)
+-->
 ## [Deployment of Microsoft 365 Enterprise with existing infrastructure](deploy-with-existing-infrastructure.md)
 # Resources
 ## [Identity and device access configurations](microsoft-365-policies-configurations.md)
