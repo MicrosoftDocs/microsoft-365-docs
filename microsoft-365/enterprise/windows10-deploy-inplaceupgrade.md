@@ -238,9 +238,7 @@ When ready, enable:
     1. Download the Office 2016 Deployment Tool (ODT) in conjunction with Configuration Manager to help with Office 365 ProPlus deployments. 
     2. Edit the configuration XML file to fit specific deployment needs (like version, language, and product element). 
     
-    You can then create apps with Configuration Manager. 
-
-    For more info, see:
+    You can then create apps with Configuration Manager. For more info, see:
     * [Configuration options for ODT](https://go.microsoft.com/fwlink/?linkid=860504)
     * [Create apps in Configuration Manager](https://go.microsoft.com/fwlink/?linkid=761079)
     * [Deploy Office 365 ProPlus with Configuration Manager](https://go.microsoft.com/fwlink/?linkid=860506)
@@ -265,7 +263,7 @@ When ready, enable:
     4. Distribute content to the distribution point (a server running Configuration Manager)
     5. Create a deployment for the task sequence
 
-    For more info, see [Finalize OS configuration with Configuration Manager](https://go.microsoft.com/fwlink/?linkid=860697).
+   For more info, see [Finalize OS configuration with Configuration Manager](https://go.microsoft.com/fwlink/?linkid=860697).
 
 9. Deploy the Windows 10 Enterprise image to a UEFI machine.
 
