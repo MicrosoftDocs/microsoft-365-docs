@@ -11,117 +11,21 @@ More than likely, you will be deploying the Office 365 ProPlus client applicatio
 This phase of the Microsoft 365 deployment guidance provides you with five different Office 365 ProPlus deployment methods that you can use. You may end up using one, some, or all of them depending on your environment, business needs, and the tools you have available.
 
 
-If you already have <infrastructure element or workload> deployed, please see the Exit criteria <add link> to make sure that your <infrastructure element or workload> meets the required and optional criteria for Microsoft 365 Enterprise. 
+If you already have Office 365 ProPlus deployed, please see the [Exit criteria](office365proplus-exit-criteria)  to make sure that your Office 365 ProPlus infrastructure meets the required and optional criteria for Microsoft 365 Enterprise. 
 
-## Plan and deploy your Microsoft 365 Enterprise <name> infrastructure 
+## Plan and deploy your Microsoft 365 Enterprise Office 365 ProPlus infrastructure 
 
-Use the following steps to build out your new <name> infrastructure in the cloud or to adapt your existing on-premises or hybrid <name> infrastructure for the requirements and capabilities of Microsoft 365 Enterprise.
+Use the following steps to build out your new Office 365 ProPlus infrastructure or to adapt your existing infrastructure for the requirements and capabilities of Microsoft 365 Enterprise.
 
-For the <name> phase of the foundation infrastructure deployment of Microsoft 365 Enterprise, you will: 
+For the Office 365 ProPlus phase of the foundation infrastructure deployment of Microsoft 365 Enterprise, you will: 
 
-- Step 1: <step 1 title>
-- Step 2: <step 2 title>
-- Step 3: <step 3 title>
+- [Step 1: Perform a technical inventory and environmental assessment for your business requirements](office365proplus-perform-techinventory-envassess-busrequirements)
+- [Step 2 : Classify the target devices into deployment groups](office365proplus-classify-target-devices-deployment-groups)
+- [Step 3 : Step 3: Match deployment methods to groups](office365proplus-match-deployment-methods-groups)
+- [Step 4: Deploy Office 365 ProPlus](office365proplus-deploy-office365-proplus)
 
-When have completed these steps, go to the exit criteria (link TBD) for this phase to ensure that you meet the required configuration for Microsoft 365.
-
-
-
-# Step 1: <step article title> 
-
-<intro> 
-
-<text that guides customer through: 
-
-Planning (high-level key design decisions for this step, linking to deeper resources) 
-
-Configuration (implementation based on the design decisions for this step, linking to deeper resources)> 
-
-## Results
-
-The results of this step are: 
-
-- <result 1> 
-- <result 2> 
-- <result 3> 
-
-See the <exit criteria> corresponding to this step.
+When have completed these steps, go to the [exit criteria](office365proplus-exit-criteria) for this phase to ensure that you meet the required configuration for Microsoft 365.
 
 ## Next step
 
-[Step x: title](<filename>.md)
-
-
-
-# Phase 2: <name> infrastructure exit criteria
-
-**Summary:** Ensure that your configuration meets Microsoft 365 Enterprise criteria for <name>-based services and infrastructure.
-
-Before you move on to the next phase in the deployment process, ensure that your configuration meets the following criteria for <name>-based services and infrastructure.
-
-## Required exit criteria
-
-The following criteria are required for your organization to have a <name> infrastructure for Microsoft 365 Enterprise.
-
-<a name="crit-phasex-step0x-name"> </a>
-### <criterion 1 title> 
-
-<state the specific conditions for this criterion> 
-
-If you don’t meet this criterion, <consequences>. 
-
-#### How to test 
-
-<steps to test whether this criterion have been met>
-
-If needed, go to the step <link> corresponding to this exit criteria.
-
-
-<a name="crit-phasex-step0x-name"> </a>
-### <criterion 2 title> 
-
-<state the specific conditions for this criterion> 
-
-If you don’t meet this criterion, <consequences>. 
-
-#### How to test 
-
-<steps to test whether this criterion have been met>
-
-Click here <link> for the step corresponding to this exit criteria. 
-
-
-## Optional but highly-recommended exit criteria 
-
-The following criteria are not required for your organization to have <infrastructure element or workload> for Microsoft 365 Enterprise, but are highly recommended for additional user support, administration, and other capabilities. 
-
-<a name="crit-phasex-step0x-name"> </a>
-### <criterion 1 title> 
-
-<state the specific conditions for this criterion> 
-
-If you don’t meet this criterion, <consequences>. 
-
-#### How to test 
-
-<steps to test whether this criterion have been met>
-
-If needed, go to the step <link> corresponding to this exit criteria.
-
-
-<a name="crit-phasex-step0x-name"> </a>
-### <criterion 2 title> 
-
-<state the specific conditions for this criterion> 
-
-If you don’t meet this criterion, <consequences>. 
-
-#### How to test 
-
-<steps to test whether this criterion have been met>
-
-Click here <link> for the step corresponding to this exit criteria. 
-
-## Next phase 
-
-Your next phase in the end-to-end deployment process for Microsoft 365 is <name and link to next phase>.
+[Step 1:  Technical inventory, environment assessment and business requirements](office365proplus-perform-techinventory-envassess-busrequirements)

@@ -17,9 +17,6 @@ description: "Summary: Understand the major phases of deploying the foundation i
 
 **Summary:** Understand the major phases of deploying the foundation infrastructure for Microsoft 365 Enterprise in your organization.
 
->[!Note to readers:] 
-> This document represents a work-in-progress and a prototype for a foundation infrastructure article in the Microsoft 365 Enterprise deployment content set. At this time, this article is not intended to be a technically complete and product team-reviewed article ready for publication. 
-
 [Intro paragraphs]
 
 ## Create the foundation infrastructure for deploying Microsoft 365 Enterprise in your organization 
@@ -29,7 +26,7 @@ Use the following phases to build out the foundation infrastructure in your orga
 - [Phase 1: Networking](networking-infrastructure.md)
 - [Phase 2: Identity](identity-infrastructure.md)
 - [Phase 3: Windows 10 Enterprise](windows10-infrastructure.md)
-- [Phase 4: Office 365 ProPlus (live link)](microsoft-365-plan-deploy-Office365ProPlus.md)
+- [Phase 4: Office 365 ProPlus)](office365proplus-infrastructure.md)
 - [Phase 5: Mobile device management](mobility-infrastructure.md)
 - [Phase 6: Information protection](infoprotect-infrastructure.md)
 
