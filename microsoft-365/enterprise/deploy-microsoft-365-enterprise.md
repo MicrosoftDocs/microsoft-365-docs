@@ -17,7 +17,7 @@ description: "Summary: Understand the major phases of deploying Microsoft 365 En
 
 **Summary:** Understand the major phases of deploying Microsoft 365 Enterprise in your organization.
 
->[!Note to readers:] 
+> [!Note to readers:] 
 > This document represents a work-in-progress and a prototype for a foundation infrastructure article in the Microsoft 365 Enterprise deployment content set. At this time, this article is not intended to be a technically complete and product team-reviewed article ready for publication. 
 
 [Intro paragraphs]
@@ -28,8 +28,8 @@ Use the phases in the [Foundation Infrastructure](deploy-foundation-infrastructu
 
 If you have existing infrastructure, see [Deployment of Microsoft 365 Enterprise with existing infrastructure](deploy-with-existing-infrastructure.md).
 
->[!Important:] 
-> You must complete the exit critera for all six phases to ensure that your on-premises and cloud infrastructure meets the requirements of Microsoft 365.
+> [!Important] 
+> You must complete the exit criteria for all six phases to ensure that your on-premises and cloud infrastructure meets the requirements of Microsoft 365.
 
 ## Step 2: Create the collaboration workloads and scenarios that unlock creativity through teamwork (optional)
 
