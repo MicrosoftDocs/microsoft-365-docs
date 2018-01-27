@@ -17,7 +17,7 @@ description: "Summary: Understand the major phases of deploying Microsoft 365 En
 
 **Summary:** Understand the major phases of deploying Microsoft 365 Enterprise in your organization.
 
-> [!Note to readers:] 
+> [!Note] 
 > This document represents a work-in-progress and a prototype for a foundation infrastructure article in the Microsoft 365 Enterprise deployment content set. At this time, this article is not intended to be a technically complete and product team-reviewed article ready for publication. 
 
 [Intro paragraphs]

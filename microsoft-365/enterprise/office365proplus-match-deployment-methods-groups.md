@@ -22,11 +22,13 @@ Once you have your target machines classified into deployment groups, you can ma
 
 ## Deployment methodology concepts
 
+<!-- Hiding this so that intro placeholder doesn't show in build. Remove comment tags if this gets filled out.
 [intro]
+-->
 
 ### Managed deployment
 
-Office 365 ProPlus is deployed to the target devices by the administrator.  The user of the target device doesn�t play a role in the installation.  Managed deployments allow greater control of the Office 365 ProPlus configuration options.
+Office 365 ProPlus is deployed to the target devices by the administrator.  The user of the target device doesn't play a role in the installation.  Managed deployments allow greater control of the Office 365 ProPlus configuration options.
 
 ### Unmanaged deployment
 

@@ -1,5 +1,18 @@
-
-
+---
+title: Plan and Deploy Office 365 ProPlus infrastructure for Microsoft 365
+ms.author: josephd
+author: JoeDavies-MSFT
+manager: laurawi
+ms.date: 01/29/2018
+ms.audience: ITPro
+ms.topic: article
+ms.service: o365-solutions
+localization_priority: Normal
+ms.collection: Ent_O365
+ms.custom:
+- Strat_O365_Enterprise
+description: "Provides steps and exit criteria to deploy the Office 365 ProPlus infrastructure for Microsoft 365 Enterprise."
+---
 
 # Plan and Deploy Office 365 ProPlus Infrastructure for Microsoft 365
 
