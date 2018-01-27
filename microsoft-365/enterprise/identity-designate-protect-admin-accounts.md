@@ -23,13 +23,13 @@ description: ""
 Help prevent digital attacks on your organization by ensuring that access with global administrator accounts is as secure as possible. You can do this by:
 
 - Creating dedicated global administrator accounts with very strong passwords and using them only when absolutely necessary.
-- Performing day-day administration by assigning specific administrator roles—such as Exchange administrator or Password administrator—to IT staff user accounts based on their responsibilities.
+- Performing day-day administration by assigning specific administrator roles&mdash;such as Exchange administrator or Password administrator&mdash;to IT staff user accounts based on their responsibilities.
 
 For dedicated global admin accounts, you must also:
 
-1. Configure multi-factor authentication for each of the dedicated Office 365 global administrator accounts and use the strongest form of secondary authentication available in your organization. See the [Multi-factor authentication](identity-multi-factor-authentication) for more information. Before you enable MFA for your global admin account, test per-user account or conditional access-based MFA settings on a test user account to ensure that MFA works correctly and predictably.
-2. Use a conditional access policy to require multifactor authentication for global administrator accounts and to deny authentication if the sign-in risk is medium or high. See [Information protection for Microsoft 365 Enterprise](infoprotect-infrastructure.md1) for more information.
-3. Use an Office 365 Cloud App Security policy to monitor global administrator account activity. See Information protection for [Information protection for Microsoft 365 Enterprise](infoprotect-infrastructure.md1) for more information.
+1. Configure multi-factor authentication for each of the dedicated Office 365 global administrator accounts and use the strongest form of secondary authentication available in your organization. See the [Multi-factor authentication](identity-multi-factor-authentication.md) for more information. Before you enable MFA for your global admin account, test per-user account or conditional access-based MFA settings on a test user account to ensure that MFA works correctly and predictably.
+2. Use a conditional access policy to require multifactor authentication for global administrator accounts and to deny authentication if the sign-in risk is medium or high. See [Information protection for Microsoft 365 Enterprise](infoprotect-infrastructure.md) for more information.
+3. Use an Office 365 Cloud App Security policy to monitor global administrator account activity. See Information protection for [Information protection for Microsoft 365 Enterprise](infoprotect-infrastructure.md) for more information.
 
 See [Protect your Office 365 global administrator accounts](https://support.office.com/article/Protect-your-Office-365-global-administrator-accounts-6b4ded77-ac8d-42ed-8606-c014fd947560) for more information about configuration.
 
