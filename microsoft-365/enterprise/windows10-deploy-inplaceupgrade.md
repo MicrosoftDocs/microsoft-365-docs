@@ -30,7 +30,7 @@ Windows 10 introduces many new features and removes and changes many others in W
 * [Group Policy settings that apply to Windows 10](https://docs.microsoft.com/windows/client-management/group-policies-for-enterprise-and-education-editions)
 
 > [!NOTE]
-> If you are considering moving to modern management by using MDM instead of Group Policy to manage device configurations, you can start by using the MDM Migration Analysis Tool (MMAT) to determine what Group Policies are set on the device and report the corresponding settings, if available.
+> If you are considering moving to modern management by using MDM instead of Group Policy to manage device configurations, you can start by using the [MDM Migration Analysis Tool (MMAT)](https://github.com/WindowsDeviceManagement/MMAT) to determine what Group Policies are set on the device and report the corresponding settings, if available.
 
 #### Data management
 Although in-place upgrades shouldn’t affect user data and apps, a best practice is to configure a backup scenario and back up user data. For example, export all user data to a OneDrive for Business account, BitLocker To Go-encrypted USB flash drive, or network file server. For more details, see:
