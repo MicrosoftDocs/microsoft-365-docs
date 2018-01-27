@@ -12,7 +12,7 @@ You have planned for and implemented the creation of user accounts and groups so
 - Employees in your organization and the vendors, contractors, and partners that work for or with your organization have a corresponding user account in Azure AD.
 - Azure AD groups and their members contain user accounts and other groups for various purposes, such as the provisioning of security settings for Microsoft cloud services, automatic licensing, and other uses.
 
-If needed, go to the [step](./includes/identity-plan-users-groups.md)
+If needed, go to the [step](../identity-plan-users-groups.md)
  corresponding to this exit criteria.
 
 <a name="crit-identity-step2"></a>
@@ -39,7 +39,7 @@ To verify that directory synchronization is working correctly, do the following:
 3.	Check your Azure AD tenant to verify that the new test group name appears.
 4.	Use the user account and group management tool for your on-premises identity provider to create a new test group.
 
-If needed, go to the [step](./includes/identity-azure-ad-connect.md) corresponding to this exit criteria.
+If needed, go to the [step](../identity-azure-ad-connect.md) corresponding to this exit criteria.
 
 <a name="crit-identity-step5"></a>
 ### You have dedicated global admin accounts with multifactor authentication
@@ -60,7 +60,7 @@ You should only see the list of dedicated global administrator accounts.
 2. Sign in to Office 365 using each of the accounts from the previous steps. Each sign in must require multi-factor authentication and the strongest form of secondary authentication available in your organization.
 3. The Office 365 Cloud App Security administrator portal lists each of the global administrator account sign-ins from the previous step.
 
-If needed, go to the [step](./includes/identity-designate-protect-admin-accounts.md)
+If needed, go to the [step](../identity-designate-protect-admin-accounts.md)
  corresponding to this exit criteria.
 
 ## Optional but highly-recommended exit criteria
@@ -81,7 +81,7 @@ If you don�t meet this criterion, your users will not see a visual indicator t
 
 Sign-in to the Office 365 portal with your user account name and multifactor authentication. You should see your custom configuration elements on the sign-in page.
 
-If needed, go to the [step](./includes/identity-customize-office-365-sign-in.md) corresponding to this exit criteria.
+If needed, go to the [step](../identity-customize-office-365-sign-in.md) corresponding to this exit criteria.
 
 <a name="crit-identity-step7"></a>
 ### Multifactor authentication is enabled for your users
@@ -94,7 +94,7 @@ If you don�t meet this criterion, your user accounts will be subject to online
 
 Create a test user account and assign them a license. Configure multifactor authentication for the test user account with the additional verification method that you are using for actual user accounts, such as sending a message to your phone. Lastly, sign in the the Office 365 or Azure portal with the test user account and verify that MFA prompts you for the additional verification information and results in a successful authentication. Finally, delete the test user account.
 
-If needed, go to the [step](./includes/identity-multi-factor-authentication.md) corresponding to this exit criteria.
+If needed, go to the [step](../identity-multi-factor-authentication.md) corresponding to this exit criteria.
 
 <a name="crit-identity-step4"></a>
 ### The Azure AD Connect Health portal is displaying current status
@@ -109,7 +109,7 @@ If you don�t meet this criterion, you can get misleading information on the st
 #### How to test
 The Azure AD Connect Health portal shows the current and correct state of your on-premises identity servers and the ongoing synchronization.
 
-If needed, go to the [step](./includes/identity-azure-ad-connect-health.md) corresponding to this exit criteria.
+If needed, go to the [step](../identity-azure-ad-connect-health.md) corresponding to this exit criteria.
 
 <a name="crit-identity-step16"></a>
 ### Remote users have access to on-premises web-based resources through Azure AD Application Proxy
@@ -128,7 +128,7 @@ The results of this step are:
 
 A user that is connected to the Internet outside the intranet can successfully access an intranet web-based resource configured on the Application Proxy Connector using their Azure AD user credentials that was synchronized from their on-premises Windows Server AD.
 
-If needed, go to the [step](./includes/identity-azure-ad-application-proxy.md) corresponding to this exit criteria.
+If needed, go to the [step](../identity-azure-ad-application-proxy.md) corresponding to this exit criteria.
 
 <a name="crit-identity-step10"></a>
 ### Self-service password reset is enabled
@@ -145,7 +145,7 @@ If you don�t meet this criterion, users will be dependent on user account admi
 4. Sign out and then sign in to the test user account using the reset password.
 5. Delete the test user account.
 
-If needed, go to the [step](./includes/identity-password-reset.md) corresponding to this exit criteria.
+If needed, go to the [step](../identity-password-reset.md) corresponding to this exit criteria.
 
 <a name="crit-identity-step9"></a>
 ### Password writeback is enabled for your users
@@ -168,7 +168,7 @@ You test password writeback by changing your password in Office 365. You should 
 4. Type the current password, type a new password, and then confirm it.
 5. Sign out of the Office 365 portal and the remote computer and then sign in to the computer using the test user account and its new password. This proves that you were able to change the password of an on-premises Windows Server AD user account using the Azure AD tenant.
 
-If needed, go to the [step](./includes/identity-password-writeback.md) corresponding to this exit criteria.
+If needed, go to the [step](../identity-password-writeback.md) corresponding to this exit criteria.
 
 <a name="crit-identity-step8"></a>
 #### Azure AD Seamless Single Sign-on is enabled for your users
@@ -183,7 +183,7 @@ If you don�t meet this criterion, there are instances in which your users can 
 3.	From an on-premises computer that is joined to an on-premises Windows Server AD domain, access an Office 365 resource, such as the Office 365 portal or a SharePoint Online team site or folder.
 4.	Notice the absence of prompting for user name and password credentials.
 
-If needed, go to the [step](./includes/identity-single-sign-on.md) corresponding to this exit criteria.
+If needed, go to the [step](../identity-single-sign-on.md) corresponding to this exit criteria.
 
 <a name="crit-identity-step11"></a>
 ### Group-based licensing to automatically assign and remove licenses to user accounts based on group membership
@@ -204,7 +204,7 @@ If you don�t meet this criterion, you must manually:
 5. Examine the properties of the user account to ensure that it no longer has the Office 365 and EMS licenses assigned.
 6. Delete the test security group and the test user account.
 
-If needed, go to the [step](./includes/identity-group-based-licensing.md) corresponding to this exit criteria.
+If needed, go to the [step](../identity-group-based-licensing.md) corresponding to this exit criteria.
 
 <a name="crit-identity-step12"></a>
 ### Dynamic group membership settings automatically add user accounts to groups based on user account attributes
@@ -228,7 +228,7 @@ If the Sales and Accounting groups were dynamic, you would only have to change t
 5. Examine the properties of the user account to ensure that it is no longer a member of the test dynamic group.
 6. Delete the test dynamic group and the test user account.
 
-If needed, go to the [step](./includes/identity-automatic-group-membership.md) corresponding to this exit criteria.
+If needed, go to the [step](../identity-automatic-group-membership.md) corresponding to this exit criteria.
 
 <a name="crit-identity-step14"></a>
 ### Self-service group management is enabled for specific Azure AD security and Office 365 groups
@@ -247,7 +247,7 @@ If you don�t meet this criterion, all Azure AD group management tasks must be 
 6. Use the Azure portal to add members to the test security group.
 7. Delete the test security group and the test user account.
 
-If needed, go to the [step](./includes/identity-self-service-group-management.md) corresponding to this exit criteria.
+If needed, go to the [step](../identity-self-service-group-management.md) corresponding to this exit criteria.
 
 <a name="crit-identity-step15"></a>
 ### Azure AD Identity Protection
@@ -259,7 +259,7 @@ You have used to enable Azure AD Identity Protection and are using it to:
 
 If you don�t meet this criterion, you won�t be able to detect or automatically thwart credential compromise attempts or investigate identity-related security incidents. This potentially leaves your organization vulnerable to a successful credential compromise and the resulting threat to your organization�s private data.
 
-If needed, go to the [step](./includes/identity-azure-ad-identity-protection.md) corresponding to this exit criteria.
+If needed, go to the [step](../identity-azure-ad-identity-protection.md) corresponding to this exit criteria.
 
 <a name="crit-identity-step6"></a>
 ### Privileged Identity Management
@@ -267,4 +267,4 @@ You have used the instructions in [Configure Azure AD Privileged Identity Manage
 
 If you don�t meet this criterion, your global administrator accounts are subject to ongoing online attack and if compromised, can allow an attacker to harvest, destroy, or hold your sensitive information for ransom.
 
-If needed, go to the [step](./includes/identity-privileged-identity-management.md) corresponding to this exit criteria.
+If needed, go to the [step](../identity-privileged-identity-management.md) corresponding to this exit criteria.
