@@ -22,9 +22,7 @@ Here, we'll focus on how you can configure and deploy a Windows 10 Enterprise im
 Windows 10 Enterprise also provides a number of security features. Learn about Windows Defender Antivirus, Windows Defender Exploit Guard, and Windows Defender Advanced Threat Protection here: [Enable Windows 10 Enterprise security features](windows10-enable-security-features.md).
 
 ## Learn more
-[Microsoft 365 Enterprise product page](https://www.microsoft.com/microsoft-365/enterprise)
-
-[Windows 10](https://docs.microsoft.com/windows/windows-10)
-
+[Microsoft 365 Enterprise product page](https://www.microsoft.com/microsoft-365/enterprise)</br>
+[Windows 10](https://docs.microsoft.com/windows/windows-10)</br>
 [Deploy and update Windows 10](https://docs.microsoft.com/windows/deployment/)
 
