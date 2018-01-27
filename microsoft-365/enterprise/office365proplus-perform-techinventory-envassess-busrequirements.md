@@ -16,11 +16,9 @@ description: "Summary: <>."
 
 # Perform a technical inventory and environmental assessment for your business requirements
 
-[intro text]
-
 ## Environment assessment
 
-A successful deployment of office 365 ProPlus starts with understanding the infrastructure it's going to be deployed into and your business goals. For assessment guidance, see [Best practices: Assessing your infrastructure](https://docs.microsoft.com/en-us/DeployOffice/best-practices/best-practices-assessing-your-infrastructure).
+A successful deployment of office 365 ProPlus starts with understanding the infrastructure it's going to be deployed into and your business goals. For assessment guidance, see [Best practices: Assessing your infrastructure](https://docs.microsoft.com/DeployOffice/best-practices/best-practices-assessing-your-infrastructure).
 
 ## Hardware, software inventory 
 
@@ -31,11 +29,11 @@ If you have a tool like System Center Configuration Manager 2012 R2 or Configura
 - For all devices the desired frequency of feature updates
 - The specifications for non-mobile devices such as operating system, current version of Office, processor, memory, and available disk space
 - The specs for your mobile devices, such as the operating system and version
-- The languages you need to deploy Office 365 ProPlus in. For more information, see [Overview of deploying languages and Office 365 ProPlus](https://docs.microsoft.com/en-us/DeployOffice/overview-of-deploying-languages-in-office-365-proplus). 
+- The languages you need to deploy Office 365 ProPlus in. For more information, see [Overview of deploying languages and Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/overview-of-deploying-languages-in-office-365-proplus). 
 
 ## Application compatibility
 
-Once you have your hardware inventoried, you should look at your Microsoft Visual Basic for application macros and other add-ins that use Office. Use the [Readiness Toolkit](https://docs.microsoft.com/en-us/DeployOffice/use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro) to assess application compatibility for Office 365 ProPlus.
+Once you have your hardware inventoried, you should look at your Microsoft Visual Basic for application macros and other add-ins that use Office. Use the [Readiness Toolkit](https://docs.microsoft.com/DeployOffice/use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro) to assess application compatibility for Office 365 ProPlus.
 
 ## Microsoft FastTrack for Office 365
 
@@ -44,8 +42,8 @@ FastTrack onboarding and adoption resources and services are available to help y
 Because this Office 365 Pro plus deployment is one component of your Microsoft 365 implementation, it will be helpful for you to understand how it fits into the broader Microsoft 365 FastTrack services. For more information on Microsoft 365 resources, see [Microsoft 365 resources](https://fasttrack.microsoft.com/microsoft365/resources?view=office365). 
 
 As an interim checkpoint, ensure that you have met the 
-[exit criteria](office365proplus-exit-criteria) for this step. When those criteria are met, you can return here and continue with the next step.
+[exit criteria](office365proplus-exit-criteria.md) for this step. When those criteria are met, you can return here and continue with the next step.
 
 ## Next step
 
-[Step 2 : Classify the target devices into deployment groups](office365proplus-classify-target-devices-deployment-groups)
+[Step 2 : Classify the target devices into deployment groups](office365proplus-classify-target-devices-deployment-groups.md)

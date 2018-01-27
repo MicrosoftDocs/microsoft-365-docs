@@ -16,6 +16,8 @@ description: "Summary: <>."
 
 # Step 2 : Classify the target devices into deployment groups
 
+**Summary:** 
+
 The target devices that share common characteristics can be collected into deployment groups.  For example, if they share a common business role, operating system, the users' local permissions, network location, and how frequently they should receive feature updates you will probably use the same deployment methodology for all of them. This makes managing the deployment easier because you can match a deployment methodology to a class of devices rather than figuring out how to deploy to each device individually.  
 
 You can use these criteria for creating your deployment groups:
@@ -27,10 +29,10 @@ You can use these criteria for creating your deployment groups:
 5. Current hardware/OS/Office version specs -Office 365 ProPlus comes in a 32 bit or 64-bit architecture and depending on the apps that are being installed will required a certain amount of disk space. Finally, target devices that have the same version of Office already installed, and maybe are running the same VBA apps will have similar upgrade requirements.
 6. Managed or unmanaged - Target devices that are managed centrally can take advantage of deployment methodologies that are different from target devices that are owned and maintained by the individual user (BYOD)
 
-For more information on factors you can use to classify your target devices see [Best Practices: Planning your deployment of Office 365 ProPlus](https://docs.microsoft.com/en-us/DeployOffice/best-practices/best-practices-planning-your-deployment-of-office-365-proplus).
+For more information on factors you can use to classify your target devices see [Best Practices: Planning your deployment of Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/best-practices/best-practices-planning-your-deployment-of-office-365-proplus).
 
-As an interim checkpoint, ensure that you have met the [Exit criteria](office365proplus-exit-criteria) for this step.  When those criteria are met, you can return to this point and continue with the next step.
+As an interim checkpoint, ensure that you have met the [Exit criteria](office365proplus-exit-criteria.md) for this step.  When those criteria are met, you can return to this point and continue with the next step.
 
 ## Next step
 
-[Step 3: Match deployment methods to groups](office365proplus-match-deployment-methods-groups)
+[Step 3: Match deployment methods to groups](office365proplus-match-deployment-methods-groups.md)

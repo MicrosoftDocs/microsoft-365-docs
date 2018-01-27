@@ -16,15 +16,13 @@ description: "Summary: <>."
 
 # Step 4: Deploying Office 365 ProPlus
 
-In your physical deployment of Office 365 ProPlus, no matter which deployment methodology is being used, make sure you follow these best practices
+**Summary:** 
 
-## Pre-deployment activities
+In your physical deployment of Office 365 ProPlus, no matter which deployment methodology is being used, make sure you follow these best practices.
 
-[intro]
+## Lab Testing
 
-### Lab Testing
-
-Before you deploy any software package on an enterprise scale, lab testing is a must. In lab testing, you will start with the generic procedures that Microsoft has provided and then, through repeated test runs you will modify them so that they are customized for your production environment. This is also the environment that you should perform your application compatibility testing in. Refer to the [Readiness Toolkit](https://docs.microsoft.com/en-us/DeployOffice/use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro) for more information about application compatibility testing.
+Before you deploy any software package on an enterprise scale, lab testing is a must. In lab testing, you will start with the generic procedures that Microsoft has provided and then, through repeated test runs you will modify them so that they are customized for your production environment. This is also the environment that you should perform your application compatibility testing in. Refer to the [Readiness Toolkit](https://docs.microsoft.com/DeployOffice/use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro) for more information about application compatibility testing.
 
 A good rule of thumb that you can use to test whether you are ready to move to a pilot deployment is if you can complete multiple deployments to each type of device following the procedures you have developed and not having to make any additional changes. Don't dismantle your lab, as any anomalies or issues that you discover in the pilot phase may be best tested in the lab.
 
@@ -37,7 +35,7 @@ Reproduce the relevant portions of the configuration of your production environm
 - Target Device Hardware - ideally one of each type with the identical hardware and software configuration as in your production environment
 - Installed client applications - This is critical for doing application compatibility testing.
 
-### Pilot Testing
+## Pilot Testing
 
 In pilot testing you take the deployment procedures that you've developed in your lab and use them to perform targeted and limited deployments in your production environment. It is inevitable that you will encounter issues in your production environment that could not be anticipated in your lab environment. You'll need to make changes to your procedures based on the issues and workarounds you discovered during your pilot testing phase. You've probably already done many software deployment pilots and have your own well-established criteria and procedures. If you don't here are some general guidelines that you can use starting place for planning your pilot testing.
 
@@ -60,4 +58,6 @@ Consider additional training as an investment for the very first group to go ove
 
 As you progress through and complete the pilot tasks for each of your target groups. Be sure to get feedback from the participants and update your deployment procedures. Accordingly. Also, be sure to record any changes to the procedures that were necessary in order to successfully deploy.
 
+## Next step
 
+[Office 365 ProPlus infrastructure exit criteria](office365proplus-exit-criteria.md)

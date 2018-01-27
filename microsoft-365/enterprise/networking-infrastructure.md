@@ -18,29 +18,27 @@ description: "Summary: The steps and exit criteria to deploy the networking infr
 
 **Summary:** The steps and exit criteria to deploy the networking infrastructure for Microsoft 365 Enterprise.
 
->[!Note to readers:] 
-> This document represents a work-in-progress and a prototype for a foundation infrastructure article in the Microsoft 365 Enterprise deployment content set. At this time, this article is not intended to be a technically complete and product team-reviewed article ready for publication. 
+Microsoft 365 Enterprise includes Office 365 and Windows Intune as part of Enterprise Management + Security (EMS). Both of these cloud-based services rely on the security, performance, and reliability of connections over the Internet or dedicated circuits from client devices. Microsoft has designed the network that hosts these services and its connection to the Internet to enable customers all over the world to connect in a performant way.
 
-[Intro paragraph]
+In this phase, you step through the key considerations for creating a performant connection to the cloud services of Microsoft 365 Enterprise. For an overview, see [Office 365 networking principles](https://techcommunity.microsoft.com/t5/Office-365-Blog/Getting-the-best-connectivity-and-performance-in-Office-365/ba-p/124694).
 
-If you already have a networking infrastructure deployed, please see the Exit criteria article (link TBD) to make sure that your networking infrastructure meets the required and optional criteria for Microsoft 365 Enterprise.
+>[!Note]
+>If you already have a networking infrastructure deployed, please see the [exit criteria](networking-exit-criteria.md) for this phase to make sure that it meets the required and optional criteria for Microsoft 365 Enterprise.
+>
 
 ## Plan and deploy your Microsoft 365 Enterprise networking infrastructure 
 
-Use the following steps to build out your new networking infrastructure in the cloud or to adapt your existing on-premises or hybrid networking infrastructure for the requirements and capabilities of Microsoft 365 Enterprise.
+Use the following steps to build out your networking infrastructure for the requirements and capabilities of Microsoft 365 Enterprise.
 
-- Step 1: step 1 title
-- Step 2: step 2 title
-- Step 3: step 3 title
-- 
-When have completed these steps, go to the exit criteria (link TBD) for this phase to ensure that you meet the required configuration for Microsoft 365.
+- [Step 1: Provide sufficient Internet bandwidth for Microsoft’s cloud services](networking-provide-bandwidth-cloud-services.md)
+- [Step 2: Ensure that DNS resolution is performed in the same place as the Internet access](networking-dns-resolution-same-location.md)
+- [Step 3: Configure your proxy servers and firewalls for unhindered access to Office 365](networking-configure-proxies-firewalls.md)
+- [Step 4: Implement plan for endpoint change management](networking-implement-endpoint-change-mgmt.md)
+- [Step 5: Optimize TCP and application performance](networking-optimize-tcp-performance.md)
 
+When have completed these steps, go to the [exit criteria](networking-exit-criteria.md) for this phase to ensure that you meet the required criteria for Microsoft 365.
 
-<!---
-- [Step 1: step 1 title](phase1-step01-name.md)
-- [Step 2: step 2 title](phase1-step02-name.md)
-- [Step 3: step 3 title](phase1-step03-name.md)
-- 
-When have completed these steps, go to the [exit criteria](phase1-networking-exit-criteria.md) for this phase to ensure that you meet the required configuration for Microsoft 365.
---->
+## Next step
+
+[Step 1: Provide sufficient Internet bandwidth for Microsoft’s cloud services](networking-provide-bandwidth-cloud-services.md)
 

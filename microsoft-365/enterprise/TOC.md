@@ -7,7 +7,7 @@
 #### [Configure and deploy Windows 10 Enterprise as an in-place upgrade](windows10-deploy-inplaceupgrade.md)
 #### [Configure and deploy Windows 10 Enterprise with Windows AutoPilot](windows10-deploy-autopilot.md)
 ### [Phase 4: Office 365 ProPlus](office365-proplus-infrastructure.md)
-#### [Step 1:  Technical inventory, environment assessment and business requirements](office365proplus-perform-techinventory-envassess-busrequirements)
+#### [Step 1: Perform technical inventory, environment assessment and business requirements](office365proplus-perform-techinventory-envassess-busrequirements)
 #### [Step 2 : Classify the target devices into deployment groups](office365proplus-classify-target-devices-deployment-groups)
 #### [Step 3: Match deployment methods to groups](office365proplus-match-deployment-methods-groups)
 #### [Step 4: Deploy Office 365 ProPlus](office365proplus-deploy-office365-proplus)
@@ -16,8 +16,8 @@
 ### [Phase 6: Information protection](infoprotect-infrastructure.md)
 ## [Deployment of Microsoft 365 Enterprise with existing infrastructure](deploy-with-existing-infrastructure.md)
 # Resources
+## [Services and concepts](services-overview.md)
 ## [Identity and device access configurations](microsoft-365-policies-configurations.md)
 ### [Common identity and device access policies](identity-access-policies.md)
 ### [Exchange Online access policies](secure-email-recommended-policies.md)
 ### [SharePoint Online access policies](sharepoint-file-access-policies.md)
-## [Services and concepts](services-overview.md)

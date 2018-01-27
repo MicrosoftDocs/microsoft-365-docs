@@ -1,7 +1,20 @@
+---
+title: "Phase 4: Office 365 ProPlus infrastructure for Microsoft 365 Enterprise"
+ms.author: josephd
+author: JoeDavies-MSFT
+manager: laurawi
+ms.date: 01/29/2018
+ms.audience: ITPro
+ms.topic: article
+ms.service: o365-solutions
+localization_priority: Normal
+ms.collection: Ent_O365
+ms.custom:
+- Strat_O365_Enterprise
+description: "Summary: The steps and exit criteria to deploy the Office 365 ProPlus infrastructure for Microsoft 365 Enterprise."
+---
 
-
-
-# Plan and Deploy Office 365 ProPlus Infrastructure for Microsoft 365
+# Phase 4: Office 365 ProPlus infrastructure for Microsoft 365 Enterprise
 
 **Summary:** The steps and exit criteria to deploy the Office 365 ProPlus infrastructure for Microsoft 365 Enterprise.
 
@@ -11,7 +24,7 @@ More than likely, you will be deploying the Office 365 ProPlus client applicatio
 This phase of the Microsoft 365 deployment guidance provides you with five different Office 365 ProPlus deployment methods that you can use. You may end up using one, some, or all of them depending on your environment, business needs, and the tools you have available.
 
 
-If you already have Office 365 ProPlus deployed, please see the [Exit criteria](office365proplus-exit-criteria)  to make sure that your Office 365 ProPlus infrastructure meets the required and optional criteria for Microsoft 365 Enterprise. 
+If you already have Office 365 ProPlus deployed, please see the [Exit criteria](office365proplus-exit-criteria.md)  to make sure that your Office 365 ProPlus infrastructure meets the required and optional criteria for Microsoft 365 Enterprise. 
 
 ## Plan and deploy your Microsoft 365 Enterprise Office 365 ProPlus infrastructure 
 
@@ -19,13 +32,13 @@ Use the following steps to build out your new Office 365 ProPlus infrastructure 
 
 For the Office 365 ProPlus phase of the foundation infrastructure deployment of Microsoft 365 Enterprise, you will: 
 
-- [Step 1: Perform a technical inventory and environmental assessment for your business requirements](office365proplus-perform-techinventory-envassess-busrequirements)
-- [Step 2 : Classify the target devices into deployment groups](office365proplus-classify-target-devices-deployment-groups)
-- [Step 3 : Step 3: Match deployment methods to groups](office365proplus-match-deployment-methods-groups)
-- [Step 4: Deploy Office 365 ProPlus](office365proplus-deploy-office365-proplus)
+- [Step 1: Perform a technical inventory and environmental assessment for your business requirements](office365proplus-perform-techinventory-envassess-busrequirements.md)
+- [Step 2 : Classify the target devices into deployment groups](office365proplus-classify-target-devices-deployment-groups.md)
+- [Step 3 : Step 3: Match deployment methods to groups](office365proplus-match-deployment-methods-groups.md)
+- [Step 4: Deploy Office 365 ProPlus](office365proplus-deploy-office365-proplus.md)
 
-When have completed these steps, go to the [exit criteria](office365proplus-exit-criteria) for this phase to ensure that you meet the required configuration for Microsoft 365.
+When have completed these steps, go to the [exit criteria](office365proplus-exit-criteria.md) for this phase to ensure that you meet the required configuration for Microsoft 365.
 
 ## Next step
 
-[Step 1:  Technical inventory, environment assessment and business requirements](office365proplus-perform-techinventory-envassess-busrequirements)
+[Step 1: Technical inventory, environment assessment and business requirements](office365proplus-perform-techinventory-envassess-busrequirements.md)
