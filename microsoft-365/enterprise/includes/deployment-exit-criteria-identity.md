@@ -1,25 +1,3 @@
----
-title: "Phase 2: Identity infrastructure exit criteria"
-ms.author: josephd
-author: JoeDavies-MSFT
-manager: laurawi
-ms.date: 01/29/2018
-ms.audience: ITPro
-ms.topic: article
-ms.service: o365-solutions
-localization_priority: Normal
-ms.collection: Ent_O365
-ms.custom:
-- Strat_O365_Enterprise
-description: "Summary: Ensure that your configuration meets Microsoft 365 Enterprise criteria for identity-based services and infrastructure."
----
-
-# Phase 2: Identity infrastructure exit criteria
-
-**Summary:** Ensure that your configuration meets Microsoft 365 Enterprise criteria for identity-based services and infrastructure.
-
-Before you move on to the next phase in the deployment process, ensure that your configuration meets the following criteria for identity-based services and infrastructure.
-
 Also see [Prerequisites](https://docs.microsoft.com/microsoft-365-enterprise/identity-access-policies#prerequisites) for additional recommendations on identity infrastructure.
 
 ## Required exit criteria
@@ -44,7 +22,7 @@ If you have an existing on-premises identity provider such as Windows Server AD,
 
 With directory synchronization, your users can sign in to Office 365 and other Microsoft cloud services that use the same Azure AD tenant with the same credentials that they use to sign in to their computers and access intranet resources. 
 
-If you don‚Äôt meet this criterion, you will have two sets of user accounts and groups:
+If you donít meet this criterion, you will have two sets of user accounts and groups:
 
 - One that exists in your on-premises identity provider
 - One that exists in your Azure AD tenant
@@ -66,7 +44,7 @@ If needed, go to the [step](identity-azure-ad-connect.md) corresponding to this 
 <a name="crit-identity-step5"></a>
 ### You have dedicated global admin accounts with multifactor authentication
 
-You have used the information and procedures in [Protect your Office 365 global administrator accounts](https://support.office.com/article/Protect-your-Office-365-global-administrator-accounts-6b4ded77-ac8d-42ed-8606-c014fd947560) to heighten the security of your global administrator accounts. If you don‚Äôt meet this criterion, your global administrator accounts can be susceptible to attack and compromise, allowing an attacker to gain system-wide access to your data for harvesting, destruction, or ransom.
+You have used the information and procedures in [Protect your Office 365 global administrator accounts](https://support.office.com/en-us/article/Protect-your-Office-365-global-administrator-accounts-6b4ded77-ac8d-42ed-8606-c014fd947560) to heighten the security of your global administrator accounts. If you donít meet this criterion, your global administrator accounts can be susceptible to attack and compromise, allowing an attacker to gain system-wide access to your data for harvesting, destruction, or ransom.
 
 #### How to test
 
@@ -92,9 +70,9 @@ The following criteria are not required for your organization to have an identit
 <a name="crit-identity-step3"></a>
 ### You have a sign-in screen that is personalized to your organization
 
-You have used [Add company branding to your sign-in and Access Panel pages](http://aka.ms/aadpaddbranding) to add your organization‚Äôs branding to the Office 365 sign-in page.
+You have used [Add company branding to your sign-in and Access Panel pages](http://aka.ms/aadpaddbranding) to add your organizationís branding to the Office 365 sign-in page.
 
-If you don‚Äôt meet this criterion, your users will not see a visual indicator that they are accessing your organization. This can help:
+If you donít meet this criterion, your users will not see a visual indicator that they are accessing your organization. This can help:
 
 - End-users more quickly address errors in their account name for your organization when signing in.
 - IT administrators to more quickly distinguish between your production Office 365 subscription and dev/test subscriptions.
@@ -110,7 +88,7 @@ If needed, go to the [step](identity-customize-office-365-sign-in.md) correspond
 
 You used [Plan for multi-factor authentication for Office 365 Deployments](https://support.office.com/article/Plan-for-multifactor-authentication-for-Office-365-Deployments-043807b2-21db-4d5c-b430-c8a6dee0e6ba) and [Set up multi-factor authentication for Office 365 users](https://support.office.com/article/Set-up-multi-factor-authentication-for-Office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6) to enable MFA for your user accounts. 
 
-If you don‚Äôt meet this criterion, your user accounts will be subject to online password determination attacks. If a user account password is compromised, all of the resources and capabilities, such as administrator roles, are available to the attacker. This allows them to copy, destroy, or hold for ransom private and internal documents and other data.
+If you donít meet this criterion, your user accounts will be subject to online password determination attacks. If a user account password is compromised, all of the resources and capabilities, such as administrator roles, are available to the attacker. This allows them to copy, destroy, or hold for ransom private and internal documents and other data.
 
 #### How to test
 
@@ -121,12 +99,12 @@ If needed, go to the [step](identity-multi-factor-authentication.md) correspondi
 <a name="crit-identity-step4"></a>
 ### The Azure AD Connect Health portal is displaying current status
 
-You have used Using [Azure AD Connect Health with sync](https://docs.microsoft.com/azure/active-directory/connect-health/active-directory-aadconnect-health-sync) (for password synchronization) or [Using Azure AD Connect Health with AD FS](https://docs.microsoft.com/azure/active-directory/connect-health/active-directory-aadconnect-health-adfs) (for federated authentication) and have deployed Azure AD Connect Health, which involves:
+You have used Using [Azure AD Connect Health with sync](https://docs.microsoft.com/en-us/azure/active-directory/connect-health/active-directory-aadconnect-health-sync) (for password synchronization) or [Using Azure AD Connect Health with AD FS](https://docs.microsoft.com/en-us/azure/active-directory/connect-health/active-directory-aadconnect-health-adfs) (for federated authentication) and have deployed Azure AD Connect Health, which involves:
 
 - Installing the Azure AD Connect Health agent on each of your on-premises identity servers
 - Using the Azure AD Connect Health portal to monitor the stated of the ongoing synchronization.
 
-If you don‚Äôt meet this criterion, you can get misleading information on the state of your cloud-based identity infrastructure.
+If you donít meet this criterion, you can get misleading information on the state of your cloud-based identity infrastructure.
 
 #### How to test
 The Azure AD Connect Health portal shows the current and correct state of your on-premises identity servers and the ongoing synchronization.
@@ -136,12 +114,12 @@ If needed, go to the [step](identity-azure-ad-connect-health.md) corresponding t
 <a name="crit-identity-step16"></a>
 ### Remote users have access to on-premises web-based resources through Azure AD Application Proxy
 
-You have used the information at [How to provide secure remote access to on-premises apps](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started) to deploy Azure AD Application Proxy, which involves:
+You have used the information at [How to provide secure remote access to on-premises apps](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-application-proxy-get-started) to deploy Azure AD Application Proxy, which involves:
 
 - Configuring an instance of the Application Proxy Service in Azure to transfer web traffic between users on the Internet and a server running the Application Proxy Connector.
 - Configuring the Application Proxy Connector on an Internet-facing server to transfer web traffic between Application Proxy Service in Azure and on-premises web-based applications.
 
-If you don‚Äôt meet this criterion, your remote or roaming employees and vendors, contractor, and partners will not be able to access on-premises, web-based applications using Azure AD Application Proxy.
+If you donít meet this criterion, your remote or roaming employees and vendors, contractor, and partners will not be able to access on-premises, web-based applications using Azure AD Application Proxy.
 The results of this step are:
 
 - Deployment and configuration of the Azure Proxy Application service and Application Proxy Connectors to allow users to access on-premises web-based applications.
@@ -157,13 +135,13 @@ If needed, go to the [step](identity-azure-ad-application-proxy.md) correspondin
 
 You have used [Azure AD self-service password reset rapid deployment](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-getting-started) to configure password reset for your users.
 
-If you don‚Äôt meet this criterion, users will be dependent on user account administrators to reset their passwords, resulting in additional IT administration overhead.
+If you donít meet this criterion, users will be dependent on user account administrators to reset their passwords, resulting in additional IT administration overhead.
 
 #### How to test
 
 1. Enable self-service password reset. 
 2. Create a test user account with an initial password.
-3. Use the steps in [Let users reset their own passwords in Office 365](https://support.office.com/article/Let-users-reset-their-own-passwords-in-Office-365-5bc3f460-13cc-48c0-abd6-b80bae72d04a) to reset the password on the test user account.
+3. Use the steps in [Let users reset their own passwords in Office 365](https://support.office.com/en-us/article/Let-users-reset-their-own-passwords-in-Office-365-5bc3f460-13cc-48c0-abd6-b80bae72d04a) to reset the password on the test user account.
 4. Sign out and then sign in to the test user account using the reset password.
 5. Delete the test user account.
 
@@ -174,7 +152,7 @@ If needed, go to the [step](identity-password-reset.md) corresponding to this ex
 
 You have used the instructions in [Azure AD SSPR with password writeback](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-getting-started) to enable password writeback for the Azure AD tenant of your Microsoft 365 Enterprise subscription.
 
-If you don‚Äôt meet this criterion, users that are not connected to your on-premises network must reset their passwords through an IT administrator for the on-premises Windows Server AD. This can result in additional administration burden on your IT department.
+If you donít meet this criterion, users that are not connected to your on-premises network must reset their passwords through an IT administrator for the on-premises Windows Server AD. This can result in additional administration burden on your IT department.
 
 >[!Note]
 >Password writeback is required to fully utilize Identity Protection feature capabilities, such as requiring users to change their on-premises passwords when there has been a high risk of account compromise detected.
@@ -195,9 +173,9 @@ If needed, go to the [step](identity-password-writeback.md) corresponding to thi
 <a name="crit-identity-step8"></a>
 #### Azure AD Seamless Single Sign-on is enabled for your users
 
-You used the instructions in [Azure AD Connect: Seamless Single Sign-On](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-sso-quick-start) to enable Azure AD Seamless Single Sign-on for your organization. 
+You used the instructions in [Azure AD Connect: Seamless Single Sign-On](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect-sso-quick-start) to enable Azure AD Seamless Single Sign-on for your organization. 
 
-If you don‚Äôt meet this criterion, there are instances in which your users can be prompted to provide authentication credentials when accessing applications that use Azure AD.
+If you donít meet this criterion, there are instances in which your users can be prompted to provide authentication credentials when accessing applications that use Azure AD.
 
 #### How to test
 1.	Enable Azure AD Seamless Single Sign-on. 
@@ -212,7 +190,7 @@ If needed, go to the [step](identity-single-sign-on.md) corresponding to this ex
 
 You have used the instructions in [Assign licenses to a group in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-licensing-group-assignment-azure-portal) to configure the appropriate Azure AD security groups in your organization for group-based licensing to assign licenses for both Office 365 and EMS.
 
-If you don‚Äôt meet this criterion, you must manually:
+If you donít meet this criterion, you must manually:
 
 - Assign licenses to new users whom you intend to have access to Office 365 and EMS.
 - Retrieve licenses from users who are no longer with your organization or do not have access to Office 365 and EMS.
@@ -233,20 +211,20 @@ If needed, go to the [step](identity-group-based-licensing.md) corresponding to 
 
 You have determined the set of Azure AD dynamic groups and used the instructions in [Attribute-based dynamic group membership in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal) to create the groups and add rules that determine the set of user account attributes and values for group membership.
 
-If you don‚Äôt meet this criterion, group membership must be done manually as new accounts are added or as user account attributes change over time. For example, if someone moves from the Sales department to the Accounting department, you must:
+If you donít meet this criterion, group membership must be done manually as new accounts are added or as user account attributes change over time. For example, if someone moves from the Sales department to the Accounting department, you must:
 
 - Update the value of the Department attribute for that user account.
 - Manually remove them from the Sales group.
 - Manually add them to the Accounting group.
 
-If the Sales and Accounting groups were dynamic, you would only have to change the user account‚Äôs Department value.
+If the Sales and Accounting groups were dynamic, you would only have to change the user accountís Department value.
 
 #### How to test
 
-1. Create a test dynamic group in Azure AD and configure a rule for the Department equals ‚Äútest1‚Äù.
-2. Create a test user account in Azure AD and set the Department attribute to ‚Äútest1‚Äù.
+1. Create a test dynamic group in Azure AD and configure a rule for the Department equals ìtest1î.
+2. Create a test user account in Azure AD and set the Department attribute to ìtest1î.
 3. Examine the properties of the user account to ensure that it was made a member of the test dynamic group.
-4. Change the value of the Department attribute for the test user account to ‚Äútest2‚Äù.
+4. Change the value of the Department attribute for the test user account to ìtest2î.
 5. Examine the properties of the user account to ensure that it is no longer a member of the test dynamic group.
 6. Delete the test dynamic group and the test user account.
 
@@ -257,7 +235,7 @@ If needed, go to the [step](identity-automatic-group-membership.md) correspondin
 
 You have determined which groups are appropriate for self-service management, instructed their owners on group management workflow and responsibilities, and used the instructions in [Setting up self-service application access management in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-accessmanagement-self-service-group-management) to enable self-service management for those groups.
 
-If you don‚Äôt meet this criterion, all Azure AD group management tasks must be done by IT administrators, which can be an administrative burden.
+If you donít meet this criterion, all Azure AD group management tasks must be done by IT administrators, which can be an administrative burden.
 
 #### How to test
 
@@ -279,7 +257,7 @@ You have used to enable Azure AD Identity Protection and are using it to:
 - Detect possible credential compromise attempts.
 - Investigate and address ongoing suspicious identity incidents.
 
-If you don‚Äôt meet this criterion, you won‚Äôt be able to detect or automatically thwart credential compromise attempts or investigate identity-related security incidents. This potentially leaves your organization vulnerable to a successful credential compromise and the resulting threat to your organization‚Äôs private data.
+If you donít meet this criterion, you wonít be able to detect or automatically thwart credential compromise attempts or investigate identity-related security incidents. This potentially leaves your organization vulnerable to a successful credential compromise and the resulting threat to your organizationís private data.
 
 If needed, go to the [step](identity-azure-ad-identity-protection.md) corresponding to this exit criteria.
 
@@ -287,10 +265,6 @@ If needed, go to the [step](identity-azure-ad-identity-protection.md) correspond
 ### Privileged Identity Management
 You have used the instructions in [Configure Azure AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure) to enable PIM in your Azure AD tenant and configured your global administrator accounts as eligible admins.
 
-If you don‚Äôt meet this criterion, your global administrator accounts are subject to ongoing online attack and if compromised, can allow an attacker to harvest, destroy, or hold your sensitive information for ransom.
+If you donít meet this criterion, your global administrator accounts are subject to ongoing online attack and if compromised, can allow an attacker to harvest, destroy, or hold your sensitive information for ransom.
 
 If needed, go to the [step](identity-privileged-identity-management.md) corresponding to this exit criteria.
-
-## Next phase
-
-Your next phase in the end-to-end deployment process for Microsoft 365 is [Mobile device management](mobility-infrastructure.md).
