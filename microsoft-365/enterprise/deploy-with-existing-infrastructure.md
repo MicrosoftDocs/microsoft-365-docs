@@ -1,5 +1,5 @@
 ---
-title: "Deployment of Microsoft 365 Enterprise with existing infrastructure"
+title: Deployment of Microsoft 365 Enterprise with existing infrastructure
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi

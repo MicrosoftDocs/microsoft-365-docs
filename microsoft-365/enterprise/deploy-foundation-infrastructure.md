@@ -30,8 +30,8 @@ Use the following phases to build out the foundation infrastructure in your orga
 - [Phase 5: Mobile device management](mobility-infrastructure.md)
 - [Phase 6: Information protection](infoprotect-infrastructure.md)
 
-> [!Important:] 
-> You must complete the exit critera for each of the six phases to ensure that your on-premises and cloud infrastructure meets the requirements of Microsoft 365.
+> [!Important] 
+> You must complete the exit criteria for each of the six phases to ensure that your on-premises and cloud infrastructure meets the requirements of Microsoft 365.
 
 ## Next step
 

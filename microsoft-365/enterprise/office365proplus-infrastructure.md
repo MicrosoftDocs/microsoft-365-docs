@@ -1,5 +1,9 @@
 ---
+<<<<<<< HEAD
 title: "Phase 4: Office 365 ProPlus infrastructure for Microsoft 365 Enterprise"
+=======
+title: Plan and Deploy Office 365 ProPlus infrastructure for Microsoft 365
+>>>>>>> 32c994737496ebf6bfbc223615ed9754a599016f
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -11,10 +15,17 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom:
 - Strat_O365_Enterprise
+<<<<<<< HEAD
 description: "Summary: The steps and exit criteria to deploy the Office 365 ProPlus infrastructure for Microsoft 365 Enterprise."
 ---
 
 # Phase 4: Office 365 ProPlus infrastructure for Microsoft 365 Enterprise
+=======
+description: "Provides steps and exit criteria to deploy the Office 365 ProPlus infrastructure for Microsoft 365 Enterprise."
+---
+
+# Plan and Deploy Office 365 ProPlus Infrastructure for Microsoft 365
+>>>>>>> 32c994737496ebf6bfbc223615ed9754a599016f
 
 **Summary:** The steps and exit criteria to deploy the Office 365 ProPlus infrastructure for Microsoft 365 Enterprise.
 

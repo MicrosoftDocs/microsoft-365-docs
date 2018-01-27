@@ -16,15 +16,13 @@ ms.author: celested
 There are multiple ways you can deploy Windows 10 Enterprise for your organization. To learn all about these scenarios and understand the capabilities and limitations of each, see [Windows 10 deployment scenarios](https://docs.microsoft.com/windows/deployment/windows-10-deployment-scenarios).
 
 Here, we'll focus on how you can configure and deploy a Windows 10 Enterprise image through these deployment scenarios:
-* [Using System Center Configuration Manager (Configuration Manager) as an in-place upgrade](windows10-deploy-inplaceupgrade.md)
+* [Using System Center Configuration Manager as an in-place upgrade](windows10-deploy-inplaceupgrade.md)
 * [Using Windows AutoPilot](windows10-deploy-autopilot.md)
 
-TBD
+Windows 10 Enterprise also provides a number of security features. Learn about Windows Defender Antivirus, Windows Defender Exploit Guard, and Windows Defender Advanced Threat Protection here: [Enable Windows 10 Enterprise security features](windows10-enable-security-features.md).
 
 ## Learn more
-[Microsoft 365 Enterprise product page](https://www.microsoft.com/microsoft-365/enterprise)
-
-[Windows 10](https://docs.microsoft.com/windows/windows-10)
-
+[Microsoft 365 Enterprise product page](https://www.microsoft.com/microsoft-365/enterprise)</br>
+[Windows 10](https://docs.microsoft.com/windows/windows-10)</br>
 [Deploy and update Windows 10](https://docs.microsoft.com/windows/deployment/)
 

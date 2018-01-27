@@ -18,10 +18,8 @@ description: "Summary: The steps and exit criteria to deploy Exchange Online for
 
 **Summary:** The steps and exit criteria to deploy Exchange Online for Microsoft 365 Enterprise.
 
->[!Note to readers:] 
+> [!Note] 
 > This document represents a work-in-progress and a prototype for a collaboration workload article in the Microsoft 365 Enterprise deployment content set. At this time, this article is not intended to be a technically complete and product team-reviewed article ready for publication. 
-
-[introduction paragraphs]
 
 If you already have a Exchange Online deployed, please see the exit criteria to make sure that the Exchange Online configuration meets the required and optional criteria for Microsoft 365 Enterprise.
 
