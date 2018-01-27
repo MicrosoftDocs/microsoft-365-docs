@@ -33,9 +33,8 @@ For dedicated global admin accounts, you must also:
 
 See [Protect your Office 365 global administrator accounts](https://support.office.com/article/Protect-your-Office-365-global-administrator-accounts-6b4ded77-ac8d-42ed-8606-c014fd947560) for more information about configuration.
 
->[!Note]
->Organizations should use cloud-only identities to create privileged accounts, such as global administrators, for break-glass scenarios in emergencies, such as a cyberattack.
->
+> [!Note]
+> Organizations should use cloud-only identities to create privileged accounts, such as global administrators, for break-glass scenarios in emergencies, such as a cyberattack.
 
 The results of this step are:
 
@@ -45,7 +44,7 @@ Get-AzureADDirectoryRole | Where { $_.DisplayName -eq "Company Administrator" } 
 ```
 - All other everyday user accounts that manage your subscription have admin roles assigned that are associated with their job responsibilities.
 
-As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria.md#crit-identity-step5.md)
+As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria.md#crit-identity-step5)
  corresponding to this step.
 
 
