@@ -628,17 +628,17 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
-                                <a href="https://docs.microsoft.com/windows/deployment/update/waas-overview" target="_blank">
+                                <a href="https://www.microsoft.com/en-us/itpro/windows-10/windows-as-a-service" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="media/hub-itadmin-devices/admin-devices-overview-2.svg" alt="Overview of Windows as a service" />
+                                                        <img src="media/hub-itadmin-devices/admin-devices-overview-2.svg" alt="Windows as a service" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Overview of Windows as a service</h3>
+                                                    <h3>Windows as a service</h3>
                                                     <p>Simplify management and maintain a consistent experience for your users. Learn the new way to build, deploy, and service Windows through Windows as a service.</p>
                                                 </div>
                                             </div>

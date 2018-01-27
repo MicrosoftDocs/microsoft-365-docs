@@ -93,6 +93,7 @@ For a Microsoft 365 powered device, you'll also need to download Office 365 ProP
 
 #### Windows as a service
 Windows 10 introduced the concept of Windows as a service. This greatly changes the frequency and style of updates to Windows. Instead of new versions being released every 3-5 years, a more incremental model is used where two smaller updates (Feature Updates) are released yearly. For more info, see:
+* [Windows as a service on the Windows IT Pro Center](https://www.microsoft.com/en-us/itpro/windows-10/windows-as-a-service)
 * [Overview of Windows as a service](https://go.microsoft.com/fwlink/?linkid=860288)
 * [Update Windows 10 in the enterprise](https://go.microsoft.com/fwlink/?linkid=860285)
 

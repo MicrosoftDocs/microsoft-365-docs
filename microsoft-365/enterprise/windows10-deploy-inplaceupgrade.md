@@ -51,21 +51,21 @@ This guide assumes you are following Microsoft recommendations and have one of t
 * System Center 2012, 2012 R2 Configuration Manager with SP1, Current Branch, 1706
     * [Run an in-place upgrade to the latest Configuration Manager](https://go.microsoft.com/fwlink/?linkid=839406)
     * [Updates for Configuration Manager](https://go.microsoft.com/fwlink/?linkid=620343)
-* Core Configuration Manager configuration
+* Core Configuration Manager configuration:
     * CONFIGURATION MANAGER accounts
     * Active Directory permissions
     * Source folder structure
     * Active Directory schema
 * Configure the following [necessary Configuration Manager components for Windows 10 deployment](https://go.microsoft.com/fwlink/?linkid=860245):
-    * State migration point - Stores user state migration data during computer replace scenarios
-    * Distribution point - Stores all packages in Configuration Manager
-    * Software update point - Updates an OS as part of the deployment process
-    * Reporting services point - Monitors the OS deployment process
-    * Boot images - Windows Preinstallation Environment (PE) images Configuration Manager uses to start deployments
-    * OS images - The production deployment image (mounted OS)
-    * OS installers - Creates reference images using Microsoft Deployment Toolkit (MDT) Light Touch
-    * Drivers - A repository of managed device drivers
-    * Task Sequence - Delivered automatically to the client as a policy
+    * **State migration point** - Stores user state migration data during computer replace scenarios
+    * **Distribution point** - Stores all packages in Configuration Manager
+    * **Software update point** - Updates an OS as part of the deployment process
+    * **Reporting services point** - Monitors the OS deployment process
+    * **Boot images** - Are Windows Preinstallation Environment (PE) images used by Configuration Manager to start deployments
+    * **OS images** - Denotes the production deployment image (mounted OS)
+    * **OS installers** - Creates reference images using Microsoft Deployment Toolkit (MDT) Light Touch
+    * **Drivers** - Denotes a repository of managed device drivers
+    * **Task Sequence** - Is delivered automatically to the client as a policy
 
 #### Network bandwidth
 This guide assumes you have enough network bandwidth to support the deployment of Windows 10 Enterprise and Office 365 ProPlus as a unit. As a bundle, network bandwidth is a significant factor.
@@ -118,6 +118,7 @@ For a Microsoft 365 powered device, you'll also need to download Office 365 ProP
 
 #### Windows as a service
 Windows 10 introduced the concept of Windows as a service. This greatly changes the frequency and style of updates to Windows. Instead of new versions being released every 3-5 years, a more incremental model is used where two smaller updates (Feature Updates) are released yearly. For more info, see:
+* [Windows as a service on the Windows IT Pro Center](https://www.microsoft.com/en-us/itpro/windows-10/windows-as-a-service)
 * [Overview of Windows as a service](https://go.microsoft.com/fwlink/?linkid=860288)
 * [Update Windows 10 in the enterprise](https://go.microsoft.com/fwlink/?linkid=860285)
 
