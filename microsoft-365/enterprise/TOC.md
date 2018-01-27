@@ -34,7 +34,7 @@
 #### [Step 2 : Classify the target devices into deployment groups](office365proplus-classify-target-devices-deployment-groups)
 #### [Step 3: Match deployment methods to groups](office365proplus-match-deployment-methods-groups)
 #### [Step 4: Deploy Office 365 ProPlus](office365proplus-deploy-office365-proplus)
-#### [Office 365 ProPlus exit criteria](office365proplus-exit-criteria)
+#### [Office 365 ProPlus infrastructure exit criteria](office365proplus-exit-criteria)
 ### [Phase 5: Mobile device management](mobility-infrastructure.md)
 ### [Phase 6: Information protection](infoprotect-infrastructure.md)
 ## [Deployment of Microsoft 365 Enterprise with existing infrastructure](deploy-with-existing-infrastructure.md)
