@@ -30,7 +30,7 @@ The following figure shows the components of Azure AD Application Proxy and how 
 
 A user’s computer on the Internet sends web request traffic to an Application Proxy service in Azure, which forwards it to an Internet-connected server running an Application Proxy Connector. That server forwards the request traffic to the on-premises server running the web-based application. The response traffic from the on-premises server follows the reverse path back to the user’s computer.
 
-For more information about Azure AD Application Proxy, including links to configuration information, see [How to provide secure remote access to on-premises apps](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-application-proxy-get-started).
+For more information about Azure AD Application Proxy, including links to configuration information, see [How to provide secure remote access to on-premises apps](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started).
 
 The results of this step are:
 

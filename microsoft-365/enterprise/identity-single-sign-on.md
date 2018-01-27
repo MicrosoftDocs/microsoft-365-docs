@@ -32,7 +32,7 @@ In this figure, an on-premises user requests access to Office 365 (Step 1), whic
 
 In this example, the access to Office 365 is seamless from the on-premises user. They are not prompted for a user name or password.
 
-For additional information, see [Core Concepts](https://docs.microsoft.com/en-us/microsoft-365-enterprise/microsoft-365-policies-configurations#core-concepts).
+For additional information, see [Core Concepts](https://docs.microsoft.com/microsoft-365-enterprise/microsoft-365-policies-configurations#core-concepts).
 
 You configure Azure AD Seamless SSO with the Azure AD Connect tool, which is running on a server in your intranet.
 

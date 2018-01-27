@@ -50,7 +50,7 @@ For the very first users in your pilot, look for people who are eager to partici
 
 ## Train end-users, helpdesk staff, and administrators
 
-Evaluate how much training is needed for each of the groups. The greater the change or the delta between their current production environment and what you are moving them to, the more training there are likely to need. Look for training in different modalities and that take up differing amounts of time. Some people may prefer to read, others watch a video, and still smothers may need instructor lead training. For some training options see the [Office 365 Training Center](https://support.office.com/en-us/office-training-center).
+Evaluate how much training is needed for each of the groups. The greater the change or the delta between their current production environment and what you are moving them to, the more training there are likely to need. Look for training in different modalities and that take up differing amounts of time. Some people may prefer to read, others watch a video, and still smothers may need instructor lead training. For some training options see the [Office 365 Training Center](https://support.office.com/office-training-center).
 
 Consider additional training as an investment for the very first group to go over, so that they can act as trainers for those who follow them.
 

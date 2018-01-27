@@ -46,7 +46,7 @@ If needed, go to the [step](../identity-azure-ad-connect.md) corresponding to th
 
 #### You have dedicated global admin accounts with multifactor authentication
 
-You have used the information and procedures in [Protect your Office 365 global administrator accounts](https://support.office.com/en-us/article/Protect-your-Office-365-global-administrator-accounts-6b4ded77-ac8d-42ed-8606-c014fd947560) to heighten the security of your global administrator accounts. If you don't meet this criterion, your global administrator accounts can be susceptible to attack and compromise, allowing an attacker to gain system-wide access to your data for harvesting, destruction, or ransom.
+You have used the information and procedures in [Protect your Office 365 global administrator accounts](https://support.office.com/article/Protect-your-Office-365-global-administrator-accounts-6b4ded77-ac8d-42ed-8606-c014fd947560) to heighten the security of your global administrator accounts. If you don't meet this criterion, your global administrator accounts can be susceptible to attack and compromise, allowing an attacker to gain system-wide access to your data for harvesting, destruction, or ransom.
 
 ##### How to test
 
@@ -104,7 +104,7 @@ If needed, go to the [step](../identity-multi-factor-authentication.md) correspo
 
 #### The Azure AD Connect Health portal is displaying current status
 
-You have used Using [Azure AD Connect Health with sync](https://docs.microsoft.com/en-us/azure/active-directory/connect-health/active-directory-aadconnect-health-sync) (for password synchronization) or [Using Azure AD Connect Health with AD FS](https://docs.microsoft.com/en-us/azure/active-directory/connect-health/active-directory-aadconnect-health-adfs) (for federated authentication) and have deployed Azure AD Connect Health, which involves:
+You have used Using [Azure AD Connect Health with sync](https://docs.microsoft.com/azure/active-directory/connect-health/active-directory-aadconnect-health-sync) (for password synchronization) or [Using Azure AD Connect Health with AD FS](https://docs.microsoft.com/azure/active-directory/connect-health/active-directory-aadconnect-health-adfs) (for federated authentication) and have deployed Azure AD Connect Health, which involves:
 
 - Installing the Azure AD Connect Health agent on each of your on-premises identity servers
 - Using the Azure AD Connect Health portal to monitor the stated of the ongoing synchronization.
@@ -120,7 +120,7 @@ If needed, go to the [step](../identity-azure-ad-connect-health.md) correspondin
 
 #### Remote users have access to on-premises web-based resources through Azure AD Application Proxy
 
-You have used the information at [How to provide secure remote access to on-premises apps](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-application-proxy-get-started) to deploy Azure AD Application Proxy, which involves:
+You have used the information at [How to provide secure remote access to on-premises apps](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started) to deploy Azure AD Application Proxy, which involves:
 
 - Configuring an instance of the Application Proxy Service in Azure to transfer web traffic between users on the Internet and a server running the Application Proxy Connector.
 - Configuring the Application Proxy Connector on an Internet-facing server to transfer web traffic between Application Proxy Service in Azure and on-premises web-based applications.
@@ -149,7 +149,7 @@ If you don't meet this criterion, users will be dependent on user account admini
 
 1. Enable self-service password reset. 
 2. Create a test user account with an initial password.
-3. Use the steps in [Let users reset their own passwords in Office 365](https://support.office.com/en-us/article/Let-users-reset-their-own-passwords-in-Office-365-5bc3f460-13cc-48c0-abd6-b80bae72d04a) to reset the password on the test user account.
+3. Use the steps in [Let users reset their own passwords in Office 365](https://support.office.com/article/Let-users-reset-their-own-passwords-in-Office-365-5bc3f460-13cc-48c0-abd6-b80bae72d04a) to reset the password on the test user account.
 4. Sign out and then sign in to the test user account using the reset password.
 5. Delete the test user account.
 
@@ -183,7 +183,7 @@ If needed, go to the [step](../identity-password-writeback.md) corresponding to 
 
 ##### Azure AD Seamless Single Sign-on is enabled for your users
 
-You used the instructions in [Azure AD Connect: Seamless Single Sign-On](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect-sso-quick-start) to enable Azure AD Seamless Single Sign-on for your organization. 
+You used the instructions in [Azure AD Connect: Seamless Single Sign-On](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-sso-quick-start) to enable Azure AD Seamless Single Sign-on for your organization. 
 
 If you don't meet this criterion, there are instances in which your users can be prompted to provide authentication credentials when accessing applications that use Azure AD.
 

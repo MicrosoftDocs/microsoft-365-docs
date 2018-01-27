@@ -29,8 +29,8 @@ To keep the common identity access between your on-premises resources and your c
 
 The key design decision of how to use Azure AD Connect Health is based on how you are using Azure AD Connect:
 
-- If you are using a managed authentication option, start with [Using Azure AD Connect Health with sync](https://docs.microsoft.com/en-us/azure/active-directory/connect-health/active-directory-aadconnect-health-sync) to understand and configure Azure AD Connect Health.
- -If you are synchronizing just the names of the accounts and groups using federated authentication with AD FS, start with [Using Azure AD Connect Health with AD FS](https://docs.microsoft.com/en-us/azure/active-directory/connect-health/active-directory-aadconnect-health-adfs) to understand and configure Azure AD Connect Health.
+- If you are using a managed authentication option, start with [Using Azure AD Connect Health with sync](https://docs.microsoft.com/azure/active-directory/connect-health/active-directory-aadconnect-health-sync) to understand and configure Azure AD Connect Health.
+ -If you are synchronizing just the names of the accounts and groups using federated authentication with AD FS, start with [Using Azure AD Connect Health with AD FS](https://docs.microsoft.com/azure/active-directory/connect-health/active-directory-aadconnect-health-adfs) to understand and configure Azure AD Connect Health.
 
 The results of this step are:
 
