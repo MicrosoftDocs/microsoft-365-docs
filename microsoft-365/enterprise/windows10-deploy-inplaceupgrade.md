@@ -12,6 +12,14 @@ ms.author: celested
 
 # Configure and deploy Windows 10 Enterprise as an in-place upgrade
 
+
+**Applies to:**
+
+* Microsoft 365 Enterprise E3
+* Microsoft 365 Enterprise E5
+
+**Summary:**
+
 Follow this guide to configure and deploy a Windows 10 Enterprise image using System Center Configuration Manager (Configuration Manager) as an in-place upgrade.
 
 ## Step 1: Consideration phase

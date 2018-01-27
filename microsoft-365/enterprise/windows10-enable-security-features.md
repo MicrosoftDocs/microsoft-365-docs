@@ -64,7 +64,7 @@ You can perform basic troubleshooting or optionally provide Microsoft with .cab 
 
 
 ## Windows Defender Advanced Threat Protection
-Windows Defender ATP is a security service that enables enterprise customers to detect, investigate, and respond to advanced threats on their networks. For more info about Windows Defender ATP, the minimum requirements, and how you can manage this feature, see:
+Windows Defender ATP<sup>[1](#footnote1)</sup> is a security service that enables enterprise customers to detect, investigate, and respond to advanced threats on their networks. For more info about Windows Defender ATP, the minimum requirements, and how you can manage this feature, see:
 * [Windows Defender ATP](https://docs.microsoft.com/en-us/windows/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection)
 * [Minimum requirements](https://docs.microsoft.com/en-us/windows/threat-protection/windows-defender-atp/minimum-requirements-windows-defender-advanced-threat-protection)
 
@@ -102,4 +102,13 @@ You might encounter issues while onboarding or while using the product. For more
 [Microsoft 365 Enterprise product page](https://www.microsoft.com/microsoft-365/enterprise)</br>
 [Windows 10](https://docs.microsoft.com/windows/windows-10)</br>
 [Deploy and update Windows 10](https://docs.microsoft.com/windows/deployment/)
+
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+<small><a name="footnote1">1</a> Only available with Enterprise E5 plan.</small>
 

@@ -12,6 +12,13 @@ ms.author: celested
 
 # Configure and deploy Windows 10 Enterprise with Windows AutoPilot
 
+**Applies to:**
+
+* Microsoft 365 Enterprise E3
+* Microsoft 365 Enterprise E5
+
+**Summary:**
+
 Follow this guide to configure and deploy a Windows 10 Enterprise using Windows AutoPilot&mdash;a collection of technologies used to set up and pre-configure new devices, getting them ready for productive use. To learn more about Windows AutoPilot, including benefits and scenarios, see [Overview of Windows AutoPilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
 
 ## Step 1: Consideration phase
