@@ -41,8 +41,6 @@ For more information about the reports and how to access them, see [Azure Active
 
 The results of this step are the awareness of these reports and a determination of how you can use them to gain insights on Azure AD events and activities for planning and security purposes.
 
-As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria.md#crit-identity-step13) corresponding to this step.
-
 ## Next step
 
 [Step 14: Self-service group management](identity-self-service-group-management.md)

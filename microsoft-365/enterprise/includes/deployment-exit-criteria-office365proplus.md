@@ -1,4 +1,4 @@
-## Required exit criteria
+### Required exit criteria
 
 The following criteria are required for your organization to have a Office 365 ProPlus infrastructure for Microsoft 365 Enterprise.
 
