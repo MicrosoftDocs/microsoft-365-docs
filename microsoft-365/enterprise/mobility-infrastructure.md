@@ -25,3 +25,6 @@ To secure data on your device, you'll use Microsoft Intune. Mobile device manage
 The entire library of Intune documentation is [available online](https://docs.microsoft.com/intune).
 
 
+## Next step
+
+[Phase 6: Information protection infrastructure](infoprotect-infrastructure.md)
