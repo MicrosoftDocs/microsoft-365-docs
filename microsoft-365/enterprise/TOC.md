@@ -29,7 +29,7 @@
 ### [Phase 3: Windows 10 Enterprise](windows10-infrastructure.md)
 #### [Configure and deploy Windows 10 Enterprise as an in-place upgrade](windows10-deploy-inplaceupgrade.md)
 #### [Configure and deploy Windows 10 Enterprise with Windows AutoPilot](windows10-deploy-autopilot.md)
-### [Phase 4: Office 365 ProPlus](office365-proplus-infrastructure.md)
+### [Phase 4: Office 365 ProPlus](office365proplus-infrastructure.md)
 #### [Step 1: Perform technical inventory, environment assessment and business requirements](office365proplus-perform-techinventory-envassess-busrequirements.md)
 #### [Step 2 : Classify the target devices into deployment groups](office365proplus-classify-target-devices-deployment-groups.md)
 #### [Step 3: Match deployment methods to groups](office365proplus-match-deployment-methods-groups.md)
