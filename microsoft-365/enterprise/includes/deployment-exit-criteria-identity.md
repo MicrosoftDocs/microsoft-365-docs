@@ -73,7 +73,7 @@ The following criteria are not required for your organization to have an identit
 
 #### You have a sign-in screen that is personalized to your organization
 
-You have used [Add company branding to your sign-in and Access Panel pages](http://aka.ms/aadpaddbranding) to add your organization�s branding to the Office 365 sign-in page.
+You have used [Add company branding to your sign-in and Access Panel pages](http://aka.ms/aadpaddbranding) to add your organization's branding to the Office 365 sign-in page.
 
 If you don't meet this criterion, your users will not see a visual indicator that they are accessing your organization. This can help:
 

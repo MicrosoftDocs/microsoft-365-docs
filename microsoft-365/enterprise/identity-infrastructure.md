@@ -45,3 +45,7 @@ Use the following steps to plan for and deploy your new identity infrastructure 
 - [Step 16: Azure AD Application Proxy](identity-azure-ad-application-proxy.md)
 
 When have completed these steps, go to the [exit criteria](identity-exit-criteria.md) for this phase to ensure that you meet the required configuration for Microsoft 365.
+
+## Next step
+
+[Step 1: Plan for users and groups](identity-plan-users-groups.md)

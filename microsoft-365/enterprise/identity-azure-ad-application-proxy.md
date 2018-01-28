@@ -38,5 +38,5 @@ As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria
 
 ## Next step
 
-[Phase 2: Identity infrastructure exit criteria](identity-exit-criteria.md)
+[Identity infrastructure exit criteria](identity-exit-criteria.md)
 
