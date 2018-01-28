@@ -38,6 +38,11 @@
 #### [Office 365 ProPlus infrastructure exit criteria](office365proplus-exit-criteria.md)
 ### [Phase 5: Mobile device management](mobility-infrastructure.md)
 ### [Phase 6: Information protection](infoprotect-infrastructure.md)
+#### [Step 1: Define security and information protection levels](infoprotect-define-sec-infoprotect-levels.md)
+#### [Step 2: Configure conditional access policy settings](infoprotect-configure-conditional-access-policy-settings.md)
+#### [Step 3: Configure classification for your environment](infoprotect-configure-classification.md)
+#### [Step 4: Configure increased security for Office 365](infoprotect-enable-office-365-advanced-threat-protection.md)
+#### [Information protection infrastructure exit criteria](infoprotect-exit-criteria.md)
 ## [Deployment of Microsoft 365 Enterprise with existing infrastructure](deploy-with-existing-infrastructure.md)
 # Resources
 ## [Services and concepts](services-overview.md)

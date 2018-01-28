@@ -34,7 +34,7 @@ For more information, see [Plan for multi-factor authentication for Office 365 D
 To configure multifactor authentication, [Set up multi-factor authentication for Office 365 users](https://support.office.com/article/Set-up-multi-factor-authentication-for-Office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6).
 
 >[!Note]
->You can also require MFA with conditional access policies. For more information, see Step 2: Configure conditional access policy settings <link> in the Information Protection phase.
+>You can also require MFA with conditional access policies. For more information, see [Step 2: Configure conditional access policy settings](infoprotect-configure-conditional-access-policy-settings.md) in the Information Protection phase.
 >
 
 Make sure that you inform your users that MFA is being required for thier accounts. They must understand the requirements for the secondary authentication method (such as mandatory use of a smart phone to sign in), can configure it correctly, and experience it without errors.
