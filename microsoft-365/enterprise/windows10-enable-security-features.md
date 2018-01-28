@@ -18,7 +18,7 @@ To learn more about these technologies, see:
 * [Device security](https://docs.microsoft.com/en-us/windows/device-security/) - Includes AppLocker, BitLocker, Device Guard, and Trusted Platform Module
 * [Threat protection](https://docs.microsoft.com/en-us/windows/threat-protection/) - Includes Windows Defender Security Center, Windows Defender Advanced Threat Protection, Windows Defender Antivirus, Windows Defender Application Guard, Windows Defender Smart Screen, and Windows Information Protection
 
-Here, we'll show you how you can make deploy, manage, configure, and troubleshoot using these security features:
+Here, we'll show you how you can deploy, manage, configure, and troubleshoot using these security features:
 * [Windows Defender Antivirus](#windows-defender-antivirus)
 * [Windows Defender Exploit Guard](#windows-defender-exploit-guard)
 * [Windows Defender Advanced Threat Protection](#windows-defender-advanced-threat-protection)
