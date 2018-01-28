@@ -11,12 +11,10 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom:
 - Strat_O365_Enterprise
-description: "Summary: <>."
+description: Understand the process of deploying Office 365 ProPlus.
 ---
 
 # Step 4: Deploying Office 365 ProPlus
-
-**Summary:** 
 
 In your physical deployment of Office 365 ProPlus, no matter which deployment methodology is being used, make sure you follow these best practices.
 
@@ -32,8 +30,8 @@ Reproduce the relevant portions of the configuration of your production environm
 - File and cloud storage
 - Identity/security: accounts, groups, group policy, permissions, any other access controls to resources that will be used during the deployment
 - Deployment tools: System Center Configuration Manager 2012 R2 or Configuration Manager (current branch) (if you have these in your existing production environment), other third-party software deployment tools
-- Target Device Hardware - ideally one of each type with the identical hardware and software configuration as in your production environment
-- Installed client applications - This is critical for doing application compatibility testing.
+- Target Device Hardware: Ideally one of each type with the identical hardware and software configuration as in your production environment
+- Installed client applications: This is critical for doing application compatibility testing.
 
 ## Pilot Testing
 

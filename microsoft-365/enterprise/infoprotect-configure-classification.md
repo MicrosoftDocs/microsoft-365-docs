@@ -3,7 +3,7 @@ title: "Step 3: Configure classification for your environment"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 01/29/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -11,14 +11,12 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom:
 - Strat_O365_Enterprise
-description: ""
+description: Understand and configure various ways to classify data in your organization.
 ---
 
 # Step 3: Configure classification for your environment
 
 ![This step is optional and applies to both the E3 and E5 versions of Microsoft 365 Enterprise](./media/banners/Banner-Optional-BothSKUs.png)
-
-**Summary:** 
 
 Defining a classification scheme for an organization and configuring information types and labels requires careful planning and preparation. This is not confined to IT. Be sure to work with your legal and compliance team to develop an appropriate classification and labeling scheme for your organization's data.
 
@@ -61,6 +59,11 @@ The entire library of Azure Information Protection documentation is [available o
 ## Classification for GDPR
 
 For an example classification scheme that includes personal data for the GDPR, see [Office 365 Information Protection for GDPR](https://docs.microsoft.com/office365/enterprise/office-365-information-protection-for-gdpr).
+
+
+## Results
+
+The result of this step is the determination of sensitive data types, Office 365 labels, and Azure Information Protection labels and protection rules and conditions.
 
 As an interim checkpoint, see the [exit criteria](infoprotect-exit-criteria.md#crit-infoprotect-step3) corresponding to this step.
 

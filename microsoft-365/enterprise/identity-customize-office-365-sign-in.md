@@ -11,17 +11,15 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom:
 - Strat_O365_Enterprise
-description: ""
+description: Configure a customized Office 365 sign-in page.
 ---
 
 # Step 3: Customize the Office 365 sign-in page
 
 ![This step is optional and for both the E3 and E5 versions of Microsoft 365 Enterprise](./media/banners/Banner-Optional-BothSKUs.png)
 
-
-**Summary:** 
-
 When you apply a consistent look and feel across all the websites and services you manage that reflect the name, logo, and other recognizable elements of your organization’s brand, your end users aren't confused when they use your sites. 
+
 With Microsoft 365 Enterprise, you can customize the appearance of the sign-in and Access Panel pages so they include your company logo, color schemes, and custom user information. 
 
 When a user attempts to sign in from a device, they see something like the following example on the Office 365 sign-in page *before customization*.

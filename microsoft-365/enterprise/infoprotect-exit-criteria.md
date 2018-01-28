@@ -11,12 +11,10 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom:
 - Strat_O365_Enterprise
-description: ""
+description: Ensure that your configuration meets Microsoft 365 Enterprise criteria for information protection-based services and infrastructure.
 ---
 
 # Information protection infrastructure exit criteria
-
-**Summary:** 
 
 Ensure that your configuration meets the following criteria for information protection-based services and infrastructure.
 
@@ -81,5 +79,5 @@ You have worked with your legal and compliance teams to develop an appropriate c
 - Office 365 labels
 - Azure Information Protection labels
 
-If needed, go to the [step](infoprotect-configure-conditional-access-policy-settings.md) corresponding to this exit criteria.
+If needed, go to the [step](infoprotect-configure-classification.md) corresponding to this exit criteria.
 

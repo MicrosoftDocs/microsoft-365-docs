@@ -11,12 +11,10 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom:
 - Strat_O365_Enterprise
-description: "Summary: Ensure that your configuration meets Microsoft 365 Enterprise criteria for identity-based services and infrastructure."
+description: Ensure that your configuration meets Microsoft 365 Enterprise criteria for identity-based services and infrastructure.
 ---
 
 # Phase 2: Identity infrastructure exit criteria
-
-**Summary:** Ensure that your configuration meets Microsoft 365 Enterprise criteria for identity-based services and infrastructure.
 
 Before you move on to the next phase in the deployment process, ensure that your configuration meets the following criteria for identity-based services and infrastructure.
 

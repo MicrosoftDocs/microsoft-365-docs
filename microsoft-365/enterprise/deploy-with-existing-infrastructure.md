@@ -11,12 +11,10 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom:
 - Strat_O365_Enterprise
-description: "Summary: Step through the exit criteria for the deployment of Microsoft 365 Enterprise when you have existing infrastructure."
+description: Step through the exit criteria for the deployment of Microsoft 365 Enterprise when you have existing infrastructure.
 ---
 
 # Deployment of Microsoft 365 Enterprise with existing infrastructure
-
-**Summary:** Step through the exit criteria for the deployment of Microsoft 365 Enterprise when you have existing infrastructure.
 
 Many organizations have exisiting networking, identity, and other components or Microsoft on-premises products and cloud-based services. This article steps through each phase of the deployment of Microsoft 365 Enterprise so you can quickly determine how to adapt or change your existing infrastructure.
 

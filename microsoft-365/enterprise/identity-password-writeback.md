@@ -11,17 +11,16 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom:
 - Strat_O365_Enterprise
-description: ""
+description: Understand and configure password writeback for hybrid environments.
 ---
 
 # Step 9: Password writeback
 
 ![This step is optional for hybrid environments and applies to both the E3 and E5 versions of Microsoft 365 Enterprise](./media/banners/Banner-Hybrid-Optional-BothSKUs.png)
 
+If you’re synchronizing your on-premises Windows Server AD with Azure AD, the identity provider that stores all of the user accounts and their attributes is the on-premises Windows Server AD. The user account and attributes stored in Azure AD is just a synchronized copy. 
 
-**Summary:** 
-
-If you’re synchronizing your on-premises Windows Server AD with Azure AD, the identity provider that stores all of the user accounts and their attributes is the on-premises Windows Server AD. The user account and attributes stored in Azure AD is just a synchronized copy. Therefore, when a user needs to reset her or his password, they must do so through the on-premises Windows Server AD. This requires them to be on-premises (either directly or through a remote access connection), or they can contact their IT department. 
+Therefore, when a user needs to reset her or his password, they must do so through the on-premises Windows Server AD. This requires them to be on-premises (either directly or through a remote access connection), or they can contact their IT department. 
 
 Using a self-service password, also known as password writeback, the user can reset the password on their user account through Azure AD, which is then replicated to your local Windows Server AD.
 

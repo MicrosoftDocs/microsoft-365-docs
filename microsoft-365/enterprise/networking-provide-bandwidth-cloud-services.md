@@ -11,14 +11,12 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom:
 - Strat_O365_Enterprise
-description: ""
+description: Understand the need for Internet bandwidth for Microsoft 365 Enterprise's cloud services.
 ---
 
 # Step 1: Provide sufficient Internet bandwidth for Microsoft's cloud services
 
 ![This step is required and applies to both the E3 and E5 versions of Microsoft 365 Enterprise](./media/banners/Banner-Required-BothSKUs.png)
-
-**Summary:** 
 
 Prior to cloud computing, enterprise networks were designed to provide users with highly-performant access to applications and data hosted in organization owned and operated datacenters.
 
@@ -40,7 +38,3 @@ As an interim checkpoint, you can see the [exit criteria](networking-exit-criter
 
 ## Next step
 [Step 2: Ensure that DNS resolution is performed in the same place as the Internet access](networking-dns-resolution-same-location.md)
-
-
-
-

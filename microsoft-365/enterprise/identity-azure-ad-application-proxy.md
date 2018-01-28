@@ -11,14 +11,12 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom:
 - Strat_O365_Enterprise
-description: ""
+description: Understand and configure the use of Azure AD Application Proxy.
 ---
 
 # Step 16: Azure AD Application Proxy
 
 ![This step is optional for hybrid environments and applies to both the E3 and E5 versions of Microsoft 365 Enterprise](./media/banners/Banner-Hybrid-Optional-BothSKUs.png)
-
-**Summary:** 
 
 Organizations that have existing on-premises infrastructure typically provide access to intranet resources when they are outside the organization’s intranet. Examples include remote or roaming employees and vendors, contractors, or partners. 
 

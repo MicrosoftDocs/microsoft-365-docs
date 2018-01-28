@@ -11,18 +11,16 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom:
 - Strat_O365_Enterprise
-description: ""
+description: Understand and configure TCP settings for better performance.
 ---
 
 # Step 5: Optimize TCP and application performance
 
 ![This step is optional and applies to both the E3 and E5 versions of Microsoft 365 Enterprise](./media/banners/Banner-Optional-BothSKUs.png)
 
-**Summary:** 
+It is also possible to get additional performance increases by configuring the two ends of the logical Transmission Control Protocol (TCP) connection between client devices and Office 365 services.
 
-It is also possible to get additional performance increases by configuring the two ends of the logical connection between client devices and Office 365 services.
-
-For client devices, you can change the following TCP/IP settings on client devices to optimize TCP performance:
+For client devices, you can change the following TCP settings on client devices to optimize TCP performance:
 
 - [TCP window scaling](https://blogs.technet.microsoft.com/onthewire/2014/03/28/ensuring-your-office-365-network-connection-isnt-throttled-by-your-proxy/)
 - [TCP idle time](https://blogs.technet.microsoft.com/onthewire/2014/03/04/network-perimeters-tcp-idle-session-settings-for-outlook-on-office-365/)
@@ -40,10 +38,4 @@ The result of this step is the optimization of TCP behavior on client devices an
 
 ## Next step
 
-[Phase 1: Networking infrastructure exit criteria](networking-exit-criteria.md)
-
- 
-
-
-
-
+[Networking infrastructure exit criteria](networking-exit-criteria.md)

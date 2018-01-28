@@ -11,14 +11,12 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom:
 - Strat_O365_Enterprise
-description: ""
+description: Understand and configure Azure AD self-service group management.
 ---
 
 # Step 14: Self-service group management
 
 ![This step is optional and applies to both the E3 and E5 versions of Microsoft 365 Enterprise](./media/banners/Banner-Optional-BothSKUs.png)
-
-**Summary:** 
 
 With Azure AD self-service group management, group owners who are not assigned an administrative role can create and manage security groups. Users can request membership in a security group and that request goes to the group owner, rather than an IT administrator. This allows the day-to-day control of group membership to be delegated to team, project, or business owners who understand the business use for the group and can manage its membership.
 

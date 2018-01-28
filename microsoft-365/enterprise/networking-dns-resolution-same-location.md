@@ -11,14 +11,12 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom:
 - Strat_O365_Enterprise
-description: ""
+description: Understand and configure your DNS resolution for better performance.
 ---
 
 # Step 2: Ensure that DNS resolution is performed in the same place as the Internet access
 
 ![This step is required and applies to both the E3 and E5 versions of Microsoft 365 Enterprise](./media/banners/Banner-Required-BothSKUs.png)
-
-**Summary:** 
 
 In [Step 1](networking-provide-bandwidth-cloud-services.md), Microsoft recommended the use of separate and local Internet connections for all offices. The principal reason for this recommendation is performance because the traffic does not have to travel over your organization’s backbone, incurring routing delays over additional hops and possible bottlenecks as more of your daily productivity traffic becomes cloud-based.
 

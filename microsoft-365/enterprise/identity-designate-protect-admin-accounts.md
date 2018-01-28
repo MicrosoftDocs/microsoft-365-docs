@@ -11,14 +11,12 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom:
 - Strat_O365_Enterprise
-description: ""
+description: Understand and configure your administrator accounts for maximum protection.
 ---
 
 # Step 5: Designate and protect administrator accounts
 
 ![This step is required and applies to both the E3 and E5 versions of Microsoft 365 Enterprise](./media/banners/Banner-Required-BothSKUs.png)
-
-**Summary:** 
 
 Help prevent digital attacks on your organization by ensuring that access with global administrator accounts is as secure as possible. You can do this by:
 

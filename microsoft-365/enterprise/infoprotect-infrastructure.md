@@ -3,7 +3,7 @@ title: "Phase 6: Information protection infrastructure for Microsoft 365 Enterpr
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 01/29/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -11,13 +11,11 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom:
 - Strat_O365_Enterprise
-description: ""
+description: The steps to deploy the identity infrastructure for Microsoft 365 Enterprise.
 ---
 
 
 # Phase 6: Information protection infrastructure for Microsoft 365 Enterprise
-
-**Summary:** 
 
 Microsoft 365 Enterprise includes Office 365 and Enterprise Management + Security (EMS), which includes a host of information protection capabilities and features to provide baseline to advanced security. In this phase, you step through the determination, configuration, and the enabling of information protection settings and features that make your infrastructure ready to host cloud-based workloads that store both your everyday to most valuable data, and those in between.
 

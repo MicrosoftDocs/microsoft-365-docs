@@ -11,14 +11,12 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom:
 - Strat_O365_Enterprise
-description: ""
+description: Understand and configure automatic group membership based on account attributes.
 ---
 
 # Step 12: Automatic group membership based on account attributes
 
 ![This step is optional and applies to both the E3 and E5 versions of Microsoft 365 Enterprise](./media/banners/Banner-Optional-BothSKUs.png)
-
-**Summary:** 
 
 In Azure AD, you can automatically and dynamically add or remove user accounts as members of an Azure AD group by creating a series of rules that are assigned to the group. 
 

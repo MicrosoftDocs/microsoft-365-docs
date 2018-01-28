@@ -11,15 +11,12 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom:
 - Strat_O365_Enterprise
-description: ""
+description: Understand and configure Azure AD Connect Health.
 ---
 
 # Step 4: Azure AD Connect Health
 
 ![This step is optional and applies to both the E3 and E5 versions of Microsoft 365 Enterprise](./media/banners/Banner-Optional-BothSKUs.png)
-
-**Summary:** 
-
 
 Azure AD Connect Health is an agent installed on each of your on-premises identity servers that provides ongoing monitoring and analysis of your on-premises identity infrastructure and the synchronization services provided by Azure AD Connect. The monitoring information is made available in an Azure AD Connect Health portal, from which you can view alerts, performance monitoring, usage analytics, and other information.
 

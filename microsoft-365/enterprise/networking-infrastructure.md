@@ -11,12 +11,10 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom:
 - Strat_O365_Enterprise
-description: "Summary: The steps and exit criteria to deploy the networking infrastructure for Microsoft 365 Enterprise."
+description: The steps and exit criteria to deploy the networking infrastructure for Microsoft 365 Enterprise.
 ---
 
 # Phase 1: Networking infrastructure for Microsoft 365 Enterprise
-
-**Summary:** The steps and exit criteria to deploy the networking infrastructure for Microsoft 365 Enterprise.
 
 Microsoft 365 Enterprise includes Office 365 and Windows Intune as part of Enterprise Management + Security (EMS). Both of these cloud-based services rely on the security, performance, and reliability of connections over the Internet or dedicated circuits from client devices. Microsoft has designed the network that hosts these services and its connection to the Internet to enable customers all over the world to connect in a performant way.
 
@@ -33,7 +31,7 @@ Use the following steps to build out your networking infrastructure for the requ
 - [Step 1: Provide sufficient Internet bandwidth for Microsoft’s cloud services](networking-provide-bandwidth-cloud-services.md)
 - [Step 2: Ensure that DNS resolution is performed in the same place as the Internet access](networking-dns-resolution-same-location.md)
 - [Step 3: Configure your proxy servers and firewalls for unhindered access to Office 365](networking-configure-proxies-firewalls.md)
-- [Step 4: Implement plan for endpoint change management](networking-implement-endpoint-change-mgmt.md)
+- [Step 4: Implement your plan for endpoint change management](networking-implement-endpoint-change-mgmt.md)
 - [Step 5: Optimize TCP and application performance](networking-optimize-tcp-performance.md)
 
 When have completed these steps, go to the [exit criteria](networking-exit-criteria.md) for this phase to ensure that you meet the required criteria for Microsoft 365.

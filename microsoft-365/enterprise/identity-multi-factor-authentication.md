@@ -11,14 +11,12 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom:
 - Strat_O365_Enterprise
-description: ""
+description: Understand and configure multi-factor authentication for user accounts.
 ---
 
 # Step 7: Multi-factor authentication
 
 ![This step is optional and applies to both the E3 and E5 versions of Microsoft 365 Enterprise](./media/banners/Banner-Optional-BothSKUs.png)
-
-**Summary:** 
 
 Multi-factor authentication (MFA) uses more than one method of verification. Without MFA, you use a password as the only verification method. The problem with passwords is that many of them are easily guessed by an attacker or shared by user unknowingly with untrusted parties.
 

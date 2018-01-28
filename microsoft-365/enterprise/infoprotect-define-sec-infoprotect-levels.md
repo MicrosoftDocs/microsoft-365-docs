@@ -11,14 +11,12 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom:
 - Strat_O365_Enterprise
-description: ""
+description: Understand and configure security and information protection levels for your organization.
 ---
 
 # Step 1: Define security and information protection levels
 
 ![This step is required and applies to both the E3 and E5 versions of Microsoft 365 Enterprise](./media/banners/Banner-Required-BothSKUs.png)
-
-**Summary:** 
 
 Most organizations have specific definitions and requirements for security and protecting data. For example, your research department users and its assets might require additional security and information protection that encrypts files and limits access to only research staff.
 
@@ -29,6 +27,9 @@ Although you can define your own security levels and might already have some in 
 - **Highly regulated:** This is the highest level of protection for organizations that typically have a very small amount of data that is highly classified, considered intellectual property or trade secrets, or data that must adhere to strict security regulations. Microsoft 365 Enterprise has capabilities to help organizations meet these high security requirements, including equivalent protection for identities and devices.
 
 For more information, see [Tiers of security and protection](https://docs.microsoft.com/microsoft-365-enterprise/microsoft-365-policies-configurations#tiers-of-security-and-protection).
+
+
+The result is a determination of your security and information protection levels.
 
 As an interim checkpoint, see the exit [exit criteria](infoprotect-exit-criteria.md#crit-infoprotect-step1) corresponding to this step.
 

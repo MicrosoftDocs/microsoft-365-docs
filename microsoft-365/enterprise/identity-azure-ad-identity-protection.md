@@ -11,14 +11,12 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom:
 - Strat_O365_Enterprise
-description: ""
+description: Understand and configure Azure AD Identity Protection.
 ---
 
 # Step 15: Azure AD Identity Protection
 
 ![This step is optional and applies only to the E5 version of Microsoft 365 Enterprise](./media/banners/Banner-Optional-E5Only.png)
-
-**Summary:** 
 
 Credential compromise, the determination of a user account’s name and password, is an attacker’s most popular way to gain access to your organization’s cloud services and data. As protections have increased, so has the sophistication of attackers. As soon as an attacker gains access to even normal user accounts that have no administrator privileges, it is relatively easy for them to access important company resources by moving laterally through your accounts and groups, and subsequently, to your most valuable data.
 

@@ -11,14 +11,12 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom:
 - Strat_O365_Enterprise
-description: ""
+description: Plan for the set of users and groups that will work for your organization.
 ---
 
 # Step 1: Plan for users and groups
 
 ![This step is required and applies to both the E3 and E5 versions of Microsoft 365 Enterprise](./media/banners/Banner-Required-BothSKUs.png)
-
-**Summary:** 
 
 Combining users, groups, and group membership with security features in the correct configuration allows you to:
 
@@ -31,7 +29,7 @@ Identity begins with the designation of a primary identity provider, which is a 
 
 For organizations adopting Microsoft 365 Enterprise, the primary identity provider is either:
 
-- Windows Server AD, an intranet identity provider hosted on computers running Windows Server. This is the case for organizations that have an existing on-premises identity provider.
+- Windows Server Active Directory AD, an intranet identity provider hosted on computers running Windows Server. This is the case for organizations that have an existing on-premises identity provider.
 - Azure Active Directory (Azure AD), a cloud-based Identity as a Service (IDaaS) that provides a broad range of capabilities for managing and protecting your environment. This is the case for organizations that have no existing on-premises infrastructure.
 
 For organizations that have an existing on-premises identity provider, you need to synchronize your user accounts and groups from Windows Server AD to Azure AD. You can also use Azure AD to create and manage groups that exist only in the Microsoft cloud.

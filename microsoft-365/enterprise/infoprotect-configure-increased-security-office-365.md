@@ -3,7 +3,7 @@ title: "Step 4: Configure increased security for Office 365"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 01/29/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -11,14 +11,12 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom:
 - Strat_O365_Enterprise
-description: ""
+description: Understand and configure increased security for Office 365, including Office 365 ATP.
 ---
 
 # Step 4: Configure increased security for Office 365
 
 ![This step is required and applies to both the E3 and E5 versions of Microsoft 365 Enterprise](./media/banners/Banner-Required-BothSKUs.png)
-
-**Summary:** 
 
 To ensure that your Office 365 subscription and its data start off and remain secure from malicious threats, you must configure the following additional security:
 

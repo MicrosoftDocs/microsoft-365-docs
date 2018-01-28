@@ -10,27 +10,24 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom:
 - Strat_O365_Enterprise
-description: "Summary: Understand the major phases of deploying Microsoft 365 Enterprise in your organization."
+description: Understand the importance of deployment for Microsoft 365 Enterprise in your organization.
 ---
 
 # Deploy Microsoft 365 Enterprise
 
-**Summary:** Understand the major phases of deploying Microsoft 365 Enterprise in your organization.
+Microsoft 365 Enterprise is a combination of Office 365, Enterprise Mobility + Security (EMS), and Windows 10 Enterprise that: 
 
-> [!Note] 
-> This document represents a work-in-progress and a prototype for a foundation infrastructure article in the Microsoft 365 Enterprise deployment content set. At this time, this article is not intended to be a technically complete and product team-reviewed article ready for publication. 
+- Has intelligent security.
+- Is integrated for simplicity.
+- Unlocks creativity.
+- Is built for teamwork.
 
-[Intro paragraphs]
+These benefits are not realized just by owning the licenses for these three products, by deploying them and their features in a specific way. This documentation set guides you through that deployment and the correct and required configuration of these products and their features.
 
-## Step 1: Create the foundation infrastructure for deploying Microsoft 365 Enterprise in your organization (required)
+Use the phases in the [Foundation Infrastructure documentation](deploy-foundation-infrastructure.md) to configure your organization for the requirements and capabilities of Microsoft 365 Enterprise.
 
-Use the phases in the [Foundation Infrastructure](deploy-foundation-infrastructure.md) to configure your organization for the requirements and capabilities of Microsoft 365 Enterprise.
+The foundation infrastructure is the basis upon which you can deploy productivity workloads such as Exchange Online, SharePoint Online, and Microsoft Teams in Office 365. The foundation infrastructure provides intelligent security and integration to make it easier to ensure your client software is updated with the latest productivity and security enhancements.
 
-If you have existing infrastructure, see [Deployment of Microsoft 365 Enterprise with existing infrastructure](deploy-with-existing-infrastructure.md).
+## Next step
 
-> [!Important] 
-> You must complete the exit criteria for all six phases to ensure that your on-premises and cloud infrastructure meets the requirements of Microsoft 365.
-
-## Step 2: Create the collaboration workloads and scenarios that unlock creativity through teamwork (optional)
-
-Deploy the [collaboration workloads and scenarios](collaboration-workloads.md) that are based on and enabled by the foundation infrastructure of Microsoft 365 Enterprise in your organization.
+[Foundation Infrastructure](deploy-foundation-infrastructure.md)

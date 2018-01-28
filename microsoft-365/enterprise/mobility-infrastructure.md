@@ -1,6 +1,6 @@
 ---
 title: Phase 5 - Mobile device management 
-description: Requirements and prerequisites mobile device management with Microsoft 365 Enterprise. 
+description: Requirements and prerequisites for mobile device management with Microsoft 365 Enterprise. 
 keywords: Microsoft 365, Microsoft 365 Enterprise, Microsoft 365 documentation, mobile device management
 author: arob98 
 ms.author: angrobe 

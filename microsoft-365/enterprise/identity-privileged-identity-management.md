@@ -11,14 +11,12 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom:
 - Strat_O365_Enterprise
-description: ""
+description: Understand and configure  Privileged Identity Management.
 ---
 
 # Step 6: Privileged Identity Management
 
 ![This step is optional and applies only to the E5 version of Microsoft 365 Enterprise](./media/banners/Banner-Optional-E5Only.png)
-
-**Summary:** 
 
 Rather than having your global administrator accounts be permanently assigned the global administrator role, you can use Azure AD Privileged Identity Management (PIM) to enable on-demand, just-in-time, and for a limited time assignment of the global administrator role when it is needed.
  

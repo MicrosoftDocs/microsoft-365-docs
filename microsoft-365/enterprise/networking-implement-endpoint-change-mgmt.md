@@ -1,5 +1,5 @@
 ---
-title: "Step 3: Configure your proxy servers and firewalls for unhindered access to Office 365"
+title: "Step 4: Implement your plan for endpoint change management"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -14,11 +14,9 @@ ms.custom:
 description: ""
 ---
 
-# Step 3: Configure your proxy servers and firewalls for unhindered access to Office 365
+# Step 4: Implement your plan for endpoint change management
 
 ![This step is optional and applies to both the E3 and E5 versions of Microsoft 365 Enterprise](./media/banners/Banner-Optional-BothSKUs.png)
-
-**Summary:** 
 
 >[!Note]
 >This step requires [Step 3](networking-configure-proxies-firewalls.md). If you have not done Step 3, you can skip to [Step 5](networking-optimize-tcp-performance.md).
@@ -29,9 +27,9 @@ Once you have configured your security perimeter devices with the appropriate se
 - New URLs for new services that will need unhindered processing
 - Removed URLs for discontinued services
 - New IP address ranges for new Microsoft network points of presence on the Internet 
-  Changes in IP address ranges for the different services
+- Changes in IP address ranges for the different services
 
-For more information about establishing an implementation plan for changes in endpoints, see [Managing Office 365 endpoints-Integration](https://support.office.com/article/Managing-Office-365-endpoints-99cab9d4-ef59-4207-9f2b-3728eb46bf9a?ui=en-US#ID0EABAAA=2._Proxies&ID0EAEAAA=3._Integration) and [Managing Office 365 endpoints-Integration](https://support.office.com/article/Managing-Office-365-endpoints-99cab9d4-ef59-4207-9f2b-3728eb46bf9a&ad=US#ID0EABAAA=2._Proxies&ID0EAEAAA=4._FAQ).
+For more information about establishing an implementation plan for changes in endpoints, see [Managing Office 365 endpoints-Integration](https://support.office.com/article/Managing-Office-365-endpoints-99cab9d4-ef59-4207-9f2b-3728eb46bf9a?ui=en-US#ID0EABAAA=2._Proxies&ID0EAEAAA=3._Integration) and [Managing Office 365 endpoints-Proxies](https://support.office.com/en-us/article/Managing-Office-365-endpoints-99cab9d4-ef59-4207-9f2b-3728eb46bf9a?ui=en-US&rs=en-US&ad=US#ID0EABAAA=2._Proxies&ID0EAEAAA=2._Proxies).
 
 The result of this step is that you dynamically receive changes to endpoints and implement those changes in your perimeter network devices.
 

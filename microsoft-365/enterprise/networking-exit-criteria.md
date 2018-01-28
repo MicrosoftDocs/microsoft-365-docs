@@ -11,12 +11,10 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom:
 - Strat_O365_Enterprise
-description: ""
+description: Ensure that your configuration meets Microsoft 365 Enterprise criteria for networking infrastructure.
 ---
 
 # Phase 1: Networking infrastructure exit criteria
-
-**Summary:** 
 
 Before you move on to the next phase in the deployment process, ensure that your configuration meets the following criteria for networking infrastructure.
 
@@ -42,6 +40,7 @@ If you don’t meet this criterion, performance for branch offices can suffer as
 
 #### How to test
 Use a tool or web site from a device in that office to determine the public IP address that the proxy server is using. For example, use the [What Is My IP Address](https://www.whatismypublicip.com/) web page.
+
 This public IP address assigned by your ISP should be geographically local. It should not be from a public IP address range for a central office or from a cloud-based network security vendor.
 
 If needed, go to the [step](networking-dns-resolution-same-location.md) corresponding to this exit criteria.

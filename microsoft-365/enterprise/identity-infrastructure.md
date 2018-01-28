@@ -11,12 +11,10 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom:
 - Strat_O365_Enterprise
-description: "Summary: The steps to deploy the identity infrastructure for Microsoft 365 Enterprise."
+description: The steps to deploy the identity infrastructure for Microsoft 365 Enterprise.
 ---
 
 # Phase 2: Identity infrastructure for Microsoft 365 Enterprise
-
-**Summary:** The steps to deploy the identity infrastructure for Microsoft 365 Enterprise.
 
 Intelligent security for Microsoft 365 Enterprise, in which the right users have access to the right resources with an appropriate level of access, begins with identity management. Your identity infrastructure is the central underpinning upon which your additional foundation infrastructure and your productivity workloads depend. A well-planned and executed identity infrastructure paves the way for stronger security and access to your productivity workloads and their data only by authenticated users and devices.
 

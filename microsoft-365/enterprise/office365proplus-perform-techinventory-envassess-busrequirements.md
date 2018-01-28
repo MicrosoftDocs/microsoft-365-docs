@@ -11,7 +11,7 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom:
 - Strat_O365_Enterprise
-description: "Summary: <>."
+description: Understand how to do an assessment for an Office 365 ProPlus deployment.
 ---
 
 # Perform a technical inventory and environmental assessment for your business requirements
@@ -39,7 +39,7 @@ Once you have your hardware inventoried, you should look at your Microsoft Visua
 
 FastTrack onboarding and adoption resources and services are available to help you envision your Office 365 ProPlus deployment, to bring your users onboard, and to drive adoption of Office 365 ProPlus. For a full description of your Office 365 ProPlus FastTrack benefits see [FastTrack Center Benefit for Office 365](https://technet.microsoft.com/library/dn783224.aspx).
 
-Because this Office 365 Pro plus deployment is one component of your Microsoft 365 implementation, it will be helpful for you to understand how it fits into the broader Microsoft 365 FastTrack services. For more information on Microsoft 365 resources, see [Microsoft 365 resources](https://fasttrack.microsoft.com/microsoft365/resources?view=office365). 
+Because this Office 365 Pro plus deployment is one component of your Microsoft 365 Enterprise implementation, it will be helpful for you to understand how it fits into the broader Microsoft 365 FastTrack services. For more information on Microsoft 365 resources, see [Microsoft 365 resources](https://fasttrack.microsoft.com/microsoft365/resources?view=office365). 
 
 As an interim checkpoint, ensure that you have met the 
 [exit criteria](office365proplus-exit-criteria.md) for this step. When those criteria are met, you can return here and continue with the next step.

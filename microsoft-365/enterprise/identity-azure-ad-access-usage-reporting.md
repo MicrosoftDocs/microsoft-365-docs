@@ -11,14 +11,12 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom:
 - Strat_O365_Enterprise
-description: ""
+description: Understand and configure Azure AD access and usage reporting.
 ---
 
 # Step 13: Azure AD access and usage reporting
 
 ![This step is optional and applies to both the E3 and E5 versions of Microsoft 365 Enterprise](./media/banners/Banner-Optional-BothSKUs.png)
-
-**Summary:** 
 
 With Azure AD reporting, you can view access and usage reporting information from two different sources:
 

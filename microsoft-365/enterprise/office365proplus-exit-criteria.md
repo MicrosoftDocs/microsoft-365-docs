@@ -11,14 +11,12 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom:
 - Strat_O365_Enterprise
-description: "Summary: Ensure that your configuration meets Microsoft 365 Enterprise criteria for Office 365 ProPlus infrastructure."
+description: Ensure that your configuration meets Microsoft 365 Enterprise criteria for Office 365 ProPlus infrastructure.
 ---
 
-# Microsoft 365 Office 365 ProPlus deployment exit criteria
+# Microsoft 365 Enterprise deployment exit criteria for Office 365 ProPlus infrastructure
 
-**Summary:** Ensure that your configuration meets Microsoft 365 Enterprise criteria for Office 365 ProPlus infrastructure.
-
-Before you move on to the next phase in the deployment process, ensure that your configuration meets the following criteria for <name>-based services and infrastructure.
+Before you move on to the next phase in the deployment process, ensure that your configuration meets the following criteria for Office 365 ProPlus infrastructure.
 
 ## Required exit criteria
 
@@ -28,7 +26,7 @@ When a request comes in to deploy Office 365 ProPlus to a device that is intende
 
 - Classify that device into one of the deployment groups based on:
     - The work role of the machine in the business and the requisite Office apps and language packs
-    - The desired (but not necessarily the current) Windows operating system version installed on the client. Note that Windows 10 is the minimum Windows operating system version that is required to be Microsoft 365 compliant.
+    - The desired (but not necessarily the current) Windows operating system version installed on the client. Note that Windows 10 is the minimum Windows operating system version that is required to be Microsoft 365 Enterprise-compliant.
     - The quality of network connectivity to the device
     - Whether or not the user will have administrative rights to the device.
     - Desired frequency of feature updates
@@ -48,4 +46,4 @@ Before you can exit the Office 365 ProPlus deployment phase of the Microsoft 365
 
 ## Next phase 
 
-Your next phase in the end-to-end deployment process for Microsoft 365 is [Phase 5-Mobile device management](mobility-infrastructure.md).
+Your next phase in the end-to-end deployment process for Microsoft 365 Enteprise is [Phase 5-Mobile device management](mobility-infrastructure.md).

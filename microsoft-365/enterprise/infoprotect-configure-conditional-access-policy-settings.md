@@ -3,7 +3,7 @@ title: "Step 2: Configure conditional access policy settings"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 01/29/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -11,14 +11,12 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom:
 - Strat_O365_Enterprise
-description: ""
+description: Understand the role of and configure conditional access policy settings.
 ---
 
 # Step 2: Configure conditional access policy settings
 
 ![This step is required and applies to both the E3 and E5 versions of Microsoft 365 Enterprise](./media/banners/Banner-Required-BothSKUs.png)
-
-**Summary:** 
 
 Conditional access policy settings provide additional security for sign-in and access to information for both user sign-in and for devices in your Microsoft 365 Enterprise deployment. These settings consist of two sets:
 
