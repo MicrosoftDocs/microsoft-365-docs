@@ -29,8 +29,6 @@ You can use these criteria for creating your deployment groups:
 
 For more information on factors you can use to classify your target devices see [Best Practices: Planning your deployment of Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/best-practices/best-practices-planning-your-deployment-of-office-365-proplus).
 
-As an interim checkpoint, ensure that you have met the [Exit criteria](office365proplus-exit-criteria.md) for this step.
-
 ## Next step
 
 [Step 3: Match deployment methods to groups](office365proplus-match-deployment-methods-groups.md)

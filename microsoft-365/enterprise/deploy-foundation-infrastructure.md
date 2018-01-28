@@ -15,7 +15,7 @@ description: Understand the major phases of deploying the foundation infrastruct
 
 # Microsoft 365 Enterprise Foundation Infrastructure
 
-Microsoft 365 Enterprise is a combination of Office 365, Enterprise Mobility + Security (EMS), and Windows 10 Enterprise. It must be deployed in an integrated way with security features across these products and their features to realize its benefits.
+Microsoft 365 Enterprise is a combination of Office 365, Enterprise Mobility + Security (EMS), and Windows 10 Enterprise. It must be deployed in an integrated way with security features across these products to realize its benefits.
 
 ## Create the foundation infrastructure for deploying Microsoft 365 Enterprise in your organization 
 
@@ -26,7 +26,7 @@ Use the following phases to plan for and deploy the foundation infrastructure of
 - [Phase 1: Networking](networking-infrastructure.md)
 - [Phase 2: Identity](identity-infrastructure.md)
 - [Phase 3: Windows 10 Enterprise](windows10-infrastructure.md)
-- [Phase 4: Office 365 ProPlus)](office365proplus-infrastructure.md)
+- [Phase 4: Office 365 ProPlus](office365proplus-infrastructure.md)
 - [Phase 5: Mobile device management](mobility-infrastructure.md)
 - [Phase 6: Information protection](infoprotect-infrastructure.md)
 

@@ -39,7 +39,7 @@ For the Office 365 ProPlus phase of the foundation infrastructure deployment of 
 
 - [Step 1: Perform a technical inventory and environmental assessment for your business requirements](office365proplus-perform-techinventory-envassess-busrequirements.md)
 - [Step 2 : Classify the target devices into deployment groups](office365proplus-classify-target-devices-deployment-groups.md)
-- [Step 3 : Step 3: Match deployment methods to groups](office365proplus-match-deployment-methods-groups.md)
+- [Step 3 : Match deployment methods to groups](office365proplus-match-deployment-methods-groups.md)
 - [Step 4: Deploy Office 365 ProPlus](office365proplus-deploy-office365-proplus.md)
 
 When have completed these steps, go to the [exit criteria](office365proplus-exit-criteria.md) for this phase to ensure that you meet the required configuration for Microsoft 365 Enterprise.
