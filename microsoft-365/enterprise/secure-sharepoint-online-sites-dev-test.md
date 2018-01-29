@@ -6,12 +6,7 @@ keywords: Office 365, Windows 10, Enterprise Mobility and Security, Microsoft 36
 documentationcenter: ''
 author: JoeDavies-MSFT
 manager: laurawi
-ms.assetid:
 ms.prod: microsoft-365-enterprise
-ms.service:
-ms.workload:
-ms.tgt_pltfrm: na
-ms.devlang: na
 ms.topic: article
 ms.date: 11/15/2017
 ms.author: josephd

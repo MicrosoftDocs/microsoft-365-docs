@@ -8,7 +8,7 @@ keywords: Microsoft 365, Microsoft 365 Enterprise, Microsoft 365 documentation, 
 ms.localizationpriority: high
 audience: microsoft-business
 ms.prod: microsoft-365-enterprise
-ms.date: 12/10/2017
+ms.date: 01/29/2018
 title: Microsoft 365 Enterprise documentation and resources
 description: Learn about the product documentation and resources available for Microsoft 365 Enterprise IT admins, information workers, and partners.
 ---
@@ -87,7 +87,7 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
-                                <a href="https://docs.microsoft.com/microsoft-365/enterprise/services-overview" target="_blank">
+                                <a href="services-overview.md" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -106,7 +106,7 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
-                                <a href="https://docs.microsoft.com/microsoft-365/enterprise/architecture-models-posters" target="_blank">
+                                <a href="https://docs.microsoft.com/office365/enterprise/microsoft-cloud-it-architecture-resources" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -146,11 +146,64 @@ description: Learn about the product documentation and resources available for M
                         </ul>
                     </li>
                     <li>
+                        <a data-default="true" href="#deploy">Deploy</a>
+                        <ul id="deploy" class="cardsG">
+                            <li class="fullSpan">
+                                <div class="container intro">
+                                    <p>Get step-by-step guidance on how to plan for and deploy Office 365, Windows 10 Enterprise, and Enterprise Mobility + Security together for an integrated and secure infrastructure that enables teamwork and unlocks creativity.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="deploy-with-existing-infrastructure.md" target="_blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="media/hub-itadmin-deploy/existing-it-infrastructure.svg" alt="Existing Microsoft IT infrastructure" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>I have an existing Microsoft IT infrastructure</h3>
+                                                    <p>If you already have Windows 10 Enterprise, Office 365, or EMS, review exit criteria for Microsoft 365 Enterprise to determine what you need to change.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="deploy-microsoft-365-enterprise.md" target="_blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="media/hub-itadmin-deploy/m365-enterprise-deployment-process.svg" alt="Microsoft 365 Enterprise deployment process" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>I want to deploy Microsoft 365 Enterprise from scratch</h3>
+                                                    <p>Step through the phases of the end-to-end deployment process for typical IT areas of responsibility and components of Microsoft 365 Enterprise.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
                         <a href="#it-collab">Collaboration</a>
                         <ul id="it-collab" class="cardsG">
                             <li class="fullSpan">
                                 <div class="container intro">
-                                    <p>See these guidance and resources to enhance user productivity by helping users access, edit, manage, and seamlessly share the content they need.</p>
+                                    <p style="font-size:1.5em">Office 365</p>
+                                </div>
+                            </li>
+                            <li class="fullSpan">
+                                <div class="container intro">
+                                    <p>Use these resources to set up Office 365 services and empower teams in your organization to collaborate more effectively with tools like team chat, online meetings, co-authoring and secure file sharing, and group email.</p>
                                 </div>
                             </li>
                             <li>
@@ -160,7 +213,7 @@ description: Learn about the product documentation and resources available for M
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="media/hub-itadmin-collaboration/admin-collaboration-setup-guide-1.svg" alt="Office 365 setup guide" />
+                                                        <img src="media/hub-itadmin-collaboration/admin-collaboration-office365-setup-guide-1.svg" alt="Office 365 setup guide" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -190,6 +243,75 @@ description: Learn about the product documentation and resources available for M
                                         </div>
                                     </div>
                                 </a>
+                            </li>
+                            <li>
+                                <a href="https://support.office.com/article/05cbe533-2181-4e95-a4b0-52cd7695fafc" target="_blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="media/hub-itadmin-collaboration/admin-collaboration-teams-5.svg" alt="Microsoft Teams implementation guide" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Admin Help: Microsoft Teams FAQ</h3>
+                                                    <p>Got questions about Microsoft Teams administration? Start here.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <!-- These are collaboration workloads that still need to be developed. Commenting out for now.
+                            <li>
+                                <a href="collaboration-exchange-online.md" target="_blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="media/hub-itadmin-collaboration/admin-collaboration-exchange-online.svg" alt="Exchange Online" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Exchange Online</h3>
+                                                    <p>Follow the documentation here to understand, plan, and configure Exchange Online.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="collaboration-sharepoint-online.md" target="_blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="media/hub-itadmin-collaboration/admin-collaboration-sharepoint-online.svg" alt="Secure SharePoint Online sites and files" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>SharePoint Online</h3>
+                                                    <p>Use this documentation to plan for SharePoint Online sites and files.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            -->
+                            <li class="fullSpan">
+                                <div class="container intro">
+                                    <p style="font-size:1.5em">Office 365 ProPlus</p>
+                                </div>
+                            </li>
+                            <li class="fullSpan">
+                                <div class="container intro">
+                                    <p>Office 365 ProPlus is the latest version of the Microsoft Office, downloaded and installed on devices and kept current by ongoing updates from the Microsoft cloud.</p>
+                                </div>
                             </li>
                             <li>
                                 <a href="https://aka.ms/oppdeployguide" target="_blank">
@@ -230,23 +352,66 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
-                                <a href="https://support.office.com/article/05cbe533-2181-4e95-a4b0-52cd7695fafc" target="_blank">
+                                <a href="https://docs.microsoft.com/intune/apps-add-office365" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="media/hub-itadmin-collaboration/admin-collaboration-teams-5.svg" alt="Microsoft Teams implementation guide" />
+                                                        <img src="media/hub-itadmin-devices/admin-devices-win10-intune-4.svg" alt="Assign Office 365 ProPlus apps to Windows 10 devices with Intune" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Admin Help: Microsoft Teams FAQ</h3>
-                                                    <p>Got questions about Microsoft Teams administration? Start here.</p>
+                                                    <h3>Assign Office 365 ProPlus apps to Windows 10 devices with Intune</h3>
+                                                    <p>Learn to configure the app suite, info, and settings when deploying Office 365 ProPlus apps to devices using Intune.</p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </a>
+                            </li>
+                            <li>
+                                <a href="https://docs.microsoft.com/en-us/sccm/sum/deploy-use/manage-office-365-proplus-updates" target="_blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="media/hub-itadmin-devices/admin-devices-manage-config-manager-8.svg" alt="Manage Office 365 ProPlus with Configuration Manager" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Manage Office 365 ProPlus with Configuration Manager</h3>
+                                                    <p>Learn about the client management dashboard, deploying apps and updates, changing the update channel, and more.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://support.office.com/article/9ccf0f13-28ff-4975-9bd2-7e4ea2fefef4" target="_blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="media/hub-itadmin-devices/admin-devices-update-proplus-5.svg" alt="Update channels for Office 365 ProPlus" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Overview of update channels for Office 365 ProPlus</h3>
+                                                    <p>Learn about the options you have to control how often Office 365 ProPlus is updated with new features.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="fullSpan">
+                                <div class="container intro">
+                                    <p style="font-size:1.5em">Resources</p>
+                                </div>
                             </li>
                             <li>
                                 <a href="http://aka.ms/myadvisor" target="_blank">
@@ -261,25 +426,6 @@ description: Learn about the product documentation and resources available for M
                                                 <div class="cardText">
                                                     <h3>My Advisor</h3>
                                                     <p>Take advantage of the Practical Guidance available through My Advisor&mdash;a comprehensive self-service guide and toolset for planning and managing Microsoft Teams and Skype for Business Online.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="http://partnercenter.microsoft.com/" target="_blank">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1">
-                                                        <img src="media/hub-itadmin-collaboration/admin-collaboration-certified-partner-7.svg" alt="Find a Microsoft-certified partner" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Find a Microsoft-certified partner</h3>
-                                                    <p>If you don't have a Microsoft account team, you can visit the Partner Center to find a Microsoft-certified partner in your area.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -317,7 +463,66 @@ description: Learn about the product documentation and resources available for M
                                 </div>
                             </li>
                             <li>
-                                <a href="https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-policies-configurations" target="_blank">
+                                <a href="https://support.office.com/article/dcb83b2c-ac66-4ced-925d-50eb9698a0b2" target="_blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="media/hub-itadmin-security/admin-security-security-compliance-o365.svg" alt="Security and compliance in Office 365" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Security and compliance in Office 365</h3>
+                                                    <p>Learn how to protect your data, comply with legal or regulatory standards, and monitor your security stature with Office 365.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://docs.microsoft.com/windows/threat-protection" target="_blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="media/hub-itadmin-security/admin-security-windows10-threats-5.svg" alt="Windows threat protection and security for enterprise" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Threat protection and security for enterprise</h3>
+                                                    <p>Learn how you can help protect your organization against threats in Windows 10.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <!-- Replace the one above when this page goes live
+                            <li>
+                                <a href="https://docs.microsoft.com/en-us/windows/security/" target="_blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="media/hub-itadmin-security/admin-security-windows10-threats-5.svg" alt="Secure corporate data and manage risk with Windows 10 Enterprise" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Windows 10 Enterprise Security</h3>
+                                                    <p>Learn about the security features built into Windows 10 Enterprise and how you can use these to secure corproate data and manage risk.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            -->
+                            <li>
+                                <a href="microsoft-365-policies-configurations.md" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -336,18 +541,18 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
-                                <a href="https://docs.microsoft.com/microsoft-365/enterprise/secure-sharepoint-online-sites-and-files" target="_blank">
+                                <a href="secure-email-recommended-policies.md" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="media/hub-itadmin-security/admin-security-secure-sharepoint-2.svg" alt="Secure SharePoint Online sites and files" />
+                                                        <img src="media/hub-itadmin-security/admin-security-agile-organizations-3.svg" alt="Exchange Online access policies" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Secure SharePoint Online sites and files</h3>
-                                                    <p>Get recommendations for protecting SharePoint Online team sites and files and step through their configuration, including a dev/test environment.</p>
+                                                    <h3>Exchange Online access policies</h3>
+                                                    <p>Learn about the policies to help you secure organizational email and email clients that support Modern Authentical and Conditional Access.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -355,37 +560,18 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
-                                <a href="https://docs.microsoft.com/windows/threat-protection" target="_blank">
+                                <a href="sharepoint-file-access-policies.md" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="media/hub-itadmin-security/admin-security-windows10-threats-5.svg" alt="Security guidance for political campaigns, nonprofits, and other agile organizations" />
+                                                        <img src="media/hub-itadmin-security/admin-security-secure-sharepoint-2.svg" alt="SharePoint Online access policies" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Threat protection and security for enterprise</h3>
-                                                    <p>Learn how you can help protect your organization against threats in Windows 10.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://docs.microsoft.com/microsoft-365/enterprise/microsoft-security-guidance" target="_blank">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1">
-                                                        <img src="media/hub-itadmin-security/admin-security-agile-organizations-3.svg" alt="Security guidance for political campaigns, nonprofits, and other agile organizations" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Microsoft security guidance for political campaigns, nonprofits, and other agile organizations</h3>
-                                                    <p>If your organization is agile, have a small IT team, and your threat profile is higher than average, see this guidance for prescriptive security recommendations.</p>
+                                                    <h3>SharePoint Online access policies</h3>
+                                                    <p>Learn about the policies to help you secure organizational SharePoint Online files based on three levels of security and protection.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -442,17 +628,17 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
-                                <a href="https://docs.microsoft.com/windows/deployment/update/waas-overview" target="_blank">
+                                <a href="https://www.microsoft.com/en-us/itpro/windows-10/windows-as-a-service" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="media/hub-itadmin-devices/admin-devices-overview-2.svg" alt="Overview of Windows as a service" />
+                                                        <img src="media/hub-itadmin-devices/admin-devices-overview-2.svg" alt="Windows as a service" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Overview of Windows as a service</h3>
+                                                    <h3>Windows as a service</h3>
                                                     <p>Simplify management and maintain a consistent experience for your users. Learn the new way to build, deploy, and service Windows through Windows as a service.</p>
                                                 </div>
                                             </div>
@@ -473,44 +659,6 @@ description: Learn about the product documentation and resources available for M
                                                 <div class="cardText">
                                                     <h3>Windows 10 update history</h3>
                                                     <p>Get more information about the improvements and fixes that were included with each Windows 10 update.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://docs.microsoft.com/intune/apps-add-office365" target="_blank">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1">
-                                                        <img src="media/hub-itadmin-devices/admin-devices-win10-intune-4.svg" alt="Assign Office 365 ProPlus apps to Windows 10 devices with Intune" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Assign Office 365 ProPlus apps to Windows 10 devices with Intune</h3>
-                                                    <p>Learn to configure the app suite, info, and settings when deploying Office 365 ProPlus apps to devices using Intune.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://support.office.com/article/9ccf0f13-28ff-4975-9bd2-7e4ea2fefef4" target="_blank">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1">
-                                                        <img src="media/hub-itadmin-devices/admin-devices-update-proplus-5.svg" alt="Update channels for Office 365 ProPlus" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Overview of update channels for Office 365 ProPlus</h3>
-                                                    <p>Learn about the options you have to control how often Office 365 ProPlus is updated with new features.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -549,25 +697,6 @@ description: Learn about the product documentation and resources available for M
                                                 <div class="cardText">
                                                     <h3>Deploy Windows 10 updates using Configuration Manager</h3>
                                                     <p>Using System Center Configuration Manager for Windows update management? Get info on managing Windows 10 updates.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://docs.microsoft.com/en-us/sccm/sum/deploy-use/manage-office-365-proplus-updates" target="_blank">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1">
-                                                        <img src="media/hub-itadmin-devices/admin-devices-manage-config-manager-8.svg" alt="Manage Office 365 ProPlus with Configuration Manager" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Manage Office 365 ProPlus with Configuration Manager</h3>
-                                                    <p>Learn about the client management dashboard, deploying apps and updates, changing the update channel, and more.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -647,11 +776,11 @@ description: Learn about the product documentation and resources available for M
                 </ul>
             </li>
             <li>
-                <a href="#i-worker">Information worker</a>
-                <ul id="i-worker">
+                <a href="#end-user-pro">End user professional</a>
+                <ul id="end-user-pro">
                     <li>
-                        <a data-default="true" href="#i-worker-1">Product Help</a>
-                        <ul id="i-worker-1" class="cardsG">
+                        <a data-default="true" href="#end-user-pro-1">Product Help</a>
+                        <ul id="end-user-pro-1" class="cardsG">
                             <li class="fullSpan">
                                 <div class="container intro">
                                     <p>When you're using Office 365 or Windows 10, or your devices are managed by your company, and you have a question about how to do something, you can search the product Help for info, get training and tips, and watch short videos and tutorials. </p>
@@ -793,8 +922,8 @@ description: Learn about the product documentation and resources available for M
                         </ul>
                     </li>
                     <li>
-                        <a data-default="true" href="#i-worker-2">Productivity Library</a>
-                        <ul id="i-worker-2" class="cardsG">
+                        <a data-default="true" href="#end-user-pro-2">Productivity Library</a>
+                        <ul id="end-user-pro-2" class="cardsG">
                             <li class="fullSpan">
                                 <div class="container intro">
                                     <p>Employees and other users can get curated training, watch videos, read recommendations, and more from the <a href="https://www.microsoft.com/microsoft-365/success/" target="_blank">Microsoft 365 Enterprise Productivity Library</a>.</p>

@@ -15,7 +15,6 @@ ms.devlang: na
 ms.topic: article
 ms.date: 09/11/2017
 ms.author: josephd
-
 ---
 
 # Deploy sites for three tiers of protection
