@@ -14,8 +14,8 @@ ms.author: celested
 
 **Applies to:**
 
-* Microsoft 365 Enterprise E3
-* Microsoft 365 Enterprise E5
+* Microsoft 365 E3
+* Microsoft 365 E5
 
 **Summary:**
 
