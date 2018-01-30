@@ -22,18 +22,18 @@ A successful deployment of office 365 ProPlus starts with understanding the infr
 
 ## Hardware, software inventory 
 
-If you have a tool like System Center Configuration Manager 2012 R2 or Configuration Manager (current branch) deployed to all your clients and you have your mobile devices enrolled in Microsoft InTune, you'll already have a detailed inventory of your technical environment. If not, you'll need to gather the following items about each of the devices you want to deploy Office 365 ProPlus to:
+If you have a tool like System Center Configuration Manager 2012 R2 or Configuration Manager (current branch) deployed to all your clients and you have your mobile devices enrolled in Microsoft InTune, you'll already have a detailed inventory of your technical environment. If not, you'll need to gather the following items about each of the devices in which you want to deploy Office 365 ProPlus:
 
 - For all devices, whether the user has local administrative rights
-- For all devices the job role the device is used in
-- For all devices the desired frequency of feature updates
+- For all devices, the job role the device is used in
+- For all devices, the desired frequency of feature updates
 - The specifications for non-mobile devices such as operating system, current version of Office, processor, memory, and available disk space
 - The specs for your mobile devices, such as the operating system and version
-- The languages you need to deploy Office 365 ProPlus in. For more information, see [Overview of deploying languages and Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/overview-of-deploying-languages-in-office-365-proplus). 
+- The languages for which you need to deploy Office 365 ProPlus. For more information, see [Overview of deploying languages and Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/overview-of-deploying-languages-in-office-365-proplus). 
 
 ## Application compatibility
 
-Once you have your hardware inventoried, you should look at your Microsoft Visual Basic for application macros and other add-ins that use Office. Use the [Readiness Toolkit](https://docs.microsoft.com/DeployOffice/use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro) to assess application compatibility for Office 365 ProPlus.
+Once you have your hardware inventoried, you should look at your Microsoft Visual Basic for Applications (VBA) macros and other add-ins that use Office. Use the [Readiness Toolkit](https://docs.microsoft.com/DeployOffice/use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro) to assess application compatibility for Office 365 ProPlus.
 
 ## Microsoft FastTrack for Office 365
 
