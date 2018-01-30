@@ -11,6 +11,17 @@ ms.author: celested
 ---
 
 # Enable Windows 10 Enterprise security features
+Windows 10 provides features to help protect against threats, help you secure your devices, and help with access control. 
+
+To learn more about these technologies, see:
+* [Access protection](https://docs.microsoft.com/en-us/windows/access-protection/) - Learn about access control, S/MIME, digital certificates, Credential Guard, User Account Control, virtual smart cards, Windows Hello for Business, Windows Firewall with Advanced Security, and more
+* [Device security](https://docs.microsoft.com/en-us/windows/device-security/) - Includes AppLocker, BitLocker, Device Guard, and Trusted Platform Module
+* [Threat protection](https://docs.microsoft.com/en-us/windows/threat-protection/) - Includes Windows Defender Security Center, Windows Defender Advanced Threat Protection, Windows Defender Antivirus, Windows Defender Application Guard, Windows Defender Smart Screen, and Windows Information Protection
+
+Here, we'll show you how you can deploy, manage, configure, and troubleshoot using these security features:
+* [Windows Defender Antivirus](#windows-defender-antivirus)
+* [Windows Defender Exploit Guard](#windows-defender-exploit-guard)
+* [Windows Defender Advanced Threat Protection](#windows-defender-advanced-threat-protection)
 
 ## Windows Defender Antivirus
 Windows Defender Antivirus (AV) is an antimalware solution that's built into Windows 10. It provides security and antimalware management for desktops, portable computers, and servers. For more info about Windows Defender AV, the minimum requirements, and how you can manage this feature, see [Windows Defender Antivirus in Windows 10 and Windows Server 2016](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10).
