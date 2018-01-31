@@ -5,7 +5,7 @@ author: CelesteDG
 ms.author: celested
 ms.topic: hub-page
 keywords: Microsoft 365, Microsoft 365 Enterprise, Microsoft 365 documentation, Office 365, Windows 10 Enterprise, EMS, Enterprise Mobility + Security, enterprise
-ms.localizationpriority: high
+localization_priority: Normal
 audience: microsoft-business
 ms.prod: microsoft-365-enterprise
 ms.date: 01/29/2018

@@ -3,6 +3,7 @@ title: Windows 10 Enterprise infrastructure for Microsoft 365 Enterprise | Micro
 description: Provides guidance on configuring and deploying a Windows 10 Enterprise image using System Center Configuration Manager as an in-place upgrade.
 keywords: Microsoft 365, Microsoft 365 Enterprise, Microsoft 365 documentation, Windows 10 Enterprise, deployment, in-place upgrade, Configuration Manager, System Center Configuration Manager
 author: CelesteDG
+localization_priority: Normal
 audience: microsoft-business
 ms.prod: microsoft-365-enterprise
 ms.topic: article
@@ -99,7 +100,7 @@ Be sure to assess business critical apps and understand the impact of upgrading 
 
 See the following Upgrade Readiness resources to help with app inventory, driver compatibility issues, and usage information:
 * [Manage Windows Upgrades with Upgrade Readiness](https://go.microsoft.com/fwlink/?linkid=860255)
-* [Configure Windows telemetry](https://go.microsoft.com/fwlink/?linkid=859970)
+* [Configure Windows diagnostics data](https://go.microsoft.com/fwlink/?linkid=859970)
 
 > [!NOTE]
 > Upgrade Readiness may not be able to assess compatibility for custom and line-of-business (LOB) apps in an organization.
@@ -161,7 +162,7 @@ Once you've completed the scenarios and requirements in [Step 1: Consideration p
 * [Identity](#22-identity)
 * [Client readiness](#23-client-readiness)
 * [System Center Configuration Manager](#24-system-center-configuration-manager)
-* [Telemetry](#25-telemetry)
+* [Diagnostics data](#25-diagnostics-data)
 
 ### 2.1 Networking
 Ports to the client need to be opened for Office 365 ProPlus (for a Microsoft 365 powered device) and Configuration Manager. For more details about setting up your Microsoft 365 Enterprise networking infrastructure, see [Phase 1: Networking](networking-infrastructure.md).
@@ -199,10 +200,10 @@ Confirm that Windows 10 works with Office 365. Be sure you're using the latest O
 ### 2.4 System Center Configuration Manager
 See [System Center Configuration Manager](#system-center-configuration-manager).
 
-### 2.5 Telemetry
-Microsoft uses telemetry data to help keep Windows devices secure by identifying malware trends and other threats and to help us improve the quality of Windows and Microsoft services. You must ensure that the telemetry and diagnostics service is enabled at a minimum level of Basic on all endpoints in your organization. **By default, this service is enabled and set to the Enhanced level.** However, it’s good practice to check and ensure that they are receiving sensor data. Setting levels through policies overrides device-level settings. For more info, see:
-* [Ensure telemetry is enabled on all endpoints](https://go.microsoft.com/fwlink/?linkid=859970)
-* [Use Intune to set the telemetry level](https://go.microsoft.com/fwlink/?linkid=860460)
+### 2.5 Diagnostics data
+Microsoft uses diagnostics data to help keep Windows devices secure by identifying malware trends and other threats and to help us improve the quality of Windows and Microsoft services. You must ensure that the diagnostics service is enabled at a minimum level of Basic on all endpoints in your organization. **By default, this service is enabled and set to the Enhanced level.** However, it’s good practice to check and ensure that they are receiving sensor data. Setting levels through policies overrides device-level settings. For more info, see:
+* [Ensure diagnostics data is enabled on all endpoints](https://go.microsoft.com/fwlink/?linkid=859970)
+* [Use Intune to set the diagnostics data level](https://go.microsoft.com/fwlink/?linkid=860460)
 
 ## Step 3: Deployment phase
 When ready, complete these:
