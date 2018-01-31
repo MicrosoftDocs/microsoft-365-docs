@@ -3,6 +3,7 @@ title: Configure and deploy Windows 10 Enterprise with Windows AutoPilot | Micro
 description: Provides guidance on configuring and deploying Windows 10 Enterprise with Windows AutoPilot.
 keywords: Microsoft 365, Microsoft 365 Enterprise, Microsoft 365 documentation, Windows 10 Enterprise, deployment, Windows AutoPilot
 author: CelesteDG
+localization_priority: Normal
 audience: microsoft-business
 ms.prod: microsoft-365-enterprise
 ms.topic: article
