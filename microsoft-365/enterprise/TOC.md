@@ -48,5 +48,5 @@
 ## [Services and concepts](services-overview.md)
 ## [Identity and device access configurations](microsoft-365-policies-configurations.md)
 ### [Common identity and device access policies](identity-access-policies.md)
-### [Exchange Online access policies](secure-email-recommended-policies.md)
-### [SharePoint Online access policies](sharepoint-file-access-policies.md)
+### [Recommended Exchange Online access policies](secure-email-recommended-policies.md)
+### [Recommended SharePoint Online access policies](sharepoint-file-access-policies.md)
