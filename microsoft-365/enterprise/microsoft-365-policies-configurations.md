@@ -1,5 +1,5 @@
 ---
-title: Recommended security policies and configurations - Microsoft 365 Enterprise | Microsoft docs
+title: Identity and device access configurations - Microsoft 365 Enterprise | Microsoft docs
 description:  Describes Microsoft recommendations and core concepts for deploying secure email, docs, and apps policies and configurations.
 author: barlanmsft
 manager: angrobe
@@ -7,11 +7,11 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 08/30/2017
 ms.author: barlan
-ms.reviewer: jsnow
+ms.reviewer: martincoetzer
 ms.custom: it-pro
 ---
 
-# Recommended security policies and configurations
+# Identity and device access configurations
 
 ## Introduction
 While there is no single best recommendation for all customer environments, the best practices and recommendations in this document describe general Microsoft recommendations about how to apply policy and configuration within the Microsoft cloud to ensure that your employees are both secure and productive.  
