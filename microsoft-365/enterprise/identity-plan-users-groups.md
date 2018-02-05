@@ -18,7 +18,7 @@ description: Plan for the set of users and groups that will work for your organi
 
 |||
 |-------|-----------|
-|Required|E3 and E5|
+|Required step |Applies to E3 and E5|
 
 Combining users, groups, and group membership with security features in the correct configuration allows you to:
 
