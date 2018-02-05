@@ -18,6 +18,9 @@ description: Step through the exit criteria for the deployment of Microsoft 365 
 
 Many organizations have exisiting networking, identity, and other components or Microsoft on-premises products and cloud-based services. This article steps through each phase of the deployment of Microsoft 365 Enterprise so you can quickly determine how to adapt or change your existing infrastructure.
 
+> [!Note] 
+> FastTrack is an ongoing and repeatable benefit—available as part of your subscription—that is delivered by Microsoft engineers to help you move to the cloud at your own pace. FastTrack also gives you access to qualified partners for additional services, as needed. With over 40,000 customers enabled to date, FastTrack helps maximize ROI, accelerate deployment, and increase adoption across your organization. See [FastTrack for Microsoft 365](https://fasttrack.microsoft.com/microsoft365).
+
 ## Required and optional exit criteria for networking (phase 1)
 
 Step through the following required and optional exit criteria for the networking infrastructure for Microsoft 365 Enterprise.
