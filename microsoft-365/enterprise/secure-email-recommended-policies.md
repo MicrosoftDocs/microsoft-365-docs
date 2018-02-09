@@ -7,7 +7,7 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 01/18/2018
 ms.author: barlan
-ms.reviewer: jsnow
+ms.reviewer: martincoetzer
 ms.custom: it-pro
 ---
 
@@ -58,9 +58,9 @@ The following tables describes the conditional access policy settings to impleme
 |Sign-in risk|Risk level|High, medium|Check both|
 
 **Access controls**
-|Grant|Grant access|True|Selected|
 |Type|Properties|Values|Notes|
 |:---|:---------|:-----|:----|
+|Grant|Grant access|True|Selected|
 ||Require MFA|True|Check|
 ||Require compliant devices|False||
 ||Require domain joined devices|False||
@@ -170,6 +170,8 @@ The following tables describes the conditional access policy settings to impleme
 |Cloud apps|Include|Select apps -  Select Office 365 Exchange Online||
 
 **Access controls**
+|Type|Properties|Values|Notes|
+|:---|:---------|:-----|:----|
 |Grant|Grant access|True|Selected|
 ||Require MFA|True|Check|
 ||Require complaint devices|False|Check|
