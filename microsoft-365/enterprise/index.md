@@ -13,6 +13,7 @@ title: Microsoft 365 Enterprise documentation and resources
 description: Learn about the product documentation and resources available for Microsoft 365 Enterprise IT admins, information workers, and partners.
 ---
 <div id="main" class="v2">
+    <!-- Hiding
     <div class="container">
         <ul class="cardsY panelContent featuredContent">
             <li>
@@ -53,6 +54,7 @@ description: Learn about the product documentation and resources available for M
             </li>
         </ul>
     </div>
+    -->
     <div class="container">
         <h1>Microsoft 365 Enterprise documentation and resources</h1>
         <ul class="pivots">
@@ -919,15 +921,35 @@ description: Learn about the product documentation and resources available for M
                                     </div>
                                 </a>
                             </li>
+                            <li>
+                                <a href="https://www.microsoft.com/microsoft-365/success/" target="_blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="media/hub-iw-productivitylibrary/iw-productivitylibrary-help-13.svg" alt="Microsoft 365 Enterprise Productivity Library" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Microsoft 365 Enterprise Productivity Library</h3>
+                                                    <p>Get curated training, watch videos, read recommendations, and more.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
                         </ul>
                     </li>
+                    <!--
                     <li>
                         <a data-default="true" href="#end-user-pro-2">Productivity Library</a>
                         <ul id="end-user-pro-2" class="cardsG">
                             <li class="fullSpan">
                                 <div class="container intro">
                                     <p>Employees and other users can get curated training, watch videos, read recommendations, and more from the <a href="https://www.microsoft.com/microsoft-365/success/" target="_blank">Microsoft 365 Enterprise Productivity Library</a>.</p>
-                                    <p>Here are ome links to help you get started.</p>
+                                    <p>Here are some links to help you get started.</p>
                                 </div>
                             </li>
                             <li>
@@ -1141,6 +1163,7 @@ description: Learn about the product documentation and resources available for M
                             </li>
                         </ul>
                     </li>
+                    -->
                 </ul>
             </li>
             <li>
