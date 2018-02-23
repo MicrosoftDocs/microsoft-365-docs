@@ -16,7 +16,9 @@ description: Plan for the set of users and groups that will work for your organi
 
 # Step 1: Plan for users and groups
 
-![This step is required and applies to both the E3 and E5 versions of Microsoft 365 Enterprise](./media/banners/Banner-Required-BothSKUs.png)
+|||
+|-------|-----------|
+|Required step |Applies to E3 and E5|
 
 Combining users, groups, and group membership with security features in the correct configuration allows you to:
 

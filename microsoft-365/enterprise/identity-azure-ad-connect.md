@@ -16,7 +16,9 @@ description: Understand identity options and configure Azure AD Connect to synch
 
 # Step 2: Azure AD Connect
 
-![This step is required for hybrid environments and applies to both the E3 and E5 versions of Microsoft 365 Enterprise](./media/banners/Banner-Hybrid-Required-BothSKUs.png)
+*This is a required step*
+ 
+*Applies to E3 and E5*
 
 Azure AD Connect is Microsoft’s supported tool for simple, fast, and lightweight synchronization on-premises directories, such as Windows Server AD, with the Azure Active Directory (AD) tenant used by your Office 365 and EMS subscriptions.
  
