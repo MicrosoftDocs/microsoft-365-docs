@@ -166,8 +166,8 @@ description: Learn about the product documentation and resources available for M
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>I have an existing Microsoft IT infrastructure</h3>
-                                                    <p>If you already have Windows 10 Enterprise, Office 365, or EMS, review exit criteria for Microsoft 365 Enterprise to determine what you need to change.</p>
+                                                    <h3>My company already uses Microsoft technologies</h3>
+                                                    <p>We’re glad you’re already familiar with our products. We want to help you understand changes you might need to make for Microsoft 365 Enterprise.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -185,8 +185,8 @@ description: Learn about the product documentation and resources available for M
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>I want to deploy Microsoft 365 Enterprise from scratch</h3>
-                                                    <p>Step through the phases of the end-to-end deployment process for typical IT areas of responsibility and components of Microsoft 365 Enterprise.</p>
+                                                    <h3>My company is new to Microsoft 365</h3>
+                                                    <p>Welcome! We want you to get the most out of your investment. To get started, follow the steps to deploy Microsoft 365 Enterprise.</p>
                                                 </div>
                                             </div>
                                         </div>
