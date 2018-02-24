@@ -28,6 +28,10 @@ Use the phases in the [Foundation Infrastructure documentation](deploy-foundatio
 
 The foundation infrastructure is the basis upon which you can deploy productivity workloads such as Exchange Online, SharePoint Online, and Microsoft Teams in Office 365. The foundation infrastructure provides intelligent security and integration to make it easier to ensure your client software is updated with the latest productivity and security enhancements.
 
+## FastTrack
+
+FastTrack is an ongoing and repeatable benefit—available as part of your subscription—that is delivered by Microsoft engineers to help you move to the cloud at your own pace. FastTrack also gives you access to qualified partners for additional services, as needed. With over 40,000 customers enabled to date, FastTrack helps maximize ROI, accelerate deployment, and increase adoption across your organization. See [FastTrack for Microsoft 365](https://fasttrack.microsoft.com/microsoft365).
+
 ## Next step
 
-[Foundation Infrastructure](deploy-foundation-infrastructure.md)
+Use [FastTrack](https://fasttrack.microsoft.com/microsoft365) or the [Foundation Infrastructure](deploy-foundation-infrastructure.md)

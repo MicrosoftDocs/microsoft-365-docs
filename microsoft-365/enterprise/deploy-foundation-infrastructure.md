@@ -34,6 +34,10 @@ Use the following phases to plan for and deploy the foundation infrastructure of
 > [!Important] 
 > You must complete the exit criteria for each of the six phases to ensure that your on-premises and cloud infrastructure meets the requirements of Microsoft 365 Enterprise.
 
+## FastTrack
+
+FastTrack is an ongoing and repeatable benefit—available as part of your subscription—that is delivered by Microsoft engineers to help you move to the cloud at your own pace. FastTrack also gives you access to qualified partners for additional services, as needed. With over 40,000 customers enabled to date, FastTrack helps maximize ROI, accelerate deployment, and increase adoption across your organization. See [FastTrack for Microsoft 365](https://fasttrack.microsoft.com/microsoft365).
+
 ## Next step
 
 If you have existing infrastructure for Office 365, EMS, or Windows 10 Enterprise, see [Deployment of Microsoft 365 Enterprise with existing infrastructure](deploy-with-existing-infrastructure.md). This article steps you through exit criteria for each phase to more quickly determine what you need to change and make your IT infrastructure Microsoft 365 Enterprise-compliant.
