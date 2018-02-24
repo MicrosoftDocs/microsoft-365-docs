@@ -152,7 +152,7 @@ description: Learn about the product documentation and resources available for M
                         <ul id="deploy" class="cardsG">
                             <li class="fullSpan">
                                 <div class="container intro">
-                                    <p>Get step-by-step guidance on how to plan for and deploy Office 365, Windows 10 Enterprise, and Enterprise Mobility + Security together for an integrated and secure infrastructure that enables teamwork and unlocks creativity.</p>
+                                    <p>Learn how to plan for and deploy Office 365, Windows 10 Enterprise, and Enterprise Mobility + Security together for an integrated and secure infrastructure that enables teamwork and unlocks creativity.</p>
                                 </div>
                             </li>
                             <li>
@@ -167,7 +167,7 @@ description: Learn about the product documentation and resources available for M
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>My company already uses Microsoft technologies</h3>
-                                                    <p>We’re glad you’re already familiar with our products. We want to help you understand changes you might need to make for Microsoft 365 Enterprise.</p>
+                                                    <p>Great! You’re familiar with our products. We'll help you fine-tune your environment for Microsoft 365 Enterprise.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -186,7 +186,7 @@ description: Learn about the product documentation and resources available for M
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>My company is new to Microsoft 365</h3>
-                                                    <p>Welcome! We want you to get the most out of your investment. To get started, follow the steps to deploy Microsoft 365 Enterprise.</p>
+                                                    <p>Welcome! We'll help you get the most out of your investment and walk you through the deployment process.</p>
                                                 </div>
                                             </div>
                                         </div>
