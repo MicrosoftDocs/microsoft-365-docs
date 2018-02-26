@@ -34,7 +34,7 @@ This guide is meant only to provide Microsoft's best recommendations around thes
 ### 1.1 Infrastructure
 
 #### Group Policy
-Windows 10 introduces many new features and removes and changes many others in Windows 7 and 8.1, including new Group Policy settings which need to be tested and implemented as part of a Windows 10 migration. The following resources provide examples on assessing current group policies for Windows, including Group Policy Objects in the Active Directory structure:
+Windows 10 introduces many new features and removes and changes many others in Windows 7 and 8.1, including new Group Policy settings which you need to test and implement as part of a Windows 10 migration. Use the examples from the following resources to assess current group policies for Windows, including Group Policy Objects in the Active Directory structure:
 * [Manage Windows 10 with administrative templates](https://go.microsoft.com/fwlink/?linkid=860226)
 * [Group Policy settings that apply to Windows 10](https://docs.microsoft.com/windows/client-management/group-policies-for-enterprise-and-education-editions)
 
