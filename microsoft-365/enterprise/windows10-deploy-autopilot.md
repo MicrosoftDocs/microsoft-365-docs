@@ -43,18 +43,21 @@ Before upgrading an OS in an enterprise environment, take the following technica
 This guide is meant only to provide Microsoft's best recommendations around these assumptions by providing links to existing documentation.
 
 ### Step 1: Infrastructure
+Consider your organization's collection of hardware, software, policies, networks, and other related technologies as part of the deployment process. 
+
+For Windows AutoPilot, these are the infrastructure you need to take into account:
 
 #### Group Policy
 With Windows AutoPilot, a device automatically joins their organization’s Azure AD group once a user signs into their organization from the device. The Group Policy policies (along with other customized settings and apps) are automatically pushed to the new device. It’s critical to understand that these policies must be properly configured within an organization before setting up Windows AutoPilot profiles.
 
 Windows 10 introduces many new features and removes and changes many others in Windows 7 and 8.1, including new Group Policy settings which need to be tested and implemented as part of a Windows 10 migration. The following resources provide examples on assessing current group policies for Windows, including Group Policy Objects in the Active Directory structure:
-* [Manage Windows 10 with administrative templates](https://go.microsoft.com/fwlink/?linkid=860226)
-* [Group Policy settings that apply to Windows 10](https://docs.microsoft.com/windows/client-management/group-policies-for-enterprise-and-education-editions)
+* [Manage Windows 10 with administrative templates](https://go.microsoft.com/fwlink/?linkid=860226) - Get step-by-step info on how to manage Windows 10 with administrative templates
+* [Group Policy settings that apply to Windows 10](https://docs.microsoft.com/windows/client-management/group-policies-for-enterprise-and-education-editions) - Find out which Group Policy settings apply only to Windows 10 Enterprise
 
 #### Data management
 Be sure to back up user data if necessary. Because of the out-of-box experience (OOBE), user data isn't saved on a net-new computer. We recommend configuring a backup scenario as needed. For example, export all user data to a OneDrive for Business account, BitLocker To Go-encrypted USB flash drive, or network file server. For more info, see:
-* [How to back up or transfer your data on a Windows-based computer](https://go.microsoft.com/fwlink/?linkid=860230)
-* [Redirect known folders to OneDrive for Business](https://go.microsoft.com/fwlink/?linkid=846620)
+* [How to back up or transfer your data on a Windows-based computer](https://go.microsoft.com/fwlink/?linkid=860230) - Get step-by-step info on how to manually back up your personal files and settings.
+* [Redirect known folders to OneDrive for Business](https://go.microsoft.com/fwlink/?linkid=846620) - Learn how to set a policy at the domain level to make sure users all sync to the same folder when they install the OneDrive sync client and how you can set additional policies to redirect the Documents folder to that sync location.
 
 ### Step 2: Apps
 
@@ -78,8 +81,8 @@ Each Windows 10 release provides improved app compatibility. However, some apps 
 Be sure to assess business critical apps and understand the impact of upgrading to the next OS. Prioritize the workloads that impact the least number of people during deployment. 
 
 See the following Upgrade Readiness resources to help with app inventory, driver compatibility issues, and usage information:
-* [Manage Windows Upgrades with Upgrade Readiness](https://go.microsoft.com/fwlink/?linkid=860255)
-* [Configure Windows diagnostics data](https://go.microsoft.com/fwlink/?linkid=859970)
+* [Manage Windows Upgrades with Upgrade Readiness](https://go.microsoft.com/fwlink/?linkid=860255) - Learn about the tools to help you plan and manage the upgrade process end to end, which allow you to adopt new Windows releases more quickly.
+* [Configure Windows diagnostics data](https://go.microsoft.com/fwlink/?linkid=859970) - Find out about the importance of Windows diagnostic data and how Microsoft protects that data.
 
 > [!NOTE]
 > Upgrade Readiness may not be able to assess compatibility for custom and line-of-business (LOB) apps in an organization.
