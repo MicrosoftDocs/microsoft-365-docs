@@ -13,6 +13,13 @@ ms.author: celested
 
 # Phase 3: Windows 10 Enterprise
 
+Microsoft 365 Enterprise includes Windows 10 Enterprise, which gives organizations the tools you need to do more and stay secure. Windows 10 is:
+* Integrated for simplicity - Harness the power of the cloud to help reduce the complexity of managing today's modern IT device environment, no matter the size.
+* Intelligent security - Is the most secure release of Windows ever, with intelligent security capabilities that are designed to work together to better protect your organization.
+* Enables creativity and teamwork - Unlocks creativity and teamwork to deliver the most productive experience that both users and IT will love.
+
+For organizations, you'll need to understand the different ways you can deploy the Windows 10 operating system and choose the right one. Depending on your Microsoft 365 Enterprise subscription, there are also Windows 10 security features that you'll need to deploy and configure to get the most out of Windows 10.
+
 ## Deployment
 There are multiple ways you can deploy Windows 10 Enterprise for your organization. Here, we'll focus on how you can configure and deploy a Windows 10 Enterprise image through these modern deployment scenarios.
 
