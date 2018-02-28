@@ -21,30 +21,33 @@ ms.author: celested
 
 **Summary:**
 
-Follow this guide to configure and deploy a Windows 10 Enterprise image using System Center Configuration Manager (Configuration Manager) as an in-place upgrade.
+The simplest path to upgrade PCs currently running Windows 7, Windows 8, or Windows 8.1 to Windows 10 is through an in-place upgrade. You can use a System Center Configuration Manager task sequence to completely automate the process. Follow this guide to configure and deploy a Windows 10 Enterprise image using Configuration Manager as an in-place upgrade.
 
-## Step 1: Consideration phase
+## Phase 1: Consideration phase
 Before upgrading an OS in an enterprise environment, take the following technical aspects into account:
-* [Infrastructure](#11-infrastructure)
-* [Apps](#12-apps)
-* [Governance and business processes](#13-governance-and-business-processes)
+* [Infrastructure](#step-1-infrastructure)
+* [Apps](#step-2-apps)
+* [Governance and business processes](#step-3-governance-and-business-processes)
 
 This guide is meant only to provide Microsoft's best recommendations around these assumptions by providing links to existing documentation.
 
-### 1.1 Infrastructure
+### Step 1: Infrastructure
+Consider your organization's collection of hardware, software, policies, networks, and other related technologies as part of the deployment process.
+
+For in-place upgrade with Configuration Manager, these are the infrastructure you need to take into account:
 
 #### Group Policy
 Windows 10 introduces many new features and removes and changes many others in Windows 7 and 8.1, including new Group Policy settings which you need to test and implement as part of a Windows 10 migration. Use the examples from the following resources to assess current group policies for Windows, including Group Policy Objects in the Active Directory structure:
-* [Manage Windows 10 with administrative templates](https://go.microsoft.com/fwlink/?linkid=860226)
-* [Group Policy settings that apply to Windows 10](https://docs.microsoft.com/windows/client-management/group-policies-for-enterprise-and-education-editions)
+* [Manage Windows 10 with administrative templates](https://go.microsoft.com/fwlink/?linkid=860226) - Get step-by-step info on how to manage Windows 10 with administrative templates
+* [Group Policy settings that apply to Windows 10](https://docs.microsoft.com/windows/client-management/group-policies-for-enterprise-and-education-editions) - Find out which Group Policy settings apply only to Windows 10 Enterprise
 
 > [!NOTE]
 > If you are considering moving to modern management by using MDM instead of Group Policy to manage device configurations, you can start by using the [MDM Migration Analysis Tool (MMAT)](https://github.com/WindowsDeviceManagement/MMAT) to determine what Group Policies are set on the device and report the corresponding settings, if available.
 
 #### Data management
 Although in-place upgrades shouldn’t affect user data and apps, a best practice is to configure a backup scenario and back up user data. For example, export all user data to a OneDrive for Business account, BitLocker To Go-encrypted USB flash drive, or network file server. For more details, see:
-* [How to back up or transfer your data on a Windows-based computer](https://go.microsoft.com/fwlink/?linkid=860230)
-* [Redirect known folders to OneDrive for Business](https://go.microsoft.com/fwlink/?linkid=846620)
+* [How to back up or transfer your data on a Windows-based computer](https://go.microsoft.com/fwlink/?linkid=860230) - Get step-by-step info on how to manually back up your personal files and settings.
+* [Redirect known folders to OneDrive for Business](https://go.microsoft.com/fwlink/?linkid=846620) - Learn how to set a policy at the domain level to make sure users all sync to the same folder when they install the OneDrive sync client and how you can set additional policies to redirect the Documents folder to that sync location.
 
 #### System Center Configuration Manager
 This guide assumes you are following Microsoft recommendations and have one of the following versions of System Center Configuration Manager 2012 onward:
@@ -79,7 +82,7 @@ This guide assumes you have enough network bandwidth to support the deployment o
 * Virtual desktop infrastructure (VDI) environments - This scenario is not covered in the guide. If you have the FastTrack Benefit, it doesn't cover configuration or deployment on VDI environments.
 * x64 and x86 - Changing from a 32-bit OS to a 64-bit isn't supported. For more info, see [Windows 10 deployment scenario > In-place upgrade](https://docs.microsoft.com/en-us/windows/deployment/windows-10-deployment-scenarios#in-place-upgrade).
 
-### 1.2 Apps
+### Step 2: Apps
 
 #### Security
 Security clients (like antivirus, anti-malware, and anti-spam) are typically found on all PCs within an organization. Because these programs hook into the deeper levels of the OS, you may need to perform a compatibility assessment before starting any Windows 10 migrations. You may need to upgrade, reconfigure, or even replace Some software. Not performing this assessment can lead to:
@@ -99,8 +102,8 @@ Each Windows 10 release provides improved app compatibility. However, some apps 
 Be sure to assess business critical apps and understand the impact of upgrading to the next OS. Prioritize the workloads that impact the least number of people during deployment. 
 
 See the following Upgrade Readiness resources to help with app inventory, driver compatibility issues, and usage information:
-* [Manage Windows Upgrades with Upgrade Readiness](https://go.microsoft.com/fwlink/?linkid=860255)
-* [Configure Windows diagnostics data](https://go.microsoft.com/fwlink/?linkid=859970)
+* [Manage Windows Upgrades with Upgrade Readiness](https://go.microsoft.com/fwlink/?linkid=860255) - Learn about the tools to help you plan and manage the upgrade process end to end, which allow you to adopt new Windows releases more quickly.
+* [Configure Windows diagnostics data](https://go.microsoft.com/fwlink/?linkid=859970) - Find out about the importance of Windows diagnostic data and how Microsoft protects that data.
 
 > [!NOTE]
 > Upgrade Readiness may not be able to assess compatibility for custom and line-of-business (LOB) apps in an organization.
@@ -108,14 +111,14 @@ See the following Upgrade Readiness resources to help with app inventory, driver
 #### Language packs
 In-place upgrades have have limitations when it comes to language packs. The language stays consistent throughout the upgrade. Verify the language version and make sure it stays consistent. For example, Windows 7 with English as the default won’t change when upgraded to Windows 10. For more info, see:
 * [Default language pack on your OS](https://go.microsoft.com/fwlink/?linkid=860282)
-* [Finding language packs on each Widnows 10 deployment](https://go.microsoft.com/fwlink/?linkid=860283)
+* [Finding language packs on each Windows 10 deployment](https://go.microsoft.com/fwlink/?linkid=860283)
 
-For a Microsoft 365 powered device, you'll also need to download Office 365 ProPlus language packs that applies to the client. These come in 32-bit (x86) or 65-bit (x64). A specific language must be installed as the default. You can install other languages later. For more info, see:
-* [Choose between 65-bit or 32-bit version of Office](https://go.microsoft.com/fwlink/?linkid=862361)
-* [Language accessory pack for Office](https://go.microsoft.com/fwlink/?linkid=860280)
-* [Add an additional language pack](https://go.microsoft.com/fwlink/?linkid=860281)
+For a Microsoft 365 powered device, you'll also need to download Office 365 ProPlus language packs that applies to the client. These come in 32-bit (x86) or 64-bit (x64). A specific language must be installed as the default. You can install other languages later. For more info, see:
+* [Choose between 64-bit or 32-bit version of Office](https://go.microsoft.com/fwlink/?linkid=862361) - Helps you decide which version of Office is right for you.
+* [Language accessory pack for Office](https://go.microsoft.com/fwlink/?linkid=860280) - Follow the steps to install the language accessory pack for Office.
+* [Add an additional language pack](https://go.microsoft.com/fwlink/?linkid=860281) - Get step-by-step info on adding a language or setting language preferences in Office.
 
-### 1.3 Governance and business processes
+### Step 3: Governance and business processes
 
 #### Windows as a service
 Windows 10 introduced the concept of Windows as a service. This greatly changes the frequency and style of updates to Windows. Instead of new versions being released every 3-5 years, a more incremental model is used where two smaller updates (Feature Updates) are released yearly. For more info, see:
@@ -156,15 +159,15 @@ Each group has different configuration files, as users from the Current Channel 
 
 For more info, see [Phase 4: Office 365 ProPlus infrastructure for Microsoft 365 Enterprise](office365proplus-infrastructure.md).
 
-## Step 2: Testing phase
+## Phase 2: Testing phase
 Once you've completed the scenarios and requirements in [Step 1: Consideration phase](#step-1-consideration-phase), you can move to this stage.
-* [Networking](#21-networking)
-* [Identity](#22-identity)
-* [Client readiness](#23-client-readiness)
-* [System Center Configuration Manager](#24-system-center-configuration-manager)
-* [Diagnostics data](#25-diagnostics-data)
+* [Networking](#step-1-networking)
+* [Identity](#step-2-identity)
+* [Client readiness](#step-3-client-readiness)
+* [System Center Configuration Manager](#step-4-system-center-configuration-manager)
+* [Diagnostics data](#step-5-diagnostics-data)
 
-### 2.1 Networking
+### Step 1: Networking
 Ports to the client need to be opened for Office 365 ProPlus (for a Microsoft 365 powered device) and Configuration Manager. For more details about setting up your Microsoft 365 Enterprise networking infrastructure, see [Phase 1: Networking](networking-infrastructure.md).
 
 When setting up your networking infrastructure as part your in-place upgrade, make sure you complete these steps:
@@ -176,7 +179,7 @@ When setting up your networking infrastructure as part your in-place upgrade, ma
 6. [Create domain name system records for Office 365 at any Domain Name System hosting provider](http://go.microsoft.com/fwlink/?LinkId=733656).
 7. [Reduce mail exchange (MX) DNS record time to live (TTL) value](http://go.microsoft.com/fwlink/?LinkId=733656).
 
-### 2.2 Identity
+### Step 2: Identity
 Intelligent security for Microsoft 365 Enterprise, in which the right users have access to the right resources with an appropriate level of access, begins with identity management. For more details about setting up your Microsoft 365 Enterprise identity infrastructure, see [Phase 2: Identity](identity-infrastructure.md).
 
 When setting up your identity infrastructure as part of your in-place upgrade, make sure you complete these tasks:
@@ -192,25 +195,25 @@ When setting up your identity infrastructure as part of your in-place upgrade, m
 
     This provides a systematic way to assign licenses to end users and groups in your organization. For more info, see [Windows 10 Subscription Activation](https://go.microsoft.com/fwlink/?linkid=860365) and [Deploy Windows 10 licenses](https://go.microsoft.com/fwlink/?linkid=860367).
 
-### 2.3 Client readiness
+### Step 3: Client readiness
 
 #### System requirements for Office 365
 Confirm that Windows 10 works with Office 365. Be sure you're using the latest OS version and browsers with Office 365 and have updated them with the latest service packs. For more info on Office requirements, see [System requirements for Office](http://go.microsoft.com/fwlink/?LinkID=394412).
 
-### 2.4 System Center Configuration Manager
+### Step 4: System Center Configuration Manager
 See [System Center Configuration Manager](#system-center-configuration-manager).
 
-### 2.5 Diagnostics data
+### Step 5: Diagnostics data
 Microsoft uses diagnostics data to help keep Windows devices secure by identifying malware trends and other threats and to help us improve the quality of Windows and Microsoft services. You must ensure that the diagnostics service is enabled at a minimum level of Basic on all endpoints in your organization. **By default, this service is enabled and set to the Enhanced level.** However, it’s good practice to check and ensure that they are receiving sensor data. Setting levels through policies overrides device-level settings. For more info, see:
 * [Ensure diagnostics data is enabled on all endpoints](https://go.microsoft.com/fwlink/?linkid=859970)
 * [Use Intune to set the diagnostics data level](https://go.microsoft.com/fwlink/?linkid=860460)
 
-## Step 3: Deployment phase
+## Phase 3: Deployment phase
 When ready, complete these:
 * [In-place upgrade to Windows 10 Enterprise](#31-in-place-upgrade-to-windows-10-enterprise)
 * [Windows Defender Antivirus](#32-windows-defender-antivirus)
 
-### 3.1 In-place upgrade to Windows 10 Enterprise
+### Step 1: In-place upgrade to Windows 10 Enterprise
 1. Integrate System Center Configuration Manager with Microsoft Deployment Tool.
 
     Be sure to use the Microsoft Deployment Toolkit (MDT) in conjunction with Configuration Manager when deploying an updated version of Windows 10. MDT brings Zero Touch Installation and Light Touch Installation enhancements to help with deployments at no cost to the customer. For more info, see:
@@ -285,10 +288,11 @@ When ready, complete these:
 
     Use Configuration Manager and MDT to monitor your deployment. Deployment Workbench enables access to the computer remotely using the Diagnostics and Recovery Toolset (DaRT) (optional). Deployments can be monitored in Configuration Manager. For more info, see [Monitor the Windows 10 deployment with Configuration Manager](https://go.microsoft.com/fwlink/?linkid=860705).
 
-### 3.2 Windows Defender Antivirus
+### Step 2: Windows Defender Antivirus
 See [Enable Windows 10 Enterprise security features > Windows Defender Antivirus](windows10-enable-security-features.md#windows-defender-antivirus)
 
-
+## Troubleshooting
+If you experience issues when using Windows 10 in an enterprise environment, you can consult [top Microsoft Support solutions for the most common issues](https://docs.microsoft.com/en-us/windows/client-management/windows-10-support-solutions). These resources include KB articles, updates, and library articles.
 
 ## Learn more
 [Microsoft 365 Enterprise product page](https://www.microsoft.com/microsoft-365/enterprise)</br>
