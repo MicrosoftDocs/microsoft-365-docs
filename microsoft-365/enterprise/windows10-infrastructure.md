@@ -14,11 +14,14 @@ ms.author: celested
 # Phase 3: Windows 10 Enterprise
 
 ## Deployment
-There are multiple ways you can deploy Windows 10 Enterprise for your organization. Here, we'll focus on how you can configure and deploy a Windows 10 Enterprise image through these modern deployment scenarios:
-* [Using System Center Configuration Manager as an in-place upgrade](windows10-deploy-inplaceupgrade.md) - Use this if you use Windows Setup to update your OS and migrate apps and settings. Rollback data is saved in Windows.old.
-* [Using Windows AutoPilot](windows10-deploy-autopilot.md) - Use this to customize the out-of-box-experience (OOBE) for your organization, and deploy a new system with apps and settings already configured. 
+There are multiple ways you can deploy Windows 10 Enterprise for your organization. Here, we'll focus on how you can configure and deploy a Windows 10 Enterprise image through these modern deployment scenarios.
 
-To learn all about these, and other, scenarios and understand the capabilities and limitations of each, see [Windows 10 deployment scenarios](https://docs.microsoft.com/windows/deployment/windows-10-deployment-scenarios).
+| Deployment scenario | When to use it |
+|:--- |:--- |
+| [Using System Center Configuration Manager as an in-place upgrade](windows10-deploy-inplaceupgrade.md) | If you have existing computers running Windows 7, Windows 8, or Windows 8.1, we recommend this path if your organization is deploying Windows 10. This leverages the Windows installation program (Setup.exe) to perform an in-place upgrade, which automatically preserves all data, settings, applications, and drivers from the existing operating system version. This requires the least IT effort, because there is no need for any complex deployment infrastructure. |
+| [Using Windows AutoPilot](windows10-deploy-autopilot.md) | If you have new Windows 10 PCs, you can use Windows AutoPilot to customize the out-of-box-experience (OOBE) for your organization, and deploy a new system with apps and settings already configured. There are no images to deploy, no drivers to inject, and no infrastructure to manage. Users can go through the deployment process independently, without the need consult their IT administrator. |
+
+If these deployment scenarios do not fit the needs of your organization, you can learn about other scenarios and understand the capabilities and limitations of each in [Windows 10 deployment scenarios](https://docs.microsoft.com/windows/deployment/windows-10-deployment-scenarios).
 
 ## Security
 Windows 10 provides features to help protect against threats, help you secure your devices, and help with access control. With Windows 10, you get critical security features that protect your device right from the start. Microsoft 365 E3 adds security features such as Windows Hello for Business, Windows Defender Application Control, and Windows Information Protection. With Microsoft 365 E5, you get all the protection from Microsoft 365 E3 security plus cloud-based security features and Windows Defender Advanced Threat Protection. 

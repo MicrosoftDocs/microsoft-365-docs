@@ -36,9 +36,9 @@ Make sure you have the following requirements deployed and licensed.
 | Office 365 ProPlus | Business Premium, E3, E5, or Office 365 ProPlus standalone |
 
 Before upgrading an OS in an enterprise environment, take the following technical aspects into account:
-* [Infrastructure](#11-infrastructure)
-* [Apps](#12-apps)
-* [Governance and business processes](#13-governance-and-business-processes)
+* [Infrastructure](#step-1-infrastructure)
+* [Apps](#step-2-apps)
+* [Governance and business processes](#step-3-governance-and-business-processes)
 
 This guide is meant only to provide Microsoft's best recommendations around these assumptions by providing links to existing documentation.
 
@@ -133,10 +133,10 @@ For more info, see [Phase 4: Office 365 ProPlus infrastructure for Microsoft 365
 Once you've completed the scenarios and requirements in [Step 1: Consideration phase](#step-1-consideration-phase), you can move to this stage. 
 
 To use Windows AutoPilot, make sure you are ready to perform these tasks:
-* [Networking](#21-networking)
-* [Identity](#22-identity)
-* [Client readiness](#23-client-readiness)
-* [Diagnostics data](#24-diagnostics-data)
+* [Networking](#step-1-networking)
+* [Identity](#step-2-identity)
+* [Client readiness](#step-3-client-readiness)
+* [Diagnostics data](#step-4-diagnostics-data)
 
 ### Step 1: Networking
 Ports to the client need to be opened for Office 365 ProPlus (for a Microsoft 365 powered device) and Configuration Manager. For more details about setting up your Microsoft 365 Enterprise networking infrastructure, see [Phase 1: Networking](networking-infrastructure.md).

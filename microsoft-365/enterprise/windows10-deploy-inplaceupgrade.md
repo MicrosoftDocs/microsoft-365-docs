@@ -25,9 +25,9 @@ Follow this guide to configure and deploy a Windows 10 Enterprise image using Sy
 
 ## Phase 1: Consideration phase
 Before upgrading an OS in an enterprise environment, take the following technical aspects into account:
-* [Infrastructure](#11-infrastructure)
-* [Apps](#12-apps)
-* [Governance and business processes](#13-governance-and-business-processes)
+* [Infrastructure](#step-1-infrastructure)
+* [Apps](#step-2-apps)
+* [Governance and business processes](#step-3-governance-and-business-processes)
 
 This guide is meant only to provide Microsoft's best recommendations around these assumptions by providing links to existing documentation.
 
@@ -158,11 +158,11 @@ For more info, see [Phase 4: Office 365 ProPlus infrastructure for Microsoft 365
 
 ## Phase 2: Testing phase
 Once you've completed the scenarios and requirements in [Step 1: Consideration phase](#step-1-consideration-phase), you can move to this stage.
-* [Networking](#21-networking)
-* [Identity](#22-identity)
-* [Client readiness](#23-client-readiness)
-* [System Center Configuration Manager](#24-system-center-configuration-manager)
-* [Diagnostics data](#25-diagnostics-data)
+* [Networking](#step-1-networking)
+* [Identity](#step-2-identity)
+* [Client readiness](#step-3-client-readiness)
+* [System Center Configuration Manager](#step-4-system-center-configuration-manager)
+* [Diagnostics data](#step-5-diagnostics-data)
 
 ### Step 1: Networking
 Ports to the client need to be opened for Office 365 ProPlus (for a Microsoft 365 powered device) and Configuration Manager. For more details about setting up your Microsoft 365 Enterprise networking infrastructure, see [Phase 1: Networking](networking-infrastructure.md).
@@ -197,10 +197,10 @@ When setting up your identity infrastructure as part of your in-place upgrade, m
 #### System requirements for Office 365
 Confirm that Windows 10 works with Office 365. Be sure you're using the latest OS version and browsers with Office 365 and have updated them with the latest service packs. For more info on Office requirements, see [System requirements for Office](http://go.microsoft.com/fwlink/?LinkID=394412).
 
-### 2.4 System Center Configuration Manager
+### Step 4: System Center Configuration Manager
 See [System Center Configuration Manager](#system-center-configuration-manager).
 
-### 2.5 Diagnostics data
+### Step 5: Diagnostics data
 Microsoft uses diagnostics data to help keep Windows devices secure by identifying malware trends and other threats and to help us improve the quality of Windows and Microsoft services. You must ensure that the diagnostics service is enabled at a minimum level of Basic on all endpoints in your organization. **By default, this service is enabled and set to the Enhanced level.** However, it’s good practice to check and ensure that they are receiving sensor data. Setting levels through policies overrides device-level settings. For more info, see:
 * [Ensure diagnostics data is enabled on all endpoints](https://go.microsoft.com/fwlink/?linkid=859970)
 * [Use Intune to set the diagnostics data level](https://go.microsoft.com/fwlink/?linkid=860460)
