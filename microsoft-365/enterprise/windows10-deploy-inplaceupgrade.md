@@ -21,7 +21,7 @@ ms.author: celested
 
 **Summary:**
 
-Follow this guide to configure and deploy a Windows 10 Enterprise image using System Center Configuration Manager (Configuration Manager) as an in-place upgrade.
+The simplest path to upgrade PCs currently running Windows 7, Windows 8, or Windows 8.1 to Windows 10 is through an in-place upgrade. You can use a System Center Configuration Manager task sequence to completely automate the process. Follow this guide to configure and deploy a Windows 10 Enterprise image using Configuration Manager as an in-place upgrade.
 
 ## Phase 1: Consideration phase
 Before upgrading an OS in an enterprise environment, take the following technical aspects into account:
@@ -111,12 +111,12 @@ See the following Upgrade Readiness resources to help with app inventory, driver
 #### Language packs
 In-place upgrades have have limitations when it comes to language packs. The language stays consistent throughout the upgrade. Verify the language version and make sure it stays consistent. For example, Windows 7 with English as the default won’t change when upgraded to Windows 10. For more info, see:
 * [Default language pack on your OS](https://go.microsoft.com/fwlink/?linkid=860282)
-* [Finding language packs on each Widnows 10 deployment](https://go.microsoft.com/fwlink/?linkid=860283)
+* [Finding language packs on each Windows 10 deployment](https://go.microsoft.com/fwlink/?linkid=860283)
 
-For a Microsoft 365 powered device, you'll also need to download Office 365 ProPlus language packs that applies to the client. These come in 32-bit (x86) or 65-bit (x64). A specific language must be installed as the default. You can install other languages later. For more info, see:
-* [Choose between 65-bit or 32-bit version of Office](https://go.microsoft.com/fwlink/?linkid=862361)
-* [Language accessory pack for Office](https://go.microsoft.com/fwlink/?linkid=860280)
-* [Add an additional language pack](https://go.microsoft.com/fwlink/?linkid=860281)
+For a Microsoft 365 powered device, you'll also need to download Office 365 ProPlus language packs that applies to the client. These come in 32-bit (x86) or 64-bit (x64). A specific language must be installed as the default. You can install other languages later. For more info, see:
+* [Choose between 64-bit or 32-bit version of Office](https://go.microsoft.com/fwlink/?linkid=862361) - Helps you decide which version of Office is right for you.
+* [Language accessory pack for Office](https://go.microsoft.com/fwlink/?linkid=860280) - Follow the steps to install the language accessory pack for Office.
+* [Add an additional language pack](https://go.microsoft.com/fwlink/?linkid=860281) - Get step-by-step info on adding a language or setting language preferences in Office.
 
 ### Step 3: Governance and business processes
 

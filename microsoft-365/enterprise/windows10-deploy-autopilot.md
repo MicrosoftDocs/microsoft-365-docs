@@ -20,7 +20,7 @@ ms.author: celested
 
 **Summary:**
 
-Follow this guide to configure and deploy a Windows 10 Enterprise using Windows AutoPilot&mdash;a collection of technologies used to set up and pre-configure new devices, getting them ready for productive use. To learn more about Windows AutoPilot, including benefits and scenarios, see [Overview of Windows AutoPilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
+You can set up and pre-configure new Windows 10 devices and get them ready for productive use using Windows AutoPilot. To learn more about Windows AutoPilot, including benefits and Windows AutoPilot scenarios, see [Overview of Windows AutoPilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot). When ready, follow this guide to start setting up new devices.
 
 ## Phase 1: Consideration phase
 This guide makes several assumptions regarding essential, business-critical considerations before upgrading an OS in an enterprise environment.
@@ -88,10 +88,10 @@ See the following Upgrade Readiness resources to help with app inventory, driver
 > Upgrade Readiness may not be able to assess compatibility for custom and line-of-business (LOB) apps in an organization.
 
 #### Language packs
-For a Microsoft 365 powered device, you'll also need to download Office 365 ProPlus language packs that applies to the client. These come in 32-bit (x86) or 65-bit (x64). A specific language must be installed as the default. You can install other languages later. For more info, see:
-* [Choose between 65-bit or 32-bit version of Office](https://go.microsoft.com/fwlink/?linkid=862361)
-* [Language accessory pack for Office](https://go.microsoft.com/fwlink/?linkid=860280)
-* [Add an additional language pack](https://go.microsoft.com/fwlink/?linkid=860281)
+For a Microsoft 365 powered device, you'll also need to download Office 365 ProPlus language packs that applies to the client. These come in 32-bit (x86) or 64-bit (x64). A specific language must be installed as the default. You can install other languages later. For more info, see these resources:
+* [Choose between 64-bit or 32-bit version of Office](https://go.microsoft.com/fwlink/?linkid=862361) - Helps you decide which version of Office is right for you.
+* [Language accessory pack for Office](https://go.microsoft.com/fwlink/?linkid=860280) - Follow the steps to install the language accessory pack for Office.
+* [Add an additional language pack](https://go.microsoft.com/fwlink/?linkid=860281) - Get step-by-step info on adding a language or setting language preferences in Office.
 
 ### Step 3: Governance and business processes
 
