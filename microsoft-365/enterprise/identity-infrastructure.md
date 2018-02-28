@@ -1,9 +1,9 @@
 ---
-title: "Phase 2: Identity infrastructure for Microsoft 365 Enterprise"
+title: "Phase 2: Identity"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 01/29/2018
+ms.date: 02/28/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -14,9 +14,9 @@ ms.custom:
 description: The steps to deploy the identity infrastructure for Microsoft 365 Enterprise.
 ---
 
-# Phase 2: Identity infrastructure for Microsoft 365 Enterprise
+# Phase 2: Identity
 
-Intelligent security for Microsoft 365 Enterprise, in which the right users have access to the right resources with an appropriate level of access, begins with identity management. Your identity infrastructure is the central underpinning upon which your additional foundation infrastructure and your productivity workloads depend. A well-planned and executed identity infrastructure paves the way for stronger security and access to your productivity workloads and their data only by authenticated users and devices.
+In Microsoft 365 Enterprise, a well-planned and executed identity infrastructure paves the way for stronger security and access to your productivity workloads and their data only by authenticated users and devices.
 
 >[!Note]
 >If you already have an identity infrastructure deployed, please see the [exit criteria](identity-exit-criteria.md) for this phase to make sure that your identity infrastructure meets the required and optional criteria for Microsoft 365 Enterprise.
@@ -25,7 +25,7 @@ Intelligent security for Microsoft 365 Enterprise, in which the right users have
 
 ## Plan and deploy your Microsoft 365 Enterprise identity infrastructure 
 
-Use the following steps to plan for and deploy your new identity infrastructure in the cloud or to adapt your existing on-premises or hybrid identity infrastructure for the requirements and capabilities of Microsoft 365 Enterprise. 
+Use the following steps to plan and deploy your new identity infrastructure in the cloud. You can also use these steps to adapt your existing on-premises or hybrid identity infrastructure to work with Microsoft 365 Enterprise. 
 
 - [Step 1: Plan for users and groups](identity-plan-users-groups.md)
 - [Step 2: Azure AD Connect](identity-azure-ad-connect.md)
