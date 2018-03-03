@@ -175,7 +175,7 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
-                                <a href="deploy-microsoft-365-enterprise.md" target="_blank">
+                                <a href="deploy-foundation-infrastructure.md" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
