@@ -25,12 +25,23 @@ There are multiple ways you can deploy Windows 10 Enterprise for your organizati
 
 | Deployment scenario | When to use it |
 |:--- |:--- |
-| [Using System Center Configuration Manager as an in-place upgrade](windows10-deploy-inplaceupgrade.md) | If you have existing computers running Windows 7, Windows 8, or Windows 8.1, we recommend this path if your organization is deploying Windows 10. This leverages the Windows installation program (Setup.exe) to perform an in-place upgrade, which automatically preserves all data, settings, applications, and drivers from the existing operating system version. This requires the least IT effort, because there is no need for any complex deployment infrastructure. |
-| [Using Windows AutoPilot](windows10-deploy-autopilot.md) | If you have new Windows 10 PCs, you can use Windows AutoPilot to customize the out-of-box-experience (OOBE) for your organization, and deploy a new system with apps and settings already configured. There are no images to deploy, no drivers to inject, and no infrastructure to manage. Users can go through the deployment process independently, without the need consult their IT administrator. |
+| [Using System Center Configuration Manager as an in-place upgrade](windows10-deploy-inplaceupgrade.md) | Select this option if you need to upgrade Windows 7, Windows 8, or Windows 8.1 computers to the <a href="https://aka.ms/windows-10-release-information" target="_blank">current version</a> of Windows 10 Enterprise and your computers are currently managed with <a href="https://aka.ms/introtosccm" target="_blank">System Center Configuration Manager (Current branch)</a>. Here, we'll walk you through deploying a simple task sequence to initiate the upgrade within the operating system. |
+| [Using Windows AutoPilot](windows10-deploy-autopilot.md) | Select this option if you are setting up new Windows computers that have Windows 10 Enterprise, version 1703 or later pre-installed. End users will initiate setup using your desired configuration by entering their work or school account credentials. |
 
-If these deployment scenarios do not fit the needs of your organization, you can learn about other scenarios and understand the capabilities and limitations of each in [Windows 10 deployment scenarios](https://docs.microsoft.com/windows/deployment/windows-10-deployment-scenarios).
+If these deployment scenarios do not fit the needs of your organization, you can learn about other scenarios and understand the capabilities and limitations of each in [Windows 10 deployment scenarios](https://docs.microsoft.com/windows/deployment/windows-10-deployment-scenarios). You can also <a href="https://aka.ms/planforwin10deployment" target="_blank">plan for Windows 10 deployment</a> on your own.
 
-## Security
+## Additional services and features
+Once you've added and verified your domain in Microsoft 365 and set up your users and Windows 10 devices, you can deploy additional services.
+
+### Windows Analytics
+Windows uses diagnostics data to provide rich, actionable information to help you gain deep insights into operational efficiency and the health of Windows 10 devices in your environment.
+* Upgrade Readiness - Upgrade Readiness will help you move to Windows 10 and stay current with new Windows 10 Feature Updates. 
+* Update Compliance - Update Compliance is targeted to the IT admin who wants to gain a holistic view of all their Windows 10 devices, without any additional infrastructure requirements.
+* Device Health - You can use Device Health to proactively detect and remediate end-user impacting issues.
+
+To learn more about Windows Analytics and get more info about the architecture, requirements, and how to get started, see [Enable Windows Analytics](windows10-enable-windows-analytics.md).
+
+### Windows security
 Windows 10 provides features to help protect against threats, help you secure your devices, and help with access control. With Windows 10, you get critical security features that protect your device right from the start. Microsoft 365 E3 adds security features such as Windows Hello for Business, Windows Defender Application Control, and Windows Information Protection. With Microsoft 365 E5, you get all the protection from Microsoft 365 E3 security plus cloud-based security features and Windows Defender Advanced Threat Protection. 
 
 To learn more about the security features that you get with Windows 10 Enterprise and get guidance on how you can deploy, manage, configure, and troubleshoot three key security features, see [Enable Windows 10 Enterprise security features](windows10-enable-security-features.md).

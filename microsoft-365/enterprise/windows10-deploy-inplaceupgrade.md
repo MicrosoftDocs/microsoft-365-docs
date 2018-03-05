@@ -21,6 +21,8 @@ ms.author: celested
 
 **Summary:**
 
+ If you have existing computers running Windows 7, Windows 8, or Windows 8.1, we recommend this path if your organization is deploying Windows 10. This leverages the Windows installation program (Setup.exe) to perform an in-place upgrade, which automatically preserves all data, settings, applications, and drivers from the existing operating system version. This requires the least IT effort, because there is no need for any complex deployment infrastructure.
+
 The simplest path to upgrade PCs currently running Windows 7, Windows 8, or Windows 8.1 to Windows 10 is through an in-place upgrade. You can use a System Center Configuration Manager (Configuration Manager) task sequence to completely automate the process. Follow this guide to configure and deploy a Windows 10 Enterprise image using Configuration Manager as an in-place upgrade.
 
 | Phases | Description |
@@ -106,7 +108,7 @@ Be sure to assess business critical apps and understand the impact of upgrading 
 
 See the following Upgrade Readiness resources to help with app inventory, driver compatibility issues, and usage information:
 * [Manage Windows Upgrades with Upgrade Readiness](https://go.microsoft.com/fwlink/?linkid=860255) - Learn about the tools to help you plan and manage the upgrade process end to end, which allow you to adopt new Windows releases more quickly.
-* [Configure Windows diagnostics data](https://go.microsoft.com/fwlink/?linkid=859970) - Find out about the importance of Windows diagnostic data and how Microsoft protects that data.
+* [Configure Windows diagnostic data](https://go.microsoft.com/fwlink/?linkid=859970) - Find out about the importance of Windows diagnostic data and how Microsoft protects that data.
 
 > [!NOTE]
 > Upgrade Readiness may not be able to assess compatibility for custom and line-of-business (LOB) apps in an organization.
@@ -168,7 +170,7 @@ Once you've completed the scenarios and requirements in [Step 1: Consideration p
 * [Identity](#step-2-identity)
 * [Client readiness](#step-3-client-readiness)
 * [System Center Configuration Manager](#step-4-system-center-configuration-manager)
-* [Diagnostics data](#step-5-diagnostics-data)
+* [Diagnostic data](#step-5-diagnostic-data)
 
 ### Step 1: Networking
 Ports to the client need to be opened for Office 365 ProPlus (for a Microsoft 365 powered device) and Configuration Manager. For more details about setting up your Microsoft 365 Enterprise networking infrastructure, see [Phase 1: Networking](networking-infrastructure.md).
@@ -206,10 +208,29 @@ Confirm that Windows 10 works with Office 365. Be sure you're using the latest O
 ### Step 4: System Center Configuration Manager
 See [System Center Configuration Manager](#system-center-configuration-manager).
 
-### Step 5: Diagnostics data
-Microsoft uses diagnostics data to help keep Windows devices secure by identifying malware trends and other threats and to help us improve the quality of Windows and Microsoft services. You must ensure that the diagnostics service is enabled at a minimum level of Basic on all endpoints in your organization. **By default, this service is enabled and set to the Enhanced level.** However, it’s good practice to check and ensure that they are receiving sensor data. Setting levels through policies overrides device-level settings. For more info, see:
-* [Ensure diagnostics data is enabled on all endpoints](https://go.microsoft.com/fwlink/?linkid=859970)
-* [Use Intune to set the diagnostics data level](https://go.microsoft.com/fwlink/?linkid=860460)
+### Step 5: Diagnostic data
+Microsoft uses diagnostic data to help keep Windows devices secure by identifying malware trends and other threats and to help us improve the quality of Windows and Microsoft services. You must ensure that the diagnostics service is enabled at a minimum level of Basic on all endpoints in your organization. **By default, this service is enabled and set to the Enhanced level.** However, it’s good practice to check and ensure that they are receiving sensor data. Setting levels through policies overrides device-level settings. 
+
+**Windows 10 operating system diagnostic data levels**
+
+You can configure your operating system diagnostic data settings using the management tools you’re already using, such as Group Policy, MDM, or Windows Provisioning. You can also manually change your settings using Registry Editor. Setting your diagnostic data levels through a management policy overrides any device level settings.
+
+Use the appropriate value in the table below when you configure the management policy.
+
+| Level | Data gathered | Value |
+|:--- |:--- |:--- |
+| Security | Security data only. | 0 |
+| Basic | Security data, and basic system and quality data. | 1 |
+| Enhanced | Security data, basic system and quality data, and enhanced insights and advanced reliability data. | 2 |
+| Full | Security data, basic system and quality data, enhanced insights and advanced reliability data, and full diagnostics data. | 3 |
+
+You can enable diagnostics data through these methods:
+* Microsoft Intune - If you plan to use Intune to manage your devices, you can create a configuration policy to enable diagnostic data by configuring the <a href="https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-system#system-allowtelemetry" target="blank">SystemAllowTelemetry</a> system policy. For more info on setting up configuration policies, see [Manage settings and features on your devices with Microsoft Intune policies](https://aka.ms/intuneconfigpolicies).
+* Registry Editor - You can use the Registry Editor to manually enable diagnostic data on each device in your organization, or write a script to edit the registry. If a management policy already exists, such as Group Policy or MDM, it will override this registry setting.
+* Group Policy - If you do not plan to enroll devices in Intune, use the following instructions to use a Group Policy object to set your organization’s diagnostic data level.
+* Command prompt - You can set Windows 10 diagnostics data and service to automatically start with the command prompt. This method is best if you are testing the service on only a few devices. Enabling the service to start automatically with this command will not configure the diagnostic data level. If you have not configured a diagnostic data level using management tools, the service will operate with the default Enhanced level.
+
+See [Configure Windowsdiagnostic data in your organization](https://docs.microsoft.com/en-us/windows/configuration/configure-windows-diagnostic-data-in-your-organization) to learn more about Windows diagnostic data and how you can enable it based on the method that you choose.
 
 ## Phase 3: Deployment phase
 When ready, complete these:
@@ -227,7 +248,7 @@ When ready, complete these:
 
     As part of zero touch installation, you are responsible for preparing the following:
     * Configuration Manager service accounts
-    * Active Directory pernmissions
+    * Active Directory permissions
     * Source folder structure
 
     Then, [integrate Configuration Manager with MDT](https://go.microsoft.com/fwlink/?linkid=860035).

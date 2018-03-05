@@ -20,6 +20,8 @@ ms.author: celested
 
 **Summary:**
 
+If you have new Windows 10 PCs, you can use Windows AutoPilot to customize the out-of-box-experience (OOBE) for your organization, and deploy a new system with apps and settings already configured. There are no images to deploy, no drivers to inject, and no infrastructure to manage. Users can go through the deployment process independently, without the need consult their IT administrator.
+
 You can set up and pre-configure new Windows 10 devices and get them ready for productive use using Windows AutoPilot. To learn more about Windows AutoPilot, including benefits and Windows AutoPilot scenarios, see [Overview of Windows AutoPilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot). When ready, follow this guide to start setting up new devices.
 
 ## Phase 1: Consideration phase
@@ -176,17 +178,34 @@ To prepare for Windows 10 deployment through Windows AutoPilot, make sure you me
 * Windows 10, version 1703 or later
 * Intune licenses other mobile device management (MDM) services to manage devices
 * Storage and bandwith requires minimal customization
-* Diagnostics data (set at Basic level or above) - For more info, see [2.4 Diagnostics data](#24-diagnostics-data).
+* Diagnostic data (set at Basic level or above) - For more info, see [2.4 Diagnostic data](#24-diagnostic-data).
 * Windows 10 Enterprise E3 or E5
 * Devices must be registered to your organization - For more info, see [Plan for network devices that connect to Office 365 services](http://go.microsoft.com/fwlink/?LinkId=733652).
 * Devices must be pre-installed with Windows 10, version 1703 or later
 * Devices must have access to the Internet
 * Azure AD Premium P1 or P2 is installed and configured and [automatic enrollment must be configured](https://go.microsoft.com/fwlink/?linkid=860700)
 
-### Step 4: Diagnostics data
-Microsoft uses diagnostics data to help keep Windows devices secure by identifying malware trends and other threats and to help us improve the quality of Windows and Microsoft services. You must ensure that the diagnostics service is enabled at a minimum level of Basic on all endpoints in you organization. **By default, this service is enabled and set to the Enhanced level.** However, it’s good practice to check and ensure that they are receiving sensor data. Setting levels through policies overrides device-level settings. For more info, see:
-* [Ensure diagnostics data is enabled on all endpoints](https://go.microsoft.com/fwlink/?linkid=859970)
-* [Use Intune to set the diagnostics data level](https://go.microsoft.com/fwlink/?linkid=860460)
+### Step 4: Diagnostic data
+Microsoft uses diagnostic data to help keep Windows devices secure by identifying malware trends and other threats and to help us improve the quality of Windows and Microsoft services. You must ensure that the diagnostics service is enabled at a minimum level of Basic on all endpoints in you organization. **By default, this service is enabled and set to the Enhanced level.** However, it’s good practice to check and ensure that they are receiving sensor data. Setting levels through policies overrides device-level settings. For more info, see:
+
+You can configure your operating system diagnostic data settings using the management tools you’re already using, such as Group Policy, MDM, or Windows Provisioning. You can also manually change your settings using Registry Editor. Setting your diagnostic data levels through a management policy overrides any device level settings.
+
+Use the appropriate value in the table below when you configure the management policy.
+
+| Level | Data gathered | Value |
+|:--- |:--- |:--- |
+| Security | Security data only. | 0 |
+| Basic | Security data, and basic system and quality data. | 1 |
+| Enhanced | Security data, basic system and quality data, and enhanced insights and advanced reliability data. | 2 |
+| Full | Security data, basic system and quality data, enhanced insights and advanced reliability data, and full diagnostics data. | 3 |
+
+You can enable diagnostics data through these methods:
+* Microsoft Intune - If you plan to use Intune to manage your devices, you can create a configuration policy to enable diagnostic data by configuring the <a href="https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-system#system-allowtelemetry" target="blank">SystemAllowTelemetry</a> system policy. For more info on setting up configuration policies, see [Manage settings and features on your devices with Microsoft Intune policies](https://aka.ms/intuneconfigpolicies).
+* Registry Editor - You can use the Registry Editor to manually enable diagnostic data on each device in your organization, or write a script to edit the registry. If a management policy already exists, such as Group Policy or MDM, it will override this registry setting.
+* Group Policy - If you do not plan to enroll devices in Intune, use the following instructions to use a Group Policy object to set your organization’s diagnostic data level.
+* Command prompt - You can set Windows 10 diagnostics data and service to automatically start with the command prompt. This method is best if you are testing the service on only a few devices. Enabling the service to start automatically with this command will not configure the diagnostic data level. If you have not configured a diagnostic data level using management tools, the service will operate with the default Enhanced level.
+
+See [Configure Windowsdiagnostic data in your organization](https://docs.microsoft.com/en-us/windows/configuration/configure-windows-diagnostic-data-in-your-organization) to learn more about Windows diagnostic data and how you can enable it based on the method that you choose.
 
 ## Phase 3: Deployment phase
 When ready, complete these:
