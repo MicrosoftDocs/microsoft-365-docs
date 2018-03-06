@@ -145,11 +145,13 @@ Follow these steps to create a deployment for the task sequence.
 2. On the **General** page, select the **Windows 10 Enterprise x64 Upgrade** collection, and then select **Next**.
 3. On the **Content** page, select **Next**.
 4. On the **Deployment Settings** page, select the following settings, and then select **Next**:
+
     > [!NOTE]
     > For this test deployment, we will set the purpose to Available, which requires user intervention to start the deployment. In a production environment, you may wish to automate the deployment using the Required purpose, which involves configuring additional options such as scheduling when the deployment is run. 
 
     - Action: Install
     - Purpose: Available
+    
 5. On the **Scheduling** page, accept the default settings, and then select **Next**.
 6. On the **User Experience** page, accept the default settings, and then select **Next**.
 7. On the **Alerts** page, accept the default settings, and then select **Next**.
@@ -163,7 +165,7 @@ Follow these steps to start the Windows 10 Upgrade task sequence on the device t
 3. When the task sequence begins, it automatically initiates the in-place upgrade process by invoking the Windows setup program (Setup.exe) with the necessary command-line parameters to perform an automated upgrade, which preserves all data, settings, apps, and drivers.
 4. After the task sequence completes successfully, the computer will be fully upgraded to Windows 10.
 
-## Step 6: Deploy additional Microsoft 365 services and features
+## Step 6: Deploy additional services and features
 Once you've added and verified your domain in Microsoft 365 and set up your users and Windows 10 devices, you can deploy additional services and features.
 
 ### Windows Analytics
