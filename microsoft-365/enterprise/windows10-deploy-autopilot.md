@@ -49,7 +49,7 @@ Microsoft uses diagnostic data to help keep Windows devices secure by identifyin
 
 **Windows 10 operating system diagnostic data levels**
 
-You can configure your operating system diagnostic data settings using the management tools you’re already using, such as Group Policy, MDM, or Windows Provisioning. You can also manually change your settings using Registry Editor. Setting your diagnostic data levels through a management policy overrides any device level settings.
+You can configure your operating system diagnostic data settings using the management tools you’re already using, such as MDM or Windows Provisioning. You can also manually change your settings using Registry Editor. Setting your diagnostic data levels through a management policy overrides any device level settings.
 
 Use the appropriate value in the table below when you configure the management policy.
 
