@@ -31,7 +31,7 @@ There are multiple ways you can deploy Windows 10 Enterprise for your organizati
 If these deployment scenarios do not fit the needs of your organization, you can learn about other scenarios and understand the capabilities and limitations of each in [Windows 10 deployment scenarios](https://docs.microsoft.com/windows/deployment/windows-10-deployment-scenarios). You can also <a href="https://aka.ms/planforwin10deployment" target="_blank">plan for Windows 10 deployment</a> on your own.
 
 ## Additional services and features
-Once you've added and verified your domain in Microsoft 365 and set up your users and Windows 10 devices, you can deploy additional services.
+Once you've added and verified your domain in Microsoft 365 and set up your users and Windows 10 devices, you can deploy additional services and features.
 
 ### Windows Analytics
 Windows uses diagnostics data to provide rich, actionable information to help you gain deep insights into operational efficiency and the health of Windows 10 devices in your environment.

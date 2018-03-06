@@ -21,12 +21,179 @@ ms.author: celested
 
 **Summary:**
 
- If you have existing computers running Windows 7, Windows 8, or Windows 8.1, we recommend this path if your organization is deploying Windows 10. This leverages the Windows installation program (Setup.exe) to perform an in-place upgrade, which automatically preserves all data, settings, applications, and drivers from the existing operating system version. This requires the least IT effort, because there is no need for any complex deployment infrastructure.
+The simplest path to upgrade PCs currently running Windows 7, Windows 8, or Windows 8.1 to Windows 10 is through an in-place upgrade. You can use a System Center Configuration Manager (Configuration Manager) task sequence to completely automate the process. 
 
-The simplest path to upgrade PCs currently running Windows 7, Windows 8, or Windows 8.1 to Windows 10 is through an in-place upgrade. You can use a System Center Configuration Manager (Configuration Manager) task sequence to completely automate the process. Follow this guide to configure and deploy a Windows 10 Enterprise image using Configuration Manager as an in-place upgrade.
+If you have existing computers running Windows 7, Windows 8, or Windows 8.1, we recommend this path if your organization is deploying Windows 10. This leverages the Windows installation program (Setup.exe) to perform an in-place upgrade, which automatically preserves all data, settings, applications, and drivers from the existing operating system version. This requires the least IT effort, because there is no need for any complex deployment infrastructure.
+
+Follow this guide to configure and deploy a Windows 10 Enterprise image using Configuration Manager as an in-place upgrade.
+
+## Before you start
+Before upgrading your devices to Windows 10, note that this guidance makes the following assumptions:
+
+* Your domains are added and verified
+
+    With Microsoft 365, you get a default domain name that ends in onmicrosoft.com (for example, contoso.onmicrosoft.com). Most organizations prefer to use one or more of the domains they own so their email addresses end in their own domain name (like username@contoso.com). To use your own domain, you need to add it to Microsoft 365 and verify that you own it. We recommend that you add and verify your domains now so they're ready to go whenever you set up Microsoft 365 services, like email and Skype for Business.
+
+* You don't need to add users at this time
+
+    To use Microsoft 365 services or install Microsoft 365 products, users need accounts in Microsoft 365 and they need product licenses. How you add users to Microsoft 365 depends on the number of users and whether you currently have Active Directory on-premises. If you don’t have Active Directory (or you have Active Directory but don’t want to sync it to Microsoft 365), you can add users directly to Microsoft 365 and assign licenses, either individually or in bulk. 
+
+    If you have Active Directory on-premises, you can sync it with Microsoft 365 to create user accounts in Azure AD, the cloud directory used by Microsoft 365. With this method, you can create accounts for users and for security groups you use to manage permissions to resources (like SharePoint Online site collections or documents). Syncing your Active Directory with Microsoft 365 won’t assign licenses to the users, so we’ll give you steps for assigning licenses.
+
+* You don't need to license users at this time
+
+    Before users can use Microsoft 365 services or install software from the Microsoft 365 portal, they need product licenses. As a global or user management admin, you can directly assign products licenses in Microsoft 365 either individually or in bulk. You can also use group-based licensing to automatically assign licenses when users are added to a particular group.  Select the licensing option you would like to use below.
+
+* You are installing Office separately
+
+
+## Step 1: Set Windows diagnotics data level
+Microsoft uses diagnostic data to help keep Windows devices secure by identifying malware trends and other threats and to help us improve the quality of Windows and Microsoft services. You must ensure that the diagnostics service is enabled at a minimum level of Basic on all endpoints in your organization. **By default, this service is enabled and set to the Enhanced level.** However, it’s good practice to check and ensure that they are receiving sensor data. Setting levels through policies overrides device-level settings. 
+
+**Windows 10 operating system diagnostic data levels**
+
+You can configure your operating system diagnostic data settings using the management tools you’re already using, such as Group Policy, MDM, or Windows Provisioning. You can also manually change your settings using Registry Editor. Setting your diagnostic data levels through a management policy overrides any device level settings.
+
+Use the appropriate value in the table below when you configure the management policy.
+
+| Level | Data gathered | Value |
+|:--- |:--- |:--- |
+| Security | Security data only. | 0 |
+| Basic | Security data, and basic system and quality data. | 1 |
+| Enhanced | Security data, basic system and quality data, and enhanced insights and advanced reliability data. | 2 |
+| Full | Security data, basic system and quality data, enhanced insights and advanced reliability data, and full diagnostics data. | 3 |
+
+You can enable diagnostics data through any of these methods:
+* Microsoft Intune - If you plan to use Intune to manage your devices, you can create a configuration policy to enable diagnostic data by configuring the <a href="https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-system#system-allowtelemetry" target="blank">SystemAllowTelemetry</a> system policy. For more info on setting up configuration policies, see [Manage settings and features on your devices with Microsoft Intune policies](https://aka.ms/intuneconfigpolicies).
+* Registry Editor - You can use the Registry Editor to manually enable diagnostic data on each device in your organization, or write a script to edit the registry. If a management policy already exists, such as Group Policy or MDM, it will override this registry setting.
+* Group Policy - If you do not plan to enroll devices in Intune, you can use a Group Policy object to set your organization’s diagnostic data level.
+* Command prompt - You can set Windows 10 diagnostics data and service to automatically start with the command prompt. This method is best if you are testing the service on only a few devices. Enabling the service to start automatically with this command will not configure the diagnostic data level. If you have not configured a diagnostic data level using management tools, the service will operate with the default Enhanced level.
+
+See [Configure Windows diagnostic data in your organization](https://docs.microsoft.com/en-us/windows/configuration/configure-windows-diagnostic-data-in-your-organization) to learn more about Windows diagnostic data and how you can enable it based on the method that you choose.
+
+## Step 2: Verify readiness to upgrade Windows
+Follow the guide to use System Center Configuration Manager (Current Branch) to upgrade Windows 7 or later operating system to Windows 10. As with any high-risk deployment, we recommend backing up user data before proceeding. OneDrive cloud storage is ready to use for licensed Microsoft 365 users and can be used to securely store their files. For more info, see [OneDrive quick start guide](https://aka.ms/ODfBquickstartguide).
+
+or a list of Configuration Manager versions and the corresponding Windows 10 client versions that are supported, see [Support for Windows 10 for System Center Configuration Manager](https://aka.ms/supportforwin10sccm).
+
+**To verify readiness to upgrade Windows**
+
+Review these requirements before starting your Windows 10 deployment.
+- **Windows editions eligible for upgrade** - Your devices must be running editions of Windows 7, 8, or 8.1 that are eligible for upgrade to Windows 10 Enterprise. For a list of supported editions, see [Windows 10 upgrade paths](https://aka.ms/win10upgradepaths). 
+- **Supported devices** - Most computers that are compatible with Windows 8.1 will be compatible with Windows 10. You may need to install updated drivers in Windows 10 for your devices to properly function. See [Windows 10 specifications](https://aka.ms/windows10specifications) for more info.
+- **Deployment preparation** - Make sure you have the following before you start configuring the deployment:
+    - Windows 10 installation media - The installation media must be located on a separate drive, with the ISO already mounted. You can obtain the ISO from [MSDN Subscriber Downloads](https://aka.ms/msdn-subscriber-downloads) or from the [Volume Licensing Service Center](https://aka.ms/mvlsc).
+    - Backups of user data - Although user data will be migrated in the upgrade, best practice is to configure a backup scenario. For example, export all user data to a OneDrive account, BitLocker To Go-encrypted USB flash drive, or network file server. For more information, see [Back up or transfer data in Windows](https://aka.ms/backuptransferdatawindows).
+- **Environment preparation** - You will use an existing Configuration Manager server structure to prepare for operating system deployment. In addition to the base setup, the following configurations should be made in the Configuration Manager environment:
+    1. [Extend the Active Directory Schema](https://aka.ms/extendadschema) and [create a System Management container](https://aka.ms/createsysmancontainer).
+    2. Enable Active Directory Forest Discovery and Active Directory System Discovery. For more info, see [Configure discovery methods for System Center Configuration Manager](https://aka.ms/configurediscoverymethods).
+    3. Create IP range boundaries and boundary group for content and site assignment. For more info, see [Define site boundaries and boundary groups for System Center Configuration Manager](https://aka.ms/definesiteboundaries).
+    4. Add and configure the Configuration Manager reporting services point role. For more info, see [Configuring Reporting in Configuration Manager](https://aka.ms/configurereporting).
+    5. Create a file system folder structure for packages.
+    6. Create a Configuration Manager console folder structure for packages.
+    7. Install System Center Configuration Manager (Current Branch) updates and any additional Windows 10 prerequisites.
+
+## Step 3: Add a Windows 10 OS image using Configuration Manager
+Now you need to create an operating system upgrade package that contains the full Windows 10 installation media. In this guidance, we will be upgrading to Windows 10 Enterprise x64.
+
+**To add a Windows 10 OS image using Configuration Manager**
+
+1. Using the Configuration Manager console, in the **Software Library** workspace, right-click the **Operating System Upgrade Packages** node, and then select **Add Operating System Upgrade Package**.
+2. On the **Data Source** page, specify the UNC path to the Windows 10 Enterprise x64 media, and then select **Next**.
+3. On the **General** page, specify **Windows 10 Enterprise x64 Upgrade**, and then select **Next**. 
+4. On the **Summary** page, select **Next**, and then select **Close**. 
+5. Right-click the created **Windows 10 Enterprise x64 Update** package, and then select **Distribute Content**. 
+6. Choose your distribution point.
+
+## Step 4: Configure deployment settings
+Here, you'll configure the Configuration Manager task sequence that contains the settings for the Windows 10 upgrade. You'll then identify the devices to upgrade, and then deploy the task sequence to those devices.
+
+### Create a task sequence
+To create an upgrade task sequence, perform the following steps:
+  
+1. In the Configuration Manager console, in the **Software Library** workspace, expand **Operating Systems**. 
+2. Right-click the **Task Sequences** node, and then select **Create Task Sequence**.
+3. On the **Create a new task sequence** page, select **Upgrade an operating system from upgrade package**, and then select **Next**.
+4. On the **Task Sequence Information** page, specify **Windows 10 Enterprise x64 Upgrade**, and then select **Next**.
+5. On the **Upgrade the Windows operating system** page, select **Browse** and choose the **Windows 10 Enterprise x64 Upgrade operating system upgrade package**, select **OK**, and then select **Next**.
+6. Continue through the remaining wizard pages, and then select **Close**.
+
+### Create a device collection
+After you create the upgrade task sequence, you need to create a collection that contains the devices you will upgrade.
+
+> [!NOTE]
+> Use the following settings to test the deployment on a single device. You can use different membership rules to include groups of devices when you are ready. For more info, see [How to create collections in System Center Configuration Manager](https://aka.ms/sccm-create-collections).
+
+1. In the Configuration Manager console, in the **Assets and Compliance** workspace, right-click **Device Collections**, and then select **Create Device Collection**. 
+2. In the Create Device Collection wizard, on the **General** page, enter the following settings and then select **Next**:
+    - Name: Windows 10 Enterprise x64 Upgrade
+    - Limiting Collection: All Systems
+3. On the **Membership Rules** page, select **Add Rule > Direct rule** to launch the Create Direct Membership Rule Wizard.
+4. On the **Welcome** page of the Create Direct Membership Rule Wizard, select **Next**.
+5. On the **Search for Resources** page, enter the following settings, replacing the placeholder **Value** text with the name of the device you are upgrading: 
+    - Resource Class: System Resource
+    - Attribute Name: Name
+    - Value: *PC0003*
+6. On the **Select Resources** page, select your device, and select **Next**.
+7. Complete the Create Direct Membership Rule wizard and the Create Device Collection Wizard.  
+8. Review the Windows 10 Enterprise x64 Upgrade collection. Do not continue until you see the machines you added in the collection.
+
+### Create an operating system deployment
+Follow these steps to create a deployment for the task sequence.
+
+1. In the Configuration Manager console, in the **Software Library** workspace, right-click the task sequence you created in a previous step, and then select **Deploy**.
+2. On the **General** page, select the **Windows 10 Enterprise x64 Upgrade** collection, and then select **Next**.
+3. On the **Content** page, select **Next**.
+4. On the **Deployment Settings** page, select the following settings, and then select **Next**:
+    > [!NOTE]
+    > For this test deployment, we will set the purpose to Available, which requires user intervention to start the deployment. In a production environment, you may wish to automate the deployment using the Required purpose, which involves configuring additional options such as scheduling when the deployment is run. 
+
+    - Action: Install
+    - Purpose: Available
+5. On the **Scheduling** page, accept the default settings, and then select **Next**.
+6. On the **User Experience** page, accept the default settings, and then select **Next**.
+7. On the **Alerts** page, accept the default settings, and then select **Next**.
+8. On the **Summary** page, select **Next**, and then select **Close**.
+
+## Step 5: Start the Windows 10 upgrade task sequence
+Follow these steps to start the Windows 10 Upgrade task sequence on the device that you are upgrading.
+ 
+1. Log on to the Windows computer and start the **Software Center**.
+2. Select the task sequence that you created in a previous step, and then select **Install**.
+3. When the task sequence begins, it automatically initiates the in-place upgrade process by invoking the Windows setup program (Setup.exe) with the necessary command-line parameters to perform an automated upgrade, which preserves all data, settings, apps, and drivers.
+4. After the task sequence completes successfully, the computer will be fully upgraded to Windows 10.
+
+## Step 6: Deploy additional Microsoft 365 services and features
+Once you've added and verified your domain in Microsoft 365 and set up your users and Windows 10 devices, you can deploy additional services and features.
+
+### Windows Analytics
+Windows uses diagnostics data to provide rich, actionable information to help you gain deep insights into operational efficiency and the health of Windows 10 devices in your environment.
+* Upgrade Readiness - Upgrade Readiness will help you move to Windows 10 and stay current with new Windows 10 Feature Updates. 
+* Update Compliance - Update Compliance is targeted to the IT admin who wants to gain a holistic view of all their Windows 10 devices, without any additional infrastructure requirements.
+* Device Health - You can use Device Health to proactively detect and remediate end-user impacting issues.
+
+To learn more about Windows Analytics and get more info about the architecture, requirements, and how to get started, see [Enable Windows Analytics](windows10-enable-windows-analytics.md).
+
+### Windows security
+Windows 10 provides features to help protect against threats, help you secure your devices, and help with access control. With Windows 10, you get critical security features that protect your device right from the start. Microsoft 365 E3 adds security features such as Windows Hello for Business, Windows Defender Application Control, and Windows Information Protection. With Microsoft 365 E5, you get all the protection from Microsoft 365 E3 security plus cloud-based security features and Windows Defender Advanced Threat Protection. 
+
+To learn more about the security features that you get with Windows 10 Enterprise and get guidance on how you can deploy, manage, configure, and troubleshoot three key security features, see [Enable Windows 10 Enterprise security features](windows10-enable-security-features.md).
+
+## Troubleshooting
+If you experience issues when using Windows 10 in an enterprise environment, you can consult [top Microsoft Support solutions for the most common issues](https://docs.microsoft.com/en-us/windows/client-management/windows-10-support-solutions). These resources include KB articles, updates, and library articles.
+
+## Learn more
+[Microsoft 365 Enterprise product page](https://www.microsoft.com/microsoft-365/enterprise)</br>
+[Windows 10](https://docs.microsoft.com/windows/windows-10)</br>
+[Deploy and update Windows 10](https://docs.microsoft.com/windows/deployment/)
+
+<!--
 
 | Phases | Description |
 |:--- |:--- |
+| [Phase 1: Consideration phase](#phase-1-consideration-phase) | TBD |
+| [Phase 2: Testing phase](#phase-2-testing-phase) | TBD |
+| [Phase 3: Deployment phase](#phase-3-deployment-phase) | TBD |
 
 ## Phase 1: Consideration phase
 Before upgrading an OS in an enterprise environment, take the following technical aspects into account:
@@ -230,7 +397,7 @@ You can enable diagnostics data through these methods:
 * Group Policy - If you do not plan to enroll devices in Intune, you can use a Group Policy object to set your organization’s diagnostic data level.
 * Command prompt - You can set Windows 10 diagnostics data and service to automatically start with the command prompt. This method is best if you are testing the service on only a few devices. Enabling the service to start automatically with this command will not configure the diagnostic data level. If you have not configured a diagnostic data level using management tools, the service will operate with the default Enhanced level.
 
-See [Configure Windowsdiagnostic data in your organization](https://docs.microsoft.com/en-us/windows/configuration/configure-windows-diagnostic-data-in-your-organization) to learn more about Windows diagnostic data and how you can enable it based on the method that you choose.
+See [Configure Windows diagnostic data in your organization](https://docs.microsoft.com/en-us/windows/configuration/configure-windows-diagnostic-data-in-your-organization) to learn more about Windows diagnostic data and how you can enable it based on the method that you choose.
 
 ## Phase 3: Deployment phase
 When ready, complete these:
@@ -315,11 +482,4 @@ When ready, complete these:
 ### Step 2: Windows Defender Antivirus
 See [Enable Windows 10 Enterprise security features > Windows Defender Antivirus](windows10-enable-security-features.md#windows-defender-antivirus)
 
-## Troubleshooting
-If you experience issues when using Windows 10 in an enterprise environment, you can consult [top Microsoft Support solutions for the most common issues](https://docs.microsoft.com/en-us/windows/client-management/windows-10-support-solutions). These resources include KB articles, updates, and library articles.
-
-## Learn more
-[Microsoft 365 Enterprise product page](https://www.microsoft.com/microsoft-365/enterprise)</br>
-[Windows 10](https://docs.microsoft.com/windows/windows-10)</br>
-[Deploy and update Windows 10](https://docs.microsoft.com/windows/deployment/)
-
+-->
