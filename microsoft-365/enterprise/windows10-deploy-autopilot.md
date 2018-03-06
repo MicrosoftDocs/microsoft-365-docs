@@ -20,8 +20,148 @@ ms.author: celested
 
 **Summary:**
 
+If you have new Windows 10 PCs, you can use Windows AutoPilot to customize the out-of-box-experience (OOBE) for your organization, and deploy a new system with apps and settings already configured. There are no images to deploy, no drivers to inject, and no infrastructure to manage. Users can go through the deployment process independently, without the need consult their IT administrator.
+
 You can set up and pre-configure new Windows 10 devices and get them ready for productive use using Windows AutoPilot. To learn more about Windows AutoPilot, including benefits and Windows AutoPilot scenarios, see [Overview of Windows AutoPilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot). When ready, follow this guide to start setting up new devices.
 
+## Before you start
+Before upgrading your devices to Windows 10, note that this guidance makes the following assumptions:
+
+* Your domains are added and verified
+
+    With Microsoft 365, you get a default domain name that ends in onmicrosoft.com (for example, contoso.onmicrosoft.com). Most organizations prefer to use one or more of the domains they own so their email addresses end in their own domain name (like username@contoso.com). To use your own domain, you need to add it to Microsoft 365 and verify that you own it. We recommend that you add and verify your domains now so they're ready to go whenever you set up Microsoft 365 services, like email and Skype for Business.
+
+* You don't need to add users at this time
+
+    To use Microsoft 365 services or install Microsoft 365 products, users need accounts in Microsoft 365 and they need product licenses. How you add users to Microsoft 365 depends on the number of users and whether you currently have Active Directory on-premises. If you don’t have Active Directory (or you have Active Directory but don’t want to sync it to Microsoft 365), you can add users directly to Microsoft 365 and assign licenses, either individually or in bulk. 
+
+    If you have Active Directory on-premises, you can sync it with Microsoft 365 to create user accounts in Azure AD, the cloud directory used by Microsoft 365. With this method, you can create accounts for users and for security groups you use to manage permissions to resources (like SharePoint Online site collections or documents). Syncing your Active Directory with Microsoft 365 won’t assign licenses to the users, so we’ll give you steps for assigning licenses.
+
+* You don't need to license users at this time
+
+    Before users can use Microsoft 365 services or install software from the Microsoft 365 portal, they need product licenses. As a global or user management admin, you can directly assign products licenses in Microsoft 365 either individually or in bulk. You can also use group-based licensing to automatically assign licenses when users are added to a particular group.  Select the licensing option you would like to use below.
+
+* You are installing Office separately
+
+
+## Step 1: Set Windows diagnotics data level
+Microsoft uses diagnostic data to help keep Windows devices secure by identifying malware trends and other threats and to help us improve the quality of Windows and Microsoft services. You must ensure that the diagnostics service is enabled at a minimum level of Basic on all endpoints in your organization. **By default, this service is enabled and set to the Enhanced level.** However, it’s good practice to check and ensure that they are receiving sensor data. Setting levels through policies overrides device-level settings. 
+
+**Windows 10 operating system diagnostic data levels**
+
+You can configure your operating system diagnostic data settings using the management tools you’re already using, such as MDM or Windows Provisioning. You can also manually change your settings using Registry Editor. Setting your diagnostic data levels through a management policy overrides any device level settings.
+
+Use the appropriate value in the table below when you configure the management policy.
+
+| Level | Data gathered | Value |
+|:--- |:--- |:--- |
+| Security | Security data only. | 0 |
+| Basic | Security data, and basic system and quality data. | 1 |
+| Enhanced | Security data, basic system and quality data, and enhanced insights and advanced reliability data. | 2 |
+| Full | Security data, basic system and quality data, enhanced insights and advanced reliability data, and full diagnostics data. | 3 |
+
+You can enable diagnostics data through any of these methods:
+* **Microsoft Intune** - If you plan to use Intune to manage your devices, you can create a configuration policy to enable diagnostic data by configuring the <a href="https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-system#system-allowtelemetry" target="blank">SystemAllowTelemetry</a> system policy. For more info on setting up configuration policies, see [Manage settings and features on your devices with Microsoft Intune policies](https://aka.ms/intuneconfigpolicies).
+* **Registry Editor** - You can use the Registry Editor to manually enable diagnostic data on each device in your organization, or write a script to edit the registry. If a management policy already exists, such as Group Policy or MDM, it will override this registry setting.
+* **Command prompt** - You can set Windows 10 diagnostics data and service to automatically start with the command prompt. This method is best if you are testing the service on only a few devices. Enabling the service to start automatically with this command will not configure the diagnostic data level. If you have not configured a diagnostic data level using management tools, the service will operate with the default Enhanced level.
+
+See [Configure Windows diagnostic data in your organization](https://docs.microsoft.com/en-us/windows/configuration/configure-windows-diagnostic-data-in-your-organization) to learn more about Windows diagnostic data and how you can enable it based on the method that you choose.
+
+## Step 2: Start Windows AutoPilot deployment
+See [Overview of Windows AutoPilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot) to:
+
+1. Learn about and complete the prerequisites for Windows AutoPilot deployment. The prerequisites include:
+    - **Device registration and OOBE customization**
+
+        To register devices, you need to acquire their hardware ID and register it. We are actively working with various hardware vendors to enable them to provide the required information to you, or upload it on your behalf. You also have the option to capture this information by yourself using a PowerShell script that generates a .csv file with the device's hardware ID.
+
+        Once devices are registered, there are OOBE customization options that you can configure including skipping privacy settings and EULA.
+
+    - **Company company branding for OOBE**
+
+        This allows you to add company branding to appear during device OOBE.
+
+    - **MDM auto-enrollment in Microsoft Intune**
+        
+        Automatic enrollment lets users enroll their Windows 10 devices in Intune for device management when they connect their devices to Azure AD. To enroll, users add their work account to their personally-owned devices or join corporate-owned devices to Azure AD. In the background, the device is also enrolled for management with Intune.
+
+    - **Network connectivity to cloud services used by Windows AutoPilot**
+
+        The Windows AutoPilot Deployment Program uses a number of cloud services to get your devices to a productive state and these services must be accessible from devices registered as Windows AutoPilot devices. 
+
+    - **Devices must be pre-installed with Windows 10, version 1703 or later**
+
+2. Learn about and select the Windows AutoPilot Deployment Program for your organization. You can select from these deployment programs:
+    - **Microsoft Store for Business**
+    - **Microsoft Intune**
+    - **Partner Center**
+
+## Step 3: Set up a Windows 10 device for Microsoft 365
+Before you can set up Windows devices for Microsoft 365 users, make sure all the Windows devices are running Windows 10, version 1703 (Creators Update) or later.
+
+After all Windows devices in your organization have either been upgraded to Windows 10 Creators Update or are already running Windows 10 Creators Update, you can join these devices to your organization’s Azure Active Directory.
+
+### Set up a brand new or newly upgraded Windows 10 device
+Follow these steps to set up a device using the Windows 10 OOBE on a brand new device running Windows 10 Creators Update (or later) or on a device that was upgrade to Windows 10 Creators Update (or later) but has not gone through out-of-box setup.
+
+1. If you don't have a wireless network configured, make sure you connect the device to the internet through a wired or Ethernet connection.
+2. Go through the Windows device setup experience. On a new or reset device, the setup experience starts with the **Let's start with region. Is this right?** screen.
+3. Go through Windows 10 device setup until you get to the **How would you like to set up?** page. Here, select **Set up for an organization**.
+4. Sign in using the Microsoft 365 user's account and password. Depending on the user password setting, you may be prompted to update the password. 
+5. Finish Windows 10 device setup.
+
+After you’re done, the user will be connected to your organization’s Azure AD.
+
+### Set up a device that has already completed out-of-box setup
+If your device has Windows 10 Creators Update (or later) and has already gone through the out-of-box setup, follow these steps.
+
+1. On your user's Windows PC that is running Windows 10, version 1703 (Creators Update), select the Windows logo, and then select the **Settings** icon.
+2. In **Settings**, go to **Accounts**.
+3. On the **Your info** page, select **Access work or school > Connect**.
+4. On the **Set up a work or school account** dialog, under **Alternate actions**, select **Join this device to Azure Active Directory**.
+5. On the **Let's get you signed in** page, enter your work or school account, and select **Next**.
+6. On the **Enter password** page, enter your password, and select **Sign in**.
+7. On the **Make sure this is your organization** page, verify that the information is correct, and select **Join**.
+8. On the **You're all set!** page, select **Done**.
+
+After you're done, the user will be connected to your organization's Azure AD.
+
+## Verify the device is connected to Azure AD
+Follow these steps to verify the device’s sync status with Azure AD, and then start using your Microsoft 365 account on the device. 
+
+1. Open **Settings**.
+2. On the **Access work or school** page, select the **Connected to <organization name>** area to expose the buttons **Info** and **Disconnect**.
+3. Select **Info** to get your synchronization status.
+4. On the **Sync status** page, select **Sync** to get the latest mobile device management policies onto the PC.
+5. To start using the Microsoft 365 account, go to the Windows **Start** button, right-click your current account picture and then select **Switch** account.
+6. Sign in by using your organization email and password.
+
+## Step 4: Deploy additional services and features
+Once you've added and verified your domain in Microsoft 365 and set up your users and Windows 10 devices, you can deploy additional services and features.
+
+### Windows Analytics
+Windows uses diagnostics data to provide rich, actionable information to help you gain deep insights into operational efficiency and the health of Windows 10 devices in your environment.
+* Upgrade Readiness - Upgrade Readiness will help you move to Windows 10 and stay current with new Windows 10 Feature Updates. 
+* Update Compliance - Update Compliance is targeted to the IT admin who wants to gain a holistic view of all their Windows 10 devices, without any additional infrastructure requirements.
+* Device Health - You can use Device Health to proactively detect and remediate end-user impacting issues.
+
+To learn more about Windows Analytics and get more info about the architecture, requirements, and how to get started, see [Enable Windows Analytics](windows10-enable-windows-analytics.md).
+
+### Windows security
+Windows 10 provides features to help protect against threats, help you secure your devices, and help with access control. With Windows 10, you get critical security features that protect your device right from the start. Microsoft 365 E3 adds security features such as Windows Hello for Business, Windows Defender Application Control, and Windows Information Protection. With Microsoft 365 E5, you get all the protection from Microsoft 365 E3 security plus cloud-based security features and Windows Defender Advanced Threat Protection. 
+
+To learn more about the security features that you get with Windows 10 Enterprise and get guidance on how you can deploy, manage, configure, and troubleshoot three key security features, see [Enable Windows 10 Enterprise security features](windows10-enable-security-features.md).
+
+## Troubleshooting
+If you experience issues when using Windows 10 in an enterprise environment, you can consult [top Microsoft Support solutions for the most common issues](https://docs.microsoft.com/en-us/windows/client-management/windows-10-support-solutions). These resources include KB articles, updates, and library articles.
+
+## Learn more
+[Microsoft 365 Enterprise product page](https://www.microsoft.com/microsoft-365/enterprise)</br>
+[Windows 10](https://docs.microsoft.com/windows/windows-10)</br>
+[Deploy and update Windows 10](https://docs.microsoft.com/windows/deployment/)
+
+
+<!--
 ## Phase 1: Consideration phase
 This guide makes several assumptions regarding essential, business-critical considerations before upgrading an OS in an enterprise environment.
 
@@ -176,17 +316,34 @@ To prepare for Windows 10 deployment through Windows AutoPilot, make sure you me
 * Windows 10, version 1703 or later
 * Intune licenses other mobile device management (MDM) services to manage devices
 * Storage and bandwith requires minimal customization
-* Diagnostics data (set at Basic level or above) - For more info, see [2.4 Diagnostics data](#24-diagnostics-data).
+* Diagnostic data (set at Basic level or above) - For more info, see [2.4 Diagnostic data](#24-diagnostic-data).
 * Windows 10 Enterprise E3 or E5
 * Devices must be registered to your organization - For more info, see [Plan for network devices that connect to Office 365 services](http://go.microsoft.com/fwlink/?LinkId=733652).
 * Devices must be pre-installed with Windows 10, version 1703 or later
 * Devices must have access to the Internet
 * Azure AD Premium P1 or P2 is installed and configured and [automatic enrollment must be configured](https://go.microsoft.com/fwlink/?linkid=860700)
 
-### Step 4: Diagnostics data
-Microsoft uses diagnostics data to help keep Windows devices secure by identifying malware trends and other threats and to help us improve the quality of Windows and Microsoft services. You must ensure that the diagnostics service is enabled at a minimum level of Basic on all endpoints in you organization. **By default, this service is enabled and set to the Enhanced level.** However, it’s good practice to check and ensure that they are receiving sensor data. Setting levels through policies overrides device-level settings. For more info, see:
-* [Ensure diagnostics data is enabled on all endpoints](https://go.microsoft.com/fwlink/?linkid=859970)
-* [Use Intune to set the diagnostics data level](https://go.microsoft.com/fwlink/?linkid=860460)
+### Step 4: Diagnostic data
+Microsoft uses diagnostic data to help keep Windows devices secure by identifying malware trends and other threats and to help us improve the quality of Windows and Microsoft services. You must ensure that the diagnostics service is enabled at a minimum level of Basic on all endpoints in you organization. **By default, this service is enabled and set to the Enhanced level.** However, it’s good practice to check and ensure that they are receiving sensor data. Setting levels through policies overrides device-level settings. For more info, see:
+
+You can configure your operating system diagnostic data settings using the management tools you’re already using, such as Group Policy, MDM, or Windows Provisioning. You can also manually change your settings using Registry Editor. Setting your diagnostic data levels through a management policy overrides any device level settings.
+
+Use the appropriate value in the table below when you configure the management policy.
+
+| Level | Data gathered | Value |
+|:--- |:--- |:--- |
+| Security | Security data only. | 0 |
+| Basic | Security data, and basic system and quality data. | 1 |
+| Enhanced | Security data, basic system and quality data, and enhanced insights and advanced reliability data. | 2 |
+| Full | Security data, basic system and quality data, enhanced insights and advanced reliability data, and full diagnostics data. | 3 |
+
+You can enable diagnostics data through these methods:
+* Microsoft Intune - If you plan to use Intune to manage your devices, you can create a configuration policy to enable diagnostic data by configuring the <a href="https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-system#system-allowtelemetry" target="blank">SystemAllowTelemetry</a> system policy. For more info on setting up configuration policies, see [Manage settings and features on your devices with Microsoft Intune policies](https://aka.ms/intuneconfigpolicies).
+* Registry Editor - You can use the Registry Editor to manually enable diagnostic data on each device in your organization, or write a script to edit the registry. If a management policy already exists, such as Group Policy or MDM, it will override this registry setting.
+* Group Policy - If you do not plan to enroll devices in Intune, you can use a Group Policy object to set your organization’s diagnostic data level.
+* Command prompt - You can set Windows 10 diagnostics data and service to automatically start with the command prompt. This method is best if you are testing the service on only a few devices. Enabling the service to start automatically with this command will not configure the diagnostic data level. If you have not configured a diagnostic data level using management tools, the service will operate with the default Enhanced level.
+
+See [Configure Windowsdiagnostic data in your organization](https://docs.microsoft.com/en-us/windows/configuration/configure-windows-diagnostic-data-in-your-organization) to learn more about Windows diagnostic data and how you can enable it based on the method that you choose.
 
 ## Phase 3: Deployment phase
 When ready, complete these:
@@ -246,11 +403,6 @@ When ready, complete these:
 
     For more info, see [Manage AutoPilot deployment profiles using Microsoft Store for Business](https://go.microsoft.com/fwlink/?linkid=852441).
 
-## Troubleshooting
-If you experience issues when using Windows 10 in an enterprise environment, you can consult [top Microsoft Support solutions for the most common issues](https://docs.microsoft.com/en-us/windows/client-management/windows-10-support-solutions). These resources include KB articles, updates, and library articles.
+-->
 
-## Learn more
-[Microsoft 365 Enterprise product page](https://www.microsoft.com/microsoft-365/enterprise)</br>
-[Windows 10](https://docs.microsoft.com/windows/windows-10)</br>
-[Deploy and update Windows 10](https://docs.microsoft.com/windows/deployment/)
 
