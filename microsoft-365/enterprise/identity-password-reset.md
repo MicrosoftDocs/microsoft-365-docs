@@ -22,9 +22,7 @@ In Step 10, you enable self-service password reset (SSPR) to allow users to rese
 
 See the [instructions to enable password reset](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-best-practices).
 
-The result of this step is that users can reset or unlock their passwords and accounts.
-
-As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria.md#crit-identity-step10) corresponding to this step.
+As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria.md#crit-identity-step10) for this step.
 
 ## Next step
 
