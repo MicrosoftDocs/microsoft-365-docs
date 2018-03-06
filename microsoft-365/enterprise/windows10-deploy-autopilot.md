@@ -91,7 +91,7 @@ See [Overview of Windows AutoPilot](https://docs.microsoft.com/windows/deploymen
 
     - **Devices must be pre-installed with Windows 10, version 1703 or later**
 
-2. Select the Windows AutoPilot Deployment Program for your organization. Choose from one of the following:
+2. Learn about and select the Windows AutoPilot Deployment Program for your organization. You can select from these deployment programs:
     - **Microsoft Store for Business**
     - **Microsoft Intune**
     - **Partner Center**
