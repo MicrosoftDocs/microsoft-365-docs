@@ -1,9 +1,9 @@
 ---
-title: "Step 1: Perform a technical inventory and environmental assessment for your business requirements"
+title: "Step 1: Review requirements"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 01/29/2018
+ms.date: 03/02/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -14,33 +14,33 @@ ms.custom:
 description: Understand how to do an assessment for an Office 365 ProPlus deployment.
 ---
 
-# Step 1: Perform a technical inventory and environmental assessment for your business requirements
+# Step 1: Review requirements
 
 ## Environment assessment
 
-A successful deployment of office 365 ProPlus starts with understanding the infrastructure it's going to be deployed into and your business goals. For assessment guidance, see [Best practices: Assessing your infrastructure](https://docs.microsoft.com/DeployOffice/best-practices/best-practices-assessing-your-infrastructure).
+In Step 1, you review the requirements for deploying Office 365 ProPlus and make sure your environment is ready.
 
-## Hardware, software inventory 
+For detailed guidance, see [Best practices: Assessing your infrastructure](https://docs.microsoft.com/DeployOffice/best-practices/best-practices-assessing-your-infrastructure).
 
-If you have a tool like System Center Configuration Manager 2012 R2 or Configuration Manager (current branch) deployed to all your clients and you have your mobile devices enrolled in Microsoft InTune, you'll already have a detailed inventory of your technical environment. If not, you'll need to gather the following items about each of the devices in which you want to deploy Office 365 ProPlus:
 
-- For all devices, whether the user has local administrative rights
-- For all devices, the job role the device is used in
-- For all devices, the desired frequency of feature updates
-- The specifications for non-mobile devices such as operating system, current version of Office, processor, memory, and available disk space
-- The specs for your mobile devices, such as the operating system and version
-- The languages for which you need to deploy Office 365 ProPlus. For more information, see [Overview of deploying languages and Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/overview-of-deploying-languages-in-office-365-proplus). 
+## Make sure clients meet Office 365 system requirements
 
-## Application compatibility
+Review the number and details of your client devices, including platform (Windows or Mac), operating systems, architectures (32-bit or 64-bit), existing versions of Office that are installed, and required languages. As part of this review, make sure that your client devices meet or exceed the [minimum system requirements for installing Office 365 ProPlus](https://products.office.com/office-system-requirements#Office2016-suites-section).
 
-Once you have your hardware inventoried, you should look at your Microsoft Visual Basic for Applications (VBA) macros and other add-ins that use Office. Use the [Readiness Toolkit](https://docs.microsoft.com/DeployOffice/use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro) to assess application compatibility for Office 365 ProPlus.
+Finally, you should assess the deployment tools you already use in your organization, such as System Center Configuration Manager.
 
-## Microsoft FastTrack for Office 365
+## Make sure you have enough Office 365 licenses
 
-FastTrack onboarding and adoption resources and services are available to help you envision your Office 365 ProPlus deployment, to bring your users onboard, and to drive adoption of Office 365 ProPlus. For a full description of your Office 365 ProPlus FastTrack benefits see [FastTrack Center Benefit for Office 365](https://technet.microsoft.com/library/dn783224.aspx).
+Make sure that all your users have Office 365 accounts and licenses, and that those licenses include Office 365 ProPlus.
 
-Because this Office 365 Pro plus deployment is one component of your Microsoft 365 Enterprise implementation, it will be helpful for you to understand how it fits into the broader Microsoft 365 FastTrack services. For more information on Microsoft 365 resources, see [Microsoft 365 resources](https://fasttrack.microsoft.com/microsoft365/resources?view=office365). 
+## Make sure your network can support the deployment
+
+Review your network capability, including bandwidth and distribution of client devices.
+
+## Make sure apps are compatible
+
+Identify your Office add-ins--including VBA scripts, macros, third-party add-ins, and complex documents and spreadsheets--and assess their compatibility with Office 365 ProPlus.
 
 ## Next step
 
-[Step 2 : Classify the target devices into deployment groups](office365proplus-classify-target-devices-deployment-groups.md)
+[Step 2: Plan the deployment](office365proplus-classify-target-devices-deployment-groups.md)
