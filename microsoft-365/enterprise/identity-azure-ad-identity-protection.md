@@ -25,7 +25,7 @@ With Azure AD Identity Protection, you can:
 |||
 |:---------|:---------|
 |Determine and address potential vulnerabilities in your organization’s identities|Azure AD uses machine learning to detect anomalies and suspicious activity, such as sign-ins and post-sign-in activities. Using this data, Identity Protection generates reports and alerts that help you evaluate the issues and take action.|
-|Detect suspicious actions that are related to your organization’s identities and respond to them automatically|You can configure risk-based policies that automatically respond to detected issues when a specified risk level has been reached. These policies, in addition to other conditional access controls provided by Azure Active Directory and EMS, can either automatically block or take corrective actions, including password resets and requiring multi-factor authentication for subsequent sign-ins.|
+|Detect suspicious actions that are related to your organization’s identities and respond to them automatically|You can configure risk-based policies that automatically respond to detected issues when a specified risk level has been reached. These policies, in addition to other conditional access controls provided by Azure Active Directory and Enterprise Mobility + Security (EMS), can either automatically block access or take corrective actions, including password resets and requiring multi-factor authentication for subsequent sign-ins.|
 |Investigate suspicious incidents and resolve them with administrative actions|You can investigate risk events using information about the security incident. Basic workflows are available to track investigations and initiate remediation actions, such as password resets.|
 
 See [more information about Azure AD Identity Protection](https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection).
@@ -38,7 +38,7 @@ The results of this step are that you have enabled Azure AD Identity protection 
 - Detect possible credential compromise attempts.
 - Investigate and address ongoing suspicious identity incidents.
 
-As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria.md#crit-identity-step15) corresponding to this step.
+As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria.md#crit-identity-step15) for this step.
 
 ## Next step
 
