@@ -16,47 +16,28 @@ description: Understand the process of deploying Office 365 ProPlus.
 
 # Step 4: Deploying Office 365 ProPlus
 
-In your physical deployment of Office 365 ProPlus, no matter which deployment methodology you use, make sure to follow these best practices.
 
-## Lab Testing
+Before you begin:
 
-Before you deploy any software package on an enterprise scale, lab testing is a must. Start with the generic procedures that Microsoft has provided and then, through repeated test runs, modify them so that they are customized for your production environment. This is also the environment in which you should perform your application compatibility testing. Refer to the [Readiness Toolkit](https://docs.microsoft.com/DeployOffice/use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro) for more information.
+- If you haven't already, complete the [planning for your deployment](office365proplus-classify-target-devices-deployment-groups.md).
+- If you're using Configuration Manager, we recommend you use the Current Branch of Configuration Manager. With this version, you can deploy and manage Office from the Office Client Management dashboard. For more details on the Current Branch, see [Which branch of Configuration Manager should I use?](https://docs.microsoft.com/sccm/core/understand/which-branch-should-i-use).
 
-A good rule of thumb that you can use to test whether you are ready to move to a pilot deployment is if you can complete multiple deployments to each type of device following the procedures you have developed and not have to make any additional changes. Don't dismantle your lab, as any anomalies or issues that you discover in the pilot phase may be best tested in the lab.
+## Update Group Policy settings
+Make sure that you have reviewed and approved the group policy settings as part of your deployment plan, and then implement the settings. For more details, see [Best practices: Implementing group policy](https://docs.microsoft.com/deployoffice/best-practices/best-practices-implementing-group-policy).
 
-Reproduce the relevant portions of the configuration of your production environment as closely as possible. You don't have to reproduce capacity.  Remember to include these aspects: 
+## Create deployment groups
 
-- Networking: IP addressing scheme, Internet connectivity, firewalls, and ports
-- Address and name infrastructure: DHCP, DNS, Windows Server AD
-- File and cloud storage
-- Identity/security: Accounts, groups, group policy, permissions, any other access controls to resources that will be used during the deployment
-- Deployment tools: System Center Configuration Manager 2012 R2 or Configuration Manager (current branch) (if you have these in your existing production environment), other third-party software deployment tools
-- Target Device Hardware: Ideally one of each type with the identical hardware and software configuration as in your production environment
-- Installed client applications: This is critical for doing application compatibility testing
+If you’re using Configuration Manager, create a collection for each deployment group. 
 
-## Pilot Testing
+If you're using the Office Deployment Tool (ODT), create a separate configuration file for each deployment group.
 
-In pilot testing, you take the deployment procedures that you've developed in your lab and use them to perform targeted and limited deployments in your production environment. It is inevitable that you will encounter issues in your production environment that could not be anticipated in your lab environment. You'll need to make changes to your procedures based on the issues and workarounds you discovered during your pilot testing phase. You've probably already done many software deployment pilots and have your own well-established criteria and procedures. If you don't here are some general guidelines that you can use for planning your pilot testing.
+## Deploy Office 365 ProPlus
 
-## Define what success looks like
+Based on the deployment method you choose earlier, see the links below to deploy Office 365:
 
-In addition to getting the Office 365 ProPlus applications deployed, one of the main goals of a software deployment pilot is to build expertise and confidence in the administrators who are doing the deployment, the IT staff who will be supporting it, and the end users who will be using the Office 365 ProPlus applications to do their daily jobs. Keep these three job roles in mind as you plan your pilot deployment success criteria and get feedback from them frequently. If any of these three job roles lacks the expertise and confidence that is needed to play their role in the deployment, your pilot will not be successful, and broader adoption may be delayed.
-
-## Identify job roles and users for the pilot
-
-When you're selecting users for your pilot groups, make sure you get representatives from all of the job roles in your organization. This ensures that your deployment procedures will be thoroughly vetted against the landscape of your organization before you move to a broader deployment.
-
-For the very first users in your pilot, look for people who are eager to participate and who are not afraid to try new things. These people don't need to have deep technical experience, in fact, you might be better off if they don't. You'll probably learn more and make more improvements to your deployment procedures by listening to this group.
-
-## Train end-users, helpdesk staff, and administrators
-
-Evaluate how much training is needed for each of the groups. The greater the change or the delta between their current production environment and what you are moving them to, the more training they are likely to need. Look for training in different modalities and that take up differing amounts of time. Some people may prefer to read, others watch a video, and still others might need instructor-led training. For some training options, see the [Office 365 Training Center](https://support.office.com/office-training-center).
-
-Consider additional training as an investment for the very first group so that later they can act as trainers for those who follow.
-
-## Feedback and revisions
-
-As you progress through and complete the pilot tasks for each of your target groups. Be sure to get feedback from the participants and update your deployment procedures. Accordingly. Also, be sure to record any changes to the procedures that were necessary in order to successfully deploy.
+- [Deploy with Configuration Manager](https://docs.microsoft.com/sccm/sum/deploy-use/manage-office-365-proplus-updates)
+- [Deploy with the Office Deployment Tool from the cloud](https://docs.microsoft.com/DeployOffice/deploy-office-365-proplus-from-the-cloud)
+- [Self-install from the cloud](https://support.office.com/article/manage-user-software-in-office-365-c13051e6-f75c-4737-bc0d-7685dcedf360)
 
 ## Next step
 
