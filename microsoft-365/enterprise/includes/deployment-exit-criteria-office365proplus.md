@@ -1,5 +1,3 @@
-Before you move on to the next phase in the deployment process, ensure that your configuration meets the following required criteria for Office 365 ProPlus infrastructure.
-
 Assessment of infrastructure and environment is complete, including:
 
 - Client device details

@@ -1,5 +1,3 @@
-Ensure that your configuration meets the following criteria for information protection-based services and infrastructure.
-
 <a name="crit-infoprotect-step1"></a>
 ### Required: Security and information protection levels for your organization are defined
 
