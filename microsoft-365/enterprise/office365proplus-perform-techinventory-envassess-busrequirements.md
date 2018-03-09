@@ -3,7 +3,7 @@ title: "Step 1: Review requirements"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/02/2018
+ms.date: 03/09/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,8 +15,6 @@ description: Understand how to do an assessment for an Office 365 ProPlus deploy
 ---
 
 # Step 1: Review requirements
-
-## Environment assessment
 
 In Step 1, you review the requirements for deploying Office 365 ProPlus and make sure your environment is ready.
 

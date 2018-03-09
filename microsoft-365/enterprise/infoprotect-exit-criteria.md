@@ -3,7 +3,7 @@ title: "Information protection infrastructure exit criteria"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/02/2018
+ms.date: 03/09/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -16,7 +16,7 @@ description: Examine the criteria for information protection-based services and 
 
 # Information protection infrastructure exit criteria
 
-Ensure that your configuration meets the following criteria for information protection-based services and infrastructure.
+Before you are complete with your foundation infrastructure, make sure that your information protection infrastructure meets these conditions. 
 
 <a name="crit-infoprotect-step1"></a>
 ## Required: Security and information protection levels for your organization are defined
@@ -68,3 +68,5 @@ You have worked with your legal and compliance teams to develop an appropriate c
 - Azure Information Protection labels
 
 If needed, [Step 3](infoprotect-configure-classification.md) can help you meet this requirement. 
+
+You are now ready to configure workloads, such as Microsoft Teams and Exchange Online, that run on top of your foundation infrastructure.

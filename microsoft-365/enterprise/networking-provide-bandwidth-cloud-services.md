@@ -3,7 +3,7 @@ title: "Step 1: Check your Internet bandwidth"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/05/2018
+ms.date: 03/09/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -22,7 +22,7 @@ In Step 1, you check your current Internet bandwidth needs and adjust both centr
 
 For more information about network connectivity considerations and network assessment tools you can use to determine your bandwidth needs, see [Network connectivity to Office 365](https://support.office.com/article/Network-connectivity-to-Office-365-64b420ef-0218-48f6-8a34-74bb27633b10). This article also applies to the combination of Office 365 and Intune in Microsoft 365 Enterprise. 
 
-As an interim checkpoint, you can see the [exit criteria](networking-exit-criteria.md#crit-networking-step1.md) corresponding to this step.
+As an interim checkpoint, you can see the [exit criteria](networking-exit-criteria.md#crit-networking-step1) corresponding to this step.
 
 ## Next step
 [Step 2: Ensure that DNS resolution is is local to the ISP](networking-dns-resolution-same-location.md)
