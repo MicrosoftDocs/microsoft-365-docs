@@ -20,13 +20,13 @@ description: Understand and configure Azure AD access and usage reporting.
 
 In Step 13, you review audit logs and sign-in activity using Azure AD reporting. Two types of reports are available.
 
-The **Audit logs report** records the history of every task performed in your Azure AD tenant. This report answers questions like:
+The **Audit logs activity report** records the history of every task performed in your Azure AD tenant. This report answers questions like:
 
 - Who added someone to an admin group?
 - Which users are signing into a specific app?
 - How many password resets are happening?
 
-The **Sign-in activity report** records who performed the tasks reported by the audit logs report. This report answers questions like:
+The **Sign-ins activity report** records who performed the tasks reported by the audit logs report. This report answers questions like:
 
 - For a specific user under investigation, what is their sign-in pattern?
 - What is my volume of sign-ins over a day, week, or month?

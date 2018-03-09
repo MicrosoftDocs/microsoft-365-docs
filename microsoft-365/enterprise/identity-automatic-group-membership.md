@@ -33,13 +33,11 @@ See the [instructions to create and configure the rules for a dynamic Azure AD g
 
 The results of this step are:
 
-- A set of Azure AD dynamic groups
+- A set of Azure AD groups that can be configured for dynamic membership
 - A set of rules on each dynamic group
 
-As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria.md#crit-identity-step12) corresponding to this step.
+As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria.md#crit-identity-step12) for this step.
 
 ## Next step
 
 [Step 13: Monitor tenant and sign-in activity](identity-azure-ad-access-usage-reporting.md)
-
-
