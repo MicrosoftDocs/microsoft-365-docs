@@ -3,7 +3,7 @@ title: "Step 3: Customize the Office 365 sign-in page"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 02/28/2018
+ms.date: 03/05/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -38,8 +38,8 @@ For more information, see [Add your company branding to Office 365 Sign In page]
 
 For configuration instructions, see [Add company branding to your sign-in and Access Panel pages](http://aka.ms/aadpaddbranding).
 
-As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria.md#crit-identity-step3) corresponding to this step.
+As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria.md#crit-identity-step3) for this step.
 
 ## Next step
 
-[Step 4: Azure AD Connect Health](identity-azure-ad-connect-health.md)
+[Step 4: Monitor synchronization health](identity-azure-ad-connect-health.md)

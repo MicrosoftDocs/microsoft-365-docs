@@ -18,15 +18,15 @@ description: Understand and configure Azure AD Seamless Single Sign-On (Seamless
 
 *This step is optional for hybrid environments and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
 
-In Step 8, you set up Azure Active Directory Seamless Single Sign-On (Azure AD Seamless SSO) to allow your users to sign in to services that use Azure AD user accounts without having to type in their passwords, and in many cases, their usernames. This gives your users easier access to cloud-based applications, such as Office 365, without needing any additional on-premises components.
+In Step 8, you set up Azure Active Directory Seamless Single Sign-On (Azure AD Seamless SSO) to allow your users to sign in to services that use Azure AD user accounts without having to type in their passwords, and in many cases, their usernames. This gives your users easier access to cloud-based applications, such as Office 365, without needing any additional on-premises components such as identity federation servers.
 
-You configure Azure AD Seamless SSO with the Azure AD Connect tool, which runs on a server in your intranet.
+You configure Azure AD Seamless SSO with the Azure AD Connect tool.
 
 See the [instructions to configure Azure AD Seamless SSO](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-sso-quick-start).
 
 See [Core Concepts](https://docs.microsoft.com/microsoft-365-enterprise/microsoft-365-policies-configurations#core-concepts) for additional information.
 
-As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria.md#crit-identity-step8) corresponding to this step.
+As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria.md#crit-identity-step8) for this step.
 
 ## Next step
 
