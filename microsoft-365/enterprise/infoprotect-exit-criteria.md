@@ -3,7 +3,7 @@ title: "Information protection infrastructure exit criteria"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/09/2018
+ms.date: 03/13/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -21,7 +21,7 @@ Before you are complete with your foundation infrastructure, make sure that your
 <a name="crit-infoprotect-step1"></a>
 ## Required: Security and information protection levels for your organization are defined
 
-You have determined the security levels that your organization needs. These levels define a minimum level of security and additional levels for increasingly sensitive information and their corresponding data security.
+You have planned for and determined the security levels that your organization needs. These levels define a minimum level of security and additional levels for increasingly sensitive information and their required data security.
 
 At a minimum, you are using three security levels:
 

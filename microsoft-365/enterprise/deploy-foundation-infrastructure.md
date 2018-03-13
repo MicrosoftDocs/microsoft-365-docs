@@ -2,7 +2,7 @@
 title: "Microsoft 365 Enterprise Foundation Infrastructure"
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/05/2018
+ms.date: 03/13/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,13 +15,13 @@ description: Understand the major phases of deploying the foundation infrastruct
 
 # Microsoft 365 Enterprise Foundation Infrastructure
 
-Microsoft 365 Enterprise is a combination of Office 365, Enterprise Mobility + Security (EMS), and Windows 10 Enterprise. These products must be deployed in an integrated way with security features to realize the benefits of Microsoft 365 Enterprise.
+To fully realize the benefits of Microsoft 365 Enterprise, you’ll begin your deployment with its foundation infrastructure. 
 
 ## Foundation infrastructure for deploying Microsoft 365 Enterprise
 
-The foundation infrastructure is the basis upon which you can deploy productivity workloads such as Exchange Online, SharePoint Online, and Microsoft Teams in Office 365. It provides intelligent security and integration that simplifies ongoing management, which ensures that your client software is updated with the latest productivity and security enhancements.
+The foundation infrastructure is the groundwork upon which you can deploy productivity workloads such as Exchange Online, SharePoint Online, and Microsoft Teams in Office 365. It provides intelligent security and integration that simplifies ongoing management, which ensures that your client software is updated with the latest productivity and security enhancements.
 
-Use the following phases to plan for and deploy the foundation infrastructure of Microsoft Enterprise 365 in your organization:
+You'll use the following phases to plan for and deploy the foundation infrastructure of Microsoft Enterprise 365 in your organization:
 
 - [Phase 1: Networking](networking-infrastructure.md)
 - [Phase 2: Identity](identity-infrastructure.md)
@@ -38,6 +38,6 @@ FastTrack is an ongoing and repeatable benefit—available as part of your subsc
 
 ## Next step
 
-If you have existing infrastructure for Office 365, EMS, or Windows 10 Enterprise, see [Deployment of Microsoft 365 Enterprise with existing infrastructure](deploy-with-existing-infrastructure.md). This article steps you through exit criteria for each phase to more quickly determine what you need to change and make your IT infrastructure Microsoft 365 Enterprise-compliant.
+If you have existing infrastructure for Office 365, Enterprise Mobility + Security, or Windows 10 Enterprise, see [Deployment of Microsoft 365 Enterprise with existing infrastructure](deploy-with-existing-infrastructure.md). This article steps you through exit criteria for each phase to more quickly determine what you need to change and make your IT infrastructure Microsoft 365 Enterprise-compliant.
 
 Otherwise, you can begin your Microsoft 365 Enterprise end-to-end deployment journey with [Phase 1: Networking](networking-infrastructure.md).
