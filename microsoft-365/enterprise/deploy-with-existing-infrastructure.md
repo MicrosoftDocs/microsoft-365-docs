@@ -3,7 +3,7 @@ title: Deployment of Microsoft 365 Enterprise with existing infrastructure
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/15/2018
+ms.date: 03/09/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
