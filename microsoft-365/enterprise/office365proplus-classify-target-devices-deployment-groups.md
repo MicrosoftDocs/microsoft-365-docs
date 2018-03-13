@@ -3,7 +3,7 @@ title: "Step 2: Plan the deployment"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/02/2018
+ms.date: 03/09/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -41,7 +41,7 @@ We recommend managing your updates automatically from the cloud. You limit your 
 With Office 365 ProPlus, you can control how frequently your users receive feature updates to their Office applications. To do so, you deploy one of three update channels to your users:
 
 - **Monthly Channel:** Provide users with the newest features of Office as soon as they're available.
-- **Semi-Annual Channel:** Provide users with new features of Office every six months, in January and July
+- **Semi-Annual Channel:** Provide users with new features of Office every six months, in January and July.
 - **Semi-Annual Channel (Targeted):** Provide pilot users the opportunity to test the next Semi-Annual Channel. Releases every six months in March and September, four months ahead of the Semi-Annual Channel.
 
 Which users should get which update channel depends on several factors, including how many line-of-business applications, add-ins, or macros that you need to test. To help you make this decision, see [Overview of update channels for Office 365 ProPlus](https://docs.microsoft.com/deployoffice/overview-of-update-channels-for-office-365-proplus).
@@ -61,7 +61,8 @@ When you deploy Office, you create an installation package that contains the Off
 ## Define deployment groups
 
 When you deploy Office, you can install different versions of Office for different groups of users. You do this by creating a configuration file for each group. The configuration file includes the architecture and update channel, specific applications (included or excluded), languages, the installation experience. 
-Decide whether to uninstall older versions of Office
+
+## Decide whether to uninstall older versions of Office
 
 Microsoft supports installing Office 365 ProPlus alongside the most recent previous version of the Office suite, but we don't recommend it. If you plan to have two versions of Office on the same computer, you should plan to transition to using only Office 365 ProPlus when possible. Otherwise, you should uninstall other versions of Office before or during your Office 365 deployment.
 

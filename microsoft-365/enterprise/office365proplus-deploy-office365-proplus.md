@@ -3,7 +3,7 @@ title: "Step 4: Deploying Office 365 ProPlus"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 01/29/2018
+ms.date: 03/09/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -14,13 +14,13 @@ ms.custom:
 description: Understand the process of deploying Office 365 ProPlus.
 ---
 
-# Step 4: Deploying Office 365 ProPlus
+# Step 3: Deploy Office 365 ProPlus
 
 
 Before you begin:
 
 - If you haven't already, complete the [planning for your deployment](office365proplus-classify-target-devices-deployment-groups.md).
-- If you're using Configuration Manager, we recommend you use the Current Branch of Configuration Manager. With this version, you can deploy and manage Office from the Office Client Management dashboard. For more details on the Current Branch, see [Which branch of Configuration Manager should I use?](https://docs.microsoft.com/sccm/core/understand/which-branch-should-i-use).
+- If you're using Configuration Manager, we recommend you use the Current Branch of Configuration Manager. With this version, you can deploy and manage Office from the Office Client Management dashboard. For more details on the Current Branch, see [Which branch of Configuration Manager should I use?](https://docs.microsoft.com/sccm/core/understand/which-branch-should-i-use)
 
 ## Update Group Policy settings
 Make sure that you have reviewed and approved the group policy settings as part of your deployment plan, and then implement the settings. For more details, see [Best practices: Implementing group policy](https://docs.microsoft.com/deployoffice/best-practices/best-practices-implementing-group-policy).
