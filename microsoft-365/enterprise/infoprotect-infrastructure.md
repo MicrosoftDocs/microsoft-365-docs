@@ -3,7 +3,7 @@ title: "Phase 6: Information protection"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/02/2018
+ms.date: 03/13/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -24,7 +24,7 @@ Information protection is a set of policies and technologies that define how you
 
 ## Plan and deploy your Microsoft 365 Enterprise information protection infrastructure 
 
-It’s important to work with your legal and compliance teams to determine if your organization needs to meet compliance standards such as HIPPA, CJIS, or GDPR. You should also work with your security group to determine the objectives for information protection.
+It’s important to work with your legal and compliance teams to determine if your organization needs to meet compliance standards such as HIPPA, CJIS, or GDPR. You should also work with your security group to determine the objectives for information protection for your organization and for departments or groups that require additional security.
 
 Next, use the following steps to build out information protection for Microsoft 365 Enterprise.
 
@@ -33,7 +33,7 @@ Next, use the following steps to build out information protection for Microsoft 
 - [Step 3: Configure classification for your environment](infoprotect-configure-classification.md)
 - [Step 4: Configure increased security for Office 365](infoprotect-configure-increased-security-office-365.md)
 
-When have completed these steps, go to the [exit criteria](infoprotect-exit-criteria.md) for this phase to ensure that you meet the required criteria for Microsoft 365.
+When you've completed these steps, go to the [exit criteria](infoprotect-exit-criteria.md) for this phase to ensure that you meet the required and optional conditions for Microsoft 365 Enterprise.
 
 ## Next step
 
