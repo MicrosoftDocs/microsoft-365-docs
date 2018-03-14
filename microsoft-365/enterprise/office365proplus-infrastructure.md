@@ -3,7 +3,7 @@ title: "Phase 4: Office 365 ProPlus"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/09/2018
+ms.date: 03/13/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -30,7 +30,7 @@ Choose how to deploy Office, how to manage updates to Office, and whether to dep
 - [Step 2: Plan the deployment](office365proplus-classify-target-devices-deployment-groups.md)
 - [Step 3: Deploy Office 365 ProPlus](office365proplus-deploy-office365-proplus.md)
 
-When have completed these steps, go to the [exit criteria](office365proplus-exit-criteria.md) for this phase to ensure that you meet the required conditions for Microsoft 365 Enterprise.
+When you've completed these steps, go to the [exit criteria](office365proplus-exit-criteria.md) for this phase to ensure that you meet the required conditions for Microsoft 365 Enterprise.
 
 ## Next step
 
