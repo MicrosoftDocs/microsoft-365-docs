@@ -3,7 +3,7 @@ title: "Phase 2: Identity infrastructure exit criteria"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/05/2018
+ms.date: 03/13/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -263,7 +263,10 @@ If needed, [Step 15](identity-azure-ad-identity-protection.md) can help you with
 
 <a name="crit-identity-step6"></a>
 ## Optional: You have set up Privileged Identity Management to support on-demand assignment of the global administrator role
+
 You have used the instructions in [Configure Azure AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure) to enable PIM in your Azure AD tenant and configured your global administrator accounts as eligible admins.
+
+You have also used the recommendations in [Securing privileged access for hybrid and cloud deployments in Azure AD](https://docs.microsoft.com/azure/active-directory/admin-roles-best-practices) to develop a roadmap that secures privileged access against cyber attackers.
 
 If you skip this option, your global administrator accounts are subject to ongoing online attack and, if compromised, can allow an attacker to harvest, destroy, or hold your sensitive information for ransom.
 

@@ -3,7 +3,7 @@ title: "Step 3: Configure classification for your environment"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/09/2018
+ms.date: 03/13/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -56,10 +56,9 @@ For more information, see the [library of Azure Information Protection documenta
 
 For an example classification scheme that includes personal data for GDPR, see [Architect a classification schema for personal data](https://docs.microsoft.com/office365/enterprise/architect-a-classification-schema-for-personal-data).
 
-
 ## Results
 
-The result of this step is the determination of the following:
+You have determined:
 
 - Sensitive data types
 - Office 365 labels

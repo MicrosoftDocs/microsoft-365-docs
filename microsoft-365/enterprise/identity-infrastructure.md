@@ -3,7 +3,7 @@ title: "Phase 2: Identity"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/05/2018
+ms.date: 03/13/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -43,7 +43,7 @@ Use the following steps to plan and deploy your new identity infrastructure in t
 - [Step 15: Protect against credential compromise](identity-azure-ad-identity-protection.md)
 - [Step 16: Provide secure remote access to users](identity-azure-ad-application-proxy.md)
 
-When have completed these steps, go to the [exit criteria](identity-exit-criteria.md) for this phase to ensure that you meet the required and optional conditions for Microsoft 365 Enterprise.
+When you've completed these steps, go to the [exit criteria](identity-exit-criteria.md) for this phase to ensure that you meet the required and optional conditions for Microsoft 365 Enterprise.
 
 ## Next step
 
