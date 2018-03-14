@@ -7,7 +7,7 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 01/18/2018
 ms.author: barlan
-ms.reviewer: jsnow
+ms.reviewer: martincoetzer
 ms.custom: it-pro
 ---
 
@@ -46,21 +46,28 @@ The following tables describe the appropriate settings necessary to express the 
 
 ### Medium and above risk requires MFA
 
-The following table describes the conditional access policy settings to implement for this policy.
+The following tables describes the conditional access policy settings to implement for this policy.
 
-|Categories|Type|Properties|Values|Notes|
-|:---------|:---|:---------|:-----|:----|
-|**Assignments**|Users and groups|Include|Select users and groups – Select specific security group containing targeted users|Start with security group including pilot users.|
-|||Exclude|Exception security group; service accounts (app identities)|Membership modified on an as needed temporary basis|
-||Cloud apps|Include|Select apps -  Select Office 365 Exchange Online||
-||Conditions|Configured|Yes|Configure specific to your environment and needs|
-||Sign-in risk|Risk level|High, medium|Check both|
-|**Access controls**|Grant|Grant access|True|Selected|
-|||Require MFA|True|Check|
-|||Require compliant devices|False||
-|||Require domain joined devices|False||
-|||Require all the selected controls|True|Selected|
-|**Enable policy**|||On|Deploys conditional access policy|
+**Assignments**
+|Type|Properties|Values|Notes|
+|:---|:---------|:-----|:----|
+|Users and groups|Include|Select users and groups – Select specific security group containing targeted users|Start with security group including pilot users.|
+||Exclude|Exception security group; service accounts (app identities)|Membership modified on an as needed temporary basis|
+|Cloud apps|Include|Select apps -  Select Office 365 Exchange Online||
+|Conditions|Configured|Yes|Configure specific to your environment and needs|
+|Sign-in risk|Risk level|High, medium|Check both|
+
+**Access controls**
+|Type|Properties|Values|Notes|
+|:---|:---------|:-----|:----|
+|Grant|Grant access|True|Selected|
+||Require MFA|True|Check|
+||Require compliant devices|False||
+||Require domain joined devices|False||
+||Require all the selected controls|True|Selected|
+
+> [!NOTE]
+> Be sure to enable this policy, by clicking **On**. Also consider using the [What if](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-conditional-access-whatif) tool to test the policy
 
 ### Require a compliant or domain joined device
 
@@ -115,22 +122,29 @@ To add an app-based conditional access policy:
 ## Sensitive
 
 ### Low and above risk requires MFA
-The following table describes the conditional access policy settings to implement for low- and above-risk policies.
+The following tables describes the conditional access policy settings to implement for low- and above-risk policies.
 
-|Categories|Type|Properties|Values|Notes|
-|:---------|:---|:---------|:-----|:----|
-|**Assignments**|Users and groups|Include|Select users and groups – Select specific security group containing targeted users|Start with security group including pilot users|
-|||Exclude|Exception security group; service accounts (app identities)|Membership modified on an as needed temporary basis|
-||Cloud apps|Include|Select apps -  Select Office 365 Exchange Online||
-||Conditions|Configured|Yes|Configure specific to your environment and needs|
-||Sign-in risk|Configured|Yes|Configure specific to your environment and needs|
-|||Risk level|Low, medium, high|Check all three|
-|**Access controls**|Grant|Grant access|True|Selected|
-|||Require MFA|True|Check|
-|||Require compliant devices|False||
-|||Require domain joined device|False||
-|||Require all the selected controls|True|Selected|
-|**Enable policy**|||On|Deploys conditional access policy|
+**Assignments**
+|Type|Properties|Values|Notes|
+|:---|:---------|:-----|:----|
+|Users and groups|Include|Select users and groups – Select specific security group containing targeted users|Start with security group including pilot users|
+||Exclude|Exception security group; service accounts (app identities)|Membership modified on an as needed temporary basis|
+|Cloud apps|Include|Select apps -  Select Office 365 Exchange Online||
+|Conditions|Configured|Yes|Configure specific to your environment and needs|
+|Sign-in risk|Configured|Yes|Configure specific to your environment and needs|
+||Risk level|Low, medium, high|Check all three|
+
+**Access controls**
+|Type|Properties|Values|Notes|
+|:---|:---------|:-----|:----|
+||Grant|Grant access|True|Selected|
+||Require MFA|True|Check|
+||Require compliant devices|False||
+||Require domain joined device|False||
+||Require all the selected controls|True|Selected|
+
+> [!NOTE]
+> Be sure to enable this policy, by clicking **On**. Also consider using the [What if](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-conditional-access-whatif) tool to test the policy
 
 ### Require a compliant or domain joined device
 (See baseline instructions)
@@ -146,19 +160,26 @@ Once the pilot project has been completed, these policies should be applied to u
 ## Highly regulated
 ### MFA required
 
-The following table describes the conditional access policy settings to implement for the highly regulated policy.
+The following tables describes the conditional access policy settings to implement for the highly regulated policy.
 
-|Categories|Type|Properties|Values|Notes|
-|:---------|:---|:---------|:-----|:----|
-|**Assignments**|Users and groups|Include|Select users and groups – Select specific security group containing targeted users|Start with security group including pilot users|
-|||Exclude|Exception security group; service accounts (app identities)|Membership modified on an as needed temporary basis|
-||Cloud apps|Include|Select apps -  Select Office 365 Exchange Online||
-|**Access controls**|Grant|Grant access|True|Selected|
-|||Require MFA|True|Check|
-|||Require complaint devices|False|Check|
-|||Require domain joined device|False||
-|||Require all the selected controls|True|Selected|
-|**Enable policy**|||On|Deploys conditional access policy|
+**Assignments**
+|Type|Properties|Values|Notes|
+|:---|:---------|:-----|:----|
+|Users and groups|Include|Select users and groups – Select specific security group containing targeted users|Start with security group including pilot users|
+||Exclude|Exception security group; service accounts (app identities)|Membership modified on an as needed temporary basis|
+|Cloud apps|Include|Select apps -  Select Office 365 Exchange Online||
+
+**Access controls**
+|Type|Properties|Values|Notes|
+|:---|:---------|:-----|:----|
+|Grant|Grant access|True|Selected|
+||Require MFA|True|Check|
+||Require complaint devices|False|Check|
+||Require domain joined device|False||
+||Require all the selected controls|True|Selected|
+
+> [!NOTE]
+> Be sure to enable this policy, by clicking **On**. Also consider using the [What if](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-conditional-access-whatif) tool to test the policy
 
 ### Require a compliant or domain joined device
 (See baseline instructions)
@@ -172,16 +193,23 @@ To ensure that all high-risk users compromised accounts are forced to perform a 
 
 Log in to the [Microsoft Azure portal (http://portal.azure.com)](http://portal.azure.com/) with your administrator credentials, and then navigate to **Azure AD Identity Protection > User Risk Policy**.
 
-|Categories|Type|Properties|Values|Notes|
-|:---------|:---|:---------|:-----|:----|
-|**Assignments**|Users|Include|All users|Selected|
-|||Exclude|None||
-||Conditions|User risk|High|Selected|
-|**Controls**|Access|Allow access|True|Selected|
-||Access|Require password change|True|Check|
-|**Review**|N/A|N/A|N/A|N/A|
-|**Enforce policy**|||On|Starts enforcing policy|
+**Assignments**
+|Type|Properties|Values|Notes|
+|:---|:---------|:-----|:----|
+|Users|Include|All users|Selected|
+||Exclude|None||
+|Conditions|User risk|High|Selected|
 
+**Controls**
+|Type|Properties|Values|Notes|
+|:---|:---------|:-----|:----|
+||Access|Allow access|True|Selected|
+||Access|Require password change|True|Check|
+
+**Review:** not applicable
+
+> [!NOTE]
+> Be sure to enable this policy, by clicking **On**. Also consider using the [What if](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-conditional-access-whatif) tool to test the policy
 
 ## Additional configurations
 In addition to the above policies, you must configure the following Mobile Application and Device Management settings discussed in this section.
@@ -202,31 +230,40 @@ Add a new policy (+Add) as shown in the following screen shot:
 
 The following tables describe the recommended Intune app protection policy settings:
 
-|Categories|Type|Properties|Values|Notes|
-|:---------|:---|:---------|:-----|:----|
-|**General**|Email|Name|Secure email policy for Android|Enter a policy name|
-|||Description||Enter text that describes the policy|
-|||Platform|Android|There are slight differences in the app protection policy options between iOS and Android; this policy is specifically for Android|
-|**Apps**|Applications|Apps|Outlook|Selected (list)|
-|**Settings**|Data relocation|Prevent Android backup|Yes|On iOS this will specifically call out iTunes and iCloud|
-||||Allow app to transfer data to other apps|Policy managed apps||
-|||Allow app to receive data to other apps|Policy managed apps||
-|||Prevent "Save As"|Yes||
-|||Restrict cut, copy, and paste with other apps|Policy managed apps||
-|||Restrict web content to display in the managed browser|No||
-|||Encrypt app data|Yes|On iOS select option: When device is locked|
-|||Disable contacts sync|No||
-||Access|Require PIN for access|Yes||
-|||Number of attempts before PIN reset|3||
-|||Allow simple PIN|No||
-|||PIN length|6||
-|||Allow fingerprint instead of PIN|Yes||
-|||Require Corporate credentials for access|No||
-|||Block managed apps from running on jailbroken or rooted devices|Yes||
-|||Recheck the access requirement after (minutes)|30||
-|||Offline grace period|720||
-|||Offline interval (days) before app data is wiped|90||
-|||Block screen capture and Android assistant|No|On iOS this is not an available option|
+**General**
+|Type|Properties|Values|Notes|
+|:---|:---------|:-----|:----|
+|Email|Name|Secure email policy for Android|Enter a policy name|
+||Description||Enter text that describes the policy|
+||Platform|Android|There are slight differences in the app protection policy options between iOS and Android; this policy is specifically for Android|
+
+**Apps**
+|Type|Properties|Values|Notes|
+|:---|:---------|:-----|:----|
+|Applications|Apps|Outlook|Selected (list)|
+
+**Settings**
+|Type|Properties|Values|Notes|
+|:---|:---------|:-----|:----|
+|Data relocation|Prevent Android backup|Yes|On iOS this will specifically call out iTunes and iCloud|
+|||Allow app to transfer data to other apps|Policy managed apps||
+||Allow app to receive data to other apps|Policy managed apps||
+||Prevent "Save As"|Yes||
+||Restrict cut, copy, and paste with other apps|Policy managed apps||
+||Restrict web content to display in the managed browser|No||
+||Encrypt app data|Yes|On iOS select option: When device is locked|
+||Disable contacts sync|No||
+|Access|Require PIN for access|Yes||
+||Number of attempts before PIN reset|3||
+||Allow simple PIN|No||
+||PIN length|6||
+||Allow fingerprint instead of PIN|Yes||
+||Require Corporate credentials for access|No||
+||Block managed apps from running on jailbroken or rooted devices|Yes||
+||Recheck the access requirement after (minutes)|30||
+||Offline grace period|720||
+||Offline interval (days) before app data is wiped|90||
+||Block screen capture and Android assistant|No|On iOS this is not an available option|
 
 When complete, remember to click "Create". Repeat the above steps and replace the selected platform (dropdown) with iOS. This creates two app policies, so once you create the policy, then assign groups to the policy and deploy it.
 
@@ -238,71 +275,83 @@ You create the following device configuration profiles and device compliance pol
 #### iOS email profile
 In the [Intune on Azure portal](https://portal.azure.com), you can create the following device configuration profiles at **Device configuration > Profiles > Create Profile > Platform (iOS) > Profile type (E-mail)**.
 
-|Categories|Type|Properties|Values|Notes|
-|:---------|:---|:---------|:-----|:----|
-|**Email profile**|Exchange Active Sync|Host (#)|Outlook.office365.com||
-|||Account Name (#)|SecureEmailAccount|Admini choice|
-|||Username|User principal name|Selected – Drop down|
-|||Email address|Primary SMTP address|Selected – Drop down|
-|||Authentication method|Username and password|Selected – Drop down|
-|||Use S/MIME|False||
-||Synchronization settings|Number of days of email to synchronize|Two weeks|Selected – Drop down|
-|||Use SSL|True|Check|
-|||Allow messages to be moved to other email accounts|False||
-|||Allow email to be sent from third party applications|True||
-|||Synchronize recently used email addresses|True|Check|
+**Email profile**
+|Type|Properties|Values|Notes|
+|:---|:---------|:-----|:----|
+|Exchange Active Sync|Host (#)|Outlook.office365.com||
+||Account Name (#)|SecureEmailAccount|Admini choice|
+||Username|User principal name|Selected – Drop down|
+||Email address|Primary SMTP address|Selected – Drop down|
+||Authentication method|Username and password|Selected – Drop down|
+||Use S/MIME|False||
+|Synchronization settings|Number of days of email to synchronize|Two weeks|Selected – Drop down|
+||Use SSL|True|Check|
+||Allow messages to be moved to other email accounts|False||
+||Allow email to be sent from third party applications|True||
+||Synchronize recently used email addresses|True|Check|
 
 #### Android email profile
 In the [Intune on Azure portal](https://portal.azure.com), you can create the following device configuration profiles at **Device configuration > Profiles > Create Profile > Platform (Android) > Profile type (E-mail)**.
 
-|Categories|Type|Properties|Values|Notes|
-|:---------|:---|:---------|:-----|:----|
-|**Email profile**|Exchange Active Sync|Host (#)| Outlook.office365.com|
-|||Account Name (#)|SecureEmailAccount|Admini choice|
-|||Username|User principal name|Selected – Drop down|
-|||Email address|Primary SMTP address|Selected – Drop down|
-|||Authentication method|Username and password|Selected – Drop down|
-|||Use S/MIME|False||
-||Synchronization settings|Number of days of email to synchronize|Two weeks|Selected – Drop down|
-|||Sync schedule|Not configured|Selected – Drop down|
-|||Use SSL|True|Check|
-|||Content type to synchronize|||
-|||Email|True|Check (locked)|
-|||Contacts|True|Check|
-|||Calenadr|True|Check|
-|||Tasks|True|Check|
-|||Notes|True|Check|
+**Email profile**
+|Type|Properties|Values|Notes|
+|:---|:---------|:-----|:----|
+|Exchange Active Sync|Host (#)| Outlook.office365.com|
+||Account Name (#)|SecureEmailAccount|Admini choice|
+||Username|User principal name|Selected – Drop down|
+||Email address|Primary SMTP address|Selected – Drop down|
+||Authentication method|Username and password|Selected – Drop down|
+||Use S/MIME|False||
+|Synchronization settings|Number of days of email to synchronize|Two weeks|Selected – Drop down|
+||Sync schedule|Not configured|Selected – Drop down|
+||Use SSL|True|Check|
+||Content type to synchronize|||
+||Email|True|Check (locked)|
+||Contacts|True|Check|
+||Calenadr|True|Check|
+||Tasks|True|Check|
+||Notes|True|Check|
 
 #### Android for work email profile
 In the [Intune on Azure portal](https://portal.azure.com), you can create the following device configuration profiles at **Device configuration > Profiles > Create Profile > Platform (Android for Work) > Profile type (E-mail)**.
 
-|Categories|Type|Properties|Values|Notes|
-|:---------|:---|:---------|:-----|:----|
-|**Email profile**|Exchange Active Sync|Host(#)| Outlook.office365.com|
-|||Account Name(#)|SecureEmailAccount|Admini choice|
-|||Username|User principal name|Selected – Drop down|
-|||Email address|Primary SMTP address|Selected – Drop down|
-|||Authentication method|Username and password|Selected – Drop down|
-||Synchronization settings|Number of days of email to synchronize|Two weeks|Selected – Drop down|
-|||Use SSL|True|Check|
+**Email profile**
+|Type|Properties|Values|Notes|
+|:---|:---------|:-----|:----|
+|Exchange Active Sync|Host(#)| Outlook.office365.com|
+||Account Name(#)|SecureEmailAccount|Admini choice|
+||Username|User principal name|Selected – Drop down|
+||Email address|Primary SMTP address|Selected – Drop down|
+||Authentication method|Username and password|Selected – Drop down|
+|Synchronization settings|Number of days of email to synchronize|Two weeks|Selected – Drop down|
+||Use SSL|True|Check|
 
 #### Device compliance policy
 In the [Intune on Azure portal](https://portal.azure.com), you can create the following device compliance policies at **Device compliance > Policies > Create Policy > Platform (iOS, Android or others) > Settings**.
 
-|Categories|Type|Properties|Values|Notes|
-|:---------|:---|:---------|:-----|:----|
-|**System security**|Password|Require a password to unlock mobile devices (...)|Yes|Selected – Drop down|
-|||Allow simple passwords (...)|No|Selected – Drop down|
-|||Minimum password length (...)|6|Selected – List|
-||Advanced password settings|All|Not configured||
-||Encryption|Require encryption on mobile device (...)|Yes|Selected – Drop down|
-||Email profiles|Email account must be managed by Intune (iOS 8.0+)|Yes| Selected  – Drop down|
-|||Select (#)||Must select Email Configuration Policy for iOS: iOS Email Policy (see configuration policies above)|
-|**Device health**|Windows decide health attestation|Require devices to be reported as healthy (Windows 10 Desktop and Mobile and later)|Yes||
-||Device security settings|All|Not configured||
-||Device threat protection|All|Not configured||
-||Jailbreak|Device must not be jailbroken or rooted (iOS 8.0+, Android 4.0+)|Yes||
-|**Device properties**|Operating system version|All|Not configured|||
+**System security**
+|Type|Properties|Values|Notes|
+|:---|:---------|:-----|:----|
+|Password|Require a password to unlock mobile devices (...)|Yes|Selected – Drop down|
+||Allow simple passwords (...)|No|Selected – Drop down|
+||Minimum password length (...)|6|Selected – List|
+|Advanced password settings|All|Not configured||
+|Encryption|Require encryption on mobile device (...)|Yes|Selected – Drop down|
+|Email profiles|Email account must be managed by Intune (iOS 8.0+)|Yes| Selected  – Drop down|
+||Select (#)||Must select Email Configuration Policy for iOS: iOS Email Policy (see configuration policies above)|
+
+**Device health**
+|Type|Properties|Values|Notes|
+|:---|:---------|:-----|:----|
+|Windows decide health attestation|Require devices to be reported as healthy (Windows 10 Desktop and Mobile and later)|Yes||
+|Device security settings|All|Not configured||
+|Device threat protection|All|Not configured||
+|Jailbreak|Device must not be jailbroken or rooted (iOS 8.0+, Android 4.0+)|Yes||
+
+**Device properties**
+|Type|Properties|Values|Notes|
+|:---|:---------|:-----|:----|
+|Operating system version|All|Not configured||
 
 For all the above policies to be considered deployed, they must be targeted at user groups. You can do this by creating the policy (on Save) or later by selecting Manage Deployment in the Policy section (same level as Add).
 

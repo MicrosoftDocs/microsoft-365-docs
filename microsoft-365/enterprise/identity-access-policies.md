@@ -1,5 +1,5 @@
 ---
-title: Identity and device access policies overview - Microsoft 365 Enterprise | Microsoft Docs
+title: Common identity and device access policies - Microsoft 365 Enterprise | Microsoft Docs
 description: Describes the policies for Microsoft recommendations about how to apply identity and device access policies and configurations.
 author: barlanmsft
 manager: angrobe
@@ -11,7 +11,7 @@ ms.reviewer: martincoetzer
 ms.custom: it-pro
 ---
 
-# General identity and device access policy recommendations
+# Common identity and device access policies
 This article describes the common recommended policies to help you secure Microsoft 365 Enterprise. Also discussed are the default platform client configurations we recommend to provide the best SSO experience to your users, as well as the technical pre-requisites for conditional access.
 
 This guidance discusses how to deploy the recommended policies in a newly provisioned environment. Setting up these policies in a separate lab environment allows you to understand and evaluate the recommended policies before staging the rollout to your pre-production and production environments. Your newly provisioned environment may be cloud-only or Hybrid.  

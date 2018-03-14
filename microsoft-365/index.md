@@ -2,6 +2,7 @@
 layout: HubPage
 hide_bc: true
 author: CelesteDG
+localization_priority: Normal
 ms.author: celested
 ms.topic: hub-page
 keywords: Microsoft 365, Microsoft 365 documentation, Microsoft 365 for business, Microsoft 365 for enterprise, Microsoft 365 for education, enterprise, business, education, docs, documentation

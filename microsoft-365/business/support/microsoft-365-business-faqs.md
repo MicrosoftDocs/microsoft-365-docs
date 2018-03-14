@@ -5,7 +5,7 @@ author: CelesteDG 
 ms.author: celested 
 ms.topic: article 
 ms.prod: microsoft-365-business
-ms.localizationpriority: high
+localization_priority: Normal
 audience: microsoft-business 
 keywords: Microsoft 365 Business, Microsoft 365, SMB, FAQ, frequently asked questions, answers, business
 ms.date: 11/02/2017

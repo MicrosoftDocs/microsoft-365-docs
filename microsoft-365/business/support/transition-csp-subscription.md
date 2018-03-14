@@ -5,7 +5,7 @@ author: CelesteDG 
 ms.author: celested 
 ms.topic: article 
 ms.prod: microsoft-365-business
-ms.localizationpriority: high
+localization_priority: Normal
 audience: microsoft-business 
 keywords: Microsoft 365 Business, Microsoft 365, SMB, transition CSP subscription
 ms.date: 11/01/2017

@@ -7,7 +7,7 @@
       "locale": "en-us",
       "monikers": [],
       "moniker_ranges": [],
-      "open_to_public_contributors": false,
+      "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
@@ -21,6 +21,7 @@
     "brianlic@microsoft.com"
   ],
   "branches_to_filter": [],
+  "git_repository_url_open_to_public_contributors": "https://cpubwin.visualstudio.com/_git/microsoft-365",
   "skip_source_output_uploading": false,
   "need_preview_pull_request": true,
   "contribution_branch_mappings": {},

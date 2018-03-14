@@ -5,7 +5,7 @@ author: CelesteDG
 ms.author: celested
 ms.topic: hub-page
 keywords: Microsoft 365, Microsoft 365 Enterprise, Microsoft 365 documentation, Office 365, Windows 10 Enterprise, EMS, Enterprise Mobility + Security, enterprise
-ms.localizationpriority: high
+localization_priority: Normal
 audience: microsoft-business
 ms.prod: microsoft-365-enterprise
 ms.date: 01/29/2018
@@ -13,6 +13,7 @@ title: Microsoft 365 Enterprise documentation and resources
 description: Learn about the product documentation and resources available for Microsoft 365 Enterprise IT admins, information workers, and partners.
 ---
 <div id="main" class="v2">
+    <!-- Hiding
     <div class="container">
         <ul class="cardsY panelContent featuredContent">
             <li>
@@ -53,6 +54,7 @@ description: Learn about the product documentation and resources available for M
             </li>
         </ul>
     </div>
+    -->
     <div class="container">
         <h1>Microsoft 365 Enterprise documentation and resources</h1>
         <ul class="pivots">
@@ -150,7 +152,7 @@ description: Learn about the product documentation and resources available for M
                         <ul id="deploy" class="cardsG">
                             <li class="fullSpan">
                                 <div class="container intro">
-                                    <p>Get step-by-step guidance on how to plan for and deploy Office 365, Windows 10 Enterprise, and Enterprise Mobility + Security together for an integrated and secure infrastructure that enables teamwork and unlocks creativity.</p>
+                                    <p>Learn how to plan for and deploy Office 365, Windows 10 Enterprise, and Enterprise Mobility + Security together for an integrated and secure infrastructure that enables teamwork and unlocks creativity.</p>
                                 </div>
                             </li>
                             <li>
@@ -164,8 +166,8 @@ description: Learn about the product documentation and resources available for M
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>I have an existing Microsoft IT infrastructure</h3>
-                                                    <p>If you already have Windows 10 Enterprise, Office 365, or EMS, review exit criteria for Microsoft 365 Enterprise to determine what you need to change.</p>
+                                                    <h3>My company already uses Microsoft technologies</h3>
+                                                    <p>Great! You’re familiar with our products. We'll help you fine-tune your environment for Microsoft 365 Enterprise.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -173,7 +175,7 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
-                                <a href="deploy-microsoft-365-enterprise.md" target="_blank">
+                                <a href="deploy-foundation-infrastructure.md" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -183,8 +185,8 @@ description: Learn about the product documentation and resources available for M
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>I want to deploy Microsoft 365 Enterprise from scratch</h3>
-                                                    <p>Step through the phases of the end-to-end deployment process for typical IT areas of responsibility and components of Microsoft 365 Enterprise.</p>
+                                                    <h3>My company is new to Microsoft 365</h3>
+                                                    <p>Welcome! We'll help you get the most out of your investment and walk you through the deployment process.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -919,15 +921,35 @@ description: Learn about the product documentation and resources available for M
                                     </div>
                                 </a>
                             </li>
+                            <li>
+                                <a href="https://www.microsoft.com/microsoft-365/success/" target="_blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="media/hub-iw-productivitylibrary/iw-productivitylibrary-help-13.svg" alt="Microsoft 365 Enterprise Productivity Library" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Microsoft 365 Enterprise Productivity Library</h3>
+                                                    <p>Get curated training, watch videos, read recommendations, and more.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
                         </ul>
                     </li>
+                    <!--
                     <li>
                         <a data-default="true" href="#end-user-pro-2">Productivity Library</a>
                         <ul id="end-user-pro-2" class="cardsG">
                             <li class="fullSpan">
                                 <div class="container intro">
                                     <p>Employees and other users can get curated training, watch videos, read recommendations, and more from the <a href="https://www.microsoft.com/microsoft-365/success/" target="_blank">Microsoft 365 Enterprise Productivity Library</a>.</p>
-                                    <p>Here are ome links to help you get started.</p>
+                                    <p>Here are some links to help you get started.</p>
                                 </div>
                             </li>
                             <li>
@@ -1141,6 +1163,7 @@ description: Learn about the product documentation and resources available for M
                             </li>
                         </ul>
                     </li>
+                    -->
                 </ul>
             </li>
             <li>

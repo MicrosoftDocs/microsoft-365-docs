@@ -22,7 +22,7 @@ Microsoft 365 Enterprise is a combination of Office 365, Enterprise Mobility + S
 - Unlocks creativity.
 - Is built for teamwork.
 
-These benefits are not realized just by owning the licenses for these three products, by deploying them and their features in a specific way. This documentation set guides you through that deployment and the correct and required configuration of these products and their features.
+These benefits are not realized just by owning the licenses for these three products, but by deploying them and their features in a specific way. This documentation set guides you through that deployment and the correct and required configuration of these products and their features.
 
 Use the phases in the [Foundation Infrastructure documentation](deploy-foundation-infrastructure.md) to configure your organization for the requirements and capabilities of Microsoft 365 Enterprise.
 
