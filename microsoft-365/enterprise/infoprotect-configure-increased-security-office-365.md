@@ -3,7 +3,7 @@ title: "Step 4: Configure increased security for Office 365"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/02/2018
+ms.date: 03/09/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -25,14 +25,14 @@ To ensure that your Office 365 subscription and its data start off and remain se
 - Tenant-wide sharing policies in the SharePoint admin center
 - Settings in Azure Active Directory
 
+For more information, see [Configure your Office 365 tenant for increased security](https://support.office.com/article/Configure-your-Office-365-tenant-for-increased-security-8d274fe3-db51-4107-ba64-865e7155b355).
+
 Once configured, you can obtain information about your security status from:
 
 - Dashboards and reports in the Security & Compliance Center
 - [Office 365 Secure Score](https://securescore.office.com/)
 
-For more information, see [Configure your Office 365 tenant for increased security](https://support.office.com/article/Configure-your-Office-365-tenant-for-increased-security-8d274fe3-db51-4107-ba64-865e7155b355).
-
-You can also Cloud App Security or Office 365 Cloud App Security to monitor for security events and take action. For more information, see [Overview of Office 365 Cloud App Security](https://support.office.com/article/Overview-of-Office-365-Cloud-App-Security-81f0ee9a-9645-45ab-ba56-de9cbccab475).
+You can also use Cloud App Security or Office 365 Cloud App Security to monitor for security events and act. For more information, see [Overview of Office 365 Cloud App Security](https://support.office.com/article/Overview-of-Office-365-Cloud-App-Security-81f0ee9a-9645-45ab-ba56-de9cbccab475).
 
 ## Office 365 Advanced Threat Protection (ATP)
 
