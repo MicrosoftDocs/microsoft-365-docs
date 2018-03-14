@@ -3,7 +3,7 @@ title: "Step 6: Set up on-demand global administrators"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/01/2018
+ms.date: 03/13/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -25,6 +25,8 @@ Instead of your global administrator accounts being a permanent admin, they beco
 PIM is available with Azure Active Directory Premium P2, which is included with Microsoft 365 Enterprise E5. Alternately, you can purchase individual Azure Active Directory Premium P2 licenses for your global administrator accounts.
 
 To enable Azure PIM for your Azure AD tenant and global administrator accounts, see the [steps to configure PIM](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure).
+
+To develop a comprehensive roadmap to secure privileged access against cyber attackers, see [Securing privileged access for hybrid and cloud deployments in Azure AD](https://docs.microsoft.com/azure/active-directory/admin-roles-best-practices).
 
 As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria.md#crit-identity-step6) for this step.
 

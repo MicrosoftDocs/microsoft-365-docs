@@ -3,7 +3,7 @@ title: "Step 1: Plan for users and groups"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/05/2018
+ms.date: 03/13/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -51,13 +51,13 @@ Users in organizations can be categorized in a number of ways. For example, some
 - Tenant accounts represent users within your organization that you license for cloud services
 - Business to Business (B2B) accounts represent users outside your organization that you invite to participate in collaboration
 
-Take stock of the types of users to your organization. What are the logical groupings? Group users by high-level function or purpose to your organization.
+Take stock of the types of users to your organization. What are the groupings? For example, you can group users by high-level function or purpose to your organization.
 
 Additionally, some cloud services can be shared with users outside your organization without any user accounts.
 
 ## 3. Plan for Windows Server AD and Azure AD groups
 
-Groups in Azure AD are used for several purposes that simplify management of your cloud environment. For example, for Azure AD groups, you can:
+You can use groups in Azure AD for several purposes that simplify management of your cloud environment. For example, for Azure AD groups, you can:
 
 - Use group-based licensing to assign licenses for Office 365 and Enterprise Mobility + Security (EMS) to your user accounts automatically as soon as they are added in Azure AD or synchronized from Windows Server AD. 
 - Add user accounts to specific groups dynamically based on user account attributes, such as department.  
@@ -66,7 +66,7 @@ Groups in Azure AD are used for several purposes that simplify management of you
 
 ## Results
 
-The results of this step are:
+When you complete this step, you’ll have:
 
 - A list of user accounts in Azure AD that correspond to the employees in your organization and the vendors, contractors, and external partners that work for or with your organization.
 - A set of groups and their membership in Azure AD that reflect logical sets of user accounts and other groups for automatic licensing provisioning of security settings for Microsoft cloud services.

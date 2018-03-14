@@ -1,7 +1,7 @@
 <a name="crit-infoprotect-step1"></a>
 ### Required: Security and information protection levels for your organization are defined
 
-You have determined the security levels that your organization needs. These levels define a minimum level of security and additional levels for increasingly sensitive information and their corresponding data security.
+You have planned for and determined the security levels that your organization needs. These levels define a minimum level of security and additional levels for increasingly sensitive information and their required data security.
 
 At a minimum, you are using three levels of information protection:
 
