@@ -2,12 +2,7 @@
 title: "Phase 1: Networking infrastructure for Microsoft 365 Enterprise"
 ms.author: josephd
 author: JoeDavies-MSFT
-manager: laurawi
-<<<<<<< HEAD
-ms.date: 03/13/2018
-=======
-ms.date: 01/29/2018
->>>>>>> master
+manager: laurawims.date: 03/13/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -26,7 +21,6 @@ In this phase, you step through the key considerations for creating a performant
 
 >[!Note]
 >If you already have a networking infrastructure deployed, please see the [exit criteria](networking-exit-criteria.md) for this phase to make sure that it meets the required and optional criteria for Microsoft 365 Enterprise.
->
 
 ## Plan and deploy your Microsoft 365 Enterprise networking infrastructure 
 
@@ -38,11 +32,7 @@ Use the following steps to build out your networking infrastructure for the requ
 - [Step 4: Implement your plan for endpoint change management](networking-implement-endpoint-change-mgmt.md)
 - [Step 5: Optimize TCP and application performance](networking-optimize-tcp-performance.md)
 
-<<<<<<< HEAD
 When you've completed these steps, go to the [exit criteria](networking-exit-criteria.md) for this phase to ensure that you meet the required and optional conditions for Microsoft 365 Enterprise.
-=======
-When have completed these steps, go to the [exit criteria](networking-exit-criteria.md) for this phase to ensure that you meet the required criteria for Microsoft 365.
->>>>>>> master
 
 ## Next step
 
