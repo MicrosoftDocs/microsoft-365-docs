@@ -49,7 +49,7 @@
 ### [Common identity and device access policies](identity-access-policies.md)
 ### [Recommended Exchange Online access policies](secure-email-recommended-policies.md)
 ### [Recommended SharePoint Online access policies](sharepoint-file-access-policies.md)
-# [Microsoft 365 Compliance solutions](placeholder.md)
+# [Microsoft 365 Compliance solutions](../compliance/placeholder.md)
 ## [GDPR](../compliance/placeholder.md)
 ### [Information protection](../compliance/placeholder.md)
 ### [Data subject requests](../compliance/placeholder.md)
