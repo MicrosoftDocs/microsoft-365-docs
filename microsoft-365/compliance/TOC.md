@@ -1,4 +1,4 @@
-# [Microsoft 365 Compliance solutions](placeholder.md)
+# [Compliance solutions](placeholder.md)
 ## [GDPR](placeholder.md)
 ### [Information protection](placeholder.md)
 ### [Data subject requests](placeholder.md)
