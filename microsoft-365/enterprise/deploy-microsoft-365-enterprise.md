@@ -1,6 +1,8 @@
+
 ---
 title: "Deploy Microsoft 365 Enterprise"
 author: JoeDavies-MSFT
+ms.author: josephd
 manager: laurawi
 ms.date: 01/29/2018
 ms.audience: ITPro
