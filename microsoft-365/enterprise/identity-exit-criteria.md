@@ -186,7 +186,7 @@ If needed, [Step 8](identity-single-sign-on.md) can help you with this option.
 
 
 <a name="crit-identity-step11"></a>
-## Group-based licensing to automatically assign and remove licenses to user accounts based on group membership
+## Optional: Group-based licensing to automatically assign and remove licenses to user accounts based on group membership
 
 You [enabled group-based licensing](https://docs.microsoft.com/azure/active-directory/active-directory-licensing-group-assignment-azure-portal) for the appropriate Azure AD security groups so that licenses for both Office 365 and EMS are automatically assigned or removed.
 
@@ -207,7 +207,7 @@ If needed, [Step 11](identity-group-based-licensing.md) can help you with this o
 6. Delete the test security group and the test user account.
 
 <a name="crit-identity-step12"></a>
-## Dynamic group membership settings automatically add user accounts to groups based on user account attributes
+## Optional: Dynamic group membership settings automatically add user accounts to groups based on user account attributes
 
 You have determined the set of Azure AD dynamic groups and used the instructions in [Attribute-based dynamic group membership in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal) to create the groups and the rules that determine the set of user account attributes and values for group membership.
 
