@@ -36,6 +36,8 @@ Before you can exit each phase, you must examine its exit criteria, which is a s
 
 FastTrack is an ongoing and repeatable benefit—available as part of your subscription—that is delivered by Microsoft engineers to help you move to the cloud at your own pace. FastTrack also gives you access to qualified partners for additional services, as needed. With over 40,000 customers enabled to date, FastTrack helps maximize ROI, accelerate deployment, and increase adoption across your organization. See [FastTrack for Microsoft 365](https://fasttrack.microsoft.com/microsoft365).
 
+If you want to take advantage of FastTrack to deploy Microsoft 365, you can use the FastTrack <a href="https://aka.ms/microsoft365setupguide" target="_blank">Microsoft 365 deployment advisor</a> for guidance on how to get current.
+
 ## Next step
 
 If you have existing infrastructure for Office 365, Enterprise Mobility + Security, or Windows 10 Enterprise, see [Deployment of Microsoft 365 Enterprise with existing infrastructure](deploy-with-existing-infrastructure.md). This article steps you through exit criteria for each phase to more quickly determine what you need to change and make your IT infrastructure Microsoft 365 Enterprise-compliant.
