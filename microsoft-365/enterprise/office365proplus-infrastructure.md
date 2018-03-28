@@ -16,7 +16,7 @@ description: The steps and exit criteria to deploy the Office 365 ProPlus infras
 
 # Phase 4: Office 365 ProPlus
 
-Microsoft 365 Enterprise includes Office 365 ProPlus, the subscription version of Office that includes all the Office applications, installed directly on your client devices. Unlike Office 2016, Office 365 ProPlus is updated with new features on a regular basis, as often as monthly. Office 365 ProPlus also has a user-based licensing model that allows people to install Office on up to 5 PCs or Macs and on their mobile devices. For more details, see [About Office 365 ProPlus in the enterprise](https://docs.microsoft.com/en-us/deployoffice/about-office-365-proplus-in-the-enterprise).
+Microsoft 365 Enterprise includes Office 365 ProPlus, the subscription version of Office. Like Office 2016, Office 365 ProPlus includes all the Office applications, and those applications are installed directly on your client devices. Unlike Office 2016, Office 365 ProPlus is updated with new features on a regular basis and has a user-based licensing model that allows people to install Office on up to 5 PCs or Macs and on their mobile devices. For more details, see [About Office 365 ProPlus in the enterprise](https://docs.microsoft.com/en-us/deployoffice/about-office-365-proplus-in-the-enterprise).
 
 In this phase, you deploy Office 365 ProPlus to client devices as part of Microsoft 365 Enterprise. In addition to this guidance, we recommend you use [Microsoft Fastrack](https://fasttrack.microsoft.com/office) to help with your deployment. 
 
@@ -34,17 +34,32 @@ After assessing your environment, follow the guidance in  [Plan your deployment 
 
 - How to deploy Office, including what tool to use (such as System Center Configuration Manger or the Office Deployment Tool) and where to install Office from
 - How to manage updates to Office
-- Which update channels to use, which controls how frequently your users receive feature updates to their Office applications
-- The Office installation packages and deployment groups you want to use
+- Which update channels to use. Update channels for Office control how frequently your users receive feature updates to their Office applications, from monthly to every six months
+- The Office installation packages and deployment groups you want to use, including which Office applications and langauges should be installed for which users
 
+The [planning article](https://docs.microsoft.com/en-us/DeployOffice/plan-office-365-proplus) includes best practices for all these options, including managing your deploying, managing your updates, defining installation packages, and creating deployment groups. 
 
+## Step 3: Deploy
 
-- [Step 1: Review requirements](office365proplus-perform-techinventory-envassess-busrequirements.md)
-- [Step 2: Plan the deployment](office365proplus-classify-target-devices-deployment-groups.md)
-- [Step 3: Deploy Office 365 ProPlus](office365proplus-deploy-office365-proplus.md)
+As part of the deployment plan, you chose how to deploy and manage Office 365 ProPlus in your organization, including deciding among the following main deployment scenarios:
 
-When you've completed these steps, go to the [exit criteria](office365proplus-exit-criteria.md) for this phase to ensure that you meet the required conditions for Microsoft 365 Enterprise.
+- **Deploy from a local source with Configuration Manager:** Manage your deployment with Configuration Manager, and download and deploy Office from distribution points on your network.
+
+- **Deploy from the cloud with the Office Deployment Tool:** Manage your deployment with the ODT, and install Office on client devices directly from the Office CDN.
+ 
+- **Deploy from a local source with the Office Deployment Tool:** Manage your deployment with the ODT, and download and deploy Office from a local source on your network. 
+
+- **Self-install from the cloud:** Manage your deployment from the Office portal and have your users install Office on their client devices directly from the portal.
+
+Many organizations will use a combination of these options for different users. For example, an organization might use Configuration Manager to deploy Office to most of their users, but enable self-install for a small group of workers who are not frequently connected to the internal network. 
+
+Depending on your deployment plan, go to one of the following articles:
+
+- [Deploy Office 365 ProPlus with System Center Configuration Manager](deploy-office-365-proplus-with-Configuration-Manager.md)
+- [Deploy Office 365 ProPlus with the ODT from the cloud](deploy-office-365-proplus-from-the-cloud.md)
+- [Deploy Office 365 ProPlus with the ODT from a local source](deploy-office-365-proplus-from-a-local-source.md)
+- [[ADD SELF-INSTALL LINK]]
 
 ## Next step
 
-[Step 1: Review requirements](office365proplus-perform-techinventory-envassess-busrequirements.md)
+When you've completed these steps, go to the [exit criteria](office365proplus-exit-criteria.md) for this phase to ensure that you meet the required conditions for Microsoft 365 Enterprise.
