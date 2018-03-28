@@ -26,18 +26,18 @@ In this phase, you deploy Office 365 ProPlus to client devices as part of Micros
 
 ## Step 1: Assess your environment
 
-Before deploying Office 365 ProPlus, follow the guidance in [Assess your environment and requirements for deploying Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/assess-office-365-proplus). That assessment includes system requirements, details of your client devices (such as architectures and required languages), licensing requirements, network capability, and application compatibility. Completing the assessment will help you make key decisions as part of planning your deployment.
+Before deploying Office 365 ProPlus, follow the guidance in [Assess your environment and requirements for deploying Office 365 ProPlus](https://docs.microsoft.com/deployoffice/best-practices/best-practices-assessing-your-infrastructure). That assessment includes system requirements, details of your client devices (such as architectures and required languages), licensing requirements, network capability, and application compatibility. Completing the assessment will help you make key decisions as part of planning your deployment.
 
 ## Step 2: Plan your deployment
 
-After assessing your environment, follow the guidance in [Plan your deployment of Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/plan-office-365-proplus) to create a deployment plan. This plan includes the following decisions: 
+After assessing your environment, follow the guidance in [Plan your deployment of Office 365 ProPlus](https://docs.microsoft.com/deployoffice/best-practices/best-practices-planning-your-deployment-of-office-365-proplus) to create a deployment plan. This plan includes the following decisions: 
 
 - How to deploy Office, including what tool to use (such as System Center Configuration Manger or the Office Deployment Tool) and where to install Office from
 - How to manage updates to Office
 - Which update channels to use. Update channels for Office control how frequently your users receive feature updates to their Office applications
 - The Office installation packages and deployment groups you want to use, including which Office applications and langauges should be installed for which users
 
-The [planning article](https://docs.microsoft.com/DeployOffice/plan-office-365-proplus) includes best practices for all these options, including managing your deployment, managing your updates, defining installation packages, and creating deployment groups. 
+The [planning article](https://docs.microsoft.com/deployoffice/best-practices/best-practices-planning-your-deployment-of-office-365-proplus) includes best practices for all these options, including managing your deployment, managing your updates, defining installation packages, and creating deployment groups. 
 
 ## Step 3: Deploy
 
