@@ -3,7 +3,7 @@ title: "Phase 4: Office 365 ProPlus"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/13/2018
+ms.date: 03/29/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -11,7 +11,7 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom:
 - Strat_O365_Enterprise
-description: The steps and exit criteria to deploy the Office 365 ProPlus infrastructure for Microsoft 365 Enterprise.
+description: The steps to deploy the Office 365 ProPlus infrastructure for Microsoft 365 Enterprise.
 ---
 
 # Phase 4: Office 365 ProPlus
@@ -32,7 +32,7 @@ Before deploying Office 365 ProPlus, follow the guidance in [Assess your environ
 
 After assessing your environment, follow the guidance in [Plan your deployment of Office 365 ProPlus](https://docs.microsoft.com/deployoffice/best-practices/best-practices-planning-your-deployment-of-office-365-proplus) to create a deployment plan. This plan includes the following decisions: 
 
-- How to deploy Office, including what tool to use (such as System Center Configuration Manger or the Office Deployment Tool) and where to install Office from
+- How to deploy Office, including what tool to use (such as System Center Configuration Manger or the Office Deployment Tool [ODT]) and where to install Office from
 - How to manage updates to Office
 - Which update channels to use. Update channels for Office control how frequently your users receive feature updates to their Office applications
 - The Office installation packages and deployment groups you want to use, including which Office applications and langauges should be installed for which users
