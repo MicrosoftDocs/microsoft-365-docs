@@ -14,15 +14,6 @@ ms.custom: it-pro
 # Common identity and device access policies
 This article describes the recommended prerequisites, clients, and policies to protect your Microsoft 365 Enterprise environment. Policies are recommended for three tiers of protection --- baseline, sensitive, and highly regulated.
 
-[Prerequisites](#prerequisites)
-
-[Recommended clients](#recommended-clients)
-
-[Policies for baseline protection](#baseline)
-
-[Policies for sensitive protection](#sensitive)
-
-[Policies for highly regulated protection](#highly-regulated)
 
 This guidance works with the following identity and device environments:
 - Cloud only: Azure AD & Intune
