@@ -5,7 +5,7 @@ author: barlanmsft
 manager: angrobe
 ms.prod: microsoft-365-enterprise
 ms.topic: article
-ms.date: 12/10/2017
+ms.date: 04/02/2018
 ms.author: barlan
 ms.reviewer: martincoetzer
 ms.custom: it-pro
