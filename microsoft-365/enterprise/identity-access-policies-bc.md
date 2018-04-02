@@ -21,7 +21,7 @@ This guidance works with Intune and the following identity environments:
 - Active Directory with pass-through authentication 
 - Federated with Active Directory Federation Services (AD FS)
 
-For more informatio about these environments, see "Architectures for identity integration and device management with Microsoft 365."
+For more informatio about these environments, see "[Architectures for identity integration and device management with Microsoft 365](https://microsoft.sharepoint.com/:w:/r/teams/OfficeContentExperienceTeam/CommercialCX/O365Enterprise/_layouts/15/doc.aspx?sourcedoc=%7B5860a2fd-1ef5-4649-94b4-3a9ff6713bde%7D&action=edit&uid=%7B5860A2FD-1EF5-4649-94B4-3A9FF6713BDE%7D&ListItemId=1306&ListId=%7B0EDDAF13-8B9C-491D-8989-96467B25F0FE%7D&odsp=1&env=prodbubble)."
 
 This guidance discusses how to deploy the recommended policies in a newly provisioned environment. Setting up these policies in a separate lab environment allows you to understand and evaluate the recommended policies before staging the rollout to your pre-production and production environments. For help setting up a lab environment, see [The Microsoft 365 Enterprise dev/test environment](https://docs.microsoft.com/en-us/office365/enterprise/the-microsoft-365-enterprise-dev-test-environment).  
 
