@@ -18,7 +18,7 @@ This article describes the recommended technical prerequisites, clients, and acc
 This guidance works with Intune and the following identity environments:
 - Cloud only: Azure Active Directory (Azure AD) with no on-premises integration
 - Active Directory with password hash sync
-- Active Directory with pass-through authentication (and Intune)
+- Active Directory with pass-through authentication 
 - Federated with Active Directory Federation Services (AD FS)
 
 For more informatio about these environments, see "Architectures for identity integration and device management with Microsoft 365."
