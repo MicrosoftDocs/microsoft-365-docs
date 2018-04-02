@@ -15,8 +15,8 @@ ms.custom: it-pro
 This article describes the recommended technical prerequisites, clients, and access policies to protect your Microsoft 365 Enterprise environment. Policies are recommended for three tiers of protection: baseline, sensitive, and highly regulated.
 
 
-This guidance works with the following identity and device environments:
-- Cloud only: Azure AD & Intune
+This guidance works with the following identity and device management environments:
+- Cloud only: Azure Active Directory (Azure AD) with Intune
 - Active Directory with password hash sync
 - Active Directory with pass-through authentication
 - Federated with Active Directory Federation Services (AD FS)
