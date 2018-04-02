@@ -30,7 +30,7 @@ You can target both Azure AD and Intune policies towards specific groups of user
 
 ## Prerequisites
 
-Before implementing the policies described in the remainder of this document, there are several prerequisites that your organization must meet:
+Before implementing the policies described in the remainder of this document, there are several prerequisites that your organization must meet. See the following table to see which prerequisites apply to your environment. 
 
 
 | Configuration | Cloud only | Active Direcotry with password hash sync | Active Directory with pass-through authentication | Federation with AD FS |
