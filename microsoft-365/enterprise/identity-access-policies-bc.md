@@ -12,7 +12,7 @@ ms.custom: it-pro
 ---
 
 # Common identity and device access policies
-This article describes the recommended prerequisites, clients, and policies to protect your Microsoft 365 Enterprise environment. Policies are recommended for three tiers of protection --- baseline, sensitive, and highly regulated.
+This article describes the recommended prerequisites, clients, and policies to protect your Microsoft 365 Enterprise environment. Policies are recommended for three tiers of protection: baseline, sensitive, and highly regulated.
 
 
 This guidance works with the following identity and device environments:
@@ -35,7 +35,7 @@ Before implementing the policies described in the remainder of this document, th
 
 | Configuration | Cloud only | Active Direcotry with password hash synch | Active Directory with pass-through authentication | Federation with AD FS |
 | :------------- | :-----------: | :--------------: | :-------------: | :------------: |
-|  [Configure Password Hash Sync](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-implement-password-synchronization) --- This must be enabled to detect leaked credentials and to act on them for risk based Conditional Access. **Note:** This is required, regardless of whether your organization use managed, like Pass Through Authentication (PTA), or federated authentication. |    | * | * | * |
+|  [Configure Password Hash Sync](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-implement-password-synchronization). This must be enabled to detect leaked credentials and to act on them for risk based Conditional Access. **Note:** This is required, regardless of whether your organization use managed, like Pass Through Authentication (PTA), or federated authentication. |    | *** | * | * |
 | [Enable seamless single sign-on](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect-sso) to automatically sign users in when they are on their corporate devices connected to your corporate network. |  | * | * | |
 | [Configure named networks](https://docs.microsoft.com/azure/active-directory/active-directory-known-networks-azure-portal). Azure AD Identity Protection collects and analyzes all available session data to generate a risk score. We recommend that you specify your organization's public IP ranges for your network in the Azure AD named networks configuration. Traffic coming from these ranges is given a reduced risk score, so traffic from outside the corporate environment is treated as higher risk score. | *  | * | * | * |
 | [Register all users with multi-factor authentication (MFA)](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-manage-users-and-devices). Azure AD Identity Protection makes use of Azure MFA to perform additional security verification. We recommend that you require all users to register for Azure MFA ahead of time. | * | * | * | * |
