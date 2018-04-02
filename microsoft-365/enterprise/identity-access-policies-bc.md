@@ -12,7 +12,7 @@ ms.custom: it-pro
 ---
 
 # Common identity and device access policies
-This article describes the recommended prerequisites, clients, and policies to protect your Microsoft 365 Enterprise environment. Policies are recommended for three tiers of protection: baseline, sensitive, and highly regulated.
+This article describes the recommended technical prerequisites, clients, and access policies to protect your Microsoft 365 Enterprise environment. Policies are recommended for three tiers of protection: baseline, sensitive, and highly regulated.
 
 
 This guidance works with the following identity and device environments:
