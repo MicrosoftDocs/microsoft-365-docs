@@ -16,12 +16,14 @@ description: The steps to deploy the networking infrastructure for Microsoft 365
 
 # Phase 1: Networking infrastructure for Microsoft 365 Enterprise
 
+![](./media/deploy-foundation-infrastructure/networking_icon.png)
+
 Microsoft 365 Enterprise includes Office 365 and Windows Intune as part of Enterprise Management + Security (EMS). Both of these cloud-based services rely on the security, performance, and reliability of connections from client devices over the Internet or dedicated circuits. To host these services and make them available to customers all over the world, Microsoft has designed a networking infrastructure that emphasizes performance and integration. 
 
 In this phase, you step through the key considerations for creating a performant connection to the cloud services of Microsoft 365 Enterprise. For an overview, see [Office 365 networking principles](https://techcommunity.microsoft.com/t5/Office-365-Blog/Getting-the-best-connectivity-and-performance-in-Office-365/ba-p/124694).
 
 >[!Note]
->If you already have a networking infrastructure deployed, please see the [exit criteria](networking-exit-criteria.md) for this phase to make sure that it meets the required and optional criteria for Microsoft 365 Enterprise.
+>If you already have a networking infrastructure deployed, please see the [exit criteria](networking-exit-criteria.md) for this phase to make sure that it meets the required and optional conditions for Microsoft 365 Enterprise.
 
 ## Plan and deploy your Microsoft 365 Enterprise networking infrastructure 
 
