@@ -13,6 +13,8 @@ ms.author: celested
 
 # Phase 3: Windows 10 Enterprise
 
+![](./media/deploy-foundation-infrastructure/win10enterprise_icon.png)
+
 Microsoft 365 Enterprise includes Windows 10 Enterprise, which gives organizations the tools you need to do more and stay secure. Windows 10 is:
 * **Integrated for simplicity** - Harness the power of the cloud to help reduce the complexity of managing today's modern IT device environment, no matter the size.
 * **Intelligent security** - Is the most secure release of Windows ever, with intelligent security capabilities that are designed to work together to better protect your organization.
