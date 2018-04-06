@@ -2,4 +2,5 @@
 ## [GDPR](gdpr.md)
 ### [Information protection](gdpr-information-protection.md)
 ### [Data subject requests](gdpr-data-subject-requests.md)
+#### Office 365 (gdpr-dsr-Office365)
 ### [Breach investigation](gdpr-breach-investigation.md)
