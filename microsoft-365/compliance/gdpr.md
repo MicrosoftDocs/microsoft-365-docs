@@ -12,7 +12,7 @@ ms.author: celested
 
 # GDPR
 
-This library provides technical guidance for working toward compliance with the General Data Protection Regulation (GDPR).
+This library provides technical guidance for the General Data Protection Regulation (GDPR).
 
 In additon to this library, be sure to review the resources for GDPR in the Microsoft Trust Center.
 
