@@ -1,6 +1,8 @@
+
 ---
 title: "Microsoft 365 Enterprise foundation infrastructure"
 author: JoeDavies-MSFT
+ms.author: josephd
 manager: laurawi
 ms.date: 04/04/2018
 ms.audience: ITPro
