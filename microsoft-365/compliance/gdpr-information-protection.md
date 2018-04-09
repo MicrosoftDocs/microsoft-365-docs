@@ -14,6 +14,10 @@ ms.author: celested
 
 Microsoft 365 provides a rich set of capabilities to help you achieve compliance with the General Data Protection Regulation (GDPR). This article summarizes recommended capabilities with links to more information.
 
+## Information protection
+
+Office 365 provides a rich set of data governance capabilities. For help with finding, classifying, protecting, and monitoring personal data, see [Office 365 Information Protection for GDPR](https://docs.microsoft.com/en-us/office365/enterprise/office-365-information-protection-for-gdpr). 
+
 ## Identity and access management
 
 Azure Active Directory and other Microsoft 365 capabilities provide a rich set of capabilities to protect access to your data from identities and devices:
@@ -28,9 +32,6 @@ Microsoft provides a recommended configuration you can use as a starting point:
 - [Identity and device access configurations](../enterprise/identity-device-policies.md): Recommended policy configurations to achieve three tiers of protection (baseline, sensitive, highly regulated). This guidance includes recommended policies for Exchange Online and SharePoint Online (including OneDrive for Business).
 - [Security guidance for political campaigns, nonprofits, and other agile organizations](https://docs.microsoft.com/en-us/office365/enterprise/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o): This includes the same set of policies but provides additional guidance for BYOD environments and for B2B accounts.
 
-## Information protection
-
-Office 365 provides a rich set of data governance capabilities. For help with finding, classifying, protecting, and monitoring personal data, see [Office 365 Information Protection for GDPR](https://docs.microsoft.com/en-us/office365/enterprise/office-365-information-protection-for-gdpr). 
 
 ## Threat Protection
 
