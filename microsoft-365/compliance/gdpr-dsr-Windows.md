@@ -19,5 +19,5 @@ ms.collection: GDPR
 TBD
 
 ## Learn more
-TBD
+[Microsoft Trust Center](https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx)
 

@@ -1,14 +1,17 @@
 ---
 title: Data Subject Requests for Azure
-description: Describe the purpose of this topic, what the content is, etc.
-keywords: Microsoft 365, Microsoft 365 Education, Microsoft 365 documentation, deployment
-author: CelesteDG
-localization_priority: Normal
+description: 
+keywords: Microsoft 365, Microsoft 365 Education, Microsoft 365 documentation, GDPR
+author: BrendaCarter
+localization_priority: Priority
 audience: microsoft-business
-ms.prod: microsoft-365-education
+ms.prod: Microsoft-365-enterprise
 ms.topic: article
-ms.date: 04/15/2018
-ms.author: celested
+ms.date: 04/13/2018
+ms.author: bcarter
+manager: laurawi
+audience: itpro
+ms.collection: GDPR
 ---
 
 # Data Subject Requests for Azure
@@ -16,4 +19,4 @@ ms.author: celested
 TBD
 
 ## Learn more
-TBD
+[Microsoft Trust Center](https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx)

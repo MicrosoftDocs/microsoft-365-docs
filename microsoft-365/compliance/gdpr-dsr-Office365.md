@@ -1,6 +1,6 @@
 ---
 title: Data Subject Requests for Office 365 Services
-description:
+description: 
 keywords: Microsoft 365, Microsoft 365 Education, Microsoft 365 documentation, GDPR
 author: BrendaCarter
 localization_priority: Priority
@@ -19,5 +19,5 @@ ms.collection: GDPR
 TBD
 
 ## Learn more
-TBD
+[Microsoft Trust Center](https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx)
 

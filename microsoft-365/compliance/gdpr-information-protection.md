@@ -40,4 +40,5 @@ Threat protection is built across Microsoft 365 services. Here are a few resourc
 - [Windows Threat Protection](https://docs.microsoft.com/en-us/windows/security/threat-protection/). Learn more about Windows Defender Advanced Threat Protection and other capabilities in Windows 10.
 
 
-
+## Learn more
+[Microsoft Trust Center](https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx)
