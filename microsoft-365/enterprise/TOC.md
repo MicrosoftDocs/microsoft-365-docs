@@ -60,4 +60,9 @@
 
 #### [Dynamics 365](../compliance/gdpr-dsr-Dynamics365.md) 
 #### [Microsoft Support and Professional Services](../compliance/gdpr-dsr-Microsoft-Support-Professional-Services.md) 
-### [Breach investigation](../compliance/gdpr-breach-investigation.md?toc=/microsoft-365/enterprise/toc.json)
+### [Breach notification](../compliance/gdpr-breach-investigation.md?toc=/microsoft-365/enterprise/toc.json)
+#### [Office 365](../compliance/gdpr-breach-Office365.md)
+#### [Windows](../compliance/gdpr-breach-Windows.md)
+#### [Azure](../compliance/gdpr-breach-Azure.md)
+#### [Dynamics 365](../compliance/gdpr-breach-Dynamics365.md)
+#### [Microsoft Support and Professional Services](../compliance/gdpr-breach-Microsoft-Support-Professional-Services.md)
