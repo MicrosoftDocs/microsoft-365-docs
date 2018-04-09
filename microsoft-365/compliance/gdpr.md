@@ -12,11 +12,15 @@ ms.author: celested
 
 # GDPR
 
-This library provides technical guidance for the General Data Protection Regulation (GDPR).
+This library provides technical guidance for the General Data Protection Regulation (GDPR):
+- [Information protection](gdpr-information-protection.md)
+- [Data subject requests](gdpr-data-subject-requests.md)
+- [Breach notification](gdpr-breach-investigation.md)
 
 In additon to this library, be sure to review the resources for GDPR in the Microsoft Trust Center.
 
 
-
+## Learn more
+[Microsoft Trust Center](https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx)
 
 
