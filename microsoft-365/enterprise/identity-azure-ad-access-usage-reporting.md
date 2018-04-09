@@ -1,9 +1,9 @@
 ---
-title: "Step 13: Azure AD access and usage reporting"
+title: "Step 13: Monitor tenant and sign-in activity"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 01/29/2018
+ms.date: 03/01/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -14,25 +14,22 @@ ms.custom:
 description: Understand and configure Azure AD access and usage reporting.
 ---
 
-# Step 13: Azure AD access and usage reporting
+# Step 13: Monitor tenant and sign-in activity
 
-![This step is optional and applies to both the E3 and E5 versions of Microsoft 365 Enterprise](./media/banners/Banner-Optional-BothSKUs.png)
+*This step is optional and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
 
-With Azure AD reporting, you can view access and usage reporting information from two different sources:
+In Step 13, you review audit logs and sign-in activity using Azure AD reporting. Two types of reports are available.
 
-- Audit logs that record the history of every task performed in your Azure AD tenant.
-- Sign-ins record who has performed the tasks reported by the audit logs report.
+The **Audit logs activity report** records the history of every task performed in your Azure AD tenant. This report answers questions like:
 
-The audit logs report allows you to address common questions such as: 
-
-- Who added someone to an admin group? 
+- Who added someone to an admin group?
 - Which users are signing into a specific app?
 - How many password resets are happening?
 
-The sign-ins activity report allows you to find answers to questions such as:
+The **Sign-ins activity report** records who performed the tasks reported by the audit logs report. This report answers questions like:
 
 - For a specific user under investigation, what is their sign-in pattern?
-- What is my volume of sign-ins over a day, a week, or a month?
+- What is my volume of sign-ins over a day, week, or month?
 - How many of these sign-in attempts were not successful, and for which accounts?
 
 For more information about the reports and how to access them, see [Azure Active Directory reporting](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-azure-portal).
@@ -41,5 +38,5 @@ The results of this step are the awareness of these reports and a determination 
 
 ## Next step
 
-[Step 14: Self-service group management](identity-self-service-group-management.md)
+[Step 14: Allow users to create and manage their own groups](identity-self-service-group-management.md)
 

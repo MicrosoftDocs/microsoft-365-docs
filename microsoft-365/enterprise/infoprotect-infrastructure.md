@@ -1,9 +1,9 @@
 ---
-title: "Phase 6: Information protection infrastructure for Microsoft 365 Enterprise"
+title: "Phase 6: Information protection"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 01/29/2018
+ms.date: 03/13/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -11,31 +11,31 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom:
 - Strat_O365_Enterprise
-description: The steps to deploy the identity infrastructure for Microsoft 365 Enterprise.
+description: The steps to deploy the information protection infrastructure for Microsoft 365 Enterprise.
 ---
 
+# Phase 6: Information protection
 
-# Phase 6: Information protection infrastructure for Microsoft 365 Enterprise
+![](./media/deploy-foundation-infrastructure/infoprotection_icon.png)
 
-Microsoft 365 Enterprise includes Office 365 and Enterprise Management + Security (EMS), which includes a host of information protection capabilities and features to provide baseline to advanced security. In this phase, you step through the determination, configuration, and the enabling of information protection settings and features that make your infrastructure ready to host cloud-based workloads that store both your everyday to most valuable data, and those in between.
+Information protection is a set of policies and technologies that define how you transmit, store, and process sensitive information. In Phase 6, you step through information protection settings and features of Microsoft 365 Enterprise that help you secure data for your cloud-based workloads.
 
 >[!Note]
->If you already have an information protection infrastructure deployed with elements of information protection already in place, please see the [exit criteria](infoprotect-exit-criteria.md) for this phase to make sure that it meets the required and optional criteria for Microsoft 365 Enterprise.
+>If you already have already deployed information protection, please see the [exit criteria](infoprotect-exit-criteria.md) for this phase to make sure that it meets the required and optional conditions for Microsoft 365 Enterprise.
 >
 
 ## Plan and deploy your Microsoft 365 Enterprise information protection infrastructure 
 
-Information protection infrastructure is not an IT-only function. You must work with your legal and compliance teams to determine if your organization needs to meet compliance standards such as HIPPA, CJIS, or GDPR. Also work within your organization to determine the objectives for information protection.
+It’s important to work with your legal and compliance teams to determine if your organization needs to meet compliance standards such as HIPPA, CJIS, or GDPR. You should also work with your security group to determine the objectives for information protection for your organization and for departments or groups that require additional security.
 
-Next, use the following steps to build out your information protection infrastructure for the requirements and capabilities of Microsoft 365 Enterprise.
+Next, use the following steps to build out information protection for Microsoft 365 Enterprise.
 
 - [Step 1: Define security and information protection levels](infoprotect-define-sec-infoprotect-levels.md)
-- [Step 2: Configure conditional access policy settings](infoprotect-configure-conditional-access-policy-settings.md)
+- [Step 2: Configure conditional access policies](infoprotect-configure-conditional-access-policy-settings.md)
 - [Step 3: Configure classification for your environment](infoprotect-configure-classification.md)
 - [Step 4: Configure increased security for Office 365](infoprotect-configure-increased-security-office-365.md)
 
-When have completed these steps, go to the [exit criteria](infoprotect-exit-criteria.md) for this phase to ensure that you meet the required criteria for Microsoft 365.
-
+When you've completed these steps, go to the [exit criteria](infoprotect-exit-criteria.md) for this phase to ensure that you meet the required and optional conditions for Microsoft 365 Enterprise.
 
 ## Next step
 

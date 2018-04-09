@@ -1,7 +1,7 @@
 ---
 title: Enable Windows 10 Enterprise security features | Microsoft docs
 description: Provides a high-level guidance on the steps you need to deploy Windows 10 Enterprise on PCs as part of Microsoft 365 Enterprise.
-keywords: Microsoft 365, Microsoft 365 Enterprise, Microsoft 365 documentation, Windows 10 Enterprise, deployment
+keywords: Microsoft 365, Microsoft 365 Enterprise, Microsoft 365 documentation, Windows 10 Enterprise, security
 author: CelesteDG
 localization_priority: Normal
 audience: microsoft-business
@@ -19,7 +19,7 @@ To learn more about these technologies, see:
 * [Device security](https://docs.microsoft.com/en-us/windows/device-security/) - Includes AppLocker, BitLocker, Device Guard, and Trusted Platform Module
 * [Threat protection](https://docs.microsoft.com/en-us/windows/threat-protection/) - Includes Windows Defender Security Center, Windows Defender Advanced Threat Protection, Windows Defender Antivirus, Windows Defender Application Guard, Windows Defender Smart Screen, and Windows Information Protection
 
-Here, we'll show you how you can deploy, manage, configure, and troubleshoot using these security features:
+Here, we'll give you pointers and links to guides that show you how you can deploy, manage, configure, and troubleshoot using these security features:
 * [Windows Defender Antivirus](#windows-defender-antivirus)
 * [Windows Defender Exploit Guard](#windows-defender-exploit-guard)
 * [Windows Defender Advanced Threat Protection](#windows-defender-advanced-threat-protection)

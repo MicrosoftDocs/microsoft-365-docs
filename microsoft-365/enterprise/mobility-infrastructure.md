@@ -17,6 +17,8 @@ audience: ITPro
 
 # Phase 5: Mobile device management infrastructure for Microsoft 365 Enterprise
 
+![](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon.png)
+
 To secure data on your device, you'll use Microsoft Intune. Mobile device management with Intune requires you complete some tasks, including:
 1. [Set up Intune](https://docs.microsoft.com/intune/setup-steps)
 2. [Enroll devices for management](https://docs.microsoft.com/intune/windows-enroll)
@@ -25,6 +27,5 @@ To secure data on your device, you'll use Microsoft Intune. Mobile device manage
 The entire library of Intune documentation is [available online](https://docs.microsoft.com/intune).
 
 
-## Next step
-
-[Phase 6: Information protection infrastructure](infoprotect-infrastructure.md)
+## Next phase
+Your next phase in the end-to-end deployment process for Microsoft 365 Enterprise is [information protection](infoprotect-infrastructure.md).
