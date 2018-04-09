@@ -57,7 +57,7 @@
 #### [Office 365](../compliance/gdpr-dsr-Office365.md) 
 #### [Windows](../compliance/gdpr-dsr-Windows.md) 
 #### [Azure](../compliance/gdpr-dsr-Azure.md) 
-#### [Intune](../compliance/gdpr-dsr-Intune.md) 
+
 #### [Dynamics 365](../compliance/gdpr-dsr-Dynamics365.md) 
 #### [Microsoft Support and Professional Services](../compliance/gdpr-dsr-Microsoft-Support-Professional-Services.md) 
 ### [Breach investigation](../compliance/gdpr-breach-investigation.md?toc=/microsoft-365/enterprise/toc.json)

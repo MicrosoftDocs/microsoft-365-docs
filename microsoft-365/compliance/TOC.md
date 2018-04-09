@@ -5,7 +5,6 @@
 #### [Office 365](gdpr-dsr-Office365.md) 
 #### [Windows](gdpr-dsr-Windows.md)
 #### [Azure](gdpr-dsr-Azure.md)
-#### [Intune](gdpr-dsr-Intune.md)
 #### [Dynamics 365](gdpr-dsr-Dynamics365.md)
 #### [Microsoft Support and Professional Services](gdpr-dsr-Microsoft-Support-Professional-Services.md) 
 ### [Breach investigation](gdpr-breach-investigation.md)
