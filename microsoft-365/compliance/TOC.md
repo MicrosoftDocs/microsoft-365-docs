@@ -7,7 +7,7 @@
 #### [Azure](gdpr-dsr-Azure.md)
 #### [Dynamics 365](gdpr-dsr-Dynamics365.md)
 #### [Microsoft Support and Professional Services](gdpr-dsr-Microsoft-Support-Professional-Services.md) 
-### [Breach notification](gdpr-breach-investigation.md)
+### [Breach notification](gdpr-breach-notification.md)
 #### [Office 365](gdpr-breach-Office365.md)
 #### [Windows](gdpr-breach-Windows.md)
 #### [Azure](gdpr-breach-Azure.md)
