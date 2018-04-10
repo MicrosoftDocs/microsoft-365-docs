@@ -18,7 +18,7 @@ description: Understand and configure self-service password reset (SSPR) for Azu
 
 *This step is optional and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
 
-In Step 10, you enable self-service password reset (SSPR) to allow users to reset or unlock their passwords or accounts. To alert you to misuse or abuse, you can use the detailed reporting that tracks when users access the system, along with notifications.
+In Step 10, you'll enable self-service password reset (SSPR) to allow users to reset or unlock their passwords or accounts. To alert you to misuse or abuse, you can use the detailed reporting that tracks when users access the system, along with notifications.
 
 See the [instructions to enable password reset](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-best-practices).
 
