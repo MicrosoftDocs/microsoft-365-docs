@@ -1,5 +1,5 @@
 ---
-title: Data Subject Requests for Microsoft Dynamics 365
+title: Microsoft Dynamics 365 Data Subject Requests for the GDPR
 description: 
 keywords: Microsoft 365, Microsoft 365 Education, Microsoft 365 documentation, GDPR
 author: BrendaCarter

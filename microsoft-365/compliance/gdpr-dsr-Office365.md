@@ -1,5 +1,5 @@
 ---
-title: Data Subject Requests for Office 365 Services
+title: Office 365 Data Subject Requests for the GDPR
 description: 
 keywords: Microsoft 365, Microsoft 365 Education, Microsoft 365 documentation, GDPR
 author: BrendaCarter
