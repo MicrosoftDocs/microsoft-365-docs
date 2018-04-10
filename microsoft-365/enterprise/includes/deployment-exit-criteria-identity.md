@@ -3,7 +3,7 @@ Also see [Prerequisites](https://docs.microsoft.com/microsoft-365-enterprise/ide
 <a name="crit-identity-step1"></a>
 ### Required: All users, groups, and group memberships have been created
 
-You have created user accounts and groups so that:
+You've created user accounts and groups so that:
 
 - Employees in your organization and the vendors, contractors, and partners that work for or with your organization have a corresponding user account in Azure Active Directory (AD).
 - Azure AD groups and their members contain user accounts and other groups for various purposes, such as the provisioning of security settings for Microsoft cloud services, automatic licensing, and other uses.
@@ -38,7 +38,7 @@ To verify that directory synchronization is working correctly, do the following:
 <a name="crit-identity-step5"></a>
 ### Required: Your global administrator accounts are protected 
 
-You have [protected your Office 365 global administrator accounts](https://support.office.com/article/Protect-your-Office-365-global-administrator-accounts-6b4ded77-ac8d-42ed-8606-c014fd947560) to avoid compromising credentials that can lead to breaches of an Office 365 subscription.
+You've [protected your Office 365 global administrator accounts](https://support.office.com/article/Protect-your-Office-365-global-administrator-accounts-6b4ded77-ac8d-42ed-8606-c014fd947560) to avoid compromising credentials that can lead to breaches of an Office 365 subscription.
 
 If you skip this requirement, your global administrator accounts can be susceptible to attack and compromise, allowing an attacker to gain system-wide access to your data for harvesting, destruction, or ransom.
 
@@ -46,9 +46,9 @@ If needed, [Step 5](../identity-designate-protect-admin-accounts.md) can help yo
 
 #### How to test
 
-Use these steps to verify that you have protected your global administrator accounts:
+Use these steps to verify that You've protected your global administrator accounts:
 
-1. Run the following Azure AD V2 command at the PowerShell command prompt. You should only see the list of dedicated global administrator accounts.
+1. Run the following Azure AD V2 command at the PowerShell command prompt. You should see only the list of dedicated global administrator accounts.
 ```
 Get-AzureADDirectoryRole | where { $_.DisplayName -eq "Company Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
 ```
@@ -60,7 +60,7 @@ Get-AzureADDirectoryRole | where { $_.DisplayName -eq "Company Administrator" } 
 <a name="crit-identity-step3"></a>
 ### Optional: The Office 365 sign-in screen is personalized for your organization
 
-You have used [Add company branding to your sign-in and Access Panel pages](http://aka.ms/aadpaddbranding) to add your organization’s branding to the Office 365 sign-in page.
+You've used [Add company branding to your sign-in and Access Panel pages](http://aka.ms/aadpaddbranding) to add your organization’s branding to the Office 365 sign-in page.
 
 If you skip this option, your users will see a generic Office 365 sign-in screen and might not be confident that they’re signing into your organization’s site.
 
@@ -90,7 +90,7 @@ If needed, [Step 7](../identity-multi-factor-authentication.md) can help you wit
 <a name="crit-identity-step4"></a>
 ### Optional: Directory synchronization is monitored
 
-You have used [Azure AD Connect Health with sync](https://docs.microsoft.com/azure/active-directory/connect-health/active-directory-aadconnect-health-sync) (for password synchronization) or [Using Azure AD Connect Health with AD FS](https://docs.microsoft.com/azure/active-directory/connect-health/active-directory-aadconnect-health-adfs) (for federated authentication) and have deployed Azure AD Connect Health, which involves:
+You've used [Azure AD Connect Health with sync](https://docs.microsoft.com/azure/active-directory/connect-health/active-directory-aadconnect-health-sync) (for password synchronization) or [Using Azure AD Connect Health with AD FS](https://docs.microsoft.com/azure/active-directory/connect-health/active-directory-aadconnect-health-adfs) (for federated authentication) and have deployed Azure AD Connect Health, which involves:
 
 - Installing the Azure AD Connect Health agent on each of your on-premises identity servers.
 - Using the Azure AD Connect Health portal to monitor the state of the ongoing synchronization.
@@ -105,7 +105,7 @@ The Azure AD Connect Health portal shows the current and correct state of your o
 <a name="crit-identity-step16"></a>
 ### Optional: Remote users have secure access
 
-You have used the information at [How to provide secure remote access to on-premises apps](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started) to deploy the Azure AD Application Proxy, which involves:
+You've used the information at [How to provide secure remote access to on-premises apps](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started) to deploy the Azure AD Application Proxy, which involves:
 
 - Configuring an instance of the Application Proxy Service in Azure to transfer web traffic between users on the Internet and a server running the Application Proxy Connector.
 - Configuring the Application Proxy Connector on an Internet-facing server to transfer web traffic between Application Proxy Service in Azure and on-premises web-based applications.
@@ -121,7 +121,7 @@ A user can remotely access on-premises web-based applications using the Azure AD
 <a name="crit-identity-step10"></a>
 ### Optional: Users can reset their own passwords
 
-You have used [Azure AD self-service password reset rapid deployment](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-getting-started) to configure password reset for your users.
+You've used [Azure AD self-service password reset rapid deployment](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-getting-started) to configure password reset for your users.
 
 If you don’t meet this condition, users will be dependent on user account administrators to reset their passwords, resulting in additional IT administration overhead.
 
@@ -137,7 +137,7 @@ If needed, [Step 10](../identity-password-reset.md) can help you with this optio
 <a name="crit-identity-step9"></a>
 ### Optional: Password writeback is enabled for your users
 
-You have used the instructions in [Azure AD SSPR with password writeback](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-getting-started) to enable password writeback for the Azure AD tenant of your Microsoft 365 Enterprise subscription.
+You've used the instructions in [Azure AD SSPR with password writeback](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-getting-started) to enable password writeback for the Azure AD tenant of your Microsoft 365 Enterprise subscription.
 
 If you skip this option, users who aren’t connected to your on-premises network must reset or unlock their Windows Server AD passwords through an IT administrator.
 
@@ -153,7 +153,7 @@ You test password writeback by changing your password in Office 365. You should 
 
 1. Create a test user account in your on-premises Windows Server AD, allow directory synchronization to occur, and then grant it an Office 365 license in the Office 365 admin portal.
 2. From a remote computer that is joined to your on-premises Windows Server AD domain, sign in to the computer and the Office 365 portal using the credentials of the test user account.
-3. Click **Settings > Office 365 settings > Password > Change password**.
+3. Select **Settings > Office 365 settings > Password > Change password**.
 4. Type the current password, type a new password, and then confirm it.
 5. Sign out of the Office 365 portal and the remote computer and then sign in to the computer using the test user account and its new password. This proves that you were able to change the password of an on-premises Windows Server AD user account using the Azure AD tenant.
 
@@ -191,7 +191,7 @@ If needed, [Step 11](../identity-group-based-licensing.md) can help you with thi
 <a name="crit-identity-step12"></a>
 ### Dynamic group membership settings automatically add user accounts to groups based on user account attributes
 
-You have determined the set of Azure AD dynamic groups and used the instructions in [Attribute-based dynamic group membership in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal) to create the groups and the rules that determine the set of user account attributes and values for group membership.
+You've determined the set of Azure AD dynamic groups and used the instructions in [Attribute-based dynamic group membership in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal) to create the groups and the rules that determine the set of user account attributes and values for group membership.
 
 If you skip this option, group membership must be done manually as new accounts are added or as user account attributes change over time. For example, if someone moves from the Sales department to the Accounting department, you must:
 
@@ -215,7 +215,7 @@ If needed, [Step 12](../identity-automatic-group-membership.md) can help you wit
 <a name="crit-identity-step14"></a>
 ### Optional: Self-service group management is enabled for specific Azure AD security and Office 365 groups
 
-You have determined which groups are appropriate for self-service management, instructed their owners on group management workflow and responsibilities, and [set up self-service management in Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-accessmanagement-self-service-group-management) for those groups.
+You've determined which groups are appropriate for self-service management, instructed their owners on group management workflow and responsibilities, and [set up self-service management in Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-accessmanagement-self-service-group-management) for those groups.
 
 If you skip this option, all Azure AD group management tasks must be done by IT administrators.
 
@@ -231,9 +231,9 @@ If needed, [Step 14](../identity-self-service-group-management.md) can help you 
 7.	Delete the test security group and the test user account.
 
 <a name="crit-identity-step15"></a>
-### Optional: You have enabled Azure AD Identity Protection to protect against credential compromise
+### Optional: You've enabled Azure AD Identity Protection to protect against credential compromise
 
-You have enabled Azure AD Identity Protection to:
+You've enabled Azure AD Identity Protection to:
 
 - Address potential identity vulnerabilities.
 - Detect possible credential compromise attempts.
@@ -244,10 +244,10 @@ If you skip this option, you won’t be able to detect or automatically thwart c
 If needed, [Step 15](../identity-azure-ad-identity-protection.md) can help you with this option.
 
 <a name="crit-identity-step6"></a>
-### Optional: You have set up Privileged Identity Management to support on-demand assignment of the global administrator role
-You have used the instructions in [Configure Azure AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure) to enable PIM in your Azure AD tenant and configured your global administrator accounts as eligible admins.
+### Optional: You've set up Privileged Identity Management to support on-demand assignment of the global administrator role
+You've used the instructions in [Configure Azure AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure) to enable PIM in your Azure AD tenant and configured your global administrator accounts as eligible admins.
 
-You have also used the recommendations in [Securing privileged access for hybrid and cloud deployments in Azure AD](https://docs.microsoft.com/azure/active-directory/admin-roles-best-practices) to develop a roadmap that secures privileged access against cyber attackers.
+You've also used the recommendations in [Securing privileged access for hybrid and cloud deployments in Azure AD](https://docs.microsoft.com/azure/active-directory/admin-roles-best-practices) to develop a roadmap that secures privileged access against cyber attackers.
 
 If you skip this option, your global administrator accounts are subject to ongoing online attack and, if compromised, can allow an attacker to harvest, destroy, or hold your sensitive information for ransom.
 

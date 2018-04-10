@@ -19,7 +19,8 @@ audience: ITPro
 
 ![](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon.png)
 
-To secure data on your device, you'll use Microsoft Intune. Mobile device management with Intune requires you complete some tasks, including:
+To secure data on your device, you'll use Microsoft Intune. Mobile device management with Intune requires that you complete the following:
+
 1. [Set up Intune](https://docs.microsoft.com/intune/setup-steps)
 2. [Enroll devices for management](https://docs.microsoft.com/intune/windows-enroll)
 3. [Protect access to email, Office 365, and other services](https://docs.microsoft.com/intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune)

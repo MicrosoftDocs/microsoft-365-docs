@@ -20,7 +20,7 @@ description: Understand the role of and configure conditional access policies.
 
 Conditional access policies are settings that specify the conditions under which access for a user or device is granted or denied. For example, you could configure a conditional access policy that permits access for a user under the condition that they use multifactor authentication.
 
-In Step 2, you configure conditional access policies that provide additional security for sign-in and access to information for both user sign-in and for devices. There are two types of settings:
+In Step 2, you'll configure conditional access policies that provide additional security for sign-in and access to information for both user sign-in and for devices. There are two types of settings:
 
 - **Common settings, regardless of workload:** For the details of common identity and device access policies for the baseline, sensitive, and highly regulated security levels, see [Identity and device access policies overview](identity-device-policies.md) .
 - **Workload-specific settings:** For Exchange Online, implement the settings in [Secure email recommended policies](secure-email-recommended-policies.md) for the three levels of security. For SharePoint Online, implement the settings in both [Secure email recommended policies](secure-email-recommended-policies.md) and [Recommended secure document policies](sharepoint-file-access-policies.md). 

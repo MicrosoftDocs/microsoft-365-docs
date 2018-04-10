@@ -18,7 +18,7 @@ description: Understand and configure security and information protection levels
 
 *This step is required and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
 
-In Step 1, you define the levels of security and protection for your organization. For example, your sales department might only require a low security level, However, your research department and its highly valuable intellectual property might require a high security level that encrypts files and limits access to only research staff.
+In Step 1, you'll define the levels of security and protection for your organization. For example, your sales department might only require a low security level, However, your research department and its highly valuable intellectual property might require a high security level that encrypts files and limits access to only research staff.
 
 Although you can define your own security levels and might already have some in place, Microsoft recommendations that you develop a plan to use at least three different levels of security and protection that can be applied. Here is a list to get you started: 
 
