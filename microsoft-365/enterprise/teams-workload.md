@@ -2,7 +2,7 @@
 title: "Deploy Microsoft Teams for Microsoft 365 Enterprise"
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/29/2018
+ms.date: 04/09/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -30,9 +30,9 @@ The following phases and steps guide you through the process of envisioning the 
 In this phase, you gather the people for your Teams deployment and determine how your organization will use Teams to address its business needs.
 
 ### Step 1: Gather your Teams deployment members
-For a successful deployment of Teams on top of the Microsoft 365 foundation infrastructure, you need to get the right people for input and feedback. Key people include business decision makers, IT staff such as architects and implementers, and advocates for your end users. 
+For a successful deployment of Teams on top of the Microsoft 365 [foundation infrastructure](deploy-foundation-infrastructure.md), you need to get the right people for input and feedback. Key people include business decision makers, IT staff such as architects and implementers, and advocates for your end users. 
 
-These three groups ensure that your Teams deployment includes considerations that address business needs, technical aspects of licensing and security, and that the result will be something that typical users will use.
+These three groups ensure that your Teams deployment includes considerations that address business needs, technical aspects of licensing and security, and that Teams will be something that your typical users will use.
 
 #### Result
 
@@ -40,11 +40,11 @@ A list of people in your organization that represent the business, technical, an
 
 ### Step 2: Determine and prioritize your Teams business scenarios
 
-Teams can be used for many different purposes. You need to figure out which purposes map to your business needs on the separate levels of your organization, your business groups, your departments, or individual working and project teams. Take a look at the [Microsoft 365 FastTrack Productivity Library](https://fasttrack.microsoft.com/microsoft365/productivitylibrary) for examples to help you define Teams scenarios. 
+Teams can be used for many different purposes. You need to figure out which purposes map to your business needs on the separate levels of your organization, your business groups, your departments, and individual working and project teams. Take a look at the [Microsoft 365 FastTrack Productivity Library](https://fasttrack.microsoft.com/microsoft365/productivitylibrary) for examples to help you define Teams scenarios. 
 
-You should target Teams to address fast-moving and highly collaborative teams that work closely together and require many more facilities than just email can provide. Examples are live group chats with a recorded history and a common and easy-to-find place to store files and notes. 
+You should target Teams to address fast-moving and highly collaborative teams that work closely together and require many more facilities than just email with Exchange Online can provide. Examples are live group chats with a recorded history and a common and easy-to-find place to store files and notes. 
 
-One way to see the benefits of Teams is to examine how a team or v-team interacts today, and then find an appropriate Team scenario that substitutes and provides easier ways to collaborate or additional capabilities.
+One way to see the benefits of Teams is to examine how a team or v-team interacts today, and then find an appropriate Teams scenario that replaces the interaction and provides easier ways to collaborate and provide additional capabilities.
 
 #### Result
 
@@ -58,7 +58,7 @@ In this phase, you plan for the technical aspects of a Teams deployment and star
 
 Before you begin technical planning, determine whether you want to use FastTrack. If your organization has over 50 seats and is participating in an [eligible plan](https://technet.microsoft.com/library/dn783224.aspx), you can use [FastTrack benefits](https://technet.microsoft.com/library/dn783224.aspx), available at no additional cost to guide you through planning, deployment and service adoption. Or, you can complete this work yourself using our FastTrack Onboarding Wizards, which are available from [FastTrack](https://fasttrack.microsoft.com/) once you sign in with your Office 365 account.
 
-If you are doing your own planning (or in conjunction with FastTrack), you need to determine if your network and organization are ready for Teams. It is especially important that you meet the exit criteria for networking in your foundation infrastructure, with special attention to bandwidth, throughput, and traffic delays to maximize performance for Teams-based meetings.
+If you are doing your own planning (or in conjunction with FastTrack), you need to determine if your network and organization are ready for Teams. It is especially important that you meet the exit criteria for networking in your [foundation infrastructure](deploy-foundation-infrastructure.md), with special attention to bandwidth, throughput, and traffic delays to maximize performance for Teams-based meetings.
 
 Use these resources to prepare the technical aspects of your organization for a Teams rollout: 
 
@@ -72,7 +72,7 @@ For a better understanding of security in Teams, review the following additional
 - [Office 365 groups and Teams](https://docs.microsoft.com/MicrosoftTeams/office-365-groups)
 - [Guest access in Teams](https://docs.microsoft.com/MicrosoftTeams/office-365-groups)
 
-Next, use these resources to understand Teams licensing and to perform organization setup:
+Next, use these resources to understand Teams licensing and to perform the setup of Teams for your organization:
 
 - [Office 365 licensing for Teams](https://docs.microsoft.com/MicrosoftTeams/office-365-licensing)
 - [Manage user access to Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/user-access)
@@ -89,8 +89,8 @@ Your network, security, and Office 365 licensing is ready to begin rolling out T
 In most medium-sized and large organizations, you should run an IT pilot with your stakeholders from Phase 1 and early adopters and technical enthusiasts in your organization. During the IT pilot:
 
 - Choose a Teams business scenario in which the participants of the IT pilot can practice. See the [Microsoft Teams getting started kit](http://microsoft.com/download/56505) for ideas.
-- Give your pilot participants a set of exercises to test Teams chatting, file storage, meetings, and other capabilities.
-- Determine your change management strategy and produce materials to drive organization-wide user adoption. Change management materials can include announcement text, internal training plans, hallway posters, and presentations to inform your organization about Teams and its benefits with the goals of raising awareness and driving usage. See [change management strategy for Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/change-management-strategy) for some ideas.
+- Give your pilot participants a set of exercises to test Teams-based chats, file storage, meetings, and other capabilities.
+- Determine your change management strategy and produce materials to drive organization-wide user adoption. Change management materials can include email-based announcement text, internal training plans, hallway posters, and presentations to inform your organization about Teams and its benefits with the goals of raising awareness and driving usage. See [change management strategy for Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/change-management-strategy) for some ideas.
 - Have your IT pilot participants review the change management strategy materials based on their experiences. They can provide tips on best practices and advice on how to best describe the benefits of Teams and how to use it for collaboration and teamwork.
 
 #### Result
@@ -104,7 +104,7 @@ After completing your IT pilot, roll out Teams to a business group or department
 - Identification of key business scenarios for Teams within the business group.
 - Announcement activities to inform users of the expectations and timelines for Teams usage for departmental, work, or project teams.
 - Direct user training on Teams or links to resources to introduce Teams and how to use it.
-- A feedback mechanism, such as a central Team containing everyone in the business group, to collect comments and issues from users in the business group.
+- A feedback mechanism, such as a central team containing everyone in the business group, to collect comments and issues from users in the business group.
 
 During the rollout, you can refine your change management materials in preparation for the organization-wide rollout.
 
@@ -120,10 +120,10 @@ In this phase, you complete the rollout of Teams to your organization and suppor
 
 After completing your rollout to a targeted business group, roll out Teams to the rest of your organization. This rollout should include:
 
-- Identification of key business scenarios for Teams within separate business groups.
+- Identification of key business scenarios for Teams within your separate business groups.
 - Use of your refined change management materials for announcement activities to inform your organization of the expectations and timelines for Teams usage for departmental, work, or project teams.
-- Direct user training on Teams or links to resources to introduce Teams and how to use it.
-- A feedback mechanism, such as a central Team containing everyone, to collect comments and issues from organization users. If your organization has less than 2500 individuals, use a public channel in Teams. Otherwise, use a public group in Yammer.
+- Direct user training on Teams or links to resources to introduce Teams and how to use it. See the training resources at [End user training for Microsoft Teams](https://docs.microsoft.com/microsoftteams/enduser-training).
+- A feedback mechanism, such as a central team containing everyone, to collect comments and issues from organization users. If your organization has less than 2500 individuals, use a public channel in Teams. Otherwise, use a public group in Yammer.
 
 #### Result
 
@@ -139,13 +139,13 @@ After rolling out Teams to your entire organization, you must continue to employ
 Here are some suggested activities:
 
 - See [Office 365 adoption guidance](https://aka.ms/successfactors) to learn about general best practices for cloud service adoption. 
-- See [Office 365 activity reports](https://support.office.com/article/Activity-Reports-in-the-Office-365-admin-center-0d6dfb17-8582-4172-a9a9-aed798150263) to understand Office 365 service usage across your organization. If you aren’t an Office 365 global admin for your organization, ask someone who is a global admin to grant your user account Reports Reader permissions so you can access activity reports.
-- Monitor your feedback venue (a public channel in a central Team or Yammer) for issues and feedback from individuals about their experiences with Teams. Address questions and issues as quickly as you can to prevent frustration and abandonment of Teams by individuals.
+- See [Office 365 activity reports](https://support.office.com/article/Activity-Reports-in-the-Office-365-admin-center-0d6dfb17-8582-4172-a9a9-aed798150263) to understand Office 365 service usage across your organization. If you aren’t an Office 365 global admin for your organization, ask someone who is to grant your user account Reports Reader permissions so you can access activity reports.
+- Monitor your feedback venue (a public channel in a central team or Yammer) for issues and feedback from individuals about their experiences with Teams. Address questions and issues as quickly as you can to prevent frustration and abandonment of Teams by individuals.
 - Identify and nurture your champions in each business group and highlight their accomplishments and best practices using Teams. Reflect their successes out to the organization to show project success and adoption. Endorsement by technical leaders within a business group can exert a powerful influence over leaders and peers.
 
 #### Result
 
-Your organization has adopted Teams as it collaboration and teamwork tool.
+Your organization has adopted Teams as its collaboration and teamwork tool.
 
 ## Next steps
 

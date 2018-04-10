@@ -18,16 +18,16 @@ description: Plan for the set of users and groups that will work for your organi
 
 *This step is required and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
 
-In Step 1, you create your identity infrastructure that combines users, groups, and group membership with security features in the correct configuration. This allows you to:
+In Step 1, you'll create your identity infrastructure that combines users, groups, and group membership with security features in the correct configuration. This allows you to:
 
 - Maintain control over who has access to resources in your environment.
 - Secure access with controls that ensure strong assurances of identity (users are who they say they are) and access from safe devices.
 - Provision resources in your environment with appropriate permissions to reduce the potential for harm and data leakage. 
 - Monitor your environment for anomalous user behavior and automatically taking action.
 
-## 1. Plan your primary identity provider
+## Plan your primary identity provider
 
-To create your identity infrastructure, you designate a primary identity provider. This service stores user accounts and their attributes, groups and their memberships, and supports their ongoing administration.
+To create your identity infrastructure, you'll designate a primary identity provider. This service stores user accounts and their attributes, groups and their memberships, and supports their ongoing administration.
 
 When your organization adopts Microsoft 365 Enterprise, your primary identity provider is either:
 
@@ -43,9 +43,9 @@ After you have your users and groups in Azure AD, you can:
 - Collaborate with external partners.
 - Monitor anomalous account behavior, such as suspicious sign-in attempts, and automatically act.
 
-Here are the steps to plan for and implement your user accounts and groups.
+Follow the instructions in the next two sections to plan for and implement your user accounts and groups.
 
-## 2. Categorize your users
+## Categorize your users
 Users in organizations can be categorized in a number of ways. For example, some are employees and have a permanent status. Some are vendors, contractors, or partners that have a temporary status. Some are external users that have no user accounts but must still be granted access to specific services and resources to support interaction and collaboration. For example:
 
 - Tenant accounts represent users within your organization that you license for cloud services
@@ -53,9 +53,9 @@ Users in organizations can be categorized in a number of ways. For example, some
 
 Take stock of the types of users to your organization. What are the groupings? For example, you can group users by high-level function or purpose to your organization.
 
-Additionally, some cloud services can be shared with users outside your organization without any user accounts.
+Additionally, some cloud services can be shared with users outside your organization without any user accounts. You'll need to identify these groups of users as well.
 
-## 3. Plan for Windows Server AD and Azure AD groups
+## Plan for Windows Server AD and Azure AD groups
 
 You can use groups in Azure AD for several purposes that simplify management of your cloud environment. For example, for Azure AD groups, you can:
 
