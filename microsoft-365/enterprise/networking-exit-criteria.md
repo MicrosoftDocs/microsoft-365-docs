@@ -67,4 +67,4 @@ You have optimized the Transmssion Control Protocol (TCP) settings on your clien
 If needed, [Step 5](networking-optimize-tcp-performance.md) can help you with this option.
 
 ## Next phase
-Your next phase in the end-to-end deployment process for Microsoft 365 Enterprise is [identity](identity-infrastructure.md).
+Your next phase in the end-to-end deployment process for Microsoft 365 Enterprise is [Identity](identity-infrastructure.md).

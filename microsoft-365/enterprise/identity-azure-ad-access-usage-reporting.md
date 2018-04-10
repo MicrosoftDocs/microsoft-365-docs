@@ -18,7 +18,7 @@ description: Understand and configure Azure AD access and usage reporting.
 
 *This step is optional and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
 
-In Step 13, you review audit logs and sign-in activity using Azure AD reporting. Two types of reports are available.
+In Step 13, you'll review audit logs and sign-in activity using Azure AD reporting. Two types of reports are available.
 
 The **Audit logs activity report** records the history of every task performed in your Azure AD tenant. This report answers questions like:
 
@@ -34,7 +34,7 @@ The **Sign-ins activity report** records who performed the tasks reported by the
 
 For more information about the reports and how to access them, see [Azure Active Directory reporting](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-azure-portal).
 
-The results of this step are the awareness of these reports and a determination of how you can use them to gain insights on Azure AD events and activities for planning and security purposes.
+As a result of this step, you'll gain awareness of these reports and an understanding of how you can use them to gain insights on Azure AD events and activities for planning and security purposes.
 
 ## Next step
 

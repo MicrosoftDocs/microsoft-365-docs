@@ -18,7 +18,7 @@ description: Understand and configure your administrator accounts for maximum pr
 
 *This step is required and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
 
-In Step 5, you help prevent digital attacks on your organization by ensuring that your administrator accounts are as secure as possible. To do this, you must:
+In Step 5, you'll help prevent digital attacks on your organization by ensuring that your administrator accounts are as secure as possible. To do this, you must:
 
 - Create dedicated global administrator accounts with very [strong passwords](https://support.microsoft.com//help/4026406/microsoft-account-create-a-strong-password) and use them only when necessary.
 - Perform day-to-day administration by assigning specific administrator roles—such as Exchange administrator or Password administrator—to user accounts of IT staff as needed.

@@ -33,7 +33,7 @@ You'll use the following phases to plan for and deploy the foundation infrastruc
 |![](./media/deploy-foundation-infrastructure/infoprotection_icon.png)|[Phase 6: Information protection](infoprotect-infrastructure.md)|
 
 
-Before you can exit each phase, you must examine its exit criteria, which is a set of required conditions that you must meet and optional conditions to consider. Exit criteria for each phase ensures that your on-premises and cloud infrastructure and resulting end-to-end configuration meets the requirements for a Microsoft 365 Enterprise deployment.
+Before you can exit each phase, you must examine its exit criteria, which is a set of required conditions that you must meet and optional conditions to consider. Exit criteria for each phase ensures that your on-premises and cloud infrastructure and resulting end-to-end configuration meet the requirements for a Microsoft 365 Enterprise deployment.
 
 ## FastTrack
 

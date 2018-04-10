@@ -18,7 +18,7 @@ description: Understand and configure automatic group membership based on accoun
 
 *This step is optional and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
 
-In Step 12, you create a series of rules that automatically add or remove user accounts as members of an Azure AD group. This is known as *dynamic group membership*. The rules are based on user account attributes, such as Department or Country.
+In Step 12, you'll create a series of rules that automatically add or remove user accounts as members of an Azure AD group. This is known as *dynamic group membership*. The rules are based on user account attributes, such as Department or Country.
 
 Here’s how the rules are applied:
 

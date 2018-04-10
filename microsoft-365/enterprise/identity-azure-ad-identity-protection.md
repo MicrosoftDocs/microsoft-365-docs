@@ -18,7 +18,7 @@ description: Understand and configure Azure AD Identity Protection.
 
 *This step is optional and applies only to the E5 version of Microsoft 365 Enterprise*
 
-In Step 15, you learn how to configure policies that protect against credential compromise, where an attacker determines a user’s account name and password to gain access to your organization’s cloud services and data. Azure AD Identity Protection provides a number of ways to help prevent an attacker from moving laterally through your accounts and groups, and subsequently, to your most valuable data.
+In Step 15, you'll learn how to configure policies that protect against credential compromise, where an attacker determines a user’s account name and password to gain access to an organization’s cloud services and data. Azure AD Identity Protection provides a number of ways to help prevent an attacker from moving laterally through your accounts and groups, and subsequently, to your most valuable data.
 
 With Azure AD Identity Protection, you can:
 
@@ -32,7 +32,7 @@ See [more information about Azure AD Identity Protection](https://docs.microsoft
 
 See the [steps to enable Azure AD Identity Protection](https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection-enable).
 
-The results of this step are that you have enabled Azure AD Identity protection and you are using it to:
+The results of this step are that you've enabled Azure AD Identity protection and you are using it to:
 
 - Address potential identity vulnerabilities.
 - Detect possible credential compromise attempts.
