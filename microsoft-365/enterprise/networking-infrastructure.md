@@ -29,11 +29,11 @@ In this phase, you step through the key considerations for creating a performant
 
 Use the following steps to build out your networking infrastructure for the requirements and capabilities of Microsoft 365 Enterprise.
 
-- [Step 1: Provide sufficient Internet bandwidth for Microsoft’s cloud services](networking-provide-bandwidth-cloud-services.md)
-- [Step 2: Ensure that DNS resolution is performed in the same place as the Internet access](networking-dns-resolution-same-location.md)
-- [Step 3: Configure your proxy servers and firewalls for unhindered access to Office 365](networking-configure-proxies-firewalls.md)
-- [Step 4: Implement your plan for endpoint change management](networking-implement-endpoint-change-mgmt.md)
-- [Step 5: Optimize TCP and application performance](networking-optimize-tcp-performance.md)
+- [Step 1: Check your Internet bandwidth](networking-provide-bandwidth-cloud-services.md)
+- [Step 2: Ensure that DNS resolution is local to the ISP](networking-dns-resolution-same-location.md)
+- [Step 3: Configure your proxy servers and firewalls](networking-configure-proxies-firewalls.md)
+- [Step 4: Plan for URL and IP address changes](networking-implement-endpoint-change-mgmt.md)
+- [Step 5: Optimize client and Office 365 service performance](networking-optimize-tcp-performance.md)
 
 When you've completed these steps, go to the [exit criteria](networking-exit-criteria.md) for this phase to ensure that you meet the required and optional conditions for Microsoft 365 Enterprise.
 
