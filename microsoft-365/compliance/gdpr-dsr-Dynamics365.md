@@ -14,7 +14,7 @@ audience: itpro
 ms.collection: GDPR
 ---
 
-# Data Subject Requests for Microsoft Dynamics 365
+# Microsoft Dynamics 365 Data Subject Requests for the GDPR
 
 TBD
 

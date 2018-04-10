@@ -14,7 +14,7 @@ audience: itpro
 ms.collection: GDPR
 ---
 
-# Data Subject Requests for Microsoft Support and Professional Services
+# Microsoft Support and Professional Services Data Subject Requests for the GDPR
 
 TBD
 

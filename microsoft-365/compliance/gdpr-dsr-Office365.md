@@ -14,7 +14,7 @@ audience: itpro
 ms.collection: GDPR
 ---
 
-# Data Subject Requests for Office 365 Services
+# Office 365 Data Subject Requests for the GDPR
 
 TBD
 

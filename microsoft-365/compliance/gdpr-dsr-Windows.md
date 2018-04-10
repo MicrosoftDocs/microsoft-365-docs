@@ -14,7 +14,7 @@ audience: itpro
 ms.collection: GDPR
 ---
 
-# Data Subject Requests for Windows
+# Windows Data Subject Requests for the GDPR
 
 TBD
 
