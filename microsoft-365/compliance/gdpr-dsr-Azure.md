@@ -15,8 +15,7 @@ ms.collection: GDPR
 ---
 
 # Azure Data Subject Requests for the GDPR
-
-TBD
+For information about how to use Azure services and administrative tools to help you find and act on personal data to respond to *Data Subject Requests*, or DSRs, see Data Subject Request Guide for Azure.pdf. This guide includes how to find, access, and act on personal data that resides in Microsoft's cloud.
 
 ## Learn more
 [Microsoft Trust Center](https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx)

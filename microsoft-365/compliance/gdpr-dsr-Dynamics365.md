@@ -16,7 +16,7 @@ ms.collection: GDPR
 
 # Microsoft Dynamics 365 Data Subject Requests for the GDPR
 
-TBD
+For information about how to use Dynamics 365 services and administrative tools to help you find and act on personal data to respond to *Data Subject Requests*, or DSRs, see Data Subject Request Guide for Dynamics 365.pdf. This guide includes how to find, access, and act on personal data that resides in Microsoft's cloud.
 
 ## Learn more
 [Microsoft Trust Center](https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx)
