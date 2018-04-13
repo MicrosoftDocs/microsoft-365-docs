@@ -123,7 +123,8 @@ The provided policy recommendations consider the privileges associated with an a
 ### Reduce the number of accounts with persistent admin access
 Use Azure AD Privileged Identity Management to reduce the number of persistent administrative accounts. In addition, we recommend that Office 365 administrators have a separate user account for regular non-administrative use and only use their administrative account when necessary to complete a task associated with their job function.
 
-> [!NOTE] For more information on securing privileged accounts in Azure AD, refer to this [article](https://docs.microsoft.com/en-us/azure/active-directory/admin-roles-best-practices) on best practices and a roadmap to implement it.
+> [!NOTE] 
+> For more information on securing privileged accounts in Azure AD, refer to this [article](https://docs.microsoft.com/en-us/azure/active-directory/admin-roles-best-practices) on best practices and a roadmap to implement it.
 
 ## Tiers of security and protection
 Most organizations have specific requirements regarding security and data protection. These requirements vary by industry segment and by job functions within organizations. For example, your legal department and Office 365 administrators might require additional security and information protection controls around their email correspondence that are not required for other business unit users.
