@@ -14,6 +14,11 @@
         "source_path": "enterprise/obsolete-bi-article.md",
         "redirect_url": "https://docs.microsoft.com/SharePoint/administration/business-intelligence-0",
         "redirect_document_id": false
+      },
+      {
+        "source_path": "compliance/index.md",
+        "redirect_url": "/microsoft-365/compliance/compliance-solutions-overview",
+        "redirect_document_id": false
       }
   ]
 }
