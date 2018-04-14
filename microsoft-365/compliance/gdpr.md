@@ -21,7 +21,7 @@ This library provides technical guidance for the General Data Protection Regulat
 - [Data subject requests](gdpr-data-subject-requests.md)
 - [Breach notification](gdpr-breach-notification.md)
 
-In additon to this library, be sure to review the resources for GDPR in the Microsoft Trust Center.
+For more information about how Microsoft can help you with the GDPR, see [Get Started: Support for GDPR Accountability](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted) in the Service Trust Portal.
 
 
 ## Learn more

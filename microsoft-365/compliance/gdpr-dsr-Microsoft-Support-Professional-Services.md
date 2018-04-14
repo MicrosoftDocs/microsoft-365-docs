@@ -16,7 +16,9 @@ ms.collection: GDPR
 
 # Microsoft Support and Professional Services Data Subject Requests for the GDPR
 
-For information about how to use Microsoft products, services, and administrative tools to help you find and act on personal data to respond to *Data Subject Requests*, or DSRs, see Data Subject Request Guide for Microsoft Support and Professional Services.pdf. This guide includes how to find, access, and act on personal data that resides in Microsoft's cloud.
+Information about how to find and act on personal data to respond to *Data Subject Requests*, or DSRs, for Microsoft Support and Professional Services is coming soon. 
+
+For more information about how Microsoft enables you to respond to DSRs, see [GDPR: Data Subject Requests (DSRs)](https://servicetrust.microsoft.com/ViewPage/GDPRDSR) in the Service Trust Portal.
 
 ## Learn more
 [Microsoft Trust Center](https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx)
