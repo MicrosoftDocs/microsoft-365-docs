@@ -13,31 +13,27 @@ ms.author: celested
 
 # Configure and deploy Windows 10 Enterprise with Windows AutoPilot
 
-**Applies to:**
 
-* Microsoft 365 E3
-* Microsoft 365 E5
-
-**Summary:**
+*This article applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
 
 If you have new Windows 10 PCs, you can use Windows AutoPilot to customize the out-of-box-experience (OOBE) for your organization, and deploy a new system with apps and settings already configured. There are no images to deploy, no drivers to inject, and no infrastructure to manage. Users can go through the deployment process independently, without the need consult their IT administrator.
 
 You can set up and pre-configure new Windows 10 devices and get them ready for productive use using Windows AutoPilot. To learn more about Windows AutoPilot, including benefits and Windows AutoPilot scenarios, see [Overview of Windows AutoPilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot). When ready, follow this guide to start setting up new devices.
 
 ## Before you start
-Before upgrading your devices to Windows 10, note that this guidance makes the following assumptions:
+Before upgrading your devices to Windows 10, make sure that:
 
-* Your domains are added and verified
+* Your domains are added and verified.
 
     With Microsoft 365, you get a default domain name that ends in onmicrosoft.com (for example, contoso.onmicrosoft.com). Most organizations prefer to use one or more of the domains they own so their email addresses end in their own domain name (like username@contoso.com). To use your own domain, you need to add it to Microsoft 365 and verify that you own it. We recommend that you add and verify your domains now so they're ready to go whenever you set up Microsoft 365 services, like email and Skype for Business.
 
-* You don't need to add users at this time
+* You don't need to add users at this time.
 
     To use Microsoft 365 services or install Microsoft 365 products, users need accounts in Microsoft 365 and they need product licenses. How you add users to Microsoft 365 depends on the number of users and whether you currently have Active Directory on-premises. If you don’t have Active Directory (or you have Active Directory but don’t want to sync it to Microsoft 365), you can add users directly to Microsoft 365 and assign licenses, either individually or in bulk. 
 
     If you have Active Directory on-premises, you can sync it with Microsoft 365 to create user accounts in Azure AD, the cloud directory used by Microsoft 365. With this method, you can create accounts for users and for security groups you use to manage permissions to resources (like SharePoint Online site collections or documents). Syncing your Active Directory with Microsoft 365 won’t assign licenses to the users, so we’ll give you steps for assigning licenses.
 
-* You don't need to license users at this time
+* You don't need to license users at this time.
 
     Before users can use Microsoft 365 services or install software from the Microsoft 365 portal, they need product licenses. As a global or user management admin, you can directly assign products licenses in Microsoft 365 either individually or in bulk. You can also use group-based licensing to automatically assign licenses when users are added to a particular group.  Select the licensing option you would like to use below.
 
@@ -45,7 +41,7 @@ Before upgrading your devices to Windows 10, note that this guidance makes the f
 
 
 ## Step 1: Set Windows diagnotics data level
-Microsoft uses diagnostic data to help keep Windows devices secure by identifying malware trends and other threats and to help us improve the quality of Windows and Microsoft services. You must ensure that the diagnostics service is enabled at a minimum level of Basic on all endpoints in your organization. **By default, this service is enabled and set to the Enhanced level.** However, it’s good practice to check and ensure that they are receiving sensor data. Setting levels through policies overrides device-level settings. 
+Microsoft uses diagnostic data to help keep Windows devices secure by identifying malware trends and other threats and to help us improve the quality of Windows and Microsoft services. You must ensure that the diagnostics service is enabled at a minimum level of Basic on all endpoints in your organization. *By default, this service is enabled and set to the Enhanced level.* However, it’s good practice to check and ensure that they are receiving sensor data. Setting levels through policies overrides device-level settings. 
 
 **Windows 10 operating system diagnostic data levels**
 
@@ -101,7 +97,7 @@ Before you can set up Windows devices for Microsoft 365 users, make sure all the
 
 After all Windows devices in your organization have either been upgraded to Windows 10 Creators Update or are already running Windows 10 Creators Update, you can join these devices to your organization’s Azure Active Directory.
 
-### Set up a brand new or newly upgraded Windows 10 device
+### Set up a brand new or newly-upgraded Windows 10 device
 Follow these steps to set up a device using the Windows 10 OOBE on a brand new device running Windows 10 Creators Update (or later) or on a device that was upgrade to Windows 10 Creators Update (or later) but has not gone through out-of-box setup.
 
 1. If you don't have a wireless network configured, make sure you connect the device to the internet through a wired or Ethernet connection.
@@ -110,14 +106,14 @@ Follow these steps to set up a device using the Windows 10 OOBE on a brand new d
 4. Sign in using the Microsoft 365 user's account and password. Depending on the user password setting, you may be prompted to update the password. 
 5. Finish Windows 10 device setup.
 
-After you’re done, the user will be connected to your organization’s Azure AD.
+After you’re done, the device will be connected to your organization’s Azure AD.
 
 ### Set up a device that has already completed out-of-box setup
 If your device has Windows 10 Creators Update (or later) and has already gone through the out-of-box setup, follow these steps.
 
-1. On your user's Windows PC that is running Windows 10, version 1703 (Creators Update), select the Windows logo, and then select the **Settings** icon.
+1. On your user's Windows PC that is running Windows 10, version 1703 (Creators Update), select the **Windows** logo, and then select the **Settings** icon.
 2. In **Settings**, go to **Accounts**.
-3. On the **Your info** page, select **Access work or school > Connect**.
+3. On the **Your info** page, select **Access work or school** > **Connect**.
 4. On the **Set up a work or school account** dialog, under **Alternate actions**, select **Join this device to Azure Active Directory**.
 5. On the **Let's get you signed in** page, enter your work or school account, and select **Next**.
 6. On the **Enter password** page, enter your password, and select **Sign in**.
@@ -191,8 +187,10 @@ For Windows AutoPilot, these are the infrastructure you need to take into accoun
 With Windows AutoPilot, a device automatically joins their organization’s Azure AD group once a user signs into their organization from the device. The Group Policy policies (along with other customized settings and apps) are automatically pushed to the new device. It’s critical to understand that these policies must be properly configured within an organization before setting up Windows AutoPilot profiles.
 
 Windows 10 introduces many new features and removes and changes many others in Windows 7 and 8.1, including new Group Policy settings which need to be tested and implemented as part of a Windows 10 migration. The following resources provide examples on assessing current group policies for Windows, including Group Policy Objects in the Active Directory structure:
+
 * [Manage Windows 10 with administrative templates](https://go.microsoft.com/fwlink/?linkid=860226) - Get step-by-step info on how to manage Windows 10 with administrative templates
 * [Group Policy settings that apply to Windows 10](https://docs.microsoft.com/windows/client-management/group-policies-for-enterprise-and-education-editions) - Find out which Group Policy settings apply only to Windows 10 Enterprise
+
 
 #### Data management
 Be sure to back up user data if necessary. Because of the out-of-box experience (OOBE), user data isn't saved on a net-new computer. We recommend configuring a backup scenario as needed. For example, export all user data to a OneDrive for Business account, BitLocker To Go-encrypted USB flash drive, or network file server. For more info, see:
@@ -228,6 +226,7 @@ See the following Upgrade Readiness resources to help with app inventory, driver
 > Upgrade Readiness may not be able to assess compatibility for custom and line-of-business (LOB) apps in an organization.
 
 #### Language packs
+
 For a Microsoft 365 powered device, you'll also need to download Office 365 ProPlus language packs that applies to the client. These come in 32-bit (x86) or 64-bit (x64). A specific language must be installed as the default. You can install other languages later. For more info, see these resources:
 * [Choose between 64-bit or 32-bit version of Office](https://go.microsoft.com/fwlink/?linkid=862361) - Helps you decide which version of Office is right for you.
 * [Language accessory pack for Office](https://go.microsoft.com/fwlink/?linkid=860280) - Follow the steps to install the language accessory pack for Office.

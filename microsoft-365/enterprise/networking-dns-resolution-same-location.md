@@ -1,5 +1,5 @@
 ---
-title: "Step 2: Ensure that DNS resolution is is local to the ISP"
+title: "Step 2: Ensure that DNS resolution is local to the ISP"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -14,7 +14,7 @@ ms.custom:
 description: Understand and configure your DNS resolution for better performance.
 ---
 
-# Step 2: Ensure that DNS resolution is is local to the ISP
+# Step 2: Ensure that DNS resolution is local to the ISP
 
 *This step is required and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
 

@@ -14,12 +14,7 @@ ms.author: celested
 # Configure and deploy Windows 10 Enterprise as an in-place upgrade
 
 
-**Applies to:**
-
-* Microsoft 365 E3
-* Microsoft 365 E5
-
-**Summary:**
+*This article applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
 
 The simplest path to upgrade PCs currently running Windows 7, Windows 8, or Windows 8.1 to Windows 10 is through an in-place upgrade. You can use a System Center Configuration Manager (Configuration Manager) task sequence to completely automate the process. 
 
@@ -28,7 +23,7 @@ If you have existing computers running Windows 7, Windows 8, or Windows 8.1, we 
 Follow this guide to configure and deploy a Windows 10 Enterprise image using Configuration Manager as an in-place upgrade.
 
 ## Before you start
-Before upgrading your devices to Windows 10, note that this guidance makes the following assumptions:
+Before upgrading your devices to Windows 10, make sure that:
 
 * Your domains are added and verified
 
@@ -48,7 +43,7 @@ Before upgrading your devices to Windows 10, note that this guidance makes the f
 
 
 ## Step 1: Set Windows diagnotics data level
-Microsoft uses diagnostic data to help keep Windows devices secure by identifying malware trends and other threats and to help us improve the quality of Windows and Microsoft services. You must ensure that the diagnostics service is enabled at a minimum level of Basic on all endpoints in your organization. **By default, this service is enabled and set to the Enhanced level.** However, it’s good practice to check and ensure that they are receiving sensor data. Setting levels through policies overrides device-level settings. 
+Microsoft uses diagnostic data to help keep Windows devices secure by identifying malware trends and other threats and to help us improve the quality of Windows and Microsoft services. You must ensure that the diagnostics service is enabled at a minimum level of Basic on all endpoints in your organization. *By default, this service is enabled and set to the Enhanced level.* However, it’s good practice to check and ensure that they are receiving sensor data. Setting levels through policies overrides device-level settings. 
 
 **Windows 10 operating system diagnostic data levels**
 
@@ -72,13 +67,14 @@ You can enable diagnostics data through any of these methods:
 See [Configure Windows diagnostic data in your organization](https://docs.microsoft.com/en-us/windows/configuration/configure-windows-diagnostic-data-in-your-organization) to learn more about Windows diagnostic data and how you can enable it based on the method that you choose.
 
 ## Step 2: Verify readiness to upgrade Windows
-Follow the guide to use System Center Configuration Manager (Current Branch) to upgrade Windows 7 or later operating system to Windows 10. As with any high-risk deployment, we recommend backing up user data before proceeding. OneDrive cloud storage is ready to use for licensed Microsoft 365 users and can be used to securely store their files. For more info, see [OneDrive quick start guide](https://aka.ms/ODfBquickstartguide).
+Follow the guide to use System Center Configuration Manager (Current Branch) to upgrade Windows 7 or later operating system to Windows 10. As with any high-risk deployment, we recommend backing up user data before proceeding. OneDrive cloud storage is ready to use for licensed Microsoft 365 users and can be used to securely store their files. For more info, see [OneDrive quick start guide](https://aka.ms/ODfBquickstartguide). To access this page, you must sign in as a tenant admin or global admin in an Office 365 or Microsoft 365 tenant.
 
-or a list of Configuration Manager versions and the corresponding Windows 10 client versions that are supported, see [Support for Windows 10 for System Center Configuration Manager](https://aka.ms/supportforwin10sccm).
+For a list of Configuration Manager versions and the corresponding Windows 10 client versions that are supported, see [Support for Windows 10 for System Center Configuration Manager](https://aka.ms/supportforwin10sccm).
 
 **To verify readiness to upgrade Windows**
 
-Review these requirements before starting your Windows 10 deployment.
+Review these requirements before starting your Windows 10 deployment:
+
 - **Windows editions eligible for upgrade** - Your devices must be running editions of Windows 7, 8, or 8.1 that are eligible for upgrade to Windows 10 Enterprise. For a list of supported editions, see [Windows 10 upgrade paths](https://aka.ms/win10upgradepaths). 
 - **Supported devices** - Most computers that are compatible with Windows 8.1 will be compatible with Windows 10. You may need to install updated drivers in Windows 10 for your devices to properly function. See [Windows 10 specifications](https://aka.ms/windows10specifications) for more info.
 - **Deployment preparation** - Make sure you have the following before you start configuring the deployment:
@@ -94,7 +90,7 @@ Review these requirements before starting your Windows 10 deployment.
     7. Install System Center Configuration Manager (Current Branch) updates and any additional Windows 10 prerequisites.
 
 ## Step 3: Add a Windows 10 OS image using Configuration Manager
-Now you need to create an operating system upgrade package that contains the full Windows 10 installation media. In this guidance, we will be upgrading to Windows 10 Enterprise x64.
+Now you'll need to create an operating system upgrade package that contains the full Windows 10 installation media. In the following steps, you’ll use Configuration Manager to create an upgrade package for Windows 10 Enterprise x64.
 
 **To add a Windows 10 OS image using Configuration Manager**
 
@@ -106,7 +102,7 @@ Now you need to create an operating system upgrade package that contains the ful
 6. Choose your distribution point.
 
 ## Step 4: Configure deployment settings
-Here, you'll configure the Configuration Manager task sequence that contains the settings for the Windows 10 upgrade. You'll then identify the devices to upgrade, and then deploy the task sequence to those devices.
+In this step, you'll configure an upgrade task sequence that contains the settings for the Windows 10 upgrade. You'll then identify the devices to upgrade, and then deploy the task sequence to those devices.
 
 ### Create a task sequence
 To create an upgrade task sequence, perform the following steps:
@@ -119,7 +115,7 @@ To create an upgrade task sequence, perform the following steps:
 6. Continue through the remaining wizard pages, and then select **Close**.
 
 ### Create a device collection
-After you create the upgrade task sequence, you need to create a collection that contains the devices you will upgrade.
+After you create the upgrade task sequence, you'll need to create a collection that contains the devices you will upgrade.
 
 > [!NOTE]
 > Use the following settings to test the deployment on a single device. You can use different membership rules to include groups of devices when you are ready. For more info, see [How to create collections in System Center Configuration Manager](https://aka.ms/sccm-create-collections).
@@ -128,7 +124,7 @@ After you create the upgrade task sequence, you need to create a collection that
 2. In the Create Device Collection wizard, on the **General** page, enter the following settings and then select **Next**:
     - Name: Windows 10 Enterprise x64 Upgrade
     - Limiting Collection: All Systems
-3. On the **Membership Rules** page, select **Add Rule > Direct rule** to launch the Create Direct Membership Rule Wizard.
+3. On the **Membership Rules** page, select **Add Rule** > **Direct rule** to launch the Create Direct Membership Rule Wizard.
 4. On the **Welcome** page of the Create Direct Membership Rule Wizard, select **Next**.
 5. On the **Search for Resources** page, enter the following settings, replacing the placeholder **Value** text with the name of the device you are upgrading: 
     - Resource Class: System Resource
@@ -147,7 +143,7 @@ Follow these steps to create a deployment for the task sequence.
 4. On the **Deployment Settings** page, select the following settings, and then select **Next**:
 
     > [!NOTE]
-    > For this test deployment, we will set the purpose to Available, which requires user intervention to start the deployment. In a production environment, you may wish to automate the deployment using the Required purpose, which involves configuring additional options such as scheduling when the deployment is run. 
+    > For this test deployment, you'll set the purpose to **Available**, which requires user intervention to start the deployment. In a production environment, you may wish to automate the deployment using the Required purpose, which involves configuring additional options such as scheduling when the deployment is run. 
 
     - Action: Install
     - Purpose: Available
@@ -160,7 +156,7 @@ Follow these steps to create a deployment for the task sequence.
 ## Step 5: Start the Windows 10 upgrade task sequence
 Follow these steps to start the Windows 10 Upgrade task sequence on the device that you are upgrading.
  
-1. Log on to the Windows computer and start the **Software Center**.
+1. Log on to the Windows computer and start **Software Center**.
 2. Select the task sequence that you created in a previous step, and then select **Install**.
 3. When the task sequence begins, it automatically initiates the in-place upgrade process by invoking the Windows setup program (Setup.exe) with the necessary command-line parameters to perform an automated upgrade, which preserves all data, settings, apps, and drivers.
 4. After the task sequence completes successfully, the computer will be fully upgraded to Windows 10.

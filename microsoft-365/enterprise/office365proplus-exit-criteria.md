@@ -1,9 +1,9 @@
 ---
-title: "Microsoft 365 Office 365 ProPlus deployment exit criteria"
+title: "Office 365 ProPlus deployment exit criteria"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/02/2018
+ms.date: 03/29/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -14,7 +14,7 @@ ms.custom:
 description: Ensure that your configuration meets Microsoft 365 Enterprise criteria for Office 365 ProPlus infrastructure.
 ---
 
-# Microsoft 365 Office 365 ProPlus deployment exit criteria
+# Office 365 ProPlus deployment exit criteria
 
 Before you move on to the next phase in the deployment process, ensure that your configuration meets the following required criteria for Office 365 ProPlus infrastructure.
 
@@ -32,8 +32,10 @@ Deployment plan is complete, including:
 - How to manage updates to Office 365 ProPlus
 - Whether to deploy and install from a local source on your network or from the cloud
 - Which client devices get which update channels
+- Installation packages defined
+- All client devices assigned to deployment groups
 - Which Office applications, architectures, and languages go to which client devices
- 
+
 Deployment of Office 365 ProPlus is complete, including:
 
 - All client devices have Office 365 ProPlus installed

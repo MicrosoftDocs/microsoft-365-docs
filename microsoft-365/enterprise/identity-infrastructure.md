@@ -16,10 +16,12 @@ description: The steps to deploy the identity infrastructure for Microsoft 365 E
 
 # Phase 2: Identity
 
+![](./media/deploy-foundation-infrastructure/identity_icon.png)
+
 In Microsoft 365 Enterprise, a well-planned and executed identity infrastructure paves the way for stronger security and access to your productivity workloads and their data only by authenticated users and devices.
 
 >[!Note]
->If you already have an identity infrastructure deployed, please see the [identity exit criteria](identity-exit-criteria.md) to make sure that you meet the required and optional conditions for Microsoft 365 Enterprise.
+>If you’ve already deployed an identity infrastructure, please see the [identity exit criteria](identity-exit-criteria.md) to make sure that you meet the required and optional conditions for Microsoft 365 Enterprise.
 >
 
 ## Plan and deploy your Microsoft 365 Enterprise identity infrastructure 
