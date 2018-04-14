@@ -24,6 +24,8 @@ Microsoft takes its obligations under the General Data Protection Regulation (GD
 - [Dynamics 365](gdpr-breach-Dynamics365.md)
 - [Microsoft Support and Professional Services](gdpr-breach-Microsoft-Support-Professional-Services.md)
 
+For more information about how Microsoft detects and responds to a breach of personal data, see [Data Breach Notification Under the GDPR](https://servicetrust.microsoft.com/ViewPage/GDPRBreach) in the Service Trust Portal.
+
 ## Learn more
 [Microsoft Trust Center](https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx)
 ---

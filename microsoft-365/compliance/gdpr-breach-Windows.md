@@ -16,7 +16,7 @@ ms.collection: GDPR
 
 # Windows and Breach Notification Under the GDPR
 
-Microsoft Windows takes its obligations under the General Data Protection Regulation (GDPR) seriously. For information about how Windows protects against a personal data breach and how we respond and notify you if a breach occurs, see Windows and Breach Notification Under the GDPR.pdf. 
+Microsoft Windows takes its obligations under the General Data Protection Regulation (GDPR) seriously. For information about how Windows protects against a personal data breach and how we respond and notify you if a breach occurs, see [Windows Breach Documentation.pdf](https://servicetrust.microsoft.com/ViewPage/GDPRBreach?command=Download&downloadType=Document&downloadId=0751f8ea-387c-44fb-b23b-f79b416982f0&docTab=bd9262f0-3dc1-11e8-87d1-758b9aa5dead_Breach). 
 
 ## Learn more
 [Microsoft Trust Center](https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx)
