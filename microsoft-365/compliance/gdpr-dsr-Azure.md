@@ -15,7 +15,7 @@ ms.collection: GDPR
 ---
 
 # Azure Data Subject Requests for the GDPR
-For information about how to use Azure services and administrative tools to help you find and act on personal data to respond to *Data Subject Requests*, or DSRs, see [Azure Data Subject Request GDPR Documentation.pdf](https://servicetrust.microsoft.com/ViewPage/GDPRDSR?command=Download&downloadType=Document&downloadId=05dadebe-c1ce-403b-a936-0bfe366920dd&docTab=23d7c690-3dc7-11e8-97f6-972587b57b1b_DSR). This guide includes how to find, access, and act on personal data that resides in Microsoft's cloud.
+For information about how to use Azure services and administrative tools to help you find and act on personal data to respond to *Data Subject Requests*, or DSRs, see [Azure Data Subject Request GDPR Documentation.pdf](https://aka.ms/GDPRAzureDSR). This guide includes how to find, access, and act on personal data that resides in Microsoft's cloud.
 
 For more information about how Microsoft enables you to respond to DSRs, see [GDPR: Data Subject Requests (DSRs)](https://servicetrust.microsoft.com/ViewPage/GDPRDSR) in the Service Trust Portal.
 
