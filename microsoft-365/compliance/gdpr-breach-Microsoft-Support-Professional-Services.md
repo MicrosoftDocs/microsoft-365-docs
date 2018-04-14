@@ -18,5 +18,7 @@ ms.collection: GDPR
 
 Microsoft Support and Professional Services takes its obligations under the General Data Protection Regulation (GDPR) seriously. For information about how Microsoft protects against a personal data breach and how we respond and notify you if a breach occurs, see [Professional Services Breach Documentation.pdf](https://servicetrust.microsoft.com/ViewPage/GDPRBreach?command=Download&downloadType=Document&downloadId=530e85c6-6971-471e-aef3-9e1fd356bd16&docTab=bd9262f0-3dc1-11e8-87d1-758b9aa5dead_Breach). 
 
+For more information about how Microsoft detects and responds to a breach of personal data, see [Data Breach Notification Under the GDPR](https://servicetrust.microsoft.com/ViewPage/GDPRBreach) in the Service Trust Portal.
+
 ## Learn more
 [Microsoft Trust Center](https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx)

@@ -18,5 +18,7 @@ ms.collection: GDPR
 
 Microsoft Azure takes its obligations under the General Data Protection Regulation (GDPR) seriously. For information about how Azure protects against a personal data breach and how we respond and notify you if a breach occurs, see [Azure Breach GDPR Documentation.pdf](https://aka.ms/GDPRAzureBreach). 
 
+For more information about how Microsoft detects and responds to a breach of personal data, see [Data Breach Notification Under the GDPR](https://servicetrust.microsoft.com/ViewPage/GDPRBreach) in the Service Trust Portal.
+
 ## Learn more
 [Microsoft Trust Center](https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx)

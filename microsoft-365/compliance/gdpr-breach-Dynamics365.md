@@ -16,7 +16,9 @@ ms.collection: GDPR
 
 # Dynamics 365 and Breach Notification Under the GDPR
 
-Dynamics 365 takes its obligations under the General Data Protection Regulation (GDPR) seriously. For information about how Dynamics 365 protects against a personal data breach and how we respond and notify you if a breach occurs, see [Dynamics 365  Breach GDPR Documentation](https://servicetrust.microsoft.com/ViewPage/GDPRBreach?command=Download&downloadType=Document&downloadId=e089d95c-0ff0-4d9f-968c-8d9a2b500c18&docTab=bd9262f0-3dc1-11e8-87d1-758b9aa5dead_Breach). 
+Dynamics 365 takes its obligations under the General Data Protection Regulation (GDPR) seriously. For information about how Dynamics 365 protects against a personal data breach and how we respond and notify you if a breach occurs, see [Dynamics 365  Breach GDPR Documentation.pdf](https://servicetrust.microsoft.com/ViewPage/GDPRBreach?command=Download&downloadType=Document&downloadId=e089d95c-0ff0-4d9f-968c-8d9a2b500c18&docTab=bd9262f0-3dc1-11e8-87d1-758b9aa5dead_Breach). 
+
+For more information about how Microsoft detects and responds to a breach of personal data, see [Data Breach Notification Under the GDPR](https://servicetrust.microsoft.com/ViewPage/GDPRBreach) in the Service Trust Portal.
 
 ## Learn more
 [Microsoft Trust Center](https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx)
