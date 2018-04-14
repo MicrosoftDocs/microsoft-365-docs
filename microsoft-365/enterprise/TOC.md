@@ -49,7 +49,7 @@
 ## [Recommended Exchange Online access policies](secure-email-recommended-policies.md)
 ## [Recommended SharePoint Online access policies](sharepoint-file-access-policies.md)
 # [Compliance solutions](../compliance/compliance-solutions-overview.md?toc=/microsoft-365/enterprise/toc.json)
-## [GDPR](gdpr.md)
+## [GDPR](../compliance/gdpr.md?toc=/microsoft-365/enterprise/toc.json)
 ### [Information protection](../compliance/gdpr-information-protection.md?toc=/microsoft-365/enterprise/toc.json)
 ### [Data subject requests](../compliance/gdpr-data-subject-requests.md?toc=/microsoft-365/enterprise/toc.json)
 #### [Office 365](../compliance/gdpr-dsr-Office365.md?toc=/microsoft-365/enterprise/toc.json) 
