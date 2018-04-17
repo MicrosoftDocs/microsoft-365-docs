@@ -34,4 +34,6 @@ As an interim checkpoint, see the [exit criteria](infoprotect-exit-criteria.md#c
 
 ## Next step
 
-[Step 2: Configure conditional access policy settings](infoprotect-configure-conditional-access-policy-settings.md)
+|||
+|:-------|:-----|
+|![](./media/stepnumbers/Step2.png)|[Configure conditional access policies](infoprotect-configure-conditional-access-policy-settings.md)|

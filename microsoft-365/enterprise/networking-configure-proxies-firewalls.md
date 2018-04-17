@@ -31,7 +31,9 @@ As an interim checkpoint, you can see the [exit criteria](networking-exit-criter
 
 ## Next step
 
-[Step 4: Plan for URL and IP address changes](networking-implement-endpoint-change-mgmt.md)
+|||
+|:-------|:-----|
+|![](./media/stepnumbers/Step4.png)|[Plan for URL and IP address changes](networking-implement-endpoint-change-mgmt.md)|
 
 
 
