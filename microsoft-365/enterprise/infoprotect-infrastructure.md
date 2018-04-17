@@ -30,14 +30,19 @@ It’s important to work with your legal and compliance teams to determine if yo
 
 Next, use the following steps to build out information protection for Microsoft 365 Enterprise.
 
-- [Step 1: Define security and information protection levels](infoprotect-define-sec-infoprotect-levels.md)
-- [Step 2: Configure conditional access policies](infoprotect-configure-conditional-access-policy-settings.md)
-- [Step 3: Configure classification for your environment](infoprotect-configure-classification.md)
-- [Step 4: Configure increased security for Office 365](infoprotect-configure-increased-security-office-365.md)
+|||
+|:-------|:-----|
+|![](./media/stepnumbers/Step1.png)|[Define security and information protection levels](infoprotect-define-sec-infoprotect-levels.md)|
+|![](./media/stepnumbers/Step2.png)|[Configure conditional access policies](infoprotect-configure-conditional-access-policy-settings.md)|
+|![](./media/stepnumbers/Step3.png)|[Configure classification for your environment](infoprotect-configure-classification.md)|
+|![](./media/stepnumbers/Step4.png)|[Configure increased security for Office 365](infoprotect-configure-increased-security-office-365.md)|
+
 
 When you've completed these steps, go to the [exit criteria](infoprotect-exit-criteria.md) for this phase to ensure that you meet the required and optional conditions for Microsoft 365 Enterprise.
 
 ## Next step
 
-[Step 1: Define security and information protection levels](infoprotect-define-sec-infoprotect-levels.md)
+|||
+|:-------|:-----|
+|![](./media/stepnumbers/Step1.png)|[Define security and information protection levels](infoprotect-define-sec-infoprotect-levels.md)|
 

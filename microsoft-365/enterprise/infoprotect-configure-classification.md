@@ -68,4 +68,7 @@ As an interim checkpoint, see the [exit criteria](infoprotect-exit-criteria.md#c
 
 ## Next step
 
-[Step 4: Configure increased security for Office 365](infoprotect-configure-increased-security-office-365.md)
+|||
+|:-------|:-----|
+|![](./media/stepnumbers/Step4.png)|[Configure increased security for Office 365](infoprotect-configure-increased-security-office-365.md)|
+
