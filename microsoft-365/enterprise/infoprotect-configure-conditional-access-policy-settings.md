@@ -35,4 +35,7 @@ As an interim checkpoint, see the [exit criteria](infoprotect-exit-criteria.md#c
 
 ## Next step
 
-[Step 3: Configure classification for your environment](infoprotect-configure-classification.md)
+|||
+|:-------|:-----|
+|![](./media/stepnumbers/Step3.png)|[Configure classification for your environment](infoprotect-configure-classification.md)|
+

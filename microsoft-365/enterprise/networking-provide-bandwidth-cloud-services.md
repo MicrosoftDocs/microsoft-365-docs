@@ -25,4 +25,8 @@ For more information about network connectivity considerations and network asses
 As an interim checkpoint, you can see the [exit criteria](networking-exit-criteria.md#crit-networking-step1) corresponding to this step.
 
 ## Next step
-[Step 2: Ensure that DNS resolution is is local to the ISP](networking-dns-resolution-same-location.md)
+
+|||
+|:-------|:-----|
+|![](./media/stepnumbers/Step2.png)|[Ensure that DNS resolution is local to the ISP](networking-dns-resolution-same-location.md)|
+
