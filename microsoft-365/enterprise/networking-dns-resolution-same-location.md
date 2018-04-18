@@ -28,5 +28,6 @@ As an interim checkpoint, you can see the [exit criteria](networking-exit-criter
 
 ## Next step
 
-[Step 3: Configure your proxy servers and firewalls](networking-configure-proxies-firewalls.md)
-
+|||
+|:-------|:-----|
+|![](./media/stepnumbers/Step3.png)|[Configure your proxy servers and firewalls](networking-configure-proxies-firewalls.md)|
