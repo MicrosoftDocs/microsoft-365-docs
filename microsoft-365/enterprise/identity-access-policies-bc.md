@@ -33,7 +33,7 @@ You can target both Azure AD and Intune policies towards specific groups of user
 Before implementing the policies described in the remainder of this document, there are several prerequisites that your organization must meet. See the following table for the prerequisites that apply to your environment. 
 
 
-| Configuration | Cloud only | Active Direcotry with password hash sync | Active Directory with pass-through authentication | Federation with AD FS |
+| Configuration | Cloud only | Active Directory with password hash sync | Active Directory with pass-through authentication | Federation with AD FS |
 | :------------- | :-----------: | :--------------: | :-------------: | :------------: |
 |  [Configure Password Hash Sync](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-implement-password-synchronization). This must be enabled to detect leaked credentials and to act on them for risk based Conditional Access. **Note:** This is required, regardless of whether your organization use managed, like Pass Through Authentication (PTA), or federated authentication. |    | Yes | Yes | Yes |
 | [Enable seamless single sign-on](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect-sso) to automatically sign users in when they are on their corporate devices connected to your corporate network. |  | Yes | Yes | |
