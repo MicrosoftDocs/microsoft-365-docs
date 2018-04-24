@@ -102,5 +102,5 @@ For more information, see the following articles:
 <sup>*</sup> Microsoft encourages organizations currently using Configuration Manager for Windows update management to continue doing so for Windows 10 client computers.
 
 ## Next steps
-[Microsoft 365 Enterprise product page](https://www.microsoft.com/microsoft-365/enterprise)
-[Cloud platform roadmap](https://www.microsoft.com/cloud-platform/roadmap)
+- [Microsoft 365 Enterprise product page](https://www.microsoft.com/microsoft-365/enterprise)
+- [Cloud platform roadmap](https://www.microsoft.com/cloud-platform/roadmap)

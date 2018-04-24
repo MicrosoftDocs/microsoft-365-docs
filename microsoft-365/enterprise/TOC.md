@@ -1,6 +1,6 @@
 # [Microsoft 365 Enterprise documentation and resources](index.md)
 # [Deploy Microsoft 365 Enterprise](deploy-microsoft-365-enterprise.md)
-## [Deploy Foundation infrastructure](deploy-foundation-infrastructure.md)
+## [Deploy foundation infrastructure](deploy-foundation-infrastructure.md)
 ### [Phase 1: Networking](networking-infrastructure.md)
 #### [Step 1: Check your Internet bandwidth](networking-provide-bandwidth-cloud-services.md)
 #### [Step 2: Ensure that DNS resolution is local to the ISP](networking-dns-resolution-same-location.md)
