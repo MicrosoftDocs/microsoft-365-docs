@@ -16,6 +16,8 @@ description: Ensure that your configuration meets Microsoft 365 Enterprise crite
 
 # Phase 2: Identity infrastructure exit criteria
 
+![](./media/deploy-foundation-infrastructure/identity_icon-small.png)
+
 Before you move on to Phase 3, make sure that your identity infrastructure meets these conditions. Also see [Prerequisites](https://docs.microsoft.com/microsoft-365-enterprise/identity-access-policies#prerequisites) for additional recommendations on identity infrastructure.
 
 <a name="crit-identity-step1"></a>
@@ -275,4 +277,7 @@ If needed, [Step 6](identity-azure-ad-identity-protection.md) can help you with 
 
 ## Next phase
 
-Your next phase in the end-to-end deployment process for Microsoft 365 is [Windows 10 Enteprise](windows10-infrastructure.md).
+|||
+|:-------|:-----|
+|![](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)| Your next phase in the end-to-end deployment process for Microsoft 365 Enterprise is [Windows 10 Enterprise](windows10-infrastructure.md). |
+

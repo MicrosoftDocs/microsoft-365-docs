@@ -18,6 +18,8 @@ description: Understand identity options and configure Azure AD Connect to synch
 
 *This step is required for hybrid environments and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
 
+![](./media/deploy-foundation-infrastructure/identity_icon-small.png)
+
 In Step 2, you'll synchronize your on-premises Windows Server Active Directory (AD) with the Azure Active Directory (AD) tenant used by your Office 365 and Enterprise Mobility + Security (EMS) subscriptions.
 
 Azure AD Connect is the supported Microsoft tool that guides you through synchronizing only the identities you really need from single or multi-forest Windows Server AD environments to your Azure AD tenant.
@@ -46,4 +48,7 @@ As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria
 
 ## Next step
 
-[Step 3: Customize the Office 365 sign-in page](identity-customize-office-365-sign-in.md)
+|||
+|:-------|:-----|
+|![](./media/stepnumbers/Step3.png)| [Customize the Office 365 sign-in page](identity-customize-office-365-sign-in.md) |
+

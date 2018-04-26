@@ -18,6 +18,8 @@ description: Understand and configure Azure AD access and usage reporting.
 
 *This step is optional and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
 
+![](./media/deploy-foundation-infrastructure/identity_icon-small.png)
+
 In Step 13, you'll review audit logs and sign-in activity using Azure AD reporting. Two types of reports are available.
 
 The **Audit logs activity report** records the history of every task performed in your Azure AD tenant. This report answers questions like:
@@ -38,5 +40,6 @@ As a result of this step, you'll gain awareness of these reports and an understa
 
 ## Next step
 
-[Step 14: Allow users to create and manage their own groups](identity-self-service-group-management.md)
-
+|||
+|:-------|:-----|
+|![](./media/stepnumbers/Step14.png)| [Allow users to create and manage their own groups](identity-self-service-group-management.md) |
