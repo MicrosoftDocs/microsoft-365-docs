@@ -12,6 +12,9 @@ ms.author: celested
 ---
 
 # Enable Windows 10 Enterprise security features
+
+![](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
+
 Windows 10 provides features to help protect against threats, help you secure your devices, and help with access control. 
 
 To learn more about these technologies, see:
@@ -115,3 +118,8 @@ You might encounter issues while onboarding or while using the product. For more
 [Windows 10](https://docs.microsoft.com/windows/windows-10)</br>
 [Deploy and update Windows 10](https://docs.microsoft.com/windows/deployment/)
 
+## Next phase
+
+|||
+|:-------|:-----|
+|![](./media/deploy-foundation-infrastructure/O365proplus_icon-small.png)| Your next phase in the end-to-end deployment process for Microsoft 365 Enterprise is [Office 365 ProPlus](office365proplus-infrastructure.md). |

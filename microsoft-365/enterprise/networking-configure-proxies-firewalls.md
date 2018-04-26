@@ -18,6 +18,8 @@ description: Understand and configure proxy servers and firewalls for maximum pe
 
 *This step is optional and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
 
+![](./media/deploy-foundation-infrastructure/networking_icon-small.png)
+
 In Step 3, you configure proxy servers, firewalls, and other intermediate security devices to pass the traffic to and from Office 365 IP addresses either unhindered or with minimal processing. This helps ensure good performance without compromising security, because Microsoft provides datacenter and operational security as part of Office 365. 
 
 Here are the recommendations for your proxy servers and firewalls:

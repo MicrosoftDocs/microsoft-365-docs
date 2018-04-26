@@ -18,6 +18,8 @@ description: Understand and configure your administrator accounts for maximum pr
 
 *This step is required and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
 
+![](./media/deploy-foundation-infrastructure/identity_icon-small.png)
+
 In Step 5, you'll help prevent digital attacks on your organization by ensuring that your administrator accounts are as secure as possible. To do this, you must:
 
 - Create dedicated global administrator accounts with very [strong passwords](https://support.microsoft.com//help/4026406/microsoft-account-create-a-strong-password) and use them only when necessary.
@@ -51,4 +53,7 @@ As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria
 
 ## Next step
 
-[Step 6: Set up on-demand global administrators](identity-privileged-identity-management.md)
+|||
+|:-------|:-----|
+|![](./media/stepnumbers/Step6.png)| [Set up on-demand global administrators](identity-privileged-identity-management.md) |
+

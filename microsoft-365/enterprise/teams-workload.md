@@ -13,7 +13,7 @@ ms.custom:
 description: Step through the process of planning for, rolling out, and driving the value of Microsoft Teams in Microsoft 365 Enterprise across your organization.
 ---
 
-# Deploy Microsoft Teams for Microsoft 365 Enterprise
+# Deploy ![](./media/teams-workload/teams_image1.png) for Microsoft 365 Enterprise
 
 Microsoft Teams brings together chat, conferencing, document sharing, and threaded conversations in a way that makes it easy to create and share content across groups. Teams is the way you do teamwork and collaboration for Microsoft 365 Enterprise and is a key element of the Built for Teamwork value of Microsoft 365. If you are brand new to Teams, see [Overview of Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/teams-overview).
  
@@ -82,7 +82,7 @@ Next, use these resources to understand Teams licensing and to perform the setup
 
 #### Result
 
-Your network, security, and Office 365 licensing planning done and you are ready to begin rolling out Teams to selected groups in your organization.
+Your network, security, and Office 365 licensing planning is done and you are ready to begin rolling out Teams to selected groups in your organization.
 
 ### Step 2: Run an IT pilot
 
@@ -90,7 +90,7 @@ In most medium-sized and large organizations, you should run an IT pilot with yo
 
 - Choose a Teams business scenario in which your IT pilot participants can practice. See the [Microsoft Teams getting started kit](http://microsoft.com/download/56505) for ideas.
 - Give your pilot participants a set of exercises to test Teams-based chats, file storage, meetings, and other capabilities.
-- Determine your change management strategy and produce materials to drive organization-wide user adoption. hange management materials can include email announcement text, internal training plans, hallway posters, and presentations. These materials will inform your organization about Teams and its benefits with the goals of raising awareness and driving usage. See [change management strategy for Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/change-management-strategy) for some ideas.
+- Determine your change management strategy and produce materials to drive organization-wide user adoption. Change management materials can include email announcement text, internal training plans, hallway posters, and presentations. These materials will inform your organization about Teams and its benefits with the goals of raising awareness and driving usage. See [change management strategy for Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/change-management-strategy) for some ideas.
 - Have your IT pilot participants review the change management strategy materials based on their experiences. They can provide tips on best practices and advice on how to best describe the benefits of Teams and how to use it for collaboration and teamwork.
 
 #### Result
