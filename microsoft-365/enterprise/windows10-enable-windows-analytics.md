@@ -12,6 +12,9 @@ ms.author: celested
 ---
 
 # Enable Windows Analytics
+
+![](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
+
 Windows Analytics uses diagnostic data to provide rich, actionable information to help you gain deep insights into the operational efficiency and health of Windows 10 devices in your environment.
 
 Windows Analytics includes the following services.

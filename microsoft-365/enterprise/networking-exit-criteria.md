@@ -16,6 +16,8 @@ description: Ensure that your configuration meets Microsoft 365 Enterprise crite
 
 # Phase 1: Networking infrastructure exit criteria
 
+![](./media/deploy-foundation-infrastructure/networking_icon-small.png)
+
 If your networking infrastructure meets the following conditions, you’re ready to move to Phase 2.
 
 <a name="crit-networking-step1"></a>
@@ -67,4 +69,7 @@ You have optimized the Transmssion Control Protocol (TCP) settings on your clien
 If needed, [Step 5](networking-optimize-tcp-performance.md) can help you with this option.
 
 ## Next phase
-Your next phase in the end-to-end deployment process for Microsoft 365 Enterprise is [Identity](identity-infrastructure.md).
+
+|||
+|:-------|:-----|
+|![](./media/deploy-foundation-infrastructure/identity_icon-small.png)| Your next phase in the end-to-end deployment process for Microsoft 365 Enterprise is [identity](identity-infrastructure.md). |

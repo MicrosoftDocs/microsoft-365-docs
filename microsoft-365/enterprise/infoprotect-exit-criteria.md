@@ -16,6 +16,8 @@ description: Examine the criteria for information protection-based services and 
 
 # Information protection infrastructure exit criteria
 
+![](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
+
 Before you are complete with your foundation infrastructure, make sure that your information protection infrastructure meets these conditions. 
 
 <a name="crit-infoprotect-step1"></a>
@@ -69,4 +71,7 @@ You've worked with your legal and compliance teams to develop an appropriate cla
 
 If needed, [Step 3](infoprotect-configure-classification.md) can help you meet this requirement. 
 
-You're now ready to configure workloads, such as Microsoft Teams and Exchange Online, that run on top of your foundation infrastructure.
+
+## Next Step
+
+You're now ready to deploy [workloads](deploy-workloads), such as Microsoft Teams and Exchange Online, that run on top of your Microsoft 365 Enterprise foundation infrastructure.

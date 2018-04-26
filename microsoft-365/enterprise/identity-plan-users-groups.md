@@ -18,6 +18,8 @@ description: Plan for the set of users and groups that will work for your organi
 
 *This step is required and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
 
+![](./media/deploy-foundation-infrastructure/identity_icon-small.png)
+
 In Step 1, you'll create your identity infrastructure that combines users, groups, and group membership with security features in the correct configuration. This allows you to:
 
 - Maintain control over who has access to resources in your environment.
@@ -76,4 +78,7 @@ As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria
 
 ## Next step
 
-[Step 2: Synchronize directories](identity-azure-ad-connect.md)
+|||
+|:-------|:-----|
+|![](./media/stepnumbers/Step2.png)| [Synchronize directories](identity-azure-ad-connect.md) |
+
