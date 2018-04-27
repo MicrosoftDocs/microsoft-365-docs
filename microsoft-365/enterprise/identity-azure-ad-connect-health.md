@@ -18,6 +18,8 @@ description: Understand and configure Azure AD Connect Health.
 
 *This step is optional and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
 
+![](./media/deploy-foundation-infrastructure/identity_icon-small.png)
+
 In Step 4, you'll install an Azure AD Connect Health agent on each of your on-premises identity servers to monitor your identity infrastructure and the synchronization services provided by Azure AD Connect. The monitoring information is made available in an Azure AD Connect Health portal, where you can view alerts, performance monitoring, usage analytics, and other information.
 
 ![Components of Azure AD Connect Health](./media/identity-azure-ad-connect-health/identity-azure-ad-connect-health.png)
@@ -37,4 +39,7 @@ As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria
 
 ## Next step
 
-[Step 5: Protect global administrator accounts](identity-designate-protect-admin-accounts.md)
+|||
+|:-------|:-----|
+|![](./media/stepnumbers/Step5.png)| [Protect global administrator accounts](identity-designate-protect-admin-accounts.md) |
+

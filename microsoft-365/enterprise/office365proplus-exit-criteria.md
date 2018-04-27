@@ -16,6 +16,8 @@ description: Ensure that your configuration meets Microsoft 365 Enterprise crite
 
 # Office 365 ProPlus deployment exit criteria
 
+![](./media/deploy-foundation-infrastructure/O365proplus_icon-small.png)
+
 Before you move on to the next phase in the deployment process, ensure that your configuration meets the following required criteria for Office 365 ProPlus infrastructure.
 
 - Assessment of infrastructure and environment is complete, including:
@@ -44,5 +46,7 @@ Before you move on to the next phase in the deployment process, ensure that your
 
 ## Next phase 
 
-Your next phase in the end-to-end deployment process for Microsoft 365 Enterprise is [Phase 5-Mobile device management](mobility-infrastructure.md).
 
+|||
+|:-------|:-----|
+|![](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon-small.png)| Your next phase in the end-to-end deployment process for Microsoft 365 Enterprise is [mobile device management](mobility-infrastructure.md). |

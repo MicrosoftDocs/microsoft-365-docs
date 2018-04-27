@@ -18,6 +18,8 @@ description: Configure a customized Office 365 sign-in page.
 
 *This step is optional and for both the E3 and E5 versions of Microsoft 365 Enterprise*
 
+![](./media/deploy-foundation-infrastructure/identity_icon-small.png)
+
 In Step 3, you'll help users recognize your organization’s sign-in page by adding your company name, logo, and other recognizable elements. 
 
 With Microsoft 365 Enterprise, you can customize the appearance of the sign-in and Access Panel pages so they include your company logo, color schemes, and custom user information. 
@@ -38,4 +40,7 @@ As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria
 
 ## Next step
 
-[Step 4: Monitor synchronization health](identity-azure-ad-connect-health.md)
+|||
+|:-------|:-----|
+|![](./media/stepnumbers/Step4.png)| [Monitor synchronization health](identity-azure-ad-connect-health.md) |
+

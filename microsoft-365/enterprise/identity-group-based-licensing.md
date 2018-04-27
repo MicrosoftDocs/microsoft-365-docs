@@ -18,6 +18,8 @@ description: Understand and configure group-based licensing for Azure AD groups.
 
 *This step is optional and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
 
+![](./media/deploy-foundation-infrastructure/identity_icon-small.png)
+
 In Step 11, you'll configure security groups in Azure AD to automatically assign licenses from a set of subscriptions to all the members of the group. This is known as *group-based licensing*. If a user account is added to or removed from the group, the licenses for the group’s subscriptions will be automatically assigned or removed from the user account.
 
 For Microsoft 365 Enterprise, you'll configure Azure AD security groups to assign both of these licenses:
@@ -44,4 +46,7 @@ As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria
 
 ## Next step
 
-[Step 12: Set up dynamic group membership](identity-automatic-group-membership.md)
+|||
+|:-------|:-----|
+|![](./media/stepnumbers/Step12.png)| [Set up dynamic group membership](identity-automatic-group-membership.md) |
+

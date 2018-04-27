@@ -18,6 +18,8 @@ description: Understand and configure your DNS resolution for better performance
 
 *This step is required and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
 
+![](./media/deploy-foundation-infrastructure/networking_icon-small.png)
+
 In Step 2, you reconfigure your network so that each office has a local Internet link and Internet service provider (ISP). Using a local ISP gives each office the shortest path to a Microsoft front-end server on the Internet. These front-end servers for Office 365 and Intune are located around the world to provide the best performance, no matter where your offices are located.
 
 You can configure local Internet connections for branch offices and traffic from users’ computers directly, or through a proxy server. In both cases, DNS queries for Internet name resolution are sent from the DNS servers of local ISPs, who identify their location on the Internet through the source Internet Protocol (IP) address of their DNS queries. Microsoft DNS servers can respond with the IP addresses of the closest front-end server to the branch office or user computer, which ensures the best performance.

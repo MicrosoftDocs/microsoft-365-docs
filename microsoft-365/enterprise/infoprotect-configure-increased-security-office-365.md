@@ -18,6 +18,8 @@ description: Understand and configure increased security for Office 365, includi
 
 *This step is required and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
 
+![](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
+
 To ensure that your Office 365 subscription and its data start off and remain secure from malicious threats, see [Configure your Office 365 tenant for increased security](https://support.office.com/article/Configure-your-Office-365-tenant-for-increased-security-8d274fe3-db51-4107-ba64-865e7155b355) and configure the following additional security:
 
 - Threat management policies in the Office 365 Security & Compliance Center
