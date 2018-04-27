@@ -18,6 +18,8 @@ description: Understand the role of and configure conditional access policies.
 
 *This step is required and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
 
+![](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
+
 Conditional access policies are settings that specify the conditions under which access for a user or device is granted or denied. For example, you could configure a conditional access policy that permits access for a user under the condition that they use multifactor authentication.
 
 In Step 2, you'll configure conditional access policies that provide additional security for sign-in and access to information for both user sign-in and for devices. There are two types of settings:

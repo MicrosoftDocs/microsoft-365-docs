@@ -18,6 +18,8 @@ description: Understand and configure automatic group membership based on accoun
 
 *This step is optional and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
 
+![](./media/deploy-foundation-infrastructure/identity_icon-small.png)
+
 In Step 12, you'll create a series of rules that automatically add or remove user accounts as members of an Azure AD group. This is known as *dynamic group membership*. The rules are based on user account attributes, such as Department or Country.
 
 Here’s how the rules are applied:
@@ -40,4 +42,6 @@ As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria
 
 ## Next step
 
-[Step 13: Monitor tenant and sign-in activity](identity-azure-ad-access-usage-reporting.md)
+|||
+|:-------|:-----|
+|![](./media/stepnumbers/Step13.png)| [Monitor tenant and sign-in activity](identity-azure-ad-access-usage-reporting.md) |

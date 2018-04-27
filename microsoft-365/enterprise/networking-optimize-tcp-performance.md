@@ -18,6 +18,8 @@ description: Configure TCP settings and Office 365 services for better performan
 
 *This step is optional and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
 
+![](./media/deploy-foundation-infrastructure/networking_icon-small.png)
+
 You can increase performance by fine tuning the way that the Transmission Control Protocol (TCP) works between client devices and Office 365 services.
 
 For client devices, you can change the following TCP settings on client devices to optimize TCP performance:

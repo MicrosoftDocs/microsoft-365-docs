@@ -16,6 +16,8 @@ ms.author: celested
 
 *This article applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
 
+![](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
+
 If you have new Windows 10 PCs, you can use Windows AutoPilot to customize the out-of-box-experience (OOBE) for your organization, and deploy a new system with apps and settings already configured. There are no images to deploy, no drivers to inject, and no infrastructure to manage. Users can go through the deployment process independently, without the need consult their IT administrator.
 
 You can set up and pre-configure new Windows 10 devices and get them ready for productive use using Windows AutoPilot. To learn more about Windows AutoPilot, including benefits and Windows AutoPilot scenarios, see [Overview of Windows AutoPilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot). When ready, follow this guide to start setting up new devices.

@@ -18,6 +18,8 @@ description: Understand and configure various ways to classify data in your orga
 
 *This step is optional and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
 
+![](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
+
 In Step 3, you work with your legal and compliance teams to define a classification scheme for your organization’s data.
 
 ## Microsoft classifications
