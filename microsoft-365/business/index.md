@@ -1625,6 +1625,25 @@ ms.date: 11/01/2017
                                     </div>
                                 </a>
                             </li>
+                            <li>
+                                <a href="https://support.office.com/article/c123694a-1efb-459e-a8d5-2187975373dc" target="_blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="images/bcs-partner-advanced-management-password-3.svg" alt="Microsoft 365 Business security features" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Microsoft 365 Business security features</h3>
+                                                    <p>Learn about the Microsoft 365 Business security features that help safeguard your data on PCs, phones, and tablets.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
                         </ul>
                     </li>
                     <li>
