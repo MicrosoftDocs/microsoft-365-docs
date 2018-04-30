@@ -1,4 +1,3 @@
-
 ---
 title: "Microsoft 365 Enterprise foundation infrastructure"
 author: JoeDavies-MSFT
@@ -8,10 +7,11 @@ ms.date: 04/04/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
-ms.collection: Ent_O365
-ms.custom:
+localization_priority: Priority
+ms.collection: 
+- Ent_O365
 - Strat_O365_Enterprise
+ms.custom:
 description: Understand the major phases of deploying the foundation infrastructure for Microsoft 365 Enterprise in your organization.
 ---
 
