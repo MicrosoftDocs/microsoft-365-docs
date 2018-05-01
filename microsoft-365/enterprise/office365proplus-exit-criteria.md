@@ -7,10 +7,11 @@ ms.date: 03/29/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
-ms.collection: Ent_O365
-ms.custom:
+localization_priority: Priority
+ms.collection: 
+- Ent_O365
 - Strat_O365_Enterprise
+ms.custom:
 description: Ensure that your configuration meets Microsoft 365 Enterprise criteria for Office 365 ProPlus infrastructure.
 ---
 
