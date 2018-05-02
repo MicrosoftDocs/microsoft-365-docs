@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Step 2: Configure conditional access policies"
 ms.author: josephd
 author: JoeDavies-MSFT
