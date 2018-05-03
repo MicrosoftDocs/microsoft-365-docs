@@ -19,6 +19,8 @@ description: Ensure that your configuration meets Microsoft 365 Enterprise crite
 
 ![](./media/deploy-foundation-infrastructure/O365proplus_icon-small.png)
 
+*This applies to both the E3 and E5 versions of Microsoft 365 Enterprise and Microsoft 365 Education*
+
 Before you move on to the next phase in the deployment process, ensure that your configuration meets the following required criteria for Office 365 ProPlus infrastructure.
 
 - Assessment of infrastructure and environment is complete, including:
