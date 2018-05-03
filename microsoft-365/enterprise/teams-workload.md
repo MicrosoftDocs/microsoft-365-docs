@@ -6,23 +6,24 @@ ms.date: 04/09/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
-ms.collection: Ent_O365
-ms.custom:
+localization_priority: Priority
+ms.collection: 
+- Ent_O365
 - Strat_O365_Enterprise
+ms.custom:
 description: Step through the process of planning for, rolling out, and driving the value of Microsoft Teams in Microsoft 365 Enterprise across your organization.
 ---
 
-# Deploy Microsoft Teams for Microsoft 365 Enterprise
+# Deploy ![](./media/teams-workload/teams_image1.png) for Microsoft 365 Enterprise
 
-Microsoft Teams brings together chat, conferencing, document sharing, and threaded conversations in a way that makes it easy to create and share content across groups. Teams is the way you do teamwork and collaboration for Microsoft 365 Enterprise and is a key element of the Built For Teamwork value of Microsoft 365. If you are brand new to Teams, see [Overview of Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/teams-overview).
+Microsoft Teams brings together chat, conferencing, document sharing, and threaded conversations in a way that makes it easy to create and share content across groups. Teams is the way you do teamwork and collaboration for Microsoft 365 Enterprise and is a key element of the Built for Teamwork value of Microsoft 365. If you are brand new to Teams, see [Overview of Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/teams-overview).
  
 If you’re currently using Skype for Business, we’re building Skype for Business capabilities into Teams. This will happen over time, and ultimately Teams will become the single client experience. As a valued Skype for Business customer, Microsoft is here to support you. See the [Journey from Skype for Business to Microsoft Teams](https://docs.microsoft.com/microsoftteams/journey-skypeforbusiness-teams) for more information.
 
 The following phases and steps guide you through the process of envisioning the role of Teams in your organization, onboarding your organization to Teams through a series of progressive rollouts, and driving usage of Teams and its value to your end users. 
 
 >[!Note]
->These deployment instructions should be followed only after you complete your [foundation infrastructure](deploy-foundation-infrastructure.md) for Microsoft 365 Enterprise.
+>These deployment instructions should be followed only after you've completed your [foundation infrastructure](deploy-foundation-infrastructure.md) for Microsoft 365 Enterprise.
 >
 
 ## Phase 1: Envision
@@ -36,7 +37,7 @@ These three groups ensure that your Teams deployment includes considerations tha
 
 #### Result
 
-A list of people in your organization that represent the business, technical, and end user aspects of your organization.
+A list of people that represent the business, technical, and end user aspects of your organization.
 
 ### Step 2: Determine and prioritize your Teams business scenarios
 
@@ -82,15 +83,15 @@ Next, use these resources to understand Teams licensing and to perform the setup
 
 #### Result
 
-Your network, security, and Office 365 licensing is ready to begin rolling out Teams to selected groups in your organization.
+Your network, security, and Office 365 licensing planning is done and you are ready to begin rolling out Teams to selected groups in your organization.
 
 ### Step 2: Run an IT pilot
 
-In most medium-sized and large organizations, you should run an IT pilot with your stakeholders from Phase 1 and early adopters and technical enthusiasts in your organization. During the IT pilot:
+In most medium-sized and large organizations, you should run an IT pilot with your stakeholders from Phase 1 and early adopters and technical enthusiasts. During the IT pilot:
 
-- Choose a Teams business scenario in which the participants of the IT pilot can practice. See the [Microsoft Teams getting started kit](http://microsoft.com/download/56505) for ideas.
+- Choose a Teams business scenario in which your IT pilot participants can practice. See the [Microsoft Teams getting started kit](http://microsoft.com/download/56505) for ideas.
 - Give your pilot participants a set of exercises to test Teams-based chats, file storage, meetings, and other capabilities.
-- Determine your change management strategy and produce materials to drive organization-wide user adoption. Change management materials can include email-based announcement text, internal training plans, hallway posters, and presentations to inform your organization about Teams and its benefits with the goals of raising awareness and driving usage. See [change management strategy for Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/change-management-strategy) for some ideas.
+- Determine your change management strategy and produce materials to drive organization-wide user adoption. Change management materials can include email announcement text, internal training plans, hallway posters, and presentations. These materials will inform your organization about Teams and its benefits with the goals of raising awareness and driving usage. See [change management strategy for Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/change-management-strategy) for some ideas.
 - Have your IT pilot participants review the change management strategy materials based on their experiences. They can provide tips on best practices and advice on how to best describe the benefits of Teams and how to use it for collaboration and teamwork.
 
 #### Result
@@ -122,8 +123,8 @@ After completing your rollout to a targeted business group, roll out Teams to th
 
 - Identification of key business scenarios for Teams within your separate business groups.
 - Use of your refined change management materials for announcement activities to inform your organization of the expectations and timelines for Teams usage for departmental, work, or project teams.
-- Direct user training on Teams or links to resources to introduce Teams and how to use it. See the training resources at [End user training for Microsoft Teams](https://docs.microsoft.com/microsoftteams/enduser-training).
-- A feedback mechanism, such as a central team containing everyone, to collect comments and issues from organization users. If your organization has less than 2500 individuals, use a public channel in Teams. Otherwise, use a public group in Yammer.
+- Delivering user training on Teams or links to resources to introduce Teams and how to use it. See the training resources at [End user training for Microsoft Teams](https://docs.microsoft.com/microsoftteams/enduser-training).
+- A feedback mechanism, such as a central team containing everyone, to collect comments and act on issues from organization users. If your organization has less than 2500 individuals, use a public channel in Teams. Otherwise, use a public group in Yammer.
 
 #### Result
 

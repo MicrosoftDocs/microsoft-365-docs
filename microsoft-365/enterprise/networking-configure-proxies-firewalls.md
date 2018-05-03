@@ -7,16 +7,19 @@ ms.date: 03/05/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
-ms.collection: Ent_O365
-ms.custom:
+localization_priority: Priority
+ms.collection: 
+- Ent_O365
 - Strat_O365_Enterprise
+ms.custom:
 description: Understand and configure proxy servers and firewalls for maximum performance to trusted Office 365 locations.
 ---
 
 # Step 3: Configure your proxy servers and firewalls
 
 *This step is optional and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
+
+![](./media/deploy-foundation-infrastructure/networking_icon-small.png)
 
 In Step 3, you configure proxy servers, firewalls, and other intermediate security devices to pass the traffic to and from Office 365 IP addresses either unhindered or with minimal processing. This helps ensure good performance without compromising security, because Microsoft provides datacenter and operational security as part of Office 365. 
 
@@ -31,7 +34,9 @@ As an interim checkpoint, you can see the [exit criteria](networking-exit-criter
 
 ## Next step
 
-[Step 4: Plan for URL and IP address changes](networking-implement-endpoint-change-mgmt.md)
+|||
+|:-------|:-----|
+|![](./media/stepnumbers/Step4.png)|[Plan for URL and IP address changes](networking-implement-endpoint-change-mgmt.md)|
 
 
 

@@ -7,16 +7,19 @@ ms.date: 03/13/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
-ms.collection: Ent_O365
-ms.custom:
+localization_priority: Priority
+ms.collection: 
+- Ent_O365
 - Strat_O365_Enterprise
+ms.custom:
 description: Plan for the set of users and groups that will work for your organization.
 ---
 
 # Step 1: Plan for users and groups
 
 *This step is required and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
+
+![](./media/deploy-foundation-infrastructure/identity_icon-small.png)
 
 In Step 1, you'll create your identity infrastructure that combines users, groups, and group membership with security features in the correct configuration. This allows you to:
 
@@ -76,4 +79,7 @@ As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria
 
 ## Next step
 
-[Step 2: Synchronize directories](identity-azure-ad-connect.md)
+|||
+|:-------|:-----|
+|![](./media/stepnumbers/Step2.png)| [Synchronize directories](identity-azure-ad-connect.md) |
+

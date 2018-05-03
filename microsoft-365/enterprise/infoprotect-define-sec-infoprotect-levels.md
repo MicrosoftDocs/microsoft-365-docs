@@ -7,16 +7,19 @@ ms.date: 03/13/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
-ms.collection: Ent_O365
-ms.custom:
+localization_priority: Priority
+ms.collection: 
+- Ent_O365
 - Strat_O365_Enterprise
+ms.custom:
 description: Understand and configure security and information protection levels for your organization.
 ---
 
 # Step 1: Define security and information protection levels
 
 *This step is required and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
+
+![](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
 In Step 1, you'll define the levels of security and protection for your organization. For example, your sales department might only require a low security level, However, your research department and its highly valuable intellectual property might require a high security level that encrypts files and limits access to only research staff.
 
@@ -34,4 +37,6 @@ As an interim checkpoint, see the [exit criteria](infoprotect-exit-criteria.md#c
 
 ## Next step
 
-[Step 2: Configure conditional access policy settings](infoprotect-configure-conditional-access-policy-settings.md)
+|||
+|:-------|:-----|
+|![](./media/stepnumbers/Step2.png)|[Configure conditional access policies](infoprotect-configure-conditional-access-policy-settings.md)|

@@ -7,16 +7,19 @@ ms.date: 03/01/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
-ms.collection: Ent_O365
-ms.custom:
+localization_priority: Priority
+ms.collection: 
+- Ent_O365
 - Strat_O365_Enterprise
+ms.custom:
 description: Understand and configure the use of Azure AD Application Proxy.
 ---
 
 # Step 16: Provide secure remote access to users
 
 *This step is optional for hybrid environments and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
+
+![](./media/deploy-foundation-infrastructure/identity_icon-small.png)
 
 In Step 16, you'll provide secure remote access for web-based applications like SharePoint sites, Outlook Web Access servers, or other web-based line of business applications to remote or roaming users. You do this by setting up Azure AD Application Proxy, which replaces traditional virtual private network (VPN) infrastructures and demilitarized zones (DMZ) to provide access to intranet resources. 
 

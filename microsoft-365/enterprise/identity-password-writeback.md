@@ -7,16 +7,19 @@ ms.date: 03/01/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
-ms.collection: Ent_O365
-ms.custom:
+localization_priority: Priority
+ms.collection: 
+- Ent_O365
 - Strat_O365_Enterprise
+ms.custom:
 description: Understand and configure password writeback for hybrid environments.
 ---
 
 # Step 9: Simplify password updates
 
 *This step is optional for hybrid environments and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
+
+![](./media/deploy-foundation-infrastructure/identity_icon-small.png)
 
 In Step 9, you'll allow users to reset their passwords through Azure Active Directory (AD), which is then replicated to your local Windows Server Active Directory (AD). This process is known as password writeback. With password writeback, users don’t need to update their passwords through the on-premises Windows Server AD where user accounts and their attributes are stored. This is valuable to roaming or remote users who do not have a remote access connection to the on-premises network.
 
@@ -32,5 +35,7 @@ As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria
 
 ## Next step
 
-[Step 10: Simplify password resets](identity-password-reset.md)
+|||
+|:-------|:-----|
+|![](./media/stepnumbers/Step10.png)| [Simplify password resets](identity-password-reset.md) |
 

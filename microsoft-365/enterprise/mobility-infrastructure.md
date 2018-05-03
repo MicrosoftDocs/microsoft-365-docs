@@ -29,4 +29,8 @@ The entire library of Intune documentation is [available online](https://docs.mi
 
 
 ## Next phase
-Your next phase in the end-to-end deployment process for Microsoft 365 Enterprise is [information protection](infoprotect-infrastructure.md).
+
+|||
+|:-------|:-----|
+|![](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)| Your next phase in the end-to-end deployment process for Microsoft 365 Enterprise is [information protection](infoprotect-infrastructure.md). |
+

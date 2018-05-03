@@ -7,16 +7,19 @@ ms.date: 03/05/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
-ms.collection: Ent_O365
-ms.custom:
+localization_priority: Priority
+ms.collection: 
+- Ent_O365
 - Strat_O365_Enterprise
+ms.custom:
 description: Understand and configure multi-factor authentication for user accounts.
 ---
 
 # Step 7: Set up multi-factor authentication
 
 *This step is optional and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
+
+![](./media/deploy-foundation-infrastructure/identity_icon-small.png)
 
 In Step 7, you'll set up multi-factor authentication (MFA) to add a second layer of security to user sign-ins and transactions. MFA requires an additional verification method after users have correctly entered their password. Without MFA, the password is the only verification method. The problem with passwords is that many of them are easily guessed by an attacker or unknowingly shared with untrusted parties.
 
@@ -43,4 +46,7 @@ As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria
 
 ## Next step
 
-[Step 8: Simplify user sign-in](identity-single-sign-on.md)
+|||
+|:-------|:-----|
+|![](./media/stepnumbers/Step8.png)| [Simplify user sign-in](identity-single-sign-on.md) |
+

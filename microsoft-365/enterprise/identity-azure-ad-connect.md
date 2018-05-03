@@ -7,16 +7,19 @@ ms.date: 03/05/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
-ms.collection: Ent_O365
-ms.custom:
+localization_priority: Priority
+ms.collection: 
+- Ent_O365
 - Strat_O365_Enterprise
+ms.custom:
 description: Understand identity options and configure Azure AD Connect to synchronize your on-premises Windows Server AD with Azure AD.
 ---
 
 # Step 2: Synchronize identities
 
 *This step is required for hybrid environments and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
+
+![](./media/deploy-foundation-infrastructure/identity_icon-small.png)
 
 In Step 2, you'll synchronize your on-premises Windows Server Active Directory (AD) with the Azure Active Directory (AD) tenant used by your Office 365 and Enterprise Mobility + Security (EMS) subscriptions.
 
@@ -46,4 +49,7 @@ As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria
 
 ## Next step
 
-[Step 3: Customize the Office 365 sign-in page](identity-customize-office-365-sign-in.md)
+|||
+|:-------|:-----|
+|![](./media/stepnumbers/Step3.png)| [Customize the Office 365 sign-in page](identity-customize-office-365-sign-in.md) |
+

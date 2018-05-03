@@ -7,16 +7,19 @@ ms.date: 03/01/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
-ms.collection: Ent_O365
-ms.custom:
+localization_priority: Priority
+ms.collection: 
+- Ent_O365
 - Strat_O365_Enterprise
+ms.custom:
 description: Understand and configure Azure AD Identity Protection.
 ---
 
 # Step 15: Protect against credential compromise
 
 *This step is optional and applies only to the E5 version of Microsoft 365 Enterprise*
+
+![](./media/deploy-foundation-infrastructure/identity_icon-small.png)
 
 In Step 15, you'll learn how to configure policies that protect against credential compromise, where an attacker determines a user’s account name and password to gain access to an organization’s cloud services and data. Azure AD Identity Protection provides a number of ways to help prevent an attacker from moving laterally through your accounts and groups, and subsequently, to your most valuable data.
 
@@ -42,5 +45,8 @@ As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria
 
 ## Next step
 
-[Step 16: Provide secure remote access to users](identity-azure-ad-application-proxy.md)
+|||
+|:-------|:-----|
+|![](./media/stepnumbers/Step16.png)| [Provide secure remote access to users](identity-azure-ad-application-proxy.md) |
+
 

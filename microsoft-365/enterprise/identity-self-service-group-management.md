@@ -7,16 +7,19 @@ ms.date: 03/01/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
-ms.collection: Ent_O365
-ms.custom:
+localization_priority: Priority
+ms.collection: 
+- Ent_O365
 - Strat_O365_Enterprise
+ms.custom:
 description: Understand and configure Azure AD self-service group management.
 ---
 
 # Step 14: Allow users to create and manage their own groups
 
 *This step is optional and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
+
+![](./media/deploy-foundation-infrastructure/identity_icon-small.png)
 
 In Step 14, you'll identify Azure Active Directory (AD) groups that can be managed by group owners instead of IT administrators. Known as *self-service group management*, this feature allows group owners who are not assigned an administrative role to create and manage security groups. 
 
@@ -32,4 +35,6 @@ As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria
 
 ## Next step
 
-[Step 15: Protect against credential compromise](identity-azure-ad-identity-protection.md)
+|||
+|:-------|:-----|
+|![](./media/stepnumbers/Step15.png)| [Protect against credential compromise](identity-azure-ad-identity-protection.md) |

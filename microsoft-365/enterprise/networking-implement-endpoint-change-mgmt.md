@@ -7,16 +7,19 @@ ms.date: 03/05/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
-ms.collection: Ent_O365
-ms.custom:
+localization_priority: Priority
+ms.collection: 
+- Ent_O365
 - Strat_O365_Enterprise
+ms.custom:
 description: ""
 ---
 
 # Step 4: Plan for URL and IP address changes
 
 *This step is optional and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
+
+![](./media/deploy-foundation-infrastructure/networking_icon-small.png)
 
 >[!Note]
 >This step requires [Step 3](networking-configure-proxies-firewalls.md). If you have not done Step 3, you can skip to [Step 5](networking-optimize-tcp-performance.md).
@@ -35,4 +38,6 @@ As an interim checkpoint, you can see the [exit criteria](networking-exit-criter
 
 ## Next step
 
-[Step 5: Optimize client and Office 365 service performance](networking-optimize-tcp-performance.md)
+|||
+|:-------|:-----|
+|![](./media/stepnumbers/Step5.png)|[Optimize client and Office 365 service performance](networking-optimize-tcp-performance.md)|

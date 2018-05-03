@@ -7,16 +7,19 @@ ms.date: 03/01/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
-ms.collection: Ent_O365
-ms.custom:
+localization_priority: Priority
+ms.collection: 
+- Ent_O365
 - Strat_O365_Enterprise
+ms.custom:
 description: Understand and configure Azure AD access and usage reporting.
 ---
 
 # Step 13: Monitor tenant and sign-in activity
 
 *This step is optional and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
+
+![](./media/deploy-foundation-infrastructure/identity_icon-small.png)
 
 In Step 13, you'll review audit logs and sign-in activity using Azure AD reporting. Two types of reports are available.
 
@@ -38,5 +41,6 @@ As a result of this step, you'll gain awareness of these reports and an understa
 
 ## Next step
 
-[Step 14: Allow users to create and manage their own groups](identity-self-service-group-management.md)
-
+|||
+|:-------|:-----|
+|![](./media/stepnumbers/Step14.png)| [Allow users to create and manage their own groups](identity-self-service-group-management.md) |

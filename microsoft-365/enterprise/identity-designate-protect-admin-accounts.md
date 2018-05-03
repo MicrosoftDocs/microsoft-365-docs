@@ -7,16 +7,19 @@ ms.date: 03/01/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
-ms.collection: Ent_O365
-ms.custom:
+localization_priority: Priority
+ms.collection: 
+- Ent_O365
 - Strat_O365_Enterprise
+ms.custom:
 description: Understand and configure your administrator accounts for maximum protection.
 ---
 
 # Step 5: Protect global administrator accounts
 
 *This step is required and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
+
+![](./media/deploy-foundation-infrastructure/identity_icon-small.png)
 
 In Step 5, you'll help prevent digital attacks on your organization by ensuring that your administrator accounts are as secure as possible. To do this, you must:
 
@@ -51,4 +54,7 @@ As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria
 
 ## Next step
 
-[Step 6: Set up on-demand global administrators](identity-privileged-identity-management.md)
+|||
+|:-------|:-----|
+|![](./media/stepnumbers/Step6.png)| [Set up on-demand global administrators](identity-privileged-identity-management.md) |
+

@@ -7,16 +7,19 @@ ms.date: 03/05/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
-ms.collection: Ent_O365
-ms.custom:
+localization_priority: Priority
+ms.collection: 
+- Ent_O365
 - Strat_O365_Enterprise
+ms.custom:
 description: Understand and configure your DNS resolution for better performance.
 ---
 
 # Step 2: Ensure that DNS resolution is local to the ISP
 
 *This step is required and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
+
+![](./media/deploy-foundation-infrastructure/networking_icon-small.png)
 
 In Step 2, you reconfigure your network so that each office has a local Internet link and Internet service provider (ISP). Using a local ISP gives each office the shortest path to a Microsoft front-end server on the Internet. These front-end servers for Office 365 and Intune are located around the world to provide the best performance, no matter where your offices are located.
 
@@ -28,5 +31,6 @@ As an interim checkpoint, you can see the [exit criteria](networking-exit-criter
 
 ## Next step
 
-[Step 3: Configure your proxy servers and firewalls](networking-configure-proxies-firewalls.md)
-
+|||
+|:-------|:-----|
+|![](./media/stepnumbers/Step3.png)|[Configure your proxy servers and firewalls](networking-configure-proxies-firewalls.md)|

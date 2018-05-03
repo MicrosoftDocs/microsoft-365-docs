@@ -7,16 +7,19 @@ ms.date: 03/09/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
-ms.collection: Ent_O365
-ms.custom:
+localization_priority: Priority
+ms.collection: 
+- Ent_O365
 - Strat_O365_Enterprise
+ms.custom:
 description: Understand the role of and configure conditional access policies.
 ---
 
 # Step 2: Configure conditional access policies
 
 *This step is required and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
+
+![](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
 Conditional access policies are settings that specify the conditions under which access for a user or device is granted or denied. For example, you could configure a conditional access policy that permits access for a user under the condition that they use multifactor authentication.
 
@@ -35,4 +38,7 @@ As an interim checkpoint, see the [exit criteria](infoprotect-exit-criteria.md#c
 
 ## Next step
 
-[Step 3: Configure classification for your environment](infoprotect-configure-classification.md)
+|||
+|:-------|:-----|
+|![](./media/stepnumbers/Step3.png)|[Configure classification for your environment](infoprotect-configure-classification.md)|
+
