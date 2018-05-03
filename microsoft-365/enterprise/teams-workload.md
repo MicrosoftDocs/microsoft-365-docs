@@ -2,7 +2,7 @@
 title: "Deploy Microsoft Teams for Microsoft 365 Enterprise"
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/09/2018
+ms.date: 05/02/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,7 +13,7 @@ ms.custom:
 description: Step through the process of planning for, rolling out, and driving the value of Microsoft Teams in Microsoft 365 Enterprise across your organization.
 ---
 
-# Deploy ![](./media/teams-workload/teams_image1.png) for Microsoft 365 Enterprise
+# Deploy Microsoft Teams for Microsoft 365 Enterprise
 
 Microsoft Teams brings together chat, conferencing, document sharing, and threaded conversations in a way that makes it easy to create and share content across groups. Teams is the way you do teamwork and collaboration for Microsoft 365 Enterprise and is a key element of the Built for Teamwork value of Microsoft 365. If you are brand new to Teams, see [Overview of Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/teams-overview).
  
