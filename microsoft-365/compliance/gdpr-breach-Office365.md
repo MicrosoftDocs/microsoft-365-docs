@@ -1,5 +1,5 @@
 ---
-title: Microsoft Office 365 Breach Notification Under the GDPR
+title: Office 365 Breach Notification Under the GDPR
 description: How Microsoft protects against a personal data breach and how Microsoft responds and notifies you if a breach occurs.
 keywords: Office 365, Microsoft 365, Microsoft 365 Education, Microsoft 365 documentation, GDPR
 author: BrendaCarter
@@ -14,7 +14,7 @@ audience: itpro
 ms.collection: GDPROur Commitment to Our Customers
 ---
 
-# Microsoft Office 365 Breach Notification Under the GDPR
+# Office 365 Breach Notification Under the GDPR
 
 As a data processor, Office 365 will ensure that our customers are able to meet the GDPR’s breach notification requirements as data controllers. To that end, we are committed to the following:
 
