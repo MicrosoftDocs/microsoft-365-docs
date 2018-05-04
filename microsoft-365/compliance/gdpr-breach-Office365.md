@@ -14,7 +14,7 @@ audience: itpro
 ms.collection: GDPROur Commitment to Our Customers
 ---
 
-# Commitment to our customers
+# Microsoft Office 365 Breach Notification Under the GDPR
 
 As a data processor, Office 365 will ensure that our customers are able to meet the GDPR’s breach notification requirements as data controllers. To that end, we are committed to the following:
 
