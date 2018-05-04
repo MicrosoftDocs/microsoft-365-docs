@@ -330,7 +330,7 @@ Here’s the high-level process for exporting data from your tenant.
 
 1.  Open the Azure portal, select **All services**, type *policy* into the filter, and then select **Policy**.
 
-> ![All services filter ](media/image12.png)
+> ![All services filter ](media/azure-dsr_image12.png)
 
 1.  In the **Policy** blade, select **User privacy**, select **Manage User Requests**, and then select **Add export request**.
 
