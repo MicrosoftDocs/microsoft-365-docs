@@ -13,6 +13,7 @@ manager: laurawi
 audience: itpro
 ms.collection: GDPR
 ---
+
 # Microsoft Support and Professional Services and Breach Notification Under the GDPR
 
 Microsoft Support and Professional Services takes its obligations under the General Data Protection Regulation (GDPR) seriously.

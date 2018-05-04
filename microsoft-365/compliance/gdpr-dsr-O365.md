@@ -13,6 +13,7 @@ manager: laurawi
 audience: itpro
 ms.collection: GDPROur Commitment to Our Customers
 ---
+# Office 365 Data Subject Requests for the GDPR
 
 ## Introduction to DSRs
 
