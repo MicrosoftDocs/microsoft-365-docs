@@ -164,7 +164,7 @@ You can correct, update, or delete identifiable information about end users, suc
 
 2.  Select **All services**, enter **Users and groups** in the text box, and then select **Enter**.
 
-> ![Select All services](media/image3.png)
+> ![Select All services](media/azure-dsr_image3.png)
 
 1.  On the **Users and groups** blade, select **Users**.
 
