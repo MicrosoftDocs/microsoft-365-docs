@@ -1,5 +1,5 @@
 ---
-title: Windows Data Subject Requests Guide
+title: Windows Data Subject Requests for the GDPR
 description: Learn how to make data subject requests in regards to data collected by Windows
 keywords: Microsoft 365, Microsoft 365 Education, Microsoft 365 documentation, GDPR, Windows, DSR
 author: danihalfin
@@ -12,7 +12,7 @@ ms.author: daniha
 audience: itpro
 ms.collection: GDPR
 ---
-# Windows Data Subject Requests Guide
+# Windows Data Subject Requests for the GDPR
 
 ## Introduction to DSRs
 

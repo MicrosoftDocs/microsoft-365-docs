@@ -1,5 +1,5 @@
 ---
-title: Windows and Breach Notification
+title: Windows Breach Notification Under the GDPR
 description: How Windows protects against a personal data breach and how Microsoft responds and notifies you if a breach occurs.
 keywords: Microsoft 365, Microsoft 365 Education, Microsoft 365 documentation, GDPR
 author: danihalfin
@@ -12,7 +12,7 @@ ms.author: daniha
 audience: itpro
 ms.collection: GDPR
 ---
-# Windows and Breach Notification
+# Windows Breach Notification Under the GDPR
 
 Microsoft Windows takes its obligations under the General Data Protection Regulation (GDPR) seriously. The information in this topic is designed to answer customer questions about how Windows protects against a personal data breach and how we respond and notify you if a breach occurs.
 
