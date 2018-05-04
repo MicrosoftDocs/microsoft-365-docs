@@ -1,6 +1,20 @@
-<span id="_Toc510704607" class="anchor"></span>
+---
+title: Microsoft Support and Professional Services Data Subject Requests for the GDP
+description: How Microsoft Support and Professional Services handles data subject requests. 
+keywords: Microsoft 365, Microsoft 365 Education, Microsoft 365 documentation, GDPR
+author: BrendaCarter
+localization_priority: Priority
+audience: microsoft-business
+ms.prod: Microsoft-365-enterprise
+ms.topic: article
+ms.date: 04/13/2018
+ms.author: bcarter
+manager: laurawi
+audience: itpro
+ms.collection: GDPR
+---
 
-# Introduction to Microsoft Professional Services
+# Microsoft Support and Professional Services Data Subject Requests for the GDPR
 
 Microsoft Professional Services includes a diverse group of technical architects, engineers, consultants, and support professionals dedicated to delivering on Microsoft's mission of empowering customers to do more and achieve more. Our Professional Services team includes more than 21,000+ total consultants, Digital Advisors, Premier Support, engineers, and sales professionals working across 191 countries, supporting 46 different languages, managing several million engagements per month, and engaging in customer and partner interactions through on-premise, phone, web, community and automated tools. The organization brings broad expertise across the Microsoft portfolio, leveraging an extensive network of partners, technical communities, tools, diagnostics and channels that connect us with our enterprise customers.
 
@@ -48,7 +62,7 @@ Below are the relevant definitions of terms from the GDPR for this guide:
 
 -   **Customer Contact** is personal data that may be part of your business relationship with Microsoft, such as personal data contained within your customer contact information. This may include your name, e-mail, or phone number of the Premier Contract Service Manager (CSM), the Global or IT Administrator for an Online Service, or similar roles.
 
--   **Pseudonymized Data.** When you use Microsoft support for Microsoft’s enterprise products and services, Microsoft generates some information linked to a Microsoft numeric identifier to provide the support. This is often referred to as “Pseudonymized Data”, Although this data cannot be attributed to a specific data subject without the use of additional information, some of it may be deemed personal under GDPR's broad definition for personal data. Within Professional Services, requests to fulfill or assist in fulfilling DSRs will always automatically include addressing pseudonymized data.
+-   **Pseudonymized Data** When you use Microsoft support for Microsoft’s enterprise products and services, Microsoft generates some information linked to a Microsoft numeric identifier to provide the support. This is often referred to as “Pseudonymized Data”, Although this data cannot be attributed to a specific data subject without the use of additional information, some of it may be deemed personal under GDPR's broad definition for personal data. Within Professional Services, requests to fulfill or assist in fulfilling DSRs will always automatically include addressing pseudonymized data.
 
 <span id="_Toc508792504" class="anchor"><span id="_Toc510704610" class="anchor"><span id="_Toc511403160" class="anchor"></span></span></span>
 
