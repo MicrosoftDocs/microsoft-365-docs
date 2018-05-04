@@ -101,21 +101,21 @@ This is particularly helpful if you want to find or change personal data for a s
 
 2.  Select **All services**, enter **Users and groups** in the text box, and then select **Enter**.
 
-> ![Select All services](media/image3.png)
+> ![Select All services](media/azure-dsr_image3.png)
 
 1.  On the **Users and groups** blade, select **Users**.
 
-> ![Select users](media/image9.png)
+> ![Select users](media/azure-dsr_image9.png)
 
 1.  On the **Users and groups - Users** blade, select a user from the list, and then, on the blade for the selected user, select **Profile** to view user profile information that might contain personal data.
 
-> ![Select profile](media/image5.png)
+> ![Select profile](media/azure-dsr_image5.png)
 
 1.  If you need to add or change user profile information, you can do so, and then, in the command bar, select **Save.**
 
 2.  On the blade for the selected user, select **Work Info** to view user work information that may contain personal data.
 
-> ![Select work info](media/image11.png)
+> ![Select work info](media/azure-dsr_image11.png)
 
 1.  If you need to add or change user work information, you can do so, and then, in the command bar, select **Save.**
 
@@ -221,22 +221,22 @@ Here’s the high-level process for deleting users from your tenant.
 
 > The **Users – All users** blade appears.
 >
-> ![Locate user](media/image8.png)
+> ![Locate user](media/azure-dsr_image8.png)
 
 1.  Check the box next to the user you want to delete, select **Delete user**, and then select **Yes** in the box asking if you want to delete the user.
 
-> ![User management](media/image9.png)
+> ![User management](media/azure-dsr_image9.png)
 
 1.  In the **Show** drop-down box, select **Recently deleted users**.
 
-> ![View user profile](media/image10.png)
+> ![View user profile](media/azure-dsr_image10.png)
 
 1.  Select the same user again, select **Delete permanently**, and then select **Yes** in the box asking if you’re sure.
 
 > **Important**  
 > Be aware that by clicking **Yes** you are permanently, and irrevocably, deleting the user and all associated data and system-generated logs. If you do this by mistake, you’ll have to manually add the user back to the tenant. The associated data and system-generated logs are non-recoverable.
 >
-> ![View user work information](media/image11.png)
+> ![View user work information](media/azure-dsr_image11.png)
 
 <span id="_Export" class="anchor"><span id="_Step_6:_Export" class="anchor"><span id="_Toc511116629" class="anchor"><span id="_Toc511122673" class="anchor"><span id="_Toc511120766" class="anchor"><span id="_Toc511125179" class="anchor"><span id="_Toc511136246" class="anchor"><span id="_Toc511163889" class="anchor"><span id="_Toc508792534" class="anchor"></span></span></span></span></span></span></span></span></span>
 
@@ -334,11 +334,11 @@ Here’s the high-level process for exporting data from your tenant.
 
 1.  In the **Policy** blade, select **User privacy**, select **Manage User Requests**, and then select **Add export request**.
 
-> ![Add export request ](media/image13.png)
+> ![Add export request ](media/azure-dsr_image13.png)
 
 1.  Complete the **Export data request**:
 
-> ![New export data request](media/image14.png)
+> ![New export data request](media/azure-dsr_image14.png)
 
 -   **User.** Type the email address of the Azure Active Directory user that requested the export.
 
