@@ -1,6 +1,6 @@
 ---
-title: Microsoft Support and Professional Services and Breach Notification Under the GDPR
-description: How Microsoft Support and Professional Services protects 
+title: Microsoft Support and Professional Services Data Subject Requests for the GDP
+description: How Microsoft Support and Professional Services handles data subject requests. 
 keywords: Microsoft 365, Microsoft 365 Education, Microsoft 365 documentation, GDPR
 author: BrendaCarter
 localization_priority: Priority
@@ -14,7 +14,7 @@ audience: itpro
 ms.collection: GDPR
 ---
 
-# Microsoft Support and Professional Services Data Subject Requests for the GDPRIntroduction to Microsoft Professional Services
+# Microsoft Support and Professional Services Data Subject Requests for the GDPR
 
 Microsoft Professional Services includes a diverse group of technical architects, engineers, consultants, and support professionals dedicated to delivering on Microsoft's mission of empowering customers to do more and achieve more. Our Professional Services team includes more than 21,000+ total consultants, Digital Advisors, Premier Support, engineers, and sales professionals working across 191 countries, supporting 46 different languages, managing several million engagements per month, and engaging in customer and partner interactions through on-premise, phone, web, community and automated tools. The organization brings broad expertise across the Microsoft portfolio, leveraging an extensive network of partners, technical communities, tools, diagnostics and channels that connect us with our enterprise customers.
 
