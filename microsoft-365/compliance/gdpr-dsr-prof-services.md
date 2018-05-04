@@ -62,7 +62,7 @@ Below are the relevant definitions of terms from the GDPR for this guide:
 
 -   **Customer Contact** is personal data that may be part of your business relationship with Microsoft, such as personal data contained within your customer contact information. This may include your name, e-mail, or phone number of the Premier Contract Service Manager (CSM), the Global or IT Administrator for an Online Service, or similar roles.
 
--   **Pseudonymized Data.** When you use Microsoft support for Microsoft’s enterprise products and services, Microsoft generates some information linked to a Microsoft numeric identifier to provide the support. This is often referred to as “Pseudonymized Data”, Although this data cannot be attributed to a specific data subject without the use of additional information, some of it may be deemed personal under GDPR's broad definition for personal data. Within Professional Services, requests to fulfill or assist in fulfilling DSRs will always automatically include addressing pseudonymized data.
+-   **Pseudonymized Data** When you use Microsoft support for Microsoft’s enterprise products and services, Microsoft generates some information linked to a Microsoft numeric identifier to provide the support. This is often referred to as “Pseudonymized Data”, Although this data cannot be attributed to a specific data subject without the use of additional information, some of it may be deemed personal under GDPR's broad definition for personal data. Within Professional Services, requests to fulfill or assist in fulfilling DSRs will always automatically include addressing pseudonymized data.
 
 <span id="_Toc508792504" class="anchor"><span id="_Toc510704610" class="anchor"><span id="_Toc511403160" class="anchor"></span></span></span>
 
