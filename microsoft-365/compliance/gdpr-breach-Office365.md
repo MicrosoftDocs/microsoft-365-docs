@@ -15,6 +15,7 @@ ms.collection: GDPROur Commitment to Our Customers
 ---
 
 # Commitment to our customers
+
 As a data processor, Office 365 will ensure that our customers are able to meet the GDPR’s breach notification requirements as data controllers. To that end, we are committed to the following:
 
 -   Providing customers with an ability to specify a dedicated privacy contact who will be notified in the event breach. Customers will be able to specify this contact in Azure Active Directory (AAD)
