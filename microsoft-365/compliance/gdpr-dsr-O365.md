@@ -527,7 +527,7 @@ To export and download items:
 
 1.  Open the Content Search in the Security & Compliance Center.
 
-2.  On the search fly out page, click ![](media/O365-DSR-Doc-Final_image21.png) **More**, and then click **Export results**. Note that you can also export a report.
+2.  On the search fly out page, click ![](media/o365-dsr_image21.png) **More**, and then click **Export results**. Note that you can also export a report.
 
 3.  Complete the sections on the **Export results** fly out page. Be sure to use the scroll bar to view all export options.
 
@@ -539,7 +539,7 @@ To export and download items:
 
 7.  On the export fly out page, under **Export key**, **click Copy to clipboard**. You’ll use this key in step 10 to download the search results
 
-8.  On the top of the fly out page, click ![](media/O365-DSR-Doc-Final_image21.png) **Download results**.
+8.  On the top of the fly out page, click ![](media/o365-dsr_image21.png) **Download results**.
 
 9.  If you're prompted to install the **Microsoft Office 365 eDiscovery Export Tool**, click **Install**.
 
