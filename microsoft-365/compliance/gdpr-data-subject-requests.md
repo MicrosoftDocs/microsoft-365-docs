@@ -23,7 +23,7 @@ These articles discusses how to use Microsoft products, services, and administra
 - [Windows](gdpr-dsr-Windows.md)
 - [Azure](gdpr-dsr-Azure.md)
 - [Dynamics 365](gdpr-dsr-Dynamics365.md)
-- [Microsoft Support and Professional Services](gdpr-dsr-Microsoft-Support-Professional-Services.md)
+- [Microsoft Support and Professional Services](gdpr-dsr-prof_services.md)
 
 For more information about how Microsoft enables you to respond to DSRs, see [GDPR: Data Subject Requests (DSRs)](https://servicetrust.microsoft.com/ViewPage/GDPRDSR) in the Service Trust Portal.
 

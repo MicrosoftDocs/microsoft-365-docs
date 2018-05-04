@@ -13,14 +13,11 @@ manager: laurawi
 audience: itpro
 ms.collection: GDPR
 ---
-
 # Microsoft Support and Professional Services and Breach Notification Under the GDPR
-============================================================
 
 Microsoft Support and Professional Services takes its obligations under the General Data Protection Regulation (GDPR) seriously.
 
 Microsoft Professional Services includes a diverse group of technical architects, engineers, consultants, and support professionals dedicated to delivering on the Microsoft mission of empowering customers to do more and achieve more. Our Professional Services team includes more than 21,000+ total consultants, Digital Advisors, Premier Support, engineers, and sales professionals working across 191 countries, supporting 46 different languages, managing several million engagements per month, and engaging in customer and partner interactions through on-premise, phone, web, community and automated tools. The organization brings broad expertise across the Microsoft portfolio, leveraging an extensive network of partners, technical communities, tools, diagnostics and channels that connect us with our enterprise customers.
-
 
 The drive for Microsoft Professional Services’ global data protection incident response team is to (a) employ rigorous operations and processes to prevent data protection incidents from occurring, (b) manage them professionally and efficiently when they do occur, and (c) learn from these data protection incidents through regular post-mortem and program improvements. Microsoft’s Professional Services data protection incident response team’s processes and results are reviewed and attested to by multiple security and compliance audits (e.g., ISO/IEC 27001).
 
@@ -42,7 +39,7 @@ Some actions are out of scope for this process completely, including general que
 
 The data protection incident response team has identified a set of scenarios that may occur in professional services. While adhering to the basic data protection incident response framework, procedures have been developed and customized to expedite the response process. For instance, a misdirected email may require little investigation. On the other hand, identifying malicious personnel may require a complete forensic investigation due to the surreptitious nature of an offender’s activities. This set of scenarios may provide insight into the data protection incident response process for professional services.
 
-### **Data Protection Incident Response Process**
+## Data Protection Incident Response Process
 
 When Microsoft Professional Services identifies a data protection incident, a triage process occurs that (a) assesses the event, (b) determines whether it is in-scope for this process, (c) determines whether it was malicious, (d) performs a preliminary investigation and assigns a severity level, and (e) alerts and coordinates with appropriate stakeholders within Microsoft. The team also begins recording details for tracking purposes and the post-mortem exercise.
 
@@ -101,4 +98,4 @@ When providing notice to customers of a personal data breach, Microsoft will inc
 -   Sub-processor/supplier details, if one is involved in the breach
 
 ## Learn more
-Find out more about Microsoft Professional Services here (<https://www.microsoft.com/en-in/microsoftservices/professional_services.aspx>*)* and by going to the Microsoft Professional Services section on the Microsoft Trust Center (<https://www.microsoft.com/en-us/trustcenter/cloudservices/commercialsupport>). 
+Find out more about [Microsoft Professional Services](<https://www.microsoft.com/en-in/microsoftservices/professional_services.aspx>) and by going to the Microsoft Professional Services section on the Microsoft Trust Center (<https://www.microsoft.com/en-us/trustcenter/cloudservices/commercialsupport>). 
