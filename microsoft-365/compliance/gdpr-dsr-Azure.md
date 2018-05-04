@@ -168,17 +168,17 @@ You can correct, update, or delete identifiable information about end users, suc
 
 1.  On the **Users and groups** blade, select **Users**.
 
-> ![Select users](media/image4.png)
+> ![Select users](media/azure-dsr_image4.png)
 
 1.  On the **Users and groups - Users** blade, select a user from the list, and then, on the blade for the selected user, select **Profile** to view the user profile information that needs to be corrected or updated.
 
-> ![Select profile](media/image5.png)
+> ![Select profile](media/azure-dsr_image5.png)
 
 1.  Correct or update the information, and then, in the command bar, select **Save.**
 
 2.  On the blade for the selected user, select **Work Info** to view user work information that needs to be corrected or updated.
 
-> ![Select work info](media/image11.png)
+> ![Select work info](media/azure-dsr_image11.png)
 
 1.  Correct or update the user work information, and then, in the command bar, select **Save.**
 
