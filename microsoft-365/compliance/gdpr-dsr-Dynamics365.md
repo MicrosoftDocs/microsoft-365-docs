@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Data Subject Requests for the GDPR
-description: 
+description: Guide for how to use Microsoft's products, services and administrative tools to help our controller customers find and act on personal data to respond to DSR requests.
 keywords: Microsoft 365, Microsoft 365 Education, Microsoft 365 documentation, GDPR
 author: BrendaCarter
 localization_priority: Priority
