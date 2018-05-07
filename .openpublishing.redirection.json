@@ -17,17 +17,32 @@
       },
       {
         "source_path": "microsoft-365/enterprise/protect-files-with-o365-labels-dlp.md",
-        "redirect_url": "https://docs.microsoft.com/office365/enterprise/protect-files-with-o365-labels-dlp",
+        "redirect_url": "https://docs.microsoft.com/office365/enterprise/protect-files-with-o365-labels-and-dlp",
         "redirect_document_id": true
       },
       {
         "source_path": "microsoft-365/enterprise/secure-sharepoint-online-sites-dev-test.md",
-        "redirect_url": "https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-dev-test",
+        "redirect_url": "https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-in-a-dev-test-environment",
         "redirect_document_id": false
       },
       {
         "source_path": "microsoft-365/enterprise/secure-sharepoint-online-sites-and-files.md",
         "redirect_url": "https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-and-files",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "microsoft-365/enterprise/deploy-sites-for-three-tiers-of-protections.md",
+        "redirect_url": "https://docs.microsoft.com/office365/enterprise/deploy-sites-for-three-tiers-of-protection",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "microsoft-365/enterprise/microsoft-security-guidance.md",
+        "redirect_url": "https://docs.microsoft.com/office365/enterprise/microsoft-security-guidance",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "microsoft-365/enterprise/protect-files-with-aip.md",
+        "redirect_url": "https://docs.microsoft.com/office365/enterprise/protect-files-with-aip",
         "redirect_document_id": false
       }
   ]
