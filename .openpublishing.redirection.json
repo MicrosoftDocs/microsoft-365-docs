@@ -16,17 +16,17 @@
         "redirect_document_id": false
       },
       {
-        "source_path": "/enterprise/protect-files-with-o365-labels-dlp.md",
+        "source_path": "enterprise/protect-files-with-o365-labels-dlp.md",
         "redirect_url": "https://docs.microsoft.com/office365/enterprise/protect-files-with-o365-labels-dlp",
         "redirect_document_id": true
       },
       {
-        "source_path": "/enterprise/secure-sharepoint-online-sites-dev-test.md",
+        "source_path": "enterprise/secure-sharepoint-online-sites-dev-test.md",
         "redirect_url": "https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-dev-test",
         "redirect_document_id": false
       },
       {
-        "source_path": "/enterprise/secure-sharepoint-online-sites-and-files.md",
+        "source_path": "enterprise/secure-sharepoint-online-sites-and-files.md",
         "redirect_url": "https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-and-files",
         "redirect_document_id": false
       }
