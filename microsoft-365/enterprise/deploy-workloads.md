@@ -6,10 +6,11 @@ ms.date: 05/08/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
-ms.collection: Ent_O365
-ms.custom:
+localization_priority: Priority
+ms.collection: 
+- Ent_O365
 - Strat_O365_Enterprise
+ms.custom:
 description: Get links to the productivity workloads for Microsoft 365 Enterprise in your organization.
 ---
 
