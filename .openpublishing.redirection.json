@@ -42,7 +42,7 @@
       },
       {
         "source_path": "microsoft-365/enterprise/protect-files-with-aip.md",
-        "redirect_url": "https://docs.microsoft.com/office365/enterprise/protect-files-with-aip",
+        "redirect_url": "https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-azure-information-protection",
         "redirect_document_id": false
       }
   ]
