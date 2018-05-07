@@ -1,32 +1,32 @@
 {
   "redirections": [
       {
-        "source_path": "enterprise/using-microsoft-azure-active-directory-for-sharepoint-2013-authentication.md",
+        "source_path": "microsoft-365/enterprise/using-microsoft-azure-active-directory-for-sharepoint-2013-authentication.md",
         "redirect_url": "https://docs.microsoft.com/office365/enterprise/microsoft-azure-architectures-for-sharepoint-2013",
         "redirect_document_id": true
       },
       {
-        "source_path": "enterprise/obsolete-article.md",
+        "source_path": "microsoft-365/enterprise/obsolete-article.md",
         "redirect_url": "https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions",
         "redirect_document_id": false
       },
       {
-        "source_path": "enterprise/obsolete-bi-article.md",
+        "source_path": "microsoft-365/enterprise/obsolete-bi-article.md",
         "redirect_url": "https://docs.microsoft.com/SharePoint/administration/business-intelligence-0",
         "redirect_document_id": false
       },
       {
-        "source_path": "enterprise/protect-files-with-o365-labels-dlp.md",
+        "source_path": "microsoft-365/enterprise/protect-files-with-o365-labels-dlp.md",
         "redirect_url": "https://docs.microsoft.com/office365/enterprise/protect-files-with-o365-labels-dlp",
         "redirect_document_id": true
       },
       {
-        "source_path": "enterprise/secure-sharepoint-online-sites-dev-test.md",
+        "source_path": "microsoft-365/enterprise/secure-sharepoint-online-sites-dev-test.md",
         "redirect_url": "https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-dev-test",
         "redirect_document_id": false
       },
       {
-        "source_path": "enterprise/secure-sharepoint-online-sites-and-files.md",
+        "source_path": "microsoft-365/enterprise/secure-sharepoint-online-sites-and-files.md",
         "redirect_url": "https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-and-files",
         "redirect_document_id": false
       }
