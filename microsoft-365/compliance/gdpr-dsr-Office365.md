@@ -1,6 +1,6 @@
 ---
 title:  Office 365 Data Service Requests Under the GDPR
-description: Unserstand the user rights under GDPR and how Office 365 helps enterprises find and act on data in response to DSRs.
+description: Understand the user rights under GDPR and how Office 365 helps enterprises find and act on data in response to DSRs.
 keywords:  Office 365, Microsoft 365, Microsoft 365 Education, Microsoft 365 documentation, GDPR
 author:  BrendaCarter
 localization_priority:  Priority
