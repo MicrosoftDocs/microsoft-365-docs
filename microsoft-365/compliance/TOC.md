@@ -2,7 +2,7 @@
 ## [GDPR](gdpr.md)
 ### [Information protection](gdpr-information-protection.md)
 ### [Data subject requests](gdpr-data-subject-requests.md)
-#### [Office 365](gdpr-dsr-O365.md) 
+#### [Office 365](gdpr-dsr-Office365.md) 
 #### [Windows](gdpr-dsr-Windows.md)
 #### [Azure](gdpr-dsr-Azure.md)
 #### [Dynamics 365](gdpr-dsr-Dynamics365.md)
