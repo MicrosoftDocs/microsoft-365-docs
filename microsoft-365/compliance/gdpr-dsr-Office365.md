@@ -1,17 +1,18 @@
 ---
-title: Office 365 Data Service Requests Under the GDPR
-description: 
-keywords: Office 365, Microsoft 365, Microsoft 365 Education, Microsoft 365 documentation, GDPR
-author: BrendaCarter
-localization_priority: Priority
-audience: microsoft-business
-ms.prod: Microsoft-365-enterprise
-ms.topic: article
-ms.author: bcarter
+title:  Office 365 Data Service Requests Under the GDPR
+description: Unserstand the user rights under GDPR and how Office 365 helps enterprises find and act on data in response to DSRs.
+keywords:  Office 365, Microsoft 365, Microsoft 365 Education, Microsoft 365 documentation, GDPR
+author:  BrendaCarter
+localization_priority:  Priority
+audience:  microsoft-business
+ms.prod:  Microsoft-365-enterprise
+ms.topic:  article
+ms.author:  bcarter
 manager: laurawi
-audience: itpro
-ms.collection: GDPROur Commitment to Our Customers
+audience:  itpro
+ms.collection:  GDPROur Commitment to Our Customers
 ---
+
 
 # Office 365 Data Subject Requests for the GDPR
 
