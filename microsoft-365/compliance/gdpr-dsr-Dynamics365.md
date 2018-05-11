@@ -188,13 +188,13 @@ You can export Customer Data to an Excel file. In Excel, you can then edit the C
 
 The first step in responding to a data subject’s request is to search for and identify the personal data that is the subject of that request. Microsoft Social Engagement stores following data:
 
-**For social media users**
+#### For social media users
 
 Social media user data (referred to as *author* in Social Engagement) that Social Engagement acquires from social platforms. It could include the name, user name, profile picture, location, website, and bio if it is provided by the author.
 
 Author tags used by Social Engagement employees to group and classify authors—for example, as influencers, competitors, or fans.
 
-**For employees**
+#### For employees
 
 User profiles that include employee name, contact information, and profile picture and are managed in Office 365.
 
@@ -206,7 +206,7 @@ User names in Power BI if your organization uses the [Social Engagement content 
 
 This first step—finding and reviewing the personal data at issue—will help you determine whether the data subject’s request meets your organization's requirements for honoring or declining it. For example, after finding and reviewing the personal data, you may determine the request doesn’t meet your organization’s requirements because doing so may adversely affect the rights and freedoms of others.
 
-**Social media users (authors).**
+#### Social media users (authors)
 
 -   To find their personal data, follow the first four steps in [Find and delete an author](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/social-engagement/manage-authors#find-and-delete-an-author).
 
@@ -214,7 +214,9 @@ This first step—finding and reviewing the personal data at issue—will help y
 
 -   To find author tags for an author, first [filter posts](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/social-engagement/use-filters#add-edit-or-remove-a-filter) by [author](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/social-engagement/understand-filters#authors), and then [view author tags](https://go.microsoft.com/fwlink/?linkid=864795).
 
-**Your employees.** To find:
+##### Your employees 
+
+To find:
 
 -   A user profile, go to the [Office 365 admin center](https://portal.office.com/adminportal/home). In the **Admin center**, select **Users**. On the **Active Users** page, search for the user on the list.  
     In Social Engagement, go to **Settings \> User management** to see information that is automatically synced from Office 365.
@@ -227,13 +229,14 @@ This first step—finding and reviewing the personal data at issue—will help y
 
 The GDPR gives data subjects the right to get a copy of personal data upon request. After you’ve found customer content containing data that is potentially responsive to the request, it is up to you and your organization to decide whether to provide the data subject with a copy.
 
-**Social media users (authors). **
+#### Social media users (authors)
 
 To export personal data of authors, follow the steps in [Export author information](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/social-engagement/manage-authors#export-author-information) to export the data to an Excel file.
 
 To extract the author tags that were added to a specific author, you can [export author tag data](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/social-engagement/author-tags#export-author-tags-data).
 
-**Your employees**. To export:
+##### Your employees
+To export:
 
 Customer Data from user profiles, go to the [Office 365 admin center](https://portal.office.com/adminportal/home). In the **Admin center**, select **Users.** On the **Active Users** page, search for the user whose data you wish to export. Delete all users except the target user, and then select **Export** to export the data to a .csv file where you can use Excel to view the information.
 
@@ -243,24 +246,25 @@ User names from Power BI: [Engagement reporting](https://docs.microsoft.com/en-u
 
 To correct inaccurate or incomplete personal data:
 
-**Social media users (authors).**
+#### Social media users (authors)
 
 -   You must ask the data owner (author) to make the change on the social platform (such as Twitter, WordPress, or Tumblr). The data subject owns the data in the social media account, so they are the only ones who can change it. Once the author makes the change, Social Engagement syncs the revised details automatically.
 
 -   Author tags, follow the steps in [Change author tags](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/social-engagement/author-tags#change-author-tags).
 
-**Your employees**.
+##### Your employees
 
 -   User profiles: To make changes to the Customer Data in a user profile, see [Change a user name and email address in Office 365](https://support.office.com/en-us/article/change-a-user-name-and-email-address-in-office-365-fb5ac074-e203-4e1f-9843-b9d1a3e03297) and [Add your profile photo to Office 365](https://support.office.com/en-us/article/add-your-profile-photo-to-office-365-2eaf93fd-b3f1-43b9-9cdc-bdcd548435b7).  
-    These changes are synced automatically in Social Engagement. To find them, go to **Settings \> User management**.
+    These changes are synced automatically in Social Engagement. To find them, go to **Settings** \> **User management**.
 
 -   Alert recipients: You can [change an alert](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/social-engagement/email-alerts#change-an-alert).
 
-**Social media users (authors).** To stop processing the Customer Data of authors in Social Engagement, [delete the author](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/social-engagement/manage-authors#delete-an-author).
+#### Social media users (authors)
+To stop processing the Customer Data of authors in Social Engagement, [delete the author](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/social-engagement/manage-authors#delete-an-author).
 
 This will block future processing of the data of this data subject and any future posts, as well as delete all data about and by this author. Whenever Social Engagement acquires new posts, it automatically checks if the author was deleted earlier and discards posts from deleted authors. This has no effect on the user’s account on the social platform.
 
-**Your employees**.
+##### Your employees
 
 To stop processing the Customer Data of employees, you can [remove their license](https://support.office.com/en-us/article/remove-licenses-from-users-in-office-365-for-business-9b497c85-d0a4-4735-80fa-d3565bc05bd1) in Office 365. This deletes all Social Engagement-related items such as user roles and profiles, all related user-defined custom settings, alerts, activity maps, and streams. Search topics and social profiles are not deleted; however, administrators inherit ownership of the social profiles of deleted users and can delete them on request.
 
@@ -268,20 +272,19 @@ To restrict sending alert email messages, you can remove an email address from a
 
 GDPR gives data subjects the right to request from the controller the deletion of personal data in certain circumstances. The “right to be forgotten” by removing such data from an organization is a key protection in the GDPR.
 
-**Social media users (authors). **
+#### Social media users (authors)
 
 To permanently delete all of an author’s personal data in Social Engagement, delete the complete social profile of this author. See [](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/social-engagement/manage-authors)[Delete an author](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/social-engagement/manage-authors#delete-an-author).  
 Once you do this, there is no way to undo it. This will delete all data about and by this author on Social Engagement, and will block future processing of their data and any future posts. Whenever Social Engagement acquires new posts, it automatically checks if the author was deleted earlier and discards posts from deleted authors. This has no effect on the user’s account on the social platform.
 
 To delete author tags, see [Remove author tags](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/social-engagement/author-tags#remove-author-tags).
 
-Note:
-
+>[Note]
 If you are asked to remove information about a specific author, we recommend that you first confirm the identity of that author to validate the request. To confirm their identity, you can request a private message from the author from their social media account.
 
 Social Engagement has implemented compliance feeds from several social platforms (such as Twitter, WordPress, Tumblr) to act on signals like post deletions that were triggered on the social platforms directly. This feature is automatically activated with every Social Engagement installation and does not require any user interaction. Additionally, Social Engagement provides a mechanism that allows services (like Dynamics 365 for Customer Engagement) that build on social content from Social Engagement to inherit these signals.
 
-**Your employees.**
+##### Your employees
 
 To permanently delete all of an employee’s Customer Data, you can [remove their license](https://support.office.com/en-us/article/remove-licenses-from-users-in-office-365-for-business-9b497c85-d0a4-4735-80fa-d3565bc05bd1) in Office 365.
 
@@ -297,17 +300,18 @@ To delete an email address from all alerts it’s been added to, follow the step
 
 You can provide data subjects with their personal data in an electronic format.
 
-**Social media users (authors). **
+#### Social media users (authors)
 
 To export the personal data of authors, follow the steps in [Export author information](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/social-engagement/manage-authors#export-author-information) to export the data to an Excel file.
 
 To extract the author tags that were added to a specific author, you can [export author tag data](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/social-engagement/author-tags#export-author-tags-data).
 
-**Your employees**. To export:
+##### Your employees
+To export:
 
 Customer Data from user profiles, go to the [Office 365 admin center](https://portal.office.com/adminportal/home). In the **Admin center**, select **Users.** On the **Active Users** page, search for the user whose data you wish to export. Delete all users except the target user, and then select **Export** to export the data to a .csv file where you can use Excel to view the information.
 
-Email addresses of an alert recipient (the only personal data in an alert). follow the steps in [Manage alert recipients as administrator](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/social-engagement/email-alerts#manage-alert-recipients-as-administrator). Then select **Export** to download an Excel list of the alerts that include this recipient.
+Email addresses of an alert recipient (the only personal data in an alert). Follow the steps in [Manage alert recipients as administrator](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/social-engagement/email-alerts#manage-alert-recipients-as-administrator). Then select **Export** to download an Excel list of the alerts that include this recipient.
 
 User names from Power BI: [Engagement reporting](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/social-engagement/get-content-pack-for-power-bi) shows user names in reports of team performance on social media. To export this data, filter by the user in the PowerBI dashboard or [report](https://docs.microsoft.com/en-us/power-bi/power-bi-report-add-filter), and [export the data](https://docs.microsoft.com/en-us/power-bi/power-bi-visualization-export-data)
 
@@ -331,7 +335,7 @@ Admins can access system-generated logs associated with a particular user’s us
 
 > The **Data Log Export** is displayed. Note that a list of export data requests submitted by your organization is displayed.
 
-1.  To create a new request for a user, click **Create Export Data Request**.
+4.  To create a new request for a user, click **Create Export Data Request**.
 
 After you create a new request, it will be listed on the **Data Log Export** page where you can track its status. After a request is complete, you can click a link to access the system-generated logs, which will be exported to your organization’s Azure storage location within 30 days of creating the request. The data will be saved in common, machine-readable file formats such as JSON or XML. If you don't have an Azure account and Azure storage location, you'll need to create an Azure account and/or Azure storage location for your organization so that the Data Log Export tool can export the system-generated logs.
 
@@ -342,13 +346,11 @@ Azure supports this by enabling your organization to export the data in the nati
 The following table summarizes accessing and exporting system-generated logs:
 
 <table>
-<thead>
-<tr class="header">
-<th align="left"><strong>How long does the Microsoft Data Log Export tool take to complete a request?</strong></th>
-<th align="left">This can depend on several factors. In most cases it should complete in one or two days, but it can take up to 30 days.</th>
-</tr>
-</thead>
 <tbody>
+<tr class="odd">
+<td align="left"><strong>How long does the Microsoft Data Log Export tool take to complete a request?</strong>
+<td align="left">This can depend on several factors. In most cases it should complete in one or two days, but it can take up to 30 days.</td>
+</tr>
 <tr class="odd">
 <td align="left"><strong>What format will the output be in?</strong></td>
 <td align="left">The output will be structured machine-readable files such as XML, CSV, or JSON.</td>
@@ -379,11 +381,13 @@ The following table summarizes accessing and exporting system-generated logs:
 </tbody>
 </table>
 
-**Note:** Some features will not allow for the export or deletion of system-generated logs with personal information to maintain the integrity of such information for security and audit reasons.
+[Note] 
+Some features will not allow for the export or deletion of system-generated logs with personal information to maintain the integrity of such information for security and audit reasons.
 
 To delete system-generated logs retrieved through an access request, you must remove the user from the service and permanently delete their Azure Active Directory account. For instructions about permanently delete a user, see the [Deleting a user](https://microsoft-my.sharepoint.com/personal/kated_microsoft_com/Documents/DSR%20Guide%20v4%20-(newly%20created%20for%20O365%20only).docx#_Deleting_a_user) section in this guide. It's important to note that permanently deleting a user account is irreversible once initiated.
 
-Permanently deleting a user account with remove the user’s data from system-generated logs for nearly all Dynamics 365 services within 30 days //note this is where the converted text ends, there may be more//
+Permanently deleting a user account with remove the user’s data from system-generated logs for nearly all Dynamics 365 services within 30 days.
 
-## Learn more
+#### Learn more
+
 [Microsoft Trust Center](https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx)
