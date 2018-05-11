@@ -7,7 +7,6 @@ localization_priority: Priority
 audience: microsoft-business
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
-ms.date: 04/13/2018
 ms.author: bcarter
 manager: laurawi
 audience: itpro
@@ -31,17 +30,17 @@ The guide discusses how to use Office 365 products, services and administrative 
 
 6.  ***Export***—Provide an electronic copy of personal data to the data subject. The GDPR’s “right of data portability” allows a data subject to request an electronic copy of personal data that’s in a structured, commonly used, machine-readable format.
 
-## Terminology
+### Terminology
 
 Here are definitions of terms from the GDPR that are relevant to this guide.
 
--   *Controller—*The natural or legal person, public authority, agency or other body which, alone or jointly with others, determines the purposes and means of the processing of personal data; where the purposes and means of such processing are determined by Union or Member State law, the controller or the specific criteria for its nomination may be provided for by Union or Member State law.
+- *Controller*—The natural or legal person, public authority, agency or other body which, alone or jointly with others, determines the purposes and means of the processing of personal data; where the purposes and means of such processing are determined by Union or Member State law, the controller or the specific criteria for its nomination may be provided for by Union or Member State law.
 
--   *Personal data* and *data subject—*Any information relating to an identified or identifiable natural person (‘data subject’); an identifiable natural person is one who can be identified, directly or indirectly, in particular by reference to an identifier such as a name, an identification number, location data, an online identifier or to one or more factors specific to the physical, physiological, genetic, mental, economic, cultural or social identity of that natural person.
+-   *Personal data* and *data subject*—Any information relating to an identified or identifiable natural person (‘data subject’); an identifiable natural person is one who can be identified, directly or indirectly, in particular by reference to an identifier such as a name, an identification number, location data, an online identifier or to one or more factors specific to the physical, physiological, genetic, mental, economic, cultural or social identity of that natural person.
 
 -   *Processor*—A natural or legal person, public authority, agency or other body which processes personal data on behalf of the controller.
 
-# How to use this guide
+### How to use this guide
 
 To help you find information relevant to your use case, this guide is divided into four parts.
 
@@ -56,7 +55,7 @@ To help you find information relevant to your use case, this guide is divided in
 >[**Note:**]
 In most cases, when users in your organization use Microsoft Office 365 products and services, you are the data controller and Microsoft is the processor. As a data controller, you are responsible for responding to the data subject directly. To assist you with this, Parts 1-3 of this guide detail the technical capabilities available to your organization to respond to a DSR request. In some limited scenarios, however, Microsoft will be the data controller when people use certain Office 365 products and services. In these cases, the information in Part 4 provides guidance on how data subjects can submit DSR requests to Microsoft.
 
-# Part 1: Responding to DSRs for Customer Data
+## Part 1: Responding to DSRs for Customer Data
 
 The guidance for responding to DSRs for Customer Data is divided into the following four sections.
 
@@ -68,19 +67,19 @@ The guidance for responding to DSRs for Customer Data is divided into the follow
 
 -   [Responding to DSR restriction requests](#_Responding_to_DSR_1)
 
-## How to determine the Office 365 applications that may be in scope for a DSR for Customer Data
+### How to determine the Office 365 applications that may be in scope for a DSR for Customer Data
 
 To help you determine where to search for personal data or what to search for, it helps to identify the Office 365 applications that people in your organization can use to create and store data in Office 365. Knowing this narrows the Office 365 applications that are in-scope for a DSR and helps you determine how you will search for and access personal data that’s related to a DSR. Specifically, this means whether you can use the Content Search tool or if you’ll have to use the in-app functionality of the application the data was created in.
 
 A quick way to identify the Office 365 applications that people in your organization are using to create Customer Data is to determine which applications are included in your organization's Office 365 subscription. To do this, you can access user accounts in the Office 365 admin portal and look at the product licensing information. See <span id="_Set__up" class="anchor"></span>Assign licenses to users in Office 365 for business.
 
-## Using the Content Search eDiscovery tool to respond to DSRs
+### Using the Content Search eDiscovery tool to respond to DSRs
 
 When looking for personal data within the larger set of data your organization creates and stores using in Office 365, you may want to first consider which applications people have most likely used to author the data you’re looking for. Microsoft estimates that over 90% of an organization’s data that is stored in Office 365 is authored in Word, Excel, PowerPoint, OneNote, and Outlook. Documents authored in these Office applications are most likely stored on a SharePoint Online site, in a user’s OneDrive for Business account, or in a user’s Exchange Online mailbox. That means you can use the Content Search eDiscovery tool to search (and perform other DSR-related actions) across SharePoint Online sites, OneDrive for Business accounts, and Exchange Online mailboxes (including the sites and mailboxes associated with Office 365 Groups, Microsoft Teams, EDU Assignments, and StaffHub) to find documents and mailbox items that may be relevant to the DSR you’re investigating. You can also use the Content Search tool to discover Customer Data authored in other Office 365 applications.
 
 The following table lists the Office 365 applications that people use to create Customer Authored Content and that can be discovered by using Content Search. This section of the DSR guide provides guidance about how discover, access, export, and delete data created with these Office 365 applications.
 
-**Table 1: Applications where Content Search can be used to find Customer Data**
+***Table 1: Applications where Content Search can be used to find Customer Data***
 
 
 | | |
@@ -96,7 +95,7 @@ The following table lists the Office 365 applications that people use to create 
 
 <!-- end of table -->
 
-## Using Content Search to find personal data
+### Using Content Search to find personal data
 
 The first step in responding to a DSR is to find the personal data that is the subject of the DSR. This consists of using Office 365 eDiscovery tools to search for personal data (among all your organization’s data in Office 365) or going directly to the native application in which the data was created. This first step - finding and reviewing the personal data at issue - will help you determine whether a DSR meets your organization's requirements for honoring or declining a data subject request. For example, after finding and reviewing the personal data at issue, you may determine the request doesn’t meet your organization’s requirements because doing so may adversely affect the rights and freedoms of others, or because the personal data is contained in a business record your organization has a legitimate business interest in retaining.
 
@@ -106,7 +105,7 @@ This guide assumes that you or the person searching for personal data that may b
 
 After you find the data, you can then perform the specific action to satisfy the request by the data subject.
 
-### Searching content locations
+#### Searching content locations
 
 You can search the following types of content locations with the Content Search tool.
 
@@ -121,7 +120,7 @@ You can search the following types of content locations with the Content Search 
 [Note]
 This guide assumes that all data that might be relevant to a DSR investigation is stored in Office 365; in other words, stored in the Microsoft cloud. Data stored on a user’s local computer or on-premises on your organization’s file servers is outside the scope of a DSR investigation for data stored in Office 365.
 
-### Tips for searching content locations
+#### Tips for searching content locations
 
 -   Begin by searching all content locations in your organization (which you can search in a single search) to quickly determine which content locations contain items that match your search query. Then you can re-run the search and narrow the search scope to the specific locations that contain relevant items.
 
@@ -129,7 +128,7 @@ This guide assumes that all data that might be relevant to a DSR investigation i
 
 -   Search the Office 365 audit log for recent file and folder activities performed by the user who is the subject of the DSR. Searching the audit log will return a list of auditing records that will contain the name and location of resources the user has recently interacted with. You may be able to use this information to build a content search query. See [Search the audit log in the Office 365 Security & Compliance Center](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c).
 
-### Building search queries to find personal data
+#### Building search queries to find personal data
 
 The DSR you’re investigating most likely will contain identifiers that you can use in the keyword search query to search for the personal data. Here are some common identifiers that can be used in a search query to find personal data:
 
@@ -149,7 +148,7 @@ Searching for just an email address or employee ID will probably return a lot of
 
 The following table lists some conditions you can use to narrow the scope of a search. The table also lists the values that you can use for each condition to search for specific document types and mailbox items.
 
-<!-- table needs caption -->
+***Table 2: Narrow scope of search by using conditions***
 <!-- table starts here -->
 
 ||||
@@ -183,11 +182,11 @@ Here are some examples of search queries that use keywords and conditions to sea
 
 This example returns Excel files located on SharePoint Online sites and OneDrive for Business accounts that contain the specified email address. Note that files might be returned if the email address appears in the file metadata.
 
-**Keyword syntax**
+***Keyword syntax***
 
 pilar@contoso.com AND filetype="xlxs"
 
-**GUI**
+***GUI***
 
 ![](media/O365-DSR-Doc_image18.png)
 
@@ -197,7 +196,7 @@ This example returns Excel or Word files located on SharePoint Online sites and 
 
 (98765 OR "01-20-1990") AND (filetype="xlxs" OR filetype="docx")
 
-**GUI**
+***GUI***
 
 ![](media/O365-DSR-Doc_image19.png)
 
@@ -207,7 +206,7 @@ This example returns email messages that contain the specified ID numbers, which
 
 "1600330345678 97" AND kind="email"
 
-**GUI**
+***GUI***
 
 ![](media/O365-DSR-Doc_image20.png)
 
@@ -292,11 +291,11 @@ Users can discover, access, and rectify SharePoint Online user profile data usin
 
 An alternate way for users to access their profile data is to navigate to the **edit profile page** in their OneDrive for Business account, which can be accessed by going to the **EditProfile.aspx** **path** under the OneDrive for Business account URL. For example, for a user **user1@contoso.com**, their OneDrive for Business account is located at:
 
-https://contoso-my.sharepoint.com/personal/user1\_contoso\_com/\_layouts/15/**OneDrive.aspx**
+`https://contoso-my.sharepoint.com/personal/user1\_contoso\_com/\_layouts/15/**OneDrive.aspx**`
 
 The URL for the edit profile page would be:
 
-https://contoso-my.sharepoint.com/personal/user1\_contoso\_com/\_layouts/15/**EditProfile.aspx**.
+`https://contoso-my.sharepoint.com/personal/user1\_contoso\_com/\_layouts/15/**EditProfile.aspx**`.
 
 Note that properties sourced in Azure Active Directory can’t be changed within SharePoint Online. However, users can go to their **Account** page by selecting their **photo** in the Office 365 header, and then selecting **My account**. Changing the properties here may require users to work with their admins to discover, access, or rectify a user profile property.
 
@@ -362,6 +361,7 @@ See [Get-SPOSite](https://docs.microsoft.com/powershell/module/sharepoint-online
 
 A user's OneDrive for Business experience stores information to help the user find and navigate to content of interest to them. Most of this information can be accessed by end users using the corresponding in-product features listed in the following table:
 
+***Table 3: In-product features in OneDrive***
 <!--start table here -->
 
 ||||
@@ -392,15 +392,22 @@ The script will export data stored for the features described in the previous ta
 
 The script creates following CSV files (if the corresponding lists are found). The name of the CSV file corresponds to the title of the list.
 
-  **(Reference, \<id\>).csv, where \<id\> is a sequence of letters and numbers**   List of items shared with the user
-  -------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------
-  **Sharing Links.csv**                                                            List of sharing links generated by the user
-  **userActivityFeedHiddenListF4387007-BE61-432F-8BDB-85E6B9679E4B.csv**           List of relevant activity
-  **notificationSubscriptionHiddenList6D1E55DA-2564-4A22-A5F9-6C4FCAFF53DE.csv**   List of notifications sent to mobile apps, and app IDs for those devices
-  **Social.csv**                                                                   List of followed content
-  **MicroFeed.csv**                                                                List of Newsfeed items
-  **Access Requests.csv**                                                          List of Access requests
-  **SharePointHomeCacheList.csv**                                                  Cached data from the user navigating to SharePoint Home. This is refreshed every time the user navigates to SharePoint Home.
+  [*(Reference, \<id\>).csv, where \<id\> is a sequence of letters and numbers*]   List of items shared with the user
+ 
+  [*Sharing Links.csv*]                   List of sharing links generated by the user
+
+  [*userActivityFeedHiddenListF4387007-BE61-432F-8BDB-85E6B9679E4B.csv*]           List of relevant activity
+
+  [*notificationSubscriptionHiddenList6D1E55DA-2564-4A22-A5F9-6C4FCAFF53DE.csv*] List of notifications sent to mobile apps, and app IDs for those devices
+  
+[*Social.csv*] 
+List of followed content
+
+[*MicroFeed.csv*]                          List of Newsfeed items
+
+ [*Access Requests.csv*]                   List of Access requests
+
+ [*SharePointHomeCacheList.csv*]           Cached data from the user navigating to SharePoint Home. This is refreshed every time the user navigates to SharePoint Home.
 
 #### OneDrive for Business and SharePoint Online search
 
@@ -440,7 +447,7 @@ Here’s specific guidance to search for a Class Notebook.
 
 -   Search all SharePoint Online sites
 
--   Include the name of the class team as a search keyword; for example, “9C Biology”.
+-   Include the name of the class team as a search keyword; for example, “9C Biology.”
 
 1.  Preview the search results and look for the item that corresponds to the Class Notebook.
 
@@ -452,7 +459,7 @@ Here’s specific guidance to search for a Class Notebook.
 
 > path: "https://contosoedu.onmicrosoft.com/sites/9C Biology/SiteAssets/9C Biology Notebook/" AND filetype="one"
 
-1.  Re-run the Content Search. The search results should include all OneNote files for the Class Notebook from the class team.
+5.  Re-run the Content Search. The search results should include all OneNote files for the Class Notebook from the class team.
 
 ### Microsoft To-Do
 
@@ -477,7 +484,7 @@ After you’ve found personal data that is potentially responsive to a DSR, it�
 When providing a copy to the data subject, you may have to remove or redact personal information about other data subjects and any confidential information.
 
 
-## Using Content Search to get a copy of personal data
+### Using Content Search to get a copy of personal data
 
 There are two ways to use the Content Search tool to get a copy of a document or mailbox item that you’ve found after running a search.
 
@@ -517,7 +524,7 @@ The “right of data portability” allows a data subject to request an electron
 
 To meet a DSR export request, you can export Office documents in their native file format and export data from other Office 365 applications.
 
-## Export and download content using Content Search
+### Export and download content using Content Search
 
 When you export the results of a Content Search, email items can be downloaded as PST files or as individual messages (.msg files). When you export documents and lists from SharePoint Online and OneDrive for Business sites, copies in the native file formats are exported. For example, SharePoint lists are exported as CSV files and Web pages are exported as .aspx or html files.
 
@@ -554,7 +561,7 @@ When the export process is complete, you can access the files in the location on
 For detailed step-by-step instructions, see [Export Content Search results from the Office 365 Security & Compliance Center](https://support.office.com/article/Export-Content-Search-results-from-the-Office-365-Security-Compliance-Center-ed48d448-3714-4c42-85f5-10f75f6a4278).
 
 
-## Downloading documents and lists from SharePoint Online and OneDrive for Business
+### Downloading documents and lists from SharePoint Online and OneDrive for Business
 
 Another way to export data from SharePoint Online and OneDrive for Business is to download documents and lists directly from a SharePoint Online site or a OneDrive for Business account. You would have to get assigned the permissions to access a site, and then go to the site and download the contents. See:
 
@@ -568,7 +575,7 @@ For some DSR export requests, you may want to allow the data subject to download
 
 -   [Sync SharePoint files with the new OneDrive sync client](https://support.office.com/article/sync-sharepoint-files-with-the-new-onedrive-sync-client-6de9ede8-5b6e-4503-80b2-6190f3354a88)
 
-## Deleting personal data
+### Deleting personal data
 
 The “right to erasure” by the removal of personal data from an organization’s Customer Data is a key protection in the GDPR. Removing personal data includes deleting entire documents or files or deleting specific data within a document or file (which would be an action and process like the ones described in the Rectify section in this guide).
 
@@ -616,7 +623,7 @@ See the following topics for detailed procedures.
 
 -   [Delete list items in SharePoint Online](https://support.office.com/article/delete-list-items-in-sharepoint-online-db722233-4a38-4889-a6cf-4b33fe5c60c0)
 
-## Deleting a SharePoint site
+### Deleting a SharePoint site
 
 You may determine that the best way to respond to a DSR delete request is to delete an entire SharePoint site, which will delete all that data located in the site. You can do this by running cmdlets in SharePoint Online PowerShell.
 
@@ -626,11 +633,11 @@ You may determine that the best way to respond to a DSR delete request is to del
 
 Note that you can’t delete a site the is placed on an eDiscovery hold or is assigned to a retention policy. Sites must be removed from an eDiscovery hold or retention policy before you can delete it.
 
-## Deleting a OneDrive for Business site
+### Deleting a OneDrive for Business site
 
 Similarly, you may determine to delete a user’s OneDrive for Business site in response to a DSR deletion request. If you delete the user’s Office 365 account, their OneDrive for Business site is retained (and restorable) for 30 days. After 30 days, it’s moved to the SharePoint Online Recycle Bin (soft-deleted), and then after 93 days, it’s permanently deleted (hard-deleted). To accelerate this process, you can use the [Remove-SPOSite](https://docs.microsoft.com/powershell/module/sharepoint-online/remove-sposite?view=sharepoint-ps) cmdlet to move the OneDrive for Business site to the Recycle Bin and then use the [Remove-SPODeletedSite](https://docs.microsoft.com/powershell/module/sharepoint-online/remove-spodeletedsite?view=sharepoint-ps) cmdlet to permanently delete it. As with sites in SharePoint Online, you can’t delete a user’s OneDrive for Business site if it was assigned to an eDiscovery hold or a retention policy before the user’s account was deleted.
 
-## Deleting OneDrive for Business and SharePoint Online Experience Settings
+### Deleting OneDrive for Business and SharePoint Online Experience Settings
 
 In addition to user-created files stored in OneDrive for Business accounts and SharePoint Online sites, these services store information about the user that is used to enable various experiences. These were previously documented in this document. See the [Additional considerations for select applications](#_Additional_considerations_for) section under [Using the Content Search eDiscovery tool to respond to DSRs](#_Set__up), for information about how to access, view, and export OneDrive for Business and SharePoint Online application data.
 
@@ -694,11 +701,11 @@ The script will permanently delete the hidden lists containing these settings. D
 
 A user’s search queries created in the OneDrive for Business and SharePoint Online search experience are automatically deleted 30 days after the user creates the query.
 
-## Deleting items in Exchange Online mailboxes
+### Deleting items in Exchange Online mailboxes
 
 You may have to delete items in Exchange Online mailboxes to satisfy a DSR delete request. There are two ways that an IT admin can delete items in mailbox, depending on whether to soft-delete or hard-delete the target items. Like documents on SharePoint Online or OneDrive for Business sites, items in a mailbox that is on hold can’t be permanently deleted from Office 365. The hold must be removed before the item can be deleted. Again, you’ll have to determine whether the hold on the mailbox or the DSR delete request takes precedence.
 
-### Soft-delete mailbox items
+#### Soft-delete mailbox items
 
 You can use the Content Search Action functionality to soft-delete items that are return by a Content Search. As previously explained, soft-deleted items is moved to the Recoverable Items folder in the mailbox.
 
@@ -710,13 +717,13 @@ Here’s a quick overview of this process:
 
 For detailed instructions, see [Search for and delete email messages in your Office 365 organization](https://support.office.com/article/Search-for-and-delete-email-messages-in-your-Office-365-organization-Admin-Help-3526fd06-b45f-445b-aed4-5ebd37b3762a).
 
-### Hard-delete mailbox items
+#### Hard-delete mailbox items
 
 If you have to hard-delete mailbox items in response to the DSR deletion request, you can use the **Search-Mailbox -DeleteContent** command in Exchange Online PowerShell. If you use this method, consider using Content Search to develop and refine a search query so that only the items that are to be deleted are returned in the search. Then you can use that query syntax when you run the **Search-Mialbox -DeleteContent** command.
 
 For detailed instructions, see [Search for and delete messages](https://technet.microsoft.com/library/ff459253(v=exchg.150).aspx).
 
-### Hard-delete items in a mailbox on hold
+#### Hard-delete items in a mailbox on hold
 
 As previously explained, if you hard-delete items in a mailbox on hold, items are not removed from the mailbox. They are moved to a hidden folder in the Recoverable Items folder (the **Purges** folder) and will remain there until the hold duration for the item expires or until the hold is removed from the mailbox. If either of those things happen, the items will be purged from Office 365 the next time that the mailbox is processed.
 
@@ -724,7 +731,7 @@ Your organization might determine that items being permanently deleted when the 
 
 **Note:** To hard-delete mailbox items to satisfy a DSR deletion request by following the procedure in the previous topic, you may have to soft-delete those items while the mailbox is still on hold so that they are moved to the Recoverable Items folder.
 
-## Deleting a user
+### Deleting a user
 
 In addition to deleting personal data in response to a DSR deletion request, a data subject's “right to be forgotten” may also be fulfilled by deleting their Office 365 user account. Here are some reasons that you might want to delete a user:
 
@@ -744,7 +751,7 @@ After you delete an Office 365 user account:
 
 -   System-generated logs about the data subject will be deleted 30 days after the user account is deleted. For more information, see [Deleting system-generated logs](#_Deleting_system-generated_logs) in this guide.[](#_Deleting_Pseudonymized_Data)
 
->[!**IMPORTANT**] 
+>[**IMPORTANT**] 
 After you delete a user account, that person will lose the ability to sign in to Office 365 and the ability to sign in to any products or services for which he or she formerly relied upon for a work or school account. That person would also be unable to initiate any DSR requests through Microsoft directly in instances where Microsoft is the data controller. For more information, see the [Product and services authenticated with an Org ID for which Microsoft is a data controller](#_Product_and_services) section in Part 4 of this guide.
 
 Like the soft-deletion and hard-deletion of data that was described in the previous section on deleting personal data, when you delete a user account, there is also a soft-deleted and hard-deleted state.
@@ -765,7 +772,7 @@ Here’s the high-level process for deleting a user from your Office 365 organiz
 
 > Note that you can't hard-delete a user in the Office 365 admin portal.
 
-## Removing Exchange Online data
+### Removing Exchange Online data
 
 One thing to understand when deleting a user is what happens to the user's Exchange Online mailbox. After the user account is hard-deleted (in step 3 in the previously process) the deleted user's mailbox isn't automatically purged from Office 365. It will take up to 60 days after the user account is hard-deleted to permanently remove it from Office 365. Here's the mailbox lifecycle after the user account is deleted and a description of the state of the mailbox data during that time:
 
@@ -777,11 +784,11 @@ One thing to understand when deleting a user is what happens to the user's Excha
 
 If you determine that this mailbox lifecycle doesn't meet your organization's requirements for responding to a DSR deletion request, you can [contact Microsoft Support](https://support.microsoft.com/) *after* you hard-delete the user account, and request Microsoft to manually initiate the process to permanently remove the mailbox data. Note that this process to permanently remove mailbox data starts automatically after day 61 in the lifecycle, so there would be no reason to contact Microsoft after this point in the lifecycle.
 
-## Using In-App functionality to respond to DSRs
+### Using In-App functionality to respond to DSRs
 
 While most Customer Data is authored and produced using the applications described in the previous section, Office 365 also offers many other applications that customers can use to produce and store Customer Data. However, Content Search doesn’t currently have the ability to find data authored in these other Office 365 applications. To find data generated by these applications, you or the data owner must use in-product functionality or features to find data that may be relevant to a DSR. The following table lists these Office 365 applications. Click the application icon to go the section in this guide that describes how to respond to DSR requests for data authored in the application.
 
-**Table 2: Applications where in-app functionality can be used to find Customer Data**
+***Table 4: Applications where in-app functionality can be used to find Customer Data***
 
 <!--start table here NO HEADER -->
 |||
@@ -798,15 +805,15 @@ While most Customer Data is authored and produced using the applications describ
 
  
 
-## Business Apps for Office 365
+### Business Apps for Office 365
 
 Details to follow.
 
-## Flow
+### Flow
 
 The following sections explain how to use the in-app functionality in Microsoft Flow to find, access, export, and delete personal data.
 
-### Discover
+#### Discover
 
 People can use Flow to perform data-related tasks such as synchronizing files between applications, copying files from one Office 365 service to another, and collecting data from one Office 365 app and storing it in another. For example, a user could set up a Flow to save Outlook email attachments to their OneDrive for Business account. In this example, you could use the Content Search tool to search the user’s mailbox for the email message that contained the attachment or search their OneDrive for Business account for the file. This is an example where data handled by Flow might be discoverable in the Office 365 services connected by a Flow workflow.
 
@@ -849,7 +856,7 @@ After you make yourself an owner, go to **Flow** \> **My flows** \> **Team flows
 
 -   [Export and import your flows across environments with packaging](https://flow.microsoft.com/blog/import-export-bap-packages/)
 
-### Access
+#### Access
 
 A user can access the definitions and run histories of their flows.
 
@@ -857,13 +864,13 @@ A user can access the definitions and run histories of their flows.
 
 -   **Flow run histories**— A user can download the run history of each of their flows. A flow run history is downloaded as a CSV file, which can be opened in Excel to filter or search. Users can also download the run history of multiple flows. See [Download flow run history](https://flow.microsoft.com/blog/download-history-recurrence/).
 
-### Delete
+#### Delete
 
 An admin can add themselves as an owner of a user’s flows in the Flow admin center. <span id="_Hlk511117287" class="anchor"></span>If a user leaves your organization and their Office 365 account is deleted, the flows that they are the sole owner of will be retained. This is to help your organization transition the flows to new owners and avoid any disruption to your business for flows that may be used for shared business processes. An admin then needs to determine whether to delete the flows that were owned by the user or simply re-assign to new owners, and take that action.
 
 For shared flows, when a user is deleted from your organization, their name is removed from the list of owners.
 
-### Export
+#### Export
 
 An admin can export the definition and run history of a user's flows. To do this, an admin must add themselves as an owner of the user's flow in the Flow admin center
 
@@ -871,69 +878,71 @@ An admin can export the definition and run history of a user's flows. To do this
 
 -   **Flow run histories**— Similarly, an admin must add themselves as an owner of a Flow to export its flow run history. The Flow run history is downloaded as a CSV file, which means you can use Excel to filter or search. You can also download the run history of multiple Flows, as long as you have ownership. See [Download flow run history](https://flow.microsoft.com/blog/download-history-recurrence/).
 
-### <span id="_Forms" class="anchor"><span id="_Toc510440235" class="anchor"><span id="_Toc510769860" class="anchor"><span id="_Toc511030382" class="anchor"><span id="_Toc511041418" class="anchor"><span id="_Toc511043163" class="anchor"><span id="_Toc511045075" class="anchor"><span id="_Toc511046227" class="anchor"><span id="_Toc511046450" class="anchor"><span id="_Toc511054152" class="anchor"><span id="_Toc511056372" class="anchor"><span id="_Toc511056436" class="anchor"><span id="_Toc511062014" class="anchor"><span id="_Toc511076791" class="anchor"></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
-## Connections and custom connectors in Flow
+<span id="_Forms" class="anchor"><span id="_Toc510440235" class="anchor"><span id="_Toc510769860" class="anchor"><span id="_Toc511030382" class="anchor"><span id="_Toc511041418" class="anchor"><span id="_Toc511043163" class="anchor"><span id="_Toc511045075" class="anchor"><span id="_Toc511046227" class="anchor"><span id="_Toc511046450" class="anchor"><span id="_Toc511054152" class="anchor"><span id="_Toc511056372" class="anchor"><span id="_Toc511056436" class="anchor"><span id="_Toc511062014" class="anchor"><span id="_Toc511076791" class="anchor"></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+#### Connections and custom connectors in Flow
 
 Connections require users to provide credentials to connect to APIs, SaaS applications and custom developed systems. These connections are owned by the user that established the connection and can be [managed](https://docs.microsoft.com/flow/add-manage-connections) in-product. After Flows have been re-assigned, an admin can use PowerShell cmdlets to list and delete these connections as part of deleting user data.
 
 Custom connectors allow organizations to extend the capabilities of Flow by connecting to systems where an out-of-box connector is not available. A custom connector author can [share](https://docs.microsoft.com/flow/register-custom-api) their connector with others in an organization. After receiving a DSR deleting request, an admin should consider re-assigning ownership of these connectors to avoid business disruption. To expedite this process, an admin can use PowerShell cmdlets to list, re-assign or delete custom connectors.
 
-<span id="_Toc511167744" class="anchor"><span id="_Toc511207937" class="anchor"><span id="_Toc511215476" class="anchor"><span id="_Toc511377225" class="anchor"></span></span></span></span>Forms
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+<span id="_Toc511167744" class="anchor"><span id="_Toc511207937" class="anchor"><span id="_Toc511215476" class="anchor"><span id="_Toc511377225" class="anchor"></span></span></span></span>
+
+### Forms
 
 The following sections explain how use the in-app functionality in Microsoft Forms to find, access, export, and delete personal data.
 
-### Discover
+#### Discover
 
 Forms users can go to <https://forms.office.com> and select **My forms** to see the Forms they’ve created. They can also select **Shared with me** to view Forms others have shared via a link. If there are many Forms to sort through, users can use the in-product search bar to search for Forms by title or author. To determine whether Microsoft Forms is a place where personal data responsive to your DSR is likely to reside, you can ask the Data Subject to search his or her **Shared with me** list to determine which users (“Forms owners”) have sent Forms to the Data Subject. You can then ask the forms owners to select **Share** in the top navigation bar and send you a link to a specific form so you can view it and further determine whether it is material to your DSR.
 
-### Access
+#### Access
 
 After the relevant Forms are found, you can access the responses to the Form by clicking on the **Responses** tab. Learn more about how to [check your quiz results](https://support.office.com/article/c4a9b45c-d62f-4eb7-b5db-ad81892c7c07) or [form results](https://support.office.com/article/02859424-341d-406f-b32a-9a0fbaf357af). To review response results in Excel, select the **Responses** tab, and then click **Open in Excel**. If you would like to send the Data Subject a copy of the Form, you can either take screenshots of the relevant questions and answers that are in shown in the application in rich text format or send the Data Subject an Excel copy of the results. If you are using Excel and would like to share with the Data Subject only portions of the survey result, you can delete certain rows or columns or redact the remaining sections before sharing the results. Alternatively, you can go to **Share \> Get a link to duplicate** (under Share as a template) to provide the Data Subject with a replicate of the entire Form.
 
-### Delete
+#### Delete
 
 Any survey, quiz, questionnaire, or poll can be permanently deleted by its owner. If you would like to honor a DSR “forget me” and delete a form in its entirety, find the Form in the list of forms, select the series of dots (ellipsis) in the upper right corner of the form preview window, and then click **Delete**. Once a Form is deleted, it can’t be retrieved. For information, see [Delete a Form](https://support.office.com/article/delete-a-form-2207e468-ce1b-4c4a-a256-caf631d87af0).
 
-### Export
+#### Export
 
 To export form questions and responses to an Excel file, open the form, select the **Responses** tab, and then select **Open in Excel**.
 
-## Kaizala
+### Kaizala
 
 Details to follow.
 
-## Planner
+### Planner
 
 The following sections explain how use the in-app functionality in Microsoft Planner to find, access, export, and delete personal data.
 
-### Discover
+#### Discover
 
 Planner plans are associated with an Office 365 Group, and the files for Office 365 Groups are stored in an associated SharePoint Online site for the group. That means that you can use Content Search to find Planner files by searching the site for the Office 365 Group. To do this, you’ll need to have the URL for the Office 365 Group. See [Searching Microsoft Teams and Office 365 Groups](https://support.office.com/article/Content-Search-in-Office-365-53390468-eec6-45cb-b6cd-7511f9c909e4?ui=en-US&rs=en-US&ad=US) in the “Content Search in Office 365” help topic for tips about getting information about Office 365 Groups to help you search for Planner files in the corresponding SharePoint Online site.
 
-### Access
+#### Access
 
 As previously explained, you can search the underling SharePoint Online site and mailbox that are associated with a plan. Then you can preview or download the related search results to access data.
 
-### Delete
+#### Delete
 
 You can manually delete a user's personally information by either giving yourself permissions to access the plans the user is part of or signing in as the user to make the changes. See [Delete user data in Microsoft Planner](https://support.office.com/article/delete-user-data-in-microsoft-planner-4349ded2-1891-4896-8e27-05fd40f3929f).
 
-### Export
+#### Export
 
 You can use a PowerShell script to export a user's data from Planner. When you export the data, a separate JSON file is export for each plan that the user is a part of. See [Export user data from Microsoft Planner](https://support.office.com/article/export-user-data-from-microsoft-planner-91258c96-b353-4da1-b6d9-d78e4809cf08).
 
-## Power BI
+### Power BI
 
 The following sections explain how use the in-app functionality in Microsoft Power BI to find, access, export, and delete personal data.
 
-### Discover
+#### Discover
+<!-- missing content?-->
 
-### Access
+#### Access
 
 You can print dashboards, reports, and visuals from reports in Power BI to produce a physical copy. Note that you can’t print entire reports; you can only print one page at a time. To do this, go to a report, use the search field to find specific data, and then print that page. See [Printing from Power BI service](https://docs.microsoft.com/power-bi/service-print).
 
-### Delete
+#### Delete
 
 To delete dashboards, reports, and workbooks, see [Delete almost anything in Power BI service](https://docs.microsoft.com/power-bi/service-delete).
 
@@ -941,7 +950,7 @@ Deleting a dashboard, report, or workbook doesn’t delete the underlying datase
 
 After the data is deleted, you can use the [scheduled data refresh](https://docs.microsoft.com/power-bi/refresh-scheduled-refresh) capabilities in Power BI to update the dataset that is stored in Power BI, after which the deleted data will no longer be reflected in any Power BI reports or dashboards that leveraged that data. To help comply with GDPR requirements, you should have policies in place to ensure that you are refreshing your data at an appropriate cadence.
 
-### Export
+#### Export
 
 To facilitate a data portability request, you can export dashboards and reports in Power BI:
 
@@ -949,11 +958,11 @@ To facilitate a data portability request, you can export dashboards and reports 
 
 -   You can export (download) a report from the Power BI service in Office 365 to a .pbix file if it was originally published using Power BI Desktop. You can then import this file to Power BI Desktop and publish (export) it to the Power BI service of another organization. See [Export a report from Power BI service to Desktop](https://docs.microsoft.com/power-bi/service-export-to-pbix).
 
-## PowerApps
+### PowerApps
 
 The following sections explain how use the in-app functionality in Microsoft Power Apps to find, access, export, and delete personal data. These steps outline how an admin can transition apps and their dependent resources to new owners to limit business disruption.
 
-### Discover
+#### Discover
 
 PowerApps is a service for building apps that can be shared and used within your organization. As a part of the process of building or running an app, a user will end up storing several types of resources and data in the PowerApps service, including apps, environments, connections, custom connectors, and permissions.
 
@@ -970,13 +979,13 @@ For more information about finding personal data, see [Discover PowerApps person
 
 The PowerApps service also includes the Common Data Service For Apps, which enables users to store data in standard and custom entities within a Common Data Service database. You can view the data stored in these entities from the [PowerApps Maker portal](https://web.powerapps.com), and use the in-product search capabilities of [Advanced Find](https://docs.microsoft.com/dynamics365/customer-engagement/basics/save-advanced-find-search) to search for specific data in the entity. For more details around discovering personal data in the Common Data Service, see [Discover Common Data Service personal data](https://go.microsoft.com/fwlink/?linkid=871881).
 
-### Access
+#### Access
 
 Admins have the ability to assign themselves privileges to access and run the apps and associated resources (including flows, connections, and custom connectors) using the [PowerApps Admin Center](https://admin.powerapps.com/) or [PowerApps Admin PowerShell cmdlets](https://go.microsoft.com/fwlink/?linkid=871804).
 
 After you have access to the user’s app, you can use a web browser to open the app. After you open an app, you can take a screenshot of the data. See [Use PowerApps in a web browser](https://docs.microsoft.com/powerapps/run-app-browser).
 
-### Delete
+#### Delete
 
 Because PowerApps allows users to build line-of-business application that can be a critical part of your organization’s day-to-day operations, when a user leaves your organization and their Office 365 account is deleted, the admin will need to determine whether to delete the apps owned by the user or simply re-assign to new owners. This is to help your organization transition apps to new owners and avoid any disruption to your business for apps that may be used for shared business processes.
 
@@ -984,47 +993,47 @@ For shared data, like apps, admins must decide whether or not they want to perma
 
 Any data that was stored by a user in an entity in a Common Data Service For Apps database will also need to be reviewed and (if desired) deleted by an admin using the in-product capabilities. See [Delete Common Data Service user personal data](https://go.microsoft.com/fwlink/?linkid=871886).
 
-### Export
+#### Export
 
 Admins have the ability to export personal data stored for a user within the PowerApps service using the [PowerApps Admin Center](https://admin.powerapps.com/) and [PowerApps Admin PowerShell cmdlets](https://go.microsoft.com/fwlink/?linkid=871804). See [Export PowerApps personal data](https://go.microsoft.com/fwlink/?linkid=871883).
 
 You can also use the in-product search capabilities of [Advanced Find](https://docs.microsoft.com/dynamics365/customer-engagement/basics/save-advanced-find-search) to search for a user’s personal data in any entity. For details about exporting personal data in the Common Data Service, see [Export Common Data Service personal data](https://go.microsoft.com/fwlink/?linkid=871889).
 
-### Connections and custom connectors in PowerApps
+#### Connections and custom connectors in PowerApps
 
 Connections require users to provide credentials to connect to APIs, SaaS applications and custom developed systems. These connections are owned by the user that established the connection and can be [managed](https://docs.microsoft.com/powerapps/maker/canvas-apps/add-data-connection) in-product. After PowerApps have been re-assigned, an admin can use PowerShell cmdlets to list and delete these connections as part of deleting user data.
 
 Custom connectors allow organizations to extend the capabilities of PowerApps by connecting to systems where an out-of-box connector is not available. A custom connector author can [share](https://docs.microsoft.com/connectors/custom-connectors/use-custom-connector-powerapps) their connector with others in an organization. After receiving a DSR deleting request, an admin should consider re-assigning ownership of these connectors to avoid business disruption. To expedite this process, an admin can use PowerShell cmdlets to list, re-assign or delete custom connectors.
 
-## Project Online
+### Project Online
 
 The following sections explain how use the in-app functionality in Microsoft Project Online to find, access, export, and delete personal data.
 
-### Discover and access
+#### Discover and access
 
 You can use Content Search to search the SharePoint Online site that’s associated with a Project (when a Project is first created, there’s an option to create an associated SharePoint Online site); Content Search doesn’t search the data in an actual project in Project Online, only the associated site. Though Content Search will search for metadata about projects such as people mentioned in the subject) However, this may help you find (and access) the Project that contains the data related to the DSR.
 
-**Tip:** The URL for the site collection in your organization where sites associated with Projects is **https://\<your org\>.sharepoint.com/sites/pwa**; for example, **https://contoso.sharepoint.com/pwa**. You can use this specific site collection as the location of your content search and then the name of the Project in the search query. Additionally, an IT admin can use the Site Collections page in the SharePoint admin center to get a list of PWA site collections in the organization.
+>**Tip:** The URL for the site collection in your organization where sites associated with Projects is **https://\<your org\>.sharepoint.com/sites/pwa**; for example, **https://contoso.sharepoint.com/pwa**. You can use this specific site collection as the location of your content search and then the name of the Project in the search query. Additionally, an IT admin can use the Site Collections page in the SharePoint admin center to get a list of PWA site collections in the organization.
 
 Note that the Project Online engineering team is developing scripts that will export data from Project Online.
 
-**Delete**
+#### Delete
 
 You can delete information about a user from your Project Online environment. See [Delete user data from Project Online](https://support.office.com/article/delete-user-data-from-project-online-252fa593-9c25-47ed-b861-643fe8bf1cb7).
 
-### Export
+#### Export
 
 You can a specific user's content from your Project Online environment. This data is exported to multiple files in the JSON format. For step-by instructions see, [Export user data from Project Online](https://support.office.com/article/export-user-data-from-project-online-27f3838d-3dbe-4b98-80dc-df55f851154d). For detailed information about the files that are exported, see [Project Online export json object definitions](https://support.office.com/article/project-online-export-json-object-definitions-ce5faeae-9af4-4696-b847-a1f4f20327c7).
 
-## StaffHub
+### StaffHub
 
 The following sections explain how use the in-app functionality in Microsoft StaffHub to find, access, export, and delete personal data.
 
-### Discover
+#### Discover
 
 Most data within StaffHub is available to all StaffHub team members and managers. To review data in StaffHub, have a manager or team member go to <https://staffhub.office.com> to look for data that is potentially relevant to the DSR request or have them add you as a member of their team so that you can directly review the StaffHub information for potentially responsive data.
 
-### Access
+#### Access
 
 After relevant StaffHub content is found, you can view and take screenshots of relevant data that you would like to provide to the data subject from within the application or download it.
 
@@ -1038,45 +1047,45 @@ After relevant StaffHub content is found, you can view and take screenshots of r
 
 -   **Kronos**: StaffHub supports connections to [Kronos](http://www.kronos.com/), which is a third-party workforce management tool. StaffHub and Kronos are independent processors and process your organization's data under individual terms that you have signed with each party. If your DSR relates to data held by Kronos you will need to contact Kronos for DSR assistance and vice versa.
 
-### Delete
+#### Delete
 
 -   Most in-app data content mastered in StaffHub can be deleted by a team manager from the app itself. As previously stated in the [Discover](#discover-5) section for StaffHub, you can add yourself to a team as a team manager and delete the data.[](#discover-5)
 
 -   When a user account is deleted, StaffHub redacts the user's phone number, email address, and profile picture after within 7 days of the account being deleted. By default, the user's first and last name are retained for historical reporting purposes in some shared data views, such as schedules, time-clock, conversations, requests, and the activity feed (for other users).
 
-### Export
+#### Export
 
 See the [Access](#access-5) section for StaffHub.[](#access-5)
 
-## Stream
+### Stream
 
 Details to follow.
 
-## Sway
+### Sway
 
 The following sections explain how use the in-app functionality in Microsoft Sway to find, access, export, and delete personal data.
 
-### Discover
+#### Discover
 
 Content created using Sway (found at [www.sway.com](http://www.sway.com)) can only be seen by the owner and those that the author has permissioned to view the Sway. See [Privacy Settings in Sway](https://support.office.com/article/privacy-settings-in-sway-394b551c-be6f-4bd7-a70a-f318d72bf217). To determine whether Sway is a place where personal data responsive to your DSR is likely to reside, you can ask the Data Subject and organizational users who are likely to have generated content about the Data Subject to search their Sways and share with you any Sways that are likely to contain personal data responsive to the Data Subject’s request. For information on how to share a Sway, see “Share a Sway from your Organizational Account” in this [Share your Sway](https://support.office.com/article/share-your-sway-1cf853b8-ef7e-46b0-b704-003e58d28998?ui=en-US&rs=en-US&ad=US) article.
 
-### Access
+#### Access
 
 If you have found personal data in a Sway that you would like to share with the Data Subject, you can provide the Data Subject with access to the data through one of several means. You can provide the Data Subject a copy of the online version of Sway (as described above); you can take screen shots of the relevant portion of the Sway that you would like to share; or you can print or download the Sway to Word or convert it to a PDF. How to download a Sway is further described in the “export” section below.
 
-### Delete
+#### Delete
 
 To learn how to delete a Sway, go to the “How do I delete my Sway?” section in [Privacy settings in Sway](https://support.office.com/article/privacy-settings-in-sway-394b551c-be6f-4bd7-a70a-f318d72bf217).
 
-### Export
+#### Export
 
 To export a Sway, open the Sway that you would like to download, select the series of dots (ellipsis) in the upper right corner, select **Export,** and then choose either **Word** or **PDF**.
 
-## Yammer
+### Yammer
 
 The following sections explain how use the in-app functionality in Microsoft Yammer to find, access, export, and delete personal data.
 
-### Discover
+#### Discover
 
 From the Yammer admin center, a Yammer verified admin (Office 365 global admin or verified admin set up in Yammer) can export data pertaining to a given user. The export includes the messages and files posted and modified by the user, as well as information about topics and groups created by the user. When a user-specific data export is run, the admin will also receive an inbox message with the user’s account activity data that they can provide to the user if they so choose. For detailed instructions, see [Yammer Enterprise: Privacy](https://support.office.com/article/enterprise-privacy-yammer-eae49f12-4661-4ba5-aa72-01248f0709bf).
 
@@ -1084,37 +1093,30 @@ User-specific exports are for a single network, so if the user is in an external
 
 To access data not included in data export, screen shots can be taken for the user’s profile, settings, group memberships, bookmarked messages, followed users, and followed topics. Users or admins can collect this information. For more information, see [Yammer Enterprise: Privacy](https://support.office.com/article/enterprise-privacy-yammer-eae49f12-4661-4ba5-aa72-01248f0709bf).
 
-### Access
+#### Access
 
 You can view data in the exported files, including the full text of messages and the contents of files. You can also click links in the exported files to go directly to the posted messages and files in Yammer, and to groups, and topics the user created, messages the user liked, messages where the user is @mentioned, polls the user has voted on, and links the user has added.
 
 Per-user data export does not include:
 
--   The user’s profile:
-
-<!-- -->
-
--   If the user has a Yammer identity, the user has full control of their profile. For information on how to view and modify the profile, see [Change my Yammer profile and settings](https://support.office.com/article/change-my-yammer-profile-and-settings-a3aeca0e-de34-4897-9b59-de6516542851).
-
--   If the user has an Office 365 identity, the Yammer user profile is pulled automatically from Office 365, which gets the profile information from Azure Active Directory (AAD). Yammer users can temporarily change their profiles in Yammer, but these changes are overwritten when there is a change in AAD, so you must view and change directory data in AAD. See [Manage Yammer users across their lifecycle from Office 365](https://support.office.com/article/Manage-Yammer-users-across-their-life-cycle-from-Office-365-6c4c8fff-6444-404a-bffc-f9da0bcc3039) and [Add or change profile information for a user in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-users-profile-azure-portal).
+- The user’s profile:
+    - If the user has a Yammer identity, the user has full control of their profile. For information on how to view and modify the profile, see [Change my Yammer profile and settings](https://support.office.com/article/change-my-yammer-profile-and-settings-a3aeca0e-de34-4897-9b59-de6516542851).
+    - If the user has an Office 365 identity, the Yammer user profile is pulled automatically from Office 365, which gets the profile information from Azure Active Directory (AAD). Yammer users can temporarily change their profiles in Yammer, but these changes are overwritten when there is a change in AAD, so you must view and change directory data in AAD. See [Manage Yammer users across their lifecycle from Office 365](https://support.office.com/article/Manage-Yammer-users-across-their-life-cycle-from-Office-365-6c4c8fff-6444-404a-bffc-f9da0bcc3039) and [Add or change profile information for a user in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-users-profile-azure-portal).
 
 <!-- -->
 
 -   The user’s settings:
     - The user can view and change their own settings. For information on how to view and modify user settings, see [Change my Yammer profile and settings](https://support.office.com/article/change-my-yammer-profile-and-settings-a3aeca0e-de34-4897-9b59-de6516542851). An admin can view this information and take screenshots, but can’t change it. Go to Yammer settings \> **People**, and then click the name of the user.<br/>
-    
     - The user’s group membership, bookmarked messages, followed users, and followed topics.
-<br/>
-
     - The user can view this information. For information on how, see [Tips for staying organized in Yammer](https://support.office.com/article/tips-for-staying-organized-in-yammer-40ae9666-75c0-4254-a84c-d87a9542f380). An admin can view this information and take screenshots, but can’t change it. Go to Yammer settings \> **People**, and then click the name of the user.
 
-### Export
+#### Export
 
 For instructions for how to export data, see [Enterprise Privacy: Yammer](https://support.office.com/article/enterprise-privacy-yammer-eae49f12-4661-4ba5-aa72-01248f0709bf). You must run a per-user export for each Yammer network the user is a member of.
 
 Note that Yammer has data retention settings that either soft-delete or hard-delete data when a user deletes a message or file. If this is set to soft-delete, data a user has deleted will be included in the export. If the Yammer data retention setting is set to hard-delete, the deleted information is no longer stored in Yammer, so will not be included in the export.
 
-### Delete
+#### Delete
 
 Yammer allows verified admins to execute a GDPR-compliant delete via the Yammer admin center if they receive a DSR. This option is called Erase User, and it suspends the user for 14 days and then removes all their personal data, excluding files and messages. If the user is a guest user, this must be done for each external network the guest user is a member of.
 
@@ -1139,7 +1141,7 @@ The most direct way to rectify personal data is to ask the data owner to make th
 -   The approved change the data owner should make
 
 You may want to consider implementing a confirmation process where you or another person involved in the DSR investigation verifies that the requested change has been made.
-## Gaining access to a SharePoint Online site or OneDrive for Business account to make changes
+### Gaining access to a SharePoint Online site or OneDrive for Business account to make changes
 
 If it’s not feasible for the data owner to implement the data subject’s request for rectification, an IT admin or SharePoint admin in your organization can get access to the content location and make the required changes. Or, an admin can assign you or another data privacy officer the necessary permissions.
 
@@ -1165,7 +1167,7 @@ An Office 365 global admin can access a user’s OneDrive for Business account b
 
 5.  Click the URL to go to the user’s OneDrive for Business account.
 
-## Gaining access to an Exchange Online mailbox to make changes to data
+### Gaining access to an Exchange Online mailbox to make changes to data
 
 An Office 365 global admin can assign themselves the permissions necessary to open and edit (or delete) items in another user’s mailbox, as if they were the mailbox owner. A global admin can also assign these permissions to another user. Specifically, the global admin needs to add the **Read and manage** permission, which is the Full Access permission in Exchange Online. For details, see:
 
@@ -1175,7 +1177,7 @@ An Office 365 global admin can assign themselves the permissions necessary to op
 
 <span id="_Flow_1" class="anchor"></span>Note that if the user mailbox is place on a legal hold or has been assigned to a retention policy, all versions of a mailbox are retained until the retention period expires or the hold is removed from the mailbox. That means if a mailbox item is changed in response to DSR rectification request, a copy of original item (before the change was made) is retained and stored in a hidden folder in the Recoverable Items folder in the user’s mailbox.
 
-## Making changes to content in OneDrive for Business and SharePoint Online
+### Making changes to content in OneDrive for Business and SharePoint Online
 
 <span id="_Restrict" class="anchor"></span>IT admins or data owners can make changes to SharePoint Online documents, lists, and pages. Keep the following things in mind when making changes to SharePoint content:
 
@@ -1207,14 +1209,14 @@ User information from the SharePoint User Profile or Office 365 is often associa
 
 Note that this will not affect all experiences, which may retain the older information. For example, the user's name as text in the document.
 
-## Making changes to content in Power BI
+### Making changes to content in Power BI
 
 Power BI relies on the underlying source data used in its dashboards and reports to be complete and accurate, so correcting inaccurate or incomplete source data must be done there. For example, if you created a Power BI report that is connected to Dynamics 365 for Sales as the live data source, you would have to make any corrections to the data in Dynamics 365 for Sales.
 
 After those changes are made, you can take advantage of the [scheduled data refresh](https://docs.microsoft.com/power-bi/refresh-scheduled-refresh) capabilities to update the dataset that is stored in Power BI so that the revised data is reflected in the dependent Power BI assets. To help comply with GDPR requirements, you should have policies in place to ensure that you are refreshing your data at an appropriate cadence.
 
 
-## Making changes to content in Yammer
+### Making changes to content in Yammer
 
 For messages, a user can edit a given message to rectify any inaccuracies. They can request a list of all their messages from a Yammer verified admin, and then click a link in the file to review each message.
 
@@ -1234,7 +1236,7 @@ For data that the user can access through their profile and settings, the user c
 
     - The user’s group membership, bookmarked messages, followed users, and followed topics. The user can change this information; see [Tips for staying organized in Yammer](https://support.office.com/article/tips-for-staying-organized-in-yammer-40ae9666-75c0-4254-a84c-d87a9542f380).
 
-## Responding to DSR restriction requests
+### Responding to DSR restriction requests
 
 <span id="_Delete" class="anchor"></span>Here are the ways to restrict the processing of data in Office 365:
 
@@ -1252,7 +1254,7 @@ For data that the user can access through their profile and settings, the user c
 
 If your organization determines later that a restriction no longer applies, you can end the restriction by reversing the steps you took to restrict it; such as re-assigning licenses, turning a service back on, or allowing a user to sign in to Office 365.
 
-## Removing the license for an Office 365 application
+### Removing the license for an Office 365 application
 
 As previously explained, licenses for all Office 365 applications that are included in your organization’s Office 365 subscription are assigned to all users by default. If necessary to restrict access to data that’s subject to a DSR, an IT admin can use the Office 365 admin portal temporarily turn off a user’s license for an application. If a user then tries to use that application, they’ll receive an unlicensed product notification or a message saying they no longer have access. For details, see [Remove licenses from users in Office 365 for business](https://support.office.com/article/Remove-licenses-from-users-in-Office-365-for-business-9B497C85-D0A4-4735-80FA-D3565BC05BD1).
 
@@ -1262,11 +1264,11 @@ As previously explained, licenses for all Office 365 applications that are inclu
 
 -   For scenarios that take advantage of Power BI Embedded, you can restrict access to the independent software vendor (ISV) application that the content is embedded in.
 
-## Preventing users from accessing their OneDrive for Business account
+### Preventing users from accessing their OneDrive for Business account
 
 Removing a user’s SharePoint Online license won’t prevent them from accessing their OneDrive for Business account if it already exists. You have to remove the user’s permissions to their OneDrive for Business account to. You can do this by removing the user as a site collection owner of their OneDrive for Business account. Specifically, you have to remove the user from the Primary Site Collection Administrator and Site Collection Administrators groups in their user profile. See the “Add and remove admins on a OneDrive for Business account” section in [Manage user profiles in the SharePoint admin center](https://support.office.com/article/Manage-user-profiles-in-the-SharePoint-admin-center-494bec9c-6654-41f0-920f-f7f937ea9723).
 
-## Turning off an Office 365 Service
+### Turning off an Office 365 Service
 
 Another way to address a DSR request to restrict the processing of data is to turn off an Office 365 service. Of course, this will impact all users in your entire organization and prevent everyone from using the service or accessing data in the service.
 
@@ -1275,7 +1277,7 @@ The most expedient way to turn off a service is to use Office 365 PowerShell and
 [**Note**] 
 For Yammer, in additional to removing the Yammer license from user accounts, you also must disable users’ ability to sign in to Yammer with Yammer credentials (by enforcing the use of their Office 365 credentials when signing in). For detailed instructions, see [Turn off Yammer access for Office 365 users](https://support.office.com/article/Turn-off-Yammer-access-for-Office-365-users-1f79bfad-f713-4143-aa5d-5584985ce53a).
 
-## Temporarily removing data from SharePoint Online or OneDrive for Business sites
+### Temporarily removing data from SharePoint Online or OneDrive for Business sites
 
 Another way to restrict the processing of personal data is to temporarily remove it from Office 365 in response to a DSR. When your organization determines that the restriction no longer applies, you can import the data back into Office 365.
 
@@ -1298,16 +1300,16 @@ Because most Office documents are located on a SharePoint Online or OneDrive for
 >[**Important**] 
 The preceding procedure won’t work if the document is located on a site that is on hold (with one of the retention or legal hold features in Office 365). In the case where a restriction request for a DSR takes precedence over a legal hold, the hold would have to be removed from the site before a document could be permanently deleted. Additionally, the document history for deleted documents is permanently removed.
 
-## Temporarily restricting access to SharePoint Online sites
+### Temporarily restricting access to SharePoint Online sites
 
 A SharePoint Online administrator can temporarily prevent all users from accessing a SharePoint Online site collection by locking the site collection (by using the **Set-SPOSite -LockState** command in SharePoint Online PowerShell). This will prevent users for accessing the site collection and any content or data that’s located in the site. If you then determine that users should be able to access the site, the administrator can unlock the site. See [Set-SPOSite](https://docs.microsoft.com/powershell/module/sharepoint-online/set-sposite) for information about running this PowerShell cmdlet.
 
-## Preventing a user from signing in to Office 365
+### Preventing a user from signing in to Office 365
 
 
 An IT admin can also prevent a user from signing into Office 365, which would prevent the user from accessing any Office 365 online service or processing any data stored in Office 365. See [Block a former employee's access to Office 365 data](https://support.office.com/article/Remove-a-former-employee-from-Office-365-44d96212-4d90-4027-9aa9-a95eddb367d1).
 
-# Part 2: Responding to DSRs with respect to insights generated by Office 365
+## Part 2: Responding to DSRs with respect to insights generated by Office 365
 
 Microsoft’s suite of Office 365 services includes online services that provide insights to users and organizations that have opted to use them.
 
@@ -1317,11 +1319,11 @@ Microsoft’s suite of Office 365 services includes online services that provide
 
 These services are described in the following sections.
 
-## Delve
+### Delve
 
 In Delve, users can manage their Office 365 profile and discover people and documents that may be relevant to them. Users can only see documents they have access to. For a series of helpful articles about Delve, see [Office Delve](https://support.office.com/article/What-is-Office-Delve-1315665a-c6af-4409-a28d-49f8916878ca).
 
-### Access and export
+#### Access and export
 
 Admins can’t access or export a users’ Delve data. This means that users have to access and export Delve data themselves. Most of the data types can be accessed and exported directly from Delve, but some data types are only available through other services.
 
@@ -1349,7 +1351,7 @@ Admins can’t access or export a users’ Delve data. This means that users hav
 
 -   **Documents from people around you data**. These are the documents that Delve has inferred are most relevant to the user at a given time. When a user clicks **Me** \> **See all** in the “Discover documents from people around you” pane, Delve shows the most relevant documents for a user at a given time. To access or export the actual documents, the user can go to the Office 365 service through which the document or attachment was made available (e.g., Office.com, SharePoint Online, OneDrive for Business, or Exchange Online).
 
-### Rectify
+#### Rectify
 
 Users can modify the following information in Delve:
 
@@ -1357,11 +1359,11 @@ Users can modify the following information in Delve:
 
 -   **Feature settings**. A user can click the gear icon in the upper-right corner in Delve, and then click **Feature settings** \> to change the desired settings.
 
-### Restrict
+#### Restrict
 
 To restrict processing in Delve for your organization, you can turn off the Office Graph. Learn more [here](https://support.office.com/article/office-delve-for-office-365-admins-54f87a42-15a4-44b4-9df0-d36287d9531b#bkmk_delveonoff).
 
-### Delete
+#### Delete
 
 Users can delete the following information in Delve:
 
@@ -1369,30 +1371,30 @@ Users can delete the following information in Delve:
 
 -   **Documents and email attachments**. To delete a document or attachment, users must go to the service where the document or attachment is stored (such as SharePoint Online, OneDrive for Business, or Exchange Online) and delete the document there.
 
-## MyAnalytics
+### MyAnalytics
 
 MyAnalytics provides statistics to users to help them understand how they spend their time at work. To help your users better understand the data that is presented to them in their personal dashboard and how that data is calculated, direct your users to the [MyAnalytics personal dashboard](https://docs.microsoft.com/workplace-analytics/myanalytics/use/dashboard) help topic.
 
-### Access and export
+#### Access and export
 
 All MyAnalytics insights are derived from email and meeting headers in the user’s mailbox. Microsoft provides you the ability to get all the data that MyAnalytics uses to generate these insights via the Security & Compliance Center, under the MyAnalytics section. Users with a MyAnalytics license can go to [MyAnalytics dashboard](https://delve.office.com/?v=analytics) while logged into their Office 365 account to view the insights that are generated about how they spend their time at work. In addition to the machine-readable data provided through the Security and Compliance portal, if they would like to have permanent copies of their information, they can further take screenshots of what they see.
 
 >[**Important**]
 If only some users in your organization have a MyAnalytics license but not all, Microsoft still generates insights about the unlicensed users to provide meaningful results to your licensed users. If an unlicensed user within your organization would like to see this data, you can access it through the same process as that which is described above (via the Security & Compliance Center) for your licensed users.
 
-### Rectify
+#### Rectify
 
 All insights generated by MyAnalytics are derived from the user’s mail and calendar items. Therefore, there is nothing to rectify other than the source email or calendar items.
 
-### Restrict
+#### Restrict
 
 To restrict processing for a specific user, you can opt them out of MyAnalytics. To see how, see [Configure MyAnalytics user settings](https://docs.microsoft.com/workplace-analytics/myanalytics/setup/configure-mya-user-settings).
 
-### Delete
+#### Delete
 
 All mailbox content, including MyAnalytics data, is purged when a user account is “hard-deleted” from Active Directory. For information on how to delete a user account, see the delete section in Part 3 of this guide for System-generated logs.
 
-## Workplace Analytics
+### Workplace Analytics
 
 Workplace Analytics allows organizations to augment Office 365 data with their own business data to gain insights about organizational productivity, collaboration patterns, and employee engagement. [This article](https://docs.microsoft.com/workplace-analytics/overview/privacy-and-data-access) explains the control that your organization has over the data that Workplace Analytics processes and who has access to that data.
 
@@ -1404,21 +1406,21 @@ To assist you with DSRs in Workplace Analytics:
 
 If necessary, have your Workplace Analytics Administrator contact Microsoft Support in handling the following DSRs.
 
-### Access and export
+#### Access and export
 
 If you have uploaded to Workplace Analytics any organizational data containing personal information, you can determine whether you would like to make this data available to the data subject.
 
 Insights in Workplace Analytics reports may or may not contain personal data of users that your organization licensed for Workplace Analytics, depending on the information that your organization used to supplement the Office 365 data. Your Workplace Analytics administrator will need to review those reports to determine if they contain a user’s personal data. If a report does contain a user’s personal data, then you will need to decide if you want to provide a copy of that report to the user. Workplace Analytics allows you to export the report.
 
-### Rectify
+#### Rectify
 
 As explained above, Workplace Analytics uses Office 365 data in combination with the organizational data that you provide to generate reports of interest to you. The Office 365 data cannot be rectified – it is based on a user’s email and calendar activities. However, the organizational data that you have uploaded into Workplace Analytics to generate the report can be rectified. To do this, you will need to correct the source data, upload it and rerun the report to generate a new Workplace Analytics report.
 
-### Delete
+#### Delete
 
 All data about the user is removed when a user account is “hard-deleted” from Active Directory. For information on how to delete a user account, see the delete section in Part 3 of this guide for system-generated logs. If a data subject would like to be removed from a Workplace Analytics report or set of reports, you can delete the report.
 
-# Part 3: Responding to DSRs for System-generated Logs
+## Part 3: Responding to DSRs for System-generated Logs
 
 Microsoft also provides you with the ability to access, export, and delete system-generated logs that may be deemed personal under the GDPR’s broad definition of "personal data." Examples of system-generated logs that may be deemed personal under GDPR include:
 
@@ -1430,7 +1432,7 @@ Microsoft also provides you with the ability to access, export, and delete syste
 
 Note that the ability to restrict or rectify data in system-generated logs is not supported. Data in system-generated logs constitutes factual actions conducted within the Microsoft cloud and diagnostic data, and modifications to such data would compromise the historical record of actions and increase fraud and security risks.
 
-## Accessing and exporting system-generated logs
+### Accessing and exporting system-generated logs
 
 Admins can access system-generated logs associated with a particular user’s use of Office 365 services and applications. To access and export system-generated logs:
 
@@ -1447,6 +1449,8 @@ Admins can access system-generated logs associated with a particular user’s us
 After you create a new request, it will be listed on the **Data Log Export** page where you can track its status. After a request is complete, you can click a link to access the system-generated logs, which will be exported to your organization’s Azure storage location within 30 days of creating the request. The data will be saved in common, machine-readable file formats such as JSON or XML. If you don't have an Azure account and Azure storage location, you'll need to create an Azure account and/or Azure storage location for your organization so that the Data Log Export tool can export the system-generated logs. For more information, see [Introduction to Azure Storage](https://docs.microsoft.com/azure/storage/common/storage-introduction).
 
 The following table summarizes accessing and exporting system-generated logs:
+
+***Table 5: Accessing and exporting system-generated logs***
 
   **How long does the Microsoft Data Log Export tool take to complete a request?**                  This can depend on several factors. In most cases it should complete in one or two days, but it can take up to 30 days.
   
@@ -1473,29 +1477,30 @@ The following table summarizes accessing and exporting system-generated logs:
                                                                                                     "DevicePlatform": "Windows 1.0.1607"
                                                                                                     
                                                                                                     }]
-  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  
 
 >[**Note**]
  Some features will not allow for the export or deletion of system-generated logs with personal information to maintain the integrity of such information for security and audit reasons.
 
 Product and service usage data for some of Microsoft’s most often-used services, such as Exchange Online, SharePoint Online, Skype for Business, Yammer and Office 365 Groups can also be retrieved by searching the Office 365 audit log in the Security & Compliance Center. For more information, see [Use the Office 365 audit log search tool in DSR investigations](#use-the-office-365-audit-log-search-tool-in-dsr-investigations) in Appendix A. Using the audit log may be of interest to you because it's possible to assign permissions to other people in your organization (such as your compliance officer) to search the audit log to access this data.
 
-## Deleting system-generated logs
+### Deleting system-generated logs
 
 To delete system-generated logs retrieved through an access request, you must remove the user from the service and permanently delete their Azure Active Directory account. For instructions about permanently delete a user, see the [Deleting a user](#_Deleting_a_user) section in this guide. It's important to note that permanently deleting a user account is irreversible once initiated.
 
 Permanently deleting a user account with remove the user’s data from system-generated logs for nearly all Office 365 services within 30 days. One exception to this when the permanent deletion of the user account takes longer than 30 days is Exchange Online. Given the critical nature of Exchange Online content and prevent accidental data loss, this system has been engineered to intentionally place data in a holding state for up to 60 days after a user account has been permanently deleted. To permanently delete a user’s Exchange Online data in a 30-day timeframe, permanently delete the user account in Azure Active Directory and then [contact support](https://support.microsoft.com/) and request that the user's Exchange Online data be manually removed outside the scheduled delete process. For more information, see [Removing Exchange Online data](#_Removing_Exchange_Online), which was previously explained in this guide.
 
-# Part 4: Additional resources to assist you with DSRs
-## DSR guides for other Microsoft enterprise services
+## Part 4: Additional resources to assist you with DSRs
+
+### DSR guides for other Microsoft enterprise services
 
 This guide is dedicated to the topic of how to find and act on personal data to respond to DSRs when using Office 365 products, services and administrative tools. Go to the [Microsoft Service Trust Portal](https://servicetrust.microsoft.com/) to access similar guides for other Microsoft enterprise services.
 
-## Microsoft support
+### Microsoft support
 
 “Support Data” is the data you and your users provide to Microsoft if your organization or your users engage with Microsoft to receive product support related to Office 365 or other Microsoft products and services (e.g., to troubleshoot unexpected product behavior). Some of this data may contain personal data. For more information, see the DSR guide for Microsoft Support and Professional Services on the [Microsoft Service Trust Portal](https://servicetrust.microsoft.com/).
 
-## Product and services authenticated with an Org ID for which Microsoft is a data controller
+### Product and services authenticated with an Org ID for which Microsoft is a data controller
 
 Parts 1-3 of this guide cover products and services for which Microsoft is a data processor to your organization, and thus DSR capability is made available to your tenant administrator. There are a variety of circumstances where your organization’s users may use their work or school account (also referred to as “Azure Active Directory ID” or “AAD”) to sign in to Microsoft products and services for which Microsoft is a data controller. For all such products and services, your users will need to initiate their own data subject requests directly to Microsoft and Microsoft will fulfill the requests directly to the user. Note that, by design, products and services involving storage of user-authored content enable users to access, export, rectify, and delete their user-authored content as part of the inherent functionality of the products. Scenarios where this may apply include the following:
 
@@ -1514,11 +1519,11 @@ Parts 1-3 of this guide cover products and services for which Microsoft is a dat
 - [Personal accounts]
 If your users have used Microsoft accounts (i.e. personal accounts) to acquire products and services from Microsoft for their own use and for which Microsoft is a data controller, they may initiate DSR requests via Microsoft’s [web-based privacy dashboard](https://account.microsoft.com/account/privacy?refd=news.microsoft.com&ru=https%3A%2F%2Faccount.microsoft.com%2Fprivacy%3Frefd%3Dnews.microsoft.com&destrt=privacy-dashboard).<span id="_Toc510769893" class="anchor"></span>
 
-## Third party products
+### Third party products
 
 If your organization, or your users acting in their individual capacity, have acquired products or services from third parties and use their Microsoft work or school account for authentication, any data subject requests should be directed to the applicable third party.
 
-# Appendix A: Preparing for DSR investigations
+## Appendix A: Preparing for DSR investigations
 
 To help prepare your organization to undertake DSR investigations using Office 365 services, consider the following recommendations:
 
@@ -1596,7 +1601,7 @@ You can search the audit log for specific activities, types of activities, activ
 
 **Tip:** To work around the 90-day limitation discussed above and maintain a running history of your organization’s auditing records, you could export all activities on a recurring schedule (for example, every 30 days) to have a continuous record of your organization’s auditing records.
 
-# Appendix B: Scripts to delete or export OneDrive for Business and SharePoint Online Experience Settings 
+## Appendix B: Scripts to delete or export OneDrive for Business and SharePoint Online Experience Settings 
 
 The following are scripts provided as examples to export and delete certain OneDrive for Business and SharePoint Online settings.
 
@@ -2082,7 +2087,7 @@ exportList -listTitle \$list["listTitle"] -listFields \$list["listFields"] -expo
 
 Copy the contents below and paste them into a text file. Save the file as **DeleteODBLists.ps1**.
 
-'\#DeleteODBLists
+S'\#DeleteODBLists
 
 \#Deletes ODB experience settings, stored in several SharePoint Lists
 
