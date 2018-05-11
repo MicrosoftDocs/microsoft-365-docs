@@ -358,7 +358,7 @@ Here’s the high-level process for exporting data from your tenant.
 <span id="_Toc511384832" class="anchor"><span id="_Toc511163903" class="anchor"></span></span>Service-Specific Interfaces
 -------------------------------------------------------------------------------------------------------------------------
 
-Microsoft provides the ability to discover Customer Data directly via pre-existing application programming interfaces (APIs) or user interfaces (UIs) for specific services. Details are described in the respective services’ reference documentation, describing applicable CRUD (create, read, update, delete) opera //note that there may be missing text, Word conversion ended here//
+Microsoft provides the ability to discover Customer Data directly via pre-existing application programming interfaces (APIs) or user interfaces (UIs) for specific services. Details are described in the respective services’ reference documentation, describing applicable CRUD (create, read, update, delete) operations.
 
 ## Learn more
 [Microsoft Trust Center](https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx)
