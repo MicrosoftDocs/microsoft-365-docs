@@ -43,6 +43,7 @@
 ### [Deployment of Microsoft 365 Enterprise with existing infrastructure](deploy-with-existing-infrastructure.md)
 ## [Deploy workloads](deploy-workloads.md)
 ### [Deploy Microsoft Teams for Microsoft 365 Enterprise](teams-workload.md)
+### [Deploy Exchange Online for Microsoft 365 Enterprise](exchangeonline-workload.md)
 # [Services and concepts](services-overview.md)
 # [Identity and device access configurations](microsoft-365-policies-configurations.md)
 ## [Common identity and device access policies](identity-access-policies.md)
