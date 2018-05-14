@@ -13,7 +13,9 @@ ms.custom:
 description: Step through the process of planning for, rolling out, and driving the value of Exchange Online in Microsoft 365 Enterprise across your organization.
 ---
 
-Exchange Online is your primary cloud service for email and calendaring that helps your users collaborate in ways that do not require real-time chatting or document storage. Exchange Online is how you do individual and small group short-lived communication and scheduling for Microsoft 365 Enterprise and is a key element of the Built for Teamwork value of Microsoft 365 Enterprise. Exchange Online lets you accomplish more and work more effectively with the well-known Outlook application, no matter what device you’re on.
+# Deploy Exchange Online for Microsoft 365 Enterprise
+
+Exchange Online is your primary cloud service for email and calendaring that helps your users collaborate in ways that do not require real-time chatting or centralized document storage. Exchange Online is how you do individual and small group short-lived communication and scheduling and is a key element of the Built for Teamwork value of Microsoft 365 Enterprise. Exchange Online lets you accomplish more and work more effectively with the well-known Outlook application, no matter what device you’re on.
 
 Exchange Online also has advanced security capabilities including anti-malware and anti-spam filtering to protect mailboxes and data loss prevention capabilities that prevent users from mistakenly sending sensitive information to unauthorized people. Exchange Online security is a key element of the Intelligent Security value of Microsoft 365 Enterprise.
 
@@ -50,7 +52,7 @@ A list of Exchange Online scenarios that address your organization’s needs for
 
 ## Phase 2: Onboard
 
-In this phase, you plan for the technical aspects of an Exchange Online deployment and start rolling out Exchange Online to selected groups of users.
+In this phase, you plan for the technical aspects of an Exchange Online deployment and start rolling it out to selected groups of users.
 
 ### Step 1: Complete your technical planning
 
@@ -104,7 +106,7 @@ After completing your IT pilot, roll out Exchange Online to a business group or 
 - Migration of on-premises mailboxes of your business group members to Exchange Online.
 - Delivering user training on Exchange Online or links to resources to introduce Exchange Online and how to use it.
 - A feedback mechanism, such as a central Microsoft Teams team containing everyone in the business group, to collect comments and act on issues from users in the business group.
-- 
+
 During the rollout, you can refine your change management materials in preparation for the organization-wide rollout.
 
 #### Result
@@ -145,7 +147,7 @@ Here are some suggested activities:
 
 #### Result
 
-Your organization has adopted Exchange Online as its primary individual and small group short-lived communication, scheduling, and collaboration tool.
+Your organization has adopted Exchange Online as its primary individual and small group short-lived communication and scheduling tool.
 
 ## Next steps
 
