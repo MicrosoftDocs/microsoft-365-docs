@@ -20,11 +20,11 @@ Dynamics 365 takes its obligations under the General Data Protection Regulation 
 
 Microsoft works continuously to provide highly secure, enterprise-grade services for Dynamics 365 customers. The information in this section provides a summary of how Microsoft Dynamics 365 protects against security incident/data breach and the process we follow to respond and notify our customers.
 
-## Microsoft Dynamics 365 Built-In Security Features
+#### Microsoft Dynamics 365 Built-In Security Features
 
 Microsoft Dynamics 365 takes advantage of the cloud service infrastructure and built-in security features to keep data safe using security measures and mechanisms to protect data. In addition, Dynamics 365 provides efficient data access and collaboration with data integrity and privacy in the following areas: [secure identity, data protection, role based security and threat management](https://www.microsoft.com/en-us/trustcenter/security/dynamics365-security).
 
-## Incident Response Training
+#### Incident Response Training
 
 Each employee working on Microsoft Dynamics 365 is provided with training regarding security incidents and response procedures that are appropriate to their role. Every Microsoft Dynamics 365 employee receives training upon joining, and annual refresher training every year thereafter. The training is designed to provide the employee with a basic understanding of Microsoft’s approach to security so that upon completion of training, all employees understand:
 
@@ -40,13 +40,13 @@ Each employee working on Microsoft Dynamics 365 is provided with training regard
 
 -   Where to find additional information about security and privacy, and escalation contacts.
 
-## ## How does Microsoft Dynamics 365 define Security Incident/ Potential Breaches
+#### How does Microsoft Dynamics 365 define Security Incident/ Potential Breaches
 
 A security incident/ data breach refers to events such as unlawful access to customer’s data stored on Microsoft equipment or in Microsoft facilities, or unauthorized access to such equipment or facilities that has the potential to result in the loss, disclosure or alteration of customer data. Microsoft’s goal when responding to security incidents/ data breach is to protect customer data and Dynamics 365 services. Microsoft’s approach to managing a security incident conforms to the [National Institute of Standards and Technology](https://www.nist.gov/) (NIST) Special Publication (SP) [800-61](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r2.pdf).
 
 Microsoft does not monitor for or respond to security incidents within the customer’s realm of responsibility. A customer-only security compromise would not be processed as a Dynamics 365 security incident and would require the customer tenant to manage the response effort. Customer incident response may involve collaboration with Microsoft Dynamics 365 customer support, given appropriate service contracts.
 
-## Detection of Potential Breaches
+#### Detection of Potential Breaches
 
 Dynamics 365 responds to a potential data breach according to the security incident response process, which is a subset of the Microsoft Dynamics 365 incident management plan. Dynamics 365 security incident response is implemented using a five-stage process: Detect, Assess, Diagnose, Stabilize, and Close. The Security Incident Response Team may alternate between the diagnose and stabilize stages as the investigation progresses. An overview of the security incident response process is below:
 
@@ -104,7 +104,7 @@ The detection processes used by Microsoft Dynamics 365 are designed to discover 
 
 -   Escalations by operators of Microsoft Dynamics 365 services. Microsoft employees are trained to identify and escalate potential security issues.
 
-## Microsoft Dynamics 365 Data Breach Response
+#### Microsoft Dynamics 365 Data Breach Response
 
 Microsoft assigns the investigation appropriate priority and severity levels by determining the functional impact, recoverability, and information impact of the incident. Both the priority and severity may change over the course of the investigation, based on new findings and conclusions. Security events involving imminent or confirmed risk to customer data are treated as high severity and worked around the clock to resolution. Microsoft Dynamics 365 defines privacy breach as a breach of “personal data of an online service end user or Microsoft employees.”
 
@@ -126,7 +126,7 @@ Microsoft verifies that customer and business risk is successfully contained, an
 
 Microsoft also completes an internal post-mortem for data breaches. As a part of this exercise, sufficiency of response and operating procedures are evaluated, and any updates that may be necessary to Microsoft’s internal security policies or related processes are identified and implemented. Internal post-mortems for data breaches are highly confidential records not available to customers. Post-mortems may, however, be summarized and included in other customer event notifications. These reports are provided to external auditors for review as part of Dynamics 365 routine audit cycle.
 
-## Customer Notification
+#### Customer Notification
 
 Microsoft Dynamics 365 notifies customers and regulatory authorities of data breaches as required. Microsoft relies on heavy internal compartmentalization in the operation of Dynamics 365 services. Data flow logs are also robust. As a benefit of this design, most incidents can be scoped to specific customers. The goal is to provide impacted customers with an accurate, actionable, and timely notice when their data has been breached.
 
@@ -142,5 +142,5 @@ Notification of a personal data breach will be delivered to the customer by any 
 
 The Microsoft Dynamics 365 team may also elect to notify additional Microsoft personnel such as Customer Service (CSS) and the customer’s Account Manager(s) (AM) or Technical Account Manager(s) (TAM). These individuals often have close relationships with the customer and can facilitate faster remediation.<span id="_Appendix_A" class="anchor"></span>
 
-## Learn more
+#### Learn more
 [Microsoft Trust Center](https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx)
