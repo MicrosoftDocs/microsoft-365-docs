@@ -1,11 +1,10 @@
 ---
 title: Guidance for Data Controllers Using Microsoft Professional Services
-This document provides data controllers with information about Professional Services that will help them to determine whether a DPIA is needed and what details to include.
-description: 
+description: This document provides data controllers with information about Professional Services that will help them to determine whether a DPIA is needed and what details to include.
 keywords: DPIA,, Microsoft Professional Services, Microsoft 365 documentation, GDPR
 robots:  "NOINDEX,NOFOLLOW"
 author: BrendaCarter
-localization_priority: Priority
+ms.localizationpriority: high
 audience: microsoft-business
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
