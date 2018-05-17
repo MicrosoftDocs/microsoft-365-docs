@@ -7,7 +7,6 @@ localization_priority: Priority
 audience: microsoft-business
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
-ms.date: 04/13/2018
 ms.author: bcarter
 manager: laurawi
 audience: itpro
@@ -22,11 +21,11 @@ Microsoft Professional Services includes a diverse group of technical architects
 
 The drive for Microsoft Professional Services’ global data protection incident response team is to (a) employ rigorous operations and processes to prevent data protection incidents from occurring, (b) manage them professionally and efficiently when they do occur, and (c) learn from these data protection incidents through regular post-mortem and program improvements. Microsoft’s Professional Services data protection incident response team’s processes and results are reviewed and attested to by multiple security and compliance audits (e.g., ISO/IEC 27001).
 
-## Data Protection Incident Response Overview 
+### Data Protection Incident Response Overview 
 
 Microsoft Professional Services is committed to protecting its customers and takes considerable measures to prevent data protection incidents from occurring as a means of maintaining customer trust. A data protection incident in the Professional Services organization is a breach of security leading to the accidental or unlawful destruction, loss, alteration, unauthorized disclosure of, or access to Personal Data, or Support or Consulting Data, while processed by Microsoft. For Commercial customers that have purchased Premier Support, Unified Support or Microsoft Consulting Services, you should refer to your data protection incident response language in the Professional Services Data Protection Addendum located at <http://aka.ms/professionalservicesdpa/>.
 
-## Scope & Limits of Data Protection Incident Response Process
+### Scope & Limits of Data Protection Incident Response Process
 
 Our personal data breach notification process begins when we declare that a [personal data breach] has occurred.
 
@@ -36,15 +35,15 @@ Due to the nature of professional services, some events that seem like Microsoft
 
 Some actions are out of scope for this process completely, including general questions about our data protection policies or standards, data subject right requests, opt-out requests, product wish lists or bug reports not related to data protection, data protection incidents not involving customer’s data, and fraud against Microsoft.
 
-## Types of Data Protection Incidents
+### Types of Data Protection Incidents
 
 The data protection incident response team has identified a set of scenarios that may occur in professional services. While adhering to the basic data protection incident response framework, procedures have been developed and customized to expedite the response process. For instance, a misdirected email may require little investigation. On the other hand, identifying malicious personnel may require a complete forensic investigation due to the surreptitious nature of an offender’s activities. This set of scenarios may provide insight into the data protection incident response process for professional services.
 
-## Data Protection Incident Response Process
+### Data Protection Incident Response Process
 
 When Microsoft Professional Services identifies a data protection incident, a triage process occurs that (a) assesses the event, (b) determines whether it is in-scope for this process, (c) determines whether it was malicious, (d) performs a preliminary investigation and assigns a severity level, and (e) alerts and coordinates with appropriate stakeholders within Microsoft. The team also begins recording details for tracking purposes and the post-mortem exercise.
 
-## Detection 
+#### Detection 
 
 Microsoft Professional Services continuously monitors for emerging data protection incidents across all data stores containing personal data—both online and offline. We use different methods to detect data protection incidents, including automated alerts, customer reports, reports from external parties, observation of anomalies, and indications of malicious or hacker activity.
 
@@ -58,25 +57,25 @@ The detection processes used by Microsoft Professional Services are designed to 
 
 -   For tools and systems used in the process of providing Professional Services, the operations teams use automated system alerts via internal monitoring and alerting frameworks. These alerts could come in the way of signature-based alarms such as antimalware, intrusion detection or via algorithms designed to profile expected activity and alert upon anomalies.
 
-## Data Protection Incident Response Drills, Testing of Data Protection Incident Response Plan
+#### Data Protection Incident Response Drills, Testing of Data Protection Incident Response Plan
 
 In addition to ongoing training, each year Professional Services executes drills in partnership with appropriate internal departments to communicate the data protection incident escalation procedures, roles, and responsibilities to all stabilization team members. This prepares key stakeholders for real-world data protection incidents—whether security, physical, or privacy in nature. This includes exercises with representatives of the data protection incident response team, security team, legal teams and communications team.
 
 After the exercises, we document the outcome and remediation methods we have decided to use.
 
-## Data Protection Incident Response Training
+#### Data Protection Incident Response Training
 
 A key component of data protection incident response is personnel training to identify and report data protection incidents. Personnel in the Professional Services organization are required to take training that covers privacy fundamentals, GDPR regulations, and best practices on how to identify and report data protection incidents.
 
 Regular online training is available, and completion is mandatory for all personnel. The training program employs testing, ongoing surveys, awareness, and follow-up designed to ensure that training is being understood and retained.
 
-## Process
+#### Process
 
 When Microsoft Professional Services organization identifies a data protection incident, it follows a documented industry standard response plan, beginning with determination that the data protection incident criteria are met. Where a data protection incident occurs, it is generally declared immediately after Triage but, depending on complexity, the declaration may happen at any point when a level of necessary information is available, including after the investigation stage. On the other hand, the team has discretion to declare a data protection incident based only on reasonable suspicion of occurrence. The team may also alternate between the various stages as the investigation progresses.
 
 Microsoft also completes an internal post-mortem for data protection incidents. As a part of this exercise, sufficiency of response and operating procedures are evaluated, and any updates that may be necessary to the *Data Protection Incident Response Standard Operating Procedure* or related processes are identified and implemented. Internal post-mortems for data breaches are highly confidential records not available to customers. Post-mortems may, however, be summarized and included in customer event notifications. As part of a routine audit cycle, post-mortem processes are reviewed by external auditors to ensure follow-up occurs.
 
-## Notification
+#### Notification
 
 When Microsoft Professional Services declares a data protection incident under the GDPR, we target notification to our customers within 72 hours. This 72-hour notice obligation is a policy commitment of Professional Services—not a legal requirement under the GDPR.
 
@@ -98,5 +97,5 @@ When providing notice to customers of a personal data breach, Microsoft will inc
 
 -   Sub-processor/supplier details, if one is involved in the breach
 
-## Learn more
+#### Learn more
 Find out more about [Microsoft Professional Services](<https://www.microsoft.com/en-in/microsoftservices/professional_services.aspx>) and by going to the Microsoft Professional Services section on the Microsoft Trust Center (<https://www.microsoft.com/en-us/trustcenter/cloudservices/commercialsupport>). 

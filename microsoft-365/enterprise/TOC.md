@@ -53,7 +53,7 @@
 ## [GDPR](../compliance/gdpr.md?toc=/microsoft-365/enterprise/toc.json)
 ### [Information protection](../compliance/gdpr-information-protection.md?toc=/microsoft-365/enterprise/toc.json)
 ### [Data subject requests](../compliance/gdpr-data-subject-requests.md?toc=/microsoft-365/enterprise/toc.json)
-#### [Office 365](../compliance/gdpr-dsr-O365.md?toc=/microsoft-365/enterprise/toc.json)
+#### [Office 365](../compliance/gdpr-dsr-Office365.md?toc=/microsoft-365/enterprise/toc.json)
 #### [Windows](../compliance/gdpr-dsr-Windows.md?toc=/microsoft-365/enterprise/toc.json)
 #### [Azure](../compliance/gdpr-dsr-Azure.md?toc=/microsoft-365/enterprise/toc.json)
 #### [Dynamics 365](../compliance/gdpr-dsr-Dynamics365.md?toc=/microsoft-365/enterprise/toc.json)
