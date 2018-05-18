@@ -1,7 +1,7 @@
 ---
 title: Microsoft Support and Professional Services Data Subject Requests for the GDP
 description: How Microsoft Support and Professional Services handles data subject requests. 
-keywords: Microsoft 365, Microsoft 365 Education, Microsoft 365 documentation, GDPR
+keywords: Professional Services,Microsoft 365, Microsoft 365 Education, Microsoft 365 documentation, GDPR
 author: BrendaCarter
 localization_priority: Priority
 audience: microsoft-business
