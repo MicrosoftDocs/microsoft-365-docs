@@ -19,13 +19,13 @@ Under the General Data Protection Regulation (GDPR), data controllers are requir
 
 The purpose of this document is to provide data controllers with information that will help them to determine whether a DPIA is needed and, if so, what details to include.
 
-- [Dynamics 365](gdpr-dpia-dynamics.md)
 - [Azure](gdpr-dpia-azure.md)
+- [Dynamics 365](gdpr-dpia-dynamics.md)
 - [Microsoft Support and Professional Services](gdpr-dpia-prof-services.md)
 
 For more information about GDPR compliance Microsoft data protection, see [Compliance](https://servicetrust.microsoft.com/ComplianceManager) in the ***Service Trust Portal***.
 
-## Learn mor
+## Learn more
 
 [Microsoft Trust Center](https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx)
 
