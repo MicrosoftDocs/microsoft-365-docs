@@ -64,3 +64,7 @@
 #### [Azure](../compliance/gdpr-breach-Azure.md?toc=/microsoft-365/enterprise/toc.json)
 #### [Dynamics 365](../compliance/gdpr-breach-Dynamics365.md?toc=/microsoft-365/enterprise/toc.json)
 #### [Microsoft Support and Professional Services](../compliance/gdpr-breach-Microsoft-Support-Professional-Services.md?toc=/microsoft-365/enterprise/toc.json)
+### [Data protection impact assessments](gdpr-data-protection-impact-assessments.md)
+#### [Guidance for Data Controllers Using Dynamics 365](gdpr-dpia-dynamics.md)
+#### [Guidance for Data Controllers Using Microsoft Azure](gdpr-dpia-azure.md)
+#### [Guidance for Data Controllers Using Microsoft Professional Services](gdpr-dpia-prof-services.md)

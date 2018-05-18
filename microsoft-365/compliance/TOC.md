@@ -13,3 +13,7 @@
 #### [Azure](gdpr-breach-Azure.md)
 #### [Dynamics 365](gdpr-breach-Dynamics365.md)
 #### [Microsoft Support and Professional Services](gdpr-breach-Microsoft-Support-Professional-Services.md)
+### [Data protection impact assessments](gdpr-data-protection-impact-assessments.md)
+#### [Guidance for Data Controllers Using Dynamics 365](gdpr-dpia-dynamics.md)
+#### [Guidance for Data Controllers Using Microsoft Azure](gdpr-dpia-azure.md)
+#### [Guidance for Data Controllers Using Microsoft Professional Services](gdpr-dpia-prof-services.md)
