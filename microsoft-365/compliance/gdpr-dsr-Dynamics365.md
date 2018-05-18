@@ -68,7 +68,7 @@ When data subjects exercise their rights and make requests, consider the followi
 
 - Verify that you have the information that is related to the request.
 
-###Part 1: Responding to Data Subject Rights Requests for Personal Data Includced in Customer Data
+##Part 1: Responding to Data Subject Rights Requests for Personal Data Includced in Customer Data
 
 In the articles below, you’ll find information to help you prepare for and respond to DSR requests for personal data included in Customer Data processed in Dynamics 365. It is important to note that personal data could be present in other categories of data processed by Microsoft during the course of the service of an online services subscription, such as administrator data or support data defined in the Microsoft Privacy Statement. This document is limited to assist you in the process of discovery and management of DSR requests affecting personal data present in the Customer Data that you have provided to Dynamics 365.
 
