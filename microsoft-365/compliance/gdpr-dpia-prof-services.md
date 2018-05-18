@@ -18,7 +18,7 @@ ms.collection: GDPR
 
 # Data Protection Impact Assessments: Guidance for Data Controllers Using Microsoft Professional Services
 
-### Introduction to Microsoft Professional Services
+## Introduction to Microsoft Professional Services
 
 Microsoft Professional Services includes a diverse group of technical architects, engineers, consultants, and support professionals dedicated to delivering on Microsoft's mission of empowering customers to do more and achieve more. Find out more about Microsoft Professional Services here (<https://www.microsoft.com/en-in/microsoftservices/professional_services.aspx>) and by going to the Microsoft Professional Services section on the Microsoft Trust Center (<https://www.microsoft.com/en-us/trustcenter/cloudservices/commercialsupport>).
 
@@ -30,11 +30,11 @@ Under the General Data Protection Regulation (GDPR), data controllers are requir
 
 The purpose of this document is to provide data controllers with information about Professional Services that will help them to determine whether a DPIA is needed and, if so, what details to include.
 
-### Part 1 – Determining Whether A DPIA is Needed
+## Part 1 – Determining Whether A DPIA is Needed
 
 Article 35 of the GDPR requires a data controller to create a Data Protection Impact Assessment “[w]here a type of processing in particular using new technologies, and taking into account the nature, scope, context and purposes of the processing, is likely to result in a high risk to the rights and freedoms of natural persons.” It further sets out particular factors that would indicate such a high risk, which are discussed in the following table. In determining whether a DPIA is needed, a data controller should consider these factors, along with any other relevant factors, in light of the data controller’s specific implementation(s) and use(s) of Professional Services.
 
-***Table 1 - This is the caption for LONG table with header row***
+***Table 1 - Risk factors and relevant information***
 
 <!--start table here NO HEADER -->
 
@@ -52,7 +52,7 @@ Article 35 of the GDPR requires a data controller to create a Data Protection Im
 
 At the start of an engagement, Professional Services has processes to evaluate and address high-risk solutions it may be asked to work on. As part of this, Professional Services may require assurances from the data controller on GDPR compliance (e.g. contractual terms), a plan for development of a DPIA, or other criteria (e.g. agreed operating guidelines) as required of a data processor under the GDPR. However, regardless of Microsoft’s actions it is the responsibility of the data controller to develop the DPIA with input where applicable from the processor of the customer’s data.
 
-### Part 2 – Contents of a DPIA
+## Part 2 – Contents of a DPIA
 
 Article 35(7) mandates that a Data Protection Impact Assessment specify the purposes of processing and a systematic description of the envisioned processing. A systematic description of a comprehensive DPIA might include factors such as the types of data processed, how long data is retained, where the data is located and transferred, and what third parties may have access to the data. In addition, the DPIA must include:
 
@@ -64,7 +64,7 @@ Article 35(7) mandates that a Data Protection Impact Assessment specify the purp
 
 The table below contains information about Professional Services that is relevant to each of those elements. As in Part 1, data controllers must consider the details provided below, along with any other relevant factors, in the context of the controller’s specific implementation(s) and use(s) of Professional Services.
 
-***Table 2 - Relevant Professional Services***
+***Table 2 - Elements of DPIA for Relevant Professional Services***
 
 <!--start table here -->
 
