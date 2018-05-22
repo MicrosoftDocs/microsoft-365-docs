@@ -21,7 +21,7 @@ The General Data Protection Regulation (GDPR) gives rights to people (known in t
 
 The guide discusses how to use Office 365 products, services and administrative tools to help you find and act on personal data to respond to DSRs. Specifically, this includes how to find, access, and act on personal data that resides in Microsoft's cloud. Here’s a quick overview of the processes outlined in this guide:
 
-1.  ***Discover***—Use search and discovery tools, such as those offered by Microsoft's Security and Compliance Center (SCC), to more easily find customer content that may be the subject of a DSR. Once potentially responsive documents are collected, you can perform one or more of the DSR actions described in the following steps to respond to the DSR request. Alternatively, you may determine that the request doesn't meet your organizations guidelines for responding to DSRs.
+1.  ***Discover***—Use search and discovery tools, such as those offered by the Microsoft Security & Compliance Center (SCC), to more easily find customer content that may be the subject of a DSR. Once potentially responsive documents are collected, you can perform one or more of the DSR actions described in the following steps to respond to the DSR request. Alternatively, you may determine that the request doesn't meet your organizations guidelines for responding to DSRs.
 
 2.  ***Access***—Retrieve personal data that resides in the Microsoft cloud and, if requested, make a copy of it available to the data subject.
 
@@ -58,6 +58,18 @@ To help you find information relevant to your use case, this guide is divided in
 >[Note]
 In most cases, when users in your organization use Microsoft Office 365 products and services, you are the data controller and Microsoft is the processor. As a data controller, you are responsible for responding to the data subject directly. To assist you with this, Parts 1-3 of this guide detail the technical capabilities available to your organization to respond to a DSR request. In some limited scenarios, however, Microsoft will be the data controller when people use certain Office 365 products and services. In these cases, the information in Part 4 provides guidance on how data subjects can submit DSR requests to Microsoft.
 
+### Office 365 national clouds
+
+The Microsoft <!-- review this use --> Office 365 services are also available in the following national cloud environments: Office 365 Germany, Office 365 operated by 21Vianet (China), and Office 365 US Government. Most of the guidance for managing data subject requests described in this document applies to these national cloud environments. However, due to the isolated nature of these environments, there are some exceptions. Where notable for a given subsection, these exceptions are called out in a corresponding note.
+
+### Hybrid deployments
+
+Your Office 365 organization may consist of Microsoft offerings that are a combination of cloud-based services and on-premises server products. In general, a hybrid deployment is typically the sharing of user accounts (identity management) and resources (such as mailboxes, web sites, and data) that exist in the cloud and on-premises. Common hybrid scenarios include:
+•	Exchange hybrid deployments, where some users have an on-premises mailboxes and other users have Exchange Online mailboxes.
+•	SharePoint hybrid deployments, where site and file servers are on-premises and OneDrive for Business accounts are in Office 365.
+•	The on-premises identity management system (Active Directory) that is synchronized with Azure Activity Directory, which is the underlying directory service in Office 365.
+When responding to a DSR request, you may have to determine if data that's responsive to a DSR request is in the Microsoft cloud or in your on-premise organization, and then take the appropriate steps to respond to that request. The Office 365 Data Subject Request Guide (this guide) provides guidance for responding to cloud-based data. For guidance for data in your on-premises organization, see GDPR for Office on-premises Servers. 
+
 ## Part 1: Responding to DSRs for Customer Data
 
 The guidance for responding to DSRs for Customer Data is divided into the following four sections.
@@ -78,7 +90,7 @@ A quick way to identify the Office 365 applications that people in your organiza
 
 ## Using the Content Search eDiscovery tool to respond to DSRs
 
-When looking for personal data within the larger set of data your organization creates and stores using in Office 365, you may want to first consider which applications people have most likely used to author the data you’re looking for. Microsoft estimates that over 90% of an organization’s data that is stored in Office 365 is authored in Word, Excel, PowerPoint, OneNote, and Outlook. Documents authored in these Office applications are most likely stored on a SharePoint Online site, in a user’s OneDrive for Business account, or in a user’s Exchange Online mailbox. That means you can use the Content Search eDiscovery tool to search (and perform other DSR-related actions) across SharePoint Online sites, OneDrive for Business accounts, and Exchange Online mailboxes (including the sites and mailboxes associated with Office 365 Groups, Microsoft Teams, EDU Assignments, and StaffHub) to find documents and mailbox items that may be relevant to the DSR you’re investigating. You can also use the Content Search tool to discover Customer Data authored in other Office 365 applications.
+When looking for personal data within the larger set of data your organization creates and stores using in Office 365, you may want to first consider which applications people have most likely used to author the data you’re looking for. Microsoft estimates that over 90% of an organization’s data that is stored in Office 365 is authored in Word, Excel, PowerPoint, OneNote, and Outlook. Documents authored in these Office applications, even if purchased through Office 365 ProPlus or an Office perpetual license, are most likely stored on a SharePoint Online site, in a user’s OneDrive for Business account, or in a user’s Exchange Online mailbox. That means you can use the Content Search eDiscovery tool to search (and perform other DSR-related actions) across SharePoint Online sites, OneDrive for Business accounts, and Exchange Online mailboxes (including the sites and mailboxes associated with Office 365 Groups, Microsoft Teams, EDU Assignments, and StaffHub) to find documents and mailbox items that may be relevant to the DSR you’re investigating. You can also use the Content Search tool to discover Customer Data authored in other Office 365 applications.
 
 The following table lists the Office 365 applications that people use to create Customer Authored Content and that can be discovered by using Content Search. This section of the DSR guide provides guidance about how discover, access, export, and delete data created with these Office 365 applications.
 
@@ -97,6 +109,8 @@ The following table lists the Office 365 applications that people use to create 
 | <img src="media/O365-DSR-Doc-Final_image17.png" /><br />PowerPoint | <img src="media/O365-DSR-Doc_image33.png" /><br />Yammer ||
 
 <!-- end of table -->
+[Note]
+The Content Search eDiscovery tool is not available in Office 365 operated by 21Vianet (China). This means you won’t able to use this tool to search for Customer Data in the Office 365 applications shown in Table 1. Instead, you will need to ask the document owner to provide you with a copy of the data and to help you make any changes or deletions, or export the document if necessary.
 
 ### Using Content Search to find personal data
 
@@ -104,9 +118,12 @@ The first step in responding to a DSR is to find the personal data that is the s
 
 As previously stated, Microsoft estimates that over 90% of an organization’s data is created with Office applications, such as Word and Excel. This means that you can use the Content Search in the Security & Compliance Center to search for most DSR-related data.
 
-This guide assumes that you or the person searching for personal data that may be responsive to a DSR request is familiar with or has experience using the Content Search tool in the Security & Compliance Center. For general guidance on using Content Search, see [Content Search in Office 365](https://support.office.com/article/Content-Search-in-Office-365-53390468-eec6-45cb-b6cd-7511f9c909e4). Be sure that the person running the searches has been assigned the necessary permissions in the Security & Compliance Center. This person should be added as a member of the eDiscovery Manager role group in the Security & Compliance Center; see [Assign eDiscovery permissions in the Office 365 Security & Compliance Center](https://support.office.com/article/Assign-eDiscovery-permissions-in-the-Office-365-Security-Compliance-Center-5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7). Consider adding other people in your organization who are involved in investigating DSRs to the eDiscovery Manager role group, so they can perform the necessary actions in the Content Search tool such as previewing and exporting search results. However, unless you set up compliance boundaries (as described [here](#set-up-compliance-boundaries-to-limit-the-scope-of-content-searches)) be aware that an eDiscovery Manager can search all content locations in your organization, including ones that may not be related to a DSR investigation. [](#_Set__up)
+This guide assumes that you or the person searching for personal data that may be responsive to a DSR request is familiar with or has experience using the Content Search tool in the Security & Compliance Center. For general guidance on using Content Search, see [Content Search in Office 365](https://support.office.com/article/Content-Search-in-Office-365-53390468-eec6-45cb-b6cd-7511f9c909e4). Be sure that the person running the searches has been assigned the necessary permissions in the Security & Compliance Center. This person should be added as a member of the eDiscovery Manager role group in the Security & Compliance Center; see [Assign eDiscovery permissions in the Office 365 Security & Compliance Center](https://support.office.com/article/Assign-eDiscovery-permissions-in-the-Office-365-Security-Compliance-Center-5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7). Consider adding other people in your organization who are involved in investigating DSRs to the eDiscovery Manager role group, so they can perform the necessary actions in the Content Search tool such as previewing and exporting search results. However, unless you set up compliance boundaries (as described [here](#set-up-compliance-boundaries-to-limit-the-scope-of-content-searches)) be aware that an eDiscovery Manager can search all content locations in your organization, including ones that may not be related to a DSR investigation.
 
 After you find the data, you can then perform the specific action to satisfy the request by the data subject.
+
+[Note] 
+In Office 365 Germany, the Security & Compliance Center is located at https://protection.office.de.
 
 #### Searching content locations
 
@@ -121,7 +138,7 @@ You can search the following types of content locations with the Content Search 
 -   OneDrive for Business accounts
 
 [Note]
-This guide assumes that all data that might be relevant to a DSR investigation is stored in Office 365; in other words, stored in the Microsoft cloud. Data stored on a user’s local computer or on-premises on your organization’s file servers is outside the scope of a DSR investigation for data stored in Office 365.
+This guide assumes that all data that might be relevant to a DSR investigation is stored in Office 365; in other words, stored in the Microsoft cloud. Data stored on a user’s local computer or on-premises on your organization’s file servers is outside the scope of a DSR investigation for data stored in Office 365. For guidance about responding to DSR requests for data in on-premises organizations, see GDPR for Office on-premises Servers.
 
 #### Tips for searching content locations
 
@@ -288,9 +305,9 @@ The user's Delve profile allows users to maintain properties stored in the Share
 
 ###### **End** users
 
-Users can discover, access, and rectify SharePoint Online user profile data using the Delve profile experience. See [View and update your profile in Office Delve](https://support.office.com/article/view-and-update-your-profile-in-office-delve-4e84343b-eedf-45a1-aeb9-8627ccca14ba) for more details.
+End users can discover, access, and rectify SharePoint Online user profile data using the Delve profile experience. See View and update your profile in Office Delve for more details.
 
-An alternate way for users to access their profile data is to navigate to the **edit profile page** in their OneDrive for Business account, which can be accessed by going to the **EditProfile.aspx** **path** under the OneDrive for Business account URL. For example, for a user **user1@contoso.com**, their OneDrive for Business account is located at:
+Another way for users to access their SharePoint profile data is to navigate to the **edit profile page** in their OneDrive for Business account, which can be accessed by going to the **EditProfile.aspx** path under the OneDrive for Business account URL. For example, for a user **user1@contoso.com**, the user's OneDrive for Business account is located at:
 
 `https://contoso-my.sharepoint.com/personal/user1\_contoso\_com/\_layouts/15/**OneDrive.aspx**`
 
@@ -302,121 +319,33 @@ Note that properties sourced in Azure Active Directory can’t be changed within
 
 **Admins**
 
-Admins can discover, access, rectify, and export SharePoint user profile properties on behalf of users in several ways:
+An admin can access and rectify profile properties in the SharePoint admin center. In the **SharePoint admin center**, click the **user profiles** tab. Click **Manage user profiles**, enter a user's name, and then click **Find**. The admin can right-click any user and select **Edit My Profile**. Note that properties sourced in Azure Active Directory can’t be changed within SharePoint Online.
 
--   View, access and rectify profile properties in the SharePoint admin center. Go to the **SharePoint admin center** and click the **user profiles** tab. Click **Manage user profiles**, enter a user's name and click **Find**. The admin can right-click any user and select **Edit My Profile**. Note that properties sourced in Azure Active Directory can’t be changed within SharePoint Online.
+An admin can export all User Profile properties for a user by using the Export-SPOUserProfile cmdlet in SharePoint Online PowerShell. See Export-SPOUserProfile.
 
--   Export a profile data using SharePoint Online PowerShell. For example, an admin can extract the information for a user **user1@contoso.com** by doing the following:
-
-1.  [Connect to SharePoint Online](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps) using the SharePoint Online management shell.
-
-2.  Run the following commands:
-
-> \$user = "user1@contoso.com"
->
-> Export-SPOUserProfile -LoginName \$user -OutputFolder "C:\\users\\admin\\exportfolder"
->
-> Running these commands will export all user profile properties to a CSV file that is saved in the specified folder. Then you can redact as appropriate and share this data with the user.
-
--   [Manage user profiles in the SharePoint admin center](https://support.office.com/article/Manage-user-profiles-in-the-SharePoint-admin-center-494bec9c-6654-41f0-920f-f7f937ea9723). Admins can determine which properties are editable by users. Admins can also define new custom properties. See [Create and edit custom user properties](https://support.office.com/article/Manage-user-profiles-in-the-SharePoint-admin-center-494bec9c-6654-41f0-920f-f7f937ea9723).
+For more information about user profiles, see Manage user profiles in the SharePoint admin center.
 
 ##### User Information list on SharePoint Online sites
 
-A subset of a user's SharePoint user profile is synchronized to the User information list of every site that they visit or have permissions to access. This is used by SharePoint Online experiences, such as People columns in document libraries, to display basic information about the user, such as the name of the creator of a document.
+A subset of a user's SharePoint user profile is synchronized to the User information list of every site that they visit or have permissions to access. This is used by SharePoint Online experiences, such as People columns in document libraries, to display basic information about the user, such as the name of the creator of a document. The data in a User Information list will match the information stored in SharePoint user profile and will be automatically rectified if the source is changed. For deleted users, this data remains in the sites they interacted with for referential integrity of SharePoint column fields. 
 
 Admins can control which properties are replicable inside the SharePoint admin center. To do this:
+1. Go to the **SharePoint admin center** and click the **user profiles** tab. 
+2. Click **Manage User Properties** to see a list of properties. 
+3. Right-click any property and select **Edit** and adjust various settings. 
+4. Under **Policy Settings**, the replicable property controls whether the property will be represented in the User information list. Note that not all properties support adjusting this.
 
-1.  Go to the **SharePoint admin center** and click the **user profiles** tab.
-
-2.  Click **Manage User Properties** to see a list of properties.
-
-3.  From here, you can right-click any property and select **Edit** and adjust various settings.
-
-> Under **Policy Settings** the **replicable** property controls whether the property will be represented in the User information list. Note that not all properties support adjusting this, as some are needed to replicate for the service to work.
-
-The data in a User Information list will match the information stored in SharePoint user profile and will be automatically rectified if the source is changed. Because it matches the information in the SharePoint user profile, there is no need to export it separately.
-
-If a user wants to see all sites they have access to, they can go to SharePoint Home and search for **contentclass:STS\_Site**.
-
-For users that have left the organization, this data remains in the sites they interacted with for referential integrity of SharePoint column fields. Admins can discover, access, and export the user information data by using SharePoint Online PowerShell:
-
-1.  [Connect to SharePoint Online](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps) using the SharePoint Online Management Shell.
-
-2.  Run the following commands, which you can also save as a [PowerShell script](https://docs.microsoft.com/powershell/scripting/powershell-scripting?view=powershell-6):
-
-> \$sites = Get-SPOSite -IncludePersonalSite \$true
->
-> \$user = "[](mailto:)user1@contoso.com"
->
-> foreach (\$site in \$sites)
->
-> {
->
-> Export-SPOUserInfo -LoginName \$user -site \$site.Url -OutputFolder "C:\\users\\admin\\exportfolder"
-
-}
-
-See [Get-SPOSite](https://docs.microsoft.com/powershell/module/sharepoint-online/get-sposite?view=sharepoint-ps) documentation for more details.
+An admin can export all User information properties for a user on a given site by using the **Export-SPOUserInfo** cmdlet in SharePoint Online PowerShell. See **Export-SPOUserInfo**.
 
 ##### OneDrive for Business experience settings
 
-A user's OneDrive for Business experience stores information to help the user find and navigate to content of interest to them. Most of this information can be accessed by end users using the corresponding in-product features listed in the following table:
+A user's OneDrive for Business experience stores information to help the user find and navigate content of interest to them. Most of this information can be accessed by end users using in-product features. An admin can export the information using a PowerShell Script and SharePoint Client-Side Object Model (CSOM) commands.
 
-***Table 3: In-product features in OneDrive***
-<!--start table here -->
-
-||||
-|:-----|:-----|:-----|
-|**Experience**|**Data stored**|**End user access**|
-|Shared items|A list of documents shared with the user by others. It also presents a view of the documents the user has shared with others, which is a view of the permissions the user has set on the items in their OneDrive for Business account |From a user's OneDrive for Business, select **Shared**.|  
-|Discover view |A list of relevant content they have access to, based on who they work with and what they're working on. <P> This depends on integration with the Office Graph, which admins can control in the Settings tab in the SharePoint admin center.</p>|From a user's OneDrive for Business, select **Discover**.|  
-|Mobile Push Notifications |Push notifications to users' OneDrive for Business and SharePoint Online mobile apps, if configured. This includes relevant activity such as new files shared with them. <p>Admins can manage these in **Settings tab** in the SharePoint admin center, under **Mobile Push Notifications – OneDrive and Mobile Push Notifications – SharePoint**.<p/>|View **Notifications** sent to the OneDrive for Business and SharePoint mobile apps.|  
-|Followed Sites and Content |Users can follow sites, documents, or people. <p>Followed sites can be viewed using in product experiences<p/>|View **Notifications** sent to the OneDrive for Business and SharePoint mobile apps.Followed sites can be viewed and managed in the SharePoint Home experience. This experience shows Recent Sites as well.<p>From a user's OneDrive for Business account, they can select the **Settings** gear icon, select **Site Settings**, then select **Newsfeed**. On the right side, they can click the appropriate content type under **I'm Following**.<p/>|  
-|Newsfeed|A list of user activities, including followed content, mentions, and profile changes. Users can access it using in-product experiences.|From a user's OneDrive for Business account, they can select the **Settings** gear icon, select Site Settings, and then select **Newsfeed**.<p>Newsfeed settings can be managed as part of the user profile experience, that was previously described.<p/>|
-|Access requests|A list of requested access to content. |From a user's OneDrive for Business account, they can select the Settings gear icon, select Site Settings, and then select Access Requests and Invitations|
-||||
-
-<!-- end of table -->
-
- 
-An admin can export these lists by using [PowerShell Script](https://docs.microsoft.com/powershell/scripting/powershell-scripting?view=powershell-6) and [SharePoint Client-Side Object Model (CSOM)](https://docs.microsoft.com/sharepoint/dev/sp-add-ins/complete-basic-operations-using-sharepoint-client-library-code) commands. See [Appendix B](#_Appendix_B:_Scripts) in this guide for a sample of the script to export these settings. This script can also be adapted to meet your organization’s needs. For example, an admin can extract the information for **user1@contoso.com** by using the following procedure.[](#_Appendix_B:_OneDrive)
-
-1.  Assign yourself admin permissions to the user's OneDrive for Business account. This can be done in the Office 365 admin center describe [here](https://support.office.com/article/get-access-to-and-back-up-a-former-user-s-data-a6f7f9ad-e3f5-43de-ade5-e5a0d7531604).[](#onedrive-for-business)
-
-2.  Run the **ExportODBLists** PowerShell script (or a customize version of the script):
-
-> \$ODBSite = "https://contoso-my.sharepoint.com/personal/user1\_contoso\_com"
->
-> ExportODBLists.ps1 -siteUrl \$ODBSite
-
-The script will export data stored for the features described in the previous table to multiple CSV files. The admin can review or redact before providing them to the end user.
-
-The script creates following CSV files (if the corresponding lists are found). The name of the CSV file corresponds to the title of the list.
-
-  [*(Reference, \<id\>).csv, where \<id\> is a sequence of letters and numbers*]   List of items shared with the user
- 
-  [*Sharing Links.csv*]                   List of sharing links generated by the user
-
-  [*userActivityFeedHiddenListF4387007-BE61-432F-8BDB-85E6B9679E4B.csv*]           List of relevant activity
-
-  [*notificationSubscriptionHiddenList6D1E55DA-2564-4A22-A5F9-6C4FCAFF53DE.csv*] List of notifications sent to mobile apps, and app IDs for those devices
-  
-[*Social.csv*] 
-List of followed content
-
-[*MicroFeed.csv*]                          List of Newsfeed items
-
- [*Access Requests.csv*]                   List of Access requests
-
- [*SharePointHomeCacheList.csv*]           Cached data from the user navigating to SharePoint Home. This is refreshed every time the user navigates to SharePoint Home.
+See Export OneDrive for Business experience settings for more information about the settings, how they are stored, and how to export them.
 
 ##### OneDrive for Business and SharePoint Online search
 
-OneDrive for Business and SharePoint Online in-app search experience stores a user's search queries for 30 days to increase relevance of search results. To export query results, an admin can use the export profile command as previously documented:
-
-> \$user = "user1@contoso.com"
->
-> Export-SPOUserProfile -LoginName \$user -OutputFolder "C:\\users\\admin\\exportfolder"
+The in-app search experience in OneDrive for Business and SharePoint Online stores a user's search queries for 30 days to increase relevance of search results. An admin can export search queries for a user by using the **Export-SPOQueryLogs** cmdlet in SharePoint Online PowerShell. See **Export-SPOQueryLogs**.
 
 #### Microsoft Teams for Education
 
@@ -644,59 +573,21 @@ In addition to user-created files stored in OneDrive for Business accounts and S
 
 #### Deleting a SharePoint user profile
 
-The SharePoint user profile will be permanently deleted 30 days after the user account is deleted in Azure Active Directory. However, you can hard-delete the user account, which will remove the SharePoint user profile. For more information, see the [Deleting a user](#_Deleting_a_user) section in this guide.[](#_Deleting_a_user)
+The SharePoint user profile will be permanently deleted 30 days after the user account is deleted in Azure Active Directory. However, you can hard-delete the user account, which will remove the SharePoint user profile. For more information, see the Deleting a user section in this guide.
 
-If you decide to just delete the user account (and not hard-delete it) you can manually remove the SharePoint user profile by doing the following:
-
-1.  [Connect to SharePoint Online](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps) using the SharePoint Online Management Shell.
-
-2.  Run the following commands in SharePoint Online PowerShell:
-
-> \$user = "user1@contoso.com"
->
-> Remove-SPOUserProfile -LoginName \$user
+An admin can expedite the deletion of the User Profile for a user by using the **Remove-SPOUserProfile** cmdlet in SharePoint Online PowerShell. See **Remove-SPOUserProfile**. This requires the user to be at least soft-deleted in Azure Active Directory.
 
 #### Deleting User Information lists on SharePoint Online sites
 
-For users that have left the organization, this data remains in the sites they interacted with for referential integrity of SharePoint column fields. Admins can discover and delete the data in User Information lists using doing the following:
+For users that have left the organization, this data remains in the sites they interacted with for referential integrity of SharePoint column fields. An admin can delete all User information properties for a user on a given site by using the **Remove-SPOUserInfo** command in SharePoint Online PowerShell. See **Remove-SPOUserInfo** for information about running this PowerShell cmdlet.
 
-1.  [Connect to SharePoint Online](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps) using the SharePoint Online Management Shell.
+By default, this command will retain the display name of the user and delete properties such as telephone number, email address, skills and expertise, or other properties that were copied from the SharePoint Online user profile. An admin can use the **RedactUser** parameter to specify an alternate display name for the user in the User Information list. This will affect several parts of the user experience and will result in information loss when looking at the history of files in the site.
 
-2.  Run the following commands in SharePoint Online PowerShell (which you can also save and run as a [PowerShell script](https://docs.microsoft.com/powershell/scripting/powershell-scripting?view=powershell-6)):
-
-> \$sites = Get-SPOSites
->
-> \$user = <user1@contoso.com>
->
-> foreach (\$site in \$sites)
->
-> {
->
-> Remove-SPOUserInfo -LoginName \$user -site \$site.Url
->
-> }
-
-By default, this command will retain the display name of the user and delete unnecessary properties such as telephone number, email address, skills and expertise, or other properties that were copied from the SharePoint Online user profile.
-
-You can also use the **RedactUser** parameter to specify an alternate display name for the user in the User Information list. This will affect several parts of the user experience and will result in information loss when looking at the history of files in the site.
-
-Finally, the redaction capability can’t remove all possible metadata or content referencing a user from documents. The way to achieve this redaction of content is describe in the [Making changes to content in OneDrive for Business and SharePoint Online](#_Making_changes_to) section in this guide. This method consists of downloading, deleting, and then uploading a redacted copy of the file.[](#_Making_changes_to)
+Finally, the redaction capability will not remove all metadata or content referencing a user from documents. The way to achieve redaction of file content and metadata is described in the Making changes to content in OneDrive for Business and SharePoint Online section in this guide. This method consists of downloading, deleting, and then uploading a redacted copy of the file.
 
 #### Deleting OneDrive for Business experience settings
 
-The recommended way to delete all OneDrive for Business experience settings and information is to remove the user's OneDrive for Business site, after reassigning any retained files to other users.
-
-An admin can delete these lists by using PowerShell and the SharePoint Client-Side Object Model commands. A script to export these lists has been in [Appendix B](#_Appendix_B:_Scripts), which an admin can adapt to meet the admin's needs. For example, an admin can extract the information for user1@contoso.com as follows:[](#_Appendix_B:_Scripts)
-
-1.  Assign yourself permissions to the user's OneDrive for Business account. This can be done in the Office 365 admin center as described [here](https://support.office.com/article/get-access-to-and-back-up-a-former-user-s-data-a6f7f9ad-e3f5-43de-ade5-e5a0d7531604?ui=en-US&rs=en-US&ad=US).[](#onedrive-for-business)
-
-2.  Run the **DeleteODBLists** PowerShell script (from Appendix B); for example:
-
-> \$ODBSite = "https://contoso-my.sharepoint.com/personal/user1\_contoso\_com"
->
-> DeleteODBLists -siteUrl \$ODBSite
-
-The script will permanently delete the hidden lists containing these settings. Do not run this script on OneDrive for Business accounts for active users that are still in the organization.
+The recommended way to delete all OneDrive for Business experience settings and information is to remove the user's OneDrive for Business site, after reassigning any retained files to other users. An admin can delete these lists using PowerShell Script and SharePoint Client-Side Object Model (CSOM) commands. See Deleting OneDrive for Business experience settings for more information about the settings, how they are stored, and how to delete them.
 
 #### OneDrive for Business and SharePoint Online search queries
 
