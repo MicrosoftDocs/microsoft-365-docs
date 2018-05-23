@@ -1,9 +1,5 @@
 ---
-<<<<<<< HEAD
-title: Guidance for Data Controllers Office 365
-=======
 title: Guidance for Data Controllers using Office 365
->>>>>>> m365compliance
 description: This document provides data controllers with information about Office 365 that will help them to determine whether a DPIA is needed and what details to include.
 keywords: DPIA, Office 365, Microsoft 365 documentation, GDPR
 description: This document provides data controllers with information about Professional Services that will help them to determine whether a DPIA is needed and what details to include.
