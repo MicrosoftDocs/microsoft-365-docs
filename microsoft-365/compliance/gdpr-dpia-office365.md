@@ -4,7 +4,6 @@ description: This document provides data controllers with information about Offi
 keywords: DPIA, Office 365, Microsoft 365 documentation, GDPR
 description: This document provides data controllers with information about Professional Services that will help them to determine whether a DPIA is needed and what details to include.
 keywords: DPIA,Microsoft Professional Services, Microsoft 365 documentation, GDPR
-robots:  "NOINDEX,NOFOLLOW" <!-- need to remove this to publish -->
 author: BrendaCarter
 ms.localizationpriority: high
 audience: microsoft-business
