@@ -1,14 +1,9 @@
 ---
-<<<<<<< HEAD
-title: Guidance for Data Controllers Office 365
-=======
 title: Guidance for Data Controllers using Office 365
->>>>>>> m365compliance
 description: This document provides data controllers with information about Office 365 that will help them to determine whether a DPIA is needed and what details to include.
 keywords: DPIA, Office 365, Microsoft 365 documentation, GDPR
 description: This document provides data controllers with information about Professional Services that will help them to determine whether a DPIA is needed and what details to include.
 keywords: DPIA,Microsoft Professional Services, Microsoft 365 documentation, GDPR
-robots:  "NOINDEX,NOFOLLOW" <!-- need to remove this to publish -->
 author: BrendaCarter
 ms.localizationpriority: high
 audience: microsoft-business
@@ -20,6 +15,7 @@ audience: itpro
 ms.collection: GDPR
 ---
 
+
 # Data Protection Impact Assessments: Guidance for Data Controllers Using Microsoft Office 365 
 
 Under the General Data Protection Regulation (GDPR), data controllers are required to prepare a Data Protection Impact Assessment (DPIA) for processing operations that are “likely to result in a high risk to the rights and freedoms of natural persons.” There is nothing inherent in Microsoft Office 365 that would necessarily require the creation of a DPIA by a data controller using it.  Rather, whether a DPIA is required will be dependent on the details and context of how the data controller deploys, configures, and uses Office 365.
@@ -28,12 +24,7 @@ The purpose of this document is to provide data controllers with information abo
  
 ### Part 1 – Determining Whether a DPIA is Needed 
 
-<<<<<<< HEAD
-Article 35 of the GDPR requires a data controller to create a Data Protection Impact Assessment “[w]here a type of processing in particular using new technologies, and taking into account the nature, scope, context and purposes of the processing, is likely to result in a high risk to the rights and freedoms of natural persons.” It further sets out particular factors that would indicate such a high risk, which are discussed in the following table. In determining whether a DPIA is needed, a data controller should consider these factors, along with any other relevant factors, in light of the controller’s specific implementation(s) and use(s) of Office 365.
-=======
-Article 35 of the GDPR requires a data controller to create a Data Protection Impact Assessment “[w]here a type of processing in particular using new technologies, and taking into account the nature, scope, con
-+text and purposes of the processing, is likely to result in a high risk to the rights and freedoms of natural persons.” It further sets out particular factors that would indicate such a high risk, which are discussed in the following table. In determining whether a DPIA is needed, a data controller should consider these factors, along with any other relevant factors, in light of the controller’s specific implementation(s) and use(s) of Office 365.
->>>>>>> m365compliance
+Article 35 of the GDPR requires a data controller to create a Data Protection Impact Assessment “[w]here a type of processing in particular using new technologies, and taking into account the nature, scope, con+text and purposes of the processing, is likely to result in a high risk to the rights and freedoms of natural persons.” It further sets out particular factors that would indicate such a high risk, which are discussed in the following table. In determining whether a DPIA is needed, a data controller should consider these factors, along with any other relevant factors, in light of the controller’s specific implementation(s) and use(s) of Office 365.
 
 ***Table 1 - Risk factors and relevant information about Office 365***
 
@@ -44,24 +35,14 @@ Article 35 of the GDPR requires a data controller to create a Data Protection Im
 |:-----|:-----|:-----|
 |**Risk Factor**|**Relevant Information about Office 365**|
 |A systematic and extensive evaluation of personal aspects relating to natural persons which is based on automated processing, including profiling, and on which decisions are based that produce legal effects concerning the natural person or similarly significantly affect the natural person |Depending upon the data controller’s configuration, Office 365 may perform certain automated processing of data, such as the analysis performed by Workplace Analytics that allows the data controller to derive insights on how people collaborate within an organization based on email and calendar header information from user’s mailboxes.<p>Office 365 is not designed to perform automated processing as the basis for decisions that produce legal or similarly significant effects on individuals. However, because Office 365 is a highly-customizable service, a data controller could potentially use it for such processing.</p>|
-<<<<<<< HEAD
 |Processing on a large scale1 of special categories of data (personal data revealing racial or ethnic origin, political opinions, religious or philosophical beliefs, or trade union membership, and the processing of genetic data, biometric data for the purpose of uniquely identifying a natural person, data concerning health or data concerning a natural person's sex life or sexual orientation), or of personal data relating to criminal convictions and offences |Office 365 is not specifically designed to process special categories of personal data.<p>However, a data controller could use Office 365 to process the enumerated special categories of data. Office 365 is a highly-customizable service that enables the customer to track or otherwise process any type of personal data, including special categories of personal data. Any such use is relevant to a controller’s determination of whether a DPIA is needed. But as the data processor, Microsoft has no control over such use and typically would have little or no insight into such use.</p>|
-=======
 |Processing on a large scale* of special categories of data (personal data revealing racial or ethnic origin, political opinions, religious or philosophical beliefs, or trade union membership, and the processing of genetic data, biometric data for the purpose of uniquely identifying a natural person, data concerning health or data concerning a natural person's sex life or sexual orientation), or of personal data relating to criminal convictions and offences |Office 365 is not specifically designed to process special categories of personal data.<p>However, a data controller could use Office 365 to process the enumerated special categories of data. Office 365 is a highly-customizable service that enables the customer to track or otherwise process any type of personal data, including special categories of personal data. Any such use is relevant to a controller’s determination of whether a DPIA is needed. But as the data processor, Microsoft has no control over such use and typically would have little or no insight into such use.</p>|
->>>>>>> m365compliance
 |A systematic monitoring of a publicly accessible area on a large scale|Office 365 is not designed to conduct or facilitate such monitoring.<p>However, a data controller could use it to process data collected through such monitoring</p>|
 |||
 
 <!-- end of table -->
-<<<<<<< HEAD
 
-### Part 2 – Contents of a DPIA 
-Article 35(7) mandates that a Data Protection Impact Assessment specify the purposes of processing and a systematic description of the envisioned processing.  In Microsoft’s DPIAs, such systematic description includes factors such as the types of data processed, how long data is retained, where the data is located and transferred, and what third parties may have access to the data.  In addition, the DPIA must include: 
-an assessment of the necessity and proportionality of the processing operations in relation to the purposes;  
-an assessment of the risks to the rights and freedoms of natural persons; and  
-the measures envisaged to address the risks, including safeguards, security measures and mechanisms to ensure the protection of personal data and to demonstrate compliance with this Regulation taking into account the rights and legitimate interests of data subjects and other persons concerned. 
-=======
-  [*]
+[*]
 With respect to the criteria that the processing be on a “large scale,” Recital 91 of the GDPR clarifies that: “The processing of personal data should not be considered to be on a large scale if the processing concerns personal data from patients or clients by an individual physician, other health care professional or lawyer. In such cases, a data protection impact assessment should not be mandatory.”
 
 ### Part 2 – Contents of a DPIA 
@@ -69,7 +50,6 @@ Article 35(7) mandates that a Data Protection Impact Assessment specify the purp
 - an assessment of the necessity and proportionality of the processing operations in relation to the purposes;  
 - an assessment of the risks to the rights and freedoms of natural persons; and  
 - the measures envisaged to address the risks, including safeguards, security measures and mechanisms to ensure the protection of personal data and to demonstrate compliance with this Regulation taking into account the rights and legitimate interests of data subjects and other persons concerned. 
->>>>>>> m365compliance
 
 The table below provides key information from Microsoft that can help with your DPIA drafting. It contains information about Office 365 that is relevant to each of the required elements of a DPIA.  As in Part 1, data controllers must consider the details provided below, along with the details of its own specific implementation(s) and use(s) of Office 365.
 
@@ -79,11 +59,7 @@ The table below provides key information from Microsoft that can help with your 
 
 |||
 |:-----|:-----|
-<<<<<<< HEAD
-|***Risk Factors**|**Relevant Information About Office 365**|
-=======
 |**Risk Factors**|**Relevant Information About Office 365**|
->>>>>>> m365compliance
 |Purpose(s) of processing|The purpose(s) of processing data using Office 365 is determined by the controller that implements, configures, and uses it.<p>As specified by the [Online Services Terms](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46), Microsoft, as a data processor, processes Customer Data only to provide the requested services to our customer, the data controller, including purposes compatible with providing those services. Microsoft will not use Customer Data or information derived from it for any advertising or similar commercial purposes.</p>|
 |Categories of personal data processed|[Customer Data]<br>This is all data, including text, sound, video, or image files and software, that customers provide to Microsoft or that is provided on customers’ behalf through their use of Microsoft online services. It includes data that customers upload for storage or processing, as well as customizations. Examples of Customer Data processed in Office 365 include email content in Exchange Online, and documents or files stored in SharePoint Online or OneDrive for Business.<p>[System-generated Log Data]<br>This is data that Microsoft generates to run the service, such as use or performance data. Most of these data contain pseudonymous identifiers generated by Microsoft.<p>[Support Data]<br>This is data provided to Microsoft by or on behalf of Customer (or that Customer authorizes Microsoft to obtain from an Online Service) through an engagement with Microsoft to obtain technical support for Online Services.</p><p>Customer Data, System-generated Log Data, and Support Data do not include administrator and billing data, such as customer administrator contact information, subscription information, and payment data, which Microsoft collects and processes in its capacity as a data controller and which is outside the scope of this document.</p>|
 |Data retention|[Customer Data],<br>As set out in the Data Protection Terms in the Online Services Terms, Microsoft will retain Customer Data for the duration of the customer’s right to use the service and until all Customer Data is deleted or returned in accordance with the customer’s instructions or the terms of the Online Services Terms.<p>At all times during the term of the customer’s subscription, the customer will have the ability to access, extract, and delete Customer Data stored in the service, subject in some cases to specific product functionality intended to mitigate the risk of inadvertent deletion (e.g., Exchange recovered items folder), as further described in product documentation.</p><p>Except for free trials and LinkedIn services, Microsoft will retain Customer Data stored in the Online Service in a limited function account for 90 days after expiration or termination of the customer’s subscription so that the customer may extract the data. After the 90-day retention period ends, Microsoft will disable the customer’s account and delete the Customer Data.</p><p>[System-generated Log Data]<br>This data is retained for a default period of up to 180 days from collection, subject to longer retention periods where required for security of the services or to meet legal or regulatory obligations.</p><p>For further information about service capability that enable the customer to delete personal data maintained in the service at any time, see the [Office 365 Data Subject Requests Guide](https://docs.microsoft.com/microsoft-365/compliance/gdpr-data-subject-requests?toc=/microsoft-365/enterprise/toc.json).|
@@ -98,11 +74,5 @@ The table below provides key information from Microsoft that can help with your 
 
 <!-- end of table -->
 
-<<<<<<< HEAD
-
-
-
-=======
->>>>>>> m365compliance
 #### Learn more
 [Microsoft Trust Center](https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx)
