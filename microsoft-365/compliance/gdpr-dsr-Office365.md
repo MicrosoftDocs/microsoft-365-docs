@@ -375,9 +375,9 @@ Here’s specific guidance to search for a Class Notebook.
 
 1.  Run a Content Search using the following search criteria:
 
--   Search all SharePoint Online sites
+    - Search all SharePoint Online sites
 
--   Include the name of the class team as a search keyword; for example, “9C Biology.”
+    - Include the name of the class team as a search keyword; for example, “9C Biology.”
 
 1.  Preview the search results and look for the item that corresponds to the Class Notebook.
 
@@ -389,7 +389,7 @@ Here’s specific guidance to search for a Class Notebook.
 
 > path: "https://contosoedu.onmicrosoft.com/sites/9C Biology/SiteAssets/9C Biology Notebook/" AND filetype="one"
 
-5.  Re-run the Content Search. The search results should include all OneNote files for the Class Notebook from the class team.
+6.  Re-run the Content Search. The search results should include all OneNote files for the Class Notebook from the class team.
 
 #### Microsoft To-Do
 
@@ -1751,11 +1751,11 @@ Here’s a high-level overview of how to implement Compliance Boundaries (togeth
 [Note]
 Currently, you must perform an additional step for OneDrive for Business and file a Microsoft Support request to have the attribute synchronized to OneDrive for Business accounts.
 
-1.  Create an admin role group in the Office 365 Security & Compliance Center for each compliance boundary. We recommend that you create these role groups by copying the built-in eDiscovery Manager role group and then removing any roles as necessary.
+4.  Create an admin role group in the Office 365 Security & Compliance Center for each compliance boundary. We recommend that you create these role groups by copying the built-in eDiscovery Manager role group and then removing any roles as necessary.
 
-2.  Add members to each of the specific role groups as eDiscovery Mangers. Members will the people responsible for investigating and responding to DSRs, and will typically consist of IT admins, data privacy officers, compliance managers, and human resource representatives.
+5.  Add members to each of the specific role groups as eDiscovery Mangers. Members will the people responsible for investigating and responding to DSRs, and will typically consist of IT admins, data privacy officers, compliance managers, and human resource representatives.
 
-3.  Create a search permissions filter for each compliance boundary so that the members of the corresponding admin role group can only search mailboxes and sites for users within that agency/compliance boundary. The search permissions filter will allow members of the corresponding role group to search only the content locations with user object attribute value that corresponds to the agency/compliance boundary.
+6.  Create a search permissions filter for each compliance boundary so that the members of the corresponding admin role group can only search mailboxes and sites for users within that agency/compliance boundary. The search permissions filter will allow members of the corresponding role group to search only the content locations with user object attribute value that corresponds to the agency/compliance boundary.
 
 For step-by-step instructions, see [Set up compliance boundaries for eDiscovery investigations in Office 365](https://support.office.com/article/1b45c82f-26c8-44fb-9f3b-b45436fe2271).
 
