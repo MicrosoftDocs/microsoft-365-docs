@@ -964,7 +964,6 @@ Custom connectors allow organizations to extend the capabilities of Flow by conn
 <span id="_Toc511167744" class="anchor"><span id="_Toc511207937" class="anchor"><span id="_Toc511215476" class="anchor"><span id="_Toc511377225" class="anchor"></span></span></span></span>
 
 ### Forms
-
 The following sections explain how use the in-app functionality in Microsoft Forms to find, access, export, and delete personal data.
 
 #### Discover
@@ -1260,7 +1259,6 @@ To delete a whiteboard:
 2. Tap … (the ellipses button) on the whiteboard you want to delete, and then select Delete.
 The whiteboard will be permanently deleted (hard-deleted).
 
-
 ### Yammer
 
 The following sections explain how use the in-app functionality in Microsoft Yammer to find, access, export, and delete personal data.
@@ -1360,13 +1358,13 @@ An Office 365 global admin can assign themselves the permissions necessary to op
 
 -   To complete redact a SharePoint file in a way that removes all traces of a data subject from the file, including all versions of the file and all recorded activity performed by the data subject, you would have to perform the following steps:
 
-1.  Download a copy of the file to your local computer.
+    1.  Download a copy of the file to your local computer.
 
-2.  Permanently delete the file from SharePoint Online, by deleting the file, and then deleting if from the first-stage and second-stage Recycle Bin. See the [Deleting documents in SharePoint Online and OneDrive for Business](#_Deleting_documents_in_1) section in this guide.[](#_Deleting_documents_in)
+    2.  Permanently delete the file from SharePoint Online, by deleting the file, and then deleting if from the first-stage and second-stage Recycle Bin. See the [Deleting documents in SharePoint Online and OneDrive for Business](#_Deleting_documents_in_1) section in this guide.[](#_Deleting_documents_in)
 
-3.  Make the revisions to the copy of the document on your local computer.
+    3.  Make the revisions to the copy of the document on your local computer.
 
-4.  Upload the revised file to the original SharePoint Online location.
+    4.  Upload the revised file to the original SharePoint Online location.
 
 -   Data in SharePoint lists can be edited. See [Add, edit, or delete list items](https://support.office.com/article/add-edit-or-delete-list-items-a4b31f53-f044-470e-9823-4526594bacde).
 
@@ -1388,7 +1386,6 @@ Note that this will not affect all experiences, which may retain the older infor
 Power BI relies on the underlying source data used in its dashboards and reports to be complete and accurate, so correcting inaccurate or incomplete source data must be done there. For example, if you created a Power BI report that is connected to Dynamics 365 for Sales as the live data source, you would have to make any corrections to the data in Dynamics 365 for Sales.
 
 After those changes are made, you can take advantage of the [scheduled data refresh](https://docs.microsoft.com/power-bi/refresh-scheduled-refresh) capabilities to update the dataset that is stored in Power BI so that the revised data is reflected in the dependent Power BI assets. To help comply with GDPR requirements, you should have policies in place to ensure that you are refreshing your data at an appropriate cadence.
-
 
 ### Making changes to content in Yammer
 
@@ -1618,7 +1615,7 @@ Admins can access system-generated logs associated with a particular user’s us
 
 > The **Data Log Export** is displayed. Note that a list of export data requests submitted by your organization is displayed.
 
-1.  To create a new request for a user, click **Create Export Data Request**.
+4.  To create a new request for a user, click **Create Export Data Request**.
 
 After you create a new request, it will be listed on the **Data Log Export** page where you can track its status. After a request is complete, you can click a link to access the system-generated logs, which will be exported to your organization’s Azure storage location within 30 days of creating the request. The data will be saved in common, machine-readable file formats such as JSON or XML. If you don't have an Azure account and Azure storage location, you'll need to create an Azure account and/or Azure storage location for your organization so that the Data Log Export tool can export the system-generated logs. For more information, see [Introduction to Azure Storage](https://docs.microsoft.com/azure/storage/common/storage-introduction).
 
