@@ -71,6 +71,7 @@
 #### [Dynamics 365](../compliance/gdpr-breach-Dynamics365.md?toc=/microsoft-365/enterprise/toc.json)
 #### [Microsoft Support and Professional Services](../compliance/gdpr-breach-Microsoft-Support-Professional-Services.md?toc=/microsoft-365/enterprise/toc.json)
 ### [Data protection impact assessments](../compliance/gdpr-data-protection-impact-assessments.md)
+#### [Office 365](../compliance/gdpr-dpia-office365.md)
 #### [Azure](../compliance/gdpr-dpia-azure.md)
 #### [Dynamics](../compliance/gdpr-dpia-dynamics.md)
 #### [Microsoft Support and Professional Services](../compliance/gdpr-dpia-prof-services.md)

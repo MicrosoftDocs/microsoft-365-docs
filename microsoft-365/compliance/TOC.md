@@ -20,6 +20,7 @@
 #### [Dynamics 365](gdpr-breach-Dynamics365.md)
 #### [Microsoft Support and Professional Services](gdpr-breach-Microsoft-Support-Professional-Services.md)
 ### [Data protection impact assessments](gdpr-data-protection-impact-assessments.md)
+#### [Office 365](gdpr-dpia-office365.md)
 #### [Azure](gdpr-dpia-azure.md)
 #### [Dynamics](gdpr-dpia-dynamics.md)
 #### [Microsoft Support and Professional Services](gdpr-dpia-prof-services.md)
