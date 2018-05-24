@@ -603,7 +603,7 @@ description: Learn about the product documentation and resources available for M
                     </li>
                     <li>
                         <a data-default="true" href="#compliance">Compliance</a>
-                        <ul id="getstarted" class="cardsG">
+                        <ul id="compliance" class="cardsG">
                             <li class="fullSpan">
                                 <div class="container intro">
                                     <p>To help you comply with national, regional, and industry-specific requirements governing the collection and use of individuals’ data, Microsoft offers the most comprehensive set of compliance offerings of any cloud service provider. </p>
