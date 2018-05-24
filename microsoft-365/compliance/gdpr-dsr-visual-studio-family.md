@@ -21,7 +21,7 @@ The European Union [General Data Protection Regulation (GDPR)](http://ec.europa.
 
 ## Products covered by this guide
 
-This guide discusses how to use Microsoft tools to export or delete personal data collected during authenticated (signed-in) session usage of Visual Studio and Visual Studio for Mac and Microsoft extensions to them and to Visual Studio Code. This guide also covers how to make data subject requests for personal data collected when using Visual Studio Developer Community, NuGet.org, and the ASP.NET website. These products may enable use of non-Microsoft tools and extensions, and Microsoft is neither a data processor nor controller for these tools and extensions. Users should contact the tool or extension provider to understand the personal data and collection policies for these tools and extensions.
+This guide discusses how to use Microsoft tools to export or delete personal data collected during authenticated (signed-in) session usage of Visual Studio and Visual Studio for Mac and Microsoft extensions to them and to Visual Studio Code. This guide also covers how to make data subject requests for personal data collected when using Visual Studio Developer Community, NuGet.org, and the ASP.NET website. These products may enable use of non-Microsoft tools and extensions, and Microsoft is not a data processor or controller for these tools and extensions. Users should contact the tool or extension provider to understand the personal data and collection policies for these tools and extensions.
 
 ## Additional privacy information
 
@@ -31,7 +31,7 @@ The Microsoft Software License Terms accompanying the products, the [Microsoft P
 
 ### Personal data we collect
 
-As a data processor under the GDPR, Microsoft collects the data we need from users to provide experiences for and improve Visual Studio and Visual Studio for Mac and Microsoft extensions to them and to Visual Studio Code. Visual Studio Code does not support sign-in, and does not collect personally identifiable data. There are two categories of data: customer data and system-generated logs. Customer data includes user-identifiable transactional and interactional data that these products need to perform the service they provide. For example, to provide users with personalized experiences such as roaming settings, we need to collect user account information and settings data. System-generated logs are usage or diagnostic data that are used to help identify and troubleshoot problems and improve our products and services, and may also contain identifiable information about end users, such as a user name. System-generated logs are retained for no more than 18 months. As an example, system-generated logs are aggregated for each day of product usage and includes the usage date, the product used (for example, "Visual Studio 2017"), the action you took (for example, "vs/core/packagecostsummary/solutionload"), and the number of times the action was taken, as shown in this sample:
+As a data processor under the GDPR, Microsoft collects the data we need from users to provide experiences for and improve Visual Studio and Visual Studio for Mac and Microsoft extensions to them and to Visual Studio Code. Visual Studio Code does not support sign-in, and does not collect personally identifiable data. There are two categories of data: customer data and system-generated logs. Customer data includes user-identifiable transactional and interactional data that these products need to perform the service they provide. For example, to provide users with personalized experiences such as roaming settings, we need to collect user account information and settings data. System-generated logs are usage or diagnostic data that are used to help identify and troubleshoot problems and improve our products and services, and may also contain identifiable information about end users, such as a user name. System-generated logs are retained for no more than 18 months. As an example, system-generated logs are aggregated for each day of product usage and include the usage date, the product used (for example, "Visual Studio 2017"), the action you took (for example, "vs/core/packagecostsummary/solutionload"), and the number of times the action was taken, as shown in this sample:
 
 ```
 {Time":"2/23/2018 12:00:00 AM","AppName":"Visual Studio 2017","Action":"vs/core/packagecostsummary/solutionload","Target":"1 times",
@@ -57,7 +57,7 @@ Visual Studio 2015 and later, Visual Studio for Mac, and Visual Studio Code prov
 
 #### n-app settings
 
-Users can control the privacy settings for these products. For more information see the following
+Users can control the privacy settings for these products. For more information, see the following
 
 - [How to manage privacy settings in Visual Studio](https://docs.microsoft.com/visualstudio/ide/visual-studio-experience-improvement-program).
 - [How to manage privacy settings in Visual Studio for Mac](https://docs.microsoft.com/visualstudio/mac/visual-studio-experience-improvement-program).
@@ -68,7 +68,7 @@ Users can control the privacy settings for these products. For more information 
 Controllers can manage customer data and system-generated logs collected from their data subjects by one of two methods, depending upon how their Visual Studio Family product or Microsoft extensions were registered. In some cases, both methods must be used. Both methods allow Controllers to download a copy of their activity history managed by that method. Closure of an AAD or MSA account deletes associated Visual Studio customer data, and anonymizes personally identifiable data in system-generated logs pertaining to these products. Anonymized system-generated logs are retained for no more than 18 months.
 
 - Users that have registered a Visual Studio Family product by using an account that is backed by an Azure tenant&mdash;for example, AAD account or  MSA account associated with an Azure subscription&mdash;can follow the instructions in [Azure Data Subject Requests for the GDPR](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure).
-- Users that have registered a Visual Studio Family product without an account that is backed by an Azure tenant&mdash;for example many accounts using a Microsoft Account (MSA)&mdash;can use [the web-based Microsoft Privacy Dashboard](https://account.microsoft.com/account/privacy?ru=https%3A%2F%2Faccount.microsoft.com%2Fprivacy&amp;destrt=privacy-dashboard) available through their Microsoft account to view, control and delete activity data tied to their Microsoft account across multiple Microsoft services. In this scenario, the user is a controller for their own personal data.
+- Users that have registered a Visual Studio Family product without an account that is backed by an Azure tenant&mdash;for example many accounts using a Microsoft Account (MSA)&mdash;can use [the web-based Microsoft Privacy Dashboard](https://account.microsoft.com/account/privacy?ru=https%3A%2F%2Faccount.microsoft.com%2Fprivacy&amp;destrt=privacy-dashboard) available through their Microsoft account to view, control, and delete activity data tied to their Microsoft account across multiple Microsoft services. In this scenario, the user is a controller for their own personal data.
 
 > [!NOTE]
 > When an MSA account holder deletes their account, all their personally identifiable data pertaining to these products is deleted, whether the account is backed by an Azure tenant or not, and system-generated logs are anonymized.
@@ -94,9 +94,9 @@ Public feedback includes: reported problems, comments, and solutions.
 
 #### View
 
-To View your feedback related data, please follow these steps:
+To View your feedback-related data, follow these steps:
 
-1. Sign into [Developer Community](https://developercommunity.visualstudio.com). From the top right corner, click on your profile and select **Profile and Preferences** from themenu options.
+1. Sign into [Developer Community](https://developercommunity.visualstudio.com). From the top right corner, click on your profile and select **Profile and Preferences**.
 2. Click on any of the **Profile**, **Notifications**, **Activity**, and **Attachments** tabs to view the data submitted to the feedback systems.
    1. **Profile** refers to your [Developer Community](https://developercommunity.visualstudio.com) profile, including user name, email address, about, etc.
    2. **Notifications** is how you control the email notifications you receive.
@@ -161,7 +161,7 @@ Once you click **Delete my account:**
 
 ### Personal Data We Collect
 
-Through the [Xamarin Forums](https://forums.xamarin.com) user community and [Xamarin Bugzilla](https://xamarin.bugzilla.com) bug reporting websites, Microsoft collects data you provide to help us reproduce and troubleshoot issues you may have with Microsoft products and services. This data includes personal data and public feedback. The personal data we collect is user account data (e.g. user names and email addresses associated with your Xamarin Forums or Bugzilla accounts), and the public feedback we collect includes bugs, problems, comments, and solutions you provide via the Xamarin Forums or Xamarin Bugzilla bug reporting website.
+Through the [Xamarin Forums](https://forums.xamarin.com) user community and [Xamarin Bugzilla](https://xamarin.bugzilla.com) bug reporting websites, Microsoft collects data you provide to help us reproduce and troubleshoot issues you may have with Microsoft products and services. This data includes personal data and public feedback. The personal data we collect is user account data (for example, user names and email addresses associated with your Xamarin Forums or Bugzilla accounts), and the public feedback we collect includes bugs, problems, comments, and solutions you provide via the Xamarin Forums or Xamarin Bugzilla bug reporting website.
 
 ### How You Can Control Your Data
 
@@ -169,15 +169,15 @@ Through the [Xamarin Forums](https://forums.xamarin.com) user community and [Xam
 
 ##### View
 
-Users with active Xamarin Forums accounts may view their personal data and public feedback (e.g. all of their posted threads and posts) from their Xamarin Forums account page. Users may also edit their personal data through their account page.
+Users with active Xamarin Forums accounts may view their personal data and public feedback (for example, all of their posted threads and posts) from their Xamarin Forums account page. Users may also edit their personal data through their account page.
 
 ##### Export
 
-Xamarin Forums are hosted by a third party, Vanilla Forums. To request export of your public data, users should contact forums@xamarin.com (monitored by the Xamarin team). We will then reach out directly to Vanilla Forums to process this request.
+Xamarin Forums are hosted by a third party, Vanilla Forums. To request export of your public data, users should contact forums@xamarin.com (monitored by the Xamarin team). We will then work directly with Vanilla Forums to process this request.
 
 ##### Delete
 
-Xamarin Forums are hosted by a third party, Vanilla Forums. To request deletion of your personal and public data, users should contact forums@xamarin.com (monitored by the Xamarin team). We will then reach out directly to Vanilla Forums who will service the user's personal data deletion request.
+Xamarin Forums are hosted by a third party, Vanilla Forums. To request deletion of your personal and public data, users should contact forums@xamarin.com (monitored by the Xamarin team). We will then contact Vanilla Forums, who will service the user's personal data deletion request.
 
 #### Bugzilla for Xamarin
 
@@ -191,7 +191,7 @@ Exporting of personal data is not supported.
 
 ##### Delete
 
-To request deletion of personal data used in connection with Xamarin's Bugzilla bug reporting website, users can close their Xamarin Bugzilla account by going to the [user preferences page](https://bugzilla.xamarin.com/userprefs.cgi) and choosing the **Close Account tab**. You must then enter your Bugzilla password and check the box confirming that you understand this will permanently delete your account. Public feedback (e.g., bugs, problems, comments, and solutions) users have posted to the Xamarin Bugzilla will not be deleted after receipt of a delete request. Public feedback will instead be anonymized by removing the name and email address associated with any public feedback created by user submitting the delete request.
+To request deletion of personal data used in connection with Xamarin's Bugzilla bug reporting website, users can close their Xamarin Bugzilla account by going to the [user preferences page](https://bugzilla.xamarin.com/userprefs.cgi) and choosing the **Close Account tab**. Enter your Bugzilla password and check the box confirming that you understand that this will permanently delete your account. Public feedback (for example, bugs, problems, comments, and solutions) that users have posted to the Xamarin Bugzilla will not be deleted after receipt of a delete request. Public feedback will instead be anonymized by removing the name and email address associated with any public feedback created by user submitting the delete request.
 
 ## NuGet
 
@@ -209,7 +209,7 @@ For information on DSR for the IIS.NET website, see [The IIS.NET Website and GDP
 
 ### SurveyMonkey
 
-From time to time, we invite customers to provide feedback on these products via SurveyMonkey. This data is deleted within 28 days. When servicing data subject requests for these products, if we have authenticated survey responses, we include these in export and delete data subject requests.
+From time to time, we invite customers to provide feedback on these products via SurveyMonkey. This data is deleted within 28 days. When servicing data subject requests for these products, if we have authenticated survey responses we include them in export and delete data subject requests.
 
 ### UserVoice
 
@@ -219,7 +219,7 @@ We invite customers to provide product suggestions at UserVoice.com sites for th
 - [https://aspnet.uservoice.com/](https://aspnet.uservoice.com/)
 - [https://xamarin.uservoice.com/](https://xamarin.uservoice.com/)
 
-For data subject requests on this data, please see the UserVoice guidance on [how to export your data](https://feedback.uservoice.com/knowledgebase/articles/1850245-export-my-personal-data) or on [how to delete your data](https://feedback.uservoice.com/knowledgebase/articles/1848856-delete-my-profile-information).
+For data subject requests on this data, see the UserVoice guidance on [how to export your data](https://feedback.uservoice.com/knowledgebase/articles/1850245-export-my-personal-data) or on [how to delete your data](https://feedback.uservoice.com/knowledgebase/articles/1848856-delete-my-profile-information).
 
 ## Learn more
 
