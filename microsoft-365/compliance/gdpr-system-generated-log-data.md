@@ -4,6 +4,7 @@ description: Microsoft technical guidance - Additional steps to export System-gn
 keywords: Export log data, Microsoft 365 Education, Microsoft 365 documentation, GDPR
 author: BrendaCarter
 localization_priority: Priority
+Robots:  "NOFOLLOW,NOINDEX"
 audience: microsoft-business
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
