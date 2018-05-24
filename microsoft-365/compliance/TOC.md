@@ -6,7 +6,6 @@
 #### [Azure](gdpr-arc-Azure.md)
 #### [Dynamics 365](gdpr-arc-Dynamics365.md)
 #### [Microsoft Support and Professional Services](gdpr-arc-prof-services.md)
-### [Microsoft's data protection officer](gdpr-data-protection-officer.md)
 ### [Information protection](gdpr-information-protection.md)
 ### [Data subject requests](gdpr-data-subject-requests.md)
 #### [Office 365](gdpr-dsr-Office365.md) 
@@ -25,3 +24,4 @@
 #### [Azure](gdpr-dpia-azure.md)
 #### [Dynamics](gdpr-dpia-dynamics.md)
 #### [Microsoft Support and Professional Services](gdpr-dpia-prof-services.md)
+### [Microsoft's data protection officer](gdpr-data-protection-officer.md)

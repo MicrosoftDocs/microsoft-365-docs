@@ -57,7 +57,6 @@
 #### [Azure](../compliance/gdpr-arc-Azure.md)
 #### [Dynamics 365](../compliance/gdpr-arc-Dynamics365.md)
 #### [Microsoft Support and Profressional Services](../compliance/gdpr-arc-prof-services.md)
-### [Microsoft's data protection officer](../compliance/gdpr-data-protection-officer.md)
 ### [Information protection](../compliance/gdpr-information-protection.md?toc=/microsoft-365/enterprise/toc.json)
 ### [Data subject requests](../compliance/gdpr-data-subject-requests.md?toc=/microsoft-365/enterprise/toc.json)
 #### [Office 365](../compliance/gdpr-dsr-Office365.md?toc=/microsoft-365/enterprise/toc.json)
@@ -76,3 +75,4 @@
 #### [Azure](../compliance/gdpr-dpia-azure.md)
 #### [Dynamics](../compliance/gdpr-dpia-dynamics.md)
 #### [Microsoft Support and Professional Services](../compliance/gdpr-dpia-prof-services.md)
+### [Microsoft's data protection officer](../compliance/gdpr-data-protection-officer.md)
