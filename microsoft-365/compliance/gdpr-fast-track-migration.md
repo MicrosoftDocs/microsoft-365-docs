@@ -1,7 +1,7 @@
 ---
 title: GDPR
 description: Microsoft technical guidance - FASTTRACK MIGRATIONS TOOLSET FOR SUBMITTING DELETE REQUEST
-keywords: Export log data, Microsoft 365 Education, Microsoft 365 documentation, GDPR
+keywords: FastTrack Migration, Microsoft 365 Education, Microsoft 365 documentation, GDPR
 author: BrendaCarter
 localization_priority: Priority
 Robots:  NOFOLLOW,NOINDEX
@@ -49,7 +49,7 @@ This toolset is available in the PowerShell Gallery on the PowerShell console ap
 ![Run as Administrator](media/fasttrack-powershell_image.png)
 
 Now that the console is open, you need to set permissions for script execution. Type the following command to allow the scripts to run:
-‘Set-ExecutionPolicy – ExecutionPolicy: Bypass – Scope:Process’
+‘Set-ExecutionPolicy -ExecutionPolicy:Bypass -Scope:Process’
 
 You will be prompted to confirm this action, as the administrator can change the scope at their discretion.
 
@@ -59,11 +59,14 @@ You will be prompted to confirm this action, as the administrator can change the
 
 Now that the console is set to allow the script,  run this next command to install the module:
 
-> ‘Install-Module -Name Microsoft.FastTrack `
->                    -Repository PSGallery `
->        
->                  -WarningAction: SilentlyContinue `
->                -Force’
+```powershell
+Install-Module -Name Microsoft.FastTrack `
+                    -Repository PSGallery `
+        
+                  -WarningAction: SilentlyContinue `
+                -Force
+```
+
 
 ### Prerequisites for module
 To successfully execute this module, you may need to install dependent modules for use if they are not already installed. You may need to restart PowerShell.  
@@ -71,7 +74,7 @@ To successfully execute this module, you may need to install dependent modules f
 In order to submit a DSR, you must first login using your Office 365 credentials – entering the proper credentials will validate your global administrator status and collect tenant information. 
 
 
-**Login-FastTrackAccount -ApiKey:\<API Key provided by FastTrack MVM\>**
+>`Login-FastTrackAccount -ApiKey:\<API Key provided by FastTrack MVM\>`
 
 Once successfully logged in, the credentials and key will be stored for use with FastTrack modules for the remainder of the current PowerShell session.
 
@@ -81,11 +84,11 @@ If you need to connect to a cloud environment, other than commercial, *-Environm
 - AzureGermanCloud
 - AzureUSGovernmentCloud
 
-**Login-FastTrackAcccount -ApiKey \<API Key provided by FastTrack MVM> -Environment: <cloud environment\>**
+>`Login-FastTrackAcccount -ApiKey \<API Key provided by FastTrack MVM> -Environment: <cloud environment\>`
 
 #### To submit a DSR request run the following command:
 
-Submit-FastTrackGdprDsrRequest -DsrRequestUserEmail: SubjectUserEmail@mycompany.com
+>`Submit-FastTrackGdprDsrRequest -DsrRequestUserEmail: SubjectUserEmail@mycompany.com`
 
 On success – the cmdlet will return a Transaction ID object. Please retain the Transaction ID.
 
@@ -96,11 +99,21 @@ Get-FastTrackGdprDsrRequest -TransactionID: “YourTransactionID”
 
 
 #### Transaction Status Codes
-**Created**	Request has been created<br/>**Failed**	Request failed to create, please resubmit, or contact support<br/>**Completed**	Request has been completed and sanitized
+<!--start table here no header -->
 
+
+|||
+|:-----|:-----|:-----|
+|**Transaction** |**Status**|
+|**Created** |Request has been created|
+|**Failed**|Request failed to create, please resubmit, or contact support|
+|**Completed**|Request has been completed and sanitized|
+|||
+
+<!-- end of table -->
+
+<!-- original version: **Created**	Request has been created<br/>**Failed**	Request failed to create, please resubmit, or contact support<br/>**Completed**	Request has been completed and sanitized -->
 
 
 ## Learn more
 [Microsoft Trust Center](https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx)
-
-
