@@ -15,6 +15,7 @@ audience: itpro
 ms.collection: GDPR
 ---
 
+
 # Data Protection Impact Assessments: Guidance for Data Controllers Using Microsoft Office 365 
 
 Under the General Data Protection Regulation (GDPR), data controllers are required to prepare a Data Protection Impact Assessment (DPIA) for processing operations that are “likely to result in a high risk to the rights and freedoms of natural persons.” There is nothing inherent in Microsoft Office 365 that would necessarily require the creation of a DPIA by a data controller using it.  Rather, whether a DPIA is required will be dependent on the details and context of how the data controller deploys, configures, and uses Office 365.
@@ -24,7 +25,7 @@ The purpose of this document is to provide data controllers with information abo
 ### Part 1 – Determining Whether a DPIA is Needed 
 
 Article 35 of the GDPR requires a data controller to create a Data Protection Impact Assessment “[w]here a type of processing in particular using new technologies, and taking into account the nature, scope, context and purposes of the processing, is likely to result in a high risk to the rights and freedoms of natural persons.” It further sets out particular factors that would indicate such a high risk, which are discussed in the following table. In determining whether a DPIA is needed, a data controller should consider these factors, along with any other relevant factors, in light of the controller’s specific implementation(s) and use(s) of Office 365.
-Article 35 of the GDPR requires a data controller to create a Data Protection Impact Assessment “[w]here a type of processing in particular using new technologies, and taking into account the nature, scope, context and purposes of the processing, is likely to result in a high risk to the rights and freedoms of natural persons.” It further sets out particular factors that would indicate such a high risk, which are discussed in the following table. In determining whether a DPIA is needed, a data controller should consider these factors, along with any other relevant factors, in light of the controller’s specific implementation(s) and use(s) of Office 365.
+
 
 ***Table 1 - Risk factors and relevant information about Office 365***
 
