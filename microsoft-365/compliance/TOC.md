@@ -14,6 +14,7 @@
 #### [Windows](gdpr-dsr-Windows.md)
 #### [Azure](gdpr-dsr-Azure.md)
 #### [Dynamics 365](gdpr-dsr-Dynamics365.md)
+#### [Visual Studio Family](gdpr-dsr-visual-studio-family.md)
 #### [Microsoft Support and Professional Services](gdpr-dsr-prof-services.md) 
 ### [Breach notification](gdpr-breach-notification.md)
 #### [Office 365](gdpr-breach-Office365.md)
