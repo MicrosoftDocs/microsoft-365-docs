@@ -3,7 +3,7 @@ title: Guidance for Data Controllers using Office 365
 description: This document provides data controllers with information about Office 365 that will help them to determine whether a DPIA is needed and what details to include.
 keywords: DPIA, Office 365, Microsoft 365 documentation, GDPR
 description: This document provides data controllers with information about Professional Services that will help them to determine whether a DPIA is needed and what details to include.
-keywords: DPIA,Microsoft Professional Services, Microsoft 365 documentation, GDPR
+keywords: DPIA, Office 365, Microsoft 365 documentation, GDPR
 author: BrendaCarter
 ms.localizationpriority: high
 audience: microsoft-business
@@ -24,12 +24,16 @@ The purpose of this document is to provide data controllers with information abo
  
 ### Part 1 – Determining Whether a DPIA is Needed 
 
+<<<<<<< HEAD
 Article 35 of the GDPR requires a data controller to create a Data Protection Impact Assessment “[w]here a type of processing in particular using new technologies, and taking into account the nature, scope, con+text and purposes of the processing, is likely to result in a high risk to the rights and freedoms of natural persons.” It further sets out particular factors that would indicate such a high risk, which are discussed in the following table. In determining whether a DPIA is needed, a data controller should consider these factors, along with any other relevant factors, in light of the controller’s specific implementation(s) and use(s) of Office 365.
+=======
+Article 35 of the GDPR requires a data controller to create a Data Protection Impact Assessment “[w]here a type of processing in particular using new technologies, and taking into account the nature, scope, context and purposes of the processing, is likely to result in a high risk to the rights and freedoms of natural persons.” It further sets out particular factors that would indicate such a high risk, which are discussed in the following table. In determining whether a DPIA is needed, a data controller should consider these factors, along with any other relevant factors, in light of the controller’s specific implementation(s) and use(s) of Office 365.
+
+>>>>>>> 1f2fa9d9f263ead8c61df3d460de422bd8a4e530
 
 ***Table 1 - Risk factors and relevant information about Office 365***
 
 <!--start table here HEADER -->
-
 
 |||
 |:-----|:-----|:-----|
@@ -41,7 +45,6 @@ Article 35 of the GDPR requires a data controller to create a Data Protection Im
 |||
 
 <!-- end of table -->
-
 [*]
 With respect to the criteria that the processing be on a “large scale,” Recital 91 of the GDPR clarifies that: “The processing of personal data should not be considered to be on a large scale if the processing concerns personal data from patients or clients by an individual physician, other health care professional or lawyer. In such cases, a data protection impact assessment should not be mandatory.”
 
