@@ -1,11 +1,13 @@
 # [Compliance solutions](compliance-solutions-overview.md)
 ## [GDPR](gdpr.md)
+<!-->
 ### [Accountability readiness checklists](gdpr-arc.md)
 #### [Office 365](gdpr-arc-Office365.md)
 #### [Windows](gdpr-arc-Windows.md)
 #### [Azure](gdpr-arc-Azure.md)
 #### [Dynamics 365](gdpr-arc-Dynamics365.md)
 #### [Microsoft Support and Professional Services](gdpr-arc-prof-services.md)
+-->
 ### [Information protection](gdpr-information-protection.md)
 ### [Data subject requests](gdpr-data-subject-requests.md)
 #### [Office 365](gdpr-dsr-Office365.md) 

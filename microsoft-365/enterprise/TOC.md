@@ -51,12 +51,14 @@
 ## [Recommended SharePoint Online access policies](sharepoint-file-access-policies.md)
 # [Compliance solutions](../compliance/compliance-solutions-overview.md?toc=/microsoft-365/enterprise/toc.json)
 ## [GDPR](../compliance/gdpr.md?toc=/microsoft-365/enterprise/toc.json)
+<!-->
 ### [Accountability readiness checklists](../compliance/gdpr-arc.md)
 #### [Office 365](../compliance/gdpr-arc-Office365.md)
 #### [Windows](../compliance/gdpr-arc-Windows.md)
 #### [Azure](../compliance/gdpr-arc-Azure.md)
 #### [Dynamics 365](../compliance/gdpr-arc-Dynamics365.md)
 #### [Microsoft Support and Profressional Services](../compliance/gdpr-arc-prof-services.md)
+-->
 ### [Information protection](../compliance/gdpr-information-protection.md?toc=/microsoft-365/enterprise/toc.json)
 ### [Data subject requests](../compliance/gdpr-data-subject-requests.md?toc=/microsoft-365/enterprise/toc.json)
 #### [Office 365](../compliance/gdpr-dsr-Office365.md?toc=/microsoft-365/enterprise/toc.json)
