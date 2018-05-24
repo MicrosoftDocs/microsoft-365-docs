@@ -67,7 +67,7 @@ Users can control the privacy settings for these products. For more information,
 
 Controllers can manage customer data and system-generated logs collected from their data subjects by one of two methods, depending upon how their Visual Studio Family product or Microsoft extensions were registered. In some cases, both methods must be used. Both methods allow Controllers to download a copy of their activity history managed by that method. Closure of an AAD or MSA account deletes associated Visual Studio customer data, and anonymizes personally identifiable data in system-generated logs pertaining to these products. Anonymized system-generated logs are retained for no more than 18 months.
 
-- Users that have registered a Visual Studio Family product by using an account that is backed by an Azure tenant&mdash;for example, AAD account or  MSA account associated with an Azure subscription&mdash;can follow the instructions in [Azure Data Subject Requests for the GDPR](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure).
+- Users that have registered a Visual Studio Family product by using an account that is backed by an Azure tenant&mdash;for example, AAD account or  MSA account associated with an Azure subscription&mdash;can follow the instructions in [Azure Data Subject Requests for the GDPR](gdpr-dsr-azure.md).
 - Users that have registered a Visual Studio Family product without an account that is backed by an Azure tenant&mdash;for example many accounts using a Microsoft Account (MSA)&mdash;can use [the web-based Microsoft Privacy Response Center](https://aka.ms/userprivacysite) available through their Microsoft account to view, control, and delete activity data tied to their Microsoft account across multiple Microsoft services. In this scenario, the user is a controller for their own personal data.
 
 > [!NOTE]
@@ -228,4 +228,4 @@ For data subject requests on this data, see the UserVoice guidance on [how to ex
 - [Service Trust portal](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted)
 - [Microsoft Privacy Dashboard](https://account.microsoft.com/privacy)
 - [Microsoft Privacy Response Center](https://aka.ms/userprivacysite)
-- [Azure Data Subject Requests for the GDPR](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure)
+- [Azure Data Subject Requests for the GDPR](gdpr-dsr-azure.md)
