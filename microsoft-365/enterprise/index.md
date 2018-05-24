@@ -640,7 +640,7 @@ description: Learn about the product documentation and resources available for M
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>h3>Security and compliance in Office 365</h3>
+                                                    <h3>Security and compliance in Office 365</h3>
                                                     <p>Learn how to protect your data, comply with legal or regulatory standards, and monitor your security stature with Office 365.</p>
                                                 </div>
                                             </div>
