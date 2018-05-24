@@ -47,7 +47,7 @@ As a data processor under the GDPR, Microsoft collects the data we need from use
 "SearchTerm":null,"SearchResult":null}
 ```
 
-For more information, see [Diagnostic information collected by Visual Studio](https://docs.microsoft.com/visualstudio/ide/diagnostic-data-collection).
+For more information, see [System-generated logs collected by Visual Studio](https://docs.microsoft.com/visualstudio/ide/diagnostic-data-collection).
 
 Only personal data that is attached to authenticated identities can be serviced by a DSR. So, for example, because Visual Studio Code does not support sign-in, system-generated logs from it are not attached to an authenticated identity and cannot be serviced. However, some Microsoft extensions for Visual Studio Code may provide authenticated data, and this data can be serviced by a DSR. For more information, see [GDPR and Visual Studio Code](https://code.visualstudio.com/docs/supporting/faq#_gdpr-and-vs-code). In general, we do not store data for Visual Studio 2013 and earlier; however, certain extensions and components may provide data attached to authenticated identities and can be serviced by a DSR as outlined below.
 
@@ -112,7 +112,7 @@ You can export your feedback data as part of DSR. We will create one or more .zi
 - Attachments you provided by [reporting a problem in Visual Studio](https://docs.microsoft.com/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017) or through [Developer Community](https://developercommunity.visualstudio.com).
 
 > [!NOTE]
-> We will exclude the following public feedback you have provided from your archive: Comments, solutions, reported problems.
+> We will exclude the following public feedback you have provided from your archive: comments, solutions, reported problems.
 
 To start an Export, follow these steps:
 
