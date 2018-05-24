@@ -1,7 +1,7 @@
 ---
 title:  Office 365 Data Service Requests Under the GDPR
 description: Understand the user rights under GDPR and how Office 365 helps enterprises find and act on data in response to DSRs.
-keywords:  Office 365, Microsoft 365, Microsoft 365 Education, Microsoft 365 documentation, GDPR
+keywords:  Office 365, DSR, Microsoft 365, Microsoft 365 Education, Microsoft 365 documentation, GDPR
 author:  BrendaCarter
 localization_priority:  Priority
 audience:  microsoft-business
@@ -1684,7 +1684,7 @@ A global IT admin will need to do the following to export system-generated log d
 ### Deleting system-generated logs
 To delete system-generated logs retrieved through an access request, you must remove the user from the service and permanently delete their Azure Active Directory account. For instructions about permanently delete a user, see the [Deleting a user](#_Deleting_a_user) section in this guide. It's important to note that permanently deleting a user account is irreversible once initiated.
 
-Permanently deleting a user account will remove the user’s data from system-generated logs for nearly all Office 365 services within 30 days. One exception to this is that the permanent deletion of the user account takes longer than 30 days in Exchange Online. Given the critical nature of Exchange Online content and prevent accidental data loss, this system has been engineered to intentionally place data in a holding state for up to 60 days after a user account has been permanently deleted. To permanently delete a user’s Exchange Online data in a 30-day timeframe, permanently delete the user account in Azure Active Directory and then [contact support](https://support.microsoft.com/) and request that the user's Exchange Online data be manually removed outside the scheduled delete process. For more information, see [Removing Exchange Online data]([Removing Exchange Online data](#removing-exchange-online-data)), which was previously explained in this guide.
+Permanently deleting a user account will remove the user’s data from system-generated logs for nearly all Office 365 services within 30 days. One exception to this is that the permanent deletion of the user account takes longer than 30 days in Exchange Online. Given the critical nature of Exchange Online content and prevent accidental data loss, this system has been engineered to intentionally place data in a holding state for up to 60 days after a user account has been permanently deleted. To permanently delete a user’s Exchange Online data in a 30-day timeframe, permanently delete the user account in Azure Active Directory and then [contact support](https://support.microsoft.com/) and request that the user's Exchange Online data be manually removed outside the scheduled delete process. For more information, see [Removing Exchange Online data](#removing-exchange-online-data), which was previously explained in this guide.
 
 [Note]f
 A global IT admin will need to do the following to delete system-generated log data in these national clouds. 
