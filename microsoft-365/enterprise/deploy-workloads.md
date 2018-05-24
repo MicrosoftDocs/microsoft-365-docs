@@ -27,4 +27,4 @@ The following figure shows the workloads in the overall Microsoft 365 Enterprise
 
 ![](./media/deploy-workloads/m365-deploy-content-arch-workloads.png)
 
-You should deploy workloads after you have gone through the phases of the [foundation infrastructure](deploy-foundation-infrastructure.md)
+You should deploy workloads after you have gone through the phases of the [foundation infrastructure](deploy-foundation-infrastructure.md).
