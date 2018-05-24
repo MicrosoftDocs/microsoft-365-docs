@@ -148,7 +148,7 @@ On success – the cmdlet will return a Transaction ID object. Please retain the
 #### Checking the status of a request transaction
 Run the following function using the previously obtained Transaction ID:
 
-Get-FastTrackGdprDsrRequest -TransactionID: “YourTransactionID”
+>`Get-FastTrackGdprDsrRequest -TransactionID: <YourTransactionID>`
 
 
 #### Transaction Status Codes
