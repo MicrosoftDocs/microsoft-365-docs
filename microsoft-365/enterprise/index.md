@@ -611,7 +611,7 @@ description: Learn about the product documentation and resources available for M
                                 </div>
                             </li>
                             <li>
-                                <a href="compliance-solutions-overview.md" target="_blank">
+                                <a href="https://docs.microsoft.com/en-us/microsoft-365/compliance/compliance-solutions-overview?toc=/microsoft-365/enterprise/toc.json" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -687,7 +687,7 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
-                                <a href="https://aka/ms/o365gdpr" target="_blank">
+                                <a href="https://aka.ms/o365gdpr" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
