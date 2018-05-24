@@ -1678,7 +1678,7 @@ Product and service usage data for some of Microsoft’s most often-used service
 [Note]
 A global IT admin will need to do the following to export system-generated log data in these national clouds:
 [- Office 365 Germany: Go to the Microsoft Service Trust Portal for Germany](https://aka.ms/MicrosoftSTPGermany) and complete the steps outlined above.
-- Office 365 US Government: Go to the Office 365 admin portal at this URL and submit a request to Microsoft Support.
+- Office 365 US Government: Go to the Office 365 admin portal at this [URL](http://portal.office365.us) and submit a request to Microsoft Support.
 - Office 365 operated by 21Vianet (China): Go to the Office 365 admin portal at this URL and complete the following: 1. Go to the **Support blade**. 2: Click**New Service Request**. 3. Select **Support Type “GDPR”** and enter all remaining required data. 
 
 ### Deleting system-generated logs
@@ -1688,8 +1688,8 @@ Permanently deleting a user account will remove the user’s data from system-ge
 
 [Note]f
 A global IT admin will need to do the following to delete system-generated log data in these national clouds. 
-- Office 365 Germany: When the user account is deleted, the system-generated logs will also be deleted. 
-- Office 365 US Government: Go to the Office 365 admin portal at this URL and submit a request to Microsoft Support.
+- Office 365 Germany: When the user account is permanently deleted, the system-generated logs will also be deleted. 
+- Office 365 US Government: Go to the Office 365 admin portal at this [URL](http://portal.office365.us) and submit a request to Microsoft Support.
 - Office 365 operated by 21Vianet (China): Go to the Office 365 admin portal at this URL and complete the following: 1. Go to the **Support blade**. 2: Click **New Service Request**. 3. Select **Support Type “GDPR”** and enter all remaining required data.
 
 

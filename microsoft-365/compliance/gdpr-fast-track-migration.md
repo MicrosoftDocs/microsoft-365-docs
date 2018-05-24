@@ -4,6 +4,7 @@ description: Microsoft technical guidance - FASTTRACK MIGRATIONS TOOLSET FOR SUB
 keywords: Export log data, Microsoft 365 Education, Microsoft 365 documentation, GDPR
 author: BrendaCarter
 localization_priority: Priority
+Robots:  NOFOLLOW,NOINDEX
 audience: microsoft-business
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -94,6 +95,63 @@ Get-FastTrackGdprDsrRequest -TransactionID: “YourTransactionID”
     **Created**	Request has been created
     **Failed**	Request failed to create, please resubmit, or contact support
     **Completed**	Request has been completed and sanitized
+
+![Allow app to make changes to run Windows PowerShell](media/fasttrack-run-powershell_image.png)
+
+
+![Run as Administrator](media/fasttrack-powershell_image.png)
+
+Now that the console is open, you need to set permissions for script execution. Type the following command to allow the scripts to run:
+‘Set-ExecutionPolicy – ExecutionPolicy: Bypass – Scope:Process’
+
+You will be prompted to confirm this action, as the administrator can change the scope at their discretion.
+
+***(Set Execution Policy in Console)***
+
+![Set Execution Policy](media/gdpr-execution-policy-powershell.png)
+
+Now that the console is set to allow the script,  run this next command to install the module:
+
+> ‘Install-Module -Name Microsoft.FastTrack `
+>                    -Repository PSGallery `
+>        
+>                  -WarningAction: SilentlyContinue `
+>                -Force’
+
+### Prerequisites for module
+To successfully execute this module, you may need to install dependent modules for use if they are not already installed. You may need to restart PowerShell.  
+
+In order to submit a DSR, you must first login using your Office 365 credentials – entering the proper credentials will validate your global administrator status and collect tenant information. 
+
+
+**Login-FastTrackAccount -ApiKey:\<API Key provided by FastTrack MVM\>**
+
+Once successfully logged in, the credentials and key will be stored for use with FastTrack modules for the remainder of the current PowerShell session.
+
+If you need to connect to a cloud environment, other than commercial, *-Environment* will needed to be added to *Login* command with one of the following valid environments:
+- AzureCloud
+- AzureChinaCloud
+- AzureGermanCloud
+- AzureUSGovernmentCloud
+
+**Login-FastTrackAcccount -ApiKey \<API Key provided by FastTrack MVM> -Environment: <cloud environment\>**
+
+#### To submit a DSR request run the following command:
+
+Submit-FastTrackGdprDsrRequest -DsrRequestUserEmail: SubjectUserEmail@mycompany.com
+
+On success – the cmdlet will return a Transaction ID object. Please retain the Transaction ID.
+
+#### Checking the status of a request transaction
+Run the following function using the previously obtained Transaction ID:
+
+Get-FastTrackGdprDsrRequest -TransactionID: “YourTransactionID”
+
+
+#### Transaction Status Codes
+**Created**	Request has been created<br/>**Failed**	Request failed to create, please resubmit, or contact support<br/>**Completed**	Request has been completed and sanitized
+
+
 
 ## Learn more
 [Microsoft Trust Center](https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx)
