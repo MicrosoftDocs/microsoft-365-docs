@@ -731,7 +731,7 @@ description: Learn about the product documentation and resources available for M
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="media/hub-itadmin-deploy/existing-it-infrastructure.svg" alt="GDPR resources for Microsoft services" />
+                                                        <img src="media/hub-itadmin-deploy/m365-enterprise-deployment-process.svg" alt="GDPR resources for Microsoft services" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
