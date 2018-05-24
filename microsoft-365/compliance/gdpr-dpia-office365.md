@@ -24,7 +24,12 @@ The purpose of this document is to provide data controllers with information abo
  
 ### Part 1 – Determining Whether a DPIA is Needed 
 
+<<<<<<< HEAD
 Article 35 of the GDPR requires a data controller to create a Data Protection Impact Assessment “[w]here a type of processing in particular using new technologies, and taking into account the nature, scope, con+text and purposes of the processing, is likely to result in a high risk to the rights and freedoms of natural persons.” It further sets out particular factors that would indicate such a high risk, which are discussed in the following table. In determining whether a DPIA is needed, a data controller should consider these factors, along with any other relevant factors, in light of the controller’s specific implementation(s) and use(s) of Office 365.
+=======
+Article 35 of the GDPR requires a data controller to create a Data Protection Impact Assessment “[w]here a type of processing in particular using new technologies, and taking into account the nature, scope, context and purposes of the processing, is likely to result in a high risk to the rights and freedoms of natural persons.” It further sets out particular factors that would indicate such a high risk, which are discussed in the following table. In determining whether a DPIA is needed, a data controller should consider these factors, along with any other relevant factors, in light of the controller’s specific implementation(s) and use(s) of Office 365.
+
+>>>>>>> 1f2fa9d9f263ead8c61df3d460de422bd8a4e530
 
 ***Table 1 - Risk factors and relevant information about Office 365***
 
