@@ -18,7 +18,7 @@ ms.collection: GDPR
 
 This accountability readiness checklist provides a convenient way to access information you may need to support GDPR when using Microsoft Office 365. The checklist is organized using the titles and reference number (in parenthesis for each checklist topic) of a set of privacy and security controls for personal data processors drawn from ISO/IEC CD 27552 Information technology -- Security techniques -- Enhancement to ISO/IEC 27001 for privacy management – Requirements.   
 
-Check back later this week to see this checklist.
+Come back soon to see this checklist.
 
 ## Learn more
 
