@@ -601,6 +601,7 @@ description: Learn about the product documentation and resources available for M
                             </li>
                         </ul>
                     </li>
+                    <li>
                         <a data-default="true" href="#compliance">Compliance</a>
                         <ul id="getstarted" class="cardsG">
                             <li class="fullSpan">
