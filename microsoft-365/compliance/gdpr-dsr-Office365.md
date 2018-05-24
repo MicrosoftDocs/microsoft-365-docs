@@ -692,9 +692,9 @@ While most Customer Data is authored and produced using the applications describ
 |:-----:|:-----:|:-----:|:-----:|
 |[<img src="media/O365-DSR-Doc_image35.png"/>](#access)<br/>Access|[]()[<img src="media/O365-DSR-Doc_image22.png" />](#business-apps-for-office-365)<br/>Business Apps <br/>for Office 365 |[<img src="media/O365-DSR-Doc_image22.png"/>](#education)<br/>Education|
 |[<img src="media/O365-DSR-Doc_image24.png" />](#flow)<br/>Flow|[<img src="media/O365-DSR-Doc_image26.png" />](#forms)<br/>Forms|[<img src="media/O365-DSR-Doc_image28.png" />](#kaizala)<br/>Kaizala|
-|[<img src="media/O365-DSR-Doc_image30.png" />](#planner)<br/>Planner|[<img src="media/O365-DSR-Doc_image23.png"/>](#powerapps)<br/>PowerApps|[<img src="media/O365-DSR-Doc_image32.png" />](#powerbi)<br/>Power BI|
-|[<img src="media/O365-DSR-Doc_image25.png" />](#projectonline)<br/> Project Online|[<img src="media/O365-DSR-Doc_image37.png"/>](#publisher)<br/>Publisher|[<img src="media/O365-DSR-Doc_image27.png" />](#staffhub)<br/>StaffHub|
-|[<img src="media/O365-DSR-Doc_image29.png" />](#staffhub)<br/>Stream|[<img src="media/O365-DSR-Doc_image31.png" />](#sway)<br/>Sway|[<img src="media/O365-DSR-Doc_image36.png"/>](#whiteboard)<br/>Whiteboard|
+|[<img src="media/O365-DSR-Doc_image30.png" />](#planner)<br/>Planner|[<img src="media/O365-DSR-Doc_image23.png"/>](#powerapps)<br/>PowerApps|[<img src="media/O365-DSR-Doc_image32.png" />](#power-bi)<br/>Power BI|
+|[<img src="media/O365-DSR-Doc_image25.png" />](#project-online)<br/> Project Online|[<img src="media/O365-DSR-Doc_image37.png"/>](#publisher)<br/>Publisher|[<img src="media/O365-DSR-Doc_image27.png" />](#staffhub)<br/>StaffHub|
+|[<img src="media/O365-DSR-Doc_image29.png" />](#stream)<br/>Stream|[<img src="media/O365-DSR-Doc_image31.png" />](#sway)<br/>Sway|[<img src="media/O365-DSR-Doc_image36.png"/>](#whiteboard)<br/>Whiteboard|
 ||[<img src="media/O365-DSR-Doc_image33.png" />](#yammer)<br/>Yammer
 ||||
 
