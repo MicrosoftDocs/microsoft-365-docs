@@ -665,10 +665,9 @@ Here’s the high-level process for deleting a user from your Office 365 organiz
 You can't hard-delete a user in the Office 365 admin portal.
 
 **Note:**
-In Office 365 operated by 21Vianet (China), you can’t permanently delete a user as previously described. To permanently delete a user, follow these steps:
-1. Sign in to the O365 Admin Portal at https://portal.partner.microsoftonline.cn/AdminPortal/Home#/homepage.
-2. Go to the **Support blade**, and then click **New Service Request**.
-3. Select **Support Type** “GDPR” and then enter the required information.
+In Office 365 operated by 21Vianet (China), you can’t permanently delete a user as previously described. To permanently delete a user, you can submit a request via the Office 365 admin portal at this [URL](https://portal.partner.microsoftonline.cn/AdminPortal/Home#/homepage). Go to **Commerce** and then select **Subscription** -> **Privacy** ->  **GDPR** and enter the required information.
+
+
 
 ### Removing Exchange Online data
 
@@ -1684,7 +1683,7 @@ Product and service usage data for some of Microsoft’s most often-used service
 A global IT admin will need to do the following to export system-generated log data in these national clouds:
 [- Office 365 Germany: Go to the Microsoft Service Trust Portal for Germany](https://aka.ms/MicrosoftSTPGermany) and complete the steps outlined above.
 - Office 365 US Government: Go to the Office 365 admin portal at this [URL](http://portal.office365.us) and submit a request to Microsoft Support.
-- Office 365 operated by 21Vianet (China): Go to the Office 365 admin portal at this URL and complete the following: 1. Go to the **Support blade**. 2: Click**New Service Request**. 3. Select **Support Type “GDPR”** and enter all remaining required data. 
+- Office 365 operated by 21Vianet (China): Go to the Office 365 admin portal at this (https://portal.partner.microsoftonline.cn/AdminPortal/Home#/homepage) and complete the following:Go to **Commerce** and then select **Subscription** -> **Privacy** -> **GDPR** and enter the required information.
 
 ### Deleting system-generated logs
 To delete system-generated logs retrieved through an access request, you must remove the user from the service and permanently delete their Azure Active Directory account. For instructions about permanently delete a user, see the [Deleting a user section](#deleting-a-user) in this guide. It's important to note that permanently deleting a user account is irreversible once initiated.
@@ -1698,8 +1697,7 @@ In the national clouds, a global IT admin will need to do the following to delet
 
 - **Office 365 Germany:** When the user account is permanently deleted, the system-generated logs will also be deleted. 
 - **Office 365 US Government:** Submit a request to Microsoft Support via the [Office 365 admin portal](http://portal.office365.us).
-- **Office 365 operated by 21Vianet (China):** Submit a request to Microsoft Support via the Office 365 admin portal at this [URL](https://portal.partner.microsoftonline.cn/AdminPortal/Home#/homepage) and go to the **Support blade**, click **New Service Request**, and then select **Support Type** “GDPR” and enter the required information.
-
+- **Office 365 operated by 21Vianet (China):** Submit a request to Microsoft Support via the Office 365 admin portal at this [URL](https://portal.partner.microsoftonline.cn/AdminPortal/Home#/homepage). Go to **Commerce** and then select **Subscription** -> **Privacy** -> **GDPR** and enter the required information.
 
 ## Part 4: Additional resources to assist you with DSRs
 
