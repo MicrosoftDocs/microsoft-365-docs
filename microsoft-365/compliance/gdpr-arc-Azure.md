@@ -111,7 +111,7 @@ The customer should understand requirements around the rights of individuals rel
 ##### Supporting Microsoft Documentation:
 The capabilities Microsoft provides to help you support data subject rights. 
 •	Azure Data Subject Requests for the GDPR [9]
-•	Microsoft Azure (All-Up) ISO/IEC 27001:2013 ISMS Statement of Applicability see ISO/IEC 27018 control A.1.1
+•	Microsoft Azure (All-Up) ISO/IEC 27001:2013 ISMS Statement of Applicability see ISO/IEC 27018 control A.1.1 <!-- need link -->
 
 ##### Addresses GDPR Article(s)
 (12)(2)
@@ -193,7 +193,7 @@ The customer should understand requirements for informing users about their righ
 Supporting Microsoft Documentation:
 Templated information about Microsoft services relating to their ability to access, correct or erase personal data that you can include in the data you provide to data subjects. 
 •	Azure Data Subject Requests for the GDPR [9] see Step 5: Delete
-•	Privacy and personal data in Intune [15] see View and correct personal data and Audit, export, or delete personal data in Intune.
+•	Privacy and personal data in Intune [15] <!-- need link --> see View and correct personal data and Audit, export, or delete personal data in Intune.
 Addresses GDPR Article(s)
 (5)(1)(d), (13)(2)(b), (14)(2)(c), (16), (17)(1)(a), (17)(1)(b), (17)(1)(c), (17)(1)(d), (17)(1)(e), (17)(1)(f), (17)(2)
 
@@ -257,7 +257,7 @@ The customer is responsible for limiting the processing of personal data so that
 A description of the data collected by Microsoft services. 
 •	Microsoft Online Services Terms, Data Protection Terms, see Processing of Personal Data; GDPR [1]
 •	Key Information from Azure for Customer Data Protection Impact Assessments [11]
-•	Privacy and personal data in Intune [15] see Data storage and processing in Intune
+•	Privacy and personal data in Intune [15] see Data storage and processing in Intune <!-- need link -->
 
 ##### Addresses GDPR Article(s)
 (25)(2)
@@ -398,7 +398,7 @@ The customer should understand requirements around recording to whom personal da
 ##### Supporting Microsoft Documentation:
 Documentation provided about the categories of recipients of disclosures of personal data including available records of disclosure. 
 •	Who can access your data and on what terms [7] 
-•	Privacy and personal data in Intune [15] see Data security and sharing in Intune
+•	Privacy and personal data in Intune [15] see Data security and sharing in Intune <!-- need link -->
 
 ##### Addresses GDPR Article(s)
 (30)(1)(d)
@@ -478,7 +478,7 @@ The customer should, within their organization, define responsibilities for secu
 
 ##### Supporting Microsoft Documentation:
 An overview of the role of Microsoft's Data Protection Officer, the nature of his duties, reporting structure and contact information. 
-•	Microsoft DPO Information [17]
+•	Microsoft DPO Information [17] <!-- need link -->
 
 ##### Addresses GDPR Article(s)
 (37)(1)(a), (37)(1)(b), (37)(1)(c), (37)(2), (37)(3), (37)(4), (37)(5), (37)(6), (37)(7), (38)(1), (38)(2), (38)(3), (38)(4), (38)(5), (38)(6), (39)(1)(a), (39)(1)(b), (39)(1)(c), (39)(1)(d), (39)(1)(e), (39)(2)
@@ -537,9 +537,9 @@ The customer should be aware of which responsibilities they have for access cont
 
 ##### Supporting Microsoft Documentation:  
 The tools provided by Microsoft services to help you enforce access control.
-•	Azure Security Documentation [2] see [Protect personal data with identity and access controls
+•	Azure Security Documentation [2] see [Protect personal data with identity and access controls](https://docs.microsoft.com/en-us/azure/security/protect-personal-data-identity-access-controls)
 
-##### Addresses GDPR Article(s)](https://docs.microsoft.com/en-us/azure/security/protect-personal-data-identity-access-controls)
+##### Addresses GDPR Article(s)]
 (5)(1)(f)
 
 #### 	User registration and de-registration (6.6.2)
@@ -549,7 +549,7 @@ The customer should manage user registration and de-registration within the serv
 
 ##### Supporting Microsoft Documentation:  
 The tools provided by Microsoft services to help you enforce access control. 
-•	Azure Security Documentation [2] see Protect personal data with identity and access controls
+•	Azure Security Documentation [2] see [Protect personal data with identity and access controls](https://docs.microsoft.com/en-us/azure/security/protect-personal-data-identity-access-controls)
 
 ##### Addresses GDPR Article(s)
 (5)(1)(f)
@@ -561,19 +561,19 @@ The customer should manage user profiles, especially for authorized access to pe
 
 ##### Supporting Microsoft Documentation:  
 How Microsoft services support formal access control to personal data, including user IDs, roles, and the registration and de-registration of users. 
-•	Azure Security Documentation [2] see Protect personal data with identity and access controls
+•	Azure Security Documentation [2] see [Protect personal data with identity and access controls](https://docs.microsoft.com/en-us/azure/security/protect-personal-data-identity-access-controls)
 
 ##### Addresses GDPR Article(s)
 (5)(1)(f)
 
-#### 	Management of privileged access  (6.6.4)
+#### 	Management of privileged access (6.6.4)
 
 ##### Customer consideration
 The customer should manage user ID's to facilitate tracking of access (especially to personal data), within the service they utilize, using the tools available to them.
 
 ##### Supporting Microsoft Documentation:  
 How Microsoft services support formal access control to personal data, including user IDs, roles, and the registration and de-registration of users.
-•	Azure Security Documentation [2] see Protect personal data with identity and access controls
+•	Azure Security Documentation [2] see [Protect personal data with identity and access controls](https://docs.microsoft.com/en-us/azure/security/protect-personal-data-identity-access-controls)
 
 ##### Addresses GDPR Article(s)
 (5)(1)(f)
@@ -593,9 +593,10 @@ How Microsoft services support internal access control policies related to perso
 
 ##### Customer consideration
 The customer should determine which data may need to be encrypted, and whether the service they are utilizing offers this capability. The customer should utilize encryption as needed, using the tools available to them.
+
 Look here for...  
 How Microsoft services support encryption and pseudonymization to reduce the risk of processing personal data. 
-•	Azure Security Documentation [2] see Protect personal data at rest with encryption and Protect personal data in transit with encryption and Azure encryption overview 
+•	Azure Security Documentation [2] see [Protect personal data at rest with encryption](https://docs.microsoft.com/en-us/azure/security/protect-personal-data-at-rest) and [Protect personal data in transit](https://docs.microsoft.com/en-us/azure/security/protect-personal-data-in-transit-encryption) with encryption and https://docs.microsoft.com/en-us/azure/security/security-azure-encryption-overvieww 
 
 ##### Addresses GDPR Article(s)
 (32)(1)(a)
@@ -619,7 +620,7 @@ The customer should consider risks around hardcopy material that displays person
 
 ##### Supporting Microsoft Documentation:  
 What Microsoft implements to manage hardcopy.
-•	Microsoft maintains these controls internally, see Microsoft Azure (All-Up) ISO/IEC 27001:2013 ISMS Statement of Applicability [13] A.11.2.9
+•	Microsoft maintains these controls internally, see Microsoft Azure (All-Up) ISO/IEC 27001:2013 ISMS Statement of Applicability [13] A.11.2.9 <!-- need hyperlink -->
 
 ##### Addresses GDPR Article(s)
 (5)(1)(f)
@@ -631,7 +632,7 @@ The customer should consider the implications of using personal data in developm
 
 ##### Supporting Microsoft Documentation:  
 How Microsoft ensures that personal data is protected in development and test environments. 
-•	Microsoft Azure (All-Up) ISO/IEC 27001:2013 ISMS Statement of Applicability [13] see A.12.1.4
+•	Microsoft Azure (All-Up) ISO/IEC 27001:2013 ISMS Statement of Applicability [13] see A.12.1.4 <!-- need hyperlink -->
 •	Azure Standard Response to RFI on Security, Privacy, and Compliance see DSI-05
 
 ##### Addresses GDPR Article(s)
@@ -656,8 +657,9 @@ The customer should understand the capabilities for logging provided by the syst
 
 ##### Supporting Microsoft Documentation:  
 The data Microsoft service records for you, including user activities, exceptions, faults and information security events, and how you can access those logs for use as part of your record keeping. 
-•	Azure Security Documentation [2] see Document protection of personal data with Azure reporting tools
-Addresses GDPR Article(s)
+•	Azure Security Documentation [2] see [Document protection of personal data with Azure reporting tools](https://docs.microsoft.com/en-us/azure/security/protection-personal-data-azure-reporting-tools)
+
+##### Addresses GDPR Article(s)
 (5)(1)(f)
 
 #### 	Protection of log information (6.9.4)
@@ -667,7 +669,7 @@ The customer should consider requirements for protecting log information that ma
 
 ##### Supporting Microsoft Documentation:  
 How Microsoft protects logs that may contain personal data.
-•	Azure Security Documentation [2] see Document protection of personal data with Azure reporting tools
+•	Azure Security Documentation [2] see [Document protection of personal data with Azure reporting tools](https://docs.microsoft.com/en-us/azure/security/protection-personal-data-azure-reporting-tools)
 
 ##### Addresses GDPR Article(s)
 (5)(1)(f)
@@ -703,7 +705,7 @@ The customer should understand requirements for encryption of personal data, esp
 
 ##### Supporting Microsoft Documentation:  
 Description of the measures Microsoft services take to protect data in transit, including encryption of the data, and how Microsoft services protect data that may contain personal data as it passes through public data networks, including any encryption measures. 
-•	Azure Security Documentation [2] see Protect personal data in transit with encryption
+•	Azure Security Documentation [2] see [Protect personal data in transit with encryption](https://docs.microsoft.com/en-us/azure/security/protect-personal-data-in-transit-encryption)
 
 ##### Addresses GDPR Article(s)
 (5)(1)(f), (32)(1)(a)
@@ -715,7 +717,7 @@ The customer should understand how systems are designed and engineered to consid
 
 ##### Supporting Microsoft Documentation:  
 How Microsoft services include personal data protection principles as a mandatory part of our secure design/engineering principles. 
-•	SOC 2 Type 2 Audit Report [12] see CC7.1 pp90 and What is the Security Development Lifecycle ?
+•	SOC 2 Type 2 Audit Report [12] see CC7.1 pp90 and [What is the Security Development Lifecycle?](https://www.microsoft.com/en-us/sdl/)
 
 ##### Addresses GDPR Article(s)
 (25)(1)
@@ -775,7 +777,7 @@ The customer should understand the requirements for records related to personal 
 
 ##### Supporting Microsoft Documentation:  
 How Microsoft services store records relating to the processing of personal data. 
-•	Azure Security Documentation [2] see Document protection of personal data with Azure reporting tools
+•	Azure Security Documentation [2] see [Document protection of personal data with Azure reporting tools](https://docs.microsoft.com/en-us/azure/security/protection-personal-data-azure-reporting-tools)
 
 ##### Addresses GDPR Article(s)
 (5)(2), (24)(2)
@@ -800,8 +802,8 @@ The customer should understand requirements for testing and evaluating the secur
 ##### Supporting Microsoft Documentation:  
 How Microsoft services are tested security based on identified risks, including tests by third parties, and the types of technical tests and any available reports from the tests. 
 •	Microsoft Online Services Terms, Data Protection Terms, see Data Security, Auditing Compliance [1]
-•	For a listing of external certifications see Microsoft Trust Center Compliance offerings [14]
-•	For more information about penetration testing your applications see Azure Security Documentation [2] Pen Testing
+•	For a listing of external certifications see Microsoft Trust Center Compliance offerings [14] <!-- need links -->
+•	For more information about penetration testing your applications see Azure Security Documentation [2] [Pen Testing](https://docs.microsoft.com/en-us/azure/security/azure-security-pen-testing)
 
 ##### Addresses GDPR Article(s)
 (32)(1)(d), (32)(2)
