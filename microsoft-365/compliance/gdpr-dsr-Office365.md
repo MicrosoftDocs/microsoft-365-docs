@@ -55,7 +55,7 @@ To help you find information relevant to your use case, this guide is divided in
 
 [Part 4: Additional resources to assist you with DSRs](#_Part_4:_Additional) – Part 4 of this guide lists limited scenarios in which Microsoft is the data controller when certain Office 365 products and services are used.
 
->[Note]
+**Note:**
 In most cases, when users in your organization use Microsoft Office 365 products and services, you are the data controller and Microsoft is the processor. As a data controller, you are responsible for responding to the data subject directly. To assist you with this, Parts 1-3 of this guide detail the technical capabilities available to your organization to respond to a DSR request. In some limited scenarios, however, Microsoft will be the data controller when people use certain Office 365 products and services. In these cases, the information in Part 4 provides guidance on how data subjects can submit DSR requests to Microsoft.
 
 ### Office 365 national clouds
@@ -111,8 +111,10 @@ The following table lists the Office 365 applications that people use to create 
 
 <!-- end of table -->
 
-[Note]
-The Content Search eDiscovery tool is not available in Office 365 operated by 21Vianet (China). This means you won’t able to use this tool to search for Customer Data in the Office 365 applications shown in Table 1. Instead, you will need to ask the document owner to provide you with a copy of the data and to help you make any changes or deletions, or export the document if necessary.
+**Note:** 
+The Content Search eDiscovery tool is not available in [Office 365 operated by 21Vianet (China)](https://support.office.com/article/Learn-about-Office-365-operated-by-21Vianet-A8AB5061-3346-4DA0-BB7C-5260822B53AE). This means you won’t able to use this tool to search for and export Customer Data in the Office 365 applications shown in Table 1. However, you can use the In-Place eDiscovery tool in Exchange Online to search for content in user mailboxes. You can also use the eDiscovery Center in SharePoint Online to search for content in SharePoint sites and OneDrive accounts. Alternatively, you can ask a document owner to help you find and make changes or deletions to content or export it if necessary. For more information, see:
+- [Create an In-Place eDiscovery search](https://technet.microsoft.com/library/dd353189(v=exchg.150).aspx)
+- [Set up an eDiscovery Center in SharePoint Online](https://support.office.com/article/Set-up-an-eDiscovery-Center-in-SharePoint-Online-A18F8975-AA7F-43B4-A7D6-001D14744D8E)
 
 ### Using Content Search to find personal data
 
@@ -124,7 +126,7 @@ This guide assumes that you or the person searching for personal data that may b
 
 After you find the data, you can then perform the specific action to satisfy the request by the data subject.
 
-[Note] 
+**Note:** 
 In Office 365 Germany, the Security & Compliance Center is located at https://protection.office.de.
 
 #### Searching content locations
@@ -139,7 +141,7 @@ You can search the following types of content locations with the Content Search 
 
 -   OneDrive for Business accounts
 
-[Note]
+**Note:**
 This guide assumes that all data that might be relevant to a DSR investigation is stored in Office 365; in other words, stored in the Microsoft cloud. Data stored on a user’s local computer or on-premises on your organization’s file servers is outside the scope of a DSR investigation for data stored in Office 365. For guidance about responding to DSR requests for data in on-premises organizations, see [GDPR for Office on-premises Servers](https://docs.microsoft.com/Office365/Enterprise/gdpr-for-office-servers).
 
 #### Tips for searching content locations
@@ -618,7 +620,7 @@ As previously explained, if you hard-delete items in a mailbox on hold, items ar
 
 Your organization might determine that items being permanently deleted when the hold duration expires meets the requirements for a DSR deletion request. However, if you determine that mailbox items must be immediately purged from Office 365, you would have to remove the hold from the mailbox and then hard-deleted the items from the mailbox. For detailed instructions, see [Delete items in the Recoverable Items folder of cloud-based mailboxes on hold](https://support.office.com/article/Delete-items-in-the-Recoverable-Items-folder-of-cloud-based-mailboxes-on-hold-Admin-Help-a85e1c87-a48e-4715-bfa9-d5275cde67b0).
 
-[Note]
+**Note:**
 To hard-delete mailbox items to satisfy a DSR deletion request by following the procedure in the previous topic, you may have to soft-delete those items while the mailbox is still on hold so that they are moved to the Recoverable Items folder.
 
 ## Deleting a user
@@ -661,13 +663,13 @@ Here’s the high-level process for deleting a user from your Office 365 organiz
 
 3.  If you don't want to wait for 30-days for the user account to be hard-deleted, you can manually hard-delete it. To do this in the Azure portal, go to the Recently deleted users list and permanently delete the user. At this point the user is hard-deleted. For instructions, see [How to permanently delete a recently deleted user](https://docs.microsoft.com/azure/active-directory/active-directory-users-restore).
 
-Note that you can't hard-delete a user in the Office 365 admin portal.
+You can't hard-delete a user in the Office 365 admin portal.
 
-[Note]
-In [Office 365 Germany](https://support.office.com/en-us/article/learn-about-office-365-germany-8a5a4bbc-667a-4cac-8769-d8ac9015db4c?ui=en-US&rs=en-US&ad=US), when you delete a user as described in this section, the system-generated logs for that user will also be deleted. Also note that in [Office 365 Germany](https://support.office.com/en-us/article/learn-about-office-365-germany-8a5a4bbc-667a-4cac-8769-d8ac9015db4c?ui=en-US&rs=en-US&ad=US), the Office 365 admin center is located at https://portal.office.de and the Azure portal is located at https://portal.microsoftazure.de.
-
-When you delete a user in [ffice 365 operated by 21Vianet (China) and Office 365 US Government as described in this section, the user’s system-generated logs will not be deleted. See [Deleting system-generated logs](#deleting-system-generated-logs)  in Part 3 of this guide for additional instructions on how to delete the system-generated logs for users in these national clouds.
-
+**Note:**
+In Office 365 operated by 21Vianet (China), you can’t permanently delete a user as previously described. To permanently delete a user, follow these steps:
+1. Sign in to the O365 Admin Portal at https://portal.partner.microsoftonline.cn/AdminPortal/Home#/homepage.
+2. Go to the **Support blade**, and then click **New Service Request**.
+3. Select **Support Type** “GDPR” and then enter the required information.
 
 ### Removing Exchange Online data
 
@@ -1465,7 +1467,7 @@ Another way to address a DSR request to restrict the processing of data is to tu
 
 The most expedient way to turn off a service is to use Office 365 PowerShell and remove the corresponding user license from all users in the organization. This will in effect restrict anyone from access data in that service. For detailed instructions, see [Disable access to services with Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/disable-access-to-services-with-office-365-powershell) and follow the procedures to disable Office 365 services for users from a single licensing plan.
 
-[Note] 
+**Note:**
 For Yammer, in additional to removing the Yammer license from user accounts, you also must disable users’ ability to sign in to Yammer with Yammer credentials (by enforcing the use of their Office 365 credentials when signing in). For detailed instructions, see [Turn off Yammer access for Office 365 users](https://support.office.com/article/Turn-off-Yammer-access-for-Office-365-users-1f79bfad-f713-4143-aa5d-5584985ce53a).
 
 ### Temporarily removing data from SharePoint Online or OneDrive for Business sites
@@ -1636,46 +1638,52 @@ Admins can access system-generated logs associated with a particular user’s us
 
 After you create a new request, it will be listed on the **Data Log Export** page where you can track its status. After a request is complete, you can click a link to access the system-generated logs, which will be exported to your organization’s Azure storage location within 30 days of creating the request. The data will be saved in common, machine-readable file formats such as JSON or XML. If you don't have an Azure account and Azure storage location, you'll need to create an Azure account and/or Azure storage location for your organization so that the Data Log Export tool can export the system-generated logs. For more information, see [Introduction to Azure Storage](https://docs.microsoft.com/azure/storage/common/storage-introduction).
 
-[Note]
+**Note:**
 When you create an Export Data Request, system-generated data for a few applications will not be exported through the Data Log Export tool. To export data for these applications, see Exporting additional system-generated logs.
 
-The following table summarizes accessing and exporting system-generated logs using the Data Log Export tool:
+The following summarizes accessing and exporting system-generated logs using the Data Log Export tool:
 
-***Table 5: Accessing and exporting system-generated logs***
-
-  **How long does the Microsoft Data Log Export tool take to complete a request?**                  This can depend on several factors. In most cases it should complete in one or two days, but it can take up to 30 days.
+  **How long does the Microsoft Data Log Export tool take to complete a request?**
+ This can depend on several factors. In most cases it should complete in one or two days, but it can take up to 30 days.
   
-  **What format will the output be in?**                                                            The output will be structured machine-readable files such as XML, CSV, or JSON.
+  **What format will the output be in?**
+ The output will be structured machine-readable files such as XML, CSV, or JSON.
 
-  **Who has access to Data Log Export tool to submit access requests for system-generated logs?**   Office 365 global administrators will have access to the GDPR Log Manager utility.
+**Who has access to Data Log Export tool to submit access requests for system-generated logs?**
+   Office 365 global administrators will have access to the GDPR Log Manager utility.
 
-  **What data does the Data Log Export tool return?**                                               The Data Log Export tool returns system generated logs that Microsoft stores. Exported data will span across various Microsoft services including Office 365, Azure and Dynamics.
+**What data does the Data Log Export tool return?**
+ The Data Log Export tool returns system generated logs that Microsoft stores. Exported data will span across various Microsoft services including Office 365, Azure and Dynamics.
 
-  **How is data returned to the user?**                                                             Data will be exported to your organization's Azure storage location; it will be up to admins in your organization to determine how they will show/return this data to users.
+**How is data returned to the user?** 
+Data will be exported to your organization's Azure storage location; it will be up to admins in your organization to determine how they will show/return this data to users.
 
-  **What will data in system-generated logs look like?**                                            Example of a system-generated log record in JSON format:
-                                                                                                    
-                                                                                                    [{
-                                                                                                    
-                                                                                                    "DateTime": "2017-04-28T12:09:29-07:00",
-                                                                                                    
-                                                                                                    "AppName": "SharePoint",
-                                                                                                    
-                                                                                                    "Action": "OpenFile",
-                                                                                                    
-                                                                                                    "IP": "154.192.13.131",
-                                                                                                    
-                                                                                                    "DevicePlatform": "Windows 1.0.1607"
-                                                                                                    
-                                                                                                    }]
-  
+**What will data in system-generated logs look like?**
+ Example of a system-generated log record in JSON format:
+                                           
 
-[Note]
+```
+[{
+                                                                                               
+            "DateTime": "2017-04-28T12:09:29-07:00",
+                                                                                                    
+             "AppName": "SharePoint",
+                                                                                                    
+             "Action": "OpenFile",
+                                                                                                    
+             "IP": "154.192.13.131",
+                                                                                                    
+             "DevicePlatform": "Windows 1.0.1607"
+                                                                                                    
+}]
+```
+
+**Note:**
 Some features will not allow for the export or deletion of system-generated logs with personal information to maintain the integrity of such information for security and audit reasons.
 
 Product and service usage data for some of Microsoft’s most often-used services, such as Exchange Online, SharePoint Online, Skype for Business, Yammer and Office 365 Groups can also be retrieved by searching the Office 365 audit log in the Security & Compliance Center. For more information, see [Use the Office 365 audit log search tool in DSR investigations](#use-the-office-365-audit-log-search-tool-in-dsr-investigations) in Appendix A. Using the audit log may be of interest to you because it's possible to assign permissions to other people in your organization (such as your compliance officer) to search the audit log to access this data.
 
-[Note]
+**Note:**
 A global IT admin will need to do the following to export system-generated log data in these national clouds:
 [- Office 365 Germany: Go to the Microsoft Service Trust Portal for Germany](https://aka.ms/MicrosoftSTPGermany) and complete the steps outlined above.
 - Office 365 US Government: Go to the Office 365 admin portal at this [URL](http://portal.office365.us) and submit a request to Microsoft Support.
@@ -1686,7 +1694,7 @@ To delete system-generated logs retrieved through an access request, you must re
 
 Permanently deleting a user account will remove the user’s data from system-generated logs for nearly all Office 365 services within 30 days. One exception to this is that the permanent deletion of the user account takes longer than 30 days in Exchange Online. Given the critical nature of Exchange Online content and prevent accidental data loss, this system has been engineered to intentionally place data in a holding state for up to 60 days after a user account has been permanently deleted. To permanently delete a user’s Exchange Online data in a 30-day timeframe, permanently delete the user account in Azure Active Directory and then [contact support](https://support.microsoft.com/) and request that the user's Exchange Online data be manually removed outside the scheduled delete process. For more information, see [Removing Exchange Online data](#removing-exchange-online-data), which was previously explained in this guide.
 
-[Note]f
+**Note:**
 A global IT admin will need to do the following to delete system-generated log data in these national clouds. 
 - Office 365 Germany: When the user account is permanently deleted, the system-generated logs will also be deleted. 
 - Office 365 US Government: Go to the Office 365 admin portal at this [URL](http://portal.office365.us) and submit a request to Microsoft Support.
@@ -1762,7 +1770,7 @@ Here’s a high-level overview of how to implement Compliance Boundaries (togeth
 
 2.  Determine which user object attribute in Azure Active Directory will be used to define the compliance boundary. For example, you might choose the Country, CountryCode, or Department attribute, so that members of the admin role group that you create in the next step can only search the content locations of the users that have a specific value for that attribute. This is how you limit who can search for content in a specific agency.
 
-[Note]
+**Note:**
 Currently, you must perform an additional step for OneDrive for Business and file a Microsoft Support request to have the attribute synchronized to OneDrive for Business accounts.
 
 4.  Create an admin role group in the Office 365 Security & Compliance Center for each compliance boundary. We recommend that you create these role groups by copying the built-in eDiscovery Manager role group and then removing any roles as necessary.
