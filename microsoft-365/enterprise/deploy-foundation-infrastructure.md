@@ -3,7 +3,7 @@ title: "Microsoft 365 Enterprise foundation infrastructure"
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 04/25/2018
+ms.date: 05/23/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -36,6 +36,10 @@ You'll use the following phases to plan for and deploy the foundation infrastruc
 
 
 Before you can exit each phase, you must examine its exit criteria, which is a set of required conditions that you must meet and optional conditions to consider. Exit criteria for each phase ensures that your on-premises and cloud infrastructure and resulting end-to-end configuration meet the requirements for a Microsoft 365 Enterprise deployment.
+
+Watch this short video on how the foundation infrastructure content works.
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE23VRG]
 
 The following figure shows the foundation infrastructure in the overall Microsoft 365 Enterprise deployment content and your path through it.
 

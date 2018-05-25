@@ -602,6 +602,169 @@ description: Learn about the product documentation and resources available for M
                         </ul>
                     </li>
                     <li>
+                        <a data-default="true" href="#compliance">Compliance</a>
+                        <ul id="compliance" class="cardsG">
+                            <li class="fullSpan">
+                                <div class="container intro">
+                                    <p>To help you comply with national, regional, and industry-specific requirements governing the collection and use of individuals’ data, Microsoft offers the most comprehensive set of compliance offerings of any cloud service provider. </p>
+				                    <p>See these resources for compliance-related recommendations and guidance, including help for the General Data Protection Regulation (GDPR).</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="https://docs.microsoft.com/en-us/microsoft-365/compliance/compliance-solutions-overview?toc=/microsoft-365/enterprise/toc.json" target="_blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="media/hub-itadmin-security/admin-security-identity-access-configs-1.svg" alt="Compliance solutions" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Compliance solutions</h3>
+                                                    <p>Technical resources for working toward compliance of regulations that apply to many organizations, starting with GDPR.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://support.office.com/article/dcb83b2c-ac66-4ced-925d-50eb9698a0b2" target="_blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="media/hub-itadmin-security/admin-security-security-compliance-o365.svg" alt="Security and compliance in Office 365" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Security and compliance in Office 365</h3>
+                                                    <p>Learn how to protect your data, comply with legal or regulatory standards, and monitor your security stature with Office 365.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://docs.microsoft.com/en-us/windows/privacy/" target="_blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="media/hub-itadmin-devices/admin-devices-win10-deploy-1.svg" alt="Windows privacy" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Windows privacy</h3>
+                                                    <p>Learn about privacy in Windows and get ready for GDPR.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://servicetrust.microsoft.com" target="_blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="media/hub-itadmin-security/admin-security-windows10-threats-5.svg" alt="Microsoft Service Trust Portal" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Service Trust Portal</h3>
+                                                    <p>Access to in-depth compliance and data protection documents, including FedRAMP, ISO, and SOC audit reports, pen test reports, security assessment reports, and more.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://aka.ms/o365gdpr" target="_blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="media/hub-itadmin-collaboration/admin-collaboration-proplus-deployment-3.svg" alt="Office 365 information protection for GDPR" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Office 365 information protection for GDPR</h3>
+                                                    <p>Prescriptive recommendations for discovering, classifying, protecting, and monitoring personal data.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://docs.microsoft.com/en-us/office365/enterprise/gdpr-for-office-servers" target="_blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="media/hub-itadmin-collaboration/admin-collaboration-best-practices-4.svg" alt="GDPR for on-premises Office servers" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>GDPR for on-premises Office servers</h3>
+                                                    <p>Recommended approaches for SharePoint Server, Exchange Server, Skype for Business Server, Project Server, Office Web Apps Server and Office Online Server, and on-premises file shares.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                             <li>
+                                <a href="https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted" target="_blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="media/hub-itadmin-deploy/m365-enterprise-deployment-process.svg" alt="GDPR resources for Microsoft services" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>GDPR resources for Microsoft services</h3>
+                                                    <p>Information about Microsoft services to support your GDPR accountability, including Azure, Dynamics 365, Office 365, Windows, and Support and Professional Services.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://servicetrust.microsoft.com/ComplianceManager" target="_blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="media/hub-itadmin-getstarted/admin-get-started-why365-1.svg" alt="Compliance Manager" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Compliance Manager</h3>
+                                                    <p>Help you perform on-going risk assessment against regulatory requirements like the GDPR, NIST, and ISO across Microsoft Cloud services.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                     <li>
                         <a href="#it-devices">Devices</a>
                         <ul id="it-devices" class="cardsG">
                             <li class="fullSpan">
