@@ -805,8 +805,6 @@ How Microsoft services test and assesses the effectiveness of technical and orga
 ##### Addresses GDPR Article(s)
 (32)(1)(d), (32)(2)
 
- <!-- testing to see if this will render in browser -->
-
 #### Technical compliance review (6.15.3)
 
 ##### Customer consideration
