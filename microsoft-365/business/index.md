@@ -1644,6 +1644,25 @@ ms.date: 11/01/2017
                                     </div>
                                 </a>
                             </li>
+                            <li>
+                                <a href="https://support.office.com/article/9b4de218-f1ad-41fa-a61b-e9e8ac0cf993" target="_blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="images/bcs-partner-install-2.svg" alt="Enable domain-joined devices to be managed" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Enable domain-joined Windows 10 devices to be managed by Microsoft 365 Business</h3>
+                                                    <p>You can set up Microsoft 365 Business to protect Windows 10 devices that are joined to your Active Directory.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
                         </ul>
                     </li>
                     <li>
