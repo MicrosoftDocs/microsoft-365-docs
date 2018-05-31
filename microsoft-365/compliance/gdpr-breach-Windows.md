@@ -18,7 +18,7 @@ Microsoft Windows takes its obligations under the General Data Protection Regula
 
 ## Windows privacy protection measures
 
-Microsoft is committed to protecting Windows and takes considerable measures to prevent personal data breaches from occurring as a means of maintaining customer trust. All Windows products receive privacy reviews before they are released to market to ensure that personal data is protected and privacy requirements of the GDPR are met. Microsoft conducts privacy reviews for all Windows product updates that relate to personal data.
+Microsoft is committed to protecting Windows and takes considerable measures to prevent personal data breaches from occurring as a means of maintaining customer trust. All Windows products receive privacy reviews before they are released to market to make certain that personal data is protected and privacy requirements of the GDPR are met. Microsoft conducts privacy reviews for all Windows product updates that relate to personal data.
 
 ### Data access controls
 
@@ -57,7 +57,7 @@ When Microsoft declares a personal data breach for a product that processes your
 
 ### Call to action for customers
 
-To receive personal data breach notification, an enterprise must provide Microsoft with the email address of a designated privacy contact. A privacy contact can be one or more persons—either internal or external to your organization—who can contact your internal stakeholders (for example, your Data Protection Officer (DPO) if you have one) to ensure that DPAs are notified, as required under the GDPR. You can also specify a distribution list as your privacy contact.
+To receive personal data breach notification, an enterprise must provide Microsoft with the email address of a designated privacy contact. A privacy contact can be one or more persons—either internal or external to your organization—who can contact your internal stakeholders (for example, your Data Protection Officer (DPO) if you have one) to make certain that DPAs are notified, as required under the GDPR. You can also specify a distribution list as your privacy contact.
 
 If you do not specify a privacy contact, Microsoft will default to notifying your organization’s Global Tenant Administrator. 
 
