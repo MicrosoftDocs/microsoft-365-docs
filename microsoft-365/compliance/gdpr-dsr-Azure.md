@@ -119,11 +119,14 @@ This is particularly helpful if you want to find or change personal data for a s
 
 5. If you need to add or change user profile information, you can do so, and then, in the command bar, select **Save.**
 
+<!-- steps 6 and 7 not in original 
 6. On the blade for the selected user, select **Work Info** to view user work information that may contain personal data.
 
      ![Select work info](media/azure-dsr_image11.png)
 
 7. If you need to add or change user work information, you can do so, and then, in the command bar, select **Save.**
+
+end of text to isolate -->
 
 <span id="_Toc511384808" class="anchor"><span id="_Toc511163879" class="anchor"><span id="_Toc511136236" class="anchor"><span id="_Toc511125169" class="anchor"><span id="_Toc511120756" class="anchor"><span id="_Toc511122663" class="anchor"></span></span></span></span></span></span>
 
@@ -175,7 +178,7 @@ You can correct, update, or delete identifiable information about end users, suc
 
 3.  On the **Users and groups** blade, select **Users**.
          
-    ![Select users](media/azure-dsr_image4.png)
+    ![Select users](media/azure-dsr_image9.png)
 
 4.  On the **Users and groups - Users** blade, select a user from the list, and then, on the blade for the selected user, select **Profile** to view the user profile information that needs to be corrected or updated.
 
@@ -185,7 +188,7 @@ You can correct, update, or delete identifiable information about end users, suc
 
 6.  On the blade for the selected user, select **Work Info** to view user work information that needs to be corrected or updated.
 
-    ![Select work info](media/azure-dsr_image11.png)
+    ![Select work info](media/azure-dsr_image4.png)
 
 7.  Correct or update the user work information, and then, in the command bar, select **Save.**
 
