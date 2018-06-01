@@ -20,7 +20,7 @@ ms.collection: GDPR
 
 This accountability readiness checklist provides a convenient way to access information you may need to support GDPR when using Microsoft Dynamics 365. The checklist is organized using the titles and reference number (in parenthesis for each checklist topic) of a set of privacy and security controls for personal data processors drawn from *ISO/IEC CD 27552 Information technology -- Security techniques -- Enhancement to ISO/IEC 27001 for privacy management – Requirements. *
 
-You can manage the items in this checklist with the Compliance Manager [[15]](gdpr-arc-Dynamics365.md#15) by referencing the Control ID and Control Title under *Customer Managed Controls* in the GDPR tile.
+You can manage the items in this checklist with the Compliance Manager <a href=”gdpr-arc-Dynamics365.md#15>[15]</a><!-- this isn't working --> by referencing the Control ID and Control Title under *Customer Managed Controls* in the GDPR tile.
 
 In addition, items in this checklist under *5. Data Protection & Security* provide references to controls listed under Microsoft Managed Control in the GDPR tile in Compliance Manager. Reviewing the Microsoft Implementation Details for these controls provides additional explanation of the Microsoft approach to fulfilling the customer considerations in the checklist item.
 
@@ -1194,7 +1194,7 @@ How Microsoft services are tested security based on identified risks, including 
 |12|Dynamics 365 Breach Notification Under the GDPR |<https://servicetrust.microsoft.com/ViewPage/GDPRBreach>|
 |13|Microsoft Trust Center Compliance offerings |<https://www.microsoft.com/en-us/trustcenter/compliance/complianceofferings>|
 |14|Dynamics 365 Penetration Testing and Security Assessment Report|<https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=25aa47b1-c510-43f2-84de-6b78ed3b1258&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Pen_Test_and_Security_Assessments>|
-|15<a name="15"> </a>|Compliance Manager|<https://servicetrust.microsoft.com/ComplianceManager>|
+|15<a name="[15]"> </a>|Compliance Manager|<https://servicetrust.microsoft.com/ComplianceManager>|
 |16|Microsoft DPO Information |<https://docs.microsoft.com/en-us/microsoft-365/compliance/gdpr-data-protection-officer>|
 |||
 
