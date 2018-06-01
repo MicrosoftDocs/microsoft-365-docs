@@ -27,7 +27,7 @@ The guide discusses how to use Office 365 products, services and administrative 
 
 3.  ***Rectify***—Make changes or implement other requested actions on the personal data, where applicable.
 
-4.  ***Restrict**—*Restrict the processing of personal data, either by removing licenses for various Office 365 services, or by turning off the desired services or features where possible. You can also remove data from the Microsoft cloud and retain it on-premises or at another location.
+4.  ***Restrict***—Restrict the processing of personal data, either by removing licenses for various Office 365 services, or by turning off the desired services or features where possible. You can also remove data from the Microsoft cloud and retain it on-premises or at another location.
 
 5.  ***Delete***—Permanently remove personal data that resides in the Microsoft cloud.
 
