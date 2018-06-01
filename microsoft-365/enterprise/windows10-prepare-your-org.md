@@ -2,7 +2,7 @@
 title: Prepare your organization for Windows 10 Enterprise
 description: Provides a high-level guidance on the steps you need to deploy Windows 10 Enterprise on PCs as part of Microsoft 365 Enterprise.
 keywords: Microsoft 365, Microsoft 365 Enterprise, Microsoft 365 documentation, Windows 10 Enterprise, deployment
-author: JoeDavies_MSFT
+author: JoeDavies-MSFT
 localization_priority: Normal
 audience: microsoft-business
 ms.prod: microsoft-365-enterprise
