@@ -1,48 +1,27 @@
 ---
-title: Configure and deploy Windows 10 Enterprise with Windows AutoPilot | Microsoft docs
-description: Provides guidance on configuring and deploying Windows 10 Enterprise with Windows AutoPilot.
-keywords: Microsoft 365, Microsoft 365 Enterprise, Microsoft 365 documentation, Windows 10 Enterprise, deployment, Windows AutoPilot
+title: Deploy Windows 10 Enterprise for new devices with Windows Autopilot
+description: Provides guidance on configuring and deploying Windows 10 Enterprise with Windows Autopilot.
+keywords: Microsoft 365, Microsoft 365 Enterprise, Microsoft 365 documentation, Windows 10 Enterprise, deployment, Windows Autopilot
 author: CelesteDG
 localization_priority: Normal
 audience: microsoft-business
 ms.prod: microsoft-365-enterprise
 ms.topic: article
-ms.date: 01/29/2018
+ms.date: 06/01/2018
 ms.author: celested
 ---
 
-# Configure and deploy Windows 10 Enterprise with Windows AutoPilot
-
+# Step 3: Deploy Windows 10 Enterprise for new devices with Windows Autopilot
 
 *This article applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
 
 ![](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
 
-If you have new Windows 10 PCs, you can use Windows AutoPilot to customize the out-of-box-experience (OOBE) for your organization, and deploy a new system with apps and settings already configured. There are no images to deploy, no drivers to inject, and no infrastructure to manage. Users can go through the deployment process independently, without the need consult their IT administrator.
+If you have new Windows 10 PCs, you can use Windows Autopilot to customize the out-of-box-experience (OOBE) for your organization and deploy a new system with apps and settings already configured. There are no images to deploy, no drivers to inject, and no infrastructure to manage. Users can go through the deployment process independently, without the need consult their IT administrator.
 
-You can set up and pre-configure new Windows 10 devices and get them ready for productive use using Windows AutoPilot. To learn more about Windows AutoPilot, including benefits and Windows AutoPilot scenarios, see [Overview of Windows AutoPilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot). When ready, follow this guide to start setting up new devices.
+You can set up and pre-configure new Windows 10 devices and get them ready for productive use using Windows Autopilot. To learn more about Windows Autopilot, including benefits and Windows Autopilot scenarios, see [Overview of Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-Autopilot/windows-10-Autopilot). When ready, follow these parts to start setting up new devices.
 
-## Before you start
-Before upgrading your devices to Windows 10, make sure that:
-
-* Your domains are added and verified.
-
-    With Microsoft 365, you get a default domain name that ends in onmicrosoft.com (for example, contoso.onmicrosoft.com). Most organizations prefer to use one or more of the domains they own so their email addresses end in their own domain name (like username@contoso.com). To use your own domain, you need to add it to Microsoft 365 and verify that you own it. We recommend that you add and verify your domains now so they're ready to go whenever you set up Microsoft 365 services, like email and Skype for Business.
-
-* You don't need to add users at this time.
-
-    To use Microsoft 365 services or install Microsoft 365 products, users need accounts in Microsoft 365 and they need product licenses. How you add users to Microsoft 365 depends on the number of users and whether you currently have Active Directory on-premises. If you don’t have Active Directory (or you have Active Directory but don’t want to sync it to Microsoft 365), you can add users directly to Microsoft 365 and assign licenses, either individually or in bulk. 
-
-    If you have Active Directory on-premises, you can sync it with Microsoft 365 to create user accounts in Azure AD, the cloud directory used by Microsoft 365. With this method, you can create accounts for users and for security groups you use to manage permissions to resources (like SharePoint Online site collections or documents). Syncing your Active Directory with Microsoft 365 won’t assign licenses to the users, so we’ll give you steps for assigning licenses.
-
-* You don't need to license users at this time.
-
-    Before users can use Microsoft 365 services or install software from the Microsoft 365 portal, they need product licenses. As a global or user management admin, you can directly assign products licenses in Microsoft 365 either individually or in bulk. You can also use group-based licensing to automatically assign licenses when users are added to a particular group.  Select the licensing option you would like to use below.
-
-* You are installing Office separately
-
-
-## Step 1: Set Windows diagnotics data level
+## Part 1: Set Windows diagnostics data level
 Microsoft uses diagnostic data to help keep Windows devices secure by identifying malware trends and other threats and to help us improve the quality of Windows and Microsoft services. You must ensure that the diagnostics service is enabled at a minimum level of Basic on all endpoints in your organization. *By default, this service is enabled and set to the Enhanced level.* However, it’s good practice to check and ensure that they are receiving sensor data. Setting levels through policies overrides device-level settings. 
 
 **Windows 10 operating system diagnostic data levels**
@@ -60,41 +39,41 @@ Use the appropriate value in the table below when you configure the management p
 
 You can enable diagnostics data through any of these methods:
 * **Microsoft Intune** - If you plan to use Intune to manage your devices, you can create a configuration policy to enable diagnostic data by configuring the <a href="https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-system#system-allowtelemetry" target="blank">SystemAllowTelemetry</a> system policy. For more info on setting up configuration policies, see [Manage settings and features on your devices with Microsoft Intune policies](https://aka.ms/intuneconfigpolicies).
-* **Registry Editor** - You can use the Registry Editor to manually enable diagnostic data on each device in your organization, or write a script to edit the registry. If a management policy already exists, such as Group Policy or MDM, it will override this registry setting.
+* **Registry Editor** - You can use the Registry Editor to manually enable diagnostic data on each device in your organization. Alternately, you can write a script to edit the registry. If a management policy already exists, such as Group Policy or MDM, it will override this registry setting.
 * **Command prompt** - You can set Windows 10 diagnostics data and service to automatically start with the command prompt. This method is best if you are testing the service on only a few devices. Enabling the service to start automatically with this command will not configure the diagnostic data level. If you have not configured a diagnostic data level using management tools, the service will operate with the default Enhanced level.
 
 See [Configure Windows diagnostic data in your organization](https://docs.microsoft.com/en-us/windows/configuration/configure-windows-diagnostic-data-in-your-organization) to learn more about Windows diagnostic data and how you can enable it based on the method that you choose.
 
-## Step 2: Start Windows AutoPilot deployment
-See [Overview of Windows AutoPilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot) to:
+## Part 2: Start Windows Autopilot deployment
+See [Overview of Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-Autopilot/windows-10-Autopilot) to:
 
-1. Learn about and complete the prerequisites for Windows AutoPilot deployment. The prerequisites include:
+1. Learn about and complete the prerequisites for Windows Autopilot deployment. The prerequisites include:
     - **Device registration and OOBE customization**
 
         To register devices, you need to acquire their hardware ID and register it. We are actively working with various hardware vendors to enable them to provide the required information to you, or upload it on your behalf. You also have the option to capture this information by yourself using a PowerShell script that generates a .csv file with the device's hardware ID.
 
         Once devices are registered, there are OOBE customization options that you can configure including skipping privacy settings and EULA.
 
-    - **Company company branding for OOBE**
+    - **Company branding for OOBE**
 
-        This allows you to add company branding to appear during device OOBE.
+        This allows you to add branding to appear during device OOBE.
 
     - **MDM auto-enrollment in Microsoft Intune**
         
         Automatic enrollment lets users enroll their Windows 10 devices in Intune for device management when they connect their devices to Azure AD. To enroll, users add their work account to their personally-owned devices or join corporate-owned devices to Azure AD. In the background, the device is also enrolled for management with Intune.
 
-    - **Network connectivity to cloud services used by Windows AutoPilot**
+    - **Network connectivity to cloud services used by Windows Autopilot**
 
-        The Windows AutoPilot Deployment Program uses a number of cloud services to get your devices to a productive state and these services must be accessible from devices registered as Windows AutoPilot devices. 
+        The Windows Autopilot Deployment Program uses a number of cloud services to get your devices to a productive state and these services must be accessible from devices registered as Windows Autopilot devices. 
 
     - **Devices must be pre-installed with Windows 10, version 1703 or later**
 
-2. Learn about and select the Windows AutoPilot Deployment Program for your organization. You can select from these deployment programs:
+2. Learn about and select the Windows Autopilot Deployment Program for your organization. You can select from these deployment programs:
     - **Microsoft Store for Business**
     - **Microsoft Intune**
     - **Partner Center**
 
-## Step 3: Set up a Windows 10 device for Microsoft 365
+## Part 3: Set up a Windows 10 device for Microsoft 365
 Before you can set up Windows devices for Microsoft 365 users, make sure all the Windows devices are running Windows 10, version 1703 (Creators Update) or later.
 
 After all Windows devices in your organization have either been upgraded to Windows 10 Creators Update or are already running Windows 10 Creators Update, you can join these devices to your organization’s Azure Active Directory.
@@ -134,29 +113,16 @@ Follow these steps to verify the device’s sync status with Azure AD, and then 
 5. To start using the Microsoft 365 account, go to the Windows **Start** button, right-click your current account picture and then select **Switch** account.
 6. Sign in by using your organization email and password.
 
-## Step 4: Deploy additional services and features
-Once you've added and verified your domain in Microsoft 365 and set up your users and Windows 10 devices, you can deploy additional services and features.
-
-### Windows Analytics
-Windows uses diagnostics data to provide rich, actionable information to help you gain deep insights into operational efficiency and the health of Windows 10 devices in your environment.
-* Upgrade Readiness - Upgrade Readiness will help you move to Windows 10 and stay current with new Windows 10 Feature Updates. 
-* Update Compliance - Update Compliance is targeted to the IT admin who wants to gain a holistic view of all their Windows 10 devices, without any additional infrastructure requirements.
-* Device Health - You can use Device Health to proactively detect and remediate end-user impacting issues.
-
-To learn more about Windows Analytics and get more info about the architecture, requirements, and how to get started, see [Enable Windows Analytics](windows10-enable-windows-analytics.md).
-
-### Windows security
-Windows 10 provides features to help protect against threats, help you secure your devices, and help with access control. With Windows 10, you get critical security features that protect your device right from the start. Microsoft 365 E3 adds security features such as Windows Hello for Business, Windows Defender Application Control, and Windows Information Protection. With Microsoft 365 E5, you get all the protection from Microsoft 365 E3 security plus cloud-based security features and Windows Defender Advanced Threat Protection. 
-
-To learn more about the security features that you get with Windows 10 Enterprise and get guidance on how you can deploy, manage, configure, and troubleshoot three key security features, see [Enable Windows 10 Enterprise security features](windows10-enable-security-features.md).
-
-## Troubleshooting
 If you experience issues when using Windows 10 in an enterprise environment, you can consult [top Microsoft Support solutions for the most common issues](https://docs.microsoft.com/en-us/windows/client-management/windows-10-support-solutions). These resources include KB articles, updates, and library articles.
 
-## Learn more
-[Microsoft 365 Enterprise product page](https://www.microsoft.com/microsoft-365/enterprise)</br>
-[Windows 10](https://docs.microsoft.com/windows/windows-10)</br>
-[Deploy and update Windows 10](https://docs.microsoft.com/windows/deployment/)
+As an interim checkpoint, you can see the [exit criteria](windows10-exit-criteria.md#crit-windows10-step3) corresponding to this step.
+
+## Next step
+
+|||
+|:-------|:-----|
+|![](./media/stepnumbers/Step4.png)| [Use Windows Analytics to monitor device health](windows10-enable-windows-analytics.md) |
+
 
 
 <!--
@@ -183,10 +149,10 @@ This guide is meant only to provide Microsoft's best recommendations around thes
 ### Step 1: Infrastructure
 Consider your organization's collection of hardware, software, policies, networks, and other related technologies as part of the deployment process. 
 
-For Windows AutoPilot, these are the infrastructure you need to take into account:
+For Windows Autopilot, these are the infrastructure you need to take into account:
 
 #### Group Policy
-With Windows AutoPilot, a device automatically joins their organization’s Azure AD group once a user signs into their organization from the device. The Group Policy policies (along with other customized settings and apps) are automatically pushed to the new device. It’s critical to understand that these policies must be properly configured within an organization before setting up Windows AutoPilot profiles.
+With Windows Autopilot, a device automatically joins their organization’s Azure AD group once a user signs into their organization from the device. The Group Policy policies (along with other customized settings and apps) are automatically pushed to the new device. It’s critical to understand that these policies must be properly configured within an organization before setting up Windows Autopilot profiles.
 
 Windows 10 introduces many new features and removes and changes many others in Windows 7 and 8.1, including new Group Policy settings which need to be tested and implemented as part of a Windows 10 migration. The following resources provide examples on assessing current group policies for Windows, including Group Policy Objects in the Active Directory structure:
 
@@ -276,7 +242,7 @@ For more info, see [Phase 4: Office 365 ProPlus infrastructure for Microsoft 365
 ## Phase 2: Testing phase
 Once you've completed the scenarios and requirements in [Step 1: Consideration phase](#step-1-consideration-phase), you can move to this stage. 
 
-To use Windows AutoPilot, make sure you are ready to perform these tasks:
+To use Windows Autopilot, make sure you are ready to perform these tasks:
 * [Networking](#step-1-networking)
 * [Identity](#step-2-identity)
 * [Client readiness](#step-3-client-readiness)
@@ -313,7 +279,7 @@ When setting up your identity infrastructure as part of Windows deployment, make
 ### Step 3: Client readiness
 
 #### System requirements
-To prepare for Windows 10 deployment through Windows AutoPilot, make sure you meet these system requirements:
+To prepare for Windows 10 deployment through Windows Autopilot, make sure you meet these system requirements:
 * Windows 10, version 1703 or later
 * Intune licenses other mobile device management (MDM) services to manage devices
 * Storage and bandwith requires minimal customization
@@ -357,9 +323,9 @@ When ready, complete these:
 
     To register devices, you need to acquire their hardware IDs. Currently, we are working with hardware vendors to enable them to provide hardware IDs or upload them on their customer’s behalf.
 
-    Currently, Surface supports AutoPilot. AutoPilot support from other hardware manufacturers are upcoming. 
+    Currently, Surface supports Autopilot. Autopilot support from other hardware manufacturers are upcoming. 
 
-    To capture the hardware ID information manually, use the Get-WindowsAutoPilotInfo PowerShell script. The script generates a CSV file with the device's hardware ID. Install the PowerShellGet module, download the PowerShell script, run it, save the CSV file, and then upload it to the Microsoft Store for Business.
+    To capture the hardware ID information manually, use the Get-WindowsAutopilotInfo PowerShell script. The script generates a CSV file with the device's hardware ID. Install the PowerShellGet module, download the PowerShell script, run it, save the CSV file, and then upload it to the Microsoft Store for Business.
 
     For more info, see:
     * [Overview of registering devices to your organization](https://go.microsoft.com/fwlink/?linkid=860991)
@@ -378,17 +344,17 @@ When ready, complete these:
 
     The app suite should show up in the app panel. If you see an error message, see [Assign Office 365 ProPlus apps to devices that run Windows 10](https://go.microsoft.com/fwlink/?linkid=857153) to help troubleshoot the issue.
 
-4. Deploy Windows AutoPilot.
+4. Deploy Windows Autopilot.
 
-    You can manage devices for your organization and apply an AutoPilot deployment profile to your devices. When people in your organization run the OOBE for the device, the profile configures Windows based on the AutoPilot deployment profile you applied to the device. As part of the overall process, you need to perform these tasks:
+    You can manage devices for your organization and apply an Autopilot deployment profile to your devices. When people in your organization run the OOBE for the device, the profile configures Windows based on the Autopilot deployment profile you applied to the device. As part of the overall process, you need to perform these tasks:
     1. Add devices
     2. Group devices (optional)
-    3. Create AutoPilot deployment profile
-    4. Apply AutoPilot deployment profile
+    3. Create Autopilot deployment profile
+    4. Apply Autopilot deployment profile
 
-    For step-by-step guidance see [Manage Windows device deployment with Windows AutoPilot](https://go.microsoft.com/fwlink/?linkid=852442).
+    For step-by-step guidance see [Manage Windows device deployment with Windows Autopilot](https://go.microsoft.com/fwlink/?linkid=852442).
 
-    For end users, they can set up a device that's been configured through AutoPilot by:
+    For end users, they can set up a device that's been configured through Autopilot by:
     1. Turning on the new Windows 10 device.
     2. Selecting the language.
     3. Connecting to a network.
@@ -396,13 +362,13 @@ When ready, complete these:
 
     Azure AD Join and MDM then automatically enroll the device. MDM also applies organization-configured policies, settings, and apps.
 
-5. Manage Windows device deployment with Windows AutoPilot deployment.
+5. Manage Windows device deployment with Windows Autopilot deployment.
 
     You can manage new devices in the [Microsoft Store for Business](https://go.microsoft.com/fwlink/?linkid=691471). New devices must meet these requirements:
     * Have Windows 10, version 1703 or later installed
     * Have not been through Windows OOBE
 
-    For more info, see [Manage AutoPilot deployment profiles using Microsoft Store for Business](https://go.microsoft.com/fwlink/?linkid=852441).
+    For more info, see [Manage Autopilot deployment profiles using Microsoft Store for Business](https://go.microsoft.com/fwlink/?linkid=852441).
 
 -->
 
