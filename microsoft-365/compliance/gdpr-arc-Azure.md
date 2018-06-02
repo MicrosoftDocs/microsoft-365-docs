@@ -25,7 +25,7 @@ To purchase a copy of the complete draft ISO standard, please visit https://shop
 
 ### 2. Conditions for collection and processing
 
-####  Identify and document purpose (7.2.1)
+#### Identify and document purpose (7.2.1)
 
 ##### Customer consideration
 The customer should document the purpose for which personal data is processed.
@@ -37,7 +37,7 @@ A description of the processing Microsoft performs for you, and the purposes of 
 ##### Addresses GDPR Article(s)
 (5)(1)(b), (32)(4)
 
-### 	Identify lawful basis (7.2.2)
+### Identify lawful basis (7.2.2)
 
 #### Customer consideration
 The customer should understand any requirements related to the lawful basis of processing, such as whether consent must first be given.
@@ -49,7 +49,7 @@ Windows Azure does not provide direct support for gaining user consent. A descri
 ##### Addresses GDPR Article(s)
 (5)(1)(a), (6)(1)(a), (6)(1)(b), (6)(1)(c), (6)(1)(d), (6)(1)(e), (6)(1)(f), (6)(3), (6)4)(a), (6)(4)(b), (6)(4)(c), (6)(4)(d),  (6)(4)(e), (8)(3), (9)(1), (9)(2)(b), (9)(2)(c), (9)(2)(d), (9)(2)(e), (9)(2)(f), (9)(2)(g), (9)(2)(h), (9)(2)(i), (9)(2)(j), (9)(3), (9)(4), (10), (17)(3)(a), (17)(3)(b), (17)(3)(c), (17)(3)(d), (17)(3)(e), (18)(2), (22)(2)(a), (22)(2)(b), (22)(2)(c), (22)(4)
 
-#### 	Determine when consent is to be obtained (7.2.3)
+#### Determine when consent is to be obtained (7.2.3)
 
 ##### Customer consideration
 The customer should understand legal or regulatory requirements for obtaining consent from individuals prior to processing personal data (when it is required, if the type of processing is excluded from the requirement, etc.), including how consent is collected.
