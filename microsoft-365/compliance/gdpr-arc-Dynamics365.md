@@ -20,7 +20,7 @@ ms.collection: GDPR
 
 This accountability readiness checklist provides a convenient way to access information you may need to support GDPR when using Microsoft Dynamics 365. The checklist is organized using the titles and reference number (in parenthesis for each checklist topic) of a set of privacy and security controls for personal data processors drawn from *ISO/IEC CD 27552 Information technology -- Security techniques -- Enhancement to ISO/IEC 27001 for privacy management – Requirements. *
 
-You can manage the items in this checklist with the Compliance Manager [[15](gdpr-arc-Dynamics365.md#item15)] by referencing the Control ID and Control Title under *Customer Managed Controls* in the GDPR tile.
+You can manage the items in this checklist with the Compliance Manager [[15](gdpr-arc-Dynamics365.md#15)] by referencing the Control ID and Control Title under *Customer Managed Controls* in the GDPR tile.
 
 In addition, items in this checklist under *5. Data Protection & Security* provide references to controls listed under Microsoft Managed Control in the GDPR tile in Compliance Manager. Reviewing the Microsoft Implementation Details for these controls provides additional explanation of the Microsoft approach to fulfilling the customer considerations in the checklist item.
 
@@ -40,7 +40,7 @@ The customer should document the purpose for which personal data is processed.
 
 A description of the processing Microsoft performs for you, and the purposes of that processing, that can be included in your accountability documentation.
 
--   Microsoft Online Services Terms, Data Protection Terms, see Processing of Personal Data; GDPR [1]
+-   Microsoft Online Services Terms, Data Protection Terms, see Processing of Personal Data; GDPR [[1](gdpr-arc-Dynamics365.md#1)]
 
 ##### Addresses GDPR Article(s)
 
@@ -116,7 +116,7 @@ The customer should ensure that their contracts with processors include requirem
 
 The Microsoft contracts that require us to aid with your obligations under the GDPR, including support for the data subject's rights.
 
--   Microsoft Online Services Terms, Data Protection Terms, see Processing of Personal Data; GDPR [1]
+-   Microsoft Online Services Terms, Data Protection Terms, see Processing of Personal Data; GDPR [[1](gdpr-arc-Dynamics365.md#1)]
 
 ##### Addresses GDPR Article(s)
 
@@ -132,7 +132,7 @@ The customer should maintain all necessary and required records related to proce
 
 The tools provided by Microsoft services to help you maintain the records necessary demonstrate compliance and support for accountability under the GDPR.
 
--   Auditing and Reporting in Dynamics 365 [3]
+-   Auditing and Reporting in Dynamics 365 [[3](gdpr-arc-Dynamics365.md#3)]
 
 ##### Addresses GDPR Article(s)
 
@@ -151,9 +151,9 @@ The customer should understand requirements around the rights of individuals rel
 
 The capabilities Microsoft provides to help you support data subject rights.
 
--   Dynamics 365 Data Subject Requests for the GDPR [4]
+-   Dynamics 365 Data Subject Requests for the GDPR [[4](gdpr-arc-Dynamics365.md#4)]
 
--   Dynamics 365-ISO27018 Statement of Applicability [6] see A.1.1
+-   Dynamics 365-ISO27018 Statement of Applicability [[6](gdpr-arc-Dynamics365.md#6)] *see A.1.1*
 
 ##### Addresses GDPR Article(s)
 
@@ -191,7 +191,7 @@ Where the customer uses third-party systems or processors, they should determine
 
 Information about Microsoft services that you can include in the data you provide to data subjects.
 
--   Dynamics 365 Data Subject Requests for the GDPR [4]
+-   Dynamics 365 Data Subject Requests for the GDPR [[4](gdpr-arc-Dynamics365.md#4)]
 
 -   Key Information from Dynamics 365 for Customer Data Protection Impact Assessments [2]
 
@@ -209,7 +209,7 @@ The customer should comply with any requirements around how/when/in what form th
 
 Information about Microsoft services that you can include in the data you provide to data subjects.
 
--   Dynamics 365 Data Subject Requests for the GDPR [4]
+-   Dynamics 365 Data Subject Requests for the GDPR [[4](gdpr-arc-Dynamics365.md#4)]
 
 -   Key Information from Dynamics 365 for Customer Data Protection Impact Assessments [2]
 
@@ -227,7 +227,7 @@ The customer should understand requirements for informing users about their righ
 
 Information about capabilities in Microsoft services that you can use when defining the information you provide to data subjects when requesting consent.
 
--   Dynamics 365 Data Subject Requests for the GDPR [4]
+-   Dynamics 365 Data Subject Requests for the GDPR [[4](gdpr-arc-Dynamics365.md#4)]
 
 ##### Addresses GDPR Article(s)
 
@@ -243,7 +243,7 @@ The customer should understand requirements around rights of data subjects. Wher
 
 Information about Microsoft services relating to object to processing that you can include in the data you provide to data subjects.
 
--   Dynamics 365 Data Subject Requests for the GDPR [4] *see: Restrict*
+-   Dynamics 365 Data Subject Requests for the GDPR [[4](gdpr-arc-Dynamics365.md#4)] *see: Restrict*
 
 ##### Addresses GDPR Article(s)
 
@@ -259,7 +259,7 @@ The customer should understand requirements for notifying third-parties with who
 
 Information about capabilities in Microsoft services that allow you to discover personal data that you have shared with third parties.
 
--   Dynamics 365 Data Subject Requests for the GDPR [4]
+-   Dynamics 365 Data Subject Requests for the GDPR [[4](gdpr-arc-Dynamics365.md#4)]
 
 ##### Addresses GDPR Article(s)
 
@@ -275,7 +275,7 @@ The customer should understand requirements for informing users about their righ
 
 Information about Microsoft services relating to their ability to access, correct or erase personal data that you can include in the data you provide to data subjects.
 
--   Dynamics 365 Data Subject Requests for the GDPR [4] *see: Delete*
+-   Dynamics 365 Data Subject Requests for the GDPR [[4](gdpr-arc-Dynamics365.md#4)] *see: Delete*
 
 ##### Addresses GDPR Article(s)
 
@@ -291,7 +291,7 @@ The customer should understand requirements around providing a copy of the perso
 
 Information about capabilities in Microsoft services to allow you to obtain a copy of their personal data that you can include in the data you provide to data subjects.
 
--   Dynamics 365 Data Subject Requests for the GDPR [4] *see: Export*
+-   Dynamics 365 Data Subject Requests for the GDPR [[4](gdpr-arc-Dynamics365.md#4)] *see: Export*
 
 ##### Addresses GDPR Article(s)
 
@@ -307,7 +307,7 @@ The customer should understand requirements for accepting and responding to legi
 
 Information about capabilities in Microsoft services that you can use when defining the information you provide to data subjects as you manage data subject requests.
 
--   Dynamics 365 Data Subject Requests for the GDPR [4]
+-   Dynamics 365 Data Subject Requests for the GDPR [[4](gdpr-arc-Dynamics365.md#4)]
 
 ##### Addresses GDPR Article(s)
 
@@ -342,7 +342,7 @@ The customer should understand requirements around limits on collection of perso
 
 A description of the data collected by Microsoft services.
 
--   Microsoft Online Services Terms, Data Protection Terms, see Processing of Personal Data; GDPR [1]
+-   Microsoft Online Services Terms, Data Protection Terms, see Processing of Personal Data; GDPR [[1](gdpr-arc-Dynamics365.md#1)]
 
 -   Key Information from Dynamics 365 for Customer Data Protection Impact Assessments [2]
 
@@ -360,7 +360,7 @@ The customer is responsible for limiting the processing of personal data so that
 
 A description of the data collected by Microsoft services.
 
--   Microsoft Online Services Terms, Data Protection Terms, see Processing of Personal Data; GDPR [1]
+-   Microsoft Online Services Terms, Data Protection Terms, see Processing of Personal Data; GDPR [[1](gdpr-arc-Dynamics365.md#1)]
 
 -   Key Information from Dynamics 365 for Customer Data Protection Impact Assessments [2]
 
@@ -404,7 +404,7 @@ The customer should understand requirements around the retention of personal dat
 
 ##### Supporting Microsoft Documentation: 
 
--   Dynamics 365 Data Subject Requests for the GDPR [4] *see: Delete*
+-   Dynamics 365 Data Subject Requests for the GDPR [[4](gdpr-arc-Dynamics365.md#4)] *see: Delete*
 
 Addresses GDPR Article(s)
 
@@ -420,9 +420,9 @@ The customer should be aware of temporary files that may be created by the syste
 
 A description of capabilities provided by the service to identify personal data to support your temporary file policies.
 
--   Dynamics 365 Data Subject Requests for the GDPR [4] *see: Discover*
+-   Dynamics 365 Data Subject Requests for the GDPR [[4](gdpr-arc-Dynamics365.md#4)] *see: Discover*
 
--   Dynamics 365-ISO27018 Statement of Applicability [6], section 4.1
+-   Dynamics 365-ISO27018 Statement of Applicability [[6](gdpr-arc-Dynamics365.md#6)], section 4.1
 
 ##### Addresses GDPR Article(s)
 
@@ -438,7 +438,7 @@ The customer should determine how long personal data should be retained, taking 
 
 Information about the retention of personal data by Microsoft services that you can include in documentation provided to data subjects.
 
--   Microsoft Online Services Terms, Data Protection Terms, see Data Security, Retention [1]
+-   Microsoft Online Services Terms, Data Protection Terms, see Data Security, Retention [[1](gdpr-arc-Dynamics365.md#1)]
 
 ##### Addresses GDPR Article(s)
 
@@ -454,7 +454,7 @@ The customer should utilize any deletion or disposal mechanisms provided by the 
 
 Capabilities provided by Microsoft Services to support your data deletion policies.
 
--   Dynamics 365 Data Subject Requests for the GDPR [4] *see: Delete*
+-   Dynamics 365 Data Subject Requests for the GDPR [[4](gdpr-arc-Dynamics365.md#4)] *see: Delete*
 
 ##### Addresses GDPR Article(s)
 
@@ -470,7 +470,7 @@ The customer should be aware of requirements around the accuracy of personal dat
 
 How Microsoft services support the accuracy of personal data, and any capabilities they provide to support your data accuracy policy.
 
--   Dynamics 365 Data Subject Requests for the GDPR [4] *see: Rectify*
+-   Dynamics 365 Data Subject Requests for the GDPR [[4](gdpr-arc-Dynamics365.md#4)] *see: Rectify*
 
 ##### Addresses GDPR Article(s)
 
@@ -550,7 +550,7 @@ The customer should understand requirements around recording to whom personal da
 
 Documentation provided about the categories of recipients of disclosures of personal data including available records of disclosure.
 
--   Who can access your data and on what terms [7]
+- Who can access your data and on what terms [[7](gdpr-arc-Dynamics365.md#7)]
 
 ##### Addresses GDPR Article(s)
 
@@ -566,7 +566,7 @@ The customer should determine whether they are a joint controller with any other
 
 Dynamics 365 is processor of personal data.
 
--   Online Services Terms [1] see *Processor and Controller Roles and Responsibilities*
+-   Online Services Terms [1] <!-- look at this one -->see *Processor and Controller Roles and Responsibilities*
 
 ##### Addresses GDPR Article(s)
 
@@ -585,7 +585,7 @@ Customers should determine their role in processing personal data (e.g. controll
 
 How Microsoft considers each service as either a processor or controller when processing personal data.
 
--   Microsoft Online Services Terms, Data Protection Terms, see Processing of Personal Data; GDPR, Processor and Controller Roles and Responsibilities [1]
+-   Microsoft Online Services Terms, Data Protection Terms, see Processing of Personal Data; GDPR, Processor and Controller Roles and Responsibilities [[1](gdpr-arc-Dynamics365.md#1)]
 
 ##### Addresses GDPR Article(s)
 
@@ -601,9 +601,8 @@ Customers should identify parties that may have a role or interest in their proc
 
 How Microsoft incorporates the views of all stakeholders in consideration of the risks involved in the processing of personal data.
 
--   Key Information from Dynamics 365 for Customer Data Protection Impact Assessments [2]
-
--   Understanding the needs and expectations of interested parties 5.2.2 in Compliance Manager [15]
+- Key Information from Dynamics 365 for Customer Data Protection Impact Assessments [2]
+- Understanding the needs and expectations of interested parties 5.2.2 in Compliance Manager [[15](gdpr-arc-Dynamics365.md#15)]
 
 ##### Addresses GDPR Article(s)
 
@@ -619,15 +618,11 @@ As part of any overall security or privacy program that a customer may have, the
 
 How Microsoft services include the processing of personal data in information security management and privacy programs.
 
--   Dynamics 365-ISO27001 Statement of Applicability [5]
-
--   Dynamics 365-ISO27018 Statement of Applicability [6]
-
--   SOC 2 Type 2 Audit Report [8]
-
--   5.2.3 Determining the scope of the information security management system in Compliance Manager [15]
-
--   5.2.4 Information security management system in Compliance Manager [15]
+- Dynamics 365-ISO27001 Statement of Applicability [[5](gdpr-arc-Dynamics365.md#5)]
+- Dynamics 365-ISO27018 Statement of Applicability [[6](gdpr-arc-Dynamics365.md#6)]
+- SOC 2 Type 2 Audit Report [[8](gdpr-arc-Dynamics365.md#8)]
+- 5.2.3 Determining the scope of the information security management system in Compliance Manager [[15](gdpr-arc-Dynamics365.md#15)]
+- 5.2.4 Information security management system in Compliance Manager [[15](gdpr-arc-Dynamics365.md#15)]
 
 ##### Addresses GDPR Article(s)
 
@@ -643,11 +638,11 @@ Customers should consider the handling of personal data as part of any risk asse
 
 How Microsoft services consider the risks specific to the processing of personal data as part of their overall security and privacy program.
 
--   Dynamics 365-ISO27001 Statement of Applicability [5]
+-   Dynamics 365-ISO27001 Statement of Applicability [[5](gdpr-arc-Dynamics365.md#5)]
 
--   Dynamics 365-ISO27018 Statement of Applicability [6]
+-   Dynamics 365-ISO27018 Statement of Applicability [[6](gdpr-arc-Dynamics365.md#6)]
 
--   5.3 Planning in Compliance Manager [15]
+-   5.3 Planning in Compliance Manager [[15](gdpr-arc-Dynamics365.md#15)]
 
 ##### Addresses GDPR Article(s)
 
@@ -663,13 +658,13 @@ The customer should augment any existing information security policies to includ
 
 Microsoft policies for information security and any specific measures for the protection of personal information.
 
--   Dynamics 365-ISO27001 Statement of Applicability [5]
+-   Dynamics 365-ISO27001 Statement of Applicability [[5](gdpr-arc-Dynamics365.md#5)]
 
--   Dynamics 365-ISO27018 Statement of Applicability [6]
+-   Dynamics 365-ISO27018 Statement of Applicability [[6](gdpr-arc-Dynamics365.md#6)]
 
--   SOC 2 Type 2 Audit Report [8]
+-   SOC 2 Type 2 Audit Report [[8](gdpr-arc-Dynamics365.md#8)]
 
--   6.2 Information security policies in Compliance Manager [15]
+-   6.2 Information security policies in Compliance Manager [[15](gdpr-arc-Dynamics365.md#15)]
 
 ##### Addresses GDPR Article(s)
 
@@ -683,13 +678,13 @@ The customer should, within their organization, define responsibilities for secu
 
 An overview of the role of Microsoft's Data Protection Officer, the nature of his duties, reporting structure and contact information.
 
--   Microsoft DPO Information [16]
+-   Microsoft DPO Information [[16](gdpr-arc-Dynamics365.md#16)]
 
--   Dynamics 365-ISO27001 Statement of Applicability [5]
+-   Dynamics 365-ISO27001 Statement of Applicability [[5](gdpr-arc-Dynamics365.md#5)]
 
--   Dynamics 365-ISO27018 Statement of Applicability [6]
+-   Dynamics 365-ISO27018 Statement of Applicability [[6](gdpr-arc-Dynamics365.md#6)]
 
--   6.3 Organization of information security in Compliance Manager [15]
+-   6.3 Organization of information security in Compliance Manager [[15](gdpr-arc-Dynamics365.md#15)]
 
 ##### Addresses GDPR Article(s)
 
@@ -705,13 +700,13 @@ The customer should determine and assign responsibility for providing relevant t
 
 An overview of the role of Microsoft's Data Protection Officer, the nature of his duties, reporting structure and contact information.
 
--   Microsoft DPO Information [16]
+-   Microsoft DPO Information [[16](gdpr-arc-Dynamics365.md#16)]
 
--   Dynamics 365-ISO27001 Statement of Applicability [5] *section A.7*
+-   Dynamics 365-ISO27001 Statement of Applicability [[5](gdpr-arc-Dynamics365.md#5)] *section A.7*
 
--   Dynamics 365-ISO27018 Statement of Applicability [6] *section 7.2*
+-   Dynamics 365-ISO27018 Statement of Applicability [[6](gdpr-arc-Dynamics365.md#6)] *section 7.2*
 
--   6.4 Information security awareness and training in Compliance Manager [15]
+-   6.4 Information security awareness and training in Compliance Manager [[15](gdpr-arc-Dynamics365.md#15)] [15]
 
 ##### Addresses GDPR Article(s)
 
@@ -727,7 +722,7 @@ The customer should explicitly consider personal data as part of a data classifi
 
 Capabilities in Dynamics 365 to support personal data classification.
 
--   6.5.1 Classification of Information in Compliance Manager [15]
+-   6.5.1 Classification of Information in Compliance Manager [[15](gdpr-arc-Dynamics365.md#15)] Manager [15]
 
 ##### Addresses GDPR Article(s)
 
@@ -743,7 +738,7 @@ The customer should determine internal policies for the use of removable media a
 
 How Microsoft services protect the security of personal information on any removable media.
 
--   6.5.2 Management of removable media in Compliance Manager [15]
+-   6.5.2 Management of removable media in Compliance Manager [[15](gdpr-arc-Dynamics365.md#15)]
 
 ##### Addresses GDPR Article(s)
 
@@ -759,7 +754,7 @@ The customer should determine internal policies for protecting personal data whe
 
 How Microsoft services protects personal data during any transfer of physical media.
 
--   6.5.3 Physical media transfer in Compliance Manager [15]
+-   6.5.3 Physical media transfer in Compliance Manager [[15](gdpr-arc-Dynamics365.md#15)]
 
 ##### Addresses GDPR Article(s)
 
@@ -775,9 +770,9 @@ The customer should be aware of which responsibilities they have for access cont
 
 The tools provided by Microsoft services to help you enforce access control.
 
--   Dynamics 365 - Discover built in security features [9]
+-   Dynamics 365 - Discover built in security features [[9](gdpr-arc-Dynamics365.md#9)]
 
--   6.6.1 User Access Management in Compliance Manager [15]
+-   6.6.1 User Access Management in Compliance Manager [[15](gdpr-arc-Dynamics365.md#15)]
 
 ##### Addresses GDPR Article(s)
 
@@ -795,7 +790,7 @@ The tools provided by Microsoft services to help you enforce access control.
 
 -   6.6.2 User registration and de-registration in Compliance Manager
 
--   Dynamics 365 - Discover built in security features [9]
+-   Dynamics 365 - Discover built in security features [[9](gdpr-arc-Dynamics365.md#9)]
 
 ##### Addresses GDPR Article(s)
 
@@ -811,9 +806,9 @@ The customer should manage user profiles, especially for authorized access to pe
 
 How Microsoft services support formal access control to personal data, including user IDs, roles, and the registration and de-registration of users.
 
--   Dynamics 365 - Discover built in security features [9]
+-   Dynamics 365 - Discover built in security features [[9](gdpr-arc-Dynamics365.md#9)]
 
--   6.6.3 User access provisioning n Compliance Manager [15]
+-   6.6.3 User access provisioning n Compliance Manager [[15](gdpr-arc-Dynamics365.md#15)]
 
 ##### Addresses GDPR Article(s)
 
@@ -829,7 +824,7 @@ The customer should manage user ID's to facilitate tracking of access (especiall
 
 How Microsoft services support formal access control to personal data, including user IDs, roles, and the registration and de-registration of users.
 
-- Dynamics 365 - Discover built in security features [9]
+- Dynamics 365 - Discover built in security features [[9](gdpr-arc-Dynamics365.md#9)]
 
 - 6.6.4 Management of privileged access [15]
 
@@ -847,9 +842,9 @@ The customer should utilize provided mechanisms in the service to ensure secure 
 
 How Microsoft services support internal access control policies related to personal data.
 
-- Who can access your data and on what terms [10]
+- Who can access your data and on what terms [[10](gdpr-arc-Dynamics365.md#10)]
 
-- 6.6.5 Information access restrictions in Compliance Manager [15]
+- 6.6.5 Information access restrictions in Compliance Manager [[15](gdpr-arc-Dynamics365.md#15)]
 
 ##### Addresses GDPR Article(s)
 
@@ -865,9 +860,9 @@ The customer should determine which data may need to be encrypted, and whether t
 
 How Microsoft services support encryption and pseudonymization to reduce the risk of processing personal data.
 
-- Dynamics 365 - Discover built in security features [9]
+- Dynamics 365 - Discover built in security features [[9](gdpr-arc-Dynamics365.md#9)]
 
-- 6.7 Cryptography in Compliance Manager [15]
+- 6.7 Cryptography in Compliance Manager [[15](gdpr-arc-Dynamics365.md#15)]
 
 ##### Addresses GDPR Article(s)
 
@@ -882,10 +877,10 @@ Where the customer uses cloud computing services (PaaS, SaaS, IaaS) they should 
 ##### Supporting Microsoft Documentation: 
 
 How Microsoft services ensure that personal data is erased from storage equipment before that equipment is transferred or reused.
-- Dynamics 365-ISO27001 Statement of Applicability [5], *section 10.1*
-- Dynamics 365-ISO27018 Statement of Applicability [6], *section 8.3*
+- Dynamics 365-ISO27001 Statement of Applicability [[5](gdpr-arc-Dynamics365.md#5)], *section 10.1*
+- Dynamics 365-ISO27018 Statement of Applicability [[6](gdpr-arc-Dynamics365.md#6)], *section 8.3*
 
--   6.8.1 Secure disposal or re-use of equipment in Compliance Manager [15]
+-   6.8.1 Secure disposal or re-use of equipment in Compliance Manager [[15](gdpr-arc-Dynamics365.md#15)]
 
 ##### Addresses GDPR Article(s)
 
@@ -901,8 +896,8 @@ The customer should consider risks around hardcopy material that displays person
 
 What Microsoft implements to manage hardcopy.
 
-- Dynamics 365-ISO27001 Statement of Applicability [5], *section 11.2*
-- 6.8.2 Clear desk and clear screen policy in Compliance Manager [15]
+- Dynamics 365-ISO27001 Statement of Applicability [[5](gdpr-arc-Dynamics365.md#5)], *section 11.2*
+- 6.8.2 Clear desk and clear screen policy in Compliance Manager [[15](gdpr-arc-Dynamics365.md#15)]
 
 ##### Addresses GDPR Article(s)
 
@@ -918,9 +913,9 @@ The customer should consider the implications of using personal data in developm
 
 How Microsoft ensures that personal data is protected in development and test environments.
 
-- Dynamics 365-ISO27001 Statement of Applicability [5], section 12.1
-- Dynamics 365-ISO27018 Statement of Applicability [6], section 12.1
-- 6.9.1 Separation of development, testing and operational environments in Compliance Manager [15]
+- Dynamics 365-ISO27001 Statement of Applicability [[5](gdpr-arc-Dynamics365.md#5)], section 12.1
+- Dynamics 365-ISO27018 Statement of Applicability [[6](gdpr-arc-Dynamics365.md#6)], section 12.1
+- 6.9.1 Separation of development, testing and operational environments in Compliance Manager [[15](gdpr-arc-Dynamics365.md#15)]
 
 ##### Addresses GDPR Article(s)
 
@@ -936,9 +931,9 @@ The customer should ensure that they use system provided capabilities to create 
 
 How Microsoft ensures the availability of data that may include personal data, how accuracy of restored data is ensured, and the tools and procedures Microsoft services provide to allow you to backup and restore data.
 
-- Dynamics 365-ISO27001 Statement of Applicability [5], section 12.3
-- Dynamics 365-ISO27018 Statement of Applicability [6], section 12.3
-- 6.9.2 Information Backup in Compliance Manager [15]
+- Dynamics 365-ISO27001 Statement of Applicability [[5](gdpr-arc-Dynamics365.md#5)], section 12.3
+- Dynamics 365-ISO27018 Statement of Applicability [[6](gdpr-arc-Dynamics365.md#6)], section 12.3
+- 6.9.2 Information Backup in Compliance Manager [[15](gdpr-arc-Dynamics365.md#15)]
 
 ##### Addresses GDPR Article(s)
 
@@ -954,9 +949,9 @@ The customer should understand the capabilities for logging provided by the syst
 
 The data Microsoft service records for you, including user activities, exceptions, faults and information security events, and how you can access those logs for use as part of your record keeping.
 
- Auditing and Reporting in Dynamics 365 [3]
+ Auditing and Reporting in Dynamics 365 [[3](gdpr-arc-Dynamics365.md#3)]
 
-- 6.9.3 Event logging in Compliance Manager [15]
+- 6.9.3 Event logging in Compliance Manager [[15](gdpr-arc-Dynamics365.md#15)]
 
 ##### Addresses GDPR Article(s)
 
@@ -972,8 +967,8 @@ The customer should consider requirements for protecting log information that ma
 
 How Microsoft protects logs that may contain personal data.
 
-- Auditing and Reporting in Dynamics 365 [3]
-- 6.9.4 Protection of log information in Compliance Manager [15]
+- Auditing and Reporting in Dynamics 365 [[3](gdpr-arc-Dynamics365.md#3)]
+- 6.9.4 Protection of log information in Compliance Manager [[15](gdpr-arc-Dynamics365.md#15)]
 
 ##### Addresses GDPR Article(s)
 
@@ -989,9 +984,9 @@ The customer should have procedures for cases where personal data may be transfe
 
 How Microsoft services transfer physical media that may contain personal data, including the circumstances when transfer might occur, and the protective measures taken to protect the data.
 
-- Dynamics 365-ISO27001 Statement of Applicability [5], section 8.3
-- Dynamics 365-ISO27018 Statement of Applicability [6], section 10.4
-- 6.10.1 Information transfer policies and procedures in Compliance Manager [15]
+- Dynamics 365-ISO27001 Statement of Applicability [[5](gdpr-arc-Dynamics365.md#5)], section 8.3
+- Dynamics 365-ISO27018 Statement of Applicability [[6](gdpr-arc-Dynamics365.md#6)], section 10.4
+- 6.10.1 Information transfer policies and procedures in Compliance Manager [[15](gdpr-arc-Dynamics365.md#15)]
 
 ##### Addresses GDPR Article(s)
 
@@ -1007,8 +1002,8 @@ The customer should determine the need for confidentiality agreements or the equ
 
 How Microsoft services ensure that individuals with authorized access to personal data have committed themselves to confidentiality.
 
-- Dynamics 365 SOC 2 Type 2 Audit Report & Bridge letter [8]
-- 6.10.2 Confidentiality or non-disclosure agreements in Compliance Manager [15]
+- Dynamics 365 SOC 2 Type 2 Audit Report & Bridge letter [[8](gdpr-arc-Dynamics365.md#8)]
+- 6.10.2 Confidentiality or non-disclosure agreements in Compliance Manager [[15](gdpr-arc-Dynamics365.md#15)]
 
 ##### Addresses GDPR Article(s)
 
@@ -1024,8 +1019,8 @@ The customer should understand requirements for encryption of personal data, esp
 
 Description of the measures Microsoft services take to protect data in transit, including encryption of the data, and how Microsoft services protect data that may contain personal data as it passes through public data networks, including any encryption measures.
 
-- Dynamics 365 - Discover built in security features [9]
-- 6.11.1 Securing application services on public networks in Compliance Manager [15]
+- Dynamics 365 - Discover built in security features [[9](gdpr-arc-Dynamics365.md#9)]
+- 6.11.1 Securing application services on public networks in Compliance Manager [[15](gdpr-arc-Dynamics365.md#15)]
 
 ##### Addresses GDPR Article(s)
 
@@ -1041,8 +1036,8 @@ The customer should understand how systems are designed and engineered to consid
 
 How Microsoft services include personal data protection principles as a mandatory part of our secure design/engineering principles.
 
-- Dynamics 365 SOC 2 Type 2 Audit Report & Bridge letter [8] see *Security Development Lifecycle* pp23, CC7.1 pp45 and [What is the Security Development Lifecycle ?](https://www.microsoft.com/en-us/sdl/)
-- Secure system engineering principles in Compliance Manager [15]
+- Dynamics 365 SOC 2 Type 2 Audit Report & Bridge letter [[8](gdpr-arc-Dynamics365.md#8)] see *Security Development Lifecycle* pp23, CC7.1 pp45 and [What is the Security Development Lifecycle ?](https://www.microsoft.com/en-us/sdl/)
+- Secure system engineering principles in Compliance Manager [[15](gdpr-arc-Dynamics365.md#15)]
 
 ##### Addresses GDPR Article(s)
 
@@ -1058,8 +1053,8 @@ The customer should ensure that any information security and personal data prote
 
 How Microsoft services address security and data protection in our agreements with our suppliers and how we ensure those agreements are effectively implemented.
 
-- Who can access your data and on what terms [10]
-- 6.12 Supplier Relationships in Compliance Manager [15]
+- Who can access your data and on what terms [[10](gdpr-arc-Dynamics365.md#10)]
+- 6.12 Supplier Relationships in Compliance Manager [[15](gdpr-arc-Dynamics365.md#15)]
 
 ##### Addresses GDPR Article(s)
 
@@ -1075,8 +1070,8 @@ The customer should have processes for determining when a personal data breach h
 
 How Microsoft services determine if a security incident is a breach of personal data, and how we communicate the breach to you.
 
-- Dynamics 365 Breach Notification Under the GDPR [12]
-- 6.13.1 Management of information security incidents and improvements in Compliance Manager [15]
+- Dynamics 365 Breach Notification Under the GDPR [[12](gdpr-arc-Dynamics365.md#12)]
+- 6.13.1 Management of information security incidents and improvements in Compliance Manager [[15](gdpr-arc-Dynamics365.md#15)]
 
 ##### Addresses GDPR Article(s)
 
@@ -1092,8 +1087,8 @@ The customer should understand and document their responsibilities during a data
 
 How to notify Microsoft services if you detect a security incident or breach of personal data.
 
-- Dynamics 365 Breach Notification Under the GDPR [12]
-- 6.13.2 Responsibilities and procedures in Compliance Manager [15]
+- Dynamics 365 Breach Notification Under the GDPR [[12](gdpr-arc-Dynamics365.md#12)]
+- 6.13.2 Responsibilities and procedures in Compliance Manager [[15](gdpr-arc-Dynamics365.md#15)]
 
 ##### Addresses GDPR Article(s)
 
@@ -1109,8 +1104,8 @@ The customer should have processes for determining when a personal data breach h
 
 Description of the information Microsoft services provide to help you decide if a breach of personal data has occurred.
 
-- Dynamics 365 Breach Notification Under the GDPR [12]
-- 6.13.3 Response to information security incidents in Compliance Manager [15]
+- Dynamics 365 Breach Notification Under the GDPR [[12](gdpr-arc-Dynamics365.md#12)]
+- 6.13.3 Response to information security incidents in Compliance Manager [[15](gdpr-arc-Dynamics365.md#15)]
 
 ##### Addresses GDPR Article(s)
 
@@ -1126,9 +1121,9 @@ The customer should understand the requirements for records related to personal 
 
 How Microsoft services store records relating to the processing of personal data.
 
-- Auditing and Reporting in Dynamics 365[3]
-- Dynamics 365-ISO27001 Statement of Applicability [5]; section 18.1
-- Dynamics 365-ISO27018 Statement of Applicability [6]; section 5.2
+- Auditing and Reporting in Dynamics 365 [[3](gdpr-arc-Dynamics365.md#3)]
+- Dynamics 365-ISO27001 Statement of Applicability [[5](gdpr-arc-Dynamics365.md#5)]; section 18.1
+- Dynamics 365-ISO27018 Statement of Applicability [[6](gdpr-arc-Dynamics365.md#6)]; section 5.2
 
 ##### Addresses GDPR Article(s)
 
@@ -1144,8 +1139,8 @@ The customer should be aware of requirements for assessments of the security of 
 
 How Microsoft services test and assesses the effectiveness of technical and organizational measures to ensure the security of processing, including any audits by third parties.
 
-- Microsoft Online Services Terms, Data Protection Terms, see Data Security, Auditing Compliance [1]
-- 6.15.2 Independent review of information security in Compliance Manager [15]
+- Microsoft Online Services Terms, Data Protection Terms, see Data Security, Auditing Compliance [[1](gdpr-arc-Dynamics365.md#1)]
+- 6.15.2 Independent review of information security in Compliance Manager [[15](gdpr-arc-Dynamics365.md#15)]
 
 ##### Addresses GDPR Article(s)
 
@@ -1161,11 +1156,11 @@ The customer should understand requirements for testing and evaluating the secur
 
 How Microsoft services are tested security based on identified risks, including tests by third parties, and the types of technical tests and any available reports from the tests.
 
-- Microsoft Online Services Terms, Data Protection Terms, see Data Security, Auditing Compliance [1]
-- For a listing of external certifications see *Microsoft Trust Center Compliance offerings [13]*
-- Dynamics 365 - Discover built in security features [9]
-- Dynamics 365 Penetration Testing and Security Assessment Report [14]
-- 6.15.3 Technical compliance review in Compliance Manager [15]
+- Microsoft Online Services Terms, Data Protection Terms, see Data Security, Auditing Compliance [[1](gdpr-arc-Dynamics365.md#1)]
+- For a listing of external certifications see *Microsoft Trust Center Compliance offerings [[13](gdpr-arc-Dynamics365.md#13)]*
+- Dynamics 365 - Discover built in security features [[9](gdpr-arc-Dynamics365.md#9)]
+- Dynamics 365 Penetration Testing and Security Assessment Report [[14](gdpr-arc-Dynamics365.md#14)]
+- 6.15.3 Technical compliance review in Compliance Manager [[15](gdpr-arc-Dynamics365.md#15)]
 
 ##### Addresses GDPR Article(s)
 
@@ -1180,22 +1175,22 @@ How Microsoft services are tested security based on identified risks, including 
 ||||
 |:-----|:-----|:-----|
 |***ID**|**Documents**|**Link**|
-|1 |Online Services Terms|http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46|
-|2|Key Information from Dynamics 365 for Customer Data Protection Impact Assessments|<https://servicetrust.microsoft.com/ViewPage/GDPRDPIA?command=Download&downloadType=Document&downloadId=ef2902bb-3137-4f4a-8ca6-af35afaa6bec&docTab=2ba9a350-555c-11e8-b74a-77b1f31da06e_DPIA>|
-|3 |Auditing and Reporting in Dynamics 365|<https://docs.microsoft.com/en-us/dynamics365/customer-engagement/admin/enable-use-comprehensive-auditing>|
-|4 |Dynamics 365 Data Subject Requests for the GDPR|<https://servicetrust.microsoft.com/ViewPage/GDPRDSR>|
-|5| Dynamics 365-ISO27001 Statement of Applicability|<https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=d383c8df-1387-4a08-8604-b3e8aa647206&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports>|
-|6|Dynamics 365-ISO27018 Statement of Applicability|<https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=7eecdb74-46c9-4774-af3a-c66e5704cb14&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports>|
-|7|Who can access your data and on what terms?|<https://www.microsoft.com/en-us/trustcenter/Privacy/Who-can-access-your-data-and-on-what-terms>|
-|8|Dynamics 365 SOC 2 Type 2 Report & Bridge Letter|<https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=e06a247d-af6b-4933-8074-1002757984bd&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_SOC_%2F_SSAE_16_Reports>|
-|9|Dynamics 365 - Discover built in security features|<https://www.microsoft.com/en-us/trustcenter/security/dynamics365-security>|
-|10|Who can access data and at what terms|<https://www.microsoft.com/en-us/trustcenter/Privacy/Who-can-access-your-data-and-on-what-terms>|
-|11|Contracts for sub-processors: Contracting with Microsoft|<https://www.microsoft.com/en-us/procurement/supplier-contracting.aspx>|
-|12|Dynamics 365 Breach Notification Under the GDPR |<https://servicetrust.microsoft.com/ViewPage/GDPRBreach>|
-|13|Microsoft Trust Center Compliance offerings |<https://www.microsoft.com/en-us/trustcenter/compliance/complianceofferings>|
-|14|Dynamics 365 Penetration Testing and Security Assessment Report|<https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=25aa47b1-c510-43f2-84de-6b78ed3b1258&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Pen_Test_and_Security_Assessments>|
-|15 <a name="item15"> </a>|Compliance Manager|<https://servicetrust.microsoft.com/ComplianceManager>|
-|16|Microsoft DPO Information |<https://docs.microsoft.com/en-us/microsoft-365/compliance/gdpr-data-protection-officer>|
+|1 <a name="1"> </a> |Online Services Terms|http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46|
+|2 <a name="2"> </a>|Key Information from Dynamics 365 for Customer Data Protection Impact Assessments|<https://servicetrust.microsoft.com/ViewPage/GDPRDPIA?command=Download&downloadType=Document&downloadId=ef2902bb-3137-4f4a-8ca6-af35afaa6bec&docTab=2ba9a350-555c-11e8-b74a-77b1f31da06e_DPIA>|
+|3 <a name="3"> </a>|Auditing and Reporting in Dynamics 365|<https://docs.microsoft.com/en-us/dynamics365/customer-engagement/admin/enable-use-comprehensive-auditing>|
+|4 <a name="4"> </a>|Dynamics 365 Data Subject Requests for the GDPR|<https://servicetrust.microsoft.com/ViewPage/GDPRDSR>|
+|5 <a name="5"> </a>| Dynamics 365-ISO27001 Statement of Applicability|<https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=d383c8df-1387-4a08-8604-b3e8aa647206&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports>|
+|6 <a name="6"> </a>|Dynamics 365-ISO27018 Statement of Applicability|<https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=7eecdb74-46c9-4774-af3a-c66e5704cb14&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports>|
+|7 <a name="7"> </a>|Who can access your data and on what terms?|<https://www.microsoft.com/en-us/trustcenter/Privacy/Who-can-access-your-data-and-on-what-terms>|
+|8 <a name="8"> </a>|Dynamics 365 SOC 2 Type 2 Report & Bridge Letter|<https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=e06a247d-af6b-4933-8074-1002757984bd&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_SOC_%2F_SSAE_16_Reports>|
+|9 <a name="9"> </a>|Dynamics 365 - Discover built in security features|<https://www.microsoft.com/en-us/trustcenter/security/dynamics365-security>|
+|10 <a name="10"> </a>|Who can access data and at what terms|<https://www.microsoft.com/en-us/trustcenter/Privacy/Who-can-access-your-data-and-on-what-terms>|
+|11 <a name="11"> </a>|Contracts for sub-processors: Contracting with Microsoft|<https://www.microsoft.com/en-us/procurement/supplier-contracting.aspx>|
+|12<a name="12"> </a>|Dynamics 365 Breach Notification Under the GDPR |<https://servicetrust.microsoft.com/ViewPage/GDPRBreach>|
+|13 <a name="13"> </a>|Microsoft Trust Center Compliance offerings |<https://www.microsoft.com/en-us/trustcenter/compliance/complianceofferings>|
+|14 <a name="14"> </a>|Dynamics 365 Penetration Testing and Security Assessment Report|<https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=25aa47b1-c510-43f2-84de-6b78ed3b1258&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Pen_Test_and_Security_Assessments>|
+|15 <a name="15"> </a>|Compliance Manager|<https://servicetrust.microsoft.com/ComplianceManager>|
+|16 <a name="16"> </a>Microsoft DPO Information |<https://docs.microsoft.com/en-us/microsoft-365/compliance/gdpr-data-protection-officer>|
 |||
 
 <!-- end of table -->                        
