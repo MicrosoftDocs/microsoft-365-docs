@@ -1190,7 +1190,7 @@ How Microsoft services are tested security based on identified risks, including 
 |13 <a name="13"> </a>|Microsoft Trust Center Compliance offerings |<https://www.microsoft.com/en-us/trustcenter/compliance/complianceofferings>|
 |14 <a name="14"> </a>|Dynamics 365 Penetration Testing and Security Assessment Report|<https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=25aa47b1-c510-43f2-84de-6b78ed3b1258&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Pen_Test_and_Security_Assessments>|
 |15 <a name="15"> </a>|Compliance Manager|<https://servicetrust.microsoft.com/ComplianceManager>|
-|16 <a name="16"> </a>Microsoft DPO Information |<https://docs.microsoft.com/en-us/microsoft-365/compliance/gdpr-data-protection-officer>|
+|16 <a name="16"> </a>|Microsoft DPO Information |<https://docs.microsoft.com/en-us/microsoft-365/compliance/gdpr-data-protection-officer>|
 |||
 
 <!-- end of table -->                        
