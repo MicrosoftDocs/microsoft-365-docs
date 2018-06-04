@@ -34,7 +34,15 @@ For accessibility, this illustration is detailed in the following table.
 |SharePoint admin access control policy|SharePoint admin center policy|This is a new configuration|Configure access control policies to block access to SharePoint Online and OneDrive for Business content from unmanaged devices|
 
 ##Sensitive and highly regulated security
-Currently, the only difference between the recommendations for baseline security compared to sensitive and highly regulated security is the amount of protection in the first rule in this rule set: Require multi-factor authentication. 
+Currently, the only difference between the recommendations for baseline security compared to sensitive and highly regulated security is the amount of protection in the first rule in this rule set: Require multi-factor authentication:
+- Baseline protection: MFA required only when sign-in risk is medium or higher
+- Sensitive protection: MFA required when sign-in risk is low or higher
+- Highly regulated: Always require MFA
+
+Not every organization requires sensitive or highly regulated protection. If you do, you likely only require these levels of protection for a subset of users who have access to sensitive or highly regulated data. Therefore, the recommendation is to create additional rules for each level of protection and assign these to the target group of users.
+
+The following diagram provides an example of Azure AD group assignments across the three tiers of protection.
+![MFA rules for three tiers of protection](media/secure-docs/SharePointMFAruleset.png)
 
 >[!NOTE]
 >All security groups created as part of these recommendations must be created with Office features enabled. This is specifically important for the deployment of AIP when securing documents in SharePoint.
