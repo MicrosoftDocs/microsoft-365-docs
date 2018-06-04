@@ -107,7 +107,8 @@ The following table lists the Office 365 applications that people use to create 
 | <img src="media/O365-DSR-Doc-Final_image11.png" /><br />OneNote| <img src="media/O365-DSR-Doc-Final_image12.png" />To-Do |
 | <img src="media/O365-DSR-Doc-Final_image13.png" /><br />Outlook/Exchange Online | <img src="media/O365-DSR-Doc-Final_image14.png" /><br />Video |
 | <img src="media/O365-DSR-Doc-Final_image15.png" /><br />People|<img src="media/O365-DSR-Doc-Final_image16.png" /><br />Visio |
-| <img src="media/O365-DSR-Doc-Final_image17.png" /><br />PowerPoint | <img src="media/O365-DSR-Doc_image33.png" /><br />Yammer ||
+| <img src="media/O365-DSR-Doc-Final_image17.png" /><br />PowerPoint | 
+||
 
 <!-- end of table -->
 
