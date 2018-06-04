@@ -77,26 +77,8 @@ For sensitive and highly regulated protection, create a new MFA rule for each (w
 Add Office 365 SharePoint Online to the scope of the existing rule. See [Require a compliant or domain joined device](secure-email-recommended-policies.md#require-a-compliant-or-domain-joined-device-2). 
 
 
-**Application access**
-|Type|Properties|Values|Notes|
-|:-----|:-----|:-----|:-----|
-|OneDrive for Business and other apps that user modern authentication|All platforms|True|Selected|
-|     |Windows must meet the following requirement|Device must be domain joined or compliant|Selected (List)|
-|     |Specific platforms|False||
-|Browser access to SharePoint and OneDrive for Business |Block non-compliant devices on same platform as OneDrive for Business|True|Check|
 
-**Policy deployment**
-|Type|Properties|Values|Notes|
-|:-----|:-----|:-----|:-----|
-|Targeted groups|Select the Active Directory groups to target with this policy|     |     |
-|     |All users|False|     |
-|     |Selected security groups|True|Selected|
-|     |Modify|Select specific security group containing targeted users.|     |
-|Exempt groups|Select the Active Directory groups to exempt from this policy (overrides members of the Targeted Groups list).|     |     |    
-|     |No exempt users|True|Selected|
-|     |Selected security groups|False|     |
-
-### Mobile application management conditional access for SharePoint Online
+### Only allow access from apps that support Intune App policies for SharePoint Online
 
 You must set a Conditional Access policy specifically for SharePoint Online in the Intune Management portal to manage mobile apps.
 
