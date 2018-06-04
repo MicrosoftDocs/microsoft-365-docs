@@ -12,11 +12,25 @@ ms.custom: it-pro
 ---
 
 # Policy recommendations for securing SharePoint Sites and files
-The following recommendations are provided *in addition to* the [common identity and access policy recommendations](identity-access-policies.md) and [policy recommendations for securing email](secure-email-recommended-policies.md). To safeguard SharePoint Online files, new policies must be created, and existing policies amended, as described here.
+This article describes how to implement the recommended identity and device access policies to protect SharePoint Online and OneDrive for Business. This guidance builds on the [Common identity and device access policies](identity-access-policies.md). 
 
-The following recommendations are based on three different tiers of security and protection for SharePoint files that can be applied based on the granularity of your needs: **baseline**, **sensitive**, and **highly regulated**. You can learn more about these security tiers, and the recommended client operating systems, referenced by these recommendations in the [recommended security policies and configurations introduction](microsoft-365-policies-configurations.md).
+
+These recommendations are based on three different tiers of security and protection for SharePoint files that can be applied based on the granularity of your needs: **baseline**, **sensitive**, and **highly regulated**. You can learn more about these security tiers, and the recommended client operating systems, referenced by these recommendations in the [recommended security policies and configurations introduction](microsoft-365-policies-configurations.md).
+
+The following diagram illustrates the set of recommended policies for baseline security and indicates which policies will be updated or newly created to add protection for SharePoint Online and OneDrive for Business.
 
 ![Summary of policies for SharePoint Online and OneDrive](media/secure-docs/GoldenConfigRuleSet.png)
+
+For accessibility, this illustration is detailed in the following table.
+|Policy|Where this is configured|Changes for SharePoint Online and OneDrive for Business|Notes|
+|:-----|:-----|:-----|:-----|
+|Require multi-factor authentication (MFA) when sign-in risk is medium or high|Azure AD conditional access policy|Edit to add SharePoint Online|For sensitive and and highly regulated protection, this rule is more protective|
+|Require compliant PCs and mobile devices|Azure AD conditional access policy|Edit to add SharePoint Online|This rule enforces device management with Intune|
+|High risk users must change password|Azure AD Identity Protection user risk policy|No changes| |
+|Device compliance policies|Intune device compliance policy|No changes|You should see one policy for each platform|
+|Only allow access from apps that support Intune app policies|Intune App Protection policies and conditional access rules|Create a new rule for SharePoint Online|You need one rule for each service, so you might already have a rule for Exchange Online|
+|Define app plolicy|Intune App Protection policies and conditional access rules|Edit this rule to include apps that access SharePoint Online and OneDrive for Business|One policy for each platform|
+|SharePoint admin access control policy|SharePoint admin center policy|This is a new configuration|Configure access control policies to block access to SharePoint Online and OneDrive for Business content from unmanaged devices|
 
 >[!NOTE]
 >All security groups created as part of these recommendations must be created with Office features enabled. This is specifically important for the deployment of AIP when securing documents in SharePoint.
