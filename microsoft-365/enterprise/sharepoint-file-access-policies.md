@@ -39,10 +39,19 @@ Currently, the only difference between the recommendations for baseline security
 - Sensitive protection: MFA required when sign-in risk is low or higher
 - Highly regulated: Always require MFA
 
-Not every organization requires sensitive or highly regulated protection. If you do, you likely only require these levels of protection for a subset of users who have access to sensitive or highly regulated data. Therefore, the recommendation is to create additional rules for each level of protection and assign these to the target group of users.
+Not every organization requires sensitive or highly regulated protection. If you do, you likely only require these levels of protection for a subset of users who have access to sensitive or highly regulated data. Therefore, the recommendation is to create additional rules for each level of protection and assign these to the target group of users. If a user is included in more than one rule, the most restrictive rule applies to their access. 
 
 The following diagram provides an example of Azure AD group assignments across the three tiers of protection.
+
 ![MFA rules for three tiers of protection](media/secure-docs/SharePointMFAruleset.png)
+
+In the illustration:
+- The MFA rule for baseline protection is assigned to "Regular core staff."
+- The MFA rule for sensitive protection is assigned to "Senior and strategic staff."
+- The FMFA rule for highly regulated protection is assinged to "IT staff" and "Trade secret project staff."
+
+##Configuring policies
+The rest of this article provides guidance on configuring the recommended policies.  
 
 >[!NOTE]
 >All security groups created as part of these recommendations must be created with Office features enabled. This is specifically important for the deployment of AIP when securing documents in SharePoint.
@@ -50,21 +59,23 @@ The following diagram provides an example of Azure AD group assignments across t
 >![Office features enabled for security groups](./media/security-group.png)
 >
 
-## Baseline
+### Require MFA
 
-### Medium and above risk requires MFA
-Make the following changes to the existing CA policy created when applying [policy recomendations to secure email](secure-email-recommended-policies.md) in the assignments category:
+####Baseline protection
+For baseline protection, edit the [rule you already created for Exchange Online](secure-email-recommended-policies.md#medium-and-above-risk-requires-mfa) to include SharePoint Online and OneDrive for Business. Edit this in the assignments category:
 
 |Type|Properties|Values|Notes|
 |:-----|:-----|:-----|:-----|
 |Cloud apps|Include|Select apps:<br></br>  Office 365 Exchange Online<br></br>  Office 365 SharePoint Online|Select both|
 
+####Sensitive and highly regulated protection
+For sensitive and highly regulated protection, create a new MFA rule for each (with the recommended level of protection) and assign the rule to the intended users. For recommended settings, see the following:
+- [Sensitive: Low and above risk requires MFA](secure-email-recommended-policies.md#low-and-above-risk-requires-mfa)
+- [Highly regulated: MFA required](secure-email-recommended-policies.md#mfa-required)
+
 ### Require a compliant or domain joined device
-To create a new Intune Conditional Access Policy for SharePoint Online, log in to the [Microsoft Management portal](http://manage.microsoft.com) with your administrator credentials and then navigate to **Policy** > **Conditional Access** > **SharePoint Online Policy**.
+Add Office 365 SharePoint Online to the scope of the existing rule. See [Require a compliant or domain joined device](secure-email-recommended-policies.md#require-a-compliant-or-domain-joined-device-2). 
 
-![SharePoint Online Policy](./media/secure-docs/sharepoint-online-policy.png)
-
-You must set a Conditional Access policy specifically for SharePoint Online in the Intune Management portal to require a compliant or domain joined device.
 
 **Application access**
 |Type|Properties|Values|Notes|
