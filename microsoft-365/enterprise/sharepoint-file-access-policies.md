@@ -16,6 +16,8 @@ The following recommendations are provided *in addition to* the [common identity
 
 The following recommendations are based on three different tiers of security and protection for SharePoint files that can be applied based on the granularity of your needs: **baseline**, **sensitive**, and **highly regulated**. You can learn more about these security tiers, and the recommended client operating systems, referenced by these recommendations in the [recommended security policies and configurations introduction](microsoft-365-policies-configurations.md).
 
+![Summary of policies for SharePoint Online and OneDrive](media/secure-docs/GoldenConfigRuleSet.png)
+
 >[!NOTE]
 >All security groups created as part of these recommendations must be created with Office features enabled. This is specifically important for the deployment of AIP when securing documents in SharePoint.
 >
