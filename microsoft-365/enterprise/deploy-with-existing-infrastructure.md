@@ -3,7 +3,7 @@ title: Deployment of Microsoft 365 Enterprise with existing infrastructure
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/09/2018
+ms.date: 06/04/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -35,6 +35,12 @@ Step through the following required and optional conditions for the networking i
 Step through the following required and optional conditions for the identity infrastructure for Microsoft 365 Enterprise.
 
 [!INCLUDE [Deployment exit criteria for identity](./includes/deployment-exit-criteria-identity.md)]
+
+## Exit criteria for Windows 10 Enterprise (phase 3)
+
+Step through the following required and optional conditions for the Windows 10 Enterprise infrastructure for Microsoft 365 Enterprise.
+
+[!INCLUDE [Deployment exit criteria for identity](./includes/deployment-exit-criteria-windows10.md)]
 
 ## Exit criteria for Office 365 ProPlus (phase 4)
 
