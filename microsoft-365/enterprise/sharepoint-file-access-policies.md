@@ -17,6 +17,7 @@ This article describes how to implement the recommended identity and device acce
 
 These recommendations are based on three different tiers of security and protection for SharePoint files that can be applied based on the granularity of your needs: **baseline**, **sensitive**, and **highly regulated**. You can learn more about these security tiers, and the recommended client operating systems, referenced by these recommendations in the [recommended security policies and configurations introduction](microsoft-365-policies-configurations.md).
 
+##Baseline security
 The following diagram illustrates the set of recommended policies for baseline security and indicates which policies will be updated or newly created to add protection for SharePoint Online and OneDrive for Business.
 
 ![Summary of policies for SharePoint Online and OneDrive](media/secure-docs/GoldenConfigRuleSet.png)
@@ -31,6 +32,9 @@ For accessibility, this illustration is detailed in the following table.
 |Only allow access from apps that support Intune app policies|Intune App Protection policies and conditional access rules|Create a new rule for SharePoint Online|You need one rule for each service, so you might already have a rule for Exchange Online|
 |Define app plolicy|Intune App Protection policies and conditional access rules|Edit this rule to include apps that access SharePoint Online and OneDrive for Business|One policy for each platform|
 |SharePoint admin access control policy|SharePoint admin center policy|This is a new configuration|Configure access control policies to block access to SharePoint Online and OneDrive for Business content from unmanaged devices|
+
+##Sensitive and highly regulated security
+Currently, the only difference between the recommendations for baseline security compared to sensitive and highly regulated security is the amount of protection in the first rule in this rule set: Require multi-factor authentication. 
 
 >[!NOTE]
 >All security groups created as part of these recommendations must be created with Office features enabled. This is specifically important for the deployment of AIP when securing documents in SharePoint.
