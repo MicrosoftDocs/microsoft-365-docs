@@ -112,7 +112,7 @@ Article (35)
 
 The customer should ensure that their contracts with processors include requirements for aiding with any relevant legal or regulatory obligations related to processing and protecting personal data.
 
-##### Supporting Microsoft Documentation: 
+##### Supporting Microsoft Documentation
 
 The Microsoft contracts that require us to aid with your obligations under the GDPR, including support for the data subject's rights.
 
@@ -132,14 +132,13 @@ The customer should maintain all necessary and required records related to proce
 
 The tools provided by Microsoft services to help you maintain the records necessary demonstrate compliance and support for accountability under the GDPR.
 
--   Auditing and Reporting in Dynamics 365 [[3](gdpr-arc-Dynamics365.md#3)]
+- Auditing and Reporting in Dynamics 365 [[3](gdpr-arc-Dynamics365.md#3)]
 
 ##### Addresses GDPR Article(s)
 
 (5)(2), (24)(1), (30)(1)(a), (30)(1)(b), (30)(1)(c), (30)(1)(d), (30)(1)(g), (30)(1)(f), (30)(3), (30)(4), (30)(5)
 
-Rights of data subjects
------------------------
+### 3. Rights of data subjects
 
 #### Determining PII principals’ rights and enabling exercise (7.3.1)
 
@@ -329,8 +328,7 @@ Information about any capabilities in Microsoft services for that might support 
 
 (13)(2)(f), (14)(2)(g), (22)(1), (22)(3)
 
-Privacy by design and default
------------------------------
+### 4. Privacy by design and default
 
 #### Limit collection (7.4.1)
 
@@ -338,7 +336,7 @@ Privacy by design and default
 
 The customer should understand requirements around limits on collection of personal data (e.g. that the collection should be limited to what is needed for the specified purpose).
 
-##### Supporting Microsoft Documentation: 
+##### Supporting Microsoft Documentation
 
 A description of the data collected by Microsoft services.
 
@@ -356,7 +354,7 @@ A description of the data collected by Microsoft services.
 
 The customer is responsible for limiting the processing of personal data so that it is limited to what is adequate for the identified purpose.
 
-##### Supporting Microsoft Documentation: 
+##### Supporting Microsoft Documentation
 
 A description of the data collected by Microsoft services.
 
@@ -374,7 +372,7 @@ A description of the data collected by Microsoft services.
 
 The customer should understand requirements around de-identification of personal data which may include, when it should be used, the extent to which it should de-identify, and instances when it cannot be used.
 
-##### Supporting Microsoft Documentation: 
+##### Supporting Microsoft Documentation
 
 Microsoft applies de-identification and pseudonymization internally, where appropriate, to provide additional privacy safeguards for personal data.
 
@@ -388,7 +386,7 @@ Microsoft applies de-identification and pseudonymization internally, where appro
 
 The customer should use and comply with de-identification objectives and methods set by their organization.
 
-##### Supporting Microsoft Documentation: 
+##### Supporting Microsoft Documentation
 
 Microsoft applies de-identification and pseudonymization internally, where appropriate, to provide additional privacy safeguards for personal data.
 
@@ -402,7 +400,7 @@ Microsoft applies de-identification and pseudonymization internally, where appro
 
 The customer should understand requirements around the retention of personal data past its use for the identified purposes. Where provided tooling by the system, the customer should utilize those tools to erase or delete as necessary.
 
-##### Supporting Microsoft Documentation: 
+##### Supporting Microsoft Documentation
 
 -   Dynamics 365 Data Subject Requests for the GDPR [[4](gdpr-arc-Dynamics365.md#4)] *see: Delete*
 
@@ -416,7 +414,7 @@ Addresses GDPR Article(s)
 
 The customer should be aware of temporary files that may be created by the system that could lead to non-compliance with policies around processing of personal data (e.g. personal data might be retained in a temporary file longer than required or allowed). Where the system provides such tools for temporary file deletion or checking, the customer should utilize such tools to comply with requirements.
 
-##### Supporting Microsoft Documentation: 
+##### Supporting Microsoft Documentation
 
 A description of capabilities provided by the service to identify personal data to support your temporary file policies.
 
@@ -434,7 +432,7 @@ A description of capabilities provided by the service to identify personal data 
 
 The customer should determine how long personal data should be retained, taking into consideration the identified purposes.
 
-##### Supporting Microsoft Documentation: 
+##### Supporting Microsoft Documentation
 
 Information about the retention of personal data by Microsoft services that you can include in documentation provided to data subjects.
 
@@ -450,7 +448,7 @@ Information about the retention of personal data by Microsoft services that you 
 
 The customer should utilize any deletion or disposal mechanisms provided by the system to delete personal data.
 
-##### Supporting Microsoft Documentation: 
+##### Supporting Microsoft Documentation
 
 Capabilities provided by Microsoft Services to support your data deletion policies.
 
@@ -466,7 +464,7 @@ Capabilities provided by Microsoft Services to support your data deletion polici
 
 The customer should be aware of requirements around the accuracy of personal data (e.g., accuracy upon collection, keeping data up to date, etc.) and utilize any mechanisms provided by the system for such.
 
-##### Supporting Microsoft Documentation: 
+##### Supporting Microsoft Documentation
 
 How Microsoft services support the accuracy of personal data, and any capabilities they provide to support your data accuracy policy.
 
@@ -482,7 +480,7 @@ How Microsoft services support the accuracy of personal data, and any capabiliti
 
 The customer should understand requirements around safeguarding the transmission of personal data, including who has access to transmission mechanisms, records of transmission, etc.
 
-##### Supporting Microsoft Documentation: 
+##### Supporting Microsoft Documentation
 
 A description of the types of personal data that are transferred by Microsoft services and the locations they are transferred between, and the legal safeguards for the transfer.
 
@@ -498,7 +496,7 @@ A description of the types of personal data that are transferred by Microsoft se
 
 The customer should be aware of requirements for transferring personal data (PII) to a different geographic location and document what measures are in place to meet such requirements.
 
-##### Supporting Microsoft Documentation: 
+##### Supporting Microsoft Documentation
 
 A description of the types of personal data that are transferred by Microsoft services and the locations they are transferred between, and the legal safeguards for the transfer.
 
@@ -514,7 +512,7 @@ Articles (44), (45), (46), (47), (48), and (49)
 
 The customer should understand, and be able to provide to the individual, the countries to which personal data is or may be transferred. Where a third-party/processor may perform this transfer, the customer should obtain this information from the processor.
 
-##### Supporting Microsoft Documentation: 
+##### Supporting Microsoft Documentation
 
 A description of the types of personal data that are transferred by Microsoft services and the locations they are transferred between, and the legal safeguards for the transfer.
 
@@ -581,7 +579,7 @@ Dynamics 365 is processor of personal data.
 
 Customers should determine their role in processing personal data (e.g. controller, processor, co-controller) to identify the appropriate requirements (regulatory, etc.) for processing personal data.
 
-##### Supporting Microsoft Documentation: 
+##### Supporting Microsoft Documentation
 
 How Microsoft considers each service as either a processor or controller when processing personal data.
 
@@ -597,7 +595,7 @@ How Microsoft considers each service as either a processor or controller when pr
 
 Customers should identify parties that may have a role or interest in their processing of personal data (e.g. regulators, auditors, data subjects, contracted personal data processors), and be aware of requirements to engage such parties where required.
 
-##### Supporting Microsoft Documentation: 
+##### Supporting Microsoft Documentation
 
 How Microsoft incorporates the views of all stakeholders in consideration of the risks involved in the processing of personal data.
 
@@ -614,7 +612,7 @@ How Microsoft incorporates the views of all stakeholders in consideration of the
 
 As part of any overall security or privacy program that a customer may have, they should include the processing of personal data and requirements relating to it.
 
-##### Supporting Microsoft Documentation: 
+##### Supporting Microsoft Documentation
 
 How Microsoft services include the processing of personal data in information security management and privacy programs.
 
@@ -625,7 +623,6 @@ How Microsoft services include the processing of personal data in information se
 - 5.2.4 Information security management system in Compliance Manager [[15](gdpr-arc-Dynamics365.md#15)]
 
 ##### Addresses GDPR Article(s)
-
 (32)(2)
 
 #### Planning (5.3)
@@ -634,15 +631,13 @@ How Microsoft services include the processing of personal data in information se
 
 Customers should consider the handling of personal data as part of any risk assessment they complete and apply controls as they deem necessary to mitigate risk related to personal data they control.
 
-##### Supporting Microsoft Documentation: 
+##### Supporting Microsoft Documentation
 
 How Microsoft services consider the risks specific to the processing of personal data as part of their overall security and privacy program.
 
--   Dynamics 365-ISO27001 Statement of Applicability [[5](gdpr-arc-Dynamics365.md#5)]
-
--   Dynamics 365-ISO27018 Statement of Applicability [[6](gdpr-arc-Dynamics365.md#6)]
-
--   5.3 Planning in Compliance Manager [[15](gdpr-arc-Dynamics365.md#15)]
+- Dynamics 365-ISO27001 Statement of Applicability [[5](gdpr-arc-Dynamics365.md#5)]
+- Dynamics 365-ISO27018 Statement of Applicability [[6](gdpr-arc-Dynamics365.md#6)]
+- 5.3 Planning in Compliance Manager [[15](gdpr-arc-Dynamics365.md#15)]
 
 ##### Addresses GDPR Article(s)
 
@@ -654,7 +649,7 @@ How Microsoft services consider the risks specific to the processing of personal
 
 The customer should augment any existing information security policies to include protection of personal data, including policies necessary for compliance with any applicable legislation.
 
-##### Supporting Microsoft Documentation: 
+##### Supporting Microsoft Documentation
 
 Microsoft policies for information security and any specific measures for the protection of personal information.
 
@@ -667,7 +662,6 @@ Microsoft policies for information security and any specific measures for the pr
 -   6.2 Information security policies in Compliance Manager [[15](gdpr-arc-Dynamics365.md#15)]
 
 ##### Addresses GDPR Article(s)
-
 24(2)
 
 #### 6.3 Organization of Information Security Customer consideration
@@ -678,13 +672,13 @@ The customer should, within their organization, define responsibilities for secu
 
 An overview of the role of Microsoft's Data Protection Officer, the nature of his duties, reporting structure and contact information.
 
--   Microsoft DPO Information [[16](gdpr-arc-Dynamics365.md#16)]
+- Microsoft DPO Information [[16](gdpr-arc-Dynamics365.md#16)]
 
--   Dynamics 365-ISO27001 Statement of Applicability [[5](gdpr-arc-Dynamics365.md#5)]
+- Dynamics 365-ISO27001 Statement of Applicability [[5](gdpr-arc-Dynamics365.md#5)]
 
--   Dynamics 365-ISO27018 Statement of Applicability [[6](gdpr-arc-Dynamics365.md#6)]
+- Dynamics 365-ISO27018 Statement of Applicability [[6](gdpr-arc-Dynamics365.md#6)]
 
--   6.3 Organization of information security in Compliance Manager [[15](gdpr-arc-Dynamics365.md#15)]
+- 6.3 Organization of information security in Compliance Manager [[15](gdpr-arc-Dynamics365.md#15)]
 
 ##### Addresses GDPR Article(s)
 
@@ -696,29 +690,29 @@ An overview of the role of Microsoft's Data Protection Officer, the nature of hi
 
 The customer should determine and assign responsibility for providing relevant training related to protecting personal data.
 
-##### Supporting Microsoft Documentation: 
+##### Supporting Microsoft Documentation
 
 An overview of the role of Microsoft's Data Protection Officer, the nature of his duties, reporting structure and contact information.
 
--   Microsoft DPO Information [[16](gdpr-arc-Dynamics365.md#16)]
+- Microsoft DPO Information [[16](gdpr-arc-Dynamics365.md#16)]
 
--   Dynamics 365-ISO27001 Statement of Applicability [[5](gdpr-arc-Dynamics365.md#5)] *section A.7*
+- Dynamics 365-ISO27001 Statement of Applicability [[5](gdpr-arc-Dynamics365.md#5)] *section A.7*
 
--   Dynamics 365-ISO27018 Statement of Applicability [[6](gdpr-arc-Dynamics365.md#6)] *section 7.2*
+- Dynamics 365-ISO27018 Statement of Applicability [[6](gdpr-arc-Dynamics365.md#6)] *section 7.2*
 
--   6.4 Information security awareness and training in Compliance Manager [[15](gdpr-arc-Dynamics365.md#15)] [15]
+- 6.4 Information security awareness and training in Compliance Manager [[15](gdpr-arc-Dynamics365.md#15)] [15]
 
 ##### Addresses GDPR Article(s)
 
 (39)(1)(b)
 
--   ### 6.5.1 Classification of Information
+#### 6.5.1 Classification of Information
 
 ##### Customer consideration
 
 The customer should explicitly consider personal data as part of a data classification scheme.
 
-##### Supporting Microsoft Documentation: 
+##### Supporting Microsoft Documentation
 
 Capabilities in Dynamics 365 to support personal data classification.
 
@@ -734,11 +728,11 @@ Capabilities in Dynamics 365 to support personal data classification.
 
 The customer should determine internal policies for the use of removable media as it relates to the protection of personal data (e.g., encrypting devices).
 
-##### Supporting Microsoft Documentation: 
+##### Supporting Microsoft Documentation
 
 How Microsoft services protect the security of personal information on any removable media.
 
--   6.5.2 Management of removable media in Compliance Manager [[15](gdpr-arc-Dynamics365.md#15)]
+#### 6.5.2 Management of removable media in Compliance Manager [[15](gdpr-arc-Dynamics365.md#15)]
 
 ##### Addresses GDPR Article(s)
 
@@ -750,11 +744,11 @@ How Microsoft services protect the security of personal information on any remov
 
 The customer should determine internal policies for protecting personal data when transferring physical media (e.g. encryption).
 
-##### Supporting Microsoft Documentation: 
+##### Supporting Microsoft Documentation
 
 How Microsoft services protects personal data during any transfer of physical media.
 
--   6.5.3 Physical media transfer in Compliance Manager [[15](gdpr-arc-Dynamics365.md#15)]
+#### 6.5.3 Physical media transfer in Compliance Manager [[15](gdpr-arc-Dynamics365.md#15)]
 
 ##### Addresses GDPR Article(s)
 
@@ -766,13 +760,12 @@ How Microsoft services protects personal data during any transfer of physical me
 
 The customer should be aware of which responsibilities they have for access control within the service they are using, and manage those responsibilities appropriately, using the tools available.
 
-##### Supporting Microsoft Documentation: 
+##### Supporting Microsoft Documentation
 
 The tools provided by Microsoft services to help you enforce access control.
 
--   Dynamics 365 - Discover built in security features [[9](gdpr-arc-Dynamics365.md#9)]
-
--   6.6.1 User Access Management in Compliance Manager [[15](gdpr-arc-Dynamics365.md#15)]
+- Dynamics 365 - Discover built in security features [[9](gdpr-arc-Dynamics365.md#9)]
+- 6.6.1 User Access Management in Compliance Manager [[15](gdpr-arc-Dynamics365.md#15)]
 
 ##### Addresses GDPR Article(s)
 
@@ -784,7 +777,7 @@ The tools provided by Microsoft services to help you enforce access control.
 
 The customer should manage user registration and de-registration within the service they utilize, using the tools available to them.
 
-##### Supporting Microsoft Documentation: 
+##### Supporting Microsoft Documentation
 
 The tools provided by Microsoft services to help you enforce access control.
 
@@ -802,13 +795,12 @@ The tools provided by Microsoft services to help you enforce access control.
 
 The customer should manage user profiles, especially for authorized access to personal data, within the service they utilize, using the tools available to them.
 
-##### Supporting Microsoft Documentation: 
+##### Supporting Microsoft Documentation
 
 How Microsoft services support formal access control to personal data, including user IDs, roles, and the registration and de-registration of users.
 
--   Dynamics 365 - Discover built in security features [[9](gdpr-arc-Dynamics365.md#9)]
-
--   6.6.3 User access provisioning n Compliance Manager [[15](gdpr-arc-Dynamics365.md#15)]
+- Dynamics 365 - Discover built in security features [[9](gdpr-arc-Dynamics365.md#9)]
+- 6.6.3 User access provisioning n Compliance Manager [[15](gdpr-arc-Dynamics365.md#15)]
 
 ##### Addresses GDPR Article(s)
 
@@ -820,12 +812,11 @@ How Microsoft services support formal access control to personal data, including
 
 The customer should manage user ID's to facilitate tracking of access (especially to personal data), within the service they utilize, using the tools available to them.
 
-##### Supporting Microsoft Documentation: 
+##### Supporting Microsoft Documentation
 
 How Microsoft services support formal access control to personal data, including user IDs, roles, and the registration and de-registration of users.
 
 - Dynamics 365 - Discover built in security features [[9](gdpr-arc-Dynamics365.md#9)]
-
 - 6.6.4 Management of privileged access [15]
 
 Addresses GDPR Article(s)
@@ -838,16 +829,14 @@ Addresses GDPR Article(s)
 
 The customer should utilize provided mechanisms in the service to ensure secure log on capabilities for their users where necessary.
 
-##### Supporting Microsoft Documentation: 
+##### Supporting Microsoft Documentation
 
 How Microsoft services support internal access control policies related to personal data.
 
 - Who can access your data and on what terms [[10](gdpr-arc-Dynamics365.md#10)]
-
 - 6.6.5 Information access restrictions in Compliance Manager [[15](gdpr-arc-Dynamics365.md#15)]
 
 ##### Addresses GDPR Article(s)
-
 (5)(1)(f)
 
 #### Cryptography (6.7)
@@ -856,12 +845,11 @@ How Microsoft services support internal access control policies related to perso
 
 The customer should determine which data may need to be encrypted, and whether the service they are utilizing offers this capability. The customer should utilize encryption as needed, using the tools available to them.
 
-##### Supporting Microsoft Documentation: 
+##### Supporting Microsoft Documentation
 
 How Microsoft services support encryption and pseudonymization to reduce the risk of processing personal data.
 
 - Dynamics 365 - Discover built in security features [[9](gdpr-arc-Dynamics365.md#9)]
-
 - 6.7 Cryptography in Compliance Manager [[15](gdpr-arc-Dynamics365.md#15)]
 
 ##### Addresses GDPR Article(s)
@@ -874,16 +862,14 @@ How Microsoft services support encryption and pseudonymization to reduce the ris
 
 Where the customer uses cloud computing services (PaaS, SaaS, IaaS) they should understand how the cloud provider ensures that personal data is erased from storage space prior to that space being assigned to another customer.
 
-##### Supporting Microsoft Documentation: 
+##### Supporting Microsoft Documentation
 
 How Microsoft services ensure that personal data is erased from storage equipment before that equipment is transferred or reused.
 - Dynamics 365-ISO27001 Statement of Applicability [[5](gdpr-arc-Dynamics365.md#5)], *section 10.1*
 - Dynamics 365-ISO27018 Statement of Applicability [[6](gdpr-arc-Dynamics365.md#6)], *section 8.3*
-
--   6.8.1 Secure disposal or re-use of equipment in Compliance Manager [[15](gdpr-arc-Dynamics365.md#15)]
+- 6.8.1 Secure disposal or re-use of equipment in Compliance Manager [[15](gdpr-arc-Dynamics365.md#15)]
 
 ##### Addresses GDPR Article(s)
-
 (5)(1)(f)
 
 #### Clear desk and clear screen policy (6.8.2)
@@ -892,7 +878,7 @@ How Microsoft services ensure that personal data is erased from storage equipmen
 
 The customer should consider risks around hardcopy material that displays personal data, and potentially restrict the creation of such material. Where the system in use provides the capability to restrict this (e.g., settings to prevent printing or copying/pasting of sensitive data), the customer should consider the need to utilize those capabilities.
 
-##### Supporting Microsoft Documentation: 
+##### Supporting Microsoft Documentation
 
 What Microsoft implements to manage hardcopy.
 
@@ -909,7 +895,7 @@ What Microsoft implements to manage hardcopy.
 
 The customer should consider the implications of using personal data in development and testing environments within their organization.
 
-##### Supporting Microsoft Documentation: 
+##### Supporting Microsoft Documentation
 
 How Microsoft ensures that personal data is protected in development and test environments.
 
@@ -927,7 +913,7 @@ How Microsoft ensures that personal data is protected in development and test en
 
 The customer should ensure that they use system provided capabilities to create redundancies in their data and test as necessary.
 
-##### Supporting Microsoft Documentation: 
+##### Supporting Microsoft Documentation
 
 How Microsoft ensures the availability of data that may include personal data, how accuracy of restored data is ensured, and the tools and procedures Microsoft services provide to allow you to backup and restore data.
 
@@ -936,7 +922,6 @@ How Microsoft ensures the availability of data that may include personal data, h
 - 6.9.2 Information Backup in Compliance Manager [[15](gdpr-arc-Dynamics365.md#15)]
 
 ##### Addresses GDPR Article(s)
-
 (32)(1)(c), (5)(1)(f)
 
 #### Event logging (6.9.3)
@@ -945,7 +930,7 @@ How Microsoft ensures the availability of data that may include personal data, h
 
 The customer should understand the capabilities for logging provided by the system and utilize such capabilities to ensure that they can log actions related to personal data that they deem necessary.
 
-##### Supporting Microsoft Documentation: 
+##### Supporting Microsoft Documentation
 
 The data Microsoft service records for you, including user activities, exceptions, faults and information security events, and how you can access those logs for use as part of your record keeping.
 
@@ -954,7 +939,6 @@ The data Microsoft service records for you, including user activities, exception
 - 6.9.3 Event logging in Compliance Manager [[15](gdpr-arc-Dynamics365.md#15)]
 
 ##### Addresses GDPR Article(s)
-
 (5)(1)(f)
 
 #### Protection of log information (6.9.4)
@@ -963,7 +947,7 @@ The data Microsoft service records for you, including user activities, exception
 
 The customer should consider requirements for protecting log information that may contain personal data or that may contain records related to personal data processing. Where the system in use provides capabilities to protect logs, the customer should utilize these capabilities where necessary.
 
-##### Supporting Microsoft Documentation: 
+##### Supporting Microsoft Documentation
 
 How Microsoft protects logs that may contain personal data.
 
@@ -980,7 +964,7 @@ How Microsoft protects logs that may contain personal data.
 
 The customer should have procedures for cases where personal data may be transferred on physical media (such as a hard drive being moved between servers or facilities). These may include logs, authorizations, and tracking. Where a third-party or other processor may be transferring physical media, the customer should ensure that that organization has procedures in place to ensure security of the personal data.
 
-##### Supporting Microsoft Documentation: 
+##### Supporting Microsoft Documentation
 
 How Microsoft services transfer physical media that may contain personal data, including the circumstances when transfer might occur, and the protective measures taken to protect the data.
 
@@ -989,7 +973,6 @@ How Microsoft services transfer physical media that may contain personal data, i
 - 6.10.1 Information transfer policies and procedures in Compliance Manager [[15](gdpr-arc-Dynamics365.md#15)]
 
 ##### Addresses GDPR Article(s)
-
 (5)(1)(f)
 
 #### Confidentiality or non-disclosure agreements (6.10.2)
@@ -998,7 +981,7 @@ How Microsoft services transfer physical media that may contain personal data, i
 
 The customer should determine the need for confidentiality agreements or the equivalent for individuals with access to or responsibilities related to personal data.
 
-##### Supporting Microsoft Documentation: 
+##### Supporting Microsoft Documentation
 
 How Microsoft services ensure that individuals with authorized access to personal data have committed themselves to confidentiality.
 
@@ -1015,7 +998,7 @@ How Microsoft services ensure that individuals with authorized access to persona
 
 The customer should understand requirements for encryption of personal data, especially when sent over public networks. Where the system provides mechanisms to encrypt data, the customer should utilize those mechanisms where necessary.
 
-##### Supporting Microsoft Documentation: 
+##### Supporting Microsoft Documentation
 
 Description of the measures Microsoft services take to protect data in transit, including encryption of the data, and how Microsoft services protect data that may contain personal data as it passes through public data networks, including any encryption measures.
 
@@ -1032,7 +1015,7 @@ Description of the measures Microsoft services take to protect data in transit, 
 
 The customer should understand how systems are designed and engineered to consider protection of personal data. Where a customer uses a system engineered by a third-party, it is their responsibility to ensure that such protections have been considered.
 
-##### Supporting Microsoft Documentation: 
+##### Supporting Microsoft Documentation
 
 How Microsoft services include personal data protection principles as a mandatory part of our secure design/engineering principles.
 
@@ -1040,7 +1023,6 @@ How Microsoft services include personal data protection principles as a mandator
 - Secure system engineering principles in Compliance Manager [[15](gdpr-arc-Dynamics365.md#15)]
 
 ##### Addresses GDPR Article(s)
-
 (25)(1)
 
 #### Supplier Relationships (6.12)
@@ -1049,7 +1031,7 @@ How Microsoft services include personal data protection principles as a mandator
 
 The customer should ensure that any information security and personal data protection requirements and that are the responsibility of a third-party are addressed in contractual information or other agreements. The agreements should also address the instructions for processing.
 
-##### Supporting Microsoft Documentation: 
+##### Supporting Microsoft Documentation
 
 How Microsoft services address security and data protection in our agreements with our suppliers and how we ensure those agreements are effectively implemented.
 
@@ -1057,7 +1039,6 @@ How Microsoft services address security and data protection in our agreements wi
 - 6.12 Supplier Relationships in Compliance Manager [[15](gdpr-arc-Dynamics365.md#15)]
 
 ##### Addresses GDPR Article(s)
-
 (5)(1)(f), (28)(1), (28)(3)(a), (28)(3)(b), (28)(3)(c), (28)(3)(d), (28)(3)(e), (28)(3)(f), (28)(3)(g), (28)(3)(h),(30)(2)(d), (32)(1)(b)
 
 #### Management of information security incidents and improvements (6.13.1)
@@ -1074,7 +1055,6 @@ How Microsoft services determine if a security incident is a breach of personal 
 - 6.13.1 Management of information security incidents and improvements in Compliance Manager [[15](gdpr-arc-Dynamics365.md#15)]
 
 ##### Addresses GDPR Article(s)
-
 (33)(2)
 
 #### Responsibilities and procedures (during information security incidents) (6.13.2)
@@ -1117,7 +1097,7 @@ Description of the information Microsoft services provide to help you decide if 
 
 The customer should understand the requirements for records related to personal data processing that need to be maintained.
 
-##### Supporting Microsoft Documentation: 
+##### Supporting Microsoft Documentation
 
 How Microsoft services store records relating to the processing of personal data.
 
@@ -1126,7 +1106,6 @@ How Microsoft services store records relating to the processing of personal data
 - Dynamics 365-ISO27018 Statement of Applicability [[6](gdpr-arc-Dynamics365.md#6)]; section 5.2
 
 ##### Addresses GDPR Article(s)
-
 (5)(2), (24)(2)
 
 #### Independent review of information security (6.15.2)
@@ -1135,7 +1114,7 @@ How Microsoft services store records relating to the processing of personal data
 
 The customer should be aware of requirements for assessments of the security of personal data processing. This may include internal or external audits, or other measures for assessing the security of processing. Where the customer is dependent on another organization of third-party for all or part of the processing, they should collect information about such assessments performed by them.
 
-##### Supporting Microsoft Documentation: 
+##### Supporting Microsoft Documentation
 
 How Microsoft services test and assesses the effectiveness of technical and organizational measures to ensure the security of processing, including any audits by third parties.
 
@@ -1143,7 +1122,6 @@ How Microsoft services test and assesses the effectiveness of technical and orga
 - 6.15.2 Independent review of information security in Compliance Manager [[15](gdpr-arc-Dynamics365.md#15)]
 
 ##### Addresses GDPR Article(s)
-
 (32)(1)(d), (32)(2)
 
 #### Technical compliance review (6.15.3)
@@ -1152,7 +1130,7 @@ How Microsoft services test and assesses the effectiveness of technical and orga
 
 The customer should understand requirements for testing and evaluating the security of processing personal data. This may include technical tests such as penetration testing. Where the customer uses a third-party system or processor, they should understand what responsibilities they have for securing and testing the security (e.g. managing configurations to secure data and then testing those configuration settings). Where the third-party is responsible for all or part of the security of processing, the customer should understand what testing or evaluation the third-party performs to ensure the security of the processing.
 
-##### Supporting Microsoft Documentation: 
+##### Supporting Microsoft Documentation
 
 How Microsoft services are tested security based on identified risks, including tests by third parties, and the types of technical tests and any available reports from the tests.
 
@@ -1163,14 +1141,11 @@ How Microsoft services are tested security based on identified risks, including 
 - 6.15.3 Technical compliance review in Compliance Manager [[15](gdpr-arc-Dynamics365.md#15)]
 
 ##### Addresses GDPR Article(s)
-
 (32)(1)(d), (32)(2)
 
 ### 6. Bibliography of Resources and Links
 
-
 <!--start table with HEADER here -->
-
 
 ||||
 |:-----|:-----|:-----|
