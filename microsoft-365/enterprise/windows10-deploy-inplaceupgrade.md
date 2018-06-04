@@ -11,7 +11,7 @@ ms.date: 06/01/2018
 ms.author: celested
 ---
 
-# Step 3: Deploy Windows 10 Enterprise for existing devices as an in-place upgrade
+# Step 2: Deploy Windows 10 Enterprise for existing devices as an in-place upgrade
 
 *This article applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
 
