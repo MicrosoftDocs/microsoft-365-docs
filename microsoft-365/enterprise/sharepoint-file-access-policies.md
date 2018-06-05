@@ -80,6 +80,7 @@ Add Office 365 SharePoint Online to the scope of the existing rule. See [Require
 
 ### Only allow access from apps that support Intune App policies for SharePoint Online
 
+THESE INSTRUCTIONS DON'T MATCH THE CURRENT PROUDCT
 You must set a Conditional Access policy specifically for SharePoint Online in the Intune Management portal to manage mobile apps.
 
 To manage mobile apps, log in to the Microsoft Azure portal with your administrator credentials, and then navigate to **Intune App Protection** > **Settings** > **Conditional Access** > **SharePoint Online**.
@@ -95,9 +96,26 @@ To manage mobile apps, log in to the Microsoft Azure portal with your administra
 |     |Restricted user groups|Add user groups – Select specific security group containing targeted users.|Start with security group including pilot users.|
 |     |Exempt user groups|Exception security groups|     |
 
-### Apply to
+### Define app protection policies
+Modify the app protection policies for your environment to include apps that access SharePoint Online and OneDrive for Business. You must create an app protection policy for each platform: 
+- ios
+- Android
+- Windows 10
 
-Once your pilot project has been completed, these policies should be applied to all users in your organization.
+If you created these policies for Exchange Online, they might only include Outlook. The recommended list of apps includes the following:
+- PowerPoint
+- Excel
+- Word
+- Microsoft Teams
+- Microsoft SharePoint
+- Microsoft Visio Viewer
+- OneDrive
+- OneNote
+- Outlook
+
+To create or edit the policies and assign these to users, see [How to create and assign app protection policies](https://docs.microsoft.com/en-us/intune/app-protection-policies). 
+
+For recommended app protection settings for baseline security, see "Settings" under [Intune mobile application management](secure-email-recommended-policies.md#intune-mobile-application-management).
 
 ## Sensitive
 
