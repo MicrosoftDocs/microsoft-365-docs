@@ -20,7 +20,7 @@ These recommendations are based on three different tiers of security and protect
 ##Baseline security
 The following diagram illustrates the set of recommended policies for baseline security and indicates which policies will be updated or newly created to add protection for SharePoint Online and OneDrive for Business.
 
-![Summary of policies for SharePoint Online and OneDrive](media/secure-docs/GoldenConfigRuleSet.png)
+![Summary of policies for SharePoint Online and OneDrive](media/secure-docs/SharePoint-ruleset.png)
 
 For accessibility, this illustration is detailed in the following table.
 |Policy|Where this is configured|Changes for SharePoint Online and OneDrive for Business|Notes|
