@@ -117,46 +117,23 @@ To create or edit the policies and assign these to users, see [How to create and
 
 For recommended app protection settings for baseline security, see "Settings" under [Intune mobile application management](secure-email-recommended-policies.md#intune-mobile-application-management).
 
-## Sensitive
+###SharePoint admin--block access to content from unmanaged devices
+In the case of SharePoint Online, when a conditional access policy is applied to enforce Intune app protection policies, this might not apply to all applications that access SharePoint Online. Some applications, such as Exchange, have access to some SharePoint resources. For example, Exchange allows attaching SharePoint files by default. Conditional access policies applied to SharePoint Online will not restrict this access. 
 
-### Low and above risk requires MFA
+To ensure baseline protection is applied uniformly, regardless of which service is accessing SharePoint Online and OneDrive for Business, configure access controls directly in SharePoint admin center. We recommend you configure the following:
+- Block access from unmanaged devices. This includes devices that aren't compliant or joined to a domain. 
+- Block access from app that don't use modern authentication.
 
-Make the following changes to the existing CA policy created when applying [policy recomendations to secure email](secure-email-recommended-policies.md):
+See [Control access from unmanaged devices](https://support.office.com/en-us/article/Control-access-from-unmanaged-devices-5ae550c4-bd20-4257-847b-5c20fb053622?ui=en-US&rs=en-US&ad=US).
 
-**Assignments**
-|Type|Properties|Values|Notes|
-|:-----|:-----|:-----|:-----|
-|Cloud apps|Include|Select apps:<br></br>  Office 365 Exchange Online<br></br>  Office 365 SharePoint Online|Select both|
 
-### Require a compliant or domain joined device
-
-(See baseline instructions)
-
-### Mobile application management conditional access for SharePoint online
-
-(See baseline instructions)
-
-## Highly regulated
-
-### MFA required
-
-Make the following changes to the existing CA policy created when applying [policy recomendations to secure email](secure-email-recommended-policies.md):
-
-**Assignments**
-|Type|Properties|Values|Notes|
-|:-----|:-----|:-----|:-----|
-|Cloud apps|Include|Select apps:<br></br>  Office 365 Exchange Online<br></br>  Office 365 SharePoint Online|Select both|
-
-### Require a compliant or domain joined device
-(See baseline instructions)
-
-### Mobile application management conditional access for SharePoint online
-(See baseline instructions)
 
 ## Additional configurations
-In addition to the above policies, you must also lock down legacy protocols that do not support modern authentication.
+KEEP???
+In addition to the above policies, you must also lock down legacy protocols that do not support modern authentication. 
 
 ### Lock down legacy protocols
+
 Conditional access policies protect access through browser flows and apps using modern authentication; like Office 2016 and the apps on the supported platform list. For older Office desktop applications, like Office 2010, conditional access policy is not applied.
 
 Older apps that don’t use modern authentication can be blocked [using the OneDrive admin portal](https://support.office.com/article/Control-access-based-on-network-location-or-app-59b83701-cefd-4bf8-b4d1-d4659b60da08). The SharePoint admin PowerShell cmdlet can also be used to disable SharePoint legacy protocols. To use PowerShell, just run the [Set-SPOTenant cmdlet](https://technet.microsoft.com/library/fp161390.aspx) and set **-LegacyAuthProtocolsEnabled** to **$false**.  Once set, legacy protocol support is disabled and all access to SharePoint using older client applications will be blocked.
