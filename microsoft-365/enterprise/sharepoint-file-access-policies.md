@@ -51,7 +51,7 @@ The following diagram provides an example of Azure AD group assignments across t
 In the illustration:
 - The MFA rule for baseline protection is assigned to "Regular core staff."
 - The MFA rule for sensitive protection is assigned to "Senior and strategic staff."
-- The FMFA rule for highly regulated protection is assinged to "IT staff" and "Trade secret project staff."
+- The MFA rule for highly regulated protection is assinged to "IT staff" and "Trade secret project staff."
 
 ##Configuring policies
 The rest of this article provides guidance on configuring the recommended policies.  
