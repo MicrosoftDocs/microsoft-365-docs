@@ -27,9 +27,9 @@ For accessibility, this illustration is detailed in the following table.
 |:-----|:-----|:-----|:-----|
 |Require multi-factor authentication (MFA) when sign-in risk is medium or high|Azure AD conditional access policy|Edit to add SharePoint Online|For sensitive and and highly regulated protection, this rule is more protective|
 |Require compliant PCs and mobile devices|Azure AD conditional access policy|Edit to add SharePoint Online|This rule enforces device management with Intune|
+|Only allow access from approved client apps|Azure AD conditional access policy|Edit to add SharePoint Online|?|
 |High risk users must change password|Azure AD Identity Protection user risk policy|No changes| |
 |Device compliance policies|Intune device compliance policy|No changes|You should see one policy for each platform|
-|Only allow access from apps that support Intune app policies|Intune App Protection policies and conditional access rules|Create a new rule for SharePoint Online|You need one rule for each service, so you might already have a rule for Exchange Online|
 |Define app plolicy|Intune App Protection policies and conditional access rules|Edit this rule to include apps that access SharePoint Online and OneDrive for Business|One policy for each platform|
 |SharePoint admin access control policy|SharePoint admin center policy|This is a new configuration|Configure access control policies to block access to SharePoint Online and OneDrive for Business content from unmanaged devices|
 
@@ -81,24 +81,33 @@ Add Office 365 SharePoint Online to the scope of the existing rule. See [Require
 
 
 
-## Only allow access from apps that support Intune App policies for SharePoint Online
+## Only allow access from approved client apps
+Approved client apps support Intune mobile application management. This conditional access rule only allows access to services, like Exchange Online and SharePoint Online, from approved client apps. The control selected in this rule only applies to the iOS and Android platforms. Add Office 365 SharePoint Online to the scope of this existing rule, or create this rule if you don't already have it configured. 
 
-THESE INSTRUCTIONS DON'T MATCH THE CURRENT PROUDCT
+To create a conditional access policy to only allow access from approved client apps:
 
-You must set a Conditional Access policy specifically for SharePoint Online in the Intune Management portal to manage mobile apps.
+1. Go to the [Azure portal](https://portal.azure.com), and sign in with your credentials. After you've successfully signed in, you see the Azure Dashboard.
 
-To manage mobile apps, log in to the Microsoft Azure portal with your administrator credentials, and then navigate to **Intune App Protection** > **Settings** > **Conditional Access** > **SharePoint Online**.
+2. Choose **Azure Active Directory** from the left menu.
 
-**App access**
-|Type|Properties|Values|Notes|
-|:-----|:-----|:-----|:-----|
-|Allowed apps|Enable app access|Allow apps that support Intune app policies|Selected (list) – This results in a list of apps/platform combinations supported by Intune app policies.|
+3. Under the **Security** section, choose **Conditional access**.
 
-**User access**
-|Type|Properties|Values|Notes|
-|:-----|:-----|:-----|:-----|
-|     |Restricted user groups|Add user groups – Select specific security group containing targeted users.|Start with security group including pilot users.|
-|     |Exempt user groups|Exception security groups|     |
+4. Choose **New policy**.
+
+5. Enter a policy name, then choose the **Users and groups** you want to apply the policy for.
+
+6. Choose **Cloud apps**.
+
+7. Choose **Select apps**, select **Office 365 SharePoint Online** from the **Cloud apps** list, click on **Select**. Once the **Office 365 SharePoint Online** app is selected, click **Done**.
+
+8. Choose **Grant** from the **Access controls** section.
+
+9. Choose **Grant access**, select **Require approved client app**, then choose **Select**.
+
+10. Click **Create** to create the conditional access policy.
+
+
+
 
 ## Define app protection policies
 Modify the app protection policies for your environment to include apps that access SharePoint Online and OneDrive for Business. You must create an app protection policy for each platform: 
@@ -121,7 +130,7 @@ To create or edit the policies and assign these policcies to users, see [How to 
 
 For recommended app protection settings for baseline security, see "Settings" under [Intune mobile application management](secure-email-recommended-policies.md#intune-mobile-application-management).
 
-##SharePoint admin--block access to content from unmanaged devices
+##Block access to content from unmanaged devices (SharePoint admin center)
 In the case of SharePoint Online, when a conditional access policy is applied to enforce Intune app protection policies, this might not apply to all applications that access SharePoint Online. Some applications, such as Exchange, have access to some SharePoint resources. For example, Exchange allows attaching SharePoint files by default. Conditional access policies applied to SharePoint Online will not restrict this access. 
 
 To ensure baseline protection is applied uniformly, regardless of which service is accessing SharePoint Online and OneDrive for Business, configure access controls directly in SharePoint admin center. We recommend you configure the following:
@@ -132,15 +141,6 @@ See [Control access from unmanaged devices](https://support.office.com/en-us/art
 
 
 
-## Additional configurations
-KEEP???
-In addition to the above policies, you must also lock down legacy protocols that do not support modern authentication. 
-
-### Lock down legacy protocols
-
-Conditional access policies protect access through browser flows and apps using modern authentication; like Office 2016 and the apps on the supported platform list. For older Office desktop applications, like Office 2010, conditional access policy is not applied.
-
-Older apps that don’t use modern authentication can be blocked [using the OneDrive admin portal](https://support.office.com/article/Control-access-based-on-network-location-or-app-59b83701-cefd-4bf8-b4d1-d4659b60da08). The SharePoint admin PowerShell cmdlet can also be used to disable SharePoint legacy protocols. To use PowerShell, just run the [Set-SPOTenant cmdlet](https://technet.microsoft.com/library/fp161390.aspx) and set **-LegacyAuthProtocolsEnabled** to **$false**.  Once set, legacy protocol support is disabled and all access to SharePoint using older client applications will be blocked.
 
 ## Next steps
 [Learn more about Microsoft 365 services](index.md)
