@@ -27,9 +27,9 @@ For accessibility, this illustration is detailed in the following table.
 |:-----|:-----|:-----|:-----|
 |Require multi-factor authentication (MFA) when sign-in risk is medium or high|Azure AD conditional access policy|Edit to add SharePoint Online|For sensitive and and highly regulated protection, this rule is more protective|
 |Require compliant PCs and mobile devices|Azure AD conditional access policy|Edit to add SharePoint Online|This rule enforces device management with Intune|
-|Only allow access from approved client apps|Azure AD conditional access policy|Edit to add SharePoint Online|?|
-|High risk users must change password|Azure AD Identity Protection user risk policy|No changes| |
-|Device compliance policies|Intune device compliance policy|No changes|You should see one policy for each platform|
+|Only allow access from approved client apps|Azure AD conditional access policy|Edit to add SharePoint Online| |
+|High risk users must change password|Azure AD Identity Protection user risk policy|No changes|This forces users to change their password when signing in if high risk activity is detected for their account|
+|Device compliance policies|Intune device compliance policy|No changes|You should have one policy for each platform|
 |Define app plolicy|Intune App Protection policies and conditional access rules|Edit this rule to include apps that access SharePoint Online and OneDrive for Business|One policy for each platform|
 |SharePoint admin access control policy|SharePoint admin center policy|This is a new configuration|Configure access control policies to block access to SharePoint Online and OneDrive for Business content from unmanaged devices|
 
@@ -126,7 +126,7 @@ If you created these policies for Exchange Online, they might only include Outlo
 - OneNote
 - Outlook
 
-To create or edit the policies and assign these policcies to users, see [How to create and assign app protection policies](https://docs.microsoft.com/en-us/intune/app-protection-policies). 
+To create or edit the policies and assign these policies to users, see [How to create and assign app protection policies](https://docs.microsoft.com/en-us/intune/app-protection-policies). 
 
 For recommended app protection settings for baseline security, see "Settings" under [Intune mobile application management](secure-email-recommended-policies.md#intune-mobile-application-management).
 
