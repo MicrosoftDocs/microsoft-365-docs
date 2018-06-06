@@ -19,6 +19,7 @@ Under the General Data Protection Regulation (GDPR), data controllers are requir
 
 The purpose of this document is to provide data controllers with information that will help them to determine whether a DPIA is needed and, if so, what details to include.
 
+- [Office 365](gdpr-dpia-office365.md)
 - [Azure](gdpr-dpia-azure.md)
 - [Dynamics 365](gdpr-dpia-dynamics.md)
 - [Microsoft Support and Professional Services](gdpr-dpia-prof-services.md)

@@ -1,7 +1,7 @@
 ---
 title: Microsoft Support and Professional Services Data Subject Requests for the GDP
 description: How Microsoft Support and Professional Services handles data subject requests. 
-keywords: Professional Services,Microsoft 365, Microsoft 365 Education, Microsoft 365 documentation, GDPR
+keywords: Professional Services, sMicrosoft 365, Microsoft 365 Education, Microsoft 365 documentation, GDPR
 author: BrendaCarter
 localization_priority: Priority
 audience: microsoft-business
@@ -17,7 +17,7 @@ ms.collection: GDPR
 
 ## Introduction to Microsoft Professional Services
 
-Microsoft Professional Services includes a diverse group of technical architects, engineers, consultants, and support professionals dedicated to delivering on Microsoft's mission of empowering customers to do more and achieve more. Our Professional Services team includes more than 21,000+ total consultants, Digital Advisors, Premier Support, engineers, and sales professionals working across 191 countries, supporting 46 different languages, managing several million engagements per month, and engaging in customer and partner interactions through on-premise, phone, web, community and automated tools. The organization brings broad expertise across the Microsoft portfolio, leveraging an extensive network of partners, technical communities, tools, diagnostics and channels that connect us with our enterprise customers.
+Microsoft Professional Services includes a diverse group of technical architects, engineers, consultants, and support professionals dedicated to delivering on the Microsoft mission of empowering customers to do more and achieve more. Our Professional Services team includes more than 21,000+ total consultants, Digital Advisors, Premier Support, engineers, and sales professionals working across 191 countries, supporting 46 different languages, managing several million engagements per month, and engaging in customer and partner interactions through on-premise, phone, web, community and automated tools. The organization brings broad expertise across the Microsoft portfolio, leveraging an extensive network of partners, technical communities, tools, diagnostics and channels that connect us with our enterprise customers.
 
 Find out more about Microsoft Professional Services here (<https://www.microsoft.com/en-in/microsoftservices/professional_services.aspx>) and by going to the Microsoft Professional Services section on the Microsoft Trust Center (<https://www.microsoft.com/en-us/trustcenter/cloudservices/commercialsupport>).Microsoft Professional Services takes its obligations under the General Data Protection Regulation (GDPR) seriously. The information in this document is designed to answer customer questions about how Microsoft’s support and consulting offerings will respond to and assist customers in responding to Data Subject Request (DSR) obligations under GDPR.<span id="_Toc508792502" class="anchor"><span id="_Toc510704608" class="anchor"></span></span>
 
@@ -25,7 +25,7 @@ Find out more about Microsoft Professional Services here (<https://www.microsoft
 
 The GDPR gives rights to people (known in the regulation as *data subjects*) to manage the personal data that has been collected by an employer or other type of agency or organization (known as the *data controller* or just *controller*). Personal data is defined very broadly under the GDPR as any data that relates to an identified or identifiable natural person. The GDPR gives data subjects specific rights to their personal data; these rights include obtaining copies of it, requesting changes to it, restricting the processing of it, and deleting it. A formal request by a data subject to a controller to take an action on their personal data is called a *Data Subject Request* or DSR. Additionally, it obligates companies working on behalf of a controller (known as the *data processor* or just *processor*) to reasonably assist the controller in fulfilling DSRs.
 
-This guide discusses how to find, access, and act on personal data that reside in Microsoft's IT systems that may have been collected to provide Support and other Professional Services offerings.
+This guide discusses how to find, access, and act on personal data that reside in Microsoft IT systems that may have been collected to provide Support and other Professional Services offerings.
 
 In developing a response for DSRs, it is important for Microsoft’s customers to understand that Support and Consulting Data is separate from Customer Data in the Online Services or other data that they or their data subjects may have provided to Microsoft. Tools and processes provided for Online Services, the Microsoft Privacy Dashboard, or other Microsoft systems for responding to DSRs cannot be used to respond to DSRs for personal data held by Microsoft Support or other Professional Services.
 
@@ -41,7 +41,7 @@ All requests must be made through a support representative, as described below. 
 
   ***Restrict.*** Restrict the processing of personal data by halting activity on an engagement.
 
-  ***Delete.*** Permanently remove personal data that reside in Microsoft's IT Systems.
+  ***Delete.*** Permanently remove personal data that reside in Microsoft IT Systems.
 
   ***Export.*** Provide a copy of personal data to the customer or data subjects.
  
@@ -250,9 +250,12 @@ Microsoft is the data processor for a DSR located within data provided during a 
 
 Microsoft is the data controller for Customer Contacts working with the FastTrack team. If Customer Contacts wish to access, revise or remove contact information from Microsoft’s FastTrack records, customers can have the data subject send the request directly to Office 365 FastTrack GDPR Request inbox \<<o365ftgdpr@microsoft.com>\>.
 
-For FastTrack migration services, Microsoft is the data processor. Some migration services inherently delete all data subject information in accordance with requirements under applicable law, and in such cases, customers need to fulfill any DSR requests that pertain to data that is being migrated based on the source data. For all other migration services, if during a migration a customer receives a request from a data subject to delete his or her personal data contained in the organizational data being migrated, the IT admin must submit the request to Microsoft on behalf of the data subject (the tenant admin will be made aware of how to submit such requests).
+For FastTrack migration services, Microsoft is the data processor. In accordance with our Fast Track additional privacy disclosure statement, all data in migration is considered “migration data.”  If you need to execute DSRs while your organization is engaged in a FastTrack migration project, special care is required.
+  
+If you need to process any access, rectify, or export DSR requests while a user’s data is being processed through FastTrack migration systems, it will be the customer’s responsibility to fulfill such DSRs through your existing source systems in which the user data is stored. Once the user’s migration is complete and the data has been migrated to the destination Microsoft cloud service, the guidance provided by Microsoft on how customers can use Microsoft products, services and administrative tools to find and act on personal data to respond to data subject request will then apply. To view this guidance see [Data Subject Requests for the GDPR](https://docs.microsoft.com/microsoft-365/compliance/gdpr-data-subject-requests). 
 
-Once FastTrack services successfully complete the migration of data to the destination Microsoft cloud service, and the data is no longer in a “migration state,” the guidance provided by Microsoft on how to complete a DSR with Cloud Services organizational data will then apply.
+If you need to delete an Office 365 user account in response to a DSR delete request while your organization is engaged in an ongoing FastTrack migration project, you should be aware that migration systems may retain a copy of user migration data for a period of time following completion of the user’s migration and deleting the Office 365 user account will not automatically delete such user migration data stored in FastTrack migration systems.  If you would like the Microsoft FastTrack team to delete user migration data, you can [submit a request](https://go.microsoft.com/fwlink/?linkid=874544). In the ordinary course of business, Microsoft FastTrack will delete all data copies once your organization’s migration is complete.
+
 
 <span id="_Toc510704626" class="anchor"><span id="_Toc511403178" class="anchor"></span></span>
 ## Other Consulting Services
