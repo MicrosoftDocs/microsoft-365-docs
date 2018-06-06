@@ -2,7 +2,7 @@
 title: "Deploy Exchange Online for Microsoft 365 Enterprise"
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 05/08/2018
+ms.date: 06/06/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -46,6 +46,20 @@ A list of people that represent the business, technical, and end user aspects of
 Exchange Online can be used for different purposes. You need to figure out which purposes map to your business needs on the separate levels of your organization, your business groups, your departments, or individual working and project teams. You should target Exchange Online to address your individual and small group short-lived communication and scheduling needs. 
 
 One way to see the benefits of Exchange Online is to examine how individuals, a team, or v-team interact today, and then find an appropriate scenario that provides easier ways to communicate, schedule meetings, and collaborate. Keep in mind that [Microsoft Teams](https://docs.microsoft.com/microsoft-365/enterprise/teams-workload) might be a better choice for some of your collaboration scenarios.
+
+Exchange Online enables these strategic business scenarios for Microsoft 365 Enterprise:
+
+- Collaborate on documents in real time or on your own time to simplify the cocreation process
+- Manage projects, tasks, and deadlines to meet your business objectives
+- Understand your work habits to improve your influence and impact
+- Communicate with your team to stay informed, solicit input, and build cohesion and consensus
+- Store and share files inside and outside your organization to work seamlessly across organizational boundaries
+- Work securely from anywhere, anytime across your device to achieve more while maintaining a flexible workstyle
+- Protect your information and reduce the risk of data loss
+- Detect and protect against external threats --Monitor, report and analyze activity to react promptly to provide organizational security
+- Support your organization with enhanced privacy and compliance to meet the General Data Protection Regulation (GDPR)
+
+For more information, see the [Value Discovery Workshop](https://online.valuediscoveryworkshop.com/). 
 
 #### Result
 A list of Exchange Online scenarios that address your organization’s needs for communication, scheduling, and short-lived collaboration.
