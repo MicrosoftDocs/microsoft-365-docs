@@ -1,5 +1,5 @@
 ---
-title: Enable Windows 10 Enterprise security features | Microsoft docs
+title: Deploy Windows 10 Enterprise security features
 description: Provides a high-level guidance on the steps you need to deploy Windows 10 Enterprise on PCs as part of Microsoft 365 Enterprise.
 keywords: Microsoft 365, Microsoft 365 Enterprise, Microsoft 365 documentation, Windows 10 Enterprise, security
 author: CelesteDG
@@ -7,11 +7,11 @@ localization_priority: Normal
 audience: microsoft-business
 ms.prod: microsoft-365-enterprise
 ms.topic: article
-ms.date: 01/29/2018
+ms.date: 06/01/2018
 ms.author: celested
 ---
 
-# Enable Windows 10 Enterprise security features
+# Step 5: Deploy Windows 10 Enterprise security features
 
 ![](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
 
@@ -22,11 +22,13 @@ To learn more about these technologies, see:
 * [Device security](https://docs.microsoft.com/en-us/windows/device-security/) - Includes AppLocker, BitLocker, Device Guard, and Trusted Platform Module
 * [Threat protection](https://docs.microsoft.com/en-us/windows/threat-protection/) - Includes Windows Defender Security Center, Windows Defender Advanced Threat Protection, Windows Defender Antivirus, Windows Defender Application Guard, Windows Defender Smart Screen, and Windows Information Protection
 
-Here, we'll give you pointers and links to guides that show you how you can deploy, manage, configure, and troubleshoot using these security features:
+This step shows you how you can deploy, manage, configure, and troubleshoot using these security features:
+
 * [Windows Defender Antivirus](#windows-defender-antivirus)
 * [Windows Defender Exploit Guard](#windows-defender-exploit-guard)
 * [Windows Defender Advanced Threat Protection](#windows-defender-advanced-threat-protection)
 
+<a name="windows10-sec-av"></a>
 ## Windows Defender Antivirus
 Windows Defender Antivirus (AV) is an antimalware solution that's built into Windows 10. It provides security and antimalware management for desktops, portable computers, and servers. For more info about Windows Defender AV, the minimum requirements, and how you can manage this feature, see [Windows Defender Antivirus in Windows 10 and Windows Server 2016](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10).
 
@@ -34,11 +36,13 @@ If you are not using Windows Defender AV as your primary antivirus client, or if
 
 ### Deployment and management
 To deploy and manage Windows Defender AV, follow the guidance here:
+
 * [Deploy, manage, and report on Windows Defender AV](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/deploy-manage-report-windows-defender-antivirus)
 * [Reference topics for management and configuration tools](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/configuration-management-reference-windows-defender-antivirus)
 
 ### Configuration
 Users can configure a number of features. For more info, see these resources:
+
 * [Configure Windows Defender AV features](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features)
 * [Reference topics for management and configuration tools](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/configuration-management-reference-windows-defender-antivirus)
 
@@ -57,6 +61,7 @@ For info on basic troubleshooting of error and event codes, see [Review event lo
 
 You can also submit issues (such as false positives) by using the Windows Defender Security Intelligence submission system. To learn how, see [Submit issues to Microsoft](https://www.microsoft.com/en-us/wdsi/filesubmission).
 
+<a name="windows10-sec-eg"></a>
 ## Windows Defender Exploit Guard
 Windows Defender Exploit Guard is a new set of host intrusion prevention capabilities for Windows 10. For more info about Windows Defender Exploit Guard, the  minimum requirements, and how you can manage this feature, see [Windows Defender Exploit Guard](https://docs.microsoft.com/windows/threat-protection/windows-defender-exploit-guard/windows-defender-exploit-guard).
 
@@ -78,15 +83,18 @@ You can obtain reporting by using a configuration tool, such as System Center Co
 You can perform basic troubleshooting or optionally provide Microsoft with .cab files and submit issues (such as false positives) by using the Windows Defender Security Intelligence submission system. To learn how, see [Submit issues to Microsoft](https://www.microsoft.com/en-us/wdsi/filesubmission).
 
 
+<a name="windows10-sec-atp"></a>
 ## Windows Defender Advanced Threat Protection
 Windows Defender ATP, only available with the Microsoft 365 Enterprise E5 plan, is a security service that enables enterprise customers to detect, investigate, and respond to advanced threats on their networks. For more info about Windows Defender ATP, the minimum requirements, and how you can manage this feature, see:
+
 * [Windows Defender ATP](https://docs.microsoft.com/en-us/windows/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection)
 * [Minimum requirements](https://docs.microsoft.com/en-us/windows/threat-protection/windows-defender-atp/minimum-requirements-windows-defender-advanced-threat-protection)
 
 ### Deployment, management, and configuration
-To deploy Windows Defender ATP, you’ll need to ensure you have the right Windows license. After verify that you have the right license, you’ll need to decide the geolocation for where your data will be stored. After that, you can start onboarding endpoints to the service.
+To deploy Windows Defender ATP, you’ll need to ensure you have the right Windows license. After verifying that you have the right license, you’ll need to decide the geolocation for where your data will be stored. After that, you can start onboarding endpoints to the service.
 
 For more details on these steps, see these main topics: 
+
 * [Validate licensing provisioning and complete set up](https://docs.microsoft.com/en-us/windows/threat-protection/windows-defender-atp/licensing-windows-defender-advanced-threat-protection)
 * [Data storage and privacy](https://docs.microsoft.com/en-us/windows/threat-protection/windows-defender-atp/data-storage-privacy-windows-defender-advanced-threat-protection)
 * [Onboard endpoints and setup access](https://docs.microsoft.com/en-us/windows/threat-protection/windows-defender-atp/onboard-configure-windows-defender-advanced-threat-protection)
@@ -113,13 +121,6 @@ You might encounter issues while onboarding or while using the product. For more
 * [Troubleshooting onboarding issues](https://docs.microsoft.com/en-us/windows/threat-protection/windows-defender-atp/troubleshoot-onboarding-windows-defender-advanced-threat-protection)
 * [Troubleshooting Windows Defender ATP](https://docs.microsoft.com/en-us/windows/threat-protection/windows-defender-atp/troubleshoot-windows-defender-advanced-threat-protection)
 
-## Learn more
-[Microsoft 365 Enterprise product page](https://www.microsoft.com/microsoft-365/enterprise)</br>
-[Windows 10](https://docs.microsoft.com/windows/windows-10)</br>
-[Deploy and update Windows 10](https://docs.microsoft.com/windows/deployment/)
+## Next step
 
-## Next phase
-
-|||
-|:-------|:-----|
-|![](./media/deploy-foundation-infrastructure/O365proplus_icon-small.png)| Your next phase in the end-to-end deployment process for Microsoft 365 Enterprise is [Office 365 ProPlus](office365proplus-infrastructure.md). |
+[Windows 10 Enterprise infrastructure exit criteria](windows10-exit-criteria.md)
