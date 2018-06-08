@@ -800,6 +800,18 @@ How Microsoft services store records relating to the processing of personal data
 
 #### Independent review of information security (6.15.2)
 
+<!--start table here - on hold
+
+||||
+|:-----|:-----|:-----|
+|**Issue** |**Description** |
+|Customer consideration|The customer should be aware of requirements for assessments of the security of personal data processing. This may include internal or external audits, or other measures for assessing the security of processing. Where the customer is dependent on another organization of third-party for all or part of the processing, they should collect information about such assessments performed by them.|
+|Supporting Microsoft Documentation|How Microsoft services test and assesses the effectiveness of technical and organizational measures to ensure the security of processing, including any audits by third parties.<br/>Microsoft Online Services Terms, Data Protection Terms, see Data Security, Auditing Compliance [[1](gdpr-arc-Azure.md#1)]| 
+|Addresses GDPR Article(s)|(32)(1)(d), (32)(2)|
+|||||
+
+end of table -->
+ 
 ##### Customer consideration
 The customer should be aware of requirements for assessments of the security of personal data processing. This may include internal or external audits, or other measures for assessing the security of processing. Where the customer is dependent on another organization of third-party for all or part of the processing, they should collect information about such assessments performed by them.
 
