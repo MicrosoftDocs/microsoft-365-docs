@@ -72,8 +72,9 @@
 #### [Azure](../compliance/gdpr-dsr-Azure.md?toc=/microsoft-365/enterprise/toc.json)
 #### [Intune](../compliance/gdpr-dsr-Intune.md?toc=/microsoft-365/enterprise/toc.json)
 #### [Dynamics 365](../compliance/gdpr-dsr-Dynamics365.md?toc=/microsoft-365/enterprise/toc.json)
-#### [Visual Studio Family](../compliance/gdpr-dsr-visual-studio-family.md?toc=/microsoft-365/enterprise/toc.json)
-#### [Microsoft Support and Professional Services](../compliance/gdpr-dsr-prof-services.md?toc=/microsoft-365/enterprise/toc.json) 
+#### [Visual Studio family](../compliance/gdpr-dsr-visual-studio-family.md?toc=/microsoft-365/enterprise/toc.json)
+#### [Visual Studio Team Services (VSTS)](../compliance/gdpr-dsr-vsts.md?toc=/microsoft-365/enterprise/toc.json)
+#### [Microsoft Support and Professional Services](../compliance/gdpr-dsr-prof-services.md?toc=/microsoft-365/enterprise/toc.json)
 
 ### [Breach notification](../compliance/gdpr-breach-notification.md?toc=/microsoft-365/enterprise/toc.json)
 #### [Office 365](../compliance/gdpr-breach-Office365.md?toc=/microsoft-365/enterprise/toc.json)
