@@ -1,5 +1,5 @@
 <a name="crit-windows10-step1"></a>
-## Required: Your Microsoft 365 domains are added and verified
+### Required: Your Microsoft 365 domains are added and verified
 
 The Azure AD tenant for your Office 365 and Intune subscriptions are configured with your Internet domain names (such as contoso.com), rather than just a domain name that includes “onmicrosoft.com”. 
 
@@ -8,7 +8,7 @@ If you do not do so, you will be limited in the authentication methods that you 
 If needed, [Step 1](../windows10-prepare-your-org.md) can help you with this requirement.
 
 <a name="crit-windows10-step1"></a>
-## Optional: Your users are added and licensed
+### Optional: Your users are added and licensed
 
 The accounts corresponding to your users are added, either directly to your Azure AD tenant for your Office 365 and Intune subscriptions, or from directory synchronization from your on-premises Windows Server AD.
 
@@ -17,7 +17,7 @@ Once the users are added, you can assign them Microsoft 365 Enterprise licenses,
 If needed, [Step 1](../windows10-prepare-your-org.md) can help you with this option.
 
 <a name="crit-windows10-step2"></a>
-## Required for in-place upgrade: Created a Configuration Manager task sequence for an operating system deployment
+### Required for in-place upgrade: Created a Configuration Manager task sequence for an operating system deployment
 
 To start a Configuration Manager task sequence to do an in-place upgrade on a device running Windows 7 or Windows 8.1, you must have:
 
@@ -32,7 +32,7 @@ Each device running Windows 10 Enterprise can participate in the benefits of the
 If needed, [Step 2](../windows10-deploy-inplaceupgrade.md) can help you with this requirement.
 
 <a name="crit-windows10-step3"></a>
-## Required for new devices: Configured Windows Autopilot
+### Required for new devices: Configured Windows Autopilot
 
 To use Windows Autopilot to deploy and customize Windows 10 Enterprise on a new device, you must have:
 
@@ -57,28 +57,28 @@ Without Windows Autopilot, you must manually configure new devices, including th
 If needed, [Step 3](../windows10-deploy-autopilot.md) can help you with this requirement.
 
 <a name="crit-windows10-step4"></a>
-## Optional: You are using Windows Analytics Device Health to monitor your Windows 10 Enterprise-based devices
+### Optional: You are using Windows Analytics Device Health to monitor your Windows 10 Enterprise-based devices
 
 You used the information in Monitor the health of devices with Device Health to detect and remediate issues affecting end users. Quickly addressing end-user issues can reduce your support costs and demonstrate to your users the IT commitment to Windows 10 Enterprise, which can help drive adoption across your organization. 
 
 If needed, [Step 4](../windows10-enable-windows-analytics.md) can help you with this option.
 
 <a name="crit-windows10-step5a"></a>
-## Required: You are using Windows Defender Antivirus or your own antimalware solution
+### Required: You are using Windows Defender Antivirus or your own antimalware solution
 
 You deployed Windows Defender Antivirus or your own antivirus solution to protect your devices running Windows 10 Enterprise from malicious software. If you deployed Windows Defender Antivirus, you have implemented a reporting method, such as System Center Configuration Manager or Microsoft Intune, to monitor antivirus events and activity.
 
 If needed, [Step 5](../windows10-enable-security-features.md#windows10-sec-av) can help you with this requirement.
 
 <a name="crit-windows10-step5b"></a>
-## Required: You are using Windows Defender Exploit Guard
+### Required: You are using Windows Defender Exploit Guard
 
 You deployed Windows Defender Exploit Guard to protect your devices running Windows 10 Enterprise from intrusion and have implemented a reporting method, such as System Center Configuration Manager or Microsoft Intune, to monitor intrusion events and activity.
 
 If needed, [Step 5](../windows10-enable-security-features.md#windows10-sec-eg) can help you with this requirement.
 
 <a name="crit-windows10-step5c"></a>
-## Required: You are using Windows Defender Advanced Threat Protection (Microsoft 365 Enterprise E5 only)
+### Required: You are using Windows Defender Advanced Threat Protection (Microsoft 365 Enterprise E5 only)
 
 You deployed Windows Defender Advanced Threat Protection (ATP) to detect, investigate, and respond to advanced threats against your network and devices running Windows 10 Enterprise. 
 
