@@ -5,7 +5,7 @@ keywords: Microsoft 365, Microsoft 365 Enterprise, Microsoft 365 documentation, 
 author: arob98 
 ms.author: angrobe 
 manager: angrobe 
-ms.date: 01/29/2018 
+ms.date: 06/06/2018 
 ms.topic: article 
 audience: microsoft-business
 ms.prod: microsoft-365-enterprise
@@ -27,6 +27,16 @@ To secure data on your device, you'll use Microsoft Intune. Mobile device manage
 
 The entire library of Intune documentation is [available online](https://docs.microsoft.com/intune).
 
+Intune in Enterprise Security + Management (EMS) enables these strategic business scenarios for Microsoft 365 Enterprise:
+
+- Store and share files inside and outside your organization to work seamlessly across organizational boundaries
+- Work securely from anywhere, anytime across your device to achieve more while maintaining a flexible workstyle
+- Provide peace-of-mind with controls and visibility for industry-verified conformity with global standards in compliance
+- Protect your information and reduce the risk of data loss
+- Detect and protect against external threats --Monitor, report and analyze activity to react promptly to provide organizational security
+- Protect your users and their accounts
+
+For more information, see the [Value Discovery Workshop](https://online.valuediscoveryworkshop.com/). 
 
 ## Next phase
 

@@ -3,7 +3,7 @@ title: "Phase 4: Office 365 ProPlus"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/29/2018
+ms.date: 06/06/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -24,6 +24,24 @@ description: The steps to deploy the Office 365 ProPlus infrastructure for Micro
 Microsoft 365 Enterprise includes Office 365 ProPlus, the subscription version of Office. Like Office 2016, Office 365 ProPlus includes all the Office applications, and those applications are installed directly on your client devices. Unlike Office 2016, Office 365 ProPlus is updated with new features on a regular basis and has a user-based licensing model that allows people to install Office on up to 5 devices. For more details, see [About Office 365 ProPlus in the enterprise](https://docs.microsoft.com/en-us/deployoffice/about-office-365-proplus-in-the-enterprise).
 
 In this phase, you deploy Office 365 ProPlus to client devices as part of Microsoft 365 Enterprise. In addition to this guidance, we recommend you use [Microsoft Fastrack](https://fasttrack.microsoft.com/office) to help with your deployment. 
+
+Exchange Online enables these strategic business scenarios for Microsoft 365 Enterprise:
+
+- Collaborate on documents in real time or on your own time to simplify the cocreation process
+- Harness collective knowledge and expertise by empowering people to discover, share, and progress files, information, and ideas across your organization
+- Empower users to transform business processes and increase efficiency
+- Manage projects, tasks, and deadlines to meet your business objectives
+- Use intelligent assistance for design, writing, content discovery, and more to help your work shine
+- Discover insights, analyze your data, and share your findings to help everyone make informed decisions
+- Communicate with your team to stay informed, solicit input, and build cohesion and consensus
+- Communicate with partners, colleagues, and customers around the world for scheduled and ad hoc calls and online meetings with groups of all sizes
+- Store and share files inside and outside your organization to work seamlessly across organizational boundaries
+- Work securely from anywhere, anytime across your device to achieve more while maintaining a flexible workstyle
+- Provide peace-of-mind with controls and visibility for industry-verified conformity with global standards in compliance
+- Protect your information and reduce the risk of data loss
+- Get current and stay current on your desktop software and devices while reducing security risks and maximizing IT efficiency
+
+For more information, see the [Value Discovery Workshop](https://online.valuediscoveryworkshop.com/). 
 
 >[!Note]
 >If you already have Office 365 ProPlus deployed, please see the [exit criteria](office365proplus-exit-criteria.md) for this phase to make sure that it meets the required conditions for Microsoft 365 Enterprise.
