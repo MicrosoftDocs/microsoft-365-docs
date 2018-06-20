@@ -13,10 +13,10 @@ audience: itpro
 ms.collection: GDPR
 ---
 
-# Azure Accountability Readiness checklist for the GDPR
+# Azure accountability readiness checklist for the GDPR
 
-## 1. Introduction
-This accountability readiness checklist provides a convenient way to access information you may need to support GDPR when using Microsoft Azure. The checklist is organized using the titles and reference number (in parenthesis for each checklist topic) of a set of privacy and security controls for personal data processors drawn from ISO/IEC CD 27552 Information technology -- Security techniques -- Enhancement to ISO/IEC 27001 for privacy management – Requirements. 
+### 1. Introduction
+This accountability readiness Checklist provides a convenient way to access information you may need to support GDPR when using Microsoft Azure. The checklist is organized using the titles and reference number (in parenthesis for each checklist topic) of a set of privacy and security controls for personal data processors drawn from ISO/IEC CD 27552 Information technology -- Security techniques -- Enhancement to ISO/IEC 27001 for privacy management – Requirements. 
 
 You can manage the items in this checklist with the Compliance Manager [16] by referencing the Control ID and Control Title under Customer Managed Controls in the GDPR tile. This control structure is also used to organize the presentation of the internal controls that Microsoft Azure implements to support GDPR, which you can download here https://servicetrust.microsoft.com/ViewPage/TrustDocuments.
  
@@ -31,7 +31,7 @@ The customer should document the purpose for which personal data is processed.
 
 ##### Supporting Microsoft documentation: 
 A description of the processing Microsoft performs for you, and the purposes of that processing, that can be included in your accountability documentation.
-•	Microsoft Online Services Terms, Data Protection Terms, see Processing of Personal Data; GDPR [[1](gdpr-arc-Azure.md#1)]
+- Microsoft Online Services Terms, Data Protection Terms, see Processing of Personal Data; GDPR [[1](gdpr-arc-Azure.md#1)]
 
 ##### Addresses GDPR Article(s)
 (5)(1)(b), (32)(4)
