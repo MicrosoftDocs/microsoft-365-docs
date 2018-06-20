@@ -1,6 +1,6 @@
 ---
 title: Office 365 accountability readiness checklist for the GDPR
-description: This accountability readiness checklist (ARC) is a convenient way to access information you may need to support GDPR when using Office 365.
+description: This accountability readiness checklist (ARC) gives you information that you need to support GDPR when using Office 365.
 keywords: GDPR Accountability Readiness, accountability readiness checklist, Microsoft 365, Microsoft 365 Education, GDPR documentation, GDPR
 author: BrendaCarter
 localization_priority: Priority
@@ -27,25 +27,25 @@ This control structure is also used to organize the presentation of the internal
 
 *ISO/IEC CD 27552*, a standard under current development, will enhance *ISO/IEC 27001* requirements. It covers process for protecting the capture, accountability, availability, integrity and confidentiality of data. To purchase a copy of the complete draft ISO standard, please visit *https://shop.bsigroup.com/ProductDetail?pid=000000000030372571*.
 
+<br>
+
 --------------------------------------
 ## **2. Conditions for collection and processing**
 
-<!--start table here  collection and processing-->
+<!--start table here Conditions for collection and processing -->
 
 |||||
 |:-----|:-----|:-----|:-----|
-|**Category**&nbsp;&nbsp;&nbsp;&nbsp;**Customer <br>Consideration**|**Supporting&nbsp;&nbsp;Microsoft&nbsp;&nbsp;documentation**|**Addresses GDPR Article(s)**|
-|***Identify and document purpose (7.2.1)***|The customer should document the purpose for which personal data is processed.|A description of the processing Microsoft performs for you, and the purposes of that processing, that can be included in your accountability documentation.<BR>- Microsoft Online Services Terms, Data Protection Terms, see Processing of Personal Data; GDPR [[1](gdpr-arc-Office365.md#1)]|(5)(1)(b), (32)(4)|
-|***Identify lawful basis (7.2.2)***|The customer should understand any requirements related to the lawful basis of processing, such as whether consent must first be given.|A description of processing personal data by Microsoft services for inclusion in your accountability documentation. <BR> - Key Information from Office 365 for Customer Data Protection Impact Assessments [10]|(5)(1)(a), (6)(1)(a), (6)(1)(b), (6)(1)(c), (6)(1)(d), (6)(1)(e), (6)(1)(f), (6)(3), (6)4)(a), (6)(4)(b), (6)(4)(c), (6)(4)(d), (6)(4)(e), (8)(3), (9)(1), (9)(2)(b), (9)(2)(c), (9)(2)(d), (9)(2)(e), (9)(2)(f), (9)(2)(g), (9)(2)(h), (9)(2)(i), (9)(2)(j), (9)(3), (9)(4), (10), (17)(3)(a), (17)(3)(b), (17)(3)(c), (17)(3)(d), (17)(3)(e), (18)(2), (22)(2)(a), (22)(2)(b), (22)(2)(c), (22)(4)|
+|**Category**&nbsp;&nbsp;&nbsp;&nbsp;|**Customer<br>Consideration**|**Supporting&nbsp;&nbsp;Microsoft&nbsp;&nbsp;documentation**|**Addresses GDPR Article(s)**|
 |***Determine when consent is to be obtained (7.2.3)***|The customer should understand legal or regulatory requirements for obtaining consent from individuals prior to processing personal data (when it is required, if the type of processing is excluded from the requirement, etc.), including how consent is collected.|Office 365 does not provide direct support for gaining user consent.|(6)(1)(a), (8)(1), (8)(2)|
-|***Identify and document purpose (7.2.1)|The customer should document the purpose for which personal data is processed.|A description of the processing Microsoft performs for you, and the purposes of that processing, that can be included in your accountability documentation.<br>- Microsoft Online Services Terms, Data Protection Terms, see Processing of Personal Data; GDPR [[1](gdpr-arc-Office365.md#1)]|(5)(1)(b), (32)(4)|
+|***Identify and document purpose (7.2.1)|The customer should document the purpose for which personal data is processed.|A description of the processing Microsoft performs for you, and the purposes of that processing, that can be included in your accountability documentation.<br>- [Microsoft Online Services Terms, Data Protection Terms, see Processing of Personal Data; GDPR [[1](gdpr-arc-Office365.md#1)]|(5)(1)(b), (32)(4)|
 |***Identify lawful basis (7.2.2)***|The customer should understand any requirements related to the lawful basis of processing, such as whether consent must first be given.|A description of processing personal data by Microsoft services for inclusion in your accountability documentation.<br>- Key Information from Office 365 for Customer Data Protection Impact Assessments[[10](gdpr-arc-Office365.md#10)]|(5)(1)(a), (6)(1)(a), (6)(1)(b), (6)(1)(c), (6)(1)(d), (6)(1)(e), (6)(1)(f), (6)(3), (6)4)(a), (6)(4)(b), (6)(4)(c), (6)(4)(d), (6)(4)(e), (8)(3), (9)(1), (9)(2)(b), (9)(2)(c), (9)(2)(d), (9)(2)(e), (9)(2)(f), (9)(2)(g), (9)(2)(h), (9)(2)(i), (9)(2)(j), (9)(3), (9)(4), (10), (17)(3)(a), (17)(3)(b), (17)(3)(c), (17)(3)(d), (17)(3)(e), (18)(2), (22)(2)(a), (22)(2)(b), (22)(2)(c), (22)(4)|
 |***Determine when consent is to be obtained (7.2.3)***|The customer should understand legal or regulatory requirements for obtaining consent from individuals prior to processing personal data (when it is required, if the type of processing is excluded from the requirement, etc.), including how consent is collected.|Office 365 does not provide direct support for gaining user consent.|(6)(1)(a), (8)(1), (8)(2)|
 |***Obtain and record consent (7.2.4)***|When it is determined to be required, the customer should appropriately obtain consent. The customer should also be aware of any requirements for how a request for consent is presented and collected.|Office 365 does not provide direct support for gaining user consent.|(7)(1), (7)(2), (9)(2)(a)|
 |***Privacy impact assessment (7.2.5)***|The customer should be aware of requirements for completing privacy impact assessments (when they should be performed, categories of data that might necessitate one, timing of completing the assessment).|How Microsoft services determine when to perform a DPIA, and an overview of the DPIA program at Microsoft including the involvement of the DPO, is provided on the Service Trust Portal [Data Protection Impact Assessments (DPIAs) page](https://servicetrust.microsoft.com/ViewPage/GDPRDPIA). For support for your DPIAs see:<br>-   Key Information from Office 365 for Customer Data Protection Impact Assessments [[10](gdpr-arc-Office365.md#10)]|(35)|
 |***Contracts with PII Processors (7.2.6)***|The customer should ensure that their contracts with processors include requirements for aiding with any relevant legal or regulatory obligations related to processing and protecting personal data.|The Microsoft contracts that require us to aid with your obligations under the GDPR, including support for the data subject's rights.<br>- Microsoft Online Services Terms, Data Protection Terms, see Processing of Personal Data; GDPR [[1](gdpr-arc-Office365.md#1)]|(5)(2), (28)(3)(e), (28)(9)|
 |***Records related to processing PII (7.2.7)***|The customer should maintain all necessary and required records related to processing personal data (that is, purpose, security measures, etc.). Where some of these records must be provided by a sub-processor, the customer should ensure that they can obtain such records.|The tools provided by Microsoft services to help you maintain the records necessary demonstrate compliance and support for accountability under the GDPR.<br>- Search the audit log in Office 365 Security and Compliance Center [[16](gdpr-arc-Office365.md#16)] |(5)(2), (24)(1), (30)(1)(a), (30)(1)(b), (30)(1)(c), (30)(1)(d), (30)(1)(g), (30)(1)(f), (30)(3), (30)(4), (30)(5)|
-|||
+||||
 
 <!-- end of table -->
 <br>
@@ -67,14 +67,14 @@ This control structure is also used to organize the presentation of the internal
 |***Correction or erasure (7.3.7)***|The customer should understand requirements for informing users about their right to access, correct, and/or erase their personal data and for providing a mechanism for which them to do so. If a third-party system is used and provides this mechanism as part of its functionality, the customer should utilize that functionality as necessary.|Templated information about Microsoft services relating to their ability to access, correct or erase personal data that you can include in the data you provide to data subjects.<br>- Office 365 Data Subject Requests for the GDPR [[8](gdpr-arc-Office365.md#8)] see *Step 5: Delete*|(5)(1)(d), (13)(2)(b), (14)(2)(c), (16), (17)(1)(a), (17)(1)(b), (17)(1)(c), (17)(1)(d), (17)(1)(e), (17)(1)(f), (17)(2)|
 |***Providing copy of PII processed (7.3.8)***|The customer should understand requirements around providing a copy of the personal data being processed to the individual. These may include requirements around the format of the copy (i.e. that it is machine readable), transferring the copy, etc. Where the customer uses a third-party system that provides the functionality to provide copies, they should utilize this functionality as necessary.|Information about capabilities in Microsoft services to allow you to obtain a copy of their personal data that you can include in the data you provide to data subjects.<br>- Office 365 Data Subject Requests for the GDPR [[8](gdpr-arc-Office365.md#8)] see *Step 6: Export*|(15)(3), (15)(4), (20)(1), (20)(2), (20)(3), (20)(4)|
 |***Request management (7.3.9)***|The customer should understand requirements for accepting and responding to legitimate requests from individuals related to the processing of their personal data. Where the customer uses a third-party system, they should understand whether that system provides the capabilities for such handling of requests. If so, the customer should utilize such mechanisms to handle requests as necessary.|Information about capabilities in Microsoft services that you can use when defining the information you provide to data subjects as you manage data subject requests.<br>- Office 365 Data Subject Requests for the GDPR  [[8](gdpr-arc-Office365.md#8)]stomer should understand requirements around automated personal data processing and where decisions are made by such automation. These may include providing information about the processing to an individual, objecting to such processing, or to obtain human intervention. Where such features are provided by a third-party system, the customer should ensure that the third party provides any required information or support.<p>Information about any capabilities in Microsoft services that might support automated decision making that you can use in your accountability documentation, and templated information for data subjects about those capabilities.<br>- Key Information from Office 365 for Customer Data Protection Impact Assessments [[10](gdpr-arc-Office365.md#10)]</p>|(13)(2)(f), (14)(2)(g), (22)(1), (22)(3)|
-|||
+||||
 
 
 <!-- end of table here --->
 
 <br>
-<br>
 
+--------------------------------------
 ## **4. Privacy by design and default**
 
 <!-- start table here "privacy by design and default" -->
@@ -102,9 +102,8 @@ This control structure is also used to organize the presentation of the internal
 <!-- end of table here --->
 
 <br>
-<br>
 
-
+--------------------------------------
 ## **5. Data Protection & Security**
 
 <!-- start table here "Data Protection & Security" -->
