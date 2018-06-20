@@ -10,7 +10,7 @@ audience: microsoft-business
 ms.prod: microsoft-365-business 
 title: Microsoft 365 Business documentation and resources
 description: Learn about the product documentation and resources available for Microsoft 365 Business partners, IT admins, end user professionals, and business owners.
-ms.date: 11/01/2017
+ms.date: 06/08/2018
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -383,7 +383,7 @@ ms.date: 11/01/2017
                                 </div>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="https://support.office.com/article/migrate-to-microsoft-365-business-from-another-subscription-5b4ba843-24b8-4526-8e1f-f9b9eab89d06">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -393,8 +393,8 @@ ms.date: 11/01/2017
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Migrate from another Office 365 SKU to Microsoft 365 Business</h3>
-                                                    <p>Coming soon</p>
+                                                    <h3>Migrate to Microsoft 365 Business from another subscription</h3>
+                                                    <p>If you already have an Office 365 for business subscription, for example, Office 365 Business Premium, you can easily add licenses to Microsoft 365 Business, and assign them to some, or all users.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -1354,7 +1354,7 @@ ms.date: 11/01/2017
                                 </div>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="https://support.office.com/article/migrate-to-microsoft-365-business-from-another-subscription-5b4ba843-24b8-4526-8e1f-f9b9eab89d06">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -1364,8 +1364,8 @@ ms.date: 11/01/2017
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Migrate from another Office 365 SKU to Microsoft 365 Business</h3>
-                                                    <p>Coming soon</p>
+                                                    <h3>Migrate to Microsoft 365 Business from another subscription</h3>
+                                                    <p>If you already have an Office 365 for business subscription, for example, Office 365 Business Premium, you can easily add licenses to Microsoft 365 Business, and assign them to some, or all users.</p>
                                                 </div>
                                             </div>
                                         </div>
