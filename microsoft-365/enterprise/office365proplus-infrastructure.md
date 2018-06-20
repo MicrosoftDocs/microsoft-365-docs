@@ -25,7 +25,7 @@ Microsoft 365 Enterprise includes Office 365 ProPlus, the subscription version o
 
 In this phase, you deploy Office 365 ProPlus to client devices as part of Microsoft 365 Enterprise. In addition to this guidance, we recommend you use [Microsoft Fastrack](https://fasttrack.microsoft.com/office) to help with your deployment. 
 
-Exchange Online enables these strategic business scenarios for Microsoft 365 Enterprise:
+Office 365 ProPlus enables these strategic business scenarios for Microsoft 365 Enterprise:
 
 - Collaborate on documents in real time or on your own time to simplify the cocreation process
 - Harness collective knowledge and expertise by empowering people to discover, share, and progress files, information, and ideas across your organization
