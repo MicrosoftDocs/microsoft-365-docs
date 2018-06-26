@@ -15,10 +15,10 @@ ms.collection: GDPR
 
 # Microsoft Support and Professional Services accountability readiness checklist for the GDPR
 
-### 1. Introduction
+## **1. Introduction**
 ------------
 
-This accountability readiness checklist provides a convenient way to access information you may need to support GDPR when using Microsoft Professional Services and Support Services. The checklist is organized using the titles and reference number (in parenthesis for each checklist topic) of a set of privacy and security controls for personal data processors drawn from *ISO/IEC CD 27552 Information technology -- Security techniques -- Enhancement to ISO/IEC 27001 for privacy management – Requirements. *
+This accountability readiness checklist provides a convenient way to access information you may need to support GDPR when using Microsoft Professional Services and Support Services. The checklist is organized using the titles and reference number (in parenthesis for each checklist topic) of a set of privacy and security controls for personal data processors drawn from *ISO/IEC CD 27552 Information technology &#x2014; Security techniques &#x2014; Enhancement to ISO/IEC 27001 for privacy management &#x2013; Requirements.*
 
 This control structure is also used to organize the presentation of the internal controls that Microsoft Professional Services implements to support GDPR, which you can download here https://servicetrust.microsoft.com/ViewPage/TrustDocuments.
 
@@ -28,6 +28,7 @@ To purchase a copy of the complete draft ISO standard, please visit *https://sho
 
 ----------------------------
 ## **2. Conditions for collection and processing**
+
 <!-- start table here "collection and processing" -->
 
 |||||
