@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 Enterprise Workloads"
+title: "Microsoft 365 Enterprise workloads and scenarios"
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 06/19/2018
@@ -14,14 +14,15 @@ ms.custom:
 description: Get links to the productivity workloads for Microsoft 365 Enterprise in your organization.
 ---
 
-# Microsoft 365 Enterprise Workloads
+# Microsoft 365 Enterprise workloads and scenarios
 
-To realize the creativity and teamwork benefits of Microsoft 365 Enterprise, deploy these workloads to operate on the top of your Microsoft 365 Enterprise foundation infrastructure:
+To realize the creativity and teamwork benefits of Microsoft 365 Enterprise, deploy these workloads and scenarios to operate on the top of your Microsoft 365 Enterprise foundation infrastructure:
 
 - [Microsoft Teams](teams-workload.md)
 - [Exchange Online](exchangeonline-workload.md)
 - SharePoint Online (coming soon)
 - [Migration to Microsoft 365 Enterprise](migration-microsoft-365-enterprise-workload.md)
+- Client updates (coming soon)
 
 
 The following figure shows the workloads in the overall Microsoft 365 Enterprise deployment content.
