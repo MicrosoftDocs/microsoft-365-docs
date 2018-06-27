@@ -43,7 +43,7 @@
 #### [Step 4: Configure increased security for Office 365](infoprotect-configure-increased-security-office-365.md)
 #### [Information protection infrastructure exit criteria](infoprotect-exit-criteria.md)
 ### [Deployment of Microsoft 365 Enterprise with existing infrastructure](deploy-with-existing-infrastructure.md)
-## [Deploy workloads](deploy-workloads.md)
+## [Deploy workloads and scenarios](deploy-workloads.md)
 ### [Deploy Microsoft Teams for Microsoft 365 Enterprise](teams-workload.md)
 ### [Deploy Exchange Online for Microsoft 365 Enterprise](exchangeonline-workload.md)
 ### [Migration to Microsoft 365 Enterprise](migration-microsoft-365-enterprise-workload.md)
