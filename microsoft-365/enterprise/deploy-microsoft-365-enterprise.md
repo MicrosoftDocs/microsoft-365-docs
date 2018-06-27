@@ -30,9 +30,9 @@ These benefits are not realized just by obtaining the licenses for these three p
 There are two main phases to deploying Microsoft 365 Enterprise:
 
 1. First, deploy the required [foundation infrastructure](deploy-foundation-infrastructure.md) for built-in security and integration for simplified management, which makes it easier to ensure your client software is updated with the latest productivity and security enhancements.
-2. Next, deploy a set of optional [workloads](deploy-workloads.md) on top of the foundation infrastructure, to unlock creativity and teamwork in your organization.
+2. Next, deploy a set of optional [workloads and scenarios](deploy-workloads.md) on top of the foundation infrastructure, to unlock creativity and teamwork in your organization.
 
-The following figure shows the relationship between the foundation infrastructure and workloads and your path through the content.
+The following figure shows the relationship between the foundation infrastructure and the workloads and scenarios and your path through the content.
 
 ![](./media/deploy-microsoft-365-enterprise/m365-deploy-content-arch.png)
 
@@ -42,7 +42,7 @@ Security is built into all phases of the foundation infrastructure.
 
 FastTrack is an ongoing and repeatable benefit—available as part of your subscription—that is delivered by Microsoft engineers to help you move to the cloud at your own pace. FastTrack also gives you access to qualified partners for additional services, as needed. With over 40,000 customers enabled to date, FastTrack helps maximize ROI, accelerate deployment, and increase adoption across your organization. See [FastTrack for Microsoft 365](https://fasttrack.microsoft.com/microsoft365).
 
-If you want to take advantage of FastTrack to deploy Microsoft 365 Enterprise, you can use the FastTrack [Microsoft 365 deployment advisor](https://aka.ms/microsoft365setupguide) for guidance on how to deploy and set up your foundation infrastructure.
+If you want to take advantage of FastTrack to deploy Microsoft 365 Enterprise, you can use the FastTrack [Microsoft 365 deployment advisor](https://aka.ms/microsoft365setupguide) for guidance on how to deploy and set up your foundation infrastructure. You must be signed on as a global administrator in an Office 365 or Microsoft 365 tenant in order to access this page.
 
 ## Additional Microsoft 365 solutions
 

@@ -39,7 +39,7 @@ To purchase a copy of the complete draft ISO standard, please visit https://shop
 |***Records related to processing PII (7.2.7)***|The customer should maintain all necessary and required records related to processing personal data (e.g. purpose, security measures, etc.). Where some of these records must be provided by a sub-processor, the customer should ensure that they can obtain such records.|The tools provided by Microsoft services to help you maintain the records necessary demonstrate compliance and support for accountability under the GDPR. See the *Azure Security Documentation* [[2](gdpr-arc-Azure.md#2)] for [activity and diagnostic logging](https://docs.microsoft.com/en-us/azure/security/blueprints/fedramp-iaaswa-overview#logging-and-auditing) and logging of [processing of personal data](https://docs.microsoft.com/en-us/azure/security/protection-personal-data-azure-reporting-tools).|(5)(2), (24)(1), (30)(1)(a), (30)(1)(b), (30)(1)(c), (30)(1)(d), (30)(1)(g), (30)(1)(f), (30)(3), (30)(4), (30)(5)|
 |||
 
-<br><br>
+<br>
 
 -------------------------------------
 
@@ -62,7 +62,7 @@ To purchase a copy of the complete draft ISO standard, please visit https://shop
 |***Automated decision making (7.3.10)***|The customer should understand requirements around automated personal data processing and where decisions are made by such automation. These may include providing information about the processing to an individual, objecting to such processing, or to obtain human intervention. Where such features are provided by a third-party system, the customer should ensure that the third party provides any required information or support.|Information about any capabilities in Microsoft services for that might support automated decision making that you can use in your accountability documentation, and templated information for data subjects about those capabilities.<br>- *Key Information from Azure for Customer Data Protection Impact Assessments* [[11](gdpr-arc-Azure.md#11)]|(13)(2)(f), (14)(2)(g), (22)(1), (22)(3)|
 |||
 
-<br><br>
+<br>
 
 ----------------------------
 ## **4. Privacy by design and default**
@@ -89,7 +89,7 @@ To purchase a copy of the complete draft ISO standard, please visit https://shop
 |***Joint controller (7.5.5)***|The customer should determine whether they are a joint controller with any other organization, and appropriately document and allocate responsibilities.|As specified by the Online Services Terms (OST), Microsoft, as a data processor, processes Customer Data only to provide the requested services to our customer, the data controller.<br>- *Microsoft Online Services Terms, Data Protection Terms, see Processing of Personal Data; GDPR* [[1](gdpr-arc-Azure.md#1)]|(26)(1), (26)(2),|||
 |||
 
-<br><br>
+<br>
 
 ----------------------------------------
 
@@ -119,9 +119,9 @@ To purchase a copy of the complete draft ISO standard, please visit https://shop
 |***Cryptography (6.7)***|The customer should determine which data may need to be encrypted, and whether the service they are utilizing offers this capability. The customer should utilize encryption as needed, using the tools available to them.|How Microsoft services support encryption and pseudonymization to reduce the risk of processing personal data.<br>- Azure Security Documentation [[2](gdpr-arc-Azure.md#2)] see [Protect personal data at rest with encryption](https://docs.microsoft.com/en-us/azure/security/protect-personal-data-at-rest) and [Protect personal data in transit](https://docs.microsoft.com/en-us/azure/security/protect-personal-data-in-transit-encryption) with encryption and https://docs.microsoft.com/en-us/azure/security/security-azure-encryption-overview|(32)(1)(a)|
 |***Secure disposal or re-use of equipment (6.8.1)***|Where the customer uses cloud computing services (PaaS, SaaS, IaaS) they should understand how the cloud provider ensures that personal data is erased from storage space prior to that space being assigned to another customer.|How Microsoft services ensure that personal data is erased from storage equipment before that equipment is transferred or reused.<br>- Microsoft Azure Data Security (Data Cleansing and Leakage) [[5](gdpr-arc-Azure.md#5)]|(5)(1)(f)|
 |Clear desk and clear screen policy (6.8.2)|The customer should consider risks around hardcopy material that displays personal data, and potentially restrict the creation of such material. Where the system in use provides the capability to restrict this (e.g., settings to prevent printing or copying/pasting of sensitive data), the customer should consider the need to utilize those capabilities.|What Microsoft implements to manage hardcopy.<br>- Microsoft maintains these controls internally, see *Microsoft Azure (All-Up) ISO/IEC 27001:2013 ISMS Statement of Applicability* [[15](gdpr-arc-Azure.md#13)]  A.11.2.9|(5)(1)(f)|
-|***Separation of development, testing and operational environments (6.9.1)***|The customer should consider the implications of using personal data in development and testing environments within their organization.|How Microsoft ensures that personal data is protected in development and test environments.<br>- *Microsoft Azure (All-Up) ISO/IEC 27001:2013 ISMS Statement of Applicability* [[13](gdpr-arc-Azure.md#13)] see A.12.1.4<br>- Azure Standard Response to RFI on Security, Privacy, and Compliance, see DSI-05<!-- is this missing a link? -->|5(1)(f)|
+|***Separation of development, testing and operational environments (6.9.1)***|The customer should consider the implications of using personal data in development and testing environments within their organization.|How Microsoft ensures that personal data is protected in development and test environments.<br>- *Microsoft Azure (All-Up) ISO/IEC 27001:2013 ISMS Statement of Applicability* [[13](gdpr-arc-Azure.md#13)] see A.12.1.4<br>- Azure Standard Response to RFI on Security, Privacy, and Compliance [6].<br>- Azure Control 530: The production environment is separated from development/testing[[16](gdpr-arc-Azure.md#16)].|5(1)(f)|
 |***Information backup (6.9.2)***|The customer should ensure that they use system provided capabilities to create redundancies in their data and test as necessary.|How Microsoft ensures the availability of data that may include personal data, how accuracy of restored data is ensured, and the tools and procedures Microsoft services provide to allow you to backup and restore data.<br>- FedRAMP Moderate FedRAMP System Security Plan [[3](gdpr-arc-Azure.md#3)] see 10.9 Availability|(32)(1)(c), (5)(1)(f)|
-|Event logging (6.9.3)|The customer should understand the capabilities for logging provided by the system and utilize such capabilities to ensure that they can log actions related to personal data that they deem necessary.|The data Microsoft service records for you, including user activities, exceptions, faults and information security events, and how you can access those logs for use as part of your record keeping.<br>- Azure Security Documentation egistration of users.<br>- Azure Security Documentation [[2](gdpr-arc-Azure.md#2)] see [Document protection of personal data with Azure reporting tools](https://docs.microsoft.com/en-us/azure/security/protection-personal-data-azure-reporting-tools)|(5)(1)(f)|
+|***Event logging (6.9.3)***|The customer should understand the capabilities for logging provided by the system and utilize such capabilities to ensure that they can log actions related to personal data that they deem necessary.|The data Microsoft service records for you, including user activities, exceptions, faults and information security events, and how you can access those logs for use as part of your record keeping.<br>- Azure Security Documentation egistration of users.<br>- Azure Security Documentation [[2](gdpr-arc-Azure.md#2)] see [Document protection of personal data with Azure reporting tools](https://docs.microsoft.com/en-us/azure/security/protection-personal-data-azure-reporting-tools)|(5)(1)(f)|
 |***Protection of log information (6.9.4)***|The customer should consider requirements for protecting log information that may contain personal data or that may contain records related to personal data processing. Where the system in use provides capabilities to protect logs, the customer should utilize these capabilities where necessary.|How Microsoft protects logs that may contain personal data.<br>- Azure Security Documentation [[2](gdpr-arc-Azure.md#2)] see [Document protection of personal data with Azure reporting tools](https://docs.microsoft.com/en-us/azure/security/protection-personal-data-azure-reporting-tools)|(5)(1)(f)|
 |***Information transfer policies and procedures (6.10.1)***|The customer should have procedures for cases where personal data may be transferred on physical media (such as a hard drive being moved between servers or facilities). These may include logs, authorizations, and tracking. Where a third-party or other processor may be transferring physical media, the customer should ensure that that organization has procedures in place to ensure security of the personal data.|How Microsoft services transfer physical media that may contain personal data, including the circumstances when transfer might occur, and the protective measures taken to protect the data.<br>- *FedRAMP Moderate FedRAMP System Security Plan* [[3](gdpr-arc-Azure.md#3)] see 13.10 Media Protection (MP)|(5)(1)(f)|
 |Confidentiality or non-disclosure agreements (6.10.2)|The customer should determine the need for confidentiality agreements or the equivalent for individuals with access to or responsibilities related to personal data.|How Microsoft services ensure that individuals with authorized access to personal data have committed themselves to confidentiality.<br>- *SOC 2 Type 2 Audit Report* [12] see CC1.4 pp72, SOC2 - 13|(5)(1)(f), (28)(3)(b), (38)(5)|
@@ -141,8 +141,7 @@ To purchase a copy of the complete draft ISO standard, please visit https://shop
 <br><br>
 
 ----------------------
-### **6. Bibliography of Resources and Links**
-
+## **6. Bibliography of Resources and Links**
 
 <!-- start Biblio table here -->
 ||||
@@ -158,13 +157,13 @@ To purchase a copy of the complete draft ISO standard, please visit https://shop
 8 <a name="8"> </a>|Contracts for sub-processors: Contracting with Microsoft|https://www.microsoft.com/en-us/procurement/supplier-contracting.aspx|
 9 <a name="9"> </a>|Azure Data Subject Requests for the GDPR|https://docs.microsoft.com/en-us/microsoft-365/compliance/gdpr-dsr-azure|
 10 <a name="10"> </a>|Azure and Breach Notification Under the GDPR| https://docs.microsoft.com/en-us/microsoft-365/compliance/gdpr-breach-azure|
-11 <a name="11"> </a>|Key Information from Azure for Customer Data Protection Impact Assessments| [https://docs.microsoft.com/en-us/microsoft-365/compliance/gdpr-dpia-azure]|
+11 <a name="11"> </a>|Key Information from Azure for Customer Data Protection Impact Assessments|<https://aka.ms/DPIAAzure> 
 12 <a name="12"> </a>|SOC 2 Type 2 Audit Report [12]|https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=3c7123a5-f507-48b7-8dce-cd948e6150e6&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_SOC_%2F_SSAE_16_Reports|
 13 <a name="13"> </a>|Microsoft Azure (All-Up) ISO/IEC 27001:2013 ISMS Statement of Applicability| https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=47d89200-b24b-491d-b657-7c523ddfb6f9&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports|
 14 <a name="14"> </a>|Microsoft Trust Center Compliance offerings| https://www.microsoft.com/en-us/trustcenter/compliance/complianceofferings|
 15 <a name="15"> </a>|Privacy and personal data in Intune|https://review.docs.microsoft.com/en-us/intune/privacy-personal-data|
-16 <a name="16"> </a>|Compliance Manager| https://servicetrust.microsoft.com/ComplianceManager|
-17 <a name="17"> </a>|Microsoft DPO Information|[https://docs.microsoft.com/en-us/microsoft-365/compliance/gdpr-data-protection-officer]
+16 <a name="16"> </a>|Complete downloadable Azure GDPR Control Set|https://aka.ms/GDPRControls  or via Compliance Manager Tool at  https://servicetrust.microsoft.com/ComplianceManager|
+17 <a name="17"> </a>|Microsoft DPO Information|<https://aka.ms/GDPRDPO>
 
 
 ### Learn more

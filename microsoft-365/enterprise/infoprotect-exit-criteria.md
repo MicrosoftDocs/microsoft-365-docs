@@ -75,4 +75,4 @@ If needed, [Step 3](infoprotect-configure-classification.md) can help you meet t
 
 ## Next Step
 
-You're now ready to deploy [workloads](deploy-workloads.md), such as Microsoft Teams and Exchange Online, that run on top of your Microsoft 365 Enterprise foundation infrastructure.
+You're now ready to deploy [workloads and scenarios](deploy-workloads.md), such as Microsoft Teams and Exchange Online, that run on top of your Microsoft 365 Enterprise foundation infrastructure.

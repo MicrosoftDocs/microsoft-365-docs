@@ -34,7 +34,7 @@ Windows 10 enables these strategic business scenarios for Microsoft 365 Enterpri
 - Support your organization with enhanced privacy and compliance to meet the General Data Protection Regulation (GDPR)
 - Get current and stay current on your desktop software and devices while reducing security risks and maximizing IT efficiency
 
-For more information, see the [Value Discovery Workshop](https://online.valuediscoveryworkshop.com/). 
+For more information, see the [Discovery Value tool](https://online.valuediscoveryworkshop.com/). 
 
 ## Windows 10 deployment
 There are multiple ways you can deploy Windows 10 Enterprise for your organization. Here, we'll focus on how you can configure and deploy a Windows 10 Enterprise image through these modern deployment scenarios.
