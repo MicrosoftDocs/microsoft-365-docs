@@ -14,9 +14,9 @@ audience: itpro
 ms.collection: GDPR
 ---
 
-## Dynamics 365 accountability readiness checklist for the GDPR
+# Dynamics 365 accountability readiness checklist for the GDPR
 
-### 1. Introduction
+## 1. Introduction
 
 This accountability readiness checklist provides a convenient way to access information you may need to support GDPR when using Microsoft Dynamics 365. The checklist is organized using the titles and reference number (in parenthesis for each checklist topic) of a set of privacy and security controls for personal data processors drawn from *ISO/IEC CD 27552 Information technology -- Security techniques -- Enhancement to ISO/IEC 27001 for privacy management – Requirements. *
 
@@ -28,7 +28,7 @@ This control structure is also used to organize the presentation of the internal
 
 To purchase a copy of the complete draft ISO standard, please visit *https://shop.bsigroup.com/ProductDetail?pid=000000000030372571*.
 
-### 2. Conditions for collection and processing
+## 2. Conditions for collection and processing
 
 #### Identify and document purpose (7.2.1)
 
@@ -138,7 +138,7 @@ The tools provided by Microsoft services to help you maintain the records necess
 
 (5)(2), (24)(1), (30)(1)(a), (30)(1)(b), (30)(1)(c), (30)(1)(d), (30)(1)(g), (30)(1)(f), (30)(3), (30)(4), (30)(5)
 
-### 3. Rights of data subjects
+## 3. Rights of data subjects
 
 #### Determining PII principals’ rights and enabling exercise (7.3.1)
 
@@ -328,7 +328,7 @@ Information about any capabilities in Microsoft services for that might support 
 
 (13)(2)(f), (14)(2)(g), (22)(1), (22)(3)
 
-### 4. Privacy by design and default
+## 4. Privacy by design and default
 
 #### Limit collection (7.4.1)
 
@@ -570,7 +570,7 @@ Dynamics 365 is processor of personal data.
 
 (26)(1), (26)(2), (26)(3)
 
-### 5. Data Protection & Security
+## 5. Data Protection & Security
 --------------------------
 
 #### Understanding the organization and its context (5.2.1)
@@ -1143,7 +1143,7 @@ How Microsoft services are tested security based on identified risks, including 
 ##### Addresses GDPR Article(s)
 (32)(1)(d), (32)(2)
 
-### 6. Bibliography of Resources and Links
+## 6. Bibliography of Resources and Links
 
 <!--start table with HEADER here -->
 
@@ -1170,7 +1170,7 @@ How Microsoft services are tested security based on identified risks, including 
 
 <!-- end of table -->                        
 
-## Learn more
+### Learn more
 
 [Microsoft Trust Center](https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx)
 
