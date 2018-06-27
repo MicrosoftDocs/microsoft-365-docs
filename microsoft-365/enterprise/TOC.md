@@ -62,7 +62,7 @@
 #### [Windows](../compliance/gdpr-arc-Windows.md)
 #### [Azure](../compliance/gdpr-arc-Azure.md)
 #### [Dynamics 365](../compliance/gdpr-arc-Dynamics365.md)
-#### [Microsoft Support and Profressional Services](../compliance/gdpr-arc-prof-services.md)
+#### [Microsoft Support and Professional Services](../compliance/gdpr-arc-prof-services.md)
 
 
 ### [Information protection](../compliance/gdpr-information-protection.md?toc=/microsoft-365/enterprise/toc.json)
