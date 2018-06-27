@@ -24,7 +24,7 @@ If you are brand new to Exchange Online, see [Microsoft Exchange Online](https:/
 The following phases and steps guide you through the process of envisioning the role of Exchange Online in your organization, onboarding your organization to Exchange Online through a series of progressive rollouts, and driving usage of Exchange Online and its value to your end users.
 
 >[!Note]
->These deployment instructions should be followed only after you’ve completed your [foundation infrastructure](https://docs.microsoft.com/microsoft-365/enterprise/deploy-foundation-infrastructure) for Microsoft 365 Enterprise.
+>These deployment instructions should be followed only after you’ve completed your [foundation infrastructure](deploy-foundation-infrastructure.md) for Microsoft 365 Enterprise.
 >
 
 ## Phase 1: Envision
@@ -33,7 +33,7 @@ In this phase, you gather the people for your Exchange Online deployment and det
 
 ### Step 1: Gather your Exchange Online deployment members
 
-For a successful deployment of Exchange Online on top of the Microsoft 365 [foundation infrastructure](https://docs.microsoft.com/microsoft-365/enterprise/deploy-foundation-infrastructure), you need to get the right people for input and feedback. Key people include business decision makers, IT staff such as architects and implementers, and advocates for your end users. 
+For a successful deployment of Exchange Online on top of the Microsoft 365 [foundation infrastructure](deploy-foundation-infrastructure), you need to get the right people for input and feedback. Key people include business decision makers, IT staff such as architects and implementers, and advocates for your end users. 
 
 These three groups ensure that your Exchange Online deployment includes considerations that address business needs, technical aspects of mailbox migration and security, and that the result will be something that typical users will use.
 
