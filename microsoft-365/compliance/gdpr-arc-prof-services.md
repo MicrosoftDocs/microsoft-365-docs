@@ -146,7 +146,7 @@ To purchase a copy of the complete draft ISO standard, please visit *https://sho
 |2 <a name="2"> </a>|***Microsoft Professional Services Security Documentation on Microsoft Trust Center***| <https://www.microsoft.com/en-us/TrustCenter/professional-services-security>|
 |3 <a name="3"> </a>|***Training and Awareness Program Description***|Available on request through customer’s account management team.<br><https://gallery.technet.microsoft.com/Azure-Standard-Response-to-5de19cb6>|
 |4 <a name="4"> </a>|***Microsoft Azure Data Security*** (Data Cleansing and Leakage)|<https://blogs.msdn.microsoft.com/walterm/2014/09/04/microsoft-azure-data-security-data-cleansing-and-leakage/>|
-|5 <a name="5"> </a>|***Microsoft Professional Services GDPR Control Set*** Download from Microsoft Service Trust Portal Compliance Manager|<http://aka.ms/servicetrust>|
+|5 <a name="5"> </a>|***Downloadable through Microsoft Service Trust Portal Compliance Manager**| https://aka.ms/GDPRControls or via Compliance Manager https://servicetrust.microsoft.com/ComplianceManager|
 |6 <a name="6"> </a>|***Microsoft Enterprise Business Continuity Management Documentation***|Available on request through customer’s account management team.<br><https://gallery.technet.microsoft.com/Azure-Standard-Response-to-5de19cb6>|
 |7 <a name="7"> </a>|***Who can access your data and on what terms***|<https://www.microsoft.com/en-us/trustcenter/Privacy/Who-can-access-your-data-and-on-what-terms>|
 |8 <a name="8"> </a>|***Microsoft Professional Services Data Subject Requests for the GDPR***|<https://docs.microsoft.com/en-us/microsoft-365/compliance/gdpr-dsr-prof-services>
