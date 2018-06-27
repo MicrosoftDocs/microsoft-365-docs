@@ -23,7 +23,7 @@ description: Use this Test Lab Guide to create a lightweight dev/test environmen
   
 ## Phase 1: Create your Office 365 E5 subscription
 
-Follow the steps in Phase 2 and Phase 3 of the [Office 365 dev/test environment](office-365-dev-test-environment.md) to create a lightweight Office 365 dev/test environment, as shown in Figure 1.
+Follow the steps in Phase 2 and Phase 3 of the [Office 365 dev/test environment](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment) to create a lightweight Office 365 dev/test environment, as shown in Figure 1.
   
 **Figure 1: Your Office 365 E5 subscription with its Azure Active Directory (AD) tenant and user accounts**
 
@@ -59,7 +59,7 @@ First, add the EMS E5 trial subscription and assign an EMS license to your globa
 > [!NOTE]
 > The Enterprise Mobility + Security E5 trial subscription is 90 days. For a permanent dev/test environment, create a new paid subscription with a small number of licenses. 
   
- ***If you completed Phase 3 of the*** [Office 365 dev/test environment](office-365-dev-test-environment.md), repeat steps 8 and 9 of the previous procedure for all of your other accounts (User 2, User 3, User 4, and User 5).
+ ***If you completed Phase 3 of the*** [Office 365 dev/test environment](https://docs.microsoft.com/en-us/office365/enterprise/office-365-dev-test-environment), repeat steps 8 and 9 of the previous procedure for all of your other accounts (User 2, User 3, User 4, and User 5).
   
 Your dev/test environment now has:
   
