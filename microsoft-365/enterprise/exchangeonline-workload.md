@@ -2,7 +2,7 @@
 title: "Deploy Exchange Online for Microsoft 365 Enterprise"
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/06/2018
+ms.date: 06/28/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -162,6 +162,14 @@ Here are some suggested activities:
 #### Result
 
 Your organization has adopted Exchange Online as its primary individual and small group short-lived communication and scheduling tool.
+
+## How Microsoft does Microsoft 365 Enterprise
+
+To peek inside Microsoft and learn how the company migrated to Exchange Online and is using Exchange Online Protection to protect against cyber attacks, see:
+
+- [Microsoft migrates 150,000 mailboxes to Exchange Online](https://www.microsoft.com/itshowcase/Article/Content/577/Microsoft-migrates-150000-mailboxes-to-Exchange-Online)
+- [Microsoft uses threat intelligence to protect, detect, and respond to threats](https://www.microsoft.com/itshowcase/Article/Content/934/Microsoft-uses-threat-intelligence-to-protect-detect-and-respond-to-threats)
+- [Microsoft thwarts phishing attempts with Office 365](https://www.microsoft.com/itshowcase/Article/Content/956/Microsoft-thwarts-phishing-attempts-with-Office-365)
 
 ## Next steps
 
