@@ -48,11 +48,13 @@
 ### [Deploy Exchange Online for Microsoft 365 Enterprise](exchangeonline-workload.md)
 ### [Migration to Microsoft 365 Enterprise](migration-microsoft-365-enterprise-workload.md)
 ## [Microsoft 365 Enterprise Test Lab Guides](m365-enterprise-test-lab-guides.md)
-### [Microsoft 365 Enterprise base configuration]
-#### [Lightweight base configuration](lightweight-base-configuration-microsoft-365-enterprise.md)
-### [Mobile device management Test Lab Guides]
-#### [Enroll iOS and Android devices in your Microsoft 365 Enterprise dev/test environment](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
-#### [MAM policies for your Microsoft 365 Enterprise dev/test environment](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
+### [Base configuration]()
+#### [Lightweight](lightweight-base-configuration-microsoft-365-enterprise.md)
+### [Identity]()
+#### [Multi-factor authentication](multi-factor-authentication-microsoft-365-test-environment.md)
+### [Mobile device management]()
+#### [Enroll iOS and Android devices](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
+#### [MAM policies](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
 # [Services and concepts](services-overview.md)
 # [Identity and device access configurations](microsoft-365-policies-configurations.md)
 ## [Common identity and device access policies](identity-access-policies.md)
