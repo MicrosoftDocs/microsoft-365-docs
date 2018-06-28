@@ -1,5 +1,5 @@
 ---
-title: "Enroll iOS and Android devices in your Microsoft 365 Enteprise dev/test environment"
+title: "Enroll iOS and Android devices in your Microsoft 365 Enterprise dev/test environment"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -17,6 +17,8 @@ description: Use this Test Lab Guide to enroll devices in your Microsoft 365 dev
 # Enroll iOS and Android devices in your Microsoft 365 Enterprise dev/test environment
 
 By following the instructions provided in this article, you'll be able to enroll and test basic mobile device management capabilities for iOS and Android devices in your Microsoft 365 dev/test environment.
+
+![Test Lab Guides in the Microsoft Cloud](\media\m365-enterprise-test-lab-guides\cloud-tlg-icon.png)
   
 ## Phase 1: Create your Microsoft 365 dev/test environment
 
@@ -96,7 +98,7 @@ To reset the passcode remotely:
 
 ## See Also
 
-[Lightweight base configuration](lightweight-base-configuration-microsoft-365-enterprise.md)
+[Microsoft 365 Enterprise Test Lab Guides](m365-enterprise-test-lab-guides.md)
   
 [MAM policies for your Microsoft 365 Enterprise dev/test environment](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
   

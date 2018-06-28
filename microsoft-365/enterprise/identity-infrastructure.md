@@ -3,7 +3,7 @@ title: "Phase 2: Identity"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/13/2018
+ms.date: 06/28/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -50,6 +50,13 @@ Use the following steps to plan and deploy your new identity infrastructure in t
 |![](./media/stepnumbers/Step16.png)| [Provide secure remote access to users](identity-azure-ad-application-proxy.md) |
 
 When you've completed these steps, go to the [exit criteria](identity-exit-criteria.md) for this phase to ensure that you meet the required and optional conditions for Microsoft 365 Enterprise.
+
+## How Microsoft does Microsoft 365 Enterprise
+
+Learn how IT experts at Microsoft planned for and deployed the identity capabilities of Microsoft 365 Enterprise with these resources:
+
+- [Managing user identities and secure access at Microsoft](https://www.microsoft.com/itshowcase/Article/Content/931/Managing-user-identities-and-secure-access-at-Microsoft)
+- [Using Azure AD Privileged Identity Management for elevated access](https://www.microsoft.com/itshowcase/Article/Content/887/Using-Azure-AD-Privileged-Identity-Management-for-elevated-access)
 
 ## Next step
 
