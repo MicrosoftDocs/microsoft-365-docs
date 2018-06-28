@@ -11,12 +11,14 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
-description: Use this Test Lab Guide to add EMS mobile application management (MAM) policies to your Microsoft 365 dev/test environment.
+description: Use this Test Lab Guide to add Intune mobile application management (MAM) policies to your Microsoft 365 dev/test environment.
 ---
 
 # MAM policies for your Microsoft 365 Enterprise dev/test environment
 
-With the instructions in this article, you add mobile application management (MAM) policies to your Microsoft 365 dev/test environment.
+With the instructions in this article, you add Intune mobile application management (MAM) policies to your Microsoft 365 dev/test environment.
+
+![Test Lab Guides in the Microsoft Cloud](\media\m365-enterprise-test-lab-guides\cloud-tlg-icon.png)
   
 ## Phase 1: Build out your Microsoft 365 dev/test environment
 
@@ -131,7 +133,7 @@ You now have two MAM policies, one for iOS devices and one for Android devices, 
   
 ## See Also
 
-[Lightweight base configuration](lightweight-base-configuration-microsoft-365-enterprise.md).
+[Microsoft 365 Enterprise Test Lab Guides](m365-enterprise-test-lab-guides.md).
   
 [Enroll iOS and Android devices in your Microsoft 365 Enterprise dev/test environment](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
   

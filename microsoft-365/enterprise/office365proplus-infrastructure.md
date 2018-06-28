@@ -3,7 +3,7 @@ title: "Phase 4: Office 365 ProPlus"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/06/2018
+ms.date: 06/28/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -46,6 +46,14 @@ For more information, see the [Discovery Value tool](https://online.valuediscove
 >[!Note]
 >If you already have Office 365 ProPlus deployed, please see the [exit criteria](office365proplus-exit-criteria.md) for this phase to make sure that it meets the required conditions for Microsoft 365 Enterprise.
 >
+
+## How Microsoft does Microsoft 365 Enterprise
+
+To understand how IT experts at Microsoft planned for, deployed, and is managing updates for Office 365 ProPlus, see:
+
+- [Preparing your organization for a seamless Office 365 ProPlus 2016 deployment](https://www.microsoft.com/itshowcase/Office365adoption)
+- [Deploying and updating Microsoft Office 365 ProPlus](https://www.microsoft.com/itshowcase/Article/Content/757/Deploying-and-updating-Microsoft-Office-365-ProPlus)
+- [Automation and update channels help deploy Microsoft Office 365 ProPlus](https://www.microsoft.com/itshowcase/Article/Content/794/Automation-and-update-channels-help-deploy-Microsoft-Office-365-ProPlus) (video)
 
 ## Step 1: Assess your environment
 

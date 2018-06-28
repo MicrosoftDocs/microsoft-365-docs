@@ -5,7 +5,7 @@ keywords: Microsoft 365, Microsoft 365 Enterprise, Microsoft 365 documentation, 
 author: arob98 
 ms.author: angrobe 
 manager: angrobe 
-ms.date: 06/06/2018 
+ms.date: 06/28/2018 
 ms.topic: article 
 audience: microsoft-business
 ms.prod: microsoft-365-enterprise
@@ -37,6 +37,10 @@ Intune in Enterprise Security + Management (EMS) enables these strategic busines
 - Protect your users and their accounts
 
 For more information, see the [Discovery Value tool](https://online.valuediscoveryworkshop.com/). 
+
+## How Microsoft does Microsoft 365 Enterprise
+
+Learn how IT experts at Microsoft use EMS to manage Windows 10 and mobile devices with [Managing modern mobile productivity with Enterprise Mobility + Security](https://www.microsoft.com/itshowcase/Article/Content/972/Managing-modern-mobile-productivity-with-Enterprise-Mobility--Security).
 
 ## Next phase
 

@@ -2,7 +2,7 @@
 title: "Deploy Microsoft Teams for Microsoft 365 Enterprise"
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/06/2018
+ms.date: 06/28/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -154,6 +154,13 @@ Here are some suggested activities:
 #### Result
 
 Your organization has adopted Teams as its collaboration and teamwork tool.
+
+## How Microsoft does Microsoft 365 Enterprise
+
+To peek inside Microsoft and learn how the company deployed and is using Microsoft Teams for collaboration, see:
+
+- [Deploying Microsoft Teams streamlines collaboration and improves teamwork](https://www.microsoft.com/itshowcase/Article/Content/1013/Deploying-Microsoft-Teams-streamlines-collaboration-and-improves-teamwork)
+- [Microsoft Teams increases collaboration in the modern workplace at Microsoft](https://www.microsoft.com/itshowcase/Article/Content/1012/Microsoft-Teams-increases-collaboration-in-the-modern-workplace-at-Microsoft)
 
 ## Next steps
 
