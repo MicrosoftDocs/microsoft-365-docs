@@ -19,25 +19,29 @@ description: Use these Test Lab Guides to set up demonstration, proof of concept
 
 # Microsoft 365 Enterprise Test Lab Guides
 
-Test Lab Guides (TLGs) help you quickly learn about Microsoft products. They provide prescriptive instructions to configure simplified but representative environments. You can use these environments for demonstration, customization, or creation of complex proofs of concept for the duration of a trial or paid subscription. 
+Test Lab Guides (TLGs) help you quickly learn about Microsoft products. They provide prescriptive instructions to configure simplified but representative test environments. You can use these environments for demonstration, customization, or creation of complex proofs of concept for the duration of a trial or paid subscription. 
 
-TLGs are designed to be modular. They build upon each other to create multiple configurations that more closely match your learning or test configuration needs. The "I built it out myself and it works" hands-on experience helps you understand the deployment requirements of a new product or solution so you can better plan for hosting it in production.
+TLGs are designed to be modular. They build upon each other to create multiple configurations that more closely match your learning or test configuration needs. The "I built it out myself and it works" hands-on experience helps you understand the deployment requirements of a new product or scenario so you can better plan for hosting it in production.
 
 You can also use TLGs to create representative environments for development and testing of applications, also known as dev/test environments.
   
-![Test Lab Guides in the Microsoft Cloud](\media\m365-enterprise-test-lab-guides\cloud-tlg-icon.png)
+![Test Lab Guides for the Microsoft cloud](/media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
   
 You can create a test environment for [Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365-enterprise/) infrastructure and scenarios with these articles:
   
-- [The Lightweight base configuration](lightweight-base-configuration-microsoft-365-enterprise.md)
+- [The lightweight base configuration](lightweight-base-configuration-microsoft-365-enterprise.md)
     
     Create a simplified environment that includes Office 365 E5, Enterprise Mobility + Security (EMS) E5, and a computer running Windows 10 Enterprise.
+
+- [Multi-factor authentication](multi-factor-authentication-microsoft-365-test-environment.md)
     
-- [MAM policies for your Microsoft 365 Enterprise dev/test environment](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
+    Enable and test smart phone-based multifactor authentication for a specific user account.
+    
+- [MAM policies for your Microsoft 365 Enterprise test environment](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
     
     Create user groups and mobile application management (MAM) policies for iOS and Android devices.
     
-- [Enroll iOS and Android devices in your Microsoft 365 Enterprise dev/test environment](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
+- [Enroll iOS and Android devices in your Microsoft 365 Enterprise test environment](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
     
     Enroll iOS or Android devices and manage them remotely.
     

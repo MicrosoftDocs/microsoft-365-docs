@@ -1,5 +1,5 @@
 ---
-title: "Enroll iOS and Android devices in your Microsoft 365 Enterprise dev/test environment"
+title: "Enroll iOS and Android devices in your Microsoft 365 Enterprise test environment"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -11,22 +11,22 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_TLGs
 ms.assetid: 49c7758a-1c01-4153-9b63-5eae3f6305ce
-description: Use this Test Lab Guide to enroll devices in your Microsoft 365 dev/test environment and manage them remotely.
+description: Use this Test Lab Guide to enroll devices in your Microsoft 365 test environment and manage them remotely.
 ---
 
-# Enroll iOS and Android devices in your Microsoft 365 Enterprise dev/test environment
+# Enroll iOS and Android devices in your Microsoft 365 Enterprise test environment
 
-By following the instructions provided in this article, you'll be able to enroll and test basic mobile device management capabilities for iOS and Android devices in your Microsoft 365 dev/test environment.
+By following the instructions provided in this article, you'll be able to enroll and test basic mobile device management capabilities for iOS and Android devices in your Microsoft 365 Enterprise test environment.
 
-![Test Lab Guides in the Microsoft Cloud](\media\m365-enterprise-test-lab-guides\cloud-tlg-icon.png)
+![Test Lab Guides for the Microsoft cloud](/media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
   
-## Phase 1: Create your Microsoft 365 dev/test environment
+## Phase 1: Create your Microsoft 365 Enterprise test environment
 
 Follow the instructions in the [Lightweight base configuration](lightweight-base-configuration-microsoft-365-enterprise.md).
   
 ## Phase 2: Enroll your iOS and Android devices
 
-First, use the instructions in [Install and sign in to the Company Portal app](https://docs.microsoft.com/intune-user-help/install-and-sign-in-to-the-intune-company-portal-app-ios) to customize the Microsoft Intune Company Portal app for your dev/test tenant.
+First, use the instructions in [Install and sign in to the Company Portal app](https://docs.microsoft.com/intune-user-help/install-and-sign-in-to-the-intune-company-portal-app-ios) to customize the Microsoft Intune Company Portal app for your test tenant.
 
 Next, use the instructions in [Set up access to your company resources](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios) to enroll an iOS device.
 
@@ -100,8 +100,8 @@ To reset the passcode remotely:
 
 [Microsoft 365 Enterprise Test Lab Guides](m365-enterprise-test-lab-guides.md)
   
-[MAM policies for your Microsoft 365 Enterprise dev/test environment](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
+[MAM policies for your Microsoft 365 Enterprise test environment](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
   
+[Deploy Microsoft 365 Enterprise](deploy-microsoft-365-enterprise.md)
+
 [Enterprise Mobility + Security (EMS)](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
-
-
