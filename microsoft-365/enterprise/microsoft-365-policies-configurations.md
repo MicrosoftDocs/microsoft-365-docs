@@ -35,6 +35,7 @@ While we’ve done our best to account for a wide variety of organizational prot
 >[!NOTE]
 >For an overview of the core concepts necessary to understand the protection capabilities described in these recommendations, see the [Microsoft 365 Enterprise documentation home page](index.md).
 >
+
 ##Three tiers of protection
 Most organizations have specific requirements regarding security and data protection. These requirements vary by industry segment and by job functions within organizations. For example, your legal department and Office 365 administrators might require additional security and information protection controls around their email correspondence that are not required for other business unit users.
 
