@@ -53,11 +53,13 @@ It’s important to use consistent levels of protection across your data, identi
 
 **Identity and device protection for Office 365**
 ![O365_Identity_device_protection_thumb_source visio.png](../images/O365_Identity_device_protection_thumb_source visio.png)
+
 [PDF](https://go.microsoft.com/fwlink/p/?linkid=841656) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657) | [More languages](https://www.microsoft.com/download/details.aspx?id=55032)
 
 **File Protection Solutions in Office 365**
 ![File Protection in Office 365_thumb.gif](../images/File Protection in Office 365_thumb.gif)
-PDF | [Visio](http://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.vsdx)
+
+[PDF](http://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.pdf) | [Visio](http://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.vsdx)
 
 ##Services and concepts for identity and device access protection
 
