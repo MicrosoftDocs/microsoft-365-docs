@@ -50,6 +50,75 @@ This guidance shows you how to implement protection for identities and devices f
 
 It’s important to use consistent levels of protection across your data, identities, and devices. For example, if you implement this guidance, be sure to protect your data at comparable levels. These architecture models show you which capabilities are comparable.
 
+**Identity and device protection for Office 365**
+![O365_Identity_device_protection_thumb_source visio.png](../images/O365_Identity_device_protection_thumb_source visio.png)
+[PDF](https://go.microsoft.com/fwlink/p/?linkid=841656) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657) | [More languages](https://www.microsoft.com/download/details.aspx?id=55032)
+
+**File Protection Solutions in Office 365**
+![File Protection in Office 365_thumb.gif](../images/File Protection in Office 365_thumb.gif)
+PDF | [Visio](http://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.vsdx)
+
+##Services and concepts for identity and device access protection
+
+Microsoft 365 Enterprise is designed for large organizations and integrates Office 365 Enterprise, Windows 10 Enterprise, and Enterprise Mobility + Security (EMS) to empower everyone to be creative and work together, securely. 
+
+This section provides an overview of the Microsoft 365 services and capabilities that are important for identity and device access.
+
+###Microsoft Azure Active Directory
+
+Azure AD provides a full suite of identity management capabilities. Our recommendations for securing access use the following capabilities:
+- **Multi-factor authentication (MFA)** — MFA requires users to provide two forms of verification, such as a user password plus phone authentication with a pin. MFA greatly reduces the risk that a stolen identity can be used to access your Office 365 environment. 
+- **Conditional access** — Azure AD evaluates the conditions of the user login and uses conditional access rules you create to allow access. For example, in this guidance we show you how to create a conditional access rule to require device compliance for access to sensitive data. This greatly reduces the risk that a hacker with a stolen identity can access your sensitive data. It also protects sensitive data on the devices because the devices meet specific requirements for health and security. 
+- **Azure AD groups** — Conditional access rules, device management with Intune, and even permissions to files and sites in your organization rely on assignment to users and/or Azure AD groups. We recommend you create Azure AD groups that correspond to the levels of protection you are implementing. For example, your executive staff are likely higher value targets for hackers. Therefore, it makes sense to assign these employees to an Azure AD group and assign this group to conditional access rules and other policies that enforce a higher level of protection for access. 
+- **Device registration** — You register a device into Azure AD to provide an identity to the device. This identity is used to authenticate the device when a user signs in and to apply conditional access rules that require domain-joined or compliant PCs. For this guidance, we use device registration to automatically register domain-joined Windows computers. Device registration is a prerequisite for managing devices with Intune. [bcarter==I dnn't see where we're using device registration for BYOD devices. Also, are we not using Azure AD Join?]
+
+###Azure AD Identity Protection
+
+[Azure AD Identity Protection](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-identityprotection) enables you to detect potential vulnerabilities affecting your organization’s identities and configure automated responses via conditional access policies to low, medium and high sign-in risk and user risk.
+
+This guidance relies on this risk evaluation to apply conditional access rules for multi-factor authentication. This guidance also includes a conditional access rule that requires users to change their password if high risk activity is detected for their account.
+
+###Mobile app protection
+
+[Mobile app protection](https://docs.microsoft.com/en-us/intune/app-protection-policy) policies can be used to protect your company’s data in mobile apps with or without enrolling devices into management. In fact, your users' mobile devices can even be managed by another non-Microsoft MDM solution while Intune helps protect Office 365 information. While making sure your employees can still be productive, you can also prevent data loss—intentional and unintentional. By implementing app-level policies, you can restrict access to company resources and keep data within the control of your IT department.
+
+This guidance shows you how to create recommended policies to enforce the use of approved apps and to determine how these apps can be used with your business data.
+
+###Microsoft Intune
+
+[Intune](https://docs.microsoft.com/en-us/intune/introduction-intune) is Microsoft’s cloud-based mobile device management service. This guidance recommends device management of Windows PCs with Intune and recommends device compliance policy configurations. Intune determines whether devices are compliant and sends this data to Azure AD to use when applying conditional access rule.
+
+###Office 365
+
+This guidance shows you how to implement a set of policies to protect access to Office 365, including Exchange Online, SharePoint Online, and OneDrive for Business. In addition to implementing these policies, we recommend you also raise the level of protection for your Office 365 tenant using these resources:
+
+- [Configure your Office 365 tenant for increased security](https://support.office.com/en-us/article/Configure-your-Office-365-tenant-for-increased-security-8d274fe3-db51-4107-ba64-865e7155b355) (these recommendations apply to baseline security for your Office 365 tenant)
+- [Office 365 security roadmap: Top priorities for the first 30 days, 90 days, and beyond](https://support.office.com/en-us/article/Office-365-security-roadmap-Top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352) (these recommendations include logging, data governance, admin access, and threat protection)
+- Secure SharePoint Online sites and files (this set of articles describes how to protect files and sites at appropriate levels for baseline, sensitive, and highly confidential protection)
+
+###Windows 10 and Office 365 ProPlus
+Windows 10 and Office 365 ProPlus are the recommended client environment for PCs. We recommend Windows 10, as Azure is designed to provide the smoothest SSO experience possible for both on-premises and Azure AD. Windows 10 also includes advanced security capabilities that can be managed through Intune. Office 365 ProPlus includes the latest versions of Office applications. These use modern authentication, which is more secure and a requirement for conditional access. These apps also include enhanced security and compliance tools.
+
+##Applying these capabilities across the three tiers of protection
+
+The following table summarizes our recommendations for using these capabilities across the three tiers of protection.
+
+|Protection mechanism|Baseline|Sensitive|Highly regulated|
+|:-------------------|:-------|:--------|:---------------|
+|**Enforce MFA**|On medium or above sign-in risk|On low or above sign-in risk|On all new sessions|
+|**Enforce Password Change**|For high risk users|For high risk users|For high risk users|
+|**Enforce Intune Application Protection**|Yes|Yes|Yes|
+|**Enforce Intune Enrollment (COD)**|Require a compliant or domain joined PC, but allow BYOD phones/tablets|Require a compliant or domain joined device|Require a compliant or domain joined device|
+
+
+
+
+
+
+
+
+
+
 
 <!---## Core concepts
 All the security measures in the world do not matter when users, who experience unnecessary friction when trying to get their work done, bypass your organizational security policies. Azure AD single-sign on (SSO) attempts to minimize the burden on users. This way users can remain productive while still conforming to the access control policies of the organization.
