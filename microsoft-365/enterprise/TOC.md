@@ -50,7 +50,7 @@
 # [Services and concepts](services-overview.md)
 
 # [Identity and device access configurations](microsoft-365-policies-configurations.md)
-##[Prerequisite wor](identity-access-prerequisites.md)k
+##[Prerequisite work](identity-access-prerequisites.md)
 ## [Common identity and device access policies](identity-access-policies.md)
 ## [Recommended Exchange Online access policies](secure-email-recommended-policies.md)
 ## [Recommended SharePoint Online access policies](sharepoint-file-access-policies.md)
