@@ -111,7 +111,10 @@ The following table summarizes our recommendations for using these capabilities 
 |**Enforce Intune Enrollment (COD)**|Require a compliant or domain joined PC, but allow BYOD phones/tablets|Require a compliant or domain joined device|Require a compliant or domain joined device|
 
 
+## Device ownership
+The above table reflects the trend for many organizations to support a mix of corporate-owned devices (COD) as well as personal or bring-your-own devices (BYOD) to enable mobile productivity across their workforces. Intune App Protection Policies ensure that email is protected from exfiltrating out of the Outlook mobile app and other Office mobile apps, on both COD and BYOD.  
 
+We recommend corporate-owned devices be managed by Intune or domain-joined to apply additional protections and control.  Depending on data sensitivity, your organization may choose to not allow BYOD for specific user populations or specific apps.
 
 
 
