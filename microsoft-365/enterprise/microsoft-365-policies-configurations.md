@@ -25,6 +25,8 @@ The recommended policies are applicable to enterprise organizations operating bo
 **Assumptions**
 Many of the provided recommendations rely on services available only with Enterprise Mobility + Security (EMS) E5 subscriptions. Recommendations presented assume full EMS E5 subscription capabilities.
 
+If you don’t have E5 subscriptions, Microsoft recommends you implement Azure AD  baseline protection capabilities that are included with all plans. See [What is baseline protection](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-conditional-access-baseline-protection) in the Azure AD library.
+
 **Caveats**
 Your organization may be subject to regulatory or other compliance requirements, including specific recommendations that may require you to apply policies that diverge from these recommended configurations.  These configurations recommend usage controls that have not historically been available.  We recommend these controls, because we believe they represent a balance between security and productivity.  
 
@@ -33,8 +35,17 @@ While we’ve done our best to account for a wide variety of organizational prot
 >[!NOTE]
 >For an overview of the core concepts necessary to understand the protection capabilities described in these recommendations, see the [Microsoft 365 Enterprise documentation home page](index.md).
 >
+##Three tiers of protection
+Most organizations have specific requirements regarding security and data protection. These requirements vary by industry segment and by job functions within organizations. For example, your legal department and Office 365 administrators might require additional security and information protection controls around their email correspondence that are not required for other business unit users.
 
-## Core concepts
+Each industry also has their own set of specialized regulations. Rather than providing a list of all possible security options or a recommendation per industry segment or job function, recommendations have been provided for three different tiers of security and protection that can be applied based on the granularity of your needs. 
+
+- **Baseline protectio**n — We recommend you establish a minimum standard for protecting data, as well as the identities and devices that access your data. You can follow these baseline recommendations to provide strong default protection that meets the needs of many organizations.
+- **Sensitive protection** — Some customers have a subset of data that must be protected at higher levels or require all data to be protected at a higher level. You can apply increased protection to all or specific data sets in your Office 365 environment. We recommend protecting identities and devices that access sensitive data with comparable levels of security.  
+- **Highly regulated** — Some organizations may have a very small amount of data that is highly classified, trade secret, or regulated data. Microsoft provides capabilities to help organizations meet these requirements, including added protection for identities and devices.
+
+
+<!---## Core concepts
 All the security measures in the world do not matter when users, who experience unnecessary friction when trying to get their work done, bypass your organizational security policies. Azure AD single-sign on (SSO) attempts to minimize the burden on users. This way users can remain productive while still conforming to the access control policies of the organization.
 
 ### Single sign-on authentication
@@ -150,7 +161,7 @@ The following table contains default protection mechanism recommendations for ea
 ### Device ownership
 The above table reflects the trend for many organizations to support a mix of corporate-owned devices (COD) as well as personal or bring-your-own devices (BYOD) to enable mobile productivity across their workforces. Intune App Protection Policies ensure that email is protected from exfiltrating out of the Outlook mobile app and other Office mobile apps, on both COD and BYOD.  
 
-Corporate-owned devices are required to be managed by Intune or domain-joined to apply additional protections and control.  Depending on data sensitivity, your organization may choose to not allow BYOD for specific user populations or specific apps.
+Corporate-owned devices are required to be managed by Intune or domain-joined to apply additional protections and control.  Depending on data sensitivity, your organization may choose to not allow BYOD for specific user populations or specific apps.--->
 
 ## Next steps
 
