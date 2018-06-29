@@ -52,7 +52,7 @@ With TLGs, you can demonstrate, customize, or build a proof of concept of a comp
 
 For more information, see [Microsoft 365 Enterprise Test Lab Guides](m365-enterprise-test-lab-guides.md).
 
-![Test Lab Guides in the Microsoft Cloud](\media\m365-enterprise-test-lab-guides\cloud-tlg-icon.png)
+![Test Lab Guides for the Microsoft cloud](/media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 ## Additional Microsoft 365 solutions
 

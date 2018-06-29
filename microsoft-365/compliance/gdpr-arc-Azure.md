@@ -20,7 +20,9 @@ This accountability readiness Checklist provides a convenient way to access info
 
 You can manage the items in this checklist with the Compliance Manager [16] by referencing the Control ID and Control Title under Customer Managed Controls in the GDPR tile. This control structure is also used to organize the presentation of the internal controls that Microsoft Azure implements to support GDPR, which you can download here https://servicetrust.microsoft.com/ViewPage/TrustDocuments.
  
-To purchase a copy of the complete draft ISO standard, please visit https://shop.bsigroup.com/ProductDetail?pid=000000000030372571.
+This control structure is also used to organize the presentation of the internal controls that Microsoft Dynamics365 implements to support GDPR, which you can download here:<br>To purchase a copy of the complete draft ISO standard, please visit https://shop.bsigroup.com/ProductDetail?pid=000000000030379002 
+
+For more GDPR related documentation, visit https://aka.ms/gdprgetstarted.
 
 <br>
 
@@ -42,7 +44,6 @@ To purchase a copy of the complete draft ISO standard, please visit https://shop
 <br>
 
 -------------------------------------
-
 ## **3. Rights of data subjects**
 
 <!-- start table here "Rights of data subjects" -->
@@ -92,9 +93,7 @@ To purchase a copy of the complete draft ISO standard, please visit https://shop
 <br>
 
 ----------------------------------------
-
 ## **5.	Data Protection & Security**
-
 
 <!-- table "Data Protection & Security" -->
 
@@ -164,7 +163,6 @@ To purchase a copy of the complete draft ISO standard, please visit https://shop
 15 <a name="15"> </a>|Privacy and personal data in Intune|https://review.docs.microsoft.com/en-us/intune/privacy-personal-data|
 16 <a name="16"> </a>|Complete downloadable Azure GDPR Control Set|https://aka.ms/GDPRControls  or via Compliance Manager Tool at  https://servicetrust.microsoft.com/ComplianceManager|
 17 <a name="17"> </a>|Microsoft DPO Information|<https://aka.ms/GDPRDPO>
-
 
 ### Learn more
 
