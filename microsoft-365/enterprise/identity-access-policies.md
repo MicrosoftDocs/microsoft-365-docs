@@ -1,7 +1,7 @@
 ---
 title: Common identity and device access policies - Microsoft 365 Enterprise | Microsoft Docs
 description: Describes the policies for Microsoft recommendations about how to apply identity and device access policies and configurations.
-author: barlanmsft
+author: BrendaCarter
 manager: Laurawi
 ms.prod: microsoft-365-enterprise
 ms.topic: article
