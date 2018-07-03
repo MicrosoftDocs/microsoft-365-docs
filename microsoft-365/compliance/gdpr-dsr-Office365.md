@@ -27,7 +27,7 @@ The guide discusses how to use Office 365 products, services and administrative 
 
 3.  ***Rectify***—Make changes or implement other requested actions on the personal data, where applicable.
 
-4.  ***Restrict**—*Restrict the processing of personal data, either by removing licenses for various Office 365 services, or by turning off the desired services or features where possible. You can also remove data from the Microsoft cloud and retain it on-premises or at another location.
+4.  ***Restrict***—Restrict the processing of personal data, either by removing licenses for various Office 365 services, or by turning off the desired services or features where possible. You can also remove data from the Microsoft cloud and retain it on-premises or at another location.
 
 5.  ***Delete***—Permanently remove personal data that resides in the Microsoft cloud.
 
@@ -107,7 +107,8 @@ The following table lists the Office 365 applications that people use to create 
 | <img src="media/O365-DSR-Doc-Final_image11.png" /><br />OneNote| <img src="media/O365-DSR-Doc-Final_image12.png" />To-Do |
 | <img src="media/O365-DSR-Doc-Final_image13.png" /><br />Outlook/Exchange Online | <img src="media/O365-DSR-Doc-Final_image14.png" /><br />Video |
 | <img src="media/O365-DSR-Doc-Final_image15.png" /><br />People|<img src="media/O365-DSR-Doc-Final_image16.png" /><br />Visio |
-| <img src="media/O365-DSR-Doc-Final_image17.png" /><br />PowerPoint | <img src="media/O365-DSR-Doc_image33.png" /><br />Yammer ||
+| <img src="media/O365-DSR-Doc-Final_image17.png" /><br />PowerPoint | 
+||
 
 <!-- end of table -->
 

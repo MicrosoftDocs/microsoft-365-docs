@@ -70,7 +70,7 @@
 #### [Windows](../compliance/gdpr-arc-Windows.md)
 #### [Azure](../compliance/gdpr-arc-Azure.md)
 #### [Dynamics 365](../compliance/gdpr-arc-Dynamics365.md)
-#### [Microsoft Support and Profressional Services](../compliance/gdpr-arc-prof-services.md)
+#### [Microsoft Support and Professional Services](../compliance/gdpr-arc-prof-services.md)
 
 
 ### [Information protection](../compliance/gdpr-information-protection.md?toc=/microsoft-365/enterprise/toc.json)
@@ -81,8 +81,9 @@
 #### [Azure](../compliance/gdpr-dsr-Azure.md?toc=/microsoft-365/enterprise/toc.json)
 #### [Intune](../compliance/gdpr-dsr-Intune.md?toc=/microsoft-365/enterprise/toc.json)
 #### [Dynamics 365](../compliance/gdpr-dsr-Dynamics365.md?toc=/microsoft-365/enterprise/toc.json)
-#### [Visual Studio Family](../compliance/gdpr-dsr-visual-studio-family.md?toc=/microsoft-365/enterprise/toc.json)
-#### [Microsoft Support and Professional Services](../compliance/gdpr-dsr-prof-services.md?toc=/microsoft-365/enterprise/toc.json) 
+#### [Visual Studio family](../compliance/gdpr-dsr-visual-studio-family.md?toc=/microsoft-365/enterprise/toc.json)
+#### [Visual Studio Team Services (VSTS)](../compliance/gdpr-dsr-vsts.md?toc=/microsoft-365/enterprise/toc.json)
+#### [Microsoft Support and Professional Services](../compliance/gdpr-dsr-prof-services.md?toc=/microsoft-365/enterprise/toc.json)
 
 ### [Breach notification](../compliance/gdpr-breach-notification.md?toc=/microsoft-365/enterprise/toc.json)
 #### [Office 365](../compliance/gdpr-breach-Office365.md?toc=/microsoft-365/enterprise/toc.json)
