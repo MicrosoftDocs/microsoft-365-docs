@@ -1,20 +1,60 @@
 ---
 title: Recommended secure document policies - Microsoft 365 Enterprise | Microsoft Docs
 description: Describes the policies for Microsoft recommendations about how to secure SharePoint file access.
-author: barlanmsft
-manager: angrobe
+author: 
+manager: laurawi
 ms.prod: microsoft-365-enterprise
 ms.topic: article
-ms.date: 08/30/2017
-ms.author: barlan
+ms.date: 06/07/2019
+ms.author: bcarter
 ms.reviewer: martincoetzer
 ms.custom: it-pro
 ---
 
 # Policy recommendations for securing SharePoint Sites and files
-The following recommendations are provided *in addition to* the [common identity and access policy recommendations](identity-access-policies.md) and [policy recommendations for securing email](secure-email-recommended-policies.md). To safeguard SharePoint Online files, new policies must be created, and existing policies amended, as described here.
+This article describes how to implement the recommended identity and device access policies to protect SharePoint Online and OneDrive for Business. This guidance builds on the [Common identity and device access policies](identity-access-policies.md). 
 
-The following recommendations are based on three different tiers of security and protection for SharePoint files that can be applied based on the granularity of your needs: **baseline**, **sensitive**, and **highly regulated**. You can learn more about these security tiers, and the recommended client operating systems, referenced by these recommendations in the [recommended security policies and configurations introduction](microsoft-365-policies-configurations.md).
+
+These recommendations are based on three different tiers of security and protection for SharePoint files that can be applied based on the granularity of your needs: **baseline**, **sensitive**, and **highly regulated**. You can learn more about these security tiers, and the recommended client operating systems, referenced by these recommendations in the [recommended security policies and configurations introduction](microsoft-365-policies-configurations.md).
+
+##Baseline security
+The following diagram illustrates the set of recommended policies for baseline security and indicates which policies will be updated or newly created to add protection for SharePoint Online and OneDrive for Business.
+
+![Summary of policies for SharePoint Online and OneDrive](media/secure-docs/SharePoint-ruleset.png)
+
+For accessibility, this illustration is detailed in the following table.
+|Policy|Where this is configured|Changes for SharePoint Online and OneDrive for Business|Notes|
+|:-----|:-----|:-----|:-----|
+|Require multi-factor authentication (MFA) when sign-in risk is medium or high|Azure AD conditional access policy|Edit to add SharePoint Online|For sensitive and and highly regulated protection, this rule is more protective|
+|Require compliant PCs and mobile devices|Azure AD conditional access policy|Edit to add SharePoint Online|This rule enforces device management with Intune|
+|Only allow access from approved client apps|Azure AD conditional access policy|Edit to add SharePoint Online| |
+|High risk users must change password|Azure AD Identity Protection user risk policy|No changes|This forces users to change their password when signing in if high risk activity is detected for their account|
+|Device compliance policies|Intune device compliance policy|No changes|You should have one policy for each platform|
+|Define app plolicy|Intune App Protection policies and conditional access rules|Edit this rule to include apps that access SharePoint Online and OneDrive for Business|One policy for each platform|
+|SharePoint admin access control policy|SharePoint admin center policy|This is a new configuration|Configure access control policies to block access to SharePoint Online and OneDrive for Business content from unmanaged devices|
+
+##Sensitive and highly regulated security
+Currently, the only difference between the recommendations for baseline security compared to sensitive and highly regulated security is the amount of protection in the first rule in this rule set: Require multi-factor authentication. 
+
+|Level of protection|Require MFA|
+|:-----|:-----|
+|Baseline|Only when sign-in risk is medium or higher|
+|Sensitive|When sign-in risk is medium or higher|
+|Highly regulated|Always require MFA|
+
+Not every organization requires sensitive or highly regulated protection. If you do, you likely only require these levels of protection for a subset of users who have access to sensitive or highly regulated data. Therefore, the recommendation is to create additional rules for each level of protection and assign these to the target group of users. If a user is included in more than one rule, the most restrictive rule applies to their access. 
+
+The following diagram provides an example of Azure AD group assignments across the three tiers of protection.
+
+![MFA rules for three tiers of protection](media/secure-docs/SharePointMFAruleset.png)
+
+In the illustration:
+- The MFA rule for baseline protection is assigned to "Regular core staff."
+- The MFA rule for sensitive protection is assigned to "Senior and strategic staff."
+- The MFA rule for highly regulated protection is assinged to "IT staff" and "Trade secret project staff."
+
+##Configuring policies
+The rest of this article provides guidance on configuring the recommended policies.  
 
 >[!NOTE]
 >All security groups created as part of these recommendations must be created with Office features enabled. This is specifically important for the deployment of AIP when securing documents in SharePoint.
@@ -22,105 +62,85 @@ The following recommendations are based on three different tiers of security and
 >![Office features enabled for security groups](./media/security-group.png)
 >
 
-## Baseline
+## Require MFA
 
-### Medium and above risk requires MFA
-Make the following changes to the existing CA policy created when applying [policy recomendations to secure email](secure-email-recommended-policies.md) in the assignments category:
+###Baseline protection
+For baseline protection, edit the [rule you already created for Exchange Online](secure-email-recommended-policies.md#medium-and-above-risk-requires-mfa) to include SharePoint Online and OneDrive for Business. Edit this in the assignments category:
 
 |Type|Properties|Values|Notes|
 |:-----|:-----|:-----|:-----|
 |Cloud apps|Include|Select apps:<br></br>  Office 365 Exchange Online<br></br>  Office 365 SharePoint Online|Select both|
 
-### Require a compliant or domain joined device
-To create a new Intune Conditional Access Policy for SharePoint Online, log in to the [Microsoft Management portal](http://manage.microsoft.com) with your administrator credentials and then navigate to **Policy** > **Conditional Access** > **SharePoint Online Policy**.
+###Sensitive and highly regulated protection
+For sensitive and highly regulated protection, create a new MFA rule for each (with the recommended level of protection) and assign the rule to the intended users. For recommended settings, see the following:
+- [Sensitive: Low and above risk requires MFA](secure-email-recommended-policies.md#low-and-above-risk-requires-mfa)
+- [Highly regulated: MFA required](secure-email-recommended-policies.md#mfa-required)
 
-![SharePoint Online Policy](./media/secure-docs/sharepoint-online-policy.png)
+## Require a compliant or domain joined device
+Add Office 365 SharePoint Online to the scope of the existing rule. See [Require a compliant or domain joined device](secure-email-recommended-policies.md#require-a-compliant-or-domain-joined-device-2). 
 
-You must set a Conditional Access policy specifically for SharePoint Online in the Intune Management portal to require a compliant or domain joined device.
 
-**Application access**
-|Type|Properties|Values|Notes|
-|:-----|:-----|:-----|:-----|
-|OneDrive for Business and other apps that user modern authentication|All platforms|True|Selected|
-|     |Windows must meet the following requirement|Device must be domain joined or compliant|Selected (List)|
-|     |Specific platforms|False||
-|Browser access to SharePoint and OneDrive for Business |Block non-compliant devices on same platform as OneDrive for Business|True|Check|
 
-**Policy deployment**
-|Type|Properties|Values|Notes|
-|:-----|:-----|:-----|:-----|
-|Targeted groups|Select the Active Directory groups to target with this policy|     |     |
-|     |All users|False|     |
-|     |Selected security groups|True|Selected|
-|     |Modify|Select specific security group containing targeted users.|     |
-|Exempt groups|Select the Active Directory groups to exempt from this policy (overrides members of the Targeted Groups list).|     |     |    
-|     |No exempt users|True|Selected|
-|     |Selected security groups|False|     |
+## Only allow access from approved client apps
+Approved client apps support Intune mobile application management. This conditional access rule only allows access to services, like Exchange Online and SharePoint Online, from approved client apps. The control selected in this rule only applies to the iOS and Android platforms. Add Office 365 SharePoint Online to the scope of this existing rule, or create this rule if you don't already have it configured. 
 
-### Mobile application management conditional access for SharePoint Online
+To create a conditional access policy to only allow access from approved client apps:
 
-You must set a Conditional Access policy specifically for SharePoint Online in the Intune Management portal to manage mobile apps.
+1. Go to the [Azure portal](https://portal.azure.com), and sign in with your credentials. After you've successfully signed in, you see the Azure Dashboard.
 
-To manage mobile apps, log in to the Microsoft Azure portal with your administrator credentials, and then navigate to **Intune App Protection** > **Settings** > **Conditional Access** > **SharePoint Online**.
+2. Choose **Azure Active Directory** from the left menu.
 
-**App access**
-|Type|Properties|Values|Notes|
-|:-----|:-----|:-----|:-----|
-|Allowed apps|Enable app access|Allow apps that support Intune app policies|Selected (list) – This results in a list of apps/platform combinations supported by Intune app policies.|
+3. Under the **Security** section, choose **Conditional access**.
 
-**User access**
-|Type|Properties|Values|Notes|
-|:-----|:-----|:-----|:-----|
-|     |Restricted user groups|Add user groups – Select specific security group containing targeted users.|Start with security group including pilot users.|
-|     |Exempt user groups|Exception security groups|     |
+4. Choose **New policy**.
 
-### Apply to
+5. Enter a policy name, then choose the **Users and groups** you want to apply the policy for.
 
-Once your pilot project has been completed, these policies should be applied to all users in your organization.
+6. Choose **Cloud apps**.
 
-## Sensitive
+7. Choose **Select apps**, select **Office 365 SharePoint Online** from the **Cloud apps** list, click on **Select**. Once the **Office 365 SharePoint Online** app is selected, click **Done**.
 
-### Low and above risk requires MFA
+8. Choose **Grant** from the **Access controls** section.
 
-Make the following changes to the existing CA policy created when applying [policy recomendations to secure email](secure-email-recommended-policies.md):
+9. Choose **Grant access**, select **Require approved client app**, then choose **Select**.
 
-**Assignments**
-|Type|Properties|Values|Notes|
-|:-----|:-----|:-----|:-----|
-|Cloud apps|Include|Select apps:<br></br>  Office 365 Exchange Online<br></br>  Office 365 SharePoint Online|Select both|
+10. Click **Create** to create the conditional access policy.
 
-### Require a compliant or domain joined device
 
-(See baseline instructions)
 
-### Mobile application management conditional access for SharePoint online
 
-(See baseline instructions)
+## Define app protection policies
+Modify the app protection policies for your environment to include apps that access SharePoint Online and OneDrive for Business. You must create an app protection policy for each platform: 
+- ios
+- Android
+- Windows 10
 
-## Highly regulated
+If you created these policies for Exchange Online, they might only include Outlook. The recommended list of apps includes the following:
+- PowerPoint
+- Excel
+- Word
+- Microsoft Teams
+- Microsoft SharePoint
+- Microsoft Visio Viewer
+- OneDrive
+- OneNote
+- Outlook
 
-### MFA required
+To create or edit the policies and assign these policies to users, see [How to create and assign app protection policies](https://docs.microsoft.com/en-us/intune/app-protection-policies). 
 
-Make the following changes to the existing CA policy created when applying [policy recomendations to secure email](secure-email-recommended-policies.md):
+For recommended app protection settings for baseline security, see "Settings" under [Intune mobile application management](secure-email-recommended-policies.md#intune-mobile-application-management).
 
-**Assignments**
-|Type|Properties|Values|Notes|
-|:-----|:-----|:-----|:-----|
-|Cloud apps|Include|Select apps:<br></br>  Office 365 Exchange Online<br></br>  Office 365 SharePoint Online|Select both|
+##Block access to content from unmanaged devices (SharePoint admin center)
+In the case of SharePoint Online, when a conditional access policy is applied to enforce Intune app protection policies, this might not apply to all applications that access SharePoint Online. Some applications, such as Exchange, have access to some SharePoint resources. For example, Exchange allows attaching SharePoint files by default. Conditional access policies applied to SharePoint Online will not restrict this access. 
 
-### Require a compliant or domain joined device
-(See baseline instructions)
+To ensure baseline protection is applied uniformly, regardless of which service is accessing SharePoint Online and OneDrive for Business, configure access controls directly in SharePoint admin center. We recommend you configure the following:
+- Block access from unmanaged devices. This includes devices that aren't compliant or joined to a domain. 
+- Block access from app that don't use modern authentication.
 
-### Mobile application management conditional access for SharePoint online
-(See baseline instructions)
+See [Control access from unmanaged devices](https://support.office.com/en-us/article/Control-access-from-unmanaged-devices-5ae550c4-bd20-4257-847b-5c20fb053622?ui=en-US&rs=en-US&ad=US).
 
-## Additional configurations
-In addition to the above policies, you must also lock down legacy protocols that do not support modern authentication.
 
-### Lock down legacy protocols
-Conditional access policies protect access through browser flows and apps using modern authentication; like Office 2016 and the apps on the supported platform list. For older Office desktop applications, like Office 2010, conditional access policy is not applied.
 
-Older apps that don’t use modern authentication can be blocked [using the OneDrive admin portal](https://support.office.com/article/Control-access-based-on-network-location-or-app-59b83701-cefd-4bf8-b4d1-d4659b60da08). The SharePoint admin PowerShell cmdlet can also be used to disable SharePoint legacy protocols. To use PowerShell, just run the [Set-SPOTenant cmdlet](https://technet.microsoft.com/library/fp161390.aspx) and set **-LegacyAuthProtocolsEnabled** to **$false**.  Once set, legacy protocol support is disabled and all access to SharePoint using older client applications will be blocked.
 
 ## Next steps
 [Learn more about Microsoft 365 services](index.md)

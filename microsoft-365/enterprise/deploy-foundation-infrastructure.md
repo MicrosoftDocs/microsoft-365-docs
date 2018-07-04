@@ -3,7 +3,7 @@ title: "Microsoft 365 Enterprise foundation infrastructure"
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 04/25/2018
+ms.date: 06/27/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -21,9 +21,9 @@ To fully realize the benefits of Microsoft 365 Enterprise, you’ll begin your d
 
 ## Foundation infrastructure for deploying Microsoft 365 Enterprise
 
-The foundation infrastructure is the groundwork upon which you can deploy productivity workloads such as Exchange Online, SharePoint Online, and Microsoft Teams in Office 365. It provides intelligent security and integration that simplifies ongoing management, which ensures that your client software is updated with the latest productivity and security enhancements.
+The foundation infrastructure is the groundwork upon which you can deploy productivity workloads (such as Microsoft Teams and Exchange Online in Office 365) and scenarios (such as migrating to Microsoft 365 and automating client updates). It provides intelligent security and integration that simplifies ongoing management, which ensures that your client software is updated with the latest productivity and security enhancements.
 
-You'll use the following phases to plan for and deploy the foundation infrastructure of Microsoft Enterprise 365 in your organization:
+You'll use the following phases to plan for and deploy the foundation infrastructure of Microsoft 365 Enterprise in your organization:
 
 |||
 |:-------|:-----|
@@ -37,15 +37,19 @@ You'll use the following phases to plan for and deploy the foundation infrastruc
 
 Before you can exit each phase, you must examine its exit criteria, which is a set of required conditions that you must meet and optional conditions to consider. Exit criteria for each phase ensures that your on-premises and cloud infrastructure and resulting end-to-end configuration meet the requirements for a Microsoft 365 Enterprise deployment.
 
+Watch this short video on how the foundation infrastructure content works.
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE23VRG]
+
 The following figure shows the foundation infrastructure in the overall Microsoft 365 Enterprise deployment content and your path through it.
 
 ![](./media/deploy-foundation-infrastructure/m365-deploy-content-arch-foundation.png)
 
 ## FastTrack
 
-FastTrack is an ongoing and repeatable benefit—available as part of your subscription—that is delivered by Microsoft engineers to help you move to the cloud at your own pace. FastTrack also gives you access to qualified partners for additional services, as needed. With over 40,000 customers enabled to date, FastTrack helps maximize ROI, accelerate deployment, and increase adoption across your organization. See [FastTrack for Microsoft 365](https://fasttrack.microsoft.com/microsoft365).
+FastTrack is an ongoing and repeatable benefit—available as part of your subscription—that is delivered by Microsoft engineers to help you move to the cloud at your own pace. FastTrack also gives you access to qualified partners for additional services, as needed. With over 40,000 customers enabled to date, FastTrack helps maximize ROI, accelerate deployment, and increase adoption across your organization. See [FastTrack for Microsoft 365](https://fasttrack.microsoft.com/microsoft365). 
 
-If you want to take advantage of FastTrack to deploy Microsoft 365 Enterprise, you can use the FastTrack [Microsoft 365 deployment advisor](https://aka.ms/microsoft365setupguide) for guidance on how to deploy and set up your foundation infrastructure.
+If you want to take advantage of FastTrack to deploy Microsoft 365 Enterprise, you can use the FastTrack [Microsoft 365 deployment advisor](https://aka.ms/microsoft365setupguide) for guidance on how to deploy and set up your foundation infrastructure. You must be signed on as a global administrator in an Office 365 or Microsoft 365 tenant in order to access this page.
 
 ## Next step
 
