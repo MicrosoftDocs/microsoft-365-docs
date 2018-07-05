@@ -7,7 +7,7 @@ localization_priority: Normal
 audience: microsoft-business
 ms.prod: microsoft-365-enterprise
 ms.topic: article
-ms.date: 06/01/2018
+ms.date: 06/28/2018
 ms.author: celested
 ---
 
@@ -22,6 +22,19 @@ Microsoft 365 Enterprise includes Windows 10 Enterprise, which gives you the too
 - **Enables creativity and teamwork** - Unlocks creativity and teamwork to deliver the most productive experience that both users and IT will love.
 
 You'll need to understand the different ways you can deploy the Windows 10 operating system and choose the right one for your organization. Depending on your Microsoft 365 Enterprise subscription, there are also Windows 10 services and security features that you'll need to configure to get the most out of Windows 10.
+
+Windows 10 enables these strategic business scenarios for Microsoft 365 Enterprise:
+
+- Harness collective knowledge and expertise by empowering people to discover, share, and progress files, information, and ideas across your organization
+- Work securely from anywhere, anytime across your device to achieve more while maintaining a flexible workstyle
+- Provide peace-of-mind with controls and visibility for industry-verified conformity with global standards in compliance
+- Protect your information and reduce the risk of data loss
+- Detect and protect against external threats --Monitor, report and analyze activity to react promptly to provide organizational security
+- Protect your users and their accounts
+- Support your organization with enhanced privacy and compliance to meet the General Data Protection Regulation (GDPR)
+- Get current and stay current on your desktop software and devices while reducing security risks and maximizing IT efficiency
+
+For more information, see the [Discovery Value tool](https://online.valuediscoveryworkshop.com/). 
 
 ## Windows 10 deployment
 There are multiple ways you can deploy Windows 10 Enterprise for your organization. Here, we'll focus on how you can configure and deploy a Windows 10 Enterprise image through these modern deployment scenarios.
@@ -54,7 +67,19 @@ See [Windows Analytics Overview](https://docs.microsoft.com/windows/deployment/u
 ### Windows security
 Windows 10 provides features to help protect against threats, help you secure your devices, and help with access control. With Windows 10, you get critical security features that protect your device right from the start. Microsoft 365 E3 adds security features such as Windows Hello for Business, Windows Defender Application Control, and Windows Information Protection. With Microsoft 365 E5, you get all the protection from Microsoft 365 E3 security plus cloud-based security features and Windows Defender Advanced Threat Protection. 
 
-To learn more about the security features that you get with Windows 10 Enterprise and get guidance on how you can deploy, manage, configure, and troubleshoot three key security features, see [Step 5: Deploy Windows 10 Enterprise security features](windows10-enable-security-features.md).
+To learn more about the security features that you get with Windows 10 Enterprise and get guidance on how you can deploy, manage, configure, and troubleshoot three key ecurity features, see [Step 5: Deploy Windows 10 Enterprise security features](windows10-enable-security-features.md).
+
+## How Microsoft does Microsoft 365 Enterprise
+
+To peek inside Microsoft and learn how the company planned for, deployed, and is managing updates for Windows 10, see:
+
+- [Preparing your organization for a seamless Windows 10 deployment](https://www.microsoft.com/itshowcase/windows10deployment?wt.mc_id=bmkg_itsc)
+- [Adopting Windows as a service at Microsoft](https://www.microsoft.com/itshowcase/Article/Content/851/Adopting-Windows-as-a-service-at-Microsoft)
+- [Deploying Windows 10 at Microsoft as an in-place upgrade](https://www.microsoft.com/itshowcase/Article/Content/668/Deploying-Windows-10-at-Microsoft-as-an-inplace-upgrade)
+- [Implementing strong user authentication with Windows Hello for Business](https://www.microsoft.com/itshowcase/Article/Content/756/Implementing-strong-user-authentication-with-Windows-Hello-for-Business)
+- [Windows 10 deployment: tips and tricks from Microsoft IT](https://www.microsoft.com/itshowcase/Article/Content/951/Windows-10-deployment-tips-and-tricks-from-Microsoft-IT) (video)
+- [Windows Defender ATP helps detect sophisticated threats](https://www.microsoft.com/itshowcase/Article/Content/854/Windows-Defender-ATP-helps-detect-sophisticated-threats)
+- [Securing the modern enterprise with Windows Defender and Windows Defender ATP](https://www.microsoft.com/itshowcase/Article/Content/903/Securing-the-modern-enterprise-with-Windows-Defender-and-Windows-Defender-ATP) (video)
 
 ## Next step
 

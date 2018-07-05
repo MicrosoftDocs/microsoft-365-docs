@@ -43,10 +43,22 @@
 #### [Step 4: Configure increased security for Office 365](infoprotect-configure-increased-security-office-365.md)
 #### [Information protection infrastructure exit criteria](infoprotect-exit-criteria.md)
 ### [Deployment of Microsoft 365 Enterprise with existing infrastructure](deploy-with-existing-infrastructure.md)
-## [Deploy workloads](deploy-workloads.md)
+## [Deploy workloads and scenarios](deploy-workloads.md)
 ### [Deploy Microsoft Teams for Microsoft 365 Enterprise](teams-workload.md)
 ### [Deploy Exchange Online for Microsoft 365 Enterprise](exchangeonline-workload.md)
+<<<<<<< HEAD
 
+=======
+### [Migration to Microsoft 365 Enterprise](migration-microsoft-365-enterprise-workload.md)
+## [Microsoft 365 Enterprise Test Lab Guides](m365-enterprise-test-lab-guides.md)
+### [Base configuration]()
+#### [Lightweight](lightweight-base-configuration-microsoft-365-enterprise.md)
+### [Identity]()
+#### [Multi-factor authentication](multi-factor-authentication-microsoft-365-test-environment.md)
+### [Mobile device management]()
+#### [Enroll iOS and Android devices](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
+#### [MAM policies](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
+>>>>>>> master
 # [Services and concepts](services-overview.md)
 
 # [Identity and device access configurations](microsoft-365-policies-configurations.md)
@@ -64,7 +76,7 @@
 #### [Windows](../compliance/gdpr-arc-Windows.md)
 #### [Azure](../compliance/gdpr-arc-Azure.md)
 #### [Dynamics 365](../compliance/gdpr-arc-Dynamics365.md)
-#### [Microsoft Support and Profressional Services](../compliance/gdpr-arc-prof-services.md)
+#### [Microsoft Support and Professional Services](../compliance/gdpr-arc-prof-services.md)
 
 
 ### [Information protection](../compliance/gdpr-information-protection.md?toc=/microsoft-365/enterprise/toc.json)

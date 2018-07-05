@@ -24,7 +24,7 @@ For more information about how Microsoft can help you with the GDPR, see [Get St
 
 Office 365 provides a rich set of data governance capabilities. For help with finding, classifying, protecting, and monitoring personal data, see [Office 365 Information Protection for GDPR](https://docs.microsoft.com/en-us/office365/enterprise/office-365-information-protection-for-gdpr). 
 
-For help with on-premises servers, including file shares, SharePoint Server, Exchange Server, Skype for Business Server, Project Server, and Office Online Server, see GDPR for on-premises Office servers. 
+For help with on-premises servers, including file shares, SharePoint Server, Exchange Server, Skype for Business Server, Project Server, and Office Online Server, see [GDPR for on-premises Office servers](https://docs.microsoft.com/en-us/office365/enterprise/gdpr-for-office-servers). 
 
 ## Identity and access management
 
