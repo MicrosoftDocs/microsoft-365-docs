@@ -23,7 +23,7 @@ If you have existing computers running Windows 7 or Windows 8.1, we recommend th
 
 Follow these steps to configure and deploy a Windows 10 Enterprise image using Configuration Manager as an in-place upgrade.
 
-## Part 1: Set Windows diagnotics data level
+## Part 1: Set Windows diagnostics data level
 Microsoft uses diagnostic data to help keep Windows devices secure by identifying malware trends and other threats and to help us improve the quality of Windows and Microsoft services. You must ensure that the diagnostics service is enabled at a minimum level of Basic on all endpoints in your organization. *By default, this service is enabled and set to the Enhanced level.* However, it’s good practice to check and ensure that they are receiving sensor data. Setting levels through policies overrides device-level settings. 
 
 **Windows 10 operating system diagnostic data levels**
