@@ -20,6 +20,14 @@ This guidance discusses how to deploy the recommended policies in a newly provis
 
 ![common identity and device access policies](../images/identity-access-policies-common-ruleset.png)
 
+|Protection level|Policies|
+|:---------------|:-------|
+|Baseline|Require MFA when sign-in risk is medium or high|
+|        |Require compliant PCs or approved apps|
+|        |Block clients that don't support modern authentication|
+|        |High risk users must change password|
+|        |Define compliance policies|
+|        |Define app protection policies
 
 <!---
 #### Data loss prevention
