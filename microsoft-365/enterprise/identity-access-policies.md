@@ -16,6 +16,8 @@ This article describes the common recommended policies to help you secure Micros
 
 This guidance discusses how to deploy the recommended policies in a newly provisioned environment. Setting up these policies in a separate lab environment allows you to understand and evaluate the recommended policies before staging the rollout to your pre-production and production environments. Your newly provisioned environment may be cloud-only or Hybrid.  
 
+##Policy set 
+
 ![common identity and device access policies](../images/identity-access-policies-common-ruleset.png)
 
 
