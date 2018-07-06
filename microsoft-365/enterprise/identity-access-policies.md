@@ -12,83 +12,14 @@ ms.custom: it-pro
 ---
 
 # Common identity and device access policies
-This article describes the common recommended policies to help you secure Microsoft 365 Enterprise. Also discussed are the default platform client configurations we recommend to provide the best SSO experience to your users, as well as the technical pre-requisites for conditional access.
+This article describes the common recommended policies to help you secure Microsoft 365 Enterprise. 
 
 This guidance discusses how to deploy the recommended policies in a newly provisioned environment. Setting up these policies in a separate lab environment allows you to understand and evaluate the recommended policies before staging the rollout to your pre-production and production environments. Your newly provisioned environment may be cloud-only or Hybrid.  
 
-To successfully deploy the recommended polices, you need to take actions in the Azure portal to meet the prerequisites stated earlier. Specifically, you need to:
-* Configure named networks, to ensure Azure Identity Protection can properly generate a risk score
-* Require all users to register for multi-factor authentication (MFA)
-* Configure Password Hash Sync and self-service password reset to enable users to be able to reset passwords themselves
-
-You can target both Azure AD and Intune policies towards specific groups of users. We suggest rolling out the policies defined earlier in a staged way. This way you can validate the performance of the policies and your support teams relative to the policy incrementally.
+![common identity and device access policies](../images/identity-access-policies-common-ruleset.png)
 
 
-## Prerequisites
-
-Before implementing the policies described in the remainder of this document, there are several prerequisites that your organization must meet:
-* [Configure Password Hash Sync](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-implement-password-synchronization). This must be enabled to detect leaked credentials and to act on them for risk based Conditional Access. **Note:** This is required, regardless of whether your organization use managed, like Pass Through Authentication (PTA), or federated authentication.
-* [Configure named networks](https://docs.microsoft.com/azure/active-directory/active-directory-known-networks-azure-portal). Azure AD Identity Protection collects and analyzes all available session data to generate a risk score. We recommend that you specify your organization's public IP ranges for your network in the Azure AD named networks configuration. Traffic coming from these ranges is given a reduced risk score, so traffic from outside the corporate environment is treated as higher risk score.
-* [Register all users with multi-factor authentication (MFA)](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-manage-users-and-devices). Azure AD Identity Protection makes use of Azure MFA to perform additional security verification. We recommend that you require all users to register for Azure MFA ahead of time.
-* [Enable automatic device registration of domain joined Windows computers](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-automatic-device-registration-setup). Conditional access can ensure the device connecting to the service is a domain joined or compliant device. To support this on Windows computers, the device must be registered with Azure AD.  This article discusses how to configure automatic device registration.
-* **Prepare your support team**. Have a plan in place for users that cannot complete MFA. This can be adding them to a policy exclusion group, or registering new MFA info for them. Before making either of these security sensitive changes, you need to ensure the actual user is making the request. Requiring users' managers to help with the approval is an effective step.
-* [Configure password writeback to on-premises AD](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-getting-started). Password Writeback allows Azure AD to require that users change their on-premises passwords when there has been a high risk of account compromise detected. You can enable this feature using Azure AD Connect in one of two ways. You can either enable Password Writeback in the optional features screen of the Azure AD Connect setup wizard, or you can enable it via Windows PowerShell.  
-* [Enable modern authentication](https://support.office.com/article/Enable-or-disable-modern-authentication-in-Exchange-Online-58018196-f918-49cd-8238-56f57f38d662) and [protect legacy endpoints](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-supported-apps).  Conditional access works both with mobile and desktop applications that use modern authentication. If the application uses legacy authentication protocols, it may gain access despite the conditions being applied. It is important to know which applications can use conditional access rules and the steps that you need to take to secure other application entry points.
-* [Enable Azure Information Protection](https://docs.microsoft.com/information-protection/get-started/infoprotect-tutorial-step1) by activating Rights Management. Use Azure Information Protection with email to start with classification of emails. Follow the quick start tutorial to customize and publish policy.  
-
-### Recommended email clients
-The following email clients support Modern Authentication and Conditional Access. Azure Information Protection is not yet available for all clients.
-
-|Platform|Client|Version/Notes|Azure Information Protection|
-|:-------|:-----|:------------|:--------------------|
-|**Windows**|Outlook|2016, 2013 [Enable Modern Auth](https://support.office.com/article/Enable-Modern-Authentication-for-Office-2013-on-Windows-devices-7dc1c01a-090f-4971-9677-f1b192d6c910), [Required updates](https://support.office.com/article/Outlook-Updates-472c2322-23a4-4014-8f02-bbc09ad62213)|Yes|
-|**iOS**|Outlook|[Latest](https://itunes.apple.com/us/app/microsoft-outlook-email-and-calendar/id951937596?mt=8)|No|
-|**Android**|Outlook|[Latest](https://play.google.com/store/apps/details?id=com.microsoft.office.outlook&hl=en)|No|
-|**macOS**|Outlook|2016|No|
-|**Linux**|Not supported||No|
-
-In order to access Azure Information Protection protected documents additional software may be required. Be sure that you are using [supported software and document formats](https://docs.microsoft.com/information-protection/get-started/requirements-applications) to create and view protected documents with Azure Information Protection.
-
-
-### Recommended client platforms when securing documents
-The following clients are recommended when a Secure Documents policy has been applied.
-
-|Platform|Word/Excel/PowerPoint|OneNote|OneDrive App|SharePoint App|OneDrive Sync Client|
-|:-------|:-----|:------------|:-------|:-------------|:-----|
-|Windows 7|Supported|Supported|N/A|N/A|Preview<sup>*</sup>|
-|Windows 8.1|Supported|Supported|N/A|N/A|Preview<sup>*</sup>|
-|Windows 10|Supported|Supported|N/A|N/A|Preview<sup>*</sup>|
-|Windows Phone 10|Not supported|Not supported|Supported|Supported|N/A|
-|Android|Supported|Supported|Supported|Supported|N/A|
-|iOS|Supported|Supported|Supported|Supported|N/A|
-|macOS|Public Preview|Public Preview|N/A|N/A|Not supported|
-|Linux|Not supported|Not supported|Not supported|Not supported|Not supported|
-
-<sup>*</sup> Learn more about the [OneDrive Sync Client Preview](https://support.office.com/article/Azure-Active-Directory-conditional-access-with-the-OneDrive-sync-client-on-Windows-028d73d7-4b86-4ee0-8fb7-9a209434b04e).
-
-> [!NOTE]
-> The following recommendations are based on three different tiers of security and protection for your email that can be applied based on the granularity of your needs: **baseline**, **sensitive**, and **highly regulated**. You can learn more about these security tiers, and the recommended client operating systems, referenced by these recommendations in the [recommended security policies and configurations introduction](microsoft-365-policies-configurations.md).
-
-
-## Baseline
-This section describes the recommendations for the baseline tier of data, identity, and device protection. These recommendations should meet the default protection needs of many organizations.
-
->[!NOTE]
->The policies below are additive and build upon each other. Each section describes only the additions applied to each tier.
->
-
-### Conditional access policy settings
-
-#### Identity protection
-You can give users single sign-on (SSO) experience as described in earlier sections. You only need to intervene when necessary based on [risk events](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-risk-events).  
-
-* Require MFA based on **medium or above** sign-in risk
-* Require secure password change for **high** risk users
-
->[!IMPORTANT]
->[Password synchronization](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-implement-password-synchronization) and [self-service password reset](https://docs.microsoft.com/azure/active-directory/active-directory-passwords) are required for this policy recommendation.
->
-
+<!--->
 #### Data loss prevention
 The goal for your device and app management policies is to protect data loss in the event of a lost or stolen device. You can do this by ensuring that access to data is protected by a PIN, that the data is encrypted on the device, and that the device is not compromised.
 
@@ -183,7 +114,7 @@ For most organizations, it is important to be able to set expectations for users
   * Users will be asked to perform MFA whenever they begin a new session.  
   * Users will be required to use email apps that support the Intune App Protection SDK
   * Users will be required to access emails from Intune compliant or AD domain-joined devices.
-
+--->
 ## Next steps
 
 [Learn about policy recommendations for securing email](secure-email-recommended-policies.md)
