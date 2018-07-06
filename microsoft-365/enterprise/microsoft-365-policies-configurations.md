@@ -53,9 +53,7 @@ This guidance shows you how to implement protection for identities and devices f
 It’s important to use consistent levels of protection across your data, identities, and devices. For example, if you implement this guidance, be sure to protect your data at comparable levels. These architecture models show you which capabilities are comparable.
 
 **Identity and device protection for Office 365**
-
 ![Thumbnail for poster "Identity and device protection for Office 365"](../images/O365_Identity_device_protection_thumb.png)
-
 [PDF](https://go.microsoft.com/fwlink/p/?linkid=841656) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657) | [More languages](https://www.microsoft.com/download/details.aspx?id=55032)
 
 **File Protection Solutions in Office 365**
