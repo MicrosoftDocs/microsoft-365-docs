@@ -18,7 +18,11 @@ This guidance discusses how to deploy the recommended policies in a newly provis
 
 ##Policy set 
 
+The following diagram illustrates the recommended set of policies. It shows which tier of protections each policy applies to and whether the policies apply to PCs, phones and tablets, or both categories of devices.
+
 ![common identity and device access policies](../images/identity-access-policies-common-ruleset.png)
+
+The rest of this article describes how to configure these policies, using the order listed in this table. 
 
 |Protection level|Policies|
 |:---------------|:-------|
@@ -31,6 +35,8 @@ This guidance discusses how to deploy the recommended policies in a newly provis
 |Sensitive|Require MFA when sign-in risk is *low*, *medium* or *high*|
 |         |Require compliant PCs *and* mobile devices|
 |Highly regulated|*Always* requrie MFA|
+
+##Assigning policies to users
 
 <!---
 #### Data loss prevention
