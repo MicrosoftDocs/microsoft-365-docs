@@ -48,7 +48,7 @@
 ### [Deploy Exchange Online for Microsoft 365 Enterprise](exchangeonline-workload.md)
 <!--- <<<<<<< HEAD --->
 
-=======
+
 ### [Migration to Microsoft 365 Enterprise](migration-microsoft-365-enterprise-workload.md)
 ## [Microsoft 365 Enterprise Test Lab Guides](m365-enterprise-test-lab-guides.md)
 ### [Base configuration]()
