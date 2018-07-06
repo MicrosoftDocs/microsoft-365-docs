@@ -48,6 +48,79 @@ The following diagram provides an example of user assignment and exclusions.
 
 In the illustration the "Top secret project X team" is assigned a conditional access policy that requires MFA *always*. Be judicious when applying higher levels of protection to users. Members of this project team will be required to provide two forms of authentication every time they log on, even if they are not viewing highly regulated content.  
 
+ All security groups created as part of these recommendations must be created with Office features enabled. This is specifically important for the deployment of Azure Information Protection (AIP) when securing documents in SharePoint Online.
+
+![Office features enabled for security groups](./media/security-group.png)
+
+
+## Require MFA when sign-in risk is medium or high
+To create a new conditional access policy: 
+
+1. Go to the [Azure portal](https://portal.azure.com), and sign in with your credentials. After you've successfully signed in, you see the Azure Dashboard.
+
+2. Choose **Azure Active Directory** from the left menu.
+
+3. Under the **Security** section, choose **Conditional access**.
+
+4. Choose **New policy** as shown in the screen-shot below:
+
+![Baseline CA policy](./media/secure-email/CA-EXO-policy-1.png)
+
+The following tables describe the appropriate settings necessary to express the policies required for each level of protection.
+
+### Medium and above risk requires MFA
+
+The following tables describes the conditional access policy settings to implement for this policy.
+
+**Assignments**
+|Type|Properties|Values|Notes|
+|:---|:---------|:-----|:----|
+|Users and groups|Include|Select users and groups – Select specific security group containing targeted users|Start with security group including pilot users.|
+||Exclude|Exception security group; service accounts (app identities)|Membership modified on an as needed temporary basis|
+|Cloud apps|Include|Select apps -  Select Office 365 Exchange Online||
+|Conditions|Configured|Yes|Configure specific to your environment and needs|
+|Sign-in risk|Risk level|High, medium|Check both|
+
+**Access controls**
+|Type|Properties|Values|Notes|
+|:---|:---------|:-----|:----|
+|Grant|Grant access|True|Selected|
+||Require MFA|True|Check|
+||Require device to be marked as compliant|False||
+||Require Hybrid Azure AD joined device|False||
+||Require approved client app|True|Check|
+||Require all the selected controls|True|Selected|
+
+> [!NOTE]
+> Be sure to enable this policy, by clicking **On**. Also consider using the [What if](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-conditional-access-whatif) tool to test the policy
+
+## Require compliant PCs or approved apps
+
+
+## Block clients that don't support modern authentication
+
+
+## High risk users must change password
+
+
+#Define compliance policies
+
+
+## Require MFA 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <!---
