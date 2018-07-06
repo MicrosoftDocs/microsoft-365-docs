@@ -35,6 +35,7 @@ The rest of this article describes how to configure these policies, using the or
 |Sensitive|Require MFA when sign-in risk is *low*, *medium* or *high*|
 |         |Require compliant PCs *and* mobile devices|
 |Highly regulated|*Always* requrie MFA|
+| | |
 
 ##Assigning policies to users
 
