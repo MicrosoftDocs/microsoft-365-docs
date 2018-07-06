@@ -26,15 +26,15 @@ The rest of this article describes how to configure these policies, using the or
 
 |Protection level|Policies|
 |:---------------|:-------|
-|Baseline|Require MFA when sign-in risk is *medium* or *high*|
+|**Baseline**|Require MFA when sign-in risk is *medium* or *high*|
 |        |Require compliant PCs *or* approved apps|
 |        |Block clients that don't support modern authentication|
 |        |High risk users must change password|
 |        |Define compliance policies|
 |        |Define app protection policies|
-|Sensitive|Require MFA when sign-in risk is *low*, *medium* or *high*|
+|**Sensitive**|Require MFA when sign-in risk is *low*, *medium* or *high*|
 |         |Require compliant PCs *and* mobile devices|
-|Highly regulated|*Always* requrie MFA|
+|**Highly regulated**|*Always* requrie MFA|
 | | |
 
 ##Assigning policies to users
