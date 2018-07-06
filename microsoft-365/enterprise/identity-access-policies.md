@@ -139,7 +139,27 @@ The following tables describes the conditional access policy settings to impleme
 
 
 ## High risk users must change password
+To ensure that all high-risk users compromised accounts are forced to perform a password change when signing-in, you must apply the following policy.
 
+Log in to the [Microsoft Azure portal (http://portal.azure.com)](http://portal.azure.com/) with your administrator credentials, and then navigate to **Azure AD Identity Protection > User Risk Policy**.
+
+**Assignments**
+|Type|Properties|Values|Notes|
+|:---|:---------|:-----|:----|
+|Users|Include|All users|Selected|
+||Exclude|None||
+|Conditions|User risk|High|Selected|
+
+**Controls**
+|Type|Properties|Values|Notes|
+|:---|:---------|:-----|:----|
+||Access|Allow access|True|Selected|
+||Access|Require password change|True|Check|
+
+**Review:** not applicable
+
+> [!NOTE]
+> Be sure to enable this policy, by clicking **On**. Also consider using the [What if](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-conditional-access-whatif) tool to test the policy
 
 ## Define app protection policies
 
