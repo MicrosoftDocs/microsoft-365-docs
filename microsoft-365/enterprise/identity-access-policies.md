@@ -38,9 +38,15 @@ The rest of this article describes how to configure these policies, using the or
 | | |
 
 ##Assigning policies to users
-Before configuring policies, identify the Azure AD groups you are using for each tier of protection. Typically baseline applies to everybody in the organization. Policies are accumulative. A user who is included for both baseline and sensitive protection will have all the baseline policies applied plus the sensitive policies. Protection is cumulative and the most restrictive policy will be enforced. 
+Before configuring policies, identify the Azure AD groups you are using for each tier of protection. Typically, baseline protection applies to everybody in the organization. A user who is included for both baseline and sensitive protection will have all the baseline policies applied plus the sensitive policies. Protection is cumulative and the most restrictive policy is enforced. 
 
-Create a conditional access exclusion group
+A recommended practice is to create an Azure AD group for conditional access exclusion. Add this group to all of your conditional access rules under "Exlude." This gives you a method to provide access to a user while you troubleshoot access issues. This is recommended as a temporary solution only. Monitor this group for changes and be sure the exclusion group is being used only as intended. 
+
+The following diagram provides an example of user assignment and exclusions.
+
+![Example user assignment and exlusions for MFA rules](../images/identity-access-policies-assignment.png)
+
+In the illustration the "Top secret project X team" is assigned a conditional access policy that requires MFA *always*. Be judicious when applying higher levels of protection to users. Members of this project team will be required to provide two forms of authentication every time they log on, even if they are not viewing highly regulated content.  
 
 
 
