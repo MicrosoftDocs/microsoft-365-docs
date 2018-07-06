@@ -46,7 +46,7 @@
 ## [Deploy workloads and scenarios](deploy-workloads.md)
 ### [Deploy Microsoft Teams for Microsoft 365 Enterprise](teams-workload.md)
 ### [Deploy Exchange Online for Microsoft 365 Enterprise](exchangeonline-workload.md)
-<<<<<<< HEAD
+<!--- <<<<<<< HEAD --->
 
 =======
 ### [Migration to Microsoft 365 Enterprise](migration-microsoft-365-enterprise-workload.md)
