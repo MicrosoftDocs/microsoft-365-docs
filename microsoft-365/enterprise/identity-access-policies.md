@@ -38,6 +38,11 @@ The rest of this article describes how to configure these policies, using the or
 | | |
 
 ##Assigning policies to users
+Before configuring policies, identify the Azure AD groups you are using for each tier of protection. Typically baseline applies to everybody in the organization. Policies are accumulative. A user who is also assinged a policy in the sensitive category will have all the baseline policies applied plus the sensitive policies. Protection is accumulative and the most restrictive policy will be enforced. 
+
+Create a conditional access exclusion group
+
+
 
 <!---
 #### Data loss prevention
