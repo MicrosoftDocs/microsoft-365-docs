@@ -58,7 +58,7 @@
 ### [Mobile device management]()
 #### [Enroll iOS and Android devices](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
 #### [MAM policies](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
->>>>>>> master
+<!--- >>>>>>>>> master --->
 # [Services and concepts](services-overview.md)
 
 # [Identity and device access configurations](microsoft-365-policies-configurations.md)

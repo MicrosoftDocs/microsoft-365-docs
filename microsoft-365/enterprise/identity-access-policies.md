@@ -19,7 +19,7 @@ This guidance discusses how to deploy the recommended policies in a newly provis
 ![common identity and device access policies](../images/identity-access-policies-common-ruleset.png)
 
 
-<!--->
+<!---
 #### Data loss prevention
 The goal for your device and app management policies is to protect data loss in the event of a lost or stolen device. You can do this by ensuring that access to data is protected by a PIN, that the data is encrypted on the device, and that the device is not compromised.
 
