@@ -58,7 +58,7 @@ In the illustration the "Top secret project X team" is assigned a conditional ac
 ![Office features enabled for security groups](./media/security-group.png)
 
 
-## Require MFA when sign-in risk is medium or high
+## Require MFA when sign-in risk is *medium* or *high*
 To create a new conditional access policy: 
 
 1. Go to the [Azure portal](https://portal.azure.com), and sign in with your credentials. After you've successfully signed in, you see the Azure Dashboard.
@@ -101,7 +101,22 @@ Before requiring MFA, first use an Identity Protection MFA registration policy t
 > [!NOTE]
 > Be sure to enable this policy, by clicking **On**. Also consider using the [What if](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-conditional-access-whatif) tool to test the policy
 
-## Require compliant PCs or approved apps
+
+
+## Block clients that don't support modern authentication
+
+
+## High risk users must change password
+
+
+## Define app protection policies
+
+
+## Define compliance policies
+
+
+
+## Require compliant PCs *or* approved apps
 Before adding a policy to require compliant PCs, be sure to enroll devices for amangement into Intune. Using multi-factor authentication is recommended before enrolling devices into Intune for assurance that the device is in the possession of the intended user. For information on enrolling devices, see ???????? [does fastrack have clear guidance? the Intune library is not prescriptive]
 
 To require compliant PCs or approved apps:
@@ -130,16 +145,14 @@ When creating this policy, do not select platforms. This enforces compliant devi
 
 
 
-## Block clients that don't support modern authentication
+
+## Require MFA when sign-in risk is *low*, *medium* or *high*
 
 
-## High risk users must change password
+## Require compliant PCs *and* mobile devices
 
 
-#Define compliance policies
-
-
-## Require MFA 
+## *Always* require MFA
 
 
 
