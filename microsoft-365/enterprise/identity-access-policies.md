@@ -18,20 +18,25 @@ This guidance discusses how to deploy the recommended policies in a newly provis
 
 ##Policy set 
 
-The following diagram illustrates the recommended set of policies. It shows which tier of protections each policy applies to and whether the policies apply to PCs, phones and tablets, or both categories of devices.
+The following diagram illustrates the recommended set of policies. It shows which tier of protections each policy applies to and whether the policies apply to PCs, phones and tablets, or both categories of devices. It also indicates where these policies are configured.
 
 ![common identity and device access policies](../images/identity-access-policies-common-ruleset.png)
 
-The rest of this article describes how to configure these policies, using the order listed in this table. 
+The rest of this article describes how to configure these policies. 
+
+Using multi-factor authentication is recommended before enrolling devices into Intune for assurance that the device is in the possession of the intended user. And you must enroll devices into Intune before enforcing device compliance policies.
+
+To give you time to accomplish these tasks, we recommend implementing the baseline policies in the order listed in this table. However, the MFA policies for sensitive and highly regulated protection can be implemented at any time.
+
 
 |Protection level|Policies|
 |:---------------|:-------|
 |**Baseline**|Require MFA when sign-in risk is *medium* or *high*|
-|        |Require compliant PCs *or* approved apps|
 |        |Block clients that don't support modern authentication|
 |        |High risk users must change password|
-|        |Define compliance policies|
 |        |Define app protection policies|
+|        |Define compliance policies|
+|        |Require compliant PCs *or* approved apps|
 |**Sensitive**|Require MFA when sign-in risk is *low*, *medium* or *high*|
 |         |Require compliant PCs *and* mobile devices|
 |**Highly regulated**|*Always* requrie MFA|
