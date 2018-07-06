@@ -70,14 +70,16 @@ The following tables describe the appropriate settings necessary to express the 
 
 ### Medium and above risk requires MFA
 
-The following tables describes the conditional access policy settings to implement for this policy.
+Before requiring MFA, first use an Identity Protection MFA registration policy to register users for MFA. After users are registered you can enforce MFA for sign-in. The [prerequisite work](identity-access-prerequisites.md) includes registering all users with MFA.
+
+ The following tables describes the conditional access policy settings to implement for this policy.
 
 **Assignments**
 |Type|Properties|Values|Notes|
 |:---|:---------|:-----|:----|
 |Users and groups|Include|Select users and groups – Select specific security group containing targeted users|Start with security group including pilot users.|
 ||Exclude|Exception security group; service accounts (app identities)|Membership modified on an as needed temporary basis|
-|Cloud apps|Include|Select apps -  Select Office 365 Exchange Online||
+|Cloud apps|Include|Select the apps you want this rule to apply to. For example, select Office 365 Exchange Online||
 |Conditions|Configured|Yes|Configure specific to your environment and needs|
 |Sign-in risk|Risk level|High, medium|Check both|
 
@@ -95,6 +97,32 @@ The following tables describes the conditional access policy settings to impleme
 > Be sure to enable this policy, by clicking **On**. Also consider using the [What if](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-conditional-access-whatif) tool to test the policy
 
 ## Require compliant PCs or approved apps
+Before adding a policy to require compliant PCs, be sure to enroll devices for amangement into Intune. Using multi-factor authentication is recommended before enrolling devices into Intune for assurance that the device is in the possession of the intended user. For information on enrolling devices, see ???????? [does fastrack have clear guidance? the Intune library is not prescriptive]
+
+To require compliant PCs or approved apps:
+
+1. Go to the [Azure portal](https://portal.azure.com), and sign in with your credentials. After you've successfully signed in, you see the Azure Dashboard.
+
+2. Choose **Azure Active Directory** from the left menu.
+
+3. Under the **Security** section, choose **Conditional access**.
+
+4. Choose **New policy**.
+
+5. Enter a policy name, then choose the **Users and groups** you want to apply the policy for.
+
+6. Choose **Cloud apps**.
+
+7. Choose **Select apps**, select the desired apps from the **Cloud apps** list. For example, select Office 365 Exchange Online. Click **Select** and **Done**.
+
+8. Choose **Grant** from the **Access controls** section.
+
+9. Choose **Grant access**, select **Require device to be marked as compliant** and **Require approved client app**.  For multiple controls, select **Require one of the selected controls**, then choose **Select**. This configuration applies device commpliance to PCs while enforcing only app protection policies on phones and tablets [REALLY? HOW DOES THIS NOT ALLOW PCS TO ACCESS WITH ONLY APP PROTECTION? --GOT THIS CONFIG FROM CALEB].
+
+10. Click **Create** to create the Exchange Online conditional access policy.
+
+When creating this policy, do not select platforms. This enforces compliant devices. 
+
 
 
 ## Block clients that don't support modern authentication
