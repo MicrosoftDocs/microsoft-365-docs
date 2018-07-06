@@ -104,6 +104,38 @@ Before requiring MFA, first use an Identity Protection MFA registration policy t
 
 
 ## Block clients that don't support modern authentication
+1. Go to the [Azure portal](https://portal.azure.com), and sign in with your credentials. After you've successfully signed in, you see the Azure Dashboard.
+
+2. Choose **Azure Active Directory** from the left menu.
+
+3. Under the **Security** section, choose **Conditional access**.
+
+4. Choose **New policy**.
+
+The following tables describes the conditional access policy settings to implement for this policy.
+
+**Assignments**
+|Type|Properties|Values|Notes|
+|:---|:---------|:-----|:----|
+|Users and groups|Include|Select users and groups – Select specific security group containing targeted users|Start with security group including pilot users.|
+||Exclude|Exception security group; service accounts (app identities)|Membership modified on an as needed temporary basis|
+|Cloud apps|Include|Select the apps you want this rule to apply to. For example, select Office 365 Exchange Online||
+|Conditions|Configured|Yes|Configure Client apps|
+|Client apps|Configured|Yes|Mobile apps and desktop clients, Other clients (select both)|
+
+**Access controls**
+|Type|Properties|Values|Notes|
+|:---|:---------|:-----|:----|
+|Grant|Block access|True|Selected|
+||Require MFA|False||
+||Require device to be marked as compliant|False||
+||Require Hybrid Azure AD joined device|False||
+||Require approved client app|False||
+||Require all the selected controls|True|Selected|
+
+> [!NOTE]
+> Be sure to enable this policy, by clicking **On**. Also consider using the [What if](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-conditional-access-whatif) tool to test the policy
+
 
 
 ## High risk users must change password
