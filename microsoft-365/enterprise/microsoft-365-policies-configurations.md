@@ -47,17 +47,20 @@ Each industry also has their own set of specialized regulations. Rather than pro
 
 ![m365-idquality-](../images/M365-idquality-threetiers.png)
 
+
 This guidance shows you how to implement protection for identities and devices for each of these tiers of protection. Use this guidance as a starting point for your organization and adjust the policies to meet your specific organization requirements.
 
 It’s important to use consistent levels of protection across your data, identities, and devices. For example, if you implement this guidance, be sure to protect your data at comparable levels. These architecture models show you which capabilities are comparable.
 
 **Identity and device protection for Office 365**
-![O365_Identity_device_protection_thumb_source%20visio.png](../images/O365_Identity_device_protection_thumb_source visio.png)
+
+![Thumbnail for poster "Identity and device protection for Office 365"](../images/O365_Identity_device_protection_thumb.png)
 
 [PDF](https://go.microsoft.com/fwlink/p/?linkid=841656) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657) | [More languages](https://www.microsoft.com/download/details.aspx?id=55032)
 
 **File Protection Solutions in Office 365**
-![File%20Protection%20in%20Office%20365_thumb.gif](../images/File Protection in Office 365_thumb.gif)
+
+![Thumnail for poster "File protection solutions in Office 365"](../images/File-Protection-in-Office-365_thumb.gif)
 
 [PDF](http://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.pdf) | [Visio](http://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.vsdx)
 
