@@ -169,7 +169,7 @@ Create a policy for each platform:
 - Android
 - Windows 10
 
-To create a new app protection policy, log in to the Microsoft Azure portal with your administer credentials, and then navigate to **Mobile apps > App protection policies**. Click **+Add a policy**.
+To create a new app protection policy, log in to the Microsoft Azure portal with your administer credentials, and then navigate to **Mobile apps > App protection policies**. Click **Add a policy**.
 
 There are slight differences in the app protection policy options between iOS and Android. The below policy is specifically for Android. Use this as a guide for your other policies.
 
@@ -220,6 +220,49 @@ To edit the policies and assign these policies to users, see [How to create and 
 
 
 ## Define compliance policies
+
+Device compliance policies define the requirements that devices must adhere to in order to be marked as compliant. Create Intune device compliance policies from within the Azure portal. 
+
+Create a policy for each platform:
+- Android
+- Android for Work
+- iOS
+- macOS
+- Windows Phone 8.1
+- Windows 8.1 and later
+- Windows 10 and later
+
+To create device compliance policies, log in to the Microsoft Azure portal with your administer credentials, and then navigate to **Intune > Device compliance**. Click **Create policy**.
+
+The following settings are recommended. [UPDATE ALL OF THESE]
+
+**Device health**
+|Type|Properties|Values|Notes|
+|:---|:---------|:-----|:----|
+|Windows device health attestation|Require devices to be reported as healthy (Windows 10 Desktop and Mobile and later)|Yes||
+|Device security settings|All|Not configured||
+|Device threat protection|All|Not configured||
+|Jailbreak|Device must not be jailbroken or rooted (iOS 8.0+, Android 4.0+)|Yes||
+
+**Device properties**
+|Type|Properties|Values|Notes|
+|:---|:---------|:-----|:----|
+|Operating system version|All|Not configured||
+
+For all the above policies to be considered deployed, they must be targeted at user groups. You can do this by creating the policy (on Save) or later by selecting Manage Deployment in the Policy section (same level as Add).
+
+**System security**
+|Type|Properties|Values|Notes|
+|:---|:---------|:-----|:----|
+|Password|Require a password to unlock mobile devices (...)|Yes|Selected – Drop down|
+||Allow simple passwords (...)|No|Selected – Drop down|
+||Minimum password length (...)|6|Selected – List|
+|Advanced password settings|All|Not configured||
+|Encryption|Require encryption on mobile device (...)|Yes|Selected – Drop down|
+|Email profiles|Email account must be managed by Intune (iOS 8.0+)|Yes| Selected  – Drop down|
+||Select (#)||Must select Email Configuration Policy for iOS: iOS Email Policy (see configuration policies above)|
+
+
 
 
 
