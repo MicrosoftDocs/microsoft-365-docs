@@ -59,6 +59,8 @@ In the illustration the "Top secret project X team" is assigned a conditional ac
 
 
 ## Require MFA when sign-in risk is *medium* or *high*
+Before requiring MFA, first use an Identity Protection MFA registration policy to register users for MFA. After users are registered you can enforce MFA for sign-in. The [prerequisite work](identity-access-prerequisites.md) includes registering all users with MFA.
+
 To create a new conditional access policy: 
 
 1. Go to the [Azure portal](https://portal.azure.com), and sign in with your credentials. After you've successfully signed in, you see the Azure Dashboard.
@@ -70,12 +72,6 @@ To create a new conditional access policy:
 4. Choose **New policy** as shown in the screen-shot below:
 
 ![Baseline CA policy](./media/secure-email/CA-EXO-policy-1.png)
-
-The following tables describe the appropriate settings necessary to express the policies required for each level of protection.
-
-### Medium and above risk requires MFA
-
-Before requiring MFA, first use an Identity Protection MFA registration policy to register users for MFA. After users are registered you can enforce MFA for sign-in. The [prerequisite work](identity-access-prerequisites.md) includes registering all users with MFA.
 
  The following tables describes the conditional access policy settings to implement for this policy.
 
