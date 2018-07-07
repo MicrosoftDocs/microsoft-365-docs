@@ -162,6 +162,61 @@ Log in to the [Microsoft Azure portal (http://portal.azure.com)](http://portal.a
 > Be sure to enable this policy, by clicking **On**. Also consider using the [What if](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-conditional-access-whatif) tool to test the policy
 
 ## Define app protection policies
+App protection policies define which apps are allowed and the actions they can take with your organization data. Create Intune app protection policies from within the Azure portal. 
+
+Create a policy for each platform:
+- iOS
+- Android
+- Windows 10
+
+To create a new app protection policy, log in to the Microsoft Azure portal with your administer credentials, and then navigate to **Mobile apps > App protection policies**. Click **+Add a policy**.
+
+There are slight differences in the app protection policy options between iOS and Android. The below policy is specifically for Android. Use this as a guide for your other policies.
+
+The recommended list of apps includes the following:
+- PowerPoint
+- Excel
+- Word
+- Microsoft Teams
+- Microsoft SharePoint
+- Microsoft Visio Viewer
+- OneDrive
+- OneNote
+- Outlook
+
+The following tables describe the recommended settings:
+
+|Type|Properties|Values|Notes|
+|:---|:---------|:-----|:----|
+|Data relocation|Prevent Android backup|Yes|On iOS this will specifically call out iTunes and iCloud|
+|||Allow app to transfer data to other apps|Policy managed apps||
+||Allow app to receive data to other apps|Policy managed apps||
+||Prevent "Save As"|Yes||
+||Restrict cut, copy, and paste with other apps|Policy managed apps||
+||Restrict web content to display in the managed browser|No||
+||Encrypt app data|Yes|On iOS select option: When device is locked|
+||Disable app encryption when device is enabled|??|options are yes/no
+||Disable contacts sync|No||
+||Disable printing|???|yes/no|
+|Access|Require PIN for access|Yes||
+||Select Type|???|Numeric or Passcode|
+||Allow simple PIN|No||
+||PIN length|6||
+||Allow fingerprint instead of PIN|Yes||
+||Require Corporate credentials for access|No||
+||Disable app PIN when device PIN is managed|???|yes/no|
+||Require corporate credentials for access|???|yes/no|
+||Recheck the access requirement after (minutes)|30||
+||Block screen capture and Android assistant|No|On iOS this is not an available option|
+|Sign-in security requirements|Max PIN attempts|???|Action???Reset Pin or Wipe data|
+||Offline grace period|720|Block access|
+||Offline interval (days) before app data is wiped|90|???block access or wipe data?
+||Jailbroken/rooted devices| |Block access|
+
+When complete, remember to click "Create". Repeat the above steps and replace the selected platform (dropdown) with iOS. This creates two app policies, so once you create the policy, then assign groups to the policy and deploy it.
+
+To edit the policies and assign these policies to users, see [How to create and assign app protection policies](https://docs.microsoft.com/en-us/intune/app-protection-policies). 
+
 
 
 ## Define compliance policies
