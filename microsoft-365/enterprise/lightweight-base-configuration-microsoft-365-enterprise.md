@@ -14,7 +14,7 @@ ms.collection:
 ms.custom:
 - Ent_TLGs
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
-description: Use this Test Lab Guide to create a lightweight dev/test environment for testing Microsoft 365 Enterprise.
+description: Use this Test Lab Guide to create a lightweight test environment for testing Microsoft 365 Enterprise.
 ---
 
 # The lightweight base configuration
@@ -23,7 +23,7 @@ This article provides you with step-by-step instructions to create a simplified 
 
 Use the resulting environment to test the features and functionality of [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise).
 
-![Test Lab Guides in the Microsoft Cloud](\media\m365-enterprise-test-lab-guides\cloud-tlg-icon.png)
+![Test Lab Guides for the Microsoft cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
   
 ## Phase 1: Create your Office 365 E5 subscription
 
@@ -31,10 +31,10 @@ Follow the steps in Phase 2 and Phase 3 of the [Office 365 dev/test environment]
   
 **Figure 1: Your Office 365 E5 subscription with its Azure Active Directory (AD) tenant and user accounts**
 
-![Phase 1 of the Microsoft 3656 Enterprise dev/test environment](media/lightweight-base-configuration-microsoft-365-enterprise/Phase1.png)
+![Phase 1 of the Microsoft 3656 Enterprise test environment](media/lightweight-base-configuration-microsoft-365-enterprise/Phase1.png)
 
 > [!NOTE]
-> The Office 365 E5 trial subscription is 30 days, which can be easily extended to 60 days. For a permanent dev/test environment, create a new paid subscription with a small number of licenses. 
+> The Office 365 E5 trial subscription is 30 days, which can be easily extended to 60 days. For a permanent test environment, create a new paid subscription with a small number of licenses. 
   
 ## Phase 2: Add EMS
 
@@ -61,11 +61,11 @@ First, add the EMS E5 trial subscription and assign an EMS license to your globa
 9. On the **Product licenses** pane, turn the product license for **Enterprise Mobility + Security E5** to **On**, click **Save,** and then click **Close** twice.
     
 > [!NOTE]
-> The Enterprise Mobility + Security E5 trial subscription is 90 days. For a permanent dev/test environment, create a new paid subscription with a small number of licenses. 
+> The Enterprise Mobility + Security E5 trial subscription is 90 days. For a permanent test environment, create a new paid subscription with a small number of licenses. 
   
  ***If you completed Phase 3 of the*** [Office 365 dev/test environment](https://docs.microsoft.com/en-us/office365/enterprise/office-365-dev-test-environment), repeat steps 8 and 9 of the previous procedure for all of your other accounts (User 2, User 3, User 4, and User 5).
   
-Your dev/test environment now has:
+Your test environment now has:
   
 - Office 365 E5 Enterprise and EMS E5 trial subscriptions sharing the same Azure AD tenant with your list of user accounts.
 - All your appropriate user accounts (either just the global administrator or all five user accounts) are enabled to use Office 365 E5 and EMS E5.
@@ -74,7 +74,7 @@ Figure 2 shows your resulting configuration, which adds EMS.
   
 **Figure 2: Adding the EMS trial subscription**
 
-![Phase 2 of the Microsoft 3656 Enterprise dev/test environment](media/lightweight-base-configuration-microsoft-365-enterprise/Phase2.png)
+![Phase 2 of the Microsoft 3656 Enterprise test environment](media/lightweight-base-configuration-microsoft-365-enterprise/Phase2.png)
   
 ## Phase 3: Create a Windows 10 Enterprise computer
 
@@ -188,15 +188,19 @@ Figure 3 shows your resulting environment, which includes the WIN10 computer tha
 - Enrolled as an Azure AD device in Intune (EMS).
 - Has Office 365 ProPlus installed.
   
-**Figure 3: The final configuration of the Microsoft 365 dev/test environment**
+**Figure 3: The final configuration of the Microsoft 365 test environment**
 
-![Phase 4 of the Microsoft 3656 Enterprise dev/test environment](media/lightweight-base-configuration-microsoft-365-enterprise/Phase4.png)
+![Phase 4 of the Microsoft 3656 Enterprise test environment](media/lightweight-base-configuration-microsoft-365-enterprise/Phase4.png)
   
 You are now ready to experiment with additional features of [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise).
   
 ## Next steps
 
-Use these additional articles to explore features of Microsoft 365 Enterprise with this dev/test environment:
+Use these additional articles to explore identity features of Microsoft 365 Enterprise with this test environment:
+  
+- [Multi-factor authentication](multi-factor-authentication-microsoft-365-test-environment.md)
+
+Use these additional articles to explore mobile device management features of Microsoft 365 Enterprise with this test environment:
   
 - [Add mobile application management (MAM) policies](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
     
@@ -204,6 +208,8 @@ Use these additional articles to explore features of Microsoft 365 Enterprise wi
 
 ## See also
 
-[Microsoft 365 Enterprise documentation](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Microsoft 365 Enterprise Test Lab Guides](m365-enterprise-test-lab-guides.md)
 
 [Deploy Microsoft 365 Enterprise](deploy-microsoft-365-enterprise.md)
+
+[Microsoft 365 Enterprise documentation](https://docs.microsoft.com/microsoft-365-enterprise/)
