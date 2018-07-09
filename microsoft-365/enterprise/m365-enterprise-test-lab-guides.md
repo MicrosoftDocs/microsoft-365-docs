@@ -3,7 +3,7 @@ title: "Microsoft 365 Enterprise Test Lab Guides"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/27/2018
+ms.date: 07/09/2018
 ms.audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
@@ -35,7 +35,7 @@ You can create a test environment for [Microsoft 365 Enterprise](https://docs.mi
 
 - [Multi-factor authentication](multi-factor-authentication-microsoft-365-test-environment.md)
     
-    Enable and test smart phone-based multifactor authentication for a specific user account.
+    Enable and test smart phone-based multi-factor authentication for a specific user account.
     
 - [MAM policies for your Microsoft 365 Enterprise test environment](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
     
