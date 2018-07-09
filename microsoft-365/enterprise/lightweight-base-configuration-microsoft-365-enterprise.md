@@ -23,7 +23,7 @@ This article provides you with step-by-step instructions to create a simplified 
 
 Use the resulting environment to test the features and functionality of [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise).
 
-![Test Lab Guides for the Microsoft cloud](/media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Test Lab Guides for the Microsoft cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
   
 ## Phase 1: Create your Office 365 E5 subscription
 
@@ -196,7 +196,11 @@ You are now ready to experiment with additional features of [Microsoft 365 Enter
   
 ## Next steps
 
-Use these additional articles to explore features of Microsoft 365 Enterprise with this test environment:
+Use these additional articles to explore identity features of Microsoft 365 Enterprise with this test environment:
+  
+- [Multi-factor authentication](multi-factor-authentication-microsoft-365-test-environment.md)
+
+Use these additional articles to explore mobile device management features of Microsoft 365 Enterprise with this test environment:
   
 - [Add mobile application management (MAM) policies](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
     
