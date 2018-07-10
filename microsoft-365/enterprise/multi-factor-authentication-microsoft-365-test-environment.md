@@ -85,10 +85,11 @@ Complete the configuration for the User 2 account to use a text message for vali
 8. If this is the first time you signed in with the User 2 account, you are prompted to change the password. Type the original password and a new password twice, and then click **Update password and sign in**. Record the new password in a secure location.
     
     You should see the Office 365 portal for User 2 on the **Microsoft Office Home** tab of your browser.
+
+
+See the [Set up multi-factor authentication](identity-multi-factor-authentication.md) step in the Identity phase for information and links to deploy multi-factor authentication in production.
     
 ## See also
-
-[Identity phase: Set up multi-factor authentication](identity-multi-factor-authentication.md)
 
 [Phase 2: Identity](identity-infrastructure.md)
 

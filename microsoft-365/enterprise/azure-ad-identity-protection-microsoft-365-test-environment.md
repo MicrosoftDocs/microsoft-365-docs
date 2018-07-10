@@ -46,10 +46,11 @@ If you haven't done so already, follow the instructions in [Lightweight base con
 
 For further testing and experimentation, see [Simulating risk events](https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection-playbook).
 
+
+See the [Protect against credential compromise](identity-azure-ad-identity-protection.md) step in the Identity phase for information and links to deploy Azure AD Identity Protection in production.
+
    
 ## See also
-
-[Identity phase: Protect against credential compromise](identity-azure-ad-identity-protection.md)
 
 [Phase 2: Identity](identity-infrastructure.md)
 

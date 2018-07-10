@@ -47,10 +47,14 @@ Get-AzureADDirectoryRole | Where { $_.DisplayName -eq "Company Administrator" } 
 - All other everyday user accounts that manage your subscription have admin roles assigned that are associated with their job responsibilities.
 
 > [!Note]
-> See [Connect to Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell) for instructions on installing the Azure AD V2 PowerShell module and signing in to Office 365.
+> See [Connect to Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell) for instructions on installing the Azure AD V2 PowerShell module and signing in.
+
+|||
+|:-------|:-----|
+|![Test Lab Guides for the Microsoft cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Test Lab Guide: Protect global administrator accounts](protect-global-administrator-accounts-microsoft-365-test-environment.md) |
+|||
 
 As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria.md#crit-identity-step5) for this step.
-
 
 ## Next step
 

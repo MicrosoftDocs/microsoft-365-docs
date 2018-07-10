@@ -1,5 +1,5 @@
 ---
-title: "Automate licenses and group membership for your Microsoft 365 Enterprise test environment"
+title: "Automate licensing and group membership for your Microsoft 365 Enterprise test environment"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -15,7 +15,7 @@ ms.custom:
 description: "Configure group-based licensing and dynamic group membership in your Microsoft 365 Enterprise test environment."
 ---
 
-# Automate licenses and group membership for your Microsoft 365 Enterprise test environment
+# Automate licensing and group membership for your Microsoft 365 Enterprise test environment
 
 Group-based licensing automatically assigns or removes licenses for a user account based on group membership. Dynamic group membership adds or removes members to a group based on user account properties, such as Department or Country. This article steps you through a demonstration of both in your Microsoft 365 Enterprise test environment.
 
@@ -77,13 +77,13 @@ In time you should see the:
 
 - **Group memberships** property updated with the **Sales** group.
 - **Product licenses** property updated with the **Enterprise Mobility + Security E5** and **Office 365 Enterprise E5** licenses.
-  
+
+See these steps in the Identity phase for information and links to deploy dynamic group membership and automatic licensing in production:
+
+- [Set up automatic licensing](identity-group-based-licensing.md)
+- [Set up dynamic group membership](identity-automatic-group-membership.md)
+
 ## See also
-
-[Identity phase: Set up automatic licensing](identity-group-based-licensing.md)
-
-[Identity phase: Set up dynamic group membership](identity-automatic-group-membership.md)
-
 
 [Phase 2: Identity](identity-infrastructure.md)
 
