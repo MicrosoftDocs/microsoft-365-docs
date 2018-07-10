@@ -31,15 +31,15 @@ To give you time to accomplish these tasks, we recommend implementing the baseli
 
 |Protection level|Policies|
 |:---------------|:-------|
-|**Baseline**|Require MFA when sign-in risk is *medium* or *high*|
-|        |Block clients that don't support modern authentication|
-|        |High risk users must change password|
-|        |Define app protection policies|
-|        |Define compliance policies|
-|        |Require compliant PCs *or* approved apps|
-|**Sensitive**|Require MFA when sign-in risk is *low*, *medium* or *high*|
-|         |Require compliant PCs *and* mobile devices|
-|**Highly regulated**|*Always* requrie MFA|
+|**Baseline**|[Require MFA when sign-in risk is *medium* or *high*](#require-mfa-when-sign-in-risk-is-medium-or-high)|
+|        |[Block clients that don't support modern authentication](#block-clients-that-dont-support-modern-authentication)|
+|        |[High risk users must change password](#high-risk-users-must-change-password)|
+|        |[Define app protection policies](#define-app-protection-policies)|
+|        |[Define compliance policies](#define-compliance-policies)|
+|        |[Require compliant PCs *or* approved apps](#require-compliant-pcs-or-approved-apps)|
+|**Sensitive**|[Require MFA when sign-in risk is *low*, *medium* or *high*](#require-mfa-when-sign-in-risk-is-low-medium-or-high)|
+|         |[Require compliant PCs *and* mobile devices](#require-compliant-pcs-and-mobile-devices)|
+|**Highly regulated**|[*Always* requrie MFA](#always-require-mfa)|
 | | |
 
 ##Assigning policies to users
