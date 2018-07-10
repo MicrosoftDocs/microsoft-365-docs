@@ -293,14 +293,38 @@ When creating this policy, do not select platforms. This enforces compliant devi
 
 
 ## Require MFA when sign-in risk is *low*, *medium* or *high*
+Follow the steps earlier in this article for [requiring MFA](#require-mfa-when-sign-in-risk-is-medium-or-high) and set the sign-in risk to high, medium, *and* low.
 
 
 ## Require compliant PCs *and* mobile devices
 
+To require compliant PCs or approved apps:
+
+1. Go to the [Azure portal](https://portal.azure.com), and sign in with your credentials. After you've successfully signed in, you see the Azure Dashboard.
+
+2. Choose **Azure Active Directory** from the left menu.
+
+3. Under the **Security** section, choose **Conditional access**.
+
+4. Choose **New policy**.
+
+5. Enter a policy name, then choose the **Users and groups** you want to apply the policy for.
+
+6. Choose **Cloud apps**.
+
+7. Choose **Select apps**, select the desired apps from the **Cloud apps** list. For example, select Office 365 Exchange Online. Click **Select** and **Done**.
+
+8. Choose **Grant** from the **Access controls** section.
+
+9. Choose **Grant access**, select **Require device to be marked as compliant** and **Require Hybrid Azure AD joined device**.  For multiple controls, select **Require one of the selected controls** [IS THIS RIGHT?], then choose **Select**. 
+
+10. Click **Create** to create the Exchange Online conditional access policy.
+
+When creating this policy, do not select platforms. This enforces compliant devices.
 
 ## *Always* require MFA
 
-
+Follow the steps earlier in this article for [requiring MFA](#require-mfa-when-sign-in-risk-is-medium-or-high) and set the sign-in risk to high, medium, low, *and* no risk. [RIGHT???]
 
 
 
