@@ -5,7 +5,7 @@ author: BrendaCarter
 manager: Laurawi
 ms.prod: microsoft-365-enterprise
 ms.topic: article
-ms.date: 12/10/2017
+ms.date: 
 ms.author: bcarter
 ms.reviewer: martincoetzer
 ms.custom: it-pro
@@ -230,7 +230,7 @@ Create a policy for each platform:
 
 To create device compliance policies, log in to the Microsoft Azure portal with your administer credentials, and then navigate to **Intune > Device compliance**. Click **Create policy**.
 
-The following settings are recommended. [UPDATE ALL OF THESE]
+The following settings are recommended. [UPDATE FOR THESE SETTINGS STILL IN PROGRESS]
 
 **Device health**
 |Type|Properties|Values|Notes|

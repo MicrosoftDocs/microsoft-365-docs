@@ -1,12 +1,12 @@
 ---
 title: Identity and device access configurations - Microsoft 365 Enterprise | Microsoft docs
 description:  Describes Microsoft recommendations and core concepts for deploying secure email, docs, and apps policies and configurations.
-author: barlanmsft
-manager: angrobe
+author: brendacarter
+manager: laurawi
 ms.prod: microsoft-365-enterprise
 ms.topic: article
-ms.date: 08/30/2017
-ms.author: barlan
+ms.date: 
+ms.author: bcarter
 ms.reviewer: martincoetzer
 ms.custom: it-pro
 ---
