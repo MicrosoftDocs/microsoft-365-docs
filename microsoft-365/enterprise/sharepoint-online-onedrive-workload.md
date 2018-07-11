@@ -21,7 +21,7 @@ SharePoint Online and Microsoft Teams is how you do file storage and sharing, co
 
 SharePoint Online also has advanced security capabilities including access control and permissions and encryption in flight and at rest. SharePoint Online security is a key element of the Intelligent Security value of Microsoft 365 Enterprise.
 
-If you are brand new to SharePoint Online, see [SharePoint Online]( https://products.office.com/sharepoint/sharepoint-online-collaboration-software) and [Get Started with SharePoint]( https://support.office.com/article/Get-started-with-SharePoint-3a26444b-08c5-46ad-b80a-cda82b11b27b#ID0EAABAAA=Basics).
+If you are brand new to SharePoint Online, see [SharePoint Online](https://products.office.com/sharepoint/sharepoint-online-collaboration-software) and [Get Started with SharePoint](https://support.office.com/article/Get-started-with-SharePoint-3a26444b-08c5-46ad-b80a-cda82b11b27b#ID0EAABAAA=Basics).
 
 If you are brand new to OneDrive for Business, see [What is OneDrive for Business](https://support.office.com/article/What-is-OneDrive-for-Business-187f90af-056f-47c0-9656-cc0ddca7fdc2).
 
@@ -80,15 +80,12 @@ If you are doing your own planning, or in conjunction with FastTrack, you need t
 Use these resources to prepare for the technical aspects of a SharePoint Online rollout: 
 
 - [SharePoint Online Planning Guide](https://support.office.com/article/sharepoint-online-planning-guide-abacd1bb-295d-4235-afdd-15f5e4cc2e6c)
-
 - [Migrate OneDrive for Business files from on-premises SharePoint 2013 to Office 365](https://support.office.com/article/Migrate-OneDrive-for-Business-files-from-on-premises-SharePoint-2013-to-Office-365-a9894a64-675a-4931-91f6-a76d94136edc)
-
 - [Migrate to SharePoint Online](https://docs.microsoft.com/sharepointmigration/migrate-to-sharepoint-online) 
 
 For a better understanding of security in SharePoint Online and OneDrive for Business, review the following resources:
 
 - 	[How SharePoint Online and OneDrive safeguard your data in the cloud](https://support.office.com/article/How-SharePoint-Online-and-OneDrive-safeguard-your-data-in-the-cloud-5aa038e8-8ff0-4704-9e6a-fd72af0a2035)
-
 - 	[Data Encryption in OneDrive for Business and SharePoint Online](https://support.office.com/article/Data-Encryption-in-OneDrive-for-Business-and-SharePoint-Online-6501B5EF-6BF7-43DF-B60D-F65781847D6C)
 
 #### Result
