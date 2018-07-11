@@ -3,7 +3,7 @@ title: "Multi-factor authentication for your Microsoft 365 Enterprise test envir
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/28/2018
+ms.date: 07/11/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -34,7 +34,7 @@ There are two phases to setting up multi-factor authentication for an account in
   
 ## Phase 1: Build out your lightweight Microsoft 365 Enterprise test environment
 
-If you haven't done so already, follow the instructions in [Lightweight base configuration](lightweight-base-configuration-microsoft-365-enterprise.md).
+If you haven't done so already, follow the instructions in the [lightweight base configuration](lightweight-base-configuration-microsoft-365-enterprise.md).
   
 ## Phase 2: Enable and test multi-factor authentication for the User 2 account
 

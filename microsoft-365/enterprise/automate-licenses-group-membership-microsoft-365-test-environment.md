@@ -31,7 +31,7 @@ There are two phases to setting up auto-licensing and dynamic group membership i
   
 ## Phase 1: Build out your lightweight Microsoft 365 Enterprise test environment
 
-If you haven't done so already, follow the instructions in [Lightweight base configuration](lightweight-base-configuration-microsoft-365-enterprise.md).
+If you haven't done so already, follow the instructions in the [lightweight base configuration](lightweight-base-configuration-microsoft-365-enterprise.md).
   
 ## Phase 2: Configure and test dynamic group membership and automatic licensing
 

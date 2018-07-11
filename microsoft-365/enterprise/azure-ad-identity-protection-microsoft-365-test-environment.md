@@ -31,7 +31,7 @@ There are two phases to setting up Azure AD Identity Protection in your Microsof
   
 ## Phase 1: Build out your lightweight Microsoft 365 Enterprise test environment
 
-If you haven't done so already, follow the instructions in [Lightweight base configuration](lightweight-base-configuration-microsoft-365-enterprise.md).
+If you haven't done so already, follow the instructions in the [lightweight base configuration](lightweight-base-configuration-microsoft-365-enterprise.md).
   
 ## Phase 2: Enable and use Azure AD Identity Protection
 
@@ -42,6 +42,7 @@ If you haven't done so already, follow the instructions in [Lightweight base con
 5. In the Azure portal, click **Azure AD Identity Protection** on the dashboard. 
 
    You should see an **Azure AD Identity Protection-Overview** blade with a dashboard. Under **Vulnerabilities**, notice that it determined the number of user accounts without multi-factor authentication registration. This number will vary based on previous Microsoft 365 Enterprise Test Lab Guides that you have done.
+
 6. Click through the categories for **Investigate** to see if there are any users or events that have been detected.
 
 For further testing and experimentation, see [Simulating risk events](https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection-playbook).

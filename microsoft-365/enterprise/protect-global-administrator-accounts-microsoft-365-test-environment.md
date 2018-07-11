@@ -31,9 +31,9 @@ There are two phases to protecting global administrator accounts in your Microso
   
 ## Phase 1: Build out your lightweight Microsoft 365 Enterprise test environment
 
-If you haven't done so already, follow the instructions in [Lightweight base configuration](lightweight-base-configuration-microsoft-365-enterprise.md).
+If you haven't done so already, follow the instructions in the [lightweight base configuration](lightweight-base-configuration-microsoft-365-enterprise.md).
   
-## Phase 2: Configure and test dynamic group membership and automatic licensing
+## Phase 2: Configure Cloud App Security and conditional access policies
 
 First, create an Office 365 Cloud App Security policy to monitor global administrator account activity and send alerts to the email address of your global administrator. 
 
