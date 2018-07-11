@@ -53,9 +53,11 @@ The following diagram provides an example of user assignment and exclusions.
 
 In the illustration the "Top secret project X team" is assigned a conditional access policy that requires MFA *always*. Be judicious when applying higher levels of protection to users. Members of this project team will be required to provide two forms of authentication every time they log on, even if they are not viewing highly regulated content.  
 
- All security groups created as part of these recommendations must be created with Office features enabled. This is specifically important for the deployment of Azure Information Protection (AIP) when securing documents in SharePoint Online.
+ All Azure AD groups created as part of these recommendations must be created as Office 365 groups. This is specifically important for the deployment of Azure Information Protection (AIP) when securing documents in SharePoint Online.
 
-![Office features enabled for security groups](./media/security-group.png)
+![Screen capture for creating Office 365 groups](../images/identity-device-AAD-groups.png)
+
+
 
 
 ## Require MFA when sign-in risk is *medium* or *high*
