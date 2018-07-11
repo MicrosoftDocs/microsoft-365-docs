@@ -89,6 +89,10 @@ Complete the configuration for the User 2 account to use a text message for vali
 
 See the [Set up multi-factor authentication](identity-multi-factor-authentication.md) step in the Identity phase for information and links to deploy multi-factor authentication in production.
     
+## Next step
+
+Explore additional [identity](m365-enterprise-test-lab-guides#identity) features and capabilities in your test environment.
+
 ## See also
 
 [Phase 2: Identity](identity-infrastructure.md)

@@ -130,10 +130,13 @@ In this phase, you create and deploy two different MAM policies: one for iOS dev
     
 10. On the **Add a policy** blade, click **Create**.
     
-You now have two MAM policies, one for iOS devices and one for Android devices, and are ready to experiment with testing settings for the selected apps.
+You now have two MAM policies, one for iOS devices and one for Android devices, and are ready to experiment with testing settings for the selected apps. 
   
-  
-## See Also
+## Next step
+
+Explore additional [mobile device management](m365-enterprise-test-lab-guides#mobile-device-management) features and capabilities in your test environment.
+
+## See also
 
 [Microsoft 365 Enterprise Test Lab Guides](m365-enterprise-test-lab-guides.md).
   

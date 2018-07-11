@@ -83,6 +83,10 @@ See these steps in the Identity phase for information and links to deploy dynami
 - [Set up automatic licensing](identity-group-based-licensing.md)
 - [Set up dynamic group membership](identity-automatic-group-membership.md)
 
+## Next step
+
+Explore additional [identity](m365-enterprise-test-lab-guides#identity) features and capabilities in your test environment.
+
 ## See also
 
 [Phase 2: Identity](identity-infrastructure.md)

@@ -35,7 +35,7 @@ If you haven't done so already, follow the instructions in the [lightweight base
   
 ## Phase 2: Configure Cloud App Security and conditional access policies
 
-First, create an Office 365 Cloud App Security policy to monitor global administrator account activity and send alerts to the email address of your global administrator. 
+First, create an Office 365 Cloud App Security policy to monitor global administrator account activity and send alerts to the email address of your global administrator account. 
 
 1. Sign in to the Office 365 portal at [http://portal.office.com](http://portal.office.com) using your global administrator account.
 2. Click the **Admin** tile. On the **Office Admin center** tab, click **Admin centers > Security & Compliance**.
@@ -98,6 +98,10 @@ This second policy blocks access to global administrator account authentication 
 To test the first policy, sign out and sign in with the DedicatedAdmin account. You should be prompted to configure MFA on the user account. This demonstrates that the first policy is being applied.
 
 See the [Protect global administrator accounts](identity-designate-protect-admin-accounts.md) step in the Identity phase for information and links to protect your global administrator accounts in production.
+
+## Next step
+
+Explore additional [identity](m365-enterprise-test-lab-guides#identity) features and capabilities in your test environment.
 
 ## See also
 

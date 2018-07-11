@@ -50,7 +50,10 @@ For further testing and experimentation, see [Simulating risk events](https://do
 
 See the [Protect against credential compromise](identity-azure-ad-identity-protection.md) step in the Identity phase for information and links to deploy Azure AD Identity Protection in production.
 
-   
+## Next step
+
+Explore additional [identity](m365-enterprise-test-lab-guides#identity) features and capabilities in your test environment.
+
 ## See also
 
 [Phase 2: Identity](identity-infrastructure.md)
