@@ -37,7 +37,7 @@ If you haven't done so already, follow the instructions in [Lightweight base con
 
 First, create an Office 365 Cloud App Security policy to monitor global administrator account activity and send alerts to the email address of your global administrator. 
 
-1. Sign in to the Office 365 portal [http://portal.office.com](http://portal.office.com) using your global administrator account.
+1. Sign in to the Office 365 portal at [http://portal.office.com](http://portal.office.com) using your global administrator account.
 2. Click the **Admin** tile. On the **Office Admin center** tab, click **Admin centers > Security & Compliance**.
 3. In the left navigation pane, click **Alerts > Manage advanced alerts**.
 4. On the **Manage advanced alerts** page, click **Turn on Office 365 Cloud App Security**, and then click **Go to Office 365 Cloud App Security**.

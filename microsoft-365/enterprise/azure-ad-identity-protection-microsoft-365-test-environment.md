@@ -35,7 +35,7 @@ If you haven't done so already, follow the instructions in [Lightweight base con
   
 ## Phase 2: Enable and use Azure AD Identity Protection
 
-1. Open a private instance of your browser and sign in to the Azure portal [https://portal.azure.com](https://portal.azure.com) with the global administrator account of your Microsoft 365 Enterprise test environment.
+1. Open a private instance of your browser and sign in to the Azure portal at [https://portal.azure.com](https://portal.azure.com) with the global administrator account of your Microsoft 365 Enterprise test environment.
 2. In the Azure portal, click **All services > Marketplace**.
 3. Type **Azure AD Identity Protection** and then click it.
 4. On the **Getting Started** blade, click **Onboard** under **Settings**, click **Pin to dashboard**, and then click **Create**.

@@ -94,8 +94,6 @@ To reset the passcode remotely:
     
 7. To change the passcode back, go into **Settings**, tap **Device**, tap **Lock screen**, enter the new passcode again, tap **Screen lock**, and then your choice for the passcode.
     
-
-
 ## See Also
 
 [Microsoft 365 Enterprise Test Lab Guides](m365-enterprise-test-lab-guides.md)
