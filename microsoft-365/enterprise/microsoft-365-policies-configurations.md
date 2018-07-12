@@ -32,9 +32,6 @@ Your organization may be subject to regulatory or other compliance requirements,
 
 While we’ve done our best to account for a wide variety of organizational protection requirements, we’re not able to account for all possible requirements or for all the unique aspects of your organization. Use these recommendations as a guide for how Microsoft and the secure productive enterprise team is thinking about how to correctly apply policy.  
 
->[!NOTE]
->For an overview of the core concepts necessary to understand the protection capabilities described in these recommendations, see the [Microsoft 365 Enterprise documentation home page](index.md).
->
 
 ##Three tiers of protection
 Most organizations have specific requirements regarding security and data protection. These requirements vary by industry segment and by job functions within organizations. For example, your legal department and Office 365 administrators might require additional security and information protection controls around their email correspondence that are not required for other business unit users.
@@ -74,7 +71,6 @@ Azure AD provides a full suite of identity management capabilities. Our recommen
 - **Azure AD groups** — Conditional access rules, device management with Intune, and even permissions to files and sites in your organization rely on assignment to users and/or Azure AD groups. We recommend you create Azure AD groups that correspond to the levels of protection you are implementing. For example, your executive staff are likely higher value targets for hackers. Therefore, it makes sense to assign these employees to an Azure AD group and assign this group to conditional access rules and other policies that enforce a higher level of protection for access. 
 - **Device registration** — You register a device into Azure AD to provide an identity to the device. This identity is used to authenticate the device when a user signs in and to apply conditional access rules that require domain-joined or compliant PCs. For this guidance, we use device registration to automatically register domain-joined Windows computers. Device registration is a prerequisite for managing devices with Intune. 
 - **Azure AD Identity Protection** — [Azure AD Identity Protection](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-identityprotection) enables you to detect potential vulnerabilities affecting your organization’s identities and configure automated responses via conditional access policies to low, medium and high sign-in risk and user risk.This guidance relies on this risk evaluation to apply conditional access rules for multi-factor authentication. This guidance also includes a conditional access rule that requires users to change their password if high risk activity is detected for their account.
-
 
 
 

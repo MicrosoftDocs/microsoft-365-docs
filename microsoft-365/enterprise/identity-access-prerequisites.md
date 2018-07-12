@@ -31,19 +31,8 @@ Before implementing the recommended identity and device access policies, there a
 | **Prepare your support team**. Have a plan in place for users that cannot complete MFA. This can be adding them to a policy exclusion group, or registering new MFA info for them. Before making either of these security sensitive changes, you need to ensure the actual user is making the request. Requiring users' managers to help with the approval is an effective step. | Yes | Yes | Yes |
 | [Configure password writeback to on-premises AD](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-getting-started). Password Writeback allows Azure AD to require that users change their on-premises passwords when there has been a high risk of account compromise detected. You can enable this feature using Azure AD Connect in one of two ways. You can either enable Password Writeback in the optional features screen of the Azure AD Connect setup wizard, or you can enable it via Windows PowerShell. |   | Yes | Yes |
 | **Enable modern authentication** for [Exchange Online](https://support.office.com/article/Enable-or-disable-modern-authentication-in-Exchange-Online-58018196-f918-49cd-8238-56f57f38d662) and for [Skype for Business Online](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx). Modern authentication is a prerequisite for using multi-factor authentication (MFA). Modern authentication is enabled by default for Office 2016 clients, SharePoint Online, and OneDrive for Business. | Yes | Yes | Yes |
-| **Block apps that don't support modern authentication**. [EDITORIAL NOTE: this is a policy we're recommending, so I'll move it out of this prereq table and into the common policies article] Apps that do not support modern authentication cannot be blocked by using conditional access rules. You can disable authentication for these legacy apps by using a setting in Azure AD conditional access rules: [Require approved client app](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-conditional-access-technical-reference#approved-client-app-requirement) (currently in preview). In the meantime, use one of the following methods to accomplish this. For AD FS environments, [setup AD FS claims rules](https://docs.microsoft.com/en-us/intune-classic/deploy-use/block-apps-with-no-modern-authentication). For SharePoint Online and OneDrive for Business, [use PowerShell](https://docs.microsoft.com/en-us/intune-classic/deploy-use/block-apps-with-no-modern-authentication). Or configure this in the SharePoint admin center on the "device access" page: "Control access from apps that don't use modern authentication." Choose Block.  | Yes | Yes | Yes |
-| [Enable Azure Information Protection](https://docs.microsoft.com/information-protection/get-started/infoprotect-tutorial-step1) by activating Rights Management. Use Azure Information Protection with email to start with classification of emails. Follow the quick start tutorial to customize and publish policy. [EDITORIAL NOTE: this guidance doesn't include config of this, so I propose we remove this item] | Yes | Yes | Yes |
+|||||
 
-
-<!---Before implementing the policies described in the remainder of this document, there are several prerequisites that your organization must meet:
-* [Configure Password Hash Sync](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-implement-password-synchronization). This must be enabled to detect leaked credentials and to act on them for risk based Conditional Access. **Note:** This is required, regardless of whether your organization use managed, like Pass Through Authentication (PTA), or federated authentication.
-* [Configure named networks](https://docs.microsoft.com/azure/active-directory/active-directory-known-networks-azure-portal). Azure AD Identity Protection collects and analyzes all available session data to generate a risk score. We recommend that you specify your organization's public IP ranges for your network in the Azure AD named networks configuration. Traffic coming from these ranges is given a reduced risk score, so traffic from outside the corporate environment is treated as higher risk score.
-* [Register all users with multi-factor authentication (MFA)](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-manage-users-and-devices). Azure AD Identity Protection makes use of Azure MFA to perform additional security verification. We recommend that you require all users to register for Azure MFA ahead of time.
-* [Enable automatic device registration of domain joined Windows computers](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-automatic-device-registration-setup). Conditional access can ensure the device connecting to the service is a domain joined or compliant device. To support this on Windows computers, the device must be registered with Azure AD.  This article discusses how to configure automatic device registration.
-* **Prepare your support team**. Have a plan in place for users that cannot complete MFA. This can be adding them to a policy exclusion group, or registering new MFA info for them. Before making either of these security sensitive changes, you need to ensure the actual user is making the request. Requiring users' managers to help with the approval is an effective step.
-* [Configure password writeback to on-premises AD](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-getting-started). Password Writeback allows Azure AD to require that users change their on-premises passwords when there has been a high risk of account compromise detected. You can enable this feature using Azure AD Connect in one of two ways. You can either enable Password Writeback in the optional features screen of the Azure AD Connect setup wizard, or you can enable it via Windows PowerShell.  
-* [Enable modern authentication](https://support.office.com/article/Enable-or-disable-modern-authentication-in-Exchange-Online-58018196-f918-49cd-8238-56f57f38d662) and [protect legacy endpoints](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-supported-apps).  Conditional access works both with mobile and desktop applications that use modern authentication. If the application uses legacy authentication protocols, it may gain access despite the conditions being applied. It is important to know which applications can use conditional access rules and the steps that you need to take to secure other application entry points.
-* [Enable Azure Information Protection](https://docs.microsoft.com/information-protection/get-started/infoprotect-tutorial-step1) by activating Rights Management. Use Azure Information Protection with email to start with classification of emails. Follow the quick start tutorial to customize and publish policy.  --->
 
 
 ## Recommended client configurations
@@ -65,7 +54,7 @@ We also recommend that corporate-owned devices (COD) are standardized on OEMs an
 
 
 ### Recommended email clients
-[DOES THIS TABLE NEED TO BE UPDATED?]The following email clients support Modern Authentication and Conditional Access. Azure Information Protection is not yet available for all clients.
+The following email clients support Modern Authentication and Conditional Access. 
 
 |Platform|Client|Version/Notes|Azure Information Protection|
 |:-------|:-----|:------------|:--------------------|
@@ -75,11 +64,9 @@ We also recommend that corporate-owned devices (COD) are standardized on OEMs an
 |**macOS**|Outlook|2016|No|
 |**Linux**|Not supported||No|
 
-In order to access Azure Information Protection protected documents additional software may be required. Be sure that you are using [supported software and document formats](https://docs.microsoft.com/information-protection/get-started/requirements-applications) to create and view protected documents with Azure Information Protection.
-
 
 ### Recommended client platforms when securing documents
-[THIS TABLE NEEDS TO BE UPDATED?] The following clients are recommended when a Secure Documents policy has been applied.
+The following clients are recommended when a Secure Documents policy has been applied.
 
 |Platform|Word/Excel/PowerPoint|OneNote|OneDrive App|SharePoint App|OneDrive Sync Client|
 |:-------|:-----|:------------|:-------|:-------------|:-----|
@@ -92,7 +79,7 @@ In order to access Azure Information Protection protected documents additional s
 |macOS|Public Preview|Public Preview|N/A|N/A|Not supported|
 |Linux|Not supported|Not supported|Not supported|Not supported|Not supported|
 
-<sup>*</sup> Learn more about the [OneDrive Sync Client Preview](https://support.office.com/article/Azure-Active-Directory-conditional-access-with-the-OneDrive-sync-client-on-Windows-028d73d7-4b86-4ee0-8fb7-9a209434b04e).
+<sup>*</sup> Learn more about using conditional access with the [OneDrive Sync Client](https://support.office.com/article/Azure-Active-Directory-conditional-access-with-the-OneDrive-sync-client-on-Windows-028d73d7-4b86-4ee0-8fb7-9a209434b04e).
 
 
 
@@ -103,7 +90,7 @@ The provided policy recommendations consider the privileges associated with an a
 
 Use Azure AD Privileged Identity Management to reduce the number of persistent administrative accounts. In addition, we recommend that Office 365 administrators have a separate user account for regular non-administrative use and only use their administrative account when necessary to complete a task associated with their job function.
 
-For more information on securing privileged accounts in Azure AD, refer to this [article](https://docs.microsoft.com/en-us/azure/active-directory/admin-roles-best-practices) on best practices and a roadmap to implement it.
+For more information on securing privileged accounts in Azure AD, refer to this [article](https://docs.microsoft.com/en-us/azure/active-directory/admin-roles-best-practices) for best practices and a roadmap.
 
 ## Next steps
 
