@@ -94,10 +94,16 @@ In order to access Azure Information Protection protected documents additional s
 
 <sup>*</sup> Learn more about the [OneDrive Sync Client Preview](https://support.office.com/article/Azure-Active-Directory-conditional-access-with-the-OneDrive-sync-client-on-Windows-028d73d7-4b86-4ee0-8fb7-9a209434b04e).
 
-> [!NOTE]
-> The following recommendations are based on three different tiers of security and protection for your email that can be applied based on the granularity of your needs: **baseline**, **sensitive**, and **highly regulated**. You can learn more about these security tiers, and the recommended client operating systems, referenced by these recommendations in the [recommended security policies and configurations introduction](microsoft-365-policies-configurations.md).
 
 
+## Protecting administrator accounts
+We recommend creating security groups that contain all the users who have administrative accounts or are eligible to receive an administrative account privileges on a temporary basis. These security groups should then be used to define conditional access policies specific to Azure AD and Office 365 administrators.  
+
+The provided policy recommendations consider the privileges associated with an account. [Office 365 administrator](https://support.office.com/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d) roles have substantially more privileges to Office 365 services. Thus, our policy recommendations for these accounts are more stringent than for regular user accounts. All the policies that refer to Administrators indicate the recommended policy for Office 365 administrative accounts.
+
+Use Azure AD Privileged Identity Management to reduce the number of persistent administrative accounts. In addition, we recommend that Office 365 administrators have a separate user account for regular non-administrative use and only use their administrative account when necessary to complete a task associated with their job function.
+
+For more information on securing privileged accounts in Azure AD, refer to this [article](https://docs.microsoft.com/en-us/azure/active-directory/admin-roles-best-practices) on best practices and a roadmap to implement it.
 
 ## Next steps
 
