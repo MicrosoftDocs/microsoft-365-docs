@@ -232,15 +232,24 @@ Create a policy for each platform:
 
 To create device compliance policies, log in to the Microsoft Azure portal with your administer credentials, and then navigate to **Intune > Device compliance**. Click **Create policy**.
 
-The following settings are recommended. [UPDATE FOR THESE SETTINGS STILL IN PROGRESS]
+The following settings are recommended for Windows 10. [REVIEW SETTINGS, SOME ARE MISSING]
 
-**Device health**
+**Device health: Windows Health Attestation Service evaluation rules**
+|Properties|Values|Notes|
+|:---------|:-----|:----|
+|Require BitLocker|Require||
+|Require Secure Boot to be enabled on the device|Require||
+|Require code integrity|Require||
+
+
+<!---
 |Type|Properties|Values|Notes|
 |:---|:---------|:-----|:----|
 |Windows device health attestation|Require devices to be reported as healthy (Windows 10 Desktop and Mobile and later)|Yes||
 |Device security settings|All|Not configured||
 |Device threat protection|All|Not configured||
 |Jailbreak|Device must not be jailbroken or rooted (iOS 8.0+, Android 4.0+)|Yes||
+--->
 
 **Device properties**
 |Type|Properties|Values|Notes|
@@ -252,13 +261,27 @@ For all the above policies to be considered deployed, they must be targeted at u
 **System security**
 |Type|Properties|Values|Notes|
 |:---|:---------|:-----|:----|
-|Password|Require a password to unlock mobile devices (...)|Yes|Selected – Drop down|
-||Allow simple passwords (...)|No|Selected – Drop down|
-||Minimum password length (...)|6|Selected – List|
-|Advanced password settings|All|Not configured||
-|Encryption|Require encryption on mobile device (...)|Yes|Selected – Drop down|
-|Email profiles|Email account must be managed by Intune (iOS 8.0+)|Yes| Selected  – Drop down|
-||Select (#)||Must select Email Configuration Policy for iOS: iOS Email Policy (see configuration policies above)|
+|Password|Require a password to unlock mobile devices|Require||
+||Simple passwords|Block||
+||Password type|Device default||
+||Minimum password length|6||
+||Maximum minutes of inactivity before password is required|???||
+||Password expiration (days)|???||
+||Number of previous passwords to prevent reuse|???||
+||Require password when device returns from idle state (Mobile and Halographic)|???||
+|Encryption|Encryption of data storage on device|Require||
+|Device Security|Firewall|Require||
+||Antivirus|Require||
+||AntiSpyware|Require|???|
+|Defender|Widnows Defender Antimalware|Require||
+||Windows Defender Antimalware minimum version|???|
+||Windows Defender Antimalware signature up-to-date|Require||
+||Real-time protection|Require|???|
+
+**Windows Defender ATP**
+|Type|Properties|Values|Notes|
+|:---|:---------|:-----|:----|
+|Windows Defender Advanced Threat Protection rules|Require the device to be at or under teh machine risk score|???||
 
 
 
