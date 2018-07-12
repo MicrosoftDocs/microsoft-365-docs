@@ -26,16 +26,14 @@ If you included Exchange Online and Outlook in the scope of the policies when yo
 
 |Protection level|Policies|More information|
 |:---------------|:-------|:----------------|
-|**Baseline**|[Require MFA when sign-in risk is *medium* or *high*](#require-mfa-when-sign-in-risk-is-medium-or-high)| |
-|        |[Block clients that don't support modern authentication](#block-clients-that-dont-support-modern-authentication)|Clients that do not use modern authentication can bypass conditional access rules, so it's important to block these.|
-|        |[High risk users must change password](#high-risk-users-must-change-password)|Forces users to change their password when signing in if high risk activity is detected for their account.|
-|        |[Define app protection policies](#define-app-protection-policies)|One policy per platform (iOS, Android, Windows).|
-|        |[Define compliance policies](#define-compliance-policies)|One policy for each platform.|
-|        |[Require compliant PCs *or* approved apps](#require-compliant-pcs-or-approved-apps)|Enforces Intune management of PCs but allows phones/tablets to be managed only with mobile app protection policies.|
-|**Sensitive**|[Require MFA when sign-in risk is *low*, *medium* or *high*](#require-mfa-when-sign-in-risk-is-low-medium-or-high)| |
-|         |[Require compliant PCs *and* mobile devices](#require-compliant-pcs-and-mobile-devices)|Enforces Intune management for PCs and phone/tablets.|
+|**Baseline**|[Require MFA when sign-in risk is *medium* or *high*](#require-mfa-when-sign-in-risk-is-medium-or-high)|Include Exchange Online in the assignments of cloud apps.|
+|        |[Block clients that don't support modern authentication](#block-clients-that-dont-support-modern-authentication)|Include Exchange Online in the assignments of cloud apps.|
+|        |[Define app protection policies](#define-app-protection-policies)|Be sure Outlook is included in the list of apps. Be sure to update the policy for each platform (iOS, Android, Windows).|
+|        |[Require compliant PCs *or* approved apps](#require-compliant-pcs-or-approved-apps)|Include Exchange Online in list of cloud apps.|
+|**Sensitive**|[Require MFA when sign-in risk is *low*, *medium* or *high*](#require-mfa-when-sign-in-risk-is-low-medium-or-high)| Include Exchange Online in the assignments of cloud apps.|
+|         |[Require compliant PCs *and* mobile devices](#require-compliant-pcs-and-mobile-devices)|Include Exchange Online in the list of cloud apps.|
 |**Highly regulated**|[*Always* requrie MFA](#always-require-mfa)|
-| | |
+| |Include Exchange Online in the assignments of cloud apps |
 
 <!---
 This article describes recommended policies to help you secure organizational email and email clients that support Modern Authentication and Conditional Access. These recommendations are in addition to the [common identity and access policy recommendations](identity-access-policies.md).
