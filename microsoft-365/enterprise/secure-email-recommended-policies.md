@@ -12,12 +12,12 @@ ms.custom: it-pro
 ---
 
 # Policy recommendations for securing email
-This article describes how to implement the recommended identity and device access policies to protect organizational email and email clients that support Modern Authentication and Conditional Access. This guidance builds on the [Common identity and device access policies](identity-access-policies.md). 
+This article describes how to implement the recommended identity and device access policies to protect organizational email and email clients that support Modern Authentication and Conditional Access. This guidance builds on the [Common identity and device access policies](identity-access-policies.md) and also includes a few additional recommendations.
 
 
 These recommendations are based on three different tiers of security and protection that can be applied based on the granularity of your needs: **baseline**, **sensitive**, and **highly regulated**. You can learn more about these security tiers, and the recommended client operating systems, referenced by these recommendations in the [recommended security policies and configurations introduction](microsoft-365-policies-configurations.md).
 
-
+##Updating common policies to include email
 The following diagram illustrates the common identity and device access policies and indicates which policies need to be updated to protect email.
 
 ![Summary of policy updates for protecting email](../images/identity-access-ruleset-mail.png)
@@ -33,6 +33,12 @@ If you included Exchange Online and Outlook in the scope of the policies when yo
 |**Sensitive**|[Require MFA when sign-in risk is *low*, *medium* or *high*](#require-mfa-when-sign-in-risk-is-low-medium-or-high)| Include Exchange Online in the assignments of cloud apps.|
 |         |[Require compliant PCs *and* mobile devices](#require-compliant-pcs-and-mobile-devices)|Include Exchange Online in the list of cloud apps.|
 |**Highly regulated**|[*Always* requrie MFA](#always-require-mfa)|Include Exchange Online in the assignments of cloud apps |
+
+
+##Setup Office 365 message encryption
+With the new Office 365 Message Encryption (OME) capabilities, which leverage the protection features in Azure Information Protection, your organization can easily share protected email with anyone on any device. Users can send and receive protected messages with other Office 365 organizations as well as non-Office 365 customers using Outlook.com, Gmail, and other email services.
+
+For more information, see [Set up new Office 365 Message Encryption capabilities](https://support.office.com/en-us/article/set-up-new-office-365-message-encryption-capabilities-7ff0c040-b25c-4378-9904-b1b50210d00e). 
 
 <!---
 This article describes recommended policies to help you secure organizational email and email clients that support Modern Authentication and Conditional Access. These recommendations are in addition to the [common identity and access policy recommendations](identity-access-policies.md).
