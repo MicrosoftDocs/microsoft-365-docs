@@ -187,29 +187,29 @@ The following tables describe the recommended settings:
 |Type|Properties|Values|Notes|
 |:---|:---------|:-----|:----|
 |Data relocation|Prevent Android backup|Yes|On iOS this will specifically call out iTunes and iCloud|
-|||Allow app to transfer data to other apps|Policy managed apps||
-||Allow app to receive data to other apps|Policy managed apps||
+||Allow app to transfer data to other apps|Policy managed apps||
+||Allow app to receive data from other apps|Policy managed apps||
 ||Prevent "Save As"|Yes||
-||Restrict cut, copy, and paste with other apps|Policy managed apps||
+||Select which storage services corporate data can be saved to|OneDrive for Business, SharePoint||
+||Restrict cut, copy, and paste with other apps|Policy managed apps with paste in||
 ||Restrict web content to display in the managed browser|No||
 ||Encrypt app data|Yes|On iOS select option: When device is locked|
-||Disable app encryption when device is enabled|??|options are yes/no
+||Disable app encryption when device is enabled|Yes|Disable this setting to avoid double encryption|
 ||Disable contacts sync|No||
-||Disable printing|???|yes/no|
+||Disable printing|No||
 |Access|Require PIN for access|Yes||
-||Select Type|???|Numeric or Passcode|
+||Select Type|Numeric||
 ||Allow simple PIN|No||
 ||PIN length|6||
 ||Allow fingerprint instead of PIN|Yes||
-||Require Corporate credentials for access|No||
-||Disable app PIN when device PIN is managed|???|yes/no|
-||Require corporate credentials for access|???|yes/no|
+||Disable app PIN when device PIN is managed|Yes||
+||Require corporate credentials for access|No||
 ||Recheck the access requirement after (minutes)|30||
 ||Block screen capture and Android assistant|No|On iOS this is not an available option|
 |Sign-in security requirements|Max PIN attempts|???|Action???Reset Pin or Wipe data|
 ||Offline grace period|720|Block access|
-||Offline interval (days) before app data is wiped|90|???block access or wipe data?
-||Jailbroken/rooted devices| |Block access|
+||Offline interval (days) before app data is wiped|90|Wipe data|
+||Jailbroken/rooted devices| |Wipe data|
 
 When complete, remember to click "Create". Repeat the above steps and replace the selected platform (dropdown) with iOS. This creates two app policies, so once you create the policy, then assign groups to the policy and deploy it.
 
