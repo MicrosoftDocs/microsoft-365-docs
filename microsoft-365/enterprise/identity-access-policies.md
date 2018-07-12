@@ -31,16 +31,16 @@ To give you time to accomplish these tasks, we recommend implementing the baseli
 
 |Protection level|Policies|More information|
 |:---------------|:-------|:----------------|
-|**Baseline**|[Require MFA when sign-in risk is *medium* or *high*](#require-mfa-when-sign-in-risk-is-medium-or-high)| |
+|**Baseline**|[Require MFA when sign-in risk is *medium* or *high*](#require-mfa-based-on-sign-in-risk)| |
 |        |[Block clients that don't support modern authentication](#block-clients-that-dont-support-modern-authentication)|Clients that do not use modern authentication can bypass conditional access rules, so it's important to block these.|
 |        |[High risk users must change password](#high-risk-users-must-change-password)|Forces users to change their password when signing in if high risk activity is detected for their account.|
 |        |[Define app protection policies](#define-app-protection-policies)|One policy per platform (iOS, Android, Windows).|
-|        |Require approved apps|Enforces mobile app protection for phones and tablets|
+|        |[Require approved apps](#require-approved-apps)|Enforces mobile app protection for phones and tablets|
 |        |[Define compliance policies](#define-compliance-policies)|One policy for each platform.|
 |        |[Require compliant PCs](#require-compliant-pcs-or-approved-apps)|Enforces Intune management of PCs|
-|**Sensitive**|[Require MFA when sign-in risk is *low*, *medium* or *high*](#require-mfa-when-sign-in-risk-is-low-medium-or-high)| |
+|**Sensitive**|[Require MFA when sign-in risk is *low*, *medium* or *high*](#require-mfa-based-on-sign-in-risk)| |
 |         |[Require compliant PCs *and* mobile devices](#require-compliant-pcs-and-mobile-devices)|Enforces Intune management for PCs and phone/tablets.|
-|**Highly regulated**|[*Always* requrie MFA](#always-require-mfa)|
+|**Highly regulated**|[*Always* requrie MFA](#require-mfa-based-on-sign-in-risk)|
 | | |
 
 ##Assigning policies to users
@@ -61,7 +61,7 @@ In the illustration the "Top secret project X team" is assigned a conditional ac
 
 
 
-## Require MFA when sign-in risk is *medium* or *high*
+## Require MFA based on sign-in risk
 Before requiring MFA, first use an Identity Protection MFA registration policy to register users for MFA. After users are registered you can enforce MFA for sign-in. The [prerequisite work](identity-access-prerequisites.md) includes registering all users with MFA.
 
 To create a new conditional access policy: 
@@ -85,7 +85,16 @@ To create a new conditional access policy:
 ||Exclude|Exception security group; service accounts (app identities)|Membership modified on an as needed temporary basis|
 |Cloud apps|Include|Select the apps you want this rule to apply to. For example, select Office 365 Exchange Online||
 |Conditions|Configured|Yes|Configure specific to your environment and needs|
-|Sign-in risk|Risk level|High, medium|Check both|
+|Sign-in risk|Risk level||See the guidance in the following table|
+
+**Sign-in risk**
+
+Apply the settings based on the proteciton level you are targeting.
+|Property|Level of protection|Values|Notes|
+|:---|:---------|:-----|:----|
+|Risk level|Baseline|High, medium|Check both|
+| |Sensitive|High, medium, low|Check all three|
+| |Highly regulated| |Leave all options uchecked to always enforce MFA|
 
 **Access controls**
 |Type|Properties|Values|Notes|
@@ -300,7 +309,7 @@ For all the above policies to be considered deployed, they must be targeted at u
 
 
 
-## Require compliant PCs *or* approved apps
+## Require compliant PCs 
 Before adding a policy to require compliant PCs, be sure to enroll devices for management into Intune. Using multi-factor authentication is recommended before enrolling devices into Intune for assurance that the device is in the possession of the intended user. 
 
 To require compliant PCs or approved apps:
@@ -321,7 +330,7 @@ To require compliant PCs or approved apps:
 
 8. Choose **Grant** from the **Access controls** section.
 
-9. Choose **Grant access**, select **Require device to be marked as compliant** and **Require approved client app**.  For multiple controls, select **Require one of the selected controls**, then choose **Select**. This configuration applies device commpliance to PCs while enforcing only app protection policies on phones and tablets [REALLY? HOW DOES THIS NOT ALLOW PCS TO ACCESS WITH ONLY APP PROTECTION? --GOT THIS CONFIG FROM CALEB].
+9. Choose **Grant access**, select **Require device to be marked as compliant**.  For multiple controls, select **Require all the selected controls**, then choose **Select**. 
 
 10. Click **Create** to create the Exchange Online conditional access policy.
 
@@ -354,7 +363,7 @@ To require compliant PCs or approved apps:
 
 8. Choose **Grant** from the **Access controls** section.
 
-9. Choose **Grant access**, select **Require device to be marked as compliant** and **Require Hybrid Azure AD joined device**.  For multiple controls, select **Require one of the selected controls** [IS THIS RIGHT?], then choose **Select**. 
+9. Choose **Grant access**, select **Require device to be marked as compliant**. For multiple controls, select **Require all the selected controls**, then choose **Select**. 
 
 10. Click **Create** to create the Exchange Online conditional access policy.
 
