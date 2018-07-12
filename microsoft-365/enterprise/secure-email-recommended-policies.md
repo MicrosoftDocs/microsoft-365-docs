@@ -32,8 +32,7 @@ If you included Exchange Online and Outlook in the scope of the policies when yo
 |        |[Require compliant PCs *or* approved apps](#require-compliant-pcs-or-approved-apps)|Include Exchange Online in list of cloud apps.|
 |**Sensitive**|[Require MFA when sign-in risk is *low*, *medium* or *high*](#require-mfa-when-sign-in-risk-is-low-medium-or-high)| Include Exchange Online in the assignments of cloud apps.|
 |         |[Require compliant PCs *and* mobile devices](#require-compliant-pcs-and-mobile-devices)|Include Exchange Online in the list of cloud apps.|
-|**Highly regulated**|[*Always* requrie MFA](#always-require-mfa)|
-| |Include Exchange Online in the assignments of cloud apps |
+|**Highly regulated**|[*Always* requrie MFA](#always-require-mfa)|Include Exchange Online in the assignments of cloud apps |
 
 <!---
 This article describes recommended policies to help you secure organizational email and email clients that support Modern Authentication and Conditional Access. These recommendations are in addition to the [common identity and access policy recommendations](identity-access-policies.md).
