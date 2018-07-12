@@ -62,7 +62,7 @@ The following business pillars can address your organization’s needs:
 | External/Develop | Lets your organization develop customize solutions and apps by using the SharePoint Framework. |
 |||
 
-One way to see the benefits of SharePoint Online is to examine how individuals, a team, a division, or your entire organization interact today, and then find an appropriate scenario that provides easier ways to store and share files collaborate. Keep in mind that [Microsoft Teams](teams-workload) might be a better choice for some of your scenarios.
+One way to see the benefits of SharePoint Online is to examine how individuals, a team, a division, or your entire organization interact today, and then find an appropriate scenario that provides easier ways to store and share files collaborate. Keep in mind that [Microsoft Teams](teams-workload.md) might be a better choice for some of your scenarios.
 
 SharePoint Online and OneDrive for Business enable these strategic business scenarios for Microsoft 365 Enterprise:
 

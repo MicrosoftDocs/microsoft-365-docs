@@ -52,7 +52,7 @@ See the [Protect against credential compromise](identity-azure-ad-identity-prote
 
 ## Next step
 
-Explore additional [identity](m365-enterprise-test-lab-guides#identity) features and capabilities in your test environment.
+Explore additional [identity](m365-enterprise-test-lab-guides.md#identity) features and capabilities in your test environment.
 
 ## See also
 

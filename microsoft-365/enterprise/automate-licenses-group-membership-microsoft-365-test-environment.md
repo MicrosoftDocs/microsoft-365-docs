@@ -85,7 +85,7 @@ See these steps in the Identity phase for information and links to deploy dynami
 
 ## Next step
 
-Explore additional [identity](m365-enterprise-test-lab-guides#identity) features and capabilities in your test environment.
+Explore additional [identity](m365-enterprise-test-lab-guides.md#identity) features and capabilities in your test environment.
 
 ## See also
 

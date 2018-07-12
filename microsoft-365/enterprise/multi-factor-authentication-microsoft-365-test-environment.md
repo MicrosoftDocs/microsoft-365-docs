@@ -91,7 +91,7 @@ See the [Set up multi-factor authentication](identity-multi-factor-authenticatio
     
 ## Next step
 
-Explore additional [identity](m365-enterprise-test-lab-guides#identity) features and capabilities in your test environment.
+Explore additional [identity](m365-enterprise-test-lab-guides.md#identity) features and capabilities in your test environment.
 
 ## See also
 

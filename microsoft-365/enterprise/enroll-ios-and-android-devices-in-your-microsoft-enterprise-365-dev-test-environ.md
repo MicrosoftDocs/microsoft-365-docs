@@ -56,7 +56,7 @@ For additional experimentation, see [Available device actions](https://docs.micr
     
 ## Next step
 
-Explore additional [mobile device management](m365-enterprise-test-lab-guides#mobile-device-management) features and capabilities in your test environment.
+Explore additional [mobile device management](m365-enterprise-test-lab-guides.md#mobile-device-management) features and capabilities in your test environment.
 
 ## See Also
 
