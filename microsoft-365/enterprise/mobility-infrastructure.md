@@ -38,9 +38,17 @@ Intune in Enterprise Security + Management (EMS) enables these strategic busines
 
 For more information, see the [Discovery Value tool](https://online.valuediscoveryworkshop.com/). 
 
+|||
+|:-------|:-----|
+|![Test Lab Guides for the Microsoft cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Test Lab Guide: iOS and Android device enrollment](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)<P> [Test Lab Guide: Mobile application management policies](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md) |
+|||
+
+
 ## How Microsoft does Microsoft 365 Enterprise
 
 Learn how IT experts at Microsoft use EMS to manage Windows 10 and mobile devices with [Managing modern mobile productivity with Enterprise Mobility + Security](https://www.microsoft.com/itshowcase/Article/Content/972/Managing-modern-mobile-productivity-with-Enterprise-Mobility--Security).
+
+
 
 ## Next phase
 

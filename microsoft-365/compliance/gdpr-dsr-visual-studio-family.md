@@ -177,7 +177,7 @@ Xamarin Forums are hosted by a third party, Vanilla Forums. To request export of
 
 ##### Delete
 
-Xamarin Forums are hosted by a third party, Vanilla Forums. To request deletion of your personal and public data, users should contact forums@xamarin.com (monitored by the Xamarin team). We will then contact Vanilla Forums, who will service the user's personal data deletion request.
+Xamarin Forums are hosted by a third party, Vanilla Forums. To request deletion of your personal and public data, users should contact forums@xamarin.com (monitored by the Xamarin team). We will then manually service the user's personal data deletion request.
 
 #### Bugzilla for Xamarin
 
