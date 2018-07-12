@@ -39,6 +39,11 @@ The results of this step are:
 - A set of Azure AD groups that can be configured for dynamic membership
 - A set of rules on each dynamic group
 
+|||
+|:-------|:-----|
+|![Test Lab Guides for the Microsoft cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Test Lab Guide: Automate licenses and group membership](automate-licenses-group-membership-microsoft-365-test-environment.md) |
+|||
+
 As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria.md#crit-identity-step12) for this step.
 
 ## Next step

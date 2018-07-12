@@ -41,6 +41,11 @@ The results of this step are that you've enabled Azure AD Identity protection an
 - Detect possible credential compromise attempts.
 - Investigate and address ongoing suspicious identity incidents.
 
+|||
+|:-------|:-----|
+|![Test Lab Guides for the Microsoft cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Test Lab Guide: Azure AD Identity Protection](azure-ad-identity-protection-microsoft-365-test-environment.md) |
+|||
+
 As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria.md#crit-identity-step15) for this step.
 
 ## Next step
