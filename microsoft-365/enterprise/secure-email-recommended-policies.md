@@ -20,7 +20,7 @@ These recommendations are based on three different tiers of security and protect
 
 
 
-
+![Summary of policy updates for protecting email](../images/identity-access-ruleset-mail.png)
 
 
 <!---
