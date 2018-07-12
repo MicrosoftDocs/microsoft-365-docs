@@ -206,7 +206,7 @@ The following tables describe the recommended settings:
 ||Require corporate credentials for access|No||
 ||Recheck the access requirement after (minutes)|30||
 ||Block screen capture and Android assistant|No|On iOS this is not an available option|
-|Sign-in security requirements|Max PIN attempts|???|Action???Reset Pin or Wipe data|
+|Sign-in security requirements|Max PIN attempts|5|Reset Pin|
 ||Offline grace period|720|Block access|
 ||Offline interval (days) before app data is wiped|90|Wipe data|
 ||Jailbroken/rooted devices| |Wipe data|
@@ -288,7 +288,7 @@ For all the above policies to be considered deployed, they must be targeted at u
 
 
 ## Require compliant PCs *or* approved apps
-Before adding a policy to require compliant PCs, be sure to enroll devices for amangement into Intune. Using multi-factor authentication is recommended before enrolling devices into Intune for assurance that the device is in the possession of the intended user. For information on enrolling devices, see ???????? [does fastrack have clear guidance? the Intune library is not prescriptive]
+Before adding a policy to require compliant PCs, be sure to enroll devices for management into Intune. Using multi-factor authentication is recommended before enrolling devices into Intune for assurance that the device is in the possession of the intended user. For information on enrolling devices, see ???????? [does fastrack have clear guidance? the Intune library is not prescriptive]
 
 To require compliant PCs or approved apps:
 
