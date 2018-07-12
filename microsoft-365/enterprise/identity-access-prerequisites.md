@@ -56,13 +56,14 @@ We also recommend that corporate-owned devices (COD) are standardized on OEMs an
 ### Recommended email clients
 The following email clients support Modern Authentication and Conditional Access. 
 
-|Platform|Client|Version/Notes|Azure Information Protection|
-|:-------|:-----|:------------|:--------------------|
-|**Windows**|Outlook|2016, 2013 [Enable Modern Auth](https://support.office.com/article/Enable-Modern-Authentication-for-Office-2013-on-Windows-devices-7dc1c01a-090f-4971-9677-f1b192d6c910), [Required updates](https://support.office.com/article/Outlook-Updates-472c2322-23a4-4014-8f02-bbc09ad62213)|Yes|
-|**iOS**|Outlook|[Latest](https://itunes.apple.com/us/app/microsoft-outlook-email-and-calendar/id951937596?mt=8)|No|
-|**Android**|Outlook|[Latest](https://play.google.com/store/apps/details?id=com.microsoft.office.outlook&hl=en)|No|
-|**macOS**|Outlook|2016|No|
-|**Linux**|Not supported||No|
+|Platform|Client|Version/Notes|
+|:-------|:-----|:------------|
+|**Windows**|Outlook|2016, 2013 [Enable Modern Auth](https://support.office.com/article/Enable-Modern-Authentication-for-Office-2013-on-Windows-devices-7dc1c01a-090f-4971-9677-f1b192d6c910), [Required updates](https://support.office.com/article/Outlook-Updates-472c2322-23a4-4014-8f02-bbc09ad62213)|
+|**iOS**|Outlook|[Latest](https://itunes.apple.com/us/app/microsoft-outlook-email-and-calendar/id951937596?mt=8)|
+|**Android**|Outlook|[Latest](https://play.google.com/store/apps/details?id=com.microsoft.office.outlook&hl=en)|
+|**macOS**|Outlook|2016|
+|**Linux**|Not supported||
+|||
 
 
 ### Recommended client platforms when securing documents
