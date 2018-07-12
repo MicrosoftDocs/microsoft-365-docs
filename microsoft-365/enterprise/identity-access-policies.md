@@ -35,8 +35,9 @@ To give you time to accomplish these tasks, we recommend implementing the baseli
 |        |[Block clients that don't support modern authentication](#block-clients-that-dont-support-modern-authentication)|Clients that do not use modern authentication can bypass conditional access rules, so it's important to block these.|
 |        |[High risk users must change password](#high-risk-users-must-change-password)|Forces users to change their password when signing in if high risk activity is detected for their account.|
 |        |[Define app protection policies](#define-app-protection-policies)|One policy per platform (iOS, Android, Windows).|
+|        |Require approved apps|Enforces mobile app protection for phones and tablets|
 |        |[Define compliance policies](#define-compliance-policies)|One policy for each platform.|
-|        |[Require compliant PCs *or* approved apps](#require-compliant-pcs-or-approved-apps)|Enforces Intune management of PCs but allows phones/tablets to be managed only with mobile app protection policies.|
+|        |[Require compliant PCs](#require-compliant-pcs-or-approved-apps)|Enforces Intune management of PCs|
 |**Sensitive**|[Require MFA when sign-in risk is *low*, *medium* or *high*](#require-mfa-when-sign-in-risk-is-low-medium-or-high)| |
 |         |[Require compliant PCs *and* mobile devices](#require-compliant-pcs-and-mobile-devices)|Enforces Intune management for PCs and phone/tablets.|
 |**Highly regulated**|[*Always* requrie MFA](#always-require-mfa)|
@@ -215,7 +216,28 @@ When complete, remember to click "Create". Repeat the above steps and replace th
 
 To edit the policies and assign these policies to users, see [How to create and assign app protection policies](https://docs.microsoft.com/en-us/intune/app-protection-policies). 
 
+##Require approved apps
+To require approved apps:
 
+1. Go to the [Azure portal](https://portal.azure.com), and sign in with your credentials. After you've successfully signed in, you see the Azure Dashboard.
+
+2. Choose **Azure Active Directory** from the left menu.
+
+3. Under the **Security** section, choose **Conditional access**.
+
+4. Choose **New policy**.
+
+5. Enter a policy name, then choose the **Users and groups** you want to apply the policy for.
+
+6. Choose **Cloud apps**.
+
+7. Choose **Select apps**, select the desired apps from the **Cloud apps** list. For example, select Office 365 Exchange Online. Click **Select** and **Done**.
+
+8. Choose **Grant** from the **Access controls** section.
+
+9. Choose **Grant access**, select **Require approved client app**.  For multiple controls, select **Require the selected controls**, then choose **Select**. 
+
+10. Click **Create** to create the Exchange Online conditional access policy.
 
 ## Define compliance policies
 
@@ -241,15 +263,6 @@ The following settings are recommended for Windows 10. [REVIEW SETTINGS, SOME AR
 |Require Secure Boot to be enabled on the device|Require||
 |Require code integrity|Require||
 
-
-<!---
-|Type|Properties|Values|Notes|
-|:---|:---------|:-----|:----|
-|Windows device health attestation|Require devices to be reported as healthy (Windows 10 Desktop and Mobile and later)|Yes||
-|Device security settings|All|Not configured||
-|Device threat protection|All|Not configured||
-|Jailbreak|Device must not be jailbroken or rooted (iOS 8.0+, Android 4.0+)|Yes||
---->
 
 **Device properties**
 |Type|Properties|Values|Notes|
@@ -288,7 +301,7 @@ For all the above policies to be considered deployed, they must be targeted at u
 
 
 ## Require compliant PCs *or* approved apps
-Before adding a policy to require compliant PCs, be sure to enroll devices for management into Intune. Using multi-factor authentication is recommended before enrolling devices into Intune for assurance that the device is in the possession of the intended user. For information on enrolling devices, see ???????? [does fastrack have clear guidance? the Intune library is not prescriptive]
+Before adding a policy to require compliant PCs, be sure to enroll devices for management into Intune. Using multi-factor authentication is recommended before enrolling devices into Intune for assurance that the device is in the possession of the intended user. 
 
 To require compliant PCs or approved apps:
 
