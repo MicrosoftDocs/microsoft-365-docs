@@ -216,7 +216,7 @@ When complete, remember to click "Create". Repeat the above steps and replace th
 
 To edit the policies and assign these policies to users, see [How to create and assign app protection policies](https://docs.microsoft.com/en-us/intune/app-protection-policies). 
 
-##Require approved apps
+## Require approved apps
 To require approved apps:
 
 1. Go to the [Azure portal](https://portal.azure.com), and sign in with your credentials. After you've successfully signed in, you see the Azure Dashboard.
