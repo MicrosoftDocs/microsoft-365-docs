@@ -12,7 +12,18 @@ ms.custom: it-pro
 ---
 
 # Policy recommendations for securing email
+This article describes how to implement the recommended identity and device access policies to protect organizational email and email clients that support Modern Authentication and Conditional Access. This guidance builds on the [Common identity and device access policies](identity-access-policies.md). 
 
+
+These recommendations are based on three different tiers of security and protection for SharePoint files that can be applied based on the granularity of your needs: **baseline**, **sensitive**, and **highly regulated**. You can learn more about these security tiers, and the recommended client operating systems, referenced by these recommendations in the [recommended security policies and configurations introduction](microsoft-365-policies-configurations.md).
+
+
+
+
+
+
+
+<!---
 This article describes recommended policies to help you secure organizational email and email clients that support Modern Authentication and Conditional Access. These recommendations are in addition to the [common identity and access policy recommendations](identity-access-policies.md).
 
 The following recommendations are based on three different layers of security and protection for your email that can be applied based on the granularity of your needs:
@@ -359,6 +370,7 @@ For all the above policies to be considered deployed, they must be targeted at u
 If a user reports that they are now expected to perform MFA when this was previously not required, support can review their status from a risk perspective.  
 
 Users within the organization with a Global Administrator or Security Administrator role can use Azure AD Identity Protection to review the risky events that contributed to the calculated risk score. If they identify some events that were flagged as suspicious, but are confirmed to be valid (such as a login from an unfamiliar location when an employee is on vacation), the administrator can resolve the event so it no longer contributes to the risk score.
+--->
 
 ## Next steps
 
