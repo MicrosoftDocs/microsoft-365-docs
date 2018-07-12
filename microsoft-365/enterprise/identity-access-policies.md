@@ -29,16 +29,16 @@ Using multi-factor authentication is recommended before enrolling devices into I
 To give you time to accomplish these tasks, we recommend implementing the baseline policies in the order listed in this table. However, the MFA policies for sensitive and highly regulated protection can be implemented at any time.
 
 
-|Protection level|Policies|
-|:---------------|:-------|
-|**Baseline**|[Require MFA when sign-in risk is *medium* or *high*](#require-mfa-when-sign-in-risk-is-medium-or-high)|
-|        |[Block clients that don't support modern authentication](#block-clients-that-dont-support-modern-authentication)|
-|        |[High risk users must change password](#high-risk-users-must-change-password)|
-|        |[Define app protection policies](#define-app-protection-policies)|
-|        |[Define compliance policies](#define-compliance-policies)|
-|        |[Require compliant PCs *or* approved apps](#require-compliant-pcs-or-approved-apps)|
-|**Sensitive**|[Require MFA when sign-in risk is *low*, *medium* or *high*](#require-mfa-when-sign-in-risk-is-low-medium-or-high)|
-|         |[Require compliant PCs *and* mobile devices](#require-compliant-pcs-and-mobile-devices)|
+|Protection level|Policies|More information|
+|:---------------|:-------|:----------------|
+|**Baseline**|[Require MFA when sign-in risk is *medium* or *high*](#require-mfa-when-sign-in-risk-is-medium-or-high)| |
+|        |[Block clients that don't support modern authentication](#block-clients-that-dont-support-modern-authentication)|Clients that do not use modern authentication can bypass conditional access rules, so it's important to block these.|
+|        |[High risk users must change password](#high-risk-users-must-change-password)|Forces users to change their password when signing in if high risk activity is detected for their account.|
+|        |[Define app protection policies](#define-app-protection-policies)|One policy per platform (iOS, Android, Windows).|
+|        |[Define compliance policies](#define-compliance-policies)|One policy for each platform.|
+|        |[Require compliant PCs *or* approved apps](#require-compliant-pcs-or-approved-apps)|Enforces Intune management of PCs but allows phones/tablets to be managed only with mobile app protection policies.|
+|**Sensitive**|[Require MFA when sign-in risk is *low*, *medium* or *high*](#require-mfa-when-sign-in-risk-is-low-medium-or-high)| |
+|         |[Require compliant PCs *and* mobile devices](#require-compliant-pcs-and-mobile-devices)|Enforces Intune management for PCs and phone/tablets.|
 |**Highly regulated**|[*Always* requrie MFA](#always-require-mfa)|
 | | |
 
