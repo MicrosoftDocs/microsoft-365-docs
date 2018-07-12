@@ -3,7 +3,7 @@ title: "Multi-factor authentication for your Microsoft 365 Enterprise test envir
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/28/2018
+ms.date: 07/11/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -34,7 +34,7 @@ There are two phases to setting up multi-factor authentication for an account in
   
 ## Phase 1: Build out your lightweight Microsoft 365 Enterprise test environment
 
-If you haven't done so already, follow the instructions in [Lightweight base configuration](lightweight-base-configuration-microsoft-365-enterprise.md).
+If you haven't done so already, follow the instructions in the [lightweight base configuration](lightweight-base-configuration-microsoft-365-enterprise.md).
   
 ## Phase 2: Enable and test multi-factor authentication for the User 2 account
 
@@ -85,10 +85,15 @@ Complete the configuration for the User 2 account to use a text message for vali
 8. If this is the first time you signed in with the User 2 account, you are prompted to change the password. Type the original password and a new password twice, and then click **Update password and sign in**. Record the new password in a secure location.
     
     You should see the Office 365 portal for User 2 on the **Microsoft Office Home** tab of your browser.
-    
-## See also
 
-[Identity phase: Set up multi-factor authentication](identity-multi-factor-authentication.md)
+
+See the [Set up multi-factor authentication](identity-multi-factor-authentication.md) step in the Identity phase for information and links to deploy multi-factor authentication in production.
+    
+## Next step
+
+Explore additional [identity](m365-enterprise-test-lab-guides.md#identity) features and capabilities in your test environment.
+
+## See also
 
 [Phase 2: Identity](identity-infrastructure.md)
 

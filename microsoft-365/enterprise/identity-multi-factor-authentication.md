@@ -42,6 +42,11 @@ To configure multifactor authentication, [Set up multi-factor authentication for
 >In some applications, such as Microsoft Office 2010 or older and Apple Mail, you can’t use MFA. To use these apps, you’ll need to use “app passwords” in place of your traditional password. The app password allows the app to bypass MFA and continue working. To learn more about app passwords, see [Create an app password for Office 365](https://support.office.com/article/Create-an-app-password-for-Office-365-3e7c860f-bda4-4441-a618-b53953ee1183).
 >
 
+|||
+|:-------|:-----|
+|![Test Lab Guides for the Microsoft cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Test Lab Guide: Multi-factor authentication](multi-factor-authentication-microsoft-365-test-environment.md) |
+|||
+
 As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria.md#crit-identity-step7) for this step.
 
 ## Next step

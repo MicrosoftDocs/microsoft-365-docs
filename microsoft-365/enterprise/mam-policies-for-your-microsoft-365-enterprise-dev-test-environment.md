@@ -22,7 +22,7 @@ With the instructions in this article, you add Intune mobile application managem
   
 ## Phase 1: Build out your Microsoft 365 Enterprise test environment
 
-Follow the instructions in the [Lightweight base configuration](lightweight-base-configuration-microsoft-365-enterprise.md).
+Follow the instructions in the [lightweight base configuration](lightweight-base-configuration-microsoft-365-enterprise.md).
   
 ## Phase 2: Create and deploy MAM policies for iOS and Android devices
 
@@ -30,61 +30,63 @@ In this phase, you create and deploy two different MAM policies: one for iOS dev
   
 1. Go to the Office 365 portal at ([https://portal.office.com](https://portal.office.com)) and sign in to your Office 365 trial subscription with your global administrator account.
     
-2. On a new tab of your browser, open the Azure portal ([https://azure.portal.com](https://azure.portal.com)) and sign in using your Office 365 global administrator account.
-    
+2. On a new tab of your browser, open the Azure portal at [https://portal.azure.com](https://portal.azure.com).
+
 3. On the Azure portal tab in Internet Explorer, in the navigation pane, click **All services**, type **Intune**, and then click **Intune**.
     
-4. In the left navigation pane, click **Groups**.
+4. If you see a **You haven't enabled device management yet** message on the **Microsoft Intune** blade, click it. On the **Mobile Device Management authority** blade, click **Intune MDM Authority**, and then click **Choose**. Refresh your browser tab.
     
-5. On the **Groups-All groups** blade, click **+ New Group**.
+5. In the left navigation pane, click **Groups**.
     
-6. On the **Group** blade, select **Office 365** for **Group type?**, type **Managed iOS device users** in **Name**, select **Assigned** in **Membership type**,  and then click **Create**. 
+6. On the **Groups-All groups** blade, click **+ New Group**.
     
-7. Close the **Group** blade.
+7. On the **Group** blade, select **Office 365** for **Group type?**, type **Managed iOS device users** in **Name**, select **Assigned** in **Membership type**,  and then click **Create**. 
     
-8. On the **Groups-All groups** blade, click **Add**.
+8. Close the **Group** blade.
     
-9. On the **Group** blade, select **Office 365** for **Group type?**, type **Managed Android device user** in **Name**, select **Assigned** in **Membership type**,  and then click **Create**.
+9. On the **Groups-All groups** blade, click **Add**.
     
-10. Close the **Groups-All groups** blade.
+10. On the **Group** blade, select **Office 365** for **Group type?**, type **Managed Android device user** in **Name**, select **Assigned** in **Membership type**,  and then click **Create**.
     
-11. On the **Intune** blade, in the **Quick tasks** list, click **Create a compliance policy**.
+11. Close the **Groups-All groups** blade.
     
-12. On the **Compliance Policy Profiles** blade, click **Create Policy**.
+12. On the **Intune** blade, in the **Quick tasks** list, click **Create a compliance policy**.
     
-13. On the **Create Policy** blade, in **Name**, type **iOS**. In **Platform**, select **iOS**, click **OK** on the **iOS compliance policy** blade, and then click **Create**.
+13. On the **Compliance Policy Profiles** blade, click **Create Policy**.
     
-14. On the **Compliance Policy Profiles** blade, click **Create Policy**.
+14. On the **Create Policy** blade, in **Name**, type **iOS**. In **Platform**, select **iOS**, click **OK** on the **iOS compliance policy** blade, and then click **Create**.
     
-15. On the **Create Policy** blade, in **Name**, type **Android**. In **Platform**, select **Android**, click **OK** on the **Android compliance policy** blade, and then click **Create**.
+15. On the **Compliance Policy Profiles** blade, click **Create Policy**.
     
-16. On the **Compliance Policy Profiles** blade, click the **Android** policy name.
+16. On the **Create Policy** blade, in **Name**, type **Android**. In **Platform**, select **Android**, click **OK** on the **Android compliance policy** blade, and then click **Create**.
     
-17. In the left navigation of the **Android - Properties** blade, click **Assignments**, and then click **Select groups**.
+17. On the **Compliance Policy Profiles** blade, click the **Android** policy name.
     
-18. On the **Select groups** blade, click the **Managed Android device users** group, and then click **Select**.
+18. In the left navigation of the **Android - Properties** blade, click **Assignments**, and then click **Select groups**.
     
-19. Click **Save**, and then close the **Android - Assignments** blade.
+19. On the **Select groups** blade, click the **Managed Android device users** group, and then click **Select**.
     
-20. On the **Compliance Policy Profiles** blade, click the **iOS** policy name.
+20. Click **Save**, and then close the **Android - Assignments** blade.
     
-21. In the left navigation of the **iOS - Properties** blade, click **Assignments**, and then click **Select groups**.
+21. On the **Compliance Policy Profiles** blade, click the **iOS** policy name.
     
-22. On the **Select groups** blade, click the **Managed iOS device users** group, and then click **Select**.
+22. In the left navigation of the **iOS - Properties** blade, click **Assignments**, and then click **Select groups**.
     
-23. Click **Save**, and then close the **iOS - Assignments** blade.
+23. On the **Select groups** blade, click the **Managed iOS device users** group, and then click **Select**.
     
-24. Close the **Compliance Policy Profiles** blade.
+24. Click **Save**, and then close the **iOS - Assignments** blade.
     
-25. On the **Intune** blade, click **Manage apps** in the left navigation.
+25. Close the **Compliance Policy Profiles** blade.
     
-26. On the **Mobile Apps** blade, click **Apps**.
+26. On the **Intune** blade, click **Manage apps** in the left navigation.
     
-27. In the list of apps, click **PowerPoint**, 
+27. On the **Mobile Apps** blade, click **Apps**.
     
-28. On the **PowerPoint Overview** blade, click **Assignments > Select groups > Managed iOS devices > Select**. In **Type**, select **Available**, and then click **Save**.
+28. In the list of apps, click **PowerPoint**, 
     
-29. Repeat step 28 for the following apps:
+29. On the **PowerPoint Overview** blade, click **Assignments > Select groups > Managed iOS devices > Select**. In **Type**, select **Available**, and then click **Save**.
+    
+30. Repeat step 29 for the following apps:
     
   - Outlook for Android
     
@@ -108,30 +110,33 @@ In this phase, you create and deploy two different MAM policies: one for iOS dev
     
   - OneNote for iOS
     
-30. Close the **Mobile Apps - Apps** blade.
+31. Close the **Mobile Apps - Apps** blade.
     
-31. On the **Mobile Apps** blade, click **App Protection Policies**.
+32. On the **Mobile Apps** blade, click **App Protection Policies**.
     
-32. On the **App Protection Policies** blade, click **Add a policy**.
+33. On the **App Protection Policies** blade, click **Add a policy**.
     
-33. On the **Add a policy** blade, type **iOS**, and then click **Select required apps**.
+34. On the **Add a policy** blade, type **iOS**, and then click **Select required apps**.
     
-34. On the **Apps** blade, click **PowerPoint**, **Microsoft Dynamics CRM on iPhone**, **Excel**, **Microsoft Dynamics CRM on iPhone**, **Word**, **OneNote**, and **Outlook**, and then click **Select**.
+35. On the **Apps** blade, click **PowerPoint**, **Microsoft Dynamics CRM on iPhone**, **Excel**, **Microsoft Dynamics CRM on iPhone**, **Word**, **OneNote**, and **Outlook**, and then click **Select**.
     
-35. On the **Add a policy** blade, click **Create**.
+36. On the **Add a policy** blade, click **Create**.
     
-36. On the **App Protection Policies** blade, click **Add a policy**.
+37. On the **App Protection Policies** blade, click **Add a policy**.
     
-37. On the **Add a policy** blade, type **Android**, select **Android** in **Platform**, and then click **Select required apps**.
+38. On the **Add a policy** blade, type **Android**, select **Android** in **Platform**, and then click **Select required apps**.
     
-38. On the **Apps** blade, click **PowerPoint**, **Dynamics CRM for tablets**, **Excel**, **Word**, **Outlook**, and **Dynamics CRM for phones**, and then click **Select**.
+39. On the **Apps** blade, click **PowerPoint**, **Dynamics CRM for tablets**, **Excel**, **Word**, **Outlook**, and **Dynamics CRM for phones**, and then click **Select**.
     
-39. On the **Add a policy** blade, click **Create**.
+10. On the **Add a policy** blade, click **Create**.
     
-You now have two MAM policies, one for iOS devices and one for Android devices, and are ready to experiment with testing settings for the selected apps.
+You now have two MAM policies, one for iOS devices and one for Android devices, and are ready to experiment with testing settings for the selected apps. 
   
-  
-## See Also
+## Next step
+
+Explore additional [mobile device management](m365-enterprise-test-lab-guides.md#mobile-device-management) features and capabilities in your test environment.
+
+## See also
 
 [Microsoft 365 Enterprise Test Lab Guides](m365-enterprise-test-lab-guides.md).
   
