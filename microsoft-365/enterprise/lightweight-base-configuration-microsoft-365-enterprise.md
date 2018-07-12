@@ -147,7 +147,7 @@ $cred=Get-Credential -Message "Type the name and password of the local administr
 $vm=Set-AzureRMVMOperatingSystem -VM $vm -Windows -ComputerName WIN10 -Credential $cred -ProvisionVMAgent -EnableAutoUpdate
 $vm=Set-AzureRMVMSourceImage -VM $vm -PublisherName MicrosoftWindowsDesktop -Offer Windows-10 -Skus RS3-Pro -Version "latest"
 $vm=Add-AzureRMVMNetworkInterface -VM $vm -Id $nic.Id
-$vm=Set-AzureRmVMOSDisk -VM $vm -Name WIN10-TestLab-OSDisk -DiskSizeInGB 128 -CreateOption FromImage -StorageAccountType "StandardLRS"
+$vm=Set-AzureRmVMOSDisk -VM $vm -Name WIN10-TestLab-OSDisk -DiskSizeInGB 128 -CreateOption FromImage -StorageAccountType "Standard_LRS"
 New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
 
@@ -196,15 +196,18 @@ You are now ready to experiment with additional features of [Microsoft 365 Enter
   
 ## Next steps
 
-Use these additional articles to explore identity features of Microsoft 365 Enterprise with this test environment:
+Explore identity features and capabilities of Microsoft 365 Enterprise with these articles:
   
 - [Multi-factor authentication](multi-factor-authentication-microsoft-365-test-environment.md)
+- [Protect global administrator accounts](protect-global-administrator-accounts-microsoft-365-test-environment.md)
+- [Automatic licensing and group membership](automate-licenses-group-membership-microsoft-365-test-environment.md)
+- [Azure AD Identity Protection](azure-ad-identity-protection-microsoft-365-test-environment.md)
 
-Use these additional articles to explore mobile device management features of Microsoft 365 Enterprise with this test environment:
-  
-- [Add mobile application management (MAM) policies](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
-    
-- [Enroll iOS and Android devices](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
+Explore mobile device management features and capabilities of Microsoft 365 Enterprise with these articles:
+
+- [MAM policies for your Microsoft 365 Enterprise test environment](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
+- [Enroll iOS and Android devices in your Microsoft 365 Enterprise test environment](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
+   
 
 ## See also
 
