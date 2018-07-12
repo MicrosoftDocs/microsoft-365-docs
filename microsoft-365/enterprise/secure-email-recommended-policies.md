@@ -15,10 +15,10 @@ ms.custom: it-pro
 This article describes how to implement the recommended identity and device access policies to protect organizational email and email clients that support Modern Authentication and Conditional Access. This guidance builds on the [Common identity and device access policies](identity-access-policies.md). 
 
 
-These recommendations are based on three different tiers of security and protection for SharePoint files that can be applied based on the granularity of your needs: **baseline**, **sensitive**, and **highly regulated**. You can learn more about these security tiers, and the recommended client operating systems, referenced by these recommendations in the [recommended security policies and configurations introduction](microsoft-365-policies-configurations.md).
+These recommendations are based on three different tiers of security and protection that can be applied based on the granularity of your needs: **baseline**, **sensitive**, and **highly regulated**. You can learn more about these security tiers, and the recommended client operating systems, referenced by these recommendations in the [recommended security policies and configurations introduction](microsoft-365-policies-configurations.md).
 
 
-The following diagram illustrates the common idetnity and device access policies and indicates which policies need to be updated to secure email.
+The following diagram illustrates the common identity and device access policies and indicates which policies need to be updated to protect email.
 
 ![Summary of policy updates for protecting email](../images/identity-access-ruleset-mail.png)
 
