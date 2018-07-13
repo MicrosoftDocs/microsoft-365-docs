@@ -103,7 +103,7 @@ Apply the settings based on the proteciton level you are targeting.
 ||Require MFA|True|Check|
 ||Require device to be marked as compliant|False||
 ||Require Hybrid Azure AD joined device|False||
-||Require approved client app|True|Check|
+||Require approved client app|False||
 ||Require all the selected controls|True|Selected|
 
 > [!NOTE]
@@ -309,10 +309,10 @@ For all the above policies to be considered deployed, they must be targeted at u
 
 
 
-## Require compliant PCs 
+## Require compliant PCs (but not compliant phones and tablets)
 Before adding a policy to require compliant PCs, be sure to enroll devices for management into Intune. Using multi-factor authentication is recommended before enrolling devices into Intune for assurance that the device is in the possession of the intended user. 
 
-To require compliant PCs or approved apps:
+To require compliant PCs:
 
 1. Go to the [Azure portal](https://portal.azure.com), and sign in with your credentials. After you've successfully signed in, you see the Azure Dashboard.
 
@@ -328,20 +328,22 @@ To require compliant PCs or approved apps:
 
 7. Choose **Select apps**, select the desired apps from the **Cloud apps** list. For example, select Office 365 Exchange Online. Click **Select** and **Done**.
 
-8. Choose **Grant** from the **Access controls** section.
+8. To require compliant PCs, but not compliant phones and tablets, choose **Conditions** and **Device platforms**. Choose "Select device platforms" and select **Windows** and **macOS**.
 
-9. Choose **Grant access**, select **Require device to be marked as compliant**.  For multiple controls, select **Require all the selected controls**, then choose **Select**. 
+9. Choose **Grant** from the **Access controls** section.
 
-10. Click **Create**.
+10. Choose **Grant access**, select **Require device to be marked as compliant**.  For multiple controls, select **Require all the selected controls**, then choose **Select**. 
 
-When creating this policy, do not select platforms. This enforces compliant devices. 
+11. Click **Create**.
+
+If your objective is to require compliant PCs *and* mobile devices, do not select platforms. This enforces compliant for all devices. 
 
 
 
 
 ## Require compliant PCs *and* mobile devices
 
-To require compliant PCs or approved apps:
+To require compliance for all devices:
 
 1. Go to the [Azure portal](https://portal.azure.com), and sign in with your credentials. After you've successfully signed in, you see the Azure Dashboard.
 
