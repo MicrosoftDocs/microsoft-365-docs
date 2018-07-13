@@ -85,13 +85,21 @@ The following clients are recommended when a Secure Documents policy has been ap
 
 
 ## Protecting administrator accounts
-We recommend creating security groups that contain all the users who have administrative accounts or are eligible to receive an administrative account privileges on a temporary basis. These security groups should then be used to define conditional access policies specific to Azure AD and Office 365 administrators.  
+Azure Active Directory provides a simple way for you to begin protecting administrator access with a pre-configured conditional access policy. Within Azure AD, go to the Conditional access blade and look for this policy — **Baseline policy: Require MFA for admins**. Click on this policy and select **Use policy immediately**. 
 
-The provided policy recommendations consider the privileges associated with an account. [Office 365 administrator](https://support.office.com/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d) roles have substantially more privileges to Office 365 services. Thus, our policy recommendations for these accounts are more stringent than for regular user accounts. All the policies that refer to Administrators indicate the recommended policy for Office 365 administrative accounts.
+This policy requires MFA for the following roles:
+- Global administrators
+- SharePoint administrators
+- Exchange administrators
+- Conditional access administrators
+- Security administrators
 
-Use Azure AD Privileged Identity Management to reduce the number of persistent administrative accounts. In addition, we recommend that Office 365 administrators have a separate user account for regular non-administrative use and only use their administrative account when necessary to complete a task associated with their job function.
+For more information, see [Baseline security policy for Azure AD admin accounts](https://cloudblogs.microsoft.com/enterprisemobility/2018/06/22/baseline-security-policy-for-azure-ad-admin-accounts-in-public-preview/).
 
-For more information on securing privileged accounts in Azure AD, refer to this [article](https://docs.microsoft.com/en-us/azure/active-directory/admin-roles-best-practices) for best practices and a roadmap.
+Additional recommendations include the following:
+- Use Azure AD Privileged Identity Management to reduce the number of persistent administrative accounts.
+- Use Office 365 administrator accounts only for administration. Admins should have a separate user account for regular non-administrative use and only use their administrative account when necessary to complete a task associated with their job function. [Office 365 administrator](https://support.office.com/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d) roles have substantially more privileges to Office 365 services.
+- Follow best practices for securing privileged accounts in Azure AD as described in this [article](https://docs.microsoft.com/en-us/azure/active-directory/admin-roles-best-practices).
 
 ## Next steps
 
