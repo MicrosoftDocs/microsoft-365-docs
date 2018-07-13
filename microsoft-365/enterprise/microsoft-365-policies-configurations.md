@@ -59,13 +59,13 @@ It’s important to use consistent levels of protection across your data, identi
 
 
 ##Security and productivity trade-offs
-Implementing any security strategy requires trade-offs between security and productivity. To help understand these trade-offs, the Security-Functionality-Usability (SFU) security triad is widely used:
+Implementing any security strategy requires trade-offs between security and productivity. It's helpful to evaluate how each decision affects the balance of security, functionality, and ease of use. 
 
 ![Security triad balancing security, functionality, and ease of use.](media/policies-configurations/security-triad.png)
 
-The recommendations provided are based on the following SFU security triad principles:
-- Know the audience - Be flexible by job function/security bar
-- Apply security policy just in time and ensure it is meaningful
+The recommendations provided are based on the following principles:
+- Know the audience - Be flexible by job function/security bar.
+- Apply security policy just in time and ensure it is meaningful.
 
 
 ##Services and concepts for identity and device access protection
