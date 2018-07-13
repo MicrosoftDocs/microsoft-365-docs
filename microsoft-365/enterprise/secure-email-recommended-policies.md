@@ -18,11 +18,11 @@ This article describes how to implement the recommended identity and device acce
 These recommendations are based on three different tiers of security and protection that can be applied based on the granularity of your needs: **baseline**, **sensitive**, and **highly regulated**. You can learn more about these security tiers, and the recommended client operating systems, referenced by these recommendations in the [recommended security policies and configurations introduction](microsoft-365-policies-configurations.md).
 
 ##Updating common policies to include email
-The following diagram illustrates the common identity and device access policies and indicates which policies need to be updated to protect email.
+The following diagram illustrates the common identity and device access policies and indicates which policies need to be updated to protect email. Note the addition of a new rule for Exchange Online to block ActiveSync clients. This forces the use of Outlook mobile.
 
 ![Summary of policy updates for protecting email](../images/identity-access-ruleset-mail.png)
 
-If you included Exchange Online and Outlook in the scope of the policies when you set them up, this work might already be complete. Reveiw the policies listed in the following table and either make the recommended additions, or confirm that these are already incluced. Each rule links to the associated configuration instructions in the [Common identity and device access policies](identity-access-policies.md) article. 
+If you included Exchange Online and Outlook in the scope of the policies when you set them up, you only need to create the new policy to block ActiveSync clients. Reveiw the policies listed in the following table and either make the recommended additions, or confirm that these are already incluced. Each rule links to the associated configuration instructions in the [Common identity and device access policies](identity-access-policies.md) article. 
 
 |Protection level|Policies|More information|
 |:---------------|:-------|:----------------|
@@ -30,12 +30,37 @@ If you included Exchange Online and Outlook in the scope of the policies when yo
 |        |[Block clients that don't support modern authentication](#block-clients-that-dont-support-modern-authentication)|Include Exchange Online in the assignments of cloud apps.|
 |        |[Define app protection policies](#define-app-protection-policies)|Be sure Outlook is included in the list of apps. Be sure to update the policy for each platform (iOS, Android, Windows).|
 |        |[Require compliant PCs *or* approved apps](#require-compliant-pcs-or-approved-apps)|Include Exchange Online in list of cloud apps.|
+|        |[Block ActiveSync clients](#block-activesync)|Add this new policy 
 |**Sensitive**|[Require MFA when sign-in risk is *low*, *medium* or *high*](#require-mfa-when-sign-in-risk-is-low-medium-or-high)| Include Exchange Online in the assignments of cloud apps.|
 |         |[Require compliant PCs *and* mobile devices](#require-compliant-pcs-and-mobile-devices)|Include Exchange Online in the list of cloud apps.|
 |**Highly regulated**|[*Always* requrie MFA](#always-require-mfa)|Include Exchange Online in the assignments of cloud apps |
 
+## Block ActiveSync clients
+This policy prevents ActiveSync clients from bypassing other conditional access rules. The rule configuration applies only to ActiveSync clients. By selecting **Require approved client app**, this policy blocks ActiveSync clients. To configure this policy:
 
-##Setup Office 365 message encryption
+1. Go to the [Azure portal](https://portal.azure.com), and sign in with your credentials. After you've successfully signed in, you see the Azure Dashboard.
+
+2. Choose **Azure Active Directory** from the left menu.
+
+3. Under the **Security** section, choose **Conditional access**.
+
+4. Choose **New policy**.
+
+5. Enter a policy name, then choose the **Users and groups** you want to apply the policy for.
+
+6. Choose **Cloud apps**.
+
+7. Choose **Select apps**, select Office 365 Exchange Online. Click **Select** and **Done**.
+8. Choose **Conditions**, and then choose **Client apps**.
+9. For **Configure**, select **Yes**. Check only the following: **Mobile apps and desktop clients** and **Exchange ActiveSync clints**. Click **Done**.
+
+10. Choose **Grant** from the **Access controls** section.
+
+11. Choose **Grant access**, select **Require approved client app**.  For multiple controls, select **Require the selected controls**, then choose **Select**. 
+
+12. Click **Create**.
+
+## Setup Office 365 message encryption
 With the new Office 365 Message Encryption (OME) capabilities, which leverage the protection features in Azure Information Protection, your organization can easily share protected email with anyone on any device. Users can send and receive protected messages with other Office 365 organizations as well as non-Office 365 customers using Outlook.com, Gmail, and other email services.
 
 For more information, see [Set up new Office 365 Message Encryption capabilities](https://support.office.com/en-us/article/set-up-new-office-365-message-encryption-capabilities-7ff0c040-b25c-4378-9904-b1b50210d00e). 

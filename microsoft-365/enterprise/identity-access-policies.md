@@ -246,7 +246,7 @@ To require approved apps:
 
 9. Choose **Grant access**, select **Require approved client app**.  For multiple controls, select **Require the selected controls**, then choose **Select**. 
 
-10. Click **Create** to create the Exchange Online conditional access policy.
+10. Click **Create**.
 
 ## Define compliance policies
 
@@ -332,15 +332,11 @@ To require compliant PCs or approved apps:
 
 9. Choose **Grant access**, select **Require device to be marked as compliant**.  For multiple controls, select **Require all the selected controls**, then choose **Select**. 
 
-10. Click **Create** to create the Exchange Online conditional access policy.
+10. Click **Create**.
 
 When creating this policy, do not select platforms. This enforces compliant devices. 
 
 
-
-
-## Require MFA when sign-in risk is *low*, *medium* or *high*
-Follow the steps earlier in this article for [requiring MFA](#require-mfa-when-sign-in-risk-is-medium-or-high) and set the sign-in risk to high, medium, *and* low.
 
 
 ## Require compliant PCs *and* mobile devices
@@ -365,13 +361,10 @@ To require compliant PCs or approved apps:
 
 9. Choose **Grant access**, select **Require device to be marked as compliant**. For multiple controls, select **Require all the selected controls**, then choose **Select**. 
 
-10. Click **Create** to create the Exchange Online conditional access policy.
+10. Click **Create**.
 
 When creating this policy, do not select platforms. This enforces compliant devices.
 
-## *Always* require MFA
-
-Follow the steps earlier in this article for [requiring MFA](#require-mfa-when-sign-in-risk-is-medium-or-high) and set the sign-in risk to high, medium, low, *and* no risk. [RIGHT???]
 
 
 
