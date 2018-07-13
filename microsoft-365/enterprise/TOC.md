@@ -46,7 +46,7 @@
 ## [Deploy workloads and scenarios](deploy-workloads.md)
 ### [Deploy Microsoft Teams for Microsoft 365 Enterprise](teams-workload.md)
 ### [Deploy Exchange Online for Microsoft 365 Enterprise](exchangeonline-workload.md)
-<!--- <<<<<<< HEAD --->
+
 
 
 ### [Migration to Microsoft 365 Enterprise](migration-microsoft-365-enterprise-workload.md)
@@ -55,10 +55,13 @@
 #### [Lightweight](lightweight-base-configuration-microsoft-365-enterprise.md)
 ### [Identity]()
 #### [Multi-factor authentication](multi-factor-authentication-microsoft-365-test-environment.md)
+#### [Protect global administrator accounts](protect-global-administrator-accounts-microsoft-365-test-environment.md)
+#### [Automatic licensing and group membership](automate-licenses-group-membership-microsoft-365-test-environment.md)
+#### [Azure AD Identity Protection](azure-ad-identity-protection-microsoft-365-test-environment.md)
 ### [Mobile device management]()
 #### [Enroll iOS and Android devices](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
 #### [MAM policies](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
-<!--- >>>>>>>>> master --->
+
 # [Services and concepts](services-overview.md)
 
 # [Identity and device access configurations](microsoft-365-policies-configurations.md)

@@ -43,6 +43,11 @@ The results of this step are:
 - You've identified which security groups are appropriate for group-based licensing.
 - You've configured these groups for group-based licensing.
 
+|||
+|:-------|:-----|
+|![Test Lab Guides for the Microsoft cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Test Lab Guide: Automate licenses and group membership](automate-licenses-group-membership-microsoft-365-test-environment.md) |
+|||
+
 As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria.md#crit-identity-step11) for this step.
 
 ## Next step

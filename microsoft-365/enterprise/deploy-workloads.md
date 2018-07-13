@@ -2,7 +2,7 @@
 title: "Microsoft 365 Enterprise workloads and scenarios"
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/19/2018
+ms.date: 07/11/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -20,10 +20,8 @@ To realize the creativity and teamwork benefits of Microsoft 365 Enterprise, dep
 
 - [Microsoft Teams](teams-workload.md)
 - [Exchange Online](exchangeonline-workload.md)
-- SharePoint Online (coming soon)
+- [SharePoint Online and OneDrive for Business](sharepoint-online-onedrive-workload.md)
 - [Migration to Microsoft 365 Enterprise](migration-microsoft-365-enterprise-workload.md)
-- Client updates (coming soon)
-
 
 The following figure shows the workloads in the overall Microsoft 365 Enterprise deployment content.
 
