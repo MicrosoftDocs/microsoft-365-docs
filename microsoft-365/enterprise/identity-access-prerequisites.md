@@ -74,7 +74,7 @@ The following clients are recommended when a Secure Documents policy has been ap
 |Windows 7|Supported|Supported|N/A|N/A|Preview<sup>*</sup>|
 |Windows 8.1|Supported|Supported|N/A|N/A|Preview<sup>*</sup>|
 |Windows 10|Supported|Supported|N/A|N/A|Preview<sup>*</sup>|
-|Windows Phone 10|Not supported|Not supported|Supported|Supported|N/A|
+|Windows Phone 10|Not supported|Not supported|Not Supported|Not Supported|Not Supported|
 |Android|Supported|Supported|Supported|Supported|N/A|
 |iOS|Supported|Supported|Supported|Supported|N/A|
 |macOS|Public Preview|Public Preview|N/A|N/A|Not supported|
