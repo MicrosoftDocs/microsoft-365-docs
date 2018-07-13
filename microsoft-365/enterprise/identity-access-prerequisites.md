@@ -95,4 +95,5 @@ For more information on securing privileged accounts in Azure AD, refer to this 
 
 ## Next steps
 
-[Learn about policy recommendations for securing email](secure-email-recommended-policies.md)
+[Configure the common identity and device access policies](identity-access-policies.md)
+
