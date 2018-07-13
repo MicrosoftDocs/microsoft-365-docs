@@ -74,9 +74,9 @@ Azure AD provides a full suite of identity management capabilities. Our recommen
 
 
 
-###Mobile app protection
+###Intune app protection
 
-[Mobile app protection](https://docs.microsoft.com/en-us/intune/app-protection-policy) policies can be used to protect your company’s data in mobile apps with or without enrolling devices into management. In fact, your users' mobile devices can even be managed by another non-Microsoft MDM solution while Intune helps protect Office 365 information. While making sure your employees can still be productive, you can also prevent data loss—intentional and unintentional. By implementing app-level policies, you can restrict access to company resources and keep data within the control of your IT department.
+[Intune app protection](https://docs.microsoft.com/en-us/intune/app-protection-policy) policies can be used to protect your company’s data in mobile apps with or without enrolling devices into management. In fact, your users' mobile devices can even be managed by another non-Microsoft MDM solution while Intune helps protect Office 365 information. While making sure your employees can still be productive, you can also prevent data loss—intentional and unintentional. By implementing app-level policies, you can restrict access to company resources and keep data within the control of your IT department.
 
 This guidance shows you how to create recommended policies to enforce the use of approved apps and to determine how these apps can be used with your business data.
 
