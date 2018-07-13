@@ -287,23 +287,23 @@ For all the above policies to be considered deployed, they must be targeted at u
 ||Simple passwords|Block||
 ||Password type|Device default||
 ||Minimum password length|6||
-||Maximum minutes of inactivity before password is required|???||
-||Password expiration (days)|???||
-||Number of previous passwords to prevent reuse|???||
-||Require password when device returns from idle state (Mobile and Halographic)|???||
+||Maximum minutes of inactivity before password is required|15|This setting is supported for Android versions 4.0 and above or KNOX 4.0 and above. For iOS devices, it’s supported for iOS 8.0 and above.|
+||Password expiration (days)|41||
+||Number of previous passwords to prevent reuse|5||
+||Require password when device returns from idle state (Mobile and Halographic)|Require|Available for Windows 10 and later.|
 |Encryption|Encryption of data storage on device|Require||
 |Device Security|Firewall|Require||
 ||Antivirus|Require||
-||AntiSpyware|Require|???|
+||AntiSpyware|Require|This setting reuquires an Anti-Spyware solution registered with Windows Security Center.|
 |Defender|Widnows Defender Antimalware|Require||
-||Windows Defender Antimalware minimum version|???|
+||Windows Defender Antimalware minimum version||Only supported for Windows 10 desktop. Microsoft recommends versions no more than five behind from the most recent version.|
 ||Windows Defender Antimalware signature up-to-date|Require||
-||Real-time protection|Require|???|
+||Real-time protection|Require|Only supported for Windows 10 desktop.|
 
 **Windows Defender ATP**
 |Type|Properties|Values|Notes|
 |:---|:---------|:-----|:----|
-|Windows Defender Advanced Threat Protection rules|Require the device to be at or under teh machine risk score|???||
+|Windows Defender Advanced Threat Protection rules|Require the device to be at or under the machine risk score|Medium||
 
 
 

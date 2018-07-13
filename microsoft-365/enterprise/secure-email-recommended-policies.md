@@ -30,7 +30,7 @@ If you included Exchange Online and Outlook in the scope of the policies when yo
 |        |[Block clients that don't support modern authentication](#block-clients-that-dont-support-modern-authentication)|Include Exchange Online in the assignments of cloud apps.|
 |        |[Define app protection policies](#define-app-protection-policies)|Be sure Outlook is included in the list of apps. Be sure to update the policy for each platform (iOS, Android, Windows).|
 |        |[Require compliant PCs *or* approved apps](#require-compliant-pcs-or-approved-apps)|Include Exchange Online in list of cloud apps.|
-|        |[Block ActiveSync clients](#block-activesync)|Add this new policy 
+|        |[Block ActiveSync clients](#block-activesync)|Add this new policy. 
 |**Sensitive**|[Require MFA when sign-in risk is *low*, *medium* or *high*](#require-mfa-when-sign-in-risk-is-low-medium-or-high)| Include Exchange Online in the assignments of cloud apps.|
 |         |[Require compliant PCs *and* mobile devices](#require-compliant-pcs-and-mobile-devices)|Include Exchange Online in the list of cloud apps.|
 |**Highly regulated**|[*Always* requrie MFA](#always-require-mfa)|Include Exchange Online in the assignments of cloud apps |
@@ -52,7 +52,7 @@ This policy prevents ActiveSync clients from bypassing other conditional access 
 
 7. Choose **Select apps**, select Office 365 Exchange Online. Click **Select** and **Done**.
 8. Choose **Conditions**, and then choose **Client apps**.
-9. For **Configure**, select **Yes**. Check only the following: **Mobile apps and desktop clients** and **Exchange ActiveSync clints**. Click **Done**.
+9. For **Configure**, select **Yes**. Check only the following: **Mobile apps and desktop clients** and **Exchange ActiveSync clients**. Click **Done**.
 
 10. Choose **Grant** from the **Access controls** section.
 
