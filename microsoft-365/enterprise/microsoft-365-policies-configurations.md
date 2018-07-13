@@ -57,6 +57,17 @@ It’s important to use consistent levels of protection across your data, identi
 ![Thumnail for poster "File protection solutions in Office 365"](../images/24be68b5-d852-4fdb-94ad-94491a19edd8.png)<br/>
 [PDF](http://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.pdf) | [Visio](http://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.vsdx)
 
+
+##Security and productivity trade-offs
+Implementing any security strategy requires trade-offs between security and productivity. To help understand these trade-offs, the Security-Functionality-Usability (SFU) security triad is widely used:
+
+![Security triad balancing security, functionality, and ease of use.](media/policies-configurations/security-triad.png)
+
+The recommendations provided are based on the following SFU security triad principles:
+- Know the audience - Be flexible by job function/security bar
+- Apply security policy just in time and ensure it is meaningful
+
+
 ##Services and concepts for identity and device access protection
 
 Microsoft 365 Enterprise is designed for large organizations and integrates Office 365 Enterprise, Windows 10 Enterprise, and Enterprise Mobility + Security (EMS) to empower everyone to be creative and work together, securely. 
