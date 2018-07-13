@@ -26,7 +26,7 @@ If you included SharePoint Online when you created the common policies, you only
 
 The new policies implement device protection for sensitive and highly regulated content by applying specific access requirements to SharePoint sites that you specify. 
 
- Reveiw the policies listed in the following table and either make the recommended additions, or confirm that these are already incluced. Each rule links to the associated configuration instructions in the [Common identity and device access policies](identity-access-policies.md) article.
+ The following table lists the policies you either need to review and update or create new for SharePoint Online. The common policies link to the associated configuration instructions in the [Common identity and device access policies](identity-access-policies.md) article.
 
 
 |Protection level|Policies|More information|
@@ -35,12 +35,12 @@ The new policies implement device protection for sensitive and highly regulated 
 |        |[Block clients that don't support modern authentication](#block-clients-that-dont-support-modern-authentication)|Include SharePoint Online in the assignments of cloud apps.|
 |        |[Define app protection policies](#define-app-protection-policies)|Be sure all recommended apps are included in the list of apps. Be sure to update the policy for each platform (iOS, Android, Windows).|
 |        |[Require compliant PCs *or* approved apps](#require-compliant-pcs-or-approved-apps)|Include SharePoint Online in list of cloud apps.|
-|        |Use app enforced restrictions in SharePoint Online|Add this new policy. This tells Azure AD to use the settings specified in SharePoint Online. This rule applies to all users but only affects access to sites included in SharePoint Online access policies.
+|        |[Use app enforced restrictions in SharePoint Online](#use-app-enforced-restrictions-in-sharepoint-online)|Add this new policy. This tells Azure AD to use the settings specified in SharePoint Online. This rule applies to all users but only affects access to sites included in SharePoint Online access policies.
 |**Sensitive**|[Require MFA when sign-in risk is *low*, *medium* or *high*](#require-mfa-when-sign-in-risk-is-low-medium-or-high)| Include SharePoint Online in the assignments of cloud apps.|
 |         |[Require compliant PCs *and* mobile devices](#require-compliant-pcs-and-mobile-devices)|Include SharePoint Online in the list of cloud apps.|
-||SharePoint Online access control policy: Allow browser-only access to specific SharePoint sites from unmanaged devices|This prevents edit and download of files. User PowerShell to specify sites.|
+||[SharePoint Online access control policy](#sharepoint-online-access-control-policies): Allow browser-only access to specific SharePoint sites from unmanaged devices|This prevents edit and download of files. User PowerShell to specify sites.|
 |**Highly regulated**|[*Always* requrie MFA](#always-require-mfa)|Include SharePoint Online in the assignments of cloud apps. |
-||SharePoint Online access control policy: Block access to specific SharePoint sites from unmanaged devices|Use PowerShell to specify sites.|
+||[SharePoint Online access control policy](#use-app-enforced-restrictions-in-sharepoint-online): Block access to specific SharePoint sites from unmanaged devices|Use PowerShell to specify sites.|
 
 ## Use app enforced restrictions in SharePoint Online
 If you implement access controls in SharePoint Online, you must create this conditional access policy in Azure AD to tell Azure AD to enforce the policies you configure in SharePoint Online. This rule applies to all users, but only affects access to the sites you specify using PowerShell when you create the access controls in SharePoint Online.
