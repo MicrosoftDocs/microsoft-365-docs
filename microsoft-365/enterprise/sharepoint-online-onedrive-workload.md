@@ -171,7 +171,7 @@ Here are some suggested activities:
 
 #### Result
 
-Your organization has adopted SharePoint Online and OneDrive for Business as a service to support documentation storage and collaboration.
+Your organization has adopted SharePoint Online as a service to support documentation storage and collaboration.
 
 ## How Microsoft does Microsoft 365 Enterprise
 

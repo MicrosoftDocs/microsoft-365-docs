@@ -42,7 +42,7 @@
 #### [Step 3: Configure classification for your environment](infoprotect-configure-classification.md)
 #### [Step 4: Configure increased security for Office 365](infoprotect-configure-increased-security-office-365.md)
 #### [Information protection infrastructure exit criteria](infoprotect-exit-criteria.md)
-### [Deployment of Microsoft 365 Enterprise with existing infrastructure](deploy-with-existing-infrastructure.md)
+### [Deploy with existing infrastructure](deploy-with-existing-infrastructure.md)
 ## [Deploy workloads and scenarios](deploy-workloads.md)
 ### [Microsoft Teams](teams-workload.md)
 ### [Exchange Online](exchangeonline-workload.md)
@@ -58,9 +58,12 @@
 #### [Azure AD Identity Protection](azure-ad-identity-protection-microsoft-365-test-environment.md)
 ### [Mobile device management]()
 #### [Enroll iOS and Android devices](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
-#### [Mobile application management policies](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
+#### [MAM policies](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
+
 # [Services and concepts](services-overview.md)
+
 # [Identity and device access configurations](microsoft-365-policies-configurations.md)
+##[Prerequisite work](identity-access-prerequisites.md)
 ## [Common identity and device access policies](identity-access-policies.md)
 ## [Recommended Exchange Online access policies](secure-email-recommended-policies.md)
 ## [Recommended SharePoint Online access policies](sharepoint-file-access-policies.md)
