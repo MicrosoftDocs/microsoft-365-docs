@@ -36,7 +36,7 @@ Intune in Enterprise Security + Management (EMS) enables these strategic busines
 - Detect and protect against external threats --Monitor, report and analyze activity to react promptly to provide organizational security
 - Protect your users and their accounts
 
-For more information, see the [Discovery Value tool](https://online.valuediscoveryworkshop.com/). 
+For more information, see the [Discover Value tool](https://online.valuediscoveryworkshop.com/). 
 
 |||
 |:-------|:-----|
