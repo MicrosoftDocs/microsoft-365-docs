@@ -2,7 +2,7 @@
 title: "Deploy SharePoint Online and OneDrive for Business for Microsoft 365 Enterprise"
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/12/2018
+ms.date: 07/26/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -46,7 +46,7 @@ A list of people that represent the business, technical, and end user aspects of
 
 ### Step 2: Determine and prioritize your SharePoint Online business scenarios
 
-SharePoint Online can be used for different purposes. You need to figure out which purposes map to your business needs. You should target SharePoint Online and Microsoft Teams to address the document storage and sharing, content management, and collaboration needs of your teams, your division, or your entire organization. 
+SharePoint Online can be used for different purposes. You need to figure out which purposes map to your business needs. You should target SharePoint Online and OneDrive for Business to address the document storage and sharing, content management, and collaboration needs of your teams, your division, or your entire organization. 
 
 See the list of scenarios and capabilities at [SharePoint Online](https://products.office.com/sharepoint/sharepoint-online-collaboration-software).
 
@@ -61,6 +61,8 @@ The following business pillars can address your organization’s needs:
 | Protect | Ensures your organization is secured and has the correct compliance. |
 | External/Develop | Lets your organization develop customize solutions and apps by using the SharePoint Framework. |
 |||
+
+See [SharePoint Online admin](https://docs.microsoft.com/sharepoint/sharepoint-online) for resources on how to configure SharePoint Online for your needs.
 
 One way to see the benefits of SharePoint Online is to examine how individuals, a team, a division, or your entire organization interact today, and then find an appropriate scenario that provides easier ways to store and share files collaborate. Keep in mind that [Microsoft Teams](teams-workload.md) might be a better choice for some of your scenarios.
 
@@ -79,7 +81,7 @@ SharePoint Online and OneDrive for Business enable these strategic business scen
 - Protect your information and reduce the risk of data loss
 - Support your organization with enhanced privacy and compliance to meet the General Data Protection Regulation (GDPR)
 
-For more information, see the [Discovery Value tool](https://online.valuediscoveryworkshop.com/). 
+For more information, see the [Discover Value tool](https://online.valuediscoveryworkshop.com/). 
 
 #### Result
 A list of SharePoint Online and OneDrive for Business scenarios that address your organization’s needs for document storage and sharing, content management, and collaboration.
