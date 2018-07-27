@@ -29,7 +29,7 @@ The DPO is involved, properly and in a timely manner, in all issues which relate
 The European Union DPO reports directly to Microsoft’s Chief Privacy Officer, a senior executive within Microsoft’s Corporate and Legal Affairs division.  The DPO role has autonomy to perform the functions in an independent, unbiased manner. Through the Chief Privacy Officer’s organization, the DPO has access to training and customer response resources as necessary to perform the DPO functions. The DPO is bound by confidentiality concerning their tasks through the use of a non-disclosure agreement.  
 
 ## Contact
-Data subjects may contact the data protection officer by filling out the webform at [https://aka.ms/privacyresponse](https://aka.ms/privacyresponse). The DPO can also be reached by post or email at:
+Data subjects may contact the data protection officer by filling out the webform at [https://aka.ms/privacyresponse](https://aka.ms/privacyresponse). The DPO can also be reached by post at:
 
 Microsoft EU Data Protection Officer<br>
 One Microsoft Place<br>
