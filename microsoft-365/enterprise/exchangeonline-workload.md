@@ -59,7 +59,7 @@ Exchange Online enables these strategic business scenarios for Microsoft 365 Ent
 - Detect and protect against external threats --Monitor, report and analyze activity to react promptly to provide organizational security
 - Support your organization with enhanced privacy and compliance to meet the General Data Protection Regulation (GDPR)
 
-For more information, see the [Discovery Value tool](https://online.valuediscoveryworkshop.com/). 
+For more information, see the [Discover Value tool](https://online.valuediscoveryworkshop.com/). 
 
 #### Result
 A list of Exchange Online scenarios that address your organization’s needs for communication, scheduling, and short-lived collaboration.
