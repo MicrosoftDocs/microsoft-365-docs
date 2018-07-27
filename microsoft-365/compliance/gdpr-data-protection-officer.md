@@ -31,15 +31,12 @@ The European Union DPO reports directly to Microsoft’s Chief Privacy Officer, 
 ## Contact
 Data subjects may contact the data protection officer by filling out the webform at [https://aka.ms/privacyresponse](https://aka.ms/privacyresponse). The DPO can also be reached by post or email at:
 
-EU Data Protection Officer
-Microsoft 
+Microsoft EU Data Protection Officer
 One Microsoft Place
 South County Business Park
 Leopardstown
 Dublin 18
 Ireland
-
-Email: DPOffice@Microsoft.com
 
 The contact details for the Data Protection Officer has been communicated to Microsoft’s Supervisory Authority.   
 
