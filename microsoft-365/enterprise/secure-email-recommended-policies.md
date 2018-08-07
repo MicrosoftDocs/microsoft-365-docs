@@ -36,7 +36,7 @@ If you included Exchange Online and Outlook in the scope of the policies when yo
 |        |[Block ActiveSync clients](#block-activesync)|Add this new policy. 
 |**Sensitive**|Require MFA when sign-in risk is *low*, *medium* or *high*| Include Exchange Online in the assignments of cloud apps.|
 |         |Require compliant PCs *and* mobile devices|Include Exchange Online in the list of cloud apps.|
-|**Highly regulated**|*Always* requrie MFA|Include Exchange Online in the assignments of cloud apps |
+|**Highly regulated**|*Always* require MFA|Include Exchange Online in the assignments of cloud apps |
 
 ## Block ActiveSync clients
 This policy prevents ActiveSync clients from bypassing other conditional access rules. The rule configuration applies only to ActiveSync clients. By selecting **Require approved client app**, this policy blocks ActiveSync clients. To configure this policy:
