@@ -1,0 +1,147 @@
+---
+title: "Password hash synchronization for your Microsoft 365 test environment"
+ms.author: josephd
+author: JoeDavies-MSFT
+manager: laurawi
+ms.date: 08/09/2018
+ms.audience: ITPro
+ms.topic: article
+ms.service: o365-solutions
+localization_priority: Priority
+ms.collection: 
+- Ent_O365
+- Strat_O365_Enterprise
+ms.custom: 
+- TLG
+- Ent_TLGs
+ms.assetid: e6b27e25-74ae-4b54-9421-c8e911aef543
+description: "Summary: Configure and demonstrate password hash synchronization and sign-in for your Microsoft 365 test environment."
+---
+
+# Password hash synchronization for your Microsoft 365 test environment
+
+ **Summary:** Summary: Configure password hash synchronization for your Microsoft 365 test environment.
+  
+Many organizations use Azure AD Connect and password hash synchronization to synchronize the set of accounts in their on-premises Windows Server Active Directory (AD) forest to the set of accounts in the Azure AD tenant of your Office 365 and EMS E5 subscriptions. This article describes how you can add password hash synchronization to your Microsoft 365 test environment, resulting in the following configuration:
+  
+![The simulated enterprise with password hash synchronization test environment](media/password-hash-sync-m365-ent-test-environment/Phase3.png)
+  
+There are two phases to setting up this test environment:
+  
+1. Create the Microsoft 365 simulated enterprise test environment.
+2. Install and configure Azure AD Connect on APP1.
+    
+> [!TIP]
+> Click [here](http://aka.ms/catlgstack) for a visual map to all the articles in the One Microsoft Cloud Test Lab Guide stack.
+  
+## Phase 1: Create the Microsoft 365 simulated enterprise test environment
+
+Follow the instructions in the [simulated enterprise base configuration for Microsoft 365](simulated-ent-base-configuration-microsoft-365-enterprise.md). Here is the resulting configuration.
+  
+![The simulated enterprise base configuration](media/password-hash-sync-m365-ent-test-environment/Phase1.png)
+  
+Your configuration now consists of: 
+  
+- Office 365 E5 and EMS E5 trial or permanent subscriptions.
+- A simplified organization intranet connected to the Internet, consisting of the DC1, APP1, and CLIENT1 virtual machines in an Azure virtual network. DC1 is a domain controller for the testlab.\<your public domain name> Windows Server AD domain.
+
+## Phase 2: Create and register the testlab domain
+
+In this phase you add a public DNS domain and add it to your subscription.
+
+First, work with your public DNS registration provider to create a new public DNS domain name based on your current domain name and add it to your Office 365 subscription. We recommend using the name **testlab.**\<your public domain>. For example, if your public domain name is <span>**contoso</span>.com**, add the public domain name **<span>testlab</span>.contoso.com**.
+  
+Next, you add the **testlab.**\<your public domain> domain to your Office 365 trial or permanent subscription by going through the domain registration process. This consists of adding additional DNS records to the **testlab.**\<your public domain> domain. For more information, see [Add users and domain to Office 365](https://support.office.com/article/Add-users-and-domain-to-Office-365-6383f56d-3d09-4dcb-9b41-b5f5a5efd611). 
+
+Here is the resulting configuration.
+  
+![The registration of your testlab domain name](media/password-hash-sync-m365-ent-test-environment/Phase2.png)
+  
+Your configuration now consists of:
+
+- Office 365 E5 and EMS E5 trial or permanent subscriptions with the DNS domain testlab./<your public domain name> registered.
+- A simplified organization intranet connected to the Internet, consisting of the DC1, APP1, and CLIENT1 virtual machines on a subnet of an Azure virtual network.
+
+Notice how the testlab.\<your public domain name> is now:
+
+- Supported by public DNS records
+- Registered in your Office 365 and EMS subscriptions
+- The Windows Server AD domain on your simulated intranet
+     
+## Phase 3: Install Azure AD Connect on APP1
+
+In this phase, you install and configure the Azure AD Connect tool on APP1, and then verify that it works.
+  
+### Install and configure Azure AD Connect on APP1
+
+1. From the [Azure portal](https://portal.azure.com), sign in with your global administrator account, and then connect to APP1 with the TESTLAB\\User1 account.
+    
+2. From APP1, open an administrator-level Windows PowerShell command prompt, and then run these commands:
+    
+  ```
+  Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Active Setup\Installed Components\{A509B1A7-37EF-4b3f-8CFC-4F3A74704073}" -Name "IsInstalled" -Value 0
+  Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Active Setup\Installed Components\{A509B1A8-37EF-4b3f-8CFC-4F3A74704073}" -Name "IsInstalled" -Value 0
+  Stop-Process -Name Explorer -Force
+  ```
+
+3. From the task bar, click **Internet Explorer** and go to [https://aka.ms/aadconnect](https://aka.ms/aadconnect).
+    
+4. On the Microsoft Azure Active Directory Connect page, click **Download**, and then click **Run**.
+    
+5. On the **Welcome to Azure AD Connect** page, click **I agree**, and then click **Continue**.
+    
+6. On the **Express Settings** page, click **Use express settings**.
+    
+7. On the **Connect to Azure AD** page, type your Office 365 global administrator account name in **Username,** type its password in **Password**, and then click **Next**.
+    
+8. On the **Connect to AD DS** page, type **TESTLAB\\User1** in **Username,** type its password in **Password**, and then click **Next**.
+    
+9. On the **Ready to configure** page, click **Install**.
+    
+10. On the **Configuration complete** page, click **Exit**.
+    
+11. In Internet Explorer, go to the Office 365 portal ([https://portal.office.com](https://portal.office.com)).
+    
+12. From the main portal page, click **Admin**.
+    
+13. In the left navigation, click **Users > Active users**.
+    
+    Note the account named **User1**. This account is from the TESTLAB Windows Server AD domain and is proof that directory synchronization has worked.
+    
+14. Click the **User1** account. For product licenses, click **Edit**.
+    
+15. In **Product licenses**, select your country, and then click the **Off** control for **Office 365 Enterprise E5** (switching it to **On**). Do the same for the **Enterprise Mobility + Security E5** license. 
+16. 
+17. Click **Save** at the bottom of the page, and then click **Close**.
+    
+Next, test the ability to sign in to your Office 365 subscription with the user1@testlab./<your domain name> user name of the User1 account.
+
+1. From APP1, sign out of Office 365, and then sign in again, this time specifying a different account.
+
+2. When prompted for a user name and password, specify **user1@testlab.**/<your domain name> and the User1 password. You should successfully sign in as User1. 
+ 
+Notice that although User1 has domain administrator permissions for the TESTLAB Windows Server AD domain, it is not an Office 365 global administrator. Therefore, you will not see the Admin icon as an option. 
+
+Here is your resulting configuration.
+
+![The simulated enterprise with password hash synchronization test environment](media/password-hash-sync-m365-ent-test-environment/Phase3.png)
+
+ 
+This configuration consists of: 
+  
+- Office 365 E5 and EMS E5 trial or permanent subscriptions with the DNS domain TESTLAB.\<your domain name> registered.
+- A simplified organization intranet connected to the Internet, consisting of the DC1, APP1, and CLIENT1 virtual machines on a subnet of an Azure virtual network. Azure AD Connect runs on APP1 to synchronize the TESTLAB Windows Server AD domain to the Azure AD tenant of your Office 365 and EMS E5 subscriptions periodically.
+
+## Next step
+
+Explore additional [identity](m365-enterprise-test-lab-guides.md#identity) features and capabilities in your test environment.
+
+## See also
+
+[Microsoft 365 Enterprise Test Lab Guides](m365-enterprise-test-lab-guides.md)
+
+[Deploy Microsoft 365 Enterprise](deploy-microsoft-365-enterprise.md)
+
+[Microsoft 365 Enterprise documentation](https://docs.microsoft.com/microsoft-365-enterprise/)
+
+
