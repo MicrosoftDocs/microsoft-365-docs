@@ -36,7 +36,7 @@ There are two phases to setting up this test environment:
   
 ## Phase 1: Create the Microsoft 365 simulated enterprise test environment
 
-Follow the instructions in the [simulated enterprise base configuration for Microsoft 365](m365e-simulated-ent-test-environment.md). Here is the resulting configuration.
+Follow the instructions in the [simulated enterprise base configuration for Microsoft 365](simulated-ent-base-configuration-microsoft-365-enterprise.md). Here is the resulting configuration.
   
 ![The simulated enterprise base configuration](media/password-hash-sync-m365-ent-test-environment/Phase1.png)
   
