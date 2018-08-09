@@ -1,11 +1,11 @@
 ---
 title: Phase 5 - Mobile device management 
-description: Requirements and prerequisites for mobile device management with Microsoft 365 Enterprise. 
-keywords: Microsoft 365, Microsoft 365 Enterprise, Microsoft 365 documentation, mobile device management
-author: arob98 
-ms.author: angrobe 
-manager: angrobe 
-ms.date: 06/28/2018 
+description: Microsoft 365 Enterprise includes mobile device management using Microsoft Intune. Review the requirements and prerequisites, set up Intune using your Azure Active Directory resource, enroll iOS, macOS, Android, and Windows devices, deploy apps, create a configure profile, use a compliance policy, and enable conditional access for mobile device management with Microsoft 365 Enterprise.
+keywords: Microsoft 365, Microsoft 365 Enterprise, Microsoft 365 documentation, mobile device management, Intune
+author: MandiOhlinger 
+ms.author: mandia 
+manager: dougeby 
+ms.date: 08/8/2018 
 ms.topic: article 
 audience: microsoft-business
 ms.prod: microsoft-365-enterprise
@@ -15,44 +15,137 @@ ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ---
 
-# Phase 5: Mobile device management infrastructure for Microsoft 365 Enterprise
+# Phase 5: Mobile device management for Microsoft 365 Enterprise
 
 ![](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon.png)
 
-To secure data on your device, you'll use Microsoft Intune. Mobile device management with Intune requires that you complete the following:
+*This feature applies to the E3 and E5 versions of Microsoft 365 Enterprise*
 
-1. [Set up Intune](https://docs.microsoft.com/intune/setup-steps)
-2. [Enroll devices for management](https://docs.microsoft.com/intune/windows-enroll)
-3. [Protect access to email, Office 365, and other services](https://docs.microsoft.com/intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune)
-
-The entire library of Intune documentation is [available online](https://docs.microsoft.com/intune).
-
-Intune in Enterprise Security + Management (EMS) enables these strategic business scenarios for Microsoft 365 Enterprise:
+Microsoft 365 (M365) Enterprise includes features to help manage devices, and their apps, within your organization. Using Microsoft Intune, you can manage iOS, Android, macOS, and Windows 10 devices to protect access to your organization's resources, including your data. Intune integrates with Azure Active Directory (Azure AD), and enables the following business scenarios for M365:
 
 - Store and share files inside and outside your organization to work seamlessly across organizational boundaries
 - Work securely from anywhere, anytime across your device to achieve more while maintaining a flexible workstyle
 - Provide peace-of-mind with controls and visibility for industry-verified conformity with global standards in compliance
 - Protect your information and reduce the risk of data loss
-- Detect and protect against external threats --Monitor, report and analyze activity to react promptly to provide organizational security
+- Detect and protect against external threats
+- Monitor, report, and analyze activity to react promptly to provide organizational security
 - Protect your users and their accounts
 
 For more information, see the [Discover Value tool](https://online.valuediscoveryworkshop.com/). 
+
+In this phase, you enroll your devices in Intune, and create and enforce policies to help keep your data secure and protected. The entire library of Intune documentation is [available online](https://docs.microsoft.com/intune).
+
+## Step 1: Plan for your scenario
+
+One of the main reasons to manage mobile devices is to secure and protect your organization's resources. [Common ways to use Microsoft Intune](https://docs.microsoft.com/intune/common-scenarios) lists some practical and real-world examples, including securing Office 365 email and data.
+
+You'll also determine how you're going to manage personal or organization-owned devices. You may want to treat devices differently, depending on their use. For example, you may want different plans for users in Human Resources (HR) or users in Sales. [Identify mobile device management use-case scenarios](https://docs.microsoft.com/intune/planning-guide-scenarios) can get you started, and includes some guidance on these different scenarios.
+
+## Step 2: Get your prerequisites
+
+Next, get your prerequisites based on your requirements and your scenarios created in the previous step. [Implement your plan](https://docs.microsoft.com/intune/planning-guide-onboarding) lists all the requirements. Here are the significant items you need for Intune with M365:
+
+- **Intune subscription**: Included with M365, and gives you access to Microsoft Intune in the [Azure portal](https://portal.azure.com)
+- **Office 365 subscription**: Included with M365, and is used for Office apps, including email
+- **Azure Active Directory (AD) premium**: Included with M365, and is used to create user or security groups. These groups receive Intune policies that you create, such as forcing a password length to unlock a device. The groups you create in [Phase 2: Identity](https://docs.microsoft.com/microsoft-365/enterprise/identity-infrastructure) can be used.
+
+There may be some additional requirements, depending on your organization's needs. For example, if you'll be managing iOS devices, you'll need an Apple certificate. If you're using on-premises Exchange, then you'll need the on-premises connector. These additional requirements are outlined when you get to those steps.
+
+## Step 3: Set up Intune
+
+Intune uses many features in Azure AD, including your domain, your users, and your groups. You can also create new users and new groups. For example, you can create a group called **iOS devices**, or **All users**.
+
+This step focuses on setting up Intune, and getting it ready for you to manage your devices.
+
+1. **[Confirm your devices are supported](https://docs.microsoft.com/intune/supported-devices-browsers)**. Confirm your iOS, macOS, Android, Galaxy, and Windows devices are supported by Intune. If your organization includes devices that aren't supported, then the policies aren't applied to those devices.
+
+2. **[Sign in to Intune](https://docs.microsoft.com/intune/account-sign-up)**. When you sign in, you enter information about your organization.
+
+3. **[Enter your domain name](https://docs.microsoft.com/intune/custom-domain-name-configure)**. By default, a domain named something like **your-domain.onmicrosoft.com** is automatically created in Azure AD. **onmicrosoft.com** can be customized for your organization. When you customize, it also gives users a familiar domain when connecting to Intune and using resources.
+
+4. **[Add users](https://docs.microsoft.com/intune/users-add)**. You can manually add users, or connect to Azure AD to sync users with Intune. You can also give Admin roles to specific users. Users are required unless your devices are "userless" devices, such as kiosk devices.
+
+    In Intune, you can add users or groups that you create in [Phase 2: Identity](https://docs.microsoft.com/microsoft-365/enterprise/identity-infrastructure)
+
+5. **[Add groups](https://docs.microsoft.com/intune/groups-add)**. Azure AD groups are used to simplify how you manage devices and users in Intune. Using groups, you can do many different tasks. For example, your organization wants to require a specific app on Android devices. You can create an Android devices group, and deploy a policy with this app to the group.
+
+    In Intune, you can add users or groups that you create in [Phase 2: Identity](https://docs.microsoft.com/microsoft-365/enterprise/identity-infrastructure)
+
+6. **[Assign licenses](https://docs.microsoft.com/intune/licenses-assign)**. For users or devices to enroll in Intune, they need a license on the device. Each user or userless device requires an Intune license to access the Intune service. These licenses are included with M365, and must be assigned in Intune.
+
+7. **[Choose your mobile device management configuration](https://docs.microsoft.com/intune/mdm-authority-set)**. Intune can be used as a cloud-only service, a hybrid with Intune and System Center Configuration Manager, or using Mobile Device Management for Office 365. You can choose which setup works best for your organization.
+
+## Step 4: Enroll devices
+
+Enrollment is a key step when using Intune. When devices are enrolled, an Admin can push or deploy policies, add apps, set compliance rules, and more.
+
+[Enroll devices](https://docs.microsoft.com/intune/device-enrollment) lists the steps for the different devices.
+
+## Step 5: Add and deploy apps
+
+Apps on mobile devices are often the quickest way users get access to your corporate resources. There are challenges when using apps, as there are different devices, including personal devices and corporate devices. And, you want to protect your organization's resources and its data.
+
+Intune can manage apps, including add apps, assign them to different users or groups, and review other key details. For example, you can see which apps fail to install, check the version of an app, and more.
+
+[Add apps](https://docs.microsoft.com/intune/app-management) lists the steps to add, deploy, monitor, configure, and protect apps on devices within your org.
+
+## Step 6: Apply features and settings
+
+In the previous steps, you set up your environment, and enabled Intune. Now, you're ready to start applying different settings and features to devices within your organization. These settings and features use **Device profiles**.
+
+Intune in the Azure portal lets you create different profiles based on your device platform - iOS, macOS, Android, and Windows. Some popular and common profiles include:
+
+- Use Endpoint protection on Windows 10 devices to enable different BitLocker options, including encryption.
+- Use the Restricted apps feature on iOS devices to create a list of approved apps that can be installed. Or, create a list of prohibited apps.
+- Use the Kiosk settings to choose which apps can be used on Android devices running in kiosk mode.
+- Apply a Wi-Fi connection and its settings, including the security type, on devices running macOS
+
+[What are Microsoft Intune device profiles?](https://docs.microsoft.com/intune/device-profiles) is a great place to read about profiles, see how to create a profile, and more.
+
+## Step 7: Turn on compliance and conditional access
+
+Compliance and conditional access are important to managing devices. **[Compliance policies](https://docs.microsoft.com/intune/device-compliance-get-started)** are created to help protect your organization's resources. For example, you can choose an acceptable (or unacceptable) threat level, handle jailbroken devices, require a password length, use a firewall, and more. If these devices don't meet your rules, meaning they aren't compliant, then you can block access to your resources.
+
+This "blocking" introduces **[Conditional access](https://docs.microsoft.com/intune/conditional-access)**. If a device is considered not-compliant, then you can block access to email, apps, and more.
+
+Intune in the Azure portal lets you create these policies, and apply them to your users and devices.
+
+[Get started with device compliance policies](https://docs.microsoft.com/intune/device-compliance-get-started) and [What's conditional access?](https://docs.microsoft.com/intune/conditional-access) can help you get started.
+
+## Step 8: Get to know the other features
+
+Intune is a powerful service, and includes many features. Here are some other tasks you can do using Intune:
+
+- Manage software and updates on Windows [devices](https://docs.microsoft.com/intune/windows-update-for-business-configure) & [PCs](https://docs.microsoft.com/intune/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune), and [iOS](https://docs.microsoft.com/intune/software-updates-ios) devices
+- Turn on [Windows Defender Advanced Threat Protection (ATP)](https://docs.microsoft.com/intune/advanced-threat-protection) on your Windows 10 devices, and use compliance and conditional access to protect access to corporate resources, such as SharePoint or Exchange Online
+- Use [Lookout](https://docs.microsoft.com/intune/lookout-mobile-threat-defense-connector), [Symantec](https://docs.microsoft.com/intune/skycure-mobile-threat-defense-connector), and other mobile defense threat partners
+- Add a [partner certificate authority (CA)](https://docs.microsoft.com/intune/certificate-authority-add-scep-overview) to issue and renew certificates
+- [Provide guidance to your end users](https://docs.microsoft.com/intune/end-user-educate) on the Company Portal app, getting apps, and more
+- Monitor [apps](https://docs.microsoft.com/intune/apps-monitor), monitor [device compliance](https://docs.microsoft.com/intune/compliance-policy-monitor), monitor [configuration profiles](https://docs.microsoft.com/intune/compliance-policy-monitor), and more
+
+## Step 9: Exit criteria
+
+In this phase, you've: 
+
+- Set up Intune, including creating Azure AD users and groups to apply your organization's rules for devices
+- Enroll devices in Intune, so the devices can receive the policies you create
+- Add apps to devices so your users get access to your organization's resources, such as email and SharePoint
+- Configure features and settings. Then, apply them to your devices using the Azure AD users and groups you create. Some of these features may include enabling AV, restricting specific apps, and so on.
+- Create compliance policies to require a firewall, or a password length on a device. And, if devices aren't compliant, then you use conditional access to block access to your organization's data.
+
+By following these steps, and using these Intune features, you have more control of the security of devices, and protecting your organizations resources.
+
+## Case study and lab guides
+
+Learn how IT experts at Microsoft use EMS to manage Windows 10 and mobile devices with [Managing modern mobile productivity with Enterprise Mobility + Security](https://www.microsoft.com/itshowcase/Article/Content/972/Managing-modern-mobile-productivity-with-Enterprise-Mobility--Security).
 
 |||
 |:-------|:-----|
 |![Test Lab Guides for the Microsoft cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Test Lab Guide: iOS and Android device enrollment](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)<P> [Test Lab Guide: Mobile application management policies](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md) |
 |||
 
-
-## How Microsoft does Microsoft 365 Enterprise
-
-Learn how IT experts at Microsoft use EMS to manage Windows 10 and mobile devices with [Managing modern mobile productivity with Enterprise Mobility + Security](https://www.microsoft.com/itshowcase/Article/Content/972/Managing-modern-mobile-productivity-with-Enterprise-Mobility--Security).
-
-
-
 ## Next phase
 
 |||
 |:-------|:-----|
 |![](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)| Your next phase in the end-to-end deployment process for Microsoft 365 Enterprise is [information protection](infoprotect-infrastructure.md). |
-
