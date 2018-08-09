@@ -8,7 +8,9 @@ ms.topic: article
 ms.date: 08/30/2017
 ms.author: barlan
 ms.reviewer: jsnow
-ms.custom: it-pro
+ms.custom: 
+- it-pro
+- goldenconfig
 ---
 
 # Exchange Online and SharePoint Online policy settings overview
