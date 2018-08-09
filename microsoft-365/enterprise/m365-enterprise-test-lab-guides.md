@@ -3,7 +3,7 @@ title: "Microsoft 365 Enterprise Test Lab Guides"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/11/2018
+ms.date: 08/09/2018
 ms.audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
@@ -29,13 +29,19 @@ You can also use TLGs to create representative environments for development and 
   
 ## Base configuration
 
-First, you create a test environment for [Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365-enterprise/) that includes Office 365 E5, Enterprise Mobility + Security (EMS) E5, and Windows 10 Enterprise. 
+First, you create a test environment for [Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365-enterprise/) that includes Office 365 E5, Enterprise Mobility + Security (EMS) E5, and Windows 10 Enterprise. You can create two different types of base configurations:
 
-See the [lightweight base configuration](lightweight-base-configuration-microsoft-365-enterprise.md) for step-by-step instructions.
+- Use the [lightweight base configuration](lightweight-base-configuration-microsoft-365-enterprise.md) when you want to configure and demonstrate Microsoft 365 Enterprise features and capabilities in a cloud-only environment, which does not include any on-premises components.
+
+- Use the [simulated enterprise base configuration](simulated-ent-base-configuration-microsoft-365-enterprise.md) when you want to configure and demonstrate Microsoft 365 Enterprise features and capabilities in a hybrid cloud environment, which uses on-premises components such as a Windows Server Active Directory (AD) domain.
     
 ## Identity
 
 To demonstrate identity-related features and capabilities, see:
+
+- [Password hash synchronization](password-hash-sync-m365-ent-test-environment.md)
+  
+   Enable and test password hash-based directory synchronization from a Windows Server AD domain controller.
 
 - [Multi-factor authentication](multi-factor-authentication-microsoft-365-test-environment.md)
   
