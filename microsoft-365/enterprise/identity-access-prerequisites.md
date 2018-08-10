@@ -8,7 +8,9 @@ ms.topic: article
 ms.date: 
 ms.author: bcarter
 ms.reviewer: martincoetzer
-ms.custom: it-pro
+ms.custom: 
+- it-pro
+- goldenconfig
 ---
 
 # Prerequisite work for implementing identity and device access policies
