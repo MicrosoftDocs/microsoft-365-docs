@@ -8,7 +8,9 @@ ms.topic: article
 ms.date: 
 ms.author: bcarter
 ms.reviewer: martincoetzer
-ms.custom: it-pro
+ms.custom: 
+- it-pro
+- goldenconfig
 ---
 
 # Policy recommendations for securing email

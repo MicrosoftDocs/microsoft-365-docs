@@ -16,7 +16,7 @@ If needed, [Step 1](../infoprotect-define-sec-infoprotect-levels.md) can help yo
 
 You've used the information in these articles to create the set of recommended conditional access policies:
 
-- [Identity and device access policies overview](../identity-device-policies.md)
+- [Identity and device access policies overview](../microsoft-365-policies-configurations.md)
 - [Secure email recommended policies](../secure-email-recommended-policies.md)
 - [Recommended secure document policies](../sharepoint-file-access-policies.md)
 
