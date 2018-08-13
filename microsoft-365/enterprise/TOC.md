@@ -54,6 +54,7 @@
 #### [Simulated enterprise](simulated-ent-base-configuration-microsoft-365-enterprise.md)
 ### [Identity]()
 #### [Password hash sync](password-hash-sync-m365-ent-test-environment.md)
+#### [Pass-through authentication](pass-through-auth-m365-ent-test-environment.md)
 #### [Multi-factor authentication](multi-factor-authentication-microsoft-365-test-environment.md)
 #### [Protect global administrator accounts](protect-global-administrator-accounts-microsoft-365-test-environment.md)
 #### [Automatic licensing and group membership](automate-licenses-group-membership-microsoft-365-test-environment.md)
