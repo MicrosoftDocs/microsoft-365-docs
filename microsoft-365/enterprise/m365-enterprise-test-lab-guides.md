@@ -3,7 +3,7 @@ title: "Microsoft 365 Enterprise Test Lab Guides"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/09/2018
+ms.date: 08/13/2018
 ms.audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
@@ -42,6 +42,10 @@ To demonstrate identity-related features and capabilities, see:
 - [Password hash synchronization](password-hash-sync-m365-ent-test-environment.md)
   
    Enable and test password hash-based directory synchronization from a Windows Server AD domain controller.
+
+- [Pass-through authentication](pass-through-auth-m365-ent-test-environment.md)
+  
+   Enable and test pass-through authentication to a Windows Server AD domain controller.
 
 - [Multi-factor authentication](multi-factor-authentication-microsoft-365-test-environment.md)
   
