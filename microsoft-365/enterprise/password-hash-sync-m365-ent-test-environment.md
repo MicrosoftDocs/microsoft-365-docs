@@ -3,7 +3,7 @@ title: "Password hash synchronization for your Microsoft 365 test environment"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/09/2018
+ms.date: 08/13/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -14,15 +14,13 @@ ms.collection:
 ms.custom: 
 - TLG
 - Ent_TLGs
-ms.assetid: e6b27e25-74ae-4b54-9421-c8e911aef543
+ms.assetid: 
 description: "Summary: Configure and demonstrate password hash synchronization and sign-in for your Microsoft 365 test environment."
 ---
 
 # Password hash synchronization for your Microsoft 365 test environment
 
- **Summary:** Summary: Configure password hash synchronization for your Microsoft 365 test environment.
-  
-Many organizations use Azure AD Connect and password hash synchronization to synchronize the set of accounts in their on-premises Windows Server Active Directory (AD) forest to the set of accounts in the Azure AD tenant of your Office 365 and EMS E5 subscriptions. This article describes how you can add password hash synchronization to your Microsoft 365 test environment, resulting in the following configuration:
+Many organizations use Azure AD Connect and password hash synchronization to synchronize the set of accounts in their on-premises Windows Server Active Directory (AD) forest to the set of accounts in the Azure AD tenant of their Office 365 and EMS E5 subscriptions. This article describes how you can add password hash synchronization to your Microsoft 365 test environment, resulting in the following configuration:
   
 ![The simulated enterprise with password hash synchronization test environment](media/password-hash-sync-m365-ent-test-environment/Phase3.png)
   
@@ -36,11 +34,11 @@ There are two phases to setting up this test environment:
   
 ## Phase 1: Create the Microsoft 365 simulated enterprise test environment
 
-Follow the instructions in the [simulated enterprise base configuration for Microsoft 365](simulated-ent-base-configuration-microsoft-365-enterprise.md). Here is the resulting configuration.
+Follow the instructions in [simulated enterprise base configuration for Microsoft 365](simulated-ent-base-configuration-microsoft-365-enterprise.md). Here is your resulting configuration.
   
 ![The simulated enterprise base configuration](media/password-hash-sync-m365-ent-test-environment/Phase1.png)
   
-Your configuration now consists of: 
+This configuration consists of: 
   
 - Office 365 E5 and EMS E5 trial or permanent subscriptions.
 - A simplified organization intranet connected to the Internet, consisting of the DC1, APP1, and CLIENT1 virtual machines in an Azure virtual network. DC1 is a domain controller for the testlab.\<your public domain name> Windows Server AD domain.
@@ -53,30 +51,30 @@ First, work with your public DNS registration provider to create a new public DN
   
 Next, you add the **testlab.**\<your public domain> domain to your Office 365 trial or permanent subscription by going through the domain registration process. This consists of adding additional DNS records to the **testlab.**\<your public domain> domain. For more information, see [Add users and domain to Office 365](https://support.office.com/article/Add-users-and-domain-to-Office-365-6383f56d-3d09-4dcb-9b41-b5f5a5efd611). 
 
-Here is the resulting configuration.
+Here is your resulting configuration.
   
 ![The registration of your testlab domain name](media/password-hash-sync-m365-ent-test-environment/Phase2.png)
   
-Your configuration now consists of:
+This configuration consists of:
 
-- Office 365 E5 and EMS E5 trial or permanent subscriptions with the DNS domain testlab./<your public domain name> registered.
+- Office 365 E5 and EMS E5 trial or permanent subscriptions with the DNS domain testlab.\<your public domain name> registered.
 - A simplified organization intranet connected to the Internet, consisting of the DC1, APP1, and CLIENT1 virtual machines on a subnet of an Azure virtual network.
 
 Notice how the testlab.\<your public domain name> is now:
 
-- Supported by public DNS records
-- Registered in your Office 365 and EMS subscriptions
-- The Windows Server AD domain on your simulated intranet
+- Supported by public DNS records.
+- Registered in your Office 365 and EMS subscriptions.
+- The Windows Server AD domain on your simulated intranet.
      
 ## Phase 3: Install Azure AD Connect on APP1
 
 In this phase, you install and configure the Azure AD Connect tool on APP1, and then verify that it works.
   
-### Install and configure Azure AD Connect on APP1
+First, you install and configure Azure AD Connect on APP1.
 
 1. From the [Azure portal](https://portal.azure.com), sign in with your global administrator account, and then connect to APP1 with the TESTLAB\\User1 account.
     
-2. From APP1, open an administrator-level Windows PowerShell command prompt, and then run these commands:
+2. From the desktop of APP1, open an administrator-level Windows PowerShell command prompt, and then run these commands:
     
   ```
   Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Active Setup\Installed Components\{A509B1A7-37EF-4b3f-8CFC-4F3A74704073}" -Name "IsInstalled" -Value 0
@@ -111,22 +109,21 @@ In this phase, you install and configure the Azure AD Connect tool on APP1, and 
 14. Click the **User1** account. For product licenses, click **Edit**.
     
 15. In **Product licenses**, select your country, and then click the **Off** control for **Office 365 Enterprise E5** (switching it to **On**). Do the same for the **Enterprise Mobility + Security E5** license. 
-16. 
-17. Click **Save** at the bottom of the page, and then click **Close**.
+
+16. Click **Save** at the bottom of the page, and then click **Close**.
     
-Next, test the ability to sign in to your Office 365 subscription with the user1@testlab./<your domain name> user name of the User1 account.
+Next, you test the ability to sign in to your Office 365 subscription with the user1@testlab.\<your domain name> user name of the User1 account.
 
 1. From APP1, sign out of Office 365, and then sign in again, this time specifying a different account.
 
-2. When prompted for a user name and password, specify **user1@testlab.**/<your domain name> and the User1 password. You should successfully sign in as User1. 
+2. When prompted for a user name and password, specify **user1@testlab.**\<your domain name> and the User1 password. You should successfully sign in as User1. 
  
-Notice that although User1 has domain administrator permissions for the TESTLAB Windows Server AD domain, it is not an Office 365 global administrator. Therefore, you will not see the Admin icon as an option. 
+Notice that although User1 has domain administrator permissions for the TESTLAB Windows Server AD domain, it is not an Office 365 global administrator. Therefore, you will not see the **Admin** icon as an option. 
 
 Here is your resulting configuration.
 
 ![The simulated enterprise with password hash synchronization test environment](media/password-hash-sync-m365-ent-test-environment/Phase3.png)
 
- 
 This configuration consists of: 
   
 - Office 365 E5 and EMS E5 trial or permanent subscriptions with the DNS domain TESTLAB.\<your domain name> registered.
