@@ -704,7 +704,7 @@ While most Customer Data is authored and produced using the applications describ
 
 ### Access 
 
-The following sections explain how use the in-app functionality in Microsoft Access to find, access, export, and delete personal data.
+The following sections explain how use the in-app functionality in  Access to find, access, export, and delete personal data.
 
 ##### Discover
 There are several ways that you can search for records in an Access database that might be responsive to a DSR request. For a DSR investigation, you can search for records that related to the data subject or search for records that contain specific data. For example, you could either search or go to a record that corresponds to the data subject. Or you can search for records that contain specific data, such as personal data about the data subject. For more information, see:
