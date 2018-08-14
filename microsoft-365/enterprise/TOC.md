@@ -74,7 +74,7 @@
 # [Compliance solutions](../compliance/compliance-solutions-overview.md?toc=/microsoft-365/enterprise/toc.json)
 ## [GDPR](../compliance/gdpr.md?toc=/microsoft-365/enterprise/toc.json)
 
-##3 [Recommended action plan for GDPR](../compliance/gdpr-action-plan.md)
+### [Recommended action plan for GDPR](../compliance/gdpr-action-plan.md)
 
 ### [Accountability readiness checklists](../compliance/gdpr-arc.md)
 #### [Office 365](../compliance/gdpr-arc-Office365.md)
