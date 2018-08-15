@@ -85,10 +85,12 @@ To manage devices, the devices must be enrolled in Intune. As an administrator, 
 
 Enrollment is a key step when using Intune. [Enroll devices](https://docs.microsoft.com/intune/device-enrollment) lists the steps for the different devices.
 
+
 |||
 |:-------|:-----|
-|![Test Lab Guides for the Microsoft cloud](media/Microsoft 365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Test Lab Guide: iOS and Android device enrollment](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)|
+|![Test Lab Guides for the Microsoft cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Test Lab Guide: iOS and Android device enrollment](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md) |
 |||
+
 
 ## Step 5: Add and deploy apps
 
@@ -100,7 +102,7 @@ Intune can manage apps, including add apps, assign them to different users or gr
 
 |||
 |:-------|:-----|
-|[Test Lab Guide: Mobile application management policies](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md) |
+|![Test Lab Guides for the Microsoft cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Test Lab Guide: Mobile application management policies](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md) |
 |||
 
 ## Step 6: Turn on compliance and conditional access
