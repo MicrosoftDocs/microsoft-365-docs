@@ -26,19 +26,19 @@ Before you can exit each phase, you must examine its exit criteria, which is a s
 
 ## Exit criteria for networking (phase 1)
 
-Step through the following required and optional conditions for the networking infrastructure for Microsoft 365 Enterprise.
+Step through the following required and optional conditions for the networking infrastructure.
 
 [!INCLUDE [Deployment exit criteria for networking](./includes/deployment-exit-criteria-networking.md)]
 
 ## Exit criteria for identity (phase 2)
 
-Step through the following required and optional conditions for the identity infrastructure for Microsoft 365 Enterprise.
+Step through the following required and optional conditions for the identity infrastructure.
 
 [!INCLUDE [Deployment exit criteria for identity](./includes/deployment-exit-criteria-identity.md)]
 
 ## Exit criteria for Windows 10 Enterprise (phase 3)
 
-Step through the following required and optional conditions for the Windows 10 Enterprise infrastructure for Microsoft 365 Enterprise.
+Step through the following required and optional conditions for the Windows 10 Enterprise infrastructure.
 
 [!INCLUDE [Deployment exit criteria for identity](./includes/deployment-exit-criteria-windows10.md)]
 
@@ -50,13 +50,13 @@ Meet the requirements for assessment, deployment planning, and deployment of the
 
 ## Exit criteria for mobile device management (phase 5)
 
-Meet the following requirements for the mobile device manaagement infrastructure for Microsoft 365 Enterprise.
+Meet the following requirements for the mobile device management infrastructure.
 
 [!INCLUDE [Deployment exit criteria for mobile device management](./includes/deployment-exit-criteria-mobility.md)]
 
 ## Exit criteria for information protection (phase 6)
 
-Step through the following required and optional conditions for the information protection infrastructure for Microsoft 365 Enterprise.
+Step through the following required and optional conditions for the information protection infrastructure.
 
 [!INCLUDE [Deployment exit criteria for information protection](./includes/deployment-exit-criteria-infoprotect.md)]
 
