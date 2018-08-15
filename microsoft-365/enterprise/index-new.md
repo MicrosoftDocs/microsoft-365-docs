@@ -124,23 +124,6 @@ description: Learn about the product documentation and resources available for M
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/media/logos/logo_Windows.svg" alt="Windows logo" />
-                                                </div>
-                                            </div>
-                                            <div class="cardText">
-                                                <h3>Manage Windows 10</h3>
-                                                <P><a href=" ">Link TBD</a></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="cardSize">
-                                    <div class="cardPadding">
-                                        <div class="card">
-                                            <div class="cardImageOuter">
-                                                <div class="cardImage">
                                                     <img src="https://docs.microsoft.com/en-us/office/media/icons/lock-protected-blue.svg" alt="Lock protected" />
                                                 </div>
                                             </div>
