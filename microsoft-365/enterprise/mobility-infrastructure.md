@@ -21,7 +21,7 @@ audience: ITPro
 
 *This feature applies to the E3 and E5 versions of Microsoft 365 Enterprise*
 
-Microsoft 365 (M365) Enterprise includes features to help manage devices, and their apps, within your organization. Using Microsoft Intune, you can manage iOS, Android, macOS, and Windows devices to protect access to your organization's resources, including your data. Intune integrates with Azure Active Directory (Azure AD), and enables the following business scenarios for M365:
+Microsoft 365 Enterprise includes features to help manage devices, and their apps, within your organization. Using Microsoft Intune, you can manage iOS, Android, macOS, and Windows devices to protect access to your organization's resources, including your data. Intune integrates with Azure Active Directory (Azure AD), and enables the following business scenarios for Microsoft 365:
 
 - Store and share files inside and outside your organization to work seamlessly across organizational boundaries
 - Work securely from anywhere, anytime across your device to achieve more while maintaining a flexible workstyle
@@ -47,11 +47,11 @@ You'll also determine how you're going to manage personal or organization-owned 
 
 ## Step 2: Get your prerequisites
 
-Next, get your prerequisites based on your requirements and your scenarios created in the previous step. [Implement your plan](https://docs.microsoft.com/intune/planning-guide-onboarding) lists all the requirements. Here are the significant items you need for Intune with M365:
+Next, get your prerequisites based on your requirements and your scenarios created in the previous step. [Implement your plan](https://docs.microsoft.com/intune/planning-guide-onboarding) lists all the requirements. Here are the significant items you need for Intune with Microsoft 365:
 
-- **Intune subscription**: Included with M365, and gives you access to Microsoft Intune in the [Azure portal](https://portal.azure.com)
-- **Office 365 subscription**: Included with M365, and is used for Office apps, including email
-- **Azure Active Directory (AD) premium**: Included with M365, and is used to create user or security groups. These groups receive Intune policies that you create, such as forcing a password length to unlock a device. The groups you create in [Phase 2: Identity](https://docs.microsoft.com/microsoft-365/enterprise/identity-infrastructure) can be used.
+- **Intune subscription**: Included with Microsoft 365, and gives you access to Microsoft Intune in the [Azure portal](https://portal.azure.com)
+- **Office 365 subscription**: Included with Microsoft 365, and is used for Office apps, including email
+- **Azure Active Directory (AD) premium**: Included with Microsoft 365, and is used to create user or security groups. These groups receive Intune policies that you create, such as forcing a password length to unlock a device. The groups you create in [Phase 2: Identity](https://docs.microsoft.com/microsoft-365/enterprise/identity-infrastructure) can be used.
 
 There may be some additional requirements, depending on your organization's needs. For example, if you'll be managing iOS devices, you'll need an Apple certificate. If you're using on-premises Exchange, then you'll need the on-premises connector. These additional requirements are outlined when you get to those steps.
 
@@ -75,7 +75,7 @@ This step focuses on setting up Intune, and getting it ready for you to manage y
 
     In Intune, you can add users or groups that you create in [Phase 2: Identity](https://docs.microsoft.com/microsoft-365/enterprise/identity-infrastructure)
 
-6. **[Assign licenses](https://docs.microsoft.com/intune/licenses-assign)**. For users or devices to enroll in Intune, they need a license on the device. Each user or userless device requires an Intune license to access the Intune service. These licenses are included with M365, and must be assigned in Intune.
+6. **[Assign licenses](https://docs.microsoft.com/intune/licenses-assign)**. For users or devices to enroll in Intune, they need a license on the device. Each user or userless device requires an Intune license to access the Intune service. These licenses are included with Microsoft 365, and must be assigned in Intune.
 
 7. **[Choose your mobile device management configuration](https://docs.microsoft.com/intune/mdm-authority-set)**. Intune can be used as a cloud-only service, a hybrid with Intune and System Center Configuration Manager, or using Mobile Device Management for Office 365. You can choose which setup works best for your organization.
 
@@ -85,6 +85,11 @@ To manage devices, the devices must be enrolled in Intune. As an administrator, 
 
 Enrollment is a key step when using Intune. [Enroll devices](https://docs.microsoft.com/intune/device-enrollment) lists the steps for the different devices.
 
+|||
+|:-------|:-----|
+|![Test Lab Guides for the Microsoft cloud](media/Microsoft 365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Test Lab Guide: iOS and Android device enrollment](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)|
+|||
+
 ## Step 5: Add and deploy apps
 
 Apps on mobile devices are often the quickest way users get access to your corporate resources. There are challenges when using apps, as there are different devices, including personal devices and corporate devices. And, you want to protect your organization's resources and its data.
@@ -92,6 +97,11 @@ Apps on mobile devices are often the quickest way users get access to your corpo
 Intune can manage apps, including add apps, assign them to different users or groups, and review other key details. For example, you can see which apps fail to install, check the version of an app, and more.
 
 [Add apps](https://docs.microsoft.com/intune/app-management) lists the steps to add, deploy, monitor, configure, and protect apps on devices within your org.
+
+|||
+|:-------|:-----|
+|[Test Lab Guide: Mobile application management policies](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md) |
+|||
 
 ## Step 6: Turn on compliance and conditional access
 
@@ -132,29 +142,8 @@ Intune is a powerful service, and includes many features. Here are some other ta
 - [Provide guidance to your end users](https://docs.microsoft.com/intune/end-user-educate) on the Company Portal app, getting apps, and more
 - Monitor [apps](https://docs.microsoft.com/intune/apps-monitor), monitor [device compliance](https://docs.microsoft.com/intune/compliance-policy-monitor), monitor [configuration profiles](https://docs.microsoft.com/intune/compliance-policy-monitor), and more
 
-## Step 9: Exit criteria
 
-In this phase, you've:
+## Next step
 
-- Set up Intune, including creating Azure AD users and groups to apply your organization's rules for devices
-- Enroll devices in Intune, so the devices can receive the policies you create
-- Add apps to devices so your users get access to your organization's resources, such as email and SharePoint
-- Configure features and settings. Then, apply them to your devices using the Azure AD users and groups you create. Some of these features may include enabling AV, restricting specific apps, and so on.
-- Create compliance policies to require a firewall, or a password length on a device. And, if devices aren't compliant, then you use conditional access to block access to your organization's data.
+[Mobile device management infrastructure exit criteria](mobility-infrastructure-exit-criteria.md)
 
-By following these steps, and using these Intune features, you have more control of the security of devices, and protecting your organizations resources.
-
-## Case study and lab guides
-
-Learn how IT experts at Microsoft use EMS to manage Windows 10 and mobile devices with [Managing modern mobile productivity with Enterprise Mobility + Security](https://www.microsoft.com/itshowcase/Article/Content/972/Managing-modern-mobile-productivity-with-Enterprise-Mobility--Security).
-
-|||
-|:-------|:-----|
-|![Test Lab Guides for the Microsoft cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Test Lab Guide: iOS and Android device enrollment](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)<P> [Test Lab Guide: Mobile application management policies](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md) |
-|||
-
-## Next phase
-
-|||
-|:-------|:-----|
-|![](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)| Your next phase in the end-to-end deployment process for Microsoft 365 Enterprise is [information protection](infoprotect-infrastructure.md). |
