@@ -44,16 +44,19 @@ Step through the following required and optional conditions for the Windows 10 E
 
 ## Exit criteria for Office 365 ProPlus (phase 4)
 
-Step through the following required and optional conditions for the Office 365 ProPlus infrastructure for Microsoft 365 Enterprise.
+Meet the requirements for assessment, deployment planning, and deployment of the Office 365 ProPlus infrastructure for Microsoft 365 Enterprise.
 
 [!INCLUDE [Deployment exit criteria for Office 365 ProPlus](./includes/deployment-exit-criteria-office365proplus.md)]
+
+## Exit criteria for mobile device management (phase 5)
+
+Meet the following requirements for the mobile device manaagement infrastructure for Microsoft 365 Enterprise.
+
+[!INCLUDE [Deployment exit criteria for mobile device management](./includes/deployment-exit-criteria-mobility.md)]
 
 ## Exit criteria for information protection (phase 6)
 
 Step through the following required and optional conditions for the information protection infrastructure for Microsoft 365 Enterprise.
 
 [!INCLUDE [Deployment exit criteria for information protection](./includes/deployment-exit-criteria-infoprotect.md)]
-
-
-
 
