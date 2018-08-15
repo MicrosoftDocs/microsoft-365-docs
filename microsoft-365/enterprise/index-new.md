@@ -15,7 +15,7 @@ description: Learn about the product documentation and resources available for M
     <div class="container">
         <h1>Microsoft 365 Enterprise documentation and resources</h1>
         <P>Add description</p>
-        <ul class="pivotTabs singlePivot">
+        <ul class="pivots">
             <li>
                 <a href="#home"></a>
                 <ul id="home">
