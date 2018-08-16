@@ -137,7 +137,7 @@ description: Learn about the product documentation and resources available for M
                                         </div>
                                     </div>
                                 </div>
-                            </li>            
+                            </li>
                        </ul>
                     </li>
                 </ul>
