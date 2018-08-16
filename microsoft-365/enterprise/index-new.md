@@ -17,8 +17,10 @@ description: Learn about the product documentation and resources available for M
         <P>Learn how to plan, deploy, and use Microsoft Office 365, Windows 10, and Enterprise Mobility + Security together in your enterprise organization for an integrated and secure infrastructure that enables teamwork and unlocks creativity.</p>
         <ul class="pivots">
             <li>
+                <a href="#home"></a>
                 <ul id="home">
                     <li>
+                        <a href="#home-all"></a>
                         <ul id="home-all" class="cardsF">
                             <li>
                                 <div class="cardSize">
