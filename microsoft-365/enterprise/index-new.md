@@ -140,18 +140,6 @@ description: Learn about the product documentation and resources available for M
                                     </div>
                                 </div>
                             </li>
-                       </ul>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-        <ul class="pivots">
-            <li>
-                <a href="#lower"></a>
-                <ul id="lower">
-                    <li>
-                        <a href="#lower-all"></a>
-                        <ul id="lower-all" class="cardsF">
                             <li>
                                 <div class="cardSize">
                                     <div class="cardPadding">
@@ -212,5 +200,3 @@ description: Learn about the product documentation and resources available for M
                 </ul>
             </li>
         </ul>
-    </div>
-</div>
