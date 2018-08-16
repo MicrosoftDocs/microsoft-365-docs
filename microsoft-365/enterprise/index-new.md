@@ -15,6 +15,7 @@ description: Learn about the product documentation and resources available for M
     <div class="container">
         <h1>Microsoft 365 Enterprise documentation and resources</h1>
         <P>Learn how to plan, deploy, and use Microsoft Office 365, Windows 10, and Enterprise Mobility + Security together in your enterprise organization for an integrated and secure infrastructure that enables teamwork and unlocks creativity.</p>
+        <P></p>
         <ul class="pivots">
             <li>
                 <a href="#home"></a>
@@ -56,8 +57,7 @@ description: Learn about the product documentation and resources available for M
                                                 <P><a href="https://www.microsoft.com/fasttrack/microsoft-365">FastTrack</a></p>
                                                 <P><a href="deploy-microsoft-365-enterprise">Deployment guide</a></p>
                                                 <P><a href="microsoft-365-policies-configurations.md">Identity &amp; device access</a></p>
-                                                <P><a href="https://review.docs.microsoft.com/en-us/office365/SecurityCompliance/index?branch=conversion-working
-">Office 365 security</a></p>
+                                                <P><a href="docs.microsoft.com/en-us/office365/SecurityCompliance/">Office 365 security</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -75,8 +75,7 @@ description: Learn about the product documentation and resources available for M
                                             <div class="cardText">
                                                 <h3>Get compliant</h3>
                                                 <P><a href="https://docs.microsoft.com/microsoft-365/compliance/compliance-solutions-overview">Compliance solutions</a></p>
-                                                <P><a href="https://review.docs.microsoft.com/en-us/office365/SecurityCompliance/index?branch=conversion-working
-">Office 365 compliance</a></p>
+                                                <P><a href="https://review.docs.microsoft.com/en-us/office365/SecurityCompliance/">Office 365 compliance</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -140,63 +139,70 @@ description: Learn about the product documentation and resources available for M
                                     </div>
                                 </div>
                             </li>
-                            <li>
-                                <div class="cardSize">
-                                    <div class="cardPadding">
-                                        <div class="card">
-                                            <div class="cardImageOuter">
-                                                <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/en-us/office/media/icons/developer-blue.svg" alt="Code, developer" />
+                            <li class="fullSpan">
+                              <hr />
+                              <ul class="cardsF panelContent singlePanelContent" style="display:flex!important;">
+                                    <li>
+                                        <div class="cardSize">
+                                            <div class="cardPadding">
+                                                <div class="card">
+                                                    <div class="cardImageOuter">
+                                                        <div class="cardImage">
+                                                            <img src="https://docs.microsoft.com/en-us/office/media/icons/developer-blue.svg" alt="Code, developer" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="cardText">
+                                                        <h3>Develop for Microsoft 365</h3>
+                                                        <P><a href="https://developer.microsoft.com/office">Office 365 Dev Center</a></p>
+                                                        <P><a href="https://developer.microsoft.com/windows/enterprise">Windows Dev Center</a></p>
+                                                        <P><a href="https://developer.microsoft.com/graph">Microsoft Graph</a></p>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div class="cardText">
-                                                <h3>Develop for Microsoft 365</h3>
-                                                <P><a href="https://developer.microsoft.com/office">Office 365 Dev Center</a></p>
-                                                <P><a href="https://developer.microsoft.com/windows/enterprise">Windows Dev Center</a></p>
-                                                <P><a href="https://developer.microsoft.com/graph">Microsoft Graph</a></p>
-                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="cardSize">
-                                    <div class="cardPadding">
-                                        <div class="card">
-                                            <div class="cardImageOuter">
-                                                <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/en-us/office/media/icons/caret-right-blue.svg" alt="More arrow" />
+                                    </li>
+                                    <li>
+                                        <div class="cardSize">
+                                            <div class="cardPadding">
+                                                <div class="card">
+                                                    <div class="cardImageOuter">
+                                                        <div class="cardImage">
+                                                            <img src="https://docs.microsoft.com/en-us/office/media/icons/caret-right-blue.svg" alt="More arrow" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="cardText">
+                                                        <h3>Other Microsoft 365 products</h3>
+                                                        <P><a href="https://docs.microsoft.com/en-us/microsoft-365/business/">Microsoft 365 Business</a></p>
+                                                        <P><a href="https://support.office.com/article/Get-started-with-Office-365-Education-AB02ABE5-A1EE-458C-B749-5B44416CCF14">Microsoft 365 Education</a></p>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div class="cardText">
-                                                <h3>Other Microsoft 365 products</h3>
-                                                <P><a href="https://docs.microsoft.com/microsoft-365/business/">Microsoft 365 Business</a></p>
-                                                <P><a href="https://docs.microsoft.com/education/">Microsoft 365 Education</a></p>
-                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-                            </li> 
-                            <li>
-                                <div class="cardSize">
-                                    <div class="cardPadding">
-                                        <div class="card">
-                                            <div class="cardImageOuter">
-                                                <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/en-us/office/media/icons/chat.svg" alt="Chat" />
+                                    </li> 
+                                    <li>
+                                        <div class="cardSize">
+                                            <div class="cardPadding">
+                                                <div class="card">
+                                                    <div class="cardImageOuter">
+                                                        <div class="cardImage">
+                                                            <img src="https://docs.microsoft.com/en-us/office/media/icons/chat.svg" alt="Chat" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="cardText">
+                                                        <h3>Need support?</h3>
+                                                        <P><a href="https://support.office.com/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b">Office 365</a></p>
+                                                        <P><a href="http://support.microsoft.com/products/windows">Windows 10</a></p>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div class="cardText">
-                                                <h3>Need support?</h3>
-                                                <P><a href="https://support.office.com/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b">Office 365</a></p>
-                                                <P><a href="http://support.microsoft.com/products/windows">Windows 10</a></p>
-                                            </div>
                                         </div>
-                                    </div>
-                                </div>
+                                    </li>
+                              </ul>
                             </li>
                        </ul>
                     </li>
                 </ul>
             </li>
         </ul>
+    </div>
+</div>
