@@ -147,11 +147,11 @@ description: Learn about the product documentation and resources available for M
         </ul>
         <ul class="pivots">
             <li>
-                <a href="#home"></a>
-                <ul id="home">
+                <a href="#lower"></a>
+                <ul id="lower">
                     <li>
-                        <a href="#home-all"></a>
-                        <ul id="home-all" class="cardsF">
+                        <a href="#lower-all"></a>
+                        <ul id="lower-all" class="cardsF">
                             <li>
                                 <div class="cardSize">
                                     <div class="cardPadding">
