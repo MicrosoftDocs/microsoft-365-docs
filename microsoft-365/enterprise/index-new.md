@@ -34,7 +34,7 @@ description: Learn about the product documentation and resources available for M
                                             <div class="cardText">
                                                 <h3>Explore</h3>
                                                 <P><a href="microsoft-365-overview">Overview</a></p>
-                                                <P><a href="https://technet.microsoft.com/library/mt846681.aspx">Service descriptions</a></p>
+                                                <P><a href="https://technet.microsoft.com/library/mt846681.aspx">Service description</a></p>
                                                 <P><a href="microsoft-cloud-networking-for-enterprise-architects">Architecture models</a></p>
                                                 <P><a href="services-overview.md">Services &amp; concepts</a></p>
                                             </div>
