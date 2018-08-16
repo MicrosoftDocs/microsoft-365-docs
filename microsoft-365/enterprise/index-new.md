@@ -56,7 +56,8 @@ description: Learn about the product documentation and resources available for M
                                                 <P><a href="https://www.microsoft.com/fasttrack/microsoft-365">FastTrack</a></p>
                                                 <P><a href="deploy-microsoft-365-enterprise">Deployment guide</a></p>
                                                 <P><a href="microsoft-365-policies-configurations.md">Identity &amp; device access</a></p>
-                                                <P><a href="docs.microsoft.com/en-us/office365/SecurityCompliance/">Office 365 security</a></p>
+                                                <P><a href="https://review.docs.microsoft.com/en-us/office365/SecurityCompliance/index?branch=conversion-working
+">Office 365 security</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -74,7 +75,8 @@ description: Learn about the product documentation and resources available for M
                                             <div class="cardText">
                                                 <h3>Get compliant</h3>
                                                 <P><a href="https://docs.microsoft.com/microsoft-365/compliance/compliance-solutions-overview">Compliance solutions</a></p>
-                                                <P><a href="https://review.docs.microsoft.com/en-us/office365/SecurityCompliance/">Office 365 compliance</a></p>
+                                                <P><a href="https://review.docs.microsoft.com/en-us/office365/SecurityCompliance/index?branch=conversion-working
+">Office 365 compliance</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -180,8 +182,8 @@ description: Learn about the product documentation and resources available for M
                                             </div>
                                             <div class="cardText">
                                                 <h3>Other Microsoft 365 products</h3>
-                                                <P><a href="https://docs.microsoft.com/en-us/microsoft-365/business/">Microsoft 365 Business</a></p>
-                                                <P><a href="https://support.office.com/article/Get-started-with-Office-365-Education-AB02ABE5-A1EE-458C-B749-5B44416CCF14">Microsoft 365 Education</a></p>
+                                                <P><a href="https://docs.microsoft.com/microsoft-365/business/">Microsoft 365 Business</a></p>
+                                                <P><a href="https://docs.microsoft.com/education/">Microsoft 365 Education</a></p>
                                             </div>
                                         </div>
                                     </div>
