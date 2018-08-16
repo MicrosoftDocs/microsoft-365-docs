@@ -180,8 +180,8 @@ description: Learn about the product documentation and resources available for M
                                             </div>
                                             <div class="cardText">
                                                 <h3>Other Microsoft 365 products</h3>
-                                                <P><a href="https://docs.microsoft.com/en-us/microsoft-365/business/">Microsoft 365 Business</a></p>
-                                                <P><a href="https://support.office.com/article/Get-started-with-Office-365-Education-AB02ABE5-A1EE-458C-B749-5B44416CCF14">Microsoft 365 Education</a></p>
+                                                <P><a href="https://docs.microsoft.com/microsoft-365/business/">Microsoft 365 Business</a></p>
+                                                <P><a href="https://docs.microsoft.com/education/">Microsoft 365 Education</a></p>
                                             </div>
                                         </div>
                                     </div>
