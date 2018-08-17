@@ -3,7 +3,7 @@ title: "Phase 4: Office 365 ProPlus"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/28/2018
+ms.date: 08/15/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -86,6 +86,6 @@ Many organizations will use a combination of these options for different users. 
 
 If your organization uses Configuration Manager, we recommend upgrading to the Current Branch and updating to the current release. For more details, see [Which branch of Configuration Manager should I use?](https://docs.microsoft.com/en-us/sccm/core/understand/which-branch-should-i-use)
 
-## Step 4: Review exit criteria
+## Next step
 
-When you've completed these steps, go to the [exit criteria](office365proplus-exit-criteria.md) for this phase to ensure that you meet the required conditions for Microsoft 365 Enterprise.
+[Office 365 ProPlus infrastructure exit criteria](office365proplus-exit-criteria.md)
