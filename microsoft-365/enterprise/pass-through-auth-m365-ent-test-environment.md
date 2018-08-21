@@ -83,7 +83,7 @@ Here is your resulting configuration:
  
 This configuration consists of:
 
-- Office 365 E5 and EMS E5 trial or permanent subscriptions with the DNS domain TESTLAB.<your domain name> registered.
+- Office 365 E5 and EMS E5 trial or permanent subscriptions with the DNS domain TESTLAB.\<your domain name> registered.
 - A simplified organization intranet connected to the Internet, consisting of the DC1, APP1, and CLIENT1 virtual machines on a subnet of an Azure virtual network. An Authentication Agent runs on APP1 to handle pass-through authentication requests from the Azure AD tenant of your Office 365 and EMS E5 subscriptions.
 
 ## Next step
