@@ -15,7 +15,7 @@ audience: itpro
 ms.collection: GDPR
 ---
 
-# Microsoft 365 GDPR action plan — Top priorities for your first 30 days, 90 days, and beyond
+# Microsoft 365 ISO 27001 action plan — Top priorities for your first 30 days, 90 days, and beyond
 
 The International Organization for Standardization (ISO) is an independent nongovernmental developer of voluntary international standards. The International Electrotechnical Commission (IEC) leads the preparation and publication of international standards for electrical, electronic, and related technologies. The ISO/IEC 27000 family of standards outlines controls and mechanisms that help maintain the security of information assets.
 
