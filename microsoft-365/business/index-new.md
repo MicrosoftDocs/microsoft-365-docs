@@ -82,11 +82,11 @@ description: Learn about the product documentation and resources available for M
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/en-us/office/media/icons/migrate.svg" alt="Migration symbol" />
+                                                    <img src="https://docs.microsoft.com/en-us/office/media/icons/migration-blue.svg" alt="Migration symbol" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>Mot to Microsoft 365 Business</h3>
+                                                <h3>Move to Microsoft 365 Business</h3>
                                                 <P><a href=" ">Move from Office 365 Enterprise E3</a></p>
                                                 <P><a href=" ">Move from Office 365 Business Premium</a></p>
                                             </div>
@@ -100,7 +100,7 @@ description: Learn about the product documentation and resources available for M
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/media/logos/security-blue.svg" alt="Shield symbol" />
+                                                    <img src="https://docs.microsoft.com/en-us/office/media/icons/security-blue.svg" alt="Shield symbol" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -132,43 +132,41 @@ description: Learn about the product documentation and resources available for M
                                 </div>
                             </li>
                             <li>
-                                <li>
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="https://docs.microsoft.com/en-us/office/media/icons/getstarted-blue.svg" alt="Get started hand with arrow symbol" />
-                                                    </div>
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardImageOuter">
+                                                <div class="cardImage">
+                                                    <img src="https://docs.microsoft.com/en-us/office/media/icons/get-started-blue.svg" alt="Get started hand with arrow symbol" />
                                                 </div>
-                                                <div class="cardText">
-                                                    <h3>Use</h3>
+                                            </div>
+                                            <div class="cardText">
+                                                <h3>Use</h3>
                                                 <P><a href="https://support.office.com/en-us/office-training-center">Office user training</a></p>
                                                 <P><a href="https://www.microsoft.com/itpro/windows-10/end-user-readiness">Windows 10 user readiness</a></p>
                                                 <P><a href="https://docs.microsoft.com/intune-user-help/use-managed-devices-to-get-work-done">Intune training</a></p>
-                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </li>
-                                <li>
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="https://docs.microsoft.com/media/logos/logo_Windows.svg" alt="Windows logo" />
-                                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardImageOuter">
+                                                <div class="cardImage">
+                                                    <img src="https://docs.microsoft.com/media/logos/logo_Windows.svg" alt="Windows logo" />
                                                 </div>
-                                                <div class="cardText">
-                                                    <h3>Windows 10</h3>
-                                                    <P><a href="">Set up Widnows 10 PCs</a></p>
-                                                    <P><a href=" ">Remove data from Windows PCs</a></p>
-                                                </div>
+                                            </div>
+                                            <div class="cardText">
+                                                <h3>Windows 10</h3>
+                                                <P><a href="">Set up Widnows 10 PCs</a></p>
+                                                <P><a href=" ">Remove data from Windows PCs</a></p>
                                             </div>
                                         </div>
                                     </div>
-                                </li> 
+                                </div>
                             </li>
                         </ul>
                     </li>
