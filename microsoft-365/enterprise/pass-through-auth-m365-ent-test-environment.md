@@ -29,8 +29,10 @@ There are two phases to setting up this test environment:
 1.	Create the Microsoft 365 simulated enterprise test environment with password hash synchronization.
 2.	Configure Azure AD Connect on APP1 for pass-through authentication.
     
+![Test Lab Guides for the Microsoft cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
+    
 > [!TIP]
-> Click [here](http://aka.ms/catlgstack) for a visual map to all the articles in the One Microsoft Cloud Test Lab Guide stack.
+> Click [here](https://aka.ms/m365etlgstack) for a visual map to all the articles in the Microsoft 365 Enterprise Test Lab Guide stack.
   
 ## Phase 1: Create the password hash synchronization for your Microsoft 365 test environment
 

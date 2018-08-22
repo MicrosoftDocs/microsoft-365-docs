@@ -31,8 +31,10 @@ There are two phases to setting up this test environment:
 1.	Create the Microsoft 365 simulated enterprise test environment with password hash synchronization.
 2.	Configure Azure AD Connect on APP1 for Azure AD Seamless SSO.
     
+![Test Lab Guides for the Microsoft cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
+    
 > [!TIP]
-> Click [here](http://aka.ms/catlgstack) for a visual map to all the articles in the One Microsoft Cloud Test Lab Guide stack.
+> Click [here](https://aka.ms/m365etlgstack) for a visual map to all the articles in the Microsoft 365 Enterprise Test Lab Guide stack.
   
 ## Phase 1: Create the password hash synchronization for your Microsoft 365 test environment
 
@@ -99,6 +101,8 @@ This configuration consists of:
 
 - Office 365 E5 and EMS E5 trial or permanent subscriptions with the DNS domain TESTLAB.\<your domain name> registered.
 - A simplified organization intranet connected to the Internet, consisting of the DC1, APP1, and CLIENT1 virtual machines on a subnet of an Azure virtual network. Azure AD Connect runs on APP1 to synchronize the list of accounts and groups from the Azure AD tenant of your Office 365 and EMS E5 subscriptions to the TESTLAB Windows Server AD domain.
+
+See the [Simplify user sign-in](identity-single-sign-on.md) step in the Identity phase for information and links to configure Azure AD Seamless SSO in production.
 
 ## Next step
 
