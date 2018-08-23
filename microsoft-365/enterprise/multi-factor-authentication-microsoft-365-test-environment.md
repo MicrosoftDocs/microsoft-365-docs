@@ -3,7 +3,7 @@ title: "Multi-factor authentication for your Microsoft 365 Enterprise test envir
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/11/2018
+ms.date: 08/21/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -30,11 +30,16 @@ There are two phases to setting up multi-factor authentication for an account in
 ![Test Lab Guides for the Microsoft cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> Click [here](http://aka.ms/catlgstack) for a visual map to all the articles in the One Microsoft Cloud Test Lab Guide stack.
+> Click [here](https://aka.ms/m365etlgstack) for a visual map to all the articles in the Microsoft 365 Enterprise Test Lab Guide stack.
   
-## Phase 1: Build out your lightweight Microsoft 365 Enterprise test environment
+## Phase 1: Build out your Microsoft 365 Enterprise test environment
 
-If you haven't done so already, follow the instructions in the [lightweight base configuration](lightweight-base-configuration-microsoft-365-enterprise.md).
+If you just want to test multi-factor authentication in a lightweight way with the minimum requirements, follow the instructions in [Lightweight base configuration](lightweight-base-configuration-microsoft-365-enterprise.md).
+  
+If you want to test multi-factor authentication in a simulated enterprise, follow the instructions in [Pass-through authentication](pass-through-auth-m365-ent-test-environment.md).
+  
+> [!NOTE]
+> Testing multi-factor authentication does not require the simulated enterprise test environment, which includes a simulated intranet connected to the Internet and directory synchronization for a Windows Server AD forest. It is provided here as an option so that you can test multi-factor authentication and experiment with it in an environment that represents a typical organization. 
   
 ## Phase 2: Enable and test multi-factor authentication for the User 2 account
 

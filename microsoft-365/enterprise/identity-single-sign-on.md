@@ -29,6 +29,11 @@ See the [instructions to configure Azure AD Seamless SSO](https://docs.microsoft
 
 See [Core Concepts](https://docs.microsoft.com/microsoft-365-enterprise/microsoft-365-policies-configurations#core-concepts) for additional information.
 
+|||
+|:-------|:-----|
+|![Test Lab Guides for the Microsoft cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Test Lab Guide: Azure AD Seamless Single Sign-on](single-sign-on-m365-ent-test-environment.md) |
+|||
+
 As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria.md#crit-identity-step8) for this step.
 
 ## Next step
