@@ -12,7 +12,7 @@ description: Learn about the product documentation and resources available for M
 <div id="main" class="v2">
     <div class="container">
         <h1>Microsoft 365 for Business documentation and resources</h1>
-        <P>Learn how to plan, deploy, and use Microsoft Office 365, Windows 10, and Enterprise Mobility + Security together in your business for an integrated and secure infrastructure that enables teamwork and unlocks creativity.</p>
+        <P>Learn how to set up and use Microsoft 365 for Business in your organization for a secure infrastructure that enables teamwork and unlocks creativity.</p>
         <P></p>
         <ul class="pivots">
             <li>
@@ -118,7 +118,7 @@ description: Learn about the product documentation and resources available for M
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/en-us/office/media/icons/headset-blue.svg" alt="A headset for support" />
+                                                    <img src="https://docs.microsoft.com/en-us/office/media/icons/chat.svg" alt="chat icon" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
