@@ -47,6 +47,10 @@ To demonstrate identity-related features and capabilities, see:
   
    Enable and test pass-through authentication to a Windows Server AD domain controller.
 
+- [Azure AD Seamless Single Sign-on](single-sign-on-m365-ent-test-environment.md)
+  
+   Enable and test Azure AD Seamless Single Sign-on (SSO) with a Windows Server AD domain controller.
+
 - [Multi-factor authentication](multi-factor-authentication-microsoft-365-test-environment.md)
   
    Enable and test smart phone-based multi-factor authentication for a specific user account.
