@@ -107,7 +107,7 @@ The following table lists the Office 365 applications that people use to create 
 | <img src="media/O365-DSR-Doc-Final_image11.png" /><br />OneNote| <img src="media/O365-DSR-Doc-Final_image12.png" />To-Do |
 | <img src="media/O365-DSR-Doc-Final_image13.png" /><br />Outlook/Exchange Online | <img src="media/O365-DSR-Doc-Final_image14.png" /><br />Video |
 | <img src="media/O365-DSR-Doc-Final_image15.png" /><br />People|<img src="media/O365-DSR-Doc-Final_image16.png" /><br />Visio |
-| <img src="media/O365-DSR-Doc-Final_image17.png" /><br />PowerPoint | 
+| <img src="media/O365-DSR-Doc-Final_image17.png" /><br />PowerPoint | ![WordIcon.png](media/WordIcon.png) <br/> Word
 ||
 
 <!-- end of table -->
@@ -692,11 +692,11 @@ While most Customer Data is authored and produced using the applications describ
 ||||
 |:-----:|:-----:|:-----:|:-----:|
 |[<img src="media/O365-DSR-Doc_image35.png"/>](#access)<br/>Access|[]()[<img src="media/O365-DSR-Doc_image22.png" />](#business-apps-for-office-365)<br/>Business Apps <br/>for Office 365 |[<img src="media/O365-DSR-Doc_image22.png"/>](#education)<br/>Education|
-|[<img src="media/O365-DSR-Doc_image24.png" />](#flow)<br/>Flow|[<img src="media/O365-DSR-Doc_image26.png" />](#forms)<br/>Forms|[<img src="media/O365-DSR-Doc_image28.png" />](#kaizala)<br/>Kaizala|
+|[<img src="media/O365-DSR-Doc_image24.png" />](#flow)<br/>Flow|<img src="media/formslogo-32px.png" /><br/>Forms|[<img src="media/O365-DSR-Doc_image28.png" />](#kaizala)<br/>Kaizala|
 |[<img src="media/O365-DSR-Doc_image30.png" />](#planner)<br/>Planner|[<img src="media/O365-DSR-Doc_image23.png"/>](#powerapps)<br/>PowerApps|[<img src="media/O365-DSR-Doc_image32.png" />](#power-bi)<br/>Power BI|
-|[<img src="media/O365-DSR-Doc_image25.png" />](#project-online)<br/> Project Online|[<img src="media/O365-DSR-Doc_image37.png"/>](#publisher)<br/>Publisher|[<img src="media/O365-DSR-Doc_image27.png" />](#staffhub)<br/>StaffHub|
-|[<img src="media/O365-DSR-Doc_image29.png" />](#stream)<br/>Stream|[<img src="media/O365-DSR-Doc_image31.png" />](#sway)<br/>Sway|[<img src="media/O365-DSR-Doc_image36.png"/>](#whiteboard)<br/>Whiteboard|
-||[<img src="media/O365-DSR-Doc_image33.png" />](#yammer)<br/>Yammer
+|[<img src="media/O365-DSR-Doc_image25.png" />](#project-online)<br/> Project Online|[<img src="media/publisher-32px.png"/>](#publisher)<br/>Publisher|[<img src="media/O365-DSR-Doc_image27.png" />](#staffhub)<br/>StaffHub|
+|[<img src="media/O365-DSR-Doc_image29.png" />](#stream)<br/>Stream|![sway-32px.png](media/sway-32px.png)<br/>Sway|[<img src="media/O365-DSR-Doc_image36.png"/>](#whiteboard)<br/>Whiteboard|
+|| ![yammer-32px.png](media/yammer-32px.png)<br/>Yammer
 ||||
 
 <!-- end of table --> <!-- be sure to test them all, more content coming -->
