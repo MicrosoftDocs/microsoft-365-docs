@@ -161,7 +161,7 @@ description: Learn how to plan, deploy, and use Microsoft Office 365, Windows 10
                                             </div>
                                             <div class="cardText">
                                                 <h3>Windows 10</h3>
-                                                <P><a href="https://support.office.com/en-us/article/set-up-windows-devices-for-microsoft-365-business-users-2d7ff45e-0da0-4caa-89a9-48cabf41f193">Set up Widnows 10 PCs</a></p>
+                                                <P><a href="https://support.office.com/en-us/article/set-up-windows-devices-for-microsoft-365-business-users-2d7ff45e-0da0-4caa-89a9-48cabf41f193">Set up Windows 10 PCs</a></p>
                                                 <P><a href="https://support.office.com/en-us/article/remove-company-data-from-devices-80bdae57-f8bc-4e40-a58c-956007117ecb">Remove data from Windows PCs</a></p>
                                                 <P><a href="https://support.office.com/en-us/article/reset-windows-10-devices-to-their-factory-settings-c4db6caf-74df-4734-b1dd-53e371c7a3c3">Reset Windows 10 PCs</a></p>
                                             </div>
