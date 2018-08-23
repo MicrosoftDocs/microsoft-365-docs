@@ -35,7 +35,7 @@ description: Learn about the product documentation and resources available for M
                                                 <h3>Explore</h3>
                                                 <P><a href="microsoft-365-overview">Overview</a></p>
                                                 <P><a href="https://technet.microsoft.com/library/mt846681.aspx">Service description</a></p>
-                                                <P><a href="microsoft-cloud-networking-for-enterprise-architects">Architecture models</a></p>
+                                                <P><a href="https://docs.microsoft.com/Office365/Enterprise/microsoft-cloud-networking-for-enterprise-architects">Architecture models</a></p>
                                                 <P><a href="services-overview.md">Services &amp; concepts</a></p>
                                             </div>
                                         </div>
@@ -56,7 +56,7 @@ description: Learn about the product documentation and resources available for M
                                                 <P><a href="https://www.microsoft.com/fasttrack/microsoft-365">FastTrack</a></p>
                                                 <P><a href="deploy-microsoft-365-enterprise">Deployment guide</a></p>
                                                 <P><a href="microsoft-365-policies-configurations.md">Identity &amp; device access</a></p>
-                                                <P><a href="docs.microsoft.com/en-us/office365/SecurityCompliance/">Office 365 security</a></p>
+                                                <P><a href="https://docs.microsoft.com/Office365/SecurityCompliance/">Office 365 security</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -74,7 +74,7 @@ description: Learn about the product documentation and resources available for M
                                             <div class="cardText">
                                                 <h3>Get compliant</h3>
                                                 <P><a href="https://docs.microsoft.com/microsoft-365/compliance/compliance-solutions-overview">Compliance solutions</a></p>
-                                                <P><a href="https://review.docs.microsoft.com/en-us/office365/SecurityCompliance/">Office 365 compliance</a></p>
+                                                <P><a href="https://docs.microsoft.com/Office365/SecurityCompliance/">Office 365 compliance</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -172,7 +172,7 @@ description: Learn about the product documentation and resources available for M
                                                     <div class="cardText">
                                                         <h3>Other Microsoft 365 products</h3>
                                                         <P><a href="https://docs.microsoft.com/en-us/microsoft-365/business/">Microsoft 365 Business</a></p>
-                                                        <P><a href="https://support.office.com/article/Get-started-with-Office-365-Education-AB02ABE5-A1EE-458C-B749-5B44416CCF14">Microsoft 365 Education</a></p>
+                                                        <P><a href="https://docs.microsoft.com/education/">Microsoft 365 Education</a></p>
                                                     </div>
                                                 </div>
                                             </div>
