@@ -11,8 +11,8 @@ description: Learn about the product documentation and resources available for M
 ---
 <div id="main" class="v2">
     <div class="container">
-        <h1>Microsoft 365 Enterprise documentation and resources</h1>
-        <P>Learn how to plan, deploy, and use Microsoft Office 365, Windows 10, and Enterprise Mobility + Security together in your enterprise organization for an integrated and secure infrastructure that enables teamwork and unlocks creativity.</p>
+        <h1>Microsoft 365 for Business documentation and resources</h1>
+        <P>Learn how to plan, deploy, and use Microsoft Office 365, Windows 10, and Enterprise Mobility + Security together in your business for an integrated and secure infrastructure that enables teamwork and unlocks creativity.</p>
         <P></p>
         <ul class="pivots">
             <li>
