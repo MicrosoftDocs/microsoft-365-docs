@@ -20,6 +20,9 @@ By following the instructions provided in this article, you'll be able to enroll
 
 ![Test Lab Guides for the Microsoft cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
   
+> [!TIP]
+> Click [here](https://aka.ms/m365etlgstack) for a visual map to all the articles in the Microsoft 365 Enterprise Test Lab Guide stack.
+
 ## Phase 1: Create your Microsoft 365 Enterprise test environment
 
 Follow the instructions in the [lightweight base configuration](lightweight-base-configuration-microsoft-365-enterprise.md).
