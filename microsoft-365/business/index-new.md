@@ -7,12 +7,12 @@ localization_priority: Normal
 audience: microsoft-business
 ms.prod: microsoft-365-business
 title: Microsoft 365 Business documentation and resources
-description: Learn about the product documentation and resources available for Microsoft 365 Business partners, IT admins, end user professionals, and business owners.
+description: Learn how to plan, deploy, and use Microsoft Office 365, Windows 10, and Enterprise Mobility + Security together in your business for an integrated and secure infrastructure that enables teamwork and unlocks creativity.
 ---
 <div id="main" class="v2">
     <div class="container">
         <h1>Microsoft 365 Business documentation and resources</h1>
-        <P>Learn about the product documentation and resources available for Microsoft 365 Business partners, IT admins, end user professionals, and business owners.</p>
+        <P>Learn how to plan, deploy, and use Microsoft Office 365, Windows 10, and Enterprise Mobility + Security together in your business for an integrated and secure infrastructure that enables teamwork and unlocks creativity.</p>
         <P></p>
         <ul class="pivots">
             <li>
