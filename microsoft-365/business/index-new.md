@@ -132,46 +132,46 @@ description: Learn how to plan, deploy, and use Microsoft Office 365, Windows 10
                                     </div>
                                 </div>
                             </li>
-                            <li class="fullSpan">
-                              <hr />
-                              <ul class="cardsF panelContent singlePanelContent" style="display:flex!important;">
+                                <li class="fullSpan">
+                                  <hr />
+                                  <ul class="cardsF panelContent singlePanelContent" style="display:flex!important;">
+                                    <li>
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="https://docs.microsoft.com/en-us/office/media/icons/users-people.svg" alt="Two people symbols" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Partners</h3>
+                                                    <P><a href="https://www.microsoft.com/solution-providers/search">Find a partner to help you</a></p>
+                                                    <P><a href="https://docs.microsoft.com/en-us/microsoft-365/business/#partner-resources">Partner resources</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li> 
                                 <li>
-                                <div class="cardSize">
-                                    <div class="cardPadding">
-                                        <div class="card">
-                                            <div class="cardImageOuter">
-                                                <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/en-us/office/media/icons/users-people.svg" alt="Two people symbols" />
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="https://docs.microsoft.com/en-us/office/media/icons/chat.svg" alt="chat icon" />
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="cardText">
-                                                <h3>Partners</h3>
-                                                <P><a href="https://www.microsoft.com/solution-providers/search">Find a partner to help you</a></p>
-                                                <P><a href="https://docs.microsoft.com/en-us/microsoft-365/business/#partner-resources">Partner resources</a></p>
+                                                <div class="cardText">
+                                                    <h3>Support</h3>
+                                                    <P><a href="https://support.office.com/en-us/article/contact-support-for-business-products-admin-help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b">Office support</a></p>
+                                                    <P><a href=" ">Windows support</a></p>
+                                                    <P><a href=" ">Enterprise mobility &amp; security support</a></p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </li> 
-                            <li>
-                                <div class="cardSize">
-                                    <div class="cardPadding">
-                                        <div class="card">
-                                            <div class="cardImageOuter">
-                                                <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/en-us/office/media/icons/chat.svg" alt="chat icon" />
-                                                </div>
-                                            </div>
-                                            <div class="cardText">
-                                                <h3>Support</h3>
-                                                <P><a href="https://support.office.com/en-us/article/contact-support-for-business-products-admin-help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b">Office support</a></p>
-                                                <P><a href=" ">Windows support</a></p>
-                                                <P><a href=" ">Enterprise mobility &amp; security support</a></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
+                                </li>
                             </li>
                         </ul>
                     </li>
