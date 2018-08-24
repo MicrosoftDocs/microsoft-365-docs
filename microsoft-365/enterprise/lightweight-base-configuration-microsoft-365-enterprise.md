@@ -202,6 +202,8 @@ You are now ready to experiment with additional features of [Microsoft 365 Enter
 Explore identity features and capabilities of Microsoft 365 Enterprise with these articles:
   
 - [Password hash synchronization](password-hash-sync-m365-ent-test-environment.md)
+- [Pass-through authentication](pass-through-auth-m365-ent-test-environment.md)
+- [Azure AD Seamless Single Sign-on](single-sign-on-m365-ent-test-environment.md)
 - [Multi-factor authentication](multi-factor-authentication-microsoft-365-test-environment.md)
 - [Protect global administrator accounts](protect-global-administrator-accounts-microsoft-365-test-environment.md)
 - [Automatic licensing and group membership](automate-licenses-group-membership-microsoft-365-test-environment.md)
