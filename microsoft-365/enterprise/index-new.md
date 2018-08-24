@@ -34,7 +34,6 @@ description: Learn about the product documentation and resources available for M
                                             <div class="cardText">
                                                 <h3>Explore</h3>
                                                 <P><a href="microsoft-365-overview">Overview</a></p>
-                                                <P><a href="https://technet.microsoft.com/library/mt846681.aspx">Service description</a></p>
                                                 <P><a href="https://docs.microsoft.com/Office365/Enterprise/microsoft-cloud-networking-for-enterprise-architects">Architecture models</a></p>
                                                 <P><a href="services-overview.md">Services &amp; concepts</a></p>
                                             </div>
@@ -52,7 +51,7 @@ description: Learn about the product documentation and resources available for M
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>Deploy</h3>
+                                                <h3>Deploy & secure</h3>
                                                 <P><a href="https://www.microsoft.com/fasttrack/microsoft-365">FastTrack</a></p>
                                                 <P><a href="deploy-microsoft-365-enterprise">Deployment guide</a></p>
                                                 <P><a href="microsoft-365-policies-configurations.md">Identity &amp; device access</a></p>
@@ -71,7 +70,7 @@ description: Learn about the product documentation and resources available for M
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>Manage Security & Compliance</h3>
+                                                <h3>Manage security & compliance</h3>
                                                 <P><a href="https://docs.microsoft.com/microsoft-365/compliance/compliance-solutions-overview">Compliance solutions</a></p>
                                                 <P><a href="https://docs.microsoft.com/Office365/SecurityCompliance/">Office 365 Security & Compliance</a></p>
                                             </div>
@@ -110,7 +109,7 @@ description: Learn about the product documentation and resources available for M
                                             <div class="cardText">
                                                 <h3>Manage Office 365</h3>
                                                 <P><a href="https://docs.microsoft.com/office365/enterprise/">Office 365 Enterprise</a></p>
-                                                <P><a href="https://support.office.com/office365admin">Office 365 Business</a></p>
+                                                <P><a href="https://support.office.com/office365admin">Office 365 for Business</a></p>
                                                 <P><a href="https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus">Office 365 ProPlus</a></p>
                                             </div>
                                         </div>
@@ -128,8 +127,8 @@ description: Learn about the product documentation and resources available for M
                                             </div>
                                             <div class="cardText">
                                                 <h3>Manage Enterprise Mobility + Security</h3>
-                                                <P><a href="https://docs.microsoft.com/intune/index">Intune</a></p>
                                                 <P><a href="https://docs.microsoft.com/azure/active-directory">Azure Active Directory</a></p>
+                                                <P><a href="https://docs.microsoft.com/intune/index">Intune</a></p>
                                                 <P><a href="https://docs.microsoft.com/azure/information-protection/">Azure Information Protection</a></p>
                                                 <P><a href="https://docs.microsoft.com/azure-advanced-threat-protection/">Azure Advanced Threat Protection</a></p>
                                             </div>
@@ -170,7 +169,7 @@ description: Learn about the product documentation and resources available for M
                                                     </div>
                                                     <div class="cardText">
                                                         <h3>Other Microsoft 365 products</h3>
-                                                        <P><a href="https://docs.microsoft.com/en-us/microsoft-365/business/">Microsoft 365 Business</a></p>
+                                                        <P><a href="https://docs.microsoft.com/en-us/microsoft-365/business/">Microsoft 365 for Business</a></p>
                                                         <P><a href="https://docs.microsoft.com/education/">Microsoft 365 Education</a></p>
                                                     </div>
                                                 </div>

@@ -165,7 +165,7 @@ description: Learn how to plan, deploy, and use Microsoft Office 365, Windows 10
                                                 <div class="cardText">
                                                     <h3>Need support?</h3>
                                                     <P><a href="https://support.office.com/en-us/article/contact-support-for-business-products-admin-help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b">Office 365 support</a></p>
-                                                    <P><a href=" ">Windows support</a></p>
+                                                    <P><a href="http://support.microsoft.com/products/windows">Windows 10 support</a></p>
                                                     <P><a href=" ">Enterprise Mobility + Security support</a></p>
                                                 </div>
                                             </div>
