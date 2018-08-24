@@ -64,24 +64,6 @@ description: Learn how to plan, deploy, and use Microsoft Office 365, Windows 10
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/en-us/office/media/icons/users-people.svg" alt="Two people symbols" />
-                                                </div>
-                                            </div>
-                                            <div class="cardText">
-                                                <h3>Partners</h3>
-                                                <P><a href="https://www.microsoft.com/solution-providers/search">Find a partner to help you</a></p>
-                                                <P><a href="https://docs.microsoft.com/en-us/microsoft-365/business/#partner-resources">Partner resources</a></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li> 
-                            <li>
-                                <div class="cardSize">
-                                    <div class="cardPadding">
-                                        <div class="card">
-                                            <div class="cardImageOuter">
-                                                <div class="cardImage">
                                                     <img src="https://docs.microsoft.com/en-us/office/media/icons/migration-blue.svg" alt="Migration symbol" />
                                                 </div>
                                             </div>
@@ -107,25 +89,6 @@ description: Learn how to plan, deploy, and use Microsoft Office 365, Windows 10
                                                 <h3>Security</h3>
                                                 <P><a href="https://support.office.com/en-us/article/microsoft-365-business-security-features-c123694a-1efb-459e-a8d5-2187975373dc#bkmk_additionalsecurity">Security features</a></p>
                                                 <P><a href="https://support.office.com/en-us/article/manage-microsoft-365-business-27ff1678-865a-4707-8145-e1155aa815d6?ui=en-US&rs=en-US&ad=US">Manage devices</a></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="cardSize">
-                                    <div class="cardPadding">
-                                        <div class="card">
-                                            <div class="cardImageOuter">
-                                                <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/en-us/office/media/icons/chat.svg" alt="chat icon" />
-                                                </div>
-                                            </div>
-                                            <div class="cardText">
-                                                <h3>Support</h3>
-                                                <P><a href="https://support.office.com/en-us/article/contact-support-for-business-products-admin-help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b">Office support</a></p>
-                                                <P><a href=" ">Windows support</a></p>
-                                                <P><a href=" ">Enterprise mobility &amp; security support</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -164,6 +127,43 @@ description: Learn how to plan, deploy, and use Microsoft Office 365, Windows 10
                                                 <P><a href="https://support.office.com/en-us/article/set-up-windows-devices-for-microsoft-365-business-users-2d7ff45e-0da0-4caa-89a9-48cabf41f193">Set up Windows 10 PCs</a></p>
                                                 <P><a href="https://support.office.com/en-us/article/remove-company-data-from-devices-80bdae57-f8bc-4e40-a58c-956007117ecb">Remove data from Windows PCs</a></p>
                                                 <P><a href="https://support.office.com/en-us/article/reset-windows-10-devices-to-their-factory-settings-c4db6caf-74df-4734-b1dd-53e371c7a3c3">Reset Windows 10 PCs</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardImageOuter">
+                                                <div class="cardImage">
+                                                    <img src="https://docs.microsoft.com/en-us/office/media/icons/users-people.svg" alt="Two people symbols" />
+                                                </div>
+                                            </div>
+                                            <div class="cardText">
+                                                <h3>Partners</h3>
+                                                <P><a href="https://www.microsoft.com/solution-providers/search">Find a partner to help you</a></p>
+                                                <P><a href="https://docs.microsoft.com/en-us/microsoft-365/business/#partner-resources">Partner resources</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li> 
+                            <li>
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardImageOuter">
+                                                <div class="cardImage">
+                                                    <img src="https://docs.microsoft.com/en-us/office/media/icons/chat.svg" alt="chat icon" />
+                                                </div>
+                                            </div>
+                                            <div class="cardText">
+                                                <h3>Support</h3>
+                                                <P><a href="https://support.office.com/en-us/article/contact-support-for-business-products-admin-help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b">Office support</a></p>
+                                                <P><a href=" ">Windows support</a></p>
+                                                <P><a href=" ">Enterprise mobility &amp; security support</a></p>
                                             </div>
                                         </div>
                                     </div>
