@@ -40,12 +40,13 @@ There are two phases to setting up this test environment:
 
 Follow the instructions in [password hash synchronization for Microsoft 365](password-hash-sync-m365-ent-test-environment.md). Here is your resulting configuration.
   
-![The simulated enterprise with password hash synchronization test environment](media/password-hash-sync-m365-ent-test-environment/Phase2.png)
+![The simulated enterprise with password hash synchronization test environment](media/password-hash-sync-m365-ent-test-environment/Phase3.png)
   
 This configuration consists of: 
   
 - Office 365 E5 and EMS E5 trial or permanent subscriptions.
-- A simplified organization intranet connected to the Internet, consisting of the DC1, APP1, and CLIENT1 virtual machines on a subnet of an Azure virtual network. Azure AD Connect runs on APP1 to synchronize the TESTLAB Windows Server AD domain to the Azure AD tenant of your Office 365 and EMS E5 subscriptions periodically.
+- A simplified organization intranet connected to the Internet, consisting of the DC1, APP1, and CLIENT1 virtual machines on a subnet of an Azure virtual network. 
+- Azure AD Connect runs on APP1 to synchronize the TESTLAB Windows Server AD domain to the Azure AD tenant of your Office 365 and EMS E5 subscriptions periodically.
 
 ## Phase 2: Configure Azure AD Connect on APP1 for Azure AD Seamless SSO
 
@@ -75,7 +76,7 @@ In this phase, you configure Azure AD Connect on APP1 for Azure AD Seamless SSO,
 
 11. From the Azure portal, in the left pane, click **Azure Active Directory > Azure AD Connect**. Verify that the **Seamless single sign-on** feature appears as **Enabled**.
 
-Next, test the ability to sign in to your Office 365 subscription with the user1@testlab.\<your public domain> user name of the User1 account.
+Next, test the ability to sign in to your Office 365 subscription with the **user1@testlab.**\<your public domain> user name of the User1 account.
 
 1. From Internet Explorer on APP1, click the settings icon, and then click **Internet Options**.
  

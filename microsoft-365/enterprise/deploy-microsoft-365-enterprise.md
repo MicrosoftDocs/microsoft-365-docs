@@ -3,7 +3,7 @@ title: "Deploy Microsoft 365 Enterprise"
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 06/27/2018
+ms.date: 08/23/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,7 +13,7 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom:
 
-description: Understand the major phases of deploying Microsoft 365 Enterprise in your organization.
+description: Understand the resources you can use to deploy Microsoft 365 Enterprise in your organization.
 ---
 
 # Deploy Microsoft 365 Enterprise
@@ -53,6 +53,77 @@ With TLGs, you can demonstrate, customize, or build a proof of concept of a comp
 For more information, see [Microsoft 365 Enterprise Test Lab Guides](m365-enterprise-test-lab-guides.md).
 
 ![Test Lab Guides for the Microsoft cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+
+## How customers use Microsoft 365 Enterprise
+
+See these resources to learn how customers are using Microsoft 365 Enterprise as their complete, intelligent solution that empowers everyone to be creative and work together securely:
+
+- Health services
+  - [Lilly strives to speed innovation with help from Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/blog/2018/07/16/lilly-strives-to-speed-innovation-with-help-from-microsoft-365-enterprise/?ms.o365url=lilly)
+  - [Healthcare technology innovator accelerates diabetes prevention in the cloud ](https://aka.ms/Soleracasestudy)
+  - [Adventist Health System is enhancing healthcare delivery using Microsoft 365](https://aka.ms/adventisthealth)
+  - [Abrona accelerates GDPR compliance and increases productivity with Microsoft 365](https://aka.ms/Abrona)
+  - [Centra embraces transformation, improves patient care with Microsoft 365 intelligent business tools](https://aka.ms/Centra_Health)
+- Financial services
+  - [TD Bank empowers employees with assistive technology in Office 365 and Windows 10](https://aka.ms/tdbankgroup)
+  - [Family tax preparation startup chooses all-in-one solution to help grow business](https://aka.ms/SOSCaseStudy)
+- Manufacturing
+  - [Steel company eliminates hardware costs, streamlines IT, and gains mobile productivity in the cloud](https://aka.ms/Steeledalecasestudy)
+  - [Embroidery equipment supplier empowers its business with cloud-based services, spreads word to other small businesses](https://aka.ms/PriorityLLCCaseStudy)
+- Professional services
+  - [Boutique business and real estate law firm supports expansion with comprehensive cloud-based platform ](https://aka.ms/Lieserskaffcasestudy)
+  - [Sports technology company helps athletes reach their peak through biofeedback and analytics ](https://aka.ms/KMOTIONCasestudy)
+  - [Digital transformation and the cloud empower business association to serve its members better ](https://aka.ms/AIMCS)
+- Energy services
+  - [Schlumberger refines global teamwork with Microsoft 365](https://aka.ms/Schlumberger_)
+- Construction
+  - [Search for data security solution unearths collaborative capabilities of Microsoft 365 at general contracting company](https://aka.ms/Transbluecasestudy)
+
+## How Microsoft does Microsoft 365 Enterprise
+
+Take a peek inside Microsoft and learn how we use Microsoft 365 Enterprise.
+
+### Networking
+
+- [Optimizing network performance for Microsoft Office 365](https://www.microsoft.com/itshowcase/Article/Content/631/Optimizing-network-performance-for-Microsoft-Office-365).
+
+### Identity
+
+- [Managing user identities and secure access at Microsoft](https://www.microsoft.com/itshowcase/Article/Content/931/Managing-user-identities-and-secure-access-at-Microsoft)
+- [Using Azure AD Privileged Identity Management for elevated access](https://www.microsoft.com/itshowcase/Article/Content/887/Using-Azure-AD-Privileged-Identity-Management-for-elevated-access)
+
+### Windows 10 Enterprise
+
+- [Preparing your organization for a seamless Windows 10 deployment](https://www.microsoft.com/itshowcase/windows10deployment?wt.mc_id=bmkg_itsc)
+- [Adopting Windows as a service at Microsoft](https://www.microsoft.com/itshowcase/Article/Content/851/Adopting-Windows-as-a-service-at-Microsoft)
+- [Deploying Windows 10 at Microsoft as an in-place upgrade](https://www.microsoft.com/itshowcase/Article/Content/668/Deploying-Windows-10-at-Microsoft-as-an-inplace-upgrade)
+- [Implementing strong user authentication with Windows Hello for Business](https://www.microsoft.com/itshowcase/Article/Content/756/Implementing-strong-user-authentication-with-Windows-Hello-for-Business)
+- [Windows 10 deployment: tips and tricks from Microsoft IT](https://www.microsoft.com/itshowcase/Article/Content/951/Windows-10-deployment-tips-and-tricks-from-Microsoft-IT) (video)
+- [Windows Defender ATP helps detect sophisticated threats](https://www.microsoft.com/itshowcase/Article/Content/854/Windows-Defender-ATP-helps-detect-sophisticated-threats)
+- [Securing the modern enterprise with Windows Defender and Windows Defender ATP](https://www.microsoft.com/itshowcase/Article/Content/903/Securing-the-modern-enterprise-with-Windows-Defender-and-Windows-Defender-ATP) (video)
+
+### Office 365 ProPlus
+
+- [Preparing your organization for a seamless Office 365 ProPlus 2016 deployment](https://www.microsoft.com/itshowcase/Office365adoption)
+- [Deploying and updating Microsoft Office 365 ProPlus](https://www.microsoft.com/itshowcase/Article/Content/757/Deploying-and-updating-Microsoft-Office-365-ProPlus)
+- [Automation and update channels help deploy Microsoft Office 365 ProPlus](https://www.microsoft.com/itshowcase/Article/Content/794/Automation-and-update-channels-help-deploy-Microsoft-Office-365-ProPlus) (video)
+
+### Security and information protection
+
+- [Protecting files in the cloud with Azure Information Protection](https://www.microsoft.com/itshowcase/Article/Content/924/Protecting-files-in-the-cloud-with-Azure-Information-Protection)
+- [Microsoft uses threat intelligence to protect, detect, and respond to threats](https://www.microsoft.com/itshowcase/Article/Content/934/Microsoft-uses-threat-intelligence-to-protect-detect-and-respond-to-threats)
+- [Microsoft thwarts phishing attempts with Office 365](https://www.microsoft.com/itshowcase/Article/Content/956/Microsoft-thwarts-phishing-attempts-with-Office-365)
+
+### Microsoft Teams
+
+- [Deploying Microsoft Teams streamlines collaboration and improves teamwork](https://www.microsoft.com/itshowcase/Article/Content/1013/Deploying-Microsoft-Teams-streamlines-collaboration-and-improves-teamwork)
+- [Microsoft Teams increases collaboration in the modern workplace at Microsoft](https://www.microsoft.com/itshowcase/Article/Content/1012/Microsoft-Teams-increases-collaboration-in-the-modern-workplace-at-Microsoft)
+
+### Data migration
+
+- [Microsoft migrates 150,000 mailboxes to Exchange Online](https://www.microsoft.com/itshowcase/Article/Content/577/Microsoft-migrates-150000-mailboxes-to-Exchange-Online)
+- [SharePoint to the cloud: Learn how Microsoft ran its own migration](https://www.microsoft.com/itshowcase/Article/Content/691/SharePoint-to-the-cloud-Learn-how-Microsoft-ran-its-own-migration)
+
 
 ## Additional Microsoft 365 solutions
 
