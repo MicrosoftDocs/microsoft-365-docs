@@ -79,13 +79,13 @@ See these resources to learn how customers are using Microsoft 365 Enterprise as
 - Construction
   - [Search for data security solution unearths collaborative capabilities of Microsoft 365 at general contracting company](https://aka.ms/Transbluecasestudy)
 
-## How Microsoft does Microsoft 365 Enterprise
+## How Microsoft uses Microsoft 365 Enterprise
 
 Take a peek inside Microsoft and learn how we use Microsoft 365 Enterprise.
 
 ### Networking
 
-- [Optimizing network performance for Microsoft Office 365](https://www.microsoft.com/itshowcase/Article/Content/631/Optimizing-network-performance-for-Microsoft-Office-365).
+- [Optimizing network performance for Microsoft Office 365](https://www.microsoft.com/itshowcase/Article/Content/631/Optimizing-network-performance-for-Microsoft-Office-365)
 
 ### Identity
 
