@@ -132,7 +132,10 @@ description: Learn how to plan, deploy, and use Microsoft Office 365, Windows 10
                                     </div>
                                 </div>
                             </li>
-                            <li>
+                            <li class="fullSpan">
+                              <hr />
+                              <ul class="cardsF panelContent singlePanelContent" style="display:flex!important;">
+                                <li>
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
@@ -168,6 +171,7 @@ description: Learn how to plan, deploy, and use Microsoft Office 365, Windows 10
                                         </div>
                                     </div>
                                 </div>
+                            </li>
                             </li>
                         </ul>
                     </li>
