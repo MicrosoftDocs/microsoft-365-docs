@@ -1,13 +1,13 @@
 ---
-title: Microsoft 365 Enterprise | Microsoft docs
+title: Microsoft 365 Enterprise overview
 description: Provides an overview and describes Microsoft 365 Enterprise services.
-author: barlanmsft
-manager: angrobe
+author: JoeDavies-MSFT
+manager: laurawi
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 09/15/2017
-ms.author: barlan
-ms.reviewer: jsnow
+ms.author: josephd
+ms.collection: Ent_O365
 ms.custom: it-pro
 ---
 
