@@ -13,7 +13,7 @@ description: Learn about the product documentation and resources available for M
 <div id="main" class="v2">
     <div class="container">
         <h1>Microsoft 365 Enterprise documentation and resources</h1>
-        <P>Learn how to plan, deploy, and use Microsoft Office 365, Windows 10, and Enterprise Mobility + Security together in your enterprise organization for an integrated and secure infrastructure that enables teamwork and unlocks creativity.</p>
+        <P>Learn how to plan, deploy, and use Microsoft Office 365, Windows 10, and Enterprise Mobility + Security together in your organization. These services provide an integrated and secure infrastructure that enables teamwork and unlocks creativity.</p>
         <P></p>
         <ul class="pivots">
             <li>
@@ -91,7 +91,7 @@ description: Learn about the product documentation and resources available for M
                                                 <h3>Train your users</h3>
                                                 <P><a href="https://support.office.com/en-us/office-training-center">Office 365</a></p>
                                                 <P><a href="https://www.microsoft.com/itpro/windows-10/end-user-readiness">Windows 10</a></p>
-                                                <P><a href="https://docs.microsoft.com/intune-user-help/use-managed-devices-to-get-work-done">Intune</a></p>
+                                                <P><a href="https://docs.microsoft.com/intune-user-help/use-managed-devices-to-get-work-done">Intune & Company Portal app</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -128,7 +128,7 @@ description: Learn about the product documentation and resources available for M
                                             <div class="cardText">
                                                 <h3>Manage Enterprise Mobility + Security</h3>
                                                 <P><a href="https://docs.microsoft.com/azure/active-directory">Azure Active Directory</a></p>
-                                                <P><a href="https://docs.microsoft.com/intune/index">Intune</a></p>
+                                                <P><a href="https://docs.microsoft.com/intune/index">Intune in Azure</a></p>
                                                 <P><a href="https://docs.microsoft.com/azure/information-protection/">Azure Information Protection</a></p>
                                                 <P><a href="https://docs.microsoft.com/azure-advanced-threat-protection/">Azure Advanced Threat Protection</a></p>
                                             </div>
