@@ -35,7 +35,6 @@ description: Learn about the product documentation and resources available for M
                                                 <h3>Explore</h3>
                                                 <P><a href="microsoft-365-overview">Overview</a></p>
                                                 <P><a href="https://docs.microsoft.com/Office365/Enterprise/microsoft-cloud-networking-for-enterprise-architects">Architecture models</a></p>
-                                                <P><a href="services-overview.md">Services &amp; concepts</a></p>
                                             </div>
                                         </div>
                                     </div>
