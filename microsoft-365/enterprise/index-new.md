@@ -188,6 +188,7 @@ description: Learn about the product documentation and resources available for M
                                                     </div>
                                                     <div class="cardText">
                                                         <h3>Need support?</h3>
+                                                        <P><a href="https://azure.microsoft.com/support/options/">Azure</a></p>
                                                         <P><a href="https://support.office.com/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b">Office 365</a></p>
                                                         <P><a href="http://support.microsoft.com/products/windows">Windows 10</a></p>
                                                     </div>
