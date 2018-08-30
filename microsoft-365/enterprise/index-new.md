@@ -138,7 +138,7 @@ description: Learn about the product documentation and resources available for M
                             </li>
                             <li class="fullSpan">
                               <hr />
-                              <hr />
+                              <br>
                               <ul class="cardsF panelContent singlePanelContent" style="display:flex!important;">
                                     <li>
                                         <div class="cardSize">
