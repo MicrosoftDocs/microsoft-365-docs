@@ -70,6 +70,8 @@ See these resources to learn how customers are using Microsoft 365 Enterprise as
 - Manufacturing
   - [Steel company eliminates hardware costs, streamlines IT, and gains mobile productivity in the cloud](https://aka.ms/Steeledalecasestudy)
   - [Embroidery equipment supplier empowers its business with cloud-based services, spreads word to other small businesses](https://aka.ms/PriorityLLCCaseStudy)
+- Engineering
+   - [Cadence increases the pace of business with mobile collaboration tools](https://customers.microsoft.com/story/cadence-partner-professional-services-microsoft-365)
 - Professional services
   - [Boutique business and real estate law firm supports expansion with comprehensive cloud-based platform ](https://aka.ms/Lieserskaffcasestudy)
   - [Sports technology company helps athletes reach their peak through biofeedback and analytics ](https://aka.ms/KMOTIONCasestudy)
