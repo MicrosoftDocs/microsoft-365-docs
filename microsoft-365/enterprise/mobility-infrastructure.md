@@ -57,7 +57,7 @@ There may be some additional requirements, depending on your organization's need
 
 ## Step 3: Set up Intune
 
-Intune uses many features in Azure AD, including your domain, your users, and your groups. You can also create new users and new groups. For example, you can create a group called **iOS devices**, or **All HR users**.
+Intune uses many features in Azure AD, including your domain, your users, and your groups. You can also create new users and new groups to fit your company needs. For example, you can create a group called **iOS devices**, or **All HR users**.  Take advantage of [Dynamic Groups](https://docs.microsoft.com/en-us/intune/groups-add) that lets you build either user or device groups based around simple or advanced rules.
 
 This step focuses on setting up Intune, and getting it ready for you to manage your devices.
 
