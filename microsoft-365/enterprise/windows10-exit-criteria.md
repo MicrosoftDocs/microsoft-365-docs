@@ -30,12 +30,15 @@ If you do not do so, you will be limited in the authentication methods that you 
 
 If needed, [Step 1](windows10-prepare-your-org.md) can help you with this requirement.
 
-<a name="crit-windows10-step1"></a>
 ## Optional: Your users are added and licensed
 
 The accounts corresponding to your users are added, either directly to your Azure AD tenant for your Office 365 and Intune subscriptions, or from directory synchronization from your on-premises Windows Server AD.
 
 Once the users are added, you can assign them Microsoft 365 Enterprise licenses, either directly as a global or user administrator, or automatically through group membership.
+
+If needed, [Step 1](windows10-prepare-your-org.md) can help you with this option.
+
+## Optional: Diagnostics are enabled
 
 You have enabled diagnostic data settings using Group Policy, Microsoft Intune, the Registry Editor, or at the command prompt.
 

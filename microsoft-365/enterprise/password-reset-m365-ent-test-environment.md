@@ -68,7 +68,7 @@ Next, you test password reset for the User 2 account.
 4. After both are verified, click **Looks good** and close the private instance of the browser.
 5. Open a new private browser instance and go to https://aka.ms/sspr.
 6. Sign in with the User 2 account credentials, type the characters from the CAPTCHA, and then click **Next**.
-8. For verification step 1, click **Email my alternate email**, and then click **Email**. When you receive the email, type the verification code, and then click **Next**.
+8. For **verification step 1**, click **Email my alternate email**, and then click **Email**. When you receive the email, type the verification code, and then click **Next**.
 9. In **Get back into your account**, type a new password for the User 2 account, and then click **Finish**. Note the changed password of the User 2 account and store it in a safe location.
 10. In a separate tab of the same browser, type https://portal.office.com, and then sign in with the User 2 account name and its new password. You should see the **Office Home** page.
 
