@@ -73,6 +73,7 @@
 ## [Recommended SharePoint Online access policies](sharepoint-file-access-policies.md)
 
 # [Compliance solutions](../compliance/compliance-solutions-overview.md?toc=/microsoft-365/enterprise/toc.json)
+## [ISO — Recommended action plan](../compliance/iso-action-plan.md)
 ## [GDPR](../compliance/gdpr.md?toc=/microsoft-365/enterprise/toc.json)
 
 ### [Recommended action plan for GDPR](../compliance/gdpr-action-plan.md)
