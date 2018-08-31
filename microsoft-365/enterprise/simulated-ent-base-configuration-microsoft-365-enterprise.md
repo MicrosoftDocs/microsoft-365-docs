@@ -30,6 +30,9 @@ You can use the resulting environment to test the features and functionality of 
 
 ![Test Lab Guides for the Microsoft cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
+> [!TIP]
+> Click [here](https://aka.ms/m365etlgstack) for a visual map to all the articles in the Microsoft 365 Enterprise Test Lab Guide stack.
+
 ## Phase 1: Create DC1
 
 In this phase, we create an Azure virtual network and add DC1, a virtual machine which is a domain controller for a Windows Server Active Directory (AD) domain.
@@ -375,7 +378,9 @@ You are now ready to experiment with additional features of [Microsoft 365 Enter
 
 Explore identity features and capabilities of Microsoft 365 Enterprise with these articles:
 
-- [Password hash synchronization](password-hash-sync-m365-ent-test-environment.md)  
+- [Password hash synchronization](password-hash-sync-m365-ent-test-environment.md)
+- [Pass-through authentication](pass-through-auth-m365-ent-test-environment.md)
+- [Azure AD Seamless Single Sign-on](single-sign-on-m365-ent-test-environment.md)
 - [Multi-factor authentication](multi-factor-authentication-microsoft-365-test-environment.md)
 - [Protect global administrator accounts](protect-global-administrator-accounts-microsoft-365-test-environment.md)
 - [Automatic licensing and group membership](automate-licenses-group-membership-microsoft-365-test-environment.md)

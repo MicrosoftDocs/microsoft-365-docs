@@ -5,8 +5,8 @@ author: BrendaCarter
 manager: laurawi
 ms.prod: microsoft-365-enterprise
 ms.topic: article
-
 ms.author: bcarter
+ms.date: 06/07/2018
 ms.reviewer: martincoetzer
 ms.custom: 
 - it-pro

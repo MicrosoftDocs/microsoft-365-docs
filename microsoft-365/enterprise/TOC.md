@@ -1,4 +1,5 @@
 # [Microsoft 365 Enterprise documentation and resources](index.md)
+# [Microsoft 365 Enterprise overview](microsoft-365-overview.md)
 # [Deploy Microsoft 365 Enterprise](deploy-microsoft-365-enterprise.md)
 ## [Deploy foundation infrastructure](deploy-foundation-infrastructure.md)
 ### [Phase 1: Networking](networking-infrastructure.md)
@@ -56,6 +57,7 @@
 ### [Identity]()
 #### [Password hash sync](password-hash-sync-m365-ent-test-environment.md)
 #### [Pass-through authentication](pass-through-auth-m365-ent-test-environment.md)
+#### [Azure AD Seamless Single Sign-on](single-sign-on-m365-ent-test-environment.md)
 #### [Multi-factor authentication](multi-factor-authentication-microsoft-365-test-environment.md)
 #### [Protect global administrator accounts](protect-global-administrator-accounts-microsoft-365-test-environment.md)
 #### [Automatic licensing and group membership](automate-licenses-group-membership-microsoft-365-test-environment.md)
@@ -63,8 +65,6 @@
 ### [Mobile device management]()
 #### [Enroll iOS and Android devices](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
 #### [MAM policies](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
-
-# [Services and concepts](services-overview.md)
 
 # [Identity and device access configurations](microsoft-365-policies-configurations.md)
 ##[Prerequisite work](identity-access-prerequisites.md)
