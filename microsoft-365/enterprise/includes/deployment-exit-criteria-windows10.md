@@ -14,6 +14,8 @@ The accounts corresponding to your users are added, either directly to your Azur
 
 Once the users are added, you can assign them Microsoft 365 Enterprise licenses, either directly as a global or user administrator, or automatically through group membership.
 
+You have enabled diagnostic data settings using Group Policy, Microsoft Intune, the Registry Editor, or at the command prompt.
+
 If needed, [Step 1](../windows10-prepare-your-org.md) can help you with this option.
 
 <a name="crit-windows10-step2"></a>

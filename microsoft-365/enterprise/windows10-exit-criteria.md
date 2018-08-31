@@ -1,7 +1,7 @@
 ---
 title: "Phase 3: Windows 10 Enterprise infrastructure exit criteria"
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: greglin
+author: greg-lindsay
 manager: laurawi
 ms.date: 06/01/2018
 ms.audience: ITPro
@@ -36,6 +36,8 @@ If needed, [Step 1](windows10-prepare-your-org.md) can help you with this requir
 The accounts corresponding to your users are added, either directly to your Azure AD tenant for your Office 365 and Intune subscriptions, or from directory synchronization from your on-premises Windows Server AD.
 
 Once the users are added, you can assign them Microsoft 365 Enterprise licenses, either directly as a global or user administrator, or automatically through group membership.
+
+You have enabled diagnostic data settings using Group Policy, Microsoft Intune, the Registry Editor, or at the command prompt.
 
 If needed, [Step 1](windows10-prepare-your-org.md) can help you with this option.
 
