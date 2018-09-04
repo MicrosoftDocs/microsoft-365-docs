@@ -34,7 +34,7 @@ description: Learn about the product documentation and resources available for M
                                             <div class="cardText">
                                                 <h3>Explore</h3>
                                                 <P><a href="microsoft-365-overview">Overview</a></p>
-                                                <P><a href="https://docs.microsoft.com/Office365/Enterprise/microsoft-cloud-networking-for-enterprise-architects">Architecture models</a></p>
+                                                <P><a href="https://docs.microsoft.com/Office365/Enterprise/microsoft-cloud-it-architecture-resources">Architecture models</a></p>
                                             </div>
                                         </div>
                                     </div>
