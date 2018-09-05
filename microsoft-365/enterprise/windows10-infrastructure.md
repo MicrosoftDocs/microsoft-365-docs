@@ -2,13 +2,13 @@
 title: Windows 10 Enterprise infrastructure for Microsoft 365 Enterprise
 description: Provides a high-level guidance on the steps you need to deploy Windows 10 Enterprise on PCs as part of Microsoft 365 Enterprise.
 keywords: Microsoft 365, Microsoft 365 Enterprise, Microsoft 365 documentation, Windows 10 Enterprise, deployment
-author: CelesteDG
+author: greg-lindsay
 localization_priority: Normal
 audience: microsoft-business
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 06/28/2018
-ms.author: celested
+ms.author: greglin
 ---
 
 # Phase 3: Windows 10 Enterprise
@@ -37,6 +37,7 @@ Windows 10 enables these strategic business scenarios for Microsoft 365 Enterpri
 For more information, see the [Discover Value tool](https://online.valuediscoveryworkshop.com/). 
 
 ## Windows 10 deployment
+
 There are multiple ways you can deploy Windows 10 Enterprise for your organization. Here, we'll focus on how you can configure and deploy a Windows 10 Enterprise image through these modern deployment scenarios.
 
 | Deployment scenario | When to use it |
@@ -57,7 +58,9 @@ You can learn more about Windows 10 with these articles:
 As part of your deployment of Windows 10 Enterprise, you can add these additional services and features.
 
 ### Windows Analytics
+
 Windows uses diagnostics data to provide rich, actionable information to help you gain deep insights into operational efficiency and the health of Windows 10 devices in your environment.
+
 * Upgrade Readiness - Upgrade Readiness will help you move to Windows 10 and stay current with new Windows 10 Feature Updates. 
 * Update Compliance - Update Compliance is targeted to the IT admin who wants to gain a holistic view of all their Windows 10 devices, without any additional infrastructure requirements.
 * Device Health - You can use Device Health to proactively detect and remediate end-user impacting issues.
@@ -65,6 +68,7 @@ Windows uses diagnostics data to provide rich, actionable information to help yo
 See [Windows Analytics Overview](https://docs.microsoft.com/windows/deployment/update/windows-analytics-overview) for more information.
 
 ### Windows security
+
 Windows 10 provides features to help protect against threats, help you secure your devices, and help with access control. With Windows 10, you get critical security features that protect your device right from the start. Microsoft 365 E3 adds security features such as Windows Hello for Business, Windows Defender Application Control, and Windows Information Protection. With Microsoft 365 E5, you get all the protection from Microsoft 365 E3 security plus cloud-based security features and Windows Defender Advanced Threat Protection. 
 
 To learn more about the security features that you get with Windows 10 Enterprise and get guidance on how you can deploy, manage, configure, and troubleshoot three key ecurity features, see [Step 5: Deploy Windows 10 Enterprise security features](windows10-enable-security-features.md).

@@ -1,17 +1,17 @@
 ---
-title: Use Windows Analytics to monitor device health
+title: Monitor device health and compliance
 description: Provides guidance about using Windows Analytics to monitor device health for Microsoft 365 Enterprise.
 keywords: Microsoft 365, Microsoft 365 Enterprise, Microsoft 365 documentation, Windows 10 Enterprise, Windows Analytics
-author: CelesteDG
+author: greg-lindsay
 localization_priority: Normal
 audience: microsoft-business
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 06/01/2018
-ms.author: celested
+ms.author: greglin
 ---
 
-# Step 4: Use Windows Analytics to monitor device health
+# Step 4: Monitor device health and compliance
 
 ![](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
 
