@@ -51,8 +51,7 @@ description: Learn how to plan, deploy, and use Microsoft Office 365, Windows 10
                                             </div>
                                             <div class="cardText">
                                                 <h3>Set up Microsoft 365 Business</h3>
-                                                <P><a href="https://support.office.com/article/set-up-microsoft-365-business-by-using-the-setup-wizard-6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece?ui=en-US&rs=en-US&ad=US">Set up in cloud only</a></p>
-                                                <P><a href=" ">Set up with domain-joined devices</a></p>
+                                                <P><a href="https://support.office.com/article/set-up-microsoft-365-business-by-using-the-setup-wizard-6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece?ui=en-US&rs=en-US&ad=US">Set up</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -69,7 +68,6 @@ description: Learn how to plan, deploy, and use Microsoft Office 365, Windows 10
                                             </div>
                                             <div class="cardText">
                                                 <h3>Move to Microsoft 365 Business</h3>
-                                                <P><a href=" ">Move from Office 365 Enterprise E3</a></p>
                                                 <P><a href="https://support.office.com/en-us/article/migrate-to-microsoft-365-business-from-another-subscription-5b4ba843-24b8-4526-8e1f-f9b9eab89d06?ui=en-US&rs=en-US&ad=US">Move from Office 365 Business Premium</a></p>
                                             </div>
                                         </div>
@@ -89,6 +87,7 @@ description: Learn how to plan, deploy, and use Microsoft Office 365, Windows 10
                                                 <h3>Security</h3>
                                                 <P><a href="https://support.office.com/en-us/article/microsoft-365-business-security-features-c123694a-1efb-459e-a8d5-2187975373dc">Security features</a></p>
                                                 <P><a href="https://support.office.com/article/manage-microsoft-365-business-27ff1678-865a-4707-8145-e1155aa815d6">Manage devices</a></p>
+                                                <P><a href="https://support.office.com/en-us/article/top-10-ways-to-secure-office-365-and-microsoft-365-business-plans-from-cyber-threats-de2da300-dbb6-4725-bb12-b85a9d296e75">Top 10 ways to secure Microsoft 365 Business</a></p>
                                             </div>
                                         </div>
                                     </div>
