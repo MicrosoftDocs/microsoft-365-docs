@@ -42,6 +42,6 @@ The contact details for the Data Protection Officer has been communicated to Mic
 
 ## Learn more
 
-[Microsoft Trust Center](https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx)
+[Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
 
 
