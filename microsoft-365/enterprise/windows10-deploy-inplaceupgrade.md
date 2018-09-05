@@ -2,13 +2,13 @@
 title: Deploy Windows 10 Enterprise for existing devices as an in-place upgrade
 description: Provides guidance on configuring and deploying a Windows 10 Enterprise image using System Center Configuration Manager as an in-place upgrade.
 keywords: Microsoft 365, Microsoft 365 Enterprise, Microsoft 365 documentation, Windows 10 Enterprise, deployment, in-place upgrade, Configuration Manager, System Center Configuration Manager
-author: CelesteDG
+author: greg-lindsay
 localization_priority: Normal
 audience: microsoft-business
 ms.prod: microsoft-365-enterprise
 ms.topic: article
-ms.date: 06/01/2018
-ms.author: celested
+ms.date: 08/30/2018
+ms.author: greglin
 ---
 
 # Step 2: Deploy Windows 10 Enterprise for existing devices as an in-place upgrade
@@ -23,31 +23,7 @@ If you have existing computers running Windows 7 or Windows 8.1, we recommend th
 
 Follow these steps to configure and deploy a Windows 10 Enterprise image using Configuration Manager as an in-place upgrade.
 
-## Part 1: Set Windows diagnostics data level
-Microsoft uses diagnostic data to help keep Windows devices secure by identifying malware trends and other threats and to help us improve the quality of Windows and Microsoft services. You must ensure that the diagnostics service is enabled at a minimum level of Basic on all endpoints in your organization. *By default, this service is enabled and set to the Enhanced level.* However, it’s good practice to check and ensure that they are receiving sensor data. Setting levels through policies overrides device-level settings. 
-
-**Windows 10 operating system diagnostic data levels**
-
-You can configure your operating system diagnostic data settings using the management tools you’re already using, such as Group Policy, MDM, or Windows Provisioning. You can also manually change your settings using Registry Editor. Setting your diagnostic data levels through a management policy overrides any device level settings.
-
-Use the appropriate value in the table below when you configure the management policy.
-
-| Level | Data gathered | Value |
-|:--- |:--- |:--- |
-| Security | Security data only. | 0 |
-| Basic | Security data, and basic system and quality data. | 1 |
-| Enhanced | Security data, basic system and quality data, and enhanced insights and advanced reliability data. | 2 |
-| Full | Security data, basic system and quality data, enhanced insights and advanced reliability data, and full diagnostics data. | 3 |
-
-You can enable diagnostics data through any of these methods:
-* **Microsoft Intune** - If you plan to use Intune to manage your devices, you can create a configuration policy to enable diagnostic data by configuring the <a href="https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-system#system-allowtelemetry" target="blank">SystemAllowTelemetry</a> system policy. For more info on setting up configuration policies, see [Manage settings and features on your devices with Microsoft Intune policies](https://aka.ms/intuneconfigpolicies).
-* **Registry Editor** - You can use the Registry Editor to manually enable diagnostic data on each device in your organization. Alternately, you can write a script to edit the registry. If a management policy already exists, such as Group Policy or MDM, it will override this registry setting.
-* **Group Policy** - If you do not plan to enroll devices in Intune, you can use a Group Policy object to set your organization’s diagnostic data level.
-* **Command prompt** - You can set Windows 10 diagnostics data and service to automatically start with the command prompt. This method is best if you are testing the service on only a few devices. Enabling the service to start automatically with this command will not configure the diagnostic data level. If you have not configured a diagnostic data level using management tools, the service will operate with the default Enhanced level.
-
-See [Configure Windows diagnostic data in your organization](https://docs.microsoft.com/en-us/windows/configuration/configure-windows-diagnostic-data-in-your-organization) to learn more about Windows diagnostic data and how you can enable it based on the method that you choose.
-
-## Part 2: Verify readiness to upgrade Windows
+## Part 1: Verify readiness to upgrade Windows
 
 First, use the Upgrade Readiness capability of Windows Analytics to provide powerful insights and recommendations about the computers, applications, and drivers in your organization, at no extra cost and without additional infrastructure requirements. This new service guides you through upgrade and feature update projects using a workflow based on Microsoft recommended practices. Up-to-date inventory data allows you to balance cost and risk in your upgrade projects.
 
@@ -75,7 +51,7 @@ Review these requirements before starting your Windows 10 deployment:
     6. Create a Configuration Manager console folder structure for packages.
     7. Install System Center Configuration Manager (Current Branch) updates and any additional Windows 10 prerequisites.
 
-## Part 3: Add a Windows 10 OS image using Configuration Manager
+## Part 2: Add a Windows 10 OS image using Configuration Manager
 Now you'll need to create an operating system upgrade package that contains the full Windows 10 installation media. In the following steps, you’ll use Configuration Manager to create an upgrade package for Windows 10 Enterprise x64.
 
 **To add a Windows 10 OS image using Configuration Manager**
@@ -87,7 +63,7 @@ Now you'll need to create an operating system upgrade package that contains the 
 5. Right-click the created **Windows 10 Enterprise x64 Update** package, and then select **Distribute Content**. 
 6. Choose your distribution point.
 
-## Part 4: Configure deployment settings
+## Part 3: Configure deployment settings
 In this step, you'll configure an upgrade task sequence that contains the settings for the Windows 10 upgrade. You'll then identify the devices to upgrade, and then deploy the task sequence to those devices.
 
 ### Create a task sequence
