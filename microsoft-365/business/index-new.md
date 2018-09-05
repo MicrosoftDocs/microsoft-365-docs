@@ -50,7 +50,7 @@ description: Learn how to plan, deploy, and use Microsoft Office 365, Windows 10
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>Set up Microsoft 365 Business</h3>
+                                                <h3>Set up Microsoft 365 for Business</h3>
                                                 <P><a href="https://support.office.com/article/set-up-microsoft-365-business-by-using-the-setup-wizard-6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece?ui=en-US&rs=en-US&ad=US">Set up</a></p>
                                             </div>
                                         </div>
@@ -67,7 +67,7 @@ description: Learn how to plan, deploy, and use Microsoft Office 365, Windows 10
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>Move to Microsoft 365 Business</h3>
+                                                <h3>Move to Microsoft 365 for Business</h3>
                                                 <P><a href="https://support.office.com/en-us/article/migrate-to-microsoft-365-business-from-another-subscription-5b4ba843-24b8-4526-8e1f-f9b9eab89d06?ui=en-US&rs=en-US&ad=US">Move from Office 365 Business Premium</a></p>
                                             </div>
                                         </div>
