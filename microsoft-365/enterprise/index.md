@@ -373,7 +373,7 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
-                                <a href="https://docs.microsoft.com/en-us/sccm/sum/deploy-use/manage-office-365-proplus-updates" target="_blank">
+                                <a href="https://docs.microsoft.com/sccm/sum/deploy-use/manage-office-365-proplus-updates" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -504,7 +504,7 @@ description: Learn about the product documentation and resources available for M
                             </li>
                             <!-- Replace the one above when this page goes live
                             <li>
-                                <a href="https://docs.microsoft.com/en-us/windows/security/" target="_blank">
+                                <a href="https://docs.microsoft.com/windows/security/" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -611,7 +611,7 @@ description: Learn about the product documentation and resources available for M
                                 </div>
                             </li>
                             <li>
-                                <a href="https://docs.microsoft.com/en-us/microsoft-365/compliance/compliance-solutions-overview?toc=/microsoft-365/enterprise/toc.json" target="_blank">
+                                <a href="https://docs.microsoft.com/microsoft-365/compliance/compliance-solutions-overview?toc=/microsoft-365/enterprise/toc.json" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -649,7 +649,7 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
-                                <a href="https://docs.microsoft.com/en-us/windows/privacy/" target="_blank">
+                                <a href="https://docs.microsoft.com/windows/privacy/" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -706,7 +706,7 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
-                                <a href="https://docs.microsoft.com/en-us/office365/enterprise/gdpr-for-office-servers" target="_blank">
+                                <a href="https://docs.microsoft.com/office365/enterprise/gdpr-for-office-servers" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -793,7 +793,7 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.microsoft.com/en-us/itpro/windows-10/windows-as-a-service" target="_blank">
+                                <a href="https://www.microsoft.com/itpro/windows-10/windows-as-a-service" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -971,7 +971,7 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
-                                <a href="https://support.office.com/en-us/office-training-center " target="_blank">
+                                <a href="https://support.office.com/office-training-center " target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -1066,7 +1066,7 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
-                                <a href="https://docs.microsoft.com/en-us/intune-user-help/use-managed-devices-to-get-work-done" target="_blank">
+                                <a href="https://docs.microsoft.com/intune-user-help/use-managed-devices-to-get-work-done" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -1116,7 +1116,7 @@ description: Learn about the product documentation and resources available for M
                                 </div>
                             </li>
                             <li>
-                                <a href="https://www.microsoft.com/en-US/microsoft-365/success/productivitylibrary/work-more-securely-from-anywhere-on-almost-any-device" target="_blank">
+                                <a href="https://www.microsoft.com/microsoft-365/success/productivitylibrary/work-more-securely-from-anywhere-on-almost-any-device" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -1135,7 +1135,7 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.microsoft.com/en-US/microsoft-365/success/productivitylibrary/meet-and-collaborate-with-ease" target="_blank">
+                                <a href="https://www.microsoft.com/microsoft-365/success/productivitylibrary/meet-and-collaborate-with-ease" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -1154,7 +1154,7 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.microsoft.com/en-US/microsoft-365/success/productivitylibrary/work-in-email-solo-or-as-a-group" target="_blank">
+                                <a href="https://www.microsoft.com/microsoft-365/success/productivitylibrary/work-in-email-solo-or-as-a-group" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -1173,7 +1173,7 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.microsoft.com/en-US/microsoft-365/success/productivitylibrary/choose-the-right-collaboration-tool-for-your-group" target="_blank">
+                                <a href="https://www.microsoft.com/microsoft-365/success/productivitylibrary/choose-the-right-collaboration-tool-for-your-group" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -1192,7 +1192,7 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.microsoft.com/en-US/microsoft-365/success/productivitylibrary/create-impactful-content-together" target="_blank">
+                                <a href="https://www.microsoft.com/microsoft-365/success/productivitylibrary/create-impactful-content-together" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -1211,7 +1211,7 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.microsoft.com/en-US/microsoft-365/success/productivitylibrary/share-sites-and-content" target="_blank">
+                                <a href="https://www.microsoft.com/microsoft-365/success/productivitylibrary/share-sites-and-content" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -1230,7 +1230,7 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.microsoft.com/en-US/microsoft-365/success/productivitylibrary/gain-insight-into-your-work-habits-to-manage-your-time-better" target="_blank">
+                                <a href="https://www.microsoft.com/microsoft-365/success/productivitylibrary/gain-insight-into-your-work-habits-to-manage-your-time-better" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -1249,7 +1249,7 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.microsoft.com/en-US/microsoft-365/success/productivitylibrary/communicate-with-your-team-in-real-time-to-gain-input-and-consensus" target="_blank">
+                                <a href="https://www.microsoft.com/microsoft-365/success/productivitylibrary/communicate-with-your-team-in-real-time-to-gain-input-and-consensus" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -1268,7 +1268,7 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.microsoft.com/en-US/microsoft-365/success/productivitylibrary/provide-a-chat-based-workspace" target="_blank">
+                                <a href="https://www.microsoft.com/microsoft-365/success/productivitylibrary/provide-a-chat-based-workspace" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -1287,7 +1287,7 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.microsoft.com/en-US/microsoft-365/success/productivitylibrary/create-and-impress-loyal-customers-by-understanding-their-preferences" target="_blank">
+                                <a href="https://www.microsoft.com/microsoft-365/success/productivitylibrary/create-and-impress-loyal-customers-by-understanding-their-preferences" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -1306,7 +1306,7 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.microsoft.com/en-US/microsoft-365/success/productivitylibrary/help-employees-filter-relevant-information-and-find-answers-faster" target="_blank">
+                                <a href="https://www.microsoft.com/microsoft-365/success/productivitylibrary/help-employees-filter-relevant-information-and-find-answers-faster" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">

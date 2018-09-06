@@ -16,7 +16,7 @@ ms.date: 06/08/2018
     <div class="container">
         <ul class="cardsY panelContent featuredContent">
             <li>
-                <a href="https://www.microsoft.com/en-us/microsoft-365/business" target="_blank">
+                <a href="https://www.microsoft.com/microsoft-365/business" target="_blank">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">
@@ -579,7 +579,7 @@ ms.date: 06/08/2018
                                 </div>
                             </li>
                             <li>
-                                <a href="https://docs.microsoft.com/en-us/windows/windows-10/" target="_blank">
+                                <a href="https://docs.microsoft.com/windows/windows-10/" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -970,7 +970,7 @@ ms.date: 06/08/2018
                                 </div>
                             </li>
                             <li>
-                                <a href="https://www.microsoft.com/en-us/microsoft-365/business" target="_blank">
+                                <a href="https://www.microsoft.com/microsoft-365/business" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -1569,7 +1569,7 @@ ms.date: 06/08/2018
                                 </div>
                             </li>
                             <li>
-                                <a href="https://docs.microsoft.com/en-us/windows/windows-10/" target="_blank">
+                                <a href="https://docs.microsoft.com/windows/windows-10/" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -2030,7 +2030,7 @@ ms.date: 06/08/2018
                                 </div>
                             </li>
                             <li>
-                                <a href="https://www.microsoft.com/en-us/microsoft-365/business" target="_blank">
+                                <a href="https://www.microsoft.com/microsoft-365/business" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
