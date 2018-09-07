@@ -9,10 +9,11 @@ ms.date: 08/10/2018
 ms.topic: article 
 audience: microsoft-business
 ms.prod: microsoft-365-enterprise
-ms.service: microsoft-intune 
+ms.service: 
 ms.technology: 
 ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
+ms.custom: microsoft-intune
 ---
 
 # Mobile device management infrastructure exit criteria
