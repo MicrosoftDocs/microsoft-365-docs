@@ -35,8 +35,8 @@ description: Learn about the product documentation and resources available for M
                                             </div>
                                             <div class="cardText">
                                                 <h3>Explore</h3>
-                                                <P><a href="microsoft-365-overview">Overview</a></p>
-                                                <P><a href="https://docs.microsoft.com/Office365/Enterprise/microsoft-cloud-it-architecture-resources">Architecture models</a></p>
+                                                <P><a href="microsoft-365-overview" target="_blank">Overview</a></p>
+                                                <P><a href="https://docs.microsoft.com/Office365/Enterprise/microsoft-cloud-it-architecture-resources" target="_blank">Architecture models</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -53,8 +53,8 @@ description: Learn about the product documentation and resources available for M
                                             </div>
                                             <div class="cardText">
                                                 <h3>Deploy</h3>
-                                                <P><a href="https://www.microsoft.com/fasttrack/microsoft-365">FastTrack</a></p>
-                                                <P><a href="deploy-microsoft-365-enterprise">Deployment guide</a></p>
+                                                <P><a href="https://www.microsoft.com/fasttrack/microsoft-365" target="_blank">FastTrack</a></p>
+                                                <P><a href="deploy-microsoft-365-enterprise" target="_blank">Deployment guide</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -71,9 +71,9 @@ description: Learn about the product documentation and resources available for M
                                             </div>
                                             <div class="cardText">
                                                 <h3>Manage security & compliance</h3>
-                                                <P><a href="https://docs.microsoft.com/microsoft-365/compliance/compliance-solutions-overview">Compliance solutions</a></p>
-                                                <P><a href="https://docs.microsoft.com/Office365/SecurityCompliance/">Office 365 Security & Compliance</a></p>
-                                                <P><a href="microsoft-365-policies-configurations.md">Identity &amp; device access</a></p>
+                                                <P><a href="https://docs.microsoft.com/microsoft-365/compliance/compliance-solutions-overview" target="_blank">Compliance solutions</a></p>
+                                                <P><a href="https://docs.microsoft.com/Office365/SecurityCompliance/" target="_blank">Office 365 Security & Compliance</a></p>
+                                                <P><a href="microsoft-365-policies-configurations.md" target="_blank">Identity &amp; device access</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -90,9 +90,9 @@ description: Learn about the product documentation and resources available for M
                                             </div>
                                             <div class="cardText">
                                                 <h3>Train your users</h3>
-                                                <P><a href="https://support.office.com/en-us/office-training-center">Office 365</a></p>
-                                                <P><a href="https://www.microsoft.com/itpro/windows-10/end-user-readiness">Windows 10</a></p>
-                                                <P><a href="https://docs.microsoft.com/intune-user-help/use-managed-devices-to-get-work-done">Intune & Company Portal app</a></p>
+                                                <P><a href="https://support.office.com/en-us/office-training-center" target="_blank">Office 365</a></p>
+                                                <P><a href="https://www.microsoft.com/itpro/windows-10/end-user-readiness" target="_blank">Windows 10</a></p>
+                                                <P><a href="https://docs.microsoft.com/intune-user-help/use-managed-devices-to-get-work-done" target="_blank">Intune & Company Portal app</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -109,9 +109,9 @@ description: Learn about the product documentation and resources available for M
                                             </div>
                                             <div class="cardText">
                                                 <h3>Manage Office 365</h3>
-                                                <P><a href="https://docs.microsoft.com/office365/enterprise/">Office 365 Enterprise</a></p>
-                                                <P><a href="https://support.office.com/office365admin">Office 365 for Business</a></p>
-                                                <P><a href="https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus">Office 365 ProPlus</a></p>
+                                                <P><a href="https://docs.microsoft.com/office365/enterprise/" target="_blank">Office 365 Enterprise</a></p>
+                                                <P><a href="https://support.office.com/office365admin" target="_blank">Office 365 for Business</a></p>
+                                                <P><a href="https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus" target="_blank">Office 365 ProPlus</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -128,9 +128,9 @@ description: Learn about the product documentation and resources available for M
                                             </div>
                                             <div class="cardText">
                                                 <h3>Manage Enterprise Mobility + Security</h3>
-                                                <P><a href="https://docs.microsoft.com/intune/index">Microsoft Intune</a></p>                                             <P><a href="https://docs.microsoft.com/azure/active-directory">Azure Active Directory</a></p>
-                                                <P><a href="https://docs.microsoft.com/azure/information-protection/">Azure Information Protection</a></p>
-                                                <P><a href="https://docs.microsoft.com/azure-advanced-threat-protection/">Azure Advanced Threat Protection</a></p>
+                                                <P><a href="https://docs.microsoft.com/intune/index" target="_blank">Microsoft Intune</a></p>                              <P><a href="https://docs.microsoft.com/azure/active-directory" target="_blank">Azure Active Directory</a></p>
+                                                <P><a href="https://docs.microsoft.com/azure/information-protection/" target="_blank">Azure Information Protection</a></p>
+                                                <P><a href="https://docs.microsoft.com/azure-advanced-threat-protection/" target="_blank">Azure Advanced Threat Protection</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -151,9 +151,9 @@ description: Learn about the product documentation and resources available for M
                                                     </div>
                                                     <div class="cardText">
                                                         <h3>Develop for Microsoft 365</h3>
-                                                        <P><a href="https://developer.microsoft.com/office">Office 365 Dev Center</a></p>
-                                                        <P><a href="https://developer.microsoft.com/windows/enterprise">Windows Dev Center</a></p>
-                                                        <P><a href="https://developer.microsoft.com/graph">Microsoft Graph</a></p>
+                                                        <P><a href="https://developer.microsoft.com/office" target="_blank">Office 365 Dev Center</a></p>
+                                                        <P><a href="https://developer.microsoft.com/windows/enterprise" target="_blank">Windows Dev Center</a></p>
+                                                        <P><a href="https://developer.microsoft.com/graph" target="_blank">Microsoft Graph</a></p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -170,8 +170,8 @@ description: Learn about the product documentation and resources available for M
                                                     </div>
                                                     <div class="cardText">
                                                         <h3>Other Microsoft 365 products</h3>
-                                                        <P><a href="https://docs.microsoft.com/microsoft-365/business/">Microsoft 365 for Business</a></p>
-                                                        <P><a href="https://docs.microsoft.com/education/">Microsoft 365 Education</a></p>
+                                                        <P><a href="https://docs.microsoft.com/microsoft-365/business/" target="_blank">Microsoft 365 for Business</a></p>
+                                                        <P><a href="https://docs.microsoft.com/education/" target="_blank">Microsoft 365 Education</a></p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -188,9 +188,9 @@ description: Learn about the product documentation and resources available for M
                                                     </div>
                                                     <div class="cardText">
                                                         <h3>Need support?</h3>
-                                                        <P><a href="https://azure.microsoft.com/support/options/">Azure</a></p>
-                                                        <P><a href="https://support.office.com/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b">Office 365</a></p>
-                                                        <P><a href="http://support.microsoft.com/products/windows">Windows 10</a></p>
+                                                        <P><a href="https://azure.microsoft.com/support/options/" target="_blank">Azure</a></p>
+                                                        <P><a href="https://support.office.com/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b" target="_blank">Office 365</a></p>
+                                                        <P><a href="http://support.microsoft.com/products/windows" target="_blank">Windows 10</a></p>
                                                     </div>
                                                 </div>
                                             </div>

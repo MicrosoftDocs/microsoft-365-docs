@@ -52,7 +52,7 @@ description: Learn how to plan, deploy, and use Microsoft Office 365, Windows 10
                                             </div>
                                             <div class="cardText">
                                                 <h3>Set up Microsoft 365 Business</h3>
-                                                <P><a href="https://support.office.com/article/set-up-microsoft-365-business-by-using-the-setup-wizard-6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece?ui=en-US&rs=en-US&ad=US">Set up</a></p>
+                                                <P><a href="https://support.office.com/article/set-up-microsoft-365-business-by-using-the-setup-wizard-6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece?ui=en-US&rs=en-US&ad=US" target="_blank">Set up</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -69,7 +69,7 @@ description: Learn how to plan, deploy, and use Microsoft Office 365, Windows 10
                                             </div>
                                             <div class="cardText">
                                                 <h3>Move to Microsoft 365 for Business</h3>
-                                                <P><a href="https://support.office.com/article/migrate-to-microsoft-365-business-from-another-subscription-5b4ba843-24b8-4526-8e1f-f9b9eab89d06?ui=en-US&rs=en-US&ad=US">Move from Office 365 Business Premium</a></p>
+                                                <P><a href="https://support.office.com/article/migrate-to-microsoft-365-business-from-another-subscription-5b4ba843-24b8-4526-8e1f-f9b9eab89d06?ui=en-US&rs=en-US&ad=US" target="_blank">Move from Office 365 Business Premium</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -86,9 +86,9 @@ description: Learn how to plan, deploy, and use Microsoft Office 365, Windows 10
                                             </div>
                                             <div class="cardText">
                                                 <h3>Protect business data and devices</h3>
-                                                <P><a href="https://support.office.com/article/manage-microsoft-365-business-27ff1678-865a-4707-8145-e1155aa815d6">Secure apps and devices</a></p>
-                                                 <P><a href="https://support.office.com/article/top-10-ways-to-secure-office-365-and-microsoft-365-business-plans-from-cyber-threats-de2da300-dbb6-4725-bb12-b85a9d296e75">Top 10 ways to secure Microsoft 365 Business</a></p>
-                                                <P><a href="https://support.office.com/article/microsoft-365-business-security-features-c123694a-1efb-459e-a8d5-2187975373dc">Learn more about security features</a></p>
+                                                <P><a href="https://support.office.com/article/manage-microsoft-365-business-27ff1678-865a-4707-8145-e1155aa815d6" target="_blank">Secure apps and devices</a></p>
+                                                 <P><a href="https://support.office.com/article/top-10-ways-to-secure-office-365-and-microsoft-365-business-plans-from-cyber-threats-de2da300-dbb6-4725-bb12-b85a9d296e75" target="_blank">Top 10 ways to secure Microsoft 365 Business</a></p>
+                                                <P><a href="https://support.office.com/article/microsoft-365-business-security-features-c123694a-1efb-459e-a8d5-2187975373dc" target="_blank">Learn more about security features</a></p>
                                                 </div>
                                         </div>
                                     </div>
@@ -105,11 +105,11 @@ description: Learn how to plan, deploy, and use Microsoft Office 365, Windows 10
                                             </div>
                                             <div class="cardText">
                                                 <h3>Use</h3>
-                                                <P><a href="https://support.office.com/office-training-center">Set up iPhone and Android devices in Microsoft 365</a></p>
-                                                <P><a href="https://support.office.com/office-training-center">Help everyone get up and running with Office</a></p>
-                                                <P><a href="https://www.microsoft.com/itpro/windows-10/end-user-readiness">Help everyone switch to Windows 10</a></p>
-                                                <P><a href="https://docs.microsoft.com/intune-user-help/use-managed-devices-to-get-work-done">Intune training</a></p>
-                                                <P><a href="https://docs.microsoft.com/microsoft-365/business/support/microsoft-365-business-faqs">FAQ</a></p>
+                                                <P><a href="https://support.office.com/office-training-center" target="_blank">Set up iPhone and Android devices in Microsoft 365</a></p>
+                                                <P><a href="https://support.office.com/office-training-center" target="_blank">Help everyone get up and running with Office</a></p>
+                                                <P><a href="https://www.microsoft.com/itpro/windows-10/end-user-readiness" target="_blank">Help everyone switch to Windows 10</a></p>
+                                                <P><a href="https://docs.microsoft.com/intune-user-help/use-managed-devices-to-get-work-done" target="_blank">Intune training</a></p>
+                                                <P><a href="https://docs.microsoft.com/microsoft-365/business/support/microsoft-365-business-faqs" target="_blank">FAQ</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -126,9 +126,9 @@ description: Learn how to plan, deploy, and use Microsoft Office 365, Windows 10
                                             </div>
                                             <div class="cardText">
                                                 <h3>Windows 10</h3>
-                                                <P><a href="https://support.office.com/article/set-up-windows-devices-for-microsoft-365-business-users-2d7ff45e-0da0-4caa-89a9-48cabf41f193">Set up Windows 10 devices</a></p>
-                                                <P><a href="https://support.office.com/article/remove-company-data-from-devices-80bdae57-f8bc-4e40-a58c-956007117ecb">Remove data from devices</a></p>
-                                                <P><a href="https://support.office.com/article/reset-windows-10-devices-to-their-factory-settings-c4db6caf-74df-4734-b1dd-53e371c7a3c3">Reset devices</a></p>
+                                                <P><a href="https://support.office.com/article/set-up-windows-devices-for-microsoft-365-business-users-2d7ff45e-0da0-4caa-89a9-48cabf41f193" target="_blank">Set up Windows 10 devices</a></p>
+                                                <P><a href="https://support.office.com/article/remove-company-data-from-devices-80bdae57-f8bc-4e40-a58c-956007117ecb" target="_blank">Remove data from devices</a></p>
+                                                <P><a href="https://support.office.com/article/reset-windows-10-devices-to-their-factory-settings-c4db6caf-74df-4734-b1dd-53e371c7a3c3" target="_blank">Reset devices</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -149,8 +149,8 @@ description: Learn how to plan, deploy, and use Microsoft Office 365, Windows 10
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Partners</h3>
-                                                    <P><a href="https://www.microsoft.com/solution-providers/search">Find a partner</a></p>
-                                                    <P><a href="https://support.office.com/article/get-started-with-microsoft-365-business-496e690b-b75d-4ff5-bf34-cc32905d0364">Partner resources</a></p>
+                                                    <P><a href="https://www.microsoft.com/solution-providers/search" target="_blank">Find a partner</a></p>
+                                                    <P><a href="https://support.office.com/article/get-started-with-microsoft-365-business-496e690b-b75d-4ff5-bf34-cc32905d0364" target="_blank">Partner resources</a></p>
                                                 </div>
                                             </div>
                                         </div>
@@ -167,9 +167,9 @@ description: Learn how to plan, deploy, and use Microsoft Office 365, Windows 10
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Need support?</h3>
-                                                     <P><a href="https://azure.microsoft.com/support/options/">Azure</a></p>
-                                                     <P><a href="https://support.office.com/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b">Office 365</a></p>
-                                                     <P><a href="http://support.microsoft.com/products/windows">Windows 10</a></p>
+                                                     <P><a href="https://azure.microsoft.com/support/options/" target="_blank">Azure</a></p>
+                                                     <P><a href="https://support.office.com/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b" target="_blank">Office 365</a></p>
+                                                     <P><a href="http://support.microsoft.com/products/windows" target="_blank">Windows 10</a></p>
                                                 </div>
                                             </div>
                                         </div>
