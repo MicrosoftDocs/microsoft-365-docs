@@ -5,7 +5,7 @@ author: brendacarter
 manager: laurawi
 ms.prod: microsoft-365-enterprise
 ms.topic: article
-ms.date: 
+
 ms.author: bcarter
 ms.reviewer: martincoetzer
 ms.custom: 
@@ -30,15 +30,15 @@ If you included Exchange Online and Outlook in the scope of the policies when yo
 
 |Protection level|Policies|More information|
 |:---------------|:-------|:----------------|
-|**Baseline**|Require MFA when sign-in risk is *medium* or *high*|Include Exchange Online in the assignments of cloud apps.|
-|        |Block clients that don't support modern authentication|Include Exchange Online in the assignments of cloud apps.|
-|        |Define app protection policies|Be sure Outlook is included in the list of apps. Be sure to update the policy for each platform (iOS, Android, Windows).|
-|        |Require approved apps|Include Exchange Online in the list of cloud apps.|
-|        |Require compliant PCs|Include Exchange Online in list of cloud apps.|
+|**Baseline**|[Require MFA when sign-in risk is *medium* or *high*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Include Exchange Online in the assignments of cloud apps.|
+|        |[Block clients that don't support modern authentication](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Include Exchange Online in the assignments of cloud apps.|
+|        |[Define app protection policies](identity-access-policies.md#high-risk-users-must-change-password)|Be sure Outlook is included in the list of apps. Be sure to update the policy for each platform (iOS, Android, Windows).|
+|        |[Require approved apps](identity-access-policies.md#require-approved-apps)|Include Exchange Online in the list of cloud apps.|
+|        |[Require compliant PCs](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Include Exchange Online in list of cloud apps.|
 |        |[Block ActiveSync clients](#block-activesync)|Add this new policy. 
-|**Sensitive**|Require MFA when sign-in risk is *low*, *medium* or *high*| Include Exchange Online in the assignments of cloud apps.|
-|         |Require compliant PCs *and* mobile devices|Include Exchange Online in the list of cloud apps.|
-|**Highly regulated**|*Always* require MFA|Include Exchange Online in the assignments of cloud apps |
+|**Sensitive**|[Require MFA when sign-in risk is *low*, *medium* or *high*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)| Include Exchange Online in the assignments of cloud apps.|
+|         |[Require compliant PCs *and* mobile devices](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|Include Exchange Online in the list of cloud apps.|
+|**Highly regulated**|[*Always* require MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Include Exchange Online in the assignments of cloud apps |
 
 ## Block ActiveSync clients
 This policy prevents ActiveSync clients from bypassing other conditional access rules. The rule configuration applies only to ActiveSync clients. By selecting **Require approved client app**, this policy blocks ActiveSync clients. To configure this policy:

@@ -3,7 +3,7 @@ title: "Simulated enterprise base configuration for Microsoft 365"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/09/2018
+ms.date: 09/10/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -14,7 +14,7 @@ ms.collection:
 ms.custom:
 - Ent_TLGs
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
-description: Use this Test Lab Guide to create a simulated enterprise test environment for testing Microsoft 365 Enterprise.
+description: Use this Test Lab Guide to create a simulated enterprise test environment for Microsoft 365 Enterprise.
 ---
 
 # The simulated enterprise base configuration
@@ -26,13 +26,48 @@ This article provides you with step-by-step instructions to create a simplified 
  
 ![Phase 4 of the simulated enterprise base configuration](media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase4.png)
 
-You can use the resulting environment to test the features and functionality of [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise), with additional Microsoft 365 Enterprise [Test Lab Guides](m365-enterprise-test-lab-guides.md) or on your own.
+You can use the resulting environment to test the features and functionality of [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise) with additional [Test Lab Guides](m365-enterprise-test-lab-guides.md) or on your own.
 
 ![Test Lab Guides for the Microsoft cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
-## Phase 1: Create DC1
+> [!TIP]
+> Click [here](https://aka.ms/m365etlgstack) for a visual map to all the articles in the Microsoft 365 Enterprise Test Lab Guide stack.
 
-In this phase, we create an Azure virtual network and add DC1, a virtual machine which is a domain controller for a Windows Server Active Directory (AD) domain.
+## Phase 1: Create a simulated intranet
+
+In this phase, you build a simulated intranet in Azure infrastructure services that includes a Windows Server Active Directory domain controller, an application server, and a client computer. 
+
+You'll use these computers in additional [Microsoft 365 Enterprise Test Lab Guides](m365-enterprise-test-lab-guides.md) to configure and demonstrate hybrid identity and other capabilities.
+
+### Method 1: Build your simulated intranet with an Azure Resource Manager template
+
+In this method, you use an Azure Resource Manager (ARM) template to build out the simulated intranet. ARM templates contain all of the instructions to create the Azure networking infrastructure, the virtual machines, and their configuration.
+
+Prior to deploying the template, read through the [template README page](https://github.com/maxskunkworks/TLG/tree/master/tlg-base-config_3-vm.m365-ems) and have the following information ready:
+
+- The public DNS domain name of your test environment (testlab.\<your public domain>). You’ll need to enter this name in the **Domain Name field** of the **Custom deployment** page.
+- A DNS label prefix for the URLs of the public IP addresses of your virtual machines. You’ll need to enter this label in the **Dns Label Prefix** field of the **Custom deployment** page.
+
+After reading through the instructions, click **Deploy to Azure** on the [template README page](https://github.com/maxskunkworks/TLG/tree/master/tlg-base-config_3-vm.m365-ems) to get started.
+
+>[!Note]
+>The simulated intranet built by the ARM template requires a paid Azure subscription.
+>
+
+Here is your configuration after the template is complete.
+
+![The simulated intranet in Azure infrastructure services](media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase3.png)
+
+### Method 2: Build your simulated intranet with PowerShell
+
+In this method, you use Windows PowerShell and the Azure PowerShell module to build out the networking infrastructure, the virtual machines, and their configuration.
+
+Use this method with an Azure trial subscription or if you want to get experience creating elements of Azure infrastructure one step at a time with PowerShell. You can then customize the PowerShell command blocks for your own deployment of other virtual machines in Azure.
+
+
+#### Step 1: Create DC1
+
+In this step, we create an Azure virtual network and add DC1, a virtual machine that is a domain controller for a Windows Server Active Directory (AD) domain.
 
 First, start a Windows PowerShell command prompt on your local computer.
   
@@ -112,8 +147,6 @@ You will be prompted for a user name and password for the local administrator ac
   
 Next, connect to the DC1 virtual machine.
   
-### Connect to DC1 using local administrator account credentials
-
 1. In the [Azure portal](https://portal.azure.com), click **Resource Groups >** [the name of your new resource group] **> DC1 > Connect**.
     
 2. In the open pane, click **Download RDP file**. Open the DC1.rdp file that is downloaded, and then click **Connect**.
@@ -151,8 +184,6 @@ Note that these commands can take a few minutes to complete.
   
 After DC1 restarts, reconnect to the DC1 virtual machine.
   
-### Connect to DC1 using domain credentials
-
 1. In the [Azure portal](https://portal.azure.com), click **Resource Groups >** [your resource group name] **> DC1 > Connect**.
     
 2. Run the DC1.rdp file that is downloaded, and then click **Connect**.
@@ -192,11 +223,11 @@ Set-NetFirewallRule -DisplayName "File and Printer Sharing (Echo Request - ICMPv
 
 This is your current configuration.
   
-![Phase 1 of the simulated enterprise base configuration](media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase1.png)
+![Step 1 of the simulated enterprise base configuration](media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase1.png)
   
-## Phase 2: Configure APP1
+#### Step 2: Configure APP1
 
-In this phase, you create and configure APP1, which is an application server that initially provides web and file sharing services.
+In this step, you create and configure APP1, which is an application server that initially provides web and file sharing services.
 
 To create an Azure Virtual Machine for APP1, fill in the name of your resource group and run these commands at the  command prompt on your local computer.
   
@@ -247,11 +278,11 @@ New-SmbShare -name files -path c:\files -changeaccess TESTLAB\User1
 
 This is your current configuration.
   
-![Phase 2 of the simulated enterprise base configuration](media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase2.png)
+![Step 2 of the simulated enterprise base configuration](media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase2.png)
   
-## Phase 3: Configure CLIENT1
+#### Step 3: Configure CLIENT1
 
-In this phase, you create and configure CLIENT1, which acts as a typical laptop, tablet, or desktop computer on the intranet.
+In this step, you create and configure CLIENT1, which acts as a typical laptop, tablet, or desktop computer on the intranet.
 
 > [!NOTE]  
 > The following command set creates CLIENT1 running Windows Server 2016 Datacenter, which can be done for all types of Azure subscriptions. If you have an Visual Studio-based Azure subscription, you can create CLIENT1 running Windows 10 with the [Azure portal](https://portal.azure.com). 
@@ -291,8 +322,6 @@ After CLIENT1 restarts, connect to it using the TESTLAB\\User1 account name and 
   
 Next, verify that you can access web and file share resources on APP1 from CLIENT1.
   
-### Verify CLIENT access to APP1
-
 1. In Server Manager, in the tree pane, click **Local Server**.
     
 2. In **Properties for CLIENT1**, click **On** next to **IE Enhanced Security Configuration**.
@@ -313,10 +342,10 @@ Next, verify that you can access web and file share resources on APP1 from CLIEN
     
 This is your current configuration.
   
-![Phase 3 of the simulated enterprise base configuration](media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase3.png)
+![Step 3 of the simulated enterprise base configuration](media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase3.png)
 
 
-## Phase 4: Create your Office 365 E5 and EMS E5 subscriptions
+## Phase 2: Create your Office 365 E5 and EMS E5 subscriptions
 
 In this phase, you create new Office 365 E5 and EMS E5 subscriptions that use a new and common Azure AD tenant, one that is separate from your production subscription. You can do this in two ways:
 
@@ -375,7 +404,9 @@ You are now ready to experiment with additional features of [Microsoft 365 Enter
 
 Explore identity features and capabilities of Microsoft 365 Enterprise with these articles:
 
-- [Password hash synchronization](password-hash-sync-m365-ent-test-environment.md)  
+- [Password hash synchronization](password-hash-sync-m365-ent-test-environment.md)
+- [Pass-through authentication](pass-through-auth-m365-ent-test-environment.md)
+- [Azure AD Seamless Single Sign-on](single-sign-on-m365-ent-test-environment.md)
 - [Multi-factor authentication](multi-factor-authentication-microsoft-365-test-environment.md)
 - [Protect global administrator accounts](protect-global-administrator-accounts-microsoft-365-test-environment.md)
 - [Automatic licensing and group membership](automate-licenses-group-membership-microsoft-365-test-environment.md)

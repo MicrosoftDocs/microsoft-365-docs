@@ -2,13 +2,13 @@
 title: Deploy Windows 10 Enterprise for new devices with Windows Autopilot
 description: Provides guidance on configuring and deploying Windows 10 Enterprise with Windows Autopilot.
 keywords: Microsoft 365, Microsoft 365 Enterprise, Microsoft 365 documentation, Windows 10 Enterprise, deployment, Windows Autopilot
-author: CelesteDG
+author: greg-lindsay
 localization_priority: Normal
 audience: microsoft-business
 ms.prod: microsoft-365-enterprise
 ms.topic: article
-ms.date: 06/01/2018
-ms.author: celested
+ms.date: 08/30/2018
+ms.author: greglin
 ---
 
 # Step 3: Deploy Windows 10 Enterprise for new devices with Windows Autopilot
@@ -21,30 +21,7 @@ If you have new Windows 10 PCs, you can use Windows Autopilot to customize the o
 
 You can set up and pre-configure new Windows 10 devices and get them ready for productive use using Windows Autopilot. To learn more about Windows Autopilot, including benefits and Windows Autopilot scenarios, see [Overview of Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-Autopilot/windows-10-Autopilot). When ready, follow these parts to start setting up new devices.
 
-## Part 1: Set Windows diagnostics data level
-Microsoft uses diagnostic data to help keep Windows devices secure by identifying malware trends and other threats and to help us improve the quality of Windows and Microsoft services. You must ensure that the diagnostics service is enabled at a minimum level of Basic on all endpoints in your organization. *By default, this service is enabled and set to the Enhanced level.* However, it’s good practice to check and ensure that they are receiving sensor data. Setting levels through policies overrides device-level settings. 
-
-**Windows 10 operating system diagnostic data levels**
-
-You can configure your operating system diagnostic data settings using the management tools you’re already using, such as MDM or Windows Provisioning. You can also manually change your settings using Registry Editor. Setting your diagnostic data levels through a management policy overrides any device level settings.
-
-Use the appropriate value in the table below when you configure the management policy.
-
-| Level | Data gathered | Value |
-|:--- |:--- |:--- |
-| Security | Security data only. | 0 |
-| Basic | Security data, and basic system and quality data. | 1 |
-| Enhanced | Security data, basic system and quality data, and enhanced insights and advanced reliability data. | 2 |
-| Full | Security data, basic system and quality data, enhanced insights and advanced reliability data, and full diagnostics data. | 3 |
-
-You can enable diagnostics data through any of these methods:
-* **Microsoft Intune** - If you plan to use Intune to manage your devices, you can create a configuration policy to enable diagnostic data by configuring the <a href="https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-system#system-allowtelemetry" target="blank">SystemAllowTelemetry</a> system policy. For more info on setting up configuration policies, see [Manage settings and features on your devices with Microsoft Intune policies](https://aka.ms/intuneconfigpolicies).
-* **Registry Editor** - You can use the Registry Editor to manually enable diagnostic data on each device in your organization. Alternately, you can write a script to edit the registry. If a management policy already exists, such as Group Policy or MDM, it will override this registry setting.
-* **Command prompt** - You can set Windows 10 diagnostics data and service to automatically start with the command prompt. This method is best if you are testing the service on only a few devices. Enabling the service to start automatically with this command will not configure the diagnostic data level. If you have not configured a diagnostic data level using management tools, the service will operate with the default Enhanced level.
-
-See [Configure Windows diagnostic data in your organization](https://docs.microsoft.com/en-us/windows/configuration/configure-windows-diagnostic-data-in-your-organization) to learn more about Windows diagnostic data and how you can enable it based on the method that you choose.
-
-## Part 2: Start Windows Autopilot deployment
+## Part 1: Start Windows Autopilot deployment
 See [Overview of Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-Autopilot/windows-10-Autopilot) to:
 
 1. Learn about and complete the prerequisites for Windows Autopilot deployment. The prerequisites include:
@@ -73,7 +50,7 @@ See [Overview of Windows Autopilot](https://docs.microsoft.com/windows/deploymen
     - **Microsoft Intune**
     - **Partner Center**
 
-## Part 3: Set up a Windows 10 device for Microsoft 365
+## Part 2: Set up a Windows 10 device for Microsoft 365
 Before you can set up Windows devices for Microsoft 365 users, make sure all the Windows devices are running Windows 10, version 1703 (Creators Update) or later.
 
 After all Windows devices in your organization have either been upgraded to Windows 10 Creators Update or are already running Windows 10 Creators Update, you can join these devices to your organization’s Azure Active Directory.
@@ -103,7 +80,7 @@ If your device has Windows 10 Creators Update (or later) and has already gone th
 
 After you're done, the user will be connected to your organization's Azure AD.
 
-## Verify the device is connected to Azure AD
+### Verify the device is connected to Azure AD
 Follow these steps to verify the device’s sync status with Azure AD, and then start using your Microsoft 365 account on the device. 
 
 1. Open **Settings**.

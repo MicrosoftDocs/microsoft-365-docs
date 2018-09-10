@@ -3,7 +3,7 @@ title: "Microsoft 365 Enterprise Test Lab Guides"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/13/2018
+ms.date: 08/30/2018
 ms.audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
@@ -47,6 +47,10 @@ To demonstrate identity-related features and capabilities, see:
   
    Enable and test pass-through authentication to a Windows Server AD domain controller.
 
+- [Azure AD Seamless Single Sign-on](single-sign-on-m365-ent-test-environment.md)
+  
+   Enable and test Azure AD Seamless Single Sign-on (SSO) with a Windows Server AD domain controller.
+
 - [Multi-factor authentication](multi-factor-authentication-microsoft-365-test-environment.md)
   
    Enable and test smart phone-based multi-factor authentication for a specific user account.
@@ -54,6 +58,10 @@ To demonstrate identity-related features and capabilities, see:
 - [Protect global administrator accounts](protect-global-administrator-accounts-microsoft-365-test-environment.md)
  
    Lock down your global administrator accounts with Office 365 Cloud App Security and conditional access policies.
+
+- [Password reset](password-reset-m365-ent-test-environment.md)
+
+   Use self-service password reset (SSPR) to reset your password.
 
 - [Automatic licensing and group membership](automate-licenses-group-membership-microsoft-365-test-environment.md)
 

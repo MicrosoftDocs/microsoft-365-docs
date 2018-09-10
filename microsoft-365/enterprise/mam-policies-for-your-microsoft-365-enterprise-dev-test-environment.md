@@ -24,6 +24,9 @@ With the instructions in this article, you add Intune mobile application managem
 
 Follow the instructions in the [lightweight base configuration](lightweight-base-configuration-microsoft-365-enterprise.md).
   
+> [!TIP]
+> Click [here](https://aka.ms/m365etlgstack) for a visual map to all the articles in the Microsoft 365 Enterprise Test Lab Guide stack.
+
 ## Phase 2: Create and deploy MAM policies for iOS and Android devices
 
 In this phase, you create and deploy two different MAM policies: one for iOS devices and one for Android devices.
