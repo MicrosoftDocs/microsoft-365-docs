@@ -2,6 +2,8 @@
 layout: HubPage
 hide_bc: true
 ms.topic: hub-page
+ms.author: robmazz
+author: robmazz
 keywords: Microsoft 365 Business, Microsoft 365, business, SMB, small to midsize business, Microsoft 365 Business documentation, docs, documentation, technical information
 localization_priority: Normal
 audience: microsoft-business
