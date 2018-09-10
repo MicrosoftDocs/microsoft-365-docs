@@ -148,7 +148,7 @@ description: Learn how to plan, deploy, and use Microsoft Office 365, Windows 10
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Partners</h3>
+                                                    <h3>Get help from a Microsoft partner</h3>
                                                     <P><a href="https://www.microsoft.com/solution-providers/search" target="_blank">Find a partner</a></p>
                                                     <P><a href="https://support.office.com/article/get-started-with-microsoft-365-business-496e690b-b75d-4ff5-bf34-cc32905d0364" target="_blank">Partner resources</a></p>
                                                 </div>
