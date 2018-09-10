@@ -53,7 +53,6 @@ description: Learn about the product documentation and resources available for M
                                                 <h3>Deploy</h3>
                                                 <P><a href="https://www.microsoft.com/fasttrack/microsoft-365">FastTrack</a></p>
                                                 <P><a href="deploy-microsoft-365-enterprise">Deployment guide</a></p>
-                                                <P><a href="https://aka.ms/howtoshift">Modern Desktop deployment</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -169,7 +168,7 @@ description: Learn about the product documentation and resources available for M
                                                     </div>
                                                     <div class="cardText">
                                                         <h3>Other Microsoft 365 products</h3>
-                                                        <P><a href="https://docs.microsoft.com/en-us/microsoft-365/business/">Microsoft 365 for Business</a></p>
+                                                        <P><a href="https://docs.microsoft.com/microsoft-365/business/">Microsoft 365 for Business</a></p>
                                                         <P><a href="https://docs.microsoft.com/education/">Microsoft 365 Education</a></p>
                                                     </div>
                                                 </div>
