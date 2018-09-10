@@ -127,8 +127,7 @@ description: Learn about the product documentation and resources available for M
                                             </div>
                                             <div class="cardText">
                                                 <h3>Manage Enterprise Mobility + Security</h3>
-                                                <P><a href="https://docs.microsoft.com/azure/active-directory">Azure Active Directory</a></p>
-                                                <P><a href="https://docs.microsoft.com/intune/index">Intune in Azure</a></p>
+                                                <P><a href="https://docs.microsoft.com/intune/index">Microsoft Intune</a></p>                                             <P><a href="https://docs.microsoft.com/azure/active-directory">Azure Active Directory</a></p>
                                                 <P><a href="https://docs.microsoft.com/azure/information-protection/">Azure Information Protection</a></p>
                                                 <P><a href="https://docs.microsoft.com/azure-advanced-threat-protection/">Azure Advanced Threat Protection</a></p>
                                             </div>
