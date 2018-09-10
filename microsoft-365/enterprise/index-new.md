@@ -170,7 +170,7 @@ description: Learn about the product documentation and resources available for M
                                                     </div>
                                                     <div class="cardText">
                                                         <h3>Other Microsoft 365 products</h3>
-                                                        <P><a href="https://docs.microsoft.com/microsoft-365/business/" target="_blank">Microsoft 365 for Business</a></p>
+                                                        <P><a href="https://docs.microsoft.com/microsoft-365/business/" target="_blank">Microsoft 365 Business</a></p>
                                                         <P><a href="https://docs.microsoft.com/education/" target="_blank">Microsoft 365 Education</a></p>
                                                     </div>
                                                 </div>
