@@ -35,7 +35,7 @@ description: Learn about the product documentation and resources available for M
                                             </div>
                                             <div class="cardText">
                                                 <h3>Explore</h3>
-                                                <P><a href="microsoft-365-overview.md" target="_blank">Overview</a></p>
+                                                <P><a href="microsoft-365-overview" target="_blank">Overview</a></p>
                                                 <P><a href="https://docs.microsoft.com/Office365/Enterprise/microsoft-cloud-it-architecture-resources" target="_blank">Architecture models</a></p>
                                             </div>
                                         </div>
@@ -54,7 +54,7 @@ description: Learn about the product documentation and resources available for M
                                             <div class="cardText">
                                                 <h3>Deploy</h3>
                                                 <P><a href="https://www.microsoft.com/fasttrack/microsoft-365" target="_blank">FastTrack</a></p>
-                                                <P><a href="deploy-microsoft-365-enterprise.md" target="_blank">Deployment guide</a></p>
+                                                <P><a href="deploy-microsoft-365-enterprise" target="_blank">Deployment guide</a></p>
                                             </div>
                                         </div>
                                     </div>
