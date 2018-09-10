@@ -110,7 +110,7 @@ description: Learn about the product documentation and resources available for M
                                             <div class="cardText">
                                                 <h3>Manage Office 365</h3>
                                                 <P><a href="https://docs.microsoft.com/office365/enterprise/" target="_blank">Office 365 Enterprise</a></p>
-                                                <P><a href="https://support.office.com/office365admin" target="_blank">Office 365 for Business</a></p>
+                                                <P><a href="https://support.office.com/office365admin" target="_blank">Office 365 Business</a></p>
                                                 <P><a href="https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus" target="_blank">Office 365 ProPlus</a></p>
                                             </div>
                                         </div>
