@@ -1,12 +1,12 @@
-# , then Step 1: Device and App Readiness
+﻿# , then Step 1: Device and App Readiness
 
 \[Pub Date\] ● 2 minutes to read ● Contributors
 
 Begin your desktop deployment project with an inventory of your devices and apps, prioritize what you to move forward, test prioritized apps and devices, then remediate what’s needed to get ready for deployment.
 
-![](c:\\Users\\jogruszc\\Desktop\\MD%20Docs/media/image1.png)
+![](media/getting-started-media/step-1-device-and-app-readiness-media-1.png)
 
-![](c:\\Users\\jogruszc\\Desktop\\MD%20Docs/media/image2.png)
+![](media/getting-started-media/step-1-device-and-app-readiness-media-2.png)
 
 In the past, a major hurdle to upgrading the users’ desktops is application and hardware compatibility. The good news as you plan your shift to Windows 10 and Office 365 ProPlus, is just about any application written in the last 10 years will run on Windows 10, and any COM add-ins and VBA macros your organization used on versions of Office dating back to Office 2010, will continue to work on the latest versions of Office, without modification.
 
@@ -30,17 +30,17 @@ Device and App Readiness compromises four steps: 1. Inventory, 2. Prioritize, 3.
 
 Windows Analytics Upgrade Readiness service uses an agent-less process to inventory the computers, applications and Office add-ins across your desktop estate.
 
-![](c:\\Users\\jogruszc\\Desktop\\MD%20Docs/media/image3.png)
+![](media/getting-started-media/step-1-device-and-app-readiness-media-3.png)
 
 It also provides reports on highly visited Internet sites, apps and Intranet locations to help you with compatibility testing later.
 
-![](c:\\Users\\jogruszc\\Desktop\\MD%20Docs/media/image4.png)
+![](media/getting-started-media/step-1-device-and-app-readiness-media-4.png)
 
 ### 2\. Prioritize
 
 With inventory taken, Windows Analytics Upgrade Readiness helps you to identify and prioritize the most common apps and hardware used in your organization, and what to focus on to unblock as many PCs as possible for deployment,
 
-![](c:\\Users\\jogruszc\\Desktop\\MD%20Docs/media/image5.png)
+![](media/getting-started-media/step-1-device-and-app-readiness-media-5.png)
 
 also providing guidance to help you assess the updates are necessary to resolve issues during the next step: testing.
 
@@ -52,13 +52,13 @@ You can use Windows Analytics Upgrade Readiness to assess browser-based compatib
 
 Additionally, to assist in your move to Office 365 ProPlus, you may wish to make use of the [Readiness Toolkit for Office](https://docs.microsoft.com/en-us/deployoffice/use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro) to test the compatibility of your add-ins and Microsoft Visual Basic for Applications (VBA) macros.
 
-![](c:\\Users\\jogruszc\\Desktop\\MD%20Docs/media/image6.png)
+![](media/getting-started-media/step-1-device-and-app-readiness-media-6.png)
 
 ### 4\. Remediation
 
 As the final phase of device and app readiness is to ‘remediate’. Here you’ll want to collect the required software or driver packages; you are going to use these to supersede or update older versions as part of the deployment process.
 
-![](c:\\Users\\jogruszc\\Desktop\\MD%20Docs/media/image7.png)
+![](media/getting-started-media/step-1-device-and-app-readiness-media-7.png)
 
 As you work through the list remediating issues, you’ll see that more and more PCs become “Ready for Deployment”. This means that both the drivers and apps on the PCs are noted as compatible with the version of Windows 10 you are targeting for deployment.
 
@@ -69,6 +69,8 @@ Windows Analytics Upgrade Readiness isn’t just a tool to help you shift to Win
 ## Next Step: 
 
 ## Step 2: Directory and Network Readiness
+
+[Step 2: Directory and Network Readiness](https://review.docs.microsoft.com/microsoft-365/enterprise/step-2-directory-and-network-readiness?branch=desktop-deployment-book)
 
 ## Feedback:
 

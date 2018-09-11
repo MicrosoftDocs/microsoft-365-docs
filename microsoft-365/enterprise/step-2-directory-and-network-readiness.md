@@ -1,12 +1,12 @@
-# Step 2: Directory and Network Readiness
+﻿# Step 2: Directory and Network Readiness
 
 \[Pub Date\] ● 2 minutes to read ● Contributors
 
 Ensure your directory and the network are configured and ready to support to your shift to Windows 10 and Office 365 ProPlus. This will require Azure Active Directory Services to be in place for users, and your network must have the capacity to handle both its regular traffic and the movement of potentially vast amounts of data as PCs are upgraded, and users’ files, settings and applications are restored.
 
-![](c:\\Users\\jogruszc\\Desktop\\MD%20Docs/media/image1.png)
+![](media/getting-started-media/step-2-directory-and-network-readiness-media-1.png)
 
-![](c:\\Users\\jogruszc\\Desktop\\MD%20Docs/media/image2.emf)
+![](media/getting-started-media/step-2-directory-and-network-readiness-media-2.png)
 
 Directory and Network readiness is fundamental to ensuring a smooth OS and desktop deployment. As with any automated deployment, it is important to ensure your file shares can be reached, and your network will need to be able to support the transfer of very large files, possibly to hundreds or even thousands of PCs at a time.
 
@@ -61,7 +61,7 @@ Fortunately, there are new tools to make it easier for you to manage the network
 [Top 10 Networking Features in Windows Server 2019: \#9 LEDBAT – Latency Optimized Background Transport](https://blogs.technet.microsoft.com/networking/2018/07/25/ledbat/)
 
 ![A screenshot of a social media post
-Description generated with very high confidence](c:\\Users\\jogruszc\\Desktop\\MD%20Docs/media/image3.png)
+Description generated with very high confidence](media/getting-started-media/step-2-directory-and-network-readiness-media-3.png)
 
 ## **Scavenging Bandwidth**
 
@@ -69,7 +69,7 @@ Low Extra Delay Background Transport (LEDBAT), supported in Windows Server 2019 
 
 Unlike traditional throttling, LEDBAT can use all available network bandwidth as a background task, instantly yielding bandwidth when other traffic requests it. Unlike BITS there is no delay; everything is automated – no manual tuning or scheduling required, and everything is setup server side. This affords potentially massive performance gains.
 
-![](c:\\Users\\jogruszc\\Desktop\\MD%20Docs/media/image4.png)
+![](media/getting-started-media/step-2-directory-and-network-readiness-media-4.png)
 
 ## **Peer-to-Peer options**
 
@@ -85,7 +85,7 @@ Note: BranchCache and Peer Cache are complementary and can work together in the 
 
 **Delivery Optimization** Delivery Optimization is another peer-to-peer caching technology, providing network-based controls for Windows deployments. Windows 10 Delivery Optimization to update built-in UWP apps, also to install applications from the Microsoft Store, and for software updates using Express Updates. It has been available since early versions of Windows 10, though it has only recently integrated with System Center Configuration Manager. Since Windows 10 version 1803 new configuration options mean you can now independently set bandwidth limits for background updates and foreground jobs such as an app install from the Store.
 
-![](c:\\Users\\jogruszc\\Desktop\\MD%20Docs/media/image5.png)
+![](media/getting-started-media/step-2-directory-and-network-readiness-media-5.png)
 
 **Additional Considerations for Office 365 ProPlus**
 
@@ -97,7 +97,7 @@ Here are three items that will reduce your network load due to Office 365 ProPlu
 
 **Outlook Data Files** Outlook is often configured to cache users’ entire mailbox locally, for use offline. In any Windows deployment, except an in-place upgrade, that requires the users’ Outlook Data Files to rebuild themselves after the upgrade. This is an automated process, but with Outlook mailbox limits typically set to up to 100GB, re-caching the entire mailbox locally for all users means a lot of data transfer. To reduce the network load you may want to consider using Group Policy to reduce the “Mail to keep offline” setting. In Outlook in Office 365 ProPlus or Outlook 2016 the default value is set to 12 months. Consider setting the offline cache to last between 1 to 6 months. Changing this setting does not affect the size of the online mailbox, and the entire mailbox can still be searched via Outlook when online.
 
-![](c:\\Users\\jogruszc\\Desktop\\MD%20Docs/media/image6.png)
+![](media/getting-started-media/step-2-directory-and-network-readiness-media-6.png)
 
 **OneDrive, Files on Demand and Known Folder Move** OneDrive is a great way to synchronize and protect user files from PCs and other devices in the cloud. With Known Folder Move, you can enforce file sync from a user’s Desktop, Documents and Pictures folders to OneDrive, making those files available when signing into a new device a or reimaged PC. Remember though, due to the sheer size and number of files kept in Desktop, Documents and Pictures locations, you’ll want to be planful with the rollout of policies enabling and enforcing OneDrive on your PCs. One option is to use Group Policy Network controls to throttle bandwidth used by the OneDrive sync service.
 
@@ -111,11 +111,13 @@ If you haven’t already rolled out OneDrive, the shift from Windows 7 to Window
 
 ## Step 3: Office and LOB App Delivery
 
+[Step 3: Office and LOB App Delivery](https://review.docs.microsoft.com/microsoft-365/enterprise/step-3-office-and-lob-app-delivery?branch=desktop-deployment-book)
+
 ## Previous Step:
 
 ## Step 1: Device and App Readiness
 
-## 
+[Step 1: Device and App Readiness](https://review.docs.microsoft.com/microsoft-365/enterprise/step-1-device-and-app-readiness?branch=desktop-deployment-book)
 
 ## Feedback:
 

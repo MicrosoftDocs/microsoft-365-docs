@@ -1,12 +1,12 @@
-# Step 7: Windows and Office as a Service
+﻿# Step 7: Windows and Office as a Service
 
 \[Pub Date\] ● 2 minutes to read ● Contributors
 
 Prepare for semi-annual channel updates with new features and capabilities in Windows 10 and Office 365 ProPlus along with corresponding updates to management tools with System Center Configuration Manager Current Branch.
 
-![](c:\\Users\\jogruszc\\Desktop\\MD%20Docs/media/image1.png)
+![](media/getting-started-media/step-7-windows-and-office-as-a-service-media-1.png)
 
-![](c:\\Users\\jogruszc\\Desktop\\MD%20Docs/media/image2.png)
+![](media/getting-started-media/step-7-windows-and-office-as-a-service-media-2.png)
 
 Both Windows 10 and Office 365 ProPlus introduce new servicing options, support models and update timelines. These changes simplify the process for staying current on the latest features. Along with these updates are new configuration options to enable servicing plans that meet your needs.
 
@@ -76,7 +76,7 @@ Using a technology called "Express Updates" in Windows and Binary Delta Compress
 
 Windows Update for Business and Windows Server Update Services have supported express updates for a long time, but we've now extended that support to System Center Configuration Manager so that it can also use Express Updates.
 
-![](c:\\Users\\jogruszc\\Desktop\\MD%20Docs/media/image3.png)
+![](media/getting-started-media/step-7-windows-and-office-as-a-service-media-3.png)
 
 #### Binary Delta Compression
 
@@ -92,8 +92,7 @@ As we covered in Device and App Readiness, you’ll want to begin your preparati
 
 As for tooling, you can use policy settings with Windows Update for Business, software update management via System Center Configuration Manager, Windows Server Update Services (WSUS), or update policies set by Microsoft Intune. If you are concerned about network bandwidth, see Step 2: Directory and Network Readiness, to learn about your options to reduce network traffic via Delivery Optimization and other peer to peer caching technologies.
 
-![A screenshot of a cell phone
-Description generated with high confidence](c:\\Users\\jogruszc\\Desktop\\MD%20Docs/media/image4.png)
+![](media/getting-started-media/step-7-windows-and-office-as-a-service-media-4.png)
 
 #### Upgrade Task Sequences
 
@@ -101,7 +100,7 @@ Installing the larger feature updates via standard software update management ro
 
 A Task Sequence allows you to create custom checks or tasks BEFORE to the installing the Feature Update and allows you to perform custom tasks AFTER the update installation itself has completed – post-update tasks might include temporarily suspending services if needed during the update, driver installation and replacement, application upgrades or taskbar and Windows 10 Start personalization settings.
 
-![](c:\\Users\\jogruszc\\Desktop\\MD%20Docs/media/image5.png)
+![](media/getting-started-media/step-7-windows-and-office-as-a-service-media-5.png)
 
 If you’re already using task sequences to migrate your Windows 7 machines to Windows 10 and are well-versed with those tools, this is a great place to start and provides ultimate control. While you can use a single task sequence for the entire upgrade, it is quite common that organizations use two task sequences. One task sequence for making sure the machines are ready for the upgrade, that silently pre-stages all the required setup files on target computers, and one to do the actual upgrade. This approach ensures that your user productivity is less impacted.
 
@@ -127,11 +126,13 @@ If you don’t use Upgrade Task Sequences, you can now run custom actions or app
 
 ## Step 8: User Communications and Training
 
-## 
+[Step 8: User Communications and Training](https://review.docs.microsoft.com/microsoft-365/enterprise/step-8-user-communications-and-training?branch=desktop-deployment-book)
 
 ## Previous Step: 
 
 ## Step 6 OS Deployment and Feature Updates
+
+[Step 6 OS Deployment and Feature Updates](https://review.docs.microsoft.com/microsoft-365/enterprise/step-6-os-deployment-and-feature-updates?branch=desktop-deployment-book)
 
 ## Feedback:
 

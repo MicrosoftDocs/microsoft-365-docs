@@ -6,7 +6,7 @@ The Cloud is changing how management of PCs is be done, with the Microsoft Intel
 
 ![](media/getting-started-media/getting-started-media-1.png)
 
-![](media/getting-started-media/getting-started-media-2.emf)
+![](media/getting-started-media/getting-started-media-2.png)
 
 Welcome to Desktop Deployment Essentials, our new series designed to help you plan and make the shift to the modern desktop. This will allow you take advantage of a secure workspace, powered by the latest productivity, teamwork and collaboration experiences.
 
@@ -98,7 +98,7 @@ Now you know what’s new and different, and we have walked through our recommen
 
 ## Step 1: Device and App Readiness
 
-## 
+[Step 1: Device and App Readiness](https://review.docs.microsoft.com/microsoft-365/enterprise/step-1-device-and-app-readiness?branch=desktop-deployment-book)
 
 ## Feedback:
 

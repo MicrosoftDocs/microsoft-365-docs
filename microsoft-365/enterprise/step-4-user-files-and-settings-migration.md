@@ -1,12 +1,12 @@
-# Step 4: User Files and Settings Migration
+﻿# Step 4: User Files and Settings Migration
 
 \[Pub Date\] ● 2 minutes to read ● Contributors
 
 Moving users’ files and settings to their new or refreshed PCs is a critical process; failure is not an option. You can migrate each PC manually or you choose one of several ways to automate the process. Whichever migration method you choose you three items to be addressed – the transfer of users’ files, their settings, and managing Windows 10 Start and taskbar layouts.
 
-![](c:\\Users\\jogruszc\\Desktop\\MD%20Docs/media/image1.png)
+![](media/getting-started-media/step-4-user-files-and-settings-migration-media-1.png)
 
-![](c:\\Users\\jogruszc\\Desktop\\MD%20Docs/media/image2.emf)
+![](media/getting-started-media/step-4-user-files-and-settings-migration-media-2.png)
 
 One of the trickiest and often most manual tasks of a large-scale deployment is the transferring of your users' files and settings. In this article we will cover the options available to you to migrate users to new, refreshed and re-imaged PCs.
 
@@ -60,11 +60,13 @@ Windows 10 includes many useful built-in apps as part of the standard installati
 
 ## Step 5: Security and Compliance
 
+[Step 5: Security and Compliance](https://review.docs.microsoft.com/microsoft-365/enterprise/step-5-security-and-compliance?branch=desktop-deployment-book)
+
 ## Previous Step:
 
 ## Step 3: Office and LOB App Delivery
 
-## 
+[Step 3: Office and LOB App Delivery](https://review.docs.microsoft.com/microsoft-365/enterprise/step-3-office-and-lob-app-delivery?branch=desktop-deployment-book)
 
 ## Feedback:
 
