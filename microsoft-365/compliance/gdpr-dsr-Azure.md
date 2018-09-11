@@ -355,7 +355,7 @@ Here’s the high-level process for exporting data from your tenant.
 
 -   **Subscription.** Select the account you use to report resource usage and to bill for services. This is also the location of your Azure storage account.
 
--   **Storage account.** Select the location of your Azure Storage (Blob). For more info, see the [Introduction to Microsoft Azure Storage – Blob storage](https://docs.microsoft.com/en-us/azure/storage/common/storage-introduction#blob-storage) article.
+-   **Storage account.** Select the location of your Azure Storage (Blob). For more info, see the [Introduction to Microsoft Azure Storage – Blob storage](https://docs.microsoft.com/azure/storage/common/storage-introduction#blob-storage) article.
 
 -   **Container.** Create a new (or select an existing) container as the storage location for the user’s exported privacy data.
 
@@ -376,4 +376,4 @@ Microsoft provides the ability to discover Customer Data directly via pre-existi
 If you run into issues while exporting or deleting data from the Azure portal, go to the Azure portal **Help + Support** blade and submit a new ticket under **Subscription Management > Other Security and Compliance Request > Privacy Blade and GDPR Requests**.
 
 #### Learn more
-[Microsoft Trust Center](https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx)
+[Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)

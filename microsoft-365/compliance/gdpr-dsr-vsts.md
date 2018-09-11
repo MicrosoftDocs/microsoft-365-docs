@@ -24,7 +24,7 @@ This guide discusses how to use Microsoft tools to export or delete personal dat
 
 ## Additional privacy information
 
-The [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement), [Online Services Terms (OST)](https://www.microsoft.com/en-us/licensing/product-licensing/products.aspx), and [Microsoft's GDPR Commitments](/legal/gdpr) articles describe our data processing practices.
+The [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement), [Online Services Terms (OST)](https://www.microsoft.com/licensing/product-licensing/products.aspx), and [Microsoft's GDPR Commitments](/legal/gdpr) articles describe our data processing practices.
 
 ## Personal data we collect
 
@@ -55,7 +55,7 @@ Microsoft is committed to ensuring that your VSTS data remains secure and privat
 ## See also
 
 - [Microsoft's GDPR commitments to customers of our generally available enterprise software products](https://docs.microsoft.com/legal/gdpr)
-- [Microsoft Trust center](https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx)
+- [Microsoft Trust center](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
 - [Service Trust portal](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted)
 - [Microsoft privacy dashboard](https://account.microsoft.com/privacy)
 - [Microsoft privacy response center](https://aka.ms/userprivacysite)

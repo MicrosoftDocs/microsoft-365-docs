@@ -22,6 +22,6 @@ Come back soon to see this checklist.
 
 ## Learn more
 
-[Microsoft Trust Center](https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx)
+[Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
 
 
