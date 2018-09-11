@@ -52,7 +52,7 @@ description: Learn how to plan, deploy, and use Microsoft Office 365, Windows 10
                                             </div>
                                             <div class="cardText">
                                                 <h3>Set up Microsoft 365 Business</h3>
-                                                <P><a href="https://support.office.com/article/set-up-microsoft-365-business-by-using-the-setup-wizard-6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece?ui=en-US&rs=en-US&ad=US" target="_blank">Set up</a></p>
+                                                <P><a href="https://support.office.com/article/set-up-microsoft-365-business-by-using-the-setup-wizard-6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece" target="_blank">Set up</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -69,7 +69,7 @@ description: Learn how to plan, deploy, and use Microsoft Office 365, Windows 10
                                             </div>
                                             <div class="cardText">
                                                 <h3>Move to Microsoft 365 for Business</h3>
-                                                <P><a href="https://support.office.com/article/migrate-to-microsoft-365-business-from-another-subscription-5b4ba843-24b8-4526-8e1f-f9b9eab89d06?ui=en-US&rs=en-US&ad=US" target="_blank">Move from Office 365 Business Premium</a></p>
+                                                <P><a href="https://support.office.com/article/migrate-to-microsoft-365-business-from-another-subscription-5b4ba843-24b8-4526-8e1f-f9b9eab89d06" target="_blank">Move from Office 365 Business Premium</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -81,7 +81,7 @@ description: Learn how to plan, deploy, and use Microsoft Office 365, Windows 10
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/en-us/office/media/icons/security-blue.svg" alt="Shield symbol" />
+                                                    <img src="https://docs.microsoft.com/office/media/icons/security-blue.svg" alt="Shield symbol" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -100,7 +100,7 @@ description: Learn how to plan, deploy, and use Microsoft Office 365, Windows 10
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/en-us/office/media/icons/get-started-blue.svg" alt="Get started hand with arrow symbol" />
+                                                    <img src="https://docs.microsoft.com/office/media/icons/get-started-blue.svg" alt="Get started hand with arrow symbol" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -143,7 +143,7 @@ description: Learn how to plan, deploy, and use Microsoft Office 365, Windows 10
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="https://docs.microsoft.com/en-us/office/media/icons/users-people.svg" alt="Two people symbols" />
+                                                        <img src="https://docs.microsoft.com/office/media/icons/users-people.svg" alt="Two people symbols" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -161,7 +161,7 @@ description: Learn how to plan, deploy, and use Microsoft Office 365, Windows 10
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="https://docs.microsoft.com/en-us/office/media/icons/chat.svg" alt="chat icon" />
+                                                        <img src="https://docs.microsoft.com/office/media/icons/chat.svg" alt="chat icon" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
