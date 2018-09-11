@@ -4,9 +4,9 @@
 
 The Cloud is changing how management of PCs is be done, with the Microsoft Intelligent Cloud delivering actional insights to help IT Professionals shift to a modern desktop. This series designed to help you plan for and make the shift to a modern desktop based on Windows 10 and Office 365 ProPlus.
 
-![](C:\Users\jogruszc\GitHub\microsoft-365\microsoft-365\enterprise\media\getting-started-media\getting-started-media-1.emf)
+![](media/getting-started-media/getting-started-media-1.emf)
 
-![](c:\\Users\\jogruszc\\desktop\\MD%20Docs/media/image2.emf)
+![](media/getting-started-media/getting-started-media-2.emf)
 
 Welcome to Desktop Deployment Essentials, our new series designed to help you plan and make the shift to the modern desktop. This will allow you take advantage of a secure workspace, powered by the latest productivity, teamwork and collaboration experiences.
 
@@ -22,7 +22,7 @@ One of the key tenants of modern management practices is devices that are always
 
 [Windows 10 for the IT Pro](https://www.microsoft.com/en-us/itpro/windows-10)
 
-![](c:\\Users\\jogruszc\\Desktop\\MD%20Docs/media/image3.png)
+![](media/getting-started-media/getting-started-media-3.png)
 
 ## What has Changed
 
@@ -86,7 +86,7 @@ As in previous upgrades, the User State Migration Tool continues to be a valuabl
 
 **Step 7: Windows- and Office-as-a-Service** This represents a major shift in the way you maintain users’ desktop real-estate. With this move to Windows 10 (and Office 365 ProPlus) you can move to managing Windows (and Office) as a service. In place of a massive shift in technology every few years, you will continually be bringing new capabilities, experiences and protections to your user. Semi-annual feature updates deliver new capabilities in the Fall and Spring of each year, while monthly cumulative Quality Updates will contain security, reliability and bug fixes. While you can opt to deploy Office 2019 clients, we strongly recommend you to move to Office ProPlus. This follows a similar service plan to Windows, so your users get updates to the Office apps on a regular basis too.
 
-![](c:\\Users\\jogruszc\\Desktop\\MD%20Docs/media/image4.png)
+![](media/getting-started-media/getting-started-media-4.png)
 
 [Overview of Windows as a service](https://docs.microsoft.com/en-us/windows/deployment/update/waas-overview)
 
