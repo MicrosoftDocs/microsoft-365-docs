@@ -17,7 +17,7 @@ description: Understand and configure privileged access management for Office 36
 
 # Step 5: Configure privileged access management for Office 365
 
-*This step is optional and applies only to the E5 version of Microsoft 365 Enterprise*
+*This step is optional and applies only to the E5 and Advanced Compliance versions of Microsoft 365 Enterprise*
 
 ![](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
@@ -28,15 +28,15 @@ In this step, you'll enable privileged access management in your Office 365 tena
 - Enabling privileged access
 - Creating approval policies
 
-One configured, 
+One configured, privileged access management will enable your organization to operate with zero standing privileges and provide a layer of defense against vulnerabilities arising because of such standing administrative access.
 
-To enable Office 365 privileged access management, configure privileged access management in Office 365.
+To enable Office 365 privileged access management, see the [Configure privileged access management in Office 365](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration) topic.
 
-For more information, see privileged access management in Office 365.
+For more information, see the [Orivileged access management in Office 365](https://docs.microsoft.com/office365/securitycompliance/privileged-access-managment-overview) topic.
 
 ## Results
 
-The result of this step is that you've increased the security of Office 365 by enabling just-in-time access control to key data and configuration settings for your organization.
+The result of this step is that you've increased the security of Office 365 by enabling just-in-time access control for key data and configuration settings for your organization.
 
 As an interim checkpoint, see the [exit criteria](infoprotect-exit-criteria.md#crit-infoprotect-step5) corresponding to this step.
 
