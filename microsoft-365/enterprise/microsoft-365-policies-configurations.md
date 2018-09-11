@@ -26,7 +26,7 @@ The recommended policies are applicable to enterprise organizations operating bo
 
 Many of the provided recommendations rely on services available only with Enterprise Mobility + Security (EMS) E5 licenses. Recommendations presented assume full EMS E5 license capabilities.
 
-For those organizations who do not have Enterprise Mobility + Security E5 licenses, Microsoft recommends you at least implement Azure AD baseline protection capabilities that are included with all plans. More information can be found in the article, [What is baseline protection](/azure/active-directory/active-directory-conditional-access-baseline-protection.md) in the Azure AD library.
+For those organizations who do not have Enterprise Mobility + Security E5 licenses, Microsoft recommends you at least implement Azure AD baseline protection capabilities that are included with all plans. More information can be found in the article, [What is baseline protection](/azure/active-directory/active-directory-conditional-access-baseline-protection) in the Azure AD library.
 
 ### Caveats
 
