@@ -4,7 +4,7 @@
 
 The Cloud is changing how management of PCs is be done, with the Microsoft Intelligent Cloud delivering actional insights to help IT Professionals shift to a modern desktop. This series designed to help you plan for and make the shift to a modern desktop based on Windows 10 and Office 365 ProPlus.
 
-![](media/getting-started-media/getting-started-media-1.emf)
+![](media/getting-started-media/getting-started-media-1.png)
 
 ![](media/getting-started-media/getting-started-media-2.emf)
 
