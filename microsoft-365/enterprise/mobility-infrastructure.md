@@ -6,13 +6,14 @@ author: MandiOhlinger
 ms.author: mandia 
 manager: dougeby 
 ms.date: 08/29/2018 
-ms.topic: article 
+ms.topic: conceptual 
 audience: microsoft-business
 ms.prod: microsoft-365-enterprise
-ms.service: microsoft-intune 
+ms.service: 
 ms.technology: 
 ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
+ms.custom: microsoft-intune
 ---
 
 # Phase 5: Mobile device management for Microsoft 365 Enterprise
