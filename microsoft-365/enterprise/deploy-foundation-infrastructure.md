@@ -39,7 +39,7 @@ Before you can exit each phase, you must examine its exit criteria, which is a s
 
 Watch this short video on how the foundation infrastructure content works.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE23VRG]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE23VRG]
 
 The following figure shows the foundation infrastructure in the overall Microsoft 365 Enterprise deployment content and your path through it.
 

@@ -66,7 +66,7 @@ First, add the EMS E5 trial subscription and assign an EMS license to your globa
 > [!NOTE]
 > The Enterprise Mobility + Security E5 trial subscription is 90 days. For a permanent test environment, create a new paid subscription with a small number of licenses. 
   
- ***If you completed Phase 3 of the*** [Office 365 dev/test environment](https://docs.microsoft.com/en-us/office365/enterprise/office-365-dev-test-environment), repeat steps 8 and 9 of the previous procedure for all of your other accounts (User 2, User 3, User 4, and User 5).
+ ***If you completed Phase 3 of the*** [Office 365 dev/test environment](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment), repeat steps 8 and 9 of the previous procedure for all of your other accounts (User 2, User 3, User 4, and User 5).
   
 Your test environment now has:
   
