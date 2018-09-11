@@ -58,4 +58,4 @@ As an interim checkpoint, see the [exit criteria](infoprotect-exit-criteria.md#c
 
 ## Next step
 
-[Information protection infrastructure exit criteria](infoprotect-exit-criteria.md)
+[Configure privileged access management](infoprotect-configure-privileged-access-management.md)
