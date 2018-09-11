@@ -110,9 +110,7 @@ As you work through the list remediating issues, you’ll see that more and more
 
 ## Previous Step: 
 
-## Step 7: Windows and Office as a Service
-
-[Step 7: Windows and Office as a Service](https://review.docs.microsoft.com/microsoft-365/enterprise/step-7-windows-and-office-as-a-service?branch=desktop-deployment-book)
+## [Step 7: Windows and Office as a Service](https://review.docs.microsoft.com/microsoft-365/enterprise/step-7-windows-and-office-as-a-service?branch=desktop-deployment-book)
 
 ## Feedback:
 
