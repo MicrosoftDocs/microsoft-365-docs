@@ -1,12 +1,12 @@
-# Welcome to Desktop Deployment Essentials
+﻿# Welcome to Desktop Deployment Essentials
 
 \[Pub Date\] ● 2 minutes to read ● Contributors
 
 The Cloud is changing how management of PCs is be done, with the Microsoft Intelligent Cloud delivering actional insights to help IT Professionals shift to a modern desktop. This series designed to help you plan for and make the shift to a modern desktop based on Windows 10 and Office 365 ProPlus.
 
-![](c:\\Users\\jogruszc\\Desktop\\MD%20Docs/media/image1.emf)
+![](C:\Users\jogruszc\GitHub\microsoft-365\microsoft-365\enterprise\media\getting-started-media\getting-started-media-1.emf)
 
-![](c:\\Users\\jogruszc\\Desktop\\MD%20Docs/media/image2.emf)
+![](c:\\Users\\jogruszc\\desktop\\MD%20Docs/media/image2.emf)
 
 Welcome to Desktop Deployment Essentials, our new series designed to help you plan and make the shift to the modern desktop. This will allow you take advantage of a secure workspace, powered by the latest productivity, teamwork and collaboration experiences.
 
