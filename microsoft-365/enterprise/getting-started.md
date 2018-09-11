@@ -96,9 +96,7 @@ As in previous upgrades, the User State Migration Tool continues to be a valuabl
 
 Now you know what’s new and different, and we have walked through our recommended deployment process wheel. With this taste for the end-to-end guidance and tools available for you to make the shift a modern desktop, let’s get started.
 
-## Step 1: Device and App Readiness
-
-[Step 1: Device and App Readiness](https://review.docs.microsoft.com/microsoft-365/enterprise/step-1-device-and-app-readiness?branch=desktop-deployment-book)
+## [Step 1: Device and App Readiness](https://review.docs.microsoft.com/microsoft-365/enterprise/step-1-device-and-app-readiness?branch=desktop-deployment-book)
 
 ## Feedback:
 

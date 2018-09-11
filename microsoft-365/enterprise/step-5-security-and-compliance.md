@@ -4,9 +4,9 @@
 
 Review your options for targeting new security and compliance capabilities as part of your modern desktop deployment along with the considerations and common blockers when moving from previous versions of Windows and Office.
 
-![](media/getting-started-media/step-5-security-and-compliance-media-1.png)
+![](media/step-5-security-and-compliance-media/step-5-security-and-compliance-media-1.png)
 
-![](media/getting-started-media/step-5-security-and-compliance-media-2.png)
+![](media/step-5-security-and-compliance-media/step-5-security-and-compliance-media-2.png)
 
 Many of the security-related capabilities in Windows 10 alone are driving the shift to the newer platform. Also, integration with cloud services in Office 365 and identity options using Azure Active Directory brings access to new and continually updated protections for your data, devices and users.
 
@@ -34,7 +34,7 @@ As a result, these apps by nature can be fragile to changes when shifting to a n
 
 Your Active Directory Group Policy settings used for older versions of Windows and Office may not translate directly to Windows 10 and Office 365 ProPlus, and there are different considerations with newer security and compliance capabilities. It’s a good idea to use the Microsoft Security Compliance Toolkit to get a baseline of the security policies for current versions of Windows and Office. Additionally, it’s worth looking into Mobile Device Management policies as part of Microsoft Intune.
 
-![](media/getting-started-media/step-5-security-and-compliance-media-3.png)
+![](media/step-5-security-and-compliance-media/step-5-security-and-compliance-media-3.png)
 
 ## 
 
@@ -62,7 +62,7 @@ Cloud services provide another layer of optional protection to improve Windows a
 
 Along with the Microsoft Intelligent Security Graph, you have faster access to both information and protections from emerging threats. Here are a few examples of what you can take advantage of, starting with Office.
 
-![](media/getting-started-media/step-5-security-and-compliance-media-4.png)
+![](media/step-5-security-and-compliance-media/step-5-security-and-compliance-media-4.png)
 
 **Data Loss Prevention** built into Office 365 ProPlus, helps inform users of security policies when high risk content like credit card or identification numbers are detected. Policies can inform or block sending and sharing after notifying users.
 
@@ -88,15 +88,11 @@ Additionally, **Safe Attachments** in Outlook and as part of Exchange Online goe
 
 ## Next Step: 
 
-## Step 6: OS Deployment and Feature Updates
-
-[Step 6: OS Deployment and Feature Updates](https://review.docs.microsoft.com/microsoft-365/enterprise/step-6-os-deployment-and-feature-updates?branch=desktop-deployment-book)
+## [Step 6: OS Deployment and Feature Updates](https://review.docs.microsoft.com/microsoft-365/enterprise/step-6-os-deployment-and-feature-updates?branch=desktop-deployment-book)
 
 ## Previous Step: 
 
-## Step 4: User Files and Settings Migration
-
-[Step 4: User Files and Settings](https://review.docs.microsoft.com/microsoft-365/enterprise/step-4-user-files-and-settings-migration?branch=desktop-deployment-book)
+## [Step 4: User Files and Settings](https://review.docs.microsoft.com/microsoft-365/enterprise/step-4-user-files-and-settings-migration?branch=desktop-deployment-book)
 
 ## Feedback:
 

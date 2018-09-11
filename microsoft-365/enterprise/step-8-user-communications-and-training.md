@@ -4,9 +4,9 @@
 
 Inform and prepare your users for modern workplace experiences spanning Office 365, Windows 10 and new security and compliance controls with Azure Active Directory and more.
 
-![](media/getting-started-media/step-8-user-communications-and-training-media-1.png)
+![](media/step-8-user-communications-and-training-media/step-8-user-communications-and-training-media-1.png)
 
-![](media/getting-started-media/step-8-user-communications-and-training-media-2.png)
+![](media/step-8-user-communications-and-training-media/step-8-user-communications-and-training-media-2.png)
 
 The trick here is to figure out how to introduce updates -- when some users may fear disruptions to their productivity or changes in their workflow, or if they have to learn new things.
 
@@ -18,7 +18,7 @@ Starting with Office, if you’re deploying Office 365 ProPlus for the first tim
 
 Detailed communication and training templates are available for these and other local or browser-based apps, like Teams and Planner.
 
-![](media/getting-started-media/step-8-user-communications-and-training-media-3.png)
+![](media/step-8-user-communications-and-training-media/step-8-user-communications-and-training-media-3.png)
 
 We also give guidance for new in-app capabilities like attaching OneDrive linked files in Outlook or using the new Morph slide transitions and Designer features in PowerPoint.
 
@@ -50,7 +50,7 @@ Phased deployment using deployment rings is the concept of starting with small g
 
 Deployment rings are best created in cooperation with business units and their managers. You’ll want an understanding of critical dates and times to avoid when deploying or making changes. Without careful planning and buy-in from stakeholders, it will be difficult to get users on-board and comfortable with any changes coming their way.
 
-![](media/getting-started-media/step-8-user-communications-and-training-media-4.png)
+![](media/step-8-user-communications-and-training-media/step-8-user-communications-and-training-media-4.png)
 
 ### 
 
@@ -94,7 +94,7 @@ These components and services together can be fine-tuned during the pilot phase.
 
 As your pilot expands, you’ll want to document and publish frequently asked questions and self-service content to help proactively reduce support tickets and helpdesk activities.
 
-![](media/getting-started-media/step-8-user-communications-and-training-media-5.png)
+![](media/step-8-user-communications-and-training-media/step-8-user-communications-and-training-media-5.png)
 
 ### Phase 3 and beyond: Broad deployment 
 

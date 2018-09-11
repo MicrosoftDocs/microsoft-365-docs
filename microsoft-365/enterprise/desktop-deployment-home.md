@@ -1,28 +1,4 @@
-TOC
-
-Modern Desktop Deployment
-
-  - Getting Started: People, Process and Technology Guidance
-
-  - Step 1: Device and App Readiness
-
-  - Step 2: Directory and Network Readiness
-
-  - Step 3: Office and LOB App Delivery
-
-  - Step 4: User Files and Settings Migration
-
-  - Step 5: Security and Compliance Considerations
-
-  - Step 6: OS Deployment and Feature Updates
-
-  - Step 7: Windows and Office as a Service
-
-  - Step 8: User Communications and Training
-
-  - Get your Leadership on Board: Value Discovery and Business Case
-
-Modern Desktop Deployment Center
+﻿# Modern Desktop Deployment Center
 
 Follow the steps below to plan and carry out your large-scale deployment of Windows 10 and Office 365 ProPlus. Each step below is part of the overall planning and deployment process and steps typically run in parallel to each other in a phased deployment.
 

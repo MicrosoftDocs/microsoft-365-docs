@@ -4,9 +4,9 @@
 
 Learn the options and get ready for operating system deployment using upgrade and imaging approaches with System Center Configuration Manager or the Microsoft Deployment Toolkit.
 
-![](media/getting-started-media/step-6-os-deployment-and-feature-updates-media-1.png)
+![](media/step-6-os-deployment-and-feature-updates-media/step-6-os-deployment-and-feature-updates-media-1.png)
 
-![](media/getting-started-media/step-6-os-deployment-and-feature-updates-media-2.png)
+![](media/step-6-os-deployment-and-feature-updates-media/step-6-os-deployment-and-feature-updates-media-2.png)
 
 If you’ve been following the deployment process wheel till now, you’ve at least partially completed the steps for device and app readiness, prepared your infrastructure, configured and collected app packages, have a plan in place for migrating user files and configuring default settings as well as have plans for retaining your existing security controls and perhaps deploying new ones.
 
@@ -50,7 +50,7 @@ In-place upgrade uses windows setup. The setup engine runs several small pre-ins
 
 [Windows 10 Pre-Upgrade Validation Using setup.exe](https://blogs.technet.microsoft.com/mniehaus/2015/08/23/windows-10-pre-upgrade-validation-using-setup-exe/)
 
-![](media/getting-started-media/step-6-os-deployment-and-feature-updates-media-3.png)
+![](media/step-6-os-deployment-and-feature-updates-media/step-6-os-deployment-and-feature-updates-media-3.png)
 
 The in-place upgrade scenario can be used to migrate to Windows 10 from legacy versions of Windows, as well as upgrade from previous versions of Windows 10. After Windows Setup completes the upgrade, your task sequence can continue to run and upgrade applications like Office, replace drivers, and apply personalization settings. Likewise, you can use the Upgrade Task Sequence to perform pre-installation tasks or checks prior to carrying out the upgrade.
 
@@ -58,7 +58,7 @@ The in-place upgrade scenario can be used to migrate to Windows 10 from legacy v
 
 As you're planning your deployment, you'll be targeting computers for bare metal, refresh, replace and upgrade paths. The recommended approach in this case is to use phased deployment to collections of similar machines. This way, you can validate compatibility, delivery and automation, user acceptance, network bandwidth consumption, and other factors before increasing the scale of your deployment.
 
-![](media/getting-started-media/step-6-os-deployment-and-feature-updates-media-4.png)
+![](media/step-6-os-deployment-and-feature-updates-media/step-6-os-deployment-and-feature-updates-media-4.png)
 
 ### Recommended Tools: System Center Configuration Manager and the Microsoft Deployment Toolkit
 
@@ -81,15 +81,11 @@ Then, when a user signs in to the PC during setup using their Azure AD credentia
 
 ## Next Step: 
 
-## Step 7: Windows and Office as a Service
-
-[Step 7: Windows and Office as a Service](https://review.docs.microsoft.com/microsoft-365/enterprise/step-7-windows-and-office-as-a-service?branch=desktop-deployment-book)
+## [Step 7: Windows and Office as a Service](https://review.docs.microsoft.com/microsoft-365/enterprise/step-7-windows-and-office-as-a-service?branch=desktop-deployment-book)
 
 ## Previous Step: 
 
-## Step 5: Security and Compliance Considerations
-
-[Step 5: Security and Compliance Considerations](https://review.docs.microsoft.com/microsoft-365/enterprise/step-5-security-and-compliance?branch=desktop-deployment-book)
+## [Step 5: Security and Compliance Considerations](https://review.docs.microsoft.com/microsoft-365/enterprise/step-5-security-and-compliance?branch=desktop-deployment-book)
 
 ## Feedback:
 
