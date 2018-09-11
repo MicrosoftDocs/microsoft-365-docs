@@ -75,10 +75,9 @@ If needed, [Step 3](infoprotect-configure-classification.md) can help you meet t
 <a name="crit-infoprotect-step5"></a>
 ## Optional: Configure privileged access management in Office 365
 
-You've used the information in the Configure privileged access management in Office 365 topic to enable privileged access create one or more privileged access policies in your Office 365 organization. You've configured these policies and just-in-time access is configured for access to sensitive data or access to critical configuration settings.
+You've used the information in the Configure privileged access management in Office 365 topic to enable privileged access create one or more privileged access policies in your Office 365 organization. You've configured these policies and just-in-time access is enabled for access to sensitive data or access to critical configuration settings.
 
 If needed, [Step 5](infoprotect-configure-privileged-access-management.md) can help you meet this requirement. 
-
 
 ## Next Step
 
