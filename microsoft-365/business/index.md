@@ -52,7 +52,7 @@ description: Learn how to plan, deploy, and use Microsoft Office 365, Windows 10
                                             </div>
                                             <div class="cardText">
                                                 <h3>Set up Microsoft 365 Business</h3>
-                                                <P><a href="https://support.office.com/article/set-up-microsoft-365-business-by-using-the-setup-wizard-6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece?ui=en-US&rs=en-US&ad=US" target="_blank">Set up</a></p>
+                                                <P><a href="https://support.office.com/article/set-up-microsoft-365-business-by-using-the-setup-wizard-6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece" target="_blank">Set up</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -69,7 +69,7 @@ description: Learn how to plan, deploy, and use Microsoft Office 365, Windows 10
                                             </div>
                                             <div class="cardText">
                                                 <h3>Move to Microsoft 365 for Business</h3>
-                                                <P><a href="https://support.office.com/article/migrate-to-microsoft-365-business-from-another-subscription-5b4ba843-24b8-4526-8e1f-f9b9eab89d06?ui=en-US&rs=en-US&ad=US" target="_blank">Move from Office 365 Business Premium</a></p>
+                                                <P><a href="https://support.office.com/article/migrate-to-microsoft-365-business-from-another-subscription-5b4ba843-24b8-4526-8e1f-f9b9eab89d06" target="_blank">Move from Office 365 Business Premium</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -81,12 +81,12 @@ description: Learn how to plan, deploy, and use Microsoft Office 365, Windows 10
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/en-us/office/media/icons/security-blue.svg" alt="Shield symbol" />
+                                                    <img src="https://docs.microsoft.com/office/media/icons/security-blue.svg" alt="Shield symbol" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
                                                 <h3>Protect business data and devices</h3>
-                                                <P><a href="https://support.office.com/article/manage-microsoft-365-business-27ff1678-865a-4707-8145-e1155aa815d6" target="_blank">Manage devices</a></p>
+                                                <P><a href="https://support.office.com/article/manage-microsoft-365-business-27ff1678-865a-4707-8145-e1155aa815d6" target="_blank">Manage devices</a></p> <P><a href="https://support.office.com/article/set-app-protection-settings-for-android-or-ios-devices-6f2b80b4-81c3-4714-a7bc-ae69313e8a33" target="_blank">Protect iPhone and Android devices</a></p>
                                                  <P><a href="https://support.office.com/article/top-10-ways-to-secure-office-365-and-microsoft-365-business-plans-from-cyber-threats-de2da300-dbb6-4725-bb12-b85a9d296e75" target="_blank">Top 10 ways to secure Microsoft 365 Business</a></p>
                                                 <P><a href="https://support.office.com/article/microsoft-365-business-security-features-c123694a-1efb-459e-a8d5-2187975373dc" target="_blank">Learn more about security features</a></p>
                                                 </div>
@@ -100,12 +100,13 @@ description: Learn how to plan, deploy, and use Microsoft Office 365, Windows 10
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/en-us/office/media/icons/get-started-blue.svg" alt="Get started hand with arrow symbol" />
+                                                    <img src="https://docs.microsoft.com/office/media/icons/get-started-blue.svg" alt="Get started hand with arrow symbol" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
                                                 <h3>Use</h3>
-                                                <P><a href="https://support.office.com/article/set-app-protection-settings-for-android-or-ios-devices-6f2b80b4-81c3-4714-a7bc-ae69313e8a33" target="_blank">Set up iPhone and Android devices in Microsoft 365</a></p>
+                                               
+                                                <P><a href="https://support.office.com/article/d868561b-d340-4c04-a973-e2575d7f09bc" target="_blank">Set up mobile devices</a></p>
                                                 <P><a href="https://support.office.com/office-training-center" target="_blank">Help everyone get up and running with Office</a></p>
                                                 <P><a href="https://www.microsoft.com/itpro/windows-10/end-user-readiness" target="_blank">Help everyone switch to Windows 10</a></p>
                                                 <P><a href="https://docs.microsoft.com/intune-user-help/use-managed-devices-to-get-work-done" target="_blank">Intune training</a></p>
@@ -143,7 +144,7 @@ description: Learn how to plan, deploy, and use Microsoft Office 365, Windows 10
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="https://docs.microsoft.com/en-us/office/media/icons/users-people.svg" alt="Two people symbols" />
+                                                        <img src="https://docs.microsoft.com/office/media/icons/users-people.svg" alt="Two people symbols" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -161,7 +162,7 @@ description: Learn how to plan, deploy, and use Microsoft Office 365, Windows 10
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="https://docs.microsoft.com/en-us/office/media/icons/chat.svg" alt="chat icon" />
+                                                        <img src="https://docs.microsoft.com/office/media/icons/chat.svg" alt="chat icon" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">

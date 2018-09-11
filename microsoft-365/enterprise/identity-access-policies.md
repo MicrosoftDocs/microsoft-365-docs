@@ -109,7 +109,7 @@ Apply the settings based on the proteciton level you are targeting.
 ||Require all the selected controls|True|Selected|
 
 > [!NOTE]
-> Be sure to enable this policy, by clicking **On**. Also consider using the [What if](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-conditional-access-whatif) tool to test the policy
+> Be sure to enable this policy, by clicking **On**. Also consider using the [What if](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif) tool to test the policy
 
 
 
@@ -144,7 +144,7 @@ The following tables describes the conditional access policy settings to impleme
 ||Require all the selected controls|True|Selected|
 
 > [!NOTE]
-> Be sure to enable this policy, by clicking **On**. Also consider using the [What if](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-conditional-access-whatif) tool to test the policy
+> Be sure to enable this policy, by clicking **On**. Also consider using the [What if](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif) tool to test the policy
 
 
 
@@ -169,7 +169,7 @@ Log in to the [Microsoft Azure portal (http://portal.azure.com)](http://portal.a
 **Review:** not applicable
 
 > [!NOTE]
-> Be sure to enable this policy, by clicking **On**. Also consider using the [What if](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-conditional-access-whatif) tool to test the policy
+> Be sure to enable this policy, by clicking **On**. Also consider using the [What if](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif) tool to test the policy
 
 ## Define app protection policies
 App protection policies define which apps are allowed and the actions they can take with your organization data. Create Intune app protection policies from within the Azure portal. 
@@ -225,7 +225,7 @@ The following tables describe the recommended settings:
 
 When complete, remember to click "Create". Repeat the above steps and replace the selected platform (dropdown) with iOS. This creates two app policies, so once you create the policy, then assign groups to the policy and deploy it.
 
-To edit the policies and assign these policies to users, see [How to create and assign app protection policies](https://docs.microsoft.com/en-us/intune/app-protection-policies). 
+To edit the policies and assign these policies to users, see [How to create and assign app protection policies](https://docs.microsoft.com/intune/app-protection-policies). 
 
 ## Require approved apps
 To require approved apps:

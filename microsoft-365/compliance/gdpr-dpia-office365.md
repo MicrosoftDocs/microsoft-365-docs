@@ -74,4 +74,4 @@ The table below provides key information from Microsoft that can help with your 
 <!-- end of table -->
 
 #### Learn more
-[Microsoft Trust Center](https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx)
+[Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
