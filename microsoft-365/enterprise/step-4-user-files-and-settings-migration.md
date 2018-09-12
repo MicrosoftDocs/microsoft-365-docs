@@ -6,8 +6,6 @@ Moving users’ files and settings to their new or refreshed PCs is a critical p
 
 ![](media/step-4-user-files-and-settings-migration-media/step-4-user-files-and-settings-migration-media-1.png)
 
-![](media/step-4-user-files-and-settings-migration-media/step-4-user-files-and-settings-migration-media-2.png)
-
 One of the trickiest and often most manual tasks of a large-scale deployment is the transferring of your users' files and settings. In this article we will cover the options available to you to migrate users to new, refreshed and re-imaged PCs.
 
 ## Manual Migration
@@ -58,7 +56,7 @@ Windows 10 includes many useful built-in apps as part of the standard installati
 
 ## Next Step: 
 
-## [Step 5: Security and Compliance](https://review.docs.microsoft.com/microsoft-365/enterprise/step-5-security-and-compliance?branch=desktop-deployment-book)
+## [Step 5: Security and Compliance Considerations](https://review.docs.microsoft.com/microsoft-365/enterprise/step-5-security-and-compliance?branch=desktop-deployment-book)
 
 ## Previous Step:
 

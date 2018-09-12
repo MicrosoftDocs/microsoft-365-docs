@@ -6,8 +6,6 @@ Begin your desktop deployment project with an inventory of your devices and apps
 
 ![](media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-1.png)
 
-![](media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-2.png)
-
 In the past, a major hurdle to upgrading the users’ desktops is application and hardware compatibility. The good news as you plan your shift to Windows 10 and Office 365 ProPlus, is just about any application written in the last 10 years will run on Windows 10, and any COM add-ins and VBA macros your organization used on versions of Office dating back to Office 2010, will continue to work on the latest versions of Office, without modification.
 
 That said, depending on the size and age of your organization, verifying application and hardware compatibility is likely still an essential initial step in our recommended 8-phase deployment process.

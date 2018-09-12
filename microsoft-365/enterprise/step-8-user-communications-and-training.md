@@ -6,8 +6,6 @@ Inform and prepare your users for modern workplace experiences spanning Office 3
 
 ![](media/step-8-user-communications-and-training-media/step-8-user-communications-and-training-media-1.png)
 
-![](media/step-8-user-communications-and-training-media/step-8-user-communications-and-training-media-2.png)
-
 The trick here is to figure out how to introduce updates -- when some users may fear disruptions to their productivity or changes in their workflow, or if they have to learn new things.
 
 The good news is if you are moving from Windows 7 and Office 2010 or Office 2013, there will be a lot of people familiar with Windows 10 and newer versions of Office running on their personal devices, and all this will help reduce the impact of change.

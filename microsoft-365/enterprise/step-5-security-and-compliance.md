@@ -6,8 +6,6 @@ Review your options for targeting new security and compliance capabilities as pa
 
 ![](media/step-5-security-and-compliance-media/step-5-security-and-compliance-media-1.png)
 
-![](media/step-5-security-and-compliance-media/step-5-security-and-compliance-media-2.png)
-
 Many of the security-related capabilities in Windows 10 alone are driving the shift to the newer platform. Also, integration with cloud services in Office 365 and identity options using Azure Active Directory brings access to new and continually updated protections for your data, devices and users.
 
 ## Overcoming Potential Security-Related Deployment Blockers
