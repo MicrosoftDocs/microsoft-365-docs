@@ -6,7 +6,7 @@ Follow the steps below to plan and carry out your large-scale deployment of Wind
 <table>
 <thead>
 <tr class="header">
-<th><img src="media/desktop-deployment-home-media/desktop-deployment-home-media-1.png" style="width:1in;height:1in" /></th>
+<th><img src="media/desktop-deployment-home-media/desktop-deployment-home-media-1.png" style="200px;" /></th>
 <th><p><strong>Getting Started: People, Process &amp; Technology Guidance</strong></p>
 <p>Discover the benefits of a modern desktop, major changes and considerations versus previous deployments and best practices to ensure a smooth transition to Windows 10 and Office 365 ProPlus.</p></th>
 <th><img src="c:\Users\jogruszc\Desktop\MD Docs/media/image2.png" style="width:1.76437in;height:1in" /></th>
@@ -14,13 +14,13 @@ Follow the steps below to plan and carry out your large-scale deployment of Wind
 </thead>
 <tbody>
 <tr class="odd">
-<td><img src="media/desktop-deployment-home-media/desktop-deployment-home-media-3.png" style="width:1in;height:1in" /></td>
+<td><img src="media/desktop-deployment-home-media/desktop-deployment-home-media-3.png" style="200px;" /></td>
 <td><p><strong>Step 1: Device &amp; App Readiness</strong></p>
 <p>Begin your desktop deployment project with an inventory of your devices and apps, prioritize what you to move forward, test prioritized apps and devices, then remediate what’s needed to get ready for deployment.</p></td>
 <td><img src="c:\Users\jogruszc\Desktop\MD Docs/media/image4.png" style="width:1.78488in;height:1in" /></td>
 </tr>
 <tr class="even">
-<td><img src="media/desktop-deployment-home-media/desktop-deployment-home-media-5.png" style="width:1in;height:1in" /></td>
+<td><img src="media/desktop-deployment-home-media/desktop-deployment-home-media-5.png" width="200px" /></td>
 <td><p><strong>Step 2: Directory &amp; Network Readiness</strong></p>
 <p>Cloud connected services in Office 365 ProPlus and new deployment options like Windows Autopilot require Azure Active Directory. Your network and connectivity are also important areas to plan when moving Windows images, apps, drivers and related files to your PCs. Learn how new tools and deployment options reduce and streamline network traffic.</p></td>
 <td><img src="c:\Users\jogruszc\Desktop\MD Docs/media/image4.png" style="width:1.78488in;height:1in" /></td>
