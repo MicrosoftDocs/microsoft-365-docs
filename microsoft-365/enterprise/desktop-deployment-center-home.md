@@ -7,7 +7,7 @@ Follow the steps below to plan and carry out your large-scale deployment of Wind
 <thead>
 <tr class="even">
 <th><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-1.png" alt="Getting Started" height="144" width="144" /></th>
-<th><p><strong>Getting Started: People, Process &amp; Technology Guidance</strong></p>
+<th><p><strong><valign="top" valign="left">Getting Started: People, Process &amp; Technology Guidance</strong></p>
 <p>Discover the benefits of a modern desktop, major changes and considerations versus previous deployments and best practices to ensure a smooth transition to Windows 10 and Office 365 ProPlus.</p></th>
 <th><a href="https://aka.ms/ddev0"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-13.png" alt="Getting Started" height="130" width="231" /></a></th>
 </tr>
