@@ -6,18 +6,18 @@ Follow the steps below to plan and carry out your large-scale deployment of Wind
 <table>
 <thead>
 <tr class="even">
-<th><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-1.png" alt="Getting Started" height="150px" width="150px" /></th>
+<th><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-1.png" alt="Getting Started" height="150" width="150" /></th>
 <th><p><strong>Getting Started: People, Process &amp; Technology Guidance</strong></p>
 <p>Discover the benefits of a modern desktop, major changes and considerations versus previous deployments and best practices to ensure a smooth transition to Windows 10 and Office 365 ProPlus.</p></th>
-<th><a href="https://aka.ms/ddev0"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-13.png" alt="Getting Started" height="180" width="320" /></a></th>
+<th><a href="https://aka.ms/ddev0"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-13.png" alt="Getting Started" height="144" width="256" /></a></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-3.png" alt="Step 1" height="150" width="150" /></td>
+<td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-3.png" alt="Step 1" height="144" width="144" /></td>
 <td><p><strong>Step 1: Device &amp; App Readiness</strong></p>
 <p>Begin your desktop deployment project with an inventory of your devices and apps, prioritize what you to move forward, test prioritized apps and devices, then remediate what’s needed to get ready for deployment.</p></td>
-<td><a href="https://aka.ms/ddev1"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-14.png" alt="Step 1" height="180px" width="320px" /></a></td>
+<td><a href="https://aka.ms/ddev1"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-14.png" alt="Step 1" height="144" width="256" /></a></td>
 </tr>
 <tr class="even">
 <td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-5.png" alt="Step 2" width="150px" /></td>
