@@ -20,13 +20,13 @@ Follow the steps below to plan and carry out your large-scale deployment of Wind
 <td><img src="c:\Users\jogruszc\Desktop\MD Docs/media/image4.png" style="width:1.78488in;height:1in" /></td>
 </tr>
 <tr class="even">
-<td><img src="media/desktop-deployment-home-media/desktop-deployment-home-media-5.png" width="200px" /></td>
+<td><img src="media/desktop-deployment-home-media/desktop-deployment-home-media-5.png" alt="drawing" width="200px" /></td>
 <td><p><strong>Step 2: Directory &amp; Network Readiness</strong></p>
 <p>Cloud connected services in Office 365 ProPlus and new deployment options like Windows Autopilot require Azure Active Directory. Your network and connectivity are also important areas to plan when moving Windows images, apps, drivers and related files to your PCs. Learn how new tools and deployment options reduce and streamline network traffic.</p></td>
 <td><img src="c:\Users\jogruszc\Desktop\MD Docs/media/image4.png" style="width:1.78488in;height:1in" /></td>
 </tr>
 <tr class="odd">
-<td><img src="media/desktop-deployment-home-media/desktop-deployment-home-media-6.png" style="125px;" /></td>
+<td><img src="media/desktop-deployment-home-media/desktop-deployment-home-media-6.png" alt="drawing" width="150px" /></td>
 <td><p><strong>Step 3: Office &amp; LOB App Delivery</strong></p>
 <p>Ensure your apps are packaged and ready for automated installation. Learn how Click-to-Run packaging with Office 365 ProPlus gives you new options to configure, deliver and keep your Office apps up-to-date.</p></td>
 <td><img src="c:\Users\jogruszc\Desktop\MD Docs/media/image4.png" style="width:1.78488in;height:1in" /></td>
