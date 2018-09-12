@@ -2,20 +2,21 @@
 
 Follow the steps below to plan and carry out your large-scale deployment of Windows 10 and Office 365 ProPlus. Each step below is part of the overall planning and deployment process and steps typically run in parallel to each other in a phased deployment.
 
+#
 
 <table>
 <thead>
 <tr class="even">
-<th><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-1.png" alt="Getting Started" height="144" width="144" /></th>
-<th valign="top" valign="left"><p><strong>Getting Started: People, Process &amp; Technology Guidance</strong></p>
-<p>Discover the benefits of a modern desktop, major changes and considerations versus previous deployments and best practices to ensure a smooth transition to Windows 10 and Office 365 ProPlus.</p></th>
-<th><a href="https://aka.ms/ddev0"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-13.png" alt="Getting Started" height="130" width="231" /></a></th>
+<td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-1.png" alt="Getting Started" height="144" width="144" /></td>
+<td><p><strong>[Getting Started: People, Process &amp; Technology Guidance](https://aka.ms/mdd0)</strong></p>
+<p>Discover the benefits of a modern desktop, major changes and considerations versus previous deployments and best practices to ensure a smooth transition to Windows 10 and Office 365 ProPlus.</p></td>
+<td><a href="https://aka.ms/ddev0"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-13.png" alt="Getting Started" height="130" width="231" /></a></td>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-3.png" alt="Step 1" height="144" width="144" /></td>
-<td><p><strong>Step 1: Device &amp; App Readiness</strong></p>
+<td><p><strong>[Step 1: Device &amp; App Readiness](https://aka.ms/mdd1)</strong></p>
 <p>Begin your desktop deployment project with an inventory of your devices and apps, prioritize what you to move forward, test prioritized apps and devices, then remediate what’s needed to get ready for deployment.</p></td>
 <td><a href="https://aka.ms/ddev1"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-14.png" alt="Step 1" height="130" width="231" /></a></td>
 </tr>
