@@ -14,7 +14,7 @@ Follow the steps below to plan and carry out your large-scale deployment of Wind
 </thead>
 <tbody>
 <tr class="odd">
-<td><img src="media/desktop-deployment-home-media/desktop-deployment-home-media-3.png" style="200px;" /></td>
+<td><img src="media/desktop-deployment-home-media/desktop-deployment-home-media-3.png" style="150px;" /></td>
 <td><p><strong>Step 1: Device &amp; App Readiness</strong></p>
 <p>Begin your desktop deployment project with an inventory of your devices and apps, prioritize what you to move forward, test prioritized apps and devices, then remediate what’s needed to get ready for deployment.</p></td>
 <td><img src="c:\Users\jogruszc\Desktop\MD Docs/media/image4.png" style="width:1.78488in;height:1in" /></td>
@@ -26,13 +26,13 @@ Follow the steps below to plan and carry out your large-scale deployment of Wind
 <td><img src="c:\Users\jogruszc\Desktop\MD Docs/media/image4.png" style="width:1.78488in;height:1in" /></td>
 </tr>
 <tr class="odd">
-<td><img src="media/desktop-deployment-home-media/desktop-deployment-home-media-6.png" style="width:1in;height:1in" /></td>
+<td><img src="media/desktop-deployment-home-media/desktop-deployment-home-media-6.png" style="125px;" /></td>
 <td><p><strong>Step 3: Office &amp; LOB App Delivery</strong></p>
 <p>Ensure your apps are packaged and ready for automated installation. Learn how Click-to-Run packaging with Office 365 ProPlus gives you new options to configure, deliver and keep your Office apps up-to-date.</p></td>
 <td><img src="c:\Users\jogruszc\Desktop\MD Docs/media/image4.png" style="width:1.78488in;height:1in" /></td>
 </tr>
 <tr class="even">
-<td><img src="media/desktop-deployment-home-media/desktop-deployment-home-media-7.png" style="width:1in;height:1in" /></td>
+<td><img src="media/desktop-deployment-home-media/desktop-deployment-home-media-7.png" style="100px;" /></td>
 <td><p><strong>Step 4: User Files &amp; Settings</strong></p>
 <p>When refreshing or replacing PCs, save time by automating user state backup and restore. New options for cloud file sync allow you to enforce per user sync of Desktop, Documents and Pictures folders to OneDrive for seamless file access from new Windows installs.</p></td>
 <td><img src="c:\Users\jogruszc\Desktop\MD Docs/media/image4.png" style="width:1.78488in;height:1in" /></td>
