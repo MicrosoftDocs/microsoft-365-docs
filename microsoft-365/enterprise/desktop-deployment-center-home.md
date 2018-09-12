@@ -9,7 +9,7 @@ Follow the steps below to plan and carry out your large-scale deployment of Wind
 <th><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-1.png" alt="Getting Started" width="150px" /></th>
 <th><p><strong>Getting Started: People, Process &amp; Technology Guidance</strong></p>
 <p>Discover the benefits of a modern desktop, major changes and considerations versus previous deployments and best practices to ensure a smooth transition to Windows 10 and Office 365 ProPlus.</p></th>
-<th><a href="https://aka.ms/ddev0"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-13.png" alt="Getting Started" height="50px" /></a></th>
+<th><a href="https://aka.ms/ddev0"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-13.png" alt="Getting Started" height="10px" /></a></th>
 </tr>
 </thead>
 <tbody>
@@ -17,7 +17,7 @@ Follow the steps below to plan and carry out your large-scale deployment of Wind
 <td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-3.png" alt="Step 1" width="150px" /></td>
 <td><p><strong>Step 1: Device &amp; App Readiness</strong></p>
 <p>Begin your desktop deployment project with an inventory of your devices and apps, prioritize what you to move forward, test prioritized apps and devices, then remediate what’s needed to get ready for deployment.</p></td>
-<td><a href="https://aka.ms/ddev1"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-14.png" alt="Step 1" height="100px" /></a></td>
+<td><a href="https://aka.ms/ddev1"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-14.png" alt="Step 1" height="50px" /></a></td>
 </tr>
 <tr class="even">
 <td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-5.png" alt="Step 2" width="150px" /></td>
@@ -35,7 +35,7 @@ Follow the steps below to plan and carry out your large-scale deployment of Wind
 <td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-7.png" alt="Step 4" width="150px" /></td>
 <td><p><strong>Step 4: User Files &amp; Settings</strong></p>
 <p>When refreshing or replacing PCs, save time by automating user state backup and restore. New options for cloud file sync allow you to enforce per user sync of Desktop, Documents and Pictures folders to OneDrive for seamless file access from new Windows installs.</p></td>
-<td><a href="https://aka.ms/ddev4"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-center-media-17.png" alt="Step 4" width="200px" /></a></td>
+<td><a href="https://aka.ms/ddev4"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-17.png" alt="Step 4" width="200px" /></a></td>
 </tr>
 <tr class="odd">
 <td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-8.png" alt="Step 5" width="150px" /></td>
