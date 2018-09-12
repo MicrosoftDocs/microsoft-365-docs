@@ -6,6 +6,9 @@ Ensure your directory and the network are configured and ready to support to you
 
 ![](media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-1.png)
 
+>[!NOTE]
+>-Directory and Network Readiness is the second step in our recommended deployment process wheel by covering the holistic aspects of application and hardware compatibility. To see the full desktop deployment process, visit the [Modern Desktop Deployment Center](review.docs.com).
+
 Directory and Network readiness is fundamental to ensuring a smooth OS and desktop deployment. As with any automated deployment, it is important to ensure your file shares can be reached, and your network will need to be able to support the transfer of very large files, possibly to hundreds or even thousands of PCs at a time.
 
 With your shift to Windows 10 and Office 365 ProPlus you also now need to make sure that cloud-based identity is set up with Azure Active Directory. This is key not only to activating Office 365 ProPlus, it also allows you to take advantage of modern provisioning solutions like Windows Autopilot.
