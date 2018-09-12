@@ -45,6 +45,7 @@ In Microsoft 365 Enterprise, a well-planned and executed identity infrastructure
 
 - Azure AD Connect (PHS) [DOC](/azure/active-directory/connect/active-directory-aadconnect#install-azure-ad-connect)
    - Implement Password Hash Sync [DOC](/azure/active-directory/connect/active-directory-aadconnectsync-implement-password-hash-synchronization)
+   - Implement Passwrod Writeback [DOC](/azure/active-directory/authentication/howto-sspr-writeback)
    - Implement Azure AD Connect Health [DOC](/azure/active-directory/connect-health/active-directory-aadconnect-health)
 - Designate more than one global admin (break glass account)
    - Refer to this doc: [DOC](/azure/active-directory/users-groups-roles/directory-emergency-access)
@@ -59,7 +60,7 @@ In Microsoft 365 Enterprise, a well-planned and executed identity infrastructure
    - Enable self-service password reset [DOC](/azure/active-directory/authentication/quickstart-sspr)
    - Password policy - Use same guidance from PDF + below NEED A DOC
       - Do not expire passwords, do not require long passwords, password complexity replaced by password protection
-      - Force PW writeback (already included in pre-reqs)
+      - Password writeback (Included in Azure AD Connect)
    - Deploy Password Protection (preview) [DOC](/azure/active-directory/authentication/concept-password-ban-bad)
    - For ADFS, use Smart Lockout (2016) or Extranet Lockout (2012)
       - Why we do not recommend account lockout policies (not a modern way of managing accounts)
