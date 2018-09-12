@@ -43,56 +43,56 @@ In Microsoft 365 Enterprise, a well-planned and executed identity infrastructure
 
 ## Plan and deploy: Day 1-30
 
-Azure AD Connect (PHS)
-   Implement Azure AD Connect Health
-Designate more than one global admin (break glass account)
-   Refer to this doc: https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-emergency-access
-Use non-global administrative roles
-   https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-assign-admin-roles
-   Which specific features are needed, then you are likely needed to configure the following. Base it off golden config as an example?
-Turn on Identity Protection to view reports
-   Remediate the users at risk (admin activity in the portal)
-   Take action on risky sign-ins (admin activity in the portal)
-Turn on PIM to view reports
-Credential Management
-   Enable self-service password reset
-   Password policy - Use same guidance from PDF + below
-      Do not expire passwords, do not require long passwords, password complexity replaced by password protection
-      Force PW writeback (already included in pre-reqs)
-   Deploy Password Protection (preview)
-   For ADFS, use Smart Lockout (2016) or Extranet Lockout (2012)
-      Why we do not recommend account lockout policies (not a modern way of managing accounts)
-   CA based MFA
-   SSPR/MFA registration
+* Azure AD Connect (PHS)
+   * Implement Azure AD Connect Health
+* Designate more than one global admin (break glass account)
+   * Refer to this doc: https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-emergency-access
+* Use non-global administrative roles
+   * https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-assign-admin-roles
+   * Which specific features are needed, then you are likely needed to configure the following. Base it off golden config as an example?
+* Turn on Identity Protection to view reports
+   * Remediate the users at risk (admin activity in the portal)
+   * Take action on risky sign-ins (admin activity in the portal)
+* Turn on PIM to view reports
+* Credential Management
+   * Enable self-service password reset
+   * Password policy - Use same guidance from PDF + below
+      * Do not expire passwords, do not require long passwords, password complexity replaced by password protection
+      * Force PW writeback (already included in pre-reqs)
+   * Deploy Password Protection (preview)
+   * For ADFS, use Smart Lockout (2016) or Extranet Lockout (2012)
+      * Why we do not recommend account lockout policies (not a modern way of managing accounts)
+   * CA based MFA
+   * SSPR/MFA registration
 
 ## Plan and deploy: Day 31-90
 
-Enable sign in risk and user risk policy automation (based on golden config recs)
-Decide on device join strategy
-   Use Azure AD Join with Windows 10 devices
-Decide on external user strategy
-Decide on user lifecycle management strategy
-Enable Windows Hello for Business on all Windows 10 PCs + Authenticator App for passwordless
-*Use B2B for new external users*
+* Enable sign in risk and user risk policy automation (based on golden config recs)
+* Decide on device join strategy
+   * Use Azure AD Join with Windows 10 devices
+* Decide on external user strategy
+* Decide on user lifecycle management strategy
+* Enable Windows Hello for Business on all Windows 10 PCs + Authenticator App for passwordless
+* *Use B2B for new external users*
 
 ## Plan and deploy: Day 90 and beyond
 
-Remove just in time access eligible admins that no longer need access
-   Refer to https://docs.microsoft.com/en-us/azure/active-directory/privileged-identity-management/pim-how-to-add-role-to-user
-Require just in time access for global administrators
-   Refer to https://docs.microsoft.com/en-us/azure/active-directory/privileged-identity-management/pim-how-to-add-role-to-user
-Configure reoccurring access reviews for all administrator roles
-   Easiest to get started with admin roles
-   Refer to https://docs.microsoft.com/en-us/azure/active-directory/privileged-identity-management/pim-how-to-start-security-review
-Manage the user lifecycle holistically
-   Azure AD has an approach to managing Identity lifecycle
-   Remove manual steps from your employee account lifecycle everywhere you can to prevent unauthorized access:
-      Synchronize identities from your source of truth (HR System) to Azure AD. link to supported HR systems)
-      Use Dynamic Groups to automatically assign users to groups based on their attributes from HR (or your source of truth), such as department, title, region, and other attributes.
-      Use group-based licensing to assign services to your users automatically as soon as they arrive in the cloud. (Coming soon)
-         Consider as pre-req
-      Use group-based access management/ provisioning to automatically provision users for SaaS applications.
-   Migrate your external accounts to Azure AD B2B collaboration
+* Remove just in time access eligible admins that no longer need access
+   * Refer to https://docs.microsoft.com/en-us/azure/active-directory/privileged-identity-management/pim-how-to-add-role-to-user
+* Require just in time access for global administrators
+   * Refer to https://docs.microsoft.com/en-us/azure/active-directory/privileged-identity-management/pim-how-to-add-role-to-user
+* Configure reoccurring access reviews for all administrator roles
+   * Easiest to get started with admin roles
+   * Refer to https://docs.microsoft.com/en-us/azure/active-directory/privileged-identity-management/pim-how-to-start-security-review
+* Manage the user lifecycle holistically
+   * Azure AD has an approach to managing Identity lifecycle
+   * Remove manual steps from your employee account lifecycle everywhere you can to prevent unauthorized access:
+      * Synchronize identities from your source of truth (HR System) to Azure AD. link to supported HR systems)
+      * Use Dynamic Groups to automatically assign users to groups based on their attributes from HR (or your source of truth), such as department, title, region, and other attributes.
+      * Use group-based licensing to assign services to your users automatically as soon as they arrive in the cloud. (Coming soon)
+         * Consider as pre-req
+      * Use group-based access management/ provisioning to automatically provision users for SaaS applications.
+   * Migrate your external accounts to Azure AD B2B collaboration
 
 
 
