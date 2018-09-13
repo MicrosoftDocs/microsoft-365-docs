@@ -7,7 +7,8 @@ Ensure your directory and the network are configured and ready to support to you
 ![](media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-1.png)
 
 >[!NOTE]
->-Directory and Network Readiness is the second step in our recommended deployment process wheel by covering the holistic aspects of application and hardware compatibility. To see the full desktop deployment process, visit the [Modern Desktop Deployment Center](review.docs.com).
+>Directory and Network Readiness is the second step in our recommended deployment process wheel by covering the holistic aspects of application and hardware compatibility. To see the full desktop deployment process, visit the [Modern Desktop Deployment Center](https://aka.ms/mddhome).
+>Before reading this article, please watch the following introduction video [Step 2: Directory and Network REadiness](https://aka.ms/dde2)
 
 Directory and Network readiness is fundamental to ensuring a smooth OS and desktop deployment. As with any automated deployment, it is important to ensure your file shares can be reached, and your network will need to be able to support the transfer of very large files, possibly to hundreds or even thousands of PCs at a time.
 
@@ -105,11 +106,11 @@ If you haven’t already rolled out OneDrive, the shift from Windows 7 to Window
 
 ## Next Step: 
 
-## [Step 3: Office and LOB App Delivery](https://review.docs.microsoft.com/microsoft-365/enterprise/step-3-office-and-lob-app-delivery?branch=desktop-deployment-book)
+## [Step 3: Office and LOB App Delivery](https://aka.ms/mdd3)
 
 ## Previous Step:
 
-## [Step 1: Device and App Readiness](https://review.docs.microsoft.com/microsoft-365/enterprise/step-1-device-and-app-readiness?branch=desktop-deployment-book)
+## [Step 1: Device and App Readiness](https://aka.ms/mdd1)
 
 ## Feedback:
 

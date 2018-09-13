@@ -7,7 +7,8 @@ Review your options for targeting new security and compliance capabilities as pa
 ![](media/step-5-security-and-compliance-media/step-5-security-and-compliance-media-1.png)
 
 >[!NOTE]
->-Windows and Office as a Service is the fifth step in our recommended deployment process wheel covering Windows 10 and Office 365 ProPlus security and compliance considerations. To see the full desktop deployment process, visit the [Modern Desktop Deployment Center](review.docs.com).
+>Windows and Office as a Service is the fifth step in our recommended deployment process wheel covering Windows 10 and Office 365 ProPlus security and compliance considerations. To see the full desktop deployment process, visit the [Modern Desktop Deployment Center](https://aka.ms/mddhome).
+>Before reading this article, please watch the following introduction video [Step 5: Security and Compliance Considerations](https://aka.ms/dde5)
 
 Many of the security-related capabilities in Windows 10 alone are driving the shift to the newer platform. Also, integration with cloud services in Office 365 and identity options using Azure Active Directory brings access to new and continually updated protections for your data, devices and users.
 
@@ -89,12 +90,11 @@ Additionally, **Safe Attachments** in Outlook and as part of Exchange Online goe
 
 ## Next Step: 
 
-## [Step 6: OS Deployment and Feature Updates](https://review.docs.microsoft.com/microsoft-365/enterprise/step-6-os-deployment-and-feature-updates?branch=desktop-deployment-book)
+## [Step 6: OS Deployment and Feature Updates](https://aka.ms/mdd6)
 
 ## Previous Step: 
 
-## [Step 4: User Files and Settings](https://review.docs.microsoft.com/microsoft-365/enterprise/step-4-user-files-and-settings-migration?branch=desktop-deployment-book)
-
+## [Step 4: User Files and Settings](https://aka.ms/mdd4)
 ## Feedback:
 
 We'd love to hear your thoughts. Choose the type you'd like to provide:

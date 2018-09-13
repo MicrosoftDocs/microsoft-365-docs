@@ -7,7 +7,8 @@ Moving users’ files and settings to their new or refreshed PCs is a critical p
 ![](media/step-4-user-files-and-settings-migration-media/step-4-user-files-and-settings-migration-media-1.png)
 
 >[!NOTE]
->-While you can continue to use migration processes you have used in the past, with your shift to Office 365 ProPlus we recommend you use OneDrive ‘Known Folder Move’ (see below). To see the full desktop deployment process, visit the [Modern Desktop Deployment Center](review.docs.com).
+>While you can continue to use migration processes you have used in the past, with your shift to Office 365 ProPlus we recommend you use OneDrive ‘Known Folder Move’ (see below). To see the full desktop deployment process, visit the [Modern Desktop Deployment Center](https://aka.ms/mddhome).
+>Before reading this article, please watch the following introduction video [Step 4: User Files and Settings Migration](https://aka.ms/dde4)
 
 One of the trickiest and often most manual tasks of a large-scale deployment is the transferring of your users' files and settings. In this article we will cover the options available to you to migrate users to new, refreshed and re-imaged PCs.
 
@@ -59,11 +60,10 @@ Windows 10 includes many useful built-in apps as part of the standard installati
 
 ## Next Step: 
 
-## [Step 5: Security and Compliance Considerations](https://review.docs.microsoft.com/microsoft-365/enterprise/step-5-security-and-compliance?branch=desktop-deployment-book)
-
+## [Step 5: Security and Compliance Considerations](https://aka.ms/mdd5)
 ## Previous Step:
 
-## [Step 3: Office and LOB App Delivery](https://review.docs.microsoft.com/microsoft-365/enterprise/step-3-office-and-lob-app-delivery?branch=desktop-deployment-book)
+## [Step 3: Office and LOB App Delivery](https://aka.ms/mdd3)
 
 ## Feedback:
 

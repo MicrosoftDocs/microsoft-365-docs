@@ -7,7 +7,8 @@ The Cloud is changing how management of PCs is be done, with the Microsoft Intel
 ![](media/getting-started-media/getting-started-media-1.png)
 
 >[!NOTE]
->-In this series we will explain the best ways to use existing tools, and introduce you to new technologies, services and methods enabled by the Cloud.  To see the full desktop deployment process, visit the [Modern Desktop Deployment Center](review.docs.com).
+>In this series we will explain the best ways to use existing tools, and introduce you to new technologies, services and methods enabled by the Cloud.  To see the full desktop deployment process, visit the [Modern Desktop Deployment Center](https://aka.ms/mddhome).
+>Before reading this article, please watch the following introduction video [Getting Started: People, Process, & Technology Guidance](https://aka.ms/dde0)
 
 Welcome to Desktop Deployment Essentials, our new series designed to help you plan and make the shift to the modern desktop. This will allow you take advantage of a secure workspace, powered by the latest productivity, teamwork and collaboration experiences.
 
@@ -97,8 +98,7 @@ As in previous upgrades, the User State Migration Tool continues to be a valuabl
 
 Now you know what’s new and different, and we have walked through our recommended deployment process wheel. With this taste for the end-to-end guidance and tools available for you to make the shift a modern desktop, let’s get started.
 
-## [Step 1: Device and App Readiness](https://review.docs.microsoft.com/microsoft-365/enterprise/step-1-device-and-app-readiness?branch=desktop-deployment-book)
-
+## [Step 1: Device and App Readiness](https://aka.ms/mdd1)
 ## Feedback:
 
 We'd love to hear your thoughts. Choose the type you'd like to provide:

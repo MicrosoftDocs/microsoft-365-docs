@@ -7,7 +7,8 @@ Inform and prepare your users for modern workplace experiences spanning Office 3
 ![](media/step-8-user-communications-and-training-media/step-8-user-communications-and-training-media-1.png)
 
 >[!NOTE]
->-User Communications and Training is the eighth step in our recommended deployment process wheel by covering tips and recommendations to inform and prepare users. To see the full desktop deployment process, visit the [Modern Desktop Deployment Center](review.docs.com).
+>User Communications and Training is the eighth step in our recommended deployment process wheel by covering tips and recommendations to inform and prepare users. To see the full desktop deployment process, visit the [Modern Desktop Deployment Center](https://aka.ms/mddhome).
+>Before reading this article, please watch the following introduction video [Step 8: User Communications and Training](https://aka.ms/dde8)
 
 The trick here is to figure out how to introduce updates -- when some users may fear disruptions to their productivity or changes in their workflow, or if they have to learn new things.
 
@@ -111,7 +112,7 @@ As you work through the list remediating issues, you’ll see that more and more
 
 ## Previous Step: 
 
-## [Step 7: Windows and Office as a Service](https://review.docs.microsoft.com/microsoft-365/enterprise/step-7-windows-and-office-as-a-service?branch=desktop-deployment-book)
+## [Step 7: Windows and Office as a Service](https://aka.ms/mdd7)
 
 ## Feedback:
 
