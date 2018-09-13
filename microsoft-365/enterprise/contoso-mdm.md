@@ -60,7 +60,7 @@ Once deployed, Contoso enrolled PCs and company-owned smartphones and tablets by
 
 ## Next step
 
-[Learn](contoso-info-prot.md) how Contoso uses the information protection capabilities of Microsoft 365 Enterprise to classify, identify, and protect crucial digital assets across its organization.
+[Learn](contoso-info-protect.md) how Contoso uses the information protection capabilities of Microsoft 365 Enterprise to classify, identify, and protect crucial digital assets across its organization.
 
 ## See also
 
