@@ -1,9 +1,8 @@
 ﻿# Modern Desktop Deployment Center
 
 Follow the steps below to plan and carry out your large-scale deployment of Windows 10 and Office 365 ProPlus. Each step below is part of the overall planning and deployment process and steps typically run in parallel to each other in a phased deployment.
-
-
-
+<p>
+</>
 
 <table>
 <thead>
@@ -67,6 +66,7 @@ Follow the steps below to plan and carry out your large-scale deployment of Wind
 <td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-12.png" alt="Value Discovery and Business Case" height="144" width="144" /></td>
 <td><p><strong>Get your Leadership on Board: Value Discovery &amp; Business Case</strong></p>
 <p>If you’ve done your deployment research, assessed app and device readiness, built your deployment plan and started piloting your deployment, but don’t have the support or resources needed from your management team to meet your deployment timelines, the Business Value Programs at Microsoft can help. Learn how to build a business case for a modern desktop and help get everyone on board.</p></td>
+<td><a href="https://aka.ms/ddev9"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-22.png" alt="Value Discovery and Business Case" height="130" width="231" /></a></td>
 </tr>
 </tbody>
 </table>
