@@ -1,13 +1,12 @@
 ﻿# Step 4: User Files and Settings Migration
 
-\[Pub Date\] ● 2 minutes to read ● Contributors
-
 Moving users’ files and settings to their new or refreshed PCs is a critical process; failure is not an option. You can migrate each PC manually or you choose one of several ways to automate the process. Whichever migration method you choose you three items to be addressed – the transfer of users’ files, their settings, and managing Windows 10 Start and taskbar layouts.
 
 ![](media/step-4-user-files-and-settings-migration-media/step-4-user-files-and-settings-migration-media-1.png)
 
 >[!NOTE]
 >While you can continue to use migration processes you have used in the past, with your shift to Office 365 ProPlus we recommend you use OneDrive ‘Known Folder Move’ (see below). To see the full desktop deployment process, visit the [Modern Desktop Deployment Center](https://aka.ms/mddhome).
+
 >Before reading this article, please watch the following introduction video [Step 4: User Files and Settings Migration](https://aka.ms/dde4)
 
 One of the trickiest and often most manual tasks of a large-scale deployment is the transferring of your users' files and settings. In this article we will cover the options available to you to migrate users to new, refreshed and re-imaged PCs.

@@ -1,14 +1,13 @@
 ﻿# Step 6: OS Deployment and Feature Updates
 
-\[Pub Date\] ● 2 minutes to read ● Contributors
-
 Learn the options and get ready for operating system deployment using upgrade and imaging approaches with System Center Configuration Manager or the Microsoft Deployment Toolkit.
 
 ![](media/step-6-os-deployment-and-feature-updates-media/step-6-os-deployment-and-feature-updates-media-1.png)
 
 >[!NOTE]
 >Windows and Office as a Service is the seventh step in our recommended deployment process wheel covering Windows 10 OS deployment, upgrades and Feature Updates. To see the full desktop deployment process, visit the [Modern Desktop Deployment Center](https://aka.ms/mddhome).
->>Before reading this article, please watch the following introduction video [Step 6: OS Deployment and Feature Updates](https://aka.ms/dde6)
+
+>Before reading this article, please watch the following introduction video [Step 6: OS Deployment and Feature Updates](https://aka.ms/dde6)
 
 If you’ve been following the deployment process wheel till now, you’ve at least partially completed the steps for device and app readiness, prepared your infrastructure, configured and collected app packages, have a plan in place for migrating user files and configuring default settings as well as have plans for retaining your existing security controls and perhaps deploying new ones.
 
