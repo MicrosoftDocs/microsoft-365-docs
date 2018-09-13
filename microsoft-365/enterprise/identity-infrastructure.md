@@ -33,7 +33,7 @@ Customers who have already deployed an identity solution may wish to reflect on 
 
 ## Prerequisites
 
-This guide assumes you have Microsoft 365 E3 or E5 licenses. Much of the identity guidance will also work for those with Enterprise Mobility + Security E3 or E5. For more details about licensing see the following articles:
+This guide assumes you have Microsoft 365 E5 licenses. Much of the identity guidance will also work for those with Enterprise Mobility + Security E5. For more details about licensing see the following articles:
 
 [Microsoft 365 Enterprise](https://www.microsoft.com/licensing/product-licensing/microsoft-365-enterprise.aspx)
 
@@ -73,7 +73,7 @@ In Microsoft 365 Enterprise, a well-planned and executed identity infrastructure
 - Enable sign in risk and user risk policy automation (based on golden config recs) NEED A DOC
 - Decide on device join strategy [DOC](/azure/active-directory/devices/overview)
    - Use Azure AD Join with Windows 10 devices [DOC](/azure/active-directory/devices/azuread-joined-devices-frx)
-   - -Use B2B for new external users- [DOC](/azure/active-directory/b2b/add-user-without-invite)
+   - Use B2B for new external users [DOC](/azure/active-directory/b2b/add-user-without-invite)
 - Decide on external user strategy [DOC](/azure/active-directory/b2b/what-is-b2b)
 - Decide on user lifecycle management strategy NEED A DOC
 - Enable Windows Hello for Business on all Windows 10 PCs + Authenticator App for passwordless [DOC](/windows/security/identity-protection/hello-for-business/hello-identity-verification)
