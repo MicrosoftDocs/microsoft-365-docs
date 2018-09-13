@@ -7,7 +7,7 @@ Ensure your directory and the network are configured and ready to support to you
 >[!NOTE]
 >Directory and Network Readiness is the second step in our recommended deployment process wheel by covering the holistic aspects of application and hardware compatibility. To see the full desktop deployment process, visit the [Modern Desktop Deployment Center](https://aka.ms/mddhome).
 
->Before reading this article, please watch the following introduction video [Step 2: Directory and Network REadiness](https://aka.ms/dde2)
+>Before reading this article, please watch the following introduction video [Step 2: Directory and Network Readiness](https://aka.ms/dde2)
 
 Directory and Network readiness is fundamental to ensuring a smooth OS and desktop deployment. As with any automated deployment, it is important to ensure your file shares can be reached, and your network will need to be able to support the transfer of very large files, possibly to hundreds or even thousands of PCs at a time.
 
