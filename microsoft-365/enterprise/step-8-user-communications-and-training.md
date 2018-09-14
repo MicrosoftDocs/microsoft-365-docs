@@ -4,10 +4,16 @@ Inform and prepare your users for modern workplace experiences spanning Office 3
 
 ![](media/step-8-user-communications-and-training-media/step-8-user-communications-and-training-media-1.png)
 
+<table>
+<thead>
+<td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-11.png" alt="Step 8" height="144" width="144" /></td>
+<td><p><strong>[Step 8: User Communication and Training](https://aka.ms/mdd8)</strong></p>
+<p>Make sure your users are informed about new experiences and new ways of working as you shift your PCs to Windows 10 and Office 365 ProPlus. Learn how to take advantage of user adoption assistance with Microsoft FastTrack, training materials and communication templates, as well as new ways to monitor user acceptance and usage.</p></td>
+<td><a href=""><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-21.png" alt="Step 8" height="130" width="231" /></a></td>
+</thead>
+</table>
 >[!NOTE]
 >User Communications and Training is the eighth step in our recommended deployment process wheel by covering tips and recommendations to inform and prepare users. To see the full desktop deployment process, visit the [Modern Desktop Deployment Center](https://aka.ms/mddhome).
-
->Before reading this article, please watch the following introduction video [Step 8: User Communications and Training](https://aka.ms/dde8)
 
 The trick here is to figure out how to introduce updates -- when some users may fear disruptions to their productivity or changes in their workflow, or if they have to learn new things.
 

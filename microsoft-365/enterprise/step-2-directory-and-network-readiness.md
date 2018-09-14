@@ -4,10 +4,16 @@ Ensure your directory and the network are configured and ready to support to you
 
 ![](media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-1.png)
 
+<table>
+<thead>
+<td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-5.png" alt="Step 2" height="144" width="144" /></td>
+<td><p><strong>[Step 2: Directory and Network Readiness](https://aka.ms/mdd2)</strong></p>
+<p>Cloud connected services in Office 365 ProPlus and new deployment options like Windows Autopilot require Azure Active Directory. Your network and connectivity are also important areas to plan when moving Windows images, apps, drivers and related files to your PCs. Learn how new tools and deployment options reduce and streamline network traffic.</p></td>
+<td><a href="https://aka.ms/ddev2"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-15.png" alt="Step 2" height="130" width="231" /></a></td>
+</thead>
+</table>
 >[!NOTE]
 >Directory and Network Readiness is the second step in our recommended deployment process wheel by covering the holistic aspects of application and hardware compatibility. To see the full desktop deployment process, visit the [Modern Desktop Deployment Center](https://aka.ms/mddhome).
-
->Before reading this article, please watch the following introduction video [Step 2: Directory and Network Readiness](https://aka.ms/dde2)
 
 Directory and Network readiness is fundamental to ensuring a smooth OS and desktop deployment. As with any automated deployment, it is important to ensure your file shares can be reached, and your network will need to be able to support the transfer of very large files, possibly to hundreds or even thousands of PCs at a time.
 

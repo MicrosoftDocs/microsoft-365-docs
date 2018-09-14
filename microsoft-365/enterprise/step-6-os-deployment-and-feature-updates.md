@@ -4,10 +4,16 @@ Learn the options and get ready for operating system deployment using upgrade an
 
 ![](media/step-6-os-deployment-and-feature-updates-media/step-6-os-deployment-and-feature-updates-media-1.png)
 
+<table>
+<thead>
+<td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-9.png" alt="Step 6" height="144" width="144" /></td>
+<td><p><strong>[Step 6: OS Deployment and Feature Updates](https://aka.ms/mdd6)</strong></p>
+<p>Task sequence-based deployment is used to automate large scale, phased deployment for bare metal installs, PC refresh and PC replacement. Upgrade task sequences will also help you stay current with major semi-annual updates. And Windows Autopilot is a recent addition that modernizes the new PC acquisition process.</p></td>
+<td><a href="https://aka.ms/ddev6"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-19.png" alt="Step 6" height="130" width="231" /></a></td>
+</thead>
+</table>
 >[!NOTE]
 >Windows and Office as a Service is the seventh step in our recommended deployment process wheel covering Windows 10 OS deployment, upgrades and Feature Updates. To see the full desktop deployment process, visit the [Modern Desktop Deployment Center](https://aka.ms/mddhome).
-
->Before reading this article, please watch the following introduction video [Step 6: OS Deployment and Feature Updates](https://aka.ms/dde6)
 
 If you’ve been following the deployment process wheel till now, you’ve at least partially completed the steps for device and app readiness, prepared your infrastructure, configured and collected app packages, have a plan in place for migrating user files and configuring default settings as well as have plans for retaining your existing security controls and perhaps deploying new ones.
 

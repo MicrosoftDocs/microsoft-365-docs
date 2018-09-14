@@ -4,10 +4,16 @@ Moving users’ files and settings to their new or refreshed PCs is a critical p
 
 ![](media/step-4-user-files-and-settings-migration-media/step-4-user-files-and-settings-migration-media-1.png)
 
+<table>
+<thead>
+<td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-7.png" alt="Step 4" height="135" width="135" /></td>
+<td><p><strong>[Step 4: User Files and Settings](https://aka.ms/mdd4)</strong></p>
+<p>When refreshing or replacing PCs, save time by automating user state backup and restore. New options for cloud file sync allow you to enforce per user sync of Desktop, Documents and Pictures folders to OneDrive for seamless file access from new Windows installs.</p></td>
+<td><a href="https://aka.ms/ddev4"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-17.png" alt="Step 4" height="130" width="231" /></a></td>
+</thead>
+</table>
 >[!NOTE]
 >While you can continue to use migration processes you have used in the past, with your shift to Office 365 ProPlus we recommend you use OneDrive ‘Known Folder Move’ (see below). To see the full desktop deployment process, visit the [Modern Desktop Deployment Center](https://aka.ms/mddhome).
-
->Before reading this article, please watch the following introduction video [Step 4: User Files and Settings Migration](https://aka.ms/dde4)
 
 One of the trickiest and often most manual tasks of a large-scale deployment is the transferring of your users' files and settings. In this article we will cover the options available to you to migrate users to new, refreshed and re-imaged PCs.
 

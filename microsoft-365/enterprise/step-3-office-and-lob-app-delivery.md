@@ -4,10 +4,17 @@ You are now ready to deliver Office and your Line of Business Apps. There are a 
 
 ![](media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-1.png)
 
+<table>
+<thead>
+<td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-6.png" alt="Step 3" height="130" width="130" /></td>
+<td><p><strong>[Step 3: Office and LOB App Delivery](https://aka.ms/mdd3)</strong></p>
+<p>Ensure your apps are packaged and ready for automated installation. Learn how Click-to-Run packaging with Office 365 ProPlus gives you new options to configure, deliver and keep your Office apps up-to-date.</p></td>
+<td><a href=""><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-16.png" alt="Step 3" height="120" width="213" /></a></td>
+</thead>
+</table>
+
 >[!NOTE]
 >Office and LOB App Delivery is the third step in our recommended deployment process wheel by covering the holistic aspects of application and hardware compatibility.  For successful deployment do not skip the first two steps.  To see the full desktop deployment process, visit the [Modern Desktop Deployment Center](https://aka.ms/mddhome).
-
->Before reading this article, please watch the following introduction video [Step 3: Office and LOB App Delivery](https://aka.ms/dde3)
 
 While some applications are only available as either a 32-bit or 64-bit compiled version, others, including Office 365 ProPlus, both as 32-bit and 64-bit native compiled code, and one of biggest decisions you will make is which version to deploy. To take advantage of additional compute power and RAM on new devices, you will want to use the 64-bit version, but before you do you will need to figure out any add-in or file-related compatibility challenges you may have. This may require you to revisit Step 1 Device and App Readiness before you continue.
 
