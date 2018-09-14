@@ -75,7 +75,7 @@ You’ll also need their input on timeframes to avoid, so you can minimize user 
 
 In parallel to planning for devices, users, departments and timing, you can start to build your communication and training plans, as well as begin compiling content or engaging outside resources to help train users.
 
-### Microsoft FastTrack 
+#### Microsoft FastTrack 
 
 To help your effort in pulling together training content, you can access a comprehensive set of short, video-based training with step-by-step instructional guidance on the Microsoft FastTrack Productivity Library.
 
@@ -85,7 +85,7 @@ There are hundreds of topics, based on what’s important to your organization, 
 
 Also, if you are using Microsoft 365 or Office 365, there is good chance that you’re eligible for help with driving user adoption via Microsoft’s FastTrack service. Representatives guide you through adoption best practices as you go through the Microsoft 365 – Windows, Office and EMS – rollout process.
 
-### Microsoft IT Showcase 
+#### Microsoft IT Showcase 
 
 Microsoft’s IT Showcase series is another great resource for Windows 10 deployment-related content. It includes timelines and schedules, digital promotion templates, email templates and Intranet content. These are based on materials used for Microsoft’s own deployment of Windows 10 and has been modified for any organization to use.
 
@@ -97,7 +97,7 @@ As your pilot expands, you’ll want to document and publish frequently asked qu
 
 ![](media/step-8-user-communications-and-training-media/step-8-user-communications-and-training-media-5.png)
 
-### Phase 3 and beyond: Broad deployment 
+### Phase 3 and beyond: Broad Production deployment 
 
 By the time you reach broad deployment phases, you’ll have refined your processes, communication, training and self-service tools. Now you can use data collected via telemetry to target more and more PCs.
 
@@ -109,14 +109,6 @@ New technology acceptance and adoption will go on long after every PC in your or
 
 As you work through the list remediating issues, you’ll see that more and more PCs become “Ready for Deployment”. This means that both the drivers and apps on the PCs are noted as compatible with the version of Windows 10 you are targeting for deployment.
 
-## Previous Step: 
+## Previous Step 
 
 ## [Step 7: Windows and Office as a Service](https://aka.ms/mdd7)
-
-## Feedback:
-
-We'd love to hear your thoughts. Choose the type you'd like to provide:
-
-Product feedback Sign in to give documentation feedback
-
-Our new feedback system is built on GitHub Issues. Read about this change in our blog post.

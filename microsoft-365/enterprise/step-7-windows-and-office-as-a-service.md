@@ -17,13 +17,7 @@ Both Windows 10 and Office 365 ProPlus introduce new servicing options, support 
 
 ## Update Types
 
-Updates fall into two main categories, feature updates and then quality and security updates which contain cumulative security, reliability and bug fixes.
-
-In terms of cadence, both Windows and Office deliver a semi-annual channel, which delivers new features twice per year around March and September.
-
-While Quality and Security Updates occur Monthly.
-
-Additionally, unique to Office 365 Apps, we deliver Monthly Channel updates that are fully-supported and contain both new features and quality updates.
+Updates fall into two main categories, feature updates and then quality and security updates which contain cumulative security, reliability and bug fixes. In terms of cadence both Windows and Office deliver a semi-annual channel which delivers new features twice per year around March and September while Quality and Security Updates occur Monthly. Additionally, unique to Office 365 Apps, we deliver Monthly Channel updates that are fully-supported and contain both new features and quality updates.
 
 If you’re used to a longer cycle between desktop OS and app updates, you might be wondering;
 
@@ -123,18 +117,10 @@ If you don’t use Upgrade Task Sequences, you can now run custom actions or app
 
 [What's new in Windows 10 setup, version 1803](https://docs.microsoft.com/en-us/windows/whats-new/whats-new-windows-10-version-1803%23windows-setup)
 
-## Next Step: 
+## Next Step 
 
 ## [Step 8: User Communications and Training](https://aka.ms/mdd8)
 
-## Previous Step: 
+## Previous Step 
 
 ## [Step 6 OS Deployment and Feature Updates](https://aka.ms/mdd6)
-
-## Feedback:
-
-We'd love to hear your thoughts. Choose the type you'd like to provide:
-
-Product feedback Sign in to give documentation feedback
-
-Our new feedback system is built on GitHub Issues. Read about this change in our blog post.

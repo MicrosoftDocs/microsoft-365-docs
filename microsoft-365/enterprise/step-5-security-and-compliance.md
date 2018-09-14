@@ -5,7 +5,7 @@ Review your options for targeting new security and compliance capabilities as pa
 ![](media/step-5-security-and-compliance-media/step-5-security-and-compliance-media-1.png)
 
 >[!NOTE]
->Windows and Office as a Service is the fifth step in our recommended deployment process wheel covering Windows 10 and Office 365 ProPlus security and compliance considerations. To see the full desktop deployment process, visit the [Modern Desktop Deployment Center](https://aka.ms/mddhome).
+>Security and Compliance is the fifth step in our recommended deployment process wheel covering Windows 10 and Office 365 ProPlus security and compliance considerations. To see the full desktop deployment process, visit the [Modern Desktop Deployment Center](https://aka.ms/mddhome).
 
 >Before reading this article, please watch the following introduction video [Step 5: Security and Compliance Considerations](https://aka.ms/dde5)
 
@@ -27,7 +27,7 @@ One option to resolve these issues is using BitLocker in Windows 10, which is in
 
 ### Antivirus and Antimalware Application Compatibility
 
-Second, while we’ve seen that more than 99% of Windows applications are compatible between Windows 7 and Windows 10, the exceptions are often anti-virus (AV) apps or Virtual Private Network (VPN) clients. These applications often implement non-standard development practices and APIs, using often undocumented ways to protect your system or connect you to network resources.
+Second, while we’ve seen that more than [99% of Windows applications are compatible](https://www.microsoft.com/en-us/microsoft-365/blog/2018/09/06/helping-customers-shift-to-a-modern-desktop/) between Windows 7 and Windows 10, the exceptions are often anti-virus (AV) apps or Virtual Private Network (VPN) clients. These applications often implement non-standard development practices and APIs, using often undocumented ways to protect your system or connect you to network resources.
 
 As a result, these apps by nature can be fragile to changes when shifting to a new version of Windows. If your AV or VPN software doesn’t work in Windows 10 or after upgrading, the fix is typically to replace the app you’re using with something supported and tested on Windows 10.
 
@@ -85,19 +85,12 @@ Additionally, **Safe Attachments** in Outlook and as part of Exchange Online goe
 
 #### Microsoft Intune
 
-**Microsoft Intune**, which serves as a Cloud based management service for mobile scenarios, including IOS, Android and Windows devices, can now be configured for co-management to complement and extend controls for specific workloads managed by System Center Configuration Manager. One advantage here is that, devices accessing protected resources can be required to enroll into device management – even non-managed, non-domain joined or non-Azure AD joined devices. You can also take advantage of granular configuration and compliance policy enforcement at the operating system and application level. Application policies and settings can be configured centrally and enforced for Office 365 ProPlus and Store apps in Windows 10 using Microsoft Intune.
+Microsoft Intune serves as a Cloud based management service for mobile scenarios, including IOS, Android and Windows devices, and can now be configured for co-management to complement and extend controls for specific workloads managed by System Center Configuration Manager. One advantage here is that, devices accessing protected resources can be required to enroll into device management – even non-managed, non-domain joined or non-Azure AD joined devices. You can also take advantage of granular configuration and compliance policy enforcement at the operating system and application level. Application policies and settings can be configured centrally and enforced for Office 365 ProPlus and Store apps in Windows 10 using Microsoft Intune.
 
-## Next Step: 
+## Next Step
 
 ## [Step 6: OS Deployment and Feature Updates](https://aka.ms/mdd6)
 
-## Previous Step: 
+## Previous Step 
 
 ## [Step 4: User Files and Settings](https://aka.ms/mdd4)
-## Feedback:
-
-We'd love to hear your thoughts. Choose the type you'd like to provide:
-
-Product feedback Sign in to give documentation feedback
-
-Our new feedback system is built on GitHub Issues. Read about this change in our blog post.

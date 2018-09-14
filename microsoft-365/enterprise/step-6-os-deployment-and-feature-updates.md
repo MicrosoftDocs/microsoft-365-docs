@@ -69,8 +69,7 @@ Regardless of the deployment type you choose, you’ll want to make sure it’s 
 
   - And one other popular deployment option is the free **Microsoft Deployment Toolkit** (MDT) which is typically used by small and medium sized organizations for OS deployment. This requires very little infrastructure. MDT integrates with Windows Deployment Services (WDS) for network boot. It supports all four deployment types as well as installation of applications, drivers, and settings. And of course, MDT can even be integrated with Configuration Manager.
 
-> ![A screenshot of a social media post
-> Description generated with very high confidence](media/getting-started-media/step-6-os-deployment-and-feature-updates-media-5.png)
+(media/step-6-os-deployment-and-feature-updates-media/step-6-os-deployment-and-feature-updates-media-5.png)
 
 ### Windows Autopilot
 
@@ -80,17 +79,10 @@ Then, when a user signs in to the PC during setup using their Azure AD credentia
 
 [Windows Autopilot Prerequisites](https://docs.microsoft.com/en-us/windows/deployment/windows-autopilot/windows-10-autopilot#prerequisites)
 
-## Next Step: 
+## Next Step 
 
 ## [Step 7: Windows and Office as a Service](https://aka.ms/mdd7)
 
-## Previous Step: 
+## Previous Step
 
 ## [Step 5: Security and Compliance Considerations](https://aka.ms/mdd5)
-## Feedback:
-
-We'd love to hear your thoughts. Choose the type you'd like to provide:
-
-Product feedback Sign in to give documentation feedback
-
-Our new feedback system is built on GitHub Issues. Read about this change in our blog post.

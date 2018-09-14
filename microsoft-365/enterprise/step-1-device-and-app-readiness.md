@@ -67,14 +67,6 @@ As you work through the list remediating issues, you’ll see that more and more
 
 Windows Analytics Upgrade Readiness isn’t just a tool to help you shift to Windows 10 and Office 365 ProPlus. Once you have desktops running on Windows 10 and Office 365 you can use it to help maintain your deployment and manage semi-annual Feature Updates so that you can stay current.
 
-## Next Step: 
+## Next Step 
 
 ## [Step 2: Directory and Network Readiness](https://aka.ms/dd2)
-
-## Feedback:
-
-We'd love to hear your thoughts. Choose the type you'd like to provide:
-
-Product feedback Sign in to give documentation feedback
-
-Our new feedback system is built on GitHub Issues. Read about this change in our blog post.

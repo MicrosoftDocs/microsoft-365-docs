@@ -59,8 +59,6 @@ Microsoft Store for Business provides a flexible way discover, acquire, manage, 
 
 Store apps can be natively built as UWP apps or you can use the Desktop Bridge to repackage your existing apps for the Store and add modern experiences for Windows 10. Aside from the code that you use to light up Windows 10 experiences, your app remains unchanged and continues to run in full-trust user mode.
 
-![](media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-5.png)
-
 ## MSIX Containerization
 
 A new option for application packaging is MSIX. MSIX uses the containerization technology available in Windows, bringing together the best aspects of Click-to-Run, UWP and MSI packaging. With tools to migrate existing installers like EXE, MSI, APPV and APPX directly to MSIX we see MSIX Containerization provides a unifed path for the many installation technologies in use today. MSIX support is included in current versions of Windows: any device running Windows 10 RS5 or newer, includes everything you need to install and run MSIX packaged apps. Windows 10 dynamically integrates MSIX containers it receives, while keeping the applications separate from the operating system.
@@ -69,17 +67,10 @@ Containerization means clean uninstall and removal of packages, unlike a lot of 
 
 You can find more information on MSIX via the MSIX community site: <https://techcommunity.microsoft.com/t5/MSIX/ct-p/MSIX>
 
-## Next Step: 
+## Next Step
 
 ## [Step 4: User Files and Settings](https://aka.ms/mdd4)
+
 ## Previous Step
 
 ## [Step 2: Directory and Network Readiness](https://aka.ms/mdd2) 
-
-## Feedback:
-
-We'd love to hear your thoughts. Choose the type you'd like to provide:
-
-Product feedback Sign in to give documentation feedback
-
-Our new feedback system is built on GitHub Issues. Read about this change in our blog post.
