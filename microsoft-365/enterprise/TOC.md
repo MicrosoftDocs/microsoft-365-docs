@@ -1,4 +1,4 @@
-# [Microsoft 365 Enterprise documentation and resources](index.md)
+﻿# [Microsoft 365 Enterprise documentation and resources](index.md)
 # [Microsoft 365 Enterprise overview](microsoft-365-overview.md)
 # [Deploy Microsoft 365 Enterprise](deploy-microsoft-365-enterprise.md)
 ## [Deploy foundation infrastructure](deploy-foundation-infrastructure.md)
@@ -78,6 +78,18 @@
 ### [Information protection](contoso-info-protect.md)
 ### [Security summary](contoso-security-summary.md)
 
+# [Modern Desktop Deployment Center](desktop-deployment-center-home.md)
+## [Getting Started: People, Process and Technology Guidance](getting-started.md)
+## [Step 1: Device and App Readiness](step-1-device-and-app-readiness.md)
+## [Step 2: Directory and Network Readiness](step-2-directory-and-network-readiness.md)
+## [Step 3: Office and LOB App Delivery](step-3-office-and-lob-app-delivery.md)
+## [Step 4: User Files and Settings Migration](step-4-user-files-and-settings-migration.md)
+## [Step 5: Security and Compliance Considerations](step-5-security-and-compliance.md)
+## [Step 6: OS Deployment and Feature Updates](step-6-os-deployment-and-feature-updates.md)
+## [Step 7: Windows and Office as a Service](step-7-windows-and-office-as-a-service.md)
+## [Step 8: User Communications and Training](step-8-user-communications-and-training.md)
+## [Get your Leadership on Board: Value Discovery and Business Case](https://transform.microsoft.com)
+
 # [Identity and device access configurations](microsoft-365-policies-configurations.md)
 ##[Prerequisite work](identity-access-prerequisites.md)
 ## [Common identity and device access policies](identity-access-policies.md)
@@ -86,13 +98,13 @@
 
 # [Compliance solutions](../compliance/compliance-solutions-overview.md?toc=/microsoft-365/enterprise/toc.json)
 ## [ISO — Recommended action plan](../compliance/iso-action-plan.md)
+## [NIST — Recommended action plan](../compliance/nist-action-plan.md) 
 ## [GDPR](../compliance/gdpr.md?toc=/microsoft-365/enterprise/toc.json)
 
 ### [Recommended action plan for GDPR](../compliance/gdpr-action-plan.md)
 
 ### [Accountability readiness checklists](../compliance/gdpr-arc.md)
 #### [Office 365](../compliance/gdpr-arc-Office365.md)
-#### [Windows](../compliance/gdpr-arc-Windows.md)
 #### [Azure](../compliance/gdpr-arc-Azure.md)
 #### [Dynamics 365](../compliance/gdpr-arc-Dynamics365.md)
 #### [Microsoft Support and Professional Services](../compliance/gdpr-arc-prof-services.md)
@@ -102,7 +114,6 @@
 
 ### [Data subject requests](../compliance/gdpr-data-subject-requests.md?toc=/microsoft-365/enterprise/toc.json)
 #### [Office 365](../compliance/gdpr-dsr-Office365.md?toc=/microsoft-365/enterprise/toc.json)
-#### [Windows](../compliance/gdpr-dsr-Windows.md?toc=/microsoft-365/enterprise/toc.json)
 #### [Azure](../compliance/gdpr-dsr-Azure.md?toc=/microsoft-365/enterprise/toc.json)
 #### [Intune](../compliance/gdpr-dsr-Intune.md?toc=/microsoft-365/enterprise/toc.json)
 #### [Dynamics 365](../compliance/gdpr-dsr-Dynamics365.md?toc=/microsoft-365/enterprise/toc.json)
@@ -112,7 +123,6 @@
 
 ### [Breach notification](../compliance/gdpr-breach-notification.md?toc=/microsoft-365/enterprise/toc.json)
 #### [Office 365](../compliance/gdpr-breach-Office365.md?toc=/microsoft-365/enterprise/toc.json)
-#### [Windows](../compliance/gdpr-breach-Windows.md?toc=/microsoft-365/enterprise/toc.json)
 #### [Azure](../compliance/gdpr-breach-Azure.md?toc=/microsoft-365/enterprise/toc.json)
 #### [Dynamics 365](../compliance/gdpr-breach-Dynamics365.md?toc=/microsoft-365/enterprise/toc.json)
 #### [Microsoft Support and Professional Services](../compliance/gdpr-breach-Microsoft-Support-Professional-Services.md?toc=/microsoft-365/enterprise/toc.json)
