@@ -1,4 +1,21 @@
-﻿# Step 2: Directory and Network Readiness
+﻿---
+title: Step 2: Directory and Network Readiness
+ms.author: jogruszc
+author: jogruszc-MSFT
+manager: jemed
+ms.date: 09/14/2018
+ms.audience: ITPro
+ms.topic: article
+ms.service: o365-solutions
+localization_priority: Priority
+ms.collection: 
+- Ent_O365
+- Strat_O365_Enterprise
+ms.custom: 
+description: Learn how to assess directory and network readiness in the environment.
+---
+
+# Step 2: Directory and Network Readiness
 
 Ensure your directory and the network are configured and ready to support to your shift to Windows 10 and Office 365 ProPlus. This will require Azure Active Directory Services to be in place for users, and your network must have the capacity to handle both its regular traffic and the movement of potentially vast amounts of data as PCs are upgraded, and users’ files, settings and applications are restored.
 

@@ -1,4 +1,21 @@
-﻿# Step 4: User Files and Settings Migration
+﻿---
+title: Step 4: User Files and Settings Migration
+ms.author: jogruszc
+author: jogruszc-MSFT
+manager: jemed
+ms.date: 09/14/2018
+ms.audience: ITPro
+ms.topic: article
+ms.service: o365-solutions
+localization_priority: Priority
+ms.collection: 
+- Ent_O365
+- Strat_O365_Enterprise
+ms.custom: 
+description: Learn how to migrate users' files and settings.
+---
+
+# Step 4: User Files and Settings Migration
 
 Moving users’ files and settings to their new or refreshed PCs is a critical process; failure is not an option. You can migrate each PC manually or you choose one of several ways to automate the process. Whichever migration method you choose you three items to be addressed – the transfer of users’ files, their settings, and managing Windows 10 Start and taskbar layouts.
 

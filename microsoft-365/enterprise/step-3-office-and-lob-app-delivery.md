@@ -1,4 +1,21 @@
-﻿# Step 3: Office and LOB App Delivery
+﻿---
+title: Step 3: Office and LOB App Delivery
+ms.author: jogruszc
+author: jogruszc-MSFT
+manager: jemed
+ms.date: 09/14/2018
+ms.audience: ITPro
+ms.topic: article
+ms.service: o365-solutions
+localization_priority: Priority
+ms.collection: 
+- Ent_O365
+- Strat_O365_Enterprise
+ms.custom: 
+description: Learn how to deliver Office and LOB apps.
+---
+
+# Step 3: Office and LOB App Delivery
 
 You are now ready to deliver Office and your Line of Business Apps. There are a number of ways to do this, including some exciting new options. Take some time to review and chose the best methods for your current needs.
 

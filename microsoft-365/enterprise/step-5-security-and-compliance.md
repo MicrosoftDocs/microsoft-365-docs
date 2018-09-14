@@ -1,4 +1,21 @@
-﻿# Step 5: Security and Compliance Considerations
+﻿---
+title: Step 5: Security and Compliance Considerations
+ms.author: jogruszc
+author: jogruszc-MSFT
+manager: jemed
+ms.date: 09/14/2018
+ms.audience: ITPro
+ms.topic: article
+ms.service: o365-solutions
+localization_priority: Priority
+ms.collection: 
+- Ent_O365
+- Strat_O365_Enterprise
+ms.custom: 
+description: Learn about the important Windows and Office security and compliance considerations.
+---
+
+# Step 5: Security and Compliance Considerations
 
 Review your options for targeting new security and compliance capabilities as part of your modern desktop deployment along with the considerations and common blockers when moving from previous versions of Windows and Office.
 

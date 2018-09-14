@@ -1,4 +1,21 @@
-﻿# Getting Started - Modern Desktop Deployment
+﻿---
+title: Getting Started - Modern Desktop Deployment
+ms.author: jogruszc
+author: jogruszc-MSFT
+manager: jemed
+ms.date: 09/14/2018
+ms.audience: ITPro
+ms.topic: article
+ms.service: o365-solutions
+localization_priority: Priority
+ms.collection: 
+- Ent_O365
+- Strat_O365_Enterprise
+ms.custom: 
+description: Introduction to the Modern Desktop Deployment Process.
+---
+
+# Getting Started - Modern Desktop Deployment
 
 The Cloud is changing how management of PCs is be done, with the Microsoft Intelligent Cloud delivering actional insights to help IT Professionals shift to a modern desktop. This series designed to help you plan for and make the shift to a modern desktop based on Windows 10 and Office 365 ProPlus.
 

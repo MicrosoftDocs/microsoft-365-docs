@@ -1,4 +1,21 @@
-﻿# Step 1: Device and App Readiness
+﻿---
+title: Step 1: Device and App Readiness
+ms.author: jogruszc
+author: jogruszc-MSFT
+manager: jemed
+ms.date: 09/14/2018
+ms.audience: ITPro
+ms.topic: article
+ms.service: o365-solutions
+localization_priority: Priority
+ms.collection: 
+- Ent_O365
+- Strat_O365_Enterprise
+ms.custom: 
+description: Learn how to assess device and app readiness in the environment
+---
+
+# Step 1: Device and App Readiness
 
 Begin your desktop deployment project with an inventory of your devices and apps, prioritize what you to move forward, test prioritized apps and devices, then remediate what’s needed to get ready for deployment.
 

@@ -1,4 +1,21 @@
-﻿# Modern Desktop Deployment Center
+﻿---
+title: Modern Desktop Deployment Center
+ms.author: jogruszc
+author: jogruszc-MSFT
+manager: jemed
+ms.date: 09/14/2018
+ms.audience: ITPro
+ms.topic: article
+ms.service: o365-solutions
+localization_priority: Priority
+ms.collection: 
+- Ent_O365
+- Strat_O365_Enterprise
+ms.custom: 
+description: Overview of the Modern Desktop Deployment Center.
+---
+
+# Modern Desktop Deployment Center
 
 <img src="media/getting-started-media/getting-started-media-1.png" alt="Desktop Deployment Wheel" height="450" width="802" align="middle" />
 

@@ -1,4 +1,21 @@
-﻿# Step 8: User Communications and Training
+﻿---
+title: Step 8: User Communications and Training
+ms.author: jogruszc
+author: jogruszc-MSFT
+manager: jemed
+ms.date: 09/14/2018
+ms.audience: ITPro
+ms.topic: article
+ms.service: o365-solutions
+localization_priority: Priority
+ms.collection: 
+- Ent_O365
+- Strat_O365_Enterprise
+ms.custom: 
+description: Learn how to prepare your end users for the Modern Desktop with use communications and training.
+---
+
+# Step 8: User Communications and Training
 
 Inform and prepare your users for modern workplace experiences spanning Office 365, Windows 10 and new security and compliance controls with Azure Active Directory and more.
 

@@ -1,4 +1,21 @@
-﻿# Step 7: Windows and Office as a Service
+﻿---
+title: Step 7: Windows and Office as a Service
+ms.author: jogruszc
+author: jogruszc-MSFT
+manager: jemed
+ms.date: 09/14/2018
+ms.audience: ITPro
+ms.topic: article
+ms.service: o365-solutions
+localization_priority: Priority
+ms.collection: 
+- Ent_O365
+- Strat_O365_Enterprise
+ms.custom: 
+description: Learn how to prepare for Windows and Office as a Service in your environment.
+---
+
+# Step 7: Windows and Office as a Service
 
 Prepare for semi-annual channel updates with new features and capabilities in Windows 10 and Office 365 ProPlus along with corresponding updates to management tools with System Center Configuration Manager Current Branch.
 

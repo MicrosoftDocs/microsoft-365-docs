@@ -1,4 +1,21 @@
-﻿# Step 6: OS Deployment and Feature Updates
+﻿---
+title: Step 6: OS Deployment and Feature Updates
+ms.author: jogruszc
+author: jogruszc-MSFT
+manager: jemed
+ms.date: 09/14/2018
+ms.audience: ITPro
+ms.topic: article
+ms.service: o365-solutions
+localization_priority: Priority
+ms.collection: 
+- Ent_O365
+- Strat_O365_Enterprise
+ms.custom: 
+description: Learn about the options for OS deployment and feature updates.
+---
+
+# Step 6: OS Deployment and Feature Updates
 
 Learn the options and get ready for operating system deployment using upgrade and imaging approaches with System Center Configuration Manager or the Microsoft Deployment Toolkit.
 
