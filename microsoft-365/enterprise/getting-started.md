@@ -7,12 +7,11 @@ The Cloud is changing how management of PCs is be done, with the Microsoft Intel
 <table>
 <thead>
 <td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-1.png" alt="Getting Started" height="130" width="130" /></td>
-<td><p><strong>[Getting Started: People, Process &amp; Technology Guidance](https://aka.ms/mdd0)</strong></p>
+<td><p><strong>[Getting Started: People, Process and Technology Guidance](https://aka.ms/mdd0)</strong></p>
 <p>Discover the benefits of a modern desktop, major changes and considerations versus previous deployments and best practices to ensure a smooth transition to Windows 10 and Office 365 ProPlus.</p></td>
 <td><a href="https://aka.ms/ddev0"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-13.png" alt="Getting Started" height="120" width="213" /></a></td>
 </thead>
 </table>
-
 >[!NOTE]
 >In this series we will explain the best ways to use existing tools, and introduce you to new technologies, services and methods enabled by the Cloud.  To see the full desktop deployment process, visit the [Modern Desktop Deployment Center](https://aka.ms/mddhome).
 

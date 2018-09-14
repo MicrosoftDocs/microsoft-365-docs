@@ -9,7 +9,7 @@ Follow the steps below to plan and carry out your large-scale deployment of Wind
 <thead>
 <tr class="even">
 <td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-1.png" alt="Getting Started" height="144" width="144" /></td>
-<td><p><strong>[Getting Started: People, Process &amp; Technology Guidance](https://aka.ms/mdd0)</strong></p>
+<td><p><strong>[Getting Started: People, Process and Technology Guidance](https://aka.ms/mdd0)</strong></p>
 <p>Discover the benefits of a modern desktop, major changes and considerations versus previous deployments and best practices to ensure a smooth transition to Windows 10 and Office 365 ProPlus.</p></td>
 <td><a href="https://aka.ms/ddev0"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-13.png" alt="Getting Started" height="130" width="231" /></a></td>
 </tr>
@@ -41,7 +41,7 @@ Follow the steps below to plan and carry out your large-scale deployment of Wind
 </tr>
 <tr class="odd">
 <td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-8.png" alt="Step 5" height="144" width="144" /></td>
-<td><p><strong>[Step 5: Security and Compliance considerations](https://aka.ms/mdd5)</strong></p>
+<td><p><strong>[Step 5: Security and Compliance Considerations](https://aka.ms/mdd5)</strong></p>
 <p>Windows 10 and Office 365 ProPlus provide new ways to protect your data, devices and users and quickly detect and respond to threats. Also, learn how to deal with common problems associated with disk encryption, anti-malware apps and policies when moving to Windows 10.</p></td>
 <td><a href=""><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-18.png" alt="Step 5" height="130" width="231" /></a></td>
 </tr>
