@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Step 1: Define security and information protection levels"
 ms.author: josephd
 author: JoeDavies-MSFT

@@ -21,7 +21,7 @@ These recommendations are based on three different tiers of security and protect
 
 In addtion to implementing this guidance, be sure to configure SharePoint sites with the right amount of protection, including ensuring permissions for sensitive and highly regulated content are appropriate. For more information on creating sites for baseline, sensitive, and highly regulated protection, see [Secure SharePoint Online sites and files](https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-and-files). 
 
-##Updating common policies to include SharePoint and OneDrive for Business
+## Updating common policies to include SharePoint and OneDrive for Business
 The following diagram illustrates the set of recommended policies for protecting files in SharePoint Online and OneDrive for Business. It indicates which policies will be updated or newly created to add protection for SharePoint Online and OneDrive for Business.
 
 ![Summary of policies for SharePoint Online and OneDrive](../images/identity-access-ruleset-sharepoint.png)
