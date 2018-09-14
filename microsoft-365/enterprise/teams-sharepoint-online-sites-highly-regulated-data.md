@@ -137,7 +137,7 @@ Use the instructions in [Deploy an isolated SharePoint Online team site](https:/
 
 ### Step 2: Configure the site for an Office 365 label DLP policy
 
-Use the instructions in [Protect SharePoint Online files with Office 365 labels and DLP](https://docs.microsoft.com/en-us/office365/enterprise/protect-sharepoint-online-files-with-office-365-labels-and-dlp) to:
+Use the instructions in [Protect SharePoint Online files with Office 365 labels and DLP](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-office-365-labels-and-dlp) to:
 
 - Identify or create the Office 365 label and apply it to your isolated SharePoint Online site.
 - Create and configure the DLP policy that blocks users when they attempt to share a digital asset on your SharePoint Online site outside the organization.

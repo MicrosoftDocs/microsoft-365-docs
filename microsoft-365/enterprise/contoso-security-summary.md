@@ -34,7 +34,7 @@ To obtain the sign-off of the deployment of Microsoft 365 Enterprise by the IT s
 
 Contoso used the following steps to ready their security for their deployment of Microsoft 365 Enterprise:
 
-1. Optimized administrator accounts for the cloud
+1. Limited administrator accounts for the cloud
 
    Contoso did an extensive review of the existing Windows Server AD administrator accounts and set up a series of cloud administrator accounts and groups.
 
@@ -62,7 +62,7 @@ In accordance with security best practices and Microsoft 365 Enterprise deployme
 
 - MFA for all user accounts
 
-  MFA adds an additional layer of protection to the sign-in process by requiring users to acknowledge a phone call, text message, or an app notification on their smart phone after correctly entering their password. With MFA, Office 365 user accounts are protected against unauthorized sign-in even if an account password is compromised.
+  MFA adds an additional layer of protection to the sign-in process by requiring users to acknowledge a phone call, text message, or an app notification on their smart phone after correctly entering their password. With MFA, Azure AD user accounts are protected against unauthorized sign-in even if an account password is compromised.
 
    - To protect against a compromise of the Microsoft 365 subscription, Contoso requires MFA on all global administrator accounts.
    - To protect against phishing attacks, in which an attacker compromises the credentials of a trusted person in the organization and sends malicious emails, Contoso enabled MFA on all user accounts, including manager and executive staff. 
@@ -83,7 +83,7 @@ In accordance with security best practices and Microsoft 365 Enterprise deployme
 
 - Protection from malware with Windows Defender Antivirus
 
-  Contoso is using [Windows Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10) to provide malware protection and anti-malware management for PCs and devices running Windows 10 Enterprise.
+  Contoso is using [Windows Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10) for malware protection and anti-malware management for PCs and devices running Windows 10 Enterprise.
 
 - Secure email flow and mailbox audit logging with Office 365 Advanced Threat Protection 
 
@@ -103,7 +103,7 @@ In accordance with security best practices and Microsoft 365 Enterprise deployme
 
 - Protect sensitive and highly regulated digital assets with Azure Information Protection
 
-  Contoso determined three levels of data protection and deployed [Azure Information Protection](https://docs.microsoft.com/azure/information-protection/what-is-information-protection) labels that users apply to digital assets. For its trade secrets and other intellectual property, Contoso uses an AIP label for highly regulated data that encrypts content and restricts access to specified security groups.
+  Contoso determined three levels of data protection and deployed [Azure Information Protection](https://docs.microsoft.com/azure/information-protection/what-is-information-protection) labels that users apply to digital assets. For its trade secrets and other intellectual property, Contoso uses Azure Information Protection sub-labels in a scoped policy for highly regulated data that encrypts content and restricts access to specific security groups.
 
 - Prevent intranet data leaks with Office 365 Data Loss Prevention
 
@@ -119,11 +119,11 @@ In accordance with security best practices and Microsoft 365 Enterprise deployme
 
 - Office 365 security monitoring with Office 365 Cloud App Security
 
-  Contoso security administrators set up alerts with [Office 365 Cloud App Security (CAS)](https://docs.microsoft.com/en-us/office365/securitycompliance/office-365-cas-overview) to be notified of unusual or risky user activity, such as downloading large amounts of data from SharePoint Online or OneDrive for Business, multiple failed sign-in attempts, or sign-ins from unknown or dangerous IP addresses.
+  Contoso security administrators set up alerts with [Office 365 Cloud App Security (CAS)](https://docs.microsoft.com/office365/securitycompliance/office-365-cas-overview) to be notified of unusual or risky user activity, such as downloading large amounts of data from SharePoint Online or OneDrive for Business, multiple failed sign-in attempts, or sign-ins from unknown or dangerous IP addresses.
 
 - Device management with Microsoft Intune
 
-  As part of the EMS suite, Contoso uses [Microsoft Intune](https://docs.microsoft.com/intune/introduction-intune) to enroll, manage, and configure access to mobile devices and the apps that run on them. Device-based conditional access policies also require approved apps and compliant PCs and mobile devices.
+  As part of the Enterprise Management + Security (EMS) suite, Contoso uses [Microsoft Intune](https://docs.microsoft.com/intune/introduction-intune) to enroll, manage, and configure access to mobile devices and the apps that run on them. Device-based conditional access policies also require approved apps and compliant PCs and mobile devices.
 
 ### Security management
 

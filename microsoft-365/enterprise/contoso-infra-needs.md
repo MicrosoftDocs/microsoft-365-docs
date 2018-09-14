@@ -87,7 +87,7 @@ Remote and mobile access and business partners:
 
 - Better security for remote and mobile workers
 
-Institute Bring Your Own Device (BYOD) and company-owned device management to ensure secured access, correct application behavior, and company data protection.
+  Institute Bring Your Own Device (BYOD) and company-owned device management to ensure secured access, correct application behavior, and company data protection.
 
 - Reduce remote access infrastructure for employees
 
