@@ -5,7 +5,7 @@ The Cloud is changing how management of PCs is be done, with the Microsoft Intel
 ![](media/getting-started-media/getting-started-media-1.png)
 
 >[!NOTE]
-<table>
+<table border="0">
 <tr class="even">
 <td><strong>In this series we will explain the best ways to use existing tools, and introduce you to new technologies, services and methods enabled by the Cloud.  To see the full desktop deployment process, visit the [Modern Desktop Deployment Center](https://aka.ms/mddhome).
 <td><strong>Before reading this article please watch the introduction: [Getting Started: People, Process, & Technology Guidance](https://aka.ms/ddev0)</strong></td>
