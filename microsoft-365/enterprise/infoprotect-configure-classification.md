@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Step 3: Configure classification for your environment"
 ms.author: josephd
 author: JoeDavies-MSFT

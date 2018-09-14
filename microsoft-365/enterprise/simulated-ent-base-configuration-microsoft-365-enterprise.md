@@ -153,13 +153,13 @@ Next, connect to the DC1 virtual machine.
     
 3. Specify the DC1 local administrator account name:
     
-  - For Windows 7:
+   - For Windows 7:
     
-    In the **Windows Security** dialog box, click **Use another account**. In **User name**, type **DC1\\**[Local administrator account name].
+     In the **Windows Security** dialog box, click **Use another account**. In **User name**, type **DC1\\**[Local administrator account name].
     
-  - For Windows 8 or Windows 10:
+   - For Windows 8 or Windows 10:
     
-    In the **Windows Security** dialog box, click **More choices**, and then click **Use a different account**. In **User name**, type **DC1\\**[Local administrator account name].
+     In the **Windows Security** dialog box, click **More choices**, and then click **Use a different account**. In **User name**, type **DC1\\**[Local administrator account name].
     
 4. In **Password**, type the password of the local administrator account, and then click **OK**.
     
