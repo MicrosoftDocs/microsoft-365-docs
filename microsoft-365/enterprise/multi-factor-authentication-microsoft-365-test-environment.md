@@ -75,11 +75,11 @@ Complete the configuration for the User 2 account to use a text message for vali
     
 4. On the **Additional security verification** page:
     
-  - Select your country or region.
+   - Select your country or region.
     
-  - Type phone number of the smart phone that will receive text messages.
+   - Type phone number of the smart phone that will receive text messages.
     
-  - In **Method**, click **Send me a code by text message**.
+   - In **Method**, click **Send me a code by text message**.
     
 5. Click **Next**.
     
