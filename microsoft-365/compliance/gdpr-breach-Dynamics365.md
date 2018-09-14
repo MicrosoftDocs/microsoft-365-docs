@@ -22,7 +22,7 @@ Microsoft works continuously to provide highly secure, enterprise-grade services
 
 #### Microsoft Dynamics 365 Built-In Security Features
 
-Microsoft Dynamics 365 takes advantage of the cloud service infrastructure and built-in security features to keep data safe using security measures and mechanisms to protect data. In addition, Dynamics 365 provides efficient data access and collaboration with data integrity and privacy in the following areas: [secure identity, data protection, role based security and threat management](https://www.microsoft.com/en-us/trustcenter/security/dynamics365-security).
+Microsoft Dynamics 365 takes advantage of the cloud service infrastructure and built-in security features to keep data safe using security measures and mechanisms to protect data. In addition, Dynamics 365 provides efficient data access and collaboration with data integrity and privacy in the following areas: [secure identity, data protection, role based security and threat management](https://www.microsoft.com/trustcenter/security/dynamics365-security).
 
 #### Incident Response Training
 
@@ -96,11 +96,11 @@ The detection processes used by Microsoft Dynamics 365 are designed to discover 
 
 -   First party reports running Microsoft Dynamics 365 services deployed in Public Cloud and Microsoft Dynamics 365 services deployed in Sovereign Cloud.
 
--   Security vulnerabilities are reported to the [Microsoft Security Response Center (MSRC)](https://technet.microsoft.com/en-us/security/dn440717) via <secure@microsoft.com>. MSRC works with partners and security researchers around the world to help prevent security incidents and to advance Microsoft product security.
+-   Security vulnerabilities are reported to the [Microsoft Security Response Center (MSRC)](https://technet.microsoft.com/security/dn440717) via <secure@microsoft.com>. MSRC works with partners and security researchers around the world to help prevent security incidents and to advance Microsoft product security.
 
 -   Customer reports that describe suspicious activity attributed to the Microsoft Dynamics 365 Services (as opposed to activity occurring within the customer’s scope of responsibility).
 
--   Security [Red Team and Blue Team](https://azure.microsoft.com/en-us/blog/red-teaming-using-cutting-edge-threat-simulation-to-harden-the-microsoft-enterprise-cloud/) activity. This strategy uses a highly-skilled Red team of offensive security experts to uncover and attack potential weaknesses in Microsoft Dynamics 365 services. The security response Blue team must detect and defend against the Red Team’s activity. Both Red and Blue Team actions are used to verify that Microsoft Dynamics 365 security response efforts are effectively managing security incidents. Security Red Team and Blue Team activities are operated under requirements of responsibility to help ensure the protection of customer data.
+-   Security [Red Team and Blue Team](https://azure.microsoft.com/blog/red-teaming-using-cutting-edge-threat-simulation-to-harden-the-microsoft-enterprise-cloud/) activity. This strategy uses a highly-skilled Red team of offensive security experts to uncover and attack potential weaknesses in Microsoft Dynamics 365 services. The security response Blue team must detect and defend against the Red Team’s activity. Both Red and Blue Team actions are used to verify that Microsoft Dynamics 365 security response efforts are effectively managing security incidents. Security Red Team and Blue Team activities are operated under requirements of responsibility to help ensure the protection of customer data.
 
 -   Escalations by operators of Microsoft Dynamics 365 services. Microsoft employees are trained to identify and escalate potential security issues.
 
@@ -143,4 +143,4 @@ Notification of a personal data breach will be delivered to the customer by any 
 The Microsoft Dynamics 365 team may also elect to notify additional Microsoft personnel such as Customer Service (CSS) and the customer’s Account Manager(s) (AM) or Technical Account Manager(s) (TAM). These individuals often have close relationships with the customer and can facilitate faster remediation.<span id="_Appendix_A" class="anchor"></span>
 
 #### Learn more
-[Microsoft Trust Center](https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx)
+[Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)

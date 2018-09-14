@@ -3,7 +3,7 @@ title: "Microsoft 365 Enterprise Test Lab Guides"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/13/2018
+ms.date: 08/30/2018
 ms.audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
@@ -59,6 +59,10 @@ To demonstrate identity-related features and capabilities, see:
  
    Lock down your global administrator accounts with Office 365 Cloud App Security and conditional access policies.
 
+- [Password reset](password-reset-m365-ent-test-environment.md)
+
+   Use self-service password reset (SSPR) to reset your password.
+
 - [Automatic licensing and group membership](automate-licenses-group-membership-microsoft-365-test-environment.md)
 
    Make administering new accounts easier than ever with automatic licensing and dynamic group membership.
@@ -84,6 +88,6 @@ To demonstrate mobile device management-related features and capabilities, see:
 
 ## See also
 
-[Experience the Microsoft Cloud with Cloud Adoption Test Lab Guides](https://mva.microsoft.com/en-US/training-courses/experience-the-microsoft-cloud-with-cloud-adoption-test-lab-guides-17960?l=LXNRdhSLE_1000115881)
+[Experience the Microsoft Cloud with Cloud Adoption Test Lab Guides](https://mva.microsoft.com/training-courses/experience-the-microsoft-cloud-with-cloud-adoption-test-lab-guides-17960?l=LXNRdhSLE_1000115881)
     
 [One Microsoft Cloud Test Lab Guide stack](http://aka.ms/catlgstack)

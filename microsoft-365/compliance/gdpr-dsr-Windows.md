@@ -35,7 +35,7 @@ Microsoft is controller for all Windows products, apps, and services except for 
 
 ### Privacy consent
 
-The Windows installation for some users displays a series of seven privacy consent screens which give your users choices about sharing their data and provide access to the [Microsoft Privacy Statement](https://privacy.microsoft.com/en-us/privacystatement), which describes our data processing practices.
+The Windows installation for some users displays a series of seven privacy consent screens which give your users choices about sharing their data and provide access to the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement), which describes our data processing practices.
 
 However, in Windows commercial products your organization retains control over privacy settings and security. To manage privacy settings for users within your organization, your IT administrator may choose to disable the default Windows privacy consent screens (first screen shown below). If your IT administrator disables the privacy screens, a privacy notification (like one shown below) is displayed to your users until they acknowledge it, or until 72 hours have passed since initial login. Your IT administrator may choose to disable this privacy notification as well.
 
@@ -58,7 +58,7 @@ The most recent version of Windows (Windows 10, version 1803 and above) complies
 
 * **Microsoft Privacy Dashboard** — Your users can use the web-based [Microsoft Privacy Dashboard](https://account.microsoft.com/account/privacy?ru=https%3A%2F%2Faccount.microsoft.com%2Fprivacy&destrt=privacy-dashboard) — available through their Microsoft account — to view, control and delete activity data tied to their Microsoft account across multiple Microsoft services. For example, users can view and clear browsing history from Microsoft Edge, voice data from Cortana, and location data used by apps like Maps. They can also download a copy of their activity history and control whether they are shown interest-based ads. Deleted data is automatically removed from all data streams in our storage system.
 
-* **Privacy web form** — If your users are unable access the data they’re looking for or wish to port their data, they can always contact the Microsoft [Privacy web form](https://privacy.microsoft.com/en-US/privacy-questions), which will respond to requests to access, change, update or delete personal data within 30 days.
+* **Privacy web form** — If your users are unable access the data they’re looking for or wish to port their data, they can always contact the Microsoft [Privacy web form](https://privacy.microsoft.com/privacy-questions), which will respond to requests to access, change, update or delete personal data within 30 days.
 
 Microsoft recognizes that organizations have different needs than individuals when addressing privacy. Your IT administrator may decide to preconfigure privacy settings for your users and prevent them from controlling these settings or using the Diagnostic Data Viewer. Some organizations may also restrict users from having a Microsoft account. If your users are not allowed to have a Microsoft account for the computer they use at work, DSR support currently will be more limited because users will not be able to view, control, or delete their activity data for the computer they use at work through the Privacy Dashboard, and DSR support via the Privacy web form will also be limited.
 
@@ -67,7 +67,7 @@ Microsoft recognizes that organizations have different needs than individuals wh
 
 ## Microsoft as processor
 
-This section discusses how Microsoft handles data subject rights for Windows services that process data on behalf of an organization. For example, [Windows Defender Advanced Threat Protection (ATP)](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp) and [Windows Analytics](https://www.microsoft.com/windowsforbusiness/windows-analytics) are Windows services where Microsoft is a processor. Both are subscription services for enterprises that require an additional license.
+This section discusses how Microsoft handles data subject rights for Windows services that process data on behalf of an organization. For example, [Windows Defender Advanced Threat Protection (ATP)](https://www.microsoft.com/WindowsForBusiness/windows-atp) and [Windows Analytics](https://www.microsoft.com/windowsforbusiness/windows-analytics) are Windows services where Microsoft is a processor. Both are subscription services for enterprises that require an additional license.
 
 ### Windows Defender ATP
 
@@ -92,4 +92,4 @@ Your IT administrator can set the level of Windows diagnostic data that is share
 For more information about how Microsoft enables you to respond to DSRs, see [GDPR: Data Subject Requests (DSRs)](https://servicetrust.microsoft.com/ViewPage/GDPRDSR) in the Service Trust Portal.
 
 ## Learn more
-[Microsoft Trust Center](https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx)
+[Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)

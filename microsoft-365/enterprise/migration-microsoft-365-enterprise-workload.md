@@ -24,7 +24,7 @@ To maximize the business value of the Microsoft 365 Enterprise integrated suite 
 - Office servers installed on your servers to their equivalent services in Office 365
 - Windows 7 and Windows 8.1 on your devices to Windows 10 Enterprise
 
-Accomplishing all of these migrations over time gets your organization closer to the [modern workplace](https://www.microsoft.com/en-us/microsoft-365/blog/2018/04/27/making-it-simpler-with-a-modern-workplace/), a secure and integrated environment that unlocks teamwork and creativity in your organization, all of which is enabled and empowered by Microsoft 365 Enterprise. 
+Accomplishing all of these migrations over time gets your organization closer to the [modern workplace](https://www.microsoft.com/microsoft-365/blog/2018/04/27/making-it-simpler-with-a-modern-workplace/), a secure and integrated environment that unlocks teamwork and creativity in your organization, all of which is enabled and empowered by Microsoft 365 Enterprise. 
 
 ## Migration for Microsoft Office client products
 
@@ -49,7 +49,7 @@ Office 365 ProPlus installs updates automatically and can take advantage of clou
 
 ### Office 2010
 
-For versions of Office in the Office 2010 release, the end of support is October 13, 2020. For more information, see [Office 2010 end of support roadmap](https://support.office.com/en-us/article/office-2010-end-of-support-roadmap-2a58999c-4d83-4e67-9fde-bc96d487105e).
+For versions of Office in the Office 2010 release, the end of support is October 13, 2020. For more information, see [Office 2010 end of support roadmap](https://support.office.com/article/office-2010-end-of-support-roadmap-2a58999c-4d83-4e67-9fde-bc96d487105e).
 
 Rather than upgrading your computers running Office 2010 with Office 2013 or Office 2016, both of which must be manually updated, consider: 
 
@@ -101,8 +101,8 @@ Rather than upgrading your server products in the Office 2007 release with serve
 
 For server products in the Office 2010 release, the end of support has been determined for the following:
 
-- [Exchange Server 2010](https://support.office.com/en-us/article/exchange-2010-end-of-support-roadmap-e150e7b9-c432-4c8d-a0ae-c11847129a7d)
-- [SharePoint Server 2010](https://support.office.com/en-us/article/upgrading-from-sharepoint-2010-985a357f-6db7-401f-bf7a-1bafdf1f312c)
+- [Exchange Server 2010](https://support.office.com/article/exchange-2010-end-of-support-roadmap-e150e7b9-c432-4c8d-a0ae-c11847129a7d)
+- [SharePoint Server 2010](https://support.office.com/article/upgrading-from-sharepoint-2010-985a357f-6db7-401f-bf7a-1bafdf1f312c)
 
 Rather than upgrading these server products in the Office 2010 release with server products in the Office 2013 or Office 2016 release, consider:
 
@@ -128,7 +128,7 @@ For server products in the Office 2016 release, the end of support has not been 
 
 ## Migration for Microsoft Windows
 
-To migrate your devices running Windows 7 or Windows 8.1, you can perform an [in-place upgrade](https://docs.microsoft.com/en-us/microsoft-365/enterprise/windows10-deploy-inplaceupgrade). 
+To migrate your devices running Windows 7 or Windows 8.1, you can perform an [in-place upgrade](https://docs.microsoft.com/microsoft-365/enterprise/windows10-deploy-inplaceupgrade). 
 
 For additional methods, see [Windows 10 deployment scenarios](https://docs.microsoft.com/windows/deployment/windows-10-deployment-scenarios). You can also [plan for Windows 10 deployment](https://aka.ms/planforwin10deployment) on your own.
 

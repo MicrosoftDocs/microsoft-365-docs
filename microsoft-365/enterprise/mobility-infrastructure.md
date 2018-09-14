@@ -6,13 +6,14 @@ author: MandiOhlinger
 ms.author: mandia 
 manager: dougeby 
 ms.date: 08/29/2018 
-ms.topic: article 
+ms.topic: conceptual 
 audience: microsoft-business
 ms.prod: microsoft-365-enterprise
-ms.service: microsoft-intune 
+ms.service: 
 ms.technology: 
 ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
+ms.custom: microsoft-intune
 ---
 
 # Phase 5: Mobile device management for Microsoft 365 Enterprise
@@ -57,7 +58,7 @@ There may be some additional requirements, depending on your organization's need
 
 ## Step 3: Set up Intune
 
-Intune uses many features in Azure AD, including your domain, your users, and your groups. You can also create new users and new groups to fit your company needs. For example, you can create a group called **iOS devices**, or **All HR users**.  Take advantage of [Dynamic Groups](https://docs.microsoft.com/en-us/intune/groups-add) that lets you build either user or device groups based around simple or advanced rules.
+Intune uses many features in Azure AD, including your domain, your users, and your groups. You can also create new users and new groups to fit your company needs. For example, you can create a group called **iOS devices**, or **All HR users**.  Take advantage of [Dynamic Groups](https://docs.microsoft.com/intune/groups-add) that lets you build either user or device groups based around simple or advanced rules.
 
 This step focuses on setting up Intune, and getting it ready for you to manage your devices.
 
