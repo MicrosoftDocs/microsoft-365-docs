@@ -1,7 +1,7 @@
 ﻿---
 title: Step 1: Device and App Readiness
 ms.author: jogruszc
-author: jogruszc-MSFT
+author: JGruszczyk
 manager: jemed
 ms.date: 09/14/2018
 ms.audience: ITPro
@@ -12,7 +12,7 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom: 
-description: Learn how to assess device and app readiness in the environment
+description: Learn how to assess device and app readiness in the environment.
 ---
 
 # Step 1: Device and App Readiness

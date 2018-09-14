@@ -1,7 +1,7 @@
 ﻿---
 title: Step 3: Office and LOB App Delivery
 ms.author: jogruszc
-author: jogruszc-MSFT
+author: JGruszczyk
 manager: jemed
 ms.date: 09/14/2018
 ms.audience: ITPro

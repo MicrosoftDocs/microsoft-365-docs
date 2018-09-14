@@ -1,7 +1,7 @@
 ﻿---
 title: Step 4: User Files and Settings Migration
 ms.author: jogruszc
-author: jogruszc-MSFT
+author: JGruszczyk
 manager: jemed
 ms.date: 09/14/2018
 ms.audience: ITPro
