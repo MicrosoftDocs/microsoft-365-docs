@@ -76,7 +76,7 @@ In this phase, you configure Azure AD Connect on APP1 for Azure AD Seamless SSO,
 
 11. From the Azure portal, in the left pane, click **Azure Active Directory > Azure AD Connect**. Verify that the **Seamless single sign-on** feature appears as **Enabled**.
 
-Next, test the ability to sign in to your Office 365 subscription with the **user1@testlab.**\<your public domain> user name of the User1 account.
+Next, test the ability to sign in to your Office 365 subscription with the <strong>user1@testlab.</strong>\<your public domain> user name of the User1 account.
 
 1. From Internet Explorer on APP1, click the settings icon, and then click **Internet Options**.
  
@@ -90,7 +90,7 @@ Next, test the ability to sign in to your Office 365 subscription with the **use
 
 6. Sign out of Office 365, and then sign in again, this time specifying a different account.
 
-7.	When prompted to sign in, specify **user1@testlab.**\<your public domain> name, and then click **Next**. You should successfully sign in as User1 without being prompted for a password. This proves that Seamless SSO is working.
+7. When prompted to sign in, specify <strong>user1@testlab.</strong>\<your public domain> name, and then click **Next**. You should successfully sign in as User1 without being prompted for a password. This proves that Seamless SSO is working.
 
 Notice that although User1 has domain administrator permissions for the TESTLAB Windows Server AD domain, it is not an Office 365 global administrator. Therefore, you will not see the **Admin** icon as an option.
 

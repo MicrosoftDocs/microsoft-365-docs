@@ -18,7 +18,7 @@ This article describes the common recommended policies to help you secure Micros
 
 This guidance discusses how to deploy the recommended policies in a newly provisioned environment. Setting up these policies in a separate lab environment allows you to understand and evaluate the recommended policies before staging the rollout to your pre-production and production environments. Your newly provisioned environment may be cloud-only or Hybrid.  
 
-##Policy set 
+## Policy set 
 
 The following diagram illustrates the recommended set of policies. It shows which tier of protections each policy applies to and whether the policies apply to PCs, phones and tablets, or both categories of devices. It also indicates where these policies are configured.
 
@@ -45,7 +45,7 @@ To give you time to accomplish these tasks, we recommend implementing the baseli
 |**Highly regulated**|[*Always* requrie MFA](#require-mfa-based-on-sign-in-risk)|
 | | |
 
-##Assigning policies to users
+## Assigning policies to users
 Before configuring policies, identify the Azure AD groups you are using for each tier of protection. Typically, baseline protection applies to everybody in the organization. A user who is included for both baseline and sensitive protection will have all the baseline policies applied plus the sensitive policies. Protection is cumulative and the most restrictive policy is enforced. 
 
 A recommended practice is to create an Azure AD group for conditional access exclusion. Add this group to all of your conditional access rules under "Exlude." This gives you a method to provide access to a user while you troubleshoot access issues. This is recommended as a temporary solution only. Monitor this group for changes and be sure the exclusion group is being used only as intended. 
@@ -81,6 +81,7 @@ To create a new conditional access policy:
  The following tables describes the conditional access policy settings to implement for this policy.
 
 **Assignments**
+
 |Type|Properties|Values|Notes|
 |:---|:---------|:-----|:----|
 |Users and groups|Include|Select users and groups – Select specific security group containing targeted users|Start with security group including pilot users.|
@@ -92,6 +93,7 @@ To create a new conditional access policy:
 **Sign-in risk**
 
 Apply the settings based on the proteciton level you are targeting.
+
 |Property|Level of protection|Values|Notes|
 |:---|:---------|:-----|:----|
 |Risk level|Baseline|High, medium|Check both|
@@ -99,6 +101,7 @@ Apply the settings based on the proteciton level you are targeting.
 | |Highly regulated| |Leave all options uchecked to always enforce MFA|
 
 **Access controls**
+
 |Type|Properties|Values|Notes|
 |:---|:---------|:-----|:----|
 |Grant|Grant access|True|Selected|
@@ -125,6 +128,7 @@ Apply the settings based on the proteciton level you are targeting.
 The following tables describes the conditional access policy settings to implement for this policy.
 
 **Assignments**
+
 |Type|Properties|Values|Notes|
 |:---|:---------|:-----|:----|
 |Users and groups|Include|Select users and groups – Select specific security group containing targeted users|Start with security group including pilot users.|
@@ -134,6 +138,7 @@ The following tables describes the conditional access policy settings to impleme
 |Client apps|Configured|Yes|Mobile apps and desktop clients, Other clients (select both)|
 
 **Access controls**
+
 |Type|Properties|Values|Notes|
 |:---|:---------|:-----|:----|
 |Grant|Block access|True|Selected|
@@ -154,6 +159,7 @@ To ensure that all high-risk users compromised accounts are forced to perform a 
 Log in to the [Microsoft Azure portal (http://portal.azure.com)](http://portal.azure.com/) with your administrator credentials, and then navigate to **Azure AD Identity Protection > User Risk Policy**.
 
 **Assignments**
+
 |Type|Properties|Values|Notes|
 |:---|:---------|:-----|:----|
 |Users|Include|All users|Selected|
@@ -161,10 +167,11 @@ Log in to the [Microsoft Azure portal (http://portal.azure.com)](http://portal.a
 |Conditions|User risk|High|Selected|
 
 **Controls**
-|Type|Properties|Values|Notes|
-|:---|:---------|:-----|:----|
-||Access|Allow access|True|Selected|
-||Access|Require password change|True|Check|
+
+| Type | Properties | Values                  | Notes |
+|:-----|:-----------|:------------------------|:------|
+|      | Access     | Allow access            | True  |
+|      | Access     | Require password change | True  |
 
 **Review:** not applicable
 
@@ -268,6 +275,7 @@ To create device compliance policies, log in to the Microsoft Azure portal with 
 The following settings are recommended for Windows 10. [REVIEW SETTINGS, SOME ARE MISSING]
 
 **Device health: Windows Health Attestation Service evaluation rules**
+
 |Properties|Values|Notes|
 |:---------|:-----|:----|
 |Require BitLocker|Require||
@@ -276,6 +284,7 @@ The following settings are recommended for Windows 10. [REVIEW SETTINGS, SOME AR
 
 
 **Device properties**
+
 |Type|Properties|Values|Notes|
 |:---|:---------|:-----|:----|
 |Operating system version|All|Not configured||
@@ -283,6 +292,7 @@ The following settings are recommended for Windows 10. [REVIEW SETTINGS, SOME AR
 For all the above policies to be considered deployed, they must be targeted at user groups. You can do this by creating the policy (on Save) or later by selecting Manage Deployment in the Policy section (same level as Add).
 
 **System security**
+
 |Type|Properties|Values|Notes|
 |:---|:---------|:-----|:----|
 |Password|Require a password to unlock mobile devices|Require||
@@ -303,6 +313,7 @@ For all the above policies to be considered deployed, they must be targeted at u
 ||Real-time protection|Require|Only supported for Windows 10 desktop.|
 
 **Windows Defender ATP**
+
 |Type|Properties|Values|Notes|
 |:---|:---------|:-----|:----|
 |Windows Defender Advanced Threat Protection rules|Require the device to be at or under the machine risk score|Medium||
