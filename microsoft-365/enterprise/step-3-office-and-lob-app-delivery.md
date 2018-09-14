@@ -45,9 +45,11 @@ If you use System Center Configuration Manager, you can still use it for broad d
 
 [Deployment Guide for Office 365 ProPlus](https://docs.microsoft.com/en-us/deployoffice/deployment-guide-for-office-365-proplus)
 
+[Remove existing MSI versions of Office when upgrading to Office 365 ProPlus](https://docs.microsoft.com/en-us/deployoffice/upgrade-from-msi-version)
+
 [Manage Office 365 ProPlus with Configuration Manager](https://docs.microsoft.com/en-us/sccm/sum/deploy-use/manage-office-365-proplus-updates)
 
-[Remove existing MSI versions of Office when upgrading to Office 365 ProPlus](https://docs.microsoft.com/en-us/deployoffice/upgrade-from-msi-version)
+[Assign Office 365 apps to Windows 10 devices with Microsoft Intune](https://docs.microsoft.com/en-us/intune/apps-add-office365)
 
 ## Browser-based Apps
 
@@ -71,7 +73,7 @@ A new option for application packaging is MSIX. MSIX uses the containerization t
 
 Containerization means clean uninstall and removal of packages, unlike a lot of MSI and EXE-based packages today that may leave items on the system. It also means only needing Standard User credentials to install applications – you do not have to have Administrator credentials to install MSIX containers. MSIX containers are more efficient to update too. When an update is published, use of block level differentials means only net new binaries are applied, reducing the update payload, for faster deployments consuming less network bandwidth.
 
-You can find more information on MSIX via the MSIX community site: <https://techcommunity.microsoft.com/t5/MSIX/ct-p/MSIX>
+You can find more information on MSIX via the [MSIX Tech Community site](https://techcommunity.microsoft.com/t5/MSIX/ct-p/MSIX)
 
 ## Next Step
 

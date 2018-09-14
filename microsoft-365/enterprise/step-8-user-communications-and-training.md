@@ -39,11 +39,9 @@ These are just a handful of new capabilities that will be experienced by your us
 
 To help minimize the risk associated with changes in the user experience, we recommend two complementary approaches:
 
-  - Proactive communication to your users so they know what to expect, and
+  - Proactive communication to your users so they know what to expect
 
-  - Use of deployment rings to control the rate of deployment.
-
-### 
+  - Use of deployment rings to control the rate of deployment
 
 ### Phased Deployment
 
@@ -53,15 +51,11 @@ Deployment rings are best created in cooperation with business units and their m
 
 ![](media/step-8-user-communications-and-training-media/step-8-user-communications-and-training-media-4.png)
 
-### 
-
 ### Phase 1: The IT Team and Early Adopter Insiders 
 
 It’s usually best to begin your deployment with the IT team and enthusiastic early adopters, who volunteer for early access. With these “insiders” you can test your communications, the impacts of change and the effectiveness of your communications and training. During this phase, IT runs small pilots, learns troubleshooting and automation techniques to help during broader deployment phases.
 
 It’s important to have engaged members in the initial pilot phase, to make sure they are documenting their observations and feeding back to the process. Also, it’s good to have champions outside the IT team that help extend organic, word-of-mouth communication of new capabilities, and they’ll often be first line of support when users in later phases need help.
-
-### 
 
 ### Phase 2: Pilot 
 
