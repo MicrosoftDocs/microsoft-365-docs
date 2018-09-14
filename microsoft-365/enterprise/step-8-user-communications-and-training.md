@@ -1,5 +1,5 @@
 ﻿---
-title: Step 8: User Communications and Training
+title: Step 8 - User Communications and Training
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed

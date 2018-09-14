@@ -1,5 +1,5 @@
 ﻿---
-title: Step 3: Office and LOB App Delivery
+title: Step 3 - Office and LOB App Delivery
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed

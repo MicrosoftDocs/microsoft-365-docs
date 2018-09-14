@@ -1,5 +1,5 @@
 ﻿---
-title: Step 6: OS Deployment and Feature Updates
+title: Step 6 - OS Deployment and Feature Updates
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed

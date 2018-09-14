@@ -1,5 +1,5 @@
 ﻿---
-title: Step 5: Security and Compliance Considerations
+title: Step 5 - Security and Compliance Considerations
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed

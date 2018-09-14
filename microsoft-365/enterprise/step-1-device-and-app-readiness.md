@@ -1,5 +1,5 @@
 ﻿---
-title: Step 1: Device and App Readiness
+title: Step 1 - Device and App Readiness
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed

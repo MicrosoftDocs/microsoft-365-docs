@@ -1,5 +1,5 @@
 ﻿---
-title: Step 7: Windows and Office as a Service
+title: Step 7 - Windows and Office as a Service
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed

@@ -1,5 +1,5 @@
 ﻿---
-title: Step 2: Directory and Network Readiness
+title: Step 2 - Directory and Network Readiness
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed

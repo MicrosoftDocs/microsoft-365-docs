@@ -1,5 +1,5 @@
 ﻿---
-title: Step 4: User Files and Settings Migration
+title: Step 4 - User Files and Settings Migration
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
