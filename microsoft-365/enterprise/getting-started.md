@@ -6,7 +6,7 @@ The Cloud is changing how management of PCs is be done, with the Microsoft Intel
 
 <table>
 <thead>
-<td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-1.png" alt="Getting Started" height="144" width="144" /></td>
+<td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-1.png" alt="Getting Started" height="130" width="130" /></td>
 <td><p><strong>[Getting Started: People, Process &amp; Technology Guidance](https://aka.ms/mdd0)</strong></p>
 <p>Discover the benefits of a modern desktop, major changes and considerations versus previous deployments and best practices to ensure a smooth transition to Windows 10 and Office 365 ProPlus.</p></td>
 <td><a href="https://aka.ms/ddev0"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-13.png" alt="Getting Started" height="130" width="231" /></a></td>
@@ -26,7 +26,7 @@ In this introduction we’ll outline what has changed and go on a tour of the De
 
 In combination, Windows 10 and the Microsoft Intelligence Cloud enhance your ability to deliver the most empowering, rich and secure Workspace for your users, and allow you to simplify your supporting infrastructure.
 
-One of the key tenants of modern management practices is devices that are always up-to-date. Through this series you are going to see new capabilities that are being delivered to help you move to Windows 10 and Office Pro Plus and how to stay current with the semi-annual releases of both.
+One of the key tenants of modern management practices is devices that are always up-to-date. Through this series you are going to see new capabilities that are being delivered to help you move to Windows 10 and Office 365 ProPlus and how to stay current with the semi-annual releases of both.
 
 [Windows 10 for the IT Pro](https://www.microsoft.com/en-us/itpro/windows-10)
 
