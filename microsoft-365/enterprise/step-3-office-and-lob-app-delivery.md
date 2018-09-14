@@ -7,7 +7,7 @@ You are now ready to deliver Office and your Line of Business Apps. There are a 
 <table>
 <thead>
 <td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-6.png" alt="Step 3" height="130" width="130" /></td>
-<td><p><strong>[Step 3: Office and LOB App Delivery](https://aka.ms/mdd3)</strong></p>
+<td><p><strong>Step 3: Office and LOB App Delivery</strong></p>
 <p>Ensure your apps are packaged and ready for automated installation. Learn how Click-to-Run packaging with Office 365 ProPlus gives you new options to configure, deliver and keep your Office apps up-to-date.</p></td>
 <td><a href=""><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-16.png" alt="Step 3" height="120" width="213" /></a></td>
 </thead>

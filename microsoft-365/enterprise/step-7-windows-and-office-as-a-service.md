@@ -7,7 +7,7 @@ Prepare for semi-annual channel updates with new features and capabilities in Wi
 <table>
 <thead>
 <td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-10.png" alt="Step 7" height="144" width="144" /></td>
-<td><p><strong>[Step 7: Preparing for Windows and Office as a Service](https://aka.ms/mdd7)</strong></p>
+<td><p><strong>Step 7: Preparing for Windows and Office as a Service</strong></p>
 <p>Both Windows 10 and Office 365 ProPlus continually add new capabilities to keep bringing user experiences and security forward with the latest innovations. Learn how to stay current with semi-annual and monthly updates, how the new servicing model works and the tools and options you have.</p></td>
 <td><a href=""><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-20.png" alt="Step 7" height="130" width="231" /></a></td>
 </thead>
