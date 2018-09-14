@@ -44,6 +44,7 @@
     },
     "fileMetadata": {},
     "template": [],
-    "dest": "microsoft-365-vsts"
+    "dest": "microsoft-365-vsts",
+    "markdownEngineName": "markdig"
   }
 }
