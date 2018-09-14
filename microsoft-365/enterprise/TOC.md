@@ -104,7 +104,6 @@
 
 ### [Accountability readiness checklists](../compliance/gdpr-arc.md)
 #### [Office 365](../compliance/gdpr-arc-Office365.md)
-#### [Windows](../compliance/gdpr-arc-Windows.md)
 #### [Azure](../compliance/gdpr-arc-Azure.md)
 #### [Dynamics 365](../compliance/gdpr-arc-Dynamics365.md)
 #### [Microsoft Support and Professional Services](../compliance/gdpr-arc-prof-services.md)
@@ -114,7 +113,6 @@
 
 ### [Data subject requests](../compliance/gdpr-data-subject-requests.md?toc=/microsoft-365/enterprise/toc.json)
 #### [Office 365](../compliance/gdpr-dsr-Office365.md?toc=/microsoft-365/enterprise/toc.json)
-#### [Windows](../compliance/gdpr-dsr-Windows.md?toc=/microsoft-365/enterprise/toc.json)
 #### [Azure](../compliance/gdpr-dsr-Azure.md?toc=/microsoft-365/enterprise/toc.json)
 #### [Intune](../compliance/gdpr-dsr-Intune.md?toc=/microsoft-365/enterprise/toc.json)
 #### [Dynamics 365](../compliance/gdpr-dsr-Dynamics365.md?toc=/microsoft-365/enterprise/toc.json)
@@ -124,7 +122,6 @@
 
 ### [Breach notification](../compliance/gdpr-breach-notification.md?toc=/microsoft-365/enterprise/toc.json)
 #### [Office 365](../compliance/gdpr-breach-Office365.md?toc=/microsoft-365/enterprise/toc.json)
-#### [Windows](../compliance/gdpr-breach-Windows.md?toc=/microsoft-365/enterprise/toc.json)
 #### [Azure](../compliance/gdpr-breach-Azure.md?toc=/microsoft-365/enterprise/toc.json)
 #### [Dynamics 365](../compliance/gdpr-breach-Dynamics365.md?toc=/microsoft-365/enterprise/toc.json)
 #### [Microsoft Support and Professional Services](../compliance/gdpr-breach-Microsoft-Support-Professional-Services.md?toc=/microsoft-365/enterprise/toc.json)
