@@ -42,17 +42,17 @@ To give you time to accomplish these tasks, we recommend implementing the baseli
 |        |[Require compliant PCs](#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Enforces Intune management of PCs|
 |**Sensitive**|[Require MFA when sign-in risk is *low*, *medium* or *high*](#require-mfa-based-on-sign-in-risk)| |
 |         |[Require compliant PCs *and* mobile devices](#require-compliant-pcs-and-mobile-devices)|Enforces Intune management for PCs and phone/tablets.|
-|**Highly regulated**|[*Always* requrie MFA](#require-mfa-based-on-sign-in-risk)|
+|**Highly regulated**|[*Always* require MFA](#require-mfa-based-on-sign-in-risk)|
 | | |
 
 ## Assigning policies to users
 Before configuring policies, identify the Azure AD groups you are using for each tier of protection. Typically, baseline protection applies to everybody in the organization. A user who is included for both baseline and sensitive protection will have all the baseline policies applied plus the sensitive policies. Protection is cumulative and the most restrictive policy is enforced. 
 
-A recommended practice is to create an Azure AD group for conditional access exclusion. Add this group to all of your conditional access rules under "Exlude." This gives you a method to provide access to a user while you troubleshoot access issues. This is recommended as a temporary solution only. Monitor this group for changes and be sure the exclusion group is being used only as intended. 
+A recommended practice is to create an Azure AD group for conditional access exclusion. Add this group to all of your conditional access rules under "Exclude". This gives you a method to provide access to a user while you troubleshoot access issues. This is recommended as a temporary solution only. Monitor this group for changes and be sure the exclusion group is being used only as intended. 
 
 The following diagram provides an example of user assignment and exclusions.
 
-![Example user assignment and exlusions for MFA rules](../images/identity-access-policies-assignment.png)
+![Example user assignment and exclusions for MFA rules](../images/identity-access-policies-assignment.png)
 
 In the illustration the "Top secret project X team" is assigned a conditional access policy that requires MFA *always*. Be judicious when applying higher levels of protection to users. Members of this project team will be required to provide two forms of authentication every time they log on, even if they are not viewing highly regulated content.  
 
@@ -74,7 +74,7 @@ To create a new conditional access policy:
 
 3. Under the **Security** section, choose **Conditional access**.
 
-4. Choose **New policy** as shown in the screen-shot below:
+4. Choose **New policy** as shown in the screenshot below:
 
 ![Baseline CA policy](./media/secure-email/CA-EXO-policy-1.png)
 
@@ -92,13 +92,13 @@ To create a new conditional access policy:
 
 **Sign-in risk**
 
-Apply the settings based on the proteciton level you are targeting.
+Apply the settings based on the protection level you are targeting.
 
 |Property|Level of protection|Values|Notes|
 |:---|:---------|:-----|:----|
 |Risk level|Baseline|High, medium|Check both|
 | |Sensitive|High, medium, low|Check all three|
-| |Highly regulated| |Leave all options uchecked to always enforce MFA|
+| |Highly regulated| |Leave all options unchecked to always enforce MFA|
 
 **Access controls**
 
@@ -302,14 +302,14 @@ For all the above policies to be considered deployed, they must be targeted at u
 ||Maximum minutes of inactivity before password is required|15|This setting is supported for Android versions 4.0 and above or KNOX 4.0 and above. For iOS devices, it’s supported for iOS 8.0 and above.|
 ||Password expiration (days)|41||
 ||Number of previous passwords to prevent reuse|5||
-||Require password when device returns from idle state (Mobile and Halographic)|Require|Available for Windows 10 and later.|
+||Require password when device returns from idle state (Mobile and Holographic)|Require|Available for Windows 10 and later.|
 |Encryption|Encryption of data storage on device|Require||
 |Device Security|Firewall|Require||
 ||Antivirus|Require||
-||AntiSpyware|Require|This setting reuquires an Anti-Spyware solution registered with Windows Security Center.|
-|Defender|Widnows Defender Antimalware|Require||
+||Antispyware|Require|This setting requires an Anti-Spyware solution registered with Windows Security Center.|
+|Defender|Windows Defender Antimalware|Require||
 ||Windows Defender Antimalware minimum version||Only supported for Windows 10 desktop. Microsoft recommends versions no more than five behind from the most recent version.|
-||Windows Defender Antimalware signature up-to-date|Require||
+||Windows Defender Antimalware signature up to date|Require||
 ||Real-time protection|Require|Only supported for Windows 10 desktop.|
 
 **Windows Defender ATP**
