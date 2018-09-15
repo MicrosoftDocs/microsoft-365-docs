@@ -93,4 +93,4 @@ Windows Analytics Upgrade Readiness isn’t just a tool to help you shift to Win
 
 ## Next Step 
 
-## [Step 2: Directory and Network Readiness](https://aka.ms/dd2)
+## [Step 2: Directory and Network Readiness](https://aka.ms/mdd2)
