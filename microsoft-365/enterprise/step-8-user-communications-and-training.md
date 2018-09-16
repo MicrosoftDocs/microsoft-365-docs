@@ -125,8 +125,6 @@ In addition to the telemetry that you monitor via the analytics tools, you can a
 
 New technology acceptance and adoption will go on long after every PC in your organization has Windows 10 and Office 365 ProPlus installed. And users won’t necessarily change how they work – without taking the time to inform and train them of new capabilities. Finally, with the new servicing models providing new capabilities on an ongoing semi-annual schedule for Windows and optionally a monthly schedule for Office, communication will be continual.
 
-As you work through the list remediating issues, you’ll see that more and more PCs become “Ready for Deployment”. This means that both the drivers and apps on the PCs are noted as compatible with the version of Windows 10 you are targeting for deployment.
-
 ## Previous Step 
 
 ## [Step 7: Windows and Office as a Service](https://aka.ms/mdd7)
