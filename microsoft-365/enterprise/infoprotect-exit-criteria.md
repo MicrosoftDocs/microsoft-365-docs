@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Information protection infrastructure exit criteria"
 ms.author: josephd
 author: JoeDavies-MSFT

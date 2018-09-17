@@ -72,7 +72,7 @@ In this step, we create an Azure virtual network and add DC1, a virtual machine 
 First, start a Windows PowerShell command prompt on your local computer.
   
 > [!NOTE]
-> The following command sets use the latest version of Azure PowerShell. See [Get started with Azure PowerShell cmdlets](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/). 
+> The following command sets use the latest version of Azure PowerShell. See [Get started with Azure PowerShell cmdlets](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/). 
   
 Sign in to your Azure account with the following command.
   
@@ -153,13 +153,13 @@ Next, connect to the DC1 virtual machine.
     
 3. Specify the DC1 local administrator account name:
     
-  - For Windows 7:
+   - For Windows 7:
     
-    In the **Windows Security** dialog box, click **Use another account**. In **User name**, type **DC1\\**[Local administrator account name].
+     In the **Windows Security** dialog box, click **Use another account**. In **User name**, type **DC1\\**[Local administrator account name].
     
-  - For Windows 8 or Windows 10:
+   - For Windows 8 or Windows 10:
     
-    In the **Windows Security** dialog box, click **More choices**, and then click **Use a different account**. In **User name**, type **DC1\\**[Local administrator account name].
+     In the **Windows Security** dialog box, click **More choices**, and then click **Use a different account**. In **User name**, type **DC1\\**[Local administrator account name].
     
 4. In **Password**, type the password of the local administrator account, and then click **OK**.
     

@@ -25,7 +25,7 @@ This guide discusses how to use Microsoft tools to export or delete personal dat
 
 ## Additional privacy information
 
-The Microsoft Software License Terms accompanying the products, the [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=660726), and [Microsoft's GDPR Commitments](https://docs.microsoft.com/en-us/legal/gdpr) describe our data processing practices.
+The Microsoft Software License Terms accompanying the products, the [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=660726), and [Microsoft's GDPR Commitments](https://docs.microsoft.com/legal/gdpr) describe our data processing practices.
 
 ## Visual Studio, Visual Studio for Mac, and Visual Studio Code
 
@@ -224,7 +224,7 @@ For data subject requests on this data, see the UserVoice guidance on [how to ex
 ## Learn more
 
 - [Microsoft's GDPR Commitments to Customers of our Generally Available Enterprise Software Products](https://docs.microsoft.com/legal/gdpr)
-- [Microsoft Trust Center](https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx)
+- [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
 - [Service Trust portal](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted)
 - [Microsoft Privacy Dashboard](https://account.microsoft.com/privacy)
 - [Microsoft Privacy Response Center](https://aka.ms/userprivacysite)

@@ -58,7 +58,7 @@ There may be some additional requirements, depending on your organization's need
 
 ## Step 3: Set up Intune
 
-Intune uses many features in Azure AD, including your domain, your users, and your groups. You can also create new users and new groups to fit your company needs. For example, you can create a group called **iOS devices**, or **All HR users**.  Take advantage of [Dynamic Groups](https://docs.microsoft.com/en-us/intune/groups-add) that lets you build either user or device groups based around simple or advanced rules.
+Intune uses many features in Azure AD, including your domain, your users, and your groups. You can also create new users and new groups to fit your company needs. For example, you can create a group called **iOS devices**, or **All HR users**.  Take advantage of [Dynamic Groups](https://docs.microsoft.com/intune/groups-add) that lets you build either user or device groups based around simple or advanced rules.
 
 This step focuses on setting up Intune, and getting it ready for you to manage your devices.
 
@@ -72,9 +72,9 @@ This step focuses on setting up Intune, and getting it ready for you to manage y
 
 5. **[Add users](https://docs.microsoft.com/intune/users-add)** and **[add groups](https://docs.microsoft.com/intune/groups-add)**. 
 
-  You can manually add users, or connect to Azure AD to sync users with Intune. You can also give Admin roles to specific users. Users are required unless your devices are "userless" devices, such as kiosk devices.
+   You can manually add users, or connect to Azure AD to sync users with Intune. You can also give Admin roles to specific users. Users are required unless your devices are "userless" devices, such as kiosk devices.
 
-  Azure AD groups are used to simplify how you manage devices and users in Intune. Using groups, you can do many different tasks. For example, your organization wants to require a specific app on Android devices. You can create an Android devices group, and deploy a policy with this app to the group.
+   Azure AD groups are used to simplify how you manage devices and users in Intune. Using groups, you can do many different tasks. For example, your organization wants to require a specific app on Android devices. You can create an Android devices group, and deploy a policy with this app to the group.
 
     In Intune, you can add users or groups that you create in [Phase 2: Identity](https://docs.microsoft.com/microsoft-365/enterprise/identity-infrastructure)
 

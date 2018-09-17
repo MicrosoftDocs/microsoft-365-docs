@@ -70,9 +70,9 @@ If needed, [Step 5](identity-designate-protect-admin-accounts.md) can help you m
 Use these steps to verify that you've protected your global administrator accounts:
 
 1. Run the following Azure AD V2 command at the PowerShell command prompt. You should see only the list of dedicated global administrator accounts.
-```
-Get-AzureADDirectoryRole | where { $_.DisplayName -eq "Company Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
-```
+   ```
+   Get-AzureADDirectoryRole | where { $_.DisplayName -eq "Company Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
+   ```
 2. Sign in to Office 365 using each of the accounts from step 1. Each sign in must require multi-factor authentication and the strongest form of secondary authentication available in your organization.
 
 > [!Note]

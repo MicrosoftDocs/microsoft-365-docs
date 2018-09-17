@@ -30,7 +30,7 @@ description: Learn about the product documentation and resources available for M
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/en-us/office/media/icons/blocks-blue.svg" alt="Building blocks" />
+                                                    <img src="https://docs.microsoft.com/office/media/icons/blocks-blue.svg" alt="Building blocks" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -48,13 +48,14 @@ description: Learn about the product documentation and resources available for M
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/en-us/office/media/icons/deploy-blue.svg" alt="Deploy arrow" />
+                                                    <img src="https://docs.microsoft.com/office/media/icons/deploy-blue.svg" alt="Deploy arrow" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
                                                 <h3>Deploy</h3>
                                                 <P><a href="https://www.microsoft.com/fasttrack/microsoft-365" target="_blank">FastTrack</a></p>
                                                 <P><a href="deploy-microsoft-365-enterprise.md" target="_blank">Deployment guide</a></p>
+                                                <P><a href="https://aka.ms/howtoshift" target="_blank">Modern Desktop deployment</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -66,14 +67,15 @@ description: Learn about the product documentation and resources available for M
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/en-us/office/media/icons/security-blue.svg" alt="A shield with an exclamation mark" />
+                                                    <img src="https://docs.microsoft.com/office/media/icons/security-blue.svg" alt="A shield with an exclamation mark" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>Manage security & compliance</h3>
+                                                <h3>Manage security &amp; compliance</h3>
                                                 <P><a href="https://docs.microsoft.com/microsoft-365/compliance/compliance-solutions-overview" target="_blank">Compliance solutions</a></p>
-                                                <P><a href="https://docs.microsoft.com/Office365/SecurityCompliance/" target="_blank">Office 365 Security & Compliance</a></p>
+                                                <P><a href="https://docs.microsoft.com/Office365/SecurityCompliance/" target="_blank">Office 365 Security &amp; Compliance</a></p>
                                                 <P><a href="microsoft-365-policies-configurations.md" target="_blank">Identity &amp; device access</a></p>
+                                                <P><a href="https://docs.microsoft.com/windows/security/threat-protection/index" target="_blank">Windows Defender ATP</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -85,14 +87,14 @@ description: Learn about the product documentation and resources available for M
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/en-us/office/media/icons/education-tutorial-blue.svg" alt="Graduation cap" />
+                                                    <img src="https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg" alt="Graduation cap" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
                                                 <h3>Train your users</h3>
-                                                <P><a href="https://support.office.com/en-us/office-training-center" target="_blank">Office 365</a></p>
+                                                <P><a href="https://support.office.com/office-training-center" target="_blank">Office 365</a></p>
                                                 <P><a href="https://www.microsoft.com/itpro/windows-10/end-user-readiness" target="_blank">Windows 10</a></p>
-                                                <P><a href="https://docs.microsoft.com/intune-user-help/use-managed-devices-to-get-work-done" target="_blank">Intune & Company Portal app</a></p>
+                                                <P><a href="https://docs.microsoft.com/intune-user-help/use-managed-devices-to-get-work-done" target="_blank">Intune &amp; Company Portal app</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -123,7 +125,7 @@ description: Learn about the product documentation and resources available for M
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/en-us/office/media/icons/lock-protected-blue.svg" alt="Lock protected" />
+                                                    <img src="https://docs.microsoft.com/office/media/icons/lock-protected-blue.svg" alt="Lock protected" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -146,7 +148,7 @@ description: Learn about the product documentation and resources available for M
                                                 <div class="card">
                                                     <div class="cardImageOuter">
                                                         <div class="cardImage">
-                                                            <img src="https://docs.microsoft.com/en-us/office/media/icons/developer-blue.svg" alt="Code, developer" />
+                                                            <img src="https://docs.microsoft.com/office/media/icons/developer-blue.svg" alt="Code, developer" />
                                                         </div>
                                                     </div>
                                                     <div class="cardText">
@@ -165,7 +167,7 @@ description: Learn about the product documentation and resources available for M
                                                 <div class="card">
                                                     <div class="cardImageOuter">
                                                         <div class="cardImage">
-                                                            <img src="https://docs.microsoft.com/en-us/office/media/icons/caret-right-blue.svg" alt="More arrow" />
+                                                            <img src="https://docs.microsoft.com/office/media/icons/caret-right-blue.svg" alt="More arrow" />
                                                         </div>
                                                     </div>
                                                     <div class="cardText">
@@ -183,7 +185,7 @@ description: Learn about the product documentation and resources available for M
                                                 <div class="card">
                                                     <div class="cardImageOuter">
                                                         <div class="cardImage">
-                                                            <img src="https://docs.microsoft.com/en-us/office/media/icons/chat.svg" alt="Chat" />
+                                                            <img src="https://docs.microsoft.com/office/media/icons/chat.svg" alt="Chat" />
                                                         </div>
                                                     </div>
                                                     <div class="cardText">

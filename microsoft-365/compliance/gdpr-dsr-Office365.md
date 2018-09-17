@@ -60,7 +60,7 @@ In most cases, when users in your organization use Microsoft Office 365 products
 
 ### Office 365 national clouds
 
-The Microsoft Office 365 services are also available in the following national cloud environments: [Office 365 Germany](https://support.office.com/article/learn-about-office-365-germany-8a5a4bbc-667a-4cac-8769-d8ac9015db4c?ui=en-US&rs=en-US&ad=US), [Office 365 operated by 21Vianet (China)](https://support.office.com/article/Learn-about-Office-365-operated-by-21Vianet-A8AB5061-3346-4DA0-BB7C-5260822B53AE), and [Office 365 US Government](https://technet.microsoft.com/library/mt774581.aspx). Most of the guidance for managing data subject requests described in this document applies to these national cloud environments. However, due to the isolated nature of these environments, there are some exceptions. Where notable for a given subsection, these exceptions are called out in a corresponding note.
+The Microsoft Office 365 services are also available in the following national cloud environments: [Office 365 Germany](https://support.office.com/article/learn-about-office-365-germany-8a5a4bbc-667a-4cac-8769-d8ac9015db4c), [Office 365 operated by 21Vianet (China)](https://support.office.com/article/Learn-about-Office-365-operated-by-21Vianet-A8AB5061-3346-4DA0-BB7C-5260822B53AE), and [Office 365 US Government](https://technet.microsoft.com/library/mt774581.aspx). Most of the guidance for managing data subject requests described in this document applies to these national cloud environments. However, due to the isolated nature of these environments, there are some exceptions. Where notable for a given subsection, these exceptions are called out in a corresponding note.
 
 ### Hybrid deployments
 
@@ -185,7 +185,7 @@ The following table lists some conditions you can use to narrow the scope of a s
 ||||
 
   <!-- table ends here -->                                                                                           
-There are many more email and document properties and search conditions that you can use to build more complex search queries. See the following sections in the [Keyword queries and search conditions for Content Search](https://support.office.com/article/Keyword-queries-and-search-conditions-for-Content-Search-c4639c2e-7223-4302-8e0d-b6e10f1c3be3?ui=en-US&rs=en-US&ad=US) help topic for more information.
+There are many more email and document properties and search conditions that you can use to build more complex search queries. See the following sections in the [Keyword queries and search conditions for Content Search](https://support.office.com/article/Keyword-queries-and-search-conditions-for-Content-Search-c4639c2e-7223-4302-8e0d-b6e10f1c3be3) help topic for more information.
 
 -   [Searchable email properties](https://support.office.com/article/Keyword-queries-and-search-conditions-for-Content-Search-c4639c2e-7223-4302-8e0d-b6e10f1c3be3)
 
@@ -310,7 +310,7 @@ The user's Delve profile allows users to maintain properties stored in the Share
 
 End users can discover, access, and rectify SharePoint Online user profile data using the Delve profile experience. See [View and update your profile in Office Delve](https://support.office.com/article/view-and-update-your-profile-in-office-delve-4e84343b-eedf-45a1-aeb9-8627ccca14ba) for more details.
 
-Another way for users to access their SharePoint profile data is to navigate to the **edit profile page** in their OneDrive for Business account, which can be accessed by going to the **EditProfile.aspx** path under the OneDrive for Business account URL. For example, for a user **user1@contoso.com**, the user's OneDrive for Business account is located at:
+Another way for users to access their SharePoint profile data is to navigate to the **edit profile page** in their OneDrive for Business account, which can be accessed by going to the **EditProfile.aspx** path under the OneDrive for Business account URL. For example, for a user <strong>user1@contoso.com</strong>, the user's OneDrive for Business account is located at:
 >`https://contoso-my.sharepoint.com/personal/user1\_contoso\_com/\_layouts/15/**OneDrive.aspx**`
 
 The URL for the edit profile page would be:
@@ -340,7 +340,7 @@ An admin can export all User information properties for a user on a given site b
 
 ##### OneDrive for Business experience settings
 
-A user's OneDrive for Business experience stores information to help the user find and navigate content of interest to them. Most of this information can be accessed by end users using in-product features. An admin can export the information using a [PowerShell Script[(https://docs.microsoft.com/en-us/powershell/scripting/powershell-scripting?view=powershell-6)] and [SharePoint Client-Side Object Model (CSOM)](https://docs.microsoft.com/sharepoint/dev/sp-add-ins/complete-basic-operations-using-sharepoint-client-library-code) commands.
+A user's OneDrive for Business experience stores information to help the user find and navigate content of interest to them. Most of this information can be accessed by end users using in-product features. An admin can export the information using a [PowerShell Script[(<https://docs.microsoft.com/powershell/scripting/powershell-scripting?view=powershell-6>)] and [SharePoint Client-Side Object Model (CSOM)](https://docs.microsoft.com/sharepoint/dev/sp-add-ins/complete-basic-operations-using-sharepoint-client-library-code) commands.
 
 See [Export OneDrive for Business experience settings](https://docs.microsoft.com/sharepoint/export-odfb-lists) for more information about the settings, how they are stored, and how to export them.
 
@@ -374,21 +374,21 @@ The OneNote Class Notebook is stored in the class team SharePoint Online site. E
 
 Here’s specific guidance to search for a Class Notebook.
 
-1.  Run a Content Search using the following search criteria:
+1. Run a Content Search using the following search criteria:
 
-    - Search all SharePoint Online sites
+   - Search all SharePoint Online sites
 
-    - Include the name of the class team as a search keyword; for example, “9C Biology.”
+   - Include the name of the class team as a search keyword; for example, “9C Biology.”
 
-1.  Preview the search results and look for the item that corresponds to the Class Notebook.
+2. Preview the search results and look for the item that corresponds to the Class Notebook.
 
-2.  Select that item, and then copy the folder path that’s displayed in the details pane. This is the root folder for the Class Notebook.
+3. Select that item, and then copy the folder path that’s displayed in the details pane. This is the root folder for the Class Notebook.
 
-3.  Edit the search that you created in step 1 and replace the class name in the keyword query with the folder path of the Class Notebook and precede the folder path with the **path** site property; for example, **path:https://contosoedu.onmicrosoft.com/sites/9C Biology/SiteAssets/9C Biology Notebook/**. Be sure to include the quotation marks and the trailing forward slash.
+4. Edit the search that you created in step 1 and replace the class name in the keyword query with the folder path of the Class Notebook and precede the folder path with the **path** site property; for example, **path:<https://contosoedu.onmicrosoft.com/sites/9C> Biology/SiteAssets/9C Biology Notebook/**. Be sure to include the quotation marks and the trailing forward slash.
 
-4.  Add a search condition and select the File Type condition and use one for the value of the file type. This will return all OneNote files in the search results. The resulting keyword syntax would look something like this:[](#building-search-queries-to-find-personal-data)
+5. Add a search condition and select the File Type condition and use one for the value of the file type. This will return all OneNote files in the search results. The resulting keyword syntax would look something like this:[](#building-search-queries-to-find-personal-data)
 
-> path: "https://contosoedu.onmicrosoft.com/sites/9C Biology/SiteAssets/9C Biology Notebook/" AND filetype="one"
+> path: "<https://contosoedu.onmicrosoft.com/sites/9C> Biology/SiteAssets/9C Biology Notebook/" AND filetype="one"
 
 6.  Re-run the Content Search. The search results should include all OneNote files for the Class Notebook from the class team.
 
@@ -427,7 +427,7 @@ There are two ways to use the Content Search tool to get a copy of a document or
 
 After you run a new search or open an existing search, you can preview each item that matched the search query to verify that it’s related to the DSR you’re investigating. This also includes SharePoint lists and web pages that are returned in the search results. You can also download the original file if you have to provide it to the data subject. In both cases you could take a screenshot to satisfy the data subject’s request obtain the information.
 
-Note that some types of items can’t previewed. If an item or file type isn't supported for preview, you have the option to download an individual item to your local computer or to a mapped network drive or other network location. You can only preview [supported file types](https://support.office.com/article/content-search-in-office-365-53390468-eec6-45cb-b6cd-7511f9c909e4?ui=en-US&rs=en-US&ad=US).
+Note that some types of items can’t previewed. If an item or file type isn't supported for preview, you have the option to download an individual item to your local computer or to a mapped network drive or other network location. You can only preview [supported file types](https://support.office.com/article/content-search-in-office-365-53390468-eec6-45cb-b6cd-7511f9c909e4).
 
 To preview and download items:
 
@@ -439,7 +439,7 @@ To preview and download items:
 
 4.  Click **Download original file** to download the item to your local computer. You’ll also have to download items that can’t be previewed.
 
-For more information about previewing search results, see [Preview search results](https://support.office.com/article/content-search-in-office-365-53390468-eec6-45cb-b6cd-7511f9c909e4?ui=en-US&rs=en-US&ad=US).
+For more information about previewing search results, see [Preview search results](https://support.office.com/article/content-search-in-office-365-53390468-eec6-45cb-b6cd-7511f9c909e4).
 
 #### Export and download items
 
@@ -448,7 +448,7 @@ You can also export the results of a content search to get a copy of email messa
 ## Exporting personal data 
 
 The “right of data portability” allows a data subject to request an electronic copy of personal data that’s in a “structured, commonly used, machine-readable format”, and to request that your organization transmit these electronic files to another data controller. Microsoft supports this right in two ways:
-- Offering Office 365 applications that save data in native, machine-readable, commonly-used electronic format. For more information about Office file formats, see [Office File Formats-Technical Documents](https://msdn.microsoft.com/en-us/library/office/cc313105(v=office.12).aspx).
+- Offering Office 365 applications that save data in native, machine-readable, commonly-used electronic format. For more information about Office file formats, see [Office File Formats-Technical Documents](https://msdn.microsoft.com/library/office/cc313105(v=office.12).aspx).
 - Enabling your organization to export the data in the native file format, or a format (such as CSV, TXT, and JSON) that can be easily imported to another application.
 
 To meet a DSR export request, you can export Office documents in their native file format and export data from other Office 365 applications.
@@ -457,7 +457,7 @@ To meet a DSR export request, you can export Office documents in their native fi
 
 When you export the results of a Content Search, email items can be downloaded as PST files or as individual messages (.msg files). When you export documents and lists from SharePoint Online and OneDrive for Business sites, copies in the native file formats are exported. For example, SharePoint lists are exported as CSV files and Web pages are exported as .aspx or html files.
 
-[**Note**] Exporting mailbox items from a user’s mailbox using Content Search requires that the user (whose mailbox you’re exporting items from) is assigned an Exchange Online Plan 2 license. 
+[**Note**] Exporting mailbox items from a user’s mailbox using Content Search requires that the user (whose mailbox you’re exporting items from) is assigned an Exchange Online Plan 2 license. 
 
 To export and download items:
 
@@ -544,7 +544,7 @@ See the following topics for detailed procedures.
 
 - [Delete items from the site collection recycle bin](https://support.office.com/article/Delete-items-from-the-site-collection-Recycle-Bin-dd5c00c2-aef6-4458-9d04-80b185077653#ID0EAADAAA=Online)
 
-- “Get access to the former employee’s OneDrive for Business documents” section in [Get access to and back up a former user's data](https://support.office.com/article/get-access-to-and-back-up-a-former-user-s-data-a6f7f9ad-e3f5-43de-ade5-e5a0d7531604?ui=en-US&rs=en-US&ad=US)
+- “Get access to the former employee’s OneDrive for Business documents” section in [Get access to and back up a former user's data](https://support.office.com/article/get-access-to-and-back-up-a-former-user-s-data-a6f7f9ad-e3f5-43de-ade5-e5a0d7531604)
 
 - [Delete files or folders in OneDrive for Business](https://support.office.com/article/Delete-files-or-folders-in-OneDrive-21fe345a-e488-4fa7-932b-f053c1bebe8a)
 
@@ -586,7 +586,7 @@ Finally, the redaction capability will not remove all metadata or content refere
 
 #### Deleting OneDrive for Business experience settings
 
-The recommended way to delete all OneDrive for Business experience settings and information is to remove the user's OneDrive for Business site, after reassigning any retained files to other users. An admin can delete these lists using [PowerShell Script[(https://docs.microsoft.com/en-us/powershell/scripting/powershell-scripting?view=powershell-6)] and [SharePoint Client-Side Object Model (CSOM)](https://docs.microsoft.com/sharepoint/dev/sp-add-ins/complete-basic-operations-using-sharepoint-client-library-code) commands. See [Deleting OneDrive for Business experience settings[(https://docs.microsoft.com/en-us/sharepoint/delete-odfb-lists)] for more information about the settings, how they are stored, and how to delete them.
+The recommended way to delete all OneDrive for Business experience settings and information is to remove the user's OneDrive for Business site, after reassigning any retained files to other users. An admin can delete these lists using [PowerShell Script[(<https://docs.microsoft.com/powershell/scripting/powershell-scripting?view=powershell-6>)] and [SharePoint Client-Side Object Model (CSOM)](https://docs.microsoft.com/sharepoint/dev/sp-add-ins/complete-basic-operations-using-sharepoint-client-library-code) commands. See [Deleting OneDrive for Business experience settings[(<https://docs.microsoft.com/sharepoint/delete-odfb-lists>)] for more information about the settings, how they are stored, and how to delete them.
 
 #### OneDrive for Business and SharePoint Online search queries
 
@@ -689,6 +689,7 @@ While most Customer Data is authored and produced using the applications describ
 ***Table 3: Applications where in-app functionality can be used to find Customer Data***
 
 <!--start table here NO HEADER -->
+
 ||||
 |:-----:|:-----:|:-----:|:-----:|
 |[<img src="media/O365-DSR-Doc_image35.png"/>](#access)<br/>Access|[]()[<img src="media/O365-DSR-Doc_image22.png" />](#business-apps-for-office-365)<br/>Business Apps <br/>for Office 365 |[<img src="media/O365-DSR-Doc_image22.png"/>](#education)<br/>Education|
@@ -723,8 +724,8 @@ As previously explained, you can export data from an Access database to differen
 
 ##### Delete
 You can delete an entire record or a just a field from an Access database. The quickest way to delete a record from an Access database is to open the table in Datasheet view, select the record (row) or just the data in a field that you want to delete, and then press Delete. You can also use a select query that you created to find data and then convert it to a delete query. See:
-•	Delete one or more records from a database
-•	Create and run a delete query
+•   Delete one or more records from a database
+•   Create and run a delete query
 
 ### Business Apps for Office 365
 
@@ -922,12 +923,12 @@ If an admin receives a DSR request, they can add themselves as an owner of a use
 
 An admin’s ability to add themselves as an owner of a Flow requires an account with the following permissions:
 
--   Flow/PowerApps Plan 2 license (paid or trial)
+- Flow/PowerApps Plan 2 license (paid or trial)
 
--   [Office 365 global administrator\
-    ](https://support.office.com/article/assign-admin-roles-in-office-365-for-business-eac4d046-1afd-4f1a-85fc-8219c79e1504)or
+- [Office 365 global administrator\
+  ](https://support.office.com/article/assign-admin-roles-in-office-365-for-business-eac4d046-1afd-4f1a-85fc-8219c79e1504)or
 
--   [Azure Active Directory global administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal)
+- [Azure Active Directory global administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal)
 
 Having these privileges enables the admin to use the Flow admin center to access all Flows in the organization.
 
@@ -1050,7 +1051,7 @@ The following sections explain how use the in-app functionality in Microsoft Pla
 
 #### Discover
 
-Planner plans are associated with an Office 365 Group, and the files for Office 365 Groups are stored in an associated SharePoint Online site for the group. That means that you can use Content Search to find Planner files by searching the site for the Office 365 Group. To do this, you’ll need to have the URL for the Office 365 Group. See [Searching Microsoft Teams and Office 365 Groups](https://support.office.com/article/Content-Search-in-Office-365-53390468-eec6-45cb-b6cd-7511f9c909e4?ui=en-US&rs=en-US&ad=US) in the “Content Search in Office 365” help topic for tips about getting information about Office 365 Groups to help you search for Planner files in the corresponding SharePoint Online site.
+Planner plans are associated with an Office 365 Group, and the files for Office 365 Groups are stored in an associated SharePoint Online site for the group. That means that you can use Content Search to find Planner files by searching the site for the Office 365 Group. To do this, you’ll need to have the URL for the Office 365 Group. See [Searching Microsoft Teams and Office 365 Groups](https://support.office.com/article/Content-Search-in-Office-365-53390468-eec6-45cb-b6cd-7511f9c909e4) in the “Content Search in Office 365” help topic for tips about getting information about Office 365 Groups to help you search for Planner files in the corresponding SharePoint Online site.
 
 #### Access
 
@@ -1101,12 +1102,12 @@ PowerApps is a service for building apps that can be shared and used within your
 
 To help facilitate a DSR request related to PowerApps, you can leverage the administration operations exposed in the [PowerApps Admin Center](https://admin.powerapps.com/) and [PowerApps Admin PowerShell cmdlets](https://go.microsoft.com/fwlink/?linkid=871804). Access to these tools will require an account with the following permissions:
 
--   A paid PowerApps Plan 2 license or a PowerApps Plan 2 trial license. You can sign-up for a 30 day trial license [here](http://web.powerapps.com/trial).
+- A paid PowerApps Plan 2 license or a PowerApps Plan 2 trial license. You can sign-up for a 30 day trial license [here](http://web.powerapps.com/trial).
 
--   [Office 365 global administrator\
-    ](https://support.office.com/article/assign-admin-roles-in-office-365-for-business-eac4d046-1afd-4f1a-85fc-8219c79e1504)or
+- [Office 365 global administrator\
+  ](https://support.office.com/article/assign-admin-roles-in-office-365-for-business-eac4d046-1afd-4f1a-85fc-8219c79e1504)or
 
--   [Azure Active Directory global administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal).
+- [Azure Active Directory global administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal).
 
 For more information about finding personal data, see [Discover PowerApps personal data](https://go.microsoft.com/fwlink/?linkid=871880).
 
@@ -1207,7 +1208,7 @@ To delete or edit videos or any other Stream content, a Stream admin can select 
 The following sections explain how use the in-app functionality in Microsoft Sway to find, access, export, and delete personal data.
 
 #### Discover
-Content created using Sway (found at [www.sway.com](http://www.sway.com)) can only be seen by the owner and those that the author has permissioned to view the Sway. See [Privacy Settings in Sway](https://support.office.com/article/privacy-settings-in-sway-394b551c-be6f-4bd7-a70a-f318d72bf217). To determine whether Sway is a place where personal data responsive to your DSR is likely to reside, you can ask the Data Subject and organizational users who are likely to have generated content about the Data Subject to search their Sways and share with you any Sways that are likely to contain personal data responsive to the Data Subject’s request. For information on how to share a Sway, see “Share a Sway from your Organizational Account” in this [Share your Sway](https://support.office.com/article/share-your-sway-1cf853b8-ef7e-46b0-b704-003e58d28998?ui=en-US&rs=en-US&ad=US) article.
+Content created using Sway (found at [www.sway.com](http://www.sway.com)) can only be seen by the owner and those that the author has permissioned to view the Sway. See [Privacy Settings in Sway](https://support.office.com/article/privacy-settings-in-sway-394b551c-be6f-4bd7-a70a-f318d72bf217). To determine whether Sway is a place where personal data responsive to your DSR is likely to reside, you can ask the Data Subject and organizational users who are likely to have generated content about the Data Subject to search their Sways and share with you any Sways that are likely to contain personal data responsive to the Data Subject’s request. For information on how to share a Sway, see “Share a Sway from your Organizational Account” in this [Share your Sway](https://support.office.com/article/share-your-sway-1cf853b8-ef7e-46b0-b704-003e58d28998) article.
 
 #### Access
 
@@ -1234,7 +1235,7 @@ This section describes responding to DSR requests for data created using the Whi
 Whiteboard files (.wbx files) are stored in users’ OneDrive for Business account. You can ask the data subject or other users if whiteboards they created may contain personal data responsive to a DSR request. They can share a whiteboard with you, or you can get a copy of it to give to the data subject.
 
 To access and transfer whiteboards: 
-1. Give yourself access to the user’s OneDrive for Business account. See the “Get access to the former employee’s OneDrive for Business documents” section in [Get access to and back up a former user's data](https://support.office.com/article/get-access-to-and-back-up-a-former-user-s-data-a6f7f9ad-e3f5-43de-ade5-e5a0d7531604?ui=en-US&rs=en-US&ad=US).
+1. Give yourself access to the user’s OneDrive for Business account. See the “Get access to the former employee’s OneDrive for Business documents” section in [Get access to and back up a former user's data](https://support.office.com/article/get-access-to-and-back-up-a-former-user-s-data-a6f7f9ad-e3f5-43de-ade5-e5a0d7531604).
 2. Go to the Whiteboard App Data folder in the user’s OneDrive for Business account and copy the .wbx files of the whiteboards that you want to transfer.
 3. Give yourself access to the data subject’s OneDrive for Business account, and then go to Whiteboard App Data folder.
 4. Paste the .wbx files that you copied in the previous step.
@@ -1253,7 +1254,7 @@ You can export a whiteboard to a OneNote (.one) file or to an image (.png) file.
 
 ##### Delete
 You can give yourself access to the user’s OneDrive for Business account and then delete the whiteboards.
-1. Give yourself access to the data subject’s OneDrive for Business account. See the “Get access to the former employee’s OneDrive for Business documents” section in [Get access to and back up a former user's data](https://support.office.com/article/get-access-to-and-back-up-a-former-user-s-data-a6f7f9ad-e3f5-43de-ade5-e5a0d7531604?ui=en-US&rs=en-US&ad=US)
+1. Give yourself access to the data subject’s OneDrive for Business account. See the “Get access to the former employee’s OneDrive for Business documents” section in [Get access to and back up a former user's data](https://support.office.com/article/get-access-to-and-back-up-a-former-user-s-data-a6f7f9ad-e3f5-43de-ade5-e5a0d7531604)
 2. Go to the Whiteboard App Data folder and then delete the contents of this folder.
 
 ####  Whiteboard Preview
@@ -1413,7 +1414,7 @@ After those changes are made, you can take advantage of the [scheduled data refr
 
 For messages, a user can edit a given message to rectify any inaccuracies. They can request a list of all their messages from a Yammer verified admin, and then click a link in the file to review each message.
 
-For files, a user can edit a given file to rectify any inaccuracies. They can request a list of all the files they posted from a Yammer verified admin, and then access the files in Yammer. Files that are exported into the Files folder can be viewed by searching for the file by number. For example, for a file named 12345678.ppx in the export, use the Search box in Yammer to search for 1235678.ppx. Or, go to **https://www.yammer.com/\<network\_name\>/\#/files/\<file\_number\>**; for example, **https://www.yammer.com/contosomkt.onmicrosoft.com/\#/files/12345678**.
+For files, a user can edit a given file to rectify any inaccuracies. They can request a list of all the files they posted from a Yammer verified admin, and then access the files in Yammer. Files that are exported into the Files folder can be viewed by searching for the file by number. For example, for a file named 12345678.ppx in the export, use the Search box in Yammer to search for 1235678.ppx. Or, go to <strong>https://www.yammer.com/\<network\_name\>/\#/files/\<file\_number\></strong>; for example, <strong>https://www.yammer.com/contosomkt.onmicrosoft.com/\#/files/12345678</strong>.
 
 For data that the user can access through their profile and settings, the user can make any needed changes.
 
@@ -1635,13 +1636,13 @@ Admins can access system-generated logs associated with a particular user’s us
 After you create a new request, it will be listed on the **Data Log Export** page where you can track its status. After a request is complete, you can click a link to access the system-generated logs, which will be exported to your organization’s Azure storage location within 30 days of creating the request. The data will be saved in common, machine-readable file formats such as JSON or XML. If you don't have an Azure account and Azure storage location, you'll need to create an Azure account and/or Azure storage location for your organization so that the Data Log Export tool can export the system-generated logs. For more information, see [Introduction to Azure Storage](https://docs.microsoft.com/azure/storage/common/storage-introduction).
 
 **Note:**
-When you create an Export Data Request, system-generated data for a few applications will not be exported through the Data Log Export tool. To export data for these applications, see [Exporting additional system-generated logs](https://docs.microsoft.com/en-us/microsoft-365/compliance/gdpr-system-generated-log-data).
+When you create an Export Data Request, system-generated data for a few applications will not be exported through the Data Log Export tool. To export data for these applications, see [Exporting additional system-generated logs](https://docs.microsoft.com/microsoft-365/compliance/gdpr-system-generated-log-data).
 
 The following summarizes accessing and exporting system-generated logs using the Data Log Export tool:
 
   **How long does the Microsoft Data Log Export tool take to complete a request?**
  This can depend on several factors. In most cases it should complete in one or two days, but it can take up to 30 days.
-  
+
   **What format will the output be in?**
  The output will be structured machine-readable files such as XML, CSV, or JSON.
 
@@ -1656,21 +1657,21 @@ Data will be exported to your organization's Azure storage location; it will be 
 
 **What will data in system-generated logs look like?**
  Example of a system-generated log record in JSON format:
-                                           
+
 
 ```
 [{
-                                                                                               
+
             "DateTime": "2017-04-28T12:09:29-07:00",
-                                                                                                    
+
              "AppName": "SharePoint",
-                                                                                                    
+
              "Action": "OpenFile",
-                                                                                                    
+
              "IP": "154.192.13.131",
-                                                                                                    
+
              "DevicePlatform": "Windows 1.0.1607"
-                                                                                                    
+
 }]
 ```
 
@@ -1716,7 +1717,7 @@ Parts 1-3 of this guide cover products and services for which Microsoft is a dat
 - User feedback – If your users elect to provide feedback on Microsoft products and services, Microsoft is a data controller for such feedback to the extent it contains personal data. Microsoft will fulfill any data subject requests for feedback collected by Microsoft (including feedback managed by Microsoft subprocessors) except in cases where Microsoft has instructed users to not include personal data during the feedback collection process. Exceptions: If Microsoft has instructed users to not include personal data during the feedback collection process, Microsoft will rely on that instruction and will assume that no personal data has been provided. Users who have created a separate account with third-party feedback service providers will need to fulfill their DSR directly with those providers.
 - Windows authenticated via work or school account - If your organization has purchased Windows licenses, and your users authenticate to organization-provided Windows with their work or school account, Microsoft acts as a data controller. For more information, see the [Windows Data Subject Requests for the GDPR](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-windows).
 - User-acquired products or services - If you allow your users, acting in their individual capacity, to acquire Microsoft products or services that use AAD for authentication, e.g., Office Add-Ons or applications available in a Microsoft Store, Microsoft may be a data controller. For any such Microsoft products or services, users will need to contact Microsoft directly to initiate a DSR.
- 
+
 **Important:** If you delete a user as enabled via Azure Active Directory, your (former) user will lose the ability to sign in to any products or services for which he or she formerly relied upon for a work or school account. Additionally, Microsoft will no longer be able to authenticate the user in connection with a DSR request for products or services for which Microsoft is a data controller. If you wish to enable a user to initiate DSRs against such services, it is important you instruct your user to do so before you delete the user’s AAD account.
 
 ### Personal accounts

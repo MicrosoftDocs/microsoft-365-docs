@@ -91,27 +91,27 @@ In this phase, you create and deploy two different MAM policies: one for iOS dev
     
 30. Repeat step 29 for the following apps:
     
-  - Outlook for Android
+    - Outlook for Android
     
-  - Word for iOS
+    - Word for iOS
     
-  - Excel for iOS
+    - Excel for iOS
     
-  - Outlook for iOS
+    - Outlook for iOS
     
-  - Microsoft Dynamics CRM on iPad for iOS
+    - Microsoft Dynamics CRM on iPad for iOS
     
-  - Microsoft Dynamics CRM on iPhone for iOS
+    - Microsoft Dynamics CRM on iPhone for iOS
     
-  - Dynamics CRM for Phones for Android
+    - Dynamics CRM for Phones for Android
     
-  - Dynamics CRM for Tablets for Android
+    - Dynamics CRM for Tablets for Android
     
-  - Excel for Android
+    - Excel for Android
     
-  - Word for Android
+    - Word for Android
     
-  - OneNote for iOS
+    - OneNote for iOS
     
 31. Close the **Mobile Apps - Apps** blade.
     
@@ -131,7 +131,7 @@ In this phase, you create and deploy two different MAM policies: one for iOS dev
     
 39. On the **Apps** blade, click **PowerPoint**, **Dynamics CRM for tablets**, **Excel**, **Word**, **Outlook**, and **Dynamics CRM for phones**, and then click **Select**.
     
-10. On the **Add a policy** blade, click **Create**.
+40. On the **Add a policy** blade, click **Create**.
     
 You now have two MAM policies, one for iOS devices and one for Android devices, and are ready to experiment with testing settings for the selected apps. 
   

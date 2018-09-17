@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Step 4: Configure increased security for Office 365"
 ms.author: josephd
 author: JoeDavies-MSFT

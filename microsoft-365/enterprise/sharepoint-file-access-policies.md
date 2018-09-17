@@ -19,9 +19,9 @@ This article describes how to implement the recommended identity and device acce
 
 These recommendations are based on three different tiers of security and protection for SharePoint files that can be applied based on the granularity of your needs: **baseline**, **sensitive**, and **highly regulated**. You can learn more about these security tiers, and the recommended client operating systems, referenced by these recommendations in the [the overview](microsoft-365-policies-configurations.md).
 
-In addtion to implementing this guidance, be sure to configure SharePoint sites with the right amount of protection, including ensuring permissions for sensitive and highly regulated content are appropriate. For more information on creating sites for baseline, sensitive, and highly regulated protection, see [Secure SharePoint Online sites and files](https://docs.microsoft.com/en-us/office365/enterprise/secure-sharepoint-online-sites-and-files). 
+In addtion to implementing this guidance, be sure to configure SharePoint sites with the right amount of protection, including ensuring permissions for sensitive and highly regulated content are appropriate. For more information on creating sites for baseline, sensitive, and highly regulated protection, see [Secure SharePoint Online sites and files](https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-and-files). 
 
-##Updating common policies to include SharePoint and OneDrive for Business
+## Updating common policies to include SharePoint and OneDrive for Business
 The following diagram illustrates the set of recommended policies for protecting files in SharePoint Online and OneDrive for Business. It indicates which policies will be updated or newly created to add protection for SharePoint Online and OneDrive for Business.
 
 ![Summary of policies for SharePoint Online and OneDrive](../images/identity-access-ruleset-sharepoint.png)
@@ -49,7 +49,7 @@ The new policies implement device protection for sensitive and highly regulated 
 ## Use app enforced restrictions in SharePoint Online
 If you implement access controls in SharePoint Online, you must create this conditional access policy in Azure AD to tell Azure AD to enforce the policies you configure in SharePoint Online. This rule applies to all users, but only affects access to the sites you specify using PowerShell when you create the access controls in SharePoint Online.
 
-To configure this policy see "Block or limit access to specific SharePoint site collections or OneDrive accounts" in this article: [Control access from unmanaged devices](https://support.office.com/en-us/article/Control-access-from-unmanaged-devices-5ae550c4-bd20-4257-847b-5c20fb053622?ui=en-US&rs=en-US&ad=US).
+To configure this policy see "Block or limit access to specific SharePoint site collections or OneDrive accounts" in this article: [Control access from unmanaged devices](https://support.office.com/article/Control-access-from-unmanaged-devices-5ae550c4-bd20-4257-847b-5c20fb053622).
 
 
 ## SharePoint Online access control policies
@@ -57,7 +57,7 @@ Microsoft recommends you protect content in SharePoint sites with sensitive and 
 - Sensitive sites — Allow browser-only access. This prevents users from editing and downloading files.
 - Highly regulated sites — Block access from unmanaged devices.
 
-See "Block or limit access to specific SharePoint site collections or OneDrive accounts" in this article: [Control access from unmanaged devices](https://support.office.com/en-us/article/Control-access-from-unmanaged-devices-5ae550c4-bd20-4257-847b-5c20fb053622?ui=en-US&rs=en-US&ad=US) . 
+See "Block or limit access to specific SharePoint site collections or OneDrive accounts" in this article: [Control access from unmanaged devices](https://support.office.com/article/Control-access-from-unmanaged-devices-5ae550c4-bd20-4257-847b-5c20fb053622) . 
 
 
 <!---
@@ -68,10 +68,10 @@ To ensure baseline protection is applied uniformly, regardless of which service 
 - Block access from unmanaged devices. This includes devices that aren't compliant or joined to a domain. 
 - Block access from app that don't use modern authentication.
 
-See [Control access from unmanaged devices](https://support.office.com/en-us/article/Control-access-from-unmanaged-devices-5ae550c4-bd20-4257-847b-5c20fb053622?ui=en-US&rs=en-US&ad=US).
+See [Control access from unmanaged devices](https://support.office.com/article/Control-access-from-unmanaged-devices-5ae550c4-bd20-4257-847b-5c20fb053622).
 -->
 
 
 
 ## Next steps
-[Secure SharePoint Online sites and files](https://docs.microsoft.com/en-us/office365/enterprise/secure-sharepoint-online-sites-and-files)
+[Secure SharePoint Online sites and files](https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-and-files)

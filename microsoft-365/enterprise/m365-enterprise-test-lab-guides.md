@@ -88,6 +88,6 @@ To demonstrate mobile device management-related features and capabilities, see:
 
 ## See also
 
-[Experience the Microsoft Cloud with Cloud Adoption Test Lab Guides](https://mva.microsoft.com/en-US/training-courses/experience-the-microsoft-cloud-with-cloud-adoption-test-lab-guides-17960?l=LXNRdhSLE_1000115881)
+[Experience the Microsoft Cloud with Cloud Adoption Test Lab Guides](https://mva.microsoft.com/training-courses/experience-the-microsoft-cloud-with-cloud-adoption-test-lab-guides-17960?l=LXNRdhSLE_1000115881)
     
 [One Microsoft Cloud Test Lab Guide stack](http://aka.ms/catlgstack)
