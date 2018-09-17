@@ -29,6 +29,7 @@ Prepare for semi-annual channel updates with new features and capabilities in Wi
 <td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-20.png" alt="Step 7" height="130" width="231" /></td>
 </thead>
 </table>
+
 >[!NOTE]
 >Windows and Office as a Service is the seventh step in our recommended deployment process wheel covering the planning aspects of preparing for semi-annual updates to features. To see the full desktop deployment process, visit the [Modern Desktop Deployment Center](https://aka.ms/mddhome).
 >

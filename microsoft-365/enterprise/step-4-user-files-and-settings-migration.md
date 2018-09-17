@@ -29,6 +29,7 @@ Moving users’ files and settings to their new or refreshed PCs is a critical p
 <td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-17.png" alt="Step 4" height="130" width="231" /></td>
 </thead>
 </table>
+
 >[!NOTE]
 >While you can continue to use migration processes you have used in the past, with your shift to Office 365 ProPlus we recommend you use OneDrive ‘Known Folder Move’ (see below). To see the full desktop deployment process, visit the [Modern Desktop Deployment Center](https://aka.ms/mddhome).
 >

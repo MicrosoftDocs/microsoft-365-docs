@@ -29,6 +29,7 @@ Review your options for targeting new security and compliance capabilities as pa
 <td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-18.png" alt="Step 5" height="130" width="231" /></td>
 </thead>
 </table>
+
 >[!NOTE]
 >Security and Compliance is the fifth step in our recommended deployment process wheel covering Windows 10 and Office 365 ProPlus security and compliance considerations. To see the full desktop deployment process, visit the [Modern Desktop Deployment Center](https://aka.ms/mddhome).
 >

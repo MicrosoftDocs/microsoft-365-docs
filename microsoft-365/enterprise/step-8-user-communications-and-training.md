@@ -29,6 +29,7 @@ Inform and prepare your users for modern workplace experiences spanning Office 3
 <td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-21.png" alt="Step 8" height="130" width="231" /></td>
 </thead>
 </table>
+
 >[!NOTE]
 >User Communications and Training is the eighth step in our recommended deployment process wheel by covering tips and recommendations to inform and prepare users. To see the full desktop deployment process, visit the [Modern Desktop Deployment Center](https://aka.ms/mddhome).
 >
