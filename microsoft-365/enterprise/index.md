@@ -70,9 +70,9 @@ description: Learn about the product documentation and resources available for M
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>Manage security & compliance</h3>
+                                                <h3>Manage security &amp; compliance</h3>
                                                 <P><a href="https://docs.microsoft.com/microsoft-365/compliance/compliance-solutions-overview" target="_blank">Compliance solutions</a></p>
-                                                <P><a href="https://docs.microsoft.com/Office365/SecurityCompliance/" target="_blank">Office 365 Security & Compliance</a></p>
+                                                <P><a href="https://docs.microsoft.com/Office365/SecurityCompliance/" target="_blank">Office 365 Security &amp; Compliance</a></p>
                                                 <P><a href="microsoft-365-policies-configurations.md" target="_blank">Identity &amp; device access</a></p>
                                             </div>
                                         </div>
@@ -92,7 +92,7 @@ description: Learn about the product documentation and resources available for M
                                                 <h3>Train your users</h3>
                                                 <P><a href="https://support.office.com/office-training-center" target="_blank">Office 365</a></p>
                                                 <P><a href="https://www.microsoft.com/itpro/windows-10/end-user-readiness" target="_blank">Windows 10</a></p>
-                                                <P><a href="https://docs.microsoft.com/intune-user-help/use-managed-devices-to-get-work-done" target="_blank">Intune & Company Portal app</a></p>
+                                                <P><a href="https://docs.microsoft.com/intune-user-help/use-managed-devices-to-get-work-done" target="_blank">Intune &amp; Company Portal app</a></p>
                                             </div>
                                         </div>
                                     </div>

@@ -76,11 +76,11 @@ First, you install and configure Azure AD Connect on APP1.
     
 2. From the desktop of APP1, open an administrator-level Windows PowerShell command prompt, and then run these commands:
     
-  ```
-  Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Active Setup\Installed Components\{A509B1A7-37EF-4b3f-8CFC-4F3A74704073}" -Name "IsInstalled" -Value 0
-  Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Active Setup\Installed Components\{A509B1A8-37EF-4b3f-8CFC-4F3A74704073}" -Name "IsInstalled" -Value 0
-  Stop-Process -Name Explorer -Force
-  ```
+   ```
+   Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Active Setup\Installed Components\{A509B1A7-37EF-4b3f-8CFC-4F3A74704073}" -Name "IsInstalled" -Value 0
+   Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Active Setup\Installed Components\{A509B1A8-37EF-4b3f-8CFC-4F3A74704073}" -Name "IsInstalled" -Value 0
+   Stop-Process -Name Explorer -Force
+   ```
 
 3. From the task bar, click **Internet Explorer** and go to [https://aka.ms/aadconnect](https://aka.ms/aadconnect).
     
@@ -116,7 +116,7 @@ Next, you test the ability to sign in to your Office 365 subscription with the u
 
 1. From APP1, sign out of Office 365, and then sign in again, this time specifying a different account.
 
-2. When prompted for a user name and password, specify **user1@testlab.**\<your domain name> and the User1 password. You should successfully sign in as User1. 
+2. When prompted for a user name and password, specify <strong>user1@testlab.</strong>\<your domain name> and the User1 password. You should successfully sign in as User1. 
  
 Notice that although User1 has domain administrator permissions for the TESTLAB Windows Server AD domain, it is not an Office 365 global administrator. Therefore, you will not see the **Admin** icon as an option. 
 

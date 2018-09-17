@@ -73,9 +73,9 @@ In this phase, you configure Azure AD Connect on APP1 to use pass-through authen
 
 Next, test the ability to sign in to your Office 365 subscription with the user1@testlab.\<your public domain> user name of the User1 account.
 
-1.	From APP1, sign out of Office 365, and then sign in again, this time specifying a different account.
+1. From APP1, sign out of Office 365, and then sign in again, this time specifying a different account.
 
-2.	When prompted for a user name and password, specify **user1@testlab.**\<your public domain> and the User1 password. You should successfully sign in as User1.
+2. When prompted for a user name and password, specify <strong>user1@testlab.</strong>\<your public domain> and the User1 password. You should successfully sign in as User1.
 
 Notice that although User1 has domain administrator permissions for the TESTLAB Windows Server AD domain, it is not an Office 365 global administrator. Therefore, you will not see the **Admin** icon as an option.
 
