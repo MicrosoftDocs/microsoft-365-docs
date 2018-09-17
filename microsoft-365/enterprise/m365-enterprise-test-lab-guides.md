@@ -3,7 +3,7 @@ title: "Microsoft 365 Enterprise Test Lab Guides"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/30/2018
+ms.date: 09/16/2018
 ms.audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
@@ -26,6 +26,9 @@ TLGs are designed to be modular. They build upon each other to create multiple c
 You can also use TLGs to create representative environments for development and testing of applications, also known as dev/test environments.
   
 ![Test Lab Guides for the Microsoft cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+
+> [!TIP]
+> Click [here](https://aka.ms/m365etlgstack) for a visual map to all the articles in the Microsoft 365 Enterprise Test Lab Guide stack.
   
 ## Base configuration
 
@@ -71,8 +74,6 @@ To demonstrate identity-related features and capabilities, see:
 
    Scan your current user accounts for vulnerabilities.
 
-
-
 ## Mobile device management
 
 To demonstrate mobile device management-related features and capabilities, see:
@@ -84,6 +85,15 @@ To demonstrate mobile device management-related features and capabilities, see:
 - [Enroll iOS and Android devices in your Microsoft 365 Enterprise test environment](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
    
    Enroll iOS or Android devices and manage them remotely.
+
+
+## Information protection
+
+To demonstrate information protection-related features and capabilities, see:
+
+- [Increased Office 365 security for your Microsoft 365 Enterprise test environment](increased-o365-security-microsoft-365-enterprise-dev-test-environment.md)
+    
+   Configure settings for increased Office 365 security and investigate built-in security tools.
     
 
 ## See also
