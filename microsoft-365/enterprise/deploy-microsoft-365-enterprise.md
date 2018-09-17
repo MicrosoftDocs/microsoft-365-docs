@@ -3,7 +3,7 @@ title: "Deploy Microsoft 365 Enterprise"
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 08/23/2018
+ms.date: 09/16/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -63,7 +63,7 @@ The Contoso Corporation is a fictional but representative global manufacturing c
 See these resources to learn how customers are using Microsoft 365 Enterprise as their complete, intelligent solution that empowers everyone to be creative and work together securely:
 
 - Health services
-  - [Lilly strives to speed innovation with help from Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/blog/2018/07/16/lilly-strives-to-speed-innovation-with-help-from-microsoft-365-enterprise/?ms.o365url=lilly)
+  - [Lilly strives to speed innovation with help from Microsoft 365 Enterprise](https://www.microsoft.com/en-us/microsoft-365/blog/2018/07/16/lilly-strives-to-speed-innovation-with-help-from-microsoft-365-enterprise/?ms.o365url=lilly)
   - [Healthcare technology innovator accelerates diabetes prevention in the cloud ](https://aka.ms/Soleracasestudy)
   - [Adventist Health System is enhancing healthcare delivery using Microsoft 365](https://aka.ms/adventisthealth)
   - [Abrona accelerates GDPR compliance and increases productivity with Microsoft 365](https://aka.ms/Abrona)
