@@ -58,6 +58,8 @@ For more information, see [Microsoft 365 Enterprise Test Lab Guides](m365-enterp
 
 The Contoso Corporation is a fictional but representative global manufacturing conglomerate with its headquarters in Paris. See how [Contoso deployed Microsoft 365 Enterprise](contoso-case-study.md) and addressed major design decisions and implementation details for networking, identity, Windows 10 Enterprise, Office 365 ProPlus, mobile device management, information protection, and security. 
 
+![](./media/contoso-overview/contoso-icon.png)
+
 ## How customers use Microsoft 365 Enterprise
 
 See these resources to learn how customers are using Microsoft 365 Enterprise as their complete, intelligent solution that empowers everyone to be creative and work together securely:
