@@ -2,7 +2,7 @@
 title: "Microsoft 365 Enterprise workloads and scenarios"
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/11/2018
+ms.date: 09/16/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions

@@ -3,7 +3,7 @@ title: Microsoft 365 Enterprise overview
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/30/2018
+ms.date: 09/16/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -62,7 +62,7 @@ For more deployment information:
 
 ## Identity and device access configurations
 
-Although there is no single best recommendation for all customer environments, the [identity and device access configurations](microsoft-365-policies-configurations.md) documentation describes how to apply policy and configuration within the Microsoft cloud to ensure that your employees are both secure and productive.
+Although there is no single best recommendation for all customer environments, the [identity and device access configurations](microsoft-365-policies-configurations.md) documentation describes how to apply policies and configuration within the Microsoft cloud to ensure that your employees are both secure and productive.
 
 
 ## Next step
@@ -73,5 +73,3 @@ Start your [Microsoft 365 Enterprise deployment journey](deploy-microsoft-365-en
 ## See also
 
 [Microsoft 365 Enterprise product page](https://www.microsoft.com/microsoft-365/enterprise)
-
-[Cloud platform roadmap](https://www.microsoft.com/cloud-platform/roadmap)
