@@ -2,7 +2,7 @@
 title: "Deploy SharePoint Online and OneDrive for Business for Microsoft 365 Enterprise"
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/26/2018
+ms.date: 09/16/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -82,6 +82,10 @@ SharePoint Online and OneDrive for Business enable these strategic business scen
 - Support your organization with enhanced privacy and compliance to meet the General Data Protection Regulation (GDPR)
 
 For more information, see the [Discover Value tool](https://online.valuediscoveryworkshop.com/). 
+
+#### SharePoint Online site for highly regulated data
+
+Highy regulated data is subject to regional regulations or is the most valuable data for your organization, such as trade secrets, financial or human resources information, and organization strategy. You can configure a SharePoint Online site for restricted access, data classification, data loss prevention, and encryption for this type of data. For the details, see [Microsoft Teams and SharePoint Online sites for highly regulated data](teams-sharepoint-online-sites-highly-regulated-data.md).
 
 #### Result
 A list of SharePoint Online and OneDrive for Business scenarios that address your organization’s needs for document storage and sharing, content management, and collaboration.
