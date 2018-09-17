@@ -1791,4 +1791,4 @@ The following table lists the changes to the Office 365 DSR guide since its init
 
 |Date  |Section/App |Change  |
 |---------|---------|---------|
-|9/18/2018     |   [Whiteboard](#whiteboard)      | • Whiteboard Preview is no longer in preview and has been released to general availability.</br> • The section on Whiteboard Preview was renamed to "Whiteboard for PC, Surface Hub, and other platforms"; procedures to access, export, and delete data were removed from this section and replaced with a link to the Whiteboard support article.   |
+|9/18/2018     |   [Whiteboard](#whiteboard)      |Whiteboard Preview is no longer in preview and has been released to general availability. Therefore, the section on Whiteboard Preview was renamed to "Whiteboard for PC, Surface Hub, and other platforms"; procedures to access, export, and delete data were removed from this section and replaced with a link to the Whiteboard support article.|
