@@ -55,6 +55,7 @@ description: Learn about the product documentation and resources available for M
                                                 <h3>Deploy</h3>
                                                 <P><a href="https://www.microsoft.com/fasttrack/microsoft-365" target="_blank">FastTrack</a></p>
                                                 <P><a href="deploy-microsoft-365-enterprise.md" target="_blank">Deployment guide</a></p>
+                                                <P><a href="https://aka.ms/howtoshift" target="_blank">Modern Desktop deployment</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -74,6 +75,7 @@ description: Learn about the product documentation and resources available for M
                                                 <P><a href="https://docs.microsoft.com/microsoft-365/compliance/compliance-solutions-overview" target="_blank">Compliance solutions</a></p>
                                                 <P><a href="https://docs.microsoft.com/Office365/SecurityCompliance/" target="_blank">Office 365 Security &amp; Compliance</a></p>
                                                 <P><a href="microsoft-365-policies-configurations.md" target="_blank">Identity &amp; device access</a></p>
+                                                <P><a href="https://docs.microsoft.com/windows/security/threat-protection/index" target="_blank">Windows Defender ATP</a></p>
                                             </div>
                                         </div>
                                     </div>
