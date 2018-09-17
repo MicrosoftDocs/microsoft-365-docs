@@ -1224,12 +1224,15 @@ To export a Sway, open the Sway that you would like to download, select the seri
 
 ### Whiteboard
 
-The following sections explain how use the in-app functionality in Microsoft Whiteboard to find, access, export, and delete personal data. Use the following guidance depending on the version of Whiteboard used in your organization.
+The following sections explain how use the in-app functionality in Microsoft Whiteboard to find, access, export, and delete personal data.
+
 - Whiteboard on Surface Hub
 - Whiteboard Preview
 
-#### Whiteboard on Surface Hub
-This section describes responding to DSR requests for data created using the Whiteboard app on Surface Hub.
+#### Whiteboard 2016 on Surface Hub
+
+This section describes responding to DSR requests for data created using the built-in Whiteboard 2016 app on Surface Hub.
+
 
 ##### Discover
 Whiteboard files (.wbx files) are stored in users’ OneDrive for Business account. You can ask the data subject or other users if whiteboards they created may contain personal data responsive to a DSR request. They can share a whiteboard with you, or you can get a copy of it to give to the data subject.
@@ -1257,30 +1260,12 @@ You can give yourself access to the user’s OneDrive for Business account and t
 1. Give yourself access to the data subject’s OneDrive for Business account. See the “Get access to the former employee’s OneDrive for Business documents” section in [Get access to and back up a former user's data](https://support.office.com/article/get-access-to-and-back-up-a-former-user-s-data-a6f7f9ad-e3f5-43de-ade5-e5a0d7531604)
 2. Go to the Whiteboard App Data folder and then delete the contents of this folder.
 
-####  Whiteboard Preview
-This section describes responding to DSR requests for data created using the new Whiteboard app that is currently in preview.
+####  Whiteboard for PC, Surface Hub, and other platforms
 
-##### Discover
-If an admin receives a DSR request for data in the preview version, they can use Whiteboard PowerShell to add themselves (or other users) as an owner of a user’s whiteboards. This enables an admin to perform actions including accessing, exporting, and deleting whiteboards. Use either the **Set-WhiteboardOwner** cmdlet to add yourself or another user as the owner of a whiteboard or use the **Invoke-TransferAllWhiteboards** cmdlet to transfer the ownership of all whiteboards for a specific user to a new owner. For information about using these cmdlets and installing the Whiteboard PowerShell module, see [Microsoft Whiteboard cmdlet reference](https://docs.microsoft.com/powershell/whiteboard/intro?view=whiteboard-ps).
+If an admin receives a DSR request for data in the new Whiteboard app, they can use Whiteboard PowerShell to add themselves (or other users) as an owner of a user’s whiteboards. This enables an admin to perform actions including accessing, exporting, and deleting whiteboards. Use either the **Set-WhiteboardOwner** cmdlet to add yourself or another user as the owner of a whiteboard or use the **Invoke-TransferAllWhiteboards** cmdlet to transfer the ownership of all whiteboards for a specific user to a new owner. For information about using these cmdlets and installing the Whiteboard PowerShell module, see Microsoft Whiteboard cmdlet reference.
+After you or another person has ownership of a whiteboard, see [Microsoft Whiteboard cmdlet reference](https://docs.microsoft.com/powershell/whiteboard/intro?view=whiteboard-ps).
 
-After you or another person has ownership of a whiteboard, you can follow the guidance to access, export, and delete whiteboards.
-
-##### Access
-If you find personal data in a whiteboard that’s responsive to a DSR access request, you can provide the data subject access to a whiteboard in several ways:
-- Take screenshots of the relevant portions of a whiteboard.
-- Export a copy of whiteboard as a .png file.
-
-##### Export
-To export a whiteboard:
-1. Launch Whiteboard (Preview).
-2. Tap … (the ellipses button) on the whiteboard you want to export, and then select Export image (png). 
-3. Save the image to your local computer.
-
-##### Delete
-To delete a whiteboard:
-1. Launch Whiteboard (Preview). 
-2. Tap … (the ellipses button) on the whiteboard you want to delete, and then select Delete.
-The whiteboard will be permanently deleted (hard-deleted).
+After you or another person has ownership of a whiteboard, see the [Whiteboard support article](https://go.microsoft.com/fwlink/?linkid=872780) for detailed guidance about accessing, exporting, and deleting whiteboards.
 
 ### Yammer
 
