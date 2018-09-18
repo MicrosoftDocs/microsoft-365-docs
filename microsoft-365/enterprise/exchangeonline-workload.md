@@ -56,10 +56,11 @@ Exchange Online enables these strategic business scenarios for Microsoft 365 Ent
 - Store and share files inside and outside your organization to work seamlessly across organizational boundaries
 - Work securely from anywhere, anytime across your device to achieve more while maintaining a flexible workstyle
 - Protect your information and reduce the risk of data loss
-- Detect and protect against external threats --Monitor, report and analyze activity to react promptly to provide organizational security
+- Detect and protect against external threats 
+- Monitor, report and analyze activity to react promptly to provide organizational security
 - Support your organization with enhanced privacy and compliance to meet the General Data Protection Regulation (GDPR)
 
-For more information, see the [Discover Value tool](https://online.valuediscoveryworkshop.com/). 
+For more information, see the [Digital transformation using Microsoft 365](http://transform.microsoft.com). 
 
 #### Result
 A list of Exchange Online scenarios that address your organization’s needs for communication, scheduling, and short-lived collaboration.
