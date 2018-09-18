@@ -1,4 +1,4 @@
-.---
+---
 title: "Phase 2: Identity"
 ms.author: josephd
 author: JoeDavies-MSFT

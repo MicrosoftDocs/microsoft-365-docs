@@ -32,7 +32,7 @@ Microsoft 365 Enterprise includes features to help manage devices, and their app
 - Monitor, report, and analyze activity to react promptly to provide organizational security
 - Protect your users and their accounts
 
-For more information, see the [Discover Value tool](https://online.valuediscoveryworkshop.com/). 
+For more information, see the [Digital transformation using Microsoft 365](http://transform.microsoft.com). 
 
 In this phase, you enroll your devices in Intune, and create and enforce policies to help keep your data secure and protected. The entire library of Intune documentation is [available online](https://docs.microsoft.com/intune). It's also good practice to review the [Intune deployment planning, design and implementation guide](https://docs.microsoft.com/intune/planning-guide) before you get started.
 
