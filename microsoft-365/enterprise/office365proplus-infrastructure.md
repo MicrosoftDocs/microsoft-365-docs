@@ -41,7 +41,7 @@ Office 365 ProPlus enables these strategic business scenarios for Microsoft 365 
 - Protect your information and reduce the risk of data loss
 - Get current and stay current on your desktop software and devices while reducing security risks and maximizing IT efficiency
 
-For more information, see the [Discover Value tool](https://online.valuediscoveryworkshop.com/). 
+For more information, see the [Digital transformation using Microsoft 365](http://transform.microsoft.com). 
 
 >[!Note]
 >If you already have Office 365 ProPlus deployed, please see the [exit criteria](office365proplus-exit-criteria.md) for this phase to make sure that it meets the required conditions for Microsoft 365 Enterprise.

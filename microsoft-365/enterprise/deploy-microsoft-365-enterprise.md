@@ -73,6 +73,8 @@ See these resources to learn how customers are using Microsoft 365 Enterprise as
 - Financial services
   - [TD Bank empowers employees with assistive technology in Office 365 and Windows 10](https://aka.ms/tdbankgroup)
   - [Family tax preparation startup chooses all-in-one solution to help grow business](https://aka.ms/SOSCaseStudy)
+- Transportation
+  - [Kyrgyzstan airline’s goal to bring air travel to all takes off with teamwork supported by Office 365](https://aka.ms/AirManasCaseStudy)
 - Manufacturing
   - [Steel company eliminates hardware costs, streamlines IT, and gains mobile productivity in the cloud](https://aka.ms/Steeledalecasestudy)
   - [Embroidery equipment supplier empowers its business with cloud-based services, spreads word to other small businesses](https://aka.ms/PriorityLLCCaseStudy)
@@ -84,12 +86,13 @@ See these resources to learn how customers are using Microsoft 365 Enterprise as
   - [Digital transformation and the cloud empower business association to serve its members better ](https://aka.ms/AIMCS)
 - Energy services
   - [Schlumberger refines global teamwork with Microsoft 365](https://aka.ms/Schlumberger_)
+  - [Solar distributor gains productivity and mobility by switching from G Suite and Dropbox to Office 365](https://aka.ms/DMSolarCS)
 - Construction
   - [Search for data security solution unearths collaborative capabilities of Microsoft 365 at general contracting company](https://aka.ms/Transbluecasestudy)
 
 ## How Microsoft uses Microsoft 365 Enterprise
 
-Take a peek inside Microsoft and learn how we use Microsoft 365 Enterprise.
+Take a peek inside Microsoft IT and learn how they deployed Microsoft 365 Enterprise and how Microsoft employees use it every day.
 
 ### Networking
 

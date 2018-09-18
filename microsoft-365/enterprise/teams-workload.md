@@ -52,7 +52,7 @@ Teams enables these strategic business scenarios for Microsoft 365 Enterprise:
 - Engage your firstline workers to enable your Digital Transformation
 - Understand your work habits to improve your influence and impact
 
-For more information, see the [Discover Value tool](https://online.valuediscoveryworkshop.com/). 
+For more information, see the [Digital transformation using Microsoft 365](http://transform.microsoft.com). 
 
 #### Microsoft Teams for highly regulated data
 
