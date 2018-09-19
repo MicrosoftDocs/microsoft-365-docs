@@ -54,7 +54,6 @@ Follow these steps to set up and use privileged access in your Office 365 organi
     Once enabled, privileged access requires approvals for executing any task that has an associated approval policy defined. Users needing to execute tasks included in the an approval policy must request and be granted access approval in order to have permissions necessary to execute the task.
 
 ## Phase 3: Verify that approval is required for elevated and privileged tasks
-
 In this phase, you verify that the privileged access policy is working and users require approval to execute defined elevated and privileged tasks.
 
 ### Test approval requirement for a task NOT defined in a privileged access policy
@@ -128,7 +127,7 @@ Insufficient permissions. Please raise an elevated access request for this task.
 
 5. Select **Save** and then **Close**. Your request will be sent to the approver's group via email.
 
-### Approve privileged access request for the creation of a new Journal Rule.
+### Approve privileged access request for the creation of a new Journal Rule
 
 1. Sign into the [Microsoft 365 Admin Center](https://portal.office.com) using the credentials for a user in the "Privileged Access Approvers" security group.
 
