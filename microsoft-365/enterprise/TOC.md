@@ -70,6 +70,7 @@
 #### [MAM policies](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
 ### [Information protection]()
 #### [Increased Office 365 security](increased-o365-security-microsoft-365-enterprise-dev-test-environment.md)
+#### [Privileged access management](privileged-access-microsoft-365-enterprise-dev-test-environment.md)
 ## [Contoso case study](contoso-case-study.md)
 ### [Overview](contoso-overview.md)
 ### [Contoso's IT infrastructure and needs](contoso-infra-needs.md)
