@@ -45,7 +45,7 @@ Follow these steps to set up and use privileged access in your Office 365 organi
 
     Privileged access needs to be explicitly turned on in Office 365 with the default approver group and including a set of system accounts that you’d want to be excluded from the privileged access management access control.
 
-- Step 3: [Create an access policy](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration#step-3---create-an-access-policy)
+- [Step 3: Create an access policy](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration#step-3---create-an-access-policy)
 
     Creating an approval policy allows you to define the specific approval requirements scoped at individual tasks. The approval type options are Auto or Manual.
 
