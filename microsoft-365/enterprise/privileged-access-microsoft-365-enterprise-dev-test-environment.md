@@ -60,24 +60,14 @@ In this phase, you verify that the privileged access policy is working and users
 
 First, connect to Exchange Management PowerShell with the credentials of a user configured as a Global Administrator and attempt to create a new Journal rule. The [New-JournalRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-journalrule?view=exchange-ps) task is NOT currently defined in a privileged access policy for your organization.
 
-1. If needed, install the Exchange Online Remote PowerShell Module on your computer. To install, open Internet Explorer or Edge and open the Exchange admin center (EAC) for your Exchange Online organization to download the module. For more information, see [Connect to Exchange Online PowerShell using multi-factor authentication](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps).
-
-2. On your local computer, open and sign into the the Exchange Online Remote PowerShell Module at **Microsoft Corporation** > **Microsoft Exchange Online Remote PowerShell Module** using an account and credentials for a user configured as a Global Administrator.
+2. On your local computer, open and sign into the the Exchange Online Remote PowerShell Module at **Microsoft Corporation** > **Microsoft Exchange Online Remote PowerShell Module** using an account and credentials for the same user you tested with earlier.
 
 3. In Exchange Management Powershell, create a new Journal rule for your organization:
 
 ```
 New-JournalRule -Name "JournalRule1" -Recipient joe@contoso.onmicrosoft.com -JournalEmailAddress barbara@adatum.com -Scope Global -Enabled $true
 ```
-4. View "Insuffient permissions" error in Exchange Management PowerShell:
-
-```
-Insufficient permissions. Please raise an elevated access request for this task.
-    + CategoryInfo          : NotSpecified: (:) [], LocalizedException
-    + FullyQualifiedErrorId : [Server=CY1PR00MB0220,RequestId=7b8c7470-ddd0-4528-a01e-5e20ecc9bd54,TimeStamp=9/19/2018
-    7:38:34 PM] [FailureCategory=Cmdlet-LocalizedException] 882BD051
-    + PSComputerName        : outlook.office365.com
-```
+4. View that the new Journal Rule was successfully created in Exchange Management PowerShell.
 
 ### Create a new privileged access policy for the New-JournalRule task
 
@@ -104,6 +94,25 @@ Insufficient permissions. Please raise an elevated access request for this task.
     **Approval group**: Privileged Access Approvers
 
 7. Select **Create** and then **Close**. It may take a few minutes for the policy to be fully configured and enabled.
+
+### Test approval requirement for the New-JournalRule task defined in a privileged access policy
+
+2. On your local computer, open and sign into the the Exchange Online Remote PowerShell Module at **Microsoft Corporation** > **Microsoft Exchange Online Remote PowerShell Module** using an account and credentials for a user configured as a Global Administrator.
+
+3. In Exchange Management Powershell, create a new Journal rule for your organization:
+
+```
+New-JournalRule -Name "JournalRule2" -Recipient joe@contoso.onmicrosoft.com -JournalEmailAddress barbara@adatum.com -Scope Global -Enabled $true
+```
+4. View "Insuffient permissions" error in Exchange Management PowerShell:
+
+```
+Insufficient permissions. Please raise an elevated access request for this task.
+    + CategoryInfo          : NotSpecified: (:) [], LocalizedException
+    + FullyQualifiedErrorId : [Server=CY1PR00MB0220,RequestId=7b8c7470-ddd0-4528-a01e-5e20ecc9bd54,TimeStamp=9/19/2018
+    7:38:34 PM] [FailureCategory=Cmdlet-LocalizedException] 882BD051
+    + PSComputerName        : outlook.office365.com
+```
 
 ### Request access to create a new Journal Rule using the New-JournalRule task
 
@@ -137,16 +146,16 @@ Insufficient permissions. Please raise an elevated access request for this task.
 
 4. Select the pending request and select **Apprive**. An notification email confirming that approval has been granted will be sent to the requesting user.  
 
-### Test creating a new Journal Rule with privileged access configured for the New-JournalRule task
+### Test creating a new Journal Rule with privileged access approved for the New-JournalRule task
 
-2. On your local computer, open and sign into the the Exchange Online Remote PowerShell Module at **Microsoft Corporation** > **Microsoft Exchange Online Remote PowerShell Module** using an account and credentials for the same user you tested with earlier.
+1. On your local computer, open and sign into the the Exchange Online Remote PowerShell Module at **Microsoft Corporation** > **Microsoft Exchange Online Remote PowerShell Module** using an account and credentials for the same user you tested with earlier.
 
-3. In Exchange Management Powershell, create a new Journal rule for your organization:
+2. In Exchange Management Powershell, create a new Journal rule for your organization:
 
 ```
-New-JournalRule -Name "JournalRule1" -Recipient joe@contoso.onmicrosoft.com -JournalEmailAddress barbara@adatum.com -Scope Global -Enabled $true
+New-JournalRule -Name "JournalRule2" -Recipient joe@contoso.onmicrosoft.com -JournalEmailAddress barbara@adatum.com -Scope Global -Enabled $true
 ```
-4. View that the new Journal Rule was successfully created in Exchange Management PowerShell.
+3. View that the new Journal Rule was successfully created in Exchange Management PowerShell.
 
 ## Next step
 
