@@ -43,6 +43,7 @@
 #### [Step 2: Configure conditional access policy settings](infoprotect-configure-conditional-access-policy-settings.md)
 #### [Step 3: Configure classification for your environment](infoprotect-configure-classification.md)
 #### [Step 4: Configure increased security for Office 365](infoprotect-configure-increased-security-office-365.md)
+#### [Step 5: Configure privileged access management for Office 365](infoprotect-configure-privileged-access-management.md)
 #### [Information protection exit criteria](infoprotect-exit-criteria.md)
 ### [Deploy with existing infrastructure](deploy-with-existing-infrastructure.md)
 ## [Deploy workloads and scenarios](deploy-workloads.md)
