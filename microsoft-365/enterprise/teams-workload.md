@@ -2,7 +2,7 @@
 title: "Deploy Microsoft Teams for Microsoft 365 Enterprise"
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/28/2018
+ms.date: 09/16/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -52,7 +52,11 @@ Teams enables these strategic business scenarios for Microsoft 365 Enterprise:
 - Engage your firstline workers to enable your Digital Transformation
 - Understand your work habits to improve your influence and impact
 
-For more information, see the [Discover Value tool](https://online.valuediscoveryworkshop.com/). 
+For more information, see the [Digital transformation using Microsoft 365](http://transform.microsoft.com). 
+
+#### Microsoft Teams for highly regulated data
+
+Highy regulated data is subject to regional regulations or is the most valuable data for your organization, such as trade secrets, financial or human resources information, and organization strategy. You can configure a team for restricted access, data classification, data loss prevention, and encryption for this type of data. For the details, see [Microsoft Teams and SharePoint Online sites for highly regulated data](teams-sharepoint-online-sites-highly-regulated-data.md).
 
 #### Result
 
