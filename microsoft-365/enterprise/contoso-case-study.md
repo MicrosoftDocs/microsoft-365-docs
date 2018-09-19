@@ -22,11 +22,11 @@ description: How a fictional but representative global organization has adopted 
 
 Microsoft 365 Enterprise is Microsoft’s premier cloud offering that combines Office 365, Windows 10 Enterprise, and Enterprise Mobility + Security (EMS) into a complete, intelligent solution that that empowers everyone to be creative and work together, securely. 
 
-The Contoso Corporation is a fictional but representative global manufacturing conglomerate with its headquarters in Paris. Contoso has deployed Microsoft 365 Enterprise and addressed major design decisions and implementation details for networking, identity, Windows 10 Enterprise, Office 365 ProPlus, mobile device management, information protection, and security. 
+The Contoso Corporation is a fictional but representative global manufacturing conglomerate with its headquarters in Paris, France. Contoso has deployed Microsoft 365 Enterprise and addressed major design decisions and implementation details for networking, identity, Windows 10 Enterprise, Office 365 ProPlus, mobile device management, information protection, and security. 
 
 The overall goal of Contoso for Microsoft 365 Enterprise is to accelerate their digital transformation by using cloud services to bring together its employees, partners, data, and processes to create customer value and maintain its competitive advantage in a digital-first world.
 
-See the following articles for the details:
+See these articles for the details:
 
 - [Overview](contoso-overview.md)
 
@@ -38,7 +38,7 @@ See the following articles for the details:
 
 - [Networking](contoso-networking.md)
 
-  Contoso's network engineers have optimized traffic to their Internet edge and across the Internet.
+  Contoso's network engineers have optimized traffic to their intranet edge and to the closest Microsoft network location on the Internet.
 
 - [Identity](contoso-identity.md)
 
@@ -46,11 +46,11 @@ See the following articles for the details:
 
 - [Windows 10 Enterprise](contoso-win10.md)
 
-  Contoso has implemented an infrastructure that deploys and automatically installs updates for their primary PC and device operating system.
+  Contoso's Windows 10 Enterprise infrastructure deploys and automatically installs updates for their primary PC and device operating system.
 
 - [Office 365 ProPlus](contoso-o365pp.md)
 
-  Contoso has implemented an infrastructure that deploys and automatically installs updates for their Microsoft Office suite of productivity software.
+  Contoso Office 365 ProPlus infrastructure deploys and automatically installs updates for the Microsoft Office suite of productivity software.
 
 - [Mobile device management](contoso-mdm.md)
 

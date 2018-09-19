@@ -3,7 +3,7 @@ title: "Phase 6: Information protection"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/28/2018
+ms.date: 09/18/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -48,6 +48,12 @@ Learn how IT experts at Microsoft use the information protection capabilities of
 - [Protecting files in the cloud with Azure Information Protection](https://www.microsoft.com/itshowcase/Article/Content/924/Protecting-files-in-the-cloud-with-Azure-Information-Protection)
 - [Microsoft uses threat intelligence to protect, detect, and respond to threats](https://www.microsoft.com/itshowcase/Article/Content/934/Microsoft-uses-threat-intelligence-to-protect-detect-and-respond-to-threats)
 - [Microsoft thwarts phishing attempts with Office 365](https://www.microsoft.com/itshowcase/Article/Content/956/Microsoft-thwarts-phishing-attempts-with-Office-365)
+
+## How Contoso did Microsoft 365 Enterprise
+
+See how the Contoso Corporation, a fictional but representative multi-national business, [implemented information protection](contoso-info-protect.md) with Microsoft 365 cloud services.
+
+![](./media/contoso-overview/contoso-icon.png)
 
 ## Next step
 

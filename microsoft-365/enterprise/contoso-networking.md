@@ -3,7 +3,7 @@ title: "Networking for the Contoso Corporation"
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 09/13/2018
+ms.date: 09/18/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom:
 
-description: Understand the Contoso networking infrastructure and how it uses its SD WAN technology for optimal performance network connectivity to Microsoft 365 Enterprise cloud-based services.
+description: Understand the Contoso networking infrastructure and how it uses its SD-WAN technology for optimal performance network connectivity to Microsoft 365 Enterprise cloud-based services.
 ---
 
 # Networking for the Contoso Corporation
 
-**Summary:** Understand the Contoso networking infrastructure and how it uses its SD WAN technology for optimal performance network connectivity to Microsoft 365 Enterprise cloud based services.
+**Summary:** Understand the Contoso networking infrastructure and how it uses its SD-WAN technology for optimal performance network connectivity to Microsoft 365 Enterprise cloud based services.
 
 To adopt a cloud-inclusive infrastructure, Contoso's network engineers realized the fundamental shift in the way that network traffic to cloud-based services travels. Instead of a hub and spoke model that focusses network connectivity on the head office, they worked to map user locations to local Internet egress and local connections to Microsoft network locations on the Internet.
 
@@ -32,13 +32,19 @@ The elements of Contoso's network that links their offices across the globe are 
 
 - Local direct Internet access for Office 365 traffic
 
-  Each office has an SD WAN device with one of more local Internet ISP network circuits, with its own Internet connectivity through a proxy server. This is typically implemented as a WAN link to a local ISP that also provides public IP addresses and local DNS server IP addresses for the proxy server.
+  Each office has an SD-WAN device with one of more local Internet ISP network circuits, with its own Internet connectivity through a proxy server. This is typically implemented as a WAN link to a local ISP that also provides public IP addresses and local DNS server IP addresses for the proxy server.
 
 - Internet presence
 
   Contoso owns the contoso.com public domain name. The Contoso public web site for ordering products is a set of servers in an Internet-connected datacenter in the Paris campus. Contoso uses a /24 public IP address range on the Internet.
 
-## Use of SD WAN for optimal network connectivity to Microsoft
+Figure 2 shows Contoso's networking infrastructure and its connections to the Internet.
+
+![](./media/contoso-networking/contoso-networking-fig1.png)
+ 
+**Figure 1: Contoso's network**
+
+## Use of SD-WAN for optimal network connectivity to Microsoft
 
 Contoso followed [Office 365 network connectivity principles](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles):
 
@@ -51,9 +57,9 @@ There are three categories of network traffic for Office 365: Optimize, Allow, a
 
 Contoso decided to use direct Internet egress for Optimize and Allow category traffic and to forward all Default category traffic to the Paris-based central Internet connection.
 
-They decided to deploy SD WAN devices at each of their office locations as a simple way to follow these principles and achieve optimal network performance for Microsoft 365 cloud-based services.
+They decided to deploy SD-WAN devices at each of their office locations as a simple way to follow these principles and achieve optimal network performance for Microsoft 365 cloud-based services.
 
-The SD WAN devices have a LAN port for the local office network and multiple WAN ports. One WAN port connects to their MPLS network and other WAN ports connect to local ISP circuits. The SD WAN device routes Optimize and Allow category network traffic to the ISP links.
+The SD-WAN devices have a LAN port for the local office network and multiple WAN ports. One WAN port connects to their MPLS network and other WAN ports connect to local ISP circuits. The SD-WAN device routes Optimize and Allow category network traffic to the ISP links.
 
 ## Contoso's line of business app infrastructure
 
@@ -63,11 +69,11 @@ Contoso has architected its line of business application and server infrastructu
 - Regional hubs use regional application servers for the regional and satellite offices. These servers synchronize with servers in the Paris headquarters.
 - The Paris campus has the datacenters that contain the centralized application servers that serve the entire organization.
 
-Figure 1 shows the percentage of network traffic when accessing servers across Contoso’s intranet.
+Figure 2 shows the percentage of network traffic when accessing servers across Contoso’s intranet.
 
 ![](./media/contoso-networking/contoso-networking-fig2.png)
  
-**Figure 1: Contoso's infrastructure for internal applications**
+**Figure 2: Contoso's infrastructure for internal applications**
 
 For users in satellite or regional hub offices, 60% of the resources needed by employees can be served by satellite and regional hub office servers. The additional 40% of resource requests must go over the WAN link to the Paris campus.
 
@@ -81,7 +87,7 @@ Successful adoption of Microsoft 365 Enterprise services by Contoso’s users de
 
 2. Created a plan for Microsoft 365 Enterprise network connectivity
 
-   Contoso used the [Office 365 network connectivity principles](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles) and provided reference network architectures to determine SD WAN as their preferred topology for Office 365 connectivity.
+   Contoso used the [Office 365 network connectivity principles](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles) and provided reference network architectures to determine SD-WAN as their preferred topology for Office 365 connectivity.
 
 3. Analyzed Internet connection utilization and MPLS WAN bandwidth at each office and increased bandwidth as needed
 
@@ -89,7 +95,7 @@ Successful adoption of Microsoft 365 Enterprise services by Contoso’s users de
 
 4. Optimized performance to Microsoft network services
 
-   Contoso determined the set of Office 365, Intune, and Azure endpoints and configured firewalls, security devices, and other systems in the Internet path for optimal performance. Endpoints for Office 365 Optimize and Allow category traffic was configured into the SD WAN devices that provided direct Internet access.
+   Contoso determined the set of Office 365, Intune, and Azure endpoints and configured firewalls, security devices, and other systems in the Internet path for optimal performance. Endpoints for Office 365 Optimize and Allow category traffic was configured into the SD-WAN devices that provided direct Internet access.
 
 5. Configured internal DNS
 

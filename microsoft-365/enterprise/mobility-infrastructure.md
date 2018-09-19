@@ -5,7 +5,7 @@ keywords: Microsoft 365, Microsoft 365 Enterprise, Microsoft 365 documentation, 
 author: MandiOhlinger 
 ms.author: mandia 
 manager: dougeby 
-ms.date: 08/29/2018 
+ms.date: 09/18/2018 
 ms.topic: conceptual 
 audience: microsoft-business
 ms.prod: microsoft-365-enterprise
@@ -86,7 +86,6 @@ To manage devices, the devices must be enrolled in Intune. As an administrator, 
 
 Enrollment is a key step when using Intune. [Enroll devices](https://docs.microsoft.com/intune/device-enrollment) lists the steps for the different devices.
 
-
 |||
 |:-------|:-----|
 |![Test Lab Guides for the Microsoft cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Test Lab Guide: iOS and Android device enrollment](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md) |
@@ -148,6 +147,21 @@ Intune is a powerful service, and includes many features. Here are some other ta
 - Add a [partner certificate authority (CA)](https://docs.microsoft.com/intune/certificate-authority-add-scep-overview) to issue and renew certificates
 - [Provide guidance to your end users](https://docs.microsoft.com/intune/end-user-educate) on the Company Portal app, getting apps, and more
 - Monitor [apps](https://docs.microsoft.com/intune/apps-monitor), monitor [device compliance](https://docs.microsoft.com/intune/compliance-policy-monitor), monitor [configuration profiles](https://docs.microsoft.com/intune/compliance-policy-monitor), and more telemetry using the audit logs. You can also connect to the [Intune Data Warehouse](https://docs.microsoft.com/intune/reports-nav-create-intune-reports) and use Power BI for even more reporting needs.
+
+
+## How Microsoft does Microsoft 365 Enterprise
+
+Learn how IT experts at Microsoft planned for and deployed EMS and device management with these resources:
+
+- [Managing modern mobile productivity with Enterprise Mobility + Security](https://www.microsoft.com/itshowcase/Article/Content/972/Managing-modern-mobile-productivity-with-Enterprise-Mobility--Security)
+- [Connecting to work on your Windows 10 device with Microsoft Intune](https://www.microsoft.com/itshowcase/Article/Content/783/Connecting-to-work-on-your-Windows-10-device-with-Microsoft-Intune)
+- [Enabling mobile productivity for iOS, OS X, and Android devices at Microsoft](https://www.microsoft.com/itshowcase/Article/Content/773/Enabling-mobile-productivity-for-iOS-OS-X-and-Android-devices-at-Microsoft)
+
+## How Contoso did Microsoft 365 Enterprise
+
+See how the Contoso Corporation, a fictional but representative multi-national business, [deployed their mobile device management infrastructure](contoso-mdm.md) with Microsoft 365 cloud services.
+
+![](./media/contoso-overview/contoso-icon.png)
 
 ## Next step
 
