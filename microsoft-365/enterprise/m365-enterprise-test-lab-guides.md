@@ -95,6 +95,9 @@ To demonstrate information protection-related features and capabilities, see:
     
    Configure settings for increased Office 365 security and investigate built-in security tools.
     
+- [Privileged access management for your Microsoft 365 Enterprise test environment](privileged-access-microsoft-365-enterprise-dev-test-environment.md)
+    
+   Configure privileged acccess management for just-in-time access to elevated and privileged tasks in your Office 365 organization.
 
 ## See also
 
