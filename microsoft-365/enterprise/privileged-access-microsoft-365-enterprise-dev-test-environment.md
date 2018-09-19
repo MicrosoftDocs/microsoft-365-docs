@@ -82,7 +82,7 @@ Insufficient permissions. Please raise an elevated access request for this task.
 
 ### Create a new privileged access policy for the New-JournalRule task
 
-1. If you haven't already, follow the steps to create an approver's group and to enable privileged access in your Office 365 organization
+1. If you haven't already, follow the steps to create an approver's group and to enable privileged access in your Office 365 organization.
 
 2. Sign into the [Microsoft 365 Admin Center](https://portal.office.com) using credentials for an admin account in your organization.
 
@@ -147,7 +147,7 @@ Insufficient permissions. Please raise an elevated access request for this task.
 ```
 New-JournalRule -Name "JournalRule1" -Recipient joe@contoso.onmicrosoft.com -JournalEmailAddress barbara@adatum.com -Scope Global -Enabled $true
 ```
-4. View that the new Journal Rule was successfully created in Exchange Management PowerShell:
+4. View that the new Journal Rule was successfully created in Exchange Management PowerShell.
 
 ## Next step
 
