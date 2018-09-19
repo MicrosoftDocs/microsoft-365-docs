@@ -3,7 +3,7 @@ title: "Step 5: Configure privileged access management for Office 365"
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 9/24/2018
+ms.date: 9/19/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -32,7 +32,7 @@ One configured, privileged access management will enable your organization to op
 
 To enable Office 365 privileged access management, see the [Configure privileged access management in Office 365](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration) topic.
 
-For more information, see the [Privileged access management in Office 365](https://docs.microsoft.com/office365/securitycompliance/privileged-access-managment-overview) topic.
+For more information, see the [Privileged access management in Office 365](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-overview) topic.
 
 ## Results
 
