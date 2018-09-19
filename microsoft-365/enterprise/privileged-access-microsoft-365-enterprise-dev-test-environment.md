@@ -29,7 +29,7 @@ If you just want to configure privileged access management in a lightweight way 
 If you want to configure privileged access management in a simulated enterprise, follow the instructions in [Pass-through authentication](pass-through-auth-m365-ent-test-environment.md).
   
 > [!NOTE]
-> Testing automated licensing and group membership does not require the simulated enterprise test environment, which includes a simulated intranet connected to the Internet and directory synchronization for a Windows Server AD forest. It is provided here as an option so that you can test automated licensing and group membership and experiment with it in an environment that represents a typical organization. 
+> Testing privileged access management does not require the simulated enterprise test environment, which includes a simulated intranet connected to the Internet and directory synchronization for a Windows Server AD forest. It is provided here as an option so that you can test automated licensing and group membership and experiment with it in an environment that represents a typical organization. 
 
 ## Phase 2: Configure privileged access management
 
@@ -39,19 +39,19 @@ Follow these steps to set up and use privileged access in your Office 365 organi
 
 - [Step 1: Create an approver's group](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration#step-1---create-an-approvers-group)
 
-    Before you start using privilege access, determine who will have approval authority for incoming requests for access to elevated and privileged tasks. Any user who is part of the Approvers’ group will be able to approve access requests. This is enabled by creating a mail-enabled security group in Office 365.
+    Before you start using privilege access, determine who will have approval authority for incoming requests for access to elevated and privileged tasks. Any user who is part of the Approvers’ group will be able to approve access requests. This is enabled by creating a mail-enabled security group in Office 365. Add the "User 3" in your test environment to a new approvers group named "Privileged Access Approvers".
 
 - [Step 2: Enable privileged access](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration#step-2---enable-privileged-access)
 
-    Privileged access needs to be explicitly turned on in Office 365 with the default approver group and including a set of system accounts that you’d want to be excluded from the privileged access management access control.
+    Privileged access needs to be explicitly turned on in Office 365 with the default approver group and including a set of system accounts that you’d want to be excluded from the privileged access management access control. Be sure to enable privileged access in your Office 365 organization before starting Phase 3 of this guide.
 
 - [Step 3: Create an access policy](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration#step-3---create-an-access-policy)
 
-    Creating an approval policy allows you to define the specific approval requirements scoped at individual tasks. The approval type options are Auto or Manual.
+    Creating an approval policy allows you to define the specific approval requirements scoped at individual tasks. The approval type options are Auto or Manual. You'll create a new policy in Phase 3 in this guide.
 
 - [Step 4: Submit/approve privileged access requests](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration#step-4-submitapprove-privileged-access-requests)
 
-    Once enabled, privileged access requires approvals for executing any task that has an associated approval policy defined. Users needing to execute tasks included in the an approval policy must request and be granted access approval in order to have permissions necessary to execute the task.
+    Once enabled, privileged access requires approvals for executing any task that has an associated approval policy defined. Users needing to execute tasks included in the an approval policy must request and be granted access approval in order to have permissions necessary to execute the task. You'll test approval policy enforcement in Phase 3 of this guide.
 
 ## Phase 3: Verify that approval is required for elevated and privileged tasks
 In this phase, you verify that the privileged access policy is working and users require approval to execute defined elevated and privileged tasks.
@@ -60,9 +60,9 @@ In this phase, you verify that the privileged access policy is working and users
 
 First, connect to Exchange Management PowerShell with the credentials of a user configured as a Global Administrator and attempt to create a new Journal rule. The [New-JournalRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-journalrule?view=exchange-ps) task is NOT currently defined in a privileged access policy for your organization.
 
-2. On your local computer, open and sign into the the Exchange Online Remote PowerShell Module at **Microsoft Corporation** > **Microsoft Exchange Online Remote PowerShell Module** using an account and credentials for the same user you tested with earlier.
+1. On your local computer, open and sign into the the Exchange Online Remote PowerShell Module at **Microsoft Corporation** > **Microsoft Exchange Online Remote PowerShell Module** using the Global Admin account for your test environment.
 
-3. In Exchange Management Powershell, create a new Journal rule for your organization:
+2. In Exchange Management Powershell, create a new Journal rule for your organization:
 
 ```
 New-JournalRule -Name "JournalRule1" -Recipient joe@contoso.onmicrosoft.com -JournalEmailAddress barbara@adatum.com -Scope Global -Enabled $true
@@ -71,9 +71,9 @@ New-JournalRule -Name "JournalRule1" -Recipient joe@contoso.onmicrosoft.com -Jou
 
 ### Create a new privileged access policy for the New-JournalRule task
 
-1. If you haven't already, follow the steps to create an approver's group and to enable privileged access in your Office 365 organization.
+1. If you haven't already, follow the steps to create an approver's group named "Privilege Access Approvers" and to enable privileged access in your Office 365 organization.
 
-2. Sign into the [Microsoft 365 Admin Center](https://portal.office.com) using credentials for an admin account in your organization.
+2. Sign into the [Microsoft 365 Admin Center](https://portal.office.com) using credentials the Global Admin account for your test environment.
 
 3. In the Admin Center, go to **Settings** > **Security & Privacy** > **Privileged access**.
 
@@ -81,7 +81,7 @@ New-JournalRule -Name "JournalRule1" -Recipient joe@contoso.onmicrosoft.com -Jou
 
 5. Select **Configure policies** and select **Add a policy**.
 
-6. From the drop-down fields, select the appropriate values for your organization:
+6. From the drop-down fields, select or enter the following values:
     
     **Policy type**: Task
 
@@ -97,7 +97,7 @@ New-JournalRule -Name "JournalRule1" -Recipient joe@contoso.onmicrosoft.com -Jou
 
 ### Test approval requirement for the New-JournalRule task defined in a privileged access policy
 
-2. On your local computer, open and sign into the the Exchange Online Remote PowerShell Module at **Microsoft Corporation** > **Microsoft Exchange Online Remote PowerShell Module** using an account and credentials for a user configured as a Global Administrator.
+2. On your local computer, open and sign into the the Exchange Online Remote PowerShell Module at **Microsoft Corporation** > **Microsoft Exchange Online Remote PowerShell Module** using an using the Global Admin account for your test environment.
 
 3. In Exchange Management Powershell, create a new Journal rule for your organization:
 
@@ -116,7 +116,7 @@ Insufficient permissions. Please raise an elevated access request for this task.
 
 ### Request access to create a new Journal Rule using the New-JournalRule task
 
-1. Sign into the [Microsoft 365 Admin Center](https://portal.office.com) using the same account and credentials used to try to create the new Journal Rule.
+1. Sign into the [Microsoft 365 Admin Center](https://portal.office.com) using the Global Admin account for your test environment.
 
 2. In the Admin Center, go to **Settings** > **Security & Privacy** > **Privileged access**.
 
@@ -138,7 +138,7 @@ Insufficient permissions. Please raise an elevated access request for this task.
 
 ### Approve privileged access request for the creation of a new Journal Rule
 
-1. Sign into the [Microsoft 365 Admin Center](https://portal.office.com) using the credentials for a user in the "Privileged Access Approvers" security group.
+1. Sign into the [Microsoft 365 Admin Center](https://portal.office.com) using the credentials for User 3 in your test environment (member of the "Privileged Access Approvers" security group in your test environment).
 
 2. In the Admin Center, go to **Settings** > **Security & Privacy** > **Privileged access**.
 
@@ -148,7 +148,7 @@ Insufficient permissions. Please raise an elevated access request for this task.
 
 ### Test creating a new Journal Rule with privileged access approved for the New-JournalRule task
 
-1. On your local computer, open and sign into the the Exchange Online Remote PowerShell Module at **Microsoft Corporation** > **Microsoft Exchange Online Remote PowerShell Module** using an account and credentials for the user you tested with earlier.
+1. On your local computer, open and sign into the the Exchange Online Remote PowerShell Module at **Microsoft Corporation** > **Microsoft Exchange Online Remote PowerShell Module** using the Global Admin account for your test environment.
 
 2. In Exchange Management Powershell, create a new Journal rule for your organization:
 
