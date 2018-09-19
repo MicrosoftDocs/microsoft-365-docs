@@ -116,7 +116,7 @@ Insufficient permissions. Please raise an elevated access request for this task.
 
 ### Request access to create a new Journal Rule using the New-JournalRule task
 
-1. Sign into the [Microsoft 365 Admin Center](https://portal.office.com) using your credentials.
+1. Sign into the [Microsoft 365 Admin Center](https://portal.office.com) using the same account and credentials used to try to create the new Journal Rule.
 
 2. In the Admin Center, go to **Settings** > **Security & Privacy** > **Privileged access**.
 
@@ -148,7 +148,7 @@ Insufficient permissions. Please raise an elevated access request for this task.
 
 ### Test creating a new Journal Rule with privileged access approved for the New-JournalRule task
 
-1. On your local computer, open and sign into the the Exchange Online Remote PowerShell Module at **Microsoft Corporation** > **Microsoft Exchange Online Remote PowerShell Module** using an account and credentials for the same user you tested with earlier.
+1. On your local computer, open and sign into the the Exchange Online Remote PowerShell Module at **Microsoft Corporation** > **Microsoft Exchange Online Remote PowerShell Module** using an account and credentials for the user you tested with earlier.
 
 2. In Exchange Management Powershell, create a new Journal rule for your organization:
 
