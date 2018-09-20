@@ -8,7 +8,7 @@ You've created user accounts and groups so that:
 - Employees in your organization and the vendors, contractors, and partners that work for or with your organization have a corresponding user account in Azure Active Directory (AD).
 - Azure AD groups and their members contain user accounts and other groups for various purposes, such as the provisioning of security settings for Microsoft cloud services, automatic licensing, and other uses.
 
-If needed, [Step 1](identity-plan-users-groups.md) can help you meet this requirement.
+If needed, [Step 1](../identity-plan-users-groups.md) can help you meet this requirement.
 
 <a name="crit-identity-sync"></a>
 ### Required: Users and groups are synchronized with Azure AD
@@ -17,7 +17,7 @@ If you have an existing on-premises identity provider, such as Windows Server Ac
 
 With directory synchronization, your users can sign in to Office 365 and other Microsoft cloud services using the same credentials that they use to sign in to their computers and access on-premises resources.
 
-If needed, [Step 7](identity-azure-ad-connect.md) can help you meet this requirement.
+If needed, [Step 7](../identity-azure-ad-connect.md) can help you meet this requirement.
 
 If you skip this requirement, you’ll have two sets of user accounts and groups:
 
@@ -42,7 +42,7 @@ You've [protected your Office 365 global administrator accounts](https://support
 
 If you skip this requirement, your global administrator accounts can be susceptible to attack and compromise, allowing an attacker to gain system-wide access to your data for harvesting, destruction, or ransom.
 
-If needed, [Step 2](identity-designate-protect-admin-accounts.md) can help you meet this requirement.
+If needed, [Step 2](../identity-designate-protect-admin-accounts.md) can help you meet this requirement.
 
 #### How to test
 
@@ -64,7 +64,7 @@ You have used [Add company branding to your sign-in and Access Panel pages](http
 
 If you skip this option, your users will see a generic Office 365 sign-in screen and might not be confident that they’re signing into your organization’s site.
 
-If needed, [Step 11](identity-customize-office-365-sign-in.md) can help you with this option.
+If needed, [Step 11](../identity-customize-office-365-sign-in.md) can help you with this option.
 
 #### How to test
 
@@ -77,7 +77,7 @@ You used [Plan for multi-factor authentication for Office 365 Deployments](https
 
 If you skip this option, your user accounts are vulnerable to credential compromise by cyber attackers. If a user account’s password is compromised, all the resources and capabilities of the account, such as administrator roles, are available to the attacker. This allows the attacker to copy, destroy, or hold for ransom internal documents and other data.
 
-If needed, [Step 5](identity-multi-factor-authentication.md) can help you with this option.
+If needed, [Step 5](../identity-multi-factor-authentication.md) can help you with this option.
 
 #### How to test
 
@@ -97,7 +97,7 @@ You've used [Azure AD Connect Health with sync](https://docs.microsoft.com/azure
 
 If you skip this option, you can more accurately assess the state of your cloud-based identity infrastructure.
 
-If needed, [Step 8](identity-azure-ad-connect-health.md) can help you with this option.
+If needed, [Step 8](../identity-azure-ad-connect-health.md) can help you with this option.
 
 #### How to test
 The Azure AD Connect Health portal shows the current and correct state of your on-premises identity servers and the ongoing synchronization.
@@ -109,7 +109,7 @@ You've used [Azure AD self-service password reset rapid deployment](https://docs
 
 If you don’t meet this condition, users will be dependent on user account administrators to reset their passwords, resulting in additional IT administration overhead.
 
-If needed, [Step 4](identity-password-reset.md) can help you with this option.
+If needed, [Step 4](../identity-password-reset.md) can help you with this option.
 
 #### How to test
 
@@ -125,7 +125,7 @@ You've used the instructions in [Azure AD SSPR with password writeback](https://
 
 If you skip this option, users who aren’t connected to your on-premises network must reset or unlock their Windows Server AD passwords through an IT administrator.
 
-If needed, [Step 9](identity-password-writeback.md) can help you with this option.
+If needed, [Step 9](../identity-password-writeback.md) can help you with this option.
 
 >[!Note]
 >Password writeback is required to fully utilize Azure AD Identity Protection features, such as requiring users to change their on-premises passwords when Azure AD has detected a high risk of account compromise.
@@ -148,7 +148,7 @@ You enabled [Azure AD Connect: Seamless Single Sign-On](https://docs.microsoft.c
 
 If you skip this option, your users might be prompted to provide credentials when they access additional applications that use Azure AD.
 
-If needed, [Step 10](identity-single-sign-on.md) can help you with this option.
+If needed, [Step 10](../identity-single-sign-on.md) can help you with this option.
 
 
 <a name="crit-identity-group-license"></a>
@@ -161,7 +161,7 @@ If you skip this option, you must manually:
 - Assign licenses to new users whom you intend to have access to Office 365 and EMS.
 - Remove licenses from users who are no longer with your organization or do not have access to Office 365 and EMS.
 
-If needed, [Step 12](identity-group-based-licensing.md) can help you with this option.
+If needed, [Step 12](../identity-group-based-licensing.md) can help you with this option.
 
 #### How to test
 
@@ -185,7 +185,7 @@ If you skip this option, group membership must be done manually as new accounts 
 
 If the Sales and Accounting groups were dynamic, you would only have to change the user account’s Department value.
 
-If needed, [Step 15](identity-automatic-group-membership.md) can help you with this option.
+If needed, [Step 15](../identity-automatic-group-membership.md) can help you with this option.
 
 #### How to test
 
@@ -203,7 +203,7 @@ You've determined which groups are appropriate for self-service management, inst
 
 If you skip this option, all Azure AD group management tasks must be done by IT administrators.
 
-If needed, [Step 14](identity-self-service-group-management.md) can help you with this option.
+If needed, [Step 14](../identity-self-service-group-management.md) can help you with this option.
 
 #### How to test
 1.	Create a test user account in Azure AD with the Azure portal.
@@ -225,7 +225,7 @@ You've enabled Azure AD Identity Protection to:
 
 If you skip this option, you won’t be able to detect or automatically thwart credential compromise attempts or investigate identity-related security incidents. This potentially leaves your organization vulnerable to a successful credential compromise and the resulting threat to your organization’s sensitive data.
 
-If needed, [Step 6](identity-azure-ad-identity-protection.md) can help you with this option.
+If needed, [Step 6](../identity-azure-ad-identity-protection.md) can help you with this option.
 
 <a name="crit-identity-pim"></a>
 ### Optional: You have set up Privileged Identity Management to support on-demand assignment of the global administrator role
@@ -236,4 +236,4 @@ You've also used the recommendations in [Securing privileged access for hybrid a
 
 If you skip this option, your global administrator accounts are subject to ongoing online attack and, if compromised, can allow an attacker to harvest, destroy, or hold your sensitive information for ransom.
 
-If needed, [Step 3](identity-azure-ad-identity-protection.md) can help you with this option.
+If needed, [Step 3](../identity-azure-ad-identity-protection.md) can help you with this option.
