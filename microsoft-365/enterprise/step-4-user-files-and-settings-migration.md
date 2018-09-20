@@ -17,7 +17,7 @@ description: Learn how to migrate users' files and settings.
 
 # Step 4: User Files and Settings Migration
 
-Moving users’ files and settings to their new or refreshed PCs is a critical process; failure is not an option. You can migrate each PC manually or you choose one of several ways to automate the process. Whichever migration method you choose you three items to be addressed – the transfer of users’ files, their settings, and managing Windows 10 Start and taskbar layouts.
+Moving users’ files and settings to their new or refreshed PCs is a critical process, failure is not an option. You can migrate each PC manually or you choose one of several ways to automate the process. Whichever migration method you choose you three items to be addressed – the transfer of users’ files, their settings, and managing Windows 10 Start and taskbar layouts.
 
 ![](media/step-4-user-files-and-settings-migration-media/step-4-user-files-and-settings-migration-media-1.png)
 
@@ -26,11 +26,13 @@ Moving users’ files and settings to their new or refreshed PCs is a critical p
 <td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-7.png" alt="Step 4" height="135" width="135" /></td>
 <td><p><strong>Step 4: User Files and Settings</strong></p>
 <p>When refreshing or replacing PCs, save time by automating user state backup and restore. New options for cloud file sync allow you to enforce per user sync of Desktop, Documents and Pictures folders to OneDrive for seamless file access from new Windows installs.</p></td>
-<td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-17.png" alt="Step 4" height="130" width="231" /></td>
+<td><a href="https://aka.ms/ddev4" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-17.png" alt="Step 4" height="130" width="231" /></a></td>
 </thead>
 </table>
+
 >[!NOTE]
 >While you can continue to use migration processes you have used in the past, with your shift to Office 365 ProPlus we recommend you use OneDrive ‘Known Folder Move’ (see below). To see the full desktop deployment process, visit the [Modern Desktop Deployment Center](https://aka.ms/mddhome).
+>
 
 One of the trickiest and often most manual tasks of a large-scale deployment is the transferring of your users' files and settings. In this article we will cover the options available to you to migrate users to new, refreshed and re-imaged PCs.
 

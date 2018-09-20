@@ -42,6 +42,7 @@
 #### [Step 2: Configure conditional access policy settings](infoprotect-configure-conditional-access-policy-settings.md)
 #### [Step 3: Configure classification for your environment](infoprotect-configure-classification.md)
 #### [Step 4: Configure increased security for Office 365](infoprotect-configure-increased-security-office-365.md)
+#### [Step 5: Configure privileged access management for Office 365](infoprotect-configure-privileged-access-management.md)
 #### [Information protection exit criteria](infoprotect-exit-criteria.md)
 ### [Deploy with existing infrastructure](deploy-with-existing-infrastructure.md)
 ## [Deploy workloads and scenarios](deploy-workloads.md)
@@ -120,7 +121,7 @@
 #### [Intune](../compliance/gdpr-dsr-Intune.md?toc=/microsoft-365/enterprise/toc.json)
 #### [Dynamics 365](../compliance/gdpr-dsr-Dynamics365.md?toc=/microsoft-365/enterprise/toc.json)
 #### [Visual Studio family](../compliance/gdpr-dsr-visual-studio-family.md?toc=/microsoft-365/enterprise/toc.json)
-#### [Visual Studio Team Services (VSTS)](../compliance/gdpr-dsr-vsts.md?toc=/microsoft-365/enterprise/toc.json)
+#### [Azure DevOps Services](../compliance/gdpr-dsr-vsts.md?toc=/microsoft-365/enterprise/toc.json)
 #### [Microsoft Support and Professional Services](../compliance/gdpr-dsr-prof-services.md?toc=/microsoft-365/enterprise/toc.json)
 
 ### [Breach notification](../compliance/gdpr-breach-notification.md?toc=/microsoft-365/enterprise/toc.json)
