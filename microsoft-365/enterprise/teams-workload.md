@@ -66,7 +66,7 @@ A list of Teams scenarios that address your organization’s needs for collabora
 
 In this phase, you plan for the technical aspects of a Teams deployment and start rolling out Teams to selected groups of users.
 
-## Prerequisites: Identity and device access configuration
+### Prerequisites: Identity and device access configuration
 
 To protect access to teams, ensure that you have configured [identity and device access policies](identity-access-policies.md) and the [recommended SharePoint Online access policies](sharepoint-file-access-policies.md).
 

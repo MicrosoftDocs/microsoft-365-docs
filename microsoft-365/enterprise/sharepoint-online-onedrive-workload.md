@@ -94,7 +94,7 @@ A list of SharePoint Online and OneDrive for Business scenarios that address you
 
 In this phase, you plan for the technical aspects of a SharePoint Online and OneDrive for Business deployment and start rolling then out to selected groups of users.
 
-## Prerequisites: Identity and device access configuration
+### Prerequisites: Identity and device access configuration
 
 To protect access to SharePoint Online sites, ensure that you have configured [identity and device access policies](identity-access-policies.md) and the [recommended SharePoint Online access policies](sharepoint-file-access-policies.md).
 

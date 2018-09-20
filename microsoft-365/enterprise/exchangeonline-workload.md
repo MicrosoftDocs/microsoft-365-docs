@@ -69,7 +69,7 @@ A list of Exchange Online scenarios that address your organization’s needs for
 
 In this phase, you plan for the technical aspects of an Exchange Online deployment and start rolling it out to selected groups of users.
 
-## Prerequisites: Identity and device access configuration
+### Prerequisites: Identity and device access configuration
 
 To protect access to Exchange Online mailboxes, ensure that you have configured [identity and device access policies](identity-access-policies.md) and the [recommended Exchange Online access policies](secure-email-recommended-policies.md).
 
