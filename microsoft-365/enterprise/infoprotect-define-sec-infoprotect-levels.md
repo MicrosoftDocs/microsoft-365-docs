@@ -29,7 +29,7 @@ Although you can define your own security levels and might already have some in 
 - **Sensitive:** This is additional protection for a subset of your data that must be protected beyond the baseline level. You can apply this increased protection to specific data sets in your Office 365 environment. Microsoft also recommends applying the sensitive security level to identities and devices that access sensitive data.
 - **Highly regulated:** This is the highest level of protection for organizations that typically have a very small amount of data that is highly classified, considered intellectual property or trade secrets, or data that must adhere to strict security regulations. Microsoft 365 Enterprise has capabilities to help organizations meet these high security requirements, including equivalent protection for identities and devices.
 
-For more information, see [Three tiers of protection](https://docs.microsoft.com/microsoft-365-enterprise/microsoft-365-policies-configurations#three-tiers-of-protection).
+For more information, see [Three tiers of protection](microsoft-365-policies-configurations.md#three-tiers-of-protection).
 
 The result is a determination of your security and information protection levels.
 

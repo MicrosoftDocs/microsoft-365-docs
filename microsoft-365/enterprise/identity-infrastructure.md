@@ -49,6 +49,13 @@ Use the following steps to plan and deploy your new identity infrastructure in t
 
 When you've completed these steps, go to the [exit criteria](identity-exit-criteria.md) for this phase to ensure that you meet the required and optional conditions for Microsoft 365 Enterprise.
 
+## Identity and device access recommendations
+
+Microsoft provides a set of recommendations for [identity and device access](microsoft-365-policies-configurations.md) to ensure a secure and productive workforce. For identity, use the recommendations and settings in the following articles along with the steps in this phase:
+
+- [Prerequisites](identity-access-prerequisites.md)
+- [Common identity and device access policies](identity-access-policies.md)
+
 ## How Microsoft does Microsoft 365 Enterprise
 
 Learn how IT experts at Microsoft planned for and deployed the identity capabilities of Microsoft 365 Enterprise with these resources:

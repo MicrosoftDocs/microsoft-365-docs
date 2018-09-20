@@ -66,6 +66,10 @@ A list of Teams scenarios that address your organization’s needs for collabora
 
 In this phase, you plan for the technical aspects of a Teams deployment and start rolling out Teams to selected groups of users.
 
+## Prerequisites: Identity and device access configuration
+
+To protect access to teams, ensure that you have configured [identity and device access policies](identity-access-policies.md) and the [recommended SharePoint Online access policies](sharepoint-file-access-policies.md).
+
 ### Step 1: Complete your technical planning
 
 Before you begin technical planning, determine whether you want to use FastTrack. If your organization has over 50 seats and is participating in an [eligible plan](https://technet.microsoft.com/library/dn783224.aspx), you can use [FastTrack for Microsoft 365](https://fasttrack.microsoft.com/microsoft365), available at no additional cost to guide you through planning, deployment and service adoption. Or, you can complete this work yourself using our FastTrack Onboarding Wizards, which are available from [FastTrack](https://fasttrack.microsoft.com/) once you sign in with your Office 365 account.
