@@ -16,7 +16,7 @@ description: Get links to the productivity workloads for Microsoft 365 Enterpris
 
 # Microsoft 365 Enterprise workloads and scenarios
 
-To realize the creativity and teamwork benefits of Microsoft 365 Enterprise, deploy these workloads and scenarios to operate on the top of your Microsoft 365 Enterprise foundation infrastructure:
+To realize the creativity and teamwork benefits of Microsoft 365 Enterprise, deploy these workloads and scenarios to operate on the top of your foundation infrastructure:
 
 - [Microsoft Teams](teams-workload.md)
 - [Exchange Online](exchangeonline-workload.md)

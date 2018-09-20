@@ -3,7 +3,7 @@ title: "Phase 1: Networking infrastructure for Microsoft 365 Enterprise"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/28/2018
+ms.date: 09/18/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -44,6 +44,12 @@ When you've completed these steps, go to the [exit criteria](networking-exit-cri
 ## How Microsoft does Microsoft 365 Enterprise
 
 Peek inside Microsoft and learn how the company prepared for and optimized the Microsoft network for the Office 365 cloud services with [Optimizing network performance for Microsoft Office 365](https://www.microsoft.com/itshowcase/Article/Content/631/Optimizing-network-performance-for-Microsoft-Office-365).
+
+## How Contoso did Microsoft 365 Enterprise
+
+See how the Contoso Corporation, a fictional but representative multi-national business, [optimized their network](contoso-networking.md) for Microsoft 365 cloud services.
+
+![](./media/contoso-overview/contoso-icon.png)
 
 ## Next step
 
