@@ -3,7 +3,7 @@ title: "Lightweight base configuration"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/27/2018
+ms.date: 09/18/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -199,20 +199,11 @@ You are now ready to experiment with additional features of [Microsoft 365 Enter
   
 ## Next steps
 
-Explore identity features and capabilities of Microsoft 365 Enterprise with these articles:
+Explore these additional sets of Test Lab Guides:
   
-- [Password hash synchronization](password-hash-sync-m365-ent-test-environment.md)
-- [Pass-through authentication](pass-through-auth-m365-ent-test-environment.md)
-- [Azure AD Seamless Single Sign-on](single-sign-on-m365-ent-test-environment.md)
-- [Multi-factor authentication](multi-factor-authentication-microsoft-365-test-environment.md)
-- [Protect global administrator accounts](protect-global-administrator-accounts-microsoft-365-test-environment.md)
-- [Automatic licensing and group membership](automate-licenses-group-membership-microsoft-365-test-environment.md)
-- [Azure AD Identity Protection](azure-ad-identity-protection-microsoft-365-test-environment.md)
-
-Explore mobile device management features and capabilities of Microsoft 365 Enterprise with these articles:
-
-- [MAM policies for your Microsoft 365 Enterprise test environment](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
-- [Enroll iOS and Android devices in your Microsoft 365 Enterprise test environment](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
+- [Identity](m365-enterprise-test-lab-guides.md#identity)
+- [Mobile device management](m365-enterprise-test-lab-guides.md#mobile-device-management)
+- [Information protection](m365-enterprise-test-lab-guides.md#information-protection)
    
 
 ## See also

@@ -3,7 +3,7 @@ title: Microsoft 365 Enterprise overview
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/16/2018
+ms.date: 09/18/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -19,7 +19,7 @@ Microsoft 365 Enterprise is a complete, intelligent solution that empowers every
 
 Although designed for large organizations, Microsoft 365 Enterprise can also be used for medium-sized and small businesses that need the most advanced security and productivity capabilities. 
 
-## Components of Microsoft 365 Enterprise
+## Components
 
 Microsoft 365 Enterprise consists of:
 
@@ -30,7 +30,7 @@ Microsoft 365 Enterprise consists of:
 | Enterprise Mobility + Security (EMS) | Includes Microsoft Intune, which is a cloud-based enterprise mobility management (EMM) service that helps enable your workforce to be productive while keeping your corporate data protected. |
 |||
 
-## Microsoft 365 Enterprise plans
+## Plans
 
 Microsoft 365 Enterprise is available in three plans.
 
@@ -43,7 +43,21 @@ Microsoft 365 Enterprise is available in three plans.
 
 For more information, see [Features and capabilities for each plan](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans).
 
-## Deploying Microsoft 365 Enterprise
+## At-a-glance
+
+The [Microsoft 365 Enterprise poster](http://aka.ms/m365eposter) is a central location for you to view:
+
+- The products and features of Microsoft 365 Enterprise and how they map to its value pillars
+- Microsoft 365 Enterprise plans and which components they contain 
+- The key components of the Modern Workplace, which Microsoft 365 Enterprise enables
+- The key business value scenarios of Microsoft 365 Enterprise and which services and products make them happen
+- The adoption roadmap that highlights the Microsoft 365 Enterprise [Deployment Guide](deploy-microsoft-365-enterprise.md)
+
+![](./media/m365-poster/m365e-poster.png)
+
+To download a copy of the poster, click [here](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/Media/Microsoft365Enterprise.pdf).
+
+## Deploying
 
 There are two ways to deploy the products, features, and components of Microsoft 365 Enterprise:
 
@@ -55,20 +69,19 @@ There are two ways to deploy the products, features, and components of Microsoft
 
    The [Microsoft 365 Enterprise deployment guide](deploy-microsoft-365-enterprise.md) takes you step by step through building out the infrastructure and productivity workloads. 
 
-For more deployment information:
+For more deployment information, see how:
 
-- [See how customers use Microsoft 365 Enterprise](deploy-microsoft-365-enterprise.md#how-customers-use-microsoft-365-enterprise)
-- [See how Microsoft IT uses Microsoft 365 Enterprise](deploy-microsoft-365-enterprise.md#how-microsoft-uses-microsoft-365-enterprise)
+- [Customers](deploy-microsoft-365-enterprise.md#how-customers-use-microsoft-365-enterprise)  use Microsoft 365 Enterprise.
+- [Microsoft](deploy-microsoft-365-enterprise.md#how-microsoft-uses-microsoft-365-enterprise) uses Microsoft 365 Enterprise.
+- [The Contoso Corporation](contoso-overview.md) has deployed Microsoft 365 Enterprise.
 
 ## Identity and device access configurations
 
 Although there is no single best recommendation for all customer environments, the [identity and device access configurations](microsoft-365-policies-configurations.md) documentation describes how to apply policies and configuration within the Microsoft cloud to ensure that your employees are both secure and productive.
 
-
 ## Next step
 
 Start your [Microsoft 365 Enterprise deployment journey](deploy-microsoft-365-enterprise.md).
-
 
 ## See also
 

@@ -3,7 +3,7 @@ title: "Phase 2: Identity"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/28/2018
+ms.date: 09/18/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -57,6 +57,13 @@ Learn how IT experts at Microsoft planned for and deployed the identity capabili
 
 - [Managing user identities and secure access at Microsoft](https://www.microsoft.com/itshowcase/Article/Content/931/Managing-user-identities-and-secure-access-at-Microsoft)
 - [Using Azure AD Privileged Identity Management for elevated access](https://www.microsoft.com/itshowcase/Article/Content/887/Using-Azure-AD-Privileged-Identity-Management-for-elevated-access)
+
+## How Contoso did Microsoft 365 Enterprise
+
+See how the Contoso Corporation, a fictional but representative multi-national business, [deployed a hybrid identity infrastructure](contoso-identity.md) for Microsoft 365 cloud services.
+
+![](./media/contoso-overview/contoso-icon.png)
+
 
 ## Next step
 
