@@ -1,5 +1,5 @@
 ---
-title: "Step 5: Configure privileged access management for Office 365"
+title: "Step 4: Configure privileged access management for Office 365"
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -15,7 +15,7 @@ ms.custom:
 description: Understand and configure privileged access management for Office 365.
 ---
 
-# Step 5: Configure privileged access management for Office 365
+# Step 4: Configure privileged access management for Office 365
 
 *This step is optional and applies only to the E5 and Advanced Compliance versions of Microsoft 365 Enterprise*
 
