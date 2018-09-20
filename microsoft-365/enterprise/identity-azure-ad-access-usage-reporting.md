@@ -21,7 +21,7 @@ description: Understand and configure Azure AD access and usage reporting.
 
 ![](./media/deploy-foundation-infrastructure/identity_icon-small.png)
 
-In Step 13, you'll review audit logs and sign-in activity using Azure AD reporting. Two types of reports are available.
+In this step, you'll review audit logs and sign-in activity using Azure AD reporting. Two types of reports are available.
 
 The **Audit logs activity report** records the history of every task performed in your Azure AD tenant. This report answers questions like:
 

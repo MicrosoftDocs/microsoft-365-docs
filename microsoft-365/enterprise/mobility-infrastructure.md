@@ -149,6 +149,13 @@ Intune is a powerful service, and includes many features. Here are some other ta
 - Monitor [apps](https://docs.microsoft.com/intune/apps-monitor), monitor [device compliance](https://docs.microsoft.com/intune/compliance-policy-monitor), monitor [configuration profiles](https://docs.microsoft.com/intune/compliance-policy-monitor), and more telemetry using the audit logs. You can also connect to the [Intune Data Warehouse](https://docs.microsoft.com/intune/reports-nav-create-intune-reports) and use Power BI for even more reporting needs.
 
 
+## Identity and device access recommendations
+
+Microsoft provides a set of recommendations for [identity and device access](microsoft-365-policies-configurations.md) to ensure a secure and productive workforce. For device access, use the recommendations and settings in the following articles along with the steps in this phase:
+
+- [Prerequisites](identity-access-prerequisites.md)
+- [Common identity and device access policies](identity-access-policies.md)
+
 ## How Microsoft does Microsoft 365 Enterprise
 
 Learn how IT experts at Microsoft planned for and deployed EMS and device management with these resources:

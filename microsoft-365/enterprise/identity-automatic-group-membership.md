@@ -1,5 +1,5 @@
 ---
-title: "Step 12: Set up dynamic group membership"
+title: "Step 15: Set up dynamic group membership"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -15,13 +15,13 @@ ms.custom:
 description: Understand and configure automatic group membership based on account attributes.
 ---
 
-# Step 12: Set up dynamic group membership
+# Step 15: Set up dynamic group membership
 
 *This step is optional and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
 
 ![](./media/deploy-foundation-infrastructure/identity_icon-small.png)
 
-In Step 12, you'll create a series of rules that automatically add or remove user accounts as members of an Azure AD group. This is known as *dynamic group membership*. The rules are based on user account attributes, such as Department or Country.
+In this step, you'll create a series of rules that automatically add or remove user accounts as members of an Azure AD group. This is known as *dynamic group membership*. The rules are based on user account attributes, such as Department or Country.
 
 Here’s how the rules are applied:
 
@@ -44,10 +44,8 @@ The results of this step are:
 |![Test Lab Guides for the Microsoft cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Test Lab Guide: Automate licenses and group membership](automate-licenses-group-membership-microsoft-365-test-environment.md) |
 |||
 
-As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria.md#crit-identity-step12) for this step.
+As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria.md#crit-identity-dyn-groups) for this step.
 
 ## Next step
 
-|||
-|:-------|:-----|
-|![](./media/stepnumbers/Step13.png)| [Monitor tenant and sign-in activity](identity-azure-ad-access-usage-reporting.md) |
+[Identity infrastructure exit criteria](identity-exit-criteria.md)
