@@ -21,7 +21,7 @@ description: Understand and configure security and information protection levels
 
 ![](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
-In Step 1, you'll define the levels of security and protection for your organization. For example, your sales department might only require a low security level, However, your research department and its highly valuable intellectual property might require a high security level that encrypts files and limits access to only research staff.
+In this step, you'll define the levels of security and protection for your organization. For example, your sales department might only require a low security level, However, your research department and its highly valuable intellectual property might require a high security level that encrypts files and limits access to only research staff.
 
 Although you can define your own security levels and might already have some in place, Microsoft recommendations that you develop a plan to use at least three different levels of security and protection that can be applied. Here is a list to get you started: 
 
@@ -39,4 +39,4 @@ As an interim checkpoint, see the [exit criteria](infoprotect-exit-criteria.md#c
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step2.png)|[Configure conditional access policies](infoprotect-configure-conditional-access-policy-settings.md)|
+|![](./media/stepnumbers/Step2.png)|[Configure classification for your environment](infoprotect-configure-classification.md)|
