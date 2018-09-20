@@ -38,7 +38,7 @@ The elements of Contoso's network that links their offices across the globe are 
 
   Contoso owns the contoso.com public domain name. The Contoso public web site for ordering products is a set of servers in an Internet-connected datacenter in the Paris campus. Contoso uses a /24 public IP address range on the Internet.
 
-Figure 2 shows Contoso's networking infrastructure and its connections to the Internet.
+Figure 1 shows Contoso's networking infrastructure and its connections to the Internet.
 
 ![](./media/contoso-networking/contoso-networking-fig1.png)
  
