@@ -20,7 +20,7 @@ To realize the creativity and teamwork benefits of Microsoft 365 Enterprise, dep
 
 - [Microsoft Teams](teams-workload.md)
 - [Exchange Online](exchangeonline-workload.md)
-- [SharePoint Online and OneDrive for Business](sharepoint-online-onedrive-workload.md)
+- [SharePoint Online](sharepoint-online-onedrive-workload.md)
 - [Migration to Microsoft 365 Enterprise](migration-microsoft-365-enterprise-workload.md)
 - [Microsoft Teams and SharePoint Online sites for highly regulated data](teams-sharepoint-online-sites-highly-regulated-data.md)
 
