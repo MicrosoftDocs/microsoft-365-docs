@@ -1,5 +1,5 @@
 ---
-title: "Step 7: Set up multi-factor authentication"
+title: "Step 5: Set up multi-factor authentication"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -15,13 +15,13 @@ ms.custom:
 description: Understand and configure multi-factor authentication for user accounts.
 ---
 
-# Step 7: Set up multi-factor authentication
+# Step 5: Set up multi-factor authentication
 
 *This step is optional and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
 
 ![](./media/deploy-foundation-infrastructure/identity_icon-small.png)
 
-In Step 7, you'll set up multi-factor authentication (MFA) to add a second layer of security to user sign-ins and transactions. MFA requires an additional verification method after users have correctly entered their password. Without MFA, the password is the only verification method. The problem with passwords is that many of them are easily guessed by an attacker or unknowingly shared with untrusted parties.
+In this step, you'll set up multi-factor authentication (MFA) to add a second layer of security to user sign-ins and transactions. MFA requires an additional verification method after users have correctly entered their password. Without MFA, the password is the only verification method. The problem with passwords is that many of them are easily guessed by an attacker or unknowingly shared with untrusted parties.
 
 With MFA, the second layer of security can be:
 
@@ -47,11 +47,11 @@ To configure multifactor authentication, [Set up multi-factor authentication for
 |![Test Lab Guides for the Microsoft cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Test Lab Guide: Multi-factor authentication](multi-factor-authentication-microsoft-365-test-environment.md) |
 |||
 
-As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria.md#crit-identity-step7) for this step.
+As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria.md#crit-identity-mfa) for this step.
 
 ## Next step
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step8.png)| [Simplify user sign-in](identity-single-sign-on.md) |
+|![](./media/stepnumbers/Step6.png)| [Protect against credential compromise](identity-azure-ad-identity-protection.md) |
 

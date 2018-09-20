@@ -21,7 +21,7 @@ description: Ensure that your configuration meets Microsoft 365 Enterprise crite
 
 Before you move on to Phase 3, make sure that your identity infrastructure meets these conditions. Also see [Prerequisites](https://docs.microsoft.com/microsoft-365-enterprise/identity-access-policies#prerequisites) for additional recommendations on identity infrastructure.
 
-<a name="crit-identity-step1"></a>
+<a name="crit-identity-user-groups"></a>
 ## Required: All users, groups, and group memberships have been created
 
 You've created user accounts and groups so that:
@@ -31,7 +31,7 @@ You've created user accounts and groups so that:
 
 If needed, [Step 1](identity-plan-users-groups.md) can help you meet this requirement.
 
-<a name="crit-identity-step2"></a>
+<a name="crit-identity-sync"></a>
 ## Required: Users and groups are synchronized with Azure AD
 
 If you have an existing on-premises identity provider, such as Windows Server Active Directory (AD), you have used Azure AD Connect to synchronize user accounts and groups from your on-premises identity provider to your Azure AD tenant.
@@ -56,7 +56,7 @@ To verify that directory synchronization is working correctly, do the following:
 2.	Wait for the synchronization time.
 3.	Check your Azure AD tenant to verify that the new test group name appears.
 
-<a name="crit-identity-step5"></a>
+<a name="crit-identity-global-admin"></a>
 ## Required: Your global administrator accounts are protected 
 
 You've [protected your Office 365 global administrator accounts](https://support.office.com/article/Protect-your-Office-365-global-administrator-accounts-6b4ded77-ac8d-42ed-8606-c014fd947560) to avoid compromising credentials that can lead to breaches of an Office 365 subscription.
@@ -78,7 +78,7 @@ Use these steps to verify that you've protected your global administrator accoun
 > [!Note]
 > See [Connect to Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell) for instructions on installing the Azure AD V2 PowerShell module and signing in to Office 365.
 
-<a name="crit-identity-step3"></a>
+<a name="crit-identity-custom-sign-in"></a>
 ## Optional: The Office 365 sign-in screen is personalized for your organization
 
 You have used [Add company branding to your sign-in and Access Panel pages](http://aka.ms/aadpaddbranding) to add your organization’s branding to the Office 365 sign-in page.
@@ -91,7 +91,7 @@ If needed, [Step 3](identity-customize-office-365-sign-in.md) can help you with 
 
 Sign in to the Office 365 portal with your user account name and multi-factor authentication. You should see your custom branding elements on the sign-in page.
 
-<a name="crit-identity-step7"></a>
+<a name="crit-identity-mfa"></a>
 ## Optional: Multi-factor authentication is enabled for your users
 
 You used [Plan for multi-factor authentication for Office 365 Deployments](https://support.office.com/article/Plan-for-multifactor-authentication-for-Office-365-Deployments-043807b2-21db-4d5c-b430-c8a6dee0e6ba) and [Set up multi-factor authentication for Office 365 users](https://support.office.com/article/Set-up-multi-factor-authentication-for-Office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6) to enable multifactor authentication (MFA) for your user accounts.
@@ -108,7 +108,7 @@ If needed, [Step 7](identity-multi-factor-authentication.md) can help you with t
 4.	Verify that MFA prompts you for the additional verification information and results in a successful authentication. 
 5.	Delete the test user account.
 
-<a name="crit-identity-step4"></a>
+<a name="crit-identity-sync-health"></a>
 ## Optional: Directory synchronization is monitored
 
 You've used [Azure AD Connect Health with sync](https://docs.microsoft.com/azure/active-directory/connect-health/active-directory-aadconnect-health-sync) (for password synchronization) or [Using Azure AD Connect Health with AD FS](https://docs.microsoft.com/azure/active-directory/connect-health/active-directory-aadconnect-health-adfs) (for federated authentication) and have deployed Azure AD Connect Health, which involves:
@@ -123,23 +123,7 @@ If needed, [Step 4](identity-azure-ad-connect-health.md) can help you with this 
 ### How to test
 The Azure AD Connect Health portal shows the current and correct state of your on-premises identity servers and the ongoing synchronization.
 
-<a name="crit-identity-step16"></a>
-## Optional: Remote users have secure access
-
-You've used the information at [How to provide secure remote access to on-premises apps](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started) to deploy the Azure AD Application Proxy, which involves:
-
-- Configuring an instance of the Application Proxy Service in Azure to transfer web traffic between users on the Internet and a server running the Application Proxy Connector.
-- Configuring the Application Proxy Connector on an Internet-facing server to transfer web traffic between Application Proxy Service in Azure and on-premises web-based applications.
-
-If you skip this option, your remote or roaming employees and vendors, contractor, and partners will not be able to use Azure AD Application Proxy to access on-premises, web-based applications. They must use a more traditional remote access method such as virtual private networks.
-
-If needed, [Step 16](identity-azure-ad-application-proxy.md) can help you with this option.
-
-### How to test
-
-A user can remotely access on-premises web-based applications using the Azure AD Application Proxy and their Azure AD user credentials.
-
-<a name="crit-identity-step10"></a>
+<a name="crit-identity-pw-reset"></a>
 ## Optional: Users can reset their own passwords
 
 You've used [Azure AD self-service password reset rapid deployment](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-getting-started) to configure password reset for your users.
@@ -155,7 +139,7 @@ If needed, [Step 10](identity-password-reset.md) can help you with this option.
 3. Sign out and then sign in to the test user account using the reset password.
 4. Delete the test user account.
 
-<a name="crit-identity-step9"></a>
+<a name="crit-identity-pw-writeback"></a>
 ## Optional: Password writeback is enabled for your users
 
 You've used the instructions in [Azure AD SSPR with password writeback](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-getting-started) to enable password writeback for the Azure AD tenant of your Microsoft 365 Enterprise subscription.
@@ -178,7 +162,7 @@ You test password writeback by changing your password in Office 365. You should 
 4. Type the current password, type a new password, and then confirm it.
 5. Sign out of the Office 365 portal and the remote computer and then sign in to the computer using the test user account and its new password. This proves that you were able to change the password of an on-premises Windows Server AD user account using the Azure AD tenant.
 
-<a name="crit-identity-step8"></a>
+<a name="crit-identity-sso"></a>
 ## Optional: Users can sign in using single sign-on
 
 You enabled [Azure AD Connect: Seamless Single Sign-On](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-sso-quick-start) for your organization to simplify how users sign in to cloud-based applications, such as Office 365.
@@ -188,7 +172,7 @@ If you skip this option, your users might be prompted to provide credentials whe
 If needed, [Step 8](identity-single-sign-on.md) can help you with this option.
 
 
-<a name="crit-identity-step11"></a>
+<a name="crit-identity-group-license"></a>
 ## Optional: Group-based licensing to automatically assign and remove licenses to user accounts based on group membership
 
 You [enabled group-based licensing](https://docs.microsoft.com/azure/active-directory/active-directory-licensing-group-assignment-azure-portal) for the appropriate Azure AD security groups so that licenses for both Office 365 and EMS are automatically assigned or removed.
@@ -209,7 +193,7 @@ If needed, [Step 11](identity-group-based-licensing.md) can help you with this o
 5. Examine the properties of the user account to ensure that it no longer has the Office 365 and EMS licenses assigned.
 6. Delete the test security group and the test user account.
 
-<a name="crit-identity-step12"></a>
+<a name="crit-identity-dyn-groups"></a>
 ## Optional: Dynamic group membership settings automatically add user accounts to groups based on user account attributes
 
 You've determined the set of Azure AD dynamic groups and used the instructions in [Attribute-based dynamic group membership in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal) to create the groups and the rules that determine the set of user account attributes and values for group membership.
@@ -233,7 +217,7 @@ If needed, [Step 12](identity-automatic-group-membership.md) can help you with t
 5. Examine the properties of the user account to ensure that it is no longer a member of the test dynamic group.
 6. Delete the test dynamic group and the test user account.
 
-<a name="crit-identity-step14"></a>
+<a name="crit-identity-self-service-groups"></a>
 ## Optional: Self-service group management is enabled for specific Azure AD security and Office 365 groups
 
 You've determined which groups are appropriate for self-service management, instructed their owners on group management workflow and responsibilities, and [set up self-service management in Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-accessmanagement-self-service-group-management) for those groups.
@@ -251,7 +235,7 @@ If needed, [Step 14](identity-self-service-group-management.md) can help you wit
 6.	Use the Azure portal to add members to the test security group.
 7.	Delete the test security group and the test user account.
 
-<a name="crit-identity-step15"></a>
+<a name="crit-identity-ident-prot"></a>
 ## Optional: Azure AD Identity Protection is enabled to protect against credential compromise
 
 You've enabled Azure AD Identity Protection to:
@@ -264,7 +248,7 @@ If you skip this option, you won’t be able to detect or automatically thwart c
 
 If needed, [Step 15](identity-azure-ad-identity-protection.md) can help you with this option.
 
-<a name="crit-identity-step6"></a>
+<a name="crit-identity-pim"></a>
 ## Optional: You have set up Privileged Identity Management to support on-demand assignment of the global administrator role
 
 You've used the instructions in [Configure Azure AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure) to enable PIM in your Azure AD tenant and configured your global administrator accounts as eligible admins.

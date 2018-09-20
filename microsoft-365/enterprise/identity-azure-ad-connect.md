@@ -1,5 +1,5 @@
 ---
-title: "Step 2: Synchronize identities"
+title: "Step 7: Synchronize identities"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -15,13 +15,13 @@ ms.custom:
 description: Understand identity options and configure Azure AD Connect to synchronize your on-premises Windows Server AD with Azure AD.
 ---
 
-# Step 2: Synchronize identities
+# Step 7: Synchronize identities
 
 *This step is required for hybrid environments and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
 
 ![](./media/deploy-foundation-infrastructure/identity_icon-small.png)
 
-In Step 2, you'll synchronize your on-premises Windows Server Active Directory (AD) with the Azure Active Directory (AD) tenant used by your Office 365 and Enterprise Mobility + Security (EMS) subscriptions.
+In this step, you'll synchronize your on-premises Windows Server Active Directory (AD) with the Azure Active Directory (AD) tenant used by your Office 365 and Enterprise Mobility + Security (EMS) subscriptions.
 
 Azure AD Connect is the supported Microsoft tool that guides you through synchronizing only the identities you really need from single or multi-forest Windows Server AD environments to your Azure AD tenant.
 
@@ -50,11 +50,11 @@ The results of this step are:
 |![Test Lab Guides for the Microsoft cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Test Lab Guide: Password hash synchronization](password-hash-sync-m365-ent-test-environment.md)<br> [Test Lab Guide: Pass-through authentication](pass-through-auth-m365-ent-test-environment.md) |
 |||
 
-As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria.md#crit-identity-step2) corresponding to this step.
+As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria.md#crit-identity-sync) corresponding to this step.
 
 ## Next step
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step3.png)| [Customize the Office 365 sign-in page](identity-customize-office-365-sign-in.md) |
+|![](./media/stepnumbers/Step8.png)| [Monitor synchronization health](identity-azure-ad-connect-health.md) |
 

@@ -3,7 +3,7 @@ title: "Step 3: Configure classification for your environment"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/13/2018
+ms.date: 09/19/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -59,13 +59,10 @@ For more information, see the [library of Azure Information Protection documenta
 
 For an example classification scheme that includes personal data for GDPR, see [Architect a classification schema for personal data](https://docs.microsoft.com/office365/enterprise/architect-a-classification-schema-for-personal-data).
 
-## Results
-
-You've determined:
-
-- Sensitive data types
-- Office 365 labels
-- Azure Information Protection labels and protection rules and conditions
+|||
+|:-------|:-----|
+|![Test Lab Guides for the Microsoft cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Test Lab Guide: Data classification](data-classification-microsoft-365-enterprise-dev-test-environment.md) |
+|||
 
 As an interim checkpoint, see the [exit criteria](infoprotect-exit-criteria.md#crit-infoprotect-step3) corresponding to this step.
 
