@@ -66,7 +66,7 @@
 ### [Mobile device management]()
 #### [Enroll iOS and Android devices](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
 #### [MAM policies](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
-### Information protection
+### [Information protection]()
 #### [Increased Office 365 security](increased-o365-security-microsoft-365-enterprise-dev-test-environment.md)
 #### [Privileged access management](privileged-access-microsoft-365-enterprise-dev-test-environment.md)
 ## [Contoso case study](contoso-case-study.md)
