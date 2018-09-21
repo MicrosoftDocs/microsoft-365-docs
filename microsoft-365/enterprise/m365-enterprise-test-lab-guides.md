@@ -3,7 +3,7 @@ title: "Microsoft 365 Enterprise Test Lab Guides"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/16/2018
+ms.date: 09/19/2018
 ms.audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
@@ -78,11 +78,11 @@ To demonstrate identity-related features and capabilities, see:
 
 To demonstrate mobile device management-related features and capabilities, see:
 
-- [MAM policies for your Microsoft 365 Enterprise test environment](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
+- [MAM policies](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
     
    Create user groups and mobile application management (MAM) policies for iOS and Android devices.
     
-- [Enroll iOS and Android devices in your Microsoft 365 Enterprise test environment](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
+- [Enroll iOS and Android devices](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
    
    Enroll iOS or Android devices and manage them remotely.
 
@@ -91,9 +91,13 @@ To demonstrate mobile device management-related features and capabilities, see:
 
 To demonstrate information protection-related features and capabilities, see:
 
-- [Increased Office 365 security for your Microsoft 365 Enterprise test environment](increased-o365-security-microsoft-365-enterprise-dev-test-environment.md)
+- [Increased Office 365 security](increased-o365-security-microsoft-365-enterprise-dev-test-environment.md)
     
    Configure settings for increased Office 365 security and investigate built-in security tools.
+  
+- [Data classification](data-classification-microsoft-365-enterprise-dev-test-environment.md)
+    
+   Configure and apply Office 365 labels to a document in a SharePoint Online team site.
     
 - [Privileged access management for your Microsoft 365 Enterprise test environment](privileged-access-microsoft-365-enterprise-dev-test-environment.md)
     

@@ -1,9 +1,9 @@
 ---
-title: "Step 3: Configure classification for your environment"
+title: "Step 2: Configure classification for your environment"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/13/2018
+ms.date: 09/19/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,13 +15,13 @@ ms.custom:
 description: Understand and configure various ways to classify data in your organization.
 ---
 
-# Step 3: Configure classification for your environment
+# Step 2: Configure classification for your environment
 
 *This step is optional and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
 
 ![](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
-In Step 3, you work with your legal and compliance teams to define a classification scheme for your organization’s data.
+In this step, you work with your legal and compliance teams to define a classification scheme for your organization’s data.
 
 ## Microsoft classifications
 
@@ -59,13 +59,10 @@ For more information, see the [library of Azure Information Protection documenta
 
 For an example classification scheme that includes personal data for GDPR, see [Architect a classification schema for personal data](https://docs.microsoft.com/office365/enterprise/architect-a-classification-schema-for-personal-data).
 
-## Results
-
-You've determined:
-
-- Sensitive data types
-- Office 365 labels
-- Azure Information Protection labels and protection rules and conditions
+|||
+|:-------|:-----|
+|![Test Lab Guides for the Microsoft cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Test Lab Guide: Data classification](data-classification-microsoft-365-enterprise-dev-test-environment.md) |
+|||
 
 As an interim checkpoint, see the [exit criteria](infoprotect-exit-criteria.md#crit-infoprotect-step3) corresponding to this step.
 
@@ -73,5 +70,5 @@ As an interim checkpoint, see the [exit criteria](infoprotect-exit-criteria.md#c
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step4.png)|[Configure increased security for Office 365](infoprotect-configure-increased-security-office-365.md)|
+|![](./media/stepnumbers/Step3.png)|[Configure increased security for Office 365](infoprotect-configure-increased-security-office-365.md)|
 
