@@ -3,6 +3,7 @@ title: "Privileged access management for your Microsoft 365 Enterprise test envi
 ms.author: robmazz
 author: robmazz
 manager: laurawi
+ms.date: 09/21/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions

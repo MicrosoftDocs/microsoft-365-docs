@@ -106,6 +106,8 @@ Office 365 Cloud App Security, previously known as Office 365 Advanced Security 
 1. Create a new tab in your browser and go to **securescore.office.com**.
 2. On the **Dashboard tab**, note your current Secure Score and the list of actions in the queue to increase your score.
 
+See the [Configure increased security for Office 365](increased-o365-security-microsoft-365-enterprise-dev-test-environment.md) step in the **Information protection** phase for information and links to configure these settings in production.
+
 ## Next step
 
 Explore additional [information protection](m365-enterprise-test-lab-guides.md#information-protection) features and capabilities in your test environment.
