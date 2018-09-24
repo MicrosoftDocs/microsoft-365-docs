@@ -31,6 +31,8 @@ Here’s a summary of how the change process is shared between Microsoft and cus
 
 
 
+
+
 ### Change types
 
 There are several types of changes that are made to the service on a regular basis. The communication channel for those changes, and the actions that customers are responsible for varies.
