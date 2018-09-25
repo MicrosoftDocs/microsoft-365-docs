@@ -5,7 +5,7 @@ keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jdeckerms
 ms.localizationpriority: medium
-ms.date: 06/06/2018
+ms.date: 09/25/2018
 ---
 
 # Order Microsoft Managed Desktop devices
