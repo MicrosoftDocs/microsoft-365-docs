@@ -37,7 +37,7 @@ You've worked with your legal and compliance teams to develop an appropriate cla
 If needed, [Step 2](../infoprotect-configure-classification.md) can help you meet this requirement. 
 
 <a name="crit-infoprotect-step5"></a>
-## Optional: Configure privileged access management in Office 365
+### Optional: Configure privileged access management in Office 365
 
 You've used the information in the [Configure privileged access management in Office 365](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration) topic to enable privileged access  and create one or more privileged access policies in your Office 365 organization. You've configured these policies and just-in-time access is enabled for access to sensitive data or access to critical configuration settings.
 
