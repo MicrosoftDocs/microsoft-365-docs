@@ -67,15 +67,15 @@ Figure 3 shows a set of servers in the Contoso headquarters running the Authenti
 
 Contoso chose PTA to fulfill its security requirement that all authentication attempts be evaluated for immediate changes to user account states, password policies, and sign-in hours made to the on-premises Windows Server AD forest.
 
-### PWS
+### PHS
 
-PWS synchronizes the on-premises Windows Server AD forest with the Azure AD tenant of their Microsoft 365 Enterprise subscription, copying user and group accounts and a hashed version of user account passwords. Contoso decided on PWS to provide an alternate method of authentication directly with the Azure AD tenant in the event that PTA is not available.
+PHS synchronizes the on-premises Windows Server AD forest with the Azure AD tenant of their Microsoft 365 Enterprise subscription, copying user and group accounts and a hashed version of user account passwords. Contoso decided on PHS to provide an alternate method of authentication directly with the Azure AD tenant in the event that PTA is not available.
 
 To perform the ongoing directory synchronization, Contoso has deployed the Azure AD Connect tool on a server in its Paris datacenter. Figure 4 shows the server running Azure AD Connect polling the Contoso Windows Server AD forest for changes and then synchronizing those changes with the Azure AD tenant.
 
 ![](./media/contoso-identity/contoso-identity-fig4.png)
  
-**Figure 4: Contoso's PWH directory synchronization infrastructure**
+**Figure 4: Contoso's PHS directory synchronization infrastructure**
 
 ## Conditional access policies for identity
 

@@ -48,7 +48,7 @@ Contoso used the following steps to ready their security for their deployment of
 
 In accordance with security best practices and Microsoft 365 Enterprise deployment requirements, Contoso's security administrators and IT department have deployed many security features and capabilities, as described in the following sections.
 
-### Identity & access management 
+## Identity & access management 
 
 - Dedicated global administrator accounts with MFA and PIM
 
@@ -79,7 +79,7 @@ In accordance with security best practices and Microsoft 365 Enterprise deployme
 
   To block targeted attacks and malware running in the operating system with administrative privileges, Contoso has enabled [Windows Defender Credential Guard](https://docs.microsoft.com/windows/security/identity-protection/credential-guard/credential-guard) through Windows Server AD group policy.
 
-### Threat protection
+## Threat protection
 
 - Protection from malware with Windows Defender Antivirus
 
@@ -99,7 +99,7 @@ In accordance with security best practices and Microsoft 365 Enterprise deployme
 
   Contoso is using [Advanced Threat Analytics (ATA)](https://docs.microsoft.com/advanced-threat-analytics/what-is-ata) to protect itself from advanced targeted attacks.  ATA automatically analyzes, learns, and identifies normal and abnormal entity (user, devices, and resources) behavior. 
 
-### Information protection
+## Information protection
 
 - Protect sensitive and highly regulated digital assets with Azure Information Protection
 
@@ -125,7 +125,7 @@ In accordance with security best practices and Microsoft 365 Enterprise deployme
 
   As part of the Enterprise Management + Security (EMS) suite, Contoso uses [Microsoft Intune](https://docs.microsoft.com/intune/introduction-intune) to enroll, manage, and configure access to mobile devices and the apps that run on them. Device-based conditional access policies also require approved apps and compliant PCs and mobile devices.
 
-### Security management
+## Security management
 
 - Central security dashboard for IT with Azure Security Center
 
