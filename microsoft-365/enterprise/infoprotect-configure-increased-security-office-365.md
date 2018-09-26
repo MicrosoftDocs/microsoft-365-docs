@@ -1,5 +1,5 @@
 ---
-title: "Step 4: Configure increased security for Office 365"
+title: "Step 3: Configure increased security for Office 365"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -15,7 +15,7 @@ ms.custom:
 description: Understand and configure increased security for Office 365, including Office 365 ATP.
 ---
 
-# Step 4: Configure increased security for Office 365
+# Step 3: Configure increased security for Office 365
 
 *This step is required and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
 
@@ -60,4 +60,9 @@ As an interim checkpoint, see the [exit criteria](infoprotect-exit-criteria.md#c
 
 ## Next step
 
-[Information protection infrastructure exit criteria](infoprotect-exit-criteria.md)
+
+|||
+|:-------|:-----|
+|![](./media/stepnumbers/Step4.png)|[Configure privileged access management](infoprotect-configure-privileged-access-management.md)|
+
+

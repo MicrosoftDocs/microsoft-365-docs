@@ -3,7 +3,7 @@ title: "Phase 4: Office 365 ProPlus"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/15/2018
+ms.date: 09/18/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -41,19 +41,13 @@ Office 365 ProPlus enables these strategic business scenarios for Microsoft 365 
 - Protect your information and reduce the risk of data loss
 - Get current and stay current on your desktop software and devices while reducing security risks and maximizing IT efficiency
 
-For more information, see the [Discover Value tool](https://online.valuediscoveryworkshop.com/). 
+For more information, see the [Digital transformation using Microsoft 365](http://transform.microsoft.com). 
+
+If you already have Office 365 ProPlus deployed, please see the [exit criteria](office365proplus-exit-criteria.md) for this phase to make sure that it meets the required conditions for Microsoft 365 Enterprise.
 
 >[!Note]
->If you already have Office 365 ProPlus deployed, please see the [exit criteria](office365proplus-exit-criteria.md) for this phase to make sure that it meets the required conditions for Microsoft 365 Enterprise.
+>To deploy both Windows 10 Enterprise and Office 365 ProPlus together and shift to a [modern desktop](https://www.microsoft.com/microsoft-365/modern-desktop), see the [Modern Desktop Deployment Center](http://aka.ms/howtoshift).
 >
-
-## How Microsoft does Microsoft 365 Enterprise
-
-To understand how IT experts at Microsoft planned for, deployed, and is managing updates for Office 365 ProPlus, see:
-
-- [Preparing your organization for a seamless Office 365 ProPlus 2016 deployment](https://www.microsoft.com/itshowcase/Office365adoption)
-- [Deploying and updating Microsoft Office 365 ProPlus](https://www.microsoft.com/itshowcase/Article/Content/757/Deploying-and-updating-Microsoft-Office-365-ProPlus)
-- [Automation and update channels help deploy Microsoft Office 365 ProPlus](https://www.microsoft.com/itshowcase/Article/Content/794/Automation-and-update-channels-help-deploy-Microsoft-Office-365-ProPlus) (video)
 
 ## Step 1: Assess your environment
 
@@ -85,6 +79,20 @@ Based on your deployment plan from step 2, choose how you want to deploy:
 Many organizations will use a combination of these options for different users. For example, an organization might use Configuration Manager to deploy Office to most of their users, but enable self-install for a small group of workers who are not frequently connected to the internal network. 
 
 If your organization uses Configuration Manager, we recommend upgrading to the Current Branch and updating to the current release. For more details, see [Which branch of Configuration Manager should I use?](https://docs.microsoft.com/sccm/core/understand/which-branch-should-i-use)
+
+## How Microsoft does Microsoft 365 Enterprise
+
+Learn how the experts at Microsoft planned for and deployed Office 365 ProPlus in Microsoft 365 Enterprise with these resources:
+
+- [Preparing your organization for a seamless Office 365 ProPlus 2016 deployment](https://www.microsoft.com/itshowcase/Office365adoption)
+- [Deploying and updating Microsoft Office 365 ProPlus](https://www.microsoft.com/itshowcase/Article/Content/757/Deploying-and-updating-Microsoft-Office-365-ProPlus)
+- [Automation and update channels help deploy Microsoft Office 365 ProPlus](https://www.microsoft.com/itshowcase/Article/Content/794/Automation-and-update-channels-help-deploy-Microsoft-Office-365-ProPlus) (video)
+
+## How Contoso did Microsoft 365 Enterprise
+
+See how the Contoso Corporation, a fictional but representative multi-national business, [deployed Office 365 ProPlus](contoso-o365pp.md).
+
+![](./media/contoso-overview/contoso-icon.png)
 
 ## Next step
 

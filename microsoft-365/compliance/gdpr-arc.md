@@ -19,7 +19,6 @@ ms.collection: GDPR
 These accountability readiness checklists provide a convenient way to access information you may need to support the General Data Protection Regulation (GDPR) when using Microsoft products and services.  
 
 - [Office 365](gdpr-arc-Office365.md)
-- [Windows](gdpr-arc-Windows.md)
 - [Azure](gdpr-arc-Azure.md)
 - [Dynamics 365](gdpr-arc-Dynamics365.md)
 - [Microsoft Support and Professional Services](gdpr-arc-prof-services.md)

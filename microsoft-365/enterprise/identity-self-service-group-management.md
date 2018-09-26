@@ -21,7 +21,7 @@ description: Understand and configure Azure AD self-service group management.
 
 ![](./media/deploy-foundation-infrastructure/identity_icon-small.png)
 
-In Step 14, you'll identify Azure Active Directory (AD) groups that can be managed by group owners instead of IT administrators. Known as *self-service group management*, this feature allows group owners who are not assigned an administrative role to create and manage security groups. 
+In this step, you'll identify Azure Active Directory (AD) groups that can be managed by group owners instead of IT administrators. Known as *self-service group management*, this feature allows group owners who are not assigned an administrative role to create and manage security groups. 
 
 Users can request membership in a security group and that request goes to the group owner, rather than an IT administrator. This allows the day-to-day control of group membership to be delegated to team, project, or business owners who understand the business use for the group and can manage its membership.
 
@@ -31,10 +31,10 @@ Users can request membership in a security group and that request goes to the gr
 
 For more information, see the [instructions to configure an Azure AD group for self-service management](https://docs.microsoft.com/azure/active-directory/active-directory-accessmanagement-self-service-group-management).
 
-As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria.md#crit-identity-step14) for this step.
+As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria.md#crit-identity-self-service-groups) for this step.
 
 ## Next step
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step15.png)| [Protect against credential compromise](identity-azure-ad-identity-protection.md) |
+|![](./media/stepnumbers/Step15.png)| [Set up dynamic group membership](identity-automatic-group-membership.md) |

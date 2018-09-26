@@ -25,7 +25,7 @@ These articles discusses how to use Microsoft products, services, and administra
 - [Intune](gdpr-dsr-Intune.md)
 - [Dynamics 365](gdpr-dsr-Dynamics365.md)
 - [Visual Studio Family](gdpr-dsr-visual-studio-family.md)
-- [Visual Studio Team Services (VSTS)](gdpr-dsr-vsts.md)
+- [Azure DevOps Services](gdpr-dsr-vsts.md)
 - [Microsoft Support and Professional Services](gdpr-dsr-prof-services.md)
 
 For more information about how Microsoft enables you to respond to DSRs, see [GDPR: Data Subject Requests (DSRs)](https://servicetrust.microsoft.com/ViewPage/GDPRDSR) in the Service Trust Portal.

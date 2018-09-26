@@ -34,19 +34,6 @@ At a minimum, you are using three security levels:
 
 If needed, [Step 1](infoprotect-define-sec-infoprotect-levels.md) can help you meet this requirement. 
 
-<a name="crit-infoprotect-step2"></a>
-## Required: Conditional access policies are configured
-
-You've used the information in these articles to create the set of recommended conditional access policies:
-
-- [Identity and device access policies overview](microsoft-365-policies-configurations.md)
-- [Secure email recommended policies](secure-email-recommended-policies.md)
-- [Recommended secure document policies](sharepoint-file-access-policies.md)
-
-You've configured these policies and applied them to the three recommended security levels or their equivalents in your organization.
-
-If needed, [Step 2](infoprotect-configure-conditional-access-policy-settings.md) can help you meet this requirement. 
-
 <a name="crit-infoprotect-step4"></a>
 ## Required: Increased security for Office 365 is configured
 
@@ -59,7 +46,7 @@ You've configured the following settings for increased security based on the inf
 
 You've also [enabled Office 365 Advanced Threat Protection (ATP)](https://support.office.com/article/Office-365-ATP-for-SharePoint-OneDrive-and-Microsoft-Teams-26261670-db33-4c53-b125-af0662c34607#turniton).
 
-If needed, [Step 4](infoprotect-configure-increased-security-office-365.md) can help you meet this requirement. 
+If needed, [Step 3](infoprotect-configure-increased-security-office-365.md) can help you meet this requirement. 
 
 <a name="crit-infoprotect-step3"></a>
 ## Optional: Classification is configured across your environment
@@ -70,8 +57,14 @@ You've worked with your legal and compliance teams to develop an appropriate cla
 - Office 365 labels
 - Azure Information Protection labels
 
-If needed, [Step 3](infoprotect-configure-classification.md) can help you meet this requirement. 
+If needed, [Step 2](infoprotect-configure-classification.md) can help you meet this requirement. 
 
+<a name="crit-infoprotect-step5"></a>
+## Optional: Configure privileged access management in Office 365
+
+You've used the information in the [Configure privileged access management in Office 365](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration) topic to enable privileged access  and create one or more privileged access policies in your Office 365 organization. You've configured these policies and just-in-time access is enabled for access to sensitive data or access to critical configuration settings.
+
+If needed, [Step 4](infoprotect-configure-privileged-access-management.md) can help you meet this requirement. 
 
 ## Next Step
 

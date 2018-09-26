@@ -21,7 +21,7 @@ description: Plan for the set of users and groups that will work for your organi
 
 ![](./media/deploy-foundation-infrastructure/identity_icon-small.png)
 
-In Step 1, you'll create your identity infrastructure that combines users, groups, and group membership with security features in the correct configuration. This allows you to:
+In this step, you'll create your identity infrastructure that combines users, groups, and group membership with security features in the correct configuration. This allows you to:
 
 - Maintain control over who has access to resources in your environment.
 - Secure access with controls that ensure strong assurances of identity (users are who they say they are) and access from safe devices.
@@ -74,12 +74,12 @@ When you complete this step, you’ll have:
 - A list of user accounts in Azure AD that correspond to the employees in your organization and the vendors, contractors, and external partners that work for or with your organization.
 - A set of groups and their membership in Azure AD that reflect logical sets of user accounts and other groups for automatic licensing provisioning of security settings for Microsoft cloud services.
 
-As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria.md#crit-identity-step1) for this step.
+As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria.md#crit-identity-user-groups) for this step.
 
 
 ## Next step
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step2.png)| [Synchronize directories](identity-azure-ad-connect.md) |
+|![](./media/stepnumbers/Step2.png)| [Protect global administrator accounts](identity-designate-protect-admin-accounts.md) |
 

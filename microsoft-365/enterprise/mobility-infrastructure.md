@@ -5,7 +5,7 @@ keywords: Microsoft 365, Microsoft 365 Enterprise, Microsoft 365 documentation, 
 author: MandiOhlinger 
 ms.author: mandia 
 manager: dougeby 
-ms.date: 08/29/2018 
+ms.date: 09/18/2018 
 ms.topic: conceptual 
 audience: microsoft-business
 ms.prod: microsoft-365-enterprise
@@ -32,7 +32,7 @@ Microsoft 365 Enterprise includes features to help manage devices, and their app
 - Monitor, report, and analyze activity to react promptly to provide organizational security
 - Protect your users and their accounts
 
-For more information, see the [Discover Value tool](https://online.valuediscoveryworkshop.com/). 
+For more information, see the [Digital transformation using Microsoft 365](http://transform.microsoft.com). 
 
 In this phase, you enroll your devices in Intune, and create and enforce policies to help keep your data secure and protected. The entire library of Intune documentation is [available online](https://docs.microsoft.com/intune). It's also good practice to review the [Intune deployment planning, design and implementation guide](https://docs.microsoft.com/intune/planning-guide) before you get started.
 
@@ -85,7 +85,6 @@ This step focuses on setting up Intune, and getting it ready for you to manage y
 To manage devices, the devices must be enrolled in Intune. As an administrator, you’ll set up enrollment restrictions and policies for your users and devices. Each device platform (iOS, Android, macOS, and Windows) has a variety of options. You can have your users enroll themselves. Or, you can automate enrollment so users simply sign in to the device.
 
 Enrollment is a key step when using Intune. [Enroll devices](https://docs.microsoft.com/intune/device-enrollment) lists the steps for the different devices.
-
 
 |||
 |:-------|:-----|
@@ -148,6 +147,28 @@ Intune is a powerful service, and includes many features. Here are some other ta
 - Add a [partner certificate authority (CA)](https://docs.microsoft.com/intune/certificate-authority-add-scep-overview) to issue and renew certificates
 - [Provide guidance to your end users](https://docs.microsoft.com/intune/end-user-educate) on the Company Portal app, getting apps, and more
 - Monitor [apps](https://docs.microsoft.com/intune/apps-monitor), monitor [device compliance](https://docs.microsoft.com/intune/compliance-policy-monitor), monitor [configuration profiles](https://docs.microsoft.com/intune/compliance-policy-monitor), and more telemetry using the audit logs. You can also connect to the [Intune Data Warehouse](https://docs.microsoft.com/intune/reports-nav-create-intune-reports) and use Power BI for even more reporting needs.
+
+
+## Identity and device access recommendations
+
+Microsoft provides a set of recommendations for [identity and device access](microsoft-365-policies-configurations.md) to ensure a secure and productive workforce. For device access, use the recommendations and settings in the following articles along with the steps in this phase:
+
+- [Prerequisites](identity-access-prerequisites.md)
+- [Common identity and device access policies](identity-access-policies.md)
+
+## How Microsoft does Microsoft 365 Enterprise
+
+Learn how IT experts at Microsoft planned for and deployed EMS and device management with these resources:
+
+- [Managing modern mobile productivity with Enterprise Mobility + Security](https://www.microsoft.com/itshowcase/Article/Content/972/Managing-modern-mobile-productivity-with-Enterprise-Mobility--Security)
+- [Connecting to work on your Windows 10 device with Microsoft Intune](https://www.microsoft.com/itshowcase/Article/Content/783/Connecting-to-work-on-your-Windows-10-device-with-Microsoft-Intune)
+- [Enabling mobile productivity for iOS, OS X, and Android devices at Microsoft](https://www.microsoft.com/itshowcase/Article/Content/773/Enabling-mobile-productivity-for-iOS-OS-X-and-Android-devices-at-Microsoft)
+
+## How Contoso did Microsoft 365 Enterprise
+
+See how the Contoso Corporation, a fictional but representative multi-national business, [deployed their mobile device management infrastructure](contoso-mdm.md) with Microsoft 365 cloud services.
+
+![](./media/contoso-overview/contoso-icon.png)
 
 ## Next step
 
