@@ -21,6 +21,8 @@ description: Use this Test Lab Guide to create a lightweight test environment fo
 
 This article provides you with step-by-step instructions to create a simplified environment that includes Office 365 E5, Enterprise Mobility + Security (EMS) E5, and a computer running Windows 10 Enterprise. 
 
+![The lightweight Microsoft 3656 Enterprise test environment](media/lightweight-base-configuration-microsoft-365-enterprise/Phase4.png)
+
 Use the resulting environment to test the features and functionality of [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise).
 
 ![Test Lab Guides for the Microsoft cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
@@ -192,6 +194,7 @@ Figure 3 shows your resulting environment, which includes the WIN10 computer tha
 - Has Office 365 ProPlus installed.
   
 **Figure 3: The final configuration of the Microsoft 365 test environment**
+
 
 ![Phase 4 of the Microsoft 3656 Enterprise test environment](media/lightweight-base-configuration-microsoft-365-enterprise/Phase4.png)
   

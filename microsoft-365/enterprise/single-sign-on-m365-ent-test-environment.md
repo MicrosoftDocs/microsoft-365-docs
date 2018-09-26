@@ -22,10 +22,8 @@ description: "Summary: Configure and test Azure AD Seamless Single Sign-on for y
 
 Azure AD Seamless Single Sign-On (SSO) automatically signs in users when they are on their PCs or devices that are connected to their organization network. Azure AD Seamless SSO provides users with easy access to cloud-based applications without needing any additional on-premises components.
 
-This article describes how you can configure your Microsoft 365 test environment for Azure AD Seamless SSO, resulting in the following:
-  
-![The simulated enterprise with pass-through authentication test environment](media/password-hash-sync-m365-ent-test-environment/Phase3.png)
-  
+This article describes how you can configure your Microsoft 365 test environment for Azure AD Seamless SSO.
+
 There are two phases to setting up this test environment:
 
 1.	Create the Microsoft 365 simulated enterprise test environment with password hash synchronization.
@@ -40,7 +38,7 @@ There are two phases to setting up this test environment:
 
 Follow the instructions in [password hash synchronization for Microsoft 365](password-hash-sync-m365-ent-test-environment.md). Here is your resulting configuration.
   
-![The simulated enterprise with password hash synchronization test environment](media/password-hash-sync-m365-ent-test-environment/Phase3.png)
+![The simulated enterprise with password hash synchronization test environment](media/pass-through-auth-m365-ent-test-environment/Phase1.png)
   
 This configuration consists of: 
   
@@ -96,7 +94,8 @@ Notice that although User1 has domain administrator permissions for the TESTLAB 
 
 Here is your resulting configuration:
 
-![The simulated enterprise with pass-through authentication test environment](media/password-hash-sync-m365-ent-test-environment/Phase3.png)
+![The simulated enterprise with pass-through authentication test environment](media/pass-through-auth-m365-ent-test-environment/Phase1.png)
+
  
 This configuration consists of:
 
