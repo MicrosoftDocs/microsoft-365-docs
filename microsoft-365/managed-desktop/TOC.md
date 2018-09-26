@@ -5,7 +5,7 @@
 #### [Security in Microsoft Managed Desktop](get-started/security.md)
 ### [Roles and responsibilities](intro/roles-and-responsibilities.md)
 ### [Technologies in Microsoft Managed Desktop](intro/technologies-and-devices.md)
-### [Microsoft Managed Desktop devices](intro/device-catalog.md)
+### [Microsoft Managed Desktop devices](intro/device-list.md)
 ## [Get ready for enrollment in Microsoft Managed Desktop](get-ready/index.md)
 ### [Prerequisites for Microsoft Managed Desktop](intro/prerequisites.md)
 ### [Network configuration](get-ready/network.md)
