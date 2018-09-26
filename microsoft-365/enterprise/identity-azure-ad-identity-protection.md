@@ -1,5 +1,5 @@
 ---
-title: "Step 15: Protect against credential compromise"
+title: "Step 6: Protect against credential compromise"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -15,13 +15,13 @@ ms.custom:
 description: Understand and configure Azure AD Identity Protection.
 ---
 
-# Step 15: Protect against credential compromise
+# Step 6: Protect against credential compromise
 
 *This step is optional and applies only to the E5 version of Microsoft 365 Enterprise*
 
 ![](./media/deploy-foundation-infrastructure/identity_icon-small.png)
 
-In Step 15, you'll learn how to configure policies that protect against credential compromise, where an attacker determines a user’s account name and password to gain access to an organization’s cloud services and data. Azure AD Identity Protection provides a number of ways to help prevent an attacker from moving laterally through your accounts and groups, and subsequently, to your most valuable data.
+In this step, you'll learn how to configure policies that protect against credential compromise, where an attacker determines a user’s account name and password to gain access to an organization’s cloud services and data. Azure AD Identity Protection provides a number of ways to help prevent an attacker from moving laterally through your accounts and groups, and subsequently, to your most valuable data.
 
 With Azure AD Identity Protection, you can:
 
@@ -46,12 +46,12 @@ The results of this step are that you've enabled Azure AD Identity protection an
 |![Test Lab Guides for the Microsoft cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Test Lab Guide: Azure AD Identity Protection](azure-ad-identity-protection-microsoft-365-test-environment.md) |
 |||
 
-As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria.md#crit-identity-step15) for this step.
+As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria.md#crit-identity-ident-prot) for this step.
 
 ## Next step
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step16.png)| [Provide secure remote access to users](identity-azure-ad-application-proxy.md) |
+|![](./media/stepnumbers/Step7.png)| [Synchronize directories](identity-azure-ad-connect.md) |
 
 

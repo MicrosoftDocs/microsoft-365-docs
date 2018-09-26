@@ -7,7 +7,7 @@ localization_priority: Normal
 audience: microsoft-business
 ms.prod: microsoft-365-enterprise
 ms.topic: article
-ms.date: 06/28/2018
+ms.date: 09/18/2018
 ms.author: greglin
 ---
 
@@ -34,7 +34,11 @@ Windows 10 enables these strategic business scenarios for Microsoft 365 Enterpri
 - Support your organization with enhanced privacy and compliance to meet the General Data Protection Regulation (GDPR)
 - Get current and stay current on your desktop software and devices while reducing security risks and maximizing IT efficiency
 
-For more information, see the [Discover Value tool](https://online.valuediscoveryworkshop.com/). 
+For more information, see the [Digital transformation using Microsoft 365](http://transform.microsoft.com). 
+
+>[!Note]
+>To deploy both Windows 10 Enterprise and Office 365 ProPlus together and shift to a [modern desktop](https://www.microsoft.com/microsoft-365/modern-desktop), see the [Modern Desktop Deployment Center](http://aka.ms/howtoshift).
+>
 
 ## Windows 10 deployment
 
@@ -84,6 +88,12 @@ To peek inside Microsoft and learn how the company planned for, deployed, and is
 - [Windows 10 deployment: tips and tricks from Microsoft IT](https://www.microsoft.com/itshowcase/Article/Content/951/Windows-10-deployment-tips-and-tricks-from-Microsoft-IT) (video)
 - [Windows Defender ATP helps detect sophisticated threats](https://www.microsoft.com/itshowcase/Article/Content/854/Windows-Defender-ATP-helps-detect-sophisticated-threats)
 - [Securing the modern enterprise with Windows Defender and Windows Defender ATP](https://www.microsoft.com/itshowcase/Article/Content/903/Securing-the-modern-enterprise-with-Windows-Defender-and-Windows-Defender-ATP) (video)
+
+## How Contoso did Microsoft 365 Enterprise
+
+See how the Contoso Corporation, a fictional but representative multi-national business, [deployed Windows 10 Enterprise](contoso-win10.md).
+
+![](./media/contoso-overview/contoso-icon.png)
 
 ## Next step
 

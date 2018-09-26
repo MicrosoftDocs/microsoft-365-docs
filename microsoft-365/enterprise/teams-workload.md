@@ -52,7 +52,7 @@ Teams enables these strategic business scenarios for Microsoft 365 Enterprise:
 - Engage your firstline workers to enable your Digital Transformation
 - Understand your work habits to improve your influence and impact
 
-For more information, see the [Discover Value tool](https://online.valuediscoveryworkshop.com/). 
+For more information, see the [Digital transformation using Microsoft 365](http://transform.microsoft.com). 
 
 #### Microsoft Teams for highly regulated data
 
@@ -65,6 +65,10 @@ A list of Teams scenarios that address your organization’s needs for collabora
 ## Phase 2: Onboard
 
 In this phase, you plan for the technical aspects of a Teams deployment and start rolling out Teams to selected groups of users.
+
+### Prerequisites: Identity and device access configuration
+
+To protect access to teams, ensure that you have configured [identity and device access policies](identity-access-policies.md) and the [recommended SharePoint Online access policies](sharepoint-file-access-policies.md).
 
 ### Step 1: Complete your technical planning
 

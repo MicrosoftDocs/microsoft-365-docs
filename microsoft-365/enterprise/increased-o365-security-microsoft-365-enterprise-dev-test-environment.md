@@ -16,7 +16,7 @@ description: Use this Test Lab Guide to enable additional Office 365 security se
 
 # Increased Office 365 security for your Microsoft 365 Enterprise test environment
 
-With the instructions in this article, you configure additional Office 365 security settings to increase security in your Microsoft 365 Enterprise test environment.
+With the instructions in this article, you configure additional Office 365 settings to increase security in your Microsoft 365 Enterprise test environment.
 
 ![Test Lab Guides for the Microsoft cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
@@ -30,7 +30,7 @@ If you just want to configure increased Office 365 security in a lightweight way
 If you want to configure increased Office 365 security in a simulated enterprise, follow the instructions in [Pass-through authentication](pass-through-auth-m365-ent-test-environment.md).
   
 > [!NOTE]
-> Testing automated licensing and group membership does not require the simulated enterprise test environment, which includes a simulated intranet connected to the Internet and directory synchronization for a Windows Server AD forest. It is provided here as an option so that you can test automated licensing and group membership and experiment with it in an environment that represents a typical organization. 
+> Testing increased Office 365 security does not require the simulated enterprise test environment, which includes a simulated intranet connected to the Internet and directory synchronization for a Windows Server AD forest. It is provided here as an option so that you can test automated licensing and group membership and experiment with it in an environment that represents a typical organization. 
 
 
 ## Phase 2: Configure increased Office 365 security
@@ -105,6 +105,8 @@ Office 365 Cloud App Security, previously known as Office 365 Advanced Security 
 
 1. Create a new tab in your browser and go to **securescore.office.com**.
 2. On the **Dashboard tab**, note your current Secure Score and the list of actions in the queue to increase your score.
+
+See the [Configure increased security for Office 365](increased-o365-security-microsoft-365-enterprise-dev-test-environment.md) step in the **Information protection** phase for information and links to configure these settings in production.
 
 ## Next step
 

@@ -3,7 +3,7 @@ title: "Deploy Microsoft 365 Enterprise"
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 09/16/2018
+ms.date: 09/18/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -73,6 +73,8 @@ See these resources to learn how customers are using Microsoft 365 Enterprise as
 - Financial services
   - [TD Bank empowers employees with assistive technology in Office 365 and Windows 10](https://aka.ms/tdbankgroup)
   - [Family tax preparation startup chooses all-in-one solution to help grow business](https://aka.ms/SOSCaseStudy)
+- Transportation
+  - [Kyrgyzstan airline’s goal to bring air travel to all takes off with teamwork supported by Office 365](https://aka.ms/AirManasCaseStudy)
 - Manufacturing
   - [Steel company eliminates hardware costs, streamlines IT, and gains mobile productivity in the cloud](https://aka.ms/Steeledalecasestudy)
   - [Embroidery equipment supplier empowers its business with cloud-based services, spreads word to other small businesses](https://aka.ms/PriorityLLCCaseStudy)
@@ -84,12 +86,13 @@ See these resources to learn how customers are using Microsoft 365 Enterprise as
   - [Digital transformation and the cloud empower business association to serve its members better ](https://aka.ms/AIMCS)
 - Energy services
   - [Schlumberger refines global teamwork with Microsoft 365](https://aka.ms/Schlumberger_)
+  - [Solar distributor gains productivity and mobility by switching from G Suite and Dropbox to Office 365](https://aka.ms/DMSolarCS)
 - Construction
   - [Search for data security solution unearths collaborative capabilities of Microsoft 365 at general contracting company](https://aka.ms/Transbluecasestudy)
 
 ## How Microsoft uses Microsoft 365 Enterprise
 
-Take a peek inside Microsoft and learn how we use Microsoft 365 Enterprise.
+Take a peek inside Microsoft IT and learn how they deployed Microsoft 365 Enterprise and how Microsoft employees use it every day.
 
 ### Networking
 
@@ -115,6 +118,12 @@ Take a peek inside Microsoft and learn how we use Microsoft 365 Enterprise.
 - [Preparing your organization for a seamless Office 365 ProPlus 2016 deployment](https://www.microsoft.com/itshowcase/Office365adoption)
 - [Deploying and updating Microsoft Office 365 ProPlus](https://www.microsoft.com/itshowcase/Article/Content/757/Deploying-and-updating-Microsoft-Office-365-ProPlus)
 - [Automation and update channels help deploy Microsoft Office 365 ProPlus](https://www.microsoft.com/itshowcase/Article/Content/794/Automation-and-update-channels-help-deploy-Microsoft-Office-365-ProPlus) (video)
+
+### Mobility and device management
+
+- [Managing modern mobile productivity with Enterprise Mobility + Security](https://www.microsoft.com/itshowcase/Article/Content/972/Managing-modern-mobile-productivity-with-Enterprise-Mobility--Security)
+- [Connecting to work on your Windows 10 device with Microsoft Intune](https://www.microsoft.com/itshowcase/Article/Content/783/Connecting-to-work-on-your-Windows-10-device-with-Microsoft-Intune)
+- [Enabling mobile productivity for iOS, OS X, and Android devices at Microsoft](https://www.microsoft.com/itshowcase/Article/Content/773/Enabling-mobile-productivity-for-iOS-OS-X-and-Android-devices-at-Microsoft)
 
 ### Security and information protection
 
