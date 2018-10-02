@@ -108,11 +108,11 @@ First, you install and configure Azure AD Connect on APP1.
     
 14. Click the **User1** account. For product licenses, click **Edit**.
     
-15. In **Product licenses**, select your country, and then click the **Off** control for **Office 365 Enterprise E5** (switching it to **On**). Do the same for the **Enterprise Mobility + Security E5** license. 
+15. In **Product licenses**, select your scountry, and then click the **Off** control for **Office 365 Enterprise E5** (switching it to **On**). Do the same for the **Enterprise Mobility + Security E5** license. 
 
 16. Click **Save** at the bottom of the page, and then click **Close**.
     
-Next, you test the ability to sign in to your Office 365 subscription with the user1@testlab.\<your domain name> user name of the User1 account.
+Next, you test the ability to sign in to your Office 365 subscription with the <strong>user1@testlab.</strong>\<your domain name> user name of the User1 account.
 
 1. From APP1, sign out of Office 365, and then sign in again, this time specifying a different account.
 
@@ -128,6 +128,7 @@ This configuration consists of:
   
 - Office 365 E5 and EMS E5 trial or permanent subscriptions with the DNS domain TESTLAB.\<your domain name> registered.
 - A simplified organization intranet connected to the Internet, consisting of the DC1, APP1, and CLIENT1 virtual machines on a subnet of an Azure virtual network. Azure AD Connect runs on APP1 to synchronize the TESTLAB Windows Server AD domain to the Azure AD tenant of your Office 365 and EMS E5 subscriptions periodically.
+- The User1 account in the TESTLAB  Windows Server AD domain has been synchronized with the Azure AD tenant.
 
 ## Next step
 
