@@ -28,4 +28,4 @@ Microsoft Managed Desktop expands on this vision by making sure our customers al
 - [Security in Microsoft Managed Desktop](../get-started/security.md)
 - [Roles and responsibilities](roles-and-responsibilities.md)
 - [Technologies](technologies-and-devices.md)
-- [Devices](device-catalog.md)
+- [Devices](device-list.md)
