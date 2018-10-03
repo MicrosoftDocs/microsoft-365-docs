@@ -43,7 +43,7 @@ Office 365 ProPlus enables these strategic business scenarios for Microsoft 365 
 
 For more information, see the [Digital transformation using Microsoft 365](http://transform.microsoft.com). 
 
-If you already have Office 365 ProPlus deployed, please see the [exit criteria](office365proplus-exit-criteria.md) for this phase to make sure that it meets the required conditions for Microsoft 365 Enterprise.
+If you already have Office 365 ProPlus deployed, please see the [exit criteria](office365proplus-exit-criteria) for this phase to make sure that it meets the required conditions for Microsoft 365 Enterprise.
 
 >[!Note]
 >To deploy both Windows 10 Enterprise and Office 365 ProPlus together and shift to a [modern desktop](https://www.microsoft.com/microsoft-365/modern-desktop), see the [Modern Desktop Deployment Center](http://aka.ms/howtoshift).
@@ -68,11 +68,11 @@ The [planning article](https://docs.microsoft.com/DeployOffice/plan-office-365-p
 
 Based on your deployment plan from step 2, choose how you want to deploy:
 
-- **[Deploy Office 365 ProPlus with System Center Configuration Manager](https://docs.microsoft.com/sccm/sum/deploy-use/manage-office-365-proplus-updates):** Manage your deployment with Configuration Manager, and download and deploy Office from distribution points on your network
+- **[Deploy Office 365 ProPlus with System Center Configuration Manager](https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-with-system-center-configuration-manager):** Manage your deployment with Configuration Manager, and download and deploy Office from distribution points on your network
 
-- **[Deploy Office 365 ProPlus with the ODT from the cloud](https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-from-the-cloud.md):** Manage your deployment with the ODT, and install Office on client devices directly from the Office CDN
+- **[Deploy Office 365 ProPlus with the ODT from the cloud](https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-from-the-cloud):** Manage your deployment with the ODT, and install Office on client devices directly from the Office CDN
  
-- **[Deploy Office 365 ProPlus with the ODT from a local source](https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-from-a-local-source.md):** Manage your deployment with the ODT, and download and deploy Office from a local source on your network 
+- **[Deploy Office 365 ProPlus with the ODT from a local source](https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-from-a-local-source):** Manage your deployment with the ODT, and download and deploy Office from a local source on your network 
 
 - **[Self-install Office 365 ProPlus from the Office portal](https://support.office.com/article/Download-and-install-or-reinstall-Office-365-or-Office-2016-on-a-PC-or-Mac-4414EAAF-0478-48BE-9C42-23ADC4716658):** Manage your deployment from the Office portal and have your users install Office on their client devices directly from the portal
 
@@ -90,10 +90,10 @@ Learn how the experts at Microsoft planned for and deployed Office 365 ProPlus i
 
 ## How Contoso did Microsoft 365 Enterprise
 
-See how the Contoso Corporation, a fictional but representative multi-national business, [deployed Office 365 ProPlus](contoso-o365pp.md).
+See how the Contoso Corporation, a fictional but representative multi-national business, [deployed Office 365 ProPlus](contoso-o365pp).
 
 ![](./media/contoso-overview/contoso-icon.png)
 
 ## Next step
 
-[Office 365 ProPlus infrastructure exit criteria](office365proplus-exit-criteria.md)
+[Office 365 ProPlus infrastructure exit criteria](office365proplus-exit-criteria)
