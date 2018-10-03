@@ -16,7 +16,7 @@ ms.date: 09/24/2018
  
 Microsoft and Microsoft Managed Desktop customers have equally critical, yet different responsibilities around applications used with Microsoft Managed Desktop.
 
-## Microsoft responsibilites
+## Microsoft responsibilities
 **Office 365 apps**
 Microsoft will provide full service for the deployment, update, and support of specific Office 365 apps. All users will receive the base set of Office 365 click to run, 64 bit version of applications included in the device’s image so that a user can quickly become productive. The Project and Visio applications in of the Office 365 suite are licensed separately.  Microsoft Managed Desktop will provide deployment groups allowing the IT Administrator to manage licenses and deploy these applications appropriately for their organization. Microsoft will support end users of these applications through the Microsoft Managed Desktop Support channels.
 
@@ -65,7 +65,7 @@ Test apps with end users	| ![yes](images/checkmark.png) |
 Manage and assign users to applications	 | ![yes](images/checkmark.png)	 |
 Intune deployment tools delivers application to remote clients|	|	![yes](images/checkmark.png)
 Identify and deploy application updates through Intune | ![yes](images/checkmark.png)	 |
-Unistall and remove applications when they have been retired	| ![yes](images/checkmark.png) |	
+Uninstall and remove applications when they have been retired	| ![yes](images/checkmark.png) |	
 **Management** | |
 Procure and assign licenses |	![yes](images/checkmark.png)	 |
 Provide end-user support for line-of-business apps	| ![yes](images/checkmark.png) |
@@ -77,7 +77,7 @@ For information on LOB application requirements, see [Microsoft Managed Desktop 
 While many services are out of scope for Microsoft Managed Desktop operations there are services which Microsoft offers which may help the customer manage their applications.
 
 ### Windows Upgrade Readiness
-A key part of setting up new Microsoft Managed Devices is understanding which apps are needed to for device users. Windows Upgrade Readiness is a Microsoft tool which helps enterprises understand the application landscape inside their company, and helps themto review key data about those applications:
+A key part of setting up new Microsoft Managed Devices is understanding which apps are needed to for device users. Windows Upgrade Readiness is a Microsoft tool which helps enterprises understand the application landscape inside their company, and helps them to review key data about those applications:
 - **Application usage** - Telemetry data is used to monitor application usage
 - **Application compatibility** - Upgrade Readiness looks at each application and sees how broadly it has been deployed on the latest version of Windows 10 and assesses how to identify if it is “Ready for Windows”. This data helps focus testing efforts so on applications which aren’t already broadly adopted.
 
