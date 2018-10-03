@@ -43,7 +43,7 @@ Office 365 ProPlus enables these strategic business scenarios for Microsoft 365 
 
 For more information, see the [Digital transformation using Microsoft 365](http://transform.microsoft.com). 
 
-If you already have Office 365 ProPlus deployed, please see the [exit criteria](office365proplus-exit-criteria) for this phase to make sure that it meets the required conditions for Microsoft 365 Enterprise.
+If you already have Office 365 ProPlus deployed, please see the [exit criteria](office365proplus-exit-criteria.md) for this phase to make sure that it meets the required conditions for Microsoft 365 Enterprise.
 
 >[!Note]
 >To deploy both Windows 10 Enterprise and Office 365 ProPlus together and shift to a [modern desktop](https://www.microsoft.com/microsoft-365/modern-desktop), see the [Modern Desktop Deployment Center](http://aka.ms/howtoshift).
@@ -90,10 +90,10 @@ Learn how the experts at Microsoft planned for and deployed Office 365 ProPlus i
 
 ## How Contoso did Microsoft 365 Enterprise
 
-See how the Contoso Corporation, a fictional but representative multi-national business, [deployed Office 365 ProPlus](contoso-o365pp).
+See how the Contoso Corporation, a fictional but representative multi-national business, [deployed Office 365 ProPlus](contoso-o365pp.md).
 
 ![](./media/contoso-overview/contoso-icon.png)
 
 ## Next step
 
-[Office 365 ProPlus infrastructure exit criteria](office365proplus-exit-criteria)
+[Office 365 ProPlus infrastructure exit criteria](office365proplus-exit-criteria.md)
