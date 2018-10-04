@@ -17,7 +17,7 @@ description: Overview of the Modern Desktop Deployment Center.
 
 # Modern Desktop Deployment Center
 
-<img src="media/getting-started-media/getting-started-media-1.png" alt="Desktop Deployment Wheel" height="450" width="802" align="middle" />
+<img src="media/getting-started-media/getting-started-media-1.png" alt="Desktop Deployment Wheel" height="450" width="802" align="middle" style="background-color: #fff;" />
 
 Follow the steps below to plan and carry out your large-scale deployment of Windows 10 and Office 365 ProPlus. Each step below is part of the overall planning and deployment process with steps typically running in parallel to each other in a phased deployment.
 
