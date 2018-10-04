@@ -19,4 +19,5 @@
 ### [Get support for Microsoft Managed Desktop](working-with-managed-desktop/support.md)
 ### [Manage apps in Microsoft Managed Desktop](working-with-managed-desktop/manage-apps.md)
 ### [Operations and monitoring for Microsoft Managed Desktop](working-with-managed-desktop/operations-and-monitoring.md)
+## [Change history for Microsoft Managed Desktop documentation](change-history-managed-desktop.md)
 
