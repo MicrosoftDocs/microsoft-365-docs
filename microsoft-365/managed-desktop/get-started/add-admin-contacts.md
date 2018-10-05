@@ -8,9 +8,21 @@ ms.localizationpriority: medium
 ms.date: 09/24/2018
 ---
 
-# Add Admin contacts in Microsoft Managed Desktop admin portal
+# Add Admin contacts in Microsoft Managed Desktop Admin portal
 
-There are several ways that Microsoft Managed Desktop service communicates with customers. To streamline communication and ensure we’re checking with the best contacts, you need to provide a set of admin contacts. Microsoft Managed Desktop IT Operations will contact these people for assistance troubleshooting issues for your tenant.
+There are several ways that Microsoft Managed Desktop service communicates with customers. To streamline communication and ensure we’re checking with the best contacts, you need to provide a set of admin contacts. Microsoft Managed Desktop IT Operations will contact these people for assistance troubleshooting issues for your tenant. 
+
+## Azure Active Directory access for Microsoft Managed Desktop Admin portal
+
+Microsoft Managed Desktop Admin portal requires that people accessing the portal have one of these Azure Active Directory (AD) roles:
+- Global Administrator
+- Intune Service Administrator
+- Billing Administrator
+- Service Support Administrator
+
+For more information on these roles and assigning them in Azure AD, see [Administrator role permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles). 
+
+## Admin contact focus areas
 
 Admin contacts should be the best person or group that can answer questions and make decisions for different focus areas. These areas include:
 
