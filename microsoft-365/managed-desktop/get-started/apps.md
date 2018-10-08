@@ -31,9 +31,9 @@ Microsoft may identify restricted applications which are not suitable for the mo
 
 ## Customer responsibilities
 The Office 365 Suite is core to Microsoft’s productivity offerings and is included in the Microsoft 365 License for all Microsoft Managed Desktop users. While Microsoft deploys, updates, and supports Office Applications to Microsoft Managed Desktop Devices there are still some areas for which the customer is responsible.
-- **Assign licenses** - Customers are responsible for  assigning of the appropriate licenses to end users for Office 365. 
-- **Add users to security groups** - For customers with users that need Project or Visio the IT administrator must add that user to the appropriate deployment groups. IT administrators are also responsible for managing end of life for that user. 
-- **Deploy Office 365 Add Ons** - Customers are responsible for deploying of any plugins to the Office 365 suite which are deemed necessary. 
+- **Assign licenses** - Customers are responsible for assigning the appropriate licenses to end users for Office 365. 
+- **Add users to security groups** - For customers with users who need Project or Visio, the IT administrator must add those users to the appropriate deployment groups. IT administrators are also responsible for managing end of life for those users. 
+- **Deploy Office 365 Add Ons** - Customers are responsible for deploying any plugins to the Office 365 suite which are deemed necessary. 
 
 Since line-of-business (LOB) apps are unique for each customer, customers are responsible for managing all applications within their organization not deployed by Microsoft. This includes:
 - Deciding which apps are needed and who needs them
@@ -77,9 +77,10 @@ For information on LOB application requirements, see [Microsoft Managed Desktop 
 While many services are out of scope for Microsoft Managed Desktop operations there are services which Microsoft offers which may help the customer manage their applications.
 
 ### Windows Upgrade Readiness
-A key part of setting up new Microsoft Managed Devices is understanding which apps are needed to for device users. Windows Upgrade Readiness is a Microsoft tool which helps enterprises understand the application landscape inside their company, and helps themto review key data about those applications:
-- **Application usage** - Telemetry data is used to monitor application usage
-- **Application compatibility** - Upgrade Readiness looks at each application and sees how broadly it has been deployed on the latest version of Windows 10 and assesses how to identify if it is “Ready for Windows”. This data helps focus testing efforts so on applications which aren’t already broadly adopted.
+A key part of setting up new Microsoft Managed Devices is understanding which apps are needed for device users. Windows Upgrade Readiness is a Microsoft tool which helps enterprises understand the application landscape inside their company, and helps them to review key data about those applications, such as:
+
+- **Application usage** - Telemetry data is used to monitor application usage.
+- **Application compatibility** - Upgrade Readiness looks at each application and sees how broadly it has been deployed on the latest version of Windows 10 and assesses how to identify if it is “Ready for Windows”. This data helps focus testing efforts on applications which aren’t already broadly adopted.
 
 ### Intune application deployment
 Application management can be handled through the Microsoft Managed Desktop Admin portal, or through the Intune portal. Intune’s app management portal shows applications deployed for Windows, Android, and iOS. Microsoft Managed Desktop Admin portal limits the view to Windows 10 applications. Both are available through the Azure Portal. 

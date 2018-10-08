@@ -13,7 +13,12 @@ ms.date: 09/24/2018
 
 With Microsoft Managed Desktop, you get **software as a service** (Microsoft 365 E5), **Device as a service** (Microsoft Surface devices ready to use), and **IT support as a service** (Help desk and more). 
 
-![Microsoft Managed Desktop consists of Windows 365, Surface devices, and IT support](images/m365.png)
+<table>
+<tr><th>Software as a service</th><th>Devices as a service</th><th>IT support as a service</th></tr>
+<tr><td><p>Enterprise Mobility and Security</p><p>Windows 10</p><p>Office 365</p><p>Defender ATP</p></td><td><p>Procurement</p><p>Lifecycle management</p><p>Maintenance</p><p>Refresh</p></td><td><p>Service desk</p><p>Deployment and migration</p><p>Analytics</p><p>Monitoring</p></td></tr>
+</table>
+
+
 
 When you enroll in Microsoft Managed Desktop, Microsoft provides you with devices that are configured to join your Azure Active Directory tenant. Windows 10, Office 365, and some apps and features associated with [Microsoft 365 Enterprise E5](https://www.microsoft.com/en-us/microsoft-365/compare-all-microsoft-365-plans) are installed (by Microsoft) on your devices. When your employees who are using these devices need help, they contact Microsoft Managed Desktop support (provided by Microsoft) through a custom chat app. 
 
