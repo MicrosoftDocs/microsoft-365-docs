@@ -3,7 +3,6 @@ title: "Get started with Microsoft 365 Business"
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
-ms.date: 9/20/2018
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration

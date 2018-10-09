@@ -3,7 +3,6 @@ title: "Pre-requisites for protecting data on devices with Microsoft 365 Busines
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
-ms.date: 7/31/2018
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
