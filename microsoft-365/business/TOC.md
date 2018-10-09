@@ -29,3 +29,5 @@
 ### [AutoPilot Profile settings](autopilot-profile-settings.md)
 ### [Device states](device-states.md)
 ## [Microsoft 365 Business FAQ](support/microsoft-365-business-faqs.md)
+# [Office 365 Enterprise](https://docs.microsoft.com/office365/enterprise)
+# [Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365)
