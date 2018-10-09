@@ -50,7 +50,7 @@ The set-up steps include information for setups that include local Active Direct
     
     You can view an example video of [Video: Setup Office 365 in the new Admin Center](https://support.office.com/article/a8c2002a-34bc-4ab3-93d8-9b5156c48bf8). Note that this video does not include the data protection steps of Microsoft 365 Business.
     
-![Screenshot of the Business Cloud Suite setup wizard.](media/3c4fd40c-2de1-4a87-8ee0-78d3928c7bb7.png)
+    ![Screenshot of the Business Cloud Suite setup wizard.](media/3c4fd40c-2de1-4a87-8ee0-78d3928c7bb7.png)
   
 ### Step 2: Add users and assign licenses
 
@@ -66,7 +66,7 @@ The set-up steps include information for setups that include local Active Direct
     
     If you are moving from another email provider and want to copy your data later, you can [Migrate email and contacts to Office 365](https://support.office.com/article/a3e3bddb-582e-4133-8670-e61b9f58627e).
     
-![Screenshot of two new users added in the setup wizard](media/8f729967-5c65-4ceb-b737-18119db40564.png)
+    ![Screenshot of two new users added in the setup wizard](media/8f729967-5c65-4ceb-b737-18119db40564.png)
   
 ### Step 3: Connect your domain
 
@@ -97,9 +97,9 @@ The licensed users' work files on Windows 10 devices will be projected as soon a
   
 4. Click **Next** and you are done with setup. 
   
-Please leave us feedback at this step to help us improve the experience.
+    Please leave us feedback at this step to help us improve the experience.
   
-![Screenshot of Prepare Windows 10 devices page](media/bff701c1-48a3-44f4-aa95-9d959d57c85b.PNG)
+    ![Screenshot of Prepare Windows 10 devices page](media/bff701c1-48a3-44f4-aa95-9d959d57c85b.PNG)
   
 ## Additional security settings
 
