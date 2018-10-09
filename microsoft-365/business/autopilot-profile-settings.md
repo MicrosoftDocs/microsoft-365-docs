@@ -3,7 +3,6 @@ title: "About AutoPilot Profile settings"
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
-ms.date: 6/15/2018
 ms.audience: Admin
 ms.topic: overview
 f1_keywords:

@@ -3,7 +3,6 @@ title: "Set up Microsoft 365 Business by using the setup wizard"
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
-ms.date: 8/29/2018
 ms.audience: Admin
 ms.topic: article
 f1_keywords:
@@ -33,7 +32,7 @@ The set-up steps include information for setups that include local Active Direct
   
 - [Enable domain-joined Windows 10 devices to be managed by Microsoft 365 Business](manage-windows-10-devices.md)
     
-    This is the recommended way.
+    -This is the recommended way.
     
 - [Access on-premises resources from an Azure AD-joined device in Microsoft 365 Business](access-resources-from-an-azure-ad-joined-device.md)
     
@@ -116,7 +115,7 @@ In addition to the security and compliance setting in the setup wizard, you can 
     
 ## Next steps
 
-For the users that have their licenses, the next step is to set up devices. See [Set up Windows devices for Microsoft 365 Business users](set-up-windows-devices.md) and [Set up mobile devices for Microsoft 365 Business users](set-up-mobile-devices.md). See [Manage Microsoft 365 Business](manage.md) for links to topics on how to set device and app protection polices, and how to remove data from user devices. 
+For the users that have their licenses, the next step is to set up devices.<br/> See [Set up Windows devices for Microsoft 365 Business users](set-up-windows-devices.md) and [Set up mobile devices for Microsoft 365 Business users](set-up-mobile-devices.md). <br/>See [Manage Microsoft 365 Business](manage.md) for links to topics on how to set device and app protection polices, and how to remove data from user devices. 
   
 ## Related Topics
 

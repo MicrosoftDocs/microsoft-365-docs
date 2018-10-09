@@ -3,7 +3,6 @@ title: "Get Microsoft 365 Business"
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
-ms.date: 11/2/2017
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -20,7 +19,7 @@ description: "Learn how to purchase Microsoft 365 Business from Microsoft Partne
 
 ## Get Microsoft 365 Business from Microsoft
 
-If you don't have a partner and want to get Microsoft 365 Business, you can [contact sales here](https://www.microsoft.com/en-us/microsoft-365/business).
+If you don't have a partner and want to get Microsoft 365 Business, you can [buy it here](https://www.microsoft.com/en-US/microsoft-365/business).
   
 ## Get Microsoft 365 Business from Microsoft Partner Center
 

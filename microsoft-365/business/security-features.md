@@ -19,22 +19,6 @@ description: "Learn about the security features that come with Microsoft 365 Bus
 # Microsoft 365 Business security features
 
 Microsoft 365 Business offers simplified security features to help safeguard your data on PCs, phones, and tablets.
-  
-In this topic:
-  
-> [Microsoft 365 Business admin center security features](security-features.md#bkmk_admincenter)
-    
-> [Additional security features](security-features.md#bkmk_additionalsecurity) (announced on April 30, 2018) 
-    
-> [Set up Advanced Threat Protection features](security-features.md#bkmk_enableatp)
-    
-> [Set up DLP features](security-features.md#bkmk_enabledlp)
-    
-> [Set up email retention with Exchange Online Archiving](security-features.md#bkmk_enableeop)
-    
-> [Set up Azure Information Protection features](security-features.md#bkmk_enableaip)
-    
-> [FAQ](security-features.md#bkmk_faq)
     
 ## Microsoft 365 Business admin center security features
 <a name="bkmk_admincenter"> </a>
@@ -113,9 +97,9 @@ DLP comes with many ready-to-use policy templates for many different locales. Fo
 
  **Exchange Online Archiving** license features give you the ability to help maintain compliance and regulatory standards by preserving email content for the purposes of eDiscovery. It also helps reduce your risk in the event of litigation and provides a way to recover data after a security breach or when you need to recover deleted items. To activate these capabilities, you can use litigation hold to preserve all of a user's content, or use retention policies for greater customization. 
   
-- **Litigation hold:** You can preserve all mailbox content including deleted items by putting a user's entire mailbox on litigation hold. 
+**Litigation hold:** You can preserve all mailbox content including deleted items by putting a user's entire mailbox on litigation hold. 
     
-  - To place a mailbox on litigation hold, in the Admin center:
+To place a mailbox on litigation hold, in the Admin center:
     
 1. In the left nav, go to **Users** \> **Active users**.
     
@@ -125,7 +109,7 @@ DLP comes with many ready-to-use policy templates for many different locales. Fo
     
 4. In the **litigation hold** dialog box you can specify the litigation hold duration in the **Litigation hold duration** field, leave field empty if you want to place an infinite hold. You can also add notes and direct the mail box owner to a website you might have to explain more about the litigation hold \> **Save**.
     
-- **Retention:** You can enable customized retention policies, for example, to preserve for a specific amount of time or delete content permanently at the end of the retention period. To learn more, see [Overview of retention policies](https://support.office.com/article/5e377752-700d-4870-9b6d-12bfc12d2423).
+**Retention:** You can enable customized retention policies, for example, to preserve for a specific amount of time or delete content permanently at the end of the retention period. To learn more, see [Overview of retention policies](https://support.office.com/article/5e377752-700d-4870-9b6d-12bfc12d2423).
     
 ## Set up Azure Information Protection features
 <a name="bkmk_enableaip"> </a>
