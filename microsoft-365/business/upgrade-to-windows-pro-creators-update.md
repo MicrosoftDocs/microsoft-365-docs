@@ -32,7 +32,8 @@ description: "Learn how to upgrade Windows devices to Windows 10 Pro Creators Up
   b. From the software download site, click **Update now** to start upgrading the device to Windows 10 Pro Creators Update. 
     
 - Share the download link - Select this option if you want to send an email to people in your organization so they can upgrade to Windows 10 Pro by themselves.
-    a. Select **Share the download** link to open an email that contains a link to the Windows software download site. 
+ 
+   a. Select **Share the download** link to open an email that contains a link to the Windows software download site. 
     
  - Create an installation media using the Media Creation Tool - Select this option to create a Windows 10 Pro Creators Update installation media (USB flash drive or ISO file) to install Windows 10 on a PC that's different from the one you're using.
     
