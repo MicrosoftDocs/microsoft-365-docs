@@ -43,7 +43,7 @@ For a brand new device running Windows 10 Pro Creators Update, or for a device t
     
 3. Finish Windows 10 device setup.
     
-Once you're done, the user will be connected to your organization's Azure AD. See [Verify the device is connected to Azure AD](set-up-windows-devices.md#bkmk_verifyaad) to make sure. 
+   Once you're done, the user will be connected to your organization's Azure AD. See [Verify the device is connected to Azure AD](set-up-windows-devices.md#bkmk_verifyaad) to make sure. 
   
 ### For a device already set up and running Windows 10 Pro
 <a name="bk_existingwindows"> </a>
