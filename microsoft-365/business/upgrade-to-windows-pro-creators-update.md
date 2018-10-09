@@ -19,7 +19,7 @@ description: "Learn how to upgrade Windows devices to Windows 10 Pro Creators Up
 
 ## Upgrade to Windows 10 Pro Creators update
 
-1. Sign in to the [Microsoft 365 Business admin center](https://portal.office.com/adminportal/home) and locate the **Windows 10 Upgrade** card. 
+1. Sign in to the [Microsoft admin center](https://portal.office.com/adminportal/home) and locate the **Windows 10 Upgrade** card. 
     
     ![Windows 10 Upgrade card in the admin center.](media/066f47bf-7b88-4fea-8fd0-82798ea66716.png)
   
