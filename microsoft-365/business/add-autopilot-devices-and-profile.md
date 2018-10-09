@@ -76,7 +76,7 @@ If you have no device groups or profiles created yet, the best way to get starte
     
 ## Related Topics
 
-[Troubleshoot AutoPilot device errors](https://support.office.com/article/1f468690-530c-47ea-918f-fede24607c53)
+[Troubleshoot AutoPilot device errors](troubleshoot-autopilot-errors.md)
   
 [Microsoft 365 Business documentation and resources](https://go.microsoft.com/fwlink/p/?linkid=853701)
   

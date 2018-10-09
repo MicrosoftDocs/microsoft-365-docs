@@ -70,7 +70,7 @@ The following topics describe how you can use Windows AutoPilot in Microsoft 365
     
 - [Create and edit AutoPilot devices](create-and-edit-autopilot-devices.md)
     
-- [Troubleshoot AutoPilot device errors](https://support.office.com/article/1f468690-530c-47ea-918f-fede24607c53)
+- [Troubleshoot AutoPilot device errors](troubleshoot-autopilot-errors.md)
     
 - [Device states](device-states.md)
     

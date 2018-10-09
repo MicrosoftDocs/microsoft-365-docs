@@ -31,6 +31,7 @@
 ## [Reset devices to factory settings](articles/reset-devices-to-factory-settings.md)
 ## [Map protection features to Intune settings](articles/map-protection-features-to-intune-settings.md)
 ## [Device states](articles/device-states.md)
+## [Troubleshoot AutoPilot errors](articles/troubleshoot-autopilot-errors.md)
 ## [Access resources from an Azure AD-joined device](articles/access-resources-from-an-azure-ad-joined-device.md)
 # [UI](articles/ui.md)
 ## [Protect work files on devices](articles/protect-work-files-on-devices.md)
