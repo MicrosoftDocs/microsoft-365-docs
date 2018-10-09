@@ -42,12 +42,4 @@ Complete the steps below to make your Windows 10 devices Hybrid Azure AD joined 
     
 5. In order to enroll a Windows 10 device for mobile device management, see [Enroll a Windows 10 device with Intune by using a Group Policy](https://go.microsoft.com/fwlink/p/?linkid=872871) for instructions. You can set the Group Policy at a local computer level or for bulk operations, you can create this group policy setting on your domain controller server. 
     
-## See Also
-
-[Microsoft 365 Business documentation and resources](https://go.microsoft.com/fwlink/p/?linkid=853701)
-  
-[Get started with Microsoft 365 Business](microsoft-365-business-0.md)
-  
-[Manage Business Microsoft 365 Business](manage.md)
-  
 

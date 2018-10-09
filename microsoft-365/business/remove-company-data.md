@@ -36,12 +36,5 @@ You can use Microsoft 365 Business to remove company data that your users have o
   
 5. On the **Are you sure you want to remove company data on the devices** pane, choose **Remove** \> **Close**.
     
-## Related Topics
 
-[Microsoft 365 Business documentation and resources](https://go.microsoft.com/fwlink/p/?linkid=853701)
-  
-[Get started with Microsoft 365 Business](microsoft-365-business-0.md)
-  
-[Manage Microsoft 365 Business](manage.md)
-  
 

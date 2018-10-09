@@ -42,12 +42,5 @@ A 32-bit Office will be automatically installed, or uninstalled in the devices o
   
 To verify you can open the Task Manager on a computer that was selected for an Office install and look for Microsoft Office Click-to-Run process.
   
-## Related Topics
 
-[Microsoft 365 Business documentation and resources](https://go.microsoft.com/fwlink/p/?linkid=853701)
-  
-[Get started with Microsoft 365 Business](microsoft-365-business-0.md)
-  
-[Manage Microsoft 365 Business](manage.md)
-  
 

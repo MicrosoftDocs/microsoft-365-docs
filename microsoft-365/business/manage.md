@@ -88,10 +88,6 @@ The following topics describe how you can use Windows AutoPilot in Microsoft 365
     
 - [Additional security features](security-features.md#bkmk_additionalsecurity)
     
-## Related Topics
 
-[Microsoft 365 Business documentation and resources](https://go.microsoft.com/fwlink/p/?linkid=853701)
-  
-[Get started with Microsoft 365 Business](microsoft-365-business-0.md)
   
 

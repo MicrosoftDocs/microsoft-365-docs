@@ -34,12 +34,6 @@ In the Product licenses section, set **Microsoft 365 Business** product license 
   
 ![Set the license setting to On position](media/7404f7f7-93bc-44a3-9ffb-4208b5b17402.png)
   
-## Related Topics
 
-[Microsoft 365 Business documentation and resources](https://go.microsoft.com/fwlink/p/?linkid=853701)
-  
-[Get started with Microsoft 365 Business](microsoft-365-business-0.md)
-  
-[Manage Microsoft 365 Business](manage.md)
   
 

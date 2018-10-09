@@ -37,12 +37,5 @@ If you don't have a partner and want to get Microsoft 365 Business, you can [buy
   
     Complete the rest of the steps for adding a new customer including the business name.
     
-## Related Topics
 
-[Microsoft 365 Business documentation and resources](https://go.microsoft.com/fwlink/p/?linkid=853701)
-  
-[Get started with Microsoft 365 Business](microsoft-365-business-0.md)
-  
-[Manage Microsoft 365 Business](manage.md)
-  
 

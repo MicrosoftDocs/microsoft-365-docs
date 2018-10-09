@@ -83,13 +83,4 @@ Open Outlook again, and enter and confirm a PIN. Your Outlook app is now ready f
   
 ---
 
-## Related Topics
-<a name="bkmk_iphone"> </a>
-
-[Microsoft 365 Business documentation and resources](https://go.microsoft.com/fwlink/p/?linkid=853701)
-  
-[Get started with Microsoft 365 Business](microsoft-365-business-0.md)
-  
-[Manage Microsoft 365 Business](manage.md)
-  
 

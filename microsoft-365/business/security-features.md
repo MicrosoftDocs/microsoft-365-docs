@@ -182,13 +182,4 @@ A:
     
 3. Choose **Intune** to go to Intune admin center. 
     
-## See Also
-<a name="bkmk_faq"> </a>
-
-[Microsoft 365 Business documentation and resources](https://go.microsoft.com/fwlink/p/?linkid=853701)
-  
-[Get started with Microsoft 365 Business](microsoft-365-business-0.md)
-  
-[Manage Microsoft 365 Business](manage.md)
-  
 

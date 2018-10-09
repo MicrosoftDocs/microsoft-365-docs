@@ -33,12 +33,5 @@ The first step in setting up your organization with Microsoft 365 Business is to
     
 - If you have existing Office applications on user computers, read [prepare for Office client installation](prepare-for-office-client-deployment.md) to understand steps you might have to take before you can set up Microsoft 365 Business to install Office 2016 to user computers. 
     
-## Related Topics
 
-[Microsoft 365 Business documentation and resources](https://go.microsoft.com/fwlink/p/?linkid=853701)
-  
-[Get started with Microsoft 365 Business](microsoft-365-business-0.md)
-  
-[Manage Business Microsoft 365 Business](manage.md)
-  
 
