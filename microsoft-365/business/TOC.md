@@ -21,7 +21,6 @@
 ### [Protection settings  for Windows 10 PCs](protection-settings-for-windows-10-pcs.md)
 #### [Validate settings on Windows 10 PCs](validate-settings-on-windows-10-pcs.md)
 ### [Protection settings for Windows 10 devices](protection-settings-for-windows-10-devices.md)
-#### [Validate protection settings on Windows 10 PCs](validate-protection-settings-on-windows-10-pcs.md)
 ## [Migrate to Microsoft 365 Business](migrate-to-microsoft-365-business.md)
 ## [Add Autopilot devices and profile](add-autopilot-devices-and-profile.md)
 ### [Create and edit AutoPilot profiles](create-and-edit-autopilot-profiles.md)

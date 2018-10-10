@@ -190,11 +190,3 @@ In the **Edit policy** pane, choose **Edit** next to **Protection against lost o
     
 ---
 
-## See also
-
-[Microsoft 365 Business documentation and resources](https://go.microsoft.com/fwlink/p/?linkid=853701)
-  
-[Get started with Microsoft 365 Business](microsoft-365-business-0.md)
-  
-[Manage Microsoft 365 Business](manage.md)
-

@@ -3,7 +3,6 @@ title: "Set application protection settings for Windows 10 devices"
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
-ms.date: 10/31/2017
 ms.audience: Admin
 ms.topic: article
 f1_keywords:
@@ -65,7 +64,6 @@ If your users have personal Windows 10 devices on which they perform work tasks,
 12. Finally, choose **Add** to save the policy, and assign it to devices. 
     
 ## Available settings
-<a name="bkmk_settings"> </a>
 
 The following settings are available to manage how users access Office work files.
   
@@ -77,15 +75,4 @@ For more information, see [How do protection features in Microsoft 365 Business 
 |Reset PIN when login fails this many times  <br/> |To prevent an unauthorized user from randomly guessing a PIN, the PIN will reset after the number of wrong entries that you specify.  <br/> |
 |Require users to sign in again after Office apps have been idle for  <br/> |This setting determines how long a user can be idle before they are prompted to sign in again.  <br/> |
    
-## Related Topics
-<a name="bkmk_settings"> </a>
-
-[Validate app protection settings on Windows 10 PCs](validate-protection-settings-on-windows-10-pcs.md)
-  
-[Microsoft 365 Business documentation and resources](https://go.microsoft.com/fwlink/p/?linkid=853701)
-  
-[Get started with Microsoft 365 Business](microsoft-365-business-0.md)
-  
-[Manage Microsoft 365 Business](manage.md)
-  
 
