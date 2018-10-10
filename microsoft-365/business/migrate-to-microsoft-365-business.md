@@ -3,7 +3,6 @@ title: "Migrate to Microsoft 365 Business from Office 365 Business Premium"
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
-ms.date: 5/29/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -41,7 +40,7 @@ If you are given a link to purchase your licences, you will walk through a wizar
     > [!NOTE]
     > The setup banner is an opportunity to add new users, a new domain, and migrate email for new users. If you don't plan to do any, you should still go through the wizard and choose default options to make it disappear from the admin home page. 
   
-![Choose Start setup on the Microsoft 365 Business is ready to set up banner.](media/8d3b0d97-7cca-497f-9364-4b00ad670209.png)
+   ![Choose Start setup on the Microsoft 365 Business is ready to set up banner.](media/8d3b0d97-7cca-497f-9364-4b00ad670209.png)
   
     Choose **Start setup**.
     
@@ -89,7 +88,7 @@ After you have assigned licenses to Microsoft 365 Business, you can start protec
     
   - [Set device protection settings for Windows 10 PCs](protection-settings-for-windows-10-pcs.md)
     
-![In the Add policy pane, enter a name for it, and choose the Policy type from the drop-down menu.](media/76ef37e4-1d18-4f34-8a0f-391ab1d0ae2b.png)
+   ![In the Add policy pane, enter a name for it, and choose the Policy type from the drop-down menu.](media/76ef37e4-1d18-4f34-8a0f-391ab1d0ae2b.png)
   
 4. Once you set up policies, you and your employees can set up devices:
     
@@ -101,10 +100,5 @@ After you have assigned licenses to Microsoft 365 Business, you can start protec
     
 5. To automatically install Office client apps, see [Prepare for Office client deployment by Microsoft 365 Business](prepare-for-office-client-deployment.md) and [Automatically install or uninstall Office on Windows 10 devices](auto-install-or-uninstall-office.md).
     
-## See Also
 
-[Get started with Microsoft 365 Business](microsoft-365-business-0.md)
-  
-[Manage Microsoft 365 Business](manage.md)
-  
 
