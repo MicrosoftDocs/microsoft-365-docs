@@ -3,7 +3,6 @@ title: "Set app protection settings for Android or iOS devices"
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
-ms.date: 10/2/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -84,18 +83,9 @@ The following settings are available to manage how users access Office work file
 |Require a PIN or fingerprint to access Office apps  <br/> |If this settings is **On** users have to provide another form of authentication, in addition to their username and password, before they can use Office apps on their mobile device.  <br/> |
 |Reset PIN when login fails this many times  <br/> |To prevent an unauthorized user from randomly guessing a PIN, the PIN will reset after the number of wrong entries that you specify.  <br/> |
 |Require users to sign in again after Office apps have been idle for  <br/> |This setting determines how long a user can be idle before they are prompted to sign in again.  <br/> |
-|Deny access to work files on jailbroken or rooted devices  <br/> |Clever users may have a device that is jailbroken or rooted. This means that the user can modify the operating system, which can make the device more subject to malware. These devices are blocked when this setting is **On﻿**.  <br/> |
-|Allow users to copy content from Office apps into personal apps  <br/> |We do allow this by default, but if the setting is **On**, the user could copy information in a work file to a personal file. If the setting is **Off**, the user will be unable to copy information from a work account into a personal app or personal account. ﻿ **﻿** <br/> |
+|Deny access to work files on jailbroken or rooted devices  <br/> |Clever users may have a device that is jailbroken or rooted. This means that the user can modify the operating system, which can make the device more subject to malware. These devices are blocked when this setting is **On**.  <br/> |
+|Allow users to copy content from Office apps into personal apps  <br/> |We do allow this by default, but if the setting is **On**, the user could copy information in a work file to a personal file. If the setting is **Off**, the user will be unable to copy information from a work account into a personal app or personal account.  <br/> |
    
-## Related Topics
-<a name="bkmk_availablesettings"> </a>
 
-[Microsoft 365 Business documentation and resources](https://go.microsoft.com/fwlink/p/?linkid=853701)
-  
-[Get started with Microsoft 365 Business](microsoft-365-business-0.md)
-  
-[Manage Microsoft 365 Business](manage.md)
-  
-[Validate app protection settings on Android or iOS devices](validate-settings-on-android-or-ios.md)
   
 

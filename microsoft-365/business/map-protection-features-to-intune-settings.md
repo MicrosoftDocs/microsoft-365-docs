@@ -55,7 +55,7 @@ The following table details how the Windows 10 application policy settings map t
   
 To find the Intune setting, while signed in with your Microsoft 365 Business admin credentials, go to [Azure portal](https://portal.azure.com), then select **More services**, and type in Intune into the **Filter**, select ** Intune App Protection ** \> ** App Policy **.
   
- **Important**: A Microsoft 365 Business subscription provides you with a license to modify only the Intune settings that map to the settings available in Microsoft 365 Business.﻿ 
+ **Important**: A Microsoft 365 Business subscription provides you with a license to modify only the Intune settings that map to the settings available in Microsoft 365 Business. 
   
 Click the policy name you want to select, and then choose **General, Assignments**, **Allowed apps**, **Exempt apps**, **Required settings**, or **Advanced settings** from the left nav to explore the available settings. 
   

@@ -3,7 +3,6 @@ title: "View policies and devices"
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
-ms.date: 10/31/2017
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -37,12 +36,5 @@ description: "View device policies and actions by signing in to Microsoft 365 bu
     
     ![Device actions page.](media/6d2ad0c4-9c96-4489-ab93-c4e38e317d45.PNG)
   
-## Related Topics
-
-[Microsoft 365 Business documentation and resources](https://go.microsoft.com/fwlink/p/?linkid=853701)
-  
-[Get started with Microsoft 365 Business](microsoft-365-business-0.md)
-  
-[Manage Microsoft 365 Business](manage.md)
   
 
