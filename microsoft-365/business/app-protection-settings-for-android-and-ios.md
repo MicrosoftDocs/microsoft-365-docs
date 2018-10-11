@@ -7,7 +7,12 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ms.custom: Adm_O365
+ms.collection: Adm_O365
+ms.custom:
+- Adm_O365
+- Core_O365Admin_Migration
+- MiniMaven
+- MSB365
 search.appverid:
 - BCS160
 - MET150
@@ -56,7 +61,6 @@ description: "Learn how to create, edit, or delete an app management policy, and
 2. On the **Delete policy** pane, choose the policies you want to delete \> **Select**, then **Confirm** to delete the policy or policies you chose. 
     
 ## Available settings
-<a name="bkmk_availablesettings"> </a>
 
 The following tables give detailed information about the available settings to protect work files on devices and the settings that control how users access Office files from their mobile devices.
   

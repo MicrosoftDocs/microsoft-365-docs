@@ -3,12 +3,16 @@ title: "Automatically install or uninstall Office on Windows 10 devices"
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
-ms.date: 1/8/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ms.custom: Adm_O365
+ms.collection: Adm_O365
+ms.custom:
+- Adm_O365
+- Core_O365Admin_Migration
+- MiniMaven
+- MSB365
 search.appverid:
 - BCS160
 - MET150

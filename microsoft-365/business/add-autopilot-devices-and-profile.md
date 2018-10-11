@@ -3,11 +3,14 @@ title: "Use the step-by-step guide to add Autopilot devices and profile"
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
-ms.date: 11/2/2017
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+ms.custom:
+- Core_O365Admin_Migration
+- MiniMaven
+- MSB365
 search.appverid:
 - BCS160
 - MET150
@@ -74,14 +77,3 @@ If you have no device groups or profiles created yet, the best way to get starte
     
 6. **You're done** page indicates that the profile you created (or chose) will be applied to the device group you created by uploading the list of devices. These settings will be in effect when the device users sign in next. Choose **Close**.
     
-## Related Topics
-
-[Troubleshoot AutoPilot device errors](troubleshoot-autopilot-errors.md)
-  
-[Microsoft 365 Business documentation and resources](https://go.microsoft.com/fwlink/p/?linkid=853701)
-  
-[Get started with Microsoft 365 Business](microsoft-365-business-0.md)
-  
-[Manage Business Microsoft 365 Business](manage.md)
-  
-
