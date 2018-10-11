@@ -3,11 +3,15 @@ title: "Enable domain-joined Windows 10 devices to be managed by Microsoft 365 B
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
-ms.date: 4/29/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+ms.custom:
+- Adm_O365
+- Core_O365Admin_Migration
+- MiniMaven
+- MSB365
 search.appverid:
 - BCS160
 - MET150
@@ -21,7 +25,7 @@ If your organization uses Windows Server Active Directory on-premises, you can s
   
 ## Set up domain-joined devices to be managed by Microsoft 365 Business
 
-To set up your organization's domain-joined devices to benefit from the capabilities provided by Azure Active Directory in addition to on-premises Active Directory, you can implement ** **H**ybrid Azure AD joined devices**. These are devices that are joined both to your on-premises Active Directory and your Azure Active Directory. Hybrid Azure AD joined devices can be protected and managed by Microsoft 365 Business.. 
+To set up your organization's domain-joined devices to benefit from the capabilities provided by Azure Active Directory in addition to on-premises Active Directory, you can implement **Hybrid Azure AD joined devices**. These are devices that are joined both to your on-premises Active Directory and your Azure Active Directory. Hybrid Azure AD joined devices can be protected and managed by Microsoft 365 Business.. 
   
 Complete the steps below to make your Windows 10 devices Hybrid Azure AD joined and managed by Microsoft 365 Business.
   

@@ -7,6 +7,10 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+ms.custom:
+- Core_O365Admin_Migration
+- MiniMaven
+- MSB365
 search.appverid:
 - BCS160
 - MET150
