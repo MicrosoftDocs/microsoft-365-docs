@@ -1,9 +1,8 @@
 ---
 title: "Manage protected devices with Microsoft 365 Business"
-ms.author: kfollis
-author: kfollis
-manager: mnirkhe
-ms.date: 7/9/2017
+ms.author: sirkkuw
+author: sirkkuw
+manager: scotv
 ms.audience: Admin
 ms.topic: overview
 f1_keywords:
@@ -11,7 +10,11 @@ f1_keywords:
 - 'O365E_DevicesManageKM'
 ms.service: o365-administration
 localization_priority: Normal
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- Core_O365Admin_Migration
+- MiniMaven
+- MSB365
 search.appverid:
 - BCS160
 - MET150

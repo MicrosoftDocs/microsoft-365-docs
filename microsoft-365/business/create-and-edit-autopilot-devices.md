@@ -3,12 +3,16 @@ title: "Create and edit AutoPilot devices"
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
-ms.date: 11/2/2017
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ms.custom: Adm_O365
+ms.collection: Adm_O365
+ms.custom:
+- Adm_O365
+- Core_O365Admin_Migration
+- MiniMaven
+- MSB365
 search.appverid:
 - BCS160
 - MET150
@@ -49,12 +53,3 @@ Devices need to meet these requirements:
     
     If you don't have any profiles yet, see [Create and edit AutoPilot profiles](create-and-edit-autopilot-profiles.md) for instructions. 
     
-## Related Topics
-
-[Microsoft 365 Business documentation and resources](https://go.microsoft.com/fwlink/p/?linkid=853701)
-  
-[Get started with Microsoft 365 Business](microsoft-365-business-0.md)
-  
-[Manage Business Microsoft 365 Business](manage.md)
-  
-

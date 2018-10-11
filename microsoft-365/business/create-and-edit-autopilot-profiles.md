@@ -3,12 +3,16 @@ title: "Create and edit AutoPilot profiles"
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
-ms.date: 10/31/2017
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ms.custom: Adm_O365
+ms.collection: Adm_O365
+ms.custom:
+- Adm_O365
+- Core_O365Admin_Migration
+- MiniMaven
+- MSB365
 search.appverid:
 - BCS160
 - MET150
@@ -34,7 +38,6 @@ A profile applies to a device, or a group of devices,
     ![Enter name and turn on settings in the Create profile panel.](media/63b5a00d-6a5d-48d0-9557-e7531e80702a.png)
   
 ### Apply profile to a device
-<a name="bk_applyprofile"> </a>
 
 After you create a profile you can apply it to a device or a group of devices. You can pick an existing profile in the [step-by-step guide](add-autopilot-devices-and-profile.md), you can apply it to new devices, or you can replace an existing profile for a device or group of devices. 
   
@@ -70,11 +73,3 @@ Once you've assigned a profile to a device, you can update it, even if you've al
     
 2. Click the check-box next to a device name and in the **Device** panel, choose a **None** from the **Assigned profile** drop-down \> **Save**.
     
-## See also
-
-[Microsoft 365 Business documentation and resources](https://go.microsoft.com/fwlink/p/?linkid=853701)
-  
-[Get started with Microsoft 365 Business](microsoft-365-business-0.md)
-  
-[Manage Business Microsoft 365 Business](manage.md)
-

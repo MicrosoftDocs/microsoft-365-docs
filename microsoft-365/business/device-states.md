@@ -3,12 +3,16 @@ title: "Device states"
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
-ms.date: 10/31/2017
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
-ms.custom: Adm_O365
+ms.collection: Adm_O365
+ms.custom:
+- Adm_O365
+- Core_O365Admin_Migration
+- MiniMaven
+- MSB365
 search.appverid:
 - BCS160
 - MET150
@@ -40,11 +44,3 @@ Devices in the **Device actions** list (Admin home \> **Device actions**) can ha
 |Delete pending  <br/> |Delete action is pending.  <br/> |
 |Discovered  <br/> |Microsoft 365 Business has detected the device.  <br/> |
    
-## See also
-
-[Microsoft 365 Business documentation and resources](https://go.microsoft.com/fwlink/p/?linkid=853701)
-  
-[Get started with Microsoft 365 Business](microsoft-365-business-0.md)
-  
-[Manage Business Microsoft 365 Business](manage.md)
-

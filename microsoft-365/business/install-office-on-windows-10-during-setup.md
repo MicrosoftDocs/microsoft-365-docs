@@ -1,16 +1,19 @@
 ---
 title: "Install Office on Windows 10 during setup"
-ms.author: kfollis
-author: kfollis
-manager: mnirkhe
-ms.date: 10/25/2017
+ms.author: sirkkuw
+author: sirkkuw
+manager: scotv
 ms.audience: Admin
 ms.topic: overview
 f1_keywords:
 - 'O365E_BCSSetup4OfficeInstall'
 ms.service: o365-administration
 localization_priority: Normal
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- Core_O365Admin_Migration
+- MiniMaven
+- MSB365
 search.appverid:
 - BCS160
 - MET150
