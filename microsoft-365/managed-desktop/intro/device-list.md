@@ -5,28 +5,36 @@ keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jdeckerms
 ms.localizationpriority: medium
-ms.date: 09/24/2018
+ms.date: 10/12/2018
 ---
 
 # Microsoft Managed Desktop devices
 
-This topic lists the specifications for devices used in Microsoft Managed Desktop.
+Microsoft Managed Desktop regularly evaluates devices to be included in the service. This topic outlines the requirements for a device to be enrolled in Microsoft Managed Desktop.
+
+For more information on Microsoft Managed Desktop, see [Microsoft Managed Desktop documentation and resources](https://docs.microsoft.com/microsoft-365/managed-desktop/). 
 
 <!-- Microsoft 365 E5; Device as a Service -->
 <!-- Split from device & technologies topic. Destination topic for aka.ms/device-list  -->
+To be enrolled in Microsoft Managed Desktop:
 
-## Devices
+- The device must be one of the following&#x00B9;:
+    - Surface Laptop, model 1769&#x00B2; 
+    - Surface Pro, model 17962&#x00B2;
+    - Surface Book 2, model 17932&#x00B2;
+- The device must have an image that&#x00B3;:
+    - Has the latest version of Windows 10 Enterprise or Pro;
+    - Has the latest version of Microsoft Office 365 Click to Run;
+    - Has the latest OEM-provided drivers installed; and
+    - Has no additional preloaded software
+- The device must not have completed the Windows first-run experience.
+- The device must be enrolled with Windows Autopilot and have the Microsoft Managed Desktop Autopilot profile assigned.
 
-Our catalog of devices is designed to provide a premium experience for all Enterprise features like Windows Autopilot, Windows Hello, Cortana premium, Bitlocker, Secure Boot and Hyper-V. Devices will use Enterprise software, such as System Guard (DRTM), Virtualization, drivers and applications that are HVCI-ready. 
+**Footnotes**
 
-These are the requirements for the approved devices that will be supported under the Microsoft Managed Desktop service.
-- Approved devices catalogue as of 3Q-CY2018:
-    - Surface Laptop: w/ 2.4 GHz i5, 8 GB DDR3, and 256 GB SSD
-    - Surface Pro: w/ 2.4 GHz i5, 8 GB DDR3, and 256 GB SSD 
-    - Surface Book 2: w/ 15” screen, 1.9GHz quad-core i7, 16 GB DDR3, and 512GB SSD
-- Device is activated less than One (1) year old
-- Device is freshly imaged
-    - Microsoft Office is pre-installed
-- Device is configured to work with Autopilot 
+&#x00B9; Additions can be made to this list at any time. Removals will be posted to this page 90 days prior to disallowing those devices from enrolling.
 
-For more information on capabilities and features of these devices, see [Compare Surface devices](https://www.microsoft.com/surface/devices/compare-devices).
+&#x00B2; For more information on capabilities and features of these devices, see [Compare Surface devices](https://www.microsoft.com/surface/devices/compare-devices).
+
+&#x00B3; This can be implemented either through a new device acquisition or by re-imaging a previously acquired device.
+
