@@ -20,8 +20,8 @@ To be enrolled in Microsoft Managed Desktop:
 
 - The device must be one of the following&#x00B9;:
     - Surface Laptop, model 1769&#x00B2; 
-    - Surface Pro, model 17962&#x00B2;
-    - Surface Book 2, model 17932&#x00B2;
+    - Surface Pro, model 1796&#x00B2;
+    - Surface Book 2, model 1793&#x00B2;
 - The device must have an image that&#x00B3;:
     - Has the latest version of Windows 10 Enterprise or Pro;
     - Has the latest version of Microsoft Office 365 Click to Run;
