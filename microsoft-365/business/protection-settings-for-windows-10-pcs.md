@@ -3,11 +3,14 @@ title: "Set device protection settings for Windows 10 PCs"
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
-ms.date: 8/22/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+ms.custom:
+- Core_O365Admin_Migration
+- MiniMaven
+- MSB365
 search.appverid:
 - BCS160
 - MET150
@@ -44,7 +47,6 @@ View a video on how to secure Windows 10 devices with Microsoft 365 Business:
 7. Finally, choose **Done** to save the policy, and assign it to devices. 
     
 ## Available settings
-<a name="bkmk_availablesettings"> </a>
 
 By default all settings are **On**. The following settings are available.
   
@@ -65,13 +67,5 @@ See [How do protection features in Microsoft 365 Business map to Intune settings
 |Keep Windows 10 devices up to date automatically  <br/> |Makes sure that Windows 10 devices automatically receive the latest updates.  <br/> |
 |Turn off device screen when idle for this amount of time  <br/> |Makes sure that company data is protected if a user is idle. A user may be working in a public location, like a coffee shop, and step away or be distracted for just a moment, leaving their device vulnerable to random glances. This setting lets you control how long the user can be idle before the screen shuts off.  <br/> |
    
-## Related Topics
-<a name="bkmk_availablesettings"> </a>
-
-[Microsoft 365 Business documentation and resources](https://go.microsoft.com/fwlink/p/?linkid=853701)
-  
-[Get started with Microsoft 365 Business](microsoft-365-business-0.md)
-  
-[Manage Microsoft 365 Business](manage.md)
   
 

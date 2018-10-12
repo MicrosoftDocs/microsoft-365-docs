@@ -3,12 +3,14 @@ title: "Microsoft 365 Business security features"
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
-ms.date: 10/8/2018
 ms.audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 localization_priority: Normal
-ms.custom: Adm_O365
+ms.custom:
+- Core_O365Admin_Migration
+- MiniMaven
+- MSB365
 search.appverid:
 - BCS160
 - MET150
@@ -21,7 +23,6 @@ description: "Learn about the security features that come with Microsoft 365 Bus
 Microsoft 365 Business offers simplified security features to help safeguard your data on PCs, phones, and tablets.
     
 ## Microsoft 365 Business admin center security features
-<a name="bkmk_admincenter"> </a>
 
 You can manage many of the Microsoft 365 Business security features in the admin center, which gives you a simplified way to turn these features on or off. In the admin center you can do the following:
   
@@ -48,7 +49,6 @@ You can manage many of the Microsoft 365 Business security features in the admin
     You can reset any Windows 10 devices that have device protection settings applied to them.
     
 ## Additional security features
-<a name="bkmk_additionalsecurity"> </a>
 
 Advanced features in Microsoft 365 Business are available to help you protect your business against cyber-threats and safeguard sensitive information.
   
@@ -79,21 +79,18 @@ Advanced features in Microsoft 365 Business are available to help you protect yo
 The next sections describe how you can manage these features in the Security &amp; Compliance center and the Intune admin center. Over time the simplified controls will be added to the Microsoft 365 Business admin center.
   
 ## Set up Advanced Threat Protection features
-<a name="bkmk_enableatp"> </a>
 
 - **Protect against unsafe attachments:** ATP identifies malicious content by opening email attachments in a virtual environment and performing analysis of the resulting behavior. The content is evaluated to determine its intent (whether normal or malicious), and ATP blocks delivery of unsafe attachments, helping protect you against phishing schemes and ransomware infections. To activate attachment protection, see [Set up Office 365 ATP Safe Attachments policies](https://support.office.com/article/078eb946-819a-4e13-8673-fe0c0ad3a775).
     
 - Protect your environment when users click malicious links: ATP also examines links in email at the time a user clicks them. If a link is unsafe, the user is warned not to visit the site or informed that the site has been blocked. This helps protect against phishing schemes. You can [Set up Office 365 ATP Safe Links policies](https://support.office.com/article/bdd5372d-775e-4442-9c1b-609627b94b5d#reveddefaultscc) or [Set up Office 365 ATP Safe Links policies](https://support.office.com/article/bdd5372d-775e-4442-9c1b-609627b94b5d#addemailpolscc).
     
 ## Set up DLP features
-<a name="bkmk_enabledlp"> </a>
 
 See [Create a DLP policy from a template](https://support.office.com/article/59414438-99f5-488b-975c-5023f2254369) for an example on how to set up a policy to protect against personally identifiable information (PII). 
   
 DLP comes with many ready-to-use policy templates for many different locales. For example, Australia Financial Data, Canada Personal Information Act, U.S. Financial Data, etc. See [What the DLP policy templates include](https://support.office.com/article/c2e588d3-8f4f-4937-a286-8c399f28953a) for a full list. All of these templates can be enabled similar to the PII template example. 
   
 ## Set up email retention with Exchange Online Archiving
-<a name="bkmk_enableeop"> </a>
 
  **Exchange Online Archiving** license features give you the ability to help maintain compliance and regulatory standards by preserving email content for the purposes of eDiscovery. It also helps reduce your risk in the event of litigation and provides a way to recover data after a security breach or when you need to recover deleted items. To activate these capabilities, you can use litigation hold to preserve all of a user's content, or use retention policies for greater customization. 
   
@@ -112,7 +109,6 @@ To place a mailbox on litigation hold, in the Admin center:
 **Retention:** You can enable customized retention policies, for example, to preserve for a specific amount of time or delete content permanently at the end of the retention period. To learn more, see [Overview of retention policies](https://support.office.com/article/5e377752-700d-4870-9b6d-12bfc12d2423).
     
 ## Set up Azure Information Protection features
-<a name="bkmk_enableaip"> </a>
 
 The ability to apply the following restrictions when sending emails in Outlook on the web is automatically enabled for all users:
   
@@ -131,7 +127,6 @@ To see how to add custom setting to the Azure Information Protection client, see
 For guidance on how to use the Azure Information Protection client, for example to classify a file or email, protect or file or email, and so on, see the [User guide](https://docs.microsoft.com/azure/information-protection/rms-client/client-user-guide).
   
 ## FAQ
-<a name="bkmk_faq"> </a>
 
  **Q: When will these new security features be available?**
   

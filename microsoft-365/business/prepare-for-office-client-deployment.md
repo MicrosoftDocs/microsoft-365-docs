@@ -8,6 +8,10 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+ms.custom:
+- Core_O365Admin_Migration
+- MiniMaven
+- MSB365
 search.appverid:
 - BCS160
 - MET150
@@ -37,7 +41,7 @@ To determine if you have the Click-to-Run version of Office, in any Office app g
   
 The end user whose PC:
   
-- **Has** ﻿ a ﻿Windows 10 Business﻿ user license, an active Microsoft 365 Business license, Windows 10 Creators Update, and is joined to Azure Active Directory. 
+- **Has**  a Windows 10 Business user license, an active Microsoft 365 Business license, Windows 10 Creators Update, and is joined to Azure Active Directory. 
     
 - **Doesn't have** 64-bit Office apps (example: Word, Excel, Powerpoint). If 64-bit Office apps are required, then this feature is not a good fit because there is no support for triggering a 64-bit 2016 Click-to-Run version of Office from the Microsoft 365 Business admin console. 
     
@@ -45,7 +49,7 @@ The end user whose PC:
     
 The following table details what action the end users/admins may need to take, depending on their beginning state, to have a successful 32-bit Click-to-Run version of Office deployment from the Microsoft 365 Business admin console.
   
-|**﻿Starting Office install status**|**Action to take before Microsoft 365 Business Office install**|**End state**|
+|**Starting Office install status**|**Action to take before Microsoft 365 Business Office install**|**End state**|
 |:-----|:-----|:-----|
 |No Office suite installed  <br/> |None  <br/> |Office 2016 32-bit is installed by using click-to-run  <br/> |
 |Existing Click-to-Run 32-bit version of Office (2016 or earlier) and no standalone apps  <br/> |None  <br/> |Upgraded to the latest 32-bit Click-to-Run version of Office 2016, as needed **\*** <br/> |
