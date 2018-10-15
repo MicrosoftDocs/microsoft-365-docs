@@ -58,7 +58,7 @@ The set-up steps include information for setups that include local Active Direct
   
 ### Step 2: Add users and assign licenses
 
-1. You can add users here, or you can [add users later](add-users-0.md) in the admin center. 
+1. You can add users here, or you can [add users later](add-users-m365b.md) in the admin center. 
     
     Any users you add get automatically assigned a Microsoft 365 Business license.
     
@@ -113,7 +113,8 @@ In addition to the security and compliance setting in the setup wizard, you can 
     
 - Protect your environment when users click malicious links. ATP examines links in email at the time a user clicks them. If a link is unsafe, the user is warned not to visit the site or informed that the site has been blocked. This helps protect against phishing schemes. [Set up Office 365 ATP Safe Links policies](https://support.office.com/article/bdd5372d-775e-4442-9c1b-609627b94b5d#reveddefaultscc) or [Set up Office 365 ATP Safe Links policies](https://support.office.com/article/bdd5372d-775e-4442-9c1b-609627b94b5d#addemailpolscc).
     
-- You can preserve all mailbox content including deleted items by putting a user's entire mailbox on **litigation hold**. For instructions, see [Set up email retention with Exchange Online Archiving](security-features.md#bkmk_enableeop).
+- You can preserve all mailbox content including deleted items by putting a user's entire mailbox on **litigation hold**. For instructions, see 
+- [Set up email retention with Exchange Online Archiving](security-features.md#set-up-email-retention-with-exchange-online-archiving).
     
 - Set up customized **retention policies**, for example, to preserve for a specific amount of time or delete content permanently at the end of the retention period. You can enable customized retention policies in the Securities and compliance center, go to **Data governance** \> **Retention**, and then follow the steps in the wizard. To learn more, see [Overview of retention policies](https://support.office.com/article/5e377752-700d-4870-9b6d-12bfc12d2423).
     
