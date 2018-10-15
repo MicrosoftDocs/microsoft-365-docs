@@ -1,9 +1,8 @@
 ---
 title: "Protect work files on devices"
-ms.author: kfollis
-author: kfollis
-manager: mnirkhe
-ms.date: 7/31/2017
+ms.author: sirkkuw
+author: sirkkuw
+manager: scotv
 ms.audience: Admin
 ms.topic: overview
 f1_keywords:

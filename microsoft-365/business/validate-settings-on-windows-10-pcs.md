@@ -1,5 +1,5 @@
 ---
-title: "Validate device protection settings on Windows 10 PCs"
+title: "Validate app protection settings on Windows 10 PCs"
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -7,12 +7,17 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ms.custom: Adm_O365
+ms.collection: Adm_O365
+ms.custom:
+- Adm_O365
+- Core_O365Admin_Migration
+- MiniMaven
+- MSB365
 search.appverid:
 - BCS160
 - MET150
-ms.assetid: 31a9b583-8ec7-4b95-8042-acf4bb86985f
-description: "Learn how to validate device protection policies for Windows 10 devices. "
+ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
+description: "Learn how to validate Microsoft 365 Business app protection settings in Windows 10 devices."
 ---
 
 # Validate device protection settings on Windows 10 PCs

@@ -3,11 +3,17 @@ title: "Get started with Microsoft 365 Business"
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
+ms.date: 9/20/2018
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
-ms.custom: Adm_O365
+ms.collection: Adm_O365
+ms.custom:
+- Adm_O365
+- Core_O365Admin_Migration
+- MiniMaven
+- MSB365
 search.appverid:
 - BCS160
 - MET150
@@ -30,7 +36,6 @@ Microsoft 365 Business is meant for up to 300 licenses, if you need more license
 - If you don't have a partner and want to get Microsoft 365 Business, you can [buy it here](https://www.microsoft.com/en-us/microsoft-365/business).
     
 ## Set up Microsoft 365 Business
-<a name="bkmk_setupbcs"> </a>
 
  **Overview of Microsoft 365 Business Suite set up**
   
@@ -71,7 +76,6 @@ If you retain a local Active Directory that contains some on-premises resources 
 After you have set up Windows 10 PCs, you can [automatically install Office](auto-install-or-uninstall-office.md) to the devices. 
   
 ## Contact support
-<a name="bkmk_support"> </a>
 
  **If you need to contact support:**
   
@@ -79,11 +83,4 @@ After you have set up Windows 10 PCs, you can [automatically install Office](aut
     
 - As a Microsoft 365 Business admin, you have access to our customer support team, **[Contact support for business products - Admin Help](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)**
     
-## Related Topics
-<a name="bkmk_support"> </a>
-
-[Microsoft 365 Business documentation and resources](https://go.microsoft.com/fwlink/p/?linkid=853701)
-  
-[Manage Microsoft 365 Business](manage.md)[Migrate to Microsoft 365 Business](migrate-to-microsoft-365-business.md)
-  
 

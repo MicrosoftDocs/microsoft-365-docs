@@ -1,9 +1,8 @@
 ---
 title: "Protect work files when a mobile device is lost or stolen"
-ms.author: kfollis
-author: kfollis
-manager: mnirkhe
-ms.date: 7/7/2017
+ms.author: sirkkuw
+author: sirkkuw
+manager: scotv
 ms.audience: Admin
 ms.topic: overview
 f1_keywords:

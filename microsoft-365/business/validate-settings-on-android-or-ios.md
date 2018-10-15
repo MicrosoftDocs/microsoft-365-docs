@@ -3,12 +3,14 @@ title: "Validate app protection settings on Android or iOS devices"
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
-ms.date: 10/2/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- Core_O365Admin_Migration
+- MSB365
 search.appverid:
 - BCS160
 - MET150
