@@ -1,6 +1,6 @@
 ---
 title: Compliance solutions
-description: 
+description: "This library provides technical resources for using capabilities in Microsoft 365 to work towards compliance of regulations that apply to many organizations, starting with GDPR."
 keywords: Microsoft 365, Microsoft 365 Education, Microsoft 365 documentation, GDPR
 author: BrendaCarter
 localization_priority: Priority
