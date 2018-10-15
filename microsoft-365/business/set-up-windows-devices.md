@@ -20,7 +20,7 @@ description: "Learn how to set up Windows devices running Windows 10 Pro for Mic
 
 # Set up Windows devices for Microsoft 365 Business users
 
-## Prerequisite
+## Prerequisites
 
 Before you can set up Windows devices for Microsoft 365 Business users, make sure all the Windows devices are running Windows 10 Pro, version 1703 (Creators Update). Windows 10 Pro is a prerequisite for deploying Windows 10 Business, which is a set of cloud services and device management capabilities that complement Windows 10 Pro and enable the centralized management and security controls of Microsoft 365 Business.
   

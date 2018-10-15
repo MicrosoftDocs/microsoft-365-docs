@@ -46,7 +46,7 @@ description: "Learn how to create, edit, or delete an app management policy, and
     
 ## Edit an app management policy
 
-1. On the **Policies** card, choose ** Edit policy **.
+1. On the **Policies** card, choose **Edit policy**.
     
 2. On the **Edit policy** pane, choose the policy you want to change 
     

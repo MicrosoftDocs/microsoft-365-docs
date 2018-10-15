@@ -58,7 +58,7 @@ Under **Manage how user access Office files in mobile devices**
 
 The following table details how the Windows 10 application policy settings map to Intune settings.
   
-To find the Intune setting, while signed in with your Microsoft 365 Business admin credentials, go to [Azure portal](https://portal.azure.com), then select **More services**, and type in Intune into the **Filter**, select ** Intune App Protection ** \> ** App Policy **.
+To find the Intune setting, while signed in with your Microsoft 365 Business admin credentials, go to [Azure portal](https://portal.azure.com), then select **More services**, and type in Intune into the **Filter**, select **Intune App Protection** \> **App Policy**.
   
  **Important**: A Microsoft 365 Business subscription provides you with a license to modify only the Intune settings that map to the settings available in Microsoft 365 Business. 
   
@@ -77,7 +77,7 @@ Click the policy name you want to select, and then choose **General, Assignments
 
 The following table details how the Windows 10 device configuration settings map to Intune settings.
   
-To find the Intune setting, while signed in with your Microsoft 365 Business admin credentials, go to [Azure portal](https://portal.azure.com), then select **More services**, and type in Intune into the **Filter**, select ** Intune ** \> **Device configuration** \> **Profiles**. Then select **Device policy for Windows 10** \> **Properties** \> **Settings**.
+To find the Intune setting, while signed in with your Microsoft 365 Business admin credentials, go to [Azure portal](https://portal.azure.com), then select **More services**, and type in Intune into the **Filter**, select **Intune** \> **Device configuration** \> **Profiles**. Then select **Device policy for Windows 10** \> **Properties** \> **Settings**.
   
 |**Windows 10 device policy setting**|**Intune setting(s)**|
 |:-----|:-----|
