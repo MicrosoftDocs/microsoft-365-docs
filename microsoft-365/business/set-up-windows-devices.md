@@ -3,11 +3,14 @@ title: "Set up Windows devices for Microsoft 365 Business users"
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
-ms.date: 10/31/2017
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+ms.custom:
+- Core_O365Admin_Migration
+- MiniMaven
+- MSB365
 search.appverid:
 - BCS160
 - MET150
@@ -46,7 +49,6 @@ For a brand new device running Windows 10 Pro Creators Update, or for a device t
    Once you're done, the user will be connected to your organization's Azure AD. See [Verify the device is connected to Azure AD](set-up-windows-devices.md#bkmk_verifyaad) to make sure. 
   
 ### For a device already set up and running Windows 10 Pro
-<a name="bk_existingwindows"> </a>
 
  **Connect users to Azure AD:**
   
@@ -81,7 +83,6 @@ For a brand new device running Windows 10 Pro Creators Update, or for a device t
 If you uploaded files to OneDrive for Business, sync them back down. If you used a third party tool to migrate profile and files, sync those also to the new profile.
   
 ## Verify the device is connected to Azure AD
-<a name="bkmk_verifyaad"> </a>
 
 To verify your sync status, on the **Access work or school** page in **Settings**, click in the **Connected to** _ \<organization name\> _ area to expose the buttons **Info** and **Disconnect**. Click on **Info** to get your synchronization status. 
   
@@ -92,7 +93,6 @@ To start using the Microsoft 365 Business account, go to the Windows **Start** b
 ![Click Info button to view synchronization status](media/818f7043-adbf-402a-844a-59d50034911d.png)
   
 ## Verify the device is upgraded to Windows 10 Business
-<a name="bkmk_verifywin10"> </a>
 
 Verify that your Azure AD joined Windows 10 devices were upgraded to Windows 10 Business as part of your Microsoft 365 Business subscription.
   
@@ -103,7 +103,6 @@ Verify that your Azure AD joined Windows 10 devices were upgraded to Windows 10 
     ![Verify that Windows edition is Windows 10 Business.](media/ff660fc8-d3ba-431b-89a5-f5abded96c4d.png)
   
 ## Next steps
-<a name="bkmk_verifywin10"> </a>
 
 To set up your mobile devices, see [Set up mobile devices for Microsoft 365 Business users](set-up-mobile-devices.md), To set device protection or app protection policies, see [Manage Microsoft 365 Business](manage.md).
   

@@ -3,7 +3,6 @@ title: "Troubleshoot AutoPilot device errors"
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
-ms.date: 10/31/2017
 ms.audience: Admin
 ms.topic: troubleshooting
 f1_keywords:
@@ -12,7 +11,10 @@ f1_keywords:
 - 'BCS365_ZTDTroubleshootDeviceErrors'
 ms.service: o365-administration
 localization_priority: Normal
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- Core_O365Admin_Migration
+- MSB365
 search.appverid:
 - BCS160
 - MET150
@@ -36,11 +38,3 @@ Here's info on some of the errors you might see while working with AutoPilot dev
 |This device is not supported for setup by using AutoPilot  <br/> | This error means the device does not meet AutoPilot deployment requirements. Devices need to meet these requirements:  <br/>  Windows 10, version 1703 or later.  <br/>  New devices that have not been through Windows out-of-box experience.  <br/> |
 |Device not found  <br/> |This error means that one or more devices in your CSV file is not registered to your organization. To fix this, ask your hardware vendor for help.  <br/> |
    
-## See also
-
-[Microsoft 365 Business documentation and resources](https://go.microsoft.com/fwlink/p/?linkid=853701)
-  
-[Get started with Microsoft 365 Business](microsoft-365-business-0.md)
-  
-[Manage Business Microsoft 365 Business](manage.md)
-

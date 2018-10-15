@@ -3,11 +3,14 @@ title: "Upgrade Windows devices to Windows Pro Creators Update"
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
-ms.date: 10/31/2017
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+ms.custom:
+- Adm_O365
+- Core_O365Admin_Migration
+- MSB365
 search.appverid:
 - MET150
 - MOE150

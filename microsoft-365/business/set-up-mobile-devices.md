@@ -3,11 +3,14 @@ title: "Set up mobile devices for Microsoft 365 Business users"
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
-ms.date: 6/20/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+ms.custom:
+- Core_O365Admin_Migration
+- MiniMaven
+- MSB365
 search.appverid:
 - BCS160
 - MET150
@@ -23,7 +26,6 @@ Follow the instructions in the tabs to install Office on an iPhone or an Android
 The example is for Outlook, but applies for any other Office apps you want to install also.
   
 ## Set up mobile devices
-<a name="bkmk_iphone"> </a>
 
 ## [iPhone](#tab/iPhone)
   
