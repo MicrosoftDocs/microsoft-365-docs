@@ -23,7 +23,7 @@ description: "Learn to manage Microsoft 365 Business related admin tasks, mobile
 
 ## General Microsoft 365 Business admin tasks
 
-- [Add additional users to Microsoft 365 Business](add-users-0.md)
+- [Add additional users to Microsoft 365 Business](add-users-m365b.md)
     
 - [View policies and devices](view-policies-and-devices.md)
     
@@ -89,7 +89,7 @@ The following topics describe how you can use Windows AutoPilot in Microsoft 365
     
 - [Enable domain-joined Windows 10 devices to be managed by Microsoft 365 Business](manage-windows-10-devices.md)
     
-- [Additional security features](security-features.md#bkmk_additionalsecurity)
+[Additional security features](security-features.md#additional-security-features)
     
 
   

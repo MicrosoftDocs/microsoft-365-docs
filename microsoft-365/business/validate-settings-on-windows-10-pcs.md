@@ -50,7 +50,7 @@ After you [set up devices policies](protection-settings-for-windows-10-pcs.md), 
 
 [Microsoft 365 Business documentation and resources](https://go.microsoft.com/fwlink/p/?linkid=853701)
   
-[Get started with Microsoft 365 Business](microsoft-365-business-0.md)
+[Get started with Microsoft 365 Business](microsoft-365-business-overview.md)
   
 [Manage Microsoft 365 Business](manage.md)
   
