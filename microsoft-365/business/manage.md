@@ -87,7 +87,7 @@ The following topics describe how you can use Windows AutoPilot in Microsoft 365
     
 - [Migrate to Microsoft 365 Business](migrate-to-microsoft-365-business.md)
     
-- [Enable domain-joined Windows 10 devices to be managed by Microsoft 365 Business](manage-windows-10-devices.md)
+- [Enable domain-joined Windows 10 devices to be managed by Microsoft 365 Business](manage-windows-devices.md)
     
 [Additional security features](security-features.md#additional-security-features)
     

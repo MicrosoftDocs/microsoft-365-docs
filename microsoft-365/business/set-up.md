@@ -34,11 +34,11 @@ Watch a video on how to set up Microsoft 365 Business when you don't have an on-
   
 The set-up steps include information for setups that include local Active Directory. If you want to continue to access domain-joined devices, read the following articles for two different way of enabling that, and complete the steps before you run the Setup wizard:
   
-- [Enable domain-joined Windows 10 devices to be managed by Microsoft 365 Business](manage-windows-10-devices.md)
+- [Enable domain-joined Windows 10 devices to be managed by Microsoft 365 Business](manage-windows-devices.md)
     
     -This is the recommended way.
     
-- [Access on-premises resources from an Azure AD-joined device in Microsoft 365 Business](access-resources-from-an-azure-ad-joined-device.md)
+- [Access on-premises resources from an Azure AD-joined device in Microsoft 365 Business](access-resources.md)
     
 ### Step 1: Personalize sign-in
 

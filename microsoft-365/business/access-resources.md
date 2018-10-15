@@ -34,7 +34,7 @@ Complete the following steps to enable your organization's Azure AD joined devic
     
 No additional steps are required to get access to on-premise resources for Azure AD joined devices. This is built-in functionality available in Windows 10. 
   
-If your organization is not ready to deploy in the Azure AD Joined Device Configuration described above, consider setting up [Hybrid Azure AD Joined device configuration](manage-windows-10-devices.md).
+If your organization is not ready to deploy in the Azure AD Joined Device Configuration described above, consider setting up [Hybrid Azure AD Joined device configuration](manage-windows-devices.md).
   
 ### Considerations when joining your Windows devices to Azure AD
 
