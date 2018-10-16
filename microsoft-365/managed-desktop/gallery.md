@@ -4,7 +4,7 @@ description:
 keywords: 
 ms.service: m365-md
 author: jdeckerms
-ms.localizationpriority: medium
+ms.localizationpriority: normal
 ms.date: 06/06/2018
 ---
 

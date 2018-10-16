@@ -8,7 +8,7 @@ author: jdeckerms
 ms.author: jdecker
 ms.topic: article
 ms.date: 09/24/2018
-ms.localizationpriority: medium
+ms.localizationpriority: normal
 ---
 
 # Change history for Microsoft Managed Desktop documentation
