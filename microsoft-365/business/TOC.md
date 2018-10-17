@@ -1,4 +1,4 @@
-# [Microsoft 365 Business](microsoft-365-business-overview.md)
+# [Get started](microsoft-365-business-overview.md)
 ## [Get Microsoft 365 Business](get-microsoft-365-business.md)
 ## [Pre-requisites for data protection](pre-requisites-for-data-protection.md)
 ## [Security features](security-features.md)
