@@ -11,7 +11,7 @@ ms.date: 04/13/2018
 ms.author: bcarter
 manager: laurawi
 audience: itpro
-ms.collection: GDPROur Commitment to Our Customers
+ms.collection: GDPR
 ---
 
 # Office 365 Breach Notification Under the GDPR

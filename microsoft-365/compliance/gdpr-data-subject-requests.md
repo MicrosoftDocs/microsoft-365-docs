@@ -20,7 +20,6 @@ The General Data Protection Regulation (GDPR) gives rights to people (known in t
 These articles discusses how to use Microsoft products, services, and administrative tools to help you find and act on personal data to respond to DSRs:
 
 - [Office 365](gdpr-dsr-Office365.md)
-- [Windows](gdpr-dsr-Windows.md)
 - [Azure](gdpr-dsr-Azure.md)
 - [Intune](gdpr-dsr-Intune.md)
 - [Dynamics 365](gdpr-dsr-Dynamics365.md)

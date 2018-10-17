@@ -19,7 +19,6 @@ ms.collection: GDPR
 Microsoft takes its obligations under the General Data Protection Regulation (GDPR) seriously. For information about how Microsoft services protect against a personal data breach and how we respond and notify you if a breach occurs, see the following topics:
 
 - [Office 365](gdpr-breach-Office365.md) 
-- [Windows](gdpr-breach-Windows.md)
 - [Azure](gdpr-breach-Azure.md)
 - [Dynamics 365](gdpr-breach-Dynamics365.md)
 - [Microsoft Support and Professional Services](gdpr-breach-Microsoft-Support-Professional-Services.md)
