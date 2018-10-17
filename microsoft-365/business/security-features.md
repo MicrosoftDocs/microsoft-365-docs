@@ -48,7 +48,7 @@ You can manage many of the Microsoft 365 Business security features in the admin
     
     You can reset any Windows 10 devices that have device protection settings applied to them.
     
-## Additional security features
+## Additional security features 
 
 Advanced features in Microsoft 365 Business are available to help you protect your business against cyber-threats and safeguard sensitive information.
   
@@ -128,36 +128,11 @@ For guidance on how to use the Azure Information Protection client, for example 
   
 ## FAQ
 
- **Q: When will these new security features be available?**
+ ### Are these security features available in all markets?
   
-A: The following features were added to Microsoft 365 Business on April 30, 2018.
+Yes, these features are available in all markets where Microsoft 365 Business is sold.
   
-- Office 365 Advanced Threat Protection for email
-    
-- Information Protection in web clients
-    
-- Exchange Online Archiving
-    
-- Enforcement of Windows Exploit Guard and Bitlocker Encryption
-    
-> [!NOTE]
-> Many of the features in this list are available now, others are made available to new and existing customers over the course of a few weeks. 
-  
-During the Summer 2018, Data Loss Prevention will become available and the Office desktop applications will be updated to support:
-  
-- DLP Policy Tips in the Outlook, Word, Excel, and PowerPoint desktop applications.
-    
-- Information Rights Management features in the Outlook Word, Excel, PowerPoint desktop applications.
-    
-- Advanced Threat Protection for Word, Excel, and PowerPoint documents.
-    
- **Q: Are these security features available in all markets?**
-  
-A: Yes, these features are available in all markets where Microsoft 365 Business is sold.
-  
- **Q: How do I find the Security &amp; Compliance center?**
-  
-A:
+### How do I find the Security &amp; Compliance center?
   
 1. [Sign in to Microsoft 365 Business](https://portal.microsoft.com/) by using your admin credentials. 
     
@@ -167,9 +142,8 @@ A:
   
 3. Choose **Security &amp; Compliance** to go to Security &amp; compliance center. 
     
- **Q: How do I find the Intune admin center?**
+ ### How do I find the Intune admin center?
   
-A:
   
 1. [Sign in to Microsoft 365 Business](https://portal.microsoft.com/) by using your admin credentials. 
     
