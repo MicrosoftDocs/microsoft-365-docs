@@ -39,6 +39,7 @@ Under **Protect work files when devices are lost or stolen**
 |:-----|:-----|
 |Delete work files from an inactive device after  <br/> |Offline interval (days) before app data is wiped  <br/> |
 |Force users to save work files to OneDrive for Business  <br/> Note that only OneDrive for Business is allowed  <br/> |Select which storage services corporate data can be saved to  <br/> |
+|||
    
 Under **Manage how user access Office files in mobile devices**
   
@@ -53,6 +54,7 @@ Under **Manage how user access Office files in mobile devices**
 |Require users to sign in again after Office apps have been idle for (this is disabled if PIN is not required)  <br/> | Recheck the access requirements after (minutes)  <br/>  This also sets:  <br/> **Timeout** is set to minutes  <br/>  This is same number of minutes you set in Microsoft 365 Business.  <br/> **Offline grace period** is set to 720 minutes by default  <br/> |
 |Deny access to work files on jailbroken or rooted devices  <br/> |Block managed apps from running on jailbroken or rooted devices  <br/> |
 |Allow users to copy content from Office apps into personal apps  <br/> | Restrict cut, copy and paste with other apps  <br/>  If the Microsoft 365 Business option is set to **On**, then these three options are also set to **All Apps** in Intune:  <br/> **Allow app to transfer data to other apps** <br/> **Allow app to receive data from other apps** <br/> **Restrict cut, copy, and paste with other apps** <br/>  If the Microsoft 365 Business option is set to **On**, then all the Intune options are set to:  <br/> **Allow app to transfer data to other apps** is set to **Policy managed apps** <br/> **Allow app to receive data from other apps** is set to **All Apps** <br/> **Restrict cut, copy, and paste with other apps** is set to **Policy Managed apps with Paste-In** <br/> |
+|||
    
 ## Windows 10 app protection settings
 
@@ -72,6 +74,7 @@ Click the policy name you want to select, and then choose **General, Assignments
 |Enable recovery of protected data  <br/> |**Advanced settings** \> **Data protection**: **Show the enterprise data protection icon** and **Use Azure RMS for WIP** are set to **On**.  <br/> |
 |Protect additional company cloud locations  <br/> |**Advanced settings** \> **Protected domains** and **Cloud resources** show domains and SharePoint sites.  <br/> |
 |Files used by these apps are protected  <br/> |The list of protected apps is listed in **Allowed apps**.  <br/> |
+|||
    
 ## Windows 10 device protection settings
 
@@ -88,5 +91,6 @@ To find the Intune setting, while signed in with your Microsoft 365 Business adm
 |Allow users to access Cortana  <br/> |**General** \> **Cortana** is set to **block** in Intune when set to **off** in Microsoft 365 Business.  <br/> |
 |Allow users to receive Windows tips and advertisements from Microsoft  <br/> |**Windows spotlight**, all blocked if this is set to **off** in Microsoft 365 Business.  <br/> |
 |Keep Windows 10 devices up to date automatically  <br/> | This setting is in **Microsoft Intune** \> **Service updates - Windows 10 Update Rings**, choose U **pdate policy for Windows 10 devices**, and then **Properties** \> **Settings**.  <br/>  When the Microsoft 365 Business setting is set to **On**, all of the following settings are set:  <br/> **Service branch** is set to **CB** (CBB when this is turned off in Microsoft 365 Business).  <br/> **Microsoft product updates** is set to **Allow**.  <br/> **Windows drivers** is set to **Allow**.  <br/> **Automatic update behavior** is set to **Auto install at maintenance time** with:  <br/> **After hours start** is set to **6 AM**.  <br/> **Active hours end** is set to **10 PM**.  <br/> **Quality update deferral period (days)** is set to **0**.  <br/> **Feature update deferral period (days)** is set to **0**.  <br/> **Delivery optimization download mode** is set to **HTTP blended with peering behind same NAT**.  <br/> |
+|||
    
 
