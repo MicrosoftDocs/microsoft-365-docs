@@ -3,7 +3,7 @@ title: Deployment of Microsoft 365 Enterprise with existing infrastructure
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/09/2018
+ms.date: 06/04/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -26,28 +26,37 @@ Before you can exit each phase, you must examine its exit criteria, which is a s
 
 ## Exit criteria for networking (phase 1)
 
-Step through the following required and optional conditions for the networking infrastructure for Microsoft 365 Enterprise.
+Step through the following required and optional conditions for the networking infrastructure.
 
 [!INCLUDE [Deployment exit criteria for networking](./includes/deployment-exit-criteria-networking.md)]
 
 ## Exit criteria for identity (phase 2)
 
-Step through the following required and optional conditions for the identity infrastructure for Microsoft 365 Enterprise.
+Step through the following required and optional conditions for the identity infrastructure.
 
 [!INCLUDE [Deployment exit criteria for identity](./includes/deployment-exit-criteria-identity.md)]
 
+## Exit criteria for Windows 10 Enterprise (phase 3)
+
+Step through the following required and optional conditions for the Windows 10 Enterprise infrastructure.
+
+[!INCLUDE [Deployment exit criteria for identity](./includes/deployment-exit-criteria-windows10.md)]
+
 ## Exit criteria for Office 365 ProPlus (phase 4)
 
-Step through the following required and optional conditions for the Office 365 ProPlus infrastructure for Microsoft 365 Enterprise.
+Meet the requirements for assessment, deployment planning, and deployment of the Office 365 ProPlus infrastructure for Microsoft 365 Enterprise.
 
 [!INCLUDE [Deployment exit criteria for Office 365 ProPlus](./includes/deployment-exit-criteria-office365proplus.md)]
 
+## Exit criteria for mobile device management (phase 5)
+
+Meet the following requirements for the mobile device management infrastructure.
+
+[!INCLUDE [Deployment exit criteria for mobile device management](./includes/deployment-exit-criteria-mobility.md)]
+
 ## Exit criteria for information protection (phase 6)
 
-Step through the following required and optional conditions for the information protection infrastructure for Microsoft 365 Enterprise.
+Step through the following required and optional conditions for the information protection infrastructure.
 
 [!INCLUDE [Deployment exit criteria for information protection](./includes/deployment-exit-criteria-infoprotect.md)]
-
-
-
 

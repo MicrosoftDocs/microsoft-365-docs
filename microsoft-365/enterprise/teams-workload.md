@@ -2,7 +2,7 @@
 title: "Deploy Microsoft Teams for Microsoft 365 Enterprise"
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 05/02/2018
+ms.date: 09/16/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -40,12 +40,23 @@ These three groups ensure that your Teams deployment includes considerations tha
 A list of people that represent the business, technical, and end user aspects of your organization.
 
 ### Step 2: Determine and prioritize your Teams business scenarios
-
-Teams can be used for many different purposes. You need to figure out which purposes map to your business needs on the separate levels of your organization, your business groups, your departments, and individual working and project teams. Take a look at the [Microsoft 365 FastTrack Productivity Library](https://fasttrack.microsoft.com/microsoft365/productivitylibrary) for examples to help you define Teams scenarios. 
+Teams can be used for many different purposes. You need to figure out which purposes map to your business needs on the separate levels of your organization, your business groups, your departments, and individual working and project teams. Take a look at the [Microsoft 365 Productivity Library](https://www.microsoft.com/microsoft-365/success) for examples to help you define Teams scenarios. 
 
 You should target Teams to address fast-moving and highly collaborative teams that work closely together and require many more facilities than just email with Exchange Online can provide. Examples are live group chats with a recorded history and a common and easy-to-find place to store files and notes. 
 
 One way to see the benefits of Teams is to examine how a team or v-team interacts today, and then find an appropriate Teams scenario that replaces the interaction and provides easier ways to collaborate and provide additional capabilities.
+
+Teams enables these strategic business scenarios for Microsoft 365 Enterprise:
+
+- Communicate with your team to stay informed, solicit input, and build cohesion and consensus
+- Engage your firstline workers to enable your Digital Transformation
+- Understand your work habits to improve your influence and impact
+
+For more information, see the [Digital transformation using Microsoft 365](http://transform.microsoft.com). 
+
+#### Microsoft Teams for highly regulated data
+
+Highy regulated data is subject to regional regulations or is the most valuable data for your organization, such as trade secrets, financial or human resources information, and organization strategy. You can configure a team for restricted access, data classification, data loss prevention, and encryption for this type of data. For the details, see [Microsoft Teams and SharePoint Online sites for highly regulated data](teams-sharepoint-online-sites-highly-regulated-data.md).
 
 #### Result
 
@@ -54,6 +65,10 @@ A list of Teams scenarios that address your organization’s needs for collabora
 ## Phase 2: Onboard
 
 In this phase, you plan for the technical aspects of a Teams deployment and start rolling out Teams to selected groups of users.
+
+### Prerequisites: Identity and device access configuration
+
+To protect access to teams, ensure that you have configured [identity and device access policies](identity-access-policies.md) and the [recommended SharePoint Online access policies](sharepoint-file-access-policies.md).
 
 ### Step 1: Complete your technical planning
 
@@ -147,6 +162,13 @@ Here are some suggested activities:
 #### Result
 
 Your organization has adopted Teams as its collaboration and teamwork tool.
+
+## How Microsoft does Microsoft 365 Enterprise
+
+To peek inside Microsoft and learn how the company deployed and is using Microsoft Teams for collaboration, see:
+
+- [Deploying Microsoft Teams streamlines collaboration and improves teamwork](https://www.microsoft.com/itshowcase/Article/Content/1013/Deploying-Microsoft-Teams-streamlines-collaboration-and-improves-teamwork)
+- [Microsoft Teams increases collaboration in the modern workplace at Microsoft](https://www.microsoft.com/itshowcase/Article/Content/1012/Microsoft-Teams-increases-collaboration-in-the-modern-workplace-at-Microsoft)
 
 ## Next steps
 

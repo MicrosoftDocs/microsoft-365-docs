@@ -1,5 +1,5 @@
 ---
-title: "Step 6: Set up on-demand global administrators"
+title: "Step 3: Set up on-demand global administrators"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -14,13 +14,13 @@ ms.custom:
 description: Understand and configure Azure AD Privileged Identity Management.
 ---
 
-# Step 6: Set up on-demand global administrators
+# Step 3: Set up on-demand global administrators
 
 *This step is optional and applies only to the E5 version of Microsoft 365 Enterprise*
 
 ![](./media/deploy-foundation-infrastructure/identity_icon-small.png)
 
-In Step 6, you'll set up Azure AD Privileged Identity Management (PIM) to reduce the amount of time that your global administrator accounts are vulnerable to attack by malicious users. PIM provides on-demand, just-in-time assignment of the global administrator role when needed.  
+In this step, you'll set up Azure AD Privileged Identity Management (PIM) to reduce the amount of time that your global administrator accounts are vulnerable to attack by malicious users. PIM provides on-demand, just-in-time assignment of the global administrator role when needed.  
 
 Instead of your global administrator accounts being a permanent admin, they become eligible admins. The global administrator role is inactive until someone needs it. You'll then complete an activation process to add the global administrator role to the global administrator account for a specific amount of time. When the time expires, PIM removes the global administrator role from the global administrator account.
 
@@ -30,11 +30,11 @@ To enable Azure PIM for your Azure AD tenant and global administrator accounts, 
 
 To develop a comprehensive roadmap to secure privileged access against cyber attackers, see [Securing privileged access for hybrid and cloud deployments in Azure AD](https://docs.microsoft.com/azure/active-directory/admin-roles-best-practices).
 
-As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria.md#crit-identity-step6) for this step.
+As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria.md#crit-identity-pim) for this step.
 
 ## Next step
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step7.png)| [Set up multi-factor authentication](identity-multi-factor-authentication.md) |
+|![](./media/stepnumbers/Step4.png)| [Simplify password resets](identity-password-reset.md) |
 
