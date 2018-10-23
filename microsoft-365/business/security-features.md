@@ -121,7 +121,7 @@ The ability to apply the following restrictions when sending emails in Outlook o
     
 - **Highly Confidential**: This restriction can be applied to highly confidential data, allowing employees to view, edit, and reply, but not forward, print, or copy the data. Data owners can track and revoke content at any point.
 
-###Make sure Azure Information Protection is activated
+### Make sure Azure Information Protection is activated
 
 To verify that AIP is activated:
 
@@ -135,27 +135,23 @@ To verify that AIP is activated:
 
 4. Select **Azure Information Protection** \> **Protection activation** and make sure the status is set to activated. 
 
-###View the Azure Information Protection policy and default labels 
+### View the Azure Information Protection policy and default labels 
 
 To view, and modify, the existing labels:
 
-1. On the Azure Information Protection dashboard, select **Classifications** \> **Labels.
- 
-   ![Standard labels for Azure Information Protection.](media/AIPLabels.png)
+1. On the Azure Information Protection dashboard, select **Classifications** \> **Labels. <br/>![Standard labels for Azure Information Protection.](media/AIPLabels.png)
 
 2. You can choose any label to view options, you can change the display name, colors, etc.
  
-3 See  [Modify and create new labels](https://docs.microsoft.com/azure/information-protection/infoprotect-tutorial-step2) if you want to create your own. 
+3. See  [Modify and create new labels](https://docs.microsoft.com/azure/information-protection/infoprotect-tutorial-step2) if you want to create your own. 
 
-###Install the Azure Information Protection client manually
+### Install the Azure Information Protection client manually
 
 To manually install the AIP client:
 
 1. Download **AzInfoProtection.exe** from [Microsoft download center](https://www.microsoft.com/download/details.aspx?id=53018).
  
-2. You can verify that the installation worked by viewing a Word document and making sure that the **Protect** option is available on the **Home** tab.
-
-  ![Protection tab drop-down in a Word document.](media/Word_Protect.png)
+2. You can verify that the installation worked by viewing a Word document and making sure that the **Protect** option is available on the **Home** tab. <br/>![Protection tab drop-down in a Word document.](media/Word_Protect.png)
 
 For more information see, [Install the client](https://docs.microsoft.com/azure/information-protection/infoprotect-tutorial-step3)
     
