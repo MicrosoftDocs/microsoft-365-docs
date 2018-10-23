@@ -123,7 +123,7 @@ The ability to apply the following restrictions when sending emails in Outlook o
 
 ### Make sure Azure Information Protection is activated
 
-To verify that AIP is activated:
+To verify that AIP is activated :
 
 1. Sign into [Azure Active Directory admin center](https://portal.azure.com/).
 
