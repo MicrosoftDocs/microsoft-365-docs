@@ -135,7 +135,7 @@ To verify that AIP is activated:
 
 4. Select **Azure Information Protection** \> **Protection activation** and make sure the status is set to activated. 
 
-###View the Azure Information Protection policy and default labels 
+### View the Azure Information Protection policy and default labels 
 
 To view, and modify, the existing labels:
 
@@ -147,7 +147,7 @@ To view, and modify, the existing labels:
  
 3 See  [Modify and create new labels](https://docs.microsoft.com/azure/information-protection/infoprotect-tutorial-step2) if you want to create your own. 
 
-###Install the Azure Information Protection client manually
+### Install the Azure Information Protection client manually
 
 To manually install the AIP client:
 
