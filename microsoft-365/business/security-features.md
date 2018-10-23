@@ -121,7 +121,7 @@ The ability to apply the following restrictions when sending emails in Outlook o
     
 - **Highly Confidential**: This restriction can be applied to highly confidential data, allowing employees to view, edit, and reply, but not forward, print, or copy the data. Data owners can track and revoke content at any point.
 
-###Make sure Azure Information Protection is activated
+### Make sure Azure Information Protection is activated
 
 To verify that AIP is activated:
 
