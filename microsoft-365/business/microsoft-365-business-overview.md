@@ -71,7 +71,7 @@ Admins can pre-select settings for new devices Windows 10 PCs by using [Windows 
   
 If your organization uses Windows Server Active Directory on-premises, you can set up Microsoft 365 Business to protect your Windows 10 devices, while still maintaining access to on-premises resources that require local authentication. Follow the steps in [Enable domain-joined Windows 10 devices to be managed by Microsoft 365 Business](manage-windows-devices.md) to set this up. This is the preferred method and devices in this state are called **Hybrid Azure AD joined devices**. 
   
-If you retain a local Active Directory that contains some on-premises resources (such as file shares and printers) , you can give your **Azure AD-joined devices** access to these resources by following the steps here: [Access on-premises resources from an Azure AD-joined device in Microsoft 365 Business](access-resources-from-an-azure-ad-joined-device.md).
+If you retain a local Active Directory that contains some on-premises resources (such as file shares and printers) , you can give your **Azure AD-joined devices** access to these resources by following the steps here: [Access on-premises resources from an Azure AD-joined device in Microsoft 365 Business](access-resources.md).
   
 After you have set up Windows 10 PCs, you can [automatically install Office](auto-install-or-uninstall-office.md) to the devices. 
   
