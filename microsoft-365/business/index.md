@@ -35,7 +35,7 @@ description: Learn how to plan, deploy, and use Microsoft Office 365, Windows 10
                                             <div class="cardText">
                                                 <h3>Explore</h3>
                                                 <P><a href="https://support.office.com/article/what-is-microsoft-365-business-901e2522-c2cf-4b8c-894e-f482cda3347a" target="_blank">Overview</a></p>
-                                                <P><a href="https://support.office.com/article/get-started-with-microsoft-365-business-496e690b-b75d-4ff5-bf34-cc32905d0364" target="_blank">Get started with Microsoft 365 Business</a></p> <P><a href="https://docs.microsoft.com/microsoft-365/business/support/microsoft-365-business-faqs" target="_blank">FAQ</a></p>
+                                                <P><a href="microsoft-365-business-overview.md" target="_blank">Get started with Microsoft 365 Business</a></p> <P><a href="https://docs.microsoft.com/microsoft-365/business/support/microsoft-365-business-faqs" target="_blank">FAQ</a></p>
                                             </div>
                                         </div>
                                     </div>
