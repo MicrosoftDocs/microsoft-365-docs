@@ -17,7 +17,7 @@ description: Learn how to assess device and app readiness in the environment.
 
 # Step 1: Device and App Readiness
 
-Begin your desktop deployment project with an inventory of your devices and apps, prioritize what you to move forward, test prioritized apps and devices, then remediate what’s needed to get ready for deployment.
+Begin your desktop deployment project with an inventory of your devices and apps, prioritize what you want to move forward, test prioritized apps and devices, then remediate what’s needed to get ready for deployment.
 
 ![](media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-1.png)
 
