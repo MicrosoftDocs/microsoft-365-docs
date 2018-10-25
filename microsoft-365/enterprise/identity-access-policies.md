@@ -272,7 +272,7 @@ Create a policy for each platform:
 
 To create device compliance policies, log in to the Microsoft Azure portal with your administer credentials, and then navigate to **Intune > Device compliance**. Click **Create policy**.
 
-The following settings are recommended for Windows 10. [REVIEW SETTINGS, SOME ARE MISSING]
+The following settings are recommended for Windows 10.
 
 **Device health: Windows Health Attestation Service evaluation rules**
 

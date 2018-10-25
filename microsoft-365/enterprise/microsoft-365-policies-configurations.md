@@ -14,7 +14,9 @@ ms.custom:
 ---
 # Identity and device access configurations
 
-There is no perfect solution or recommendation for every customer, this document provides a guide to what Microsoft recommends regarding configurations to ensure a secure and productive workforce.
+This series of articles describes how to configure secure access to cloud services through Azure Active Directory by using conditional access policies and related capabilities. This guidance can also be used to protect access to on-premises applications published with Azure AD Application Proxy. 
+
+There is no perfect solution or recommendation for every customer. These recommendations provide a guide to what Microsoft recommends configuring to ensure a secure and productive workforce.
 
 ## Intended audience
 
