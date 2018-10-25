@@ -85,7 +85,11 @@ The following clients are recommended when a Secure Documents policy has been ap
 
 <sup>*</sup> Learn more about using conditional access with the [OneDrive Sync Client](https://support.office.com/article/Azure-Active-Directory-conditional-access-with-the-OneDrive-sync-client-on-Windows-028d73d7-4b86-4ee0-8fb7-9a209434b04e).
 
-
+### Office 365 client support
+For more information about Office 365 client support, see the following articles:
+- [Office 365 Client App Support - Conditional Access](https://docs.microsoft.com/en-us/office365/enterprise/office-365-client-support-conditional-access)
+- [Office 365 Client App Support - Mobile Application Management](https://docs.microsoft.com/en-us/office365/enterprise/office-365-client-support-mobile-application-management)
+- [Office 365 Client App Support - Modern Authentication](https://docs.microsoft.com/en-us/office365/enterprise/office-365-client-support-modern-authentication)
 
 ## Protecting administrator accounts
 Azure Active Directory provides a simple way for you to begin protecting administrator access with a pre-configured conditional access policy. Within Azure AD, go to the Conditional access blade and look for this policy — **Baseline policy: Require MFA for admins**. Click on this policy and select **Use policy immediately**. 
