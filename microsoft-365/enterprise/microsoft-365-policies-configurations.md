@@ -14,9 +14,11 @@ ms.custom:
 ---
 # Identity and device access configurations
 
-This series of articles describes how to configure secure access to cloud services through Azure Active Directory by using conditional access policies and related capabilities. This guidance can also be used to protect access to on-premises applications published with Azure AD Application Proxy. 
+This series of articles describes how to configure secure access to cloud services through Enterprise Mobility + Security products by implementing a recommended environment and configuration, including a prescribed set of conditional access policies and related capabilities. You can use this guidance to protect access to all services that are integrated with Azure Active Directory, including Office 365 services, other SaaS services, and on-premises applications published with Azure AD Application Proxy. 
 
-There is no perfect solution or recommendation for every customer. These recommendations provide a guide to what Microsoft recommends configuring to ensure a secure and productive workforce.
+These recommendations are aligned with Microsoft Secure Score as well as [identity score in Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/identity-secure-score) and will increase these scores for your organization. These recommendations will also help you implement these [five steps to securing your identity infrastructure](https://docs.microsoft.com/en-us/azure/security/azure-ad-secure-steps). 
+
+Microsoft understands that some organizations have unique environment requirements or complexities. If you are one of these organizations, use these recommendations as a starting point. However, most organizations can implement these recommendations as prescribed. 
 
 ## Intended audience
 
