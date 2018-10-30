@@ -14,5 +14,6 @@ Learn more about prerequisites for Microsoft Managed Desktop.
 
 ## In this section
 
-- [Prerequisites for Microsoft Managed Desktop](../intro/prerequisites.md)
+- [Prerequisites for Microsoft Managed Desktop](prerequisites.md)
 - [Network configuration](network.md)
+- [Prepare apps for Microsoft Managed Desktop](apps.md)
