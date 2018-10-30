@@ -46,7 +46,7 @@ Once the core set of LOB apps has been identified the customer will procure, lic
 ## Office applications
 As part of the Microsoft 365 E5 license, Office 365 Standard Suite (64 Bit) is deployed by Microsoft. 
 
-For details, see [Microsoft Managed Desktop technologies](../intro/technologies-and-devices.md) <!--- and the other applications licensed under Office 365 E5 may be deployed by the customer using Intune’s deployment tools.-->
+For details, see [Microsoft Managed Desktop technologies](../intro/technologies.md) <!--- and the other applications licensed under Office 365 E5 may be deployed by the customer using Intune’s deployment tools.-->
 
 ## Line-of-business applications
 This table summarizes responsibilities across the different phases for line-of-business (LOB) applications. 
@@ -71,7 +71,7 @@ Procure and assign licenses |	![yes](images/checkmark.png)	 |
 Provide end-user support for line-of-business apps	| ![yes](images/checkmark.png) |
 Manage app settings remotely	| ![yes](images/checkmark.png) |
 
-For information on LOB application requirements, see [Microsoft Managed Desktop application requirements](mmd-app-requirements.md)
+For information on LOB application requirements, see [Microsoft Managed Desktop application requirements](../service-description/mmd-app-requirements.md)
 
 ## Resources
 While many services are out of scope for Microsoft Managed Desktop operations there are services which Microsoft offers which may help the customer manage their applications.
