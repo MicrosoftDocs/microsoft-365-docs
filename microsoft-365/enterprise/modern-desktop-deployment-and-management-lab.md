@@ -25,9 +25,9 @@ As part of the [Modern Desktop Deployment](http://www.aka.ms/howtoshift) process
 
 The lab kit is free to download and uses trial software.
 
-<p style="border:3px; border-style:solid; border-color:#000000; padding: 1em;">[**DOWNLOAD**](https://aka.ms/mddlabs_evalcenter)</p>
-
-[**DOWNLOAD**](https://aka.ms/mddlabs_evalcenter)
+>[!Tip]
+>[**DOWNLOAD**](https://aka.ms/mddlabs_evalcenter)
+>
 
 **A complete lab environment**
 
@@ -47,6 +47,7 @@ The lab provides you with an automatically provisioned virtual lab environment, 
 PLUS, the lab is designed to be connected to trials for:
 
   - Microsoft 365 Enterprise E5
+
 Or
   - Office 365 Enterprise E5
   - Enterprise Mobility + Security
