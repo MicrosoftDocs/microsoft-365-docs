@@ -24,7 +24,7 @@ This article provides you with step-by-step instructions to create a simplified 
 - Office 365 E5 and EMS E5 trial or permanent subscriptions.
 - A simplified organization intranet connected to the Internet, consisting of three virtual machines on an Azure virtual network (DC1, APP1, and CLIENT1).
  
-![Phase 4 of the simulated enterprise base configuration](media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase4.png)
+![The simulated enterprise base configuration](media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase4.png)
 
 You can use the resulting environment to test the features and functionality of [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise) with additional [Test Lab Guides](m365-enterprise-test-lab-guides.md) or on your own.
 
@@ -58,12 +58,11 @@ Here is your configuration after the template is complete.
 
 ![The simulated intranet in Azure infrastructure services](media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase3.png)
 
-### Method 2: Build your simulated intranet with PowerShell
+### Method 2: Build your simulated intranet with Azure PowerShell
 
 In this method, you use Windows PowerShell and the Azure PowerShell module to build out the networking infrastructure, the virtual machines, and their configuration.
 
-Use this method with an Azure trial subscription or if you want to get experience creating elements of Azure infrastructure one step at a time with PowerShell. You can then customize the PowerShell command blocks for your own deployment of other virtual machines in Azure.
-
+Use this method if you want to get experience creating elements of Azure infrastructure one step at a time with PowerShell. You can then customize the PowerShell command blocks for your own deployment of other virtual machines in Azure.
 
 #### Step 1: Create DC1
 
