@@ -32,7 +32,7 @@ To direct a client request to the geographically nearest front-end server, Micro
 - All offices of your organization should have local Internet connections for [Optimize](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#new-office-365-endpoint-categories) category network traffic.
 - Each local Internet connection should be using a regionally local DNS server for outbound Internet traffic from that location.
 
-For more information, see [Egress network connections locally](office-365-network-connectivity-principles.md#egress-network-connections-locally). 
+For more information, see [Egress network connections locally](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#egress-network-connections-locally). 
 
 As an interim checkpoint, you can see the [exit criteria](networking-exit-criteria.md#crit-networking-step2) for this step.
 
