@@ -15,7 +15,7 @@ ms.custom:
 description: Understand and configure web browsers and edge devices for traffic bypass to trusted Office 365 locations.
 ---
 
-# Step 4: Configure Configure traffic bypass
+# Step 4: Configure traffic bypass
 
 *This step is optional and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
 
