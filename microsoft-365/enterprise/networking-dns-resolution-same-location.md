@@ -1,9 +1,9 @@
 ---
-title: "Step 2: Ensure that DNS resolution is local to the ISP"
+title: "Step 2: Configure local Internet connections for each office"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/05/2018
+ms.date: 10/31/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,17 +15,24 @@ ms.custom:
 description: Understand and configure your DNS resolution for better performance.
 ---
 
-# Step 2: Ensure that DNS resolution is local to the ISP
+# Step 2: Configure local Internet connections for each office
 
 *This step is required and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
 
 ![](./media/deploy-foundation-infrastructure/networking_icon-small.png)
 
-In Step 2, you reconfigure your network so that each office has a local Internet link and Internet service provider (ISP). Using a local ISP gives each office the shortest path to a Microsoft front-end server on the Internet. These front-end servers for Office 365 and Intune are located around the world to provide the best performance, no matter where your offices are located.
+In Step 2, you ensure that each of your offices have local Internet connections and use local DNS servers. Both of these elements are required to reduce connection latency and ensure that on-premises client computers make connections to the nearest point of entry to Microsoft 365 cloud-based services.
 
-You can configure local Internet connections for branch offices and traffic from users’ computers directly, or through a proxy server. In both cases, DNS queries for Internet name resolution are sent from the DNS servers of local ISPs, who identify their location on the Internet through the source Internet Protocol (IP) address of their DNS queries. Microsoft DNS servers can respond with the IP addresses of the closest front-end server to the branch office or user computer, which ensures the best performance.
+In traditional networks for large organizations, Internet traffic travels across the network backbone to a central Internet connection. This does not work well for optimizing performance to a globally distributed Software-as-a-Service (SaaS) infrastructure, which includes the Office 365 and Enterprise Mobility + Security (EMS) products in Microsoft 365.
 
-For information about external DNS name records, see [External Domain Name System records for Office 365](https://support.office.com/article/External-Domain-Name-System-records-for-Office-365-c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0).
+The Microsoft Global Network includes front end servers to the set of cloud services for Microsoft 365 all over the world. For the best performance, on-premises clients should access a front-end server that is geographically closest to them, rather than sending the traffic over a network backbone and to the front-end server that is closest to the organization’s central Internet connection.
+
+To direct a client request to the geographically nearest front-end server, Microsoft’s DNS servers use the DNS queries corresponding the client’s initial connection request. Therefore, for the lowest network latency:
+
+- All offices of your organization should have local Internet connections for [Optimize](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#new-office-365-endpoint-categories) category network traffic.
+- Each local Internet connection should be using a regionally local DNS server for outbound Internet traffic from that location.
+
+For more information, see [Egress network connections locally](office-365-network-connectivity-principles.md#egress-network-connections-locally). 
 
 As an interim checkpoint, you can see the [exit criteria](networking-exit-criteria.md#crit-networking-step2) for this step.
 
@@ -33,4 +40,4 @@ As an interim checkpoint, you can see the [exit criteria](networking-exit-criter
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step3.png)|[Configure your proxy servers and firewalls](networking-configure-proxies-firewalls.md)|
+|![](./media/stepnumbers/Step3.png)|[Avoid network hairpins](networking-avoid-network-hairpins.md)|

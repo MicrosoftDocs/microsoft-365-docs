@@ -1,9 +1,9 @@
 ---
-title: "Step 3: Configure your proxy servers and firewalls"
+title: "Step 4: Configure traffic bypass"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/05/2018
+ms.date: 10/31/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,31 +12,44 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
-description: Understand and configure proxy servers and firewalls for maximum performance to trusted Office 365 locations.
+description: Understand and configure web browsers and edge devices for traffic bypass to trusted Office 365 locations.
 ---
 
-# Step 3: Configure your proxy servers and firewalls
+# Step 4: Configure Configure traffic bypass
 
 *This step is optional and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
 
 ![](./media/deploy-foundation-infrastructure/networking_icon-small.png)
 
-In Step 3, you configure proxy servers, firewalls, and other intermediate security devices to pass the traffic to and from Office 365 IP addresses either unhindered or with minimal processing. This helps ensure good performance without compromising security, because Microsoft provides datacenter and operational security as part of Office 365. 
+Because general Internet traffic can be risky, typical organization networks enforce security with edge devices such as proxy servers, SSL Break and Inspect, and packet inspection devices, and data loss prevention systems. Read about some of the issues with network interception devices at Using third-party network devices or solutions on Office 365 traffic.
 
-Here are the recommendations for your proxy servers and firewalls:
+However, the DNS domain names and IP addresses used by Microsoft 365 cloud-based services are well known. Additionally, the traffic and services themselves are protected with many security features. Because this security and protection is already in place, your edge devices don’t need to duplicate it. Intermediate destinations and duplicate security processing for Microsoft 365 traffic can dramatically decrease performance.
 
-- Configure your proxies and SSL inspection devices for the URLs corresponding to Office 365 services to pass through or skip traffic processing. For more information, see [Managing Office 365 endpoints-Proxies](https://support.office.com/article/Managing-Office-365-endpoints-99cab9d4-ef59-4207-9f2b-3728eb46bf9a#ID0EABAAA=2._Proxies&ID0EAEAAA=2._Proxies).
-- Configure your firewalls for the IP addresses of Office 365 services to allow traffic without additional processing. For more information, see [Managing Office 365 endpoints-Firewalls](https://support.office.com/article/Managing-Office-365-endpoints-99cab9d4-ef59-4207-9f2b-3728eb46bf9a#ID0EABAAA=2._Proxies&ID0EAEAAA=1._Firewalls).
+The first step in eliminating intermediate destinations and duplicate security processing is to identify Microsoft 365 traffic. Microsoft has defined the following types of DNS domain names and IP address ranges, known as endpoints:
 
-You can find the URLs, addresses, and address ranges known as endpoints at [https://aka.ms/o365endpoints](https://aka.ms/o365endpoints). 
+- Optimize - Required for connectivity to every Office 365 service and represent over 75% of Microsoft 365 bandwidth, connections, and volume of data. These endpoints represent Microsoft 365 scenarios that are the most sensitive to network performance, latency and availability.
+- Allow - Required for connectivity to specific Microsoft 365 services and features but are not as sensitive to network performance and latency as those in the Optimize category.
+ - Default - Represent Microsoft 365 services and dependencies that do not require any optimization. You can treat Default category endpoints as normal Internet traffic.
 
-As an interim checkpoint, you can see the [exit criteria](networking-exit-criteria.md#crit-networking-step3) for this step.
+You can find the DNS domain names and IP address ranges at [https://aka.ms/o365endpoints](https://aka.ms/o365endpoints).
+
+Microsoft recommends that you:
+
+- Use Proxy Automatic Configuration (PAC) scripts on the Internet browsers of your on-premises computers to bypass your proxy servers for the DNS domain names of Microsoft 365 cloud-based services. For the latest Microsoft 365 PAC script, see the Get-Pacfile PowerShell script.
+- Analyze your edge devices to determine the duplicate processing and then configure them to forward traffic to Optimize and Allow endpoints without processing. This is known as traffic bypass. 
+- 
+Edge devices include firewalls, SSL Break and Inspect, and packet inspection devices, and data loss prevention systems. To configure and update the configurations of edge devices, you can use a script or a REST call to consume a structured list of endpoints from the Office 365 Endpoints web service. For more information, see [Office 365 IP Address and URL Web service](office-365-ip-web-service.md).
+
+Note that you are only bypassing normal proxy and network security processing for traffic to Microsoft 365 Optimize and Allow categories endpoints. All other general Internet traffic will be proxied and be subject to your existing network security processing.
+
+
+As an interim checkpoint, you can see the [exit criteria](networking-exit-criteria.md#crit-networking-step4) for this step.
 
 ## Next step
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step4.png)|[Plan for URL and IP address changes](networking-implement-endpoint-change-mgmt.md)|
+|![](./media/stepnumbers/Step5.png)|[Optimize client and Office 365 service performance](networking-optimize-tcp-performance.md) |
 
 
 
