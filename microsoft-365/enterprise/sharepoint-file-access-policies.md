@@ -59,6 +59,19 @@ Microsoft recommends you protect content in SharePoint sites with sensitive and 
 
 See "Block or limit access to specific SharePoint site collections or OneDrive accounts" in this article: [Control access from unmanaged devices](https://support.office.com/article/Control-access-from-unmanaged-devices-5ae550c4-bd20-4257-847b-5c20fb053622) . 
 
+## How these policies work together
+It's important to understand that SharePoint site permissions are typically based on business need for access to sites. These permissions are managed by site owners and can be highly dynamic. Using SharePoint device access policies ensures protection to these sites, regardless of whether users are assigned to an Azure AD group associated with baseline, sensitive, or highly regulated protection. 
+
+The following illustration provides an example of how SharePoint device access policies protect access to sites.
+
+![How SharePoint device access policies protect sites](../images/SharePoint-rules-scenario.png)
+
+In the illustration:
+- James is assigned to conditional access policies associated with baseline protection, but he can be given access to SharePoint sites associated with sensitive or highly regulated protection. 
+- If James accesses a sensitive or highly regulated site he is a member of using his PC, his access is granted as long as his PC is compliant.
+- If James accesses a sensitive site he is a member of using his unmanaged phone, which is allowed for baseline users, he will receive browser-only access to the sensitive site due to the device access policy configured for this site. 
+- If James accesses a highly regulated site he is a member of using his unmanaged phone, he will be blocked due to the access policy configured for this site. He can only access this site using his managed and compliant PC.
+
 
 <!---
 ##Block access to content from unmanaged devices (SharePoint admin center)

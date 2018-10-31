@@ -3,7 +3,7 @@ title: "Phase 1: Networking infrastructure for Microsoft 365 Enterprise"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/18/2018
+ms.date: 10/31/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -32,10 +32,10 @@ Use the following steps to build out your networking infrastructure for the requ
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step1.png)|[Check your Internet bandwidth](networking-provide-bandwidth-cloud-services.md)|
-|![](./media/stepnumbers/Step2.png)|[Ensure that DNS resolution is local to the ISP](networking-dns-resolution-same-location.md)|
-|![](./media/stepnumbers/Step3.png)|[Configure your proxy servers and firewalls](networking-configure-proxies-firewalls.md)|
-|![](./media/stepnumbers/Step4.png)|[Plan for URL and IP address changes](networking-implement-endpoint-change-mgmt.md)|
+|![](./media/stepnumbers/Step1.png)|[Prepare your network for Microsoft 365](networking-provide-bandwidth-cloud-services.md)|
+|![](./media/stepnumbers/Step2.png)|[Configure local Internet connections for each office](networking-dns-resolution-same-location.md)|
+|![](./media/stepnumbers/Step3.png)|[Avoid network hairpins](networking-avoid-network-hairpins.md)|
+|![](./media/stepnumbers/Step4.png)|[Configure traffic bypass](networking-configure-proxies-firewalls.md)|
 |![](./media/stepnumbers/Step5.png)|[Optimize client and Office 365 service performance](networking-optimize-tcp-performance.md)|
 
 
@@ -55,5 +55,5 @@ See how the Contoso Corporation, a fictional but representative multi-national b
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step1.png)|[Check your Internet bandwidth](networking-provide-bandwidth-cloud-services.md)|
+|![](./media/stepnumbers/Step1.png)|[Prepare your network for Microsoft 365](networking-provide-bandwidth-cloud-services.md)|
 
