@@ -1,14 +1,17 @@
 <a name="crit-networking-step1"></a>
-### Required: Your Internet bandwidth is sufficient for Microsoft’s cloud services
+### Required: Your network is ready for Microsoft 365 Enterprise
 
-The Internet bandwidth for your central office and branch offices can handle daily access to cloud resources, peak usage, and future growth. If your Internet bandwidth isn’t sufficient, the performance of your connectivity and the productivity of your staff might suffer, especially during peak periods of processing. 
+- Your offices have adequate Internet bandwidth for Microsoft 365 traffic, including Office 365, Microsoft Intune, Windows 10 Enterprise installation and updates
+- Central offices for all general Internet traffic
+- Branch offices for Optimize category endpoint traffic
+- Your overall network maps to an Office 365 reference architecture
 
 If needed, [Step 1](../networking-provide-bandwidth-cloud-services.md) can help you with this requirement.
 
 <a name="crit-networking-step2"></a>
-### Required: Your local offices have local Internet name resolution
+### Required: Your local offices have local Internet connections and name resolution
 
-You configured each local office with Internet access through a local ISP whose DNS servers use a local public IP address that identifies their location on the Internet. This ensures the best possible performance for users who access Office 365 and Intune.
+You configured each local office with Internet access with a local ISP whose DNS servers use a local public IP address that identifies their location on the Internet. This ensures the best possible performance for users who access Office 365 and Intune.
 
 If you don’t use a local ISP for each branch office, performance can suffer because network traffic must traverse an organization’s backbone or data requests are serviced by remote front-end servers.
 
@@ -18,26 +21,27 @@ Use a tool or web site from a device in that office to determine the public IP a
 If needed, [Step 2](../networking-dns-resolution-same-location.md) can help you with this requirement.
 
 <a name="crit-networking-step3"></a>
-### Optional: Your network perimeter devices perform minimal processing of Office 365 traffic
+### Optional: Unneeded network hairpins are removed
 
-You configured your network perimeter devices—such as proxy servers, firewalls, and SSL inspection devices— to use Office 365 endpoints (URLs and IP address ranges) and to minimally process traffic from Office 365.
+You examined your network hairpins and determined their impact on performance for all of your offices. You removed network hairpins where possible or worked with your third-party network or security provider to implement optimal Microsoft 365 peering for their network.
 
-If you haven’t done this, your perimeter devices perform unnecessary processing and Office 365 performance will suffer, causing delays for users of cloud-based services.
+If needed, [Step 3](../networking-avoid-network-hairpins.md) can help you with this option.
+
+
+<a name="crit-networking-step4"></a>
+### Optional: You have configured traffic bypass on your Internet browsers and edge devices
+
+You deployed the latest PAC files to your on-premises Internet browsers so that traffic to Microsoft 365 DNS domain names bypass proxy servers.
+
+You configured your network perimeter devices—such as firewalls, and SSL Break and Inspect, and packet inspection devices— to use traffic bypass or to minimally process traffic to the Optimize and Allow categories of Microsoft 365 endpoints.
+
 
 #### How to test
 
-Use the logging tools on your network perimeter devices to ensure that traffic to Office 365 destinations isn’t being inspected, decrypted, or otherwise hindered.
+Use the logging tools on your network perimeter devices to ensure that traffic to Microsoft 365 destinations isn’t being inspected, decrypted, or otherwise hindered.
 
-If needed, [Step 3](../networking-configure-proxies-firewalls.md) can help you with this option.
+If needed, [Step 4](../networking-configure-proxies-firewalls.md) can help you with this option.
 
-<a name="crit-networking-step4"></a>
-### Optional: A plan to manage ongoing changes in Office 365 endpoints is in place
-
-Your IT department has a plan to update endpoints—both URLs to Office 365 services and IP address ranges—for your network perimeter devices that perform minimal processing traffic to and from Office 365.
-
-If you don’t have a plan in place, connectivity can be interrupted when IP addresses are moved from one service to another or are no longer in use by a service. Additionally, traffic to new servers of an exisiting service that aren’t configured as new endpoints can cause your traffic to be sent to a distant front-end server, resulting in non-optimal performance.
-
-If needed, [Step 4](../networking-implement-endpoint-change-mgmt.md) can help you with this option.
 
 <a name="crit-networking-step5"></a>
 ### Optional: Your clients and Office 365 applications are configured for optimal performance
