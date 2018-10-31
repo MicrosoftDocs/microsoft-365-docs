@@ -14,7 +14,7 @@ ms.custom:
 ---
 
 # Common identity and device access policies
-This article describes the common recommended policies to help you secure Microsoft 365 Enterprise. 
+This article describes the common recommended policies for securing access to cloud services, including on-premises applications published with Azure AD Application Proxy. 
 
 This guidance discusses how to deploy the recommended policies in a newly provisioned environment. Setting up these policies in a separate lab environment allows you to understand and evaluate the recommended policies before staging the rollout to your pre-production and production environments. Your newly provisioned environment may be cloud-only or Hybrid.  
 
@@ -22,7 +22,8 @@ This guidance discusses how to deploy the recommended policies in a newly provis
 
 The following diagram illustrates the recommended set of policies. It shows which tier of protections each policy applies to and whether the policies apply to PCs, phones and tablets, or both categories of devices. It also indicates where these policies are configured.
 
-![common identity and device access policies](../images/identity-access-policies-common-ruleset.png)
+![Common policies for configuring identity and device access](../images/Identity_device_access_policies_byplan.png)
+
 
 The rest of this article describes how to configure these policies. 
 
@@ -272,7 +273,7 @@ Create a policy for each platform:
 
 To create device compliance policies, log in to the Microsoft Azure portal with your administer credentials, and then navigate to **Intune > Device compliance**. Click **Create policy**.
 
-The following settings are recommended for Windows 10. [REVIEW SETTINGS, SOME ARE MISSING]
+The following settings are recommended for Windows 10.
 
 **Device health: Windows Health Attestation Service evaluation rules**
 
