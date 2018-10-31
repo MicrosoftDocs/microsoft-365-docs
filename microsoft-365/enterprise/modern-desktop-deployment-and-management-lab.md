@@ -25,6 +25,10 @@ As part of the [Modern Desktop Deployment](http://www.aka.ms/howtoshift) process
 
 The lab kit is free to download and uses trial software.
 
+<p style="border:3px; border-style:solid; border-color:#000000; padding: 1em;">[**DOWNLOAD**](https://aka.ms/mddlabs_evalcenter)</p>
+
+[**DOWNLOAD**](https://aka.ms/mddlabs_evalcenter)
+
 **A complete lab environment**
 
 The lab provides you with an automatically provisioned virtual lab environment, including domain-joined desktop clients, domain controller, Internet gateway and a fully configured ConfigMgr instance. The lab contains Evaluation Versions of the following products:
@@ -43,9 +47,7 @@ The lab provides you with an automatically provisioned virtual lab environment, 
 PLUS, the lab is designed to be connected to trials for:
 
   - Microsoft 365 Enterprise E5
-
 Or
-
   - Office 365 Enterprise E5
   - Enterprise Mobility + Security
 
@@ -56,89 +58,59 @@ Detailed lab guides take you through multiple deployment and management scenario
 **Device and App Readiness**
 
   - Windows Analytics
-
   - Enterprise Mode and the Enterprise Mode Site List for Internet Explorer
 
 **Directory and Network Readiness**
 
   - Basic setup for Azure Active Directory and Microsoft 365
-
   - Network optimization using Delivery Optimization, Peer Cache in ConfigMgr and LEDBAT
-
   - **NEW** ConfigMgr and Microsoft Intune Co-Management
-
   - **NEW** Remote Access (VPN)
 
 **Office and LOB App Delivery**
 
   - Office 365 ProPlus deployment using System Center Configuration Manager
-
   - Office 365 ProPlus deployment using Microsoft Intune
-
   - App deployment and management using Microsoft Intune
-
   - App deployment and self-service installation using Microsoft Store for Business
-
   - Desktop Bridge application conversion to UWP
-
   - **NEW** Windows App Certification Kit
-
   - Browser compatibility remediation using Enterprise Mode for IE
 
 **User File and Settings Migration**
 
   - User State Migration Tool as part of PC Refresh and Replacement Task Sequences in ConfigMgr and MDT
-
   - OneDrive Known Folder Move
-
   - Enterprise State Roaming
 
-**Security and Configuration**
+**Security and Compliance**
 
   - BitLocker device encryption
-
   - Windows Defender Antivirus
-
   - Windows Hello for Business
-
   - BIOS to UEFI conversion as an enabler for virtualization-based security
-
   - Windows Defender Credential Guard
-
   - Windows Defender Application Guard
-
   - Windows Defender Exploit Guard
-
   - Windows Defender Application Control
-
   - Windows Defender Advanced Threat Protection
 
 **OS Deployment and Feature Updates**
 
   - OS image creation
-
   - OS Deployment Task Sequences in ConfigMgr
-    
       - Bare Metal
-    
       - Refresh
-    
       - Replacement
-    
       - Upgrade
-
   - OS Deployment Task Sequences in MDT
-
   - Feature Updates using Upgrade Task Sequences in ConfigMgr
-
   - Windows Autopilot
 
 **Office and Windows as a Service**
 
   - Software update management using Configuration Manager
-
   - Office 365 ProPlus update management in Configuration Manager
-
   - Mobile Device Management applied to Windows 10 using Microsoft Intune
 
 [**DOWNLOAD**](https://aka.ms/mddlabs_evalcenter)
