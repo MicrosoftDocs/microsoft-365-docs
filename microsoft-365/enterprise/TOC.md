@@ -91,6 +91,7 @@
 ## [Step 6: OS Deployment and Feature Updates](step-6-os-deployment-and-feature-updates.md)
 ## [Step 7: Windows and Office as a Service](step-7-windows-and-office-as-a-service.md)
 ## [Step 8: User Communications and Training](step-8-user-communications-and-training.md)
+## [Modern Desktop Deployment and Management Lab Kit](modern-desktop-deployment-and-management-lab.md)
 ## [Get your Leadership on Board: Value Discovery and Business Case](https://transform.microsoft.com)
 
 # [Identity and device access configurations](microsoft-365-policies-configurations.md)
