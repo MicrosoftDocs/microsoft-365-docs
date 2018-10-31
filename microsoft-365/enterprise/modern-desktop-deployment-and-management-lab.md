@@ -29,35 +29,25 @@ The lab kit is free to download and uses trial software.
 
 The lab provides you with an automatically provisioned virtual lab environment, including domain-joined desktop clients, domain controller, Internet gateway and a fully configured ConfigMgr instance. The lab contains Evaluation Versions of the following products:
 
-  - > Windows 10 Enterprise, Version 1803
-
-  - > Windows 7
-
-  - > Office 365 ProPlus, Version 1807
-
-  - > System Center Configuration Manager, Version 1802
-
-  - > Windows Assessment and Deployment Kit for Windows 10, Version 1803
-
-  - > Microsoft Deployment Toolkit
-
-  - > Microsoft Application Virtualization (App-V) 5.1
-
-  - > Microsoft BitLocker Administration and Monitoring 2.5 SP1
-
-  - > Windows Server 2016
-
-  - > Microsoft SQL Server 2014
+  - Windows 10 Enterprise, Version 1803
+  - Windows 7
+  - Office 365 ProPlus, Version 1807
+  - System Center Configuration Manager, Version 1802
+  - Windows Assessment and Deployment Kit for Windows 10, Version 1803
+  - Microsoft Deployment Toolkit
+  - Microsoft Application Virtualization (App-V) 5.1
+  - Microsoft BitLocker Administration and Monitoring 2.5 SP1
+  - Windows Server 2016
+  - Microsoft SQL Server 2014
 
 PLUS, the lab is designed to be connected to trials for:
 
-  - > Microsoft 365 Enterprise E5
+  - Microsoft 365 Enterprise E5
 
 Or
 
-  - > Office 365 Enterprise E5
-
-  - > Enterprise Mobility + Security
+  - Office 365 Enterprise E5
+  - Enterprise Mobility + Security
 
 **Step-by-step labs**
 
@@ -127,8 +117,6 @@ Detailed lab guides take you through multiple deployment and management scenario
 
   - OS image creation
 
-<!-- end list -->
-
   - OS Deployment Task Sequences in ConfigMgr
     
       - Bare Metal
@@ -159,26 +147,26 @@ Detailed lab guides take you through multiple deployment and management scenario
 
 **Additional guidance**
 
-  - > [Modern Desktop Deployment Center](http://www.aka.ms/howtoshift)
+  - [Modern Desktop Deployment Center](http://www.aka.ms/howtoshift)
 
-  - > [Modern Desktop Deployment series videos from Microsoft Mechanics](http://www.aka.ms/watchhowtoshift)
+  - [Modern Desktop Deployment series videos from Microsoft Mechanics](http://www.aka.ms/watchhowtoshift)
 
-  - > [System Center Configuration Manager OS Deployment](https://docs.microsoft.com/en-us/sccm/osd/understand/introduction-to-operating-system-deployment)
+  - [System Center Configuration Manager OS Deployment](https://docs.microsoft.com/en-us/sccm/osd/understand/introduction-to-operating-system-deployment)
 
-  - > [<span class="underline">Plan for Windows 10 deployment</span>](https://docs.microsoft.com/windows/deployment/planning/index)
+  - [<span class="underline">Plan for Windows 10 deployment</span>](https://docs.microsoft.com/windows/deployment/planning/index)
 
-  - > [<span class="underline">Deployment guide for Office 365 ProPlus</span>](https://docs.microsoft.com/deployoffice/deployment-guide-for-office-365-proplus)
+  - [<span class="underline">Deployment guide for Office 365 ProPlus</span>](https://docs.microsoft.com/deployoffice/deployment-guide-for-office-365-proplus)
 
-  - > [<span class="underline">Getting Started with Intune</span>](https://docs.microsoft.com/intune/get-started-evaluation)
+  - [<span class="underline">Getting Started with Intune</span>](https://docs.microsoft.com/intune/get-started-evaluation)
 
 > **Related resources**
 
-  - > [<span class="underline">Introducing Microsoft 365</span>](https://www.microsoft.com/microsoft-365/default.aspx)
+  - [<span class="underline">Introducing Microsoft 365</span>](https://www.microsoft.com/microsoft-365/default.aspx)
 
-  - > [<span class="underline">Office 365 for business</span>](https://products.office.com/business/office)
+  - [<span class="underline">Office 365 for business</span>](https://products.office.com/business/office)
 
-  - > [<span class="underline">Introducing Enterprise Mobility + Security</span>](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
+  - [<span class="underline">Introducing Enterprise Mobility + Security</span>](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
 
-  - > [<span class="underline">Windows 10 for enterprise</span>](https://www.microsoft.com/WindowsForBusiness/windows-for-enterprise)
+  - [<span class="underline">Windows 10 for enterprise</span>](https://www.microsoft.com/WindowsForBusiness/windows-for-enterprise)
 
-  - > [<span class="underline">Windows 10 for small and medium business</span>](https://www.microsoft.com/WindowsForBusiness/windows-for-small-business)
+  - [<span class="underline">Windows 10 for small and medium business</span>](https://www.microsoft.com/WindowsForBusiness/windows-for-small-business)
