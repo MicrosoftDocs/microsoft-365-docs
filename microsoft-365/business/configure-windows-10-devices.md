@@ -6,8 +6,7 @@ manager: scotv
 ms.audience: Admin
 ms.topic: overview
 f1_keywords:
-- 'O365E_BCSSetup4PushSoftware
-'
+- 'O365E_BCSSetup4PushSoftware'
 ms.service: o365-administration
 localization_priority: Normal
 ms.custom:

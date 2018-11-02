@@ -5,7 +5,7 @@ keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jdeckerms
 ms.localizationpriority: normal
-ms.date: 10/30/2018
+ms.date: 11/1/2018
 ---
 
 # Support for Microsoft Managed Desktop
@@ -16,8 +16,6 @@ Customers can contact Microsoft Managed Desktop operations for:
 - Information requests on the Modern Workplace as a Service tenant or configuration
 - Change requests to the configuration of Modern Workplace as a Service devices
 - Reporting an incident or outage
-
- 
 
 ## What's included?
 
@@ -30,7 +28,7 @@ Microsoft Managed Desktop support:
 Supported products:
 
 - Windows 10 with Windows Defender Advanced Threat Protection (WDATP) 
-- Subset of the Microsoft 365 E5 suite: Outlook, Word, PowerPoint, Excel, Skype for Business client 
+- Subset of the Microsoft 365 E5 suite: Outlook, Word, PowerPoint, Excel, Skype for Business client, Microsoft Teams 
 - Microsoft Store for Business 
 - OneDrive for Business client 
 
