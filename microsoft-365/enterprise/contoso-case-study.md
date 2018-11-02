@@ -62,7 +62,11 @@ See these articles for the details:
 
 - [Summary of Microsoft 365 Enterprise security](contoso-security-summary.md)
 
-  Contoso’s uses the full spectrum of Microsoft 365 Enterprise security features for identity and access management, threat protection, information protection, and security management.
+  Contoso uses the full spectrum of Microsoft 365 Enterprise security features for identity and access management, threat protection, information protection, and security management.
+
+- [SharePoint Online site for highly confidential digital assets](contoso-sharepoint-online-site-for-highly-confidential-assets.md)
+
+  To protect the intellectual property andl allow its research teams to more easily collaborate, Contoso used a SharePoint Online site for sites for highly regulated data.
 
 
 ## Next step
