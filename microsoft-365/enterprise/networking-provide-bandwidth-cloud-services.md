@@ -1,9 +1,9 @@
 ---
-title: "Step 1: Check your Internet bandwidth"
+title: "Step 1: Prepare your network for Microsoft 365"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/27/2018
+ms.date: 10/31/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,15 +15,17 @@ ms.custom:
 description: Understand the need for Internet bandwidth for Microsoft 365 Enterprise's cloud services.
 ---
 
-# Step 1: Check your Internet bandwidth
+# Step 1: Prepare your network for Microsoft 365
 
 *This step is required and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
 
 ![](./media/deploy-foundation-infrastructure/networking_icon-small.png)
 
-In Step 1, you check your current Internet bandwidth needs and adjust both central office and branch office Internet connections to support current and future traffic. For example, if your organization has a peak time for computing needs, such as end-of-quarter processing, you should verify that the Internet bandwidth in your central and branch offices can handle it. Be sure to allow additional bandwidth to handle unexpected surges in demand and for future growth. In addition, if you currently have either Office 365 or Intune, you might need additional bandwidth for Microsoft 365 Enterprise, which includes both Office 365 and Intune.
+In Step 1, you must:
 
-For more information about using network assessment tools to determine your future Internet bandwidth needs, see [Network and migration planning for Office 365](https://support.office.com/article/network-and-migration-planning-for-office-365-f5ee6c33-bcd7-4b0b-b0f8-dc1d9fb8d132). This article also applies to the combination of Office 365 and Intune in Microsoft 365 Enterprise. 
+- Evaluate and adjust network bandwidth for internal links and Internet connections to account for traffic to Microsoft 365 Enterprise cloud services
+- Align your network with an [Office 365 reference architecture](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#BKMK_P2)
+- Plan the changes, pilot them, and then test whether the changes fit your bandwidth and traffic latency requirements
 
 As an interim checkpoint, you can see the [exit criteria](networking-exit-criteria.md#crit-networking-step1) corresponding to this step.
 
@@ -31,5 +33,5 @@ As an interim checkpoint, you can see the [exit criteria](networking-exit-criter
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step2.png)|[Ensure that DNS resolution is local to the ISP](networking-dns-resolution-same-location.md)|
+|![](./media/stepnumbers/Step2.png)|[Configure local Internet connections for each office](networking-dns-resolution-same-location.md)|
 

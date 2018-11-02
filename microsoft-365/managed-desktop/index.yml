@@ -1,20 +1,20 @@
 ### YamlMime:YamlDocument
 documentType: LandingData
-title: Microsoft Managed Desktop documentation
+title: Microsoft Managed Desktop documentation and resources
 metadata:
   title: Microsoft Managed Desktop documentation
   description: 
   keywords: device, app, management
   author: trudyha
   ms.author: trudyha
-  ms.date: 10/24/2018
+  ms.date: 11/1/2018
   ms.topic: landing-page
   ms.devlang: na
   ms.service: m365-md
 sections:
 - items:
   - type: markdown
-    text: Make IT easier with Microsoft Managed Desktop.
+    text: The easiest way to delight users and free up IT.
 - items:
   - type: list
     style: cards
@@ -25,7 +25,7 @@ sections:
       html: <p>Read about what Microsoft Managed Desktop is and how it works.</p>
       image:
         src: https://docs.microsoft.com/en-us/media/common/i_overview.svg
-      title: Is Microsoft Managed Desktop right for you?
+      title: What is Microsoft Managed Desktop?
     - href: service-description/index.md
       html: <p>Learn what is included in Microsoft Managed Desktop.</p>
       image:
