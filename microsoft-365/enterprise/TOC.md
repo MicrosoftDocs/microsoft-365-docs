@@ -80,6 +80,7 @@
 ### [Mobile device management](contoso-mdm.md)
 ### [Information protection](contoso-info-protect.md)
 ### [Security summary](contoso-security-summary.md)
+### [SharePoint Online site for highly regulated data](contoso-sharepoint-online-site-for-highly-confidential-assets.md)
 
 # [Modern Desktop Deployment Center](desktop-deployment-center-home.md)
 ## [Getting Started: People, Process and Technology Guidance](getting-started.md)
