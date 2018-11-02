@@ -138,5 +138,5 @@ In accordance with security best practices and Microsoft 365 Enterprise deployme
 
 ## Next step
 
-[Deploy](deploy-microsoft-365-enterprise.md) Microsoft 365 Enterprise in your organization.
+[Learn](contoso-sharepoint-online-site-for-highly-confidential-assets.md) how Contoso created a SharePoint Online site for highly regulated data to enable collaboration among its research teams.
 
