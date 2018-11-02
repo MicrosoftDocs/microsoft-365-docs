@@ -25,7 +25,7 @@ As part of the [Modern Desktop Deployment](http://www.aka.ms/howtoshift) process
 
 The lab kit is free to download and uses trial software.
 
-[**DOWNLOAD**](https://aka.ms/mddlabs_evalcenter)
+### [**DOWNLOAD**](https://aka.ms/mddlabs_evalcenter)
 
 ## **A complete lab environment**
 
