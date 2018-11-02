@@ -27,7 +27,7 @@ The lab kit is free to download and uses trial software.
 
 [**DOWNLOAD**](https://aka.ms/mddlabs_evalcenter)
 
-**A complete lab environment**
+## **A complete lab environment**
 
 The lab provides you with an automatically provisioned virtual lab environment, including domain-joined desktop clients, domain controller, Internet gateway and a fully configured ConfigMgr instance. The lab contains Evaluation Versions of the following products:
 
@@ -50,23 +50,23 @@ Or
   - Office 365 Enterprise E5
   - Enterprise Mobility + Security
 
-**Step-by-step labs**
+## **Step-by-step labs**
 
 Detailed lab guides take you through multiple deployment and management scenarios, including:
 
-**Device and App Readiness**
+### **Device and App Readiness**
 
   - Windows Analytics
   - Enterprise Mode and the Enterprise Mode Site List for Internet Explorer
 
-**Directory and Network Readiness**
+### **Directory and Network Readiness**
 
   - Basic setup for Azure Active Directory and Microsoft 365
   - Network optimization using Delivery Optimization, Peer Cache in ConfigMgr and LEDBAT
   - **NEW** ConfigMgr and Microsoft Intune Co-Management
   - **NEW** Remote Access (VPN)
 
-**Office and LOB App Delivery**
+### **Office and LOB App Delivery**
 
   - Office 365 ProPlus deployment using System Center Configuration Manager
   - Office 365 ProPlus deployment using Microsoft Intune
@@ -76,13 +76,13 @@ Detailed lab guides take you through multiple deployment and management scenario
   - **NEW** Windows App Certification Kit
   - Browser compatibility remediation using Enterprise Mode for IE
 
-**User File and Settings Migration**
+### **User File and Settings Migration**
 
   - User State Migration Tool as part of PC Refresh and Replacement Task Sequences in ConfigMgr and MDT
   - OneDrive Known Folder Move
   - Enterprise State Roaming
 
-**Security and Compliance**
+### **Security and Compliance**
 
   - BitLocker device encryption
   - Windows Defender Antivirus
@@ -94,7 +94,7 @@ Detailed lab guides take you through multiple deployment and management scenario
   - Windows Defender Application Control
   - Windows Defender Advanced Threat Protection
 
-**OS Deployment and Feature Updates**
+### **OS Deployment and Feature Updates**
 
   - OS image creation
   - OS Deployment Task Sequences in ConfigMgr
@@ -106,17 +106,17 @@ Detailed lab guides take you through multiple deployment and management scenario
   - Feature Updates using Upgrade Task Sequences in ConfigMgr
   - Windows Autopilot
 
-**Office and Windows as a Service**
+### **Office and Windows as a Service**
 
   - Software update management using Configuration Manager
   - Office 365 ProPlus update management in Configuration Manager
   - Mobile Device Management applied to Windows 10 using Microsoft Intune
 
-[**DOWNLOAD**](https://aka.ms/mddlabs_evalcenter)
+### [**DOWNLOAD**](https://aka.ms/mddlabs_evalcenter)
 
 *Please use a broad bandwidth to download this content to enhance your downloading experience and allow 30-45 minutes for automatic provisioning. The lab environment requires a minimum of 16 GB of available memory and 150 GB of free disk space. For optimal performance, 32 GB of available is recommended. The lab expires December 9, 2018. A new version will be published prior to expiration.*
 
-**Additional guidance**
+## **Additional guidance**
 
   - [Modern Desktop Deployment Center](http://www.aka.ms/howtoshift)
 
@@ -130,7 +130,7 @@ Detailed lab guides take you through multiple deployment and management scenario
 
   - [<span class="underline">Getting Started with Intune</span>](https://docs.microsoft.com/intune/get-started-evaluation)
 
-> **Related resources**
+## **Related resources**
 
   - [<span class="underline">Introducing Microsoft 365</span>](https://www.microsoft.com/microsoft-365/default.aspx)
 
