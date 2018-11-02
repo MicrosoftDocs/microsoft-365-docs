@@ -7,8 +7,7 @@ ms.audience: Admin
 ms.topic: article
 f1_keywords:
 - 'Win10AppPolicy'
-- 'O365E_Win10AppPolicy
-'
+- 'O365E_Win10AppPolicy'
 - 'BCS365_Win10AppPolicy'
 ms.service: o365-administration
 localization_priority: Normal
