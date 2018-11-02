@@ -6,6 +6,65 @@
         "redirect_document_id": true
       },
       {
+        "source_path": "microsoft-365/managed-desktop/intro/technologies-and-devices.md",
+        "redirect_url": "https://docs.microsoft.com/microsoft-365/managed-desktop/intro/technologies",
+        "redirect_document_id": true
+      },
+      {
+        "source_path": "microsoft-365/managed-desktop/get-started/mmd-app-requirements.md",
+        "redirect_url": "https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/mmd-app-requirements",
+        "redirect_document_id": true
+      },
+      {
+        "source_path": "microsoft-365/managed-desktop/get-started/apps.md",
+        "redirect_url": "https://docs.microsoft.com/microsoft-365/managed-desktop/get-ready/apps",
+        "redirect_document_id": true
+      },
+      {
+        "source_path": "microsoft-365/managed-desktop/intro/device-list.md",
+        "redirect_url": "https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/device-list",
+        "redirect_document_id": true
+      },
+      {
+        "source_path": "microsoft-365/managed-desktop/intro/prerequisites.md",
+        "redirect_url": "https://docs.microsoft.com/microsoft-365/managed-desktop/get-ready/prerequisites",
+        "redirect_document_id": true
+      },
+      {
+        "source_path": "microsoft-365/managed-desktop/working-with-managed-desktop/operations-and-monitoring.md",
+        "redirect_url": "https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/operatons-and-monitoring",
+        "redirect_document_id": true
+      },
+      {
+        "source_path": "microsoft-365/managed-desktop/intro/how-managed-desktop-works.md",
+        "redirect_url": "https://docs.microsoft.com/microsoft-365/managed-desktop/intro/index",
+        "redirect_document_id": true 
+      },
+      {
+        "source_path": "microsoft-365/managed-desktop/working-with-managed-desktop/support.md",
+        "redirect_url": "https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/support",
+        "redirect_document_id": true
+      },
+      {
+        "source_path": "microsoft-365/managed-desktop/get-started/security.md",
+        "redirect_url": "https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/security",
+        "redirect_document_id": true 
+      },
+      {
+        "source_path": "microsoft-365/managed-desktop/working-with-managed-desktop/updates.md",
+        "redirect_url": "https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/updates"
+      },
+      {
+        "source_path": "microsoft-365/managed-desktop/get-started/device-policies.md",
+        "redirect_url": "https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/device-policies",
+        "redirect_document_id": true 
+      },
+      {
+        "source_path": "microsoft-365/managed-desktop/intro/device-catalog.md",
+        "redirect_url": "https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/device-list",
+        "redirect_document_id": false
+      },
+      {
         "source_path": "microsoft-365/enterprise/obsolete-article.md",
         "redirect_url": "https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions",
         "redirect_document_id": false
