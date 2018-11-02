@@ -58,6 +58,7 @@ This solution requires that you have already deployed:
 
 The following phases step you through the design, configuration, and driving adoption for SharePoint Online sites and teams for highly regulated data.
 
+To see how the Contoso Corporation, a fictional but representative multi-national organization, designed a SharePoint Online site for its research teams, see this [example configuration](contoso-sharepoint-online-site-for-highly-confidential-assets.md).
 
 >[!Note]
 >A team for highly regulated data requires that you first create a SharePoint Online team site for highly regulated data. You then create a new team that uses the Office 365 group of the SharePoint Online team site. See Phase 2, Step 4 for more information.
