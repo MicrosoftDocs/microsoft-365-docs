@@ -68,7 +68,7 @@ description: Learn how to plan, deploy, and use Microsoft Office 365, Windows 10
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>Move to Microsoft 365 for Business</h3>
+                                                <h3>Move to Microsoft 365 Business</h3>
                                                 <P><a href="migrate-to-microsoft-365-business.md" target="_blank">Move from Office 365 Business Premium</a></p>
                                             </div>
                                         </div>
