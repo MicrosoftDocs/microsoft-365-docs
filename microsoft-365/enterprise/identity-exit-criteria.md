@@ -154,7 +154,7 @@ If needed, [Step 9](identity-password-writeback.md) can help you with this optio
 
 ### How to test
 
-You test password writeback by changing your password in Office 365. You should be able to use your account and new password to access on-premises Windows Sever AD resources.
+You test password writeback by changing your password in Office 365. You should be able to use your account and new password to access on-premises Windows Server AD resources.
 
 1. Create a test user account in your on-premises Windows Server AD, allow directory synchronization to occur, and then grant it an Office 365 license in the Office 365 admin portal.
 2. From a remote computer that is joined to your on-premises Windows Server AD domain, sign in to the computer and the Office 365 portal using the credentials of the test user account.

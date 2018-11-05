@@ -48,7 +48,7 @@ Some disk encryption solutions allow you to perform the upgrades when using the 
 
 One option to resolve these issues is using BitLocker in Windows 10, which is included in Windows 10 Pro and higher editions. BitLocker allows you to suspend protection for OS upgrades and Feature Updates as part of the process.
 
-[Bitlocker baisic deployment](https://docs.microsoft.com/en-us/windows/security/information-protection/bitlocker/bitlocker-basic-deployment)
+[Bitlocker basic deployment](https://docs.microsoft.com/en-us/windows/security/information-protection/bitlocker/bitlocker-basic-deployment)
 
 ### Antivirus and Antimalware Application Compatibility
 
