@@ -19,7 +19,7 @@ description: Introduction to the Modern Desktop Deployment Process.
 
 The Cloud is changing how management of PCs is be done, with the Microsoft Intelligent Cloud delivering actional insights to help IT Professionals shift to a modern desktop. This series designed to help you plan for and make the shift to a modern desktop based on Windows 10 and Office 365 ProPlus.
 
-![](media/getting-started-media/getting-started-media-1.png)
+<img src="media/getting-started-media/getting-started-media-1.png" alt="Desktop Deployment Wheel" style="background-color: #fff;" />
 
 <table>
 <thead>
