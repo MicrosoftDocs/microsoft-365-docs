@@ -31,6 +31,7 @@ To understand how this works with previously installed Office apps, read [Prepar
 1. Sign in to the [admin center](https://aka.ms/bcsportal) with global admin credentials. 
     
 2. On the **Devices** card, choose **Manage Office Deployment**.
+      If you do not see the **Device actions** card, in the admin center **Home** page, click **Add** (+) to add it to your admin home.
     
     ![Screenshot of the Devices card in the admin center](media/9982e784-dbf9-4a76-a159-bb3e2e5aa23f.png)
   
