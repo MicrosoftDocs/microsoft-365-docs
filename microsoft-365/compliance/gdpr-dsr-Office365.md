@@ -1595,9 +1595,9 @@ As explained above, Workplace Analytics uses Office 365 data in combination with
 To restrict processing for a specific user, you can remove their Workplace Analytics license.
 
 #### Delete
-If a data subject would like to be removed from a Workplace Analytics report or set of reports, you can delete the report. It is your responsibility to delete users from any organizational data that you used to generate the report, and reupload the data. All data about the user is removed when a user account is “hard-deleted” from Active Directory. 
+If a data subject would like to be removed from a Workplace Analytics report or set of reports, you can delete the report. It is your responsibility to delete users from any organizational data that you used to generate the report, and reupload the data. All data about the user is removed when a user account is “hard-deleted” from Azure Active Directory. 
 
-To remove the personal data of a data subject, the tenant admin takes the following steps: 
+To remove the personal data of a data subject, an Office 365 global administrator can take the following steps: 
 
 1. Remove the Workplace Analytics license from the data subject.
 2. Delete the Azure Active Directory (AAD) entry for the data subject. (For more information, see [Delete a user](https://docs.microsoft.com/azure/active-directory/fundamentals/add-users-azure-active-directory#delete-a-user).)
@@ -1799,3 +1799,4 @@ The following table lists the changes to the Office 365 DSR guide since its init
 |Date  |Section/App |Change  |
 |---------|---------|---------|
 |9/18/2018     |   [Whiteboard](#whiteboard)      |Whiteboard Preview is no longer in preview and has been released to general availability. Therefore, the section on Whiteboard Preview was renamed to "Whiteboard for PC, Surface Hub, and other platforms"; procedures to access, export, and delete data were removed from this section and replaced with a link to the Whiteboard support article.|
+|11/06/2018     |    [Workplace Analytics](#workplace-analytics)     |Added step-by-step guidance to the Delete section about removing a data subject from Workplace Analytics and removing information about a data subject from a Workplace Analytics report. 
