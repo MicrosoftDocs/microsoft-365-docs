@@ -16,6 +16,22 @@ We’re always looking for ways to help make our customer’s workplace more pro
 
 Microsoft Managed Desktop takes this further by combining the power of Microsoft 365 E5 on a modern device, with endpoint management, protection, and security provided and run by Microsoft.
 
+Column one | Column two
+--- | ---
+cell one row one | cell two row one
+
+- bullet
+- bullet
+
+1. numbwered one
+1. numbered two
+
+>[!NOTE]
+>text
+
+[link text](url) 
+
+![alt text](images/name.png)
 
 <table>
 <tr><th>Best experience</th><th>Latest technology</th><th>Backed by Microsoft</th></tr>
