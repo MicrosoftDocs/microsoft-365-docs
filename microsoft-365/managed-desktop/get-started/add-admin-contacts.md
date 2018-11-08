@@ -3,7 +3,7 @@ title: Add Admin contacts in Microsoft Managed Desktop admin portal
 description:  Tell us who to contact for each area of focus.
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
-author: jdeckerms
+author: trudyha
 ms.localizationpriority: normal
 ms.date: 09/24/2018
 ---

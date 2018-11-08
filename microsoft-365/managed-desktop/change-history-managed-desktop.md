@@ -4,7 +4,7 @@ description: This topic lists new and updated topics for Microsoft Managed Deskt
 keywords: change history
 ms.prod: m365-md
 ms.sitesec: library
-author: jdeckerms
+author: trudyha
 ms.author: jdecker
 ms.topic: article
 ms.date: 10/30/2018
