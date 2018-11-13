@@ -99,7 +99,7 @@ To demonstrate information protection-related features and capabilities, see:
     
    Configure and apply Office 365 labels to a document in a SharePoint Online team site.
     
-- [Privileged access management for your Microsoft 365 Enterprise test environment](privileged-access-microsoft-365-enterprise-dev-test-environment.md)
+- [Privileged access management](privileged-access-microsoft-365-enterprise-dev-test-environment.md)
     
    Configure privileged acccess management for just-in-time access to elevated and privileged tasks in your Office 365 organization.
 
