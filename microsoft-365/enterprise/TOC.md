@@ -65,7 +65,7 @@
 #### [Azure AD Identity Protection](azure-ad-identity-protection-microsoft-365-test-environment.md)
 ### [Mobile device management]()
 #### [Enroll iOS and Android devices](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
-#### [MAM policies](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
+#### [Device compliance policies](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
 ### [Information protection]()
 #### [Increased Office 365 security](increased-o365-security-microsoft-365-enterprise-dev-test-environment.md)
 #### [Data classification](data-classification-microsoft-365-enterprise-dev-test-environment.md)

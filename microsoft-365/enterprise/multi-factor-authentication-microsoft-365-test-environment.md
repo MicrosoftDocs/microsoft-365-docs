@@ -45,7 +45,7 @@ If you want to test multi-factor authentication in a simulated enterprise, follo
 
 Enable multi-factor authentication for the User 2 account with these steps:
   
-1. Open a separate, private instance of your browser, go to the Office 365 portal ([https://portal.office.com](https://portal.office.com)), and then sign in with your global administrator account.
+1. Open a separate, private instance of your browser, go to the Office portal ([https://office.com](https://office.com)), and then sign in with your global administrator account.
     
 2. From the main portal page, click **Admin**.
     
@@ -69,7 +69,7 @@ Complete the configuration for the User 2 account to use a text message for vali
   
 1. Open a new, private instance of your browser.
     
-2. Go to the Office 365 portal ([https://portal.office.com](https://portal.office.com)) and sign in with the User 2 account (user2@\<organization name>.onmicrosoft.com) and password.
+2. Go to the Office portal ([https://office.com](https://office.com)) and sign in with the User 2 account (user2@\<organization name>.onmicrosoft.com) and password.
     
 3. After signing in, you are prompted to set up the account for more information. Click **Next**.
     
@@ -89,7 +89,7 @@ Complete the configuration for the User 2 account to use a text message for vali
     
 8. If this is the first time you signed in with the User 2 account, you are prompted to change the password. Type the original password and a new password twice, and then click **Update password and sign in**. Record the new password in a secure location.
     
-    You should see the Office 365 portal for User 2 on the **Microsoft Office Home** tab of your browser.
+    You should see the Office portal for User 2 on the **Microsoft Office Home** tab of your browser.
 
 
 See the [Set up multi-factor authentication](identity-multi-factor-authentication.md) step in the Identity phase for information and links to deploy multi-factor authentication in production.

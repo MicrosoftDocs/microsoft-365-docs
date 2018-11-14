@@ -27,7 +27,7 @@ If you skip this requirement, you’ll have two sets of user accounts and groups
 In this state, the two sets of user accounts and groups must be manually maintained by both IT administrators and users. This will inevitably lead to unsynchronized accounts, their passwords, and groups.
 
 #### How to test
-To verify that authentication with on-premises credentials works correctly, sign in to the Office 365 portal with your on-premises credentials.
+To verify that authentication with on-premises credentials works correctly, sign in to the Office portal with your on-premises credentials.
 
 To verify that directory synchronization is working correctly, do the following:
 
@@ -68,7 +68,7 @@ If needed, [Step 11](../identity-customize-office-365-sign-in.md) can help you w
 
 #### How to test
 
-Sign in to the Office 365 portal with your user account name and multi-factor authentication. You should see your custom branding elements on the sign-in page.
+Sign in to the Office portal with your user account name and multi-factor authentication. You should see your custom branding elements on the sign-in page.
 
 <a name="crit-identity-mfa"></a>
 ### Optional: Multi-factor authentication is enabled for your users
@@ -136,10 +136,10 @@ If needed, [Step 9](../identity-password-writeback.md) can help you with this op
 You test password writeback by changing your password in Office 365. You should be able to use your account and new password to access on-premises Windows Sever AD resources.
 
 1. Create a test user account in your on-premises Windows Server AD, allow directory synchronization to occur, and then grant it an Office 365 license in the Office 365 admin portal.
-2. From a remote computer that is joined to your on-premises Windows Server AD domain, sign in to the computer and the Office 365 portal using the credentials of the test user account.
+2. From a remote computer that is joined to your on-premises Windows Server AD domain, sign in to the computer and the Office portal using the credentials of the test user account.
 3. Select **Settings > Office 365 settings > Password > Change password**.
 4. Type the current password, type a new password, and then confirm it.
-5. Sign out of the Office 365 portal and the remote computer and then sign in to the computer using the test user account and its new password. This proves that you were able to change the password of an on-premises Windows Server AD user account using the Azure AD tenant.
+5. Sign out of the Office portal and the remote computer and then sign in to the computer using the test user account and its new password. This proves that you were able to change the password of an on-premises Windows Server AD user account using the Azure AD tenant.
 
 <a name="crit-identity-sso"></a>
 ### Optional: Users can sign in using single sign-on
