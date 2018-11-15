@@ -47,7 +47,7 @@ In this phase, you sign up for the EMS E5 trial subscription and add it to the s
   
 First, add the EMS E5 trial subscription and assign an EMS license to your global administrator account.
   
-1. With a private instance of an Internet browser, sign in to the Office 365 portal with your global administrator account credentials. For help, see [Where to sign in to Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. With a private instance of an Internet browser, sign in to the Office portal with your global administrator account credentials. For help, see [Where to sign in to Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
 2. Click the **Admin** tile.
     
@@ -179,7 +179,7 @@ Next, join the WIN10 computer to the Azure AD tenant of your Office 365 and EMS 
     
 Next, install Office 365 ProPlus on the WIN10 computer.
   
-1. Open the Microsoft Edge browser and sign in to the Office 365 portal with your global administrator account credentials. For help, see [Where to sign in to Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Open the Microsoft Edge browser and sign in to the Office portal with your global administrator account credentials. For help, see [Where to sign in to Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
 2. On the **Microsoft Office Home** tab, click **Install Office 2016**.
     
