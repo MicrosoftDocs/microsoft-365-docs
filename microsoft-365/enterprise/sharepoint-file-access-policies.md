@@ -18,14 +18,14 @@ This article describes how to implement the recommended identity and device-acce
 
 These recommendations are based on three different tiers of security and protection for SharePoint files that can be applied based on the granularity of your needs: **baseline**, **sensitive**, and **highly regulated**. You can learn more about these security tiers, and the recommended client operating systems, referenced by these recommendations in the [the overview](microsoft-365-policies-configurations.md).
 
-In addtion to implementing this guidance, be sure to configure SharePoint sites with the right amount of protection, including ensuring that permissions for sensitive and highly-regulated content are appropriate. For more information on creating sites for baseline, sensitive, and highly-regulated protection, see [Secure SharePoint Online sites and files](https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-and-files). 
+In addition to implementing this guidance, be sure to configure SharePoint sites with the right amount of protection, including setting appropriate permissions for sensitive and highly-regulated content. For more information on creating sites for baseline, sensitive, and highly-regulated protection, see [Secure SharePoint Online sites and files](https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-and-files). 
 
 ## Updating common policies to include SharePoint and OneDrive for Business
 The following diagram illustrates the set of recommended policies for protecting files in SharePoint Online and OneDrive for Business. It indicates which policies should be updated or newly created to add protection for SharePoint Online and OneDrive for Business.
 
 ![Summary of policies for SharePoint Online and OneDrive](../images/identity-access-ruleset-sharepoint.png)
 
-If you included SharePoint Online when you created the common policies, you only need create the new polcies. When configuring conditional access rules, SharePoint Online includes OneDrive for Business.
+If you included SharePoint Online when you created the common policies, you only need create the new policies. When configuring conditional access rules, SharePoint Online includes OneDrive for Business.
 
 The new policies implement device protection for sensitive and highly-regulated content by applying specific access requirements to SharePoint sites that you specify. 
 
