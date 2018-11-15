@@ -3,7 +3,7 @@ title: "Step 7: Synchronize identities"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/09/2018
+ms.date: 11/15/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
