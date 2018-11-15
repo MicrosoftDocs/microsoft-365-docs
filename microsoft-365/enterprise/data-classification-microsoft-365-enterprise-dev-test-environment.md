@@ -36,7 +36,7 @@ If you want to configure Office 365 labels in a simulated enterprise, follow the
 
 In this phase, you create the labels for the different levels of security for SharePoint Online documents folders.
   
-1. If needed, use a private instance of your Internet browser and sign in to the Office 365 portal with your global administrator account. For help, see [Where to sign in to Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. If needed, use a private instance of your Internet browser and sign in to the Office portal with your global administrator account. For help, see [Where to sign in to Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
 2. From the **Microsoft Office Home** tab, click the **Admin** tile.
     
@@ -84,7 +84,7 @@ In this phase, you discover the default label behavior for files in the Document
 
 First, create a sensitive-level SharePoint Online team site:
   
-1. Using a browser on your local computer, sign in to the Office 365 portal using your global administrator account. For help, see [Where to sign in to Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Using a browser on your local computer, sign in to the Office portal using your global administrator account. For help, see [Where to sign in to Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
 2. In the list of tiles, click **SharePoint**.
     

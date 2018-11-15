@@ -106,7 +106,7 @@ When users get a mobile device, one of the first tasks is to access organization
 
 |||
 |:-------|:-----|
-|![Test Lab Guides for the Microsoft cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Test Lab Guide: Mobile application management policies](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md) |
+|![Test Lab Guides for the Microsoft cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Test Lab Guide: Device compliance policies](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md) |
 |||
 
 ## Step 6: Turn on compliance and conditional access

@@ -78,9 +78,9 @@ To demonstrate identity-related features and capabilities, see:
 
 To demonstrate mobile device management-related features and capabilities, see:
 
-- [MAM policies](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
+- [Device compliance policies](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
     
-   Create user groups and mobile application management (MAM) policies for iOS and Android devices.
+   Create a user group and a device compliance policy for Windows 10 devices.
     
 - [Enroll iOS and Android devices](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
    
