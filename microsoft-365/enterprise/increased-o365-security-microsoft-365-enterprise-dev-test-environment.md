@@ -41,7 +41,7 @@ In this phase, you enable increased Office 365 security for your Microsoft 365 E
 
 Apps that do not support modern authentication cannot have [identity and device access configurations](microsoft-365-policies-configurations.md) applied to them, which is an important element of securing your Microsoft 365 subscription and its digital assets. 
 
-1. Go to the Office 365 portal ([https://portal.office.com](https://portal.office.com)) and sign in to your Office 365 trial subscription with your global administrator account.
+1. Go to the Office portal ([https://office.com](https://office.com)) and sign in to your Office 365 trial subscription with your global administrator account.
     
   - If you are using the lightweight Microsoft 365 test environment, sign in from your local computer.
     

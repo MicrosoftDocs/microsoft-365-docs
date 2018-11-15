@@ -98,7 +98,7 @@ First, you install and configure Azure AD Connect on APP1.
     
 10. On the **Configuration complete** page, click **Exit**.
     
-11. In Internet Explorer, go to the Office 365 portal ([https://portal.office.com](https://portal.office.com)).
+11. In Internet Explorer, go to the Office portal ([https://office.com](https://office.com)).
     
 12. From the main portal page, click **Admin**.
     
