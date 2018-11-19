@@ -49,6 +49,7 @@ How ring promotion works:
 <tr><td>Office Pro-Plus click to run</td><td colspan="4">Aligned with semi-annual channel</td></tr>
 </table>
 
+These deferral periods are intentionally designed to ensure high security and performance standards for all users. Furthermore, based on data gathered across all Microsoft Managed Desktop devices and the varying scope and impact of updates, Microsoft Managed Desktop reserves flexibility to modify the length of the above deferral periods for any and all deployment rings on an ad hoc basis.
 
 ## Windows Insider Program
 
