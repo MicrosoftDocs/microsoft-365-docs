@@ -21,6 +21,7 @@ If you are planning your Windows 10 deployment with Office 365 ProPlus, there ar
 
 Below is a map of the available services aligned to the [Modern Desktop Deployment](http://www.aka.ms/howtoshift) process for Windows 10, Office 365 ProPlus and Enterprise Mobility + Security with existing partner and FastTrack offers. In many cases, these services are included with your qualifying subscription to Microsoft 365, Office 365 or Windows 10 Enterprise. For partner-led services like the Modern Desktop Assessment, as a qualifying organization, Microsoft provides a voucher for services performed by the partner. Details for each offer are found in the links below.
 
+<br>
 
 <table>
 <tr class="even">
@@ -88,12 +89,12 @@ Below is a map of the available services aligned to the [Modern Desktop Deployme
 
 **Ask the Tech Community**
 
-  - > For specific questions as you plan or start your deployment, join the [Microsoft Tech Community](https://techcommunity.microsoft.com)
+  > For specific questions as you plan or start your deployment, join the [Microsoft Tech Community](https://techcommunity.microsoft.com)
 
 **Related resources**
 
-  - > [Modern Desktop Deployment Center](http://www.aka.ms/howtoshift)
+  > [Modern Desktop Deployment Center](http://www.aka.ms/howtoshift)
 
-  - > [Modern Desktop Deployment series videos from Microsoft Mechanics](http://www.aka.ms/watchhowtoshift)
+  > [Modern Desktop Deployment series videos from Microsoft Mechanics](http://www.aka.ms/watchhowtoshift)
 
-  - > Modern Desktop Deployment and Management Lab Kit
+  > [Modern Desktop Deployment and Management Lab Kit](https://aka.ms/howtoshiftlabs)
