@@ -87,14 +87,14 @@ Below is a map of the available services aligned to the [Modern Desktop Deployme
 </tbody>
 </table>
 
-**Ask the Tech Community**
+## **Ask the Tech Community**
 
-  > For specific questions as you plan or start your deployment, join the [Microsoft Tech Community](https://techcommunity.microsoft.com)
+  - For specific questions as you plan or start your deployment, join the [Microsoft Tech Community](https://techcommunity.microsoft.com)
 
-**Related resources**
+## **Related resources**
 
-  > [Modern Desktop Deployment Center](http://www.aka.ms/howtoshift)
+  - [Modern Desktop Deployment Center](http://www.aka.ms/howtoshift)
 
-  > [Modern Desktop Deployment series videos from Microsoft Mechanics](http://www.aka.ms/watchhowtoshift)
+  - [Modern Desktop Deployment series videos from Microsoft Mechanics](http://www.aka.ms/watchhowtoshift)
 
-  > [Modern Desktop Deployment and Management Lab Kit](https://aka.ms/howtoshiftlabs)
+  - [Modern Desktop Deployment and Management Lab Kit](https://aka.ms/howtoshiftlabs)
