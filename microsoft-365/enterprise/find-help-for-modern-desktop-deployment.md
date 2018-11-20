@@ -25,8 +25,8 @@ Below is a map of the available services aligned to the [Modern Desktop Deployme
 <tr class="even">
 <td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-3.png" alt="step 1" height="144" width="144" /></td>
 <td><p><strong>Device and App Readiness</strong></p></td>
-<li><p><a href="http://aka.ms/MDAcustomerform">Modern Desktop Assessment</a>, where a qualified partner in your region provides your organization with an in-depth application and device compatibility and upgrade readiness assessment using the latest Microsoft tools and procedures.</p></li>
-<li><p><a href="http://www.aka.ms/desktopappassure">Desktop App Assure</a>, where Microsoft’s FastTrack engineers provide advisory and remediation guidance if you encounter app compatibility issues as you deploy Windows 10 and Office 365 ProPlus or ongoing updates.</p></li>
+<td><p><a href="http://aka.ms/MDAcustomerform">Modern Desktop Assessment</a>, where a qualified partner in your region provides your organization with an in-depth application and device compatibility and upgrade readiness assessment using the latest Microsoft tools and procedures.</p></td>
+<td><p><a href="http://www.aka.ms/desktopappassure">Desktop App Assure</a>, where Microsoft’s FastTrack engineers provide advisory and remediation guidance if you encounter app compatibility issues as you deploy Windows 10 and Office 365 ProPlus or ongoing updates.</p></td>
 </tr>
 <tbody>
 <tr class="odd">
