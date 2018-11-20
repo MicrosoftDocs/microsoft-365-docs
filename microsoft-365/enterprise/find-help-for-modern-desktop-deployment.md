@@ -22,16 +22,12 @@ If you are planning your Windows 10 deployment with Office 365 ProPlus, there ar
 Below is a map of the available services aligned to the [Modern Desktop Deployment](http://www.aka.ms/howtoshift) process for Windows 10, Office 365 ProPlus and Enterprise Mobility + Security with existing partner and FastTrack offers. In many cases, these services are included with your qualifying subscription to Microsoft 365, Office 365 or Windows 10 Enterprise. For partner-led services like the Modern Desktop Assessment, as a qualifying organization, Microsoft provides a voucher for services performed by the partner. Details for each offer are found in the links below.
 
 <table>
-<thead>
-<tr class="header">
-<th><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-3.png" alt="step 1" height="144" width="144" /></th>
-<th><p><strong>Device and App Readiness</strong></p></th>
-<ul>
+<tr class="even">
+<td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-3.png" alt="step 1" height="144" width="144" /></td>
+<td><p><strong>Device and App Readiness</strong></p></td>
 <li><p><a href="http://aka.ms/MDAcustomerform">Modern Desktop Assessment</a>, where a qualified partner in your region provides your organization with an in-depth application and device compatibility and upgrade readiness assessment using the latest Microsoft tools and procedures.</p></li>
 <li><p><a href="http://www.aka.ms/desktopappassure">Desktop App Assure</a>, where Microsoft’s FastTrack engineers provide advisory and remediation guidance if you encounter app compatibility issues as you deploy Windows 10 and Office 365 ProPlus or ongoing updates.</p></li>
-</ul>
 </tr>
-</thead>
 <tbody>
 <tr class="odd">
 <td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-5.png" alt="step 2" height="144" width="144" /></td>
