@@ -89,7 +89,7 @@ Below is a map of the available services aligned to the [Modern Desktop Deployme
 
 ## **Ask the Tech Community**
 
-  - For specific questions as you plan or start your deployment, join the [Microsoft Tech Community](https://techcommunity.microsoft.com)
+For specific questions as you plan or start your deployment, join the [Microsoft Tech Community](https://techcommunity.microsoft.com)
 
 ## **Related resources**
 
