@@ -98,7 +98,7 @@ As an interim checkpoint, you can see the [exit criteria](windows10-exit-criteri
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step4.png)| [Use Windows Analytics to monitor device health](windows10-enable-windows-analytics.md) |
+|![](./media/stepnumbers/Step4.png)| [Monitor device health and compliance](windows10-enable-windows-analytics.md) |
 
 
 

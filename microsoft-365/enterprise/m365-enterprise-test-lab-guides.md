@@ -3,7 +3,7 @@ title: "Microsoft 365 Enterprise Test Lab Guides"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/19/2018
+ms.date: 11/20/2018
 ms.audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
@@ -65,6 +65,10 @@ To demonstrate identity-related features and capabilities, see:
 - [Password reset](password-reset-m365-ent-test-environment.md)
 
    Use self-service password reset (SSPR) to reset your password.
+
+- [Password writeback](password-writeback-m365-ent-test-environment.md)
+
+   Use password writeback to change the password on your Windows Server AD user account from Azure AD.
 
 - [Automatic licensing and group membership](automate-licenses-group-membership-microsoft-365-test-environment.md)
 
