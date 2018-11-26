@@ -42,13 +42,14 @@ How ring promotion works:
 <table>
 <tr><th colspan="5">Rings and deferral settings</th></tr>
 <tr><th>Update type</th><th>Test ring</th><th>First</th><th>Fast</th><th>Broad</th></tr>
-<tr><td>Quality updates for operating system</td><td>0 days</td><td>0 days</td><td>1 day</td><td>5 days</td></tr>
+<tr><td>Quality updates for operating system</td><td>0 days</td><td>0 days</td><td>0 days</td><td>3 days</td></tr>
 <tr><td>Feature updates for operating system</td><td>Semi-annual channel (targeted) + 0 days</td><td>Semi-annual channel (targeted) + 30 days</td><td>Semi-annual channel (targeted) + 60 days</td><td>Semi-annual channel + 30 days</td></tr>
 <tr><td>Drivers/firmware</td><td colspan="4">Follows the schedule for quality updates</td></tr>
 <tr><td>Anti-virus definition</td><td colspan="4">Updated with each scan</td></tr>
 <tr><td>Office Pro-Plus click to run</td><td colspan="4">Aligned with semi-annual channel</td></tr>
 </table>
 
+These deferral periods are intentionally designed to ensure high security and performance standards for all users. Furthermore, based on data gathered across all Microsoft Managed Desktop devices and the varying scope and impact of updates, Microsoft Managed Desktop reserves flexibility to modify the length of the above deferral periods for any and all deployment rings on an ad hoc basis.
 
 ## Windows Insider Program
 
