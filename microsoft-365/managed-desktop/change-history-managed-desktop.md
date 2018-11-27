@@ -19,7 +19,7 @@ This topic lists new and updated topics in the [Microsoft Managed Desktop docume
 
 New or changed topic | Description
 --- | ---
-[IT as a service](service-description/itaas.md)<br />and [End user support for Microsoft Managed Desktop](working-with-managed-desktop/end-user-support.md) | Updated to include Australia.
+[Support for Microsoft Managed Desktop](service-description/support.md)<br />and [End user support for Microsoft Managed Desktop](working-with-managed-desktop/end-user-support.md) | Updated to include Australia.
 
 ## October 30, 2018
 Content reorganized: add section for [Microsoft Managed Desktop service description](service-description/index.md). 
