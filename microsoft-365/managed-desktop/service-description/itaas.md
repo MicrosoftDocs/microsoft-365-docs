@@ -5,7 +5,7 @@ keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jdeckerms
 ms.localizationpriority: normal
-ms.date: 09/24/2018
+ms.date: 11/28/2018
 ---
 
 # IT as a service
