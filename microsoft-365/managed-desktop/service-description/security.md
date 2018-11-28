@@ -92,7 +92,7 @@ Customers may configure these optional services to help protect corporate high-v
 Service | Description
 --- | ---
 Conditional access |	Allow access to corporate resources and services only when the device is compliant.
-Data recovery  | Information stored in key folders on the device is backed up to OneDrive for Bbusiness. Microsoft Managed Desktop is not responsible for data that isn’t synchronized with OneDrive for Business. 
+Data recovery  | Information stored in key folders on the device is backed up to OneDrive for Business. Microsoft Managed Desktop is not responsible for data that isn’t synchronized with OneDrive for Business. 
 Windows Information Protection |	For companies that require high levels of information security, we recommend [Windows Information Protection](https://docs.microsoft.com/windows/threat-protection/windows-information-protection/protect-enterprise-data-using-wip) and [Azure Information Protection.](https://www.microsoft.com/cloud-platform/azure-information-protection). 
 
 
