@@ -24,7 +24,7 @@ Azure AD Seamless Single Sign-On (SSO) automatically signs in users when they ar
 
 This article describes how you can configure your Microsoft 365 test environment for Azure AD Seamless SSO.
 
-There are two phases to setting up this test environment:
+There are two phases to setting this up:
 
 1.	Create the Microsoft 365 simulated enterprise test environment with password hash synchronization.
 2.	Configure Azure AD Connect on APP1 for Azure AD Seamless SSO.
@@ -34,7 +34,7 @@ There are two phases to setting up this test environment:
 > [!TIP]
 > Click [here](https://aka.ms/m365etlgstack) for a visual map to all the articles in the Microsoft 365 Enterprise Test Lab Guide stack.
   
-## Phase 1: Create the password hash synchronization for your Microsoft 365 test environment
+## Phase 1: Configure password hash synchronization for your Microsoft 365 test environment
 
 Follow the instructions in [password hash synchronization for Microsoft 365](password-hash-sync-m365-ent-test-environment.md). Here is your resulting configuration.
   

@@ -31,7 +31,7 @@ Ensure your directory and the network are configured and ready to support to you
 </table>
 
 >[!NOTE]
->Directory and Network Readiness is the second step in our recommended deployment process wheel focusing on Azure Active Directory and optizming the network. To see the full desktop deployment process, visit the [Modern Desktop Deployment Center](https://aka.ms/mddhome).
+>Directory and Network Readiness is the second step in our recommended deployment process wheel focusing on Azure Active Directory and optizming the network. To see the full desktop deployment process, visit the [Modern Desktop Deployment Center](https://aka.ms/HowToShift).
 >
 
 Directory and Network readiness is fundamental to ensuring a smooth OS and desktop deployment. As with any automated deployment, it is important to ensure your file shares can be reached, and your network will need to be able to support the transfer of very large files, possibly to hundreds or even thousands of PCs at a time.
@@ -44,7 +44,7 @@ In this article we’ll explore the tools and options to prepare your directory 
 
 If your organization already uses Office 365, Exchange Online, Microsoft Intune or other Microsoft Online services, the good news is, you are already using Azure Active Directory. If you are, you just need to ensure that the users you are targeting for desktop deployment are in your Azure Active Directory, and that licenses have been assigned.
 
-If are not currently using Azure Active Directory, there are [lots of resources](https://docs.microsoft.com/en-us/azure/active-directory/) to help you set it up. You may well qualify for personalized assistance via Microsoft FastTrack, as part of your Office 365 license. You can check out more about Microsoft Fastrack [here](https://fasttrack.microsoft.com).
+If you are not currently using Azure Active Directory, there are [lots of resources](https://docs.microsoft.com/en-us/azure/active-directory/) to help you set it up. You may well qualify for personalized assistance via Microsoft FastTrack, as part of your Office 365 license. You can check out more about Microsoft Fastrack [here](https://fasttrack.microsoft.com).
 
 Once you have Azure Active Directory in place, your users can sign in to and activate their Office 365 ProPlus apps, and you can use Microsoft Intune or Windows Autopilot deployment for automated deployment of apps and policy.
 

@@ -1,9 +1,9 @@
 ---
-title: Microsoft Managed Desktop technologies and devices
+title: Microsoft Managed Desktop technologies
 description:  This topic lists the technologies and apps used in Microsoft Managed Desktop.
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
-author: jdeckerms
+author: trudyha
 ms.localizationpriority: normal
 ms.date: 09/24/2018
 ---
@@ -15,10 +15,9 @@ This topic lists the technologies and apps used in Microsoft Managed Desktop.
 <!-- Microsoft 365 E5; Device as a Service -->
 <!-- in O365 table, standard suite, removed this sentence "Please see the Installation of Project/Visio 64bit Click to Run Addendum for important deployment instructions. -->
 
-Microsoft 365 E5 License (or equivalent) is required for Microsoft Managed Desktop service. The following are all components that are included in this license and how Microsoft Managed Desktop uses each component with Microsoft Managed Desktop devices.  Specific roles and responsibilities for each area are detailed throughout the document. 
+Microsoft 365 E5 License (or equivalent) is required for Microsoft Managed Desktop service. The following are all components that are included in this license and how Microsoft Managed Desktop uses each component with Microsoft Managed Desktop devices.  Specific roles and responsibilities for each area are detailed throughout Microsoft Managed Desktop topics. 
 
 Microsoft 365 E5 is comprised of 3 components: Office 365 E5, Windows 10 Enterprise and E5, Enterprise Mobility + Security E5.  
-
 
 ## Office 365 E5
  |
@@ -34,7 +33,7 @@ Skype for Business Online Cloud PBX | This feature is available via Office 365 E
  |
  --- | ---
 Credential Guard |	Microsoft Managed Desktop will provide guidance and manage cloud aspects of this feature
-Device Guard ( Windows Defender Application Control )	| Microsoft Managed Desktop will create the policy. Customer will manage signatures
+Device Guard (Windows Defender Application Control)	| Microsoft Managed Desktop will create the policy. Customer will manage signatures
 AppLocker management |	Microsoft Managed Desktop will create the policy. Customer will manage signatures
 Application Virtualization (App-V) |	Microsoft Managed Desktop does not support this type of deployment as it is not supported on Intune.
 User Experience Virtualization (UE-V) |	This is not used with Microsoft Managed Desktop managed devices
@@ -48,30 +47,3 @@ Windows Defender Advanced Threat Protection |	This is used by Microsoft Managed 
 Enterprise Mobility + Security E3<br>Azure Active Directory Premium P2 |	All aspects of the Enterprise Mobility + Security E3 and AADP may be used to manage MDM devices
 Microsoft Cloud App Security |	This is an optional feature that customers can use with the Microsoft Managed Desktop service.
 Azure Information Protection P2	 |This is an optional feature that customers can use with the Microsoft Managed Desktop service.
-
-## Services for Microsoft Managed Desktop devices 
-
-Microsoft will provide these services for Microsoft Managed Desktop devices. For more information on program devices, see [Microsoft Managed Desktop devices](device-list.md)
-
- | 
- --- | ---
-Support	| Support agents will answer questions directly related to device functionality and diagnose device issues.
-Replacement	| The device will be replaced with a similar device after a request is made through support. For coverage details, refer to the warranty terms chosen when selecting your devices.
-Upgrade	| Devices are upgraded and replaced under the terms of the warranty that you select.
-Inventory |	All devices are tracked in the Microsoft Managed Desktop Admin portal for inventory and status tracking.
-Device shipment |	Devices are shipped directly to the assigned user or IT distribution point.
-Firmware / driver updates |	Firmware/Driver updates are deployed and monitored for compatibility by Microsoft. 
-Accessories	| Accessories that come with your device are covered by the same services as the device itself, but warranty terms may differ. Refer to the warranty terms chosen when selecting your devices. 
-Device setup	| Devices will be pre-configured with the current version of Windows and receive their apps and configurations via the cloud. 
-
-## Device service limitations
-
-Microsoft will not provide service for these items.
-
- | 
- --- | ---
-Other accessories |	Only accessories shipped with the device are supported.
-Personalization | Devices and accessories provided with the service are unable to be customized. All devices and accessories are provided with standard branding, specification, and color combinations. Application deployment and policy configurations are handled through IT-as-a-Service.
-Repair | Devices are not repaired. Replacement devices will be shipped as described above.
-Data recovery | User and team data, including personalization, is stored in OneDrive for Business, with only cache data residing locally. If data is intentionally stored on the device’s internal storage system, any data recovery must be attempted and completed prior to returning the device to Microsoft.
-Device setup | Devices are delivered to the customer address, where they need to be powered on and set up by the customer.

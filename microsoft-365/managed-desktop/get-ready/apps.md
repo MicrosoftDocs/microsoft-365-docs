@@ -3,7 +3,7 @@ title: Preparing apps for Microsoft Managed Desktop
 description:  
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
-author: jdeckerms
+author: trudyha
 ms.localizationpriority: normal
 ms.date: 09/24/2018
 ---
@@ -16,7 +16,7 @@ ms.date: 09/24/2018
  
 Microsoft and Microsoft Managed Desktop customers have equally critical, yet different responsibilities around applications used with Microsoft Managed Desktop.
 
-## Microsoft responsibilites
+## Microsoft responsibilities
 **Office 365 apps**
 Microsoft will provide full service for the deployment, update, and support of specific Office 365 apps. All users will receive the base set of Office 365 click to run, 64 bit version of applications included in the device’s image so that a user can quickly become productive. The Project and Visio applications in of the Office 365 suite are licensed separately.  Microsoft Managed Desktop will provide deployment groups allowing the IT Administrator to manage licenses and deploy these applications appropriately for their organization. Microsoft will support end users of these applications through the Microsoft Managed Desktop Support channels.
 
@@ -46,7 +46,7 @@ Once the core set of LOB apps has been identified the customer will procure, lic
 ## Office applications
 As part of the Microsoft 365 E5 license, Office 365 Standard Suite (64 Bit) is deployed by Microsoft. 
 
-For details, see [Microsoft Managed Desktop technologies](../intro/technologies-and-devices.md) <!--- and the other applications licensed under Office 365 E5 may be deployed by the customer using Intune’s deployment tools.-->
+For details, see [Microsoft Managed Desktop technologies](../intro/technologies.md) <!--- and the other applications licensed under Office 365 E5 may be deployed by the customer using Intune’s deployment tools.-->
 
 ## Line-of-business applications
 This table summarizes responsibilities across the different phases for line-of-business (LOB) applications. 
@@ -71,7 +71,7 @@ Procure and assign licenses |	![yes](images/checkmark.png)	 |
 Provide end-user support for line-of-business apps	| ![yes](images/checkmark.png) |
 Manage app settings remotely	| ![yes](images/checkmark.png) |
 
-For information on LOB application requirements, see [Microsoft Managed Desktop application requirements](mmd-app-requirements.md)
+For information on LOB application requirements, see [Microsoft Managed Desktop application requirements](../service-description/mmd-app-requirements.md)
 
 ## Resources
 While many services are out of scope for Microsoft Managed Desktop operations there are services which Microsoft offers which may help the customer manage their applications.
@@ -85,9 +85,10 @@ A key part of setting up new Microsoft Managed Devices is understanding which ap
 ### Intune application deployment
 Application management can be handled through the Microsoft Managed Desktop Admin portal, or through the Intune portal. Intune’s app management portal shows applications deployed for Windows, Android, and iOS. Microsoft Managed Desktop Admin portal limits the view to Windows 10 applications. Both are available through the Azure Portal. 
 - [Intune app management basics](https://docs.microsoft.com/intune/app-management)
-- [Add a Windows 32 application](https://docs.microsoft.com/intune/lob-apps-windows)
+- [Add a line-of-business App](https://docs.microsoft.com/intune/lob-apps-windows)
+- [Add Win32 apps to Intune](https://docs.microsoft.com/intune/apps-win32-app-management)
 - [Add web applications](https://docs.microsoft.com/intune/web-app)
 - [Assign and deploy apps to groups](https://docs.microsoft.com/intune/apps-deploy)
 
 ### Application packaging standards
-To deploy Windows 32 applications through Intune they must be packaged as either a single .MSI, an .appx, or .MSIX. The most common package type for Intune is currently .MSI.
+To deploy Windows 32 applications through Intune they must be packaged as either .MSI, an .appx, .exe, or .MSIX. The most common package type for Intune is currently .MSI.

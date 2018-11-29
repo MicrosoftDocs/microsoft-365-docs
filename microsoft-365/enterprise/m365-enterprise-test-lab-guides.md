@@ -3,7 +3,7 @@ title: "Microsoft 365 Enterprise Test Lab Guides"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/19/2018
+ms.date: 11/20/2018
 ms.audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
@@ -66,6 +66,10 @@ To demonstrate identity-related features and capabilities, see:
 
    Use self-service password reset (SSPR) to reset your password.
 
+- [Password writeback](password-writeback-m365-ent-test-environment.md)
+
+   Use password writeback to change the password on your Windows Server AD user account from Azure AD.
+
 - [Automatic licensing and group membership](automate-licenses-group-membership-microsoft-365-test-environment.md)
 
    Make administering new accounts easier than ever with automatic licensing and dynamic group membership.
@@ -78,9 +82,9 @@ To demonstrate identity-related features and capabilities, see:
 
 To demonstrate mobile device management-related features and capabilities, see:
 
-- [MAM policies](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
+- [Device compliance policies](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
     
-   Create user groups and mobile application management (MAM) policies for iOS and Android devices.
+   Create a user group and a device compliance policy for Windows 10 devices.
     
 - [Enroll iOS and Android devices](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
    
@@ -99,9 +103,9 @@ To demonstrate information protection-related features and capabilities, see:
     
    Configure and apply Office 365 labels to a document in a SharePoint Online team site.
     
-- [Privileged access management for your Microsoft 365 Enterprise test environment](privileged-access-microsoft-365-enterprise-dev-test-environment.md)
+- [Privileged access management](privileged-access-microsoft-365-enterprise-dev-test-environment.md)
     
-   Configure privileged acccess management for just-in-time access to elevated and privileged tasks in your Office 365 organization.
+   Configure privileged access management for just-in-time access to elevated and privileged tasks in your Office 365 organization.
 
 ## See also
 

@@ -3,7 +3,7 @@ title: Get ready for enrollment in Microsoft Managed Desktop
 description:  
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
-author: jdeckerms
+author: trudyha
 ms.localizationpriority: normal
 ms.date: 06/06/2018
 ---
@@ -14,5 +14,6 @@ Learn more about prerequisites for Microsoft Managed Desktop.
 
 ## In this section
 
-- [Prerequisites for Microsoft Managed Desktop](../intro/prerequisites.md)
+- [Prerequisites for Microsoft Managed Desktop](prerequisites.md)
 - [Network configuration](network.md)
+- [Prepare apps for Microsoft Managed Desktop](apps.md)

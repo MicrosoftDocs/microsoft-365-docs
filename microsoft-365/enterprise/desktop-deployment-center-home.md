@@ -17,9 +17,9 @@ description: Overview of the Modern Desktop Deployment Center.
 
 # Modern Desktop Deployment Center
 
-<img src="media/getting-started-media/getting-started-media-1.png" alt="Desktop Deployment Wheel" height="450" width="802" align="middle" />
+<img src="media/getting-started-media/getting-started-media-1.png" alt="Desktop Deployment Wheel" height="450" width="802" align="middle" style="background-color: #fff;" />
 
-Follow the steps below to plan and carry out your large-scale deployment of Windows 10 and Office 365 ProPlus. Each step below is part of the overall planning and deployment process with steps typically running in parallel to each other in a phased deployment.
+Follow the steps below to plan and carry out your large-scale deployment of Windows 10 and Office 365 ProPlus. Each step below is part of the overall planning and deployment process with steps typically running in parallel to each other in a phased deployment. Download the free [Modern Desktop Deployment and Management Lab Kit](https://aka.ms/howtoshiftlabs) for hands-on training with the tools highlighted in the deployment process. You can also [find help](https://aka.ms/mddhelp) for your Modern Desktop Deployment from Microsoft partners and FastTrack services.
 
 <br>
 
@@ -71,13 +71,13 @@ Follow the steps below to plan and carry out your large-scale deployment of Wind
 <td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-10.png" alt="Step 7" height="144" width="144" /></td>
 <td><p><strong><a href="https://aka.ms/mdd7">Step 7: Preparing for Windows and Office as a Service</a></strong></p>
 <p>Both Windows 10 and Office 365 ProPlus continually add new capabilities to keep bringing user experiences and security forward with the latest innovations. Learn how to stay current with semi-annual and monthly updates, how the new servicing model works and the tools and options you have.</p></td>
-<td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-20.png" alt="Step 7" height="130" width="231" /></td>
+<td><a href="https://aka.ms/ddev7" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-20.png" alt="Step 7" height="130" width="231" /></a></td>
 </tr>
 <tr class="even">
 <td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-11.png" alt="Step 8" height="144" width="144" /></td>
 <td><p><strong><a href="https://aka.ms/mdd8">Step 8: User Communication and Training</a></strong></p>
 <p>Make sure your users are informed about new experiences and new ways of working as you shift your PCs to Windows 10 and Office 365 ProPlus. Learn how to take advantage of user adoption assistance with Microsoft FastTrack, training materials and communication templates, as well as new ways to monitor user acceptance and usage.</p></td>
-<td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-21.png" alt="Step 8" height="130" width="231" /></td>
+<td><a href="https://aka.ms/ddev8" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-21.png" alt="Step 8" height="130" width="231" /></a></td>
 </tr>
 <tr class="odd">
 <td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-12.png" alt="Value Discovery and Business Case" height="144" width="144" /></td>

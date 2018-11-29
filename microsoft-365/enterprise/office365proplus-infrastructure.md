@@ -57,7 +57,7 @@ Before deploying Office 365 ProPlus, follow the guidance in [Assess your environ
 
 After assessing your environment, follow the guidance in [Plan your deployment of Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/plan-office-365-proplus) to create a deployment plan. This plan includes the following decisions: 
 
-- How to deploy Office, including what tool to use (such as System Center Configuration Manger or the Office Deployment Tool [ODT]) and where to install Office from
+- How to deploy Office, including what tool to use (such as System Center Configuration Manager or the Office Deployment Tool [ODT]) and where to install Office from
 - How to manage updates to Office
 - Which update channels to use (update channels for Office control how frequently your users receive feature updates to their Office applications)
 - The Office installation packages and deployment groups you want to use, including which Office applications and languages should be installed for which users
@@ -84,7 +84,6 @@ If your organization uses Configuration Manager, we recommend upgrading to the C
 
 Learn how the experts at Microsoft planned for and deployed Office 365 ProPlus in Microsoft 365 Enterprise with these resources:
 
-- [Preparing your organization for a seamless Office 365 ProPlus 2016 deployment](https://www.microsoft.com/itshowcase/Office365adoption)
 - [Deploying and updating Microsoft Office 365 ProPlus](https://www.microsoft.com/itshowcase/Article/Content/757/Deploying-and-updating-Microsoft-Office-365-ProPlus)
 - [Automation and update channels help deploy Microsoft Office 365 ProPlus](https://www.microsoft.com/itshowcase/Article/Content/794/Automation-and-update-channels-help-deploy-Microsoft-Office-365-ProPlus) (video)
 

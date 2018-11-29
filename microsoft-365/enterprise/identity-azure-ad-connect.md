@@ -3,7 +3,7 @@ title: "Step 7: Synchronize identities"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/09/2018
+ms.date: 11/15/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -44,6 +44,8 @@ Microsoft provides a set of recommendations for [identity and device access](mic
 - For recommended requirements for hybrid environments, see the **Active Directory with password hash sync** column in [prerequisites](identity-access-prerequisites.md#prerequisites). 
 
 - For recommended requirements for cloud only environments, see the **Cloud only** column in [prerequisites](identity-access-prerequisites.md#prerequisites).
+
+Once your on-premises users and groups are present in Azure AD, you can start assigning licenses and using Exchange Online. To roll out Exchange Online to your users and migrate on-premises mailboxes, see [Deploy Exchange Online for Microsoft 365 Enterprise](identity-azure-ad-connect.md).
 
 |||
 |:-------|:-----|

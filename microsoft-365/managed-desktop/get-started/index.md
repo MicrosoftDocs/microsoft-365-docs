@@ -3,7 +3,7 @@ title: Get started with Microsoft Managed Desktop
 description:  
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
-author: jdeckerms
+author: trudyha
 ms.localizationpriority: normal
 ms.date: 09/24/2018
 ---
@@ -14,6 +14,5 @@ With Microsoft Managed Desktop, managing your desktop devices is transitioned to
 
 ## In this section
 
-- [Prepare line-of-business apps](apps.md)
-- [Order devices](devices.md)
 - [Add Admin contacts](add-admin-contacts.md)
+- [Order devices](devices.md)

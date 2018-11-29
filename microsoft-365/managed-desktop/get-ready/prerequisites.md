@@ -3,9 +3,9 @@ title: Prerequisites for Microsoft Managed Desktop
 description:  
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
-author: jdeckerms
+author: trudyha
 ms.localizationpriority: normal
-ms.date: 09/24/2018
+ms.date: 11/1/2018
 ---
 
 # Prerequisites for Microsoft Managed Desktop
@@ -24,7 +24,7 @@ Connectivity |	All Microsoft Managed Desktop devices require connectivity to num
 Azure Active Directory |	Azure Active Directory (Azure AD) must either be the source of authority for all user accounts, or user accounts must be synchronized from on-premises Active Directory using Azure AD Connect, version 1.1.654.0 or later. For more information, see [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect).
 Authentication |	If Azure AD is not the source of authority for user accounts, you must configure one of these in Azure AD Connect:<br>- Password Hash Synchronization (recommended)<br>- Pass-Through Authentication<br>- Federation with ADFS<br><br>When setting authentication options with Azure AD Connect Password writeback is also required. For more information, see [Password writeback](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-writeback). <br><br>For more information on Authentication options with Azure AD, see [Azure AD Connect user sign-in options](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-user-signin).
 Office 365 |	It is highly recommended that the following services be migrated to the cloud:<br>- Email - Migrate to cloud-based mailboxes, Exchange online or be configured with Exchange Online Hybrid with Exchange 2013 or higher, on-premises.<br>- Files & Folders – Migrate to SharePoint Online/Office 365.<br>- Skype for Business  – Migrate to Skype for Business Online.<br>- Device management - Microsoft Intune	A cloud-only MDM solution (non-hybrid) is required, which allows IT admins to manage Microsoft Managed Desktop devices using a web console that can be accessed from anywhere in the world. Microsoft Intune is the required MDM solution.<br><br>For more information, see [Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune). 
-Data back-up and recovery |	Microsoft Managed Desktop requires files to be synced to OneDrive for Business for protection. Any files not synced to OneDrive for Business are not guaranteed by Microsoft Managed Desktop and may be lost during device exchanges, or support calls requiring a device reset.  
+Data back-up and recovery |	Microsoft Managed Desktop requires files to be synced to OneDrive for Business for protection. Any files not synced to OneDrive for Business are not guaranteed by Microsoft Managed Desktop and may be lost during device exchanges, or support calls requiring a device reset. Microsoft Managed Desktop does not support mapped network drives.  
 
 [Learn how to meet the prerequisites for Microsoft Managed Desktop enrollment.](../get-ready/index.md)
 
