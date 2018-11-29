@@ -3,9 +3,9 @@ title: Microsoft Managed Desktop devices
 description:  This topic lists the device specifications used in Microsoft Managed Desktop.
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
-author: jdeckerms
+author: trudyha
 ms.localizationpriority: normal
-ms.date: 10/12/2018
+ms.date: 11/2/2018
 ---
 
 # Microsoft Managed Desktop devices
@@ -18,10 +18,12 @@ For more information on Microsoft Managed Desktop, see [Microsoft Managed Deskto
 <!-- Split from device & technologies topic. Destination topic for aka.ms/device-list  -->
 To be enrolled in Microsoft Managed Desktop:
 
-- The device must be one of the following&#x00B9;:
-    - Surface Laptop, model 1769&#x00B2; 
-    - Surface Pro, model 1796&#x00B2;
-    - Surface Book 2, model 1793&#x00B2;
+- The device must be one of the following models and configurations&#x00B9;:
+    - Surface Laptop&#x00B2;: 256 GB / Intel i5 / 8 GB RAM
+    - Surface Laptop 2&#x00B2;: 256 GB / Intel i5 / 8 GB RAM 
+    - Surface Pro&#x00B2;: 256 GB / Intel i5 / 8 GB RAM
+    - Surface Book 2&#x00B2;: 512 GB / Intel i7 / 16 GB RAM / 15-inch display
+    - Surface Go&#x00B2;: 128 GB / Intel 4415Y / 8GB RAM
 - The device must have an image that&#x00B3;:
     - Has the latest version of Windows 10 Enterprise or Pro;
     - Has the latest version of Microsoft Office 365 Click to Run;

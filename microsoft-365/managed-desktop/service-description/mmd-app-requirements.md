@@ -28,6 +28,7 @@ Microsoft Managed Desktop uses Intune,  Microsoft Store, and  Microsoft Store fo
 
 Certain application types are not permitted on Microsoft Managed Desktop devices:
 - 3rd party anti-virus, security, or audit software
+- 3rd party web browsers
 - Versions of Microsoft Office prior to Office 365 Pro Plus
 - Applications that install or bundle other 3rd party software
 

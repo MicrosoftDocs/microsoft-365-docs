@@ -26,7 +26,7 @@ The guide discusses how to use Microsoft's products, services and administrative
 
 3. ***Rectify***—Make changes or implement other requested actions on the personal data, where applicable.
 
-4. ***Restrict*<em>—</em>Restrict the processing of personal data, either by removing licenses for various online services or turning off the desired services where possible. You can also remove data from the Microsoft cloud and retain it on-premises or at another location.
+4.  ***Restrict***—Restrict the processing of personal data, either by removing licenses for various online services or turning off the desired services where possible. You can also remove data from the Microsoft cloud and retain it on-premises or at another location.
 
 5. ***Delete***—Permanently remove personal data that resided in Microsoft's cloud.
 
@@ -129,9 +129,7 @@ Customer Data in ***Dynamics 365 for Finance and Operations*** can be exported u
 
 In ***Dynamics 365 Business Central***, you can make use of two features to provide a copy of Customer Data to a data subject:
 
-- You can export Customer Data to an Excel file. In Excel, you can then edit the Customer Data to be included in the portability request, and save it in a commonly used, machine-readable format, such as .csv or .xml. For details, see [Exporting your business data to Excel.](https://docs.microsoft.com/dynamics-nav-app/about-export-data)
-
-- You can export Customer Data using [RapidStart Services](https://docs.microsoft.com/dynamics365/business-central/admin-set-up-a-company-with-rapidstart) by preparing a configuration package or having one prepared for you by the Data Privacy Utility. In configuration packages, you can add, remove, or modify tables and fields that you want to export data from. To further adjust the configuration package—for example to add tables that may contain relevant data—consult [Migrate customer data](https://docs.microsoft.com/dynamics365/business-central/admin-migrate-customer-data).
+You can export Customer Data to an Excel file. In Excel, you can then edit the Customer Data to be included in the portability request, and save it in a commonly used, machine-readable format, such as .csv or .xml. For details, see [Exporting your business data to Excel.](https://docs.microsoft.com/en-us/dynamics365/business-central/about-export-data)
 
 In ***Dynamics 365 for Talent***, you may use [Extend the Person search report](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/gdpr/gdpr-extend-person-search-report) to gather information in support of a request for a copy of the data subject's personal data.
 
@@ -153,7 +151,7 @@ In ***Dynamics 365 for Finance and Operations***, you may also use of [*customiz
 
 <span id="_Toc511225664" class="anchor"></span>***Dynamics 365 Business Central*** offers two ways to correct inaccurate or incomplete Customer Data.
 
-- To quickly bulk-edit multiple Business Central records, you can export lists to Excel using the [Business Central Excel Add-in](https://docs.microsoft.com/dynamics365/business-central/finance-analyze-excel#the--excel-add-in) to correct multiple records, and then publish the modified data from Excel in Business Central. For details, see [Exporting your Business Data to Excel](https://docs.microsoft.com/dynamics-nav-app/about-export-data).
+To quickly bulk-edit multiple Business Central records, you can export lists to Excel using the [Business Central Excel Add-in](https://docs.microsoft.com/en-us/dynamics365/business-central/finance-analyze-excel#the--excel-add-in) to correct multiple records, and then publish the modified data from Excel in Business Central. For details, see [Exporting your Business Data to Excel](https://docs.microsoft.com/en-us/dynamics365/business-central/about-export-data).
 
 - You can change Customer Data stored in any field—such as information about a customer in the Customer card—by manually editing the data element containing the target personal data. For details, see [Entering data](https://docs.microsoft.com/dynamics365/business-central/ui-enter-data).
 
@@ -182,7 +180,7 @@ Alternatively, in ***Dynamics 365 for Finance and Operations*** you may use [*cu
 
 In ***Dynamics 365 Business Central***, when a data subject asks you to delete their personal data which happens to be included in your Customer Data, there are several ways to address this request:
 
--   To quickly bulk-edit multiple Business Central records, you can export data to Excel using the [Business Central Excel Add-in](https://docs.microsoft.com/dynamics365/business-central/finance-analyze-excel#the--excel-add-in) to delete multiple records, and then publish these changes from Excel back in Business Central. For details, see [Exporting your Business Data to Excel](https://docs.microsoft.com/dynamics-nav-app/about-export-data).
+-   To quickly bulk-edit multiple Business Central records, you can export data to Excel using the [Business Central Excel Add-in](https://docs.microsoft.com/en-us/dynamics365/business-central/finance-analyze-excel#the--excel-add-in) to delete multiple records, and then publish these changes from Excel back in Business Central. For details, see [Exporting your Business Data to Excel](https://docs.microsoft.com/en-us/dynamics365/business-central/about-export-data).
 
 -   You can delete Customer Data stored in any field by manually deleting the data element containing the target Customer Data. For details, see [Entering data](https://docs.microsoft.com/dynamics365/business-central/ui-enter-data).
 
@@ -206,7 +204,7 @@ Both Dynamics 365 for Finance and Operations and ***Dynamics 365 for Talent*** o
 
 - You can export Customer Data to an Excel file. In Excel, you can then edit the Customer Data to be included in the portability request, and save it in a commonly used, machine-readable format, such as .csv or .xml. For details, see [Exporting your business data to Excel](https://docs.microsoft.com/dynamics-nav-app/about-export-data).
 
--   You can export Customer Data using [RapidStart Services](https://docs.microsoft.com/dynamics365/business-central/admin-set-up-a-company-with-rapidstart) by preparing a configuration package or having one prepared for you by the Data Privacy Utility. In configuration packages, you can add, remove, or modify the tables and fields you want to export data from. To further adjust the configuration package—for example to add tables that may contain relevant data—consult [Migrate customer data](https://docs.microsoft.com/dynamics365/business-central/admin-migrate-customer-data)
+You can export Customer Data to an Excel file. In Excel, you can then edit the Customer Data to be included in the portability request, and save it in a commonly used, machine-readable format, such as .csv or .xml. For details, see [Exporting your business data to Excel](https://docs.microsoft.com/en-us/dynamics365/business-central/about-export-data).
 
 ### Microsoft Social Engagement
 
@@ -432,4 +430,4 @@ Permanently deleting a user account with remove the user’s data from system-ge
 
 #### Learn more
 
-[Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
+[Microsoft Trust Center](https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx)

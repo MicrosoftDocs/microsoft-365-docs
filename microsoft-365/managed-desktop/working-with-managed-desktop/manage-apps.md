@@ -3,7 +3,7 @@ title: Manage apps in Microsoft Managed Desktop
 description:  
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
-author: jdeckerms
+author: trudyha
 ms.localizationpriority: normal
 ms.date: 09/24/2018
 ---

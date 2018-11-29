@@ -3,7 +3,7 @@ title: Preparing apps for Microsoft Managed Desktop
 description:  
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
-author: jdeckerms
+author: trudyha
 ms.localizationpriority: normal
 ms.date: 09/24/2018
 ---
@@ -16,7 +16,7 @@ ms.date: 09/24/2018
  
 Microsoft and Microsoft Managed Desktop customers have equally critical, yet different responsibilities around applications used with Microsoft Managed Desktop.
 
-## Microsoft responsibilites
+## Microsoft responsibilities
 **Office 365 apps**
 Microsoft will provide full service for the deployment, update, and support of specific Office 365 apps. All users will receive the base set of Office 365 click to run, 64 bit version of applications included in the device’s image so that a user can quickly become productive. The Project and Visio applications in of the Office 365 suite are licensed separately.  Microsoft Managed Desktop will provide deployment groups allowing the IT Administrator to manage licenses and deploy these applications appropriately for their organization. Microsoft will support end users of these applications through the Microsoft Managed Desktop Support channels.
 
@@ -85,9 +85,10 @@ A key part of setting up new Microsoft Managed Devices is understanding which ap
 ### Intune application deployment
 Application management can be handled through the Microsoft Managed Desktop Admin portal, or through the Intune portal. Intune’s app management portal shows applications deployed for Windows, Android, and iOS. Microsoft Managed Desktop Admin portal limits the view to Windows 10 applications. Both are available through the Azure Portal. 
 - [Intune app management basics](https://docs.microsoft.com/intune/app-management)
-- [Add a Windows 32 application](https://docs.microsoft.com/intune/lob-apps-windows)
+- [Add a line-of-business App](https://docs.microsoft.com/intune/lob-apps-windows)
+- [Add Win32 apps to Intune](https://docs.microsoft.com/intune/apps-win32-app-management)
 - [Add web applications](https://docs.microsoft.com/intune/web-app)
 - [Assign and deploy apps to groups](https://docs.microsoft.com/intune/apps-deploy)
 
 ### Application packaging standards
-To deploy Windows 32 applications through Intune they must be packaged as either a single .MSI, an .appx, or .MSIX. The most common package type for Intune is currently .MSI.
+To deploy Windows 32 applications through Intune they must be packaged as either .MSI, an .appx, .exe, or .MSIX. The most common package type for Intune is currently .MSI.

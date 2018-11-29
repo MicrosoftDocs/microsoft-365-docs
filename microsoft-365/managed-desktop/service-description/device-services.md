@@ -10,7 +10,7 @@ ms.date: 09/24/2018
 
 # Microsoft Managed Desktop device services
 
-This topic lists the services and service limitation for Microsoft Managed Desktop devices. For more information 
+This topic lists the services and service limitation for Microsoft Managed Desktop devices.
 
 ## Device services
 
