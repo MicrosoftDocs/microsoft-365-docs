@@ -125,7 +125,7 @@ The ability to apply the following restrictions when sending emails in Outlook o
 
 To verify that AIP is activated :
 
-1. Sign into [Azure admin center](https://portal.azure.com/).
+1. Sign into [Azure portal](https://portal.azure.com/).
 
 2. Select **All services** and type in *Azure Information Protection* in the **Search Box**.
 
@@ -153,9 +153,9 @@ To manually install the AIP client:
 
 For more information see, [Install the client](https://docs.microsoft.com/azure/information-protection/infoprotect-tutorial-step3)
 
-## Sign into Intune admin center
+## Go to Intune admin center
 
-1. Sign into [Azure admin center](https://portal.azure.com/).
+1. Sign into [Azure portal](https://portal.azure.com/).
 
 2. Select **All services** and type in *Intune* in the **Search Box**.
 
