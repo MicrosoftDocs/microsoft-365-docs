@@ -4,7 +4,7 @@ description: This document provides data controllers with information about Prof
 keywords: DPIA, Microsoft Professional Services, Microsoft 365 documentation, GDPR
 robots:  "NOINDEX,NOFOLLOW"
 author: BrendaCarter
-ms.localizationpriority: high
+ms.localizationpriority: Priority
 audience: microsoft-business
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
