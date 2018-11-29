@@ -86,7 +86,7 @@ A key part of setting up new Microsoft Managed Devices is understanding which ap
 Application management can be handled through the Microsoft Managed Desktop Admin portal, or through the Intune portal. Intune’s app management portal shows applications deployed for Windows, Android, and iOS. Microsoft Managed Desktop Admin portal limits the view to Windows 10 applications. Both are available through the Azure Portal. 
 - [Intune app management basics](https://docs.microsoft.com/intune/app-management)
 - [Add a line-of-business App](https://docs.microsoft.com/intune/lob-apps-windows)
-- [Add Win32 apps to Intune](https://docs.microsoft.com/en-us/intune/apps-win32-app-management)
+- [Add Win32 apps to Intune](https://docs.microsoft.com/intune/apps-win32-app-management)
 - [Add web applications](https://docs.microsoft.com/intune/web-app)
 - [Assign and deploy apps to groups](https://docs.microsoft.com/intune/apps-deploy)
 
