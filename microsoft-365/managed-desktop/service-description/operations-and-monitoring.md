@@ -44,7 +44,7 @@ Change type | Notification | Customer action
 Feature updates and new service components | Email | - Communicate change to users<br><br> - Act as required by Microsoft<br><br> - Action must be taken within 48 hours
 Security updates, both monthly updates and baseline settings | Email, Security Bulletin, or Common Vulnerabilities and Exposures (CVE) entry | - Monthly security updates will be deployed using our [update management strategy](updates.md).<br><br> - Settings to mitigate a threat will be deployed to the entire organization to protect the organization. (THIS DOES NOT APPEAR TO BE A CUSTOMER ACTION)
 Quality updates, including hotfixes, service updates, and non-security impacting baseline policy | Email | Will advise when required.
-Emergency updates: service, configuration, or software updates requred to mitigate:<br><br> - Critical security risk<br><br> - Potential data loss<br><br> - Access to telemetry data for managing Microsoft Managed Desktop devices | Will advise when required.
+Emergency updates: service, configuration, or software updates required to mitigate:<br><br> - Critical security risk<br><br> - Potential data loss<br><br> - Access to telemetry data for managing Microsoft Managed Desktop devices | Will advise when required.
 
 ## Standard operating procedures
 
