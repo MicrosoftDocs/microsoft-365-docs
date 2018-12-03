@@ -137,7 +137,7 @@ To verify that AIP is activated :
 
 To view, and modify, the existing labels:
 
-1. On the Azure Information Protection dashboard, select **Classifications** \> **Labels. <br/>![Standard labels for Azure Information Protection.](media/AIPLabels.png)
+1. On the Azure Information Protection dashboard, select **Classifications** \> **Labels**. <br/>![Standard labels for Azure Information Protection.](media/AIPLabels.png)
 
 2. You can choose any label to view options, you can change the display name, colors, etc.
  
