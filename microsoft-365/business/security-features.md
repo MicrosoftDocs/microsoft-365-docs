@@ -125,11 +125,9 @@ The ability to apply the following restrictions when sending emails in Outlook o
 
 To verify that AIP is activated :
 
-1. Sign into [Azure Active Directory admin center](https://portal.azure.com/).
+1. Sign into [Azure portal](https://portal.azure.com/).
 
-    You can also sing in by locating **Admin centers** \> **Azure Active Directory** in the left nav in the admin center.
-
-2. Select **All services** and tyoe in *Azure Information Protection* in the **Search Box**.
+2. Select **All services** and type in *Azure Information Protection* in the **Search Box**.
 
 3. Once the results display, click the start next to **Azure Information Protection** to make it a favorite and easy to find later.
 
@@ -154,6 +152,16 @@ To manually install the AIP client:
 2. You can verify that the installation worked by viewing a Word document and making sure that the **Protect** option is available on the **Home** tab. <br/>![Protection tab drop-down in a Word document.](media/Word_Protect.png)
 
 For more information see, [Install the client](https://docs.microsoft.com/azure/information-protection/infoprotect-tutorial-step3)
+
+## Go to Intune admin center
+
+1. Sign into [Azure portal](https://portal.azure.com/).
+
+2. Select **All services** and type in *Intune* in the **Search Box**.
+
+3. Once the results display, click the start next to **Microsoft Intune** to make it a favorite and easy to find later.
+ 
+You can use Intune to enroll and manage your organization's devices. For more information, see [Capabilities by enrollment method for Windows devices](https://docs.microsoft.com/intune/enrollment-method-capabs) and [Enrollment options for devices managed by Intune](https://docs.microsoft.com/intune/enrollment-options).
     
 ## FAQ
 
@@ -169,15 +177,4 @@ Yes, these features are available in all markets where Microsoft 365 Business is
     
     ![In the left nav in the Microsoft 365 admin center, choose Admin centers.](media/fa4484f8-c637-45fd-a7bd-bdb3abfd6c03.png)
   
-3. Choose **Security &amp; Compliance** to go to Security &amp; compliance center. 
-    
- ### How do I find the Intune admin center?
-  
-  
-1. [Sign in to Microsoft 365 Business](https://portal.microsoft.com/) by using your admin credentials. 
-    
-2. In the left nav, locate **Admin centers** and expand it. 
-    
-3. Choose **Intune** to go to Intune admin center. 
-    
-
+3. Choose **Security &amp; Compliance** to go to Security &amp; compliance center.
