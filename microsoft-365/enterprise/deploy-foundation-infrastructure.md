@@ -21,7 +21,7 @@ To fully realize the benefits of Microsoft 365 Enterprise, you’ll begin your d
 
 ## Foundation infrastructure for deploying Microsoft 365 Enterprise
 
-The foundation infrastructure is the groundwork upon which you can deploy productivity workloads (such as Microsoft Teams and Exchange Online in Office 365) and scenarios (such as migrating to Microsoft 365 and automating client updates). It provides intelligent security and integration that simplifies ongoing management, which ensures that your client software is updated with the latest productivity and security enhancements.
+The foundation infrastructure is the groundwork upon which you can deploy productivity workloads (such as Microsoft Teams and Exchange Online in Office 365) and scenarios (such as migrating to Microsoft 365 and creating a secure SharePoint Online site). It provides intelligent security and integration that simplifies ongoing management, which ensures that your client software is updated with the latest productivity and security enhancements.
 
 You'll use the following phases to plan for and deploy the foundation infrastructure of Microsoft 365 Enterprise in your organization:
 

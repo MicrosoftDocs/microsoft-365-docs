@@ -3,7 +3,7 @@ title: "Step 9: Simplify password updates"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/01/2018
+ms.date: 11/20/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -30,6 +30,12 @@ For additional information and configuration instructions, see [Azure AD SSPR wi
 >[!Note]
 >Upgrade to the latest version of Azure AD Connect to ensure the best possible experience and new features as they are released. For more information, see [Custom installation of Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-get-started-custom).
 >
+
+
+|||
+|:-------|:-----|
+|![Test Lab Guides for the Microsoft cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Test Lab Guide: Password writeback](password-writeback-m365-ent-test-environment.md) |
+|||
 
 As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria.md#crit-identity-pw-writeback) for this step.
 
