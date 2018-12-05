@@ -23,7 +23,9 @@
         "files": [
           "**/*.png",
           "**/*.jpg",
-          "**/*.svg"
+          "**/*.gif",
+          "**/*.svg",
+          "**/*.pdf"
         ],
         "exclude": [
           "**/obj/**",
@@ -44,7 +46,7 @@
     },
     "fileMetadata": {},
     "template": [],
-    "dest": "microsoft-365-vsts",
+    "dest": "microsoft-365-docs",
     "markdownEngineName": "markdig"
   }
 }
