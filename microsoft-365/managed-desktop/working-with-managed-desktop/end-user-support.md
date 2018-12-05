@@ -5,7 +5,7 @@ keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jdeckerms
 ms.localizationpriority: normal
-ms.date: 09/24/2018
+ms.date: 11/28/2018
 ---
 
 # Getting help for end users
@@ -30,7 +30,8 @@ Get Help is designed to be easy for end-user professionals to use.
 End users with Microsoft Managed Desktop devices also have access to toll-free phone numbers they can call. This is meant to be used when Get Help isn’t available. For example, if they can’t sign in to the device, or the device is broken. Here are the phone numbers for phone support:
 
 - United States: +1855-425-0216
-- United Kingdom: +442076601135 
+- United Kingdom: +442076601135
+- Australia: +61 180 037 0619
 
 
 ## Additional resources

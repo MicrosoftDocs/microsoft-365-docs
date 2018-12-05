@@ -3,7 +3,7 @@ title: Microsoft Managed Desktop roles and responsibilities
 description: This topic describes the roles and responsibilities provided by Microsoft for Microsoft Managed Desktop. 
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
-author: jdeckerms
+author: trudyha
 ms.localizationpriority: normal
 ms.date: 09/24/2018
 ---
@@ -34,11 +34,11 @@ Device procurement | Microsoft will drop-ship ordered Microsoft Managed Desktop 
 
 Below is an additional set of common roles that are not provided by Microsoft, but are required for a successful deployment. It’s not exhaustive but is typical for most organizations. 
 
-Role or reponsibility | Description
+Role or responsibility | Description
 --- | ---
-Change management | Microsoft Managed Desktop will notify customers, in advance, when changes need to be made to their Microsoft Managed Desktop environment. Customers need to have their own change management process and are required to have a contact with Microsoft Managed Desktop. The customer is required to have resources to review and approve these changes. For more informations, see [Operations and monitoring](../service-description/operations-and-monitoring.md).  
+Change management | Microsoft Managed Desktop will notify customers, in advance, when changes need to be made to their Microsoft Managed Desktop environment. Customers need to have their own change management process and are required to have a contact with Microsoft Managed Desktop. The customer is required to have resources to review and approve these changes. For more information, see [Operations and monitoring](../service-description/operations-and-monitoring.md).  
 Identity management | Creating user accounts, assigning users to groups and keeping metadata up to date. 
-Office 365 configuration and management | Exchange Oonline administration, including:<br>- Email administration<br>- Mailbox and rule configuration<br>- Exchange on-premises management<br><br>Collaboration tools, SharePoint server administration, domain management, security and information policies set in the Office 365 admin portal (Microsoft Managed Desktop will ensure Office applications are deployed to end user devices and stay up to date). 
+Office 365 configuration and management | Exchange Online administration, including:<br>- Email administration<br>- Mailbox and rule configuration<br>- Exchange on-premises management<br><br>Collaboration tools, SharePoint server administration, domain management, security and information policies set in the Office 365 admin portal (Microsoft Managed Desktop will ensure Office applications are deployed to end user devices and stay up to date). 
 End user support | The customer will provide end-user support for: <br>- On site infrastructure: all network and internet connectivity, VPN infrastructure and client configuration, local conference room equipment, printers, proxy server and configuration, firewalls.<br><br>- Company-wide cloud resources: email, SharePoint, collaboration services, and other cloud infrastructure that relates to the company-wide technology footprint.<br><br>- Line-of-business applications: custom software, 3rd-party software, enterprise resource planning (ERP) software, design tools, and anything not specified in this document.
 User and device grouping | Microsoft Managed Desktop operations team will create and manage required device and user groups as part of IT operations. The customer will not make changes to these groupings without first contacting IT operations through supported channels. All detected changes will be reverted.
 Apps | Customers will provide a list of apps that they want to use in their organization (beyond apps included with Microsoft 365 license). Customers also provide a deployable package (Appx or MSI)<br>The customer is responsible for:<br>- App license management – Having the right type and quantity of licenses<br>- App assignment – Assigning apps to Azure AD user groups<br>- App updates – Monitoring, packaging, and deploying app feature and security updates<br>- User Application Testing (UAT)<br><br>For more information, see [Apps](../get-ready/apps.md)

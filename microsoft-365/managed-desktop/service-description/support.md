@@ -5,12 +5,12 @@ keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jdeckerms
 ms.localizationpriority: normal
-ms.date: 11/1/2018
+ms.date: 11/7/2018
 ---
 
 # Support for Microsoft Managed Desktop
 
-Microsoft Managed Desktop devices are managed by and will be repaired or replaced by Microsoft when needed. Microsoft will provide proactive and reactive incident management. Microsoft tracks incidents in the Microsoft Managed Desktop admin portal. They are classified according to [severity definitions](#severity-definitions). 
+Microsoft Managed Desktop devices are managed by and will be repaired or replaced by Microsoft when needed. Microsoft will provide proactive and reactive incident management. Microsoft tracks incidents in the Microsoft Managed Desktop admin portal. They are classified according to [severity definitions](../working-with-managed-desktop/admin-support.md#support-request-severity-definitions).
 
 Customers can contact Microsoft Managed Desktop operations for:
 - Information requests on the Modern Workplace as a Service tenant or configuration
@@ -34,7 +34,7 @@ Supported products:
 
 Support details:
 
-- Current: North America and United Kingdom only (24x7x365) 
+- Current: North America, United Kingdom, and Australia only (24x7x365) 
 - English is the only supported language for phone and chat conversations with customers 
 - We are partnering with, not replacing, your corporate helpdesk; Line-of-Business (LOB) apps, network resources, etc. are still handled by your helpdesk 
 - Non-Microsoft Managed Desktop devices are out of scope 

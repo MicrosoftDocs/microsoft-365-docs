@@ -71,6 +71,7 @@ See these resources to learn how customers are using Microsoft 365 Enterprise as
 - Transportation
   - [Qantas empowers employees to do their best work with Microsoft 365, enhancing customer experience](https://aka.ms/Qantas_CS)
   - [Amtrak keeps its mobile enterprise running ahead of schedule with Microsoft 365](https://aka.ms/Amtrak_)
+  - [Amtrak is all aboard with workplace modernization, saving labor costs and improving portfolio transparency using Microsoft 365](https://aka.ms/Amtrak_CS)
 - Manufacturing
   - [Steel company eliminates hardware costs, streamlines IT, and gains mobile productivity in the cloud](https://aka.ms/Steeledalecasestudy)
   - [Embroidery equipment supplier empowers its business with cloud-based services, spreads word to other small businesses](https://aka.ms/PriorityLLCCaseStudy)
@@ -117,7 +118,6 @@ Take a peek inside Microsoft IT and learn how they deployed Microsoft 365 Enterp
 
 ### Office 365 ProPlus
 
-- [Preparing your organization for a seamless Office 365 ProPlus 2016 deployment](https://www.microsoft.com/itshowcase/Office365adoption)
 - [Deploying and updating Microsoft Office 365 ProPlus](https://www.microsoft.com/itshowcase/Article/Content/757/Deploying-and-updating-Microsoft-Office-365-ProPlus)
 - [Automation and update channels help deploy Microsoft Office 365 ProPlus](https://www.microsoft.com/itshowcase/Article/Content/794/Automation-and-update-channels-help-deploy-Microsoft-Office-365-ProPlus) (video)
 

@@ -3,7 +3,7 @@ title: Microsoft Managed Desktop technologies
 description:  This topic lists the technologies and apps used in Microsoft Managed Desktop.
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
-author: jdeckerms
+author: trudyha
 ms.localizationpriority: normal
 ms.date: 09/24/2018
 ---
@@ -33,7 +33,7 @@ Skype for Business Online Cloud PBX | This feature is available via Office 365 E
  |
  --- | ---
 Credential Guard |	Microsoft Managed Desktop will provide guidance and manage cloud aspects of this feature
-Device Guard ( Windows Defender Application Control )	| Microsoft Managed Desktop will create the policy. Customer will manage signatures
+Device Guard (Windows Defender Application Control)	| Microsoft Managed Desktop will create the policy. Customer will manage signatures
 AppLocker management |	Microsoft Managed Desktop will create the policy. Customer will manage signatures
 Application Virtualization (App-V) |	Microsoft Managed Desktop does not support this type of deployment as it is not supported on Intune.
 User Experience Virtualization (UE-V) |	This is not used with Microsoft Managed Desktop managed devices

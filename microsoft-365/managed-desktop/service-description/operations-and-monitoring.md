@@ -3,7 +3,7 @@ title: Microsoft Managed Desktop operations and monitoring
 description:  
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
-author: jdeckerms
+author: trudyha
 ms.localizationpriority: normal
 ms.date: 09/24/2018
 ---
@@ -44,7 +44,7 @@ Change type | Notification | Customer action
 Feature updates and new service components | Email | - Communicate change to users<br><br> - Act as required by Microsoft<br><br> - Action must be taken within 48 hours
 Security updates, both monthly updates and baseline settings | Email, Security Bulletin, or Common Vulnerabilities and Exposures (CVE) entry | - Monthly security updates will be deployed using our [update management strategy](updates.md).<br><br> - Settings to mitigate a threat will be deployed to the entire organization to protect the organization. (THIS DOES NOT APPEAR TO BE A CUSTOMER ACTION)
 Quality updates, including hotfixes, service updates, and non-security impacting baseline policy | Email | Will advise when required.
-Emergency updates: service, configuration, or software updates requred to mitigate:<br><br> - Critical security risk<br><br> - Potential data loss<br><br> - Access to telemetry data for managing Microsoft Managed Desktop devices | Will advise when required.
+Emergency updates: service, configuration, or software updates required to mitigate:<br><br> - Critical security risk<br><br> - Potential data loss<br><br> - Access to telemetry data for managing Microsoft Managed Desktop devices | Will advise when required.
 
 ## Standard operating procedures
 
@@ -83,7 +83,7 @@ Managed Desktop Operations Team will:
 
 The device will boot into OOBE, and all preinstalled applications and settings will be applied again. The device’s user needs to provide initial set up information again. 
 
-When the device has been reset, you can give it to a different person in your organization. None of the pervious user’s data or enterprise data will be on the device. The next user will go through the same process that the previous person did with a new Microsoft Managed Desktop device.
+When the device has been reset, you can give it to a different person in your organization. None of the previous user’s data or enterprise data will be on the device. The next user will go through the same process that the previous person did with a new Microsoft Managed Desktop device.
 
 BitLocker is a key component of data security in this process. With BitLocker encryption on Microsoft Managed Desktop devices, data on the drive remains secure even after Factory reset has been applied to the device. Any data that was on the drive will not be available to the next user of the device. For more information, see [BitLocker overview](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview).
 
