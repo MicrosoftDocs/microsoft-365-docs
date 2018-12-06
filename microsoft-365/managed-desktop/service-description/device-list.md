@@ -19,14 +19,15 @@ For more information on Microsoft Managed Desktop, see [Microsoft Managed Deskto
 To be enrolled in Microsoft Managed Desktop:
 
 - The device must be one of the following models and configurations&#x00B9;:
+    - Surface Book 2&#x00B2;: 512 GB / Intel i7 / 16 GB RAM / 15-inch display
+    - Surface Go&#x00B2;: 128 GB / Intel 4415Y / 8GB RAM
     - Surface Laptop&#x00B2;: 256 GB / Intel i5 / 8 GB RAM
     - Surface Laptop 2&#x00B2;: 256 GB / Intel i5 / 8 GB RAM 
     - Surface Pro&#x00B2;: 256 GB / Intel i5 / 8 GB RAM
-    - Surface Book 2&#x00B2;: 512 GB / Intel i7 / 16 GB RAM / 15-inch display
-    - Surface Go&#x00B2;: 128 GB / Intel 4415Y / 8GB RAM
+    - Surface Pro 6&#x00B2;: 256 GB / Intel i5 / 8 GB RAM
 - The device must have an image that&#x00B3;:
-    - Has the latest version of Windows 10 Enterprise or Pro;
-    - Has the latest version of Microsoft Office 365 Click to Run;
+    - Has the most recent Windows Pro or Enterprise Release or immediate previous release;
+    - Has the most recent version of Microsoft Office 365 Click to Run or immediate previous release;
     - Has the latest OEM-provided drivers installed; and
     - Has no additional preloaded software
 - The device must not have completed the Windows first-run experience.
@@ -38,5 +39,5 @@ To be enrolled in Microsoft Managed Desktop:
 
 &#x00B2; For more information on capabilities and features of these devices, see [Compare Surface devices](https://www.microsoft.com/surface/devices/compare-devices).
 
-&#x00B3; This can be implemented either through a new device acquisition or by re-imaging a previously acquired device.
+&#x00B3; This can be implemented either through a new device acquisition or by re-imaging a previously acquired device. The Surface Laptop 2, Pro 6, and Go devices meet these requirements from the factory and only require re-imaging if they were previously used as a non-MMD device per the first-run requirement.
 
