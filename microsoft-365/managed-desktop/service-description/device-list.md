@@ -26,7 +26,7 @@ To be enrolled in Microsoft Managed Desktop:
     - Surface Pro&#x00B2;: 256 GB / Intel i5 / 8 GB RAM
     - Surface Pro 6&#x00B2;: 256 GB / Intel i5 / 8 GB RAM
 - The device must have an image that&#x00B3;:
-    - Has the most recent Windows Pro or Enterprise Release or immediate previous release;
+    - Has the most recent Windows 10 Pro or Enterprise release or immediate previous release;
     - Has the most recent version of Microsoft Office 365 Click to Run or immediate previous release;
     - Has the latest OEM-provided drivers installed; and
     - Has no additional preloaded software
