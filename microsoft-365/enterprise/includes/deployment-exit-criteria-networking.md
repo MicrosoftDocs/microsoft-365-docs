@@ -1,10 +1,9 @@
 <a name="crit-networking-step1"></a>
 ### Required: Your network is ready for Microsoft 365 Enterprise
 
-- Your offices have adequate Internet bandwidth for Microsoft 365 traffic, including Office 365, Microsoft Intune, Windows 10 Enterprise installation and updates
-- Central offices for all general Internet traffic
-- Branch offices for Optimize category endpoint traffic
+- Your offices have adequate Internet bandwidth for Microsoft 365 traffic, including Office 365, Microsoft Intune, and Windows 10 Enterprise installation and updates
 - Your overall network maps to an Office 365 reference architecture
+- Your network changes have been piloted and tested and meet with your traffic latency requirements
 
 If needed, [Step 1](../networking-provide-bandwidth-cloud-services.md) can help you with this requirement.
 
