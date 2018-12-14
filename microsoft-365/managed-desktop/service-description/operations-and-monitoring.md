@@ -40,7 +40,7 @@ Here’s a summary of how the change process is shared between Microsoft and cus
 
 <table>
 <tr><th></th><th><p>Microsoft's role:</p></th><th><p>Customer's role:</p></th></tr>
-<tr><td>Before a change</td><td><P>Set expectations for service changes.</p><ul><li>Notify customers 5 days in advance for changes that require administrator action.</li><li>For emergency changes, apply a mitigation prior to notifying.</li></ul></td><td><ul><li>Understand what to expect for changes and communications.</li><li>Read Microsoft Managed Desktop Message Center regularly.</li><li>	Review and update internal change management processes.</li><li>Understand, and check compliance with Microsoft Managed Desktop requirements. </li><li>Acknowledge and approve, when required.</li></ul></td></tr><tr><td>During a change</td><td><ul><li>Deploy change for Windows 10 and Office, release security and non-security updates, as needed.</li><li>Monitor telemetry and support escalations for any unexpected issues.</li></ul></td><td><ul><li>Manage internal change management process.</li><li>Create a Support request, if required.</li></ul></td></tr><tr><td>After a change</td><td><ul><li>Collect customer feedback to improve rollout of future changes.</li><li>Monitor telemetry and support escalations for any unexpected issues.</li></ul></td><td><ul><li>Read and understand notification email.</li><li>Provide general feedback and specific feedback in the admin feedback tool.</li><li>Train users to provide app-specific feedback using the Windows Feedback Hub and the Smile button in Office apps.</li></ul></td></tr>
+<tr><td>Before a change</td><td><ul><li>Set expectations for service changes.</li><li>Notify customers 5 days in advance for changes that require administrator action.</li><li>For emergency changes, apply a mitigation prior to notifying.</li></ul></td><td><ul><li>Understand what to expect for changes and communications.</li><li>Read Microsoft Managed Desktop Message Center regularly.</li><li>Review and update internal change management processes.</li><li>Understand, and check compliance with Microsoft Managed Desktop requirements. </li><li>Acknowledge and approve, when required.</li></ul></td></tr><tr><td>During a change</td><td><ul><li>Release and deploy monthly security and non-security updates for Windows 10 and Office 365 clients.</li><li>Monitor data signals and support queues for impact.</li></ul></td><td><ul><li>Check the Microsoft Managed Desktop Message Center and review any additional information.</li><li>	Take any action required, if applicable, and test applications.</li><li>If a break/fix scenario is experienced, create a Support request.</li></ul></td></tr><tr><td>After a change</td><td><ul><li>Collect customer feedback to improve rollout of future changes.</li><li>Monitor data signals and support queues for impact.</li></ul></td><td><ul><li>Work with people in your organization to adopt the change.</li><li>	Review change and adoption management processes for opportunities to gain efficiencies.</li><li>Provide general feedback and specific feedback in the admin feedback tool.</li><li>Train users to provide app-specific feedback using the Windows Feedback Hub and the Smile button in Office apps.</li></ul></td></tr>
 <table> 
 
 
@@ -52,14 +52,18 @@ Here’s a summary of how the change process is shared between Microsoft and cus
 
 There are several types of changes that are made to the service on a regular basis. The communication channel for those changes, and the actions that customers are responsible for varies.
 
-The following types of changes can be expected:
+Not all changes have the same impact on your users or require action. Some are planned and some unplanned by their nature (non-security updates and security updates aren't usually planned). Depending on the type of change, the communication channel may vary. The following table lists the types of changes you can expect for the Microsoft Managed Desktop service.
 
-Change type | Notification | Customer action
---- | --- | ---
-Feature updates and new service components | Email | - Communicate change to users<br><br> - Act as required by Microsoft<br><br> - Action must be taken within 48 hours
-Security updates, both monthly updates and baseline settings | Email, Security Bulletin, or Common Vulnerabilities and Exposures (CVE) entry | - Monthly security updates will be deployed using our [update management strategy](updates.md).<br><br> - Settings to mitigate a threat will be deployed to the entire organization to protect the organization. (THIS DOES NOT APPEAR TO BE A CUSTOMER ACTION)
-Quality updates, including hotfixes, service updates, and non-security impacting baseline policy | Email | Will advise when required.
-Emergency updates: service, configuration, or software updates required to mitigate:<br><br> - Critical security risk<br><br> - Potential data loss<br><br> - Access to telemetry data for managing Microsoft Managed Desktop devices | Will advise when required.
+|   | Functionality |	Non-security updates |	Security
+--- | --- | --- | ---
+**Type of change** | - Feature updates<br>- New features or applications<br>- Deprecated features | Client hotfixes for issues | Security patches
+**Advance notice** | 5 days’ notice for changes that require action |	No, these are included in the monthly release	| No, these are included in the monthly release 
+**Communication channel** | - Message Center<br>- Email alert | - Message Center<br>- Email alert | - Message Center<br>- Email alert<br>- Security bulletin or CVE 
+**Requires tenant admin action** | Sometimes |	Rarely |	Rarely 
+**Type of action** | Change settings | Communicate changes to users | Change admin settings 	
+**Requires testing** | Check business applications, including remote access services |	Sometimes - testing the fix against processes or customizations |	Rarely 
+**Examples of change** | - Feature updates: IT Admin Portal – simplified support ticket submission and review<br>- New features or applications: Semi-annual release of a Windows 10 feature update |	Hotfixes based on customer reported bugs |	
+
 
 ## Standard operating procedures
 
