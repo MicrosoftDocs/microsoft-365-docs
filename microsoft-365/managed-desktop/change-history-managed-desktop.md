@@ -7,13 +7,19 @@ ms.sitesec: library
 author: trudyha
 ms.author: jdecker
 ms.topic: article
-ms.date: 11/28/2018
+ms.date: 12/15/2018
 ms.localizationpriority: normal
 ---
 
 # Change history for Microsoft Managed Desktop documentation
 
 This topic lists new and updated topics in the [Microsoft Managed Desktop documentation](index.yml).
+
+## December 2018
+New or changed topic | Description
+--- | ---
+[Operations and monitoring for Microsoft Managed Desktop](service-description/operations-and-monitoring.md) | Added balance of responsibility table and updated other tables.
+[Admin support for Microsoft Managed Desktop](working-with-managed-desktop/admin-support.md) | Update support types, severity explanations, and additional details.
 
 ## November 2018
 
