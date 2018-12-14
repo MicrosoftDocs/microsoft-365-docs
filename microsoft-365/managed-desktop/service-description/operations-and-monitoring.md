@@ -15,7 +15,22 @@ ms.date: 09/24/2018
 
 ## Change management
 
-Microsoft and customers will share change management for the Microsoft Managed Desktop service. Responsibilities differ for an online service versus an on-premises server or client. 
+In a service offering, the balance of responsibility for things such as hardware maintenance and security updates shifts to the service provider (Microsoft) instead of the customer (you). However, you still need to ensure that third-party and custom software continues to function as expected when updates are rolled out.
+
+For on-premises products, your organization assumes all responsibility for managing change.
+
+### Balance of responsibility
+
+Responsibility | Microsoft Managed Desktop service | Microsoft 365 client software | On-premises clients and servers | 3rd party and custom software
+----- | ----- | ----- | ----- | -----
+Provide new functionality | Microsoft | Microsoft | Both | Customer
+Test new features for quality assurance |  Microsoft | Microsoft | Both | Customer
+Communicate about new features | Both | Both | Both | Customer
+Integrate custom software | Both | Both | Customer | Customer
+Apply security updates | Microsoft | Microsoft | Customer | Customer
+Maintain system software | Microsoft | Microsoft | Customer | Customer
+Package for deployment | Microsoft | Microsoft | Customer | Customer
+
 
 ### Change process overview
 
@@ -24,8 +39,8 @@ Here’s a summary of how the change process is shared between Microsoft and cus
 
 
 <table>
-<tr><th></th><th><p>Microsoft will:</p></th><th><p>Customers will:</p></th></tr>
-<tr><td>Before a change</td><td><ul><li>Notify customers 5 days in advance for changes that require administrator action.</li><li>For emergency changes, apply a mitigation prior to notifying.</li></ul></td><td><ul><li>Read and understand notification email.</li><li>Acknowledge and approve, when required.</li></ul></td></tr><tr><td>During a change</td><td><ul><li>Deploy change for Windows 10 and Office, release security and non-security updates, as needed.</li><li>Monitor telemetry and support escalations for any unexpected issues.</li></ul></td><td><ul><li>Manage internal change management process.</li><li>Create a Support request, if required.</li></ul></td></tr><tr><td>After a change</td><td><ul><li>Collect customer feedback to improve rollout of future changes.</li><li>Monitor telemetry and support escalations for any unexpected issues.</li></ul></td><td><ul><li>Read and understand notification email.</li><li>Provide general feedback and specific feedback in the admin feedback tool.</li><li>Train users to provide app-specific feedback using the Windows Feedback Hub and the Smile button in Office apps.</li></ul></td></tr>
+<tr><th></th><th><p>Microsoft's role:</p></th><th><p>Customer's role:</p></th></tr>
+<tr><td>Before a change</td><td><P>Set expectations for service changes.</p><ul><li>Notify customers 5 days in advance for changes that require administrator action.</li><li>For emergency changes, apply a mitigation prior to notifying.</li></ul></td><td><ul><li>Understand what to expect for changes and communications.</li><li>Read Microsoft Managed Desktop Message Center regularly.</li><li>	Review and update internal change management processes.</li><li>Understand, and check compliance with Microsoft Managed Desktop requirements. </li><li>Acknowledge and approve, when required.</li></ul></td></tr><tr><td>During a change</td><td><ul><li>Deploy change for Windows 10 and Office, release security and non-security updates, as needed.</li><li>Monitor telemetry and support escalations for any unexpected issues.</li></ul></td><td><ul><li>Manage internal change management process.</li><li>Create a Support request, if required.</li></ul></td></tr><tr><td>After a change</td><td><ul><li>Collect customer feedback to improve rollout of future changes.</li><li>Monitor telemetry and support escalations for any unexpected issues.</li></ul></td><td><ul><li>Read and understand notification email.</li><li>Provide general feedback and specific feedback in the admin feedback tool.</li><li>Train users to provide app-specific feedback using the Windows Feedback Hub and the Smile button in Office apps.</li></ul></td></tr>
 <table> 
 
 
