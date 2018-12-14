@@ -21,13 +21,13 @@ Devices will arrive with a signature image, then join the Azure Active Directory
 
 ## Why MDM over Group Policy
 
-There are a few reasons to use Mobile Device Management (MDM) instead of Group Policy:
+There are a few reasons to use mobile device management (MDM) instead of Group Policy:
 
 - Security - MDM policies are more secure in the modern world. Group Policy is designed to work best with on-premises identity while MDM designed to work best with cloud identity management (Azure Active Directory).
-- Reliability - MDM policies provide more reliable policy deployment. Also MDM settings overwrite Group Policy Object (GPO) policies. Starting with Windows 10, version 1803, MDM settings will be prioritized over the Group Policy values, which supports customers moving to modern management. 
+- Reliability - MDM policies provide more reliable policy deployment. Also, MDM settings overwrite Group Policy Object (GPO) policies. Starting with Windows 10, version 1803, MDM settings will be prioritized over the Group Policy values, which supports customers moving to modern management. 
 - Align with Microsoft Managed Desktop vision - Provides more comprehensive monitoring on policy deployment and supports ring-based approach to gradually rollout policy changes with capability to pause / resume deployment when necessary.
 
-For more on information, see [Mobile Device Management](https://docs.microsoft.com/en-us/windows/client-management/mdm/). 
+For more information, see [Mobile Device Management](https://docs.microsoft.com/windows/client-management/mdm/). 
 
 ## Default policies
 
