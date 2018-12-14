@@ -25,8 +25,9 @@ Incident | You require the Microsoft Managed Desktop Operations Team to investig
 Request for information | You are planning a change for networking, proxy configuration, VPN systems, certificate expiration, or just need some information about the service. A response from the Microsoft Managed Desktop Operations Team is strongly advised when communicating a change within your organization.
 Change request | You require the Microsoft Managed Desktop Operations Team to make a change, such as moving devices between update rings.
 
-<span id="sev">
-## Support request severity definitions</span>
+<span id="sev" />
+
+## Support request severity definitions
 
 Initial response time is the period from when you submit your support request to when an a Microsoft Managed Desktop engineer contacts you and starts working on your support request. The initial response time varies with the business impact of the request, based on the severity of the request.
 
