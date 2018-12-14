@@ -15,7 +15,7 @@ ms.date: 12/15/2018
 You can submit Support tickets or Feedback requests to Microsoft using the Microsoft Managed Desktop Administrative Portal. Support requests are always prioritized over Feedback submissions. Support requests are triaged and managed according to Severity as outlined in the [severity definition table](#sev). Feedback is reviewed, and a response provided where requested. 
 
 >[!IMPORTANT]
->Make sure that you [set up an Admin contact](../get-started/add-admin-contacts.md) for app packaging, devices, security, and other. You are unable t submit a Support request in any of these areas if an admin contact is not configured.
+>Make sure that you [set up an Admin contact](../get-started/add-admin-contacts.md) for app packaging, devices, security, and other. You are unable to submit a Support request in any of these areas if an admin contact is not configured.
 
 To submit a Support request, open the Microsoft Managed Desktop admin portal, and select **+ New Support ticket** on the Support request tab. The information below will help guide your choices, depending on your scenario. When you select a severity level, please review the expectations in **Expected customer response**.
 
