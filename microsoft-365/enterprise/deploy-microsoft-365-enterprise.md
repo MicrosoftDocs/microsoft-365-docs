@@ -27,7 +27,7 @@ Microsoft 365 Enterprise is a combination of Office 365, Enterprise Mobility + S
 
 These benefits are not realized just by obtaining the licenses for the three products, but by deploying them and their features in a specific way that includes integration and state-of-the-art security.
 
-There are two main methods to deploy Microsoft 365 Enterprise:
+There are two main ways to deploy Microsoft 365 Enterprise:
 
 - Do it with Microsoft engineers using FastTrack for Microsoft 365
 - Do it yourself with the Microsoft 365 Enterprise deployment guide
@@ -59,7 +59,7 @@ Get self-started on your end-to-end deployment journey [here](deploy-foundation-
 
 “For the things we have to learn before we can do them, we learn by doing them.” - Aristotle
 
-If you're new to Microsoft 365 Enterprise or to a specific product or feature, one of the best ways to gain understanding is to build it out yourself.
+If you're new to Microsoft 365 Enterprise or to a specific product or feature, one of the best ways to gain understanding is to build it out yourself and see it working.
 
 We've made this easier with Test Lab Guides (TLGs), which step you through the configuration of infrastructure or a feature in a simplified but representative environment using trial or paid subscriptions.
 
@@ -71,7 +71,7 @@ For more information, see [Microsoft 365 Enterprise Test Lab Guides](m365-enterp
 
 ## How did others do it?
 
-To understand how others have deployed and are using Microsoft 365 Enterprise, see these resources.
+Use these resources to understand how others have deployed and are using Microsoft 365 Enterprise.
 
 ### How customers use Microsoft 365 Enterprise
 

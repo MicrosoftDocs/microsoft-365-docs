@@ -19,7 +19,7 @@ description: Understand the major phases of deploying the foundation infrastruct
 
 If you're doing the end-to-end deployment of Microsoft 365 Enterprise yourself, you must first build a firm foundation upon which applications and services can unlock creativity and teamwork in a secure environment. Use these phases to plan for and deploy the foundation infrastructure of Microsoft 365 Enterprise:
 
-||||
+| | Phase | Results |
 |:-------|:-----|:-----|
 |![](./media/deploy-foundation-infrastructure/networking_icon-small.png)|[Phase 1: Networking](networking-infrastructure.md)| Your network is optimized for access to Microsoft 365's cloud-based services. |
 |![](./media/deploy-foundation-infrastructure/identity_icon-small.png)|[Phase 2: Identity](identity-infrastructure.md)| Your users and groups are synchronized, your user authentication is strong, and your admin accounts are protected. |
@@ -30,10 +30,10 @@ If you're doing the end-to-end deployment of Microsoft 365 Enterprise yourself, 
 
 The order of the phases start with the most foundational (networking and identity), and then create layers of infrastructure settings and groups to:
 
-- Install the most secure version of Windows on your devices
-- Install the most current version of Office on your devices
-- Manage your organization's devices
-- Protect the information on those devices and in the cloud
+- Install the most current and secure version of Windows on your devices.
+- Install the most current version of Office on your devices.
+- Manage your organization's devices.
+- Protect the information on those devices and in the cloud.
 
 However, you have the flexibility of configuring and rolling out the phases of the foundation infrastructure to fit your business needs.
 
@@ -57,21 +57,21 @@ Therefore, it is possible to configure, test, and pilot elements of the foundati
 
 For example, you create the settings for:
 
-|||
+| Phase | Results |
 |:-------|:-----|
 | Identity | Account synchronization and groups for identity-based conditional access policies. |
-| Windows 10 Enterprise | Groups to automatically upgrade computers with Windows 7 or Windows 8.1 to Windows 10 Enterprise in place. |
+| Windows 10 Enterprise | Groups to automatically upgrade computers running Windows 7 or Windows 8.1 to Windows 10 Enterprise in place. |
 | Office 365 ProPlus | Groups to automatically deploy Office 365 ProPlus for users with Office 2010, Office 2013, or Office 2016. |
 | Mobile device management | Groups for device enrollment and device-based conditional access policies. |
 | Information protection | Office 365 and Azure Information Protection labels and groups. |
 
 When you are ready to rollout elements of this infrastructure to users, you:
 
-|||
+| Phase | Rollout action |
 |:-------|:-----|
 | Identity | Add user accounts to the groups for identity-based conditional access policies. |
 | Windows 10 Enterprise | Add accounts to the groups to automatically deploy Windows 10 Enterprise in place for users with Windows 7 or Windows 8.1. |
-| Office 365 ProPlus | Add user accounts to the groups to automatically deploy Office 365 ProPlus for users with Office 2010, 2013, and 2016. |
+| Office 365 ProPlus | Add user accounts to the groups to automatically deploy Office 365 ProPlus for users with Office 2010, Office 2013, or Office 2016. |
 | Mobile device management | Add accounts to the groups for device enrollment and device-based conditional access policies. |
 | Information protection | Add user accounts to the groups for Information Protection labels. |
 
