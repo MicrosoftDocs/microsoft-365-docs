@@ -10,7 +10,7 @@ ms.date: 11/7/2018
 
 # Support for Microsoft Managed Desktop
 
-Microsoft Managed Desktop devices are managed by and will be repaired or replaced by Microsoft as per warranty agreement. Microsoft will provide proactive and reactive incident management. Microsoft tracks incidents in the Microsoft Managed Desktop admin portal. They are classified according to [severity definitions](../working-with-managed-desktop/admin-support.md#support-request-severity-definitions).
+Microsoft Managed Desktop devices are managed by and will be repaired or replaced by Microsoft as per warranty agreement. Microsoft will provide proactive and reactive incident management. Microsoft tracks incidents in the Microsoft Managed Desktop admin portal. They are classified according to [severity definitions](../working-with-managed-desktop/admin-support.md#sev).
 
 Customers can contact Microsoft Managed Desktop operations for:
 - Information requests on the Modern Workplace as a Service tenant or configuration
