@@ -5,7 +5,7 @@ keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: trudyha
 ms.localizationpriority: normal
-ms.date: 12/15/2018
+ms.date: 12/18/2018
 ---
 
 # Admin support for Microsoft Managed Desktop
