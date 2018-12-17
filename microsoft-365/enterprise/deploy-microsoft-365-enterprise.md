@@ -89,6 +89,9 @@ Here's how our customers are using Microsoft 365 Enterprise as their complete, i
 - Financial services
   - [TD Bank empowers employees with assistive technology in Office 365 and Windows 10](https://aka.ms/tdbankgroup)
   - [Family tax preparation startup chooses all-in-one solution to help grow business](https://aka.ms/SOSCaseStudy)
+- Gaming
+  - [Gaming company improves productivity and communications with Microsoft 365 and Surface devices](https://aka.ms/PlaynGO)
+  - [Razer plays to win, gains advantage in global gaming industry with Microsoft 365](https://aka.ms/Razer_)
 - Health services
   - [Lilly envisions a workplace where internal and external collaboration help enable innovation and accelerate time-to-market for new medicines](https://aka.ms/Eli_CLS)
   - [Healthcare technology innovator accelerates diabetes prevention in the cloud ](https://aka.ms/Soleracasestudy)
