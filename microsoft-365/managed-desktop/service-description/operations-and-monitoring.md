@@ -5,7 +5,7 @@ keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: trudyha
 ms.localizationpriority: normal
-ms.date: 09/24/2018
+ms.date: 12/18/2018
 ---
 
 # Microsoft Managed Desktop operations and monitoring
@@ -15,7 +15,22 @@ ms.date: 09/24/2018
 
 ## Change management
 
-Microsoft and customers will share change management for the Microsoft Managed Desktop service. Responsibilities differ for an online service versus an on-premises server or client. 
+In a service offering, the balance of responsibility for things such as hardware maintenance and security updates shifts to the service provider (Microsoft) instead of the customer (you). However, you still need to ensure that third-party and custom software continues to function as expected when updates are rolled out.
+
+For on-premises products, your organization assumes all responsibility for managing change.
+
+### Balance of responsibility
+
+Responsibility | Microsoft Managed Desktop service | Microsoft 365 client software | On-premises clients and servers | 3rd party and custom software
+----- | ----- | ----- | ----- | -----
+Provide new functionality | Microsoft | Microsoft | Both | Customer
+Test new features for quality assurance |  Microsoft | Microsoft | Both | Customer
+Communicate about new features | Both | Both | Both | Customer
+Integrate custom software | Both | Both | Customer | Customer
+Apply security updates | Microsoft | Microsoft | Customer | Customer
+Maintain system software | Microsoft | Microsoft | Customer | Customer
+Package for deployment | Microsoft | Microsoft | Customer | Customer
+
 
 ### Change process overview
 
@@ -24,8 +39,8 @@ Here’s a summary of how the change process is shared between Microsoft and cus
 
 
 <table>
-<tr><th></th><th><p>Microsoft will:</p></th><th><p>Customers will:</p></th></tr>
-<tr><td>Before a change</td><td><ul><li>Notify customers 5 days in advance for changes that require administrator action.</li><li>For emergency changes, apply a mitigation prior to notifying.</li></ul></td><td><ul><li>Read and understand notification email.</li><li>Acknowledge and approve, when required.</li></ul></td></tr><tr><td>During a change</td><td><ul><li>Deploy change for Windows 10 and Office, release security and non-security updates, as needed.</li><li>Monitor telemetry and support escalations for any unexpected issues.</li></ul></td><td><ul><li>Manage internal change management process.</li><li>Create a Support request, if required.</li></ul></td></tr><tr><td>After a change</td><td><ul><li>Collect customer feedback to improve rollout of future changes.</li><li>Monitor telemetry and support escalations for any unexpected issues.</li></ul></td><td><ul><li>Read and understand notification email.</li><li>Provide general feedback and specific feedback in the admin feedback tool.</li><li>Train users to provide app-specific feedback using the Windows Feedback Hub and the Smile button in Office apps.</li></ul></td></tr>
+<tr><th></th><th><p>Microsoft's role:</p></th><th><p>Customer's role:</p></th></tr>
+<tr><td>Before a change</td><td><ul><li>Set expectations for service changes.</li><li>Notify customers 5 days in advance for changes that require administrator action.</li><li>For emergency changes, apply a mitigation prior to notifying.</li></ul></td><td><ul><li>Understand what to expect for changes and communications.</li><li>Read Microsoft Managed Desktop Message Center regularly.</li><li>Review and update internal change management processes.</li><li>Understand, and check compliance with Microsoft Managed Desktop requirements. </li><li>Acknowledge and approve, when required.</li></ul></td></tr><tr><td>During a change</td><td><ul><li>Release and deploy monthly security and non-security updates for Windows 10 and Office 365 clients.</li><li>Monitor data signals and support queues for impact.</li></ul></td><td><ul><li>Check the Microsoft Managed Desktop Message Center and review any additional information.</li><li>	Take any action required, if applicable, and test applications.</li><li>If a break/fix scenario is experienced, create a Support request.</li></ul></td></tr><tr><td>After a change</td><td><ul><li>Collect customer feedback to improve rollout of future changes.</li><li>Monitor data signals and support queues for impact.</li></ul></td><td><ul><li>Work with people in your organization to adopt the change.</li><li>	Review change and adoption management processes for opportunities to gain efficiencies.</li><li>Provide general feedback and specific feedback in the admin feedback tool.</li><li>Train users to provide app-specific feedback using the Windows Feedback Hub and the Smile button in Office apps.</li></ul></td></tr>
 <table> 
 
 
@@ -35,31 +50,37 @@ Here’s a summary of how the change process is shared between Microsoft and cus
 
 ### Change types
 
-There are several types of changes that are made to the service on a regular basis. The communication channel for those changes, and the actions that customers are responsible for varies.
+There are several types of changes that are made to the service on a regular basis. The communication channel for those changes and the actions that customers are responsible for varies.
 
-The following types of changes can be expected:
+Not all changes have the same impact on your users or require action. Some are planned and some unplanned by their nature (non-security updates and security updates aren't usually planned). Depending on the type of change, the communication channel may vary. The following table lists the types of changes you can expect for the Microsoft Managed Desktop service.
 
-Change type | Notification | Customer action
---- | --- | ---
-Feature updates and new service components | Email | - Communicate change to users<br><br> - Act as required by Microsoft<br><br> - Action must be taken within 48 hours
-Security updates, both monthly updates and baseline settings | Email, Security Bulletin, or Common Vulnerabilities and Exposures (CVE) entry | - Monthly security updates will be deployed using our [update management strategy](updates.md).<br><br> - Settings to mitigate a threat will be deployed to the entire organization to protect the organization. (THIS DOES NOT APPEAR TO BE A CUSTOMER ACTION)
-Quality updates, including hotfixes, service updates, and non-security impacting baseline policy | Email | Will advise when required.
-Emergency updates: service, configuration, or software updates required to mitigate:<br><br> - Critical security risk<br><br> - Potential data loss<br><br> - Access to telemetry data for managing Microsoft Managed Desktop devices | Will advise when required.
+|   | Functionality |	Non-security updates |	Security
+--- | --- | --- | ---
+**Type of change** | - Feature updates<br>- New features or applications<br>- Deprecated features | Client hotfixes for issues | Security patches
+**Advance notice** | 5 days notice for changes that require action |	No, these are included in the monthly release	| No, these are included in the monthly release 
+**Communication channel** | - Message Center<br>- Email alert | - Message Center<br>- Email alert | - Message Center<br>- Email alert<br>- Security bulletin or CVE 
+**Requires tenant admin action** | Sometimes |	Rarely |	Rarely 
+**Type of action** | Change settings | Communicate changes to users | Change admin settings 	
+**Requires testing** | Check business applications, including remote access services |	Sometimes - testing the fix against processes or customizations |	Rarely 
+**Examples of change** | - Feature updates: IT Admin Portal simplified support ticket submission and review<br>- New features or applications: Semi-annual release of a Windows 10 feature update |	Hotfixes based on customer reported bugs |	
+
 
 ## Standard operating procedures
 
-This service is implemented and operated by Microsoft in your environment where you conduct other administrative activities. Microsoft is solely responsible for Microsoft Managed Desktop-specific setup, configuration and operation. 
+The Microsoft Managed Desktop service is implemented and operated by Microsoft in your Microsoft cloud instance where you may conduct other administrative activities. Microsoft is solely responsible for Microsoft Managed Desktop-specific setup, configuration and operation. 
 
-For on-premises products, your organization takes on all the responsibility for managing operational and configuration activities.
+For on-premises products, your organization takes on all the responsibility for managing setup,and configuration and operational activities.
 
-Categories |	Actions
---- | ---
-Service accounts |	Microsoft will:<br><br> - Implement, securely store, and manage the credentials<br><br> - Communicate unauthorized access or use of these credentials to your Security Operations team<br><br><br><br>Customers will:<br><br> - Open an informational support request with Microsoft Managed Desktop Operations when planning a change that may impact the accounts<br><br> - Not assign policy, multi-factor authentication, conditional access, or application deployment to the Microsoft Managed Desktop Service Accounts<br><br> - Not reset the password or use the credentials<br><br> - Open a Sev C support request to Microsoft Managed Desktop operations if suspicious activity is observed in Intune or Azure audit logs, related to these service accounts
-Device Groups |	Microsoft will:<br><br> - Implement and manage the membership of devices within Microsoft Managed Desktop groups<br><br> - Use the Microsoft Managed Desktop groups to manage the assignment and release of configuration and updates to devices<br><br><br><br>Customers will:<br><br> - Open an informational support request with Microsoft Managed Desktop Operations when planning a change that may impact the groups<br><br> - Not modify the membership of any Microsoft Managed Desktop group<br><br> - Only use the groups to assign corporate certificates for services such as VPN, Windows Hello for Business or email encryption, or corporate Wi-Fi profile configuration<br><br> - Where co-management exists, explicitly exclude all Microsoft Managed Desktop groups when deploying the Configuration Manager client
-Policies |	Microsoft will:<br><br> - Implement and manage the Microsoft Managed Desktop policies that govern the configuration state of devices within service<br><br> - Deploy updates, to policy or Windows, incrementally using Device Groups<br><br> - Explicitly exclude targeting non-Microsoft Managed Desktop groups<br><br><br><br>Customer will:<br><br> - Open an informational support ticket with Microsoft Managed Desktop Operations when planning a change that may impact the desired configuration state of devices<br><br> - Not edit or assign Microsoft Managed Desktop policies to devices or users not managed by the Microsoft Managed Desktop service
-Windows Defender Advanced Threat Protection	| Microsoft will:<br><br> - Monitor and investigate devices within the scope of the Microsoft Managed Desktop service<br><br><br><br>Customer will:<br><br> - Open an informational support ticket with Microsoft Managed Desktop Operations when planning a change that may impact the monitoring or investigative capabilities of the Microsoft Managed Desktop Security Operations Center
-Microsoft Store for Business |	Microsoft will:<br><br> - Configure and maintain the Windows Autopilot profile for the Microsoft Managed Desktop service<br><br><br><br>Customer will:<br><br> - Open an informational support ticket with Microsoft Managed Desktop Operations when planning a change that Open might impact the access to the Store or modify the Microsoft Managed Desktop Windows Autopilot profile<br><br> - Not modify the configuration of the Microsoft Managed Desktop Windows Autopilot profile or add/remove assigned devices
-Certificates |	Customer will:<br><br> - Open an informational support ticket with Microsoft Managed Desktop Operations 60 days prior to any certificate expiring<br><br> - Update all certificates that are required to configure: certificate profiles, VPN profiles, and Wi-Fi profiles
+Categories |	Microsoft will | Customer will
+--- | --- | ---
+Network (proxy, packet inspection, VPN)  | Advise and plan with customers to minimize risk to business users. | - Create a support request requesting information for a planned configuration change, including configuration details, scope, timeline and other pertinent details for Microsoft to review.<br>- Only apply a change once Microsoft Managed Desktop Operations has assessed and advised.
+Service accounts |- Implement, securely store, and manage the credentials.<br> - Communicate unauthorized access or use of these credentials to your Security Operations team. | - Create a support request requesting information for a planned configuration change, including configuration details, scope, timeline and other pertinent details for Microsoft to review.<br>- Only apply a change once Microsoft Managed Desktop Operations has assessed and advised.<br>- Not assign policy, multi-factor authentication, conditional access, or application deployment to the Microsoft Managed Desktop Service Accounts.<br>- Not reset the password or use the credentials.<br>- Open a Sev C support request to Microsoft Managed Desktop Operations if suspicious activity is observed in Intune or Azure audit logs, related to these service accounts.
+Device Groups |	- Implement and manage the membership of devices within Microsoft Managed Desktop groups.<br>- Use the Microsoft Managed Desktop groups to manage the assignment and release of configuration and updates to devices. | - Create a support request requesting information for a planned configuration change, including configuration details, scope, timeline and other pertinent details for Microsoft to review.<br>- Only apply a change once Microsoft Managed Desktop Operations has assessed and advised.<br>- Not modify the membership of any Microsoft Managed Desktop group.<br>- Only use the groups to assign corporate certificates for services such as VPN, Windows Hello for Business or email encryption, or corporate Wi-Fi profile configuration.<br>- Where co-management exists, explicitly exclude all Microsoft Managed Desktop groups when deploying the Configuration Manager client.
+Policies |	- Implement and manage the Microsoft Managed Desktop policies that govern the configuration state of devices within service.<br>- Deploy updates, to policy or Windows, incrementally using Device Groups.<br> - Explicitly exclude targeting non-Microsoft Managed Desktop groups. | - Create a support request requesting information for a planned configuration change, including configuration details, scope, timeline and other pertinent details for Microsoft to review.<br>- Only apply a change once Microsoft Managed Desktop Operations has assessed and advised.<br>- Not edit or assign Microsoft Managed Desktop policies to devices or users not managed by the Microsoft Managed Desktop service.
+Windows Defender Advanced Threat Protection	| Monitor and investigate devices within the scope of the Microsoft Managed Desktop service. | - Create a support request requesting information for a planned configuration change, including configuration details, scope, timeline and other pertinent details for Microsoft to review.<br>- Only apply a change once Microsoft Managed Desktop Operations has assessed and advised
+Microsoft Store for Business |	Configure and maintain the Windows Autopilot profile for the Microsoft Managed Desktop service. | - Create a support request requesting information for a planned configuration change, including configuration details, scope, timeline and other pertinent details for Microsoft to review.<br>- Only apply a change once Microsoft Managed Desktop Operations has assessed and advised.<br>- Not modify the configuration of the Microsoft Managed Desktop Windows Autopilot profile or add/remove assigned devices.
+Certificates | | - Create a support request 60 days prior to a certificate expiring, requesting information for a planned configuration change, including configuration details, scope, timeline and other pertinent details for Microsoft to review.<br>- Only apply a change once Microsoft Managed Desktop Operations has assessed and advised.<br>- Update all certificates that are required to configure certificate profiles, VPN profiles, and Wi-Fi profiles.
+
 
 
 
