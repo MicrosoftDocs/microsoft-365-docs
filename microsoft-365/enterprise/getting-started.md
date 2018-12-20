@@ -17,9 +17,7 @@ description: Introduction to the Modern Desktop Deployment Process.
 
 # Getting Started - Modern Desktop Deployment
 
-The Cloud is changing how management of PCs is be done, with the Microsoft Intelligent Cloud delivering actional insights to help IT Professionals shift to a modern desktop. This series designed to help you plan for and make the shift to a modern desktop based on Windows 10 and Office 365 ProPlus.
-
-<img src="media/getting-started-media/getting-started-media-1.png" alt="Desktop Deployment Wheel" style="background-color: #fff;" />
+![](media/getting-started-media/getting-started-media-1.png)
 
 <table>
 <thead>
@@ -82,7 +80,7 @@ Before you get started, the you’ll want to create a high-level plan and get th
 
 **[Step 1: Device and App readiness](https://aka.ms/mdd1)** For a successful deployment you must first know what you have. That means taking an inventory of your devices and apps and verifying compatibility.
 
-To help with this you can tools available in our cloud-based service, Windows Analytics. Windows Analytics allows you tap into compatibility intelligence and telemetry gathered from hundreds of millions of PCs, to assess the apps and drivers running on your device so you can establish the readiness of your desktop estate. You can even export a list of “PCs ready for deployment” from Windows Analytics to System Center Configuration Manager if you use it, allowing you to build data-driven collections of targeted PCs as they become ready.
+To help with this you can leverage the tools available in our cloud-based service, Windows Analytics. Windows Analytics allows you tap into compatibility intelligence and telemetry gathered from hundreds of millions of PCs, to assess the apps and drivers running on your device so you can establish the readiness of your desktop estate. You can even export a list of “PCs ready for deployment” from Windows Analytics to System Center Configuration Manager if you use it, allowing you to build data-driven collections of targeted PCs as they become ready.
 
 [Get started with Upgrade Readiness](https://docs.microsoft.com/en-us/windows/deployment/upgrade/upgrade-readiness-get-started)
 
