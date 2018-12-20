@@ -84,13 +84,13 @@ We've also thought through how to make the deployment of updates seamless to you
 
 ## Overview of Windows and Office Channels
 
-Windows 10 offers 3 servicing channels:
+Windows 10 offers three servicing channels:
 
-- Windows Insider Program for organizations to test and provide feedback on features shipped in the next feature update
+- <b> Windows Insider Program </b> for organizations to test and provide feedback on features shipped in the next feature update
 - Semi-Annual Channel provides new functionality with Feature Update releases twice per year
 - Long Term Servicing Channel is designed only for specialized devices needing a longer servicing option
 
-Office 365 offers 4 servicing channels:
+Office 365 offers four servicing channels:
 
 - Office Insider Program for organizations to test and provide feedback on the newest Office features and functionalities still in development
 - Monthly Channel to provide users with the newest Office features as soon as they're available
