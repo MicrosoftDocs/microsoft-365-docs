@@ -86,16 +86,16 @@ We've also thought through how to make the deployment of updates seamless to you
 
 Windows 10 offers three servicing channels:
 
-- <b> Windows Insider Program </b> for organizations to test and provide feedback on features shipped in the next feature update
-- Semi-Annual Channel provides new functionality with Feature Update releases twice per year
-- Long Term Servicing Channel is designed only for specialized devices needing a longer servicing option
+- [**Windows Insider Program**](https://docs.microsoft.com/en-us/windows/deployment/update/waas-overview#windows-insider) for organizations to test and provide feedback on features shipped in the next feature update
+- **Semi-Annual Channel** provides new functionality with Feature Update releases twice per year
+- **Long Term Servicing Channel** is designed only for specialized devices needing a longer servicing option
 
 Office 365 offers four servicing channels:
 
-- Office Insider Program for organizations to test and provide feedback on the newest Office features and functionalities still in development
-- Monthly Channel to provide users with the newest Office features as soon as they're available
-- Semi-Annual Channel provides new functionality with new features only twice per year
-- Semi-Annual Channel (Targeted) is a fully supported build of Office that enables pilot users and application compatibility testers to test and validate the next Semi-Annual Channel
+- [**Office Insider Program**](https://support.office.com/en-us/article/What-is-Office-Insider-f4208185-b63a-4b68-9c7a-9a32d2411c16) for organizations to test and provide feedback on the newest Office features and functionalities still in development
+- **Monthly Channel** to provide users with the newest Office features as soon as they're available
+- **Semi-Annual Channel** provides new functionality with new features only twice per year
+- **Semi-Annual Channel (Targeted)** is a fully supported build of Office that enables pilot users and application compatibility testers to test and validate the next Semi-Annual Channel
 
 For detailed information about Windows and Office servicing channels please review the below documentation:
 
