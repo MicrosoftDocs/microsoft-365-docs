@@ -46,7 +46,7 @@ Before deploying Windows 10 Microsoft recommends checking the readiness of your 
 
 A sample ScanOnly command line that completes the compatibility scan silently would look like the below:
 
-Setup.EXE /Auto Upgrade /Quiet /NoReboot /Compat ScanOnly
+	Setup.EXE /Auto Upgrade /Quiet /NoReboot /Compat ScanOnly
 
 For more information on ScanOnly and other Windows setup command switches please review the [Windows Setup Commmand-line Options](https://aka.ms/setupswitches).
 
