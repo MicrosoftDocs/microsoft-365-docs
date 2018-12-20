@@ -112,6 +112,18 @@ Then, when a user signs in to the PC during setup using their Azure AD credentia
 
 [Windows Autopilot Prerequisites](https://docs.microsoft.com/en-us/windows/deployment/windows-autopilot/windows-10-autopilot#prerequisites)
 
+## Windows Update for Business for Feature Updates
+
+Windows Update for Business is a free service that enables IT Pros to keep Windows 10 devices always up to date by directly connecting the devices to the Windows Update service. Windows Update for Business can be configured via Group Policy or through MDM solutions such as Microsoft Intune and allows IT Pros to create [deployment rings](https://docs.microsoft.com/en-us/windows/deployment/update/waas-deployment-rings-windows-10-updates) validate new builds. It also is integrated into existing management tools such as Windows Server Update Services (WSUS), System Center Configuration Manager (current branch), and Microsoft Intune. Lastly, Windows Update for Business supports peer-to-peer delivery to help optimize bandwidth efficiency and reduce network congestion.
+
+For more detailed information on Windows Update for Business please review the following documentation:
+
+- [Deploy Updates Using Windows Update for Business](https://docs.microsoft.com/en-us/windows/deployment/update/waas-manage-updates-wufb)
+- [Configure Windows Update for Business](https://docs.microsoft.com/en-us/windows/deployment/update/waas-configure-wufb)
+- [Integrate Windows Update for Business with Existing Management Tools](https://docs.microsoft.com/en-us/windows/deployment/update/waas-integrate-wufb)
+- [Use Group Policy to configure Windows Update for Business](https://docs.microsoft.com/en-us/windows/deployment/update/waas-wufb-group-policy)
+- [Use Microsoft Intune to configure Windows Update for Business](https://docs.microsoft.com/en-us/intune/windows-update-for-business-configure)
+
 ## Next Step 
 
 ## [Step 7: Windows and Office as a Service](https://aka.ms/mdd7)
