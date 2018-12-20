@@ -46,7 +46,7 @@ Before deploying Windows 10 Microsoft recommends checking the readiness of your 
 
 A sample ScanOnly command line that completes the compatibility scan silently would look like the below:
 
-	- Setup.EXE /Auto Upgrade /Quiet /NoReboot /Compat ScanOnly
+	-Setup.EXE /Auto Upgrade /Quiet /NoReboot /Compat ScanOnly
 
 For more information on ScanOnly and other Windows setup command switches please review the [Windows Setup Commmand-line Options](https://aka.ms/setupswitches).
 
@@ -102,7 +102,7 @@ As you work through the list remediating issues, you’ll see that more and more
 
 Another tool to help with Windows 10 and Office 365 ProPlus app compatibility is the [Desktop App Assure](https://aka.ms/desktopappassure) program available through the FastTrack Center. Through Desktop App Assure a FastTrack Specialist will assist you to address application compatibility throughout your Windows or Office migration and during feature updates. In the event of valid application issues a Microsoft engineer with work with you at no additional cost to help remediate the application incompatibility.
 
-## Continued use of telemetry tools
+## Continued Use of Telemetry Tools
 
 Windows Analytics Upgrade Readiness isn’t just a tool to help you shift to Windows 10 and Office 365 ProPlus. Once you have desktops running on Windows 10 and Office 365 you can use it to help maintain your deployment and manage semi-annual Feature Updates so that you can stay current.
 
