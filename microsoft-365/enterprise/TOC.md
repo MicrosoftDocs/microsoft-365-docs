@@ -47,7 +47,7 @@
 ## [Deploy workloads and scenarios](deploy-workloads.md)
 ### [Microsoft Teams](teams-workload.md)
 ### [Exchange Online](exchangeonline-workload.md)
-### [SharePoint Online](sharepoint-online-onedrive-workload.md)
+### [SharePoint Online and OneDrive for Business](sharepoint-online-onedrive-workload.md)
 ### [Migration](migration-microsoft-365-enterprise-workload.md)
 ### [Teams and sites for highly regulated data](teams-sharepoint-online-sites-highly-regulated-data.md)
 ## [Test Lab Guides](m365-enterprise-test-lab-guides.md)
