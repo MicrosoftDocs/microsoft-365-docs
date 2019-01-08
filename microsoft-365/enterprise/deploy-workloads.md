@@ -28,10 +28,6 @@ Here are the workloads and scenarios in the overall Microsoft 365 Enterprise dep
 
 ![](./media/deploy-workloads/m365-deploy-content-arch-workloads.png)
 
->[!Note]
->To deploy OneDrive for Business for Microsoft 365 Enterprise, see the [OneDrive guide for enterprises](https://docs.microsoft.com/onedrive/plan-onedrive-enterprise).
->
-
 ## Foundation infrastructure prerequisites
 
 Ideally, you should deploy workloads and scenarios after you have configured all of the phases of the [foundation infrastructure](deploy-foundation-infrastructure.md). This ensures that all of the underlying layers are in place to provide integration, security, and the best experience for your users.

@@ -50,12 +50,12 @@ Apps that do not support modern authentication cannot have [identity and device 
 2. From the **Microsoft 365 admin center** tab, click **Admin**.
 3. On the new **Microsoft 365 admin center** tab, click **Admin centers > SharePoint**.
 4. On the new **SharePoint admin center** tab, click **Access control**.
-5. Under **Apps that don’t support modern authentication**, click **Block > OK**.
+5. Under **Apps that don’t support modern authentication**, click **Block**, and then click **OK**.
 
 
-### Enable Advanced Threat Protection (ATP) for SharePoint, OneDrive, and Microsoft Teams
+### Enable Advanced Threat Protection) for SharePoint, OneDrive for Business, and Microsoft Teams
 
-Office 365 Advanced Threat Protection (ATP) is a feature of Exchange Online Protection (EOP) that helps keep malware out of your email. With ATP, you create policies in the Exchange admin center (EAC) or the Security & Compliance center that help ensure your users access only links or attachments in emails that are identified as not malicious. For more information, see [Advanced threat protection for safe attachments and safe links](https://docs.microsoft.com/office365/securitycompliance/office-365-atp).
+Office 365 Advanced Threat Protection (ATP) is a feature of Exchange Online Protection (EOP) that helps keep malware out of your email. With ATP, you create policies in the Exchange Admin center (EAC) or the Security & Compliance center that help ensure your users access only links or attachments in emails that are identified as not malicious. For more information, see [Advanced threat protection for safe attachments and safe links](https://docs.microsoft.com/office365/securitycompliance/office-365-atp).
 
 1. On the **Microsoft 365 admin center** tab of your browser, click **Admin centers > Security & Compliance**.
 2. On the new **Security & Compliance** tab, click **Threat management > Policy**.
