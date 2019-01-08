@@ -5,7 +5,7 @@ keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: trudyha
 ms.localizationpriority: normal
-ms.date: 09/24/2018
+ms.date: 01/08/2019
 ---
 
 # Microsoft Managed Desktop app requirements
@@ -34,7 +34,7 @@ Certain application types are not permitted on Microsoft Managed Desktop devices
 
 ## Restricted app behaviors
 
-Certain application behaviors can either be detrimental to user experience or present a security risk to Microsoft Managed Desktop devices. Applications shall not exhibit the following behaviors or characteristics those stated reasons: 
+Certain application behaviors can either be detrimental to user experience or present a security risk to Microsoft Managed Desktop devices. Applications shall not exhibit the following behaviors or characteristics: 
 
 User Experience:
 - Install background services or spawn long-running background processes
