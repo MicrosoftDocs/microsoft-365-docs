@@ -34,9 +34,13 @@ Certain application types are not permitted on Microsoft Managed Desktop devices
 
 ## Restricted app behaviors
 
-Certain application behaviors can be either be detrimental to user experience or present a security risk to Microsoft Managed Desktop devices. Applications shall not exhibit the following behaviors or characteristics: 
+Certain application behaviors can either be detrimental to user experience or present a security risk to Microsoft Managed Desktop devices. Applications shall not exhibit the following behaviors or characteristics those stated reasons: 
+
+User Experience:
 - Install background services or spawn long-running background processes
 - Add itself to the Windows startup path
+
+Security:
 - Call undocumented Windows or Office APIs or take dependencies on internal Windows or Office data structures
 - Act as an app store or have built-in extension manager
 - Elevate the end user’s privileges
