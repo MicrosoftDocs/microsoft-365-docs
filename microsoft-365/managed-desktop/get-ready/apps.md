@@ -29,6 +29,8 @@ Intune will be linked to the **Microsoft Store for Business** during Microsoft M
 **App management**
 Microsoft may identify restricted applications which are not suitable for the modern workplace because of their system impact. When such an application is identified Microsoft will notify the customer and that application will need to be removed from the tenant. 
 
+For more information on restricted app behaviors and app requirements, see [Microsoft Managed Desktop app requirements](mmd-app-requirements.md)
+
 ## Customer responsibilities
 The Office 365 Suite is core to Microsoft’s productivity offerings and is included in the Microsoft 365 License for all Microsoft Managed Desktop users. While Microsoft deploys, updates, and supports Office Applications to Microsoft Managed Desktop Devices there are still some areas for which the customer is responsible.
 - **Assign licenses** - Customers are responsible for assigning the appropriate licenses to end users for Office 365. 
@@ -40,8 +42,7 @@ Since line-of-business (LOB) apps are unique for each customer, customers are re
 - Assigning apps to those users
 - Create and maintain Azure Active Directory (AD) groups for managing app assignments 
 
-Once the core set of LOB apps has been identified the customer will procure, license, package, and test those applications in the Microsoft Managed Desktop environment. The customer must upload and deploy applications to Intune to deploy, update, and decommission their LOB applications. Customers are responsible for managing LOB apps support for their users.
- 
+The customer must upload LOB apps to Intune. They are then responsible for deploying, updating, and decommissioning those applications over their respective lifecycles, as well as managing support for these apps for their users.
 
 ## Office applications
 As part of the Microsoft 365 E5 license, Office 365 Standard Suite (64 Bit) is deployed by Microsoft. 
@@ -76,19 +77,15 @@ For information on LOB application requirements, see [Microsoft Managed Desktop 
 ## Resources
 While many services are out of scope for Microsoft Managed Desktop operations there are services which Microsoft offers which may help the customer manage their applications.
 
-### Windows Upgrade Readiness
-A key part of setting up new Microsoft Managed Devices is understanding which apps are needed for device users. Windows Upgrade Readiness is a Microsoft tool which helps enterprises understand the application landscape inside their company, and helps them to review key data about those applications, such as:
-
-- **Application usage** - Telemetry data is used to monitor application usage.
-- **Application compatibility** - Upgrade Readiness looks at each application and sees how broadly it has been deployed on the latest version of Windows 10 and assesses how to identify if it is “Ready for Windows”. This data helps focus testing efforts on applications which aren’t already broadly adopted.
-
 ### Intune application deployment
 Application management can be handled through the Microsoft Managed Desktop Admin portal, or through the Intune portal. Intune’s app management portal shows applications deployed for Windows, Android, and iOS. Microsoft Managed Desktop Admin portal limits the view to Windows 10 applications. Both are available through the Azure Portal. 
-- [Intune app management basics](https://docs.microsoft.com/intune/app-management)
-- [Add a line-of-business App](https://docs.microsoft.com/intune/lob-apps-windows)
-- [Add Win32 apps to Intune](https://docs.microsoft.com/intune/apps-win32-app-management)
-- [Add web applications](https://docs.microsoft.com/intune/web-app)
-- [Assign and deploy apps to groups](https://docs.microsoft.com/intune/apps-deploy)
-
-### Application packaging standards
-To deploy Windows 32 applications through Intune they must be packaged as either .MSI, an .appx, .exe, or .MSIX. The most common package type for Intune is currently .MSI.
+* [Intune app management basics](https://docs.microsoft.com/intune/app-management)
+* [Add apps to Intune](https://docs.microsoft.com/intune/app-management)
+   * [Add a line-of-business App](https://docs.microsoft.com/intune/lob-apps-windows)
+   * [Add Win32 apps to Intune](https://docs.microsoft.com/intune/apps-win32-app-management)
+   * [Add web applications](https://docs.microsoft.com/intune/web-app)
+* [Deploy apps](https://docs.microsoft.com/intune/apps-deploy)
+   * [Deploy apps to Windows 10](https://docs.microsoft.com/intune/apps-windows-10-app-deploy)
+* Company Portal
+   * [Deploy the Company Portal](https://docs.microsoft.com/intune/store-apps-company-portal-app)
+   * [Configure the Company Portal app](https://docs.microsoft.com/en-us/intune/company-portal-app)
