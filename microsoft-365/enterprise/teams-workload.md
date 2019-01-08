@@ -22,9 +22,7 @@ If you’re currently using Skype for Business, we’re building Skype for Busin
 
 The following phases and steps guide you through the process of envisioning the role of Teams in your organization, onboarding your organization to Teams through a series of progressive rollouts, and driving usage of Teams and its value to your end users. 
 
->[!Note]
->These deployment instructions should be followed only after you've completed your [foundation infrastructure](deploy-foundation-infrastructure.md) for Microsoft 365 Enterprise.
->
+Before you begin, make sure you've configured the right [foundation infrastructure](deploy-foundation-infrastructure.md) phases so that your teams have the security capabilities you need.
 
 ## Phase 1: Envision
 
