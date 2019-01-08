@@ -24,7 +24,7 @@ If you are brand new to Exchange Online, see [Microsoft Exchange Online](https:/
 The following phases and steps guide you through the process of envisioning the role of Exchange Online in your organization, onboarding your organization to Exchange Online through a series of progressive rollouts, and driving usage of Exchange Online and its value to your end users.
 
 >[!Note]
->These deployment instructions should be followed only after you’ve completed your [foundation infrastructure](deploy-foundation-infrastructure.md) for Microsoft 365 Enterprise.
+>These deployment instructions should be followed only after you’ve completed [Phase 2-Identity](identity-infrastructure.md) of the Microsoft 365 Enterprise foundation infrastructure.
 >
 
 ## Phase 1: Envision
@@ -33,7 +33,7 @@ In this phase, you gather the people for your Exchange Online deployment and det
 
 ### Step 1: Gather your Exchange Online deployment members
 
-For a successful deployment of Exchange Online on top of the Microsoft 365 [foundation infrastructure](deploy-foundation-infrastructure.md), you need to get the right people for input and feedback. Key people include business decision makers, IT staff such as architects and implementers, and advocates for your end users. 
+For a successful deployment of Exchange Online on top of [Phase 2-Identity](identity-infrastructure.md) of the Microsoft 365 Enterprise foundation infrastructure, you need to get the right people for input and feedback. Key people include business decision makers, IT staff such as architects and implementers, and advocates for your end users. 
 
 These three groups ensure that your Exchange Online deployment includes considerations that address business needs, technical aspects of mailbox migration and security, and that the result will be something that typical users will use.
 
@@ -81,7 +81,7 @@ If you are doing your own planning, or in conjunction with FastTrack, you need t
 
 Use these resources to prepare for the technical aspects of an Exchange Online rollout: 
 
-- [Ways to migrate multiple email accounts to Office 365](https://support.office.com/article/ways-to-migrate-multiple-email-accounts-to-office-365-0a4913fe-60fb-498f-9155-a86516418842)
+- [Ways to migrate multiple email accounts to Office 365](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration)
 - [Office 365 mail migration advisor](https://portal.office.com/onboarding/mailsetupadvisor#/) (must be signed in to your Office 365 subscription)
 - [Collaboration in Exchange Online](https://technet.microsoft.com/library/jj983794(v=exchg.150).aspx)
 - [Recipients in Exchange Online](https://technet.microsoft.com/library/jj200702(v=exchg.150).aspx)
@@ -160,7 +160,7 @@ After rolling out Exchange Online to your entire organization, you must continue
 Here are some suggested activities:
 
 - See [Office 365 adoption guidance](https://aka.ms/successfactors) to learn about general best practices for cloud service adoption. 
-- See [Office 365 activity reports](https://support.office.com/article/Activity-Reports-in-the-Office-365-admin-center-0d6dfb17-8582-4172-a9a9-aed798150263) to understand Office 365 service usage across your organization. If you aren’t an Office 365 global admin for your organization, ask someone who is a global admin to grant Reports Reader permissions to your user account so you can access activity reports.
+- See [Office 365 activity reports](https://docs.microsoft.com/office365/admin/activity-reports/activity-reports) to understand Office 365 service usage across your organization. If you aren’t an Office 365 global admin for your organization, ask someone who is a global admin to grant Reports Reader permissions to your user account so you can access activity reports.
 - Monitor your feedback venue (a public channel in a central Teams team or Yammer) for issues and feedback from individuals about their experiences with Exchange Online. Address questions and issues as quickly as you can to prevent frustrated individuals and demonstrate support for the rollout.
 - Identify and nurture champions in each business group and highlight their accomplishments and best practices using Exchange Online. Reflect their successes out to the organization to show project success and adoption. Endorsement by technical leaders within a business group can exert a powerful influence over leaders and peers.
 

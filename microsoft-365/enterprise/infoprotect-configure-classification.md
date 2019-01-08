@@ -35,7 +35,8 @@ Microsoft 365 includes three types of classification:
 
 Sensitive information types for Office 365 define how automated processes such as search recognize specific information types such as health service numbers and credit card numbers. You use sensitive information types to find sensitive data and apply data loss prevention rules and policies to protect this data. For more information, see [Overview of data loss prevention policies](https://docs.microsoft.com/office365/securitycompliance/data-loss-prevention-policies). For example, sensitive information types are especially helpful for meeting compliance and regulation requirements, such as for the General Data Protection Regulation (GDPR).
 
-### Office 365 labels
+### Office 365 retention labels
+
 You can use Office 365 retention labels for personal data and for highly regulated and trade secret files stored in SharePoint Online and OneDrive for Business. For more information, including how to create them, see [Overview of retention labels](https://docs.microsoft.com/office365/securitycompliance/labels).
 
 If you decide to use Office 365 retention labels, you should configure at least one for each level of protection. For example, create three labels for:

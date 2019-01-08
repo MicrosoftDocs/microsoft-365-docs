@@ -37,14 +37,14 @@ If needed, [Step 1](infoprotect-define-sec-infoprotect-levels.md) can help you m
 <a name="crit-infoprotect-step4"></a>
 ## Required: Increased security for Office 365 is configured
 
-You've configured the following settings for increased security based on the information in [Configure your Office 365 tenant for increased security](https://support.office.com/article/Configure-your-Office-365-tenant-for-increased-security-8d274fe3-db51-4107-ba64-865e7155b355):
+You've configured the following settings for [Office 365 increased security](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security):
 
 - Threat management policies in the Office 365 Security & Compliance Center
 - Additional Exchange Online tenant-wide settings
 - Tenant-wide sharing policies in SharePoint admin center
 - Settings in Azure Active Directory
 
-You've also [enabled Office 365 Advanced Threat Protection (ATP)](https://support.office.com/article/Office-365-ATP-for-SharePoint-OneDrive-and-Microsoft-Teams-26261670-db33-4c53-b125-af0662c34607#turniton).
+You've also [enabled Office 365 Advanced Threat Protection (ATP) for SharePoint, OneDrive, and Microsoft Teams](https://docs.microsoft.com/office365/securitycompliance/atp-for-spo-odb-and-teams).
 
 If needed, [Step 3](infoprotect-configure-increased-security-office-365.md) can help you meet this requirement. 
 

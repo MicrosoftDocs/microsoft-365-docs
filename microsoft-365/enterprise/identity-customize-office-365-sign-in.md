@@ -33,7 +33,7 @@ And here is what the same user of the Contoso Corporation would see *after custo
 
 ![Example of the Office 365 sign-in page after customization](./media/identity-customize-office-365-sign-in/id-step01-sign-in-after.png)
 
-For more information, see [Add your company branding to Office 365 Sign In page](https://support.office.com/article/Add-your-company-branding-to-Office-365-Sign-In-page-a1229cdb-ce19-4da5-90c7-2b9b146aef0a).
+For more information, see [Add your company branding to Office 365 Sign In page](https://docs.microsoft.com/office365/admin/setup/customize-sign-in-page).
 
 For configuration instructions, see [Add company branding to your sign-in and Access Panel pages](http://aka.ms/aadpaddbranding).
 
