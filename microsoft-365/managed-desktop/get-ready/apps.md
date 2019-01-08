@@ -88,4 +88,4 @@ Application management can be handled through the Microsoft Managed Desktop Admi
    * [Deploy apps to Windows 10](https://docs.microsoft.com/intune/apps-windows-10-app-deploy)
 * Company Portal
    * [Deploy the Company Portal](https://docs.microsoft.com/intune/store-apps-company-portal-app)
-   * [Configure the Company Portal app](https://docs.microsoft.com/en-us/intune/company-portal-app)
+   * [Configure the Company Portal app](https://docs.microsoft.com/intune/company-portal-app)
