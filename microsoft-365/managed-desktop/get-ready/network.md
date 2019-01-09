@@ -40,7 +40,7 @@ Microsoft service | Documentation source - URLs required on allow list
 Windows Update for Business (WUfB) | [Windows Update for Business firewall and proxy requirements](https://support.microsoft.com/help/3084568/can-t-download-updates-from-windows-update-from-behind-a-firewall-or-p)
 Delivery Optimization | [Windows Update proxy requirements](https://support.microsoft.com/help/3175743/proxy-requirements-for-windows-update)
 Microsoft Store for Business | [Microsoft Store allow list](https://support.microsoft.com/help/2778122/using-authenticated-proxy-servers-together-with-windows-8)
-Office 365 | [Office 365 URL and IP address ranges](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
+Office 365 | [Office 365 URL and IP address ranges](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges) including *.apibasic.diagnostics.office.com
 Azure Active Directory | [Hybrid identity required ports and protocols](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-ports) and [Active Directory and Active Directory Domain Services Port Requirements](https://aka.ms/AA26ygm) 
 Microsoft Intune | [Intune network configuration requirements](https://docs.microsoft.com/intune/network-bandwidth-use)
 OneDrive for Business <br> | [Required URLs and ports for OneDrive](https://docs.microsoft.com/onedrive/required-urls-and-ports)
