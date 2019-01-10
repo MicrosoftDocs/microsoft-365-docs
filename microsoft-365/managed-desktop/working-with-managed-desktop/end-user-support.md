@@ -10,7 +10,7 @@ ms.date: 11/28/2018
 
 # Getting help for end users
 
-There are two ways that users in your organization can get help with their Microsoft Managed Desktop devices: **Get Help** app, or phone support. 
+There are two ways that users in your organization can get help with their Microsoft Managed Desktop devices: **Get Help** app, or phone support. Note that devices residing in the test ring are out of scope for these end user support options. 
 
 ## Get Help app
 
@@ -30,7 +30,6 @@ End users with Microsoft Managed Desktop devices also have access to toll-free p
 - United States: +1 855 425 0216
 - United Kingdom: +44 2076 601135
 - Australia: +61 180 037 0619
-
 
 ## Additional resources
 - [Admin support for Microsoft Managed Desktop](admin-support.md). 
