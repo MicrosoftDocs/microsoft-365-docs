@@ -21,7 +21,7 @@ Microsoft Managed Desktop connects all devices to a modern cloud-based infrastru
 
 Microsoft Managed Desktop uses four Azure AD groups to manage updates:
 
-- Test: Non-production devices intended to validate changes prior to deploying the changes across the rest of the tenant.
+- Test: Non-production devices intended to validate changes prior to deploying the changes across the rest of the tenant. Devices in this ring are out of scope for documented end user support. 
 - First: Contains early software adopters, and devices may be subject to pre-release updates.
 - Fast: Prioritizes speed over stability. Useful for detecting quality issues before they are offered to the Broad group. 
 - Broad: Last group to have feature and quality updates available. This group contains the majority of users in the tenant, and therefore favors stability over speed in deployment.
