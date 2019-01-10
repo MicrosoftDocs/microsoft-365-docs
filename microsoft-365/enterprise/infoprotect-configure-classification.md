@@ -3,7 +3,7 @@ title: "Step 2: Configure classification for your environment"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/19/2018
+ms.date: 12/16/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -28,17 +28,18 @@ In this step, you work with your legal and compliance teams to define a classifi
 Microsoft 365 includes three types of classification:
 
 - Sensitive information types for Office 365
-- Office 365 labels
+- Office 365 retention labels
 - Azure Information Protection labels and protection
 
 ### Sensitive information types for Office 365
 
-Sensitive information types for Office 365 define how automated processes such as search recognize specific information types such as health service numbers and credit card numbers. You use sensitive information types to find sensitive data and apply data loss prevention rules and policies to protect this data. For more information, see [Overview of data loss prevention policies](https://support.office.com/article/overview-of-data-loss-prevention-policies-1966b2a7-d1e2-4d92-ab61-42efbb137f5e). For example, sensitive information types are especially helpful for meeting compliance and regulation requirements, such as for the General Data Protection Regulation (GDPR).
+Sensitive information types for Office 365 define how automated processes such as search recognize specific information types such as health service numbers and credit card numbers. You use sensitive information types to find sensitive data and apply data loss prevention rules and policies to protect this data. For more information, see [Overview of data loss prevention policies](https://docs.microsoft.com/office365/securitycompliance/data-loss-prevention-policies). For example, sensitive information types are especially helpful for meeting compliance and regulation requirements, such as for the General Data Protection Regulation (GDPR).
 
-### Office 365 labels
-You can use Office 365 labels for personal data and for highly regulated and trade secret files stored in SharePoint Online and OneDrive for Business. For more information, including how to create them, see [Overview of labels](https://support.office.com/article/overview-of-labels-af398293-c69d-465e-a249-d74561552d30).
+### Office 365 retention labels
 
-If you decide to use Office 365 labels, you should configure at least one for each level of protection. For example, create three labels for:
+You can use Office 365 retention labels for personal data and for highly regulated and trade secret files stored in SharePoint Online and OneDrive for Business. For more information, including how to create them, see [Overview of retention labels](https://docs.microsoft.com/office365/securitycompliance/labels).
+
+If you decide to use Office 365 retention labels, you should configure at least one for each level of protection. For example, create three labels for:
 
 - Baseline
 - Sensitive

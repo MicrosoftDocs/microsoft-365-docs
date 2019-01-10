@@ -22,9 +22,7 @@ If you’re currently using Skype for Business, we’re building Skype for Busin
 
 The following phases and steps guide you through the process of envisioning the role of Teams in your organization, onboarding your organization to Teams through a series of progressive rollouts, and driving usage of Teams and its value to your end users. 
 
->[!Note]
->These deployment instructions should be followed only after you've completed your [foundation infrastructure](deploy-foundation-infrastructure.md) for Microsoft 365 Enterprise.
->
+Before you begin, make sure you've configured the right [foundation infrastructure](deploy-foundation-infrastructure.md) phases so that your teams have the security capabilities you need.
 
 ## Phase 1: Envision
 
@@ -40,7 +38,7 @@ These three groups ensure that your Teams deployment includes considerations tha
 A list of people that represent the business, technical, and end user aspects of your organization.
 
 ### Step 2: Determine and prioritize your Teams business scenarios
-Teams can be used for many different purposes. You need to figure out which purposes map to your business needs on the separate levels of your organization, your business groups, your departments, and individual working and project teams. Take a look at the [Microsoft 365 Productivity Library](https://www.microsoft.com/microsoft-365/success) for examples to help you define Teams scenarios. 
+Teams can be used for many different purposes. You need to figure out which purposes map to your business needs on the separate levels of your organization, your business groups, your departments, and individual working and project teams. Take a look at the [Microsoft 365 Productivity Library](https://www.microsoft.com/en-us/microsoft-365/success/?rtc=1) for examples to help you define Teams scenarios. 
 
 You should target Teams to address fast-moving and highly collaborative teams that work closely together and require many more facilities than just email with Exchange Online can provide. Examples are live group chats with a recorded history and a common and easy-to-find place to store files and notes. 
 

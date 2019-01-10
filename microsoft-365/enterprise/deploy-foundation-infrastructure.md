@@ -49,7 +49,7 @@ Here's the foundation infrastructure in the overall Microsoft 365 Enterprise dep
 
 ## Infrastructure configuration vs. user rollout
 
-The foundation infrastructure is a set of configured software and services that, when combined together for a user, allow them to take advantage of the entire spectrum of capabilities and protections that Microsoft 365 Enterprise offers. The ultimate destination of your end-to-end deployment journey is to have this be true for all of your users and their Windows-based devices. 
+The foundation infrastructure is a set of configured software and services that, when combined together for a user, allow them to take advantage of the entire spectrum of capabilities and protections that Microsoft 365 Enterprise offers. The ultimate destination of your end-to-end deployment journey is to have this infrastructure apply to all of your users and their Windows-based devices. 
 
 However, it is important to note that the Microsoft 365 Enterprise foundation infrastructure is independent of the rollout of software and services to your users. ***You can configure the layers of the foundation infrastructure without having to roll out those layers to all of your users.***
 

@@ -123,7 +123,7 @@ Contoso's IT department determined the following mapping of business needs to Mi
 | Security |  |  |
 |  | Identity & access management | Dedicated global administrator accounts with Multi-factor authentication (MFA) and Azure AD Privileged Identity Management (PIM) <BR> MFA for all user accounts <BR> Conditional access <BR> Windows Hello <BR> Windows Credential Guard |
 |  | Threat protection | Advanced Threat Analytics <BR> Windows Defender <BR> Advanced Threat Protection <BR> Office 365 Advanced Threat Protection <BR> Office 365 Threat Intelligence <BR> |
-|  | Information protection | Azure Information Protection (AIP) <BR> Office 365 Data Loss Prevention (DLP) <BR> Windows Information Protection <BR> Microsoft Cloud App Security <BR> Office 365 Cloud App Security (CAS) <BR> Microsoft Intune |
+|  | Information protection | Azure Information Protection <BR> Office 365 Data Loss Prevention (DLP) <BR> Windows Information Protection <BR> Microsoft Cloud App Security <BR> Office 365 Cloud App Security (CAS) <BR> Microsoft Intune |
 |  | Security management | Azure Security Center  <BR> Windows Defender Security Center |
 | Remote and mobile access and business partners |  |  |
 |  | Better security for remote and mobile workers | Microsoft Intune |

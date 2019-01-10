@@ -3,7 +3,7 @@ title: "Step 3: Configure increased security for Office 365"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/16/2018
+ms.date: 01/08/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -21,35 +21,24 @@ description: Understand and configure increased security for Office 365, includi
 
 ![](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
-To ensure that your Office 365 subscription and its data start off and remain secure from malicious threats, see [Configure your Office 365 tenant for increased security](https://support.office.com/article/Configure-your-Office-365-tenant-for-increased-security-8d274fe3-db51-4107-ba64-865e7155b355) and configure the following additional security:
+To ensure that your Office 365 subscription and its data start off and remain secure from malicious threats, configure the following additional security for Office 365:
 
-- Threat management policies in the Office 365 Security & Compliance Center
-- Additional Exchange Online tenant-wide settings
-- Tenant-wide sharing policies in the SharePoint admin center
-- Settings in Azure Active Directory
+- [Tune threat management policies](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security#tune-threat-management-policies-in-the-office-365-security--compliance-center)
+- [Additional Exchange Online tenant-wide settings](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security#configure-additional-exchange-online-tenant-wide-settings)
+- [Tenant-wide sharing policies in the SharePoint admin center](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security#configure-tenant-wide-sharing-policies-in-sharepoint-admin-center)
+- [Settings in Azure Active Directory](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security#configure-settings-in-azure-active-directory)
 
 Once configured, you can obtain information about your security status from:
 
-- Dashboards and reports in the Security & Compliance Center
-- [Office 365 Secure Score](https://securescore.office.com/)
- 
-  To access this page, you must be signed in as an Office 365 tenant admin.
+- [Dashboards and reports in the Security & Compliance Center](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security#view-dashboards-and-reports-in-the-security--compliance-center)
+- [Office 365 Secure Score](https://docs.microsoft.com/office365/securitycompliance/office-365-secure-score)
 
-You can also use Cloud App Security or Office 365 Cloud App Security to monitor for security events and act. For more information, see [Overview of Office 365 Cloud App Security](https://support.office.com/article/Overview-of-Office-365-Cloud-App-Security-81f0ee9a-9645-45ab-ba56-de9cbccab475).
+You can also use Cloud App Security or Office 365 Cloud App Security to monitor for security events and act. For more information, see [Overview of Office 365 Cloud App Security](https://docs.microsoft.com/office365/securitycompliance/office-365-cas-overview).
 
-An additional security feature is Office 365 Advanced Threat Protection (ATP), which helps your organization collaborate more securely by:
+An additional security feature is [Office 365 Advanced Threat Protection (ATP)](https://docs.microsoft.com/office365/securitycompliance/office-365-atp), which helps your organization collaborate more securely by:
 
-- Protecting links and attachments in email. 
-- Providing spoof intelligence and anti-phishing capabilities for email in Exchange Online and files in SharePoint Online, OneDrive for Business, and Microsoft Teams. 
-
->[!Note]
->Office 365 ATP is included with Microsoft 365 Enterprise E5. If you have Microsoft 365 Enterprise E3, you can purchase individual licenses for ATP.
->
-
-To enable Office 365 ATP, see [Turn it on](https://support.office.com/article/Office-365-ATP-for-SharePoint-OneDrive-and-Microsoft-Teams-26261670-db33-4c53-b125-af0662c34607#turniton).
-
-For more information, see [Office 365 ATP for SharePoint, OneDrive, and Microsoft Teams](https://support.office.com/article/Office-365-ATP-for-SharePoint-OneDrive-and-Microsoft-Teams-26261670-db33-4c53-b125-af0662c34607).
-
+- Protecting [links](https://docs.microsoft.com/office365/securitycompliance/atp-safe-links) and [attachments](https://docs.microsoft.com/office365/securitycompliance/atp-safe-attachments) in email. 
+- Providing spoof intelligence and anti-phishing capabilities for email in Exchange Online and [files in SharePoint Online, OneDrive for Business, and Microsoft Teams](https://docs.microsoft.com/office365/securitycompliance/atp-for-spo-odb-and-teams). 
 
 |||
 |:-------|:-----|
