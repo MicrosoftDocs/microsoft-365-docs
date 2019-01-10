@@ -21,7 +21,7 @@ When you create your support request, choose the type that matches the kind of h
 
 Support request type | When to use
 --- | ---
-Incident | You require the Microsoft Managed Desktop Operations Team to investigate, like widespread impact of a change, security incident.
+Incident | You require the Microsoft Managed Desktop Operations Team to investigate, like widespread impact of a change or security incident.
 Request for information | You are planning a change for networking, proxy configuration, VPN systems, certificate expiration, or just need some information about the service. A response from the Microsoft Managed Desktop Operations Team is strongly advised when communicating a change within your organization.
 Change request | You require the Microsoft Managed Desktop Operations Team to make a change, such as moving devices between update rings.
 
@@ -29,7 +29,7 @@ Change request | You require the Microsoft Managed Desktop Operations Team to ma
 
 ## Support request severity definitions
 
-Initial response time is the period from when you submit your support request to when an a Microsoft Managed Desktop engineer contacts you and starts working on your support request. The initial response time varies with the business impact of the request, based on the severity of the request.
+Initial response time is the period from when you submit your support request to when a Microsoft Managed Desktop engineer contacts you and starts working on your support request. The initial response time varies with the business impact of the request, based on the severity of the request.
 
 Severity level	| Customer situation |	Initial response time	| Expected customer response
 --- | --- | --- | ---
