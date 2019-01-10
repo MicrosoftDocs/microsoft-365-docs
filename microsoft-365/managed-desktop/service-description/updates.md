@@ -21,7 +21,7 @@ Microsoft Managed Desktop connects all devices to a modern cloud-based infrastru
 
 Microsoft Managed Desktop uses four Azure AD groups to manage updates:
 
-- Test: Non-production devices intended to validate changes prior to deploying the changes across the rest of the tenant.
+- Test: Non-production devices intended to validate changes prior to deploying the changes across the rest of the tenant. Devices in this ring are out of scope for documented end user support. 
 - First: Contains early software adopters, and devices may be subject to pre-release updates.
 - Fast: Prioritizes speed over stability. Useful for detecting quality issues before they are offered to the Broad group. 
 - Broad: Last group to have feature and quality updates available. This group contains the majority of users in the tenant, and therefore favors stability over speed in deployment.
@@ -31,7 +31,7 @@ For more information, see [Windows Update: FAQ](https://support.microsoft.com/he
 
 How update deployment works:
 - Microsoft Managed Desktop deploys a new feature or quality update according the schedule specified below.
-- During deployment, Microsoft Managed Desktop monitors for signs of failure or other disruption (via telemetry signals and its end-user support system). If any are detected, then the deployment to all current and future groups is immediately paused.
+- During deployment, Microsoft Managed Desktop monitors for signs of failure or disruption (based on telemetry signals and end-user support system). If any are detected, then the deployment to all current and future groups is immediately paused.
     - Example: if an issue is discovered while deploying a quality update to the First group, then update deployments to First, Fast, and Broad will all be paused until the issue is resolved.
     - Compatibility issues may be reported by filing a ticket in the Microsoft Managed Desktop IT Admin portal.
 - Feature and quality updates are paused independently. Pause is in effect for 35 days by default, but can be reduced or extended depending on whether the issue is remediated.
