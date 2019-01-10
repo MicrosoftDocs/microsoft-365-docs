@@ -31,6 +31,7 @@ End users with Microsoft Managed Desktop devices also have access to toll-free p
 - United Kingdom: +44 2076 601135
 - Australia: +61 180 037 0619
 
+
 ## Additional resources
 - [Admin support for Microsoft Managed Desktop](admin-support.md). 
 - [Support for Microsoft Managed Desktop](../service-description/support.md).
