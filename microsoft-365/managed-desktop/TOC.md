@@ -20,6 +20,7 @@
 ## [Get started with Microsoft Managed Desktop](get-started/index.md)
 ### [Add Admin contacts](get-started/add-admin-contacts.md)
 ### [Order devices](get-started/devices.md)
+### [Deploy apps](deploy-apps.md)
 ## [Working with Microsoft Managed Desktop](working-with-managed-desktop/index.md)
 ### [Admin support for Microsoft Managed Desktop](working-with-managed-desktop/admin-support.md)
 ### [End user support for Microsoft Managed Desktop](working-with-managed-desktop/end-user-support.md)
