@@ -24,7 +24,7 @@ Microsoft Managed Desktop applies a standard set of policies and utilizes many M
 
 Data collected from customer tenants (which enables Microsoft Managed Desktop IT services and operations) is stored in Azure SQL databases in the Microsoft tenant hosted in the United States of America.
 
-For more information, see [Microsoft Azure security](https://docs.microsoft.com/en-us/azure/security/azure-database-security-overview).
+For more information, see [Microsoft Azure security](https://docs.microsoft.com/azure/security/azure-database-security-overview).
 
 Listed below are the types of data transmitted from your tenant:
 
@@ -47,7 +47,7 @@ Antivirus |	Windows Defender AV is installed and configured<br>Windows Defender 
 Full Volume Encryption |	Windows BitLocker is the volume encryption solution for Microsoft Managed Desktop devices.<br><br>Once an organization is onboarded into the service, devices will be encrypted using Windows BitLocker with built-in Trust Platform Module (TPM) to prevent unauthorized access to local data when the device is in sleep mode, or off. 
 Monitoring |	Windows Defender Advanced Threat Protection (Windows Defender ATP) is used the security threat monitoring across all Microsoft Managed Desktop devices. Windows Defender ATP allows enterprise customers to detect, investigate and respond to advanced threats in their corporate network. For more information, see [Windows Defender Advanced Threat Protection.](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) 
 Software updates |	Microsoft Managed Desktop devices are always secured with the latest security updates.
-Secure Device Configuration |	Microsoft Managed Desktop implements the Microsoft Security Baseline. For more information, see [Windows security baselines.](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-security-baselines)
+Secure Device Configuration |	Microsoft Managed Desktop implements the Microsoft Security Baseline. For more information, see [Windows security baselines.](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines)
 
 
 
@@ -58,7 +58,7 @@ Identity and access management protects corporate assets and business-critical d
 Service | Description
 --- | ---
 Biometric Authentication |	Windows Hello allows users to login using their face or a PIN, making passwords harder to forget or steal. For more information, see [Windows Hello.](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello)
-Multi factor authentication	| Azure multi-factor authentication prevents unauthorizedmore tightly controls access to sensitive functions of the Microsoft Managed Desktop service by providing an additional level of authentication using a mobile phone, as well as self-service password reset. 
+Multi factor authentication	| Azure multi-factor authentication more tightly controls access to sensitive functions of the Microsoft Managed Desktop service by providing an additional level of authentication using a mobile phone, as well as self-service password reset. 
 Standard user permission |	To protect the system and make it more secure, the user will be assigned Standard User Permissions. This is assigned as part of the Windows Autopilot out-of-box experience.
 
 
