@@ -12,7 +12,7 @@ ms.date: 09/24/2018
 
 <!--Security, also Onboarding doc: data handling/store, privileged account access -->
 
-Microsoft Managed Desktop applies a standard set of policies and utilizes many Microsoft technologies to help secure Microsoft Managed Desktop devices, stored company data, and more. The items listed below are detailed further:  
+Microsoft Managed Desktop applies a standard set of policies and utilizes many Microsoft technologies to help secure Microsoft Managed Desktop devices, stored company data, and more. The areas listed below are detailed further:  
 
 - [Data security](#data-security) - types of data collected by Microsoft Managed Desktop and where it's securely stored
 - [Device security](#device-security) – security and protection on Microsoft Managed Desktop devices
@@ -38,8 +38,6 @@ Listed below are the types of data transmitted from your tenant:
 ## Device security
 
 Microsoft Managed Desktop ensures all managed devices are secured and protected and detect threats as early as possible using the following services:
-
-The following table lists the services provided to ensure Microsoft Managed Desktop devices are trusted, healthy and secured.
 
 Service | Description
 --- | ---
