@@ -20,12 +20,12 @@ The overall process looks like this:
 
 ## Step 1: Add apps to Microsoft Managed Desktop portal
 There are a couple of ways that you can source and add apps to Microsoft Managed Desktop, and then deploy them to Microsoft Managed Desktop devices.
--  [Add Win32, or Windows MSI-based apps](#lob-apps) - You can add your line-of-business (LOB) apps that you already have. For more information on requirements for apps installed on Microsoft Managed Desktop devices, see [Microsoft Managed Desktop app requirements](https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/mmd-app-requirements).
--  [Get new apps from Microsoft Store for Business](#msfb-apps)
+-  [Win32, or Windows MSI-based apps](#lob-apps) - You can add your line-of-business (LOB) apps that you already have. For more information on requirements for apps installed on Microsoft Managed Desktop devices, see [Microsoft Managed Desktop app requirements](https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/mmd-app-requirements).
+-  [Microsoft Store for Business apps](#msfb-apps)
 
 <span id="lob-apps">
 
-###  Deploy Win32 or Windows MSI-based apps to Microsoft Managed Desktop
+###  Win32 or Windows MSI-based apps to Microsoft Managed Desktop
 Add a placeholder for your app, and then configure and upload the app. 
 
 **Add your LOB app or Windows app to Microsoft Managed Desktop portal**
@@ -43,8 +43,8 @@ Next, configure your app and upload it to Microsoft Managed Desktop. There are d
 
 <span id="msfb-apps">
 
-### Get apps from Microsoft Store for Business and sync to Microsoft Managed Desktop
-If you haven't signed up with Microsoft Store for Business, you can sign up when you shop for apps. 
+### Microsoft Store for Business apps
+If you haven't signed up with Microsoft Store for Business, you can sign up when you shop for apps. After you have your apps, you can sync them with Microsoft Managed Desktop. 
 
 **To buy apps from the Microsoft Store for Business**
 
@@ -69,9 +69,7 @@ Intune is in the Monitoring + Management section.
 
 ## Step 2: Create Azure AD groups
 
-**Create three Azure AD groups for each app**
-
-This table has suggested naming for each group type. 
+Create three Azure AD groups for each app. This table outlines the groups you'll need for Available, Required, and Uninstall groups and has suggested names for the groups. 
 
 App assignment type |	Group use	| Example Azure AD name
 --- | --- | ---
@@ -79,7 +77,7 @@ Available |  The app will be available from Company Portal app or website, or Mi
 Required |  The app is installed on devices in the selected groups. | MMD – PowerBi Desktop – Required
 Uninstall |  TThe app is uninstalled from devices in the selected groups. | MMD – PowerBi Desktop – Uninstall
 
-Add you users to these groups to either make the app availabe, install the app, or remove the app from their Microsoft Managed Desktop device. 
+Add your users to these groups to either make the app availabe, install the app, or remove the app from their Microsoft Managed Desktop device. 
 
 <span id="3" />
 

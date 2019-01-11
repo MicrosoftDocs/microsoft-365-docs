@@ -1,24 +1,67 @@
 ---
 title: Manage apps in Microsoft Managed Desktop
-description:  
+description: Info about how to update line-of-business apps that are deployed to Microsoft Managed Desktop devices
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: trudyha
 ms.localizationpriority: normal
-ms.date: 09/24/2018
+ms.date: 01/11/2019
 ---
 
-# Manage apps in Microsoft Managed Desktop
+# Manage line-of-business apps in Microsoft Managed Desktop
 
 <!--Application management -->
 
-Once applications are onboarded, managing them is shared between customers, Microsoft Managed Desktop operations, and Microsoft Managed Desktop support. 
-Customers:
+There are a couple of ways to manage app updates for apps that you've onboarded to Microsoft Managed Desktop and deployed to your Microsoft Managed Desktop devices. You can make app updates in Microsoft Managed Desktop portal, or Intune. 
 
-- Ensure that appropriate licenses are in place for all software deployed through Intune 
-- Monitor their application deployment status
-- Manage application settings profiles for deployment
+<span id="update-app-mmd" />
 
-Microsoft Managed Desktop Operations Team reviews app deployment notifications to ensure that no applications which violate Microsoft Managed Desktop terms are being deployed. 
+## Update line-of-business apps in Microsoft Managed Desktop
 
-Microsoft Managed Desktop support provides support for Microsoft Authored Applications (for example, Office). 
+**To update your line-of-business apps in Microsoft Managed Desktop portal**
+1. Sign in to [Microsoft Managed Desktop Admin portal](http://aka.ms/mmdportal).
+2. Under **Inventory**, select **Apps**.  
+3. Select the app you want to updates, and then select **Edit**.
+4. Under **Manage**, select **Properties**. 
+5. Click **App package file**, and then browse to upload a new app package file. 
+
+The updated app will be deployed to your user's devices.
+
+<span id="update-app-intune" />
+
+## Update line-of-business apps in Intune
+
+**To update your line-of-business apps in Intune**
+1. Sign in to [Azure portal](https://azure.portal.com).
+2. Select **All Services** > **Intune**. Intune is in the **Monitoring + Management** section.
+3. Select **Client Apps > Apps**.
+4. Find and select your app in the list of apps.
+5. In the **Overview** blade, select **Properties**.
+6. Select **App package file**.
+7. Select the folder icon and browse to the location of your updated app file. Select **Open**. The app information is updated with the package information.
+8. Verify that **App version** reflects the updated app package.
+
+<span id="roll-back-app-mmd" />
+
+## Roll back an app to a previous version
+
+If there's an error found when a new version of an app is deployed, you can roll back to a previous version. The process outlined here is temporary and has these requirement:
+- Must be done in [Microsoft Managed Desktop Admin portal](http://aka.ms/mmdportal)
+- Avaialable for apps where type is listed as **Windows MSI line-of-business app** or **Windows app (Win 32) - preview** 
+
+**To roll back a line-of-business app to a previous version**
+
+1. Sign in to [Microsoft Managed Desktop Admin portal](http://aka.ms/mmdportal).
+2. Under **Inventory**, select **Apps**.  
+3. Select the app you need to roll back, and then select **Edit**.
+4. Under **Manage**, select **Properties**. 
+    - For **Windows MSI line-of-business app** apps, select **App information**, and then under **Ignore app version**, select **Yes**.
+    - For **Windows app (Win 32) - preview** apps, **App information**, and then select **Detection rules**  
+
+<!--<span id="update-m365-apps" />
+
+## Updates for Microsoft Managed Desktop service apps
+For apps that are part of Microsoft 365 E5 and deployed to Microsoft Managed Desktop service . . . <link to >
+
+
+Microsoft Managed Desktop support provides support for Microsoft Authored Applications (for example, Office).--> 
