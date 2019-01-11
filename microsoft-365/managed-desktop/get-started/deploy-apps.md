@@ -19,9 +19,7 @@ The overall process looks like this:
 <span id="1" />
 
 ## Step 1: Add apps to Microsoft Managed Desktop portal
-You can add [Win32, or Windows MSI-based apps](#lob-apps) or [Microsoft Store for Business apps](#msfb-apps).  There are a couple of ways that you can source and add apps to Microsoft Managed Desktop, and then deploy them to Microsoft Managed Desktop devices.
--   - 
--  [Microsoft Store for Business apps](#msfb-apps)
+You can add [Win32, or Windows MSI-based apps](#lob-apps), or [Microsoft Store for Business apps](#msfb-apps) to Microsoft Managed Desktop, and then deploy them to Microsoft Managed Desktop devices.
 
 <span id="lob-apps">
 
@@ -39,8 +37,8 @@ You can sign in to Microsoft Managed Desktop portal, or sign in to Intune and th
 2.	Under **Inventory**, select **Apps**.
 3.	In the Apps workload, select **Add**.
 4.	In **Add app**, select **Line-of-business app** or **Windows app (Win32) - preview**.
-    - If you selected **Line-of-business app**, see [Add a Windows line-of-business app to Microsoft Intune] for instruction on adding and configuring line-of-business apps(https://docs.microsoft.com/intune/lob-apps-windows).
-    - If you selected **Windows app (Win32) - preview**, see [Win32 app management](https://docs.microsoft.com/intune/apps-win32-app-management)  for instruction on adding and configuring Windows apps.
+    - If you selected **Line-of-business app**, see [Add a Windows line-of-business app to Microsoft Intune](https://docs.microsoft.com/intune/lob-apps-windows) for instruction on adding and configuring line-of-business apps.
+    - If you selected **Windows app (Win32) - preview**, see [Win32 app management](https://docs.microsoft.com/intune/apps-win32-app-management) for instruction on adding and configuring Windows apps.
 
 <span id="msfb-apps">
 
