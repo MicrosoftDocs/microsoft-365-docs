@@ -19,7 +19,7 @@ This topic lists new and updated topics in the [Microsoft Managed Desktop docume
 New or changed topic | Description
 --- | ---
 [Deploy apps for Microsoft Managed Desktop devices](get-started/deploy-apps.md) | New topic.
-[Manage apps for Microsoft Managed Desktop](working-with-managed-desktop/manage-apps) | Updated with info on how to update or roll back to a previoius version of line-of-business apps. 
+[Manage apps for Microsoft Managed Desktop](working-with-managed-desktop/manage-apps.md) | Updated with info on how to update or roll back to a previoius version of line-of-business apps. 
 
 ## December 2018
 New or changed topic | Description
