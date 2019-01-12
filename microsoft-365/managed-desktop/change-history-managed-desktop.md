@@ -7,13 +7,19 @@ ms.sitesec: library
 author: trudyha
 ms.author: jdecker
 ms.topic: article
-ms.date: 12/18/2018
+ms.date: 01/01/2019
 ms.localizationpriority: normal
 ---
 
 # Change history for Microsoft Managed Desktop documentation
 
 This topic lists new and updated topics in the [Microsoft Managed Desktop documentation](index.yml).
+
+## January 2019
+New or changed topic | Description
+--- | ---
+[Deploy apps for Microsoft Managed Desktop devices](get-started/deploy-apps.md) | New topic.
+[Manage apps for Microsoft Managed Desktop](working-with-managed-desktop/manage-apps) | Updated with info on how to update or roll back to a previoius version of line-of-business apps. 
 
 ## December 2018
 New or changed topic | Description
