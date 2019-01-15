@@ -50,7 +50,7 @@ One of the key tenants of modern management practices is devices that are always
 
 Let’s start by taking a look at what has changed and improved since your last desktop deployment. If you haven’t shifted your desktop environment in a while you’re likely using Windows 7 and Office 2010 or Office 2013. If you are, you'll notice a few things have evolved since your last major upgrade. Here are some of the core changes:
 
-**Identity and Access Management** The modern desktop, with its connectivity to cloud productivity, security and management services, has, at its core, a new Identity and Access Management service: Azure Active Directory. This enables single sign-on and secure connectivity across your cloud services. That means you are going to need Azure AD in place. This will allow you take advantage of advantage of Microsoft 365 services such as Office 365, Intune, or Windows Autopilot.
+**Identity and Access Management** The modern desktop, with its connectivity to cloud productivity, security and management services, has, at its core, a new Identity and Access Management service: Azure Active Directory. This enables single sign-on and secure connectivity across your cloud services. That means you are going to need Azure AD in place. This will allow you take advantage of Microsoft 365 services such as Office 365, Intune, or Windows Autopilot.
 
 [Microsoft 365](https://www.microsoft.com/en-us/microsoft-365/default.aspx)
 
@@ -76,7 +76,7 @@ Click-to-Run quite different from the MSI-based packages of the past. Click-to-R
 
 ## The Deployment Process Wheel
 
-Before you get started, the you’ll want to create a high-level plan and get the necessary sponsors on board. Our deployment process wheel outlines critical steps to help you to identify core team members and resources to manage in the following deployment areas.
+Before you get started, you’ll want to create a high-level plan and get the necessary sponsors on board. Our deployment process wheel outlines critical steps to help you to identify core team members and resources to manage in the following deployment areas.
 
 **[Step 1: Device and App readiness](https://aka.ms/mdd1)** For a successful deployment you must first know what you have. That means taking an inventory of your devices and apps and verifying compatibility.
 
@@ -88,13 +88,13 @@ To help with this you can leverage the tools available in our cloud-based servic
 
 [BranchCache vs. Peer Cache](https://blogs.technet.microsoft.com/swisspfe/2018/01/25/branch-cache-vs-peer-cache/)
 
-**[Step 3: Office and Line of Business App Delivery](https://aka.ms/mdd3)** While Windows continues to support MSI-based installations it also now supports newer installations mechanisms, optimized for automated deployment and continuous updates. Office 365 ProPlus and Windows 2019 clients use Click-to-Run, you may want to make a range of UWP apps available, and you may increasingly find yourself deploying third-party apps and in-house developed Line of Business Apps that use the new MSIX-based packaging apps. This step ensures your apps are ready for automated deployments, and that you are set up for success whether your apps deploy using Click-to-Run, MSIX, conventional MSI-based, or are UWP apps deployed from a Microsoft Store from Business you set up.
+**[Step 3: Office and Line of Business App Delivery](https://aka.ms/mdd3)** While Windows continues to support MSI-based installations it also now supports newer installations mechanisms, optimized for automated deployment and continuous updates. Office 365 ProPlus and Office 2019 clients use Click-to-Run, you may want to make a range of UWP apps available, and you may increasingly find yourself deploying third-party apps and in-house developed Line of Business Apps that use the new MSIX-based packaging apps. This step ensures your apps are ready for automated deployments, and that you are set up for success whether your apps deploy using Click-to-Run, MSIX, conventional MSI-based, or are UWP apps deployed from a Microsoft Store from Business you set up.
 
 [MSIX Intro](https://blogs.msdn.microsoft.com/sgern/2018/06/15/msix-intro/)
 
 **[Step 4: User Files and Settings Migration](https://aka.ms/mdd4)** This is a critical step in any PC replacement or refresh cycle: you have to ensure users’ files, data and settings move successfully and are preserved over the migration. This step covers the options available for manual or automated migrations, including well-known and new options.
 
-As in previous upgrades, the User State Migration Tool continues to be a valuable tool to automate this process and it remains an integral part of migrations orchestrated using System Center Configuration Manager or the Microsoft Deployment Toolkit. But moving all this data at migration can be a timing bottleneck for PC replacement, due to the physics involved in transferring sometimes hundreds of gigabytes per PC twice – first from the existing desktop, then back down to the new desktop. A new option enabled by OneDrive is Known Folder Move is to sync user documents, pictures and desktop files, at scale, in the cloud, ahead of deployment.
+As in previous upgrades, the User State Migration Tool continues to be a valuable tool to automate this process and it remains an integral part of migrations orchestrated using System Center Configuration Manager or the Microsoft Deployment Toolkit. But moving all this data at migration can be a timing bottleneck for PC replacement, due to the physics involved in transferring sometimes hundreds of gigabytes per PC twice – first from the existing desktop, then back down to the new desktop. A new option enabled by OneDrive is Known Folder Move used to sync user documents, pictures, and desktop files at scale, in the cloud, and ahead of deployment.
 
 [Redirect and move Windows known folders to OneDrive](https://docs.microsoft.com/en-us/onedrive/redirect-known-folders)
 

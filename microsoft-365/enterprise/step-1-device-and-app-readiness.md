@@ -17,7 +17,7 @@ description: Learn how to assess device and app readiness in the environment.
 
 # Step 1: Device and App Readiness
 
-Begin your desktop deployment project with an inventory of your devices and apps, prioritize what you to move forward, test prioritized apps and devices, then remediate what’s needed to get ready for deployment.
+Begin your desktop deployment project with an inventory of your devices and apps, prioritize what you need to move forward, test prioritized apps and devices, then remediate what’s needed to get ready for deployment.
 
 ![](media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-1.png)
 
@@ -25,7 +25,7 @@ Begin your desktop deployment project with an inventory of your devices and apps
 <thead>
 <td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-3.png" alt="Step 1" height="130" width="130" /></td>
 <td><p><strong>Step 1: Device and App Readiness</strong></p>
-<p>Begin your desktop deployment project with an inventory of your devices and apps, prioritize what you to move forward, test prioritized apps and devices, then remediate what’s needed to get ready for deployment.</p></td>
+<p>Begin your desktop deployment project with an inventory of your devices and apps, prioritize what you need to move forward, test prioritized apps and devices, then remediate what’s needed to get ready for deployment.</p></td>
 <td><a href="https://aka.ms/ddev1" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-14.png" alt="Step 1" height="120" width="213" /></a></td>
 </thead>
 </table>
@@ -60,7 +60,7 @@ If you don’t currently have Windows Analytics set up for your environment or w
 
 ## Device and App Readiness Process
 
-Device and App Readiness compromises four steps: 1. Inventory, 2. Prioritize, 3. Test, 4. Remediate. Let’s look at each of these in turn.
+Device and App Readiness is comprised of four steps: 1. Inventory, 2. Prioritize, 3. Test, 4. Remediate. Let’s look at each of these in turn.
 
 ### 1\. Inventory
 
