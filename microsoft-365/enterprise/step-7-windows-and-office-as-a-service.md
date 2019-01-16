@@ -40,7 +40,7 @@ Both Windows 10 and Office 365 ProPlus introduce new servicing options, support 
 
 ## Update Types
 
-Updates fall into two main categories, feature updates and then quality and security updates which contain cumulative security, reliability and bug fixes. In terms of cadence both Windows and Office deliver a semi-annual channel which delivers new features twice per year around March and September while Quality and Security Updates occur Monthly. Additionally, unique to Office 365 Apps, we deliver Monthly Channel updates that are fully-supported and contain both new features and quality updates.
+Updates fall into two main categories, feature updates and then quality and security updates which contain cumulative security, reliability and bug fixes. In terms of cadence both Windows and Office deliver a semi-annual channel which delivers new features twice per year around March and September while quality and security Updates occur Monthly. Additionally, unique to Office 365 applications, we offer a fully-supported Monthly Channel option where updates contain both new features and quality updates.
 
 If you’re used to a longer cycle between desktop OS and app updates, you might be wondering;
 
@@ -81,6 +81,26 @@ We've also thought through how to make the deployment of updates seamless to you
 [Deploy Windows 10 updates using System Center Configuration Manager](https://docs.microsoft.com/en-us/windows/deployment/update/waas-manage-updates-configuration-manager)
 
 [Manage Office 365 ProPlus with Configuration Manager](https://docs.microsoft.com/en-us/sccm/sum/deploy-use/manage-office-365-proplus-updates)
+
+## Overview of Windows and Office Channels
+
+Windows 10 offers three servicing channels:
+
+- [**Windows Insider Program**](https://docs.microsoft.com/en-us/windows/deployment/update/waas-overview#windows-insider) for organizations to test and provide feedback on features shipped in the next feature update
+- **Semi-Annual Channel** provides new functionality with Feature Update releases twice per year
+- **Long Term Servicing Channel** is designed only for specialized devices needing a longer servicing option
+
+Office 365 offers four servicing channels:
+
+- [**Office Insider Program**](https://support.office.com/en-us/article/What-is-Office-Insider-f4208185-b63a-4b68-9c7a-9a32d2411c16) for organizations to test and provide feedback on the newest Office features and functionalities still in development
+- **Monthly Channel** to provide users with the newest Office features as soon as they're available
+- **Semi-Annual Channel** provides new functionality with new features only twice per year
+- **Semi-Annual Channel (Targeted)** is a fully supported build of Office that enables pilot users and application compatibility testers to test and validate the next Semi-Annual Channel
+
+For detailed information about Windows and Office servicing channels please review the below documentation:
+
+- [Overview of Windows as a Service](https://docs.microsoft.com/en-us/windows/deployment/update/waas-overview#servicing-channels)
+- [Overview of Update Channels for Office 365 ProPlus](https://docs.microsoft.com/en-us/DeployOffice/overview-of-update-channels-for-office-365-proplus#BKMK_SAC)
 
 ## Phased Deployment of Updates
 
