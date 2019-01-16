@@ -17,6 +17,9 @@ ms.date: 01/09/2019
 
 Microsoft Managed Desktop connects all devices to a modern cloud-based infrastructure. Keeping Windows, Office, drivers, firmware, and Microsoft Store for Business application updates up to date is a balance of speed and stability. Deployment rings will be used to ensure OS and policies are rolled out in a safe manner. 
 
+Updates released by Microsoft are cumulative and may be categorized as quality or feature updates.
+For more information, see [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq). 
+
 ## Update groups
 
 Microsoft Managed Desktop uses four Azure AD groups to manage updates:
@@ -26,8 +29,7 @@ Microsoft Managed Desktop uses four Azure AD groups to manage updates:
 - Fast: Prioritizes speed over stability. Useful for detecting quality issues before they are offered to the Broad group. 
 - Broad: Last group to have feature and quality updates available. This group contains the majority of users in the tenant, and therefore favors stability over speed in deployment.
 
-Updates released by Microsoft are cumulative and may be categorized as quality or feature updates.
-For more information, see [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq). 
+For more information roles and responsibilities with these deployment groups, see [Microsoft Managed Desktop Roles and responsibilities](../intro/roles-and-responsibilities.md)
 
 How update deployment works:
 - Microsoft Managed Desktop deploys a new feature or quality update according the schedule specified below.
@@ -53,7 +55,7 @@ These deferral periods are intentionally designed to ensure high security and pe
 
 Microsoft Managed Desktop does not support devices that are part of the Windows Insider program. The Windows Insider program is used to validate pre-release Windows software and is intended for non-mission critical devices. While this is an important Microsoft initiative, it is not intended for broad deployment in production environments. 
 
-Any devices found with Windows Insider builds will be put into the Test group and not be included for update service level agreements (SLAs.
+Any devices found with Windows Insider builds will be put into the Test group and not be included for update service level agreements (SLAs).
 
 ## Bandwidth management
 
