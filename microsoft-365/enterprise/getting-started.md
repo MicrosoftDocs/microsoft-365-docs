@@ -17,7 +17,7 @@ description: Introduction to the Modern Desktop Deployment Process.
 
 # Getting Started - Modern Desktop Deployment
 
-![](media/getting-started-media/getting-started-media-1.png)
+![](media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-1.png)
 
 <table>
 <thead>
