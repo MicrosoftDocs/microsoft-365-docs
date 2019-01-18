@@ -5,7 +5,7 @@ keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation, apps
 ms.service: m365-md
 author: trudyha
 ms.localizationpriority: normal
-ms.date: 01/11/2019
+ms.date: 01/17/2019
 ---
 
 # Deploy apps to Microsoft Managed Desktop devices
@@ -47,21 +47,28 @@ If you haven't signed up with Microsoft Store for Business, you can sign up when
 
 **To buy apps from the Microsoft Store for Business**
 
-1.	Sign in to [Microsoft Store for Business](https://businessstore.microsoft.com) with your Microsoft Store for Business Admin account.
-2.	Select **Shop for my group**.
-3.	Use Search to find that the app that you want, and select the app.
-4.	On the product details, select **Get the App**. 
+1. Sign in to [Microsoft Store for Business](https://businessstore.microsoft.com) with your Microsoft Store for Business Admin account.
+2. Select **Shop for my group**.
+3. Use Search to find that the app that you want, and select the app.
+4. On the product details, select **Get the App**. 
 Microsoft Store adds the app to **Products & services** for your organization.
 
 **To force a sync between Intune and Microsoft Store for Business**
-1.	Sign in to [Azure Portal](https://portal.azure.com/) as Intune Admin or Global Admin for your tenant
-2.	Select **All services > Intune**. 
+1. Sign in to [Azure Portal](https://portal.azure.com/) as Intune Admin or Global Admin for your tenant
+2. Select **All services > Intune**. 
 Intune is in the Monitoring + Management section.
-3.	In the Intune pane, select **Client Apps**, and then select **Microsoft Store for Business**.
-4.	If needed, select **Enable** to sync your Microsoft Store for Business apps with Intune.
-    - If needed, sign up and associate your Microsoft Store for Business account with Intune
+3. In the Intune pane, select **Client Apps**, and then select **Microsoft Store for Business**.
+4. Select **Enable** to sync your Microsoft Store for Business apps with Intune.
+    - If you haven't already, sign up and associate your Microsoft Store for Business account with Intune
     - Select the language in which apps from the Microsoft Store for Business will be displayed in your Intune console
     - Select **Sync** to sync your Microsoft Store for Business apps with Intune.
+    - Verify that the sync between Microsoft Store for Business and Intune is active (next step). 
+
+**To verify that a sync between Intune and Microsoft Store for Business is active**
+1. Sign in to [Microsoft Store for Business](https://businessstore.microsoft.com) with your Microsoft Store for Business Admin account.
+2. Select **Manage**.
+3. Select **Settings** and then select **Distribute**.
+4. Under **Management tools**, verify that Intune is listed and that the status is **Active**.  
 
 <span id="2" />
 
@@ -71,7 +78,7 @@ Create three Azure AD groups for each app. This table outlines the groups you'll
 
 App assignment type |	Group use	| Example Azure AD name
 --- | --- | ---
-Available |  The app will be available from Company Portal app or website, or Microsoft Store for Business. | MMD – *app name* – Available
+Available |  The app will be available from Company Portal app or website. | MMD – *app name* – Available
 Required |  The app is installed on devices in the selected groups. | MMD – *app name* – Required
 Uninstall |  TThe app is uninstalled from devices in the selected groups. | MMD – *app name* – Uninstall
 

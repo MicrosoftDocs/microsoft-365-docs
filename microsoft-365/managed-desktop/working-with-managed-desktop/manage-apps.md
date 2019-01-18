@@ -5,7 +5,7 @@ keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: trudyha
 ms.localizationpriority: normal
-ms.date: 01/11/2019
+ms.date: 01/18/2019
 ---
 
 # Manage line-of-business apps in Microsoft Managed Desktop
@@ -23,7 +23,10 @@ There are a couple of ways to manage app updates for apps that you've onboarded 
 2. Under **Inventory**, select **Apps**.  
 3. Select the app you want to updates, and then select **Edit**.
 4. Under **Manage**, select **Properties**. 
-5. Click **App package file**, and then browse to upload a new app package file. 
+5. Click **App package file**, and then browse to upload a new app package file.
+6. Select **App package file**.
+7. Select the folder icon and browse to the location of your updated app file. Select **Open**. The app information is updated with the package information.
+8. Verify that **App version** reflects the updated app package. 
 
 The updated app will be deployed to your user's devices.
 
@@ -45,9 +48,7 @@ The updated app will be deployed to your user's devices.
 
 ## Roll back an app to a previous version
 
-If there's an error found when a new version of an app is deployed, you can roll back to a previous version. The process outlined here is temporary and has these requirement:
-- Must be done in [Microsoft Managed Desktop Admin portal](http://aka.ms/mmdportal)
-- Available for apps where type is listed as **Windows MSI line-of-business app** or **Windows app (Win 32) - preview** 
+If there's an error found when a new version of an app is deployed, you can roll back to a previous version. The process outlined here is for apps where type is listed as **Windows MSI line-of-business app** or **Windows app (Win 32) - preview**
 
 **To roll back a line-of-business app to a previous version**
 
@@ -56,6 +57,7 @@ If there's an error found when a new version of an app is deployed, you can roll
 3. Select the app you need to roll back, and then select **Edit**.
 4. Under **Manage**, select **Properties**. 
     - For **Windows MSI line-of-business app** apps, select **App information**, and then under **Ignore app version**, select **Yes**.
-    - For **Windows app (Win 32) - preview** apps, select **App information**, select **Detection rules**, and then select **Add**. Verify that for the MSI rule, **MSI product version check** is set to **No**.
+    - For **Windows app (Win 32) - preview** apps, select **App information**, select **Detection rules**, and then select **Add**. 
+    If there is an MSI rule, verify that **MSI product version check** is set to **No**.
 5. [Upload a previous version of the app source file](../get-started/deploy-apps.md) to Microsoft Managed Desktop Admin portal.  
 
