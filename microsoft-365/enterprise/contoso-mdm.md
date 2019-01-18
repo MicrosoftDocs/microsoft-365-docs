@@ -44,7 +44,7 @@ This is how Contoso set up their mobile device management infrastructure:
 - Set Intune as the Mobile Device Management (MDM) authority and are using Intune on Azure to administer content and manage the devices
 - Created Azure AD groups for devices for enrollment and Intune settings and device-based conditional access policies
 
-  See [Contoso's conditional access policies](contoso-identity.md#conditional-access-policies-for-identity) for more information.
+  See [Contoso's conditional access policies](contoso-identity.md#conditional-access-policies-for-identity-and-device-access) for more information.
 
 - Enabled the Apple device platform to support employees with iPads, iMacs, iPhones, and for iPhone-based corporate-owned phones
 - Created Contoso-specific terms and conditions policies, which are seen during the installation of the Company Portal for Contoso on mobile devices
