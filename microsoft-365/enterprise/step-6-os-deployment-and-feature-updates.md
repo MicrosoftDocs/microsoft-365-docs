@@ -126,7 +126,7 @@ For more detailed information on Windows Update for Business please review the f
 
 ## Next Step 
 
-## [Step 7: Windows and Office as a Service](https://aka.ms/mdd7)
+## [Step 7: Windows and Office Servicing](https://aka.ms/mdd7)
 
 ## Previous Step
 
