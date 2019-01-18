@@ -15,18 +15,25 @@ ms.date: 09/24/2018
 
 ## Proxy configuration
 
-Microsoft Managed Desktop is a cloud-managed service. There is a set of endpoints that the Microsoft Managed Desktop services needs to be able to reach. When customers set up a proxy or firewall, they only allow network traffic from specific domains for security reasons. This section lists the endpoints that need to be allowed. 
+Microsoft Managed Desktop is a cloud-managed service. There are a set of endpoints the Microsoft Managed Desktop services needs to be able to reach. This section lists the endpoints that need to be allowed for the various aspects of the Microsoft Managed Desktop service. 
+
+Customers can optimize their network by sending all trusted Microsoft 365 network requests directly through their firewall/proxy, bypassing authentication and all additional packet level inspection or processing. This reduces latency and your perimeter capacity requirements. 
+
+Also, to optimize performance to Microsoft Managed Desktop cloud-based services, these endpoints need special handling by customer client browsers and the devices in their edge network. These devices include firewalls, SSL Break and Inspect, packet inspection devices, and data loss prevention systems.
 
 ### Proxy requirement
 
-The proxy or firewall must support TLS 1.2. Otherwise, you may have to disable protocol detection.
+The proxy or firewall must support TLS 1.2. Otherwise, customers may have to disable protocol detection.
 
 ### Endpoints allowed - specific for Microsoft Managed Desktop
 
-These URLs needs to be in the allowed list so that Microsoft Managed Desktop devices can communicate with Microsoft Services.
+Microsoft Managed Desktop uses the Azure Portal to host its web console. The following URLs in the table below need to be on the allowed list of your proxy and firewall so that Microsoft Managed Desktop devices can communicate with Microsoft Services.  
+
+Note that the Microsoft Managed Desktop URL below is used for anything our service runs on the customer API. Customers must ensure this URL is always accessible on their corporate network.
 
 Microsoft service  | URLs required on allow list 
 --- | --- | ---
+Microsoft Managed Desktop | prod-mwaas-services-customerapi.azurewebsites.net
 Get Help | \*.support.services.microsoft.com  <br>inprod.support.services.microsoft.com  <br>supportchannels.services.microsoft.com  <br>graph.windows.net  <br>login.windows.net  <br>prod-mwaas-services-customerapi.azurewebsites.net
 Quick Assist | remoteassistance.support.services.microsoft.com <br>relay.support.services.microsoft.com <br>channelwebsdks.azureedge.net  <br>web.vortex.data.microsoft.com  <br>gateway.channelservices.microsoft.com <br>\*.lync.com
 Microsoft Support and Recovery Assistant for Office 365 | \*.apibasic.diagnostics.office.com  <br>\*.api.diagnostics.office.com
@@ -38,16 +45,13 @@ There are URLs from several Microsoft products that need to be in the allowed li
 
 Microsoft service | Documentation source - URLs required on allow list
 --- | ---
-Windows Update for Business (WUfB) | [Windows Update for Business firewall and proxy requirements](https://support.microsoft.com/help/3084568/can-t-download-updates-from-windows-update-from-behind-a-firewall-or-p)
-Delivery Optimization | [Windows Update proxy requirements](https://support.microsoft.com/help/3175743/proxy-requirements-for-windows-update)
-Microsoft Store for Business | [Microsoft Store allow list](https://support.microsoft.com/help/2778122/using-authenticated-proxy-servers-together-with-windows-8)
+Windows 10 Enterprise including Windows Update for Business | [Manage connection endpoints for Windows 10, version 1803](https://docs.microsoft.com/windows/privacy/manage-windows-1803-endpoints)<br><br>[Manage connection endpoints for Windows 10, version 1809](https://docs.microsoft.com/windows/privacy/manage-windows-1809-endpoints)
+Delivery Optimization | [Configure Delivery Optimization for Windows 10 updates](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)
 Office 365 | [Office 365 URL and IP address ranges](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
-Azure Active Directory | [Hybrid identity required ports and protocols](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-ports) and [Active Directory and Active Directory Domain Services Port Requirements](https://aka.ms/AA26ygm) 
+Azure Active Directory | [Hybrid identity required ports and protocols](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-ports) and [Active Directory and Active Directory Domain Services Port Requirements](https://aka.ms/AA26ygm) 
 Microsoft Intune | [Intune network configuration requirements](https://docs.microsoft.com/intune/network-bandwidth-use)
-OneDrive for Business <br> | [Required URLs and ports for OneDrive](https://docs.microsoft.com/onedrive/required-urls-and-ports)
-Windows Defender Advanced Threat Protection (ATP) | [Windows Defender ATP endpoints](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/configure-server-endpoints-windows-defender-advanced-threat-protection)
-SharePoint Online  | [Microsoft Teams](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#bkmk_teams)
-Power BI | [OneNote](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
+Windows Defender Advanced Threat Protection (ATP) | [Windows Defender ATP endpoints](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection#enable-access-to-windows-defender-atp-service-urls-in-the-proxy-server
+)
 
 <!---
 Microsoft service  | URLs required on allow list | Documentation source

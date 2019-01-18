@@ -91,7 +91,7 @@
 ## [Step 4: User Files and Settings Migration](step-4-user-files-and-settings-migration.md)
 ## [Step 5: Security and Compliance Considerations](step-5-security-and-compliance.md)
 ## [Step 6: OS Deployment and Feature Updates](step-6-os-deployment-and-feature-updates.md)
-## [Step 7: Windows and Office as a Service](step-7-windows-and-office-as-a-service.md)
+## [Step 7: Windows and Office Servicing](step-7-windows-and-office-as-a-service.md)
 ## [Step 8: User Communications and Training](step-8-user-communications-and-training.md)
 ## [Modern Desktop Deployment and Management Lab Kit](modern-desktop-deployment-and-management-lab.md)
 ## [Find help for your deployment](find-help-for-modern-desktop-deployment.md)
