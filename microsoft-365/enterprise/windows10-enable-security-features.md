@@ -15,12 +15,12 @@ ms.author: greglin
 
 ![](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
 
-Windows 10 provides features to help protect against threats, help you secure your devices, and help with access control. 
+Windows 10 provides security features to protect enterprise users, stop cyberthreats, and prevent data loss. 
 
 To learn more about these technologies, see:
-* [Access protection](https://docs.microsoft.com/windows/access-protection/) - Learn about access control, S/MIME, digital certificates, Credential Guard, User Account Control, virtual smart cards, Windows Hello for Business, Windows Firewall with Advanced Security, and more
-* [Device security](https://docs.microsoft.com/windows/device-security/) - Includes AppLocker, BitLocker, Device Guard, and Trusted Platform Module
-* [Threat protection](https://docs.microsoft.com/windows/threat-protection/) - Includes Windows Defender Security Center, Windows Defender Advanced Threat Protection, Windows Defender Antivirus, Windows Defender Application Guard, Windows Defender Smart Screen, and Windows Information Protection
+* [Identity protection](https://docs.microsoft.com/windows/security/identity-protection/) - Learn about Windows Hello for Business, Credential Guard, and access control.
+* [Threat protection](https://docs.microsoft.com/windows/threat-protection/) - Learn about Windows Defender Advanced Threat Protection, a unified platform for preventative protection, post-breach detection, automated investigation, and response.
+* [Information protection](https://docs.microsoft.com/windows/security/information-protection/) - Learn about BitLocker, Windows Information Protection, and other ways that Windows 10 helps protect enterprise data. 
 
 This step shows you how you can deploy, manage, configure, and troubleshoot using these security features:
 
