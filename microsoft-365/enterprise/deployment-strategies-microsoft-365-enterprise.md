@@ -49,7 +49,7 @@ This article uses the following graphics to depict these definitions:
 
 ![](./media/deployment-strategies-microsoft-365-enterprise/definitions.png) 
 
-The shading for the user rollout graphic across your organization from 0% to 100% using a structured or methodical approach such as groups, departments, or regions.
+The shading for the user rollout graphic indicates the rollout across your organization from 0% to 100% using a structured or methodical approach such as groups, departments, or regions.
 
 ## Deployment strategies
 
@@ -70,7 +70,7 @@ With a serial deployment, you completely roll out a phase, allowing the phase to
 - IT technology dependencies
 - Business change management and end-user resistance
 
-This Gantt chart depicts a serial deployment of phases 2-6 of the foundation infrastructure for Microsoft 365 Enterprise.
+This Gantt chart shows a simplified serial deployment of phases 2-6 of the foundation infrastructure for Microsoft 365 Enterprise.
 
 ![](./media/deployment-strategies-microsoft-365-enterprise/serial.png) 
  
@@ -107,7 +107,7 @@ The disadvantage to this deployment strategy is that it can take a long time to 
 For this deployment strategy, you start the pilot rollout of the next phase during the last part of the user rollout of the current phase.
 Here is the deployment of phases 2-6 when the pilot rollout occurs as the user rollout of the previous phase is wrapping up.
 
-This figure shows the comparative timeline.
+Here is a simplified comparison between parallel and serial deployment strategies.
 
 ![](./media/deployment-strategies-microsoft-365-enterprise/parallel1.png) 
  
@@ -142,7 +142,7 @@ For this deployment strategy, you start the:
 - Pilot rollout of the next phase during the last part of the user rollout of the current phase.
 - User rollout of the next phase during the user rollout of the current phase in such a way that no user is dealing with the rollouts of multiple phases at the same time. This assumes that you are rolling out each phase of the foundation infrastructure in the same way, via regions, departments, or other.
 
-This figure shows the comparative timeline.
+Here is a simplified comparison between the different deployment strategies.
 
 ![](./media/deployment-strategies-microsoft-365-enterprise/parallel2.png) 
 
