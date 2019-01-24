@@ -77,6 +77,11 @@ When you are ready to rollout elements of this infrastructure to users, you:
 
 Once the foundation infrastructure is completed, tested, and piloted, you can roll out installed software, such as Windows 10 Enterprise and Office 365 ProPlus, and cloud-based services and protections, such as device enrollment and conditional access policies, to your users in the manner that best fits your business goals and IT resources.
 
+## Deployment and project management strategies
+
+To give you some ideas on how to approach the project management of the different phases of the foundation infrastructure for pilot users and the rest of your organization, see [deployment strategies](deployment-strategies-microsoft-365-enterprise.md).
+
+
 ## Next step
 
 - I have existing infrastructure for Office 365, Enterprise Mobility + Security, or Windows 10 Enterprise:
