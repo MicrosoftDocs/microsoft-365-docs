@@ -1,5 +1,5 @@
 ﻿---
-title: Step 7 - Windows and Office as a Service
+title: Step 7 - Windows and Office Servicing
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
@@ -12,10 +12,10 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom: 
-description: Learn how to prepare for Windows and Office as a Service in your environment.
+description: Learn how to prepare for Windows and Office servicing in your environment.
 ---
 
-# Step 7: Windows and Office as a Service
+# Step 7: Windows and Office Servicing
 
 Prepare for semi-annual channel updates with new features and capabilities in Windows 10 and Office 365 ProPlus along with corresponding updates to management tools with System Center Configuration Manager Current Branch.
 
@@ -24,14 +24,14 @@ Prepare for semi-annual channel updates with new features and capabilities in Wi
 <table>
 <thead>
 <td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-10.png" alt="Step 7" height="144" width="144" /></td>
-<td><p><strong>Step 7: Preparing for Windows and Office as a Service</strong></p>
+<td><p><strong>Step 7: Windows and Office Servicing</strong></p>
 <p>Both Windows 10 and Office 365 ProPlus continually add new capabilities to keep bringing user experiences and security forward with the latest innovations. Learn how to stay current with semi-annual and monthly updates, how the new servicing model works and the tools and options you have.</p></td>
 <td><a href="https://aka.ms/ddev7" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-20.png" alt="Step 7" height="130" width="231" /></a></td>
 </thead>
 </table>
 
 >[!NOTE]
->Windows and Office as a Service is the seventh step in our recommended deployment process wheel covering the planning aspects of preparing for semi-annual updates to features. To see the full desktop deployment process, visit the [Modern Desktop Deployment Center](https://aka.ms/HowToShift).
+>Windows and Office Servicing is the seventh step in our recommended deployment process wheel covering the planning aspects of preparing for semi-annual updates to features. To see the full desktop deployment process, visit the [Modern Desktop Deployment Center](https://aka.ms/HowToShift).
 >
 
 Both Windows 10 and Office 365 ProPlus introduce new servicing options, support models and update timelines. These changes simplify the process for staying current on the latest features. Along with these updates are new configuration options to enable servicing plans that meet your needs.
@@ -40,7 +40,7 @@ Both Windows 10 and Office 365 ProPlus introduce new servicing options, support 
 
 ## Update Types
 
-Updates fall into two main categories, feature updates and then quality and security updates which contain cumulative security, reliability and bug fixes. In terms of cadence both Windows and Office deliver a semi-annual channel which delivers new features twice per year around March and September while Quality and Security Updates occur Monthly. Additionally, unique to Office 365 Apps, we deliver Monthly Channel updates that are fully-supported and contain both new features and quality updates.
+Updates fall into two main categories, feature updates and then quality and security updates which contain cumulative security, reliability and bug fixes. In terms of cadence both Windows and Office deliver a semi-annual channel which delivers new features twice per year around March and September while quality and security Updates occur Monthly. Additionally, unique to Office 365 applications, we offer a fully-supported Monthly Channel option where updates contain both new features and quality updates.
 
 If you’re used to a longer cycle between desktop OS and app updates, you might be wondering;
 
@@ -66,8 +66,6 @@ Second delivering quality and security updates as a cumulative update package co
 
 With the cumulative model, you’re always one update away from being current and in doing so the number of monthly updates that you need to deploy is reduced. Each update builds upon updates from previous months and contains all of the fixes that you need to get current. Cumulative updates are especially helpful when PCs has been turned off for several months because they are in storage waiting to be reassigned to a different user.
 
-[Overivew of Windows as a service](https://docs.microsoft.com/en-us/windows/deployment/update/waas-overview)
-
 ### Expanded Validation of Updates
 
 Another advantage is that, before we roll out updates for broad deployment, we first release builds via the Insider programs for [Office](https://products.office.com/en-us/office-insider?tab=Windows-Desktop) and [Windows](https://insider.windows.com/en-us/), and this allows us to gather telemetry and feedback ahead of us releasing updates broadly. Now the Insider programs are open to everyone so that you can get ahead of understanding the updates. By the time we release updates we will have received telemetry from millions of configurations, so when we do roll out updates, quality is now inherently more predictable
@@ -81,6 +79,26 @@ We've also thought through how to make the deployment of updates seamless to you
 [Deploy Windows 10 updates using System Center Configuration Manager](https://docs.microsoft.com/en-us/windows/deployment/update/waas-manage-updates-configuration-manager)
 
 [Manage Office 365 ProPlus with Configuration Manager](https://docs.microsoft.com/en-us/sccm/sum/deploy-use/manage-office-365-proplus-updates)
+
+## Overview of Windows and Office Channels
+
+Windows 10 offers three servicing channels:
+
+- [**Windows Insider Program**](https://docs.microsoft.com/en-us/windows/deployment/update/waas-overview#windows-insider) for organizations to test and provide feedback on features shipped in the next feature update
+- **Semi-Annual Channel** provides new functionality with Feature Update releases twice per year
+- **Long Term Servicing Channel** is designed only for specialized devices needing a longer servicing option
+
+Office 365 offers four servicing channels:
+
+- [**Office Insider Program**](https://support.office.com/en-us/article/What-is-Office-Insider-f4208185-b63a-4b68-9c7a-9a32d2411c16) for organizations to test and provide feedback on the newest Office features and functionalities still in development
+- **Monthly Channel** to provide users with the newest Office features as soon as they're available
+- **Semi-Annual Channel** provides new functionality with new features only twice per year
+- **Semi-Annual Channel (Targeted)** is a fully supported build of Office that enables pilot users and application compatibility testers to test and validate the next Semi-Annual Channel
+
+For detailed information about Windows and Office servicing channels please review the below documentation:
+
+- [Overview of Windows as a Service](https://docs.microsoft.com/en-us/windows/deployment/update/waas-overview#servicing-channels)
+- [Overview of Update Channels for Office 365 ProPlus](https://docs.microsoft.com/en-us/DeployOffice/overview-of-update-channels-for-office-365-proplus#BKMK_SAC)
 
 ## Phased Deployment of Updates
 

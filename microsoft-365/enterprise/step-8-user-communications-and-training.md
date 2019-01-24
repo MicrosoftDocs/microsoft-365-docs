@@ -128,4 +128,4 @@ New technology acceptance and adoption will go on long after every PC in your or
 
 ## Previous Step 
 
-## [Step 7: Windows and Office as a Service](https://aka.ms/mdd7)
+## [Step 7: Windows and Office Servicing](https://aka.ms/mdd7)
