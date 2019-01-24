@@ -57,13 +57,13 @@ Next, they configured additional restrictions for the site.
 
 For the configuration details, see [Deploy an isolated SharePoint Online team site](https://docs.microsoft.com/office365/enterprise/deploy-an-isolated-sharepoint-online-team-site).
 
-## Step 3: Configured the site for a restrictive Office 365 label DLP policy
+## Step 3: Configured the site for a restrictive DLP policy
 
-First, Contoso admins applied the **Highly Confidential** Office 365 label to the **Research** site.
+First, Contoso admins applied the **Highly Confidential** Office 365 retention label to the **Research** site.
 
 Next, they created a new Office 365 DLP policy named **Research** that:
 
-- Uses the **Highly Confidential** Office 365 label. 
+- Uses the **Highly Confidential** Office 365 retention label. 
 - Is applied to the **Research** site.
 - Prevents users from sharing documents.
 
