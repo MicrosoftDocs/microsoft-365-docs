@@ -102,7 +102,7 @@ The result is a 90-day cadence between successive user rollouts.
 
 The disadvantage to this deployment strategy is that it can take a long time to fully deploy the Microsoft 365 Enterprise foundation infrastructure.
 
-### Parallel deployment with non-overlapping user rollout (parallel 1)
+### Parallel deployment with non-overlapping user rollout (Parallel 1)
 
 For this deployment strategy, you start the pilot rollout of the next phase during the last part of the user rollout of the current phase.
 Here is the deployment of phases 2-6 when the pilot rollout occurs as the user rollout of the previous phase is wrapping up.
@@ -135,7 +135,7 @@ The result is a 60-day cadence between successive user rollouts.
 
 The advantage to this deployment strategy is that it can take less time to fully deploy the Microsoft 365 Enterprise foundation infrastructure, without having your IT department and users deal with multiple rollouts the same time.
 
-### Parallel deployment with overlapping user rollout
+### Parallel deployment with overlapping user rollout (Parallel 2)
 
 For this deployment strategy, you start the:
 
