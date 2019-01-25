@@ -41,7 +41,7 @@ Microsoft Support and Recovery Assistant for Office 365 | \*.apibasic.diagnostic
 
 ### Endpoints allowed - other Microsoft products
 
-There are URLs from several Microsoft products that need to be in the allowed list so that Microsoft Managed Desktop devices can communicate with those Microsoft Services. Use the links to to see the complete list for each product. 
+There are URLs from several Microsoft products that need to be in the allowed list so that Microsoft Managed Desktop devices can communicate with those Microsoft Services. Use the links to see the complete list for each product. 
 
 Microsoft service | Documentation source - URLs required on allow list
 --- | ---

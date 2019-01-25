@@ -43,6 +43,7 @@
 #### [Step 3: Configure increased security for Office 365](infoprotect-configure-increased-security-office-365.md)
 #### [Step 4: Configure privileged access management for Office 365](infoprotect-configure-privileged-access-management.md)
 #### [Information protection exit criteria](infoprotect-exit-criteria.md)
+### [Deployment strategies](deployment-strategies-microsoft-365-enterprise.md)
 ### [Deploy with existing infrastructure](deploy-with-existing-infrastructure.md)
 ## [Deploy workloads and scenarios](deploy-workloads.md)
 ### [Microsoft Teams](teams-workload.md)
