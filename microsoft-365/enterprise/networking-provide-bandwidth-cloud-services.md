@@ -23,9 +23,9 @@ description: Understand the need for Internet bandwidth for Microsoft 365 Enterp
 
 In Step 1, you must:
 
-- Evaluate and adjust network bandwidth for internal links and Internet connections to account for traffic to Microsoft 365 Enterprise cloud services
-- Align your network with an [Office 365 reference architecture](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#BKMK_P2)
-- Plan the changes, pilot them, and then test whether the changes fit your bandwidth and traffic latency requirements
+- Evaluate and adjust network bandwidth for internal links and Internet connections to account for traffic to Microsoft 365 Enterprise cloud services.
+- Align your network with an [Office 365 reference architecture](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#BKMK_P2).
+- Plan the changes, pilot them, and then test whether the changes fit your bandwidth and traffic latency requirements.
 
 As an interim checkpoint, you can see the [exit criteria](networking-exit-criteria.md#crit-networking-step1) corresponding to this step.
 

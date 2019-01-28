@@ -58,7 +58,7 @@ In accordance with security best practices and Microsoft 365 Enterprise deployme
 
   Contoso's security administrators have assigned lesser admin roles to accounts that are appropriate to that IT person's job function and responsibility.
 
-  For more information, see [About Office 365 admin roles](https://support.office.com/article/about-office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d).
+  For more information, see [About Office 365 admin roles](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles).
 
 - MFA for all user accounts
 

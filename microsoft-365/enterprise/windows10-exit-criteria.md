@@ -50,8 +50,8 @@ If needed, [Step 1](windows10-prepare-your-org.md) can help you with this option
 To start a Configuration Manager task sequence to do an in-place upgrade on a device running Windows 7 or Windows 8.1, you must have:
 
 - Set the proper Windows diagnostics data level
-- Verify the readiness to upgrade Windows
-- Create a Configuration Manager task sequence that includes a device collection and an operating system deployment with a Windows 10 OS image
+- Verified the readiness to upgrade Windows
+- Created a Configuration Manager task sequence that includes a device collection and an operating system deployment with a Windows 10 OS image
 
 Once this is in place, you can perform in-place upgrades on devices that are ready to upgrade Windows. To get the maximum benefit out of Microsoft 365 Enterprise, upgrade as many devices running Windows 7 and Windows 8.1 as you can. 
 
@@ -64,13 +64,13 @@ If needed, [Step 2](windows10-deploy-inplaceupgrade.md) can help you with this r
 
 To use Windows Autopilot to deploy and customize Windows 10 Enterprise on a new device, you must have:
 
-- Set the proper Windows diagnostics data level
-- Completed the prerequisites for Windows Autopilot, which include:
-- Device registration and OOBE customization
-- Company branding for OOBE
-- MDM auto-enrollment in Microsoft Intune
-- Network connectivity to cloud services used by Windows Autopilot
-- Devices must be pre-installed with Windows 10, version 1703 or later
+- Configured the proper Windows diagnostics data level
+- Configured the prerequisites for Windows Autopilot, which include:
+   - Device registration and OOBE customization
+   - Company branding for OOBE
+   - MDM auto-enrollment in Microsoft Intune
+   - Network connectivity to cloud services used by Windows Autopilot
+- Devices that are pre-installed with Windows 10, version 1703 or later
 - Selected the Windows Autopilot Deployment Program for your organization
 
 Once the Windows Autopilot configuration is in place, you can use it to configure and customize Windows 10 Enterprise for the out-of-the-box experience (OOBE) for:
@@ -113,6 +113,9 @@ You deployed Windows Defender Advanced Threat Protection (ATP) to detect, invest
 Optionally, you have integrated Windows Defender ATP with other tools to expand its capabilities.
 
 If needed, [Step 5](windows10-enable-security-features.md#windows10-sec-atp) can help you with this requirement.
+
+## Updates for Windows 10 Enterprise
+
 
 
 ## Next phase

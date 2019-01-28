@@ -3,7 +3,7 @@ title: "Data classification for your Microsoft 365 Enterprise test environment"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/16/2018
+ms.date: 12/16/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -16,7 +16,7 @@ description: Use this Test Lab Guide to create and use Office 365 labels on docu
 
 # Data classification for your Microsoft 365 Enterprise test environment
 
-With the instructions in this article, you configure data classification using Office 365 labels in your Microsoft 365 Enterprise test environment.
+With the instructions in this article, you configure data classification using Office 365 retention labels in your Microsoft 365 Enterprise test environment.
 
 ![Test Lab Guides for the Microsoft cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
@@ -34,7 +34,7 @@ If you want to configure Office 365 labels in a simulated enterprise, follow the
 
 ## Phase 2: Create Office 365 labels
 
-In this phase, you create the labels for the different levels of security for SharePoint Online documents folders.
+In this phase, you create the labels for the different levels of retention for SharePoint Online documents folders.
   
 1. If needed, use a private instance of your Internet browser and sign in to the Office portal with your global administrator account. For help, see [Where to sign in to Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
@@ -42,9 +42,9 @@ In this phase, you create the labels for the different levels of security for Sh
     
 3. From the new **Office Admin center** tab of your browser, click **Admin centers > Security &amp; Compliance**.
     
-4. From the new **Home - Security &amp; Compliance** tab of your browser, click **Classifications > Labels**.
+4. From the new **Home - Security &amp; Compliance** tab of your browser, click **Classifications > Labels**. From the **Home > Labels** pane, click the **Retention** tab.
     
-5. From the **Home > Labels** pane, click **Create a label**.
+5. Click **Create a label**.
     
 6. On the **Name your label** pane, type **Internal Public**, and then click **Next**.
     
@@ -78,7 +78,7 @@ In this phase, you create the labels for the different levels of security for Sh
 
 Note that it might take a few minutes for the labels to be published.
 
-## Phase 3: Apply Office 365 labels to documents
+## Phase 3: Apply Office 365 retention labels to documents
 
 In this phase, you discover the default label behavior for files in the Documents folder of a SharePoint Online site and manually change the label of a document.
 
@@ -120,13 +120,13 @@ Next, create a new document in the SensitiveFiles site and change its label.
     
 4. Click the Word icon next to the **Document.docx** file name.
     
-5. In the right-hand pane, in the **Properties** section, under **Apply label**, note that the document has had the **Sensitive** label automatically applied.
+5. In the right-hand pane, in the **Properties** section, under **Apply retention label**, note that the document has had the **Sensitive** label automatically applied.
     
 6. Click **Edit all**.
     
 7. In the **Document.docx** pane, under **Apply label**, select the **Highly Confidential** label, and then click **Save**.
 
-See the [Configure classification for your environment](data-classification-microsoft-365-enterprise-dev-test-environment.md) step in the **Information protection** phase for information and links to Office 365 labels in production.
+See the [Configure classification for your environment](infoprotect-configure-classification.md) step in the **Information protection** phase for information and links to Office 365 retention labels in production.
 
 ## Next step
 

@@ -55,7 +55,7 @@ The [Microsoft 365 Enterprise poster](http://aka.ms/m365eposter) is a central lo
 
 ![](./media/m365-poster/m365e-poster.png)
 
-To download a copy of the poster, click [here](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/Media/Microsoft365Enterprise.pdf).
+To download a copy of the poster, click [here](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/Microsoft365Enterprise.pdf).
 
 ## Deploying
 
