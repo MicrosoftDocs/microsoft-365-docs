@@ -5,12 +5,12 @@ keywords: Visual Studio, Visual Studio Code, Visual Studio for Mac, Visual Studi
 localization_priority: Priority
 audience: microsoft-business
 audience: itpro
-ms.prod: visual-studio
+ms.prod: visual-studio-family
 ms.topic: article
 ms.date: 05/24/2018
 author: PoulChapman
-ms.author: pchapman
-manager: scalla
+ms.author: olholder
+manager: pchapman
 ms.collection: GDPR
 ms.workload:
   - "multiple"
