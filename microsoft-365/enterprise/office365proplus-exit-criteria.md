@@ -47,8 +47,6 @@ Before you move on to the next phase in the deployment process, ensure that your
     - All client devices are in the appropriate update channel and are receiving updates
     - All client devices have the appropriate languages installed or available
 
-## Updates for Office 365 ProPlus
-
 
 
 ## Next phase 

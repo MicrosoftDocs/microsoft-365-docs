@@ -40,14 +40,14 @@ See [Protect your Office 365 global administrator accounts](https://docs.microso
 
 The results of this step are:
 
-- The only user accounts in your subscription that have the global admin role are the new set of dedicated global administrator accounts. Verify this with the following Windows Azure AD V2 PowerShell command: 
+- The only user accounts in your subscription that have the global admin role are the new set of dedicated global administrator accounts. Verify this with the following Azure Active Directory PowerShell for Graph command: 
   ```
   Get-AzureADDirectoryRole | Where { $_.DisplayName -eq "Company Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
   ```
 - All other everyday user accounts that manage your subscription have admin roles assigned that are associated with their job responsibilities.
 
 > [!Note]
-> See [Connect to Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell) for instructions on installing the Azure AD V2 PowerShell module and signing in.
+> See [Connect to Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell) for instructions on installing the Azure Active Directory PowerShell for Graph module and signing in.
 
 |||
 |:-------|:-----|

@@ -76,7 +76,7 @@ Use these steps to verify that you've protected your global administrator accoun
 2. Sign in to Office 365 using each of the accounts from step 1. Each sign in must require multi-factor authentication and the strongest form of secondary authentication available in your organization.
 
 > [!Note]
-> See [Connect to Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell) for instructions on installing the Azure AD V2 PowerShell module and signing in to Office 365.
+> See [Connect to Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell) for instructions on installing the Azure Active Directory PowerShell for Graph module and signing in to Office 365.
 
 <a name="crit-identity-custom-sign-in"></a>
 ## Optional: The Office 365 sign-in screen is personalized for your organization
