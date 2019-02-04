@@ -27,11 +27,9 @@ description: "Learn to create, edit, delete, or remove AutoPilot profiles. "
 
 A profile applies to a device, or a group of devices,
   
-1. In the Microsoft 365 Business Admin center, choose **Deploy Windows with AutoPilot** on the **Device actions** card. 
-    
-    ![On the Device actions card, choose Deploy Windows with Autopilot.](media/160d5c2a-11a8-48f9-a8aa-70f084b85448.png)
+1. In the Microsoft 365 Business Admin center, choose **Devices** \> **AutoPilot**.
   
-2. On the **Prepare Windows** page, choose the **Profiles** tab \> **Create profile**.
+2. On the **AutoPilot** page, choose the **Profiles** tab \> **Create profile**.
     
 3. On the **Create profile** page, enter a name for the profile that helps you identify it, for example Marketing, turn on the setting you want (see [About AutoPilot Profile settings](autopilot-profile-settings.md) for more information), and choose **Save**.
     
