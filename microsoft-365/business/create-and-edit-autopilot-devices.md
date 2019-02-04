@@ -32,10 +32,8 @@ Devices need to meet these requirements:
 - Windows 10, version 1703 or later.
     
 - New devices that have not been through Windows out-of-box experience.
-    
-1. In the Microsoft 365 Business Admin center, choose **Deploy Windows with AutoPilot** on the **Device actions** card. 
-    
-    ![On the Device actions card, choose Deploy Windows with Autopilot.](media/160d5c2a-11a8-48f9-a8aa-70f084b85448.png)
+
+1. In the Microsoft 365 Business Admin center, choose **Devices** \> **AutoPilot** \> **Add**.
   
 2. On the **Prepare Windows** page, choose the **Devices** tab \> **Add devices**.
     
