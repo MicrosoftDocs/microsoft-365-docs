@@ -26,11 +26,9 @@ You can use Microsoft 365 Business to remove company data that your users have o
   
 1. Sign in to [Microsoft 365 Business](https://portal.office.com) with global admin credentials. 
     
-2. In the admin center, on the **Device actions** card, choose **Remove company data**.
-    
-    ![On the Devices card, choose Remove company data](media/b6fcf74b-0d7d-4e1a-894f-40f9d4a215b8.png)
+2. On the left nav, choose**Devices** \> **Policies** \> **Manage**..
   
-3. On the **Remove company data** pane, choose or search for a user who's data you want to remove, and choose the name. 
+3. On the **Manage** page, choose or search for a user who's data you want to remove, and choose the name. 
     
 4. On the next pane, select the device or devices from the **Managed devices** list to remove data from and choose **Next**. 
     
