@@ -24,11 +24,9 @@ A factory reset reverts a device to the original settings it had when the device
   
 1. Sign in to the [admin center](https://aka.ms/bcsportal) with global admin credentials. 
     
-2. In the admin center, on the **Device actions** card, choose **Factory reset**.
-    
-    ![On the Device actions card, choose Factory reset](media/7caddd12-207e-4c99-b61c-0495fc5f55e3.png)
-  
-3. On the **Factory reset** pane, check the checkbox next to the device you want to remove data from and then choose **Select**.
+2. In the admin center, in the left nav, choose **Devices** \> **Manage**.
+
+3. On the **Manage** page, check the checkbox next to the device you want to remove data from and then, in the **Manage** drop-down choose **Factory reset**.
     
 4. On the **Are you sure you want to factory reset the devices below** pane, choose **Confirm** \> **Close**.
     
