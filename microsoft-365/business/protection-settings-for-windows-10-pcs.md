@@ -28,7 +28,7 @@ View a video on how to secure Windows 10 devices with Microsoft 365 Business:
   
 1. Sign in to [Microsoft 365 Business](https://portal.office.com) with global admin credentials. 
     
-2. On the left nav, choose**Devices** \> **Policies** \> **Add**.
+2. On the left nav, choose **Devices** \> **Policies** \> **Add**.
   
 3. On the **Add policy** pane, enter a unique name for this policy. 
     

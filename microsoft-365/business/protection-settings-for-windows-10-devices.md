@@ -31,7 +31,7 @@ If your users have personal Windows 10 devices on which they perform work tasks,
   
 1. Sign in to [Microsoft 365 Business](https://portal.office.com) with global admin credentials. Choose the **Admin** tile to go to the admin center. 
     
-2. On the left nav, choose**Devices** \> **Policies** \> **Add**.
+2. On the left nav, choose **Devices** \> **Policies** \> **Add**.
 
 3. On the **Add policy** pane, enter a unique name for this policy. 
     

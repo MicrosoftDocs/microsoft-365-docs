@@ -24,7 +24,7 @@ description: "View device policies and actions by signing in to Microsoft 365 bu
 
 1. Sign in to [Microsoft 365 Business](https://portal.office.com) with global admin credentials. 
     
-2. On the left nav, choose**Devices** \> **Policies** \> **Add**.
+2. On the left nav, choose **Devices** \> **Policies** \> **Add**.
     
     On this page you can create, edit, change target group, or delete a policy.
     
