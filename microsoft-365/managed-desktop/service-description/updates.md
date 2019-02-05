@@ -15,7 +15,7 @@ ms.date: 01/09/2019
 
 <!--Update management -->
 
-Microsoft Managed Desktop connects all devices to a modern cloud-based infrastructure. Keeping Windows, Office, drivers, firmware, and Microsoft Store for Business application updates up to date is a balance of speed and stability. Deployment rings will be used to ensure OS and policies are rolled out in a safe manner. 
+Microsoft Managed Desktop connects all devices to a modern cloud-based infrastructure. Keeping Windows, Office, drivers, firmware, and Microsoft Store for Business application updates up to date is a balance of speed and stability. Deployment groups will be used to ensure OS and policies are rolled out in a safe manner. 
 
 Updates released by Microsoft are cumulative and may be categorized as quality or feature updates.
 For more information, see [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq). 
@@ -24,7 +24,7 @@ For more information, see [Windows Update: FAQ](https://support.microsoft.com/he
 
 Microsoft Managed Desktop uses four Azure AD groups to manage updates:
 
-- Test: Non-production devices intended to validate changes prior to deploying the changes across the rest of the tenant. Devices in this ring are out of scope for documented end user support. 
+- Test: Non-production devices intended to validate changes prior to deploying the changes across the rest of the tenant. Devices in this group are out of scope for documented end user support. 
 - First: Contains early software adopters, and devices may be subject to pre-release updates.
 - Fast: Prioritizes speed over stability. Useful for detecting quality issues before they are offered to the Broad group. 
 - Broad: Last group to have feature and quality updates available. This group contains the majority of users in the tenant, and therefore favors stability over speed in deployment.
