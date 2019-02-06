@@ -5,13 +5,17 @@ keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jdeckerms
 ms.localizationpriority: normal
-ms.date: 09/24/2018
+ms.date: 02/06/2019
 ---
 
 # Microsoft Managed Desktop service description
-Microsoft Managed Desktop service includes *Device as a service* and *IT as a service*. 
+Microsoft Managed Desktop includes these services: 
 
-## In this section
-
-- [Device as a service](daas.md)
-- [IT as a service](itaas.md)
+- [Program devices](device-list.md)
+- [Device services](device-services.md)
+- [Device configuration](device-policies.md)
+- [Security](security.md)
+- [Updates](updates.md)
+- [Support](support.md)
+- [Operations and monitoring](operations-and-monitoring.md)
+- [Application requirements](mmd-app-requirements.md)
