@@ -11,11 +11,11 @@ ms.date: 02/06/2019
 # Microsoft Managed Desktop service description
 Microsoft Managed Desktop includes these services: 
 
-- [Microsoft Managed Desktop devices](device-list.md)
-- [Microsoft Managed Desktop device services](device-services.md)
-- [Device configuration in Microsoft Managed Desktop](device-policies.md)
-- [Security in Microsoft Managed Desktop](security.md)
-- [How updates are handled in Microsoft Managed Desktop](updates.md)
-- [Support for Microsoft Managed Desktop](support.md)
-- [Operations and monitoring for Microsoft Managed Desktop](operations-and-monitoring.md)
-- [Microsoft Managed Desktop application requirements](mmd-app-requirements.md)
+- [Program devices](device-list.md)
+- [Device services](device-services.md)
+- [Device configuration](device-policies.md)
+- [Security](security.md)
+- [Updates](updates.md)
+- [Support](support.md)
+- [Operations and monitoring](operations-and-monitoring.md)
+- [Application requirements](mmd-app-requirements.md)
