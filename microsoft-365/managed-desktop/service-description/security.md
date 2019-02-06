@@ -44,7 +44,7 @@ Service | Description
 Antivirus |	Windows Defender AV is installed and configured<br>Windows Defender AV definitions are up to date
 Full Volume Encryption |	Windows BitLocker is the volume encryption solution for Microsoft Managed Desktop devices.<br><br>Once an organization is onboarded into the service, devices will be encrypted using Windows BitLocker with built-in Trust Platform Module (TPM) to prevent unauthorized access to local data when the device is in sleep mode, or off. 
 Monitoring |	Windows Defender Advanced Threat Protection (Windows Defender ATP) is used for security threat monitoring across all Microsoft Managed Desktop devices. Windows Defender ATP allows enterprise customers to detect, investigate, and respond to advanced threats in their corporate network. For more information, see [Windows Defender Advanced Threat Protection.](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) 
-Software updates |	Microsoft Managed Desktop devices are always secured with the latest security updates.
+Operating system updates |	Microsoft Managed Desktop devices are always secured with the latest security updates.
 Secure Device Configuration |	Microsoft Managed Desktop implements the Microsoft Security Baseline. For more information, see [Windows security baselines.](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines)
 
 
