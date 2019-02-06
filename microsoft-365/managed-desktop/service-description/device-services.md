@@ -15,10 +15,10 @@ This topic lists the services and service limitations for Microsoft Managed Desk
 ## Device services
 
 Microsoft will provide these services for Microsoft Managed Desktop devices. For information on Microsoft Managed Desktop program devices, see [Microsoft Managed Desktop devices](device-list.md).
- 
+
 For information on device replacement, upgrades, and support terms, see your agreement with your device provider and your warranty terms.
 
-For more information on Surface warranties and repairs:
+For information on Surface warranties and repairs:
 - [Warranties, extended service plans, and terms and conditions for your device](https://support.microsoft.com/help/4040687/info-about-warranties-extended-service-plans-and-terms-conditions)
 - [Surface standard warranty](https://support.microsoft.com/help/4036296)
 - [Device service and repair](https://support.microsoft.com/devices)
