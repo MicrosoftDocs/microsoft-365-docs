@@ -16,13 +16,6 @@ This topic lists the services and service limitations for Microsoft Managed Desk
 
 Microsoft will provide these services for Microsoft Managed Desktop devices. For information on Microsoft Managed Desktop program devices, see [Microsoft Managed Desktop devices](device-list.md).
 
-For information on device replacement, upgrades, and support terms, see your agreement with your device provider and your warranty terms.
-
-For information on Surface warranties and repairs:
-- [Warranties, extended service plans, and terms and conditions for your device](https://support.microsoft.com/help/4040687/info-about-warranties-extended-service-plans-and-terms-conditions)
-- [Surface standard warranty](https://support.microsoft.com/help/4036296)
-- [Device service and repair](https://support.microsoft.com/devices)
-
  | 
  --- | ---
 Support	| Support agents will answer questions directly related to device functionality and diagnose device issues.
@@ -30,6 +23,13 @@ Inventory |	All devices are tracked in the Microsoft Managed Desktop Admin porta
 Firmware / driver updates |	Firmware/Driver updates are deployed and monitored for compatibility by Microsoft. 
 Accessories	| Accessories that come with your device are covered by the same services as the device itself, but warranty terms may differ. Refer to the warranty terms chosen when selecting your devices. 
 Device setup	| Devices will be pre-configured with the current version of Windows and receive their apps and configurations via the cloud. 
+
+For information on device replacement, upgrades, and support terms, see your agreement with your device provider and your warranty terms.
+
+For information on Surface warranties and repairs:
+- [Warranties, extended service plans, and terms and conditions for your device](https://support.microsoft.com/help/4040687/info-about-warranties-extended-service-plans-and-terms-conditions)
+- [Surface standard warranty](https://support.microsoft.com/help/4036296)
+- [Device service and repair](https://support.microsoft.com/devices)
 
 ## Device service limitations
 
