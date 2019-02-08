@@ -27,8 +27,13 @@ For more information about how Microsoft can help you with the GDPR, see [Get St
 ## Learn more
 [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWrOQI]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWrOQI] 
+<br>
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWs1RP] 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWs1SI]
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWrZgG]
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWrOQE]
+<br>
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWs1SI] 
+<br>
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWrZgG] 
+<br>
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWrOQE] 
+<br>
