@@ -27,6 +27,7 @@ For more information about how Microsoft can help you with the GDPR, see [Get St
 ## Learn more
 [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
 <br>
+<br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWrOQI] 
 <br>
