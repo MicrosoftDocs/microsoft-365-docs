@@ -20,7 +20,7 @@ To be enrolled in Microsoft Managed Desktop a device must be one of the followin
 
 <table>
 <tr><th colspan="6">Microsoft Managed Desktop Devices</th></tr>
-<tr><th>Model</th><th>Minimum Specs</th><th>Additional Requirements</th><th>Approval Date&#8308;&nbsp;&nbsp;&nbsp;&nbsp;</th><th>Archive Date&#8308;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th><th>Retirement Date&#8308;&nbsp;&nbsp;</th></tr>
+<tr><th>Model</th><th>Minimum Specs</th><th>Additional Requirements</th><th>Approval Date&#8308;</th><th>Archive Date&#8308;</th><th>Retirement Date&#8308;</th></tr>
 <tr><td>Dell Latitude 5490</td><td>512 GB / Intel i7 / 16 GB RAM</td><td>N/A</td><td>Feb 15, 2019</td><td>Feb 15, 2021</td><td>Feb 15, 2024</td></tr>
 <tr><td>Dell Latitude 7390 2-in-1</td><td>512 GB / Intel i7 / 16 GB RAM</td><td>N/A</td><td>Feb 15, 2019</td><td>Feb 15, 2021</td><td>Feb 15, 2024</td></tr>
 <tr><td>Dell Precision M3530</td><td>512 GB / Intel i7 / 16 GB RAM</td><td>N/A</td><td>Feb 15, 2019</td><td>Feb 15, 2021</td><td>Feb 15, 2024</td></tr>
