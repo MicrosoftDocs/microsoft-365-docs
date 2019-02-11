@@ -20,20 +20,21 @@ To be enrolled in Microsoft Managed Desktop a device must be one of the followin
 
 <table>
 <tr><th colspan="6">Microsoft Managed Desktop Devices</th></tr>
-<tr><th>Model</th><th>Minimum Specs</th><th>Additional Requirements</th><th>Approval Date&#8308;</th><th>Archive Date&nbsp;&#8308;</th><th>Retirement Date&#8308;</th></tr>
-<tr><td>Dell Latitude 5490</td><td>512 GB / Intel i7 / 16 GB RAM</td><td>N/A</td><td>2-15-2019</td><td>2-15-2021</td><td>2-15-2024</td></tr>
-<tr><td>Dell Latitude 7390 2-in-1</td><td>512 GB / Intel i7 / 16 GB RAM</td><td>N/A</td><td>2-15-2019</td><td>2-15-2021</td><td>2-15-2024</td></tr>
-<tr><td>Dell Precision M3530</td><td>512 GB / Intel i7 / 16 GB RAM</td><td>N/A</td><td>2-15-2019</td><td>2-15-2021</td><td>2-15-2024</td></tr><tr><td>HP Elite x2 1013 G3</td><td>512 GB / Intel i7 / 16 GB RAM</td><td>N/A</td><td>2-15-2019</td><td>2-15-2021</td><td>2-15-2024</td></tr>
-<tr><td>HP Elitebook 840 G5</td><td>512 GB / Intel i7 / 16 GB RAM</td><td>N/A</td><td>2-15-2019</td><td>2-15-2021</td><td>2-15-2024</td></tr>
-<tr><td>HP Elitebook x360 1030</td><td>512 GB / Intel i7 / 16 GB RAM</td><td>N/A</td><td>2-15-2019</td><td>2-15-2021</td><td>2-15-2024</td></tr>
-<tr><td>HP Elitebook x360 1040</td><td>512 GB / Intel i7 / 16 GB RAM</td><td>N/A</td><td>2-15-2019</td><td>2-15-2021</td><td>2-15-2024</td></tr>
-<tr><td>HP Probook x360 1030</td><td>512 GB / Intel i7 / 16 GB RAM</td><td>N/A</td><td>2-15-2019</td><td>2-15-2021</td><td>2-15-2024</td></tr>
-<tr><td>Surface Book 2&#x00B2;</td><td>512 GB / Intel i7 / 16 GB RAM</td><td>15-inch display</td><td>9-17-2018</td><td>9-17-2020</td><td>9-17-2023</td></tr>
-<tr><td>Surface Go&#x00B2;</td><td>128 GB / Intel 4415Y / 8GB RAM</td><td>N/A</td><td>10-31-2018</td><td>10-31-2020</td><td>10-31-2023</td></tr>
-<tr><td>Surface Laptop&#x00B2;</td><td>256 GB / Intel i5 / 8 GB RAM</td><td>N/A</td><td>9-17-2018</td><td>5-20-2019</td><td>5-20-2022</td></tr>
-<tr><td>Surface Laptop 2&#x00B2;</td><td>256 GB / Intel i5 / 8 GB RAM </td><td>N/A</td><td>11-26-2018</td><td>11-26-2020</td><td>11-26-2023</td></tr>
-<tr><td>Surface Pro&#x00B2;</td><td> 256 GB / Intel i5 / 8 GB RAM</td><td>N/A</td><td>9-17-2018</td><td>5-20-2019</td><td>5-20-2022</td></tr>
-<tr><td>Surface Pro 6&#x00B2;</td><td>256 GB / Intel i5 / 8 GB RAM</td><td>N/A</td><td>12-7-2018</td><td>12-7-2020</td><td>12-7-2023</td></tr>
+<tr><th>Model</th><th>Minimum Specs</th><th>Additional Requirements</th><th>Approval Date&#8308;&nbsp;&nbsp;&nbsp;&nbsp;</th><th>Archive Date&#8308;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th><th>Retirement Date&#8308;&nbsp;&nbsp;</th></tr>
+<tr><td>Dell Latitude 5490</td><td>512 GB / Intel i7 / 16 GB RAM</td><td>N/A</td><td>Feb 15, 2019</td><td>Feb 15, 2021</td><td>Feb 15, 2024</td></tr>
+<tr><td>Dell Latitude 7390 2-in-1</td><td>512 GB / Intel i7 / 16 GB RAM</td><td>N/A</td><td>Feb 15, 2019</td><td>Feb 15, 2021</td><td>Feb 15, 2024</td></tr>
+<tr><td>Dell Precision M3530</td><td>512 GB / Intel i7 / 16 GB RAM</td><td>N/A</td><td>Feb 15, 2019</td><td>Feb 15, 2021</td><td>Feb 15, 2024</td></tr>
+<tr><td>HP Elite x2 1013 G3&#8309;</td><td>512 GB / Intel i7 / 16 GB RAM</td><td>SKU: 5VS03AV;<br /> Must select either Fingerprint reader or IR Camera</td><td>Feb 15, 2019</td><td>Feb 15, 2021</td><td>Feb 15, 2024</td></tr>
+<tr><td>HP Elitebook 840 G5&#8309;</td><td>512 GB / Intel i7 / 16 GB RAM</td><td>SKU: 5VS01AV;<br /> Must select either Fingerprint reader or IR Camera</td><td>Feb 15, 2019</td><td>Feb 15, 2021</td><td>Feb 15, 2024</td></tr>
+<tr><td>HP Elitebook x360 1030&#8309;</td><td>512 GB / Intel i7 / 16 GB RAM</td><td>SKU: 5VS01AV</td><td>Feb 15, 2019</td><td>Feb 15, 2021</td><td>Feb 15, 2024</td></tr>
+<tr><td>HP Elitebook x360 1040&#8309;</td><td>512 GB / Intel i7 / 16 GB RAM</td><td>SKU: 5VS01AV</td><td>Feb 15, 2019</td><td>Feb 15, 2021</td><td>Feb 15, 2024</td></tr>
+<tr><td>HP Probook x360 1030&#8309;</td><td>512 GB / Intel i7 / 16 GB RAM</td><td>SKU: 5VS04AV;<br /> Must select either Fingerprint reader or IR Camera</td><td>Feb 15, 2019</td><td>Feb 15, 2021</td><td>Feb 15, 2024</td></tr>
+<tr><td>Surface Book 2&#x00B2;</td><td>512 GB / Intel i7 / 16 GB RAM</td><td>15-inch display</td><td>Sep 17, 2018</td><td>Sep 17, 2020</td><td>Sep 17, 2023</td></tr>
+<tr><td>Surface Go&#x00B2;</td><td>128 GB / Intel 4415Y / 8GB RAM</td><td>N/A</td><td>Oct 31, 2018</td><td>Oct 31, 2020</td><td>Oct 31, 2023</td></tr>
+<tr><td>Surface Laptop&#x00B2;</td><td>256 GB / Intel i5 / 8 GB RAM</td><td>N/A</td><td>Sep 17, 2018</td><td>May 20, 2019</td><td>May 20, 2022</td></tr>
+<tr><td>Surface Laptop 2&#x00B2;</td><td>256 GB / Intel i5 / 8 GB RAM </td><td>N/A</td><td>Nov 26, 2018</td><td>Nov 26, 2020</td><td>Nov 26, 2023</td></tr>
+<tr><td>Surface Pro&#x00B2;</td><td> 256 GB / Intel i5 / 8 GB RAM</td><td>N/A</td><td>Sep 17, 2018</td><td>May 20, 2019</td><td>May 20, 2022</td></tr>
+<tr><td>Surface Pro 6&#x00B2;</td><td>256 GB / Intel i5 / 8 GB RAM</td><td>N/A</td><td>Dec 7, 2018</td><td>Dec 7, 2020</td><td>Dec 7, 2023</td></tr>
 </table>
 
 In addition, the device must also:     
@@ -55,4 +56,6 @@ In addition, the device must also:
 &#x00B3; This can be implemented either through a new device acquisition or by re-imaging a previously acquired device. The Surface Laptop 2, Pro 6, and Go devices meet these requirements from the factory and only require re-imaging if they were previously used as a non-MMD device per the first-run requirement.
 
 &#8308; Approval date corresponds to the day the model was officially added to the Microsoft Managed Desktop catalog. Archive date refers to the date on which these models will be subject to partial service life for ITaaS. Retirement date refers to the date on which this model will no longer be supported by Microsoft Managed Desktop.
+
+&#8309; For more questions on HP devices contact <a href="mailto:mmd@hp.com">mmd@hp.com</a>.
 
