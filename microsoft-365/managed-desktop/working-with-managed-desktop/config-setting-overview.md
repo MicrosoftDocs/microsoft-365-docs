@@ -61,5 +61,5 @@ If you have any issues, [open a support request](admin-support.md) with Microsof
 For more information, see [Deploy and track configurable settings](config-setting-deploy.md).
 
 ## Additional resources
-- [Configurable settings reference](config-setting-ref.md). 
-- [Deploy configurable settings](config-setting-deploy.md). 
+- [Configurable settings reference](config-setting-ref.md) 
+- [Deploy configurable settings](config-setting-deploy.md) 
