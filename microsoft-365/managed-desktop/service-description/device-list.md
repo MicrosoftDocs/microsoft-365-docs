@@ -21,20 +21,20 @@ To be enrolled in Microsoft Managed Desktop a device must be one of the followin
 <table>
 <tr><th colspan="6">Microsoft Managed Desktop Devices</th></tr>
 <tr><th>Model</th><th>Minimum Specs</th><th>Additional Requirements</th><th>Approval Date&#8308;</th><th>Archive Date&#8308;</th><th>Retirement Date&#8308;</th></tr>
-<tr><td>Dell Latitude 5490</td><td>256 GB / Intel i5 / 8 GB RAM</td><td>N/A</td><td>Feb 15, 2019</td><td>Feb 15, 2021</td><td>Feb 15, 2024</td></tr>
-<tr><td>Dell Latitude 7390 2-in-1</td><td>256 GB / Intel i5 / 8 GB RAM</td><td>N/A</td><td>Feb 15, 2019</td><td>Feb 15, 2021</td><td>Feb 15, 2024</td></tr>
-<tr><td>Dell Precision M3530</td><td>256 GB / Intel i5 / 8 GB RAM</td><td>N/A</td><td>Feb 15, 2019</td><td>Feb 15, 2021</td><td>Feb 15, 2024</td></tr>
-<tr><td>HP Elite x2 1013 G3&#8309;</td><td>256 GB / Intel i5 / 8 GB RAM</td><td>SKU: 5VS03AV;<br /> Must select either Fingerprint reader or IR Camera</td><td>Feb 15, 2019</td><td>Feb 15, 2021</td><td>Feb 15, 2024</td></tr>
-<tr><td>HP Elitebook 840 G5&#8309;</td><td>256 GB / Intel i5 / 8 GB RAM</td><td>SKU: 5VS01AV;<br /> Must select either Fingerprint reader or IR Camera</td><td>Feb 15, 2019</td><td>Feb 15, 2021</td><td>Feb 15, 2024</td></tr>
-<tr><td>HP Elitebook x360 1030&#8309;</td><td>256 GB / Intel i5 / 8 GB RAM</td><td>SKU: 5VS01AV</td><td>Feb 15, 2019</td><td>Feb 15, 2021</td><td>Feb 15, 2024</td></tr>
-<tr><td>HP Elitebook x360 1040&#8309;</td><td>256 GB / Intel i5 / 8 GB RAM</td><td>SKU: 5VS01AV</td><td>Feb 15, 2019</td><td>Feb 15, 2021</td><td>Feb 15, 2024</td></tr>
-<tr><td>HP Probook x360 1030&#8309;</td><td>256 GB / Intel i5 / 8 GB RAM</td><td>SKU: 5VS04AV;<br /> Must select either Fingerprint reader or IR Camera</td><td>Feb 15, 2019</td><td>Feb 15, 2021</td><td>Feb 15, 2024</td></tr>
-<tr><td>Surface Book 2&#x00B2;</td><td>512 GB / Intel i7 / 16 GB RAM</td><td>15-inch display</td><td>Sep 17, 2018</td><td>Sep 17, 2020</td><td>Sep 17, 2023</td></tr>
-<tr><td>Surface Go&#x00B2;</td><td>128 GB / Intel 4415Y / 8GB RAM</td><td>N/A</td><td>Oct 31, 2018</td><td>Oct 31, 2020</td><td>Oct 31, 2023</td></tr>
+<tr><td>Dell Latitude 5490</td><td>256 GB / Intel i5 / 8 GB RAM</td><td>N/A</td><td>Feb 15, 2019</td><td>Jan 9, 2020</td><td>Jan 9, 2023</td></tr>
+<tr><td>Dell Latitude 7390 2-in-1</td><td>256 GB / Intel i5 / 8 GB RAM</td><td>N/A</td><td>Feb 15, 2019</td><td>Jan 9, 2020</td><td>Jan 9, 2023</td></tr>
+<tr><td>Dell Precision 3530</td><td>256 GB / Intel i5 / 8 GB RAM</td><td>N/A</td><td>Feb 15, 2019</td><td>May 22, 2020</td><td>May 22, 2023</td></tr>
+<tr><td>HP Elite x2 1013 G3&#8309;</td><td>256 GB / Intel i5 / 8 GB RAM</td><td>SKU: 5VS03AV;<br /> Must select either Fingerprint reader or IR Camera</td><td>Feb 15, 2019</td><td>May 14, 2020</td><td>May 14, 2023</td></tr>
+<tr><td>HP Elitebook 840 G5&#8309;</td><td>256 GB / Intel i5 / 8 GB RAM</td><td>SKU: 5VS01AV;<br /> Must select either Fingerprint reader or IR Camera</td><td>Feb 15, 2019</td><td>Feb 15, 2020</td><td>Feb 15, 2023</td></tr>
+<tr><td>HP Elitebook x360 1030 G3&#8309;</td><td>256 GB / Intel i5 / 8 GB RAM</td><td>SKU: 5VS01AV</td><td>Feb 15, 2019</td><td>May 14, 2020</td><td>May 14, 2023</td></tr>
+<tr><td>HP Elitebook x360 1040 G5&#8309;</td><td>256 GB / Intel i5 / 8 GB RAM</td><td>SKU: 5VS01AV</td><td>Feb 15, 2019</td><td>Oct 23, 2020</td><td>Oct 23, 2023</td></tr>
+<tr><td>HP Probook x360 440 G1&#8309;</td><td>256 GB / Intel i5 / 8 GB RAM</td><td>SKU: 5VS04AV;<br /> Must select either Fingerprint reader or IR Camera</td><td>Feb 15, 2019</td><td>Jun 6, 2020</td><td>Jun 6, 2023</td></tr>
+<tr><td>Surface Book 2&#x00B2;</td><td>512 GB / Intel i7 / 16 GB RAM</td><td>15-inch display</td><td>Sep 17, 2018</td><td>Nov 16, 2019</td><td>Nov 16, 2022</td></tr>
+<tr><td>Surface Go&#x00B2;</td><td>128 GB / Intel 4415Y / 8GB RAM</td><td>N/A</td><td>Oct 31, 2018</td><td>Aug 2, 2020</td><td>Aug 2, 2023</td></tr>
 <tr><td>Surface Laptop&#x00B2;</td><td>256 GB / Intel i5 / 8 GB RAM</td><td>N/A</td><td>Sep 17, 2018</td><td>May 20, 2019</td><td>May 20, 2022</td></tr>
-<tr><td>Surface Laptop 2&#x00B2;</td><td>256 GB / Intel i5 / 8 GB RAM </td><td>N/A</td><td>Nov 26, 2018</td><td>Nov 26, 2020</td><td>Nov 26, 2023</td></tr>
-<tr><td>Surface Pro&#x00B2;</td><td> 256 GB / Intel i5 / 8 GB RAM</td><td>N/A</td><td>Sep 17, 2018</td><td>May 20, 2019</td><td>May 20, 2022</td></tr>
-<tr><td>Surface Pro 6&#x00B2;</td><td>256 GB / Intel i5 / 8 GB RAM</td><td>N/A</td><td>Dec 7, 2018</td><td>Dec 7, 2020</td><td>Dec 7, 2023</td></tr>
+<tr><td>Surface Laptop 2&#x00B2;</td><td>256 GB / Intel i5 / 8 GB RAM </td><td>N/A</td><td>Nov 26, 2018</td><td>Oct 16, 2020</td><td>Oct 16, 2023</td></tr>
+<tr><td>Surface Pro&#x00B2;</td><td> 256 GB / Intel i5 / 8 GB RAM</td><td>N/A</td><td>Sep 17, 2018</td><td>Jun 15, 2019</td><td>Jun 15, 2022</td></tr>
+<tr><td>Surface Pro 6&#x00B2;</td><td>256 GB / Intel i5 / 8 GB RAM</td><td>N/A</td><td>Dec 7, 2018</td><td>Oct 16, 2020</td><td>Oct 16, 2023</td></tr>
 </table>
 
 In addition, the device must also:     
