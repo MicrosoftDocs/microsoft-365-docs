@@ -23,7 +23,7 @@ These requirements must be met for your desktop background picture:
 ### Customize and deploy desktop background picture
 
 **To add a custom desktop background picture**
-1. Sign in to Microsoft Managed Desktop admin portal (aka link)
+1. Sign in to [Microsoft Managed Desktop Admin portal](http://aka.ms/mmdportal)
 2. Under **Settings**, select **Configurable**.
 3. In **Configurable** workspace, select **Desktop background picture**. 
 4. Enter the location of the picture you want to use. 
@@ -39,7 +39,7 @@ You must provide the fully qualified domain name (FQDN) for intranet or Internet
 ### Customize and deploy browser start pages
 
 **To add a browser start page**
-1. Sign in to Microsoft Managed Desktop admin portal (aka link)
+1. Sign in to [Microsoft Managed Desktop Admin portal](http://aka.ms/mmdportal)
 2. Under **Settings**, select **Configurable**.
 3. In **Configurable** workspace, select **Browser start pages**. 
 4. Select **Add start page**.
@@ -70,7 +70,7 @@ These best practices are offered to help customers make decisions to modernize t
 
 **To add an enterprise site mode list location**
 
-1.	Sign in to Microsoft Managed Desktop admin portal (aka link)
+1.	Sign in to [Microsoft Managed Desktop Admin portal](http://aka.ms/mmdportal)
 2.	Under **Settings**, select **Configurable**.
 3.	In **Configurable** workspace, select **Enterprise mode site list location**. 
 4.	Enter the https location for your site list. 
@@ -92,7 +92,7 @@ You must provide the fully qualified domain name (FQDN) for intranet or Internet
 
 **To add a trusted site**
 
-1. Sign in to Microsoft Managed Desktop admin portal (aka link)
+1. Sign in to [Microsoft Managed Desktop Admin portal](http://aka.ms/mmdportal)
 2. Under **Settings**, select **Configurable**.
 3. In **Configurable** workspace, select **Trusted sites**, and then select **Add trusted site**. 
 4. On **Add trusted site**, enter the URL, choose a security zone, and then select **Add trusted site**. 
@@ -101,7 +101,7 @@ You must provide the fully qualified domain name (FQDN) for intranet or Internet
 
 **To remove a trusted site**
 
-1. Sign in to Microsoft Managed Desktop admin portal (aka link)
+1. Sign in to [Microsoft Managed Desktop Admin portal](http://aka.ms/mmdportal)
 2. Under **Settings**, select **Configurable**.
 3. In **Configurable** workspace, select **Trusted sites**. 
 4. Select the site that you want to delete, and then select **Delete**. 
@@ -126,7 +126,7 @@ These requirements must be met for proxy server and proxy site exceptions:
 
 **To add an individual proxy site exception**
 
-1. Sign in to Microsoft Managed Desktop admin portal (aka link)
+1. Sign in to [Microsoft Managed Desktop Admin portal](http://aka.ms/mmdportal)
 2. Under **Settings**, select **Configurable**.
 3. In **Configurable** workspace, select **Proxy**. 
 4. Enter the **Address** and **Port number** for you proxy server, and then select **Add proxy exception**. 
