@@ -34,7 +34,7 @@ Use the resulting environment to test the features and functionality of [Microso
 
 Follow the steps in Phase 2 and Phase 3 of the [Office 365 dev/test environment](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment) to create a lightweight Office 365 dev/test environment, as shown in Figure 1.
   
-**Figure 1: Your Office 365 E5 subscription with its Azure Active Directory (AD) tenant and user accounts**
+**Figure 1: Your Office 365 E5 subscription with its Azure Active Directory (Azure AD) tenant and user accounts**
 
 ![Phase 1 of the Microsoft 3656 Enterprise test environment](media/lightweight-base-configuration-microsoft-365-enterprise/Phase1.png)
 
