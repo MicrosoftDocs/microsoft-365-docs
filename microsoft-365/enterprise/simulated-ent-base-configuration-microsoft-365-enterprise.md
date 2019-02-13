@@ -35,7 +35,7 @@ You can use the resulting environment to test the features and functionality of 
 
 ## Phase 1: Create a simulated intranet
 
-In this phase, you build a simulated intranet in Azure infrastructure services that includes a Windows Server Active Directory domain controller, an application server, and a client computer. 
+In this phase, you build a simulated intranet in Azure infrastructure services that includes an Active Directory Domain Services (AD DS) domain controller, an application server, and a client computer. 
 
 You'll use these computers in additional [Microsoft 365 Enterprise Test Lab Guides](m365-enterprise-test-lab-guides.md) to configure and demonstrate hybrid identity and other capabilities.
 
@@ -66,7 +66,7 @@ Use this method if you want to get experience creating elements of Azure infrast
 
 #### Step 1: Create DC1
 
-In this step, we create an Azure virtual network and add DC1, a virtual machine that is a domain controller for a Windows Server Active Directory (AD) domain.
+In this step, we create an Azure virtual network and add DC1, a virtual machine that is a domain controller for an AD DS domain.
 
 First, start a Windows PowerShell command prompt on your local computer.
   

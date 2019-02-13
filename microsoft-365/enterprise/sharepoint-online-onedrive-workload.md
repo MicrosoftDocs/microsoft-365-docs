@@ -16,6 +16,7 @@ description: Step through the process of planning for, rolling out, and driving 
 
 # Deploy SharePoint Online and OneDrive for Business for Microsoft 365 Enterprise
 
+*This workload is included in both the E3 and E5 versions of Microsoft 365 Enterprise*
 
 SharePoint Online and Microsoft Teams is how you do file storage and sharing, content management, and collaboration and is a key element of the Built for Teamwork value of Microsoft 365 Enterprise. 
 
