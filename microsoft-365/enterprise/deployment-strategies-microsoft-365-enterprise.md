@@ -49,7 +49,7 @@ This article uses the following graphics to depict these definitions:
 
 ![](./media/deployment-strategies-microsoft-365-enterprise/definitions.png) 
 
-The shading for the user rollout graphic indicates the rollout across your organization from 0% to 100% using a structured or methodical approach such as groups, departments, or regions.
+The shading for the user rollout graphic indicates the percentage across your organization from 0% to 100% using a structured or methodical approach such as groups, departments, or regions.
 
 ## Deployment strategies
 

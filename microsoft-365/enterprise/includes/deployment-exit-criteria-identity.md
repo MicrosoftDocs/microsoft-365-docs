@@ -5,7 +5,7 @@ Also see [Prerequisites](https://docs.microsoft.com/microsoft-365-enterprise/ide
 
 You've created user accounts and groups so that:
 
-- Employees in your organization and the vendors, contractors, and partners that work for or with your organization have a corresponding user account in Azure Active Directory (AD).
+- Employees in your organization and the vendors, contractors, and partners that work for or with your organization have a corresponding user account in Azure Active Directory (Azure AD).
 - Azure AD groups and their members contain user accounts and other groups for various purposes, such as the provisioning of security settings for Microsoft cloud services, automatic licensing, and other uses.
 
 If needed, [Step 1](../identity-plan-users-groups.md) can help you meet this requirement.
@@ -13,7 +13,7 @@ If needed, [Step 1](../identity-plan-users-groups.md) can help you meet this req
 <a name="crit-identity-sync"></a>
 ### Required: Users and groups are synchronized with Azure AD
 
-If you have an existing on-premises identity provider, such as Windows Server Active Directory (AD), you have used Azure AD Connect to synchronize user accounts and groups from your on-premises identity provider to your Azure AD tenant.
+If you have an existing on-premises identity provider, such as Active Directory Domain Services (AD DS), you have used Azure AD Connect to synchronize user accounts and groups from your on-premises identity provider to your Azure AD tenant.
 
 With directory synchronization, your users can sign in to Office 365 and other Microsoft cloud services using the same credentials that they use to sign in to their computers and access on-premises resources.
 
@@ -55,7 +55,7 @@ Use these steps to verify that you've protected your global administrator accoun
 2. Sign in to Office 365 using each of the accounts from step 1. Each sign in must require multi-factor authentication and the strongest form of secondary authentication available in your organization.
 
 > [!Note]
-> See [Connect to Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell) for instructions on installing the Azure AD V2 PowerShell module and signing in to Office 365.
+> See [Connect to Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell) for instructions on installing the Azure Active Directory PowerShell for Graph module and signing in to Office 365.
 
 <a name="crit-identity-custom-sign-in"></a>
 ### Optional: The Office 365 sign-in screen is personalized for your organization
