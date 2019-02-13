@@ -16,7 +16,7 @@ For more information on Microsoft Managed Desktop, see [Microsoft Managed Deskto
 
 <!-- Microsoft 365 E5; Device as a Service -->
 <!-- Split from device & technologies topic. Destination topic for aka.ms/device-list  -->
-To be enrolled in Microsoft Managed Desktop a device must be one of the following models and meet or exceed the listed specifications for RAM, processor speed, and disk space. Add-on devices, such as additional graphics cards, are not currently allowed.
+To be enrolled in Microsoft Managed Desktop a device must be one of the following models and meet or exceed the listed specifications for RAM, processor speed, and disk space. Add-on devices, such as additional graphics cards, are not allowed.
 
 <table>
 <tr><th colspan="6">Microsoft Managed Desktop Devices</th></tr>
@@ -55,7 +55,7 @@ In addition, the device must also:
 
 &#x00B3; This can be implemented either through a new device acquisition or by re-imaging a previously acquired device. The Surface Laptop 2, Pro 6, and Go devices meet these requirements from the factory and only require re-imaging if they were previously used as a non-MMD device per the first-run requirement.
 
-&#8308; Approval date corresponds to the day the model was officially added to the Microsoft Managed Desktop catalog. Archive date refers to the date on which these models will be subject to partial service life for ITaaS. Retirement date refers to the date on which this model will no longer be supported by Microsoft Managed Desktop.
+&#8308; Approval date corresponds to the day the model was officially added to the Microsoft Managed Desktop catalog. Archive date refers to the date on which these models will be subject to a shorter management period; any device of this model onboarded to MMD after this date will not receive a full three year ITaaS term. Retirement date refers to the date on which this model will no longer be supported by Microsoft Managed Desktop.
 
 &#8309; For more questions on HP devices contact <a href="mailto:mmd@hp.com">mmd@hp.com</a>.
 
