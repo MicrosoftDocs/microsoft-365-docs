@@ -27,10 +27,14 @@ To be enrolled in Microsoft Managed Desktop a device must be one of the followin
 <tr><td>HP Elite x2 1013 G3</td><td>256 GB / Intel i5 / 8 GB RAM</td><td>SKU with 5VS03AV (MMD image)&#8309; <br />
 IR Camera required
 </td><td>May 14, 2020</td><td>May 14, 2023</td></tr>
-<tr><td>HP Elitebook 840 G5&#8309;</td><td>256 GB / Intel i5 / 8 GB RAM</td><td>SKU: 5VS01AV;<br /> Must select either Fingerprint reader or IR Camera</td><td>Feb 15, 2020</td><td>Feb 15, 2023</td></tr>
-<tr><td>HP Elitebook x360 1030 G3&#8309;</td><td>256 GB / Intel i5 / 8 GB RAM</td><td>SKU: 5VS01AV</td><td>May 14, 2020</td><td>May 14, 2023</td></tr>
-<tr><td>HP Elitebook x360 1040 G5&#8309;</td><td>256 GB / Intel i5 / 8 GB RAM</td><td>SKU: 5VS01AV</td><td>Oct 23, 2020</td><td>Oct 23, 2023</td></tr>
-<tr><td>HP Probook x360 440 G1&#8309;</td><td>256 GB / Intel i5 / 8 GB RAM</td><td>SKU: 5VS04AV;<br /> Must select either Fingerprint reader or IR Camera</td><td>Jun 6, 2020</td><td>Jun 6, 2023</td></tr>
+<tr><td>HP Elitebook 840 G5</td><td>256 GB / Intel i5 / 8 GB RAM</td><td>SKU with 5VS01AV (MMD image)&#8309; <br />
+IR Camera required</td><td>Feb 15, 2020</td><td>Feb 15, 2023</td></tr>
+<tr><td>HP Elitebook x360 1030 G3</td><td>256 GB / Intel i5 / 8 GB RAM</td><td>SKU with 5VS01AV (MMD image)&#8309; <br />
+IR camera required</td><td>May 14, 2020</td><td>May 14, 2023</td></tr>
+<tr><td>HP Elitebook x360 1040 G5</td><td>256 GB / Intel i5 / 8 GB RAM</td><td>SKU with 5VS01AV (MMD image)&#8309; <br />
+IR camera required</td><td>Oct 23, 2020</td><td>Oct 23, 2023</td></tr>
+<tr><td>HP Probook x360 440 G1</td><td>256 GB / Intel i5 / 8 GB RAM</td><td>SKU with 5VS04AV (MMD image)&#8309; <br />
+IR camera or Fingerprint reader required</td><td>Jun 6, 2020</td><td>Jun 6, 2023</td></tr>
 <tr><td>Surface Book 2&#x00B2;</td><td>512 GB / Intel i7 / 16 GB RAM</td><td>15-inch display</td><td>Nov 16, 2019</td><td>Nov 16, 2022</td></tr>
 <tr><td>Surface Go&#x00B2;</td><td>128 GB / Intel 4415Y / 8GB RAM</td><td>N/A</td><td>Aug 2, 2020</td><td>Aug 2, 2023</td></tr>
 <tr><td>Surface Laptop&#x00B2;</td><td>256 GB / Intel i5 / 8 GB RAM</td><td>N/A</td><td>May 20, 2019</td><td>May 20, 2022</td></tr>
