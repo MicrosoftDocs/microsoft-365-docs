@@ -51,7 +51,7 @@ In addition, the device must also:
     - Has the latest OEM-provided drivers installed; and
     - Has no additional preloaded software
 - Not have completed the Windows first-run experience.
-- Be enrolled with Windows Autopilot and have the Microsoft Managed Desktop Autopilot profile assigned.
+- Be enrolled with [Windows Autopilot](https://docs.microsoft.com/en-us/windows/deployment/windows-autopilot/user-driven-aad) and have the Microsoft Managed Desktop Autopilot profile assigned.
 
 **Footnotes**
 
