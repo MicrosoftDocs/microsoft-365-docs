@@ -8,7 +8,7 @@ ms.localizationpriority: normal
 ms.date: 2/12/2019
 ---
 
-# Deploy and track configurable settings
+# Deploy and track configurable settings with Microsoft Managed Desktop
 
 After you make changes to your configurable settings and stage a deployment, you can deploy and track progress for the change on Deployment status. 
 
@@ -41,7 +41,7 @@ We’ll show Desktop background picture in these instructions. After you’ve st
 
 Microsoft Managed Desktop recommends deploying to deployment rings in this order: Test, First, Fast, and then Broad. 
 
-When changes are finished applying to each ring, the status changes to **Complete**.
+When changes complete in each ring, the status changes to **Complete**.
 
 ![Configurable settings deployment complete](images/config-setting-complete.png)
 
@@ -49,7 +49,7 @@ When changes are finished applying to each ring, the status changes to **Complet
 
 We’ll show Desktop background picture in these instructions. 
 
-After you’ve deployed a change, you can revert from **Deployment status**. When you revert a change that was **In progress** or **Complete**, change stops the current deployment. The setting will revert to the last version that was deployed to all rings. 
+After you’ve deployed a change, you can revert from **Deployment status**. When you revert a change that is **In progress** or **Complete**, the current deployment stops. The setting will revert to the last version that was deployed to all rings. 
 
 **To revert a change**
 1. Sign in to [Microsoft Managed Desktop Admin portal](http://aka.ms/mwaasportal)

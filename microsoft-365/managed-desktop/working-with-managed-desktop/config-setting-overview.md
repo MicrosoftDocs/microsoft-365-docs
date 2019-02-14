@@ -20,23 +20,24 @@ Configurable setting changes are made in the cloud and applied to your Microsoft
 
 There are a few times to use configurable settings. 
 
-**Onboarding process** – Microsoft Managed Desktop recommends that you customize configurable settings when you onboard to Microsoft Managed Desktop. These settings are configured in Microsoft Managed Desktop admin portal. After you’ve onboarded and have access to the admin portal, you can decide which settings you want to customize for your organization, make the changes, stage a deployment, and then deploy your changes.
+**Onboarding process** – Microsoft Managed Desktop recommends that you customize configurable settings when you onboard to Microsoft Managed Desktop service, or when you onboard a large number of devices (20 or more). Setting categories are configured in Microsoft Managed Desktop admin portal. After you’ve onboarded and have access to the admin portal, you can decide which setting categories you want to customize for your organization, make the changes, stage a deployment, and then deploy your changes.
 
 **Maintain settings** - Review your settings regularly and make needed updates. You might need to make changes to support a change in your business.   
 
-## Configurable settings
+## Setting categories
 
 These are the configurable settings categories that you can customize:
 - [Desktop background picture](config-setting-ref.md#desktop-background-picture) – Customize the desktop background picture for Microsoft Managed Desktop devices. 
-- Browser start page – Add start pages to use with Microsoft Edge. See Browser start page
-- Enterprise mode site list – Add sites, and their compatibility mode. Sites on the list will start in Internet Explorer. - Trusted sites – Add trusted sites and set security zones for each site. 
-- Proxy site exceptions – Set up your proxy server address number and port number, and add proxy site exceptions.
+- [Browser start pages](config-setting-ref.md#browser-start-pages) – Add start pages to use with Microsoft Edge. See Browser start page
+- [Enterprise mode site list](config-setting-ref.md#enterprise-mode-site-list-location) – Add sites, and their compatibility mode. Sites on the list will start in Internet Explorer. 
+- [Trusted sites](config-setting-ref.md#trusted-sites) – Add trusted sites and set security zones for each site. 
+- [Proxy site exceptions](config-setting-ref.md#proxy) – Set up your proxy server address number and port number, and add proxy site exceptions.
 
-Each setting can be customized and deployed on its own. You can deploy changes to multiple settings at the same time, however, you can only deploy one change at a time to each setting.
+Each setting category can be customized and deployed on its own. You can deploy changes to multiple setting categories at the same time, however, you can only deploy one change at a time to a setting category.
 
 For example:
-- You can deploy changes to desktop background picture and trusted sites at the same time. 
-- You can’t deploy two different changes to browser start pages at the same time.
+- You can deploy changes to desktop background picture and trusted sites, each as their own deployments, at the same time. 
+- You can’t deploy two deployments to browser start pages at the same time. The most recent deployment will stop earlier deployments that are still in progress.
 
 ## Configurable setting process
 
@@ -49,17 +50,18 @@ The overall process looks like this.
 You configure and stage changes in the Microsoft Managed Desktop admin portal. For more information, see [Customize configurable settings](config-setting-ref.md). 
 
 **Step 3: Communicate changes**
-Communicate information about upcoming changes to your users. 
+Communicate information about upcoming changes to your users. For each deployment, complete the communication that is part of your change management processes. You should clearly communicate any change that impacts how a user works, or what they will see on their devices.
 
-**Step 4: Deploy changes** – Deploy your changes, starting with the Test ring. The Test ring allows you to validate and troubleshoot any issues in a ring with fewer devices, before deploying changes to larger groups of devices. If you run into any issues, you can revert the change, update the setting, and stage a new deployment. Microsoft Managed Desktop recommends that you follow the structured approach and deploy first to Test, and then to First, Fast, and then Broad.   
-You deploy changes in the Microsoft Managed Desktop admin portal. For more information, see [Deploy changes](config-setting-deploy.md). 
+**Step 4: Deploy changes** – Deploy your changes, starting with the Test ring. The Test ring allows you to validate and troubleshoot any issues in a ring with fewer devices, before deploying changes to larger groups of devices. If you run into any issues, you can revert the change, update the setting, and stage a new deployment. Microsoft Managed Desktop recommends that you follow the structured approach and deploy in this order: Test, First, Fast, and then Broad.   
+
+All configurable settings are managed using the Microsoft Managed Desktop admin porta. For more information, see [Deploy changes](config-setting-deploy.md). 
 
 **Step 5: Track changes** – Track the progress for your changes on Deployment status. For each setting, you can:
-- **Track progress** – Track status after you deploy the change. The status will change to In progress, and then either Complete, or Failed. 
+- **Track progress** – Track status after you deploy the change. The status will change to **In progress**, and then either **Complete**, or **Failed**. If a deployment fails, a support request is automatically opened for Microsoft Managed Desktop Operations to investigate the issue.  
 - **See version deployed** – Each deployed change has a version number.
 - **Revert changes** – Reverting a change stops the current deployment, and reverts all rings to the last changes that was deployed to all rings. You are rolling back to the last-known-good setting value. 
 
-If you have any issues, [open a support request](admin-support.md) with Microsoft Managed Desktop Operations. 
+If a deployment has failed, or you are can't revert a change, [open a support request](admin-support.md) with Microsoft Managed Desktop Operations. 
 
 For more information, see [Deploy and track configurable settings](config-setting-deploy.md).
 

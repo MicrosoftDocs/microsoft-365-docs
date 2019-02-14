@@ -15,10 +15,10 @@ You can customize the desktop background picture for Microsoft Managed Desktop d
 
 ### Requirements
 
-These requirements must be met for your desktop background picture:
-- Picture file format: .jpg, jpeg, or .png
-- Host file on an internal https location. 
-- Hosting on an internal file share, like //sharename, is not allowed
+These requirements must be met for a desktop background picture:
+- Picture file format - .jpg, jpeg, or .png
+- File location - Host on a trusted secure http (https) location. 
+- Not allowed - Http and file share (unc) locations are not supported. 
 
 ### Customize and deploy desktop background picture
 
@@ -34,7 +34,7 @@ Browser start pages open in individual tabs when your users start Microsoft Edge
 
 ### Requirements
 
-You must provide the fully qualified domain name (FQDN) for intranet or Internet sites for your browser start pages. 
+You must provide the fully qualified domain name (FQDN) for intranet or Internet sites for your browser start pages. If internal sites are configured, let users know that access to these sites is only allowed when connected to the internal network when in the office, or when connected with a VPN connection. 
 
 ### Customize and deploy browser start pages
 
@@ -49,16 +49,16 @@ You must provide the fully qualified domain name (FQDN) for intranet or Internet
 
 ## Enterprise mode site list location
 
-The enterprise mode site list is an XML document with a list of sites, their compatibility mode, and their intended browser. This allows older sites to open in a specific browser. For more information on enterprise mode site lists, see [Enterprise Mode and Enterprise Mode Site Lists](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/what-is-enterprise-mode). 
+If you have specific websites and apps that you know have compatibility problems with Microsoft Edge, you can use the Enterprise Mode site list so that the websites automatically open using Internet Explorer 11. Also, if you know that your intranet sites aren't going to work correctly with Microsoft Edge, you can set all intranet sites to open using Internet Explorer 11 automatically. Using Enterprise Mode means that you can continue to use Microsoft Edge as your default browser, while also ensuring that your apps continue working on Internet Explorer 11. For more information on enterprise mode site lists,see [Enterprise Mode and Enterprise Mode Site Lists](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/what-is-enterprise-mode). 
 
 You can specify an https:// location, or the location for an internal share where you’ve hosted your enterprise mode site list. 
 
 ### Requirements
 
 These requirements must be met for the enterprise mode site list file:
-- Enterprise mode site list file format: XML file that meets file requirements
-- Host file on an internal https location. 
-- Hosting on an internal file share, like *//sharename*, is not allowed
+- File format - XML file that meets [file requirements](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/what-is-enterprise-mode#site-list-xml-file)
+- File location - Host file on an internal https location. 
+- Not allowed - Hosting on an internal file share, like *//sharename*, is not allowed
 
 ### Best practices
 
@@ -86,7 +86,7 @@ Trusted sites allow you to customize security zones, or where a site can be used
 
 ### Requirements
 
-You must provide the fully qualified domain name (FQDN) for intranet or Internet sites for each trusted site. 
+Provide the fully qualified domain name (FQDN) for intranet or Internet sites for each trusted site. 
 
 ### Customize and deploy trusted sites
 
@@ -109,18 +109,18 @@ You must provide the fully qualified domain name (FQDN) for intranet or Internet
 6. Select **Stage deployment** to save your changes and deploy them to the Test ring.
 
 ## Proxy
-You can manage proxy settings for your organization. Add your proxy server and port number, and then add your proxy site exceptions. Microsoft Managed Desktop includes a group of proxy exceptions that are required for the service to operate. Customers can’t make changes to the Microsoft Managed Desktop proxies. For more information, see [Network configuration for Microsoft Managed Desktop](../get-ready/network.md). 
+You can manage network proxy settings for your organization. Add your proxy server and port number, and then add your proxy site exceptions. Microsoft Managed Desktop includes a set of default proxy exceptions that are required for the service to operate. The default exclusion list may only be modified by the MMD service.  For more information, see [Network configuration for Microsoft Managed Desktop](../get-ready/network.md). 
 
-The proxy site exceptions that you add in the Microsoft Managed Desktop portal are added to the proxy exceptions included with Microsoft Managed Desktop service. 
+The proxy site exceptions that you add in the Microsoft Managed Desktop portal are added to the default proxy exceptions included with Microsoft Managed Desktop service. 
 
-Note: If you stage a deployment for proxy settings at the same time that Microsoft Managed Desktop proxies are being updated, your staged deployment will wait until the Microsoft Managed Desktop proxy changes are finished. 
+> [!NOTE]
+> Updating the default proxy exception list is always prioritized over customer deployments. This means that your staged deployment will be paused if there is a deployment for the default proxy exception list.  
 
 ### Requirements
 
 These requirements must be met for proxy server and proxy site exceptions:
 - Must be a valid server address and port number
-- Import proxy exception list: must be in xml format
-- Enter individual URL: must be a valid http site 
+- URLs must be a valid http site 
 
 ### Customize and deploy proxies
 
