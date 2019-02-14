@@ -8,7 +8,7 @@ ms.localizationpriority: normal
 ms.date: 2/12/2019
 ---
 
-# Deploy and track configurable settings with Microsoft Managed Desktop
+# Deploy and track configurable settings - Microsoft Managed Desktop
 
 After you make changes to your setting categories and stage a deployment, you can deploy and track progress for the deployment on Deployment status. This page shows a summary of each configurable setting. Open a setting category to see each deployment and their details, to deploy the changes. 
 

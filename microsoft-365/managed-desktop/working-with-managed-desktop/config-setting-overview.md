@@ -8,7 +8,7 @@ ms.localizationpriority: normal
 ms.date: 2/14/2019
 ---
 
-# Configurable settings for Microsoft Managed Desktop
+# Configurable settings - Microsoft Managed Desktop
 
 Microsoft Managed Desktop deploys settings and policies that are applied to all devices managed by Microsoft Managed Desktop. For more information, see [Device configuration](../service-description/device-policies.md).
 
