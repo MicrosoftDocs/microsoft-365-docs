@@ -16,7 +16,7 @@ For more information on Microsoft Managed Desktop, see [Microsoft Managed Deskto
 
 <!-- Microsoft 365 E5; Device as a Service -->
 <!-- Split from device & technologies topic. Destination topic for aka.ms/device-list  -->
-To be enrolled in Microsoft Managed Desktop a device must be one of the following models and meet or exceed the listed specifications for RAM, processor speed, and disk space. Other customizations are not supported.
+To be enrolled in Microsoft Managed Desktop a device must be one of the following models and meet or exceed the listed specifications for RAM, processor family, and disk space. Other customizations are not supported.
 
 <table>
 <tr><th colspan="6">Microsoft Managed Desktop Devices</th></tr>
