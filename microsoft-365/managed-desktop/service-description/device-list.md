@@ -20,7 +20,7 @@ To be enrolled in Microsoft Managed Desktop a device must be one of the followin
 
 <table>
 <tr><th colspan="6">Microsoft Managed Desktop Devices</th></tr>
-<tr><th>Model</th><th>Minimum Specs</th><th>Additional Requirements</th><th>Archive Date&#8308;</th><th>Retirement Date&#8308;</th></tr>
+<tr><th>Model</th><th>Minimum Specs</th><th>Additional Requirements</th><th>Archive&nbsp;&nbsp;&nbsp; Date&#8308;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th><th>Retirement Date&#8308;</th></tr>
 <tr><td>Dell Latitude 5490</td><td>256 GB / Intel i5 / 8 GB RAM</td><td>N/A</td><td>Jan 9, 2020</td><td>Jan 9, 2023</td></tr>
 <tr><td>Dell Latitude 7390 2-in-1</td><td>256 GB / Intel i5 / 8 GB RAM</td><td>N/A</td><td>Jan 9, 2020</td><td>Jan 9, 2023</td></tr>
 <tr><td>Dell Precision 3530</td><td>256 GB / Intel i5 / 8 GB RAM</td><td>N/A</td><td>May 22, 2020</td><td>May 22, 2023</td></tr>
@@ -61,7 +61,7 @@ In addition, the device must also:
 
 &#x00B3; This can be implemented either through a new device acquisition or by re-imaging a previously acquired device. The Surface Laptop 2, Pro 6, and Go devices meet these requirements from the factory and only require re-imaging if they were previously used as a non-MMD device per the first-run requirement.
 
-&#8308; Approval date corresponds to the day the model was officially added to the Microsoft Managed Desktop catalog. Archive date refers to the date on which these models will be subject to a shorter management period; any devices onboarded after this date will not receive a full three year ITaaS term. Retirement date refers to the date on which this model will no longer be supported by Microsoft Managed Desktop.
+&#8308; Archive date refers to the date on which these models will be subject to a shorter management period; any devices onboarded after this date will not receive a full three year ITaaS term. Retirement date refers to the date on which this model will no longer be supported by Microsoft Managed Desktop.
 
 &#8309; For more questions on HP devices contact <a href="mailto:mmd@hp.com">mmd@hp.com</a>.
 
