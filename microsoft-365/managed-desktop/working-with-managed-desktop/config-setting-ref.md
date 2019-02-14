@@ -10,6 +10,8 @@ ms.date: 2/14/2019
 
 # Configurable settings reference - Microsoft Managed Desktop
 
+This topic lists the settings categories that customers can configure with Microsoft Managed Desktop. Each setting category includes info on requirements, best practices, and how to customize the setting category. 
+
 ## Desktop background picture
 You can customize the desktop background picture for Microsoft Managed Desktop devices in your organization. You might use this to apply a company brand or marketing 
 
@@ -109,7 +111,7 @@ Provide the fully qualified domain name (FQDN) for intranet or Internet sites fo
 6. Select **Stage deployment** to save your changes and deploy them to the Test ring.
 
 ## Proxy
-You can manage network proxy settings for your organization. Add your proxy server and port number, and then add your proxy site exceptions. Microsoft Managed Desktop includes a set of default proxy exceptions that are required for the service to operate. The default exclusion list may only be modified by the MMD service.  For more information, see [Network configuration for Microsoft Managed Desktop](../get-ready/network.md). 
+You can manage network proxy settings for your organization. Add your proxy server and port number, and then add your proxy site exceptions. Microsoft Managed Desktop includes a set of default proxy exceptions that are required for the service to operate. The default exclusion list may only be modified by the Microsoft Managed Desktop service.  For more information, see [Network configuration for Microsoft Managed Desktop](../get-ready/network.md). 
 
 The proxy site exceptions that you add in the Microsoft Managed Desktop portal are added to the default proxy exceptions included with Microsoft Managed Desktop service. 
 

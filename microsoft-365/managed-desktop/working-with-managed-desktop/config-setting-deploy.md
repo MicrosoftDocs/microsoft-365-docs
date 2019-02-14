@@ -10,9 +10,7 @@ ms.date: 2/12/2019
 
 # Deploy and track configurable settings with Microsoft Managed Desktop
 
-After you make changes to your configurable settings and stage a deployment, you can deploy and track progress for the change on Deployment status. 
-
-This page shows a summary of each configurable setting. Open a setting to see each deployment and their details, to deploy the changes. 
+After you make changes to your setting categories and stage a deployment, you can deploy and track progress for the deployment on Deployment status. This page shows a summary of each configurable setting. Open a setting category to see each deployment and their details, to deploy the changes. 
 
 ## Deployment statuses 
 
@@ -23,7 +21,7 @@ Status	| Explanation
 Deploy | Your change is waiting to be deployed to this ring.
 In progress | The change is being applied to devices in this ring. 
 Complete | The change is being applied to devices in this ring. 
-Failed | The change failed on a 10 percent of devices in the ring, so the deployment was stopped.
+Failed | The change failed on a 10 percent of devices in the ring, so the deployment was stopped.<br><br> A support request will be automatically opened with Microsoft Managed Desktop operations to troubleshoot the deployment. 
 Reverted | The change was reverted to the last change that was successfully deployed to all deployment rings.
 
 ## Deploy changes
@@ -55,7 +53,7 @@ After you’ve deployed a change, you can revert from **Deployment status**. Whe
 1. Sign in to [Microsoft Managed Desktop Admin portal](http://aka.ms/mwaasportal)
 2. Under **Settings**, select **Configurable**.
 3. In **Deployment status** workspace, select the setting you want to revert, and then select the staged deployment to revert.
-4. Under **Need to revert this change** select **Revert deployment**.
+4. Under **Need to revert this change**, select **Revert deployment**.
 
 ![Configurable settings deployment revert](images/config-setting-revert.png) 
 

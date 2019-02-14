@@ -23,7 +23,7 @@
 ### [Admin support for Microsoft Managed Desktop](working-with-managed-desktop/admin-support.md)
 ### [End user support for Microsoft Managed Desktop](working-with-managed-desktop/end-user-support.md)
 ### [Manage apps in Microsoft Managed Desktop](working-with-managed-desktop/manage-apps.md)
-### [Configurable settings overview](working-with-managed-desktop/config-setting-overview.md)
+### [Configurable settings](working-with-managed-desktop/config-setting-overview.md)
 #### [Configurable settings reference](working-with-managed-desktop/config-setting-ref.md)
 #### [Deploy configurable settings](working-with-managed-desktop/config-setting-deploy.md)
 ## [Change history for Microsoft Managed Desktop documentation](change-history-managed-desktop.md)
