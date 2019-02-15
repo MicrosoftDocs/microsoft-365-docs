@@ -22,6 +22,7 @@ New or changed topic | Description
 [Configurable settings reference](working-with-managed-desktop/config-setting-ref.md) | New topic
 [Track and deploy configurable settings](working-with-managed-desktop/config-setting-deploy.md) | New topic
 
+
 ## January 2019
 New or changed topic | Description
 --- | ---
