@@ -5,7 +5,7 @@ keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation, depl
 ms.service: m365-md
 author: trudyha
 ms.localizationpriority: normal
-ms.date: 2/12/2019
+ms.date: 2/17/2019
 ---
 
 # Deploy and track configurable settings - Microsoft Managed Desktop
@@ -19,9 +19,9 @@ These are the statues you’ll see for each deployment.
 Status	| Explanation 
 --- | --- 
 Deploy | Your change is waiting to be deployed to this ring.
-In progress | The change is being applied to devices in this ring. 
-Complete | The change is being applied to devices in this ring. 
-Failed | The change failed on a 10 percent of devices in the ring, so the deployment was stopped.<br><br> A support request will be automatically opened with Microsoft Managed Desktop operations to troubleshoot the deployment. 
+In progress | The change is being applied to active devices in this ring. 
+Complete | The change completed on all active devices in this ring. 
+Failed | The change failed on a 10 percent of active devices in the ring, so the deployment was stopped.<br><br> A support request will be automatically opened with Microsoft Managed Desktop operations to troubleshoot the deployment. 
 Reverted | The change was reverted to the last change that was successfully deployed to all deployment rings.
 
 ## Deploy changes
