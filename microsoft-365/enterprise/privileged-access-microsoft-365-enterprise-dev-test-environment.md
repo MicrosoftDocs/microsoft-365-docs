@@ -3,12 +3,14 @@ title: "Privileged access management for your Microsoft 365 Enterprise test envi
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 09/21/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection: 
+- Ent_O365
+- Strat_O365_Enterprise
+- M365-security-compliance
 ms.custom: Ent_TLGs
 description: Use this Test Lab Guide to enable privileged access management your Microsoft 365 Enterprise test environment.
 ---
