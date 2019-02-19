@@ -3,7 +3,6 @@ title: "Step 4: Configure privileged access management for Office 365"
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 9/19/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -11,6 +10,7 @@ localization_priority: Priority
 ms.collection: 
 - Ent_O365
 - Strat_O365_Enterprise
+- M365-security-compliance
 ms.custom:
 description: Understand and configure privileged access management for Office 365.
 ---
