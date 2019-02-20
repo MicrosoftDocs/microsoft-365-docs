@@ -28,7 +28,7 @@ Win32 Applications |	Power BI Pro, Azure Information Protection Client, and Micr
 Web Applications |	Yammer, Office Online, Delve, Flow, StaffHub, PowerApps are not shipped with the device. Users can access the web version of these applications with a browser.
 Skype for Business Online Cloud PBX | This feature is available via Office 365. Microsoft Managed Desktop will not configure any aspect of this service
 
-## Windows 10 Enterprise
+## Windows 10 Enterprise E3
 
  |
  --- | ---
@@ -40,7 +40,7 @@ User Experience Virtualization (UE-V) |	This is not used with Microsoft Managed 
 Managed User Experience	 | This is not used with Microsoft Managed Desktop managed devices. MDM is used as a solution for device management.
 Windows Defender Advanced Threat Protection |	This is used by Microsoft Managed Desktop to manage device security policies. 
 
-## Enterprise Mobility + Security 
+## Enterprise Mobility + Security E3
 
  |
  --- | ---
