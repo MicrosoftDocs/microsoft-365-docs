@@ -60,9 +60,9 @@ All configurable settings are managed using the Microsoft Managed Desktop admin 
 - **Track progress** – Track status after you deploy the change. The status will change to **In progress**, and then either **Complete**, or **Failed**. If a deployment fails, a support request is automatically opened for Microsoft Managed Desktop Operations to investigate the issue.  
 - **See version deployed** – Each deployed change has a version number.
 - **Revert changes** – Reverting a change stops the current deployment, and reverts all rings to the last changes that was deployed to all rings. You are rolling back to the last-known-good setting value.
-- **Validatie cahnges** - After the deployment is complete, validate the changes were applied as you expected.  
+- **Validate changes** - After the deployment is complete, validate the changes were applied as you expected.  
 
-If a deployment has failed, or you are can't revert a change, [open a support request](admin-support.md) with Microsoft Managed Desktop Operations. 
+If a deployment has failed, or you can't revert a change, [open a support request](admin-support.md) with Microsoft Managed Desktop Operations. 
 
 For more information, see [Deploy and track configurable settings](config-setting-deploy.md).
 
