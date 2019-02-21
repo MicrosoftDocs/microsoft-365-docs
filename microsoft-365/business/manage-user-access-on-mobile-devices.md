@@ -10,6 +10,9 @@ f1_keywords:
 '
 ms.service: o365-administration
 localization_priority: Normal
+ms.collection:
+- M365-subscription-management 
+- M365-identity-device-management
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
