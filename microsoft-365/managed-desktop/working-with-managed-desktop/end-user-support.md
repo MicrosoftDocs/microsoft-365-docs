@@ -10,7 +10,7 @@ ms.date: 11/28/2018
 
 # Getting help for end users
 
-There are two ways that users in your organization can get help with their Microsoft Managed Desktop devices: **Get Help** app, or phone support. Note that devices residing in the test ring are out of scope for these end user support options. 
+There are two ways that users in your organization can get help with their Microsoft Managed Desktop devices: **Get Help** app, or phone support. Note that devices residing in the test group are out of scope for these end user support options. 
 
 ## Get Help app
 

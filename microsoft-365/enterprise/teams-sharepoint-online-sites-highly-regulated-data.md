@@ -18,7 +18,7 @@ description: Create a secure SharePoint Online team site or a Microsoft Teams te
 
 # Microsoft Teams and SharePoint Online sites for highly regulated data
 
-**Summary:** Create a secure SharePoint Online team site or a Microsoft Teams team to store your most valuable and sensitive digital assets.
+*This scenario applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
 
 Microsoft 365 Enterprise includes a full suite of cloud-based services so that you can create, store, and secure your highly regulated data. This includes data that is:
 

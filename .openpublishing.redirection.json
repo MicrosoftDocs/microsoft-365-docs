@@ -118,6 +118,16 @@
         "source_path": "microsoft-365/enterprise/secure-sharepoint-online-sites-and-files.md",
         "redirect_url": "https://docs.microsoft.com/office365/SecurityCompliance/secure-sharepoint-online-sites-and-files",
         "redirect_document_id": false
+      },
+      {
+        "source_path": "microsoft-365/managed-desktop/service-description/daas.md",
+        "redirect_url": "https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/",
+        "redirect_document_id": true
+      },
+      {
+        "source_path": "microsoft-365/managed-desktop/service-description/itaas.md",
+        "redirect_url": "https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/",
+        "redirect_document_id": true
       }
   ]
 }

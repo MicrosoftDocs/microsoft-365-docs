@@ -15,6 +15,8 @@ description: Step through the process of planning for, rolling out, and driving 
 
 # Deploy Exchange Online for Microsoft 365 Enterprise
 
+*This workload is included in both the E3 and E5 versions of Microsoft 365 Enterprise*
+
 Exchange Online is your primary cloud service for email and calendaring that helps your users collaborate in ways that do not require real-time chatting or centralized document storage. Exchange Online is how you do individual and small group short-lived communication and scheduling and is a key element of the Built for Teamwork value of Microsoft 365 Enterprise. Exchange Online lets you accomplish more and work more effectively with the well-known Outlook application, no matter what device you’re on.
 
 Exchange Online also has advanced security capabilities including anti-malware and anti-spam filtering to protect mailboxes and data loss prevention capabilities that prevent users from mistakenly sending sensitive information to unauthorized people. Exchange Online security is a key element of the Intelligent Security value of Microsoft 365 Enterprise.

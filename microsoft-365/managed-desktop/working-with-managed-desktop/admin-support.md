@@ -23,7 +23,7 @@ Support request type | When to use
 --- | ---
 Incident | You require the Microsoft Managed Desktop Operations Team to investigate, like widespread impact of a change or security incident.
 Request for information | You are planning a change for networking, proxy configuration, VPN systems, certificate expiration, or just need some information about the service. A response from the Microsoft Managed Desktop Operations Team is strongly advised when communicating a change within your organization.
-Change request | You require the Microsoft Managed Desktop Operations Team to make a change, such as moving devices between update rings.
+Change request | You require the Microsoft Managed Desktop Operations Team to make a change, such as moving devices between update groups.
 
 <span id="sev" />
 
