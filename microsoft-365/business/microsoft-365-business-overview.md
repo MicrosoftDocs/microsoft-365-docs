@@ -5,7 +5,7 @@ author: Sirkkuw
 manager: scotv
 ms.date: 9/20/2018
 ms.audience: Admin
-ms.topic: overview
+ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: 

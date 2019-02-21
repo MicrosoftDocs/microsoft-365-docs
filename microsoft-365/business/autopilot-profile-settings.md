@@ -4,7 +4,7 @@ ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
 ms.audience: Admin
-ms.topic: overview
+ms.topic: conceptual
 f1_keywords:
 - 'ZTDProfileSettings'
 - 'O365E_ZTDProfileSettings'

@@ -4,7 +4,7 @@ ms.author: sirkkuw
 author: sirkkuw
 manager: scotv
 ms.audience: Admin
-ms.topic: overview
+ms.topic: conceptual
 f1_keywords:
 - 'O365E_ESPoliciesLM'
 - 'ESPoliciesLM'
