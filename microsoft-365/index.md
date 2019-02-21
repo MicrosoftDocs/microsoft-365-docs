@@ -29,7 +29,7 @@ ms.date: 07/01/2018
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/hubs/microsoft365/M365-enterprise.svg" alt="Microsoft 365 Enterprise documentation and resources" />
+                                                        <img src="https://docs.microsoft.com/en-us/office/media/hub-tiles/M365-HubTile-Enterprise-400x140.svg" alt="Microsoft 365 Enterprise documentation and resources" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -49,7 +49,7 @@ ms.date: 07/01/2018
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/hubs/microsoft365/M365-business.svg" alt="Microsoft 365 Business documentation and resources" />
+                                                        <img src="https://docs.microsoft.com/en-us/office/media/hub-tiles/M365-HubTile-Business-400x140.svg" alt="Microsoft 365 Business documentation and resources" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -69,7 +69,7 @@ ms.date: 07/01/2018
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/hubs/microsoft365/M365-education.svg" alt="Microsoft 365 Education documentation and resources" />
+                                                        <img src="https://docs.microsoft.com/en-us/office/media/hub-tiles/M365-HubTile-Education-400x140.svg" alt="Microsoft 365 Education documentation and resources" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -89,7 +89,7 @@ ms.date: 07/01/2018
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="images/365-md.svg" alt="Microsoft 365 Managed Desktop documentation and resources" />
+                                                        <img src="https://docs.microsoft.com/en-us/office/media/hub-tiles/M365-HubTile-ManagedDesktop-400x140.svg" alt="Microsoft 365 Managed Desktop documentation and resources" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
