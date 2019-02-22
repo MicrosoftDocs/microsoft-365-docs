@@ -69,5 +69,5 @@ In addition, the device must also:
 
 &#8308; Archive date refers to the date on which these models will be subject to a shorter management period; any devices onboarded after this date will not receive a full three year ITaaS term. Retirement date refers to the date on which this model will no longer be supported by Microsoft Managed Desktop.
 
-&#8309; For more questions on HP devices contact: Americas (<a href="mailto:mmd-americas@hp.com">mmd-americas@hp.com</a>); Europe/Middle East/Africa (<a href="mailto:mmd-emea@hp.com">mmd-emea@hp.com</a>); Asia Pacific/Japan (<a href="mailto:mmd-apj@hp.com"</a>>mmm-apj@hp.com); Global (<a href="mailto:mmd@hp.com">mmd@hp.com</a>)
+&#8309; For more questions on HP devices contact: Americas (<a href="mailto:mmd-americas@hp.com">mmd-americas@hp.com</a>); Europe/Middle East/Africa (<a href="mailto:mmd-emea@hp.com">mmd-emea@hp.com</a>); Asia Pacific/Japan (<a href="mailto:mmd-apj@hp.com">mmm-apj@hp.com</a>); Global (<a href="mailto:mmd@hp.com">mmd@hp.com</a>)
 
