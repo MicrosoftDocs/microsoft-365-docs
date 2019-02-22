@@ -2,12 +2,12 @@
 title: DPIA Azure for the GDPR
 description: 
 keywords: DPIA, Microsoft 365, Microsoft 365 Education, Microsoft 365 documentation, GDPR
-author: BrendaCarter
+author: herviicban
 localization_priority: Priority
 audience: microsoft-business
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
-ms.author: herviicban
+ms.author: heicba
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
