@@ -34,11 +34,11 @@ IR camera required</td><td>May 14, 2020</td><td>May 14, 2023</td></tr>
 <tr><td>HP Elitebook x360 1040 G5</td><td>256 GB / Intel i5 / 8 GB RAM</td><td>SKU with 5VS01AV (MMD image)&#8309; <br />
 IR camera required</td><td>Oct 23, 2020</td><td>Oct 23, 2023</td></tr>
 <tr><td>HP EliteDesk 800 G4 DM</td><td>128 GB / Intel i3 / 8 GB RAM</td><td>SKU with 5VS04AV (MMD image)&#8309; <br />
-IR camera or Fingerprint reader required</td><td>Jun 6, 2020</td><td>Jun 6, 2023</td></tr>
+IR camera or Fingerprint reader required</td><td>Jul 18, 2020</td><td>Jul 18, 2023</td></tr>
 <tr><td>HP EliteDesk 800 G4 SFF</td><td>128 GB / Intel i3 / 8 GB RAM</td><td>SKU with 5VS04AV (MMD image)&#8309; <br />
-IR camera or Fingerprint reader required</td><td>Jun 6, 2020</td><td>Jun 6, 2023</td></tr>
+IR camera or Fingerprint reader required</td><td>Jul 18, 2020</td><td>Jul 18, 2023</td></tr>
 <tr><td>HP EliteOne 800 G4 23.8in AIO</td><td>128 GB / Intel i3 / 8 GB RAM</td><td>SKU with 5VS04AV (MMD image)&#8309; <br />
-IR camera or Fingerprint reader required</td><td>Jun 6, 2020</td><td>Jun 6, 2023</td></tr>
+IR camera or Fingerprint reader required</td><td>Jul 18, 2020</td><td>Jul 18, 2023</td></tr>
 <tr><td>HP Probook x360 440 G1</td><td>128 GB / Intel i3 / 8 GB RAM</td><td>SKU with 5VS04AV (MMD image)&#8309; <br />
 IR camera or Fingerprint reader required</td><td>Jun 6, 2020</td><td>Jun 6, 2023</td></tr>
 <tr><td>Surface Book 2&#x00B2;</td><td>512 GB / Intel i7 / 16 GB RAM</td><td>15-inch display</td><td>Nov 16, 2019</td><td>Nov 16, 2022</td></tr>
