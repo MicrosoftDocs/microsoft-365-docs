@@ -9,7 +9,7 @@ ms.localizationpriority: Priority
 audience: microsoft-business
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
-ms.author: bcarter
+ms.author: herviicban
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
