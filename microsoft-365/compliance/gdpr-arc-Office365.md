@@ -7,8 +7,8 @@ localization_priority: Priority
 audience: microsoft-business
 ms.prod: microsoft-365-enterprise
 ms.topic: article
-ms.author: bcarter
-manager: bcarter
+ms.author: herviicban
+manager: laurawi
 ms.collection: GDPR
 ---
 
