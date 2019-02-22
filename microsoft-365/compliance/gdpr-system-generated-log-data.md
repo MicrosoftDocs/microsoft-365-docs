@@ -2,13 +2,13 @@
 title: GDPR - Additional steps to export System-generated log data
 description: Microsoft technical guidance - Additional steps to export System-gnerated log data
 keywords: Export log data, Microsoft 365 Education, Microsoft 365 documentation, GDPR
-author: BrendaCarter
+author: herviicban
 localization_priority: Priority
 Robots:  "NOFOLLOW,NOINDEX"
 audience: microsoft-business
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
-ms.author: herviicban
+ms.author: heicba
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
