@@ -7,6 +7,7 @@ ms.audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
+ms.collection: M365-subscription-management 
 ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven

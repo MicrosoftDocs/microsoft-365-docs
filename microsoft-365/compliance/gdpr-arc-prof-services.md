@@ -2,12 +2,12 @@
 title: Microsoft Support and Professional Services accountability readiness checklist for the GDPR
 description: Provides a convenient way to access information you may need to support GDPR when using Microsoft Professional Services and Support Services.
 keywords: ARC, Accountability Readiness Checklists, Microsoft 365, Microsoft 365 Education, Microsoft 365 documentation, GDPR
-author: BrendaCarter
+author: herviicban
 localization_priority: Priority
 audience: microsoft-business
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
-ms.author: bcarter
+ms.author: heicba
 manager: laurawi
 audience: itpro
 ms.collection: GDPR

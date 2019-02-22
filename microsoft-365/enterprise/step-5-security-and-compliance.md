@@ -17,7 +17,7 @@ description: Learn about the important Windows and Office security and complianc
 
 # Step 5: Security and Compliance Considerations
 
-Review your options for targeting new security and compliance capabilities as part of your modern desktop deployment along with the considerations and common blockers when moving from previous versions of Windows and Office.
+Review your options for targeting new security and compliance capabilities as part of your Modern Desktop Deployment along with the considerations and common blockers when moving from previous versions of Windows and Office.
 
 ![](media/step-5-security-and-compliance-media/step-5-security-and-compliance-media-1.png)
 
@@ -48,7 +48,7 @@ Some disk encryption solutions allow you to perform the upgrades when using the 
 
 One option to resolve these issues is using BitLocker in Windows 10, which is included in Windows 10 Pro and higher editions. BitLocker allows you to suspend protection for OS upgrades and Feature Updates as part of the process.
 
-[Bitlocker basic deployment](https://docs.microsoft.com/en-us/windows/security/information-protection/bitlocker/bitlocker-basic-deployment)
+[Bitlocker baisic deployment](https://docs.microsoft.com/en-us/windows/security/information-protection/bitlocker/bitlocker-basic-deployment)
 
 ### Antivirus and Antimalware Application Compatibility
 

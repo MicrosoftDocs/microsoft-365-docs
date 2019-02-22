@@ -114,6 +114,9 @@ Optionally, you have integrated Windows Defender ATP with other tools to expand 
 
 If needed, [Step 5](windows10-enable-security-features.md#windows10-sec-atp) can help you with this requirement.
 
+## Updates for Windows 10 Enterprise
+
+
 
 ## Next phase
 

@@ -37,7 +37,7 @@ Support details:
 - Current: North America, United Kingdom, and Australia only (24x7x365) 
 - English is the only supported language for phone and chat conversations with customers 
 - We are partnering with, not replacing, your corporate helpdesk; Line-of-Business (LOB) apps, network resources, etc. are still handled by your helpdesk 
-- Non-Microsoft Managed Desktop devices are out of scope 
+- Microsoft Managed Devices residing in the test group and non-Microsoft Managed Desktop devices are out of scope 
 
 ## Hardware replacement
 

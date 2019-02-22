@@ -11,6 +11,9 @@ f1_keywords:
 - 'BCS365_Win10AppPolicy'
 ms.service: o365-administration
 localization_priority: Normal
+ms.collection: 
+- M365-subscription-management
+- M365-identity-device-management 
 ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
@@ -31,10 +34,8 @@ If your users have personal Windows 10 devices on which they perform work tasks,
   
 1. Sign in to [Microsoft 365 Business](https://portal.office.com) with global admin credentials. Choose the **Admin** tile to go to the admin center. 
     
-2. On the **Device policies** card of the admin portal, choose **Add policy**.
-    
-    ![Device policies card in the admin center.](media/27c12b61-d112-4348-b557-4f3e46204797.png)
-  
+2. On the left nav, choose **Devices** \> **Policies** \> **Add**.
+
 3. On the **Add policy** pane, enter a unique name for this policy. 
     
 4. Under **Policy type**, choose **Application Management for Windows 10**.

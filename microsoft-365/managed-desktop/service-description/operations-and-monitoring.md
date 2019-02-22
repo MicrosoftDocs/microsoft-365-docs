@@ -58,7 +58,7 @@ Not all changes have the same impact on your users or require action. Some are p
 --- | --- | --- | ---
 **Type of change** | - Feature updates<br>- New features or applications<br>- Deprecated features | Client hotfixes for issues | Security patches
 **Advance notice** | 5 days notice for changes that require action |	No, these are included in the monthly release	| No, these are included in the monthly release 
-**Communication channel** | - Message Center<br>- Email alert | - Message Center<br>- Email alert | - Message Center<br>- Email alert<br>- Security bulletin or CVE 
+**Communication channel** | - Message Center<br>- Email alert | - Message Center<br>- Email alert | - Message Center<br>- Email alert
 **Requires tenant admin action** | Sometimes |	Rarely |	Rarely 
 **Type of action** | Change settings | Communicate changes to users | Change admin settings 	
 **Requires testing** | Check business applications, including remote access services |	Sometimes - testing the fix against processes or customizations |	Rarely 

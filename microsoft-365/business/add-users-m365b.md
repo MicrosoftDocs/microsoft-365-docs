@@ -7,7 +7,9 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Adm_O365
+ms.collection: 
+- Adm_O365
+- M365-subscription-management 
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -24,9 +26,7 @@ description: "Learn how to add new users, secure their devices,  and assign role
 
 ## Add new users
 
-In the admin center go to the **Users** card \> **Add a user**.
-  
-![Choose Add a user on the Users card in the admin center](media/55218f5b-899c-41cb-8486-8746fcef1748.png)
+In the admin center go to the **User management** card \> **Add user**.
   
 In the **New user** panel, type in the required information. 
   

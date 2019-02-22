@@ -2,13 +2,13 @@
 title: Office 365 accountability readiness checklist for the GDPR
 description: This accountability readiness checklist (ARC) gives you information that you need to support GDPR when using Office 365.
 keywords: GDPR Accountability Readiness, accountability readiness checklist, Microsoft 365, Microsoft 365 Education, GDPR documentation, GDPR
-author: BrendaCarter
+author: herviicban
 localization_priority: Priority
 audience: microsoft-business
 ms.prod: microsoft-365-enterprise
 ms.topic: article
-ms.author: bcarter
-manager: bcarter
+ms.author: heicba
+manager: laurawi
 ms.collection: GDPR
 ---
 

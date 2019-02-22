@@ -2,13 +2,13 @@
 title: Azure and Breach Notification Under the GDPR
 description: How Azure protects against a personal data breach and how Microsoft responds and notifies you if a breach occurs.
 keywords: Azure, Microsoft 365, Microsoft 365 Education, Microsoft 365 documentation, GDPR
-author: BrendaCarter
+author: herviicban
 localization_priority: Priority
 audience: microsoft-business
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.date: 04/13/2018
-ms.author: bcarter
+ms.author: heicba
 manager: laurawi
 audience: itpro
 ms.collection: GDPR

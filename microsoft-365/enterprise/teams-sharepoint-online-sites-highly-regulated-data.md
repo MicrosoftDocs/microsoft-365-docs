@@ -3,7 +3,7 @@ title: "Microsoft Teams and SharePoint Online sites for highly regulated data"
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 12/14/2018
+ms.date: 09/13/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -18,7 +18,7 @@ description: Create a secure SharePoint Online team site or a Microsoft Teams te
 
 # Microsoft Teams and SharePoint Online sites for highly regulated data
 
-**Summary:** Create a secure SharePoint Online team site or a Microsoft Teams team to store your most valuable and sensitive digital assets.
+*This scenario applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
 
 Microsoft 365 Enterprise includes a full suite of cloud-based services so that you can create, store, and secure your highly regulated data. This includes data that is:
 
@@ -32,21 +32,27 @@ A Microsoft 365 Enterprise cloud-based solution that meets this business need re
    - Access to all except a specific set of user accounts through group membership, which includes those who can access the SharePoint Online team site and at what level of permission, and those who can administer it.
    - Members of the site from granting access to others.
    - Non-members of the site from requesting access to the site.
+- Configure an Office 365 retention label for your SharePoint Online sites or teams as a default way to classify digital assets on the site.
+- Block users from sending files outside the organization.
 - Encrypt the most sensitive digital assets of the site or team.
 - Add permissions to the most sensitive digital assets so that if even if they get shared outside of the site, opening the asset still requires the valid credentials of a user account that has permission.
 
 The following table maps the requirements of this solution to a feature of Microsoft 365 Enterprise.
 
-| Requirement | Microsoft 365 Enterprise feature |
+|||
 |:-------|:-----|
+| **Requirement** | **Microsoft 365 Enterprise feature** |
 | Store digital assets | SharePoint Online team sites and teams in Office 365 |
 | Lock down the site | Azure AD groups and SharePoint Online team site permissions |
+| Label the digital assets of the site | Office 365 retention labels |
+| Block users when sending files outside the organization | Data Loss Prevention (DLP) policies in Office 365 |
 | Encrypt all of the digital assets of the site | Azure Information Protection sub-labels in Enterprise Mobility + Security (EMS) |
 | Add permissions to the digital assets of the site | Azure Information Protection sub-labels in EMS |
+|||
 
 This solution requires that you have already deployed:
 
-- The Information Protectioj phase of your [foundation infrastructure](deploy-foundation-infrastructure.md). 
+- Your [foundation infrastructure](deploy-foundation-infrastructure.md). 
 - For highly regulated data in SharePoint Online team sites, [SharePoint Online](sharepoint-online-onedrive-workload.md).
 - For highly regulated data in Microsoft Teams teams, [Microsoft Teams](teams-workload.md).
 
@@ -70,6 +76,7 @@ That purpose will drive the determination of essential configuration items such 
 
 - The set of SharePoint Online permission sets and SharePoint groups
 - The set of access groups, the Azure AD security groups and their members to add to the SharePoint groups
+- The Office 365 retention label to assign to the site and the set of DLP policies for the label
 - The settings of an Azure Information Protection sub-label that users apply to highly sensitive digital assets stored in the site
 
 Once determined, you use these settings to configure the site in Phase 2. 
@@ -87,7 +94,19 @@ The security of SharePoint Online team sites that contain highly regulated asset
 
 See [Design an isolated SharePoint Online team site](https://docs.microsoft.com/office365/enterprise/design-an-isolated-sharepoint-online-team-site) for the details to determine the set of permission levels, SharePoint groups, access groups, and group members.
 
-### Step 2: Your Azure Information Protection sub-label
+### Step 2: Office 365 retention labels and DLP policies
+
+When applied to a SharePoint Online team site, Office 365 retention labels provide a default method of classifying all digital assets stored on the site.
+ 
+For SharePoint Online sites for highly regulated data, you need to determine which Office 365 retention label to use.
+
+For the design considerations of Office 365 labels, see [Office 365 classification and labels](https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-and-files#office-365-classification-and-labels).
+
+To protect sensitive information and prevent its accidental or intentional disclosure, you use DLP policies. For more information, see this [overview](https://docs.microsoft.com/office365/securitycompliance/data-loss-prevention-policies).
+
+For SharePoint Online sites for highly regulated data, you must configure a DLP policy for the Office 365 retention label assigned to the site to block users when they attempt to share digital assets with external users. 
+
+### Step 3: Your Azure Information Protection sub-label
 
 To provide encryption and a set of permissions to your most sensitive digital assets, users must apply an Azure Information Protection label using the Azure Information Protection client. To use Azure Information Protection labels for SharePoint Online sites for highly regulated data, you must configure an Azure Information Protection sub-label in a scoped policy. 
 
@@ -103,6 +122,7 @@ You have determined the following:
 
 - The set of SharePoint groups and permission levels
 - The set of access groups and their members for each permission level
+- The appropriate Office 365 retentionn label and the DLP policy that is associated with the label
 - The settings of the Azure Information Protection sub-label that include encryption and permissions
 
 ## Phase 2: Configure
@@ -116,14 +136,21 @@ Use the instructions in [Deploy an isolated SharePoint Online team site](https:/
 - Create and populate the access groups for each SharePoint permission level used on the site.
 - Create and configure the isolated team site.
 
-### Step 2: Create an Azure Information Protection sub-label for the site
+### Step 2: Configure the site for an Office 365 retention label DLP policy
+
+Use the instructions in [Protect SharePoint Online files with Office 365 labels and DLP](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-office-365-labels-and-dlp) to:
+
+- Identify or create the Office 365 retention label and apply it to your isolated SharePoint Online site.
+- Create and configure the DLP policy that blocks users when they attempt to share a digital asset on your SharePoint Online site outside the organization.
+
+### Step 3: Create an Azure Information Protection sub-label for the site
 
 Use the instructions in [Protect SharePoint Online files with Azure Information Protection](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-azure-information-protection) to: 
 
 - Create and configure an Azure Information Protection sub-label in a scoped policy.
 - Deploy the Azure Information Protection client to user computers.
 
-### Step 3 (optional): Create a team for the highly regulated data
+### Step 4 (optional): Create a team for the highly regulated data
 
 If you want a team for highly regulated data, you first create a SharePoint Online site for highly regulated data. When you create the initial private SharePoint Online team site, you specify an Office 365 group name.
 
@@ -142,6 +169,8 @@ The **Files** tab of the new team lists the contents of the **General** folder o
 You have configured the following:
 
 - A SharePoint Online isolated site
+- An Office 365 retention label assigned to the SharePoint Online isolated site
+- A DLP policy for the Office 365 retention label
 - An Azure Information Protection sub-label of a scoped policy that users can apply to the most sensitive digital assets stored in the site that encrypts the asset and enforces permissions
 - If needed, a team for highly regulated data based on the SharePoint Online site
 
@@ -158,6 +187,7 @@ After completing your configuration, train the set of users who are members of t
 - On the importance of using the new site or team to protect valuable assets and the consequences of a highly regulated data leak, such as legal ramifications, regulatory fines, ransomware, or loss of competitive advantage.
 - How to access the site and its assets.
 - How to create new files on the site and upload new files stored locally.
+- How the DLP policy blocks them from sharing files externally.
 - How to use the Azure Information Protection client to label the most sensitive digital assets with the configured sub-label.
 - How the Azure Information Protection sub-label protects an asset even when it is leaked off the site or team.
 
@@ -182,3 +212,4 @@ Sensitive digital assets are stored exclusively on SharePoint Online sites or te
 
 [Test lab guides](m365-enterprise-test-lab-guides.md)
 
+[Secure SharePoint Online sites in a dev/test environment](https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-in-a-dev-test-environment)

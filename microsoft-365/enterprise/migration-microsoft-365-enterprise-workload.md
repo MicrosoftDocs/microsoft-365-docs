@@ -2,7 +2,7 @@
 title: "Migration to Microsoft 365 Enterprise"
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/28/2018
+ms.date: 02/13/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -25,6 +25,12 @@ To maximize the business value of the Microsoft 365 Enterprise integrated suite 
 - Windows 7 and Windows 8.1 on your devices to Windows 10 Enterprise
 
 Accomplishing all of these migrations over time gets your organization closer to the [modern workplace](https://www.microsoft.com/microsoft-365/blog/2018/04/27/making-it-simpler-with-a-modern-workplace/), a secure and integrated environment that unlocks teamwork and creativity in your organization, all of which is enabled and empowered by Microsoft 365 Enterprise. 
+
+For information about migrating users and data for specific Office 365 workloads:
+
+- User mailboxes from Exchange Server to Exchange Online, see the [Exchange Online workload](exchangeonline-workload.md).
+- SharePoint data from SharePoint Server to SharePoint Online, see the [SharePoint Online workload](sharepoint-online-onedrive-workload.md).
+- Skype for Business Online to Microsoft Teams, see the [Microsoft Teams workload](teams-workload.md).
 
 ## Migration for Microsoft Office client products
 

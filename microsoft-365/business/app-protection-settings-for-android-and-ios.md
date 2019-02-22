@@ -7,7 +7,10 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Adm_O365
+ms.collection: 
+- Adm_O365
+- M365-subscription-management 
+- M365-identity-device-management
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -26,9 +29,7 @@ description: "Learn how to create, edit, or delete an app management policy, and
 
 1. Sign in to [Microsoft 365 Business](https://portal.office.com) with global admin credentials. 
     
-2. In the admin center, on the **Device policies** card, choose **Add policy**.
-    
-    ![Device policies card in the admin center.](media/27c12b61-d112-4348-b557-4f3e46204797.png)
+2. In the admin center, choose **Devices** \> **Policies** \> **Add policy**.
   
 3. On the **Add policy** pane, enter a unique name for this policy. 
     

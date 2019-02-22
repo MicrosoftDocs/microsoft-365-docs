@@ -8,6 +8,7 @@ keywords: Microsoft 365 Business, Microsoft 365, business, SMB, small to midsize
 localization_priority: Normal
 audience: microsoft-business
 ms.prod: microsoft-365-business
+ms.collection: M365-subscription-management 
 title: Microsoft 365 Business resources
 description: Learn how to plan, deploy, and use Microsoft Office 365, Windows 10, and Enterprise Mobility + Security together in your business for an integrated and secure infrastructure that enables teamwork and unlocks creativity.
 ---
