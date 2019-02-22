@@ -22,6 +22,7 @@
 ## [Working with Microsoft Managed Desktop](working-with-managed-desktop/index.md)
 ### [Admin support for Microsoft Managed Desktop](working-with-managed-desktop/admin-support.md)
 ### [End user support for Microsoft Managed Desktop](working-with-managed-desktop/end-user-support.md)
+### [Get started with devices](working-with-managed-desktop/get-started-devices.md)
 ### [Manage apps in Microsoft Managed Desktop](working-with-managed-desktop/manage-apps.md)
 ### [Configurable settings](working-with-managed-desktop/config-setting-overview.md)
 #### [Configurable settings reference](working-with-managed-desktop/config-setting-ref.md)
