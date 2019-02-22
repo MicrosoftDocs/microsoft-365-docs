@@ -21,11 +21,11 @@ To be enrolled in Microsoft Managed Desktop a device must be one of the followin
 <table>
 <tr><th colspan="6">Microsoft Managed Desktop Devices</th></tr>
 <tr><th>Model</th><th>Minimum Specs</th><th>Additional Requirements</th><th>Archive&nbsp;&nbsp;&nbsp; Date&#8308;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th><th>Retirement Date&#8308;</th></tr>
-<tr><td>Dell Latitude 5490</td><td>256 GB / Intel i5 / 8 GB RAM</td><td>IR Camera required</td><td>Jan 9, 2020</td><td>Jan 9, 2023</td></tr>
-<tr><td>Dell Latitude 7390 2-in-1</td><td>256 GB / Intel i5 / 8 GB RAM</td><td>IR Camera required</td><td>Jan 9, 2020</td><td>Jan 9, 2023</td></tr>
-<tr><td>Dell Precision 3530</td><td>256 GB / Intel i5 / 8 GB RAM</td><td>IR Camera required</td><td>May 22, 2020</td><td>May 22, 2023</td></tr>
+<tr><td>Dell Latitude 5490</td><td>256 GB / Intel i5 / 8 GB RAM</td><td>IR camera required</td><td>Jan 9, 2020</td><td>Jan 9, 2023</td></tr>
+<tr><td>Dell Latitude 7390 2-in-1</td><td>256 GB / Intel i5 / 8 GB RAM</td><td>IR camera required</td><td>Jan 9, 2020</td><td>Jan 9, 2023</td></tr>
+<tr><td>Dell Precision 3530</td><td>256 GB / Intel i5 / 8 GB RAM</td><td>IR camera required</td><td>May 22, 2020</td><td>May 22, 2023</td></tr>
 <tr><td>HP Elite x2 1013 G3</td><td>256 GB / Intel i5 / 8 GB RAM</td><td>SKU with 5VS03AV (MMD image)&#8309; <br />
-IR Camera required
+IR camera required
 </td><td>May 14, 2020</td><td>May 14, 2023</td></tr>
 <tr><td>HP EliteBook 840 G5</td><td>128 GB / Intel i5 / 8 GB RAM</td><td>SKU with 5VS01AV (MMD image)&#8309; <br />
 IR Camera or Fingerprint required</td><td>Feb 15, 2020</td><td>Feb 15, 2023</td></tr>
