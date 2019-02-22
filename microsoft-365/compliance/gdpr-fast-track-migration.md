@@ -8,7 +8,7 @@ Robots:  NOFOLLOW,NOINDEX
 audience: microsoft-business
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
-ms.author: herviicban
+ms.author: mohitku
 manager: laurawi
 audience: itpro
 ms.collection: GDPR

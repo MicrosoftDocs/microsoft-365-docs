@@ -2,13 +2,13 @@
 title: Dynamics 365 accountability readiness checklist for the GDPR
 description: Provides a convenient way to access information you may need to support GDPR when using Dynamics 365.
 keywords: Microsoft 365, Microsoft 365 Education, Microsoft 365 documentation, GDPR
-author: BrendaCarter
+author: herviicban
 localization_priority: Priority
 audience: microsoft-business
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.date: 05/24/2018
-ms.author: herviicban
+ms.author: heicba
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
