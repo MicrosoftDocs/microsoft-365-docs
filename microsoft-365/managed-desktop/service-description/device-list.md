@@ -1,4 +1,4 @@
-&#8310;---
+---
 title: Microsoft Managed Desktop devices
 description:  This topic lists the device specifications used in Microsoft Managed Desktop.
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
