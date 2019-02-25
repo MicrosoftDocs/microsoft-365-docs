@@ -43,7 +43,7 @@ IR camera or Fingerprint reader required</td><td>Jul 18, 2020</td><td>Jul 18, 20
 IR camera or Fingerprint reader required</td><td>Jun 6, 2020</td><td>Jun 6, 2023</td></tr>
 <tr><td>Surface Book 2&#x00B2;</td><td>512 GB / Intel i7 / 16 GB RAM</td><td>15-inch display</td><td>Nov 16, 2019</td><td>Nov 16, 2022</td></tr>
 <tr><td>Surface Go&#x00B2;</td><td>128 GB / Intel 4415Y / 8GB RAM</td><td>N/A</td><td>Aug 2, 2020</td><td>Aug 2, 2023</td></tr>
-<tr><td><a href="https://www.microsoft.com/en-us/p/surface-laptop-1st-gen-for-business/8w36k32zm453/g4vs?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab" target="_blank">Surface Laptop</a>&#x00B2;</td><td>256 GB / Intel i5 / 8 GB RAM</td><td>N/A</td><td>May 20, 2019</td><td>May 20, 2022</td></tr>
+<tr><td><a target="_blank" href="https://www.microsoft.com/en-us/p/surface-laptop-1st-gen-for-business/8w36k32zm453/g4vs?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab">Surface Laptop</a>&#x00B2;</td><td>256 GB / Intel i5 / 8 GB RAM</td><td>N/A</td><td>May 20, 2019</td><td>May 20, 2022</td></tr>
 <tr><td>Surface Laptop 2&#x00B2;</td><td>256 GB / Intel i5 / 8 GB RAM </td><td>N/A</td><td>Oct 16, 2020</td><td>Oct 16, 2023</td></tr>
 <tr><td>Surface Pro&#x00B2;</td><td> 256 GB / Intel i5 / 8 GB RAM</td><td>N/A</td><td>Jun 15, 2019</td><td>Jun 15, 2022</td></tr>
 <tr><td>Surface Pro 6&#x00B2;</td><td>256 GB / Intel i5 / 8 GB RAM</td><td>N/A</td><td>Oct 16, 2020</td><td>Oct 16, 2023</td></tr>
