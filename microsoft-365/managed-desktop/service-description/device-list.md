@@ -63,10 +63,10 @@ In addition, the device must also:
 
 &#x00B9; Additions can be made to this list at any time. Removals will be posted to this page 90 days prior to disallowing those devices from enrolling.
 
-&#x00B3; This can be implemented either through a new device acquisition or by re-imaging a previously acquired device.
-
 &#178; Archive date refers to the date on which these models will be subject to a shorter management period; any devices onboarded after this date will not receive a full three year ITaaS term. Retirement date refers to the date on which this model will no longer be supported by Microsoft Managed Desktop.
 
 &#8309; For more questions on HP devices contact: Americas (<a href="mailto:mmd-americas@hp.com">mmd-americas@hp.com</a>); Europe/Middle East/Africa (<a href="mailto:mmd-emea@hp.com">mmd-emea@hp.com</a>); Asia Pacific/Japan (<a href="mailto:mmd-apj@hp.com">mmm-apj@hp.com</a>); Global (<a href="mailto:mmd@hp.com">mmd@hp.com</a>)
 
 &#8310; For more questions on Dell devices contact <a href="mailto:MMD_at_dell@dell.com">MMD_at_dell@dell.com</a>.
+
+&#8309; This can be implemented either through a new device acquisition or by re-imaging a previously acquired device.
