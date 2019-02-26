@@ -19,6 +19,7 @@ description: Understand and configure your administrator accounts for maximum pr
 
 ![](./media/deploy-foundation-infrastructure/identity_icon-small.png)
 
+<a name="identity-global-admin"></a>
 ## Protect global administrator accounts
 
 *This is required and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
@@ -59,6 +60,7 @@ The results of this section are:
 As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria.md#crit-identity-global-admin) for this section.
 
 
+<a name="identity-pim"></a>
 ## Set up on-demand global administrators
 
 *This is optional and applies only to the E5 version of Microsoft 365 Enterprise*
