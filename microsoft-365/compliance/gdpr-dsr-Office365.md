@@ -10,7 +10,7 @@ ms.topic:  article
 ms.author:  heicba
 manager: laurawi
 audience:  itpro
-ms.collection:  GDPROur Commitment to Our Customers
+ms.collection:  GDPR
 ---
 
 # Office 365 Data Subject Requests for the GDPR
