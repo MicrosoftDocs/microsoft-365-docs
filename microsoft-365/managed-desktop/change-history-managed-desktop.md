@@ -21,7 +21,7 @@ New or changed topic | Description
 [Configurable settings overview](working-with-managed-desktop/config-setting-overview.md) | New topic
 [Configurable settings reference](working-with-managed-desktop/config-setting-ref.md) | New topic
 [Track and deploy configurable settings](working-with-managed-desktop/config-setting-deploy.md) | New topic
-
+[Get started with devices](working-with-managed-desktop/get-started-devices.md) | New topic
 
 ## January 2019
 New or changed topic | Description
