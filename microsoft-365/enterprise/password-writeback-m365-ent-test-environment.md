@@ -101,11 +101,11 @@ Next, configure Azure AD Connect on APP1 for password writeback.
 
 4. On the **Additional tasks** page, click **Customize synchronization options**, and then click **Next**.
 
-5. On the **Connect to Azure AD** page, type the User 1 account credentials, and then click **Next**.
+5. On the **Connect to Azure AD** page, type your global administrator account credentials, and then click **Next**.
 
 6. On the **Connect directories** and **Domain/OU filtering** pages, click **Next**.
 
-7. On the **Optional features** page, select **Password writeback** and click Next. 
+7. On the **Optional features** page, select **Password writeback** and click **Next**. 
 
 8. On the **Ready to configure** page, click **Configure** and wait for the process to finish.
 
