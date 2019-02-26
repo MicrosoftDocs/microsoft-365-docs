@@ -3,7 +3,7 @@ title: "Microsoft 365 Enterprise foundation infrastructure"
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 12/13/2018
+ms.date: 02/26/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -17,27 +17,33 @@ description: Understand the major phases of deploying the foundation infrastruct
 
 # Microsoft 365 Enterprise foundation infrastructure
 
-If you're doing the end-to-end deployment of Microsoft 365 Enterprise yourself, you must first build a firm foundation upon which applications and services can unlock creativity and teamwork in a secure environment. Use these phases to plan for and deploy the foundation infrastructure of Microsoft 365 Enterprise:
+If you're doing the end-to-end deployment of Microsoft 365 Enterprise yourself, you should first build a firm foundation upon which applications and services can unlock creativity and teamwork in a secure environment. 
+
+Use these phases to plan for and deploy the foundation infrastructure of Microsoft 365 Enterprise:
 
 | | Phase | Results |
 |:-------|:-----|:-----|
 |![](./media/deploy-foundation-infrastructure/networking_icon-small.png)|[Phase 1: Networking](networking-infrastructure.md)| Your network is optimized for access to Microsoft 365's cloud-based services. |
-|![](./media/deploy-foundation-infrastructure/identity_icon-small.png)|[Phase 2: Identity](identity-infrastructure.md)| Your users and groups are synchronized, your user authentication is strong, and your admin accounts are protected. |
+|![](./media/deploy-foundation-infrastructure/identity_icon-small.png)|[Phase 2: Identity](identity-infrastructure.md)| Your admin accounts are protected, your users and groups are synchronized, and your user authentication is strong. |
 |![](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)|[Phase 3: Windows 10 Enterprise](windows10-infrastructure.md)| Your existing Windows-based computers can upgrade to Windows 10 Enterprise and new devices are installed with Windows 10 Enterprise. |
 |![](./media/deploy-foundation-infrastructure/O365proplus_icon-small.png)|[Phase 4: Office 365 ProPlus](office365proplus-infrastructure.md)| Your existing users of Microsoft Office can upgrade to Office 365 ProPlus. |
 |![](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon-small.png)|[Phase 5: Mobile device management](mobility-infrastructure.md)| Your devices can be enrolled and managed. |
 |![](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)|[Phase 6: Information protection](infoprotect-infrastructure.md)| Your labels are ready to protect documents and Office 365 security features are enabled. |
 
-The order of the phases start with the most foundational (networking and identity), and then create layers of infrastructure settings and groups to:
+The phases start with the most foundational (networking and identity), and then create layers of infrastructure settings and groups to:
 
 - Install the most current and secure version of Windows on your devices.
 - Install the most current version of Office on your devices.
 - Manage your organization's devices.
 - Protect the information on those devices and in the cloud.
 
-However, you have the flexibility of configuring and rolling out the phases of the foundation infrastructure to fit your business needs.
+However, you have the flexibility of configuring and rolling out the phases or steps within phases to fit your IT resources and business needs.
 
-Before you can exit each phase, you must examine its exit criteria, which include required conditions that you must meet and optional conditions to consider. Exit criteria for each phase ensures that your on-premises and cloud infrastructure and resulting end-to-end configuration meet the requirements for a Microsoft 365 Enterprise deployment.
+- **If you are a smaller or newer organization**, follow the phases in order to methodically build out your infrastructure.
+
+-  **If you are an enterprise organization**, view the phases as layers of IT infrastructure, rather than a defined path, and determine how to best work toward eventual adherence to the requirements of each layer across your organization.
+
+Before you are done each phase, examine its exit criteria, which include required conditions that you must meet and optional conditions to consider. Exit criteria for each phase ensures that your on-premises and cloud infrastructure and resulting end-to-end configuration meet the requirements for a Microsoft 365 Enterprise deployment.
 
 To see how the content is structured, watch this short video.
 

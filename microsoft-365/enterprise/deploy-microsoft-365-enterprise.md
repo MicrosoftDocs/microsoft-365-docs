@@ -3,7 +3,7 @@ title: "Deploy Microsoft 365 Enterprise"
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 12/13/2018
+ms.date: 02/26/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -42,22 +42,33 @@ Get started on your end-to-end deployment journey with FastTrack [here](https://
 
 ## Microsoft 365 Enterprise deployment guide
 
-The Microsoft 365 Enterprise Deployment Guide steps you through the end-to-end deployment so that when you're done, you have the correct and required configuration of Microsoft 365 Enterprise products and features.
+The Microsoft 365 Enterprise Deployment Guide steps you through the correct and required configuration of Microsoft 365 Enterprise products and features.
 
-To deploy Microsoft 365 Enterprise yourself:
+To deploy Microsoft 365 Enterprise yourself, you can:
 
-- First, deploy the required [foundation infrastructure](deploy-foundation-infrastructure.md) for built-in security and integration for simplified management, which makes it easier to ensure your client software is updated with the latest productivity and security enhancements.
-- Next, deploy key productivity [workloads and scenarios](deploy-workloads.md) on top of the foundation infrastructure. These unlock creativity and teamwork in your organization.
+- Deploy the [foundation infrastructure](deploy-foundation-infrastructure.md) for built-in security and integration for simplified management, which makes it easier to ensure your client software is updated with the latest productivity and security enhancements. 
+ 
+  The foundation infrastructure is organized as a series of numbered phases that build upon each other and towards an environment that supports Microsoft 365 Enterprise workloads and scenarios. 
 
-Here's the relationship between the foundation infrastructure and the workloads and scenarios and your path through the content.
+  **If you are a smaller or newer organization**, follow the phases in order to methodically build out your infrastructure.
+
+  However, you can deploy phases or the portions of phases of this infrastructure in any order as needed, [one after the other or in parallel](deployment-strategies-microsoft-365-enterprise.md), to integrate with your current infrastructure, fit your IT plans and resources, and meet your business needs. 
+
+  **If you are an enterprise organization**, view the phases as layers of IT infrastructure, rather than a defined path, and determine how to best work toward eventual adherence to the requirements of each layer across your organization.
+
+- Deploy key productivity [workloads and scenarios](deploy-workloads.md) on top of your infrastructure. These unlock creativity and teamwork in your organization.
+
+Here's the relationship between the foundation infrastructure and the workloads and scenarios.
 
 ![](./media/deploy-microsoft-365-enterprise/m365-deploy-content-arch.png)
+
+Workloads and scenarios operate over the top of the foundation infrastructure. However, you do not have to have all of the foundation infrastructure phases built out to begin using workloads for productivity and collaboration.
 
 Get self-started on your end-to-end deployment journey [here](deploy-foundation-infrastructure.md).
 
 ## Take a test drive
 
-“For the things we have to learn before we can do them, we learn by doing them.” - Aristotle
+“*For the things we have to learn before we can do them, we learn by doing them.*” - Aristotle
 
 If you're new to Microsoft 365 Enterprise or to a specific product or feature, one of the best ways to gain understanding is to build it out yourself and see it working.
 
@@ -172,18 +183,8 @@ Take a peek inside Microsoft IT and learn how they deployed Microsoft 365 Enterp
 
 The Contoso Corporation is a fictional but representative global manufacturing conglomerate with its headquarters in Paris, France. See how [Contoso deployed Microsoft 365 Enterprise](contoso-case-study.md) and addressed major design decisions and implementation details for networking, identity, Windows 10 Enterprise, Office 365 ProPlus, mobile device management, information protection, and security. 
 
-## Additional Microsoft 365 solutions
-
-- [Microsoft 365 Business](https://docs.microsoft.com/microsoft-365/business/)
- 
-  Bring together the best-in-class productivity and collaboration capabilities of Office 365 with device management and security solutions to safeguard business data for small and midsize businesses (SMB).
-
-- [Microsoft 365 Education](https://docs.microsoft.com/education)
- 
-  Empower educators to unlock creativity, promote teamwork, and provide a simple and safe experience in a single, affordable solution built for education.
-
 ## Next step
 
 To do it with direct Microsoft assistance, use [FastTrack](https://fasttrack.microsoft.com/microsoft365).
 
-To do it yourself, see the [foundation infrastructure](deploy-foundation-infrastructure.md).
+To get started doing it yourself, see the [foundation infrastructure](deploy-foundation-infrastructure.md).
