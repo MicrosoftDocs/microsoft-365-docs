@@ -20,7 +20,7 @@ To be enrolled in Microsoft Managed Desktop a device must be one of the followin
 
 <table>
 <tr><th colspan="6">Microsoft Managed Desktop Devices</th></tr>
-<tr><th>Model</th><th>Minimum Specs</th><th>Additional Requirements</th><th>Archive&nbsp;&nbsp;&nbsp; Date&#8308;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th><th>Retirement Date&#8308;</th></tr>
+<tr><th>Model</th><th>Minimum Specs</th><th>Additional Requirements</th><th>Archive&nbsp;&nbsp;&nbsp; Date&#178;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th><th>Retirement Date&#178;</th></tr>
 <tr><td><a href="https://www.dell.com/en-us/work/shop/cty/pdp/spd/latitude-14-5490-laptop?cid=265768&st=dell%2Blatitude%2B5490&VEN1=yKFOheND,73873544881479,901q5c14135,c,,%7BProductid%7D&VEN2=be,dell%2Blatitude%2B5490&lid=5980636&dgc=st&dgseg=so&acd=12309152537461020&VEN3=112504543746142297">Dell Latitude 5490</a></td><td>256 GB / Intel i5 / 8 GB RAM</td><td>IR camera required&#8310;</td><td>Jan 9, 2020</td><td>Jan 9, 2023</td></tr>
 <tr><td><a href="https://www.dell.com/en-us/work/shop/cty/pdp/spd/latitude-13-7390-2-in-1-laptop?cid=265768&st=dell%2Blatitude%2B7390%2B2-in-1&VEN1=bRXisqe7,73255069985268,901q5c14135,c,,%7BProductid%7D&VEN2=be,dell%2Blatitude%2B7390%2B2-in-1&lid=5981275&dgc=st&dgseg=so&acd=12309152537461020&VEN3=112504543746142297">Dell Latitude 7390 2-in-1</a></td><td>256 GB / Intel i5 / 8 GB RAM</td><td>IR camera required&#8310;</td><td>Jan 9, 2020</td><td>Jan 9, 2023</td></tr>
 <tr><td><a href="https://www.dell.com/en-us/work/shop/cty/pdp/spd/precision-15-3530-laptop?cid=265720&st=dell%2Bprecision%2B3530&VEN1=ihEzXzFB,73667408703289,901q5c14135,c,,%7BProductid%7D&VEN2=be,dell%2Bprecision%2B3530&lid=42076560130&dgc=st&dgseg=so&acd=12309152537461020&VEN3=112504543746142297">Dell Precision 3530</a></td><td>256 GB / Intel i5 / 8 GB RAM</td><td>IR camera required&#8310;</td><td>May 22, 2020</td><td>May 22, 2023</td></tr>
@@ -65,7 +65,7 @@ In addition, the device must also:
 
 &#x00B3; This can be implemented either through a new device acquisition or by re-imaging a previously acquired device.
 
-&#8308; Archive date refers to the date on which these models will be subject to a shorter management period; any devices onboarded after this date will not receive a full three year ITaaS term. Retirement date refers to the date on which this model will no longer be supported by Microsoft Managed Desktop.
+&#178; Archive date refers to the date on which these models will be subject to a shorter management period; any devices onboarded after this date will not receive a full three year ITaaS term. Retirement date refers to the date on which this model will no longer be supported by Microsoft Managed Desktop.
 
 &#8309; For more questions on HP devices contact: Americas (<a href="mailto:mmd-americas@hp.com">mmd-americas@hp.com</a>); Europe/Middle East/Africa (<a href="mailto:mmd-emea@hp.com">mmd-emea@hp.com</a>); Asia Pacific/Japan (<a href="mailto:mmd-apj@hp.com">mmm-apj@hp.com</a>); Global (<a href="mailto:mmd@hp.com">mmd@hp.com</a>)
 
