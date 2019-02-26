@@ -10,6 +10,40 @@ You've created user accounts and groups so that:
 
 If needed, [Step 1](../identity-plan-users-groups.md) can help you meet this requirement.
 
+<a name="crit-identity-global-admin"></a>
+### Required: Your global administrator accounts are protected 
+
+You've [protected your Office 365 global administrator accounts](https://docs.microsoft.com/office365/enterprise/protect-your-global-administrator-accounts) to avoid compromising credentials that can lead to breaches of an Office 365 subscription.
+
+If you skip this requirement, your global administrator accounts can be susceptible to attack and compromise, allowing an attacker to gain system-wide access to your data for harvesting, destruction, or ransom.
+
+If needed, [Step 2](../identity-designate-protect-admin-accounts.md#identity-global-admin) can help you meet this requirement.
+
+#### How to test
+
+Use these steps to verify that you've protected your global administrator accounts:
+
+1. Run the following Azure AD V2 command at the PowerShell command prompt. You should see only the list of dedicated global administrator accounts.
+   ```
+   Get-AzureADDirectoryRole | where { $_.DisplayName -eq "Company Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
+   ```
+2. Sign in to Office 365 using each of the accounts from step 1. Each sign in must require multi-factor authentication and the strongest form of secondary authentication available in your organization.
+
+> [!Note]
+> See [Connect to Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell) for instructions on installing the Azure Active Directory PowerShell for Graph module and signing in to Office 365.
+
+<a name="crit-identity-pim"></a>
+### Optional: You have set up Privileged Identity Management to support on-demand assignment of the global administrator role
+
+You've used the instructions in [Configure Azure AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure) to enable PIM in your Azure AD tenant and configured your global administrator accounts as eligible admins.
+
+You've also used the recommendations in [Securing privileged access for hybrid and cloud deployments in Azure AD](https://docs.microsoft.com/azure/active-directory/admin-roles-best-practices) to develop a roadmap that secures privileged access against cyber attackers.
+
+If you skip this option, your global administrator accounts are subject to ongoing online attack and, if compromised, can allow an attacker to harvest, destroy, or hold your sensitive information for ransom.
+
+If needed, [Step 2](../identity-designate-protect-admin-accounts.md#identity-pim) can help you with this option.
+
+
 <a name="crit-identity-sync"></a>
 ### Required: Users and groups are synchronized with Azure AD
 
@@ -17,7 +51,7 @@ If you have an existing on-premises identity provider, such as Active Directory 
 
 With directory synchronization, your users can sign in to Office 365 and other Microsoft cloud services using the same credentials that they use to sign in to their computers and access on-premises resources.
 
-If needed, [Step 7](../identity-azure-ad-connect.md) can help you meet this requirement.
+If needed, [Step 3](../identity-azure-ad-connect.md#identity-sync) can help you meet this requirement.
 
 If you skip this requirement, you’ll have two sets of user accounts and groups:
 
@@ -35,58 +69,6 @@ To verify that directory synchronization is working correctly, do the following:
 2.	Wait for the synchronization time.
 3.	Check your Azure AD tenant to verify that the new test group name appears.
 
-<a name="crit-identity-global-admin"></a>
-### Required: Your global administrator accounts are protected 
-
-You've [protected your Office 365 global administrator accounts](https://docs.microsoft.com/office365/enterprise/protect-your-global-administrator-accounts) to avoid compromising credentials that can lead to breaches of an Office 365 subscription.
-
-If you skip this requirement, your global administrator accounts can be susceptible to attack and compromise, allowing an attacker to gain system-wide access to your data for harvesting, destruction, or ransom.
-
-If needed, [Step 2](../identity-designate-protect-admin-accounts.md) can help you meet this requirement.
-
-#### How to test
-
-Use these steps to verify that you've protected your global administrator accounts:
-
-1. Run the following Azure AD V2 command at the PowerShell command prompt. You should see only the list of dedicated global administrator accounts.
-   ```
-   Get-AzureADDirectoryRole | where { $_.DisplayName -eq "Company Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
-   ```
-2. Sign in to Office 365 using each of the accounts from step 1. Each sign in must require multi-factor authentication and the strongest form of secondary authentication available in your organization.
-
-> [!Note]
-> See [Connect to Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell) for instructions on installing the Azure Active Directory PowerShell for Graph module and signing in to Office 365.
-
-<a name="crit-identity-custom-sign-in"></a>
-### Optional: The Office 365 sign-in screen is personalized for your organization
-
-You have used [Add company branding to your sign-in and Access Panel pages](http://aka.ms/aadpaddbranding) to add your organization’s branding to the Office 365 sign-in page.
-
-If you skip this option, your users will see a generic Office 365 sign-in screen and might not be confident that they’re signing into your organization’s site.
-
-If needed, [Step 11](../identity-customize-office-365-sign-in.md) can help you with this option.
-
-#### How to test
-
-Sign in to the Office portal with your user account name and multi-factor authentication. You should see your custom branding elements on the sign-in page.
-
-<a name="crit-identity-mfa"></a>
-### Optional: Multi-factor authentication is enabled for your users
-
-You used [Plan for multi-factor authentication for Office 365 Deployments](https://docs.microsoft.com/office365/admin/security-and-compliance/multi-factor-authentication-plan) and [Set up multi-factor authentication for Office 365 users](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication) to enable multifactor authentication (MFA) for your user accounts.
-
-If you skip this option, your user accounts are vulnerable to credential compromise by cyber attackers. If a user account’s password is compromised, all the resources and capabilities of the account, such as administrator roles, are available to the attacker. This allows the attacker to copy, destroy, or hold for ransom internal documents and other data.
-
-If needed, [Step 5](../identity-multi-factor-authentication.md) can help you with this option.
-
-#### How to test
-
-1.	Create a test user account in the Office 365 Admin portal and assign them a license. 
-2.	Configure multi-factor authentication for the test user account with the additional verification method that you are using for actual user accounts, such as sending a message to your phone. 
-3.	Sign in to the Office 365 or Azure portal with the test user account.
-4.	Verify that MFA prompts you for the additional verification information and results in a successful authentication. 
-5.	Delete the test user account.
-
 <a name="crit-identity-sync-health"></a>
 ### Optional: Directory synchronization is monitored
 
@@ -97,10 +79,40 @@ You've used [Azure AD Connect Health with sync](https://docs.microsoft.com/azure
 
 If you skip this option, you can more accurately assess the state of your cloud-based identity infrastructure.
 
-If needed, [Step 8](../identity-azure-ad-connect-health.md) can help you with this option.
+If needed, [Step 3](../identity-azure-ad-connect.md#identity-sync-health) can help you with this option.
 
 #### How to test
 The Azure AD Connect Health portal shows the current and correct state of your on-premises identity servers and the ongoing synchronization.
+
+<a name="crit-identity-mfa"></a>
+### Optional: Multi-factor authentication is enabled for your users
+
+You used [Plan for multi-factor authentication for Office 365 Deployments](https://docs.microsoft.com/office365/admin/security-and-compliance/multi-factor-authentication-plan) and [Set up multi-factor authentication for Office 365 users](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication) to enable multifactor authentication (MFA) for your user accounts.
+
+If you skip this option, your user accounts are vulnerable to credential compromise by cyber attackers. If a user account’s password is compromised, all the resources and capabilities of the account, such as administrator roles, are available to the attacker. This allows the attacker to copy, destroy, or hold for ransom internal documents and other data.
+
+If needed, [Step 4](../identity-multi-factor-authentication.md#identity-mfa) can help you with this option.
+
+#### How to test
+
+1.	Create a test user account in the Office 365 Admin portal and assign them a license. 
+2.	Configure multi-factor authentication for the test user account with the additional verification method that you are using for actual user accounts, such as sending a message to your phone. 
+3.	Sign in to the Office 365 or Azure portal with the test user account.
+4.	Verify that MFA prompts you for the additional verification information and results in a successful authentication. 
+5.	Delete the test user account.
+
+<a name="crit-identity-ident-prot"></a>
+### Optional: Azure AD Identity Protection is enabled to protect against credential compromise
+
+You've enabled Azure AD Identity Protection to:
+
+- Address potential identity vulnerabilities.
+- Detect possible credential compromise attempts.
+- Investigate and address ongoing suspicious identity incidents.
+
+If you skip this option, you won’t be able to detect or automatically thwart credential compromise attempts or investigate identity-related security incidents. This potentially leaves your organization vulnerable to a successful credential compromise and the resulting threat to your organization’s sensitive data.
+
+If needed, [Step 4](../identity-multi-factor-authentication.md#identity-ident-prot) can help you with this option.
 
 <a name="crit-identity-pw-reset"></a>
 ### Optional: Users can reset their own passwords
@@ -109,7 +121,7 @@ You've used [Azure AD self-service password reset rapid deployment](https://docs
 
 If you don’t meet this condition, users will be dependent on user account administrators to reset their passwords, resulting in additional IT administration overhead.
 
-If needed, [Step 4](../identity-password-reset.md) can help you with this option.
+If needed, [Step 5](../identity-password-reset.md#identity-pw-reset) can help you with this option.
 
 #### How to test
 
@@ -125,7 +137,7 @@ You've used the instructions in [Azure AD SSPR with password writeback](https://
 
 If you skip this option, users who aren’t connected to your on-premises network must reset or unlock their Windows Server AD passwords through an IT administrator.
 
-If needed, [Step 9](../identity-password-writeback.md) can help you with this option.
+If needed, [Step 5](../identity-password-reset.md#identity-pw-writeback) can help you with this option.
 
 >[!Note]
 >Password writeback is required to fully utilize Azure AD Identity Protection features, such as requiring users to change their on-premises passwords when Azure AD has detected a high risk of account compromise.
@@ -142,35 +154,44 @@ You test password writeback by changing your password in Office 365. You should 
 5. Sign out of the Office portal and the remote computer and then sign in to the computer using the test user account and its new password. This proves that you were able to change the password of an on-premises Windows Server AD user account using the Azure AD tenant.
 
 <a name="crit-identity-sso"></a>
-### Optional: Users can sign in using single sign-on
+### Optional: Users can sign in using Azure AD Seamless Single Sign-on
 
 You enabled [Azure AD Connect: Seamless Single Sign-On](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-sso-quick-start) for your organization to simplify how users sign in to cloud-based applications, such as Office 365.
 
 If you skip this option, your users might be prompted to provide credentials when they access additional applications that use Azure AD.
 
-If needed, [Step 10](../identity-single-sign-on.md) can help you with this option.
+If needed, [Step 5](../identity-password-reset.md#identity-sso) can help you with this option.
 
+<a name="crit-identity-custom-sign-in"></a>
+### Optional: The Office 365 sign-in screen is personalized for your organization
 
-<a name="crit-identity-group-license"></a>
-### Optional: Group-based licensing to automatically assign and remove licenses to user accounts based on group membership
+You have used [Add company branding to your sign-in and Access Panel pages](http://aka.ms/aadpaddbranding) to add your organization’s branding to the Office 365 sign-in page.
 
-You [enabled group-based licensing](https://docs.microsoft.com/azure/active-directory/active-directory-licensing-group-assignment-azure-portal) for the appropriate Azure AD security groups so that licenses for both Office 365 and EMS are automatically assigned or removed.
+If you skip this option, your users will see a generic Office 365 sign-in screen and might not be confident that they’re signing into your organization’s site.
 
-If you skip this option, you must manually:
-
-- Assign licenses to new users whom you intend to have access to Office 365 and EMS.
-- Remove licenses from users who are no longer with your organization or do not have access to Office 365 and EMS.
-
-If needed, [Step 12](../identity-group-based-licensing.md) can help you with this option.
+If needed, [Step 5](../identity-password-reset.md#identity-custom-sign-in) can help you with this option.
 
 #### How to test
 
-1. Create a test security group in Azure AD with the Azure portal and configure group-based licensing to assign Office 365 and EMS licenses.
-2. Create a test user account in Azure AD and add it to the test security group.
-3. Examine the properties of the user account in the Office 365 admin portal to ensure that it was assigned the Office 365 and EMS licenses.
-4. Remove the test user account from the test security group.
-5. Examine the properties of the user account to ensure that it no longer has the Office 365 and EMS licenses assigned.
-6. Delete the test security group and the test user account.
+Sign in to the Office portal with your user account name and multi-factor authentication. You should see your custom branding elements on the sign-in page.
+
+<a name="crit-identity-self-service-groups"></a>
+### Optional: Self-service group management is enabled for specific Azure AD security and Office 365 groups
+
+You've determined which groups are appropriate for self-service management, instructed their owners on group management workflow and responsibilities, and [set up self-service management in Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-accessmanagement-self-service-group-management) for those groups.
+
+If you skip this option, all Azure AD group management tasks must be done by IT administrators.
+
+If needed, [Step 6](../identity-self-service-group-management.md#identity-self-service-groups) can help you with this option.
+
+#### How to test
+1.	Create a test user account in Azure AD with the Azure portal.
+2.	Sign-in as with the test user account and create a test Azure AD security group.
+3.	Sign out and then sign-in with your IT administrator account.
+4.	Configure the test security group for self-service management for the test user account.
+5.	Sign out and then sign-in with your test user account.
+6.	Use the Azure portal to add members to the test security group.
+7.	Delete the test security group and the test user account.
 
 <a name="crit-identity-dyn-groups"></a>
 ### Optional: Dynamic group membership settings automatically add user accounts to groups based on user account attributes
@@ -185,7 +206,7 @@ If you skip this option, group membership must be done manually as new accounts 
 
 If the Sales and Accounting groups were dynamic, you would only have to change the user account’s Department value.
 
-If needed, [Step 15](../identity-automatic-group-membership.md) can help you with this option.
+If needed, [Step 6](../identity-self-service-group-management.md#identity-dyn-groups) can help you with this option.
 
 #### How to test
 
@@ -196,44 +217,24 @@ If needed, [Step 15](../identity-automatic-group-membership.md) can help you wit
 5. Examine the properties of the user account to ensure that it is no longer a member of the test dynamic group.
 6. Delete the test dynamic group and the test user account.
 
-<a name="crit-identity-self-service-groups"></a>
-### Optional: Self-service group management is enabled for specific Azure AD security and Office 365 groups
+<a name="crit-identity-group-license"></a>
+### Optional: Group-based licensing to automatically assign and remove licenses to user accounts based on group membership
 
-You've determined which groups are appropriate for self-service management, instructed their owners on group management workflow and responsibilities, and [set up self-service management in Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-accessmanagement-self-service-group-management) for those groups.
+You [enabled group-based licensing](https://docs.microsoft.com/azure/active-directory/active-directory-licensing-group-assignment-azure-portal) for the appropriate Azure AD security groups so that licenses for both Office 365 and EMS are automatically assigned or removed.
 
-If you skip this option, all Azure AD group management tasks must be done by IT administrators.
+If you skip this option, you must manually:
 
-If needed, [Step 14](../identity-self-service-group-management.md) can help you with this option.
+- Assign licenses to new users whom you intend to have access to Office 365 and EMS.
+- Remove licenses from users who are no longer with your organization or do not have access to Office 365 and EMS.
+
+If needed, [Step 6](../identity-self-service-group-management.md#identity-group-license) can help you with this option.
 
 #### How to test
-1.	Create a test user account in Azure AD with the Azure portal.
-2.	Sign-in as with the test user account and create a test Azure AD security group.
-3.	Sign out and then sign-in with your IT administrator account.
-4.	Configure the test security group for self-service management for the test user account.
-5.	Sign out and then sign-in with your test user account.
-6.	Use the Azure portal to add members to the test security group.
-7.	Delete the test security group and the test user account.
 
-<a name="crit-identity-ident-prot"></a>
-### Optional: Azure AD Identity Protection is enabled to protect against credential compromise
+1. Create a test security group in Azure AD with the Azure portal and configure group-based licensing to assign Office 365 and EMS licenses.
+2. Create a test user account in Azure AD and add it to the test security group.
+3. Examine the properties of the user account in the Office 365 admin portal to ensure that it was assigned the Office 365 and EMS licenses.
+4. Remove the test user account from the test security group.
+5. Examine the properties of the user account to ensure that it no longer has the Office 365 and EMS licenses assigned.
+6. Delete the test security group and the test user account.
 
-You've enabled Azure AD Identity Protection to:
-
-- Address potential identity vulnerabilities.
-- Detect possible credential compromise attempts.
-- Investigate and address ongoing suspicious identity incidents.
-
-If you skip this option, you won’t be able to detect or automatically thwart credential compromise attempts or investigate identity-related security incidents. This potentially leaves your organization vulnerable to a successful credential compromise and the resulting threat to your organization’s sensitive data.
-
-If needed, [Step 6](../identity-azure-ad-identity-protection.md) can help you with this option.
-
-<a name="crit-identity-pim"></a>
-### Optional: You have set up Privileged Identity Management to support on-demand assignment of the global administrator role
-
-You've used the instructions in [Configure Azure AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure) to enable PIM in your Azure AD tenant and configured your global administrator accounts as eligible admins.
-
-You've also used the recommendations in [Securing privileged access for hybrid and cloud deployments in Azure AD](https://docs.microsoft.com/azure/active-directory/admin-roles-best-practices) to develop a roadmap that secures privileged access against cyber attackers.
-
-If you skip this option, your global administrator accounts are subject to ongoing online attack and, if compromised, can allow an attacker to harvest, destroy, or hold your sensitive information for ransom.
-
-If needed, [Step 3](../identity-azure-ad-identity-protection.md) can help you with this option.

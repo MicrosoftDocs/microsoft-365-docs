@@ -3,7 +3,7 @@ title: "Step 1: Plan for users and groups"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/15/2018
+ms.date: 02/25/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -76,11 +76,11 @@ When you complete this step, you’ll have:
 
 As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria.md#crit-identity-user-groups) for this step.
 
-Once your Azure AD users and groups are created, you can start assigning licenses and using Exchange Online. To roll out Exchange Online to your users, see [Deploy Exchange Online for Microsoft 365 Enterprise](identity-azure-ad-connect.md).
+Once your Azure AD users and groups are created, you can start assigning licenses and using Exchange Online. To roll out Exchange Online to your users, see [Deploy Exchange Online for Microsoft 365 Enterprise](exchangeonline-workload.md).
 
 ## Next step
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step2.png)| [Protect global administrator accounts](identity-designate-protect-admin-accounts.md) |
+|![](./media/stepnumbers/Step2.png)| [Secure your privileged identities](identity-designate-protect-admin-accounts.md) |
 

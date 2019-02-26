@@ -3,7 +3,7 @@ title: "Password reset for your Microsoft 365 test environment"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/30/2018
+ms.date: 02/21/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -24,26 +24,24 @@ Azure AD self-service password reset (SSPR) allows users to reset or unlock thei
 
 This article describes how you can configure and test password resets in your Microsoft 365 test environment in two phases:
 
-1.	Create the Microsoft 365 simulated enterprise test environment with password hash synchronization.
+1.	Create the Microsoft 365 Enterprise test environment.
 2.	Configure and test password reset for the User 2 account.
     
 ![Test Lab Guides for the Microsoft cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
 > Click [here](https://aka.ms/m365etlgstack) for a visual map to all the articles in the Microsoft 365 Enterprise Test Lab Guide stack.
-  
-## Phase 1: Configure password hash synchronization for your Microsoft 365 test environment
 
-Follow the instructions in [password hash synchronization for Microsoft 365](password-hash-sync-m365-ent-test-environment.md). Here is your resulting configuration.
-  
-![The simulated enterprise with pass-through authentication test environment](media/pass-through-auth-m365-ent-test-environment/Phase2.png)
-  
-This configuration consists of: 
-  
-- Office 365 E5 and EMS E5 trial or permanent subscriptions.
-- A simplified organization intranet connected to the Internet, consisting of the DC1, APP1, and CLIENT1 virtual machines on a subnet of an Azure virtual network. 
-- Azure AD Connect runs on APP1 to synchronize the TESTLAB Windows Server AD domain to the Azure AD tenant of your Office 365 and EMS E5 subscriptions.
 
+## Phase 1: Build out your Microsoft 365 Enterprise test environment
+
+If you just want to test password resets in a lightweight way with the minimum requirements, follow the instructions in [Lightweight base configuration](lightweight-base-configuration-microsoft-365-enterprise.md).
+  
+If you want to test password resets in a simulated enterprise, follow the instructions in [Pass-through authentication](pass-through-auth-m365-ent-test-environment.md).
+
+> [!NOTE]
+> Testing password resets does not require the simulated enterprise test environment, which includes a simulated intranet connected to the Internet and directory synchronization for a Windows Server AD forest. It is provided here as an option so that you can test password resets and experiment with it in an environment that represents a typical organization. 
+  
 ## Phase 2: Configure and test password reset
 
 In this phase, you configure password reset in the Azure AD tenant through group membership, and then verify that it works.
@@ -72,7 +70,7 @@ Next, you test password reset for the User 2 account.
 9. In **Get back into your account**, type a new password for the User 2 account, and then click **Finish**. Note the changed password of the User 2 account and store it in a safe location.
 10. In a separate tab of the same browser, go to [https://office.com](https://office.com), and then sign in with the User 2 account name and its new password. You should see the **Office Home** page.
 
-See the [Simplify password resets](identity-password-reset.md) step in the Identity phase for information and links to configure password resets in production.
+See the [Simplify password resets](identity-password-reset.md#identity-pw-reset) step in the Identity phase for information and links to configure password resets in production.
 
 ## Next step
 
