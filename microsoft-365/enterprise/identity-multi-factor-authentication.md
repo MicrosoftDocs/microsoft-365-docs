@@ -20,7 +20,7 @@ description: Understand and configure multi-factor authentication for user accou
 ![](./media/deploy-foundation-infrastructure/identity_icon-small.png)
 
 <a name="identity-mfa"></a>
-# Set up multi-factor authentication
+## Set up multi-factor authentication
 
 *This is optional and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
 

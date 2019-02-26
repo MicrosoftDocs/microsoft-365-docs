@@ -57,7 +57,7 @@ Once your on-premises users and groups are present in Azure AD, you can start as
 As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria.md#crit-identity-sync) corresponding to this section.
 
 <a name="identity-sync-health"></a>
-# Monitor synchronization health
+## Monitor synchronization health
 
 *This is optional and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
 
