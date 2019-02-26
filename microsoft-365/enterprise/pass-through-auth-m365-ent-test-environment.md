@@ -71,11 +71,11 @@ In this phase, you configure Azure AD Connect on APP1 to use pass-through authen
 
 10.	Click **Pass-through authentication**. The **Pass-through authentication** pane lists the servers where your Authentication Agents are installed. You should see APP1 in the list. Close the **Pass-through authentication** pane.
 
-Next, test the ability to sign in to your Office 365 subscription with the user1@testlab.\<your public domain> user name of the User1 account.
+Next, test the ability to sign in to your Office 365 subscription with the <strong>user1@testlab.</strong>\<your public domain> user name of the User1 account.
 
 1. From APP1, sign out of Office 365, and then sign in again, this time specifying a different account.
 
-2. When prompted for a user name and password, specify user1@testlab.\<your public domain> and the User1 password. You should successfully sign in as User1.
+2. When prompted for a user name and password, specify <strong>user1@testlab.</strong>\<your public domain> and the User1 password. You should successfully sign in as User1.
 
 Notice that although User1 has domain administrator permissions for the TESTLAB Windows Server AD domain, it is not an Office 365 global administrator. Therefore, you will not see the **Admin** icon as an option.
 
@@ -85,7 +85,7 @@ Here is your resulting configuration:
  
 This configuration consists of:
 
-- Office 365 E5 and EMS E5 trial or permanent subscriptions with the DNS domain TESTLAB.\<your domain name> registered.
+- Office 365 E5 and EMS E5 trial or permanent subscriptions with the DNS domain testlab.\<your domain name> registered.
 - A simplified organization intranet connected to the Internet, consisting of the DC1, APP1, and CLIENT1 virtual machines on a subnet of an Azure virtual network. An Authentication Agent runs on APP1 to handle pass-through authentication requests from the Azure AD tenant of your Office 365 and EMS E5 subscriptions.
 
 ## Next step
