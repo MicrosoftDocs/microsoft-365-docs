@@ -7,7 +7,7 @@ ms.sitesec: library
 author: trudyha
 ms.author: jdecker
 ms.topic: article
-ms.date: 02/14/2019
+ms.date: 02/27/2019
 ms.localizationpriority: normal
 ---
 
@@ -21,7 +21,7 @@ New or changed topic | Description
 [Configurable settings overview](working-with-managed-desktop/config-setting-overview.md) | New topic
 [Configurable settings reference](working-with-managed-desktop/config-setting-ref.md) | New topic
 [Track and deploy configurable settings](working-with-managed-desktop/config-setting-deploy.md) | New topic
-
+[Get started with devices](get-started/get-started-devices.md) | New topic
 
 ## January 2019
 New or changed topic | Description
