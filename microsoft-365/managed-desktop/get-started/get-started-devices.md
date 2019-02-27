@@ -5,7 +5,7 @@ keywords: Microsoft Managed Desktop, device, get started, Microsoft 365
 ms.service: m365-md
 author: trudyha
 ms.localizationpriority: normal
-ms.date: 2/22/2019
+ms.date: 2/27/2019
 ---
 
 # Get started using Microsoft Managed Desktop devices
