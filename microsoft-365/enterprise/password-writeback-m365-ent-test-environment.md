@@ -101,11 +101,11 @@ Next, configure Azure AD Connect on APP1 for password writeback.
 
 4. On the **Additional tasks** page, click **Customize synchronization options**, and then click **Next**.
 
-5. On the **Connect to Azure AD** page, type the User 1 account credentials, and then click **Next**.
+5. On the **Connect to Azure AD** page, type your global administrator account credentials, and then click **Next**.
 
 6. On the **Connect directories** and **Domain/OU filtering** pages, click **Next**.
 
-7. On the **Optional features** page, select **Password writeback** and click Next. 
+7. On the **Optional features** page, select **Password writeback** and click **Next**. 
 
 8. On the **Ready to configure** page, click **Configure** and wait for the process to finish.
 
@@ -124,7 +124,7 @@ This configuration consists of:
 - Azure AD Connect runs on APP1 to synchronize the list of accounts and groups from the Azure AD tenant of your Office 365 and EMS E5 subscriptions to the TESTLAB Windows Server AD domain. 
 - Password writeback is enabled so that users can change their passwords through Azure AD without having to be connected to the simplified intranet.
 
-See the [Simplify password updates](identity-password-writeback.md) step in the Identity phase for information and links to configure password writeback in production.
+See the [Simplify password updates](identity-password-reset.md#identity-pw-writeback) step in the Identity phase for information and links to configure password writeback in production.
 
 ## Next step
 

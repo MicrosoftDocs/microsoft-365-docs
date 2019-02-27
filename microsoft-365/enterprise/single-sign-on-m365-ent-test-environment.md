@@ -58,7 +58,7 @@ In this phase, you configure Azure AD Connect on APP1 for Azure AD Seamless SSO,
 
 3. On the **Welcome page**, click **Configure**.
 
-4. On the Additional tasks page, click **Change user sign-in**, and then click **Next**.
+4. On the **Additional tasks** page, click **Change user sign-in**, and then click **Next**.
 
 5. On the **Connect to Azure AD** page, type your global administrator account credentials, and then click **Next**.
 
@@ -88,9 +88,9 @@ Next, test the ability to sign in to your Office 365 subscription with the <stro
 
 6. Sign out of Office 365, and then sign in again, this time specifying a different account.
 
-7. When prompted to sign in, specify <strong>user1@testlab.</strong>\<your public domain> name, and then click **Next**. You should successfully sign in as User1 without being prompted for a password. This proves that Seamless SSO is working.
+7. When prompted to sign in, specify <strong>user1@testlab.</strong>\<your public domain> name, and then click **Next**. You should successfully sign in as User1 without being prompted for a password. This proves that Azure AD Seamless SSO is working.
 
-Notice that although User1 has domain administrator permissions for the TESTLAB Windows Server AD domain, it is not an Office 365 global administrator. Therefore, you will not see the **Admin** icon as an option.
+Notice that although User1 has domain administrator permissions for the TESTLAB Windows Server AD domain, it is not a global administrator for Azure AD and Office 365. Therefore, you will not see the **Admin** icon as an option.
 
 Here is your resulting configuration:
 
@@ -99,12 +99,12 @@ Here is your resulting configuration:
  
 This configuration consists of:
 
-- Office 365 E5 and EMS E5 trial or permanent subscriptions with the DNS domain TESTLAB.\<your domain name> registered.
+- Office 365 E5 and EMS E5 trial or permanent subscriptions with the DNS domain testlab.\<your domain name> registered.
 - A simplified organization intranet connected to the Internet, consisting of the DC1, APP1, and CLIENT1 virtual machines on a subnet of an Azure virtual network. 
 - Azure AD Connect runs on APP1 to synchronize the list of accounts and groups from the Azure AD tenant of your Office 365 and EMS E5 subscriptions to the TESTLAB Windows Server AD domain. 
-- Azure AD Seamless SSO is enabled so that computers on the simulated intranet can sign on to Microsoft 365 cloud resources without specifing a user account password.
+- Azure AD Seamless SSO is enabled so that computers on the simulated intranet can sign in to Microsoft 365 cloud resources without specifing a user account password.
 
-See the [Simplify user sign-in](identity-single-sign-on.md) step in the Identity phase for information and links to configure Azure AD Seamless SSO in production.
+See the [Simplify user sign-in](identity-password-reset.md#identity-sso) step in the Identity phase for information and links to configure Azure AD Seamless SSO in production.
 
 ## Next step
 

@@ -2,7 +2,7 @@
 title: "Microsoft 365 Enterprise workloads and scenarios"
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/13/2018
+ms.date: 02/26/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -42,14 +42,14 @@ Ideally, you should deploy workloads and scenarios after you have configured all
 | Mobile device management | Your devices can be enrolled and managed. |
 | Information protection | Your labels are ready to protect documents and Office 365 security features are enabled. |
 
-This is ideal but can take some time to plan for, configure, test, and pilot. Putting all of these layers in place is not necessary for you to more quickly realize the business value of Microsoft 365 Enterprise. 
+This is ideal but can take some time to plan for, configure, test, and pilot, especially in large organizations with existing infrastructure. Putting all of these layers in place is not necessary for you to more quickly get business value from Microsoft 365 Enterprise. 
 
 For example: 
 
 - Organizations often deploy [Exchange Online](exchangeonline-workload.md) after the **Identity** layer of the foundation infrastructure is rolled out to users so that they can begin using cloud-based email. 
-- Organizations that don't have an immediate need for storing highly regulated digital assets in the cloud can deploy [Microsoft Teams](teams-workload.md) and [SharePoint Online](sharepoint-online-onedrive-workload.md) for their users prior to the **Information protection** phase.
+- Organizations that don't have an immediate need for storing highly regulated digital assets in the cloud can deploy [Microsoft Teams](teams-workload.md) and [SharePoint Online](sharepoint-online-onedrive-workload.md) for their users prior to the **Information protection** layer.
 
-You must decide on how to best order the configuration of prerequisite layers of foundation infrastructure to meet your business needs.
+You must decide on how to best order the configuration of prerequisite phases of foundation infrastructure to meet your business needs.
 
 ### Best practice
 

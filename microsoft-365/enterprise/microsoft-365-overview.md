@@ -3,7 +3,7 @@ title: Microsoft 365 Enterprise overview
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/18/2018
+ms.date: 02/26/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -75,9 +75,15 @@ For more deployment information, see how:
 - [Microsoft](deploy-microsoft-365-enterprise.md#how-microsoft-uses-microsoft-365-enterprise) uses Microsoft 365 Enterprise.
 - [The Contoso Corporation](contoso-overview.md) has deployed Microsoft 365 Enterprise.
 
-## Identity and device access configurations
+## Additional Microsoft 365 solutions
 
-Although there is no single best recommendation for all customer environments, the [identity and device access configurations](microsoft-365-policies-configurations.md) documentation describes how to apply policies and configuration within the Microsoft cloud to ensure that your employees are both secure and productive.
+- [Microsoft 365 Business](https://docs.microsoft.com/microsoft-365/business/)
+ 
+  Bring together the best-in-class productivity and collaboration capabilities of Office 365 with device management and security solutions to safeguard business data for small and midsize businesses (SMB).
+
+- [Microsoft 365 Education](https://docs.microsoft.com/education)
+ 
+  Empower educators to unlock creativity, promote teamwork, and provide a simple and safe experience in a single, affordable solution built for education.
 
 ## Next step
 
