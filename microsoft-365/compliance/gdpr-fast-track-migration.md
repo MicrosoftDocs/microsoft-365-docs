@@ -5,7 +5,7 @@ keywords: FastTrack Migration, Microsoft 365 Education, Microsoft 365 documentat
 author: MohitKumar
 localization_priority: Priority
 Robots:  NOFOLLOW,NOINDEX
-audience: microsoft-business
+
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.author: mohitku

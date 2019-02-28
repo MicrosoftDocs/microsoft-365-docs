@@ -4,7 +4,7 @@ description: How Microsoft Support and Professional Services handles data subjec
 keywords: Professional Services, sMicrosoft 365, Microsoft 365 Education, Microsoft 365 documentation, GDPR
 author: herviicban
 localization_priority: Priority
-audience: microsoft-business
+
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.author: heicba
