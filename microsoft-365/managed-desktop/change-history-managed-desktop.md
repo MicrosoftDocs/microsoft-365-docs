@@ -18,6 +18,7 @@ This topic lists new and updated topics in the [Microsoft Managed Desktop docume
 ## February 2019
 New or changed topic | Description
 --- | ---
+[Program devices](service-description/device-list.md) | Updated with support for certain Dell and HP devices.
 [Configurable settings overview](working-with-managed-desktop/config-setting-overview.md) | New topic
 [Configurable settings reference](working-with-managed-desktop/config-setting-ref.md) | New topic
 [Track and deploy configurable settings](working-with-managed-desktop/config-setting-deploy.md) | New topic
