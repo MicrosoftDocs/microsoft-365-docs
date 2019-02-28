@@ -4,6 +4,7 @@ description: Provides guidance on configuring and deploying Windows 10 Enterpris
 keywords: Microsoft 365, Microsoft 365 Enterprise, Microsoft 365 documentation, Windows 10 Enterprise, deployment, Windows Autopilot
 author: greg-lindsay
 localization_priority: Normal
+ms.collection: M365-modern-desktop
 audience: microsoft-business
 ms.prod: microsoft-365-enterprise
 ms.topic: article

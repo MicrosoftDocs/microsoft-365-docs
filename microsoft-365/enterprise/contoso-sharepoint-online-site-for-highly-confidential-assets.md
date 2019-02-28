@@ -10,7 +10,7 @@ ms.service: o365-solutions
 localization_priority: Normal
 search.appverid:
 - MET150
-ms.collection: Ent_O365
+ms.collection: M365-security-compliance
 ms.custom: Ent_Architecture
 description: "Summary: How Contoso implemented a SharePoint Online site for highly regulated data for easier collaboration between its research teams."
 ---

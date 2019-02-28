@@ -9,7 +9,7 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection: 
-- Ent_O365
+- M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom:
 description: Configure TCP settings and Office 365 services for better performance.
