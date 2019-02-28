@@ -62,6 +62,7 @@ In addition, the device must also:
 - Be enrolled with [Windows Autopilot](https://docs.microsoft.com/en-us/windows/deployment/windows-autopilot/user-driven-aad) and have the Microsoft Managed Desktop Autopilot profile assigned.
 
 **Additional Help**
+
 These resources can help answer questions that you might have about specific devices:
 
 - For more questions on Dell devices contact <a href="mailto:MMD_at_dell@dell.com">MMD_at_dell@dell.com</a>.
