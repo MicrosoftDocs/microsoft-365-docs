@@ -9,7 +9,7 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection: 
-- Ent_O365
+- M365-modern-desktop
 - Strat_O365_Enterprise
 ms.custom:
 description: The steps to deploy the Office 365 ProPlus infrastructure for Microsoft 365 Enterprise.

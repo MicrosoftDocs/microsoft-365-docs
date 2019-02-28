@@ -8,7 +8,7 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection: 
-- Ent_O365
+- M365-collaboration
 - Strat_O365_Enterprise
 ms.custom:
 description: Step through the process of planning for, rolling out, and driving the value of Microsoft Teams in Microsoft 365 Enterprise across your organization.

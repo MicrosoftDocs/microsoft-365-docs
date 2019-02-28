@@ -7,7 +7,7 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection: M365-email-calendar
 ms.custom:
 - Strat_O365_Enterprise
 description: Step through the process of planning for, rolling out, and driving the value of Exchange Online in Microsoft 365 Enterprise across your organization.

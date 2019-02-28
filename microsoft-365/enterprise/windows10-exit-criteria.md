@@ -9,7 +9,7 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection: 
-- Ent_O365
+- M365-modern-desktop
 - Strat_O365_Enterprise
 ms.custom:
 description: Ensure that your configuration meets Microsoft 365 Enterprise criteria for Windows 10 Enterprise.
