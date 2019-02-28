@@ -4,6 +4,7 @@ description: Provides a high-level guidance on the steps you need to deploy Wind
 keywords: Microsoft 365, Microsoft 365 Enterprise, Microsoft 365 documentation, Windows 10 Enterprise, deployment
 author: JoeDavies-MSFT
 localization_priority: Normal
+ms.collection: M365-modern-desktop
 audience: microsoft-business
 ms.prod: microsoft-365-enterprise
 ms.topic: article

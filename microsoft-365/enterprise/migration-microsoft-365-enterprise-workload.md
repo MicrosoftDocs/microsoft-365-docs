@@ -8,7 +8,7 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection: 
-- Ent_O365
+- M365-modern-desktop
 - Strat_O365_Enterprise
 ms.custom:
 description: Step through the process of migrating versions of Microsoft Office, Office servers, and Windows to Microsoft 365 Enterprise across your organization.

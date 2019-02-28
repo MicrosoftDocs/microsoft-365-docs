@@ -9,7 +9,7 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection: 
-- Ent_O365
+- M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom:
 description: Understand and configure web browsers and edge devices for traffic bypass to trusted Office 365 locations.
