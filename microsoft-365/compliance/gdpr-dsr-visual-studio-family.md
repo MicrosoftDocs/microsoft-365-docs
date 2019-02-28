@@ -3,7 +3,7 @@ title: Visual Studio Family Data Subject Requests for the GDPR
 description: Visual Studio Family Data Subject Requests for the GDPR
 keywords: Visual Studio, Visual Studio Code, Visual Studio for Mac, Visual Studio documentation, privacy, GDPR
 localization_priority: Priority
-audience: microsoft-business
+
 audience: itpro
 ms.prod: visual-studio-family
 ms.topic: article

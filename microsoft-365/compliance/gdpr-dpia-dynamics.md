@@ -5,7 +5,7 @@ keywords: DPIA, Microsoft 365, Dynbamics 365, Microsoft 365 documentation, GDPR
 robots:  "NOINDEX,NOFOLLOW"
 author: herviicban
 localization_priority: Priority
-audience: microsoft-business
+
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.author: heicba

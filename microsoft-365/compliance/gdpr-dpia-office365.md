@@ -6,7 +6,7 @@ description: This document provides data controllers with information about Prof
 keywords: DPIA, Office 365, Microsoft 365 documentation, GDPR
 author: herviicban
 ms.localizationpriority: Priority
-audience: microsoft-business
+
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.author: heicba

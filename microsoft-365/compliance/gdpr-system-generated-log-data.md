@@ -5,7 +5,7 @@ keywords: Export log data, Microsoft 365 Education, Microsoft 365 documentation,
 author: herviicban
 localization_priority: Priority
 Robots:  "NOFOLLOW,NOINDEX"
-audience: microsoft-business
+
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.author: heicba
