@@ -4,7 +4,7 @@ description: Understand the user rights under GDPR and how Office 365 helps ente
 keywords:  Office 365, DSR, Microsoft 365, Microsoft 365 Education, Microsoft 365 documentation, GDPR
 author:  herviicban
 localization_priority:  Priority
-audience:  microsoft-business
+
 ms.prod:  Microsoft-365-enterprise
 ms.topic:  article
 ms.author:  heicba

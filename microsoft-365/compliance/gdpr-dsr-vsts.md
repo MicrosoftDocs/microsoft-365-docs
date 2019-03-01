@@ -2,7 +2,7 @@
 title: Azure DevOps Data Subject Requests for GDPR
 keywords: Visual Studio Team Services, VSTS, Azure DevOps documentation, privacy, GDPR
 localization_priority: Priority
-audience: microsoft-business
+
 audience: itpro
 ms.prod: devops
 ms.topic: article
