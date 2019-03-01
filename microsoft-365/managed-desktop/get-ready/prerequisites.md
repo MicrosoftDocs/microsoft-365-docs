@@ -15,7 +15,7 @@ ms.date: 11/1/2018
 
 Success with Microsoft Managed Desktop begins with well-known, documented, and agreed-upon requirements for the customer's infrastructure. This section outlines those infastructure requirements. 
 
-Microsoft FastTrack is available to help customers meet these requirements and help you prepare to participate in Modern Workplace as a Service. For more information, see [Microsoft FastTrack](https://fasttrack.microsoft.com/about). 
+Microsoft FastTrack is available to help customers meet these requirements and help you prepare to participate in Microsoft Managed Desktop. For more information, see [Microsoft FastTrack](https://fasttrack.microsoft.com/about). 
 
 Area | Prerequisite details
 --- | ---
