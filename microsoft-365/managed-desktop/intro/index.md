@@ -14,7 +14,7 @@ ms.date: 10/24/2018
 
 We’re always looking for ways to help make our customer’s workplace more productive and secure. Using the Microsoft 365 service starts by empowering employees to work together in a creative, secure, device and app environment.
 
-Microsoft Managed Desktop takes this further by combining the power of Microsoft 365 E5 on a modern device, with endpoint management, protection, and security provided and run by Microsoft.
+Microsoft Managed Desktop takes this further by combining the power of Microsoft 365 Enterprise on a modern device, with endpoint management, protection, and security provided and run by Microsoft.
 
 
 <table>
