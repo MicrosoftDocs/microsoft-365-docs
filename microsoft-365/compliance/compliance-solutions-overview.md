@@ -11,7 +11,9 @@ ms.date: 04/13/2018
 ms.author: bcarter
 manager: laurawi
 audience: itpro
-ms.collection: GDPR
+ms.collection: 
+- GDPR
+- M365-security-compliance
 ---
 
 # Compliance solutions

@@ -11,7 +11,8 @@ ms.date: 09/14/2018
 ms.author: bcarter
 manager: laurawi
 audience: itpro
-ms.collection: NIST
+ms.collection: 
+- M365-security-compliance
 ---
 
 # Microsoft 365 NIST 800-53 action plan — Top priorities for your first 30 days, 90 days, and beyond
