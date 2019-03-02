@@ -11,6 +11,9 @@ ms.reviewer: martincoetzer
 ms.custom: 
 - it-pro
 - goldenconfig
+ms.collection: 
+- M365-identity-device-management
+- M365-security-compliance
 ---
 
 # Prerequisite work for implementing identity and device access policies
