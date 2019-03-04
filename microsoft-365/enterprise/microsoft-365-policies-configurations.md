@@ -11,6 +11,10 @@ ms.reviewer: martincoetzer
 ms.custom: 
 - it-pro
 - goldenconfig
+ms.collection: 
+- M365-identity-device-management
+- M365-security-compliance
+
 ---
 # Identity and device access configurations
 
