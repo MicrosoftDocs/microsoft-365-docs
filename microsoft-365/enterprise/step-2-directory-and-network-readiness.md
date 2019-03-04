@@ -31,7 +31,7 @@ Ensure your directory and the network are configured and ready to support to you
 </table>
 
 >[!NOTE]
->Directory and Network Readiness is the second step in our recommended deployment process wheel focusing on Azure Active Directory and optizming the network. To see the full desktop deployment process, visit the [Modern Desktop Deployment Center](https://aka.ms/HowToShift).
+>Directory and Network Readiness is the second step in our recommended deployment process wheel focusing on Azure Active Directory and optimizing the network. To see the full desktop deployment process, visit the [Modern Desktop Deployment Center](https://aka.ms/HowToShift).
 >
 
 Directory and Network readiness is fundamental to ensuring a smooth OS and desktop deployment. As with any automated deployment, it is important to ensure your file shares can be reached, and your network will need to be able to support the transfer of very large files, possibly to hundreds or even thousands of PCs at a time.
