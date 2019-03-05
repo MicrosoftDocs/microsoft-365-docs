@@ -35,8 +35,11 @@ description: Learn how to plan, deploy, and use Microsoft Office 365, Windows 10
                                             </div>
                                             <div class="cardText">
                                                 <h3>Explore</h3>
-                                                <P><a href="https://support.office.com/article/what-is-microsoft-365-business-901e2522-c2cf-4b8c-894e-f482cda3347a" target="_blank">Overview</a></p>
-                                                <P><a href="microsoft-365-business-overview.md" target="_blank">Get started with Microsoft 365 Business</a></p> <P><a href="https://docs.microsoft.com/microsoft-365/business/support/microsoft-365-business-faqs" target="_blank">FAQ</a></p>
+                                                <P><a href="https://support.office.com/article/what-is-microsoft-365-business-901e2522-c2cf-4b8c-894e-f482cda3347a" target="_blank">Video overview</a></p>
+                                                <P><a href="microsoft-365-business-overview.md" target="_blank">What is Microsoft 365 Business</a></p>
+                                                <P><a href="" target="_blank">What subscription is right for you?</a></p>
+                                                <P><a href="" target="_blank">Service description</a></p>
+                                                <P><a href="https://docs.microsoft.com/microsoft-365/business/support/microsoft-365-business-faqs" target="_blank">FAQ</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -53,7 +56,7 @@ description: Learn how to plan, deploy, and use Microsoft Office 365, Windows 10
                                             </div>
                                             <div class="cardText">
                                                 <h3>Set up Microsoft 365 Business</h3>
-                                                <P><a href="set-up.md" target="_blank">Set up</a></p>
+                                                <P><a href="set-up.md" target="_blank">Set up</a></p><P><a href="..\Setup\set-up-mobile-devices.md" target="_blank">Set up iPhone and Android devices</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -87,7 +90,7 @@ description: Learn how to plan, deploy, and use Microsoft Office 365, Windows 10
                                             </div>
                                             <div class="cardText">
                                                 <h3>Protect business data and devices</h3>
-                                                <P><a href="manage.md" target="_blank">Manage devices</a></p> <P><a href="app-protection-settings-for-android-and-ios.md" target="_blank">Protect iPhone and Android devices</a></p>
+                                                <P><a href="manage.md" target="_blank">Manage devices</a></p> <P><a href="set-up-mobile-devices" target="_blank">Set up Office in Android and iOS</a></p>
                                                  <P><a href="https://support.office.com/article/top-10-ways-to-secure-office-365-and-microsoft-365-business-plans-from-cyber-threats-de2da300-dbb6-4725-bb12-b85a9d296e75" target="_blank">Top 10 ways to secure Microsoft 365 Business</a></p>
                                                 <P><a href="security-features.md" target="_blank">Learn more about security features</a></p>
                                                 </div>
