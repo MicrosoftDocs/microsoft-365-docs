@@ -6,6 +6,7 @@ ms.service: m365-md
 author: jdeckerms
 ms.localizationpriority: normal
 ms.date: 11/7/2018
+ms.collection: M365-modern-desktop
 ---
 
 # Support for Microsoft Managed Desktop
