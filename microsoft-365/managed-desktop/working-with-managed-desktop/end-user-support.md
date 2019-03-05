@@ -6,6 +6,7 @@ ms.service: m365-md
 author: jdeckerms
 ms.localizationpriority: normal
 ms.date: 11/28/2018
+ms.collection: M365-modern-desktop
 ---
 
 # Getting help for end users

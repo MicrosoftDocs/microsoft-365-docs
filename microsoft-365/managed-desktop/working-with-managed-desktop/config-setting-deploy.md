@@ -6,6 +6,7 @@ ms.service: m365-md
 author: trudyha
 ms.localizationpriority: normal
 ms.date: 2/17/2019
+ms.collection: M365-modern-desktop
 ---
 
 # Deploy and track configurable settings - Microsoft Managed Desktop

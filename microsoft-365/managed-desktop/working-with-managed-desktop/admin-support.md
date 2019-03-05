@@ -6,6 +6,7 @@ ms.service: m365-md
 author: trudyha
 ms.localizationpriority: normal
 ms.date: 12/18/2018
+ms.collection: M365-modern-desktop
 ---
 
 # Admin support for Microsoft Managed Desktop

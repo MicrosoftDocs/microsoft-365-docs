@@ -6,6 +6,7 @@ ms.service: m365-md
 author: trudyha
 ms.localizationpriority: normal
 ms.date: 11/1/2018
+ms.collection: M365-modern-desktop
 ---
 
 # Prerequisites for Microsoft Managed Desktop

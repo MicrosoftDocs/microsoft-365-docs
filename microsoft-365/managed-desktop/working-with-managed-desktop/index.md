@@ -6,6 +6,7 @@ ms.service: m365-md
 author: trudyha
 ms.localizationpriority: normal
 ms.date: 06/06/2018
+ms.collection: M365-modern-desktop
 ---
 
 # Working with Microsoft Managed Desktop

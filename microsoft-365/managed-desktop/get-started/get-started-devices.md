@@ -6,6 +6,7 @@ ms.service: m365-md
 author: trudyha
 ms.localizationpriority: normal
 ms.date: 2/27/2019
+ms.collection: M365-modern-desktop
 ---
 
 # Get started using Microsoft Managed Desktop devices
