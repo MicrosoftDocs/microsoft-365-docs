@@ -29,7 +29,7 @@ Links to devices below are for reference only, purchases should be made through 
 <tr><td><a href="https://store.hp.com/us/en/mdp/laptops/hp-elite-x2-1013-3074457345617296670--1#!&tab=features">HP Elite x2 1013 G3</a></td><td>256 GB / Intel i5 / 8 GB RAM</td><td>SKU with 5VS03AV (MMD image) <br />
 IR camera required
 </td><td>May 14, 2020</td><td>May 14, 2023</td></tr>
-<tr><td><a href="https://store.hp.com/us/en/mdp/laptops/elitebook-840#!&tab=features">HP EliteBook 840 G5</a></td><td>128 GB / Intel i5 / 8 GB RAM</td><td>SKU with 5VS01AV (MMD image) <br />
+<tr><td><a href="https://store.hp.com/us/en/mdp/laptops/elitebook-840#!&tab=features">HP EliteBook 830 / 840 / 850 G5</a></td><td>128 GB / Intel i5 / 8 GB RAM</td><td>SKU with 5VS01AV (MMD image) <br />
 IR Camera or Fingerprint required</td><td>Feb 15, 2020</td><td>Feb 15, 2023</td></tr>
 <tr><td><a href="https://store.hp.com/us/en/mdp/laptops/hp-elitebook-x360-1030-g2--1#tab=features">HP EliteBook x360 1030 G3</a></td><td>256 GB / Intel i5 / 8 GB RAM</td><td>SKU with 5VS01AV (MMD image) <br />
 IR camera required</td><td>May 14, 2020</td><td>May 14, 2023</td></tr>
