@@ -6,6 +6,7 @@ ms.service: m365-md
 author: jdeckerms
 ms.localizationpriority: normal
 ms.date: 02/06/2019
+ms.collection: M365-modern-desktop
 ---
 
 # Microsoft Managed Desktop device services
