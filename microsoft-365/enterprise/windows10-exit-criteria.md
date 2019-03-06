@@ -3,7 +3,7 @@ title: "Phase 3: Windows 10 Enterprise infrastructure exit criteria"
 ms.author: greglin
 author: greg-lindsay
 manager: laurawi
-ms.date: 06/01/2018
+ms.date: 03/05/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -19,7 +19,7 @@ description: Ensure that your configuration meets Microsoft 365 Enterprise crite
 
 ![](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
 
-If your Windows 10 Enterprise infrastructure meets the following conditions, you’re ready to move to Phase 4.
+Make sure your Windows 10 Enterprise infrastructure meets the following required criteria and that you've considered those that are optional.
 
 <a name="crit-windows10-step1"></a>
 ## Required: Your Microsoft 365 domains are added and verified
@@ -114,12 +114,10 @@ Optionally, you have integrated Windows Defender ATP with other tools to expand 
 
 If needed, [Step 5](windows10-enable-security-features.md#windows10-sec-atp) can help you with this requirement.
 
-## Updates for Windows 10 Enterprise
+## Results and next steps
 
-
-
-## Next phase
+Your Windows 10 Enterprise infrastructure is ready to begin installation on new devices and upgrades-in-place on devices running previous versions of Windows, and you are using the key security features of Windows 10 Enterprise.
 
 |||
 |:-------|:-----|
-|![](./media/deploy-foundation-infrastructure/O365proplus_icon-small.png)| Your next phase in the end-to-end deployment process for Microsoft 365 Enterprise is [Office 365 ProPlus](office365proplus-infrastructure.md). |
+|![](./media/deploy-foundation-infrastructure/O365proplus_icon-small.png)| If you're following the phases for the end-to-end deployment of Microsoft 365 Enterprise, your next phase is [Office 365 ProPlus](office365proplus-infrastructure.md). |

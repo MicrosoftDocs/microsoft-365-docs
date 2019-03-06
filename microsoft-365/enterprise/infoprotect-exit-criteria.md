@@ -3,7 +3,7 @@ title: "Information protection infrastructure exit criteria"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/13/2018
+ms.date: 03/05/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -19,7 +19,7 @@ description: Examine the criteria for information protection-based services and 
 
 ![](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
-Before you are complete with your foundation infrastructure, make sure that your information protection infrastructure meets these conditions. 
+Make sure your information protection infrastructure meets the following required criteria and that you've considered those that are optional.
 
 <a name="crit-infoprotect-step1"></a>
 ## Required: Security and information protection levels for your organization are defined
@@ -66,6 +66,8 @@ You've used the information in the [Configure privileged access management in Of
 
 If needed, [Step 4](infoprotect-configure-privileged-access-management.md) can help you meet this requirement. 
 
-## Next Step
+## Results and next steps
 
-You're now ready to deploy [workloads and scenarios](deploy-workloads.md), such as Microsoft Teams and Exchange Online, that run on top of your Microsoft 365 Enterprise foundation infrastructure.
+Your information protection infrastructure for Microsoft 365 Enterprise uses defined security levels, increased security for Office 365, classification using labels, and privileged access management.
+
+If you're following the end-to-end deployment of Microsoft 365 Enterprise, you're now ready to have your [workloads and scenarios](deploy-workloads.md) take advantage of all the features and configuration of your foundation infrastructure.
