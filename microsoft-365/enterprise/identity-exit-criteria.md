@@ -3,7 +3,7 @@ title: "Phase 2: Identity infrastructure exit criteria"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 02/25/2019
+ms.date: 03/05/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -19,7 +19,9 @@ description: Ensure that your configuration meets Microsoft 365 Enterprise crite
 
 ![](./media/deploy-foundation-infrastructure/identity_icon-small.png)
 
-Before you move on to Phase 3, make sure that your identity infrastructure meets these conditions. Also see [Prerequisites](https://docs.microsoft.com/microsoft-365-enterprise/identity-access-policies#prerequisites) for additional recommendations on identity infrastructure.
+Make sure your identity infrastructure meets the following required criteria and that you've considered those that are optional.
+
+Also see [Prerequisites](https://docs.microsoft.com/microsoft-365-enterprise/identity-access-policies#prerequisites) for additional recommendations on identity infrastructure.
 
 <a name="crit-identity-user-groups"></a>
 ## Required: All users, groups, and group memberships have been created
@@ -259,10 +261,11 @@ If needed, [Step 6](identity-self-service-group-management.md#identity-group-lic
 5. Examine the properties of the user account to ensure that it no longer has the Office 365 and EMS licenses assigned.
 6. Delete the test security group and the test user account.
 
+## Results and next steps
 
-## Next phase
+Your identity infrastructure in the Microsoft 365 cloud uses strong authentication, protected administrator accounts, and simplified user access and management.
 
 |||
 |:-------|:-----|
-|![](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)| Your next phase in the end-to-end deployment process for Microsoft 365 Enterprise is [Windows 10 Enterprise](windows10-infrastructure.md). |
+|![](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)| If you're following the phases for the end-to-end deployment of Microsoft 365 Enterprise, your next phase is [Windows 10 Enterprise](windows10-infrastructure.md). |
 

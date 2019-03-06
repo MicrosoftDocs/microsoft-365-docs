@@ -5,7 +5,7 @@ keywords: Microsoft 365, Microsoft 365 Enterprise, Microsoft 365 documentation, 
 author: MandiOhlinger 
 ms.author: mandia 
 manager: dougeby 
-ms.date: 08/10/2018 
+ms.date: 03/05/2019
 ms.topic: article 
 ms.prod: microsoft-365-enterprise
 ms.service: 
@@ -21,7 +21,7 @@ ms.custom: microsoft-intune
 
 *This applies to the E3 and E5 versions of Microsoft 365 Enterprise*
 
-Before you move on to the next phase in the deployment process, ensure that your configuration meets the following requirements for mobile device management infrastructure.
+Ensure that your configuration meets the following requirements for mobile device management infrastructure.
 
 - Intune is set up, including the creation of Azure AD users and groups to apply your organization's rules for devices.
 - You have enrolled devices in Intune so that the devices can receive the policies you create.
@@ -29,8 +29,12 @@ Before you move on to the next phase in the deployment process, ensure that your
 - Features and settings are configured and applied to your devices using the Azure AD users and groups you create, which might include enabling anti-virus and restricting specific apps.
 - Compliance policies are in place to require a firewall or a password length on a device. If devices aren't compliant, conditional access blocks access to your organization's data.
 
-## Next phase
+
+
+## Results and next steps
+
+Your devices are enrolled in Intune and configured with the appropriate policies.
 
 |||
 |:-------|:-----|
-|![](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)| Your next phase in the end-to-end deployment process for Microsoft 365 Enterprise is [information protection](infoprotect-infrastructure.md). |
+|![](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)| If you're following the phases for the end-to-end deployment of Microsoft 365 Enterprise, your next phase is [information protection](infoprotect-infrastructure.md). |
