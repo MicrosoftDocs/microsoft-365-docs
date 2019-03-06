@@ -4,7 +4,7 @@ description: These documents provide data controllers with information that will
 keywords: Data protection impact assessment, DPIA, Dynamics 365, Microsoft Professional Services, Microsoft 365, Microsoft 365 documentation, GDPR
 author: herviicban
 localization_priority: Priority
-audience: microsoft-business
+
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.author: heicba

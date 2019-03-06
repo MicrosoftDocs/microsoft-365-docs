@@ -9,8 +9,8 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection: 
-- Ent_O365
 - Strat_O365_Enterprise
+- M365-subscription-management
 ms.custom:
 
 description: How a fictional but representative global organization has adopted Microsoft 365 Enterprise.

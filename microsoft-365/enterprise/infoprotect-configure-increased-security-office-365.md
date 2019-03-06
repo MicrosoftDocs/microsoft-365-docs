@@ -9,7 +9,7 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection: 
-- Ent_O365
+- M365-security-compliance
 - Strat_O365_Enterprise
 ms.custom:
 description: Understand and configure increased security for Office 365, including Office 365 ATP.

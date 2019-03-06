@@ -4,7 +4,7 @@ description: How Azure protects against a personal data breach and how Microsoft
 keywords: Azure, Microsoft 365, Microsoft 365 Education, Microsoft 365 documentation, GDPR
 author: herviicban
 localization_priority: Priority
-audience: microsoft-business
+
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.date: 04/13/2018

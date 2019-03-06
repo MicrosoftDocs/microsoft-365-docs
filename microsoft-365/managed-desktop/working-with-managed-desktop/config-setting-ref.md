@@ -6,6 +6,7 @@ ms.service: m365-md
 author: trudyha
 ms.localizationpriority: normal
 ms.date: 2/14/2019
+ms.collection: M365-modern-desktop
 ---
 
 # Configurable settings reference - Microsoft Managed Desktop

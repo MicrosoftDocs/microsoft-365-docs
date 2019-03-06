@@ -4,14 +4,16 @@ description: A prioritized action plan you can follow as you work to meet the re
 keywords: Microsoft 365, Microsoft 365 Education, Microsoft 365 documentation, GDPR
 author: BrendaCarter
 localization_priority: Priority
-audience: microsoft-business
+
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.date: 08/15/2018
 ms.author: bcarter
 manager: laurawi
 audience: itpro
-ms.collection: GDPR
+ms.collection: 
+- GDPR
+- M365-security-compliance
 ---
 
 # Microsoft 365 GDPR action plan — Top priorities for your first 30 days, 90 days, and beyond

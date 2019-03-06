@@ -3,13 +3,13 @@ title: "Microsoft 365 Enterprise foundation infrastructure"
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 02/26/2019
+ms.date: 03/05/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection: 
-- Ent_O365
+- M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom:
 description: Understand the major phases of deploying the foundation infrastructure for Microsoft 365 Enterprise in your organization.
@@ -19,7 +19,7 @@ description: Understand the major phases of deploying the foundation infrastruct
 
 If you're doing the end-to-end deployment of Microsoft 365 Enterprise yourself, you should first build a firm foundation upon which applications and services can unlock creativity and teamwork in a secure environment. 
 
-Use these phases to plan for and deploy the foundation infrastructure of Microsoft 365 Enterprise:
+For a defined end-to-end path for deployment, you can use these phases to plan for and deploy the foundation infrastructure of Microsoft 365 Enterprise:
 
 | | Phase | Results |
 |:-------|:-----|:-----|
@@ -39,11 +39,11 @@ The phases start with the most foundational (networking and identity), and then 
 
 However, you have the flexibility of configuring and rolling out the phases or steps within phases to fit your IT resources and business needs.
 
-- **If you are a smaller or newer organization**, follow the phases in order to methodically build out your infrastructure.
+- **If you are a smaller or newer organization**, follow the phases as needed in order to methodically build out your infrastructure.
 
--  **If you are an enterprise organization**, view the phases as layers of IT infrastructure, rather than a defined path, and determine how to best work toward eventual adherence to the requirements of each layer across your organization.
+-  **If you are an enterprise organization**, view the phases as layers of IT infrastructure, rather than a defined path, and determine how to best work toward eventual adherence to the requirements for each layer across your organization.
 
-Before you are done each phase, examine its exit criteria, which include required conditions that you must meet and optional conditions to consider. Exit criteria for each phase ensures that your on-premises and cloud infrastructure and resulting end-to-end configuration meet the requirements for a Microsoft 365 Enterprise deployment.
+At the end of each phase, you should examine its exit criteria, which include required conditions that you must meet and optional conditions to consider. Exit criteria for each phase ensures that your on-premises and cloud infrastructure and resulting end-to-end configuration meet the requirements for a Microsoft 365 Enterprise deployment.
 
 To see how the content is structured, watch this short video.
 
@@ -94,4 +94,3 @@ To give you some ideas on how to approach the project management of the differen
   - See [Deployment with existing infrastructure](deploy-with-existing-infrastructure.md). This article steps you through the exit criteria for each phase.
 - I'm starting from scratch: 
    - Begin your end-to-end deployment journey with [Phase 1: Networking](networking-infrastructure.md).
-
