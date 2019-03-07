@@ -55,8 +55,8 @@ description: Learn how to plan, deploy, and use Microsoft Office 365, Windows 10
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>Set up Microsoft 365 Business</h3>
-                                                <P><a href="set-up.md" target="_blank">Set up</a></p>
+                                                <h3>Set up</h3>
+                                                <P><a href="set-up.md" target="_blank">Set up Microsoft 365 Business</a></p>
                                                 <P><a href="set-up-windows-devices.md" target="_blank">Set up Windows 10 devices</a></p>
                                                 <P><a href="set-up-mobile-devices.md" target="_blank">Set up iPhone and Android devices</a></p>
                                                 <P><a href="auto-install-or-uninstall-office.md" target="_blank">Install Office on Windows 10</a></p>
