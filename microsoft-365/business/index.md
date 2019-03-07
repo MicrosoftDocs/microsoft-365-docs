@@ -93,9 +93,10 @@ description: Learn how to plan, deploy, and use Microsoft Office 365, Windows 10
                                             </div>
                                             <div class="cardText">
                                                 <h3>Protect business data and devices</h3>
-                                                <P><a href="manage.md" target="_blank">Manage devices</a></p> <P><a href="set-up-mobile-devices" target="_blank">Set up Office in Android and iOS</a></p>
                                                  <P><a href="https://support.office.com/article/top-10-ways-to-secure-office-365-and-microsoft-365-business-plans-from-cyber-threats-de2da300-dbb6-4725-bb12-b85a9d296e75" target="_blank">Top 10 ways to secure Microsoft 365 Business</a></p>
                                                 <P><a href="security-features.md" target="_blank">Learn more about security features</a></p>
+                                                <P><a href="remove-company-data.md" target="_blank">Remove data from devices</a></p>
+                                                <P><a href="reset-devices-to-factory-settings.md" target="_blank">Reset devices</a></p>
                                                 </div>
                                         </div>
                                     </div>
@@ -112,7 +113,6 @@ description: Learn how to plan, deploy, and use Microsoft Office 365, Windows 10
                                             </div>
                                             <div class="cardText">
                                                 <h3>Use</h3>
-                                                <P><a href="set-up-mobile-devices.md" target="_blank">Set up mobile devices</a></p>
                                                 <P><a href="https://support.office.com/office-training-center" target="_blank">Help everyone get up and running with Office</a></p>
                                                 <P><a href="https://www.microsoft.com/itpro/windows-10/end-user-readiness" target="_blank">Help everyone switch to Windows 10</a></p>
                                                 <P><a href="https://docs.microsoft.com/intune-user-help/use-managed-devices-to-get-work-done" target="_blank">Intune training</a></p>
@@ -127,14 +127,12 @@ description: Learn how to plan, deploy, and use Microsoft Office 365, Windows 10
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/media/logos/logo_Windows.svg" alt="Windows logo" />
+                                                    <img src="https://docs.microsoft.com/en-us/office/media/icons/success-blue.svg" alt="Success logo" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>Windows 10</h3>
-                                                <P><a href="set-up-windows-devices.md" target="_blank">Set up Windows 10 devices</a></p>
-                                                <P><a href="remove-company-data.md" target="_blank">Remove data from devices</a></p>
-                                                <P><a href="reset-devices-to-factory-settings.md" target="_blank">Reset devices</a></p>
+                                                <h3>Resources for partners</h3>
+                                                <P><a href="https://www.microsoft.com/microsoft-365/partners/business" target="_blank">Partner resources</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -154,9 +152,9 @@ description: Learn how to plan, deploy, and use Microsoft Office 365, Windows 10
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Get help from a Microsoft partner</h3>
+                                                    <h3>Need help?</h3>
                                                     <P><a href="https://www.microsoft.com/solution-providers/search" target="_blank">Find a partner</a></p>
-                                                    <P><a href="https://www.microsoft.com/microsoft-365/partners/business" target="_blank">Partner resources</a></p>
+                                                    <P><a href="https://support.office.com/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b" target="_blank">Contact support for Office 365</a></p>
                                                 </div>
                                             </div>
                                         </div>
@@ -172,10 +170,9 @@ description: Learn how to plan, deploy, and use Microsoft Office 365, Windows 10
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Need support?</h3>
-                                                     <P><a href="https://azure.microsoft.com/support/options/" target="_blank">Azure</a></p>
-                                                     <P><a href="https://support.office.com/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b" target="_blank">Office 365</a></p>
-                                                     <P><a href="http://support.microsoft.com/products/windows" target="_blank">Windows 10</a></p>
+                                                    <h3>Help documentation</h3>
+                                                     <P><a href="https://docs.microsoft.com/office/admins-itprofessionals" target="_blank">Office admin docs</a></p>
+                                                     <P><a href="https://docs.microsoft.com/intune/index">Microsoft Intune docs</a></p>
                                                 </div>
                                             </div>
                                         </div>
