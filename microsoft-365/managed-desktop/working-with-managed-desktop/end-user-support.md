@@ -29,7 +29,7 @@ This is an application that’s installed on all Microsoft Managed Desktop devic
 End users with Microsoft Managed Desktop devices also have access to toll-free phone numbers they can call. This is meant to be used when Get Help isn’t available. For example, if they can’t sign in to the device, or the device is broken. Here are the phone numbers for phone support:
  
 
-- United States & Canada: +1 855 425 0216
+- United States & Canada (excluding Quebec): +1 855 425 0216
 - United Kingdom: +44 800 026 0698
 - Australia: +61 180 037 0619
 
