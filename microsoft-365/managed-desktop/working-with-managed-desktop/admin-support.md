@@ -16,9 +16,11 @@ You can submit Support tickets or Feedback requests to Microsoft using the Micro
 >[!IMPORTANT]
 >Make sure that you [set up an Admin contact](../get-started/add-admin-contacts.md) for app packaging, devices, security, and other. You are unable to submit a Support request in any of these areas if an admin contact is not configured.
 
-To submit a Support request, open the Microsoft Managed Desktop admin portal, and select **+ New Support ticket** on the Support request tab. The information below will help guide your choices, depending on your scenario. When you select a severity level, please review the expectations in **Expected customer response**.
-
-When you create your support request, choose the type that matches the kind of help you need.
+**To submit a support request**
+1. Sign in to [Microsoft Managed Desktop Admin portal](http://aka.ms/mwaasportal). 
+2. On **Support requests**, select **+ New Support ticket**.
+3. Select the **Support request type** that matches the help you need. The table below outlines the options. 
+4. Select the **Severity level**. For more information, see [Support request severity definitions](#sev). 
 
 Support request type | When to use
 --- | ---
@@ -49,6 +51,3 @@ Additional details:
 ## Additional resources
 - [End user support for Microsoft Managed Desktop](end-user-support.md). 
 - [Support for Microsoft Managed Desktop](../service-description/support.md). 
-
-
-
