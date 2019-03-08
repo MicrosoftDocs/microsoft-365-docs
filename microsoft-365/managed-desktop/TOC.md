@@ -20,6 +20,8 @@
 ### [Order devices](get-started/devices.md)
 ### [Get started with devices](get-started/get-started-devices.md)
 ### [Deploy apps](get-started/deploy-apps.md)
+#### [Intune Company Portal](get-started/company-portal.md)
+#### [Microsoft Project and Microsoft Visio](get-started/project-visio.md)
 ## [Working with Microsoft Managed Desktop](working-with-managed-desktop/index.md)
 ### [Admin support](working-with-managed-desktop/admin-support.md)
 ### [End user support](working-with-managed-desktop/end-user-support.md)
