@@ -1,5 +1,5 @@
 ---
-title: Install Microsoft Project or Microsoft Visio on Microsoft Managed Desktop devices 
+title: Install Intune Company Portal Microsoft Managed Desktop devices 
 description: Info on installing company portal app on Microsoft Managed Desktop devices 
 keywords: Microsoft Managed Desktop, Microsoft 365, Company Portal
 ms.service: m365-md
@@ -9,9 +9,9 @@ ms.date: 03/08/2019
 ms.collection: M365-modern-desktop
 ---
 
-# Install Microsoft Project or Microsoft Visio on Microsoft Managed Desktop devices
+# Install Intune Company Portal on Microsoft Managed Desktop devices
 
-Microsoft Managed Desktop recommends that IT administrators install Intune Company Portal for their users with Microsoft Managed Desktop devices. Here are some benefits for your organization:
+Microsoft Managed Desktop requires that IT administrators install Intune Company Portal for their users with Microsoft Managed Desktop devices. Here are some benefits for your organization:
 - Users have one place to browse and install available applications. 
 - IT administrators can organize applications by categories for their users.  
 - Some applications (like Microsoft Project and Microsoft Visio) require Company Portal to deploy with Microsoft Managed Desktop.

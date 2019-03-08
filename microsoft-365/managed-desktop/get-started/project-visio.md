@@ -17,7 +17,9 @@ Microsoft Project and Microsoft Visio require specific steps to be installed on 
 
 Admins should verify that they meet these prerequisites:
 - **License quantities** - The correct amount of Microsoft Project and Microsoft Visio licenses must be available for your users. Microsoft Managed Desktop currently only supports 64-bit versions of these applications. 
-- **License names** - The appropriate license names for these applications are Microsoft Project: Project Online Professional or Project Online Premium, and Microsoft Visio: Visio Online Plan 2
+- **License names** - The appropriate license names for these applications are:
+    - **Microsoft Project** - Project Online Professional or Project Online Premium
+    - **Microsoft Visio** - Visio Online Plan 2
 - **Company Portal** -  The Company Portal must be available in your tenant for your users to install these applications. If the Company Portal isn’t deployed in your tenant, see [Company Portal](company-portal.md).
 
 ## Deploy Project and Visio for Microsoft Managed Desktop devices
@@ -39,6 +41,9 @@ Microsoft-Office-Project and Visio-Install | Users needing both Project and Visi
 Once assigned to these groups, applications will be available in the Company Portal. It may take a few minutes to sync, but then your users can install the apps from Company Portal. 
 
 ## Communicate changes
-It’s important for IT administrators to let their users know how to instal Project and Visio. This includes: 
+It’s important for IT administrators to let their users know how to install Project and Visio. This includes: 
 - Notifying users when these applications are available to them. 
-- Instructions on how to install these applications from the Company Portal. 
+- Instructions on how to install these applications from the Company Portal.
+
+>[!NOTE]
+>Users must close all Office applications before installing Mircosoft Project or Microsoft Visio from Company Portal. 
