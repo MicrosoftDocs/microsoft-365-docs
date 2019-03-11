@@ -35,12 +35,9 @@ IR Camera or Fingerprint required</td><td>Feb 15, 2020</td><td>Feb 15, 2023</td>
 IR camera required</td><td>May 14, 2020</td><td>May 14, 2023</td></tr>
 <tr><td><a href="https://store.hp.com/us/en/mdp/laptops/hp-elitebook-x360-1040-3074457345617328670--1#!&tab=features">HP EliteBook x360 1040 G5</a></td><td>256 GB / Intel i5 / 8 GB RAM</td><td>SKU with 5VS01AV (MMD image) <br />
 IR camera required</td><td>Oct 23, 2020</td><td>Oct 23, 2023</td></tr>
-<tr><td><a href="https://store.hp.com/us/en/mdp/desktops/elitedesk-800-mini-349547--1#!&tab=features">HP EliteDesk 800 G4 DM</a></td><td>128 GB / Intel i3 / 8 GB RAM</td><td>SKU with 5VS04AV (MMD image) <br />
-IR camera or Fingerprint reader required</td><td>Jul 18, 2020</td><td>Jul 18, 2023</td></tr>
-<tr><td><a href="https://store.hp.com/us/en/mdp/desktops/elitedesk-800-small-form-factor-349548--1#!&tab=features">HP EliteDesk 800 G4 SFF</a></td><td>128 GB / Intel i3 / 8 GB RAM</td><td>SKU with 5VS04AV (MMD image) <br />
-IR camera or Fingerprint reader required</td><td>Jul 18, 2020</td><td>Jul 18, 2023</td></tr>
-<tr><td><a href="https://store.hp.com/us/en/mdp/desktops/eliteone-800-all-in-one-349552--1#!&tab=features">HP EliteOne 800 G4 23.8in AIO</a></td><td>128 GB / Intel i3 / 8 GB RAM</td><td>SKU with 5VS04AV (MMD image) <br />
-IR camera or Fingerprint reader required</td><td>Jul 18, 2020</td><td>Jul 18, 2023</td></tr>
+<tr><td><a href="https://store.hp.com/us/en/mdp/desktops/elitedesk-800-mini-349547--1#!&tab=features">HP EliteDesk 800 G4 DM</a></td><td>128 GB / Intel i3 / 8 GB RAM</td><td>SKU with 5VS04AV (MMD image)</td><td>Jul 18, 2020</td><td>Jul 18, 2023</td></tr>
+<tr><td><a href="https://store.hp.com/us/en/mdp/desktops/elitedesk-800-small-form-factor-349548--1#!&tab=features">HP EliteDesk 800 G4 SFF</a></td><td>128 GB / Intel i3 / 8 GB RAM</td><td>SKU with 5VS04AV (MMD image)</td><td>Jul 18, 2020</td><td>Jul 18, 2023</td></tr>
+<tr><td><a href="https://store.hp.com/us/en/mdp/desktops/eliteone-800-all-in-one-349552--1#!&tab=features">HP EliteOne 800 G4 23.8in AIO</a></td><td>128 GB / Intel i3 / 8 GB RAM</td><td>SKU with 5VS04AV (MMD image)</td><td>Jul 18, 2020</td><td>Jul 18, 2023</td></tr>
 <tr><td><a href="https://store.hp.com/us/en/mdp/laptops/hp-probook-x360-440-3074457345617293669--1#!&tab=features">HP ProBook x360 440 G1</a></td><td>128 GB / Intel i3 / 8 GB RAM</td><td>SKU with 5VS04AV (MMD image) <br />
 IR camera or Fingerprint reader required</td><td>Jun 6, 2020</td><td>Jun 6, 2023</td></tr>
 <tr><td><a href="https://www.microsoft.com/en-us/p/surface-book-2-for-business/8x4htznfgg38/lbh3?cid=msft_web_collection&CustomerIntent=Consumer">Surface Book 2</a></td><td>512 GB / Intel i7 / 16 GB RAM</td><td>15-inch display</td><td>Nov 16, 2019</td><td>Nov 16, 2022</td></tr>
