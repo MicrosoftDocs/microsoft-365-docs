@@ -7,13 +7,19 @@ ms.sitesec: library
 author: trudyha
 ms.author: jdecker
 ms.topic: article
-ms.date: 02/27/2019
+ms.date: 03/11/2019
 ms.localizationpriority: normal
 ---
 
 # Change history for Microsoft Managed Desktop documentation
 
 This topic lists new and updated topics in the [Microsoft Managed Desktop documentation](index.yml).
+
+## March 2019
+New or changed topic | Description
+--- | ---
+[Install Intune Company Portal on Microsoft Managed Desktop devices](get-started/company-portal.md) | New topic
+[Install Microsoft Project and Microsoft Visio on Microsoft Managed Desktop devices](get-started/project-visio.md) | New topic
 
 ## February 2019
 New or changed topic | Description
