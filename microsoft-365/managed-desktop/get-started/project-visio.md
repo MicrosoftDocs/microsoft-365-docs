@@ -46,4 +46,4 @@ It’s important for IT administrators to let their users know how to install Pr
 - Instructions on how to install these applications from the Company Portal.
 
 >[!NOTE]
->Users must close all Office applications before installing Mircosoft Project or Microsoft Visio from Company Portal. 
+>Users must close all Office applications before installing Microsoft Project or Microsoft Visio from Company Portal. 
