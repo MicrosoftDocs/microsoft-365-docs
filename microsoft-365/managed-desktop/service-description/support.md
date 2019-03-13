@@ -40,10 +40,6 @@ Support details:
 - We are partnering with, not replacing, your corporate helpdesk; Line-of-Business (LOB) apps, network resources, etc. are still handled by your helpdesk 
 - Microsoft Managed Devices residing in the test group and non-Microsoft Managed Desktop devices are out of scope 
 
-## Hardware replacement
-
-Hardware devices are replaced for items under the terms of the warranty you select. Devices are refreshed at the end of your Device-as-a-Service term, as is their attached warranty. Devices that need to be replaced for reasons outside of the warranty coverage will be assessed a replacement fee, e.g. lost or stolen devices. For a full list of what is covered under warranty, see [Surface warranty options](https://support.microsoft.com/help/4036296/surface-surface-standard-warranty).
-
 
 ## Related topics
 

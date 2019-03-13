@@ -84,7 +84,6 @@ If you are doing your own planning, or in conjunction with FastTrack, you need t
 Use these resources to prepare for the technical aspects of an Exchange Online rollout: 
 
 - [Ways to migrate multiple email accounts to Office 365](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration)
-- [Office 365 mail migration advisor](https://portal.office.com/onboarding/mailsetupadvisor#/) (must be signed in to your Office 365 subscription)
 - [Collaboration in Exchange Online](https://technet.microsoft.com/library/jj983794(v=exchg.150).aspx)
 - [Recipients in Exchange Online](https://technet.microsoft.com/library/jj200702(v=exchg.150).aspx)
 
