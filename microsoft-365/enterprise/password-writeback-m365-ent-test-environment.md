@@ -42,7 +42,7 @@ Follow the instructions in [password hash synchronization for Microsoft 365](pas
   
 This configuration consists of: 
   
-- Office 365 E5 and EMS E5 trial or permanent subscriptions.
+- Office 365 E5 and EMS E5 trial or paid subscriptions.
 - A simplified organization intranet connected to the Internet, consisting of the DC1, APP1, and CLIENT1 virtual machines on a subnet of an Azure virtual network. 
 - Azure AD Connect runs on APP1 to synchronize the TESTLAB Windows Server AD domain to the Azure AD tenant of your Office 365 and EMS E5 subscriptions.
 
@@ -119,7 +119,7 @@ Here is your resulting configuration:
 
 This configuration consists of:
 
-- Office 365 E5 and EMS E5 trial or permanent subscriptions with the DNS domain TESTLAB.\<your domain name> registered.
+- Office 365 E5 and EMS E5 trial or paid subscriptions with the DNS domain TESTLAB.\<your domain name> registered.
 - A simplified organization intranet connected to the Internet, consisting of the DC1, APP1, and CLIENT1 virtual machines on a subnet of an Azure virtual network. 
 - Azure AD Connect runs on APP1 to synchronize the list of accounts and groups from the Azure AD tenant of your Office 365 and EMS E5 subscriptions to the TESTLAB Windows Server AD domain. 
 - Password writeback is enabled so that users can change their passwords through Azure AD without having to be connected to the simplified intranet.

@@ -147,7 +147,7 @@ If needed, [Step 5](../identity-password-reset.md#identity-pw-writeback) can hel
 
 You test password writeback by changing your password in Office 365. You should be able to use your account and new password to access on-premises Windows Server AD resources.
 
-1. Create a test user account in your on-premises Windows Server AD, allow directory synchronization to occur, and then grant it an Office 365 license in the Office 365 admin portal.
+1. Create a test user account in your on-premises Windows Server AD, allow directory synchronization to occur, and then grant it an Office 365 license in the Microsoft 365 admin center.
 2. From a remote computer that is joined to your on-premises Windows Server AD domain, sign in to the computer and the Office portal using the credentials of the test user account.
 3. Select **Settings > Office 365 settings > Password > Change password**.
 4. Type the current password, type a new password, and then confirm it.
@@ -233,7 +233,7 @@ If needed, [Step 6](../identity-self-service-group-management.md#identity-group-
 
 1. Create a test security group in Azure AD with the Azure portal and configure group-based licensing to assign Office 365 and EMS licenses.
 2. Create a test user account in Azure AD and add it to the test security group.
-3. Examine the properties of the user account in the Office 365 admin portal to ensure that it was assigned the Office 365 and EMS licenses.
+3. Examine the properties of the user account in the Microsoft 365 admin center to ensure that it was assigned the Office 365 and EMS licenses.
 4. Remove the test user account from the test security group.
 5. Examine the properties of the user account to ensure that it no longer has the Office 365 and EMS licenses assigned.
 6. Delete the test security group and the test user account.
