@@ -42,7 +42,7 @@ Follow the instructions in [password hash synchronization for Microsoft 365](pas
   
 This configuration consists of: 
   
-- Office 365 E5 and EMS E5 trial or permanent subscriptions.
+- Office 365 E5 and EMS E5 trial or paid subscriptions.
 - A simplified organization intranet connected to the Internet, consisting of the DC1, APP1, and CLIENT1 virtual machines on a subnet of an Azure virtual network. 
 - Azure AD Connect runs on APP1 to synchronize the TESTLAB Windows Server AD domain to the Azure AD tenant of your Office 365 and EMS E5 subscriptions periodically.
 
@@ -99,7 +99,7 @@ Here is your resulting configuration:
  
 This configuration consists of:
 
-- Office 365 E5 and EMS E5 trial or permanent subscriptions with the DNS domain testlab.\<your domain name> registered.
+- Office 365 E5 and EMS E5 trial or paid subscriptions with the DNS domain testlab.\<your domain name> registered.
 - A simplified organization intranet connected to the Internet, consisting of the DC1, APP1, and CLIENT1 virtual machines on a subnet of an Azure virtual network. 
 - Azure AD Connect runs on APP1 to synchronize the list of accounts and groups from the Azure AD tenant of your Office 365 and EMS E5 subscriptions to the TESTLAB Windows Server AD domain. 
 - Azure AD Seamless SSO is enabled so that computers on the simulated intranet can sign in to Microsoft 365 cloud resources without specifing a user account password.

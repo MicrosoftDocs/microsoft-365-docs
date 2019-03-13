@@ -21,7 +21,7 @@ description: Use this Test Lab Guide to create a simulated enterprise test envir
 
 This article provides you with step-by-step instructions to create a simplified environment for Microsoft 365 Enterprise that includes:
 
-- Office 365 E5 and EMS E5 trial or permanent subscriptions.
+- Office 365 E5 and EMS E5 trial or paid subscriptions.
 - A simplified organization intranet connected to the Internet, consisting of three virtual machines on an Azure virtual network (DC1, APP1, and CLIENT1).
  
 ![The simulated enterprise base configuration](media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase4.png)
@@ -382,7 +382,7 @@ First, add the EMS E5 trial subscription and assign an EMS license to your globa
 9. On the **Product licenses** pane, turn the product license for **Enterprise Mobility + Security E5** to **On**, click **Save,** and then click **Close** twice.
     
 > [!NOTE]
->  For a permanent test environment, create a new permanent subscription with a small number of licenses. 
+>  For a permanent test environment, create a new paid subscription with a small number of licenses. 
   
 Next, repeat steps 8 and 9 of the previous procedure for all of your other accounts (User 2, User 3, User 4, and User 5).
   
