@@ -3,7 +3,7 @@ title: "Lightweight base configuration"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/07/2018
+ms.date: 03/15/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -105,26 +105,26 @@ First, start a Microsoft PowerShell prompt.
 Sign in to your Azure account with the following command.
   
 ```
-Login-AzureRMAccount
+Connect-AzAccount
 ```
 
 Get your subscription name using the following command.
   
 ```
-Get-AzureRMSubscription | Sort Name | Select Name
+Get-AzSubscription | Sort Name | Select Name
 ```
 
 Set your Azure subscription. Replace everything within the quotes, including the \< and > characters, with the correct name.
   
 ```
 $subscr="<subscription name>"
-Get-AzureRmSubscription -SubscriptionName $subscr | Select-AzureRmSubscription
+Get-AzSubscription -SubscriptionName $subscr | Select-AzSubscription
 ```
 
 Next, create a new resource group. To determine a unique resource group name, use this command to list your existing resource groups.
   
 ```
-Get-AzureRMResourceGroup | Sort ResourceGroupName | Select ResourceGroupName
+Get-AzResourceGroup | Sort ResourceGroupName | Select ResourceGroupName
 ```
 
 Create your new resource group with these commands. Replace everything within the quotes, including the \< and > characters, with the correct names.
@@ -132,28 +132,28 @@ Create your new resource group with these commands. Replace everything within th
 ```
 $rgName="<resource group name>"
 $locName="<location name, such as West US>"
-New-AzureRMResourceGroup -Name $rgName -Location $locName
+New-AzResourceGroup -Name $rgName -Location $locName
 ```
 
 Next, you create a new virtual network and the WIN10 virtual machine with these commands. When prompted, provide the name and password of the local administrator account for WIN10 and store these in a secure location.
   
 ```
-$corpnetSubnet=New-AzureRMVirtualNetworkSubnetConfig -Name Corpnet -AddressPrefix 10.0.0.0/24
-New-AzureRMVirtualNetwork -Name "M365Ent-TestLab" -ResourceGroupName $rgName -Location $locName -AddressPrefix 10.0.0.0/8 -Subnet $corpnetSubnet
-$rule1=New-AzureRMNetworkSecurityRuleConfig -Name "RDPTraffic" -Description "Allow RDP to all VMs on the subnet" -Access Allow -Protocol Tcp -Direction Inbound -Priority 100 -SourceAddressPrefix Internet -SourcePortRange * -DestinationAddressPrefix * -DestinationPortRange 3389
-New-AzureRMNetworkSecurityGroup -Name Corpnet -ResourceGroupName $rgName -Location $locName -SecurityRules $rule1
-$vnet=Get-AzureRMVirtualNetwork -ResourceGroupName $rgName -Name "M365Ent-TestLab"
-$nsg=Get-AzureRMNetworkSecurityGroup -Name Corpnet -ResourceGroupName $rgName
-Set-AzureRMVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name Corpnet -AddressPrefix "10.0.0.0/24" -NetworkSecurityGroup $nsg
-$pip=New-AzureRMPublicIpAddress -Name WIN10-PIP -ResourceGroupName $rgName -Location $locName -AllocationMethod Dynamic
-$nic=New-AzureRMNetworkInterface -Name WIN10-NIC -ResourceGroupName $rgName -Location $locName -SubnetId $vnet.Subnets[0].Id -PublicIpAddressId $pip.Id
-$vm=New-AzureRMVMConfig -VMName WIN10 -VMSize Standard_D1_V2
+$corpnetSubnet=New-AzVirtualNetworkSubnetConfig -Name Corpnet -AddressPrefix 10.0.0.0/24
+New-AzVirtualNetwork -Name "M365Ent-TestLab" -ResourceGroupName $rgName -Location $locName -AddressPrefix 10.0.0.0/8 -Subnet $corpnetSubnet
+$rule1=New-AzNetworkSecurityRuleConfig -Name "RDPTraffic" -Description "Allow RDP to all VMs on the subnet" -Access Allow -Protocol Tcp -Direction Inbound -Priority 100 -SourceAddressPrefix Internet -SourcePortRange * -DestinationAddressPrefix * -DestinationPortRange 3389
+New-AzNetworkSecurityGroup -Name Corpnet -ResourceGroupName $rgName -Location $locName -SecurityRules $rule1
+$vnet=Get-AzVirtualNetwork -ResourceGroupName $rgName -Name "M365Ent-TestLab"
+$nsg=Get-AzNetworkSecurityGroup -Name Corpnet -ResourceGroupName $rgName
+Set-AzVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name Corpnet -AddressPrefix "10.0.0.0/24" -NetworkSecurityGroup $nsg
+$pip=New-AzPublicIpAddress -Name WIN10-PIP -ResourceGroupName $rgName -Location $locName -AllocationMethod Dynamic
+$nic=New-AzNetworkInterface -Name WIN10-NIC -ResourceGroupName $rgName -Location $locName -SubnetId $vnet.Subnets[0].Id -PublicIpAddressId $pip.Id
+$vm=New-AzVMConfig -VMName WIN10 -VMSize Standard_D1_V2
 $cred=Get-Credential -Message "Type the name and password of the local administrator account for WIN10."
-$vm=Set-AzureRMVMOperatingSystem -VM $vm -Windows -ComputerName WIN10 -Credential $cred -ProvisionVMAgent -EnableAutoUpdate
-$vm=Set-AzureRMVMSourceImage -VM $vm -PublisherName MicrosoftWindowsDesktop -Offer Windows-10 -Skus RS3-Pro -Version "latest"
-$vm=Add-AzureRMVMNetworkInterface -VM $vm -Id $nic.Id
-$vm=Set-AzureRmVMOSDisk -VM $vm -Name WIN10-TestLab-OSDisk -DiskSizeInGB 128 -CreateOption FromImage
-New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
+$vm=Set-AzVMOperatingSystem -VM $vm -Windows -ComputerName WIN10 -Credential $cred -ProvisionVMAgent -EnableAutoUpdate
+$vm=Set-AzVMSourceImage -VM $vm -PublisherName MicrosoftWindowsDesktop -Offer Windows-10 -Skus RS3-Pro -Version "latest"
+$vm=Add-AzVMNetworkInterface -VM $vm -Id $nic.Id
+$vm=Set-AzVMOSDisk -VM $vm -Name WIN10-TestLab-OSDisk -DiskSizeInGB 128 -CreateOption FromImage
+New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
 
 ## Phase 4: Join your Windows 10 computer to Azure AD
