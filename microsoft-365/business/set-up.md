@@ -93,9 +93,11 @@ To set up services, you have to update some records at your DNS host or domain r
   
 1. The setup wizard typically detects your registrar and gives you a link to step-by-step instructions for updating your NS records at the registrar website. If it doesn't, [Change nameservers to set up Office 365 with any domain registrar](https://support.office.com/article/a8b487a9-2a45-4581-9dc4-5d28a47010a2). 
 
-    - If you have existing DNS records, for example an existing web site, you will want to manage your own DNS records to make sure the existing services stay connected. See 
+    - If you have existing DNS records, for example an existing web site, you will want to manage your own DNS records to make sure the existing services stay connected. See [domain basics](https://docs.microsoft.com/office365/admin/get-help-with-domains/dns-basics) for more info.
 
-3. Email and other services will be set up for you
+        ![Connect your domain page with I'll manage my own DNS records.](media/connectyourdomainpage.png)
+
+2. Follow the steps in the wizard and email and other services will be set up for you.
 
 ### Set up security policies
 
