@@ -21,7 +21,7 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
-description: "Learn how to set up Microsoft 365 Business by completing four steps."
+description: "Learn how to set up Microsoft 365 Business."
 ---
 
 # Set up Microsoft 365 Business
@@ -31,8 +31,9 @@ Watch a video on how to set up Microsoft 365 Business when you don't have an on-
 
 ## Add your domain, users and set up policies
 
-When you purchase Microsoft 365 Business, you have the option of using a domain you own, or buying one during the sign-up.
-    1. If you purchased a new domain when you signed up, your domain is all set up and you can move to [Step 2: Add users and assign licenses](#step-2-add-users-and-assign-licenses)
+When you purchase Microsoft 365 Business, you have the option of using a domain you own, or buying one during the [sign-up](sign-up.md).
+
+- If you purchased a new domain when you signed up, your domain is all set up and you can move to [Step 2: Add users and assign licenses](#step-2-add-users-and-assign-licenses)
 
 ### Add your domain to personalize sign-in
 
@@ -48,37 +49,62 @@ When you purchase Microsoft 365 Business, you have the option of using a domain 
     ![Screenshot of the Personalize your sign-in page.](media/personalizesignin.png)
 
     
-4. Follow the steps in the wizard to [Create DNS records at any DNS hosting provider for Office 365](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) that verifies you own the domain.
+4. Follow the steps in the wizard to [Create DNS records at any DNS hosting provider for Office 365](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) that verifies you own the domain. If you know your domain host, see also the [host specific instructions](https://docs.microsoft.com/office365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions).
 
-### Step 2: Add users and assign licenses
+    If your hosting provider is GoDaddy, the process is easy and you will be automatically asked to sign in and let Microsoft authenticate on your behalf:
 
-You can add users in the wizard, but you can also [add users later](add-users-m365b.md) in the admin center. Additionally, if you have a local domain controller, you can add users with Azure AD Connect by download
+    ![On GoDaddy Confirm Access page, select Authorize.](media/godaddyauth.png)
 
+### Add users and assign licenses
 
-1. You can add users here, or you can [add users later](add-users-m365b.md) in the admin center. 
-    
-    Any users you add in the wizard get automatically assigned a Microsoft 365 Business license.
-    
-2. If your Microsoft 365 Business subscription has existing users (for example, if you used Azure AD Connect) , you will get an option to assign licenses to them now. Go ahead and add licenses to them as well.
-    
-3. You will also get an option to share credentials with the new users you added. You can choose to print them out, email them, or download them.
-    
+You can add users in the wizard, but you can also [add users later](add-users-m365b.md) in the admin center. Additionally, if you have a local domain controller, you can add users with [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-express).
+
+#### Add users in the wizard
+
+Any users you add in the wizard get automatically assigned a Microsoft 365 Business license.
+
+![Screenshot of the Add new users page in the wizard](media/addnewuserspage.png)
+
+1. If your Microsoft 365 Business subscription has existing users (for example, if you used Azure AD Connect) , you will get an option to assign licenses to them now. Go ahead and add licenses to them as well.
+
+3. After you have added the users, you will also get an option to share credentials with the new users you added. You can choose to print them out, email them, or download them.
+
 4. Skip migrating email messages and choose **Next** on **Migrate email messages** page. 
-    
+
     If you are moving from another email provider and want to copy your data later, you can [Migrate email and contacts to Office 365](https://support.office.com/article/a3e3bddb-582e-4133-8670-e61b9f58627e).
-    
-    ![Screenshot of two new users added in the setup wizard](media/8f729967-5c65-4ceb-b737-18119db40564.png)
-  
-## Step 3: Connect your domain
+
+#### Add users by using Azure AD Connect
+
+ If you have a local domain controller with Active Directory, you synchronize your users with Microsoft 365 Business by using [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-express). You can download it in the admin center:
+
+- Go to **Users** \> **Active users**, select the ellipses on the top of the page and then select **Directory synchronization** to download Azure AD Connect.
+
+    ![On the Active users page select ellipses > Directory snchronization.](media/setupdirsync.png)
+
+    > [!IMPORTANT]
+    > If you create users this way, you will still have to assign licenses to them in the admin center.
+
+### Connect your domain
 
 > [!NOTE]
-> If you chose to use the .onmicrosoft domain, or used Azure AD Connect, you will not see this step. 
+> If you chose to use the .onmicrosoft domain, or used Azure AD Connect to set up users, you will not see this step.
   
 To set up services, you have to update some records at your DNS host or domain registrar.
   
-1. The setup wizard typically detects your registrar and gives you a link to step-by-step instructions for updating your NS records at the registrar website. If it doesn't, [Change nameservers to set up Office 365 with any domain registrar](https://support.office.com/article/a8b487a9-2a45-4581-9dc4-5d28a47010a2).
-    
-2. Email and other services will be set up for you
+1. The setup wizard typically detects your registrar and gives you a link to step-by-step instructions for updating your NS records at the registrar website. If it doesn't, [Change nameservers to set up Office 365 with any domain registrar](https://support.office.com/article/a8b487a9-2a45-4581-9dc4-5d28a47010a2). 
+
+    - If you have existing DNS records, for example an existing web site, you will want to manage your own DNS records to make sure the existing services stay connected. See 
+
+3. Email and other services will be set up for you
+
+### Set up security policies
+
+These policies apply to every user you give a license to, or to a group of users if you decide to assign different policies to a set of users.
+
+#### Set up policies in the wizard
+
+#### Modify or add policies in the admin center
+
 ## Deploy Office 365 client apps
 
 ## Deploy and manage Windows 10
