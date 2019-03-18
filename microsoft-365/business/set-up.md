@@ -1,5 +1,5 @@
 ---
-title: "Set up Microsoft 365 Business by using the setup wizard"
+title: "Set up Microsoft 365 Business"
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -24,45 +24,40 @@ ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: "Learn how to set up Microsoft 365 Business by completing four steps."
 ---
 
-# Set up Microsoft 365 Business by using the setup wizard
-
-Complete steps 1-4 below.
-  
-### Set up Microsoft 365 Business
-
+# Set up Microsoft 365 Business
 Watch a video on how to set up Microsoft 365 Business when you don't have an on-premises Active Directory:
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/0705c337-f3e8-4d28-bb6c-530cd28e99f2?autoplay=false]
-  
-The set-up steps include information for setups that include local Active Directory. If you want to continue to access domain-joined devices, read the following articles for two different way of enabling that, and complete the steps before you run the Setup wizard:
-  
-- [Enable domain-joined Windows 10 devices to be managed by Microsoft 365 Business](manage-windows-devices.md)
-    
-    -This is the recommended way.
-    
-- [Access on-premises resources from an Azure AD-joined device in Microsoft 365 Business](access-resources.md)
-    
-### Step 1: Personalize sign-in
 
-1. Sign in to [Microsoft 365 Business](https://portal.microsoft.com) by using your global admin credentials. Choose the **Admin** tile to go to the admin center. 
+## Add your domain, users and set up policies
+
+When you purchase Microsoft 365 Business, you have the option of using a domain you own, or buying one during the sign-up.
+    1. If you purchased a new domain when you signed up, your domain is all set up and you can move to [Step 2: Add users and assign licenses](#step-2-add-users-and-assign-licenses)
+
+### Add your domain to personalize sign-in
+
+1. Sign in to [Microsoft 365 admin center](https://admin.microsoft.com) by using your global admin credentials. 
+
+2. Choose **Add a domain** to start the wizard.
+
+    ![Select Add a domain.](media/addadomainadmincenter.png)
     
-2. Choose **Start setup** (depending on your state you may see **Continue setup** instead) in the admin center to start the wizard. 
+3. In the wizard, enter the domain name you want to use (like contoso.com).
+
+
+    ![Screenshot of the Personalize your sign-in page.](media/personalizesignin.png)
+
     
-3. Enter the domain name you want to use (like contoso.com).
-    
-    Go ahead and enter your domain even if you have verified it while using Azure AD Connect, for example. The following two steps do not apply to you if you used Azure AD Connect to verify your domain.
-    
-4. Follow the steps in the wizard to [Create DNS records at any DNS hosting provider for Office 365](https://support.office.com/article/7b7b075d-79f9-4e37-8a9e-fb60c1d95166) that verifies you own the domain. 
-    
-    You can view an example video of [Video: Setup Office 365 in the new Admin Center](https://support.office.com/article/a8c2002a-34bc-4ab3-93d8-9b5156c48bf8). Note that this video does not include the data protection steps of Microsoft 365 Business.
-    
-    ![Screenshot of the Business Cloud Suite setup wizard.](media/3c4fd40c-2de1-4a87-8ee0-78d3928c7bb7.png)
-  
+4. Follow the steps in the wizard to [Create DNS records at any DNS hosting provider for Office 365](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) that verifies you own the domain.
+
 ### Step 2: Add users and assign licenses
+
+You can add users in the wizard, but you can also [add users later](add-users-m365b.md) in the admin center. Additionally, if you have a local domain controller, you can add users with Azure AD Connect by download
+
 
 1. You can add users here, or you can [add users later](add-users-m365b.md) in the admin center. 
     
-    Any users you add get automatically assigned a Microsoft 365 Business license.
+    Any users you add in the wizard get automatically assigned a Microsoft 365 Business license.
     
 2. If your Microsoft 365 Business subscription has existing users (for example, if you used Azure AD Connect) , you will get an option to assign licenses to them now. Go ahead and add licenses to them as well.
     
@@ -74,7 +69,7 @@ The set-up steps include information for setups that include local Active Direct
     
     ![Screenshot of two new users added in the setup wizard](media/8f729967-5c65-4ceb-b737-18119db40564.png)
   
-### Step 3: Connect your domain
+## Step 3: Connect your domain
 
 > [!NOTE]
 > If you chose to use the .onmicrosoft domain, or used Azure AD Connect, you will not see this step. 
@@ -84,6 +79,27 @@ To set up services, you have to update some records at your DNS host or domain r
 1. The setup wizard typically detects your registrar and gives you a link to step-by-step instructions for updating your NS records at the registrar website. If it doesn't, [Change nameservers to set up Office 365 with any domain registrar](https://support.office.com/article/a8b487a9-2a45-4581-9dc4-5d28a47010a2).
     
 2. Email and other services will be set up for you
+## Deploy Office 365 client apps
+
+## Deploy and manage Windows 10
+
+
+  
+### Set up Microsoft 365 Business
+
+
+  
+The set-up steps include information for setups that include local Active Directory. If you want to continue to access domain-joined devices, read the following articles for two different way of enabling that, and complete the steps before you run the Setup wizard:
+  
+- [Enable domain-joined Windows 10 devices to be managed by Microsoft 365 Business](manage-windows-devices.md)
+    
+    -This is the recommended way.
+    
+- [Access on-premises resources from an Azure AD-joined device in Microsoft 365 Business](access-resources.md)
+    
+### Step 1: Personalize sign-in
+
+
     
 ### Step 4: Manage devices and work files
 
