@@ -62,6 +62,7 @@ You can add users in the wizard, but you can also [add users later](add-users-m3
 #### Add users in the wizard
 
 Any users you add in the wizard get automatically assigned a Microsoft 365 Business license.
+If you have a local domain controller, and are using Active Directory, see [how to ddd users by using Azure AD Connect](#add-users-by-using-azure-ad-connect).
 
 ![Screenshot of the Add new users page in the wizard](media/addnewuserspage.png)
 
@@ -75,7 +76,7 @@ Any users you add in the wizard get automatically assigned a Microsoft 365 Busin
 
 #### Add users by using Azure AD Connect
 
- If you have a local domain controller with Active Directory, you synchronize your users with Microsoft 365 Business by using [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-express). You can download it in the admin center:
+ If you have a local domain controller with Active Directory, you synchronize your users with Microsoft 365 Business by using [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-express). Complete this before you start the setup wizard. You can download it in the admin center:
 
 - Go to **Users** \> **Active users**, select the ellipses on the top of the page and then select **Directory synchronization** to download Azure AD Connect.
 
@@ -83,6 +84,15 @@ Any users you add in the wizard get automatically assigned a Microsoft 365 Busin
 
     > [!IMPORTANT]
     > If you create users this way, you will still have to assign licenses to them in the admin center.
+
+##### Continue to access domain-joined apps and devices
+
+If you want to continue to access domain-joined apps and devices, read the following articles for two different way of enabling that:
+  
+- [Enable domain-joined Windows 10 devices to be managed by Microsoft 365 Business](manage-windows-devices.md)
+    - This is the recommended way.
+
+- [Access on-premises resources from an Azure AD-joined device in Microsoft 365 Business](access-resources.md)
 
 ### Connect your domain
 
@@ -105,6 +115,22 @@ These policies apply to every user you give a license to, or to a group of users
 
 #### Set up policies in the wizard
 
+The policies you set up in the wizard are applied automatically to a [Security group](https://docs.microsoft.com/office365/admin/create-groups/compare-groups#security-groups) called *All Users*.
+
+1. On the **Protect your work files on mobile devices** the option **Protect work files when devices are lost or stolen** is selected by default. You have an option to turn on **Manage how users access Office files on mobile devices**, and this is recommended.
+
+    ![Screenshot of Protect work files on mobile devices page.](media/protectworkfilesondevices.png)
+
+     - If you expand **Protect work files when devices are lost or stolen**, the [default values](protect-work-files-on-lost-or-stolen-device.md) are pre-selected:
+
+        ![Screenshot of default values for protecting files on lost devices.](media/protectworkfilesondevicesdefault.png)
+
+    - If you select **Manage how users access Office files on mobile devices** and expand it, the [default values](manage-user-access-on-mobile-devices.md) are shown. We recommend you accept the default values during setup to create application policies for Android, iOS, and Windows 10 that apply to all users. You can create more policies after setup completes.
+
+        ![Screenshot of protection settings for Office files on mobile.](media/useraccessonmobile.png)
+
+2. The last step on protect data and devices allows you to set up policies to secure Windows 10 devices. These settings are applied automatically when a user's Windows 10 connects to your organization.
+
 #### Modify or add policies in the admin center
 
 ## Deploy Office 365 client apps
@@ -112,45 +138,6 @@ These policies apply to every user you give a license to, or to a group of users
 ## Deploy and manage Windows 10
 
 
-  
-### Set up Microsoft 365 Business
-
-
-  
-The set-up steps include information for setups that include local Active Directory. If you want to continue to access domain-joined devices, read the following articles for two different way of enabling that, and complete the steps before you run the Setup wizard:
-  
-- [Enable domain-joined Windows 10 devices to be managed by Microsoft 365 Business](manage-windows-devices.md)
-    
-    -This is the recommended way.
-    
-- [Access on-premises resources from an Azure AD-joined device in Microsoft 365 Business](access-resources.md)
-    
-### Step 1: Personalize sign-in
-
-
-    
-### Step 4: Manage devices and work files
-
-1. On the **Protect work files on your mobile devices** page set both **Protect work files when devices are lost or stolen** and **Manage how users access Office files on mobile devices** settings to **On**. You can also access each sub-setting by clicking the chevrons next to each setting.
-  
-  All of your licensed users' work files are now protected on iOS and Android devices, as soon as they [install Office apps](set-up-mobile-devices.md) (and authenticate with their Microsoft 365 Business credentials). 
-  
-  ![Screenshot of protect work files on your mobile devices page](media/3139a9aa-6228-4e74-8166-c6a886d7319f.PNG)
-  
-2. On the **Set Windows 10 device configuration** page, set **Secure Windows 10 Devices** setting to **On**.
-  
-   You can also access each sub-setting by clicking the chevron next to it.
-  
-3. Set the **Install Office on Windows 10 Devices** setting to **Yes** if all of your users have Windows 10 computers, and either no existing Office installs, or click-to-run Office installs. If this is not the case, set this option to **No**. You can [automatically install Office](auto-install-or-uninstall-office.md) later from the admin center after you have prepared the user computers. For instructions, see [prepare for Office client installation](prepare-for-office-client-deployment.md).
-  
-    The licensed users' work files on Windows 10 devices will be projected as soon as they [join their Windows 10 device](set-up-windows-devices.md) to a Microsoft 365 Business Azure AD domain or [install Windows 10 on a new computer](https://support.office.com/article/c654bd23-d256-4ac7-8fba-0c993bf5a771.aspx) while simultaneously joining the Microsoft 365 Business Azure AD domain. 
-  
-4. Click **Next** and you are done with setup. 
-  
-    Please leave us feedback at this step to help us improve the experience.
-  
-    ![Screenshot of Prepare Windows 10 devices page](media/bff701c1-48a3-44f4-aa95-9d959d57c85b.PNG)
-  
 ## Additional security settings
 
 In addition to the security and compliance setting in the setup wizard, you can also set up the following additional settings:
