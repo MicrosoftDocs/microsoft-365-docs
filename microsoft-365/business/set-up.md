@@ -129,7 +129,10 @@ The policies you set up in the wizard are applied automatically to a [Security g
 
         ![Screenshot of protection settings for Office files on mobile.](media/useraccessonmobile.png)
 
-2. The last step on protect data and devices allows you to set up policies to secure Windows 10 devices. These settings are applied automatically when a user's Windows 10 connects to your organization.
+2. The last step on protect data and devices allows you to set up policies to secure Windows 10 devices. These settings are applied automatically when a user's Windows 10 connects to your organization. You can expand **Secure Windows 10 devices** to see and modify the [default values](secure-windows-10-devices.md).
+3. You can also choose to [automatically install Office](install-office-on-windows-10-during-setup.md) on Windows 10 devices.
+
+    ![Screenshot of set Windows 10 device configuration page.](media/setwin10config.png)
 
 #### Modify or add policies in the admin center
 
