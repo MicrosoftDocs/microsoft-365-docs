@@ -99,7 +99,7 @@ To set up services, you have to update some records at your DNS host or domain r
 
 2. Follow the steps in the wizard and email and other services will be set up for you.
 
-### Set up security policies
+### Set up security policies and device configurations 
 
 These policies apply to every user you give a license to, or to a group of users if you decide to assign different policies to a set of users.
 
