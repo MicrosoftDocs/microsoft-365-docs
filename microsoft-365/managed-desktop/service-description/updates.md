@@ -34,7 +34,7 @@ For more information roles and responsibilities with these deployment groups, se
 
 How update deployment works:
 - Microsoft Managed Desktop deploys a new feature or quality update according the schedule specified below.
-- During deployment, Microsoft Managed Desktop monitors for signs of failure or disruption (based on telemetry signals and end-user support system). If any are detected, then the deployment to all current and future groups is immediately paused.
+- During deployment, Microsoft Managed Desktop monitors for signs of failure or disruption (based on diagnostic data signals and end-user support system). If any are detected, then the deployment to all current and future groups is immediately paused.
     - Example: if an issue is discovered while deploying a quality update to the First group, then update deployments to First, Fast, and Broad will all be paused until the issue is resolved.
     - Compatibility issues may be reported by filing a ticket in the Microsoft Managed Desktop IT Admin portal.
 - Feature and quality updates are paused independently. Pause is in effect for 35 days by default, but can be reduced or extended depending on whether the issue is remediated.
