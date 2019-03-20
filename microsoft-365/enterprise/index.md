@@ -92,7 +92,8 @@ description: Learn about the product documentation and resources available for M
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>Train your users</h3>
+                                                <h3>Train your admins & users</h3>
+                                                <P><a href="https://docs.microsoft.com/learn/browse/?products=m365" target="_blank">Microsoft 365</a></p>
                                                 <P><a href="https://support.office.com/office-training-center" target="_blank">Office 365</a></p>
                                                 <P><a href="https://www.microsoft.com/itpro/windows-10/end-user-readiness" target="_blank">Windows 10</a></p>
                                                 <P><a href="https://docs.microsoft.com/intune-user-help/use-managed-devices-to-get-work-done" target="_blank">Intune &amp; Company Portal app</a></p>
