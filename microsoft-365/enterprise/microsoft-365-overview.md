@@ -3,7 +3,7 @@ title: Microsoft 365 Enterprise overview
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 02/26/2019
+ms.date: 03/20/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -84,6 +84,13 @@ For more deployment information, see how:
 - [Microsoft 365 Education](https://docs.microsoft.com/education)
  
   Empower educators to unlock creativity, promote teamwork, and provide a simple and safe experience in a single, affordable solution built for education.
+
+
+## Microsoft 365 training
+
+Get yourself trained and work towards a Microsoft 365 certification. Start with [Microsoft 365 Fundamentals](https://docs.microsoft.com/learn/paths/m365-fundamentals/).
+
+![](./media/m365-poster/m365-fundamentals.svg)
 
 ## Next step
 
