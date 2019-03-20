@@ -25,11 +25,16 @@ description: "Learn how to set up Microsoft 365 Business."
 ---
 
 # Set up Microsoft 365 Business
+
+See [Get Microsoft 365 Business](get-microsoft-365-business.md) for sign-up details.
+
 Watch a video on how to set up Microsoft 365 Business when you don't have an on-premises Active Directory:
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/0705c337-f3e8-4d28-bb6c-530cd28e99f2?autoplay=false]
 
 ## Add your domain, users and set up policies
+
+![Banner that point to https://aka.ms/aboutM365preview.](media/m365admincenterchanging.png)
 
 When you purchase Microsoft 365 Business, you have the option of using a domain you own, or buying one during the [sign-up](sign-up.md).
 
