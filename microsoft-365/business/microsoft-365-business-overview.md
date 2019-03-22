@@ -30,6 +30,8 @@ description: "Learn to set up Microsoft 365 Business."
 Microsoft 365 Business is a comprehensive set of business productivity and collaboration tools, such as Outlook, Word, Excel, and other Office products that are always up to date. You can protect your work files on all of your iOS, Android, and Windows 10 devices with enterprise-grade security that is simple to manage.
   
 Microsoft 365 Business is meant for up to 300 licenses, if you need more licenses, see [Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=860986) documentation for more information.
+
+See [Microsoft 365 Business service description](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-business-service-description) for the entire list of features.
   
 ## Small business security needs
 
@@ -42,16 +44,14 @@ Your business data can be compromised in many ways. You and your users can compr
 5. Email vulnerabilities including sharing sensitive data, phishing attempts, malware, etc.
 6. When people who should not, can access documents with sensitive information.
 
-Microsoft 365 Business helps safeguard your data in each of these instances. The security features that protect your business data are detailed in the following diagram.
+Microsoft 365 Business helps safeguard your data in each of these instances. The security features that protect your business data are detailed in the following figure.
 
-**figure here**
+![A figure that shows how M365B protects your business.](media/m365businessvalueadd.png)
 
-To see the full list of security features, see [Microsoft 365 Business security features](security-features.md). After you [Set up Microsoft 365 Business](set-up.md), see [https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data) to get started with additional security features.
-
-## Which subscription is right for you?
+To see the full list of security features, see [Microsoft 365 Business security features](security-features.md). After you [Set up Microsoft 365 Business](set-up.md), see [Set up advanced security policies](set-up-advanced-security.md) to get started with the security features that are not included as a part of the setup.
 
 ## Get Microsoft 365 Business
 
-- If you have a partner, they will get Microsoft 365 Business: [Get Microsoft 365 Business from Microsoft Partner Center](get-microsoft-365-business.md).
+- If you have a partner, they will get Microsoft 365 Business: [Get Microsoft 365 Business from Microsoft Partner Center](get-microsoft-365-business.md#get-microsoft-365-business-from-microsoft-partner-center).
 
-- If you don't have a partner and want to get Microsoft 365 Business, you can [buy it here](https://www.microsoft.com/en-us/microsoft-365/business) and follow the [sign up](sign-up.md) instructions.
+- If you don't have a partner and want to get Microsoft 365 Business, you can [buy it here](https://www.microsoft.com/microsoft-365/business) and follow the [sign up](sign-up.md) instructions.
