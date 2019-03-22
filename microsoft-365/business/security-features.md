@@ -81,7 +81,6 @@ Advanced features in Microsoft 365 Business are available to help you protect yo
     
 The next sections describe how you can manage these features in the Security &amp; Compliance center and the Intune admin center. Over time the simplified controls will be added to the Microsoft 365 Business admin center.
   
-
     
 ## FAQ
 
