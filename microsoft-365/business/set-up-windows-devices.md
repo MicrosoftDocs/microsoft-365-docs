@@ -31,7 +31,7 @@ If you have Windows devices running Windows 7 Pro, Windows 8 Pro, or Windows 8.1
   
 For more information on how to upgrade Windows devices to Windows 10 Pro Creators Update, follow the steps in this topic: [Upgrade Windows devices to Windows Pro Creators Update](upgrade-to-windows-pro-creators-update.md).
   
-See [Verify the device is upgraded to Windows 10 Business](set-up-windows-devices.md#bkmk_verifywin10) to verify you have the upgrade, or to make sure the upgrade worked. 
+See [Verify the device is upgraded to Windows 10 Business](set-up-windows-devices.md#Verify-the-device-is-connected-to-Azure-AD) to verify you have the upgrade, or to make sure the upgrade worked. 
   
 ## Join Windows 10 devices to your organization's Azure AD
 
