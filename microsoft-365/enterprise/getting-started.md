@@ -1,5 +1,5 @@
 ﻿---
-title: Getting Started - Modern Desktop Deployment
+title: Getting Started - Desktop Deployment
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
@@ -12,10 +12,10 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom: 
-description: Introduction to the Modern Desktop Deployment Process.
+description: Introduction to the Desktop Deployment Process.
 ---
 
-# Getting Started - Modern Desktop Deployment
+# Getting Started - Desktop Deployment
 
 ![](media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-2.png)
 
@@ -23,16 +23,16 @@ description: Introduction to the Modern Desktop Deployment Process.
 <thead>
 <td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-1.png" alt="Getting Started" height="130" width="130" /></td>
 <td><p><strong>Getting Started: People, Process and Technology Guidance</strong></p>
-<p>Discover the benefits of a modern desktop, major changes and considerations versus previous deployments, and best practices to ensure a smooth transition to Windows 10 and Office 365 ProPlus.</p></td>
+<p>Discover the benefits of Windows 10 and Office 365 ProPlus, major changes and considerations versus previous deployments, and best practices to ensure a smooth transition to Windows 10 and Office 365 ProPlus.</p></td>
 <td><a href="https://aka.ms/ddev0" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-13.png" alt="Getting Started" height="120" width="213" /></a></td>
 </thead>
 </table>
 
 >[!NOTE]
->In this series we will explain the best ways to use existing tools and introduce you to new technologies, services, and methods enabled by the Cloud.  To see the full desktop deployment process, visit the [Modern Desktop Deployment Center](https://aka.ms/HowToShift).
+>In this series we will explain the best ways to use existing tools and introduce you to new technologies, services, and methods enabled by the Cloud.  To see the full desktop deployment process, visit the [Desktop Deployment Center](https://aka.ms/HowToShift).
 >
 
-Welcome to the Modern Desktop Deployment Center, our central place to learn how to help you plan and make the shift to the modern desktop. This will allow you take advantage of a secure workspace, powered by the latest productivity, teamwork, and collaboration experiences.
+Welcome to the Desktop Deployment Center, our central place to learn how to help you plan and make the shift to Windows 10 and Office 365 ProPlus. This will allow you take advantage of a secure workspace, powered by the latest productivity, teamwork, and collaboration experiences.
 
 If you haven’t deployed a new desktop environment for a while, the good news is much about the deployment process has improved. Challenges of the past, such as application compatibility, are much less of an issue today. New tools, as well as insight delivered from the Cloud, enable you to move forward with confidence faster and more efficiently than ever before.
 
@@ -50,7 +50,7 @@ One of the key tenants of modern management practices is devices that are always
 
 Let’s start by taking a look at what has changed and improved since your last desktop deployment. If you haven’t shifted your desktop environment in a while you’re likely using Windows 7 and Office 2010 or Office 2013. If you are, you'll notice a few things have evolved since your last major upgrade. Here are some of the core changes:
 
-**Identity and Access Management** The modern desktop, with its connectivity to cloud productivity, security, and management services, has a new Identity and Access Management service at its core: Azure Active Directory. This enables single sign-on and secure connectivity across your cloud services, meaning that you are going to need Azure AD in place. This will allow you take advantage of Microsoft 365 services such as Office 365, Intune, or Windows Autopilot.
+**Identity and Access Management** Windows 10 and Office 365 ProPlus, with its connectivity to cloud productivity, security, and management services, has a new Identity and Access Management service at its core: Azure Active Directory. This enables single sign-on and secure connectivity across your cloud services, meaning that you are going to need Azure AD in place. This will allow you take advantage of Microsoft 365 services such as Office 365, Intune, or Windows Autopilot.
 
 [Microsoft 365](https://www.microsoft.com/en-us/microsoft-365/default.aspx)
 
@@ -117,7 +117,7 @@ As in previous upgrades, the User State Migration Tool continues to be a valuabl
 
 ## Next Step
 
-Now you know what’s new and different, and we have walked through our recommended deployment process wheel. With this taste for the end-to-end guidance and tools available for you to make the shift a modern desktop, let’s get started.
+Now you know what’s new and different, and we have walked through our recommended deployment process wheel. With this taste for the end-to-end guidance and tools available for you to make the shift to Windows 10 and Office 365 ProPlus, let’s get started.
 
 ## [Step 1: Device and App Readiness](https://aka.ms/mdd1)
 
