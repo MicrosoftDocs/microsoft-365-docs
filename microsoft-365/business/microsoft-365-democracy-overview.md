@@ -25,7 +25,9 @@ description: "Learn to set up Microsoft 365 Business."
 
 # Get started with Microsoft 365 Business
 
-REVISE FOR MICROSOFT 365 FOR DEMOCRACY
+REVISE FOR MICROSOFT 365 FOR DEMOCRACY--
+--RUN SETUP WIZARD
+--ADD PROTECTION TO YOUR TENANT (TENANT PROTECTIONS FROM TOP 10 ARTICLE)
 
 ## What is Microsoft 365 Business
 
