@@ -1,5 +1,5 @@
 ﻿---
-title: Find help for your Modern Desktop Deployment
+title: Find help for your Windows 10 and Office 365 ProPlus deployment
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
@@ -12,14 +12,14 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom: 
-description: Where to find help and support for your Modern Desktop Deployment.
+description: Where to find help and support for your Windows 10 and Office 365 ProPlus deployment.
 ---
 
-# Find help for your Modern Desktop Deployment 
+# Find help for your Windows 10 and Office 365 ProPlus Deployment 
 
 If you are planning your Windows 10 deployment with Office 365 ProPlus, there are several options to get additional help from certified Microsoft partners and [Microsoft FastTrack](https://www.microsoft.com/fasttrack).
 
-Below is a map of the available services aligned to the [Modern Desktop Deployment](http://www.aka.ms/howtoshift) process for Windows 10, Office 365 ProPlus and Enterprise Mobility + Security with existing partner and FastTrack offers. In many cases, these services are included with your qualifying subscription to Microsoft 365, Office 365 or Windows 10 Enterprise. For partner-led services like the Modern Desktop Assessment, as a qualifying organization, Microsoft provides a voucher for services performed by the partner. Details for each offer are found in the links below.
+Below is a map of the available services aligned to the [Desktop Deployment](http://www.aka.ms/howtoshift) process for Windows 10, Office 365 ProPlus and Enterprise Mobility + Security with existing partner and FastTrack offers. In many cases, these services are included with your qualifying subscription to Microsoft 365, Office 365 or Windows 10 Enterprise. For partner-led services like the Windows 10 and Office 365 ProPlus desktop Assessment, as a qualifying organization, Microsoft provides a voucher for services performed by the partner. Details for each offer are found in the links below.
 
 <br>
 
@@ -93,8 +93,8 @@ For specific questions as you plan or start your deployment, join the [Microsoft
 
 ## **Related resources**
 
-  - [Modern Desktop Deployment Center](http://www.aka.ms/howtoshift)
+  - [Desktop Deployment Center](http://www.aka.ms/howtoshift)
 
-  - [Modern Desktop Deployment series videos from Microsoft Mechanics](http://www.aka.ms/watchhowtoshift)
+  - [Desktop Deployment series videos from Microsoft Mechanics](http://www.aka.ms/watchhowtoshift)
 
-  - [Modern Desktop Deployment and Management Lab Kit](https://aka.ms/howtoshiftlabs)
+  - [Desktop Deployment and Management Lab Kit](https://aka.ms/howtoshiftlabs)
