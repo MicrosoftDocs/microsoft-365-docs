@@ -7,7 +7,7 @@
 ## Configure additional protection for Windows 10 devices 
 
 # User help
-## [Set up mobile devices](../business/set-up-mobile-devices.md)
+## [Set up mobile devices](../business/set-up-mobile-devices.md)?toc=/microsoft365/democracy/toc.json
 ## [Set up Windows devices](../business/set-up-windows-devices.md)
 ## Protect against phishing and other attacks
 ## Collaborate and share securely
