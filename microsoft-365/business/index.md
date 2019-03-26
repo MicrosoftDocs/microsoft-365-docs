@@ -132,6 +132,7 @@ description: Learn how to plan, deploy, and use Microsoft Office 365, Windows 10
                                             </div>
                                             <div class="cardText">
                                                 <h3>Resources for partners</h3>
+                                                <P><a href="get-microsoft-365-business.md" target="_blank">Get Microsoft 365 Business from Partner center</a></p>
                                                 <P><a href="https://www.microsoft.com/microsoft-365/partners/business" target="_blank">Microsoft 365 partner page</a></p>
                                                 <P><a href="https://www.microsoft.com/microsoft-365/partners/resources/microsoft-365-business-licensing-deck" target="_blank">Microsoft 365 Business licensing deck</a></p>
                                             </div>
