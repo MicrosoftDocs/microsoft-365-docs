@@ -14,6 +14,7 @@
 
 # Collaborate and share securely
 ## Use Microsoft Teams
+## Setup meetings
 ## Share files and videos
 ## Create a Communication site for your organization
 
