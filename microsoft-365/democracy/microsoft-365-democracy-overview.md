@@ -25,9 +25,13 @@ description: "Learn to set up Microsoft 365 Business."
 
 # Get started with Microsoft 365 for Democracy
 
+![Microsoft 365 Business and Azure Active Directory P1 protect your productivity tools, collaboration tools, file storage, email, devices, and identity](../images/democracy/M365-democracy-WhatIsIt.png)
+
 REVISE FOR MICROSOFT 365 FOR DEMOCRACY--
 - WHAT IS IT?
 - REQUIRED PLANS (M365B + AZURE AD P1) AND WHY
+
+![7 steps to set up Microsoft 365 for democracy](../images/democracy/M365-democracy-SetUpProcess.png)
 
 PROCESS IS DIFF, A BIT MORE UP-FRONT CONFIG (BUT FEWER VARIABLES LATER)
 - RUN SETUP WIZARD
