@@ -12,7 +12,7 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom: 
-description: Learn how to prepare your end users for the Modern Desktop with use communications and training.
+description: Learn how to prepare your end users for Windows 10 and Office 365 ProPlus with use communications and training.
 ---
 
 # Step 8: User Communications and Training
@@ -31,7 +31,7 @@ Inform and prepare your users for modern workplace experiences spanning Office 3
 </table>
 
 >[!NOTE]
->User Communications and Training is the eighth step in our recommended deployment process wheel by covering tips and recommendations to inform and prepare users. To see the full desktop deployment process, visit the [Modern Desktop Deployment Center](https://aka.ms/HowToShift).
+>User Communications and Training is the eighth step in our recommended deployment process wheel by covering tips and recommendations to inform and prepare users. To see the full desktop deployment process, visit the [Desktop Deployment Center](https://aka.ms/HowToShift).
 >
 
 The trick here is to figure out how to introduce updates -- when some users may fear disruptions to their productivity or changes in their workflow, or if they have to learn new things.
