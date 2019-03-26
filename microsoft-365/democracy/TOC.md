@@ -10,11 +10,17 @@
 ## [Set up mobile devices](../business/set-up-mobile-devices.md?toc=/microsoft-365/democracy/toc.json)
 ## [Set up Windows devices](../business/set-up-windows-devices.md?toc=/microsoft-365/democracy/toc.json)
 ## Protect against phishing and other attacks
+<<<<<<< HEAD
+## Collaborate and share securely
+=======
+
 # Collaborate and share securely
 ## Use Microsoft Teams
 ## Setup meetings
 ## Share files and videos
 ## Create a Communication site for your organization
+
+>>>>>>> m365-democracy
 # Manage
 ## Add users
 ## Remove company data
