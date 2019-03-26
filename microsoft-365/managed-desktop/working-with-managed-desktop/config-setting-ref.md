@@ -14,7 +14,7 @@ ms.collection: M365-modern-desktop
 This topic lists the settings categories that customers can configure with Microsoft Managed Desktop. Each setting category includes info on requirements, best practices, and how to customize the setting category. 
 
 ## Desktop background picture
-You can customize the desktop background picture for Microsoft Managed Desktop devices in your organization. You might use this to apply a company brand or marketing 
+You can customize the desktop background picture for Microsoft Managed Desktop devices in your organization. You might use this to apply a company brand or marketing material. 
 
 ### Requirements
 
@@ -30,7 +30,7 @@ These requirements must be met for a desktop background picture:
 2. Under **Settings**, select **Configurable**.
 3. In **Configurable** workspace, select **Desktop background picture**. 
 4. Enter the location of the picture you want to use. 
-5. Select **Stage deployment** to save your changes and deploy them to the Test ring. 
+5. Select **Stage deployment** to save your changes and deploy them to the Test group. 
 
 ## Browser start pages
 Browser start pages open in individual tabs when your users start Microsoft Edge. If you want to make it easy for your users to open a set of sites that they use frequently, add a browser start page for each site. 
@@ -48,7 +48,7 @@ You must provide the fully qualified domain name (FQDN) for intranet or Internet
 4. Select **Add start page**.
 5. On **Add browser start page**, enter the URL for the site you want to use, and then select **Add start page**. 
 6. Repeat steps 1-5 for additional browser start pages. 
-7. Select **Stage deployment** to save your changes and deploy them to the Test ring.
+7. Select **Stage deployment** to save your changes and deploy them to the Test group.
 
 ## Enterprise mode site list location
 
@@ -77,7 +77,7 @@ These best practices are offered to help customers make decisions to modernize t
 2.	Under **Settings**, select **Configurable**.
 3.	In **Configurable** workspace, select **Enterprise mode site list location**. 
 4.	Enter the https location for your site list. 
-5.	Select **Stage deployment** to save your changes and deploy them to the Test ring.
+5.	Select **Stage deployment** to save your changes and deploy them to the Test group.
 
 ## Trusted sites
 
@@ -100,7 +100,7 @@ Provide the fully qualified domain name (FQDN) for intranet or Internet sites fo
 3. In **Configurable** workspace, select **Trusted sites**, and then select **Add trusted site**. 
 4. On **Add trusted site**, enter the URL, choose a security zone, and then select **Add trusted site**. 
 5. Repeat steps 1-4 for each trusted site you want to add. 
-6. Select **Stage deployment** to save your changes and deploy them to the Test ring.
+6. Select **Stage deployment** to save your changes and deploy them to the Test group.
 
 **To remove a trusted site**
 
@@ -109,7 +109,7 @@ Provide the fully qualified domain name (FQDN) for intranet or Internet sites fo
 3. In **Configurable** workspace, select **Trusted sites**. 
 4. Select the site that you want to delete, and then select **Delete**. 
 5. Repeat steps 1-4 for each trusted site you want to delete. 
-6. Select **Stage deployment** to save your changes and deploy them to the Test ring.
+6. Select **Stage deployment** to save your changes and deploy them to the Test group.
 
 ## Proxy
 You can manage network proxy settings for your organization. Add your proxy server and port number, and then add your proxy site exceptions. Microsoft Managed Desktop includes a set of default proxy exceptions that are required for the service to operate. The default exclusion list may only be modified by the Microsoft Managed Desktop service.  For more information, see [Network configuration for Microsoft Managed Desktop](../get-ready/network.md). 
@@ -135,7 +135,7 @@ These requirements must be met for proxy server and proxy site exceptions:
 4. Enter the **Address** and **Port number** for you proxy server, and then select **Add proxy exception**. 
 5. Enter the URL of a valid http site, and then select **Add proxy exception**. 
 6. Repeat steps 1-5 for each trusted site you want to add. 
-7. Select **Stage deployment** to save your changes and deploy them to the Test ring.
+7. Select **Stage deployment** to save your changes and deploy them to the Test group.
 
 ## Additional resources
 - [Configurable settings overview](config-setting-overview.md) 

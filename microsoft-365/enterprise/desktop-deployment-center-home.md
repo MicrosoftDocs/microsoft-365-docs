@@ -1,5 +1,5 @@
 ﻿---
-title: Modern Desktop Deployment Center
+title: Desktop Deployment Center
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
@@ -12,14 +12,14 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom: 
-description: Overview of the Modern Desktop Deployment Center.
+description: Overview of the Desktop Deployment Center.
 ---
 
-# Modern Desktop Deployment Center
+# Desktop Deployment Center
 
 <img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-2.png" alt="Desktop Deployment Wheel" height="450" width="802" align="middle" style="background-color: #fff;" />
 
-Follow the steps below to plan and carry out your large-scale deployment of Windows 10 and Office 365 ProPlus. Each step below is part of the overall planning and deployment process with steps typically running in parallel to each other in a phased deployment. Download the free [Modern Desktop Deployment and Management Lab Kit](https://aka.ms/howtoshiftlabs) for hands-on training with the tools highlighted in the deployment process. You can also [find help](https://aka.ms/mddhelp) for your modern desktop deployment from Microsoft partners and FastTrack services.
+Follow the steps below to plan and carry out your large-scale deployment of Windows 10 and Office 365 ProPlus. Each step below is part of the overall planning and deployment process with steps typically running in parallel to each other in a phased deployment. Download the free [Desktop Deployment and Management Lab Kit](https://aka.ms/howtoshiftlabs) for hands-on training with the tools highlighted in the deployment process. You can also [find help](https://aka.ms/mddhelp) for your desktop deployment from Microsoft partners and FastTrack services.
 
 <br>
 
@@ -27,7 +27,7 @@ Follow the steps below to plan and carry out your large-scale deployment of Wind
 <tr class="even">
 <td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-1.png" alt="Getting Started" height="144" width="144" /></td>
 <td><p><strong><a href="https://aka.ms/mdd0">Getting Started: People, Process and Technology Guidance</a></strong></p>
-<p>Discover the benefits of a modern desktop, major changes and considerations versus previous deployments, and best practices to ensure a smooth transition to Windows 10 and Office 365 ProPlus.</p></td>
+<p>Discover the benefits of moving to Windows 10 and Office 365 ProPlus, major changes and considerations versus previous deployments, and best practices to ensure a smooth transition to Windows 10 and Office 365 ProPlus.</p></td>
 <td><a href="https://aka.ms/ddev0" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-13.png" alt="Getting Started" height="130" width="231" /></a></td>
 </tr>
 <tbody>
@@ -82,7 +82,7 @@ Follow the steps below to plan and carry out your large-scale deployment of Wind
 <tr class="odd">
 <td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-12.png" alt="Value Discovery and Business Case" height="144" width="144" /></td>
 <td><p><strong><a href="https://transform.microsoft.com" target="_blank">Get your Leadership on Board: Value Discovery and Business Case</a></strong></p>
-<p>If you’ve done your deployment research, assessed app and device readiness, built your deployment plan and started piloting your deployment, but don’t have the support or resources needed from your management team to meet your deployment timelines, the Business Value Programs at Microsoft can help. Learn how to build a business case for a modern desktop and help get everyone on board.</p></td>
+<p>If you’ve done your deployment research, assessed app and device readiness, built your deployment plan and started piloting your deployment, but don’t have the support or resources needed from your management team to meet your deployment timelines, the Business Value Programs at Microsoft can help. Learn how to build a business case to move to Windows 10 and Office 365 ProPlus and help get everyone on board.</p></td>
 <td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-22.png" alt="Value Discovery and Business Case" height="130" width="231" /></td>
 </tr>
 </tbody>
