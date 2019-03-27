@@ -22,6 +22,8 @@ description: "Learn how to purchase and sign up for Microsoft 365 Business."
 
 # Sign up for Microsoft 365 Business
 
+If you are a partner, see [Get Microsoft 365 Business from Microsoft Partner Center](get-microsoft-365-business.md#get-microsoft-365-business-from-microsoft-partner-center).
+
 Go to [Discover Microsoft 365 Business advantage](https://www.microsoft.com/microsoft-365/business#pmg-cmp-desktop) and choose **Buy Now** under Microsoft 365 Business.
 
 1. On the **Welcome, let's get to know you** page enter the required information. Note that 
@@ -41,3 +43,6 @@ Go to [Discover Microsoft 365 Business advantage](https://www.microsoft.com/micr
 5. On the **Where will you be using this** page fill in your business address. This information is used to determine taxes and subscription availability. Select **Next**, review your order and select **Next** again.
 6. On the **How do you want to pay** page, enter your payment details, and then **Place order**.
     You can then go to the [admin center](https://go.microsoft.com/fwlink/p/?linkid=837890) to finish your [set up](set-up.md).
+
+    > [!NOTE]
+    > If, at the end of the setup you select the link Go to the admin center, you will be taken directly to the [set up](set-up.md) experience.
