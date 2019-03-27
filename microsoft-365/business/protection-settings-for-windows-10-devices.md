@@ -32,7 +32,7 @@ description: "Learn how to create an app management policy and protect work file
 
 If your users have personal Windows 10 devices on which they perform work tasks, you can protect your data on those devices as well.
   
-1. Sign in to [Microsoft 365 Business](https://portal.office.com) with global admin credentials. Choose the **Admin** tile to go to the admin center. 
+1. Sign in to [admin center](https://go.microsoft.com/fwlink/p/?linkid=837890) with global admin credentials. Choose the **Admin** tile to go to the admin center. 
     
 2. On the left nav, choose **Devices** \> **Policies** \> **Add**.
 
@@ -46,7 +46,7 @@ If your users have personal Windows 10 devices on which they perform work tasks,
     
 7. Set **Prevent users from copying company data to personal files and force them to save work files to OneDrive for Business** to **On** if you don't want the users to save work files on their PC. 
     
-8. Expand **Manage how users access Office files on devices** \> configure the settings how you would like. The **Manage how users access Office devices on mobile devices** is **Off** by default, but it is recommended that you turn it **On** and accept the default values. See [Available settings](protection-settings-for-windows-10-devices.md#bkmk_settings) for more information. 
+8. Expand **Manage how users access Office files on devices** \> configure the settings how you would like. The **Manage how users access Office devices on mobile devices** is **Off** by default, but it is recommended that you turn it **On** and accept the default values. See [Available settings](#available-settings)for more information. 
     
     You can always use the **Reset default settings** link to return to the default setting. 
     

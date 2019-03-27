@@ -27,7 +27,7 @@ description: "Learn how to create, edit, or delete an app management policy, and
 
 ## Create an app management policy
 
-1. Sign in to [Microsoft 365 Business](https://portal.office.com) with global admin credentials. 
+1. Sign in to [Microsoft 365 Business admin center ](https://go.microsoft.com/fwlink/p/?linkid=837890) with global admin credentials. 
     
 2. In the admin center, choose **Devices** \> **Policies** \> **Add policy**.
   
@@ -35,7 +35,7 @@ description: "Learn how to create, edit, or delete an app management policy, and
     
 4. Under **Policy type**, choose **Application Management for Android** or **Application Management for iOS** depending on which set of policies you want to create. 
     
-5. Expand **Protect work files when devices are lost or stolen** and **Manage how users access Office files on mobile devices** \> configure the settings how you would like. The **Manage how users access Office files on mobile devices** is **Off** by default, but it is recommended that you turn it **On** and accept the default values. See [Available settings](app-protection-settings-for-android-and-ios.md#bkmk_availablesettings) for more information. 
+5. Expand **Protect work files when devices are lost or stolen** and **Manage how users access Office files on mobile devices** \> configure the settings how you would like. The **Manage how users access Office files on mobile devices** is **Off** by default, but it is recommended that you turn it **On** and accept the default values. See [Available settings](#available-settings)  for more information. 
     
     You can always use the **Reset default settings** link to return to the default setting. 
     

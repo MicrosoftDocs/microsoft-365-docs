@@ -31,7 +31,7 @@ If you have Windows devices running Windows 7 Pro, Windows 8 Pro, or Windows 8.1
   
 For more information on how to upgrade Windows devices to Windows 10 Pro Creators Update, follow the steps in this topic: [Upgrade Windows devices to Windows Pro Creators Update](upgrade-to-windows-pro-creators-update.md).
   
-See [Verify the device is upgraded to Windows 10 Business](set-up-windows-devices.md#Verify-the-device-is-connected-to-Azure-AD) to verify you have the upgrade, or to make sure the upgrade worked. 
+See [Verify the device is connected to Azure AD](#verify-the-device-is-connected-to-azure-ad) to verify you have the upgrade, or to make sure the upgrade worked. 
   
 ## Join Windows 10 devices to your organization's Azure AD
 
@@ -49,7 +49,7 @@ For a brand new device running Windows 10 Pro Creators Update, or for a device t
     
 3. Finish Windows 10 device setup.
     
-   Once you're done, the user will be connected to your organization's Azure AD. See [Verify the device is connected to Azure AD](set-up-windows-devices.md#bkmk_verifyaad) to make sure. 
+   Once you're done, the user will be connected to your organization's Azure AD. See [Verify the device is connected to Azure AD](#verify-the-device-is-connected-to-azure-ad) to make sure. 
   
 ### For a device already set up and running Windows 10 Pro
 
@@ -77,7 +77,7 @@ For a brand new device running Windows 10 Pro Creators Update, or for a device t
   
    ![Enter your work or school email on the Let's get you signed in page](media/f70eb148-b1d2-4ba3-be38-7317eaf0321a.png)
   
-6. On the ** Make sure this is your organization ** page, verify that the information is correct, and click **Join**.
+6. On the **Make sure this is your organization** page, verify that the information is correct, and click **Join**.
   
    On the **You're all set!** page, click **Done**.
   
