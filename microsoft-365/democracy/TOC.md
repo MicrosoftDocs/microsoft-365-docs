@@ -11,7 +11,7 @@
 ## [Set up Windows devices](../business/set-up-windows-devices.md?toc=/microsoft-365/democracy/toc.json)
 ## Protect against phishing and other attacks
 # Collaborate and share securely
-## [Use Microsoft Teams]()
+## [Create teams for collaboration](create-teams-for-collaboration.md)
 ## Setup meetings
 ## Share files and videos
 ## [Create a Communication site for your organization](create-communications-site.md)
