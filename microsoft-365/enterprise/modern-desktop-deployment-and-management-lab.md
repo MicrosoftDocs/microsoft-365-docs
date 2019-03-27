@@ -1,5 +1,5 @@
 ﻿---
-title: Desktop Deployment and Management Lab Kit
+title: Windows and Office Deployment Lab Kit
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
@@ -12,10 +12,10 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom: 
-description: Learn about and where to access the Desktop Deployment and Management Lab Kit.
+description: Learn about and where to access the Windows and Office Deployment Lab Kit.
 ---
 
-# Desktop Deployment and Management Lab Kit
+# Windows and Office Deployment Lab Kit
 
 These downloadable hands-on labs focus on Windows 10 deployment and Office 365 deployment along with the related configuration and management considerations post-deployment. This training is highly recommended for organizations preparing for Windows 7 end of life, but also applies if you’re currently using Windows 10 and Office 365 Plus or Office 2019. Included are guides for Windows 10, Office 365 ProPlus, Enterprise Mobility + Security and related products and services.
 
@@ -25,7 +25,7 @@ As part of the [Desktop Deployment](http://www.aka.ms/howtoshift) process for Wi
 
 The lab kit is free to download and uses trial software.
 
-### [**Download the Desktop Deployment and Management Lab Kit**](https://aka.ms/mddlabs_evalcenter)
+### [**Download the Windows and Office Deployment Lab Kit**](https://aka.ms/mddlabs_evalcenter)
 
 ## **A complete lab environment**
 
@@ -106,13 +106,13 @@ Detailed lab guides take you through multiple deployment and management scenario
   - Feature Updates using Upgrade Task Sequences in ConfigMgr
   - Windows Autopilot
 
-### **Office and Windows as a Service**
+### **Windows and Office Servicing**
 
   - Software update management using Configuration Manager
   - Office 365 ProPlus update management in Configuration Manager
   - Mobile Device Management applied to Windows 10 using Microsoft Intune
 
-### [**Download the Desktop Deployment and Management Lab Kit**](https://aka.ms/mddlabs_evalcenter)
+### [**Download the Windows and Office Deployment Lab Kit**](https://aka.ms/mddlabs_evalcenter)
 
 *Please use a broad bandwidth to download this content to enhance your downloading experience and allow 30-45 minutes for automatic provisioning. The lab environment requires a minimum of 16 GB of available memory and 150 GB of free disk space. For optimal performance, 32 GB of available memory is recommended. The lab expires May 13, 2019. A new version will be published prior to expiration.*
 
