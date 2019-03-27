@@ -32,10 +32,10 @@ Very short introduction about why to do this and why this recommended way.
 Include the following elements in your Communications site:
 
 1. Add your campaign logo and colors as a header image and theme
-2. Lead with your strategy, message, important documents, a directory, and FAQ in a Hero web part.
-3. Include a candidate statement to the team in a Text web part.
-4. Add campaign events to an Events calendar web part so everyone can see what's coming up.
-5. Add photos that people can use or share to an Image gallery web part.
+2. Lead with your strategy, message, important documents, a directory, and FAQ in a **Hero web part**.
+3. Include a candidate statement to the team in a **Text web part**.
+4. Add campaign events to an **Events web part** so everyone can see what's coming up.
+5. Add photos that people can use or share to an **Image gallery web part**.
 
 ![Diagram of a SharePoint Communications page with space for common elements that a campaign would need](../images/democracy/m365-democracy-comms-site.png)
 

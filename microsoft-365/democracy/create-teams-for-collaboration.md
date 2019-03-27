@@ -31,9 +31,9 @@ Very short introduction about why to do this and why this recommended way.
 
 Create the following teams so you can communicate and collaborate securely:
 
-1. A Campaign Leads team - set this up as a private team so that only your key campaign members can access it and discuss potentially sensitive concerns.
-2. A general Campaign team - this is for everyone to use for day to day communications and work. Individuals, groups, or committees can set up channels in this team to do their work. For example, the event planning people can set up a channel to chat and coordinate logistics for campaign events.
-3. A partners team - one where you can coordinate with your vendors, partners, or volunteers without allowing them into anything sensitive.
+1. **A Campaign Leads team** - set this up as a private team so that only your key campaign members can access it and discuss potentially sensitive concerns.
+2. **A general Campaign team** - this is for everyone to use for day to day communications and work. Individuals, groups, or committees can set up channels in this team to do their work. For example, the event planning people can set up a channel to chat and coordinate logistics for campaign events.
+3. **A partners team** - one where you can coordinate with your vendors, partners, or volunteers without allowing them into anything sensitive.
 
 ![Diagram of a Microsoft Teams window with three separate teams to allow for secure communication and collaboration](../images/democracy/m365-democracy-teams-collab.png)
 
