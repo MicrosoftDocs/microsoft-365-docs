@@ -14,7 +14,7 @@
 ## [Use Microsoft Teams]()
 ## Setup meetings
 ## Share files and videos
-## Create a Communication site for your organization
+## [Create a Communication site for your organization](create-communications-site.md)
 # Manage
 ## Add users
 ## Remove company data
