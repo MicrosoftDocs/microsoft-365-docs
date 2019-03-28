@@ -1,5 +1,5 @@
 ﻿---
-title: Modern Desktop Deployment and Management Lab Kit
+title: Windows and Office Deployment Lab Kit
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
@@ -12,20 +12,20 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom: 
-description: Learn about and where to access the Modern Desktop Deployment and Management Lab Kit.
+description: Learn about and where to access the Windows and Office Deployment Lab Kit.
 ---
 
-# Modern Desktop Deployment and Management Lab Kit
+# Windows and Office Deployment Lab Kit
 
 These downloadable hands-on labs focus on Windows 10 deployment and Office 365 deployment along with the related configuration and management considerations post-deployment. This training is highly recommended for organizations preparing for Windows 7 end of life, but also applies if you’re currently using Windows 10 and Office 365 Plus or Office 2019. Included are guides for Windows 10, Office 365 ProPlus, Enterprise Mobility + Security and related products and services.
 
-These labs are designed to help you plan, test and validate your deployment and management of modern desktops running Windows 10 Enterprise and Office 365 ProPlus. The labs cover the steps and tools outlined in the Modern Desktop Deployment wheel, spanning System Center Configuration Manager, Windows Analytics, Office Customization Tool, OneDrive, Windows Autopilot and more.
+These labs are designed to help you plan, test and validate your deployment and management of desktops running Windows 10 Enterprise and Office 365 ProPlus. The labs cover the steps and tools outlined in the Desktop Deployment wheel, spanning System Center Configuration Manager, Windows Analytics, Office Customization Tool, OneDrive, Windows Autopilot and more.
 
-As part of the [Modern Desktop Deployment](http://www.aka.ms/howtoshift) process for Windows 10 and Office 365 ProPlus, building a sandboxed or isolated lab environment is the recommended starting point when you begin to explore deployment tool updates and test your deployment-related automation.
+As part of the [Desktop Deployment](http://www.aka.ms/howtoshift) process for Windows 10 and Office 365 ProPlus, building a sandboxed or isolated lab environment is the recommended starting point when you begin to explore deployment tool updates and test your deployment-related automation.
 
 The lab kit is free to download and uses trial software.
 
-### [**Download the Modern Desktop Deployment and Management Lab Kit**](https://aka.ms/mddlabs_evalcenter)
+### [**Download the Windows and Office Deployment Lab Kit**](https://aka.ms/mddlabs_evalcenter)
 
 ## **A complete lab environment**
 
@@ -106,21 +106,21 @@ Detailed lab guides take you through multiple deployment and management scenario
   - Feature Updates using Upgrade Task Sequences in ConfigMgr
   - Windows Autopilot
 
-### **Office and Windows as a Service**
+### **Windows and Office Servicing**
 
   - Software update management using Configuration Manager
   - Office 365 ProPlus update management in Configuration Manager
   - Mobile Device Management applied to Windows 10 using Microsoft Intune
 
-### [**Download the Modern Desktop Deployment and Management Lab Kit**](https://aka.ms/mddlabs_evalcenter)
+### [**Download the Windows and Office Deployment Lab Kit**](https://aka.ms/mddlabs_evalcenter)
 
 *Please use a broad bandwidth to download this content to enhance your downloading experience and allow 30-45 minutes for automatic provisioning. The lab environment requires a minimum of 16 GB of available memory and 150 GB of free disk space. For optimal performance, 32 GB of available memory is recommended. The lab expires May 13, 2019. A new version will be published prior to expiration.*
 
 ## **Additional guidance**
 
-  - [Modern Desktop Deployment Center](http://www.aka.ms/howtoshift)
+  - [Desktop Deployment Center](http://www.aka.ms/howtoshift)
 
-  - [Modern Desktop Deployment series videos from Microsoft Mechanics](http://www.aka.ms/watchhowtoshift)
+  - [Desktop Deployment series videos from Microsoft Mechanics](http://www.aka.ms/watchhowtoshift)
 
   - [System Center Configuration Manager OS Deployment](https://docs.microsoft.com/en-us/sccm/osd/understand/introduction-to-operating-system-deployment)
 
