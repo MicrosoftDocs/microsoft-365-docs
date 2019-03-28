@@ -1,7 +1,7 @@
 ---
 title: "Microsoft 365 for Democracy"
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: samanro
+author: samanro
 manager: scotv
 layout: LandingPage
 ms.audience: Admin

@@ -12,8 +12,8 @@
 ## Protect against phishing and other attacks
 # Collaborate and share securely
 ## [Create teams for collaboration](create-teams-for-collaboration.md)
-## Setup meetings
-## Share files and videos
+## [Setup meetings](set-up-meetings.md)
+## [Share files and videos](share-files-and-videos.md)
 ## [Create a Communication site for your organization](create-communications-site.md)
 # Manage
 ## Add users
