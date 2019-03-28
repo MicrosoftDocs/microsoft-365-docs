@@ -28,12 +28,6 @@ REVISING FOR MICROSOFT 365 FOR DEMOCRACY--
 - WHAT IS IT?
 - REQUIRED PLANS (M365B + AZURE AD P1) AND WHY
 
-In our current world, keeping data and communications secure is a priority, particularly for political campaigns, medical and legal practices, and many other business types. Microsoft 365 for Democracy was designed to help protect you and your business. It includes both Microsoft 365 Business and Azure Active Directory P1 so that you can:
-- Rely on trusted business productivity and collaboration tools, such as Outlook, Word, Excel, and other Office products 
-- Protect your work files on all of your iOS, Android, and Windows 10 devices with enterprise-grade security that is simple to manage 
-- Apply extra protection for user accounts and identity with Azure Active Directory P1
-
-![Microsoft 365 Business and Azure Active Directory P1 protect your productivity tools, collaboration tools, file storage, email, devices, and identity](../images/democracy/M365-democracy-WhatIsIt.png)
 
 ## Get Microsoft 365 Business
 

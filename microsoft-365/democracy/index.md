@@ -26,9 +26,18 @@ description: "Microsoft 365 for Democracy"
 Microsoft 365 for Democracy
 ===============================
 
-Intro. 
+In our current world, keeping data and communications secure is a priority, particularly for political campaigns, medical and legal practices, and many other business types. Microsoft 365 for Democracy was designed to help protect you and your business. 
 
-**What is Microsoft 365 for Democracy?** Learn more with this brief video.
+**What is Microsoft 365 for Democracy?** 
+It includes both Microsoft 365 Business and Azure Active Directory P1 so that you can:
+- Rely on trusted business productivity and collaboration tools, such as Outlook, Word, Excel, and other Office products 
+- Protect your work files on all of your iOS, Android, and Windows 10 devices with enterprise-grade security that is simple to manage 
+- Apply extra protection for user accounts and identity with Azure Active Directory P1
+
+![Microsoft 365 Business and Azure Active Directory P1 protect your productivity tools, collaboration tools, file storage, email, devices, and identity](../images/democracy/M365-democracy-WhatIsIt.png)
+
+
+Learn more with this brief video.
 <p></p>
 
 Add video
@@ -89,6 +98,7 @@ H2
                     </div>
                     <div class="cardText">
                         <p>Follow these steps to get started:</p>
+                        <P><a href="microsoft-365-overview.md">What's included in Microsoft 365 Democracy?</a></p>
                         <P><a href="get-microsoft-365-democracy.md">Get Microsoft 365 Democracy</a></p>
                         <P><a href="">Set up Microsoft 365 Democracy</a></p>
                     </div>
