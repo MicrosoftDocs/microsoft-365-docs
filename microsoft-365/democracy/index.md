@@ -52,7 +52,7 @@ Get started
                         </div>
                     </div>
                     <div class="cardText">
-                        <p>Follow these steps to get started:</p>
+                        <p><b>Follow these steps to get started:</b></p>
                         <P><a href="microsoft-365-democracy-overview.md">What's included in Microsoft 365 Democracy?</a></p>
                         <P><a href="get-microsoft-365-democracy.md">Get Microsoft 365 Democracy</a></p>
                         <P><a href="">Set up Microsoft 365 Democracy</a></p>
