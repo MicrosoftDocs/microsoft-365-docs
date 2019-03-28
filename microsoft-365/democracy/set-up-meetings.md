@@ -1,7 +1,7 @@
 ---
 title: "Create a communications site"
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: stevhord
+author: twerner
 manager: scotv
 ms.audience: Admin
 ms.topic: article

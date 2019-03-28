@@ -1,7 +1,7 @@
 ---
 title: "Create teams for collaboration"
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: stevhord
+author: samanro
 manager: scotv
 ms.audience: Admin
 ms.topic: article
@@ -25,7 +25,7 @@ description: "Create a collaboration space for your team with Microsoft Teams."
 
 # Create teams for collaboration in Microsoft Teams
 
-Very short introduction about why to do this and why this recommended way. 
+Microsoft Teams is a collaboration app that helps your campaign stay organized and have conversations, from any device. You can use Microsoft Teams to have instant conversations with others in the campaign or guests outside of the campaign. You can also make phone calles, host meetings, and share files.
 
 ## Best practices
 
@@ -37,31 +37,38 @@ Create the following teams so you can communicate and collaborate securely:
 
 ![Diagram of a Microsoft Teams window with three separate teams to allow for secure communication and collaboration](../images/democracy/m365-democracy-teams-collab.png)
 
-## Set it up
-
-When you create a team, here's what gets created:
+When you create a team, here's what else gets created:
 
 - A new [Office 365 group](https://docs.microsoft.com/en-us/MicrosoftTeams/office-365-groups)
- 
 - A [SharePoint Online](https://docs.microsoft.com/en-us/MicrosoftTeams/sharepoint-onedrive-interact) site and document library to store team files
-
 - An [Exchange Online](https://docs.microsoft.com/en-us/MicrosoftTeams/exchange-teams-interact) shared mailbox and calendar
-
 - A OneNote notebook
+- Ties into other Office 365 apps such as Planner and Power BI
 
-- Ties into other Office 365 apps such as Planner and Power BI 
+Inside Microsoft Teams, you can find:
+1. **Teams** - Find channels to belong to or create your own. Inside channels you can hold on-the-spot meetings, have conversations, and share files.
+
+2. **Meetings** - See everything you've got lined up for the day or week. Or, schedule a meeting. This calendar syncs with your Outlook calendar.
+ 
+3. **Calls** - In some cases, if your organization has it set up, you can call anyone from Microsoft Teams, even if they're not using Microsoft Teams.
+
+4. **Activity** - Catch up on all your unread messages, @mentions, replies, and more. 
 
 Use the command box at the top to search for specific items or people, take quick actions, and launch apps.
 
-Create a private Team for just the campaign manager and candidate like this. 
+
+## Set it up
+
+
+Create a private team for just the campaign manager and candidate like this. 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWeqWA]
-- 
-Create an organization-wide Team that everyone in the campaign can use to communicate and share files'
+
+Create an organization-wide team that everyone in the campaign can use to communicate and share files'
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2GCG9]
 
-Create a Team that you share with guests outside the campaign, such as advertising of financing.
+Create a team that you share with guests outside the campaign, such as advertising of financing.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FQMp]
 
@@ -69,5 +76,5 @@ Learn more about Microsoft Teams at [Microsoft Teams technical documentation](ht
 
 ## Admin settings
 
-You must be an admin in order to create an organization-wide Team. For more information, see [What is an Admin in Office 365?](https://support.office.com/en-us/article/what-is-an-admin-e123627e-4892-4461-b9aa-1b6d57a5cfa4?ui=en-US&rs=en-US&ad=US).
+You must be an admin in order to create an organization-wide team. For more information, see [What is an Admin in Office 365?](https://support.office.com/en-us/article/what-is-an-admin-e123627e-4892-4461-b9aa-1b6d57a5cfa4?ui=en-US&rs=en-US&ad=US).
   

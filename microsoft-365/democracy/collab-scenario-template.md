@@ -1,7 +1,7 @@
 ---
 title: "Collaboration scenario"
-ms.author: twerner
-author: Sirkkuw
+ms.author: samanro
+author: samanro
 manager: scotv
 ms.audience: Admin
 ms.topic: conceptual
