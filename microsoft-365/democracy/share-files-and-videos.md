@@ -25,7 +25,9 @@ description: "Create a communications site for your campaign."
 
 #Share files and videos
 
-When sharing files with people inside a political campaign, you can do so using Microsoft Teams. When sharing files with people outside the campaign, you can add them as guests to a team or send them a secure SharePoint link.
+When sharing files with others inside or outside of your campaign, do so using Microsoft Teams or send them SharePoint links. This is preferred to sending email attachments that can be viewed or modified without your permission and the campaign. With your files in Teams and SharePoint, you can also work on the files together and review each other's changes. When sharing files with people inside a political campaign, you can do so using Microsoft Teams. When sharing files with people outside the campaign, you can add them as guests to a team or send them a secure SharePoint link.
+
+You can also use Microsoft Stream to store and share videos for your campaign. These videos are not viewable to the public so they are ideal for internal campaign messaging.
 
 ## Set up
 

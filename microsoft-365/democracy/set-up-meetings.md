@@ -25,7 +25,7 @@ description: "Create a communications site for your campaign."
 
 # Set up meetings
 
-For your political campaign, you can schedule and run online meetings using Microsoft Teams. You can include staff, volunteers, and guests outside your organization. During a meeting, you can share your screen, share files, assign tasks, and more.
+Meetings in Teams include audio, video, and sharing. And because they're online, you'll always have a meeting space and never need a room or projector for your campaign. Teams meetings are a great way to come together with your staff and volunteers both inside and outside of your organization. You don’t need to be a member of your organization or even have a Teams account – to join a Teams meeting. For your political campaign, you can schedule and run online meetings using Microsoft Teams. You can include staff, volunteers, and guests outside your organization. During a meeting, you can share your screen, share files, assign tasks, and more.
 
 ## Schedule a meeting
 
