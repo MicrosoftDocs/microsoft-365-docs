@@ -29,7 +29,7 @@ View a video on how to secure Windows 10 devices with Microsoft 365 Business:
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/a5734146-620a-4cec-8618-536b3ca37972?autoplay=false]
   
-1. Sign in to [Microsoft 365 Business](https://portal.office.com) with global admin credentials. 
+1. Sign in to [admin center](https://go.microsoft.com/fwlink/p/?linkid=837890) with global admin credentials. 
     
 2. On the left nav, choose **Devices** \> **Policies** \> **Add**.
   
@@ -37,7 +37,7 @@ View a video on how to secure Windows 10 devices with Microsoft 365 Business:
     
 4. Under **Policy type**, choose **Windows 10 Device Configuration**.
     
-5. Expand **Secure Windows 10 Devices** \> configure the settings how you would like. See [Available settings](protection-settings-for-windows-10-pcs.md#bkmk_availablesettings) for more information. 
+5. Expand **Secure Windows 10 Devices** \> configure the settings how you would like. See [Available settings](#available-settings) for more information. 
     
     You can alway use the **Reset default settings** link to return to the default setting. 
     
