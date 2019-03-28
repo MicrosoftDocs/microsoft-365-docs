@@ -23,8 +23,7 @@ ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: "Microsoft 365 for Democracy"
 ---
 
-Microsoft 365 for Democracy
-===============================
+#Microsoft 365 for Democracy
 
 In our current world, keeping data and communications secure is a priority, particularly for political campaigns, medical and legal practices, and many other business types. Microsoft 365 for Democracy was designed to help protect you and your business. 
 
@@ -34,15 +33,37 @@ It includes both Microsoft 365 Business and Azure Active Directory P1 so that yo
 - Protect your work files on all of your iOS, Android, and Windows 10 devices with enterprise-grade security that is simple to manage 
 - Apply extra protection for user accounts and identity with Azure Active Directory P1
 
-![Microsoft 365 Business and Azure Active Directory P1 protect your productivity tools, collaboration tools, file storage, email, devices, and identity](../images/democracy/M365-democracy-WhatIsIt.png)
+![Microsoft 365 Business and Azure Active Directory P1 protect your productivity tools, collaboration tools, file storage, email, devices, and identity](../images/democracy/sm-M365-democracy-WhatIsIt.png)
 
 
-Learn more with this brief video.
-<p></p>
 
-Add video
+###Get started
 
-Set up your secure Microsoft 365 environment, and then use the following solutions to create what you need to get things done for your campaign:
+<ul class="panelContent cardsJ">
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/en-us/office/media/icons/walkthrough-map-blue.svg" alt="Roadmap" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <p>Follow these steps to get started:</p>
+                        <P><a href="microsoft-365-democracy-overview.md">What's included in Microsoft 365 Democracy?</a></p>
+                        <P><a href="get-microsoft-365-democracy.md">Get Microsoft 365 Democracy</a></p>
+                        <P><a href="">Set up Microsoft 365 Democracy</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+</ul>
+
+###Solutions for your campaign
+
+After you set up your secure Microsoft 365 environment, you can use the following solutions to get working on your campaign:
 
 <ul class="panelContent cardsW cols cols2">
     <li>
@@ -83,27 +104,3 @@ Set up your secure Microsoft 365 environment, and then use the following solutio
     </li>
 </ul>
 
-H2
----------------------------------------------------
-
-<ul class="panelContent cardsJ">
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/walkthrough-map-blue.svg" alt="Roadmap" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <p>Follow these steps to get started:</p>
-                        <P><a href="microsoft-365-overview.md">What's included in Microsoft 365 Democracy?</a></p>
-                        <P><a href="get-microsoft-365-democracy.md">Get Microsoft 365 Democracy</a></p>
-                        <P><a href="">Set up Microsoft 365 Democracy</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-</ul>
