@@ -1,5 +1,5 @@
 ---
-title: "Get started with Microsoft 365 Business"
+title: "What's included with Microsoft 365 for Democracy"
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -20,15 +20,25 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
-description: "Learn to set up Microsoft 365 Business."
+description: "What is Microsoft 365 for Democracy and how do I get it?"
 ---
 
-# Get started with Microsoft 365 for Democracy
-
-REVISE FOR MICROSOFT 365 FOR DEMOCRACY--
+# What's included with Microsoft 365 for Democracy
+REVISING FOR MICROSOFT 365 FOR DEMOCRACY--
 - WHAT IS IT?
 - REQUIRED PLANS (M365B + AZURE AD P1) AND WHY
 
+
+## Get Microsoft 365 Business
+
+- If you have a partner, they will get Microsoft 365 Business: [Get Microsoft 365 Business from Microsoft Partner Center](get-microsoft-365-business.md).
+    
+- If you don't have a partner and want to get Microsoft 365 Business, you can [buy it here](https://www.microsoft.com/en-us/microsoft-365/business).
+  
+Microsoft 365 Business is meant for up to 300 licenses, if you need more licenses, see [Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=860986) documentation for more information. 
+  
+    
+## Set up Microsoft 365 Business
 PROCESS IS DIFF, A BIT MORE UP-FRONT CONFIG (BUT FEWER VARIABLES LATER)
 - RUN SETUP WIZARD
 - ADD PROTECTION TO YOUR TENANT (TENANT PROTECTIONS FROM TOP 10 ARTICLE, USE ONBOARDING HUB WIZARDS WHERE POSSIBLE)
@@ -37,19 +47,7 @@ PROCESS IS DIFF, A BIT MORE UP-FRONT CONFIG (BUT FEWER VARIABLES LATER)
 - SETUP WINDOWS DEVICES
 - ADD EXTRA PROTECTION TO WINDOWS 10 FOR HIGH VALUE STAFF
 
-## What is Microsoft 365 Business
-
-Microsoft 365 Business is a comprehensive set of business productivity and collaboration tools, such as Outlook, Word, Excel, and other Office products that are always up to date. You can protect your work files on all of your iOS, Android, and Windows 10 devices with enterprise-grade security that is simple to manage.
-  
-Microsoft 365 Business is meant for up to 300 licenses, if you need more licenses, see [Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=860986) documentation for more information. 
-  
-## Get Microsoft 365 Business
-
-- If you have a partner, they will get Microsoft 365 Business: [Get Microsoft 365 Business from Microsoft Partner Center](get-microsoft-365-business.md).
-    
-- If you don't have a partner and want to get Microsoft 365 Business, you can [buy it here](https://www.microsoft.com/en-us/microsoft-365/business).
-    
-## Set up Microsoft 365 Business
+![7 steps to set up Microsoft 365 for democracy](../images/democracy/M365-democracy-SetUpProcess.png)
 
  **Overview of Microsoft 365 Business Suite set up**
   

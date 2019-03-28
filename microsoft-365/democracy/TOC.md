@@ -1,5 +1,5 @@
-# Landing page
-## [Get started](microsoft-365-democracy-overview.md)
+# [Microsoft 365 for Democracy](index.md)
+## [What's included?](microsoft-365-democracy-overview.md)
 ## [Get Microsoft 365 for Democracy](get-microsoft-365-democracy.md)
 ## [How Microsoft 365 affects users](m365-democracy-users.md)
 # [Set up](../business/set-up.md?toc=/microsoft-365/democracy/toc.json)
@@ -11,10 +11,10 @@
 ## [Set up Windows devices](../business/set-up-windows-devices.md?toc=/microsoft-365/democracy/toc.json)
 ## Protect against phishing and other attacks
 # Collaborate and share securely
-## [Use Microsoft Teams]()
+## [Create teams for collaboration](create-teams-for-collaboration.md)
 ## Setup meetings
 ## Share files and videos
-## Create a Communication site for your organization
+## [Create a Communication site for your organization](create-communications-site.md)
 # Manage
 ## Add users
 ## Remove company data
