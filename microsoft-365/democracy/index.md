@@ -23,7 +23,8 @@ ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: "Microsoft 365 for Democracy"
 ---
 
-#Microsoft 365 for Democracy
+Microsoft 365 for Democracy
+===========================
 
 In our current world, keeping data and communications secure is a priority, particularly for political campaigns, medical and legal practices, and many other business types. Microsoft 365 for Democracy was designed to help protect you and your business. 
 
@@ -37,7 +38,8 @@ It includes both Microsoft 365 Business and Azure Active Directory P1 so that yo
 
 
 
-###Get started
+Get started
+--------------------------
 
 <ul class="panelContent cardsJ">
     <li>
@@ -61,7 +63,8 @@ It includes both Microsoft 365 Business and Azure Active Directory P1 so that yo
     </li>
 </ul>
 
-###Solutions for your campaign
+Solutions for your campaign
+--------------------------
 
 After you set up your secure Microsoft 365 environment, you can use the following solutions to get working on your campaign:
 
