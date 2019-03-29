@@ -34,7 +34,7 @@ Table with these policies and notes. Link policies to bookmarks later in article
 - Require Outlook mobile
 - Configure app protection policies (one policy per platform--iOS, Android)
 
-Configuration for these is in this article (subset): [Common identity and device access policies](https://docs.microsoft.com/en-us/microsoft-365/enterprise/identity-access-policies)
+Configuration for these policies in this article (subset): [Common identity and device access policies](https://docs.microsoft.com/en-us/microsoft-365/enterprise/identity-access-policies)
 
 ## Create a conditional access exclusion group
 add your admin account to this group, but don't add the 2nd admin account that you created
