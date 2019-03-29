@@ -25,7 +25,7 @@ description: "Create a communications site for your campaign."
 
 # Create a communications site for your campaign
 
-Very short introduction about why to do this and why this recommended way. 
+Use a communication site to broadcast information out to a broad audience. With a communication site typically only a small set of members contribute content that is consumed by a much larger audience.
 
 ## Best practices
 
@@ -41,9 +41,10 @@ Include the following elements in your Communications site:
 
 ## Set it up
 
-Short list of summary how-to steps (if brief) with links to any articles that go into more depth. Take a look at: https://docs.microsoft.com/en-us/freelancetoolkit/internalcommunicationdownload.
+Create a SharePoint communication site to share news, reports, status, and other information in a visually compelling format. Communication sites are responsive and can be viewed from anywhere on any device. For details, see [Create a communication site in SharePoint Online](https://support.office.com/en-us/article/Create-a-communication-site-in-SharePoint-Online-7FB44B20-A72F-4D2C-9173-FC8F59BA50EB).
+
 
 ## Admin settings
 
-If there's something an admin needs to do to make this work, include a brief description of that task and a link to an article for the admin.
+If you don't see the **+ Create site** link, then self-service site creation is likbely disabled in Office 365. Contact the person administering Office 365 in your orgainization to create a commuication site. If you're an administrator, see [Manage site creation in SharePoint Online](https://docs.microsoft.com/sharepoint/manage-site-creation) to enable self-service site creation for your organization.
   
