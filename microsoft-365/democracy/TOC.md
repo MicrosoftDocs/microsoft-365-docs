@@ -2,9 +2,11 @@
 ## [What's included?](microsoft-365-democracy-overview.md)
 ## [Get Microsoft 365 for Democracy](get-microsoft-365-democracy.md)
 ## [How Microsoft 365 affects users](m365-democracy-users.md)
-# [Set up](../business/set-up.md?toc=/microsoft-365/democracy/toc.json)
-## Add additional protection
-## Configure conditional access policies
+# Get started
+## [Sign up](../business/sign-up.md)
+## [Set up](../business/set-up.md?toc=/microsoft-365/democracy/toc.json)
+## [Tune up threat protection](m365-democracy-tune-up-protection.md) 
+## [Configure conditional access policies](m365-democracy-conditional-access.md)
 ## Configure additional protection for Windows 10 devices 
 # User help
 ## [Set up mobile devices](../business/set-up-mobile-devices.md?toc=/microsoft-365/democracy/toc.json)
