@@ -1,7 +1,8 @@
 # [Microsoft 365 for Democracy](index.md)
-## [What's included?](microsoft-365-democracy-overview.md)
+## [What's included?](microsoft-365-democracy-whats-included.md)
 ## [Get Microsoft 365 for Democracy](get-microsoft-365-democracy.md)
 ## [How Microsoft 365 affects users](m365-democracy-users.md)
+## [Setup overview](microsoft-365-democracy-setup-overview.md)
 # Get started
 ## [Sign up](../business/sign-up.md)
 ## [Set up](../business/set-up.md?toc=/microsoft-365/democracy/toc.json)
