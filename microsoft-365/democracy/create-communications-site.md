@@ -25,7 +25,7 @@ description: "Create a communications site for your campaign."
 
 # Create a communications site for your campaign
 
-Very short introduction about why to do this and why this recommended way. 
+A great way to communicate priorities, share strategy documents and highlight upcoming events is by using a communications site in SharePoint. Communications sites are for sharing things broadly across your whole campaign - it's your internal campaign site.
 
 ## Best practices
 
