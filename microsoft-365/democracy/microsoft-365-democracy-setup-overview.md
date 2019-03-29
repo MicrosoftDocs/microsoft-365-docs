@@ -1,5 +1,5 @@
 ---
-title: "What's included with Microsoft 365 for Democracy"
+title: "Setup overview for Microsoft 365 for Democracy"
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -20,25 +20,10 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
-description: "What is Microsoft 365 for Democracy and how do I get it?"
+description: "Setup overview for Microsoft 365 for Democracy"
 ---
 
-# What's included with Microsoft 365 for Democracy
-REVISING FOR MICROSOFT 365 FOR DEMOCRACY--
-- WHAT IS IT?
-- REQUIRED PLANS (M365B + AZURE AD P1) AND WHY
-
-
-## Get Microsoft 365 Business
-
-- If you have a partner, they will get Microsoft 365 Business: [Get Microsoft 365 Business from Microsoft Partner Center](get-microsoft-365-business.md).
-    
-- If you don't have a partner and want to get Microsoft 365 Business, you can [buy it here](https://www.microsoft.com/en-us/microsoft-365/business).
-  
-Microsoft 365 Business is meant for up to 300 licenses, if you need more licenses, see [Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=860986) documentation for more information. 
-  
-    
-## Set up Microsoft 365 Business
+# Set up Microsoft 365 for Democracy
 PROCESS IS DIFF, A BIT MORE UP-FRONT CONFIG (BUT FEWER VARIABLES LATER)
 - RUN SETUP WIZARD
 - ADD PROTECTION TO YOUR TENANT (TENANT PROTECTIONS FROM TOP 10 ARTICLE, USE ONBOARDING HUB WIZARDS WHERE POSSIBLE)

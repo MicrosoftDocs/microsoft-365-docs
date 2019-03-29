@@ -53,9 +53,9 @@ Get started
                     </div>
                     <div class="cardText">
                         <p><b>Follow these steps to get started:</b></p>
-                        <P><a href="microsoft-365-democracy-overview.md">What's included in Microsoft 365 Democracy?</a></p>
+                        <P><a href="microsoft-365-democracy-whats-included.md">What's included in Microsoft 365 Democracy?</a></p>
                         <P><a href="get-microsoft-365-democracy.md">Get Microsoft 365 Democracy</a></p>
-                        <P><a href="">Set up Microsoft 365 Democracy</a></p>
+                        <P><a href="microsoft-365-democracy-setup-overview.md">Set up Microsoft 365 Democracy</a></p>
                     </div>
                 </div>
             </div>
@@ -75,13 +75,13 @@ After you set up your secure Microsoft 365 environment, you can use the followin
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="../images/democracy/sm-m365-democracy-comms-site.png" alt="a SharePoint communications site" />
+                            <img src="../images/democracy/sm-m365-democracy-teams-collab.png" alt="a SharePoint communications site" />
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Create a communications site</h3>
-                        <p>Share events, message, images, and more with your team in an internal communications site created with SharePoint.</p>
-                        <p><a href="create-communications-site.md">LEARN MORE</a></p>
+                        <h3>Create teams for collaboration</h3>
+                        <p>Make a space for communication and collaboration with specific teams for key staff, all staff, and partners or vendors with Microsoft Teams.</p>
+                        <p><a href="create-teams-for-collaboration.md">Create your team</a></p>
                     </div>
                 </div>
             </div>
@@ -93,13 +93,49 @@ After you set up your secure Microsoft 365 environment, you can use the followin
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="../images/democracy/sm-m365-democracy-teams-collab.png" alt="a SharePoint communications site" />
+                            <img src="../images/democracy/m365-democracy-teams-meetings.png" alt="an online meeting" />
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Create teams for collaboration</h3>
-                        <p>Make a space for communication and collaboration with specific teams for key staff, all staff, and partners or vendors with Microsoft Teams.</p>
-                        <p><a href="create-teams-for-collaboration.md">LEARN MORE</a></p>
+                        <h3>Set up online meetings</h3>
+                        <p>Schedule a meeting with audio, video, and sharing with Microsoft Teams.</p>
+                        <p><a href="set-up-meetings.md">Set up a meeting</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="../images/democracy/m365-democracy-teams-sharefiles.png" alt="a SharePoint communications site" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Share files and videos</h3>
+                        <p>Save your files and videos to the cloud so they're available to all of the appropriate people.</p>
+                        <p><a href="share-files-and-videos.md">Start sharing</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="../images/democracy/sm-m365-democracy-comms-site.png" alt="a SharePoint communications site" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Create a communications site</h3>
+                        <p>Share events, message, images, and more with your team in an internal communications site created with SharePoint.</p>
+                        <p><a href="create-communications-site.md">Create your site</a></p>
                     </div>
                 </div>
             </div>
