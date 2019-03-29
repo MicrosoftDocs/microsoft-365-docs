@@ -12,7 +12,7 @@
 # User help
 ## [Set up mobile devices](../business/set-up-mobile-devices.md?toc=/microsoft-365/democracy/toc.json)
 ## [Set up Windows devices](../business/set-up-windows-devices.md?toc=/microsoft-365/democracy/toc.json)
-## Protect against phishing and other attacks
+## [Protect against phishing and other attacks](m365-democracy-phishing-and-attacks.md)
 # Collaborate and share securely
 ## [Create teams for collaboration](create-teams-for-collaboration.md)
 ## [Setup meetings](set-up-meetings.md)
