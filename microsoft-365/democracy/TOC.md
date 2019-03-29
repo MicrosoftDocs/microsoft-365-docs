@@ -3,7 +3,7 @@
 ## [Get Microsoft 365 for Democracy](get-microsoft-365-democracy.md)
 ## [How Microsoft 365 affects users](m365-democracy-users.md)
 # [Set up](../business/set-up.md?toc=/microsoft-365/democracy/toc.json)
-# [Add additional protection](set-up-AzureADP1.md) 
+# [Add additional protection](set-up-azureadp1.md) 
 ## Configure conditional access policies
 ## Configure additional protection for Windows 10 devices 
 # User help
