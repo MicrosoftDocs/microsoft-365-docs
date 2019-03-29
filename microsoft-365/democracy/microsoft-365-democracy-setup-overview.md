@@ -1,5 +1,5 @@
 ---
-title: "What's included with Microsoft 365 for Democracy"
+title: "Setup overview for Microsoft 365 for Democracy"
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -20,37 +20,10 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
-description: "What is Microsoft 365 for Democracy and how do I get it?"
+description: "Setup overview for Microsoft 365 for Democracy"
 ---
 
-# What's included with Microsoft 365 for Democracy
-
-Microft 365 for Democracy includes the following:
-- Presriptive setup guidance for adding increased security.
-- Help for users to setup devices for secure access.
-- Guidance on how to collaborate and share securely.
-- Special pricing for organizations that qualify for nonprofit pricing, including political campaigns and think tanks that contribute to democracy. More information is coming soon.
-
-Microsoft 365 for Democracy takes advantage of the following plans to provide rich collaboration tools with the recommended security for organizations that require higher protection for security and data privacy. 
-
-||||
-|:-----|:-----|:------|
-|**Plan**|**Microsoft 365 Business**|**Azure AD P1**|
-|Capabilities|Productivity <p>Collaboration <p>File storage <p>Email <p>Advanced Threat Protection (ATP) <p>Windows 10 <p> Office apps <p>Mobile device management| Advanced identity protection <p>Forced password reset for leaked credentials <p>Enforced mobile app protection <p>Block unapproved apps|
-
-
-
-
-## Get Microsoft 365 Business
-
-- If you have a partner, they will get Microsoft 365 Business: [Get Microsoft 365 Business from Microsoft Partner Center](get-microsoft-365-business.md).
-    
-- If you don't have a partner and want to get Microsoft 365 Business, you can [buy it here](https://www.microsoft.com/en-us/microsoft-365/business).
-  
-Microsoft 365 Business is meant for up to 300 licenses, if you need more licenses, see [Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=860986) documentation for more information. 
-  
-    
-## Set up Microsoft 365 Business
+# Set up Microsoft 365 for Democracy
 PROCESS IS DIFF, A BIT MORE UP-FRONT CONFIG (BUT FEWER VARIABLES LATER)
 - RUN SETUP WIZARD
 - ADD PROTECTION TO YOUR TENANT (TENANT PROTECTIONS FROM TOP 10 ARTICLE, USE ONBOARDING HUB WIZARDS WHERE POSSIBLE)
