@@ -6,7 +6,7 @@
 ## [Sign up](../business/sign-up.md)
 ## [Set up](../business/set-up.md?toc=/microsoft-365/democracy/toc.json)
 ## [Tune up threat protection](m365-democracy-tune-up-protection.md) 
-## Configure conditional access policies
+## [Configure conditional access policies](m365-democracy-conditional-access.md)
 ## Configure additional protection for Windows 10 devices 
 # User help
 ## [Set up mobile devices](../business/set-up-mobile-devices.md?toc=/microsoft-365/democracy/toc.json)

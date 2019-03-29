@@ -53,7 +53,7 @@ Use your user account to participate in collaboration with your organization, in
 
 
 ### Additional recommendations
-- Be sure admin accounts are also set up for multi-factor authentication. We'll show you how to do this in Configure conditional access policies.
+- Be sure admin accounts are also set up for multi-factor authentication. We'll show you how to do this in [Configure conditional access policies](m365-democracy-conditional-access.md).
 - Before using admin accounts, close out all unrelated browser sessions and apps, including personal email accounts.
 - After completing admin tasks, be sure to log out of the browser session.
 
