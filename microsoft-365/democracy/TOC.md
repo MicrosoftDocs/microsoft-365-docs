@@ -5,7 +5,7 @@
 # Get started
 ## [Sign up](../business/sign-up.md)
 ## [Set up](../business/set-up.md?toc=/microsoft-365/democracy/toc.json)
-## Add additional protection 
+## [Tune up threat protection](m365-democracy-tune-up-protection.md) 
 ## Configure conditional access policies
 ## Configure additional protection for Windows 10 devices 
 # User help
