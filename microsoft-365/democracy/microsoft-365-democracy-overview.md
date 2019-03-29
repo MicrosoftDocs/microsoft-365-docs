@@ -24,9 +24,21 @@ description: "What is Microsoft 365 for Democracy and how do I get it?"
 ---
 
 # What's included with Microsoft 365 for Democracy
-REVISING FOR MICROSOFT 365 FOR DEMOCRACY--
-- WHAT IS IT?
-- REQUIRED PLANS (M365B + AZURE AD P1) AND WHY
+
+Microft 365 for Democracy includes the following:
+- Presriptive setup guidance for adding increased security.
+- Help for users to setup devices for secure access.
+- Guidance on how to collaborate and share securely.
+- Special pricing for organizations that qualify for nonprofit pricing, including political campaigns and think tanks that contribute to democracy. More information is coming soon.
+
+Microsoft 365 for Democracy takes advantage of the following plans to provide rich collaboration tools with the recommended security for organizations that require higher protection for security and data privacy. 
+
+||||
+|:-----|:-----|:------|
+|**Plan**|**Microsoft 365 Business**|**Azure AD P1**|
+|Capabilities|Productivity <p>Collaboration <p>File storage <p>Email <p>Advanced Threat Protection (ATP) <p>Windows 10 <p> Office apps <p>Mobile device management| Advanced identity protection <p>Forced password reset for leaked credentials <p>Enforced mobile app protection <p>Block unapproved apps|
+
+
 
 
 ## Get Microsoft 365 Business
