@@ -98,4 +98,4 @@ When providing notice to customers of a personal data breach, Microsoft will inc
 -   Sub-processor/supplier details, if one is involved in the breach
 
 #### Learn more
-Find out more about [Microsoft Professional Services](<https://www.microsoft.com/microsoftservices/professional_services.aspx>) and by going to the Microsoft Professional Services section on the Microsoft Trust Center (<https://www.microsoft.com/trustcenter/cloudservices/commercialsupport>). 
+Find out more about Microsoft Professional Services on the Microsoft Trust Center (<https://www.microsoft.com/trustcenter/professional-services>). 
