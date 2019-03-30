@@ -25,19 +25,25 @@ description: "Learn about device states in Microsoft 365 Business."
 
 # How Microsoft 365 for Democracy affects users
 
-HOW DOES THIS MORE SECURED VERSION WORK FOR USERS?
+Microsoft 365 for Democracy makes it much harder for hackers to gain access to your environment. The tradeoff is your users will need to be aware of how to work within this more secure environment. We understand a little extra patience is required, but it's worth it to keep your organization protected.
 
-ALL USERS--
-- MULTI-FACTOR AUTHENTICATION WITH AUTHENTICATOR APP
-- MODERN APPS (MUST USE FRESH MICROSOFT VERSION OF APPS, NATIVE PHONE APPS NOT SUPPORTED)
-- COLLABORATE USING MICROSOFT TEAMS, ONEDRIVE, AND SHAREPOINT (DON'T PUT DATA ON UNMANAGED SERVICES, LIKE DROPBOX.)
+## Collaborate using Microsoft Teams, OneDrive, SharePoint Online, and other Office 365 tools
+Microsoft 365 makes it as easy as possible to collaborate and share securely. You can share files and videos directly from Microsoft Teams, OneDrive, Stream, and even from within a file. Sharing from within these tools helps keep your data from leaking. You can also add additional protection to sensitive data to prevent sharing outside your organization. 
 
-MVP STAFF--
-- USE WINDOWS 10 DEVICES
+## Setting up iPhones and Android devices
+All users you add to your environment will need to take a few minutes to setup iPhones and Android devices to work securely:
+- Setup devices to use multi-factor authentication with the autenticator app.
+- Use Microsoft mobile apps, including Outlook Mobile, Word, OneDrive, and other Microsoft apps from the app store. The native mail apps that are included on iPhones and Android devices are not supported. 
 
-ENCOURAGEMENT--YA WE KNOW THIS IS A LITTLE HARDER, BUT IT'S WORTH IT AND YOUR ORGANIZATION WILL BE SO MUCH SAFER!
+After setting these up, your users will be prompted to use the authenticator app when accessing your organization data on these devices, indluding mail. 
 
-## Device states
+## Setting up BYOD Macs and Windows PCs
+coming soon
 
-Devices in the **Device actions** list (Admin home \> **Device actions**) can have the following states.
+## Setting up managed Windows 10 devices
+We recommend your most important staff members use freshly aquired Windows 10 devices that you manage. We'll show you how to manage and secure these devices. This ensures that staff members that are the highest value target to hackers receive the most protection. 
+
+![illustration of users collaborating on devices](../images/democracy/m365-democracy-secure-collaboration.png)
+
+
   

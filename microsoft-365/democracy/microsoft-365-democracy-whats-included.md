@@ -36,7 +36,7 @@ Microsoft 365 for Democracy takes advantage of the following plans to provide ri
 ||||
 |:-----|:-----|:------|
 |**Plan**|**Microsoft 365 Business**|**Azure AD P1**|
-|Capabilities|Productivity <p>Collaboration <p>File storage <p>Email <p>Advanced Threat Protection (ATP) <p>Windows 10 <p> Office apps <p>Mobile device management| Advanced identity protection <p>Forced password reset for leaked credentials <p>Enforced mobile app protection <p>Block unapproved apps|
+|Capabilities|Productivity <p><p> Collaboration <p>File storage <p>Email <p>Advanced Threat Protection (ATP) <p>Windows 10 <p> Office apps <p>Mobile device management| Advanced identity protection <p><p>Forced password reset for leaked credentials <p>Enforced mobile app protection <p>Block unapproved apps|
 
 
 
