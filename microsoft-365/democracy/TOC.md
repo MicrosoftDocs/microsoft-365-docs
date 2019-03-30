@@ -5,8 +5,9 @@
 ## [Setup overview](microsoft-365-democracy-setup-overview.md)
 # Get started
 ## [Sign up](../business/sign-up.md)
-## [Set up](../business/set-up.md?toc=/microsoft-365/democracy/toc.json)
+## [Set up Microsoft 365](../business/set-up.md?toc=/microsoft-365/democracy/toc.json)
 ## [Tune up threat protection](m365-democracy-tune-up-protection.md) 
+## [Add Azure AD P1](set-up-azureadp1.md) 
 ## [Configure conditional access policies](m365-democracy-conditional-access.md)
 ## Configure additional protection for Windows 10 devices 
 # User help
@@ -24,4 +25,3 @@
 ## Reset devices to factory settings
 # Security incident management
 ## [Responding to a compromised email account in Office 365](https://docs.microsoft.com/en-us/Office365/SecurityCompliance/responding-to-a-compromised-email-account)
-# [Add additional protection](set-up-azureadp1.md) 
