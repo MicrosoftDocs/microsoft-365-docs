@@ -24,16 +24,18 @@ description: "Learn how to purchase Microsoft 365 Business from Microsoft Partne
 
 # Get Microsoft 365 for Democracy
 
-REVISE--
-1. GET FROM NONPROFIT PROGRAM
-2. GET FROM MICROSOFT--GET THE TWO PLANS (M365B, AZURE AD P1)
-3. GET FROM A PARTNER
+There are several ways to get Microsoft 365 Business and Azure AD P1.
 
-## Get Microsoft 365 Business from Microsoft
+## Get Microsoft 365 for Democracy through Microsoft's nonprofit program
+coming soon
+
+## Get Microsoft 365 Business from Microsoft and add Azure AD P1 to your subscription
 
 If you don't have a partner and want to get Microsoft 365 Business, you can [buy it here](https://www.microsoft.com/en-US/microsoft-365/business).
+
+After setting up Microsoft 365 Business, add Azure AD P1 to your subscription. <link to instructions>
   
-## Get Microsoft 365 Business from Microsoft Partner Center
+## Get Microsoft 365 Business and Azure AD P1 from Microsoft Partner Center
 
 1. Sign in at [Microsoft Partner Center](https://go.microsoft.com/fwlink/p/?linkid=849910) by using the credentials you created when you enrolled to the Cloud Service Provider (CSP) program. 
     
