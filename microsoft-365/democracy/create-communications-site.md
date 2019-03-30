@@ -25,7 +25,11 @@ description: "Create a communications site for your campaign."
 
 # Create a communications site for your campaign
 
+<<<<<<< HEAD
 Use a communication site to broadcast information out to a broad audience. With a communication site typically only a small set of members contribute content that is consumed by a much larger audience.
+=======
+A great way to communicate priorities, share strategy documents and highlight upcoming events is by using a communications site in SharePoint. Communications sites are for sharing things broadly across your whole campaign - it's your internal campaign site.
+>>>>>>> m365-democracy
 
 ## Best practices
 
