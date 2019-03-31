@@ -26,8 +26,6 @@ description: "Get help with increasing the level of protection in your subscript
 
 This article helps you tune-up the protection in your Microsoft 365 subscription to protect against phishing, malware, and other threats. These recommendations are appropriate for organizations with an increased need for security, like political campaigns, law offices, and health care clinics. 
 
-GET ART FROM THIS ARTICLE/REPO [Top 10 ways to secure Office 365 and Microsoft Business plans](https://docs.microsoft.com/en-us/office365/admin/security-and-compliance/secure-your-business-data?view=o365-worldwide)
-
 - [Raise the level of protection against malware in mail](#raise-the-level-of-protection-against-malware-in-mail)
 - [Protect against ransomware](#protect-against-ransomware)
 - [Stop auto-forwarding for email](#stop-auto-forwarding-for-email)
