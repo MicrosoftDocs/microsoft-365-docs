@@ -28,7 +28,7 @@ description: "Protect against phishing and other attacks with Microsoft 365 for 
 
 The following are specific things you can do if you're computer is running Windows 10, or if you have a Mac.
 
-## [Windows 10] (#tab/Windows 10)
+## [Windows 10](#tab/Windows 10)
 **Turn on BitLocker device protection**
 Bitlocker protects data when devices are lost or stolen. BitLocker Drive Encryption provides full disk encryption on Windows 10 PCs. If the device is lost or stolen unauthorized users can’t gain access to files on the protected drives, including files synced from OneDrive for Business.
 
