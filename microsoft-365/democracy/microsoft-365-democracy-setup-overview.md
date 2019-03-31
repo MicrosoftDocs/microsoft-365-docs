@@ -34,7 +34,7 @@ The following diagram describes how admins set up Microsoft 365 for Democracy.
 
  ## Overview of device setup 
  
-Users will need to take a few minutes to setup devices to work with this environment. For example, conditional access rules require that devices use Microsoft apps and keep these updated. For you key users (users who are the highest value targets for hackers), you can set up and pre-configure new devices, getting them ready for productive use as soon as a user signs in with their Microsoft 365 Business credentials. 
+Users will need to take a few minutes to setup devices to work with this environment. For your key users (users who are the highest value targets for hackers), you can set up and pre-configure new devices, getting them ready for productive use as soon as a user signs in with their Microsoft 365 Business credentials. 
 
 ![User device setup process](../images/democracy/m365-democracy-user-device-setup.png)
   
