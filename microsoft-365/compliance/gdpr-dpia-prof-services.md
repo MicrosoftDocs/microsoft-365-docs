@@ -17,7 +17,7 @@ ms.collection: GDPR
 
 ## Introduction to Microsoft Professional Services
 
-Microsoft Professional Services includes a diverse group of technical architects, engineers, consultants, and support professionals dedicated to delivering on Microsoft's mission of empowering customers to do more and achieve more. Find out more about Microsoft Professional Services here (<https://www.microsoft.com/microsoftservices/professional_services.aspx>) and by going to the Microsoft Professional Services section on the Microsoft Trust Center (<https://www.microsoft.com/trustcenter/cloudservices/commercialsupport>).
+Microsoft Professional Services includes a diverse group of technical architects, engineers, consultants, and support professionals dedicated to delivering on Microsoft's mission of empowering customers to do more and achieve more. Find out more about Microsoft Professional Services by going to the Microsoft Professional Services section on the Microsoft Trust Center (<https://www.microsoft.com/trustcenter/professional-services>).
 
 Microsoft Professional Services takes its obligations under the General Data Protection Regulation (GDPR) seriously. The information in this document is designed to provide information about how Microsoft’s support and consulting offerings that customers can use when preparing Data Protection Impact Assessments (DPIAs) under GDPR.
 
