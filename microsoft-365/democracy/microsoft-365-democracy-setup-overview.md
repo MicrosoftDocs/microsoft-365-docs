@@ -30,7 +30,7 @@ This article describes the process of setting up Microsoft 365 for Democracy.
 ## Overview of subscription setup and adding additional security protection
 The following diagram describes how admins set up Microsoft 365 for Democracy.
 
-\![Setps to set up Microsoft 365 for Democracy](../images/democracy/m365-democracy-setup-steps.png)
+![Setps to set up Microsoft 365 for Democracy](../images/democracy/m365-democracy-setup-steps.png)
 
  ## Overview of device setup 
  
