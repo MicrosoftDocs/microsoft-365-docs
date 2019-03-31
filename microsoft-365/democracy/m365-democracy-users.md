@@ -41,7 +41,8 @@ It's also important that users keep their primary work device up to date:
 
 For unmanaged Windows 10 and Mac devices, users have the responsibility to ensure basic security features are enabled.
 
-**Enable basic security capabilities on BYOD Windows 10 and Mac devices**<p>
+**Enable basic security capabilities on BYOD Windows 10 and Mac devices**
+
 ||||
 |:-----|:-----|:------|
 ||**Windows 10**|**Mac**|
