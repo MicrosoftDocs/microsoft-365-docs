@@ -33,9 +33,10 @@ Microft 365 for Democracy includes the following:
 
 Microsoft 365 for Democracy takes advantage of the following plans to provide rich collaboration tools with the recommended security for organizations that require higher protection for security and data privacy. 
 
+
 ||||
 |:-----|:-----|:------|
-|**Plan**|**Microsoft 365 Business**|**Azure AD P1**|
+||**Microsoft 365 Business**|**Azure AD P1**|
 |Capabilities|Productivity <p><p> Collaboration <p>File storage <p>Email <p>Advanced Threat Protection (ATP) <p>Windows 10 <p> Office apps <p>Mobile device management| Advanced identity protection <p><p>Forced password reset for leaked credentials <p>Enforced mobile app protection <p>Block unapproved apps|
 
 
