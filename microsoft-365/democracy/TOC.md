@@ -10,7 +10,7 @@
 ## [Tune up threat protection](m365-democracy-tune-up-protection.md) 
 ## [Configure conditional access policies](m365-democracy-conditional-access.md)
 ## Configure additional protection for Windows 10 devices 
-# User help
+# User security help
 ## [Set up mobile devices](../business/set-up-mobile-devices.md?toc=/microsoft-365/democracy/toc.json)
 ## [Protect unmanaged Windows 10 PCs and Macs](m365-democracy-protect-pcs-macs.md)
 ## [Set up managed Windows devices](../business/set-up-windows-devices.md?toc=/microsoft-365/democracy/toc.json)
