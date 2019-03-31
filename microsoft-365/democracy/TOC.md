@@ -6,6 +6,7 @@
 ## [Sign up](../business/sign-up.md)
 ## [Set up Microsoft 365](../business/set-up.md?toc=/microsoft-365/democracy/toc.json)
 ## [Add Azure AD P1](set-up-azureadp1.md) 
+# Bump up security protection
 ## [Protect admin accounts](m365-democracy-protect-admin-accounts.md)
 ## [Tune up threat protection](m365-democracy-tune-up-protection.md) 
 ## [Configure conditional access policies](m365-democracy-conditional-access.md)
