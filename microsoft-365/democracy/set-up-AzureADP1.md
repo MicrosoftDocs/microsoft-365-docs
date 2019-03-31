@@ -1,5 +1,5 @@
 ---
-title: "Add additional protection to secure your business data with Azure AD P1"
+title: "Add Azure AD P1 to your Microsoft 365 Business subscription"
 ms.author: supotter
 author: supotter
 manager: scotv
@@ -20,7 +20,7 @@ search.appverid:
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: "Add Azure Active Directory Premium 1 (Azure AD P1) to Microsoft 365 Business to secure business data"
 ---
-# Add additional protection to secure your business data
+# Add Azure AD P1 to your Microsoft 365 Business subscription
 After you set up Microsoft 365 Business, add Azure Active Directory Premium P1 (Azure AD P1). Azure AD P1 helps protect access to your organization's information. For example, create policies to: 
 - Prevent access to sensitive information outside of geographic locations that you specify.
 - Prevent information downloads to devices unless they are protected by Microsoft 365 for your organization. 
