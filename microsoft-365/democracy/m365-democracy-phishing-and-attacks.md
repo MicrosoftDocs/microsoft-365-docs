@@ -59,16 +59,7 @@ Help your customers trust your communications - add a digital signature to prove
 
 ## Set it up
 
-Short list of summary how-to steps (if brief) with links to any articles that go into more depth. Take a look at: https://docs.microsoft.com/en-us/freelancetoolkit/internalcommunicationdownload.
-
-Tom/Steve - here are some training resources to include:
-
+Learn more about how to:
 - [Keep your files and communications safe with Office](https://support.office.com/en-us/article/keep-your-files-and-communications-safe-with-office-c4ddc381-7395-42da-887c-8836a3bb975f)
 - [Stay secure and private at work](https://support.office.com/en-us/article/stay-secure-and-private-at-work-104c7d91-b25a-453d-beee-ba64b6c6fc2d)
-- 
-
-
-## Admin settings
-
-If there's something an admin needs to do to make this work, include a brief description of that task and a link to an article for the admin.
   

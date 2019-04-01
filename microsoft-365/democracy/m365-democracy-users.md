@@ -27,6 +27,8 @@ description: "Learn how Microsoft 365 for Democracy affects your users."
 
 Microsoft 365 for Democracy makes it much harder for hackers to gain access to your environment. The tradeoff is your users will need to be aware of how to work within this more secure environment. We understand a little extra patience is required, but it's worth it to keep your organization protected.
 
+![Illustration that sums up key points from below for iPhones, Android devices, Macs, Windows 10, sharing, and key staff](../images/democracy/M365-democracy-Users_700px.png)
+
 ## Set up iPhones and Android devices
 All users you add to your environment will need to take a few minutes to setup iPhones and Android devices to work securely:
 - Setup devices to use multi-factor authentication with the autenticator app.
@@ -57,7 +59,6 @@ Your users might be tempted to share and store your organization files in places
 ## Setting up managed Windows 10 devices
 We recommend your most important staff members use freshly aquired Windows 10 devices that you manage. We'll show you how to manage and secure these devices. This ensures that staff members that are the highest value target to hackers receive the most protection. 
 
-![illustration of users collaborating on devices](../images/democracy/m365-democracy-secure-collaboration.png)
 
 
   

@@ -41,9 +41,14 @@ Include the following elements in your Communications site:
 
 ## Set it up
 
-Short list of summary how-to steps (if brief) with links to any articles that go into more depth. Take a look at: https://docs.microsoft.com/en-us/freelancetoolkit/internalcommunicationdownload.
+1. Sign in to Office 365.
+2. In the top left corner of the page, select the app launcher icon and then select the **SharePoint** tile. If you don't see the **SharePoint** tile, click the **Sites** tile or **All** if SharePoint is not visible.
+3. At the top of the SharePoint home page, click **+ Create site** and choose the **Communication site** option.
+
+Learn all [about Communications sites](https://support.office.com/en-us/article/What-is-a-SharePoint-communication-site-94A33429-E580-45C3-A090-5512A8070732) and how to [create a communication site in SharePoint Online](https://support.office.com/en-us/article/Create-a-communication-site-in-SharePoint-Online-7FB44B20-A72F-4D2C-9173-FC8F59BA50EB).
+
 
 ## Admin settings
 
-If there's something an admin needs to do to make this work, include a brief description of that task and a link to an article for the admin.
+If you don't see the **+ Create** site link, self-service site creation may be disabled in Office 365. Contact the person administering Office 365 in your organization to create a team site. If you're a tenant administrator, see [Manage site creation in SharePoint Online](https://docs.microsoft.com/sharepoint/manage-site-creation) to enable self-service site creation for your organization or [Manage sites in the new SharePoint admin center](https://docs.microsoft.com/sharepoint/manage-sites-in-new-admin-center) to create a site from the SharePoint Online admin center.
   
