@@ -33,7 +33,7 @@ Microft 365 for Democracy includes the following:
 
 Microsoft 365 for Democracy takes advantage of the following plans to provide rich collaboration tools with the recommended security for organizations that require higher protection for security and data privacy. 
 
-**Microsoft plans used by Microsoft 365 for Democracy**
+**Plans used by Microsoft 365 for Democracy**
 
 ||||
 |:-----|:-----|:------|
