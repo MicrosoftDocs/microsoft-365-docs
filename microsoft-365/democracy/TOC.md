@@ -3,7 +3,7 @@
 ## [Get Microsoft 365 for Democracy](get-microsoft-365-democracy.md)
 ## [How Microsoft 365 affects users](m365-democracy-users.md)
 # [Get started](microsoft-365-democracy-setup-overview.md)
-## [Sign up](../business/sign-up.md)
+## [Sign up](../business/sign-up.md?toc=/microsoft-365/democracy/toc.json)
 ## [Set up Microsoft 365](../business/set-up.md?toc=/microsoft-365/democracy/toc.json)
 ## [Add Azure AD P1](set-up-azureadp1.md) 
 # Bump up security protection
