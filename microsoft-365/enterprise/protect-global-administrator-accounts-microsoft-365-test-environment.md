@@ -44,7 +44,7 @@ If you want to test global administrator account protection in a simulated enter
 First, create an Office 365 Cloud App Security policy to monitor global administrator account activity and send alerts to the email address of your global administrator account. 
 
 1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) using your global administrator account.
-2. Click the **Admin** tile. On the **Office Admin center** tab, click **Admin centers > Security & Compliance**.
+2. Click the **Admin** tile. On the **Office Admin center** tab, click **Admin centers > Compliance**.
 3. In the left navigation pane, click **Alerts > Manage advanced alerts**.
 4. On the **Manage advanced alerts** page, click **Turn on Office 365 Cloud App Security**, and then click **Go to Office 365 Cloud App Security**.
 5. On the new **Dashboard** tab, click **Control > Policies**.

@@ -53,14 +53,10 @@ Apps that do not support modern authentication cannot have [identity and device 
 5. Under **Apps that don’t support modern authentication**, click **Block**, and then click **OK**.
 
 
-### Enable Advanced Threat Protection) for SharePoint, OneDrive for Business, and Microsoft Teams
+### Enable Advanced Threat Protection for SharePoint, OneDrive for Business, and Microsoft Teams
 
-Office 365 Advanced Threat Protection (ATP) is a feature of Exchange Online Protection (EOP) that helps keep malware out of your email. With ATP, you create policies in the Exchange Admin center (EAC) or the Security & Compliance center that help ensure your users access only links or attachments in emails that are identified as not malicious. For more information, see [Advanced threat protection for safe attachments and safe links](https://docs.microsoft.com/office365/securitycompliance/office-365-atp).
+Office 365 Advanced Threat Protection (ATP) is a feature of Exchange Online Protection (EOP) that helps keep malware out of your email. With ATP, you create policies in the Exchange Admin center (EAC) or the Microsoft 365 security center that help ensure your users access only links or attachments in emails that are identified as not malicious. For more information, see [Advanced threat protection for safe attachments and safe links](https://docs.microsoft.com/office365/securitycompliance/office-365-atp).
 
-1. On the **Microsoft 365 admin center** tab of your browser, click **Admin centers > Security & Compliance**.
-2. On the new **Security & Compliance** tab, click **Threat management > Policy**.
-3. Click **ATP safe attachments**.
-4. In the **Safe attachments** pane, select **Turn on ATP for SharePoint, OneDrive, and Microsoft Teams**, and then click **Save**.
 
 ### Enable anti-malware
 
@@ -83,23 +79,12 @@ In this phase, you look at built-in services that inform you about security even
 
 ### Threat management dashboard
 
-Office 365 Threat management can help you control and manage mobile device access to your organization's data, help protect your organization from data loss, and help protect inbound and outbound messages from malicious software and spam. You also use threat management to protect your domain's reputation and to determine whether or not senders are maliciously spoofing accounts from your domain. For more information, see [Threat management in the Office 365 Security & Compliance Center](https://docs.microsoft.com/office365/securitycompliance/threat-management).
+Office 365 Threat management can help you control and manage mobile device access to your organization's data, help protect your organization from data loss, and help protect inbound and outbound messages from malicious software and spam. You also use threat management to protect your domain's reputation and to determine whether or not senders are maliciously spoofing accounts from your domain. For more information, see [Threat management in the Microsoft 365 security center](https://docs.microsoft.com/office365/securitycompliance/threat-management).
 
-Use these steps to view the Office 365 Threat management dashboard:
-
-1. On the **Microsoft 365 admin center** tab of your browser, click **Admin centers > Security & Compliance**.
-2. On the new **Security & Compliance** tab, click **Threat management > Dashboard**.
-3. On the new **Dashboard** tab in your browser, note the malware trends, insights, and other sections of the dashboard.
 
 ### Office 365 Cloud App Security dashboard
 
 Office 365 Cloud App Security, previously known as Office 365 Advanced Security Management, allows you to create policies that monitor for and inform you of suspicious activities in your Office 365 subscription, so that you can investigate and take possible remediation action. For more information, see [Overview of Office 365 Cloud App Security](https://docs.microsoft.com/office365/securitycompliance/office-365-cas-overview).
-
-1. On the **Microsoft 365 admin center** tab of your browser, click **Admin centers > Security & Compliance**.
-2. On the new **Security & Compliance** tab, click **Alerts > Manage advanced alerts > Go to Office 365 Cloud App Security**.
-3. On the new **Cloud App Security** tab, note the dashboard view and the list of default policies that that monitor for various activities in your Office 365 subscription.
-4. Click the dashboard icon to see a summary of Cloud App Security activities that are being tracked.
-5. Click **Investigate** (the eyeglasses icon) and then **Activity log** to see the list of recent sign-ins and other activities.
 
 ### Secure Score
 
