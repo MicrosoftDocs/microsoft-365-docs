@@ -68,7 +68,7 @@ Next, you configure the Sales group so that members are automatically assigned O
 Next, you test dynamic group membership and automatic licensing on the User 4 account. 
 
 1. From the **Microsoft Office Home** tab in your browser, click **Admin**.
-2. From the **Office Admin center** tab, click **Active users**.
+2. From the **Microsoft 365 admin center** tab, click **Active users**.
 3. On the **Active users** page, click the **User 4** account.
 4. On the **User 4** pane, click **Edit** for **Product licenses**.
 5. On the **Product licenses** pane, turn the **Enterprise Mobility + Security E5** and **Office 365 Enterprise E5** licenses off, and then click **Save > Close**.
