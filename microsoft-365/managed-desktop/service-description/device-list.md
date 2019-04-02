@@ -7,7 +7,7 @@ author: trudyha
 ms.localizationpriority: normal
 ---
 
-# Microsoft Managed Desktop devices
+# Microsoft Managed Desktop devices 
 
 Microsoft Managed Desktop regularly evaluates devices to be included in the service. This topic outlines the requirements for a device to be enrolled in Microsoft Managed Desktop.
 
