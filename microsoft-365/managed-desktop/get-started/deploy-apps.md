@@ -5,7 +5,6 @@ keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation, apps
 ms.service: m365-md
 author: trudyha
 ms.localizationpriority: normal
-ms.date: 01/17/2019
 ms.collection: M365-modern-desktop
 ---
 

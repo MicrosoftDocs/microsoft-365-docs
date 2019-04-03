@@ -30,7 +30,7 @@ To ensure that your Office 365 subscription and its data start off and remain se
 
 Once configured, you can obtain information about your security status from:
 
-- [Dashboards and reports in the Security & Compliance Center](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security#view-dashboards-and-reports-in-the-security--compliance-center)
+- [Dashboards and reports in the Microsoft security Center](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security#view-dashboards-and-reports-in-the-security--compliance-center)
 - [Office 365 Secure Score](https://docs.microsoft.com/office365/securitycompliance/office-365-secure-score)
 
 You can also use Cloud App Security or Office 365 Cloud App Security to monitor for security events and act. For more information, see [Overview of Office 365 Cloud App Security](https://docs.microsoft.com/office365/securitycompliance/office-365-cas-overview).

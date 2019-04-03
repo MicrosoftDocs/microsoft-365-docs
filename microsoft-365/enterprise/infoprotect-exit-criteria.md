@@ -39,7 +39,7 @@ If needed, [Step 1](infoprotect-define-sec-infoprotect-levels.md) can help you m
 
 You've configured the following settings for [Office 365 increased security](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security):
 
-- Threat management policies in the Office 365 Security & Compliance Center
+- Threat management policies in the Microsoft 365 security Center
 - Additional Exchange Online tenant-wide settings
 - Tenant-wide sharing policies in SharePoint admin center
 - Settings in Azure Active Directory

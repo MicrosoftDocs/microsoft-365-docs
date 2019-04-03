@@ -91,9 +91,9 @@ In accordance with security best practices and Microsoft 365 Enterprise deployme
 
   Contoso has also enabled mailbox audit logging to determine who has logged into user mailboxes, sent messages, and other activities performed by the mailbox owner, a delegated user, or an administrator.
 
-- Attack monitoring and prevention with Office 365 Threat Intelligence
+- Attack monitoring and prevention with Office 365 threat investigation and response
 
-  Contoso uses [Office 365 Threat Intelligence](https://docs.microsoft.com/office365/securitycompliance/office-365-ti) to protect their Office 365 users by making it easy to identify and address attacks, and to prevent future attacks.
+  Contoso uses [Office 365 threat investigation and response](https://docs.microsoft.com/office365/securitycompliance/office-365-ti) to protect their Office 365 users by making it easy to identify and address attacks, and to prevent future attacks.
 
 - Protection from sophisticated attacks with Advanced Threat Analytics
 
