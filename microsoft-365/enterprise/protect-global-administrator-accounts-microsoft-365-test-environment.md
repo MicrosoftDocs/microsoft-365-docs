@@ -44,7 +44,7 @@ If you want to test global administrator account protection in a simulated enter
 First, create an Office 365 Cloud App Security policy to monitor global administrator account activity and send alerts to the email address of your global administrator account. 
 
 1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) using your global administrator account.
-2. Click the **Admin** tile. On the **Office Admin center** tab, click **Admin centers > Compliance**.
+2. Click the **Admin** tile. On the **Microsoft 365 admin center** tab, click **Admin centers > Compliance**.
 3. In the left navigation pane, click **Alerts > Manage advanced alerts**.
 4. On the **Manage advanced alerts** page, click **Turn on Office 365 Cloud App Security**, and then click **Go to Office 365 Cloud App Security**.
 5. On the new **Dashboard** tab, click **Control > Policies**.
@@ -59,7 +59,7 @@ First, create an Office 365 Cloud App Security policy to monitor global administ
     
 Next, create a new user account as a dedicated global administrator.
 
-1. On the **Office Admin center** tab, under **Active users**, click **Add a user**.
+1. On the **Microsoft 365 admin center** tab, under **Active users**, click **Add a user**.
 2. On the **New user** page, type **DedicatedAdmin** in **First name**, **Display name**, and **Username**.
 3. Click **Password**, click **Let me create the password**, and then type a strong password. Record the password for this new account in a secure location.
 4. Clear **Make this user change their password when they first sign in**.
@@ -70,7 +70,7 @@ Next, create a new user account as a dedicated global administrator.
 
 Next, create a new group named GlobalAdmins and add the DedicatedAdmin account to it.
 
-1. On the **Office Admin center** tab, click the groups icon in the left navigation, and then click **Groups**.
+1. On the **Microsoft 365 admin center** tab, click the groups icon in the left navigation, and then click **Groups**.
 2. Click **Add a group**.
 3. On the **New Group** page, type **GlobalAdmins**.
 4. Click **Select owner** click your global administrator account, and then click **Add > Close**.
@@ -99,7 +99,7 @@ This second policy blocks access to global administrator account authentication 
 8. In the **Access controls** section of the **New** blade, click **Grant**.
 9. On the **Grant** blade, click **Block access**, and then click **Select**.
 10. On the **New** blade, click **On** for **Enable policy**, and then click **Create**.
-11. Close the **Azure portal** and **Office Admin center** tabs.
+11. Close the **Azure portal** and **Microsoft 365 admin center** tabs.
 
 To test the first policy, sign out and sign in with the DedicatedAdmin account. You should be prompted to configure MFA on the user account. This demonstrates that the first policy is being applied.
 
