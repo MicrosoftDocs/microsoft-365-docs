@@ -2,7 +2,6 @@
 ## [Get Microsoft 365 Business](sign-up.md)
 ## [Pre-requisites for data protection](pre-requisites-for-data-protection.md)
 ## [Security features](security-features.md)
-## [Sign up](sign-up.md)
 ## [Set up](set-up.md)
 ### [Upgrade to Windows Pro Creators Update](upgrade-to-windows-pro-creators-update.md)
 ### [Set up mobile devices](set-up-mobile-devices.md)
