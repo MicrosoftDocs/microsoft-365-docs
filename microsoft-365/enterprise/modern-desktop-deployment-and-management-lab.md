@@ -25,7 +25,7 @@ As part of the [Desktop Deployment](http://www.aka.ms/howtoshift) process for Wi
 
 The lab kit is free to download and uses trial software.
 
-### [**Download the Windows and Office Deployment Lab Kit**](https://www.microsoft.com/en-us/evalcenter/evaluate-lab-kit)
+### [**Download the Windows and Office Deployment Lab Kit**](https://www.microsoft.com/evalcenter/evaluate-lab-kit)
 
 ## **A complete lab environment**
 
