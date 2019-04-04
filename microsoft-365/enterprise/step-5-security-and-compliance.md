@@ -17,8 +17,6 @@ description: Learn about the important Windows and Office security and complianc
 
 # Step 5: Security and Compliance Considerations
 
-Review your options for targeting new security and compliance capabilities as part of your Windows 10 and Office 365 ProPlus deployment along with the considerations and common blockers when moving from previous versions of Windows and Office.
-
 ![](media/step-5-security-and-compliance-media/step-5-security-and-compliance-media-1.png)
 
 <table>
@@ -34,7 +32,7 @@ Review your options for targeting new security and compliance capabilities as pa
 >Security and Compliance is the fifth step in our recommended deployment process wheel covering Windows 10 and Office 365 ProPlus security and compliance considerations. To see the full desktop deployment process, visit the [Desktop Deployment Center](https://aka.ms/HowToShift).
 >
 
-Many of the security-related capabilities in Windows 10 alone are driving the shift to the newer platform. Also, integration with cloud services in Office 365 and identity options using Azure Active Directory brings access to new and continually updated protections for your data, devices and users.
+Now it's time to review options for targeting new security and compliance capabilities as part of your Windows 10 and Office 365 ProPlus deployment, along with the considerations and common blockers when moving from previous versions of Windows and Office. Many of the security-related capabilities in Windows 10 alone are driving the shift to the newer platform. Also, integration with cloud services in Office 365 and identity options using Azure Active Directory brings access to new and continually updated protections for your data, devices and users.
 
 ## Overcoming Potential Security-Related Deployment Blockers
 

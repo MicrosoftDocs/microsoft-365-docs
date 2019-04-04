@@ -17,8 +17,6 @@ description: Learn about the options for OS deployment and feature updates.
 
 # Step 6: OS Deployment and Feature Updates
 
-Learn the options and get ready for operating system deployment using upgrade and imaging approaches with System Center Configuration Manager or the Microsoft Deployment Toolkit.
-
 ![](media/step-6-os-deployment-and-feature-updates-media/step-6-os-deployment-and-feature-updates-media-1.png)
 
 <table>

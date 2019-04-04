@@ -17,8 +17,6 @@ description: Learn how to deliver Office and LOB apps.
 
 # Step 3: Office and LOB App Delivery
 
-You are now ready to deliver Office and your Line of Business Apps. There are a number of ways to do this, including some exciting new options. Take some time to review and chose the best methods for your current needs.
-
 ![](media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-1.png)
 
 <table>
@@ -34,7 +32,7 @@ You are now ready to deliver Office and your Line of Business Apps. There are a 
 >Office and LOB App Delivery is the third step in our recommended deployment process wheel covering the options to install and manage Office and LOB. For successful deployment do not skip the first two steps.  To see the full desktop deployment process, visit the [Desktop Deployment Center](https://aka.ms/HowToShift).
 >
 
-While some applications are only available as either a 32-bit or 64-bit compiled version, others such as Office 365 ProPlus, offer both as 32-bit and 64-bit native compiled code, and one of biggest decisions you will make is which version to deploy. To take advantage of additional compute power and RAM on new devices Microsoft recommends using the 64-bit version when there are no 32-bit dependencies. To determine any add-in or file-related compatibility challenges you may have it is recommended to revisit Step 1 Device and App Readiness before you continue.
+You are now ready to deliver Office and your Line of Business Apps and there are a number of ways to do this, including some exciting new options. While some applications are only available as either a 32-bit or 64-bit compiled version, others such as Office 365 ProPlus, offer both as 32-bit and 64-bit native compiled code, and one of biggest decisions you will make is which version to deploy. To take advantage of additional compute power and RAM on new devices Microsoft recommends using the 64-bit version when there are no 32-bit dependencies. To determine any add-in or file-related compatibility challenges you may have it is recommended to revisit Step 1 Device and App Readiness before you continue.
 
 If nothing is blocking you, we recommend you deploy 64-bit versions of all apps, including Microsoft Office. 64-bit native compiled apps offer the best performance and is the most future-proof choice.
 
@@ -60,7 +58,7 @@ If you do want to include Office 365 ProPlus in your image, remember that this u
 
 [Create a Task Sequence to Install an Operating System](https://docs.microsoft.com/en-us/sccm/osd/deploy-use/create-a-task-sequence-to-install-an-operating-system)
 
-[Deploy Office 365 ProPlus as part of an operating system image]https://docs.microsoft.com/en-us/deployoffice/deploy-office-365-proplus-as-part-of-an-operating-system-image
+[Deploy Office 365 ProPlus as part of an operating system image](https://docs.microsoft.com/en-us/deployoffice/deploy-office-365-proplus-as-part-of-an-operating-system-image)
 
 ## Office Click-to-Run 
 
