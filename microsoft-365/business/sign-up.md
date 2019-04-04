@@ -26,23 +26,26 @@ If you are a partner, see [Get Microsoft 365 Business from Microsoft Partner Cen
 
 Go to [Discover Microsoft 365 Business advantage](https://www.microsoft.com/microsoft-365/business#pmg-cmp-desktop) and choose **Buy Now** under Microsoft 365 Business.
 
-1. On the **Welcome, let's get to know you** page enter the required information. Note that 
+1. On the **Welcome, let's get to know you** page enter the required information. Note that:
  
-    -  The **Country** you choose determines the service you are getting and can't be changed later.
-    - The **Business email address** is any email you have and will be used by Microsoft to send you correspondence about your subscription.
-    - The **Company name** will be displayed in the admin center, and used for any SharePoint site URLs.
+    -  **Country or regions:** This determines the service you receive and can't be changed later.
+    - **Business email address:** Enter your current email address. Microsoft uses this address to correspond with you about your Microsoft 365 subscription.
+    - **Company name** We'll display your company name in the admin center; this is where you'll manage Microsoft 365 users, licenses, and so on. We'll also include it in any SharePoint site URLs.
 
-2. On the **Create your user ID** page, enter the alias you want to use to sign in, a domain name after the @ sign, and then select a domain from the drop-down. You can use this to purchase a domain and select the extension from the dropdown, for example, you can enter *Teresa@ContosoSkis.net* and the wizard will determine if the domain is available and add the cost to your Microsoft 365 Business cost. The new domain will also be set up for you and ready to use if you purchase it here.
+2. On the **Create your user ID** page:
 
-    If you have an existing domain you want to use, choose *.onmicrosoft.com* from the drop down, and you can set it up later in the admin center.
+    - **Username**: Enter the name (called an alias) that you'll use for your own business email. For example, Robert Young might use RobY or RobYoung as a work alias.
+    - **Your company**: Enter your unique business name. This is the name that your business web site uses if you have one, and is also the name you want to include after the @ sign when you receive a business email. This name is called a domain. For example, if your business is called Contoso Skis, enter ContosoSkis after the @ sign.
+    - **Select a domain**: If you own your domain name already, select .onmicrosoft.com from the drop down men and we'll ask you to set it up later. Otherwise, it's easy to buy a domain name that represents your business. To do that, select the domain you prefer from the drop down menu. For example, your full email address might be *Teresa@ContosoSkis.net*. We'll let you know right away if the domain name is available. If it is, we'll add the cost of your domain to the cost of your Microsoft 365 Business subscription. The new domain will also be set up and ready for use in Microsoft 365 if you purchase it here.
     
     ![Screenshot of Create your user ID page.](media/signinuserid.png)
 
 3. Fill in the rest of the fields and select **Create my account**.
 4. On the **Prove.You're.Not'A.Robot.** page enter a phone number to receive a code either via text or a call and select **Text me** or **Call me**, then enter the verification code \> **Next**.
-5. On the **Where will you be using this** page fill in your business address. This information is used to determine taxes and subscription availability. Select **Next**, review your order and select **Next** again.
-6. On the **How do you want to pay** page, enter your payment details, and then **Place order**.
-    You can then go to the [admin center](https://go.microsoft.com/fwlink/p/?linkid=837890) to finish your [set up](set-up.md).
+5. On the **Where will you be using this** n your business address. This information determines what taxes you pay and which subscriptions are are available. For more information about taxes, see [What tax will I be charged?](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/what-tax-will-i-be-charged?view=o365-worldwide) 
+1. Select **Next**, review your order and select **Next** again.
+1. On the **How do you want to pay** page, enter your payment details, and then **Place order**.
+    You can then go to the [admin center](https://docs.microsoft.com/en-us/office365/admin/subscriptions-and-billing/what-tax-will-i-be-charged?view=o365-worldwide) to finish your [set up](set-up.md).
 
     > [!NOTE]
-    > If, at the end of the setup you select the link Go to the admin center, you will be taken directly to the [set up](set-up.md) experience.
+    > If, at the end of the setup you select the link **Go to the admin center**, you will be taken directly to the [set up](set-up.md) experience.
