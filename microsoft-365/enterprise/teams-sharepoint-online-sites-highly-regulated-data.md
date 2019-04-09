@@ -3,7 +3,7 @@ title: "Microsoft Teams and SharePoint Online sites for highly regulated data"
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 09/13/2018
+ms.date: 04/03/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -52,7 +52,7 @@ The following table maps the requirements of this solution to a feature of Micro
 
 This solution requires that you have already deployed:
 
-- Your [foundation infrastructure](deploy-foundation-infrastructure.md). 
+- The [Identity](identity-infrastructure.md) phase and steps 1 and 2 of the [Information protection](infoprotect-infrastructure.md) phase of the foundation infrastructure. 
 - For highly regulated data in SharePoint Online team sites, [SharePoint Online](sharepoint-online-onedrive-workload.md).
 - For highly regulated data in Microsoft Teams teams, [Microsoft Teams](teams-workload.md).
 
