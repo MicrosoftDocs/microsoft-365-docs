@@ -1,5 +1,5 @@
 ---
-title:Prepare authentication methods for Microsoft Managed Desktop 
+title: Prepare authentication methods for Microsoft Managed Desktop 
 description:  
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
