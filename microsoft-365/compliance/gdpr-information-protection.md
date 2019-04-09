@@ -47,7 +47,7 @@ Microsoft provides a recommended configuration you can use as a starting point:
 
 Threat protection is built across Microsoft 365 services. Here are a few resources to get you started:
 - [Office 365 security roadmap: Top priorities for the first 30 days, 90 days, and beyond](https://support.office.com/article/Office-365-security-roadmap-Top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352). This roadmap includes recommendations for implementing capabilities. 
-- [Protect against threats in Office 365](https://support.office.com/article/protect-against-threats-in-office-365-b10023f6-f30f-45d3-b3ad-b71aa4aa0d58). Learn about protection actions you can take in the Office 365 Security and Compliance Center.
+- [Protect against threats in Office 365](https://support.office.com/article/protect-against-threats-in-office-365-b10023f6-f30f-45d3-b3ad-b71aa4aa0d58). Learn about protection actions you can take in the Microsoft 365 security center.
 - [Windows Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/). Learn more about Windows Defender Advanced Threat Protection and other capabilities in Windows 10.
 
 

@@ -19,7 +19,7 @@ ms.collection: GDPR
 
 Microsoft Professional Services includes a diverse group of technical architects, engineers, consultants, and support professionals dedicated to delivering on the Microsoft mission of empowering customers to do more and achieve more. Our Professional Services team includes more than 21,000+ total consultants, Digital Advisors, Premier Support, engineers, and sales professionals working across 191 countries, supporting 46 different languages, managing several million engagements per month, and engaging in customer and partner interactions through on-premise, phone, web, community and automated tools. The organization brings broad expertise across the Microsoft portfolio, leveraging an extensive network of partners, technical communities, tools, diagnostics and channels that connect us with our enterprise customers.
 
-Find out more about Microsoft Professional Services here (<https://www.microsoft.com/microsoftservices/professional_services.aspx>) and by going to the Microsoft Professional Services section on the Microsoft Trust Center (<https://www.microsoft.com/trustcenter/cloudservices/commercialsupport>).Microsoft Professional Services takes its obligations under the General Data Protection Regulation (GDPR) seriously. The information in this document is designed to answer customer questions about how Microsoft’s support and consulting offerings will respond to and assist customers in responding to Data Subject Request (DSR) obligations under GDPR.<span id="_Toc508792502" class="anchor"><span id="_Toc510704608" class="anchor"></span></span>
+Find out more about Microsoft Professional Services by going to the Microsoft Professional Services section on the Microsoft Trust Center (<https://www.microsoft.com/trustcenter/professional-services>). Microsoft Professional Services takes its obligations under the General Data Protection Regulation (GDPR) seriously. The information in this document is designed to answer customer questions about how Microsoft’s support and consulting offerings will respond to and assist customers in responding to Data Subject Request (DSR) obligations under GDPR.<span id="_Toc508792502" class="anchor"><span id="_Toc510704608" class="anchor"></span></span>
 
 ### Introduction to DSRs 
 
@@ -72,20 +72,21 @@ Below are the relevant definitions of terms from the GDPR for this guide:
 This guide covers four scenarios a customer may encounter if they have utilized Microsoft Professional Services.
 
 <span id="_Toc510704611" class="anchor"><span id="_Toc511045453" class="anchor"><span id="_Toc511403161" class="anchor"></span></span></span>
-## DSR for a Customer Contact Engaging Microsoft
+- **DSR for a Customer Contact Engaging Microsoft**
+
 Explanation for how Microsoft will respond to requests from a customer contact or IT administrator to exercise their data subject rights.
 
 <span id="_Toc510704612" class="anchor"><span id="_Toc511045454" class="anchor"><span id="_Toc511403162" class="anchor"></span></span></span>
-## DSR for an End User Engaging Microsoft
+- **DSR for an End User Engaging Microsoft**
 
 Explanation for how Microsoft will respond to requests from a customer’s employees or other data subjects to exercise their rights.
 
-## DSR for Customer Provided Data: Commercial Support
+- **DSR for Customer Provided Data: Commercial Support**
 
 Explanation for how to receive assistance from Microsoft when a customer has received a request from their employee or other data subjects to exercise their rights, and that data subject’s personal data was collected by Microsoft Support during a support engagement.
 
 <span id="_Toc511403163" class="anchor"><span id="_Toc511045456" class="anchor"><span id="_Toc510704614" class="anchor"></span></span></span>
-## DSR for Customer Provided Data: Consulting Services including FastTrack Migration Services 
+- **DSR for Customer Provided Data: Consulting Services including FastTrack Migration Services** 
 
 <span id="_Toc511045457" class="anchor"><span id="_Toc511403164" class="anchor"></span></span>
 

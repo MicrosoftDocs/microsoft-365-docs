@@ -1,5 +1,5 @@
 ---
-title: "Get Microsoft 365 Business"
+title: "Get Microsoft 365 Business from partner center"
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
