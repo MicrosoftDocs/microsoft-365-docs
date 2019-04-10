@@ -7,7 +7,7 @@ localization_priority: Priority
 
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
-ms.date: 04/13/2018
+ms.date: 04/10/2019
 ms.author: heicba
 manager: laurawi
 audience: itpro
@@ -74,7 +74,7 @@ In the articles below, you’ll find information to help you prepare for and res
 
 Dynamics 365 is an online service that offers multiple data processing capabilities as a software-as-a-service (SaaS). As such, Dynamics 365 offers a broad array of functionality intended to process a diverse collection of data, which could vary by nature, purpose or other specific attributes, such as sales data, transactions, financials, HR information, etc. In light of this diversity, Dynamics 365 offers multiple forms, fields, schemas, end points, and logic to process Customer Data, which is also reflected in the multiple ways in which DSR requests could be addressed in each application. When Dynamics 365 applications offer several ways to address specific DSR requests, we will note those in this guide by pointing to the technical descriptions offered by each application.
 
-### Microsoft Dynamics 365
+### Dynamics 365
 #### Finding customer data
 
 The first step in responding to a data subject rights request is to search for and identify the Customer Data that is the subject of the request.
@@ -97,6 +97,8 @@ In Dynamics 365 for Marketing, you have the following additional capabilities:
 
 2.  Utilize the Insight Views on contacts and objects of marketing execution to identify additional data points that may contain customer data.
 
+Dynamics 365 Customer Service Insights provides capabilities for you to respond to requests for copies of personal data, to delete personal data, and to find the personal data that is the subject of Data Subject Discovery Requests (DSRs). For details, see [Overview of GDPR compliance for Dynamics 365 Customer Service Insights](https://docs.microsoft.com/dynamics365/ai/customer-service-insights/gdpr-summary).
+
 <span id="_Toc511225658" class="anchor"></span>***Dynamics 365 Finance and Operations*** provides several ways for you to search for Customer Data. You as a Tenant Admin can perform the following actions to search for Customer Data:
 
 -   Organize your Customer Data in a way that serves the purpose of rapidly discovering personal data, see [how to classify data inventory](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/gdpr/gdpr-guide#detailed-inventory) for this purpose.
@@ -110,6 +112,7 @@ In Dynamics 365 for Marketing, you have the following additional capabilities:
 -   Author a custom form that locates and exports personal data.
 
 -   Author an external portal or website that allows an authenticated customer to see his or her personal data.
+
 
 ***Dynamics for Business Central*** provides several ways for you to search for Customer Data. For details, see [Searching, filtering, and sorting data](https://docs.microsoft.com/dynamics-nav-app/ui-enter-criteria-filters).
 
