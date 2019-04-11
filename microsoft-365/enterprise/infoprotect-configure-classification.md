@@ -3,7 +3,7 @@ title: "Step 2: Configure classification for your environment"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/16/2018
+ms.date: 04/10/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -23,31 +23,64 @@ description: Understand and configure various ways to classify data in your orga
 
 In this step, you work with your legal and compliance teams to define a classification scheme for your organization’s data.
 
-## Microsoft classifications
+## Microsoft 365 classification types
 
-Microsoft 365 includes three types of classification:
+Microsoft 365 includes four types of classification:
 
-- Sensitive information types for Office 365
-- Office 365 retention labels
+- Sensitive information types
+- Retention labels
+- Sensitivity labels
 - Azure Information Protection labels and protection
 
-### Sensitive information types for Office 365
+### Sensitive information types
 
-Sensitive information types for Office 365 define how automated processes such as search recognize specific information types such as health service numbers and credit card numbers. You use sensitive information types to find sensitive data and apply data loss prevention rules and policies to protect this data. For more information, see [Overview of data loss prevention policies](https://docs.microsoft.com/office365/securitycompliance/data-loss-prevention-policies). For example, sensitive information types are especially helpful for meeting compliance and regulation requirements, such as for the General Data Protection Regulation (GDPR).
+Sensitive information types for Microsoft 365 define how automated processes such as search recognize specific information types. These include sensitive employee or customer data such as health service numbers and credit card numbers. You use sensitive information types to find sensitive data and apply data loss prevention (DLP) rules and policies to protect this data. For more information, see [what a DLP policy contains](https://docs.microsoft.com/office365/securitycompliance/data-loss-prevention-policies#what-a-dlp-policy-contains). 
 
-### Office 365 retention labels
+Sensitive information types are especially helpful for meeting compliance and regulation requirements, such as for the General Data Protection Regulation (GDPR).
 
-You can use Office 365 retention labels for personal data and for highly regulated and trade secret files stored in SharePoint Online and OneDrive for Business. For more information, including how to create them, see [Overview of retention labels](https://docs.microsoft.com/office365/securitycompliance/labels).
+### Retention labels
 
-If you decide to use Office 365 retention labels, you should configure at least one for each level of protection. For example, create three labels for:
+Part of defining a data governance strategy is deciding how long specific types of documents or documents with specific contents should be retained in compliance with organization policies and regional regulations. For example, some types of documents should be retained for a set amount of time and then deleted and others must be retained indefinitely.
+
+For documents stored in Microsoft 365, you define and apply retention labels to documents and data stored in Exchange email, SharePoint Online, OneDrive for Business, and Teams chat and channel messages. For more information, including how to create them, see [Overview of retention labels](https://docs.microsoft.com/office365/securitycompliance/labels).
+
+If you use retention labels, you should configure a label for each category of file that needs to have a retention policy applied. Within the retention label, you can specify:
+
+- A set of descriptors for the files (for example, by business department, file category, or regulation).
+
+- The retention settings for the files that have the retention label attached, such as retain times and behaviors after the retain time has been reached.
+
+You can also apply a retention label to files automatically by configuring a SharePoint Online site to apply a default retention label to all new documents in the site. 
+
+For more information, see this [overview of retention labels](https://docs.microsoft.com/office365/securitycompliance/labels).
+
+### Sensitivity labels
+
+Part of protecting and implementing security for specific types of documents or documents with specific contents is marking them with a label so that the additional security can be applied. With sensitivity labels in Microsoft 365, you can:
+
+- Enforce protection settings such as encryption, permissions, or adding a watermark.
+
+- Prevent sensitive content from leaving your organization on devices running Windows, by using endpoint protection in Microsoft Intune. 
+
+- Use Windows Information Protection (WIP) endpoint protection to prevent that content from being copied to a third-party app, such as Twitter or Gmail, or being copied to removable storage, such as a USB drive.
+
+- Use Microsoft Cloud App Security to protect content in third-party apps and services. 
+
+- Classify content without using any protection settings.
+
+If you use sensitivity labels, you should configure a label for each security and information protection level. For example, create three sensitivity labels for:
 
 - Baseline
+
 - Sensitive
+
 - Highly regulated
+
+For more information, see this [overview of sensitivity labels](https://docs.microsoft.com/office365/securitycompliance/sensitivity-labels).
 
 ### Azure Information Protection labels and protection
 
-You can use Azure Information Protection labels to classify, and optionally protect, your organization’s documents and emails. These labels can apply to documents that are stored outside of Office 365. These labels can be applied automatically by administrators who define rules and conditions, manually by users, or a combination where users are given recommendations.
+You can use Azure Information Protection labels to classify, and optionally protect, your organization’s documents and emails. These labels can apply to documents that are stored outside of Microsoft 365. These labels can be applied automatically by administrators who define rules and conditions, manually by users, or a combination where users are given recommendations.
 
 To plan and deploy Azure Information Protection labels and protection, do the following:
 
@@ -55,6 +88,10 @@ To plan and deploy Azure Information Protection labels and protection, do the fo
 2. Follow the [deployment roadmap for classification, labeling, and protection](https://docs.microsoft.com/information-protection/plan-design/deployment-roadmap#deployment-roadmap-for-classification-labeling-and-protection).
 
 For more information, see the [library of Azure Information Protection documentation](https://docs.microsoft.com/information-protection/).
+
+Existing Azure Information Protection labels work seamlessly with sensitivity labels. For example, you can keep your existing Azure Information Protection labels and the labels that are applied to documents and email.
+
+If you have both sensitivity and Azure Information Protection labels, you should [migrate your Azure Information Protection labels to sensitivity labels](https://docs.microsoft.com/office365/securitycompliance/sensitivity-labels#how-sensitivity-labels-work-with-existing-azure-information-protection-labels).
 
 ## Classification for GDPR
 
