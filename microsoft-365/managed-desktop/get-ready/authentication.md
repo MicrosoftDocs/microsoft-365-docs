@@ -1,6 +1,6 @@
 ---
 title: Prepare on-premises resources access for Microsoft Managed Desktop 
-description:  Important steps to make sure an Azure AD can communicate with on-premesis AD to provide authentication
+description:  Important steps to make sure an Azure AD can communicate with on-premises AD to provide authentication
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
@@ -10,15 +10,15 @@ ms.collection: M365-modern-desktop
 
 #  Prepare on-premises resources access for Microsoft Managed Desktop
 
-In Microsoft Managed Desktop, devices are automatically joined to Azure Active Directory. This means that if you are using an on-premises Active Directory, you'll have to check some things to ensure that Azure AD can communicate with your on-premesis Active Directory. 
+In Microsoft Managed Desktop, devices are automatically joined to Azure Active Directory. This means that if you are using an on-premises Active Directory, you'll have to check some things to ensure that devices joined to Azure AD can communicate with your on-premises Active Directory. 
 
 > [!NOTE]  
-> *Hybrid* Azure AD is not supported by Microsoft Managed Desktop.
+> *Hybrid* Azure AD join is not supported by Microsoft Managed Desktop.
 
-Azure Active Directory lets your users take advantage of Single Sign-On (SSO), which means they typically won't have to provide credentials every time they want to do something. If you're completely new to Azure Active Directory, refer to [How to: Plan your Azure AD join implementation](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan)--however, as you reference Azure Active Directory documentation, keep in mind that *hybrid* Azure AD is not supported by Microsoft Managed Desktop.
+Azure Active Directory lets your users take advantage of Single Sign-On (SSO), which means they typically won't have to provide credentials every time they want to do something. If you're completely new to Azure Active Directory, refer to [How to: Plan your Azure AD join implementation](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan)--however, as you reference Azure Active Directory documentation, keep in mind that *hybrid* Azure AD join is not supported by Microsoft Managed Desktop.
 
 
-This topic explains the things you need to check in order to ensure that apps and other resources that involve that depend on local Active Directory connectivity will work smoothly with Microsoft Managed Desktop.
+This topic explains the things you need to check in order to ensure that apps and other resources that depend on local Active Directory connectivity will work smoothly with Microsoft Managed Desktop.
 
 
 > [!IMPORTANT]  
@@ -30,12 +30,12 @@ This topic explains the things you need to check in order to ensure that apps an
 Single Sign-On (SSO) for your devices by using UPN or passwords (the default method) should already work by default. But you can also use Windows Hello for Business, which requires some extra setup steps. For background information about SSO, see [How SSO to on-premises resources works on Azure AD joined devices](https://docs.microsoft.com/azure/active-directory/devices/azuread-join-sso#how-it-works).
 
 
-### Single Sign-On by using UPN or passwords
+### Single Sign-On by using UPN and passwords
 
-No special setup is required for your users to authenticate by UPN or password--you get this by default from Azure. However, to make sure this will work, you should double-check the following:
+No special setup is required for your users to authenticate by UPN and password--you get this by default from Azure. However, to make sure this will work, you should double-check the following:
 
-- Confirm that Azure Active Directory (AAD) Connect is set up to include an on-premises Active Directory server running Windows Server 2008 R2 or later.
-- AAD Connect is running a supported version and is set to sync these three key attributes with Azure AD through [Azure Active Directory (AAD) Connect](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-sync-attributes-synchronized#windows-10): 
+- Confirm that Azure Active Directory (AAD) Connect is set up with an on-premises Active Directory server running Windows Server 2008 R2 or later.
+- AAD Connect is running a supported version and is set to sync these three key attributes with Azure AD: 
     - DNS domain name where the user is present in your on-premises Active Directory
     - NetBIOS domain name where the user is present in your on-premises Active Directory
     - SAM account name of the user
