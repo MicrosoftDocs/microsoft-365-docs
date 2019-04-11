@@ -1,9 +1,9 @@
 ---
-title: "Increased Office 365 security for your Microsoft 365 Enterprise test environment"
+title: "Increased Microsoft 365 security for your Microsoft 365 Enterprise test environment"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/16/2018
+ms.date: 04/10/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
-description: Use this Test Lab Guide to enable additional Office 365 security settings your Microsoft 365 Enterprise test environment.
+description: Use this Test Lab Guide to enable additional Microsoft 365 security settings your Microsoft 365 Enterprise test environment.
 ---
 
-# Increased Office 365 security for your Microsoft 365 Enterprise test environment
+# Increased Microsoft 365 security for your Microsoft 365 Enterprise test environment
 
-With the instructions in this article, you configure additional Office 365 settings to increase security in your Microsoft 365 Enterprise test environment.
+With the instructions in this article, you configure additional Microsoft 365 settings to increase security in your Microsoft 365 Enterprise test environment.
 
 ![Test Lab Guides for the Microsoft cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
@@ -25,17 +25,17 @@ With the instructions in this article, you configure additional Office 365 setti
   
 ## Phase 1: Build out your Microsoft 365 Enterprise test environment
 
-If you just want to configure increased Office 365 security in a lightweight way with the minimum requirements, follow the instructions in [Lightweight base configuration](lightweight-base-configuration-microsoft-365-enterprise.md).
+If you just want to configure increased Microsoft 365 security in a lightweight way with the minimum requirements, follow the instructions in [Lightweight base configuration](lightweight-base-configuration-microsoft-365-enterprise.md).
   
-If you want to configure increased Office 365 security in a simulated enterprise, follow the instructions in [Pass-through authentication](pass-through-auth-m365-ent-test-environment.md).
+If you want to configure increased Microsoft 365 security in a simulated enterprise, follow the instructions in [Pass-through authentication](pass-through-auth-m365-ent-test-environment.md).
   
 > [!NOTE]
-> Testing increased Office 365 security does not require the simulated enterprise test environment, which includes a simulated intranet connected to the Internet and directory synchronization for a Windows Server AD forest. It is provided here as an option so that you can test automated licensing and group membership and experiment with it in an environment that represents a typical organization. 
+> Testing increased Microsoft 365 security does not require the simulated enterprise test environment, which includes a simulated intranet connected to the Internet and directory synchronization for an Active Directory Domain Services (AD DS) forest. It is provided here as an option so that you can test automated licensing and group membership and experiment with it in an environment that represents a typical organization. 
 
 
-## Phase 2: Configure increased Office 365 security
+## Phase 2: Configure increased Microsoft 365 security
 
-In this phase, you enable increased Office 365 security for your Microsoft 365 Enterprise test environment. For additional details and settings, see [Configure your Office 365 tenant for increased security](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security).
+In this phase, you enable increased Microsoft 365 security for your Microsoft 365 Enterprise test environment. For additional details and settings, see [Configure your Office 365 tenant for increased security](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security).
 
 ### Configure SharePoint Online to block apps that don’t support modern authentication
 
@@ -55,7 +55,15 @@ Apps that do not support modern authentication cannot have [identity and device 
 
 ### Enable Advanced Threat Protection for SharePoint, OneDrive for Business, and Microsoft Teams
 
-Office 365 Advanced Threat Protection (ATP) is a feature of Exchange Online Protection (EOP) that helps keep malware out of your email. With ATP, you create policies in the Exchange Admin center (EAC) or the Microsoft 365 security center that help ensure your users access only links or attachments in emails that are identified as not malicious. For more information, see [Advanced threat protection for safe attachments and safe links](https://docs.microsoft.com/office365/securitycompliance/office-365-atp).
+Office 365 Advanced Threat Protection (ATP) for SharePoint, OneDrive, and Microsoft Teams protects your organization from inadvertently sharing malicious files.
+
+1. Go to the [Office 365 Security & Compliance Center](https://protection.office.com) and sign in with your global administrator account.
+
+2. In the left navigation pane, under **Threat management**, choose **Policy > Safe Attachments**. 
+
+3. Select **Turn on ATP for SharePoint, OneDrive, and Microsoft Teams**.
+
+4. Click **Save**.
 
 
 ### Enable anti-malware
@@ -86,14 +94,17 @@ Office 365 Threat management can help you control and manage mobile device acces
 
 Office 365 Cloud App Security, previously known as Office 365 Advanced Security Management, allows you to create policies that monitor for and inform you of suspicious activities in your Office 365 subscription, so that you can investigate and take possible remediation action. For more information, see [Overview of Office 365 Cloud App Security](https://docs.microsoft.com/office365/securitycompliance/office-365-cas-overview).
 
-### Secure Score
+<!--
+### Microsoft 365 Secure Score
 
-1. Create a new tab in your browser and go to **securescore.office.com**.
+1. Create a new tab in your browser and go to the [Microsoft 365 security center](https://security.microsoft.com/), and then click **Secure score**.
 2. On the **Dashboard tab**, note your current Secure Score and the list of actions in the queue to increase your score.
+!-->
 
-See the [Configure increased security for Office 365](increased-o365-security-microsoft-365-enterprise-dev-test-environment.md) step in the **Information protection** phase for information and links to configure these settings in production.
 
-## Next step
+## Next steps
+
+See the [Configure increased security for Microsoft 365](infoprotect-configure-increased-security-office-365.md) step in the **Information protection** phase for information and links to configure these settings in production.
 
 Explore additional [information protection](m365-enterprise-test-lab-guides.md#information-protection) features and capabilities in your test environment.
 
