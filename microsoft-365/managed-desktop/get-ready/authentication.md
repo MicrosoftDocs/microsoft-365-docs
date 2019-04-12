@@ -15,7 +15,7 @@ In Microsoft Managed Desktop, devices are automatically joined to Azure Active D
 > [!NOTE]  
 > *Hybrid* Azure AD join is not supported by Microsoft Managed Desktop.
 
-Azure Active Directory lets your users take advantage of Single Sign-On (SSO), which means they typically won't have to provide credentials every time use resources.
+Azure Active Directory lets your users take advantage of Single Sign-On (SSO), which means they typically won't have to provide credentials every time they use resources.
 
 For information about joining Azure Active Directory, refer to [How to: Plan your Azure AD join implementation](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan). For background information about Single Sign-On (SSO) on devices joined to Azure AD, see [How SSO to on-premises resources works on Azure AD joined devices](https://docs.microsoft.com/azure/active-directory/devices/azuread-join-sso#how-it-works).
 
