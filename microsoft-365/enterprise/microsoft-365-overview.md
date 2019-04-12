@@ -73,7 +73,7 @@ For more deployment information, see how:
 
 - [Customers](deploy-microsoft-365-enterprise.md#how-customers-use-microsoft-365-enterprise)  use Microsoft 365 Enterprise.
 - [Microsoft](deploy-microsoft-365-enterprise.md#how-microsoft-uses-microsoft-365-enterprise) uses Microsoft 365 Enterprise.
-- [The Contoso Corporation](contoso-overview.md) has deployed Microsoft 365 Enterprise.
+- [The Contoso Corporation](contoso-overview.md), a fictional but representative multinational organization, has deployed Microsoft 365 Enterprise.
 
 ## Additional Microsoft 365 solutions
 
