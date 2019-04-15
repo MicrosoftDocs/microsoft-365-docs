@@ -26,4 +26,4 @@
 ## Remove company data
 ## Reset devices to factory settings
 # Security incident management
-## [Responding to a compromised email account in Office 365](/Office365/SecurityCompliance/responding-to-a-compromised-email-account?toc=/microsoft-365/democracy/toc.json&bc=/microsoft-365/breadcrumb/toc.json)
+## [Responding to a compromised email account in Office 365](/Office365/SecurityCompliance/responding-to-a-compromised-email-account)
