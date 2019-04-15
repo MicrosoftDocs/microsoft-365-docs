@@ -25,22 +25,22 @@ This topic explains the things you need to check in order to ensure that apps an
 
 ## Single Sign-On for on-premises resources
 
-Single Sign-On (SSO) by using UPN and passwords is enabled by default on Microsoft Managed Desktop Devices. But your users can also use Windows Hello for Business, which requires some extra setup steps. 
+Single Sign-On (SSO) by using UPN and password is enabled by default on Microsoft Managed Desktop Devices. But your users can also use Windows Hello for Business, which requires some extra setup steps. 
 
-### Single Sign-On by using UPN and passwords
+### Single Sign-On by using UPN and password
 
 In most organizations, your users will be able to use SSO to authenticate by UPN and password on Microsoft Managed Desktop Devices. However, to make sure this will work, you should double-check the following:
 
 - Confirm that Azure Active Directory (AAD) Connect is set up and uses an on-premises Active Directory server running Windows Server 2008 R2 or later.
 - Confirm that AAD Connect is running a supported version and is set to sync these three attributes with Azure AD: 
     - DNS domain name of the on-premises Active Directory (where the end-users are located)
-    - NetBIOS of yor on-premises Active Directory (where th end-users are located)
+    - NetBIOS of yor on-premises Active Directory (where the end-users are located)
     - SAM account name of the user
 
 
 ### Single Sign-On by using Windows Hello for Business
 
-Microsoft Managed Desktop devices also offer your users a fast, passwordless experience by employing Windows Hello for Business. To ensure Windows Hello for Business will work without your users having to provide UPN and passwords, visit [Configure Azure AD joined devices for On-premises Single-Sign On using Windows Hello for Business](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-hybrid-aadj-sso-base) to check the requirements, and then follow the steps provided there.
+Microsoft Managed Desktop devices also offer your users a fast, passwordless experience by employing Windows Hello for Business. To ensure Windows Hello for Business will work without your users having to provide respective UPN and password, visit [Configure Azure AD joined devices for On-premises Single-Sign On using Windows Hello for Business](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-hybrid-aadj-sso-base) to check the requirements, and then follow the steps provided there.
 
 
 ## Apps and resources that use authentication
