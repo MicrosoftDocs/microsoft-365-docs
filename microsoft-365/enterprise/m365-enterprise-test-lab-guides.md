@@ -3,7 +3,7 @@ title: "Microsoft 365 Enterprise Test Lab Guides"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/20/2018
+ms.date: 04/09/2019
 ms.audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
@@ -109,6 +109,4 @@ To demonstrate information protection-related features and capabilities, see:
 
 ## See also
 
-[Experience the Microsoft Cloud with Cloud Adoption Test Lab Guides](https://mva.microsoft.com/training-courses/experience-the-microsoft-cloud-with-cloud-adoption-test-lab-guides-17960?l=LXNRdhSLE_1000115881)
-    
-[One Microsoft Cloud Test Lab Guide stack](http://aka.ms/catlgstack)
+[Test Office 365 with cloud adoption TLGs](https://docs.microsoft.com/office365/enterprise/cloud-adoption-test-lab-guides-tlgs)

@@ -29,7 +29,7 @@ Microsoft Managed Desktop support:
 Supported products:
 
 - Windows 10 with Windows Defender Advanced Threat Protection (WDATP) 
-- Subset of the Microsoft 365 E5 suite: Outlook, Word, PowerPoint, Excel, Skype for Business client, Microsoft Teams 
+- Subset of the Microsoft 365 E3 suite: Outlook, Word, PowerPoint, Excel, Skype for Business client, Microsoft Teams 
 - Microsoft Store for Business 
 - OneDrive for Business client 
 
