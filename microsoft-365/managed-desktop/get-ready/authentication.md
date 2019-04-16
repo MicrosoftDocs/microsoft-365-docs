@@ -10,7 +10,7 @@ ms.collection: M365-modern-desktop
 
 #  Prepare on-premises resources access for Microsoft Managed Desktop
 
-In Microsoft Managed Desktop, devices are automatically joined to Azure Active Directory. This means that if you are using an on-premises Active Directory, you'll have to check some things to ensure that devices joined to Azure AD can communicate with your on-premises Active Directory. 
+In Microsoft Managed Desktop, devices are automatically joined to Azure Active Directory (Azure AD). This means that if you are using an on-premises Active Directory, you'll have to check some things to ensure that devices joined to Azure AD can communicate with your on-premises Active Directory. 
 
 > [!NOTE]  
 > *Hybrid* Azure AD join is not supported by Microsoft Managed Desktop.
@@ -31,8 +31,8 @@ Single Sign-On (SSO) by using UPN and password is enabled by default on Microsof
 
 In most organizations, your users will be able to use SSO to authenticate by UPN and password on Microsoft Managed Desktop Devices. However, to make sure this will work, you should double-check the following:
 
-- Confirm that Azure Active Directory (AAD) Connect is set up and uses an on-premises Active Directory server running Windows Server 2008 R2 or later.
-- Confirm that AAD Connect is running a supported version and is set to sync these three attributes with Azure AD: 
+- Confirm that Azure AD Connect is set up and uses an on-premises Active Directory server running Windows Server 2008 R2 or later.
+- Confirm that Azure AD Connect is running a supported version and is set to sync these three attributes with Azure AD: 
     - DNS domain name of the on-premises Active Directory (where the end-users are located)
     - NetBIOS of your on-premises Active Directory (where the end-users are located)
     - SAM account name of the user
