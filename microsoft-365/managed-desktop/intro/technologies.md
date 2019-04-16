@@ -16,9 +16,7 @@ This topic lists the technologies and apps used in Microsoft Managed Desktop.
 <!-- Microsoft 365 E5; Device as a Service -->
 <!-- in O365 table, standard suite, removed this sentence "Please see the Installation of Project/Visio 64bit Click to Run Addendum for important deployment instructions. -->
 
-Microsoft 365 E3 License with Identity & Threat Protection (or equivalent licenses) is required for Microsoft Managed Desktop service. The following are all components that are included in this license and how Microsoft Managed Desktop uses each component with Microsoft Managed Desktop devices. Specific roles and responsibilities for each area are detailed throughout the Microsoft Managed Desktop topic. 
-
-Microsoft 365 E3 is comprised of 3 components: Office 365 E3, Windows 10 Enterprise E3, and Enterprise Mobility + Security E3.  
+Microsoft 365 E3 with Enterprise Mobility + Security E5 (or equivalent licenses) is required for the Microsoft Managed Desktop service. The following are all components that are included in these licenses and how Microsoft Managed Desktop uses each component with Microsoft Managed Desktop devices. Specific roles and responsibilities for each area are detailed throughout the Microsoft Managed Desktop topic. 
 
 ## Office 365 E3
  |
@@ -41,7 +39,7 @@ User Experience Virtualization (UE-V) |	This is not used with Microsoft Managed 
 Managed User Experience	 | This is not used with Microsoft Managed Desktop managed devices. MDM is used as a solution for device management.
 Windows Defender Advanced Threat Protection |	This is used by Microsoft Managed Desktop to manage device security policies. 
 
-## Enterprise Mobility + Security E3
+## Enterprise Mobility + Security E5
 
  |
  --- | ---
