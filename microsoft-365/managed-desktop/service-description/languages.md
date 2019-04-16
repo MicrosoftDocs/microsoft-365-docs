@@ -1,6 +1,6 @@
 ---
-title: Languages and regions supported by Microsoft Managed Desktop
-description:  Languages and regions supported by Microsoft Managed Desktop
+title: Regions and languages supported by Microsoft Managed Desktop
+description:  Regions and languages supported by Microsoft Managed Desktop
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
@@ -8,7 +8,7 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 ---
 
-#  Languages and regions supported by Microsoft Managed Desktop
+#  Regions and languages supported by Microsoft Managed Desktop
 
 In addition to the supported devices for Microsoft Managed Desktop, the following regions and languages are supported by Microsoft Managed Desktop currently:
 
