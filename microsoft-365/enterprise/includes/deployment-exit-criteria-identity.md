@@ -173,7 +173,7 @@ If needed, [Step 5](../identity-password-reset.md#identity-custom-sign-in) can h
 
 #### How to test
 
-Sign in to the Office portal with your user account name and multi-factor authentication. You should see your custom branding elements on the sign-in page.
+Sign in to the Office 365 portal with your user account name and multi-factor authentication. You should see your custom branding elements on the sign-in page.
 
 <a name="crit-identity-self-service-groups"></a>
 ### Optional: Self-service group management is enabled for specific Azure AD security and Office 365 groups
