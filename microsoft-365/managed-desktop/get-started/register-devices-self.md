@@ -9,19 +9,18 @@ ms.localizationpriority: medium
 
 # Register devices in Microsoft Managed Desktop
 
->[!NOTE]
->This topic describes the steps for you to register devices on your own. The steps that Partners should follow are documented in [Register devices in Microsoft Managed Desktop for Partners](register-devices-partner.md).
+[//]: # (This draft version topic focuses on the self-service option--how different is the partner thing?)
+>Note: This article describes the steps for you to register devices on your own. The process for Partners is documented [Somewhere else LINK].
 
 Managed Desktop can work with brand-new devices or you re-use devices you might already have (which will re-image them). You can register devices by using the Managed Desktop Admin Center or save time and gain flexibility by using an API.
 
 ## Prepare to register devices
 
-If you haven't already obtained the devices you want to use, see [Order devices](get-started/devices.md) for options to get some. In either case, you should check [Microsoft Managed Desktop devices](../service-description/device-list.md) to ensure that they are supported.
+If you haven't already obtained the devices you want to use, see [Order devices](get-started/devices.md) for options to get some. In either case, you should check {device list LINK} to ensure that they meet the appropriate system requirements.
 
 Whether you're working with completely new devices or re-using existing ones, to register them with Microsoft Managed Desktop, you'll need to prepare a **comma-delimited (CSV) file**. This file should include the following information for each device:
 
->[!NOTE]
->This format is for self-service only. Partners use different format documented in [Register devices in Microsoft Managed Desktop for Partners]
+>Note: This format is for self-service only. Partners have a different format documented [Somewhere else LINK].
 
 These values are used for display purposes, and don't need to match properties from the device exactly.
 - Device manufacturer (example: Microsoft) 
@@ -64,9 +63,13 @@ Your file needs to include the **exact same column headings** as the sample one 
   
   
   ```
+<<<<<<< HEAD
 
 >[!NOTE]
 >If you don't change any of the sample data, the registration fail.   
+=======
+>Failure to change any the sample data will result in your registration being rejected.   
+>>>>>>> ac435e1063912e6ceeb5b367be5873975670b969
 
 
 ## Register devices by by using the Admin Center
@@ -85,7 +88,13 @@ Follow these steps:
 
 1. In **File upload**, provide a path to the CSV file you created previously.
 2. Optionally, you can add an **Order ID** or **Purchase ID** for your own tracking purposes. There are no format requirements for these values.
+<<<<<<< HEAD
 3. Select **Register devices**. The system will add the devices to your list of devices on the **Devices blade**, marked as **Registration Pending**. Registration typically takes less than 10 minutes, and when successful the device will show as **Setup needed** meaning it's ready and waiting for an end-user to start using.
+=======
+3. Select **Register devices**.
+4. The system will add the devices to your list of devices on the **Devices blade**, marked as **Registration Pending**.
+5. Registration typically takes less than 10 minutes, and when successful the device will show as **Setup needed** meaning it's ready and waiting for an end-user to start using.
+>>>>>>> ac435e1063912e6ceeb5b367be5873975670b969
 
 
 You can monitor the progress of device registration on the main **Microsoft Managed Desktop - Devices** page. Possible states reported there include:
@@ -102,7 +111,15 @@ You can monitor the progress of device registration on the main **Microsoft Mana
 
 ## Register devices by using an API
 
+<<<<<<< HEAD
 A REST API is available to allow you greate flexibility and repeatability with frequent separate device registrations. Currently, to use the API, ask for help from your Microsoft contact to join a preview of this capability.
+=======
+{what it's good for - more for repeatability/flexibility rather than # of devices} - This is a great way of phrasing it. It helps if you have to complete many separate registrations, but if you just do one big batch of 10,000, the UI is just as good. It's really meant for automation and Partners than for Customers. 
+
+{what language or framework or whatever is it?} - It's a REST API, and we have a C# sample app to help them get started. 
+
+{where to obtain} - We decided to self-publish as an Alpha release. This should read something like "ask for help from your microsoft contract to get added to the preview.". 
+>>>>>>> ac435e1063912e6ceeb5b367be5873975670b969
 
 
 
