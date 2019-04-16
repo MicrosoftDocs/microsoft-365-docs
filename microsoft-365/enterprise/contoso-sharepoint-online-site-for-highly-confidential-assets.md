@@ -3,7 +3,7 @@ title: "SharePoint Online site for highly confidential digital assets of the Con
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/01/2018
+ms.date: 04/15/2019
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -38,8 +38,8 @@ Contoso IT admins performed a review of the set of security groups for their res
 They also and created these new security groups:
 
 - **Research-Admins**  The set of SharePoint admins that have full control over the site, including the ability to modify permissions.
-- **Research Members**  The set of security groups for the research teams around the world.
-- **Research-Viewers**  The set of management users, such as executives in the research organization, that can view the assets on the site.
+- **Research-Members**  The set of security groups for the research teams around the world.
+- **Research-Viewers**  The set of management users, such as executives in the research organization, that can only view the assets on the site.
 
 ## Step 2: Created an isolated SharePoint Online team site 
 
@@ -74,8 +74,8 @@ For the configuration details, see [Protect SharePoint Online files with Office 
 Contoso admins created a new Azure Information Protection sub-label named **Research** of the default **Highly Confidential** label in a scoped policy that:
 
 - Requires encryption.
-- Allows full access by members of the **Research Members** security group.
-- Allows read access by members of the **Research Viewers** security group.
+- Allows full access by members of the **Research-Members** security group.
+- Allows read access by members of the **Research-Viewers** security group.
 
 Next, they deployed the Azure Information Protection client to the devices of research team members.
 
@@ -84,6 +84,12 @@ For the configuration details, see [Protect SharePoint Online files with Azure I
 Here is the resulting configuration of the **Research** site for highly confidential assets.
 
 ![](./media/contoso-sharepoint-online-site-for-highly-confidential-assets/final-config.png)
+
+Files in folders of the **Research** site are protected by:
+
+- The **Research** Azure Information Protection sublabel, which applies encryption and permssions to each file that travel with the file when it is moved or copied from the **Research** site.
+- The **Research** DLP policy, which uses the **Highly Sensitive** retention label and settings that prevent the file from leaving the site.
+- The set of site permissions, which only allow access to members of the **Research-Members** and **Research-Viewers** security groups and administration by members of the **Research-Admins** security group.
 
 ## Step 5: Migrated the on-premises SharePoint research data
 
@@ -101,7 +107,7 @@ Contoso security staff trained the research teams in a mandatory course that ste
 
 The end result is a secure environment in which the researchers can collaborate across the organization in a secure environment. 
 
-If a research document with the **Research** sub-label is leaked from the **Research** site, it is encrypted and accessible only to members of the **Research Members** and **Research Viewers** security groups with valid credentials.
+If a research document with the **Research** sub-label is leaked from the **Research** site, it is encrypted and accessible only to members of the **Research-Members** and **Research-Viewers** security groups with valid credentials.
 
 ## Next step
 
