@@ -34,7 +34,7 @@ In most organizations, your users will be able to use SSO to authenticate by UPN
 - Confirm that Azure Active Directory (AAD) Connect is set up and uses an on-premises Active Directory server running Windows Server 2008 R2 or later.
 - Confirm that AAD Connect is running a supported version and is set to sync these three attributes with Azure AD: 
     - DNS domain name of the on-premises Active Directory (where the end-users are located)
-    - NetBIOS of yor on-premises Active Directory (where the end-users are located)
+    - NetBIOS of your on-premises Active Directory (where the end-users are located)
     - SAM account name of the user
 
 
