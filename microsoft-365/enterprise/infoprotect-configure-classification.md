@@ -93,7 +93,7 @@ Existing Azure Information Protection labels work seamlessly with sensitivity la
 
 If you have both sensitivity and Azure Information Protection labels, you should [migrate your Azure Information Protection labels to sensitivity labels](https://docs.microsoft.com/office365/securitycompliance/sensitivity-labels#how-sensitivity-labels-work-with-existing-azure-information-protection-labels).
 
-## Classification for GDPR
+## Example: Classification for GDPR
 
 For an example classification scheme that includes personal data for GDPR, see [Architect a classification schema for personal data](https://docs.microsoft.com/office365/enterprise/architect-a-classification-schema-for-personal-data).
 
