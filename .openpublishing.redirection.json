@@ -128,6 +128,51 @@
         "source_path": "microsoft-365/managed-desktop/service-description/itaas.md",
         "redirect_url": "https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/",
         "redirect_document_id": true
+      },
+      {
+        "source_path": "microsoft-365/enterprise/identity-privileged-identity-management.md",
+        "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/identity-designate-protect-admin-accounts",
+        "redirect_document_id": true
+      },
+      {
+        "source_path": "microsoft-365/enterprise/identity-azure-ad-connect-health.md",
+        "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/identity-azure-ad-connect",
+        "redirect_document_id": true
+      },
+      {
+        "source_path": "microsoft-365/enterprise/identity-azure-ad-identity-protection.md",
+        "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/identity-multi-factor-authentication",
+        "redirect_document_id": true
+      },
+      {
+        "source_path": "microsoft-365/enterprise/identity-azure-ad-access-usage-reporting.md",
+        "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/identity-multi-factor-authentication",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "microsoft-365/enterprise/identity-password-writeback.md",
+        "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/identity-password-reset",
+        "redirect_document_id": true
+      },
+      {
+        "source_path": "microsoft-365/enterprise/identity-single-sign-on.md",
+        "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/identity-password-reset",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "microsoft-365/enterprise/identity-customize-office-365-sign-in.md",
+        "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/identity-password-reset",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "microsoft-365/enterprise/identity-automatic-group-membership.md",
+        "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/identity-self-service-group-management",
+        "redirect_document_id": true
+      },
+      {
+        "source_path": "microsoft-365/enterprise/identity-group-based-licensing.md",
+        "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/identity-self-service-group-management",
+        "redirect_document_id": false
       }
-  ]
+    ]
 }
