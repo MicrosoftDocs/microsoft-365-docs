@@ -37,8 +37,8 @@ Your file needs to include the **exact same column headings** as the sample one 
 >[!IMPORTANT]
 >These values must match the manufacturer values from SMBIOS exactly. You must also include the trailing comma after *Serial Number* and its value.
 
-- Device manufacturer (example: Microsoft) 
-- Device model (example: Surface Laptop)
+- Device manufacturer (example: SpiralOrbit) 
+- Device model (example: ContosoABC)
 - Device serial number
 
 ## Register devices by using the Admin Center
@@ -65,7 +65,7 @@ You can monitor the progress of device registration on the main **Microsoft Mana
 | Registration failed | Registration could not be completed. Refer to [Troubleshooting](register-devices-self.md#troubleshooting) for more information. |
 | Ready for user | Registration succeeded and the device is now ready to be delivered to the end user. Microsoft Managed Desktop will guide them through first time set-up, so there’s no need for you to do any further preparations. |
 | Active | The device has been delivered to the end user and they have registered with your tenant. This also indicates that they are regularly using the device. |
-| Inactive | The device has been delivered to the end user and they have registered with your tenant. However, they have not used the device recently.  | {WHAT'S "RECENTLY"? AS ADMIN CAN i CHANGE WHAT "RECENTLY" MEANS?}
+| Inactive | The device has been delivered to the end user and they have registered with your tenant. However, they have not used the device recently (in the last 7 days).  |
 
 ## Register devices by using an API
 

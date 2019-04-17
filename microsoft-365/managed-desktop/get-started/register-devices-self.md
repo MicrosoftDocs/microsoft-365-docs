@@ -24,8 +24,8 @@ Whether you're working with completely new devices or re-using existing ones, to
 >This format is for self-service registration only. The format Partners should use is documented in [Register devices in Microsoft Managed Desktop for Partners](register-devices-partner.md).
 
 These values are used for display purposes, and don't need to match properties from the device exactly.
-- Device manufacturer (example: Microsoft) 
-- Device model (example: Surface Laptop)
+- Device manufacturer (example: SpiralOrbit) 
+- Device model (example: ContosoABC)
 - Device serial number
 
 The hardware hash must be an exact match.
@@ -66,7 +66,7 @@ Your file needs to include the **exact same column headings** as the sample one 
   ```
 
 >[!NOTE]
->If you forget to change any of the sample data, your registration will be rejected.   
+>If you forget to change any of the sample data, registration will fail.   
 
 
 ## Register devices by using the Admin Center
