@@ -17,7 +17,8 @@ ms.collection:
 
 # Microsoft 365 NIST 800-53 action plan — Top priorities for your first 30 days, 90 days, and beyond
 
-Microsoft 365 allows you to operate your enterprise with a cloud control framework, which aligns controls with multiple regulatory standards. Microsoft 365 includes Office 365, Windows 10, and Enterprise Mobility + Security. Microsoft’s internal control system is based on the National Institute of Standards and Technology (NIST) special publication 800-53, and Office 365 has been accredited to latest NIST 800-53 standard. <!---As the framework was designed to be voluntary, the NIST framework has not formalized an accreditation process. However, Microsoft has undergone independent, third-party Federal Risk and Authorization Management Program (FedRAMP) Moderate and High Baseline audit certification using the test criteria defined in NIST 800-53A (Rev. 4). --->
+Microsoft 365 allows you to operate your enterprise with a cloud control framework, which aligns controls with multiple regulatory standards. Microsoft 365 includes Office 365, Windows 10, and Enterprise Mobility + Security. Microsoft’s internal control system is based on the National Institute of Standards and Technology (NIST) special publication 800-53, and Office 365 has been accredited to latest NIST 800-53 standard. 
+
 
 Microsoft is recognized as an industry leader in cloud security. Using years of experience building enterprise software and running online services, our team is constantly learning and continuously updating our services and applications to deliver a secure cloud productivity service that meets rigorous industry standards for compliance. Microsoft’s government cloud services, including Office 365 U.S. Government, meet the demanding requirements of the US Federal Risk and Authorization Management Program (FedRAMP), enabling U.S. federal agencies to benefit from the cost savings and rigorous security of the Microsoft Cloud.
 
