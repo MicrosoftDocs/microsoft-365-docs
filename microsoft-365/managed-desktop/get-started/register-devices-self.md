@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 # Register devices in Microsoft Managed Desktop
 
 >[!NOTE]
->This topic describes the steps for you to register devices on your own. The process for Partners is documented in [Register devices in Microsoft Managed Desktop for Partners](register-devices-partner.md).
+>This topic describes the steps for you to register devices on your own. The process for Partners is documented in [Register devices in Microsoft Managed Desktop for Partners](get-started/register-devices-partner.md).
 
 Microsoft Managed Desktop can work with brand-new devices or you can re-use devices you might already have (which will require that you re-image them). You can register devices by using the Managed Desktop Admin Center or gain flexibility by using an API.
 
@@ -21,7 +21,7 @@ If you haven't already obtained the devices you want to use, check [Microsoft Ma
 Whether you're working with completely new devices or re-using existing ones, to register them with Microsoft Managed Desktop, you'll need to prepare a **comma-delimited (CSV) file**. This file should include the following information for each device:
 
 >[!NOTE]
->This format is for self-service registration only. The format Partners should use is documented in [Register devices in Microsoft Managed Desktop for Partners](register-devices-partner.md).
+>This format is for self-service registration only. The format Partners should use is documented in [Register devices in Microsoft Managed Desktop for Partners](get-started/register-devices-partner.md).
 
 These values are used for display purposes, and don't need to match properties from the device exactly.
 - Device manufacturer (example: Microsoft) 
@@ -54,7 +54,7 @@ Alternately, you can follow these steps on a brand-new device (before going thro
 >Do not power on the target device again until you've completed registration for it. 
 
 >[!NOTE]
->For your convenience, you can download a [template](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/live/microsoft-365/downloads/device-registration-sample-self.xlsx) for this CSV file.
+>For your convenience, you can download a [template](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/live/Microsoft-365-docs/downloads/device-registration-sample-self.xlsx) for this CSV file.
 
 Your file needs to include the **exact same column headings** as the sample one (Manufacturer, Model, etc.), but your own data for the other rows. If you use the template, open it in a text editing tool such as Notepad, and consider leaving all the data in row 1 alone, only entering data in rows 2 and below. 
     
@@ -71,7 +71,7 @@ Your file needs to include the **exact same column headings** as the sample one 
 
 ## Register devices by using the Admin Center
 
-From the Microsoft Managed Desktop [Admin Portal](aka.ms/mmdportal), select **Devices** in the left navigation pane. Select **+ Register devices**; the fly-in opens:
+From the Microsoft Managed Desktop [Admin Portal](https://aka.ms/mmdportal), select **Devices** in the left navigation pane. Select **+ Register devices**; the fly-in opens:
 
 [![Fly-in after selecting Register devices](images/register-devices-flyin-sterile.png)](images/register-devices-flyin-sterile.png)
 
