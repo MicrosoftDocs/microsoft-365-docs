@@ -54,7 +54,7 @@ Alternately, you can follow these steps on a brand-new device (before going thro
 >Do not power on the target device again until you've completed registration for it. 
 
 >[!NOTE]
->For your convenience, you can download a [template](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/live/Microsoft-365-docs/downloads/device-registration-sample-self.xlsx) for this CSV file.
+>For your convenience, you can download a [template](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/live/Microsoft-365-docs/managed-desktop/get-started/downloads/downloads/device-registration-sample-self.xlsx) for this CSV file.
 
 Your file needs to include the **exact same column headings** as the sample one (Manufacturer, Model, etc.), but your own data for the other rows. If you use the template, open it in a text editing tool such as Notepad, and consider leaving all the data in row 1 alone, only entering data in rows 2 and below. 
     
@@ -96,7 +96,7 @@ You can monitor the progress of device registration on the main **Microsoft Mana
 | Registration failed | Registration could not be completed. Refer to [Troubleshooting](register-devices-self.md#troubleshooting) for more information. |
 | Ready for user | Registration succeeded and the device is now ready to be delivered to the end user. Microsoft Managed Desktop will guide them through first time set-up, so there’s no need for you to do any further preparations. |
 | Active | The device has been delivered to the end user and they have registered with your tenant. This also indicates that they are regularly using the device. |
-| Inactive | The device has been delivered to the end user and they have registered with your tenant. However, they have not used the device recently.  | {WHAT'S "RECENTLY"? AS ADMIN CAN i CHANGE WHAT "RECENTLY" MEANS?}
+| Inactive | The device has been delivered to the end user and they have registered with your tenant. However, they have not used the device recently (in the last 7 days).  | 
 
 
 ## Register devices by using an API

@@ -19,13 +19,13 @@ Before completing registration for a customer, you must first establish a relati
 To complete registration for your customer, first create a CSV file.
 
 >[!NOTE]
->For your convenience, you can download a template for this *Partner version* of the CSV file from {deeplink into product}.
+>For your convenience, you can download a [template](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/live/Microsoft-365-docs/managed-desktop/get-started/downloads/downloads/device-registration-sample-partner.xlsx) for this *Partner version* of the CSV file.
 
 Your file needs to include the **exact same column headings** as the sample one (Manufacturer, Model, etc.), but your own data for the other rows. If you use the template, open it in a text editing tool such as Notepad, and consider leaving all the data in row 1 alone, only entering data in rows 2 and below. 
     
   ```
- Manufacturer,Model,Serial Number,Hardware Hash
-  SpiralOrbit,ContosoABC,000000000000,dGhpc2RldmljZWlzYW5tbWRkZXZpY2U
+ Manufacturer,Model,Serial Number,
+  SpiralOrbit,ContosoABC,000000000000,
   
   
   ```
@@ -35,7 +35,7 @@ Your file needs to include the **exact same column headings** as the sample one 
 >This format is only for the Partner process. The process for self-registration is documented in [Register devices in Microsoft Managed Desktop yourself](register-devices-self.md).
 
 >[!IMPORTANT]
->These values must match the manufacturer values from SMBIOS exactly.
+>These values must match the manufacturer values from SMBIOS exactly. You must also include the trailing comma after *Serial Number* and its value.
 
 - Device manufacturer (example: Microsoft) 
 - Device model (example: Surface Laptop)
