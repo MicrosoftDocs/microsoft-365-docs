@@ -10,18 +10,18 @@ ms.localizationpriority: medium
 # Register devices in Microsoft Managed Desktop
 
 >[!NOTE]
->This topic describes the steps for you to register devices on your own. The process for Partners is documented in [Register devices in Microsoft Managed Desktop for Partners](get-started/register-devices-partner.md).
+>This topic describes the steps for you to register devices on your own. The process for Partners is documented in [Register devices in Microsoft Managed Desktop for Partners](register-devices-partner.md).
 
 Microsoft Managed Desktop can work with brand-new devices or you can re-use devices you might already have (which will require that you re-image them). You can register devices by using the Managed Desktop Admin Center or gain flexibility by using an API.
 
 ## Prepare to register devices
 
-If you haven't already obtained the devices you want to use, check [Microsoft Managed Desktop devices](device-list.md) and work with a devide partner to procure supported devices.
+If you haven't already obtained the devices you want to use, check [Microsoft Managed Desktop devices](../service-description/device-list.md) and work with a device partner to procure supported devices.
 
 Whether you're working with completely new devices or re-using existing ones, to register them with Microsoft Managed Desktop, you'll need to prepare a **comma-delimited (CSV) file**. This file should include the following information for each device:
 
 >[!NOTE]
->This format is for self-service registration only. The format Partners should use is documented in [Register devices in Microsoft Managed Desktop for Partners](get-started/register-devices-partner.md).
+>This format is for self-service registration only. The format Partners should use is documented in [Register devices in Microsoft Managed Desktop for Partners](register-devices-partner.md).
 
 These values are used for display purposes, and don't need to match properties from the device exactly.
 - Device manufacturer (example: Microsoft) 
