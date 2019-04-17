@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 >[!NOTE]
 >This topic describes the steps for you to register devices on your own. The process for Partners is documented in [Register devices in Microsoft Managed Desktop for Partners](register-devices-partner.md).
 
-Microsoft Managed Desktop can work with brand-new devices or you can re-use devices you might already have (which will require that you re-image them). You can register devices by using the Managed Desktop Admin Center or gain flexibility by using an API.
+Microsoft Managed Desktop can work with brand-new devices or you can re-use devices you might already have (which will require that you re-image them). You can register devices by using Microsoft Managed Desktop on the Azure Portal or gain flexibility by using an API.
 
 ## Prepare to register devices
 
@@ -69,9 +69,9 @@ Your file needs to include the **exact same column headings** as the sample one 
 >If you forget to change any of the sample data, registration will fail.   
 
 
-## Register devices by using the Admin Center
+## Register devices by using the Azure Portal
 
-From the Microsoft Managed Desktop [Admin Portal](https://aka.ms/mmdportal), select **Devices** in the left navigation pane. Select **+ Register devices**; the fly-in opens:
+From the Microsoft Managed Desktop [Azure Portal](https://aka.ms/mmdportal), select **Devices** in the left navigation pane. Select **+ Register devices**; the fly-in opens:
 
 [![Fly-in after selecting Register devices](images/register-devices-flyin-sterile.png)](images/register-devices-flyin-sterile.png)
 

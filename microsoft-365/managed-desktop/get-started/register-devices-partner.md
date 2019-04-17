@@ -24,7 +24,7 @@ To complete registration for your customer, first create a CSV file.
 Your file needs to include the **exact same column headings** as the sample one (Manufacturer, Model, etc.), but your own data for the other rows. If you use the template, open it in a text editing tool such as Notepad, and consider leaving all the data in row 1 alone, only entering data in rows 2 and below. 
     
   ```
- Manufacturer,Model,Serial Number,
+ Manufacturer,Model,Serial Number,Hardware Hash
   SpiralOrbit,ContosoABC,000000000000,
   
   
@@ -35,15 +35,15 @@ Your file needs to include the **exact same column headings** as the sample one 
 >This format is only for the Partner process. The process for self-registration is documented in [Register devices in Microsoft Managed Desktop yourself](register-devices-self.md).
 
 >[!IMPORTANT]
->These values must match the manufacturer values from SMBIOS exactly. You must also include the trailing comma after *Serial Number* and its value.
+>These values must match the manufacturer values from SMBIOS exactly. You must also include *Hardware Hash* in the first row (but no value for it in the second row) the trailing comma after the *Serial Number* value in the second row.
 
 - Device manufacturer (example: SpiralOrbit) 
 - Device model (example: ContosoABC)
 - Device serial number
 
-## Register devices by using the Admin Center
+## Register devices by using the Azure Portal
 
-Registering by using the Admin Center is the same as for self-service, except you access the portal differently. Follow these steps:
+Registering by using the Azure Portal is the same as for self-service, except you access the portal differently. Follow these steps:
 
 1. Navigate to [Partner Center](https://partner.microsoft.com/dashboard)
 2. Select **Customers**.
