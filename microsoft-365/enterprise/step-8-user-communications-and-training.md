@@ -38,7 +38,7 @@ The good news is if you are moving from Windows 7 and Office 2010 or Office 2013
 
 ## Getting ready for new experiences
 
-Starting with Office, if you’re deploying Office 365 ProPlus for the first time, this when you can communicate the benefits of signing in to Office apps and saving files to OneDrive or SharePoint locations to enable easier sharing, reduce file branching and enable real-time co-authoring.
+Starting with Office, if you’re deploying Office 365 ProPlus for the first time, this is when you can communicate the benefits of signing in to Office apps and saving files to OneDrive or SharePoint locations to enable easier sharing, reduce file branching and enable real-time co-authoring.
 
 Detailed communication and training templates are available for these and other local or browser-based apps, like Teams and Planner.
 

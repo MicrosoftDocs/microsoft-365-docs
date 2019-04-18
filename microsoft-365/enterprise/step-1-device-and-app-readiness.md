@@ -96,6 +96,13 @@ The final phase of device and app readiness is to ‘remediate’. Here you’ll
 
 As you work through the list remediating issues, you’ll see that more and more PCs become “Ready for Deployment”. This means that both the drivers and apps on the PCs are noted as compatible with the version of Windows 10 you are targeting for deployment.
 
+### Configuration Manager Software Inventory for Application Prioritization
+
+Configuration Manager software inventory is an alternative to using cloud-based analytics solutions for device and app readiness. You can use installation counts and drill into specific computers to help prioritize compatibility testing and validation and set application packages as compatible with Windows 10 via package settings. While this option does not offer the ability to compare known compatibility information with Microsoft’s analytics services, it can be an effective solution to target a smaller set of prioritized apps for manual testing. 
+
+For more information, see [Introduction to software inventory in System Center Configuration Manager](https://docs.microsoft.com/en-us/sccm/core/clients/manage/inventory/introduction-to-software-inventory) and setting platform requirements in application packages in [Packages and programs in System Center Configuration Manager](https://docs.microsoft.com/en-us/sccm/apps/deploy-use/packages-and-programs).
+
+
 ## Desktop App Assure
 
 Another tool to help with Windows 10 and Office 365 ProPlus app compatibility is the [Desktop App Assure](https://aka.ms/desktopappassure) program available through the FastTrack Center. Through Desktop App Assure in the event of valid application issues a Microsoft engineer with work with you at no additional cost to help remediate the application incompatibility.
