@@ -3,7 +3,7 @@ title: "Step 4: Configure secure user authenticationn"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 02/25/2019
+ms.date: 04/17/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -33,11 +33,7 @@ With MFA, the second layer of security can be:
 
 You'll enable MFA and configure the secondary authentication method on a per-user account basis. Make sure to let users know that MFA is being enabled so they understand the requirements, such as mandatory use of a smart phone to sign in, and can sign in successfully.
 
-For more information, see [Plan for multi-factor authentication for Office 365 Deployments](https://docs.microsoft.com/office365/admin/security-and-compliance/multi-factor-authentication-plan).
-
-To configure multifactor authentication, [Set up multi-factor authentication for Office 365 users](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication).
-
-You can require MFA with conditional access policies. For example, you can configure a policy that requires MFA when the authentication is determined to be of medium or high risk. For more information, see [Common identity and device access policies](identity-access-policies.md#require-mfa-based-on-sign-in-risk).
+For more information, see [Plan for multi-factor authentication](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted).
 
 >[!Note]
 >In some applications, such as Microsoft Office 2010 or older and Apple Mail, you can’t use MFA. To use these apps, you’ll need to use “app passwords” in place of your traditional password. The app password allows the app to bypass MFA and continue working. To learn more about app passwords, see [Create an app password for Office 365](https://support.office.com/article/Create-an-app-password-for-Office-365-3e7c860f-bda4-4441-a618-b53953ee1183).
