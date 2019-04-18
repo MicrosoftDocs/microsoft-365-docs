@@ -33,10 +33,12 @@ Once configured, you can obtain information about your security status from:
 - [Dashboards and reports in the Microsoft security Center](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security#view-dashboards-and-reports-in-the-security--compliance-center)
 - [Microsoft Secure Score](https://docs.microsoft.com/office365/securitycompliance/microsoft-secure-score)
 
-An additional security feature is [Advanced Threat Protection (ATP)](https://docs.microsoft.com/office365/securitycompliance/office-365-atp), which helps your organization collaborate more securely by:
+An additional security feature is [Office 365 Advanced Threat Protection (ATP)](https://docs.microsoft.com/office365/securitycompliance/office-365-atp), which helps your organization collaborate more securely by:
 
 - Protecting [links](https://docs.microsoft.com/office365/securitycompliance/atp-safe-links) and [attachments](https://docs.microsoft.com/office365/securitycompliance/atp-safe-attachments) in email. 
 - Providing spoof intelligence and anti-phishing capabilities for email in Exchange Online and [files in SharePoint Online, OneDrive for Business, and Microsoft Teams](https://docs.microsoft.com/office365/securitycompliance/atp-for-spo-odb-and-teams). 
+
+Office 365 ATP is only available with Microsoft 365 Enterprise E5.
 
 |||
 |:-------|:-----|
