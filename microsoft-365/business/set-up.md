@@ -26,11 +26,37 @@ description: "Learn how to set up Microsoft 365 Business."
 
 # Set up Microsoft 365 Business
 
-See [Get Microsoft 365 Business](get-microsoft-365-business.md) for sign-up details.
+Before you get started, see [Get Microsoft 365 Business](get-microsoft-365-business.md) for sign-up details.
 
-Watch a video on how to set up Microsoft 365 Business when you don't have an on-premises Active Directory:
+Watch a [short video on how to set up Microsoft 365 Business](https://support.office.com/article/38003e30-9d10-44cf-b596-f1b5f662bfa1) by using the set up wizard, and when you don't have an on-premises Active Directory
   
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/0705c337-f3e8-4d28-bb6c-530cd28e99f2?autoplay=false]
+
+## Overview
+
+Most of the set up steps can be done in the setup wizard, but the other options are also listed.
+
+1. [Add your domain](#add-your-domain-to-personalize-sign-in) (if you bought your domain during [sign up](sign-up.md), this step is already done.)
+2. Add users. You can do this in any of the three ways:
+    - In the [setup wizard](#add-users-in-the-wizard).
+    - Use directory synchronization to [add users by using Azure AD Connect](#add-users-by-using-azure-ad-connect) if you have an on-premises Active directory.
+    - You can also [add users later](add-users-m365b.md) in the admin center.
+3. Set up security policies and configure devices. You can do this in any of the three ways:
+    - In the [setup wizard](#set-up-policies-in-the-wizard).  
+    - In the [admin center](#modify-or-add-policies-in-the-admin-center).
+    - In the [Intune admin center](https://docs.microsoft.com/intune/what-is-device-management).
+4. Set up and manage Windows 10 devices.
+
+    When you join a WIndows 10 device to Azure AD, all the policies get applied to it.
+    - Set up Windows 10 device configurations in the setup wizard.
+    - Join a new Windows 10 device to Azure AD.
+    - Join an existing Windows 10 device to Azure AD.
+    - 
+1. Install Office 365 Business.
+    - You can automatically install Office in the Windows devices by using the [setup wizard](#set-up-policies-in-the-wizard).
+    - Automatically [install Office](auto-install-or-uninstall-office.md) from the admin center.
+    - Let users [install Office apps](https://docs.microsoft.com/office365/admin/setup/install-applications) for Windows and devices.
+     
+1. Set up additional security.
 
 ## Add your domain, users and set up policies
 
@@ -38,7 +64,7 @@ Watch a video on how to set up Microsoft 365 Business when you don't have an on-
 
 When you purchase Microsoft 365 Business, you have the option of using a domain you own, or buying one during the [sign-up](sign-up.md).
 
-- If you purchased a new domain when you signed up, your domain is all set up and you can move to [Step 2: Add users and assign licenses](#step-2-add-users-and-assign-licenses)
+- If you purchased a new domain when you signed up, your domain is all set up and you can move to [Add users and assign licenses](#add-users-and-assign-licenses).
 
 ### Add your domain to personalize sign-in
 
@@ -144,11 +170,17 @@ The policies you set up in the wizard are applied automatically to a [Security g
 See [manage Microsoft 365 Business](manage.md) for links to topics on how to view and modify device and app protection polices, and how to remove data from, or reset user devices.
 
 ## Deploy and manage Windows 10
-See [Set up Windows devices for Microsoft 365 Business users](set-up-windows-devices.md) to manually connect to Azure AD. 
+See [Set up Windows devices for Microsoft 365 Business users](set-up-windows-devices.md) to manually connect to Azure AD, either during setup for new computers, or by changing sign-in profile for existing computers. 
 
 ### Use Autopilot to set up new devices
 
-You can also use [Windows Autopilot](add-autopilot-devices-and-profile.md) to automatically pre-configure new Windows 10 devices for a user, but it might be easier to get a [partner](https://www.microsoft.com/solution-providers/search) who can do this for you. You can also go to [Microsoft Store](https://go.microsoft.com/fwlink/?linkid=874598) and ask a cloud technology expert set up new devices you purchase for you.
+You can use [Windows Autopilot](add-autopilot-devices-and-profile.md) to automatically pre-configure new Windows 10 devices for a user, but it might be easier to get a [partner](https://www.microsoft.com/solution-providers/search) who can do this for you. You can also go to [Microsoft Store](https://go.microsoft.com/fwlink/?linkid=874598) and ask a cloud technology expert set up new devices you purchase for you.
+
+### Access on-premises resources
+
+If your organization uses Windows Server Active Directory on-premises, you can set up Microsoft 365 Business to protect your Windows 10 devices, while still maintaining access to on-premises resources that require local authentication. Follow the steps in [Enable domain-joined Windows 10 devices to be managed by Microsoft 365 Business](manage-windows-devices.md) to set this up. This is the preferred method and devices in this state are called Hybrid Azure AD joined devices.
+
+If you retain a local Active Directory that contains some on-premises resources (such as file shares and printers) , you can give your Azure AD-joined devices access to these resources by following the steps here: [Access on-premises resources from an Azure AD-joined device in Microsoft 365 Business](access-resources.md).
 
 ## Deploy Office 365 client apps
 
@@ -169,3 +201,5 @@ In addition to the security and compliance setting in the setup wizard, you can 
 - **Intune portal availability**
 
 To get started see, [set up advanced security policies](set-up-advanced-security.md).
+
+See also [top 10 ways to secure your Microsoft 365 Business](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data) for a roadmap of best security practices.
