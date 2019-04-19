@@ -56,6 +56,7 @@ Most of the set up steps can be done in the setup wizard, but the other options 
     - Let users [install Office apps](https://docs.microsoft.com/office365/admin/setup/install-applications) for Windows and devices.
      
 1. Set up additional security.
+    - The setup wizard adds policies to secure your devices, but you can also take advantage of [additional security](#additional-security-settings) capabilities to helps secure your data, accounts, and emails. 
 
 ## Add your domain, users and set up policies
 
