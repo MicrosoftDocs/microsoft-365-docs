@@ -65,7 +65,7 @@ To verify that authentication with on-premises credentials works correctly, sign
 
 To verify that directory synchronization is working correctly, do the following:
 
-1.	Create a new test group in Windows Server AD.
+1.	Create a new test group in Active Directory Domain Services (AD DS).
 2.	Wait for the synchronization time.
 3.	Check your Azure AD tenant to verify that the new test group name appears.
 
@@ -135,7 +135,7 @@ If needed, [Step 5](../identity-password-reset.md#identity-pw-reset) can help yo
 
 You've used the instructions in [Azure AD SSPR with password writeback](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-getting-started) to enable password writeback for the Azure AD tenant of your Microsoft 365 Enterprise subscription.
 
-If you skip this option, users who aren’t connected to your on-premises network must reset or unlock their Windows Server AD passwords through an IT administrator.
+If you skip this option, users who aren’t connected to your on-premises network must reset or unlock their AD DS passwords through an IT administrator.
 
 If needed, [Step 5](../identity-password-reset.md#identity-pw-writeback) can help you with this option.
 
@@ -145,13 +145,13 @@ If needed, [Step 5](../identity-password-reset.md#identity-pw-writeback) can hel
 
 #### How to test
 
-You test password writeback by changing your password in Office 365. You should be able to use your account and new password to access on-premises Windows Server AD resources.
+You test password writeback by changing your password in Office 365. You should be able to use your account and new password to access on-premises AD DS resources.
 
-1. Create a test user account in your on-premises Windows Server AD, allow directory synchronization to occur, and then grant it an Office 365 license in the Microsoft 365 admin center.
-2. From a remote computer that is joined to your on-premises Windows Server AD domain, sign in to the computer and the Office portal using the credentials of the test user account.
+1. Create a test user account in your on-premises AD DS, allow directory synchronization to occur, and then grant it an Office 365 license in the Microsoft 365 admin center.
+2. From a remote computer that is joined to your on-premises AD DS domain, sign in to the computer and the Office portal using the credentials of the test user account.
 3. Select **Settings > Office 365 settings > Password > Change password**.
 4. Type the current password, type a new password, and then confirm it.
-5. Sign out of the Office portal and the remote computer and then sign in to the computer using the test user account and its new password. This proves that you were able to change the password of an on-premises Windows Server AD user account using the Azure AD tenant.
+5. Sign out of the Office portal and the remote computer and then sign in to the computer using the test user account and its new password. This proves that you were able to change the password of an on-premises AD DS user account using the Azure AD tenant.
 
 <a name="crit-identity-sso"></a>
 ### Optional: Users can sign in using Azure AD Seamless Single Sign-on
