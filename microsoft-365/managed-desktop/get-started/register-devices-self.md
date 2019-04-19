@@ -114,7 +114,7 @@ A REST API is available to allow you greater flexibility and repeatability with 
 | Hardware hash not valid | The hardware hash you provided for this device was not formatted correctly. Double-check the hardware hash and then resubmit. |
 | Device already registered | This device is already registered to your organization. No further action required. |
 | Device claimed by another organization | This device has already been claimed by another organization. Check with your device supplier. |
-| Unexpected error | Your request could not be automatically processed. Contact Support (<support link>) and provide the Request ID: <requestId> |
+| Unexpected error | Your request could not be automatically processed. Contact Support and provide the Request ID: <requestId> |
 
 
 
