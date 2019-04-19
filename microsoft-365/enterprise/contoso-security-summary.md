@@ -36,7 +36,7 @@ Contoso used the following steps to ready their security for their deployment of
 
 1. Limited administrator accounts for the cloud
 
-   Contoso did an extensive review of the existing Windows Server AD administrator accounts and set up a series of cloud administrator accounts and groups.
+   Contoso did an extensive review of the existing Active Directory Domain Services (AD DS) administrator accounts and set up a series of cloud administrator accounts and groups.
 
 2. Performed data classification analysis into three levels
 
@@ -77,7 +77,7 @@ In accordance with security best practices and Microsoft 365 Enterprise deployme
 
 - Windows Defender Credential Guard
 
-  To block targeted attacks and malware running in the operating system with administrative privileges, Contoso has enabled [Windows Defender Credential Guard](https://docs.microsoft.com/windows/security/identity-protection/credential-guard/credential-guard) through Windows Server AD group policy.
+  To block targeted attacks and malware running in the operating system with administrative privileges, Contoso has enabled [Windows Defender Credential Guard](https://docs.microsoft.com/windows/security/identity-protection/credential-guard/credential-guard) through AD DS group policy.
 
 ## Threat protection
 

@@ -41,7 +41,7 @@ Follow the instructions in [simulated enterprise base configuration for Microsof
 This configuration consists of: 
   
 - Office 365 E5 and EMS E5 trial or paid subscriptions.
-- A simplified organization intranet connected to the Internet, consisting of the DC1, APP1, and CLIENT1 virtual machines in an Azure virtual network. DC1 is a domain controller for the testlab.\<your public domain name> Windows Server AD domain.
+- A simplified organization intranet connected to the Internet, consisting of the DC1, APP1, and CLIENT1 virtual machines in an Azure virtual network. DC1 is a domain controller for the testlab.\<your public domain name> Active Directory Domain Services (AD DS) domain.
 
 ## Phase 2: Create and register the testlab domain
 
@@ -64,7 +64,7 @@ Notice how the testlab.\<your public domain name> is now:
 
 - Supported by public DNS records.
 - Registered in your Office 365 and EMS subscriptions.
-- The Windows Server AD domain on your simulated intranet.
+- The AD DS domain on your simulated intranet.
      
 ## Phase 3: Install Azure AD Connect on APP1
 
@@ -104,7 +104,7 @@ First, you install and configure Azure AD Connect on APP1.
     
 13. In the left navigation, click **Users > Active users**.
     
-    Note the account named **User1**. This account is from the TESTLAB Windows Server AD domain and is proof that directory synchronization has worked.
+    Note the account named **User1**. This account is from the TESTLAB AD DS domain and is proof that directory synchronization has worked.
     
 14. Click the **User1** account. For product licenses, click **Edit**.
     
@@ -118,7 +118,7 @@ Next, you test the ability to sign in to your Office 365 subscription with the <
 
 2. When prompted for a user name and password, specify <strong>user1@testlab.</strong>\<your domain name> and the User1 password. You should successfully sign in as User1. 
  
-Notice that although User1 has domain administrator permissions for the TESTLAB Windows Server AD domain, it is not an Office 365 global administrator. Therefore, you will not see the **Admin** icon as an option. 
+Notice that although User1 has domain administrator permissions for the TESTLAB AD DS domain, it is not an Office 365 global administrator. Therefore, you will not see the **Admin** icon as an option. 
 
 Here is your resulting configuration.
 
@@ -127,8 +127,8 @@ Here is your resulting configuration.
 This configuration consists of: 
   
 - Office 365 E5 and EMS E5 trial or paid subscriptions with the DNS domain TESTLAB.\<your domain name> registered.
-- A simplified organization intranet connected to the Internet, consisting of the DC1, APP1, and CLIENT1 virtual machines on a subnet of an Azure virtual network. Azure AD Connect runs on APP1 to synchronize the TESTLAB Windows Server AD domain to the Azure AD tenant of your Office 365 and EMS E5 subscriptions periodically.
-- The User1 account in the TESTLAB  Windows Server AD domain has been synchronized with the Azure AD tenant.
+- A simplified organization intranet connected to the Internet, consisting of the DC1, APP1, and CLIENT1 virtual machines on a subnet of an Azure virtual network. Azure AD Connect runs on APP1 to synchronize the TESTLAB AD DS domain to the Azure AD tenant of your Office 365 and EMS E5 subscriptions periodically.
+- The User1 account in the TESTLAB  AD DS domain has been synchronized with the Azure AD tenant.
 
 ## Next step
 
