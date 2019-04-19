@@ -3,7 +3,7 @@ title: "Password writeback for your Microsoft 365 test environment"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/16/2019
+ms.date: 04/19/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -34,7 +34,7 @@ There are two phases to setting this up:
 > [!TIP]
 > Click [here](https://aka.ms/m365etlgstack) for a visual map to all the articles in the Microsoft 365 Enterprise Test Lab Guide stack.
   
-## Phase 1: Configure password hash synchronization and password reset for your Microsoft 365 test environment
+## Phase 1: Configure password hash synchronization for your Microsoft 365 test environment
 
 First, follow the instructions in [password hash synchronization](password-hash-sync-m365-ent-test-environment.md). Here is your resulting configuration.
   
@@ -45,10 +45,6 @@ This configuration consists of:
 - Office 365 E5 and EMS E5 trial or paid subscriptions.
 - A simplified organization intranet connected to the Internet, consisting of the DC1, APP1, and CLIENT1 virtual machines on a subnet of an Azure virtual network. 
 - Azure AD Connect runs on APP1 to synchronize the TESTLAB AD DS domain to the Azure AD tenant of your Office 365 and EMS E5 subscriptions.
-
-Next, follow the instructions in [Phase 2 of the password reset](password-reset-m365-ent-test-environment.md#phase-2-configure-and-test-password-reset) Test Lab Guide.
-
-You must have password reset enabled to use password writeback.
 
 ## Phase 2: Enable password writeback for the TESTLAB AD DS domain
 

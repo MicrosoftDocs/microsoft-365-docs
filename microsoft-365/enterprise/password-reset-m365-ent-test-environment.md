@@ -3,7 +3,7 @@ title: "Password reset for your Microsoft 365 test environment"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 02/21/2019
+ms.date: 04/19/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -32,15 +32,21 @@ This article describes how you can configure and test password resets in your Mi
 > [!TIP]
 > Click [here](https://aka.ms/m365etlgstack) for a visual map to all the articles in the Microsoft 365 Enterprise Test Lab Guide stack.
 
+## Phase 1: Configure password hash synchronization and password writebback for your Microsoft 365 test environment
 
-## Phase 1: Build out your Microsoft 365 Enterprise test environment
-
-If you just want to test password resets in a lightweight way with the minimum requirements, follow the instructions in [Lightweight base configuration](lightweight-base-configuration-microsoft-365-enterprise.md).
+First, follow the instructions in [password hash synchronization](password-hash-sync-m365-ent-test-environment.md). Here is your resulting configuration.
   
-If you want to test password resets in a simulated enterprise, follow the instructions in [Pass-through authentication](pass-through-auth-m365-ent-test-environment.md).
+![The simulated enterprise with password hash synchronization test environment](media/pass-through-auth-m365-ent-test-environment/Phase1.png)
+  
+This configuration consists of: 
+  
+- Office 365 E5 and EMS E5 trial or paid subscriptions.
+- A simplified organization intranet connected to the Internet, consisting of the DC1, APP1, and CLIENT1 virtual machines on a subnet of an Azure virtual network. 
+- Azure AD Connect runs on APP1 to synchronize the TESTLAB AD DS domain to the Azure AD tenant of your Office 365 and EMS E5 subscriptions.
 
-> [!NOTE]
-> Testing password resets does not require the simulated enterprise test environment, which includes a simulated intranet connected to the Internet and directory synchronization for a Windows Server AD forest. It is provided here as an option so that you can test password resets and experiment with it in an environment that represents a typical organization. 
+Next, follow the instructions in [Phase 2 of the password writeback](password-writeback-m365-ent-test-environment.md#phase-2-enable-password-writeback-for-the-testlab-ad-ds-domain) Test Lab Guide.
+
+You must have password writeback enabled to use password reset.
   
 ## Phase 2: Configure and test password reset
 
