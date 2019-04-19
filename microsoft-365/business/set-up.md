@@ -47,10 +47,9 @@ Most of the set up steps can be done in the setup wizard, but the other options 
 4. Set up and manage Windows 10 devices.
 
     When you join a WIndows 10 device to Azure AD, all the policies get applied to it.
-    - Set up Windows 10 device configurations in the setup wizard.
-    - Join a new Windows 10 device to Azure AD.
-    - Join an existing Windows 10 device to Azure AD.
-    - 
+    - Set up Windows 10 device configurations in the [setup wizard](#set-up-policies-in-the-wizard).
+    - Join a [new Windows 10 device](set-up-windows-devices.md#for-a-brand-new-or-newly-upgraded-windows-10-pro-device) to Azure AD.
+    - Join an [existing Windows 10 device](set-up-windows-devices.md#for-a-device-already-set-up-and-running-windows-10-pro) to Azure AD.
 1. Install Office 365 Business.
     - You can automatically install Office in the Windows devices by using the [setup wizard](#set-up-policies-in-the-wizard).
     - Automatically [install Office](auto-install-or-uninstall-office.md) from the admin center.
@@ -174,18 +173,20 @@ See [Set up Windows devices for Microsoft 365 Business users](set-up-windows-dev
 
 ### Use Autopilot to set up new devices
 
-You can use [Windows Autopilot](add-autopilot-devices-and-profile.md) to automatically pre-configure new Windows 10 devices for a user, but it might be easier to get a [partner](https://www.microsoft.com/solution-providers/search) who can do this for you. You can also go to [Microsoft Store](https://go.microsoft.com/fwlink/?linkid=874598) and ask a cloud technology expert set up new devices you purchase for you.
+You can use [Windows Autopilot](add-autopilot-devices-and-profile.md) to automatically pre-configure **new** Windows 10 devices for a user, but it might be easier to get a [partner](https://www.microsoft.com/solution-providers/search) who can do this for you. You can also go to [Microsoft Store](https://go.microsoft.com/fwlink/?linkid=874598) and ask a cloud technology expert set up new devices you purchase for you.
 
 ### Access on-premises resources
 
 If your organization uses Windows Server Active Directory on-premises, you can set up Microsoft 365 Business to protect your Windows 10 devices, while still maintaining access to on-premises resources that require local authentication. Follow the steps in [Enable domain-joined Windows 10 devices to be managed by Microsoft 365 Business](manage-windows-devices.md) to set this up. This is the preferred method and devices in this state are called Hybrid Azure AD joined devices.
 
-If you retain a local Active Directory that contains some on-premises resources (such as file shares and printers) , you can give your Azure AD-joined devices access to these resources by following the steps here: [Access on-premises resources from an Azure AD-joined device in Microsoft 365 Business](access-resources.md).
+If your business has a local Active Directory that contains some on-premises resources (such as file shares and printers) , you can give your Azure AD-joined devices access to these resources by following the steps here: [Access on-premises resources from an Azure AD-joined device in Microsoft 365 Business](access-resources.md).
 
 ## Deploy Office 365 client apps
 
 If you chose to automatically install Office apps in during the set up, the apps will install on the Windows 10 devices once the users have signed in to Azure AD from their Windows devices with their work credentials.
 To install Office on mobile iOS or Android devices, see [Set up mobile devices for Microsoft 365 Business users](set-up-mobile-devices.md).
+
+You can also install Office individually. See [install Office on a PC or Mac](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc471665) for instructions.
 
 ## Additional security settings
 
