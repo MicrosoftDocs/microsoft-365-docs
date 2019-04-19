@@ -13,13 +13,14 @@ ms.localizationpriority: medium
 This topic describes the steps for Partners to follow to register devices. The process for registering devices yourself is documented in [Register devices in Microsoft Managed Desktop yourself](register-devices-self.md).
 
 
+
 ## Prepare for registration 
 Before completing registration for a customer, you must first establish a relationship with them at the [Partner Center](https://partner.microsoft.com/dashboard). Learn more at [Partner Center help](https://docs.microsoft.com/en-us/partner-center/request-a-relationship-with-a-customer).
 
 To complete registration for your customer, first create a CSV file.
 
 >[!NOTE]
->For your convenience, you can download a [template](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/live/Microsoft-365-docs/managed-desktop/get-started/downloads/downloads/device-registration-sample-partner.xlsx) for this *Partner version* of the CSV file.
+>For your convenience, you can download a [template](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/live/microsoft-365/managed-desktop/get-started/downloads/device-registration-sample-partner.xlsx ) for this *Partner version* of the CSV file.
 
 Your file needs to include the **exact same column headings** as the sample one (Manufacturer, Model, etc.), but your own data for the other rows. If you use the template, open it in a text editing tool such as Notepad, and consider leaving all the data in row 1 alone, only entering data in rows 2 and below. 
     

@@ -54,7 +54,7 @@ Alternately, you can follow these steps on a brand-new device (before going thro
 >Do not power on the target device again until you've completed registration for it. 
 
 >[!NOTE]
->For your convenience, you can download a [template](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/live/Microsoft-365-docs/managed-desktop/get-started/downloads/downloads/device-registration-sample-self.xlsx) for this CSV file.
+>For your convenience, you can download a [template](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/live/microsoft-365/managed-desktop/get-started/downloads/device-registration-sample-self.xlsx) for this CSV file.
 
 Your file needs to include the **exact same column headings** as the sample one (Manufacturer, Model, etc.), but your own data for the other rows. If you use the template, open it in a text editing tool such as Notepad, and consider leaving all the data in row 1 alone, only entering data in rows 2 and below. 
     
