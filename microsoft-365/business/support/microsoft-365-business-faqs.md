@@ -113,7 +113,7 @@ The most direct path to a successful Microsoft 365 Business deployment is to eng
 
 ### Does Microsoft 365 Business include the full capabilities of Microsoft Intune? 
 Yes, Microsoft 365 Business subscribers are licensed to use full Intune capabilities for iOS, Android, MacOS, and other cross-platform device management. Features not available in the simplified management console in Microsoft 365 Business, like 3rd party app management and configuration of WiFi profiles, VPN certificates, etc, can be managed in full Intune console. 
-You have rights to use Configuration Manager to manage clients covered by the EMS license. First download and install the <a href="https://www.microsoft.com/en-us/evalcenter/evaluate-system-center-configuration-manager-and-endpoint-protection"> evaluation software</a>. Then contact Microsoft Support to obtain the license key. When you talk with Microsoft Support, ask them to reference the internal article ID 4033838.
+You have rights to use Configuration Manager to manage clients covered by the EMS license. For SCCM related queries, please see <a href="https://docs.microsoft.com/en-us/sccm/core/understand/product-and-licensing-faq#bkmk_csp" target="_blank">SCCM faqs</a>
   
 
 ### Does Azure Active Directory Premium P1 come with Microsoft 365 Business? 
