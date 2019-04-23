@@ -39,7 +39,7 @@ The phases start with the most foundational (networking and identity), and then 
 
 However, you have the flexibility of configuring and rolling out the phases or steps within phases to fit your IT resources and business needs.
 
-- **If you are a smaller or newer organization**, follow the phases as needed in order to methodically build out your infrastructure.
+- **If you are a smaller or newer organization**, follow the phases as needed to methodically build out your infrastructure.
 
 -  **If you are an enterprise organization**, view the phases as layers of IT infrastructure, rather than a defined path, and determine how to best work toward eventual adherence to the requirements for each layer across your organization.
 
@@ -90,7 +90,7 @@ To give you some ideas on how to approach the project management of the differen
 
 ## Next step
 
-- I have existing infrastructure for Office 365, Enterprise Mobility + Security, or Windows 10 Enterprise:
-  - See [Deployment with existing infrastructure](deploy-with-existing-infrastructure.md). This article steps you through the exit criteria for each phase.
+- I have existing infrastructure for Office 365, Enterprise Mobility + Security (EMS), or Windows 10 Enterprise:
+  - See [Deploy with existing infrastructure](deploy-with-existing-infrastructure.md). This article steps you through the exit criteria for each phase.
 - I'm starting from scratch: 
    - Begin your end-to-end deployment journey with [Phase 1: Networking](networking-infrastructure.md).
