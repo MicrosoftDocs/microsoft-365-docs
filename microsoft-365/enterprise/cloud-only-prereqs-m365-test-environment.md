@@ -15,7 +15,7 @@ ms.custom:
 description: Create a Microsoft 365 environment to test identity and device access with the prerequisites for cloud-only authentication.
 ---
 
-## Identity and device access prerequisites for cloud-only in your Microsoft 365 test environment
+# Identity and device access prerequisites for cloud-only in your Microsoft 365 test environment
 
 [Identity and device access configurations](microsoft-365-policies-configurations.md) are a set of configurations and conditional access policies to protect access to all services that are integrated with Azure Active Directory (Azure AD), including Office 365 and Enterprise Mobility + Security (EMS) in Microsoft 365 Enterprise.
 
@@ -31,7 +31,7 @@ There are seven phases to setting up this test environment:
 6.	Enable Azure AD Identity Protection
 7.	Enable modern authentication for Exchange Online and Skype for Business Online
 
-### Phase 1: Build out your lightweight Microsoft 365 test environment
+## Phase 1: Build out your lightweight Microsoft 365 test environment
 
 Follow the instructions in [Lightweight base configuration](lightweight-base-configuration-microsoft-365-enterprise.md).
 Here is the resulting configuration.
@@ -39,17 +39,17 @@ Here is the resulting configuration.
 ![The lightweight Microsoft 3656 Enterprise test environment](media/lightweight-base-configuration-microsoft-365-enterprise/Phase4.png)
  
 
-### Phase 2: Configure named locations
+## Phase 2: Configure named locations
 
 First, determine the public IP addresses or address ranges used by your organization.
 
 Next, follow the instructions in [Configure named locations in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/reports-monitoring/quickstart-configure-named-locations) to add the addresses or address ranges as named locations. 
 
-### Phase 3: Configure password writeback
+## Phase 3: Configure password writeback
 
 Follow the instructions in [Phase 2 of the password writeback Test Lab Guide](password-writeback-m365-ent-test-environment.md#phase-2-enable-password-writeback-for-the-testlab-ad-ds-domain).
 
-### Phase 4: Configure self-service password reset
+## Phase 4: Configure self-service password reset
 
 Follow the instructions in [Phase 3 of the password reset Test Lab Guide](password-reset-m365-ent-test-environment.md#phase-3-configure-and-test-password-reset). 
 
@@ -62,7 +62,7 @@ When enabling password reset for the accounts in a specific Azure AD group, add 
 
 Test password reset only for the User 2 account.
 
-### Phase 5: Configure multi-factor authentication
+## Phase 5: Configure multi-factor authentication
 
 Follow the instructions in [Phase 2 of the multi-factor authentication Test Lab Guide](multi-factor-authentication-microsoft-365-test-environment.md#phase-2-enable-and-test-multi-factor-authentication-for-the-user-2-account) for the following user accounts:
 
@@ -73,11 +73,11 @@ Follow the instructions in [Phase 2 of the multi-factor authentication Test Lab 
 
 Test multi-factor authentication only for the User 2 account.
 
-### Phase 6: Enable Azure AD Identity Protection
+## Phase 6: Enable Azure AD Identity Protection
 
 Follow the instructions in [Phase 2 of the Azure AD Identity Protection Test Lab Guide](azure-ad-identity-protection-microsoft-365-test-environment.md#phase-2-enable-and-use-azure-ad-identity-protection). 
 
-### Phase 7: Enable modern authentication for Exchange Online and Skype for Business Online
+## Phase 7: Enable modern authentication for Exchange Online and Skype for Business Online
 
 For Exchange Online, follow [these instructions](https://docs.microsoft.com/en-us/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online#enable-or-disable-modern-authentication-in-exchange-online-for-client-connections-in-outlook-2013-or-later). 
 

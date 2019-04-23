@@ -15,7 +15,7 @@ ms.custom:
 description: Create a Microsoft 365 environment to test identity and device access.
 ---
 
-## Identity and device access for your Microsoft 365 test environment
+# Identity and device access for your Microsoft 365 test environment
 
 [Identity and device access configurations](microsoft-365-policies-configurations.md) are a set of features and conditional access policies to protect access to all services that are integrated with Azure Active Directory (Azure AD), including Office 365 and Enterprise Mobility + Security (EMS) in Microsoft 365 Enterprise.
 
