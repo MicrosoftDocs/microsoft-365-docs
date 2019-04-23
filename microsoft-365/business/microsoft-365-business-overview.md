@@ -48,7 +48,7 @@ Microsoft 365 Business helps safeguard your data in each of these instances. The
 
 ![A figure that shows how M365B protects your business.](media/m365businessvalueadd.png)
 
-To see the full list of security features, see [Microsoft 365 Business security features](security-features.md). After you [Set up Microsoft 365 Business](set-up.md), see [Set up advanced security policies](set-up-advanced-security.md) to get started with the security features that are not included as a part of the setup.
+To see the full list of security features, see [Microsoft 365 Business security features](security-features.md). After you [Set up Microsoft 365 Business](set-up.md), see [Set up advanced security policies](set-up-advanced-security.md) to get started with the security features that are not included as a part of the setup. Read also [Top 10 ways to secure Office 365 and Microsoft 365 Business plans](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data) for a good overview on how to set up protections against cyber criminals and hackers.
 
 ## Get Microsoft 365 Business
 

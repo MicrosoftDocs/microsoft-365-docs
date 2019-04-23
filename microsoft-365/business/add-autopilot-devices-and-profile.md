@@ -24,7 +24,7 @@ description: "Learn how to use Windows AutoPilot to set up new Windows 10 device
 
 # Use the step-by-step guide to add Autopilot devices and profile
 
-You can use Windows AutoPilot to set up new Windows 10 devices for your business so they are ready for productive use as soon as you give them to your employees.
+You can use Windows AutoPilot to set up **new** Windows 10 devices for your business so they are ready for productive use as soon as you give them to your employees.
   
 ## Device requirements
 
@@ -36,13 +36,17 @@ Devices need to meet these requirements:
     
 ## Use the setup guide to create devices and profiles
 
+![Banner that point to https://aka.ms/aboutM365preview.](media/m365admincenterchanging.png)
+
 If you have no device groups or profiles created yet, the best way to get started is by using the step-by-step guide, but you can also [add devices](create-and-edit-autopilot-devices.md) and [assign profiles](create-and-edit-autopilot-profiles.md) to them without using the guide. 
   
-1. In the Microsoft 365 Business admin center, locate the **Device actions** card, and choose **Deploy Windows with Autopilot**.
-    
-    ![On the Device actions card, choose Deploy Windows with Autopilot.](media/160d5c2a-11a8-48f9-a8aa-70f084b85448.png)
+1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
+
+2. On the left nav choose **Devices** \> **AutoPilot**.
+
+    ![In the admin center choose devices and then AutoPilot.](media/AutoPilot.png)
   
-2. On the **Prepare Windows** page, click or tap **Start guide**.
+2. On the **AutoPilot** page, click or tap **Start guide**.
     
     ![Click Start guide for step-by-step instructions for Autopilot.](media/31662655-d1e6-437d-87ea-c0dec5da56f7.png)
   
