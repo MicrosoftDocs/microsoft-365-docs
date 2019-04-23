@@ -29,9 +29,9 @@ These benefits are not realized just by obtaining the licenses for the three pro
 
 There are three main ways to deploy Microsoft 365 Enterprise:
 
-- Do it with Microsoft engineers using FastTrack for Microsoft 365
-- Do it with help from Microsoft Consulting Services or a [Microsoft partner](https://partner.microsoft.com/)
-- Do it yourself with the Microsoft 365 Enterprise deployment guide
+- Do it with Microsoft engineers using FastTrack for Microsoft 365.
+- Do it with help from Microsoft Consulting Services or a [Microsoft partner](https://partner.microsoft.com/).
+- Do it yourself with the Microsoft 365 Enterprise deployment guide.
 
 ## FastTrack for Microsoft 365
 
