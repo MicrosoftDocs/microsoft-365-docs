@@ -20,19 +20,20 @@ description: "Summary: Configure and test password reset for your Microsoft 365 
 
 # Password reset for your Microsoft 365 test environment
 
-Azure AD self-service password reset (SSPR) allows users to reset or unlock their passwords or accounts. 
+Azure Active Directory (Azure AD) self-service password reset (SSPR) allows users to reset or unlock their passwords or accounts. 
 
-This article describes how you can configure and test password resets in your Microsoft 365 test environment in two phases:
+This article describes how you can configure and test password resets in your Microsoft 365 test environment in three phases:
 
 1.	Create the Microsoft 365 Enterprise test environment.
-2.	Configure and test password reset for the User 2 account.
+2.  Enable password writeback.
+3.	Configure and test password reset for the User 2 account.
     
 ![Test Lab Guides for the Microsoft cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
 > Click [here](https://aka.ms/m365etlgstack) for a visual map to all the articles in the Microsoft 365 Enterprise Test Lab Guide stack.
 
-## Phase 1: Configure password hash synchronization and password writebback for your Microsoft 365 test environment
+## Phase 1: Configure password hash synchronization for your Microsoft 365 test environment
 
 First, follow the instructions in [password hash synchronization](password-hash-sync-m365-ent-test-environment.md). Here is your resulting configuration.
   
@@ -42,13 +43,16 @@ This configuration consists of:
   
 - Office 365 E5 and EMS E5 trial or paid subscriptions.
 - A simplified organization intranet connected to the Internet, consisting of the DC1, APP1, and CLIENT1 virtual machines on a subnet of an Azure virtual network. 
-- Azure AD Connect runs on APP1 to synchronize the TESTLAB AD DS domain to the Azure AD tenant of your Office 365 and EMS E5 subscriptions.
+- Azure AD Connect runs on APP1 to synchronize the TESTLAB Active Directory Domain Services (AD DS) domain to the Azure AD tenant of your Office 365 and EMS E5 subscriptions.
 
-Next, follow the instructions in [Phase 2 of the password writeback](password-writeback-m365-ent-test-environment.md#phase-2-enable-password-writeback-for-the-testlab-ad-ds-domain) Test Lab Guide.
+
+## Phase 2: Enable password writeback
+
+Follow the instructions in [Phase 2 of the password writeback Test Lab Guide](password-writeback-m365-ent-test-environment.md#phase-2-enable-password-writeback-for-the-testlab-ad-ds-domain).
 
 You must have password writeback enabled to use password reset.
   
-## Phase 2: Configure and test password reset
+## Phase 3: Configure and test password reset
 
 In this phase, you configure password reset in the Azure AD tenant through group membership, and then verify that it works.
 

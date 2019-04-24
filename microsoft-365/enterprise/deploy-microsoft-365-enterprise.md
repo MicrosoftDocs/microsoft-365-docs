@@ -43,7 +43,7 @@ Get started on your end-to-end deployment journey with FastTrack [here](https://
 
 ## Microsoft 365 Enterprise deployment guide
 
-The Microsoft 365 Enterprise Deployment Guide steps you through the correct and required configuration of Microsoft 365 Enterprise products and features.
+The Microsoft 365 Enterprise deployment guide steps you through the correct and required configuration of Microsoft 365 Enterprise products and features.
 
 To deploy Microsoft 365 Enterprise yourself, you can:
 
