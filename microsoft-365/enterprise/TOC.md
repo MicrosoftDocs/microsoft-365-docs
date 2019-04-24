@@ -56,7 +56,6 @@
 #### [Password reset](password-reset-m365-ent-test-environment.md)
 #### [Automatic licensing and group membership](automate-licenses-group-membership-microsoft-365-test-environment.md)
 #### [Azure AD Identity Protection](azure-ad-identity-protection-microsoft-365-test-environment.md)
-#### [Azure AD Identity Protection](azure-ad-identity-protection-microsoft-365-test-environment.md)
 #### [Identity and device access](identity-device-access-m365-test-environment.md)
 ##### [Cloud-only](cloud-only-prereqs-m365-test-environment.md)
 ##### [Password hash sync (PHS)](phs-prereqs-m365-test-environment.md)
