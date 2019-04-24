@@ -23,12 +23,12 @@ This article describes how you can configure a Microsoft 365 test environment th
 
 There are eight phases to setting up this test environment:
 
-1.	Create a simulated enterprise with pass-through authentication test environment
+1.	Build out your simulated enterprise with pass-through authentication Microsoft 365 test environment
 2.	Configure Azure AD seamless single sign-on
 3.	Configure named locations
 4.	Configure password writeback
-5.	Configure self-service password reset for all user accounts
-6.	Configure multifactor authentication for all user accounts
+5.	Configure self-service password reset
+6.	Configure multifactor authentication
 7.	Enable Azure AD Identity Protection
 8.	Enable modern authentication for Exchange Online and Skype for Business Online
 
@@ -58,7 +58,7 @@ Follow the instructions in [Phase 2 of the password writeback Test Lab Guide](pa
 
 Follow the instructions in [Phase 3 of the password reset Test Lab Guide](password-reset-m365-ent-test-environment.md#phase-3-configure-and-test-password-reset). 
 
-When enabling password reset for the accounts in a specific Azure AD group, add these accounts to the Password reset group:
+When enabling password reset for the accounts in a specific Azure AD group, add these accounts to the **Password reset** group:
 
 - User 2
 - User 3
@@ -106,7 +106,7 @@ The result is a test environment that meets the requirements of the [Pass-throug
 
 ## Next step
 
-Use [Common identity and device access policies](identity-access-policies.md) to configure the policies that build on the prerequisites and protect identities and access to resources.
+Use [Common identity and device access policies](identity-access-policies.md) to configure the policies that build on the prerequisites and protect identities and devices.
 
 ## See also
 

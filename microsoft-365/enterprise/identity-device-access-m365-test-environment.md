@@ -19,15 +19,15 @@ description: Create a Microsoft 365 environment to test identity and device acce
 
 [Identity and device access configurations](microsoft-365-policies-configurations.md) are a set of features and conditional access policies to protect access to all services that are integrated with Azure Active Directory (Azure AD), including Office 365 and Enterprise Mobility + Security (EMS) in Microsoft 365 Enterprise.
 
-To create a test environment that has these policies in place there are two steps.
+To create a test environment that has these policies in place:
 
-First, configure your test environment with the prerequisite identity and security features based on your choice of identity model and authentication method:
+1. Configure your test environment with the prerequisite identity and security features based on your choice of identity model and authentication method:
 
-- [Cloud-only](cloud-only-prereqs-m365-test-environment.md)
-- [Password hash sync (PHS)](phs-prereqs-m365-test-environment.md)
-- [Pass-through authentication (PTA)](pta-prereqs-m365-test-environment.md)
+  - [Cloud only](cloud-only-prereqs-m365-test-environment.md)
+  - [Password hash sync (PHS)](phs-prereqs-m365-test-environment.md)
+  - [Pass-through authentication (PTA)](pta-prereqs-m365-test-environment.md)
 
-Next, use [Common identity and device access policies](identity-access-policies.md) to configure the policies that build on the prerequisites and test protection for identities and access to resources.
+2. Use [Common identity and device access policies](identity-access-policies.md) to configure the policies that build on the prerequisites and test protection for identities and access to resources.
 
 ## See also
 

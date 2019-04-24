@@ -57,7 +57,7 @@ Follow the instructions in [Phase 2 of the password writeback Test Lab Guide](pa
 
 Follow the instructions in [Phase 3 of the password reset Test Lab Guide](password-reset-m365-ent-test-environment.md#phase-3-configure-and-test-password-reset). 
 
-When enabling password reset for the accounts in a specific Azure AD group, add these accounts to the Password reset group:
+When enabling password reset for the accounts in a specific Azure AD group, add these accounts to the **Password reset** group:
 
 - User 2
 - User 3
@@ -105,7 +105,7 @@ The result is a test environment that meets the requirements of the [Active Dire
 
 ## Next step
 
-Use [Common identity and device access policies](identity-access-policies.md) to configure the policies that build on the prerequisites and protect identities and access to resources.
+Use [Common identity and device access policies](identity-access-policies.md) to configure the policies that build on the prerequisites and protect identities and devices.
 
 ## See also
 

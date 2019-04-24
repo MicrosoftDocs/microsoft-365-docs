@@ -1,5 +1,5 @@
 ---
-title: "Identity and device access prerequisites for cloud-only in your Microsoft 365 test environment"
+title: "Identity and device access prerequisites for cloud only in your Microsoft 365 test environment"
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
@@ -12,22 +12,22 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom:
-description: Create a Microsoft 365 environment to test identity and device access with the prerequisites for cloud-only authentication.
+description: Create a Microsoft 365 environment to test identity and device access with the prerequisites for cloud only authentication.
 ---
 
-# Identity and device access prerequisites for cloud-only in your Microsoft 365 test environment
+# Identity and device access prerequisites for cloud only in your Microsoft 365 test environment
 
 [Identity and device access configurations](microsoft-365-policies-configurations.md) are a set of configurations and conditional access policies to protect access to all services that are integrated with Azure Active Directory (Azure AD), including Office 365 and Enterprise Mobility + Security (EMS) in Microsoft 365 Enterprise.
 
-This article describes how to configure a Microsoft 365 test environment that meets the requirements of the [cloud-only prerequisite configuration](identity-access-prerequisites.md#prerequisites) for identity and device access.
+This article describes how to configure a Microsoft 365 test environment that meets the requirements of the [cloud only prerequisite configuration](identity-access-prerequisites.md#prerequisites) for identity and device access.
 
 There are seven phases to setting up this test environment:
 
-1.	Create a lightweight test environment
+1.	Build out your lightweight test environment
 2.	Configure named locations
 3.	Configure password writeback
-4.	Configure self-service password reset for all user accounts
-5.	Configure multifactor authentication for all user accounts
+4.	Configure self-service password resets
+5.	Configure multifactor authentication
 6.	Enable Azure AD Identity Protection
 7.	Enable modern authentication for Exchange Online and Skype for Business Online
 
@@ -97,11 +97,11 @@ For Skype for Business Online:
   Get-CsOAuthConfiguration
   ```
 
-The result is a test environment that meets the requirements of the [Cloud-only prerequisite configuration](identity-access-prerequisites.md#prerequisites) for identity and device access. 
+The result is a test environment that meets the requirements of the [cloud only prerequisite configuration](identity-access-prerequisites.md#prerequisites) for identity and device access. 
 
 ## Next step
 
-Use [Common identity and device access policies](identity-access-policies.md) to configure the policies that build on the prerequisites and protect identities and access to resources.
+Use [Common identity and device access policies](identity-access-policies.md) to configure the policies that build on the prerequisites and protect identities and devices.
 
 ## See also
 
