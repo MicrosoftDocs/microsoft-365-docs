@@ -20,6 +20,8 @@
 ### [Add Admin contacts](get-started/add-admin-contacts.md)
 ### [Order devices](get-started/devices.md)
 ### [Get started with devices](get-started/get-started-devices.md)
+### [Register devices in Microsoft Managed Desktop yourself](get-started/register-devices-self.md)
+### [Register devices in Microsoft Managed Desktop for Partners](get-started/register-devices-partner.md)
 ### [Deploy apps](get-started/deploy-apps.md)
 #### [Intune Company Portal](get-started/company-portal.md)
 #### [Microsoft Project and Microsoft Visio](get-started/project-visio.md)
