@@ -78,6 +78,11 @@ To demonstrate identity-related features and capabilities, see:
 
    Scan your current user accounts for vulnerabilities.
 
+- [Identity and device access](identity-device-access-m365-test-environment.md)
+
+   Create an environment to test recommended identity and device access configurations and conditional access policies.
+
+
 ## Mobile device management
 
 To demonstrate mobile device management-related features and capabilities, see:

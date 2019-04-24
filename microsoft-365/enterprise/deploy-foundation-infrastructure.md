@@ -12,12 +12,12 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom:
-description: Understand the major phases of deploying the foundation infrastructure for Microsoft 365 Enterprise in your organization.
+description: Understand the major phases of deploying the foundation infrastructure for Microsoft 365 Enterprise in your organization, also known as the core deployment.
 ---
 
 # Microsoft 365 Enterprise foundation infrastructure
 
-If you're doing the end-to-end deployment of Microsoft 365 Enterprise yourself, you should first build a firm foundation upon which applications and services can unlock creativity and teamwork in a secure environment. 
+If you're doing the end-to-end deployment of Microsoft 365 Enterprise yourself, you should first build a firm foundation upon which applications and services can unlock creativity and teamwork in a secure environment. This foundation is sometimes referred to as the core deployment.
 
 For a defined end-to-end path for deployment, you can use these phases to plan for and deploy the foundation infrastructure of Microsoft 365 Enterprise:
 
