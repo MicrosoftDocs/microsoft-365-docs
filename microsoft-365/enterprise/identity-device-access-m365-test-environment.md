@@ -27,7 +27,7 @@ To create a test environment that has these policies in place:
   - [Password hash sync (PHS)](phs-prereqs-m365-test-environment.md)
   - [Pass-through authentication (PTA)](pta-prereqs-m365-test-environment.md)
 
-2. Use [Common identity and device access policies](identity-access-policies.md) to configure the policies that build on the prerequisites and test protection for identities and access to resources.
+2. Use [Common identity and device access policies](identity-access-policies.md) to configure the policies that build on the prerequisites and test protection for identities and devices.
 
 ## See also
 
