@@ -84,7 +84,7 @@ Follow the instructions in [Phase 2 of the Azure AD Identity Protection Test Lab
 
 ## Phase 8: Enable modern authentication for Exchange Online and Skype for Business Online
 
-For Exchange Online, follow [these instructions](https://docs.microsoft.com/en-us/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online#enable-or-disable-modern-authentication-in-exchange-online-for-client-connections-in-outlook-2013-or-later). 
+For Exchange Online, follow [these instructions](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online#enable-or-disable-modern-authentication-in-exchange-online-for-client-connections-in-outlook-2013-or-later). 
 
 For Skype for Business Online:
 
