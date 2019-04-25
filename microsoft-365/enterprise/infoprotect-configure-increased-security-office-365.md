@@ -45,13 +45,13 @@ Office 365 ATP is only available with Microsoft 365 Enterprise E5.
 |![Test Lab Guides for the Microsoft cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Test Lab Guide: Configure increased Microsoft 365 security](increased-o365-security-microsoft-365-enterprise-dev-test-environment.md) |
 |||
 
-As an interim checkpoint, see the [exit criteria](infoprotect-exit-criteria.md#crit-infoprotect-step4) corresponding to this step.
+As an interim checkpoint, see the [exit criteria](infoprotect-exit-criteria.md#crit-infoprotect-step3) corresponding to this step.
 
 ## Next step
 
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step4.png)|[Configure privileged access management](infoprotect-configure-privileged-access-management.md)|
+|![](./media/stepnumbers/Step4.png)|[Configure Windows Information Protection](infoprotect-deploy-windows-information-protection.md)|
 
 
