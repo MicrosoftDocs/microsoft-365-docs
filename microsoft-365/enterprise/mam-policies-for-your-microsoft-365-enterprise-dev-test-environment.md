@@ -85,7 +85,7 @@ In this phase, you create a device compliance policy for Windows 10 devices.
 
 26. On the **Add app** blade, click **Add**.
 
-You now have a device compliance policy for testing the selected apps in the **Windows 10** device compliance policy and for members of the **Managed Windows 10 device users** group. Please make note selecting Office 365 as the group type will create additional resources. 
+You now have a device compliance policy for testing the selected apps in the **Windows 10** device compliance policy and for members of the **Managed Windows 10 device users** group. Please note that selecting Office 365 as the group type will create additional resources. 
   
 ## Next step
 
