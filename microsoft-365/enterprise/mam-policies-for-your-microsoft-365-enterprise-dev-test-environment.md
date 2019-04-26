@@ -37,7 +37,7 @@ If you want to configure MAM policies in a simulated enterprise, follow the inst
 
 In this phase, you create a device compliance policy for Windows 10 devices.
   
-1. Go to the Office portal at ([https://office.com](https://office.com)) and sign in to your Office 365 trial subscription with your global administrator account.
+1. Go to the Office 365 portal at ([https://portal.office.com](https://portal.office.com)) and sign in to your Office 365 test lab subscription with your global administrator account.
     
 2. On a new tab of your browser, open the Azure portal at [https://portal.azure.com](https://portal.azure.com).
 

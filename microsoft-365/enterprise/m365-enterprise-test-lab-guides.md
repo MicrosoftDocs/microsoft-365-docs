@@ -60,7 +60,7 @@ To demonstrate identity-related features and capabilities, see:
 
 - [Protect global administrator accounts](protect-global-administrator-accounts-microsoft-365-test-environment.md)
  
-   Lock down your global administrator accounts with Office 365 Cloud App Security and conditional access policies.
+   Lock down your global administrator accounts with conditional access policies.
 
 - [Password writeback](password-writeback-m365-ent-test-environment.md)
 
