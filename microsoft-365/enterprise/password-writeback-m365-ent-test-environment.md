@@ -50,9 +50,9 @@ This configuration consists of:
 
 First, configure the User 1 account with the global administrator role.
 
-1. From the [Office portal](https://office.com), sign in with your global administrator account.
+1. From the [Microsoft 365 admin center](https://portal.microsoft.com), sign in with your global administrator account.
 
-2. Click the **Admin** tile. From the new **Microsoft 365 admin center** tab of your browser, click **Active users**.
+2. Click **Active users**.
  
 3. On the **Active users** page, click the **user1** account,
 
