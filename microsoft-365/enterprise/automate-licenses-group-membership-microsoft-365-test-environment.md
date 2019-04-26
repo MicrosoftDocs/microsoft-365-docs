@@ -42,7 +42,7 @@ If you want to test automated licensing and group membership in a simulated ente
 
 First, you create a new Sales group and add a dynamic group membership rule so that user accounts with the Department set to Sales are automatically added to the Sales group.
 
-1. Using a private instance of your Internet browser, sign in to the Office portal at [https://office.com](https://office.com) with the global administrator account of your Office 365 E5 trial subscription.
+1. Using a private instance of your Internet browser, sign in to the Office 365 portal at [https://portal.office.com](https://portal.office.com) with the global administrator account of your Office 365 E5 test lab subscription.
 2. On a separate tab of your browser, go to the Azure portal at [https://portal.azure.com](https://portal.azure.com).
 3. In the Azure portal, click **Azure Active Directory > Users and groups > All groups**.
 4. On the **All groups** blade, click **New group**.
