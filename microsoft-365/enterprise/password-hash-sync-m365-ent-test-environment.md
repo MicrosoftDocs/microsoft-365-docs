@@ -98,19 +98,17 @@ First, you install and configure Azure AD Connect on APP1.
     
 10. On the **Configuration complete** page, click **Exit**.
     
-11. In Internet Explorer, go to the Office portal ([https://office.com](https://office.com)).
+11. In Internet Explorer, go to the Microsoft 365 admin center ([https://portal.microsoft.com](https://portal.microsoft.com)).
     
-12. From the main portal page, click **Admin**.
-    
-13. In the left navigation, click **Users > Active users**.
+12. In the left navigation, click **Users > Active users**.
     
     Note the account named **User1**. This account is from the TESTLAB AD DS domain and is proof that directory synchronization has worked.
     
-14. Click the **User1** account. For product licenses, click **Edit**.
+13. Click the **User1** account. For product licenses, click **Edit**.
     
-15. In **Product licenses**, select your scountry, and then click the **Off** control for **Office 365 Enterprise E5** (switching it to **On**). Do the same for the **Enterprise Mobility + Security E5** license. 
+14. In **Product licenses**, select your scountry, and then click the **Off** control for **Office 365 Enterprise E5** (switching it to **On**). Do the same for the **Enterprise Mobility + Security E5** license. 
 
-16. Click **Save** at the bottom of the page, and then click **Close**.
+15. Click **Save** at the bottom of the page, and then click **Close**.
     
 Next, you test the ability to sign in to your Office 365 subscription with the <strong>user1@testlab.</strong>\<your domain name> user name of the User1 account.
 

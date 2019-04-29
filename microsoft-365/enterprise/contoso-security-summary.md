@@ -52,7 +52,7 @@ In accordance with security best practices and Microsoft 365 Enterprise deployme
 
 - Dedicated global administrator accounts with MFA and PIM
 
-  Rather than assign the global admin role to everyday user accounts, Contoso created three, dedicated global administrator accounts with very strong passwords and protected them with multi-factor authentication (MFA) and Azure AD Privileged Identity Management (PIM). 
+  Rather than assign the global admin role to everyday user accounts, Contoso created three, dedicated global administrator accounts with very strong passwords and protected them with multi-factor authentication (MFA) and Azure AD Privileged Identity Management (PIM).  PIM is only available with Microsoft 365 Enterprise E5.
 
   Signing in with a global administrator account is only done for specific administrative tasks, the passwords are only known to designated staff, and can only be used within the time configured with Azure AD PIM. 
 
@@ -101,7 +101,7 @@ In accordance with security best practices and Microsoft 365 Enterprise deployme
 
 ## Information protection
 
-- Protect sensitive and highly regulated digital assets with Azure Information Protection
+- Protect sensitive and highly regulated digital assets with Azure Information Protection labels
 
   Contoso determined three levels of data protection and deployed [Azure Information Protection](https://docs.microsoft.com/azure/information-protection/what-is-information-protection) labels that users apply to digital assets. For its trade secrets and other intellectual property, Contoso uses Azure Information Protection sub-labels in a scoped policy for highly regulated data that encrypts content and restricts access to specific security groups.
 
@@ -115,11 +115,7 @@ In accordance with security best practices and Microsoft 365 Enterprise deployme
 
 - Cloud monitoring with Microsoft Cloud App Security
 
-  Contoso is using [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) to map their cloud environment, monitor its usage, and detect security events and incidents. 
-
-- Office 365 security monitoring with Office 365 Cloud App Security
-
-  Contoso security administrators set up alerts with [Office 365 Cloud App Security (CAS)](https://docs.microsoft.com/office365/securitycompliance/office-365-cas-overview) to be notified of unusual or risky user activity, such as downloading large amounts of data from SharePoint Online or OneDrive for Business, multiple failed sign-in attempts, or sign-ins from unknown or dangerous IP addresses.
+  Contoso is using [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) to map their cloud environment, monitor its usage, and detect security events and incidents. Microsoft Cloud App Security is only available with Microsoft 365 Enterprise E5.
 
 - Device management with Microsoft Intune
 
