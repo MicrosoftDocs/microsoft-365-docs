@@ -52,7 +52,7 @@ Security:
 
 ## Driver deployment
 
-MMD only supports device drivers that are available through Windows Update or installed inbox with the Microsoft Managed Device. 
+Microsoft Managed Desktop only supports device drivers that are available through Windows Update or installed inbox with the Microsoft Managed Device. 
 
 If an application requires a specific driver(s) to run it is considered a Restricted Application and requires an exemption to be deployed to Microsoft Managed Desktop. 
 
