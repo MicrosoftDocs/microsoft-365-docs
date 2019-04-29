@@ -7,7 +7,7 @@ localization_priority: Priority
 
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
-ms.date: 04/10/2019
+ms.date: 04/30/2019
 ms.author: heicba
 manager: laurawi
 audience: itpro
@@ -97,7 +97,17 @@ In Dynamics 365 for Marketing, you have the following additional capabilities:
 
 2.  Utilize the Insight Views on contacts and objects of marketing execution to identify additional data points that may contain customer data.
 
-Dynamics 365 Customer Service Insights provides capabilities for you to respond to requests for copies of personal data, to delete personal data, and to find the personal data that is the subject of Data Subject Discovery Requests (DSRs). For details, see [Overview of GDPR compliance for Dynamics 365 Customer Service Insights](https://docs.microsoft.com/dynamics365/ai/customer-service-insights/gdpr-summary).
+Dynamics 365 Customer Service Insights provides these capabilities: 
+
+1. [Find Customer Service Insights resources containing customer data](https://docs.microsoft.com/dynamics365/ai/customer-service-insights/gdpr-discovery) in order to respond to GDPR requests from customers. 
+
+2. [Provide a copy of customer data](https://docs.microsoft.com/dynamics365/ai/customer-service-insights/gdpr-export) by using data export.
+
+3. [Rectify or make changes to customer data](https://docs.microsoft.com/dynamics365/ai/customer-service-insights/gdpr-summary#a=note-about-requests-to-rectify-personal-data).
+
+4. [Delete customer data](https://docs.microsoft.com/dynamics365/ai/customer-service-insights/gdpr-export).
+
+5. [Export customer data](https://docs.microsoft.com/dynamics365/ai/customer-service-insights/gdpr-export) through the Azure management portal.
 
 <span id="_Toc511225658" class="anchor"></span>***Dynamics 365 Finance and Operations*** provides several ways for you to search for Customer Data. You as a Tenant Admin can perform the following actions to search for Customer Data:
 
