@@ -1,0 +1,2 @@
+{:allowed-branchname-matches ["master"]
+ :allowed-filename-matches ["microsoft-365/"]}
