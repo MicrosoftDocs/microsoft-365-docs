@@ -36,7 +36,7 @@ Contoso used the following steps to ready their security for their deployment of
 
 1. Limited administrator accounts for the cloud
 
-   Contoso did an extensive review of the existing Windows Server AD administrator accounts and set up a series of cloud administrator accounts and groups.
+   Contoso did an extensive review of the existing Active Directory Domain Services (AD DS) administrator accounts and set up a series of cloud administrator accounts and groups.
 
 2. Performed data classification analysis into three levels
 
@@ -77,7 +77,7 @@ In accordance with security best practices and Microsoft 365 Enterprise deployme
 
 - Windows Defender Credential Guard
 
-  To block targeted attacks and malware running in the operating system with administrative privileges, Contoso has enabled [Windows Defender Credential Guard](https://docs.microsoft.com/windows/security/identity-protection/credential-guard/credential-guard) through Windows Server AD group policy.
+  To block targeted attacks and malware running in the operating system with administrative privileges, Contoso has enabled [Windows Defender Credential Guard](https://docs.microsoft.com/windows/security/identity-protection/credential-guard/credential-guard) through AD DS group policy.
 
 ## Threat protection
 
@@ -91,9 +91,9 @@ In accordance with security best practices and Microsoft 365 Enterprise deployme
 
   Contoso has also enabled mailbox audit logging to determine who has logged into user mailboxes, sent messages, and other activities performed by the mailbox owner, a delegated user, or an administrator.
 
-- Attack monitoring and prevention with Office 365 Threat Intelligence
+- Attack monitoring and prevention with Office 365 threat investigation and response
 
-  Contoso uses [Office 365 Threat Intelligence](https://docs.microsoft.com/office365/securitycompliance/office-365-ti) to protect their Office 365 users by making it easy to identify and address attacks, and to prevent future attacks.
+  Contoso uses [Office 365 threat investigation and response](https://docs.microsoft.com/office365/securitycompliance/office-365-ti) to protect their Office 365 users by making it easy to identify and address attacks, and to prevent future attacks.
 
 - Protection from sophisticated attacks with Advanced Threat Analytics
 

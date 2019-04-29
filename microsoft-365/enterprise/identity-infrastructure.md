@@ -3,7 +3,7 @@ title: "Phase 2: Identity"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 02/25/2019
+ms.date: 04/16/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -26,6 +26,10 @@ In Microsoft 365 Enterprise, a well-planned and executed identity infrastructure
 >
 
 ## Plan and deploy your Microsoft 365 Enterprise identity infrastructure 
+
+Before you begin, watch this video for an overview of identity models and authentication for Microsoft 365.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2Pjwu]
 
 Use the following steps to plan and deploy your new identity infrastructure in the cloud. You can also use these steps to adapt your existing on-premises or hybrid identity infrastructure to work with Microsoft 365 Enterprise. 
 

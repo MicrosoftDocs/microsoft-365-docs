@@ -3,7 +3,7 @@ title: "Microsoft Teams and SharePoint Online sites for highly regulated data"
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 09/13/2018
+ms.date: 04/03/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -29,10 +29,10 @@ A Microsoft 365 Enterprise cloud-based solution that meets this business need re
 
 - Store digital assets (documents, slide decks, spreadsheets, etc.) in a SharePoint Online team site or in the **Files** tab of a Microsoft Teams team.
 - Lock down the site or team to prevent:
-   - Access to all except a specific set of user accounts through group membership, which includes those who can access the SharePoint Online team site and at what level of permission, and those who can administer it.
+   - Access to only a specific set of user accounts through group membership, which includes those who can access the SharePoint Online team site and at what level of permission, and those who can administer it.
    - Members of the site from granting access to others.
    - Non-members of the site from requesting access to the site.
-- Configure an Office 365 retention label for your SharePoint Online sites or teams as a default way to classify digital assets on the site.
+- Configure an Office 365 retention label for your SharePoint Online sites or teams as a default way to define retention policies on the documents in the site or team.
 - Block users from sending files outside the organization.
 - Encrypt the most sensitive digital assets of the site or team.
 - Add permissions to the most sensitive digital assets so that if even if they get shared outside of the site, opening the asset still requires the valid credentials of a user account that has permission.
@@ -52,7 +52,7 @@ The following table maps the requirements of this solution to a feature of Micro
 
 This solution requires that you have already deployed:
 
-- Your [foundation infrastructure](deploy-foundation-infrastructure.md). 
+- The [Identity](identity-infrastructure.md) phase and steps 1 and 2 of the [Information protection](infoprotect-infrastructure.md) phase of the foundation infrastructure. 
 - For highly regulated data in SharePoint Online team sites, [SharePoint Online](sharepoint-online-onedrive-workload.md).
 - For highly regulated data in Microsoft Teams teams, [Microsoft Teams](teams-workload.md).
 
@@ -100,7 +100,7 @@ When applied to a SharePoint Online team site, Office 365 retention labels provi
  
 For SharePoint Online sites for highly regulated data, you need to determine which Office 365 retention label to use.
 
-For the design considerations of Office 365 labels, see [Office 365 classification and labels](https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-and-files#office-365-classification-and-labels).
+For the design considerations of Office 365 labels, see [Office 365 classification and labels](https://docs.microsoft.com/office365/securitycompliance/secure-sharepoint-online-sites-and-files#office-365-retention-labels).
 
 To protect sensitive information and prevent its accidental or intentional disclosure, you use DLP policies. For more information, see this [overview](https://docs.microsoft.com/office365/securitycompliance/data-loss-prevention-policies).
 
@@ -113,8 +113,6 @@ To provide encryption and a set of permissions to your most sensitive digital as
 A sub-label exists under an existing label. For example, you can create a Research & Development sub-label under the Highly Confidential label. A scoped policy is one that applies only to a subset of users. For SharePoint Online sites for highly regulated data, the scope is the set of users that are members of the access groups for the site.
 
 The settings of the applied sub-label travel with the asset. Even if it is downloaded and shared outside the site, only authenticated user accounts that have permissions can open it.
-
-For the design considerations of Azure Information Protection labels, see [Azure Information Protection](https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-and-files#azure-information-protection).
 
 ### Design results
 

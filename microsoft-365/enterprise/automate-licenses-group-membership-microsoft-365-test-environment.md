@@ -36,7 +36,7 @@ If you just want to test automated licensing and group membership in a lightweig
 If you want to test automated licensing and group membership in a simulated enterprise, follow the instructions in [Pass-through authentication](pass-through-auth-m365-ent-test-environment.md).
   
 > [!NOTE]
-> Testing automated licensing and group membership does not require the simulated enterprise test environment, which includes a simulated intranet connected to the Internet and directory synchronization for a Windows Server AD forest. It is provided here as an option so that you can test automated licensing and group membership and experiment with it in an environment that represents a typical organization. 
+> Testing automated licensing and group membership does not require the simulated enterprise test environment, which includes a simulated intranet connected to the Internet and directory synchronization for a Active Directory Domain Services (AD DS) forest. It is provided here as an option so that you can test automated licensing and group membership and experiment with it in an environment that represents a typical organization. 
   
 ## Phase 2: Configure and test dynamic group membership and automatic licensing
 
@@ -68,7 +68,7 @@ Next, you configure the Sales group so that members are automatically assigned O
 Next, you test dynamic group membership and automatic licensing on the User 4 account. 
 
 1. From the **Microsoft Office Home** tab in your browser, click **Admin**.
-2. From the **Office Admin center** tab, click **Active users**.
+2. From the **Microsoft 365 admin center** tab, click **Active users**.
 3. On the **Active users** page, click the **User 4** account.
 4. On the **User 4** pane, click **Edit** for **Product licenses**.
 5. On the **Product licenses** pane, turn the **Enterprise Mobility + Security E5** and **Office 365 Enterprise E5** licenses off, and then click **Save > Close**.

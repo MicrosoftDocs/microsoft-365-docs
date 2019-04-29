@@ -3,7 +3,7 @@ title: "Deploy Microsoft 365 Enterprise"
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 02/26/2019
+ms.date: 04/23/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -27,10 +27,11 @@ Microsoft 365 Enterprise is a combination of Office 365, Enterprise Mobility + S
 
 These benefits are not realized just by obtaining the licenses for the three products, but by deploying them and their features in a specific way that includes integration and state-of-the-art security.
 
-There are two main ways to deploy Microsoft 365 Enterprise:
+There are three main ways to deploy Microsoft 365 Enterprise:
 
-- Do it with Microsoft engineers using FastTrack for Microsoft 365
-- Do it yourself with the Microsoft 365 Enterprise deployment guide
+- Do it with Microsoft engineers using FastTrack for Microsoft 365.
+- Do it with help from Microsoft Consulting Services or a [Microsoft partner](https://partner.microsoft.com/).
+- Do it yourself with the Microsoft 365 Enterprise deployment guide.
 
 ## FastTrack for Microsoft 365
 
@@ -42,7 +43,7 @@ Get started on your end-to-end deployment journey with FastTrack [here](https://
 
 ## Microsoft 365 Enterprise deployment guide
 
-The Microsoft 365 Enterprise Deployment Guide steps you through the correct and required configuration of Microsoft 365 Enterprise products and features.
+The Microsoft 365 Enterprise deployment guide steps you through the correct and required configuration of Microsoft 365 Enterprise products and features.
 
 To deploy Microsoft 365 Enterprise yourself, you can:
 

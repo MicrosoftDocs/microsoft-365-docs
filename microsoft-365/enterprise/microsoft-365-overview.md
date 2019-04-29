@@ -3,7 +3,7 @@ title: Microsoft 365 Enterprise overview
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/20/2019
+ms.date: 04/23/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -73,7 +73,7 @@ For more deployment information, see how:
 
 - [Customers](deploy-microsoft-365-enterprise.md#how-customers-use-microsoft-365-enterprise)  use Microsoft 365 Enterprise.
 - [Microsoft](deploy-microsoft-365-enterprise.md#how-microsoft-uses-microsoft-365-enterprise) uses Microsoft 365 Enterprise.
-- [The Contoso Corporation](contoso-overview.md) has deployed Microsoft 365 Enterprise.
+- [The Contoso Corporation](contoso-overview.md), a fictional but representative multinational organization, has deployed Microsoft 365 Enterprise.
 
 ## Additional Microsoft 365 solutions
 
@@ -85,12 +85,21 @@ For more deployment information, see how:
  
   Empower educators to unlock creativity, promote teamwork, and provide a simple and safe experience in a single, affordable solution built for education.
 
+- [Microsoft 365 Government](https://www.microsoft.com/microsoft-365/government)
+ 
+  Empower United States public sector employees to work together, securely.
+
+
 
 ## Microsoft 365 training
 
-Get yourself trained and work towards a Microsoft 365 certification. Start with [Microsoft 365 Fundamentals](https://docs.microsoft.com/learn/paths/m365-fundamentals/).
+|||
+|:-------|:-----|
+![](./media/m365-poster/m365-fundamentals.svg)| Get yourself trained and work towards a Microsoft 365 certification. <BR> Start with [Microsoft 365 Fundamentals](https://docs.microsoft.com/learn/paths/m365-fundamentals/).
 
-![](./media/m365-poster/m365-fundamentals.svg)
+
+
+
 
 ## Next step
 

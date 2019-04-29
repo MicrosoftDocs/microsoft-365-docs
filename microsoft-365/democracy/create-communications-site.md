@@ -25,11 +25,7 @@ description: "Create a communications site for your campaign."
 
 # Create a communications site for your campaign
 
-<<<<<<< HEAD
-Use a communication site to broadcast information out to a broad audience. With a communication site typically only a small set of members contribute content that is consumed by a much larger audience.
-=======
 A great way to communicate priorities, share strategy documents and highlight upcoming events is by using a communications site in SharePoint. Communications sites are for sharing things broadly across your whole campaign - it's your internal campaign site.
->>>>>>> m365-democracy
 
 ## Best practices
 
@@ -45,10 +41,14 @@ Include the following elements in your Communications site:
 
 ## Set it up
 
-Create a SharePoint communication site to share news, reports, status, and other information in a visually compelling format. Communication sites are responsive and can be viewed from anywhere on any device. For details, see [Create a communication site in SharePoint Online](https://support.office.com/en-us/article/Create-a-communication-site-in-SharePoint-Online-7FB44B20-A72F-4D2C-9173-FC8F59BA50EB).
+1. Sign in to Office 365.
+2. In the top left corner of the page, select the app launcher icon and then select the **SharePoint** tile. If you don't see the **SharePoint** tile, click the **Sites** tile or **All** if SharePoint is not visible.
+3. At the top of the SharePoint home page, click **+ Create site** and choose the **Communication site** option.
+
+Learn all [about Communications sites](https://support.office.com/en-us/article/What-is-a-SharePoint-communication-site-94A33429-E580-45C3-A090-5512A8070732) and how to [create a communication site in SharePoint Online](https://support.office.com/en-us/article/Create-a-communication-site-in-SharePoint-Online-7FB44B20-A72F-4D2C-9173-FC8F59BA50EB).
 
 
 ## Admin settings
 
-If you don't see the **+ Create site** link, then self-service site creation is likbely disabled in Office 365. Contact the person administering Office 365 in your orgainization to create a commuication site. If you're an administrator, see [Manage site creation in SharePoint Online](https://docs.microsoft.com/sharepoint/manage-site-creation) to enable self-service site creation for your organization.
+If you don't see the **+ Create** site link, self-service site creation may be disabled in Office 365. Contact the person administering Office 365 in your organization to create a team site. If you're a tenant administrator, see [Manage site creation in SharePoint Online](https://docs.microsoft.com/sharepoint/manage-site-creation) to enable self-service site creation for your organization or [Manage sites in the new SharePoint admin center](https://docs.microsoft.com/sharepoint/manage-sites-in-new-admin-center) to create a site from the SharePoint Online admin center.
   

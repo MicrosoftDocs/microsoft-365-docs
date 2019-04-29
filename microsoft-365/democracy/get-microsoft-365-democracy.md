@@ -24,28 +24,32 @@ description: "Learn how to purchase Microsoft 365 Business from Microsoft Partne
 
 # Get Microsoft 365 for Democracy
 
-REVISE--
-1. GET FROM NONPROFIT PROGRAM
-2. GET FROM MICROSOFT--GET THE TWO PLANS (M365B, AZURE AD P1)
-3. GET FROM A PARTNER
+There are several ways to get Microsoft 365 Business and Azure AD P1.
 
-## Get Microsoft 365 Business from Microsoft
+## Get Microsoft 365 for Democracy through Microsoft's nonprofit program
+coming soon
+
+## Get Microsoft 365 Business from Microsoft and add Azure AD P1 to your subscription
 
 If you don't have a partner and want to get Microsoft 365 Business, you can [buy it here](https://www.microsoft.com/en-US/microsoft-365/business).
+
+After setting up Microsoft 365 Business, add Azure AD P1 to your subscription. <link to instructions>
   
-## Get Microsoft 365 Business from Microsoft Partner Center
+## Get Microsoft 365 Business and Azure AD P1 from Microsoft Partner Center
 
 1. Sign in at [Microsoft Partner Center](https://go.microsoft.com/fwlink/p/?linkid=849910) by using the credentials you created when you enrolled to the Cloud Service Provider (CSP) program. 
     
 2. On the Partner Dashboard, choose Customers, then select your customer or add a new customer before you get Microsoft 365 Business.
     
-    ![In the Microsoft Partner center, add a new customer.](media/ec807d07-bbd2-411f-8fe1-c644cf9a3882.png)
+    ![In the Microsoft Pertner center, add a new customer.](../business/media/ec807d07-bbd2-411f-8fe1-c644cf9a3882.png)
   
 3. On the customer's **Subscription** page, select Add subscription, choose the Small business option under Catalog, and then choose **Microsoft 365 Business**.
     
+    
     Select the number of licenses you need (up to 300). If you have more than 300 users, see [Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=862316) instead. 
     
-    ![On the New subscription page choose small business.](media/52d99e89-2175-4974-84bb-dd626048541b.png)
+    ![On the New subscription page choose small business.](../business/media/52d99e89-2175-4974-84bb-dd626048541b.png)
+ 
   
     Complete the rest of the steps for adding a new customer including the business name.
     

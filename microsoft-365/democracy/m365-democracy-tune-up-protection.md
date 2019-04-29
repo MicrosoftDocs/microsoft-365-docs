@@ -26,9 +26,6 @@ description: "Get help with increasing the level of protection in your subscript
 
 This article helps you tune-up the protection in your Microsoft 365 subscription to protect against phishing, malware, and other threats. These recommendations are appropriate for organizations with an increased need for security, like political campaigns, law offices, and health care clinics. 
 
-GET ART FROM THIS ARTICLE/REPO [Top 10 ways to secure Office 365 and Microsoft Business plans](https://docs.microsoft.com/en-us/office365/admin/security-and-compliance/secure-your-business-data?view=o365-worldwide)
-
-- [Create a 2nd admin account and use admin accounts only for administration](#create-a-2nd-admin-account-and-use-admin-accounts-only-for-administration)
 - [Raise the level of protection against malware in mail](#raise-the-level-of-protection-against-malware-in-mail)
 - [Protect against ransomware](#protect-against-ransomware)
 - [Stop auto-forwarding for email](#stop-auto-forwarding-for-email)
@@ -41,22 +38,9 @@ GET ART FROM THIS ARTICLE/REPO [Top 10 ways to secure Office 365 and Microsoft B
 - Enable SPO retention policy for 30 days
 - Disable Anonymous Calendar Details "Internet Publish"
 
-## Create a 2nd admin account and use admin accounts only for administration
+Before you begin, check your Office 365 Secure Score. Office 365 Secure Score analyzes your Office 365 organization's security based on your regular activities and security settings and assigns a score. Begin by taking note of your current score. Taking the actions recommended in this article increases your score. The goal is not to achieve the max score, but to be aware of opportunities to protect your environment that do not negatively affect productivity for your users. 
 
-The administrative accounts you use to administer your Microsoft 365 environment include elevated privileges. These are valuable targets for hackers and cyber criminals. Use administrator accounts only for administration. Admins should have a separate user account for regular, non-administrative use and only use their administrative account when necessary to complete a task associated with their job function. 
-
-### Create a 2nd admin account [add procedure]
-You'll need a 2nd admin account when configuring conditional access to ensure you don't lock yourself out. 
-
-### Create a user account for yourself [add procedure]
-Use your user account to participate in collaboration with your organization, including checking mail.
-
-
-### Additional recommendations
-- Be sure admin accounts are also set up for multi-factor authentication. We'll show you how to do this in [Configure conditional access policies](m365-democracy-conditional-access.md).
-- Before using admin accounts, close out all unrelated browser sessions and apps, including personal email accounts.
-- After completing admin tasks, be sure to log out of the browser session.
-
+For more information, see [Microsoft Secure Score](https://docs.microsoft.com/en-us/office365/securitycompliance/microsoft-secure-score).
 
 ## Raise the level of protection against malware in mail
 <a name="malware"> </a>

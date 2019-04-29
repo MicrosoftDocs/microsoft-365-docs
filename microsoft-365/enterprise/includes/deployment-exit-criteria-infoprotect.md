@@ -3,7 +3,7 @@
 
 You've planned for and determined the security levels that your organization needs. These levels define a minimum level of security and additional levels for increasingly sensitive information and their required data security.
 
-At a minimum, you are using three levels of information protection:
+At a minimum, you are using three security levels:
 
 - Baseline
 - Sensitive
@@ -12,26 +12,29 @@ At a minimum, you are using three levels of information protection:
 If needed, [Step 1](../infoprotect-define-sec-infoprotect-levels.md) can help you meet this requirement. 
 
 <a name="crit-infoprotect-step4"></a>
-### Required: Increased security for Office 365 is configured
+### Required: Increased security for Microsoft 365 is configured
 
-You've configured the following settings for increased security based on the information in [Configure your Office 365 tenant for increased security](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security):
+You've configured the following settings for [Office 365 increased security](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security):
 
-- Threat management policies in the Office 365 Security & Compliance Center
+- Threat management policies in the Microsoft 365 security Center
 - Additional Exchange Online tenant-wide settings
 - Tenant-wide sharing policies in SharePoint admin center
-- Settings in Azure Active Directory
+- Settings in Azure Active Directory (Azure AD)
 
-You've also [enabled Office 365 Advanced Threat Protection (ATP) for SharePoint, OneDrive, and Microsoft Teams](https://docs.microsoft.com/office365/securitycompliance/atp-for-spo-odb-and-teams).
+You've also [enabled Office 365 Advanced Threat Protection (ATP) for SharePoint, OneDrive, and Microsoft Teams](https://docs.microsoft.com/en-us/office365/securitycompliance/turn-on-atp-for-spo-odb-and-teams).
 
 If needed, [Step 3](../infoprotect-configure-increased-security-office-365.md) can help you meet this requirement. 
 
 <a name="crit-infoprotect-step3"></a>
 ### Optional: Classification is configured across your environment
 
-You've worked with your legal and compliance teams to develop an appropriate classification and labeling scheme for your organization’s data, which can include the following:
+You've worked with your legal and compliance teams to develop an appropriate classification and labeling scheme for your organization’s data governance and security policies. 
+
+Those policies correspond to the configuration and deployment of:
 
 - Sensitive data types
-- Office 365 labels
+- Retention labels
+- Sensitivity labels
 - Azure Information Protection labels
 
 If needed, [Step 2](../infoprotect-configure-classification.md) can help you meet this requirement. 
@@ -39,6 +42,6 @@ If needed, [Step 2](../infoprotect-configure-classification.md) can help you mee
 <a name="crit-infoprotect-step5"></a>
 ### Optional: Configure privileged access management in Office 365
 
-You've used the information in the [Configure privileged access management in Office 365](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration) topic to enable privileged access  and create one or more privileged access policies in your Office 365 organization. You've configured these policies and just-in-time access is enabled for access to sensitive data or access to critical configuration settings.
+You've used the information in the [Configure privileged access management in Office 365](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration) topic to enable privileged access and create one or more privileged access policies in your organization. You've configured these policies and just-in-time access is enabled for access to sensitive data or access to critical configuration settings.
 
 If needed, [Step 4](../infoprotect-configure-privileged-access-management.md) can help you meet this requirement. 

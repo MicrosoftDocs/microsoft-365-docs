@@ -17,8 +17,6 @@ description: Learn how to prepare your end users for Windows 10 and Office 365 P
 
 # Step 8: User Communications and Training
 
-Inform and prepare your users for modern workplace experiences spanning Office 365, Windows 10 and new security and compliance controls with Azure Active Directory and more.
-
 ![](media/step-8-user-communications-and-training-media/step-8-user-communications-and-training-media-1.png)
 
 <table>
@@ -34,13 +32,13 @@ Inform and prepare your users for modern workplace experiences spanning Office 3
 >User Communications and Training is the eighth step in our recommended deployment process wheel by covering tips and recommendations to inform and prepare users. To see the full desktop deployment process, visit the [Desktop Deployment Center](https://aka.ms/HowToShift).
 >
 
-The trick here is to figure out how to introduce updates -- when some users may fear disruptions to their productivity or changes in their workflow, or if they have to learn new things.
+Informing and preparing your users for modern workplace experiences spanning Office 365, Windows 10, and new security and compliance controls with Azure Active Directory is critical to driving adoption. The trick here is to figure out how to introduce updates -- when some users may fear disruptions to their productivity or changes in their workflow, or if they have to learn new things.
 
 The good news is if you are moving from Windows 7 and Office 2010 or Office 2013, there will be a lot of people familiar with Windows 10 and newer versions of Office running on their personal devices, and all this will help reduce the impact of change.
 
 ## Getting ready for new experiences
 
-Starting with Office, if you’re deploying Office 365 ProPlus for the first time, this when you can communicate the benefits of signing in to Office apps and saving files to OneDrive or SharePoint locations to enable easier sharing, reduce file branching and enable real-time co-authoring.
+Starting with Office, if you’re deploying Office 365 ProPlus for the first time, this is when you can communicate the benefits of signing in to Office apps and saving files to OneDrive or SharePoint locations to enable easier sharing, reduce file branching and enable real-time co-authoring.
 
 Detailed communication and training templates are available for these and other local or browser-based apps, like Teams and Planner.
 
@@ -86,7 +84,7 @@ It’s important to have engaged members in the initial pilot phase, to make sur
 
 Once you feel good about the first phase, you can target a larger set of users for your second, pilot phase. This should comprise a representative mix of user roles, device types, Windows apps and Office add-ins. The data returning from these groups will be used via Analytics to target the initial waves for phase 3, the broader deployment.
 
-Remember, all PCs in this phase and future phases should be logging up to the Analytics service, so you can collect telemetry about device and app health as well as bandwidth savings from Delivery Optimization and use of Windows Hello login.
+Remember, all PCs in this phase and future phases should be logging up to the Analytics service, so you can collect diagnostic data about device and app health as well as bandwidth savings from Delivery Optimization and use of Windows Hello login.
 
 For this phase it is especially important to communicate changes and help users take advantage of new capabilities. Users can often de-prioritize or ignore email or other communications coming from IT – so it helps to meet with management to get their help in communicating change and drive adoption of new tools and technology.
 
@@ -118,11 +116,11 @@ As your pilot expands, you’ll want to document and publish frequently asked qu
 
 ### Phase 3 and beyond: Broad Production deployment 
 
-By the time you reach broad deployment phases, you’ll have refined your processes, communication, training and self-service tools. Now you can use data collected via telemetry to target more and more PCs.
+By the time you reach broad deployment phases, you’ll have refined your processes, communication, training and self-service tools. Now you can use the diagnostic data collected to target more and more PCs.
 
 Deploy at a rate that is manageable to your IT department, help desk, users and network capacity. You can always go back to Step 2 in the deployment process wheel to optimize your network even further using peer to peer cache, LEDBAT and other techniques to facilitate faster transfer of deployment-related data.
 
-In addition to the telemetry that you monitor via the analytics tools, you can also monitor Office 365 and Microsoft 365 service usage in a granular way with detailed usage reports in by workload in the admin center and using the admin dashboards via Power BI. These are great tools to help set and track goals as you roll-out new tools for working together – like Microsoft Teams – or new ways to share files – like OneDrive.
+In addition to the diagnostic data that you monitor via the analytics tools, you can also monitor Office 365 and Microsoft 365 service usage in a granular way with detailed usage reports in by workload in the admin center and using the admin dashboards via Power BI. These are great tools to help set and track goals as you roll-out new tools for working together – like Microsoft Teams – or new ways to share files – like OneDrive.
 
 New technology acceptance and adoption will go on long after every PC in your organization has Windows 10 and Office 365 ProPlus installed. And users won’t necessarily change how they work – without taking the time to inform and train them of new capabilities. Finally, with the new servicing models providing new capabilities on an ongoing semi-annual schedule for Windows and optionally a monthly schedule for Office, communication will be continual.
 
