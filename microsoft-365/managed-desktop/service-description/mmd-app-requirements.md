@@ -15,7 +15,7 @@ ms.collection: M365-modern-desktop
 
 <!--Application addendum -->
  
-In order to guarantee the performance, reliability, and serviceability of MMD Devices a customer’s line of business apps must not seriously impact end user experience or modify MMD’s the security stance. Consequently, Line-of-business applications that you want to deploy to Microsoft Managed Desktop devices must meet the requirements in this topic.
+In order to guarantee the performance, reliability, and serviceability of Microsoft Managed Desktop devices a customer’s line of business apps must not seriously impact end user experience or modify the security stance. Consequently, Line-of-business applications that you want to deploy to Microsoft Managed Desktop devices must meet the requirements in this topic.
 
 ## Application condition
 
