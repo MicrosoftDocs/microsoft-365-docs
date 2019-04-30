@@ -77,11 +77,11 @@ Dynamics 365 is an online service that offers multiple data processing capabilit
 ### Dynamics 365
 #### Finding customer data
 
-The first step in responding to a data subject rights request is to search for and identify the Customer Data that is the subject of the request.
+The first step in responding to a data subject rights request is to search for and identify the customer data that is the subject of the request.
 
-Classifying Customer Data appropriately is the cornerstone of working with personal data in Microsoft Dynamics 365 Customer Engagement. Dynamics 365 for Customer Engagement offers flexibility to build out an application extension around data classification. Proper classification enables you to identify information as personal data, thereby making it possible to locate and retrieve it when responding to requests from a data subject. It can also help enable compliance with legislative and regulatory requirements for collecting and managing personal data.
+Classifying customer data appropriately is the cornerstone of working with personal data in Dynamics 365 Customer Engagement business applications. Dynamics 365 for Customer Engagement offers flexibility to build out an application extension around data classification. Proper classification enables you to identify information as personal data, thereby making it possible to locate and retrieve it when responding to requests from a data subject. It can also help enable compliance with legislative and regulatory requirements for collecting and managing personal data.
 
-Microsoft provides capabilities that can assist you in responding to data subject rights requests, and thereby accessing Customer Data. However, it is your responsibility to ensure that personal data is located and classified appropriately.
+Microsoft provides capabilities that assist you in responding to data subject rights requests, and thereby accessing customer data. However, it is your responsibility to ensure that personal data is located and classified appropriately.
 
 <span id="_Toc511225657" class="anchor"></span>***Dynamics 365 for Customer Engagement*** provides multiple methods for you to search for personal data within records such as: Advanced Find Search, Relevance Search, and Search for Records. These functions all enable you to identify (find) personal data.
 
@@ -97,17 +97,9 @@ In Dynamics 365 for Marketing, you have the following additional capabilities:
 
 2.  Utilize the Insight Views on contacts and objects of marketing execution to identify additional data points that may contain customer data.
 
-Dynamics 365 Customer Service Insights provides these capabilities: 
+Dynamics 365 Customer Service Insights provides this list of resources to help you find customer data: 
 
-1. [Find Customer Service Insights resources containing customer data](https://docs.microsoft.com/dynamics365/ai/customer-service-insights/gdpr-discovery) in order to respond to GDPR requests from customers. 
-
-2. [Provide a copy of customer data](https://docs.microsoft.com/dynamics365/ai/customer-service-insights/gdpr-export) by using data export.
-
-3. [Rectify or make changes to customer data](https://docs.microsoft.com/dynamics365/ai/customer-service-insights/gdpr-summary#a=note-about-requests-to-rectify-personal-data).
-
-4. [Delete customer data](https://docs.microsoft.com/dynamics365/ai/customer-service-insights/gdpr-export).
-
-5. [Export customer data](https://docs.microsoft.com/dynamics365/ai/customer-service-insights/gdpr-export) through the Azure management portal.
+* [Find Customer Service Insights resources containing customer data](https://docs.microsoft.com/dynamics365/ai/customer-service-insights/gdpr-discovery) in order to respond to GDPR requests from customers. 
 
 <span id="_Toc511225658" class="anchor"></span>***Dynamics 365 Finance and Operations*** provides several ways for you to search for Customer Data. You as a Tenant Admin can perform the following actions to search for Customer Data:
 
@@ -138,6 +130,8 @@ Customer Data in ***Dynamics 365 for Customer Engagement*** can be exported usin
 
 Additionally, for Dynamics 365 for Marketing a [dedicated API](https://docs.microsoft.com/dynamics365/customer-engagement/marketing/developer/retrieve-interactions-contact) is provided that allows customer to build extensions that retrieve additional records of captured customer interactions that may contain personal data. The API loads all the relevant information from the back-end system and assembles it into a single, portable document.
 
+Dynamics 365 Customer Service Insights enables you to [provide a copy of customer data](https://docs.microsoft.com/dynamics365/ai/customer-service-insights/gdpr-export) by using data export.
+
 Customer Data in ***Dynamics 365 for Finance and Operations*** can be exported using the comprehensive entity export capabilities. Using [*Data management and integration entities*](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-management-integration-data-entity), the Tenant Admin may utilize provided entities, create new, or extend existing, entities for a repeatable personal data export to Excel or a number of other common formats using [*Data import and export jobs*](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-import-export-job).  Alternatively, many lists can be exported to a static Excel file to facilitate a data portability request. When customer data is exported to Excel, you can then edit the personal data to be included in the portability request and then save the file as a commonly used, machine-readable format such as .csv or .xml. You may also consider using the *Person Search Report *to provide the data subject with data that you've classified as personal data. 
 
 In ***Dynamics 365 Business Central***, you can make use of two features to provide a copy of Customer Data to a data subject:
@@ -159,6 +153,9 @@ Additionally, for Dynamics 365 for Marketing you can also:
 -   Update-my-data landing page, by editing single or multiple rows directly
 
 -   Prepare a [subscription centers](https://docs.microsoft.com/dynamics365/customer-engagement/marketing/set-up-subscription-center) page that has as many editable contact fields that can be included. This enables an end user to update their own information as much as possible.
+
+For Dynamics 365 Customer Service Insights, follow the steps in this article to [rectify or make changes to customer data](https://docs.microsoft.com/dynamics365/ai/customer-service-insights/gdpr-summary#a=note-about-requests-to-rectify-personal-data).
+
 
 In ***Dynamics 365 for Finance and Operations***, you may also use of [*customization tools*](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/dev-tools/developer-home-page), but the decision and implementation is your responsibility.
 
@@ -189,6 +186,8 @@ When a data subject asks you to delete their Customer Data, there are several wa
 
 Additionally, For Dynamics 365 Marketing, deletion of a contact will assure that interaction data with personal information will be removed as well. For any custom fields or entities, you must customize your system to make sure it deletes all Customer Data from related records and/or unlinks them from the contact record so that all personal information is removed. More information: [Developer Guide (Marketing)](https://docs.microsoft.com/dynamics365/customer-engagement/marketing/developer/marketing-developer-guide).
 
+For Dynamics 365 Customer Service Insights, follow the steps in this article to [delete customer data](https://docs.microsoft.com/dynamics365/ai/customer-service-insights/gdpr-export).
+
 Alternatively, in ***Dynamics 365 for Finance and Operations*** you may use [*customization tools*](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/dev-tools/developer-home-page) to erase/modify Customer Data.
 
 In ***Dynamics 365 Business Central***, when a data subject asks you to delete their personal data which happens to be included in your Customer Data, there are several ways to address this request:
@@ -207,7 +206,9 @@ Besides bulk or individual deletion of discrete records, please note that only t
 
 To respond to a data portability request, Customer Data in ***Dynamics 365 for Customer Engagement*** can be exported using the comprehensive entity export capabilities. Customer data can be exported to a static Excel file to facilitate a data portability request. Using Excel, you can then edit the personal data to be included in the portability request and then save as a commonly used, machine-readable format such as .csv or .xml.
 
-Additionally, for Dynamics 365 for Marketing a [dedicated API](https://docs.microsoft.com/dynamics365/customer-engagement/marketing/developer/retrieve-interactions-contact) is provided that allows customer to build extensions that retrieve additional records of captured customer interactions that may contain personal data. The API loads all the relevant information from the back-end system and assembles it into a single, portable document
+Additionally, for Dynamics 365 for Marketing a [dedicated API](https://docs.microsoft.com/dynamics365/customer-engagement/marketing/developer/retrieve-interactions-contact) is provided that allows customer to build extensions that retrieve additional records of captured customer interactions that may contain personal data. The API loads all the relevant information from the back-end system and assembles it into a single, portable document.
+
+For Dynamics 365 Customer Service Insights, follow the steps in this article to [export customer data](https://docs.microsoft.com/dynamics365/ai/customer-service-insights/gdpr-export) through the Azure management portal.
 
 <span id="_Toc511225669" class="anchor"></span>***Dynamics 365 for Finance and Operations*** offers [Data management and integration entities](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-management-integration-data-entity) which enables provided entities, newly created entities, or extended entities for a repeatable personal data export to Excel or a number of other common formats using [Data import and export jobs](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-import-export-job).  Alternatively, many lists can be exported to a static Excel file to facilitate a data portability request. When Customer Data is exported to Excel in this fashion, you can then edit the personal data to be included in the portability request and then save the file as a commonly used, machine-readable format such as .csv or .xml.
 
