@@ -360,41 +360,37 @@ In this phase, you create a new Microsoft 365 E5 subscription that use a new Azu
 First, follow the steps in Phase 2 and Phase 3 of the [Office 365 dev/test environment](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment) to create a lightweight Office 365 dev/test environment.
   
 Next, add the Microsoft 365 E5 trial subscription and assign a Microsoft 365 license to your global administrator account.
+
+1. With a private instance of an Internet browser, sign in to the Microsoft 365 admin center at [http://admin.microsoft.com](http://admin.microsoft.com) with your global administrator account credentials.
+    
+2. On the **Microsoft 365 admin center** page, in the left navigation, click **Billing > Purchase services**.
+    
+3. On the **Purchase services** page, find the **Microsoft 365 E5** item. Hover your mouse pointer over it and click **Start free trial**.
+
+4. On the **Microsoft 365 E5 Trial** page, choose to receive a text or a call, enter your phone number, then click **Text me** or **Call me**.
+
+5. On the **Confirm your order** page, click **Try now**.
+
+6. On the **Order receipt** page, click **Continue**.
+
+7. In the Microsoft 365 admin center, click **Active users**, and then your administrator account.
+
+8. Click **Edit** for **Product licenses**.
+
+9. Turn off the license for Office 365 Enterprise E5 and turn on the license for Microsoft 365 E5.
+
+10. Click **Save > Close > Close**.
+
+ Next, ***if you completed Phase 3 of the*** [Office 365 dev/test environment](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment), repeat steps 8 through 11 of the previous procedure for all of your other accounts (User 2, User 3, User 4, and User 5).
   
-1. With a private instance of an Internet browser, sign in to the Office portal with your global administrator account credentials. For help, see [Where to sign in to Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
-    
-2. Click the **Admin** tile.
-    
-3. On the **Microsoft 365 admin center** tab in your browser, in the left navigation, click **Billing > Purchase services**.
-    
-4. On the **Purchase services** page, find the **Microsoft 365 E5** item. Hover your mouse pointer over it and click **Start free trial**.
-
-5. On the **Microsoft 365 E5 Trial** page, choose to receive a text or a call, enter your phone number, then click **Text me** or **Call me**.
-
-6. On the **Confirm your order** page, click **Try now**.
-
-7. On the **Order receipt** page, click **Continue**.
-
-8. In the Microsoft 365 admin center, click **Active users**, and then your administrator account.
-
-9. Click **Edit** for **Product licenses**.
-
-10. Turn off the license for Office 365 Enterprise E5 and turn on the license for Microsoft 365 E5.
-
-11. Click **Save > Close > Close**.
-
 > [!NOTE]
 > The Microsoft 365 E5 trial subscription is 30 days. For a permanent test environment, convert this trial subscription to a paid subscription with a small number of licenses. 
-  
- ***If you completed Phase 3 of the*** [Office 365 dev/test environment](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment), repeat steps 8 through 11 of the previous procedure for all of your other accounts (User 2, User 3, User 4, and User 5).
   
 Your test environment now has:
   
 - A Microsoft 365 E5 trial subscription.
 - All your appropriate user accounts (either just the global administrator or all five user accounts) are enabled to use Microsoft 365 E5.
     
-Next, repeat steps 8 through 11 of the previous procedure for all of your other accounts (User 2, User 3, User 4, and User 5).
-  
 ### Results
 
 Your test environment now has:
