@@ -44,7 +44,7 @@ To demonstrate identity-related features and capabilities, see:
 
 - [Password hash synchronization](password-hash-sync-m365-ent-test-environment.md)
   
-   Enable and test password hash-based directory synchronization from a Active Directory Domain Services (AD DS) domain controller.
+   Enable and test password hash-based directory synchronization from a AD DS domain controller.
 
 - [Pass-through authentication](pass-through-auth-m365-ent-test-environment.md)
   

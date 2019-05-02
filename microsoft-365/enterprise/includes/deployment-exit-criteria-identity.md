@@ -65,7 +65,7 @@ To verify that authentication with on-premises credentials works correctly, sign
 
 To verify that directory synchronization is working correctly, do the following:
 
-1.	Create a new test group in Active Directory Domain Services (AD DS).
+1.	Create a new test group in AD DS.
 2.	Wait for the synchronization time.
 3.	Check your Azure AD tenant to verify that the new test group name appears.
 
