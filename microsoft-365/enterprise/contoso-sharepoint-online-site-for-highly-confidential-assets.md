@@ -65,9 +65,9 @@ Next, they created a new Office 365 DLP policy named **Research** that:
 
 - Uses the **Highly Confidential** Office 365 retention label. 
 - Is applied to the **Research** site.
-- Prevents users from sharing documents.
+- Blocks users when they attempt to share a digital asset on the **Research** site outside of Contoso.
 
-For the configuration details, see [Protect SharePoint Online files with Office 365 labels and DLP](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-office-365-labels-and-dlp).
+For the configuration details, see [Protect SharePoint Online files with retention labels and DLP](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-office-365-labels-and-dlp).
 
 ## Step 4: Created an Azure Information Protection sub-label for the site
 
@@ -88,7 +88,7 @@ Here is the resulting configuration of the **Research** site for highly confiden
 Files in folders of the **Research** site are protected by:
 
 - The **Research** Azure Information Protection sublabel, which applies encryption and permssions to each file that travel with the file when it is moved or copied from the **Research** site.
-- The **Research** DLP policy, which uses the **Highly Sensitive** retention label and settings that prevent the file from leaving the site.
+- The **Research** DLP policy, which uses the **Highly Sensitive** retention label and settings that prevent the file from being shared with external users.
 - The set of site permissions, which only allow access to members of the **Research-Members** and **Research-Viewers** security groups and administration by members of the **Research-Admins** security group.
 
 ## Step 5: Migrated the on-premises SharePoint research data

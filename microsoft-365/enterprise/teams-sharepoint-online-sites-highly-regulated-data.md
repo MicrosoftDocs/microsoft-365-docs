@@ -120,7 +120,7 @@ You have determined the following:
 
 - The set of SharePoint groups and permission levels
 - The set of access groups and their members for each permission level
-- The appropriate Office 365 retentionn label and the DLP policy that is associated with the label
+- The appropriate Office 365 retention label and the DLP policy that is associated with the label
 - The settings of the Azure Information Protection sub-label that include encryption and permissions
 
 ## Phase 2: Configure

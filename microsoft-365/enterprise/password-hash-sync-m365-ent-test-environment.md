@@ -41,7 +41,7 @@ Follow the instructions in [simulated enterprise base configuration for Microsof
 This configuration consists of: 
   
 - Office 365 E5 and EMS E5 trial or paid subscriptions.
-- A simplified organization intranet connected to the Internet, consisting of the DC1, APP1, and CLIENT1 virtual machines in an Azure virtual network. DC1 is a domain controller for the testlab.\<your public domain name> Active Directory Domain Services (AD DS) domain.
+- A simplified organization intranet connected to the Internet, consisting of the DC1, APP1, and CLIENT1 virtual machines in an Azure virtual network. DC1 is a domain controller for the testlab.\<your public domain name> AD DS domain.
 
 ## Phase 2: Create and register the testlab domain
 
