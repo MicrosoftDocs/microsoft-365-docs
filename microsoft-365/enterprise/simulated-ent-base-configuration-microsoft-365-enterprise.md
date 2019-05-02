@@ -358,7 +358,11 @@ In this phase, you create a new Microsoft 365 E5 subscription that use a new Azu
 ### Use trial subscriptions
 
 First, follow the steps in Phase 2 and Phase 3 of the [Office 365 dev/test environment](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment) to create a lightweight Office 365 dev/test environment.
-  
+
+>[!Note]
+>We have you create a trial subscription of Office 365 so that your dev/test environment has a separate Azure AD tenant from any paid subscriptions you currently have. This separation means you can add and remove users and groups in the test tenant without effecting your production subscriptions.
+>
+
 Next, add the Microsoft 365 E5 trial subscription and assign a Microsoft 365 license to your global administrator account.
 
 1. With a private instance of an Internet browser, sign in to the Microsoft 365 admin center at [http://admin.microsoft.com](http://admin.microsoft.com) with your global administrator account credentials.
@@ -384,7 +388,7 @@ Next, add the Microsoft 365 E5 trial subscription and assign a Microsoft 365 lic
  Next, ***if you completed Phase 3 of the*** [Office 365 dev/test environment](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment), repeat steps 8 through 11 of the previous procedure for all of your other accounts (User 2, User 3, User 4, and User 5).
   
 > [!NOTE]
-> The Microsoft 365 E5 trial subscription is 30 days. For a permanent test environment, convert this trial subscription to a paid subscription with a small number of licenses. 
+> The Microsoft 365 E5 trial subscription is 30 days. For a permanent test environment, convert this trial subscription to a paid subscription with a small number of licenses.
   
 Your test environment now has:
   
