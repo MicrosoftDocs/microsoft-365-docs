@@ -33,7 +33,6 @@ Prescribed conditional access policies for Microsoft 365 for Democracy
 - Require MFA for all users
 - Require approved apps
 - Block clients that don't support modern authentication
-- Require Outlook mobile
 - Configure app protection policies (one policy per platform--iOS, Android)
 
 Configuration for these policies in this article (subset): [Common identity and device access policies](https://docs.microsoft.com/en-us/microsoft-365/enterprise/identity-access-policies)
