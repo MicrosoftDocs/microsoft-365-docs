@@ -24,6 +24,8 @@ description: "Install or uninstall Office on Windows 10 devices from the Microso
 
 # Automatically install or uninstall Office on Windows 10 devices
 
+![Banner that point to https://aka.ms/aboutM365preview.](media/m365admincenterchanging.png)
+
 You can quickly and easily install Office to Windows 10 PCs from the Microsoft 365 Business admin center.
   
 To understand how this works with previously installed Office apps, read [Prepare for Office client installation](prepare-for-office-client-deployment.md) before you get started. 

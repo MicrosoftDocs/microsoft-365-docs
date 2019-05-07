@@ -6,8 +6,7 @@ manager: scotv
 ms.audience: Admin
 ms.topic: conceptual
 f1_keywords:
-- 'O365E_BCSSetup4OfficeMobile
-'
+- 'O365E_BCSSetup4OfficeMobile'
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
