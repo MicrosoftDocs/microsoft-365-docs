@@ -28,7 +28,7 @@ description: "Learn how to add new users, secure their devices,  and assign role
 
 1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>. 
 2. In the left nav choose **Users** \> **Active users**.
-1. On the Active users page, choose Add a user
+1. On the **Active users** page, choose **Add a user**
  4. In the **New user** panel, type in the required information. 
   
     You can also enter additional information under **Contact information**, choose how you set the password under **Password** setting, and assign roles under the **Roles**.
