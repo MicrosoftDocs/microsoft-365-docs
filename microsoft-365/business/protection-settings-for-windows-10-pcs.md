@@ -29,7 +29,7 @@ View a video on how to secure Windows 10 devices with Microsoft 365 Business:
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/a5734146-620a-4cec-8618-536b3ca37972?autoplay=false]
   
-1. Sign in to [admin center](https://go.microsoft.com/fwlink/p/?linkid=837890) with global admin credentials. 
+1. SGo to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>. 
     
 2. On the left nav, choose **Devices** \> **Policies** \> **Add**.
   
