@@ -120,7 +120,7 @@ You have determined the following:
 
 - The set of SharePoint groups and permission levels
 - The set of access groups and their members for each permission level
-- The appropriate Office 365 retentionn label and the DLP policy that is associated with the label
+- The appropriate Office 365 retention label and the DLP policy that is associated with the label
 - The settings of the Azure Information Protection sub-label that include encryption and permissions
 
 ## Phase 2: Configure
@@ -203,6 +203,10 @@ Retrain your users as needed.
 ### User adoption results
 
 Sensitive digital assets are stored exclusively on SharePoint Online sites or teams for highly regulated data and that the most sensitive assets have the configured Azure Information Protection sub-label applied.
+
+## How the Contoso Corporation deployed Microsoft 365 Enterprise
+
+The Contoso Corporation is a fictional but representative global manufacturing conglomerate with its headquarters in Paris, France. See how Contoso designed, configured, and then drove the adoption of a [secure SharePoint Online site](contoso-sharepoint-online-site-for-highly-confidential-assets.md) for their research teams in Paris, Moscow, New York, Beijing, and Bangalore. 
 
 ## See also
 

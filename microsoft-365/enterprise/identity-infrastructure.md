@@ -53,10 +53,7 @@ Microsoft provides a set of recommendations for [identity and device access](mic
 
 ## How Microsoft does Microsoft 365 Enterprise
 
-Learn how IT experts at Microsoft planned for and deployed the identity capabilities of Microsoft 365 Enterprise with these resources:
-
-- [Managing user identities and secure access at Microsoft](https://www.microsoft.com/itshowcase/Article/Content/931/Managing-user-identities-and-secure-access-at-Microsoft)
-- [Using Azure AD Privileged Identity Management for elevated access](https://www.microsoft.com/itshowcase/Article/Content/887/Using-Azure-AD-Privileged-Identity-Management-for-elevated-access)
+Learn how IT experts at Microsoft [manage identities and secure access](https://www.microsoft.com/en-us/itshowcase/deploying-and-managing-microsoft-365#primaryR5).
 
 ## How Contoso did Microsoft 365 Enterprise
 

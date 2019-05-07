@@ -37,7 +37,7 @@ When your organization adopts Microsoft 365 Enterprise, your primary identity pr
 - **Active Directory Domain Services (AD DS)**, an intranet identity provider hosted on computers running Windows Server. This is typically used by organizations that have an existing on-premises identity provider.
 - **Azure Active Directory (Azure AD)**, a cloud-based Identity as a Service (IDaaS) that provides a broad range of capabilities for managing and protecting your environment. This is typically used by organizations that have no existing on-premises infrastructure.
 
-If your organization has an existing on-premises identity provider, you need to synchronize your user accounts and groups from Active Directory Domain Services (AD DS) to Azure AD to provide more seamless access to the cloud-based services of Microsoft 365 Enterprise. You can also use Azure AD to create and manage groups that exist only in the Microsoft cloud.
+If your organization has an existing on-premises identity provider, you need to synchronize your user accounts and groups from AD DS to Azure AD to provide more seamless access to the cloud-based services of Microsoft 365 Enterprise. You can also use Azure AD to create and manage groups that exist only in the Microsoft cloud.
 
 After you have your users and groups in Azure AD, you can:
 

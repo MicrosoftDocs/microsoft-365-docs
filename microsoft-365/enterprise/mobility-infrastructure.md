@@ -158,11 +158,7 @@ Microsoft provides a set of recommendations for [identity and device access](mic
 
 ## How Microsoft does Microsoft 365 Enterprise
 
-Learn how IT experts at Microsoft planned for and deployed EMS and device management with these resources:
-
-- [Managing modern mobile productivity with Enterprise Mobility + Security](https://www.microsoft.com/itshowcase/Article/Content/972/Managing-modern-mobile-productivity-with-Enterprise-Mobility--Security)
-- [Connecting to work on your Windows 10 device with Microsoft Intune](https://www.microsoft.com/itshowcase/Article/Content/783/Connecting-to-work-on-your-Windows-10-device-with-Microsoft-Intune)
-- [Enabling mobile productivity for iOS, OS X, and Android devices at Microsoft](https://www.microsoft.com/itshowcase/Article/Content/773/Enabling-mobile-productivity-for-iOS-OS-X-and-Android-devices-at-Microsoft)
+Learn how IT experts at Microsoft [manage devices with EMS](https://www.microsoft.com/en-us/itshowcase/deploying-and-managing-microsoft-365#primaryR8).
 
 ## How Contoso did Microsoft 365 Enterprise
 

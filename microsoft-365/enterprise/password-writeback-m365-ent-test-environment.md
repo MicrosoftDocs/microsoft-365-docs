@@ -20,7 +20,7 @@ description: "Summary: Configure password writeback for your Microsoft 365 test 
 
 # Password writeback for your Microsoft 365 test environment
 
-Password writeback allows users to update their passwords through Azure Active Directory (Azure AD), which is then replicated to your local Active Directory Domain Services (AD DS). With password writeback, users don’t need to update their passwords through the on-premises Active Directory Domain Services (AD DS) where their original user accounts are stored. This helps roaming or remote users who do not have a remote access connection to their on-premises network.
+Password writeback allows users to update their passwords through Azure Active Directory (Azure AD), which is then replicated to your local Active Directory Domain Services (AD DS). With password writeback, users don’t need to update their passwords through the on-premises AD DS where their original user accounts are stored. This helps roaming or remote users who do not have a remote access connection to their on-premises network.
 
 This article describes how you can configure your Microsoft 365 test environment for password writeback.
 
@@ -50,9 +50,9 @@ This configuration consists of:
 
 First, configure the User 1 account with the global administrator role.
 
-1. From the [Office portal](https://office.com), sign in with your global administrator account.
+1. From the [Microsoft 365 admin center](https://portal.microsoft.com), sign in with your global administrator account.
 
-2. Click the **Admin** tile. From the new **Microsoft 365 admin center** tab of your browser, click **Active users**.
+2. Click **Active users**.
  
 3. On the **Active users** page, click the **user1** account,
 
