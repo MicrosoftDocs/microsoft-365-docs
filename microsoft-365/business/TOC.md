@@ -7,7 +7,7 @@
 ### [Set up mobile devices](set-up-mobile-devices.md)
 ### [Set up Windows devices](set-up-windows-devices.md)
 ### [Set up advanced security features](set-up-advanced-security.md)
-### [Top 10 ways to secure your business](/Office365/Admin/security-and-compliance/secure-your-business-data?toc=/microsoft-365/business/toc.json&bc=/microsoft-365/business/breadcrumb/toc.json)
+### [Top 10 ways to secure your business](/Office365/Admin/security-and-compliance/secure-your-business-data.md?toc=/microsoft-365/business/toc.json&bc=/microsoft-365/business/breadcrumb/toc.json)
 ### [Prepare for Office client deployment](prepare-for-office-client-deployment.md)
 ### [Auto install or uninstall Office](auto-install-or-uninstall-office.md)
 ### [Access on-premises resources]()
