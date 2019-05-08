@@ -447,7 +447,7 @@ For more information about previewing search results, see [Preview search result
 
 #### Export and download items
 
-You can also export the results of a content search to get a copy of email messages, documents, lists, and web pages containing the personal data, though this method is more involved than previewing items. See the next section for details about [exporting the results of a Content Search](#_Step_6:_Export_1).
+You can also export the results of a content search to get a copy of email messages, documents, lists, and web pages containing the personal data, though this method is more involved than previewing items. See the next section for details about [exporting the results of a Content Search](#export-and-download-content-using-content-search).
 
 ## Exporting personal data
 
@@ -575,7 +575,7 @@ Similarly, you may determine to delete a user’s OneDrive for Business site in 
 
 ### Deleting OneDrive for Business and SharePoint Online Experience Settings
 
-In addition to user-created files stored in OneDrive for Business accounts and SharePoint Online sites, these services store information about the user that is used to enable various experiences. These were previously documented in this document. See the [Additional considerations for select applications](#_Additional_considerations_for) section under [Using the Content Search eDiscovery tool to respond to DSRs](#_Set__up), for information about how to access, view, and export OneDrive for Business and SharePoint Online application data.
+In addition to user-created files stored in OneDrive for Business accounts and SharePoint Online sites, these services store information about the user that is used to enable various experiences. These were previously documented in this document. See the [Additional considerations for selected applications](#additional-considerations-for-selected-applications) section under [Using the Content Search eDiscovery tool to respond to DSRs](#using-the-content-search-ediscovery-tool-to-respond-to-dsrs) for information about how to access, view, and export OneDrive for Business and SharePoint Online application data.
 
 #### Deleting a SharePoint user profile
 
@@ -651,7 +651,7 @@ After you delete an Office 365 user account:
 -   System-generated logs about the data subject will be deleted 30 days after the user account is deleted. For more information, see the section [Deleting system-generated logs](#deleting-system-generated-logs).
 
 > [!IMPORTANT] 
-> After you delete a user account, that person will lose the ability to sign in to Office 365 and the ability to sign in to any products or services for which he or she formerly relied upon for a work or school account. That person would also be unable to initiate any DSR requests through Microsoft directly in instances where Microsoft is the data controller. For more information, see the [Product and services authenticated with an Org ID for which Microsoft is a data controller](#_Product_and_services) section in Part 4 of this guide.
+> After you delete a user account, that person will lose the ability to sign in to Office 365 and the ability to sign in to any products or services for which he or she formerly relied upon for a work or school account. That person would also be unable to initiate any DSR requests through Microsoft directly in instances where Microsoft is the data controller. For more information, see the [Product and services authenticated with an Org ID for which Microsoft is a data controller](#product-and-services-authenticated-with-an-org-id-for-which-microsoft-is-a-data-controller) section in Part 4 of this guide.
 
 > [!NOTE]
 > In the event that you are a customer currently engaged in FastTrack migrations, deleting the Office 365 user account will not delete the data copy held by the Microsoft FastTrack team, which is held for the sole purpose of completing the migration. If, during the migration, you would like the Microsoft FastTrack team to also delete the data copy, you can [submit a request](https://go.microsoft.com/fwlink/?linkid=874544). In the ordinary course of business, Microsoft FastTrack will delete all data copies once the migration is complete.
@@ -1070,7 +1070,7 @@ Planner plans are associated with an Office 365 Group, and the files for Office 
 
 #### Access
 
-As previously explained, you can search the underling SharePoint Online site and mailbox that are associated with a plan. Then you can preview or download the related search results to access data.
+As previously explained, you can search the underlying SharePoint Online site and mailbox that are associated with a plan. Then you can preview or download the related search results to access data.
 
 #### Delete
 
@@ -1247,7 +1247,7 @@ To export a Sway, open the Sway that you would like to download, select the seri
 The following sections explain how use the in-app functionality in Microsoft Whiteboard to find, access, export, and delete personal data.
 
 - [Whiteboard 2016 on Surface Hub](#whiteboard-2016-on-surface-hub)
-- [ Whiteboard on all other platforms](#-whiteboard-for-pc-surface-hub-and-other-platforms)
+- [Whiteboard on all other platforms](#whiteboard-for-pc-surface-hub-and-other-platforms)
 
 #### Whiteboard 2016 on Surface Hub
 
