@@ -1948,5 +1948,5 @@ The following table lists the changes to the Office 365 DSR guide since its init
 |11/08/2018     |    [Workplace Analytics](#workplace-analytics)     |Added step-by-step guidance to the Delete section about removing a data subject from Workplace Analytics and removing information about a data subject from a Workplace Analytics report.|
 |11/12/2018| All| Fixed broken bookmarks and broken links to external topics.|
 |1/9/2019|[StaffHub](#staffhub)|In the Delete section, updated the description of what happens when a user account is permanently deleted.|
-|5/7/2019| [Publisher](#publisher)|Added content about responding to DSRs for Publisher.|
+|5/8/2019| [Publisher](#publisher)|Added content about responding to DSRs for Publisher.|
 ||||
