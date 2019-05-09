@@ -27,6 +27,8 @@ description: "Learn how to purchase Microsoft 365 Business from Microsoft Partne
 ## Get Microsoft 365 Business from Microsoft
 
 If you don't have a partner and want to get Microsoft 365 Business, you can [buy it here](https://www.microsoft.com/en-US/microsoft-365/business).
+
+See [sign up for Microsoft 365 Business](sign-up.md) for detailed instructions.
   
 ## Get Microsoft 365 Business from Microsoft Partner Center
 
