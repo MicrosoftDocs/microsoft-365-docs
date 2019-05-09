@@ -1,20 +1,90 @@
 ---
-title: Preparing apps for Microsoft Managed Desktop 
+title: Apps in Microsoft Managed Desktop 
 description:  
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
-author: trudyha
+author: jaimeo
 ms.localizationpriority: normal
-ms.date: 09/24/2018
 ms.collection: M365-modern-desktop
 ---
 
-# Preparing apps for Microsoft Managed Desktop
+# Apps in Microsoft Managed Desktop
 
 <!--This topic is the target for 2 "Learn more" links in the Admin Portal (aka.ms/app-overview;app-package); also target for link from Online resources (aka.ms/app-overviewmmd-app-prep) do not delete.-->
 
 <!--Applications: supported/onboard/deployment -->
  
+## Apps generally
+
+Microsoft includes certain key apps along with the Microsoft 365 E3 or E5 license needed to participate in Microsoft Managed Desktop. However, even though we provide these apps, you still have certain responsibilities and actions to complete.
+
+You can also have additional non-Microsoft apps included in the image delivered to your Microsoft Managed Desktop users. To have those apps packaged and included with the image, you can engage with Microsoft C Services, hire a non-Microsoft vendor, or handle the packaging yourself. In each of these cases, there are somewhat different requirements and actions you must take.
+
+
+## Apps provided by Microsoft
+
+Included with your Microsoft Managed Desktop license are 64-bit versions of the apps in the Office 365 Standard Suite (Word, Excel, PowerPoint, Outlook, Publisher, Access, Skype for Business {still true or replaced by Teams now?}, OneNote.) Click-to-Run versions of Microsoft Project and Visio are *not* included by default, but you can request them.
+
+### What Microsoft does to support the apps we provide
+
+Microsoft will provide full service for the deployment, update, and support for the included Office 365 apps. Click-to-Run versions of Microsoft Project and Visio are *not* included by default, but Microsoft Managed Desktop will provide deployment groups allowing the IT administrator to manage licenses and deploy these applications appropriately for your organization. Microsoft will support end users of these applications through the Microsoft Managed Desktop support channels.
+
+### What you need to do to support the apps we provide
+
+There are still certain things you need to do with these apps:
+
+- Assign licenses - You are responsible for assigning the appropriate licenses to end users for Office 365.
+- Add users to security groups - If you're using Microsoft Project or Visio, the IT administrator must add those users to the appropriate deployment groups. IT administrators are also responsible for managing end of life {? referring to the license or what?} for those users.
+- Deploy Office 365 Addons - If you need any Addons for any of the Office 365 apps, it's up to you to deploy those. {when should they do that? How do they do that?}
+
+## Apps you provide
+
+### Preparing your own apps for inclusion in Microsoft Managed Desktop
+Review your apps, checking:
+
+- prohibited?
+- ready for Intune?
+		- pre-packaging requirements?
+	
+### Decide how to package apps
+
+You can engage with MCS to package your apps {how do I engage w/ them?}
+
+You can work with a non-Microsoft vendor
+
+You can package apps yourself
+
+If you or a non-MS vendor does the packaging, these are the actions you're responsible for:
+- You must provide the source installer files (setup.exe & instructions) {do we mean files?}
+- You must provide installation instructions {for who? end-users or...?} --what customer wants the final installation to look like (shortcut, visibility, server)
+- You must upload to Intune and assign apps to appropriate groups (what kind? Deployment group?) --AAD group (see deploy apps topic)
+- You must perform your own acceptance testing
+
+Microsoft will handle these actions: MCS case
+- Check that the app is not prohibited WRONG
+- Compatibility testing {compatibility with what?} Win10 compat (install/launch/uninstall)
+- app remediation {what does this mean?} --if it sucks they'll hand it off to Desktop App Assure program
+- app packaging 
+- deployment testing {meaning what exactly?} -- related to compat testing 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Microsoft and Microsoft Managed Desktop customers have equally critical, yet different responsibilities around applications used with Microsoft Managed Desktop.
 
 ## Microsoft responsibilities
