@@ -34,7 +34,7 @@ It's a recommended secure configuration that includes both Microsoft 365 Busines
 - Protect your work files on all of your iOS, Android, and Windows 10 devices with enterprise-grade security that is simple to manage 
 - Apply extra protection for user accounts and identity with Azure Active Directory P1
 
-![Microsoft 365 Business and Azure Active Directory P1 protect your productivity tools, collaboration tools, file storage, email, devices, and identity](../images/campaigns/sm-M365-campaigns-WhatIsIt.png)
+![Microsoft 365 Business and Azure Active Directory P1 protect your productivity tools, collaboration tools, file storage, email, devices, and identity](../images/campaigns/sm-M365-democracy-WhatIsIt.png)
 
 While some organizations qualify for nonprofit pricing for Microsoft 365 Business and Azure Active Directory P1, any organization with both these plans can take advantage of this guidance to configure increased security and learn how to collaborate securely.
 
