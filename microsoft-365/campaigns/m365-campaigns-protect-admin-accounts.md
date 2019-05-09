@@ -34,7 +34,7 @@ Because the admin accounts come with elevated privileges they are also valuable 
 
 Use admin accounts only for administration. Admins should have a separate user account for regular use of Office apps and only use their administrative account when necessary to manage accounts, devices and while working on other admin functions.  It is also a good idea to remove the Microsoft 365 Business license from the admin accounts so you don't have to pay for them.
 
-You'll want to set up at least one additional global admin account to give admin access to another trusted employee. You should also create a back-up account that to which you keep the password in a secure place that isn't set up with multi-factor authentication (MFA) so you don't accidentally lock yourself out (for example if you lose your phone that you are using as a second from of verification). You can also crete separate admin accounts for user management (this role is called **User management administrator**). See [about admin roles](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) for more information.
+You'll want to set up at least one additional global admin account to give admin access to another trusted employee. You can also crete separate admin accounts for user management (this role is called **User management administrator**). See [about admin roles](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) for more information.
 
 To create additional admin accounts:
 
@@ -52,6 +52,10 @@ To create additional admin accounts:
 4. In the **Product licenses** section, move the selector for **Microsoft 365 Business** to **Off** and the **Create user without product license** to **On**.
 
     ![Choose the administrator role](../images/democracy/productlicense.png)
+
+## Create an emergency admin account
+
+You should also create a back-up account that to which you keep the password in a secure place that isn't set up with multi-factor authentication (MFA) so you don't accidentally lock yourself out (for example if you lose your phone that you are using as a second from of verification). This is often referred to as a "break-glass account".
 
 ## Create a user account for yourself
 
