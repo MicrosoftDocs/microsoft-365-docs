@@ -1,5 +1,5 @@
 ---
-title: "Get Microsoft 365 for Democracy"
+title: "Get Microsoft 365 for campaigns"
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -22,11 +22,11 @@ ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: "Learn how to purchase Microsoft 365 Business from Microsoft Partner Center."
 ---
 
-# Get Microsoft 365 for Democracy
+# Get Microsoft 365 for campaigns
 
 There are several ways to get Microsoft 365 Business and Azure AD P1.
 
-## Get Microsoft 365 for Democracy through Microsoft's nonprofit program
+## Get Microsoft 365 for campaigns through Microsoft's nonprofit program
 coming soon
 
 ## Get Microsoft 365 Business from Microsoft and add Azure AD P1 to your subscription

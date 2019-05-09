@@ -1,5 +1,5 @@
 ---
-title: "What's included with Microsoft 365 for Democracy"
+title: "What's included with Microsoft 365 for campaigns"
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -20,20 +20,20 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
-description: "What is included with Microsoft 365 for Democracy?"
+description: "What is included with Microsoft 365 for campaigns?"
 ---
 
-# What's included with Microsoft 365 for Democracy
+# What's included with Microsoft 365 for campaigns
 
-Microft 365 for Democracy includes the following:
+Microft 365 for campaigns includes the following:
 - Prescriptive setup guidance for adding increased security.
 - Help for users to setup devices for secure access.
 - Guidance on how to collaborate and share securely.
-- Special pricing for organizations that qualify for nonprofit pricing, including political campaigns and think tanks that contribute to democracy. More information is coming soon.
+- Special pricing for organizations that qualify for nonprofit pricing, including political campaigns and think tanks that contribute to campaigns. More information is coming soon.
 
-Microsoft 365 for Democracy takes advantage of the following plans to provide rich collaboration tools with the recommended security for organizations that require higher protection for security and data privacy. 
+Microsoft 365 for campaigns takes advantage of the following plans to provide rich collaboration tools with the recommended security for organizations that require higher protection for security and data privacy. 
 
-**Plans used by Microsoft 365 for Democracy**
+**Plans used by Microsoft 365 for campaigns**
 
 ||||
 |:-----|:-----|:------|

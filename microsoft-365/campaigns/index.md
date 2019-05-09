@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 for Democracy"
+title: "Microsoft 365 for campaigns"
 ms.author: samanro
 author: samanro
 manager: scotv
@@ -20,21 +20,21 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
-description: "Microsoft 365 for Democracy"
+description: "Microsoft 365 for campaigns"
 ---
 
-Microsoft 365 for Democracy
+Microsoft 365 for campaigns
 ===========================
 
-In our current world, keeping data and communications secure is a priority, particularly for political campaigns, medical and legal practices, and many other businesses. Microsoft 365 for Democracy is designed to help protect you and your business. 
+In our current world, keeping data and communications secure is a priority, particularly for political campaigns, medical and legal practices, and many other businesses. Microsoft 365 for campaigns is designed to help protect you and your business. 
 
-**What is Microsoft 365 for Democracy?** 
+**What is Microsoft 365 for campaigns?** 
 It's a recommended secure configuration that includes both Microsoft 365 Business and Azure Active Directory P1 so that you can:
 - Rely on trusted business productivity and collaboration tools, such as Outlook, Word, Excel, and other Office products 
 - Protect your work files on all of your iOS, Android, and Windows 10 devices with enterprise-grade security that is simple to manage 
 - Apply extra protection for user accounts and identity with Azure Active Directory P1
 
-![Microsoft 365 Business and Azure Active Directory P1 protect your productivity tools, collaboration tools, file storage, email, devices, and identity](../images/democracy/sm-M365-democracy-WhatIsIt.png)
+![Microsoft 365 Business and Azure Active Directory P1 protect your productivity tools, collaboration tools, file storage, email, devices, and identity](../images/campaigns/sm-M365-campaigns-WhatIsIt.png)
 
 While some organizations qualify for nonprofit pricing for Microsoft 365 Business and Azure Active Directory P1, any organization with both these plans can take advantage of this guidance to configure increased security and learn how to collaborate securely.
 
@@ -53,9 +53,9 @@ Get started
                     </div>
                     <div class="cardText">
                         <p><b>Follow these steps to get started:</b></p>
-                        <P><a href="microsoft-365-democracy-whats-included.md">Find out what's included in Microsoft 365 Democracy</a></p>
-                        <P><a href="get-microsoft-365-democracy.md">Get Microsoft 365 Democracy</a></p>
-                        <P><a href="microsoft-365-democracy-setup-overview.md">Set up Microsoft 365 Democracy</a></p>
+                        <P><a href="microsoft-365-campaigns-whats-included.md">Find out what's included in Microsoft 365 campaigns</a></p>
+                        <P><a href="get-microsoft-365-campaigns.md">Get Microsoft 365 campaigns</a></p>
+                        <P><a href="microsoft-365-campaigns-setup-overview.md">Set up Microsoft 365 campaigns</a></p>
                     </div>
                 </div>
             </div>
@@ -75,7 +75,7 @@ After you set up your secure Microsoft 365 environment, you can use the followin
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="../images/democracy/sm-m365-democracy-teams-collab.png" alt="a SharePoint communications site" />
+                            <img src="../images/campaigns/sm-m365-campaigns-teams-collab.png" alt="a SharePoint communications site" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -93,7 +93,7 @@ After you set up your secure Microsoft 365 environment, you can use the followin
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="../images/democracy/m365-democracy-teams-meetings.png" alt="an online meeting" />
+                            <img src="../images/campaigns/m365-campaigns-teams-meetings.png" alt="an online meeting" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -111,7 +111,7 @@ After you set up your secure Microsoft 365 environment, you can use the followin
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="../images/democracy/m365-democracy-teams-sharefiles.png" alt="a SharePoint communications site" />
+                            <img src="../images/campaigns/m365-campaigns-teams-sharefiles.png" alt="a SharePoint communications site" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -129,7 +129,7 @@ After you set up your secure Microsoft 365 environment, you can use the followin
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="../images/democracy/sm-m365-democracy-comms-site.png" alt="a SharePoint communications site" />
+                            <img src="../images/campaigns/sm-m365-campaigns-comms-site.png" alt="a SharePoint communications site" />
                         </div>
                     </div>
                     <div class="cardText">
