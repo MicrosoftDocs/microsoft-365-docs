@@ -19,7 +19,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Protect against phishing and other attacks with Microsoft 365 for Democracy."
+description: "Protect against phishing and other attacks with Microsoft 365 for campaigns."
 ---
 
 # Protect yourself against phishing and other attacks

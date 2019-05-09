@@ -40,18 +40,18 @@ To create additional admin accounts:
 
  1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">admin center</a> and then choose **Users** \> **Active users** in the left nav.
 
-    ![Choose Users and then Active users in the left nav](../images/democracy/Activeusers.png)
+    ![Choose Users and then Active users in the left nav](../images/campaigns/Activeusers.png)
 
 2. On the **Active users** page select **Add a user** on the top of the page and on the **New user** panel,  enter the name and other information.
 3. Expand the **Roles** section, and choose **Global administrator** to give this user global admin access. You can also choose **Customized administrator** and choose any of the roles that are displayed.
 
     Enter an alternate email in the Alternative email address text box. You can use this address to recover your password information if you get locked out. For global admins, a billing statement will also be sent to this address.
 
-    ![Choose the administrator role](../images/democracy/adminroles.png)
+    ![Choose the administrator role](../images/campaigns/adminroles.png)
     
 4. In the **Product licenses** section, move the selector for **Microsoft 365 Business** to **Off** and the **Create user without product license** to **On**.
 
-    ![Choose the administrator role](../images/democracy/productlicense.png)
+    ![Choose the administrator role](../images/campaigns/productlicense.png)
 
 ## Create an emergency admin account
 
@@ -69,6 +69,6 @@ To create a new user account:
 
 ### Additional recommendations
 
-- Be sure admin accounts are also set up for multi-factor authentication. We'll show you how to do this in [Configure conditional access policies](m365-democracy-conditional-access.md).
+- Be sure admin accounts are also set up for multi-factor authentication. We'll show you how to do this in [Configure conditional access policies](m365-campaigns-conditional-access.md).
 - Before using admin accounts, close out all unrelated browser sessions and apps, including personal email accounts. You can also use in private, or incognito browser windows.
 - After completing admin tasks, be sure to sign out of the browser session.

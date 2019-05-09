@@ -23,13 +23,13 @@ search.appverid:
 description: "Learn about device states in Microsoft 365 Business."
 ---
 
-# Configure conditional access policies for Microsoft 365 for Democracy
+# Configure conditional access policies for Microsoft 365 for campaigns
 
 Conditional access is . . . .
 
 Conditional access policies add substancial protection to your Microsoft 365 environment. 
 
-Prescribed conditional access policies for Microsoft 365 for Democracy
+Prescribed conditional access policies for Microsoft 365 for campaigns
 - Require MFA for all users
 - Require approved apps
 - Block clients that don't support modern authentication
