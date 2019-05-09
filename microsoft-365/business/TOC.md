@@ -11,7 +11,7 @@
 #### [Enable domain-joined Windows 10 devices to be managed](manage-windows-devices.md)
 #### [Access resources from an Azure AD-joined device](access-resources.md)
 ## [Secure](security-features.md)
-### [Secure your business](/Office365/Admin/security-and-compliance/secure-your-business-data.md?toc=/microsoft-365/business/toc.json&bc=/microsoft-365/business/breadcrumb/toc.json)
+### [Secure your business](/Office365/Admin/security-and-compliance/secure-your-business-data?toc=/microsoft-365/business/toc.json&bc=/microsoft-365/business/breadcrumb/toc.json)
 ### [Set up advanced security features](set-up-advanced-security.md)
 ## [Manage](manage.md)
 ### [Add users](add-users-m365b.md)
