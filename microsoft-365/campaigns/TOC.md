@@ -28,9 +28,9 @@
 ## [Create a Communication site for your organization](create-communications-site.md)
 
 # Manage
-## Add users
-## Remove company data
-## Reset devices to factory settings
+## [Add users](../business/add-users-m365b.md?toc=/microsoft-365/campaigns/toc.json)
+## [Remove company data](../business/remove-company-data.md?toc=/microsoft-365/campaigns/toc.json)
+## [Reset devices to factory settings](../business/reset-devices-to-factory-settings.md?toc=/microsoft-365/campaigns/toc.json)
 
 # Security incident management
-## [Responding to a compromised email account in Office 365](/office365/securitycompliance/responding-to-a-compromised-email-account?toc=/microsoft-365/campaigns/toc.json&bc=/microsoft-365/breadcrumb/toc.json)
+## [Responding to a compromised email account in Office 365](/office365/securitycompliance/responding-to-a-compromised-email-account?toc=/microsoft-365/campaigns/toc.json&bc=/microsoft-365/campaigns/breadcrumb/toc.json)
