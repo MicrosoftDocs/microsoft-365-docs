@@ -37,7 +37,7 @@ Include the following elements in your Communications site:
 4. Add campaign events to an **Events web part** so everyone can see what's coming up.
 5. Add photos that people can use or share to an **Image gallery web part**.
 
-![Diagram of a SharePoint Communications page with space for common elements that a campaign would need](../images/democracy/m365-democracy-comms-site.png)
+![Diagram of a SharePoint Communications page with space for common elements that a campaign would need](../images/campaigns/m365-democracy-comms-site.png)
 
 ## Set it up
 

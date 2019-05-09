@@ -27,7 +27,7 @@ description: "Share files and videos inside your campaign with Microsoft Teams a
 
 When you need to control who can view, and who can edit, your files, you need to store the files in a secure location, where you can make sure permissions are applied appropriately. You can use Microsoft Teams to store your files, and then share the files either inside or outside of your campaign with Microsoft Teams or by sending SharePoint links. Sending a link rather than an email attachment means that you know who is viewing and modifying the files, and they can't be viewed or modified without your permission. 
 
-![Diagram of a Microsoft Teams window with the Files tab open and Get link on the menu](../images/campaigns/m365-campaigns-teams-sharefiles.png)
+![Diagram of a Microsoft Teams window with the Files tab open and Get link on the menu](../images/campaigns/m365-democracy-teams-sharefiles.png)
 
 With your files in Microsoft Teams and SharePoint, you can also work on the files together and review each other's changes. Use Microsoft Teams to share files inside of a political campaign, you can do so using Microsoft Teams. If you need to share externally with people outside the campaign, you can add them as guests to a team or send them a secure SharePoint link.
 
