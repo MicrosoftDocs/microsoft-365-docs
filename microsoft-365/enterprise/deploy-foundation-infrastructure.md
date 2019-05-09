@@ -3,7 +3,7 @@ title: "Microsoft 365 Enterprise foundation infrastructure"
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 03/05/2019
+ms.date: 05/09/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -17,7 +17,7 @@ description: Understand the major phases of deploying the foundation infrastruct
 
 # Microsoft 365 Enterprise foundation infrastructure
 
-If you're doing the end-to-end deployment of Microsoft 365 Enterprise yourself, you should first build a firm foundation upon which applications and services can unlock creativity and teamwork in a secure environment. This foundation is sometimes referred to as the core deployment.
+If you're doing the end-to-end deployment of Microsoft 365 Enterprise yourself, you should first build a firm foundation upon which applications and services can unlock creativity and teamwork in a secure environment. This foundation is sometimes referred to as a *core deployment*.
 
 For a defined end-to-end path for deployment, you can use these phases to plan for and deploy the foundation infrastructure of Microsoft 365 Enterprise:
 
@@ -33,7 +33,7 @@ For a defined end-to-end path for deployment, you can use these phases to plan f
 The phases start with the most foundational (networking and identity), and then create layers of infrastructure settings and groups to:
 
 - Install the most current and secure version of Windows on your devices.
-- Install the most current version of Office on your devices.
+- Install the most current version of Microsoft Office on your devices.
 - Manage your organization's devices.
 - Protect the information on those devices and in the cloud.
 
@@ -53,6 +53,22 @@ Here's the foundation infrastructure in the overall Microsoft 365 Enterprise dep
 
 ![](./media/deploy-foundation-infrastructure/m365-deploy-content-arch-foundation.png)
 
+## At-a-glance
+
+The [Microsoft 365 Enterprise foundation infrastructure poster](http://aka.ms/m365efoundinfraposter) is a central location for you to view, for each phase:
+
+- The overall goal of the phase for both administrators and users
+- The services, features, and tools
+- The key design decisions for planning
+- The configuration results
+- The process for onboarding a new user
+- How to monitor and update
+
+![](./media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.png)
+
+To download a copy of the poster, click [here](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf).
+
+
 ## Infrastructure configuration vs. user rollout
 
 The foundation infrastructure is a set of configured software and services that, when combined together for a user, allow them to take advantage of the entire spectrum of capabilities and protections that Microsoft 365 Enterprise offers. The ultimate destination of your end-to-end deployment journey is to have this infrastructure apply to all of your users and their Windows-based devices. 
@@ -69,7 +85,7 @@ For example, you create the settings for:
 | Windows 10 Enterprise | Groups to automatically upgrade computers running Windows 7 or Windows 8.1 to Windows 10 Enterprise in place. |
 | Office 365 ProPlus | Groups to automatically deploy Office 365 ProPlus for users with Office 2010, Office 2013, or Office 2016. |
 | Mobile device management | Groups for device enrollment and device-based conditional access policies. |
-| Information protection | Office 365 and Azure Information Protection labels and groups. |
+| Information protection | Office 365 sensitivity and Azure Information Protection labels and groups. |
 
 When you are ready to rollout elements of this infrastructure to users, you:
 
@@ -90,7 +106,9 @@ To give you some ideas on how to approach the project management of the differen
 
 ## Next step
 
-- I have existing infrastructure for Office 365, Enterprise Mobility + Security (EMS), or Windows 10 Enterprise:
-  - See [Deploy with existing infrastructure](deploy-with-existing-infrastructure.md). This article steps you through the exit criteria for each phase.
-- I'm starting from scratch: 
-   - Begin your end-to-end deployment journey with [Phase 1: Networking](networking-infrastructure.md).
+
+| Where I am | Where I need to go |
+|:-------|:-----|
+| I have existing infrastructure for Office 365, Enterprise Mobility + Security (EMS), or Windows 10 Enterprise | Start with [Deploy with existing infrastructure](deploy-with-existing-infrastructure.md), which  steps you through the exit criteria for each phase. |
+| I'm starting from scratch | Begin your end-to-end deployment journey with [Phase 1: Networking](networking-infrastructure.md). |
+
