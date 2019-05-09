@@ -4,7 +4,6 @@ description: Provides a convenient way to access information you may need to sup
 keywords: ARC Azure, Microsoft 365, Microsoft 365 Education, Microsoft 365 documentation, GDPR
 author: herviicban
 localization_priority: Priority
-
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.author: heicba
@@ -16,18 +15,19 @@ ms.collection: GDPR
 # Azure accountability readiness checklist for the GDPR
 
 ## 1. Introduction
+
 This accountability readiness Checklist provides a convenient way to access information you may need to support GDPR when using Microsoft Azure. The checklist is organized using the titles and reference number (in parenthesis for each checklist topic) of a set of privacy and security controls for personal data processors drawn from ISO/IEC CD 27552 Information technology -- Security techniques -- Enhancement to ISO/IEC 27001 for privacy management – Requirements. 
 
 You can manage the items in this checklist with the Compliance Manager [16] by referencing the Control ID and Control Title under Customer Managed Controls in the GDPR tile. This control structure is also used to organize the presentation of the internal controls that Microsoft Azure implements to support GDPR, which you can download here https://servicetrust.microsoft.com/ViewPage/TrustDocuments.
 
-This control structure is also used to organize the presentation of the internal controls that Microsoft Dynamics365 implements to support GDPR, which you can download here:<br>To purchase a copy of the complete draft ISO standard, please visit https://shop.bsigroup.com/ProductDetail?pid=000000000030379002 
+This control structure is also used to organize the presentation of the internal controls that Microsoft Dynamics365 implements to support GDPR, which you can download here: https://aka.ms/gdprcontrols.
+
+To purchase a copy of the complete draft ISO standard, please visit https://shop.bsigroup.com/ProductDetail?pid=000000000030379002 
 
 For more GDPR related documentation, visit https://aka.ms/gdprgetstarted.
 
-<br>
-
-----------------------------
 ## **2. Conditions for collection and processing**
+
 <!-- start table here "collection and processing" -->
 
 
@@ -87,7 +87,7 @@ For more GDPR related documentation, visit https://aka.ms/gdprgetstarted.
 | ***Transmission controls (7.4.10)***                                                | The customer should understand requirements around safeguarding the transmission of personal data, including who has access to transmission mechanisms, records of transmission, etc.                                                                                                                                                                                                                              | A description of the types of personal data that are transferred by Microsoft services and the locations they are transferred between, and the legal safeguards for the transfer.<br>- *Key Information from Azure for Customer Data Protection Impact Assessments* [[11](gdpr-arc-Azure.md#11)]                                                                                                                          | (5)(1)(f)                                            |
 | ***Identify basis for PII transfer (7.5.1)***                                       | The customer should be aware of requirements for transferring personal data (PII) to a different geographic location and document what measures are in place to meet such requirements.                                                                                                                                                                                                                            | A description of the types of personal data that are transferred by Microsoft services and the locations they are transferred between, and the legal safeguards for the transfer.<br>- *Key Information from Azure for Customer Data Protection Impact Assessments* [[11](gdpr-arc-Azure.md#11)]                                                                                                                          | Articles (44), (45), (46), (47), (48), and (49)      |
 | ***Countries and organizations to which PII might be transferred (7.5.2)***         | The customer should understand, and be able to provide to the individual, the countries to which personal data is or may be transferred. Where a third-party/processor may perform this transfer, the customer should obtain this information from the processor.                                                                                                                                                  | A description of the types of personal data that are transferred by Microsoft services and the locations they are transferred between, and the legal safeguards for the transfer.<br>- *Key Information from Azure for Customer Data Protection Impact Assessments* [[11](gdpr-arc-Azure.md#11)]<br>- Who can access your data and on what terms [[7](gdpr-arc-Azure.md#7)]                                               | (30)(1)(e)                                           |
-| ***Records of transfers of PII (personal data) (7.5.3)***                           | The customer should maintain all necessary and required records related to transfers of personal data. Where a third-party/processor performs the transfer, the customer should ensure that they maintain the appropriate records and obtain them as necessary.                                                                                                                                                    | Look here and here for...<br>A description of the types of personal data that are transferred by Microsoft services and the locations they are transferred between, and the legal safeguards for the transfer.<br>- *Key Information from Azure for Customer Data Protection Impact Assessments*[[11](gdpr-arc-Azure.md#11)]<br>- Who can access your data and on what terms [[7](gdpr-arc-Azure.md#7)]                   | (30)(1)(e)                                           |
+| ***Records of transfers of PII (personal data) (7.5.3)***                           | The customer should maintain all necessary and required records related to transfers of personal data. Where a third-party/processor performs the transfer, the customer should ensure that they maintain the appropriate records and obtain them as necessary.                                                                                                                                                    | A description of the types of personal data that are transferred by Microsoft services and the locations they are transferred between, and the legal safeguards for the transfer.<br>- *Key Information from Azure for Customer Data Protection Impact Assessments*[[11](gdpr-arc-Azure.md#11)]<br>- Who can access your data and on what terms [[7](gdpr-arc-Azure.md#7)]                   | (30)(1)(e)                                           |
 | ***Records of PII disclosure to third parties (7.5.4)***                            | The customer should understand requirements around recording to whom personal data has been disclosed. This may include disclosures to law enforcement, etc. Where a third-party/processor discloses the data, the customer should ensure that they maintain the appropriate records and obtain them as necessary.                                                                                                 | Documentation provided about the categories of recipients of disclosures of personal data including available records of disclosure.<br>- Who can access your data and on what terms [[7](gdpr-arc-Azure.md#7)] <br>- Privacy and personal data in Intune [[15](gdpr-arc-Azure.md#15)] *see Data security and sharing in Intune*                                                                                          | (30)(1)(d)                                           |
 | ***Joint controller (7.5.5)***                                                      | The customer should determine whether they are a joint controller with any other organization, and appropriately document and allocate responsibilities.                                                                                                                                                                                                                                                           | As specified by the Online Services Terms (OST), Microsoft, as a data processor, processes Customer Data only to provide the requested services to our customer, the data controller.<br>- *Microsoft Online Services Terms, Data Protection Terms, see Processing of Personal Data; GDPR* [[1](gdpr-arc-Azure.md#1)]                                                                                                     | (26)(1), (26)(2),                                    |
 |                                                                                     |                                                                                                                                                                                                                                                                                                                                                                                                                    |                                                                                                                                                                                                                                                                                                                                                                                                                           |                                                      |
@@ -95,7 +95,7 @@ For more GDPR related documentation, visit https://aka.ms/gdprgetstarted.
 <br>
 
 ----------------------------------------
-## **5. Data Protection & Security**
+## **5. Data protection & security**
 
 <!-- table "Data Protection & Security" -->
 
@@ -143,7 +143,7 @@ For more GDPR related documentation, visit https://aka.ms/gdprgetstarted.
 <br><br>
 
 ----------------------
-## **6. Bibliography of Resources and Links**
+## **6. Bibliography of resources and links**
 
 <!-- start Biblio table here -->
 
@@ -157,7 +157,7 @@ For more GDPR related documentation, visit https://aka.ms/gdprgetstarted.
 | 5 <a name="5"> </a>   | Microsoft Azure Data Security (Data Cleansing and Leakage)                  | https://blogs.msdn.microsoft.com/walterm/2014/09/04/microsoft-azure-data-security-data-cleansing-and-leakage/                                                                                                            |
 | 6 <a name="6"> </a>   | Azure Standard Response to RFI on Security, Privacy, and Compliance         | https://gallery.technet.microsoft.com/Azure-Standard-Response-to-5de19cb6                                                                                                                                                |
 | 7 <a name="7"> </a>   | Who can access your data and on what terms                                  | https://www.microsoft.com/trustcenter/Privacy/Who-can-access-your-data-and-on-what-terms                                                                                                                                 |
-| 8 <a name="8"> </a>   | Contracts for sub-processors: Contracting with Microsoft                    | https://www.microsoft.com/en-us/procurement/supplier-contracting.aspx#SSPA                                                                                                                                                          |
+| 8 <a name="8"> </a>   | Contracts for sub-processors: Contracting with Microsoft                    | https://www.microsoft.com/procurement/supplier-contracting.aspx#SSPA                                                                                                                                                          |
 | 9 <a name="9"> </a>   | Azure Data Subject Requests for the GDPR                                    | https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure                                                                                                                                                       |
 | 10 <a name="10"> </a> | Azure and Breach Notification Under the GDPR                                | https://docs.microsoft.com/microsoft-365/compliance/gdpr-breach-azure                                                                                                                                                    |
 | 11 <a name="11"> </a> | Key Information from Azure for Customer Data Protection Impact Assessments  | <https://aka.ms/DPIAAzure>                                                                                                                                                                                               |
