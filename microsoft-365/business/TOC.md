@@ -1,4 +1,5 @@
-# [Get started](microsoft-365-business-overview.md)
+# [Microsoft 365 Business](index.md)
+## [Overview](microsoft-365-business-overview.md)
 ## [Get Microsoft 365 Business](sign-up.md)
 ## [Pre-requisites for data protection](pre-requisites-for-data-protection.md)
 ## [Set up](set-up.md)
