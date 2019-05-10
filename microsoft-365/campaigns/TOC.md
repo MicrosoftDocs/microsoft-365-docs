@@ -3,7 +3,7 @@
 ## [Get Microsoft 365 for campaigns](get-microsoft-365-campaigns.md)
 ## [How Microsoft 365 affects users](m365-campaigns-users.md)
 
-# [Get started](microsoft-365-campaigns-setup-overview.md)
+# [Overview](microsoft-365-campaigns-setup-overview.md)
 ## [Sign up](../business/sign-up.md?toc=/microsoft-365/campaigns/toc.json)
 ## [Set up Microsoft 365](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json)
 ## [Add Azure AD P1](set-up-azureadp1.md) 

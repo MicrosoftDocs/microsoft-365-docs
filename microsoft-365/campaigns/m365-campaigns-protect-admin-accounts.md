@@ -55,7 +55,7 @@ To create additional admin accounts:
 
 ## Create an emergency admin account
 
-You should also create a back-up account that to which you keep the password in a secure place that isn't set up with multi-factor authentication (MFA) so you don't accidentally lock yourself out (for example if you lose your phone that you are using as a second from of verification). This is often referred to as a "break-glass account".
+You should also create a back-up account that isn't set up with multi-factor authentication (MFA) so you don't accidentally lock yourself out (for example if you lose your phone that you are using as a second from of verification). Make sure the password for this account is a phrase or at least 16 characters long. This is often referred to as a "break-glass account."
 
 ## Create a user account for yourself
 

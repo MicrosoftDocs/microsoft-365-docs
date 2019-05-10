@@ -1,5 +1,5 @@
 ---
-title: "Setup overview for Microsoft 365 for campaigns"
+title: "Setup overview for Microsoft 365 for Campaigns"
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -20,10 +20,10 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
-description: "Setup overview for Microsoft 365 for campaigns"
+description: "Setup overview for Microsoft 365 for Campaigns"
 ---
 
-# Set up Microsoft 365 for campaigns
+# Set up Microsoft 365 for Campaigns
 
 This article describes the process of setting up Microsoft 365 for campaigns.
 
