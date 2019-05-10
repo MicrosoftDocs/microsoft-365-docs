@@ -23,12 +23,12 @@ ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: "Microsoft 365 for campaigns"
 ---
 
-Microsoft 365 for campaigns
+Microsoft 365 for Campaigns
 ===========================
 
 In our current world, keeping data and communications secure is a priority, particularly for political campaigns, medical and legal practices, and many other businesses. Microsoft 365 for campaigns is designed to help protect you and your business. 
 
-**What is Microsoft 365 for campaigns?** 
+**What is Microsoft 365 for Campaigns?** 
 It's a recommended secure configuration that includes both Microsoft 365 Business and Azure Active Directory P1 so that you can:
 - Rely on trusted business productivity and collaboration tools, such as Outlook, Word, Excel, and other Office products 
 - Protect your work files on all of your iOS, Android, and Windows 10 devices with enterprise-grade security that is simple to manage 
