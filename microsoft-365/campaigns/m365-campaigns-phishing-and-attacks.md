@@ -56,6 +56,12 @@ Read about five common types of scams in [Deal with abuse, phishing, or spoofing
 
 Help your customers trust your communications - add a digital signature to prove that it's coming from you. See [Secure messages by using a digital signature](https://support.office.com/en-us/article/secure-messages-by-using-a-digital-signature-549ca2f1-a68f-4366-85fa-b3f4b5856fc6).
  
+## Infographic: Help protect yourself and your campaign from digital threats 
+The links for PowerPoint and PDF below can be downloaded and printed in tabloid format (also known as ledger, 11 x 17, or A3).
+
+[![Image for secure your help protect your campaign info graphic](../images/campaigns/M365-Campaigns-WhatCanUsersDoToSecure-358x201.png)](downloads/M365-Campaigns-WhatCanUsersDoToSecure.pdf)
+
+[PDF](downloads/M365-Campaigns-WhatCanUsersDoToSecure.pdf) | [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/M365-Campaigns-WhatCanUsersDoToSecure.pptx)
 
 ## Set it up
 
