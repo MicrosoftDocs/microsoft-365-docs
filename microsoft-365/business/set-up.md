@@ -26,38 +26,46 @@ description: "Learn how to set up Microsoft 365 Business."
 
 # Set up Microsoft 365 Business
 
-Before you get started, see [Get Microsoft 365 Business](get-microsoft-365-business.md) for sign-up details.
-
-Watch a [short video on how to set up Microsoft 365 Business](https://support.office.com/article/38003e30-9d10-44cf-b596-f1b5f662bfa1) by using the set up wizard, and when you don't have an on-premises Active Directory
-  
-
 ## Overview
 
 Most of the set up steps can be done in the setup wizard, but the other options are also listed.
 
-1. [Add your domain](#add-your-domain-to-personalize-sign-in) (if you bought your domain during [sign up](sign-up.md), this step is already done.)
-2. Add users. You can do this in any of the three ways:
-    - In the [setup wizard](#add-users-in-the-wizard).
-    - Use directory synchronization to [add users by using Azure AD Connect](#add-users-by-using-azure-ad-connect) if you have an on-premises Active directory.
-    - You can also [add users later](add-users-m365b.md) in the admin center.
-3. Set up security policies and configure devices. You can do this in any of the three ways:
-    - In the [setup wizard](#set-up-policies-in-the-wizard).  
-    - In the [admin center](#modify-or-add-policies-in-the-admin-center).
-    - In the [Intune admin center](https://docs.microsoft.com/intune/what-is-device-management).
-4. Set up and manage Windows 10 devices.
+1. **Add your domain and users**.
 
-    When you join a WIndows 10 device to Azure AD, all the policies get applied to it.
-    - Set up Windows 10 device configurations in the [setup wizard](#set-up-policies-in-the-wizard).
-    - Join a [new Windows 10 device](set-up-windows-devices.md#for-a-brand-new-or-newly-upgraded-windows-10-pro-device) to Azure AD.
-    - Join an [existing Windows 10 device](set-up-windows-devices.md#for-a-device-already-set-up-and-running-windows-10-pro) to Azure AD.
-1. Install Office 365 Business.
+   - [Add your domain](#add-your-domain-to-personalize-sign-in) (if you bought your domain during [sign up](sign-up.md), this step is already done.)
+
+    - Add users. You can do this in any of the three ways:
+        - In the [setup wizard](#add-users-in-the-wizard).
+        - Use directory synchronization to [add users by using Azure AD Connect](#add-users-by-using-azure-ad-connect) if you have an on-premises Active directory.
+        - You can also [add users later](add-users-m365b.md) in the admin center.
+2. **Set up security policies and configure devices**. 
+
+      - Use the [setup wizard](#set-up-policies-in-the-wizard) to configure device and security policies. You can also add more or edit them later in the [admin center](#modify-or-add-policies-in-the-admin-center) and in the [Intune portal](https://docs.microsoft.com/intune/tutorial-walkthrough-intune-portal).
+      - In addition to the security settings in the setup wizard, you can increase your security by adding the following settings:
+
+          - Email malware protection
+          - Advanced Threat Protection (ATP) Safe links
+          - ATP Safe Attachments
+          - ATP anti-phishing
+          - Exchange Online Archiving
+          - Data Loss Prevention (DLP)
+          - Azure Information Protection (Plan1)
+
+        To get started see, [set up advanced security policies](set-up-advanced-security.md).
+
+        See also [top 10 ways to secure your Microsoft 365 Business](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data) for a roadmap of best security practices.
+3. **Set up and manage Windows 10 devices**.
+
+    When you join a Windows 10 device to Azure AD, the policies you set yup in step 2 get applied to it.
+
+    Windows 10 Pro is a [pre-requisite](pre-requisites-for-data-protection.md) for Microsoft 365 Business, but if you have Windows 7 Pro, Windows 8 Pro, or Windows 8.1 Pro, your subscription entitles you to an [upgrade to  Windows 10 Pro](https://docs.microsoft.com/microsoft-365/business/upgrade-to-windows-pro-creators-update).
+    - Use the [setup wizard](#set-up-policies-in-the-wizard) to configure policies for Windows 10 devices.
+
+4. **Install Office 365 Business**.
     - You can automatically install Office in the Windows devices by using the [setup wizard](#set-up-policies-in-the-wizard).
     - Automatically [install Office](auto-install-or-uninstall-office.md) from the admin center.
     - Let users [install Office apps](https://docs.microsoft.com/office365/admin/setup/install-applications) for Windows and devices.
-     
-1. Set up additional security.
-    - The setup wizard adds policies to secure your devices, but you can also take advantage of [additional security](#additional-security-settings) capabilities to helps secure your data, accounts, and emails. 
-
+  
 ## Add your domain, users and set up policies
 
 ![Banner that point to https://aka.ms/aboutM365preview.](media/m365admincenterchanging.png)
@@ -115,15 +123,6 @@ If you have a local domain controller, and are using Active Directory, see [how 
 
     > [!IMPORTANT]
     > If you create users this way, you will still have to assign licenses to them in the admin center.
-
-##### Continue to access domain-joined apps and devices
-
-If you want to continue to access domain-joined apps and devices, read the following articles for two different way of enabling that:
-  
-- [Enable domain-joined Windows 10 devices to be managed by Microsoft 365 Business](manage-windows-devices.md)
-    - This is the recommended way.
-
-- [Access on-premises resources from an Azure AD-joined device in Microsoft 365 Business](access-resources.md)
 
 ### Connect your domain
 
@@ -188,20 +187,3 @@ If you chose to automatically install Office apps in during the set up, the apps
 To install Office on mobile iOS or Android devices, see [Set up mobile devices for Microsoft 365 Business users](set-up-mobile-devices.md).
 
 You can also install Office individually. See [install Office on a PC or Mac](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc471665) for instructions.
-
-## Additional security settings
-
-In addition to the security and compliance setting in the setup wizard, you can also set up the following additional settings:
-  
-- **Email malware protection**
-- **Advanced Threat Protection (ATP) Safe Attachments**
-- **ATP Safe Links**
-- **APT anti-phishing**
-- **Exchange Online Archiving**
-- **Data loss prevention (DLP)**
-- **Azure Information Protection** (Plan 1)
-- **Intune portal availability**
-
-To get started see, [set up advanced security policies](set-up-advanced-security.md).
-
-See also [top 10 ways to secure your Microsoft 365 Business](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data) for a roadmap of best security practices.
