@@ -16,8 +16,10 @@
 ## [Secure](security-features.md)
 ### [Secure your business](/Office365/Admin/security-and-compliance/secure-your-business-data?toc=/microsoft-365/business/toc.json&bc=/microsoft-365/business/breadcrumb/toc.json)
 ### [Set up advanced security features](set-up-advanced-security.md)
-## [Manage](manage.md)
+## Users
 ### [Add users](add-users-m365b.md)
+### [Remove an employee](/Office365/Admin/add-users/remove-former-employee?toc=/microsoft-365/business/toc.json&bc=/microsoft-365/business/breadcrumb/toc.json)
+## Manage Devices
 ### [View and edit policies and devices](view-policies-and-devices.md)
 ### [Remove company data](remove-company-data.md)
 ### [Reset devices to factory settings](reset-devices-to-factory-settings.md)

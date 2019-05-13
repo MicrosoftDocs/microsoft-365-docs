@@ -33,13 +33,13 @@ Most of the set up steps can be done in the setup wizard, but the other options 
    - [Add your domain](#add-your-domain-to-personalize-sign-in) (if you bought your domain during [sign up](sign-up.md), this step is already done.)
 
     - Add users. You can do this in any of the three ways:
-        - In the [Add users in the setup wizard](set-up.md#add-your-domain-users-and-set-up-policies).
-        - Use directory synchronization to [add users by using Azure AD Connect](#add-users-by-using-azure-ad-connect) if you have an on-premises Active directory.
+        - In the [Add users in the wizard](set-up.md#add-users-in-the-wizard).
+        - Use directory synchronization to [add users by using Azure AD Connect](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization) if you have an on-premises Active directory.
         - You can also [add users later](add-users-m365b.md) in the admin center.
 2. **Set up security policies and configure devices**. 
 
       - Use the [setup wizard](#set-up-policies-in-the-wizard) to configure device and security policies. 
-      - You can also add more or edit them later in the [admin center](set-up.md#modify-or-add-policies-in-the-admin-center) and in the [Intune portal](https://docs.microsoft.com/intune/tutorial-walkthrough-intune-portal).
+      - You can also add more or edit them later in the [admin center](view-policies-and-devices.md) and in the [Intune portal](https://docs.microsoft.com/intune/tutorial-walkthrough-intune-portal).
       - In addition to the security settings in the setup wizard, you can increase your security by adding the following settings:
 
           - Email malware protection
@@ -58,10 +58,10 @@ Most of the set up steps can be done in the setup wizard, but the other options 
     When you join a Windows 10 device to Azure AD, the policies you set yup in step 2 get applied to it.
 
     Windows 10 Pro is a [pre-requisite](pre-requisites-for-data-protection.md) for Microsoft 365 Business, but if you have Windows 7 Pro, Windows 8 Pro, or Windows 8.1 Pro, your subscription entitles you to an [upgrade to  Windows 10 Pro](https://docs.microsoft.com/microsoft-365/business/upgrade-to-windows-pro-creators-update).
-    - Use the [setup wizard](set-up.md#set-up-policies-in-the-wizard) to configure policies for Windows 10 devices.
+    - Use the [setup wizard](set-up.md#set-up-security-policies-and-device-configurations) to configure policies for Windows 10 devices.
 
 4. **Install Office 365 Business**.
-    - You can automatically install Office in the Windows devices by using the [setup wizard](#set-up-policies-in-the-wizard).
+    - You can automatically install Office in the Windows devices by using the [setup wizard](set-up.md#deploy-office-365-client-apps).
     - Automatically [install Office](auto-install-or-uninstall-office.md) from the admin center.
     - Let users [install Office apps](https://docs.microsoft.com/office365/admin/setup/install-applications) for Windows and devices.
      
