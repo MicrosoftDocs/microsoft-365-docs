@@ -11,7 +11,7 @@ ms.collection: M365-modern-desktop
 
 # Support for Microsoft Managed Desktop
 
-Microsoft Managed Desktop devices are managed by and will be repaired or replaced by Microsoft as per warranty agreement. Microsoft will provide proactive and reactive incident management. Microsoft tracks incidents in the Microsoft Managed Desktop admin portal. They are classified according to [severity definitions](../working-with-managed-desktop/admin-support.md#sev).
+Microsoft will provide proactive and reactive incident management. Microsoft tracks incidents in the Microsoft Managed Desktop admin portal. They are classified according to [severity definitions](../working-with-managed-desktop/admin-support.md#sev).
 
 Customers can contact Microsoft Managed Desktop operations for:
 - Information requests on the Microsoft Managed Desktop tenant or configuration
@@ -29,7 +29,7 @@ Microsoft Managed Desktop support:
 Supported products:
 
 - Windows 10 with Windows Defender Advanced Threat Protection (WDATP) 
-- Subset of the Microsoft 365 E3 suite: Outlook, Word, PowerPoint, Excel, Skype for Business client, Microsoft Teams 
+- Subset of the Office 365 suite: Outlook, Word, PowerPoint, Excel, Skype for Business client, Microsoft Teams 
 - Microsoft Store for Business 
 - OneDrive for Business client 
 
