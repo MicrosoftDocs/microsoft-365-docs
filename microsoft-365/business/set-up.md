@@ -26,7 +26,7 @@ description: "Learn how to set up Microsoft 365 Business."
 
 # Set up Microsoft 365 Business in the setup wizard
 
-## Add your domain, users and set up policies
+## Add your domain, users, and set up policies
 
 ![Banner that point to https://aka.ms/aboutM365preview.](media/m365admincenterchanging.png)
 
@@ -66,7 +66,7 @@ Any users you add in the wizard get automatically assigned a Microsoft 365 Busin
 
 ![Screenshot of the Add new users page in the wizard](media/addnewuserspage.png)
 
-1. If your Microsoft 365 Business subscription has existing users (for example, if you used Azure AD Connect) , you will get an option to assign licenses to them now. Go ahead and add licenses to them as well.
+1. If your Microsoft 365 Business subscription has existing users (for example, if you used Azure AD Connect) , you get an option to assign licenses to them now. Go ahead and add licenses to them as well.
 
 3. After you have added the users, you will also get an option to share credentials with the new users you added. You can choose to print them out, email them, or download them.
 
@@ -102,7 +102,7 @@ The policies you set up in the wizard are applied automatically to a [Security g
 
         ![Screenshot of default values for protecting files on lost devices.](media/protectworkfilesondevicesdefault.png)
 
-    - Select **Manage how users access Office files on mobile devices** and expand it to display the [default values](manage-user-access-on-mobile-devices.md). We recommend you accept the default values during setup to create application policies for Android, iOS, and Windows 10 that apply to all users. You can create more policies after setup completes.
+    - Select **Manage how users access Office files on mobile devices** and expand it to display the [default values](manage-user-access-on-mobile-devices.md). We recommend that you accept the default values during setup to create application policies for Android, iOS, and Windows 10 that apply to all users. You can create more policies after setup completes.
 
         ![Screenshot of protection settings for Office files on mobile.](media/useraccessonmobile.png)
 
