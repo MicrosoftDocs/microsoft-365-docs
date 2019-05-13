@@ -18,7 +18,7 @@ ms.collection: M365-modern-desktop
 
 Microsoft includes certain key apps along with the Microsoft 365 E3 or E5 license needed to participate in Microsoft Managed Desktop. However, even though we provide these apps, you still have certain responsibilities and actions to complete.
 
-You can also have additional non-Microsoft apps included in the image delivered to your Microsoft Managed Desktop users. To have those apps packaged and included with the image, you can engage with Microsoft C Services, hire a non-Microsoft vendor, or handle the packaging yourself. In each of these cases, there are somewhat different requirements and actions you must take.
+You can also have additional non-Microsoft apps included in the image delivered to your Microsoft Managed Desktop users. To have those apps packaged and included with the image, you can engage with Microsoft Consulting Services, hire a non-Microsoft vendor, or handle the packaging yourself. In each of these cases, there are somewhat different requirements and actions you must take.
 
 
 ## Apps provided by Microsoft
@@ -33,11 +33,13 @@ Microsoft will provide full service for the deployment, update, and support for 
 
 There are still certain things you need to do with these apps:
 
-- Assign licenses - You are responsible for assigning the appropriate licenses to end users for Office 365.
-- Add users to security groups - If you're using Microsoft Project or Visio, the IT administrator must add those users to the appropriate deployment groups. IT administrators are also responsible for managing end of life {? referring to the license or what?} for those users.
-- Deploy Office 365 Addons - If you need any Addons for any of the Office 365 apps, it's up to you to deploy those. {when should they do that? How do they do that?}
+- **Assign licenses** - You are responsible for assigning the appropriate licenses to end users for Office 365.
+- **Add users to security groups** - If you're using Microsoft Project or Visio, the IT administrator must add those users to the appropriate deployment groups. IT administrators are also responsible for managing end of life {? referring to the license or what?} for those users.
+- **Deploy Office 365 Addons** - If you need any Addons for any of the Office 365 apps, it's up to you to deploy those. {when should they do that? How do they do that?}
 
 ## Apps you provide
+
+
 
 ### Preparing your own apps for inclusion in Microsoft Managed Desktop
 Review your apps, checking:
