@@ -31,7 +31,7 @@ Most of the set up steps can be done in the setup wizard, but the other options 
 
 ## Step 1: Add your domain and users
 
-   - [Add your domain](#add-your-domain-to-personalize-sign-in) (if you bought your domain during [sign up](sign-up.md), this step is already done.)
+   - [Add your domain](set-up.md#add-your-domain-to-personalize-sign-in) (if you bought your domain during [sign up](sign-up.md), this step is already done.)
 
     - Add users. You can do this in any of the three ways:
         - In the [Add users in the wizard](set-up.md#add-users-in-the-wizard).
@@ -39,7 +39,7 @@ Most of the set up steps can be done in the setup wizard, but the other options 
         - You can also [add users later](add-users-m365b.md) in the admin center.
 ## Step 2: Set up security policies and configure devices 
 
-  - Use the [setup wizard](#set-up-policies-in-the-wizard) to configure device and security policies. 
+  - Use the [Setup wizard](set-up.md#set-up-security-policies-and-device-configurations) to configure device and security policies. 
   - You can also add more or edit them later in the [admin center](view-policies-and-devices.md) and in the [Intune portal](https://docs.microsoft.com/intune/tutorial-walkthrough-intune-portal).
   - In addition to the security settings in the setup wizard, you can increase your security by adding the following settings:
 
