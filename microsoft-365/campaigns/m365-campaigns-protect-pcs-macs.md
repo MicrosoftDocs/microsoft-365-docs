@@ -28,8 +28,12 @@ description: "Protect against phishing and other attacks with Microsoft 365 for 
 
 The following are specific things you can do if your computer is running Windows 10, or if you have a Mac.
 
+My feeling is that this topic is intended for someone who doesn't have Windows 10 Pro? If so I think we need to reframe it  - not sure how Microsoft 365 Business even works in the non-managed Window's versions. I can test this and we can see. I think it might look more like Office 365 BP? 
+
 ## [Windows 10](#tab/Windows10)
 **Turn on device encryption**<p>
+THIS IS ACTUALLY TURNED ON AUTOMATICALLY IF THE ADMIN ACCEPTS defaults for windows protection in the setup wizard.
+
 Device encryption is available on a wide range of Windows devices and helps protect your data by encrypting it. If you turn on device encryption, only authorized individuals will be able to access your device and data. If device encryption is not available on your device, you can turn on standard BitLocker encryption instead. (BitLocker is not available on Windows 10 Home edition.) 
 
 [Turn on device encryption](https://support.microsoft.com/en-us/help/4028713/windows-10-turn-on-device-encryption) 
