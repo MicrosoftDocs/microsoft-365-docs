@@ -46,4 +46,4 @@ These resources can help answer questions that you might have about specific dev
 
 - For more questions on Dell devices contact [MMD_at_dell@dell.com](mailto:MMD_at_dell@dell.com).
 
-- For more questions on HP devices contact: Americas ([mmd-americas@hp.com](mailto:mmd-americas@hp.com)); Europe/Middle East/Africa ([mmd-emea@hp.com](mailto:mmd-emea@hp.com)); Asia Pacific/Japan ([mmd-apj@hp.com](mailto:mmd-apj@hp.com)); Global ([mmd@hp.com](mmd@hp.com))
+- For more questions on HP devices contact: Americas ([mmd-americas@hp.com](mailto:mmd-americas@hp.com)); Europe/Middle East/Africa ([mmd-emea@hp.com](mailto:mmd-emea@hp.com)); Asia Pacific/Japan ([mmd-apj@hp.com](mailto:mmd-apj@hp.com)); Global ([mmd@hp.com](mailto:mmd@hp.com))
