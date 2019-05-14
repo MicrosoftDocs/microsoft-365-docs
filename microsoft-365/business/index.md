@@ -2,8 +2,8 @@
 layout: HubPage
 hide_bc: true
 ms.topic: hub-page
-ms.author: robmazz
-author: robmazz
+ms.author: sirkkuw
+author: sirkkuw
 keywords: Microsoft 365 Business, Microsoft 365, business, SMB, small to midsize business, Microsoft 365 Business documentation, docs, documentation, technical information
 localization_priority: Normal
 audience: microsoft-business
@@ -55,7 +55,7 @@ description: Learn how to plan, deploy, and use Microsoft Office 365, Windows 10
                                             </div>
                                             <div class="cardText">
                                                 <h3>Set up</h3>
-                                              <P><a href="get-microsoft-365-business.md" target="_blank">Get Microsoft 365 Business</a></p>
+                                              <P><a href="sign-up.md" target="_blank">Get Microsoft 365 Business</a></p>
                                                <P><a href="set-up.md" target="_blank">Set up Microsoft 365 Business</a></p>
                                                 <P><a href="set-up-windows-devices.md" target="_blank">Set up Windows 10 devices</a></p>
                                                 <P><a href="set-up-mobile-devices.md" target="_blank">Set up iPhone and Android devices</a></p>
