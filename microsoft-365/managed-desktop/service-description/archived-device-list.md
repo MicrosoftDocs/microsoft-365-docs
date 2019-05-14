@@ -12,7 +12,7 @@ ms.localizationpriority: normal
 To assure the best user experience, Microsoft Managed Desktop retires support for devices at a certain point. This topic lists devices that are nearing retirement in the next few years, which we call "archived." If you're getting started with Microsoft Managed Desktop by using devices you already have, you should check this list carefully.
 
 >[!IMPORTANT]
->You can still enroll these devices today, but they will have a shorter service life with Microsoft Managed Desktop. If you are buying new devices, you should use models from the [list of active devices](.\device-list.md).
+>You can still enroll these devices today, but they will have a shorter service life with Microsoft Managed Desktop. If you are buying new devices, you should use models from the [list of active devices](./device-list.md).
 
 <!-- Microsoft 365 E5; Device as a Service -->
 <!-- Split from device & technologies topic. Destination topic for aka.ms/device-list  -->
@@ -22,7 +22,7 @@ The links to devices here are for your reference only. If you want to order devi
 
 #### Microsoft Managed Desktop archived devices
 
-|Model  |Minimum Specs  |Additional Requirements  |Retirement Date&#x00B9;  |
+| Model  | Minimum specs  | Additional requirements  | Retirement date |
 |---------|---------|---------|---------|
 |[Surface Laptop](https://www.microsoft.com/en-us/p/surface-laptop-1st-gen-for-business/8w36k32zm453/g4vs?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab) | 256 GB / Intel i5 / 8 GB RAM | None | **May 20, 2022** |
 |[Surface Pro](https://www.microsoft.com/en-us/p/surface-pro-5th-gen-for-business/907tds4dgwwv/kkzn?cid=msft_web_collection&CustomerIntent=Consumer) | 256 GB / Intel i5 / 8 GB RAM | None | **Jun 15, 2022** |

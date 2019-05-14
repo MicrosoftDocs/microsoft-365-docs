@@ -4,6 +4,7 @@
 ### [Technologies in Microsoft Managed Desktop](intro/technologies.md)
 ## [Microsoft Managed Desktop service description](service-description/index.md)
 ### [Program devices](service-description/device-list.md)
+#### [Archived program devices](service-description/archived-device-list.md)
 ### [Device services](service-description/device-services.md)
 ### [Device configuration](service-description/device-policies.md)
 ### [Security](service-description/security.md)
