@@ -3,8 +3,9 @@
 ## [What is Microsoft 365 Business?](microsoft-365-business-overview.md)
 ## [Get Microsoft 365 Business](sign-up.md)
 ## [Pre-requisites for data protection](pre-requisites-for-data-protection.md)
-## [Overview of set up](set-up-overview.md)
-## [Set up](set-up.md)
+## Setup
+### [Overview of setup](set-up-overview.md)
+### [Set up Microsoft 365 Business](set-up.md)
 ### [Upgrade to Windows Pro Creators Update](upgrade-to-windows-pro-creators-update.md)
 ### [Set up mobile devices](set-up-mobile-devices.md)
 ### [Set up Windows devices](set-up-windows-devices.md)
