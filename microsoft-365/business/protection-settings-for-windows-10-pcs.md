@@ -3,7 +3,7 @@ title: "Set device protection settings for Windows 10 PCs"
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
