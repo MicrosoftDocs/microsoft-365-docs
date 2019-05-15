@@ -3,7 +3,7 @@ title: "About AutoPilot Profile settings"
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 f1_keywords:
 - 'ZTDProfileSettings'

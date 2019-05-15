@@ -3,7 +3,7 @@ title: "Use the step-by-step guide to add Autopilot devices and profile"
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 ms.collection: 
