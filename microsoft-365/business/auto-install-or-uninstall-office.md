@@ -3,7 +3,7 @@ title: "Automatically install or uninstall Office on Windows 10 devices"
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
