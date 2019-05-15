@@ -3,7 +3,7 @@ title: "Deploy Microsoft Teams for Microsoft 365 Enterprise"
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 09/16/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority

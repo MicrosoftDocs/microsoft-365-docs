@@ -3,7 +3,7 @@ title: "What subscription is right for your business?"
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 ms.collection: M365-subscription-management

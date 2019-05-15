@@ -3,7 +3,7 @@ title: "Overview of set up"
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 f1_keywords:
 - 'O365E_M365SetupBanner'

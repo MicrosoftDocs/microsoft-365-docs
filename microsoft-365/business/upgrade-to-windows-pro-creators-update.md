@@ -3,7 +3,7 @@ title: "Upgrade Windows devices to Windows Pro Creators Update"
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
