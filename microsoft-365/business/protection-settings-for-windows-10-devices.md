@@ -3,7 +3,7 @@ title: "Set application protection settings for Windows 10 devices"
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 f1_keywords:
 - 'Win10AppPolicy'

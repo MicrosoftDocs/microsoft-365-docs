@@ -3,7 +3,7 @@ title: "Protect work files on devices"
 ms.author: sirkkuw
 author: sirkkuw
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 f1_keywords:
 - 'O365E_BCSSetup4MobileData'

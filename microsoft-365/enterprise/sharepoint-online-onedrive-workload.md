@@ -3,7 +3,7 @@ title: "Deploy SharePoint Online and OneDrive for Business for Microsoft 365 Ent
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 09/19/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
