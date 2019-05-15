@@ -20,6 +20,9 @@ To be enrolled in Microsoft Managed Desktop a device must be one of the followin
 
 The links to devices here are for your reference only. If you want to order devices, work with your commercial channel contacts to ensure that you choose the correct configurations.
 
+>[!NOTE]
+>In this table, the "retirement date" is the date on which this model will no longer be supported by Microsoft Managed Desktop at all. On that date, all enrolled devices of this model will be removed from Microsoft Managed Desktop, no matter when they were enrolled.
+
 #### Microsoft Managed Desktop archived devices
 
 | Model  | Minimum specs  | Additional requirements  | Retirement date |
@@ -27,16 +30,10 @@ The links to devices here are for your reference only. If you want to order devi
 |[Surface Laptop](https://www.microsoft.com/en-us/p/surface-laptop-1st-gen-for-business/8w36k32zm453/g4vs?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab) | 256 GB / Intel i5 / 8 GB RAM | None | **May 20, 2022** |
 |[Surface Pro](https://www.microsoft.com/en-us/p/surface-pro-5th-gen-for-business/907tds4dgwwv/kkzn?cid=msft_web_collection&CustomerIntent=Consumer) | 256 GB / Intel i5 / 8 GB RAM | None | **Jun 15, 2022** |
 
->[!NOTE]
->In this table, the "retirement date" is the date on which this model will no longer be supported by Microsoft Managed Desktop at all. On that date, all enrolled devices of this model will be removed from Microsoft Managed Desktop, no matter when they were enrolled.
 
 In addition, the device must also:
 
-- Be re-imaged with an image that:
-  - Has the most recent Windows 10 Pro or Enterprise release or immediate previous release;
-  - Has the most recent version of Microsoft Office 365 Click to Run or immediate previous release;
-  - Has the latest OEM-provided drivers installed; and
-  - Has no additional pre-loaded software
+- Have an image approved by Microsoft Managed Desktop. When you order devices, make sure you specify that they are being used with Microsoft Managed Desktop.
 - Not have completed the Windows first-run experience.
 - Be enrolled with [Windows Autopilot](https://docs.microsoft.com/en-us/windows/deployment/windows-autopilot/user-driven-aad) and have the Microsoft Managed Desktop Autopilot profile assigned.
 

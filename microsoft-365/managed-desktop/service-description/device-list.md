@@ -17,10 +17,12 @@ For more information on Microsoft Managed Desktop, see [Microsoft Managed Deskto
 <!-- Split from device & technologies topic. Destination topic for aka.ms/device-list  -->
 To be enrolled in Microsoft Managed Desktop a device must be one of the following models and meet or exceed the listed specifications for RAM, processor family, and disk space. No other customization is supported.
 
-The links to devices here are for your reference only. If you want to order devices, work with your commercial channel contacts to ensure that you choose the correct configurations. In this  table, the *archive date* is the date on which these models will be subject to a shorter management period; any such devices onboarded after this date will not receive a full three-year term of support from Microsoft Managed Desktop. *Retirement date* is the date on which this model will no longer be supported by Microsoft Managed Desktop at all. On that date, all enrolled devices of this model will be removed from Microsoft Managed Desktop, no matter when they were enrolled.
+The links to devices here are for your reference only. If you want to order devices, work with your commercial channel contacts to ensure that you choose the correct configurations. In this  table, the *archive date* is the date on which these models will be subject to a shorter management period; any such devices onboarded after this date will not receive a full three-year term of support from Microsoft Managed Desktop. Archived devices are also listed in [Microsoft Managed Desktop archived devices](archived-device-list.md). *Retirement date* is the date on which this model will no longer be supported by Microsoft Managed Desktop at all. On that date, all enrolled devices of this model will be removed from Microsoft Managed Desktop, no matter when they were enrolled.
+
+In this table, the archive date is the date on which these models will be subject to a shorter management period and moved to the Archived Devices list….”
 
 >[!NOTE]
->This table might be updated at any time. We will post device removals to this topic 90 days prior to the retirement date, when those devices will not be allowed to enroll.
+>Devices can be added to this table at any time, but we will provide 90 days notice for any changes affecting archive or retirement date.
 
 
 Microsoft Managed Desktop Devices
@@ -48,12 +50,7 @@ Microsoft Managed Desktop Devices
 
 In addition, the device must also:     
 
-- Have an image from the factory or by re-imaging that:
-    - Has the most recent Windows 10 Pro or Enterprise release or immediate previous release;
-    - Has the most recent version of Microsoft Office 365 Click to Run or immediate previous release;
-    - Has the latest OEM-provided drivers installed; and
-    - Has no additional preloaded software
-    - HP devices with 5VS04AV must have a Microsoft Managed Devices image
+- Have an image approved by Microsoft Managed Desktop. When you order devices, make sure you specify that they are being used with Microsoft Managed Desktop.
 - Not have completed the Windows first-run experience.
 - Be enrolled with [Windows Autopilot](https://docs.microsoft.com/en-us/windows/deployment/windows-autopilot/user-driven-aad) and have the Microsoft Managed Desktop Autopilot profile assigned.
 
@@ -65,7 +62,7 @@ These resources can help answer questions that you might have about specific dev
 
 - For more questions on HP devices contact: Americas (<a href="mailto:mmd-americas@hp.com">mmd-americas@hp.com</a>); Europe/Middle East/Africa (<a href="mailto:mmd-emea@hp.com">mmd-emea@hp.com</a>); Asia Pacific/Japan (<a href="mailto:mmd-apj@hp.com">mmd-apj@hp.com</a>); Global (<a href="mailto:mmd@hp.com">mmd@hp.com</a>)
 
-**Footnotes**
+
 
 
 
