@@ -1,0 +1,89 @@
+---
+title: Prepare certificates and [other things] for Microsoft Managed Desktop 
+description:  certs/wifi/lan
+keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
+ms.service: m365-md
+author: jaimeo
+ms.localizationpriority: normal
+ms.collection: M365-modern-desktop
+---
+
+# Prepare certificates and [other things] for Microsoft Managed Desktop  
+ 
+Certificate-based authentication is a common requirement for customers using Microsoft Managed Desktop. You might require certificates to access Wi-Fi or LAN, connecting to VPN solutions, or for accessing internal resources in your organization.   
+ 
+Because Microsoft Managed devices are joined to Azure Active Directory (Azure AD) and are managed by Microsoft Intune, you must deploy such certificates by using a Simple Certificate Enrollment Protocol (SCEP) or Public Key Cryptography Standard (PKCS) certificate infrastructure that is integrated with Intune.    
+ 
+## Certificate requirements 
+ 
+Root certificates are required to deploy certificates through a SCEP or PKCS infrastructure. Other applications and services in your organization might require root certificates to be deployed to your Microsoft Managed Desktop devices.    
+ 
+Before you deploy SCEP or PKCS certificates to Microsoft Managed Desktop, you should gather requirements for each service that requires a user or device certificate in your organization. To make this easier, you can use one of the following planning templates:  
+ 
+- [PKCS certificate template](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-ready/downloads/PKCS-certificate-template.xlsx) 
+- [SCEP certificate template](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-ready/downloads/SCEP-certificate-template.xlsx)
+
+>[!NOTE]
+>Currently, only SCEP certificate profiles are supported for Wi-Fi profile deployment to Microsoft Managed Desktop when using an EAP type. PKCS certificate profiles are not supported.    See Add Wi-Fi settings for Windows 10 devices in Intune {WHERE IS THIS MEANT TO POINT TO? Another section of this topic or a different one?}
+
+  
+## Wi-Fi connectivity requirements
+
+To allow a device to be automatically provided with the required Wi-Fi configuration for your enterprise network, a Wi-Fi configuration profile may be required. This configuration can be pushed to Microsoft Managed Desktop devices through a Wi-Fi Configuration Profile using Microsoft Intune.   Your Wi-Fi network infrastructure may also need to be evaluated for compatibility with Microsoft Managed Desktop devices if your network security requires machines to be part of the local domain (Microsoft Managed Desktop devices are Azure AD joined only). 
+ 
+In addition, before you deploy a Wi-Fi configuration to Microsoft Managed Desktop devices, you will be required to gather your organization’s requirements for each Wi-Fi network.  To do so, use the following planning template: 
+ 
+MMD WiFi Profile Template 
+ 
+Wired connectivity requirements : 802.1x authentication 
+ 
+If you utilize 802.1x authentication to secure access from devices to your Local Area Network (LAN) you will need to push the required configuration details to your Microsoft Managed Desktop devices.   Microsoft Managed Desktop devices running Windows 10 version 1809 and later supports deploying an 802.1x configuration through the WiredNetwork configuration service provider (CSP).  For more information, see WiredNetwork CSP documentation. 
+ 
+Before you deploy a wired network configuration profile to Microsoft Managed Desktop devices, you will be required to gather your organization’s requirements for your wired corporate network. To do so, use the following process: 
+ 
+ 
+Logon to a device that has your existing 802.1x profile configured and is connected to the LAN network  
+Open a command prompt with administrative credentials  
+Find the LAN interface name by using the command: netsh interface show interface 
+Export the LAN profile XML using this following command: netsh lan export profile folder=.  Interface=”interface_name” 
+If needed, it’s possible to test your exported profile on an MMD device using the following command:  
+netsh lan add profile filename="PATH_AND_FILENAME.xml" interface="INTERFACE_NAME" 
+ 
+ 
+Deploy certificate infrastructure  
+ 
+If you already have an existing SCEP or PKCS infrastructure with Intune and this meets your requirements, this can also be used for the Microsoft Managed Desktop.   If no SCEP or PKCS infrastructure exists, this will need to be prepared.  
+ 
+For more information, see Configure a certificate profile for your devices in Microsoft Intune. 
+ 
+ 
+ 
+Deploy a LAN profile 
+ 
+Once your LAN profile has been exported, you can prepare the policy for Microsoft Managed Desktop using the following steps:   
+ 
+Create a custom profile in Microsoft Intune for the LAN profile using the following settings (see Custom settings for Windows 10) : 
+Custom OMA-URI Settings, select Add. Enter the following settings: 
+Name: Modern Workplace-Windows 10 LAN Profile 
+Description: Enter a description that gives an overview of the setting, and any other important details. 
+OMA-URI (case sensitive): Enter ./Device/Vendor/MSFT/WiredNetwork/LanXML 
+Data type: Choose String (XML file) 
+Custom XML: Upload the exported XML file 
+Submit a service request to MMD Operations using the Microsoft Managed Desktop Admin Portal to review and deploy the configuration profile to “Modern Workplace Devices – Test” 
+MMD Operations will advise, via the MMD Admin portal, when the request has been completed 
+ 
+Deploy certificates and Wi-Fi/VPN profile 
+ 
+ 
+Create a profile :  
+for each of the Root and Intermediate certificates (see Create trusted certificate profiles)  
+Must have a description that includes Expiration Date (Format Date should be DD/MM/YYYY) 
+for each SCEP or PKCS certificates (see Create a SCEP certificate profile or Create a PKCS certificate profile) 
+Must have a description that includes Expiration Date (Format Date should be DD/MM/YYYY) 
+for each corporate WiFi (see Wi-Fi settings for Windows 10 and later devices) 
+for each corporate VPN (see VPN settings for Windows 10) 
+Submit a service request titled “Certificate Deployment” or “Wi-Fi Profile Deployment” to MMD Operations using the Microsoft Managed Desktop Admin Portal to review and deploy the configuration profile to “Modern Workplace Devices – Test” 
+MMD Operations will advise, via the MMD Admin portal, when the request has been completed. 
+ 
+Note : Certificate profile without expiration date will not be deployed to Microsoft Managed Desktop Devices. 
+ 
