@@ -19,13 +19,13 @@ To be enrolled in Microsoft Managed Desktop a device must be one of the followin
 
 The links to devices here are for your reference only. If you want to order devices, work with your commercial channel contacts to ensure that you choose the correct configurations. In this  table, the *archive date* is the date on which these models will be subject to a shorter management period; any such devices onboarded after this date will not receive a full three-year term of support from Microsoft Managed Desktop. Archived devices are also listed in [Microsoft Managed Desktop archived devices](archived-device-list.md). *Retirement date* is the date on which this model will no longer be supported by Microsoft Managed Desktop at all. On that date, all enrolled devices of this model will be removed from Microsoft Managed Desktop, no matter when they were enrolled.
 
-In this table, the archive date is the date on which these models will be subject to a shorter management period and moved to the Archived Devices list….”
+In this table, the archive date is the date on which these models will be subject to a shorter management period and moved to the Archived Devices list.
 
 >[!NOTE]
 >Devices can be added to this table at any time, but we will provide 90 days notice for any changes affecting archive or retirement date.
 
 
-Microsoft Managed Desktop Devices
+**Microsoft Managed Desktop Devices**
 
 
 | Model    | Minimum specifications  | Additional requirements   | Archive date   | Retirement date   |
@@ -45,7 +45,7 @@ Microsoft Managed Desktop Devices
 | [Surface Go](https://www.microsoft.com/en-us/p/surface-go-for-business/909wr0x3sgfk/8khl?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab) | 128 GB / Intel 4415Y / 8GB RAM | None | Aug 2, 2020 | Aug 2, 2023 |
 | [Surface Laptop](https://www.microsoft.com/en-us/p/surface-laptop-1st-gen-for-business/8w36k32zm453/g4vs?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab) | 256 GB / Intel i5 / 8 GB RAM | None | **May 20, 2019** | May 20, 2022 |
 | [Surface Laptop 2](https://www.microsoft.com/en-us/p/surface-laptop-2-for-business/8xlk0g60tlb6/hkq9?cid=msft_web_collection&CustomerIntent=Consumer) | 256 GB / Intel i5 / 8 GB RAM | None | Oct 16, 2020 | Oct 16, 2023 |
-|[Surface Pro (5th Gen)](https://www.microsoft.com/en-us/p/surface-pro-5th-gen-for-business/907tds4dgwwv/kkzn?cid=msft_web_collection&CustomerIntent=Consumer) | 256 GB / Intel i5 / 8 GB RAM | None | Jun 15, 2019 | Jun 15, 2022 |
+|[Surface Pro (5th Gen)](https://www.microsoft.com/en-us/p/surface-pro-5th-gen-for-business/907tds4dgwwv/kkzn?cid=msft_web_collection&CustomerIntent=Consumer) | 256 GB / Intel i5 / 8 GB RAM | None | **Jun 15, 2019** | Jun 15, 2022 |
 | [Surface Pro 6](https://www.microsoft.com/en-us/p/surface-pro-6-for-business/8xjq3d3lrp0r/grf9?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab) | 256 GB / Intel i5 / 8 GB RAM | None | Oct 16, 2020 | Oct 16, 2023 |
 
 In addition, the device must also:     
