@@ -20,7 +20,7 @@ Modernizing these services will allow the best end-user experience with Microsof
 
 ## Mapped drives on Microsoft Managed Desktop
  
-If you cannot remove or replace mapped drives for some use cases, you should submit a support request in the Microsoft Managed Desktop portal to have them deployed to Microsoft Managed Desktop users.
+If you cannot remove or replace mapped drives for some use cases, you should submit a support request in the Microsoft Managed Desktop admin portal to have them deployed to Microsoft Managed Desktop users.
     
 For such a request, you'll have to provide the following details in the support request: 
 
@@ -42,6 +42,6 @@ Make sure that mapped drives cannot be avoided and you have carefully reviewed t
 
 1. Navigate to the [Microsoft Managed Desktop portal](https://aka.ms/mmdportal).  
 2. Submit a support request titled “Mapped drives deployment” through the **Support > Support requests** section and provide all the required file share details.  
-3. Microsoft Managed Desktop Operations will advise, by using support request updates, when the request has been completed. Initially this configuration will only be deployed to devices in the Test deployment group.  
-4. You must test and confirm whether the configuration deployed by the Microsoft Managed Desktop Operations team works as you expect. Use the support request to update Microsoft Managed Desktop Operations once you've completed your testing.  
-5. Microsoft Managed Desktop Operations team will then deploy the configuration to the other deployment groups. 
+3. Microsoft Managed Desktop IT Operations will advise, by using support request updates, when the request has been completed. Initially this configuration will only be deployed to devices in the Test deployment group.  
+4. You must test and confirm whether the configuration deployed by the Microsoft Managed Desktop IT Operations works as you expect. Reply using the Discussion tab in the Support request to notify Microsoft Managed Desktop IT Operations once you've completed your testing.  
+5. Microsoft Managed Desktop IT Operations team will then deploy the configuration to the other deployment groups. 
