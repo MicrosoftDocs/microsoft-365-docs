@@ -17,6 +17,7 @@
 ### [Prepare network](get-ready/network.md)
 ### [Prepare on-premises resources access for Microsoft Managed Desktop](get-ready/authentication.md)
 ### [Prepare mapped drives for Microsoft Managed Desktop](get-ready/mapped-drives.md)
+### [Prepare certificates and network profiles for Microsoft Managed Desktop](get-ready/certs-wifi-lan.md)
 ### [Prepare line-of-business apps](get-ready/apps.md)
 ## [Get started with Microsoft Managed Desktop](get-started/index.md)
 ### [Add Admin contacts](get-started/add-admin-contacts.md)

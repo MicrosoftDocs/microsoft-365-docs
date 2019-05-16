@@ -1,5 +1,5 @@
 ---
-title: Prepare certificates and [other things] for Microsoft Managed Desktop 
+title: Prepare certificates and network profiles for Microsoft Managed Desktop 
 description:  certs/wifi/lan
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
@@ -8,7 +8,7 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 ---
 
-# Prepare certificates and [other things] for Microsoft Managed Desktop  
+# Prepare certificates and network profiles for Microsoft Managed Desktop  
  
 Certificate-based authentication is a common requirement for customers using Microsoft Managed Desktop. You might require certificates to access Wi-Fi or LAN, to connect to VPN solutions, or for accessing internal resources in your organization.   
  
@@ -29,7 +29,7 @@ Before you deploy SCEP or PKCS certificates to Microsoft Managed Desktop, you sh
   
 ## Wi-Fi connectivity requirements
 
-To allow a device to be automatically provided with the required Wi-Fi configuration for your enterprise network, you might need a Wi-Fi configuration profile. Intune can push these profiles to Microsoft Managed Desktop devices.  If your network security requires devices to be part of the local domain, you might also need to evaluate your Wi-Fi network infrastructure to make sure it's compatible with Microsoft Managed Desktop devices (Microsoft Managed Desktop devices are Azure AD-joined only). 
+To allow a device to be automatically provided with the required Wi-Fi configuration for your enterprise network, you might need a Wi-Fi configuration profile. You can configure Microsoft Managed Desktop to deploy these profiles to your devices. If your network security requires devices to be part of the local domain, you might also need to evaluate your Wi-Fi network infrastructure to make sure it's compatible with Microsoft Managed Desktop devices (Microsoft Managed Desktop devices are Azure AD-joined only). 
  
 Before you deploy a Wi-Fi configuration to Microsoft Managed Desktop devices, you will be required to gather your organization’s requirements for each Wi-Fi network. To make this easier, you can use this [WiFi profile template](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-ready/downloads/WiFi-profile-template.xlsx).
  
@@ -41,7 +41,7 @@ If you use 802.1x authentication to secure access from devices to your local are
 Before you deploy a wired network configuration profile to Microsoft Managed Desktop devices, gather your organization’s requirements for your wired corporate network. To do so, follow these steps: 
  
  
-1. Sign on to a device that has your existing 802.1x profile configured and is connected to the LAN network.2.   
+1. Sign on to a device that has your existing 802.1x profile configured and is connected to the LAN network.  
 2. Open a command prompt with administrative credentials. 
 3. Find the LAN interface name by running **netsh interface show interface**. 
 4. Export the LAN profile XML by running **netsh lan export profile folder=.  Interface=”interface_name”**. 
@@ -63,7 +63,7 @@ Once your LAN profile has been exported, you can prepare the policy for Microsof
 1. Create a custom profile in Microsoft Intune for the LAN profile using the following settings (see [Use custom settings for Windows 10 devices in Intune](https://docs.microsoft.com/intune/custom-settings-windows-10)). In **Custom OMA-URI Settings**, select **Add**, and then enter the following values: 
     - Name: *Modern Workplace-Windows 10 LAN Profile* 
     - Description: Enter a description that gives an overview of the setting, and any other important details. 
-    - OMA-URI (case sensitive): Enter *./Device/Vendor/MSFT/WiredNetwork/LanXML*. 
+    - OMA-URI (case sensitive): Enter *./Device/Vendor/MSFT/WiredNetwork/LanXML*
     - Data type: select **String (XML file)**. 
     - Custom XML: Upload the exported XML file.
 2. Submit a service request to Microsoft Managed Desktop Operations using the Microsoft Managed Desktop Admin Portal to review and deploy the configuration profile to “Modern Workplace Devices – Test”. Microsoft Managed Desktop Operations will let you know when the request is completed by using the Admin Portal.
