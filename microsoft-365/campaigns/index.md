@@ -111,24 +111,6 @@ After you set up your secure Microsoft 365 environment, you can use the followin
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="../images/campaigns/m365-democracy-teams-sharefiles.png" alt="sharing a file in Microsoft Teams" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Share files and videos</h3>
-                        <p>Save your files and videos to the cloud so they're available to all of the appropriate people.</p>
-                        <p><a href="share-files-and-videos.md">Start sharing</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
                             <img src="../images/campaigns/sm-m365-campaign-email-encrypt.png" alt="Encrypted and labeled email" />
                         </div>
                     </div>
@@ -154,6 +136,24 @@ After you set up your secure Microsoft 365 environment, you can use the followin
                         <h3>Create a communications site</h3>
                         <p>Share events, message, images, and more with your team in an internal communications site created with SharePoint.</p>
                         <p><a href="create-communications-site.md">Create your site</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="../images/campaigns/m365-democracy-teams-sharefiles.png" alt="sharing a file in Microsoft Teams" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Share files and videos</h3>
+                        <p>Save your files and videos to the cloud so they're available to all of the appropriate people.</p>
+                        <p><a href="share-files-and-videos.md">Start sharing</a></p>
                     </div>
                 </div>
             </div>
