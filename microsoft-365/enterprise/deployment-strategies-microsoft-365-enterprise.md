@@ -4,7 +4,7 @@ author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
 ms.date: 01/23/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
