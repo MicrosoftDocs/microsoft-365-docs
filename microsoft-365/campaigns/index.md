@@ -34,7 +34,7 @@ It's a recommended secure configuration that includes both Microsoft 365 Busines
 - Protect your work files on all of your iOS, Android, and Windows 10 devices with enterprise-grade security that is simple to manage 
 - Apply extra protection for user accounts and identity with Azure Active Directory P1
 
-![Microsoft 365 Business and Azure Active Directory P1 protect your productivity tools, collaboration tools, file storage, email, devices, and identity](../images/campaigns/sm-M365-democracy-WhatIsIt.png)
+![Microsoft 365 Business and Azure Active Directory P1 protect your productivity tools, collaboration tools, file storage, email, devices, and identity](../images/campaigns/M365-WhatIsIt-SecurityFocus.png)
 
 While some organizations qualify for nonprofit pricing for Microsoft 365 Business and Azure Active Directory P1, any organization with both these plans can take advantage of this guidance to configure increased security and learn how to collaborate securely.
 
@@ -111,13 +111,31 @@ After you set up your secure Microsoft 365 environment, you can use the followin
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="../images/campaigns/m365-democracy-teams-sharefiles.png" alt="a SharePoint communications site" />
+                            <img src="../images/campaigns/m365-democracy-teams-sharefiles.png" alt="sharing a file in Microsoft Teams" />
                         </div>
                     </div>
                     <div class="cardText">
                         <h3>Share files and videos</h3>
                         <p>Save your files and videos to the cloud so they're available to all of the appropriate people.</p>
                         <p><a href="share-files-and-videos.md">Start sharing</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="../images/campaigns/sm-m365-campaign-email-encrypt.png" alt="Encrypted and labeled email" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Encrypt or label your sensitive email</h3>
+                        <p>Use encryption and sensitivity labels to protect email that contains confidential or sensitive information.</p>
+                        <p><a href="send-encrypted-email.md">Send encrypted email</a></p>
                     </div>
                 </div>
             </div>
