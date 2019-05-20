@@ -23,9 +23,14 @@ ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: "Learn how to send encrypted email using Outlook."
 ---
 
-# Send encrypted email
+# Encrypt or label your sensitive email
 
-Your admin can define rules to automatically encrypt messages that meet certain criteria. For instance, your admin can create a rule that encrypts all messages sent outside your organization or all messages that mention specific words or phrases. Any encryption rules will be applied automatically.
+Your data and campaign information is important and often confidential. Help protect this sensitive information by using encryption and sensitivity labels so you and your email recipients treat the information with the sensitivity it requires.
+
+- **Encryption:** Your admin can define rules to automatically encrypt messages that meet certain criteria. For instance, your admin can create a rule that encrypts all messages sent outside your organization or all messages that mention specific words or phrases. Any encryption rules will be applied automatically.
+- **Sensitivity labels:** Your campaign can also set up sensitivity labels that you can apply to your files and email to keep them compliant with your campaign's information protection policies. When you set a label, the label persists with your email, even when it's sent - for example, by appearing as a header to your message.
+
+![Diagram of a an email with callouts for labels and encryption](../images/campaigns/m365-campaign-email-encrypt.png)
 
 ## Set up
 
