@@ -13,6 +13,7 @@
 ## [Tune up threat protection](m365-campaigns-tune-up-protection.md) 
 ## [Configure conditional access policies](m365-campaigns-conditional-access.md)
 ## Configure additional protection for Windows 10 devices 
+## [Infographic: Protect your campaign](m365-campaigns-protect-campaign-infographic.md)
 
 # User device setup help
 ## [Set up mobile devices](../business/set-up-mobile-devices.md?toc=/microsoft-365/campaigns/toc.json)
