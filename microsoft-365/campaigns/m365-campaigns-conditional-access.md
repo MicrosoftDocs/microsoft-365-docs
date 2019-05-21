@@ -25,11 +25,9 @@ description: "Learn about device states in Microsoft 365 Business."
 
 # Configure conditional access policies for Microsoft 365 for campaigns
 
-Conditional access is . . . .
+You can use conditional access to add substancial additional security in addition to signing in with a user name and password. You can add policies to require second form of authentication (called multifactor authentication, or MFA), give differing access based on the device, or whether the app is a cloud app or a client app, restrict access to IP addresses that you control. You can even block certain users from accessing resources. For more see, [overview of conditional access](https://docs.microsoft.com/azure/active-directory/conditional-access/overview).
 
-Conditional access policies add substancial protection to your Microsoft 365 environment. 
-
-Prescribed conditional access policies for Microsoft 365 for campaigns
+**Recommended conditional access policies for Microsoft 365 for campaigns**
 - Require MFA for all users
 - Require approved apps
 - Block clients that don't support modern authentication
