@@ -29,10 +29,17 @@ Microsoft 365 for Campaigns makes it much harder for hackers to gain access to y
 
 ![Illustration that sums up key points from below for iPhones, Android devices, Macs, Windows 10, sharing, and key staff](../images/campaigns/M365-democracy-Users_700px.png)
 
+## Use secure email practices
+All users should be aware of and use these email practices to help keep their email secure:
+- Set up email to use multi-factor authentication with the authenticator app.
+- Verify legitimate emails and look for safety tips from ATP Advanced Phishing Protection.
+- Open only safe links and attachments, as verified by ATP Safe Links and ATP Safe Attachments.
+
 ## Set up iPhones and Android devices
 All users you add to your environment will need to take a few minutes to setup iPhones and Android devices to work securely:
-- Setup devices to use multi-factor authentication with the autenticator app.
+- Set up devices to use multi-factor authentication with the authenticator app.
 - Use Microsoft mobile apps, including Outlook Mobile, Word, OneDrive, and other Microsoft apps from the app store. The native mail apps that are included on iPhones and Android devices are not supported. 
+- Require a PIN for users to unlock their device.
 
 After setting these up, your users will be prompted to use the authenticator app when accessing your organization data on these devices, indluding mail. 
 

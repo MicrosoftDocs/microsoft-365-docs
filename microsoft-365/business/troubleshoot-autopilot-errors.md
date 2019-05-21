@@ -3,7 +3,7 @@ title: "Troubleshoot AutoPilot device errors"
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: troubleshooting
 f1_keywords:
 - 'ZTDTroubleshootDeviceErrors'

@@ -3,7 +3,7 @@ title: "Enable domain-joined Windows 10 devices to be managed by Microsoft 365 B
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
