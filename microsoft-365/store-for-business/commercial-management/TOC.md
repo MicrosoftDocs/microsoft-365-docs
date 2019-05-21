@@ -1,4 +1,4 @@
-# [Manage commerce purchases and billing](/microsoft-store/index?toc=microsoft-365/store-for-business/commercial-management/toc.json)
+# [Manage commerce purchases and billing](/microsoft-store/index?toc=/microsoft-365/store-for-business/commercial-management/toc.json)
 ## [Sign up and get started](/microsoft-store/sign-up-microsoft-store-for-business-overview?toc=microsoft-365/store-for-business/commercial-management/toc.json)
 ## [Products and services]()
 ### [Buy licenses](/office365/admin/subscriptions-and-billing/buy-licenses?view=o365-worldwide&toc=microsoft-365/store-for-business/commercial-management/toc.json)
