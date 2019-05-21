@@ -64,7 +64,18 @@ The [Microsoft 365 Enterprise foundation infrastructure poster](http://aka.ms/m3
 - The process for onboarding a new user
 - How to monitor and update
 
++++++++++++++48
+
 ![](./media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.png)
+
+++++++++++++++++24
+
+![](./media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra-smaller.png)
+
+++++++++++++++++++SVG
+
+![](./media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.svg)
+
 
 To download a copy of the poster, click [here](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf).
 
