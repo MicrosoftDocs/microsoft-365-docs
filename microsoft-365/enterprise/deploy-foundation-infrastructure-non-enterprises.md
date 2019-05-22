@@ -66,17 +66,12 @@ If you have an on-premises AD DS domain, continue to use those groups in Microso
 
 If you don’t have an on-premises AD DS, create security groups in Azure AD using these levels of security.
 
-++Table
-
-Security level	Description	Examples
-Highly regulated	Groups contain users that use and create data that is highly classified, constitutes trade secrets, or is regulated.
-
-This is typically a small amount of data managed by a small number of users.	Research, legal, and financial teams. Teams storing or using customer or partner data.
-Sensitive	Groups contain users that use and create data that is sensitive and requires a higher level of protection.	Product or marketing teams that are developing future products.
-Baseline	Groups contain users that do not create or need access to sensitive or highly regulated data. This is the minimum standard of security for identities, devices, and data.
-
-This is typically most of your organization’s data managed by most of users.	Groups for first line workers, such as sales, marketing, support, administration, and manufacturing.
-
+| Security level | Description | Examples |
+|:-------|:-----|:-----|
+| Highly regulated | Groups contain users that use and create data that is highly classified, constitutes trade secrets, or is regulated. | This is typically a small amount of data managed by a small number of users. <BR><BR> Research, legal, and financial teams. Teams storing or using customer or partner data. |
+| Sensitive | Groups contain users that use and create data that is sensitive and requires a higher level of protection. | Product or marketing teams that are developing future products |
+| Baseline | Groups contain users that do not create or need access to sensitive or highly regulated data. This is the minimum standard of security for identities, devices, and data. <BR><BR> This is typically most of your organization’s data managed by most of users. | Groups for first line workers, such as sales, marketing, support, administration, and manufacturing. |
+||||
 
 ### Hybrid identity
 
@@ -106,28 +101,23 @@ You apply conditional access policies to user accounts or groups. To facilitate 
 
 Here is the list of Azure AD conditional access policies to enable or create.
 
-++Table
-
-Azure AD conditional access policies	Groups to which it applies
-Baseline policy: Require MFA for admins	This policy applies to admin roles, so no groups need to be specified. This policy just needs to be enabled. All subsequent policies need to be created and enabled.
-
-Block clients that don't support modern authentication	Select “All users” in the policy settings.
-
-Require MFA when sign-in risk is medium or high (requires Microsoft 365 Enterprise E5)	BASELINE
-Require MFA when sign-in risk is low, medium, or high (requires Microsoft 365 Enterprise E5)
-SENSITIVE
-Always require MFA
-HIGHLY-REGULATED
-Require approved apps on iOS and Android devices	BASELINE, SENSITIVE, HIGHLY-REGULATED
-Require compliant PCs	BASELINE
-Require compliant PCs and iOS and Android devices	SENSITIVE, HIGHLY-REGULATED
+| Azure AD conditional access policies | Groups to which it applies |
+|:------|:-----|
+| Baseline policy: Require MFA for admins | This policy applies to admin roles, so no groups need to be specified. This policy just needs to be enabled. All subsequent policies need to be created and enabled. |
+| Block clients that don't support modern authentication | Select “All users” in the policy settings. |
+| Require MFA when sign-in risk is medium or high (requires Microsoft 365 Enterprise E5) | BASELINE |
+| Require MFA when sign-in risk is low, medium, or high (requires Microsoft 365 Enterprise E5) | SENSITIVE |
+| Always require MFA | HIGHLY-REGULATED |
+| Require approved apps on iOS and Android devices | BASELINE, SENSITIVE, HIGHLY-REGULATED |
+| Require compliant PCs | BASELINE |
+| Require compliant PCs and iOS and Android devices | SENSITIVE, HIGHLY-REGULATED |
+|||
 
 Here is the Azure AD Identity Protection (requires Microsoft 365 Enterprise E5) user risk policy to create and enable.
 
-++ Table
-
-Azure AD Identity Protection (E5 only) user risk policy	Groups to which it applies
-High risk users must change passwords (requires Microsoft 365 Enterprise E5)	 Select “All users” in the policy settings.
+| Azure AD Identity Protection (E5 only) user risk policy | Groups to which it applies |
+|:------|:-----|
+| High risk users must change passwords (requires Microsoft 365 Enterprise E5) | Select “All users” in the policy settings. |
 
 See [Common identity and device access policies](identity-access-policies.md) for the instructions.
 
@@ -135,12 +125,13 @@ See [Common identity and device access policies](identity-access-policies.md) fo
 
 Here are some features that can make user, group, and licensing management easier for you.
 
-++Table
 
-Feature	Use
-Self-service group management	Allow management of Azure AD groups by group owners instead of IT administrators. See [Self-service group management](identity-self-service-group-management.md#allow-users-to-create-and-manage-their-own-groups) for instructions.
-Dynamic group membership	Configure automatic addition or removal of user accounts from Azure AD groups based on user account attributes, such as Department or Country. See [Dynamic group membership](identity-self-service-group-management.md#set-up-dynamic-group-membership) for instructions.
-Group-based licensing	Use group membership to automatically assign or unassign licenses to user accounts. See [Group-based licensing](identity-self-service-group-management.md#set-up-automatic-licensing) for instructions.
+| Feature | Use |
+|:------|:-----|
+| Self-service group management | Allow management of Azure AD groups by group owners instead of IT administrators. See [Self-service group management](identity-self-service-group-management.md#allow-users-to-create-and-manage-their-own-groups) for instructions. |
+| Dynamic group membership | Configure automatic addition or removal of user accounts from Azure AD groups based on user account attributes, such as Department or Country. See [Dynamic group membership](identity-self-service-group-management.md#set-up-dynamic-group-membership) for instructions. |
+| Group-based licensing | Use group membership to automatically assign or unassign licenses to user accounts. See [Group-based licensing](identity-self-service-group-management.md#set-up-automatic-licensing) for instructions. |
+|  |  |
 
 If you are using group-based licensing, create a group named LICENSED to contain user account names that are assigned a Microsoft 365 Enterprise license.
 
@@ -157,7 +148,7 @@ Here is a visual summary of the Identity phase for hybrid identity, with the new
 The new and highlighted identity elements include:
  
 |||
-|:-------|:-----|
+|:------:|:-----|
 | ![](./media/deploy-foundation-infrastructure-non-enterprises/identity-adds.png) | An on-premises AD DS with user accounts. |
 | ![](./media/deploy-foundation-infrastructure-non-enterprises/identity-aadconnect.png) | A Windows-based server running Azure AD Connect. |
 | ![](./media/deploy-foundation-infrastructure-non-enterprises/identity-aad-accounts.png) | The synchronized set of AD DS accounts in Azure AD. |
@@ -192,11 +183,11 @@ Here is a visual summary of the Windows 10 Enterprise phase, with the new elemen
  
 The new and highlighted Windows 10 Enterprise elements include:
 
-++Table
- 
-Windows 10 Enterprise installed on Windows devices.
- 
-The Volume Licensing Service Center, which provides images for new installations of Windows 10 Enterprise, and the Windows Update for Business service, which provides the latest updates.
+|||
+|:------:|:-----|
+| ![](./media/deploy-foundation-infrastructure-non-enterprises/win10-device.png) | Windows 10 Enterprise installed on Windows devices. |
+| ![](./media/deploy-foundation-infrastructure-non-enterprises/win10-cloud.png) | The Volume Licensing Service Center, which provides images for new installations of Windows 10 Enterprise, and the Windows Update for Business service, which provides the latest updates. |
+|||
 
 ## Phase 4: Office 365 ProPlus
 
@@ -216,11 +207,11 @@ Here is a visual summary of the Office 365 ProPlus phase, with the new elements 
  
 The new and highlighted Office 365 ProPlus elements include:
  
-++ Table
-
-Office 365 ProPlus installed on devices.
- 
-The Office Content Delivery Network (CDN) for Office 365 ProPlus, which devices access for ongoing updates.
+|||
+|:------:|:-----|
+| ![](./media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-device.png) | Office 365 ProPlus installed on devices. |
+| ![](./media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-cdn.png) | The Office Content Delivery Network (CDN) for Office 365 ProPlus, which devices access for ongoing updates. |
+|||
 
 ## Phase 5: Mobile device management
 
@@ -234,18 +225,16 @@ Intune provides two types of mobile device management:
 
 Using Azure AD conditional access, your Intune policies can be enforced for device compliance and app protection. Here is the list of Intune policies to create.
 
-++Table
-
-Intune policies	Groups to which it applies
-Device compliance policy for Windows	BASELINE, SENSITIVE, HIGHLY-REGULATED
-Device compliance policy for iOS	SENSITIVE, HIGHLY-REGULATED
-Device compliance for macOS	
-Device compliance policy for Android & Android Enterprise	SENSITIVE, HIGHLY-REGULATED
-	
-App protection policy for iOS	BASELINE, SENSITIVE, HIGHLY-REGULATED
-App protection policy for macOS	BASELINE, SENSITIVE, HIGHLY-REGULATED
-App protection policy for Android & Android Enterprise	BASELINE, SENSITIVE, HIGHLY-REGULATED
-
+| Intune policies | Groups to which it applies |
+|:------|:-----|
+| Device compliance policy for Windows | BASELINE, SENSITIVE, HIGHLY-REGULATED |
+| Device compliance policy for iOS | SENSITIVE, HIGHLY-REGULATED |
+| Device compliance for macOS | SENSITIVE, HIGHLY-REGULATED |
+| Device compliance policy for Android & Android Enterprise | SENSITIVE, HIGHLY-REGULATED |
+| App protection policy for iOS | BASELINE, SENSITIVE, HIGHLY-REGULATED |
+| App protection policy for macOS | BASELINE, SENSITIVE, HIGHLY-REGULATED |
+| App protection policy for Android & Android Enterprise | BASELINE, SENSITIVE, HIGHLY-REGULATED |
+|||
 	
 See [Common identity and device access policies](identity-access-policies.md) for the instructions.
 
@@ -257,11 +246,11 @@ Here is a visual summary of the Mobile Device Management phase, with the new ele
  
 The new and highlighted mobile device management elements include:
 
-++Table
- 
-Devices that are enrolled in Intune, showing the on-premises laptop running Windows 10 Enterprise.
- 
-Intune policies for device compliance and app protection.
+|||
+|:------:|:-----|
+| ![](./media/deploy-foundation-infrastructure-non-enterprises/mdm-device.png) | Devices that are enrolled in Intune, showing the on-premises laptop running Windows 10 Enterprise. |
+| ![](./media/deploy-foundation-infrastructure-non-enterprises/mdm-policies.png) | Intune policies for device compliance and app protection. |
+|||
 
 ## Phase 6: Information protection
 
@@ -316,12 +305,10 @@ Here is a visual summary of the Information Protection phase, with the new eleme
  
 The new and highlighted information protection elements include:
  
-++Table
-
-Sensitivity labels for the three levels of security that users can apply to documents.
-
-
-
+|||
+|:------:|:-----|
+| ![](./media/deploy-foundation-infrastructure-non-enterprises/info-protect-labels.png) | Sensitivity labels for the three levels of security that users can apply to documents. |
+|||
 
 ## Onboarding
 
@@ -409,7 +396,7 @@ After their onboarding, each employee should have:
    - Exchange Online distribution groups
    - Sensitivity label groups (as needed)
 - A Windows 10 Enterprise device that:
-   - Is joined to the AD DS domain, Azure AD tenant, or both.
+   - Is joined to the Azure AD tenant or to both the Azure AD tenant and your AD DS domain.
    - Automatically updates itself with the latest Windows 10 Enterprise product improvements and security enhancements.
    - Has Office 365 ProPlus installed, which automatically updates itself with the latest Office product improvements and security enhancements.
    - Is enrolled in Intune and subject to sign-in and Intune application and device compliance policies.
