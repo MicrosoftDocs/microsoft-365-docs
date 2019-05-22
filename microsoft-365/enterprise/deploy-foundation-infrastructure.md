@@ -103,6 +103,10 @@ Once the foundation infrastructure is completed, tested, and piloted, you can ro
 
 To give you some ideas on how to approach the project management of the different phases of the foundation infrastructure for pilot users and the rest of your organization, see [deployment strategies](deployment-strategies-microsoft-365-enterprise.md).
 
+## Deployment for non-enterprises
+
+If your organization is smaller and Microsoft 365 Business is not suitable for you, see [deployment for non-enterprises](deploy-foundation-infrastructure-non-enterprises.md).
+
 
 ## Next step
 
