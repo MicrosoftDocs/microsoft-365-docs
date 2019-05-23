@@ -68,17 +68,17 @@ If you don’t have an on-premises AD DS domain, create security groups in Azure
 
 | Security level | Description | Examples |
 |:-------|:-----|:-----|
-| Baseline | This is a minimum and default  standard for protecting data and for the identities and devices that access your data. <BR><BR> This is typically most of your organization’s data managed by most of your users. | Groups for first line workers, such as sales, marketing, support, administration, and manufacturing. |
-| Sensitive | This is additional protection for a subset of your data that must be protected beyond the baseline level. Groups contain users that use and create sensitive data that is specific to departments and projects that are not meant to be available to everyone. | Product or marketing teams that are developing future products |
-| Highly regulated | This is the highest level of protection for a typically small amount of data that is highly classified, considered intellectual property or trade secrets, or data that must adhere to strict security regulations. |  Research, legal, and financial teams. <BR><BR> Teams storing or using customer or partner data. |
+| Baseline | This is a minimum and default  standard for protecting data and the identities and devices that access your data. <BR><BR> This is typically most of your organization’s data managed by most of your users. | Groups for first line workers, such as sales, marketing, support, administration, and manufacturing. |
+| Sensitive | This is additional protection for a subset of your data that must be protected beyond the baseline level. These groups contain users that use and create sensitive data that is specific to departments and projects that are not meant to be available to everyone. | Product or marketing teams that are developing future products |
+| Highly regulated | This is the highest level of protection for a typically small amount of data that is highly classified, considered intellectual property or trade secrets, or data that must adhere to security regulations. |  Research, legal, and financial teams. <BR><BR> Teams storing or using customer or partner data. |
 
 ### Hybrid identity
 
-If you have on-premises AD DS, configure Azure AD Connect on a server with password hash synchronization (PHS). See [Synchronize identities](identity-azure-ad-connect.md) for more information.
+If you have an on-premises AD DS domain, configure Azure AD Connect on a server with password hash synchronization (PHS). See [Synchronize identities](identity-azure-ad-connect.md) for more information.
 
 ### More secure user access with conditional access policies
 
-Azure AD evaluates the conditions of a user sign-in and can use conditional access policies to grant or deny access and impose further actions that must be taken to complete the sign-in. For example, if Azure AD determines that the sign-in is happening under medium or high-risk conditions, it can require the user to perform MFA to complete the sign-in.
+Azure AD evaluates the conditions of user sign-ins and can use conditional access policies to grant or deny access and impose further actions that must be taken to complete the sign-in. For example, if Azure AD determines that the sign-in is happening under medium or high-risk conditions, it can require the user to perform MFA to complete the sign-in.
 
 You apply conditional access policies to user accounts or groups. To facilitate an easier assignment of conditional access policies, create these Azure AD security groups in your organization:
 
@@ -117,12 +117,13 @@ Here is the Azure AD Identity Protection (requires Microsoft 365 Enterprise E5) 
 | Azure AD Identity Protection user risk policy | Groups to which it applies |
 |:------|:-----|
 | High risk users must change passwords | Select “All users” in the policy settings. |
+|||
 
 See [Common identity and device access policies](identity-access-policies.md) for the instructions.
 
 ### Groups for easier management
 
-Here are some features that can make user, group, and licensing management easier for you.
+Here are some features that can make group and licensing management easier for you.
 
 | Feature | Use |
 |:------|:-----|
@@ -147,10 +148,10 @@ The new and highlighted identity elements include:
  
 |||
 |:------:|:-----|
-| ![](./media/deploy-foundation-infrastructure-non-enterprises/identity-adds.png) | An on-premises AD DS with user accounts. |
+| ![](./media/deploy-foundation-infrastructure-non-enterprises/identity-adds.png) | An on-premises AD DS domain with user accounts and groups. |
 | ![](./media/deploy-foundation-infrastructure-non-enterprises/identity-aadconnect.png) | A Windows-based server running Azure AD Connect. |
-| ![](./media/deploy-foundation-infrastructure-non-enterprises/identity-aad-accounts.png) | The synchronized set of AD DS accounts in Azure AD. |
-| ![](./media/deploy-foundation-infrastructure-non-enterprises/identity-aad-settings.png) | Azure AD settings for authentication, securing global accounts and making it easier to manage groups and licenses. |
+| ![](./media/deploy-foundation-infrastructure-non-enterprises/identity-aad-accounts.png) | The synchronized set of AD DS accounts and groups in Azure AD. |
+| ![](./media/deploy-foundation-infrastructure-non-enterprises/identity-aad-settings.png) | Azure AD settings for authentication, securing global accounts, and making it easier to manage groups and licenses. |
 | ![](./media/deploy-foundation-infrastructure-non-enterprises/identity-aad-caps.png) | Azure AD conditional access policies. |
 |||
 
@@ -158,19 +159,19 @@ The new and highlighted identity elements include:
 
 To ensure that your Windows 10 Enterprise devices are integrated into the identity and security infrastructure of Microsoft 365, here are your options:
 
-- Cloud-only (you do not have on-premises AD DS)
+- Cloud-only (you do not have on-premises AD DS domain)
 
   Join each Windows 10 Enterprise device to the Azure AD tenant of your subscription.
 
   See [Join your work device to your organization's network](https://docs.microsoft.com/en-us/azure/active-directory/user-help/user-help-join-device-on-network) for more information.
 
-- Hybrid (you have on-premises AD DS)
+- Hybrid (you have on-premises AD DS domain)
 
   For each existing Windows 10 Enterprise device already joined to your AD DS domain, join them to the Azure AD tenant. See [How to configure hybrid Azure Active Directory joined devices](https://go.microsoft.com/fwlink/p/?linkid=872870) for the instructions.
 
   For each new Windows 10 Enterprise device, join them to your AD DS domain, and then join them to the Azure AD tenant.
 
-  Enroll your Windows 10 Enterprise devices for mobile device management. See [Enroll a Windows 10 device with Intune by using a Group Policy](https://go.microsoft.com/fwlink/p/?linkid=872871) for the instructions.
+  For each Windows 10 Enterprise device, enroll them for mobile device management. See [Enroll a Windows 10 device with Intune by using a Group Policy](https://go.microsoft.com/fwlink/p/?linkid=872871) for the instructions.
 
 Once installed and joined, each Windows 10 Enterprise device automatically installs updates from the Windows Update for Business cloud service. There is typically no need in a non-enterprise organization to set up an infrastructure to distribute and install updates.
 
@@ -184,7 +185,7 @@ The new and highlighted Windows 10 Enterprise elements include:
 
 |||
 |:------:|:-----|
-| ![](./media/deploy-foundation-infrastructure-non-enterprises/win10-device.png) | Windows 10 Enterprise installed on Windows devices. |
+| ![](./media/deploy-foundation-infrastructure-non-enterprises/win10-device.png) | Windows 10 Enterprise installed on Windows devices, with the on-premises laptop as an example. |
 | ![](./media/deploy-foundation-infrastructure-non-enterprises/win10-cloud.png) | The Volume Licensing Service Center, which provides images for new installations of Windows 10 Enterprise, and the Windows Update for Business service, which provides the latest updates. |
 |||
 
@@ -192,11 +193,11 @@ The new and highlighted Windows 10 Enterprise elements include:
 
 Microsoft 365 Enterprise includes Office 365 ProPlus, the subscription version of Microsoft Office. Like Office 2016 or Office 2019, Office 365 ProPlus is installed directly on your client devices. However, Office 365 ProPlus receives new features on a regular basis. See [About Office 365 ProPlus in the enterprise](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise) for more information.
 
-For smaller and non-enterprise organizations, you manually install Office 365 ProPlus on devices. This can be done as part of preparing a new device for use, or it can be done by the user as part of their onboarding process.
+For your non-enterprise organization, manually install Office 365 ProPlus on devices. This can be done as part of preparing a new device for use, or it can be done by the user as part of their onboarding process.
 
 In either case, the administrator or the user signs in to the Office 365 portal at https://portal.office.com. On the **Microsoft Office Home** tab, click **Install Office** and step through the installation process.
 
-Feature updates to the Office 365 ProPlus client applications are downloaded monthly by each computer on which it is installed. There is typically no need in a non-enterprise organization to set up an infrastructure to distribute Office 365 ProPlus updates. 
+Feature updates to Office 365 ProPlus are downloaded monthly by each computer on which it is installed. There is typically no need in a non-enterprise organization to set up an infrastructure to distribute Office 365 ProPlus updates. 
 
 ### Your configuration so far
 
@@ -208,8 +209,8 @@ The new and highlighted Office 365 ProPlus elements include:
  
 |||
 |:------:|:-----|
-| ![](./media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-device.png) | Office 365 ProPlus installed on devices. |
-| ![](./media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-cdn.png) | The Office Content Delivery Network (CDN) for Office 365 ProPlus, which devices access for ongoing Office 365 ProPlus updates. |
+| ![](./media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-device.png) | Office 365 ProPlus installed on devices, with the on-premises laptop as an example. |
+| ![](./media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-cdn.png) | The Office Content Delivery Network (CDN) for Office 365 ProPlus, which devices access for Office 365 ProPlus updates. |
 |||
 
 ## Phase 5: Mobile device management
@@ -222,7 +223,7 @@ Intune provides two types of mobile device management:
 
 - Users with their own personal devices may not want to enroll their devices or be managed by Intune with your policies and settings. However, you still need to protect your organization's resources and data. For this scenario, you can protect your apps using mobile application management (MAM). These types of devices are referred to as bring your own devices (BYOD) and are typically owned by your employees. 
 
-Using Azure AD conditional access, your Intune policies can be enforced for device compliance and app protection. Here is the list of Intune policies to create.
+Intune policies can enforce device compliance and app protection. Here is the list of Intune policies to create.
 
 | Intune policies | Groups to which it applies |
 |:------|:-----|
@@ -253,7 +254,7 @@ The new and highlighted mobile device management elements include:
 
 ## Phase 6: Information protection
 
-Microsoft 365 Enterprise has a host of information protection features that allow you treat these classifications of data differently by applying different levels of governance, security, and protection. 
+Microsoft 365 Enterprise has a host of information protection features that allow you treat classifications of data differently by applying different levels of governance, security, and protection. 
 
 For example, normal correspondence between most employees and the documents that they work on need a certain baseline level of protection. Financial records, customer data, and your intellectual property need a higher level of protection.
 
@@ -269,7 +270,7 @@ The first step to an information protection strategy is to determine the levels 
 
 - Highly regulated
 
- Examples include customer and partner personally identifiable information and your organization’s intellectual property.
+  Examples include customer and partner personally identifiable information and your organization’s intellectual property.
 
 Based on these levels of data security, the next step is to identify and implement:
 
@@ -279,11 +280,11 @@ Based on these levels of data security, the next step is to identify and impleme
 
 - Retention labels
 
-  To comply with organization policies and regional regulations, you might have to determine how long specific types of documents or documents with specific contents should be retained. You can implement this for email and document using retention labels.
+  To comply with organization policies and regional regulations, you might have to specify how long specific types of documents or documents with specific contents should be retained. You can implement this for email and document using retention labels.
 
 - Sensitivity labels
 
-  You can label email or documents with a named sensitivity label so that the additional levels of security can be applied. Examples are watermarks, encryption, and permissions. which specify who is allowed to access the email or document and what they are allowed to do.
+  You can label email or documents with a named sensitivity label so that the additional levels of security can be applied. Examples are watermarks, encryption, and permissions, which specify who is allowed to access the email or document and what they are allowed to do.
 
 See [Microsoft 365 classification types](infoprotect-configure-classification.md#microsoft-365-classification-types) for more information.
 
@@ -296,7 +297,7 @@ For example, you need to create a RESEARCH sensitivity label to protect the emai
 
 These groups and their permissions become part of the RESEARCH sensitivity label's configuration.
 
-For departments that use sensitivity labels configured with group-based permissions, you must manage the membership of these groups when you change staff or hire new employees.
+For sensitivity labels configured with group-based permissions, you must manage the membership of these groups.
 
 ### Your configuration so far
 
@@ -356,7 +357,7 @@ For the first time new employees or existing employees with an AD DS user accoun
 2. Using a browser, sign in to the Office 365 portal at https://portal.office.com.
 3. From the **Office 365 Home** tab, click **Install Office** to install Office 365 ProPlus on their device.
 
-## Final results
+## End results
 
 Here are the results of configuring the Microsoft 365 Enterprise foundation infrastructure for your non-enterprise organization.
 
@@ -365,7 +366,7 @@ Here are the results of configuring the Microsoft 365 Enterprise foundation infr
 After the build-out and configuration of your Microsoft 365 Enterprise infrastructure, you should have:
 
 - A local Internet connection for each of your offices with sufficient bandwidth supplied by an ISP that uses a regionally local DNS server.
-- For hybrid identity, Azure AD Connect running on a server that synchronizes the on-premises AD DS with your Azure AD tenant.
+- For hybrid identity, Azure AD Connect running on a server that synchronizes your on-premises AD DS domain with your Azure AD tenant.
 - These groups:
   - LICENSED
   - COND-ACCESS-EXCLUDE
@@ -399,8 +400,8 @@ After their onboarding, each employee should have:
 - A Windows 10 Enterprise device that:
    - Is joined to the Azure AD tenant (cloud-only) or to both the Azure AD tenant and your AD DS domain (hybrid).
    - Automatically updates itself with the latest Windows 10 Enterprise product improvements and security enhancements.
-   - Has Office 365 ProPlus installed, which automatically updates itself with the latest Office product improvements and security updates.
-   - Is enrolled in Intune and subject to sign-in and Intune application and device compliance policies.
+   - Has Office 365 ProPlus installed, which automatically updates itself with the latest Office product improvements and security enhancements.
+   - Is enrolled in Intune and subject to Intune device compliance policies and app protection policies.
 
 ## Next step
 
