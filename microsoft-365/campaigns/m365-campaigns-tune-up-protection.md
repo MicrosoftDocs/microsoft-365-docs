@@ -42,6 +42,7 @@ Before you begin, check your Office 365 Secure Score. Office 365 Secure Score an
 
 For more information, see [Microsoft Secure Score](https://docs.microsoft.com/en-us/office365/securitycompliance/microsoft-secure-score).
 
+
 ## Raise the level of protection against malware in mail
 <a name="malware"> </a>
 

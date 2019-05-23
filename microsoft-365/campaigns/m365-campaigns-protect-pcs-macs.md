@@ -28,11 +28,18 @@ description: "Protect against phishing and other attacks with Microsoft 365 for 
 
 The following are specific things you can do if your computer is running Windows 10, or if you have a Mac.
 
+If you have a PC that is running Windows 10 Home or another version that is not supported by Microsoft 365 Business, the Microsoft 365 Business protections do not apply to it, but here are some things you can do:
+
 ## [Windows 10](#tab/Windows10)
 **Turn on device encryption**<p>
+
+For a WIndows 10 Pro computer that is signed in to Azure AD (link) Bitlocker is automatically turned on. But if you have a different version of Windows, you can still turn on device encryption (list the specific OSs)
+
 Device encryption is available on a wide range of Windows devices and helps protect your data by encrypting it. If you turn on device encryption, only authorized individuals will be able to access your device and data. If device encryption is not available on your device, you can turn on standard BitLocker encryption instead. (BitLocker is not available on Windows 10 Home edition.) 
 
-[Turn on device encryption](https://support.microsoft.com/en-us/help/4028713/windows-10-turn-on-device-encryption) 
+[Turn on device encryption](https://support.microsoft.com/en-us/help/4028713/windows-10-turn-on-device-encryption).
+
+DO you want to turn on device encryption even if Bitlocker is turned on by the settings? 
 
 **Protect your device with Windows Security**<p>
 If you have Windows 10, you’ll get the latest antivirus protection with Windows Security. When you start up Windows 10 for the first time, Windows Security is on and actively helping to protect your PC by scanning for malware (malicious software), viruses, and security threats. Windows Security uses real-time protection to scan everything you download or run on your PC.

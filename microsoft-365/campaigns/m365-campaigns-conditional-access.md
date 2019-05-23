@@ -25,11 +25,9 @@ description: "Learn about device states in Microsoft 365 Business."
 
 # Configure conditional access policies for Microsoft 365 for campaigns
 
-Conditional access is . . . .
+You can use conditional access to add substancial additional security in addition to signing in with a user name and password. You can add policies to require second form of authentication (called multifactor authentication, or MFA), give differing access based on the device, or whether the app is a cloud app or a client app, restrict access to IP addresses that you control. You can even block certain users from accessing resources. For more see, [overview of conditional access](https://docs.microsoft.com/azure/active-directory/conditional-access/overview).
 
-Conditional access policies add substancial protection to your Microsoft 365 environment. 
-
-Prescribed conditional access policies for Microsoft 365 for campaigns
+**Recommended conditional access policies for Microsoft 365 for campaigns**
 - Require MFA for all users
 - Require approved apps
 - Block clients that don't support modern authentication
@@ -49,10 +47,14 @@ A recommended practice is to create an Azure AD group for conditional access exc
 After you verify that the 2nd admin account can access resources and that you can access collab tools using your user account, you can remove your admin account from this group.
  
 
-## Require MFA for all users
+## Require MFA for all users - propose basline protection here instead
 This rule is slighly diff than the reference article because we're requiring MFA for all sign ins, not based on sign in risk
 
 Add the exclusion group
+
+Baseline protection:
+This section will explain what this is and show How to steps in Azure AD portal.
+Link to source topic also:https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/concept-baseline-protection 
 
 ## Require approved apps
 
