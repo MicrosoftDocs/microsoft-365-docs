@@ -3,7 +3,7 @@ title: "Microsoft 365 Enterprise foundation infrastructure"
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 05/09/2019
+ms.date: 05/22/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -103,6 +103,10 @@ Once the foundation infrastructure is completed, tested, and piloted, you can ro
 
 To give you some ideas on how to approach the project management of the different phases of the foundation infrastructure for pilot users and the rest of your organization, see [deployment strategies](deployment-strategies-microsoft-365-enterprise.md).
 
+## Deployment for non-enterprises
+
+If your organization is smaller and Microsoft 365 Business is not suitable for you, see [deployment for non-enterprises](deploy-foundation-infrastructure-non-enterprises.md).
+
 
 ## Next step
 
@@ -110,5 +114,5 @@ To give you some ideas on how to approach the project management of the differen
 | Where I am | Where I need to go |
 |:-------|:-----|
 | I have existing infrastructure for Office 365, Enterprise Mobility + Security (EMS), or Windows 10 Enterprise | Start with [Deploy with existing infrastructure](deploy-with-existing-infrastructure.md), which  steps you through the exit criteria for each phase. |
-| I'm starting from scratch | Begin your end-to-end deployment journey with [Phase 1: Networking](networking-infrastructure.md). |
-
+| I'm starting from scratch as an enterprise | Begin your end-to-end deployment journey with [Phase 1: Networking](networking-infrastructure.md). |
+| I'm starting from scratch as a non-enterprise | Begin your end-to-end deployment journey with [Deployment for non-enterprises](deploy-foundation-infrastructure-non-enterprises.md). |

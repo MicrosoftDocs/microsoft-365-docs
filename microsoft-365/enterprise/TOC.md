@@ -38,6 +38,7 @@
 #### [Information protection exit criteria](infoprotect-exit-criteria.md)
 ### [Deployment strategies](deployment-strategies-microsoft-365-enterprise.md)
 ### [Deploy with existing infrastructure](deploy-with-existing-infrastructure.md)
+### [Deploy for non-enterprises](deploy-foundation-infrastructure-non-enterprises.md)
 ## [Deploy workloads and scenarios](deploy-workloads.md)
 ### [Microsoft Teams](teams-workload.md)
 ### [Exchange Online](exchangeonline-workload.md)
