@@ -114,5 +114,5 @@ If your organization is smaller and Microsoft 365 Business is not suitable for y
 | Where I am | Where I need to go |
 |:-------|:-----|
 | I have existing infrastructure for Office 365, Enterprise Mobility + Security (EMS), or Windows 10 Enterprise | Start with [Deploy with existing infrastructure](deploy-with-existing-infrastructure.md), which  steps you through the exit criteria for each phase. |
-| I'm starting from scratch | Begin your end-to-end deployment journey with [Phase 1: Networking](networking-infrastructure.md). |
-
+| I'm starting from scratch as an enterprise | Begin your end-to-end deployment journey with [Phase 1: Networking](networking-infrastructure.md). |
+| I'm starting from scratch as a non-enterprise | Begin your end-to-end deployment journey with [Deployment for non-enterprises](deploy-foundation-infrastructure-non-enterprises.md). |
