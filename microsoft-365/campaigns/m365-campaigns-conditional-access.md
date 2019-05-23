@@ -47,10 +47,14 @@ A recommended practice is to create an Azure AD group for conditional access exc
 After you verify that the 2nd admin account can access resources and that you can access collab tools using your user account, you can remove your admin account from this group.
  
 
-## Require MFA for all users
+## Require MFA for all users - propose basline protection here instead
 This rule is slighly diff than the reference article because we're requiring MFA for all sign ins, not based on sign in risk
 
 Add the exclusion group
+
+Baseline protection:
+This section will explain what this is and show How to steps in Azure AD portal.
+Link to source topic also:https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/concept-baseline-protection 
 
 ## Require approved apps
 

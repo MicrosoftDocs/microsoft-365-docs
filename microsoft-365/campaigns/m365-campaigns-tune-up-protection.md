@@ -42,10 +42,6 @@ Before you begin, check your Office 365 Secure Score. Office 365 Secure Score an
 
 For more information, see [Microsoft Secure Score](https://docs.microsoft.com/en-us/office365/securitycompliance/microsoft-secure-score).
 
-## Add baseline protection with conditional access 
-
-This section will explain what this is and show How ot steps in Azure AD portal.
-Link to source topic also:https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/concept-baseline-protection 
 
 ## Raise the level of protection against malware in mail
 <a name="malware"> </a>
