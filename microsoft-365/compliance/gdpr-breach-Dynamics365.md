@@ -2,13 +2,12 @@
 title: Dynamics 365 and Breach Notification Under the GDPR
 description: How Dynamics 365 protects against a personal data breach and how Microsoft responds and notifies you if a breach occurs.
 keywords: Dynamics 365, Microsoft 365, Microsoft 365 Education, Microsoft 365 documentation, GDPR
-author: herviicban
 localization_priority: Priority
-
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.date: 04/13/2018
 ms.author: heicba
+author: herviicban
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
@@ -16,13 +15,11 @@ ms.collection: GDPR
 
 # Dynamics 365 and Breach Notification Under the GDPR
 
-Dynamics 365 takes its obligations under the General Data Protection Regulation (GDPR) seriously.Microsoft Dynamics 365 Data Breach
-
-Microsoft works continuously to provide highly secure, enterprise-grade services for Dynamics 365 customers. The information in this section provides a summary of how Microsoft Dynamics 365 protects against security incident/data breach and the process we follow to respond and notify our customers.
+Dynamics 365 takes its obligations under the General Data Protection Regulation (GDPR) seriously and takes extensive security measures to protect against data breaches. Microsoft works continuously to provide highly secure, enterprise-grade services for Dynamics 365 customers. The information in this section provides a summary of how Microsoft Dynamics 365 protects against security incident/data breach and the process we follow to respond and notify our customers.
 
 #### Microsoft Dynamics 365 Built-In Security Features
 
-Microsoft Dynamics 365 takes advantage of the cloud service infrastructure and built-in security features to keep data safe using security measures and mechanisms to protect data. In addition, Dynamics 365 provides efficient data access and collaboration with data integrity and privacy in the following areas: [secure identity, data protection, role based security and threat management](https://www.microsoft.com/trustcenter/security/dynamics365-security).
+Microsoft Dynamics 365 takes advantage of the cloud service infrastructure and built-in security features to keep data safe using security measures and mechanisms to protect data. In addition, Dynamics 365 provides efficient data access and collaboration with data integrity and privacy in the following areas: [secure identity, data protection, role based security, and threat management](https://www.microsoft.com/trustcenter/security/dynamics365-security).
 
 #### Incident Response Training
 
@@ -42,7 +39,7 @@ Each employee working on Microsoft Dynamics 365 is provided with training regard
 
 #### How does Microsoft Dynamics 365 define Security Incident/ Potential Breaches
 
-A security incident/ data breach refers to events such as unlawful access to customer’s data stored on Microsoft equipment or in Microsoft facilities, or unauthorized access to such equipment or facilities that has the potential to result in the loss, disclosure or alteration of customer data. Microsoft’s goal when responding to security incidents/ data breach is to protect customer data and Dynamics 365 services. Microsoft’s approach to managing a security incident conforms to the [National Institute of Standards and Technology](https://www.nist.gov/) (NIST) Special Publication (SP) [800-61](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r2.pdf).
+A security incident/ data breach refers to events such as unlawful access to customer’s data stored on Microsoft equipment or in Microsoft facilities, or unauthorized access to such equipment or facilities that has the potential to result in the loss, disclosure, or alteration of customer data. Microsoft’s goal when responding to security incidents/ data breach is to protect customer data and Dynamics 365 services. Microsoft’s approach to managing a security incident conforms to the [National Institute of Standards and Technology](https://www.nist.gov/) (NIST) Special Publication (SP) [800-61](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r2.pdf).
 
 Microsoft does not monitor for or respond to security incidents within the customer’s realm of responsibility. A customer-only security compromise would not be processed as a Dynamics 365 security incident and would require the customer tenant to manage the response effort. Customer incident response may involve collaboration with Microsoft Dynamics 365 customer support, given appropriate service contracts.
 
@@ -82,8 +79,8 @@ Dynamics 365 responds to a potential data breach according to the security incid
 </tr>
 <tr class="odd">
 <td align="left">5</td>
-<td align="left">Close and Post-Mortem</td>
-<td align="left">The incident response team creates a post-mortem that outlines the details of the incident, with the intention to revise policies, procedures, and processes to prevent a reoccurrence of the event.</td>
+<td align="left">Close and Post-mortem</td>
+<td align="left">The incident response team creates a post-mortem that outlines the details of the incident, with the intention to revise policies, procedures, and processes to prevent a recurrence of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -100,7 +97,7 @@ The detection processes used by Microsoft Dynamics 365 are designed to discover 
 
 -   Customer reports that describe suspicious activity attributed to the Microsoft Dynamics 365 Services (as opposed to activity occurring within the customer’s scope of responsibility).
 
--   Security [Red Team and Blue Team](https://azure.microsoft.com/blog/red-teaming-using-cutting-edge-threat-simulation-to-harden-the-microsoft-enterprise-cloud/) activity. This strategy uses a highly-skilled Red team of offensive security experts to uncover and attack potential weaknesses in Microsoft Dynamics 365 services. The security response Blue team must detect and defend against the Red Team’s activity. Both Red and Blue Team actions are used to verify that Microsoft Dynamics 365 security response efforts are effectively managing security incidents. Security Red Team and Blue Team activities are operated under requirements of responsibility to help ensure the protection of customer data.
+-   Security [Red Team and Blue Team](https://azure.microsoft.com/blog/red-teaming-using-cutting-edge-threat-simulation-to-harden-the-microsoft-enterprise-cloud/) activity. This strategy uses a highly skilled Red team of offensive security experts to uncover and attack potential weaknesses in Microsoft Dynamics 365 services. The security response Blue team must detect and defend against the Red Team’s activity. Both Red and Blue Team actions are used to verify that Microsoft Dynamics 365 security response efforts are effectively managing security incidents. Security Red Team and Blue Team activities are operated under requirements of responsibility to help ensure the protection of customer data.
 
 -   Escalations by operators of Microsoft Dynamics 365 services. Microsoft employees are trained to identify and escalate potential security issues.
 
@@ -118,13 +115,13 @@ The Security Response Team works with Microsoft Dynamics 365 Security Engineers 
 
 -   **Privacy Incident:** A subtype of Security Incident involving personal data. Handling procedures are no different than a security incident.
 
-For a CRSI to be declared, Microsoft must determine that unauthorized access to customer data has or has very likely occurred and/or that there is a legal or contractual commitment that notification must occur. It is desired, but not required, that specific customer impact, resource access, and repair steps be known. An incident is generally declared CRSI after the conclusion of the Diagnose stage of a security incident; however, the declaration may happen at any point that all pertinent information is available. The security incident manager must establish evidence beyond reasonable doubt that a reportable event has occurred to begin execution of the Customer Incident Notification Process.
+For a CRSI to be declared, Microsoft must determine that unauthorized access to customer data has or has very likely occurred and/or that there is a legal or contractual commitment that notification must occur. It is desired, but not required, that specific customer impact, resource access, and repair steps be known. An incident is generally declared CRSI after the conclusion of the Diagnose stage of a security incident. However, the declaration may happen at any point that all pertinent information is available. The security incident manager must establish evidence beyond reasonable doubt that a reportable event has occurred to begin execution of the Customer Incident Notification Process.
 
 Throughout the investigation, the security response team works closely with global legal advisors to help ensure that forensics are performed in accordance with legal obligations and commitments to customers. There are also significant restrictions on system and customer data viewing and handling in various operating environments. Sensitive or confidential data, as well as Customer Data, are not transferred out of the production environment without explicit written approval from the Incident Manager recorded in the corresponding incident ticket.
 
 Microsoft verifies that customer and business risk is successfully contained, and that corrective measures are implemented. If necessary, emergency mitigation steps to resolve immediate security risks associated with the event are taken.
 
-Microsoft also completes an internal post-mortem for data breaches. As a part of this exercise, sufficiency of response and operating procedures are evaluated, and any updates that may be necessary to Microsoft’s internal security policies or related processes are identified and implemented. Internal post-mortems for data breaches are highly confidential records not available to customers. Post-mortems may, however, be summarized and included in other customer event notifications. These reports are provided to external auditors for review as part of Dynamics 365 routine audit cycle.
+Microsoft also completes an internal post-mortem for data breaches. As a part of this exercise, sufficiency of response and operating procedures are evaluated, and any updates that may be necessary to Microsoft’s internal security policies or related processes are identified and implemented. Internal postmortems for data breaches are highly confidential records not available to customers. Postmortems may, however, be summarized and included in other customer event notifications. These reports are provided to external auditors for review as part of Dynamics 365 routine audit cycle.
 
 #### Customer Notification
 
@@ -136,7 +133,7 @@ The notification process upon a declared CRSI will occur as expeditiously as pos
 
 -   Other unusual or extreme circumstances vetted by Microsoft’s legal department and the Executive Incident Manager.
 
-Microsoft Dynamics 365 provides customers with detailed information enabling them to perform internal investigations and assisting them in meeting end user commitments, while not unduly delaying the notification process.
+Microsoft Dynamics 365 provides customers with detailed information enabling them to perform internal investigations and assisting them in meeting end-user commitments, while not unduly delaying the notification process.
 
 Notification of a personal data breach will be delivered to the customer by any means Microsoft selects, including via email. Notification of a data breach will be delivered to the list of customer contacts/ admins (only affected tenants) provided in Office Security Center, which is configurable by the customer/ tenant admin. To ensure that notification can be successfully delivered, it is the customer’s responsibility to ensure that the administrative contact information on each applicable subscription and online services portal is correct.
 

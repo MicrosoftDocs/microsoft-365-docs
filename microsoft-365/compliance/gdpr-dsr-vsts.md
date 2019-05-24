@@ -2,7 +2,6 @@
 title: Azure DevOps Data Subject Requests for GDPR
 keywords: Visual Studio Team Services, VSTS, Azure DevOps documentation, privacy, GDPR
 localization_priority: Priority
-
 audience: itpro
 ms.prod: devops
 ms.topic: article
@@ -28,11 +27,11 @@ The [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement
 
 ## Personal data we collect
 
-Microsoft collects data from users to operate and improve Azure DevOps Services. Azure DevOps Services collects two categories of data&mdash;customer data and system-generated logs. Customer data includes user-identifiable transactional and interactional data that Azure DevOps Services needs to operate the service. System-generated logs include service usage data that is aggregated for each product area and feature.
+Microsoft collects data from users to operate and improve Azure DevOps Services. Azure DevOps Services collects two categories of data — customer data and system-generated logs. Customer data includes user-identifiable transactional and interactional data that Azure DevOps Services needs to operate the service. System-generated logs include service usage data that is aggregated for each product area and feature.
 
 ## Delete Azure DevOps data
 
-The first step to delete associated Azure DevOps Services customer data and to anonymize personally identifiable data found in system-generated logs is to close your Azure Active Directory (AAD) identity account or Microsoft Account (MSA). Azure DevOps Services is relied upon as a system of record with strict integrity, traceability, and audit rules. These existing obligations affect our delete and retention obligations for GDPR. Closing the identity account does not alter, remove, or change artifacts and records associated with the individual identity in the Azure DevOps organization. We have ensured that when an entire Azure DevOps organization is deleted, all associated personally identifiable data and system-generated logs found in that organization are removed from our system (after the requisite Azure DevOps organization 30-day soft-delete period).
+The first step to delete associated Azure DevOps Services customer data and to anonymize personally identifiable data found in system-generated logs is to close your Azure Active Directory (AAD) identity account or Microsoft Account (MSA). Azure DevOps Services is relied upon as a system of record with strict integrity, traceability, and audit rules. These existing obligations affect our delete and retention obligations for GDPR. Closing the identity account does not alter, remove, or change artifacts and records associated with the individual identity in the Azure DevOps organization. We have ensured that when an entire Azure DevOps organization is deleted, all associated personally identifiable data, and system-generated logs found in that organization are removed from our system (after the requisite Azure DevOps organization 30-day soft-delete period).
 
 ## Export Azure DevOps data
 
