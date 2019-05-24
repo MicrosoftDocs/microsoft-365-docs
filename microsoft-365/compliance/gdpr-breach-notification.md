@@ -2,13 +2,12 @@
 title: Breach Notification
 description: How Microsoft services protect against a personal data breach and how Microsoft responds and notifies you if a breach occurs.
 keywords: Microsoft 365, Microsoft 365 Education, Microsoft 365 documentation, GDPR
-author: herviicban
 localization_priority: Priority
-
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.date: 04/13/2018
 ms.author: heicba
+author: herviicban
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
