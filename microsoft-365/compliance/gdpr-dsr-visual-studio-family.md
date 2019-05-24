@@ -3,7 +3,6 @@ title: Visual Studio Family Data Subject Requests for the GDPR
 description: Visual Studio Family Data Subject Requests for the GDPR
 keywords: Visual Studio, Visual Studio Code, Visual Studio for Mac, Visual Studio documentation, privacy, GDPR
 localization_priority: Priority
-
 audience: itpro
 ms.prod: visual-studio-family
 ms.topic: article
@@ -21,7 +20,7 @@ The European Union [General Data Protection Regulation (GDPR)](https://ec.europa
 
 ## Products covered by this guide
 
-This guide discusses how to use Microsoft tools to export or delete personal data collected during authenticated (signed-in) session usage of Visual Studio and Visual Studio for Mac and Microsoft extensions to them and to Visual Studio Code. This guide also covers how to make data subject requests for personal data collected when using Visual Studio Developer Community, NuGet.org, and the ASP.NET website. These products may enable use of non-Microsoft tools and extensions, and Microsoft is not a data processor or controller for these tools and extensions. Users should contact the tool or extension provider to understand the personal data and collection policies for these tools and extensions.
+This guide discusses how to use Microsoft tools to export or delete personal data collected during authenticated (signed-in) session usage of Visual Studio and Visual Studio for Mac and Microsoft extensions to them and to Visual Studio Code. This guide also covers how to make data subject requests for personal data collected when using Visual Studio Developer Community, NuGet.org, and the ASP.NET website. These products may enable the use of non-Microsoft tools and extensions, and Microsoft is not a data processor or controller for these tools and extensions. Users should contact the tool or extension provider to understand the personal data and collection policies for these tools and extensions.
 
 ## Additional privacy information
 
@@ -67,8 +66,8 @@ Users can control the privacy settings for these products. For more information,
 
 Controllers can manage customer data and system-generated logs collected from their data subjects by one of two methods, depending upon how their Visual Studio Family product or Microsoft extensions were registered. In some cases, both methods must be used. Both methods allow Controllers to download a copy of their activity history managed by that method. Closure of an AAD or MSA account deletes associated Visual Studio customer data, and anonymizes personally identifiable data in system-generated logs pertaining to these products. Anonymized system-generated logs are retained for no more than 18 months.
 
-- Users that have registered a Visual Studio Family product by using an account that is backed by an Azure tenant&mdash;for example, AAD account or  MSA account associated with an Azure subscription&mdash;can follow the instructions in [Azure Data Subject Requests for the GDPR](gdpr-dsr-azure.md).
-- Users that have registered a Visual Studio Family product without an account that is backed by an Azure tenant&mdash;for example many accounts using a Microsoft Account (MSA)&mdash;can use [the web-based Microsoft Privacy Response Center](https://aka.ms/userprivacysite) available through their Microsoft account to view, control, and delete activity data tied to their Microsoft account across multiple Microsoft services. In this scenario, the user is a controller for their own personal data.
+- Users that have registered a Visual Studio Family product by using an account that is backed by an Azure tenant — for example, AAD account or  MSA account associated with an Azure subscription — can follow the instructions in [Azure Data Subject Requests for the GDPR](gdpr-dsr-azure.md).
+- Users that have registered a Visual Studio Family product without an account that is backed by an Azure tenant — for example many accounts using a Microsoft Account (MSA) — can use [the web-based Microsoft Privacy Response Center](https://aka.ms/userprivacysite) available through their Microsoft account to view, control, and delete activity data tied to their Microsoft account across multiple Microsoft services. In this scenario, the user is a controller for their own personal data.
 
 > [!NOTE]
 > When an MSA account holder deletes their account, all their personally identifiable data pertaining to these products is deleted, whether the account is backed by an Azure tenant or not, and system-generated logs are anonymized.
@@ -96,10 +95,10 @@ Public feedback includes: reported problems, comments, and solutions.
 
 To View your feedback-related data, follow these steps:
 
-1. Sign into [Developer Community](https://developercommunity.visualstudio.com). From the top right corner, click on your profile and select **Profile and Preferences**.
+1. Sign into [Developer Community](https://developercommunity.visualstudio.com). From the top-right corner, click on your profile and select **Profile and Preferences**.
 2. Click on any of the **Profile**, **Notifications**, **Activity**, and **Attachments** tabs to view the data submitted to the feedback systems.
    1. **Profile** refers to your [Developer Community](https://developercommunity.visualstudio.com) profile, including user name, email address, about, etc.
-   2. **Notifications** is how you control the email notifications you receive.
+   2. **Notifications are how you control the email notifications you receive.
    3. **Activity** will give you the feedback items you have been active on (posted, commented, etc.), and the activities performed.
    4. **Attachments** is a list of your attachment history in a format like `FileName was attached to the problem "ProblemName" Tue, Apr 10, 18 2:27 PM`.
 
@@ -116,7 +115,7 @@ You can export your feedback data as part of DSR. We will create one or more .zi
 
 To start an Export, follow these steps:
 
-1. Sign into [Developer Community](https://developercommunity.visualstudio.com). From the top right corner, click on your profile and select **Profile and Preferences**.
+1. Sign into [Developer Community](https://developercommunity.visualstudio.com). From the top-right corner, click on your profile and select **Profile and Preferences**.
 2. Click the **Privacy** tab, and then click **Create an archive** to request exporting your data.
 3. The **Archive Status** will update to show that we are preparing the data. The length of time before the data is available depends on the amount of data we need to export.
 4. Once the data is ready, we will send you an email.
@@ -143,7 +142,7 @@ Deleting will remove the following information about you from [Developer Communi
 
 To initiate a Delete, follow these steps:
 
-1. Sign into [Developer Community](https://developercommunity.visualstudio.com). From the top right corner, click on your profile and select **Profile and Preferences**.
+1. Sign into [Developer Community](https://developercommunity.visualstudio.com). From the top-right corner, click on your profile and select **Profile and Preferences**.
 2. Click the **Privacy** tab, and then click **Delete your data and account** to start deleting your data.
 3. A confirmation screen will appear.
 4. Type "delete" in the box, and then click **Delete my account**.
