@@ -2,13 +2,11 @@
 title: Microsoft's data protection officer
 description: Information about Microsoft's European Union Data Protection Officer (DPO) for the GDPR 
 keywords: Microsoft 365, Microsoft 365 Education, Microsoft 365 documentation, GDPR
-author: herviicban
 localization_priority: Priority
-
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
-ms.date: 
 ms.author: heicba
+author: herviicban
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
@@ -40,7 +38,7 @@ D18 P521<br>
 Ireland<br>
 Telephone: +353 (0) 1 295-3826<br>
 
-The contact details for the Data Protection Officer has been communicated to Microsoft’s Supervisory Authority.   
+The contact details for the Data Protection Officer have been communicated to Microsoft’s Supervisory Authority.
 
 ## Learn more
 
