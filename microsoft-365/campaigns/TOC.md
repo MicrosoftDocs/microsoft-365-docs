@@ -6,16 +6,13 @@
 # [Overview](microsoft-365-campaigns-setup-overview.md)
 ## [Sign up](../business/sign-up.md?toc=/microsoft-365/campaigns/toc.json)
 ## [Set up Microsoft 365](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json)
-## [Add Azure AD P1](set-up-azureadp1.md) 
-
 # Bump up security protection
 ## [Protect admin accounts](m365-campaigns-protect-admin-accounts.md)
-## [Tune up threat protection](m365-campaigns-tune-up-protection.md) 
-## [Configure conditional access policies](m365-campaigns-conditional-access.md)
-## Configure additional protection for Windows 10 devices 
+## [Increase threat protection](m365-campaigns-increase-protection.md) 
+## [Set up conditional access policies](m365-campaigns-conditional-access.md)
 ## [Infographic: Protect your campaign](m365-campaigns-protect-campaign-infographic.md)
 
-# User device setup help
+# User device setup
 ## [Set up mobile devices](../business/set-up-mobile-devices.md?toc=/microsoft-365/campaigns/toc.json)
 ## [Protect unmanaged Windows 10 PCs and Macs](m365-campaigns-protect-pcs-macs.md)
 ## [Set up managed Windows devices](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json)
