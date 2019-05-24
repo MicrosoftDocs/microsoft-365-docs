@@ -3,6 +3,7 @@
 ### [Roles and responsibilities](intro/roles-and-responsibilities.md)
 ### [Technologies in Microsoft Managed Desktop](intro/technologies.md)
 ## [Microsoft Managed Desktop service description](service-description/index.md)
+### [Supported regions and languages](service-description/regions-languages.md)
 ### [Program devices](service-description/device-list.md)
 #### [Archived program devices](service-description/archived-device-list.md)
 ### [Device services](service-description/device-services.md)
