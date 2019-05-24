@@ -21,4 +21,6 @@ For more information about user support with Microsoft Managed Desktop, see [sup
 
 If a user prefers to work in a language other than English, they can request that their local IT administrator centrally deploy additional language packs on managed devices through the Intune Company Portal app. Starting with Windows 10, version 1803, language packs are delivered as appx packages from Microsoft Store. To learn more, see [Microsoft Store for Business apps](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/deploy-apps#msfb-apps).
 
->[!NOTE] The GetHelp app on a Microsoft Managed Desktop device supports English only. For users to obtain help with Microsoft Managed Desktop through the GetHelp app, they must switch the display language to English.
+
+>[!NOTE]
+>The GetHelp app on a Microsoft Managed Desktop device supports English only. For users to obtain help with Microsoft Managed Desktop through the GetHelp app, they must switch the display language to English.
