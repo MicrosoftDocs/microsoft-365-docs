@@ -24,7 +24,7 @@ description: "Protect against phishing and other attacks with Microsoft 365 for 
 
 # Protect unmanaged Windows 10 PCs and Macs
 
-A Windows 10 PC is considered managed after you have complete two steps:
+A Windows 10 PC is considered managed after you have completed the following two steps:
 
 1. You (or the admin) set up device and data protection policies in the [setup  wizard](../business/set-up.md).
 
