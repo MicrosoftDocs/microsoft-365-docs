@@ -119,9 +119,6 @@ For more GDPR-related documentation, visit https://aka.ms/gdprgetstarted.
 
 ## **6. Bibliography of Resources and Links**
 
-<!--start table with HEADER here -->
-
-
 ||||
 |:-----|:-----|:------|
 |**ID**|**Description/Link**|
@@ -132,8 +129,8 @@ For more GDPR-related documentation, visit https://aka.ms/gdprgetstarted.
 | 5 <a name="5"> </a> | [Dynamics 365-ISO27001 Statement of Applicability](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=d383c8df-1387-4a08-8604-b3e8aa647206&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports) |
 | 6 <a name="6"> </a> | [Dynamics 365-ISO27018 Statement of Applicability](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=7eecdb74-46c9-4774-af3a-c66e5704cb14&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports) |
 | 7 <a name="7"> </a> | [Who can access your data and on what terms?](https://www.microsoft.com/trustcenter/Privacy/Who-can-access-your-data-and-on-what-terms) |
-| 8 <a name="8"> </a>   | [Dynamics 365 SOC 2 Type 2 Report & Bridge Letter](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=e06a247d-af6b-4933-8074-1002757984bd&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_SOC_%2F_SSAE_16_Reports) |
-| 9 <a name="9"> </a>   | [Dynamics 365 — Discover built in security features](https://www.microsoft.com/trustcenter/security/dynamics365-security) |
+| 8 <a name="8"> </a> | [Dynamics 365 SOC 2 Type 2 Report & Bridge Letter](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=e06a247d-af6b-4933-8074-1002757984bd&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_SOC_%2F_SSAE_16_Reports) |
+| 9 <a name="9"> </a> | [Dynamics 365 — Discover built in security features](https://www.microsoft.com/trustcenter/security/dynamics365-security) |
 | 10 <a name="10"> </a> | [Who can access data and at what terms](https://www.microsoft.com/trustcenter/Privacy/Who-can-access-your-data-and-on-what-terms) |
 | 11 <a name="11"> </a> | [Contracts for sub-processors: Contracting with Microsoft](https://www.microsoft.com/en-us/procurement/supplier-contracting.aspx#SSPA) |
 | 12<a name="12"> </a>  | [Dynamics 365 Breach Notification Under the GDPR](https://servicetrust.microsoft.com/ViewPage/GDPRBreach) |
