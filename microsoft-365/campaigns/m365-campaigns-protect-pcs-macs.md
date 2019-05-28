@@ -26,13 +26,13 @@ description: "Protect against phishing and other attacks with Microsoft 365 for 
 
 A Windows 10 PC is considered managed after you have complete two steps:
 
-1. You (or the admin) set up device and data protection policies in the setup  wizard.
+1. You (or the admin) set up device and data protection policies in the [setup  wizard](../business/set-up.md).
 
-2. You have connected your computer to Azure AD and use your Microsoft 365 Business username and password to sign in.
+2. You have [connected your computer to Azure Active Directory](../business/set-up-windows-devices.md) and use your Microsoft 365 Business username and password to sign in.
 
 ## Protect a computer running Windows 10 or a Mac
 
-If you have a PC that is running Windows 10 that is not connected to Microsoft 365 Business, or a Mac, the Microsoft 365 Business protections do not apply to it, but here are some things you can do to keep your data secure on these devices too:
+If you have a PC that is running Windows 10 that is not connected to Microsoft 365 Business, or a Mac, the Microsoft 365 Business protections do not apply to it, but here are some things you can do to keep your data secure on these devices as well:
 
 ## [Windows 10](#tab/Windows10)
 **Turn on device encryption**<p>
