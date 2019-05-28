@@ -15,7 +15,7 @@ ms.collection: GDPR
 
 # Dynamics 365 accountability readiness checklist for the GDPR
 
-## **1. Introduction**
+## 1. Introduction
 
 This accountability readiness checklist provides a convenient way to access information you may need to support GDPR when using Microsoft Dynamics 365. The checklist is organized using the titles and reference number (in parentheses for each checklist topic) of a set of privacy and security controls for personal data processors drawn from *ISO/IEC CD 27552 Information technology — Security techniques — Enhancement to ISO/IEC 27001 for privacy management — Requirements.*
 
@@ -29,7 +29,7 @@ To purchase a copy of the complete draft ISO standard, please visit https://shop
 
 For more GDPR-related documentation, visit https://aka.ms/gdprgetstarted.
 
-## **2. Conditions for collection and processing**
+## 2. Conditions for collection and processing
 
 |||||
 |:-----|:-----|:-----|:-----|
@@ -42,7 +42,7 @@ For more GDPR-related documentation, visit https://aka.ms/gdprgetstarted.
 |***Contracts with PII Processors (7.2.6)***|The customer should ensure that their contracts with processors include requirements for aiding with any relevant legal or regulatory obligations related to processing and protecting personal data.|The Microsoft contracts that require us to aid with your obligations under the GDPR, including support for the data subject's rights.<br>- Microsoft Online Services Terms, Data Protection Terms, see Processing of Personal Data; GDPR [[1](gdpr-arc-Dynamics365.md#1)]|(5)(2), (28)(3)(e), (28)(9)|
 |***Records related to processing PII (7.2.7)***|The customer should maintain all necessary and required records related to processing personal data (for example, purpose, security measures, etc.). Where some of these records must be provided by a sub-processor, the customer should ensure that they can obtain such records.|The tools provided by Microsoft services to help you maintain the records necessary demonstrate compliance and support for accountability under the GDPR.<br>- Auditing and Reporting in Dynamics 365 [[3](gdpr-arc-Dynamics365.md#3)]|(5)(2), (24)(1), (30)(1)(a), (30)(1)(b), (30)(1)(c), (30)(1)(d), (30)(1)(g), (30)(1)(f), (30)(3), (30)(4), (30)(5)|
 
-## **3. Rights of data subjects**
+## 3. Rights of data subjects
 
 |||||
 |:-----|:-----|:-----|:-----|
@@ -58,7 +58,7 @@ For more GDPR-related documentation, visit https://aka.ms/gdprgetstarted.
 |***Request management (7.3.9)***|The customer should understand requirements for accepting and responding to legitimate requests from individuals related to the processing of their personal data. Where the customer uses a third-party system, they should understand whether that system provides the capabilities for such handling of requests. If so, the customer should utilize such mechanisms to handle requests as necessary.|Information about capabilities in Microsoft services that you can use when defining the information you provide to data subjects as you manage data subject requests.<br>- Dynamics 365 Data Subject Requests for the GDPR [[4](gdpr-arc-Dynamics365.md#4)]|(12)(3), (12)(4), (12)(5), (12)(6), (15)(1)(a), (15)(1)(b), (15)(1)(c), (15)(1)(d), (15)(1)(e), (15)(1)(f), (15)(1)(g), (15)(1)(h)|
 |***Automated decision making (7.3.10)***|The customer should understand requirements around automated personal data processing and where decisions are made by such automation. These may include providing information about the processing to an individual, objecting to such processing, or to obtain human intervention. Where such features are provided by a third-party system, the customer should ensure that the third party provides any required information or support.|Information about any capabilities in Microsoft services for that might support automated decision making that you can use in your accountability documentation, and information for data subjects about those capabilities.<br>- Key Information from Dynamics 365 for Customer Data Protection Impact Assessments [2]|(13)(2)(f), (14)(2)(g), (22)(1), (22)(3)|
 
-## **4. Privacy by Design and Default**
+## 4. Privacy by design and default
 
 |||||
 |:-----|:-----|:-----|:-----|
@@ -78,7 +78,7 @@ For more GDPR-related documentation, visit https://aka.ms/gdprgetstarted.
 | ***Records of PII disclosure to third parties (7.5.4)*** | The customer should understand requirements around recording to whom personal data has been disclosed. This may include disclosures to law enforcement, etc. Where a third-party/processor discloses the data, the customer should ensure that they maintain the appropriate records and obtain them as necessary.| Documentation provided about the categories of recipients of disclosures of personal data including available records of disclosure.<br>- Who can access your data and on what terms [[7](gdpr-arc-Dynamics365.md#7)] | (30)(1)(d) |
 | ***Joint controller (7.5.5)*** | The customer should determine whether they are a joint controller with any other organization, and appropriately document and allocate responsibilities. | Dynamics 365 is processor of personal data.<br>- Online Services Terms [1] <!-- look at this one -->see *Processor and Controller Roles and ResponsibilitiesRoles and Responsibilities [1]* | (26)(1), (26)(2), (26)(3) |
 
-## **5. Data Protection & Security**
+## 5. Data protection & security
 
 |||||
 |:-----|:-----|:-----|:-----|
@@ -117,7 +117,7 @@ For more GDPR-related documentation, visit https://aka.ms/gdprgetstarted.
 | ***Independent review of information security (6.15.2)*** | The customer should be aware of requirements for assessments of the security of personal data processing. This may include internal or external audits, or other measures for assessing the security of processing. Where the customer is dependent on another organization of third party for all or part of the processing, they should collect information about such assessments performed by them. | How Microsoft services test and assesses the effectiveness of technical and organizational measures to ensure the security of processing, including any audits by third parties.<br>- Microsoft Online Services Terms, Data Protection Terms, see Data Security, Auditing Compliance [[1](gdpr-arc-Dynamics365.md#1)]<br>- 6.15.2 Independent review of information security in Compliance Manager [[15](gdpr-arc-Dynamics365.md#15)]  | (32)(1)(d), (32)(2) |
 | ***Technical compliance review (6.15.3)*** | The customer should understand requirements for testing and evaluating the security of processing personal data. This may include technical tests such as penetration testing. Where the customer uses a third-party system or processor, they should understand what responsibilities they have for securing and testing the security (for example, managing configurations to secure data and then testing those configuration settings). Where the third party is responsible for all or part of the security of processing, the customer should understand what testing or evaluation the third party performs to ensure the security of the processing. | How Microsoft services are tested security based on identified risks, including tests by third parties, and the types of technical tests and any available reports from the tests.<br>- Microsoft Online Services Terms, Data Protection Terms, see Data Security, Auditing Compliance [[1](gdpr-arc-Dynamics365.md#1)]<br>- For a listing of external certifications, see *Microsoft Trust Center Compliance offerings [[13](gdpr-arc-Dynamics365.md#13)]*<br>- Dynamics 365 — Discover built in security features [[9](gdpr-arc-Dynamics365.md#9)]<br>- Dynamics 365 Penetration Testing and Security Assessment Report [[14](gdpr-arc-Dynamics365.md#14)]<br>- 6.15.3 Technical compliance review in Compliance Manager [[15](gdpr-arc-Dynamics365.md#15)] | (32)(1)(d), (32)(2) |
 
-## **6. Bibliography of Resources and Links**
+## 6. Bibliography of resources and links
 
 |||
 |:-----|:-----|
