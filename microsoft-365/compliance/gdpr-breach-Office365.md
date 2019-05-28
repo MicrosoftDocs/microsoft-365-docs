@@ -2,13 +2,12 @@
 title: Office 365 Breach Notification Under the GDPR
 description: How Microsoft protects against a personal data breach and how Microsoft responds and notifies you if a breach occurs.
 keywords: Office 365, Microsoft 365, Microsoft 365 Education, Microsoft 365 documentation, GDPR
-author: herviicban
 localization_priority: Priority
-
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.date: 04/13/2018
 ms.author: heicba
+author: herviicban
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
@@ -32,7 +31,7 @@ In addition to our commitment to provide timely notification of breach, Office 3
 
 Here is a description of some of our investments in this space:
 
--   **Access Control Systems.** Office 365 maintains a “zero-standing access” policy, which means that engineers do not have access to the service unless it is explicitly granted in response to a specific incident that requires elevation of access. Whenever access is granted it is done under the principle of least privilege: permission granted for a specific request only allow for a minimal set of actions required to service that request. To do this, Office 365 maintains strict separation between “elevation roles”, with each role only allowing certain pre-defined actions to be taken. The “Access to Customer Data” role is distinct from other roles that are more commonly used to administer the service and is scrutinized most heavily before approval. Taken together, these investments in access control greatly reduce the likelihood that an engineer in Office 365 inappropriately accesses customer data.
+-   **Access Control Systems.** Office 365 maintains a “zero-standing access” policy, which means that engineers do not have access to the service unless it is explicitly granted in response to a specific incident that requires elevation of access. Whenever access is granted it is done under the principle of least privilege: permission granted for a specific request only allows for a minimal set of actions required to service that request. To do this, Office 365 maintains strict separation between “elevation roles”, with each role only allowing certain pre-defined actions to be taken. The “Access to Customer Data” role is distinct from other roles that are more commonly used to administer the service and is scrutinized most heavily before approval. Taken together, these investments in access control greatly reduce the likelihood that an engineer in Office 365 inappropriately accesses customer data.
 
 -   **Security Monitoring Systems and Automation:** Office 365 maintains robust, real-time security monitoring systems. Among other issues, these systems raise alerts for attempts to illicitly access customer data, or for attempts to illicitly transfer data out of our service. Related to the points about access control mentioned above, our security monitoring systems maintain detailed records of elevation requests that are made, and the actions taken for a given elevation request. Office 365 also maintains automatic resolution investments that automatically act to mitigate threats in response to issues we detect, and dedicated teams for responding to alerts that cannot be resolved automatically. To validate our security monitoring systems, Office 365 regularly conducts red-team exercises in which an internal penetration testing team simulates attacker behavior against the live environment. These exercises lead to regular improvements to our security monitoring and response capabilities.
 
