@@ -23,51 +23,66 @@ You can also have additional non-Microsoft apps included in the image delivered 
 
 ## Apps provided by Microsoft
 
-Included with your Microsoft Managed Desktop license are 64-bit versions of the apps in the Office 365 Standard Suite (Word, Excel, PowerPoint, Outlook, Publisher, Access, Skype for Business {still true or replaced by Teams now?}, OneNote.) Click-to-Run versions of Microsoft Project and Visio are *not* included by default, but you can request them.
+Included with your Microsoft Managed Desktop license are 64-bit versions of the apps in the Office 365 ProPlus Standard Suite (Word, Excel, PowerPoint, Outlook, Publisher, Access, Skype for Business {still true or replaced by Teams now?}, OneNote.) Click-to-Run versions of Microsoft Project and Visio are *not* included by default, but you can request them to be added.
 
 ### What Microsoft does to support the apps we provide
 
-Microsoft will provide full service for the deployment, update, and support for the included Office 365 apps. Click-to-Run versions of Microsoft Project and Visio are *not* included by default, but Microsoft Managed Desktop will provide deployment groups allowing the IT administrator to manage licenses and deploy these applications appropriately for your organization. Microsoft will support end users of these applications through the Microsoft Managed Desktop support channels.
+Microsoft will provide full service for the deployment, update, and support for the included Office 365 ProPlus apps. Click-to-Run versions of Microsoft Project and Visio are *not* included by default, but Microsoft Managed Desktop will provide deployment groups allowing your IT administrator to manage licenses and deploy these applications appropriately for your organization. Microsoft will support end users of these applications through the Microsoft Managed Desktop support channels.
 
 ### What you need to do to support the apps we provide
 
 There are still certain things you need to do with these apps:
 
-- **Assign licenses** - You are responsible for assigning the appropriate licenses to end users for Office 365.
-- **Add users to security groups** - If you're using Microsoft Project or Visio, the IT administrator must add those users to the appropriate deployment groups. IT administrators are also responsible for managing end of life {? referring to the license or what?} for those users.
-- **Deploy Office 365 Addons** - If you need any Addons for any of the Office 365 apps, it's up to you to deploy those. {when should they do that? How do they do that?}
+- **Assign licenses** - You are responsible for obtaining and assigning the appropriate licenses to end users for Office 365 ProPlus.
+- **Add users to security groups** - If you're using Microsoft Project or Visio, your IT administrator must add those users to the appropriate deployment groups. IT administrators are also responsible for managing end of life {? referring to the license or what?} for those users.
+- **Deploy Office 365 Addons** - If you need any Addons for any of the Office 365 ProPlus apps, it's up to you to deploy those. {when should they do that? How do they do that? can we link to instructions somewhere?}
 
 ## Apps you provide
 
+Of course, you probably have a number of other apps you need for your business operations. These can be added to the Microsoft Managed Desktop image provided to your devices by having them packaged by a vendor (which could be Microsoft Consulting Services (MCS) or a non-Microsoft vendor) or if you have the means, you can package them yourself. You then provide the packaged apps to Microsoft Managed Desktop {Operations?} so they can be added to the image.
 
+You can ask Microsoft Managed Desktop for a query you can use to survey your apps and discover which ones are ready for packaging or might require some adjustments.
 
 ### Preparing your own apps for inclusion in Microsoft Managed Desktop
 Review your apps, checking:
 
-- prohibited?
-- ready for Intune?
-		- pre-packaging requirements?
+- None of the apps are prohibited from use on Microsoft Managed Desktop devices:
+    - Non-Microsoft anti-virus, security, or audit software
+    - Versions of Microsoft Office prior to Office 365 ProPlus {what about current, but NON-ProPlus versions?}
+    - Applications that install or bundle other non-Microsoft software
+- Apps must be ready for management by Microsoft Intune. For more about this, see [Intune Standalong - Win32 app management](https://docs.microsoft.com/intune/apps-win32-app-management). You can ask Microsoft Managed Desktop for a query you can use to survey your apps and discover which ones are ready for packaging or might require some adjustments.
+- Other pre-packaging requirements such as providing license keys, agreement with license terms, and pre-setting server connections.
 	
 ### Decide how to package apps
 
-You can engage with MCS to package your apps {how do I engage w/ them?}
+You have basically three options to get apps packaged so that they can be included in the Microsoft Managed Desktop image. "Packaging" means {we should offer a brief statement of what this actually means}
 
-You can work with a non-Microsoft vendor
 
-You can package apps yourself
+- You can work with a non-Microsoft vendor
+- You can package apps yourself
+- You can engage with MCS to package your apps {how do I engage w/ them?}
 
-If you or a non-MS vendor does the packaging, these are the actions you're responsible for:
+#### Packaging by you or a non-Microsoft vendor
+If you or a non-Microsoft vendor do the packaging, these are the actions you're responsible for:
 - You must provide the source installer files (setup.exe & instructions) {do we mean files?}
-- You must provide installation instructions {for who? end-users or...?} --what customer wants the final installation to look like (shortcut, visibility, server)
-- You must upload to Intune and assign apps to appropriate groups (what kind? Deployment group?) --AAD group (see deploy apps topic)
-- You must perform your own acceptance testing
+- You must provide installation instructions, specifying what you want the final installation to look like; for example, should there be a desktop shortcut to the app, what should the app's visibility be, how should the app connect to a server (and which one).
+- {this happens after we give them image including the packaged app, right?} You must upload to Microsoft Intune and assign apps to appropriate Azure Active Directory groups. For more information {see deploy apps topic}.
+- You must perform your own acceptance testing--that is, that the app works as you need it to in your environment.
 
-Microsoft will handle these actions: MCS case
-- Check that the app is not prohibited WRONG
-- Compatibility testing {compatibility with what?} Win10 compat (install/launch/uninstall)
-- app remediation {what does this mean?} --if it sucks they'll hand it off to Desktop App Assure program
-- app packaging 
-- deployment testing {meaning what exactly?} -- related to compat testing 
+Microsoft will take care of these actions:
+
+- Checking for prohibited apps
+- Testing for compatibility with Windows 10
+- Handing off the app to the Desktop App Assurance program if the app needs remediation
+- Testing to ensure that the app deploys properly with Microsoft Intune
+
+
+
+If you engage MCS to package your apps, these are the actions Microsoft will be responsible for:
+- Testing to verify compatibility with Windows 10, for example, successful installation, starting, and uninstallation.
+- If the app needs remediation, we'll hand it off to Desktop App Assurance program {need link to more info on this}
+- Packaging the app
+- Testing to ensure that the app deploys properly by using Microsoft Intune.
 
 
 

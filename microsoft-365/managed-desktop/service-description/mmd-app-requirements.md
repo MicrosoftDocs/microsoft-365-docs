@@ -3,9 +3,8 @@ title: Microsoft Managed Desktop app requirements
 description:  
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
-author: trudyha
+author: jaimeo
 ms.localizationpriority: normal
-ms.date: 01/08/2019
 ms.collection: M365-modern-desktop
 ---
 
