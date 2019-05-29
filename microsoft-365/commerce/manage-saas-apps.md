@@ -58,12 +58,12 @@ You’ll be directed to the app publisher’s site where you can activate the ap
 Admins manage 3rd-party apps in two locations: Microsoft 365 admin center, and the 3rd-party app provider’s portal. 
 Here’s what you can do in each portal.
 
-| Microsoft 365 admin center, or </br>Microsoft Store for Business | App publisher portal |
+### App status
+Once activated, the apps remain active unless it is canceled, expires, or if payment is not kept current. These events change the app status to disabled. Once an app is disabled, it can’t be reactivated. You need to buy another copy of the app to continue using it.
+
+| Microsoft 365 admin center | App publisher portal |
 | --- | --- |
 | Change license quantity <br> Manage how you pay your bill <br> Manage how you pay your bill <br> Change payment method (credit card) <br> View invoice <br> Cancel app subscription | Set up app (once for each app) <br> Assign licenses to users <br> Technical support |
-
-## App status
-Once activated, the apps remain active unless it is canceled, expires, or if payment is not kept current. These events change the app status to disabled. Once an app is disabled, it can’t be reactivated. You need to buy another copy of the app to continue using it.
 
 ## Assign licenses
 Admins need to activate 3rd-party apps before assigning them to users. They are activated in the 3rd-party publisher’s portal. On the app page, under Settings & actions, select the link to assign licenses.
