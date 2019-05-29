@@ -50,23 +50,24 @@ Review your apps, checking:
     - Non-Microsoft anti-virus, security, or audit software
     - Versions of Microsoft Office prior to Office 365 ProPlus {what about current, but NON-ProPlus versions?}
     - Applications that install or bundle other non-Microsoft software
-- Apps must be ready for management by Microsoft Intune. For more about this, see [Intune Standalong - Win32 app management](https://docs.microsoft.com/intune/apps-win32-app-management). You can ask Microsoft Managed Desktop for a query you can use to survey your apps and discover which ones are ready for packaging or might require some adjustments.
+- Apps must be ready for management by Microsoft Intune. For more about this, see [Intune Standalone - Win32 app management](https://docs.microsoft.com/intune/apps-win32-app-management).
 - Other pre-packaging requirements such as providing license keys, agreement with license terms, and pre-setting server connections.
 	
 ### Decide how to package apps
 
-You have basically three options to get apps packaged so that they can be included in the Microsoft Managed Desktop image. "Packaging" means {we should offer a brief statement of what this actually means}
+You have three options to get apps packaged so that they can be included in the Microsoft Managed Desktop image. "Packaging" means {we should offer a brief statement of what this actually means}
 
 
 - You can work with a non-Microsoft vendor
 - You can package apps yourself
-- You can engage with MCS to package your apps {how do I engage w/ them?}
+- You can engage with MCS to package your apps. Work with your Microsoft account representative.
 
 #### Packaging by you or a non-Microsoft vendor
 If you or a non-Microsoft vendor do the packaging, these are the actions you're responsible for:
+
 - You must provide the source installer files (setup.exe & instructions) {do we mean files?}
 - You must provide installation instructions, specifying what you want the final installation to look like; for example, should there be a desktop shortcut to the app, what should the app's visibility be, how should the app connect to a server (and which one).
-- {this happens after we give them image including the packaged app, right?} You must upload to Microsoft Intune and assign apps to appropriate Azure Active Directory groups. For more information {see deploy apps topic}.
+- {this happens after we give them image including the packaged app, right?} You must upload to Microsoft Intune and assign apps to appropriate Azure Active Directory groups. For more information see [Deploy apps to Microsoft Managed Desktop devices](../get-started/deploy-apps.mmd).
 - You must perform your own acceptance testing--that is, that the app works as you need it to in your environment.
 
 Microsoft will take care of these actions:
@@ -77,6 +78,7 @@ Microsoft will take care of these actions:
 - Testing to ensure that the app deploys properly with Microsoft Intune
 
 
+#### Packaging by Microsoft Consulting Services
 
 If you engage MCS to package your apps, these are the actions Microsoft will be responsible for:
 - Testing to verify compatibility with Windows 10, for example, successful installation, starting, and uninstallation.
@@ -85,22 +87,15 @@ If you engage MCS to package your apps, these are the actions Microsoft will be 
 - Testing to ensure that the app deploys properly by using Microsoft Intune.
 
 
+## Deploying apps
+
+Whatever method you use to get apps packaged, once that is complete, you're ready to follow the steps in [Deploy apps to Microsoft Managed Desktop devices](../get-started/deploy-apps.mmd).
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+----------------------------------------
+{ORIGINAL MATERIAL BELOW THIS LINE}
 
 Microsoft and Microsoft Managed Desktop customers have equally critical, yet different responsibilities around applications used with Microsoft Managed Desktop.
 
