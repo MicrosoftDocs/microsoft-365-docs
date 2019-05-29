@@ -3,7 +3,7 @@ title: "Step 6: Configure privileged access management for Office 365"
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal

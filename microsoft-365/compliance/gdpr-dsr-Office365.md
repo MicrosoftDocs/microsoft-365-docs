@@ -114,7 +114,7 @@ The following table lists the Office 365 applications that people use to create 
 <!-- end of table -->
 
 > [!NOTE]
-> The Content Search eDiscovery tool is not available in [Office 365 operated by 21Vianet (China)](https://support.office.com/article/Learn-about-Office-365-operated-by-21Vianet-A8AB5061-3346-4DA0-BB7C-5260822B53AE). This means you won’t able to use this tool to search for and export Customer Data in the Office 365 applications shown in Table 1. However, you can use the In-Place eDiscovery tool in Exchange Online to search for content in user mailboxes. You can also use the eDiscovery Center in SharePoint Online to search for content in SharePoint sites and OneDrive accounts. Alternatively, you can ask a document owner to help you find and make changes or deletions to content or export it if necessary. For more information, see:</br>• [Create an In-Place eDiscovery search](https://technet.microsoft.com/library/dd353189(v=exchg.150).aspx)</br>• [Set up an eDiscovery Center in SharePoint Online](https://support.office.com/article/Set-up-an-eDiscovery-Center-in-SharePoint-Online-A18F8975-AA7F-43B4-A7D6-001D14744D8E)
+> The Content Search eDiscovery tool is not available in [Office 365 operated by 21Vianet (China)](https://support.office.com/article/Learn-about-Office-365-operated-by-21Vianet-A8AB5061-3346-4DA0-BB7C-5260822B53AE). This means you won’t able to use this tool to search for and export Customer Data in the Office 365 applications shown in Table 1. However, you can use the In-Place eDiscovery tool in Exchange Online to search for content in user mailboxes. You can also use the eDiscovery Center in SharePoint Online to search for content in SharePoint sites and OneDrive accounts. Alternatively, you can ask a document owner to help you find and make changes or deletions to content or export it if necessary. For more information, see:</br></br>&nbsp;&nbsp;• [Create an In-Place eDiscovery search](https://technet.microsoft.com/library/dd353189(v=exchg.150).aspx)</br>&nbsp;&nbsp;• [Set up an eDiscovery Center in SharePoint Online](https://support.office.com/article/Set-up-an-eDiscovery-Center-in-SharePoint-Online-A18F8975-AA7F-43B4-A7D6-001D14744D8E)
 
 ### Using Content Search to find personal data
 
@@ -180,8 +180,8 @@ The following table lists some conditions you can use to narrow the scope of a s
 ||||
 | :--- | :--- |:--- |
 |**Condition**|**Description** |**Example of condition values**|
-| File type | The extension of a document or file. Use this condition to search for Office documents and files created by Office 365 applications. Use this condition when searching for documents located on SharePoint Online sites and OneDrive for Business accounts.<br/>Note that the corresponding document property is filetype. <br/>For a complete list of file extensions that you can search for, see [Default crawled file name extensions and parsed file types in SharePoint](https://technet.microsoft.com/library/jj219530.aspx).|&nbsp;&nbsp;&nbsp;&bull;&nbsp;&nbsp;csv – Searches for comma separated value (CSV) files; Excel files can be saved in CSV format and CSV file can easily be imported into Excel<br>&bull;&nbsp;&nbsp;docx – Searches for Word file <br>&bull;&nbsp;&nbsp;mpp – Searches for Project files <br&bull;&nbsp;&nbsp;one – Searches for OneNote files <br>&bull;&nbsp;&nbsp;pdf – Search for files saved in a PDF format <br>&bull;&nbsp;&nbsp;pptx – Searches for PowerPoint files <br>&bull;&nbsp;&nbsp;xlxs – Searches for Excel files <br>&bull;&nbsp;&nbsp;vsd – Searches for Visio files <br>&bull;&nbsp;&nbsp;wmv – Searches for Windows Media video files <br>
-| Message type | The email message type to search for. Use this condition to search mailboxes for contacts (People), meetings (Calendar) tasks, or Skype for Business conversations.Note that the corresponding email property is *kind*.|&bull;&nbsp;&nbsp;*contacts* – Searches the My Contacts list (People) of a mailbox <br>&bull;&nbsp;&nbsp;*email* – Searches email messages <br>&bull;&nbsp;&nbsp;*im* – Searches Skype for Business conversations<br>&bull;&nbsp;&nbsp;*meetings* – Searches appointments and meeting requests (Calendar) <br>&bull;&nbsp;&nbsp;*tasks* – Searches the My Tasks list (Tasks); using this value will also return tasks created in Microsoft To-Do.<br>|
+| File type | The extension of a document or file. Use this condition to search for Office documents and files created by Office 365 applications. Use this condition when searching for documents located on SharePoint Online sites and OneDrive for Business accounts.<br/>Note that the corresponding document property is filetype. <br/>For a complete list of file extensions that you can search for, see [Default crawled file name extensions and parsed file types in SharePoint](https://technet.microsoft.com/library/jj219530.aspx).|&nbsp;&bull;&nbsp;&nbsp;csv – Searches for comma separated value (CSV) files; Excel files can be saved in CSV format and CSV file can easily be imported into Excel<br><br>&bull;&nbsp;&nbsp;docx – Searches for Word file <br><br>&bull;&nbsp;&nbsp;mpp – Searches for Project files<br/><br>&bull;&nbsp;&nbsp;one – Searches for OneNote files <br><br>&bull;&nbsp;&nbsp;pdf – Search for files saved in a PDF format <br><br>&bull;&nbsp;&nbsp;pptx – Searches for PowerPoint files <br><br>&bull;&nbsp;&nbsp;xlxs – Searches for Excel files <br><br>&bull;&nbsp;&nbsp;vsd – Searches for Visio files <br><br>&bull;&nbsp;&nbsp;wmv – Searches for Windows Media video files <br>|
+| Message type | The email message type to search for. Use this condition to search mailboxes for contacts (People), meetings (Calendar) tasks, or Skype for Business conversations.Note that the corresponding email property is *kind*.|&bull;&nbsp;&nbsp;*contacts* – Searches the My Contacts list (People) of a mailbox <br><br>&bull;&nbsp;&nbsp;*email* – Searches email messages <br><br>&bull;&nbsp;&nbsp;*im* – Searches Skype for Business conversations<br><br>&bull;&nbsp;&nbsp;*meetings* – Searches appointments and meeting requests (Calendar) <br><br>&bull;&nbsp;&nbsp;*tasks* – Searches the My Tasks list (Tasks); using this value will also return tasks created in Microsoft To-Do.<br>|
 | Compliance tag |The label assigned to an email message or a document. Labels are used to classify email and documents for data governance and enforce retention rules based on the classification defined by the label. Use this condition to search for items that have been automatically or manually assigned a label.<br/>This is a useful condition for DSR investigations because your organization may be using labels to classify content related to data privacy or that contains personal data or sensitive information. See the “Using Content Search to find all content with a specific label applied to it” section in [Overview of labels in Office 365.](https://support.office.com/article/overview-of-labels-af398293-c69d-465e-a249-d74561552d30)|compliancetag="personal data"|
 ||||
 
@@ -334,8 +334,11 @@ A subset of a user's SharePoint user profile is synchronized to the User informa
 Admins can control which properties are replicable inside the SharePoint admin center. To do this:
 
 1. Go to the **SharePoint admin center** and click the **user profiles** tab. 
+
 2. Click **Manage User Properties** to see a list of properties. 
+
 3. Right-click any property and select **Edit** and adjust various settings. 
+
 4. Under **Policy Settings**, the replicable property controls whether the property will be represented in the User information list. Note that not all properties support adjusting this.
 
 An admin can export all User information properties for a user on a given site by using the **Export-SPOUserInfo** cmdlet in SharePoint Online PowerShell. See [Export-SPOUserInfo](https://docs.microsoft.com/powershell/module/sharepoint-online/export-spouserinfo?view=sharepoint-ps).
@@ -447,7 +450,7 @@ For more information about previewing search results, see [Preview search result
 
 #### Export and download items
 
-You can also export the results of a content search to get a copy of email messages, documents, lists, and web pages containing the personal data, though this method is more involved than previewing items. See the next section for details about [exporting the results of a Content Search](#_Step_6:_Export_1).
+You can also export the results of a content search to get a copy of email messages, documents, lists, and web pages containing the personal data, though this method is more involved than previewing items. See the next section for details about [exporting the results of a Content Search](#export-and-download-content-using-content-search).
 
 ## Exporting personal data
 
@@ -575,7 +578,7 @@ Similarly, you may determine to delete a user’s OneDrive for Business site in 
 
 ### Deleting OneDrive for Business and SharePoint Online Experience Settings
 
-In addition to user-created files stored in OneDrive for Business accounts and SharePoint Online sites, these services store information about the user that is used to enable various experiences. These were previously documented in this document. See the [Additional considerations for select applications](#_Additional_considerations_for) section under [Using the Content Search eDiscovery tool to respond to DSRs](#_Set__up), for information about how to access, view, and export OneDrive for Business and SharePoint Online application data.
+In addition to user-created files stored in OneDrive for Business accounts and SharePoint Online sites, these services store information about the user that is used to enable various experiences. These were previously documented in this document. See the [Additional considerations for selected applications](#additional-considerations-for-selected-applications) section under [Using the Content Search eDiscovery tool to respond to DSRs](#using-the-content-search-ediscovery-tool-to-respond-to-dsrs) for information about how to access, view, and export OneDrive for Business and SharePoint Online application data.
 
 #### Deleting a SharePoint user profile
 
@@ -651,7 +654,7 @@ After you delete an Office 365 user account:
 -   System-generated logs about the data subject will be deleted 30 days after the user account is deleted. For more information, see the section [Deleting system-generated logs](#deleting-system-generated-logs).
 
 > [!IMPORTANT] 
-> After you delete a user account, that person will lose the ability to sign in to Office 365 and the ability to sign in to any products or services for which he or she formerly relied upon for a work or school account. That person would also be unable to initiate any DSR requests through Microsoft directly in instances where Microsoft is the data controller. For more information, see the [Product and services authenticated with an Org ID for which Microsoft is a data controller](#_Product_and_services) section in Part 4 of this guide.
+> After you delete a user account, that person will lose the ability to sign in to Office 365 and the ability to sign in to any products or services for which he or she formerly relied upon for a work or school account. That person would also be unable to initiate any DSR requests through Microsoft directly in instances where Microsoft is the data controller. For more information, see the [Product and services authenticated with an Org ID for which Microsoft is a data controller](#product-and-services-authenticated-with-an-org-id-for-which-microsoft-is-a-data-controller) section in Part 4 of this guide.
 
 > [!NOTE]
 > In the event that you are a customer currently engaged in FastTrack migrations, deleting the Office 365 user account will not delete the data copy held by the Microsoft FastTrack team, which is held for the sole purpose of completing the migration. If, during the migration, you would like the Microsoft FastTrack team to also delete the data copy, you can [submit a request](https://go.microsoft.com/fwlink/?linkid=874544). In the ordinary course of business, Microsoft FastTrack will delete all data copies once the migration is complete.
@@ -679,11 +682,11 @@ You can't hard-delete a user in the Office 365 admin portal.
 
 One thing to understand when deleting a user is what happens to the user's Exchange Online mailbox. After the user account is hard-deleted (in step 3 in the previously process) the deleted user's mailbox isn't automatically purged from Office 365. It will take up to 60 days after the user account is hard-deleted to permanently remove it from Office 365. Here's the mailbox lifecycle after the user account is deleted and a description of the state of the mailbox data during that time:
 
--   **Day 1 – Day 30**: The mailbox can be fully restored by restoring the soft-deleted user account.
+-   **Day 1 – Day 30** - The mailbox can be fully restored by restoring the soft-deleted user account.
 
--   **Day 31 – Day 60**: For 30 days after the user account is hard-deleted, an admin in your organization can recover the data in the mailbox and import it into a different mailbox. This provides Office 365 organizations the ability to recover the mailbox data if necessary.
+-   **Day 31 – Day 60** - For 30 days after the user account is hard-deleted, an admin in your organization can recover the data in the mailbox and import it into a different mailbox. This provides Office 365 organizations the ability to recover the mailbox data if necessary.
 
--   **Day 61 – Day 90**: An admin can no longer recover the data in the mailbox. The mailbox data will be marked for permanent removal, and it will take up to 30 more days for the mailbox data to be purged from Office 365.
+-   **Day 61 – Day 90** - An admin can no longer recover the data in the mailbox. The mailbox data will be marked for permanent removal, and it will take up to 30 more days for the mailbox data to be purged from Office 365.
 
 If you determine that this mailbox lifecycle doesn't meet your organization's requirements for responding to a DSR deletion request, you can [contact Microsoft Support](https://support.microsoft.com/) *after* you hard-delete the user account, and request Microsoft to manually initiate the process to permanently remove the mailbox data. Note that this process to permanently remove mailbox data starts automatically after day 61 in the lifecycle, so there would be no reason to contact Microsoft after this point in the lifecycle.
 
@@ -716,6 +719,7 @@ The following sections explain how use the in-app functionality in Microsoft Acc
 There are several ways that you can search for records in an Access database that might be responsive to a DSR request. For a DSR investigation, you can search for records that related to the data subject or search for records that contain specific data. For example, you could either search or go to a record that corresponds to the data subject. Or you can search for records that contain specific data, such as personal data about the data subject. For more information, see:
 
 - [Find records in an Access database](https://support.office.com/article/find-records-in-an-access-database-705220b7-0255-4ef9-9349-6bd7442d1b7e) 
+
 - [Create a simple select query](https://support.office.com/article/create-a-simple-select-query-de8b1c8d-14e9-4b25-8e22-70888d54de59)
 
 ##### Access
@@ -723,8 +727,11 @@ There are several ways that you can search for records in an Access database tha
 After you find the records or fields that are relevant to the DSR request, you can take a screenshot of the data or export it to an Excel file, Word file, or a text file. You can also create and print a report based on a record source, or a select query that you created to find the data. See:
 
 - [Introduction to reports in Access](https://support.office.com/article/introduction-to-reports-in-access-e0869f59-7536-4d19-8e05-7158dcd3681c)
+
 - [Export data to Excel](https://support.office.com/article/export-data-to-excel-64e974e6-ae43-4301-a53e-20463655b1a9)
+
 - [Export data to a Word document](https://support.office.com/article/export-access-data-to-a-word-document-6e954c8e-2243-4cb9-8544-607e5b7bfc12)
+
 - [Export data to a text file](https://support.office.com/article/export-data-to-a-text-file-f72dfc38-a8a0-4c5b-8c2c-bf2950814140)
 
 ##### Export
@@ -736,15 +743,20 @@ As previously explained, you can export data from an Access database to differen
 You can delete an entire record or a just a field from an Access database. The quickest way to delete a record from an Access database is to open the table in Datasheet view, select the record (row) or just the data in a field that you want to delete, and then press Delete. You can also use a select query that you created to find data and then convert it to a delete query. See:
 
 - [Delete one or more records from a database](https://support.office.com/article/delete-one-or-more-records-from-a-database-002b850d-1efa-473d-9297-0994ce46c66a)
+
 - [Create and run a delete query](https://support.office.com/article/create-and-run-a-delete-query-6da65fe1-0fc7-4a64-8ef0-c052cd4c3ec5)
 
 ### Business Apps for Office 365
 
 This section explains how use the in-app functionality in each of the following Business Apps for Office 365 to respond to DSR requests.
 - [Bookings](#bookings)
+
 - [Listings](#listings)
+
 - [Connections](#connections)
+
 - [Outlook Customer Manager](#outlook-customer-manager)
+
 - [Invoicing](#invoicing)
 
 #### Bookings
@@ -753,12 +765,18 @@ The following sections explain how use the in-app functionality in Microsoft Boo
 Microsoft Bookings allows administrators and users or staff, with a Bookings license in their organization, to set up booking pages so customers can schedule and make changes to appointments, receive confirmation emails, updates, cancellation, and reminders email. Business owners and their staff can also book events on behalf of their customers with Bookings. 
 
 The following types of data is created by customers, administrators, or staff: 
-- **Contact information of customers, partners and friends.** This data contains name, phone number, email address, address, and notes.
+
+- **Contact information of customers, partners and friends** - This data contains name, phone number, email address, address, and notes.
+    
     - Contacts for anyone can be manually created by using the Bookings Web, iOS, and Android clients.
+    
     - Contacts for anyone can be imported from a C1’s mobile device into Bookings with the Bookings iOS and Android clients.
+    
     - Contacts are also auto-created at the time of booking creation through the booking workflow for anyone booked – whether the booking is created by a user on a customer’s behalf or if it’s created by the customer using the owner’s booking page.
-- **Booking events.** These are meetings between the business owner or their designated staff and a customer, which are created either by the business owner or the customer through the business owner’s public booking page. This data includes name, address, email address, phone number, and any other info the business owner collects from the customer at the time of booking.
-- **Email confirmations/cancellations/updates.** These are email messages generated and sent by the system in association with specific booking events. They contain personal data about the staff who is scheduled to the deliver the relevant service and they contain personal data about the customer that was entered by either the business owner or the customer at the time of booking.
+
+- **Booking events** - These are meetings between the business owner or their designated staff and a customer, which are created either by the business owner or the customer through the business owner’s public booking page. This data includes name, address, email address, phone number, and any other info the business owner collects from the customer at the time of booking.
+
+- **Email confirmations/cancellations/updates** - These are email messages generated and sent by the system in association with specific booking events. They contain personal data about the staff who is scheduled to the deliver the relevant service and they contain personal data about the customer that was entered by either the business owner or the customer at the time of booking.
 
 All customer content is stored in the Exchange Online mailbox that hosts the organization’s Bookings. This content is retained for as long as the business owner and customer are active in the service, unless they explicitly request that the data be deleted or if they leave the service. This content can be deleted with in-product UI, with a cmdlet, or through deletion of the relevant booking mailbox. Once the deleted action is initiated, the data will be deleted within the time period set by the business owner. 
 
@@ -772,13 +790,16 @@ This data is retained for as long as the staff member is active in the service u
 
 ##### Discover/Access
 Bookings gathers and stores the following types of data:
-- Business profile information. Customer content about the business using Bookings is collected through the Bookings’ Business information form and is synchronized with the Business Center Business Profile if a customer is using Bookings in conjunction with the Business center.
-- The only EUII associated with this data is an email address the C1. This address is where new booking notifications and update emails are sent.
-- Customer contacts. Contacts can be manually created in the Bookings Web, iOS, and Android clients, or they can be imported from a mobile device. Contacts are also automatically created during the use of the self-service booking page. They contain EUII and are stored in the Bookings mailbox.
-- Staff details. Customer content includes data about the staff that are eligible to deliver the services created from either the Bookings Web, iOS, or Android clients. Staff details can contain name, email address, and phone number.
-- Booking events. These are customer meetings and related customer content created by the business using a Web client or Android/iOS app, or created by the customer using a public booking page (or a Facebook page). These events can include name, address, email address, phone number, and appointment details.
 
-Meeting requests, email confirmations/cancellations/updates, and email reminders. These are email messages sent by the system in association with bookings. They contain staff data and customer data that was entered at time of booking.
+- **Business profile information** - Customer content about the business using Bookings is collected through the Bookings’ Business information form and is synchronized with the Business Center Business Profile if a customer is using Bookings in conjunction with the Business center. The only EUII associated with this data is an email address of the C1. This address is where new booking notifications and update emails are sent.
+
+- **Customer contacts** - Contacts can be manually created in the Bookings Web, iOS, and Android clients, or they can be imported from a mobile device. Contacts are also automatically created during the use of the self-service booking page. They contain EUII and are stored in the Bookings mailbox.
+
+- **Staff details** - Customer content includes data about the staff that are eligible to deliver the services created from either the Bookings Web, iOS, or Android clients. Staff details can contain name, email address, and phone number.
+
+- **Booking events** - These are customer meetings and related customer content created by the business using a Web client or Android/iOS app, or created by the customer using a public booking page (or a Facebook page). These events can include name, address, email address, phone number, and appointment details.
+
+- **Meeting requests, email confirmations/cancellations/updates, and email reminders** - These are email messages sent by the system in association with bookings. They contain staff data and customer data that was entered at time of booking.
 
 ##### Export
 
@@ -786,10 +807,14 @@ To export data corresponding to the business owner, staff and customers, you can
 
 ##### Delete
 You can delete the following types of Bookings data in response to a DSR deleting request:
-- **Business profile information and contacts.** You can delete the Bookings mailbox in the Office 365 admin center. After you delete the mailbox, you can restore it with 30 days. After 30 days, the account and the corresponding mailbox are permanently deleted. For details about deleting a user account, see the section [Deleting a user](#deleting-a-user).
-- **Staff details.** You can delete staff from the Bookings dashboard. To permanently detail staff, you can delete their Office 365 account.
-- **Bookings events.** You can delete bookings events from the Bookings calendar, which will remove the customer’s information.
-- **Meeting requests, email confirmations/cancellations/updates, and email reminders.** You can delete these from the Bookings calendar, which will remove the customer’s information.
+
+- **Business profile information and contacts** - You can delete the Bookings mailbox in the Office 365 admin center. After you delete the mailbox, you can restore it with 30 days. After 30 days, the account and the corresponding mailbox are permanently deleted. For details about deleting a user account, see the section [Deleting a user](#deleting-a-user).
+
+- **Staff details** - You can delete staff from the Bookings dashboard. To permanently detail staff, you can delete their Office 365 account.
+
+- **Bookings events** - You can delete bookings events from the Bookings calendar, which will remove the customer’s information.
+
+- **Meeting requests, email confirmations/cancellations/updates, and email reminders** - You can delete these from the Bookings calendar, which will remove the customer’s information.
 
 Business owners and admins can also delete their customer’s data by using the Business center privacy portal. See [Export or delete user data using Business center privacy portal](https://support.office.com/article/export-or-delete-user-data-using-business-center-privacy-portal-eb48e2c1-4c91-4421-988d-5de497d1e8d8).
 
@@ -801,9 +826,13 @@ The following sections explain how use the in-app functionality in Microsoft Lis
 
 ##### Discover
 Listings owner can connect their business to Google, Bing, Yelp, and Facebook to see an aggregated view of ratings and reviews. Listings collects and stores the following types of data:
+
 - Google reviews and ratings
+
 - Bing reviews and ratings
+
 - Yelp reviews and ratings
+
 - Facebook reviews and ratings
 
 ##### Access
@@ -820,8 +849,11 @@ The following sections explain how use the in-app functionality in Microsoft Con
 
 ##### Discover
 Connections collects and stores the following types of data: 
+
 - Customers/contacts are created by the business using the web client or mobile app (iOS, Android), or by using the app when a business contact is sent an email marketing campaign. Customer data can include name, address, email address, and tax ID numbers. Note that contacts are shared across all Business center apps.
+
 - Customers can sign up on the Connections sign up page and save their personal information.
+
 - Links from email campaigns
 
 ##### Access
@@ -838,7 +870,9 @@ The following sections explain how use the in-app functionality in Outlook Custo
 
 ##### Discover
 Outlook Customer Manager gathers and stores user information for both the Outlook Customer Manager owner and their customers and business contacts.
+
 - Owner data. This includes name, address, and email address. Documents and files that an owner shares with a customer are stored in OneDrive for Business, SharePoint Online, and as tasks in Outlook.
+
 - Customer and business contact data. Customer data can include name, address, and email address. Customer and contact data is created by the business in Outlook or Outlook web app. Contacts are shared across Business center. Documents and files that a customer shares with a business are stored in OneDrive for Business, SharePoint Online, and as tasks in Outlook.
 
 Outlook Customer Manager also stores activities and insights about customers in Exchange.
@@ -855,9 +889,12 @@ The following sections explain how use the in-app functionality in Microsoft Inv
 
 ##### Discover
 Invoicing collects and stores the following types of data:
-- **Contacts.** These are created by the business when an invoice or estimate is created for a customer/business contact. Contacts are shared across Business center. Customer data includes name, address, email address, and tax ID numbers.
-- **Invoices**. These are created and sent to customers and represent both a debt and a tax liability.
-- **Estimates.** The business can also send estimates to customers. If a customer accepts an estimate, it is converted to an invoice. An estimate is converted to an invoice after it’s accepted by the customer. Records of estimates aren’t kept once they’re converted to an invoice.
+
+- **Contacts** - These are created by the business when an invoice or estimate is created for a customer/business contact. Contacts are shared across Business center. Customer data includes name, address, email address, and tax ID numbers.
+
+- **Invoices** - These are created and sent to customers and represent both a debt and a tax liability.
+
+- **Estimates** - The business can also send estimates to customers. If a customer accepts an estimate, it is converted to an invoice. An estimate is converted to an invoice after it’s accepted by the customer. Records of estimates aren’t kept once they’re converted to an invoice.
 
 ##### Access
 Users can go to the Invoicing dashboard in the to their Business center to see drafts of the invoices they’ve created and the invoices that have been seen to customers.
@@ -874,6 +911,7 @@ Alternatively, you can delete the invoicing owner’s user account in Office 365
 This section explains how use the in-app functionality of the following Microsoft Education apps to respond to DSR requests.
 
 - Assignments
+
 - Class Notebook
 
 #### Assignments
@@ -896,7 +934,9 @@ See [Using the Content Search eDiscovery tool to respond to DSRs](#using-the-con
 The following types of Assignments data is not stored in the class team SharePoint site, and therefore isn't discoverable by using Content Search. This data this includes the following:
 
 - Student grades and feedback from the teacher
+
 - The list of documents submitted for an assignment by each student
+
 - Assignment details, like the date the assignment is due
 
 To find data, an admin or a teacher would have to go into the Assignment in the Class Team site to find data that may be relevant to a DSR request. An admin can add themselves as an owner to the class and view all the assignments for that class team.
@@ -905,7 +945,9 @@ Note that even if a student is no longer part of a class, their data might still
 
 ##### Export
 You can export Assignments data for a specific student for all classes in which the student is currently enrolled by using a PowerShell script. See:
+
 - [Using scripts to export and delete user data from Assignments](https://support.office.com/article/04473375-6c00-4dda-bfe5-b55a772958fe).
+
 - [Export student and teacher data from Assignments](https://support.office.com/article/e8c36e0e-fb6e-42c5-97fd-66f90f92a13a).
 
 If the student has been removed from the Team Class site, the admin can add the student back to the site before running the export script. Or the admin can use the input file for the script to identify every class that the student was ever enrolled in.
@@ -915,6 +957,7 @@ You can also use the Assignment export script to export submissions data for all
 You can delete Assignments data for a specific student for all classes in which the student is currently enrolled by using a PowerShell script. You should do this before you remove the student from the class. See:
 
 - [Using scripts to export and delete user data from Assignments](https://support.office.com/article/04473375-6c00-4dda-bfe5-b55a772958fe).
+
 - [Delete student data from Assignments](https://support.office.com/article/a368853a-9565-4320-8e86-2f9423e932a4).
 
 If the student has been removed from the Team Class site, the admin can add the student back to the site before running the export script. Or the admin can use the input file for the script to identify every class that the student was ever enrolled in.
@@ -1025,20 +1068,31 @@ The following sections explain how use the in-app functionality in Microsoft Kai
 A user’s organizational data, which is data that is shared in organizational groups, can be accessed by an admin from the Kaizala management portal. Organizational data is retained for a duration of time determined by your organization’s retention policies. In addition to user data, Kaizala servers also store the following types of organizational data:
 
 - List of members who are part of the organization’s groups
+
 - Organization group messages data, which are messages and responses shared across organizational groups
+
 - A list of users in the organizations
+
 - Product and service usage data captured for all users in the organization.
+
 - Kaizala Actions created by the organization
+
 - Kaizala connectors data
 
 A user’s consumer data can be accessed by the data subject using the Kaizala mobile app for consumer data. Consumer data includes the following types of data:
 
 - Data belonging to private groups on Kaizala (stored on Kaizala servers for 90 days)
+
 - A user’s profile information, as well as the user’s contacts
+
 - List of members who are part of the same groups as the user
+
 - Group messages and responses shared across groups
+
 - The user’s contact list (stored on Kaizala service)
+
 - Transactions made by the user on Kaizala (applies to Kaizala users in India only)
+
 - Product and service usage data for the user
 
 #### Access
@@ -1049,6 +1103,7 @@ When users in your organization use Kaizala, consumer data is generated, and org
 For details, see:
 
 - [Export or delete a user's organizational data in Kaizala](https://support.office.com/article/export-or-delete-a-user-s-organizational-data-in-kaizala-150ec214-a070-4e8a-8509-82f46d84bbb6)
+
 - [Export or delete your data in the Kaizala mobile app](https://support.office.com/article/export-or-delete-your-data-in-the-kaizala-mobile-app-65f83dbc-4f10-4644-9b2d-9945c967684e)
 
 #### Delete
@@ -1057,7 +1112,9 @@ A Kaizala admin can remove a Kaizala user’s account in the Kaizala management 
 To remove all private data from the user’s mobile device, the Kaizala user can delete their Kaizala account. After the account is deleted, all related Kaizala content including, chats, photos, and other data will be deleted from the device.
 
 For details, see:
+
 - [Export or delete a user's organizational data in Kaizala](https://support.office.com/article/export-or-delete-a-user-s-organizational-data-in-kaizala-150ec214-a070-4e8a-8509-82f46d84bbb6)
+
 - [Export or delete your data in the Kaizala mobile app](https://support.office.com/article/export-or-delete-your-data-in-the-kaizala-mobile-app-65f83dbc-4f10-4644-9b2d-9945c967684e)
 
 ### Planner
@@ -1070,7 +1127,7 @@ Planner plans are associated with an Office 365 Group, and the files for Office 
 
 #### Access
 
-As previously explained, you can search the underling SharePoint Online site and mailbox that are associated with a plan. Then you can preview or download the related search results to access data.
+As previously explained, you can search the underlying SharePoint Online site and mailbox that are associated with a plan. Then you can preview or download the related search results to access data.
 
 #### Delete
 
@@ -1173,6 +1230,34 @@ You can delete information about a user from your Project Online environment. Se
 
 You can a specific user's content from your Project Online environment. This data is exported to multiple files in the JSON format. For step-by instructions see, [Export user data from Project Online](https://support.office.com/article/export-user-data-from-project-online-27f3838d-3dbe-4b98-80dc-df55f851154d). For detailed information about the files that are exported, see [Project Online export json object definitions](https://support.office.com/article/project-online-export-json-object-definitions-ce5faeae-9af4-4696-b847-a1f4f20327c7).
 
+### Publisher
+
+The following sections explain how to use the in-app functionality in Microsoft Publisher to find, access, export, and delete personal data.
+
+#### Discover
+
+You can use the in-app search feature to find text in a Publisher file the same way as you can in most Office applications. See [Find and replace text](https://support.office.com/article/find-and-replace-text-bfe54275-b7c7-4d0f-904d-a2f38d322268).
+
+#### Access
+
+After you find data, you can take a screenshot of it or copy and paste it into a Word or text file and provide that to the data subject. You can also save a publication as a Word, PDF, or XPS file. See:
+
+  - [Save a publication as a Word document](https://support.office.com/article/save-a-publication-as-a-word-document-b5eaaae5-6f1b-48c1-bebc-44460376b693)
+
+  - [Save As or convert a publication to .pdf or .xps using Publisher](https://support.office.com/article/657332d0-d2c2-464a-9870-e9b3d22e6469)
+
+#### Export
+
+You can provide a data subject with the actual Publisher file or as previously explained, you can save a publication as a Word, PDF, or XPS file. See:
+
+  - [Save a publication as a Word document](https://support.office.com/article/save-a-publication-as-a-word-document-b5eaaae5-6f1b-48c1-bebc-44460376b693)
+
+  - [Save As or convert a publication to .pdf or .xps using Publisher](https://support.office.com/article/657332d0-d2c2-464a-9870-e9b3d22e6469)
+
+#### Delete
+
+You can delete content from a publication, delete entire pages, or delete an entire Publisher file. See [Add or delete pages](https://support.office.com/article/add-or-delete-pages-daf71e39-86e0-4bbc-a186-d5ec70450b08).
+
 ### StaffHub
 
 The following sections explain how use the in-app functionality in Microsoft StaffHub to find, access, export, and delete personal data.
@@ -1247,7 +1332,8 @@ To export a Sway, open the Sway that you would like to download, select the seri
 The following sections explain how use the in-app functionality in Microsoft Whiteboard to find, access, export, and delete personal data.
 
 - [Whiteboard 2016 on Surface Hub](#whiteboard-2016-on-surface-hub)
-- [ Whiteboard on all other platforms](#-whiteboard-for-pc-surface-hub-and-other-platforms)
+
+- [Whiteboard on all other platforms](#whiteboard-for-pc-surface-hub-and-other-platforms)
 
 #### Whiteboard 2016 on Surface Hub
 
@@ -1261,28 +1347,38 @@ Whiteboard files (.wbx files) are stored in users’ OneDrive for Business accou
 To access and transfer whiteboards: 
 
 1. Give yourself access to the user’s OneDrive for Business account. See the “Get access to the former employee’s OneDrive for Business documents” section in [Get access to and back up a former user's data](https://support.office.com/article/get-access-to-and-back-up-a-former-user-s-data-a6f7f9ad-e3f5-43de-ade5-e5a0d7531604).
+
 2. Go to the Whiteboard App Data folder in the user’s OneDrive for Business account and copy the .wbx files of the whiteboards that you want to transfer.
+
 3. Give yourself access to the data subject’s OneDrive for Business account, and then go to Whiteboard App Data folder.
+
 4. Paste the .wbx files that you copied in the previous step.
 
 ##### Access
 
 If you find personal data in a whiteboard that’s responsive to a DSR access request, you can provide the data subject access to a whiteboard in several ways:
+
 - Take screenshots of the relevant portions of a whiteboard.
+
 - Upload a copy of the .wbx file to the data subject’s OneDrive for Business account. See the previous section for steps on accessing and transferring .wbx files.
+
 - Export a copy of whiteboard as a .png file.
 
 ##### Export
 
 If you’ve obtained a copy of a whiteboard, you can export it. 
+
 1. Launch Whiteboard on the Surface Hub.
+
 2. Tap the Share button and then select Export a copy.
 You can export a whiteboard to a OneNote (.one) file or to an image (.png) file.
 
 ##### Delete
 
 You can give yourself access to the user’s OneDrive for Business account and then delete the whiteboards.
+
 1. Give yourself access to the data subject’s OneDrive for Business account. See the “Get access to the former employee’s OneDrive for Business documents” section in [Get access to and back up a former user's data](https://support.office.com/article/get-access-to-and-back-up-a-former-user-s-data-a6f7f9ad-e3f5-43de-ade5-e5a0d7531604)
+
 2. Go to the Whiteboard App Data folder and then delete the contents of this folder.
 
 ####  Whiteboard for PC, Surface Hub, and other platforms
@@ -1312,11 +1408,14 @@ Per-user data export does not include:
 
 - The user’s profile:
     - If the user has a Yammer identity, the user has full control of their profile. For information on how to view and modify the profile, see [Change my Yammer profile and settings](https://support.office.com/article/change-my-yammer-profile-and-settings-a3aeca0e-de34-4897-9b59-de6516542851).
+    
     - If the user has an Office 365 identity, the Yammer user profile is pulled automatically from Office 365, which gets the profile information from Azure Active Directory (AAD). Yammer users can temporarily change their profiles in Yammer, but these changes are overwritten when there is a change in AAD, so you must view and change directory data in AAD. See [Manage Yammer users across their lifecycle from Office 365](https://support.office.com/article/Manage-Yammer-users-across-their-life-cycle-from-Office-365-6c4c8fff-6444-404a-bffc-f9da0bcc3039) and [Add or change profile information for a user in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-users-profile-azure-portal).
 
 -   The user’s settings:
+
 - The user can view and change their own settings. For information on how to view and modify user settings, see [Change my Yammer profile and settings](https://support.office.com/article/change-my-yammer-profile-and-settings-a3aeca0e-de34-4897-9b59-de6516542851). An admin can view this information and take screenshots, but can’t change it. Go to Yammer settings \> **People**, and then click the name of the user.<br/>
     - The user’s group membership, bookmarked messages, followed users, and followed topics.
+    
     - The user can view this information. For information on how, see [Tips for staying organized in Yammer](https://support.office.com/article/tips-for-staying-organized-in-yammer-40ae9666-75c0-4254-a84c-d87a9542f380). An admin can view this information and take screenshots, but can’t change it. Go to Yammer settings \> **People**, and then click the name of the user.
 
 #### Export
@@ -1434,6 +1533,7 @@ For data that the user can access through their profile and settings, the user c
     - If the user has an Office 365 identity, the Yammer user profile is pulled automatically from Office 365, which gets the profile information from Azure Active Directory (AAD). Yammer users can temporarily change their profiles in Yammer, but these changes are overwritten when there is a change in AAD, so the best place to view and change directory data is AAD. The user will need to request that AAD be updated. See [Manage Yammer users across their lifecycle from Office 365](https://support.office.com/article/Manage-Yammer-users-across-their-life-cycle-from-Office-365-6c4c8fff-6444-404a-bffc-f9da0bcc3039) and [Add or change profile information for a user in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-users-profile-azure-portal).
 
 -   The user’s settings:
+    
     - The user can change their own settings. For information on how to view and modify user settings, see [Change my Yammer profile and settings](https://support.office.com/article/change-my-yammer-profile-and-settings-a3aeca0e-de34-4897-9b59-de6516542851).
 
     - The user’s group membership, bookmarked messages, followed users, and followed topics. The user can change this information; see [Tips for staying organized in Yammer](https://support.office.com/article/tips-for-staying-organized-in-yammer-40ae9666-75c0-4254-a84c-d87a9542f380).
@@ -1442,17 +1542,17 @@ For data that the user can access through their profile and settings, the user c
 
 Here are the ways to restrict the processing of data in Office 365:
 
--   Remove an Office 365 application license to prevent users from accessing data via an application
+- Remove an Office 365 application license to prevent users from accessing data via an application
 
--   Prevent users from accessing their OneDrive for Business account
+- Prevent users from accessing their OneDrive for Business account
 
--   Turn off an Office 365 service from processing the data
+- Turn off an Office 365 service from processing the data
 
--   Temporarily remove the data from SharePoint Online and OneDrive for Business and retain it on-premises
+- Temporarily remove the data from SharePoint Online and OneDrive for Business and retain it on-premises
 
--   Temporarily restrict all access to a SharePoint Online site
+- Temporarily restrict all access to a SharePoint Online site
 
--   Prevent a user from signing in to Office 365
+- Prevent a user from signing in to Office 365
 
 If your organization determines later that a restriction no longer applies, you can end the restriction by reversing the steps you took to restrict it; such as re-assigning licenses, turning a service back on, or allowing a user to sign in to Office 365.
 
@@ -1462,9 +1562,9 @@ As previously explained, licenses for all Office 365 applications that are inclu
 
 **Notes:**
 
--   To restrict a user from accessing Yammer, you must first [enforce Office 365 identify for a Yammer user](https://support.office.com/article/Enforce-office-365-identity-for-Yammer-users-008f940b-6bec-47fc-bcc6-9c6133467562) and then remove the user's Yammer license.
+- To restrict a user from accessing Yammer, you must first [enforce Office 365 identify for a Yammer user](https://support.office.com/article/Enforce-office-365-identity-for-Yammer-users-008f940b-6bec-47fc-bcc6-9c6133467562) and then remove the user's Yammer license.
 
--   For scenarios that take advantage of Power BI Embedded, you can restrict access to the independent software vendor (ISV) application that the content is embedded in.
+- For scenarios that take advantage of Power BI Embedded, you can restrict access to the independent software vendor (ISV) application that the content is embedded in.
 
 ### Preventing users from accessing their OneDrive for Business account
 
@@ -1514,6 +1614,7 @@ An IT admin can also prevent a user from signing into Office 365, which would pr
 
 The Microsoft suite of Office 365 services includes online services that provide insights to users and organizations that have opted to use them.
 - Delve and MyAnalytics provide insights to individual users
+
 - Workplace Analytics provides insights to organizations.
 
 These services are described in the following sections.
@@ -1528,36 +1629,37 @@ Admins can’t access or export a users’ Delve data. This means that users hav
 
 ##### Data available in the Delve user interface
 
--   **Profile data**. This is the profile information from your organization’s Global Address List in Azure Active Directory, as well as optional information that users have chosen to add about themselves. To access or export profile data in Delve, a user can click **Me** \> **Update profile**. They can either copy the content directly from the page or take a screenshot.
+-   **Profile data** - This is the profile information from your organization’s Global Address List in Azure Active Directory, as well as optional information that users have chosen to add about themselves. To access or export profile data in Delve, a user can click **Me** \> **Update profile**. They can either copy the content directly from the page or take a screenshot.
 
--   **Blog data**. This is blog posts published by a user. To access or export blog data, a user can click **Me** \> **All posts**. They can either copy the content directly from the page or take a screenshot.
+-   **Blog data** - This is blog posts published by a user. To access or export blog data, a user can click **Me** \> **All posts**. They can either copy the content directly from the page or take a screenshot.
 
--   **Recent people data**. These are the people in the organization that Delve has inferred are most relevant to the user at a given time. When a user clicks **Me** \> **See all** in the “Click a person to see what they’re working on” pane, Delve shows the most relevant people for a user at a given time.
+-   **Recent people data** - These are the people in the organization that Delve has inferred are most relevant to the user at a given time. When a user clicks **Me** \> **See all** in the “Click a person to see what they’re working on” pane, Delve shows the most relevant people for a user at a given time.
 
 ##### Data available through an export link in Delve
-- **People list data.** These are the people the user has viewed in Delve. The **People** list is shown in the left pane on the home page. Users can export the list of people they have most recently viewed in Delve.
 
-- **Favorites data**. These are boards and documents that the user has marked as their favorite. The **Favorites** page shows boards and documents that the user has added to their favorites. Users can export a list of their current favorite boards and documents.
+- **People list data.** - These are the people the user has viewed in Delve. The **People** list is shown in the left pane on the home page. Users can export the list of people they have most recently viewed in Delve.
 
-- **Feature settings data**. These are Delve configurations or actions that result from a user’s use of Delve. Users can export a full list of these settings. 
+- **Favorites data** - These are boards and documents that the user has marked as their favorite. The **Favorites** page shows boards and documents that the user has added to their favorites. Users can export a list of their current favorite boards and documents.
+
+- **Feature settings data** - These are Delve configurations or actions that result from a user’s use of Delve. Users can export a full list of these settings. 
 
 To access or export the above data, the user can click the gear icon in the upper-right corner in Delve, and then click **Feature settings** > **Export data**. Information is exported in JSON format.
 
 ##### Data that’s available through other services
 
--   **Popular documents data**. These are documents and email attachments that may be relevant to the user. Delve dynamically organizes these documents and email messages based on the user’s activities and people they work with in Office 365. When a user opens Delve or clicks **Home**, Delve shows the most relevant documents or attachments for the user at a given time. To access or export the actual documents and attachments, the user can go to the Office 365 service through which the document or attachment was made available (such as Office.com, SharePoint Online, OneDrive for Business, or Exchange Online).
+-   **Popular documents data** - These are documents and email attachments that may be relevant to the user. Delve dynamically organizes these documents and email messages based on the user’s activities and people they work with in Office 365. When a user opens Delve or clicks **Home**, Delve shows the most relevant documents or attachments for the user at a given time. To access or export the actual documents and attachments, the user can go to the Office 365 service through which the document or attachment was made available (such as Office.com, SharePoint Online, OneDrive for Business, or Exchange Online).
 
--   **Recent documents and email attachments data**. These are the most recent documents and email attachments that the user has modified. When a user clicks **Me** \> **See all** in the “Get back to your recent documents and email attachments” pane, Delve shows the latest documents and email attachments the user has modified at a given time. To access or export the actual documents and attachments, the user can go to the Office 365 service through which the document or attachment was made available; for example, Office.com, SharePoint Online, OneDrive for Business, or Exchange Online.
+-   **Recent documents and email attachments data** - These are the most recent documents and email attachments that the user has modified. When a user clicks **Me** \> **See all** in the “Get back to your recent documents and email attachments” pane, Delve shows the latest documents and email attachments the user has modified at a given time. To access or export the actual documents and attachments, the user can go to the Office 365 service through which the document or attachment was made available; for example, Office.com, SharePoint Online, OneDrive for Business, or Exchange Online.
 
--   **Documents from people around you data**. These are the documents that Delve has inferred are most relevant to the user at a given time. When a user clicks **Me** \> **See all** in the “Discover documents from people around you” pane, Delve shows the most relevant documents for a user at a given time. To access or export the actual documents, the user can go to the Office 365 service through which the document or attachment was made available (e.g. Office.com, SharePoint Online, OneDrive for Business, or Exchange Online).
+-   **Documents from people around you data** - These are the documents that Delve has inferred are most relevant to the user at a given time. When a user clicks **Me** \> **See all** in the “Discover documents from people around you” pane, Delve shows the most relevant documents for a user at a given time. To access or export the actual documents, the user can go to the Office 365 service through which the document or attachment was made available (e.g. Office.com, SharePoint Online, OneDrive for Business, or Exchange Online).
 
 #### Rectify
 
 Users can modify the following information in Delve:
 
--   **Profile information**. A user can click **Me** \> **Update profile** to update their information. Depending on your organization’s settings in the Global Address List, users may not be able to modify all their profile information, such as their name or job title.
+-   **Profile information** - A user can click **Me** \> **Update profile** to update their information. Depending on your organization’s settings in the Global Address List, users may not be able to modify all their profile information, such as their name or job title.
 
--   **Feature settings**. A user can click the gear icon in the upper-right corner in Delve, and then click **Feature settings** \> to change the desired settings.
+-   **Feature settings** - A user can click the gear icon in the upper-right corner in Delve, and then click **Feature settings** \> to change the desired settings.
 
 #### Restrict
 
@@ -1567,9 +1669,9 @@ To restrict processing in Delve for your organization, you can turn off the Offi
 
 Users can delete the following information in Delve:
 
--   **Profile information**. To delete profile information, a user can click **Me** \> **Update profile** and either delete free-form text. Depending on your organization’s settings in the Global Address List, users may not be able to delete all their profile information, such as their name or job title.
+-   **Profile information** - To delete profile information, a user can click **Me** \> **Update profile** and either delete free-form text. Depending on your organization’s settings in the Global Address List, users may not be able to delete all their profile information, such as their name or job title.
 
--   **Documents and email attachments**. To delete a document or attachment, users must go to the service where the document or attachment is stored (such as SharePoint Online, OneDrive for Business, or Exchange Online) and delete the document there.
+-   **Documents and email attachments** - To delete a document or attachment, users must go to the service where the document or attachment is stored (such as SharePoint Online, OneDrive for Business, or Exchange Online) and delete the document there.
 
 ### MyAnalytics
 
@@ -1620,8 +1722,11 @@ If a data subject would like to be removed from a Workplace Analytics report or 
 To remove the personal data of a data subject, an Office 365 global administrator can take the following steps: 
 
 1. Remove the Workplace Analytics license from the data subject.
+
 2. Delete the Azure Active Directory (AAD) entry for the data subject. (For more information, see [Delete a user](https://docs.microsoft.com/azure/active-directory/fundamentals/add-users-azure-active-directory#delete-a-user).)
+
 3. Contact support and have support open a ticket for a Data Subject Rights (DSR) user-delete request. In this ticket, identify the data subject by using their User Principal Name (UPN).
+
 4. Export a copy of the HR data from the company's HR system (see [Export data](https://docs.microsoft.com/workplace-analytics/setup/prepare-organizational-data#step-three--export-data)), remove the data subject's information from that HR data file, and then upload the edited HR data file in .csv format into Workplace Analytics (see [Upload organizational data](https://docs.microsoft.com/workplace-analytics/setup/upload-organizational-data)).
 
 ## Part 3: Responding to DSRs for system-generated Logs
@@ -1657,27 +1762,27 @@ After you create a new request, it will be listed on the **Data Log Export** pag
 
 The following summarizes accessing and exporting system-generated logs using the Data Log Export tool:
 
-  **How long does the Microsoft Data Log Export tool take to complete a request?**
+  - **How long does the Microsoft Data Log Export tool take to complete a request?**
  This can depend on several factors. In most cases it should complete in one or two days, but it can take up to 30 days.
 
-  **What format will the output be in?**
+  - **What format will the output be in?**
  The output will be structured machine-readable files such as XML, CSV, or JSON.
 
-**Who has access to Data Log Export tool to submit access requests for system-generated logs?**
+- **Who has access to Data Log Export tool to submit access requests for system-generated logs?**
    Office 365 global administrators will have access to the GDPR Log Manager utility.
 
-**What data does the Data Log Export tool return?**
+- **What data does the Data Log Export tool return?**
  The Data Log Export tool returns system generated logs that Microsoft stores. Exported data will span across various Microsoft services including Office 365, Azure and Dynamics.
 
-**How is data returned to the user?** 
+- **How is data returned to the user?** 
 Data will be exported to your organization's Azure storage location; it will be up to admins in your organization to determine how they will show/return this data to users.
 
-**What will data in system-generated logs look like?**
+- **What will data in system-generated logs look like?**
  Example of a system-generated log record in JSON format:
 
 
-```
-[{
+   ```
+   [{
             "DateTime": "2017-04-28T12:09:29-07:00",
 
              "AppName": "SharePoint",
@@ -1687,8 +1792,8 @@ Data will be exported to your organization's Azure storage location; it will be 
              "IP": "154.192.13.131",
 
              "DevicePlatform": "Windows 1.0.1607"
-}]
-```
+   }]
+   ```
 
 > [!NOTE]
 > Some features will not allow for the export or deletion of system-generated logs with personal information to maintain the integrity of such information for security and audit reasons.
@@ -1697,8 +1802,11 @@ Product and service usage data for some of Microsoft’s most often-used service
 
 #### National clouds
 A global IT admin will need to do the following to export system-generated log data in the following national clouds:
+
 - Office 365 Germany - [Go to the Microsoft Service Trust Portal for Germany](https://aka.ms/MicrosoftSTPGermany) and complete the steps outlined above.
+
 - Office 365 US Government - [Go to the Office 365 admin portal](https://portal.office365.us) and submit a request to Microsoft Support.
+
 - Office 365 operated by 21Vianet (China) - [Go to the Office 365 operated by 21Vianet admin portal](https://portal.partner.microsoftonline.cn/AdminPortal/Home#/homepage) and then go to **Commerce** > **Subscription** > **Privacy** > **GDPR** and enter the required information.
 
 ### Deleting system-generated logs
@@ -1716,7 +1824,9 @@ Deleting a user’s account will not remove system-generated logs for Yammer and
 A global IT admin will need to do the following to delete system-generated logs in the following national clouds:
 
 - Office 365 Germany - When the user account is permanently deleted, the system-generated logs will also be deleted. 
+
 - Office 365 US Government - Submit a request to Microsoft Support via the [Office 365 admin portal](http://portal.office365.us).
+
 - Office 365 operated by 21Vianet (China) - Submit a request to Microsoft Support via the Office 365 admin portal at this [URL](https://portal.partner.microsoftonline.cn/AdminPortal/Home#/homepage). Go to **Commerce** and then select **Subscription** -> **Privacy** -> **GDPR** and enter the required information.
 
 ## Part 4: Additional resources to assist you with DSRs
@@ -1733,8 +1843,11 @@ This guide is dedicated to the topic of how to find and act on personal data to 
 Parts 1-3 of this guide cover products and services for which Microsoft is a data processor to your organization, and thus DSR capability is made available to your tenant administrator. There are a variety of circumstances where your organization’s users may use their work or school account (also referred to as “Azure Active Directory ID” or “AAD”) to sign in to Microsoft products and services for which Microsoft is a data controller. For all such products and services, your users will need to initiate their own data subject requests directly to Microsoft and Microsoft will fulfill the requests directly to the user. Note that, by design, products and services involving storage of user-authored content enable users to access, export, rectify, and delete their user-authored content as part of the inherent functionality of the products. Scenarios where this may apply include the following:
 
 - **Optional connected online services** – Office 365 ProPlus makes certain optional connected online services available to the user. The list of such services and related user controls are listed [here](https://support.office.com/article/microsoft-s-other-connected-services-92c234f1-dc91-4dc1-925d-6c90fc3816d8). You can decide whether you would like to allow your end users to use these services. For more information, see [How admins can manage controller services in Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/manage-controller-services-office-365-proplus). To the extent that these optional services process personal data, Microsoft is a data controller for these services.
+
 - **User feedback** – If your users elect to provide feedback on Microsoft products and services, Microsoft is a data controller for such feedback to the extent it contains personal data. Microsoft will fulfill any data subject requests for feedback collected by Microsoft (including feedback managed by Microsoft subprocessors) except in cases where Microsoft has instructed users to not include personal data during the feedback collection process. Exceptions: If Microsoft has instructed users to not include personal data during the feedback collection process, Microsoft will rely on that instruction and will assume that no personal data has been provided. Users who have created a separate account with third-party feedback service providers will need to fulfill their DSR directly with those providers.
+
 - **Windows authenticated via work or school account** - If your organization has purchased Windows licenses, and your users authenticate to organization-provided Windows with their work or school account, Microsoft acts as a data controller. For more information, see the [Windows Data Subject Requests for the GDPR](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-windows).
+
 - **User-acquired products or services** - If you allow your users, acting in their individual capacity, to acquire Microsoft products or services that use AAD for authentication (for example, Office Add-Ons or applications available in a Microsoft Store), Microsoft may be a data controller. For any such Microsoft products or services, users will need to contact Microsoft directly to initiate a DSR.
 
 > [!IMPORTANT]
@@ -1750,8 +1863,11 @@ If your organization, or your users acting in their individual capacity, have ac
 ## Appendix A: Preparing for DSR investigations
 
 To help prepare your organization to undertake DSR investigations using Office 365 services, consider the following recommendations:
+
 - Use the DSR eDiscovery case tool in the Office 365 Security & Compliance Center to manage DSR investigations
+
 - Set up Compliance Boundaries to limit the scope of Content Searches
+
 - Use the Office 365 audit log search tool in DSR investigations
 
 ### Use the DSR case tool to manage DSR investigations
@@ -1759,15 +1875,25 @@ To help prepare your organization to undertake DSR investigations using Office 3
 We recommend that you use the DSR case tool in Security & Compliance Center to manage DSR investigations. By using the DSR case tool, you can:
 
 - Create a separate case for each DSR investigation.
+
 - Use the built-in to search for all content related to a specific data subject. When you create a new case and start the search, these content locations are searched:
-    - All mailboxes in your organization (including the mailboxes associated with all Microsoft Teams and Office 365 Groups)
+    
+   - All mailboxes in your organization (including the mailboxes associated with all Microsoft Teams and Office 365 Groups)
+    
     - All SharePoint Online sites and OneDrive for Business accounts in your organization
+    
     - All Microsoft Teams sites and Office 365 group sites in your organization
+    
     - All public folders in Exchange Online
+
 - Revise the default search query and re-run the search to narrow the search results.
+
 - Control who has access to the case by adding people as members of the case; only members can access the case and they’ll be able only see their cases in the list of cases on the DSR cases page in the Security & Compliance Center. Additionally, you can assign different permissions to different members of the same case. For example, you could allow some members to only view the case and the results of a Content Search and allow other members to create searches and export search results.
+
 - Create export jobs to export the search results in response to a DSR export request. You can export all content returned by the Content Search. Additionally, other Office 365 data related to a data subject will also be exported.
+
 - Create export jobs to export the search results in response to a DSR export request. You can export all content returned by the Content Search. Additionally, you can export system-generated logs for My Analytics and Office Roaming service.
+
 - Delete cases when the DSR investigation process is complete. This will remove all the content searches and export jobs associated with the case.
 
 To get started with using DSR cases, see [Manage GDPR data subject requests with the DSR case tool in the Office 365 Security & Compliance Center](https://support.office.com/article/manage-dsr-cases-in-the-office-365-security-compliance-center-ce9eb942-3589-42cb-88fd-1576ecb09c5c).
@@ -1783,24 +1909,25 @@ You can use Compliance Boundaries together with eDiscovery cases to limit the co
 
 Here’s a high-level overview of how to implement Compliance Boundaries (together with eDiscovery cases) for DSR investigations.
 
-1.  Determine the agencies in your organization that will be designated as a compliance boundary.
+1. Determine the agencies in your organization that will be designated as a compliance boundary.
 
-2.  Determine which user object attribute in Azure Active Directory will be used to define the compliance boundary. For example, you might choose the Country, CountryCode, or Department attribute, so that members of the admin role group that you create in the next step can only search the content locations of the users that have a specific value for that attribute. This is how you limit who can search for content in a specific agency.
+2. Determine which user object attribute in Azure Active Directory will be used to define the compliance boundary. For example, you might choose the Country, CountryCode, or Department attribute, so that members of the admin role group that you create in the next step can only search the content locations of the users that have a specific value for that attribute. This is how you limit who can search for content in a specific agency.
 
 > [!NOTE]
 > Currently, you must perform an additional step for OneDrive for Business and file a Microsoft Support request to have the attribute synchronized to OneDrive for Business accounts.
 
-4.  Create an admin role group in the Office 365 Security & Compliance Center for each compliance boundary. We recommend that you create these role groups by copying the built-in eDiscovery Manager role group and then removing any roles as necessary.
+4. Create an admin role group in the Office 365 Security & Compliance Center for each compliance boundary. We recommend that you create these role groups by copying the built-in eDiscovery Manager role group and then removing any roles as necessary.
 
-5.  Add members to each of the specific role groups as eDiscovery Mangers. Members will the people responsible for investigating and responding to DSRs, and will typically consist of IT admins, data privacy officers, compliance managers, and human resource representatives.
+5. Add members to each of the specific role groups as eDiscovery Mangers. Members will the people responsible for investigating and responding to DSRs, and will typically consist of IT admins, data privacy officers, compliance managers, and human resource representatives.
 
-6.  Create a search permissions filter for each compliance boundary so that the members of the corresponding admin role group can only search mailboxes and sites for users within that agency/compliance boundary. The search permissions filter will allow members of the corresponding role group to search only the content locations with user object attribute value that corresponds to the agency/compliance boundary.
+6. Create a search permissions filter for each compliance boundary so that the members of the corresponding admin role group can only search mailboxes and sites for users within that agency/compliance boundary. The search permissions filter will allow members of the corresponding role group to search only the content locations with user object attribute value that corresponds to the agency/compliance boundary.
 
 For step-by-step instructions, see [Set up compliance boundaries for eDiscovery investigations in Office 365](https://support.office.com/article/1b45c82f-26c8-44fb-9f3b-b45436fe2271).
 
 ### Use the Office 365 audit log search tool in DSR investigations
 
 IT admins can use the audit log search tool in the Security & Compliance Center to identity documents, files, and other Office 365 resources that users have created, accessed, changed, or deleted. Searching for this kind activity can be useful in DSR investigations. For example, in SharePoint Online and OneDrive for Business, auditing events are logged when users perform these activities:
+
 - Accessed a file
 - Modified a file
 - Moved a file
@@ -1815,10 +1942,11 @@ You can search the audit log for specific activities, types of activities, activ
 
 The following table lists the changes to the Office 365 DSR guide since its initial publication on May 25, 2018.
 
-
 |Date  |Section/App |Change  |
-|---------|---------|---------|
+|:---------|:---------|:---------|
 |9/18/2018     |   [Whiteboard](#whiteboard)      |Whiteboard Preview is no longer in preview and has been released to general availability. Therefore, the section on Whiteboard Preview was renamed to "Whiteboard for PC, Surface Hub, and other platforms"; procedures to access, export, and delete data were removed from this section and replaced with a link to the Whiteboard support article.|
 |11/08/2018     |    [Workplace Analytics](#workplace-analytics)     |Added step-by-step guidance to the Delete section about removing a data subject from Workplace Analytics and removing information about a data subject from a Workplace Analytics report.|
 |11/12/2018| All| Fixed broken bookmarks and broken links to external topics.|
-|1/9/2019|[StaffHub](#staffhub)|In the Delete section, updated the description of what happens when a user account is permanently deleted. 
+|1/9/2019|[StaffHub](#staffhub)|In the Delete section, updated the description of what happens when a user account is permanently deleted.|
+|5/8/2019| [Publisher](#publisher)|Added content about responding to DSRs for Publisher.|
+||||

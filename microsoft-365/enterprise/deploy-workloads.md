@@ -3,7 +3,7 @@ title: "Microsoft 365 Enterprise workloads and scenarios"
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 04/15/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority

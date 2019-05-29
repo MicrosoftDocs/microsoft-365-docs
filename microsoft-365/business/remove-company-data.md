@@ -3,7 +3,7 @@ title: "Remove company data from devices"
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -23,21 +23,23 @@ description: "Learn how to use Microsoft 365 Business to remove company data fro
 
 # Remove company data from devices
 
+![Banner that point to https://aka.ms/aboutM365preview.](media/m365admincenterchanging.png)
+
 ## Remove company data
 
 You can use Microsoft 365 Business to remove company data that your users have on their [devices](app-protection-settings-for-android-and-ios.md) or [Windows PCs](protection-settings-for-windows-10-devices.md) that are protected by Microsoft 365. **If you remove company data from a device, you cannot restore it later**. 
   
-1. Sign in to [Microsoft 365 Business](https://portal.office.com) with global admin credentials. 
+1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
     
-2. On the left nav, choose **Devices** \> **Policies** \> **Manage**.
+2. On the left nav, choose **Devices**  \> **Manage**.
   
 3. On the **Manage** page, choose or search for a user who's data you want to remove, and choose the name. 
     
-4. On the next pane, select the device or devices from the **Managed devices** list to remove data from and choose **Next**. 
+4. On the next pane, select the device or devices from the **Devices** list and on the device pane that opens you can choose to reset the device to factory settings, or remove company data depending on the device type. 
     
-    ![On the remove comapany data pane, select the device from which you want to remove the data.](media/f3725ff9-ebdb-4c13-9523-b2df362640cf.png)
+    ![On the remove comapany data pane, select the device from which you want to remove the data.](media/resetorremove.png)
   
-5. On the **Are you sure you want to remove company data on the devices** pane, choose **Remove** \> **Close**.
+5. On the confirmation pane, choose **Confirm** \> **Close**.
     
 
 

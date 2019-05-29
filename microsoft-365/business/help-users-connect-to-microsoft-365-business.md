@@ -3,7 +3,7 @@ title: "Help users connect to Microsoft 365 Business"
 ms.author: sirkkuw
 author: sirkkuw
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 f1_keywords:
 - 'O365E_BCSSetupComplete'
