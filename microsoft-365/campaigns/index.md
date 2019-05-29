@@ -34,7 +34,7 @@ It's a recommended secure configuration that includes bMicrosoft 365 Business an
 - Protect your work files on all of your iOS, Android, and Windows 10 devices with enterprise-grade security that is simple to manage 
 - Apply extra protection for user accounts and identity with Azure Active Directory P1
 
-![Microsoft 365 Business and Azure Active Directory P1 protect your productivity tools, collaboration tools, file storage, email, devices, and identity](../images/campaigns/M365-WhatIsIt-SecurityFocus.png)
+![Microsoft 365 Business and Azure Active Directory P1 protect your productivity tools, collaboration tools, file storage, email, devices, and identity](media/M365-WhatIsIt-SecurityFocus.png)
 
 While some organizations qualify for nonprofit pricing for Microsoft 365 Business and Azure Active Directory P1, any organization with both these plans can take advantage of this guidance to configure increased security and learn how to collaborate securely.
 
@@ -75,7 +75,7 @@ After you set up your secure Microsoft 365 environment, you can use the followin
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="../images/campaigns/sm-m365-democracy-teams-collab.png" alt="a SharePoint communications site" />
+                            <img src="media/sm-m365-democracy-teams-collab.png" alt="a SharePoint communications site" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -93,7 +93,7 @@ After you set up your secure Microsoft 365 environment, you can use the followin
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="../images/campaigns/m365-democracy-teams-meetings.png" alt="an online meeting" />
+                            <img src="media/m365-democracy-teams-meetings.png" alt="an online meeting" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -111,7 +111,7 @@ After you set up your secure Microsoft 365 environment, you can use the followin
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="../images/campaigns/sm-m365-campaign-email-encrypt.png" alt="Encrypted and labeled email" />
+                            <img src="media/sm-m365-campaign-email-encrypt.png" alt="Encrypted and labeled email" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -129,7 +129,7 @@ After you set up your secure Microsoft 365 environment, you can use the followin
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="../images/campaigns/sm-m365-democracy-comms-site.png" alt="a SharePoint communications site" />
+                            <img src="media/sm-m365-democracy-comms-site.png" alt="a SharePoint communications site" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -147,7 +147,7 @@ After you set up your secure Microsoft 365 environment, you can use the followin
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="../images/campaigns/m365-democracy-teams-sharefiles.png" alt="sharing a file in Microsoft Teams" />
+                            <img src="media/m365-democracy-teams-sharefiles.png" alt="sharing a file in Microsoft Teams" />
                         </div>
                     </div>
                     <div class="cardText">
