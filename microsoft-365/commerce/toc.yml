@@ -1,0 +1,41 @@
+- name: Manage commerce purchases and billing
+  href: index.md
+  expanded: true
+  items: 
+    - name: Sign up and get started
+      href: /microsoft-store/sign-up-microsoft-store-for-business-overview?toc=/microsoft-365/store-for-business/commercial-management/toc.json&bc=/microsoft-365/store-for-business/commercial-management/breadcrumb/toc.json
+    - name: Products and services
+      items: 
+        - name: Buy licenses
+          href: /office365/admin/subscriptions-and-billing/buy-licenses?view=o365-worldwide&toc=/microsoft-365/store-for-business/commercial-management/toc.json&bc=/microsoft-365/store-for-business/commercial-management/breadcrumb/toc.json
+        - name: Assign licenses
+          href: /office365/admin/subscriptions-and-billing/assign-licenses-to-users?view=o365-worldwide&toc=/microsoft-365/store-for-business/commercial-management/toc.json&bc=/microsoft-365/store-for-business/commercial-management/breadcrumb/toc.json
+        - name: Remove licenses from subscription
+          href: /office365/admin/subscriptions-and-billing/remove-licenses-from-subscription?view=o365-worldwide&toc=/microsoft-365/store-for-business/commercial-management/toc.json&bc=/microsoft-365/store-for-business/commercial-management/breadcrumb/toc.json
+        - name: Remove licenses from users
+          href: /office365/admin/subscriptions-and-billing/remove-licenses-from-users?view=o365-worldwide&toc=/microsoft-365/store-for-business/commercial-management/toc.json&bc=/microsoft-365/store-for-business/commercial-management/breadcrumb/toc.json)
+        - name: Upgrade subscriptions
+          href: /office365/admin/subscriptions-and-billing/upgrade-to-different-plan?view=o365-worldwide&toc=/microsoft-365/store-for-business/commercial-management/toc.json&bc=/microsoft-365/store-for-business/commercial-management/breadcrumb/toc.json
+    - name: Bills and payments
+      items: 
+        - name: Customize my billing structure
+          href:  /microsoft-store/billing-profile?toc=/microsoft-365/store-for-business/commercial-management/toc.json&bc=/microsoft-365/store-for-business/commercial-management/breadcrumb/toc.json
+        - name: Understand my bill
+          href:  /microsoft-store/billing-understand-your-invoice-msfb?toc=/microsoft-365/store-for-business/commercial-management/toc.json&bc=/microsoft-365/store-for-business/commercial-management/breadcrumb/toc.json
+        - name: Pay my bill
+        - name: Manage payment methods
+          href:  /microsoft-store/payment-methods?toc=/microsoft-365/store-for-business/commercial-management/toc.json&bc=/microsoft-365/store-for-business/commercial-management/breadcrumb/toc.json
+        - name: Manage billing profiles
+          href:  /microsoft-store/billing-profile?toc=/microsoft-365/store-for-business/commercial-management/toc.json&bc=/microsoft-365/store-for-business/commercial-management/breadcrumb/toc.json
+        - name: Order history
+          href:  /microsoft-store/manage-orders-microsoft-store-for-business?toc=/microsoft-365/store-for-business/commercial-management/toc.json&bc=/microsoft-365/store-for-business/commercial-management/breadcrumb/toc.json
+    - name: Billing account
+      items: 
+        - name: Manage billing account info
+          href:  /microsoft-store/update-microsoft-store-for-business-account-settings?toc=/microsoft-365/store-for-business/commercial-management/toc.json&bc=/microsoft-365/store-for-business/commercial-management/breadcrumb/toc.json
+        - name: Associate a tenant with my billing account
+          href:  /microsoft-store/manage-mpsa-software-microsoft-store-for-business?toc=/microsoft-365/store-for-business/commercial-management/toc.json&bc=/microsoft-365/store-for-business/commercial-management/breadcrumb/toc.json
+        - name: Billing and purchasing roles
+    - name: Manage relationships with my partners
+      href:  /microsoft-store/work-with-partner-microsoft-store-business?toc=/microsoft-365/store-for-business/commercial-management/toc.json&bc=/microsoft-365/store-for-business/commercial-management/breadcrumb/toc.json
+    - name: Proposals
