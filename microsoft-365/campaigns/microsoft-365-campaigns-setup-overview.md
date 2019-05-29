@@ -30,13 +30,13 @@ This article describes the process of setting up Microsoft 365 for campaigns.
 ## Overview of subscription setup and adding additional security protection
 The following diagram describes how admins set up Microsoft 365 for campaigns.
 
-![Setps to set up Microsoft 365 for campaigns](../images/campaigns/m365-democracy-setup-steps.png)
+![Setps to set up Microsoft 365 for campaigns](media/m365-democracy-setup-steps.png)
 
  ## Overview of device setup 
  
 Users will need to take a few minutes to setup devices to work with this environment. For your key users (users who are the highest value targets for hackers), you can set up and pre-configure new devices, getting them ready for productive use as soon as a user signs in with their Microsoft 365 Business credentials. 
 
-![User device setup process](../images/campaigns/m365-democracy-user-device-setup.png)
+![User device setup process](media/m365-democracy-user-device-setup.png)
   
 
 

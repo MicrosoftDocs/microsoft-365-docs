@@ -35,7 +35,7 @@ Create the following teams so you can communicate and collaborate securely:
 2. **A general Campaign team** - this is for everyone to use for day to day communications and work. Individuals, groups, or committees can set up channels in this team to do their work. For example, the event planning people can set up a channel to chat and coordinate logistics for campaign events.
 3. **A partners team** - one where you can coordinate with your vendors, partners, or volunteers without allowing them into anything sensitive.
 
-![Diagram of a Microsoft Teams window with three separate teams to allow for secure communication and collaboration](../images/campaigns/m365-democracy-teams-collab.png)
+![Diagram of a Microsoft Teams window with three separate teams to allow for secure communication and collaboration](media/m365-democracy-teams-collab.png)
 
 When you create a team, here's what else gets created:
 
