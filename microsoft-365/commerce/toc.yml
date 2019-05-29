@@ -25,7 +25,6 @@
           href: /microsoft-store/billing-profile?context=/microsoft-365/commerce/context/context-commerce
         - name: Understand my bill
           href: /microsoft-store/billing-understand-your-invoice-msfb?context=/microsoft-365/commerce/context/context-commerce
-        - name: Pay my bill
         - name: Manage payment methods
           href: /microsoft-store/payment-methods?context=/microsoft-365/commerce/context/context-commerce
         - name: Manage billing profiles
@@ -38,6 +37,5 @@
           href: /microsoft-store/update-microsoft-store-for-business-account-settings?context=/microsoft-365/commerce/context/context-commerce
         - name: Associate a tenant with my billing account
           href: /microsoft-store/manage-mpsa-software-microsoft-store-for-business?context=/microsoft-365/commerce/context/context-commerce
-        - name: Billing and purchasing roles
     - name: Manage relationships with my partners
       href: /microsoft-store/work-with-partner-microsoft-store-business?context=/microsoft-365/commerce/context/context-commerce
