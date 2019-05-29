@@ -27,6 +27,4 @@ For more information about GDPR compliance Microsoft data protection, see [Compl
 
 ## Learn more
 
-[Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
-
-
+- [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
