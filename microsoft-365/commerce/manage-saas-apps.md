@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 ms.date: 05/31/2019
 ---
 
-# Understand your Microsoft Customer Agreement invoice
+# Manage third-party app subscriptions for your organization
 
 You can manage licenses and billing for 3rd-party apps in Microsoft 365 admin center. Updated features include enhanced subscription management, improved access to billing information, and improved flexibility for managing bills. Subscription management is based on Microsoft’s updated commerce platform. This applies to software-as-a-service apps that customers purchase directly, or from 3rd-party provider, and are purchased with the Microsoft Customer Agreement.
 
