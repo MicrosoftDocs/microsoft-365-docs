@@ -5,9 +5,10 @@ ms.prod:
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: 
+search.appverid: MET150 
 author: trudyha
 ms.author: TrudyHa
-ms.topic: conceptual
+ms.topic: article
 ms.localizationpriority: medium
 ms.date: 05/31/2019
 ---
