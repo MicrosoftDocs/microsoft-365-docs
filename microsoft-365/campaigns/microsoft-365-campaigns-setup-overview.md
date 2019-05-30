@@ -42,7 +42,7 @@ Users will need to take a few minutes to setup devices to work with this environ
 
 ![User device setup process](media/m365-democracy-user-device-setup.png)
   
-To set up user devices, each user [sets up their mobile devices](business/set-up-mobile-devices.md?toc=%2Fmicrosoft-365%2Fcampaigns%2Ftoc.json). For unmanaged devices, users set up their [PCs and Macs](m365-campaigns-protect-pcs-macs.md). For key staff, we recommend you use [managed devices](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json) for even better protection. For all devices, you'll want to set up [multifactor authentication](m365-campaigns-multifactor-authenication.md). 
+To set up user devices, each user [sets up their mobile devices](../business/set-up-mobile-devices.md?toc=%2Fmicrosoft-365%2Fcampaigns%2Ftoc.json). For unmanaged devices, users set up their [PCs and Macs](m365-campaigns-protect-pcs-macs.md). For key staff, we recommend you use [managed devices](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json) for even better protection. For all devices, you'll want to set up [multifactor authentication](m365-campaigns-multifactor-authenication.md). 
 
 All users should learn how to protect themselves and your campaign by learning about [phishing and other attacks](m365-campaigns-phishing-and-attacks.md). This [infographic](m365-campaigns-protect-campaign-infographic.md) can also help your users understand how to help protect your campaign from online threats.
 
