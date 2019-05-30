@@ -1,9 +1,11 @@
-# [Microsoft 365 for Campaigns](index.md)
+# Microsoft 365 for Campaigns
+## [Microsoft 365 for Campaigns](index.md)
 ## [What's included?](microsoft-365-campaigns-whats-included.md)
 ## [Get Microsoft 365 for campaigns](get-microsoft-365-campaigns.md)
 ## [How Microsoft 365 affects users](m365-campaigns-users.md)
 
-# [Overview](microsoft-365-campaigns-setup-overview.md)
+# Setup
+## [Setup overview](microsoft-365-campaigns-setup-overview.md)
 ## [Sign up](../business/sign-up.md?toc=/microsoft-365/campaigns/toc.json)
 ## [Set up Microsoft 365](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json)
 
