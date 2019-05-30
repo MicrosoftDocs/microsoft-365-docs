@@ -12,16 +12,16 @@ ms.topic: conceptual
 ms.localizationpriority: medium
 ---
 
-# Manage commercial commerce in Microsoft 365 admin center
+# Manage commercial purchases in Microsoft 365 admin center
 
 ## In this section
 
 | Topic | Description |
 | ----- | ----------- |
-| [Manage third-party apps](manage-saas-apps.md) | Admins can manage third-party app subscriptions for their organization. |
-| [Buy licenses](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/buy-licenses?view=o365-worldwide) | Admins can buy Office 365 licenses for their organization. |
-| [Assign licenses](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users?view=o365-worldwide) | Admins can assign Office 365 licenses for their organization. |
-| [Remove licenses from subscription](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/remove-licenses-from-subscription?view=o365-worldwide) | Admins can remove licenses from Office 365 subscriptions. |
+| [Manage third-party apps](manage-saas-apps.md) | Admins can manage third-party app subscriptions for your organization. |
+| [Buy licenses](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/buy-licenses?view=o365-worldwide) | Buy Office 365 licenses for your organization. |
+| [Assign licenses](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users?view=o365-worldwide) | Assign Office 365 licenses for your organization. |
+| [Remove licenses from subscription](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/remove-licenses-from-subscription?view=o365-worldwide) | Remove licenses from Office 365 subscriptions. |
 | [Understand your invoice](https://docs.microsoft.com/microsoft-store/billing-understand-your-invoice-msfb) | Information about invoices for items purchased with Microsoft Customer Agreement. |
 | [Manage payment methods](https://docs.microsoft.com/microsoft-store/payment-methods) | Add, edit, or delete payment methods. |
 | [Manage billing profiles](https://docs.microsoft.com/microsoft-store/billing-profile) | Customize how you are billed for different items on your invoice.  |
