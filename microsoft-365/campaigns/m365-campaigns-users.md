@@ -35,7 +35,9 @@ All users should be aware of and use these email practices to help keep their em
 - Verify legitimate emails and look for safety tips from ATP Advanced Phishing Protection.
 - Open only safe links and attachments, as verified by ATP Safe Links and ATP Safe Attachments.
 
-Learn more about [phishing and other attacks](m365-campaigns-phishing-and-attacks.md). Help your users learn how they can help protect your campaign by reading and sharing this [infographic](m365-campaigns-protect-campaign-infographic.md).
+Learn more about [phishing and other attacks](m365-campaigns-phishing-and-attacks.md). 
+
+Download an [infographic](m365-campaigns-protect-campaign-infographic.md) with tips for you and the members of your campaign team.
 
 ## Set up iPhones and Android devices
 All users you add to your environment will need to take a few minutes to [setup iPhones and Android devices](../business/set-up-mobile-devices.md?toc=%2Fmicrosoft-365%2Fcampaigns%2Ftoc.json) to work securely:

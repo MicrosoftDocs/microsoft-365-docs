@@ -27,7 +27,6 @@
 ## [Share files and videos](share-files-and-videos.md)
 ## [Send encrypted email](send-encrypted-email.md)
 ## [Create a Communication site for your organization](create-communications-site.md)
-## [Protect your campaign: Infographic](m365-campaigns-protect-campaign-infographic.md)
 
 # Manage
 ## [Add users](../business/add-users-m365b.md?toc=/microsoft-365/campaigns/toc.json)

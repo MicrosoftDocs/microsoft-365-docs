@@ -31,6 +31,7 @@ Microsoft 365 includes a lot of protections to guard against attacks, but there 
 - **Spoofing** Scammers can also use a technique called spoofing to make it appear as if you've received an email from yourself. 
 - **Malware** is malicious software that can be installed on your computer - usually installed after you've clicked a link or opened a document from an email. There are various types of malware (for example, ransomware, when your computer is taken over), but you don't want to have any of them. 
 
+
 ## Best practices
 
 **Reduce spam mail**
@@ -55,6 +56,15 @@ Read about five common types of scams in [Deal with abuse, phishing, or spoofing
 **Make sure your emails look legitimate to others**
 
 Help your customers trust your communications - add a digital signature to prove that it's coming from you. See [Secure messages by using a digital signature](https://support.office.com/en-us/article/secure-messages-by-using-a-digital-signature-549ca2f1-a68f-4366-85fa-b3f4b5856fc6).
+
+## Help protect your campaign from online threats
+
+Download this infographic with tips for you and the members of your campaign team:
+
+[![Image for help protect your campaign info graphic](media/M365-Campaigns-WhatCanUsersDoToSecure-358x201.png)](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf)
+
+[PDF](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf) | [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/live/m365-democracy/microsoft-365/campaigns/downloads/M365CampaignsWhatCanUsersDoToSecure.pptx)
+
  
 
 ## Set it up
