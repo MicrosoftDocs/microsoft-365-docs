@@ -1,0 +1,37 @@
+- name: Manage commerce purchases and billing
+  href: index.md
+  expanded: true
+  items:
+    - name: Products and services
+      expanded: true
+      items: 
+        - name: Manage third-party apps
+          href: manage-saas-apps.md
+        - name: Buy licenses
+          href: /office365/admin/subscriptions-and-billing/buy-licenses?view=o365-worldwide&context=/microsoft-365/commerce/context/context-commerce
+        - name: Assign licenses
+          href: /office365/admin/subscriptions-and-billing/assign-licenses-to-users?view=o365-worldwide&context=/microsoft-365/commerce/context/context-commerce
+        - name: Remove licenses from subscription
+          href: /office365/admin/subscriptions-and-billing/remove-licenses-from-subscription?view=o365-worldwide&context=/microsoft-365/commerce/context/context-commerce
+        - name: Remove licenses from users
+          href: /office365/admin/subscriptions-and-billing/remove-licenses-from-users?view=o365-worldwide&context=/microsoft-365/commerce/context/context-commerce
+        - name: Upgrade subscriptions
+          href: /office365/admin/subscriptions-and-billing/upgrade-to-different-plan?view=o365-worldwide&context=/microsoft-365/commerce/context/context-commerce
+    - name: Bills and payments
+      items: 
+        - name: Understand my invoice
+          href: /microsoft-store/billing-understand-your-invoice-msfb?context=/microsoft-365/commerce/context/context-commerce
+        - name: Manage payment methods
+          href: /microsoft-store/payment-methods?context=/microsoft-365/commerce/context/context-commerce
+        - name: Manage billing profiles
+          href: /microsoft-store/billing-profile?context=/microsoft-365/commerce/context/context-commerce
+        - name: Order history
+          href: /microsoft-store/manage-orders-microsoft-store-for-business?context=/microsoft-365/commerce/context/context-commerce
+    - name: Billing account
+      items: 
+        - name: Manage billing account info
+          href: /microsoft-store/update-microsoft-store-for-business-account-settings?context=/microsoft-365/commerce/context/context-commerce
+        - name: Associate a tenant with my billing account
+          href: /microsoft-store/manage-mpsa-software-microsoft-store-for-business?context=/microsoft-365/commerce/context/context-commerce
+    - name: Manage relationships with my partners
+      href: /microsoft-store/work-with-partner-microsoft-store-business?context=/microsoft-365/commerce/context/context-commerce
