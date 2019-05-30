@@ -19,9 +19,7 @@
           href: /office365/admin/subscriptions-and-billing/upgrade-to-different-plan?view=o365-worldwide&context=/microsoft-365/commerce/context/context-commerce
     - name: Bills and payments
       items: 
-        - name: Customize my billing structure
-          href: /microsoft-store/billing-profile?context=/microsoft-365/commerce/context/context-commerce
-        - name: Understand my bill
+        - name: Understand my invoice
           href: /microsoft-store/billing-understand-your-invoice-msfb?context=/microsoft-365/commerce/context/context-commerce
         - name: Manage payment methods
           href: /microsoft-store/payment-methods?context=/microsoft-365/commerce/context/context-commerce
