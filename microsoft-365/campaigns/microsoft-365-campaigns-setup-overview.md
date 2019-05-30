@@ -30,7 +30,11 @@ This article describes the process of setting up Microsoft 365 for campaigns.
 ## Overview of subscription setup and adding additional security protection
 The following diagram describes how admins set up Microsoft 365 for campaigns.
 
-![Setps to set up Microsoft 365 for campaigns](media/m365-democracy-setup-steps.png)
+![Steps to set up Microsoft 365 for campaigns](media/m365-democracy-setup-process.png)
+
+First you get started by [signing up for Microsoft 365 for Campaigns](../business/sign-up?toc=/microsoft-365/campaigns/toc.json) and then [running the setup wizard](../business/set-up?toc=/microsoft-365/campaigns/toc.json) to configure the core settings.
+Then you bump up security protection by: [protecting admin accounts](m365-campaigns-protect-admin-accounts), [increasing threat protection](m365-campaigns-increase-protection), and setting up [conditional access policies](m365-campaigns-conditional-access) and additional protection for [Windows 10 devices](../business/set-up-windows-devices?toc=/microsoft-365/campaigns/toc.json).
+
 
  ## Overview of device setup 
  
@@ -38,7 +42,9 @@ Users will need to take a few minutes to setup devices to work with this environ
 
 ![User device setup process](media/m365-democracy-user-device-setup.png)
   
+To set up user devices, each user [sets up their mobile devices](business/set-up-mobile-devices?toc=%2Fmicrosoft-365%2Fcampaigns%2Ftoc.json). For unmanaged devices, users set up their [PCs and Macs](m365-campaigns-protect-pcs-macs). For key staff, we recommend you use m[anaged devices](../business/set-up-windows-devices?toc=/microsoft-365/campaigns/toc.json) for even better protection. For all devices, you'll want to set up [multifactor authentication](m365-campaigns-multifactor-authenication). 
 
+All users should learn how to protect themselves and your campaign by learning about [phishing and other attacks](m365-campaigns-phishing-and-attacks). This [infographic](m365-campaigns-protect-campaign-infographic) can also help your users understand how to help protect your campaign from online threats.
 
 ## Contact support
 
