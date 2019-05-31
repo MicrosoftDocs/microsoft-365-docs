@@ -93,7 +93,6 @@ description: Learn how to plan, deploy, and use Microsoft Office 365, Windows 10
                                             </div>
                                             <div class="cardText">
                                                 <h3>Protect business data and devices</h3>
-                                                 <P><a href="https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data"target="_blank">Top 10 ways to secure Microsoft 365 Business</a></p>
                                                 <P><a href="security-features.md" target="_blank">Learn more about security features</a></p>
                                                 <P><a href="remove-company-data.md" target="_blank">Remove data from devices</a></p>
                                                 <P><a href="reset-devices-to-factory-settings.md" target="_blank">Reset devices</a></p>
