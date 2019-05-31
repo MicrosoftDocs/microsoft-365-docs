@@ -15,9 +15,9 @@
 ## User device setup
 ### [Set up mobile devices](set-up-mobile-devices.md)
 ### [Set up Windows devices](set-up-windows-devices.md)
-## [Secure](security-features.md)
-### [Secure your business](/Office365/Admin/security-and-compliance/secure-your-business-data?toc=/microsoft-365/business/toc.json&bc=/microsoft-365/business/breadcrumb/toc.json)
-### [Set up advanced security features](set-up-advanced-security.md)
+## [Secure your business](security-features.md)
+### [Increase threat protection](increase-threat-protection.md)
+### [Set up compliance features](set-up-compliance.md)
 ## Manage Users
 ### [Add users](add-users-m365b.md)
 ### [Remove an employee](/Office365/Admin/add-users/remove-former-employee?toc=/microsoft-365/business/toc.json&bc=/microsoft-365/business/breadcrumb/toc.json)
