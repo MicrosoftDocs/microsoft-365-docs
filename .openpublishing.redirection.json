@@ -173,6 +173,11 @@
         "source_path": "microsoft-365/enterprise/identity-group-based-licensing.md",
         "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/identity-self-service-group-management",
         "redirect_document_id": false
+      },
+      {
+        "source_path": "microsoft-365/business/set-up-advanced-security.md",
+        "redirect_url": "https://docs.microsoft.com/microsoft-365/business/increase-threat-protection",
+        "redirect_document_id": true
       }
     ]
 }
