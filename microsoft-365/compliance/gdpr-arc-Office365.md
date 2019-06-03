@@ -14,17 +14,19 @@ ms.collection: GDPR
 # Accountability Readiness Checklist for Microsoft Office 365
 
 ## 1. Introduction
+
 This accountability readiness checklist provides a convenient way to access information you may need to support the GDPR when using Microsoft Office 365.
 
 You can manage the items in this checklist with [Compliance Manager](https://servicetrust.microsoft.com/ComplianceManager) by referencing the Control ID and Control Title under *Customer Managed Controls* in the GDPR tile.
 
 In addition, items in this checklist under *5.* *Data Protection & Security* provide references to controls listed under Microsoft Managed Controls in the GDPR tile in [Compliance Manager](https://servicetrust.microsoft.com/ComplianceManager). Reviewing the Microsoft Implementation Details for these controls provide additional explanation of Microsoft’s approach to fulfilling the customer considerations in the checklist item.
 
-The checklist and Compliance Manager are organized using the titles and reference number (in parentheses for each checklist topic) of a set of privacy and security controls for personal data processors drawn from *ISO/IEC CD 27552 Information technology -- Security techniques -- Enhancement to ISO/IEC 27001 for privacy management – Requirements. *
+The checklist and Compliance Manager are organized using the titles and reference number (in parentheses for each checklist topic) of a set of privacy and security controls for personal data processors drawn from:
 
-This control structure is also used to organize the presentation of the internal controls that Microsoft Office 365 implements to support GDPR, which you can [download](https://servicetrust.microsoft.com/ViewPage/TrustDocuments).
+- [ISO/IEC CD 27552](https://shop.bsigroup.com/ProductDetail?pid=000000000030351735) security techniques requirements.
+- [ISO/IEC 27001](https://shop.bsigroup.com/ProductDetail?pid=000000000030347472) for privacy management requirements.
 
-*ISO/IEC CD 27552*, a standard under current development, will enhance *ISO/IEC 27001* requirements. It covers process for protecting the capture, accountability, availability, integrity and confidentiality of data. To purchase a copy of the complete draft ISO standard, please visit *https://shop.bsigroup.com/ProductDetail?pid=000000000030372571*.
+This control structure is also used to organize the presentation of the internal controls that Microsoft Office 365 implements to support GDPR, which you can download from the [Service Trust Center](https://servicetrust.microsoft.com/ViewPage/TrustDocuments).
 
 ## 2. Conditions for collection and processing
 
