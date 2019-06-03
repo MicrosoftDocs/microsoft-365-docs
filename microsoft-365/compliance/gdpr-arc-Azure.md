@@ -16,15 +16,16 @@ ms.collection: GDPR
 
 ## 1. Introduction
 
-This Accountability Readiness Checklist provides a convenient way to access information you may need to support the General Data Protection Regulation (GDPR) when using Microsoft Azure. The checklist is organized using the titles and reference number (in parentheses for each checklist topic) of a set of privacy and security controls for personal data processors drawn from ISO/IEC CD 27552 Information technology — Security techniques — Enhancement to ISO/IEC 27001 for privacy management — Requirements. 
+This Accountability Readiness Checklist provides a convenient way to access information you may need to support the General Data Protection Regulation (GDPR) when using Microsoft Azure. The checklist is organized using the titles and reference number (in parentheses for each checklist topic) of a set of privacy and security controls for personal data processors drawn from:
 
-You can manage the items in this checklist with the Compliance Manager [16] by referencing the Control ID and Control Title under Customer Managed Controls in the GDPR tile. This control structure is also used to organize the presentation of the internal controls that Microsoft Azure implements to support GDPR, which you can download here https://servicetrust.microsoft.com/ViewPage/TrustDocuments.
+- [ISO/IEC CD 27552](https://shop.bsigroup.com/ProductDetail?pid=000000000030351735) security techniques requirements.
+- [ISO/IEC 27001](https://shop.bsigroup.com/ProductDetail?pid=000000000030347472) for privacy management requirements.
+
+You can manage the items in this checklist with the Compliance Manager [16] by referencing the Control ID and Control Title under Customer Managed Controls in the GDPR tile. This control structure is also used to organize the presentation of the internal controls that Microsoft Azure implements to support GDPR, which you can download from the [Service Trust Center](https://servicetrust.microsoft.com/ViewPage/TrustDocuments).
 
 This control structure is also used to organize the presentation of the [internal controls that Microsoft Dynamics 365 implements to support GDPR](https://aka.ms/gdprcontrols).
 
-To purchase a copy of the complete draft ISO standard, please visit https://shop.bsigroup.com/ProductDetail?pid=000000000030379002 
-
-For more GDPR-related documentation, visit https://aka.ms/gdprgetstarted.
+For more GDPR-related documentation, visit [https://aka.ms/gdprgetstarted](https://aka.ms/gdprgetstarted).
 
 ## 2. Conditions for collection and processing
 
