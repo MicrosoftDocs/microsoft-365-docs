@@ -23,7 +23,7 @@ If needed, [Step 2](../identity-designate-protect-admin-accounts.md#identity-glo
 
 Use these steps to verify that you've protected your global administrator accounts:
 
-1. Run the following Azure AD V2 command at the PowerShell command prompt. You should see only the list of dedicated global administrator accounts.
+1. Run the following Azure Active Directory PowerShell for Graph command at the PowerShell command prompt. You should see only the list of dedicated global administrator accounts.
    ```
    Get-AzureADDirectoryRole | where { $_.DisplayName -eq "Company Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
    ```

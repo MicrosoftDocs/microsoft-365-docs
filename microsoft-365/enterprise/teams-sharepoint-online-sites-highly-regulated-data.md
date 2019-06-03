@@ -3,7 +3,7 @@ title: "Microsoft Teams and SharePoint Online sites for highly regulated data"
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 04/03/2019
+ms.date: 06/03/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -25,7 +25,7 @@ Microsoft 365 Enterprise includes a full suite of cloud-based services so that y
 - Subject to regional regulations.
 - The most valuable data for your organization, such as trade secrets, financial or human resources information, and organization strategy.
 
-A Microsoft 365 Enterprise cloud-based solution that meets this business need requires that you:
+A Microsoft 365 Enterprise cloud-based scenario that meets this business need requires that you:
 
 - Store digital assets (documents, slide decks, spreadsheets, etc.) in a SharePoint Online team site or in the **Files** tab of a Microsoft Teams team.
 - Lock down the site or team to prevent:
@@ -37,7 +37,7 @@ A Microsoft 365 Enterprise cloud-based solution that meets this business need re
 - Encrypt the most sensitive digital assets of the site or team.
 - Add permissions to the most sensitive digital assets so that if even if they get shared outside of the site, opening the asset still requires the valid credentials of a user account that has permission.
 
-The following table maps the requirements of this solution to a feature of Microsoft 365 Enterprise.
+The following table maps the requirements of this scenario to a feature of Microsoft 365 Enterprise.
 
 |||
 |:-------|:-----|
@@ -50,7 +50,11 @@ The following table maps the requirements of this solution to a feature of Micro
 | Add permissions to the digital assets of the site | Azure Information Protection sub-labels in EMS |
 |||
 
-This solution requires that you have already deployed:
+Here is the configuration for a SharePoint Online site.
+
+![The Microsoft Teams and SharePoint Online sites for highly regulated data scenario](./media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration.png)
+
+This scenario requires that you have already deployed:
 
 - The [Identity](identity-infrastructure.md) phase and steps 1 and 2 of the [Information protection](infoprotect-infrastructure.md) phase of the foundation infrastructure. 
 - For highly regulated data in SharePoint Online team sites, [SharePoint Online](sharepoint-online-onedrive-workload.md).
@@ -60,9 +64,13 @@ The following phases step you through the design, configuration, and driving ado
 
 To see how the Contoso Corporation, a fictional but representative multi-national organization, designed a SharePoint Online site for its research teams, see this [example configuration](contoso-sharepoint-online-site-for-highly-confidential-assets.md).
 
->[!Note]
->A team for highly regulated data requires that you first create a SharePoint Online team site for highly regulated data. You then create a new team that uses the Office 365 group of the SharePoint Online team site. See Phase 2, Step 4 for more information.
->
+
+A team for highly regulated data requires that you first create a SharePoint Online team site for highly regulated data. You then create a new team that uses the Office 365 group of the SharePoint Online team site. See Phase 2, Step 4 for more information.
+
+Here is the configuration for a team.
+
+![The Microsoft Teams and SharePoint Online sites for highly regulated data scenario](./media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration-team.png)
+
 
 ## Identity and device access prerequisites
 
