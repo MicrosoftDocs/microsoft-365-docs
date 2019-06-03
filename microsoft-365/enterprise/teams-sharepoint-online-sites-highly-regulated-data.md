@@ -3,7 +3,7 @@ title: "Microsoft Teams and SharePoint Online sites for highly regulated data"
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 04/03/2019
+ms.date: 06/03/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -50,7 +50,7 @@ The following table maps the requirements of this scenario to a feature of Micro
 | Add permissions to the digital assets of the site | Azure Information Protection sub-labels in EMS |
 |||
 
-Here is the configuration.
+Here is the configuration for a SharePoint Online site.
 
 ![The Microsoft Teams and SharePoint Online sites for highly regulated data scenario](./media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration.png)
 
@@ -64,9 +64,13 @@ The following phases step you through the design, configuration, and driving ado
 
 To see how the Contoso Corporation, a fictional but representative multi-national organization, designed a SharePoint Online site for its research teams, see this [example configuration](contoso-sharepoint-online-site-for-highly-confidential-assets.md).
 
->[!Note]
->A team for highly regulated data requires that you first create a SharePoint Online team site for highly regulated data. You then create a new team that uses the Office 365 group of the SharePoint Online team site. See Phase 2, Step 4 for more information.
->
+
+A team for highly regulated data requires that you first create a SharePoint Online team site for highly regulated data. You then create a new team that uses the Office 365 group of the SharePoint Online team site. See Phase 2, Step 4 for more information.
+
+Here is the configuration for a team.
+
+![The Microsoft Teams and SharePoint Online sites for highly regulated data scenario](./media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration-team.png)
+
 
 ## Identity and device access prerequisites
 
