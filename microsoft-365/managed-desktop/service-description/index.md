@@ -9,7 +9,7 @@ ms.localizationpriority: normal
 
 # Microsoft Managed Desktop service description
 
-Microsoft Managed Desktop is a service that provides your users' devices with a secure modern user experience that is always up to date with the latest versions of Windows 10 Enterprise edition, Office 365 ProPlus, and security services, including:
+Microsoft Managed Desktop is a service that provides your users with a secure modern experience and always keeps devices up to date with the latest versions of Windows 10 Enterprise edition, Office 365 ProPlus, and security services, including:
 
 - Configuration of devices
 - Features to keep users and devices secure, including Windows Hello, BitLocker, SecureBoot, and virtualization-based security
@@ -19,9 +19,9 @@ Microsoft Managed Desktop is a service that provides your users' devices with a 
 - Analytical data about device and app usage
 - IT support for your end users
 
-For details about the specific services included with Microsoft Managed Desktop, see the other topics in this section. If you've already decided that Microsoft Managed Desktop is for you, the topics in [Get ready for enrollment in Microsoft Managed Desktop](https://docs.microsoft.com/microsoft-365/managed-desktop/get-ready/) provide you with the steps to take to prepareto join the service.
+For details about the specific services included with Microsoft Managed Desktop, see the other topics in this section. If you've already decided that Microsoft Managed Desktop is for you, the topics in [Get ready for enrollment in Microsoft Managed Desktop](https://docs.microsoft.com/microsoft-365/managed-desktop/get-ready/) provide you with the steps to prepare to join the service.
 
-- [Microsoft Managed Desktop supported regions and languages](regions-languages.md) explains which regions and languages can be used with the service.
+- [Microsoft Managed Desktop supported regions and languages](regions-languages.md) explains which regions and languages are supported with the service.
 - To guarantee the best experience for your end users, only certain devices are supported by Microsoft Managed Desktop. [Program devices](device-list.md) specifies the exact device models and configurations you can use with the service, whether you provide them or work with a partner.
 - [Device services](device-services.md) specifies the device-related services that Microsoft will provide to subscribers.
 - [Device configuration](device-policies.md) clarifies the default and security-related Mobile Device Management policies that the service will apply to enrolled devices.
