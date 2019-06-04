@@ -5,9 +5,8 @@ keywords: Office 365, Microsoft 365, Microsoft 365 Education, Microsoft 365 docu
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
-ms.date: 04/13/2018
-ms.author: heicba
-author: herviicban
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
