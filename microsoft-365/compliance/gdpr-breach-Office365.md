@@ -17,11 +17,9 @@ ms.collection: GDPR
 
 As a data processor, Office 365 will ensure that our customers are able to meet the GDPR’s breach notification requirements as data controllers. To that end, we are committed to the following:
 
--   Providing customers with an ability to specify a dedicated privacy contact who will be notified in the event breach. Customers will be able to specify this contact in Azure Active Directory (AAD)
-
--   Notifying customers of a personal data breach within 72 hours of a breach being declared. Notification will be done by e-mail to the contact specified by the customer
-
--   Initial notification will include, at the least, a description of the nature of the breach, approximation of user impact, and mitigation steps (if applicable). If our investigation is not complete at the time of initial notification, we will indicate next steps and timelines for subsequent communication in our initial notification
+- Providing customers with an ability to specify a dedicated privacy contact who will be notified in the event breach. Customers will be able to specify this contact in Azure Active Directory (AAD)
+- Notifying customers of a personal data breach within 72 hours of a breach being declared. Notification will be done by e-mail to the contact specified by the customer
+- Initial notification will include, at the least, a description of the nature of the breach, approximation of user impact, and mitigation steps (if applicable). If our investigation is not complete at the time of initial notification, we will indicate next steps and timelines for subsequent communication in our initial notification
 
 Microsoft recognizes that data controllers are responsible for conducting risk assessments and determining whether a breach requires notification of the customer’s DPA, and our notification to customers will provide the information needed to make that assessment. Microsoft will therefore notify customers of any personal data breach, except for those cases where personal data is confirmed to be unintelligible (for example, strongly encrypted data where integrity of the keys is confirmed).
 
@@ -57,11 +55,8 @@ The section above describes the investments Office 365 makes to reduce the likel
 Customers should also note that Office 365, as a data processor, will not determine the risk of data breach. Whenever personal data breach is detected, we will notify our customers and provide them with the details they need to accurately determine risk to impacted users and to decide whether further reporting to regulatory authorities is required. To that end, data controllers are expected to determine the following:
 
 - Breach severity (that is, risk determination)
-
 - Whether end users need to be notified
-
 - Whether regulators (DPAs) need to be notified
-
 - Specific steps that will be taken by the controller to mitigate the consequences of breach
 
 ## Contacting Microsoft
