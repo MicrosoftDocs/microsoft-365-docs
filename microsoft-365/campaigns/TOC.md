@@ -1,5 +1,5 @@
 # Microsoft 365 for Campaigns
-## [Microsoft 365 for Campaigns](index.md)
+## [Overview](index.md)
 ## [What's included?](microsoft-365-campaigns-whats-included.md)
 ## [Get Microsoft 365 for campaigns](get-microsoft-365-campaigns.md)
 ## [How Microsoft 365 affects users](m365-campaigns-users.md)
