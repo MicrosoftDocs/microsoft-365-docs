@@ -67,7 +67,7 @@ To learn more about these recommendations, see [Protect your account and devices
 Your users might be tempted to share and store your organization files in places other than Microsoft 365. Microsoft 365 makes it as easy as possible to collaborate and share securely. You can [share files and videos](share-files-and-videos.md) directly from Microsoft Teams, OneDrive, Stream, and even from within a file. Sharing from within these tools helps keep your data from leaking. You can also add additional protection to sensitive data to prevent sharing outside your organization. 
 
 
-## Setting up managed Windows 10 devices
+## Set up managed Windows 10 devices
 We recommend your most important staff members use freshly acquired Windows 10 devices that you manage. We'll show you how to [manage and secure these devices](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json). This ensures that staff members that are the highest value target to hackers receive the most protection. 
 
 
