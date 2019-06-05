@@ -44,7 +44,6 @@ For more information, see [Microsoft Secure Score](https://docs.microsoft.com/en
 
 
 ## Raise the level of protection against malware in mail
-<a name="malware"> </a>
 
 Your Office 365 or Microsoft 365 environment includes protection against malware, but you can increase this protection by blocking attachments with file types that are commonly used for malware. To bump up malware protection in email:
   
@@ -66,7 +65,6 @@ For more information, see [Anti-malware protection](https://go.microsoft.com/fwl
 
 
 ## Protect against ransomware
-<a name="ransomware"> </a>
 
 Ransomware restricts access to data by encrypting files or locking computer screens. It then attempts to extort money from victims by asking for "ransom," usually in form of cryptocurrencies like Bitcoin, in exchange for access to data. 
   
@@ -105,7 +103,6 @@ For more information, see:
 
 
 ## Stop auto-forwarding for email
-<a name="forwarding"> </a>
 
 Hackers who gain access to a user's mailbox can steal your mail by setting the mailbox to automatically forward email. This can happen even without the user's awareness. You can prevent this from happening by configuring a mail flow rule. 
   
@@ -133,7 +130,6 @@ To create a mail transport rule, either watch [this short video](https://support
 
 
 ## Protect your email from phishing attacks
-<a name="phishing"> </a>
 
 If you've configured one or more custom domains for your Office 365 or Microsoft 365 environment, you can configure targeted anti-phishing protection. ATP anti-phishing protection, part of Office 365 Advanced Threat Protection, can help protect your organization from malicious impersonation-based phishing attacks and other phishing attacks. If you haven't configured a custom domain, you do not need to do this.
   
@@ -169,7 +165,6 @@ To create an ATP anti-phishing policy, watch  [this short training video](https:
 For more information, see [Set up Office 365 ATP anti-phishing policies](https://go.microsoft.com/fwlink/?linkid=2016505&amp;clcid=0x409).
   
 ## Protect against malicious attachments and files with ATP Safe Attachments
-<a name="atp"> </a>
 
 People regularly send, receive, and share attachments, such as documents, presentations, spreadsheets, and more. It's not always easy to tell whether an attachment is safe or malicious just by looking at an email message. Office 365 Advanced Threat Protection includes ATP Safe Attachment protection, but this protection is not turned on by default. We recommend that you create a new rule to begin using this protection. This protection extends to files in SharePoint, OneDrive, and Microsoft Teams.
   
@@ -203,7 +198,6 @@ For more information, see [Set up Office 365 ATP anti-phishing policies](https:/
 
 
 ## Protect against phishing attacks with ATP Safe Links
-<a name="phishingatp"> </a>
 
 Hackers sometimes hide malicious websites in links in email or other files. Office 365 ATP Safe Links (ATP Safe Links), part of Office 365 Advanced Threat Protection, can help protect your organization by providing time-of-click verification of web addresses (URLs) in email messages and Office documents. Protection is defined through ATP Safe Links policies.
   
@@ -246,6 +240,21 @@ To create a new policy targeted to all recipients in your domain:
    
 For more information, see [Office 365 ATP safe links](https://go.microsoft.com/fwlink/?linkid=2016138&amp;clcid=0x409).
   
-## Enable the Unified Audit Log
+## Turn on the Unified Audit Log
 
+After you turn on the audit log search in the Security &amp; Compliance center, you can retain the admin and other user activity in the log and search it. 
 
+You have to be assigned the Audit Logs role in Exchange Online to turn audit log search on or off in your Microsoft 365 Business subscription. By default, this role is assigned to the Compliance Management and Organization Management role groups on the Permissions page in the Exchange admin center. Global admins in Microsoft 365 are members of this group by default.
+
+1. To turn on the audit log search on, go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> and then choose **Compliance** under **Admin centers** in the left nav. 
+2. On the **Microsoft 365 compliance** page, choose **More resources**, and then **Open** on the **Office 365 security &amp; center** card.
+
+    ![Choose Open on the Office 365 security & compliance cars.](media/gotosecandcomp.png)
+3. On the security and compliance page, chose **Search** and then **Audit log search**.
+1. On the top of the **Audit log search** page, choose **Turn on auditing**.
+
+After the feature is turned on you can search for files, folders, and many activities. For more information, see [search the audit log](https://docs.microsoft.com/office365/securitycompliance/search-the-audit-log-in-security-and-compliance).
+
+## Tune-up anonymous sharing settings 
+
+(change default anonymous link expiration to 14 days, change default sharing type to "Specific People")
