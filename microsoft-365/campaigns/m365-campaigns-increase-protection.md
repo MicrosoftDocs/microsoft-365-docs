@@ -264,3 +264,10 @@ To change the sharing settings for OneDrive and SharePoint:
 3. On the **Sharing** page, under **File and folder links**, select **Specific people**, and under **Advanced settings for "Anyone" links**, select **These links must expire within this many days**, and type in 14 (or another number of days you want to restrict the link lifetime to).
 
     ![Choose Specific people and set link expiration to 14 days.](media/anyonelinks.png)
+
+## Acivity alerts
+
+You can use activity alerts to trask admin and user activities and detect malware and data loss prevention incidents in your organization. Your subscription includes a set of default policies, but you can also create custom ones too. For more information, see [alert policies](https://docs.microsoft.com/office365/securitycompliance/alert-policies). For example, if you store an important file in SharePoint that you don't want anyone to share externally, you can create a notification that alerts you if someone does share it.
+
+The following figure shows the default policies that are included with Microsoft 365 Business. <br/><br/>
+    ![Default alert policies included with Microsoft 365 Business.](media/alertpolicies.png)
