@@ -67,8 +67,8 @@
 ## [Share files and videos](share-files-and-videos.md)
 ## [Create a Communication site for your organization](create-communications-site.md)
 
-# Manage devices
-## [Remove company data](../business/remove-company-data.md?toc=/microsoft-365/campaigns/toc.json)
+# Reset or remove campaign data from devices 
+## [Remove campaign data](../business/remove-company-data.md?toc=/microsoft-365/campaigns/toc.json)
 ## [Reset devices to factory settings](../business/reset-devices-to-factory-settings.md?toc=/microsoft-365/campaigns/toc.json)
 
 # Security incident management
