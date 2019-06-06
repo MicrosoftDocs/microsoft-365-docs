@@ -37,7 +37,6 @@
 
 # Microsoft 365 for Campaigns
 ## [Overview](index.md)
-## [What's included?](microsoft-365-campaigns-whats-included.md)
 ## [Get Microsoft 365 for campaigns](get-microsoft-365-campaigns.md)
 ## [How Microsoft 365 protects campaign data](m365-campaigns-users.md)
 
@@ -52,14 +51,13 @@
 ## [Protect against phishing and other threats](m365-campaigns-increase-protection.md) 
 ## [Protect access to your campaign data](m365-campaigns-conditional-access.md)
 
-# Devices
+# Device setup for all campaign staff
 ## [Set up mobile devices](../business/set-up-mobile-devices.md?toc=/microsoft-365/campaigns/toc.json)
 ## [Protect PCs and Macs](m365-campaigns-protect-pcs-macs.md)
 ## [Set up managed Windows devices](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json)
 ## [Set up multifactor authentication](m365-campaigns-multifactor-authenication.md)
 
-
-# Protect your email
+# Protect your email for all campaign staff
 ## [Protect against phishing and other attacks](m365-campaigns-phishing-and-attacks.md)
 ## [Send encrypted email](send-encrypted-email.md)
 
