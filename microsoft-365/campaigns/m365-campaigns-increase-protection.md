@@ -255,6 +255,19 @@ You have to be assigned the Audit Logs role in Exchange Online to turn audit log
 
 After the feature is turned on you can search for files, folders, and many activities. For more information, see [search the audit log](https://docs.microsoft.com/office365/securitycompliance/search-the-audit-log-in-security-and-compliance).
 
-## Tune-up anonymous sharing settings 
+## Tune-up anonymous sharing settings for SharePoint and OneDrive files and folders
 
 (change default anonymous link expiration to 14 days, change default sharing type to "Specific People")
+To change the sharing settings for OneDrive and SharePoint:
+1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> and then choose **SharePoint** under **Admin centers** in the left nav. 
+2. In the SharePoint Admin center, go to **Policies** \> **Sharing**.
+3. On the **Sharing** page, under **File and folder links**, select **Specific people**, and under **Advanced settings for "Anyone" links**, select **These links must expire within this many days**, and type in 14 (or another number of days you want to restrict the link lifetime to).
+
+    ![Choose Specific people and set link expiration to 14 days.](media/anyonelinks.png)
+
+## Acivity alerts
+
+You can use activity alerts to trask admin and user activities and detect malware and data loss prevention incidents in your organization. Your subscription includes a set of default policies, but you can also create custom ones too. For more information, see [alert policies](https://docs.microsoft.com/office365/securitycompliance/alert-policies). For example, if you store an important file in SharePoint that you don't want anyone to share externally, you can create a notification that alerts you if someone does share it.
+
+The following figure shows the default policies that are included with Microsoft 365 Business. <br/><br/>
+    ![Default alert policies included with Microsoft 365 Business.](media/alertpolicies.png)

@@ -49,7 +49,3 @@ You can use conditional access to add substancial additional security in additio
     - [Block legacy authentication](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-baseline-protect-legacy-auth)
 
 You can set up many additional policies, such as requiring approved client apps. See the [Conditional Access Documentation](https://docs.microsoft.com/azure/active-directory/conditional-access/) for more information.
-
-
-## Require Outlook mobile
- - Not sure what this is about
