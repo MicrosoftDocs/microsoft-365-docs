@@ -38,6 +38,14 @@ It's a recommended secure configuration that includes Microsoft 365 Business so 
 
 While some organizations qualify for nonprofit pricing for Microsoft 365 Business, any organization with this plan can take advantage of this guidance to configure increased security and learn how to collaborate securely.
 
+This library includes the following:
+- Prescriptive setup guidance for adding increased security.
+- Help for users to setup devices for secure access.
+- Guidance on how to collaborate and share securely.
+
+For more information about what's included, seeh [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business). 
+
+
 Get started
 --------------------------
 
