@@ -43,13 +43,12 @@ For more information about these policies, see [What are baseline policies](http
 
 1. Go to [Azure portal](https://portal.azure.com), and then navigate to **Azure Active Directory** \> **Conditional Access**.
     
-    The baseline policies are listed on the page.
+    The baseline policies are listed on the page. <br/> <br/>
     ![Page that lists baseline policies for conditional access.](media/baslinepolicies.png)
-2. See the following specific instructions for each policy:
+1. See the following specific instructions for each policy:
 
     - [Require MFA for admins](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-baseline-protect-administrators)
 
-        Be sure to exclude the break-glass admin account from the MFA requirement.
     -   [Require MFA for users](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-baseline-protect-end-users)  
     - [Block legacy authentication](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-baseline-protect-legacy-auth)
 
