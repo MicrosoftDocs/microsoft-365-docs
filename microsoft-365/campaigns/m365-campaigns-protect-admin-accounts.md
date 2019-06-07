@@ -68,6 +68,9 @@ To create a new user account:
 3. Expand the **Roles** section, and choose **User (no administrative access)**.
 1. In the **Product licenses** section, move the selector for **Microsoft 365 Business** to **On**. 
 
+## Register each of these accounts for multi-factor authentication
+
+
 ## Additional recommendations
 
 - Be sure admin accounts are also set up for multi-factor authentication. We'll show you how to do this in [Configure conditional access policies](m365-campaigns-conditional-access.md).
