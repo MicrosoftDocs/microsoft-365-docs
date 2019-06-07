@@ -46,7 +46,7 @@ Microsoft 365 for Campaigns costs $5 per user per month.
 To protect your campaign or business, we recommend a license for the candidate, all senior staff who are part of the campaign including the campaign manager, and usually all full-time staff. Very strategic volunteer employees might also need a license. In general, anyone who needs protected email and devices should have a license.
 There is no commitment. You can pay monthly for the licenses you need and stop using the service any time.
 
-# How to get Microsoft 365 for Campaigns
+## How to get Microsoft 365 for Campaigns
 
 1. Provide some details about your organization at https://m365forcampaigns.microsoft.com/. There's no commitment when you complete this form. The details you provide will help us verify that eligibility and that you're based in the United States.
 2. After you've completed the form, it takes us a few days to check that you're eligible Microsoft 365 for Campaigns. 
