@@ -11,6 +11,7 @@ localization_priority: Normal
 ms.collection: 
 - Adm_O365
 - M365-subscription-management 
+- M365-Campaigns
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -26,7 +27,7 @@ description: "Microsoft 365 for campaigns"
 Microsoft 365 for Campaigns
 ===========================
 
-In our current world, keeping data and communications secure is a priority, particularly for political campaigns, medical and legal practices, and many other businesses. Microsoft 365 for campaigns is designed to help protect you and your business. 
+In our current world, keeping data and communications secure is a priority, particularly for political campaigns, medical and legal practices, and many other businesses. Microsoft 365 for campaigns is designed to help protect you and your campaign data. 
 
 **What is Microsoft 365 for Campaigns?** 
 It's a recommended secure configuration that includes Microsoft 365 Business so that you can:

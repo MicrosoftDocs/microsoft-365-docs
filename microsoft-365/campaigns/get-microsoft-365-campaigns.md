@@ -1,5 +1,5 @@
 ---
-title: "Get Microsoft 365 for campaigns"
+title: "Get Microsoft 365 for Campaigns"
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -10,6 +10,7 @@ localization_priority: Normal
 ms.collection: 
 - Adm_O365
 - M365-subscription-management 
+- M365-Campaigns
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -19,21 +20,39 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
-description: "Learn how to purchase Microsoft 365 Business from Microsoft Partner Center."
+description: "Protect your election, campaign, committee or support organization from cybersecurity threats to email, data, and communication using Microsoft 365 for campaigns."
 ---
 
-# Get Microsoft 365 for campaigns
+# Microsoft 365 for Campaigns
+If your campaign (or campaign support organization) needs cybersecurity protection, this is the least expensive Microsoft plan available. 
+Organizations that run (or support) campaigns and those that support elected staff are usually eligible. This topic has: 
+- More details about who can get Microsoft 365 for Campaigns, 
+- What it includes, how much it costs, and what your commitment is
+- How to get started
 
-There are several ways to get Microsoft 365 Business and Azure AD P1.
+## Who can get Microsoft 365 for Campaigns? 
+Microsoft 365 for Campaigns is available to campaigns, candidates, elected officials, and support organizations based in the USA. You can use Microsoft 365 for Campaigns if you:
+- Are a current candidate (or a representative) running for federal, state, or local office in the United States. 
+- Represent a campaign organization for a sitting member of Congress.
+- Represent a national or state party committee.
+- Are a technology vendor who primarily serves campaigns and committees.
+- Are a nonprofit organization or nongovernmental organization that primarily serves campaigns and committees. 
 
-## Get Microsoft 365 for campaigns through Microsoft's nonprofit program
-coming soon
+## What does it include?
+Microsoft 365 for Campaigns includes....
 
-## Get Microsoft 365 Business from Microsoft and add Azure AD P1 to your subscription
+## What does it cost, who needs it, and what is the commitment?
+Microsoft 365 for Campaigns costs $5 per user per month. 
+To protect your campaign or business, we recommend a license for the candidate, all senior staff who are part of the campaign including the campaign manager, and usually all full-time staff. Very strategic volunteer employees might also need a license. In general, anyone who needs protected email and devices should have a license.
+There is no commitment. You can pay monthly for the licenses you need and stop using the service any time.
 
-If you don't have a partner and want to get Microsoft 365 Business, you can [buy it here](https://www.microsoft.com/en-US/microsoft-365/business).
+# How to get Microsoft 365 for Campaigns
 
-After setting up Microsoft 365 Business, add Azure AD P1 to your subscription. <link to instructions>
+1. Provide some details about your organization at https://m365forcampaigns.microsoft.com/. There's no commitment when you complete this form. The details you provide will help us verify that eligibility and that you're based in the United States.
+2. After you've completed the form, it takes us a few days to check that you're eligible Microsoft 365 for Campaigns. 
+3. Once we've verified your details, you'll receive an email from Microsoft that includes a sign-up location and code specific to your organization. 
+
+
   
 ## Get Microsoft 365 Business and Azure AD P1 from Microsoft Partner Center
 
