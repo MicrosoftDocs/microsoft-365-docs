@@ -23,12 +23,13 @@ description: "Learn how to setup and protect your administrator accounts."
 
 # Protect your administrator accounts
 
-When you sign up for Microsoft 365 Business and enter your information, you automatically become the global admin. A global admin has the ultimate control of user accounts and all the other settings in the Microsoft admin center, but there are many different kinds of admin accounts with varying degrees of access. See [about admin roles](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) for information about the different access levels for each kind of admin role.
-
-Because the admin accounts come with elevated privileges they are also valuable targets for hackers and cyber criminals. This article describes:
+Because the admin accounts come with elevated privileges, they are valuable targets for hackers and cyber criminals. This article describes:
 
 - How to setup an additional administrator account for emergencies.
 - How to protect these accounts.
+ 
+When you sign up for Microsoft 365 Business and enter your information, you automatically become the global admin. A global admin has the ultimate control of user accounts and all the other settings in the Microsoft admin center, but there are many different kinds of admin accounts with varying degrees of access. See [about admin roles](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) for information about the different access levels for each kind of admin role.
+
 
 ## Create additional admin accounts
 
@@ -67,7 +68,7 @@ To create a new user account:
 3. Expand the **Roles** section, and choose **User (no administrative access)**.
 1. In the **Product licenses** section, move the selector for **Microsoft 365 Business** to **On**. 
 
-### Additional recommendations
+## Additional recommendations
 
 - Be sure admin accounts are also set up for multi-factor authentication. We'll show you how to do this in [Configure conditional access policies](m365-campaigns-conditional-access.md).
 - Before using admin accounts, close out all unrelated browser sessions and apps, including personal email accounts. You can also use in private, or incognito browser windows.
