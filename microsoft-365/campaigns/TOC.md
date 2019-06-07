@@ -11,14 +11,16 @@
 
 # Bump up security protection
 ## [Protect admin accounts](m365-campaigns-protect-admin-accounts.md)
-## [Increase threat protection](m365-campaigns-increase-protection.md) 
 ## [Set up conditional access policies](m365-campaigns-conditional-access.md)
+## [Increase threat protection](m365-campaigns-increase-protection.md) 
+
 
 # User device setup
+## [Set up multifactor authentication](m365-campaigns-multifactor-authenication.md)
 ## [Set up mobile devices](../business/set-up-mobile-devices.md?toc=/microsoft-365/campaigns/toc.json)
 ## [Protect unmanaged Windows 10 PCs and Macs](m365-campaigns-protect-pcs-macs.md)
 ## [Set up managed Windows devices](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json)
-## [Set up multifactor authentication](m365-campaigns-multifactor-authenication.md)
+
 ## [Protect against phishing and other attacks](m365-campaigns-phishing-and-attacks.md)
 
 # Collaborate and share securely
