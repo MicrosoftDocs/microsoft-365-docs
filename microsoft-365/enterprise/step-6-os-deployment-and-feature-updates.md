@@ -3,7 +3,7 @@ title: Step 6 - OS Deployment and Feature Updates
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
-ms.date: 09/14/2018
+ms.date: 05/30/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
