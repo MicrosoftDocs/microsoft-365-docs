@@ -3,8 +3,8 @@ title: "Password writeback for your Microsoft 365 test environment"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/20/2018
-ms.audience: ITPro
+ms.date: 04/19/2019
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -20,14 +20,14 @@ description: "Summary: Configure password writeback for your Microsoft 365 test 
 
 # Password writeback for your Microsoft 365 test environment
 
-Password writeback allows users to update their passwords through Azure Active Directory (Azure AD), which is then replicated to your local Active Directory Domain Services (AD DS). With password writeback, users don’t need to update their passwords through the on-premises Windows Server AD where their original user accounts are stored. This helps roaming or remote users who do not have a remote access connection to their on-premises network.
+Password writeback allows users to update their passwords through Azure Active Directory (Azure AD), which is then replicated to your local Active Directory Domain Services (AD DS). With password writeback, users don’t need to update their passwords through the on-premises AD DS where their original user accounts are stored. This helps roaming or remote users who do not have a remote access connection to their on-premises network.
 
 This article describes how you can configure your Microsoft 365 test environment for password writeback.
 
 There are two phases to setting this up:
 
 1.	Create the Microsoft 365 simulated enterprise test environment with password hash synchronization.
-2.	Enable password writeback for the TESTLAB Windows Server AD domain.
+2.	Enable password writeback for the TESTLAB AD DS domain.
     
 ![Test Lab Guides for the Microsoft cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
@@ -36,23 +36,23 @@ There are two phases to setting this up:
   
 ## Phase 1: Configure password hash synchronization for your Microsoft 365 test environment
 
-Follow the instructions in [password hash synchronization for Microsoft 365](password-hash-sync-m365-ent-test-environment.md). Here is your resulting configuration.
+First, follow the instructions in [password hash synchronization](password-hash-sync-m365-ent-test-environment.md). Here is your resulting configuration.
   
 ![The simulated enterprise with password hash synchronization test environment](media/pass-through-auth-m365-ent-test-environment/Phase1.png)
   
 This configuration consists of: 
   
-- Office 365 E5 and EMS E5 trial or permanent subscriptions.
+- Office 365 E5 and EMS E5 trial or paid subscriptions.
 - A simplified organization intranet connected to the Internet, consisting of the DC1, APP1, and CLIENT1 virtual machines on a subnet of an Azure virtual network. 
-- Azure AD Connect runs on APP1 to synchronize the TESTLAB Windows Server AD domain to the Azure AD tenant of your Office 365 and EMS E5 subscriptions.
+- Azure AD Connect runs on APP1 to synchronize the TESTLAB AD DS domain to the Azure AD tenant of your Office 365 and EMS E5 subscriptions.
 
-## Phase 2: Enable password writeback for the TESTLAB Windows Server AD domain
+## Phase 2: Enable password writeback for the TESTLAB AD DS domain
 
 First, configure the User 1 account with the global administrator role.
 
-1. From the [Office portal](https://office.com), sign in with your global administrator account.
+1. From the [Microsoft 365 admin center](https://portal.microsoft.com), sign in with your global administrator account.
 
-2. Click the **Admin** tile. From the new **Microsoft 365 admin center** tab of your browser, click **Active users**.
+2. Click **Active users**.
  
 3. On the **Active users** page, click the **user1** account,
 
@@ -60,7 +60,7 @@ First, configure the User 1 account with the global administrator role.
 
 5. On the **Edit user roles** pane for user1, click **Global administrator**. Click **Save**, and then click **Close**.
 
-Next, configure the User 1 account with the security settings that allow it to change passwords on behalf of other users in the TESTLAB Windows Server AD domain.
+Next, configure the User 1 account with the security settings that allow it to change passwords on behalf of other users in the TESTLAB AD DS domain.
 
 1. From the [Azure portal](https://portal.azure.com), sign in with your global administrator account, and then connect to APP1 with the TESTLAB\User1 account.
 
@@ -119,9 +119,9 @@ Here is your resulting configuration:
 
 This configuration consists of:
 
-- Office 365 E5 and EMS E5 trial or permanent subscriptions with the DNS domain TESTLAB.\<your domain name> registered.
+- Office 365 E5 and EMS E5 trial or paid subscriptions with the DNS domain TESTLAB.\<your domain name> registered.
 - A simplified organization intranet connected to the Internet, consisting of the DC1, APP1, and CLIENT1 virtual machines on a subnet of an Azure virtual network. 
-- Azure AD Connect runs on APP1 to synchronize the list of accounts and groups from the Azure AD tenant of your Office 365 and EMS E5 subscriptions to the TESTLAB Windows Server AD domain. 
+- Azure AD Connect runs on APP1 to synchronize the list of accounts and groups from the Azure AD tenant of your Office 365 and EMS E5 subscriptions to the TESTLAB AD DS domain. 
 - Password writeback is enabled so that users can change their passwords through Azure AD without having to be connected to the simplified intranet.
 
 See the [Simplify password updates](identity-password-reset.md#identity-pw-writeback) step in the Identity phase for information and links to configure password writeback in production.

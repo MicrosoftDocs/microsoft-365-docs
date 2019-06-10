@@ -3,7 +3,7 @@ title: "Install Office on Windows 10 during setup"
 ms.author: sirkkuw
 author: sirkkuw
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 f1_keywords:
 - 'O365E_BCSSetup4OfficeInstall'
@@ -24,6 +24,8 @@ description: "Learn now to automatically deploy Office to Windows 10 devices dur
 ---
 
 # Install Office on Windows 10 during setup
+
+![Banner that point to https://aka.ms/aboutM365preview.](media/m365admincenterchanging.png)
 
 This setting is off by default. You can turn it on to ensure that users have the latest version of Office running on all their Windows 10 devices, but should first verify that all prerequisites are met. Users have to be licensed for Microsoft 365 Business for this setting to push the software to the device in addition to other requirements described in [Prepare for Office client deployment by Microsoft 365 Business](prepare-for-office-client-deployment.md). 
   

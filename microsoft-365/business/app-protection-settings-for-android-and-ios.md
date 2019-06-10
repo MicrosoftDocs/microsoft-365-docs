@@ -3,7 +3,7 @@ title: "Set app protection settings for Android or iOS devices"
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -25,17 +25,19 @@ description: "Learn how to create, edit, or delete an app management policy, and
 
 # Set app protection settings for Android or iOS devices
 
+![Banner that point to https://aka.ms/aboutM365preview.](media/m365admincenterchanging.png)
+
 ## Create an app management policy
 
-1. Sign in to [Microsoft 365 Business](https://portal.office.com) with global admin credentials. 
+1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>. 
     
-2. In the admin center, choose **Devices** \> **Policies** \> **Add policy**.
+2. In the left nav, choose **Devices** \> **Policies** \> **Add**.
   
 3. On the **Add policy** pane, enter a unique name for this policy. 
     
 4. Under **Policy type**, choose **Application Management for Android** or **Application Management for iOS** depending on which set of policies you want to create. 
     
-5. Expand **Protect work files when devices are lost or stolen** and **Manage how users access Office files on mobile devices** \> configure the settings how you would like. The **Manage how users access Office files on mobile devices** is **Off** by default, but it is recommended that you turn it **On** and accept the default values. See [Available settings](app-protection-settings-for-android-and-ios.md#bkmk_availablesettings) for more information. 
+5. Expand **Protect work files when devices are lost or stolen** and **Manage how users access Office files on mobile devices** \> configure the settings how you would like. The **Manage how users access Office files on mobile devices** is **Off** by default, but it is recommended that you turn it **On** and accept the default values. See [Available settings](#available-settings)  for more information. 
     
     You can always use the **Reset default settings** link to return to the default setting. 
     
@@ -57,9 +59,9 @@ description: "Learn how to create, edit, or delete an app management policy, and
     
 ## Delete an app management policy
 
-1. On the **Policies** card, choose **Delete policy**.
+1. On the **Policies** page, choose a policy and then **Delete**.
     
-2. On the **Delete policy** pane, choose the policies you want to delete \> **Select**, then **Confirm** to delete the policy or policies you chose. 
+2. On the **Delete policy** pane choose **Confirm** to delete the policy or policies you chose. 
     
 ## Available settings
 

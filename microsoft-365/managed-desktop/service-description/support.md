@@ -11,11 +11,11 @@ ms.collection: M365-modern-desktop
 
 # Support for Microsoft Managed Desktop
 
-Microsoft Managed Desktop devices are managed by and will be repaired or replaced by Microsoft as per warranty agreement. Microsoft will provide proactive and reactive incident management. Microsoft tracks incidents in the Microsoft Managed Desktop admin portal. They are classified according to [severity definitions](../working-with-managed-desktop/admin-support.md#sev).
+Microsoft will provide proactive and reactive incident management. Microsoft tracks incidents in the Microsoft Managed Desktop admin portal. They are classified according to [severity definitions](../working-with-managed-desktop/admin-support.md#sev).
 
 Customers can contact Microsoft Managed Desktop operations for:
-- Information requests on the Modern Workplace as a Service tenant or configuration
-- Change requests to the configuration of Modern Workplace as a Service devices
+- Information requests on the Microsoft Managed Desktop tenant or configuration
+- Change requests to the configuration of Microsoft Managed Desktop devices
 - Reporting an incident or outage
 
 ## What's included?
@@ -29,7 +29,7 @@ Microsoft Managed Desktop support:
 Supported products:
 
 - Windows 10 with Windows Defender Advanced Threat Protection (WDATP) 
-- Subset of the Microsoft 365 E5 suite: Outlook, Word, PowerPoint, Excel, Skype for Business client, Microsoft Teams 
+- Subset of the Office 365 suite: Outlook, Word, PowerPoint, Excel, Skype for Business client, Microsoft Teams 
 - Microsoft Store for Business 
 - OneDrive for Business client 
 
@@ -39,10 +39,6 @@ Support details:
 - English is the only supported language for phone and chat conversations with customers 
 - We are partnering with, not replacing, your corporate helpdesk; Line-of-Business (LOB) apps, network resources, etc. are still handled by your helpdesk 
 - Microsoft Managed Devices residing in the test group and non-Microsoft Managed Desktop devices are out of scope 
-
-## Hardware replacement
-
-Hardware devices are replaced for items under the terms of the warranty you select. Devices are refreshed at the end of your Device-as-a-Service term, as is their attached warranty. Devices that need to be replaced for reasons outside of the warranty coverage will be assessed a replacement fee, e.g. lost or stolen devices. For a full list of what is covered under warranty, see [Surface warranty options](https://support.microsoft.com/help/4036296/surface-surface-standard-warranty).
 
 
 ## Related topics

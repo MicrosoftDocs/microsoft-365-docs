@@ -1,8 +1,8 @@
 ---
 title: Microsoft 365 Business Frequently Asked Questions 
 description: Find answers to the most frequently asked questions about Microsoft 365 Business, a new solution designed for small and midsize businesses (SMB). 
-author: jasongroce
-ms.author: jasgro
+author: Sirkkuw
+ms.author: sirkkuw
 ms.topic: article 
 ms.prod: microsoft-365-business
 ms.collection: M365-subscription-management
@@ -76,7 +76,7 @@ Many employees prefer to use their own mobile phones or tablets to access person
 Microsoft 365 Business offers customers a simple but powerful means of enabling employees to use their personal devices for work while providing the business with the ability to prevent those devices from accessing, retaining, and/or sharing business information. More specifically: 
 * **App Protection for Office mobile apps** helps protect Office data, including email, calendar, contacts, and documents on iOS and Android mobile devices, by enforcing policies such as automatically deleting business data after a prescribed amount of time of not connecting to the service, requiring that information is stored only to OneDrive for Business, requiring a PIN/fingerprint verification to access Office apps, and preventing company data from being copied from an Office app into personal apps. Mobile application management for other mobile apps through Intune is also available for Microsoft 365 Business subscribers. 
   
-* **Device Management for Windows 10 PCs** aallows businesses to choose to set and enforce capabilities such as Windows Defender protection for malware, automatic updates, and turning off screens after a prescribed amount of time. In addition, lost or stolen Windows 10 devices can be completely wiped of business applications and data through the Admin center. 
+* **Device Management for Windows 10 PCs** allows businesses to choose to set and enforce capabilities such as Windows Defender protection for malware, automatic updates, and turning off screens after a prescribed amount of time. In addition, lost or stolen Windows 10 devices can be completely wiped of business applications and data through the Admin center. 
 
 * **Device Management for iOS, Android & MacOS** features helps businesses securely manage a diverse device ecosystem that includes iOS, Android, Windows, and macOS devices. 
 
@@ -112,7 +112,8 @@ Customers that wish to experience the complete capabilities of Microsoft 365 Bus
 The most direct path to a successful Microsoft 365 Business deployment is to engage with a Microsoft Partner. They have extensive training and experience with a wide variety of customer scenarios and are best equipped to understand your environment and needs. Customers that have experienced IT on staff can use the <a href="https://support.office.com/article/496e690b-b75d-4ff5-bf34-cc32905d0364" target="_blank">Microsoft 365 Business Getting Started</a> to assist them in their Microsoft 365 Business deployment. 
 
 ### Does Microsoft 365 Business include the full capabilities of Microsoft Intune? 
-Yes, Microsoft 365 Business subscribers are licensed to use full Intune capabilities for iOS, Android, MacOS, and other cross-platform device management. Features not available in the simplified management console in Microsoft 365 Business, like 3rd party app management and configuration of things like WiFi profiles, VPN certificates, etc., can be managed in full Intune console.   
+Yes, Microsoft 365 Business subscribers are licensed to use full Intune capabilities for iOS, Android, MacOS, and other cross-platform device management. Features not available in the simplified management console in Microsoft 365 Business, like 3rd party app management and configuration of WiFi profiles, VPN certificates, etc, can be managed in full Intune console. 
+You have rights to use Configuration Manager to manage clients covered by the EMS license. For SCCM related queries, please see <a href="https://docs.microsoft.com/en-us/sccm/core/understand/product-and-licensing-faq#bkmk_csp" target="_blank">SCCM faqs</a>
   
 
 ### Does Azure Active Directory Premium P1 come with Microsoft 365 Business? 
@@ -178,7 +179,7 @@ Microsoft 365 Business does not make an otherwise non-genuine version of Windows
 The same support channels available to CSP partners today (premier support and advanced support program) have been trained on Microsoft 365 Business and are ready to provide partners with support. 
 
 ### What is the GDPR and how does Microsoft 365 Business help customers with their compliance obligations?
-The General Data Protection Regulation (GDPR) is a comprehensive new privacy law that gives residents of the European Union (EU) greater control over their “personal data” and requires organizations to maintain the integrity of that personal data. The GDPR requires organizations that control, or process personal data tied to EU residents to only use third-party data processors that meet the GDPR’s requirements for personal data processing. In March 2017, Microsoft made available contractual guarantees that provide these assurances. Customers that have questions about how Microsoft can help them meet their additional GDPR obligations should learn about the advanced compliance and security capabilities available as add-ons (e.g. Azure Information Protection, Data Loss Prevention,Advnaced Threat Protection, etc. ) and in other Suites (e.g. Microsoft 365 Enterprise E5). To learn more, visit [www.microsoft.com/gdpr](https://www.microsoft.com/gdpr).
+The General Data Protection Regulation (GDPR) is a comprehensive new privacy law that gives residents of the European Union (EU) greater control over their “personal data” and requires organizations to maintain the integrity of that personal data. The GDPR requires organizations that control, or process personal data tied to EU residents to only use third-party data processors that meet the GDPR’s requirements for personal data processing. In March 2017, Microsoft made available contractual guarantees that provide these assurances. Customers that have questions about how Microsoft can help them meet their additional GDPR obligations should learn about the advanced compliance and security capabilities available as add-ons (e.g. Azure Information Protection, Data Loss Prevention, Advanced Threat Protection, etc. ) and in other Suites (e.g. Microsoft 365 Enterprise E5). To learn more, visit [www.microsoft.com/gdpr](https://www.microsoft.com/gdpr).
 
 
 

@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 08/21/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -39,37 +39,35 @@ If you just want to test multi-factor authentication in a lightweight way with t
 If you want to test multi-factor authentication in a simulated enterprise, follow the instructions in [Pass-through authentication](pass-through-auth-m365-ent-test-environment.md).
   
 > [!NOTE]
-> Testing multi-factor authentication does not require the simulated enterprise test environment, which includes a simulated intranet connected to the Internet and directory synchronization for a Windows Server AD forest. It is provided here as an option so that you can test multi-factor authentication and experiment with it in an environment that represents a typical organization. 
+> Testing multi-factor authentication does not require the simulated enterprise test environment, which includes a simulated intranet connected to the Internet and directory synchronization for a Active Directory Domain Services (AD DS) forest. It is provided here as an option so that you can test multi-factor authentication and experiment with it in an environment that represents a typical organization. 
   
 ## Phase 2: Enable and test multi-factor authentication for the User 2 account
 
 Enable multi-factor authentication for the User 2 account with these steps:
   
-1. Open a separate, private instance of your browser, go to the Office portal ([https://office.com](https://office.com)), and then sign in with your global administrator account.
+1. Open a separate, private instance of your browser, go to the Microsoft 365 admin center ([https://portal.microsoft.com](https://portal.microsoft.com)), and then sign in with your global administrator account.
     
-2. From the main portal page, click **Admin**.
+2. In the left navigation, click **Users > Active users**.
     
-3. In the left navigation, click **Users > Active users**.
+3. In the Active users pane, click **More > Multi-factor authentication setup**.
     
-4. In the Active users pane, click **More > Multi-factor authentication setup**.
+4. In the list, select the **User 2** account.
     
-5. In the list, select the **User 2** account.
+5. In the **User 2** section, under **Quick steps**, click **Enable**.
     
-6. In the **User 2** section, under **Quick steps**, click **Enable**.
+6. In the **About enabling multi-factor auth** dialog box, click **Enable multi-factor auth**.
     
-7. In the **About enabling multi-factor auth** dialog box, click **Enable multi-factor auth**.
+7. In the **Updates successful** dialog box, click **Close**.
     
-8. In the **Updates successful** dialog box, click **Close**.
+8. On the **Microsoft 365 admin center** tab, click the user account icon in the upper right, and then click **Sign out**.
     
-9. On the **Microsoft Office Home** tab, click the user account icon in the upper right, and then click **Sign out**.
-    
-10. Close your browser instance.
+9. Close your browser instance.
    
 Complete the configuration for the User 2 account to use a text message for validation and test it with these steps:
   
 1. Open a new, private instance of your browser.
     
-2. Go to the Office portal ([https://office.com](https://office.com)) and sign in with the User 2 account (user2@\<organization name>.onmicrosoft.com) and password.
+2. Go to the Office 365 portal ([https://portal.office.com](https://portal.office.com)) and sign in with the User 2 account name and password.
     
 3. After signing in, you are prompted to set up the account for more information. Click **Next**.
     

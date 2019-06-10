@@ -3,7 +3,7 @@ title: "Privileged access management for your Microsoft 365 Enterprise test envi
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -31,7 +31,7 @@ If you just want to configure privileged access management in a lightweight way 
 If you want to configure privileged access management in a simulated enterprise, follow the instructions in [Pass-through authentication](pass-through-auth-m365-ent-test-environment.md).
   
 > [!NOTE]
-> Testing privileged access management does not require the simulated enterprise test environment, which includes a simulated intranet connected to the Internet and directory synchronization for a Windows Server AD forest. It is provided here as an option so that you can test privileged access management and experiment with it in an environment that represents a typical organization. 
+> Testing privileged access management does not require the simulated enterprise test environment, which includes a simulated intranet connected to the Internet and directory synchronization for a AD DS forest. It is provided here as an option so that you can test privileged access management and experiment with it in an environment that represents a typical organization. 
 
 ## Phase 2: Configure privileged access management
 
@@ -68,7 +68,7 @@ New-JournalRule -Name "JournalRule1" -Recipient joe@contoso.onmicrosoft.com -Jou
 > [!NOTE]
 > If you haven't already completed the Steps 1 and 2 from Phase 2 of this guide, be sure follow the steps to create an approver's group named "Privilege Access Approvers" and to enable privileged access in your test environment.
 
-1. Sign into the [Microsoft 365 Admin Center](https://portal.office.com) using credentials the Global Admin account for your test environment.
+1. Sign into the [Microsoft 365 admin center](https://admin.microsoft.com) using credentials the Global Admin account for your test environment.
 
 2. In the Admin Center, go to **Settings** > **Security & Privacy** > **Privileged access**.
 
@@ -111,7 +111,7 @@ Insufficient permissions. Please raise an elevated access request for this task.
 
 ### Request access to create a new Journal Rule using the New-JournalRule task
 
-1. Sign into the [Microsoft 365 Admin Center](https://portal.office.com) using the Global Admin account for your test environment.
+1. Sign into the [Microsoft 365 admin center](https://admin.microsoft.com) using the Global Admin account for your test environment.
 
 2. In the Admin Center, go to **Settings** > **Security & Privacy** > **Privileged access**.
 
@@ -133,7 +133,7 @@ Insufficient permissions. Please raise an elevated access request for this task.
 
 ### Approve privileged access request for the creation of a new Journal Rule
 
-1. Sign into the [Microsoft 365 Admin Center](https://portal.office.com) using the credentials for User 3 in your test environment (member of the "Privileged Access Approvers" security group in your test environment).
+1. Sign into the [Microsoft 365 admin center](https://admin.microsoft.com) using the credentials for User 3 in your test environment (member of the "Privileged Access Approvers" security group in your test environment).
 
 2. In the Admin Center, go to **Settings** > **Security & Privacy** > **Privileged access**.
 

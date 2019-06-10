@@ -66,7 +66,7 @@ This step focuses on setting up Intune, and getting it ready for you to manage y
 
 2. **[Customize your domain name](https://docs.microsoft.com/intune/custom-domain-name-configure)**. By default, a domain named something like **your-domain.onmicrosoft.com** is automatically created in Azure AD. **onmicrosoft.com** can be customized for your organization. When you customize, it also gives users a familiar domain when connecting to Intune and using resources.
 
-3. **[Sign in to Intune](https://docs.microsoft.com/intune/account-sign-up)**. When you sign in, you may be prompted to enter information about your organization. Intune is included with Microsoft 365, and can be opened directly from the [Office 365 Admin portal](https://portal.office.com/). You can also open Intune directly from the [Azure portal](https://portal.azure.com).
+3. **[Sign in to Intune](https://docs.microsoft.com/intune/account-sign-up)**. When you sign in, you may be prompted to enter information about your organization. Intune is included with Microsoft 365, and can be opened directly from the [Microsoft 365 admin center](https://admin.microsoft.com). You can also open Intune directly from the [Azure portal](https://portal.azure.com).
 
 4. **[Choose your mobile device management configuration](https://docs.microsoft.com/intune/mdm-authority-set)**. The first time you use Intune, you must enable device management. Intune can be used as a cloud-only service, a hybrid with Intune and System Center Configuration Manager, or using Mobile Device Management for Office 365. You can choose which setup works best for your organization.
 
@@ -158,11 +158,7 @@ Microsoft provides a set of recommendations for [identity and device access](mic
 
 ## How Microsoft does Microsoft 365 Enterprise
 
-Learn how IT experts at Microsoft planned for and deployed EMS and device management with these resources:
-
-- [Managing modern mobile productivity with Enterprise Mobility + Security](https://www.microsoft.com/itshowcase/Article/Content/972/Managing-modern-mobile-productivity-with-Enterprise-Mobility--Security)
-- [Connecting to work on your Windows 10 device with Microsoft Intune](https://www.microsoft.com/itshowcase/Article/Content/783/Connecting-to-work-on-your-Windows-10-device-with-Microsoft-Intune)
-- [Enabling mobile productivity for iOS, OS X, and Android devices at Microsoft](https://www.microsoft.com/itshowcase/Article/Content/773/Enabling-mobile-productivity-for-iOS-OS-X-and-Android-devices-at-Microsoft)
+Learn how IT experts at Microsoft [manage devices with EMS](https://www.microsoft.com/en-us/itshowcase/deploying-and-managing-microsoft-365#primaryR8).
 
 ## How Contoso did Microsoft 365 Enterprise
 

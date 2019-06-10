@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 08/13/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -42,8 +42,8 @@ Follow the instructions in [password hash synchronization for Microsoft 365](pas
   
 This configuration consists of: 
   
-- Office 365 E5 and EMS E5 trial or permanent subscriptions.
-- A simplified organization intranet connected to the Internet, consisting of the DC1, APP1, and CLIENT1 virtual machines on a subnet of an Azure virtual network. Azure AD Connect runs on APP1 to synchronize the TESTLAB Windows Server AD domain to the Azure AD tenant of your Office 365 and EMS E5 subscriptions periodically.
+- Office 365 E5 and EMS E5 trial or paid subscriptions.
+- A simplified organization intranet connected to the Internet, consisting of the DC1, APP1, and CLIENT1 virtual machines on a subnet of an Azure virtual network. Azure AD Connect runs on APP1 to synchronize the TESTLAB AD DS domain to the Azure AD tenant of your Office 365 and EMS E5 subscriptions periodically.
 
 ## Phase 2: Configure Azure AD Connect on APP1 for pass-through authentication
 
@@ -77,7 +77,7 @@ Next, test the ability to sign in to your Office 365 subscription with the <stro
 
 2. When prompted for a user name and password, specify <strong>user1@testlab.</strong>\<your public domain> and the User1 password. You should successfully sign in as User1.
 
-Notice that although User1 has domain administrator permissions for the TESTLAB Windows Server AD domain, it is not an Office 365 global administrator. Therefore, you will not see the **Admin** icon as an option.
+Notice that although User1 has domain administrator permissions for the TESTLAB AD DS domain, it is not an Office 365 global administrator. Therefore, you will not see the **Admin** icon as an option.
 
 Here is your resulting configuration:
 
@@ -85,7 +85,7 @@ Here is your resulting configuration:
  
 This configuration consists of:
 
-- Office 365 E5 and EMS E5 trial or permanent subscriptions with the DNS domain testlab.\<your domain name> registered.
+- Office 365 E5 and EMS E5 trial or paid subscriptions with the DNS domain testlab.\<your domain name> registered.
 - A simplified organization intranet connected to the Internet, consisting of the DC1, APP1, and CLIENT1 virtual machines on a subnet of an Azure virtual network. An Authentication Agent runs on APP1 to handle pass-through authentication requests from the Azure AD tenant of your Office 365 and EMS E5 subscriptions.
 
 ## Next step

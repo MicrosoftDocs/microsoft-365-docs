@@ -76,17 +76,6 @@ In the illustration:
 - If James accesses a highly regulated site he is a member of using his unmanaged phone, he will be blocked due to the access policy configured for this site. He can only access this site using his managed and compliant PC.
 
 
-<!---
-##Block access to content from unmanaged devices (SharePoint admin center)
-In the case of SharePoint Online, when a conditional access policy is applied to enforce Intune app protection policies, this might not apply to all applications that access SharePoint Online. Some applications, such as Exchange, have access to some SharePoint resources. For example, Exchange allows attaching SharePoint files by default. Conditional access policies applied to SharePoint Online will not restrict this access. 
-
-To ensure baseline protection is applied uniformly, regardless of which service is accessing SharePoint Online and OneDrive for Business, configure access controls directly in SharePoint admin center. We recommend you configure the following:
-- Block access from unmanaged devices. This includes devices that aren't compliant or joined to a domain. 
-- Block access from app that don't use modern authentication.
-
-See [Control access from unmanaged devices](https://support.office.com/article/Control-access-from-unmanaged-devices-5ae550c4-bd20-4257-847b-5c20fb053622).
--->
-
 
 
 ## Next steps

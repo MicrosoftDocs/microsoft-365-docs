@@ -3,8 +3,8 @@ title: Microsoft 365 Enterprise overview
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 02/26/2019
-ms.audience: ITPro
+ms.date: 04/23/2019
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -59,13 +59,17 @@ To download a copy of the poster, click [here](https://github.com/MicrosoftDocs/
 
 ## Deploying
 
-There are two ways to deploy the products, features, and components of Microsoft 365 Enterprise:
+There are three ways to deploy the products, features, and components of Microsoft 365 Enterprise:
 
 1. In partnership with FastTrack
   
    With FastTrack, Microsoft engineers help you move to the cloud at your own pace. See [FastTrack for Microsoft 365](https://fasttrack.microsoft.com/microsoft365).
   
-2. Do it yourself
+2. With the help of Microsoft Consulting Services or a [Microsoft partner](https://partner.microsoft.com/).
+
+   Consultants can analyze your current infrastructure and help you develop a plan to incorporate all of the software and services of Microsoft 365 Enterprise.
+
+3. Do it yourself
 
    The [Microsoft 365 Enterprise deployment guide](deploy-microsoft-365-enterprise.md) takes you step by step through building out the infrastructure and productivity workloads. 
 
@@ -73,7 +77,7 @@ For more deployment information, see how:
 
 - [Customers](deploy-microsoft-365-enterprise.md#how-customers-use-microsoft-365-enterprise)  use Microsoft 365 Enterprise.
 - [Microsoft](deploy-microsoft-365-enterprise.md#how-microsoft-uses-microsoft-365-enterprise) uses Microsoft 365 Enterprise.
-- [The Contoso Corporation](contoso-overview.md) has deployed Microsoft 365 Enterprise.
+- [The Contoso Corporation](contoso-overview.md), a fictional but representative multinational organization, has deployed Microsoft 365 Enterprise.
 
 ## Additional Microsoft 365 solutions
 
@@ -85,9 +89,20 @@ For more deployment information, see how:
  
   Empower educators to unlock creativity, promote teamwork, and provide a simple and safe experience in a single, affordable solution built for education.
 
+- [Microsoft 365 Government](https://www.microsoft.com/microsoft-365/government)
+ 
+  Empower United States public sector employees to work together, securely.
+
+## Microsoft 365 training
+
+|||
+|:-------|:-----|
+![](./media/m365-poster/m365-fundamentals.svg)| Get yourself trained and work towards a Microsoft 365 certification. <BR> Start with [Microsoft 365 Fundamentals](https://docs.microsoft.com/learn/paths/m365-fundamentals/).
+
+
 ## Next step
 
-Start your [Microsoft 365 Enterprise deployment journey](deploy-microsoft-365-enterprise.md).
+If you are doing the deployment yourself, start your [Microsoft 365 Enterprise deployment journey](deploy-microsoft-365-enterprise.md).
 
 ## See also
 

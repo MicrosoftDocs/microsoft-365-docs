@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 03/05/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -46,7 +46,7 @@ If needed, [Step 2](identity-designate-protect-admin-accounts.md#identity-global
 
 Use these steps to verify that you've protected your global administrator accounts:
 
-1. Run the following Azure AD V2 command at the PowerShell command prompt. You should see only the list of dedicated global administrator accounts.
+1. Run the following Azure Active Directory PowerShell for Graph command at the PowerShell command prompt. You should see only the list of dedicated global administrator accounts.
    ```
    Get-AzureADDirectoryRole | where { $_.DisplayName -eq "Company Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
    ```
@@ -88,7 +88,7 @@ To verify that authentication with on-premises credentials works correctly, sign
 
 To verify that directory synchronization is working correctly, do the following:
 
-1.	Create a new test group in Windows Server AD.
+1.	Create a new test group in AD DS.
 2.	Wait for the synchronization time.
 3.	Check your Azure AD tenant to verify that the new test group name appears.
 
@@ -158,7 +158,7 @@ If needed, [Step 5](identity-password-reset.md#identity-pw-reset) can help you w
 
 You've used the instructions in [Azure AD SSPR with password writeback](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-getting-started) to enable password writeback for the Azure AD tenant of your Microsoft 365 Enterprise subscription.
 
-If you skip this option, users who aren’t connected to your on-premises network must reset or unlock their Windows Server AD passwords through an IT administrator.
+If you skip this option, users who aren’t connected to your on-premises network must reset or unlock their AD DS passwords through an IT administrator.
 
 If needed, [Step 5](identity-password-reset.md#identity-pw-writeback) can help you with this option.
 
@@ -168,13 +168,13 @@ If needed, [Step 5](identity-password-reset.md#identity-pw-writeback) can help y
 
 ### How to test
 
-You test password writeback by changing your password in Office 365. You should be able to use your account and new password to access on-premises Windows Server AD resources.
+You test password writeback by changing your password in Office 365. You should be able to use your account and new password to access on-premises AD DS resources.
 
-1. Create a test user account in your on-premises Windows Server AD, allow directory synchronization to occur, and then grant it an Office 365 license in the Office 365 admin portal.
-2. From a remote computer that is joined to your on-premises Windows Server AD domain, sign in to the computer and the Office portal using the credentials of the test user account.
+1. Create a test user account in your on-premises AD DS, allow directory synchronization to occur, and then grant it an Office 365 license in the Microsoft 365 admin center.
+2. From a remote computer that is joined to your on-premises AD DS domain, sign in to the computer and the Office portal using the credentials of the test user account.
 3. Select **Settings > Office 365 settings > Password > Change password**.
 4. Type the current password, type a new password, and then confirm it.
-5. Sign out of the Office portal and the remote computer and then sign in to the computer using the test user account and its new password. This proves that you were able to change the password of an on-premises Windows Server AD user account using the Azure AD tenant.
+5. Sign out of the Office portal and the remote computer and then sign in to the computer using the test user account and its new password. This proves that you were able to change the password of an on-premises AD DS user account using the Azure AD tenant.
 
 <a name="crit-identity-sso"></a>
 ## Optional: Users can sign in using Azure AD Seamless Single Sign-on
@@ -196,7 +196,7 @@ If needed, [Step 5](identity-password-reset.md#identity-custom-sign-in) can help
 
 ### How to test
 
-Sign in to the Office portal with your user account name and multi-factor authentication. You should see your custom branding elements on the sign-in page.
+Sign in to the Office 365 portal with your user account name and multi-factor authentication. You should see your custom branding elements on the sign-in page.
 
 <a name="crit-identity-self-service-groups"></a>
 ## Optional: Self-service group management is enabled for specific Azure AD security and Office 365 groups
@@ -256,7 +256,7 @@ If needed, [Step 6](identity-self-service-group-management.md#identity-group-lic
 
 1. Create a test security group in Azure AD with the Azure portal and configure group-based licensing to assign Office 365 and EMS licenses.
 2. Create a test user account in Azure AD and add it to the test security group.
-3. Examine the properties of the user account in the Office 365 admin portal to ensure that it was assigned the Office 365 and EMS licenses.
+3. Examine the properties of the user account in the Microsoft 365 admin center to ensure that it was assigned the Office 365 and EMS licenses.
 4. Remove the test user account from the test security group.
 5. Examine the properties of the user account to ensure that it no longer has the Office 365 and EMS licenses assigned.
 6. Delete the test security group and the test user account.

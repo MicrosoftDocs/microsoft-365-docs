@@ -3,8 +3,8 @@ title: "Microsoft Teams and SharePoint Online sites for highly regulated data"
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 09/13/2018
-ms.audience: ITPro
+ms.date: 06/03/2019
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -25,19 +25,19 @@ Microsoft 365 Enterprise includes a full suite of cloud-based services so that y
 - Subject to regional regulations.
 - The most valuable data for your organization, such as trade secrets, financial or human resources information, and organization strategy.
 
-A Microsoft 365 Enterprise cloud-based solution that meets this business need requires that you:
+A Microsoft 365 Enterprise cloud-based scenario that meets this business need requires that you:
 
 - Store digital assets (documents, slide decks, spreadsheets, etc.) in a SharePoint Online team site or in the **Files** tab of a Microsoft Teams team.
 - Lock down the site or team to prevent:
-   - Access to all except a specific set of user accounts through group membership, which includes those who can access the SharePoint Online team site and at what level of permission, and those who can administer it.
+   - Access to only a specific set of user accounts through group membership, which includes those who can access the SharePoint Online team site and at what level of permission, and those who can administer it.
    - Members of the site from granting access to others.
    - Non-members of the site from requesting access to the site.
-- Configure an Office 365 retention label for your SharePoint Online sites or teams as a default way to classify digital assets on the site.
+- Configure an Office 365 retention label for your SharePoint Online sites or teams as a default way to define retention policies on the documents in the site or team.
 - Block users from sending files outside the organization.
 - Encrypt the most sensitive digital assets of the site or team.
 - Add permissions to the most sensitive digital assets so that if even if they get shared outside of the site, opening the asset still requires the valid credentials of a user account that has permission.
 
-The following table maps the requirements of this solution to a feature of Microsoft 365 Enterprise.
+The following table maps the requirements of this scenario to a feature of Microsoft 365 Enterprise.
 
 |||
 |:-------|:-----|
@@ -50,9 +50,13 @@ The following table maps the requirements of this solution to a feature of Micro
 | Add permissions to the digital assets of the site | Azure Information Protection sub-labels in EMS |
 |||
 
-This solution requires that you have already deployed:
+Here is the configuration for a SharePoint Online site.
 
-- Your [foundation infrastructure](deploy-foundation-infrastructure.md). 
+![The Microsoft Teams and SharePoint Online sites for highly regulated data scenario](./media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration.png)
+
+This scenario requires that you have already deployed:
+
+- The [Identity](identity-infrastructure.md) phase and steps 1 and 2 of the [Information protection](infoprotect-infrastructure.md) phase of the foundation infrastructure. 
 - For highly regulated data in SharePoint Online team sites, [SharePoint Online](sharepoint-online-onedrive-workload.md).
 - For highly regulated data in Microsoft Teams teams, [Microsoft Teams](teams-workload.md).
 
@@ -60,9 +64,13 @@ The following phases step you through the design, configuration, and driving ado
 
 To see how the Contoso Corporation, a fictional but representative multi-national organization, designed a SharePoint Online site for its research teams, see this [example configuration](contoso-sharepoint-online-site-for-highly-confidential-assets.md).
 
->[!Note]
->A team for highly regulated data requires that you first create a SharePoint Online team site for highly regulated data. You then create a new team that uses the Office 365 group of the SharePoint Online team site. See Phase 2, Step 4 for more information.
->
+
+A team for highly regulated data requires that you first create a SharePoint Online team site for highly regulated data. You then create a new team that uses the Office 365 group of the SharePoint Online team site. See Phase 2, Step 4 for more information.
+
+Here is the configuration for a team.
+
+![The Microsoft Teams and SharePoint Online sites for highly regulated data scenario](./media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration-team.png)
+
 
 ## Identity and device access prerequisites
 
@@ -100,7 +108,7 @@ When applied to a SharePoint Online team site, Office 365 retention labels provi
  
 For SharePoint Online sites for highly regulated data, you need to determine which Office 365 retention label to use.
 
-For the design considerations of Office 365 labels, see [Office 365 classification and labels](https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-and-files#office-365-classification-and-labels).
+For the design considerations of Office 365 labels, see [Office 365 classification and labels](https://docs.microsoft.com/office365/securitycompliance/secure-sharepoint-online-sites-and-files#office-365-retention-labels).
 
 To protect sensitive information and prevent its accidental or intentional disclosure, you use DLP policies. For more information, see this [overview](https://docs.microsoft.com/office365/securitycompliance/data-loss-prevention-policies).
 
@@ -114,15 +122,13 @@ A sub-label exists under an existing label. For example, you can create a Resear
 
 The settings of the applied sub-label travel with the asset. Even if it is downloaded and shared outside the site, only authenticated user accounts that have permissions can open it.
 
-For the design considerations of Azure Information Protection labels, see [Azure Information Protection](https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-and-files#azure-information-protection).
-
 ### Design results
 
 You have determined the following:
 
 - The set of SharePoint groups and permission levels
 - The set of access groups and their members for each permission level
-- The appropriate Office 365 retentionn label and the DLP policy that is associated with the label
+- The appropriate Office 365 retention label and the DLP policy that is associated with the label
 - The settings of the Azure Information Protection sub-label that include encryption and permissions
 
 ## Phase 2: Configure
@@ -205,6 +211,10 @@ Retrain your users as needed.
 ### User adoption results
 
 Sensitive digital assets are stored exclusively on SharePoint Online sites or teams for highly regulated data and that the most sensitive assets have the configured Azure Information Protection sub-label applied.
+
+## How the Contoso Corporation deployed Microsoft 365 Enterprise
+
+The Contoso Corporation is a fictional but representative global manufacturing conglomerate with its headquarters in Paris, France. See how Contoso designed, configured, and then drove the adoption of a [secure SharePoint Online site](contoso-sharepoint-online-site-for-highly-confidential-assets.md) for their research teams in Paris, Moscow, New York, Beijing, and Bangalore. 
 
 ## See also
 

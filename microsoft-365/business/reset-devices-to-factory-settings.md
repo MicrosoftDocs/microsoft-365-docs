@@ -3,7 +3,7 @@ title: "Reset Windows 10 devices to their factory settings"
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -23,15 +23,15 @@ description: "Learn how to use Microsoft 365 Business to factory reset your Wind
 
 # Reset Windows 10 devices to their factory settings
 
+![Banner that point to https://aka.ms/aboutM365preview.](media/m365admincenterchanging.png)
+
 A factory reset reverts a device to the original settings it had when the device was purchased. All apps and data on the device that were installed after purchase are removed. You can use Microsoft 365 Business to factory reset Windows 10 devices you manage.
   
-1. Sign in to the [admin center](https://aka.ms/bcsportal) with global admin credentials. 
+1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.. 
     
-2. In the admin center, on the **Device actions** card, choose **Factory reset**.
-    
-    ![On the Device actions card, choose Factory reset](media/7caddd12-207e-4c99-b61c-0495fc5f55e3.png)
-  
-3. On the **Factory reset** pane, check the checkbox next to the device you want to remove data from and then choose **Select**.
+2. In the left nav, choose **Devices** \> **Manage**.
+
+3. On the **Manage** page, check the checkbox next to the device you want to remove data from and then, in the **Manage** drop-down choose **Factory reset**.
     
 4. On the **Are you sure you want to factory reset the devices below** pane, choose **Confirm** \> **Close**.
     
