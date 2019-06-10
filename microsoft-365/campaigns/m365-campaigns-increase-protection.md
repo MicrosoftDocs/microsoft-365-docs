@@ -26,18 +26,6 @@ description: "Get help with increasing the level of protection in your subscript
 
 This article helps you increase the protection in your Microsoft 365 subscription to protect against phishing, malware, and other threats. These recommendations are appropriate for organizations with an increased need for security, like political campaigns, law offices, and health care clinics. 
 
-- [Raise the level of protection against malware in mail](#raise-the-level-of-protection-against-malware-in-mail)
-- [Protect against ransomware](#protect-against-ransomware)
-- [Stop auto-forwarding for email](#stop-auto-forwarding-for-email)
-- [Protect your email from phishing attacks](#protect-your-email-from-phishing-attacks)
-- [Protect against malicious attachments and files with ATP Safe Attachments](#protect-against-malicious-attachments-and-files-with-atp-safe-attachments)
-- [Protect against phishing attacks with ATP Safe Links](#protect-against-phishing-attacks-with-atp-safe-links)
-- Enable the Unified Audit Log
-- Tune-up anonymous sharing settings (change default anonymous link expiration to 14 days, change default sharing type to "Specific People")
-- Create an activity email alert for changes in privileged role membership (role elevation)
-- Enable SPO retention policy for 30 days
-- Disable Anonymous Calendar Details "Internet Publish"
-
 Before you begin, check your Office 365 Secure Score. Office 365 Secure Score analyzes your Office 365 organization's security based on your regular activities and security settings and assigns a score. Begin by taking note of your current score. Taking the actions recommended in this article increases your score. The goal is not to achieve the max score, but to be aware of opportunities to protect your environment that do not negatively affect productivity for your users. 
 
 For more information, see [Microsoft Secure Score](https://docs.microsoft.com/en-us/office365/securitycompliance/microsoft-secure-score).
@@ -271,3 +259,14 @@ You can use activity alerts to trask admin and user activities and detect malwar
 
 The following figure shows the default policies that are included with Microsoft 365 Business. <br/><br/>
     ![Default alert policies included with Microsoft 365 Business.](media/alertpolicies.png)
+
+## Disable or manage calendar sharing
+
+You can decide to not to let the people in your organization to share their calendars, or you can also manage what they can share. For example, you can restrict the sharing to free/busy times only.
+
+1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> and choose **Settings** \> **Services & add-ins**
+2. On the **Services & add-ins** page choose **Calendar**, and choose if people in your organization can share their calendars with people outside who have Office 365 or Exchange, or with anyone. 
+    If you choose the share with anyone you can decide to also only share free/busy information.
+
+ADD FIGURE
+
