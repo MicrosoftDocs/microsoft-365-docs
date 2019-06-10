@@ -3,8 +3,8 @@ title: Windows and Office Deployment Lab Kit
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
-ms.date: 10/31/2018
-audience: ITPro
+ms.date: 06/10/2019
+ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
