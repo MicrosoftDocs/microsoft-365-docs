@@ -22,7 +22,7 @@ It’s important that applications don’t adversely impact the Microsoft Manage
 
 ## Centrally managed apps
 
-All applications and drivers installed on Microsoft Managed Devices must be deployed through Intune, the Microsoft Store, or the Microsoft Store for Business; if available, drivers will also be deployed through the Windows Update service. 
+All applications and drivers installed on Microsoft Managed Devices must be deployed through Microsoft Intune, the Microsoft Store, or the Microsoft Store for Business; if available, drivers will also be deployed through the Windows Update service. 
 
 ## Prohibited app classes
 

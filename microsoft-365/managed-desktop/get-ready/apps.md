@@ -18,7 +18,7 @@ ms.collection: M365-modern-desktop
 
 Microsoft includes certain key apps along with the Microsoft 365 E3 or E5 license needed to participate in Microsoft Managed Desktop. However, even though we provide these apps, you still have certain responsibilities and actions to complete.
 
-You can also have additional non-Microsoft apps included in the image delivered to your Microsoft Managed Desktop users. To have those apps packaged and included with the image, you can engage with Microsoft Consulting Services, hire a non-Microsoft vendor, or handle the packaging yourself. In each of these cases, there are somewhat different requirements and actions you must take.
+You can also deploy additional non-Microsoft apps to your end users for self-service through the Company Portal or a required background installation, all using Microsoft Intune’s deployment pipeline. If you have the expertise you can migrate those apps you need yourself; if not either Microsoft Consulting Services or non-Microsoft vendors will be happy to help you with a packaging and migration project. 
 
 
 ## Apps provided by Microsoft
@@ -39,52 +39,33 @@ There are still certain things you need to do with these apps:
 
 ## Apps you provide
 
-Of course, you probably have a number of other apps you need for your business operations. These can be added to the Microsoft Managed Desktop image provided to your devices by having them packaged by a vendor (which could be Microsoft Consulting Services (MCS) or a non-Microsoft vendor) or if you have the means, you can package them yourself. You then provide the packaged apps to Microsoft Managed Desktop {Operations?} so they can be added to the image.
+Of course, you probably have a number of other apps you need for your business operations. These can can only be deployed to Microsoft Managed Desktop devices by using Microsoft Intune’s deployment pipeline. If the app needs it you can have them packaged by a vendor (which could be a non-Microsoft vendor or Microsoft Consulting Services (MCS)) or if you have the means, you can package them yourself. You then add these packages to the Microsoft Managed Desktop portal and assign them to Azure Active Directory groups to trigger the deployment. 
 
-You can ask Microsoft Managed Desktop for a query you can use to survey your apps and discover which ones are ready for packaging or might require some adjustments.
+If you currently deploy your apps by using System Center Configuration Manager, Microsoft Managed Desktop can provide you with a query to assess your apps and discover which ones are ready for to migrate to Microsoft Intune and which ones might require some adjustment.
+
 
 ### Preparing your own apps for inclusion in Microsoft Managed Desktop
 Review your apps, checking:
 
-- None of the apps are prohibited from use on Microsoft Managed Desktop devices:
-    - Non-Microsoft anti-virus, security, or audit software
-    - Versions of Microsoft Office prior to Office 365 ProPlus {what about current, but NON-ProPlus versions?}
-    - Applications that install or bundle other non-Microsoft software
-- Apps must be ready for management by Microsoft Intune. For more about this, see [Intune Standalone - Win32 app management](https://docs.microsoft.com/intune/apps-win32-app-management).
+- None of the apps are prohibited or have restricted behavior, as described in [Microsoft Managed Desktop app requirements](https://aka.ms/app-req).
+- Apps must be ready for management by Microsoft Intune. For more about this, see [Windows 10 app deployment using Microsoft Intune](https://docs.microsoft.com/intune/apps-windows-10-app-deploy) and [Add apps to Microsoft Intune](https://docs.microsoft.com/intune/apps-add).
 - Other pre-packaging requirements such as providing license keys, agreement with license terms, and pre-setting server connections.
-	
+
 ### Decide how to package apps
 
-You have three options to get apps packaged so that they can be included in the Microsoft Managed Desktop image. "Packaging" means {we should offer a brief statement of what this actually means}
+Some independent software vendors might require that your apps are packaged before they are centrally deployed. “Packaging” means that the app’s installer is configured with settings like license keys, remote server locations, or desktop shortcuts so that the app can be installed in the background.
+
+There are three options to get your apps packaged: 
 
 
-- You can work with a non-Microsoft vendor
 - You can package apps yourself
-- You can engage with MCS to package your apps. Work with your Microsoft account representative.
-
-#### Packaging by you or a non-Microsoft vendor
-If you or a non-Microsoft vendor do the packaging, these are the actions you're responsible for:
-
-- You must provide the source installer files (setup.exe & instructions) {do we mean files?}
-- You must provide installation instructions, specifying what you want the final installation to look like; for example, should there be a desktop shortcut to the app, what should the app's visibility be, how should the app connect to a server (and which one).
-- {this happens after we give them image including the packaged app, right?} You must upload to Microsoft Intune and assign apps to appropriate Azure Active Directory groups. For more information see [Deploy apps to Microsoft Managed Desktop devices](../get-started/deploy-apps.mmd).
-- You must perform your own acceptance testing--that is, that the app works as you need it to in your environment.
-
-Microsoft will take care of these actions:
-
-- Checking for prohibited apps
-- Testing for compatibility with Windows 10
-- Handing off the app to the Desktop App Assurance program if the app needs remediation
-- Testing to ensure that the app deploys properly with Microsoft Intune
+- You can work with a non-Microsoft vendor
+- You can engage with MCS to package your apps. Work with your Microsoft account representative. For more details, see [Working with Microsoft Consulting Services](apps-MCS.md).
 
 
-#### Packaging by Microsoft Consulting Services
 
-If you engage MCS to package your apps, these are the actions Microsoft will be responsible for:
-- Testing to verify compatibility with Windows 10, for example, successful installation, starting, and uninstallation.
-- If the app needs remediation, we'll hand it off to Desktop App Assurance program {need link to more info on this}
-- Packaging the app
-- Testing to ensure that the app deploys properly by using Microsoft Intune.
+
+
 
 
 ## Deploying apps
