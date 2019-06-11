@@ -17,9 +17,7 @@ For more information on Microsoft Managed Desktop, see [Microsoft Managed Deskto
 <!-- Split from device & technologies topic. Destination topic for aka.ms/device-list  -->
 To be enrolled in Microsoft Managed Desktop a device must be one of the following models and meet or exceed the listed specifications for RAM, processor family, and disk space. No other customization is supported.
 
-The links to devices here are for your reference only. If you want to order devices, work with your commercial channel contacts to ensure that you choose the correct configurations. In this  table, the *archive date* is the date on which these models will be subject to a shorter management period; any such devices onboarded after this date will not receive a full three-year term of support from Microsoft Managed Desktop. Archived devices are also listed in [Microsoft Managed Desktop archived devices](archived-device-list.md). *Retirement date* is the date on which this model will no longer be supported by Microsoft Managed Desktop at all. On that date, all enrolled devices of this model will be removed from Microsoft Managed Desktop, no matter when they were enrolled.
-
-In this table, the archive date is the date on which these models will be subject to a shorter management period and moved to the Archived Devices list.
+The links to devices here are for your reference only. If you want to order devices, work with your commercial channel contacts to ensure that you choose the correct configurations. In this table, the *archive date* is the date on which these models will be subject to a shorter Microsoft Managed Desktop service life; any such devices onboarded after this date will not receive a full three-year term of support from Microsoft Managed Desktop. Archived devices are also listed in [Microsoft Managed Desktop archived devices](archived-device-list.md). *Retirement date* is the date on which this model will no longer be supported by Microsoft Managed Desktop at all. On that date, all enrolled devices of this model will be removed from Microsoft Managed Desktop, no matter when they were enrolled.
 
 >[!NOTE]
 >Devices can be added to this table at any time, but we will provide 90 days notice for any changes affecting archive or retirement date.
@@ -43,7 +41,6 @@ In this table, the archive date is the date on which these models will be subjec
 | [HP ProBook x360 440 G1](https://store.hp.com/us/en/mdp/laptops/hp-probook-x360-440-3074457345617293669--1#!&tab=features) | 128 GB / Intel i3 / 8 GB RAM | SKU with 5VS04AV, IR camera or fingerprint reader required | Jun 6, 2020 | Jun 6, 2023 |
 | [Surface Book 2](https://www.microsoft.com/en-us/p/surface-book-2-for-business/8x4htznfgg38/lbh3?cid=msft_web_collection&CustomerIntent=Consumer) | 512 GB / Intel i7 / 16 GB RAM | 15-inch display | Nov 16, 2019 | Nov 16, 2022 |
 | [Surface Go](https://www.microsoft.com/en-us/p/surface-go-for-business/909wr0x3sgfk/8khl?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab) | 128 GB / Intel 4415Y / 8GB RAM | None | Aug 2, 2020 | Aug 2, 2023 |
-| [Surface Laptop](https://www.microsoft.com/en-us/p/surface-laptop-1st-gen-for-business/8w36k32zm453/g4vs?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab) | 256 GB / Intel i5 / 8 GB RAM | None | **May 20, 2019** | May 20, 2022 |
 | [Surface Laptop 2](https://www.microsoft.com/en-us/p/surface-laptop-2-for-business/8xlk0g60tlb6/hkq9?cid=msft_web_collection&CustomerIntent=Consumer) | 256 GB / Intel i5 / 8 GB RAM | None | Oct 16, 2020 | Oct 16, 2023 |
 |[Surface Pro (5th Gen)](https://www.microsoft.com/en-us/p/surface-pro-5th-gen-for-business/907tds4dgwwv/kkzn?cid=msft_web_collection&CustomerIntent=Consumer) | 256 GB / Intel i5 / 8 GB RAM | None | **Jun 15, 2019** | Jun 15, 2022 |
 | [Surface Pro 6](https://www.microsoft.com/en-us/p/surface-pro-6-for-business/8xjq3d3lrp0r/grf9?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab) | 256 GB / Intel i5 / 8 GB RAM | None | Oct 16, 2020 | Oct 16, 2023 |
@@ -52,7 +49,7 @@ In addition, the device must also:
 
 - Have an image approved by Microsoft Managed Desktop. When you order devices, make sure you specify that they are being used with Microsoft Managed Desktop.
 - Not have completed the Windows first-run experience.
-- Be enrolled with [Windows Autopilot](https://docs.microsoft.com/en-us/windows/deployment/windows-autopilot/user-driven-aad) and have the Microsoft Managed Desktop Autopilot profile assigned.
+- Be registered with Microsoft Managed Desktop using the [Device Registration](https://aka.ms/mmddrhelp) feature
 
 **Additional Help**
 
