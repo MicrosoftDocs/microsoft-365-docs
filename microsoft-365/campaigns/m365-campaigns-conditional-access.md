@@ -22,9 +22,9 @@ search.appverid:
 description: "Learn how to require MFA and set up conditional access policies for Microsoft 365 Business."
 ---
 
-# Require MFA and set up conditional access policies for Microsoft 365 for campaigns
+# Require multi-factor authentication and set up conditional access policies
 
-Conditional access policies add substancial additional security. Microsoft provides a set of baseline conditional access policies that are recommended for all customers. Baseline policies are a set of predefined policies that help protect organizations against many common attacks. These common attacks can include password spray, replay, and phishing.
+Conditional access policies add substantial additional security. Microsoft provides a set of baseline conditional access policies that are recommended for all customers. Baseline policies are a set of predefined policies that help protect organizations against many common attacks. These common attacks can include password spray, replay, and phishing.
 
 These policies require admins and users to enter a second form of authentication (called multifactor authentication, or MFA) when certain conditions are met. For example, if a user is signing in from a different country or an unknown device, the sign-in might be considered risky and the user must provide an additional form of authentication. 
 
@@ -54,7 +54,7 @@ To require that all users sign in with a second form of ID:
 3. On the Make sign-in more secure page, choose **Get started**.
  
 4. On the Strengthen sign-in security pane, check the check boxes next to **Require multi-factor authentication for admins** and **Require users to register for multi-factor authentication and block access if risk is detected**.
-    Be sure to exclude the break-glass admin account from the MFA requirement in the **Find users** box.
+    Be sure to exclude the [emergency](m365-campaigns-protect-admin-accounts#create-an-emergency-admin-account) or "break-glass" admin account from the MFA requirement in the **Find users** box.
     
     ![Strengthen sing-in security page.](media/requiremfa.png)
 
