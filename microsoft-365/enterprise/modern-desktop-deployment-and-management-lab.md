@@ -17,7 +17,7 @@ description: Learn about and where to access the Windows and Office Deployment L
 
 # Windows and Office Deployment Lab Kit
 
-These downloadable hands-on labs focus on Windows 10 deployment and Office 365 deployment along with the related configuration and management considerations post-deployment. This training is highly recommended for organizations preparing for Windows 7 end of life, but also applies if you’re currently using Windows 10 and Office 365 Plus or Office 2019. Included are guides for Windows 10, Office 365 ProPlus, Enterprise Mobility + Security and related products and services.
+These downloadable hands-on labs focus on Windows 10 deployment and Office 365 deployment along with related configuration and management considerations post-deployment. This training is highly recommended for organizations preparing for Windows 7 end of life, but also applies if you’re currently using Windows 10 and Office 365 Plus or Office 2019. Included are guides for Windows 10, Office 365 ProPlus, Enterprise Mobility + Security and related products and services.
 
 These labs are designed to help you plan, test and validate your deployment and management of desktops running Windows 10 Enterprise and Office 365 ProPlus. The labs cover the steps and tools outlined in the Desktop Deployment wheel, spanning System Center Configuration Manager, Windows Analytics, Office Customization Tool, OneDrive, Windows Autopilot and more.
 
@@ -31,18 +31,17 @@ The lab kit is free to download and uses trial software.
 
 The lab provides you with an automatically provisioned virtual lab environment, including domain-joined desktop clients, domain controller, Internet gateway and a fully configured ConfigMgr instance. The lab contains Evaluation Versions of the following products:
 
-  - Windows 10 Enterprise, Version 1809
-  - Windows 7
-  - Office 365 ProPlus, Version 1901
-  - System Center Configuration Manager, Version 1802
-  - Windows Assessment and Deployment Kit for Windows 10, Version 1809
+  - Windows 10 Enterprise, Version 1903
+  - Windows 7 Enterprise
+  - System Center Configuration Manager, Version 1902
+  - Windows Assessment and Deployment Kit for Windows 10, Version 1903
   - Microsoft Deployment Toolkit
   - Microsoft Application Virtualization (App-V) 5.1
   - Microsoft BitLocker Administration and Monitoring 2.5 SP1
-  - Windows Server 2016
-  - Microsoft SQL Server 2014
+  - Windows Server 2019
+  - Microsoft SQL Server 2017
 
-PLUS, the lab is designed to be connected to trials for:
+PLUS, the lab is designed to be connected to trials for: E\nter
 
   - Microsoft 365 Enterprise E5
 
@@ -114,7 +113,7 @@ Detailed lab guides take you through multiple deployment and management scenario
 
 ### [**Download the Windows and Office Deployment Lab Kit**](https://aka.ms/mddlabs_evalcenter)
 
-*Please use a broad bandwidth to download this content to enhance your downloading experience and allow 30-45 minutes for automatic provisioning. The lab environment requires a minimum of 16 GB of available memory and 150 GB of free disk space. For optimal performance, 32 GB of available memory is recommended. The lab expires May 13, 2019. A new version will be published prior to expiration.*
+*Please use a broad bandwidth to download this content to enhance your downloading experience and allow 30-45 minutes for automatic provisioning. The lab environment requires a minimum of 16 GB of available memory and 150 GB of free disk space. For optimal performance, 32 GB of available memory is recommended. The lab expires Auguust 27, 2019. A new version will be published prior to expiration.*
 
 ## **Additional guidance**
 
