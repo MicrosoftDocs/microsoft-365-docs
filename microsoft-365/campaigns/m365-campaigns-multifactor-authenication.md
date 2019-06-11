@@ -32,4 +32,4 @@ See more at [Set up multifactor authentication in Microsoft 365 Business](https:
 
 ## Use the Outlook app in your devices
 
-Once your admin has required you to use MFA, and you have set up an authenticator app as a second form of aithentication ,we recommend that you install and only use the Outlook app to access your Microsoft 365 for Campaigns email. See [Set up mobile devices](../business/set-up-mobile-devices.md) for how to install Office apps, including Outlook, on your phone.
+Once your admin has required you to use MFA, and you have set up an authenticator app as a second form of authentication, we recommend that you install and only use the Outlook app to access your Microsoft 365 for Campaigns email. See [Set up mobile devices](../business/set-up-mobile-devices.md) for how to install Office apps, including Outlook, on your phone.
