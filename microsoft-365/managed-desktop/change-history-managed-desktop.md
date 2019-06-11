@@ -4,16 +4,37 @@ description: This topic lists new and updated topics for Microsoft Managed Deskt
 keywords: change history
 ms.prod: m365-md
 ms.sitesec: library
-author: trudyha
-ms.author: jdecker
+author: jaimeo
+ms.author: jaimeo
 ms.topic: article
-ms.date: 03/11/2019
 ms.localizationpriority: normal
 ---
 
 # Change history for Microsoft Managed Desktop documentation
 
 This topic lists new and updated topics in the [Microsoft Managed Desktop documentation](index.yml).
+
+
+## May 2019
+New or changed topic | Description
+--- | ---
+[Microsoft Managed Desktop supported regions and languages](service-description/regions-languages | Updated topic
+[Microsoft Managed Desktop devices](service-description/device-list) | Updated topic
+[Microsoft Managed Desktop archived devices](service-description/archived-device-list) | New topic
+[Prepare mapped drives for Microsoft Managed Desktop](get-ready/mapped-drives) | New topic
+[Prepare certificates and network profiles for Microsoft Managed Desktop](get-ready/certs-wifi-lan) | New topic
+[Order Microsoft Managed Desktop devices](get-started/devices) | Updated topic
+
+
+## April 2019
+New or changed topic | Description
+--- | ---
+[Install Intune Company Portal on Microsoft Managed Desktop devices](get-started/company-portal.md) | New topic
+[Install Microsoft Project and Microsoft Visio on Microsoft Managed Desktop devices](get-started/project-visio.md) | New topic 
+[Prepare on-premises resources access for Microsoft Managed Desktop](get-ready/authentication) | New topic
+[Register devices in Microsoft Managed Desktop](get-started/register-devices-self) | New topic
+[Register devices in Microsoft Managed Desktop for Partners](get-started/register-devices-partner)
+[Deploy apps to Microsoft Managed Desktop devices](get-started/deploy-apps)
 
 ## March 2019
 New or changed topic | Description
