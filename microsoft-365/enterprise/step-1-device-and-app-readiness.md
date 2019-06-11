@@ -3,8 +3,8 @@ title: Step 1 - Device and App Readiness
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
-ms.date: 09/14/2018
-audience: ITPro
+ms.date: 05/20/2019
+ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority

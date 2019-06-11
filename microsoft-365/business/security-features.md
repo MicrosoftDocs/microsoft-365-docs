@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 Business security features"
+title: "Microsoft 365 Business security and compliance features"
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -21,7 +21,7 @@ ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: "Learn about the security features that come with Microsoft 365 Business."
 ---
 
-# Microsoft 365 Business security features
+# Microsoft 365 Business security and compliance features
 
 Microsoft 365 Business offers simplified security features to help safeguard your data on PCs, phones, and tablets.
     
@@ -31,7 +31,6 @@ Microsoft 365 Business offers simplified security features to help safeguard you
 
 You can manage many of the Microsoft 365 Business security features in the admin center, which gives you a simplified way to turn these features on or off. In the admin center you can do the following:
   
-![Screenshot of the Devices card in the admin center](media/9982e784-dbf9-4a76-a159-bb3e2e5aa23f.png)
   
 - [Set application management settings for Android or iOS devices](app-protection-settings-for-android-and-ios.md) . 
     
@@ -63,8 +62,19 @@ Advanced features in Microsoft 365 Business are available to help you protect yo
     
   - Sophisticated attachment scanning and AI-powered analysis to detect and discard dangerous messages.
     
-  - Automatic checks of web links in email to assess if they are part of a phishing scheme. This keeps you safe from accessing unsafe websites.
+  - Automatic checks of links in email to assess if they are part of a phishing scheme. This keeps you safe from accessing unsafe websites.
+
+- **[The full capabilities of Intune in the Azure portal](https://go.microsoft.com/fwlink/p/?linkid=871403)**
     
+    Accessing the Intune admin center in the Azure portal allows you to set up additional security features, such as the management of MacOS devices, iPhone, and Android devices along with advanced device management for Windows, that are not available through Microsoft 365 Business admin center.
+- **Same [Conditional Access](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/overview) as Azure AD P1 plan**
+
+    Conditional Access can help protect your organization from sign-in risk, access attempts from an unexpected network or locale, access attempts form risky device types, and so on. Conditional Access policies are enforced after the first authentication is completed, and it uses signals from the first authentication event to determine if the attempted access should be approved, denies, or f more proof (such as second form of identification) is required.
+    
+## Compliance features
+
+Your Microsoft 365 Business subscription includes features that help you maintain compliance and regulatory standards.
+
 - **[Overview of data loss prevention policies](https://support.office.com/article/1966b2a7-d1e2-4d92-ab61-42efbb137f5e)** (DLP). 
     
     You can set up DLP to automatically detect sensitive information, like credit card numbers, social security numbers, etc. to prevent their inadvertent sharing outside your company.
@@ -75,13 +85,9 @@ Advanced features in Microsoft 365 Business are available to help you protect yo
     
 - **[Azure Information Protection](https://go.microsoft.com/fwlink/p/?linkid=871406)**
     
-    Information protection helps you control access to sensitive information in email and documents with controls like "Do not forward" and "Do not copy." You can also classify sensitive information as "Confidential" and specify how classified information can be shared outside and inside the business. Enterprise-grade encryption is easy to apply to email and documents to keep your information private. Microsoft 365 Business includes all the features of [Azure Information Protection Plan 1](https://go.microsoft.com/fwlink/p/?linkid=871407). You can also install the Azure Information Protection client add-in for Office apps. For more details, see [Azure Information Protection client admininstrator guide](https://docs.microsoft.com/azure/information-protection/rms-client/client-admin-guide).
-    
-- **[The full capabilities of Intune in the Azure portal](https://go.microsoft.com/fwlink/p/?linkid=871403)**
-    
-    Accessing the Intune admin center in the Azure portal allows you to set up additional security features, such as the management of MacOS devices, iPhone, and Android devices along with advanced device management for Windows, that are not available through Microsoft 365 Business admin center.
-    
-The next sections describe how you can manage these features in the Security &amp; Compliance center and the Intune admin center. Over time the simplified controls will be added to the Microsoft 365 Business admin center.
+    Information protection helps you control access to sensitive information in email and documents with controls like "Do not forward" and "Do not copy." You can also classify sensitive information as "Confidential" and specify how classified information can be shared outside and inside the business. Enterprise-grade encryption is easy to apply to email and documents to keep your information private. Microsoft 365 Business includes all the features of [Azure Information Protection Plan 1](https://go.microsoft.com/fwlink/p/?linkid=871407). You can also install the Azure Information Protection client add-in for Office apps. For more details, see [Azure Information Protection client administrator guide](https://docs.microsoft.com/azure/information-protection/rms-client/client-admin-guide).
+
+You can manage these features in the Security &amp; Compliance center and the Intune admin center. Over time the simplified controls will be added to the Microsoft 365 Business admin center.
   
     
 ## FAQ

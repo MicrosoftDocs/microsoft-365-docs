@@ -3,8 +3,8 @@ title: Step 2 - Directory and Network Readiness
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
-ms.date: 09/14/2018
-audience: ITPro
+ms.date: 05/10/2019
+ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
