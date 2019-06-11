@@ -25,8 +25,8 @@ To complete registration for your customer, first create a CSV file.
 Your file needs to include the **exact same column headings** as the sample one (Manufacturer, Model, etc.), but your own data for the other rows. If you use the template, open it in a text editing tool such as Notepad, and consider leaving all the data in row 1 alone, only entering data in rows 2 and below. 
     
   ```
- Manufacturer,Model,Serial Number,Hardware Hash
-  SpiralOrbit,ContosoABC,000000000000,
+ Manufacturer,Model,Serial Number
+  SpiralOrbit,ContosoABC,000000000000
   
   
   ```

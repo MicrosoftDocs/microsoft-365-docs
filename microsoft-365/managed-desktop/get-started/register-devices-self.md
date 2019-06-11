@@ -34,20 +34,20 @@ The hardware hash must be an exact match.
 To obtain the hardware hash you can ask for help from your OEM or Partner, or follow these steps for each device:
 
 1.	Open a PowerShell prompt with administrative rights.
-2.	Run `Install-Script -Name Get-WindowsAutoPilotInfo`
-3.	Run `powershell -ExecutionPolicy Unrestricted Get-WindowsAutopilotInfo -OutputFile <path>\hardwarehash.csv`
+2.	Run `Install-Script -Name Get-MMDRegistrationInfo`
+3.	Run `powershell -ExecutionPolicy Unrestricted Get-MMDRegistrationInfo -OutputFile <path>\hardwarehash.csv`
 
 
 Alternately, you can follow these steps on a brand-new device (before going through OOBE for the first time):
 
 1. On a different device, insert a USB drive.
 2. Open a PowerShell prompt with administrative rights.
-3. Run `Save-Script -Name Get-WindowsAutoPilotInfo -Path <pathToUsb>`
+3. Run `Save-Script -Name Get-MMDRegistrationInfo -Path <pathToUsb>`
 4. Turn on the target device, but do not start the setup experience. If you accidentally start the setup experience, you'll have to reset or reimage the device.
 5. Insert the USB drive, and then press SHIFT + F10.
 6. Open a PowerShell prompt with administrative rights, and then run `cd <pathToUsb>`.
 7. Run `Set-ExecutionPolicy -ExecutionPolicy Unrestricted`
-8. Run `.\Get-WindowsAutoPilotInfo -OutputFile <path>\hardwarehash.csv`
+8. Run `.\Get-MMDRegistrationInfo -OutputFile <path>\hardwarehash.csv`
 3. Remove the USB drive, and then shut down the device by running `shutdown -s -t 0`
 
 >[!IMPORTANT]
