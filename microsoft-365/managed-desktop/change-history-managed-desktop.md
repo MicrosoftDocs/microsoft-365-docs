@@ -33,8 +33,8 @@ New or changed topic | Description
 [Install Microsoft Project and Microsoft Visio on Microsoft Managed Desktop devices](get-started/project-visio.md) | New topic 
 [Prepare on-premises resources access for Microsoft Managed Desktop](get-ready/authentication) | New topic
 [Register devices in Microsoft Managed Desktop](get-started/register-devices-self) | New topic
-[Register devices in Microsoft Managed Desktop for Partners](get-started/register-devices-partner)
-[Deploy apps to Microsoft Managed Desktop devices](get-started/deploy-apps)
+[Register devices in Microsoft Managed Desktop for Partners](get-started/register-devices-partner) | New topic
+[Deploy apps to Microsoft Managed Desktop devices](get-started/deploy-apps) | Updated topic
 
 ## March 2019
 New or changed topic | Description
