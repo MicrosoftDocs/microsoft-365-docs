@@ -12,7 +12,6 @@ ms.collection:
 - M365-subscription-management 
 ms.custom:
 - Adm_O365
-- Core_O365Admin_Migration
 - MiniMaven
 - MSB365
 search.appverid:
@@ -268,5 +267,13 @@ You can decide to not to let the people in your organization to share their cale
 2. On the **Services & add-ins** page choose **Calendar**, and choose if people in your organization can share their calendars with people outside who have Office 365 or Exchange, or with anyone. 
     If you choose the share with anyone you can decide to also only share free/busy information.
 
-ADD FIGURE
+3. Choose **Save changes** on the bottom of the page.
 
+    The following figure shows calendar sharing not allowed. </br></br>
+    ![Screenshot of showing external calendar sharing as not allowed.](media/nocalendarsharing.png)
+
+    The following figure shows the settings when calendar sharing is allowed with an email link with only free/busy information.
+
+   ![Screenshot of calendar free/busy sharing with anyone.](media/sharefreebusy.png)
+
+If your users are allowed to share their calendars, see [these instructions](https://support.office.com/article/7ecef8ae-139c-40d9-bae2-a23977ee58d5) for how to share from Outlook on the web.
