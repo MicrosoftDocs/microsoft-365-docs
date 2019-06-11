@@ -9,7 +9,7 @@ ms.localizationpriority: normal
 
 # Microsoft Managed Desktop service description
 
-Microsoft Managed Desktop is a service that provides your users with a secure modern experience and always keeps devices up to date with the latest versions of Windows 10 Enterprise edition, Office 365 ProPlus, and security services, including:
+Microsoft Managed Desktop is a service that provides your users with a secure modern experience and always keeps devices up to date with the latest versions of Windows 10 Enterprise edition, Office 365 ProPlus, and Microsoft security services, including:
 
 - Configuration of devices
 - Features to keep users and devices secure, including Windows Hello, BitLocker, SecureBoot, and virtualization-based security
