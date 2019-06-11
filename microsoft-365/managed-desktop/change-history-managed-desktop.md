@@ -18,7 +18,7 @@ This topic lists new and updated topics in the [Microsoft Managed Desktop docume
 ## May 2019
 New or changed topic | Description
 --- | ---
-[Microsoft Managed Desktop supported regions and languages](service-description/regions-languages | Updated topic
+[Microsoft Managed Desktop supported regions and languages](service-description/regions-languages) | Updated topic
 [Microsoft Managed Desktop devices](service-description/device-list) | Updated topic
 [Microsoft Managed Desktop archived devices](service-description/archived-device-list) | New topic
 [Prepare mapped drives for Microsoft Managed Desktop](get-ready/mapped-drives) | New topic
