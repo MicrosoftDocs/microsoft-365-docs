@@ -13,45 +13,67 @@ ms.collection:
 - M365-identity-device-management
 ms.custom:
 - Adm_O365
-- Core_O365Admin_Migration
 - MiniMaven
 - MSB365
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Learn how to set  up conditional access policies for Microsoft 365 Business."
+description: "Learn how to require MFA and set up conditional access policies for Microsoft 365 Business."
 ---
 
-# Set up conditional access policies for Microsoft 365 for campaigns
+# Require MFA and set up conditional access policies for Microsoft 365 for campaigns
 
 Conditional access policies add substancial additional security. Microsoft provides a set of baseline conditional access policies that are recommended for all customers. Baseline policies are a set of predefined policies that help protect organizations against many common attacks. These common attacks can include password spray, replay, and phishing.
 
-These policies require admins and users to enter a second form of authentication (called multifactor authentication, or MFA) when certain conditions are met. For example, if a user is signing in from a different country, the sign-in might be considered risky and the user must provide an additional form of authentication. 
+These policies require admins and users to enter a second form of authentication (called multifactor authentication, or MFA) when certain conditions are met. For example, if a user is signing in from a different country or an unknown device, the sign-in might be considered risky and the user must provide an additional form of authentication. 
 
 Currently, baseline policies include the following:
-- **Require MFA for admins** — Requires multi-factor authentication for the most privileged administrator roles, including global administrator.
-- **End user protection** — Requires multi-factor authentication for users only when a sign-in is risky. 
-- **Block legacy authentication** — Older client apps and some new apps don't use newer, more secure, authentication protocols. These older apps can bypass conditional access policies and gain unauthorized access to your environment. This policy blocks access from clients that don't support conditional access. 
-- **Require MFA for Service Management** — Requires multi-factor authentication for access to management tools, including Azure portal (where you configure baseline policies). 
+- Set up in Microsoft 365 admin center:
+    - **Require MFA for admins** — Requires multi-factor authentication for the most privileged administrator roles, including global administrator.
+    - **End user protection** — Requires multi-factor authentication for users only when a sign-in is risky. 
+- Set up in Azure Active Directory portal:
+    - **Block legacy authentication** — Older client apps and some new apps don't use newer, more secure, authentication protocols. These older apps can bypass conditional access policies and gain unauthorized access to your environment. This policy blocks access from clients that don't support conditional access. 
+    - **Require MFA for Service Management** — Requires multi-factor authentication for access to management tools, including Azure portal (where you configure baseline policies). 
 
-Microsoft recommends you enable all of these baseline policies. After these policies are enabled, admins and users will be prompted to register for Azure Multii-Factor authentication.
+Microsoft recommends you enable all of these baseline policies. After these policies are enabled, admins and users will be prompted to register for Azure Multi-Factor authentication.
 
 For more information about these policies, see [What are baseline policies](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-baseline-protection)?
 
+
+## Require MFA
+
+To require that all users sign in with a second form of ID:
+
+1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> and choose **Setup**.
+
+2. On the Setup page, choose **View** in the **Make sign-in more secure** card.
+
+
+    ![Make sign-in more secure card.](media/setupmfa.png)
+3. On the Make sign-in more secure page, choose **Get started**.
+ 
+4. On the Strengthen sign-in security pane, check the check boxes next to **Require multi-factor authentication for admins** and **Require users to register for multi-factor authentication and block access if risk is detected**.
+    Be sure to exclude the break-glass admin account from the MFA requirement in the **Find users** box.
+    
+    ![Strengthen sing-in security page.](media/requiremfa.png)
+
+5. Choose **Create policy** on the bottom of the page.
 
 ## Set up baseline policies
 
 1. Go to [Azure portal](https://portal.azure.com), and then navigate to **Azure Active Directory** \> **Conditional Access**.
     
-    The baseline policies are listed on the page.
-    ![Page that lists baseline policies for conditional access.](media/baslinepolicies.png)
+    The baseline policies are listed on the page, and you can see that Require MFA for admins and End user protection are already enabled after you completed the steps in [require MFA](#require-mfa).
+
+    ![Page that lists baseline policies for conditional access.](media/casettings.png)
 2. See the following specific instructions for each policy:
 
     - [Require MFA for admins](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-baseline-protect-administrators)
 
-        Be sure to exclude the break-glass admin account from the MFA requirement.
+       
     -   [Require MFA for users](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-baseline-protect-end-users)  
     - [Block legacy authentication](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-baseline-protect-legacy-auth)
+    - [Require MFA for service management](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-azure)
 
 You can set up many additional policies, such as requiring approved client apps. See the [Conditional Access Documentation](https://docs.microsoft.com/azure/active-directory/conditional-access/) for more information.

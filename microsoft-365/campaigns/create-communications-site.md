@@ -13,7 +13,6 @@ ms.collection:
 - M365-identity-device-management
 ms.custom:
 - Adm_O365
-- Core_O365Admin_Migration
 - MiniMaven
 - MSB365
 search.appverid:
