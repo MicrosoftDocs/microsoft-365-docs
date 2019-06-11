@@ -49,7 +49,7 @@ In addition, the device must also:
 
 - Have an image approved by Microsoft Managed Desktop. When you order devices, make sure you specify that they are being used with Microsoft Managed Desktop.
 - Not have completed the Windows first-run experience.
-- Be enrolled with [Windows Autopilot](https://docs.microsoft.com/en-us/windows/deployment/windows-autopilot/user-driven-aad) and have the Microsoft Managed Desktop Autopilot profile assigned.
+- Be registered with MMD using the [Device Registration](https://aka.ms/mmddrhelp) feature
 
 **Additional Help**
 
