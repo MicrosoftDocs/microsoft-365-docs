@@ -17,7 +17,7 @@ You can engage with Microsoft Consulting Services (MCS) to get your apps package
 To work with MCS app packaging, **you must provide these elements**:
 
 - The source installer files (e.g., setup.exe or .msi).
-- The installation instructions, specifying details about how the final installation should look. For example, should there be a desktop shortcut to the app? What should the app's visibility be? Should the app connect to a server and if so, which one? For details, see the [application packaging request template](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-ready/downloads/app-packaging-template.docx). 
+- The installation instructions, specifying details about how the final installation should look. For example, should there be a desktop shortcut to the app? What should the app's visibility be? Should the app connect to a server and if so, which one? <!--For details, see the [application packaging request template](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-ready/downloads/app-packaging-template.docx). -->
 - You must perform your own acceptance testing to verify that the app works as you need it to in your environment.
 
 **MCS will take care of these actions:**

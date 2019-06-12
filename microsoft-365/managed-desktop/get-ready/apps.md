@@ -18,12 +18,12 @@ ms.collection: M365-modern-desktop
 
 Microsoft includes certain key apps along with the Microsoft 365 E3 or E5 license needed to participate in Microsoft Managed Desktop. However, even though we provide these apps, you still have certain responsibilities and actions to complete.
 
-You can also deploy additional non-Microsoft apps to your end users for self-service through the Company Portal or a required background installation, all using Microsoft Intune’s deployment pipeline. If you have the expertise you can migrate those apps you need yourself; if not either Microsoft Consulting Services or non-Microsoft vendors will be happy to help you with a packaging and migration project. 
+You can also deploy additional non-Microsoft apps to your end users for self-service through the Company Portal or a required background installation, all using Microsoft Intune’s deployment pipeline. If you have the expertise you can migrate those apps you need yourself; if not either Microsoft Consulting Services (MCS) or non-Microsoft vendors will be happy to help you with a packaging and migration project. For more information about working with MCS, see [Working with Microsoft Consulting Services](apps-MCS.md).
 
 
 ## Apps provided by Microsoft
 
-Included with your Microsoft Managed Desktop license are 64-bit versions of the apps in the Office 365 ProPlus Standard Suite (Word, Excel, PowerPoint, Outlook, Publisher, Access, Skype for Business {still true or replaced by Teams now?}, OneNote.) Click-to-Run versions of Microsoft Project and Visio are *not* included by default, but you can request them to be added.
+Included with your Microsoft Managed Desktop license are 64-bit versions of the apps in the Office 365 ProPlus Standard Suite (Word, Excel, PowerPoint, Outlook, Publisher, Access, Skype for Business, and OneNote.) Click-to-Run versions of Microsoft Project and Visio are *not* included by default, but you can request them to be added. For more information about these apps, see [Install Microsoft Project or Microsoft Visio on Microsoft Managed Desktop devices](../get-started/project-visio.md).
 
 ### What Microsoft does to support the apps we provide
 
