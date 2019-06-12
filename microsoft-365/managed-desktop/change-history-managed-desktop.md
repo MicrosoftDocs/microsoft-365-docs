@@ -14,6 +14,13 @@ ms.localizationpriority: normal
 
 This topic lists new and updated topics in the [Microsoft Managed Desktop documentation](index.yml).
 
+## June 2019
+New or changed topic | Description
+--- | ---
+[Apps in Microsoft Managed Desktop](get-ready/apps.md) | Updated topic
+[Working with Microsoft Consulting Services](get-ready/apps-mcs.md) | New topic
+[Microsoft Managed Desktop roles and responsibilities](intro/roles-and-responsibilities.md) | Updated topic
+
 
 ## May 2019
 New or changed topic | Description
