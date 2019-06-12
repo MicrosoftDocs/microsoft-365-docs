@@ -20,6 +20,7 @@
 ### [Prepare mapped drives for Microsoft Managed Desktop](get-ready/mapped-drives.md)
 ### [Prepare certificates and network profiles for Microsoft Managed Desktop](get-ready/certs-wifi-lan.md)
 ### [Prepare apps](get-ready/apps.md)
+#### [Working with Microsoft Consulting Services](get-ready/apps-MCS.md)
 ## [Get started with Microsoft Managed Desktop](get-started/index.md)
 ### [Add Admin contacts](get-started/add-admin-contacts.md)
 ### [Order devices](get-started/devices.md)
