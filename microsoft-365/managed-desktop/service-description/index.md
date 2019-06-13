@@ -14,7 +14,6 @@ Microsoft Managed Desktop is a service that provides your users with a secure mo
 - Configuration of devices
 - Features to keep users and devices secure, including Windows Hello, BitLocker, SecureBoot, and virtualization-based security according to Microsoft best practices
 - Device security monitoring and remediation services
-- Deployment of apps, both those that are part of Office 365 ProPlus and line-of-business or other apps you need
 - App compatibility, through [Desktop App Assure](https://docs.microsoft.com/fasttrack/win-10-desktop-app-assure)
 - Management of updates for Windows 10 and Office 365 ProPlus apps
 - Analytical data about device and app usage
