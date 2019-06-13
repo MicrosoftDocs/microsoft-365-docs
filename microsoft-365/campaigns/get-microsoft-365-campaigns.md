@@ -13,6 +13,7 @@ ms.collection:
 - M365-Campaigns
 ms.custom:
 - Adm_O365
+- Core_O365Admin_Migration
 - MiniMaven
 - MSB365
 search.appverid:
@@ -23,28 +24,23 @@ description: "Protect your election, campaign, committee or support organization
 ---
 
 # Microsoft 365 for Campaigns
-If your campaign (or campaign support organization) needs cybersecurity protection, this is the least expensive Microsoft plan available. 
-Organizations that run (or support) campaigns and those that support elected staff are usually eligible. This topic has: 
-- More details about who can get Microsoft 365 for Campaigns, 
-- What it includes, how much it costs, and what your commitment is
+Microsoft 365 for Campaigns helps you run your campaign while keeping your information secure. We help you stay connected to your team, and simple controls help you secure your email,devices, and content. 
+
+Campaigns and political parties in the USA are eligible for this campaign:
+- US Federal political campaigns (for example, campaigns seeking office for the US House, US Senate, or President)
+- National-level political parties in the United States.
+
+If your campaign or political party needs cybersecurity protection, this is the Microsoft plan for you.  
+ This topic has details about: 
+- What the plan includes, how much it costs, and what your commitment is
 - How to get started
 
-There are several ways to get Microsoft 365 Business.
-## Who can get Microsoft 365 for Campaigns? 
-Microsoft 365 for Campaigns is available to campaigns, candidates, elected officials, and support organizations based in the USA. You can use Microsoft 365 for Campaigns if you:
-- Are a current candidate (or a representative) running for federal, state, or local office in the United States. 
-- Represent a campaign organization for a sitting member of Congress.
-- Represent a national or state party committee.
-- Are a technology vendor who primarily serves campaigns and committees.
-- Are a nonprofit organization or nongovernmental organization that primarily serves campaigns and committees. 
-
 ## What does it include?
-Microsoft 365 for Campaigns includes....
+Microsoft 365 for Campaigns helps you and your campaign staff work to together 
 
-## Get Microsoft 365 Business from Microsoft 
 ## What does it cost, who needs it, and what is the commitment?
 Microsoft 365 for Campaigns costs $5 per user per month. 
-To protect your campaign or business, we recommend a license for the candidate, all senior staff who are part of the campaign including the campaign manager, and usually all full-time staff. Very strategic volunteer employees might also need a license. In general, anyone who needs protected email and devices should have a license.
+To protect your campaign or business, we recommend a license for the candidate, all senior staff who are part of the campaign or party including the campaign manager, and usually all full-time staff. Very strategic volunteer employees might also need a license. In general, anyone who needs protected email and devices should have a license.
 There is no commitment. You can pay monthly for the licenses you need and stop using the service any time.
 
 ## How to get Microsoft 365 for Campaigns
@@ -53,25 +49,21 @@ There is no commitment. You can pay monthly for the licenses you need and stop u
 2. After you've completed the form, it takes us a few days to check that you're eligible Microsoft 365 for Campaigns. 
 3. Once we've verified your details, you'll receive an email from Microsoft that includes a sign-up location and code specific to your organization. 
 
+## Sign up for Microsoft 365 for Campaigns
 
-  
-## Get Microsoft 365 Business from Microsoft Partner Center
+Before you start, you'll need the email from Microsoft with a code for your organization, and your business credit card. 
 
-1. Sign in at [Microsoft Partner Center](https://go.microsoft.com/fwlink/p/?linkid=849910) by using the credentials you created when you enrolled to the Cloud Service Provider (CSP) program. 
-    
-2. On the Partner Dashboard, choose Customers, then select your customer or add a new customer before you get Microsoft 365 Business.
-    
-    ![In the Microsoft Pertner center, add a new customer.](../business/media/ec807d07-bbd2-411f-8fe1-c644cf9a3882.png)
-  
-3. On the customer's **Subscription** page, select Add subscription, choose the Small business option under Catalog, and then choose **Microsoft 365 Business**.
-    
-    
-    Select the number of licenses you need (up to 300). If you have more than 300 users, see [Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=862316) instead. 
-    
-    ![On the New subscription page choose small business.](../business/media/52d99e89-2175-4974-84bb-dd626048541b.png)
- 
-  
-    Complete the rest of the steps for adding a new customer including the business name.
+> [!TIP]
+> The code we sent is unique to you. It only works once. Make sure you have enough time to complete sign-up. It takes about ten minutes. 
+
+1. Select the link in your email
+2. **On the Microsoft 365 Business page**, enter your business details. In the Business email address filed, use your current email address. We only need address to stay in touch with you during the setup process. Select Next.
+3. **On the Create your user ID page**:
+ - Enter the username or alias you want to use as part of your email address. For example, you might just want to be known as Alice or Rob. In a larger campaign, you might need to include your last name such as AliceChavez.
+ - In Yourcompany, enter the name of the campaign you work for. For example, your campaign might be called ContosoCampaign. You can enter that in Yourcompany. 
+ - In Select a domain, use .onmicrosoft.com for now. We can get you set up with a domain later, or get you connected to a domain that you already own. However, if your campaign or party doesn't own a domain and you are sure what domain you want, you can buy one now by selecting it.
+ - Create a password and select **Create my account**.     
+
     
 
 
