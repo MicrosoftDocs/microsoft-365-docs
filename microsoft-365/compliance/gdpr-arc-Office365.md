@@ -5,8 +5,8 @@ keywords: GDPR Accountability Readiness, accountability readiness checklist, Mic
 localization_priority: Priority
 ms.prod: microsoft-365-enterprise
 ms.topic: article
-author: herviicban
-ms.author: heicba
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.collection: GDPR
 ---
