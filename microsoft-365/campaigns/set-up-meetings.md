@@ -11,6 +11,7 @@ ms.collection:
 - Adm_O365
 - M365-subscription-management 
 - M365-identity-device-management
+- M365-Campaigns
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
