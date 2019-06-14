@@ -56,6 +56,6 @@ There is no commitment. You can pay monthly for the licenses you need and stop u
 2. After you've completed the form, it takes us a few days to check that you're eligible Microsoft 365 for Campaigns. 
 3. After we've verified your details, you'll receive an email invitation from Microsoft that includes a sign-up link specific to your organization. 
 
-When you receive your invitation, read the Sign up for Microsoft 365 for Campaigns topic.
+When you receive your invitation, get signed up by following the topic [Sign up for Microsoft 365 for Campaigns](m365-campaigns-sign-up.md).
 
 

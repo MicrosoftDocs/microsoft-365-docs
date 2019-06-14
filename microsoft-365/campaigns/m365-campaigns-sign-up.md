@@ -1,5 +1,5 @@
 ---
-title: "Get Microsoft 365 for Campaigns"
+title: "Sign up for Microsoft 365 for Campaigns"
 ms.author: supotter
 author: supotter
 manager: scotv
@@ -20,15 +20,20 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
-description: "Protect your campaign from cybersecurity threats to email, data, and communication using Microsoft 365 for campaigns."
+description: "Sign up Microsoft 365 for campaigns to protect your campaign from cybersecurity threats to email, data, and communication."
 ---
 
 # Sign up for Microsoft 365 for Campaigns 
 
-Before you start, you'll need the email from Microsoft with a code for your organization, and your business credit card. 
+Before you start: 
+- Complete the steps in [Microsoft 365 for Campaigns](get-microsoft-365-campaigns.md) 
+- Makes sure you have your email invitation from Microsoft with a unique sign-up link for your organization
+- Have your business credit card and a phone to hand. 
 
 > [!TIP]
 > The link we sent is unique to your campaign. It only works once, so make sure you have enough time to complete sign-up. You'll need about ten minutes. 
+
+## Steps to sign-up for Microsoft 365 for Campaigns 
 
 1. Find your Invitation to Microsoft 365 for Campaigns email. In the email, select **Click To Enroll Your Organization**. This triggers Microsoft 365 sign-up to begin.
 2. **On the Microsoft 365 Business page**, enter your business details. In the **Business email address** field, use your current email address. We only need this address to stay in touch with you during the setup process. Select **Next**.

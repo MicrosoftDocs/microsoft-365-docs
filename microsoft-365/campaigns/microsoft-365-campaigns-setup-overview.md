@@ -33,7 +33,7 @@ The following diagram describes how admins set up Microsoft 365 for Campaigns.
 
 ![Steps to set up Microsoft 365 for Campaigns](media/M365-democracy-SetUpProcess.png)
 
-First you get started by [signing up for Microsoft 365 for Campaigns](../business/sign-up.md?toc=/microsoft-365/campaigns/toc.json) and then [running the setup wizard](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json) to configure the core settings.
+First you get started by [requesting an invite from Microsoft](https://m365forcampaigns.microsoft.com/), then [signing up for Microsoft 365 for Campaigns](m365-campaigns-sign-up.md). To complete setup [run the setup wizard](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json) to configure the core settings.
 
 Then you bump up security protection by: [protecting admin accounts](m365-campaigns-protect-admin-accounts.md), [increasing threat protection](m365-campaigns-increase-protection.md), and setting up [conditional access policies](m365-campaigns-conditional-access.md) and additional protection for [Windows 10 devices](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json).
 

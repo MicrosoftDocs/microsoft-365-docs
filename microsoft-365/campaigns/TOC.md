@@ -5,7 +5,7 @@
 
 # Setup
 ## [Overview](microsoft-365-campaigns-setup-overview.md)
-## [Sign up](../business/sign-up.md?toc=/microsoft-365/campaigns/toc.json)
+## [Sign up](m365-campaigns-sign-up.md)
 ## [Set up Microsoft 365](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json)
 ## [Add users](../business/add-users-m365b.md?toc=/microsoft-365/campaigns/toc.json)
 
