@@ -23,7 +23,7 @@ ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: "Get Microsoft 365 for Campaigns so you can protect your campaign from cybersecurity threats to email, data, and communications."
 ---
 
-# Microsoft 365 for Campaigns
+# Get Microsoft 365 for Campaigns
 
 Campaigns and political parties in the USA are eligible for this plan. Currently this plan is available to:
 - US federal political campaigns (for example, campaigns seeking office for the US House, US Senate, or President)
