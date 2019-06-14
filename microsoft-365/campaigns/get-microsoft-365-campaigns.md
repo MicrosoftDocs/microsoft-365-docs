@@ -20,11 +20,11 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
-description: "Protect your election, campaign, committee or support organization from cybersecurity threats to email, data, and communication using Microsoft 365 for campaigns."
+description: "Protect your campaign from cybersecurity threats to email, data, and communication using Microsoft 365 for campaigns."
 ---
 
 # Microsoft 365 for Campaigns
-Microsoft 365 for Campaigns helps you run your campaign while keeping your information secure. We help you stay connected to your team, and simple controls help you secure your email,devices, and content. 
+Microsoft 365 for Campaigns helps you run your campaign while keeping your information secure. Stay connected to your team through email, chat, and sharing or working on files together. Simple controls help keep your email, devices, and content secure. 
 
 Campaigns and political parties in the USA are eligible for this campaign:
 - US Federal political campaigns (for example, campaigns seeking office for the US House, US Senate, or President)
