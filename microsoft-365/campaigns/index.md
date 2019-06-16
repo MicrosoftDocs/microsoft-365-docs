@@ -62,7 +62,6 @@ Get started
                     </div>
                     <div class="cardText">
                         <p><b>Follow these steps to get started:</b></p>
-                        <P><a href="microsoft-365-campaigns-whats-included.md">Find out what's included in Microsoft 365 campaigns</a></p>
                         <P><a href="get-microsoft-365-campaigns.md">Get Microsoft 365 campaigns</a></p>
                         <P><a href="m365-campaigns-users.md">Learn how your users will work with Microsoft 365</a></p>
                         <P><a href="microsoft-365-campaigns-setup-overview.md">Set up Microsoft 365 campaigns</a></p>

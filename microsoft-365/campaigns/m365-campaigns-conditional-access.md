@@ -55,7 +55,7 @@ To require that all users sign in with a second form of ID:
 3. On the Make sign-in more secure page, choose **Get started**.
  
 4. On the Strengthen sign-in security pane, check the check boxes next to **Require multi-factor authentication for admins** and **Require users to register for multi-factor authentication and block access if risk is detected**.
-    Be sure to exclude the [emergency](m365-campaigns-protect-admin-accounts#create-an-emergency-admin-account) or "break-glass" admin account from the MFA requirement in the **Find users** box.
+    Be sure to exclude the [emergency](m365-campaigns-protect-admin-accounts.md#create-an-emergency-admin-account) or "break-glass" admin account from the MFA requirement in the **Find users** box.
     
     ![Strengthen sing-in security page.](media/requiremfa.png)
 
