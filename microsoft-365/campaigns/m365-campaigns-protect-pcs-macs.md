@@ -25,15 +25,20 @@ description: "Protect against phishing and other attacks with Microsoft 365 for 
 
 # Protect unmanaged Windows 10 PCs and Macs
 
-A Windows 10 PC is considered managed after you have completed the following two steps:
+You can manage Windows 10 PCs and Macs by enrolling these into Microsoft Intune, which allows you to ensure these are healthy and secure before accessing data in your environment. However, many campaigns and small businesses include staff that bring their own devices (byod) which will not be managed by the organization. For these unmanaged PCs and Macs, use this article to ensure minimum security capabilies are configured. 
+
+<!--A Windows 10 PC is considered managed after you have completed the following two steps:
 
 1. You (or the admin) set up device and data protection policies in the [setup  wizard](../business/set-up.md).
 
 2. You have [connected your computer to Azure Active Directory](../business/set-up-windows-devices.md) and use your Microsoft 365 Business username and password to sign in.
+3. --> 
 
 ## Protect a computer running Windows 10 or a Mac
 
-If you have a PC that is running Windows 10 that is not connected to Microsoft 365 Business, or a Mac, the Microsoft 365 Business protections do not apply to it, but here are some things you can do to keep your data secure on these devices as well:
+<!--If you have a PC that is running Windows 10 that is not connected to Microsoft 365 Business, or a Mac, the Microsoft 365 Business protections do not apply to it, but here are some things you can do to keep your data secure on these devices as well:
+-->
+If your Windows 10 PC or Mac is not managed by your organization, be sure to configure these security capabilities.
 
 ## [Windows 10](#tab/Windows10)
 **Turn on device encryption**<p>

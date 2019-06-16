@@ -25,15 +25,17 @@ description: "Create a collaboration space for your team with Microsoft Teams."
 
 # Create teams for collaboration in Microsoft Teams
 
-Microsoft Teams is a collaboration app that helps your campaign stay organized and have conversations, from any device. You can use Microsoft Teams to have instant conversations with others in the campaign or guests outside of the campaign. You can also make phone calles, host meetings, and share files.
+Microsoft Teams is a collaboration app that helps your staff stay organized and have conversations, from any device. You can use Microsoft Teams to have instant conversations with members of your staff or guests outside your organization. You can also make phone calles, host meetings, and share files.
 
 ## Best practices
 
-Create the following teams so you can communicate and collaborate securely:
+As an example, campaigns can create the following teams to communicate and collaborate securely:
 
 1. **A Campaign Leads team** - set this up as a private team so that only your key campaign members can access it and discuss potentially sensitive concerns.
 2. **A general Campaign team** - this is for everyone to use for day to day communications and work. Individuals, groups, or committees can set up channels in this team to do their work. For example, the event planning people can set up a channel to chat and coordinate logistics for campaign events.
 3. **A partners team** - one where you can coordinate with your vendors, partners, or volunteers without allowing them into anything sensitive.
+
+You can also create teams for specific projects and apply the right amount of protection based on who needs to be included. 
 
 ![Diagram of a Microsoft Teams window with three separate teams to allow for secure communication and collaboration](media/m365-democracy-teams-collab.png)
 

@@ -26,16 +26,18 @@ description: "Setup overview for Microsoft 365 for Campaigns"
 
 # Set up Microsoft 365 for Campaigns
 
-This article describes the process of setting up Microsoft 365 for Campaigns.
+This article describes the process of setting up Microsoft 365 for Campaigns. Anybody with Microsoft 365 Business can use this guidance to step up security. 
 
 ## Admins: Set up Microsoft 365 for Campaigns
 The following diagram describes how admins set up Microsoft 365 for Campaigns.
 
 ![Steps to set up Microsoft 365 for Campaigns](media/M365-democracy-SetUpProcess.png)
 
-First you get started by [requesting an invite from Microsoft](https://m365forcampaigns.microsoft.com/), then [signing up for Microsoft 365 for Campaigns](m365-campaigns-sign-up.md). To complete setup [run the setup wizard](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json) to configure the core settings.
+For campaigns that qualify for special pricing, get started by [requesting an invite from Microsoft](https://m365forcampaigns.microsoft.com/), then [signing up for Microsoft 365 for Campaigns](m365-campaigns-sign-up.md). To complete setup [run the setup wizard](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json) to configure the core settings.
 
-Then you bump up security protection by: [protecting admin accounts](m365-campaigns-protect-admin-accounts.md), [increasing threat protection](m365-campaigns-increase-protection.md), and setting up [conditional access policies](m365-campaigns-conditional-access.md) and additional protection for [Windows 10 devices](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json).
+For all other organizations, after you've [signed up for Microsoft 365 Business](../business/sign-up.md), complete setup by [running the setup wizard](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json) to configure the core settings.
+
+For all organizations, bump up security protection by: [protecting admin accounts](m365-campaigns-protect-admin-accounts.md), [protecting acces to mail and data](m365-campaigns-conditional-access.md), and [increasing threat protection](m365-campaigns-increase-protection.md).
 
 
  ## Everyone: Set up your devices 
