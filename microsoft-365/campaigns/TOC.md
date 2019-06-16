@@ -1,7 +1,7 @@
 # Microsoft 365 for Campaigns
 ## [Overview](index.md)
 ## [Get Microsoft 365 for campaigns](get-microsoft-365-campaigns.md)
-## [How Microsoft 365 protects campaign data](m365-campaigns-users.md)
+## [How Microsoft 365 protects your data](m365-campaigns-users.md)
 
 # Setup
 ## [Overview](microsoft-365-campaigns-setup-overview.md)
@@ -12,15 +12,15 @@
 # Bump up security protection
 ## [Protect admin accounts](m365-campaigns-protect-admin-accounts.md)
 ## [Protect access to your campaign data](m365-campaigns-conditional-access.md)
-## [Protect against phishing and other threats](m365-campaigns-increase-protection.md) 
+## [Protect against malware and other threats](m365-campaigns-increase-protection.md) 
 
-# Device setup for all campaign staff
+# Device setup for all staff
+## [Set up multifactor authentication](m365-campaigns-multifactor-authenication.md)
 ## [Set up mobile devices](../business/set-up-mobile-devices.md?toc=/microsoft-365/campaigns/toc.json)
 ## [Protect PCs and Macs](m365-campaigns-protect-pcs-macs.md)
 ## [Set up managed Windows devices](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json)
-## [Set up multifactor authentication](m365-campaigns-multifactor-authenication.md)
 
-# Protect your email for all campaign staff
+# Protect email for all staff
 ## [Protect against phishing and other attacks](m365-campaigns-phishing-and-attacks.md)
 ## [Send encrypted email](send-encrypted-email.md)
 

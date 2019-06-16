@@ -27,7 +27,7 @@ description: "Microsoft 365 for campaigns"
 Microsoft 365 for Campaigns
 ===========================
 
-In our current world, keeping data and communications secure is a priority, particularly for political campaigns, medical and legal practices, and many other businesses. Microsoft 365 for campaigns is designed to help protect you and your campaign data. 
+In our current world, keeping data and communications secure is a priority, particularly for political campaigns, medical and legal practices, and many other businesses. Microsoft 365 for campaigns is a recommended security configuration designed to help protect you and your data, even if you're not a campaign. This library includes help for setting up and using this recommended environment. 
 
 **What is Microsoft 365 for Campaigns?** 
 It's a recommended secure configuration that includes Microsoft 365 Business so that you can:
@@ -37,7 +37,7 @@ It's a recommended secure configuration that includes Microsoft 365 Business so 
 
 ![Microsoft 365 Business protects your productivity tools, collaboration tools, file storage, email, devices, and identity](media/M365-WhatIsIt-SecurityFocus.png)
 
-While some organizations qualify for nonprofit pricing for Microsoft 365 Business, any organization with this plan can take advantage of this guidance to configure increased security and learn how to collaborate securely.
+While, currently, federal election campaigns in the United States qualify for special pricing for Microsoft 365 Business, any organization with this plan can take advantage of this guidance to configure increased security and learn how to collaborate securely.
 
 This library includes the following:
 - Prescriptive setup guidance for adding increased security.
@@ -76,7 +76,7 @@ Get started
 Solutions for your campaign
 --------------------------
 
-After you set up your secure Microsoft 365 environment, you can use the following solutions to get working on your campaign:
+After you set up your secure Microsoft 365 environment, you can use the following solutions to get working:
 
 <ul class="panelContent cardsW cols cols2">
     <li>

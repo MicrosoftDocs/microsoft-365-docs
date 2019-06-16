@@ -25,9 +25,9 @@ description: "Learn how to require MFA and set up conditional access policies fo
 
 # Require multi-factor authentication and set up conditional access policies
 
-Conditional access policies add substantial additional security. Microsoft provides a set of baseline conditional access policies that are recommended for all customers. Baseline policies are a set of predefined policies that help protect organizations against many common attacks. These common attacks can include password spray, replay, and phishing.
+You protect access to your data with multi-factor authentication and conditional access policies. These add substantial additional security. Microsoft provides a set of baseline conditional access policies that are recommended for all customers. Baseline policies are a set of predefined policies that help protect organizations against many common attacks. These common attacks can include password spray, replay, and phishing.
 
-These policies require admins and users to enter a second form of authentication (called multifactor authentication, or MFA) when certain conditions are met. For example, if a user is signing in from a different country or an unknown device, the sign-in might be considered risky and the user must provide an additional form of authentication. 
+These policies require admins and users to enter a second form of authentication (called multi-factor authentication, or MFA) when certain conditions are met. For example, if a user is signing in from a different country or an unknown device, the sign-in might be considered risky and the user must provide an additional form of authentication. 
 
 Currently, baseline policies include the following:
 - Set up in Microsoft 365 admin center:
