@@ -32,20 +32,20 @@ Here's how to complete your sign-up for Microsoft 365 for Campaigns.
 - Open your email invitation from Microsoft. The invite has a unique sign-up link for your organization. You'll need this to get campaigns special pricing.
 - Have your business credit card and a phone ready. 
 
-> [!TIP]
-> The link we sent is unique to your campaign. It only works once, so make sure you have enough time to complete sign-up. You'll need about ten minutes. 
+    > [!TIP]
+    > The link we sent is unique to your campaign. It only works once, so make sure you have enough time to complete sign-up. You'll need about ten minutes. 
 
 ## Steps to sign up 
 
-1. In your invitation to Microsoft 365 for Campaigns email, select **Click To Enroll Your Organization**. This triggers Microsoft 365 sign-up to begin.
+1. In your invitation to Microsoft 365 for Campaigns email, select **Click To Enroll Your Organization**. This takes you to Microsoft 365 sign-up.
 2. **On the Microsoft 365 Business page**, enter your business details. For **Business email address**, use a current email address. We only need this address to stay in touch with you during the setup process. Select **Next**.
 3. **On the Create your user ID page**:
     1. In **Username**, enter the name or alias you want for your email address. For example, you might just want to be known as Alice or Rob. In a larger campaign, AliceC or AliceChavez might make more sense.
     2. In **Your company**, enter the name of the campaign you work for. For example, ContosoCampaign. If you already own a domain, use that name here. 
     3. In **Select a domain**, select **.onmicrosoft.com** for now. We can set you up with a domain later, or help you get Microsoft 365 connected to a domain that you already own.
     4. Create a password and select **Create my account**. 
-> [!NOTE]
-> If your campaign or party doesn't own a domain, and you have decided what domain you want, you can buy one now by selecting it.
+    > [!NOTE]
+    > If your campaign or party doesn't own a domain, and you have decided what domain you want, you can buy one now by selecting it.
 
 4. **Prove. You're. Not. A. Robot. page**:
     1. Have your phone ready, and select **Text me** (or **Call me** if you prefer). Then enter your phone number. 
@@ -55,7 +55,7 @@ Here's how to complete your sign-up for Microsoft 365 for Campaigns.
 6. **How does this look page**:
     1. Verify the cost per user is $5.00. If the cost per user is not $5, we recommend calling support.
     2. If you only want to set yourself up for now, select **Next**. 
-    3. Optional: Add some extra licensed users now by changing the number in the **user** field. [The staff you work with can be added to Microsoft 365](../business/add-users-m365b.md?toc=/microsoft-365/campaigns/toc.json) at any time.
+    3. Optional: Add some extra licenses now by changing the number in the **user** field. [The staff you work with can be assigned licenses to Microsoft 365](../business/add-users-m365b.md?toc=/microsoft-365/campaigns/toc.json) at any time.
 7. **How do you want to pay? page**: Select **New credit card**, enter your business credit card details, and select **Place order**. It's also possible to use a bank account if you prefer.
 8. **This may take a moment page**: You'll find details about where to sign in and your user ID. We'll also send this information to the email address that you entered during step 2 above.
 
