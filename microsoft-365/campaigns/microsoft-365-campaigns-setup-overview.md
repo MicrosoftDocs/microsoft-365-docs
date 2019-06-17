@@ -37,7 +37,7 @@ For campaigns that qualify for special pricing, get started by [requesting an in
 
 For all other organizations, after you've [signed up for Microsoft 365 Business](../business/sign-up.md), complete setup by [running the setup wizard](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json) to configure the core settings.
 
-For all organizations, bump up security protection by: [protecting admin accounts](m365-campaigns-protect-admin-accounts.md), [protecting acces to mail and data](m365-campaigns-conditional-access.md), and [increasing threat protection](m365-campaigns-increase-protection.md).
+For all organizations, bump up security protection by: [protecting admin accounts](m365-campaigns-protect-admin-accounts.md), [protecting access to mail and data](m365-campaigns-conditional-access.md), and [increasing threat protection](m365-campaigns-increase-protection.md).
 
 
  ## Everyone: Set up your devices 
