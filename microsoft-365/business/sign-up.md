@@ -41,7 +41,7 @@ Go to [Discover Microsoft 365 Business advantage](https://www.microsoft.com/micr
     ![Screenshot of Create your user ID page.](media/signinuserid.png)
 
 3. Fill in the rest of the fields and select **Create my account**.
-4. On the **Prove.You're.Not'A.Robot.** page enter a phone number to receive a code either via text or a call and select **Text me** or **Call me**, then enter the verification code \> **Next**.
+4. On the **Prove.You're.Not.A.Robot.** page enter a phone number to receive a code either via text or a call and select **Text me** or **Call me**, then enter the verification code \> **Next**.
 5. On the **Where will you be using this** page enter your business address. This information determines what taxes you pay and which subscriptions are are available. For more information about taxes, see [What tax will I be charged?](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/what-tax-will-i-be-charged?view=o365-worldwide) 
 1. Select **Next**, review your order and select **Next** again.
 1. On the **How do you want to pay** page, enter your payment details, and then **Place order**.
