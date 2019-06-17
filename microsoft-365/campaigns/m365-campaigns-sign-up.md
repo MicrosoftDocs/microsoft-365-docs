@@ -28,7 +28,7 @@ description: "Step-by-step sign up for Microsoft 365 for campaigns. Potect your 
 Here's how to complete your sign-up for Microsoft 365 for Campaigns.
 
 ## Before you start: 
-- Get your invite to Microsoft 365 for Campaigns by completing the steps in [Get Microsoft 365 for Campaigns?](get-microsoft-365-campaigns.md#get-microsoft-365-for-campaigns) 
+- Get your invite to Microsoft 365 for Campaigns by completing the steps in [Get Microsoft 365 for Campaigns](get-microsoft-365-campaigns.md#get-microsoft-365-for-campaigns). 
 - Open your email invitation from Microsoft. The invite has a unique sign-up link for your organization. You'll need this to get campaigns special pricing.
 - Have your business credit card and a phone ready. 
 
@@ -37,11 +37,11 @@ Here's how to complete your sign-up for Microsoft 365 for Campaigns.
 
 ## Steps to sign up 
 
-1. In your Invitation to Microsoft 365 for Campaigns email, select **Click To Enroll Your Organization**. This triggers Microsoft 365 sign-up to begin.
+1. In your invitation to Microsoft 365 for Campaigns email, select **Click To Enroll Your Organization**. This triggers Microsoft 365 sign-up to begin.
 2. **On the Microsoft 365 Business page**, enter your business details. For **Business email address**, use a current email address. We only need this address to stay in touch with you during the setup process. Select **Next**.
 3. **On the Create your user ID page**:
     1. In **Username**, enter the name or alias you want for your email address. For example, you might just want to be known as Alice or Rob. In a larger campaign, AliceC or AliceChavez might make more sense.
-    2. In **Yourcompany**, enter the name of the campaign you work for. For example, ContosoCampaign. If you already own a domain, use that name here. 
+    2. In **Your company**, enter the name of the campaign you work for. For example, ContosoCampaign. If you already own a domain, use that name here. 
     3. In **Select a domain**, select **.onmicrosoft.com** for now. We can set you up with a domain later, or help you get Microsoft 365 connected to a domain that you already own.
     4. Create a password and select **Create my account**. 
 > [!NOTE]
