@@ -70,6 +70,19 @@ Advanced features in Microsoft 365 Business are available to help you protect yo
 - **Same [Conditional Access](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/overview) as Azure AD P1 plan**
 
     Conditional Access can help protect your organization from sign-in risk, access attempts from an unexpected network or locale, access attempts form risky device types, and so on. Conditional Access policies are enforced after the first authentication is completed, and it uses signals from the first authentication event to determine if the attempted access should be approved, denies, or f more proof (such as second form of identification) is required.
+
+    The conditional access features included are:
+
+    - Access based on username, group and role
+    - Access [based on an app](https://docs.microsoft.com/azure/active-directory/conditional-access/app-based-conditional-access) 
+    - [Access based on location](https://docs.microsoft.com/azure/active-directory/authentication/howto-registration-mfa-sspr-combined#conditional-access-policies-for-combined-registration);  only allow access from trusted IP ranges or specific countries 
+    - Require MFA for access
+    - Block access to apps that use [legacy authentication](https://docs.microsoft.com/azure/active-directory/conditional-access/block-legacy-authentication)
+    - Require apps tp use [Intune app protection](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access)
+    - Custom authentication such as MFA with third party providers, for example DUO.
+   
+    Other features:
+    - [Self-service password reset](https://docs.microsoft.com/azure/active-directory/authentication/concept-sspr-customization) for hybrid Azure AD
     
 ## Compliance features
 
