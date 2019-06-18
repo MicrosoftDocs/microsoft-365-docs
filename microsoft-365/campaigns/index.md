@@ -29,6 +29,10 @@ Microsoft 365 for Campaigns
 
 In our current world, keeping data and communications secure is a priority, particularly for political campaigns, medical and legal practices, and many other businesses. Microsoft 365 for campaigns is a recommended security configuration designed to help protect you and your data, even if you're not a campaign. This library includes help for setting up and using this recommended environment. 
 
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3clbH] 
+
+
 **What is Microsoft 365 for Campaigns?** 
 It's a recommended secure configuration that includes Microsoft 365 Business so that you can:
 - Rely on trusted business productivity and collaboration tools, such as Outlook, Word, Excel, and other Office products 
