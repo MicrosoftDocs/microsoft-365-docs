@@ -24,10 +24,13 @@ description: "Learn how to protect your campaign by increasing your security wit
 ---
 
 ## Overview 
+Watch this video to see how you can protect your campaign:
+
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3cfV1]  
 
-Watch this video to see how you can protect your campaign, and then follow the steps to:
+
+Then follow the steps to:
 - [Protect against malware and other threats](m365-campaigns-increase-protection.md)
 - [Protect access to your campaign data](m365-campaigns-conditional-access.md) by protecting your accounts and apps
 - [Protect admin accounts](m365-campaigns-protect-admin-accounts.md)
