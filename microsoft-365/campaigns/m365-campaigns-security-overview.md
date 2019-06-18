@@ -34,6 +34,6 @@ Then follow the steps to:
 - [Protect against malware and other threats](m365-campaigns-increase-protection.md)
 - [Protect access to your campaign data](m365-campaigns-conditional-access.md) by protecting your accounts and apps
 - [Protect admin accounts](m365-campaigns-protect-admin-accounts.md)
-- [Set up mobile devices](set-up-mobile-devices?toc=%2Fmicrosoft-365%2Fcampaigns%2Ftoc.json)
+- [Set up mobile devices](../business/set-up-mobile-devices.md?toc=/microsoft-365/campaigns/toc.json)
 - [Train your users](m365-campaigns-users.md) 
 
