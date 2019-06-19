@@ -20,7 +20,7 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
-description: "Step-by-step sign up for Microsoft 365 for campaigns. Potect your campaign from cybersecurity threats to email, data, and communication."
+description: "Step-by-step sign-up for Microsoft 365 for campaigns. Potect your campaign from cybersecurity threats to email, data, and communication."
 ---
 
 # Sign up for Microsoft 365 for Campaigns 
@@ -37,7 +37,7 @@ Here's how to complete your sign-up for Microsoft 365 for Campaigns.
 
 ## Steps to sign up 
 
-1. In your invitation to Microsoft 365 for Campaigns email, select **Click To Enroll Your Organization**. This takes you to Microsoft 365 sign-up.
+1. In your invitation to Microsoft 365 for Campaigns email, select **ENROLL YOUR ORGANIZATION >**. This takes you to Microsoft 365 sign-up.
 2. **On the Microsoft 365 Business page**, enter your business details. For **Business email address**, use a current email address. We only need this address to stay in touch with you during the setup process. Select **Next**.
 3. **On the Create your user ID page**:
     1. In **Username**, enter the name or alias you want for your email address. For example, you might just want to be known as Alice or Rob. In a larger campaign, AliceC or AliceChavez might make more sense.
