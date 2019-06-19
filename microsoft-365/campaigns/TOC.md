@@ -3,10 +3,11 @@
 ## [Get Microsoft 365 for campaigns](get-microsoft-365-campaigns.md)
 ## [How Microsoft 365 protects your data](m365-campaigns-users.md)
 
-# Setup
+# Setup and sign in
 ## [Overview](microsoft-365-campaigns-setup-overview.md)
 ## [Sign up](m365-campaigns-sign-up.md)
-## [Set up Microsoft 365](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json)
+## [Set up](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json)
+## [Sign in](m365-campaigns-sign-in.md)
 ## [Add users](../business/add-users-m365b.md?toc=/microsoft-365/campaigns/toc.json)
 
 # Bump up security protection
@@ -32,7 +33,7 @@
 ## [Create a Communication site for your organization](create-communications-site.md)
 
 # Reset or remove campaign data from devices 
-## [Remove campaign data](../business/remove-company-data.md?toc=/microsoft-365/campaigns/toc.json)
+## [Remove campaign or business data](../business/remove-company-data.md?toc=/microsoft-365/campaigns/toc.json)
 ## [Reset devices to factory settings](../business/reset-devices-to-factory-settings.md?toc=/microsoft-365/campaigns/toc.json)
 
 # Security incident management

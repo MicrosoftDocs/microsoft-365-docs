@@ -49,7 +49,7 @@ The links for PowerPoint and PDF below can be downloaded and printed in tabloid 
 
 ## Set it up
 
-1. Sign in to Office 365.
+1. Sign in to http://Office.com.
 2. In the top left corner of the page, select the app launcher icon and then select the **SharePoint** tile. If you don't see the **SharePoint** tile, click the **Sites** tile or **All** if SharePoint is not visible.
 3. At the top of the SharePoint home page, click **+ Create site** and choose the **Communication site** option.
 
@@ -58,5 +58,5 @@ Learn all [about Communications sites](https://support.office.com/en-us/article/
 
 ## Admin settings
 
-If you don't see the **+ Create** site link, self-service site creation may be disabled in Office 365. Contact the person administering Office 365 in your organization to create a team site. If you're a tenant administrator, see [Manage site creation in SharePoint Online](https://docs.microsoft.com/sharepoint/manage-site-creation) to enable self-service site creation for your organization or [Manage sites in the new SharePoint admin center](https://docs.microsoft.com/sharepoint/manage-sites-in-new-admin-center) to create a site from the SharePoint Online admin center.
+If you don't see the **+ Create** site link, self-service site creation might not be available in Microsoft 365. Contact the person administering Microsoft 365 in your organization to create a team site. If you're a Microsoft 365 admin, see [Manage site creation in SharePoint Online](https://docs.microsoft.com/sharepoint/manage-site-creation) to enable self-service site creation for your organization or [Manage sites in the new SharePoint admin center](https://docs.microsoft.com/sharepoint/manage-sites-in-new-admin-center) to create a site from the SharePoint Online admin center.
   

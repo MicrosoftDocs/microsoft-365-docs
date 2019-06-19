@@ -20,7 +20,7 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
-description: "Step-by-step sign up for Microsoft 365 for campaigns. Potect your campaign from cybersecurity threats to email, data, and communication."
+description: "Step-by-step sign-up for Microsoft 365 for Campaigns. Protect your campaign from cybersecurity threats to email, data, and communication."
 ---
 
 # Sign up for Microsoft 365 for Campaigns 
@@ -33,11 +33,11 @@ Here's how to complete your sign-up for Microsoft 365 for Campaigns.
 - Have your business credit card and a phone ready. 
 
     > [!TIP]
-    > The link we sent is unique to your campaign. It only works once, so make sure you have enough time to complete sign-up. You'll need about ten minutes. 
+    > Your sign-up link is unique to your campaign. It only works once, so make sure you have enough time to complete sign-up. You'll need about ten minutes. 
 
 ## Steps to sign up 
 
-1. In your invitation to Microsoft 365 for Campaigns email, select **Click To Enroll Your Organization**. This takes you to Microsoft 365 sign-up.
+1. In your invitation to Microsoft 365 for Campaigns email, select **ENROLL YOUR ORGANIZATION >**. This takes you to Microsoft 365 sign-up.
 2. **On the Microsoft 365 Business page**, enter your business details. For **Business email address**, use a current email address. We only need this address to stay in touch with you during the setup process. Select **Next**.
 3. **On the Create your user ID page**:
     1. In **Username**, enter the name or alias you want for your email address. For example, you might just want to be known as Alice or Rob. In a larger campaign, AliceC or AliceChavez might make more sense.
@@ -53,20 +53,27 @@ Here's how to complete your sign-up for Microsoft 365 for Campaigns.
     3. Enter the code from your text message (or call) and select **Next**. Expect a short wait. 
 5. **Where will you be using this page**: Enter the campaign's primary work location details and phone number. Select **Next**.
 6. **How does this look page**:
-    1. Verify the cost per user is $5.00. If the cost per user is not $5, we recommend calling support.
+    1. Verify the cost per user is $5.00. 
     2. If you only want to set yourself up for now, select **Next**. 
     3. Optional: Add some extra licenses now by changing the number in the **user** field. [The staff you work with can be assigned licenses to Microsoft 365](../business/add-users-m365b.md?toc=/microsoft-365/campaigns/toc.json) at any time.
 7. **How do you want to pay? page**: Select **New credit card**, enter your business credit card details, and select **Place order**. It's also possible to use a bank account if you prefer.
 8. **This may take a moment page**: You'll find details about where to sign in and your user ID. We'll also send this information to the email address that you entered during step 2 above.
 
-Your sign-up steps are complete. 
+Your sign-up steps are complete! 
 If you want to continue with the next steps, select **Start Setup**, or come back later to finish the steps. When you're ready, check your email (from step 2) to find your user name and password so you can log in next time. 
 These are called your admin or global admin credentials.
+
+## Sign in to Microsoft 365
+To sign in: 
+1. Find the username and password we sent to the email address you gave us in step 2 of [Steps to sign up](#steps-to-sign-up).
+2. In the browser, go to https://admin.microsoft.com.
+3. Type in your username and password. Select **Sign in**.
+4. In the top right of the page, find the **Preview on** control. Select **Preview on** so you can use all the controls described in [Bump up protection for your campaign](m365-campaigns-security-overview.md).
 
 ## What's next?
 - [Set up Microsoft 365](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json) to complete your Microsoft 365 for Campaigns set up. 
 - [Add users](../business/add-users-m365b.md?toc=/microsoft-365/campaigns/toc.json) to your plan. Include the campaign candidate, all senior campaign staff, and anyone who will have access to sensitive campaign or party information.
-- [Bump up protection for your campaign](m365-campaigns-protect-admin-accounts.md)
+- [Bump up protection for your campaign](m365-campaigns-security-overview.md)
 
 
 

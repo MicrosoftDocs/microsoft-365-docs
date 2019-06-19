@@ -31,7 +31,7 @@ Anybody with Microsoft 365 Business can use this guidance to configure extra sec
 
 If your campaign or political party qualifies, this is the least expensive plan available through Microsoft.  
 
-If you're not eligible for special pricing, Microsoft 365 Business is still the most cost-effective way obtain comprehensive security for a collaboration environment. See [Sign up for Microsoft 365 Business](../business/sign-up.md). Then use this library to configure extra security and to help your team collaborate securely. 
+If you're not eligible for special pricing, Microsoft 365 Business is still the most cost-effective way obtain comprehensive security for a collaboration environment. See [Sign up for Microsoft 365 for Campaigns](m365-campaigns-sign-up.md). Then use this library to configure extra security and to help your team collaborate securely. 
 
 ## What does Microsoft 365 for Campaigns include?
 This configuration of Microsoft 365 Business includes simple controls that helps you and your staff work together securely: 
