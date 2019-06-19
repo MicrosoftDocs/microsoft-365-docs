@@ -68,6 +68,8 @@ These are called your admin or global admin credentials.
 ## Steps to add Microsoft 365 for Campaigns to an existing subscription
 
 If you already have and existing subscription to Office 365 for business, for example, Office 365 Business Premium, you can use the Microsoft 365 for Campaigns offer to add licenses to it.
+> [!IMPORTANT]
+> You cannot add the Microsoft 365 for Campaigns offer to an existing Microsoft 365 Business tenant.
 
 1. In your invitation to Microsoft 365 for Campaigns email, select **ENROLL YOUR ORGANIZATION >**. This takes you to Microsoft 365 sign-up.
 2. On the **Welcome, let's get to know you** page, click or tap on **Want to add this to an existing subscription? Sign in**.
