@@ -35,11 +35,13 @@ Here's how to complete your sign-up for Microsoft 365 for Campaigns.
     > [!TIP]
     > Your sign-up link is unique to your campaign. It only works once, so make sure you have enough time to complete sign-up. You'll need about ten minutes. 
 
-## Steps to sign up 
+## Steps to sign up
 
 1. In your invitation to Microsoft 365 for Campaigns email, select **ENROLL YOUR ORGANIZATION >**. This takes you to Microsoft 365 sign-up.
-2. **On the Microsoft 365 Business page**, enter your business details. For **Business email address**, use a current email address. We only need this address to stay in touch with you during the setup process. Select **Next**.
-3. **On the Create your user ID page**:
+    > [!NOTE]
+    > If you already have an existing Office 365 for business subscription and you want to add the Microsoft 365 for Campaigns offer to it, go to [add Microsoft 365 for Campaigns to an existing subscription](#steps-to-add-microsoft-365-for-campaigns-to-an-existing-subscription).
+1. **On the Microsoft 365 Business page**, enter your business details. For **Business email address**, use a current email address. We only need this address to stay in touch with you during the setup process. Select **Next**.
+1. **On the Create your user ID page**:
     1. In **Username**, enter the name or alias you want for your email address. For example, you might just want to be known as Alice or Rob. In a larger campaign, AliceC or AliceChavez might make more sense.
     2. In **Your company**, enter the name of the campaign you work for. For example, ContosoCampaign. If you already own a domain, use that name here. 
     3. In **Select a domain**, select **.onmicrosoft.com** for now. We can set you up with a domain later, or help you get Microsoft 365 connected to a domain that you already own.
@@ -62,6 +64,19 @@ Here's how to complete your sign-up for Microsoft 365 for Campaigns.
 Your sign-up steps are complete! 
 If you want to continue with the next steps, select **Start Setup**, or come back later to finish the steps. When you're ready, check your email (from step 2) to find your user name and password so you can log in next time. 
 These are called your admin or global admin credentials.
+
+## Steps to add Microsoft 365 for Campaigns to an existing subscription
+
+1. In your invitation to Microsoft 365 for Campaigns email, select **ENROLL YOUR ORGANIZATION >**. This takes you to Microsoft 365 sign-up.
+2. On the **Welcome, let's get to know you** page, click or tap on **Want to add this to an existing subscription? Sign in**.
+    
+    ![Choose Sign in on the upper right corner.](media/addtoexisting.png)
+3. On the sign in page, enter the admin alias for your existing subscription, for example, *Alice@VoteContoso<span></span>.org* and then choose **Next**, enter your password, and choose **Sign in**.
+4. On the **How does this look?** enter the number of users you have and choose **Next**. Note that you don't have to enter a promo code here because it is already included in the invitation URL.
+5. On the **How do you want to pay?** page, enter your payment method and choose **Place order**.
+
+After you have completed these steps, you are ready to [assign the new licenses](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users?view=o365-worldwide) to your campaign staff. 
+
 
 ## What's next?
 - [Set up Microsoft 365](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json) to complete your Microsoft 365 for Campaigns set up. 
