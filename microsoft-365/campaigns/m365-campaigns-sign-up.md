@@ -20,7 +20,7 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
-description: "Step-by-step sign-up and sign-in for Microsoft 365 for campaigns. Protect your campaign from cybersecurity threats to email, data, and communication."
+description: "Step-by-step sign-up for Microsoft 365 for Campaigns. Protect your campaign from cybersecurity threats to email, data, and communication."
 ---
 
 # Sign up for Microsoft 365 for Campaigns 
