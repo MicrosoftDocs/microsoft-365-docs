@@ -24,7 +24,7 @@ description: "Sign in to Microsoft 365 for Campaigns. Protect your campaign from
 # Sign in to Microsoft 365 for campaigns
 
 ## For campaign admins
-If you signed up for Microsoft 365 for Campaigns, you are the Mivrosoft 365 admin. here's how to sign in: 
+If you signed up for Microsoft 365 for Campaigns, you are the Microsoft 365 admin. here's how to sign in: 
 1. Find the username and password we sent to the email address you gave us in step 2 of [Steps to sign up](m365-campaigns-sign-up.md#steps-to-sign-up).
 2. In the browser, go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>. 
 3. Type in your username and password. Select **Sign in**.
