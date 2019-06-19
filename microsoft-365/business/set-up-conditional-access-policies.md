@@ -1,5 +1,5 @@
 ---
-title: "Set up conditional access policies"
+title: "Set up conditional access policies for Microsoft 365 campaigns"
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -19,10 +19,10 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Learn how to set  up conditional access policies for Microsoft 365 Business."
+description: "Learn how to set  up conditional access policies for Microsoft 365 Campaigns."
 ---
 
-# Set up conditional access policies for Microsoft 365 Business
+# Set up conditional access policies
 
 [Conditional access](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) policies add substancial additional security. Microsoft provides a set of baseline conditional access policies that are recommended for all customers. Baseline policies are a set of predefined policies that help protect organizations against many common attacks. These common attacks can include password spray, replay, and phishing.
 
