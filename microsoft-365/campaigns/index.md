@@ -27,7 +27,7 @@ description: "Microsoft 365 for campaigns"
 Microsoft 365 for Campaigns
 ===========================
 
-In our current world, keeping data and communications secure is a priority, particularly for political campaigns, medical and legal practices, and many other businesses. Microsoft 365 for Campaigns comes with a set of recommendations designed to help protect you and your data, even if you're not a campaign. This library includes help for setting up and using this recommended environment. 
+In our current world, keeping data and communications secure is a priority, particularly for political campaigns, medical and legal practices, and many other businesses. Microsoft 365 for Campaigns comes with a set of recommendations designed to help protect you and your data. This library includes help for setting up and using this recommended environment, even if you're not a campaign.
 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3clbH] 
