@@ -20,10 +20,6 @@ The General Data Protection Regulation (GDPR) introduces new rules for organizat
 
 This document guides you to information regarding Data Protection Impact Assessments (DPIAs) under the GDPR when using Microsoft products and services.
 
-## What is a DPIA?
-
-The GDPR requires controllers to prepare a Data Protection Impact Assessment (DPIA) for operations that are “likely to result in a high risk to the rights and freedoms of natural persons.” There is nothing inherent in Microsoft products and services that need the creation of a DPIA. However, because Microsoft products and services are highly customizable, a DPIA may be needed depending on the details of your Microsoft configuration. Microsoft has no control over, and little or no insight into such information. You, as a data controller must determine appropriate uses of their data.
-
 ## Terminology
 
 Helpful definitions for GDPR terms used in this document:
@@ -32,6 +28,10 @@ Helpful definitions for GDPR terms used in this document:
 - *Personal data* and *data subject*: Any information relating to an identified or identifiable natural person (data subject); an identifiable natural person is one who can be identified, directly or indirectly.  
 - *Processor*: A natural or legal person, public authority, agency, or other body, which processes personal data on behalf of the controller.  
 - *Customer Data*: Data produced and stored in the day-to-day operations of running your business.
+
+## What is a DPIA?
+
+The GDPR requires controllers to prepare a Data Protection Impact Assessment (DPIA) for operations that are “likely to result in a high risk to the rights and freedoms of natural persons.” There is nothing inherent in Microsoft products and services that need the creation of a DPIA. However, because Microsoft products and services are highly customizable, a DPIA may be needed depending on the details of your Microsoft configuration. Microsoft has no control over, and little or no insight into such information. You, as a data controller must determine appropriate uses of their data.
 
 ## DPIA in Action
 
@@ -62,7 +62,7 @@ The DPIA guidance applies to Office 365, Azure, Dynamics 365, and Microsoft Supp
 
 Specific details that may be relevant to your Microsoft implementation are below.
 
-- [Office 365](gdpr-dpia-office365.md): This document applies to Office 365 applications and services, including but not limited to Exchange Online, SharePoint Online, Yammer, Skype for Business, and Power BI. Refer to Tables 1 and 2 for more details.  
+- [Office 365](gdpr-dpia-office365.md): This document applies to Office 365 applications and services, including but not limited to Exchange Online, SharePoint Online, Yammer, Skype for Business, and Power BI. Refer to Tables [1](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dpia-office365#part-1--determining-whether-a-dpia-is-needed) and [2](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dpia-office365#part-2--contents-of-a-dpia) for more details.  
 - [Azure](gdpr-dpia-azure.md): Customers are encouraged to work with their privacy officers and legal counsel to determine the necessity and content of any DPIAs related to their use of Microsoft Azure.  
 - [Dynamics 365](gdpr-dpia-dynamics.md): The contents of a DPIA may vary according to which Dynamics 365 tools you are employing. For specific details refer to [Part 2 Contents of a DPIA](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dpia-dynamics#part-2--contents-of-a-dpia).
 - [Microsoft Support and Professional Services](gdpr-dpia-prof-services.md): Professional Services does not conduct certain routine or automated data processing, nor is it intended to process special categories or perform tasks that facilitate or require monitoring of publicly accessible data. For details see [Part 1 — Determining Whether a DPIA is needed](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dpia-prof-services#part-1--determining-whether-a-dpia-is-needed). Controllers must consider the DPIA elements outlined above, along with any other relevant factors, in the context of the controller’s specific implementations and uses of Professional Services. For Professional Services information, see [Part 2 — Contents of a DPIA](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dpia-prof-services#part-2--contents-of-a-dpia).

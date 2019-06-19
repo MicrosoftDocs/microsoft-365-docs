@@ -42,7 +42,7 @@ Several points should be considered when implementing or assessing GDPR requirem
 
 The [Recommended action plan for GDPR](gdpr-action-plan.md) and [Accountability Readiness Checklists](gdpr-arc.md) may prompt additional thinking points.
 
-The following tasks (expanded in Part 2) are involved to meet GDPR standards. Follow the links in the list for details regarding your implementation.  
+The following tasks are involved to meet GDPR standards. Follow the links in the list for details regarding your implementation.  
 
 - **[Data subject requests (DSR)](gdpr-data-subject-requests.md)**. A formal request by a data subject to a controller to take an action (change, restrict, access) regarding their personal data.
 - **[Breach notification](gdpr-breach-notification.md)**. Under GDPR, a personal data breach is “a breach of security leading to the accidental or unlawful destruction, loss, alteration, unauthorized disclosure of, or access to, personal data transmitted, stored, or otherwise processed.”

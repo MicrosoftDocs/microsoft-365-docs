@@ -28,8 +28,6 @@ This document guides you to information on the completion of Data Subject Reques
 - [Azure DevOps Services](gdpr-dsr-vsts.md)
 - [Microsoft Support and Professional Services](gdpr-dsr-prof-services.md)
 
-For more information about how Microsoft enables you to respond to DSRs, see [GDPR: Data Subject Requests (DSRs)](https://servicetrust.microsoft.com/ViewPage/GDPRDSR) in the Service Trust Portal.
-
 ## Terminology
 
 Helpful definitions for GDPR terms used in this document:
