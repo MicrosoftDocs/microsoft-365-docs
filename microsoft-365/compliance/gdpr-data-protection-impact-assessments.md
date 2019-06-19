@@ -14,7 +14,7 @@ ms.collection: GDPR
 
 # Data Protection Impact Assessment for the GDPR
 
-The General Data Protection Regulation (GDPR) introduces new rules for organizations that offer goods and services to people in the European Union (EU), or that collect and analyze data for EU residents no matter where you or your enterprise are located. Additional details can be found in the [GDPR Summary topic](gdpr.md). <br>
+The General Data Protection Regulation (GDPR) introduces new rules for organizations that offer goods and services to people in the European Union (EU), or that collect and analyze data for EU residents no matter where you or your enterprise are located. Additional details can be found in the [GDPR Summary topic](gdpr.md). <br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWrOQE] 
 

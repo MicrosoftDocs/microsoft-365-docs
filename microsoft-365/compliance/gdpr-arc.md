@@ -18,7 +18,7 @@ The General Data Protection Regulation (GDPR) introduces new rules for organizat
 
 ## Accountability Readiness Checklists
 
-Accountability readiness checklists are provided to conveniently access information you may need to support the GDPR when using Microsoft products and services. The checklist lists potential obligations you may have under the GDPR, and points you to information that you can use to support your organizations’ compliance. <br>
+Accountability readiness checklists are provided to conveniently access information you may need to support the GDPR when using Microsoft products and services. The checklist lists potential obligations you may have under the GDPR, and points you to information that you can use to support your organizations’ compliance. <br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWs1RP] 
 
