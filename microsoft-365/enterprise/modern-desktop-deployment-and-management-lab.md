@@ -41,7 +41,7 @@ The lab provides you with an automatically provisioned virtual lab environment, 
   - Windows Server 2019
   - Microsoft SQL Server 2017
 
-PLUS, the lab is designed to be connected to trials for: E\nter
+PLUS, the lab is designed to be connected to trials for: 
 
   - Microsoft 365 Enterprise E5
 
