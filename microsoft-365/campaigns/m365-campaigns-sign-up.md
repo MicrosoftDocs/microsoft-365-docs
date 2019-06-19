@@ -20,7 +20,7 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
-description: "Step-by-step sign-up for Microsoft 365 for campaigns. Potect your campaign from cybersecurity threats to email, data, and communication."
+description: "Step-by-step sign-up and sign-in for Microsoft 365 for campaigns. Protect your campaign from cybersecurity threats to email, data, and communication."
 ---
 
 # Sign up for Microsoft 365 for Campaigns 
@@ -63,10 +63,17 @@ Your sign-up steps are complete!
 If you want to continue with the next steps, select **Start Setup**, or come back later to finish the steps. When you're ready, check your email (from step 2) to find your user name and password so you can log in next time. 
 These are called your admin or global admin credentials.
 
+## Sign in to Microsoft 365
+To sign in: 
+1. Find the username and password we sent to the email address you gave us in step 2 of [Steps to sign up](#steps-to-sign-up).
+2. In the browser, go to https://admin.microsoft.com.
+3. Type in your username and password. Select **Sign in**.
+4. In the top right of the page, find the **Preview on** control. Select **Preview on** so you can use all the controls described in [Bump up protection for your campaign](m365-campaigns-security-overview.md).
+
 ## What's next?
 - [Set up Microsoft 365](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json) to complete your Microsoft 365 for Campaigns set up. 
 - [Add users](../business/add-users-m365b.md?toc=/microsoft-365/campaigns/toc.json) to your plan. Include the campaign candidate, all senior campaign staff, and anyone who will have access to sensitive campaign or party information.
-- [Bump up protection for your campaign](m365-campaigns-protect-admin-accounts.md)
+- [Bump up protection for your campaign](m365-campaigns-security-overview.md)
 
 
 
