@@ -12,13 +12,13 @@ audience: itpro
 ms.collection: GDPR
 ---
 
-# Supporting your GDPR program with Accountability Readiness Checklists
+# Support your GDPR program with Accountability Readiness Checklists
 
-The General Data Protection Regulation (GDPR) introduces new rules for organizations that offer goods and services to people in the European Union (EU), or that collect and analyze data for EU residents no matter where you or your enterprise are located. Additional details can be found in the [GDPR Summary topic](gdpr.md).
+The General Data Protection Regulation (GDPR) introduces new rules for organizations that offer goods and services to people in the European Union (EU), or that collect and analyze data for EU residents no matter where you or your enterprise are located. Additional details are in the [GDPR Summary topic](gdpr.md).
 
 ## Accountability Readiness Checklists
 
-Accountability readiness checklists are provided to conveniently access information you may need to support the GDPR when using Microsoft products and services. The checklist lists potential obligations you may have under the GDPR, and points you to information that you can use to support your organizations’ compliance. 
+Accountability readiness checklists are provided to conveniently access information you may need to support the GDPR when using Microsoft products and services. The checklist lists potential obligations you may have under the GDPR, and points you to information that you can use to support your organizations’ compliance. <br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWs1RP] 
 
@@ -31,9 +31,9 @@ There is a specific guide for four Microsoft product and services families:
 
 You can manage the items in this checklist with [Compliance Manager](https://servicetrust.microsoft.com/ComplianceManager) by referencing the Control ID and Control Title under Customer Managed Controls in the GDPR tile.
 
-The checklists include the four basic categories of considerations for a privacy program supporting GDPR listed below, along with a example requirements.
+The checklists include the four basic categories of considerations for a privacy program supporting GDPR listed below, along with example requirements.
 
-1. Conditions for Data Collection and Processing: 
+1. Conditions for Data Collection and Processing:
 
     - When is consent obtained?  
     - Identify and document purpose  
