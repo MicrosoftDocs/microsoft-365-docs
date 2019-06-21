@@ -48,7 +48,7 @@ This library includes the following:
 - Help for users to setup devices for secure access.
 - Guidance on how to collaborate and share securely.
 
-For more information about what's included, seeh [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business). 
+For more information about what's included, see [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business). 
 
 
 Get started
