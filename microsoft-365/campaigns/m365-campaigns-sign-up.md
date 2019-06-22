@@ -29,11 +29,11 @@ Here's how to complete your sign-up for Microsoft 365 for Campaigns.
 
 ## Before you start: 
 - Get your invite to Microsoft 365 for Campaigns by completing the steps in [Get Microsoft 365 for Campaigns](get-microsoft-365-campaigns.md#get-microsoft-365-for-campaigns). 
-- Open your email invitation from Microsoft. The invite has a unique sign-up link for your organization. You'll need this to get campaigns special pricing.
+- Open your email invitation from Microsoft. The invite has a unique sign-up link for your organization. You need this to get campaigns special pricing.
 - Have your business credit card and a phone ready. 
 
     > [!TIP]
-    > Your sign-up link is unique to your campaign. It only works once, so make sure you have enough time to complete sign-up. You'll need about ten minutes. 
+    > Your sign-up link is unique to your campaign. It only works once, so make sure you have enough time to complete sign-up. You need about ten minutes. 
 
 ## Steps to sign up
 

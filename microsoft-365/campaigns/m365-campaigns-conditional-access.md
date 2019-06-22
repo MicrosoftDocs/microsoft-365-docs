@@ -27,7 +27,7 @@ description: "Learn how to require MFA and set up conditional access policies fo
 
 You protect access to your data with multi-factor authentication and conditional access policies. These add substantial additional security. Microsoft provides a set of baseline conditional access policies that are recommended for all customers. Baseline policies are a set of predefined policies that help protect organizations against many common attacks. These common attacks can include password spray, replay, and phishing.
 
-These policies require admins and users to enter a second form of authentication (called multi-factor authentication, or MFA) when certain conditions are met. For example, if a user is signing in from a different country or an unknown device, the sign-in might be considered risky and the user must provide an additional form of authentication. 
+These policies require admins and users to enter a second form of authentication (called multi-factor authentication, or MFA) when certain conditions are met. For example, if a user in your organization tries to sign in to Microsoft 365 from a different country or from an unknown device, the sign-in might be considered risky. The user must provide an extra form of authentication (such as a fingerprint or a code) to prove their identity. 
 
 Currently, baseline policies include the following:
 - Set up in Microsoft 365 admin center:
@@ -77,4 +77,4 @@ To require that all users sign in with a second form of ID:
     - [Block legacy authentication](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-baseline-protect-legacy-auth)
     - [Require MFA for service management](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-azure)
 
-You can set up many additional policies, such as requiring approved client apps. See the [Conditional Access Documentation](https://docs.microsoft.com/azure/active-directory/conditional-access/) for more information.
+You can set up extra policies, such as requiring approved client apps. See the [Conditional Access Documentation](https://docs.microsoft.com/azure/active-directory/conditional-access/) for more information.
