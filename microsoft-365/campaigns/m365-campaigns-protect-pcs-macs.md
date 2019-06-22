@@ -25,7 +25,7 @@ description: "Protect against phishing and other attacks with Microsoft 365 for 
 
 # Protect unmanaged Windows 10 PCs and Macs
 
-You can manage Windows 10 PCs and Macs by enrolling these into Microsoft Intune, which allows you to ensure these are healthy and secure before accessing data in your environment. However, many campaigns and small businesses include staff that bring their own devices (byod) which will not be managed by the organization. For these unmanaged PCs and Macs, use this article to ensure minimum security capabilies are configured. 
+You can manage Windows 10 PCs and Macs by enrolling these into Microsoft Intune, which allows you to ensure these are healthy and secure before accessing data in your environment. However, many campaigns and small businesses include staff that bring their own devices (byod) which will not be managed by the organization. For these unmanaged PCs and Macs, use this article to ensure minimum security capabilities are configured. 
 
 <!--A Windows 10 PC is considered managed after you have completed the following two steps:
 

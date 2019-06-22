@@ -80,7 +80,7 @@ To create a mail transport rule:
 |Apply this rule if . . .  <br/> |Any attachment . . . file extension matches . . .  <br/> |
 |Specify words or phrases  <br/> |Add these file types:  <br/> dotm, docm, xlsm, sltm, xla, xlam, xll, pptm, potm, ppam, ppsm, sldm  <br/>|
 |Do the following . . .  <br/> |Notify the recipient with a message  <br/> |
-|Provide message text  <br/> |Do not open these type of files from people you do not know because they might contain macros with malicious code.  <br/> |
+|Provide message text  <br/> |Do not open these types of files from people you do not know because they might contain macros with malicious code.  <br/> |
    
 For more information, see:
   
@@ -238,7 +238,7 @@ You have to be assigned the Audit Logs role in Exchange Online to turn audit log
 2. On the **Microsoft 365 compliance** page, choose **More resources**, and then **Open** on the **Office 365 security &amp; center** card.
 
     ![Choose Open on the Office 365 security & compliance cars.](media/gotosecandcomp.png)
-3. On the security and compliance page, chose **Search** and then **Audit log search**.
+3. On the security and compliance page, choose **Search** and then **Audit log search**.
 1. On the top of the **Audit log search** page, choose **Turn on auditing**.
 
 After the feature is turned on you can search for files, folders, and many activities. For more information, see [search the audit log](https://docs.microsoft.com/office365/securitycompliance/search-the-audit-log-in-security-and-compliance).
@@ -253,16 +253,16 @@ To change the sharing settings for OneDrive and SharePoint:
 
     ![Choose Specific people and set link expiration to 14 days.](media/anyonelinks.png)
 
-## Acivity alerts
+## Activity alerts
 
-You can use activity alerts to trask admin and user activities and detect malware and data loss prevention incidents in your organization. Your subscription includes a set of default policies, but you can also create custom ones too. For more information, see [alert policies](https://docs.microsoft.com/office365/securitycompliance/alert-policies). For example, if you store an important file in SharePoint that you don't want anyone to share externally, you can create a notification that alerts you if someone does share it.
+You can use activity alerts to track admin and user activities and detect malware and data loss prevention incidents in your organization. Your subscription includes a set of default policies, but you can also create custom ones too. For more information, see [alert policies](https://docs.microsoft.com/office365/securitycompliance/alert-policies). For example, if you store an important file in SharePoint that you don't want anyone to share externally, you can create a notification that alerts you if someone does share it.
 
 The following figure shows the default policies that are included with Microsoft 365 Business. <br/><br/>
     ![Default alert policies included with Microsoft 365 Business.](media/alertpolicies.png)
 
 ## Disable or manage calendar sharing
 
-You can decide to not to let the people in your organization to share their calendars, or you can also manage what they can share. For example, you can restrict the sharing to free/busy times only.
+You can prevent people in your organization from sharing their calendars, or you can also manage what they can share. For example, you can restrict the sharing to free/busy times only.
 
 1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> and choose **Settings** \> **Services & add-ins**
 2. On the **Services & add-ins** page choose **Calendar**, and choose if people in your organization can share their calendars with people outside who have Office 365 or Exchange, or with anyone. 
