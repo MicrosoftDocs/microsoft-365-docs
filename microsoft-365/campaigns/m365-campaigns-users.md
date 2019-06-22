@@ -45,10 +45,10 @@ All users you add to your environment will need to take a few minutes to [setup 
 - Use Microsoft mobile apps, including Outlook Mobile, Word, OneDrive, and other Microsoft apps from the app store. The native mail apps that are included on iPhones and Android devices are not supported. 
 - Require a PIN for users to unlock their device.
 
-After setting these up, your users will be prompted to use the authenticator app when accessing your organization data on these devices, indluding mail. 
+After setting these up, your users will be prompted to use the authenticator app when accessing your organization data on these devices, including mail. 
 
 ## Keep BYOD Macs and Windows 10 PCs fresh 
-It's also important that users keep their primary work device up to date:
+It's also important that users keep their primary work device up-to-date:
 - Install the latest versions of Office desktop apps and keep these fresh with updates, when prompted. 
 - Stay on top of operating system updates, such as Windows updates.
 

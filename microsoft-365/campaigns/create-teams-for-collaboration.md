@@ -25,7 +25,7 @@ description: "Create a collaboration space for your team with Microsoft Teams."
 
 # Create teams for collaboration in Microsoft Teams
 
-Microsoft Teams is a collaboration app that helps your staff stay organized and have conversations, from any device. You can use Microsoft Teams to have instant conversations with members of your staff or guests outside your organization. You can also make phone calles, host meetings, and share files.
+Microsoft Teams is a collaboration app that helps your staff stay organized and have conversations, from any device. You can use Microsoft Teams to have instant conversations with members of your staff or guests outside your organization. You can also make phone calls, host meetings, and share files.
 
 ## Best practices
 
@@ -78,5 +78,5 @@ Learn more about Microsoft Teams at [Microsoft Teams technical documentation](ht
 
 ## Admin settings
 
-You must be an admin in order to create an organization-wide team. For more information, see [What is an Admin in Office 365?](https://support.office.com/en-us/article/what-is-an-admin-e123627e-4892-4461-b9aa-1b6d57a5cfa4?ui=en-US&rs=en-US&ad=US).
+You must be an admin to create an organization-wide team. For more information, see [What is an Admin in Office 365?](https://support.office.com/en-us/article/what-is-an-admin-e123627e-4892-4461-b9aa-1b6d57a5cfa4?ui=en-US&rs=en-US&ad=US).
   
