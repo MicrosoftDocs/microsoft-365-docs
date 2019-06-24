@@ -152,7 +152,29 @@ To create an ATP anti-phishing policy, watch  [this short training video](https:
    
 For more information, see [Set up Office 365 ATP anti-phishing policies](https://go.microsoft.com/fwlink/?linkid=2016505&amp;clcid=0x409).
   
-## Protect against malicious attachments and files with ATP Safe Attachments
+## Protect against malicious attachments, files and links with Advanced Threat Protection (ATP)
+
+![Banner that point to https://aka.ms/aboutM365preview.](../business/media/m365admincenterchanging.png)
+
+First, make sure, in the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> you have the new admin center preview turned on; turn on the toggle next to the text **The new admin center**.
+
+   ![The new admin center preview on.](media/previewon.png)
+
+If you don't see the **Setup** page with cards in your tenant yet, see how to complete these steps in Office 365 Security &amp; Compliance Center. See [Set up ATP safe attachments in the Security & Compliance Center](#set-up-atp-safe-attachments-in-the-security--compliance-center) and [Set up ATP Safe Links in the Security & Compliance Center](#set-up-atp-safe-links-in-the-security--compliance-center).
+
+1.  In the left nav, choose **Setup**.
+2. On the **Setup** page choose **View** on the **Increase protection from advanced threats** card.</br></br>
+    ![Choose View on the Increase protection from advanced threats.](media/startatp.png) 
+
+3. On the **Increase protection from advanced threats** page, choose **Get started**.
+4. On the pane that opens, check check-boxes next to **Links and attachments in email**, **Scan files in SharePoint, OneDrive, and Teams**, and **Scan links in Office desktop and Office Online apps** under **Scan items for malicious content**.
+
+      - Under **Links and attachments in email**, Type in All Users, or the specific users whose email you want scanned.
+
+    ![Check all check-boxes in Increase protestion from advanced threats.](media/setatp.png)
+5. Choose **Create policies** to turn on ATP safe attachments and ATP safe links.
+
+### Set up ATP safe attachments in the Security & Compliance Center
 
 People regularly send, receive, and share attachments, such as documents, presentations, spreadsheets, and more. It's not always easy to tell whether an attachment is safe or malicious just by looking at an email message. Office 365 Advanced Threat Protection includes ATP Safe Attachment protection, but this protection is not turned on by default. We recommend that you create a new rule to begin using this protection. This protection extends to files in SharePoint, OneDrive, and Microsoft Teams.
   
@@ -185,7 +207,7 @@ For more information, see [Set up Office 365 ATP anti-phishing policies](https:/
   
 
 
-## Protect against phishing attacks with ATP Safe Links
+### Set up ATP Safe Links in the Security & Compliance Center
 
 Hackers sometimes hide malicious websites in links in email or other files. Office 365 ATP Safe Links (ATP Safe Links), part of Office 365 Advanced Threat Protection, can help protect your organization by providing time-of-click verification of web addresses (URLs) in email messages and Office documents. Protection is defined through ATP Safe Links policies.
   
