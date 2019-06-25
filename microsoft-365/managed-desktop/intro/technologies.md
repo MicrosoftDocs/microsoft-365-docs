@@ -34,8 +34,6 @@ Skype for Business Online Cloud PBX | This feature is available via Office 365. 
  |
  --- | ---
 Credential Guard |	Microsoft will provide guidance and manage cloud aspects of this feature.
-Device Guard (Windows Defender Application Control)	| Microsoft Managed Desktop will create the policy. <br><br>Customer will manage signatures.
-AppLocker management |	Microsoft will create the policy. <br><br>Customer will manage signatures.
 Application Virtualization (App-V) |	Microsoft Managed Desktop does not support this type of deployment as it is not supported on Intune.
 User Experience Virtualization (UE-V) |	This is not used with Microsoft Managed Desktop managed devices.
 Managed User Experience	 | This is not used with Microsoft Managed Desktop managed devices. MDM is used as a solution for device management.
