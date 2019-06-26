@@ -9,12 +9,12 @@ ms.localizationpriority: normal
 
 # Microsoft Managed Desktop product lifecycle
 
-Microsoft Managed Desktop benefits end-users assuring that they always use devices that offer the best performance, reliability, design, and security capabilities (such as support for features like Windows Hello). To accomplish this, Microsoft Managed Desktop maintains a short catalog of continuously updated [approved devices]. 
+Microsoft Managed Desktop benefits end-users assuring that they always use devices that offer the best performance, reliability, design, and security capabilities (such as support for features like Windows Hello). To accomplish this, Microsoft Managed Desktop maintains a short catalog of continuously updated [approved devices](device-list.md). 
  
-This topic details the lifecycleof devices as they are added and removed from the approved catalog. 
+This topic details the lifecycle of devices as they are added and removed from the approved catalog. 
 
 > [!NOTE]
-> In this topic, we'll make a distinction between a "device" and a "product." By “device,” we mean one individual, specific computer. For example, “Serial number 1234”, “Bill’s laptop”, “Shared VM XYZ” refer to specific devices. A “product”, however, refers to a collection or family of devices. For example, “Surface Laptop”, “Dell Latitude 123”, etc. This is important because products are added to our approved list, or catalog, and devices are what get enrolled into Microsoft Managed Desktop.
+> In this topic, we'll make a distinction between a "device" and a "product." By “device,” we mean one individual, specific computer. For example, “Serial number 1234”, “Bill’s laptop”, “Shared VM XYZ” refer to specific devices. A “product”, however, refers to a collection or family of devices. For example, “Fabrikam Laptop”, “Adatum ZX450 Laptop”, etc. This is important because products are added to our [approved list](device-list.md), or catalog, and devices are what get enrolled into Microsoft Managed Desktop.
 
 ## Product lifecycle
 
@@ -30,7 +30,7 @@ The entire sequence is depicted in this illustration:
 
 ![lifecycle timeline](images/****.png)
 
-Products remain on the catalog for 18 months, but *devices* remain under management for 3 years based on their individual enrollment dates. Effectively, each product has three important dates, but each device has only one. For products, all three of these dates are calculated based on the *approval date*, and therefore we publish these dates upon approval so that you can always look ahead and plan appropriately for the product's entire lifecycle. {you have a footnote here that I can't seem to find}
+Products remain on the catalog for up to 24 months, but *devices* remain under management for 3 years based on their individual enrollment dates. Effectively, each product has three important dates, but each device has only one. For products, all three of these dates are calculated based on the *approval date*, and therefore we publish these dates upon approval so that you can always look ahead and plan appropriately for the product's entire lifecycle.
 
 This table shows example dates for a theoretical product:
 
@@ -47,7 +47,7 @@ This table shows example dates for theoretical *devices*:
 |---------|---------|---------|
 |Laptop #123412     |  2/3/2018       |  2/3/2021       |
 |Desktop #321513     | 6/2/2018        |  6/2/2021       |
-|Laptop #123511     |  3/20/2018       |  3/20/2018       |
+
 
 ## Product release and evaluation
 
@@ -68,7 +68,7 @@ This period is the core of product availability:
 
 ![lifecycle timeline showing primary availibility](images/****.png)
 
-Any device enrolled during this period receives the full three years of support from Microsoft Managed Desktop (as shown by the blue timeline). This period lasts exactly 18 months from the end of the evaluation period.
+Any device enrolled during this period receives the full three years of support from Microsoft Managed Desktop (as shown by the blue timeline). This period lasts until an end date set to 24 months from the general availability date.
 
 You can think of this period as effectively “open enrollment”, so to maximize the value of Microsoft Managed Desktop, you should target your procurement models and selected products to fall within this period. As a small example, a customer should avoid settling on a two-year roll-out period using a product that is in its final month of primary availability – most of those devices will not receive the full three years of Microsoft Managed Desktop management (see [grace period](#product-grace-period) for more information).  
 
@@ -76,7 +76,7 @@ You can think of this period as effectively “open enrollment”, so to maximiz
 
 The product grace period is a three-year period following primary availability. This phase allows you to enroll devices that are from a supported product family, but still hold firm to the promises of Microsoft Managed Desktop regarding modern hardware and device performance. This phase is ideal for customers who have made procurement decisions before knowing about Microsoft Managed Desktop. 
 
-If you've recently bought a number of devices prior to enrolling with Microsoft Managed Desktop, you can still enroll them, but you won’t receive a full three years of management. Instead, they’ll fall out of compliance on the retirement date, regardless of when they were enrolled. Behind the scenes, Microsoft Managed Desktop will treat these devices as if they were enrolled on the last day of primary availability. In this illustration, you can see this scenario by noting that both the blue and green device end on the same day, despite their one-year difference in enrollment):
+If you've recently bought a number of devices prior to enrolling with Microsoft Managed Desktop, you can still enroll them, but you won’t receive a full three years of management. Instead, they’ll fall out of compliance on the retirement date, regardless of when they were enrolled. Behind the scenes, Microsoft Managed Desktop will treat these devices as if they were enrolled on the last day of primary availability. In this illustration, you can see this scenario by noting that both the blue and green device end on the same day, despite their one-year difference in enrollment:
 
 
 ![lifecycle timeline showing grace period](images/****.png)
@@ -85,9 +85,9 @@ The Fabrikam Laptop example from the previous table illustrates this situation:
 
 |Product  |Approved date  |End of primary availability  |End of eligiblity  |
 |---------|---------|---------|---------|
-|Fabrikam Laptop    | 1/1/2017 | 6/1/2018 | 6/1/2021 |
+|Fabrikam Laptop    | 1/1/2017 | 6/1/2019 | 6/1/2022 |
 
-As a customer, you can enroll Fabrikam Laptops all the way until 6/1/2021 – however they will all be treated as though you enrolled them on 1/1/2018. If you enroll a Fabrikam Laptop on 1/1/2020 you'll only get one year of management. This policy allows you to extract partial lifecycles from products that were previously supported, rather than having to procure new devices prematurely. 
+As a customer, you can enroll Fabrikam Laptops all the way until 6/1/2022 – however they will all be treated as though you enrolled them on 1/1/2018. If you enroll a Fabrikam Laptop on 1/1/2020 you'll only get one year of management. This policy allows you to extract partial lifecycles from products that were previously supported, rather than having to procure new devices prematurely. 
 
 Finally, during this phase the device is removed from the [device list](device-list.md) and moved to the [archived device list](archived-device-list.md).
 
@@ -98,12 +98,12 @@ Product retirement is the final phase of the lifecycle. In this phase, no new de
 
 ## Devices that are out of compliance
 
-A device is out of compliance when its allowed window for Microsoft Managed Desktop management has elapsed. This occurs when the device has reached three years of management or when that product type is removed from the device catalog, whichever occurs first.You should always target your procurement cycles such that new devices are deployed prior to them going out of compliance.
+A device is out of compliance when its allowed window for Microsoft Managed Desktop management has elapsed. This occurs when the device has reached three years of management or when that product type is removed from the device catalog, whichever occurs first. You should always target your procurement cycles such that new devices are deployed prior to current devices going out of compliance.
 
 The Microsoft Managed Desktop team knows that procurement cycles are long and planned around long-running budgets. To ensure that you're always aware of the state of your device population, we provide the following information:
 
-- A website{LINK?} that lists every device under management, its age since first enrollment, and a status indicating its compliance. This means you always have the latest information regarding device age and can leverage the report in any procurement planning cycle. 
-- A yearly summary e-mail sent to the contacts you designate in the Admin Portal containing the list of devices that will expire that year.
+- A [website](https://aka.ms/mmdportal) that lists every device under management, its future retirement date, and a status indicating its compliance. This means you always have the latest information regarding device age and can leverage the report in any procurement planning cycle. 
+- A yearly summary e-mail sent to the contacts you designate in the Admin Portal containing the list of devices that will expire that year so that you can budget appropriately.
 - A monthly summary e-mail sent to the contacts you designate in the Admin Portal containing the list of devices that expired the previous month, the ones expiring this month, and those expiring the following month.
 
 These two e-mails allow you to designate different audiences to allow each to receive the appropriate level of detail.
@@ -119,7 +119,7 @@ In addition, the we will also take the following automated actions to ensure tha
 |0     |  We'll adjust the Admin Portal to say that devices are now expired redirect admins to land on the device list first.       |
 |T+30     |  We'll reduce Admin Portal functionality until new devices are deployed.       |
 |T+60     |  We'll reduce Admin Portal functionality until new devices are deployed.       |
-|T+90     |  We remove the device from management. At this point, the device is solely your own responsibility and you should no longer consider it secure nor up to date. Also the device will be in an unknown state since each CSP controls its own tattooing behavior. {???}  |
+|T+90     |  We remove the device from management. At this point, the device is solely your own responsibility and you should no longer consider it secure nor up to date. Also the device will be in an unknown state since each Configuration Service provider controls its own settings.|
 
 
 
