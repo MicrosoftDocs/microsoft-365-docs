@@ -28,7 +28,7 @@ This topic details the lifecycle of devices as they are added and removed from t
 
 The entire sequence is depicted in this illustration:
 
-![lifecycle timeline](images/****.png)
+![lifecycle timeline](images/non-dark1-edits.PNG)
 
 Products remain on the catalog for up to 24 months, but *devices* remain under management for 3 years based on their individual enrollment dates. Effectively, each product has three important dates, but each device has only one. For products, all three of these dates are calculated based on the *approval date*, and therefore we publish these dates upon approval so that you can always look ahead and plan appropriately for the product's entire lifecycle.
 
@@ -37,8 +37,8 @@ This table shows example dates for a theoretical product:
 
 |Product  |Approved date  |End of primary availability  |End of eligiblity  |
 |---------|---------|---------|---------|
-|Fabrikam Laptop    | 1/1/2017 | 6/1/2018 | 6/1/2021 |
-|Adatum Laptop   | 1/1/2018 | 6/1/2019 | 6/1/2022  |
+|Fabrikam Laptop    | 1/1/2017 | 6/1/2019 | 6/1/2022 |
+|Adatum Laptop   | 1/1/2018 | 6/1/2020 | 6/1/2023  |
 
 This table shows example dates for theoretical *devices*:
 
@@ -53,7 +53,7 @@ This table shows example dates for theoretical *devices*:
 
 The product lifecycle starts when a manufacturer publicly releases the product:
 
-![lifecycle timeline showing release and evaluation period](images/****.png)
+![lifecycle timeline showing release and evaluation period](images/non-dark3-edits.PNG)
 
 During this stage, the Microsoft Managed Desktop engineering team does their evaluation and certification of a product. The team evaluates things like reliability and performance with Windows, compliance with a hardware baseline, market sentiment, and inventory and channel readiness, among other things. This process typically takes approximately 6 weeks.
   
@@ -66,7 +66,7 @@ At the end of this phase, Microsoft Managed Desktop adds the product to the [app
 
 This period is the core of product availability:
 
-![lifecycle timeline showing primary availibility](images/****.png)
+![lifecycle timeline showing primary availibility](images/non-dark4-edits.PNG)
 
 Any device enrolled during this period receives the full three years of support from Microsoft Managed Desktop (as shown by the blue timeline). This period lasts until an end date set to 24 months from the general availability date.
 
@@ -79,13 +79,13 @@ The product grace period is a three-year period following primary availability. 
 If you've recently bought a number of approved devices prior to enrolling with Microsoft Managed Desktop, you can still enroll them, but you won’t receive a full three years of management. Instead, they’ll fall out of compliance on the retirement date, regardless of when they were enrolled. Behind the scenes, Microsoft Managed Desktop will treat these devices as if they were enrolled on the last day of primary availability. In this illustration, you can see this scenario by noting that both the blue and green device end on the same day, despite their one-year difference in enrollment:
 
 
-![lifecycle timeline showing grace period](images/****.png)
+![lifecycle timeline showing grace period](images/non-dark2-edits.PNG)
 
 The Fabrikam Laptop example from the previous table illustrates this situation: 
 
 |Product  |Approved date  |End of primary availability  |End of eligiblity  |
 |---------|---------|---------|---------|
-|Fabrikam Laptop    | 1/1/2017 | 6/1/2019 | 6/1/2022 |
+|Fabrikam Laptop    | 6/1/2017 | 6/1/2019 | 6/1/2022 |
 
 As a customer, you can enroll Fabrikam Laptops all the way until 6/1/2022 – however they will all be treated as though you enrolled them on 6/1/2019. If you enroll a Fabrikam Laptop on 6/1/2021 you'll only get one year of management. This policy allows you to extract partial lifecycles from products that were previously supported, rather than having to procure new devices prematurely. 
 
