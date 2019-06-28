@@ -21,7 +21,7 @@ search.appverid:
 
 # Microsoft Threat Protection architecture
 
-Microsoft Threat Protection helps secure the modern workplace across its entire attack surface, securing identities, endpoints, cloud apps, and infrastructure. To effectively do that, it leverages various services across Microsoft's security stack. 
+Microsoft Threat Protection helps secure the modern workplace across its entire attack surface, securing identities, endpoints, cloud apps, and infrastructure. To effectively do that, it leverages the power of services across Microsoft's security stack. 
 
 Utilizing complex signal sharing, incident correlation, and cross-cluster queries, security teams are empowered to better protect valuable assets across an organization.
 
@@ -33,6 +33,8 @@ Utilizing complex signal sharing, incident correlation, and cross-cluster querie
 This section describes the main components of the platform and their functionalities:
 - Microsoft 365 security center
 - Signal sources
+- Security experiences
+- Surfaces
 
 
 
@@ -41,4 +43,20 @@ Microsoft 365 security center is the portal where incidents, automated investiga
 
 ## Signal sources
 Microsoft Threat Protection gathers signals from various detection engines and applies intelligent correlation to provide security analysts with better context on the full scope of a threat. 
+
+### Security experiences
+The following table provides details on what experiences are available in Microsoft 365 security center and what services are integrated to provide further details during an investigation. 
+
+
+
+
+Capability | Microsoft 365 security center | Microsoft Defender Security Center |  Azure Advanced Threat Protection | Microsoft Cloud App Security | 
+:---|:---|:---|:---|:---|:---
+Incidents | &#9745; <br> Devices <br> Identities <br> Mailboxes <br>| Machine related incidents only | Identity related identities  only | 
+Advanced hunting | &#9745;| &#9745; | |
+Automated investigation | &#9745; <br> | &#9745; | 
+
+
+
+## Surfaces
 
