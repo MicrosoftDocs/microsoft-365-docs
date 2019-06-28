@@ -73,4 +73,3 @@ The **Graph** tells the story of the cybersecurity attack. For example, it shows
 You can click the circles on the incident graph to view the details of the malicious files, associated file detections, how many instances has there been worldwide, whether it’s been observed in your organization, if so, how many instances.
 
 
-## Related topics

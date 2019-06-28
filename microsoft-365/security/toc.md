@@ -11,7 +11,7 @@
 ### [Investigate potential incidents](investigate-incidents.md)
 #### [Incident queue overview](incident-queue-overview.md)
 #### [Manage incidents](manage-incident.md)
-#### [Analyze incidents](analyze-incident.md)
+#### [Analyze incidents](analyze-incidents.md)
 
 
 
