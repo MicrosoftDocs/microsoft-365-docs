@@ -46,7 +46,7 @@ The Microsoft 365 security center includes:
 * **Policies** - Set up policies to manage devices, protect against threats, and receive alerts about various activities in your org.
 * **Permissions** - Manage who in your organization has access to Microsoft 365 security center to view content and perform tasks. You can also assign Microsoft 365 permissions in the Azure AD Portal.
 
-## Learn more - REMOVED LINKS FOR NOW WILL UPDATE
+## Learn more 
 
 Explore these topics about monitoring, reviewing, and responding to your security needs:
 
