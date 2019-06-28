@@ -3,7 +3,7 @@ title: Install Intune Company Portal Microsoft Managed Desktop devices
 description: Info on installing company portal app on Microsoft Managed Desktop devices 
 keywords: Microsoft Managed Desktop, Microsoft 365, Company Portal
 ms.service: m365-md
-author: trudyha
+author: jaimeo
 ms.localizationpriority: normal
 ms.date: 03/08/2019
 ms.collection: M365-modern-desktop
