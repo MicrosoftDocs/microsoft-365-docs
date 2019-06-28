@@ -3,7 +3,7 @@ title: How updates are handled in Microsoft Managed Desktop
 description: Keeping Microsoft Managed Desktop up-to-date is a balance of speed and stability.
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
-author: trudyha
+author: jaimeo
 ms.localizationpriority: normal
 ms.date: 01/09/2019
 ms.collection: M365-modern-desktop

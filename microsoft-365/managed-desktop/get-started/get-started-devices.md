@@ -3,7 +3,7 @@ title: Admins - help users get started with their Microsoft Managed Desktop devi
 description:  
 keywords: Microsoft Managed Desktop, device, get started, Microsoft 365
 ms.service: m365-md
-author: trudyha
+author: jaimeo
 ms.localizationpriority: normal
 ms.date: 2/27/2019
 ms.collection: M365-modern-desktop

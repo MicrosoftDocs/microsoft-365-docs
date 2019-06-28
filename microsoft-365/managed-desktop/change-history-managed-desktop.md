@@ -20,6 +20,8 @@ New or changed topic | Description
 [Apps in Microsoft Managed Desktop](get-ready/apps.md) | Updated topic
 [Working with Microsoft Consulting Services](get-ready/apps-mcs.md) | New topic
 [Microsoft Managed Desktop roles and responsibilities](intro/roles-and-responsibilities.md) | Updated topic
+[Microsoft Managed Desktop product lifecycle](service-description/device-lifecycle.md) | New topic
+
 
 
 ## May 2019
