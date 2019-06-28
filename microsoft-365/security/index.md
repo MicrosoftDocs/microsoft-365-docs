@@ -33,7 +33,7 @@ Bringing together powerful security capabilities, Microsoft Threat Protection en
 
 - **Empower your defenders** - By providing visibility into the full scope of a threat, your security defenders are empowered to identify its impact and take appropriate remediation actions.
 
-Access the power of Microsoft Threat Protection through Microsoft security center.
+Access the power of Microsoft Threat Protection through Microsoft 365 security center.
 
 <center><h2>Microsoft Threat Protection services</center></h2>
 <table><tr><td><center><b><a href="https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection"><b>Microsoft Defender Advanced Threat Protection</b></center></a></td>
