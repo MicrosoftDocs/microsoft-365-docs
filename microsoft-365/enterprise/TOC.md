@@ -93,6 +93,7 @@
 ## [Step 7: Windows and Office Servicing](step-7-windows-and-office-as-a-service.md)
 ## [Step 8: User Communications and Training](step-8-user-communications-and-training.md)
 ## [Windows 7 to Windows 10 manual upgrade(windows-7-to-windows-10-upgrade-manual.md)
+## [Windows 7 to Windows 10 automated upgrades(windows-7-to-windows-10-upgrade-automated.md)
 ## [Windows and Office Deployment and Lab Kit](modern-desktop-deployment-and-management-lab.md)
 ## [Find help for your deployment](find-help-for-modern-desktop-deployment.md)
 ## [Get your Leadership on Board: Value Discovery and Business Case](https://transform.microsoft.com)
