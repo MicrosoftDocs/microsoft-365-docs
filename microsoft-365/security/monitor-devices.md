@@ -159,7 +159,7 @@ The lower part of this card shows settings by rule across your devices. Each bar
 
 To view detailed information about ASR rule detections in your network, select **View detections** on the **Attack surface reduction rules** card. The **Detections** tab in the detailed report page will open.
 
-![Detections tab](./media/security-docs/detections-tab.png)
+![Detections tab](images/detections-tab.png)
 
 The chart at the top of the page shows detections over time stacking detections that were either blocked or audited. The table at the bottom lists the most recent detections. Use the following information on the table to understand the nature of the detections:
 
@@ -172,7 +172,7 @@ The chart at the top of the page shows detections over time stacking detections 
 
 In the **Attack surface reduction rules** report page, go to the **Configuration** tab to review rule settings for individual devices. Select a device to get detailed information about whether each rule is in block mode, audit mode, or turned off entirely.
 
-![Configuration tab](./media/security-docs/configuration-tab.png)
+![Configuration tab](images/configuration-tab.png)
 
 Microsoft Intune provides management functionality for your ASR rules. If you want to update your settings, select **Get started** under **Configure devices** in the tab to open device management on Intune.
 
