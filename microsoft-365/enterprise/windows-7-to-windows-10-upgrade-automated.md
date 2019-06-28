@@ -21,8 +21,6 @@ Starting January 14, 2020, security updates or support for PCs running Windows 7
 
 ![](media/windows-7-to-windows-10-upgrade-automated-media/windows-7-to-windows-10-upgrade-automated-media-1.png)
 
-*Desktop deployment process wheel focused on in-place upgrade scenario for Windows 10 only*
-
 Using in-place upgrades, several desktop deployment processes get reduced dramatically in scope, especially:
 
   - **Application packaging** and redelivery of required line-of-business apps – these are simply carried forward from the Windows 7 environment
@@ -66,8 +64,6 @@ The upgrade deployment option is covered in [OS Deployment and Feature Updates](
   - Along with anything else you need to configure to achieve a business ready state
 
 ![](media/windows-7-to-windows-10-upgrade-automated-media/windows-7-to-windows-10-upgrade-automated-media-2.png)
-
-*Example of an Upgrade Task Sequence in System Center Configuration Manager*
 
 The most common reasons upgrades may not complete or are not possible include challenges with:
 
