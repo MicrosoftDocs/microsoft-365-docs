@@ -21,7 +21,7 @@ ms.topic: conceptual
 
 The threat landscape is growing in complexity and attacks are increasingly becoming more sophisticated. Malicious attackers use a wide set of tools in their arsenal to find vulnerabilities across an expanding attack surface. 
 
-Protecting against these types of attacks requires having visibility across modern security perimeters and a well synchronized defense solution. 
+Protecting against these types of attacks require having visibility across modern security perimeters and a well synchronized defense solution. 
 
 Microsoft Threat Protection is a comprehensive security solution designed to protect enterprise devices, identity, data and applications. 
 
