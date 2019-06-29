@@ -8,26 +8,30 @@
 ### [Preview features](mtp-preview.md)
 
 ## [How-to guides]()
-### [Investigate potential incidents](investigate-incidents.md)
+### [Incidents]()
+#### [Investigate potential incidents](investigate-incidents.md)
 #### [Incident queue overview](incident-queue-overview.md)
 #### [Manage incidents](manage-incident.md)
 #### [Analyze incidents](analyze-incidents.md)
 
+### [Automated investigations]()
 ### [Automatically remediate issues](mtp-autoir.md)
 #### [Automated investigations overview](autoir-overview.md)
 #### [Automated investigations dashboard overview](autoir-dashboard-overview.md)
 #### [Analyze automated investigations](analyze-autoir.md)
 #### [Manage actions related to automated investigations](autoir-actions.md)
 
-### Proactively hunt for threats
+### [Advanced hunting]()
+#### [Proactively hunt for threats](hunting.md)
 
 ### [Microsoft Secure Score](microsoft-secure-score.md)
 
-### [Monitor and view reports](monitoring-and-reporting.md)
-### [Identity monitoring and reporting](monitor-and-report-identities.md)
-### [Data monitoring and reporting](monitor-data.md)
-### [Device monitoring and reporting](monitor-devices.md)
-### [App monitoring and reporting](monitor-apps.md)
+### [Reports]()
+#### [Monitor and view reports](monitoring-and-reporting.md)
+#### [Identity monitoring and reporting](monitor-and-report-identities.md)
+#### [Data monitoring and reporting](monitor-data.md)
+#### [Device monitoring and reporting](monitor-devices.md)
+#### [App monitoring and reporting](monitor-apps.md)
 
 ### [Classification ?](https://docs.microsoft.com/office365/securitycompliance/labels?redirectSourcePath=%252farticle%252faf398293-c69d-465e-a249-d74561552d30)
 

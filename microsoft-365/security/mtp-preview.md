@@ -30,3 +30,8 @@ For more information on new capabilities that are generally available, see [What
 
 ## Preview features
 The following features are included in the preview release:
+
+## August 2019
+- Incidents
+- Automated investigation and remediation
+- Advanced hunting 

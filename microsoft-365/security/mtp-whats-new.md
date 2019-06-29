@@ -26,7 +26,3 @@ The following features are generally available (GA) in the latest release of Mic
 For more information on preview features, see [Preview features](mtp-preview.md)
 
 
-## July 2019
-- Incidents
-- Automated investigation and remediation
-- Advanced hunting 
