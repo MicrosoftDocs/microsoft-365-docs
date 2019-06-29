@@ -15,7 +15,7 @@
 #### [Analyze incidents](analyze-incidents.md)
 
 ### [Automated investigations]()
-### [Automatically remediate issues](mtp-autoir.md)
+#### [Automatically remediate issues](mtp-autoir.md)
 #### [Automated investigations overview](autoir-overview.md)
 #### [Automated investigations dashboard overview](autoir-dashboard-overview.md)
 #### [Analyze automated investigations](analyze-autoir.md)
