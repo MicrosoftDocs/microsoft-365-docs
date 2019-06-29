@@ -1,9 +1,9 @@
 # [Microsoft Threat Protection](index.md)
 
 ## [Overview]()
-### [Microsoft 365 security center](overview-security-center.md)
 ### [Microsoft Threat Protection architecture](mpt-architecture.md)
 ### [Microsoft Threat Protection prerequisites](mtp-prerequisites.md)
+### [Microsoft 365 security center](overview-security-center.md)
 ### [What's new in Microsoft Threat Protection](mtp-whats-new.md)
 ### [Preview features](mtp-preview.md)
 
