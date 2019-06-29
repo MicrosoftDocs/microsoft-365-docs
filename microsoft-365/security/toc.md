@@ -21,6 +21,7 @@
 
 ### Proactively hunt for threats
 
+### [Microsoft Secure Score](microsoft-secure-score.md)
 
 ### [Monitor and view reports](monitoring-and-reporting.md)
 ### [Identity monitoring and reporting](monitor-and-report-identities.md)
