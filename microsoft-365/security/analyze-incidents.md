@@ -1,7 +1,7 @@
 ---
-title: 
-description: 
-keywords: 
+title: Analyze incidents
+description: Analyze incidents related to machines, users, and mailboxes.
+keywords: incident, incidents, machines, devices, users, identities, mail, email, mailbox, investigation, graph, evidence
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -21,7 +21,7 @@ search.appverid:
 
 # Analyze incidents
 
-Ivestigate incidents that affect your network, understand what they mean, and collate evidence to resolve them. 
+Investigate incidents that affect your network, understand what they mean, and collate evidence to resolve them. 
 
 When you investigate an incident, you'll see:
 - Incident details
