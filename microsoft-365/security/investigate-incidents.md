@@ -1,5 +1,5 @@
 ---
-title: Investigate potential incidents
+title: Investigate incidents
 description: Investigate incidents seen across devices, identities, and mailboxes.
 keywords: incidents, alerts, investigate, correlation, attack, machines, devices, users, identities, identity, mailbox, email
 search.product: eADQiWindows 10XVcnh
@@ -19,7 +19,7 @@ search.appverid:
 - MET150
 ---
 
-# Investigate potential incidents 
+# Investigate incidents 
 
 Microsoft Threat Protection applies correlation analytics and aggregates all related alerts and investigations seen across devices, identities, and mailboxes into an incident. 
 

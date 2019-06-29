@@ -1,5 +1,5 @@
 ---
-title: Automatically remediate issues 
+title: Automatically investigate and remediate issues 
 description: Automatically remeidate issues seen on entities
 keywords: automated, investigation, detection, source, threat types, id, tags, machines, duration, filter export
 search.product: eADQiWindows 10XVcnh
@@ -17,7 +17,7 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ---
 
-# Automatically remediate issues 
+# Automatically investigate and remediate issues 
 
 The Microsoft Threat Protection service has a wide breadth of visibility on alerts generated across devices, identities, and mailboxes. With this kind of optics, the service generates a multitude of alerts. The volume of alerts generated can be challenging for a typical security operations team to individually address.
 

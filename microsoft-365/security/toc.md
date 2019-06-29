@@ -8,21 +8,20 @@
 ### [Preview features](mtp-preview.md)
 
 ## [How-to guides]()
-### [Incidents]()
-#### [Investigate potential incidents](investigate-incidents.md)
+### [Investigate potential incidents]()
+#### [Investigate incidents](investigate-incidents.md)
 #### [Incident queue overview](incident-queue-overview.md)
 #### [Manage incidents](manage-incident.md)
 #### [Analyze incidents](analyze-incidents.md)
 
-### [Automated investigations]()
-#### [Automatically remediate issues](mtp-autoir.md)
+### [Automatically remediate issues]()
+#### [Automatically investigate and remediate issues](mtp-autoir.md)
 #### [Automated investigations overview](autoir-overview.md)
 #### [Automated investigations dashboard overview](autoir-dashboard-overview.md)
 #### [Analyze automated investigations](analyze-autoir.md)
 #### [Manage actions related to automated investigations](autoir-actions.md)
 
-### [Advanced hunting]()
-#### [Proactively hunt for threats](hunting.md)
+### [Proactively hunt for threats](hunting.md)
 
 ### [Microsoft Secure Score](microsoft-secure-score.md)
 
