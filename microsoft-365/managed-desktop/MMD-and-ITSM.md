@@ -9,17 +9,17 @@ ms.localizationpriority: normal
 
 # Microsoft Managed Desktop and ITSM
 
-Many organizations find it valuable to structure their IT services along the lines of a formalized IT Service Model (ITSM), such as ITIL {LINKS}. 
+Many organizations find it valuable to structure their IT services along the lines of a formalized IT Service Model (ITSM), such as [ITIL](https://www.axelos.com/best-practice-solutions/itil). 
 
-Microsoft Managed Desktop enables your organization to comply with many key aspects of such formalized ITSM models. This topic helps you see the connections between common ITSM phases and processes and the equivalent Microsoft Managed Desktop features.
+Microsoft Managed Desktop enables your organization to comply with many key aspects of such formalized ITSM models. Using ITIL as an example, this topic helps you see the connections between common ITSM phases and processes and the equivalent Microsoft Managed Desktop features.
 
-These are the lifecycle phases described in ITIL, for example:
+These are the lifecycle phases described in ITIL, with further information about those phases that Microsoft Managed Desktop is directly involved with:
 
 - Service strategy processes: The "service strategy" includes processes such as strategy management, service portfolio management, financial management (for IT), demand management, and business relationship management.
 - [Service design](#service-design): what is
 - [Service transition](#service-transition): what is
 - [Service operation](#service-operation): what is
-- Continual improvement: what is
+- Continual service improvement: what is
 
 ## Service design
 
