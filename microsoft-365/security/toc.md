@@ -21,7 +21,8 @@
 #### [Analyze automated investigations](analyze-autoir.md)
 #### [Manage actions related to automated investigations](autoir-actions.md)
 
-### [Proactively hunt for threats](hunting.md)
+### [Advanced hunting]
+#### [Proactively hunt for threats](hunting.md)
 
 ### [Microsoft Secure Score](microsoft-secure-score.md)
 
