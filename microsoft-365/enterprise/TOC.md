@@ -143,5 +143,5 @@
 ### [Microsoft's data protection officer](../compliance/gdpr-data-protection-officer.md)
 
 
-# [Security solutions](../security/index.md)
+# [Microsoft 365 security](../security/index.md)
 
