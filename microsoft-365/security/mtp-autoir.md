@@ -8,7 +8,6 @@ ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.topic: article
 ms.author: deniseb
 author: denisebmsft
 ms.localizationpriority: medium
