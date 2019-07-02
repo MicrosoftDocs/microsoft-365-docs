@@ -3,12 +3,13 @@ title: Learn about the automated investigations dashboard in Microsoft 365 secur
 description: View the list of automated investigations, its status, detection source and other details
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.topic: article
+ms.author: deniseb
+author: denisebmsft
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro

@@ -1,19 +1,21 @@
 ---
 title: Automatically investigate and remediate issues 
-description: Automatically remeidate issues seen on entities
+description: Automatically remediate issues seen on entities
 keywords: automated, investigation, detection, source, threat types, id, tags, machines, duration, filter export
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.topic: article
+ms.author: deniseb
+author: denisebmsft
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: 
+- M365-security-compliance 
 ms.topic: conceptual
 ---
 
