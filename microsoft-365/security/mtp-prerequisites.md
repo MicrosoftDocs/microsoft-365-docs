@@ -29,7 +29,7 @@ Microsoft Threat Protection requires the following Microsoft Volume Licensing:
 
 - Enterprise Mobility + Security 5 (EMS E5) 
 
-You can acquire this from the [Microsoft 365 portal](https://www.microsoft.com/enterprise-mobility-security/compare-plans-and-pricing) or through the Cloud Solution Partner (CSP) licensing model.
+You can acquire this from the [Microsoft 365 Enterprise page](https://www.microsoft.com/en-us/microsoft-365/enterprise).
 
 ## Browser requirements
 Access to Microsoft 365 security center is done through a browser. The following browsers are supported:
