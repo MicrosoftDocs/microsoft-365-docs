@@ -1,4 +1,4 @@
-# [Microsoft Threat Protection](index.md)
+# [Microsoft 365 security](index.md)
 
 ## [Overview]()
 ### [Microsoft Threat Protection architecture](mpt-architecture.md)
