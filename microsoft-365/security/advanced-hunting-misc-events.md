@@ -1,6 +1,6 @@
 ---
-title: Miscellaneous events in Advanced hunting
-description: Find security events in the Advanced hunting miscellaneous events table
+title: Miscellaneous events in advanced hunting
+description: Find security events in the advanced hunting miscellaneous events table
 keywords: advanced hunting, atp query, query atp data, intellisense, atp telemetry, events, events telemetry, azure log analytics
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -15,10 +15,10 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 06/13/2019
+ms.date: 07/15/2019
 ---
 
-# Miscellaneous events table in Advanced hunting
+# Find miscellaneous events in advanced hunting
 
 The miscellaneous events table or **MiscEvents** contains a broad range of events captured by Microsoft Defender ATP. Many of these include security-related events, such as antivirus...
 
@@ -1139,5 +1139,12 @@ Exploit protection detected a call to the Windows system API.
 ## ExploitGuardWin32SystemCallBlocked (renamed since this is "Audited" in sheet)
 Exploit protection blocked a call to the Windows system API.
 
-
+## Related topics
+- [Proactively hunt for threats](advanced-hunting.md)
+- [Learn the query language](advanced-hunting-language-overview.md)
+- [Use shared queries](advanced-hunting-shared-queries.md)
+- [Understand the data tables](advanced-hunting-schema-tables.md)
+- [Understand the data columns](advanced-hunting-column-reference.md)
+- [Find miscellaneous events](advanced-hunting-misc-events.md)
+- [Apply query best practices](advanced-hunting-best-practices.md)
 

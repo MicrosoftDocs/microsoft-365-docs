@@ -27,7 +27,7 @@
 #### [Use shared queries](advanced-hunting-shared-queries.md)
 #### [Understand the data tables](advanced-hunting-schema-tables.md)
 #### [Understand the data columns](advanced-hunting-column-reference.md)
-#### [Find for miscellaneous events](advanced-hunting-misc-events.md)
+#### [Find miscellaneous events](advanced-hunting-misc-events.md)
 #### [Apply query best practices](advanced-hunting-best-practices.md)
 
 ### [Secure Score](microsoft-secure-score.md)

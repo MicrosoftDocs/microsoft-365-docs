@@ -1,6 +1,6 @@
 ---
-title: Advanced hunting reference in Microsoft Defender ATP
-description: Learn about Advanced hunting table reference such as column name, data type, and description
+title: Microsoft 365 advanced hunting data columns
+description: Learn about columns used across different tables in the advanced hunting schema
 keywords: advanced hunting, atp query, query atp data, intellisense, atp telemetry, events, events telemetry, azure log analytics, column name, data type, description
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -8,17 +8,17 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: lomayor
+author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 06/01/2018
+ms.date: 07/15/2019
 ---
 
-# Advanced hunting reference in Microsoft Defender ATP
+# Understand the data columns in the advanced hunting schema
 
 **Applies to:**
 
@@ -123,5 +123,9 @@ To effectively build queries that span multiple tables, you need to understand t
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-advancedhuntingref-belowfoldlink)        
 
 ## Related topics
-- [Query data using Advanced hunting](advanced-hunting.md)
-- [Advanced hunting query language best practices](advanced-hunting-best-practices.md)
+- [Proactively hunt for threats](advanced-hunting.md)
+- [Learn the query language](advanced-hunting-language-overview.md)
+- [Use shared queries](advanced-hunting-shared-queries.md)
+- [Understand the data tables](advanced-hunting-schema-tables.md)
+- [Find miscellaneous events](advanced-hunting-misc-events.md)
+- [Apply query best practices](advanced-hunting-best-practices.md)

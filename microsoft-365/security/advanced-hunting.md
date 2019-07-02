@@ -1,6 +1,6 @@
 ---
-title: Query data using Advanced hunting in Microsoft Defender ATP
-description: Learn about Advanced hunting in Microsoft Defender ATP and how to query ATP data.
+title: Overview of advanced hunting in Microsoft 365
+description: Learn about advanced hunting queries in Microsoft 365 and how to use it to proactively find threats in your organization
 keywords: advanced hunting, atp query, query atp data, intellisense, atp telemetry, events, events telemetry, azure log analytics
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -8,17 +8,17 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: lomayor
+author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 08/15/2018
+ms.date: 07/15/2019
 ---
 
-# Query data using Advanced hunting in Microsoft Defender ATP
+# Proactively hunt for threats
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-advancedhunting-abovefoldlink)
 
@@ -148,9 +148,13 @@ Check out the [Advanced hunting repository](https://github.com/Microsoft/Windows
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-advancedhunting-belowfoldlink)
 
-## Related topic
-- [Advanced hunting reference](advanced-hunting-reference.md)
-- [Advanced hunting query language best practices](advanced-hunting-best-practices.md)
+## Related topics
+- [Learn the query language](advanced-hunting-language-overview.md)
+- [Use shared queries](advanced-hunting-shared-queries.md)
+- [Understand the data tables](advanced-hunting-schema-tables.md)
+- [Understand the data columns](advanced-hunting-column-reference.md)
+- [Find miscellaneous events](advanced-hunting-misc-events.md)
+- [Apply query best practices](advanced-hunting-best-practices.md)
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: Advanced hunting best practices in Microsoft Defender ATP
-description: Learn about Advanced hunting best practices such as what filters and keywords to use to effectively query data.
+title: Advanced hunting best practices
+description: Learn about advanced hunting best practices to improve query performance and avoid exhausting resources.
 keywords: advanced hunting, best practices, keyword, filters, atp query, query atp data, intellisense, atp telemetry, events, events telemetry, azure log analytics
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -8,17 +8,17 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: lomayor
+author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
-ms.topic: conceptual
-ms.date: 04/24/2018
+ms.topic: article
+ms.date: 07/15/2019
 ---
 
-# Advanced hunting query best practices Microsoft Defender ATP
+# Apply query best practices in advanced hunting
 
 **Applies to:**
 
@@ -90,7 +90,15 @@ ProcessCreationEvents
 | where CanonicalCommandLine contains "stop" and CanonicalCommandLine contains "MpsSvc" 
 ```
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-bestpractices-belowfoldlink)        
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-bestpractices-belowfoldlink)
+
+## Related topics
+- [Proactively hunt for threats](advanced-hunting.md)
+- [Learn the query language](advanced-hunting-language-overview.md)
+- [Use shared queries](advanced-hunting-shared-queries.md)
+- [Understand the data tables](advanced-hunting-schema-tables.md)
+- [Understand the data columns](advanced-hunting-column-reference.md)
+- [Find miscellaneous events](advanced-hunting-misc-events.md)
 
 
 
