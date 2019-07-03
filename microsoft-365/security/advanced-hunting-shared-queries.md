@@ -22,6 +22,8 @@ ms.topic: article
 **Applies to**:
 - Microsoft 365
 
+## Try the sample queries to learn the language
+
 To get you started in querying your data, you can use the basic or Advanced query examples that have some preloaded queries for you to understand the basic query syntax.
 
 ![Image of Advanced hunting window](images/atp-advanced-hunting.png)
@@ -34,7 +36,7 @@ Shared queries are prepopulated queries that give you a starting point on runnin
 
 You can save, edit, update, or delete queries.
 
-### Save a query
+## Save and share queries
 You can create or modify a query and save it as your own query or share it with users who are in the same tenant. 
 
 1. Create or modify a query. 
@@ -70,6 +72,9 @@ Check out the [Advanced hunting repository](https://github.com/Microsoft/Windows
 
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-advancedhunting-belowfoldlink)
+
+## Advanced hunting queries on threat analytics
+Along with threat analytics reports, Microsoft security researchers, also provide advanced hunting queries that you can use to locate activities and indicators that can be associated with the reported threats. For more information...  
 
 ## Related topics
 - [Proactively hunt for threats](advanced-hunting.md)
