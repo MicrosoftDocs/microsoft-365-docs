@@ -1,6 +1,6 @@
 ---
 title: Microsoft 365 automated investigations overview
-description: View the list of automated investigations, status, detection source, and other details.
+description: Get an overview of automated investigations, including active investigations, status, detection source, and other details.
 keywords: automated, investigation, detection, source, threat types, id, tags, machines, duration, filter export
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -23,7 +23,7 @@ ms.topic: conceptual
 **Applies to**:
 - Microsoft 365
 
-Automated investigation and remediation (AIR) features in Microsoft Threat Protection enable your security operations team to operate more effectively and efficiently. AIR features  leverage various inspection algorithms and processes that are used by security analysts. With alerts and security playbooks, you can use AIR to address certain alerts and resolve security breaches immediately. This significantly reduces alert volume, allowing your security operations team to focus on more sophisticated threats and other high value initiatives. 
+Automated investigation and remediation (AIR) features in Microsoft 365 enable your security operations team to operate more effectively and efficiently. AIR includes alerts and security playbooks that are based on industry standards and best practices. AIR can help your security team address alerts and resolve security breaches quickly. Through certain automated processes and remediation activities, AIR significantly reduces the volume of alerts your security team must address, allowing your security operations team to focus on more sophisticated threats and other high-value initiatives. 
 
 
 
