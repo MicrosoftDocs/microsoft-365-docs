@@ -1,6 +1,6 @@
 ---
-title: Understand the latest attack campaigns and techniques with threat analytic
-description: Describes threat analytics interactive reports
+title: Understand the latest attack campaigns and techniques with threat analytics in Microsoft 365 security center
+description: Describes threat analytics interactive reports in Microsoft 365 security center
 keywords: security, malware, Microsoft 365, M365, security center, threat analytics, Microsoft Defender ATP, cyber, security posture, emerging threats
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -14,7 +14,7 @@ ms.topic: article
 search.appverid: met150
 ---
 
-# Understand the latest attack campaigns and techniques with threat analytics
+# Understand the latest attack campaigns and techniques with threat analytics 
 
 Cyber threats are becoming more frequent and sophisticated. It’s critical for organizations to quickly assess their security posture and resilience against specific emerging threats.
 

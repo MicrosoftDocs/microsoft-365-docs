@@ -1,7 +1,7 @@
 ---
-title: Manage incidents
+title: Manage incidents in Microsoft 365
 description: Learn how to assign, update the status, 
-keywords: 
+keywords: incident, incidents, alerts, correlated alerts, assign, update, status, manage, classification, microsoft, 365, m365
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -18,7 +18,11 @@ search.appverid:
 - MOE150
 - MET150
 ---
+
 # Manage incidents
+
+**Applies to**:
+- Microsoft 365
 
 Managing incidents is an important part of every cybersecurity operation. You can manage incidents by selecting an incident from the **Incidents queue**. You can assign incidents to yourself, change the status, classify, rename, or comment on them to keep track of their progress. 
 

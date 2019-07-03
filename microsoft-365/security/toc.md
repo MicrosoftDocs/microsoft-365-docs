@@ -2,16 +2,16 @@
 
 ## [Overview]()
 ### [Microsoft 365 security center](overview-security-center.md)
-### [Microsoft Threat Protection architecture](mpt-architecture.md)
-### [Microsoft Threat Protection prerequisites](mtp-prerequisites.md)
+### [Microsoft 365 security architecture](mpt-architecture.md)
+### [Microsoft 365 security prerequisites](mtp-prerequisites.md)
 ### [What's new in Microsoft 365 security](mtp-whats-new.md)
-### [Preview features](mtp-preview.md)
+### [Microsoft 365 security preview features](mtp-preview.md)
 
 ## [How-to guides]()
 ### [Incidents]()
 #### [Investigate incidents](investigate-incidents.md)
 #### [Incident queue overview](incident-queue-overview.md)
-#### [Manage incidents](manage-incident.md)
+#### [Manage incidents](manage-incidents.md)
 #### [Analyze incidents](analyze-incidents.md)
 
 ### [Automated investigation and remediation]()

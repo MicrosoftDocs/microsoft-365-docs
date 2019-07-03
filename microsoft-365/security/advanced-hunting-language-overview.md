@@ -1,5 +1,5 @@
 ---
-title: Learn the advanced hunting query language 
+title: Learn the advanced hunting query language in Microsoft 365
 description: Get an overview of the common operators and other aspects of the advanced hunting query language you can use to formulate queries
 keywords: advanced hunting, atp query, query atp data, intellisense, atp telemetry, events, events telemetry, azure log analytics
 search.product: eADQiWindows 10XVcnh
@@ -18,9 +18,30 @@ ms.topic: article
 ms.date: 07/15/2019
 ---
 
-# Learn common query operators for advanced hunting
+# Learn the advanced hunting query language
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-advancedhunting-abovefoldlink)
+A typical query starts with a table name followed by a series of operators separated by **|**.
+
+In the following example, we start with the table name **ProcessCreationEvents** and add piped elements as needed.
+
+![Image of Microsoft Defender ATP Advanced hunting query](images/advanced-hunting-query-example.png)
+
+First, we define a time filter to review only records from the previous seven days. 
+
+We then add a filter on the _FileName_  to contain only instances of _powershell.exe_.
+
+Afterwards, we add a filter on the _ProcessCommandLine_. 
+
+Finally, we  project only the columns we're interested in exploring and limit the results to 100 and click **Run query**.
+
+You have the option of expanding the screen view so you can focus on your hunting query and related results.
+
+## Learn common query operators for advanced hunting
+
+**Applies to**:
+- Microsoft 365
+- 
+
 
 The advanced hunting query language is very powerful and has a lot of available operators, some of them are:
 

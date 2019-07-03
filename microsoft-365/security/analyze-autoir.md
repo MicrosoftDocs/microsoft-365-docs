@@ -1,5 +1,5 @@
 ---
-title: Analyze automated investigations
+title: Analyze automated investigations in Microsoft 365
 description: View the details of an Automated investigation to see information such as the investigation graph, alerts associated with the investigation, and other information
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,6 +18,9 @@ ms.topic: conceptual
 ---
 
 # Analyze automated investigations - align this with UI/UX
+
+**Applies to**:
+- Microsoft 365
 
 You can view the details of an Automated investigation to see information such as the investigation graph, alerts associated with the investigation, the machine that was investigated, and other information.
 

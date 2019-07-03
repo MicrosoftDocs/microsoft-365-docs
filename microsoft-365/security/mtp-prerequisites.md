@@ -19,15 +19,15 @@ search.appverid:
 - MET150
 ---
 
-# Microsoft Threat Protection prerequisites
+# Microsoft 365 Security prerequisites
 
-Learn about the licensing, hardware and software requirements, and other configuration settings to run and use the Microsoft Threat Protection platform.
+Learn about the licensing, hardware and software requirements, and other configuration settings to run and use the Microsoft 365 Security.
 
 
 ## Licensing requirements
-Microsoft Threat Protection requires the following Microsoft Volume Licensing:
+Microsoft 365 Security requires the following license:
 
-- Enterprise Mobility + Security 5 (EMS E5) 
+- Microsoft 365 E5 
 
 You can acquire this from the [Microsoft 365 Enterprise page](https://www.microsoft.com/en-us/microsoft-365/enterprise).
 

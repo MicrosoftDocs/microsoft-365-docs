@@ -15,10 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 07/15/2019
 ---
 
 # Understand the data tables in the advanced hunting schema
+
+**Applies to**:
+- Microsoft 365
 
 The following tables comprise the data schema in advanced hunting:
 

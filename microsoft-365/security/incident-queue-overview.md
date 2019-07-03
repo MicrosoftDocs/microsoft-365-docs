@@ -1,5 +1,5 @@
 ---
-title: Incident queue overview 
+title: Microsoft 365 incident queue overview 
 description: Learn how to navigate the incident queue to manage incidents in Microsoft 365 security center
 keywords: 
 search.product: eADQiWindows 10XVcnh
@@ -20,6 +20,10 @@ search.appverid:
 ---
 
 # Incident queue overview
+
+**Applies to**:
+- Microsoft 365
+
 
 The **Incidents queue** shows a collection of incidents that were flagged from across devices, identities, and mailboxes. It helps you sort through incidents to prioritize and create an informed cybersecurity response decision.
 

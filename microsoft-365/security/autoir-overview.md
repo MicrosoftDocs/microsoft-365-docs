@@ -1,5 +1,5 @@
 ---
-title: Automated investigations overview
+title: Microsoft 365 automated investigations overview
 description: View the list of automated investigations, its status, detection source and other details.
 keywords: automated, investigation, detection, source, threat types, id, tags, machines, duration, filter export
 search.product: eADQiWindows 10XVcnh
@@ -19,6 +19,9 @@ ms.topic: conceptual
 ---
 
 # Automated investigations overview
+
+**Applies to**:
+- Microsoft 365
 
 The Automated investigation feature leverages various inspection algorithms, and processes used by analysts (such as playbooks) to examine alerts and take immediate remediation action to resolve breaches. This significantly reduces alert volume, allowing security operations experts to focus on more sophisticated threats and other high value initiatives. 
 

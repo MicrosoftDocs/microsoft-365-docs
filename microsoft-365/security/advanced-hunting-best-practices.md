@@ -15,16 +15,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 07/15/2019
 ---
 
 # Apply query best practices in advanced hunting
 
-**Applies to:**
+**Applies to**:
+- Microsoft 365
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
-
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-bestpractices-abovefoldlink)
 
 ## Performance best practices
 The following best practices serve as a guideline of query performance best practices and for you to get faster results and be able to run complex queries. 

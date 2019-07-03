@@ -1,6 +1,6 @@
 ---
-title: Microsoft Threat Protection preview features
-description: Learn about  Microsoft Threat Protection capabilities that are in preview and how to access them.
+title: Microsoft 365 Security preview features
+description: Learn about Microsoft 365 Security capabilities that are in preview and how to access them.
 keywords: preview, preview experience, microsoft threat protection, features, updates
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -19,11 +19,11 @@ search.appverid:
 - MET15
 ---
 
-# Microsoft Threat Protection preview features
+# Microsoft 365 Security preview features
 
-Microsoft Threat Protection is constantly being updated to include new feature enhancements and capabilities.
+Microsoft 365 Security is constantly being updated to include new feature enhancements and capabilities.
 
-Learn about new features in the Microsoft Threat Protection preview release and be among the first to try upcoming features by turning on the preview experience.
+Learn about new features in the Microsoft 365 Security preview release and be among the first to try upcoming features by turning on the preview experience.
 
 For more information on new capabilities that are generally available, see [What's new in Microsoft Threat Protection](mtp-whats-new.md).
 
