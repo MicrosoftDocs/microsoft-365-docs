@@ -32,7 +32,7 @@ An automated investigation begins when an alert is triggered. Depending on how y
 - A malicious file is detected in email
 - A user account is flagged as compromised 
 
-Once an alert associated with a playbook is triggered, 
+Once an alert associated with a playbook is triggered, an investigation begins automatically. The investigation is designed to gather information about the type of threat, where it came from, who in your organization is affected by the threat, whether and where other instances of the threat exist in your organization, and more.
 
 ### How the Automated investigation starts
 
