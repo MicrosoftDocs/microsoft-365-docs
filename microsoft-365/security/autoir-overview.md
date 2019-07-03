@@ -27,33 +27,19 @@ Automated investigation and remediation (AIR) features in Microsoft 365 enable y
 
 ## Understand the Automated investigation flow
 
-An automated investigation begins when an alert is triggered. Depending on how your alert policies are configured, certain events will trigger an automated investigation. Here are a few examples:
+In a nutshell, an alert leads to an investigation, which then leads to remediation.
+
+An automated investigation begins when an alert is triggered. Not every alert will trigger an automated investigation. It depends on how your alert policies are configured. Here are a few examples of typical alerts that will trigger an automated investigation:
 - Microsoft Defender detects malware on a user's machine
 - A malicious file is detected in email
 - A user account is flagged as compromised 
 
 Once an alert associated with a playbook is triggered, an investigation begins automatically. The investigation is designed to gather information about the type of threat, where it came from, who in your organization is affected by the threat, whether and where other instances of the threat exist in your organization, and more.
 
-### How the Automated investigation starts
-
 ## Alerts
 
 Alerts represent triggers for security operations team workflows for incident response and remediation. Prioritizing the right set of alerts for investigation, while making sure no threats are unaddressed is challenging. When investigations into alerts are performed manually, security operations teams must hunt and correlate entities (such as content, devices and users) at risk from threats. Such tasks and workflows are very time consuming and involve multiple tools and systems. With AIR, investigation and remediation steps are automated. When alerts are triggere alerts that trigger your security response playbooks automatically. 
 
->[!NOTE]
->Currently, Automated investigation only supports the following: 
-><br>
->**OS versions**
->- Windows 10, version 1709 (OS Build 16299.1085 with [KB4493441](https://support.microsoft.com/en-us/help/4493441/windows-10-update-kb4493441)) or later
->- Windows 10, version 1803 (OS Build 17134.704 with [KB4493464](https://support.microsoft.com/en-us/help/4493464/windows-10-update-kb4493464)) or later
-><br>
->- Later versions of Windows 10 <br>
->
->**Mailbox related alerts**
->- Potentially malicious URL click was detected
->- Email reported by user as phish
->- Email messages containing malware removed after delivery
->- Email messages containing phish URLs removed after delivery
 
 The alerts start by analyzing the supported entities from the alert and also runs a generic playbook to see if there is anything else suspicious on the entity. The outcome and details from the investigation is seen in the Automated investigation view.
 
