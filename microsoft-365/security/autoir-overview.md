@@ -23,9 +23,9 @@ ms.topic: conceptual
 **Applies to**:
 - Microsoft 365
 
-Automated investigations leverage various inspection algorithms and processes used by security analysts. Security playbooks that are based on industry standards help examine alerts and take remediation action to resolve breaches immediately. This significantly reduces alert volume, allowing your security operations team to focus on more sophisticated threats and other high value initiatives. 
+Automated investigation and remediation (AIR) features in Microsoft Threat Protection enable your security operations team to operate more effectively and efficiently. AIR features  leverage various inspection algorithms and processes that are used by security analysts. With alerts and security playbooks, you can use AIR to address certain alerts and resolve security breaches immediately. This significantly reduces alert volume, allowing your security operations team to focus on more sophisticated threats and other high value initiatives. 
 
-The Automated investigations list shows all the investigations that have been initiated automatically and shows other details such as its status, detection source, and the date for when the investigation was initiated.
+
 
 ## Understand the Automated investigation flow
 
