@@ -17,32 +17,28 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Proactively hunt for threats 
+# Proactively hunt for threats with advanced hunting
 
 **Applies to**:
 - Microsoft 365
 
-To get you started in querying your data, you can use the basic or Advanced query examples that have some preloaded queries for you to understand the basic query syntax.
+Advanced hunting provides access to raw data through a flexible query-based interface, allowing you to proactively explore events in your environment and locate interesting indicators and entities. This flexible access to data enables unconstrained hunting for both known and potential threats.
 
-![Image of Advanced hunting window](images/atp-advanced-hunting.png)
+We recommend going through the following steps to learn the language
 
-## Use advanced hunting to query data
+- Get a feel for the language
+- Try introduction queries
+- Understand the schema tables and their columns
+- Get shared queries for specific threats and use cases
+- Share your queries
 
-A typical query starts with a table name followed by a series of operators separated by **|**.
+## Learn the language
 
-In the following example, we start with the table name **ProcessCreationEvents** and add piped elements as needed.
+XXX
 
-![Image of Microsoft Defender ATP Advanced hunting query](images/advanced-hunting-query-example.png)
 
-First, we define a time filter to review only records from the previous seven days. 
 
-We then add a filter on the _FileName_  to contain only instances of _powershell.exe_.
 
-Afterwards, we add a filter on the _ProcessCommandLine_. 
-
-Finally, we  project only the columns we're interested in exploring and limit the results to 100 and click **Run query**.
-
-You have the option of expanding the screen view so you can focus on your hunting query and related results.
 
 ### Use operators
 The query language is very powerful and has a lot of available operators, some of them are - 
@@ -138,12 +134,6 @@ You can refine your query based on the filter by clicking the "+" or "-" buttons
 ![Image of Advanced hunting filter](images/atp-filter-advanced-hunting.png)
 
 The filter selections will resolve as an additional query term and the results will be updated accordingly.
-
-
-
-## Public Advanced hunting query GitHub repository  
-Check out the [Advanced hunting repository](https://github.com/Microsoft/WindowsDefenderATP-Hunting-Queries). Contribute and use example queries shared by our customers. 
-
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-advancedhunting-belowfoldlink)
 

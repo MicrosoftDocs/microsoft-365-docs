@@ -22,6 +22,10 @@ ms.topic: article
 **Applies to**:
 - Microsoft 365
 
+To get you started in querying your data, you can use the basic or Advanced query examples that have some preloaded queries for you to understand the basic query syntax.
+
+![Image of Advanced hunting window](images/atp-advanced-hunting.png)
+
 
 ## Use shared queries
 Shared queries are prepopulated queries that give you a starting point on running queries on your organization's data. It includes a couple of examples that help demonstrate the query language capabilities.
