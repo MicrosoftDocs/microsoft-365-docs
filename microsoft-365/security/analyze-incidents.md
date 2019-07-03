@@ -1,5 +1,5 @@
 ---
-title: Analyze incidents
+title: Analyze incidents in Microsoft 365 
 description: Analyze incidents related to machines, users, and mailboxes.
 keywords: incident, incidents, machines, devices, users, identities, mail, email, mailbox, investigation, graph, evidence
 search.product: eADQiWindows 10XVcnh
@@ -19,11 +19,14 @@ search.appverid:
 - MET150
 ---
 
-# Analyze incidents
+# Analyze incidents 
 
-Investigate incidents that affect your network, understand what they mean, and collate evidence to resolve them. 
+**Applies to**:
+- Microsoft 365
 
-When you investigate an incident, you'll see:
+Analyze incidents that affect your network, understand what they mean, and collate evidence to resolve them. 
+
+When you analyze an incident, you'll see:
 - Incident details
 - Incident comments and actions
 - Tabs (alerts, machines, investigations, evidence, graph)

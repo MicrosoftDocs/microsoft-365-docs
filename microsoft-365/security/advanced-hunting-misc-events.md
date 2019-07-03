@@ -15,10 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 07/15/2019
 ---
 
 # Find miscellaneous events in advanced hunting
+
+**Applies to**:
+- Microsoft 365
 
 The miscellaneous events table or **MiscEvents** contains a broad range of events captured by Microsoft Defender ATP. Many of these include security-related events, such as antivirus...
 

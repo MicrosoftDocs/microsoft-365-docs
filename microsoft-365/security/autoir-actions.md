@@ -1,5 +1,5 @@
 ---
-title: Manage actions related to automated investigations in the Microsoft 365 security center
+title: Manage actions related to automated investigations in Microsoft 365 
 description: Use the action center to manage actions related to automated investigation and response
 keywords: action, center, autoair, automated, investigation, response, remediation
 search.product: eADQiWindows 10XVcnh
@@ -18,7 +18,10 @@ ms.collection:
 ms.topic: conceptual
 ---
 
-# Manage actions related to automated investigation in the Microsoft 365 security center
+# Manage actions related to automated investigation 
+
+**Applies to**:
+- Microsoft 365
 
 The Action center aggregates all investigations that require an action for an investigation to proceed or be completed. 
 

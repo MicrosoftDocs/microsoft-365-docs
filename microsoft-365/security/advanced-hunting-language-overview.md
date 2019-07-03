@@ -1,5 +1,5 @@
 ---
-title: Learn the advanced hunting query language 
+title: Learn the advanced hunting query language in Microsoft 365
 description: Get an overview of the common operators and other aspects of the advanced hunting query language you can use to formulate queries
 keywords: advanced hunting, atp query, query atp data, intellisense, atp telemetry, events, events telemetry, azure log analytics
 search.product: eADQiWindows 10XVcnh
@@ -20,8 +20,9 @@ ms.date: 07/15/2019
 
 # Learn common query operators for advanced hunting
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-advancedhunting-abovefoldlink)
-
+**Applies to**:
+- Microsoft 365
+- 
 The advanced hunting query language is very powerful and has a lot of available operators, some of them are:
 
 - **where** - Filter a table to the subset of rows that satisfy a predicate.

@@ -1,5 +1,5 @@
 ---
-title: Automatically investigate and remediate issues 
+title: Automatically investigate and remediate issues using Microsoft 365 
 description: Automatically remediate issues seen on entities
 keywords: automated, investigation, detection, source, threat types, id, tags, machines, duration, filter export
 search.product: eADQiWindows 10XVcnh
@@ -18,10 +18,13 @@ ms.collection:
 ms.topic: conceptual
 ---
 
-# Automatically investigate and remediate issues 
+# Automatically investigate and remediate issues
 
-The Microsoft Threat Protection service has a wide breadth of visibility on alerts generated across devices, identities, and mailboxes. With this kind of optics, the service generates a multitude of alerts. The volume of alerts generated can be challenging for a typical security operations team to individually address.
+**Applies to**:
+- Microsoft 365
 
-To address this challenge, Microsoft Threat Protection uses Automated investigations to significantly reduce the volume of alerts that need to be investigated individually.
+The Microsoft 365 security platform has a wide breadth of visibility on alerts generated across devices, identities, and mailboxes. With this kind of optics, the service generates a multitude of alerts. The volume of alerts generated can be challenging for a typical security operations team to individually address.
+
+To address this challenge, Microsoft 365 Security uses Automated investigations to significantly reduce the volume of alerts that need to be investigated individually.
 
 ## In this section

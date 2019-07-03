@@ -1,7 +1,7 @@
 ---
-title: Investigate incidents
+title: Investigate incidents in Microsoft 365
 description: Investigate incidents seen across devices, identities, and mailboxes.
-keywords: incidents, alerts, investigate, correlation, attack, machines, devices, users, identities, identity, mailbox, email
+keywords: incidents, alerts, investigate, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -19,9 +19,12 @@ search.appverid:
 - MET150
 ---
 
-# Investigate incidents 
+# Investigate incidents
 
-Microsoft Threat Protection applies correlation analytics and aggregates all related alerts and investigations seen across devices, identities, and mailboxes into an incident. 
+**Applies to**:
+- Microsoft 365
+
+Microsoft 365  applies correlation analytics and aggregates all related alerts and investigations seen across devices, identities, and mailboxes into an incident. 
 
 Doing so helps narrate the broader story of an attack, providing security defenders with the right visuals and data representations to understand and address complex cross-entity threats.
 

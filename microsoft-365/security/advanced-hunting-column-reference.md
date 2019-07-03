@@ -20,11 +20,8 @@ ms.date: 07/15/2019
 
 # Understand the data columns in the advanced hunting schema
 
-**Applies to:**
-
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
-
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)
+**Applies to**:
+- Microsoft 365
 
 ## Advanced hunting column reference
 To effectively build queries that span multiple tables, you need to understand the columns in the Advanced hunting schema. The following table lists all the available columns, along with their data types and descriptions. This information is also available in the schema representation in the Advanced hunting screen.

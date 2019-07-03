@@ -1,5 +1,5 @@
 ---
-title: Learn about the automated investigations dashboard in Microsoft 365 security center
+title: Learn about the automated investigations dashboard in Microsoft 365 
 description: View the list of automated investigations, its status, detection source and other details
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,7 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ---
 
-# Learn about the automated investigations dashboard in Microsoft 365 security center
+# Learn about the automated investigations dashboard
+
+**Applies to**:
+- Microsoft 365
+
+
 By default, the Automated investigations list displays investigations initiated in the last week. You can also choose to select other time ranges from the drop-down menu or specify a custom range. 
 
 >[!NOTE]
