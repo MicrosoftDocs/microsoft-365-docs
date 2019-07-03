@@ -116,7 +116,7 @@ Follow these steps to create a deployment for the task sequence.
 7. On the **Alerts** page, accept the default settings, and then select **Next**.
 8. On the **Summary** page, select **Next**, and then select **Close**.
 
-## Part 5: Start the Windows 10 upgrade task sequence
+## Part 4: Start the Windows 10 upgrade task sequence
 Follow these steps to start the Windows 10 Upgrade task sequence on the device that you are upgrading.
  
 1. Log on to the Windows computer and start **Software Center**.
