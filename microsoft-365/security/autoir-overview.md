@@ -27,6 +27,9 @@ Automated investigation and remediation (AIR) features in Microsoft 365 enable y
 
 ## Understand the Automated investigation flow
 
+An automated investigation begins when an alert is triggered. Certain events will trigger an investigation. These include the following:
+ 
+
 ### How the Automated investigation starts
 
 ## Alerts
