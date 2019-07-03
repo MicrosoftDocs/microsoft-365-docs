@@ -33,7 +33,12 @@ From this view, you can also download the entire list in CSV format using the **
 
 ## Active automated investigations
 
+The Active automated investigation widget shows you at a glance the number of active investigations along with their status. For example, the following image indicates that one active investigation is in progress.
+
 ![Active automated investigations](images/air-active-investigations.png)
+
+Clicking the chart opens a more detailed view. 
+
  
 **Filters**
 You can use the following operations to customize the list of Automated investigations displayed:
