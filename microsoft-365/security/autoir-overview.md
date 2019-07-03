@@ -80,10 +80,10 @@ Semi - require approval for non-temp folders remediation | An approval is requir
 Semi - require approval for core folders remediation | An approval is required on files or executables that are in the operating system directories such as Windows folder and Program files folder. <br><br> Files or executables in all other folders will  automatically be remediated if needed.
 Full - remediate threats automatically | All remediation actions will be performed automatically.
 
-
 The default group is configured for semi-automatic remediation. This means that any malicious entity that needs to be remediated requires an approval and the investigation is added to the **Pending actions** section, this can be changed to fully automatic so that no user approval is needed. 
 
 When a pending action is approved, the entity is then remediated and this new state is reflected in the **Entities** tab of the investigation.
 
 ## Next steps
 
+[Learn about the automated investigations dashboard](autoir-dashboard-overview.md)
