@@ -23,7 +23,7 @@ The threat landscape is growing in complexity and attacks are increasingly becom
 
 Protecting against these types of attacks require having visibility across modern security perimeters and a well synchronized defense solution. 
 
-Microsoft Threat Protection is a comprehensive security solution designed to protect enterprise devices, identity, data and applications. 
+Microsoft 365 Security is a comprehensive security solution designed to protect enterprise devices, identity, data and applications. 
 
 Bringing together powerful security capabilities, Microsoft Threat Protection enables your organization to:
 
