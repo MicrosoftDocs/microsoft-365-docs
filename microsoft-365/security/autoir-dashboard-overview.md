@@ -39,12 +39,12 @@ The Active automated investigation widget shows you at a glance the number of ac
 
 Clicking the chart opens a more detailed view. In that view, you can use filters, view information about the alert that triggered the investigation, status, detection source, entities, and more.
 
- 
-**Filters**
-You can use the following operations to customize the list of Automated investigations displayed:
+### Filters
 
+You can filter the list of automated investigations by status, triggering alert, detection source, and entities.
 
-**Triggering alert**
+#### Triggering alert
+
 The alert the initiated the Automated investigation.
 
 **Status**
