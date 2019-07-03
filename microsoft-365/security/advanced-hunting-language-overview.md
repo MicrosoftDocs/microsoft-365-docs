@@ -115,11 +115,18 @@ Data in advanced hunting tables are generally classified into the following data
 
 ## Use sample queries
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-advancedhunting-belowfoldlink)
+To get you started in querying your data, you can use the basic or advanced query examples that have some preloaded queries for you to understand the basic query syntax.
+
+![Image of Advanced hunting window](images/atp-advanced-hunting.png)
+
+> Note: Apart from the basic query samples, you can also access shared queries for specific threat hunting scenarios. Explore the shared queries on the left side of the page or the GitHub query repository.
 
 ## Access query language documentation
 
 For more information on the query language and supported operators, see  [Query Language](https://docs.microsoft.com/azure/log-analytics/query-language/query-language).
+
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-advancedhunting-belowfoldlink)
+
 
 ## Related topics
 - [Proactively hunt for threats](advanced-hunting.md)
