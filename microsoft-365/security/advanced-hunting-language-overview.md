@@ -18,115 +18,108 @@ ms.topic: article
 ms.date: 07/15/2019
 ---
 
+**Applies to**:
+- Microsoft 365 security center
+
 # Learn the advanced hunting query language
 
-A typical query starts with a table name followed by a series of operators separated by **|**.
+## Try your first query
 
-In the following example, we start with the table name **ProcessCreationEvents** and add piped elements as needed.
+In Microsoft 365 security center, go to XXXXX to run your first query. Use the following example:
+
+~~~
+// Finds PowerShell execution events that could involve a download.
+ProcessCreationEvents  
+| where EventTime > ago(7d)
+| where FileName in ("powershell.exe", "POWERSHELL.EXE", "powershell_ise.exe", "POWERSHELL_ISE.EXE") 
+| where ProcessCommandLine has "Net.WebClient"
+        or ProcessCommandLine has "DownloadFile"
+        or ProcessCommandLine has "Invoke-WebRequest"
+        or ProcessCommandLine has "Invoke-Shellcode"
+        or ProcessCommandLine contains "http:"
+| project EventTime, ComputerName, InitiatingProcessFileName, FileName, ProcessCommandLine
+| top 100 by EventTime'
+~~~
+
+This is how it will look like in advanced hunting.
 
 ![Image of Microsoft Defender ATP Advanced hunting query](images/advanced-hunting-query-example.png)
 
-First, we define a time filter to review only records from the previous seven days. 
+The query starts with a short comment describing what it is for. This helps if you later decide to save your query and share it with others in your organization.
 
-We then add a filter on the _FileName_  to contain only instances of _powershell.exe_.
+~~~
+// Finds PowerShell execution events that could involve a download.
+ProcessCreationEvents
+~~~
 
-Afterwards, we add a filter on the _ProcessCommandLine_. 
+The query itself will typically start with a table name followed by a series of elements started by a pipe **|**. In this example, we start by adding  with the table name **ProcessCreationEvents** and add piped elements as needed.
 
-Finally, we  project only the columns we're interested in exploring and limit the results to 100 and click **Run query**.
+The first piped element defines a time filter to review only the records from the previous seven days. Keeping the time range as narrow as possible ensures that queries perform well, return manageable results, and don't time out.
 
-You have the option of expanding the screen view so you can focus on your hunting query and related results.
+The time range is immediately followed by a search for files representing the PowerShell application.
+
+~~~
+| where EventTime > ago(7d)
+| where FileName in ("powershell.exe", "POWERSHELL.EXE", "powershell_ise.exe", "POWERSHELL_ISE.EXE")
+~~~
+
+Afterwards, we look for command lines that are known to be used with PowerShell to download files.
+
+~~~
+| where ProcessCommandLine has "Net.WebClient"
+        or ProcessCommandLine has "DownloadFile"
+        or ProcessCommandLine has "Invoke-WebRequest"
+        or ProcessCommandLine has "Invoke-Shellcode"
+        or ProcessCommandLine contains "http:"
+~~~
+
+Now that your query clearly identifies the data you want to locate, you can add elements that define what the results look like. _Project_ returns specific columns and _top_ limits the number of results, making the results well-formatted and reasonably large and easy to process. 
+
+~~~
+| project EventTime, ComputerName, InitiatingProcessFileName, FileName, ProcessCommandLine
+| top 100 by EventTime'
+~~~
+
+Click **Run query** to see the results. You can expand the screen view so you can focus on your hunting query and related results.
 
 ## Learn common query operators for advanced hunting
 
-**Applies to**:
-- Microsoft 365
-- 
+Now that you've run your first query and have a general idea of its components, it's time to backtrack a little bit and learn some basics. The Kusto query language used by advanced hunting supports a range of operators, including the following common ones.
 
-
-The advanced hunting query language is very powerful and has a lot of available operators, some of them are:
-
-- **where** - Filter a table to the subset of rows that satisfy a predicate.
-- **summarize** - Produce a table that aggregates the content of the input table.
-- **join** - Merge the rows of two tables to form a new table by matching values of the specified column(s) from each table.
-- **count** - Return the number of records in the input record set.
-- **top** - Return the first N records sorted by the specified columns.
-- **limit** - Return up to the specified number of rows.
-- **project** - Select the columns to include, rename or drop, and insert new computed columns.
-- **extend** - Create calculated columns and append them to the result set.
-- **makeset** -  Return a dynamic (JSON) array of the set of distinct values that Expr takes in the group
-- **find** - Find rows that match a predicate across a set of tables.
+| Operator | Description and usage |
+|--|--|
+| **where** | Filter a table to the subset of rows that satisfy a predicate. |
+| **summarize** | Produce a table that aggregates the content of the input table. |
+| **join** | Merge the rows of two tables to form a new table by matching values of the specified column(s) from each table. |
+| **count** | Return the number of records in the input record set. |
+| **top** | Return the first N records sorted by the specified columns. |
+| **limit** | Return up to the specified number of rows. |
+| **project** | Select the columns to include, rename or drop, and insert new computed columns. |
+| **extend** | Create calculated columns and append them to the result set. |
+| **makeset** |  Return a dynamic (JSON) array of the set of distinct values that Expr takes in the group. |
+| **find** | Find rows that match a predicate across a set of tables. |
 
 To see a live example of these operators, run them as part of the **Get started** section.
+
+## Understand data types and their query syntax implications
+
+Data in advanced hunting tables are generally classified into the following data types.
+
+| Data type | Description and query implications |
+|--|--|
+| **datetime** | Data and time information typically representing event timestamps |
+| **string** | Character string |
+| **bool** | True or false |
+| **int** | 32-bit numeric value  |
+| **long** | 64-bit numeric value |
+
+## Use sample queries
+
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-advancedhunting-belowfoldlink)
 
 ## Access query language documentation
 
 For more information on the query language and supported operators, see  [Query Language](https://docs.microsoft.com/azure/log-analytics/query-language/query-language).
-
-## Use shared queries
-Shared queries are prepopulated queries that give you a starting point on running queries on your organization's data. It includes a couple of examples that help demonstrate the query language capabilities.
-
-![Image of shared queries](images/atp-shared-queries.png)
-
-You can save, edit, update, or delete queries.
-
-### Save a query
-You can create or modify a query and save it as your own query or share it with users who are in the same tenant. 
-
-1. Create or modify a query. 
-
-2. Click the **Save query** drop-down button and select **Save as**.
-    
-3. Enter a name for the query. 
-
-   ![Image of saving a query](images/advanced-hunting-save-query.png)
-
-4. Select the folder where you'd like to save the query.
-    - Shared queries - Allows other users in the tenant to access the query
-    - My query - Accessible only to the user who saved the query
-    
-5. Click **Save**. 
-
-### Update a query
-These steps guide you on modifying and overwriting an existing query.
-
-1. Edit an existing query. 
-
-2. Click the **Save**.
-
-### Delete a query
-1. Right-click on a query you want to delete.
-
-    ![Image of delete query](images/atp-delete-query.png)
-
-2. Select **Delete** and confirm that you want to delete the query.
-
-## Result set capabilities in Advanced hunting
-
-The result set has several capabilities to provide you with effective investigation, including:
-
-- Columns that return entity-related objects, such as Machine name, Machine ID, File name, SHA1, User, IP, and URL, are linked to their entity pages in Microsoft Defender Security Center.
-- You can right-click on a cell in the result set and add a filter to your written query. The current filtering options are **include**, **exclude** or **advanced filter**, which provides additional filtering options on the cell value. These cell values are part of the row set. 
-
-![Image of Microsoft Defender ATP Advanced hunting result set](images/atp-advanced-hunting-results-filter.png)
-
-## Filter results in Advanced hunting
-In Advanced hunting, you can use the advanced filter on the output result set of the query. 
-The filters provide an overview of the result set where 
-each column has it's own section and shows the distinct values that appear in the column and their prevalence.
-
-You can refine your query based on the filter by clicking the "+" or "-" buttons on the values that you want to include or exclude and click **Run query**.
-
-![Image of Advanced hunting filter](images/atp-filter-advanced-hunting.png)
-
-The filter selections will resolve as an additional query term and the results will be updated accordingly.
-
-
-
-## Public Advanced hunting query GitHub repository  
-Check out the [Advanced hunting repository](https://github.com/Microsoft/WindowsDefenderATP-Hunting-Queries). Contribute and use example queries shared by our customers. 
-
-
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-advancedhunting-belowfoldlink)
 
 ## Related topics
 - [Proactively hunt for threats](advanced-hunting.md)
