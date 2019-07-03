@@ -119,7 +119,7 @@ To get you started in querying your data, you can use the basic or advanced quer
 
 ![Image of Advanced hunting window](images/atp-advanced-hunting.png)
 
-> Note: Apart from the basic query samples, you can also access shared queries for specific threat hunting scenarios. Explore the shared queries on the left side of the page or the GitHub query repository.
+>[Note]Apart from the basic query samples, you can also access shared queries for specific threat hunting scenarios. Explore the shared queries on the left side of the page or the GitHub query repository.
 
 ## Access query language documentation
 
