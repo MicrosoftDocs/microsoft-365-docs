@@ -27,8 +27,12 @@ Automated investigation and remediation (AIR) features in Microsoft 365 enable y
 
 ## Understand the Automated investigation flow
 
-An automated investigation begins when an alert is triggered. Certain events will trigger an investigation. These include the following:
- 
+An automated investigation begins when an alert is triggered. Depending on how your alert policies are configured, certain events will trigger an automated investigation. Here are a few examples:
+- Microsoft Defender detects malware on a user's machine
+- A malicious file is detected in email
+- A user account is flagged as compromised 
+
+Once an alert associated with a playbook is triggered, 
 
 ### How the Automated investigation starts
 
