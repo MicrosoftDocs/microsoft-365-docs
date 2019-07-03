@@ -25,11 +25,11 @@ ms.topic: conceptual
 
 Automated investigation and remediation (AIR) features in Microsoft 365 enable your security operations team to operate more effectively and efficiently. AIR features leverage various inspection algorithms and processes that are used by security analysts. AIR includes security playbooks that can help your security team address alerts and resolve security breaches quickly--immediately in some cases. AIR significantly reduces the volume of alerts your security team must address, allowing your security operations team to focus on more sophisticated threats and other high-value initiatives. 
 
-## Understand the Automated investigation flow
+## Understand the automated investigation and remediation flow
 
-In a nutshell, an alert leads to an investigation, which then leads to remediation.
+In a nutshell, an **alert** leads to an **investigation**, which then leads to **remediation**.
 
-An automated investigation begins when an alert is triggered. Not every alert will trigger an automated investigation. It depends on how your alert policies are configured. Here are a few examples of typical alerts that will trigger an automated investigation:
+An automated investigation begins when an alert is triggered. Not every alert will trigger an automated investigation; automation depends on how your organization's alert policies are configured. Here are a few examples of alerts that typically trigger an automated investigation:
 - Malware is detected on a user's machine
 - A malicious file is detected in email
 - A user account is flagged as compromised 
@@ -40,8 +40,7 @@ Depending on the results of the investigation, remediation actions occur. Depend
 
 ## Alerts
 
-Alerts represent triggers for security operations team workflows for incident response and remediation. Prioritizing the right set of alerts for investigation, while making sure no threats are unaddressed is challenging. When investigations into alerts are performed manually, security operations teams must hunt and correlate entities (such as content, devices and users) at risk from threats. Such tasks and workflows are very time consuming and involve multiple tools and systems. With AIR, investigation and remediation steps are automated. When alerts are triggere alerts that trigger your security response playbooks automatically. 
-
+Alerts represent triggers for security operations team workflows for incident response and remediation. Prioritizing the right set of alerts for investigation, while making sure no threats are unaddressed is challenging. When investigations into alerts are performed manually, security operations teams must hunt and correlate entities (such as content, devices and users) at risk from threats. Such tasks and workflows are very time consuming and involve multiple tools and systems. With AIR, investigation and remediation steps are automated. 
 
 The alerts start by analyzing the supported entities from the alert and also runs a generic playbook to see if there is anything else suspicious on the entity. The outcome and details from the investigation is seen in the Automated investigation view.
 
