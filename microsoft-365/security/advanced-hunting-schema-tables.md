@@ -1,5 +1,5 @@
 ---
-title: Data tables in the Microsoft 365 advanced hunting schema
+title: Data tables in the Microsoft 365 security center advanced hunting schema
 description: Learn about the tables in the Microsoft 365 advanced hunting schema
 keywords: advanced hunting, atp query, query atp data, intellisense, atp telemetry, events, events telemetry, azure log analytics
 search.product: eADQiWindows 10XVcnh
@@ -43,8 +43,6 @@ The following tables comprise the data schema in advanced hunting:
 | **Office365UrlInfo** | Information about URLs in embedded links on Office 365 emails |
 
 **[[DRAFT NOTES expand information including special columns in each table]]**
-
-These tables include data from the last 30 days.
 
 ## Related topics
 - [Proactively hunt for threats](advanced-hunting.md)

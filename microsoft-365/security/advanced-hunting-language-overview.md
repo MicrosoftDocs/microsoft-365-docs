@@ -115,7 +115,7 @@ Data in advanced hunting tables are generally classified into the following data
 
 ## Use sample queries
 
-To get you started in querying your data, you can use the basic or advanced query examples that have some preloaded queries for you to understand the basic query syntax.
+As soon as you open advanced hunting you will find a few simple queries based on commonly used operators. Try running these queries and making small modifications to them.
 
 ![Image of Advanced hunting window](images/atp-advanced-hunting.png)
 
