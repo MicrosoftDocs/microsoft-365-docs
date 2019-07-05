@@ -35,7 +35,7 @@ Automated investigation begins when one of the following occurs:
 
 ### An alert triggers an investigation
 
-An automated investigation begins when an alert is triggered. Not every alert will trigger an automated investigation; automated investigations depend on how your organization's alert policies are configured. With AIR, several kinds of alerts can be configured to work with security playbooks that define the automated investigation process. Here are just a few examples:
+An automated investigation can begin when an alert is triggered. Not every alert will trigger an automated investigation; this depends on how your organization's alert policies are configured. With AIR, several kinds of alerts can be configured to work with security playbooks that define the automated investigation process. Here are just a few examples:
 - Malware is detected on a user's machine
 - A malicious file is detected in email
 - A user account is flagged as compromised
@@ -43,14 +43,26 @@ An automated investigation begins when an alert is triggered. Not every alert wi
 
 ### A security analyst launches an investigation
 
-When an alert that is associated with a security playbook is triggered, the investigation process begins automatically and immediately. The investigation typically includes the following setps:
+The Microsoft 365 security center includes dashboards and reports to help your security operations team stay on top of threat management for your organization. 
+
+
+
+When a security analyst notices a user account or machine is flagged, the analyst can view more details about that user account or machine and choose to start an automated investigation.
+
+### Automated investigation steps
+
+When an investigation is triggered, the process begins automatically and immediately. The investigation typically includes the following setps:
 - Gather information about the type of threat
 - Determine where the threat came from
 - Identify who in your organization is affected by the threat
 - Find out whether and where other instances of the threat exist in your organization
 - ... and so on.
 
-Depending on the results of the investigation, remediation begins. Depending on the threat and how AIR is configured for your organization, remediation can occur automatically or only upon approval by your security operations team. Remediation can include:
+Depending on the results of the investigation, remediation begins. 
+
+### Remediation steps
+
+Depending on the threat and how AIR is configured for your organization, remediation can occur automatically or only upon approval by your security operations team. Remediation can include:
 - Deleting a malicious file
 - Resetting a user's password
 - Blocking URLs that were identified as malicious
