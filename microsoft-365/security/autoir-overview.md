@@ -32,9 +32,9 @@ AIR features leverage various inspection algorithms, processes, and best practic
 |Phase    |What happens  |
 |---------|---------|
 |[Automated investigation begins](#automated-investigation-begins)     |One of the following occurs:<br/>- [An alert triggers an an automated investigation](#an-alert-triggers-an-automated-investigation)<br/>- [A security analyst starts an investigation from an alert or a security report](#an-analyst-starts-an-automated-investigation)          |
-|[Automated investigation runs](#the-automated-investigation-process)     |- Details about the threat and affected entities (user accounts, machines, etc.) are gathered<br/>- The investigation scope can increase if new alerts or entities related to the initial threat emerge         |
-|Automated investigation details and results emerge     |The automated investigation results inform remediation steps.         |
-|Remediation steps are taken |Depending on the scenario, remediation steps are taken automatically or by approval from your security operations team. |
+|[Automated investigation runs](#the-automated-investigation-process)     |- Details about the threat and affected entities (user accounts, machines, etc.) are gathered<br/>- The [investigation scope can increase](#automated-investigation-scope-can-increase) if new alerts or entities related to the initial threat emerge         |
+|[Details and results emerge](#details-and-results-of-an-automated-investigation)     |- During and after an automated investigation, details are available.<br/>- Automated investigation results inform remediation steps.         |
+|[Remediation steps are taken](#remediation-steps) |- Remediation happens automatically or by approval from your security operations team<br/>- [Learn more about how threats are remediated](#how-threats-are-remediated) |
 
 ## Automated investigation begins
 
@@ -56,13 +56,13 @@ The Microsoft 365 security center includes dashboards and reports to help your s
 
 ![Security operations dashboard](images/air-secopsdashboard.png)
 
-For example, suppose that a security analyst notices several active alerts for a machine called client4. Selecting client4 in the Machines at risk widget opens a more detailed view. In that view, the security analyst can choose Initiate Automated Investigation.
+For example, suppose that a security analyst notices several active alerts for a machine called *client4*. Selecting **client4** in the **Machines at risk** widget opens a more detailed view. In that view, the security analyst can choose **Initiate Automated Investigation** to start an automated investigation.
 
 ![Initiate Automated Investigation](images/air-secopsdashboard-detailedmachineview-actions.png)
 
 ## The automated investigation process
 
-When an investigation is triggered, the process begins automatically and immediately. The investigation typically includes the following steps:
+Whether through an alert or by a security analyst, once an investigation is triggered, the process begins automatically and immediately. The investigation typically includes the following steps:
 - Gather information about the type of threat
 - Determine where the threat came from
 - Identify who in your organization is affected by the threat
@@ -71,13 +71,13 @@ When an investigation is triggered, the process begins automatically and immedia
 
 ### Automated investigation scope can increase
 
-While an investigation is running, any other alert generated will be added to an ongoing automated investigation until that investigation is completed. In addition, if the same threat is seen on other entities, those entities are added to the investigation.
+While an investigation is running, any other related alerts that are generated are added to an ongoing automated investigation until that investigation is completed. In addition, if the same threat is seen on other entities, those entities are added to the investigation.
 
 If an incriminated entity is seen in elsewhere, the automated investigation will expand the investigation to include that entity and a generic playbook will start on that entity. 
 
 ## Details and results of an automated investigation
 
-As the investigation proceeds, you'll be able to view the details of the investigation. Selecting a triggering alert brings you to the investigation details view where you can pivot from the **Investigation graph**, **Alerts**, **Machines**, **Threats**, **Entities**, and **Log** tabs.
+As an investigation proceeds, you'll be able to view the details of the investigation. Selecting a triggering alert brings you to the investigation details view where you can pivot from the **Investigation graph**, **Alerts**, **Machines**, **Threats**, **Entities**, and **Log** tabs.
 
 In the **Alerts** tab, you'll see the alert that started the investigation. 
 
