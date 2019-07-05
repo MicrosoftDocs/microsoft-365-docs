@@ -15,7 +15,6 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 07/15/2019
 ---
 
 **Applies to**:
@@ -27,7 +26,7 @@ ms.date: 07/15/2019
 
 In Microsoft 365 security center, go to XXXXX to run your first query. Use the following example:
 
-~~~
+```
 // Finds PowerShell execution events that could involve a download.
 ProcessCreationEvents  
 | where EventTime > ago(7d)
@@ -39,7 +38,7 @@ ProcessCreationEvents
         or ProcessCommandLine contains "http:"
 | project EventTime, ComputerName, InitiatingProcessFileName, FileName, ProcessCommandLine
 | top 100 by EventTime'
-~~~
+```
 
 This is how it will look like in advanced hunting.
 
@@ -47,10 +46,10 @@ This is how it will look like in advanced hunting.
 
 The query starts with a short comment describing what it is for. This helps if you later decide to save your query and share it with others in your organization.
 
-~~~
+```
 // Finds PowerShell execution events that could involve a download.
 ProcessCreationEvents
-~~~
+```
 
 The query itself will typically start with a table name followed by a series of elements started by a pipe **|**. In this example, we start by adding  with the table name **ProcessCreationEvents** and add piped elements as needed.
 
@@ -58,27 +57,27 @@ The first piped element defines a time filter to review only the records from th
 
 The time range is immediately followed by a search for files representing the PowerShell application.
 
-~~~
+```
 | where EventTime > ago(7d)
 | where FileName in ("powershell.exe", "POWERSHELL.EXE", "powershell_ise.exe", "POWERSHELL_ISE.EXE")
-~~~
+```
 
 Afterwards, we look for command lines that are known to be used with PowerShell to download files.
 
-~~~
+```
 | where ProcessCommandLine has "Net.WebClient"
         or ProcessCommandLine has "DownloadFile"
         or ProcessCommandLine has "Invoke-WebRequest"
         or ProcessCommandLine has "Invoke-Shellcode"
         or ProcessCommandLine contains "http:"
-~~~
+```
 
 Now that your query clearly identifies the data you want to locate, you can add elements that define what the results look like. _Project_ returns specific columns and _top_ limits the number of results, making the results well-formatted and reasonably large and easy to process. 
 
-~~~
+```
 | project EventTime, ComputerName, InitiatingProcessFileName, FileName, ProcessCommandLine
 | top 100 by EventTime'
-~~~
+```
 
 Click **Run query** to see the results. You can expand the screen view so you can focus on your hunting query and related results.
 
@@ -119,7 +118,8 @@ As soon as you open advanced hunting you will find a few simple queries based on
 
 ![Image of Advanced hunting window](images/atp-advanced-hunting.png)
 
->[!Note] Apart from the basic query samples, you can also access [shared queries](advanced-hunting-shared-queries.md) for specific threat hunting scenarios. Explore the shared queries on the left side of the page or the GitHub query repository.
+>[!NOTE]
+>Apart from the basic query samples, you can also access [shared queries](advanced-hunting-shared-queries.md) for specific threat hunting scenarios. Explore the shared queries on the left side of the page or the GitHub query repository.
 
 ## Access query language documentation
 
