@@ -50,6 +50,23 @@ An automated investigation can begin when an alert is triggered. Not every alert
 - A user account is flagged as compromised
 - ... and other scenarios. 
 
+>[!NOTE]
+>Currently, automated investigation only supports the following: 
+><br>
+>**OS versions**
+>- Windows 10, version 1709 (OS Build 16299.1085 with [KB4493441](https://support.microsoft.com/en-us/help/4493441/windows-10-update-kb4493441)) or later
+>- Windows 10, version 1803 (OS Build 17134.704 with [KB4493464](https://support.microsoft.com/en-us/help/4493464/windows-10-update-kb4493464)) or later
+><br>
+>- Later versions of Windows 10 <br>
+>
+>**Mailbox related alerts**
+>- Potentially malicious URL click was detected
+>- Email reported by user as phish
+>- Email messages containing malware removed after delivery
+>- Email messages containing phish URLs removed after delivery
+
+To view (or set up) alerts, in the Microsoft 365 security center, in the navigation pane, choose **Alerts**.
+
 ### An analyst starts an automated investigation
 
 The Microsoft 365 security center includes dashboards and reports to help your security operations team stay on top of threat management for your organization. When a security analyst notices a user account or machine is flagged, the analyst can view more details about that user account or machine and choose to start an automated investigation.
