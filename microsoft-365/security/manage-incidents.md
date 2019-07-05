@@ -3,7 +3,7 @@ title: Manage incidents in Microsoft 365
 description: Learn how to assign, update the status, 
 keywords: incident, incidents, alerts, correlated alerts, assign, update, status, manage, classification, microsoft, 365, m365
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

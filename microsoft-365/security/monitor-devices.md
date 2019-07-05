@@ -2,7 +2,7 @@
 title: Device monitoring and reporting in Microsoft 365 security center
 description: Describes how you can keep your devices secure, up-to-date, and spot potential threats in your organization
 keywords: security, malware, Microsoft 365, M365, security center, monitor, report, devices
-ms.prod: w10
+ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.author: ellevin

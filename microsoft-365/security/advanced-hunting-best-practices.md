@@ -4,7 +4,7 @@ description: Learn about advanced hunting best practices to improve query perfor
 keywords: advanced hunting, best practices, keyword, filters, atp query, query atp data, intellisense, atp telemetry, events, events telemetry, azure log analytics
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -20,7 +20,7 @@ ms.topic: article
 # Apply query best practices in advanced hunting
 
 **Applies to**:
-- Microsoft 365
+- Microsoft 365 security center
 
 
 ## Performance best practices

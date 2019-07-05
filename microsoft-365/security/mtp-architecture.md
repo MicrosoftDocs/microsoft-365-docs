@@ -3,7 +3,7 @@ title: Microsoft Threat Protection architecture
 description: Learn about the components and the general functionality of Microsoft Threat Protection 
 keywords: mtp, microsoft threat protection, architecture, components, functionality, incidents, advanced hunting, automated investigation, secure score
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -27,7 +27,7 @@ Utilizing complex signal sharing, incident correlation, and cross-cluster querie
 
  Microsoft Threat Protection architecture:
 
-[INSERT AN IMAGE HERE]
+![Image of Microsoft Threat Protection](images/mtp-architecture.png)
 
 
 This section describes the main components of the platform and their functionalities:
@@ -50,13 +50,19 @@ The following table provides details on what experiences are available in Micros
 
 
 
-Capability | Microsoft 365 security center | Microsoft Defender Security Center |  Azure Advanced Threat Protection | Microsoft Cloud App Security | 
-:---|:---|:---|:---|:---|:---
-Incidents | &#9745; <br> Devices <br> Identities <br> Mailboxes <br>| Machine related incidents only | Identity related identities  only | 
-Advanced hunting | &#9745;| &#9745; | |
-Automated investigation | &#9745; <br> | &#9745; | 
+Capability | Microsoft 365 security center | Microsoft Defender Security Center 
+:---|:---:
+**Investigate incidents** | \check  (view page)|  &#9745; <br> (view page) 
+&nbsp;&nbsp;&nbsp;&nbsp;Correlated incidents | &#9745; |  X |
+&nbsp;&nbsp;&nbsp;&nbsp;Manage incidents |  Manage incidents involving device, email, and identity alerts |  Manage incidents involving device alerts |
+&nbsp;&nbsp;&nbsp;&nbsp;Inspect alerts | - Device alerts <br> - Email alerts - opens in Office 365 ATP <br> - Identity alerts - opens in Azure ATP | Device alerts |
+**Automated investigation and response** | &#9745; <br> (view page)|  &#9745; <br> (view page) 
+&nbsp;&nbsp;&nbsp;&nbsp;Remediate alerts | - Device alerts <br> - Email alerts - opens in Office 365 ATP | - Device alerts <br>
+**Advanced hunting** | &#9745; <br> (view page)|  &#9745; <br> (view page) 
+&nbsp;&nbsp;&nbsp;&nbsp;Schema coverage | - Windows <br> - Office 365 | Windows
+&nbsp;&nbsp;&nbsp;&nbsp; Saved queries | &#9745;  | &#9745; |
+&nbsp;&nbsp;&nbsp;&nbsp; Custom detections | X | &#9745; |
 
 
 
-## Surfaces
 

@@ -3,7 +3,7 @@ title: Microsoft 365 Security preview features
 description: Learn about Microsoft 365 Security capabilities that are in preview and how to access them.
 keywords: preview, preview experience, microsoft threat protection, features, updates
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
