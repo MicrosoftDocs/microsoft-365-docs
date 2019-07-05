@@ -31,8 +31,8 @@ AIR features leverage various inspection algorithms, processes, and best practic
 
 |Phase    |What happens  |
 |---------|---------|
-|Automated investigation begins     |Automated investigation begins when one of the following occurs:<br/>- An alert triggers an an automated investigation, which leads to remediation<br/>- A security analyst launches an investigation from an alert or a report, which leads to remediation          |
-|The investigation scope can increase     |New alerts or entities related to the initial threat are added to the investigation         |
+|Automated investigation begins     |Automated investigation begins when one of the following occurs:<br/>- An alert triggers an an automated investigation<br/>- A security analyst launches an investigation from an alert or a security report          |
+|Investigation scope can increase     |New alerts or entities that emerge related to the initial threat are added to the investigation         |
 |Investigation results emerge     |The automated investigation results inform remediation steps.         |
 |Remediation steps are taken |Depending on the scenario, remediation steps are taken automatically or by approval from your security operations team. |
 
@@ -69,6 +69,12 @@ When an investigation is triggered, the process begins automatically and immedia
 
 Depending on the results of the investigation, remediation begins. 
 
+## Automated investigation scope can increase
+
+While an investigation is running, any other alert generated will be added to an ongoing Automated investigation until that investigation is completed. In addition, if the same threat is seen on other entities, those entities are added to the investigation.
+
+If an incriminated entity is seen in elsewhere, the Automated investigation will expand the investigation to include that entity and a generic playbook will start on that entity. 
+
 ## Remediation steps
 
 Depending on the threat and how AIR is configured for your organization, remediation can occur automatically or only upon approval by your security operations team. Remediation can include:
@@ -80,13 +86,7 @@ Depending on the threat and how AIR is configured for your organization, remedia
 
 The following sections provide more details about alerts, investigations, and remediation steps.
 
-## Alerts
-
-Alerts represent triggers for security operations team workflows for incident response and remediation. Prioritizing the right set of alerts for investigation while making sure no threats are unaddressed is challenging. When investigations into alerts are performed manually, security operations teams must hunt and correlate entities (such as content, devices and users) at risk from threats. Such tasks and workflows are very time consuming and involve multiple tools and systems. With AIR, investigation and remediation steps are automated. 
-
-The alerts start by analyzing the supported entities from the alert and also runs a generic playbook to see if there is anything else suspicious on the entity. The outcome and details from the investigation is seen in the Automated investigation view.
-
-### Details of an Automated investigation
+### Details and results of an automated investigation
 
 As the investigation proceeds, you'll be able to view the details of the investigation. Selecting a triggering alert brings you to the investigation details view where you can pivot from the **Investigation graph**, **Alerts**, **Machines**, **Threats**, **Entities**, and **Log** tabs.
 
@@ -102,11 +102,7 @@ The **Log** tab reflects the chronological detailed view of all the investigatio
 
 If there are pending actions on the investigation, the **Pending actions** tab will be displayed where you can approve or reject actions. You can also go to the **Action center** to get an aggregated view all pending actions and manage remediaton actions. It also acts as an audit trail for all Automated investigation actions. 
 
-### How an Automated investigation expands its scope
 
-While an investigation is running, any other alert generated will be added to an ongoing Automated investigation until that investigation is completed. In addition, if the same threat is seen on other entities, those entities are added to the investigation.
-
-If an incriminated entity is seen in elsewhere, the Automated investigation will expand the investigation to include that entity and a generic playbook will start on that entity. 
 
 ### How threats are remediated
 
