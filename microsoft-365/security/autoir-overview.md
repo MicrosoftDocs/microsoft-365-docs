@@ -85,23 +85,14 @@ During and after an automated investigation, you'll be able to view details of t
 
 |Tab  |Description  |
 |---------|---------|
-|Investigation graph |Provides a visual representation of the investigation, including alerts, users, machines, entities analyzed, and threats found. Select an item on the graph to move to the appropriate tab. |
-|Alerts     |Lists any alerts that started or are related to the investigation.         |
-|Machines     |Lists any machines included in alerts.         |
-|Users     |Lists user accounts included in alerts, along with verdict (such as malicious), user name, display name, and identity in Azure Active Directory.         |
-|Key findings     |Lists entities and files, methods, or activities that were identified as malicious during the investigation.  |
-
-
-
-The **Machines** tab shows where the alert was seen.
-
-The **Threats** tab shows the entities that were found to be malicious during the investigation.
-
-During an Automated investigation, details about each analyzed entity is categorized in the **Entities** tab. You'll be able to see the determination for each entity type, such as whether it was determined to be malicious, suspicious, or clean.
-
-The **Log** tab reflects the chronological detailed view of all the investigation actions taken on the alert.
-
-If there are pending actions on the investigation, the **Pending actions** tab will be displayed where you can approve or reject actions. You can also go to the **Action center** to get an aggregated view all pending actions and manage remediation actions. It also acts as an audit trail for all Automated investigation actions. 
+|**Investigation graph** |Provides a visual representation of the investigation, including alerts, users, machines, entities analyzed, and threats found. Select an item on the graph to move to the appropriate tab. |
+|**Alerts**     |Lists any alerts that started or are related to the investigation.         |
+|**Machines**     |Lists any machines included in alerts.         |
+|**Users**     |Lists user accounts included in alerts, along with verdict (such as malicious), user name, display name, and identity in Azure Active Directory.         |
+|**Key findings**     |Lists files, methods, or activities that were identified as malicious during the investigation. Also lists entities involved and status, along with actions taken and links to view more details.  |
+|**Entities** |Lists user activities, files, processes, services, drivers, IP addresses, and persistence methods associated with the investigation. Includes status and findings, such as malicious, remediated, suspicious, and more. |
+|**Log** |Provides a detailed, chronological view of an investigation. Lists all actions taken during the investigation, along with status and start time. |
+|**Pending actions** |Lists remediation actions that are awaiting approval. |
 
 ## Remediation steps
 

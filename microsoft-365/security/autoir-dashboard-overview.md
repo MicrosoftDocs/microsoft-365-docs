@@ -51,10 +51,9 @@ In addition to viewing information about triggering alerts, status, detection so
 - Navigate to additional charts or views
 - ...and more.
 
-
 ### Use filters to focus on specific information
 
-To open the Filters pane, in the upper right corner of the Automated investigations view, select the Filters icon (![AIR filter icon](images/air-filtericon.png)).
+To open the Filters pane, in the upper right corner of the Automated investigations view, select the **Filters** icon (![AIR filter icon](images/air-filtericon.png)).
 
 You can filter the list of automated investigations displayed by status, triggering alert, detection source, and entities.
 
@@ -69,16 +68,9 @@ You can filter the list of automated investigations displayed by status, trigger
 |Waiting for machine|Shows investigations that are currently paused because one or more machines included in the investigations are not available. (For example, a machine might be turned off.) |
 | Failed   | A problem has interrupted the investigation, preventing it from completing. |
 
-#### Triggering alert
-
-The alert the initiated the Automated investigation.
-
-#### Detection source
-
-Source of the alert that initiated the automated investigation. 
-
 #### Entities
 
+Entities are threats, tags, machines, 
 
 |Entity  |Description  |
 |---------|---------|
@@ -92,6 +84,13 @@ Source of the alert that initiated the automated investigation.
 
 Use the **Customize columns** drop-down menu to select columns that you'd like to show or hide. 
 
+#### Triggering alert
+
+The Triggering alert column inclalert the initiated the Automated investigation.
+
+#### Detection source
+
+Source of the alert that initiated the automated investigation. 
 
 ### Select a report value to view more information
 
