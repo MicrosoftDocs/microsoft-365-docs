@@ -27,13 +27,21 @@ Automated investigation and remediation (AIR) features in Microsoft 365 enable y
 
 ## Understand the automated investigation and remediation flow
 
-An **alert** leads to an **investigation**, which leads to **remediation**.
+
+
+Automated investigation begins when one of the following occurs:
+- An alert triggers an investigation, which leads to remediation
+- A security analyst launches an investigation from an alert or a security report 
+
+### An alert triggers an investigation
 
 An automated investigation begins when an alert is triggered. Not every alert will trigger an automated investigation; automated investigations depend on how your organization's alert policies are configured. With AIR, several kinds of alerts can be configured to work with security playbooks that define the automated investigation process. Here are just a few examples:
 - Malware is detected on a user's machine
 - A malicious file is detected in email
 - A user account is flagged as compromised
 - ... and other scenarios. 
+
+### A security analyst launches an investigation
 
 When an alert that is associated with a security playbook is triggered, the investigation process begins automatically and immediately. The investigation typically includes the following setps:
 - Gather information about the type of threat
