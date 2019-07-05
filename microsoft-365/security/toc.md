@@ -2,7 +2,7 @@
 
 ## [Overview]()
 ### [Microsoft 365 security center](overview-security-center.md)
-### [Microsoft 365 security architecture](mpt-architecture.md)
+### [Microsoft 365 security architecture](mtp-architecture.md)
 ### [Microsoft 365 security prerequisites](mtp-prerequisites.md)
 ### [What's new in Microsoft 365 security](mtp-whats-new.md)
 ### [Microsoft 365 security preview features](mtp-preview.md)
