@@ -31,21 +31,33 @@ Use the **Customize columns** drop-down menu to select columns that you'd like t
 
 From this view, you can also download the entire list in CSV format using the **Export** button, specify the number of items to show per page, and navigate between pages. You also have the flexibility to filter the list based on your preferred criteria.
 
-## Active automated investigations
+## Active automated investigations widget
 
 The **Active automated investigations** widget shows you at a glance the number of active investigations along with their status. For example, the following image indicates that one active investigation is in progress.
 
 ![Active automated investigations](images/air-active-investigations.png)
 
-Clicking the chart opens a more detailed view. In that view, you can use filters, view information about the alert that triggered the investigation, status, detection source, entities, and more.
+Clicking the chart opens the **Automated investigations** view.
+
+## Automated investigations view
+
+The **Automated investigations** view provides details about current and previous investigations. 
 
 ![automated investigations detailed view](images/air-automated-investigations-list-with-filters.png)
 
+In addition to viewing information about triggering alerts, status, detection source, entities, and duration, you can do any of the following in this view:
+- Use filters to focus on specific information
+- Choose which columns to include in the report
+- Select a value to see more detailed information
+- Navigate to additional charts or views
+- ...and more.
 
 
-### Filters
+### Use filters to focus on specific information
 
-You can filter the list of automated investigations by status, triggering alert, detection source, and entities.
+To open the Filters pane, in the upper right corner of the Automated investigations view, select the Filters icon (![AIR filter icon](images/air-filtericon.png)).
+
+You can filter the list of automated investigations displayed by status, triggering alert, detection source, and entities.
 
 #### Status
 
@@ -68,18 +80,18 @@ Source of the alert that initiated the automated investigation.
 
 #### Entities
 
-**Threat**
-The category of threat detected during the Automated investigation.
+
+|Entity  |Description  |
+|---------|---------|
+|Threat     |The category of threat detected during the Automated investigation.         |
+|Tags     |Manually added tags that capture the context of an automated investigation.         |
+|Machines |Filtering on a specific machine enables you to see other investigations related to the machine.|
+|Machine groups | Specific machine groups that you might have created.|
+|Comments | View investigations that do (or do not) have comments.|
+
+### Choose which columns to include
 
 
-**Tags**
-Filter using manually added tags that capture the context of an Automated investigation.
+### Select a report value to view more information
 
-**Machines**
-You can filter the Automated investigations list to zone in a specific machine to see other investigations related to the machine.
-
-**Machine groups**
-Apply this filter to see specific machine groups that you might have created.
-
-**Comments**
-Select between filtering the list between Automated investigations that have comments and those that don't.
+### Navigate to additional reports or views
