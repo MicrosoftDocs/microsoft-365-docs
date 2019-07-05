@@ -52,7 +52,7 @@ The following table provides details on what experiences are available in Micros
 
 Capability | Microsoft 365 security center | Microsoft Defender Security Center 
 :---|:---:
-**Investigate incidents** | \check  (view page)|  &#9745; <br> (view page) 
+**Investigate incidents** | &#9745; (view page)|  &#9745; <br> (view page) 
 &nbsp;&nbsp;&nbsp;&nbsp;Correlated incidents | &#9745; |  X |
 &nbsp;&nbsp;&nbsp;&nbsp;Manage incidents |  Manage incidents involving device, email, and identity alerts |  Manage incidents involving device alerts |
 &nbsp;&nbsp;&nbsp;&nbsp;Inspect alerts | - Device alerts <br> - Email alerts - opens in Office 365 ATP <br> - Identity alerts - opens in Azure ATP | Device alerts |
