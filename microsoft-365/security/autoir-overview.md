@@ -41,7 +41,8 @@ When an alert that is associated with a security playbook is triggered, the inve
 - Find out whether and where other instances of the threat exist in your organization
 - and so on.
 
-Depending on the results of the investigation, remediation begins. Depending on how AIR is configured for your organization, remediation can occur automatically or only upon approval by your security operations team. Remediation can include:
+Depending on the results of the investigation, remediation begins. Depending on the threat and how AIR is configured for your organization, remediation can occur automatically or only upon approval by your security operations team. Remediation can include:
+- 
 
 
 The following sections provide more details about alerts, investigations, and remediation steps.
