@@ -33,7 +33,7 @@ AIR features leverage various inspection algorithms, processes, and best practic
 |---------|---------|
 |[Automated investigation begins](#automated-investigation-begins)     |One of the following occurs:<br/>- [An alert triggers an an automated investigation](#an-alert-triggers-an-automated-investigation)<br/>- [A security analyst starts an investigation from an alert or a security report](#an-analyst-starts-an-automated-investigation)          |
 |[Automated investigation runs](#the-automated-investigation-process)     |- Details about the threat and affected entities (user accounts, machines, and so on) are gathered<br/>- The [investigation scope can increase](#automated-investigation-scope-can-increase) if new alerts or entities related to the initial threat emerge         |
-|[Details and results emerge](#details-and-results-of-an-automated-investigation)     |- During and after an automated investigation, details are available.<br/>- Automated investigation results inform remediation steps.         |
+|[Details and results emerge](#details-and-results-of-an-automated-investigation)     |- During and after an automated investigation, details are available<br/>- Automated investigation results inform remediation steps         |
 |[Remediation steps are taken](#remediation-steps) |- Remediation happens automatically or by approval from your security operations team<br/>- [Learn more about how threats are remediated](#how-threats-are-remediated) |
 
 ## Automated investigation begins
