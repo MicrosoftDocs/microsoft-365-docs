@@ -57,28 +57,20 @@ To open the Filters pane, in the upper right corner of the Automated investigati
 
 You can filter the list of automated investigations displayed by status, triggering alert, detection source, and entities.
 
-#### Status
 
-|Filter option | What it does|
-|:---|:---|
-|Any |Shows all automated investigations, regardless of status. |
-| No threats found                                          |Shows investigations in which no malicious entities were found.| 
-|Pending approval |Shows investigations that have one or more actions that require approval, typically from a member of the security operations team. |
-|Running |Shows investigations that are currently running. |
-|Waiting for machine|Shows investigations that are currently paused because one or more machines included in the investigations are not available. (For example, a machine might be turned off.) |
-| Failed   | A problem has interrupted the investigation, preventing it from completing. |
-
-#### Entities
-
-Entities are threats, tags, machines, 
-
-|Entity  |Description  |
-|---------|---------|
-|Threat     |The category of threat detected during the Automated investigation.         |
-|Tags     |Manually added tags that capture the context of an automated investigation.         |
-|Machines |Filtering on a specific machine enables you to see other investigations related to the machine.|
-|Machine groups | Specific machine groups that you might have created.|
-|Comments | View investigations that do (or do not) have comments.|
+|Filter type  |Option  |Description  |
+|---------|---------|---------|
+|Status     |Any         |Shows all automated investigations, regardless of status.         |
+|     |No threats found         |Shows investigations in which no malicious entities were found.         |
+| |Pending approval |Shows investigations that have one or more actions that require approval, typically from a member of the security operations team. |
+| |Running |Shows investigations that are currently running. |
+| |Waiting for machine|Shows investigations that are currently paused because one or more machines included in the investigations are not available. (For example, a machine might be turned off.) |
+| | Failed   | A problem has interrupted the investigation, preventing it from completing. |
+|Entity |Threat     |The category of threat detected during the Automated investigation.         |
+| |Tags     |Manually added tags that capture the context of an automated investigation.         |
+| |Machines |Filtering on a specific machine enables you to see other investigations related to the machine.|
+| |Machine groups | Specific machine groups that you might have created.|
+| |Comments | View investigations that do (or do not) have comments.|
 
 ### Choose which columns to include
 
