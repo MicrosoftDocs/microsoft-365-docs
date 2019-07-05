@@ -27,7 +27,6 @@ In the Microsoft 365 security center, you can view detailed information about au
 >[!NOTE]
 >If your organization has implemented role-based access to manage portal access, only authorized users or user groups who have permission to view investigation data. 
 
-Use the **Customize columns** drop-down menu to select columns that you'd like to show or hide. 
 
 From this view, you can also download the entire list in CSV format using the **Export** button, specify the number of items to show per page, and navigate between pages. You also have the flexibility to filter the list based on your preferred criteria.
 
@@ -91,7 +90,12 @@ Source of the alert that initiated the automated investigation.
 
 ### Choose which columns to include
 
+Use the **Customize columns** drop-down menu to select columns that you'd like to show or hide. 
+
 
 ### Select a report value to view more information
 
 ### Navigate to additional reports or views
+
+### There's more!
+
