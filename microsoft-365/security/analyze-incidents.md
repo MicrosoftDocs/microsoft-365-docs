@@ -57,7 +57,7 @@ Investigate mail that's been identified to be part of, or related to an incident
 Select **Investigations** to see all the automatic investigations launched by the system in response to the incident alerts.
 
 
-### Going through the evidence
+## Going through the evidence
 Microsoft Threat Protection automatically investigates all the incidents' supported events and suspicious entities in the alerts, providing you with auto-response and information about the important files, processes, services, and more. This helps quickly detect and block potential threats in the incident. 
 
 Each of the analyzed entities will be marked as infected, remediated, or suspicious. 

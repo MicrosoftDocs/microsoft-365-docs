@@ -31,7 +31,7 @@ The following topics provide details on what you need to know to address inciden
 
 Topic | Description
 :---|:---
-[Incident queue overview](incident-queue-overview.md) | Learn about the incident queue, how to navigate the dashboard and see incidents related to devices, identities, and mailboxes.
+[Incident queue overview](incident-queue.md) | Learn about the incident queue, how to navigate the dashboard and see incidents related to devices, identities, and mailboxes.
 [Manage incidents](manage-incidents.md)| Manage incidents by assigning incidents, changing its status, and keeping track of the progress while it's being addressed.
 [Analyze incidents](analyze-incidents.md)| Analyze incidents that affect your network, understand what they mean, and collate evidence to resolve them.
 
