@@ -20,7 +20,7 @@ ms.topic: article
 # Apply query best practices in advanced hunting
 
 **Applies to**:
-- Microsoft 365
+- Microsoft 365 security center
 
 
 ## Performance best practices

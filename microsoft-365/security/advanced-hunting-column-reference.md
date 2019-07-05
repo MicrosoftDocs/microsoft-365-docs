@@ -21,7 +21,7 @@ ms.date: 07/15/2019
 # Understand the data columns in the advanced hunting schema
 
 **Applies to**:
-- Microsoft 365
+- Microsoft 365 security center
 
 To effectively build queries that span multiple tables, you need to understand the columns in the Advanced hunting schema. The following table lists all the available columns, along with their data types and descriptions. This information is also available in the schema representation in the Advanced hunting screen.
 
