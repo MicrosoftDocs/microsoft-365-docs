@@ -10,7 +10,7 @@
 ## [How-to guides]()
 ### [Incidents]()
 #### [Incidents overview](incidents-overview.md)
-#### [Incident queue overview](incident-queue.md)
+#### [Incident queue](incident-queue.md)
 #### [Analyze incidents](analyze-incidents.md)
 #### [Manage incidents](manage-incidents.md)
 
