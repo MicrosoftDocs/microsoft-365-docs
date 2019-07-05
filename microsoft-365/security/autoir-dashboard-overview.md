@@ -33,7 +33,7 @@ From this view, you can also download the entire list in CSV format using the **
 
 ## Active automated investigations
 
-The Active automated investigation widget shows you at a glance the number of active investigations along with their status. For example, the following image indicates that one active investigation is in progress.
+The **Active automated investigations** widget shows you at a glance the number of active investigations along with their status. For example, the following image indicates that one active investigation is in progress.
 
 ![Active automated investigations](images/air-active-investigations.png)
 
@@ -41,35 +41,32 @@ Clicking the chart opens a more detailed view. In that view, you can use filters
 
 ![automated investigations detailed view](images/air-automated-investigations-list-with-filters.png)
 
+
+
 ### Filters
 
 You can filter the list of automated investigations by status, triggering alert, detection source, and entities.
+
+#### Status
+
+|Filter option | What it does|
+|:---|:---|
+|Any |Shows all automated investigations, regardless of status. |
+| No threats found                                          |Shows investigations in which no malicious entities were found.| 
+|Pending approval |Shows investigations that have one or more actions that require approval, typically from a member of the security operations team. |
+|Running |Shows investigations that are currently running. |
+|Waiting for machine|Shows investigations that are currently paused because one or more machines included in the investigations are not available. (For example, a machine might be turned off.) |
+| Failed   | A problem has interrupted the investigation, preventing it from completing. |
 
 #### Triggering alert
 
 The alert the initiated the Automated investigation.
 
-**Status**
-An Automated investigation can be in one of the following status:
+#### Detection source
 
-Status | Description
-:---|:---
-| No threats found                                          | No malicious entities found during the investigation.
-| Failed                                                    | A problem has interrupted the investigation, preventing it from completing.                                                         |
-| Partially remediated                                      | A problem prevented the remediation of some malicious entities.                                                                     |
-| Pending action                                          | Remediation actions require review and approval.                                                                                    |
-| Waiting for machine                                       | Investigation paused. The investigation will resume as soon as the machine is available.                                            |
-| Queued                                                    | Investigation has been queued and will resume as soon as other remediation activities are completed.                                |
-| Running                                                   | Investigation ongoing. Malicious entities found will be remediated.                                                                 |
-| Remediated                                                | Malicious entities found were successfully remediated.                                                                              |
-| Terminated by system                                      | Investigation was stopped by the system.                                                                                          |
-| Terminated by user                                        | A user stopped the investigation before it could complete.  
-| Partially investigated                                    | Entities directly related to the alert have been investigated. However, a problem stopped the investigation of collateral entities. |
+Source of the alert that initiated the automated investigation. 
 
-CHECK THIS!!
-
-**Detection source**
-Source of the alert that initiated the Automated investigation. 
+#### Entities
 
 **Threat**
 The category of threat detected during the Automated investigation.
