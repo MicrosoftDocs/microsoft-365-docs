@@ -3,7 +3,7 @@ title: Microsoft 365 incident queue overview
 description: Learn how to navigate the incident queue to manage incidents in Microsoft 365 security center
 keywords: 
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

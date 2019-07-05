@@ -3,7 +3,7 @@ title: Microsoft Threat Protection prerequisites
 description:  Learn about the licensing, hardware and software requirements, and other configuration settings for Microsoft Threat Protection 
 keywords: requirements, prerequisites, hardware, software, browser
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
