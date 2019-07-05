@@ -69,8 +69,6 @@ When an investigation is triggered, the process begins automatically and immedia
 - Find out whether and where other instances of the threat exist in your organization
 - ... and so on.
 
-Depending on the results of the investigation, remediation begins.
-
 ### Automated investigation scope can increase
 
 While an investigation is running, any other alert generated will be added to an ongoing automated investigation until that investigation is completed. In addition, if the same threat is seen on other entities, those entities are added to the investigation.
@@ -104,16 +102,16 @@ Depending on the threat and how AIR is configured for your organization, remedia
 
 ### How threats are remediated
 
-Depending on how you set up the entity groups and their level of automation, the Automated investigation will either require user approval (default) or automatically remediate threats.
+Depending on how you set up the entity groups and their level of automation, the automated investigation will either require user approval (default) or automatically remediate threats.
 
 You can configure the following levels of automation:
 
 Automation level | Description
 :---|:---
 Not protected | Machines will not get any automated investigations run on them.
-Semi - require approval for any remediation | This is the default automation level.<br><br>  An approval is needed for any remediation action. 
-Semi - require approval for non-temp folders remediation | An approval is required on files or executables that are not in temporary folders. <br><br> Files or executables in temporary folders, such as the user's download folder or the user's temp folder, will automatically be remediated if needed.
-Semi - require approval for core folders remediation | An approval is required on files or executables that are in the operating system directories such as Windows folder and Program files folder. <br><br> Files or executables in all other folders will  automatically be remediated if needed.
+Semi - require approval for any remediation | This is the default automation level.<p>An approval is needed for any remediation action. 
+Semi - require approval for non-temp folders remediation | An approval is required on files or executables that are not in temporary folders. <p> Files or executables in temporary folders, such as the user's download folder or the user's temp folder, will automatically be remediated if needed.
+Semi - require approval for core folders remediation | An approval is required on files or executables that are in the operating system directories such as Windows folder and Program files folder. <p> Files or executables in all other folders will  automatically be remediated if needed.
 Full - remediate threats automatically | All remediation actions will be performed automatically.
 
 The default group is configured for semi-automatic remediation. This means that any malicious entity that needs to be remediated requires an approval and the investigation is added to the **Pending actions** section, this can be changed to fully automatic so that no user approval is needed. 
