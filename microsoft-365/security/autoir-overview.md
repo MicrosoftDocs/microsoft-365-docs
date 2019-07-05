@@ -43,11 +43,14 @@ An automated investigation can begin when an alert is triggered. Not every alert
 
 ### A security analyst launches an investigation
 
-The Microsoft 365 security center includes dashboards and reports to help your security operations team stay on top of threat management for your organization. 
+The Microsoft 365 security center includes dashboards and reports to help your security operations team stay on top of threat management for your organization. When a security analyst notices a user account or machine is flagged, the analyst can view more details about that user account or machine and choose to start an automated investigation.
 
 
+![Security operations dashboard](images/air-secopsdashboard.png)
 
-When a security analyst notices a user account or machine is flagged, the analyst can view more details about that user account or machine and choose to start an automated investigation.
+For example, suppose that a security analyst notices several active alerts for a machine called client4. Selecting client4 in the Machines at risk widget opens a more detailed view. In that view, the security analyst can choose Initiate Automated Investigation.
+
+![Initiate Automated Investigation](images/air-secopsdashboard-detailedmachineview-actions.png)
 
 ### Automated investigation steps
 
