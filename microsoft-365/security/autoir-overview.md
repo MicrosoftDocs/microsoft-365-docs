@@ -31,17 +31,16 @@ AIR features leverage various inspection algorithms, processes, and best practic
 
 |Phase    |What happens  |
 |---------|---------|
-|Automated investigation begins     |One of the following occurs:<br/>- An alert triggers an an automated investigation<br/>- A security analyst launches an investigation from an alert or a security report          |
-|Investigation runs     |- Details about the threat and affected entities (user accounts, machines, etc.) are gathered<br/>- The investigation scope can increase if new alerts or entities related to the initial threat emerge         |
-|Investigation results emerge     |The automated investigation results inform remediation steps.         |
+|[Automated investigation begins](#automated-investigation-begins)     |One of the following occurs:<br/>- [An alert triggers an an automated investigation](#an-alert-triggers-an-automated-investigation)<br/>- [A security analyst starts an investigation from an alert or a security report](#an-analyst-starts-an-automated-investigation)          |
+|[Automated investigation runs](#the-automated-investigation-process)     |- Details about the threat and affected entities (user accounts, machines, etc.) are gathered<br/>- The investigation scope can increase if new alerts or entities related to the initial threat emerge         |
+|Automated investigation details and results emerge     |The automated investigation results inform remediation steps.         |
 |Remediation steps are taken |Depending on the scenario, remediation steps are taken automatically or by approval from your security operations team. |
-
 
 ## Automated investigation begins
 
 An automated investigation can begin when one of the following occurs:
 - [An alert triggers an automated investigation](#an-alert-triggers-an-automated-investigation)
-- [An analyst starts an automated investigation](#an-analyst-starts-an-automated-investigation)
+- [An analyst starts an automated investigation from an alert or a security report](#an-analyst-starts-an-automated-investigation)
 
 ### An alert triggers an automated investigation
 
@@ -92,7 +91,7 @@ During an Automated investigation, details about each analyzed entity is categor
 
 The **Log** tab reflects the chronological detailed view of all the investigation actions taken on the alert.
 
-If there are pending actions on the investigation, the **Pending actions** tab will be displayed where you can approve or reject actions. You can also go to the **Action center** to get an aggregated view all pending actions and manage remediaton actions. It also acts as an audit trail for all Automated investigation actions. 
+If there are pending actions on the investigation, the **Pending actions** tab will be displayed where you can approve or reject actions. You can also go to the **Action center** to get an aggregated view all pending actions and manage remediation actions. It also acts as an audit trail for all Automated investigation actions. 
 
 ## Remediation steps
 
