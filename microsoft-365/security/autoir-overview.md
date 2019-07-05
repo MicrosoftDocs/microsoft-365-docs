@@ -39,8 +39,8 @@ AIR features leverage various inspection algorithms, processes, and best practic
 ## Automated investigation begins
 
 An automated investigation can begin when one of the following occurs:
-- [An alert triggers an automated investigation](#an-alert-triggers-an-automated-investigation)
-- [An analyst starts an automated investigation from an alert or a security report](#an-analyst-starts-an-automated-investigation)
+- [An alert triggers an automated investigation](#an-alert-can-trigger-an-automated-investigation)
+- [An analyst starts an automated investigation from an alert or a security report](#an-analyst-can-start-an-automated-investigation)
 
 >[!NOTE]
 >Currently, automated investigation only supports the following: 
@@ -57,7 +57,7 @@ An automated investigation can begin when one of the following occurs:
 >- Email messages containing malware removed after delivery
 >- Email messages containing phish URLs removed after delivery
 
-### An alert triggers an automated investigation
+### An alert can trigger an automated investigation
 
 Most often, an automated investigation begins when an alert is triggered. Not every alert will trigger an automated investigation; this depends on how your organization's alert policies are configured. With AIR, several kinds of alerts can be configured to work with security playbooks that define the automated investigation process. Here are just a few examples:
 - Malware is detected on a user's machine
@@ -68,7 +68,7 @@ Most often, an automated investigation begins when an alert is triggered. Not ev
 > [!TIP]
 > To view (or set up) alerts, in the Microsoft 365 security center, in the navigation pane, choose **Alerts**.
 
-### An analyst starts an automated investigation
+### An analyst can start an automated investigation
 
 Security analysts can start investigations manually from a report or an alert. The Microsoft 365 security center includes dashboards and reports to help your security operations team stay on top of threat management for your organization. When a security analyst notices a user account or machine is flagged, the analyst can view more details about that user account or machine, and then choose to start an automated investigation.
 
