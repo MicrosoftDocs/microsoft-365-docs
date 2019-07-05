@@ -31,31 +31,16 @@ AIR features leverage various inspection algorithms, processes, and best practic
 
 |Phase    |What happens  |
 |---------|---------|
-|[Automated investigation begins](#automated-investigation-begins)     |One of the following occurs:<br/>- [An alert triggers an an automated investigation](#an-alert-triggers-an-automated-investigation)<br/>- [A security analyst starts an investigation from an alert or a security report](#an-analyst-starts-an-automated-investigation)          |
-|[Automated investigation runs](#the-automated-investigation-process)     |- Details about the threat and affected entities (user accounts, machines, and so on) are gathered<br/>- The [investigation scope can increase](#automated-investigation-scope-can-increase) if new alerts or entities related to the initial threat emerge         |
+|[Automated investigation begins](#automated-investigation-begins)     |An automated investigation begins when one of the following occurs:<br/>- [An alert triggers an an automated investigation](#an-alert-triggers-an-automated-investigation)<br/>- [A security analyst starts an investigation from an alert or a security report](#an-analyst-starts-an-automated-investigation)          |
+|[Automated investigation runs](#the-automated-investigation-process)     |- Details about the threat and affected entities (user accounts, machines, and so on) are gathered<br/>- [The investigation scope can increase](#automated-investigation-scope-can-increase) if new alerts or entities related to the initial threat emerge         |
 |[Details and results emerge](#details-and-results-of-an-automated-investigation)     |- During and after an automated investigation, details are available<br/>- Automated investigation results inform remediation steps         |
 |[Remediation steps are taken](#remediation-steps) |- Remediation happens automatically or by approval from your security operations team<br/>- [Learn more about how threats are remediated](#how-threats-are-remediated) |
 
 ## Automated investigation begins
 
 An automated investigation can begin when one of the following occurs:
-- [An alert triggers an automated investigation](#an-alert-can-trigger-an-automated-investigation)
-- [An analyst starts an automated investigation from an alert or a security report](#an-analyst-can-start-an-automated-investigation)
-
->[!NOTE]
->Currently, automated investigation only supports the following: 
-><br>
->**OS versions**
->- Windows 10, version 1709 (OS Build 16299.1085 with [KB4493441](https://support.microsoft.com/en-us/help/4493441/windows-10-update-kb4493441)) or later
->- Windows 10, version 1803 (OS Build 17134.704 with [KB4493464](https://support.microsoft.com/en-us/help/4493464/windows-10-update-kb4493464)) or later
-><br>
->- Later versions of Windows 10 <br>
->
->**Mailbox related alerts**
->- Potentially malicious URL click was detected
->- Email reported by user as phish
->- Email messages containing malware removed after delivery
->- Email messages containing phish URLs removed after delivery
+- [An alert triggers an automated investigation](#an-alert-can-trigger-an-automated-investigation); or
+- [An analyst starts an automated investigation from an alert or a security report](#an-analyst-can-start-an-automated-investigation).
 
 ### An alert can trigger an automated investigation
 
@@ -80,24 +65,33 @@ For example, suppose that a security analyst notices several active alerts for a
 
 ## The automated investigation process
 
-Whether through an alert or by a security analyst, once an investigation is triggered, the process begins automatically and immediately. The investigation typically includes the following steps:
+Whether through an alert or by a security analyst, once an automated investigation is triggered, the process begins immediately. The investigation typically includes the following steps:
 - Gather information about the type of threat
 - Determine where the threat came from
 - Identify who in your organization is affected by the threat
-- Find out whether and where other instances of the threat exist in your organization
+- Find out whether and where other instances of the threat exist in your work environment
 - ... and so on.
 
 ### Automated investigation scope can increase
 
 While an investigation is running, any other related alerts that are generated are added to an ongoing automated investigation until that investigation is completed. In addition, if the same threat is seen on other entities, those entities are added to the investigation.
 
-If an incriminated entity is seen in elsewhere, the automated investigation will expand the investigation to include that entity and a generic playbook will start on that entity. 
+If an incriminated entity is seen in elsewhere, the automated investigation will expand the investigation to include that entity, and a general security playbook will run on that entity. 
 
 ## Details and results of an automated investigation
 
-During and after an automated investigation, you'll be able to view details of the investigation. Selecting a triggering alert brings you to the investigation details view where you can pivot from the **Investigation graph**, **Alerts**, **Machines**, **Threats**, **Entities**, and **Log** tabs.
+During and after an automated investigation, you'll be able to view details of the investigation in a [dashboard](autoir-dashboard-overview.md). Selecting a triggering alert in the [Automated investigations view](autoir-dashboard-overview.md#automated-investigations-view) brings you to the Investigation details view, which includes the **Investigation graph**, **Alerts**, **Machines**, **Threats**, **Entities**, and **Log** tabs.
 
-In the **Alerts** tab, you'll see the alert that started the investigation. 
+
+|Tab  |Description  |
+|---------|---------|
+|Investigation graph |Provides a visual representation of the investigation, including alerts, users, machines, entities analyzed, and threats found. Select an item on the graph to move to the appropriate tab. |
+|Alerts     |Lists any alerts that started or are related to the investigation.         |
+|Machines     |Lists any machines included in alerts.         |
+|Users     |Lists user accounts included in alerts, along with verdict (such as malicious), user name, display name, and identity in Azure Active Directory.         |
+|Key findings     |Lists entities and files, methods, or activities that were identified as malicious during the investigation.  |
+
+
 
 The **Machines** tab shows where the alert was seen.
 
