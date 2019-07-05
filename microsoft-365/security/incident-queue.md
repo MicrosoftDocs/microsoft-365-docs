@@ -38,6 +38,9 @@ On the top navigation you can:
 - Apply filters
 
 
+![Image of incidents queue](images/incidents-queue.png)
+
+
 ## Sort and filter the incidents queue
 You can apply the following filters to limit the list of incidents and get a more focused view.
 
