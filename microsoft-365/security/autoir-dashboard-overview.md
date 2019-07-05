@@ -51,12 +51,11 @@ In addition to viewing information about triggering alerts, status, detection so
 - Navigate to additional charts or views
 - ...and more.
 
-### Use filters to focus on specific information
+## Use filters to focus on specific information
 
-To open the Filters pane, in the upper right corner of the Automated investigations view, select the **Filters** icon (![AIR filter icon](images/air-filtericon.png)).
+To open and use filters, in the upper right corner of a view, such as Automated investigations, select the **Filters** icon (![AIR filter icon](images/air-filtericon.png)).
 
-You can filter the list of automated investigations displayed by status, triggering alert, detection source, and entities.
-
+The following table describes filtering options you might see in your investigation dashboard and reports.
 
 |Filter type  |Option  |Description  |
 |---------|---------|---------|
