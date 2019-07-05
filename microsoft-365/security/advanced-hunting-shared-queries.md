@@ -1,6 +1,6 @@
 ---
 title: Use shared and sample queries in Microsoft 365 advanced hunting
-description: Learn where to get sample queries and shared queries. Share your queries to the public and to your organization.
+description: Take advantage of shared advanced hunting queries. Share your queries to the public and to your organization.
 keywords: advanced hunting, atp query, query atp data, intellisense, atp telemetry, events, events telemetry, azure log analytics
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -20,7 +20,7 @@ ms.topic: article
 # Use shared and sample queries in advanced hunting
 
 **Applies to**:
-- Microsoft 365
+- Microsoft 365 security center
 
 ## Use shared queries
 Shared queries are prepopulated queries that give you a starting point on running queries on your organization's data. It includes a couple of examples that help demonstrate the query language capabilities.

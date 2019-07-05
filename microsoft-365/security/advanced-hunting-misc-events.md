@@ -20,11 +20,11 @@ ms.topic: article
 # Find miscellaneous events in advanced hunting
 
 **Applies to**:
-- Microsoft 365
+- Microsoft 365 security center
 
 The miscellaneous events table or **MiscEvents** contains a broad range of events captured by Microsoft Defender ATP. Many of these include security-related events, such as antivirus...
 
-purpose of this document is to document all observed Microsoft Defender Advanced Threat Protection (MDATP) [MiscEvents](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/advanced-hunting-windows-defender-advanced-threat-protection#use-exposed-tables-in-advanced-hunting) ActionTypes. These events are all ETW-driven based on the ETW configuration stored in an onboarded endpoint"s registry configuration. It is important to note that this is not a comprehensive list of all possible ActionTypes. These events can only be viewed and documented upon the respective event occurring. While it would be ideal for Microsoft to document these events, this document intends to serve as a reference in the absence of such official documentation.
+These events are all ETW-driven based on the ETW configuration stored in an onboarded endpoint"s registry configuration. It is important to note that this is not a comprehensive list of all possible ActionTypes. These events can only be viewed and documented upon the respective event occurring.
 
 ## MiscEvents Schema
 

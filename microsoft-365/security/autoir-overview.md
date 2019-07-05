@@ -27,20 +27,33 @@ Automated investigation and remediation (AIR) features in Microsoft 365 enable y
 
 ## Understand the automated investigation and remediation flow
 
-In a nutshell, an **alert** leads to an **investigation**, which then leads to **remediation**.
+An **alert** leads to an **investigation**, which leads to **remediation**.
 
-An automated investigation begins when an alert is triggered. Not every alert will trigger an automated investigation; automation depends on how your organization's alert policies are configured. Here are a few examples of alerts that typically trigger an automated investigation:
+An automated investigation begins when an alert is triggered. Not every alert will trigger an automated investigation; automated investigations depend on how your organization's alert policies are configured. With AIR, several kinds of alerts can be configured to work with security playbooks that define the automated investigation process. Here are just a few examples:
 - Malware is detected on a user's machine
 - A malicious file is detected in email
-- A user account is flagged as compromised 
+- A user account is flagged as compromised
+- ... and other scenarios. 
 
-Once an alert associated with a security playbook is triggered, an investigation begins automatically. The investigation is designed to gather information about the type of threat, where it came from, who in your organization is affected by the threat, whether and where other instances of the threat exist in your organization, and more.
+When an alert that is associated with a security playbook is triggered, the investigation process begins automatically and immediately. The investigation typically includes the following setps:
+- Gather information about the type of threat
+- Determine where the threat came from
+- Identify who in your organization is affected by the threat
+- Find out whether and where other instances of the threat exist in your organization
+- ... and so on.
 
-Depending on the results of the investigation, remediation actions occur. Depending on how AIR is configured for your organization, remediation can occur automatically or only upon approval by your security operations team. 
+Depending on the results of the investigation, remediation begins. Depending on the threat and how AIR is configured for your organization, remediation can occur automatically or only upon approval by your security operations team. Remediation can include:
+- Deleting a malicious file
+- Resetting a user's password
+- Blocking URLs that were identified as malicious
+- Enabling multi-factor authentication for user accounts
+- ... and more.
+
+The following sections provide more details about alerts, investigations, and remediation steps.
 
 ## Alerts
 
-Alerts represent triggers for security operations team workflows for incident response and remediation. Prioritizing the right set of alerts for investigation, while making sure no threats are unaddressed is challenging. When investigations into alerts are performed manually, security operations teams must hunt and correlate entities (such as content, devices and users) at risk from threats. Such tasks and workflows are very time consuming and involve multiple tools and systems. With AIR, investigation and remediation steps are automated. 
+Alerts represent triggers for security operations team workflows for incident response and remediation. Prioritizing the right set of alerts for investigation while making sure no threats are unaddressed is challenging. When investigations into alerts are performed manually, security operations teams must hunt and correlate entities (such as content, devices and users) at risk from threats. Such tasks and workflows are very time consuming and involve multiple tools and systems. With AIR, investigation and remediation steps are automated. 
 
 The alerts start by analyzing the supported entities from the alert and also runs a generic playbook to see if there is anything else suspicious on the entity. The outcome and details from the investigation is seen in the Automated investigation view.
 
