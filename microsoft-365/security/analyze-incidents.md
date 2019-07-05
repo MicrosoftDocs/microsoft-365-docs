@@ -19,10 +19,7 @@ search.appverid:
 - MET150
 ---
 
-# Analyze incidents 
-
-**Applies to**:
-- Microsoft 365
+# Analyze incidents in Microsoft 365
 
 Analyze incidents that affect your network, understand what they mean, and collate evidence to resolve them. 
 
@@ -73,6 +70,6 @@ Microsoft Threat Protection aggregates the threat information into an incident s
 The **Graph** tells the story of the cybersecurity attack. For example, it shows you what was the entry point, which indicator of compromise or activity was observed on an entity.
 
 
-You can click the circles on the incident graph to view the details of the malicious files, associated file detections, how many instances has there been worldwide, whether it’s been observed in your organization, if so, how many instances.
+You can click the circles on the incident graph to view the details of the malicious files, associated file detections, how many instances has there been worldwide, whether it's been observed in your organization, if so, how many instances.
 
 

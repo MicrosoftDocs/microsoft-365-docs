@@ -19,10 +19,7 @@ search.appverid:
 - MET150
 ---
 
-# Manage incidents
-
-**Applies to**:
-- Microsoft 365
+# Manage incidents in Microsoft 365
 
 Managing incidents is an important part of every cybersecurity operation. You can manage incidents by selecting an incident from the **Incidents queue**. You can assign incidents to yourself, change the status, classify, rename, or comment on them to keep track of their progress. 
 

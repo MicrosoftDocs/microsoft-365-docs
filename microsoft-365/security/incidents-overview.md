@@ -19,17 +19,20 @@ search.appverid:
 - MET150
 ---
 
-# Investigate incidents
-
-**Applies to**:
-- Microsoft 365
+# Incidents overview in Microsoft 365
 
 Microsoft 365  applies correlation analytics and aggregates all related alerts and investigations seen across devices, identities, and mailboxes into an incident. 
 
 Doing so helps narrate the broader story of an attack, providing security defenders with the right visuals and data representations to understand and address complex cross-entity threats.
 
-The following topics will details on what you need to know to address incidents.
+The following topics provide details on what you need to know to address incidents.
 
 ## In this section
+
+Topic | Description
+:---|:---
+[Incident queue overview](incident-queue-overview.md) | Learn about the incident queue, how to navigate the dashboard and see incidents related to devices, identities, and mailboxes.
+[Manage incidents](manage-incidents.md)| Manage incidents by assigning incidents, changing its status, and keeping track of the progress while it's being addressed.
+[Analyze incidents](analyze-incidents.md)| Analyze incidents that affect your network, understand what they mean, and collate evidence to resolve them.
 
 

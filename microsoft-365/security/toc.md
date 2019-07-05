@@ -9,10 +9,11 @@
 
 ## [How-to guides]()
 ### [Incidents]()
-#### [Investigate incidents](investigate-incidents.md)
-#### [Incident queue overview](incident-queue-overview.md)
-#### [Manage incidents](manage-incidents.md)
+#### [Incidents overview](incidents-overview.md)
+#### [Incident queue overview](incident-queue.md)
 #### [Analyze incidents](analyze-incidents.md)
+#### [Manage incidents](manage-incidents.md)
+
 
 ### [Automated investigation and remediation]()
 #### [Automated investigations overview](autoir-overview.md)
