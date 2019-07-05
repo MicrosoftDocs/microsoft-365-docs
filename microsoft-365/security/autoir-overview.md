@@ -23,17 +23,21 @@ ms.topic: conceptual
 **Applies to**:
 - Microsoft 365
 
-Automated investigation and remediation (AIR) features in Microsoft 365 enable your security operations team to operate more effectively and efficiently. AIR features leverage various inspection algorithms and processes that are used by security analysts. AIR includes security playbooks that can help your security team address alerts and resolve security breaches quickly--immediately in some cases. AIR significantly reduces the volume of alerts your security team must address, allowing your security operations team to focus on more sophisticated threats and other high-value initiatives. 
+Automated investigation and remediation (AIR) features in Microsoft 365 enable your security operations team to operate more effectively and efficiently. Automated investigation begins when an alert is triggered or when an investigation is initiated by a security analyst. The investigation results inform remediation, which can be done automatically or upon approval by your security operations team. 
 
-## Understand the automated investigation and remediation flow
+AIR features leverage various inspection algorithms, processes, and best practices that are used by security analysts. AIR significantly reduces the volume of alerts your security team must address manually, allowing your security operations team to focus on more sophisticated threats and other high-value initiatives. 
+
+## The automated investigation and remediation flow
+
+|Phase    |What happens  |
+|---------|---------|
+|Automated investigation begins     |Automated investigation begins when one of the following occurs:<br/>- An alert triggers an an automated investigation, which leads to remediation<br/>- A security analyst launches an investigation from an alert or a report, which leads to remediation          |
+|The investigation scope can increase     |New alerts or entities related to the initial threat are added to the investigation         |
+|Investigation results emerge     |The automated investigation results inform remediation steps.         |
+|Remediation steps are taken |Depending on the scenario, remediation steps are taken automatically or by approval from your security operations team. |
 
 
-
-Automated investigation begins when one of the following occurs:
-- An alert triggers an investigation, which leads to remediation
-- A security analyst launches an investigation from an alert or a report 
-
-### An alert triggers an investigation
+## An alert can trigger an automated investigation
 
 An automated investigation can begin when an alert is triggered. Not every alert will trigger an automated investigation; this depends on how your organization's alert policies are configured. With AIR, several kinds of alerts can be configured to work with security playbooks that define the automated investigation process. Here are just a few examples:
 - Malware is detected on a user's machine
@@ -43,7 +47,7 @@ An automated investigation can begin when an alert is triggered. Not every alert
 
 
 
-### A security analyst launches an investigation
+## An analyst can start an automated investigation
 
 The Microsoft 365 security center includes dashboards and reports to help your security operations team stay on top of threat management for your organization. When a security analyst notices a user account or machine is flagged, the analyst can view more details about that user account or machine and choose to start an automated investigation.
 
@@ -54,7 +58,7 @@ For example, suppose that a security analyst notices several active alerts for a
 
 ![Initiate Automated Investigation](images/air-secopsdashboard-detailedmachineview-actions.png)
 
-### Automated investigation steps
+## Automated investigation steps
 
 When an investigation is triggered, the process begins automatically and immediately. The investigation typically includes the following setps:
 - Gather information about the type of threat
@@ -65,7 +69,7 @@ When an investigation is triggered, the process begins automatically and immedia
 
 Depending on the results of the investigation, remediation begins. 
 
-### Remediation steps
+## Remediation steps
 
 Depending on the threat and how AIR is configured for your organization, remediation can occur automatically or only upon approval by your security operations team. Remediation can include:
 - Deleting a malicious file
