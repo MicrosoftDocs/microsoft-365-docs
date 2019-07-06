@@ -90,7 +90,7 @@ Reports and views about automated investigations are visual and interactive. Cli
 
 ## Next steps
 
-[Analyze automated investigations - align this with UI/UX](analyze-autoir.md)
+[Analyze automated investigations](analyze-autoir.md)
 
 [Manage actions related to automated investigation](autoir-actions.md)
 
