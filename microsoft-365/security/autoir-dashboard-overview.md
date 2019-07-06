@@ -22,7 +22,7 @@ ms.topic: conceptual
 **Applies to**:
 - Microsoft 365
 
-In the Microsoft 365 security center, you can view detailed information about automated investigations by using the Active automated investigations widget, the Automated investigations view, and other investigation reports. 
+In the Microsoft 365 security center, you can view detailed information about automated investigations by using the [Active automated investigations widget](#the-active-automated-investigations-widget), the [Automated investigations view](#the-automated-investigations-view), and other available investigation reports. 
 
 >[!NOTE]
 >If your organization has implemented role-based access to manage portal access, only authorized users or user groups who have permission to view investigation data. 
@@ -63,8 +63,8 @@ The following table describes filtering options you might see in your investigat
 | |Running |Shows investigations that are currently running. |
 | |Waiting for machine|Shows investigations that are currently paused because one or more machines included in the investigations are not available. (For example, a machine might be turned off.) |
 | | Failed   | A problem has interrupted the investigation, preventing it from completing. |
-|Triggering alert | | |
-|Detection source| | |
+|Triggering alert |(varies) |The alert or action that triggered the investigation is listed here. If multiple actions triggered investigations, you can select one or more to view details about those investigations. |
+|Detection source|(varies) |Detection sources can include antivirus protection, anti-malware, security & compliance policy violations, and so on. If multiple detection sources are listed, you can select one or more to view details about those investigations.|
 |Entities |Threat     |The category of threat detected during the Automated investigation.         |
 | |Tags     |Manually added tags that capture the context of an automated investigation.         |
 | |Machines |Filtering on a specific machine enables you to see other investigations related to the machine.|
@@ -73,11 +73,11 @@ The following table describes filtering options you might see in your investigat
 
 ## Choosing which columns to include
 
-In your aUse the **Customize columns** drop-down menu to select columns that you'd like to show or hide. 
+Use the **Customize columns** list to select (or clear) columns that you'd like to show (or hide). 
 
 ## Exporting results
 
-
+Use the Export button to export results to a file in .csv format. When you select Export, you'll be prompted to specify how many results you want to include.
 
 ## Navigating to additional reports or views
 
