@@ -22,17 +22,12 @@ ms.topic: conceptual
 **Applies to**:
 - Microsoft 365
 
-In the Microsoft 365 security center, you can view detailed information about automated investigations. This includes active automated investigations and statistics. 
-
-You can also download a list in .csv format by using the **Export** button. , specify the number of items to show per page, and navigate between pages. You also have the flexibility to filter the list based on your preferred criteria.
-
+In the Microsoft 365 security center, you can view detailed information about automated investigations by using the Active automated investigations widget, the Automated investigations view, and other investigation reports. 
 
 >[!NOTE]
 >If your organization has implemented role-based access to manage portal access, only authorized users or user groups who have permission to view investigation data. 
 
-
-
-## Active automated investigations widget
+## The Active automated investigations widget
 
 The **Active automated investigations** widget shows you at a glance the number of active investigations along with their status. For example, the following image indicates that one active investigation is in progress.
 
@@ -40,7 +35,7 @@ The **Active automated investigations** widget shows you at a glance the number 
 
 Clicking the chart opens the **Automated investigations** view.
 
-## Automated investigations view
+## The Automated investigations view
 
 The **Automated investigations** view provides details about current and previous investigations. 
 
@@ -74,21 +69,17 @@ The following table describes filtering options you might see in your investigat
 | |Machine groups | Specific machine groups that you might have created.|
 | |Comments | View investigations that do (or do not) have comments.|
 
-### Choose which columns to include
+## Choosing which columns to include
 
-Use the **Customize columns** drop-down menu to select columns that you'd like to show or hide. 
+In your aUse the **Customize columns** drop-down menu to select columns that you'd like to show or hide. 
 
-#### Triggering alert
+## Exporting results
 
-The Triggering alert column lists the alert or actoin that initiated the automated investigation.
 
-#### Detection source
 
-Source of the alert that initiated the automated investigation. 
+## Navigating to additional reports or views
 
-### Select a report value to view more information
+## Next steps
 
-### Navigate to additional reports or views
 
-### There's more!
 
