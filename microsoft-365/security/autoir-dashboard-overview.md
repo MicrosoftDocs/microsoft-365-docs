@@ -84,9 +84,9 @@ Use the **Export** button to export results to a file in .csv format. When you s
 ## Navigating to additional reports or views
 
 Reports and views about automated investigations are visual and interactive. Click an item to view more detailed information about that item, or to jump to another, more detailed view. Here are a few examples:
-- In the Active automated investigations widget, click the chart to go to the Automated investigations view
-- In the Automated investigations view, click an item in the Triggering alert column to go to the Investigation details page
-- On the Investigation details page, click an item in the graph to go to a tab with more details about that item
+- In the **Active automated investigations** widget, click the chart to go to the **Automated investigations** view
+- In the **Automated investigations** view, click an item in the **Triggering alert** column to go to the **Investigation details** page
+- On the **Investigation details** page, click an item in the graph to go to a tab with more details about that item
 
 ## Next steps
 
