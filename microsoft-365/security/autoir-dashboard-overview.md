@@ -24,11 +24,13 @@ ms.topic: conceptual
 
 In the Microsoft 365 security center, you can view detailed information about automated investigations. This includes active automated investigations and statistics. 
 
+You can also download a list in .csv format by using the **Export** button. , specify the number of items to show per page, and navigate between pages. You also have the flexibility to filter the list based on your preferred criteria.
+
+
 >[!NOTE]
 >If your organization has implemented role-based access to manage portal access, only authorized users or user groups who have permission to view investigation data. 
 
 
-From this view, you can also download the entire list in CSV format using the **Export** button, specify the number of items to show per page, and navigate between pages. You also have the flexibility to filter the list based on your preferred criteria.
 
 ## Active automated investigations widget
 
@@ -46,12 +48,13 @@ The **Automated investigations** view provides details about current and previou
 
 In addition to viewing information about triggering alerts, status, detection source, entities, and duration, you can do any of the following in this view:
 - Use filters to focus on specific information
+- Export results to a file in .csv format
 - Choose which columns to include in the report
 - Select a value to see more detailed information
 - Navigate to additional charts or views
 - ...and more.
 
-## Use filters to focus on specific information
+## Filters
 
 To open and use filters, in the upper right corner of a view, such as Automated investigations, select the **Filters** icon (![AIR filter icon](images/air-filtericon.png)).
 
@@ -77,7 +80,7 @@ Use the **Customize columns** drop-down menu to select columns that you'd like t
 
 #### Triggering alert
 
-The Triggering alert column inclalert the initiated the Automated investigation.
+The Triggering alert column lists the alert or actoin that initiated the automated investigation.
 
 #### Detection source
 
