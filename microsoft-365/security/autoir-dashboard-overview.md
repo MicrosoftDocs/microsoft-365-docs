@@ -79,7 +79,7 @@ Create a report that includes the information you want to see. Use the **Customi
 
 ## Exporting results
 
-Use the **Export** button to export results to a file in .csv format. When you select Export, you'll be prompted to specify how many results you want to include.
+Use the **Export** button to export results to a file in .csv format. When you select **Export**, you'll be prompted to specify how many results you want to include.
 
 ## Navigating to additional reports or views
 
