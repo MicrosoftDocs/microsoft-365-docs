@@ -73,15 +73,21 @@ The following table describes filtering options you might see in your investigat
 
 ## Choosing which columns to include
 
-Use the **Customize columns** list to select (or clear) columns that you'd like to show (or hide). 
+Create a report that includes the information you want to see. Use the **Customize columns** list to select (or clear) columns that you'd like to show (or hide). The report updates to display information in the columns you selected. 
+
+
 
 ## Exporting results
 
-Use the Export button to export results to a file in .csv format. When you select Export, you'll be prompted to specify how many results you want to include.
+Use the **Export** button to export results to a file in .csv format. When you select Export, you'll be prompted to specify how many results you want to include.
 
 ## Navigating to additional reports or views
 
+Reports and views about automated investigations are visual and interactive. Click an item to view more detailed information about that item, or to jump to another, more detailed view.
+
 ## Next steps
 
+[Analyze automated investigations - align this with UI/UX](analyze-autoir.md)
 
+[Manage actions related to automated investigation](autoir-actions.md)
 
