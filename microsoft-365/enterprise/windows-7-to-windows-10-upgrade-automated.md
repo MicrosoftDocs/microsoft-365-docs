@@ -19,7 +19,7 @@ description: Windows 7 to Windows 10 automated upgrades for large organizations
 
 Starting January 14, 2020, security updates or support for PCs running Windows 7 will no longer be provided. With just a months left to shift from Windows 7 to Windows 10 and multiple options to deploy, a common question in the IT community is, “What’s the fastest way to move from Windows 7 to Windows 10?” The short answer is to perform in-place upgrades for existing PCs and in doing that you can reduce focus on several aspects of the desktop deployment process.
 
-<img src="media/windows-7-to-windows-10-upgrade-automated-media/windows-7-to-windows-10-upgrade-automated-media-1.png" alt="wheel" height="144" width="144" />
+<img src="media/windows-7-to-windows-10-upgrade-automated-media/windows-7-to-windows-10-upgrade-automated-media-1.png" alt="wheel" height="421" width="500" />
 
 Using in-place upgrades, several desktop deployment processes get reduced dramatically in scope, especially:
 
