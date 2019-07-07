@@ -125,7 +125,7 @@ The **Get started** section provides a few simple queries using commonly used op
 
 ## Access query language documentation
 
-For more information on Kusto query language and supported operators, see  [Query Language](https://docs.microsoft.com/azure/log-analytics/query-language/query-language).
+For more information on Kusto query language and supported operators, see  [Query Language](https://docs.microsoft.com/en-us/azure/kusto/query/).
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-advancedhunting-belowfoldlink)
 

@@ -28,7 +28,7 @@ On Microsoft 365 security center, advanced hunting supports queries that look in
 
 || Microsoft 365 security center  |  Microsoft Defender Security Center |
 |-------------------------------|---|---|
-| Portal link | [tbd] | [securitycenter.windows.com/hunting](https://securitycenter.windows.com/hunting) |
+| Portal link | [securityoperations.microsoft.com/hunting](https://securityoperations.microsoft.com/hunting) | [securitycenter.windows.com/hunting](https://securitycenter.windows.com/hunting) |
 | Schema coverage | Windows 10 devices, Office 365 email  | Windows 10 devices  |
 | Custom detections | Not available  | Available |
 | Shared queries | Available  | Available — queries are shared with M365 security center |
