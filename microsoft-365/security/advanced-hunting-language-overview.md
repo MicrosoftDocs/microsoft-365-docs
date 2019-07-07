@@ -24,7 +24,7 @@ ms.topic: article
 
 ## Try your first query
 
-In Microsoft 365 security center, go to XXXXX to run your first query. Use the following example:
+In Microsoft 365 security center, go to **Advanced hunting** to run your first query. Use the following example:
 
 ```
 // Finds PowerShell execution events that could involve a download.
@@ -51,7 +51,7 @@ The query starts with a short comment describing what it is for. This helps if y
 ProcessCreationEvents
 ```
 
-The query itself will typically start with a table name followed by a series of elements started by a pipe **|**. In this example, we start by adding  with the table name **ProcessCreationEvents** and add piped elements as needed.
+The query itself will typically start with a table name followed by a series of elements started by a pipe (`|`). In this example, we start by adding  with the table name `ProcessCreationEvents` and add piped elements as needed.
 
 The first piped element defines a time filter to review only the records from the previous seven days. Keeping the time range as narrow as possible ensures that queries perform well, return manageable results, and don't time out.
 
@@ -62,7 +62,7 @@ The time range is immediately followed by a search for files representing the Po
 | where FileName in ("powershell.exe", "POWERSHELL.EXE", "powershell_ise.exe", "POWERSHELL_ISE.EXE")
 ```
 
-Afterwards, we look for command lines that are known to be used with PowerShell to download files.
+Afterwards, we look for command lines that are often used with PowerShell to download files.
 
 ```
 | where ProcessCommandLine has "Net.WebClient"
@@ -72,14 +72,14 @@ Afterwards, we look for command lines that are known to be used with PowerShell 
         or ProcessCommandLine contains "http:"
 ```
 
-Now that your query clearly identifies the data you want to locate, you can add elements that define what the results look like. _Project_ returns specific columns and _top_ limits the number of results, making the results well-formatted and reasonably large and easy to process. 
+Now that your query clearly identifies the data you want to locate, you can add elements that define what the results look like. `project` returns specific columns and `top` limits the number of results, making the results well-formatted and reasonably large and easy to process. 
 
 ```
 | project EventTime, ComputerName, InitiatingProcessFileName, FileName, ProcessCommandLine
 | top 100 by EventTime'
 ```
 
-Click **Run query** to see the results. You can expand the screen view so you can focus on your hunting query and related results.
+Click **Run query** to see the results. You can expand the screen view so you can focus on your hunting query and the results.
 
 ## Learn common query operators for advanced hunting
 
@@ -98,7 +98,7 @@ Now that you've run your first query and have a general idea of its components, 
 | **makeset** |  Return a dynamic (JSON) array of the set of distinct values that Expr takes in the group. |
 | **find** | Find rows that match a predicate across a set of tables. |
 
-To see a live example of these operators, run them as part of the **Get started** section.
+To see a live example of these operators, run them from the **Get started** section.
 
 ## Understand data types and their query syntax implications
 
@@ -112,9 +112,11 @@ Data in advanced hunting tables are generally classified into the following data
 | **int** | 32-bit numeric value  |
 | **long** | 64-bit numeric value |
 
+**DRAFT NOTES add implications of each data type**
+
 ## Use sample queries
 
-As soon as you open advanced hunting you will find a few simple queries based on commonly used operators. Try running these queries and making small modifications to them.
+The **Get started** section provides a few simple queries using commonly used operators. Try running these queries and making small modifications to them.
 
 ![Image of Advanced hunting window](images/atp-advanced-hunting.png)
 
@@ -123,7 +125,7 @@ As soon as you open advanced hunting you will find a few simple queries based on
 
 ## Access query language documentation
 
-For more information on the query language and supported operators, see  [Query Language](https://docs.microsoft.com/azure/log-analytics/query-language/query-language).
+For more information on Kusto query language and supported operators, see  [Query Language](https://docs.microsoft.com/azure/log-analytics/query-language/query-language).
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-advancedhunting-belowfoldlink)
 

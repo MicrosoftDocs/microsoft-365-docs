@@ -31,11 +31,11 @@ On Microsoft 365 security center, advanced hunting supports queries that look in
 | Portal link | [tbd] | [securitycenter.windows.com/hunting](https://securitycenter.windows.com/hunting) |
 | Schema coverage | Windows 10 devices, Office 365 email  | Windows 10 devices  |
 | Custom detections | Not available  | Available |
-| Shared queries | Available  | Available |
+| Shared queries | Available  | Available — queries are shared with M365 security center |
 
 ## Get started with advanced hunting
 
-We recommend going through the several steps to quickly get up and running with advanced hunting.
+We recommend going through several steps to quickly get up and running with advanced hunting.
 
 | Learning goal | Description | Resource |
 |--|--|--|
@@ -48,22 +48,26 @@ Take advantage of the following functionality to write queries faster:
 - **Autosuggest** — as you write queries, advanced hunting provides suggestions.. 
 - **Schema reference** — a schema reference that includes the list of tables and their columns is provided next to your working area. For more information, hover over an item. Double-click an item to insert it to the query editor.
 
-## Leverage query results
+## Drill-down from query results
+To view more information about entities, such as machines, files, users, IP addresses, and URLs, in your query results, simply click the entity identifier. This opens a detailed profile page for the selected entity in Microsoft Defender Security Center.
 
-The query results provide columns that return entity-related objects, such as Machine name, Machine ID, File name, SHA1, User, IP, and URL, are linked to their entity pages in Microsoft Defender Security Center.
+## Tweak your queries from the results
+Right-click a value in the result set to quickly enhance your query. You can use the options to:
 
-You can right-click on a cell in the result set and add a filter to your written query. The current filtering options are **include**, **exclude** or **advanced filter**, which provides additional filtering options on the cell value. These cell values are part of the row set. 
+- Explicitly look for the selected value (`==`)
+- Exclude the selected value from the query (`!=`)
+- Get more advanced operators for adding the value to your query, such as `contains`, `starts with` and `ends with` 
 
 ![Image of Microsoft Defender ATP Advanced hunting result set](images/atp-advanced-hunting-results-filter.png)
 
-### Filter query results
-Use the advanced filter on the output result set of the query. The filters provide an overview of the result set where each column has it's own section and shows the distinct values that appear in the column and their prevalence.
+## Filter the query results
+The filters displayed to the right provide a summary of the result set. Each column has its own section that lists the distinct values found for that column and the number of instances.
 
-You can refine your query based on the filter by clicking the "+" or "-" buttons on the values that you want to include or exclude and click **Run query**.
+Refine your query by selecting the "+" or "-" buttons on the values that you want to include or exclude and then selecting **Run query**.
 
 ![Image of Advanced hunting filter](images/atp-filter-advanced-hunting.png)
 
-The filter selections will resolve as an additional query term and the results will be updated accordingly.
+The filter selections are added as additional query elements and the results are updated accordingly.
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-advancedhunting-belowfoldlink)
 

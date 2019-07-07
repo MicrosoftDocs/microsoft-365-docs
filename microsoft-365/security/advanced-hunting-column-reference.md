@@ -124,44 +124,43 @@ To effectively build queries that span multiple tables, you need to understand t
 
 | Column name | Data type | Description |
 |---|---|---|
-| EmailKey | string | Unique identifier for distinct recipients of the email. This is a combination of the network message ID and the recipient address. |
-| TenantId | string | N/A |
-| NetworkMessageId | string | Unique identifier for the email within the organization |
-| InternetMessageId | string | Unique identifier for the email on the internet |
-| EmailReceivedTime | datetime | Date and time the email was received in UTC |
-| EmailCampaignId | string | Fingerprint identifying emails from the same attack campaign based on heuristic analysis of email content |
-| SenderIpv4 | string | IPv4 address of the last detected mail server |
-| SenderIpv6 | string | IPv6 address of the last detected mail server |
-| SenderMailFromAddress | string | Sender email address in the MAIL FROM header |
-| SenderFromAddress | string | Sender email address in the FROM header |
-| SenderMailFromDomain | string | Sender domain in the MAIL FROM header |
-| SenderFromDomain | string | Sender domain in the FROM header |
-| SenderUpn | string | Sender User Principal Name (UPN), if the sender is an Office 365 account |
-| SenderCloudSid | string | Sender cloud security identifier (SID), if the sender is an Office 365 account |
-| SenderOnPremisesSid | string | Sender on-premises security identifier (SID), if the sender is an Office 365 account |
-| RecepientEmailAddress | string | Email address of the recipient |
-| RecipientUpn | string | User Principal Name (UPN) of the email recipient |
-| RecipientCloudSid | string | Cloud security identifier (SID) of the email recipient |
-| RecipientOnPremiseSid | string | On-premises security identifier (SID) of the email recipient |
-| EmailSubject | string | Subject of the email |
-| EmailDirection | string | Direction of the email relative to your network:  Inbound, Outbound, Intra-org  |
-| DeliveryStatus | string | Delivery status of the email: Delivered, Junked, Blocked, or Replaced |
-| DeliveryDestination | string | Location where the email was delivered: Inbox/Folder, On-premises/External, Junk, Quarantine, Failed/Dropped, Deleted items |
+| AttachmentCount | int | Number of attachments in the email |
 | DeliveryCustomFolder | string | Custom folder in the recipient mailbox where the email was delivered, if applicable |
-| PhishingFilterVerdict | string | Verdict of the email filtering stack on whether the email is phishing: "Suspicious, possible phishing" or "Phishing" |
-| PhishingDetectionMethod | string | Method used to detect the email as a phishing email: URL reputation, Safe Links, Machine learning, Advanced phishing filter, Intra-org spoofing, Cross-org spoofing, Domain impersonation, User impersonation, Brand impersonation |
-| MalwareFilterVerdict | string | Verding of the email filtering stack on whether the email contains malaware: Malware found, No malware |
-| MalwareDetectionMethod | string | Method used to detect malware in the email: Antivirus, File reputation, Safe Attachments detonation |
+| DeliveryDestination | string | Location where the email was delivered: Inbox/Folder, On-premises/External, Junk, Quarantine, Failed/Dropped, Deleted items |
+| DeliveryStatus | string | Delivery status of the email: Delivered, Junked, Blocked, or Replaced |
+| EmailCampaignId | string | Fingerprint identifying emails from the same attack campaign based on heuristic analysis of email content |
+| EmailDirection | string | Direction of the email relative to your network:  Inbound, Outbound, Intra-org  |
+| EmailKey | string | Unique identifier for distinct recipients of the email. This is a combination of the network message ID and the recipient address. |
+| EmailLanguage | string | Detected language of the email content |
+| EmailReceivedTime | datetime | Date and time the email was received in UTC |
+| EmailSubject | string | Subject of the email |
+| FileName | string | Name of the file |
+| FileType | string | File type based on file extension name |
 | FinalEmailAction | string | Final action taken on the email based on filter verdict, policies, and user actions:  Moved to Junk folder, Added X-header, Modified subject, Redirected, Deleted, Quarantined, No action, Added Bcc recipient, Replaced attachment |
 | FinalEmailActionPolicy | string | Action policy that took effect: Antispam high-confidence, Antispam (general), Antispam bulk mail, Antispam phishing, Anti-phishing domain impersonation, Anti-phishing user impersonation, Anti-phishing spoof, Anti-phishing graph impersonation, Antimalware, Safe Attachments, Enterprise Transport Rules (ETR), Malware ZAP, Phishing ZAP, Spam ZAP |
 | FinalEmailActionPolicyGuid | string | Unique identifier for the policy that determined the final mail action |
-| AttachmentCount | int | Number of attachments in the email |
+| InternetMessageId | string | Unique identifier for the email on the internet |
 | LinkCount | int | Number of embedded links in the email |
-| EmailLanguage | string | Detected language of the email content |
-| FileName | string | Name of the file |
-| FileType | string | File type based on file extension name |
-| Sha256 | string | SHA-256 hash of the file |
 | LinkUrl	| string | URL of the embedded link |
+| MalwareDetectionMethod | string | Method used to detect malware in the email: Antivirus, File reputation, Safe Attachments detonation |
+| MalwareFilterVerdict | string | Verding of the email filtering stack on whether the email contains malaware: Malware found, No malware |
+| NetworkMessageId | string | Unique identifier for the email within the organization |
+| PhishingDetectionMethod | string | Method used to detect the email as a phishing email: URL reputation, Safe Links, Machine learning, Advanced phishing filter, Intra-org spoofing, Cross-org spoofing, Domain impersonation, User impersonation, Brand impersonation |
+| PhishingFilterVerdict | string | Verdict of the email filtering stack on whether the email is phishing: "Suspicious, possible phishing" or "Phishing" |
+| RecepientEmailAddress | string | Email address of the recipient |
+| RecipientCloudSid | string | Cloud security identifier (SID) of the email recipient |
+| RecipientOnPremiseSid | string | On-premises security identifier (SID) of the email recipient |
+| RecipientUpn | string | User Principal Name (UPN) of the email recipient |
+| SenderCloudSid | string | Sender cloud security identifier (SID), if the sender is an Office 365 account |
+| SenderFromAddress | string | Sender email address in the FROM header |
+| SenderFromDomain | string | Sender domain in the FROM header |
+| SenderIpv4 | string | IPv4 address of the last detected mail server |
+| SenderIpv6 | string | IPv6 address of the last detected mail server |
+| SenderMailFromAddress | string | Sender email address in the MAIL FROM header |
+| SenderMailFromDomain | string | Sender domain in the MAIL FROM header |
+| SenderOnPremisesSid | string | Sender on-premises security identifier (SID), if the sender is an Office 365 account |
+| SenderUpn | string | Sender User Principal Name (UPN), if the sender is an Office 365 account |
+| Sha256 | string | SHA-256 hash of the file |
 
 
 

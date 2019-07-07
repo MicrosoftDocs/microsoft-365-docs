@@ -1,5 +1,5 @@
 ---
-title: Use shared and sample queries in Microsoft 365 advanced hunting
+title: Use shared queries in Microsoft 365 advanced hunting
 description: Take advantage of shared advanced hunting queries. Share your queries to the public and to your organization.
 keywords: advanced hunting, atp query, query atp data, intellisense, atp telemetry, events, events telemetry, azure log analytics
 search.product: eADQiWindows 10XVcnh
@@ -17,15 +17,15 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Use shared and sample queries in advanced hunting
+# Use shared queries in advanced hunting
 
 **Applies to**:
 - Microsoft 365 security center
 
 ## Use shared queries
-Shared queries are prepopulated queries that give you a starting point on running queries on your organization's data. It includes a couple of examples that help demonstrate the query language capabilities.
+Shared queries are predefined queries that enable you to quickly pursue specific threat hunting scenarios without having to learn the query language in depth.
 
-![Image of shared queries](images/atp-shared-queries.png)
+![Image of shared queries](images/atp-advanced-hunting-shared-queries.png)
 
 You can save, edit, update, or delete queries.
 
@@ -60,14 +60,12 @@ These steps guide you on modifying and overwriting an existing query.
 
 2. Select **Delete** and confirm that you want to delete the query.
 
-## Public Advanced hunting query GitHub repository  
+## Access queries in the GitHub repository  
 Check out the [Advanced hunting repository](https://github.com/Microsoft/WindowsDefenderATP-Hunting-Queries). Contribute and use example queries shared by our customers. 
 
+>[!tip] Microsoft security researchers also provide advanced hunting queries that you can use to locate activities and indicators associated with emerging threats. These queries are provided as part of the [threat analytics](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/threat-analytics) reports in Microsoft Defender Security Center.
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-advancedhunting-belowfoldlink)
-
-## Advanced hunting queries on threat analytics
-Along with threat analytics reports, Microsoft security researchers, also provide advanced hunting queries that you can use to locate activities and indicators that can be associated with the reported threats. For more information...  
 
 ## Related topics
 - [Proactively hunt for threats](advanced-hunting.md)
