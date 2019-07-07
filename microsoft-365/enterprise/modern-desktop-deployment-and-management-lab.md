@@ -19,7 +19,7 @@ description: Learn about and where to access the Windows and Office Deployment L
 
 These downloadable hands-on labs focus on Windows 10 deployment and Office 365 deployment along with the related configuration and management considerations post-deployment. This training is highly recommended for organizations preparing for Windows 7 end of life, but also applies if you’re currently using Windows 10 and Office 365 Plus or Office 2019. Included are guides for Windows 10, Office 365 ProPlus, Enterprise Mobility + Security and related products and services.
 
-These labs are designed to help you plan, test and validate your deployment and management of desktops running Windows 10 Enterprise and Office 365 ProPlus. The labs cover the steps and tools outlined in the Desktop Deployment wheel, spanning System Center Configuration Manager, Windows Analytics, Office Customization Tool, OneDrive, Windows Autopilot and more.
+These labs are designed to help you plan, test and validate your deployment and management of desktops running Windows 10 Enterprise and Office 365 ProPlus. The labs cover the steps and tools outlined in the Desktop Deployment wheel, spanning System Center Configuration Manager, Desktop Analytics, Office Customization Tool, OneDrive, Windows Autopilot and more.
 
 As part of the [Desktop Deployment](http://www.aka.ms/howtoshift) process for Windows 10 and Office 365 ProPlus, building a sandboxed or isolated lab environment is the recommended starting point when you begin to explore deployment tool updates and test your deployment-related automation.
 
@@ -56,7 +56,7 @@ Detailed lab guides take you through multiple deployment and management scenario
 
 ### **Device and App Readiness**
 
-  - Windows Analytics
+  - Desktop Analytics
   - Enterprise Mode and the Enterprise Mode Site List for Internet Explorer
 
 ### **Directory and Network Readiness**
