@@ -69,8 +69,6 @@ Refine your query by selecting the "+" or "-" buttons on the values that you wan
 
 The filter selections are added as additional query elements and the results are updated accordingly.
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-advancedhunting-belowfoldlink)
-
 ## Related topics
 - [Learn the query language](advanced-hunting-language-overview.md)
 - [Use shared queries](advanced-hunting-shared-queries.md)

@@ -88,9 +88,6 @@ ProcessCreationEvents
 | extend CanonicalCommandLine=replace("\"", "", ProcessCommandLine)
 | where CanonicalCommandLine contains "stop" and CanonicalCommandLine contains "MpsSvc" 
 ```
-
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-bestpractices-belowfoldlink)
-
 ## Related topics
 - [Proactively hunt for threats](advanced-hunting.md)
 - [Learn the query language](advanced-hunting-language-overview.md)

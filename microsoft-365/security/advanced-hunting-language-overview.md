@@ -127,9 +127,6 @@ The **Get started** section provides a few simple queries using commonly used op
 
 For more information on Kusto query language and supported operators, see  [Query Language](https://docs.microsoft.com/en-us/azure/kusto/query/).
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-advancedhunting-belowfoldlink)
-
-
 ## Related topics
 - [Proactively hunt for threats](advanced-hunting.md)
 - [Use shared queries](advanced-hunting-shared-queries.md)

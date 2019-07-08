@@ -162,10 +162,6 @@ To effectively build queries that span multiple tables, you need to understand t
 | SenderUpn | string | Sender User Principal Name (UPN), if the sender is an Office 365 account |
 | Sha256 | string | SHA-256 hash of the file |
 
-
-
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-advancedhuntingref-belowfoldlink)        
-
 ## Related topics
 - [Proactively hunt for threats](advanced-hunting.md)
 - [Learn the query language](advanced-hunting-language-overview.md)

@@ -51,6 +51,3 @@ The following tables comprise the data schema in advanced hunting:
 - [Understand the data columns](advanced-hunting-column-reference.md)
 - [Find miscellaneous events](advanced-hunting-misc-events.md)
 - [Apply query best practices](advanced-hunting-best-practices.md)
-
-
-
