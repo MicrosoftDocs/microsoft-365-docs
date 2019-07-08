@@ -38,14 +38,13 @@ The following best practices serve as a guideline of query performance best prac
 
 ## Query tips and pitfalls
 
-### Unique Process IDs
-Process IDs are recycled in Windows and reused for new processes and therefore can't serve as a unique identifier for a specific process.
+### Using process IDs
+Process IDs (PIDs) are recycled in Windows and reused for new processes and therefore can't serve as a unique identifier for a specific process.
 To address this issue, Microsoft Defender ATP created the time process. To get a unique identifier for a process on a specific machine, use the process ID together with the process creation time.
 
+So, when you join data based on a specific process or summarize data for each process, you'll need to use a machine identifier (either `MachineId` or `ComputerName`), a process ID (`ProcessId` or `InitiatingProcessId`) and the process creation time (`ProcessCreationTime` or `InitiatingProcessCreationTime`)
 
-So, when you join data based on a specific process or summarize data for each process, you'll need to use a machine identifier (either MachineId or ComputerName), a process ID (ProcessId or InitiatingProcessId) and the process creation time (ProcessCreationTime or InitiatingProcessCreationTime)
-
-The following example query is created to find processes that access more than 10 IP addresses over port 445 (SMB) - possibly scanning for file shares.
+The following example query is created to find processes that access more than 10 IP addresses over port 445 (SMB), possibly scanning for file shares.
 
 Example query:
 ```
@@ -55,9 +54,9 @@ NetworkCommunicationEvents
 | where RemoteIPCount > 10
 ```
 
-The query summarizes by both InitiatingProcessId and InitiatingProcessCreationTime - to make sure the query looks at a single process, and not mixing multiple processes with the same process ID.
+The query summarizes by both `InitiatingProcessId` and `InitiatingProcessCreationTime` so that it looks at a single process, without mixing multiple processes with the same process ID.
 
-### Using command line queries
+### Using command lines
 
 Command lines can vary. When applicable, filter on file names and do fuzzy matching.
 

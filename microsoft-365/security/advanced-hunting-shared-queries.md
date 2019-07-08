@@ -22,7 +22,6 @@ ms.topic: article
 **Applies to**:
 - Microsoft 365 security center
 
-## Use shared queries
 Shared queries are predefined queries that enable you to quickly pursue specific threat hunting scenarios without having to learn the query language in depth.
 
 ![Image of shared queries](images/atp-advanced-hunting-shared-queries.png)
