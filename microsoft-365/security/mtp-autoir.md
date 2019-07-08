@@ -23,7 +23,7 @@ ms.topic: conceptual
 **Applies to**:
 - Microsoft 365
 
-With automated investigation and remediation (AIR) capabilities in Microsoft 365, you can set up alerts that trigger investigations automatically, or start an automated investigation from a report in the Microsoft 365 security center. Once an investigation is underway, you can monitor progress, approve pending actions, and review the results.
+With automated investigation and remediation (AIR) capabilities in Microsoft 365, you can set up alerts that trigger investigations automatically, or start an automated investigation from a report in the Microsoft 365 security center. Once an investigation is underway, you can monitor progress, approve pending actions, and review the results. This article describes how to use AIR to automatically investigate and remediate cyber security issues in your organization.
 
 ## Configure alerts to trigger automated investigations
 
@@ -44,3 +44,7 @@ WORK IN PROGRESS
 ## Review the results and take action
 
 ## Next steps
+
+[Analyze automated investigations](analyze-autoir.md)
+
+[Learn about the automated investigations dashboard](autoir-dashboard-overview.md)
