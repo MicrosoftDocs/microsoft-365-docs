@@ -23,7 +23,7 @@ ms.topic: conceptual
 **Applies to**:
 - Microsoft 365
 
-With automated investigation and remediation (AIR) capabilities in Microsoft 365, you can set up alerts that trigger investigations automatically, or start an automated investigation from a report in the Microsoft 365 security center. With security playbooks based on industry best practices, AIR enables your security operations team to mitigate threats and address issues quickly and effectively.
+With automated investigation and remediation (AIR) capabilities in Microsoft 365, you can set up alerts that trigger investigations automatically, or start an automated investigation from a report in the Microsoft 365 security center. Once an investigation is underway, you can monitor progress, approve pending actions, and review the results.
 
 ## Configure alerts to trigger automated investigations
 
