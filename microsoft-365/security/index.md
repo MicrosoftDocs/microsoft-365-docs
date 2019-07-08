@@ -19,19 +19,17 @@ ms.topic: conceptual
 
 # Microsoft 365 security
 
-The threat landscape is growing in complexity and attacks are increasingly becoming more sophisticated. Malicious attackers use a wide set of tools in their arsenal to find vulnerabilities across an expanding attack surface. 
+The threat landscape is growing in scale and sophistication of threats. Malicious attackers use variety of tools to find vulnerabilities across an expanding attack surface. 
 
-Protecting against these types of attacks require having visibility across modern security perimeters and a well synchronized defense solution. 
+Securing today’s organization against these types of attacks requires having visibility across multiple attack vectors including identities, endpoints, email, data, and apps and having a well synchronized defense solution.
 
-Microsoft 365 Security is a comprehensive security solution designed to protect enterprise devices, identity, data and applications. 
+Microsoft 365 Security is a comprehensive security solution bringing together powerful security capabilities which enable today’s organizations: 
 
-Bringing together powerful security capabilities, Microsoft Threat Protection enables your organization to:
-
-- **Protect its assets** - Assets are protected from unauthorized users, devices, and applications.
+- **Protect assets** - Assets are protected from unauthorized users, devices, and applications.
 
 - **Coordinate defenses** - Leveraging unparalleled optics, the solution applies signal correlation to group together alerts from across attack surfaces to give you better context on the scope of a threat.
 
-- **Empower your defenders** - By providing visibility into the full scope of a threat, your security defenders are empowered to identify its impact and take appropriate remediation actions.
+- **Empower defenders** - By providing visibility into the full scope of a threat, your security defenders are empowered to identify its impact and take appropriate remediation actions.
 
 Access the power of Microsoft Threat Protection through Microsoft 365 security center.
 
