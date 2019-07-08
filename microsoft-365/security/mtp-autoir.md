@@ -28,9 +28,15 @@ With [automated investigation and remediation](autoir-overview.md) (AIR) capabil
 > [!NOTE]
 > You must be a global administrator, security administrator, security operator, or security reader to perform the tasks described in this article. To learn more, see [Microsoft 365 security center: roles and permissions](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions).
 
-## Configure alerts to trigger automated investigations
+## Set up alerts to trigger automated investigations
 
-As a security ad
+Certain alerts can be set up to trigger automated investigations. For example, you can set up an alert such that if any email messages containing malware are detected after the messages are delivered, in addition to removing the infected messages with [zero-hour auto purge](https://docs.microsoft.com/office365/securitycompliance/zero-hour-auto-purge), an AIR process begins.
+
+1. 
+
+2. 
+
+3. 
 
 ## Start an automated investigation from a report
 
