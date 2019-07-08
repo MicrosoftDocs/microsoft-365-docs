@@ -32,11 +32,11 @@ With [automated investigation and remediation](autoir-overview.md) (AIR) capabil
 
 Certain [alert policies](https://docs.microsoft.com/office365/securitycompliance/alert-policies) can be set up to trigger automated investigations and remediation. For example, you can set up an alert such that if any email messages containing malware are detected after the messages are delivered, in addition to removing the infected messages with [zero-hour auto purge](https://docs.microsoft.com/office365/securitycompliance/zero-hour-auto-purge), an AIR process begins.
 
-1. 
+1. In the Microsoft 365 security center ([https://security.microsoft.com/homepage](https://security.microsoft.com/homepage)), in the navigation pane on the left side, choose **Policies**.
 
-2. 
+2. Under **Alert**, choose **Office 365 alert**. This takes you to the Office 365 Security & Compliance Center.
 
-3. 
+3. In the navigation pane on the left side, choose **Alerts** > **Alert policies**.
 
 ## Start an automated investigation from a report
 
@@ -51,6 +51,10 @@ WORK IN PROGRESS
 WORK IN PROGRESS
 
 ## Review the results and take action
+
+## Learn more about Office 365 and Cloud App Security alert policies
+
+
 
 ## Next steps
 
