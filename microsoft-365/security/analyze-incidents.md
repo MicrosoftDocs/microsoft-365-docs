@@ -1,9 +1,9 @@
 ---
-title: Analyze incidents
+title: Analyze incidents in Microsoft 365 
 description: Analyze incidents related to machines, users, and mailboxes.
 keywords: incident, incidents, machines, devices, users, identities, mail, email, mailbox, investigation, graph, evidence
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,17 +19,20 @@ search.appverid:
 - MET150
 ---
 
-# Analyze incidents
+# Analyze incidents in Microsoft 365
 
-Investigate incidents that affect your network, understand what they mean, and collate evidence to resolve them. 
+Analyze incidents that affect your network, understand what they mean, and collate evidence to resolve them. 
 
-When you investigate an incident, you'll see:
+When you analyze an incident, you'll see:
 - Incident details
 - Incident comments and actions
 - Tabs (alerts, machines, investigations, evidence, graph)
 
 ## Analyze incident details 
 Click an incident to see the **Incident pane**. Select **Open incident page** to see the incident details and related information (alerts, machines, users, mailboxes, investigations, evidence, graph). 
+
+![Image of incident details](images/indicent-details.png)
+
 
 ### Alerts
 You can investigate the alerts and see how they were linked together in an incident. 
@@ -41,14 +44,21 @@ Alerts are grouped into incidents based on the following reasons:
 - Same file - The files associated with the alert are exactly the same
 - Same URL - The URL that triggered the alert is exactly the same
 
+![Image of alert selected in an incident](images/alert-incident.png)
+
 You can also manage an alert and see alert metadata along with other information.
 
 
 ### Machines / Devices 
 You can also investigate the machines that are part of, or related to a given incident. You can do further investigative work and remediation actions within Microsoft 365 security center. 
 
+![Image of machine tab in incident](images/machine-incident.png)
+
 ### Users / Identities
 See users that have been identified to be part of, or related to a given incident. To do further investigative work, selecting the user will open the Microsoft Cloud Apps portal where you can take remediation actions.
+
+![Image of user in incident](images/user-incident.png)
+
 
 ### Mailboxes
 Investigate mail that's been identified to be part of, or related to an incident. To do further investigative work, selecting the mail related alert will open Office 365 Advanced Threat Protection where you can take remediation actions.
@@ -56,12 +66,14 @@ Investigate mail that's been identified to be part of, or related to an incident
 ### Investigations
 Select **Investigations** to see all the automatic investigations launched by the system in response to the incident alerts.
 
+![Image of investigations tab in incident](images/investigations-tab-incident.png)
 
-### Going through the evidence
+## Going through the evidence
 Microsoft Threat Protection automatically investigates all the incidents' supported events and suspicious entities in the alerts, providing you with auto-response and information about the important files, processes, services, and more. This helps quickly detect and block potential threats in the incident. 
 
 Each of the analyzed entities will be marked as infected, remediated, or suspicious. 
 
+![Image of the evidence tab in incidents](images/evidence-tab-incident.png)
 
 ## Visualizing associated cybersecurity threats 
 Microsoft Threat Protection aggregates the threat information into an incident so you can see the patterns and correlations coming in from various data points. You can view such correlation through the incident graph.
@@ -69,7 +81,8 @@ Microsoft Threat Protection aggregates the threat information into an incident s
 ### Incident graph
 The **Graph** tells the story of the cybersecurity attack. For example, it shows you what was the entry point, which indicator of compromise or activity was observed on an entity.
 
+![Image of graph tab in incidents](images/graph-incidents.png)
 
-You can click the circles on the incident graph to view the details of the malicious files, associated file detections, how many instances has there been worldwide, whether it’s been observed in your organization, if so, how many instances.
+You can click the circles on the incident graph to view the details of the malicious files, associated file detections, how many instances has there been worldwide, whether it's been observed in your organization, if so, how many instances.
 
-
+![Image of selected entity in graph](images/selected-entity-incident.png)

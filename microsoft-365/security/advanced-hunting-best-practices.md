@@ -1,39 +1,37 @@
 ---
-title: Advanced hunting best practices in Microsoft Defender ATP
-description: Learn about Advanced hunting best practices such as what filters and keywords to use to effectively query data.
+title: Advanced hunting best practices
+description: Learn about advanced hunting best practices to improve query performance and avoid exhausting resources.
 keywords: advanced hunting, best practices, keyword, filters, atp query, query atp data, intellisense, atp telemetry, events, events telemetry, azure log analytics
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: lomayor
+author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
-ms.topic: conceptual
-ms.date: 04/24/2018
+ms.topic: article
 ---
 
-# Advanced hunting query best practices Microsoft Defender ATP
+# Apply query best practices in advanced hunting
 
-**Applies to:**
+**Applies to**:
+- Microsoft 365 security center
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
-
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-bestpractices-abovefoldlink)
 
 ## Performance best practices
 The following best practices serve as a guideline of query performance best practices and for you to get faster results and be able to run complex queries. 
-- Use time filters first. Azure Kusto is highly optimized to utilize time filters. For more information, see [Azure Kusto](https://docs.microsoft.com/connectors/kusto/).
-- Put filters that are expected to remove most of the data in the beginning of the query, following the time filter.
-- Use 'has' keyword over 'contains' when looking for full tokens.
+- Use time filters first. Ideally, limit your queries to 7 days.
+- Put filters that are expected to remove most of the data in the beginning of the query, right after the time filter.
+- Use the `has` operator over `contains` when looking for full tokens.
 - Use looking in specific column rather than using full text search across all columns.
-- When joining between two tables - choose the table with less rows to be the first one (left-most). 
-- When joining between two tables - project only needed columns from both sides of the join.
+- When joining between two tables, choose the table with less rows to be the first one (left-most). 
+- When joining between two tables, project only needed columns from both sides of the join.
+- When trying new queries, always use `limit` to avoid extremely large result sets or use `count` to assess the size of the result set.
 
 ## Query tips and pitfalls
 
@@ -90,7 +88,15 @@ ProcessCreationEvents
 | where CanonicalCommandLine contains "stop" and CanonicalCommandLine contains "MpsSvc" 
 ```
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-bestpractices-belowfoldlink)        
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-bestpractices-belowfoldlink)
+
+## Related topics
+- [Proactively hunt for threats](advanced-hunting.md)
+- [Learn the query language](advanced-hunting-language-overview.md)
+- [Use shared queries](advanced-hunting-shared-queries.md)
+- [Understand the data tables](advanced-hunting-schema-tables.md)
+- [Understand the data columns](advanced-hunting-column-reference.md)
+- [Find miscellaneous events](advanced-hunting-misc-events.md)
 
 
 

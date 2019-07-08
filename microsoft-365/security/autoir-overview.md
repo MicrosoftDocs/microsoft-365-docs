@@ -1,90 +1,126 @@
 ---
-title: Automated investigations overview
-description: View the list of automated investigations, its status, detection source and other details.
+title: Microsoft 365 automated investigations overview
+description: Get an overview of automated investigations, including active investigations, status, detection source, and other details.
 keywords: automated, investigation, detection, source, threat types, id, tags, machines, duration, filter export
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: deniseb
+author: denisebmsft
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: 
+- M365-security-compliance 
 ms.topic: conceptual
 ---
 
 # Automated investigations overview
 
-The Automated investigation feature leverages various inspection algorithms, and processes used by analysts (such as playbooks) to examine alerts and take immediate remediation action to resolve breaches. This significantly reduces alert volume, allowing security operations experts to focus on more sophisticated threats and other high value initiatives. 
+**Applies to**:
+- Microsoft 365
 
-The Automated investigations list shows all the investigations that have been initiated automatically and shows other details such as its status, detection source, and the date for when the investigation was initiated.
+Automated investigation and remediation (AIR) features in Microsoft 365 enable your security operations team to operate more effectively and efficiently. Automated investigation begins when an alert is triggered or when an investigation is initiated by a security analyst. The investigation results inform remediation, which can be done automatically or upon approval by your security operations team. 
 
-## Understand the Automated investigation flow
+AIR features leverage various inspection algorithms, processes, and best practices that are used by security analysts. AIR significantly reduces the volume of alerts your security team must address manually, allowing your security operations team to focus on more sophisticated threats and other high-value initiatives. 
 
-### How the Automated investigation starts
+## The automated investigation and remediation flow
 
-## Alerts
+|Phase    |What happens  |
+|---------|---------|
+|[Automated investigation begins](#automated-investigation-begins)     |An automated investigation begins when one of the following occurs:<br/>- [An alert triggers an an automated investigation](#an-alert-triggers-an-automated-investigation)<br/>- [A security analyst starts an investigation from an alert or a security report](#an-analyst-starts-an-automated-investigation)          |
+|[Automated investigation runs](#the-automated-investigation-process)     |- Details about the threat and affected entities (user accounts, machines, and so on) are gathered<br/>- [The investigation scope can increase](#automated-investigation-scope-can-increase) if new alerts or entities related to the initial threat emerge         |
+|[Details and results emerge](#details-and-results-of-an-automated-investigation)     |- During and after an automated investigation, details are available<br/>- Automated investigation results inform remediation steps         |
+|[Remediation steps are taken](#remediation-steps) |- Remediation happens automatically or by approval from your security operations team<br/>- [Learn more about how threats are remediated](#how-threats-are-remediated) |
 
-Alerts represent triggers for security operations team workflows for incident response. Prioritizing the right set of alerts for investigation, while making sure no threats are unaddressed is challenging. When investigations into alerts are performed manually, Security Operations teams must hunt and correlate entities (for example, content, devices and users) at risk from threats. Such tasks and workflows are very time consuming and involve multiple tools and systems. With this capability, investigation and response are automated into key security and threat management alerts that trigger your security response playbooks automatically. 
+## Automated investigation begins
 
->[!NOTE]
->Currently, Automated investigation only supports the following: 
-><br>
->**OS versions**
->- Windows 10, version 1709 (OS Build 16299.1085 with [KB4493441](https://support.microsoft.com/en-us/help/4493441/windows-10-update-kb4493441)) or later
->- Windows 10, version 1803 (OS Build 17134.704 with [KB4493464](https://support.microsoft.com/en-us/help/4493464/windows-10-update-kb4493464)) or later
-><br>
->- Later versions of Windows 10 <br>
->
->**Mailbox related alerts**
->- Potentially malicious URL click was detected
->- Email reported by user as phish
->- Email messages containing malware removed after delivery
->- Email messages containing phish URLs removed after delivery
+An automated investigation can begin when one of the following occurs:
+- [An alert triggers an automated investigation](#an-alert-can-trigger-an-automated-investigation); or
+- [An analyst starts an automated investigation from an alert or a security report](#an-analyst-can-start-an-automated-investigation).
 
-The alerts start by analyzing the supported entities from the alert and also runs a generic playbook to see if there is anything else suspicious on the entity. The outcome and details from the investigation is seen in the Automated investigation view.
+### An alert can trigger an automated investigation
 
-### Details of an Automated investigation - NEED TO UPDATE BASED ON REAL UI/UX
+Most often, an automated investigation begins when an alert is triggered. Not every alert will trigger an automated investigation; this depends on how your organization's alert policies are configured. With AIR, several kinds of alerts can be configured to work with security playbooks that define the automated investigation process. Here are just a few examples:
+- Malware is detected on a user's machine
+- A malicious file is detected in email
+- A user account is flagged as compromised
+- ... and other scenarios. 
 
-As the investigation proceeds, you'll be able to view the details of the investigation. Selecting a triggering alert brings you to the investigation details view where you can pivot from the **Investigation graph**, **Alerts**, **Machines**, **Threats**, **Entities**, and **Log** tabs.
+> [!TIP]
+> To view (or set up) alerts, in the Microsoft 365 security center, in the navigation pane, choose **Alerts**.
 
-In the **Alerts** tab, you'll see the alert that started the investigation. 
+### An analyst can start an automated investigation
 
-The **Machines** tab shows where the alert was seen.
+Security analysts can start investigations manually from a report or an alert. The Microsoft 365 security center includes dashboards and reports to help your security operations team stay on top of threat management for your organization. When a security analyst notices a user account or machine is flagged, the analyst can view more details about that user account or machine, and then choose to start an automated investigation.
 
-The **Threats** tab shows the entities that were found to be malicious during the investigation.
+![Security operations dashboard](images/air-secopsdashboard.png)
 
-During an Automated investigation, details about each analyzed entity is categorized in the **Entities** tab. You'll be able to see the determination for each entity type, such as whether it was determined to be malicious, suspicious, or clean.
+For example, suppose that a security analyst notices several active alerts for a machine called *client4*. Selecting **client4** in the **Machines at risk** widget opens a more detailed view. In that view, the security analyst can choose **Initiate Automated Investigation** to start an automated investigation.
 
-The **Log** tab reflects the chronological detailed view of all the investigation actions taken on the alert.
+![Initiate Automated Investigation](images/air-secopsdashboard-detailedmachineview-actions.png)
 
-If there are pending actions on the investigation, the **Pending actions** tab will be displayed where you can approve or reject actions. You can also go to the **Action center** to get an aggregated view all pending actions and manage remediaton actions. It also acts as an audit trail for all Automated investigation actions. 
+## The automated investigation process
 
-### How an Automated investigation expands its scope
+Whether through an alert or by a security analyst, once an automated investigation is triggered, the process begins immediately. The investigation typically includes the following steps:
+- Gather information about the type of threat
+- Determine where the threat came from
+- Identify who in your organization is affected by the threat
+- Find out whether and where other instances of the threat exist in your work environment
+- ... and so on.
 
-While an investigation is running, any other alert generated will be added to an ongoing Automated investigation until that investigation is completed. In addition, if the same threat is seen on other entities, those entities are added to the investigation.
+### Automated investigation scope can increase
 
-If an incriminated entity is seen in elsewhere, the Automated investigation will expand the investigation to include that entity and a generic playbook will start on that entity. 
+While an investigation is running, any other related alerts that are generated are added to an ongoing automated investigation until that investigation is completed. In addition, if the same threat is seen on other entities, those entities are added to the investigation.
+
+If an incriminated entity is seen in elsewhere, the automated investigation will expand the investigation to include that entity, and a general security playbook will run on that entity. 
+
+## Details and results of an automated investigation
+
+During and after an automated investigation, you'll be able to view details of the investigation in a [dashboard](autoir-dashboard-overview.md). Selecting a triggering alert in the [Automated investigations view](autoir-dashboard-overview.md#automated-investigations-view) brings you to the Investigation details view, which includes the **Investigation graph**, **Alerts**, **Machines**, **Threats**, **Entities**, and **Log** tabs.
+
+
+|Tab  |Description  |
+|---------|---------|
+|**Investigation graph** |Provides a visual representation of the investigation, including alerts, users, machines, entities analyzed, and threats found. Select an item on the graph to move to the appropriate tab. |
+|**Alerts**     |Lists any alerts that started or are related to the investigation.         |
+|**Machines**     |Lists any machines included in alerts.         |
+|**Users**     |Lists user accounts included in alerts, along with verdict (such as malicious), user name, display name, and identity in Azure Active Directory.         |
+|**Key findings**     |Lists files, methods, or activities that were identified as malicious during the investigation. Also lists entities involved and status, along with actions taken and links to view more details.  |
+|**Entities** |Lists user activities, files, processes, services, drivers, IP addresses, and persistence methods associated with the investigation. Includes status and findings, such as malicious, remediated, suspicious, and more. |
+|**Log** |Provides a detailed, chronological view of an investigation. Lists all actions taken during the investigation, along with status and start time. |
+|**Pending actions** |Lists remediation actions that are awaiting approval. |
+
+## Remediation steps
+
+Depending on the threat and how AIR is configured for your organization, remediation can occur automatically or only upon approval by your security operations team. Remediation can include:
+- Deleting a malicious file
+- Resetting a user's password
+- Blocking URLs that were identified as malicious
+- Enabling multi-factor authentication for user accounts
+- ... and more.
 
 ### How threats are remediated
 
-Depending on how you set up the entity groups and their level of automation, the Automated investigation will either require user approval (default) or automatically remediate threats.
+Depending on how you set up the entity groups and their level of automation, the automated investigation will either require user approval (default) or automatically remediate threats.
 
 You can configure the following levels of automation:
 
 Automation level | Description
 :---|:---
 Not protected | Machines will not get any automated investigations run on them.
-Semi - require approval for any remediation | This is the default automation level.<br><br>  An approval is needed for any remediation action. 
-Semi - require approval for non-temp folders remediation | An approval is required on files or executables that are not in temporary folders. <br><br> Files or executables in temporary folders, such as the user's download folder or the user's temp folder, will automatically be remediated if needed.
-Semi - require approval for core folders remediation | An approval is required on files or executables that are in the operating system directories such as Windows folder and Program files folder. <br><br> Files or executables in all other folders will  automatically be remediated if needed.
+Semi - require approval for any remediation | This is the default automation level.<p>An approval is needed for any remediation action. 
+Semi - require approval for non-temp folders remediation | An approval is required on files or executables that are not in temporary folders. <p> Files or executables in temporary folders, such as the user's download folder or the user's temp folder, will automatically be remediated if needed.
+Semi - require approval for core folders remediation | An approval is required on files or executables that are in the operating system directories such as Windows folder and Program files folder. <p> Files or executables in all other folders will  automatically be remediated if needed.
 Full - remediate threats automatically | All remediation actions will be performed automatically.
-
 
 The default group is configured for semi-automatic remediation. This means that any malicious entity that needs to be remediated requires an approval and the investigation is added to the **Pending actions** section, this can be changed to fully automatic so that no user approval is needed. 
 
 When a pending action is approved, the entity is then remediated and this new state is reflected in the **Entities** tab of the investigation.
+
+## Next steps
+
+[Learn about the automated investigations dashboard](autoir-dashboard-overview.md)

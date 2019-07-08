@@ -1,36 +1,34 @@
 ---
-title: Advanced hunting reference in Microsoft Defender ATP
-description: Learn about Advanced hunting table reference such as column name, data type, and description
+title: Microsoft 365 advanced hunting data columns
+description: Learn about columns used across different tables in the advanced hunting schema
 keywords: advanced hunting, atp query, query atp data, intellisense, atp telemetry, events, events telemetry, azure log analytics, column name, data type, description
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: lomayor
+author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 06/01/2018
+ms.date: 07/15/2019
 ---
 
-# Advanced hunting reference in Microsoft Defender ATP
+# Understand the data columns in the advanced hunting schema
 
-**Applies to:**
+**Applies to**:
+- Microsoft 365 security center
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
-
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)
-
-## Advanced hunting column reference
 To effectively build queries that span multiple tables, you need to understand the columns in the Advanced hunting schema. The following table lists all the available columns, along with their data types and descriptions. This information is also available in the schema representation in the Advanced hunting screen.
 
-| Column name | Data type | Description
-:---|:--- |:---                                                            
+## Columns holding Windows data ##
+
+| Column name | Data type | Description |
+|---|---|---|
 | AccountDomain | string | Domain of the account |
 | AccountName | string | User name of the account |
 | AccountSid | string | Security Identifier (SID) of the account |
@@ -120,8 +118,58 @@ To effectively build queries that span multiple tables, you need to understand t
 | Table | string | Table that contains the details of the event |
 | TunnelingType | string | Tunneling protocol, if the interface is used for this purpose, for example 6to4, Teredo, ISATAP, PPTP, SSTP, and SSH |
 
+>**DRAFT NOTE** Adding Office columns. Deduplication and sorting TBD. Will possibly add table info.
+
+## Columns holding Office 365 data ## 
+
+| Column name | Data type | Description |
+|---|---|---|
+| AttachmentCount | int | Number of attachments in the email |
+| DeliveryCustomFolder | string | Custom folder in the recipient mailbox where the email was delivered, if applicable |
+| DeliveryDestination | string | Location where the email was delivered: Inbox/Folder, On-premises/External, Junk, Quarantine, Failed/Dropped, Deleted items |
+| DeliveryStatus | string | Delivery status of the email: Delivered, Junked, Blocked, or Replaced |
+| EmailCampaignId | string | Fingerprint identifying emails from the same attack campaign based on heuristic analysis of email content |
+| EmailDirection | string | Direction of the email relative to your network:  Inbound, Outbound, Intra-org  |
+| EmailKey | string | Unique identifier for distinct recipients of the email. This is a combination of the network message ID and the recipient address. |
+| EmailLanguage | string | Detected language of the email content |
+| EmailReceivedTime | datetime | Date and time the email was received in UTC |
+| EmailSubject | string | Subject of the email |
+| FileName | string | Name of the file |
+| FileType | string | File type based on file extension name |
+| FinalEmailAction | string | Final action taken on the email based on filter verdict, policies, and user actions:  Moved to Junk folder, Added X-header, Modified subject, Redirected, Deleted, Quarantined, No action, Added Bcc recipient, Replaced attachment |
+| FinalEmailActionPolicy | string | Action policy that took effect: Antispam high-confidence, Antispam (general), Antispam bulk mail, Antispam phishing, Anti-phishing domain impersonation, Anti-phishing user impersonation, Anti-phishing spoof, Anti-phishing graph impersonation, Antimalware, Safe Attachments, Enterprise Transport Rules (ETR), Malware ZAP, Phishing ZAP, Spam ZAP |
+| FinalEmailActionPolicyGuid | string | Unique identifier for the policy that determined the final mail action |
+| InternetMessageId | string | Unique identifier for the email on the internet |
+| LinkCount | int | Number of embedded links in the email |
+| LinkUrl	| string | URL of the embedded link |
+| MalwareDetectionMethod | string | Method used to detect malware in the email: Antivirus, File reputation, Safe Attachments detonation |
+| MalwareFilterVerdict | string | Verding of the email filtering stack on whether the email contains malaware: Malware found, No malware |
+| NetworkMessageId | string | Unique identifier for the email within the organization |
+| PhishingDetectionMethod | string | Method used to detect the email as a phishing email: URL reputation, Safe Links, Machine learning, Advanced phishing filter, Intra-org spoofing, Cross-org spoofing, Domain impersonation, User impersonation, Brand impersonation |
+| PhishingFilterVerdict | string | Verdict of the email filtering stack on whether the email is phishing: "Suspicious, possible phishing" or "Phishing" |
+| RecepientEmailAddress | string | Email address of the recipient |
+| RecipientCloudSid | string | Cloud security identifier (SID) of the email recipient |
+| RecipientOnPremiseSid | string | On-premises security identifier (SID) of the email recipient |
+| RecipientUpn | string | User Principal Name (UPN) of the email recipient |
+| SenderCloudSid | string | Sender cloud security identifier (SID), if the sender is an Office 365 account |
+| SenderFromAddress | string | Sender email address in the FROM header |
+| SenderFromDomain | string | Sender domain in the FROM header |
+| SenderIpv4 | string | IPv4 address of the last detected mail server |
+| SenderIpv6 | string | IPv6 address of the last detected mail server |
+| SenderMailFromAddress | string | Sender email address in the MAIL FROM header |
+| SenderMailFromDomain | string | Sender domain in the MAIL FROM header |
+| SenderOnPremisesSid | string | Sender on-premises security identifier (SID), if the sender is an Office 365 account |
+| SenderUpn | string | Sender User Principal Name (UPN), if the sender is an Office 365 account |
+| Sha256 | string | SHA-256 hash of the file |
+
+
+
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-advancedhuntingref-belowfoldlink)        
 
 ## Related topics
-- [Query data using Advanced hunting](advanced-hunting.md)
-- [Advanced hunting query language best practices](advanced-hunting-best-practices.md)
+- [Proactively hunt for threats](advanced-hunting.md)
+- [Learn the query language](advanced-hunting-language-overview.md)
+- [Use shared queries](advanced-hunting-shared-queries.md)
+- [Understand the data tables](advanced-hunting-schema-tables.md)
+- [Find miscellaneous events](advanced-hunting-misc-events.md)
+- [Apply query best practices](advanced-hunting-best-practices.md)

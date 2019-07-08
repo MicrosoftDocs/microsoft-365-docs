@@ -1,9 +1,9 @@
 ---
-title: Incident queue overview 
+title: Microsoft 365 incident queue 
 description: Learn how to navigate the incident queue to manage incidents in Microsoft 365 security center
-keywords: 
+keywords: incident, queue, overview, devices, identities, mailbox, email, incidents
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,17 +19,9 @@ search.appverid:
 - MET150
 ---
 
-# Incident queue overview
+# Incident queue in Microsoft 365
 
 The **Incidents queue** shows a collection of incidents that were flagged from across devices, identities, and mailboxes. It helps you sort through incidents to prioritize and create an informed cybersecurity response decision.
-
-
-## Investigation experience
-Depending on the entity you're investigating, you'll be able to probe into the details of an incident:
-
-- **Devices** - You'll remain in Microsoft 365 security center. You can investigate and take remediation actions from within the portal.
-- **Identities** - Selecting an incident related to a user will open Microsoft Cloud App Security. Further remediation actions must be done in the Microsoft Cloud App portal.
-- **Mailboxes** - Selecting an incident related to mail will open Office 365 Advanced Threat Protection. Further remediation actions must be done in the Office 365 Advanced Threat Protection portal.
 
 
 By default, the queue in Microsoft 365 security center displays incidents seen in the last 30 days, with the most recent incident showing at the top of the list, helping you see the most recent incidents first.
@@ -44,6 +36,9 @@ On the top navigation you can:
 - Batch-select the incidents to assign 
 - Navigate between pages
 - Apply filters
+
+
+![Image of incidents queue](images/incidents-queue.png)
 
 
 ## Sort and filter the incidents queue

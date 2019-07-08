@@ -1,40 +1,30 @@
 ---
-title: Analyze automated investigations
+title: Analyze automated investigations in Microsoft 365
 description: View the details of an Automated investigation to see information such as the investigation graph, alerts associated with the investigation, and other information
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: deniseb
+author: denisebmsft
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: 
+- M365-security-compliance 
 ms.topic: conceptual
 ---
 
 # Analyze automated investigations - align this with UI/UX
 
-You can view the details of an Automated investigation to see information such as the investigation graph, alerts associated with the investigation, the machine that was investigated, and other information.
+**Applies to**:
+- Microsoft 365
+
+You can view the details of an automated investigation to see information such as the investigation graph, alerts associated with the investigation, the machine that was investigated, and other information.
 
 In this view, you'll see the name of the investigation, when it started and ended. 
-
-
-
-The progress ring shows two status indicators:
-- Orange ring - shows the pending portion of the investigation
-- Green ring - shows the running time portion of the investigation
-
-
-
-In the example image, the automated investigation started on 10:26:59 AM and ended on 10:56:26 AM. Therefore, the entire investigation was running for 29 minutes and 27 seconds. 
-
-The pending time of 16 minutes and 51 seconds reflects two possible pending states: pending for asset (for example, the device might have disconnected from the network) or pending for approval. 
-
-From this view, you can also view and add comments and tags about the investigation.
 
 ### Investigation page
 The investigation page gives you a quick summary on the status, alert severity, category, and detection source.
