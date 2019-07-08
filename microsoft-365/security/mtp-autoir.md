@@ -30,7 +30,7 @@ With [automated investigation and remediation](autoir-overview.md) (AIR) capabil
 
 ## Set up alerts to trigger automated investigations
 
-Certain alerts can be set up to trigger automated investigations. For example, you can set up an alert such that if any email messages containing malware are detected after the messages are delivered, in addition to removing the infected messages with [zero-hour auto purge](https://docs.microsoft.com/office365/securitycompliance/zero-hour-auto-purge), an AIR process begins.
+Certain [alert policies](https://docs.microsoft.com/office365/securitycompliance/alert-policies) can be set up to trigger automated investigations and remediation. For example, you can set up an alert such that if any email messages containing malware are detected after the messages are delivered, in addition to removing the infected messages with [zero-hour auto purge](https://docs.microsoft.com/office365/securitycompliance/zero-hour-auto-purge), an AIR process begins.
 
 1. 
 
