@@ -38,6 +38,10 @@ Certain [alert policies](https://docs.microsoft.com/office365/securitycompliance
 
 3. In the navigation pane on the left side, choose **Alerts** > **Alert policies**.
 
+4. Review the list of existing policies, especially your [default alert policies](https://docs.microsoft.com/office365/securitycompliance/alert-policies?#default-alert-policies). (Some default policies are set up to trigger AIR.)
+
+5. If necessary, add an alert policy. (Choose **+ New alert policy**.) To get help with this, see [Alert policies](https://docs.microsoft.com/office365/securitycompliance/alert-policies).
+
 ## Start an automated investigation from a report
 
 WORK IN PROGRESS
