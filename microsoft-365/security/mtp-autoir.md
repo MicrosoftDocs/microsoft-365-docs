@@ -27,12 +27,20 @@ With automated investigation and remediation (AIR) capabilities in Microsoft 365
 
 ## Configure alerts to trigger automated investigations
 
+WORK IN PROGRESS
+
 ## Start an automated investigation from a report
+
+WORK IN PROGRESS
 
 ## Monitor progress of investigations
 
+WORK IN PROGRESS
+
 ## Approve pending actions
 
-## Review the results
+WORK IN PROGRESS
 
-## 
+## Review the results and take action
+
+## Next steps
