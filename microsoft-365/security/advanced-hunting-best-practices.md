@@ -22,7 +22,6 @@ ms.topic: article
 **Applies to**:
 - Microsoft 365 security center
 
-
 ## Performance best practices
 The following best practices serve as a guideline of query performance best practices and for you to get faster results and be able to run complex queries. 
 - When trying new queries, always use `limit` to avoid extremely large result sets or use `count` to assess the size of the result set.
@@ -30,7 +29,7 @@ The following best practices serve as a guideline of query performance best prac
 - Put filters that are expected to remove most of the data in the beginning of the query, right after the time filter.
 - Use the `has` operator over `contains` when looking for full tokens.
 - Use looking in specific column rather than using full text search across all columns.
-- When joining between two tables, choose the table with less rows to be the first one (left-most.
+- When joining between two tables, specify the table with fewer rows first.
 - When joining between two tables, project only needed columns from both sides of the join.
 
 >[!Tip]
