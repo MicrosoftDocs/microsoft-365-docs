@@ -48,7 +48,7 @@ Take advantage of the following functionality to write queries faster:
 - **Autosuggest** — as you write queries, advanced hunting provides suggestions.. 
 - **Schema reference** — a schema reference that includes the list of tables and their columns is provided next to your working area. For more information, hover over an item. Double-click an item to insert it to the query editor.
 
-## Drill-down from query results
+## Drilldown from query results
 To view more information about entities, such as machines, files, users, IP addresses, and URLs, in your query results, simply click the entity identifier. This opens a detailed profile page for the selected entity in Microsoft Defender Security Center.
 
 ## Tweak your queries from the results
@@ -78,6 +78,3 @@ The filter selections are added as additional query elements and the results are
 - [Understand the data columns](advanced-hunting-column-reference.md)
 - [Find miscellaneous events](advanced-hunting-misc-events.md)
 - [Apply query best practices](advanced-hunting-best-practices.md)
-
-
-

@@ -56,7 +56,7 @@ These steps guide you on modifying and overwriting an existing query.
 ### Delete a query
 1. Right-click on a query you want to delete.
 
-    ![Image of delete query](images/atp-delete-query.png)
+    ![Image of delete query](images/atp_advanced_hunting_delete_rename.png)
 
 2. Select **Delete** and confirm that you want to delete the query.
 
@@ -74,6 +74,3 @@ Check out the [Advanced hunting repository](https://github.com/Microsoft/Windows
 - [Understand the data columns](advanced-hunting-column-reference.md)
 - [Find miscellaneous events](advanced-hunting-misc-events.md)
 - [Apply query best practices](advanced-hunting-best-practices.md)
-
-
-
