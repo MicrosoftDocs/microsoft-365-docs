@@ -23,8 +23,16 @@ ms.topic: conceptual
 **Applies to**:
 - Microsoft 365
 
-The Microsoft 365 security platform has a wide breadth of visibility on alerts generated across devices, identities, and mailboxes. With this kind of optics, the service generates a multitude of alerts. The volume of alerts generated can be challenging for a typical security operations team to individually address.
+With automated investigation and remediation (AIR) capabilities in Microsoft 365, you can set up alerts that trigger investigations automatically, or start an automated investigation from a report in the Microsoft 365 security center. With security playbooks based on industry best practices, AIR enables your security operations team to mitigate threats and address issues quickly and effectively.
 
-To address this challenge, Microsoft 365 Security uses Automated investigations to significantly reduce the volume of alerts that need to be investigated individually.
+## Configure alerts to trigger automated investigations
 
-## In this section
+## Start an automated investigation from a report
+
+## Monitor progress of investigations
+
+## Approve pending actions
+
+## Review the results
+
+## 
