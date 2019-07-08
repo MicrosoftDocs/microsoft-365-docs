@@ -22,10 +22,10 @@ ms.topic: conceptual
 **Applies to**:
 - Microsoft 365
 
-In the Microsoft 365 security center, you can view detailed information about automated investigations by using the [Active automated investigations widget](#the-active-automated-investigations-widget), the [Automated investigations view](#the-automated-investigations-view), and other available investigation reports. 
+In the Microsoft 365 security center, you can view detailed information about automated investigations by using the [Active automated investigations widget](#the-active-automated-investigations-widget), the [Automated investigations view](#the-automated-investigations-view), and other reports. 
 
 >[!NOTE]
->If your organization has implemented role-based access to manage portal access, only authorized users or user groups who have permission to view investigation data. 
+>If your organization has implemented role-based access to manage portal access, only authorized users or user groups who have permission to view investigation data. To learn more, see [Microsoft 365 security center: roles and permissions](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions). 
 
 ## The Active automated investigations widget
 
