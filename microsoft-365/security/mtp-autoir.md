@@ -105,7 +105,7 @@ Although many steps in AIR are automated, some actions require approval from som
 
     ![Pending actions](images/air-2pendingactions.png)
 
-2. Select an item to open a flyout, where you can view more details about the incident and proposed action, as well as approve (or reject) the pending action.
+2. Select an item to open a flyout, where you can view more details about the incident and proposed action. Then, choose **Approve** (or **Reject**).
 
 ## Review the results and take action
 
