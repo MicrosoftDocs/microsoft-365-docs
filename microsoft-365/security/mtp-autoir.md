@@ -99,9 +99,13 @@ When you have one or more investigations in progress, you can monitor status and
 
 Although many steps in AIR are automated, some actions require approval from someone on your security operations team. 
 
-Example: 
+**Example**: Review and approve a pending action 
 
-1. 
+1. On the **Investigation details** page, select the **Pending actions** tab.
+
+    ![Pending actions](images/air-2pendingactions.png)
+
+2. Select an item to open a flyout, where you can view more details about the incident and proposed action, as well as approve (or reject) the pending action.
 
 ## Review the results and take action
 
