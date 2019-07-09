@@ -48,7 +48,17 @@ To review (and if necessary, add) alert policies, follow these steps:
 
 When you use a view in a dashboard, such as a widget, you can click an item to view more details. Depending on the entity, whether an investigation is already underway, and whether starting an automated investigation is possible, you'll see an **Initiate Automated Investigation** button across the top of the report you're viewing. Click that button to trigger AIR.
 
-Example: Suppo
+Example: Suppose that you are viewing a dashboard that looks like this:
+
+![Security dashboard](images/air-securitydashboard.png)
+
+Suppose that you're interested in learning more about machines listed in the **Machines at risk** widget.
+
+![Machines at risk](images/air-machinesatrisk.png)
+
+In the widget, you can select an item, such as client5. A report opens with more details about that machine, including alerts, incidents, and recommendations.
+
+
 
 ## Monitor progress of investigations
 
