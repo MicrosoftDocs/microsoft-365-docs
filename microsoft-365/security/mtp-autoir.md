@@ -97,7 +97,11 @@ When you have one or more investigations in progress, you can monitor status and
 
 ## Approve pending actions
 
-WORK IN PROGRESS
+Although many steps in AIR are automated, some actions require approval from someone on your security operations team. 
+
+Example: 
+
+1. 
 
 ## Review the results and take action
 
