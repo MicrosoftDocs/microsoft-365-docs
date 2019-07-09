@@ -14,6 +14,11 @@ ms.localizationpriority: normal
 
 This topic lists new and updated topics in the [Microsoft Managed Desktop documentation](index.yml).
 
+## July 2019
+New or changed topic | Description
+--- | ---
+[Working with Microsoft Consulting Services](service-description/apps-mcs.md) | Updated topic
+
 ## June 2019
 New or changed topic | Description
 --- | ---
