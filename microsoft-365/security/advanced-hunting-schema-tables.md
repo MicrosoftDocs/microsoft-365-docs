@@ -38,9 +38,9 @@ The following tables comprise the data schema in advanced hunting:
 | **LogonEvents** | Login and other authentication events | 
 | **ImageLoadEvents** | DLL loading events |  
 | **MiscEvents** | Multiple event types, including events triggered by security controls such as Windows Defender Antivirus and exploit protection |
-| **Office365EmailEvents** | Office 365 email events, including email delivery and blocking events |
-| **Office365AttachmentsInfo** | Information about file attached to Office 365 emails |
-| **Office365UrlInfo** | Information about URLs in embedded links on Office 365 emails |
+| **EmailEvents** | Office 365 email events, including email delivery and blocking events |
+| **EmailAttachmentInfo** | Information about files attached to Office 365 emails |
+| **EmailUrlInfo** | Information about URLs in embedded links on Office 365 emails |
 
 **DRAFT NOTES expand information including special columns in each table**
 
