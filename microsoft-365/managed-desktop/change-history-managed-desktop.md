@@ -17,7 +17,7 @@ This topic lists new and updated topics in the [Microsoft Managed Desktop docume
 ## July 2019
 New or changed topic | Description
 --- | ---
-[Working with Microsoft Consulting Services](service-description/apps-mcs.md) | Updated topic
+[Working with Microsoft Consulting Services](get-ready/apps-mcs.md) | Updated topic
 
 ## June 2019
 New or changed topic | Description
