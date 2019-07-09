@@ -82,17 +82,16 @@ If an incriminated entity is seen in elsewhere, the automated investigation will
 
 During and after an automated investigation, you'll be able to view details of the investigation in a [dashboard](autoir-dashboard-overview.md). Selecting a triggering alert in the [Automated investigations view](autoir-dashboard-overview.md#automated-investigations-view) brings you to the Investigation details view, which includes the **Investigation graph**, **Alerts**, **Machines**, **Threats**, **Entities**, and **Log** tabs.
 
-
 |Tab  |Description  |
 |---------|---------|
-|**Investigation graph** |Provides a visual representation of the investigation, including alerts, users, machines, entities analyzed, and threats found. Select an item on the graph to move to the appropriate tab. |
-|**Alerts**     |Lists any alerts that started or are related to the investigation.         |
-|**Machines**     |Lists any machines included in alerts.         |
-|**Users**     |Lists user accounts included in alerts, along with verdict (such as malicious), user name, display name, and identity in Azure Active Directory.         |
-|**Key findings**     |Lists files, methods, or activities that were identified as malicious during the investigation. Also lists entities involved and status, along with actions taken and links to view more details.  |
-|**Entities** |Lists user activities, files, processes, services, drivers, IP addresses, and persistence methods associated with the investigation. Includes status and findings, such as malicious, remediated, suspicious, and more. |
-|**Log** |Provides a detailed, chronological view of an investigation. Lists all actions taken during the investigation, along with status and start time. |
-|**Pending actions** |Lists remediation actions that are awaiting approval. |
+|**Investigation graph**     |Provides a visual representation of the investigation. Depicts entities and lists threats found, along with alerts and whether any actions are awaiting approval.         |
+|**Alerts**     |Lists alerts associated with the investigation. Alerts can come from threat protection features on a user's machine, in Office apps, Cloud App Security, and other Microsoft 365 Threat Protection features.          |
+|**Machines** |Lists machines included in the investigation along with remediation level. |
+|**Users** |Lists user accounts included in the investigation, including a threat determination (verdict). | 
+|**Key findings** |Lists results from the investigation along with status and actions taken. |
+|**Entities** |Lists user activities, files, processes, services, drivers, IP addresses, and persistence methods associated with the investigation, along with status and actions taken. |
+|**Log** |Provides a detailed view of all steps taken during the investigation, along with status.  |
+|**Pending actions** |Lists items that require approval to proceed. |
 
 ## Remediation steps
 

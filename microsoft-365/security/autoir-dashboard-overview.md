@@ -57,15 +57,15 @@ The following table describes filtering options you might see in your investigat
 
 |Filter type  |Option  |Description  |
 |---------|---------|---------|
-|Status     |Any         |Shows all automated investigations, regardless of status.         |
+|**Status**     |Any         |Shows all automated investigations, regardless of status.         |
 |     |No threats found         |Shows investigations in which no malicious entities were found.         |
 | |Pending approval |Shows investigations that have one or more actions that require approval, typically from a member of the security operations team. |
 | |Running |Shows investigations that are currently running. |
 | |Waiting for machine|Shows investigations that are currently paused because one or more machines included in the investigations are not available. (For example, a machine might be turned off.) |
 | | Failed   | A problem has interrupted the investigation, preventing it from completing. |
-|Triggering alert |(varies) |The alert or action that triggered the investigation is listed here. If multiple actions triggered investigations, you can select one or more to view details about those investigations. |
-|Detection source|(varies) |Detection sources can include antivirus protection, anti-malware, security & compliance policy violations, and so on. If multiple detection sources are listed, you can select one or more to view details about those investigations.|
-|Entities |Threat     |The category of threat detected during the Automated investigation.         |
+|**Triggering alert** |(varies) |The alert or action that triggered the investigation is listed here. If multiple actions triggered investigations, you can select one or more to view details about those investigations. |
+|**Detection source**|(varies) |Detection sources can include antivirus protection, anti-malware, security & compliance policy violations, and so on. If multiple detection sources are listed, you can select one or more to view details about those investigations.|
+|**Entities** |Threat     |The category of threat detected during the Automated investigation.         |
 | |Tags     |Manually added tags that capture the context of an automated investigation.         |
 | |Machines |Filtering on a specific machine enables you to see other investigations related to the machine.|
 | |Machine groups | Specific machine groups that you might have created.|
