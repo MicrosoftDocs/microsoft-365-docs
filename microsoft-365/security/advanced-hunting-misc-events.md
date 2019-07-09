@@ -1140,7 +1140,18 @@ Exploit protection blocked the launch of a process from a remote, shared file.
 Exploit protection detected a call to the Windows system API.
 ## ExploitGuardWin32SystemCallBlocked (renamed since this is "Audited" in sheet)
 Exploit protection blocked a call to the Windows system API.
-
+## ExploitGuardEafViolationAudited
+Export address filtering (EAF) in exloit protection detected possible exploitation activity
+## ExploitGuardEafViolationBlocked
+Export address filtering (EAF) in exloit protection blocked possible exploitation activity
+## ExploitGuardIafViolationAudited
+Import address filtering (IAF) in exloit protection detected possible exploitation activity
+## ExploitGuardIafViolationBlocked
+Import address filtering (IAF) in exloit protection blocked possible exploitation activity
+## ExploitGuardRopExploitAudited
+Exploit protection detected possible return-object programming (ROP) exploitation
+## ExploitGuardRopExploitBlocked
+Exploit protection blocked possible return-object programming (ROP) exploitation
 
 
 ## Related topics
