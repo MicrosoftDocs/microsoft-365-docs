@@ -104,7 +104,7 @@ Depending on the threat and how AIR is configured for your organization, remedia
 
 ### How threats are remediated
 
-Depending on how you set up the entity groups and their level of automation, the automated investigation will either require user approval (default) or automatically remediate threats.
+Depending on how you set up the entity groups and their level of automation, an automated investigation might either require user approval (this is the default) or  automatically remediate threats.
 
 You can configure the following levels of automation:
 
