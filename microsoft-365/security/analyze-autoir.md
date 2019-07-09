@@ -17,7 +17,7 @@ ms.collection:
 ms.topic: conceptual
 ---
 
-# Analyze automated investigations - align this with UI/UX
+# Analyze automated investigations
 
 **Applies to**:
 - Microsoft 365
@@ -27,6 +27,7 @@ You can view the details of an automated investigation to see information such a
 In this view, you'll see the name of the investigation, when it started and ended. 
 
 ### Investigation page
+
 The investigation page gives you a quick summary on the status, alert severity, category, and detection source.
 
 You'll also have access to the following sections that help you see details of the investigation with finer granularity:
