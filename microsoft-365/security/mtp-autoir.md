@@ -60,7 +60,7 @@ WORK IN PROGRESS
 
 ## Learn more about Office 365 and Cloud App Security alert policies
 
-
+## Learn more about security playbooks
 
 ## Next steps
 
