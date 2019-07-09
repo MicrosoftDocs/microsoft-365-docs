@@ -719,7 +719,7 @@ Event ID: 4
 ## ExploitGuardNonMicrosoftSignedAudited
 
 ### Description
-An image was loaded into a process that is not Microsoft-signed.
+Exploit protection detected the launch of a process from an image file that is not signed by Microsoft.
 
 ### Event capture logic
 Capture all events
@@ -736,7 +736,7 @@ Event ID: 11
 ## ExploitGuardNonMicrosoftSignedBlocked
 
 ### Description
-An non-Microsoft image was prevented from being loaded into a process.
+Exploit protection blocked the launch of a process from an image file that is not signed by Microsoft.
 
 ### Event capture logic
 Capture all events
@@ -1140,6 +1140,8 @@ Exploit protection blocked the launch of a process from a remote, shared file.
 Exploit protection detected a call to the Windows system API.
 ## ExploitGuardWin32SystemCallBlocked (renamed since this is "Audited" in sheet)
 Exploit protection blocked a call to the Windows system API.
+
+
 
 ## Related topics
 - [Proactively hunt for threats](advanced-hunting.md)
