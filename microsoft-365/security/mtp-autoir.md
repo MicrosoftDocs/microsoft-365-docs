@@ -46,7 +46,9 @@ To review (and if necessary, add) alert policies, follow these steps:
 
 ## Start an automated investigation from a report
 
-WORK IN PROGRESS
+When you use a view in a dashboard, such as a widget, you can click an item to view more details. Depending on the entity, whether an investigation is already underway, and whether starting an automated investigation is possible, you'll see an **Initiate Automated Investigation** button across the top of the report you're viewing. Click that button to trigger AIR.
+
+Example: Suppo
 
 ## Monitor progress of investigations
 
