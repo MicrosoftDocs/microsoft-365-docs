@@ -147,7 +147,7 @@ Here is a visual summary of the Identity phase for hybrid identity, with the new
 
 ![](./media/deploy-foundation-infrastructure-non-enterprises/identity-config.png)
  
-The new and highlighted identity elements include:
+The new and highlighted hybrid identity elements include:
  
 |||
 |:------:|:-----|
@@ -162,7 +162,7 @@ Here is a visual summary of the Identity phase for cloud-only identity, with the
 
 ![](./media/deploy-foundation-infrastructure-non-enterprises/identity-config-cloud-only.png)
  
-The new and highlighted identity elements include:
+The new and highlighted cloud-only identity elements include:
  
 |||
 |:------:|:-----|
