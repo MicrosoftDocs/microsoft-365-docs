@@ -108,13 +108,13 @@ Depending on how you set up the entity groups and their level of automation, the
 
 You can configure the following levels of automation:
 
-Automation level | Description
-:---|:---
-Not protected | Machines are not included in any automated investigations.
-Semi - require approval for any remediation | This is the default automation level.<p>An approval is needed for any remediation action. 
-Semi - require approval for non-temp folders remediation | An approval is required on files or executables that are not in temporary folders. <p> Files or executables in temporary folders, such as the user's download folder or the user's temp folder, are automatically remediated if needed.
-Semi - require approval for core folders remediation | An approval is required on files or executables that are in the operating system directories such as Windows folder and Program files folder. <p> Files or executables in all other folders are automatically remediated if needed.
-Full - remediate threats automatically | All remediation actions are performed automatically.
+|Automation level | Description |
+|---|---|
+|Not protected | Machines are not included in any automated investigations.|
+|Semi - require approval for any remediation | This is the default automation level.<p>An approval is needed for any remediation action. |
+|Semi - require approval for non-temp folders remediation  | An approval is required on files or executables that are not in temporary folders. <p> Files or executables in temporary folders, such as the user's download folder or the user's temp folder, are automatically remediated if needed.| 
+|Semi - require approval for core folders remediation | An approval is required on files or executables that are in the operating system directories such as Windows folder and Program files folder. <p> Files or executables in all other folders are automatically remediated if needed.|
+|Full - remediate threats automatically | All remediation actions are performed automatically.|
 
 The default group is configured for semi-automatic remediation. This means that any malicious entity that needs to be remediated requires an approval and the investigation is added to the **Pending actions** section. This can be changed to fully automatic so that no user approval is needed. 
 
