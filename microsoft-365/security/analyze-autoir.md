@@ -41,13 +41,13 @@ Suppose that you have one automated investigation underway, but 11 new alerts. I
 
     ![Security operations dashboard](images/air-secopsdashboard.png)
 
-2. In the **Alerts queue**, in the Investigation state column, look for alerts that have values, such as Unsupported alert type or Unsupported OS.
+2. In the **Alerts queue**, in the **Investigation state** column, look for alerts that have values, such as **Unsupported alert type** or **Unsupported OS**.
 
-    
-    
-     These are alerts for which automated investigation capabilities are not available. Such alerts must be investigated manually.
+    ![unsupported alerts](images/air-alertsqueue.png)
 
-WORK IN PROGRESS
+    These are alerts for which automated investigation capabilities are not available. Such alerts must be investigated manually.
+
+3. 
 
 ## Examine malware
 
