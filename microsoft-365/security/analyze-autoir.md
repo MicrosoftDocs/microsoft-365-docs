@@ -22,16 +22,26 @@ ms.topic: conceptual
 **Applies to**:
 - Microsoft 365
 
-When an automated investigation is underway or has completed, you can view details and results of the investigation. To do that, you can use [the automated investigations dashboard](autoir-dashboard-overview.md). You can also conduct further analysis on entities, alerts, or incidents, and if necessary, engage in [hunting for malware and other threats](hunting.md). 
+When an automated investigation is underway or has completed, you can view details and results of the investigation. To do that, you can use [the automated investigations dashboard](autoir-dashboard-overview.md). You can also conduct further analysis on entities, alerts, or incidents, and see your recommended next steps.
 
 Here are some examples of analysis that can be done with automated investigations in the Microsoft 365 security center:
-- Manually investigate an alert that isn't supported with automated investigation
-- Further examine malware that was detected in email or on a user's machine
+- Investigate an alert that isn't suitable for automated investigation
+- Examine malware that was detected in email or on a user's machine
 - Find out when a user account was compromised
 - Determine whether a URL switched from safe to malicious
 - ... and more.
 
-## 
+## Investigate alerts
+
+WORK IN PROGRESS
+
+## Examine malware
+
+WORK IN PROGRESS
+
+## Review compromised user accounts
+
+WORK IN PROGRESS
 
 ## Next steps
 
