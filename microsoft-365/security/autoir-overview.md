@@ -80,7 +80,7 @@ If an incriminated entity is seen in elsewhere, the automated investigation will
 
 ## Details and results of an automated investigation
 
-During and after an automated investigation, you'll be able to view details of the investigation in a [dashboard](autoir-dashboard-overview.md). Selecting a triggering alert in the [Automated investigations view](autoir-dashboard-overview.md#automated-investigations-view) brings you to the Investigation details view, which includes the **Investigation graph**, **Alerts**, **Machines**, **Threats**, **Entities**, and **Log** tabs.
+During and after an automated investigation, you'll be able to view details of the investigation in a [dashboard](autoir-dashboard-overview.md). Selecting a triggering alert in the [Automated investigations view](autoir-dashboard-overview.md#the-automated-investigations-view) brings you to the Investigation details view, which includes the **Investigation graph**, **Alerts**, **Machines**, **Threats**, **Entities**, and **Log** tabs.
 
 |Tab  |Description  |
 |---------|---------|
