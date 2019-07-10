@@ -47,7 +47,9 @@ Suppose that you have one automated investigation underway, but 11 new alerts. I
 
     These are alerts for which automated investigation capabilities are not available. Such alerts must be investigated manually.
 
-3. 
+3. Select an alert to view more details, including recommended actions.
+
+    ![Unsupported alert details view](images/air-unsupportedalertdetails.png)
 
 ## Examine malware
 
