@@ -40,17 +40,17 @@ Clicking the chart opens the **Automated investigations** view.
 
 ## The Automated investigations view
 
-The **Automated investigations** view provides details about current and previous investigations. 
-
-![automated investigations detailed view](images/air-automated-investigations-list-with-filters.png)
-
-In addition to viewing information about triggering alerts, status, detection source, entities, and duration, you can do any of the following in this view:
+The **Automated investigations** view provides details about current and previous investigations. In addition to viewing information about triggering alerts, status, detection source, entities, and duration, you can do any of the following in this view:
 - Use filters to focus on specific information
 - Export results to a file in .csv format
 - Choose which columns to include in the report
 - Select a value to see more detailed information
 - Navigate to additional charts or views
 - ...and more.
+
+![automated investigations detailed view](images/air-automated-investigations-list-with-filters.png)
+
+Selecting an item, such as a **Triggering alert**, opens the **Investigation details** page.
 
 ## The Investigation details page
 
