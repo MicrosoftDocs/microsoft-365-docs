@@ -41,15 +41,20 @@ Suppose that you have one automated investigation underway, but 11 new alerts. I
 
     ![Security operations dashboard](images/air-secopsdashboard.png)
 
-2. In the **Alerts queue**, in the **Investigation state** column, look for alerts that have values, such as **Unsupported alert type** or **Unsupported OS**.
+2. In the **Alerts queue**, in the **Investigation state** column, look for alerts that have values, such as **Unsupported alert type** or **Unsupported OS**. These are alerts for which automated investigation capabilities are not available. Such alerts must be investigated manually.
 
     ![unsupported alerts](images/air-alertsqueue.png)
 
-    These are alerts for which automated investigation capabilities are not available. Such alerts must be investigated manually.
-
-3. Select an alert to view more details, including recommended actions.
+3. Select an alert to view more details, including recommended actions. In the following example, we selected an alert pertaining to a script with suspicious content. 
 
     ![Unsupported alert details view](images/air-unsupportedalertdetails.png)
+
+4. Follow the steps in the **Recommended actions** section for the alert.
+
+5. To explore the alert further, do one of the following:
+    - If the alert is associated with an incident, click its link to view more details about the incident.
+    - If an entity is listed in the **Alert context** pane, click its link to view more details.
+    - Use the **Actions** menu to manage the alert, view a timeline, open the associated incident page, or print details about the alert.
 
 ## Examine malware
 
