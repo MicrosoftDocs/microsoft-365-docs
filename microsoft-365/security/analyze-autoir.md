@@ -51,7 +51,7 @@ Suppose that you have one automated investigation underway, but 11 new alerts. I
 
 4. Follow the steps in the **Recommended actions** section for the alert.
 
-5. To explore the alert further, do one of the following:
+5. To explore the alert further, do any of the following:
    - If the alert is associated with an incident, click its link to view more details about the incident.
    - If an entity is listed in the **Alert context** pane, click its link to view more details.
    - Use the **Actions** menu to manage the alert, view a timeline, open the associated incident page, or print details about the alert.
