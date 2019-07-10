@@ -1,6 +1,6 @@
 ---
-title: Analyze automated investigations in Microsoft 365
-description: View the details of an Automated investigation to see information such as the investigation graph, alerts associated with the investigation, and other information
+title: Analyze alerts, incidents, and automated investigations in Microsoft 365
+description: Conduct analysis on alerts that can't be done with automated investigation. View details about alerts, incidents, and entities, and see your recommended next steps.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ---
 
-# Analyze automated investigations
+# Analyze alerts, incidents, and automated investigations in Microsoft 365
 
 **Applies to**:
 - Microsoft 365
 
-When an automated investigation is underway or has completed, you can view details and results of the investigation. To do that, you can use [the automated investigations dashboard](autoir-dashboard-overview.md). You can also conduct further analysis on entities, alerts, or incidents, and see your recommended next steps.
+When an automated investigation is underway or has completed, you can view details and results of the investigation. To do that, you can use [the automated investigations dashboard](autoir-dashboard-overview.md). You can also conduct further analysis on alerts, incidents, or investigations, including alerts that are not suitable for automated investigation, and see your recommended next steps.
 
 Here are some examples:
 - Investigate an alert that isn't suitable for automated investigation
