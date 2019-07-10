@@ -18,6 +18,9 @@ ms.topic: article
 ---
 
 # Find miscellaneous events in advanced hunting
+>**DRAFT NOTES** 
+>- For MTP, I will simplify this topic into something like "Find security events and other potentially relevant system events" and will focus on providing guidance on the ActionTypes in MiscEvents, e.g. look for `smartscreen`, `antivirus`, `appcontrol`, `scheduledtask`, etc...
+>- A separate, comprehensive reference will be prepared for limited distribution, perhaps under NDA
 
 **Applies to**:
 - Microsoft 365 security center
@@ -1203,6 +1206,5 @@ Interactive logon rights on the machine were granted to a user.
 - [Use shared queries](advanced-hunting-shared-queries.md)
 - [Understand the data tables](advanced-hunting-schema-tables.md)
 - [Understand the data columns](advanced-hunting-column-reference.md)
-- [Find miscellaneous events](advanced-hunting-misc-events.md)
 - [Apply query best practices](advanced-hunting-best-practices.md)
 
