@@ -31,7 +31,7 @@ Here are some examples:
 - Determine whether a URL changed from safe to malicious
 - ... and more.
 
-## Investigate an alert
+## Analyze an alert
 
 **Example**: Investigate an unsupported alert type
 
@@ -54,17 +54,11 @@ Suppose that you have one automated investigation underway, but 11 new alerts. I
 5. To explore the alert further, do any of the following:
    - If the alert is associated with an incident, click its link to view more details about the incident.
    - If an entity is listed in the **Alert context** pane, click its link to view more details.
-   - Use the **Actions** menu to manage the alert, view a timeline, open the associated incident page, or print details about the alert.
+   - Use the **Actions** menu to take next steps, such as managing the alert, viewing a timeline, opening the associated incident page, or printing details about the alert.
 
-## Examine malware
+## Analyze an incident
 
-WORK IN PROGRESS
-
-## Review a compromised user account
-
-WORK IN PROGRESS
-
-
+## Analyze an investigation
 
 ## Next steps
 
