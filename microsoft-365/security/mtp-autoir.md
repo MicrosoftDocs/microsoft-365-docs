@@ -18,7 +18,7 @@ ms.collection:
 ms.topic: conceptual
 ---
 
-# Automatically investigate and remediate issues
+# Automatically investigate and remediate issues in Microsoft 365
 
 **Applies to**:
 - Microsoft 365
