@@ -27,14 +27,11 @@ The Action Center aggregates all actions that require an approval or another act
 
 ![Action Center](images/air-actioncenter.png)
 
-To go to the Action Center, in the Microsoft 365 security center, click the Action Center button.
+To go to the Action Center, in the Microsoft 365 security center, click the Action Center icon.
 
 The action center consists of two main tabs:
-- Pending actions - Displays a list of ongoing investigations that require attention. A recommended action is presented to the analyst, which they can approve or reject.
-- History - Acts as an audit log for:
-	- All actions taken by AutoIR or approved by an analyst with ability to undo actions that support this capability (for example, quarantine file).
-	- All commands ran and remediation actions applied in Live Response with ability to undo actions that support this capability.
-	- Remediation actions applied by Windows Defender AV with ability to undo actions that support this capability.
+- **Pending**: Lists pending actions for current investigations. For example, actions that require approval in order to proceed are listed here. 
+- **History**: Lists previous actions
 
 
 Use the Customize columns drop-down menu to select columns that you'd like to show or hide. 
