@@ -22,14 +22,13 @@ ms.topic: conceptual
 **Applies to**:
 - Microsoft 365
 
-## Overview
+![Security operations dashboard](images/air-secopsdashboard.png)
 
 In the Microsoft 365 security center, you can view detailed information about automated investigation and remediation (AIR) processes at work by using several useful widgets and views, such as:
 - [The Active automated investigations widget](#the-active-automated-investigations-widget)
 - [The Automated investigations view](#the-automated-investigations-view)
 - [The Investigation details page](#the-investigation-details-page)
 
-![Security operations dashboard](images/air-secopsdashboard.png)
 
 ## The Active automated investigations widget
 
