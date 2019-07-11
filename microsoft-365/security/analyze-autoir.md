@@ -35,7 +35,7 @@ Here are some examples:
 
 **Example**: Investigate an unsupported alert type
 
-Suppose that you have one automated investigation underway, but 11 new alerts. It's possible that one or more of your new alerts must be investigated manually. Here's an example of how you might conduct that analysis.
+Suppose that you have one automated investigation underway, but 11 new alerts. Perhaps one or more of your new alerts must be investigated manually. The following steps describe one possible way to analyze the alert.
 
 1. Starting from your security dashboard, click a chart in the **Active alerts** widget. This opens the **Alerts queue**.
 
@@ -57,6 +57,44 @@ Suppose that you have one automated investigation underway, but 11 new alerts. I
    - Use the **Actions** menu to take next steps, such as managing the alert, viewing a timeline, opening the associated incident page, or printing details about the alert.
 
 ## Analyze an incident
+
+**Example**: View details about an incident that is not included in an automated investigation
+
+Suppose that an alert involving a script with suspicious content is triggered, and the alert is not included in an automated investigation. The following steps describe a possible way to analyze the incident.
+
+1. Starting with a view showing details about an alert, if there is an associated incident, click its number.
+
+    ![Alert with associated incident](images/air-alertwithincident.png)
+
+    This opens a detailed view about the incident.
+
+    ![Incident details](images/air-incidentdetails.png)
+
+2. Use the various tabs to view details about the incident. In our example, the **Machines** tab lists two client machines.
+
+    ![Machines included in incident](images/air-incident-machinestab.png)
+
+3. To view more information, select an item. In our example, we selected **client5** to view more information about that machine. 
+
+    ![Machine details](images/air-incident-machinedetails.png)
+
+4. On the details page, you can take certain actions, such as any of the following:
+
+    |Button or Tab |What it does  |
+    |---------|---------|
+    |**Manage Tags**     |         |
+    |**Initiate Automated Investigation**     |         |
+    |**Collect investigation package**     |         |
+    |**Run antivirus scan**     |         |
+    |**Restrict app execution**     |         |
+    |**Isolate machine** | |
+    |**Action center** | |
+    |**Alerts** | |
+    |**Timeline** | |
+    |**Security recommendations** | |
+    |**Software inventory** | |
+    |**Discovered vulnerabilities** | |
+
 
 ## Analyze an investigation
 
