@@ -40,7 +40,8 @@ Similar to other reports in the automated investigation and remediation [dashboa
 
 ### Approve or reject an action
 
-When you visit the Action Center, make sure to approve or reject pending actions. That way, investigations can complete as soon as possible, and remediation steps can be taken. 
+> [!TIP]
+> When you visit the Action Center, make sure to approve or reject pending actions. That way, investigations can complete as soon as possible, and remediation steps can be taken. 
 
 1. In the Action Center, on the **Pending** tab, select an item. This opens a flyout that includes details, links to an associated alert or investigation, and buttons to approve or reject the action. 
 
