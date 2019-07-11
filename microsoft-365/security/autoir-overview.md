@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 automated investigations overview
+title: Overview of automated investigation and remediation in Microsoft 365
 description: Get an overview of automated investigations, including active investigations, status, detection source, and other details.
 keywords: automated, investigation, detection, source, threat types, id, tags, machines, duration, filter export
 search.product: eADQiWindows 10XVcnh
@@ -18,7 +18,7 @@ ms.collection:
 ms.topic: conceptual
 ---
 
-# Automated investigations overview
+# Overview of automated investigation and remediation in Microsoft 365
 
 **Applies to**:
 - Microsoft 365

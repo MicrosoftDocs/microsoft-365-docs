@@ -1,5 +1,5 @@
 ---
-title: Learn about the automated investigations dashboard in Microsoft 365 
+title: Learn about the automated investigation and remediation dashboard in Microsoft 365 
 description: View the list of automated investigations, its status, detection source and other details
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,7 +17,7 @@ ms.collection:
 ms.topic: conceptual
 ---
 
-# Learn about the automated investigations dashboard
+# Learn about the automated investigation and remediation dashboard in Microsoft 365
 
 **Applies to**:
 - Microsoft 365
