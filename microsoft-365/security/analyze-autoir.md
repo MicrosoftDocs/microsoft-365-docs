@@ -70,11 +70,31 @@ Suppose that an alert involving a script with suspicious content is triggered, a
 
     ![Incident details](images/air-incidentdetails.png)
 
-2. Use the various tabs to view details about the incident. In our example, the Machines tab lists two client machines.
+2. Use the various tabs to view details about the incident. In our example, the **Machines** tab lists two client machines.
 
     ![Machines included in incident](images/air-incident-machinestab.png)
 
-3. To view more information, select an item. In our example, we selected client5 to view more information about that machine. 
+3. To view more information, select an item. In our example, we selected **client5** to view more information about that machine. 
+
+    ![Machine details](images/air-incident-machinedetails.png)
+
+4. On the details page, you can take certain actions, such as any of the following:
+
+    |Button or Tab |What it does  |
+    |---------|---------|
+    |**Manage Tags**     |         |
+    |**Initiate Automated Investigation**     |         |
+    |**Collect investigation package**     |         |
+    |**Run antivirus scan**     |         |
+    |**Restrict app execution**     |         |
+    |**Isolate machine** | |
+    |**Action center** | |
+    |**Alerts** | |
+    |**Timeline** | |
+    |**Security recommendations** | |
+    |**Software inventory** | |
+    |**Discovered vulnerabilities** | |
+
 
 ## Analyze an investigation
 
