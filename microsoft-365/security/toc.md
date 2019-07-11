@@ -16,11 +16,11 @@
 
 
 ### [Automated investigation and remediation]()
-#### [Automated investigations overview](autoir-overview.md)
-#### [Automated investigations dashboard](autoir-dashboard-overview.md)
-#### [Automatically investigate and remediate issues](mtp-autoir.md)
-#### [Analyze alerts, incidents, and automated investigations](analyze-autoir.md)
-#### [Manage actions related to automated investigations](autoir-actions.md)
+#### [AIR overview](autoir-overview.md)
+#### [AIR dashboard](autoir-dashboard-overview.md)
+#### [Investigate and remediate issues](mtp-autoir.md)
+#### [Analyze alerts, incidents, and investigations](analyze-autoir.md)
+#### [Manage actions related to investigations](autoir-actions.md)
 
 ### [Advanced hunting]()
 #### [Proactively hunt for threats](advanced-hunting.md)
