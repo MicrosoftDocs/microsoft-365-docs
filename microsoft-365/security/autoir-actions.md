@@ -40,6 +40,9 @@ Similar to other reports in the automated investigation and remediation [dashboa
 - Choose which columns to display in the list
 - Export the list to a file in .csv format 
 
+> [!NOTE]
+> You must be a global administrator, security administrator, security operator, or security reader to perform the tasks described in this article. To learn more, see [Microsoft 365 security center: roles and permissions](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions).
+
 ## Approve or reject an action
 
 > [!TIP]

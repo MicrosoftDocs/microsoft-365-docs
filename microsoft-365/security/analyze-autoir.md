@@ -35,6 +35,9 @@ Here are some examples:
 
 The following sections include examples of analysis you can conduct in the Microsoft 365 security center.
 
+> [!NOTE]
+> You must be a global administrator, security administrator, security operator, or security reader to perform the tasks described in this article. To learn more, see [Microsoft 365 security center: roles and permissions](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions).
+
 ## Analyze an alert that is not handled by automated investigation
 
 **Example**: Investigate an unsupported alert type
