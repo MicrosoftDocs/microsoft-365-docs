@@ -23,8 +23,6 @@ ms.topic: conceptual
 **Applies to**:
 - Microsoft 365
 
-## Overview
-
 The Action Center aggregates all actions that require an approval or another action for an investigation to proceed or complete.
 
 ![Action Center](images/air-actioncenter.png)
