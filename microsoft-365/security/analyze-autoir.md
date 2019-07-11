@@ -66,7 +66,15 @@ Suppose that an alert involving a script with suspicious content is triggered, a
 
     ![Alert with associated incident](images/air-alertwithincident.png)
 
-    This opens 
+    This opens a detailed view about the incident.
+
+    ![Incident details](images/air-incidentdetails.png)
+
+2. Use the various tabs to view details about the incident. In our example, the Machines tab lists two client machines.
+
+    
+
+3. 
 
 ## Analyze an investigation
 
