@@ -19,7 +19,7 @@
 #### [AIR overview](autoir-overview.md)
 #### [AIR dashboard](autoir-dashboard-overview.md)
 #### [Investigate and remediate issues](mtp-autoir.md)
-#### [Analyze alerts, incidents, and investigations](analyze-autoir.md)
+#### [Analyze alerts and investigations](analyze-autoir.md)
 #### [Manage actions related to investigations](autoir-actions.md)
 
 ### [Advanced hunting]()

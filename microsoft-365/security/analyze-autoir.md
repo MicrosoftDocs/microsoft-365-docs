@@ -1,5 +1,5 @@
 ---
-title: Analyze alerts, incidents, and automated investigations in Microsoft 365
+title: Analyze alerts and investigations in Microsoft 365
 description: Conduct analysis on alerts that can't be done with automated investigation. View details about alerts, incidents, and entities, and see your recommended next steps.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -24,7 +24,7 @@ ms.topic: conceptual
 
 ## Overview
 
-When an automated investigation is underway or has completed, you can view details and results of the investigation. To do that, you can use [the automated investigations dashboard](autoir-dashboard-overview.md). You can also conduct further analysis on alerts, incidents, or investigations (including alerts that are not handled by automated investigation), and see your recommended next steps.
+When an automated investigation is underway or has completed, you can view details and results of the investigation. To do that, you can use [the automated investigations dashboard](autoir-dashboard-overview.md). You can also conduct further analysis on alerts or investigations (including alerts that are not handled by automated investigation), and see your recommended next steps.
 
 Here are some examples:
 - Investigate an alert that isn't handled by automated investigation and remediation
@@ -33,7 +33,7 @@ Here are some examples:
 - Determine whether a URL changed from safe to malicious
 - ... and more.
 
-## Analyze an alert
+## Analyze an alert that is not handled by automated investigation
 
 **Example**: Investigate an unsupported alert type
 
@@ -58,9 +58,9 @@ Suppose that you have one automated investigation underway, but 11 new alerts. P
    - If an entity is listed in the **Alert context** pane, click its link to view more details.
    - Use the **Actions** menu to take next steps, such as managing the alert, viewing a timeline, opening the associated incident page, or printing details about the alert.
 
-## Analyze an incident
+## Investigate an entity from an alert that is not handled by automated investigation
 
-**Example**: View details about an incident that is not included in an automated investigation
+**Example**: View information about a machine associated with an alert that is not included in an automated investigation
 
 Suppose that an alert involving a script with suspicious content is triggered, and the alert is not included in an automated investigation. The following steps describe a possible way to analyze the incident.
 
@@ -97,6 +97,7 @@ Suppose that an alert involving a script with suspicious content is triggered, a
     |**Software inventory** |View a list of software installed on the machine. |
     |**Discovered vulnerabilities** |View a list of vulnerabilities. An example might include a spoofing vulnerability, or an information disclosure vulnerability. |
 
+With 
 
 ## Analyze an investigation
 
