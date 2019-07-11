@@ -1,6 +1,6 @@
 ---
-title: Analyze automated investigations in Microsoft 365
-description: View the details of an Automated investigation to see information such as the investigation graph, alerts associated with the investigation, and other information
+title: Analyze alerts, incidents, and automated investigations in Microsoft 365
+description: Conduct analysis on alerts that can't be done with automated investigation. View details about alerts, incidents, and entities, and see your recommended next steps.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -17,78 +17,51 @@ ms.collection:
 ms.topic: conceptual
 ---
 
-# Analyze automated investigations - align this with UI/UX
+# Analyze alerts, incidents, and automated investigations in Microsoft 365
 
 **Applies to**:
 - Microsoft 365
 
-You can view the details of an automated investigation to see information such as the investigation graph, alerts associated with the investigation, the machine that was investigated, and other information.
+When an automated investigation is underway or has completed, you can view details and results of the investigation. To do that, you can use [the automated investigations dashboard](autoir-dashboard-overview.md). You can also conduct further analysis on alerts, incidents, or investigations (including alerts that are not handled by automated investigation), and see your recommended next steps.
 
-In this view, you'll see the name of the investigation, when it started and ended. 
+Here are some examples:
+- Investigate an alert that isn't handled by automated investigation and remediation
+- Examine malware that was detected in email or on a user's machine
+- Get the details of a compromised user account was
+- Determine whether a URL changed from safe to malicious
+- ... and more.
 
-### Investigation page
-The investigation page gives you a quick summary on the status, alert severity, category, and detection source.
+## Analyze an alert
 
-You'll also have access to the following sections that help you see details of the investigation with finer granularity:
+**Example**: Investigate an unsupported alert type
 
-- Investigation graph
-- Alerts
-- Machines
-- Key findings
-- Entities
-- Log
-- Pending actions
+Suppose that you have one automated investigation underway, but 11 new alerts. It's possible that one or more of your new alerts must be investigated manually. Here's an example of how you might conduct that analysis.
 
-  >[!NOTE]
-  >The Pending actions tab is only displayed if there are actual pending actions.
+1. Starting from your security dashboard, click a chart in the **Active alerts** widget. This opens the **Alerts queue**.
 
-- Pending actions history
+    ![Security operations dashboard](images/air-secopsdashboard.png)
 
-  >[!NOTE]
-  >The Pending actions history tab is only displayed when an investigation is complete.
+2. In the **Alerts queue**, in the **Investigation state** column, look for alerts that have values, such as **Unsupported alert type** or **Unsupported OS**. These are alerts for which automated investigation capabilities are not available. You can investigate these manually.
 
-In any of the sections, you can customize columns to further expand to limit the details you see in a section.
+    ![unsupported alerts](images/air-alertsqueue.png)
 
-### Investigation graph
-The investigation graph provides a graphical representation of an Automated investigation. All investigation related information is simplified and arranged in specific sections. Clicking on any of the icons brings you the relevant section where you can view more information.
+3. Select an alert to view more details, including recommended actions. In the following example, we selected an alert pertaining to a script with suspicious content. 
 
-### Alerts
-Shows details such as a short description of the alert that initiated the Automated investigation, severity, category, the machine associated with the alert, user, time in queue, status, investigation state, and who the investigation is assigned to. 
+    ![Unsupported alert details view](images/air-unsupportedalertdetails.png)
 
-Additional alerts seen on a machine can be added to an Automated investigation as long as the investigation is ongoing. 
+4. Follow the steps in the **Recommended actions** section for the alert.
 
-Selecting an alert using the check box brings up the alerts details pane where you have the option of opening the alert page, manage the alert by changing its status, see alert details, Automated investigation details, related machine, logged-on users, and comments and history. 
+5. To explore the alert further, do any of the following:
+   - If the alert is associated with an incident, click its link to view more details about the incident.
+   - If an entity is listed in the **Alert context** pane, click its link to view more details.
+   - Use the **Actions** menu to take next steps, such as managing the alert, viewing a timeline, opening the associated incident page, or printing details about the alert.
 
-Clicking on an alert title brings you the alert page.
+## Analyze an incident
 
-### Machines
-Shows details the machine name, IP address, group, users, operating system, remediation level, investigation count, and when it was last investigated.
+## Analyze an investigation
 
-Machines that show the same threat can be added to an ongoing investigation and will be displayed in this tab. If 10 or more machines are found during this expansion process from the same entity, then that expansion action will require an approval and will be seen in the **Pending actions** view.
+## Next steps
 
-Selecting a machine using the checkbox brings up the machine details pane where you can see more information such as machine details and logged-on users.
+- [Manage actions related to automated investigation](autoir-actions.md)
 
-Clicking on an machine name brings you the machine page.
-
-### Key findings
-Shows details related to threats associated with this investigation. 
-
-### Entities
-Shows details about entities such as files, process, services, drives, and IP addresses. The table details such as the number of entities that were analyzed. You'll gain insight into details such as how many are remediated, suspicious, or determined to be clean.
-
-### Log
-Gives a chronological detailed view of all the investigation actions taken on the alert. You'll see the action type, action, status, machine name, description of the action, comments entered by analysts who may have worked on the investigation, execution start time, duration, pending duration.
-
-As with other sections, you can customize columns, select the number of items to show per page, and filter the log.
-
-Available filters include action type, action, status, machine name, and description.
-
-You can also click on an action to bring up the details pane where you'll see information such as the summary of the action and input data. 
-
-### Pending actions history
-This tab is only displayed when an investigation is complete and shows all pending actions taken during the investigation.
-
-
-## Pending actions
-If there are pending actions on an Automated investigation, you'll see a pop up. 
-
+- [Hunt for malware and other threats in Microsoft 365](hunting.md)

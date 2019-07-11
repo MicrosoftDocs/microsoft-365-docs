@@ -62,7 +62,8 @@ These steps guide you on modifying and overwriting an existing query.
 ## Access queries in the GitHub repository  
 Check out the [Advanced hunting repository](https://github.com/Microsoft/WindowsDefenderATP-Hunting-Queries). Contribute and use example queries shared by our customers. 
 
->[!tip] Microsoft security researchers also provide advanced hunting queries that you can use to locate activities and indicators associated with emerging threats. These queries are provided as part of the [threat analytics](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/threat-analytics) reports in Microsoft Defender Security Center.
+>[!tip]
+>Microsoft security researchers also provide advanced hunting queries that you can use to locate activities and indicators associated with emerging threats. These queries are provided as part of the [threat analytics](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/threat-analytics) reports in Microsoft Defender Security Center.
 
 ## Related topics
 - [Proactively hunt for threats](advanced-hunting.md)

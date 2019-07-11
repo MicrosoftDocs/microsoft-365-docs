@@ -14,7 +14,7 @@ ms.collection: M365-modern-desktop
 <!--This topic is the target for a "Learn more" link in the Admin Portal (aka.ms/prereq-azure); do not delete.-->
 <!--from Prerequisites -->
 
-Success with Microsoft Managed Desktop begins with well-known, documented, and agreed-upon requirements for the customer's infrastructure. This section outlines those infastructure requirements. 
+Success with Microsoft Managed Desktop begins with well-known, documented, and agreed-upon requirements for the customer's infrastructure. This section outlines those infrastructure requirements. 
 
 Microsoft FastTrack is available to help customers meet these requirements and help you prepare to participate in Microsoft Managed Desktop. For more information, see [Microsoft FastTrack](https://fasttrack.microsoft.com/about). 
 

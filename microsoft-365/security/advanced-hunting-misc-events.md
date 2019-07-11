@@ -18,6 +18,9 @@ ms.topic: article
 ---
 
 # Find miscellaneous events in advanced hunting
+>**DRAFT NOTES** 
+>- For MTP, I will simplify this topic into something like "Find security events and other potentially relevant system events" and will focus on providing guidance on the ActionTypes in MiscEvents, e.g. look for `smartscreen`, `antivirus`, `appcontrol`, `scheduledtask`, etc...
+>- A separate, comprehensive reference will be prepared for limited distribution, perhaps under NDA
 
 **Applies to**:
 - Microsoft 365 security center
@@ -204,7 +207,7 @@ Event ID: 4
 ## ReadProcessMemoryApiCall
 
 ### Description
-Bytes were read from the process memory of another process.
+The ReadProcessMemory function was called, indicating that a process read data from the process memory of another process.
 
 ### Event capture logic
 This event will only be captured when a process successfully reads more than 0 bytes from lsass.exe
@@ -257,7 +260,9 @@ Event ID: 14
 ## GetAsyncKeyStateApiCall
 
 ### Description
-An "anomalous" async key state occurred. The source of this event is win32kbase!CAsyncKeyEventMonitor::ReportGetAsyncKeyStateAnomaly. It is unclear what constitutes an anomalous key state but perhaps this could refer to GetAsyncKeyState being called a certain number of times within a timing threshold since the last keystroke was pressed.
+The GetAsyncKeyState function was called. Some keyloggers use this function to obtain the states of input keys and buttons.
+
+**Draft notes** An "anomalous" async key state occurred. The source of this event is win32kbase!CAsyncKeyEventMonitor::ReportGetAsyncKeyStateAnomaly. It is unclear what constitutes an anomalous key state but perhaps this could refer to GetAsyncKeyState being called a certain number of times within a timing threshold since the last keystroke was pressed. (We should check this: https://eyeofrablog.wordpress.com/2017/06/11/windows-keylogger-part-1-attack-on-user-land/ -- it basically says this API can be used by keyloggers to continuously poll key state)
 
 ### Event capture logic
 BackgroundCallCount is greater than 254 and MsSinceLastKeyEvent is greater than 0. i.e. perhaps this implies a threshold of the number of times GetAsyncKeyState was called in between actual keystrokes.
@@ -342,7 +347,7 @@ Unknown
 ## AntivirusScanCancelled
 
 ## Description
-Any Defender AV scans that were cancelled
+A Windows Defender Antivirus scan was cancelled.
 
 ### Event capture logic
 Capture all events
@@ -363,7 +368,7 @@ EID: 1002
 ## AntivirusScanCompleted
 
 ### Description
-Any Defender AV scans that were completed
+A Windows Defender Antivirus scan completed successfully.
 
 ### Event capture logic
 Capture all events
@@ -628,7 +633,7 @@ Event ID: N/A
 ## AppGuardCreateContainer
 
 ### Description
-A Windows Defender Application Guard container was created.
+Application guard initiated an isolated container.
 
 ### Event capture logic
 Capture all events
@@ -719,7 +724,7 @@ Event ID: 4
 ## ExploitGuardNonMicrosoftSignedAudited
 
 ### Description
-An image was loaded into a process that is not Microsoft-signed.
+Exploit protection detected the launch of a process from an image file that is not signed by Microsoft.
 
 ### Event capture logic
 Capture all events
@@ -736,7 +741,7 @@ Event ID: 11
 ## ExploitGuardNonMicrosoftSignedBlocked
 
 ### Description
-An non-Microsoft image was prevented from being loaded into a process.
+Exploit protection blocked the launch of a process from an image file that is not signed by Microsoft.
 
 ### Event capture logic
 Capture all events
@@ -791,7 +796,9 @@ Event ID: Unknown
 ## GetClipboardData
 
 ### Description
-A program accessed the contents of the clipboard.
+The GetClipboardData function was called, indicating that a process attempted to obtain the contents of the system clipboard.
+
+**DRAFTNOTES - rename to GetClipBoardDataApiCall?
 
 ### Event capture logic
 ApiName field in the ETW event is "CClipDataObject::GetDataHereImpl" or "CClipDataObject::GetData" - both internal functions in ole32.dll.
@@ -1001,7 +1008,9 @@ No additional context is populated in AdditionalFields.
 ## SmartScreenAppWarning
 
 ### Description
-This event appears to flag when a SmartScreen warning fires on a user attempting to run files downloaded that are flagged as "Malicious" or "Untrusted". [Reference](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-overview).
+SmartScreen warned about running a downloaded application that is untrusted or malicious.
+
+**DRAFT NOTES** This event appears to flag when a SmartScreen warning fires on a user attempting to run files downloaded that are flagged as "Malicious" or "Untrusted". [Reference](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-overview).
 
 ### Event capture logic
 All SmartScreen application warnings.
@@ -1019,7 +1028,9 @@ Event ID: 1000
 ## SmartScreenExploitWarning
 
 ### Description
-A Microsoft Edge [SmartScreen exploit warning](https://blogs.windows.com/msedgedev/2015/12/16/smartscreen-drive-by-improvements/) was surfaced to a user. This is a reasoned assumption that has not been definitely validated.
+SmartScreen warned about opening a web page that contains an exploit.
+
+**DRAFT NOTES** A Microsoft Edge [SmartScreen exploit warning](https://blogs.windows.com/msedgedev/2015/12/16/smartscreen-drive-by-improvements/) was surfaced to a user. This is a reasoned assumption that has not been definitely validated.
 
 ### Event capture logic
 Unknown
@@ -1035,7 +1046,9 @@ Unknown
 ## SmartScreenUrlWarning
 
 ### Description
-This event appears to flag when a SmartScreen warning fires on a user attempting to visit a URL that is flagged by SmartScreen as potentially malicious. [Reference](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-overview).
+SmartScreen warned about opening a low-reputation URL that might be hosting malware or is a phishing site.
+
+**DRAFT NOTES** This event appears to flag when a SmartScreen warning fires on a user attempting to visit a URL that is flagged by SmartScreen as potentially malicious. [Reference](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-overview).
 
 ### Event capture logic
 All SmartScreen URL warnings.
@@ -1053,7 +1066,7 @@ Event ID: 1001
 ## SmartScreenUserOverride
 
 ### Description
-A SmartScreen warning was overridden by the user.
+A user has overridden a SmartScreen warning and continued to open an untrusted app or a low-reputation URL.
 
 ### Event capture logic
 Captures all explicit user override events
@@ -1140,6 +1153,52 @@ Exploit protection blocked the launch of a process from a remote, shared file.
 Exploit protection detected a call to the Windows system API.
 ## ExploitGuardWin32SystemCallBlocked (renamed since this is "Audited" in sheet)
 Exploit protection blocked a call to the Windows system API.
+## ExploitGuardEafViolationAudited
+Export address filtering (EAF) in exloit protection detected possible exploitation activity.
+## ExploitGuardEafViolationBlocked
+Export address filtering (EAF) in exloit protection blocked possible exploitation activity.
+## ExploitGuardIafViolationAudited
+Import address filtering (IAF) in exloit protection detected possible exploitation activity.
+## ExploitGuardIafViolationBlocked
+Import address filtering (IAF) in exloit protection blocked possible exploitation activity.
+## ExploitGuardRopExploitAudited
+Exploit protection detected possible return-object programming (ROP) exploitation.
+## ExploitGuardRopExploitBlocked
+Exploit protection blocked possible return-object programming (ROP) exploitation.
+## FirewallInboundConnectionToAppBlocked
+The firewall blocked an inbound connection to an app. 
+## FirewallServiceStopped
+The firewall service was stopped.
+## AppControlCodeIntegrityDriverRevoked
+**Not verified** Application control found a driver with a revoked certificate.
+## AppControlCodeIntegrityImageAudited
+**Not verified** Application control detected an executable file that violated code integrity policies.
+## AppControlCodeIntegrityImageRevoked
+Application control found an executable file with a revoked certificate.
+## AppGuardSuspendContainer
+Application guard suspended an isolated container.
+## AppGuardResumeContainer
+Application guard resumed an isolated container from a suspended state.
+## AppGuardStopContainer
+Application guard stopped an isolated container.
+## AppGuardLaunchedWithUrl
+The opening of an untrusted URL has initiated an application guard container. 
+## AppGuardBrowseToUrl
+A URL has been accessed from within an web page in an application guard container.
+## AntivirusScanFailed
+A Windows Defender Antivirus scan did not complete successfully.
+## FirewallOutboundConnectionBlocked
+The firewall blocked an outbound connection.
+## FirewallInboundConnectionBlocked
+The firewall blocked an inbound connection.
+## ScriptContent
+**Not validated** Script content was identified.
+## ScriptContentScan
+**Not validated** Script content was scanned.
+## PasswordChangeAttempt
+An attempt to change a user password was made.
+## LogonRightsSettingEnabled
+Interactive logon rights on the machine were granted to a user.
 
 ## Related topics
 - [Proactively hunt for threats](advanced-hunting.md)
@@ -1147,6 +1206,5 @@ Exploit protection blocked a call to the Windows system API.
 - [Use shared queries](advanced-hunting-shared-queries.md)
 - [Understand the data tables](advanced-hunting-schema-tables.md)
 - [Understand the data columns](advanced-hunting-column-reference.md)
-- [Find miscellaneous events](advanced-hunting-misc-events.md)
 - [Apply query best practices](advanced-hunting-best-practices.md)
 

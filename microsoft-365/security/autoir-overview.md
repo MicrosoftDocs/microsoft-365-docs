@@ -31,7 +31,7 @@ AIR features leverage various inspection algorithms, processes, and best practic
 
 |Phase    |What happens  |
 |---------|---------|
-|[Automated investigation begins](#automated-investigation-begins)     |An automated investigation begins when one of the following occurs:<br/>- [An alert triggers an an automated investigation](#an-alert-triggers-an-automated-investigation)<br/>- [A security analyst starts an investigation from an alert or a security report](#an-analyst-starts-an-automated-investigation)          |
+|[Automated investigation begins](#automated-investigation-begins)     |An automated investigation begins when one of the following occurs:<br/>- [An alert triggers an an automated investigation](#an-alert-can-trigger-an-automated-investigation)<br/>- [A security analyst starts an investigation from an alert or a security report](#an-analyst-can-start-an-automated-investigation)          |
 |[Automated investigation runs](#the-automated-investigation-process)     |- Details about the threat and affected entities (user accounts, machines, and so on) are gathered<br/>- [The investigation scope can increase](#automated-investigation-scope-can-increase) if new alerts or entities related to the initial threat emerge         |
 |[Details and results emerge](#details-and-results-of-an-automated-investigation)     |- During and after an automated investigation, details are available<br/>- Automated investigation results inform remediation steps         |
 |[Remediation steps are taken](#remediation-steps) |- Remediation happens automatically or by approval from your security operations team<br/>- [Learn more about how threats are remediated](#how-threats-are-remediated) |
@@ -80,19 +80,18 @@ If an incriminated entity is seen in elsewhere, the automated investigation will
 
 ## Details and results of an automated investigation
 
-During and after an automated investigation, you'll be able to view details of the investigation in a [dashboard](autoir-dashboard-overview.md). Selecting a triggering alert in the [Automated investigations view](autoir-dashboard-overview.md#automated-investigations-view) brings you to the Investigation details view, which includes the **Investigation graph**, **Alerts**, **Machines**, **Threats**, **Entities**, and **Log** tabs.
-
+During and after an automated investigation, you'll be able to view details of the investigation in a [dashboard](autoir-dashboard-overview.md). Selecting a triggering alert in the [Automated investigations view](autoir-dashboard-overview.md#the-automated-investigations-view) brings you to the Investigation details view, which includes the **Investigation graph**, **Alerts**, **Machines**, **Threats**, **Entities**, and **Log** tabs.
 
 |Tab  |Description  |
 |---------|---------|
-|**Investigation graph** |Provides a visual representation of the investigation, including alerts, users, machines, entities analyzed, and threats found. Select an item on the graph to move to the appropriate tab. |
-|**Alerts**     |Lists any alerts that started or are related to the investigation.         |
-|**Machines**     |Lists any machines included in alerts.         |
-|**Users**     |Lists user accounts included in alerts, along with verdict (such as malicious), user name, display name, and identity in Azure Active Directory.         |
-|**Key findings**     |Lists files, methods, or activities that were identified as malicious during the investigation. Also lists entities involved and status, along with actions taken and links to view more details.  |
-|**Entities** |Lists user activities, files, processes, services, drivers, IP addresses, and persistence methods associated with the investigation. Includes status and findings, such as malicious, remediated, suspicious, and more. |
-|**Log** |Provides a detailed, chronological view of an investigation. Lists all actions taken during the investigation, along with status and start time. |
-|**Pending actions** |Lists remediation actions that are awaiting approval. |
+|**Investigation graph**     |Provides a visual representation of the investigation. Depicts entities and lists threats found, along with alerts and whether any actions are awaiting approval.         |
+|**Alerts**     |Lists alerts associated with the investigation. Alerts can come from threat protection features on a user's machine, in Office apps, Cloud App Security, and other Microsoft 365 Threat Protection features.          |
+|**Machines** |Lists machines included in the investigation along with remediation level. |
+|**Users** |Lists user accounts included in the investigation, including a threat determination (verdict). | 
+|**Key findings** |Lists results from the investigation along with status and actions taken. |
+|**Entities** |Lists user activities, files, processes, services, drivers, IP addresses, and persistence methods associated with the investigation, along with status and actions taken. |
+|**Log** |Provides a detailed view of all steps taken during the investigation, along with status.  |
+|**Pending actions** |Lists items that require approval to proceed. |
 
 ## Remediation steps
 
@@ -105,21 +104,21 @@ Depending on the threat and how AIR is configured for your organization, remedia
 
 ### How threats are remediated
 
-Depending on how you set up the entity groups and their level of automation, the automated investigation will either require user approval (default) or automatically remediate threats.
+Depending on how you set up the entity groups and their level of automation, an automated investigation might either require user approval (this is the default) or  automatically remediate threats.
 
 You can configure the following levels of automation:
 
-Automation level | Description
-:---|:---
-Not protected | Machines will not get any automated investigations run on them.
-Semi - require approval for any remediation | This is the default automation level.<p>An approval is needed for any remediation action. 
-Semi - require approval for non-temp folders remediation | An approval is required on files or executables that are not in temporary folders. <p> Files or executables in temporary folders, such as the user's download folder or the user's temp folder, will automatically be remediated if needed.
-Semi - require approval for core folders remediation | An approval is required on files or executables that are in the operating system directories such as Windows folder and Program files folder. <p> Files or executables in all other folders will  automatically be remediated if needed.
-Full - remediate threats automatically | All remediation actions will be performed automatically.
+|Automation level | Description |
+|---|---|
+|Not protected | Machines are not included in any automated investigations.|
+|Semi - require approval for any remediation | This is the default automation level.<p>An approval is needed for any remediation action. |
+|Semi - require approval for non-temp folders remediation  | An approval is required on files or executables that are not in temporary folders. <p> Files or executables in temporary folders, such as the user's download folder or the user's temp folder, are automatically remediated if needed.| 
+|Semi - require approval for core folders remediation | An approval is required on files or executables that are in the operating system directories such as Windows folder and Program files folder. <p> Files or executables in all other folders are automatically remediated if needed.|
+|Full - remediate threats automatically | All remediation actions are performed automatically.|
 
-The default group is configured for semi-automatic remediation. This means that any malicious entity that needs to be remediated requires an approval and the investigation is added to the **Pending actions** section, this can be changed to fully automatic so that no user approval is needed. 
+The default group is configured for semi-automatic remediation. This means that any malicious entity that needs to be remediated requires an approval and the investigation is added to the **Pending actions** section. This can be changed to fully automatic so that no user approval is needed. 
 
-When a pending action is approved, the entity is then remediated and this new state is reflected in the **Entities** tab of the investigation.
+When a pending action is approved, the entity is then remediated and the new state is reflected in the **Entities** tab of the investigation.
 
 ## Next steps
 
