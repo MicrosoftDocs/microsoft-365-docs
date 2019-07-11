@@ -44,6 +44,8 @@ When you visit the Action Center, make sure to approve or reject pending actions
 
 1. In the Action Center, on the **Pending** tab, select an item. This opens a flyout that includes details, links to an associated alert or investigation, and buttons to approve or reject the action. 
 
+    ![Approve or reject an action](images/air-actioncenter-itemselected.png)
+
 2. Review the information about the action, and then do one of the following:
     - Select **Open investigation page** to view more details about the investigation
     - Select **Approve** to take the recommended action and enable the investigation to proceed
@@ -51,3 +53,6 @@ When you visit the Action Center, make sure to approve or reject pending actions
 
 ## Next steps
 
+[Learn about the automated investigations dashboard](autoir-dashboard-overview.md)
+
+[Analyze alerts and investigations in Microsoft 365](analyze-autoir.md)
