@@ -58,6 +58,10 @@ Suppose that you have one automated investigation underway, but 11 new alerts. I
 
 ## Analyze an incident
 
+**Example**: View details about an incident that is not included in an automated investigation
+
+1. Starting with a view showing details about an alert, if there is an associated incident, click its number.
+
 ## Analyze an investigation
 
 ## Next steps
