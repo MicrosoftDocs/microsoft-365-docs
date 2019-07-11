@@ -91,9 +91,9 @@ Suppose that an alert involving a script with suspicious content is triggered, a
     |**Action center** |View status of submitted actions. (If no actions are taken yet, this button might not be active.) |
     |**Alerts** |View a list of alerts associated with the machine  |
     |**Timeline** |View a timeline of activities and events that have occurred on the machine. Such activities can include security-related events, registry events, firewall events, and much more. You can filter the results to focus on specific events, and adjust the timeline view for a specific time period. |
-    |**Security recommendations** | |
-    |**Software inventory** | |
-    |**Discovered vulnerabilities** | |
+    |**Security recommendations** |View a list of recommendations. For example, you might have a recommendation to update Office or to enable automatic updates. |
+    |**Software inventory** |View a list of software installed on the machine. |
+    |**Discovered vulnerabilities** |View a list of vulnerabilities. An example might include a spoofing vulnerability, or an information disclosure vulnerability. |
 
 
 ## Analyze an investigation
