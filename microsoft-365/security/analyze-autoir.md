@@ -80,17 +80,17 @@ Suppose that an alert involving a script with suspicious content is triggered, a
 
 4. On the details page, you can take certain actions, such as any of the following:
 
-    |Button or Tab |What it does  |
+    |Use this button or tab... |To do this  |
     |---------|---------|
-    |**Manage Tags**     |         |
-    |**Initiate Automated Investigation**     |         |
-    |**Collect investigation package**     |         |
-    |**Run antivirus scan**     |         |
-    |**Restrict app execution**     |         |
-    |**Isolate machine** | |
-    |**Action center** | |
-    |**Alerts** | |
-    |**Timeline** | |
+    |**Manage Tags**     |Add (or remove) tags for internal use. (Tags will vary by organization.)         |
+    |**Initiate Automated Investigation**     |Trigger a general automated investigation       |
+    |**Collect investigation package**     |Download forensic information about the machine        |
+    |**Run antivirus scan**     |Scan the machine for malware        |
+    |**Restrict app execution**     |Prevent apps, such as non-Microsoft apps, from running       |
+    |**Isolate machine** |Disconnect the machine from your corporate network, while keeping the machine connected to Microsoft Defender|
+    |**Action center** |View status of submitted actions. (If no actions are taken yet, this button might not be active.) |
+    |**Alerts** |View a list of alerts associated with the machine  |
+    |**Timeline** |View a timeline of activities and events that have occurred on the machine. Such activities can include security-related events, registry events, firewall events, and much more. You can filter the results to focus on specific events, and adjust the timeline view for a specific time period. |
     |**Security recommendations** | |
     |**Software inventory** | |
     |**Discovered vulnerabilities** | |
