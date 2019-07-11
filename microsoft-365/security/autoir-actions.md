@@ -23,6 +23,8 @@ ms.topic: conceptual
 **Applies to**:
 - Microsoft 365
 
+## Overview
+
 The Action Center aggregates all actions that require an approval or another action for an investigation to proceed or complete.
 
 ![Action Center](images/air-actioncenter.png)
@@ -38,7 +40,7 @@ Similar to other reports in the automated investigation and remediation [dashboa
 - Choose which columns to display in the list
 - Export the list to a file in .csv format 
 
-### Approve or reject an action
+## Approve or reject an action
 
 > [!TIP]
 > When you visit the Action Center, make sure to approve or reject pending actions. That way, investigations can complete as soon as possible, and remediation steps can be taken. 

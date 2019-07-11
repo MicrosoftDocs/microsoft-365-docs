@@ -23,6 +23,8 @@ ms.topic: conceptual
 **Applies to**:
 - Microsoft 365
 
+## Overview
+
 Automated investigation and remediation (AIR) features in Microsoft 365 enable your security operations team to operate more effectively and efficiently. Automated investigation begins when an alert is triggered or when an investigation is initiated by a security analyst. The investigation results inform remediation, which can be done automatically or upon approval by your security operations team. 
 
 AIR features leverage various inspection algorithms, processes, and best practices that are used by security analysts. AIR significantly reduces the volume of alerts your security team must address manually, allowing your security operations team to focus on more sophisticated threats and other high-value initiatives. 
