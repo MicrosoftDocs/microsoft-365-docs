@@ -29,8 +29,7 @@ In the Microsoft 365 security center, you can view detailed information about au
 - [The Automated investigations view](#the-automated-investigations-view)
 - [The Investigation details page](#the-investigation-details-page)
 
-> [!NOTE]
-> You must be a global administrator, security administrator, security operator, or security reader to perform the tasks described in this article. To learn more, see [Microsoft 365 security center: roles and permissions](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions).
+![Security operations dashboard](images/air-secopsdashboard.png)
 
 ## The Active automated investigations widget
 
