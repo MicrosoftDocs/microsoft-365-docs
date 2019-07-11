@@ -22,6 +22,8 @@ ms.topic: conceptual
 **Applies to**:
 - Microsoft 365
 
+## Overview
+
 When an automated investigation is underway or has completed, you can view details and results of the investigation. To do that, you can use [the automated investigations dashboard](autoir-dashboard-overview.md). You can also conduct further analysis on alerts, incidents, or investigations (including alerts that are not handled by automated investigation), and see your recommended next steps.
 
 Here are some examples:
