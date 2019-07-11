@@ -60,7 +60,7 @@ The **Investigation details** page provides all the details of an investigation 
 
 On this page, you can use the various tabs to view detailed information about alerts, machines, users, key findings, entities, and pending actions associated with an investigation. 
 
-## Filters
+## Use filters to focus on specific information
 
 Filters enable you to focus on more specific information. To open and use filters, in the upper right corner of a view, such as the [Automated investigations](#the-automated-investigations-view) view, select the **Filters** icon (![AIR filter icon](images/air-filtericon.png)).
 
@@ -82,7 +82,7 @@ The following table describes filtering options you might see in your investigat
 | |Machine groups | Specific machine groups that you might have created.|
 | |Comments | View investigations that do (or do not) have comments.|
 
-## Choosing which columns to include
+## Choosing which columns to include in a report
 
 By choosing the columns you want, you can create a report that includes just the information you want to see. Use the **Customize columns** list to select (or clear) columns that you'd like to show (or hide). The report updates to display information in the columns you selected. 
 
