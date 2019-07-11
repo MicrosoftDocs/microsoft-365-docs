@@ -99,8 +99,6 @@ Suppose that an alert involving a script with suspicious content is triggered, a
     |**Software inventory** |View a list of software installed on the machine. |
     |**Discovered vulnerabilities** |View a list of vulnerabilities. An example might include a spoofing vulnerability, or an information disclosure vulnerability. |
 
-With 
-
 ## Next steps
 
 - [Manage actions related to automated investigation](autoir-actions.md)
