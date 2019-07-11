@@ -72,9 +72,9 @@ Suppose that an alert involving a script with suspicious content is triggered, a
 
 2. Use the various tabs to view details about the incident. In our example, the Machines tab lists two client machines.
 
-    
+    ![Machines included in incident](images/air-incident-machinestab.png)
 
-3. 
+3. To view more information, select an item. In our example, we selected client5 to view more information about that machine. 
 
 ## Analyze an investigation
 
