@@ -107,6 +107,8 @@ Depending on the threat and how AIR is configured for your organization, remedia
 - Enabling multi-factor authentication for user accounts
 - ... and more.
 
+To learn more about how to approve remediation steps, see [Manage actions related to automated investigation](autoir-actions.md).
+
 ### How threats are remediated
 
 Depending on how you set up the entity groups and their level of automation, an automated investigation might either require user approval (this is the default) or  automatically remediate threats.
