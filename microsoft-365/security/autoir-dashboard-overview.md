@@ -84,9 +84,10 @@ The following table describes filtering options you might see in your investigat
 
 ## Choose which columns to include in a report
 
-By choosing the columns you want, you can create a report that includes just the information you want to see. Use the **Customize columns** list to select (or clear) columns that you'd like to show (or hide). The report updates to display information in the columns you selected. 
-
-![customize columns](images/air-customizecolumns.png)
+| | |
+|--|--|
+|![customize columns](images/air-customizecolumns.png) |AIR reports include the option for you to choose which columns to include. That way, you can create a report that includes just the information you want to see. Use the **Customize columns** list to select (or clear) columns that you'd like to show (or hide). The report updates to display information in the columns you selected. 
+ |
 
 ## Export the results
 
