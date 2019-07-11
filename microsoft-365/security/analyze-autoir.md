@@ -17,7 +17,7 @@ ms.collection:
 ms.topic: conceptual
 ---
 
-# Analyze alerts, incidents, and automated investigations in Microsoft 365
+# Analyze alerts and investigations in Microsoft 365
 
 **Applies to**:
 - Microsoft 365
@@ -32,6 +32,10 @@ Here are some examples:
 - Get the details of a compromised user account was
 - Determine whether a URL changed from safe to malicious
 - ... and more.
+
+## Analyze an investigation
+
+Example: 
 
 ## Analyze an alert that is not handled by automated investigation
 
@@ -98,8 +102,6 @@ Suppose that an alert involving a script with suspicious content is triggered, a
     |**Discovered vulnerabilities** |View a list of vulnerabilities. An example might include a spoofing vulnerability, or an information disclosure vulnerability. |
 
 With 
-
-## Analyze an investigation
 
 ## Next steps
 
