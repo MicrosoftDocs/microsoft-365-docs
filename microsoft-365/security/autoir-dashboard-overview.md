@@ -82,13 +82,13 @@ The following table describes filtering options you might see in your investigat
 | |Machine groups | Specific machine groups that you might have created.|
 | |Comments | View investigations that do (or do not) have comments.|
 
-## Choosing which columns to include in a report
+## Choose which columns to include in a report
 
 By choosing the columns you want, you can create a report that includes just the information you want to see. Use the **Customize columns** list to select (or clear) columns that you'd like to show (or hide). The report updates to display information in the columns you selected. 
 
 ![customize columns](images/air-customizecolumns.png)
 
-## Exporting results
+## Export the results
 
 Use the **Export** button to export results to a file in .csv format. When you select **Export**, you'll be prompted to specify how many results you want to include.
 
