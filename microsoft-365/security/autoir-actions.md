@@ -23,8 +23,11 @@ ms.topic: conceptual
 **Applies to**:
 - Microsoft 365
 
-The Action center aggregates all investigations that require an action for an investigation to proceed or be completed. 
+The Action Center aggregates all actions that require an approval or another action for an investigation to proceed or complete.
 
+![Action Center](images/air-actioncenter.png)
+
+To go to the Action Center, in the Microsoft 365 security center, click the Action Center button.
 
 The action center consists of two main tabs:
 - Pending actions - Displays a list of ongoing investigations that require attention. A recommended action is presented to the analyst, which they can approve or reject.
