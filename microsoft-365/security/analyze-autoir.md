@@ -33,9 +33,7 @@ Here are some examples:
 - Determine whether a URL changed from safe to malicious
 - ... and more.
 
-## Analyze an investigation
-
-Example: 
+The following sections include examples of analysis you can conduct in the Microsoft 365 security center.
 
 ## Analyze an alert that is not handled by automated investigation
 
