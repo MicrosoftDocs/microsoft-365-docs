@@ -35,7 +35,7 @@ Here are some examples:
 
 **Example**: Investigate an unsupported alert type
 
-Suppose that you have one automated investigation underway, but 11 new alerts. It's possible that one or more of your new alerts must be investigated manually. Here's an example of how you might conduct that analysis.
+Suppose that you have one automated investigation underway, but 11 new alerts. Perhaps one or more of your new alerts must be investigated manually. The following steps describe one possible way to analyze the alert.
 
 1. Starting from your security dashboard, click a chart in the **Active alerts** widget. This opens the **Alerts queue**.
 
@@ -60,7 +60,13 @@ Suppose that you have one automated investigation underway, but 11 new alerts. I
 
 **Example**: View details about an incident that is not included in an automated investigation
 
+Suppose that an alert involving a script with suspicious content is triggered, and the alert is not included in an automated investigation. The following steps describe a possible way to analyze the incident.
+
 1. Starting with a view showing details about an alert, if there is an associated incident, click its number.
+
+    ![Alert with associated incident](images/air-alertwithincident.png)
+
+    This opens 
 
 ## Analyze an investigation
 
