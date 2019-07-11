@@ -38,5 +38,7 @@
 ### [Configurable settings](working-with-managed-desktop/config-setting-overview.md)
 #### [Configurable settings reference](working-with-managed-desktop/config-setting-ref.md)
 #### [Deploy configurable settings](working-with-managed-desktop/config-setting-deploy.md)
+## [Microsoft Managed Desktop Reference](reference/index.md)
+### [AAD account]
 ## [Change history for Microsoft Managed Desktop documentation](change-history-managed-desktop.md)
 
