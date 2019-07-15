@@ -18,19 +18,21 @@ ms.collection:
 ms.topic: conceptual
 ---
 
-# Automatically investigate and remediate issues
+# Automatically investigate and remediate issues in Microsoft 365
 
 **Applies to**:
 - Microsoft 365
 
-With [automated investigation and remediation](autoir-overview.md) (AIR) capabilities in Microsoft 365, security administrators can set up alerts that trigger investigations automatically, or start an automated investigation from a report in the Microsoft 365 security center. Once an investigation is underway, your security team can monitor progress, approve pending actions, review the results, and remediate security issues. This article describes how to use AIR to automatically investigate and remediate cyber security issues in your organization.
+With [automated investigation and remediation](autoir-overview.md) (AIR) capabilities in Microsoft 365, security administrators can set up alerts that trigger investigations automatically, or start an automated investigation from a report in the Microsoft 365 security center. Once an investigation is underway, your security team can monitor progress, approve pending actions, review the results, and remediate security issues. 
 
 > [!NOTE]
 > You must be a global administrator, security administrator, security operator, or security reader to perform the tasks described in this article. To learn more, see [Microsoft 365 security center: roles and permissions](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions).
 
 ## Set up alerts to trigger automated investigations
 
-Certain [alert policies](https://docs.microsoft.com/office365/securitycompliance/alert-policies) can trigger automated investigations and remediation. For example, a threat protection alert for any email messages containing malware that are detected after the messages are delivered can start an AIR process. 
+Certain [alert policies](https://docs.microsoft.com/office365/securitycompliance/alert-policies) can trigger automated investigations and remediation. 
+
+**Example**: Set up a threat protection alert for email messages that contain malware detected after the messages are delivered 
 
 To review (and if necessary, add) alert policies, follow these steps:
 

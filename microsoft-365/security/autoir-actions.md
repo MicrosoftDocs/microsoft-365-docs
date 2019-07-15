@@ -1,5 +1,5 @@
 ---
-title: Manage actions related to automated investigations in Microsoft 365 
+title: Manage actions related to automated investigation and remediation in Microsoft 365 
 description: Use the action center to manage actions related to automated investigation and response
 keywords: action, center, autoair, automated, investigation, response, remediation
 search.product: eADQiWindows 10XVcnh
@@ -18,35 +18,48 @@ ms.collection:
 ms.topic: conceptual
 ---
 
-# Manage actions related to automated investigation 
+# Manage actions related to automated investigation and remediation in Microsoft 365
 
 **Applies to**:
 - Microsoft 365
 
-The Action center aggregates all investigations that require an action for an investigation to proceed or be completed. 
+The Action Center aggregates all actions that require an approval or another action for an investigation to proceed or complete.
 
+![Action Center](images/air-actioncenter.png)
+
+To go to the Action Center, in the Microsoft 365 security center, click the Action Center icon.
 
 The action center consists of two main tabs:
-- Pending actions - Displays a list of ongoing investigations that require attention. A recommended action is presented to the analyst, which they can approve or reject.
-- History - Acts as an audit log for:
-	- All actions taken by AutoIR or approved by an analyst with ability to undo actions that support this capability (for example, quarantine file).
-	- All commands ran and remediation actions applied in Live Response with ability to undo actions that support this capability.
-	- Remediation actions applied by Windows Defender AV with ability to undo actions that support this capability.
+- **Pending**: Lists pending actions for current investigations. For example, actions that require approval in order to proceed are listed here. 
+- **History**: Lists previous actions, along with their associated investigations and status.
+
+Similar to other reports in the automated investigation and remediation [dashboard](autoir-dashboard-overview.md), you can:
+- Use filters to focus on specific information
+- Choose which columns to display in the list
+- Export the list to a file in .csv format 
+
+> [!NOTE]
+> You must be a global administrator, security administrator, security operator, or security reader to perform the tasks described in this article. To learn more, see [Microsoft 365 security center: roles and permissions](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions).
+
+## Approve or reject an action
+
+**Example**: Review an action for a malicious script
+
+1. In the Action Center, on the **Pending** tab, select an item. This opens a flyout that includes details, links to an associated alert or investigation, and buttons to approve or reject the action. 
+
+    ![Approve or reject an action](images/air-actioncenter-itemselected.png)
+
+2. Review the information about the action, and then do one of the following:
+    - Select **Open investigation page** to view more details about the investigation
+    - Select **Approve** to take the recommended action and enable the investigation to proceed
+    - Select **Reject** for a recommended action you do not want to take at this time. (This can cause an investigation to halt or complete.)
 
 
-Use the Customize columns drop-down menu to select columns that you'd like to show or hide. 
+> [!TIP]
+> When you visit the Action Center, make sure to approve or reject pending actions. That way, investigations can complete as soon as possible, and remediation steps can be taken. 
 
-From this view, you can also download the entire list in CSV format using the **Export** feature, specify the number of items to show per page, and navigate between pages.
+## Next steps
 
+[Learn about the automated investigations dashboard](autoir-dashboard-overview.md)
 
->[!NOTE]
->The tab will only appear if there are pending actions for that category.
-
-### Approve or reject an action
-You'll need to manually approve or reject pending actions on each of these categories for the automated actions to proceed.
-
-Selecting an investigation from any of the categories opens a panel where you can approve or reject the remediation. Other details such as file or service details, investigation details, and alert details are displayed.
-
-From the panel, you can click on the Open investigation page link to see the investigation details.
-
-You also have the option of selecting multiple investigations to approve or reject actions on multiple investigations. 
+[Analyze alerts and investigations in Microsoft 365](analyze-autoir.md)

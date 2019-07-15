@@ -16,11 +16,11 @@
 
 
 ### [Automated investigation and remediation]()
-#### [Automated investigations overview](autoir-overview.md)
-#### [Automated investigations dashboard](autoir-dashboard-overview.md)
-#### [Automatically investigate and remediate issues](mtp-autoir.md)
-#### [Analyze automated investigations](analyze-autoir.md)
-#### [Manage actions related to automated investigations](autoir-actions.md)
+#### [AIR overview](autoir-overview.md)
+#### [AIR dashboard](autoir-dashboard-overview.md)
+#### [Investigate and remediate issues](mtp-autoir.md)
+#### [Analyze alerts and investigations](analyze-autoir.md)
+#### [Manage actions related to investigations](autoir-actions.md)
 
 ### [Advanced hunting]()
 #### [Proactively hunt for threats](advanced-hunting.md)
@@ -40,9 +40,11 @@
 #### [Device monitoring and reporting](monitor-devices.md)
 #### [App monitoring and reporting](monitor-apps.md)
 
-### [Classification ?](https://docs.microsoft.com/office365/securitycompliance/labels?redirectSourcePath=%252farticle%252faf398293-c69d-465e-a249-d74561552d30)
+### [Classification ?](https://docs.microsoft.com/office365/securitycompliance/labels)
 
-### [Policies ?](https://support.office.com/article/create-and-apply-information-management-policies-eb501fe9-2ef6-4150-945a-65a6451ee9e9?ui=en-US&rs=en-US&ad=US)
+### [Policies]()
+#### [Alert policies in the security and compliance center](https://docs.microsoft.com/office365/securitycompliance/alert-policies)
+#### [Policies in Cloud App Security](https://docs.microsoft.com/cloud-app-security/control)
 
 
 

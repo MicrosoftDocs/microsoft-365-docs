@@ -1,5 +1,5 @@
 ---
-title: Learn about the automated investigations dashboard in Microsoft 365 
+title: Learn about the automated investigation and remediation dashboard in Microsoft 365 
 description: View the list of automated investigations, its status, detection source and other details
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,18 +17,18 @@ ms.collection:
 ms.topic: conceptual
 ---
 
-# Learn about the automated investigations dashboard
+# Learn about the automated investigation and remediation dashboard in Microsoft 365
 
 **Applies to**:
 - Microsoft 365
 
-In the Microsoft 365 security center, you can view detailed information about automated investigations by using widgets and views, such as:
+![Security operations dashboard](images/air-secopsdashboard.png)
+
+In the Microsoft 365 security center, you can view detailed information about automated investigation and remediation (AIR) processes at work by using several useful widgets and views, such as:
 - [The Active automated investigations widget](#the-active-automated-investigations-widget)
 - [The Automated investigations view](#the-automated-investigations-view)
 - [The Investigation details page](#the-investigation-details-page)
 
->[!NOTE]
->If your organization has implemented role-based access to manage portal access, only authorized users or user groups who have permission to view investigation data. To learn more, see [Microsoft 365 security center: roles and permissions](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions). 
 
 ## The Active automated investigations widget
 
@@ -40,17 +40,17 @@ Clicking the chart opens the **Automated investigations** view.
 
 ## The Automated investigations view
 
-The **Automated investigations** view provides details about current and previous investigations. 
-
-![automated investigations detailed view](images/air-automated-investigations-list-with-filters.png)
-
-In addition to viewing information about triggering alerts, status, detection source, entities, and duration, you can do any of the following in this view:
+The **Automated investigations** view provides details about current and previous investigations. In addition to viewing information about triggering alerts, status, detection source, entities, and duration, you can do any of the following in this view:
 - Use filters to focus on specific information
 - Export results to a file in .csv format
 - Choose which columns to include in the report
 - Select a value to see more detailed information
 - Navigate to additional charts or views
 - ...and more.
+
+![automated investigations detailed view](images/air-automated-investigations-list-with-filters.png)
+
+Selecting an item, such as a **Triggering alert**, opens the **Investigation details** page.
 
 ## The Investigation details page
 
@@ -60,7 +60,7 @@ The **Investigation details** page provides all the details of an investigation 
 
 On this page, you can use the various tabs to view detailed information about alerts, machines, users, key findings, entities, and pending actions associated with an investigation. 
 
-## Filters
+## Use filters to focus on specific information
 
 Filters enable you to focus on more specific information. To open and use filters, in the upper right corner of a view, such as the [Automated investigations](#the-automated-investigations-view) view, select the **Filters** icon (![AIR filter icon](images/air-filtericon.png)).
 
@@ -82,13 +82,14 @@ The following table describes filtering options you might see in your investigat
 | |Machine groups | Specific machine groups that you might have created.|
 | |Comments | View investigations that do (or do not) have comments.|
 
-## Choosing which columns to include
+## Choose which columns to include in a report
 
-By choosing the columns you want, you can create a report that includes just the information you want to see. Use the **Customize columns** list to select (or clear) columns that you'd like to show (or hide). The report updates to display information in the columns you selected. 
+| | |
+|--|--|
+|![customize columns](images/air-customizecolumns.png) |AIR reports include the option for you to choose which columns to include. That way, you can create a report that includes just the information you want to see. Use the **Customize columns** list to select (or clear) columns that you'd like to show (or hide). The report updates to display information in the columns you selected. 
+ |
 
-![customize columns](images/air-customizecolumns.png)
-
-## Exporting results
+## Export the results
 
 Use the **Export** button to export results to a file in .csv format. When you select **Export**, you'll be prompted to specify how many results you want to include.
 

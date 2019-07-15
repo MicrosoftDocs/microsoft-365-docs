@@ -21,6 +21,8 @@ search.appverid:
 
 # Analyze incidents in Microsoft 365
 
+## Overview
+
 Analyze incidents that affect your network, understand what they mean, and collate evidence to resolve them. 
 
 When you analyze an incident, you'll see:

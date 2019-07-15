@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 automated investigations overview
+title: Overview of automated investigation and remediation in Microsoft 365
 description: Get an overview of automated investigations, including active investigations, status, detection source, and other details.
 keywords: automated, investigation, detection, source, threat types, id, tags, machines, duration, filter export
 search.product: eADQiWindows 10XVcnh
@@ -18,7 +18,7 @@ ms.collection:
 ms.topic: conceptual
 ---
 
-# Automated investigations overview
+# Overview of automated investigation and remediation in Microsoft 365
 
 **Applies to**:
 - Microsoft 365
@@ -27,11 +27,14 @@ Automated investigation and remediation (AIR) features in Microsoft 365 enable y
 
 AIR features leverage various inspection algorithms, processes, and best practices that are used by security analysts. AIR significantly reduces the volume of alerts your security team must address manually, allowing your security operations team to focus on more sophisticated threats and other high-value initiatives. 
 
+> [!NOTE]
+> You must be a global administrator, security administrator, security operator, or security reader to perform the tasks described in this article. To learn more, see [Microsoft 365 security center: roles and permissions](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions).
+
 ## The automated investigation and remediation flow
 
 |Phase    |What happens  |
 |---------|---------|
-|[Automated investigation begins](#automated-investigation-begins)     |An automated investigation begins when one of the following occurs:<br/>- [An alert triggers an an automated investigation](#an-alert-triggers-an-automated-investigation)<br/>- [A security analyst starts an investigation from an alert or a security report](#an-analyst-starts-an-automated-investigation)          |
+|[Automated investigation begins](#automated-investigation-begins)     |An automated investigation begins when one of the following occurs:<br/>- [An alert triggers an an automated investigation](#an-alert-can-trigger-an-automated-investigation)<br/>- [A security analyst starts an investigation from an alert or a security report](#an-analyst-can-start-an-automated-investigation)          |
 |[Automated investigation runs](#the-automated-investigation-process)     |- Details about the threat and affected entities (user accounts, machines, and so on) are gathered<br/>- [The investigation scope can increase](#automated-investigation-scope-can-increase) if new alerts or entities related to the initial threat emerge         |
 |[Details and results emerge](#details-and-results-of-an-automated-investigation)     |- During and after an automated investigation, details are available<br/>- Automated investigation results inform remediation steps         |
 |[Remediation steps are taken](#remediation-steps) |- Remediation happens automatically or by approval from your security operations team<br/>- [Learn more about how threats are remediated](#how-threats-are-remediated) |
@@ -80,7 +83,7 @@ If an incriminated entity is seen in elsewhere, the automated investigation will
 
 ## Details and results of an automated investigation
 
-During and after an automated investigation, you'll be able to view details of the investigation in a [dashboard](autoir-dashboard-overview.md). Selecting a triggering alert in the [Automated investigations view](autoir-dashboard-overview.md#automated-investigations-view) brings you to the Investigation details view, which includes the **Investigation graph**, **Alerts**, **Machines**, **Threats**, **Entities**, and **Log** tabs.
+During and after an automated investigation, you'll be able to view details of the investigation in a [dashboard](autoir-dashboard-overview.md). Selecting a triggering alert in the [Automated investigations view](autoir-dashboard-overview.md#the-automated-investigations-view) brings you to the Investigation details view, which includes the **Investigation graph**, **Alerts**, **Machines**, **Threats**, **Entities**, and **Log** tabs.
 
 |Tab  |Description  |
 |---------|---------|
@@ -101,6 +104,8 @@ Depending on the threat and how AIR is configured for your organization, remedia
 - Blocking URLs that were identified as malicious
 - Enabling multi-factor authentication for user accounts
 - ... and more.
+
+To learn more about how to approve remediation steps, see [Manage actions related to automated investigation](autoir-actions.md).
 
 ### How threats are remediated
 
