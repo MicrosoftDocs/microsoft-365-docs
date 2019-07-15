@@ -93,9 +93,6 @@ The following is the MiscEvent schema. The specific ActionType will dictate whic
 |[Application control events](#Application-control-events)|Code integrity policy violations|Starts with `AppControl`|
 |[Application guard events](#Application-guard-events)|Application guard events, including detections of suspicious web browsing events in the application guard container|Starts with `AppGuard`|
 |[Exploit protection events](#Exploit-protection-events)|Possible exploitation detected or blocked by exploit protection|Starts with `ExploitGuard`|
-
-
-
 |[Uncategorized events](#Uncategorized-events)|Various kinds of system activity that might be associated with attacks|No special convention, examples include `PowerShellCommand` `BrowserLaunchedToOpenUrl`, `LdapSearch` and `GetClipboardData`|
 
 # Windows API calls
