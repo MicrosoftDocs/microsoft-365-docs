@@ -81,7 +81,24 @@ The following is the MiscEvent schema. The specific ActionType will dictate whic
 |ReportId|43|System.Int64|long|
 |AppGuardContainerId|44|System.String|string|
 
-# ActionType group: Suspicious Windows API calls
+## Types of events in the MiscEvents table
+
+|Event type|Description|Naming convention|
+|---|---|---|
+|[API calls](#API-calls)|Calls to Windows API that might indicate malicious activity|Ends in `ApiCall`|
+|[Antivirus events](#Windows-Defender-Antivirus-events)|Windows Defender Antivirus events, including scans and detections|Starts with `Antivirus` or `Amsi`|
+|[Attack surface reduction events](#Attack-surface-reduction-events)|Events associated with Attack surface reduction (ASR) rule detections, whether the rule is in audit or block mode |Starts with `Asr`|
+|[Controlled folder access events](#Controlled-folder-access-events)|Violations of controlled folder access policies designed to prevent unwanted changes to protected folders|Starts with `ControlledFolderAccess`|
+|[Network protection events](#Network-protection-events)|Detections of malicious or potentially malicious domains and IP addresses by network protection policies, whether blocked or audited|Starts with `ExploitGuardNetworkProtection`|
+|[Application control events](#Application-control-events)|Code integrity policy violations|Starts with `AppControl`|
+|[Application guard events](#Application-guard-events)|Application guard events, including detections of suspicious web browsing events in the application guard container|Starts with `AppGuard`|
+|[Exploit protection events](#Exploit-protection-events)|Possible exploitation detected or blocked by exploit protection|Starts with `ExploitGuard`|
+
+
+
+|[Uncategorized events](#Uncategorized-events)|Various kinds of system activity that might be associated with attacks|No special convention, examples include `PowerShellCommand` `BrowserLaunchedToOpenUrl`, `LdapSearch` and `GetClipboardData`|
+
+# Windows API calls
 
 
 ## CreateRemoteThreadApiCall
@@ -276,7 +293,7 @@ Event ID: 1003
 * BackgroundCallCount - presumably the number of times GetAsyncKeyState was called in between actual keystrokes being supplied.
 
 
-# ActionType group: Windows Defender Antivirus
+# Windows Defender Antivirus events
 
 
 ## AmsiScriptDetection
@@ -385,6 +402,7 @@ Event ID: 1001
 * ScanTypeIndex - The type of scan that was cancelled - e.g. "Quick", "Full"
 * User - The user who cancelled the scan - e.g. "SYSTEM"
 
+# Attack surface reduction events
 
 ## AsrExecutableEmailContentBlocked
 
@@ -549,6 +567,7 @@ Event ID: 1121
 * IsAudit - "true" or "false" - Indicates if the rule was in audit mode or in blocking mode
 * RuleId - The GUID identifier for the ASR rule. This ASR event GUID will be: "01443614-cd74-433a-b99e-2ecdc07bfc25"
 
+# Controlled folder access events
 
 ## ControlledFolderAccessViolationAudited
 
@@ -567,6 +586,7 @@ Event ID: 1124 (most likely)
 * IsAudit - "true" or "false" - Indicates if the rule was in audit mode or in blocking mode
 * RuleId - The GUID identifier for the Controlled Folder Access rule. This event GUID will be: "5737d832-9e2c-4922-9623-48a220290dcb"
 
+# Network protection events
 
 ## ExploitGuardNetworkProtectionBlocked
 
@@ -587,7 +607,7 @@ Event ID: 1126
 * IsAudit - "true" or "false" - Indicates if the rule was in audit mode or in blocking mode
 
 
-# ActionType group: Application Control
+# Application control events
 
 
 ## AppControlCodeIntegrityPolicyBlocked
@@ -609,7 +629,7 @@ Event ID: 3076
 * AuthenticodeHash - The [Authenticode hash](http://download.microsoft.com/download/9/c/5/9c5b2167-8017-4bae-9fde-d599bac8184a/authenticode_pe.docx) of the PE file. This should not be confused with file hash.
 
 
-# ActionType group: Application guard
+# Application guard events
 
 
 ## AppGuardBrowseToUrl
@@ -647,7 +667,7 @@ Event ID: N/A
 * RelatedContainerId - A GUID value. This can likely be associated with the AppGuardContainerId MiscEvents property.
 
 
-# ActionType group: Exploit protection
+# Exploit protection events
 
 
 ## ExploitGuardAcgAudited
@@ -772,7 +792,7 @@ Event ID: 10
 * IsAudit - "true" or "false" - Indicates if the rule was in audit mode or in blocking mode
 
 
-# ActionType group: Miscellaneous
+# Uncategorized events
 
 
 ## BrowserLaunchedToOpenUrl
@@ -1207,4 +1227,3 @@ Interactive logon rights on the machine were granted to a user.
 - [Understand the data tables](advanced-hunting-schema-tables.md)
 - [Understand the data columns](advanced-hunting-column-reference.md)
 - [Apply query best practices](advanced-hunting-best-practices.md)
-
