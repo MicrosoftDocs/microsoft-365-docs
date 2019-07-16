@@ -42,7 +42,7 @@ search.appverid:
                                             </div>
                                             <div class="cardText">
                                                 <h3>Explore</h3>
-                                                <P><a href="microsoft-365-overview.md" target="_blank">Overview</a></p>
+                                                <P><a href="microsoft-threat-protection.md" target="_blank">Overview</a></p>
                                                 <P><a href="https://docs.microsoft.com/Office365/Enterprise/microsoft-cloud-it-architecture-resources" target="_blank">Architecture models</a></p>
                                                 <P><a href="http://Microsoft365.com/it" target="_blank">Microsoft 365 for IT</a></p>
                                             </div>
@@ -62,7 +62,7 @@ search.appverid:
                                             <div class="cardText">
                                                 <h3>Deploy</h3>
                                                 <P><a href="https://www.microsoft.com/fasttrack/microsoft-365" target="_blank">FastTrack</a></p>
-                                                <P><a href="deploy-microsoft-365-enterprise.md" target="_blank">Deployment guide</a></p>
+                                                <P><a href="microsoft-threat-protection.md" target="_blank">Deployment guide</a></p>
                                                 <P><a href="https://aka.ms/howtoshift" target="_blank">Modern Desktop deployment</a></p>
                                             </div>
                                         </div>
@@ -82,7 +82,7 @@ search.appverid:
                                                 <h3>Manage security &amp; compliance</h3>
                                                 <P><a href="https://docs.microsoft.com/microsoft-365/compliance/compliance-solutions-overview" target="_blank">Compliance solutions</a></p>
                                                 <P><a href="https://docs.microsoft.com/Office365/SecurityCompliance/" target="_blank">Office 365 Security &amp; Compliance</a></p>
-                                                <P><a href="microsoft-365-policies-configurations.md" target="_blank">Identity &amp; device access</a></p>
+                                                <P><a href="microsoft-threat-protection.md" target="_blank">Identity &amp; device access</a></p>
                                                 <P><a href="https://docs.microsoft.com/windows/security/threat-protection/index" target="_blank">Windows Defender ATP</a></p>
                                             </div>
                                         </div>
