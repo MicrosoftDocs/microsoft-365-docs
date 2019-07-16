@@ -95,7 +95,7 @@ description: Learn about the robust security solutions and services in Microsoft
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>Endpoint protectin in Microsoft Defender Advanced Threat Protection</h3>
+                                                <h3>Endpoint protection in Microsoft Defender Advanced Threat Protection</h3>
                                                 <P><a href="https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection" target="_blank">What is Microsft Defender Advanced Threat Protection?</a></p>
                                                 <P><a href="https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/get-started" target="_blank">Get started</a></p>
                                                 <P><a href="https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/onboard" target="_blank">Configure and manage capabilities</a></p>
@@ -103,7 +103,7 @@ description: Learn about the robust security solutions and services in Microsoft
 												<P><a href="https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-attack-surface-reduction" target="_blank">Attack surface reduction</a></p>
 												<P><a href="https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10" target="_blank">Next generation protection</a></p>
 												<P><a href="https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response" target="_blank">Endpoint detection and response</a></p>
-												<P><a href="https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations" target="_blank">Automated </a></p>
+												<P><a href="https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations" target="_blank">Automated investigation and response </a></p>
 												<P><a href="https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-threat-experts" target="_blank">Microsoft Threat Experts</a></p>
 												<P><a href="https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/management-apis" target="_blank">Management and APIs</a></p>
                                             </div>
