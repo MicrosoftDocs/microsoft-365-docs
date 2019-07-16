@@ -3,6 +3,7 @@
 ## [Microsoft 365 Security]()
 
 ### [Overview]()
+#### [What is Microsoft Threat Protection?](microsoft-threat-protection.md)
 #### [Microsoft 365 security center](overview-security-center.md)
 #### [Microsoft 365 security architecture](mtp-components.md)
 #### [Microsoft 365 security prerequisites](mtp-prerequisites.md)

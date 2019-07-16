@@ -1,5 +1,5 @@
 ---
-title: Microsoft Threat Protection
+title: What is Microsoft Threat Protection?
 description: Microsoft Threat Protection is a coordinated threat protection solution designed to protect devices, identity, data and applications
 keywords: introduction to Microsoft Threat Protection, cyber security, advanced persistent threat, enterprise security, devices, device, identity, users, data, applications, incidents, automated investigation and remediation, advanced hunting
 search.product: eADQiWindows 10XVcnh
@@ -17,7 +17,7 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ---
 
-# Microsoft Threat Protection
+# What is Microsoft Threat Protection?
 
 Microsoft Threat Protection is a comprehensive security solution bringing together powerful security capabilities which enable today's organizations: 
 
