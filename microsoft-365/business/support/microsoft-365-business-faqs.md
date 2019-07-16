@@ -23,7 +23,7 @@ Microsoft 365 is an integrated solution that brings together best-in-class produ
 **A holistic set of business productivity and collaboration tools** 
 * Word, Excel, PowerPoint, Outlook, OneNote, Publisher, and Access 
 * Exchange, OneDrive, Skype for Business, Microsoft Teams, SharePoint 
-* Business apps from Office (Bookings, Outlook Customer Manager, MileIQ<sup>[1](#footnote1)</sup>, Microsoft Listings<sup>[1](#footnote1)</sup>, Microsoft Connections<sup>[1](#footnote1)</sup>, Microsoft Invoicing<sup>[1](#footnote1)</sup>) 
+* Business apps from Office (Bookings, Outlook Customer Manager, MileIQ<sup>[1](#footnote1)</sup>, Microsoft Invoicing<sup>[1](#footnote1)</sup>) 
  
 **Enterprise-grade device management and security capabilities** 
 - Helps provide protection from external threats like phishing & sophisticated malware with Office 365 Advanced Threat Protection and Windows Defender Exploit Guard 

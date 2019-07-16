@@ -37,7 +37,7 @@ Credential Guard |	Microsoft will provide guidance and manage cloud aspects of t
 Application Virtualization (App-V) |	Microsoft Managed Desktop does not support this type of deployment as it is not supported on Intune.
 User Experience Virtualization (UE-V) |	This is not used with Microsoft Managed Desktop managed devices.
 Managed User Experience	 | This is not used with Microsoft Managed Desktop managed devices. MDM is used as a solution for device management.
-Windows Defender Advanced Threat Protection |	This is used by Microsoft Managed Desktop to manage device security policies. 
+Microsoft Defender Advanced Threat Protection |	This is used by Microsoft Managed Desktop to manage device security policies. 
 
 ## Enterprise Mobility + Security E5
 
