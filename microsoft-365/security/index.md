@@ -10,12 +10,12 @@ localization_priority: Normal
 audience: microsoft-business
 ms.prod: microsoft-365-enterprise
 title: Microsoft 365 Security
-description: Learn about the robust security solutions and services in Microsoft  365 so that you can better protect the modern workplace across attack surfaces. 
+description: Learn about the robust security solutions and services in Microsoft  365 so that you can better protect your enterprise across attack surfaces. 
 ---
 <div id="main" class="v2">
     <div class="container">
         <h1>Microsoft 365 Security</h1>
-        <P>Learn about the robust security solutions and services in Microsoft  365 so that you can better protect the modern workplace across attack surfaces.</p>
+        <P>Learn about the robust security solutions and services in Microsoft  365 so that you can better protect your enterprise across attack surface</p>
         <P></p>
         <ul class="pivots">
             <li>
