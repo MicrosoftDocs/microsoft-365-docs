@@ -21,8 +21,8 @@ search.appverid:
 
 <div id="main" class="v2">
     <div class="container">
-        <h1>Microsoft 365 Security</h1>
-        <P>Learn about the robust security solutions and services in Microsoft  365 so that you can better protect the modern workplace across attack surfaces.  </p>
+        <h1>Microsoft 365 Enterprise documentation and resources</h1>
+        <P>Learn how to plan, deploy, and use Microsoft Office 365, Windows 10, and Enterprise Mobility + Security together in your organization. These services provide an integrated and secure infrastructure that enables teamwork and unlocks creativity.</p>
         <P></p>
         <ul class="pivots">
             <li>
@@ -37,15 +37,14 @@ search.appverid:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/office/media/icons/security-blue.svg" alt="A shield with an exclamation mark" />
+                                                    <img src="https://docs.microsoft.com/office/media/icons/blocks-blue.svg" alt="Building blocks" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>Microsoft Threat Protection</h3>
-                                                <P><a href="microsoft-threat-protection.md" target="_blank">What is Microsoft Threat Protection?</a></p>
-                                                <P><a href="incidents-overview.md" target="_blank">Manage incidents</a></p>
-                                                <P><a href="autoir-overview.md" target="_blank">Automatically remediate issues</a></p>
-                                                <P><a href="advanced-hunting.md" target="_blank"> Proactively hunt for threats</a></p>
+                                                <h3>Explore</h3>
+                                                <P><a href="microsoft-365-overview.md" target="_blank">Overview</a></p>
+                                                <P><a href="https://docs.microsoft.com/Office365/Enterprise/microsoft-cloud-it-architecture-resources" target="_blank">Architecture models</a></p>
+                                                <P><a href="http://Microsoft365.com/it" target="_blank">Microsoft 365 for IT</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -57,13 +56,14 @@ search.appverid:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                     <img src="https://docs.microsoft.com/office/media/icons/security-blue.svg" alt="A shield with an exclamation mark" />
+                                                    <img src="https://docs.microsoft.com/office/media/icons/deploy-blue.svg" alt="Deploy arrow" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>Security Management</h3>
-                                                <P><a href="microsoft-secure-score.md" target="_blank">Secure Score</a></p>
-                                                <P><a href="" target="_blank">Security baselines</a></p>
+                                                <h3>Deploy</h3>
+                                                <P><a href="https://www.microsoft.com/fasttrack/microsoft-365" target="_blank">FastTrack</a></p>
+                                                <P><a href="deploy-microsoft-365-enterprise.md" target="_blank">Deployment guide</a></p>
+                                                <P><a href="https://aka.ms/howtoshift" target="_blank">Modern Desktop deployment</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -79,14 +79,11 @@ search.appverid:
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>Cloud App Protection in Microsoft Cloud App Security</h3>
-                                                <P><a href="https://docs.microsoft.com/en-us/cloud-app-security/what-is-cloud-app-security" target="_blank">Learn about Microsoft Cloud App Security</a></p>
-                                                <P><a href="https://docs.microsoft.com/en-us/cloud-app-security/cas-compliance-trust" target="_blank">Microsoft Cloud App Security data security and privacy</a></p>
-                                                <P><a href="https://docs.microsoft.com/en-us/cloud-app-security/release-notes" target="_blank">What's new in MCAS</a></li></p>
-                                                <li><a href="https://docs.microsoft.com/en-us/cloud-app-security/tutorial-shadow-it" target="_blank">Discover and manage shadow IT in your network</a></p></li>
-                                                <li><a href="https://docs.microsoft.com/en-us/cloud-app-security/use-case-proxy-block-session-aad" target="_blank">Block download of sensitive information</a></p></li>
-                                                <li><a href="https://docs.microsoft.com/en-us/cloud-app-security/use-case-admin-quarantine" target="_blank">Protect files with admin quarantine</a></p></li>
-                                                <li><a href="https://docs.microsoft.com/en-us/cloud-app-security/use-case-information-protection" target="_blank">Apply Azure Information Protection classification labels</a></p></li>
+                                                <h3>Manage security &amp; compliance</h3>
+                                                <P><a href="https://docs.microsoft.com/microsoft-365/compliance/compliance-solutions-overview" target="_blank">Compliance solutions</a></p>
+                                                <P><a href="https://docs.microsoft.com/Office365/SecurityCompliance/" target="_blank">Office 365 Security &amp; Compliance</a></p>
+                                                <P><a href="microsoft-365-policies-configurations.md" target="_blank">Identity &amp; device access</a></p>
+                                                <P><a href="https://docs.microsoft.com/windows/security/threat-protection/index" target="_blank">Windows Defender ATP</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -150,6 +147,68 @@ search.appverid:
                                         </div>
                                     </div>
                                 </div>
+                            </li>
+                            <li class="fullSpan">
+                              <hr />
+                              <br>
+                              <ul class="cardsF panelContent singlePanelContent" style="display:flex!important;">
+                                    <li>
+                                        <div class="cardSize">
+                                            <div class="cardPadding">
+                                                <div class="card">
+                                                    <div class="cardImageOuter">
+                                                        <div class="cardImage">
+                                                            <img src="https://docs.microsoft.com/office/media/icons/developer-blue.svg" alt="Code, developer" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="cardText">
+                                                        <h3>Develop for Microsoft 365</h3>
+                                                        <P><a href="https://developer.microsoft.com/office" target="_blank">Office 365 Dev Center</a></p>
+                                                        <P><a href="https://developer.microsoft.com/windows/enterprise" target="_blank">Windows Dev Center</a></p>
+                                                        <P><a href="https://developer.microsoft.com/graph" target="_blank">Microsoft Graph</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cardSize">
+                                            <div class="cardPadding">
+                                                <div class="card">
+                                                    <div class="cardImageOuter">
+                                                        <div class="cardImage">
+                                                            <img src="https://docs.microsoft.com/office/media/icons/caret-right-blue.svg" alt="More arrow" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="cardText">
+                                                        <h3>Other Microsoft 365 products</h3>
+                                                        <P><a href="https://docs.microsoft.com/microsoft-365/business/" target="_blank">Microsoft 365 Business</a></p>
+                                                        <P><a href="https://docs.microsoft.com/education/" target="_blank">Microsoft 365 Education</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li> 
+                                    <li>
+                                        <div class="cardSize">
+                                            <div class="cardPadding">
+                                                <div class="card">
+                                                    <div class="cardImageOuter">
+                                                        <div class="cardImage">
+                                                            <img src="https://docs.microsoft.com/office/media/icons/chat.svg" alt="Chat" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="cardText">
+                                                        <h3>Need support?</h3>
+                                                        <P><a href="https://azure.microsoft.com/support/options/" target="_blank">Azure</a></p>
+                                                        <P><a href="https://support.office.com/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b" target="_blank">Office 365</a></p>
+                                                        <P><a href="http://support.microsoft.com/products/windows" target="_blank">Windows 10</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                              </ul>
                             </li>
                        </ul>
                     </li>
