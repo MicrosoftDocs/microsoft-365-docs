@@ -1,5 +1,5 @@
 # [Security solutions](index.md)
-## [Microsoft Threat Protection](microsoft-threat-protection.md)
+
 ### [Microsoft 365 Security]()
 
 #### [Overview]()

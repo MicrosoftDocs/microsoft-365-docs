@@ -19,10 +19,6 @@ ms.topic: conceptual
 
 # Microsoft Threat Protection
 
-The threat landscape is growing in scale and sophistication of threats. Malicious attackers use variety of tools to find vulnerabilities across an expanding attack surface. 
-
-Securing today's organization against these types of attacks requires having visibility across multiple attack vectors including identities, endpoints, email, data, and apps and having a well synchronized defense solution.
-
 Microsoft Threat Protection is a comprehensive security solution bringing together powerful security capabilities which enable today's organizations: 
 
 - **Protect assets** - Assets are protected from unauthorized users, devices, and applications.
