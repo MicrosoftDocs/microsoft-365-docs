@@ -29,7 +29,7 @@ The miscellaneous events table or **MiscEvents** contains a broad range of event
 
 These events are all ETW-driven based on the ETW configuration stored in an onboarded endpoint"s registry configuration. It is important to note that this is not a comprehensive list of all possible ActionTypes. These events can only be viewed and documented upon the respective event occurring.
 
-## MiscEvents Schema
+## MiscEvents table columns
 
 The following is the MiscEvent schema. The specific ActionType will dictate which of these fields are populated. Within this document, the only field documented for each ActionType is "AdditionalFields" where Microsoft chooses to place additional, hopefully relevant contextual information in a JSON format.
 
@@ -81,11 +81,11 @@ The following is the MiscEvent schema. The specific ActionType will dictate whic
 |ReportId|43|System.Int64|long|
 |AppGuardContainerId|44|System.String|string|
 
-## Types of events in the MiscEvents table
+## Event groups in the MiscEvents table
 
-|Event type|Description|Naming convention|
+|Event group|Description|Naming convention|
 |---|---|---|
-|[API calls](#API-calls)|Calls to Windows API that might indicate malicious activity|Ends in `ApiCall`|
+|[Windows API calls](#Windows-API-calls)|Calls to Windows API that might indicate malicious activity|Ends in `ApiCall`|
 |[Antivirus events](#Windows-Defender-Antivirus-events)|Windows Defender Antivirus events, including scans and detections|Starts with `Antivirus` or `Amsi`|
 |[Attack surface reduction events](#Attack-surface-reduction-events)|Events associated with Attack surface reduction (ASR) rule detections, whether the rule is in audit or block mode |Starts with `Asr`|
 |[Controlled folder access events](#Controlled-folder-access-events)|Violations of controlled folder access policies designed to prevent unwanted changes to protected folders|Starts with `ControlledFolderAccess`|
@@ -95,13 +95,40 @@ The following is the MiscEvent schema. The specific ActionType will dictate whic
 |[Exploit protection events](#Exploit-protection-events)|Possible exploitation detected or blocked by exploit protection|Starts with `ExploitGuard`|
 |[Uncategorized events](#Uncategorized-events)|Various kinds of system activity that might be associated with attacks|No special convention, examples include `PowerShellCommand` `BrowserLaunchedToOpenUrl`, `LdapSearch` and `GetClipboardData`|
 
-# Windows API calls
+## Windows API calls
 
+|Event type (ActionType)|Description|Notable info in AdditionalFields|
+|---|---|---|
+|`CreateRemoteThreadApiCall`|The CreateRemoteThread function was called and might have been used to inject a thread in the virtual address space of another process.|`TargetProcess`, `CreationTimeUtc`, `CommandLine`, `TokenElevationType`, `IntegrityLevel`, `Account_Sid`|
+|`NtAllocateVirtualMemoryApiCall`|Memory was allocated for a process.|`TargetProcess`, `CreationTimeUtc`, `CommandLine`, `TokenElevationType`, `IntegrityLevel`, `Account_Sid`|
+|`NtAllocateVirtualMemoryRemoteApiCall`|Memory was allocated for a process remotely.|`TargetProcess`, `CreationTimeUtc`, `CommandLine`|
+|`NtMapViewOfSectionRemoteApiCall`|A section of a process's memory was mapped by calling the function NtMapViewOfSection. This activity can indicate an attempt to perform process injection.|`TargetProcess`, `CreationTimeUtc`, `CommandLine`|
+|`OpenProcessApiCall`|The OpenProcess function was called, indicating an attempt to open a handle to a local process and potentially manipulate that process.|`TargetProcess`, `CreationTimeUtc`, `CommandLine`|
+|`QueueUserApcRemoteApiCall`|An asynchronous procedure call (APC) was scheduled to execute in a user-mode thread.|`TargetProcess`, `CreationTimeUtc`, `CommandLine`|
+|`ReadProcessMemoryApiCall`|The ReadProcessMemory function was called, indicating that a process read data from the process memory of another process.|`TotalBytesCopied`|
+|`SetThreadContextRemoteApiCall`|The context of a thread was set from a user mode process. This activity can indicate an attempt to perform process hollowing or process injection.|`TargetProcess`, `CreationTimeUtc`, `CommandLine`|
+|`WriteProcessMemoryApiCall`|The WriteProcessMemory function was called, indicating that a process has written data into memory for another process.|`TotalBytesCopied`|
+|`GetAsyncKeyStateApiCall`|The GetAsyncKeyState function was called. Some keyloggers use this function to obtain the states of input keys and buttons.|`BackgroundCallCount`|
+|`NtProtectVirtualMemoryApiCall`|**TBD**|**TBD**|
+
+## Windows Defender Antivirus events
+
+|Event type (ActionType)|Description|Notable info in AdditionalFields|
+|---|---|---|
+|`AmsiScriptDetection`|A script was flagged as potentially malicious by Windows Defender Antivirus based on script analysis data from the Antimalware Scan Interface (AMSI). **NEEDS REVIEW, NOT IN TABLE**|`Description`|
+|`AntivirusScanFailed`|A Windows Defender Antivirus scan did not complete successfully.|`Domain`, `Scan ID`, `Scan Parameters Index`, `Scan Type Index`, `User`, `Error Code`, `Error Description`|
+|`AntivirusScanCompleted`|A Windows Defender Antivirus scan completed successfully.|`Domain`, `Scan ID`, `Scan Parameters Index`, `Scan Type Index`, `User`|
+|`AntivirusScanCancelled`|A Windows Defender Antivirus scan was cancelled.|`Domain`, `Scan ID`, `Scan Parameters Index`, `Scan Type Index`, `User`|
+|`AntivirusDetection`|Windows Defender Antivirus detected a threat.|`InitiatingProcess`, `ThreatName`, `WasExecutingWhileDetected`, `Action`, `WasRemediated`, `RegistryKey`, `RegistryValueName`, `RegistryValueData`, `ResourceSchema`, `Container`, `Service`, `ReportSource` **TBD-MULTIPLE VARIANTS OF THIS ACTIONTYPE WITH VARYING ADDTLINFO**|
+
+
+
+# Windows API calls - **Verbose DRAFT**
 
 ## CreateRemoteThreadApiCall
 
 ### Description
-CreateRemoteThread injection was performed
+The CreateRemoteThread function was called and might have been used to inject a thread in the virtual address space of another process.
 
 ### Event capture logic
 Unknown
@@ -182,7 +209,7 @@ Event ID: 3
 ## OpenProcessApiCall
 
 ### Description
-A handle to a process was requested.
+The OpenProcess function was called, indicating an attempt to open a handle to a local process and potentially manipulate that process.
 
 ### Event capture logic
 This event will only be captured when obtaining a handle to lsass, SenseCncProxy, SenseSampleUploader, MsSense, SenseIr, TrustedInstaller
@@ -290,13 +317,13 @@ Event ID: 1003
 * BackgroundCallCount - presumably the number of times GetAsyncKeyState was called in between actual keystrokes being supplied.
 
 
-# Windows Defender Antivirus events
+# Windows Defender Antivirus events - **VERBOSE DRAFT**
 
 
 ## AmsiScriptDetection
 
 ### Description
-An AV signature flagged based on an AMSI data source.
+A script was flagged as potentially malicious by Windows Defender Antivirus based on script analysis data from the Antimalware Scan Interface (AMSI). **NEEDS REVIEW, NOT IN TABLE**
 
 ### Event capture logic
 Unknown
@@ -319,7 +346,7 @@ Unknown
 ## AntivirusDetection
 
 ### Description
-An AV signature flagged.
+Windows Defender Antivirus detected a threat.
 
 ### Event capture logic
 Unknown
@@ -1216,6 +1243,8 @@ The firewall blocked an inbound connection.
 An attempt to change a user password was made.
 ## LogonRightsSettingEnabled
 Interactive logon rights on the machine were granted to a user.
+## NtProtectVirtualMemoryApiCall
+???
 
 ## Related topics
 - [Proactively hunt for threats](advanced-hunting.md)
