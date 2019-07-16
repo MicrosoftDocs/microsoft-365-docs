@@ -42,7 +42,6 @@ The links to devices here are for your reference only. If you want to order devi
 | [Surface Book 2](https://www.microsoft.com/en-us/p/surface-book-2-for-business/8x4htznfgg38/lbh3?cid=msft_web_collection&CustomerIntent=Consumer) | 512 GB / Intel i7 / 16 GB RAM | 15-inch display | Nov 16, 2019 | Nov 16, 2022 |
 | [Surface Go](https://www.microsoft.com/en-us/p/surface-go-for-business/909wr0x3sgfk/8khl?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab) | 128 GB / Intel 4415Y / 8GB RAM | None | Aug 2, 2020 | Aug 2, 2023 |
 | [Surface Laptop 2](https://www.microsoft.com/en-us/p/surface-laptop-2-for-business/8xlk0g60tlb6/hkq9?cid=msft_web_collection&CustomerIntent=Consumer) | 256 GB / Intel i5 / 8 GB RAM | None | Oct 16, 2020 | Oct 16, 2023 |
-|[Surface Pro (5th Gen)](https://www.microsoft.com/en-us/p/surface-pro-5th-gen-for-business/907tds4dgwwv/kkzn?cid=msft_web_collection&CustomerIntent=Consumer) | 256 GB / Intel i5 / 8 GB RAM | None | **Jun 15, 2019** | Jun 15, 2022 |
 | [Surface Pro 6](https://www.microsoft.com/en-us/p/surface-pro-6-for-business/8xjq3d3lrp0r/grf9?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab) | 256 GB / Intel i5 / 8 GB RAM | None | Oct 16, 2020 | Oct 16, 2023 |
 
 In addition, the device must also:     
