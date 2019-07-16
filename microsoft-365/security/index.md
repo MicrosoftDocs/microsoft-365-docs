@@ -1,22 +1,16 @@
----
-title: Security solutions
-description: Protect devices, identity, data and applications using Microsft 365 security solutions
-keywords: security, solution, cyber security, advanced persistent threat, enterprise security, devices, device, identity, users, data, applications, incidents, automated investigation and remediation, advanced hunting
-search.product: eADQiWindows 10XVcnh
+--- 
+layout: HubPage
+hide_bc: true
+description: Office documentation for admins & IT professionals
+ms.author: robmazz
+author: robmazz
+ms.topic: hub-page
+keywords: Microsoft 365, Microsoft 365 Enterprise, Microsoft 365 documentation, Office 365, Windows 10 Enterprise, EMS, Enterprise Mobility + Security, enterprise
+localization_priority: Normal
+audience: microsoft-business
 ms.prod: microsoft-365-enterprise
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
-ms.localizationpriority: medium
-manager: dansimp
-audience: ITPro
-ms.collection: M365-security-compliance 
-ms.topic: conceptual
-search.appverid: 
-- MOE150
-- MET150
+title: Microsoft 365 Enterprise documentation and resources
+description: Learn about the product documentation and resources available for Microsoft 365 Enterprise IT admins, information workers, and partners.
 ---
 
 <div id="main" class="v2">
