@@ -12,7 +12,7 @@ ms.prod: microsoft-365-enterprise
 ---
 
 # Microsoft 365 Security
-Learn about the robust security solutions and services in Microsoft  365 so that you can better protect your enterprise across attack surfaces. 
+Learn about the robust security solutions and services in Microsoft  365 Security so that you can better protect your enterprise across attack surfaces. 
 
 <ul class="cardsF panelContent">
     <li>
