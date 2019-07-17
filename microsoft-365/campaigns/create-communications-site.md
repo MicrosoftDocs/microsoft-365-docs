@@ -49,7 +49,7 @@ The following links for PowerPoint and PDF can be downloaded and printed in tabl
 
 ## Set it up
 
-1. Sign in to http://Office.com.
+1. Sign in to https://Office.com.
 2. In the top left corner of the page, select the app launcher icon and then select the **SharePoint** tile. If you don't see the **SharePoint** tile, click the **Sites** tile or **All** if SharePoint is not visible.
 3. At the top of the SharePoint home page, click **+ Create site** and choose the **Communication site** option.
 
