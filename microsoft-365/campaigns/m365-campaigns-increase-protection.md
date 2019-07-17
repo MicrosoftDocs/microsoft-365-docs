@@ -70,7 +70,7 @@ To create a mail transport rule:
     
 4. Click **More options** at the bottom of the dialog box to see the full set of options. 
     
-5. Apply the settings in the following table for the rule. Leave the rest of the settings at the default, unless you want to change these.
+5. Apply the settings in the following table for the rule. Leave the rest of the settings at the default, unless you want to change them.
     
 6. Click **Save**.
     
@@ -104,7 +104,7 @@ To create a mail transport rule, either watch [this short video](https://support
     
 4. Click **More options** at the bottom of the dialog box to see the full set of options. 
     
-5. Apply the settings in the following table. Leave the rest of the settings at the default, unless you want to change these.
+5. Apply the settings in the following table. Leave the rest of the settings at the default, unless you want to change them.
     
 6. Click **Save**.
     
@@ -252,7 +252,7 @@ For more information, see [Office 365 ATP safe links](https://go.microsoft.com/f
 
 After you turn on the audit log search in the Security &amp; Compliance center, you can retain the admin and other user activity in the log and search it. 
 
-You have to be assigned the Audit Logs role in Exchange Online to turn audit log search on or off in your Microsoft 365 Business subscription. By default, this role is assigned to the Compliance Management and Organization Management role groups on the Permissions page in the Exchange admin center. Global admins in Microsoft 365 are members of this group by default.
+You must be assigned the Audit Logs role in Exchange Online to turn audit log search on or off in your Microsoft 365 Business subscription. By default, this role is assigned to the Compliance Management and Organization Management role groups on the Permissions page in the Exchange admin center. Global admins in Microsoft 365 are members of this group by default.
 
 1. To turn on the audit log search on, go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> and then choose **Compliance** under **Admin centers** in the left nav. 
 2. On the **Microsoft 365 compliance** page, choose **More resources**, and then **Open** on the **Office 365 security &amp; center** card.
@@ -261,21 +261,21 @@ You have to be assigned the Audit Logs role in Exchange Online to turn audit log
 3. On the security and compliance page, choose **Search** and then **Audit log search**.
 1. On the top of the **Audit log search** page, choose **Turn on auditing**.
 
-After the feature is turned on you can search for files, folders, and many activities. For more information, see [search the audit log](https://docs.microsoft.com/office365/securitycompliance/search-the-audit-log-in-security-and-compliance).
+After the feature is turned on, you can search for files, folders, and many activities. For more information, see [search the audit log](https://docs.microsoft.com/office365/securitycompliance/search-the-audit-log-in-security-and-compliance).
 
 ## Tune-up anonymous sharing settings for SharePoint and OneDrive files and folders
 
 (change default anonymous link expiration to 14 days, change default sharing type to "Specific People")
 To change the sharing settings for OneDrive and SharePoint:
 1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> and then choose **SharePoint** under **Admin centers** in the left nav. 
-2. In the SharePoint Admin center, go to **Policies** \> **Sharing**.
+2. In the SharePoint admin center, go to **Policies** \> **Sharing**.
 3. On the **Sharing** page, under **File and folder links**, select **Specific people**, and under **Advanced settings for "Anyone" links**, select **These links must expire within this many days**, and type in 14 (or another number of days you want to restrict the link lifetime to).
 
     ![Choose Specific people and set link expiration to 14 days.](media/anyonelinks.png)
 
 ## Activity alerts
 
-You can use activity alerts to track admin and user activities and detect malware and data loss prevention incidents in your organization. Your subscription includes a set of default policies, but you can also create custom ones too. For more information, see [alert policies](https://docs.microsoft.com/office365/securitycompliance/alert-policies). For example, if you store an important file in SharePoint that you don't want anyone to share externally, you can create a notification that alerts you if someone does share it.
+You can use activity alerts to track admin and user activities and detect malware and data loss prevention incidents in your organization. Your subscription includes a set of default policies, but you can also create custom ones. For more information, see [alert policies](https://docs.microsoft.com/office365/securitycompliance/alert-policies). For example, if you store an important file in SharePoint that you don't want anyone to share externally, you can create a notification that alerts you if someone does share it.
 
 The following figure shows the default policies that are included with Microsoft 365 Business. <br/><br/>
     ![Default alert policies included with Microsoft 365 Business.](media/alertpolicies.png)
@@ -285,8 +285,8 @@ The following figure shows the default policies that are included with Microsoft
 You can prevent people in your organization from sharing their calendars, or you can also manage what they can share. For example, you can restrict the sharing to free/busy times only.
 
 1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> and choose **Settings** \> **Services & add-ins**
-2. On the **Services & add-ins** page choose **Calendar**, and choose if people in your organization can share their calendars with people outside who have Office 365 or Exchange, or with anyone. 
-    If you choose the share with anyone you can decide to also only share free/busy information.
+2. On the **Services & add-ins** page choose **Calendar**, and choose whether people in your organization can share their calendars with people outside who have Office 365 or Exchange, or with anyone. 
+    If you choose the share with anyone, you can decide to also only share free/busy information.
 
 3. Choose **Save changes** on the bottom of the page.
 
