@@ -11,28 +11,21 @@ ms.localizationpriority: normal
 
 Many organizations find it valuable to structure their IT services along the lines of a formalized IT Service Model (ITSM), such as [ITIL](https://www.axelos.com/best-practice-solutions/itil). 
 
-Microsoft Managed Desktop enables your organization to comply with many key aspects of such formalized ITSM models. Using ITIL as an example, this topic helps you see the connections between common ITSM phases and processes and the equivalent Microsoft Managed Desktop features.
+Microsoft Managed Desktop enables your organization to comply with many key aspects of such formalized ITSM models. Using ITIL as an example, this topic helps you see the connections between common ITSM phases and processes and equivalent Microsoft Managed Desktop features, where applicable.
 
-For your reference, these are the lifecycle phases described in ITIL:
-
-- Service strategy processes: The "service strategy" includes processes such as strategy management, service portfolio management, financial management (for IT), demand management, and business relationship management.
-- [Service design](#service-design): what is
-- [Service transition](#service-transition): what is
-- [Service operation](#service-operation): what is
-- Continual service improvement: what is
 
 ## Service design
 
-This table relates the key ITIL phases and processes to Microsoft Managed Desktop features, with links to our documentation for details:
+This table relates key ITIL phases and processes to Microsoft Managed Desktop features, with links to our documentation for details:
 
 
 
 |ITIL process |Description  |Documentation |
 |---------|---------|---------|
 |Service-level management     | Response times are defined for admin support requests and incidents.  |  [Admin support for Microsoft Managed Desktop](working-with-managed-desktop/admin-support.md)  |
-|Service catalog management     | Service description detailing components of the service is kept true to state of the service, available to all current and interested customers. Pre-requisites detailed to understand what is needed to operate the service.  | [Microsoft Managed Desktop service description](service-description/index.md)<br>[Get ready for enrollment in Microsoft Managed Desktop](get-ready/index.md)  |
-|Information security management     | Security information, including information security for the service. Security-related policies and other information on how devices are configured.   | [Security in Microsoft Managed Desktop](service-description/security.md)<br>[Device configuration](service-description/device-policies.md)  |
-|Availability management     |  Microsoft Managed Desktop balances responsibility with your organization to ensure availability of service. Admins and end users have routes to respective support in case of service or availability issues. | [Microsoft Managed Desktop operations and monitoring](service-description/operations-and-monitoring.md) [admin support] [user support]       |
+|Service catalog management     | Service description detailing components of the service is kept true to state of the service, available to all current and interested customers. Pre-requisites detailed to understand what is needed to operate the service.  | - [Microsoft Managed Desktop service description](service-description/index.md)<br>- [Get ready for enrollment in Microsoft Managed Desktop](get-ready/index.md)  |
+|Information security management     | Security information, including information security for the service. Security-related policies and other information on how devices are configured.   | - [Security in Microsoft Managed Desktop](service-description/security.md)<br>- [Device configuration](service-description/device-policies.md)  |
+|Availability management     |  Microsoft Managed Desktop balances responsibility with your organization to ensure availability of service. Admins and end users have routes to respective support in case of service or availability issues. | - [Microsoft Managed Desktop operations and monitoring](service-description/operations-and-monitoring.md)<br>- [admin support]<br>- [user support]       |
 
 
 
@@ -53,7 +46,7 @@ This table relates the key ITIL phases and processes to Microsoft Managed Deskto
 
 |ITIL process |Description  |Documentation  |
 |---------|---------|---------|
-|Event management     |  Details on monitoring of devices are provided. Standard operating procedures for the Microsoft Managed Desktop service are detailed. |  [Security in Microsoft Managed Desktop](service-description/security.md)<br>[Microsoft Managed Desktop operations and monitoring](service-description/operations-and-monitoring.md)       |
+|Event management     |  Details on monitoring of devices are provided. Standard operating procedures for the Microsoft Managed Desktop service are detailed. |  - [Security in Microsoft Managed Desktop](service-description/security.md)<br>- [Microsoft Managed Desktop operations and monitoring](service-description/operations-and-monitoring.md)       |
 |Incident management  | Microsoft Managed Desktop will investigate and act on incidents per defined severity definitions.  |  [Support request severity definitions](working-with-managed-desktop/admin-support.md#support-request-severity-definitions)       |
 |Request fulfillment management     |  Process for requests for information and change requests related to the Microsoft Managed Desktop service are defined.         |[Admin support for Microsoft Managed Desktop](working-with-managed-desktop/admin-support.md)         |
 |Problem management     | Problems should be addressed to local account teams at this time. | {??????}        |
