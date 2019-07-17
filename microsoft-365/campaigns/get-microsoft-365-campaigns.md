@@ -49,7 +49,7 @@ There is no minimum time commitment when you sign up for Microsoft 365 for Campa
 
 ## How do I qualify for special pricing?
 
-1. Go to https://m365forcampaigns.microsoft.com/ and provide a few details about your organization. The details you provide will help us to verify that you represent a national-level political campaign or party in the United States. There's no commitment when you complete this form. 
+1. Go to https://m365forcampaigns.microsoft.com/ and provide a few details about your organization. The details you provide help us to verify that you represent a national-level political campaign or party in the United States. There's no commitment when you complete this form. 
 2. After you've completed the form, it takes us a few days to review your information. 
 3. After we've verified that you represent a national-level political campaign or party, you'll receive an email invitation from Microsoft. Your invite includes a sign-up link specific to your organization. 
 

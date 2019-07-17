@@ -25,7 +25,7 @@ description: "Protect against phishing and other attacks with Microsoft 365 for 
 
 # Protect unmanaged Windows 10 PCs and Macs
 
-You can manage Windows 10 PCs and Macs by enrolling these into Microsoft Intune, which allows you to ensure these are healthy and secure before accessing data in your environment. However, many campaigns and small businesses include staff that bring their own devices (byod) which will not be managed by the organization. For these unmanaged PCs and Macs, use this article to ensure minimum security capabilities are configured. 
+You can manage Windows 10 PCs and Macs by enrolling them into Microsoft Intune, which allows you to ensure tht they are healthy and secure before accessing data in your environment. However, many campaigns and small businesses include staff that bring their own devices (byod), which will not be managed by the organization. For these unmanaged PCs and Macs, use this article to ensure that minimum security capabilities are configured. 
 
 <!--A Windows 10 PC is considered managed after you have completed the following two steps:
 
@@ -64,9 +64,9 @@ You should always run Windows Firewall even if you have another firewall turned 
 Disk encryption protects data when devices are lost or stolen. FileVault full-disk encryption helps prevent unauthorized access to the information on your startup disk. See [use FileVault to encrypt the startup disk on your Mac](https://support.apple.com/HT204837) for instructions.
 
 **Protect your mac from malware**<p>
-Microsoft recommends you install and use reliable antivirus software on your Mac. See the following article for a list of choices: [Best Mac antivirus 2019 ](https://www.macworld.co.uk/feature/mac-software/mac-antivirus-3672182/).
+Microsoft recommends that you install and use reliable antivirus software on your Mac. See the following article for a list of choices: [Best Mac antivirus 2019 ](https://www.macworld.co.uk/feature/mac-software/mac-antivirus-3672182/).
 
 You can also reduce the risk of malware by using software only from reliable sources. The settings in Security & Privacy preferences allow you to specify the sources of software installed on your Mac. See [protect your Mac from malware](https://support.apple.com/kb/PH25087) for more information.
 
 **Turn on firewall protection**<p>
-Use firewall settings to protect your Mac from unwanted contact initiated by other computers when you’re connected to the Internet or a network. Without this protection your Mac might be more vulnerable to unauthorized access. See [about the application firewall](https://support.apple.com/HT201642) for instructions.
+Use firewall settings to protect your Mac from unwanted contact initiated by other computers when you’re connected to the Internet or a network. Without this protection, your Mac might be more vulnerable to unauthorized access. See [about the application firewall](https://support.apple.com/HT201642) for instructions.
