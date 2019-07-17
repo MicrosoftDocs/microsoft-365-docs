@@ -85,7 +85,7 @@ Learn about the robust security solutions and services in Microsoft  365 so that
 							</div>
 						</div>
 						<div class="cardText">
-							<h3>Microsoft Defender Advanced Threat Protection</h3>
+							<h3>Microsoft Defender ATP</h3>
 							<P><a href="https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection" target="_blank">What is Microsft Defender Advanced Threat Protection?</a></p>
 							<P><a href="https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/get-started" target="_blank">Get started</a></p>
 							<P><a href="https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/onboard" target="_blank">Configure and manage capabilities</a></p>
