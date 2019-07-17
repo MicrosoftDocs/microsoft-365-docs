@@ -1,16 +1,14 @@
 --- 
-layout: HubPage
-hide_bc: true
-description: Microsoft 365 Security documentation
+title: Microsoft 365 Security
+description: Learn about the robust security solutions and services in Microsoft  365 so that you can better protect your enterprise across attack surfaces. 
 ms.author: macapara
 author: mjcaparas
-ms.topic: hub-page
+layout: LandingPage
+ms.topic: landing-page
 keywords: Microsoft 365, Microsoft 365 Enterprise, Microsoft 365 documentation, security, m365, security center, mdatp, microsoft defender atp, mcas, office atp, azure atp, advanced, threat, protection, advanced threat protection
 localization_priority: Normal
 audience: microsoft-business
 ms.prod: microsoft-365-enterprise
-title: Microsoft 365 Security
-description: Learn about the robust security solutions and services in Microsoft  365 so that you can better protect your enterprise across attack surfaces. 
 ---
 
 # Microsoft 365 Security
