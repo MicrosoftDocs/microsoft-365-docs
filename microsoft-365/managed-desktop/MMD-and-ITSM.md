@@ -11,7 +11,7 @@ ms.localizationpriority: normal
 
 Many organizations find it valuable to structure their IT services along the lines of a formalized IT Service Model (ITSM), such as [ITIL](https://www.axelos.com/best-practice-solutions/itil). 
 
-Microsoft Managed Desktop enables your organization to comply with many key aspects of such formalized ITSM models. Using ITIL as an example, this topic helps you see the connections between common ITSL phases and processes and equivalent Microsoft Managed Desktop features, where applicable. This only applies to the Microsoft Managed Desktop portion of your organization.
+Microsoft Managed Desktop enables your organization to comply with many key aspects of such formalized ITSM models. Using ITIL as an example, this topic helps you see the connections between common ITIL phases and processes and equivalent Microsoft Managed Desktop features, where applicable. This only applies to the Microsoft Managed Desktop portion of your organization.
 
 For more comprehensive about ITIL and its phases and process see their [documentation](https://www.axelos.com/best-practice-solutions/itil).
 
