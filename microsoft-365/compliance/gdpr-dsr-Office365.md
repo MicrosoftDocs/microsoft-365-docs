@@ -582,14 +582,14 @@ After you delete an Office 365 user account:
 
 Like the soft-deletion and hard-deletion of data that was described in the previous section on deleting personal data, when you delete a user account, there is also a soft-deleted and hard-deleted state.
 
-- When you initially delete a user account (by deleting the user in the Office 365 admin center or in the Azure portal), the user account is soft-deleted, and moved the Recycle Bin in Azure for up to 30 days. At this point, the user account can be restored.
+- When you initially delete a user account (by deleting the user in the admin center or in the Azure portal), the user account is soft-deleted, and moved the Recycle Bin in Azure for up to 30 days. At this point, the user account can be restored.
 - If you permanently deleted the user account, the user account is hard-deleted and removed from the Recycle Bin in Azure. At this point, the user account can't be restored, and any data associated with the user account will be permanently removed from the Microsoft cloud. System-generated logs about the data subject will be deleted after the user account is hard-deleted.
 
 Here’s the high-level process for deleting a user from your Office 365 organization.
 
-1. Go to the Office 365 admin center or the Azure portal and locate the user.
+1. Go to the admin center or the Azure portal and locate the user.
 
-2. Delete the user. When you initially delete the user, the user’s account is sent to the Recycle Bin. At this point, the user is soft-deleted. The account is retained in the soft-deleted for 30 days, which allows you to restore the account. After 30 days, the account is automatically hard-deleted. For specific instructions, see [Delete users from Azure AD](https://docs.microsoft.com/azure/active-directory/add-users-azure-active-directory).<br><br> You can also soft-delete a user account in the Office 365 admin center. See [Delete a user from your organization](https://support.office.com/article/Delete-a-user-from-your-organization-D5155593-3BAC-4D8D-9D8B-F4513A81479E).
+2. Delete the user. When you initially delete the user, the user’s account is sent to the Recycle Bin. At this point, the user is soft-deleted. The account is retained in the soft-deleted for 30 days, which allows you to restore the account. After 30 days, the account is automatically hard-deleted. For specific instructions, see [Delete users from Azure AD](https://docs.microsoft.com/azure/active-directory/add-users-azure-active-directory).<br><br> You can also soft-delete a user account in the admin center. See [Delete a user from your organization](https://support.office.com/article/Delete-a-user-from-your-organization-D5155593-3BAC-4D8D-9D8B-F4513A81479E).
 
 3. If you don't want to wait for 30-days for the user account to be hard-deleted, you can manually hard-delete it. To do this in the Azure portal, go to the Recently deleted users list and permanently delete the user. At this point, the user is hard-deleted. For instructions, see [How to permanently delete a recently deleted user](https://docs.microsoft.com/azure/active-directory/active-directory-users-restore).
 
@@ -713,7 +713,7 @@ To export data corresponding to the business owner, staff and customers, you can
 
 You can delete the following types of Bookings data in response to a DSR deleting request:
 
-- **Business profile information and contacts:** You can delete the Bookings mailbox in the Office 365 admin center. After you delete the mailbox, you can restore it with 30 days. After 30 days, the account and the corresponding mailbox are permanently deleted. For details about deleting a user account, see the section [Deleting a user](#deleting-a-user).
+- **Business profile information and contacts:** You can delete the Bookings mailbox in the admin center. After you delete the mailbox, you can restore it with 30 days. After 30 days, the account and the corresponding mailbox are permanently deleted. For details about deleting a user account, see the section [Deleting a user](#deleting-a-user).
 - **Staff details:** You can delete staff from the Bookings dashboard. To permanently detail staff, you can delete their Office 365 account.
 - **Bookings events:** You can delete bookings events from the Bookings calendar, which will remove the customer’s information.
 - **Meeting requests, email confirmations/cancellations/updates, and email reminders:** You can delete these from the Bookings calendar, which will remove the customer’s information.
@@ -1345,10 +1345,10 @@ To assign administrator or owner permissions to a SharePoint Online site so that
 
 #### OneDrive for Business
 
-An Office 365 global admin can access a user’s OneDrive for Business account by using the Office 365 admin center.
+An Office 365 global admin can access a user’s OneDrive for Business account by using the .
 
 1. Sign in to Office 365 with your global admin credentials.
-2. Go to the Office 365 admin center.
+2. Go to the admin center.
 3. Go to **Active users** and select the user.
 4. Expand **OneDrive for Business Settings** in the details pane, and then click **Access files**.
 5. Click the URL to go to the user’s OneDrive for Business account.
@@ -1381,7 +1381,7 @@ IT admins can also correct certain personal properties associated with a documen
 User information from the SharePoint User Profile or Office 365 is often associated with OneDrive for Business and SharePoint Online documents to represent that person. For example, a user's name in a Created By or Modified By People column for a document or list item. This user information can be rectified in several ways, depending on the source:
 
 - Rectify user properties in their own on-premises Active Directory. For customers syncing user properties such as user Display Name, First Name, etc. from an on-premises AD, those properties should be rectified there. Appropriately mapped properties flow into Office 365, and then OneDrive for Business and SharePoint Online.
-- Rectify user properties in the Office 365 Admin Center. Changes made to account information there will automatically be reflected in OneDrive for Business and SharePoint Online experiences. For info, see [Add or change profile information for a user in Azure Active Directory](https://go.microsoft.com/fwlink/?linkid=864809). For properties sourced in Office 365, no changes can be made on the SharePoint side.
+- Rectify user properties in the admin center. Changes made to account information there will automatically be reflected in OneDrive for Business and SharePoint Online experiences. For info, see [Add or change profile information for a user in Azure Active Directory](https://go.microsoft.com/fwlink/?linkid=864809). For properties sourced in Office 365, no changes can be made on the SharePoint side.
 - Rectify user properties in the SharePoint user profile experience of the SharePoint admin center. In the user profiles tab of the SharePoint admin center, admins can click **Manage user profiles**, and look up any user's properties. Then they can choose to Edit the user's properties.
 - Rectify user properties in a custom source. Custom SharePoint profile properties may be syncing from a custom source via Microsoft Identity Manager (MIM) or another method.
 

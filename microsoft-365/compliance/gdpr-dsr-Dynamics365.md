@@ -219,7 +219,7 @@ This first step — finding and reviewing the personal data at issue — will he
 
 To find:
 
-- A user profile, go to the [Office 365 admin center](https://portal.office.com/adminportal/home). In the **Admin center**, select **Users**. On the **Active Users** page, search for the user on the list. In Social Engagement, go to **Settings \> User management** to see information that is automatically synced from Office 365.
+- A user profile, go to the [admin center](https://portal.office.com/adminportal/home). In the **Admin center**, select **Users**. On the **Active Users** page, search for the user on the list. In Social Engagement, go to **Settings \> User management** to see information that is automatically synced from Office 365.
 - The recipient of an alert, follow the first two steps in [Manage alert recipients as administrator](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/email-alerts#manage-alert-recipients-as-administrator).
 - Social profile data that has been entered by employees, go to **Settings \> Social profiles**. (For more information, see [Manage social profiles](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/manage-social-profiles).)
 - User names in Power BI, open the Social Engagement Power BI dashboard and filter by the employee name.
@@ -237,7 +237,7 @@ The GDPR gives data subjects the right to get a copy of personal data upon reque
 
 To export:
 
-- customer data from user profiles, go to the [Office 365 admin center](https://portal.office.com/adminportal/home). In the **Admin center**, select **Users.** On the **Active Users** page, search for the user whose data you wish to export. Delete all users except the target user, and then select **Export** to export the data to a .csv file where you can use Excel to view the information.
+- customer data from user profiles, go to the [admin center](https://portal.office.com/adminportal/home). In the **Admin center**, select **Users.** On the **Active Users** page, search for the user whose data you wish to export. Delete all users except the target user, and then select **Export** to export the data to a .csv file where you can use Excel to view the information.
 - Email addresses of an alert recipient (the only customer data in an alert). follow the steps in [Manage alert recipients as administrator](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/email-alerts#manage-alert-recipients-as-administrator). Then select **Export** to download an Excel list of the alerts that include this recipient.
 - User names from Power BI: [Engagement reporting](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/get-content-pack-for-power-bi) shows user names in reports of team performance on social media. To export this data, filter by the user in the PowerBI dashboard or [report](https://docs.microsoft.com/power-bi/power-bi-report-add-filter), and [export the data](https://docs.microsoft.com/power-bi/power-bi-visualization-export-data).
 
@@ -312,7 +312,7 @@ To extract the author tags that were added to a specific author, you can [export
 
 To export:
 
-- customer data from user profiles, go to the [Office 365 admin center](https://portal.office.com/adminportal/home). In the **Admin center**, select **Users.** On the **Active Users** page, search for the user whose data you wish to export. Delete all users except the target user, and then select **Export** to export the data to a .csv file where you can use Excel to view the information.
+- customer data from user profiles, go to the [admin center](https://portal.office.com/adminportal/home). In the **Admin center**, select **Users.** On the **Active Users** page, search for the user whose data you wish to export. Delete all users except the target user, and then select **Export** to export the data to a .csv file where you can use Excel to view the information.
 - Email addresses of an alert recipient (the only personal data in an alert). Follow the steps in [Manage alert recipients as administrator](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/email-alerts#manage-alert-recipients-as-administrator). Then select **Export** to download an Excel list of the alerts that include this recipient.
 - User names from Power BI: [Engagement reporting](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/get-content-pack-for-power-bi) shows user names in reports of team performance on social media. To export this data, filter by the user in the PowerBI dashboard or [report](https://docs.microsoft.com/power-bi/power-bi-report-add-filter), and [export the data](https://docs.microsoft.com/power-bi/power-bi-visualization-export-data)
 
