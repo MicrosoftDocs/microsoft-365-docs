@@ -26,7 +26,7 @@ The following are all components that are included in the required Enterprise li
 Office 365 Standard Suite (64bit)* | The standard Office Suite of applications will be shipped with the device:	Word, Excel, PowerPoint, Outlook, Publisher, Access, Skype for Business, OneNote.<br><br>The 64bit Click to Run (C2R) full versions of Microsoft Project and Microsoft Visio are not included in the Office 365 Standard Suite.  However, since the installation of these applications are dependent on the standard Office Suite installation, Microsoft Managed Desktop has created default Intune deployments and Security groups that the customer will use to deploy these applications to licensed end users.  
 Store Apps |	Microsoft Sway, Power BI Desktop are not shipped with device. These apps are available for download from Microsoft Store.
 Win32 Applications |	Power BI Pro, Azure Information Protection Client, and Microsoft Planner are not shipped with device and can be packaged for deployment by the customer. 
-Web Applications |	Yammer, Office Online, Delve, Flow, StaffHub, PowerApps are not shipped with the device. Users can access the web version of these applications with a browser.
+Web Applications |	Yammer, Office in a browser, Delve, Flow, StaffHub, PowerApps are not shipped with the device. Users can access the web version of these applications with a browser.
 Skype for Business Online Cloud PBX | This feature is available via Office 365. Microsoft Managed Desktop will not configure any aspect of this service
 
 ## Windows 10 Enterprise E5
