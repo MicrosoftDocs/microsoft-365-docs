@@ -25,7 +25,7 @@ description: "Learn how Microsoft 365 for campaigns affects your users."
 
 # How Microsoft 365 for Campaigns affects your users
 
-Microsoft 365 for Campaigns makes it much harder for hackers to gain access to your environment. The tradeoff is your users will need to be aware of how to work within this more secure environment. We understand a little extra patience is required, but it's worth it to keep your organization protected.
+Microsoft 365 for Campaigns makes it much harder for hackers to gain access to your environment. The tradeoff is that your users will need to be aware of how to work within this more secure environment. We understand a little extra patience is required, but it's worth it to keep your organization protected.
 
 ![Illustration that sums up key points from below for iPhones, Android devices, Macs, Windows 10, sharing, and key staff](media/M365-democracy-Users_700px.png)
 
@@ -52,7 +52,7 @@ It's also important that users keep their primary work device up-to-date:
 - Install the latest versions of Office desktop apps and keep these fresh with updates, when prompted. 
 - Stay on top of operating system updates, such as Windows updates.
 
-For [unmanaged Windows 10 and Mac devices](m365-campaigns-protect-pcs-macs.md), users have the responsibility to ensure basic security features are enabled.
+For [unmanaged Windows 10 and Mac devices](m365-campaigns-protect-pcs-macs.md), users have the responsibility to ensure that basic security features are enabled.
 
 **Enable basic security capabilities on BYOD Windows 10 and Mac devices**
 
@@ -64,11 +64,11 @@ For [unmanaged Windows 10 and Mac devices](m365-campaigns-protect-pcs-macs.md), 
 To learn more about these recommendations, see [Protect your account and devices from hackers and malware](https://support.office.com/en-us/article/Protect-your-account-and-devices-from-hackers-and-malware-066d6216-a56b-4f90-9af3-b3a1e9a327d6#ID0EAABAAA=Windows_10).
 
 ## Collaborate using Microsoft Teams, OneDrive, SharePoint Online, and other Office 365 tools
-Your users might be tempted to share and store your organization files in places other than Microsoft 365. Microsoft 365 makes it as easy as possible to collaborate and share securely. You can [share files and videos](share-files-and-videos.md) directly from Microsoft Teams, OneDrive, Stream, and even from within a file. Sharing from within these tools helps keep your data from leaking. You can also add additional protection to sensitive data to prevent sharing outside your organization. 
+Your users might be tempted to share and store your organization files in places other than Microsoft 365. Microsoft 365 makes it as easy as possible to collaborate and share securely. You can [share files and videos](share-files-and-videos.md) directly from Microsoft Teams, OneDrive, Stream, and even from within a file. Sharing from within these tools helps keep your data from leaking. You can add additional protection to sensitive data to prevent sharing outside your organization. 
 
 
 ## Set up managed Windows 10 devices
-We recommend your most important staff members use freshly acquired Windows 10 devices that you manage. We'll show you how to [manage and secure these devices](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json). This ensures that staff members that are the highest value target to hackers receive the most protection. 
+We recommend that your most important staff members use freshly acquired Windows 10 devices that you manage. We'll show you how to [manage and secure these devices](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json). This ensures that staff members that are the highest value target to hackers receive the most protection. 
 
 
 

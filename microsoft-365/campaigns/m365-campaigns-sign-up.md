@@ -42,7 +42,7 @@ Here's how to complete your sign-up for Microsoft 365 for Campaigns.
     > If you already have an existing Office 365 for business subscription and you want to add the Microsoft 365 for Campaigns offer to it, go to [add Microsoft 365 for Campaigns to an existing subscription](#steps-to-add-microsoft-365-for-campaigns-to-an-existing-subscription).
 1. **On the Microsoft 365 Business page**, enter your business details. For **Business email address**, use a current email address. We only need this address to stay in touch with you during the setup process. Select **Next**.
 1. **On the Create your user ID page**:
-    1. In **Username**, enter the name or alias you want for your email address. For example, you might just want to be known as Alice or Rob. In a larger campaign, AliceC or AliceChavez might make more sense.
+    1. In **Username**, enter the name or alias you want for your email address. For example, you might want to be known as just Alice, or Rob. In a larger campaign, AliceC or AliceChavez might make more sense.
     2. In **Your company**, enter the name of the campaign you work for. For example, ContosoCampaign. If you already own a domain, use that name here. 
     3. In **Select a domain**, select **.onmicrosoft.com** for now. We can set you up with a domain later, or help you get Microsoft 365 connected to a domain that you already own.
     4. Create a password and select **Create my account**. 
@@ -58,7 +58,7 @@ Here's how to complete your sign-up for Microsoft 365 for Campaigns.
     1. Verify the cost per user is $5.00. 
     2. If you only want to set yourself up for now, select **Next**. 
     3. Optional: Add some extra licenses now by changing the number in the **user** field. [The staff you work with can be assigned licenses to Microsoft 365](../business/add-users-m365b.md?toc=/microsoft-365/campaigns/toc.json) at any time.
-7. **How do you want to pay? page**: Select **New credit card**, enter your business credit card details, and select **Place order**. It's also possible to use a bank account if you prefer.
+7. **How do you want to pay? page**: Select **New credit card**, enter your business credit card details, and select **Place order**. If you prefer, it's also possible to use a bank account.
 8. **This may take a moment page**: You'll find details about where to sign in and your user ID. We'll also send this information to the email address that you entered during step 2 above.
 
 Your sign-up steps are complete! 

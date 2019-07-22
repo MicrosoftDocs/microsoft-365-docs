@@ -25,12 +25,12 @@ description: "Protect against phishing and other attacks with Microsoft 365 for 
 
 # Protect yourself against phishing and other attacks
 
-Microsoft 365 includes a lot of protections to guard against attacks, but there are things you can do yourself to limit and minimize the risk of online attacks.
+Microsoft 365 includes many protections to guard against attacks, but there are things you can do yourself to limit and minimize the risk of online attacks.
 
-- **Spam or junk mail** There are many reasons you might receive junk e-mail and not all junk mail is the same. However, you can reduce what gets through to you, and thus reduce the risks of attacks by filtering out junk mail.
+- **Spam or junk mail** There are many reasons you might receive junk e-mail and not all junk mail is the same. However, you can reduce what gets through to you, and thus reduce the risks of attacks, by filtering out junk mail.
 - **Phishing** A phishing scam is an email that seems legitimate but is an attempt to get your personal information or steal your money.
 - **Spoofing** Scammers can also use a technique called spoofing to make it appear as if you've received an email from yourself. 
-- **Malware** is malicious software that can be installed on your computer - usually installed after you've clicked a link or opened a document from an email. There are various types of malware (for example, ransomware, when your computer is taken over), but you don't want to have any of them. 
+- **Malware** is malicious software that can be installed on your computer, usually installed after you've clicked a link or opened a document from an email. There are various types of malware (for example, ransomware, when your computer is taken over), but you don't want to have any of them. 
 
 
 ## Best practices
@@ -42,7 +42,7 @@ Follow these [10 tips on how to help reduce spam](https://support.office.com/en-
 **Report it!**
 
 Report any phishing or other scam emails you receive. 
-Select the message, and choose **Report message** on the ribbon to report the message sender and then block the message.
+Select the message, and choose **Report message** on the ribbon.
 Here's more information about [reporting junk and phishing emails](https://support.office.com/en-us/article/Use-the-Report-Message-add-in-b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
 
 **Avoid phishing**
@@ -56,13 +56,13 @@ Read about five common types of scams in [Deal with abuse, phishing, or spoofing
 
 **Make sure your emails look legitimate to others**
 
-Help your customers trust your communications - add a digital signature to prove that it's coming from you. See [Secure messages by using a digital signature](https://support.office.com/en-us/article/secure-messages-by-using-a-digital-signature-549ca2f1-a68f-4366-85fa-b3f4b5856fc6).
+Help your customers trust your communications by adding a digital signature to prove that it's coming from you. See [Secure messages by using a digital signature](https://support.office.com/en-us/article/secure-messages-by-using-a-digital-signature-549ca2f1-a68f-4366-85fa-b3f4b5856fc6).
 
 ## Help protect your campaign from online threats
 
 Download this infographic with tips for you and the members of your campaign team:
 
-[![Image for help protect your campaign info graphic](media/M365-Campaigns-WhatCanUsersDoToSecure-358x201.png)](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf)
+[!The help protect your campaign info graphic](media/M365-Campaigns-WhatCanUsersDoToSecure-358x201.png)](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf)
 
 [PDF](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf) | [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/live/m365-democracy/microsoft-365/campaigns/downloads/M365CampaignsWhatCanUsersDoToSecure.pptx)
 

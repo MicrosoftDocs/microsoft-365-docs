@@ -31,11 +31,11 @@ Microsoft Teams is a collaboration app that helps your staff stay organized and 
 
 As an example, campaigns can create the following teams to communicate and collaborate securely:
 
-1. **A Campaign Leads team** - set this up as a private team so that only your key campaign members can access it and discuss potentially sensitive concerns.
-2. **A general Campaign team** - this is for everyone to use for day to day communications and work. Individuals, groups, or committees can set up channels in this team to do their work. For example, the event planning people can set up a channel to chat and coordinate logistics for campaign events.
-3. **A partners team** - one where you can coordinate with your vendors, partners, or volunteers without allowing them into anything sensitive.
+1. **A Campaign Leads team:** Set this up as a private team so that only your key campaign members can access it and discuss potentially sensitive concerns.
+2. **A general Campaign team:** This is for everyone to use for day to day communications and work. Individuals, groups, or committees can set up channels in this team to do their work. For example, the event planning people can set up a channel to chat and coordinate logistics for campaign events.
+3. **A partners team:** This is a team where you can coordinate with your vendors, partners, or volunteers without allowing them into anything sensitive.
 
-You can also create teams for specific projects and apply the right amount of protection based on who needs to be included. 
+You can also create teams for specific projects and apply the right amount of protection based on who should be included. 
 
 ![Diagram of a Microsoft Teams window with three separate teams to allow for secure communication and collaboration](media/m365-democracy-teams-collab.png)
 
@@ -48,13 +48,13 @@ When you create a team, here's what else gets created:
 - Ties into other Office 365 apps such as Planner and Power BI
 
 Inside Microsoft Teams, you can find:
-1. **Teams** - Find channels to belong to or create your own. Inside channels you can hold on-the-spot meetings, have conversations, and share files.
+1. **Teams:** Find channels to belong to or create your own. Inside channels you can hold on-the-spot meetings, have conversations, and share files.
 
-2. **Meetings** - See everything you've got lined up for the day or week. Or, schedule a meeting. This calendar syncs with your Outlook calendar.
+2. **Meetings:** See everything you've got lined up for the day or week. Or, schedule a meeting. This calendar syncs with your Outlook calendar.
  
-3. **Calls** - In some cases, if your organization has it set up, you can call anyone from Microsoft Teams, even if they're not using Microsoft Teams.
+3. **Calls:** In some cases, if your organization has it set up, you can call anyone from Microsoft Teams, even if they're not using Microsoft Teams.
 
-4. **Activity** - Catch up on all your unread messages, @mentions, replies, and more. 
+4. **Activity:** Catch up on all your unread messages, @mentions, replies, and more. 
 
 Use the command box at the top to search for specific items or people, take quick actions, and launch apps.
 
@@ -66,7 +66,7 @@ Create a private team for just the campaign manager and candidate like this.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWeqWA]
 
-Create an organization-wide team that everyone in the campaign can use to communicate and share files'
+Create an organization-wide team that everyone in the campaign can use to communicate and share files.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2GCG9]
 
