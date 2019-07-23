@@ -88,7 +88,7 @@ description: Overview of the Desktop Deployment Center.
        style='width:29pt;height:29pt;visibility:visible;mso-wrap-style:square'>
        <v:imagedata src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-5.png"
         o:title=""/>
-      </v:shape><![endif]--><![if !vml]><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-5.png" border=0 width=130 height=231 alt="Upgrade ConfigMgr" v:shapes="Picture_x0020_1"><![endif]></span></b><b><span
+      </v:shape><![endif]--><![if !vml]><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-5.png" border=0 width=42 height=75 alt="Upgrade ConfigMgr" v:shapes="Picture_x0020_1"><![endif]></span></b><b><span
       style='font-size:9.0pt;font-family:"Segoe UI",sans-serif'><o:p></o:p></span></b></p>
       </td>
       <td valign=top style='background:white;mso-background-themecolor:background1;
@@ -130,7 +130,7 @@ description: Overview of the Desktop Deployment Center.
        style='width:29pt;height:29pt;visibility:visible;mso-wrap-style:square'>
        <v:imagedata src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-3.png"
         o:title="Device and App Readiness"/>
-      </v:shape><![endif]--><![if !vml]><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-3.png" border=0 width=130 height=231 alt="Device and App Readiness"
+      </v:shape><![endif]--><![if !vml]><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-3.png" border=0 width=75 height=42 alt="Device and App Readiness"
       v:shapes="Picture_x0020_2"><![endif]></span><span style='font-size:9.0pt;
       font-family:"Segoe UI",sans-serif'><o:p></o:p></span></p>
       </td>
@@ -173,7 +173,7 @@ description: Overview of the Desktop Deployment Center.
        style='width:29pt;height:29pt;visibility:visible;mso-wrap-style:square'>
        <v:imagedata src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-9.png"
         o:title="Upgrade Windows 7 to Windows 100"/>
-      </v:shape><![endif]--><![if !vml]><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-9.png" border=0 width=130 height=231
+      </v:shape><![endif]--><![if !vml]><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-9.png" border=0 width=100 height=56
       alt="Upgrade Windows 7 to Windows 10"
       v:shapes="Picture_x0020_3"><![endif]></span><span style='font-size:9.0pt;
       font-family:"Segoe UI",sans-serif'><o:p></o:p></span></p>
