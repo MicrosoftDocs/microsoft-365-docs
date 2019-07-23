@@ -32,7 +32,7 @@ description: Overview of the Desktop Deployment Center.
   style='font-family:"Segoe UI",sans-serif'>Upgrading from Windows 7 to Windows
   10?</span></b><span style='font-family:"Segoe UI",sans-serif'><o:p></o:p></span></p>
   <p class=MsoNormal style='margin-bottom:6.0pt;line-height:normal'><span
-  style='font-size:9.0pt;font-family:"Segoe UI",sans-serif;color:black;
+  style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;color:black;
   mso-color-alt:windowtext'>Windows 7 extended support ends January 14, 2020.
   In-place upgrade from Windows 7 to Windows 10 is the fastest method to
   deploy. You can <a
