@@ -17,6 +17,203 @@ description: Overview of the Desktop Deployment Center.
 
 # Desktop Deployment Center
 
+<body lang=EN-US link="#0563C1" vlink="#954F72" style='tab-interval:.5in'>
+
+<div class=WordSection1>
+
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;background:#FFF2CC;mso-background-themecolor:accent4;
+ mso-background-themetint:51;border-collapse:collapse;border:none;mso-border-alt:
+ solid windowtext .5pt;mso-yfti-tbllook:1184;mso-padding-alt:5.75pt 5.75pt 5.75pt 5.75pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+  <td width="100%" valign=top style='width:100.0%;border:solid windowtext 1.0pt;
+  mso-border-alt:solid windowtext .5pt;padding:5.75pt 5.75pt 5.75pt 5.75pt'>
+  <p class=MsoNormal style='margin-bottom:6.0pt;line-height:normal'><b><span
+  style='font-family:"Segoe UI",sans-serif'>Upgrading from Windows 7 to Windows
+  10?</span></b><span style='font-family:"Segoe UI",sans-serif'><o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:6.0pt;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;color:black;
+  mso-color-alt:windowtext'>Windows 7 extended support ends January 14, 2020.
+  In-place upgrade from Windows 7 to Windows 10 is the fastest method to
+  deploy. You can <a
+  href="https://docs.microsoft.com/en-us/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-manual">upgrade
+  a single PC</a> or <a
+  href="https://docs.microsoft.com/en-us/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-automated">upgrade
+  thousands of PCs using System Center Configuration Manager</a>. You don’t
+  need to focus on app delivery, file migration, custom imaging, or enabling
+  cloud-based services with in-place upgrades. You can use tools you already
+  have to upgrade existing PCs and focus on the following deployment steps for
+  upgrades:</span><span style='font-size:10.0pt;font-family:"Segoe UI",sans-serif'><o:p></o:p></span></p>
+  <table class=MsoTableGrid border=0 cellspacing=1 cellpadding=0 width="100%"
+   style='width:100.0%;mso-cellspacing:.7pt;border:none;mso-yfti-tbllook:1184;
+   mso-padding-alt:5.75pt 1.45pt 5.75pt 1.45pt;mso-border-insideh:3.0pt solid #FFF2CC;
+   mso-border-insideh-themecolor:accent4;mso-border-insideh-themetint:51;
+   mso-border-insidev:3.0pt solid #FFF2CC;mso-border-insidev-themecolor:accent4;
+   mso-border-insidev-themetint:51'>
+   <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+    <td width="32%" valign=top style='width:32.8%;border:solid #FFF2CC 3.0pt;
+    mso-border-themecolor:accent4;mso-border-themetint:51;background:white;
+    mso-background-themecolor:background1;padding:5.75pt 1.45pt 5.75pt 1.45pt'>
+    <table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0
+     style='border-collapse:collapse;border:none;mso-yfti-tbllook:1184;
+     mso-padding-alt:0in 5.4pt 0in 5.4pt;mso-border-insideh:none;mso-border-insidev:
+     none'>
+     <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+      <td valign=top style='background:white;mso-background-themecolor:background1;
+      padding:0in 5.4pt 0in 5.4pt'>
+      <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;
+      line-height:normal'><b style='mso-bidi-font-weight:normal'><span
+      style='font-size:9.0pt;font-family:"Segoe UI",sans-serif;color:black;
+      mso-color-alt:windowtext;mso-no-proof:yes'><!--[if gte vml 1]><v:shapetype
+       id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
+       path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+       <v:stroke joinstyle="miter"/>
+       <v:formulas>
+        <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+        <v:f eqn="sum @0 1 0"/>
+        <v:f eqn="sum 0 0 @1"/>
+        <v:f eqn="prod @2 1 2"/>
+        <v:f eqn="prod @3 21600 pixelWidth"/>
+        <v:f eqn="prod @3 21600 pixelHeight"/>
+        <v:f eqn="sum @0 0 1"/>
+        <v:f eqn="prod @6 1 2"/>
+        <v:f eqn="prod @7 21600 pixelWidth"/>
+        <v:f eqn="sum @8 21600 0"/>
+        <v:f eqn="prod @7 21600 pixelHeight"/>
+        <v:f eqn="sum @10 21600 0"/>
+       </v:formulas>
+       <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+       <o:lock v:ext="edit" aspectratio="t"/>
+      </v:shapetype><v:shape id="Picture_x0020_1" o:spid="_x0000_i1027" type="#_x0000_t75"
+       style='width:29pt;height:29pt;visibility:visible;mso-wrap-style:square'>
+       <v:imagedata src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-5.png"
+        o:title=""/>
+      </v:shape><![endif]--><![if !vml]><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-5.png" border=0 width=75 height=42 alt="Upgrade ConfigMgr" v:shapes="Picture_x0020_1"><![endif]></span></b><b><span
+      style='font-size:9.0pt;font-family:"Segoe UI",sans-serif'><o:p></o:p></span></b></p>
+      </td>
+      <td valign=top style='background:white;mso-background-themecolor:background1;
+      padding:0in 5.4pt 0in 5.4pt'>
+      <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;
+      line-height:normal'><b><span style='font-size:9.0pt;font-family:"Segoe UI",sans-serif;
+      color:black;mso-color-alt:windowtext'>Upgrade ConfigMgr to current branch</span></b><span
+      style='font-size:9.0pt;font-family:"Segoe UI",sans-serif'><o:p></o:p></span></p>
+      </td>
+     </tr>
+     <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+      <td colspan=2 valign=top style='background:white;mso-background-themecolor:
+      background1;padding:0in 5.4pt 0in 5.4pt'>
+      <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;
+      line-height:normal'><span style='font-size:8.0pt;font-family:"Segoe UI",sans-serif;
+      color:black;mso-color-alt:windowtext'>Part of Directory and network
+      readiness step for organizations using SCCM</span><span style='font-size:
+      8.0pt;font-family:"Segoe UI",sans-serif'><o:p></o:p></span></p>
+      </td>
+     </tr>
+    </table>
+    <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;
+    line-height:normal'><span style='font-family:"Segoe UI",sans-serif'><o:p></o:p></span></p>
+    </td>
+    <td width="34%" valign=top style='width:34.82%;border:solid #FFF2CC 3.0pt;
+    mso-border-themecolor:accent4;mso-border-themetint:51;background:white;
+    mso-background-themecolor:background1;padding:5.75pt 1.45pt 5.75pt 1.45pt'>
+    <table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0
+     style='border-collapse:collapse;border:none;mso-yfti-tbllook:1184;
+     mso-padding-alt:0in 5.4pt 0in 5.4pt;mso-border-insideh:none;mso-border-insidev:
+     none'>
+     <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+      <td valign=top style='background:white;mso-background-themecolor:background1;
+      padding:0in 5.4pt 0in 5.4pt'>
+      <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;
+      line-height:normal'><span style='font-size:9.0pt;font-family:"Segoe UI",sans-serif;
+      color:black;mso-color-alt:windowtext;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+       id="Picture_x0020_2" o:spid="_x0000_i1026" type="#_x0000_t75" alt="Device and App Readiness"
+       style='width:29pt;height:29pt;visibility:visible;mso-wrap-style:square'>
+       <v:imagedata src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-3.png"
+        o:title="Device and App Readiness"/>
+      </v:shape><![endif]--><![if !vml]><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-3.png" border=0 width=75 height=42 alt="Device and App Readiness"
+      v:shapes="Picture_x0020_2"><![endif]></span><span style='font-size:9.0pt;
+      font-family:"Segoe UI",sans-serif'><o:p></o:p></span></p>
+      </td>
+      <td valign=top style='background:white;mso-background-themecolor:background1;
+      padding:0in 5.4pt 0in 5.4pt'>
+      <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;
+      line-height:normal'><b><span style='font-size:9.0pt;font-family:"Segoe UI",sans-serif;
+      color:black;mso-color-alt:windowtext'>Validate device and app readiness</span></b><span
+      style='font-family:"Segoe UI",sans-serif'><o:p></o:p></span></p>
+      </td>
+     </tr>
+     <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+      <td colspan=2 valign=top style='background:white;mso-background-themecolor:
+      background1;padding:0in 5.4pt 0in 5.4pt'>
+      <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;
+      line-height:normal'><span style='font-size:8.0pt;font-family:"Segoe UI",sans-serif;
+      color:black;mso-color-alt:windowtext'>Part of Device and app readiness
+      step; help is available via Desktop App Assure</span><span
+      style='font-size:8.0pt;font-family:"Segoe UI",sans-serif'><o:p></o:p></span></p>
+      </td>
+     </tr>
+    </table>
+    <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;
+    line-height:normal'><span style='font-family:"Segoe UI",sans-serif'><o:p></o:p></span></p>
+    </td>
+    <td width="31%" valign=top style='width:31.76%;border:solid #FFF2CC 3.0pt;
+    mso-border-themecolor:accent4;mso-border-themetint:51;background:white;
+    mso-background-themecolor:background1;padding:5.75pt 1.45pt 5.75pt 1.45pt'>
+    <table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0
+     style='border-collapse:collapse;border:none;mso-yfti-tbllook:1184;
+     mso-padding-alt:0in 5.4pt 0in 5.4pt;mso-border-insideh:none;mso-border-insidev:
+     none'>
+     <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;height:.4in'>
+      <td valign=top style='background:white;mso-background-themecolor:background1;
+      padding:0in 5.4pt 0in 5.4pt;height:.4in'>
+      <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;
+      line-height:normal'><span style='font-size:9.0pt;font-family:"Segoe UI",sans-serif;
+      color:black;mso-color-alt:windowtext;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+       id="Picture_x0020_3" o:spid="_x0000_i1025" type="#_x0000_t75" alt="A close up of a logo&#10;&#10;Description automatically generated"
+       style='width:29pt;height:29pt;visibility:visible;mso-wrap-style:square'>
+       <v:imagedata src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-9.png"
+        o:title="Upgrade Windows 7 to Windows 100"/>
+      </v:shape><![endif]--><![if !vml]><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-9.png" border=0 width=75 height=42
+      alt="Upgrade Windows 7 to Windows 10"
+      v:shapes="Picture_x0020_3"><![endif]></span><span style='font-size:9.0pt;
+      font-family:"Segoe UI",sans-serif'><o:p></o:p></span></p>
+      </td>
+      <td valign=top style='background:white;mso-background-themecolor:background1;
+      padding:0in 5.4pt 0in 5.4pt;height:.4in'>
+      <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;
+      line-height:normal'><b><span style='font-size:9.0pt;font-family:"Segoe UI",sans-serif;
+      color:black;mso-color-alt:windowtext'>Upgrade Windows 7 PCs to Windows 10</span></b><span
+      style='font-size:8.0pt;font-family:"Segoe UI",sans-serif'><o:p></o:p></span></p>
+      </td>
+     </tr>
+     <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes;height:.4in'>
+      <td colspan=2 valign=top style='background:white;mso-background-themecolor:
+      background1;padding:0in 5.4pt 0in 5.4pt;height:.4in'>
+      <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;
+      line-height:normal'><span style='font-size:8.0pt;font-family:"Segoe UI",sans-serif;
+      color:black;mso-color-alt:windowtext'>Part of OS deployment and feature
+      updates step for user-retained PCs</span><span style='font-size:8.0pt;
+      font-family:"Segoe UI",sans-serif'><o:p></o:p></span></p>
+      </td>
+     </tr>
+    </table>
+    <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;
+    line-height:normal'><span style='font-family:"Segoe UI",sans-serif'><o:p></o:p></span></p>
+    </td>
+   </tr>
+  </table>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Segoe UI",sans-serif'><o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span style='font-family:"Segoe UI",sans-serif'><o:p>&nbsp;</o:p></span></p>
+
+</div>
+
+</body>
+
 <img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-2.png" alt="Desktop Deployment Wheel" height="450" width="802" align="middle" style="background-color: #fff;" />
 
 Follow the steps below to plan and carry out your large-scale deployment of Windows 10 and Office 365 ProPlus. Each step below is part of the overall planning and deployment process with steps typically running in parallel to each other in a phased deployment. Download the free [Desktop Deployment and Management Lab Kit](https://aka.ms/howtoshiftlabs) for hands-on training with the tools highlighted in the deployment process. You can also [find help](https://aka.ms/mddhelp) for your desktop deployment from Microsoft partners and FastTrack services.
