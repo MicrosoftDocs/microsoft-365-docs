@@ -29,71 +29,21 @@ The miscellaneous events table or **MiscEvents** contains a broad range of event
 
 These events are all ETW-driven based on the ETW configuration stored in an onboarded endpoint"s registry configuration. It is important to note that this is not a comprehensive list of all possible ActionTypes. These events can only be viewed and documented upon the respective event occurring.
 
-## MiscEvents table columns
-
-The following is the MiscEvent schema. The specific ActionType will dictate which of these fields are populated. Within this document, the only field documented for each ActionType is "AdditionalFields" where Microsoft chooses to place additional, hopefully relevant contextual information in a JSON format.
-
-|ColumnName|ColumnOrdinal|DataType|ColumnType|
-|---|---|---|---|
-|EventTime|0|System.DateTime|datetime|
-|MachineId|1|System.String|string|
-|ComputerName|2|System.String|string|
-|ActionType|3|System.String|string|
-|FileName|4|System.String|string|
-|FolderPath|5|System.String|string|
-|SHA1|6|System.String|string|
-|MD5|7|System.String|string|
-|AccountDomain|8|System.String|string|
-|AccountName|9|System.String|string|
-|AccountSid|10|System.String|string|
-|RemoteUrl|11|System.String|string|
-|RemoteComputerName|12|System.String|string|
-|ProcessId|13|System.Int64|long|
-|ProcessCommandLine|14|System.String|string|
-|ProcessCreationTime|15|System.DateTime|datetime|
-|ProcessTokenElevation|16|System.String|string|
-|LogonId|17|System.Int64|long|
-|RegistryKey|18|System.String|string|
-|RegistryValueName|19|System.String|string|
-|RegistryValueData|20|System.String|string|
-|RemoteIP|21|System.String|string|
-|RemotePort|22|System.Int32|int|
-|LocalIP|23|System.String|string|
-|LocalPort|24|System.Int32|int|
-|FileOriginUrl|25|System.String|string|
-|FileOriginIP|26|System.String|string|
-|AdditionalFields|27|System.String|string|
-|InitiatingProcessSHA1|28|System.String|string|
-|InitiatingProcessSHA256|29|System.String|string|
-|InitiatingProcessFileName|30|System.String|string|
-|InitiatingProcessFolderPath|31|System.String|string|
-|InitiatingProcessId|32|System.Int64|long|
-|InitiatingProcessCommandLine|33|System.String|string|
-|InitiatingProcessCreationTime|34|System.DateTime|datetime|
-|InitiatingProcessParentId|35|System.Int64|long|
-|InitiatingProcessParentFileName|36|System.String|string|
-|InitiatingProcessParentCreationTime|37|System.DateTime|datetime|
-|InitiatingProcessMD5|38|System.String|string|
-|InitiatingProcessAccountDomain|39|System.String|string|
-|InitiatingProcessAccountName|40|System.String|string|
-|InitiatingProcessAccountSid|41|System.String|string|
-|InitiatingProcessLogonId|42|System.Int64|long|
-|ReportId|43|System.Int64|long|
-|AppGuardContainerId|44|System.String|string|
-
 ## Event groups in the MiscEvents table
 
 |Event group|Description|Naming convention|
 |---|---|---|
 |[Windows API calls](#Windows-API-calls)|Calls to Windows API that might indicate malicious activity|Ends in `ApiCall`|
-|[Antivirus events](#Windows-Defender-Antivirus-events)|Windows Defender Antivirus events, including scans and detections|Starts with `Antivirus` or `Amsi`|
+|[Windows Defender Antivirus events](#Windows-Defender-Antivirus-events)|Windows Defender Antivirus events, including scans and detections|Starts with `Antivirus` or `Amsi`|
 |[Attack surface reduction events](#Attack-surface-reduction-events)|Events associated with Attack surface reduction (ASR) rule detections, whether the rule is in audit or block mode |Starts with `Asr`|
 |[Controlled folder access events](#Controlled-folder-access-events)|Violations of controlled folder access policies designed to prevent unwanted changes to protected folders|Starts with `ControlledFolderAccess`|
 |[Network protection events](#Network-protection-events)|Detections of malicious or potentially malicious domains and IP addresses by network protection policies, whether blocked or audited|Starts with `ExploitGuardNetworkProtection`|
 |[Application control events](#Application-control-events)|Code integrity policy violations|Starts with `AppControl`|
 |[Application guard events](#Application-guard-events)|Application guard events, including detections of suspicious web browsing events in the application guard container|Starts with `AppGuard`|
 |[Exploit protection events](#Exploit-protection-events)|Possible exploitation detected or blocked by exploit protection|Starts with `ExploitGuard`|
+|[Firewall events](#Firewall-events)|Windows Defender Firewall events, including blocks as well as events that might impact the firewall service|Starts with `Firewall`|  
 |[Uncategorized events](#Uncategorized-events)|Various kinds of system activity that might be associated with attacks|No special convention, examples include `PowerShellCommand` `BrowserLaunchedToOpenUrl`, `LdapSearch` and `GetClipboardData`|
+
 
 ## Windows API calls
 
@@ -109,7 +59,7 @@ The following is the MiscEvent schema. The specific ActionType will dictate whic
 |`SetThreadContextRemoteApiCall`|The context of a thread was set from a user mode process. This activity can indicate an attempt to perform process hollowing or process injection.|`TargetProcess`, `CreationTimeUtc`, `CommandLine`|
 |`WriteProcessMemoryApiCall`|The WriteProcessMemory function was called, indicating that a process has written data into memory for another process.|`TotalBytesCopied`|
 |`GetAsyncKeyStateApiCall`|The GetAsyncKeyState function was called. Some keyloggers use this function to obtain the states of input keys and buttons.|`BackgroundCallCount`|
-|`NtProtectVirtualMemoryApiCall`|**TBD**|**TBD**|
+|`NtProtectVirtualMemoryApiCall`|**NEEDS REVIEW - TBD**|**TBD**|
 
 ## Windows Defender Antivirus events
 
@@ -119,8 +69,121 @@ The following is the MiscEvent schema. The specific ActionType will dictate whic
 |`AntivirusScanFailed`|A Windows Defender Antivirus scan did not complete successfully.|`Domain`, `Scan ID`, `Scan Parameters Index`, `Scan Type Index`, `User`, `Error Code`, `Error Description`|
 |`AntivirusScanCompleted`|A Windows Defender Antivirus scan completed successfully.|`Domain`, `Scan ID`, `Scan Parameters Index`, `Scan Type Index`, `User`|
 |`AntivirusScanCancelled`|A Windows Defender Antivirus scan was cancelled.|`Domain`, `Scan ID`, `Scan Parameters Index`, `Scan Type Index`, `User`|
-|`AntivirusDetection`|Windows Defender Antivirus detected a threat.|`InitiatingProcess`, `ThreatName`, `WasExecutingWhileDetected`, `Action`, `WasRemediated`, `RegistryKey`, `RegistryValueName`, `RegistryValueData`, `ResourceSchema`, `Container`, `Service`, `ReportSource` **TBD-MULTIPLE VARIANTS OF THIS ACTIONTYPE WITH VARYING ADDTLINFO**|
+|`AntivirusDetection`|Windows Defender Antivirus detected a threat.|`InitiatingProcess`, `ThreatName`, `WasExecutingWhileDetected`, `Action`, `WasRemediated`, `RegistryKey`, `RegistryValueName`, `RegistryValueData`, `ResourceSchema`, `Container`, `Service`, `ReportSource` **NEEDS REVIEW-MULTIPLE VARIANTS OF THIS ACTIONTYPE WITH VARYING ADDTLINFO**|
+|`AntivirusReport`|**NEEDS REVIEW: NOT IN TABLE**|`WasExecutingWhileDetected`, `Signer`|
 
+## Attack surface reduction events
+
+|Event type (ActionType)|Description|Notable info in AdditionalFields|
+|---|---|---|
+|`AsrExecutableEmailContentBlocked`|**NEEDS REVIEW: Not in table** An attack surface redution rule blocked executable content from an email client and or webmail.|`IsAudit`, `RuleId`|
+|`AsrExecutableOfficeContentBlocked`|**NEEDS REVIEW: Not in table** An Office application was blocked from creating executable content.|`IsAudit`, `RuleId`|
+|`AsrLsassCredentialTheftBlocked`|**NEEDS REVIEW: Not in table** Possible credential theft from lsass.exe was blocked.|`IsAudit`, `RuleId`|
+|`AsrOfficeChildProcessBlocked`|**NEEDS REVIEW: Not in table** An Office application was blocked from creating child processes.|`IsAudit`, `RuleId`|
+|`AsrOfficeMacroWin32ApiCallsBlocked`|**NEEDS REVIEW: Not in table** Code injection into another process from an Office application was blocked.|`IsAudit`, `RuleId`|
+|`AsrPsexecWmiChildProcessAudited`|**NEEDS REVIEW: Not in table** The use of PSExec or WMI commands to spawn a child process was detected.|`IsAudit`, `RuleId`|
+|`AsrRansomwareBlocked`|**NEEDS REVIEW: Not in table** Ransomware activity was blocked.|`IsAudit`, `RuleId`|
+|`AsrUntrustedExecutableAudited`|**NEEDS REVIEW: Not in table** An untrusted file that does not meet criteria for age or prevalence has executed.|`IsAudit`, `RuleId`|
+
+## Controlled folder access events
+
+|Event type (ActionType)|Description|Notable info in AdditionalFields|
+|---|---|---|
+|`ControlledFolderAccessViolationAudited`|**NEEDS REVIEW: Not in table** Changes were made to a protected folder.|`IsAudit`, `RuleId`|
+
+## Network protection events
+
+|Event type (ActionType)|Description|Notable info in AdditionalFields|
+|---|---|---|
+|`ExploitGuardNetworkProtectionBlocked`|**NEEDS REVIEW: Not in table** A connection to a low-reputation network address was blocked by network protection.|`Uri`, `IsAudit`|
+
+## Application control events
+|Event type (ActionType)|Description|Notable info in AdditionalFields|
+|---|---|---|
+|`AppControlCodeIntegrityPolicyBlocked`|Application control blocked a code integrity policy violation.|`RequestedSigningLevel`, `ValidatedSigningLevel`, `AuthenticodeHash`|
+|`AppControlCodeIntegrityPolicyAudited`|Application control detected a code integrity policy violation.|**NEEDS REVIEW: Does not match table** `RequestedSigningLevel`, `ValidatedSigningLevel`, `AuthenticodeHash`|
+|`AppControlExecutableAudited`|Application control detected the use of an untrusted executable.|**NEEDS REVIEW: FROM TABLE** `Fqbn`, `AuthenticodeHash`|
+|`AppLockerBlockExecutable` **NEEDS REVIEW: Consider rename to ApplockerExecutableBlocked**|AppLocker prevented an untrusted executable from running.|**NEEDS REVIEW: FROM TABLE** `Fqbn`, `AuthenticodeHash`|
+|`AppControlScriptAudited`|Application control detected the use of an untrusted script.|**NEEDS REVIEW: FROM TABLE** `Fqbn`, `AuthenticodeHash`|
+|`AppLockerBlockScript` **NEEDS REVIEW: Consider rename to ApplockerScriptBlocked**|AppLocker prevented an untrusted script from running.|**NEEDS REVIEW: FROM TABLE** `Fqbn`, `AuthenticodeHash`|
+|`AppControlPackagedAppAudited`|Application control detected the use of an untrusted packaged app.|**NEEDS REVIEW: FROM TABLE** `Fqbn`, `AppPackageFamilyName`|
+|`AppLockerBlockPackagedApp` **NEEDS REVIEW: Consider rename to AppLockerPackagedAppBlocked**|AppLocker prevented an untrusted packaged app from running.|**NEEDS REVIEW: FROM TABLE** `Fqbn`, `AppPackageFamilyName`|
+|`AppControlAppInstallationAudited`|Application control detected the installation of an untrusted app.|**NEEDS REVIEW: FROM TABLE** `Fqbn`, `AppPackageFamilyName`|
+|`AppLockerBlockPackagedAppInstallation` **NEEDS REVIEW: Consider rename to AppLockerPackagedAppInstallationBlocked**|AppLocker prevented the installation of an unsanctioned packaged app.|**NEEDS REVIEW: FROM TABLE** `Fqbn`, `AppPackageFamilyName`|
+|`AppControlCodeIntegrityDriverRevoked`|**NEEDS REVIEW** Application control found a driver with a revoked certificate.|`ExtractedProcess`|
+|`AppControlCodeIntegrityImageAudited`|**NEEDS REVIEW** Application control detected an executable file that violated code integrity policies.|-|
+|`AppControlCodeIntegrityImageRevoked`|Application control found an executable file with a revoked certificate.|-|
+
+## Application guard events
+|Event type (ActionType)|Description|Notable info in AdditionalFields|
+|---|---|---|
+|`AppGuardLaunchedWithUrl`|The opening of an untrusted URL has initiated an application guard container.|`ContainerName`|
+|`AppGuardBrowseToUrl`|**NEEDS REVIEW** A URL has been accessed from within a web page in an application guard container.|`sourceUrl`, `destinationUrl`|
+|`AppGuardCreateContainer`|Application guard initiated an isolated container.|**Needs review - does not match table** `RelatedContainerId`|
+|`AppGuardSuspendContainer`|Application guard suspended an isolated container.|`ContainerName`|
+|`AppGuardResumeContainer`|Application guard resumed an isolated container from a suspended state.|`ContainerName`|
+|`AppGuardStopContainer`|Application guard stopped an isolated container.|`ContainerName`|
+
+
+## Exploit protection events
+|Event type (ActionType)|Description|Notable info in AdditionalFields|
+|---|---|---|
+|`ExploitGuardAcgAudited`|Arbitrary code guard (ACG) detected an attempt to modify code page permissions or create unsigned code pages.|`IsAudit`|
+|`ExploitGuardAcgEnforced`|**NEEDS REVIEW - Not in table** Arbitrary code guard (ACG) blocked an attempt to modify code page permissions or create unsigned code pages.|`IsAudit`|
+|`ExploitGuardChildProcessAudited`|Exploit protection detected the creation of a child process.|`IsAudit`, `ChildCommandLine`|
+|`ExploitGuardChildProcessBlocked`|Exploit protection blocked the creation of a child process.|`IsAudit`, `ChildCommandLine`|
+|`ExploitGuardNonMicrosoftSignedAudited`|Exploit protection detected the launch of a process from an image file that is not signed by Microsoft.|`IsAudit`|
+|`ExploitGuardNonMicrosoftSignedBlocked`|Exploit protection blocked the launch of a process from an image file that is not signed by Microsoft.|`IsAudit`|
+|`ExploitGuardWin32SystemCallBlocked`|Exploit protection blocked a call to the Windows system API.|`IsAudit`|
+|`ExploitGuardLowIntegrityImageAudited`|Exploit protection detected the launch of a process from a low-integrity file.|`IsAudit`|
+|`ExploitGuardLowIntegrityImageBlocked`|Exploit protection blocked the launch of a process from a low-integrity file.|`IsAudit`|
+|`ExploitGuardSharedBinaryAudited`|Exploit protection detected the launch of a process from a remote, shared file.|`IsAudit`|
+|**Needs review: not in table or in this draft** `ExploitGuardSharedBinaryBlocked`|Exploit protection blocked the launch of a process from a remote, shared file.|`IsAudit`|
+|`ExploitGuardWin32SystemCallAudited`|Exploit protection detected a call to the Windows system API.|`IsAudit`|
+|`ExploitGuardWin32SystemCallBlocked`|Exploit protection blocked a call to the Windows system API.|`IsAudit`|
+|`ExploitGuardEafViolationAudited`|Export address filtering (EAF) in exloit protection detected possible exploitation activity.|`IsAudit`|
+|`ExploitGuardEafViolationBlocked`|Export address filtering (EAF) in exloit protection blocked possible exploitation activity.|`IsAudit`|
+|`ExploitGuardIafViolationAudited`|Import address filtering (IAF) in exloit protection detected possible exploitation activity.|`IsAudit`|
+|`ExploitGuardIafViolationBlocked`|Import address filtering (IAF) in exloit protection blocked possible exploitation activity.|`IsAudit`|
+|`ExploitGuardRopExploitAudited`|Exploit protection detected possible return-object programming (ROP) exploitation.|`IsAudit`|
+|`ExploitGuardRopExploitBlocked`|Exploit protection blocked possible return-object programming (ROP) exploitation.|`IsAudit`|
+
+## Firewall events
+|Event type (ActionType)|Description|Notable info in AdditionalFields|
+|---|---|---|
+|`FirewallInboundConnectionToAppBlocked`|The firewall blocked an inbound connection to an app.|`Profiles`|
+|`FirewallOutboundConnectionBlocked`|The firewall blocked an outbound connection.|`LocalAddress`, `LocalPort`, `RemoteAddress`, `RemotePort`, `Direction`|
+|`FirewallInboundConnectionBlocked`|The firewall blocked an inbound connection.|`LocalAddress`, `LocalPort`, `RemoteAddress`, `RemotePort`, `Direction`|
+|`FirewallServiceStopped`|The firewall service was stopped.|-|
+
+## Uncategorized events
+|Event type (ActionType)|Description|Notable info in AdditionalFields|
+|---|---|---|
+|`BrowserLaunchedToOpenUrl`|The web browser opened a URL that originated as a link in another application.|`Name`,`Uri`|
+|`GetClipboardData`|The GetClipboardData function was called, indicating that a process attempted to obtain the contents of the system clipboard.|-|
+|`LdapSearch`|An LDAP search was performed.|`ScopeOfSearch`, `SearchFilter`, `DistinguishedName`, `AttributeList`|
+|`PnpDeviceConnected`|A plug and play (PnP) device was attached.|`ClassName`, `DeviceId`, `DeviceDescription`, `VendorIds`|
+|`PowerShellCommand`|A PowerShell alias, function, filter, cmdlet, external script, application, script, workflow, or configuration was executed from a PowerShell host process.|`Command`|
+|`ProcessCreatedUsingWmiQuery`|A process was created using Windows Management Instrumentation (WMI).|`IsRemoteMachine`, `Namespace`, `ClassName`, `MethodName`|
+|`ProcessPrimaryTokenModified`|A process's primary token was modified.|`SystemTokenPointer`, `OriginalTokenPointer`, `OriginalTokenIntegrityLevel`, `OriginalTokenUserSid`, `CurrentTokenPointer`, `CurrentTokenIntegrityLevel`, `CurrentTokenUserSid`|
+|`RemoteWmiOperation`|A Windows Management Instrumentation (WMI) operation was initiated from a remote device.|`OperationType`,`OperationDetails`,`Namespace`|
+|`ScheduledTaskCreated`|A scheduled task was created.|`TaskName`|
+|`ScheduledTaskDeleted`|A scheduled task was deleted.|`TaskName`|
+|`ScheduledTaskEnabled`|A scheduled task was turned on.|`TaskName`|
+|`ScheduledTaskDisabled`|A scheduled task was turned off.|`TaskName`|
+|`ScreenshotTaken`|A screenshot was taken.|-|
+|`SmartScreenAppWarning`|SmartScreen warned about running a downloaded application that is untrusted or malicious.|`ActivityId`, `Experience`|
+|`SmartScreenExploitWarning`|SmartScreen warned about opening a web page that contains an exploit.|`Uri`, `ReferrerUri`|
+|`SmartScreenUrlWarning`|SmartScreen warned about opening a low-reputation URL that might be hosting malware or is a phishing site.|`ActivityId`, `Uri`|
+|`SmartScreenUserOverride`|A user has overridden a SmartScreen warning and continued to open an untrusted app or a low-reputation URL.|`ActivityId`, `Action`|
+|`UserAccountCreated`|A new user account was created.|**NEEDS REVIEW: No account info?**|
+|`ScriptContent`|**NEEDS REVIEW** Script content was identified.|`Hash`, `Content`|
+|`ScriptContentScan`|**NEEDS REVIEW** Script content was scanned.|`Hash`, `ScanResult`, `AppName`|
+|`PasswordChangeAttempt`|An attempt to change a user password was made.|**NEEDS REVIEW - no user info?**|
+|`LogonRightsSettingEnabled`|Interactive logon rights on the machine were granted to a user.|`LogonRights`**NEEDS REVIEW - no user info?**|
+
+
+# **VERBOSE DRAFTS - starting here**
 
 
 # Windows API calls - **Verbose DRAFT**
@@ -426,12 +489,12 @@ Event ID: 1001
 * ScanTypeIndex - The type of scan that was cancelled - e.g. "Quick", "Full"
 * User - The user who cancelled the scan - e.g. "SYSTEM"
 
-# Attack surface reduction events
+# Attack surface reduction events - **Verbose DRAFT**
 
-## AsrExecutableEmailContentBlocked
+## AsrExecutableEmailContentBlocked **NEEDS REVIEW: NOT IN TABLE**
 
 ### Description
-Executable content was blocked from email client and webmail via a Defender AV Attack Surface Reduction (ASR) rule.
+An attack surface redution rule blocked executable content from an email client and or webmail.
 
 ### Event capture logic
 Capture all events
@@ -446,10 +509,10 @@ Event ID: 1122
 * RuleId - The GUID identifier for the ASR rule. This ASR event GUID will be: "be9ba2d9-53ea-4cdc-84e5-9b1eeee46550"
 
 
-## AsrExecutableOfficeContentBlocked
+## AsrExecutableOfficeContentBlocked **NEEDS REVIEW: NOT IN TABLE**
 
 ### Description
-The creation of executable content in an Office application was blocked.
+An Office application was blocked from creating executable content.
 
 ### Event capture logic
 Capture all events
@@ -537,11 +600,11 @@ Event ID: 1122
 * RuleId - The GUID identifier for the ASR rule. This ASR event GUID will be: "75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84"
 
 
-## AsrPsexecWmiChildProcessAudited
+## AsrPsexecWmiChildProcessAudited **NEEDS REVIEW: NOT IN TABLE**
 
 ### Description
 
-A child process of PSExec or WMI commands was audited.
+The use of PSExec or WMI commands to spawn a child process was detected.
 
 ### Event capture logic
 Capture all events
@@ -556,10 +619,10 @@ Event ID: 1121
 * RuleId - The GUID identifier for the ASR rule. This ASR event GUID will be: "d1e49aac-8f56-4280-b9ba-993a6d77406c"
 
 
-## AsrRansomwareBlocked
+## AsrRansomwareBlocked **NEEDS REVIEW: Not in table** 
 
 ### Description
-Potential ransomware was blocked.
+Ransomware activity was blocked.
 
 ### Event capture logic
 Capture all events
@@ -574,10 +637,10 @@ Event ID: 1122
 * RuleId - The GUID identifier for the ASR rule. This ASR event GUID will be: "c1db55ab-c21a-4637-bb3f-a12568109d35"
 
 
-## AsrUntrustedExecutableAudited
+## AsrUntrustedExecutableAudited **NEEDS REVIEW: Not in table** 
 
 ### Description
-A file was executed that does not meet a prevalence, age, or trusted list criterion.
+An untrusted file that does not meet criteria for age or prevalence has executed.
 
 ### Event capture logic
 Capture all events
@@ -591,9 +654,9 @@ Event ID: 1121
 * IsAudit - "true" or "false" - Indicates if the rule was in audit mode or in blocking mode
 * RuleId - The GUID identifier for the ASR rule. This ASR event GUID will be: "01443614-cd74-433a-b99e-2ecdc07bfc25"
 
-# Controlled folder access events
+# Controlled folder access events - **Verbose DRAFT**
 
-## ControlledFolderAccessViolationAudited
+## ControlledFolderAccessViolationAudited **NEEDS REVIEW: Not in table**
 
 ### Description
 Changes were made to a protected folder. [Reference](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-exploit-guard/controlled-folders-exploit-guard)
@@ -610,12 +673,14 @@ Event ID: 1124 (most likely)
 * IsAudit - "true" or "false" - Indicates if the rule was in audit mode or in blocking mode
 * RuleId - The GUID identifier for the Controlled Folder Access rule. This event GUID will be: "5737d832-9e2c-4922-9623-48a220290dcb"
 
-# Network protection events
+# Network protection events - **Verbose DRAFT**
 
-## ExploitGuardNetworkProtectionBlocked
+## ExploitGuardNetworkProtectionBlocked **NEEDS REVIEW: Not in table**
 
 ### Description
-[Network Protection](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-exploit-guard/network-protection-exploit-guard) audited/blocked a network connection. Despite being labeled as an Exploit Guard feature, considering it takes a dependency on Defender AV, it is being categorized under the "Windows Defender AV" group.
+A connection to a low-reputation network address was blocked by network protection.
+
+**DRAFT NOTES [Network Protection](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-exploit-guard/network-protection-exploit-guard) audited/blocked a network connection. Despite being labeled as an Exploit Guard feature, considering it takes a dependency on Defender AV, it is being categorized under the "Windows Defender AV" group.**
 
 ### Event capture logic
 Capture all events
@@ -631,13 +696,13 @@ Event ID: 1126
 * IsAudit - "true" or "false" - Indicates if the rule was in audit mode or in blocking mode
 
 
-# Application control events
+# Application control events - **Verbose DRAFT**
 
 
 ## AppControlCodeIntegrityPolicyBlocked
 
 ### Description
-Windows Defender Application Control (WDAC) blocked the execution of a file per a deployed configurable code integrity (CI) policy.
+Application control blocked a code integrity policy violation.
 
 ### Event capture logic
 Capture all events
@@ -653,13 +718,13 @@ Event ID: 3076
 * AuthenticodeHash - The [Authenticode hash](http://download.microsoft.com/download/9/c/5/9c5b2167-8017-4bae-9fde-d599bac8184a/authenticode_pe.docx) of the PE file. This should not be confused with file hash.
 
 
-# Application guard events
+# Application guard events - **Verbose DRAFT**
 
 
 ## AppGuardBrowseToUrl
 
 ### Description
-A URL was navigated to in Windows Defender Application Guard.
+**NEEDS REVIEW** A URL has been accessed from within a web page in an application guard container.
 
 ### Event capture logic
 Capture all events
@@ -691,13 +756,13 @@ Event ID: N/A
 * RelatedContainerId - A GUID value. This can likely be associated with the AppGuardContainerId MiscEvents property.
 
 
-# Exploit protection events
+# Exploit protection events - **Verbose DRAFT**
 
 
 ## ExploitGuardAcgAudited
 
 ### Description
-Arbitrary code guard (ACG) detected an attempt to modify code page permissions or to create unsigned code pages.
+Arbitrary code guard (ACG) detected an attempt to modify code page permissions or create unsigned code pages.
 
 ### Event capture logic
 Capture all events
@@ -714,7 +779,9 @@ Event ID: 1
 ## ExploitGuardAcgEnforced
 
 ### Description
-[ACG](https://blogs.windows.com/msedgedev/2017/02/23/mitigating-arbitrary-native-code-execution/) blocked an attempt to modify code page permissions or to create unsigned code pages.
+**NEEDS REVIEW - Not in table** Arbitrary code guard (ACG) blocked an attempt to modify code page permissions or create unsigned code pages.
+
+**DRAFT NOTES [ACG](https://blogs.windows.com/msedgedev/2017/02/23/mitigating-arbitrary-native-code-execution/) blocked an attempt to modify code page permissions or create unsigned code pages.**
 
 ### Event capture logic
 Capture all events
@@ -802,7 +869,8 @@ Event ID: 12
 ## ExploitGuardWin32SystemCallBlocked
 
 ### Description
-A user-mode GUI thread attempted to access the Win32K syscall table. Win32K syscalls are used frequently to [trigger elevation of privilege](https://www.slideshare.net/PeterHlavaty/rainbow-over-the-windows-more-colors-than-you-could-expect) and [sandbox escape vulnerabilities](https://improsec.com/tech-blog/win32k-system-call-filtering-deep-dive). For processes that do not intend to perform GUI-related tasks, Win32K syscall auditing/enforcement can be valuable.
+Exploit protection blocked a call to the Windows system API.
+**DRAFT NOTES A user-mode GUI thread attempted to access the Win32K syscall table. Win32K syscalls are used frequently to [trigger elevation of privilege](https://www.slideshare.net/PeterHlavaty/rainbow-over-the-windows-more-colors-than-you-could-expect) and [sandbox escape vulnerabilities](https://improsec.com/tech-blog/win32k-system-call-filtering-deep-dive). For processes that do not intend to perform GUI-related tasks, Win32K syscall auditing/enforcement can be valuable.**
 
 ### Event capture logic
 Capture all events
@@ -816,7 +884,7 @@ Event ID: 10
 * IsAudit - "true" or "false" - Indicates if the rule was in audit mode or in blocking mode
 
 
-# Uncategorized events
+# Uncategorized events - **Verbose DRAFT**
 
 
 ## BrowserLaunchedToOpenUrl
@@ -859,7 +927,9 @@ There is no additional data present in AdditionalFields.
 ## LdapSearch
 
 ### Description
-An LDAP search was performed by a process. LDAP querying is common attacker reconnaissance technique.
+An LDAP search was performed.
+
+**DRAFT NOTES: ...by a process. LDAP querying is common attacker reconnaissance technique.**
 
 ### Event capture logic
 Any process besides the following: wmiprvse.exe, whoami.exe, svchost.exe, ccmexec.exe, telemetryhost.exe, taskhostw.exe, lsass.exe, adexplorer.exe, adfind.exe, dsget.exe, dsquery.exe, ldifde.exe, csvde.exe, msitwin8*.
@@ -882,7 +952,8 @@ Event ID: 30
 ## PnpDeviceConnected
 
 ### Description
-A Plug and Play (PnP) device was connected. This event could be used to inventory and detect anomalous hardware devices plugged in - USB removable storage, webcams, human interface devices (HID), etc.
+A plug and play (PnP) device was attached.
+**DRAFT NOTES: A Plug and Play (PnP) device was connected. This event could be used to inventory and detect anomalous hardware devices plugged in - USB removable storage, webcams, human interface devices (HID), etc.**
 
 ### Event capture logic
 Capture all events
@@ -1035,7 +1106,7 @@ Event ID: 4699
 ## ScreenshotTaken
 
 ### Description
-A program captured a screenshot.
+A screenshot was taken.
 
 ### Event capture logic
 The ETW event Hwnd field is 0 and the Type field is 0x80000006. In other words, this event originated from the win32kfull!DwmSyncCaptureSurfaceBits function.
@@ -1128,7 +1199,7 @@ Event ID: 1002
 ## UserAccountCreated
 
 ### Description
-A local SAM account or a domain account was created.
+A new user account was created.
 
 ### Event capture logic
 All newly created accounts.
@@ -1140,10 +1211,6 @@ Event ID: 4720
 
 ### AdditionalFields
 Unfortunately, no additional context is populated in AdditionalFields.
-
-## PnpDeviceConnected
-A plug and play (PnP) device was attached.
-
 
 ## ScheduledTaskEnabled
 ### Description
@@ -1159,8 +1226,8 @@ A scheduled task was turned off.
 SecureETW (Provider GUID: {54849625-5478-4994-A5BA-3E3B0328C30D})
 Event ID: 4701
 
-## ScreenshotTaken
-A screenshot was taken.
+# **Additional types: ADDED AFTER TABLE REVIEW**
+
 ## OpenProcessApiCall OR OpenProcess
 The OpenProcess function was called, indicating an attempt to open a handle to a local process and potentially manipulate that process.
 ## CreateRemoteThreadApiCall
@@ -1183,8 +1250,7 @@ Application control detected the installation of an untrusted app.
 AppLocker prevented the installation of an unsanctioned packaged app.
 ## AppControlCodeIntegrityPolicyAudited
 Application control detected a code integrity policy violation.
-## AppControlCodeIntegrityPolicyBlocked
-Application control blocked a code integrity policy violation.
+
 ## ExploitGuardLowIntegrityImageAudited
 Exploit protection detected the launch of a process from a low-integrity file.
 ## ExploitGuardLowIntegrityImageBlocked
@@ -1209,16 +1275,25 @@ Import address filtering (IAF) in exloit protection blocked possible exploitatio
 Exploit protection detected possible return-object programming (ROP) exploitation.
 ## ExploitGuardRopExploitBlocked
 Exploit protection blocked possible return-object programming (ROP) exploitation.
+
 ## FirewallInboundConnectionToAppBlocked
 The firewall blocked an inbound connection to an app. 
+## FirewallOutboundConnectionBlocked
+
+The firewall blocked an outbound connection.
+## FirewallInboundConnectionBlocked
+The firewall blocked an inbound connection.
 ## FirewallServiceStopped
 The firewall service was stopped.
+
 ## AppControlCodeIntegrityDriverRevoked
 **Not verified** Application control found a driver with a revoked certificate.
 ## AppControlCodeIntegrityImageAudited
 **Not verified** Application control detected an executable file that violated code integrity policies.
 ## AppControlCodeIntegrityImageRevoked
 Application control found an executable file with a revoked certificate.
+
+
 ## AppGuardSuspendContainer
 Application guard suspended an isolated container.
 ## AppGuardResumeContainer
@@ -1229,12 +1304,11 @@ Application guard stopped an isolated container.
 The opening of an untrusted URL has initiated an application guard container. 
 ## AppGuardBrowseToUrl
 A URL has been accessed from within an web page in an application guard container.
+
 ## AntivirusScanFailed
 A Windows Defender Antivirus scan did not complete successfully.
-## FirewallOutboundConnectionBlocked
-The firewall blocked an outbound connection.
-## FirewallInboundConnectionBlocked
-The firewall blocked an inbound connection.
+
+
 ## ScriptContent
 **Not validated** Script content was identified.
 ## ScriptContentScan
@@ -1246,6 +1320,58 @@ Interactive logon rights on the machine were granted to a user.
 ## NtProtectVirtualMemoryApiCall
 ???
 
+# MiscEvents table columns **MOVE TO REF FOR EACH TABLE**
+
+The following is the MiscEvent schema. The specific ActionType will dictate which of these fields are populated. Within this document, the only field documented for each ActionType is "AdditionalFields" where Microsoft chooses to place additional, hopefully relevant contextual information in a JSON format.
+
+|ColumnName|ColumnOrdinal|DataType|ColumnType|
+|---|---|---|---|
+|EventTime|0|System.DateTime|datetime|
+|MachineId|1|System.String|string|
+|ComputerName|2|System.String|string|
+|ActionType|3|System.String|string|
+|FileName|4|System.String|string|
+|FolderPath|5|System.String|string|
+|SHA1|6|System.String|string|
+|MD5|7|System.String|string|
+|AccountDomain|8|System.String|string|
+|AccountName|9|System.String|string|
+|AccountSid|10|System.String|string|
+|RemoteUrl|11|System.String|string|
+|RemoteComputerName|12|System.String|string|
+|ProcessId|13|System.Int64|long|
+|ProcessCommandLine|14|System.String|string|
+|ProcessCreationTime|15|System.DateTime|datetime|
+|ProcessTokenElevation|16|System.String|string|
+|LogonId|17|System.Int64|long|
+|RegistryKey|18|System.String|string|
+|RegistryValueName|19|System.String|string|
+|RegistryValueData|20|System.String|string|
+|RemoteIP|21|System.String|string|
+|RemotePort|22|System.Int32|int|
+|LocalIP|23|System.String|string|
+|LocalPort|24|System.Int32|int|
+|FileOriginUrl|25|System.String|string|
+|FileOriginIP|26|System.String|string|
+|AdditionalFields|27|System.String|string|
+|InitiatingProcessSHA1|28|System.String|string|
+|InitiatingProcessSHA256|29|System.String|string|
+|InitiatingProcessFileName|30|System.String|string|
+|InitiatingProcessFolderPath|31|System.String|string|
+|InitiatingProcessId|32|System.Int64|long|
+|InitiatingProcessCommandLine|33|System.String|string|
+|InitiatingProcessCreationTime|34|System.DateTime|datetime|
+|InitiatingProcessParentId|35|System.Int64|long|
+|InitiatingProcessParentFileName|36|System.String|string|
+|InitiatingProcessParentCreationTime|37|System.DateTime|datetime|
+|InitiatingProcessMD5|38|System.String|string|
+|InitiatingProcessAccountDomain|39|System.String|string|
+|InitiatingProcessAccountName|40|System.String|string|
+|InitiatingProcessAccountSid|41|System.String|string|
+|InitiatingProcessLogonId|42|System.Int64|long|
+|ReportId|43|System.Int64|long|
+|AppGuardContainerId|44|System.String|string|
+
 ## Related topics
 - [Proactively hunt for threats](advanced-hunting.md)
 - [Learn the query language](advanced-hunting-language-overview.md)
@@ -1253,3 +1379,6 @@ Interactive logon rights on the machine were granted to a user.
 - [Understand the data tables](advanced-hunting-schema-tables.md)
 - [Understand the data columns](advanced-hunting-column-reference.md)
 - [Apply query best practices](advanced-hunting-best-practices.md)
+- 
+- 
+- 
