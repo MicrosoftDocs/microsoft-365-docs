@@ -129,10 +129,10 @@ description: Overview of the Desktop Deployment Center.
       color:black;mso-color-alt:windowtext;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
        id="Picture_x0020_2" o:spid="_x0000_i1026" type="#_x0000_t75" alt="A picture containing electronics&#10;&#10;Description automatically generated"
        style='width:29pt;height:29pt;visibility:visible;mso-wrap-style:square'>
-       <v:imagedata src="Deployment%20Center%20Header_files/image003.png"
+       <v:imagedata src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-24.png"
         o:title="A picture containing electronics&#10;&#10;Description automatically generated"/>
       </v:shape><![endif]--><![if !vml]><img border=0 width=39 height=39
-      src="Deployment%20Center%20Header_files/image004.png"
+      src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-24.png"
       alt="A picture containing electronics&#10;&#10;Description automatically generated"
       v:shapes="Picture_x0020_2"><![endif]></span><span style='font-size:9.0pt;
       font-family:"Segoe UI",sans-serif'><o:p></o:p></span></p>
