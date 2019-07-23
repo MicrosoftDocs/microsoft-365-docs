@@ -42,8 +42,6 @@ The following tables comprise the data schema in advanced hunting:
 | **EmailAttachmentInfo** | Information about files attached to Office 365 emails |
 | **EmailUrlInfo** | Information about URLs in embedded links on Office 365 emails |
 
-**DRAFT NOTES expand information including special columns in each table**
-
 ## Related topics
 - [Proactively hunt for threats](advanced-hunting.md)
 - [Learn the query language](advanced-hunting-language-overview.md)

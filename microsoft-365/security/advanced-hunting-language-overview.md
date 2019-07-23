@@ -53,16 +53,19 @@ ProcessCreationEvents
 
 The query itself will typically start with a table name followed by a series of elements started by a pipe (`|`). In this example, we start by adding  with the table name `ProcessCreationEvents` and add piped elements as needed.
 
-The first piped element defines a time filter to review only the records from the previous seven days. Keeping the time range as narrow as possible ensures that queries perform well, return manageable results, and don't time out.
+The first piped element is a time filter scoped within the previous seven days. Keeping the time range as narrow as possible ensures that queries perform well, return manageable results, and don't time out.
+
+```
+| where EventTime > ago(7d)
+```
 
 The time range is immediately followed by a search for files representing the PowerShell application.
 
 ```
-| where EventTime > ago(7d)
 | where FileName in ("powershell.exe", "POWERSHELL.EXE", "powershell_ise.exe", "POWERSHELL_ISE.EXE")
 ```
 
-Afterwards, we look for command lines that are often used with PowerShell to download files.
+Afterwards, the query looks for command lines that are typically used with PowerShell to download files.
 
 ```
 | where ProcessCommandLine has "Net.WebClient"
@@ -72,7 +75,7 @@ Afterwards, we look for command lines that are often used with PowerShell to dow
         or ProcessCommandLine contains "http:"
 ```
 
-Now that your query clearly identifies the data you want to locate, you can add elements that define what the results look like. `project` returns specific columns and `top` limits the number of results, making the results well-formatted and reasonably large and easy to process. 
+Now that your query clearly identifies the data you want to locate, you can add elements that define what the results look like. `project` returns specific columns and `top` limits the number of results, making the results well-formatted and reasonably large and easy to process.
 
 ```
 | project EventTime, ComputerName, InitiatingProcessFileName, FileName, ProcessCommandLine
@@ -98,7 +101,7 @@ Now that you've run your first query and have a general idea of its components, 
 | **makeset** |  Return a dynamic (JSON) array of the set of distinct values that Expr takes in the group. |
 | **find** | Find rows that match a predicate across a set of tables. |
 
-To see a live example of these operators, run them from the **Get started** section.
+To see a live example of these operators, run them from the **Get started** section in advanced hunting.
 
 ## Understand data types and their query syntax implications
 
@@ -111,8 +114,6 @@ Data in advanced hunting tables are generally classified into the following data
 | **bool** | True or false |
 | **int** | 32-bit numeric value  |
 | **long** | 64-bit numeric value |
-
-**DRAFT NOTES add implications of each data type**
 
 ## Use sample queries
 
@@ -134,6 +135,3 @@ For more information on Kusto query language and supported operators, see  [Quer
 - [Understand the data columns](advanced-hunting-column-reference.md)
 - [Find miscellaneous events](advanced-hunting-misc-events.md)
 - [Apply query best practices](advanced-hunting-best-practices.md)
-
-
-
