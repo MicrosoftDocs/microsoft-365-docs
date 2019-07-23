@@ -86,10 +86,10 @@ description: Overview of the Desktop Deployment Center.
        <o:lock v:ext="edit" aspectratio="t"/>
       </v:shapetype><v:shape id="Picture_x0020_1" o:spid="_x0000_i1027" type="#_x0000_t75"
        style='width:29pt;height:29pt;visibility:visible;mso-wrap-style:square'>
-       <v:imagedata src="Deployment%20Center%20Header_files/image001.png"
+       <v:imagedata src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-24.png"
         o:title=""/>
       </v:shape><![endif]--><![if !vml]><img border=0 width=39 height=39
-      src="Deployment%20Center%20Header_files/image002.png" v:shapes="Picture_x0020_1"><![endif]></span></b><b><span
+      src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-24.png" v:shapes="Picture_x0020_1"><![endif]></span></b><b><span
       style='font-size:9.0pt;font-family:"Segoe UI",sans-serif'><o:p></o:p></span></b></p>
       </td>
       <td valign=top style='background:white;mso-background-themecolor:background1;
