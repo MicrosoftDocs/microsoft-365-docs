@@ -32,7 +32,7 @@ description: Overview of the Desktop Deployment Center.
   style='font-family:"Segoe UI",sans-serif'>Upgrading from Windows 7 to Windows
   10?</span></b><span style='font-family:"Segoe UI",sans-serif'><o:p></o:p></span></p>
   <p class=MsoNormal style='margin-bottom:6.0pt;line-height:normal'><span
-  style='font-size:9.0pt;font-family:"Segoe UI",sans-serif;color:black;
+  style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;color:black;
   mso-color-alt:windowtext'>Windows 7 extended support ends January 14, 2020.
   In-place upgrade from Windows 7 to Windows 10 is the fastest method to
   deploy. You can <a
@@ -86,9 +86,9 @@ description: Overview of the Desktop Deployment Center.
        <o:lock v:ext="edit" aspectratio="t"/>
       </v:shapetype><v:shape id="Picture_x0020_1" o:spid="_x0000_i1027" type="#_x0000_t75"
        style='width:29pt;height:29pt;visibility:visible;mso-wrap-style:square'>
-       <v:imagedata src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-2.png"
+       <v:imagedata src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-5.png"
         o:title=""/>
-      </v:shape><![endif]--><![if !vml]><![endif]></span></b><b><span
+      </v:shape><![endif]--><![if !vml]><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-5.png" border=0 width=75 height=42 alt="Upgrade ConfigMgr" v:shapes="Picture_x0020_1"><![endif]></span></b><b><span
       style='font-size:9.0pt;font-family:"Segoe UI",sans-serif'><o:p></o:p></span></b></p>
       </td>
       <td valign=top style='background:white;mso-background-themecolor:background1;
@@ -128,9 +128,10 @@ description: Overview of the Desktop Deployment Center.
       color:black;mso-color-alt:windowtext;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
        id="Picture_x0020_2" o:spid="_x0000_i1026" type="#_x0000_t75" alt="Device and App Readiness"
        style='width:29pt;height:29pt;visibility:visible;mso-wrap-style:square'>
-       <v:imagedata src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-2.png"
+       <v:imagedata src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-3.png"
         o:title="Device and App Readiness"/>
-      </v:shape><![endif]--><![if !vml]><![endif]></span><span style='font-size:9.0pt;
+      </v:shape><![endif]--><![if !vml]><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-3.png" border=0 width=75 height=42 alt="Device and App Readiness"
+      v:shapes="Picture_x0020_2"><![endif]></span><span style='font-size:9.0pt;
       font-family:"Segoe UI",sans-serif'><o:p></o:p></span></p>
       </td>
       <td valign=top style='background:white;mso-background-themecolor:background1;
@@ -170,9 +171,11 @@ description: Overview of the Desktop Deployment Center.
       color:black;mso-color-alt:windowtext;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
        id="Picture_x0020_3" o:spid="_x0000_i1025" type="#_x0000_t75" alt="A close up of a logo&#10;&#10;Description automatically generated"
        style='width:29pt;height:29pt;visibility:visible;mso-wrap-style:square'>
-       <v:imagedata src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-2.png"
+       <v:imagedata src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-9.png"
         o:title="Upgrade Windows 7 to Windows 100"/>
-      </v:shape><![endif]--><![if !vml]></span><span style='font-size:9.0pt;
+      </v:shape><![endif]--><![if !vml]><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-9.png" border=0 width=75 height=42
+      alt="Upgrade Windows 7 to Windows 10"
+      v:shapes="Picture_x0020_3"><![endif]></span><span style='font-size:9.0pt;
       font-family:"Segoe UI",sans-serif'><o:p></o:p></span></p>
       </td>
       <td valign=top style='background:white;mso-background-themecolor:background1;
