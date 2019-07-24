@@ -22,32 +22,47 @@ description: Overview of the Desktop Deployment Center.
 
 <p>
 <table>
- <tr>
- <td>
-	<img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-5.png" alt="Upgrade ConfigMgr" height="144" width="144" />
- </td>
- <td>
-	<strong>Upgrade ConfigMgr to Current Branch</strong>
- </td>
- <td>
-	<img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-3.png" alt="Device and App Readiness" height="144" width="144" />
- </td>
- <td>
-	<strong>Validate device and app readiness</strong>
- </td>
- <td>
-	<img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-9.png" alt="Upgrade Windows 7 PCs" height="144" width="144" />
- </td>
- <td>
-	<strong>Upgrade Windows 7 PCs to Windows 10</strong>
- </td>
-</td>
-</tr>
-</table>
-<table>
+	 <tr>
+	 <td>
+		<table>
+         	 <tr>
+            	  <td>
+            	  <img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-5.png" alt="Upgrade ConfigMgr" height="144" width="144" />
+           	  </td>
+           	  <td>
+           	  <strong>Upgrade ConfigMgr to Current Branch</strong>
+            	  </td>
+                 </tr>
+            	</table>
+	</td>
+        <td>
+		<table>
+         	 <tr>
+            	  <td>
+            	  <img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-3.png" alt="Device and App Readiness" height="144" width="144" />
+           	  </td>
+           	  <td>
+           	  <strong>Validate device and app readiness</strong>
+            	  </td>
+                 </tr>
+            	</table>
+	</td>
+        <td>
+		<table>
+         	 <tr>
+            	  <td>
+            	  <img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-9.png" alt="Upgrade Windows 7 PCs" height="144" width="144" />
+           	  </td>
+           	  <td>
+           	  <strong>Upgrade Windows 7 PCs to Windows 10</strong>
+            	  </td>
+                 </tr>
+            	</table>
+	</td>
+	</tr>
     <tr>
     <td>
-    Part of Directory and network readiness step for organizations using System Center Configuration Manager
+    Part of Directory and network readiness step for organizations using SCCM
     </td>
     <td>
     Part of Device and app readiness step; help is available via Desktop App Assure
@@ -57,7 +72,6 @@ description: Overview of the Desktop Deployment Center.
     </td>
     </tr>
 </table>
-
 </p>
 
 <img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-2.png" alt="Desktop Deployment Wheel" height="450" width="802" align="middle" style="background-color: #fff;" />
