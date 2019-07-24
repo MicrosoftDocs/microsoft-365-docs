@@ -43,6 +43,8 @@ description: Overview of the Desktop Deployment Center.
  </td>
 </td>
 </tr>
+</table>
+
 </p>
 
 <img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-2.png" alt="Desktop Deployment Wheel" height="450" width="802" align="middle" style="background-color: #fff;" />
