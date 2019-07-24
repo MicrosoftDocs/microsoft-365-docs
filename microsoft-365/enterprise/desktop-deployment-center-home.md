@@ -44,6 +44,19 @@ description: Overview of the Desktop Deployment Center.
 </td>
 </tr>
 </table>
+<table>
+    <tr>
+    <td>
+    Part of Directory and network readiness step for organizations using System Center Configuration Manager
+    </td>
+    <td>
+    Part of Device and app readiness step; help is available via Desktop App Assure
+    </td>
+    <td>
+    Part of OS deployment and feature updates step for user-retained PCs
+    </td>
+    </tr>
+</table>
 
 </p>
 
