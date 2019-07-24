@@ -20,10 +20,10 @@ description: Overview of the Desktop Deployment Center.
 <strong>Upgrading from Windows 7 to Windows 10</strong>
 <p>Windows 7 extended support ends January 14, 2020. In-place upgrade from Windows 7 to Windows 10 is the fastest method to deploy. You can <a href="https://docs.microsoft.com/en-us/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-manual">upgrade a single PC</a> or <a href="https://docs.microsoft.com/en-us/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-automated">upgrade thousands of PCs using System Center Configuration Manager</a>. You don’t need to focus on app delivery, file migration, custom imaging, or enabling cloud-based services with in-place upgrades. You can use tools you already have to upgrade existing PCs and focus on the following deployment steps for upgrades: </p>
 
-<table border="0">
+<table>
  <tr>
  <td>
-	<table border="0">
+	<table>
 	 <tr>
 	 <td>
 		<table>
@@ -38,7 +38,7 @@ description: Overview of the Desktop Deployment Center.
             	</table>
 	</td>
         <td>
-		<table border="0">
+		<table>
          	 <tr>
             	  <td>
             	  <img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-3.png" alt="Device and App Readiness" height="144" width="144" />
@@ -50,7 +50,7 @@ description: Overview of the Desktop Deployment Center.
             	</table>
 	</td>
         <td>
-		<table border="0">
+		<table>
          	 <tr>
             	  <td>
             	  <img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-9.png" alt="Upgrade Windows 7 PCs" height="144" width="144" />
@@ -76,6 +76,8 @@ description: Overview of the Desktop Deployment Center.
     </td>
     </tr>
 </table>
+
+<br>
 
 <img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-2.png" alt="Desktop Deployment Wheel" height="450" width="802" align="middle" style="background-color: #fff;" />
 
