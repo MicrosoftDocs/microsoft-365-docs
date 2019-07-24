@@ -30,7 +30,7 @@ description: Overview of the Desktop Deployment Center.
             	  <img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-5.png" alt="Upgrade ConfigMgr" height="100" width="100" />
            	  </td>
            	  <td>
-           	  <strong>Upgrade ConfigMgr to Current Branch</strong>
+           	  <strong>Upgrade Configuration Manager to Current Branch</strong>
             	  </td>
                  </tr>
             	</table>
