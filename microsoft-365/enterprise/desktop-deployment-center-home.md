@@ -64,17 +64,6 @@ description: Overview of the Desktop Deployment Center.
 	</tr>
        </td>
        </tr>
-    <tr>
-    <td>
-    Part of Directory and network readiness step for organizations using SCCM
-    </td>
-    <td>
-    Part of Device and app readiness step; help is available via Desktop App Assure
-    </td>
-    <td>
-    Part of OS deployment and feature updates step for user-retained PCs
-    </td>
-    </tr>
 </table>
 
 <br>
