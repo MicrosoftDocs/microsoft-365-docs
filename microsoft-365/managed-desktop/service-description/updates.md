@@ -50,16 +50,19 @@ How update deployment works:
 <tr><td>Anti-virus definition</td><td colspan="4">Updated with each scan</td></tr>
 </table>
 
-These deferral periods are intentionally designed to ensure high security and performance standards for all users. Furthermore, based on data gathered across all Microsoft Managed Desktop devices and the varying scope and impact of updates, Microsoft Managed Desktop reserves flexibility to modify the length of the above deferral periods for any and all deployment groups on an ad hoc basis.
+>[!NOTE]
+>These deferral periods are intentionally designed to ensure high security and performance standards for all users. Furthermore, based on data gathered across all Microsoft Managed Desktop devices and the varying scope and impact of updates, Microsoft Managed Desktop reserves flexibility to modify the length of the above deferral periods for any and all deployment groups on an ad hoc basis.
+>
+>Microsoft Managed Desktop conducts an independent assessment of each Windows feature release to evaluate its necessity and usefulness to its managed tenants. Consequently, Microsoft Managed Desktop may or may not deploy all Windows feature updates. 
 
 ## Windows Insider Program
 
-Microsoft Managed Desktop does not support devices that are part of the Windows Insider program. The Windows Insider program is used to validate pre-release Windows software and is intended for non-mission critical devices. While this is an important Microsoft initiative, it is not intended for broad deployment in production environments. 
+Microsoft Managed Desktop does not support devices that are part of the Windows Insider program. The Windows Insider program is used to validate pre-release Windows software and is intended for non-mission-critical devices. While this is an important Microsoft initiative, it is not intended for broad deployment in production environments. 
 
-Any devices found with Windows Insider builds will be put into the Test group and not be included for update service level agreements (SLAs).
+Any devices found with Windows Insider builds may be put into the Test group and will be exempt from update service level agreements (SLAs) and end user support from Microsoft Managed Desktop.
 
 ## Bandwidth management
 
-Delivery optimization is used for all operating system and driver updates. It minimizes the download size from the Windows Update (WU) service by seeking updates from peers within the corporate network.
+Delivery optimization is used for all operating system and driver updates. It minimizes the download size from the Windows Update service by seeking updates from peers within the corporate network.
 
 
