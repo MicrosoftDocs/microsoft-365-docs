@@ -17,6 +17,68 @@ description: Overview of the Desktop Deployment Center.
 
 # Desktop Deployment Center
 
+<table border="0">
+ <tr>
+ <td>
+  <strong>Upgrading from Windows 7 to Windows 10 </strong><p>Windows 7 extended support ends January 14, 2020. In-place upgrade from Windows 7 to Windows 10 is the fastest method to deploy. You can <a href="https://docs.microsoft.com/en-us/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-manual">upgrade a single PC</a> or <a href="https://docs.microsoft.com/en-us/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-automated">upgrade thousands of PCs using System Center Configuration Manager</a>. You don’t need to focus on app delivery, file migration, custom imaging, or enabling cloud-based services with in-place upgrades. You can use tools you already have to upgrade existing PCs and focus on the following deployment steps for upgrades:
+ </td>
+ </tr>
+ <tr>
+ <td>
+	<table border="0">
+	 <tr>
+	 <td>
+		<table border="0">
+         	 <tr>
+            	  <td>
+            	  <img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-5.png" alt="Upgrade ConfigMgr" height="144" width="144" />
+           	  </td>
+           	  <td>
+           	  <strong>Upgrade ConfigMgr to Current Branch</strong>
+            	  </td>
+                 </tr>
+            	</table>
+	</td>
+        <td>
+		<table border="0">
+         	 <tr>
+            	  <td>
+            	  <img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-3.png" alt="Device and App Readiness" height="144" width="144" />
+           	  </td>
+           	  <td>
+           	  <strong>Validate device and app readiness</strong>
+            	  </td>
+                 </tr>
+            	</table>
+	</td>
+        <td>
+		<table border="0">
+         	 <tr>
+            	  <td>
+            	  <img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-9.png" alt="Upgrade Windows 7 PCs" height="144" width="144" />
+           	  </td>
+           	  <td>
+           	  <strong>Upgrade Windows 7 PCs to Windows 10</strong>
+            	  </td>
+                 </tr>
+            	</table>
+		</td>
+		</tr>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    Part of Directory and network readiness step for organizations using SCCM
+    </td>
+    <td>
+    Part of Device and app readiness step; help is available via Desktop App Assure
+    </td>
+    <td>
+    Part of OS deployment and feature updates step for user-retained PCs
+    </td>
+    </tr>
+</table>
+
 <img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-2.png" alt="Desktop Deployment Wheel" height="450" width="802" align="middle" style="background-color: #fff;" />
 
 Follow the steps below to plan and carry out your large-scale deployment of Windows 10 and Office 365 ProPlus. Each step below is part of the overall planning and deployment process with steps typically running in parallel to each other in a phased deployment. Download the free [Desktop Deployment and Management Lab Kit](https://aka.ms/howtoshiftlabs) for hands-on training with the tools highlighted in the deployment process. You can also [find help](https://aka.ms/mddhelp) for your desktop deployment from Microsoft partners and FastTrack services.
