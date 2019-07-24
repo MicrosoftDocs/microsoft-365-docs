@@ -24,22 +24,22 @@ description: Overview of the Desktop Deployment Center.
 <table>
 	 <tr>
 	 <td>
-		<table>
+		<table border="0">
          	 <tr>
             	  <td>
-            	  <img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-5.png" alt="Upgrade ConfigMgr" height="144" width="144" />
+            	  <img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-5.png" alt="Upgrade ConfigMgr" height="100" width="100" />
            	  </td>
            	  <td>
-           	  <strong>Upgrade ConfigMgr to Current Branch</strong>
+           	  <strong>Upgrade Configuration Manager to Current Branch</strong>
             	  </td>
                  </tr>
             	</table>
 	</td>
         <td>
-		<table>
+		<table border="0">
          	 <tr>
             	  <td>
-            	  <img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-3.png" alt="Device and App Readiness" height="144" width="144" />
+            	  <img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-3.png" alt="Device and App Readiness" height="100" width="100" />
            	  </td>
            	  <td>
            	  <strong>Validate device and app readiness</strong>
@@ -48,10 +48,10 @@ description: Overview of the Desktop Deployment Center.
             	</table>
 	</td>
         <td>
-		<table>
+		<table border="0">
          	 <tr>
             	  <td>
-            	  <img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-9.png" alt="Upgrade Windows 7 PCs" height="144" width="144" />
+            	  <img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-9.png" alt="Upgrade Windows 7 PCs" height="100" width="100" />
            	  </td>
            	  <td>
            	  <strong>Upgrade Windows 7 PCs to Windows 10</strong>
@@ -62,7 +62,7 @@ description: Overview of the Desktop Deployment Center.
 	</tr>
     <tr>
     <td>
-    Part of Directory and network readiness step for organizations using SCCM
+    Part of Directory and network readiness step for organizations using System Center Configuration Manager
     </td>
     <td>
     Part of Device and app readiness step; help is available via Desktop App Assure
