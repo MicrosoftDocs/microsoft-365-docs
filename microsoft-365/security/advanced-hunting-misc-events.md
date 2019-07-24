@@ -1,7 +1,7 @@
 ---
-title: Miscellaneous events in advanced hunting
-description: Find security events in the advanced hunting miscellaneous events table
-keywords: advanced hunting, atp query, query atp data, intellisense, atp telemetry, events, events telemetry, azure log analytics
+title: Security events and other events in the advanced hunting MiscEvents table
+description: Find security events or other potentially relevant event in the advanced hunting miscellaneous events (MiscEvents) table
+keywords: advanced hunting, atp query, query atp data, intellisense, atp telemetry, events, events telemetry, azure log analytics, miscevents, security events
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -17,21 +17,17 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Find miscellaneous events in advanced hunting
->**DRAFT NOTES** 
->- For MTP, I will simplify this topic into something like "Find security events and other potentially relevant system events" and will focus on providing guidance on the ActionTypes in MiscEvents, e.g. look for `smartscreen`, `antivirus`, `appcontrol`, `scheduledtask`, etc...
->- A separate, comprehensive reference will be prepared for limited distribution, perhaps under NDA
+# Find security and miscellaneous events in advanced hunting
 
 **Applies to**:
 - Microsoft 365 security center
 
-The miscellaneous events table or **MiscEvents** contains a broad range of events captured by Microsoft Defender ATP. Many of these include security-related events, such as antivirus...
-
-These events are all ETW-driven based on the ETW configuration stored in an onboarded endpoint"s registry configuration. It is important to note that this is not a comprehensive list of all possible ActionTypes. These events can only be viewed and documented upon the respective event occurring.
+The miscellaneous events table or `MiscEvents` contains a broad range of events. This table includes important security-related events, such as antivirus detections, possible exploitation activity, and firewall blocks. This table also includes events that are typically benign but can  indicate threat activity, such as the taking of screenshots, the creation of scheduled tasks, or LDAP searches.
 
 ## Event groups in the MiscEvents table
+Each unique event type in this table has a unique `ActionType` value representing the nature of the event. You can identify similar event types through similarities in their `ActionType` values. For example, all firewall events have values that begin with `Firewall`.
 
-|Event group|Description|Naming convention|
+|Event group|Description|ActionType naming convention|
 |---|---|---|
 |[Windows API calls](#windows-api-calls)|Calls to Windows API that might indicate malicious activity|Ends in `ApiCall`|
 |[Windows Defender Antivirus events](#windows-defender-antivirus-events)|Windows Defender Antivirus events, including scans and detections|Starts with `Antivirus` or `Amsi`|
@@ -46,8 +42,9 @@ These events are all ETW-driven based on the ETW configuration stored in an onbo
 
 
 ## Windows API calls
+These events are logged for Windows API function calls that have security implications, including API calls commonly used during process injection.  
 
-|Event type (ActionType)|Description|Notable info in AdditionalFields|
+|Event type (ActionType)|Description|Notable additional info (AdditionalFields)|
 |---|---|---|
 |`CreateRemoteThreadApiCall`|The CreateRemoteThread function was called and might have been used to inject a thread in the virtual address space of another process.|`TargetProcess`, `CreationTimeUtc`, `CommandLine`, `TokenElevationType`, `IntegrityLevel`, `Account_Sid`|
 |`NtAllocateVirtualMemoryApiCall`|Memory was allocated for a process.|`TargetProcess`, `CreationTimeUtc`, `CommandLine`, `TokenElevationType`, `IntegrityLevel`, `Account_Sid`|
@@ -62,6 +59,7 @@ These events are all ETW-driven based on the ETW configuration stored in an onbo
 |`NtProtectVirtualMemoryApiCall`|**NEEDS REVIEW - TBD**|**TBD**|
 
 ## Windows Defender Antivirus events
+These events represent Windows Defender Antivirus scans and detections.
 
 |Event type (ActionType)|Description|Notable info in AdditionalFields|
 |---|---|---|
@@ -73,6 +71,7 @@ These events are all ETW-driven based on the ETW configuration stored in an onbo
 |`AntivirusReport`|**NEEDS REVIEW: NOT IN TABLE**|`WasExecutingWhileDetected`, `Signer`|
 
 ## Attack surface reduction events
+These events represent detections of possible threat activity by attack surface reduction (ASR) rules, covering common threat techniques such the introduction of executables from email or documents.
 
 |Event type (ActionType)|Description|Notable info in AdditionalFields|
 |---|---|---|
@@ -86,18 +85,22 @@ These events are all ETW-driven based on the ETW configuration stored in an onbo
 |`AsrUntrustedExecutableAudited`|**NEEDS REVIEW: Not in table** An untrusted file that does not meet criteria for age or prevalence has executed.|`IsAudit`, `RuleId`|
 
 ## Controlled folder access events
+These events represent violations of controlled folder access restrictions that prevent the modification of protected folders and files.
 
 |Event type (ActionType)|Description|Notable info in AdditionalFields|
 |---|---|---|
 |`ControlledFolderAccessViolationAudited`|**NEEDS REVIEW: Not in table** Changes were made to a protected folder.|`IsAudit`, `RuleId`|
 
 ## Network protection events
+These events represent detections and blocks by network protection, which uses reputation information and customer-provided blocking lists to stop connections to potentially malicious and unwanted network addresses.
 
 |Event type (ActionType)|Description|Notable info in AdditionalFields|
 |---|---|---|
 |`ExploitGuardNetworkProtectionBlocked`|**NEEDS REVIEW: Not in table** A connection to a low-reputation network address was blocked by network protection.|`Uri`, `IsAudit`|
 
 ## Application control events
+These events represent application control detections and blocks. Application control regulates which apps, installers, drivers, and scripts are allowed to run.
+
 |Event type (ActionType)|Description|Notable info in AdditionalFields|
 |---|---|---|
 |`AppControlCodeIntegrityPolicyBlocked`|Application control blocked a code integrity policy violation.|`RequestedSigningLevel`, `ValidatedSigningLevel`, `AuthenticodeHash`|
@@ -115,6 +118,8 @@ These events are all ETW-driven based on the ETW configuration stored in an onbo
 |`AppControlCodeIntegrityImageRevoked`|Application control found an executable file with a revoked certificate.|-|
 
 ## Application guard events
+These events represent application guard activity designed to protect devices by restricting web content to within isolated containers.
+
 |Event type (ActionType)|Description|Notable info in AdditionalFields|
 |---|---|---|
 |`AppGuardLaunchedWithUrl`|The opening of an untrusted URL has initiated an application guard container.|`ContainerName`|
@@ -124,8 +129,9 @@ These events are all ETW-driven based on the ETW configuration stored in an onbo
 |`AppGuardResumeContainer`|Application guard resumed an isolated container from a suspended state.|`ContainerName`|
 |`AppGuardStopContainer`|Application guard stopped an isolated container.|`ContainerName`|
 
-
 ## Exploit protection events
+These events represent exploit protection detections and blocks. Exploit protection provides low-level tactical mitigation against attempts to use exploit code.
+
 |Event type (ActionType)|Description|Notable info in AdditionalFields|
 |---|---|---|
 |`ExploitGuardAcgAudited`|Arbitrary code guard (ACG) detected an attempt to modify code page permissions or create unsigned code pages.|`IsAudit`|
@@ -149,6 +155,8 @@ These events are all ETW-driven based on the ETW configuration stored in an onbo
 |`ExploitGuardRopExploitBlocked`|Exploit protection blocked possible return-object programming (ROP) exploitation.|`IsAudit`|
 
 ## Firewall events
+These events represent Windows Defender Firewall activity, including the blocking of unwanted connections and attempts to disable the firewall service.
+
 |Event type (ActionType)|Description|Notable info in AdditionalFields|
 |---|---|---|
 |`FirewallInboundConnectionToAppBlocked`|The firewall blocked an inbound connection to an app.|`Profiles`|
@@ -157,6 +165,8 @@ These events are all ETW-driven based on the ETW configuration stored in an onbo
 |`FirewallServiceStopped`|The firewall service was stopped.|-|
 
 ## Uncategorized events
+These uncategorized events represent a variety of activities that can be relevant during investigations. Many of these events, such as the creation of scheduled tasks and LDAP searches, are typically benign, but can indicate threat activity, .
+
 |Event type (ActionType)|Description|Notable info in AdditionalFields|
 |---|---|---|
 |`BrowserLaunchedToOpenUrl`|The web browser opened a URL that originated as a link in another application.|`Name`,`Uri`|
