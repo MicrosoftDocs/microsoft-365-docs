@@ -20,10 +20,8 @@ description: Overview of the Desktop Deployment Center.
 <strong>Upgrading from Windows 7 to Windows 10</strong>
 <p>Windows 7 extended support ends January 14, 2020. In-place upgrade from Windows 7 to Windows 10 is the fastest method to deploy. You can <a href="https://docs.microsoft.com/en-us/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-manual">upgrade a single PC</a> or <a href="https://docs.microsoft.com/en-us/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-automated">upgrade thousands of PCs using System Center Configuration Manager</a>. You don’t need to focus on app delivery, file migration, custom imaging, or enabling cloud-based services with in-place upgrades. You can use tools you already have to upgrade existing PCs and focus on the following deployment steps for upgrades: </p>
 
+<p>
 <table>
- <tr>
- <td>
-	<table>
 	 <tr>
 	 <td>
 		<table>
@@ -62,15 +60,21 @@ description: Overview of the Desktop Deployment Center.
             	</table>
 	</td>
 	</tr>
-       </td>
-       </tr>
+    <tr>
+    <td>
+    Part of Directory and network readiness step for organizations using SCCM
+    </td>
+    <td>
+    Part of Device and app readiness step; help is available via Desktop App Assure
+    </td>
+    <td>
+    Part of OS deployment and feature updates step for user-retained PCs
+    </td>
+    </tr>
 </table>
-
-<p>
+</p>
 
 <img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-2.png" alt="Desktop Deployment Wheel" height="450" width="802" align="middle" style="background-color: #fff;" />
-
-</p>
 
 Follow the steps below to plan and carry out your large-scale deployment of Windows 10 and Office 365 ProPlus. Each step below is part of the overall planning and deployment process with steps typically running in parallel to each other in a phased deployment. Download the free [Desktop Deployment and Management Lab Kit](https://aka.ms/howtoshiftlabs) for hands-on training with the tools highlighted in the deployment process. You can also [find help](https://aka.ms/mddhelp) for your desktop deployment from Microsoft partners and FastTrack services.
 
