@@ -22,20 +22,19 @@ search.appverid:
 # Incidents overview in Microsoft 365
 
 
-Incidents in Microsoft 365 are based on alerts that are generated when a malicious event is observed.
+Incidents in Microsoft 365 tell the broader story of an attack by connecting the dots seen on individual alerts across entities. You'll know exactly where an attack started, what devices are impacted, who are affected, and where the threat has gone.
+
 
 Malicious events on the following entities are surfaced in Microsoft 365 security center:
 - Devices
 - Identities
 - Mailboxes
 
-
-Correlation analytics are then applied on individual alerts. Malicious events that are identified to exhibit characteristics of being part of a larger attack is then aggregated into an incident.
-
-Incidents in Microsoft 365 tell the broader story of an attack by connecting the dots seen on individual alerts on entities. You'll know exactly where an attack started, what devices are impacted, who are affected, and where the threat has gone.
-
+Suspicious events that are seen to show characteristics of being part of a larger attack are aggregated into an incident. 
 
 The platform provides security defenders with the right visuals and data representations to understand and address complex cross-entity threats. Not only will you have visibility on the scope of an attack, but you'll also have access to services that will allow you to take tactical steps to contain an incident.
+
+
 
 ## Related topics
 - [Incident queue](incident-queue.md)

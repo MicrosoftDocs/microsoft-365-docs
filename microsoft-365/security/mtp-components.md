@@ -33,7 +33,7 @@ This section describes the main components of the platform and their functionali
 - Microsoft 365 security center
 - Signal sources
 - Security experiences
-- Surfaces
+
 
 
 
@@ -43,7 +43,7 @@ Microsoft 365 security center is the portal where incidents, automated investiga
 ## Signal sources
 Microsoft Threat Protection gathers signals from various detection engines and applies intelligent correlation to provide security analysts with better context on the full scope of a threat. 
 
-### Security experiences
+## Security experiences
 The following table provides details on what experiences are available in Microsoft 365 security center and what services are integrated to provide further details during an investigation. 
 
 

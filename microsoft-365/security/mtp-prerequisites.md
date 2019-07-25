@@ -39,12 +39,5 @@ Access to Microsoft 365 security center is done through a browser. The following
 - Google Chrome
 
 
-## Other requirements
-Because Microsoft Threat Protection brings together the power of various services, ensure that you also meet the requirements of the other services that integrates with the platform. 
-
-For more information see:
-- [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
-- [Office 365 Advanced Threat Protection](https://docs.microsoft.com/office365/securitycompliance/office-365-atp)
-- [Azure Advanced Threat Protection](https://docs.microsoft.com/en-us/azure-advanced-threat-protection/)
 
 
