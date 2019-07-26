@@ -42,7 +42,7 @@ The following reference lists all the tables in the schema. Each table name link
 | **[MiscEvents](advanced-hunting-miscevents-table.md)** | Multiple event types, including events triggered by security controls such as Windows Defender Antivirus and exploit protection |
 | **[EmailEvents](advanced-hunting-emailevents-table.md)** | Office 365 email events, including email delivery and blocking events |
 | **[EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md)** | Information about files attached to Office 365 emails |
-| **[EmailUrlInfo](advanced-hunting-emailurlinfo-table.md)** | Information about URLs in embedded links on Office 365 emails |
+| **[EmailUrlInfo](advanced-hunting-emailurlinfo-table.md)** | Information about URLs on Office 365 emails |
 
 ## Related topics
 - [Proactively hunt for threats](advanced-hunting.md)

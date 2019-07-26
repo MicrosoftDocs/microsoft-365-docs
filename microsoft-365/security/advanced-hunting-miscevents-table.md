@@ -26,7 +26,7 @@ The MiscEvents table in the advanced hunting schema contains information about m
 
 To understand how to use the MiscEvents table to locate specific events, such as antivirus detections or firewall blocks, [read about the ActionTypes in the MiscEvents table](advanced-hunting-misc-events.md).
 
-For information on other tables in the advanced hunting schema, [see the advanced hunting reference](advanced-hunting-reference.md).
+For information on other tables in the advanced hunting schema, [see the advanced hunting reference](advanced-hunting-schema-tables.md).
 
 
 | Column name | Data type | Description |
