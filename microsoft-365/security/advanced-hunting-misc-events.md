@@ -17,7 +17,7 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Find security and miscellaneous events in advanced hunting
+# Use the MiscEvents table in advanced hunting to find security events and suspicious activities
 
 **Applies to**:
 - Microsoft 365 security center
@@ -169,7 +169,7 @@ These events represent Windows Defender Firewall activity, including the blockin
 |`FirewallServiceStopped`|The firewall service was stopped.|-|
 
 ## Uncategorized events
-These uncategorized events represent a variety of activities that can be relevant during investigations. Many of these events, such as the creation of scheduled tasks and LDAP searches, are typically benign, but can indicate threat activity, .
+These uncategorized events represent a variety of activities that can be relevant during investigations. Many of these events, such as the creation of scheduled tasks and LDAP searches, are typically benign, but can indicate threat activity.
 
 |Event type (ActionType)|Description|Notable info in AdditionalFields|
 |---|---|---|
