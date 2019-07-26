@@ -35,14 +35,12 @@ The following tables comprise the data schema in advanced hunting:
 | **NetworkCommunicationEvents** | Network connection and related events |
 | **FileCreationEvents** | File creation, modification, and other file system events |
 | **RegistryEvents** | Creation and modification of registry entries | 
-| **LogonEvents** | Login and other authentication events | 
+| **LogonEvents** | Sign-ins and other authentication events | 
 | **ImageLoadEvents** | DLL loading events |  
 | **MiscEvents** | Multiple event types, including events triggered by security controls such as Windows Defender Antivirus and exploit protection |
 | **EmailEvents** | Office 365 email events, including email delivery and blocking events |
 | **EmailAttachmentInfo** | Information about files attached to Office 365 emails |
 | **EmailUrlInfo** | Information about URLs in embedded links on Office 365 emails |
-
-**DRAFT NOTES expand information including special columns in each table**
 
 ## Related topics
 - [Proactively hunt for threats](advanced-hunting.md)

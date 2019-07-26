@@ -1,5 +1,5 @@
 ---
-title: Microsoft Threat Protection architecture
+title: Microsoft Threat Protection components
 description: Learn about the components and the general functionality of Microsoft Threat Protection 
 keywords: mtp, microsoft threat protection, architecture, components, functionality, incidents, advanced hunting, automated investigation, secure score
 search.product: eADQiWindows 10XVcnh
@@ -19,13 +19,12 @@ search.appverid:
 - MET150
 ---
 
-# Microsoft Threat Protection architecture
+# Microsoft Threat Protection components
 
 Microsoft Threat Protection helps secure the modern workplace across its entire attack surface, securing identities, endpoints, cloud apps, and infrastructure. To effectively do that, it leverages the power of services across Microsoft's security stack. 
 
 Utilizing complex signal sharing, incident correlation, and cross-cluster queries, security teams are empowered to better protect valuable assets across an organization.
 
- Microsoft Threat Protection architecture:
 
 ![Image of Microsoft Threat Protection](images/mtp-architecture.png)
 
@@ -34,7 +33,7 @@ This section describes the main components of the platform and their functionali
 - Microsoft 365 security center
 - Signal sources
 - Security experiences
-- Surfaces
+
 
 
 
@@ -44,7 +43,7 @@ Microsoft 365 security center is the portal where incidents, automated investiga
 ## Signal sources
 Microsoft Threat Protection gathers signals from various detection engines and applies intelligent correlation to provide security analysts with better context on the full scope of a threat. 
 
-### Security experiences
+## Security experiences
 The following table provides details on what experiences are available in Microsoft 365 security center and what services are integrated to provide further details during an investigation. 
 
 

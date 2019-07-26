@@ -41,7 +41,7 @@ You can create or modify a query and save it as your own query or share it with 
 
 4. Select the folder where you'd like to save the query.
     - Shared queries - Allows other users in the tenant to access the query
-    - My query - Accessible only to the user who saved the query
+    - My queries - Accessible only to the user who saved the query
     
 5. Click **Save**. 
 

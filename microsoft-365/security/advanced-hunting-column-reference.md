@@ -141,7 +141,7 @@ To effectively build queries that span multiple tables, you need to understand t
 | FinalEmailActionPolicyGuid | string | Unique identifier for the policy that determined the final mail action |
 | InternetMessageId | string | Unique identifier for the email on the internet |
 | LinkCount | int | Number of embedded links in the email |
-| LinkUrl	| string | URL of the embedded link |
+| LinkUrl | string | URL of the embedded link |
 | MalwareDetectionMethod | string | Method used to detect malware in the email: Antivirus, File reputation, Safe Attachments detonation |
 | MalwareFilterVerdict | string | Verding of the email filtering stack on whether the email contains malaware: Malware found, No malware |
 | NetworkMessageId | string | Unique identifier for the email within the organization |

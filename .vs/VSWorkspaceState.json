@@ -2,8 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\microsoft-365",
+    "\\microsoft-365\\enterprise",
+    "\\microsoft-365\\images",
     "\\microsoft-365\\security"
   ],
-  "SelectedNode": "\\microsoft-365\\security\\index.md",
+  "SelectedNode": "\\microsoft-365\\enterprise\\index.md",
   "PreviewInSolutionExplorer": false
 }

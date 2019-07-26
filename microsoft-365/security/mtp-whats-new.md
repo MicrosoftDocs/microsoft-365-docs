@@ -21,7 +21,7 @@ search.appverid:
 
 # What's new in Microsoft 365 Security 
 
-The following features are generally available (GA) in the latest release of Microsoft 365 Security. 
+This topic will cover capabilities that are generally available (GA) in the latest release of Microsoft 365 Security. 
 
 For more information on preview features, see [Preview features](mtp-preview.md)
 

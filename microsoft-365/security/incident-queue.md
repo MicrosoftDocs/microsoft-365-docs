@@ -59,4 +59,6 @@ You can choose to show between unassigned incidents or those which are assigned 
 You can choose to limit the list of incidents shown based on their status to see which ones are active or resolved.
 
 ## Related topics
-- [Manage incidents]
+- [Incidents overview](incidents-overview.md)
+- [Analyze incidents](analyze-incidents.md)
+- [Manage incidents](manage-incidents.md)
