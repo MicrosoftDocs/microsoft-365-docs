@@ -20,11 +20,11 @@ Customers can contact Microsoft Managed Desktop operations for:
 
 ## What's included?
 
-Microsoft Managed Desktop support:
+Microsoft Managed Desktop support includes:
 
-- Provides a team of support engineers dedicated to Microsoft Managed Desktop devices
-- Supports Microsoft Managed Desktop devices and end users assigned to those devices
-- Grants limited administrative access to Microsoft Managed Desktop devices for support engineers managing Microsoft Managed Desktop devices 
+- A team of engineers dedicated to Microsoft Managed Desktop devices
+- Support options for end users with Microsoft Managed Desktop devices
+- Grants limited administrative access to Microsoft Managed Desktop devices for engineers managing Microsoft Managed Desktop devices 
 
 Supported products:
 
