@@ -23,6 +23,9 @@ search.appverid:
 description: "Learn how to protect your campaign by increasing your security with Microsoft 365 for Campaigns."
 ---
 
+# Bump up security protection for your campaign
+
+
 ## Overview 
 Watch this video to see how you can protect your campaign:
 

@@ -33,7 +33,7 @@ When you sign up for Microsoft 365 Business and enter your information, you auto
 
 ## Create additional admin accounts
 
-Use admin accounts only for administration. Admins should have a separate user account for regular use of Office apps and only use their administrative account when necessary to manage accounts, devices and while working on other admin functions.  It is also a good idea to remove the Microsoft 365 Business license from the admin accounts so you don't have to pay for them.
+Use admin accounts only for administration. Admins should have a separate user account for regular use of Office apps and only use their administrative account when necessary to manage accounts, devices and while working on other admin functions. It is also a good idea to remove the Microsoft 365 Business license from the admin accounts so you don't have to pay for them.
 
 You'll want to set up at least one additional global admin account to give admin access to another trusted employee. You can also create separate admin accounts for user management (this role is called **User management administrator**). See [about admin roles](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) for more information.
 
@@ -56,7 +56,7 @@ To create additional admin accounts:
 
 ## Create an emergency admin account
 
-You should also create a backup account that isn't set up with multi-factor authentication (MFA) so you don't accidentally lock yourself out (for example if you lose your phone that you are using as a second from of verification). Make sure the password for this account is a phrase or at least 16 characters long. This is often referred to as a "break-glass account."
+You should also create a backup account that isn't set up with multi-factor authentication (MFA) so you don't accidentally lock yourself out (for example if you lose your phone that you are using as a second from of verification). Make sure that the password for this account is a phrase or at least 16 characters long. This is often referred to as a "break-glass account."
 
 ## Create a user account for yourself
 
@@ -73,6 +73,6 @@ To create a new user account:
 
 ## Additional recommendations
 
-- Be sure admin accounts are also set up for multi-factor authentication. We'll show you how to do this in [Configure conditional access policies](m365-campaigns-conditional-access.md).
+- Be sure that admin accounts are also set up for multi-factor authentication. We'll show you how to do this in [Configure conditional access policies](m365-campaigns-conditional-access.md).
 - Before using admin accounts, close out all unrelated browser sessions and apps, including personal email accounts. You can also use in private, or incognito browser windows.
 - After completing admin tasks, be sure to sign out of the browser session.

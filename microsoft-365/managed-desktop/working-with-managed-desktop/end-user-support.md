@@ -36,7 +36,7 @@ End users with Microsoft Managed Desktop devices also have access to toll-free p
 - Australia: +61 180 037 0619
 
 >[!NOTE]
->Please have your device serial number ready when you call. 
+>Please have your organizational email address ready when you call to verify your identity. 
 
 ## Additional resources
 - [Admin support for Microsoft Managed Desktop](admin-support.md). 
