@@ -40,7 +40,7 @@ We recommend going through several steps to quickly get up and running with adva
 | Learning goal | Description | Resource |
 |--|--|--|
 | **Get a feel for the language** | Advanced hunting is based on the [Kusto query language](https://docs.microsoft.com/en-us/azure/kusto/query/) and thus supports the same syntax and operators | [Query language overview](advanced-hunting-language-overview.md) |
-| **Understand the schema** | A good high-level understanding of the tables in the schema and the columns will give you a decent grasp of the kinds of data that are available | [Schema tables](advanced-hunting-schema-tables.md), [Column reference](advanced-hunting-column-reference.md) |
+| **Understand the schema** | A good high-level understanding of the tables in the schema and the columns will give you a decent grasp of the kinds of data that are available | [Schema reference](advanced-hunting-schema-tables.md) |
 | **Use predefined queries** | If you would like to quickly jump into specific threat hunting scenarios, explore several collections of predefined queries | [Shared queries](advanced-hunting-shared-queries.md)
 
 ## Get help as you write queries
@@ -72,7 +72,6 @@ The filter selections are added as additional query elements and the results are
 ## Related topics
 - [Learn the query language](advanced-hunting-language-overview.md)
 - [Use shared queries](advanced-hunting-shared-queries.md)
-- [Understand the data tables](advanced-hunting-schema-tables.md)
-- [Understand the data columns](advanced-hunting-column-reference.md)
+- [Understand the schema](advanced-hunting-schema-tables.md)
 - [Find miscellaneous events](advanced-hunting-misc-events.md)
 - [Apply query best practices](advanced-hunting-best-practices.md)

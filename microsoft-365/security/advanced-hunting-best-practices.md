@@ -92,6 +92,5 @@ ProcessCreationEvents
 - [Proactively hunt for threats](advanced-hunting.md)
 - [Learn the query language](advanced-hunting-language-overview.md)
 - [Use shared queries](advanced-hunting-shared-queries.md)
-- [Understand the data tables](advanced-hunting-schema-tables.md)
-- [Understand the data columns](advanced-hunting-column-reference.md)
+- [Understand the schema](advanced-hunting-schema-tables.md)
 - [Find miscellaneous events](advanced-hunting-misc-events.md)

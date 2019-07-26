@@ -22,10 +22,14 @@ ms.topic: article
 **Applies to**:
 - Microsoft 365 security center
 
-The miscellaneous events table or `MiscEvents` contains a broad range of events. This table includes important security-related events, such as antivirus detections, possible exploitation activity, and firewall blocks. This table also includes events that are typically benign but can  indicate threat activity, such as the taking of screenshots, the creation of scheduled tasks, or LDAP searches.
+The miscellaneous events table or `MiscEvents` contains a broad range of events. This table includes important security-related events, such as antivirus detections, possible exploitation activity, and firewall blocks. This table also includes events that are typically benign but can indicate threat activity, such as the taking of screenshots, the creation of scheduled tasks, or LDAP searches.
+
+Each unique event type in this table has a unique value in the `ActionType` column representing the nature of the event. 
+
+To learn about other columns in the `MiscEvents` table, [see the table reference](advanced-hunting-miscevents-table.md).
 
 ## Event groups in the MiscEvents table
-Each unique event type in this table has a unique `ActionType` value representing the nature of the event. You can identify similar event types through similarities in their `ActionType` values. For example, all firewall events have values that begin with `Firewall`.
+ You can identify event groups — similar or related event types — through similarities in their `ActionType` values. For example, all firewall events have values that begin with `Firewall`.
 
 |Event group|Description|ActionType naming convention|
 |---|---|---|
@@ -194,9 +198,9 @@ These uncategorized events represent a variety of activities that can be relevan
 
 
 ## Related topics
+- [MiscEvents table reference](advanced-hunting-miscevents-table.md)
 - [Proactively hunt for threats](advanced-hunting.md)
 - [Learn the query language](advanced-hunting-language-overview.md)
 - [Use shared queries](advanced-hunting-shared-queries.md)
-- [Understand the data tables](advanced-hunting-schema-tables.md)
-- [Understand the data columns](advanced-hunting-column-reference.md)
+- [Understand the schema](advanced-hunting-schema-tables.md)
 - [Apply query best practices](advanced-hunting-best-practices.md)
