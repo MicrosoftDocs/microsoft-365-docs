@@ -27,7 +27,8 @@ Selecting an incident from the **Incidents queue** brings up the **Incident mana
 
 ![Image of selected incident](images/incident-selected.png)
 
-From the management pane, you'll be able to assign an incidents to yourself and change the status and classification. Opening the incident page allows you to take other management actions. 
+From the management pane, you'll be able to assign an incidents to yourself and change the status and classification. Opening the incident page allows you to take other management actions.
+ 
 ## Assign incidents
 If an incident has not been assigned yet, you can select **Assign to me** to assign the incident to yourself. Doing so assumes ownership of not just the incident, but also all the alerts associated with it.
 
@@ -35,9 +36,9 @@ If an incident has not been assigned yet, you can select **Assign to me** to ass
 ### Incident status
 You can categorize incidents (as **Active**, or **Resolved**) by changing their status as your investigation progresses. This helps you organize and manage how your team can respond to incidents.
 
-For example, your SoC analyst can review the urgent **Active** incidents for the day, and decide to assign them to himself for investigation.
+For example, your SOC analyst can review the urgent **Active** incidents for the day, and decide to assign them to herself for investigation.
 
-Alternatively, your SoC analyst might set the incident as **Resolved** if the incident has been remediated. 
+Alternatively, your SOC analyst might set the incident as **Resolved** if the incident has been remediated. 
 
 ### Classification
 You can choose not to set a classification, or decide to specify whether an incident is true or false. Doing so helps the team see patterns and learn from them.
