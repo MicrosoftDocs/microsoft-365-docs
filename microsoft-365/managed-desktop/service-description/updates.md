@@ -59,7 +59,7 @@ How update deployment works:
 
 Microsoft Managed Desktop does not support devices that are part of the Windows Insider program. The Windows Insider program is used to validate pre-release Windows software and is intended for non-mission-critical devices. While this is an important Microsoft initiative, it is not intended for broad deployment in production environments. 
 
-Any devices found with Windows Insider builds will be put into the Test group and will be exempt from update service level agreements (SLAs) and end user support from Microsoft Managed Desktop.
+Any devices found with Windows Insider builds might be put into the Test group and will be exempt from update service level agreements (SLAs) and end user support from Microsoft Managed Desktop.
 
 ## Bandwidth management
 
