@@ -18,7 +18,7 @@ ms.collection: M365-modern-desktop
 
 Microsoft Managed Desktop connects all devices to a modern cloud-based infrastructure. Keeping Windows, Office, drivers, firmware, and Microsoft Store for Business application updates up to date is a balance of speed and stability. Deployment groups will be used to ensure OS and policies are rolled out in a safe manner. 
 
-Updates released by Microsoft are cumulative and may be categorized as quality or feature updates.
+Updates released by Microsoft are cumulative and are categorized as quality or feature updates.
 For more information, see [Windows Update for Business: Update types](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb#update-types). 
 
 ## Update groups
@@ -26,7 +26,7 @@ For more information, see [Windows Update for Business: Update types](https://do
 Microsoft Managed Desktop uses four Azure AD groups to manage updates:
 
 - **Test**: Used to validate Microsoft Managed Desktop policy changes, OS updates, feature updates, and other changes pushed to the tenant. There should not be any end users placed in the test group. The test group is exempt from any established SLAs and end user support. This group is available for use to validate compatibility of applications with new Policy or OS Changes.  
-- **First**: Contains early software adopters and devices that may be subject to pre-release updates. Devices in this group may experience outages if there are scenarios which were not covered during testing in the test ring.
+- **First**: Contains early software adopters and devices that could be subject to pre-release updates. Devices in this group might experience outages if there are scenarios which were not covered during testing in the test ring.
 - **Fast**: Prioritizes speed over stability. Useful for detecting quality issues before they are offered to the Broad group. This group serves as a next layer of validation but is generally more stable than the Test and First groups. 
 - **Broad**: Last group to have feature and quality updates available. This group contains the majority of users in the tenant, and therefore favors stability over speed in deployment. Testing of apps should be done here as the environment is most stable. 
 
@@ -36,7 +36,7 @@ How update deployment works:
 - Microsoft Managed Desktop deploys a new feature or quality update according the schedule specified below.
 - During deployment, Microsoft Managed Desktop monitors for signs of failure or disruption (based on diagnostic data signals and end-user support system). If any are detected, then the deployment to all current and future groups is immediately paused.
     - Example: if an issue is discovered while deploying a quality update to the First group, then update deployments to First, Fast, and Broad will all be paused until the issue is resolved.
-    - Compatibility issues may be reported by filing a ticket in the Microsoft Managed Desktop IT Admin portal.
+    - Compatibility issues can be reported by filing a ticket in the Microsoft Managed Desktop IT Admin portal.
 - Feature and quality updates are paused independently. Pause is in effect for 35 days by default, but can be reduced or extended depending on whether the issue is remediated.
 - Once the groups are un-paused, deployment resumes according to the schedule below.
 - This deployment process applies to both feature and quality updates, though the timeline varies for each.
@@ -53,13 +53,13 @@ How update deployment works:
 >[!NOTE]
 >These deferral periods are intentionally designed to ensure high security and performance standards for all users. Furthermore, based on data gathered across all Microsoft Managed Desktop devices and the varying scope and impact of updates, Microsoft Managed Desktop reserves flexibility to modify the length of the above deferral periods for any and all deployment groups on an ad hoc basis.
 >
->Microsoft Managed Desktop conducts an independent assessment of each Windows feature release to evaluate its necessity and usefulness to its managed tenants. Consequently, Microsoft Managed Desktop may or may not deploy all Windows feature updates. 
+>Microsoft Managed Desktop conducts an independent assessment of each Windows feature release to evaluate its necessity and usefulness to its managed tenants. Consequently, Microsoft Managed Desktop might or might not deploy all Windows feature updates. 
 
 ## Windows Insider Program
 
 Microsoft Managed Desktop does not support devices that are part of the Windows Insider program. The Windows Insider program is used to validate pre-release Windows software and is intended for non-mission-critical devices. While this is an important Microsoft initiative, it is not intended for broad deployment in production environments. 
 
-Any devices found with Windows Insider builds may be put into the Test group and will be exempt from update service level agreements (SLAs) and end user support from Microsoft Managed Desktop.
+Any devices found with Windows Insider builds will be put into the Test group and will be exempt from update service level agreements (SLAs) and end user support from Microsoft Managed Desktop.
 
 ## Bandwidth management
 
