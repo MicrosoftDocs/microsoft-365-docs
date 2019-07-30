@@ -1,6 +1,6 @@
 ---
-title: 
-description: 
+title: Compliance Offering - Office of the Superintendent of Financial Institutions (OSFI) Canada
+description: Microsoft guidance to help financial institutions in Canada with cloud adoption.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
@@ -12,9 +12,9 @@ audience: itpro
 ms.collection: M365-security-compliance
 ---
 
-Microsoft has published guidance to help financial institutions in Canada with cloud adoption.
+# Compliance Offering: Office of the Superintendent of Financial Institutions (OSFI) Canada
 
-# About the OSFI
+## About the OSFI
 
 The [Office of the Superintendent of Financial Institutions](http://www.osfi-bsif.gc.ca/Eng/Pages/default.aspx) (OSFI) is an independent agency of the Government of Canada responsible for the prudential regulation and supervision of federally regulated financial institutions and pension plans in Canada.
 
@@ -22,7 +22,7 @@ In its oversight role, OSFI published the B-10 Guidelines for [Outsourcing of Bu
 
 In addition, the use of cloud services by financial institutions must comply with the [Personal Information Protection and Electronic Documents Act](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/) (PIPEDA), and in some instances, provincial data privacy laws.
 
-# Microsoft and OSFI
+## Microsoft and OSFI
 
 To help guide financial institutions in Canada considering outsourcing business functions to the cloud, Microsoft has published [Navigating your way to the cloud: A compliance checklist for financial institutions in Canada](https://aka.ms/Azure-Canada-Compliance). By reviewing and completing the checklist, financial organizations can adopt Microsoft business cloud services with the confidence that they are complying with applicable regulatory requirements.
 
@@ -30,56 +30,45 @@ When Canadian financial institutions outsource business activities, they must co
 
 The Microsoft checklist helps Canadian financial firms conducting due-diligence assessments of Microsoft business cloud services and includes:
 
-  - An overview of the regulatory landscape for context.
+- An overview of the regulatory landscape for context.
+- A checklist that sets forth the issues to be addressed and maps Microsoft Azure, Microsoft Dynamics 365, and Microsoft 365 services against those regulatory obligations. The checklist can be used as a tool to measure compliance against a regulatory framework and provide an internal structure for documenting compliance, as well as help customers conduct their own risk assessments of Microsoft business cloud services.
 
-  - A checklist that sets forth the issues to be addressed and maps Microsoft Azure, Microsoft Dynamics 365, and Microsoft 365 services against those regulatory obligations. The checklist can be used as a tool to measure compliance against a regulatory framework and provide an internal structure for documenting compliance, as well as help customers conduct their own risk assessments of Microsoft business cloud services.
-
-# How to implement 
+## How to implement
 
 [Compliance checklist: Canada](https://aka.ms/Azure-Canada-Compliance)
-
-  - Financial firms can get help in conducting risk assessments of Microsoft business cloud services.
+    - Financial firms can get help in conducting risk assessments of Microsoft business cloud services.
 
 [Privacy in Microsoft Cloud](https://aka.ms/MCSPrivacy)
-
-  - Get details on Microsoft privacy principles and standards and on privacy laws specific to Canada.
+    - Get details on Microsoft privacy principles and standards and on privacy laws specific to Canada.
 
 [Risk Assessment & Compliance Guide](https://aka.ms/RiskGovernanceGuide)
-
-  - Create a governance model for risk assessment of Microsoft cloud services, and regulator notification.
+    - Create a governance model for risk assessment of Microsoft cloud services, and regulator notification.
 
 [Industry use cases for Azure](https://docs.microsoft.com/en-us/azure/industry/financial/)
+    - Use case overviews, tutorials, and other resources to build Azure solutions for financial services.
 
-  - Use case overviews, tutorials, and other resources to build Azure solutions for financial services.
+## Microsoft in-scope cloud services
 
-# Microsoft in-scope cloud services
+- [Azure](https://aka.ms/AzureCompliance)
+- [Dynamics 365](https://aka.ms/d365-compliance-list)
+- [Microsoft 365](https://aka.ms/o365-compliance-framework)
 
-  - [Azure](https://aka.ms/AzureCompliance)
+## Frequently asked questions
 
-  - [Dynamics 365](https://aka.ms/d365-compliance-list)
+**Is regulatory approval required?**
 
-  - [Microsoft 365](https://aka.ms/o365-compliance-framework)
+No. There is no requirement for prior notification, consultation, or approval. The use of public cloud computing is permitted, subject always to compliance with OSFI requirements.
 
-# Frequently asked questions
+The [OSFI B-10 Guidelines](http://www.osfi-bsif.gc.ca/Eng/fi-if/rg-ro/gdn-ort/gl-ld/Pages/b10.aspx) indicate that OSFI expects a financial institution to design a risk management program that applies to all of its outsourcing arrangements, with risk mitigation commensurate with the associated risks. However, only material outsourcing arrangements need to be documented by a written contract that addresses safeguards identified in the guidelines. Part 2 of the Microsoft [checklist](https://aka.ms/Azure-Canada-Compliance) (page 53) maps these against the sections in Microsoft contractual documents where they are addressed.
 
-Is regulatory approval required?
+**Are there any mandatory terms that must be included in the contract with the cloud services provider?**
 
-> No. There is no requirement for prior notification, consultation, or approval. The use of public cloud computing is permitted, subject always to compliance with OSFI requirements.
-> 
-> The [**OSFI B-10 Guidelines**](http://www.osfi-bsif.gc.ca/Eng/fi-if/rg-ro/gdn-ort/gl-ld/Pages/b10.aspx) indicate that OSFI expects a financial institution to design a risk management program that applies to all of its outsourcing arrangements, with risk mitigation commensurate with the associated risks. However, only material outsourcing arrangements need to be documented by a written contract that addresses safeguards identified in the guidelines. Part 2 of the Microsoft [**checklist**](https://aka.ms/Azure-Canada-Compliance) (page 53) maps these against the sections in Microsoft contractual documents where they are addressed.
+Yes, but only if the outsourcing arrangement is a material outsourcing or if it involves any transfer of personal information to the cloud service provider.
 
-Are there any mandatory terms that must be included in the contract with the cloud services provider?
+## Featured resources
 
-> Yes, but only if the outsourcing arrangement is a material outsourcing or if it involves any transfer of personal information to the cloud service provider.
-
-# Featured resources
-
-  - [**Microsoft and Canadian privacy laws**](https://aka.ms/CanadianPrivacyLaws-Compliance)
-
-  - [**Microsoft Financial Services Compliance Program**](https://aka.ms/FSCP-Print)
-
-  - [**Microsoft business cloud services and financial services**](https://www.microsoft.com/en-us/trustcenter/cloudservices/financialservices)
-
-  - [**Financial services compliance in Azure**](https://azure.microsoft.com/en-us/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
-
-  - [**Azure Financial Services Cloud Risk Assessment Tool**](https://aka.ms/FFIEC-CSDT)
+- [Microsoft and Canadian privacy laws](https://aka.ms/CanadianPrivacyLaws-Compliance)
+- [Microsoft Financial Services Compliance Program](https://aka.ms/FSCP-Print)
+- [Microsoft business cloud services and financial services](https://www.microsoft.com/en-us/trustcenter/cloudservices/financialservices)
+- [Financial services compliance in Azure](https://azure.microsoft.com/en-us/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
+- [Azure Financial Services Cloud Risk Assessment Tool](https://aka.ms/FFIEC-CSDT)

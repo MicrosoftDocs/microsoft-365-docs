@@ -1,6 +1,6 @@
 ---
-title: 
-description: 
+title: Compliance Offering - National Health Service (NHS) Information Governance (IG) Toolkit
+description: Azure is certified to the Health Information Trust Alliance Common Security Framework.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
@@ -12,9 +12,9 @@ audience: itpro
 ms.collection: M365-security-compliance
 ---
 
-Azure is certified to the Health Information Trust Alliance Common Security Framework.
+# Compliance Offering: National Health Service (NHS) Information Governance (IG) Toolkit
 
-# NHS IG Toolkit Overview
+## NHS IG Toolkit Overview
 
 The National Health Service (NHS) is the national health system for England, and provides the majority of healthcare for the citizens of England, covering all healthcare practice areas. Founded in 1948, the NHS was the world’s first single-payer health system. It is also the world’s largest health system, employing over 1.5 million people with a 2016 budget of £116.4 billion.
 
@@ -30,58 +30,48 @@ Adherence with the NHS IG Toolkit helps protect the integrity and confidentialit
 
 The NHS IG Toolkit is intended to:
 
-  - Provide a standard to address common customer concerns about the security and confidentiality of NHS patient data and the impact on business
+- Provide a standard to address common customer concerns about the security and confidentiality of NHS patient data and the impact on business
+- Demonstrate measurable compliance and provide visibility into potential risks to patient data
+- Promote trust and public confidence in NHS and partner organizations
 
-  - Demonstrate measurable compliance and provide visibility into potential risks to patient data
-
-  - Promote trust and public confidence in NHS and partner organizations
-
-# Microsoft and NHS IG Toolkit
+## Microsoft and NHS IG Toolkit
 
 As a commercial third party, Microsoft Azure has completed level 2 of the [NHS IG Toolkit assessment](https://www.igt.hscic.gov.uk/AssessmentReportCriteria.aspx?tk=427399452776248&lnv=3&cb=48ea00e0-c594-4758-8634-f22b6efa0c39&sViewOrgId=50721&sDesc=8JH14). Interim assessments are also expected to be completed during the year when a new version of the NHS IG Toolkit is released.
 
-# Audits, reports, and certificates
+## Audits, reports, and certificates
 
 The Azure assessment will be renewed annually.
 
-  - [Microsoft Azure IG Toolkit Assessment Report](https://www.igt.hscic.gov.uk/AssessmentReportCriteria.aspx?tk=427399452776248&lnv=3&cb=48ea00e0-c594-4758-8634-f22b6efa0c39&sViewOrgId=50721&sDesc=8JH14)
+- [Microsoft Azure IG Toolkit Assessment Report](https://www.igt.hscic.gov.uk/AssessmentReportCriteria.aspx?tk=427399452776248&lnv=3&cb=48ea00e0-c594-4758-8634-f22b6efa0c39&sViewOrgId=50721&sDesc=8JH14)
 
-# Microsoft in-scope cloud services
+## Microsoft in-scope cloud services
 
-  - [Azure and Azure Government](https://aka.ms/AzureCompliance)
+- [Azure and Azure Government](https://aka.ms/AzureCompliance)
+- Intune
+- Power BI: cloud service either as a standalone service or as included in an Office 365 branded plan or suite
 
-  - Intune
+## Frequently asked questions
 
-  - Power BI: cloud service either as a standalone service or as included in an Office 365 branded plan or suite
+**Who can take advantage of the Azure NHS IG Toolkit assessment?**
 
-# Frequently asked questions
+Organizations that want to use Microsoft Azure as a platform to host NHS patient data can build on Microsoft’s assessment report to launch their own NHS IG Toolkit assessment, keeping in mind that they also must address any additional controls, especially those not under the responsibility of the Cloud Service Provider.
 
-Who can take advantage of the Azure NHS IG Toolkit assessment?
+**Where do I start with my organization’s own compliance effort?**
 
-> Organizations that want to use Microsoft Azure as a platform to host NHS patient data can build on Microsoft’s assessment report to launch their own NHS IG Toolkit assessment, keeping in mind that they also must address any additional controls, especially those not under the responsibility of the Cloud Service Provider.
+Organizations that are interested in hosting NHS patient data are encouraged to become familiar with the governing requirements by [reviewing the NHS IG Toolkit guidelines](https://www.igt.hscic.gov.uk/requirementsorganisation.aspx) to determine the scope and controls that they must have in place.
 
-Where do I start with my organization’s own compliance effort?
+**What are the IG Toolkit attainment levels?**
 
-> Organizations that are interested in hosting NHS patient data are encouraged to become familiar with the governing requirements by [**reviewing the NHS IG Toolkit guidelines**](https://www.igt.hscic.gov.uk/requirementsorganisation.aspx) to determine the scope and controls that they must have in place.
+IG Toolkit attainment levels are from 0 to 3:
 
-What are the IG Toolkit attainment levels?
+- 0: There is insufficient evidence to attain level 1
+- 1: The organization has begun to plan the policies, procedures, and/or processes that are necessary to become compliant
+- 2: There are approved and implemented IG policies and procedures in place that have been made available to all relevant staff
+- 3: Staff compliance and the effectiveness of the policies and procedures is monitored and assured
 
-> IG Toolkit attainment levels are from 0 to 3:
-> 
-> 0\) There is insufficient evidence to attain level 1
-> 
-> 1\) The organization has begun to plan the policies, procedures, and/or processes that are necessary to become compliant
-> 
-> 2\) There are approved and implemented IG policies and procedures in place that have been made available to all relevant staff
-> 
-> 3\) Staff compliance and the effectiveness of the policies and procedures is monitored and assured
+## Featured resources
 
-# Featured resources
-
-  - [**Information Governance Toolkit**](https://www.igt.hscic.gov.uk/)
-
-  - [**Microsoft Azure IG Toolkit Assessment Report**](https://www.igt.hscic.gov.uk/AssessmentReportCriteria.aspx?tk=427399452776248&lnv=3&cb=48ea00e0-c594-4758-8634-f22b6efa0c39&sViewOrgId=50721&sDesc=8JH14)
-
-  - [**IG Toolkit requirements**](https://www.igt.hscic.gov.uk/requirementsorganisation.aspx?tk=427399392327814&cb=5815499d-070a-49e2-ac2e-c70d74d81ddc&lnv=2&clnav=YES)
-
-  - [**IG Toolkit FAQ**](https://www.igt.hscic.gov.uk/resources/About%20the%20IG%20Toolkit.pdf)
+- [Information Governance Toolkit](https://www.igt.hscic.gov.uk/)
+- [Microsoft Azure IG Toolkit Assessment Report](https://www.igt.hscic.gov.uk/AssessmentReportCriteria.aspx?tk=427399452776248&lnv=3&cb=48ea00e0-c594-4758-8634-f22b6efa0c39&sViewOrgId=50721&sDesc=8JH14)
+- [IG Toolkit requirements](https://www.igt.hscic.gov.uk/requirementsorganisation.aspx?tk=427399392327814&cb=5815499d-070a-49e2-ac2e-c70d74d81ddc&lnv=2&clnav=YES)
+- [IG Toolkit FAQ](https://www.igt.hscic.gov.uk/resources/About%20the%20IG%20Toolkit.pdf)

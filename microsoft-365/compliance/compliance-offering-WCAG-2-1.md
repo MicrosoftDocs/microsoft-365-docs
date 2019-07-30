@@ -1,6 +1,6 @@
 ---
-title: 
-description: 
+title: Compliance Offering - Web Content Accessibility Guidelines 2.1
+description: Microsoft publishes WCAG 2.1 AA reports that reflect the complete product or service, or portions of the product that may be installed separately.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
@@ -12,9 +12,9 @@ audience: itpro
 ms.collection: M365-security-compliance
 ---
 
-Microsoft publishes WCAG 2.1 AA reports that reflect the complete product or service, or portions of the product that may be installed separately.
+# Compliance Offering: Web Content Accessibility Guidelines 2.1
 
-# About WCAG 2.1
+## About WCAG 2.1
 
 WCAG 2.1 provides a framework for developing web content that improves accessibility for people with disabilities, in addition to users of devices with limited graphical abilities. WCAG 2.0 was published in 2008 by the World Wide Web Consortium (W3C), an international organization dedicated to creating web standards, and updated to WCAG 2.1 in June 2018. In 2012, WCAG 2.0 was also published by the International Organization for Standardization (ISO) as ISO/IEC 40500:2012.  
   
@@ -22,48 +22,39 @@ Content that conforms to WCAG 2.1 also conforms to WCAG 2.0. For policies requir
   
 Conformance requirements for each guideline are measured in three levels: A, AA, and AAA. Because Microsoft is a major software and cloud-services provider to states and governments around the world, it is committed to complying with all relevant international standards and compliance controls. By adhering to these wide-ranging accessibility standards, Microsoft ensures that all customers—both inside and outside of government—can use Microsoft services and products.  
   
-[**Learn more**](https://go.microsoft.com/fwlink/p/?linkid=2052226)
+[Learn more](https://go.microsoft.com/fwlink/p/?linkid=2052226)
 
-# Microsoft and WCAG 2.1
+## Microsoft and WCAG 2.1
 
 Microsoft’s adherence to the WCAG 2.1 (ISO/IEC 40500) standard points to its commitment to making technology and data accessible for all customers. WCAG 2.1 (ISO/IEC 40500) is the international accessibility requirement that complements EN 301 549 (Europe) and Section 508 (U.S.).  
   
 Microsoft publishes WCAG 2.1 reports that reflect the complete product or service. It generally does not create reports for individual features or components. In some cases, Microsoft might release a new component for an existing product, or a new version of an existing component, which users can choose to install separately, and Microsoft might also publish a WCAG 2.1 report for that component.  
   
-[**Download the WCAG 2.1 (ISO/IEC 40500) accessibility standards**](https://go.microsoft.com/fwlink/p/?linkid=2052226)
+[Download the WCAG 2.1 (ISO/IEC 40500) accessibility standards](https://go.microsoft.com/fwlink/p/?linkid=2052226)
 
-# Microsoft in-scope cloud services
+## Microsoft in-scope cloud services
 
-  - [**Azure and Azure Government**](https://go.microsoft.com/fwlink/p/?linkid=2051569)
+- [Azure and Azure Government](https://go.microsoft.com/fwlink/p/?linkid=2051569)
+- Azure DevOps Services
+- Dynamics 365 and Dynamics 365 U.S. Government
+- Intune
+- Office 365 and Office 365 U.S. Government
+- Office 365 U.S. Government Defense
+- Windows Server 2016
 
-  - Azure DevOps Services
-
-  - Dynamics 365 and Dynamics 365 U.S. Government
-
-  - Intune
-
-  - Office 365 and Office 365 U.S. Government
-
-  - Office 365 U.S. Government Defense
-
-  - Windows Server 2016
-
-# Microsoft accessibility conformance reports
+## Microsoft accessibility conformance reports
 
 Find WCAG reports for all our products and services.
 
 [**Learn more**](https://go.microsoft.com/fwlink/p/?linkid=2050974)
 
-# Featured resources
+## Featured resources
 
-[**Microsoft accessibility site**](https://go.microsoft.com/fwlink/?linkid=2055323)
+[Microsoft accessibility site](https://go.microsoft.com/fwlink/?linkid=2055323)
+    - Get information on using accessibility features and explore the ways Microsoft innovates to help everyone achieve more.
 
-  - Get information on using accessibility features and explore the ways Microsoft innovates to help everyone achieve more.
+[Office 365 Accessibility Center](https://go.microsoft.com/fwlink/p/?linkid=2051801)
+    - Office 365 resources for people with disabilities.
 
-[**Office 365 Accessibility Center**](https://go.microsoft.com/fwlink/p/?linkid=2051801)
-
-  - Office 365 resources for people with disabilities.
-
-[**Enterprise Disability Answer Desk**](https://go.microsoft.com/fwlink/p/?linkid=2050890)
-
-  - Dedicated support for enterprise customers with accessibility questions about our products and services or compliance.
+[Enterprise Disability Answer Desk](https://go.microsoft.com/fwlink/p/?linkid=2050890)
+    - Dedicated support for enterprise customers with accessibility questions about our products and services or compliance.

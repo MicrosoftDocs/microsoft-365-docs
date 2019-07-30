@@ -1,6 +1,6 @@
 ---
-title: 
-description: 
+title: Compliance Offering - Service Organization Controls (SOC)
+description: Microsoft cloud services comply with Service Organization Controls standards for operational security.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
@@ -12,9 +12,9 @@ audience: itpro
 ms.collection: M365-security-compliance
 ---
 
-Microsoft cloud services comply with Service Organization Controls standards for operational security.
+# Compliance Offering: Service Organization Controls (SOC)
 
-# SOC 1, 2, and 3 Reports overview
+## SOC 1, 2, and 3 Reports overview
 
 Increasingly, businesses outsource basic functions such as data storage and access to applications to cloud service providers (CSPs) and other service organizations. In response, the American Institute of Certified Public Accountants (AICPA) has developed the Service Organization Controls (SOC) framework, a standard for controls that safeguard the confidentiality and privacy of information stored and processed in the cloud. This aligns with the International Standard on Assurance Engagements (ISAE), the reporting standard for international service organizations.  
   
@@ -28,7 +28,7 @@ At the conclusion of a SOC 1 or SOC 2 audit, the service auditor renders an opin
   
 Auditors can also create a SOC 3 report—an abbreviated version of the SOC 2 Type 2 audit report—for users who want assurance about the CSP’s controls but don’t need a full SOC 2 report. A SOC 3 report can be conferred only if the CSP has an unqualified audit opinion for SOC 2.
 
-# Microsoft and SOC 1, 2, and 3 Reports
+## Microsoft and SOC 1, 2, and 3 Reports
 
 Microsoft covered cloud services are audited at least annually against the SOC reporting framework by independent third-party auditors. The audit for Microsoft cloud services covers controls for data security, availability, processing integrity, and confidentiality as applicable to in-scope trust principles for each service.  
   
@@ -36,128 +36,94 @@ Microsoft has achieved SOC 1 Type 2, SOC 2 Type 2, and SOC 3 reports. In general
   
 Learn about the benefits of SOC 1, 2, 3 on the Microsoft Cloud.
 
-  - [**Download the SOC 1 and SOC 2 type 2 reports backgrounder**](https://aka.ms/soc_backgrounder)
+- [Download the SOC 1 and SOC 2 type 2 reports backgrounder](https://aka.ms/soc_backgrounder)
 
-# Audits, reports, and certificates
+## Audits, reports, and certificates
 
-Audit cycle
+### Audit cycle
 
-> Microsoft cloud services are audited at least annually against SOC 1 (SSAE18, ISAE 3402) and SOC 2 (AT Section 101) standards.
+Microsoft cloud services are audited at least annually against SOC 1 (SSAE18, ISAE 3402) and SOC 2 (AT Section 101) standards.
 
-Azure, Cloud App Security, Flow, Graph, Intune, Power BI, PowerApps, Stream, and Microsoft Datacenters
+### Azure, Cloud App Security, Flow, Graph, Intune, Power BI, PowerApps, Stream, and Microsoft Datacenters
 
-  - [**Azure and Azure Government SOC 1 Type 2 Report**](https://aka.ms/azuresoc1auditreport)
+- [Azure and Azure Government SOC 1 Type 2 Report](https://aka.ms/azuresoc1auditreport)
+- [Azure and Azure Government SOC 2 Type 2 Report](https://aka.ms/azuresoc2auditreport)
+- [Azure and Azure Government SOC 3 Report](https://aka.ms/azuresoc3auditreport)
 
-  - [**Azure and Azure Government SOC 2 Type 2 Report**](https://aka.ms/azuresoc2auditreport)
+### Dynamics 365
 
-  - [**Azure and Azure Government SOC 3 Report**](https://aka.ms/azuresoc3auditreport)
+- Dynamics 365 SOC 1 Type 2 Report
+- [Dynamics 365 SOC 2 AT 101 Type II Audit Report](https://aka.ms/Dynamics365SOC2AuditReport)
+- [See bridge letters and additional audit reports](https://aka.ms/auditreports)
 
-Dynamics 365
+### Office 365
 
-  - **Dynamics 365 SOC 1 Type 2 Report**
+- [Office 365 SOC 1 SSAE 16 Type II Audit Report](https://aka.ms/office365soc1auditreport)
+- [Office 365 SOC 2 AT 101 Type II Audit Report](https://aka.ms/Office365SOC2AuditReport)
+- [Office 365 Customer Lockbox SOC 1 SSAE 16 Audit Report](https://aka.ms/Office365CustomerLockboxSOCAuditReport)
+- [Yammer SOC 2 AT 101 Type II Audit Report](https://aka.ms/YammerSOC2AuditReport)
+- [Yammer SOC 2 AT 101 Type I Audit Report](https://aka.ms/YammerSOC2Type1AuditReport)
+- [See bridge letters and additional audit reports](https://aka.ms/auditreports)
 
-  - [**Dynamics 365 SOC 2 AT 101 Type II Audit Report**](https://aka.ms/Dynamics365SOC2AuditReport)
+## Microsoft in-scope cloud services
 
-  - [**See bridge letters and additional audit reports**](https://aka.ms/auditreports)
+### Covered services for SOC 1 and SOC 2
 
-Office 365
+- [Azure, Azure Government, and Azure Germany](https://aka.ms/AzureCompliance)
+- Cloud App Security
+- [Dynamics 365 and Dynamics 365 U.S. Government](https://aka.ms/d365-compliance-list)
+- Graph
+- Intune
+- Microsoft Flow cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
+- [Office 365, Office 365 U.S. Government, and Office 365 U.S. Government Defense](https://aka.ms/o365-compliance-framework); Yammer has achieved a SOC 1 Type 1 report
+- Office 365 Germany
+- PowerApps cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
+- Power BI cloud service either as a standalone service or as included in an Office 365 branded plan or suite
+- Stream
+- Azure DevOps Services
 
-  - [**Office 365 SOC 1 SSAE 16 Type II Audit Report**](https://aka.ms/office365soc1auditreport)
+### Covered services for SOC 3
 
-  - [**Office 365 SOC 2 AT 101 Type II Audit Report**](https://aka.ms/Office365SOC2AuditReport)
+- [Azure, Azure Government, and Azure Germany](https://aka.ms/AzureCompliance)
+- Cloud App Security
+- Graph
+- Intune
+- Microsoft Flow cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
+- PowerApps cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
+- Power BI
+- Stream
 
-  - [**Office 365 Customer Lockbox SOC 1 SSAE 16 Audit Report**](https://aka.ms/Office365CustomerLockboxSOCAuditReport)
+## Frequently asked questions
 
-  - [**Yammer SOC 2 AT 101 Type II Audit Report**](https://aka.ms/YammerSOC2AuditReport)
+**How can I get copies of the SOC reports?**
 
-  - [**Yammer SOC 2 AT 101 Type I Audit Report**](https://aka.ms/YammerSOC2Type1AuditReport)
+With the reports, your auditors can compare Microsoft business cloud services results with your own legal and regulatory requirements.
 
-  - [**See bridge letters and additional audit reports**](https://aka.ms/auditreports)
+- You can see all SOC reports through the [Service Trust Platform](https://www.microsoft.com/trustcenter/STP/default.aspx).
+- Azure DevOps Service customers that can’t access [Service Trust Platform](https://www.microsoft.com/trustcenter/STP/default.aspx) can email [Azure DevOps](mailto:AzureDevOpsSOCReport@microsoft.com) for its SOC 1 and SOC 2 reports. Note that this email is to request Azure DevOps SOC reports only.
 
-# Microsoft in-scope cloud services
+**How often are Azure SOC reports issued?**
 
-Covered services for SOC 1 and SOC 2
+SOC reports for Azure, Cloud App Security, Flow, Graph, Intune, Power BI, PowerApps, Stream, and Microsoft Datacenters are based on a rolling 12 month run window (audit period) with new reports issued quarterly. The increased audit frequency provides a more timely audit period coverage through a SOC report which provides greater assurance by an external auditor when compared to a bridge letter. Customers can download the latest reports from the Service Trust Portal.
 
-  - [**Azure, Azure Government, and Azure Germany**](https://aka.ms/AzureCompliance)
+**Do I need to conduct my own audit of Microsoft datacenters?**
 
-  - Cloud App Security
+No. Microsoft shares the independent audit reports and certifications with customers so that they can verify Microsoft compliance with its security commitments.
 
-  - [**Dynamics 365 and Dynamics 365 U.S. Government**](https://aka.ms/d365-compliance-list)
+**Can I use Microsoft’s compliance in my organization’s certification process?**
 
-  - Graph
+Yes. When you migrate your applications and data to covered Microsoft cloud services, you can build on the audits and certifications that Microsoft holds. The independent reports attest to the effectiveness of controls that Microsoft has implemented to help maintain the security and privacy of your data.
 
-  - Intune
+**Where do I start with my organization’s own compliance effort?**
 
-  - Microsoft Flow cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
+The [SOC Toolkit for Service Organizations](http://aka.ms/soc-toolkit) is a helpful resource for understanding SOC reporting processes and promoting your organization’s use of them.
 
-  - [**Office 365, Office 365 U.S. Government, and Office 365 U.S. Government Defense**](https://aka.ms/o365-compliance-framework); Yammer has achieved a SOC 1 Type 1 report
+## Featured resources
 
-  - Office 365 Germany
-
-  - PowerApps cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
-
-  - Power BI cloud service either as a standalone service or as included in an Office 365 branded plan or suite
-
-  - Stream
-
-  - Azure DevOps Services
-
-Covered services for SOC 3
-
-  - [**Azure, Azure Government, and Azure Germany**](https://aka.ms/AzureCompliance)
-
-  - Cloud App Security
-
-  - Graph
-
-  - Intune
-
-  - Microsoft Flow cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
-
-  - PowerApps cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
-
-  - Power BI
-
-  - Stream
-
-# Frequently asked questions
-
-How can I get copies of the SOC reports?
-
-> With the reports, your auditors can compare Microsoft business cloud services results with your own legal and regulatory requirements.
-
-  - You can see all SOC reports through the [**Service Trust Platform**](https://www.microsoft.com/trustcenter/STP/default.aspx).
-
-  - Azure DevOps Service customers that can’t access [**Service Trust Platform**](https://www.microsoft.com/trustcenter/STP/default.aspx) can email [**Azure DevOps**](mailto:AzureDevOpsSOCReport@microsoft.com) for its SOC 1 and SOC 2 reports. Note that this email is to request Azure DevOps SOC reports only.
-
-How often are Azure SOC reports issued?
-
-> SOC reports for Azure, Cloud App Security, Flow, Graph, Intune, Power BI, PowerApps, Stream, and Microsoft Datacenters are based on a rolling 12 month run window (audit period) with new reports issued quarterly. The increased audit frequency provides a more timely audit period coverage through a SOC report which provides greater assurance by an external auditor when compared to a bridge letter. Customers can download the latest reports from the Service Trust Portal.
-
-Do I need to conduct my own audit of Microsoft datacenters?
-
-> No. Microsoft shares the independent audit reports and certifications with customers so that they can verify Microsoft compliance with its security commitments.
-
-Can I use Microsoft’s compliance in my organization’s certification process?
-
-> Yes. When you migrate your applications and data to covered Microsoft cloud services, you can build on the audits and certifications that Microsoft holds. The independent reports attest to the effectiveness of controls that Microsoft has implemented to help maintain the security and privacy of your data.
-
-Where do I start with my organization’s own compliance effort?
-
-> The [**SOC Toolkit for Service Organizations**](http://aka.ms/soc-toolkit) is a helpful resource for understanding SOC reporting processes and promoting your organization’s use of them.
-
-# Featured resources
-
-  - **Better protect your data by using Microsoft cloud services**
-
-  - [**Service Organization Control (SOC) Reports**](https://aka.ms/mssocreports)
-
-  - [**SSAE 16 Auditing Standard**](http://www.ssae-16.com/)
-
-  - [**ISAE 3402 Standard**](http://isae3402.com/)
-
-  - **Microsoft Common Controls Hub Compliance Framework**
-
-  - [**Microsoft Online Services Terms**](http://aka.ms/Online-Services-Terms)
-
-  - [**Microsoft Cloud for Government**](http://enterprise.microsoft.com/en-us/industries/government/start-your-microsoft-cloud-for-government-trial-today)
+- Better protect your data by using Microsoft cloud services
+- [Service Organization Control (SOC) Reports](https://aka.ms/mssocreports)
+- [SSAE 16 Auditing Standard](http://www.ssae-16.com/)
+- [ISAE 3402 Standard](http://isae3402.com/)
+- **Microsoft Common Controls Hub Compliance Framework**
+- [Microsoft Online Services Terms](http://aka.ms/Online-Services-Terms)
+- [Microsoft Cloud for Government](http://enterprise.microsoft.com/industries/government/start-your-microsoft-cloud-for-government-trial-today)
