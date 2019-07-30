@@ -46,7 +46,7 @@ If you have Microsoft 365 Enteprise E3, you can also get these [offerings](https
 - Identity & Threat Protection
 - Information Protection & Compliance
 
-Each of these contain additional features included with Microsoft 365 Enterprise E5.
+These offerings contain additional features that are included with Microsoft 365 Enterprise E5.
 
 For more information, see [Features and capabilities for each plan](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans).
 
