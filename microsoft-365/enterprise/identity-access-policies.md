@@ -253,11 +253,15 @@ To require approved apps:
 
 7. Choose **Select apps**, select the desired apps from the **Cloud apps** list. For example, select Office 365 Exchange Online. Choose **Select** and **Done**.
 
-8. Choose **Grant** from the **Access controls** section.
+8. Choose **Conditions**, select **Device platforms**, then choose **Configure**
 
-9. Choose **Grant access**, select **Require approved client app**. For multiple controls, select **Require the selected controls**, then choose **Select**. 
+9. Under **Include**, choose **Select device platforms**, select **Android** and **iOS**. Click **Done** and **Done** again
 
-10. Choose **Create**.
+10. Choose **Grant** from the **Access controls** section.
+
+11. Choose **Grant access**, select **Require approved client app**. For multiple controls, select **Require the selected controls**, then choose **Select**. 
+
+12. Choose **Create**.
 
 ## Define device-compliance policies
 

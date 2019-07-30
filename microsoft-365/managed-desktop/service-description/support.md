@@ -20,22 +20,22 @@ Customers can contact Microsoft Managed Desktop operations for:
 
 ## What's included?
 
-Microsoft Managed Desktop support:
+Microsoft Managed Desktop support includes:
 
-- Provides a team of support engineers dedicated to Microsoft Managed Desktop devices
-- Supports Microsoft Managed Desktop devices and end users assigned to those devices
-- Grants limited administrative access to Microsoft Managed Desktop devices for support engineers managing Microsoft Managed Desktop devices 
+- A team of engineers dedicated to Microsoft Managed Desktop devices
+- Support options for end users with Microsoft Managed Desktop devices
+- Grants limited administrative access to Microsoft Managed Desktop devices for engineers managing Microsoft Managed Desktop devices 
 
 Supported products:
 
-- Windows 10 with Windows Defender Advanced Threat Protection (WDATP) 
+- Windows 10 with Microsoft Defender Advanced Threat Protection 
 - Subset of the Office 365 suite: Outlook, Word, PowerPoint, Excel, Skype for Business client, Microsoft Teams 
 - Microsoft Store for Business 
 - OneDrive for Business client 
 
 Support details:
 
-- Current: North America, Canada (excluding Quebec), United Kingdom, and Australia only (24x7x365) 
+- Current: North America, Canada (excluding Quebec), United Kingdom, Australia, and New Zealand only (24x7x365) 
 - English is the only supported language for phone and chat conversations with customers 
 - We are partnering with, not replacing, your corporate helpdesk; Line-of-Business (LOB) apps, network resources, etc. are still handled by your helpdesk 
 - Microsoft Managed Devices residing in the test group and non-Microsoft Managed Desktop devices are out of scope 
