@@ -1,6 +1,6 @@
 ---
-title: 
-description: 
+title: Compliance Offering - Federal Risk and Authorization Management Program (FedRAMP)
+description: Microsoft was granted US Federal Risk and Authorization Management Program P-ATOs and ATOs.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
@@ -12,9 +12,9 @@ audience: itpro
 ms.collection: M365-security-compliance
 ---
 
-Microsoft was granted US Federal Risk and Authorization Management Program P-ATOs and ATOs.
+# Compliance Offering: Federal Risk and Authorization Management Program (FedRAMP)
 
-# FEDRAMP overview
+## FedRAMP overview
 
 The US Federal Risk and Authorization Management Program (FedRAMP) was established to provide a standardized approach for assessing, monitoring, and authorizing cloud computing products and services under the Federal Information Security Management Act (FISMA), and to accelerate the adoption of secure cloud solutions by federal agencies.  
   
@@ -24,7 +24,7 @@ CSPs desiring to sell services to a federal agency can take three paths to demon
   
 FedRAMP authorizations are granted at three impact levels based on NIST guidelines—low, medium, and high. These rank the impact that the loss of confidentiality, integrity, or availability could have on an organization—low (limited effect), medium (serious adverse effect), and high (severe or catastrophic effect).
 
-# Microsoft and FedRAMP
+## Microsoft and FedRAMP
 
 Microsoft’s government cloud services, including Azure Government, Office 365 U.S. Government, and Dynamics 365 Government meet the demanding requirements of the US Federal Risk and Authorization Management Program (FedRAMP), enabling U.S. federal agencies to benefit from the cost savings and rigorous security of the Microsoft Cloud.
 
@@ -32,94 +32,77 @@ Microsoft government cloud services offer public sector customers a rich array o
 
 Learn about the benefits of FEDRAMP on the Microsoft Cloud.
 
-  - [**Download the FedRAMP compliance backgrounder**](https://aka.ms/fedramp-backgrounder)
+- [Download the FedRAMP compliance backgrounder](https://aka.ms/fedramp-backgrounder).
 
 Learn how to accelerate your FEDRAMP deployment with our Azure Security and Compliance Blueprint.
 
-  - [**Download the Azure - Blueprint FedRAMP High SSP**](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=64de30d4-42c6-47e7-bd52-0be935710df9&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_FedRAMP%20Blueprint)
+- [Download the Azure - Blueprint FedRAMP High SSP](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=64de30d4-42c6-47e7-bd52-0be935710df9&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_FedRAMP%20Blueprint).
 
-Microsoft Azure P-ATOs
+### Microsoft Azure P-ATOs
 
-> Azure and Azure Government have earned a P-ATO from the Joint Authorization Board
-> 
-> The JAB is the primary governance and decision-making body for FedRAMP. Representatives from the Department of Defense, the Department of Homeland Security, and the General Services Administration serve on the board. The board grants a P-ATO to CSPs that have demonstrated FedRAMP compliance.
-> 
-> Azure maintains a P-ATO at the Moderate Impact Level. (Azure was the first public cloud with infrastructure and platform services to receive a P-ATO.) The JAB has also granted Azure Government a P-ATO at the High Impact Level, the highest bar for FedRAMP accreditation, which authorizes the use of Azure Government to process highly sensitive data. The mandatory NIST 800-53 standards establish security categories of information systems—confidentiality, integrity, and availability—to assess the potential impact on an organization should its information and information systems be compromised. The FedRAMP audit of Azure and Azure Government included the Information Security Management System that encompasses infrastructure, development, operations, management, and support of in-scope services.
-> 
-> Once a P-ATO is granted, a CSP still requires an authorization—an ATO—from any government agency it works with. In the case of Azure, a government agency can leverage the Azure P-ATO in its own security authorization process and rely on it as the basis for issuing an agency ATO that also meets FedRAMP requirements.
+- Azure and Azure Government have earned a P-ATO from the Joint Authorization Board
+- The JAB is the primary governance and decision-making body for FedRAMP. Representatives from the Department of Defense, the Department of Homeland Security, and the General Services Administration serve on the board. The board grants a P-ATO to CSPs that have demonstrated FedRAMP compliance.
+- Azure maintains a P-ATO at the Moderate Impact Level. (Azure was the first public cloud with infrastructure and platform services to receive a P-ATO.) The JAB has also granted Azure Government a P-ATO at the High Impact Level, the highest bar for FedRAMP accreditation, which authorizes the use of Azure Government to process highly sensitive data. The mandatory NIST 800-53 standards establish security categories of information systems—confidentiality, integrity, and availability—to assess the potential impact on an organization should its information and information systems be compromised. The FedRAMP audit of Azure and Azure Government included the Information Security Management System that encompasses infrastructure, development, operations, management, and support of in-scope services.
+- Once a P-ATO is granted, a CSP still requires an authorization—an ATO—from any government agency it works with. In the case of Azure, a government agency can leverage the Azure P-ATO in its own security authorization process and rely on it as the basis for issuing an agency ATO that also meets FedRAMP requirements.
 
-Dynamics 365 U.S. Government ATO
+### Dynamics 365 U.S. Government ATO
 
-> Dynamics 365 U.S. Government has received an ATO from HUD
-> 
-> Dynamics 365 U.S. Government was granted a FedRAMP Agency ATO at the High Impact Level by the Department of Housing and Urban Development (HUD). (Note that although the scope of the certification is limited to the Government Community Cloud, Dynamics 365 U.S. Government business and enterprise plans operate following the same set of stringent FedRAMP controls.)
+- Dynamics 365 U.S. Government has received an ATO from HUD
+- Dynamics 365 U.S. Government was granted a FedRAMP Agency ATO at the High Impact Level by the Department of Housing and Urban Development (HUD). (Note that although the scope of the certification is limited to the Government Community Cloud, Dynamics 365 U.S. Government business and enterprise plans operate following the same set of stringent FedRAMP controls.)
 
-Office 365 ATOs
+### Office 365 ATOs
 
-> Office 365, Office 365 U.S. Government have an ATO from DHHS.
-> 
-> Office 365 U.S. Government Defense has a P-ATO from Defense Information Systems Agency (DISA).
-> 
-> Office 365 (Enterprise and Business plans) and Office 365 U.S. Government have a FedRAMP Agency ATO at the Moderate Impact Level from the Department of Health and Human Services (DHHS) Office of the Inspector General. Office 365 U.S. Government was the first cloud-based email and collaboration service to obtain this authorization.
-> 
-> Any customer wishing to consume O365 U.S. Government Defense may utilize the DISA P-ATO to generate an Agency ATO to document their acceptance of O365.
+- Office 365, Office 365 U.S. Government have an ATO from DHHS.
+- Office 365 U.S. Government Defense has a P-ATO from Defense Information Systems Agency (DISA).
+- Office 365 (Enterprise and Business plans) and Office 365 U.S. Government have a FedRAMP Agency ATO at the Moderate Impact Level from the Department of Health and Human Services (DHHS) Office of the Inspector General. Office 365 U.S. Government was the first cloud-based email and collaboration service to obtain this authorization.
+- Any customer wishing to consume O365 U.S. Government Defense may utilize the DISA P-ATO to generate an Agency ATO to document their acceptance of O365.
 
-# Audits, reports, and certificates
+## Audits, reports, and certificates
 
 Microsoft is required to re-certify its cloud services each year to maintain its P-ATO and ATOs. To do so, Microsoft must monitor and assess its security controls continuously, and demonstrate that the security of its services remains in compliance.
 
-  - [**Microsoft cloud services authorizations**](https://marketplace.fedramp.gov/#/product/azure-government?sort=productName&productNameSearch=azure)
+- [Microsoft cloud services authorizations](https://marketplace.fedramp.gov/#/product/azure-government?sort=productName&productNameSearch=azure)
+- [Microsoft FedRAMP Audit Reports](https://aka.ms/MicrosoftFedRAMPAuditDocuments)
 
-  - [**Microsoft FedRAMP Audit Reports**](https://aka.ms/MicrosoftFedRAMPAuditDocuments)
+## Microsoft in-scope cloud services
 
-# Microsoft in-scope cloud services
-
-  - [**Azure and Azure Government**](https://aka.ms/AzureCompliance)
-
-  - [**Dynamics 365 U.S. Government**](https://aka.ms/d365-compliance-list)
-
-  - Intune
-
-  - [**Office 365 and Office 365 U.S. Government**](https://aka.ms/o365-compliance-framework)
-
-  - Office 365 U.S. Government Defense
-
-  - Power BI cloud service either as a standalone service or as included in an Office 365 branded plan or suite
-
-  - Windows Defender ATP
+- [Azure and Azure Government](https://aka.ms/AzureCompliance)
+- [Dynamics 365 U.S. Government](https://aka.ms/d365-compliance-list)
+- Intune
+- [Office 365 and Office 365 U.S. Government](https://aka.ms/o365-compliance-framework)
+- Office 365 U.S. Government Defense
+- Power BI cloud service either as a standalone service or as included in an Office 365 branded plan or suite
+- Windows Defender ATP
 
 Note: The use of Azure Active Directory within Azure Government requires the use of components that are deployed outside of Azure Government on the Azure public cloud.
 
-# Ramp up your FedRAMP solutions on Azure Government
+## Ramp up your FedRAMP solutions on Azure Government
 
 Let Microsoft guide you through the ATO process and quickly deploy your FedRAMP solutions with the Azure Security and Compliance FedRAMP blueprint. Our blueprint gets you started with reference architectures, deployment guidance, control implementation mappings, ATO Factory support, and more.
 
-[**Start using the Azure FedRAMP Blueprint**](https://aka.ms/fedrampblueprint)
+[Start using the Azure FedRAMP Blueprint](https://aka.ms/fedrampblueprint)
 
-# Frequently asked questions
+## Frequently asked questions
 
-Do Microsoft cloud services comply with the Federal Information Security Management Act (FISMA)?
+**Do Microsoft cloud services comply with the Federal Information Security Management Act (FISMA)?**
 
-> FISMA is a federal law that requires US federal agencies and their partners to procure information systems and services only from organizations that adhere to FISMA requirements. Most agencies and their vendors that indicate that they are FISMA-compliant are referring to how they meet the controls identified by the NIST in Special Publication 800-53 rev 4. The FISMA process (but not the underlying standards themselves) was replaced by FedRAMP in 2011.
+FISMA is a federal law that requires US federal agencies and their partners to procure information systems and services only from organizations that adhere to FISMA requirements. Most agencies and their vendors that indicate that they are FISMA-compliant are referring to how they meet the controls identified by the NIST in Special Publication 800-53 rev 4. The FISMA process (but not the underlying standards themselves) was replaced by FedRAMP in 2011.
 
-To whom does FedRAMP apply?
+**To whom does FedRAMP apply?**
 
-> “FedRAMP is mandatory for federal agency cloud deployments and service models at the low and moderate risk impact levels.” Any federal agency that wants to engage a CSP may be required to meet FedRAMP specifications. In addition, companies that employ cloud technologies in products or services used by the federal government may be required to obtain an ATO.
+“FedRAMP is mandatory for federal agency cloud deployments and service models at the low and moderate risk impact levels.” Any federal agency that wants to engage a CSP may be required to meet FedRAMP specifications. In addition, companies that employ cloud technologies in products or services used by the federal government may be required to obtain an ATO.
 
-Where does my agency start its own compliance effort?
+**Where does my agency start its own compliance effort?**
 
-> For an overview of the steps federal agencies must take to successfully navigate FedRAMP and meet its requirements, go to [**fedramp.gov/participate/agencies**](https://www.fedramp.gov/agency-authorization/).
+For an overview of the steps federal agencies must take to successfully navigate FedRAMP and meet its requirements, go to [fedramp.gov/participate/agencies](https://www.fedramp.gov/agency-authorization/).
 
-Can I use Microsoft compliance in my agency’s authorization process?
+**Can I use Microsoft compliance in my agency’s authorization process?**
 
-> Yes. You may use the certifications of Microsoft cloud services as the foundation for any program or initiative that requires an ATO from a federal government agency. However, you will need to achieve your own authorizations for components outside these services.
+Yes. You may use the certifications of Microsoft cloud services as the foundation for any program or initiative that requires an ATO from a federal government agency. However, you will need to achieve your own authorizations for components outside these services.
 
-# Featured resources
+## Featured resources
 
-  - [**Federal Risk and Authorization Management Program**](http://www.fedramp.gov/)
-
-  - **Microsoft Common Controls Hub Compliance Framework**
-
-  - [**Microsoft Cloud for Government**](http://enterprise.microsoft.com/en-us/industries/government/start-your-microsoft-cloud-for-government-trial-today)
-
-  - [**FedRAMP Security Assessment Package**](https://www.fedramp.gov/documents/) (under Key Agency Documents, choose Package Request Form); only government agencies can request this document
+- [Federal Risk and Authorization Management Program](http://www.fedramp.gov/)
+- Microsoft Common Controls Hub Compliance Framework
+- [Microsoft Cloud for Government](http://enterprise.microsoft.com/en-us/industries/government/start-your-microsoft-cloud-for-government-trial-today)
+- [FedRAMP Security Assessment Package](https://www.fedramp.gov/documents/) (under Key Agency Documents, choose Package Request Form); only government agencies can request this document

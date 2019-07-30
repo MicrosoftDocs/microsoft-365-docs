@@ -1,6 +1,6 @@
 ---
-title: 
-description: 
+title: Compliance Offering - US Department of Defense (DoD) Provisional Authorization
+description: Microsoft received Department of Defense (DoD) Provisional Authorizations at Impact Levels 5, 4, and 2.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
@@ -12,9 +12,9 @@ audience: itpro
 ms.collection: M365-security-compliance
 ---
 
-Microsoft received Department of Defense (DoD) Provisional Authorizations at Impact Levels 5, 4, and 2.
+# Compliance Offering: US Department of Defense (DoD) Provisional Authorization
 
-# DoD and DISA overview
+## DoD and DISA overview
 
 The Defense Information Systems Agency (DISA) is a combat support agency of the US Department of Defense (DoD). It provides an enterprise information infrastructure, communications support, and a secure, resilient enterprise cloud environment for the DoD, the White House, and any other organization that plays a role in the defense of the United States.  
   
@@ -22,96 +22,84 @@ To implement its mandate, DISA developed the DoD Cloud Computing Security Requir
   
 DoD Cloud Service Support defines the policies, security controls, and other requirements in the SRG, which it publishes and maintains. It guides DoD agencies and departments in planning and authorizing the use of a cloud service provider. Cloud Service Support also evaluates CSP offerings for compliance with the SRG—an authorization process whereby CSPs can provide attestations of compliance with DoD standards. It issues DoD Provisional Authorizations (PAs) when appropriate, so DoD agencies and supporting organizations can use cloud services without having to go through a full approval process on their own, saving time and effort.
 
-# Microsoft and US DoD Provisional Authorization
+## Microsoft and US DoD Provisional Authorization
 
 Microsoft’s government cloud services meet the demanding requirements of the US Department of Defense, from impact levels 2 through 5, enabling U.S. defense agencies to benefit from the cost savings and rigorous security of the Microsoft Cloud. By deploying protected services including Azure Government, Office 365 U.S. Government, and Dynamics 365 Government, defense agencies can leverage a rich array of compliant services.
 
 Learn about the benefits of DoD DISA L2, L4, L5 on the Microsoft Cloud.
 
-  - [**Download the Department of Defense DISA Backgrounder**](https://aka.ms/disa-backgrounder)
+- [Download the Department of Defense DISA Backgrounder](https://aka.ms/disa-backgrounder)
 
 Learn how to accelerate your DoD DISA L2, L4, L5 deployment with our Azure Security and Compliance Blueprint.
 
-  - [**Download the Azure DoD Level 5 security control implementations**](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=e391da04-ae17-472c-9634-959c5ce6ba92&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_DoD%20Blueprint)
+- [Download the Azure DoD Level 5 security control implementations](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=e391da04-ae17-472c-9634-959c5ce6ba92&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_DoD%20Blueprint)
 
-DoD Impact Level 5 Provisional Authorization
+### DoD Impact Level 5 Provisional Authorization
 
-> DISA Cloud Service Support has granted a DoD Impact Level 5 PA for Microsoft Azure Government for DoD. DISA has also granted Office 365 U.S. Government Defense a DoD Impact Level 5 PA. Impact Level 5 covers Controlled Unclassified Information (CUI) deemed by law, other government regulations, or the agency that owns the information and needs a higher level of protection than Level 4 provides. It also covers unclassified National Security Systems.
+DISA Cloud Service Support has granted a DoD Impact Level 5 PA for Microsoft Azure Government for DoD. DISA has also granted Office 365 U.S. Government Defense a DoD Impact Level 5 PA. Impact Level 5 covers Controlled Unclassified Information (CUI) deemed by law, other government regulations, or the agency that owns the information and needs a higher level of protection than Level 4 provides. It also covers unclassified National Security Systems.
 
-DoD Impact Level 4 Provisional Authorization
+### DoD Impact Level 4 Provisional Authorization
 
-> DISA Cloud Service Support has granted a DoD Impact Level 4 PA for both Microsoft Azure Government and Office 365 U.S. Government Defense. This was based on a review of the their FedRAMP authorizations as well as additional security controls required by the Cloud Computing SRG. (FedRAMP is a US program that enables secure cloud computing for the government.) Impact Level 4 covers Controlled Unclassified Information—data requiring protection from unauthorized disclosure under Executive Order 13556 (November 2010) and other mission-critical data. It may include data designated as For Official Use Only, Law Enforcement Sensitive, or Sensitive Security Information. This authorization enables US federal government customers to deploy these types of highly sensitive data on in-scope Microsoft government cloud services.
+DISA Cloud Service Support has granted a DoD Impact Level 4 PA for both Microsoft Azure Government and Office 365 U.S. Government Defense. This was based on a review of the their FedRAMP authorizations as well as additional security controls required by the Cloud Computing SRG. (FedRAMP is a US program that enables secure cloud computing for the government.) Impact Level 4 covers Controlled Unclassified Information—data requiring protection from unauthorized disclosure under Executive Order 13556 (November 2010) and other mission-critical data. It may include data designated as For Official Use Only, Law Enforcement Sensitive, or Sensitive Security Information. This authorization enables US federal government customers to deploy these types of highly sensitive data on in-scope Microsoft government cloud services.
 
-Covered services for DoD Impact Level 2 Authorization
+### Covered services for DoD Impact Level 2 Authorization
 
-> Based on FedRAMP authorizations, DISA Cloud Service Support granted a DoD Impact Level 2 PA to:
+Based on FedRAMP authorizations, DISA Cloud Service Support granted a DoD Impact Level 2 PA to:
 
-  - Azure and Azure Government Infrastructure as a Service (IaaS) and Platform as a Service (PaaS) were granted this authorization based on the Provisional Authority to Operate (P-ATO) from the FedRAMP Joint Authorization Board.
+- Azure and Azure Government Infrastructure as a Service (IaaS) and Platform as a Service (PaaS) were granted this authorization based on the Provisional Authority to Operate (P-ATO) from the FedRAMP Joint Authorization Board.
+- Dynamics 365 U.S. Government Software as a Service (SaaS) was granted this authorization based on the Agency FedRAMP Authority to Operate (ATO) from the Department of Housing and Urban Development (HUD).
+- Office 365 U.S. Government was granted this authorization based on the Agency FedRAMP ATO from the Department of Health and Human Services (DHHS).
 
-  - Dynamics 365 U.S. Government Software as a Service (SaaS) was granted this authorization based on the Agency FedRAMP Authority to Operate (ATO) from the Department of Housing and Urban Development (HUD).
-
-  - Office 365 U.S. Government was granted this authorization based on the Agency FedRAMP ATO from the Department of Health and Human Services (DHHS).
-
-# Audits, reports, and certificates
+## Audits, reports, and certificates
 
 Once granted a DoD PA, Microsoft cloud services are monitored and assessed annually.
 
-  - [**Microsoft FedRAMP authorizations**](https://marketplace.fedramp.gov/#/products?sort=productName&productNameSearch=microsoft)
+- [Microsoft FedRAMP authorizations](https://marketplace.fedramp.gov/#/products?sort=productName&productNameSearch=microsoft)
 
-# Microsoft in-scope cloud services
+## Microsoft in-scope cloud services
 
-Covered services for DoD Impact Level 5
+**Covered services for DoD Impact Level 5**
 
-  - Azure Government for DoD [**detailed list**](https://aka.ms/AzureCompliance)
+- Azure Government for DoD [**detailed list**](https://aka.ms/AzureCompliance)
+- Office 365 U.S. Government Defense
 
-  - Office 365 U.S. Government Defense
+**Covered services for DoD Impact Level 4**
 
-Covered services for DoD Impact Level 4
+- Azure Government [detailed list](https://aka.ms/AzureCompliance)
+- Office 365 U.S. Government Defense
 
-  - Azure Government [detailed list](https://aka.ms/AzureCompliance)
+**Covered services for DoD Impact Level 2**
 
-  - Office 365 U.S. Government Defense
+- Azure [detailed list](https://aka.ms/AzureCompliance)
+- Dynamics 365 U.S. Government [detailed list](https://aka.ms/d365-compliance-list)
+- Office 365 U.S. Government [detailed list](https://aka.ms/o365-compliance-framework)
+- Power BI cloud service either as a standalone service or as included in an Office 365 branded plan or suite
 
-Covered services for DoD Impact Level 2
-
-  - Azure [detailed list](https://aka.ms/AzureCompliance)
-
-  - Dynamics 365 U.S. Government [detailed list](https://aka.ms/d365-compliance-list)
-
-  - Office 365 U.S. Government [detailed list](https://aka.ms/o365-compliance-framework)
-
-  - Power BI cloud service either as a standalone service or as included in an Office 365 branded plan or suite
-
-# Fast track your deployment of DoD solutions on Azure
+## Fast track your deployment of DoD solutions on Azure
 
 Get a head start on taking advantage of the benefits of the cloud in government with the Azure Security and Compliance Department of Defense Blueprint. This blueprint provides tools and guidance to get you started building DoD-compliant solutions today.
 
-[**Start using the Azure DoD Blueprint**](https://aka.ms/Azure-Blueprint-DoD-NIST)
+- [Start using the Azure DoD Blueprint](https://aka.ms/Azure-Blueprint-DoD-NIST)
 
-# Frequently asked questions
+## Frequently asked questions
 
-Can I use Microsoft’s compliance in my organization’s certification process?
+**Can I use Microsoft’s compliance in my organization’s certification process?**
 
-> Yes. All DoD agencies may rely on the certifications of Microsoft cloud services as the foundation for any program or initiative that requires a DoD authorization. (This also applies to other organizations that support DoD and require cloud services.) However, you will need to achieve your own authorizations for components outside these services.
+Yes. All DoD agencies may rely on the certifications of Microsoft cloud services as the foundation for any program or initiative that requires a DoD authorization. (This also applies to other organizations that support DoD and require cloud services.) However, you will need to achieve your own authorizations for components outside these services.
 
-Does Microsoft’s DoD certification meet NIST 800-171 requirements?
+**Does Microsoft’s DoD certification meet NIST 800-171 requirements?**
 
-> In October 2016, the Department of Defense (DoD) promulgated a final rule implementing Defense Federal Acquisition Regulation Supplement (DFARS) clauses that apply to all DoD contractors who process, store, or transmit “covered defense information” through their information systems. The rule states that such systems must meet the security requirements set forth in NIST SP 800-171, [**Protecting Controlled Unclassified Information in nonfederal information systems and organizations**](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-171.pdf), or an “alternative, but equally effective, security measure” that is approved by the DoD contracting officer. And where a DoD contractor uses an external cloud service provider to process, store, or transmit covered defense information, such provider must meet security requirements that are equivalent to the FedRAMP Moderate baseline.
-> 
-> The following Microsoft cloud services have received a FedRAMP moderate authorization: Azure, Azure Government, Dynamics 365 U.S. Government, Office 365 MT, Office 365 U.S. Government, and Office 365 U.S. Government Defense.
-> 
-> Additionally, Microsoft offerings outside the FedRAMP-certified boundary that could potentially be used by DoD contractors to process, store, or transmit “covered defense information” are undergoing a review to meet a December 31, 2017, compliance deadline. Microsoft is working to document how these internal and customer-facing services comply with NIST SP 800-171 or an acceptable security equivalent, to meet the DFARS relevant clauses.
+In October 2016, the Department of Defense (DoD) promulgated a final rule implementing Defense Federal Acquisition Regulation Supplement (DFARS) clauses that apply to all DoD contractors who process, store, or transmit “covered defense information” through their information systems. The rule states that such systems must meet the security requirements set forth in NIST SP 800-171, [**Protecting Controlled Unclassified Information in nonfederal information systems and organizations**](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-171.pdf), or an “alternative, but equally effective, security measure” that is approved by the DoD contracting officer. And where a DoD contractor uses an external cloud service provider to process, store, or transmit covered defense information, such provider must meet security requirements that are equivalent to the FedRAMP Moderate baseline.
 
-# Featured resources
+The following Microsoft cloud services have received a FedRAMP moderate authorization: Azure, Azure Government, Dynamics 365 U.S. Government, Office 365 MT, Office 365 U.S. Government, and Office 365 U.S. Government Defense.
 
-  - [**DoD Cloud Computing Security Requirements Guide (SRG)**](http://iase.disa.mil/cloud_security/cloudsrg/Pages/home.aspx)
+Additionally, Microsoft offerings outside the FedRAMP-certified boundary that could potentially be used by DoD contractors to process, store, or transmit “covered defense information” are undergoing a review to meet a December 31, 2017, compliance deadline. Microsoft is working to document how these internal and customer-facing services comply with NIST SP 800-171 or an acceptable security equivalent, to meet the DFARS relevant clauses.
 
-  - **DISA Cloud Service Support**
+## Featured resources
 
-  - [**Protecting Controlled Unclassified Information in nonfederal information systems and organizations**](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-171.pdf)
-
-  - [**NIST Cybersecurity Framework**](https://www.nist.gov/cyberframework)
-
-  - **Microsoft Common Controls Hub Compliance Framework**
-
-  - [**Microsoft Cloud for Government**](http://enterprise.microsoft.com/en-us/industries/government/start-your-microsoft-cloud-for-government-trial-today)
+- [DoD Cloud Computing Security Requirements Guide (SRG)](http://iase.disa.mil/cloud_security/cloudsrg/Pages/home.aspx)
+- DISA Cloud Service Support
+- [Protecting Controlled Unclassified Information in nonfederal information systems and organizations](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-171.pdf)
+- [NIST Cybersecurity Framework](https://www.nist.gov/cyberframework)
+- Microsoft Common Controls Hub Compliance Framework
+- [Microsoft Cloud for Government](http://enterprise.microsoft.com/en-us/industries/government/start-your-microsoft-cloud-for-government-trial-today)
