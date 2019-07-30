@@ -1,5 +1,5 @@
 ---
-title: "Understanding Enterprise Business Continuity Management with cloud services"
+title: "Considerations for your Enterprise Business Continuity Managment Plan"
 author: chrfox
 ms.author: chrfox
 manager: laurawi

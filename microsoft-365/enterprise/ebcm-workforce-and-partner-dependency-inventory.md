@@ -1,5 +1,5 @@
 ---
-title: "Understanding Enterprise Business Continuity Management with cloud services"
+title: "EBCM workforce and partner dependency inventory"
 author: chrfox
 ms.author: chrfox
 manager: laurawi

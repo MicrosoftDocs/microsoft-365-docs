@@ -1,5 +1,5 @@
 ---
-title: "Understanding Enterprise Business Continuity Management with cloud services"
+title: "How Microsoft 365 handles service interruptions"
 author: chrfox
 ms.author: chrfox
 manager: laurawi

@@ -1,5 +1,5 @@
 ---
-title: "Understanding Enterprise Business Continuity Management with cloud services"
+title: "Map critical business processes to backup methods"
 author: chrfox
 ms.author: chrfox
 manager: laurawi

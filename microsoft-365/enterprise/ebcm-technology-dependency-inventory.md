@@ -1,5 +1,5 @@
 ---
-title: "Understanding Enterprise Business Continuity Management with cloud services"
+title: "Enterprise Business Continuity Management Technology dependency inventory"
 author: chrfox
 ms.author: chrfox
 manager: laurawi

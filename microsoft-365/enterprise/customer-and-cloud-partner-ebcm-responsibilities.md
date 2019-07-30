@@ -1,5 +1,5 @@
 ---
-title: "Understanding Enterprise Business Continuity Management with cloud services"
+title: "Customer and Cloud Partner Enterprise Business Continuity Responsibilities"
 author: chrfox
 ms.author: chrfox
 manager: laurawi

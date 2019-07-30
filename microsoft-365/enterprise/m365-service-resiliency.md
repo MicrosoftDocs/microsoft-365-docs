@@ -1,5 +1,5 @@
 ---
-title: "Understanding Enterprise Business Continuity Management with cloud services"
+title: "Microsoft 365 Service Resilience"
 author: chrfox
 ms.author: chrfox
 manager: laurawi
