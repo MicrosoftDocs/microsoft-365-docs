@@ -1,6 +1,6 @@
 ---
 title: "Understanding Enterprise Business Continuity Management with cloud services"
-author: chrfox-MSFT
+author: chrfox
 ms.author: chrfox
 manager: laurawi
 ms.date: 06/28/2019
