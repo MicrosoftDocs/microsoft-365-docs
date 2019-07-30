@@ -1,6 +1,6 @@
 ---
-title: 
-description: 
+title: Compliance Offering - International Traffic in Arms Regulations (ITAR)
+description: Azure Government supports customers building US International Traffic in Arms Regs-capable systems.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
@@ -12,13 +12,13 @@ audience: itpro
 ms.collection: M365-security-compliance
 ---
 
-Azure Government supports customers building US International Traffic in Arms Regs-capable systems.
+# Compliance Offering: International Traffic in Arms Regulations (ITAR)
 
-# ITAR overview
+## ITAR overview
 
 The US Department of State is responsible for managing the export and temporary import of defense articles (meaning any item or technical data designated under the US Munitions List, as described in Title 22 CFR 121.1) that are governed by the Arms Export Control Act (Title 22 USC 2778) and the International Traffic in Arms Regulations (ITAR) (Title 22 CFR 120-130). The Directorate for Defense Trade Controls (DDTC) is responsible for managing entities governed under these programs.
 
-# Microsoft and ITAR
+## Microsoft and ITAR
 
 Microsoft provides certain cloud services or service features that can support customers with ITAR obligations. While there is no compliance certification for the ITAR, Microsoft operates and has designed in-scope services to be capable of supporting a customer’s ITAR obligations and compliance program.  
   
@@ -30,26 +30,21 @@ The ITAR has specific obligations to report violations, which can provide certai
   
 Customers seeking to host ITAR-regulated data should work with their Microsoft account and licensing teams to learn more, obtain proper agreements, and access relevant system architecture information.
 
-# Microsoft in-scope cloud services
+## Microsoft in-scope cloud services
 
-  - [**Azure Government**](https://aka.ms/AzureCompliance)
+- [Azure Government](https://aka.ms/AzureCompliance)
+- [Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 
-  - [**Office 365 U.S. Government Defense**](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
+## Frequently asked questions
 
-# Frequently asked questions
+**Where can I request compliance information?**
 
-Where can I request compliance information?
+Please contact your Microsoft account representative.
 
-> Please contact your Microsoft account representative.
+## Featured resources
 
-# Featured resources
-
-  - [**DDTC ITAR**](https://www.pmddtc.state.gov/?id=ddtc_kb_article_page&sys_id=24d528fddbfc930044f9ff621f961987)
-
-  - [**ITAR Title 22 CFR 120-130**](https://aka.ms/itar)
-
-  - [**Using Azure Government with ITAR controlled data**](https://aka.ms/azure-itar-guide)
-
-  - [**Azure Government**](https://azure.microsoft.com/en-us/features/gov/)
-
-  - [**Office 365 U.S. Government**](https://products.office.com/en-us/government/office-365-web-services-for-government)
+- [DDTC ITAR](https://www.pmddtc.state.gov/?id=ddtc_kb_article_page&sys_id=24d528fddbfc930044f9ff621f961987)
+- [ITAR Title 22 CFR 120-130](https://aka.ms/itar)
+- [Using Azure Government with ITAR controlled data](https://aka.ms/azure-itar-guide)
+- [Azure Government](https://azure.microsoft.com/features/gov/)
+- [Office 365 U.S. Government](https://products.office.com/government/office-365-web-services-for-government)
