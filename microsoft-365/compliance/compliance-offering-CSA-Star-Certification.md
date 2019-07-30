@@ -1,6 +1,6 @@
 ---
-title: 
-description: 
+title: Compliance Offering - Cloud Security Alliance (CSA) STAR Certification
+description: Azure, Intune, and Power BI were awarded Cloud Security Alliance STAR Certification at the Gold level.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
@@ -12,19 +12,17 @@ audience: itpro
 ms.collection: M365-security-compliance
 ---
 
-Azure, Intune, and Power BI were awarded Cloud Security Alliance STAR Certification at the Gold level.
+# Compliance Offering: Cloud Security Alliance (CSA) STAR Certification
 
-# CSA STAR Certification Overview
+## CSA STAR Certification Overview
 
 The Cloud Security Alliance (CSA) maintains the Security, Trust & Assurance Registry (STAR), a free, publicly accessible registry where cloud service providers can publish their CSA-related assessments. STAR consists of three levels of assurance aligned with the control objectives in the CSA Cloud Controls Matrix (CCM). (The CCM covers fundamental security principles across 16 domains to help cloud customers assess the overall security risk of a cloud service.)
 
-  - Level 1: STAR Self-Assessment
+- Level 1: STAR Self-Assessment
+- Level 2: STAR Certification, STAR Attestation, and C-STAR Assessment
+- Level 3: STAR Continuous Monitoring (program requirements are still under development by CSA)
 
-  - Level 2: STAR Certification, STAR Attestation, and C-STAR Assessment
-
-  - Level 3: STAR Continuous Monitoring (program requirements are still under development by CSA)
-
-# Microsoft and CSA STAR Certification
+## Microsoft and CSA STAR Certification
 
 Microsoft Azure, Microsoft Intune, and Microsoft Power BI have obtained STAR Certification, which involves a rigorous independent third-party assessment of a cloud provider’s security posture. This STAR certification is based on achieving ISO/IEC 27001 certification and meeting criteria specified in the CCM. It demonstrates that a cloud service provider conforms to the applicable requirements of ISO/IEC 27001, has addressed issues critical to cloud security as outlined in the CCM, and has been assessed against the STAR Capability Maturity Model for the management of activities in CCM control areas.  
   
@@ -32,80 +30,60 @@ During the assessment, an accredited CSA certification auditor assigns a Maturit
   
 Learn about the benefits of CSA STAR Certification on the Microsoft Cloud.
 
-  - [**Download the CSA STAR Certification backgrounder**](https://aka.ms/csastar-certification-backgrounder)
+- [Download the CSA STAR Certification backgrounder](https://aka.ms/csastar-certification-backgrounder)
 
 Learn how to accelerate your CSA STAR Certification deployment with our Azure Security and Compliance Blueprints.
 
-  - [**Download the Microsoft Azure Responses to CSA Consensus Assessments Initiative Questionnaire**](https://gallery.technet.microsoft.com/Azure-Responses-to-CSA-46034a11)
+- [Download the Microsoft Azure Responses to CSA Consensus Assessments Initiative Questionnaire](https://gallery.technet.microsoft.com/Azure-Responses-to-CSA-46034a11)
 
-# Audits, reports, and certificates
+## Audits, reports, and certificates
 
-  - [**Azure, Cloud App Security, Flow, Genomics, Graph, Health Bot, Intune, OMS Service Map, PowerApps, Power BI, Stream - CSA STAR Certification**](https://servicetrust.microsoft.com/Documents/ComplianceReports?command=Download&downloadType=Document&downloadId=6d07d7e3-da62-4153-a91c-14d259dac9f1&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports)
+- [Azure, Cloud App Security, Flow, Genomics, Graph, Health Bot, Intune, OMS Service Map, PowerApps, Power BI, Stream - CSA STAR Certification](https://servicetrust.microsoft.com/Documents/ComplianceReports?command=Download&downloadType=Document&downloadId=6d07d7e3-da62-4153-a91c-14d259dac9f1&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports)
 
-# Microsoft in-scope cloud services
+## Microsoft in-scope cloud services
 
 Covered services include
 
-  - [**Azure, Azure Government, and Azure Germany**](https://aka.ms/AzureCompliance)
+- [Azure, Azure Government, and Azure Germany](https://aka.ms/AzureCompliance)
+- Cloud App Security
+- Genomics
+- Graph
+- Health Bot
+- Intune
+- Microsoft Flow cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
+- OMS Service Map
+- PowerApps cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
+- Power BI: The cloud service portion of Power BI offered as a standalone service or as included in an Office 365 branded plan or suite
+- Stream
 
-  - Cloud App Security
+## Frequently asked questions
 
-  - Genomics
+**Which industry standards does the CSA CCM align with?**
 
-  - Graph
+The CCM corresponds to industry-accepted security standards, regulations, and control frameworks, such as ISO 27001, PCI DSS, HIPAA, AICPA SOC 2, NERC CIP, FedRAMP, NIST, and many more. For the most current list, visit the [CSA website](http://cloudsecurityalliance.org/).
 
-  - Health Bot
+**Where can I view the CSA STAR Certification for Microsoft cloud services?**
 
-  - Intune
+You can download the [CSA STAR Certification](https://aka.ms/csastar-certification) for Azure, which also covers Intune and Power BI, from the CSA Registry.
 
-  - Microsoft Flow cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
+**What maturity level did Microsoft cloud services achieve?**
 
-  - OMS Service Map
+Azure, Cloud App Security, Intune, and Power BI have achieved the highest possible Gold Award for the Maturity Capability assessment.
 
-  - PowerApps cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
+**Which CSA STAR levels of assurance have Microsoft business cloud services attained?**
 
-  - Power BI: The cloud service portion of Power BI offered as a standalone service or as included in an Office 365 branded plan or suite
+- **Level 1**: **CSA STAR Self-Assessment**: Azure, Dynamics 365, and Office 365. The Self-Assessment is a complimentary offering from cloud service providers to document their security controls to help customers assess the security of the service.
+- **Level 2**: **CSA STAR Certification**: Azure, Cloud App Security, Intune, and Power BI. STAR Certification is based on achieving ISO/IEC 27001 certification and meeting criteria specified in the CCM. It is awarded after a rigorous third-party assessment of the security controls and practices of a cloud service provider.
+- **Level 2**: **CSA STAR Attestation**: Azure and Intune. CSA and the AICPA have collaborated to provide guidelines for CPAs to use in conducting SOC 2 engagements, using criteria from the AICPA (Trust Service Principles, AT 101) and the CSA CCM. STAR Attestation is based on these guidelines and is awarded after rigorous independent assessments of cloud providers.
 
-  - Stream
+## Featured resources
 
-# Frequently asked questions
-
-Which industry standards does the CSA CCM align with?
-
-> The CCM corresponds to industry-accepted security standards, regulations, and control frameworks, such as ISO 27001, PCI DSS, HIPAA, AICPA SOC 2, NERC CIP, FedRAMP, NIST, and many more. For the most current list, visit the [**CSA website**](http://cloudsecurityalliance.org/).
-
-Where can I view the CSA STAR Certification for Microsoft cloud services?
-
-> You can download the [**CSA STAR Certification**](https://aka.ms/csastar-certification) for Azure, which also covers Intune and Power BI, from the CSA Registry.
-
-What maturity level did Microsoft cloud services achieve?
-
-> Azure, Cloud App Security, Intune, and Power BI have achieved the highest possible Gold Award for the Maturity Capability assessment.
-
-Which CSA STAR levels of assurance have Microsoft business cloud services attained?
-
-  - **Level 1**: **CSA STAR Self-Assessment**: Azure, Dynamics 365, and Office 365. The Self-Assessment is a complimentary offering from cloud service providers to document their security controls to help customers assess the security of the service.
-
-  - **Level 2**: CSA STAR Certification: Azure, Cloud App Security, Intune, and Power BI. STAR Certification is based on achieving ISO/IEC 27001 certification and meeting criteria specified in the CCM. It is awarded after a rigorous third-party assessment of the security controls and practices of a cloud service provider.
-
-  - **Level 2**: **CSA STAR Attestation**: Azure and Intune. CSA and the AICPA have collaborated to provide guidelines for CPAs to use in conducting SOC 2 engagements, using criteria from the AICPA (Trust Service Principles, AT 101) and the CSA CCM. STAR Attestation is based on these guidelines and is awarded after rigorous independent assessments of cloud providers.
-
-# Featured resources 
-
-  - [**Azure standard response for request for information**](https://aka.ms/AzureStandardRequestForInformation)
-
-  - [**Azure Cloud Security Alliance CAIQ**](https://aka.ms/AzureCSACAIQ)
-
-  - [**Office 365 Mapping of CSA Cloud Control Matrix**](https://aka.ms/Office365CSACloudControlMatrix)
-
-  - [**Cloud Security Alliance**](http://cloudsecurityalliance.org/)
-
-  - [**CSA Security, Trust & Assurance Registry (STAR)**](https://cloudsecurityalliance.org/star/)
-
-  - [**About CSA STAR certification**](https://cloudsecurityalliance.org/star/certification/)
-
-  - [**Cloud Controls Matrix (CCM)**](https://cloudsecurityalliance.org/group/cloud-controls-matrix/)
-
-  - **ISO/IEC 27001**
-
-  - **Microsoft Common Controls Hub Compliance Framework**
+- [Azure standard response for request for information](https://aka.ms/AzureStandardRequestForInformation)
+- [Azure Cloud Security Alliance CAIQ](https://aka.ms/AzureCSACAIQ)
+- [Office 365 Mapping of CSA Cloud Control Matrix](https://aka.ms/Office365CSACloudControlMatrix)
+- [Cloud Security Alliance](http://cloudsecurityalliance.org/)
+- [CSA Security, Trust & Assurance Registry (STAR)](https://cloudsecurityalliance.org/star/)
+- [About CSA STAR certification](https://cloudsecurityalliance.org/star/certification/)
+- [Cloud Controls Matrix (CCM)](https://cloudsecurityalliance.org/group/cloud-controls-matrix/)
+- ISO/IEC 27001
+- Microsoft Common Controls Hub Compliance Framework
