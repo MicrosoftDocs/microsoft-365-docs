@@ -18,7 +18,7 @@ description: Understand how planning and implementing business continuity looks 
 
 # Enterprise Business Continuity Management (EBCM) with cloud services
 
-You probably already have business continuity plans in place for the IT services and infrastructure you support internally. You've taken facilities and environmental needs, physical security, network connectivity, storage and compute hardware and data availability all into account. Now, as your digital transformation proceeds to include Microsoft 365 cloud services, some of your critical business processes include cloud components and depend on those cloud services being available.
+You probably already have business continuity plans in place for the IT services and infrastructure you support internally. You've taken the facilities and environmental, physical security, network connectivity, storage and compute hardware and data availability all into account. Now, as your digital transformation proceeds to include Microsoft 365 cloud services, some of your critical business processes include cloud components and depend on those cloud services being available.
 If you haven't revisited and updated your business continuity plans for the cloud services that you depend on, this series of topics helps you through understanding the considerations that are introduced into your EBCM planning by having cloud service dependencies.
 
 Your organization should already have a continuity strategy for your on-premises environment,
