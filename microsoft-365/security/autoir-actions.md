@@ -27,7 +27,7 @@ The Action Center aggregates all actions that require an approval or another act
 
 ![Action Center](images/air-actioncenter.png)
 
-To go to the Action Center, in the Microsoft 365 security center, click the Action Center icon.
+To go to the Action Center, in the Microsoft 365 security center, click the **Action Center** icon.
 
 The action center consists of two main tabs:
 - **Pending**: Lists pending actions for current investigations. For example, actions that require approval in order to proceed are listed here. 
