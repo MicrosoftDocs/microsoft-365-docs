@@ -55,8 +55,8 @@
 ### [ISO 27017]()
 ### [ISO 27018]()
 ### [ISO-9001]()
-### [SOC]()
-### [WCAG 2.1]()
+### [SOC](offering-soc.md)
+### [WCAG 2.1](offering-wcag-2-1.md)
 
 ## [Government]()
 ### [CJIS]()
@@ -71,7 +71,7 @@
 ### [ITAR]()
 ### [NIST 800-171]()
 ### [NIST CSF]()
-### [Section 508 VPATS]()
+### [Section 508 VPATS](offering-section-508-vpats.md)
 
 ## [Industry]()
 ### [23 NYCRR Part 500]()
@@ -109,8 +109,8 @@
 ### [RBI + IRDAI (India)]()
 ### [SEC 17a-4]()
 ### [Shared Assessments]()
-### [SOX]()
-### [TISAX (Germany)]()
+### [SOX](offering-sox.md)
+### [TISAX (Germany)](offering-tisax-germany.md)
 
 ## [Regional]()
 ### [BIR 2012 (Netherlands)]()
