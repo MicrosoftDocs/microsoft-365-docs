@@ -3,7 +3,7 @@ title: Step 2 - Directory and Network Readiness
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
-ms.date: 09/14/2018
+ms.date: 05/10/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -74,7 +74,7 @@ One way to limit the impact of deployment-related traffic on the network is to t
 
 [About BITS](https://docs.microsoft.com/en-us/windows/desktop/bits/about-bits)
 
-If you use System Center Configuration Manager, you can also configure BITS-enabled Distribution Points or enable multicast with WDS.
+If you use System Center Configuration Manager (Current Branch), you can also configure BITS-enabled Distribution Points or enable multicast with WDS.
 
 Throttling specific traffic means that normal network traffic is less impacted by PCs downloading updates and applications. But carving out a certain percentage of bandwidth for these tasks helps ensure productivity isn’t impacted by Windows or Office deployment and processes continue to run as needed, it can worsen deployment-related downtime, with users locked out of their PCs while a deployment runs.
 
@@ -84,7 +84,7 @@ Fortunately, there are new tools to make it easier for you to manage the network
 
 ## **Scavenging Bandwidth**
 
-Low Extra Delay Background Transport (LEDBAT), supported in Windows Server 2019 and System Center Configuration Manager version 1806, is designed to optimize network traffic to Windows clients.
+Low Extra Delay Background Transport (LEDBAT), supported in Windows Server 2019 and System Center Configuration Manager (Current Branch), is designed to optimize network traffic to Windows clients.
 
 [Top 10 Networking Features in Windows Server 2019: \#9 LEDBAT – Latency Optimized Background Transport](https://blogs.technet.microsoft.com/networking/2018/07/25/ledbat/)
 
@@ -104,7 +104,7 @@ Note: BranchCache and Peer Cache are complementary and can work together in the 
 
 [BranchCache vs. Peer Cache](https://blogs.technet.microsoft.com/swisspfe/2018/01/25/branch-cache-vs-peer-cache/)
 
-**Delivery Optimization** Delivery Optimization is another peer-to-peer caching technology, providing network-based controls for deployments. Windows 10 Delivery Optimization to update built-in UWP apps, also to install applications from the Microsoft Store, and for software updates using Express Updates. It has been available since early versions of Windows 10, though it has only recently integrated with System Center Configuration Manager. Since Windows 10 version 1803 new configuration options mean you can now independently set bandwidth limits for background updates and foreground jobs such as an app install from the Store. Windows Delivery Optimization now also supports Office 365 ProPlus during client updates, available in all supported Office 365 client update channels. Support for Windows Delivery Optimization during Office 365 client initial installation will be coming soon.  
+**Delivery Optimization** Delivery Optimization is another peer-to-peer caching technology, providing network-based controls for deployments. Windows 10 Delivery Optimization to update built-in UWP apps, also to install applications from the Microsoft Store, and for software updates using Express Updates. It has been available since early versions of Windows 10, though it has only recently integrated with System Center Configuration Manager (Current Branch). Since Windows 10 version 1803 new configuration options mean you can now independently set bandwidth limits for background updates and foreground jobs such as an app install from the Store. Windows Delivery Optimization now also supports Office 365 ProPlus during client updates, available in all supported Office 365 client update channels. Support for Windows Delivery Optimization during Office 365 client initial installation will be coming soon.  
 
 ![](media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-5.png)
 

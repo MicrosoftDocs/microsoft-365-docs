@@ -3,7 +3,7 @@ title: Get support for Microsoft Managed Desktop
 description:  
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
-author: jdeckerms
+author: jaimeo
 ms.localizationpriority: normal
 ms.date: 11/28/2018
 ms.collection: M365-modern-desktop
@@ -11,7 +11,9 @@ ms.collection: M365-modern-desktop
 
 # Getting help for end users
 
-There are two ways that users in your organization can get help with their Microsoft Managed Desktop devices: **Get Help** app, or phone support. Note that devices residing in the test group are out of scope for these end user support options. 
+There are two ways that users in your organization can get help with their Microsoft Managed Desktop devices: **Get Help** app, or phone support. Both of these support options are available to users 24 hours a day, 7 days a week. 
+>[!NOTE]
+>Devices residing in the test group are out of scope for these end user support options. 
 
 ## Get Help app
 
@@ -27,12 +29,14 @@ This is an application that’s installed on all Microsoft Managed Desktop devic
 ## Phone support
 
 End users with Microsoft Managed Desktop devices also have access to toll-free phone numbers they can call. This is meant to be used when Get Help isn’t available. For example, if they can’t sign in to the device, or the device is broken. Here are the phone numbers for phone support:
- 
 
-- United States & Canada (excluding Quebec): +1 855 425 0216
+- United States: +1 855 425 0216
+- Canada (excluding Quebec): +1 855 425 0216
 - United Kingdom: +44 800 026 0698
 - Australia: +61 180 037 0619
 
+>[!NOTE]
+>Please have your organizational email address ready when you call to verify your identity. 
 
 ## Additional resources
 - [Admin support for Microsoft Managed Desktop](admin-support.md). 

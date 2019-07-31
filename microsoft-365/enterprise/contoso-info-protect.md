@@ -3,8 +3,8 @@ title: "Information protection for the Contoso Corporation"
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 09/18/2018
-ms.audience: ITPro
+ms.date: 04/10/2019
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -40,9 +40,9 @@ The following table lists Contoso's information policies.
 |||||
 |:-------|:-----|:-----|:-----|
 |  | **Access** | **Data retention** | **Information protection** |
-| Level 1: Low business value (Baseline) | Allow access to all  | 6 months | Use encryption |
-| Level 2: Medium business value (Sensitive) | Allow access to Contoso employees, subcontractors, and partners <BR> <BR> Use multi-factor authentication (MFA), Transport Layer Security (TLS), and Mobile Application Management (MAM) | 2 years  | Use hash values for data integrity  |
-| Level 3: High business value (Highly regulated) | Allow access to executives and leads in engineering and manufacturing <BR> <BR> Rights Management System (RMS) with managed network devices only  | 7 years  | Use digital signatures for non-repudiation  |
+| Low business value (Level 1: Baseline) | Allow access to all  | 6 months | Use encryption |
+| Medium business value (Level 2: Sensitive) | Allow access to Contoso employees, subcontractors, and partners <BR> <BR> Use multi-factor authentication (MFA), Transport Layer Security (TLS), and Mobile Application Management (MAM) | 2 years  | Use hash values for data integrity  |
+| High business value (Level 3: Highly regulated) | Allow access to executives and leads in engineering and manufacturing <BR> <BR> Rights Management System (RMS) with managed network devices only  | 7 years  | Use digital signatures for non-repudiation  |
 |||||
 
 ## Contoso’s path to information protection with Microsoft 365 Enterprise
@@ -57,21 +57,21 @@ Contoso used the following steps to prepare Microsoft 365 Enterprise for their i
 
    Based on the data levels, Contoso determined detailed policy requirements, which were used to protect existing digital assets as they were moved to the cloud.
 
-3. Created Azure Information Protection labels and their settings for the different levels of information
+3. Created sensitivity labels and their settings for the different levels of information
 
-   Contoso modified the default Azure Information Protection labels with the titles that match their data levels and configured the Sensitive and Highly regulated labels to encrypt with Azure cloud key. They created sub-labels of the Highly regulated label for specific types of trade secret data and confined their access to specific research and development groups. Contoso also deployed the Azure Information Protection client to all Windows PCs and devices.
+   Contoso created sensitivity labels for their data levels, with sensitive and highly regulated label including encryption, permissions, and watermarks.
 
 4. Created protected SharePoint Online sites for sensitive and highly regulated data with permissions that lock down access
 
-   Both sensitive and highly regulated sites were configured as [isolated sites](https://docs.microsoft.com/office365/enterprise/isolated-sharepoint-online-team-sites), in which the default SharePoint Online team site permissions were customized to Azure AD groups. Sensitive and highly regulated SharePoint Online sites were also configured with a default Office 365 label. Files stored in highly regulated SharePoint Online sites are protected with an Azure Information Protection sub-label of a scoped policy. For more information, see the [Microsoft Teams and SharePoint Online sites for highly regulated data](teams-sharepoint-online-sites-highly-regulated-data.md) scenario.
+   Both sensitive and highly regulated sites were configured as [isolated sites](https://docs.microsoft.com/office365/enterprise/isolated-sharepoint-online-team-sites), in which the default SharePoint Online team site permissions were customized to Azure Active Directory (Azure AD) groups. Sensitive and highly regulated SharePoint Online sites were also configured with a corrresponding retention label. Files stored in highly regulated SharePoint Online sites are protected with the Highly Regulated sensitivity label. For more information, see the [Microsoft Teams and SharePoint Online sites for highly regulated data](teams-sharepoint-online-sites-highly-regulated-data.md) scenario.
 
 5.	Moved data from on-premises SharePoint sites and file shares to their new SharePoint Online sites
 
-    The files migrated to the new SharePoint Online sites inherited the default Office 365 labels assigned to the site.
+    The files migrated to the new SharePoint Online sites inherited the default retention labels assigned to the site.
 
-6.	Trained employees on how to use Azure Information Protection labels for new documents, how to interact with Contoso IT when creating new SharePoint Online sites, and to always store digital assets on SharePoint Online sites
+6.	Trained employees on how to use sensitivity labels for new documents, how to interact with Contoso IT when creating new SharePoint Online sites, and to always store digital assets on SharePoint Online sites
 
-    Considered the hardest part of the information protection transition for the cloud, Contoso IT and management needed to change the bad information storage habits of the organization’s employees to always label their digital assets and never use on-premises file shares.
+    Considered the hardest part of the information protection transition for the cloud, Contoso IT and management needed to change the bad information storage habits of the organization’s employees to always store and label their digital assets in the cloud, refrain from using on-premises file shares, and never use third-party cloud storage services or USB drives.
 
 ## Conditional access policies for information protection
 
@@ -93,7 +93,7 @@ Figure 1 shows Contoso's resulting set of policies for information protection.
 
 These policies ensure that:
 
-- App protection policies define which apps are allowed and the actions they can take with your organization data.
+- Apps are allowed and the actions they can take with your organization data are defined by app protection policies.
 - PCs and mobile devices must be compliant.
 - Exchange Online uses Office 365 message encryption for Exchange Online.
 - SharePoint Online uses app enforced restrictions.
@@ -106,9 +106,9 @@ The following table shows the mapping the Contoso's data levels to information p
 |||||
 |:-------|:-----|:-----|:-----|
 | | **Office 365** | **Windows 10 and Office 365 ProPlus** | **EMS** |
-| Level 1: Baseline  | SharePoint Online and Exchange Online conditional access policies <BR> Permissions on SharePoint Online sites | Azure Information Protection client <BR> BitLocker <BR> Windows Information Protection | Device conditional access policies and Mobile Application Management policies |
-| Level 2: Highly sensitive | Level 1: Baseline plus: <BR> <BR> Azure Information Protection labels <BR> Office 365 labels on SharePoint Online sites <BR> Office 365 Data Loss Prevention for SharePoint Online and Exchange Online <BR> Isolated SharePoint Online sites  | Level 1: Baseline plus: <BR> <BR> Azure Information Protection labels on digital assets <BR> Office 365 Advanced Data Governance | Level 1: Baseline |
-| Level 3: Highly regulated | Level 2: Highly sensitive plus: <BR><BR> Bring Your Own Key (BYOK) encryption and protection for trade secret information <BR> Azure Key Vault for line of business applications that interact with Office 365 services | Level 2: Highly sensitive | Level 1: Baseline |
+| Level 1: Baseline  | SharePoint Online and Exchange Online conditional access policies <BR> Permissions on SharePoint Online sites | Sensitivity labels <BR> BitLocker <BR> Windows Information Protection | Device conditional access policies and Mobile Application Management policies |
+| Level 2: Sensitive | Level 1 plus: <BR> <BR> Sensitivity labels <BR> Office 365 labels on SharePoint Online sites <BR> Office 365 Data Loss Prevention for SharePoint Online and Exchange Online <BR> Isolated SharePoint Online sites  | Level 1 plus: <BR> <BR> Sensitivity labels on digital assets <BR> Office 365 Advanced Data Governance | Level 1 |
+| Level 3: Highly regulated | Level 2 plus: <BR><BR> Bring Your Own Key (BYOK) encryption and protection for trade secret information <BR> Azure Key Vault for line of business applications that interact with Office 365 services | Level 2 | Level 1 |
 |||||
 
 

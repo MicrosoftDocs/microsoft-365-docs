@@ -3,8 +3,8 @@ title: "Protect global administrator accounts in your Microsoft 365 Enterprise t
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/21/2018
-ms.audience: ITPro
+ms.date: 04/16/2019
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -17,7 +17,7 @@ description: "Use these steps to protect global administrator accounts in your M
 
 # Protect global administrator accounts in your Microsoft 365 Enterprise test environment
 
-You can prevent digital attacks on your organization by ensuring that your administrator accounts are as secure as possible. This article describes how to use Office 365 Cloud App Security and Azure AD conditional access policies to protect global administrator accounts.
+You can prevent digital attacks on your organization by ensuring that your administrator accounts are as secure as possible. This article describes how to use Azure Active Directory (Azure AD) conditional access policies to protect global administrator accounts.
 
 There are two phases to protecting global administrator accounts in your Microsoft 365 Enterprise test environment:
 
@@ -28,45 +28,30 @@ There are two phases to protecting global administrator accounts in your Microso
     
 > [!TIP]
 > Click [here](https://aka.ms/m365etlgstack) for a visual map to all the articles in the Microsoft 365 Enterprise Test Lab Guide stack.
-  
 
 ## Phase 1: Build out your Microsoft 365 Enterprise test environment
 
 If you just want to test global administrator account protection in a lightweight way with the minimum requirements, follow the instructions in [Lightweight base configuration](lightweight-base-configuration-microsoft-365-enterprise.md).
   
 If you want to test global administrator account protection in a simulated enterprise, follow the instructions in [Pass-through authentication](pass-through-auth-m365-ent-test-environment.md).
+
   
 > [!NOTE]
-> Testing global administrator account protection does not require the simulated enterprise test environment, which includes a simulated intranet connected to the Internet and directory synchronization for a Windows Server AD forest. It is provided here as an option so that you can test global administrator account protection and experiment with it in an environment that represents a typical organization. 
+> Testing global administrator account protection does not require the simulated enterprise test environment, which includes a simulated intranet connected to the Internet and directory synchronization for an Active Directory Domain Services (AD DS). It is provided here as an option so that you can test global administrator account protection and experiment with it in an environment that represents a typical organization. 
   
-## Phase 2: Configure Cloud App Security and conditional access policies
+## Phase 2: Configure conditional access policies
 
-First, create an Office 365 Cloud App Security policy to monitor global administrator account activity and send alerts to the email address of your global administrator account. 
+First, create a new user account as a dedicated global administrator.
 
-1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) using your global administrator account.
-2. Click the **Admin** tile. On the **Microsoft 365 admin center** tab, click **Admin centers > Compliance**.
-3. In the left navigation pane, click **Alerts > Manage advanced alerts**.
-4. On the **Manage advanced alerts** page, click **Turn on Office 365 Cloud App Security**, and then click **Go to Office 365 Cloud App Security**.
-5. On the new **Dashboard** tab, click **Control > Policies**.
-6. On the **Policy** page, click **Create policy**, and then click **Activity policy**.
-7. In **Policy name**, type **Administrative activity**.
-8. In **Policy severity**, click **High**.
-9. In **Category**, click **Privileged accounts**.
-10. In **Create filters for the policy**, in **Activities matching all of the following**, click **Administrative activity**.
-11. In **Alerts**, click **Send alert as email**. In **To**, type the email address of your global administrator account.
-12. At the bottom of the page, click **Create**.
-13. Close the **Dashboard** tab.
-    
-Next, create a new user account as a dedicated global administrator.
-
-1. On the **Microsoft 365 admin center** tab, under **Active users**, click **Add a user**.
-2. On the **New user** page, type **DedicatedAdmin** in **First name**, **Display name**, and **Username**.
-3. Click **Password**, click **Let me create the password**, and then type a strong password. Record the password for this new account in a secure location.
-4. Clear **Make this user change their password when they first sign in**.
-5. Click **Roles**, and then click **Global administrator**.
-6. Click **Product licenses**, and then turn the **Enterprise Mobility + Security E5** and **Office 365 Enterprise E5 licenses** on.
-7. Click **Add**.
-8. On the **User was added page**, clear **Send password in email**, and then click **Close**.
+1. On a separate tab, open the [Microsoft 365 admin center](https://admin.microsoft.com/).
+2. Under **Active users**, click **Add a user**.
+3. On the **New user** page, type **DedicatedAdmin** in **First name**, **Display name**, and **Username**.
+4. Click **Password**, click **Let me create the password**, and then type a strong password. Record the password for this new account in a secure location.
+5. Clear **Make this user change their password when they first sign in**.
+6. Click **Roles**, and then click **Global administrator**.
+7. Click **Product licenses**, and then turn the **Enterprise Mobility + Security E5** and **Office 365 Enterprise E5 licenses** on.
+8. Click **Add**.
+9. On the **User was added page**, clear **Send password in email**, and then click **Close**.
 
 Next, create a new group named GlobalAdmins and add the DedicatedAdmin account to it.
 

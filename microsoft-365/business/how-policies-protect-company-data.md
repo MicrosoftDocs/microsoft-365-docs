@@ -3,7 +3,7 @@ title: "How policies in Microsoft 365 Business protect company data"
 ms.author: sirkkuw
 author: sirkkuw
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 f1_keywords:
 - 'O365E_ESPoliciesLM'

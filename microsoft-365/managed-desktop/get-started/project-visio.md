@@ -3,7 +3,7 @@ title: Install Microsoft Project or Microsoft Visio on Microsoft Managed Desktop
 description: Info on installing Microsoft Project or Microsoft Visio on Microsoft Managed Desktop devices 
 keywords: Microsoft Managed Desktop, Microsoft 365, Microsoft Project, Microsoft Visio
 ms.service: m365-md
-author: trudyha
+author: jaimeo
 ms.localizationpriority: normal
 ms.date: 03/07/2019
 ms.collection: M365-modern-desktop
@@ -34,9 +34,9 @@ After you submit your support request, Microsoft Managed Desktop will create thr
 
 Azure AD Group name | Which users to assign?   
  --- | ---
-Microsoft-Office-Project-Install | Users needing only Project
-Microsoft-Office-Visio-Install | Users needing only Visio
-Microsoft-Office-Project and Visio-Install | Users needing both Project and Visio
+Modern Workplace-Office-Project-Install | Users needing only Project
+Modern Workplace-Office-Visio-Install | Users needing only Visio
+Modern Workplace-Office-Project and Visio-Install | Users needing both Project and Visio
 
 Once assigned to these groups, applications will be available in the Company Portal. It may take a few minutes to sync, but then your users can install the apps from Company Portal. 
 

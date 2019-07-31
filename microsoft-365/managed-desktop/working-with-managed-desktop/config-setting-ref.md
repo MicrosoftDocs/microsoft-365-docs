@@ -3,7 +3,7 @@ title: Configurable settings reference for Microsoft Managed Desktop
 description:  Setting categories for configurable settings in Microsoft Managed Desktop
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
-author: trudyha
+author: jaimeo
 ms.localizationpriority: normal
 ms.date: 2/14/2019
 ms.collection: M365-modern-desktop

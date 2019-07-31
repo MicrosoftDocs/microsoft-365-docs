@@ -2,8 +2,8 @@
 title: "Microsoft 365 Enterprise workloads and scenarios"
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/02/2019
-ms.audience: ITPro
+ms.date: 04/15/2019
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -16,14 +16,20 @@ description: Onboard your organization's users to the productivity workloads of 
 
 # Microsoft 365 Enterprise workloads and scenarios
 
-To get the creativity and teamwork benefits of Microsoft 365 Enterprise, deploy these workloads and scenarios over your foundation infrastructure:
+To get the creativity and teamwork benefits of Microsoft 365 Enterprise, deploy these workloads over your foundation infrastructure:
 
 - [Microsoft Teams](teams-workload.md)
 - [Exchange Online](exchangeonline-workload.md)
 - [SharePoint Online](sharepoint-online-onedrive-workload.md)
-- [Microsoft Teams and SharePoint Online sites for highly regulated data](teams-sharepoint-online-sites-highly-regulated-data.md)
 
 See the [migration](migration-microsoft-365-enterprise-workload.md) workload for a general roadmap to migrate your entire organization to Microsoft 365 Enterprise, which includes Microsoft Office client products, on-premises Office Server products, and Microsoft Windows-based devices.
+
+Scenarios use features and services from across Microsoft 365 Enterprise in an integrated way to address a business need. One such need is to protect highly regulated data stored in Microsoft 365. Highly regulated data includes digital assets that are:
+
+- Subject to regional regulations.
+- The most valuable data for your organization, such as trade secrets, financial or human resources information, and organization strategy.
+
+To protect this data from internal and external threats, see the instructions in [Microsoft Teams and SharePoint Online sites for highly regulated data](teams-sharepoint-online-sites-highly-regulated-data.md). This scenario steps you through configuring a SharePoint Online site or a Microsoft Teams team to securely store your most valuable data.
 
 Here are the workloads and scenarios in the overall Microsoft 365 Enterprise deployment guide:
 
@@ -32,7 +38,6 @@ Here are the workloads and scenarios in the overall Microsoft 365 Enterprise dep
 ## Foundation infrastructure prerequisites
 
 *Ideally*, you should deploy workloads and scenarios after you have configured all of the phases of the [foundation infrastructure](deploy-foundation-infrastructure.md). This ensures that all of the underlying layers are in place to provide integration, security, and the best experience for your users and their devices.
-
 
 | Phase | Result |
 |:-------|:-----|
@@ -43,14 +48,14 @@ Here are the workloads and scenarios in the overall Microsoft 365 Enterprise dep
 | Mobile device management | Your devices can be enrolled and managed. |
 | Information protection | Office 365 security features are enabled and your sensitivity or Azure Information Protection labels are ready to protect documents. |
 
-Remember that this is ideal, and can take some time to plan for, configure, test, and pilot, especially in large organizations with existing infrastructure and multiple locations. Putting all of these layers in place in all locations is not necessary for you to more quickly get business value from Microsoft 365 Enterprise. 
+Remember that this is ideal and can take some time to plan for, configure, test, and pilot, especially in large organizations with existing infrastructure and multiple locations. Putting all of these layers in place in all locations is not necessary for you to more quickly get business value from Microsoft 365 Enterprise. 
 
 Here are some common workloads to deploy right away: 
 
 - After the **Identity** layer of the foundation infrastructure is rolled out to users, many organizations deploy:
   - [Office 365 ProPlus](office365proplus-infrastructure.md) combined with [OneDrive for Business](https://docs.microsoft.com/onedrive/plan-onedrive-enterprise). Office 365 ProPlus provides the security of modern authentication and the user experience of the latest Microsoft Office client. The migration of user's personal files to OneDrive for Business reduces infrastructure and the need to support home folders and drives.
   - [Exchange Online](exchangeonline-workload.md) so that users can begin using cloud-based email.
-- If you don't have an immediate need for storing highly regulated digital assets in the cloud, deploy [Microsoft Teams](teams-workload.md) and [SharePoint Online](sharepoint-online-onedrive-workload.md) for their users prior to the **Information protection** layer.
+- If you don't have an immediate need for storing highly regulated digital assets in the cloud, deploy [Microsoft Teams](teams-workload.md) and [SharePoint Online](sharepoint-online-onedrive-workload.md) for your users prior to the **Information protection** layer.
 
 You must decide on how to best order and deploy the configuration of prerequisite phases of foundation infrastructure to best meet your business needs.
 

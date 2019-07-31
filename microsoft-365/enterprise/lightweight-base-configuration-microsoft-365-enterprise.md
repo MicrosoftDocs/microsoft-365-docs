@@ -3,8 +3,8 @@ title: "Lightweight base configuration"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/15/2019
-ms.audience: ITPro
+ms.date: 05/01/2019
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -19,7 +19,7 @@ description: Use this Test Lab Guide to create a lightweight test environment fo
 
 # The lightweight base configuration
 
-This article provides you with step-by-step instructions to create a simplified environment that includes Office 365 E5, Enterprise Mobility + Security (EMS) E5, and a computer running Windows 10 Enterprise. 
+This article provides you with step-by-step instructions to create a simplified environment with a Microsoft 365 E5 subscription and a computer running Windows 10 Enterprise. 
 
 ![The lightweight Microsoft 3656 Enterprise test environment](media/lightweight-base-configuration-microsoft-365-enterprise/Phase4.png)
 
@@ -32,52 +32,51 @@ Use the resulting environment to test the features and functionality of [Microso
 
 ## Phase 1: Create your Office 365 E5 subscription
 
-Follow the steps in Phase 2 and Phase 3 of the [Office 365 dev/test environment](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment) to create a lightweight Office 365 dev/test environment, as shown in Figure 1.
-  
-**Figure 1: Your Office 365 E5 subscription with its Azure Active Directory (Azure AD) tenant and user accounts**
+Follow the steps in Phase 2 and Phase 3 of the [Office 365 dev/test environment](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment) to create a lightweight Office 365 dev/test environment.
 
-![Phase 1 of the Microsoft 3656 Enterprise test environment](media/lightweight-base-configuration-microsoft-365-enterprise/Phase1.png)
+>[!Note]
+>We have you create a trial subscription of Office 365 so that your dev/test environment has a separate Azure AD tenant from any paid subscriptions you currently have. This separation means you can add and remove users and groups in the test tenant without affecting your production subscriptions.
+>
+  
+## Phase 2: Add a Microsoft 365 E5 trial subscription
 
-> [!NOTE]
-> The Office 365 E5 trial subscription is 30 days, which can be easily extended to 60 days. For a permanent test environment, create a new paid subscription with a small number of licenses. 
+In this phase, you sign up for the Microsoft 365 E5 trial subscription and add it to the same organization as your Office 365 E5 trial subscription.
   
-## Phase 2: Add EMS
+First, add the Microsoft 365 E5 trial subscription and assign a Microsoft 365 license to your global administrator account.
+  
+1. With a private instance of an Internet browser, sign in to the Microsoft 365 admin center at [http://admin.microsoft.com](http://admin.microsoft.com) with your global administrator account credentials.
+    
+2. On the **Microsoft 365 admin center** page, in the left navigation, click **Billing > Purchase services**.
+    
+3. On the **Purchase services** page, find the **Microsoft 365 E5** item. Hover your mouse pointer over it and click **Start free trial**.
 
-In this phase, you sign up for the EMS E5 trial subscription and add it to the same organization as your Office 365 E5 trial subscription.
-  
-First, add the EMS E5 trial subscription and assign an EMS license to your global administrator account.
-  
-1. With a private instance of an Internet browser, sign in to the Office portal with your global administrator account credentials. For help, see [Where to sign in to Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
-    
-2. Click the **Admin** tile.
-    
-3. On the **Microsoft 365 admin center** tab in your browser, in the left navigation, click **Billing > Purchase services**.
-    
-4. On the **Purchase services** page, find the **Enterprise Mobility + Security E5** item. Hover your mouse pointer over it and click **Start free trial**.
-    
+4. On the **Microsoft 365 E5 Trial** page, choose to receive a text or a call, enter your phone number, then click **Text me** or **Call me**.
+
 5. On the **Confirm your order** page, click **Try now**.
-    
+
 6. On the **Order receipt** page, click **Continue**.
-    
-7. On the **Office 365 Admin center** tab in your browser, in the left navigation, click **Users > Active users**.
-    
-8. Click your global administrator account, and then click **Edit** for **Product licenses**.
-    
-9. On the **Product licenses** pane, turn the product license for **Enterprise Mobility + Security E5** to **On**, click **Save,** and then click **Close** twice.
-    
-> [!NOTE]
-> The Enterprise Mobility + Security E5 trial subscription is 90 days. For a permanent test environment, create a new paid subscription with a small number of licenses. 
+
+7. In the Microsoft 365 admin center, click **Active users**, and then your administrator account.
+
+8. Click **Edit** for **Product licenses**.
+
+9. Turn off the license for Office 365 Enterprise E5 and turn on the license for Microsoft 365 E5.
+
+10. Click **Save > Close > Close**.
+
+Next, ***if you completed Phase 3 of the*** [Office 365 dev/test environment](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment), repeat steps 8 through 11 of the previous procedure for all of your other accounts (User 2, User 3, User 4, and User 5).
   
- ***If you completed Phase 3 of the*** [Office 365 dev/test environment](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment), repeat steps 8 and 9 of the previous procedure for all of your other accounts (User 2, User 3, User 4, and User 5).
+> [!NOTE]
+> The Microsoft 365 E5 trial subscription is 30 days. For a permanent test environment, convert this trial subscription to a paid subscription with a small number of licenses. 
   
 Your test environment now has:
   
-- Office 365 E5 Enterprise and EMS E5 trial subscriptions sharing the same Azure AD tenant with your list of user accounts.
-- All your appropriate user accounts (either just the global administrator or all five user accounts) are enabled to use Office 365 E5 and EMS E5.
+- A Microsoft 365 E5 trial subscription.
+- All your appropriate user accounts (either just the global administrator or all five user accounts) are enabled to use Microsoft 365 E5.
     
-Figure 2 shows your resulting configuration, which adds EMS.
+Figure 1 shows your resulting configuration, which adds Microsoft 365 E5, which includes both Office 365 and Enterprise Security + Management (EMS).
   
-**Figure 2: Adding the EMS trial subscription**
+**Figure 1: Adding the Microsoft 365 trial subscription**
 
 ![Phase 2 of the Microsoft 3656 Enterprise test environment](media/lightweight-base-configuration-microsoft-365-enterprise/Phase2.png)
   
@@ -145,6 +144,7 @@ New-AzNetworkSecurityGroup -Name Corpnet -ResourceGroupName $rgName -Location $l
 $vnet=Get-AzVirtualNetwork -ResourceGroupName $rgName -Name "M365Ent-TestLab"
 $nsg=Get-AzNetworkSecurityGroup -Name Corpnet -ResourceGroupName $rgName
 Set-AzVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name Corpnet -AddressPrefix "10.0.0.0/24" -NetworkSecurityGroup $nsg
+$vnet | Set-AzVirtualNetwork
 $pip=New-AzPublicIpAddress -Name WIN10-PIP -ResourceGroupName $rgName -Location $locName -AllocationMethod Dynamic
 $nic=New-AzNetworkInterface -Name WIN10-NIC -ResourceGroupName $rgName -Location $locName -SubnetId $vnet.Subnets[0].Id -PublicIpAddressId $pip.Id
 $vm=New-AzVMConfig -VMName WIN10 -VMSize Standard_D1_V2
@@ -163,13 +163,13 @@ After the physical or virtual machine with Windows 10 Enterprise is created, sig
 > [!NOTE]
 > For a virtual machine in Azure, connect to it using [these instructions](https://docs.microsoft.com/azure/virtual-machines/windows/connect-logon).
   
-Next, join the WIN10 computer to the Azure AD tenant of your Office 365 and EMS subscriptions.
+Next, join the WIN10 computer to the Azure AD tenant of your Microsoft 365 E5 subscription.
   
 1. At the desktop of the WIN10 computer, click **Start > Settings > Accounts > Access work or school > Connect**.
     
 2. In the **Set up a work or school account** dialog box, click **Join this device to Azure Active Directory**.
     
-3. In **Work or school account**, type the global administrator account name of your Office 365 subscription, and then click **Next**.
+3. In **Work or school account**, type the global administrator account name of your Microsoft 365 E5 subscription, and then click **Next**.
     
 4. In **Enter password**, type the password for your global administrator account, and then click **Sign in**.
     
@@ -181,7 +181,7 @@ Next, install Office 365 ProPlus on the WIN10 computer.
   
 1. Open the Microsoft Edge browser and sign in to the Office portal with your global administrator account credentials. For help, see [Where to sign in to Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
-2. On the **Microsoft Office Home** tab, click **Install Office 2016**.
+2. On the **Microsoft Office Home** tab, click **Install Office**.
     
 3. When prompted with what to do, click **Run**, and then click **Yes** for **User Account Control**.
     
@@ -189,12 +189,11 @@ Next, install Office 365 ProPlus on the WIN10 computer.
     
 Figure 3 shows your resulting environment, which includes the WIN10 computer that has:
 
-- Joined the Azure AD tenant of your Office 365 and EMS subscriptions.
-- Enrolled as an Azure AD device in Intune (EMS).
+- Joined the Azure AD tenant of your Microsoft 365 E5 subscription.
+- Enrolled as an Azure AD device in Microsoft Intune (EMS).
 - Has Office 365 ProPlus installed.
   
-**Figure 3: The final configuration of the Microsoft 365 test environment**
-
+**Figure 2: The final configuration of the Microsoft 365 test environment**
 
 ![Phase 4 of the Microsoft 3656 Enterprise test environment](media/lightweight-base-configuration-microsoft-365-enterprise/Phase4.png)
   

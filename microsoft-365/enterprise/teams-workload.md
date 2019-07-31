@@ -3,7 +3,7 @@ title: "Deploy Microsoft Teams for Microsoft 365 Enterprise"
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 09/16/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -40,7 +40,7 @@ These three groups ensure that your Teams deployment includes considerations tha
 A list of people that represent the business, technical, and end user aspects of your organization.
 
 ### Step 2: Determine and prioritize your Teams business scenarios
-Teams can be used for many different purposes. You need to figure out which purposes map to your business needs on the separate levels of your organization, your business groups, your departments, and individual working and project teams. Take a look at the [Microsoft 365 Productivity Library](https://www.microsoft.com/en-us/microsoft-365/success/?rtc=1) for examples to help you define Teams scenarios. 
+Teams can be used for many different purposes. You need to figure out which purposes map to your business needs on the separate levels of your organization, your business groups, your departments, and individual working and project teams. Take a look at the [Microsoft 365 Productivity Library](https://www.microsoft.com/microsoft-365/success/?rtc=1) for examples to help you define Teams scenarios. 
 
 You should target Teams to address fast-moving and highly collaborative teams that work closely together and require many more facilities than just email with Exchange Online can provide. Examples are live group chats with a recorded history and a common and easy-to-find place to store files and notes. 
 

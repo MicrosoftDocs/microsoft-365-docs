@@ -3,7 +3,7 @@ title: Deploy apps for Microsoft Managed Desktop devices
 description: Information for adding and deploying apps to Microsoft Managed Desktop devices.  
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation, apps, line-of-business apps, LOB apps
 ms.service: m365-md
-author: trudyha
+author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 ---

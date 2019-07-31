@@ -3,8 +3,8 @@ title: "Simulated enterprise base configuration for Microsoft 365"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/15/2019
-ms.audience: ITPro
+ms.date: 05/01/2019
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -21,7 +21,7 @@ description: Use this Test Lab Guide to create a simulated enterprise test envir
 
 This article provides you with step-by-step instructions to create a simplified environment for Microsoft 365 Enterprise that includes:
 
-- Office 365 E5 and EMS E5 trial or paid subscriptions.
+- A Microsoft 365 E5 trial or paid subscription.
 - A simplified organization intranet connected to the Internet, consisting of three virtual machines on an Azure virtual network (DC1, APP1, and CLIENT1).
  
 ![The simulated enterprise base configuration](media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase4.png)
@@ -118,9 +118,10 @@ New-AzNetworkSecurityGroup -Name Corpnet -ResourceGroupName $rgName -Location $l
 $vnet=Get-AzVirtualNetwork -ResourceGroupName $rgName -Name TestLab
 $nsg=Get-AzNetworkSecurityGroup -Name Corpnet -ResourceGroupName $rgName
 Set-AzVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name Corpnet -AddressPrefix "10.0.0.0/24" -NetworkSecurityGroup $nsg
+$vnet | Set-AzVirtualNetwork
 ```
 
-Next, you create the DC1 virtual machine and configure it as a domain controller for the **testlab.**\<your public domain> Windows Server AD domain and a DNS server for the virtual machines of the TestLab virtual network. For example, if your public domain name is **<span>contoso</span>.com**, the DC1 virtual machine will be a domain controller for the **<span>testlab</span>.contoso.com** domain.
+Next, you create the DC1 virtual machine and configure it as a domain controller for the **testlab.**\<your public domain> AD DS domain and a DNS server for the virtual machines of the TestLab virtual network. For example, if your public domain name is **<span>contoso</span>.com**, the DC1 virtual machine will be a domain controller for the **<span>testlab</span>.contoso.com** domain.
   
 To create an Azure virtual machine for DC1, fill in the name of your resource group and run these commands at the PowerShell command prompt on your local computer.
   
@@ -344,54 +345,63 @@ This is your current configuration.
 ![Step 3 of the simulated enterprise base configuration](media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase3.png)
 
 
-## Phase 2: Create your Office 365 E5 and EMS E5 subscriptions
+## Phase 2: Create your Microsoft 365 E5 subscriptions
 
-In this phase, you create new Office 365 E5 and EMS E5 subscriptions that use a new and common Azure AD tenant, one that is separate from your production subscription. You can do this in two ways:
+In this phase, you create a new Microsoft 365 E5 subscription that use a new Azure AD tenant, one that is separate from your production subscription. You can do this in two ways:
 
-- Use trial subscriptions of Office 365 E5 and EMS E5. 
+- Use a trial subscription of Microsoft 365 E5. 
 
-  The Office 365 E5 trial subscription is 30 days, which can be easily extended to 60 days. The EMS E5 trial subscription is 90 days. When the trial subscriptions expire, you must either convert them to paid subscriptions or create new trial subscriptions. Creating new trial subscriptions means you will leave your configuration, which could include complex scenarios, behind.  
-- Use a separate production subscription of Microsoft 365 Enterprise with a small number of licenses.
+  The Microsoft 365 E5 trial subscription is 30 days, which can be easily extended to 60 days. When the trial subscription expires, you must either convert it to a paid subscriptions or create a new trial subscription. Creating new trial subscriptions means you will leave your configuration, which could include complex scenarios, behind.  
+- Use a separate production subscription of Microsoft 365 E5 with a small number of licenses.
 
   This is an additional cost, but ensures that you have a working test environment to try features, configurations, and scenarios that does not expire. You can use the same test environment over the long term for proofs of concept, demonstration to peers and management, and application development and testing. This is the recommended method.
 
 ### Use trial subscriptions
 
-If you must use trial subscriptions, follow the steps in Phase 2 and Phase 3 of the [Office 365 dev/test environment](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment).
-  
-Next, you sign up for the EMS E5 trial subscription and add it to the same organization as your Office 365 E5 subscription.
-  
-First, add the EMS E5 trial subscription and assign an EMS license to your global administrator account.
-  
-1. With a private instance of an Internet browser, sign in to the Office portal with your global administrator account credentials. For help, see [Where to sign in to Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+First, follow the steps in Phase 2 and Phase 3 of the [Office 365 dev/test environment](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment) to create a lightweight Office 365 dev/test environment.
+
+>[!Note]
+>We have you create a trial subscription of Office 365 so that your dev/test environment has a separate Azure AD tenant from any paid subscriptions you currently have. This separation means you can add and remove users and groups in the test tenant without effecting your production subscriptions.
+>
+
+Next, add the Microsoft 365 E5 trial subscription and assign a Microsoft 365 license to your global administrator account.
+
+1. With a private instance of an Internet browser, sign in to the Microsoft 365 admin center at [http://admin.microsoft.com](http://admin.microsoft.com) with your global administrator account credentials.
     
-2. Click the **Admin** tile.
+2. On the **Microsoft 365 admin center** page, in the left navigation, click **Billing > Purchase services**.
     
-3. On the **Microsoft 365 admin center** tab in your browser, in the left navigation, click **Billing > Purchase services**.
-    
-4. On the **Purchase services** page, find the **Enterprise Mobility + Security E5** item. Hover your mouse pointer over it and click **Start free trial**.
-    
+3. On the **Purchase services** page, find the **Microsoft 365 E5** item. Hover your mouse pointer over it and click **Start free trial**.
+
+4. On the **Microsoft 365 E5 Trial** page, choose to receive a text or a call, enter your phone number, then click **Text me** or **Call me**.
+
 5. On the **Confirm your order** page, click **Try now**.
-    
+
 6. On the **Order receipt** page, click **Continue**.
-    
-7. On the **Office 365 Admin center** tab in your browser, in the left navigation, click **Users > Active users**.
-    
-8. Click your global administrator account, and then click **Edit** for **Product licenses**.
-    
-9. On the **Product licenses** pane, turn the product license for **Enterprise Mobility + Security E5** to **On**, click **Save,** and then click **Close** twice.
-    
+
+7. In the Microsoft 365 admin center, click **Active users**, and then your administrator account.
+
+8. Click **Edit** for **Product licenses**.
+
+9. Turn off the license for Office 365 Enterprise E5 and turn on the license for Microsoft 365 E5.
+
+10. Click **Save > Close > Close**.
+
+ Next, ***if you completed Phase 3 of the*** [Office 365 dev/test environment](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment), repeat steps 8 through 11 of the previous procedure for all of your other accounts (User 2, User 3, User 4, and User 5).
+  
 > [!NOTE]
->  For a permanent test environment, create a new paid subscription with a small number of licenses. 
+> The Microsoft 365 E5 trial subscription is 30 days. For a permanent test environment, convert this trial subscription to a paid subscription with a small number of licenses.
   
-Next, repeat steps 8 and 9 of the previous procedure for all of your other accounts (User 2, User 3, User 4, and User 5).
+Your test environment now has:
   
+- A Microsoft 365 E5 trial subscription.
+- All your appropriate user accounts (either just the global administrator or all five user accounts) are enabled to use Microsoft 365 E5.
+    
 ### Results
 
 Your test environment now has:
   
-- Office 365 E5 Enterprise and EMS E5 trial subscriptions sharing the same Azure AD tenant with your list of user accounts.
-- All your appropriate user accounts (either just the global administrator or all five user accounts) are enabled to use Office 365 E5 and EMS E5.
+- Microsoft 365 E5 trial subscription.
+- All your appropriate user accounts (either just the global administrator or all five user accounts) are enabled to use Microsoft 365 E5.
     
 This is your final configuration.
   

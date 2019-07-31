@@ -3,7 +3,7 @@ title: "Deploy Exchange Online for Microsoft 365 Enterprise"
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 06/28/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal

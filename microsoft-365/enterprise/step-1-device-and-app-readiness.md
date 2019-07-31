@@ -3,7 +3,7 @@ title: Step 1 - Device and App Readiness
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
-ms.date: 09/14/2018
+ms.date: 05/20/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -36,7 +36,7 @@ In the past, a major hurdle to upgrading the users’ desktops is application an
 
 That said, depending on the size and age of your organization, verifying application and hardware compatibility is likely still an essential initial step in our recommended 8-phase deployment process.
 
-In this article we take you through that first phase – Device and App Readiness – using Microsoft readiness assessment tools including the new Windows Analytics Upgrade Readiness tool, an intelligent cloud-based solution available with your Windows license.
+In this article we take you through that first phase – Device and App Readiness – using Microsoft readiness assessment tools including the Desktop Analytics, an intelligent cloud-based solution available with your Windows license.
 
 ## Windows 10 Compatibility Scan
 
@@ -48,13 +48,13 @@ A sample ScanOnly command line that completes the compatibility scan silently wo
 
 For more information on ScanOnly and other Windows setup command switches please review the [Windows Setup Commmand-line Options](https://aka.ms/setupswitches).
 
-## Recommended Tool: Windows Analytics Upgrade Readiness
+## Recommended Tool: Desktop Analytics
 
-Windows Analytics Upgrade Readiness offers many advantages over traditional desktop management systems and is our recommended tool. It is agentless and guides you through what needs to be done making use of application and driver compatibility information gathered through the upgrade of hundreds of millions of consumer PCs. This information gives you a detailed assessment, identifying compatibility issues that might block your upgrade, supported with links to suggested fixes known to Microsoft.
+Desktop Analytics offers many advantages over traditional desktop management systems and is our recommended tool. It is agentless and guides you through what needs to be done making use of application and driver compatibility information gathered through the upgrade of hundreds of millions of consumer PCs. This information gives you a detailed assessment, identifying compatibility issues that might block your upgrade, supported with links to suggested fixes known to Microsoft.
 
-To set up Window Analytics Upgrade Readiness you’ll first need to set up an Azure subscription and include an Azure Log Analytics workspace to that. Once you have the Windows Analytics Upgrade Readiness service running, you can then enroll any Internet-connected Windows 7 SP1 or newer device via Group Policy settings - it’s that simple. There are no agents to deploy, and Windows Analytics Upgrade Readiness’s visual workflow guides you from pilot to production deployment. If you wish, you can export data from Windows Analytics Upgrade Readiness to software deployment tools such as System Center Configuration Manager, to target PCs directly and build collections as they become ready for deployment.
+To set up Desktop Analytics you’ll first need to set up an Azure subscription and include an Azure Log Analytics workspace to that. Once you have the Desktop Analytics service running, you can then enroll any Internet-connected Windows 7 SP1 or newer device via Group Policy settings - it’s that simple. There are no agents to deploy, and Desktop Analytics’ visual workflow guides you from pilot to production deployment. If you wish, you can export data from Desktop Analytics to software deployment tools such as System Center Configuration Manager (Current Branch), to target PCs directly and build collections as they become ready for deployment.
 
-If you don’t currently have Windows Analytics set up for your environment or would like to sign up for a trial, go the [Windows Analytics page](http://www.aka.ms/windowsanalytics) and get started.
+If you don’t currently have Desktop Analytics set up for your environment or would like to sign up for a trial, go the Desktop Analytics page](http://www.aka.ms/desktopanalytics) and get started.
 
 ## Device and App Readiness Process
 
@@ -62,17 +62,15 @@ Device and App Readiness is comprised of four steps: 1. Inventory, 2. Prioritize
 
 ### 1\. Inventory
 
-Windows Analytics Upgrade Readiness service uses an agent-less process to inventory the computers, applications, and Office add-ins across your desktop estate.
+Desktop Analytics uses an agent-less process to inventory the computers and applications across your desktop estate. It also provides reports on highly visited Internet sites, apps, and Intranet locations to help you with compatibility testing later.
 
 ![](media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-3.png)
-
-It also provides reports on highly visited Internet sites, apps, and Intranet locations to help you with compatibility testing later.
 
 ![](media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-4.png)
 
 ### 2\. Prioritize
 
-With inventory taken, Windows Analytics Upgrade Readiness helps you to identify and prioritize the most common apps and hardware used in your organization, as well as what to focus on to unblock as many PCs as possible for deployment.
+With inventory taken, Desktop Analytics helps you to identify and prioritize the most common apps and hardware used in your organization, as well as what to focus on to unblock as many PCs as possible for deployment.
 
 ![](media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-5.png)
 
@@ -80,9 +78,9 @@ It also provides guidance to help you assess the updates necessary to resolve is
 
 ### 3\. Testing
 
-You will find that most of the applications, drivers, and add-ins inventoried will work as-is. For items Windows Analytics Upgrade Readiness assesses to have issues, it provides you with known information including where to find version updates to resolve compatibility problems. Rather than devoting time and resource resolving complex issues in non-critical, sparsely deployed applications and older devices, you may choose instead to work with users to retire and replace these items.
+You will find that most of the applications, drivers, and add-ins inventoried will work as-is. For items Desktop Analytics assesses to have issues, it provides you with known information including where to find version updates to resolve compatibility problems. Rather than devoting time and resource resolving complex issues in non-critical, sparsely deployed applications and older devices, you may choose instead to work with users to retire and replace these items.
 
-You can use Windows Analytics Upgrade Readiness to assess browser-based compatibility issues too, identifying websites and web apps accessed by users still using ActiveX controls, Browser Helper Objects, VBScript, or other legacy technology not supported by the Microsoft Edge browser. Your users will still need to use Internet Explorer 11 for these sites, and you can add them to the [Enterprise Mode site list](https://docs.microsoft.com/en-us/microsoft-edge/deploy/emie-to-improve-compatibility), using the Enterprise Mode Site List Manager.
+You can use Desktop Analytics to assess browser-based compatibility issues too, identifying websites and web apps accessed by users still using ActiveX controls, Browser Helper Objects, VBScript, or other legacy technology not supported by the Microsoft Edge browser. Your users will still need to use Internet Explorer 11 for these sites, and you can add them to the [Enterprise Mode site list](https://docs.microsoft.com/en-us/microsoft-edge/deploy/emie-to-improve-compatibility), using the Enterprise Mode Site List Manager.
 
 Additionally, to assist in your move to Office 365 ProPlus, you may wish to make use of the [Readiness Toolkit for Office](https://docs.microsoft.com/en-us/deployoffice/use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro) to test the compatibility of your add-ins and Microsoft Visual Basic for Applications (VBA) macros.
 
@@ -96,13 +94,20 @@ The final phase of device and app readiness is to ‘remediate’. Here you’ll
 
 As you work through the list remediating issues, you’ll see that more and more PCs become “Ready for Deployment”. This means that both the drivers and apps on the PCs are noted as compatible with the version of Windows 10 you are targeting for deployment.
 
+### Configuration Manager Software Inventory for Application Prioritization
+
+Configuration Manager software inventory is an alternative to using cloud-based analytics solutions for device and app readiness. You can use installation counts and drill into specific computers to help prioritize compatibility testing and validation and set application packages as compatible with Windows 10 via package settings. While this option does not offer the ability to compare known compatibility information with Microsoft’s analytics services, it can be an effective solution to target a smaller set of prioritized apps for manual testing. 
+
+For more information, see [Introduction to software inventory in System Center Configuration Manager](https://docs.microsoft.com/en-us/sccm/core/clients/manage/inventory/introduction-to-software-inventory) and setting platform requirements in application packages in [Packages and programs in System Center Configuration Manager](https://docs.microsoft.com/en-us/sccm/apps/deploy-use/packages-and-programs).
+
+
 ## Desktop App Assure
 
 Another tool to help with Windows 10 and Office 365 ProPlus app compatibility is the [Desktop App Assure](https://aka.ms/desktopappassure) program available through the FastTrack Center. Through Desktop App Assure in the event of valid application issues a Microsoft engineer with work with you at no additional cost to help remediate the application incompatibility.
 
-## Continued Use of Telemetry Tools
+## Continued Use of Diagnostic Data Tools
 
-Windows Analytics Upgrade Readiness isn’t just a tool to help you shift to Windows 10 and Office 365 ProPlus. Once you have desktops running on Windows 10 and Office 365 you can use it to help maintain your deployment and manage semi-annual Feature Updates so that you can stay current.
+Desktop Analytics isn’t just a tool to help you shift to Windows 10 and Office 365 ProPlus. Once you have desktops running on Windows 10 and Office 365 you can use it to help maintain your deployment and manage semi-annual Feature Updates so that you can stay current.
 
 ## Next Step 
 
