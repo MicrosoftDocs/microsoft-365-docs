@@ -82,7 +82,7 @@ In Dynamics 365 for Marketing, you have the following additional capabilities:
 
 ***Dynamics 365 Customer Service Insights*** provides a list of resources to help you [find customer data](https://docs.microsoft.com/dynamics365/ai/customer-service-insights/gdpr-discovery) in order to respond to GDPR requests from customers. 
 
-***Dynamics 365 Finance and Operations*** provide several ways for you to search for customer data. You as a Tenant Admin can perform the following actions to search for customer data:
+***Dynamics 365 for Finance and Operations*** provide several ways for you to search for customer data. You as a Tenant Admin can perform the following actions to search for customer data:
 
 - Organize your customer data in a way that serves the purpose of rapidly discovering personal data, see [how to classify data inventory](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/gdpr/gdpr-guide#detailed-inventory) for this purpose.
 - Use the [Person search report](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/gdpr/gdpr-guide#the-person-search-report) to find and collect personal data.
@@ -91,7 +91,7 @@ In Dynamics 365 for Marketing, you have the following additional capabilities:
 - Author a custom form that locates and exports personal data.
 - Author an external portal or website that allows an authenticated customer to see his or her personal data.
 
-***Dynamics for Business Central*** provides several ways for you to search for customer data. For details, see [Searching, filtering, and sorting data](https://docs.microsoft.com/dynamics-nav-app/ui-enter-criteria-filters).
+***Dynamics 365 Business Central*** provides several ways for you to search for customer data. For details, see [Searching, filtering, and sorting data](https://docs.microsoft.com/dynamics365/business-central/ui-enter-criteria-filters).
 
 ***Dynamics 365 for Talent*** provides advanced search and filter features to find specific personal data and Microsoft Office Export functionality to export or print that information to a .pdf using browser extensions.
 
@@ -184,7 +184,7 @@ Both Dynamics 365 for Finance and Operations and ***Dynamics 365 for Talent*** o
 
 ***Dynamics 365 Business Central*** offers the following features:
 
-- You can export customer data to an Excel file. In Excel, you can then edit the customer data to be included in the portability request, and save it in a commonly used, machine-readable format, such as .csv or .xml. For details, see [Exporting your business data to Excel](https://docs.microsoft.com/dynamics-nav-app/about-export-data).
+- You can export customer data to an Excel file. In Excel, you can then edit the customer data to be included in the portability request, and save it in a commonly used, machine-readable format, such as .csv or .xml. For details, see [Exporting your business data to Excel](https://docs.microsoft.com/dynamics365/business-central/about-export-data).
 - You can export customer data to an Excel file. In Excel, you can then edit the customer data to be included in the portability request, and save it in a commonly used, machine-readable format, such as .csv or .xml. For details, see [Exporting your business data to Excel](https://docs.microsoft.com/en-us/dynamics365/business-central/about-export-data).
 
 ### Microsoft Social Engagement
