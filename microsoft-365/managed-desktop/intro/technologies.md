@@ -20,7 +20,8 @@ Microsoft 365 Enterprise licensing is required for all Microsoft Managed Desktop
 The following are all components that are included in the required Enterprise licenses and how the service uses each component with Microsoft Managed Desktop devices. Specific roles and responsibilities for each area are detailed throughout the Microsoft Managed Desktop topic. 
 
 ## Office 365 E3
---- | --- 
+ |
+ --- | ---
 Office 365 Standard Suite (64bit) | The standard Office Suite of applications will be shipped with the device:	Word, Excel, PowerPoint, Outlook, Publisher, Access, Skype for Business, OneNote.<br><br>The 64bit Click to Run (C2R) full versions of Microsoft Project and Microsoft Visio are not included in the Office 365 Standard Suite.  However, since the installation of these applications are dependent on the standard Office Suite installation, Microsoft Managed Desktop has created default Intune deployments and Security groups that the customer will use to deploy these applications to licensed end users. For more information, see [Install Microsoft Project or Microsoft Visio on Microsoft Managed Desktop devices](../get-started/project-visio.md)  
 Store Apps |	Microsoft Sway and Power BI are not shipped with the device. These apps are available for download from Microsoft Store.
 Win32 Applications |	Teams is not shipped with the device, but is packaged and provided by Microsoft for Microsoft Managed Desktop devices. Azure Information Protection Client is not shipped with the device, but can be packaged for deployment by the customer. 
