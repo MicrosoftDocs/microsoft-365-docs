@@ -32,6 +32,7 @@ Listed below are the types of data transmitted from your tenant:
 - App deployment and reliability data
 - Update and security policy deployment data
 - Users assigned to devices
+- Security logs from your tenant related to the accounts used by Microsoft Managed Desktop to manage the service
 
 
 
@@ -55,8 +56,7 @@ Identity and access management protects corporate assets and business-critical d
 
 Service | Description
 --- | ---
-Biometric Authentication |	Windows Hello allows users to login using their face or a PIN, making passwords harder to forget or steal. For more information, see [Windows Hello.](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello)
-Multi-factor authentication	| Azure multi-factor authentication more tightly controls access to sensitive functions of the Microsoft Managed Desktop service by providing an additional level of authentication using a mobile phone, as well as self-service password reset. 
+Biometric Authentication |	Windows Hello allows users to login using their face or a PIN, making passwords harder to forget or steal. Customers are responsible for implementing the necessary pre-requisites for their on-premises Active Directory for use of this service in a hybrid configuration. For more information, see [Windows Hello.](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello) 
 Standard user permission |	To protect the system and make it more secure, the user will be assigned Standard User Permissions. This is assigned as part of the Windows Autopilot out-of-box experience.
 
 
