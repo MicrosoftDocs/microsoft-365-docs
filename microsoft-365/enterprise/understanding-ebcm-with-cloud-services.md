@@ -21,7 +21,11 @@ description: Understand how planning and implementing business continuity looks 
 
 As part of your organizations digital transformation, you need to revisit and update your disaster recovery and business continuity plans to account for the business process that depend on Microsoft 365 Cloud services. Microsoft 365 Cloud services, like Exchange Online, SharePoint Online and OneDrive for Business are designed and operated to be highly resilient. Even with this resilience, incidents do occur. When they do, your organization should be prepared and have a well defined business continuity strategy. 
 
-If you haven't updated your plans yet this series of topics helps you to prepare to fail from a known state, to a known state. This means developing a continuity strategy that integrates mitigations and contingency measures.  Defining procedures for operating your business under normal conditions is only partial preparedness. This document highlights key considerations that improve your continuity readiness in the event of a disruption in Microsoft cloud services, third-party provider services, or even your own infrastructure.  
+If you haven't updated your plans yet this series of topics helps you to plan your strategy to fail from a known state, to a known state. 
+
+LEFT OFF HERE
+
+This means developing a continuity strategy which integrates mitigations and contingency measures.  key considerations that improve your continuity readiness in the event of a disruption in Microsoft cloud services, third-party provider services, or even your own infrastructure.  
 
 - Microsofts role as a trusted partner.
 - What your organization is reponsible for .
