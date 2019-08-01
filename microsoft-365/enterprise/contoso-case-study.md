@@ -20,7 +20,7 @@ description: How a fictional but representative global organization has adopted 
 
 **Summary:** How a fictional but representative global organization has adopted Microsoft 365 Enterprise.
 
-Microsoft 365 Enterprise is Microsoft’s premier cloud offering that combines Office 365, Windows 10 Enterprise, and Enterprise Mobility + Security (EMS) into a complete, intelligent solution that that empowers everyone to be creative and work together, securely. 
+Microsoft 365 Enterprise is Microsoft’s premier cloud offering that combines local and cloud-based productivity apps and services with Windows 10 Enterprise and advanced security features into a complete, intelligent solution that that empowers everyone to be creative and work together, securely. 
 
 The Contoso Corporation is a fictional but representative global manufacturing conglomerate with its headquarters in Paris, France. Contoso has deployed Microsoft 365 Enterprise and addressed major design decisions and implementation details for networking, identity, Windows 10 Enterprise, Office 365 ProPlus, mobile device management, information protection, and security. 
 

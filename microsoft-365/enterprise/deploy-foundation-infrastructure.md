@@ -57,7 +57,7 @@ Here's the foundation infrastructure in the overall Microsoft 365 Enterprise dep
 
 The [Microsoft 365 Enterprise foundation infrastructure poster](http://aka.ms/m365efoundinfraposter) is a central location for you to view, for each phase:
 
-- The overall goal of the phase for both administrators and users
+- The overall goals of the phase for administrators and users
 - The services, features, and tools
 - The key design decisions for planning
 - The configuration results
