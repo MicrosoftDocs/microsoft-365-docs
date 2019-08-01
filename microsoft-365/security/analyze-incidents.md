@@ -31,7 +31,7 @@ When you analyze an incident, you'll see:
 - Tabs (alerts, machines, investigations, evidence, graph)
 
 ## Analyze incident details 
-Click an incident to see the **Incident pane**. Select **Open incident page** to see the incident details and related information (alerts, machines, users, mailboxes, investigations, evidence, graph). 
+Click an incident to see the **Incident pane**. Select **Open incident page** to see the incident details and related information (alerts, machines, users, mailboxes, investigations, evidence).
 
 ![Image of incident details](images/indicent-details.png)
 
@@ -57,7 +57,7 @@ You can also investigate the machines that are part of, or related to a given in
 ![Image of machine tab in incident](images/machine-incident.png)
 
 ### Users / Identities
-See users that have been identified to be part of, or related to a given incident. To do further investigative work, selecting the user will open the Microsoft Cloud Apps portal where you can take remediation actions.
+See users that have been identified to be part of, or related to a given incident. To do further investigative work, selecting the user will open the Microsoft Cloud App portal where you can take remediation actions.
 
 ![Image of user in incident](images/user-incident.png)
 
@@ -77,17 +77,7 @@ Each of the analyzed entities will be marked as infected, remediated, or suspici
 
 ![Image of the evidence tab in incidents](images/evidence-tab-incident.png)
 
-## Visualizing associated cybersecurity threats 
-Microsoft Threat Protection aggregates the threat information into an incident so you can see the patterns and correlations coming in from various data points. You can view such correlation through the incident graph.
 
-### Incident graph
-The **Graph** tells the story of the cybersecurity attack. For example, it shows you what was the entry point, which indicator of compromise or activity was observed on an entity.
-
-![Image of graph tab in incidents](images/graph-incidents.png)
-
-You can click the circles on the incident graph to view the details of the malicious files, associated file detections, how many instances has there been worldwide, whether it's been observed in your organization, if so, how many instances.
-
-![Image of selected entity in graph](images/selected-entity-incident.png)
 
 ## Related topics
 - [Incidents overview](incidents-overview.md)
