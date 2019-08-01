@@ -3,7 +3,7 @@ title: Microsoft 365 Enterprise overview
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/23/2019
+ms.date: 07/30/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -25,9 +25,9 @@ Microsoft 365 Enterprise consists of:
 
 |||
 |:-------|:-----|
-| Office 365 Enterprise | Includes both Office 365 ProPlus, the latest Office apps for your PC and Mac (such as Word, Excel, PowerPoint, Outlook, and others), and a full suite of online services for email, file storage and collaboration, meetings, and more. |
+| Local and cloud-based apps and productivity services | Includes both Office 365 ProPlus, the latest Office apps for your PC and Mac (such as Word, Excel, PowerPoint, Outlook, and others), and a full suite of online services for email, file storage and collaboration, meetings, and more. |
 | Windows 10 Enterprise | Addresses the needs of both large and midsize organizations, providing users with the most productive and secure version of Windows and IT professionals with comprehensive deployment, device, and app management. |
-| Enterprise Mobility + Security (EMS) | Includes Microsoft Intune, which is a cloud-based enterprise mobility management (EMM) service that helps enable your workforce to be productive while keeping your corporate data protected. |
+| Device management and advanced security services | Includes Microsoft Intune, which is a cloud-based enterprise mobility management (EMM) service that helps enable your workforce to be productive while keeping your corporate data protected. |
 |||
 
 ## Plans
@@ -36,10 +36,17 @@ Microsoft 365 Enterprise is available in three plans.
 
 |||
 |:-------|:-----|
-| E3 | Includes Office 365 Enterprise, Windows 10 Enterprise, and Enterprise Mobility + Security (EMS). |
-| E5 | Includes all of E3's capabilities plus advanced security, voice, and data analysis tools. |
-| F1 | Purpose-built to connect firstline workers to the tools and resources needed to do their best work. Firstline workers are the first in line to engage with your customers and represent your company’s brand and value, |
+| E3 | Access core products and features within Microsoft 365 to enhance workplace productivity and drive innovation, securely. |
+| E5 | Access the latest products and features within Microsoft 365, including advanced threat protection, security and collaboration tools.. Includes all of E3's capabilities plus advanced security, voice, and data analysis tools. |
+| F1 | Connect with your Firstline Workers through purpose-built tools and resources that allow them to do their best work. |
 |||
+
+If you have Microsoft 365 Enteprise E3, you can also get these [offerings](https://www.microsoft.com/microsoft-365/blog/2019/01/02/introducing-new-advanced-security-and-compliance-offerings-for-microsoft-365/):
+
+- Identity & Threat Protection
+- Information Protection & Compliance
+
+These offerings contain additional features that are included with Microsoft 365 Enterprise E5.
 
 For more information, see [Features and capabilities for each plan](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans).
 
@@ -47,7 +54,7 @@ For more information, see [Features and capabilities for each plan](https://www.
 
 The [Microsoft 365 Enterprise poster](http://aka.ms/m365eposter) is a central location for you to view:
 
-- The products and features of Microsoft 365 Enterprise and how they map to its value pillars
+- The benefits of Microsoft 365 Enterprise and how they map to its value pillars
 - Microsoft 365 Enterprise plans and which components they contain 
 - The key components of the Modern Workplace, which Microsoft 365 Enterprise enables
 - The key business value scenarios of Microsoft 365 Enterprise and which services and products make them happen
@@ -98,6 +105,7 @@ For more deployment information, see how:
 |||
 |:-------|:-----|
 ![](./media/m365-poster/m365-fundamentals.svg)| Get yourself trained and work towards a Microsoft 365 certification. <BR> Start with [Microsoft 365 Fundamentals](https://docs.microsoft.com/learn/paths/m365-fundamentals/).
+|||
 
 
 ## Next step
