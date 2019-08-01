@@ -86,7 +86,7 @@ Certificates | | - Create a support request 60 days prior to a certificate expir
 
 ## Device wipe with factory reset
 
-Managed Desktop Operations Team can do a factory reset on Microsoft Managed Desktop-managed devices that need to be reimaged. This is helpful if you need to give a device to a different employee, or if an employee leaves your company. 
+The Microsoft Managed Desktop Operations Team can perform a factory reset of devices enrolled in the service when required. This is helpful if you need to give a device to a different employee, or if an employee leaves your company. 
 
 There are a few requirements:
 
