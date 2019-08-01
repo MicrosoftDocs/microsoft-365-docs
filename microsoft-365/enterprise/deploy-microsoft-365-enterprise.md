@@ -18,7 +18,7 @@ description: Understand the resources you can use to deploy Microsoft 365 Enterp
 
 # Deploy Microsoft 365 Enterprise
 
-Microsoft 365 Enterprise is a combination of Office 365, Enterprise Mobility + Security (EMS), and Windows 10 Enterprise that: 
+Microsoft 365 Enterprise is a combination of local and cloud-based productivity apps and services with Windows 10 Enterprise that:  
 
 - Has intelligent security.
 - Is integrated for simplicity.

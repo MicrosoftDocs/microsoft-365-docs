@@ -54,10 +54,10 @@ For more information, see [Features and capabilities for each plan](https://www.
 
 The [Microsoft 365 Enterprise poster](http://aka.ms/m365eposter) is a central location for you to view:
 
-- The benefits of Microsoft 365 Enterprise and how they map to its value pillars
+- The benefits of Microsoft 365 Enterprise and how apps and services map to its value pillars
 - Microsoft 365 Enterprise plans and which components they contain 
 - The key components of the Modern Workplace, which Microsoft 365 Enterprise enables
-- The key business value scenarios of Microsoft 365 Enterprise and which services and products make them happen
+- The [Microsoft 365 Productivity Library](https://www.microsoft.com/microsoft-365/success/) and representative scenarios for some common organization departments
 - The adoption roadmap that highlights the Microsoft 365 Enterprise [Deployment Guide](deploy-microsoft-365-enterprise.md)
 
 ![](./media/m365-poster/m365e-poster.png)
