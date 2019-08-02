@@ -36,9 +36,9 @@ You can sign in to Microsoft Managed Desktop portal, or sign in to Intune and th
 1.	Sign in to [Microsoft Managed Desktop Admin portal](http://aka.ms/mmdportal). 
 2.	Under **Inventory**, select **Apps**.
 3.	In the Apps workload, select **Add**.
-4.	In **Add app**, select **Line-of-business app** or **Windows app (Win32) - preview**.
+4.	In **Add app**, select **Line-of-business app** or **Windows app (Win32)**.
     - If you selected **Line-of-business app**, see [Add a Windows line-of-business app to Microsoft Intune](https://docs.microsoft.com/intune/lob-apps-windows) for instruction on adding and configuring line-of-business apps.
-    - If you selected **Windows app (Win32) - preview**, see [Win32 app management](https://docs.microsoft.com/intune/apps-win32-app-management) for instruction on adding and configuring Windows apps.
+    - If you selected **Windows app (Win32)**, see [Win32 app management](https://docs.microsoft.com/intune/apps-win32-app-management) for instruction on adding and configuring Windows apps.
 
 <span id="msfb-apps">
 
