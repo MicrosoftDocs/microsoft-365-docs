@@ -102,7 +102,7 @@
 ### [MPAA](offering-mpaa.md)
 ### [NBB + FSMA (Belgium)](offering-nbb-fsma-belgium.md)
 ### [NEN-7510 (Netherlands)](offering-nen-7510-netherlands.md)
-### [NERC]()
+### [NERC](offering-nerc-cip.md)
 ### [NHS IG Toolkit (UK)](offering-nhs-ig-toolkit-uk.md)
 ### [OSFI (Canada)](offering-osfi-canada.md)
 ### [PCI DSS](offering-pci-dss.md)
