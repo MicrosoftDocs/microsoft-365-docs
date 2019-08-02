@@ -5,7 +5,6 @@ keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.date: 09/24/2018
 ms.collection: M365-modern-desktop
 ---
 
@@ -18,31 +17,28 @@ This topic lists the technologies and apps used in Microsoft Managed Desktop.
 
 Microsoft 365 Enterprise licensing is required for all Microsoft Managed Desktop users. For more information on licensing requirements for the service, see [Prerequisites for Microsoft Managed Desktop](../get-ready/prerequisites.md).
 
-The following are all components that are included in the required Enterprise licenses and how the service uses each component with Microsoft Managed Desktop devices. Specific roles and responsibilities for each area are detailed throughout the Microsoft Managed Desktop topic. 
+This topic summarizes the components included in the required Enterprise licenses, with a description of how the service uses each component with Microsoft Managed Desktop devices. Specific roles and responsibilities for each area are detailed throughout Microsoft Managed Desktop documentation. 
 
 ## Office 365 E3
  |
  --- | ---
-Office 365 Standard Suite (64bit)* | The standard Office Suite of applications will be shipped with the device:	Word, Excel, PowerPoint, Outlook, Publisher, Access, Skype for Business, OneNote.<br><br>The 64bit Click to Run (C2R) full versions of Microsoft Project and Microsoft Visio are not included in the Office 365 Standard Suite.  However, since the installation of these applications are dependent on the standard Office Suite installation, Microsoft Managed Desktop has created default Intune deployments and Security groups that the customer will use to deploy these applications to licensed end users.  
-Store Apps |	Microsoft Sway, Power BI Desktop are not shipped with device. These apps are available for download from Microsoft Store.
-Win32 Applications |	Power BI Pro, Azure Information Protection Client, and Microsoft Planner are not shipped with device and can be packaged for deployment by the customer. 
-Web Applications |	Yammer, Office in a browser, Delve, Flow, StaffHub, PowerApps are not shipped with the device. Users can access the web version of these applications with a browser.
-Skype for Business Online Cloud PBX | This feature is available via Office 365. Microsoft Managed Desktop will not configure any aspect of this service
+Office 365 standard suite(64-bit) | The standard Office Suite of applications will be shipped with the device: Word, Excel, PowerPoint, Outlook, Publisher, Access, Skype for Business, OneNote.<br><br>The 64-bit Click to Run (C2R) full versions of Microsoft Project and Microsoft Visio are not included in Office 365. However, since the installation of these applications depends on the standard Office suite installation, Microsoft Managed Desktop has created default Microsoft Intune deployments and security groups that you can then use to deploy these applications to licensed end users. For more information, see [Install Microsoft Project or Microsoft Visio on Microsoft Managed Desktop devices](../get-started/project-visio.md)  
+Store Apps |	Microsoft Sway and Power BI are not shipped with the device. These apps are available for download from Microsoft Store.
+Win32 Applications |	Teams is not shipped with the device, but is packaged and provided by Microsoft for Microsoft Managed Desktop devices. Azure Information Protection Client is not shipped with the device, but you can have this packaged for deployment. 
+Web Applications |	Yammer, Office in a browser, Delve, Flow, StaffHub, PowerApps, and Planner are not shipped with the device. Users can access the web version of these applications with a browser.
+
 
 ## Windows 10 Enterprise E5
 
  |
  --- | ---
-Credential Guard |	Microsoft will provide guidance and manage cloud aspects of this feature.
-Application Virtualization (App-V) |	Microsoft Managed Desktop does not support this type of deployment as it is not supported on Intune.
-User Experience Virtualization (UE-V) |	This is not used with Microsoft Managed Desktop managed devices.
-Managed User Experience	 | This is not used with Microsoft Managed Desktop managed devices. MDM is used as a solution for device management.
-Microsoft Defender Advanced Threat Protection |	This is used by Microsoft Managed Desktop to manage device security policies. 
+Application Virtualization (App-V) |	Microsoft Managed Desktop does not support this type of deployment as it is not supported by Microsoft Intune.
+Microsoft Defender Advanced Threat Protection |	 Microsoft Managed Desktop uses this to monitor device security. 
 
 ## Enterprise Mobility + Security E5
 
  |
  --- | ---
-Enterprise Mobility + Security E3<br>Azure Active Directory Premium P2 |	All aspects of the Enterprise Mobility + Security E3 and AADP may be used to manage MDM devices.
-Microsoft Cloud App Security |	This is an optional feature that customers can use with the Microsoft Managed Desktop service.
-Azure Information Protection P2	 |This is an optional feature that customers can use with the Microsoft Managed Desktop service.
+Enterprise Mobility + Security E3<br>Azure Active Directory Premium P2 |	You can use all features of Enterprise Mobility + Security E3 and Azure Active Directory Premium P2 to manage MDM devices.
+Microsoft Cloud App Security |	You can use this optional feature with Microsoft Managed Desktop.
+Azure Information Protection P2	 | You can use this optional feature with Microsoft Managed Desktop.
