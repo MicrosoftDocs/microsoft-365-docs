@@ -3,7 +3,7 @@ title: "Understanding Enterprise Business Continuity Management with cloud servi
 author: chrfox
 ms.author: chrfox
 manager: laurawi
-ms.date: 06/28/2019
+ms.date:
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
