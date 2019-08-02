@@ -1,5 +1,5 @@
 ---
-title: Compliance Offering - Reserve Bank of India (RBI) and Insurance Regulatory and Development Authority of India (IRDAI)
+title: Compliance Offering — Reserve Bank of India (RBI) and Insurance Regulatory and Development Authority of India (IRDAI)
 description: Microsoft has published guidance to help financial institutions in India with cloud adoption.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -23,7 +23,7 @@ When Indian financial institutions outsource business activities to the cloud, t
 The Microsoft checklist helps financial firms in India that are conducting due-diligence assessments of Microsoft business cloud services and includes:
 
 - An overview of the regulatory landscape for context.
-- A checklist that sets forth the issues to be addressed and maps Microsoft Azure, Microsoft Dynamics 365, and Microsoft Office 365 services against those regulatory obligations. The checklist can be used as a tool to measure compliance against a regulatory framework and provide an internal structure for documenting compliance, as well as help customers conduct their own risk assessments of Microsoft business cloud services.
+- A checklist that sets forth the issues to be addressed and maps Microsoft Azure, Microsoft Dynamics 365, and Microsoft Office 365 services against those regulatory obligations. The checklist can be used as a tool to measure compliance against a regulatory framework and provide an internal structure for documenting compliance, and help customers conduct their own risk assessments of Microsoft business cloud services.
 
 ## Microsoft in-scope cloud services
 
@@ -47,13 +47,13 @@ Use case overviews, tutorials, and other resources to build Azure solutions for 
 
 ## About RBI and IRDAI
 
-The [Reserve Bank of India](https://www.rbi.org.in/) (RBI), India's central banking institution, the [Insurance Regulatory and Development Authority of India](https://www.irdai.gov.in/Defaulthome.aspx?page=H1) (IRDAI), and the [Ministry of Electronics and Information Technology](https://meity.gov.in/content/information-technology-act) (MeitY) comprise three of the key financial industry regulators overseeing banks, insurance organizations, and market infrastructure institutions. Their directives include outsourcing and risk management guidelines as well as requirements for compliance with privacy rules governing sensitive data.
+The [Reserve Bank of India](https://www.rbi.org.in/) (RBI), India's central banking institution, the [Insurance Regulatory and Development Authority of India](https://www.irdai.gov.in/Defaulthome.aspx?page=H1) (IRDAI), and the [Ministry of Electronics and Information Technology](https://meity.gov.in/content/information-technology-act) (MeitY) comprise three of the key financial industry regulators overseeing banks, insurance organizations, and market infrastructure institutions. Their directives include outsourcing and risk management guidelines and requirements for compliance with privacy rules governing sensitive data.
 
 Outsourcing and risk management guidance includes:
 
   - [Guidelines on Managing Risk and Code of Conduct in Outsourcing of Financial Services by Banks](https://rbidocs.rbi.org.in/rdocs/notification/PDFs/73713.pdf) (RBI) address the risks that regulated banks would be exposed to while outsourcing financial services and help ensure that outsourcing does not impede the supervisory role of the RBI. The RBI does not require prior approval for banks seeking to outsource financial services; however, core banking functions, such as internal audit and compliance functions, should not be outsourced.
 
-  - [Guidelines on Information Security, Electronic Banking, Technology Risk Management and Cyber Frauds](https://rbidocs.rbi.org.in/rdocs/content/PDFs/GBS300411F.pdf) (RBI). Financial institutions must report outsourcing arrangements where the scale and nature of the activities are significant or require extensive data sharing with service providers outside of India. This guidance applies particularly if operational data is stored or processed outside India.
+  - [Guidelines on Information Security, Electronic Banking, Technology Risk Management, and Cyber Frauds](https://rbidocs.rbi.org.in/rdocs/content/PDFs/GBS300411F.pdf) (RBI). Financial institutions must report outsourcing arrangements where the scale and nature of the activities are significant or require extensive data sharing with service providers outside of India. This guidance applies particularly if operational data is stored or processed outside India.
 
   - [Outsourcing of Activities by Indian Insurers Regulation](https://www.irdai.gov.in/ADMINCMS/cms/frmGeneral_Layout.aspx?page=PageNo3149&flag=1) (IRDAI). Every year, insurance organizations are required to report outsourcing to IRDAI of certain support functions of core activities within 45 days of the close of the financial year. (Page 7 in the Microsoft [checklist](https://servicetrust.microsoft.com/Documents/TrustDocuments?command=Download&downloadType=Document&downloadId=26f4af15-2771-4cd4-a7c7-9328149f9453&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides) describes what constitutes “support functions of core activities.”
 

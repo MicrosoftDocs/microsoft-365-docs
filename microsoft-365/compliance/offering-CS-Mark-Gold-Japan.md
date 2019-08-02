@@ -1,5 +1,5 @@
 ---
-title: Compliance Offering - Cloud Security Mark Gold (CS Gold Mark)
+title: Compliance Offering — Cloud Security Mark Gold (CS Gold Mark)
 description: Microsoft received the CS Gold Mark in Japan for Azure (IaaS and PaaS) and Office 365 (SaaS).
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -16,7 +16,7 @@ ms.collection: M365-security-compliance
 
 ## CS Gold Mark Overview
 
-The Cloud Security Mark (CS Mark) is the first security standard for cloud service providers (CSPs) in Japan, and is based on ISO/IEC 27017, the international code of practice for information security controls. This in turn is based on ISO/IEC 27002 for cloud services, which addresses information security in cloud computing and the implementation of cloud-related information security controls.
+The Cloud Security Mark (CS Mark) is the first security standard for cloud service providers (CSPs) in Japan, and is based on ISO/IEC 27017, the international code of practice for information security controls. This in turn is based on ISO/IEC 27002 for cloud services, which address information security in cloud computing and the implementation of cloud-related information security controls.
 
 The CS Mark is accredited by the Japan Information Security Audit Association (JASA), a nonprofit organization established by the Ministry of the Interior and the Ministry of Economy, Trade, and Industry to strengthen information security in Japan. The CS Mark promotes the use of cloud services and provides:
 
@@ -32,7 +32,7 @@ After rigorous assessments by a JASA-certified auditor, Microsoft received the C
 
 Learn how to accelerate your CS Gold Mark deployment with our Azure Security and Compliance Blueprint.
 
-[Download the Microsoft Cloud - Azure and Office 365 CS Gold Mark Baseline Coverage User Guide](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=f49ee594-6c56-4b6f-93c1-646850798354&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)
+[Download the Microsoft Cloud — Azure and Office 365 CS Gold Mark Baseline Coverage User Guide](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=f49ee594-6c56-4b6f-93c1-646850798354&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)
 
 ## Audits, reports, and certificates
 
@@ -50,7 +50,7 @@ Accreditation is valid for three years, with a yearly surveillance audit to be c
 
 **Where do I start with my organization’s own compliance effort?**
 
-If your organization is using Azure or Office 365, you will need to ensure that the CS Mark addresses your own security requirements. If CS Mark does address your security requirements, then you can use the Microsoft accreditation and audit report as part of your own accreditation process. You are responsible for engaging an auditor to evaluate your implementation for compliance, and for the controls and processes within your own organization.
+If your organization is using Azure or Office 365, you need to ensure that the CS Mark addresses your own security requirements. If CS Mark does address your security requirements, then you can use the Microsoft accreditation and audit report as part of your own accreditation process. You are responsible for engaging an auditor to evaluate your implementation for compliance, and for the controls and processes within your own organization.
 
 ## Featured resources
 

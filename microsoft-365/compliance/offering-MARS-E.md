@@ -1,5 +1,5 @@
 ---
-title: Compliance Offering - Minimum Acceptable Risk Standards for Exchanges (MARS-E) 2.0 Framework
+title: Compliance Offering — Minimum Acceptable Risk Standards for Exchanges (MARS-E) 2.0 Framework
 description: Microsoft complies with the US Minimum Acceptable Risk Standards for Exchanges (MARS-E).
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -20,11 +20,11 @@ In 2012, the Center for Medicare and Medicaid Services (CMS) published the Minim
 
 Following the release of MARS-E, NIST released an update, Special Publication 800-53r4, to address growing challenges to online security, including application security; insider and advanced persistent threats; supply chain risks; and the trustworthiness, assurance, and resilience of systems of mobile and cloud computing. CMS then revised the MARS-E framework to align with the updated controls and parameters in NIST 800.53r4, publishing MARS-E 2.0 in 2015.
 
-These updates address the confidentiality, integrity, and availability in health exchanges of protected data, which includes personally identifiable information, protected health information, and federal tax information. The MARS-E 2.0 framework aims to secure this protected data and applies to all ACA administering entities, including exchanges or marketplaces—federal, state, state Medicaid, or Children’s Health Insurance Program (CHIP) agencies—and supporting contractors.
+These updates address the confidentiality, integrity, and availability in health exchanges of protected data, which includes personally identifiable information, protected health information, and federal tax information. The MARS-E 2.0 framework aims to secure this protected data and applies to all ACA administering entities, including exchanges or marketplaces — federal, state, state Medicaid, or Children’s Health Insurance Program (CHIP) agencies — and supporting contractors.
 
 ## Microsoft and MARS-E 2.0 Framework
 
-Currently, there is no formal authorization and accreditation process for MARS-E. However, Microsoft Azure platform services have undergone independent FedRAMP audits at the Moderate Impact Level and Azure Government at the High Impact Level, and are authorized according to FedRAMP standards. Although these standards do not specifically focus on MARS-E, the MARS-E control requirements and objectives are very closely aligned and serve to protect the confidentiality, integrity, and availability of data on Azure.
+Currently, there is no formal authorization and accreditation process for MARS-E. However, Microsoft Azure platform services have undergone independent FedRAMP audits at the Moderate Impact Level and Azure Government at the High Impact Level, and are authorized according to FedRAMP standards. Although these standards do not specifically focus on MARS-E, the MARS-E control requirements and objectives are closely aligned and serve to protect the confidentiality, integrity, and availability of data on Azure.
 
 Learn more about the benefits of MARS-E 2.0 Framework on the Microsoft Cloud
 
@@ -43,11 +43,11 @@ Microsoft business cloud services are monitored and assessed each year for the F
 
 **To whom does the standard apply?**
 
-MARS-E applies to all Affordable Care Act administering entities, including exchanges or marketplaces—federal, state, Medicaid, and CHIP agencies administering the Basic Health Program—as well as all their contractors and subcontractors.
+MARS-E applies to all Affordable Care Act administering entities, including exchanges or marketplaces — federal, state, Medicaid, and CHIP agencies administering the Basic Health Program — as well as all their contractors and subcontractors.
 
 **How does Microsoft demonstrate Azure and Azure Government compliance with this standard?**
 
-Using the formal audit reports prepared by third parties for FedRAMP authorizations, Microsoft is able to show how relevant controls noted within these reports demonstrate Azure capabilities in meeting MARS-E security and privacy control requirements. Audited controls implemented by Microsoft serve to protect the confidentiality, integrity, and availability of data stored on the Azure platform, and correspond to the applicable regulatory requirements defined in MARS-E that have been identified as the responsibility of Microsoft.
+Using the formal audit reports prepared by third parties for FedRAMP authorizations, Microsoft is able to show how relevant controls noted that within these reports demonstrate Azure capabilities in meeting MARS-E security and privacy control requirements. Audited controls implemented by Microsoft serve to protect the confidentiality, integrity, and availability of data stored on the Azure platform, and correspond to the applicable regulatory requirements defined in MARS-E that have been identified as the responsibility of Microsoft.
 
 **What are Microsoft's responsibilities for maintaining compliance with this standard?**
 

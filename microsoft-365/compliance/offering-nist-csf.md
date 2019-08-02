@@ -1,5 +1,5 @@
 ---
-title: Compliance Offering - National Institute of Standards and Technology (NIST) Cybersecurity Framework (CSF)
+title: Compliance Offering — National Institute of Standards and Technology (NIST) Cybersecurity Framework (CSF)
 description: Microsoft Cloud Services meet the National Institute of Standards and Technology (NIST) Cybersecurity Framework (CSF).
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -20,7 +20,7 @@ The National Institute of Standards and Technology (NIST) promotes and maintains
   
 The main priorities of the FICIC were to establish a set of standards and practices to help organizations manage cybersecurity risk, while enabling business efficiency. The NIST Framework addresses cybersecurity risk without imposing additional regulatory requirements for both government and private sector organizations.  
   
-The FICIC references globally-recognized standards including NIST SP 800-53 found in Appendix A of the NIST’s [2014 Framework for Improving Critical Infrastructure Cybersecurity](https://www.nist.gov/sites/default/files/documents/cyberframework/cybersecurity-framework-021214.pdf). Each control within the FICIC framework is mapped to corresponding NIST 800-53 controls within the FedRAMP Moderate Baseline.
+The FICIC references globally recognized standards including NIST SP 800-53 found in Appendix A of the NIST’s [2014 Framework for Improving Critical Infrastructure Cybersecurity](https://www.nist.gov/sites/default/files/documents/cyberframework/cybersecurity-framework-021214.pdf). Each control within the FICIC framework is mapped to corresponding NIST 800-53 controls within the FedRAMP Moderate Baseline.
 
 ## Microsoft and the NIST CSF
 
@@ -28,7 +28,7 @@ NIST Cybersecurity Framework (CSF) is a voluntary Framework that consists of sta
   
 Learn how to accelerate your NIST Cybersecurity Framework deployment with Compliance Manager and our Azure Security and Compliance Blueprint:
 
-- [Download the Azure Security and Compliance Blueprint - NIST CSF Risk Assessment Checklist](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=11e61716-11ab-4b11-9a9a-434b33a62ff9&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_NIST_CSF_Blueprint)
+- [Download the Azure Security and Compliance Blueprint — NIST CSF Risk Assessment Checklist](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=11e61716-11ab-4b11-9a9a-434b33a62ff9&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_NIST_CSF_Blueprint)
 - [Learn more about the NIST CSF assessment for Office 365 in Compliance Manager](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/New-NIST-CSF-and-CSA-CCM-assessments-available-in-Compliance/ba-p/218554)
 
 ## Audit cycle and certification
@@ -63,15 +63,15 @@ Yes, a third-party assessment organization has attested that the Azure Governmen
 
 **How do Microsoft Cloud Services demonstrate compliance with the framework?**
 
-Using the formal audit reports prepared by third parties for the FedRAMP accreditation, Microsoft can show how relevant controls noted within these reports demonstrate compliance with the NIST Framework for Improving Critical Infrastructure Cybersecurity. Audited controls implemented by Microsoft serve to ensure the confidentiality, integrity, and availability of data stored, processed, and transmitted by Azure, Office 365, and Dynamics 365 that have been identified as the responsibility of Microsoft.
+Using the formal audit reports prepared by third parties for the FedRAMP accreditation, Microsoft can show how relevant controls noted that within these reports demonstrate compliance with the NIST Framework for Improving Critical Infrastructure Cybersecurity. Audited controls implemented by Microsoft serve to ensure the confidentiality, integrity, and availability of data stored, processed, and transmitted by Azure, Office 365, and Dynamics 365 that have been identified as the responsibility of Microsoft.
 
 **What are Microsoft's responsibilities for maintaining compliance with this initiative?**
 
 Participation in the FICIC is voluntary. However, Microsoft ensures that Azure, Office 365, and Dynamics 365 meet the terms defined within the governing Online Services Terms and applicable service level agreements. These define Microsoft’s responsibility for implementing and maintaining controls adequate to secure the Azure platform and monitor the system.
 
-**Can I leverage Microsoft's compliance for my organization?**
+**Can I use Microsoft's compliance for my organization?**
 
-Yes. The independent third-party compliance reports to the FedRAMP standards attest to the effectiveness of the controls Microsoft has implemented to maintain the security and privacy of the Microsoft Cloud Services. Microsoft customers may leverage the audited controls described in these related reports as part of their own FedRAMP and NIST FICIC’s risk analysis and qualification efforts.
+Yes. The independent third-party compliance reports to the FedRAMP standards attest to the effectiveness of the controls Microsoft has implemented to maintain the security and privacy of the Microsoft Cloud Services. Microsoft customers may use the audited controls described in these related reports as part of their own FedRAMP and NIST FICIC’s risk analysis and qualification efforts.
 
 **Which organizations are deemed by the United States Government to be critical infrastructure?**
 

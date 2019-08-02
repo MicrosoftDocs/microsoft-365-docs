@@ -1,5 +1,5 @@
 ---
-title: Compliance Offering - Office of the Superintendent of Financial Institutions (OSFI) Canada
+title: Compliance Offering — Office of the Superintendent of Financial Institutions (OSFI) Canada
 description: Microsoft guidance to help financial institutions in Canada with cloud adoption.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -31,7 +31,7 @@ When Canadian financial institutions outsource business activities, they must co
 The Microsoft checklist helps Canadian financial firms conducting due-diligence assessments of Microsoft business cloud services and includes:
 
 - An overview of the regulatory landscape for context.
-- A checklist that sets forth the issues to be addressed and maps Microsoft Azure, Microsoft Dynamics 365, and Microsoft 365 services against those regulatory obligations. The checklist can be used as a tool to measure compliance against a regulatory framework and provide an internal structure for documenting compliance, as well as help customers conduct their own risk assessments of Microsoft business cloud services.
+- A checklist that sets forth the issues to be addressed and maps Microsoft Azure, Microsoft Dynamics 365, and Microsoft 365 services against those regulatory obligations. The checklist can be used as a tool to measure compliance against a regulatory framework and provide an internal structure for documenting compliance, and help customers conduct their own risk assessments of Microsoft business cloud services.
 
 ## How to implement
 

@@ -1,5 +1,5 @@
 ---
-title: Compliance Offering - Baseline Informatiebeveiliging Rijksdienst standard (BIR 2012)
+title: Compliance Offering — Baseline Informatiebeveiliging Rijksdienst standard (BIR 2012)
 description: Microsoft cloud services help public sector agencies in the Netherlands comply with the BIR 2012 standard.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -26,7 +26,7 @@ While Microsoft is not subject to BIR 2012 compliance, customers from the govern
 
 Learn how to accelerate your BIR 2012 deployment with our Azure Security and Compliance Blueprint.
 
-[Download the Microsoft Cloud - Azure and Office 365 BIR-2012 Baseline Coverage User Guide](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=f49ee594-6c56-4b6f-93c1-646850798354&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)
+[Download the Microsoft Cloud — Azure and Office 365 BIR-2012 Baseline Coverage User Guide](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=f49ee594-6c56-4b6f-93c1-646850798354&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)
 
 ## Audits, reports, and certificates
 
@@ -49,7 +49,7 @@ The responsibility for BIR compliance is applicable to the government sector. It
 
 Demonstrating BIR compliance is the responsibility of the customer. When using a cloud services vendor, customers typically demand assurances from the vendor, and add their own (additional) technology and organizational decisions, choices, and processes. This results in an overall assessment by the customer on its BIR compliance, which can be submitted for review or certification to a third-party auditor. The BIR coverage report provides insight into what BIR controls are covered by Microsoft Online Services, but as such does not cover end-to-end compliance.
 
-**The report does not show 100% coverage; is BIR 2012 compliance not feasible?**
+**The report does not show 100% coverage. Is BIR 2012 compliance not feasible?**
 
 Microsoft Online Services provides many controls that help organizations within the Netherlands with their BIR compliance needs. However, an organization needs to complement those vendor assurances with their own implementation choices, additional technology controls, and administrative processes. The report shows already over 91% direct coverage of the full list of applicable controls. For the remaining controls, Microsoft provides guidance in the report on how compliance with those controls can be demonstrated.
 

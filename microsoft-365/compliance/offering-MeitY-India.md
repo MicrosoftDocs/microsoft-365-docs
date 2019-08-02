@@ -1,5 +1,5 @@
 ---
-title: Compliance Offering - Ministry of Electronics and Information Technology (MeitY)
+title: Compliance Offering — Ministry of Electronics and Information Technology (MeitY)
 description: Microsoft was given full accreditation by the Ministry of Electronics and Information Technology in India.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -30,7 +30,7 @@ In November 2017, Microsoft became one of the first global cloud service provide
 - Government Virtual Private Cloud, which must be logically separate from the public and other offerings of the cloud service provider
 - Government Community Cloud, for cloud services that are dedicated to government departments and physically separate from the public and other offerings of the cloud service provider
 
-The MeitY accreditation of Microsoft was the result of a rigorous audit conducted by the Standardisation Testing and Quality Certification (STQC) Directorate, a government organization that provides quality assurance services, using an evaluation framework based on the work of the MeghRaj Cloud Initiative. Through Microsoft Azure, public sector organizations can now draw on a wide range of deployment models and service offerings, including infrastructure as a service (IaaS), platform as a service (PaaS), disaster recovery, DevOps, and managed backup.
+The MeitY accreditation of Microsoft was the result of a rigorous audit conducted by the Standardization Testing and Quality Certification (STQC) Directorate, a government organization that provides quality assurance services, using an evaluation framework based on the work of the MeghRaj Cloud Initiative. Through Microsoft Azure, public sector organizations can now draw on a wide range of deployment models and service offerings, including infrastructure as a service (IaaS), platform as a service (PaaS), disaster recovery, DevOps, and managed backup.
 
 ## Audits, reports, and certificates
 

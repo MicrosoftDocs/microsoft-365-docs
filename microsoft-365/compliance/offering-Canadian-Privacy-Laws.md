@@ -1,5 +1,5 @@
 ---
-title: Compliance Offering - Canadian Privacy Laws
+title: Compliance Offering — Canadian Privacy Laws
 description: Azure and Intune can help customers meet their obligations under Canadian privacy laws.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -45,7 +45,7 @@ Azure provides customers with strong data security, both by default and as custo
 
 Canadian privacy laws were established to protect the privacy of individuals and give them the right to access information gathered about them. The [Office of the Privacy Commissioner of Canada](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/02_05_d_15/) (OPCC) oversees compliance with these laws.
 
-The [Privacy Act](https://privacy.microsoft.com/en-US/#heading-0-0-2-1) regulates how federal government organizations collect, use, and disclose personally identifiable information including that of federal employees. The [Personal Information Protection and Electronic Documents Act](https://www.microsoft.com/en-us/download/details.aspx) (PIPEDA) governs the same for the business activities of commercial for-profit enterprises and for the employees of federally-regulated businesses like banks, airlines, and telecommunications companies.
+The [Privacy Act](https://privacy.microsoft.com/en-US/#heading-0-0-2-1) regulates how federal government organizations collect, use, and disclose personally identifiable information including that of federal employees. The [Personal Information Protection and Electronic Documents Act](https://www.microsoft.com/en-us/download/details.aspx) (PIPEDA) governs the same for the business activities of commercial for-profit enterprises and for the employees of federally regulated businesses like banks, airlines, and telecommunications companies.
 
 PIPEDA is founded on 10 [fair information principles](https://servicetrust.microsoft.com/Documents/TrustDocuments) that businesses must follow if they are to comply with it. For example, the basic principle of consent gives rise to the PIPEDA requirement that organizations must obtain an individual's permission to collect or use their personal information. Individuals have the right both to access that personal information and challenge its accuracy (grounded in the principle of “individual access”). The principle of “identifying purposes” leads to the rule that personal information can be used only for the purposes agreed upon.
 
@@ -55,21 +55,21 @@ In general, PIPEDA applies to commercial activities in all provinces and territo
 
 **Can customers using Azure and Intune comply with PIPEDA and other Canadian privacy laws?**
 
-Microsoft agrees in its [Online Services Terms](https://servicetrust.microsoft.com/Documents/TrustDocuments?Mode=3&DocumentTypeId=31) that it will comply with laws and regulations that apply to its provision of Microsoft Online Services. However, organizations that leverage Microsoft business cloud services always remain accountable for adherence to Canadian privacy legislation—the laws are clear that organizations are ultimately responsible for ensuring that any sensitive data they gather is fairly handled and adequately protected.  
+Microsoft agrees in its [Online Services Terms](https://servicetrust.microsoft.com/Documents/TrustDocuments?Mode=3&DocumentTypeId=31) that it complies with laws and regulations that apply to its provision of Microsoft Online Services. However, organizations that use Microsoft business cloud services always remain accountable for adherence to Canadian privacy legislation — the laws are clear that organizations are ultimately responsible for ensuring that any sensitive data they gather is fairly handled and adequately protected.  
 
-As a result, privacy is a shared responsibility between Microsoft as a cloud service provider and the customer using cloud services. At a high level, this means that customers must ensure that their solutions implemented within Microsoft environments address the 10 principles codified in PIPEDA—for example, getting the consent of individuals to collect their data and safeguarding it with adequate security measures.
+As a result, privacy is a shared responsibility between Microsoft as a cloud service provider and the customer using cloud services. At a high level, this means that customers must ensure that their solutions implemented within Microsoft environments address the 10 principles codified in PIPEDA — for example, getting the consent of individuals to collect their data and safeguarding it with adequate security measures.
 
 **What third-party audits validate the security control environment of Azure and Intune?**
 
 Azure and Intune are built on such established security standards as [ISO/IEC 27001](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/02_05_d_15/) and the [SOC framework](https://privacy.microsoft.com/en-us/privacystatement). Their compliance with these standards is confirmed by third-party auditors who provide independent validation that security controls are in place and operating effectively.  
 
-Each audit results in the generation of an audit report, which Microsoft makes available either on the [Microsoft Service Trust Portal](https://docs.microsoft.com/en-us/azure/security/azure-protection-of-customer-data) or at another location. Microsoft will provide audit reports to customers who request them, subject to non-disclosure and distribution limitations of Microsoft and the auditor.
+Each audit results in the generation of an audit report, which Microsoft makes available either on the [Microsoft Service Trust Portal](https://docs.microsoft.com/en-us/azure/security/azure-protection-of-customer-data) or at another location. Microsoft provides audit reports to customers who request them, subject to non-disclosure and distribution limitations of Microsoft and the auditor.
 
 **Will customers know the physical location where their data is stored?**
 
 Canadian customers of Microsoft business cloud services will [know where their customer data is stored](https://www.priv.gc.ca/en/). Furthermore, no matter where customer data is located, Microsoft does not control or limit the locations from which customers or their end users may access their data.  
 
-PIPEDA doesn’t require Canadian businesses to keep personal information in Canada. However, depending on the province where organizations do business, or their industry, they could be required to keep certain types of data within Canadian borders. To help address these types of requirements, Microsoft has established two datacenters in Canada that support Azure and Intune—in Toronto and Quebec City—and verifies that each datacenter meets stringent security requirements.
+PIPEDA doesn’t require Canadian businesses to keep personal information in Canada. However, depending on the province where organizations do business, or their industry, they could be required to keep certain types of data within Canadian borders. To help address these types of requirements, Microsoft has established two datacenters in Canada that support Azure and Intune — in Toronto and Quebec City — and verifies that each datacenter meets stringent security requirements.
 
 ## Additional resources
 

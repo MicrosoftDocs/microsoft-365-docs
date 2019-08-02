@@ -1,5 +1,5 @@
 ---
-title: Compliance Offering - Financial Industry Regulatory Authority (FINRA) Rule 4511(c) United States
+title: Compliance Offering — Financial Industry Regulatory Authority (FINRA) Rule 4511(c) United States
 description: An independent assessment firm validated that Azure and Office 365 can help financial firms meet FINRA Rule 4511 records retention and immutable storage requirements.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -20,7 +20,7 @@ The [Financial Industry Regulatory Authority](https://docs.microsoft.com/office3
 
 In 2011, the US Security and Exchange Commission (SEC) approved the FINRA adoption of SEC rules governing the retention of books and records on electronic storage media. [FINRA Rule 4511(c)](https://techcommunity.microsoft.com/t5/Financial-Services-Blog/bg-p/FinancialServicesBlog) specifies that “all books and records required to be made pursuant to the FINRA rules shall be preserved in a format and media that complies with SEA (Securities Exchange Act) Rule 17a-4.”
 
-Additionally, FINRA Rule 4511(c) requires firms to preserve for a period of at least six years those books and records for which there is no specified retention period under applicable FINRA or SEA rules. Effectively, if the books and records pertain to an account, the retention period is mandated to be six years following account closure; otherwise, the retention period is for six years after such books and records are created.
+Additionally, FINRA Rule 4511(c) requires firms to preserve for a period of at least six years those books and records for which there is no specified retention period under applicable FINRA or SEA rules. Effectively, if the books and records pertain to an account, the retention period is mandated to be six years following account closure. Otherwise, the retention period is for six years after such books and records are created.
 
 ## Microsoft and FINRA Rule 4511(c)
 

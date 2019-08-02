@@ -1,5 +1,5 @@
 ---
-title: Compliance Offering - Food and Drug Administration CFR Title 21 Part 11
+title: Compliance Offering — Food and Drug Administration CFR Title 21 Part 11
 description: Microsoft helps customers comply with these US Food and Drug Administration regulations.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -20,7 +20,7 @@ The Code of Federal Regulations (CFR) contains the rules and regulations for exe
 
 [FDA CFR Title 21](http://aka.ms/FDA-CFR) regulates food and drugs manufactured or consumed in the United States, under the jurisdiction of the Food and Drug Administration (FDA), the Drug Enforcement Administration, and the Office of National Drug Control Policy. The regulations outlined in CFR Title 21 Part 11 set the ground rules for the technology systems that manage information used by organizations subject to FDA oversight. Any technology system that governs such GxP processes as Good Laboratory Practices (GLP), Good Clinical Practices (GCP), and Good Manufacturing Practices (GMP) also requires validation of its adherence to GxP.
 
-CFR Title 21 Part 11 sets requirements to ensure that electronic records and signatures are trustworthy, reliable, and generally equivalent substitutes for paper records and handwritten signatures. It also offers guidelines to improve the security of computer systems in FDA-regulated industries. Subject companies must prove that their processes and products work as they are designed to, and if these change they must revalidate that proof. The best practices guidelines cover:
+CFR Title 21 Part 11 sets requirements to ensure that electronic records and signatures are trustworthy, reliable, and generally equivalent substitutes for paper records and handwritten signatures. It also offers guidelines to improve the security of computer systems in FDA-regulated industries. Subject companies must prove that their processes and products work as they are designed to, and if these process and products change, they must revalidate that proof. The best practices guidelines cover:
 
 - Standard operating procedures and controls that support electronic records and signatures such as data backup, security, and computer system validation.
 - Features that ensure that the computer system is secure, contains audit trails for data values, and ensures the integrity of electronic signatures.
@@ -30,7 +30,7 @@ CFR Title 21 Part 11 sets requirements to ensure that electronic records and sig
 
 Microsoft enterprise cloud services undergo regular independent third-party SOC 1 Type 2 and SOC 2 Type 2 audits and are certified according to ISO/IEC 27001 and ISO/IEC 27018 standards.
 
-Although these regular audits and certifications do not specifically focus on FDA regulatory compliance, their purpose and objectives are similar in nature to those of CFR Title 21 Part 11, and serve to help ensure the confidentiality, integrity, and availability of data stored in Microsoft cloud services. Our qualification approach is also based on industry best practices, including the International Society for Pharmaceutical Engineering (ISPE) GAMP series of Good Practices Guides and the Pharmaceutical Inspection Co-operation Scheme (PIC/S) Good Practices for Computerized Systems in Regulated GxP Environments.
+Although these regular audits and certifications do not specifically focus on FDA regulatory compliance, their purpose and objectives are similar in nature to those of CFR Title 21 Part 11, and serve to help ensure the confidentiality, integrity, and availability of data stored in Microsoft cloud services. Our qualification approach is also based on industry best practices, including the International Society for Pharmaceutical Engineering (ISPE) GAMP series of Good Practices Guides and the Pharmaceutical Inspection Cooperation Scheme (PIC/S) Good Practices for Computerized Systems in Regulated GxP Environments.
 
 Customers can request access to the compliance reports, subject to nondisclosure agreement terms and conditions, through their Microsoft account representative, or through the [Service Trust Portal](http://aka.ms/stphelp). In addition, qualification guidelines for Microsoft Azure and Microsoft Office 365 provide a detailed explanation of how Microsoft audit controls correspond to the requirements of CFR Title 21 Part 11, guidance for implementing an FDA qualification strategy, and a description of areas of shared responsibility.
 
@@ -44,7 +44,7 @@ The audit reports for SOC 1 and SOC 2 Type 2, ISO/IEC 27001 and ISO/IEC 27018 st
 
 ## Microsoft in-scope cloud services
 
-Although there is no certification for complying with CFR Title 21 Part 11, the following Microsoft enterprise cloud services have undergone independent, third-party audits which may help customers in their compliance efforts. These services include:
+Although there is no certification for complying with CFR Title 21 Part 11, the following Microsoft enterprise cloud services have undergone independent, third-party audits, which may help customers in their compliance efforts. These services include:
 
 - Azure: Cloud Services, Storage, Traffic Manager, Virtual Machines, and Virtual Network
 - Intune
@@ -69,7 +69,7 @@ The [Service Trust Portal](http://aka.ms/stphelp) provides independently audited
 
 **Can I use Microsoft’s compliance in the certification process for my organization?**
 
-Yes. The independent third-party compliance reports of the IEC/ISO 27001, ISO/IEC 27018, SOC 1, and SOC 2 standards attest to the effectiveness of Microsoft controls. Microsoft enterprise cloud customers may leverage the audited controls described in these related reports as part of their own CFR Title 21 Part 11 risk analysis and qualification efforts. Customers who build and deploy applications subject to FDA regulation are responsible for ensuring that their applications meet FDA requirements.
+Yes. The independent third-party compliance reports of the IEC/ISO 27001, ISO/IEC 27018, SOC 1, and SOC 2 standards attest to the effectiveness of Microsoft controls. Microsoft enterprise cloud customers may use the audited controls described in these related reports as part of their own CFR Title 21 Part 11 risk analysis and qualification efforts. Customers who build and deploy applications subject to FDA regulation are responsible for ensuring that their applications meet FDA requirements.
 
 **What are Microsoft’s responsibilities for maintaining compliance with this standard?**
 

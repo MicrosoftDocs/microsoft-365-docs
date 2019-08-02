@@ -1,5 +1,5 @@
 ---
-title: Compliance Offering - Financial Market Supervisory Authority (FINMA) Switzerland
+title: Compliance Offering — Financial Market Supervisory Authority (FINMA) Switzerland
 description: Microsoft guidance to help financial institutions in Switzerland with cloud adoption.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -29,7 +29,7 @@ When Swiss financial institutions outsource business activities, they must compl
 The Microsoft checklist helps Swiss financial firms conducting due-diligence assessments of Microsoft business cloud services and includes:
 
 - An overview of the regulatory landscape for context.
-- A checklist that sets forth the issues to be addressed and maps Microsoft Azure, Microsoft Dynamics 365, and Microsoft 365 services against those regulatory obligations. The checklist can be used as a tool to measure compliance against a regulatory framework and provide an internal structure for documenting compliance, as well as help customers conduct their own risk assessments of Microsoft business cloud services.
+- A checklist that sets forth the issues to be addressed and maps Microsoft Azure, Microsoft Dynamics 365, and Microsoft 365 services against those regulatory obligations. The checklist can be used as a tool to measure compliance against a regulatory framework and provide an internal structure for documenting compliance, and help customers conduct their own risk assessments of Microsoft business cloud services.
 
 ## How to implement
 
@@ -56,7 +56,7 @@ No. The use of public cloud computing is permitted without an approval by the FI
 
 **Are there any mandatory terms that must be included in the contract with the cloud services provider?**
 
-Yes. In Part 2 of the Compliance Checklist, we have mapped these terms against the sections in the Microsoft contractual documents where you will find them addressed. In addition, the Swiss Federal Data Protection and Information Commissioner (FDPIC) supplies a sample contract for transborder outsourcing of data processing. This is the same as the Standard Contractual Clauses (also known as EU Model Clauses) under the [Microsoft Online Services Terms](https://aka.ms/Online-Services-Terms).
+Yes. In Part 2 of the Compliance Checklist, we have mapped these terms against the sections in the Microsoft contractual documents where you find them addressed. In addition, the Swiss Federal Data Protection and Information Commissioner (FDPIC) supplies a sample contract for transborder outsourcing of data processing. This is the same as the Standard Contractual Clauses (also known as EU Model Clauses) under the [Microsoft Online Services Terms](https://aka.ms/Online-Services-Terms).
 
 ## Featured resources
 

@@ -1,5 +1,5 @@
 ---
-title: Compliance Offering - Personal Data Protection Act (PDPA) Argentina
+title: Compliance Offering — Personal Data Protection Act (PDPA) Argentina
 description: Microsoft business cloud services comply with PDPA standards for protecting the privacy of personal information.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -16,11 +16,11 @@ ms.collection: M365-security-compliance
 
 ## Microsoft and the PDPA
 
-Microsoft contractually commits through the [Microsoft Online Services Terms](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31) that our in-scope business cloud services have implemented technical and organizational security safeguards that can help our customers comply with the Argentine Personal Data Protection Act (PDPA) 25.326. Microsoft also makes a data-transfer agreement available to assist in compliance with Provision 60-E/2016, which regulates the cross-border transfer of personal data. This means that Microsoft customers can use Microsoft Azure, Microsoft Dynamics 365, and Microsoft 365 in a manner that complies with the PDPA in Argentina.
+Microsoft contractually commits through the [Microsoft Online Services Terms](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31) that our in-scope business cloud services have implemented technical and organizational security safeguards that can help our customers comply with the Argentine Personal Data Protection Act (PDPA) 25.326. Microsoft also makes a data-transfer agreement available to help with compliance with Provision 60-E/2016, which regulates the cross-border transfer of personal data. This means that Microsoft customers can use Microsoft Azure, Microsoft Dynamics 365, and Microsoft 365 in a manner that complies with the PDPA in Argentina.
 
 The technical and organizational security measures implemented in the business cloud services would also support other rules in the PDPA such as the prohibition of any secondary use of a data subject’s personal data and the prohibition against the transfer of personal data to countries that do not offer an adequate level of protection.
 
-The Microsoft data-transfer agreement is an amendment (Amendment ID M314) to the data processing terms in our Online Services Terms. It adds important commitments, including that Microsoft will notify the customer of any legally binding request to disclose personal data; will submit its data processing facilities to audit at the customer’s request either by the customer or an independent third party; and will get prior written consent for the use of subcontractors.
+The Microsoft data-transfer agreement is an amendment (Amendment ID M314) to the data processing terms in our Online Services Terms. It adds important commitments, including that Microsoft notifies the customer of any legally binding request to disclose personal data; will submit its data processing facilities to audit at the customer’s request either by the customer or an independent third party; and will get prior written consent for the use of subcontractors.
 
 ## Microsoft in-scope cloud services
 
@@ -52,7 +52,7 @@ In 2016, the AAIP issued a new regulation, [Provision 60-E/2016](http://servicio
 
 **How has the GDPR changed the Personal Data Protection Act?**
 
-In late 2018, Argentina has not yet enacted GDPR-related regulations, but it has drafted a new data protection bill— already submitted to Congress by the Executive Power and under revision by the House of Representatives—to bring its data protection law into alignment with the GDPR. It addresses such differences as the definition of data subjects and concerns over the cross-border transfer of personal information.
+In late 2018, Argentina has not yet enacted GDPR-related regulations, but it has drafted a new data protection bill — already submitted to Congress by the Executive Power and under revision by the House of Representatives — to bring its data protection law into alignment with the GDPR. It addresses such differences as the definition of data subjects and concerns over the cross-border transfer of personal information.
 
 ## Additional resources
 

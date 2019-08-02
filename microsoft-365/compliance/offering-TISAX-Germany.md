@@ -1,5 +1,5 @@
 ---
-title: Compliance Offering - Trusted Information Security Assessment Exchange (TISAX) Germany
+title: Compliance Offering — Trusted Information Security Assessment Exchange (TISAX) Germany
 description: An independent, ENX-accredited auditor assessed Microsoft cloud datacenters against TISAX security requirements.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -16,13 +16,13 @@ ms.collection: M365-security-compliance
 
 ## Microsoft and TISAX
 
-European automotive companies rely on trust to develop, build and operate new cars. They use the Trusted Information Security Assessment Exchange (TISAX) to provide a common information security assessment for internal analysis, an evaluation of suppliers, and as an information exchange mechanism. An independent ENX-accredited auditor, PwC, completed the TISAX assessment of Microsoft datacenters and operations centers against TISAX specifications and IT security requirements.
+European automotive companies rely on trust to develop, build, and operate new cars. They use the Trusted Information Security Assessment Exchange (TISAX) to provide a common information security assessment for internal analysis, an evaluation of suppliers, and as an information exchange mechanism. An independent ENX-accredited auditor, PwC, completed the TISAX assessment of Microsoft datacenters and operations centers against TISAX specifications and IT security requirements.
 
-Automotive companies around the world can now evaluate the TISAX assessment of Microsoft cloud services to create cloud solutions that integrate strong information security and data protection. Companies can leverage the TISAX assessment of Microsoft cloud services to confidently exchange data with suppliers who use workstations based on Microsoft 365 cloud services.
+Automotive companies around the world can now evaluate the TISAX assessment of Microsoft cloud services to create cloud solutions that integrate strong information security and data protection. Companies can use the TISAX assessment of Microsoft cloud services to confidently exchange data with suppliers who use workstations based on Microsoft 365 cloud services.
 
 Microsoft provided a self-assessment of its cloud services, and the auditor performed two levels of assessment based on that. (The assessment level determines the depth of the evaluation and the methods the auditors use.)
 
-- Microsoft datacenters in Northern Europe (Dublin region, Ireland) and Western Europe (Amsterdam region, the Netherlands) were assessed at Level 3 (AL3). The audit included a thorough verification of security processes, a comprehensive onsite inspection, and in-person interviews. An AL3 assessment is required for data with a very high need for protection, such as data classified as strictly confidential or secret—for example, data from crash test and flow simulations as well as AI (artificial intelligence) systems.
+- Microsoft datacenters in Northern Europe (Dublin region, Ireland) and Western Europe (Amsterdam region, the Netherlands) were assessed at Level 3 (AL3). The audit included a thorough verification of security processes, a comprehensive onsite inspection, and in-person interviews. An AL3 assessment is required for data with a high need for protection, such as data classified as strictly confidential or secret—, data from crash test and flow simulations and AI (artificial intelligence) systems.
 - Selected Microsoft global datacenters were assessed at Level 2 (AL2) based on remote interviews. An AL2 assessment is required for data with a high need for protection, such as data classified as confidential.
 
 ## Microsoft in-scope cloud services
@@ -52,7 +52,7 @@ Use case overviews, solution guides, tutorials, and other resources to help buil
 
 ## About TISAX
 
-To help secure the ever-increasing connectivity in the automotive industry, the German Association of the Automotive Industry ([Verband der Automobilindustrie](https://www.dict.cc/deutsch-englisch/Verband.html), VDA) developed a catalogue of criteria for assessing information security. The VDA Information Security Assessment ([German](https://www.vda.de/de/themen/sicherheit-und-standards/informationssicherheit/informationssicherheit-sicherheitsanforderungen.html) and [English](https://www.vda.de/en/topics/safety-and-standards/information-security/information-security-requirements)) is based on the fundamentals of the international ISO/IEC 27001 and 27002 standards adapted to the automotive industry; in 2017, it was updated to cover controls for the use of cloud services.
+To help secure the ever-increasing connectivity in the automotive industry, the German Association of the Automotive Industry ([Verband der Automobilindustrie](https://www.dict.cc/deutsch-englisch/Verband.html), VDA) developed a catalogue of criteria for assessing information security. The VDA Information Security Assessment ([German](https://www.vda.de/de/themen/sicherheit-und-standards/informationssicherheit/informationssicherheit-sicherheitsanforderungen.html) and [English](https://www.vda.de/en/topics/safety-and-standards/information-security/information-security-requirements)) is based on the fundamentals of the international ISO/IEC 27001 and 27002 standards adapted to the automotive industry. In 2017, it was updated to cover controls for the use of cloud services.
 
 VDA member companies used this instrument both for internal security assessments and for assessments of suppliers, service providers, and other partners that process sensitive information on their behalf. However, because these evaluations were handled individually by each company, it created a burden on partners and duplicated effort on the part of VDA members.
 

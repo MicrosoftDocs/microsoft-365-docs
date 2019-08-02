@@ -1,5 +1,5 @@
 ---
-title: Compliance Offering - EU-US and Swiss-US Privacy Shield Frameworks
+title: Compliance Offering — EU-US and Swiss-US Privacy Shield Frameworks
 description: Microsoft is certified to the EU-U.S. and Swiss-U.S. Privacy Shield Frameworks and the commitments they entail.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -16,11 +16,11 @@ ms.collection: M365-security-compliance
 
 ## Microsoft and the EU-U.S. and Swiss-U.S. Privacy Shield Frameworks
 
-To join the EU-U.S. and Swiss-U.S. Privacy Shield Frameworks—an action that is completely voluntary—US-based companies must publicly commit to complying with framework requirements and self-certify their compliance to the US Department of Commerce. Once they publicly commit and self-certify, that commitment becomes enforceable under US law.
+To join the EU-U.S. and Swiss-U.S. Privacy Shield Frameworks — an action that is voluntary — US-based companies must publicly commit to complying with framework requirements and self-certify their compliance to the US Department of Commerce. Once they publicly commit and self-certify, that commitment becomes enforceable under US law.
 
 Microsoft has publicly committed to the [Privacy Shield Principles](https://www.privacyshield.gov/article?id=Requirements-of-Participation) and has self-certified its compliance with its requirements. Our participation applies to all personal data processed by Microsoft that is transferred to the United States from the European Union, European Economic Area (EEA), and Switzerland. In addition, customers of Microsoft business cloud services benefit from compliance with the Standard Contractual Clauses (also known as [EU Model Clauses](https://www.microsoft.com/trustcenter/compliance/eu-model-clauses)) under the [Microsoft Online Services Terms](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31), unless the customer has opted out of those clauses.
 
-Microsoft will cooperate with EU and Swiss national data protection authorities (DPAs) and comply with their advice for resolving any disputes that arise under the Privacy Shield. We will also meet Privacy Shield obligations for transparency about government requests for access to personal information. Our [Law Enforcement Requests Report](https://www.microsoft.com/corporate-responsibility/lerr) and [U.S. National Security Orders Report](https://www.microsoft.com/corporate-responsibility/fisa/) make this information publicly available twice a year.
+Microsoft cooperates with EU and Swiss national data protection authorities (DPAs) and complies with their advice for resolving any disputes that arise under the Privacy Shield. We will also meet Privacy Shield obligations for transparency about government requests for access to personal information. Our [Law Enforcement Requests Report](https://www.microsoft.com/corporate-responsibility/lerr) and [U.S. National Security Orders Report](https://www.microsoft.com/corporate-responsibility/fisa/) make this information publicly available twice a year.
 
 ## Microsoft in-scope cloud services
 
@@ -67,7 +67,7 @@ When personal data is transferred from the EU to the United States by:
 
 **How is Microsoft accountable for EU personal data transferred to a third party?**
 
-Microsoft accountability for personal data that it receives under the Privacy Shield and subsequently transfers to a third party is described in the Privacy Shield Principles. In particular, Microsoft remains responsible and liable if third-party agents that it engages to process the personal data do so in a manner inconsistent with the Principles. Microsoft is, however, not liable if it proves that it is not responsible for the event giving rise to the damage.
+Microsoft accountability for personal data that it receives under the Privacy Shield and later transfers to a third party is described in the Privacy Shield Principles. In particular, Microsoft remains responsible and liable if third-party agents that it engages to process the personal data do so in a manner inconsistent with the Principles. Microsoft is, however, not liable if it proves that it is not responsible for the event giving rise to the damage.
 
 **Is the transfer of data under the EU-U.S. and Swiss-U.S. Privacy Shield compliant with the GDPR?**
 
@@ -75,7 +75,7 @@ Privacy Shield is not a GDPR compliance mechanism, but rather a framework that e
 
 **How does Microsoft handle complaints under the EU-U.S. and Swiss-U.S. Privacy Shield?**
 
-If you have a complaint that is Privacy Shield-related, please let us know using the [How to Contact Us](https://privacy.microsoft.com/PrivacyStatement#mainhowtocontactusmodule) section of the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement). For any complaints that you cannot resolve with Microsoft directly, we cooperate with EU DPAs and will comply with the advice they provide. Please contact us to be directed to the relevant DPA contacts. As further explained in the [Privacy Shield Principles](https://www.privacyshield.gov/article?id=Requirements-of-Participation), you can take advantage of a binding arbitration option to address complaints unresolved by other means.
+If you have a complaint that is Privacy Shield-related, please let us know using the [How to Contact Us](https://privacy.microsoft.com/PrivacyStatement#mainhowtocontactusmodule) section of the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement). For any complaints that you cannot resolve with Microsoft directly, we cooperate with EU DPAs and will comply with the advice they provide. Contact us to be directed to the relevant DPA contacts. As further explained in the [Privacy Shield Principles](https://www.privacyshield.gov/article?id=Requirements-of-Participation), you can take advantage of a binding arbitration option to address complaints unresolved by other means.
 
 ## Additional resources
 

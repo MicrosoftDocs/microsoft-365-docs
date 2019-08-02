@@ -1,5 +1,5 @@
 ---
-title: Compliance Offering - Dutch Authority for the Financial Markets and the Central Bank of the Netherlands
+title: Compliance Offering — Dutch Authority for the Financial Markets and the Central Bank of the Netherlands
 description: Microsoft has published guidance to help financial institutions in the Netherlands with cloud adoption.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -47,7 +47,7 @@ The Microsoft checklist helps financial firms in the Netherlands conducting due-
 
 [Compliance checklist: Netherlands](https://aka.ms/FinServ-Guide-Netherlands)
 
-- Financial firms can get help in conducting risk assessments of Microsoft business cloud services.
+- Financial firms can get help when conducting risk assessments of Microsoft business cloud services.
 
 [Risk Assessment & Compliance Guide](https://aka.ms/RiskGovernanceGuide)
 

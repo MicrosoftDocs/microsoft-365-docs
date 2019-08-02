@@ -1,5 +1,5 @@
 ---
-title: Compliance Offering - Spain Esquema Nacional de Seguridad (ENS) High Level Security Measures
+title: Compliance Offering — Spain Esquema Nacional de Seguridad (ENS) High-Level Security Measures
 description: Microsoft received Spain's Esquema Nacional de Seguridad (National Security Framework) certification.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -12,7 +12,7 @@ audience: itpro
 ms.collection: M365-security-compliance
 ---
 
-# Compliance Offering: Spain Esquema Nacional de Seguridad (ENS) High Level Security Measures
+# Compliance Offering: Spain Esquema Nacional de Seguridad (ENS) High-Level Security Measures
 
 ## Spain ENS Overview
 
@@ -20,17 +20,17 @@ In 2007, the Spanish government enacted Law 11/2007, which established a legal f
 
 The framework applies to all public organizations and government agencies in Spain that purchase cloud services, as well as to providers of information and communications technologies (ICT). It guides these agencies and companies in implementing effective controls for security in the cloud and on premises, in compliance with Spanish and EU security and privacy standards.
 
-The framework establishes core policies and mandatory requirements that both government agencies and their service providers must meet. It defines a set of specific security controls— (many of which align directly with ISO/IEC 27001) —relating to availability, authenticity, integrity, confidentiality, and traceability. The sensitivity of the information—low, intermediate, or high—determines the security measures that must be applied to protect it.
+The framework establishes core policies and mandatory requirements that both government agencies and their service providers must meet. It defines a set of specific security controls — (many of which align directly with ISO/IEC 27001) — relating to availability, authenticity, integrity, confidentiality, and traceability. The sensitivity of the information—low, intermediate, or high—determines the security measures that must be applied to protect it.
 
 Each government agency is required to adopt a risk-management approach to security, whereby they identify and assess risks, and then apply security controls appropriate to those risks. Service providers, too, must comply with the stringent framework requirements to help ensure that their procedures, technical capacities, and operations are secure and enable agencies to comply with the regulations.
 
 The framework prescribes an accreditation process that is voluntary for systems handling information of low sensitivity, but mandatory for systems handling information at an intermediate or high level of sensitivity. An audit is performed by an accredited independent auditor; the report is then reviewed in a process of certification before risk-management controls are accepted in the final step of accreditation.
 
-## Microsoft and Spain ENS High Level Security Measures
+## Microsoft and Spain ENS High-Level Security Measures
 
-Microsoft Azure and Microsoft Office 365 have gone through a rigorous assessment by BDO, an independent auditor, which issued an official statement of their compliance. BDO reports that the security measures in both services, as well as their information systems and data processing facilities, comply at the high level with RD 3/2010 without requiring any corrective measures. Microsoft was the first hyperscale cloud service provider to receive this certification in Spain.
+Microsoft Azure and Microsoft Office 365 have gone through a rigorous assessment by BDO, an independent auditor, which issued an official statement of their compliance. BDO reports that the security measures in both services, and their information systems and data processing facilities, comply at the high level with RD 3/2010 without requiring any corrective measures. Microsoft was the first hyperscale cloud service provider to receive this certification in Spain.
 
-Learn about the benefits of Spain ENS High Level Security Measures on the Microsoft Cloud.
+Learn about the benefits of Spain ENS High-Level Security Measures on the Microsoft Cloud.
 
 [Download the Spain ENS backgrounder](https://aka.ms/spainens-backgrounder)
 

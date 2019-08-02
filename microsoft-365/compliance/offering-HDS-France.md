@@ -1,5 +1,5 @@
 ---
-title: Compliance Offering - Health Data Hosting (HDS) France
+title: Compliance Offering — Health Data Hosting (HDS) France
 description: Microsoft cloud services are certified for their compliance with the Health Data Hosting (Hébergeurs de Données de Santé) standard.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -18,7 +18,7 @@ ms.collection: M365-security-compliance
 
 The Hébergeurs de Données de Santé (HDS) certification is required for entities such as cloud service providers that host the personal health data governed by French laws and collected for delivering preventive, diagnostic, and other health services. The HDS regulation was issued by [ASIP SANTÉ](https://esante.gouv.fr/) which, under the French Ministry of Health, is responsible for promoting electronically based healthcare solutions in France.
 
-Hosting of health data is regulated under French law by the French Public Health Code (Article L.1111-8), which stipulates that any healthcare organization—hospitals, pharmaceutical companies, laboratories—that handles personal medical data must use a service provider that is HDS-certified. In April 2018, new Articles R1111-8-8 to R1111-11 of the Public Health Code took effect, changing the accreditation procedure from an authorization by the French Ministry of Health to certification by an authorized body such as BSI.
+Hosting of health data is regulated under French law by the French Public Health Code (Article L.1111-8), which stipulates that any healthcare organization — hospitals, pharmaceutical companies, laboratories — that handles personal medical data must use a service provider that is HDS-certified. In April 2018, new Articles R1111-8-8 to R1111-11 of the Public Health Code took effect, changing the accreditation procedure from an authorization by the French Ministry of Health to certification by an authorized body such as BSI.
 
 HDS certification requires that service providers implement measures that keep personal health data secure, confidential, and accessible by patients. These measures include strong authentication and authorization procedures, robust backup systems, and powerful encryption methods. HDS also specifies mandatory provisions that must be included in contracts with the cloud service provider. These requirements apply no matter where the data is stored.
 
@@ -28,7 +28,7 @@ Microsoft Azure, Microsoft Dynamics 365, and Microsoft Office 365 have been gran
 
 Microsoft compliance with the HDS requirements has been audited and certified by the [BSI Group](https://www.bsigroup.com/fr-FR/), an independent certifying body accredited by French authorities to conduct HDS audits.
 
-The HDS certification enables healthcare providers in France to use Microsoft cloud services to save costs by improving clinical and operational efficiency, and it opens the door to the development of innovative, cutting-edge healthcare solutions. Providers will be able to develop smart applications or use third-party applications hosted on Azure to implement predictive analytics to personalize healthcare, evaluate and treat patients at a distance (telemedicine), and sharpen therapeutic drug monitoring.
+The HDS certification enables healthcare providers in France to use Microsoft cloud services to save costs by improving clinical and operational efficiency, and it opens the door to the development of innovative, cutting-edge healthcare solutions. Providers are able to develop smart applications or use third-party applications hosted on Azure to implement predictive analytics to personalize healthcare, evaluate and treat patients at a distance (telemedicine), and sharpen therapeutic drug monitoring.
 
 The rigorous audit covered the measures Microsoft has taken to secure personal health data and protect its confidentiality, including the:
 
@@ -57,7 +57,7 @@ The HDS certification is valid for three years.
 - Microsoft 365. The HDS certificate applies to Office 365 [Core Online Services](http://aka.ms/Online-Services-Terms) provisioned from France and European Union geographies.
 - Power BI cloud service either as a standalone service or as included in an Office 365 branded plan or suite
 
-Note The HDS certificate does not apply to Microsoft online services in preview or pre-release.
+Note that The HDS certificate does not apply to Microsoft online services in preview or pre-release.
 
 ## Featured resources
 

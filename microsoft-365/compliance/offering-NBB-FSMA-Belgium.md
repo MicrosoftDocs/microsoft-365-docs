@@ -1,5 +1,5 @@
 ---
-title: Compliance Offering - National Bank of Belgium (NBB) and the Financial Services and Markets Authority (FSMA)
+title: Compliance Offering — National Bank of Belgium (NBB) and the Financial Services and Markets Authority (FSMA)
 description: Microsoft guidance to help financial institutions in Belgium with cloud adoption.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -18,15 +18,15 @@ ms.collection: M365-security-compliance
 
 The primary financial services regulators in Belgium are the [National Bank of Belgium](https://www.nbb.be/) (NBB) and the [Financial Services and Markets Authority](https://www.fsma.be/language_selection) (FSMA).
 
-The NBB is responsible for prudential supervision of credit institutions, insurers, stockbrokers, and other financial organizations. As the central bank of Belgium, the NBB conducts monetary policy for Belgium and contributes to the stability of its financial system. Alongside the NBB, the FSMA supervises Belgian financial markets, financial service providers including investment firms, and supplemental pensions. Its tasks include oversight of the financial information that companies disseminate and the products they offer to consumers as well as their compliance with the rules of business conduct.
+The NBB is responsible for prudential supervision of credit institutions, insurers, stockbrokers, and other financial organizations. As the central bank of Belgium, the NBB conducts monetary policy for Belgium and contributes to the stability of its financial system. Alongside the NBB, the FSMA supervises Belgian financial markets, financial service providers including investment firms, and supplemental pensions. Its tasks include oversight of the financial information that companies disseminate and the products they offer to consumers and their compliance with the rules of business conduct.
 
-The NBB and FSMA act in concert with the European Banking Authority (EBA), “an independent EU authority which works to ensure effective and consistent prudential regulation and supervision across the European banking sector.” To that end, the EBA has outlined a comprehensive approach to the use of cloud computing by financial institutions in the EU, [Recommendations on outsourcing to cloud services providers](https://eba.europa.eu/documents/10180/2170121/Final+draft+Recommendations+on+Cloud+Outsourcing+%28EBA-Rec-2017-03%29.pdf/5fa5cdde-3219-4e95-946d-0c0d05494362).
+The NBB and FSMA act in concert with the European Banking Authority (EBA), “an independent EU authority that works to ensure effective and consistent prudential regulation and supervision across the European banking sector.” To that end, the EBA has outlined a comprehensive approach to the use of cloud computing by financial institutions in the EU, [Recommendations on outsourcing to cloud services providers](https://eba.europa.eu/documents/10180/2170121/Final+draft+Recommendations+on+Cloud+Outsourcing+%28EBA-Rec-2017-03%29.pdf/5fa5cdde-3219-4e95-946d-0c0d05494362).
 
 There are several requirements and guidelines that financial institutions in Belgium should be aware of when moving business functions to the cloud, including:
 
 - NBB Circular PPB 2004/5, Sound management practices in outsourcing by credit institutions and investment firms ([Dutch](https://www.nbb.be/nl/artikels/circulaire-ppb-20045-gezonde-beheerspraktijken-bij-uitbesteding-door-kredietinstellingen-en) and [French](https://www.nbb.be/en/articles/circular-ppb-20045-sound-management-practices-outsourcing-credit-institutions-and)), and the broadly equivalent provisions of the [FSMA Circular 05-06.2007](https://www.fsma.be/sites/default/files/public/sitecore/media%20library/Files/fsmafiles/wetgeving/reglem/reglem_05-06-2007.pdf) (French and Dutch) on organizational requirements for firms providing investment services.
 - Circular NBB 2009-17, Financial services via the Internet: Prudential requirements ([English](%22https:/www.nbb.be/doc/cp/eng/ki/circ/pdf/cbfa_2009_17.pdf)), examines outsourcing risks and sets out the requirements for internal control and management of those risks. It also discusses compliance with the financial rules of conduct and the potential impact of cross-border transactions in the cloud.
-- Circular NBB 2015-32, Additional prudential expectations regarding operational business continuity and security of systemically important financial institutions ([Dutch](https://www.nbb.be/nl/artikels/circulaire-nbb201532-aanvullende-prudentiele-verwachtingen-op-het-vlak-van-de-operationele) and [English](https://www.nbb.be/en/articles/circular-nbb201532-additional-prudential-expectations-regarding-operational-business)), sets out management and security processes for institutions that play a critical role in the financial system, and whose disruption could jeopardize its proper functioning.
+- Circular NBB 2015-32, Additional prudential expectations regarding operational business continuity, and security of systemically important financial institutions ([Dutch](https://www.nbb.be/nl/artikels/circulaire-nbb201532-aanvullende-prudentiele-verwachtingen-op-het-vlak-van-de-operationele) and [English](https://www.nbb.be/en/articles/circular-nbb201532-additional-prudential-expectations-regarding-operational-business)), sets out management and security processes for institutions that play a critical role in the financial system, and whose disruption could jeopardize its proper functioning.
 
 ## Microsoft and the NBB and FSMA
 
@@ -37,7 +37,7 @@ When financial organizations in Belgium outsource business functions to the clou
 The Microsoft checklist helps financial firms in Belgium that are conducting due-diligence assessments of Microsoft business cloud services. It includes:
 
 - An overview of the regulatory landscape for context.
-- A checklist that sets forth the issues to be addressed and maps Microsoft Azure, Microsoft Dynamics 365, and Microsoft 365 services against those regulatory obligations. The checklist can be used as a tool to measure compliance against a regulatory framework and provide an internal structure for documenting compliance, as well as help customers conduct their own risk assessments of Microsoft business cloud services.
+- A checklist that sets forth the issues to be addressed and maps Microsoft Azure, Microsoft Dynamics 365, and Microsoft 365 services against those regulatory obligations. The checklist can be used as a tool to measure compliance against a regulatory framework and provide an internal structure for documenting compliance, and help customers conduct their own risk assessments of Microsoft business cloud services.
 
 ## How to implement
 

@@ -1,5 +1,5 @@
 ---
-title: Compliance Offering - Financial Supervisory Authority (FSA) Denmark
+title: Compliance Offering — Financial Supervisory Authority (FSA) Denmark
 description: Microsoft guidance to help financial institutions in Denmark with cloud adoption.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -18,7 +18,7 @@ ms.collection: M365-security-compliance
 
 The [Financial Supervisory Authority](https://aka.ms/FinServ-Guide-Denmark) ([Finanstilsynet](https://servicetrust.microsoft.com/ViewPage/FFIECBlueprint)), under the Ministry of Industry, Business, and Financial Affairs, is the financial regulatory authority of the Danish government. Its principal role is to prepare regulatory guidelines for financial institutions in Denmark and monitor their compliance, as well as cooperate with regional and international authorities and regulators.
 
-The FSA acts in concert with the European Banking Authority (EBA), “an independent EU authority which works to ensure effective and consistent prudential regulation and supervision across the European banking sector.” To that end, the EBA has outlined a comprehensive approach to the use of cloud computing by financial institutions in the EU, [Recommendations on outsourcing to cloud services providers](https://aka.ms/d365-compliance-list).
+The FSA acts in concert with the European Banking Authority (EBA), “an independent EU authority, which works to ensure effective and consistent prudential regulation and supervision across the European banking sector.” To that end, the EBA has outlined a comprehensive approach to the use of cloud computing by financial institutions in the EU, [Recommendations on outsourcing to cloud services providers](https://aka.ms/d365-compliance-list).
 
 There are several guidelines that financial institutions in Denmark should be aware of when moving business functions to the cloud. In general, they prescribe contractual requirements for both financial institutions and cloud service providers to help ensure that financial organizations can adequately monitor and audit the outsourced functions. These include:
 
@@ -32,12 +32,12 @@ Guidelines issued by the Ministry of Industry, Business, and Financial Affairs:
 
 To help guide financial institutions in Denmark considering outsourcing business functions to the cloud, Microsoft has published [A compliance checklist for financial institutions in Denmark](https://eba.europa.eu/documents/10180/2170121/Final+draft+Recommendations+on+Cloud+Outsourcing+\(EBA-Rec-2017-03\).pdf/5fa5cdde-3219-4e95-946d-0c0d05494362). By reviewing and completing the checklist, financial organizations can adopt Microsoft business cloud services with the confidence that they are complying with applicable regulatory requirements.
 
-When Danish financial institutions outsource business activities they must comply with the requirements of the Financial Supervisory Authority (FSA), as well as work within the broad policy framework of the European Banking Authority (EBA). Specifically, those requirements focus on how contractual agreements between financial services and cloud providers can ensure adequate control of outsourced activities.
+When Danish financial institutions outsource business activities they must comply with the requirements of the Financial Supervisory Authority (FSA), and work within the broad policy framework of the European Banking Authority (EBA). Specifically, those requirements focus on how contractual agreements between financial services and cloud providers can ensure adequate control of outsourced activities.
 
 The Microsoft checklist helps Danish financial firms conducting due-diligence assessments of Microsoft business cloud services and includes:
 
 - An overview of the regulatory landscape for context.
-- A checklist that sets forth the issues to be addressed and maps Microsoft Azure, Microsoft Dynamics 365, and Microsoft 365 services against those regulatory obligations. The checklist can be used as a tool to measure compliance against a regulatory framework and provide an internal structure for documenting compliance, as well as help customers conduct their own risk assessments of Microsoft business cloud services.
+- A checklist that sets forth the issues to be addressed and maps Microsoft Azure, Microsoft Dynamics 365, and Microsoft 365 services against those regulatory obligations. The checklist can be used as a tool to measure compliance against a regulatory framework and provide an internal structure for documenting compliance, and help customers conduct their own risk assessments of Microsoft business cloud services.
 
 ## How to implement
 

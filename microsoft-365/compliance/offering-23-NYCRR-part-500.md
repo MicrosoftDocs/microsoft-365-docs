@@ -1,5 +1,5 @@
 ---
-title: Compliance Offering - Title 23 NYCRR Part 500
+title: Compliance Offering — Title 23 NYCRR Part 500
 description: Microsoft has prepared a guide to explain how Azure, Office 365, and Power BI can help financial institutions comply with 23 NYCRR 500 requirements.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -27,7 +27,7 @@ Microsoft provides a comprehensive guide, [Microsoft Cloud Services: Supporting 
 
 ### Develop and maintain a robust cybersecurity program
 
-Develop and maintain a robust cybersecurity program, starting with an assessment of the institution’s specific risk profile and then designing a program that addresses them. The [Microsoft Cloud Financial Services Compliance Program](https://www.microsoft.com/download/confirmation.aspx?id=55332) was specifically created to help financial services assess the risks of using Microsoft cloud services. It includes direct engagement with our engineers and corporate risk officers and access to our compliance and security experts.
+Develop and maintain a robust cybersecurity program, starting with an assessment of the institution’s specific risk profile and then designing a program that addresses them. The [Microsoft Cloud Financial Services Compliance Program](https://www.microsoft.com/download/confirmation.aspx?id=55332) was created to help financial services assess the risks of using Microsoft cloud services. It includes direct engagement with our engineers and corporate risk officers and access to our compliance and security experts.
 
 ### Implement a comprehensive cybersecurity policy
 

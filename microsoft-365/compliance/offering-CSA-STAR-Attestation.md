@@ -1,5 +1,5 @@
 ---
-title: Compliance Offering - Cloud Security Alliance (CSA) STAR Attestation
+title: Compliance Offering — Cloud Security Alliance (CSA) STAR Attestation
 description: Azure and Intune were awarded Cloud Security Alliance STAR Attestation based on an independent audit.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -22,7 +22,7 @@ The Cloud Security Alliance (CSA) maintains the Security, Trust & Assurance Regi
 - Level 2: STAR Attestation, STAR Certification, and C-STAR Assessment (which are based on audits by third parties)
 - Level 3: STAR Continuous Monitoring (program requirements are still under development by CSA)
 
-STAR Attestation involves a rigorous independent audit of a cloud provider’s security posture based on a SOC 2 Type 2 audit in combination with CCM criteria. The independent auditor that evaluates a cloud provider’s offerings for STAR Attestation must be a certified public accountant (CPA) and is required to have the CSA Certificate in Cloud Security Knowledge (CCSK).  
+STAR Attestation involves a rigorous independent audit of a cloud provider’s security posture based on a SOC 2 Type 2 audit with CCM criteria. The independent auditor that evaluates a cloud provider’s offerings for STAR Attestation must be a certified public accountant (CPA) and is required to have the CSA Certificate in Cloud Security Knowledge (CCSK).  
   
 A SOC 2 Type 2 audit is based on American Institute of Certified Public Accountants (AICPA) Trust Services Principles and Criteria, including security, availability, confidentiality, and processing integrity, and the criteria in the CCM. STAR Attestation provides an auditor’s findings on the design suitability and operating effectiveness of SOC 2 controls in Microsoft cloud services. The objective is to meet both the AICPA criteria mentioned above and requirements set forth in the CCM.
 

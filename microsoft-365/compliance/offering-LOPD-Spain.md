@@ -1,5 +1,5 @@
 ---
-title: Compliance Offering - Spanish Royal Decree 1720/2007, Spanish Organic Law 15/1999
+title: Compliance Offering — Spanish Royal Decree 1720/2007, Spanish Organic Law 15/1999
 description: Microsoft cloud customers are authorized by Spain's Data Protection Agency (AEPD) to transfer data across borders.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority

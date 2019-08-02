@@ -1,5 +1,5 @@
 ---
-title: Compliance Offering - ISO/IEC 27017:2015 Code of Practice for Information Security Controls
+title: Compliance Offering — ISO/IEC 27017:2015 Code of Practice for Information Security Controls
 description: Microsoft cloud services have implemented this Code of Practice for Information Security Controls.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -26,14 +26,14 @@ Learn about the benefits of ISO/IEC 27017 on the Microsoft Cloud.
 
 Covered services include:
 
-- Azure, Azure Government and Azure Germany [detailed list](https://aka.ms/AzureCompliance)
+- Azure, Azure Government, and Azure Germany [detailed list](https://aka.ms/AzureCompliance)
 - Cloud App Security
 - Dynamics 365 [detailed list](https://aka.ms/d365-compliance-list)
 - Genomics
 - Graph
 - Intune
 - Microsoft Flow cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
-- Office 365, Office 365 U.S. Government, Office 365 U.S. Government Defense and Office 365 Germany
+- Office 365, Office 365 U.S. Government, Office 365 U.S. Government Defense, and Office 365 Germany
 - PowerApps cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
 - Power BI cloud service either as a standalone service or as included in an Office 365 branded plan or suite
 - See a [detailed list](https://go.microsoft.com/fwlink/p/?linkid=2077751) of covered services in Office 365
@@ -51,7 +51,7 @@ Microsoft cloud services are audited once a year for the ISO/IEC 27017:2015 code
 
 The ISO/IEC 27017:2015 code of practice is designed for organizations to use as a reference for selecting cloud services information security controls when implementing a cloud computing information security management system based on ISO/IEC 27002:2013. It can also be used by cloud service providers as a guidance document for implementing commonly accepted protection controls.
 
-This international standard provides additional cloud-specific implementation guidance based on ISO/IEC 27002, and provides additional controls to address cloud-specific information security threats and risks referring to clauses 5 to 18 in ISO/IEC 27002: 2013 for controls, implementation guidance, and other information. Specifically, this standard provides guidance on 37 controls in ISO/IEC 27002, and it also features 7 new controls that are not duplicated in ISO/IEC 27002. These new controls address the following important areas:
+This international standard provides additional cloud-specific implementation guidance based on ISO/IEC 27002, and provides additional controls to address cloud-specific information security threats and risks referring to clauses 5–18 in ISO/IEC 27002: 2013 for controls, implementation guidance, and other information. Specifically, this standard provides guidance on 37 controls in ISO/IEC 27002, and it also features seven new controls that are not duplicated in ISO/IEC 27002. These new controls address the following important areas:
 
 - Shared roles and responsibilities within a cloud computing environment
 - Removal and return of cloud service customer assets upon contract termination

@@ -1,5 +1,5 @@
 ---
-title: Compliance Offering - Web Content Accessibility Guidelines 2.1
+title: Compliance Offering — Web Content Accessibility Guidelines 2.1
 description: Microsoft publishes WCAG 2.1 AA reports that reflect the complete product or service, or portions of the product that may be installed separately.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -20,7 +20,7 @@ WCAG 2.1 provides a framework for developing web content that improves accessibi
   
 Content that conforms to WCAG 2.1 also conforms to WCAG 2.0. For policies requiring conformance to WCAG 2.0, WCAG 2.1 can provide an alternate means of conformance.  
   
-Conformance requirements for each guideline are measured in three levels: A, AA, and AAA. Because Microsoft is a major software and cloud-services provider to states and governments around the world, it is committed to complying with all relevant international standards and compliance controls. By adhering to these wide-ranging accessibility standards, Microsoft ensures that all customers—both inside and outside of government—can use Microsoft services and products.  
+Conformance requirements for each guideline are measured in three levels: A, AA, and AAA. Because Microsoft is a major software and cloud-services provider to states and governments around the world, it is committed to complying with all relevant international standards and compliance controls. By adhering to these wide-ranging accessibility standards, Microsoft ensures that all customers — both inside and outside of government — can use Microsoft services and products.  
   
 [Learn more](https://go.microsoft.com/fwlink/p/?linkid=2052226)
 
@@ -28,7 +28,7 @@ Conformance requirements for each guideline are measured in three levels: A, AA,
 
 Microsoft’s adherence to the WCAG 2.1 (ISO/IEC 40500) standard points to its commitment to making technology and data accessible for all customers. WCAG 2.1 (ISO/IEC 40500) is the international accessibility requirement that complements EN 301 549 (Europe) and Section 508 (U.S.).  
   
-Microsoft publishes WCAG 2.1 reports that reflect the complete product or service. It generally does not create reports for individual features or components. In some cases, Microsoft might release a new component for an existing product, or a new version of an existing component, which users can choose to install separately, and Microsoft might also publish a WCAG 2.1 report for that component.  
+Microsoft publishes WCAG 2.1 reports that reflect the complete product or service. It generally does not create reports for individual features or components. Sometimes, Microsoft might release a new component for an existing product, or a new version of an existing component, which users can choose to install separately, and Microsoft might also publish a WCAG 2.1 report for that component.  
   
 [Download the WCAG 2.1 (ISO/IEC 40500) accessibility standards](https://go.microsoft.com/fwlink/p/?linkid=2052226)
 

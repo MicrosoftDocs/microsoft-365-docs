@@ -1,5 +1,5 @@
 ---
-title: Compliance Offering - Financial Authority (AMF) and Prudential Authority (ACPR) France
+title: Compliance Offering — Financial Authority (AMF) and Prudential Authority (ACPR) France
 description: Microsoft guidance to help financial institutions in France with cloud adoption.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -18,7 +18,7 @@ ms.collection: M365-security-compliance
 
 The [Financial Authority](https://www.amf-france.org/en_US/?langSwitch=true) ([Autorité des Marchés Financiers, AMF](https://amf-france.org/)) and the [Prudential Authority](https://acpr.banque-france.fr/en/page-sommaire/about-acpr) ([Autorité de Contrôle Prudentiel et de Résolution, ACPR](https://acpr.banque-france.fr/)) are the primary financial regulators in France. In its capacity as the stock market regulator, the AMF is responsible for the supervision of financial markets and investment firms. The ACPR, an independent administrative authority under the central bank, the [Banque de France](https://www.banque-france.fr/), supervises the banking and insurance sectors.  
   
-The AMF and ACPR act in concert with the European Banking Authority (EBA), “an independent EU authority which works to ensure effective and consistent prudential regulation and supervision across the European banking sector.” To that end, the EBA has outlined a comprehensive approach to the use of cloud computing by financial institutions in the EU, [Recommendations on outsourcing to cloud services providers](https://eba.europa.eu/documents/10180/2170121/Final+draft+Recommendations+on+Cloud+Outsourcing+\(EBA-Rec-2017-03\).pdf).  
+The AMF and ACPR act in concert with the European Banking Authority (EBA), “an independent EU authority, which works to ensure effective and consistent prudential regulation and supervision across the European banking sector.” To that end, the EBA has outlined a comprehensive approach to the use of cloud computing by financial institutions in the EU, [Recommendations on outsourcing to cloud services providers](https://eba.europa.eu/documents/10180/2170121/Final+draft+Recommendations+on+Cloud+Outsourcing+\(EBA-Rec-2017-03\).pdf).  
   
 There are several requirements and guidelines that financial institutions in France should be aware of when moving operational functions to the cloud:
 
@@ -31,12 +31,12 @@ There are several requirements and guidelines that financial institutions in Fra
 
 To help guide financial institutions in France considering outsourcing business functions to the cloud, Microsoft has published [Navigating your way to the cloud: a checklist for financial institutions in France](https://aka.ms/FinServ-Guide-France). By reviewing and completing the checklist, financial organizations can adopt Microsoft business cloud services with the confidence that they are complying with applicable regulatory requirements.  
   
-When financial institutions in France outsource business activities to the cloud, they must comply with the requirements of the Financial Authority (AMF) and Prudential Authority (ACPR) of France within the broad policy framework of the European Banking Authority (EBA). In particular, they must be aware of Article 313-75 of the AMF General Regulation, as well as the ACPR guidelines on cloud computing risks and its mandatory requirements for contracts with cloud service providers.  
+When financial institutions in France outsource business activities to the cloud, they must comply with the requirements of the Financial Authority (AMF) and Prudential Authority (ACPR) of France within the broad policy framework of the European Banking Authority (EBA). In particular, they must be aware of Article 313-75 of the AMF General Regulation, and the ACPR guidelines on cloud computing risks and its mandatory requirements for contracts with cloud service providers.  
   
 The Microsoft checklist helps French financial firms conducting due-diligence assessments of Microsoft business cloud services and includes:
 
 - An overview of the regulatory landscape for context.
-- A checklist that sets forth the issues to be addressed and maps Microsoft Azure, Microsoft Dynamics 365, and Microsoft 365 services against those regulatory obligations. The checklist can be used as a tool to measure compliance against a regulatory framework and provide an internal structure for documenting compliance, as well as help customers conduct their own risk assessments of Microsoft business cloud services.
+- A checklist that sets forth the issues to be addressed and maps Microsoft Azure, Microsoft Dynamics 365, and Microsoft 365 services against those regulatory obligations. The checklist can be used as a tool to measure compliance against a regulatory framework and provide an internal structure for documenting compliance, and help customers conduct their own risk assessments of Microsoft business cloud services.
 
 ## How to implement
 

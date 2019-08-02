@@ -1,5 +1,5 @@
 ---
-title: Compliance Offering - Center for Internet Security (CIS) Benchmarks
+title: Compliance Offering — Center for Internet Security (CIS) Benchmarks
 description: The Center for Internet Security (CIS) has published a series of benchmarks for Microsoft products and services
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -33,7 +33,7 @@ CIS benchmarks provide two levels of security settings:
 
 The Center for Internet Security (CIS) has published benchmarks for Microsoft products and services including the Microsoft Azure and Microsoft 365 Foundations Benchmarks, the Windows 10 Benchmark, and the Windows Server 2016 Benchmark.  
   
-CIS benchmarks are internationally recognized as security standards for defending IT systems and data against cyberattacks. Used by thousands of businesses, they offer prescriptive guidance for establishing a secure baseline configuration. System and application administrators, security specialists, and others who develop solutions using Microsoft products and services can leverage these best practices to assess and improve the security of their applications.  
+CIS benchmarks are internationally recognized as security standards for defending IT systems and data against cyberattacks. Used by thousands of businesses, they offer prescriptive guidance for establishing a secure baseline configuration. System and application administrators, security specialists, and others who develop solutions using Microsoft products and services can use these best practices to assess and improve the security of their applications.  
   
 Like all CIS benchmarks, the Microsoft benchmarks were created using a consensus review process based on input from subject matter experts with diverse backgrounds spanning software development, audit and compliance, security research, operations, government, and law. Microsoft was an integral partner in these CIS efforts. For example, Office 365 was tested against the listed services, and the resulting Microsoft 365 Foundations Benchmark covers a broad range of recommendations for setting appropriate security policies that cover account and authentication, data management, application permissions, storage, and other security policy areas.  
   
@@ -78,7 +78,7 @@ CIS benchmarks establish the basic level of security for anyone adopting in-scop
 
 **How often are CIS Benchmarks updated?**
 
-The release of revised CIS Benchmarks changes depending on the community of IT professionals who developed it as well as on the release schedule of the technology the benchmark supports. CIS distributes monthly reports that announce new benchmarks as well as updates to existing benchmarks. To receive these, register for the [**CIS Workbench**](https://workbench.cisecurity.org/) (it’s free) and check Receive newsletter in your profile.
+The release of revised CIS Benchmarks changes depending on the community of IT professionals who developed it and on the release schedule of the technology the benchmark supports. CIS distributes monthly reports that announce new benchmarks and updates to existing benchmarks. To receive these, register for the [**CIS Workbench**](https://workbench.cisecurity.org/) (it’s free) and check Receive newsletter in your profile.
 
 **Who contributed to the development of Microsoft CIS Benchmarks?**
 

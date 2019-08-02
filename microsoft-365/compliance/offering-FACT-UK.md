@@ -1,5 +1,5 @@
 ---
-title: Compliance Offering - Federation Against Copyright Theft (FACT)
+title: Compliance Offering — Federation Against Copyright Theft (FACT)
 description: Microsoft Azure achieved certification from the Federation Against Copyright Theft in the UK.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -16,7 +16,7 @@ ms.collection: M365-security-compliance
 
 ## FACT overview
 
-Copyrighted content comes in many forms—pictures, videos, music, contracts, scripts, workflows, art, architecture, and more—and represents the core assets of many businesses. Piracy threatens to undermine the very existence of these businesses through the unlawful distribution of intellectual property for illicit gain or market disruption. As production and post-production workflows increasingly move to the cloud, the black market for intellectual property is similarly moving away from physical media toward online mechanisms.
+Copyrighted content comes in many forms — pictures, videos, music, contracts, scripts, workflows, art, architecture, and more — and represents the core assets of many businesses. Piracy threatens to undermine the very existence of these businesses through the unlawful distribution of intellectual property for illicit gain or market disruption. As production and post-production workflows increasingly move to the cloud, the black market for intellectual property is similarly moving away from physical media toward online mechanisms.
 
 ## Microsoft and Federation Against Copyright Theft (FACT)
 
@@ -43,7 +43,7 @@ Learn about the benefits of FACT on the Microsoft Cloud.
 
 Content security is critical for feature film and television development, as there are multiple points along the workflow where digital assets can be compromised or stolen. Dailies, rough cuts, and visual effects are just some of the materials exposed during a normal film production cycle, and the box-office impacts of a security breach on a blockbuster project can reach tens of millions of dollars. By passing the FACT audit, Azure provides another layer of assurance to customers by helping to prevent the illegal distribution and sale of motion picture and television assets.
 
-**Does my organization still need to undergo a FACT audit, or can we just use the Azure audit?**
+**Does my organization still need to undergo a FACT audit, or can we use the Azure audit?**
 
 Compliance with FACT is voluntary, but Microsoft elected to carry out an independent assessment so that media customers can be confident in the content security and protection capabilities of Azure. However, customers’ individual cloud environments are not managed by Azure, and thus may be subject to additional regulation that is best addressed by an individual audit.
 

@@ -1,5 +1,5 @@
 ---
-title: Compliance Offering - Service Organization Controls (SOC)
+title: Compliance Offering — Service Organization Controls (SOC)
 description: Microsoft cloud services comply with Service Organization Controls standards for operational security.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -18,7 +18,7 @@ ms.collection: M365-security-compliance
 
 Increasingly, businesses outsource basic functions such as data storage and access to applications to cloud service providers (CSPs) and other service organizations. In response, the American Institute of Certified Public Accountants (AICPA) has developed the Service Organization Controls (SOC) framework, a standard for controls that safeguard the confidentiality and privacy of information stored and processed in the cloud. This aligns with the International Standard on Assurance Engagements (ISAE), the reporting standard for international service organizations.  
   
-Service audits based on the SOC framework fall into two categories—SOC 1 and SOC 2—that apply to in-scope Microsoft cloud services.  
+Service audits based on the SOC framework fall into two categories — SOC 1 and SOC 2 — that apply to in-scope Microsoft cloud services.  
   
 A SOC 1 audit, intended for CPA firms that audit financial statements, evaluates the effectiveness of a CSP’s internal controls that affect the financial reports of a customer using the provider’s cloud services. The Statement on Standards for Attestation Engagements (SSAE 18) and the International Standards for Assurance Engagements No. 3402 (ISAE 3402) are the standards under which the audit is performed, and is the basis of the SOC 1 report.  
   
@@ -26,13 +26,13 @@ A SOC 2 audit gauges the effectiveness of a CSP’s system based on the AICPA Tr
   
 At the conclusion of a SOC 1 or SOC 2 audit, the service auditor renders an opinion in a SOC 1 Type 2 or SOC 2 Type 2 report, which describes the CSP’s system and assesses the fairness of the CSP’s description of its controls. It also evaluates whether the CSP’s controls are designed appropriately, were in operation on a specified date, and were operating effectively over a specified time period.  
   
-Auditors can also create a SOC 3 report—an abbreviated version of the SOC 2 Type 2 audit report—for users who want assurance about the CSP’s controls but don’t need a full SOC 2 report. A SOC 3 report can be conferred only if the CSP has an unqualified audit opinion for SOC 2.
+Auditors can also create a SOC 3 report — an abbreviated version of the SOC 2 Type 2 audit report — for users who want assurance about the CSP’s controls but don’t need a full SOC 2 report. A SOC 3 report can be conferred only if the CSP has an unqualified audit opinion for SOC 2.
 
 ## Microsoft and SOC 1, 2, and 3 Reports
 
 Microsoft covered cloud services are audited at least annually against the SOC reporting framework by independent third-party auditors. The audit for Microsoft cloud services covers controls for data security, availability, processing integrity, and confidentiality as applicable to in-scope trust principles for each service.  
   
-Microsoft has achieved SOC 1 Type 2, SOC 2 Type 2, and SOC 3 reports. In general, the availability of SOC 1 and SOC 2 reports is restricted to customers who have signed nondisclosure agreements with Microsoft; the SOC 3 report is publicly available.  
+Microsoft has achieved SOC 1 Type 2, SOC 2 Type 2, and SOC 3 reports. In general, the availability of SOC 1 and SOC 2 reports is restricted to customers who have signed nondisclosure agreements with Microsoft. The SOC 3 report is publicly available.  
   
 Learn about the benefits of SOC 1, 2, 3 on the Microsoft Cloud.
 
@@ -75,7 +75,7 @@ Microsoft cloud services are audited at least annually against SOC 1 (SSAE18, IS
 - Graph
 - Intune
 - Microsoft Flow cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
-- [Office 365, Office 365 U.S. Government, and Office 365 U.S. Government Defense](https://aka.ms/o365-compliance-framework); Yammer has achieved a SOC 1 Type 1 report
+- [Office 365, Office 365 U.S. Government, and Office 365 U.S. Government Defense](https://aka.ms/o365-compliance-framework). Yammer has achieved a SOC 1 Type 1 report
 - Office 365 Germany
 - PowerApps cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
 - Power BI cloud service either as a standalone service or as included in an Office 365 branded plan or suite
@@ -100,11 +100,11 @@ Microsoft cloud services are audited at least annually against SOC 1 (SSAE18, IS
 With the reports, your auditors can compare Microsoft business cloud services results with your own legal and regulatory requirements.
 
 - You can see all SOC reports through the [Service Trust Platform](https://www.microsoft.com/trustcenter/STP/default.aspx).
-- Azure DevOps Service customers that can’t access [Service Trust Platform](https://www.microsoft.com/trustcenter/STP/default.aspx) can email [Azure DevOps](mailto:AzureDevOpsSOCReport@microsoft.com) for its SOC 1 and SOC 2 reports. Note that this email is to request Azure DevOps SOC reports only.
+- Azure DevOps Service customers that can’t access [Service Trust Platform](https://www.microsoft.com/trustcenter/STP/default.aspx) can email [Azure DevOps](mailto:AzureDevOpsSOCReport@microsoft.com) for its SOC 1 and SOC 2 reports. This email is to request Azure DevOps SOC reports only.
 
 **How often are Azure SOC reports issued?**
 
-SOC reports for Azure, Cloud App Security, Flow, Graph, Intune, Power BI, PowerApps, Stream, and Microsoft Datacenters are based on a rolling 12 month run window (audit period) with new reports issued quarterly. The increased audit frequency provides a more timely audit period coverage through a SOC report which provides greater assurance by an external auditor when compared to a bridge letter. Customers can download the latest reports from the Service Trust Portal.
+SOC reports for Azure, Cloud App Security, Flow, Graph, Intune, Power BI, PowerApps, Stream, and Microsoft Datacenters are based on a rolling 12-month run window (audit period) with new reports issued quarterly. The increased audit frequency provides a more timely audit period coverage through a SOC report that provides greater assurance by an external auditor when compared to a bridge letter. Customers can download the latest reports from the Service Trust Portal.
 
 **Do I need to conduct my own audit of Microsoft datacenters?**
 

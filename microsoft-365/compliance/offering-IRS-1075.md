@@ -1,5 +1,5 @@
 ---
-title: Compliance Offering - US Internal Revenue Service Publication 1075
+title: Compliance Offering — US Internal Revenue Service Publication 1075
 description: Microsoft has controls that meet the requirements of US Internal Revenue Service Publication 1075.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -40,7 +40,7 @@ Learn about the benefits of IRS 1075 on the Microsoft Cloud.
 
 ## Audits, reports, and certificates
 
-Compliance with the substantive requirements of IRS 1075 are covered under the FedRAMP audit every year.
+Compliance with the substantive requirements of IRS 1075 is covered under the FedRAMP audit every year.
 
 - [FedRAMP authorizations](https://marketplace.fedramp.gov/#/product/azure-government?sort=productName&productNameSearch=azure)
 - [Azure IRS 1075 safeguard security report](https://aka.ms/AzureIRS1075SafeguardSecurityReport)

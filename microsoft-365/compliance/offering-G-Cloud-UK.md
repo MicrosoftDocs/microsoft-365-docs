@@ -1,5 +1,5 @@
 ---
-title: Compliance Offering - United Kingdom Government-Cloud (G-Cloud)
+title: Compliance Offering — United Kingdom Government-Cloud (G-Cloud)
 description: The Crown Commercial Service renewed the Microsoft cloud services classification to Government Cloud v.6.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -18,7 +18,7 @@ ms.collection: M365-security-compliance
 
 Government Cloud (G-Cloud) is a UK government initiative to ease procurement of cloud services by government departments and promote government-wide adoption of cloud computing. G-Cloud comprises a series of framework agreements with cloud services suppliers (such as Microsoft), and a listing of their services in an online store—the Digital Marketplace. This enables public-sector organizations to compare and procure those services without having to do their own full review process. Inclusion in the Digital Marketplace requires a self-attestation of compliance, followed by a verification performed by the Government Digital Service (GDS) branch at its discretion.
 
-The G-Cloud appointment process was streamlined in 2014 to reduce the time and cost to the UK government, and the government’s security classification scheme was simplified from six to three levels: OFFICIAL, SECRET, and TOP SECRET. (G-Cloud certification levels are no longer expressed as an Impact Level, or IL; Microsoft formerly held an IL2 accreditation for Microsoft Azure, Microsoft Dynamics 365, and Microsoft Office 365.)
+The G-Cloud appointment process was streamlined in 2014 to reduce the time and cost to the UK government, and the government’s security classification scheme was simplified from six to three levels: OFFICIAL, SECRET, and TOP SECRET. (G-Cloud certification levels are no longer expressed as an Impact Level, or IL. Microsoft formerly held an IL2 accreditation for Microsoft Azure, Microsoft Dynamics 365, and Microsoft Office 365.)
 
 Instead of the central assessment of cloud services previously provided, the new process requires cloud service providers to self-certify and supply evidence in support of the 14 Cloud Security Principles of G-Cloud. This has not changed either the evidence Microsoft produces or the standards that the company adheres to.
 
@@ -91,12 +91,12 @@ It is an organization or agency that is funded by the UK government but acts ind
 
 The Microsoft Cloud in the UK provides reliability and performance combined with data residency in the UK. This provides customers with trusted cloud services that help them meet local compliance and policy requirements. In addition, replication of data in multiple datacenters across the UK gives customers geo-redundant data protection for business continuity, for both pure cloud and hybrid scenarios. We have datacenters in multiple locations across the UK.
 
-- You can see the new Azure regions, UK West and UK South, on the [global Azure map](http://azuredatacentermap.azurewebsites.net/).
+- You can see the new Azure regions, UK West, and UK South, on the [global Azure map](http://azuredatacentermap.azurewebsites.net/).
 - For Office 365, the UK datacenters collectively comprise the new UK Office 365 region. You can see more on the [global Office 365 map](http://o365datacentermap.azurewebsites.net/).
 
 **Where are the other Microsoft EU datacenters located?**
 
-In addition to the UK datacenters, Microsoft cloud services has data centers in multiple locations. For the most up to date list of all centers visit our [data location page](https://www.microsoft.com/TrustCenter/Privacy/where-your-data-is-located).
+In addition to the UK datacenters, Microsoft cloud services has data centers in multiple locations. For the most up-to-date list of all centers visit our [data location page](https://www.microsoft.com/TrustCenter/Privacy/where-your-data-is-located).
 
 **How can I get copies of the auditor’s reports?**
 

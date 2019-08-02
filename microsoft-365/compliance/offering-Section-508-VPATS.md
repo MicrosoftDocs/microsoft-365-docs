@@ -1,5 +1,5 @@
 ---
-title: Compliance Offering - U.S. Section 508
+title: Compliance Offering — U.S. Section 508
 description: Microsoft offers detailed accessibility conformance reports for many of its cloud services describing the accessibility features of those services.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -18,7 +18,7 @@ ms.collection: M365-security-compliance
 
 The United States Congress amended the Rehabilitation Act in 1998 and 2000 to require federal agencies to make their electronic and information technology (EIT) products, such as software, hardware, electronic content, and support documentation, accessible to people with disabilities. Section 508 of the United States Workforce Rehabilitation Act of 1973 (29 US Code §794d), as amended, mandates that federal agencies procure, maintain, and use EIT in a manner that ensures federal employees with disabilities have comparable access to, and use of, data and EIT relative to other federal employees.  
   
-Because it is a major software and cloud-services provider to U.S. federal and state governments, Microsoft is committed to complying with all relevant government standards and compliance controls. By adhering to these wide-ranging accessibility standards, Microsoft ensures that all customers—both inside and outside of government—can use Microsoft services and products.
+Because it is a major software and cloud-services provider to U.S. federal and state governments, Microsoft is committed to complying with all relevant government standards and compliance controls. By adhering to these wide-ranging accessibility standards, Microsoft ensures that all customers — both inside and outside of government — can use Microsoft services and products.
 
 [Learn More](https://go.microsoft.com/fwlink/?linkid=2052068)
 

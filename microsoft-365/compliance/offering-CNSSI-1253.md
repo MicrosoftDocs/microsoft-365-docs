@@ -1,5 +1,5 @@
 ---
-title: Compliance Offering - Committee on National Security Systems Instruction No. 1253 (CNSSI 1253)
+title: Compliance Offering — Committee on National Security Systems Instruction No. 1253 (CNSSI 1253)
 description: Azure Government complies with CNSSI 1253 security controls for US government systems requiring High Confidentiality, High Integrity, and High Availability.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -26,7 +26,7 @@ For example, the CNSSI 1253 approach explicitly defines the associations of Conf
 
 A FedRAMP-approved third-party assessment organization (3PAO), Kratos SecureInfo, has independently validated the compliance of the Microsoft Azure Government system with the CNSSI 1253 High-High-High Baseline. Kratos SecureInfo attests that the CNSSI 1253 Security Assessment Report (SAR) of Azure Government provides a complete assessment of the applicable security controls stipulated in the Security Assessment Plan (SAP). The SAR documents the testing conducted to validate Azure Government against a selection of CNSSI 1253 security controls for systems requiring High Confidentiality, High Integrity, and High Availability.  
   
-Azure Government currently possesses a FedRAMP High Provisional Authorization to Operate (P-ATO) issued by the Joint Authorization Board (JAB), as well as a Department of Defense Provisional Authorization (PA) at Impact Level 5 of the Cloud Computing Security Requirements Guide (SRG). Leveraging these authorizations, Kratos SecureInfo analyzed the security controls that were tested in the previous assessments to determine which additional CNSSI 1253 security controls to test to ensure compliance with the CNSSI 1253 High-High-High baseline. Kratos SecureInfo examined evidence and conducted interviews to validate the successful implementation of 43 applicable security controls and published the results of its complete testing in the CNSSI 1253 SAR.  
+Azure Government currently possesses a FedRAMP High Provisional Authorization to Operate (P-ATO) issued by the Joint Authorization Board (JAB), and a Department of Defense Provisional Authorization (PA) at Impact Level 5 of the Cloud Computing Security Requirements Guide (SRG). Using these authorizations, Kratos SecureInfo analyzed the security controls that were tested in the previous assessments to determine which additional CNSSI 1253 security controls to test to ensure compliance with the CNSSI 1253 High-High-High baseline. Kratos SecureInfo examined evidence and conducted interviews to validate the successful implementation of 43 applicable security controls and published the results of its complete testing in the CNSSI 1253 SAR.  
   
 The compliance of Azure Government with the demanding CNSSI 1253 requirements means that Azure can offer public sector customers in the United States a rich array of services compliant with CNSSI 1253, enabling them to benefit from the cost savings and rigorous security of the Microsoft Cloud.
 

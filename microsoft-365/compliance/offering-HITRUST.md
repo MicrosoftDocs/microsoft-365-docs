@@ -1,5 +1,5 @@
 ---
-title: Compliance Offering - Health Information Trust Alliance (HITRUST) Common Security Framework (CSF)
+title: Compliance Offering — Health Information Trust Alliance (HITRUST) Common Security Framework (CSF)
 description: Azure and Office 365 are certified to the Health Information Trust Alliance (HITRUST) Common Security Framework (CSF).
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -14,17 +14,17 @@ ms.collection: M365-security-compliance
 
 # Compliance Offering: Health Information Trust Alliance (HITRUST) Common Security Framework (CSF)
 
-## HITRUST - CSF overview
+## HITRUST — CSF overview
 
 The Health Information Trust Alliance (HITRUST) is an organization governed by representatives from the healthcare industry. HITRUST created and maintains the Common Security Framework (CSF), a certifiable framework to help healthcare organizations and their providers demonstrate their security and compliance in a consistent and streamlined manner.
 
-The CSF builds on HIPAA and the HITECH Act, which are US healthcare laws that have established requirements for the use, disclosure, and safeguarding of individually identifiable health information, and that enforce noncompliance. HITRUST provides a benchmark—a standardized compliance framework, assessment, and certification process—against which cloud service providers and covered health entities can measure compliance. The CSF also incorporates healthcare-specific security, privacy, and other regulatory requirements from such existing frameworks as the Payment Card Industry Data Security Standard (PCI-DSS), ISO/IEC 27001 information security management standards, and Minimum Acceptable Risk Standards for Exchanges (MARS-E).
+The CSF builds on HIPAA and the HITECH Act, which are US healthcare laws that have established requirements for the use, disclosure, and safeguarding of individually identifiable health information, and that enforce noncompliance. HITRUST provides a benchmark — a standardized compliance framework, assessment, and certification process — against which cloud service providers and covered health entities can measure compliance. The CSF also incorporates healthcare-specific security, privacy, and other regulatory requirements from such existing frameworks as the Payment Card Industry Data Security Standard (PCI-DSS), ISO/IEC 27001 information security management standards, and Minimum Acceptable Risk Standards for Exchanges (MARS-E).
 
 The CSF is divided into 19 different domains, including endpoint protection, mobile device security, and access control. HITRUST certifies IT offerings against these controls. HITRUST also adapts requirements for certification to the risks of an organization based on organizational, system, and regulatory factors.
 
 ## Health Information Trust Alliance (HITRUST) Common Security Framework (CSF)
 
-HITRUST offers three degrees of assurance, or levels of assessment: self-assessment, CSF validated, and CSF certified. Each level builds with increasing rigor on the one below it. An organization with the highest level, CFS-certified, meets all the certification requirements of the CSF. Microsoft Azure and Office 365 are the first hyperscale cloud services to receive certification for the HITRUST CSF. Coalfire, a HITRUST assessor firm, performed the assessments based on how Azure and Office 365 implement security, privacy, and regulatory requirements to protect sensitive information.
+HITRUST offers 3 degrees of assurance, or levels of assessment: self-assessment, CSF validated, and CSF certified. Each level builds with increasing rigor on the one below it. An organization with the highest level, CFS-certified, meets all the certification requirements of the CSF. Microsoft Azure and Office 365 are the first hyperscale cloud services to receive certification for the HITRUST CSF. Coalfire, a HITRUST assessor firm, performed the assessments based on how Azure and Office 365 implement security, privacy, and regulatory requirements to protect sensitive information.
 
 Learn how to accelerate your HITRUST deployment with our Azure Security and Compliance Blueprint.
 
@@ -47,13 +47,13 @@ Covered services for HITRUST CSF:
 
 ## Accelerate your deployment of HIPAA/HITRUST solutions on Azure
 
-Get a head start on taking advantage of the benefits of the cloud for health data solutions with the Azure Security and Compliance Blueprint - HIPAA/HITRUST Health Data and AI. This blueprint provides tools and guidance to get you started building HIPAA/HITRUST solutions today.
+Get a head start on taking advantage of the benefits of the cloud for health data solutions with the Azure Security and Compliance Blueprint — HIPAA/HITRUST Health Data and AI. This blueprint provides tools and guidance to get you started building HIPAA/HITRUST solutions today.
 
 [Start using the Azure HIPAA/HITRUST Blueprint](https://aka.ms/healthblueprint)
 
 ## Accelerate your HIPAA/HITRUST compliance when using Office 365
 
-Leverage Office 365 to manage health information in a secure and compliant way with Compliance Manager, which enables you to perform risk assessments against health regulations like HIPAA and security control frameworks like NIST CSF and NIST 800-53. You can follow step-by-step guidance to know how to implement and maintain data protection controls that help you meet healthcare compliance obligations.
+Use Office 365 to manage health information in a secure and compliant way with Compliance Manager, which enables you to perform risk assessments against health regulations like HIPAA and security control frameworks like NIST CSF and NIST 800-53. You can follow step-by-step guidance to know how to implement and maintain data protection controls that help you meet healthcare compliance obligations.
 
 [Start using Compliance Manager](https://aka.ms/compliancemanager)
 
@@ -79,11 +79,11 @@ Microsoft provides the most comprehensive offerings compared to other cloud serv
 
 **Does the certification demonstrate my organization’s usage of Office 365 compliance to HITRUST CSF?**
 
-When you store your data in a SaaS like Office 365, it’s a shared responsibility between Microsoft and your organization to achieve compliance. Microsoft manages majority of the infrastructure controls including physical security, network controls, application level controls, etc., and your organization has the responsibility to manage access controls and protect your sensitive data. The Office 365 HITRUST certification demonstrates the compliance of Microsoft’s control framework. Building on that, your organization needs to implement and maintain your own data protection controls to meet HITRUST CSF requirements.
+When you store your data in a SaaS like Office 365, it’s a shared responsibility between Microsoft and your organization to achieve compliance. Microsoft manages the majority of the infrastructure controls including physical security, network controls, application level controls, etc., and your organization has the responsibility to manage access controls and protect your sensitive data. The Office 365 HITRUST certification demonstrates the compliance of Microsoft’s control framework. Building on that, your organization needs to implement and maintain your own data protection controls to meet HITRUST CSF requirements.
 
 **Does Microsoft provide guidance for my organization to implement appropriate controls when using Office 365?**
 
-Yes, you can find recommended customer actions in Compliance Manager, cross-Microsoft Cloud solutions that help your organization meet complex compliance obligations when using cloud services. Specifically, for HITRUST CSF, we recommend you perform risk assessments using the NIST 800-53 and NIST CSF assessments in Compliance Manager. In the assessments, we provide you with step-by-step guidance and the Microsoft solutions you can leverage to implement your data protection controls. You can learn more about Compliance Manager in this [whitepaper](https://resources.office.com/ww-landing-m365e-gdpr-compliance-manager-whitepaper.html?lcid=en-us).
+Yes, you can find recommended customer actions in Compliance Manager, cross-Microsoft Cloud solutions that help your organization meet complex compliance obligations when using cloud services. Specifically, for HITRUST CSF, we recommend that you perform risk assessments using the NIST 800-53 and NIST CSF assessments in Compliance Manager. In the assessments, we provide you with step-by-step guidance and the Microsoft solutions you can use to implement your data protection controls. You can learn more about Compliance Manager in this [whitepaper](https://resources.office.com/ww-landing-m365e-gdpr-compliance-manager-whitepaper.html?lcid=en-us).
 
 ## Featured resources
 

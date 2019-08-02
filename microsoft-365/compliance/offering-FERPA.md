@@ -1,5 +1,5 @@
 ---
-title: Compliance Offering - Family Educational Rights and Privacy Act (FERPA)
+title: Compliance Offering — Family Educational Rights and Privacy Act (FERPA)
 description: Microsoft aligns with the requirements of the US Family Educational Rights and Privacy Act.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -18,9 +18,9 @@ ms.collection: M365-security-compliance
 
 The Family Educational Rights and Privacy Act (FERPA) is a US federal law that protects the privacy of students’ education records, including personally identifiable and directory information. FERPA was enacted to ensure that parents and students age 18 and older can access those records, request changes to them, and control the disclosure of information, except in specific and limited cases where FERPA allows for disclosure without consent.
 
-The law applies to schools, school districts, and any other institution that receives funding from the US Department of Education—that is, virtually all public K–12 schools and school districts, as well as most post-secondary institutions, both public and private.
+The law applies to schools, school districts, and any other institution that receives funding from the US Department of Education — that is, virtually all public K–12 schools and school districts, as well as most post-secondary institutions, both public and private.
 
-Security is central to compliance with FERPA, which requires the protection of student information from unauthorized disclosures. Educational institutions that use cloud computing need contractual reassurances that a technology vendor will manage sensitive student data appropriately.
+Security is central to compliance with FERPA, which requires the protection of student information from unauthorized disclosures. Educational institutions that use cloud computing need contractual reassurances that a technology vendor manages sensitive student data appropriately.
 
 ## Microsoft and (FERPA)
 
@@ -30,7 +30,7 @@ FERPA does not require or recognize audits or other certifications, so any acade
 - Furthermore, Microsoft commits to using customer data only to provide organizations with its cloud services and compatible purposes (such as improving malware detection), and does not mine customer data for advertising.
 - Microsoft also contractually commits not to disclose customer data except as the educational institution directs, as described in the contract, or as required by law. Schools that provide education records to Microsoft through their use of a Microsoft cloud service can thus be assured that those records are subject to stringent contractual restrictions regarding their use and disclosure.
 
-As a result of these contractual commitments, customers that are subject to FERPA—both educational institutions and third parties to whom they give access to sensitive student data—can confidently use in-scope Microsoft business cloud services to process, store, and transmit that data.
+As a result of these contractual commitments, customers that are subject to FERPA — both educational institutions and third parties to whom they give access to sensitive student data — can confidently use in-scope Microsoft business cloud services to process, store, and transmit that data.
 
 Learn about the benefits of FERPA on the Microsoft Cloud.
 
@@ -48,7 +48,7 @@ Services for which Microsoft agrees to be designated as a “school official” 
 - [Dynamics 365](https://aka.ms/d365-compliance-list)
 - Intune
 - [Office 365, Office 365 U.S. Government, and Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
-- Power BI, PowerApps and Microsoft Flow either as a standalone service or as included in an Office 365 branded plan or suite
+- Power BI, PowerApps, and Microsoft Flow either as a standalone service or as included in an Office 365 branded plan or suite
 - Azure DevOps Services
 - Windows Defender ATP
 

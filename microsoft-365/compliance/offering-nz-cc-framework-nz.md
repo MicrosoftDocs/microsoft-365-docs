@@ -1,5 +1,5 @@
 ---
-title: Compliance Offering - New Zealand Government Cloud Computing Security and Privacy Considerations
+title: Compliance Offering — New Zealand Government Cloud Computing Security and Privacy Considerations
 description: Microsoft NZ addresses the questions published in the New Zealand cloud computing framework.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -48,7 +48,7 @@ Exchange Online, SharePoint Online, and Skype for Business Online. (Note that Mi
 
 **To whom does the framework apply?**
 
-Organizations that fall under the GCIO mandate—the public and non-public service departments, the 20 district health boards, and seven Crown entities—must adhere to the framework when they are deciding on the use of a cloud service. The complete list of agencies mandated to follow the framework is available on the [ICT Assurance Scope page](http://aka.ms/NZICT-Assurance-Scope). The government expects other [State Service Agencies](http://www.ssc.govt.nz/what-is-the-public-sector) to follow this framework as well.
+Organizations that fall under the GCIO mandate — the public and non-public service departments, the 20 district health boards, and seven Crown entities — must adhere to the framework when they are deciding on the use of a cloud service. The complete list of agencies mandated to follow the framework is available on the [ICT Assurance Scope page](http://aka.ms/NZICT-Assurance-Scope). The government expects other [State Service Agencies](http://www.ssc.govt.nz/what-is-the-public-sector) to follow this framework as well.
 
 **Can my agency use Microsoft’s responses to this framework in the certification process of our ICT systems?**
 

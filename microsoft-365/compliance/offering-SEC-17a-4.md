@@ -1,5 +1,5 @@
 ---
-title: Compliance Offering - Securities and Exchange Commission (SEC) Rule 17a-4(f) United States
+title: Compliance Offering — Securities and Exchange Commission (SEC) Rule 17a-4(f) United States
 description: An independent assessment firm validated that Azure and Office 365 can help financial firms meet SEC Rule 17a-4(f) records retention and immutable storage requirements.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -58,7 +58,7 @@ Use case overviews, tutorials, and other resources to build Azure solutions for 
 
 The [US Securities and Exchange Commission](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide) (SEC) is an independent agency of the US federal government and the primary overseer and regulator of US securities markets. It wields enforcement authority over federal securities laws, proposes new securities rules, and oversees market regulation of the securities industry.
 
-The SEC defines rigorous and explicit requirements for regulated entities that elect to retain books and records on electronic storage media. It established [17 CFR 240.17a-3](https://docs.microsoft.com/en-us/office365/securitycompliance/retention-policies) and [17 CFR 240.17a-4](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?mc=true&node=pt17.4.240&rgn=div5#se17.4.240_117a_64) to regulate recordkeeping, including retention periods, for securities broker-dealers. Subsequently, the SEC [amended](https://servicetrust.microsoft.com/ViewPage/FFIECBlueprint) 17 CFR 240.17a-4 paragraph (f), issuing two interpretive releases expressly to allow books and records to be retained on electronic storage media as long as certain conditions were met.
+The SEC defines rigorous and explicit requirements for regulated entities that elect to retain books and records on electronic storage media. It established [17 CFR 240.17a-3](https://docs.microsoft.com/en-us/office365/securitycompliance/retention-policies) and [17 CFR 240.17a-4](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?mc=true&node=pt17.4.240&rgn=div5#se17.4.240_117a_64) to regulate recordkeeping, including retention periods, for securities broker-dealers. Later, the SEC [amended](https://servicetrust.microsoft.com/ViewPage/FFIECBlueprint) 17 CFR 240.17a-4 paragraph (f), issuing two interpretive releases expressly to allow books and records to be retained on electronic storage media as long as certain conditions were met.
 
 An electronic storage system meets those conditions if it prevents the alteration or erasure of records for the required retention period. Retention periods vary from three to six years based on record types, with immediate accessibility mandated for the first two years. Moreover, one of the interpretive releases requires that the storage system be capable of retaining records beyond the SEC-established retention period to comply with subpoenas, legal hold, or other such requirements.
 

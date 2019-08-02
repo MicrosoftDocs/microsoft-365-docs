@@ -27,7 +27,7 @@ CSA STAR is based on two key components of the CSA GRC Stack:
 - Cloud Controls Matrix (CCM): a controls framework covering fundamental security principles across 16 domains to help cloud customers assess the overall security risk of a CSP.
 - The Consensus Assessments Initiative Questionnaire (CAIQ): a set of more than 140 questions based on the CCM that a customer or cloud auditor may want to ask of CSPs to assess their compliance with CSA best practices.
 
-STAR provides three levels of assurance; CSA STAR Self-Assessment is the introductory offering at Level 1, which is free and open to all CSPs. Going further up the assurance stack, Level 2 of the STAR program involves third-party assessment-based certifications, and Level 3 involves certifications based on continuous monitoring.
+STAR provides three levels of assurance; CSA-STAR Self-Assessment is the introductory offering at Level 1, which is free and open to all CSPs. Going further up the assurance stack, Level 2 of the STAR program involves third-party assessment-based certifications, and Level 3 involves certifications based on continuous monitoring.
 
 ## Microsoft and CSA STAR Self-Assessment
 
@@ -60,7 +60,7 @@ The CCM corresponds to industry-accepted security standards, regulations, and co
 
 **Why is the CSA STAR Self-Assessment important?**
 
-It enables CSPs to document compliance with CSA published best practices in a transparent manner. Self-assessment reports are publicly available, thereby helping cloud customers gain visibility into the security practices of CSPs, as well as compare various CSPs using the same baseline.
+It enables CSPs to document compliance with CSA published best practices in a transparent manner. Self-assessment reports are publicly available, thereby helping cloud customers gain visibility into the security practices of CSPs, and compare various CSPs using the same baseline.
 
 **Which CSA STAR levels of assurance have Microsoft business cloud services attained?**
 
@@ -76,7 +76,7 @@ It enables CSPs to document compliance with CSA published best practices in a tr
 - [CSA Security, Trust & Assurance Registry (STAR)](https://cloudsecurityalliance.org/star/)
 - Microsoft Common Controls Hub Compliance Framework
 
-## Microsoft CSA STAR Self Assessments
+## Microsoft CSA STAR Self-Assessments
 
 - [Azure](http://aka.ms/Azure_STAR)
 - [Dynamics 365](http://aka.ms/DynamicsCRM_Online_STAR)

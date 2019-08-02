@@ -1,5 +1,5 @@
 ---
-title: Compliance Offering - Financial Supervision Authority (KNF) Poland
+title: Compliance Offering — Financial Supervision Authority (KNF) Poland
 description: Microsoft has published guidance to help financial institutions in Poland with cloud adoption.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -18,7 +18,7 @@ ms.collection: M365-security-compliance
 
 The [Polish Financial Supervision Authority](https://www.knf.gov.pl/en/) ([Komisja Nadzoru Finansowego](https://www.knf.gov.pl/), KNF) is the financial regulatory authority in Poland, responsible for supervision of the financial market, which includes oversight over banking, capital markets, insurance, pension schemes, and electronic money institutions.
 
-The KNF acts in concert with the [European Banking Authority](https://eba.europa.eu/about-us;jsessionid=E8D8278DC888C3952A3DCCBAF3AC1417) (EBA), “an independent EU authority which works to ensure effective and consistent prudential regulation and supervision across the European banking sector.” To that end, the EBA has outlined a comprehensive approach to the use of cloud computing by financial institutions in the EU, [Recommendations on outsourcing to cloud services providers](https://eba.europa.eu/documents/10180/2170121/Final+draft+Recommendations+on+Cloud+Outsourcing+%28EBA-Rec-2017-03%29.pdf/5fa5cdde-3219-4e95-946d-0c0d05494362).
+The KNF acts in concert with the [European Banking Authority](https://eba.europa.eu/about-us;jsessionid=E8D8278DC888C3952A3DCCBAF3AC1417) (EBA), “an independent EU authority, which works to ensure effective and consistent prudential regulation and supervision across the European banking sector.” To that end, the EBA has outlined a comprehensive approach to the use of cloud computing by financial institutions in the EU, [Recommendations on outsourcing to cloud services providers](https://eba.europa.eu/documents/10180/2170121/Final+draft+Recommendations+on+Cloud+Outsourcing+%28EBA-Rec-2017-03%29.pdf/5fa5cdde-3219-4e95-946d-0c0d05494362).
 
 There are several requirements and guidelines that financial institutions in Poland should be aware of when moving business functions and data to the cloud:
 
@@ -38,7 +38,7 @@ The Microsoft checklist helps Polish financial firms conducting due-diligence as
 
 An overview of the regulatory landscape for context.
 
-A checklist that sets forth the issues to be addressed and maps Microsoft Azure, Microsoft Dynamics 365, and Microsoft 365 services against those regulatory obligations. The checklist can be used as a tool to measure compliance against a regulatory framework and provide an internal structure for documenting compliance, as well as help customers conduct their own risk assessments of Microsoft business cloud services.
+A checklist that sets forth the issues to be addressed and maps Microsoft Azure, Microsoft Dynamics 365, and Microsoft 365 services against those regulatory obligations. The checklist can be used as a tool to measure compliance against a regulatory framework and provide an internal structure for documenting compliance, and help customers conduct their own risk assessments of Microsoft business cloud services.
 
 ## How to implement
 

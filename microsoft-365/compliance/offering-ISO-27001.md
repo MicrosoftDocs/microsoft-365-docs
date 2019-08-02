@@ -1,5 +1,5 @@
 ---
-title: Compliance Offerings - ISO/IEC 27001:2013 Information Security Management Standards
+title: Compliance Offerings — ISO/IEC 27001:2013 Information Security Management Standards
 description: Microsoft is certified for its implementation of these information security management standards.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -24,7 +24,7 @@ ISO/IEC 27001 is a security standard that formally specifies an Information Secu
 
 ## Microsoft and ISO/IEC 27001
 
-The international acceptance and applicability of ISO/IEC 27001 is the key reason why certification to this standard is at the forefront of Microsoft’s approach to implementing and managing information security. Microsoft’s achievement of ISO/IEC 27001 certification points up its commitment to making good on customer promises from a business, security compliance standpoint. Currently, both Azure Public and Azure Germany are audited once a year for ISO/IEC 27001 compliance by a third party accredited certification body, providing independent validation that security controls are in place and operating effectively.  
+The international acceptance and applicability of ISO/IEC 27001 is the key reason why certification to this standard is at the forefront of Microsoft’s approach to implementing and managing information security. Microsoft’s achievement of ISO/IEC 27001 certification points up its commitment to making good on customer promises from a business, security compliance standpoint. Currently, both Azure Public and Azure Germany are audited once a year for ISO/IEC 27001 compliance by a third-party accredited certification body, providing independent validation that security controls are in place and operating effectively.  
   
 Learn about the benefits of ISO-Iec-27001 on the Microsoft Cloud.
 
@@ -38,17 +38,17 @@ Learn about the benefits of ISO-Iec-27001 on the Microsoft Cloud.
 
 #### Azure
 
-- [Azure, Cloud App Security, Flow, Genomics, Graph, Health Bot, Intune, OMS Service Map, PowerApps, Power BI, Stream and Microsoft Datacenter - ISO 27001 Certificate](https://go.microsoft.com/fwlink/p/?linkid=2078342)
+- [Azure, Cloud App Security, Flow, Genomics, Graph, Health Bot, Intune, OMS Service Map, PowerApps, Power BI, Stream, and Microsoft Datacenter — ISO 27001 Certificate](https://go.microsoft.com/fwlink/p/?linkid=2078342)
 
 #### Office 365
 
-- [Office 365 - Global and Germany ISO 27001 - Information Security Management Standards – Certificate](https://aka.ms/o365iso27001cert)
+- [Office 365 — Global and Germany ISO 27001 — Information Security Management Standards — Certificate](https://aka.ms/o365iso27001cert)
 
 #### Dynamics 365
 
-- [Dynamics 365 - (formerly Dynamics CRM) ISO 27001 - Information Security Management Standards – Certificate](https://aka.ms/D365ISO27001Cert)
-- [Dynamics 365 - Microsoft Dynamics Marketing Service (MDM) ISO 27001 - Information Security Management Standards – Certificate](https://aka.ms/d365mdm27001cert)
-- [Dynamics 365 - Microsoft Social Engagement Service ISO 27001 - Information Security Management Standards – Certificate](https://aka.ms/d365siso27001cert)
+- [Dynamics 365 — (formerly Dynamics CRM) ISO 27001 — Information Security Management Standards — Certificate](https://aka.ms/D365ISO27001Cert)
+- [Dynamics 365 — Microsoft Dynamics Marketing Service (MDM) ISO 27001 — Information Security Management Standards — Certificate](https://aka.ms/d365mdm27001cert)
+- [Dynamics 365 — Microsoft Social Engagement Service ISO 27001 — Information Security Management Standards — Certificate](https://aka.ms/d365siso27001cert)
 
 #### Azure DevOps Services
 
@@ -61,26 +61,26 @@ Learn about the benefits of ISO-Iec-27001 on the Microsoft Cloud.
 
 #### Windows Defender ATP
 
-- [Windows Defender ATP - Endpoint Detection & Response, Automatic Investigation & Remediation, Secure Score - ISO 27001 certificate](https://aka.ms/windowsdefenderatpiso27001certificate)
+- [Windows Defender ATP — Endpoint Detection & Response, Automatic Investigation & Remediation, Secure Score — ISO 27001 certificate](https://aka.ms/windowsdefenderatpiso27001certificate)
 
 ### Assessments and reports
 
 #### Azure
 
-- [Azure, Cloud App Security, Flow, Genomics, Graph, Health Bot, Intune, OMS Service Map, PowerApps, Power BI, Stream and Microsoft Datacenter - ISO 27001 and 27018 Audit Assessment Report](https://go.microsoft.com/fwlink/p/?linkid=2078010)
-- [Azure, Cloud App Security, Flow, Genomics, Graph, Health Bot, Intune, OMS Service Map, PowerApps, Power BI, Stream and Microsoft Datacenter - ISO 27001 and 27018 Statement of Applicability (SOA)](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=47d89200-b24b-491d-b657-7c523ddfb6f9&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports)
+- [Azure, Cloud App Security, Flow, Genomics, Graph, Health Bot, Intune, OMS Service Map, PowerApps, Power BI, Stream, and Microsoft Datacenter — ISO 27001 and 27018 Audit Assessment Report](https://go.microsoft.com/fwlink/p/?linkid=2078010)
+- [Azure, Cloud App Security, Flow, Genomics, Graph, Health Bot, Intune, OMS Service Map, PowerApps, Power BI, Stream, and Microsoft Datacenter — ISO 27001 and 27018 Statement of Applicability (SOA)](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=47d89200-b24b-491d-b657-7c523ddfb6f9&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports)
 
 #### Office 365
 
-- [Office 365 - ISO 27001, ISO 27018, and ISO 27017 Audit Assessment Report](https://aka.ms/o365isoreport)
-- [Office 365 Information Security Management System (ISMS) - Statement Of Applicability for Security and Privacy](https://aka.ms/o365isosoa)
-- [Office 365 - Germany ISO 27001 ISO 27017 and ISO 27018 Audit Assessment Report](https://aka.ms/o365gerisoaudit)
+- [Office 365 — ISO 27001, ISO 27018, and ISO 27017 Audit Assessment Report](https://aka.ms/o365isoreport)
+- [Office 365 Information Security Management System (ISMS) — Statement Of Applicability for Security and Privacy](https://aka.ms/o365isosoa)
+- [Office 365 — Germany ISO 27001 ISO 27017 and ISO 27018 Audit Assessment Report](https://aka.ms/o365gerisoaudit)
 - [Yammer ISO 27001 Audit Assessment Report](https://aka.ms/yammeriso)
 
 #### Dynamics 365
 
 - [Dynamics 365 (formerly Dynamics CRM) ISO 27001 Audit Assessment Report 2017](https://aka.ms/D365ISO27001Report)
-- [Dynamics 365 - ISO 27001 Statement of Applicability (SOA)](https://aka.ms/d365isosoa)
+- [Dynamics 365 — ISO 27001 Statement of Applicability (SOA)](https://aka.ms/d365isosoa)
 
 #### Azure DevOps Services
 
@@ -88,8 +88,8 @@ Learn about the benefits of ISO-Iec-27001 on the Microsoft Cloud.
 
 #### Windows Defender ATP
 
-- [Windows Defender ATP - Endpoint Detection & Response, Automatic Investigation & Remediation, Secure Score - ISO 27001 Audit Assessment Report](https://aka.ms/windowsdefenderatpiso27001auditreport)
-- [Windows Defender ATP - Endpoint Detection & Response, Automatic Investigation & Remediation, Secure Score - ISO 27001 and 27018 SOA](https://aka.ms/windowsdefenderatpiso27001SOA)
+- [Windows Defender ATP — Endpoint Detection & Response, Automatic Investigation & Remediation, Secure Score — ISO 27001 Audit Assessment Report](https://aka.ms/windowsdefenderatpiso27001auditreport)
+- [Windows Defender ATP — Endpoint Detection & Response, Automatic Investigation & Remediation, Secure Score — ISO 27001 and 27018 SOA](https://aka.ms/windowsdefenderatpiso27001SOA)
 
 ## Microsoft in-scope cloud services
 
@@ -111,7 +111,7 @@ Covered services include:
 - Power BI cloud service either as a standalone service or as included in an Office 365 branded plan or suite
 - Stream
 - Azure DevOps Services
-- Windows Defender ATP - Endpoint Detection & Response, Automatic Investigation & Remediation, Secure Score
+- Windows Defender ATP — Endpoint Detection & Response, Automatic Investigation & Remediation, Secure Score
 
 ## Frequently asked questions
 
@@ -140,7 +140,7 @@ Yes. If your business requires ISO/IEC 27001 certification for implementations d
 
 ## Featured resources
 
-- [Mapping Microsoft Cyber Offerings to: NIST Cybersecurity (CSF), CIS Controls and ISO27001:2013 Frameworks](http://download.microsoft.com/download/B/1/8/B18F4C7D-5CBA-4E68-A437-31F1E908ACBA/Microsoft_Cyber_Offerings_Mapped_to_Security_Frameworks_EN_US.pdf)
+- [Mapping Microsoft Cyber Offerings to: NIST Cybersecurity (CSF), CIS Controls, and ISO27001:2013 Frameworks](http://download.microsoft.com/download/B/1/8/B18F4C7D-5CBA-4E68-A437-31F1E908ACBA/Microsoft_Cyber_Offerings_Mapped_to_Security_Frameworks_EN_US.pdf)
 - [The ISO/IEC 27000 Directory](http://www.27000.org/index.htm)
 - [ISO/IEC 27001: 2013 standard](http://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.htm?csnumber=54534) (for purchase)
 - [Microsoft sets a high bar for information security](http://pages.bsigroup.com/l/73472/2015-07-24/v9btr) (BSI case study)

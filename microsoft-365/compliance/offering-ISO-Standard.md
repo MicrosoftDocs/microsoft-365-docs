@@ -31,7 +31,7 @@ Reconciling multiple regulatory requirements into a universal set of operational
 
 Auditors, both internal and third party, can assess regulatory compliance using a universal operational control set within a single audit cycle.
 
-**Promises of compliance without proof is potentially risky**
+**Promises of compliance without proof are potentially risky**
 
 Commercial agreements involving movement of personal information may warrant certification of compliance.
 
@@ -41,11 +41,11 @@ Expecting vendors to certify against PIMS will be effective for establishing res
 
 # Too many regulatory requirements to juggle
 
-27552 includes an annex to which the operational controls of the standards are mapped against controllers and processors relevant requirements in GDPR. This mapping is just an example of how one privacy regulation can be operationalized with the ISO framework. As additional mappings with other regulations become available and are validated, the operational controls from the standards can be transferred directly from regulatory review to implementation. This universal framework allows compliance teams within organizations to reliably operationalize the relevant regulatory requirements without “reinventing the wheel”.
+27552 includes an annex to which the operational controls of the standards are mapped against controllers and processors relevant requirements in GDPR. This mapping is just an example of how one privacy regulation can be operationalized with the ISO framework. As additional mappings with other regulations become available and are validated, the operational controls from the standards can be transferred directly from regulatory review to implementation. This universal framework allows compliance teams within organizations to reliably operationalize the relevant regulatory requirements without “reinventing the wheel.”
 
 # Too costly to audit regulation-by-regulation
 
-Let’s go back to our opening statement on the current landscape. As more and more privacy regulations come into force in various jurisdictions, the pressure to provide evidence of compliance will also increase. But the costs of disparate regulatory audits will become prohibitive if every regulation requires its own unique audit process. By outlining a set of universal operational controls, PIMS also outlines a universal framework to audit, and potentially certify, for multiple regulatory requirements.
+Let’s go back to our opening statement on the current landscape. As more privacy regulations come into force in various jurisdictions, the pressure to provide evidence of compliance will also increase. But the costs of disparate regulatory audits become prohibitive if every regulation requires its own unique audit process. By outlining a set of universal operational controls, PIMS also outlines a universal framework to audit, and potentially certify, for multiple regulatory requirements.
 
 It is important to recognize that an official GDPR certification requires pending approval decisions to be made by the European regulators. *While the alignment between PIMS and GDPR is evident, a PIMS certification should be taken as evidence of GDPR compliance, not as an official GDPR certification until regulatory decisions are finalized.*
 
@@ -53,11 +53,11 @@ It is important to recognize that an official GDPR certification requires pendin
 
 Modern organizations engage in complex data transfer with a deep network of business partners including partner organizations or co-controllers, processors such as cloud providers, and sub-processors such as vendors who support those same processors. Failure to comply with regulations in any part of this network may lead to cascading compliance issues across the supply chain. This is where a verification of compliance can be valuable beyond the assurance provided by contractual terms between these organizations. Since the global economy dictates that most of these organizations are spread out around the world, it is practical to use an international standard from ISO to manage compliance across the network.
 
-This reliance on compliance increases the importance of certification to the standard. While not all companies and organizations need to earn such certification, most will benefit from partners and vendors who do, especially when sensitive or high volumes of data processing is involved.
+This reliance on compliance increases the importance of certification to the standard. While not all companies and organizations need to earn such certification, most will benefit from partners and vendors who do, especially when sensitive or high volumes of data processing are involved.
 
 # Building blocks of the standard
 
-PIMS is built on top of one of the most widely adopted international standards for information security management, [ISO/IEC 27001](https://www.microsoft.com/en-us/trustcenter/compliance/iso-iec-27001). If your organization is already familiar with ISO/IEC 27001, it will be logical and more efficient to integrate the new privacy controls of PIMS. This means the implementation and audit of both will be less expensive and easier to achieve.
+PIMS is built on top of one of the most widely adopted international standards for information security management, [ISO/IEC 27001](https://www.microsoft.com/en-us/trustcenter/compliance/iso-iec-27001). If your organization is already familiar with ISO/IEC 27001, it is logical and more efficient to integrate the new privacy controls of PIMS. This means the implementation and audit of both will be less expensive and easier to achieve.
 
 **Key points on ISO/IEC 27001 and PIMS:**
 

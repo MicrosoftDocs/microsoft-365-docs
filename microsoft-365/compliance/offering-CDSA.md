@@ -1,5 +1,5 @@
 ---
-title: Compliance Offering - Content Delivery & Security Association (CDSA) Content Protection & Security (CPS) Standard
+title: Compliance Offering — Content Delivery & Security Association (CDSA) Content Protection & Security (CPS) Standard
 description: Azure is certified to the Content Delivery and Security Association Content Protection and Security standard.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -22,13 +22,13 @@ The CDSA [Content Protection & Security (CPS) Standard](http://aka.ms/cdsa-stand
   
 The CPS certification audit is administered directly by the CDSA and consists of over 300 distinct controls that help secure and manage physical datacenters, harden services, and protect storage facilities. All controls are optimized to handle sensitive and valuable media assets. Once a system is validated by the CDSA assessor, the CDSA issues a certificate of compliance. To maintain compliance, the certified entity must submit the results of annual audits to the CDSA.
 
-## Microsoft and CDSA - CPS Standard
+## Microsoft and CDSA — CPS Standard
 
-The Microsoft Azure Media Services CSMS has been validated by the CDSA, awarding Azure Media Services certification to this standard. Microsoft demonstrated a proof of risk assessment against the CPS standard requirements. We also filed a comprehensive Statement of Applicability that articulated the content protection features of Azure Media Services. Microsoft is committed to continuing the annual CDSA audits, as well as maintaining the internal audits and controls necessary to retain CPS certification.  
+The Microsoft Azure Media Services CSMS has been validated by the CDSA, awarding Azure Media Services certification to this standard. Microsoft demonstrated a proof of risk assessment against the CPS standard requirements. We also filed a comprehensive Statement of Applicability that articulated the content protection features of Azure Media Services. Microsoft is committed to continuing the annual CDSA audits, and maintaining the internal audits and controls necessary to retain CPS certification.  
   
 The CPS certification provides a standards-based method of assuring our customers and yours that the intellectual property rights of media assets stored, managed, and distributed from within Azure are protected. Furthermore, you can use Azure CPS certification toward your own CPS certification efforts.  
   
-Azure Media Services was the first hyperscale cloud media platform to offer encryption on the fly for both Video On Demand and live-streaming broadcasts. Azure Media Services provides a number of security-enhanced upload channels for content, including the ExpressRoute private network connection to Azure, UDP upload via the Aspera client, and HTTPS upload over the Internet.  
+Azure Media Services was the first hyperscale cloud media platform to offer encryption on the fly for both Video On Demand and live-streaming broadcasts. Azure Media Services provides several security-enhanced upload channels for content, including the ExpressRoute private network connection to Azure, UDP upload via the Aspera client, and HTTPS upload over the Internet.  
   
 Learn about the benefits of CDSA on the Microsoft Cloud.
 
@@ -36,7 +36,7 @@ Learn about the benefits of CDSA on the Microsoft Cloud.
 
 Learn how to accelerate your CDSA deployment with our Azure Security and Compliance Blueprints.
 
-- [Download the Microsoft Azure - Implementing CDSA-Compliant Content Protection and Security guide](https://gallery.technet.microsoft.com/Azure-Implementing-CDSA-8087c7a2)
+- [Download the Microsoft Azure — Implementing CDSA-Compliant Content Protection and Security guide](https://gallery.technet.microsoft.com/Azure-Implementing-CDSA-8087c7a2)
 
 ## Audits, reports, and certificates
 

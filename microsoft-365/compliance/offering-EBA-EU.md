@@ -1,5 +1,5 @@
 ---
-title: Compliance Offering - European Banking Authority (EBA)
+title: Compliance Offering — European Banking Authority (EBA)
 description: Microsoft guidance to help financial institutions in the EU follow EBA recommendations for cloud adoption.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -33,7 +33,7 @@ The Microsoft guidance addresses, point by point, each of the EBA recommendation
 - Business continuity. Microsoft provides business continuity and resolution provisions in our Financial Services Amendment, including the willingness to provide transition assistance through Microsoft Consulting Services.
 - Risk assessment and security monitoring. Microsoft enables customers to conduct their own risk assessments and provides tools and dashboards so they can supervise and monitor our cloud services.
 
-For financial institutions in the EU, Microsoft has also published [Risk Assessment and Compliance Guide for Financial Institutions in the Microsoft Cloud](https://aka.ms/RiskGovernanceGuide), a checklist modeled after EBA guidance. It explains how to establish a governance model optimized to meet regulatory requirements, and efficiently evaluate the risks of using Microsoft cloud services, followed by submission for regulatory approval. Our guide includes a list of questions to be answered in a regulatory submission that are specifically drawn from, and responsive to, EBA guidance on outsourcing to cloud service providers.
+For financial institutions in the EU, Microsoft has also published [Risk Assessment and Compliance Guide for Financial Institutions in the Microsoft Cloud](https://aka.ms/RiskGovernanceGuide), a checklist modeled after EBA guidance. It explains how to establish a governance model optimized to meet regulatory requirements, and efficiently evaluate the risks of using Microsoft cloud services, followed by submission for regulatory approval. Our guide includes a list of questions to be answered in a regulatory submission that are drawn from, and responsive to, EBA guidance on outsourcing to cloud service providers.
 
 ## How to implement
 

@@ -1,5 +1,5 @@
 ---
-title: Compliance Offering - NEN 7510
+title: Compliance Offering — NEN 7510
 description: Organizations in the Netherlands must demonstrate control over patient health data in accordance with the NEN 7510 standard.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -16,15 +16,15 @@ ms.collection: M365-security-compliance
 
 ## NEN 7510 Overview
 
-Organizations in the Netherlands that process patient health information must demonstrate control over that data and their organization consistent with the requirements set out in the NEN 7510 standard. Microsoft is not itself subject to NEN 7510, but its cloud customers in the healthcare sector need to establish that they comply with NEN 7510 with respect to solutions built on the Microsoft Cloud. Microsoft cloud services undergo various periodic certifications and audits, some of which include elements closely related to requirements specified in NEN 7510.
+Organizations in the Netherlands that process patient health information must demonstrate control over that data and their organization consistent with the requirements set out in the NEN 7510 standard. Microsoft is not itself subject to NEN 7510, but its cloud customers in the healthcare sector need to establish that they comply with NEN 7510 regarding solutions built on the Microsoft Cloud. Microsoft cloud services undergo various periodic certifications and audits, some of which include elements closely related to requirements specified in NEN 7510.
 
 ## Microsoft and NEN 7510:2011
 
-Microsoft has analyzed our current certifications and assurance statements and created a [NEN 7510 coverage report](https://protection.office.com/DownloadFile/ServiceAssurance/Document/compliance/Azure%20and%20Office%20365%20NEN7510-2011%20Standard%20Coverage/pdf) (available on the Service Trust Platform), which maps those certifications and assurance statements against the NEN 7510 controls for which Microsoft is responsible as a cloud service provider. This document can help customers determine which additional controls they must implement to ensure that their use of Microsoft cloud services in connection with the storage or processing of patient health information complies with NEN 7510.
+Microsoft has analyzed our current certifications and assurance statements and created a [NEN 7510 coverage report](https://protection.office.com/DownloadFile/ServiceAssurance/Document/compliance/Azure%20and%20Office%20365%20NEN7510-2011%20Standard%20Coverage/pdf) (available on the Service Trust Platform), which maps those certifications and assurance statements against the NEN 7510 controls for which Microsoft is responsible as a cloud service provider. This document can help customers determine which additional controls they must implement to ensure that their use of Microsoft cloud services for the storage or processing of patient health information complies with NEN 7510.
 
 Learn how to accelerate your NEN 7510 deployment with our Azure Security and Compliance Blueprints.
 
-[Download the Microsoft Cloud - Azure and Office 365 NEN7510-2011 Standard Coverage User Guide](https://aka.ms/Azure-NEN7510-2011)
+[Download the Microsoft Cloud — Azure and Office 365 NEN7510-2011 Standard Coverage User Guide](https://aka.ms/Azure-NEN7510-2011)
 
 ## Audits, reports, and certificates
 
@@ -47,7 +47,7 @@ Demonstrating NEN compliance is the responsibility of the healthcare organizatio
 
 The responsibility for NEN 7510 compliance is applicable to Dutch Healthcare organizations. It requires the organization to implement an information security management system and to address risk with appropriate technical and organizational measures. For Microsoft in its role as cloud service provider, NEN 7510 compliance is not the objective, nor is it technically feasible. When a customer implements or uses Microsoft Online Services, those services may be in scope of a NEN 7510 evaluation. However, the organization must add its own (additional) controls, choices, and processes that are part of the overall NEN 7510 evaluation. The objective of the report is to demonstrate that a Healthcare entity can adopt the Microsoft Online Services in a manner that is compliant with NEN 7510.
 
-**The report does not show 100% coverage; is NEN 7510 compliance not feasible?**
+**The report does not show 100% coverage. Is NEN 7510 compliance not feasible?**
 
 Microsoft Online Services provides many controls that help organizations within Dutch Healthcare with their NEN 7510 compliance needs. However, an organization needs to complement those vendor assurances with their own implementation choices, additional technology controls, and administrative processes. The report shows already over 94% direct coverage of the full list of applicable controls. For the remaining controls, Microsoft provides guidance in the report on how compliance with those controls can be demonstrated.
 

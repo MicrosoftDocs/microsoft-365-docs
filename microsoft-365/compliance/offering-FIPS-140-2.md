@@ -1,5 +1,5 @@
 ---
-title: Compliance Offering - Federal Information Processing Standard (FIPS) Publication 140-2
+title: Compliance Offering — Federal Information Processing Standard (FIPS) Publication 140-2
 description: Microsoft certifies that its cryptographic modules comply with the US Federal Information Processing Standard.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -18,9 +18,9 @@ ms.collection: M365-security-compliance
 
 The Federal Information Processing Standard (FIPS) Publication 140 is a US government standard that defines minimum security requirements for cryptographic modules in products and systems, as defined in Section 5131 of the Information Technology Management Reform Act of 1996.  
   
-Testing against the FIPS 140 standard is maintained by the Cryptographic Module Validation Program, a joint effort of the US National Institute of Standards and Technology (NIST) and the Communications Security Establishment of Canada. The current version of the standard, FIPS 140-2, has security requirements covering 11 areas related to the design and implementation of a cryptographic module. Each module has its own security policy—a precise specification of the security rules under which it will operate—and employs approved cryptographic algorithms, cryptographic key management, and authentication techniques. For each area, a cryptographic module receives a security level rating—1 to 4, from lowest to highest—depending on the requirements met.  
+Testing against the FIPS 140 standard is maintained by the Cryptographic Module Validation Program, a joint effort of the US National Institute of Standards and Technology (NIST) and the Communications Security Establishment of Canada. The current version of the standard, FIPS 140-2, has security requirements covering 11 areas related to the design and implementation of a cryptographic module. Each module has its own security policy — a precise specification of the security rules under which it operates—and employs approved cryptographic algorithms, cryptographic key management, and authentication techniques. For each area, a cryptographic module receives a security level rating — 1 to 4, from lowest to highest — depending on the requirements met.  
   
-Validation against the FIPS 140-2 standard is required for all US federal government agencies that use cryptography-based security systems—hardware, firmware, software, or a combination—to protect sensitive but unclassified information stored digitally. (Note, however, that any business can take advantage of the FIPS 140-2 mode of operation if they desire.) Some agencies also require that the modules procured for secret systems meet the FIPS 140-2 requirements.
+Validation against the FIPS 140-2 standard is required for all US federal government agencies that use cryptography-based security systems — hardware, firmware, software, or a combination — to protect sensitive but unclassified information stored digitally. (Note, however, that any business can take advantage of the FIPS 140-2 mode of operation if they desire.) Some agencies also require that the modules procured for secret systems meet the FIPS 140-2 requirements.
 
 ## Microsoft and FIPS
 
@@ -36,7 +36,7 @@ Learn about the benefits of FIPS on the Microsoft Cloud.
 
 Validated Microsoft business cloud services include Azure, Azure Government, Dynamics 365, Dynamics 365 Government, Office 365, Office 365 U.S. Government, Office 365 U.S. Government Defense, Windows, Windows Server.  
   
-Certification goes into effect when Microsoft receives validation from NIST; it does not expire.
+Certification goes into effect when Microsoft receives validation from NIST. It does not expire.
 
 - Learn how Microsoft products and cryptographic modules comply with FIPS 140
 - [Microsoft FIPS 140 Validated Cryptographic Modules](https://technet.microsoft.com/en-us/library/cc750357.aspx#ID0EWFAC)
@@ -48,8 +48,8 @@ Certification goes into effect when Microsoft receives validation from NIST; it 
 
 These are two separate security standards with different, but complementary, purposes.
 
-- FIPS 140-2 is a standard designed specifically for validating product modules that implement cryptography rather than the products that use them—for example, Azure is not FIPS-compliant. However, cryptographic modules that are implemented within a service can be certified as meeting the requirements for hash strength, key management, and the like.
-- [Common Criteria](http://www.commoncriteriaportal.org/) is a set of guidelines and specifications for evaluating security functions in IT products and includes a path to certification. In many cases, Common Criteria evaluations will rely on FIPS 140-2 validations to provide assurance that cryptographic functionality is implemented properly. (Windows and Windows Server have received an official certification of their compliance with Common Criteria from an independent auditor.)
+- FIPS 140-2 is a standard designed specifically for validating product modules that implement cryptography rather than the products that use them — for example, Azure is not FIPS-compliant. However, cryptographic modules that are implemented within a service can be certified as meeting the requirements for hash strength, key management, and the like.
+- [Common Criteria](http://www.commoncriteriaportal.org/) is a set of guidelines and specifications for evaluating security functions in IT products and includes a path to certification. Often, Common Criteria evaluations rely on FIPS 140-2 validations to provide assurance that cryptographic functionality is implemented properly. (Windows and Windows Server have received an official certification of their compliance with Common Criteria from an independent auditor.)
 
 **There are so many modules listed on the NIST website for each release. How do I know which one applies to my agency?**
 
