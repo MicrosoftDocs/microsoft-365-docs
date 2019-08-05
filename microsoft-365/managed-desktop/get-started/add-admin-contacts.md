@@ -29,10 +29,10 @@ Admin contacts should be the best person or group that can answer questions and 
 
 Area of focus | For questions about
 --- | ---
-App Packaging | Troubleshooting App Packaging
+App packaging | Troubleshooting App Packaging
 Devices | Device health, troubleshooting with Microsoft Managed Desktop devices
 Security | Troubleshooting security issues with Microsoft Managed Desktop devices
-IT Help Desk | in cases where Microsoft Managed Desktop Support hands over end user tickets outside of MMD support areas 
+IT help desk | in cases where Microsoft Managed Desktop Support hands over end user tickets outside of MMD support areas 
 Other | For issues not covered by other areas
 
 Whoever you choose for these contacts needs to have the knowledge and authority to make decisions for your Microsoft Managed Desktop environment. When you onboard your Microsoft Managed Desktop environment, you’re prompted to add contacts for your local Helpdesk and Security. 
