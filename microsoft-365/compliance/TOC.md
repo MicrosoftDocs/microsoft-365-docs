@@ -41,7 +41,8 @@
 
 ### [Microsoft's data protection officer](gdpr-data-protection-officer.md)
 
-# [Compliance offerings](offering-home.md)
+# [Compliance offerings]()
+## [Microsoft compliance offerings](offering-home.md)
 
 ## [Global]()
 ### [CIS Benchmark](offering-cis-benchmark.md)
