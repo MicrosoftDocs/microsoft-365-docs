@@ -18,7 +18,7 @@ ms.collection: M365-security-compliance
 
 To join the EU-U.S. and Swiss-U.S. Privacy Shield Frameworks — an action that is voluntary — US-based companies must publicly commit to complying with framework requirements and self-certify their compliance to the US Department of Commerce. Once they publicly commit and self-certify, that commitment becomes enforceable under US law.
 
-Microsoft has publicly committed to the [Privacy Shield Principles](https://www.privacyshield.gov/article?id=Requirements-of-Participation) and has self-certified its compliance with its requirements. Our participation applies to all personal data processed by Microsoft that is transferred to the United States from the European Union, European Economic Area (EEA), and Switzerland. In addition, customers of Microsoft business cloud services benefit from compliance with the Standard Contractual Clauses (also known as [EU Model Clauses](https://www.microsoft.com/trustcenter/compliance/eu-model-clauses)) under the [Microsoft Online Services Terms](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31), unless the customer has opted out of those clauses.
+Microsoft has publicly committed to the [Privacy Shield Principles](https://www.privacyshield.gov/article?id=Requirements-of-Participation) and has self-certified its compliance with its requirements. Our participation applies to all personal data processed by Microsoft that is transferred to the United States from the European Union, European Economic Area (EEA), and Switzerland. In addition, customers of Microsoft business cloud services benefit from compliance with the Standard Contractual Clauses (also known as [EU Model Clauses](offering-eu-model-clauses.md)) under the [Microsoft Online Services Terms](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31), unless the customer has opted out of those clauses.
 
 Microsoft cooperates with EU and Swiss national data protection authorities (DPAs) and complies with their advice for resolving any disputes that arise under the Privacy Shield. We will also meet Privacy Shield obligations for transparency about government requests for access to personal information. Our [Law Enforcement Requests Report](https://www.microsoft.com/corporate-responsibility/lerr) and [U.S. National Security Orders Report](https://www.microsoft.com/corporate-responsibility/fisa/) make this information publicly available twice a year.
 
@@ -81,6 +81,6 @@ If you have a complaint that is Privacy Shield-related, please let us know using
 
 - [EU Data Protection Directive](https://eur-lex.europa.eu/legal-content/en/ALL/?uri=CELEX:31995L0046)
 - [Privacy Shield Frequently Asked Questions](https://www.privacyshield.gov/article?id=FAQs)
-- [Microsoft and the EU Model Clauses](https://www.microsoft.com/trustcenter/compliance/eu-model-clauses)
+- [Microsoft and the EU Model Clauses](offering-eu-model-clause.md)
 - [Privacy at Microsoft](https://privacy.microsoft.com)
 - [Privacy considerations in the cloud](http://download.microsoft.com/download/0/9/D/09DE47F6-F9E5-4C14-B9E8-E8119A130ACC/Privacy_considerations_in_the_cloud.pdf)

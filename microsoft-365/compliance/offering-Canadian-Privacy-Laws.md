@@ -16,7 +16,7 @@ ms.collection: M365-security-compliance
 
 ## Microsoft and Canadian privacy laws
 
-Microsoft Azure and Microsoft Intune are built with established ISO/IEC security standards in mind, and Microsoft maintains technical and organizational measures to protect customer data. These measures comply with the requirements set forth in such established security standards as [ISO/IEC 27001](https://www.microsoft.com/en-us/trustcenter/compliance/soc) and ISO/IEC 27002, and the code of practice for cloud privacy, [ISO/IEC 27018](http://download.microsoft.com/download/0/9/D/09DE47F6-F9E5-4C14-B9E8-E8119A130ACC/Privacy_considerations_in_the_cloud.pdf). Microsoft has assessed its practices in risk, security, and incident management; access control; data integrity protection; and other areas relative to the recommendations from the Office of the Privacy Commissioner of Canada, and has determined that in-scope Azure and Intune services can meet those recommendations. This means that Azure and Intune can help customers meet the requirements of Canadian privacy laws.
+Microsoft Azure and Microsoft Intune are built with established ISO/IEC security standards in mind, and Microsoft maintains technical and organizational measures to protect customer data. These measures comply with the requirements set forth in such established security standards as [ISO/IEC 27001](offering-iso-soc.md) and ISO/IEC 27002, and the code of practice for cloud privacy, [ISO/IEC 27018](http://download.microsoft.com/download/0/9/D/09DE47F6-F9E5-4C14-B9E8-E8119A130ACC/Privacy_considerations_in_the_cloud.pdf). Microsoft has assessed its practices in risk, security, and incident management; access control; data integrity protection; and other areas relative to the recommendations from the Office of the Privacy Commissioner of Canada, and has determined that in-scope Azure and Intune services can meet those recommendations. This means that Azure and Intune can help customers meet the requirements of Canadian privacy laws.
 
 To support public- and private-sector organizations that are concerned about data sovereignty, Microsoft has established two datacenters in Canada in Toronto and Quebec City. These datacenters add in-country data residency, failover, and disaster recovery for core customer data at rest as defined in the [Microsoft Online Services Terms](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31).
 
@@ -24,18 +24,18 @@ To assist Canadian customers who are considering outsourcing business functions 
 
 ## Microsoft in-scope cloud services
 
-- [Azure](https://www.microsoft.com/en-us/trustcenter/compliance/iso-iec-27001)
+- [Azure](offering-iso-27001.md)
 - Intune
 
 ## How to implement
 
 ### Privacy at Microsoft
 
-Get details on Microsoft privacy principles and standards and on privacy laws specific to Canada. [Learn more](https://www.microsoft.com/en-us/trustcenter/compliance/iso-iec-27001?id=55710).
+Get details on Microsoft privacy principles and standards and on privacy laws specific to Canada. [Learn more](offering-iso-27001.md).
 
 ### Compliance checklist: Canada
 
-Learn more about Azure and Intune functionalities that can help meet Canadian privacy laws. [Learn more](https://www.microsoft.com/en-us/trustcenter/compliance/iso-iec-27018?command=Download&downloadType=Document&downloadId=626fb641-9dca-45c0-abaf-0a7849c15f81&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides).
+Learn more about Azure and Intune functionalities that can help meet Canadian privacy laws. [Learn more](offering-iso-27018.md).
 
 ### Azure data protection
 

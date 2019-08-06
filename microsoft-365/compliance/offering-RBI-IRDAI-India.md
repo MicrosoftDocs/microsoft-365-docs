@@ -67,7 +67,7 @@ Yes. The guidelines referenced above stipulate some specific points that financi
 
 ## Resources
 
-- [Microsoft and MeitY](https://www.microsoft.com/TrustCenter/Compliance/MeitY)
+- [Microsoft and MeitY](offering-meity-india.md)
 - [Microsoft Financial Services Compliance Program](http://download.microsoft.com/download/6/4/7/64707E3E-6D3E-45D0-8207-A0EA3201B4A6/Microsoft%20Cloud%20-%20Financial%20Services%20Compliance%20Program%20\(Print\).pdf)
 - [Microsoft business cloud services and financial services](https://www.microsoft.com/trustcenter/cloudservices/financialservices)
 - [Financial services compliance in Azure](https://azure.microsoft.com/en-us/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)

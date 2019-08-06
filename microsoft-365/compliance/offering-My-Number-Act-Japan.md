@@ -26,7 +26,7 @@ Because Microsoft does not have standing access to My Number data stored in its 
 
 The terms also state that Microsoft commits to use customer data only to provides services to the customer — not for any advertising or similar commercial purposes — and that Microsoft has robust access control systems in place.
 
-Regarding security concerns, Microsoft business cloud services meet the [Cloud Security Mark (Gold)](https://www.microsoft.com/trustcenter/compliance/cloud-security-mark) standard, the first Japanese security accreditation for cloud service providers.
+Regarding security concerns, Microsoft business cloud services meet the [Cloud Security Mark (Gold)](offering-cs-mark-gold-japan.md) standard, the first Japanese security accreditation for cloud service providers.
 
 Therefore, Microsoft business cloud services support My Number Act requirements and do not create any additional obligations under the act for customers, such as consent from an individual owner of personal data.
 

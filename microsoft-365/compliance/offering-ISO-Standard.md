@@ -57,7 +57,7 @@ This reliance on compliance increases the importance of certification to the sta
 
 # Building blocks of the standard
 
-PIMS is built on top of one of the most widely adopted international standards for information security management, [ISO/IEC 27001](https://www.microsoft.com/en-us/trustcenter/compliance/iso-iec-27001). If your organization is already familiar with ISO/IEC 27001, it is logical and more efficient to integrate the new privacy controls of PIMS. This means the implementation and audit of both will be less expensive and easier to achieve.
+PIMS is built on top of one of the most widely adopted international standards for information security management, [ISO/IEC 27001](offering-iso-27001.md). If your organization is already familiar with ISO/IEC 27001, it is logical and more efficient to integrate the new privacy controls of PIMS. This means the implementation and audit of both will be less expensive and easier to achieve.
 
 **Key points on ISO/IEC 27001 and PIMS:**
 

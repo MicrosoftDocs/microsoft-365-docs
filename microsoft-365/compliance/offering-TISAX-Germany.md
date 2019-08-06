@@ -71,4 +71,4 @@ ENX provides certification confirmation only to registered industry representati
 - [Office in your Car: BMW offers Skype for Business](https://news.microsoft.com/de-de/skype-business-ab-sofort-fahrzeugen-von-bmw-verfugbar/)** (German)
 - [Connecting vehicles for the long haul: Daimler](https://customers.microsoft.com/en-us/story/daimlertrucks)
 - [Continental is adopting Microsoft Office 365 to boost productivity](https://www.avanade.com/en/clients/continental)
-- [Microsoft and ISO/IEC 27001:2013](https://www.microsoft.com/en-us/trustcenter/compliance/iso-iec-27001)
+- [Microsoft and ISO/IEC 27001:2013](offering-iso-27001.md)

@@ -32,8 +32,8 @@ The HDS certification enables healthcare providers in France to use Microsoft cl
 
 The rigorous audit covered the measures Microsoft has taken to secure personal health data and protect its confidentiality, including the:
 
-- [ISO/IEC 27001:2013 Information Security Management](https://www.microsoft.com/trustcenter/compliance/iso-iec-27001) certification of Microsoft cloud services, which are audited annually for compliance.
-- High level of privacy based on compliance with the GDPR and the [ISO/IEC 27018 Code of Practice for Protecting Personal Data in the Cloud](https://www.microsoft.com/trustcenter/compliance/iso-iec-27018).
+- [ISO/IEC 27001:2013 Information Security Management](offering-iso-27001.md) certification of Microsoft cloud services, which are audited annually for compliance.
+- High level of privacy based on compliance with the GDPR and the [ISO/IEC 27018 Code of Practice for Protecting Personal Data in the Cloud](offering-iso-27018.md).
 
 ## How to implement
 
