@@ -31,6 +31,7 @@ Learn how Microsoft 365 products and services help your organization meet regula
                     <div class="cardText">
                         <h3>Global</h3>
                         <P><a href="offering-cis-benchmark.md">CIS Benchmark</a></p>
+                        <P><a href="">Cloud Control Matrix</a></p>
                         <P><a href="offering-csa-star-attestation.md">CSA-STAR Attestation</a></p>
                         <P><a href="offering-csa-star-certification.md">CSA-STAR Certification</a></p>
                         <P><a href="offering-csa-star-self-assessment.md">Title</a></p>
@@ -152,13 +153,13 @@ Learn how Microsoft 365 products and services help your organization meet regula
                         <P><a href="offering-cs-mark-gold-japan.md">CS Mark Gold (Japan)</a></p>
                         <P><a href="offering-cyber-essentials-plus-uk.md">Cyber Essentials Plus (UK)</a></p>
                         <P><a href="offering-canadian-privacy-laws.md">Canadian Privacy Laws</a></p>
-                        <P><a href="">DJCP (China)</a></p>
+                        <P><a href="https://www.trustcenter.cn/compliance/default.html#DJCP">DJCP (China)</a></p>
                         <P><a href="offering-en-301-549-eu.md">EN 301 549 (EU)</a></p>
                         <P><a href="offering-ens-spain.md">ENS (Spain)</a></p>
-                        <P><a href="">ENISA IAF (EU)</a></p>
+                        <P><a href="https://aka.ms/ENISA">ENISA IAF (EU)</a></p>
                         <P><a href="offering-eu-model-clauses.md">EU Model Clauses</a></p>
                         <P><a href="offering-eu-us-privacy-shield.md">EU-US Privacy Shield</a></p>
-                        <P><a href="">GB 18030 (China)</a></p>
+                        <P><a href="https://www.trustcenter.cn/compliance/default.html#GB18030">GB 18030 (China)</a></p>
                         <P><a href="offering-gdpr-eu.md">GDPR (EU)</a></p>
                         <P><a href="offering-g-cloud-uk.md">G-Cloud (UK)</a></p>
                         <P><a href="">IDW PS 951 (Germany)</a></p>
@@ -171,7 +172,7 @@ Learn how Microsoft 365 products and services help your organization meet regula
                         <P><a href="offering-nz-cc-framework.md">NZ CC Framework (New Zealand)</a></p>
                         <P><a href="offering-pasf-uk.md">PASF (UK)</a></p>
                         <P><a href="offering-pdpa-argentina.md">PDPA (Argentina)</a></p>
-                        <P><a href="">TRUCS (China)</a></p>
+                        <P><a href="https://aka.ms/TRUCS-Compliance">TRUCS (China)</a></p>
                     </div>
                 </div>
             </div>
