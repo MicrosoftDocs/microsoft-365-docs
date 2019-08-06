@@ -93,12 +93,11 @@ Consult the New York Department of Financial Services **Who We Supervise** to de
 ## Resources
 
 - New York State Department of Financial Services 23 NYCRR 500: Cybersecurity Requirements For Financial Services Companies
-- **Frequently Asked Questions regarding 23 NYCRR Part 500**
 - [Microsoft Cloud Services: Supporting Compliance with NYDFS Cybersecurity Requirements](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=f7e56dc6-4e52-4e9a-af06-aa41d5851d36&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)
 
 ## Other Microsoft resources for financial services
 
-- Microsoft business cloud services and financial services
+- [Microsoft business cloud services and financial services](https://servicetrust.microsoft.com/viewpage/financialservicesoverview)
 - [Microsoft Cloud Financial Services Compliance Program](https://www.microsoft.com/download/confirmation.aspx?id=55332)
 - [Financial services compliance in Azure](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
 - [Shared responsibilities for cloud computing](https://aka.ms/sharedresponsibility)

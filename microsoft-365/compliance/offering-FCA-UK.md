@@ -55,4 +55,4 @@ Yes. However, although Microsoft responses to this framework are confirmed compl
 - [Enabling compliance: The Microsoft approach to FCA finalized cloud guidance](https://enterprise.blob.core.windows.net/whitepapers/Enabling_Compliance_Microsoft_Approach_to_the_FCA.pdf)
 - [Microsoft Financial Services Compliance Program](https://www.microsoft.com/download/details.aspx?id=55332)
 - [Financial services compliance in Azure](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
-- Microsoft business cloud services and financial services
+- [Microsoft business cloud services and financial services](https://servicetrust.microsoft.com/viewpage/financialservicesoverview)

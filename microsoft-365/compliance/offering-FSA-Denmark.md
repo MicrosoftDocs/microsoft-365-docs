@@ -69,6 +69,6 @@ Yes. The Executive Order on Outsourcing of Significant Areas of Activity (and th
 ## Resources
 
 - [Microsoft Financial Services Compliance Program](https://aka.ms/FinServ-Guide-Denmark)
-- Microsoft business cloud services and financial services
+- [Microsoft business cloud services and financial services](https://servicetrust.microsoft.com/viewpage/financialservicesoverview)
 - [Financial services compliance in Azure](https://aka.ms/AzureCompliance)
 - [Azure Financial Services Cloud Risk Assessment Tool](https://aka.ms/FSCP-Print?command=Download&downloadType=Document&downloadId=079a1973-711a-428f-9312-9ddd290cff7b&docTab=c726d5c0-2d1e-11e8-a485-57140ec19669_PaaS)

@@ -1,4 +1,4 @@
---- 
+---
 title: Microsoft Compliance Offerings
 layout: LandingPage
 hide_bc: true
@@ -19,7 +19,7 @@ Learn how Microsoft 365 products and services help your organization meet regula
 
 <ul class="panelContent cardsD">
     <li>
-        <a href="  ">
+        <a href="">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -49,7 +49,7 @@ Learn how Microsoft 365 products and services help your organization meet regula
         </a>
     </li>
     <li>
-        <a href="  ">
+        <a href="">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -80,7 +80,7 @@ Learn how Microsoft 365 products and services help your organization meet regula
         </a>
     </li>
     <li>
-        <a href="  ">
+        <a href="">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -135,7 +135,7 @@ Learn how Microsoft 365 products and services help your organization meet regula
         </a>
     </li>
     <li>
-        <a href="  ">
+        <a href="">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">

@@ -63,7 +63,7 @@ To evaluate Office 365 compliance with FINRA Rule 4511(c), Microsoft retained a 
 ## Resources
 
 - [Microsoft Financial Services Compliance Program](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide)
-- Microsoft business cloud services and financial services
+- [Microsoft business cloud services and financial services](https://servicetrust.microsoft.com/viewpage/financialservicesoverview)
 - [Financial services compliance in Azure](https://go.microsoft.com/fwlink/)
 - [Azure Financial Services Cloud Risk Assessment Tool](https://www.microsoft.com/en-us/microsoft-365/blog/2015/11/10/office-365-exchange-online-archiving-now-meets-sec-rule-17a-4-requirements/)
 - [Microsoft Office 365 Retention Policies](https://aka.ms/AzureCompliance)

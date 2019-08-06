@@ -71,6 +71,6 @@ Yes. Article 239 of the [ACPR Order of 3 November 2014](https://www.legifrance.g
 ## Resources
 
 - [Microsoft Financial Services Compliance Program](https://aka.ms/FSCP-Print)
-- Microsoft business cloud services and financial services
+- [Microsoft business cloud services and financial services](https://servicetrust.microsoft.com/viewpage/financialservicesoverview)
 - [Financial services compliance in Azure](https://azure.microsoft.com/en-us/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
 - [Azure Financial Services Cloud Risk Assessment Tool](https://servicetrust.microsoft.com/ViewPage/FFIECBlueprint?command=Download&downloadType=Document&downloadId=079a1973-711a-428f-9312-9ddd290cff7b&docTab=c726d5c0-2d1e-11e8-a485-57140ec19669_PaaS)
