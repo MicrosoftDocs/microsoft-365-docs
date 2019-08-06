@@ -107,66 +107,6 @@ ms.prod: Microsoft-365-enterprise
                                     </div>
                                 </a>
                             </li>
-                            <li class="fullSpan">
-                              <hr />
-                              <br>
-                              <ul class="cardsF panelContent singlePanelContent" style="display:flex!important;">
-                                    <li>
-                                        <div class="cardSize">
-                                            <div class="cardPadding">
-                                                <div class="card">
-                                                    <div class="cardImageOuter">
-                                                        <div class="cardImage">
-                                                            <img src="https://docs.microsoft.com/office/media/icons/blog-site-blue.svg" alt="Communities" />
-                                                        </div>
-                                                    </div>
-                                                    <div class="cardText">
-                                                       <h3>Communities</h3>
-                                                        <P><a href="https://techcommunity.microsoft.com/t5/Surface-IT-Pro-Blog/bg-p/SurfaceITPro" target="_blank">Surface IT Pro blog</a></p>
-                                                        <P><a href="https://techcommunity.microsoft.com/t5/Surface-Devices/ct-p/SurfaceDevices" target="_blank">Surface Devices Tech Community</a></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="cardSize">
-                                            <div class="cardPadding">
-                                                <div class="card">
-                                                    <div class="cardImageOuter">
-                                                        <div class="cardImage">
-                                                            <img src="https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg" alt="Learn" />
-                                                        </div>
-                                                    </div>
-                                                    <div class="cardText">
-                                                        <h3>Learn</h3>
-                                                        <P><a href="https://docs.microsoft.com/learn/browse/?term=Surface" target="_blank">Surface training on Microsoft Learn</a></p>
-                                                        <P><a href="https://www.youtube.com/watch?v=Uk2kJ5FUZxY&list=PLXtHYVsvn_b__1Baibdu4elN4SoF3JTBZ" target="_blank">Microsoft Mechanics Surface videos</a></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="cardSize">
-                                            <div class="cardPadding">
-                                                <div class="card">
-                                                    <div class="cardImageOuter">
-                                                        <div class="cardImage">
-                                                            <img src="https://docs.microsoft.com/office/media/icons/chat.svg" alt="Need help?" />
-                                                        </div>
-                                                    </div>
-                                                    <div class="cardText">
-                                                        <h3>Need help?</h3>
-                                                        <P><a href="https://support.microsoft.com/products/surface-devices" target="_blank">Surface Devices</a></p>
-                                                        <P><a href="https://support.microsoft.com/hub/4343507/surface-hub-help" target="_blank">Surface Hub</a></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
                         </ul>
                     </li>
                 </ul>
