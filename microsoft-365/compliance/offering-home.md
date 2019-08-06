@@ -30,19 +30,19 @@ Learn how Microsoft 365 products and services help your organization meet regula
                     </div>
                     <div class="cardText">
                         <h3>Global</h3>
-                        <P><a href="offering-cis-benchmark.md">CIS Benchmark</a></p>
-                        <P><a href="">Cloud Control Matrix</a></p>
-                        <P><a href="offering-csa-star-attestation.md">CSA-STAR Attestation</a></p>
-                        <P><a href="offering-csa-star-certification.md">CSA-STAR Certification</a></p>
-                        <P><a href="offering-csa-star-self-assessment.md">CSA-STAR Self Assessment</a></p>
-                        <P><a href="offering-ISO-20000-1-2011.md">ISO 200000-1:2011</a></p>
+                        <p><a href="offering-cis-benchmark.md">CIS Benchmark</a></p>
+                        <p><a href="">Cloud Control Matrix</a></p>
+                        <p><a href="offering-csa-star-attestation.md">CSA-STAR Attestation</a></p>
+                        <p><a href="offering-csa-star-certification.md">CSA-STAR Certification</a></p>
+                        <p><a href="offering-csa-star-self-assessment.md">CSA-STAR Self Assessment</a></p>
+                        <p><a href="offering-ISO-20000-1-2011.md">ISO 200000-1:2011</a></p>
                         <P><a href="offering-ISO-22301.md">ISO 22301</a></p>
-                        <P><a href="offering-ISO-27001.md">ISO 27001</a></p>
-                        <P><a href="offering-ISO-27017.md">ISO 27017</a></p>
-                        <P><a href="offering-ISO-27018.md">ISO 27018</a></p>
-                        <P><a href="offering-ISO-9001.md">ISO 9001</a></p>
-                        <P><a href="offering-soc.md">SOC</a></p>
-                        <P><a href="offering-wcag-2-1.md">WCAG 2.1</a></p>
+                        <p><a href="offering-ISO-27001.md">ISO 27001</a></p>
+                        <p><a href="offering-ISO-27017.md">ISO 27017</a></p>
+                        <p><a href="offering-ISO-27018.md">ISO 27018</a></p>
+                        <p><a href="offering-ISO-9001.md">ISO 9001</a></p>
+                        <p><a href="offering-soc.md">SOC</a></p>
+                        <p><a href="offering-wcag-2-1.md">WCAG 2.1</a></p>
                     </div>
                 </div>
             </div>
@@ -61,19 +61,19 @@ Learn how Microsoft 365 products and services help your organization meet regula
                     </div>
                     <div class="cardText">
                         <h3>Government</h3>
-                        <P><a href="offering-cjis.md">CJIS</a></p>
-                        <P><a href="offering-cnssi-1253.md">CNSSI 1253</a></p>
-                        <P><a href="offering-dfars.md">DFARS</a></p>
-                        <P><a href="offering-dod-disa-l2-l3-l5.md">DoD DISA L2, L3, L5</a></p>
-                        <P><a href="">DoE 10 CFR Part 810</a></p>
-                        <P><a href="">EAR (US Export Adm. Reg.)</a></p>
-                        <P><a href="offering-fedramo.md">FedRAMP</a></p>
-                        <P><a href="offering-fips-140-2.md">FIPS 140-2</a></p>
-                        <P><a href="offering-irs-1075.md">IRS 1075</a></p>
-                        <P><a href="offering-itar.md">ITAR</a></p>
-                        <P><a href="">NIST 800-171</a></p>
-                        <P><a href="offering-nist-csf.md">NIST CSF</a></p>
-                        <P><a href="offering-section-508-vpats.md">Section 508 VPATS</a></p>
+                        <p><a href="offering-cjis.md">CJIS</a></p>
+                        <p><a href="offering-cnssi-1253.md">CNSSI 1253</a></p>
+                        <p><a href="offering-dfars.md">DFARS</a></p>
+                        <p><a href="offering-dod-disa-l2-l3-l5.md">DoD DISA L2, L3, L5</a></p>
+                        <p><a href="">DoE 10 CFR Part 810</a></p>
+                        <p><a href="">EAR (US Export Adm. Reg.)</a></p>
+                        <p><a href="offering-fedramo.md">FedRAMP</a></p>
+                        <p><a href="offering-fips-140-2.md">FIPS 140-2</a></p>
+                        <p><a href="offering-irs-1075.md">IRS 1075</a></p>
+                        <p><a href="offering-itar.md">ITAR</a></p>
+                        <p><a href="">NIST 800-171</a></p>
+                        <p><a href="offering-nist-csf.md">NIST CSF</a></p>
+                        <p><a href="offering-section-508-vpats.md">Section 508 VPATS</a></p>
                     </div>
                 </div>
             </div>
@@ -92,43 +92,43 @@ Learn how Microsoft 365 products and services help your organization meet regula
                     </div>
                     <div class="cardText">
                         <h3>Industry</h3>
-                        <P><a href="offering-23-nycrr-part-500.md">23 NYCRR Part 500</a></p>
-                        <P><a href="offering-afm-dnb-netherlands.md">AFM + DNB (Netherlands)</a></p>
+                        <p><a href="offering-23-nycrr-part-500.md">23 NYCRR Part 500</a></p>
+                        <p><a href="offering-afm-dnb-netherlands.md">AFM + DNB (Netherlands)</a></p>
                         <P><a href="offering-apra-australia.md">APRA (Australia)</a></p>
-                        <P><a href="offering-amf-acpr-france.md">AMF and ACPR (France)</a></p>
-                        <P><a href="offering-cdsa.md">CDSA</a></p>
-                        <P><a href="offering-cftc-1-31-us.md">CFTC 1.31 (US)</a></p>
-                        <P><a href="offering-dpp-uk.md">DPP (UK)</a></p>
-                        <P><a href="offering-eba-eu.md">EBA (EU)</a></p>
-                        <P><a href="offering-fact-uk.md">FACT (UK)</a></p>
-                        <P><a href="offering-fca-uk.md">FCA (UK)</a></p>
-                        <P><a href="offering-fda-cfr-title-21-part-11.md">FDA CFR Title 21 Part 11</a></p>
-                        <P><a href="offering-ferpa.md">FERPA</a></p>
-                        <P><a href="offering-ffiec-us.md">FFIEC (US)</a></p>
-                        <P><a href="offering-finma-switzerland.md">FINMA (Switzerland)</a></p>
-                        <P><a href="offering-finra-4511.md">FINRA 4511</a></p>
-                        <P><a href="offering-fisc-japan.md">FISC (Japan)</a></p>
-                        <P><a href="offering-fsa-denmark.md">FSA (Denmark)</a></p>
-                        <P><a href="offering-glba.md">GLBA</a></p>
-                        <P><a href="">GxP</a></p>
-                        <P><a href="offering-hds-france.md">HDS (France)</a></p>
-                        <P><a href="offering-hippa-hitech.md">HIPAA / HITECH</a></p>
-                        <P><a href="offering-hitrust.md">HITRUST</a></p>
-                        <P><a href="offering-knf-poland.md">KNF (Poland)</a></p>
-                        <P><a href="offering-mars-e.md">MARS-E</a></p>
-                        <P><a href="offering-mas-abs-singapore.md">MAS + ABS (Singapore)</a></p>
-                        <P><a href="offering-mpaa.md">MPAA</a></p>
-                        <P><a href="offering-nbb-fsma-belgium.md">NBB + FSMA (Belgium)</a></p>
-                        <P><a href="offering-nen-7510.md">NEN-7510</a></p>
-                        <P><a href="offering-nerc.md">NERC</a></p>
-                        <P><a href="offering-nhs-ig-toolkit-uk.md">NHS IG Toolkit (UK)</a></p>
-                        <P><a href="offering-osfi-canada.md">OSFI (Canada)</a></p>
-                        <P><a href="offering-pci-dss.md">PCI DSS</a></p>
-                        <P><a href="offering-rbi-irdai-india.md">RBI + IRDAI (India)</a></p>
-                        <P><a href="offering-sec-17a-4.md">SEC 17a-4</a></p>
-                        <P><a href="">Shared Assessments</a></p>
-                        <P><a href="offering-soc.md">SOC</a></p>
-                        <P><a href="offering-tisax-germany.md">TISAX (Germany)</a></p>
+                        <p><a href="offering-amf-acpr-france.md">AMF and ACPR (France)</a></p>
+                        <p><a href="offering-cdsa.md">CDSA</a></p>
+                        <p><a href="offering-cftc-1-31-us.md">CFTC 1.31 (US)</a></p>
+                        <p><a href="offering-dpp-uk.md">DPP (UK)</a></p>
+                        <p><a href="offering-eba-eu.md">EBA (EU)</a></p>
+                        <p><a href="offering-fact-uk.md">FACT (UK)</a></p>
+                        <p><a href="offering-fca-uk.md">FCA (UK)</a></p>
+                        <p><a href="offering-fda-cfr-title-21-part-11.md">FDA CFR Title 21 Part 11</a></p>
+                        <p><a href="offering-ferpa.md">FERPA</a></p>
+                        <p><a href="offering-ffiec-us.md">FFIEC (US)</a></p>
+                        <p><a href="offering-finma-switzerland.md">FINMA (Switzerland)</a></p>
+                        <p><a href="offering-finra-4511.md">FINRA 4511</a></p>
+                        <p><a href="offering-fisc-japan.md">FISC (Japan)</a></p>
+                        <p><a href="offering-fsa-denmark.md">FSA (Denmark)</a></p>
+                        <p><a href="offering-glba.md">GLBA</a></p>
+                        <p><a href="">GxP</a></p>
+                        <p><a href="offering-hds-france.md">HDS (France)</a></p>
+                        <p><a href="offering-hippa-hitech.md">HIPAA / HITECH</a></p>
+                        <p><a href="offering-hitrust.md">HITRUST</a></p>
+                        <p><a href="offering-knf-poland.md">KNF (Poland)</a></p>
+                        <p><a href="offering-mars-e.md">MARS-E</a></p>
+                        <p><a href="offering-mas-abs-singapore.md">MAS + ABS (Singapore)</a></p>
+                        <p><a href="offering-mpaa.md">MPAA</a></p>
+                        <p><a href="offering-nbb-fsma-belgium.md">NBB + FSMA (Belgium)</a></p>
+                        <p><a href="offering-nen-7510.md">NEN-7510</a></p>
+                        <p><a href="offering-nerc.md">NERC</a></p>
+                        <p><a href="offering-nhs-ig-toolkit-uk.md">NHS IG Toolkit (UK)</a></p>
+                        <p><a href="offering-osfi-canada.md">OSFI (Canada)</a></p>
+                        <p><a href="offering-pci-dss.md">PCI DSS</a></p>
+                        <p><a href="offering-rbi-irdai-india.md">RBI + IRDAI (India)</a></p>
+                        <p><a href="offering-sec-17a-4.md">SEC 17a-4</a></p>
+                        <p><a href="">Shared Assessments</a></p>
+                        <p><a href="offering-soc.md">SOC</a></p>
+                        <p><a href="offering-tisax-germany.md">TISAX (Germany)</a></p>
                     </div>
                 </div>
             </div>
@@ -147,32 +147,32 @@ Learn how Microsoft 365 products and services help your organization meet regula
                     </div>
                     <div class="cardText">
                         <h3>Regional</h3>
-                        <P><a href="offering-bir-2012-netherlands.md">BIR 2012 (Netherlands)</a></p>
-                        <P><a href="offering-c5-germany.md">C5 (Germany)</a></p>
-                        <P><a href="offering-ccsl-irap-australia.md">CCSL / IRAP (Australia)</a></p>
-                        <P><a href="offering-cs-mark-gold-japan.md">CS Mark Gold (Japan)</a></p>
-                        <P><a href="offering-cyber-essentials-plus-uk.md">Cyber Essentials Plus (UK)</a></p>
-                        <P><a href="offering-canadian-privacy-laws.md">Canadian Privacy Laws</a></p>
-                        <P><a href="https://www.trustcenter.cn/compliance/default.html#DJCP">DJCP (China)</a></p>
-                        <P><a href="offering-en-301-549-eu.md">EN 301 549 (EU)</a></p>
-                        <P><a href="offering-ens-spain.md">ENS (Spain)</a></p>
-                        <P><a href="https://aka.ms/ENISA">ENISA IAF (EU)</a></p>
-                        <P><a href="offering-eu-model-clauses.md">EU Model Clauses</a></p>
-                        <P><a href="offering-eu-us-privacy-shield.md">EU-US Privacy Shield</a></p>
-                        <P><a href="https://www.trustcenter.cn/compliance/default.html#GB18030">GB 18030 (China)</a></p>
-                        <P><a href="offering-gdpr-eu.md">GDPR (EU)</a></p>
-                        <P><a href="offering-g-cloud-uk.md">G-Cloud (UK)</a></p>
-                        <P><a href="">IDW PS 951 (Germany)</a></p>
-                        <P><a href="offering-k-isms-compliance.md">ISMS (Korea)</a></p>
-                        <P><a href="offering-it-grundschutz-workbook-germany.md">IT Grundschutz Workbook (Germany)</a></p>
-                        <P><a href="offering-lopd-spain.md">LOPD (Spain)</a></p>
-                        <P><a href="offering-meity-india.md">MeitY (India)</a></p>
-                        <P><a href="offering-mtcs-singapore.md">MTCS (Singapore)</a></p>
-                        <P><a href="offering-my-number-act-japan.md">My Number (Japan)</a></p>
-                        <P><a href="offering-nz-cc-framework.md">NZ CC Framework (New Zealand)</a></p>
-                        <P><a href="offering-pasf-uk.md">PASF (UK)</a></p>
-                        <P><a href="offering-pdpa-argentina.md">PDPA (Argentina)</a></p>
-                        <P><a href="https://aka.ms/TRUCS-Compliance">TRUCS (China)</a></p>
+                        <p><a href="offering-bir-2012-netherlands.md">BIR 2012 (Netherlands)</a></p>
+                        <p><a href="offering-c5-germany.md">C5 (Germany)</a></p>
+                        <p><a href="offering-ccsl-irap-australia.md">CCSL / IRAP (Australia)</a></p>
+                        <p><a href="offering-cs-mark-gold-japan.md">CS Mark Gold (Japan)</a></p>
+                        <p><a href="offering-cyber-essentials-plus-uk.md">Cyber Essentials Plus (UK)</a></p>
+                        <p><a href="offering-canadian-privacy-laws.md">Canadian Privacy Laws</a></p>
+                        <p><a href="https://www.trustcenter.cn/compliance/default.html#DJCP">DJCP (China)</a></p>
+                        <p><a href="offering-en-301-549-eu.md">EN 301 549 (EU)</a></p>
+                        <p><a href="offering-ens-spain.md">ENS (Spain)</a></p>
+                        <p><a href="https://aka.ms/ENISA">ENISA IAF (EU)</a></p>
+                        <p><a href="offering-eu-model-clauses.md">EU Model Clauses</a></p>
+                        <p><a href="offering-eu-us-privacy-shield.md">EU-US Privacy Shield</a></p>
+                        <p><a href="https://www.trustcenter.cn/compliance/default.html#GB18030">GB 18030 (China)</a></p>
+                        <p><a href="offering-gdpr-eu.md">GDPR (EU)</a></p>
+                        <p><a href="offering-g-cloud-uk.md">G-Cloud (UK)</a></p>
+                        <p><a href="">IDW PS 951 (Germany)</a></p>
+                        <p><a href="offering-k-isms-compliance.md">ISMS (Korea)</a></p>
+                        <p><a href="offering-it-grundschutz-workbook-germany.md">IT Grundschutz Workbook (Germany)</a></p>
+                        <p><a href="offering-lopd-spain.md">LOPD (Spain)</a></p>
+                        <p><a href="offering-meity-india.md">MeitY (India)</a></p>
+                        <p><a href="offering-mtcs-singapore.md">MTCS (Singapore)</a></p>
+                        <p><a href="offering-my-number-act-japan.md">My Number (Japan)</a></p>
+                        <p><a href="offering-nz-cc-framework.md">NZ CC Framework (New Zealand)</a></p>
+                        <p><a href="offering-pasf-uk.md">PASF (UK)</a></p>
+                        <p><a href="offering-pdpa-argentina.md">PDPA (Argentina)</a></p>
+                        <p><a href="https://aka.ms/TRUCS-Compliance">TRUCS (China)</a></p>
                     </div>
                 </div>
             </div>
