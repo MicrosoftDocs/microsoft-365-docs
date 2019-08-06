@@ -25,7 +25,10 @@ ms.prod: Microsoft-365-enterprise
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Link name</h3>
+                        <h3>Global</h3>
+                        <P><a href="offering-cis-benchmark.md">CIS Benchmark</a></p>
+                        <P><a href="offering-csa-star-attestation.md">CSA-STAR Attestation</a></p>
+                        <P><a href="offering-csa-star-certification.md">CSA-STAR Certification</a></p>
                     </div>
                 </div>
             </div>
@@ -43,7 +46,10 @@ ms.prod: Microsoft-365-enterprise
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Link name</h3>
+                        <h3>Government</h3>
+                        <P><a href="offering-cis-benchmark.md">CIS Benchmark</a></p>
+                        <P><a href="offering-csa-star-attestation.md">CSA-STAR Attestation</a></p>
+                        <P><a href="offering-csa-star-certification.md">CSA-STAR Certification</a></p>
                     </div>
                 </div>
             </div>
@@ -61,7 +67,10 @@ ms.prod: Microsoft-365-enterprise
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Link name</h3>
+                        <h3>Industry</h3>
+                        <P><a href="offering-cis-benchmark.md">CIS Benchmark</a></p>
+                        <P><a href="offering-csa-star-attestation.md">CSA-STAR Attestation</a></p>
+                        <P><a href="offering-csa-star-certification.md">CSA-STAR Certification</a></p>
                     </div>
                 </div>
             </div>
@@ -79,7 +88,10 @@ ms.prod: Microsoft-365-enterprise
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Link name</h3>
+                        <h3>Regional</h3>
+                        <P><a href="offering-cis-benchmark.md">CIS Benchmark</a></p>
+                        <P><a href="offering-csa-star-attestation.md">CSA-STAR Attestation</a></p>
+                        <P><a href="offering-csa-star-certification.md">CSA-STAR Certification</a></p>
                     </div>
                 </div>
             </div>
