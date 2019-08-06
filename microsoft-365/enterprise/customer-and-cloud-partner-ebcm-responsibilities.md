@@ -13,24 +13,24 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom:
 
-description:  
+description:  Understand what Microsoft does during a service incident so you can better prepare your business continuity plans.
 ---
+
+Microsoft is your partner in providing Microsoft 365 cloud services to your users. Microsoft is responsible for providing the services that your organization consumes and you are responsible for connecting your client endpoints to it and everything you do with those services. THere are share responsibilities, such as the identity and directory infrastructure as well. This article helps set expectations as to what Microsoft will do during a service incident and inform you of critical items you need to be mindful of so you can ensure that your business continues to function.
 
 # Transparency during service incidents
 
-As a trusted partner, Microsoft  builds highly resilient cloud services that empower customers. When a service incident occurs, Microsoft recognizes that **timely**, **targeted**, and **accurate** communications are critical for customers. Microsoft notifies M365 administrators by updating the tenant-specific Service Health Dashboard (SHD) on the M365 Admin Portal. Service incident updates are provided on an hourly cadence or, if a different cadence is required, it will be stated in the SHD communication posting.
-  
+As a trusted partner, Microsoft  builds highly resilient cloud services and follow highly structure procedures to resolve service incidents when they happen. When a service incident occurs, Microsoft recognizes that **timely**, **targeted**, and **accurate** communications are critical for customers. 
 
+## Timely
+Microsoft notifies Microsoft 365 administrators by updating the tenant-specific Service Health Dashboard (SHD) in the Microsoft 365 Admin Portal. Service incident updates are normally provided on an hourly cadence. If a different cadence is needed we'll keep you informed of the change in the SHD communication postings.
 
-
-
+## Targeted
+In most cases, when our monitoring systems detect an issue, we can (isolate) OR (identify) the affected customer base, from a single customer up to region or beyond and direct communications to those impacted customers. This helps you know what you need to know for your business and not be distracted by noise notifications that don't impact you. For example, if a specific mailbox database is impacted, we're able to identify exactly which customers have users on the affected infrastructure and scope our communications to them. If the scope of impact of the incident is unclear, we expand our communications out to the widest group of customer who are potentially impacted. 
 
 
  
- 
-In most cases, when our monitoring systems detect an issue, we can isolate the affected customer base, whether this is a single customer, multiple customers, a region, or beyond. If a specific mailbox database is degraded, we're able to identify exactly which customers have users on the affected infrastructure. Our communications are therefore directed only to those customers who are impacted. If impact is difficult to ascertain, we expand our communications to the widest potential impact scope. Our approach is to be as targeted as possible, but to err on the side of broader communication, when the exact scope cannot be determined. 
- 
-Customers should use the Service Health and Continuity guide to learn about the different communication channels and how to monitor service health. 
+Customers should use the [Service Health and Continuity guide](https://docs.microsoft.com/en-us/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity) to learn about the different communication channels and how to monitor service health. 
  
 In the event the M365 Admin center or the Service Health Dashboard within the Admin center are unavailable, you can monitor the status of M365 using our backup site: 
 https://status.office365.com/. Additionally, we maintain a Twitter account (@MSFT365Status) where we will respond to reports of impact and post updates on SHD impacting events. 
