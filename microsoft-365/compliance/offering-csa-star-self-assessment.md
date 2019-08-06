@@ -14,7 +14,7 @@ ms.collection: M365-security-compliance
 
 # Compliance Offering: Cloud Security Alliance (CSA) STAR Self-Assessment
 
-## CSA STAR Self-Assessment Overview
+## CSA STAR Self-Assessment overview
 
 The Cloud Security Alliance (CSA) is a nonprofit organization led by a broad coalition of industry practitioners, corporations, and other important stakeholders. It is dedicated to defining best practices to help ensure a more secure cloud computing environment, and to helping potential cloud customers make informed decisions when transitioning their IT operations to the cloud.  
   
@@ -29,7 +29,7 @@ CSA STAR is based on two key components of the CSA GRC Stack:
 
 STAR provides three levels of assurance; CSA-STAR Self-Assessment is the introductory offering at Level 1, which is free and open to all CSPs. Going further up the assurance stack, Level 2 of the STAR program involves third-party assessment-based certifications, and Level 3 involves certifications based on continuous monitoring.
 
-## Microsoft and CSA STAR Self-Assessment
+## Microsoft and CSA STAR self-assessment
 
 As part of the STAR Self-Assessment, CSPs can submit two different types of documents to indicate their compliance with CSA best practices: a completed CAIQ, or a report documenting compliance with CCM. For the CSA STAR Self-Assessment, Microsoft publishes both a CAIQ and a CCM-based report for Microsoft Azure, and CCM-based reports for Microsoft Dynamics 365 and Microsoft Office 365.  
   
@@ -76,7 +76,7 @@ It enables CSPs to document compliance with CSA published best practices in a tr
 - [CSA Security, Trust & Assurance Registry (STAR)](https://cloudsecurityalliance.org/star/)
 - Microsoft Common Controls Hub Compliance Framework
 
-## Microsoft CSA STAR Self-Assessments
+## Microsoft CSA STAR self-assessments
 
 - [Azure](http://aka.ms/Azure_STAR)
 - [Dynamics 365](http://aka.ms/DynamicsCRM_Online_STAR)

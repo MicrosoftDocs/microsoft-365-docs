@@ -14,7 +14,7 @@ ms.collection: M365-security-compliance
 
 # Compliance Offering: National Institute of Standards and Technology (NIST) Cybersecurity Framework (CSF)
 
-## NIST CSF Overview
+## NIST CSF overview
 
 The National Institute of Standards and Technology (NIST) promotes and maintains measurement standards and guidance to help organizations assess risk. In response to Executive Order 13636 on strengthening the cybersecurity of federal networks and critical infrastructure, NIST released the Framework for Improving Critical Infrastructure Cybersecurity (FICIC) in February 2014.  
   

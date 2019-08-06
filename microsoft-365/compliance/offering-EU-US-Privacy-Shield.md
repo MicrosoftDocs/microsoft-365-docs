@@ -14,7 +14,7 @@ ms.collection: M365-security-compliance
 
 # Compliance Offering: EU-US and Swiss-US Privacy Shield Frameworks
 
-## Microsoft and the EU-U.S. and Swiss-U.S. Privacy Shield Frameworks
+## Microsoft and the EU-U.S. and Swiss-U.S. Privacy Shield frameworks
 
 To join the EU-U.S. and Swiss-U.S. Privacy Shield Frameworks — an action that is voluntary — US-based companies must publicly commit to complying with framework requirements and self-certify their compliance to the US Department of Commerce. Once they publicly commit and self-certify, that commitment becomes enforceable under US law.
 
@@ -46,7 +46,7 @@ Data protection in Azure
     - Azure provides customers with strong data security, both by default and as customer options.  
     - [Learn more](https://docs.microsoft.com/azure/security/azure-protection-of-customer-data)
 
-## About the EU-U.S. and Swiss-U.S. Privacy Shield Frameworks
+## About the EU-U.S. and Swiss-U.S. Privacy Shield frameworks
 
 According to the Privacy Shield Program, “the [EU-U.S. and Swiss-U.S. Privacy Shield Frameworks](https://www.privacyshield.gov/welcome) were designed by the US Department of Commerce, and the European Commission and Swiss Administration, respectively, to provide companies on both sides of the Atlantic with a mechanism to comply with data protection requirements when transferring personal data from the European Union and Switzerland to the United States.” The International Trade Administration within the Department of Commerce administers the Privacy Shield Program in the United States.
 

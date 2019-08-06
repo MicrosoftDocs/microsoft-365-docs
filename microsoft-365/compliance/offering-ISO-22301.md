@@ -14,7 +14,7 @@ ms.collection: M365-security-compliance
 
 # Compliance Offering: ISO 22301:2012 Business Continuity Management Standard
 
-## ISO 22301 Overview
+## ISO 22301 overview
 
 The International Organization for Standardization (ISO) is an independent nongovernmental organization and the world’s largest developer of voluntary international standards. The ISO formed the TC 223 Societal Security technical committee to develop standards for protecting society, including organizations, in the event of catastrophe such as a natural disaster, major terrorist attack, or shutdown of power grids.  
   

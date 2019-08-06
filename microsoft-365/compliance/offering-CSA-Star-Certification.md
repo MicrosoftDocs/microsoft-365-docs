@@ -14,7 +14,7 @@ ms.collection: M365-security-compliance
 
 # Compliance Offering: Cloud Security Alliance (CSA) STAR Certification
 
-## CSA STAR Certification Overview
+## CSA STAR Certification overview
 
 The Cloud Security Alliance (CSA) maintains the Security, Trust & Assurance Registry (STAR), a free, publicly accessible registry where cloud service providers can publish their CSA-related assessments. STAR consists of three levels of assurance aligned with the control objectives in the CSA Cloud Controls Matrix (CCM). (The CCM covers fundamental security principles across 16 domains to help cloud customers assess the overall security risk of a cloud service.)
 
@@ -22,7 +22,7 @@ The Cloud Security Alliance (CSA) maintains the Security, Trust & Assurance Regi
 - Level 2: STAR Certification, STAR Attestation, and C-STAR Assessment
 - Level 3: STAR Continuous Monitoring (program requirements are still under development by CSA)
 
-## Microsoft and CSA STAR Certification
+## Microsoft and CSA STAR certification
 
 Microsoft Azure, Microsoft Intune, and Microsoft Power BI have obtained STAR Certification, which involves a rigorous independent third-party assessment of a cloud provider’s security posture. This STAR certification is based on achieving ISO/IEC 27001 certification and meeting criteria specified in the CCM. It demonstrates that a cloud service provider conforms to the applicable requirements of ISO/IEC 27001, has addressed issues critical to cloud security as outlined in the CCM, and has been assessed against the STAR Capability Maturity Model for the management of activities in CCM control areas.  
   

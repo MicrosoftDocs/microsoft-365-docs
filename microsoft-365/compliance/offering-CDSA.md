@@ -14,7 +14,7 @@ ms.collection: M365-security-compliance
 
 # Compliance Offering: Content Delivery & Security Association (CDSA) Content Protection & Security (CPS) Standard
 
-## CDSA Overview
+## CDSA overview
 
 The Content Delivery & Security Association (CDSA) is a worldwide forum advocating for the innovative and responsible delivery and storage of entertainment, software, and information content.  
   

@@ -14,7 +14,7 @@ ms.collection: M365-security-compliance
 
 # Compliance Offering: Title 23 NYCRR Part 500
 
-## Title 23 NYCRR Part 500 Overview
+## Title 23 NYCRR Part 500 overview
 
 In response to the significant and ever-increasing threats to the cybersecurity of information and financial systems, in 2017, the State of New York Department of Financial Services imposed a new set of cybersecurity requirements on financial institutions that are licensed or authorized to do business in the state. This regulation — Title 23 New York Codes, Rules, and Regulation Part 500: Cybersecurity Requirements for Financial Services Companies — is designed to protect customer data and the information technology systems of financial institutions such as state-chartered, private, and international banks, mortgage brokers, and insurance companies.
 

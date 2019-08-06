@@ -14,7 +14,7 @@ ms.collection: M365-security-compliance
 
 # Compliance Offering: Federal Financial Institutions Examination Council (FFIEC)
 
-## FFIEC Overview
+## FFIEC overview
 
 The Federal Financial Institutions Examination Council (FFIEC) is a formal interagency body comprising five banking regulators that are responsible for US federal government examinations of financial institutions in the United States. The FFIEC Examiner Education Office publishes IT Examination Handbooks intended for field examiners from FFIEC member agencies.
 

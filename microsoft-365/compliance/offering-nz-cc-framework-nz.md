@@ -14,7 +14,7 @@ ms.collection: M365-security-compliance
 
 # Compliance Offering: New Zealand Government Cloud Computing Security and Privacy Considerations
 
-## New Zealand Government Cloud Computing Security and Privacy Overview
+## New Zealand Government Cloud Computing Security and Privacy overview
 
 In October 2015, the New Zealand Government endorsed a revised all-government ICT strategy that reaffirmed its “cloud first” policy on using information technology across the public sector. The revised strategy retains the “Cloud Computing Risk and Assurance Framework” that was developed and implemented under the authority of the NZ Government Chief Information Officer (GCIO).
 

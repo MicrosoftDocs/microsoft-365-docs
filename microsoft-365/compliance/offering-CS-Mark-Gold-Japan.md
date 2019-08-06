@@ -14,7 +14,7 @@ ms.collection: M365-security-compliance
 
 # Compliance Offering: Cloud Security Mark Gold (CS Gold Mark)
 
-## CS Gold Mark Overview
+## CS Gold Mark overview
 
 The Cloud Security Mark (CS Mark) is the first security standard for cloud service providers (CSPs) in Japan, and is based on ISO/IEC 27017, the international code of practice for information security controls. This in turn is based on ISO/IEC 27002 for cloud services, which address information security in cloud computing and the implementation of cloud-related information security controls.
 

@@ -14,7 +14,7 @@ ms.collection: M365-security-compliance
 
 # Compliance Offering: National Health Service (NHS) Information Governance (IG) Toolkit
 
-## NHS IG Toolkit Overview
+## NHS IG Toolkit overview
 
 The National Health Service (NHS) is the national health system for England, and provides the majority of healthcare for the citizens of England, covering all healthcare practice areas. Founded in 1948, the NHS was the world’s first single-payer health system. It is also the world’s largest health system, employing over 1.5 million people with a 2016 budget of £116.4 billion.
 

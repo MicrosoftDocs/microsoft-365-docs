@@ -14,7 +14,7 @@ ms.collection: M365-security-compliance
 
 # Compliance Offering: United Kingdom Financial Conduct Authority (FCA)
 
-## FCA (UK) Overview
+## FCA (UK) overview
 
 The [Financial Conduct Authority](https://www.fca.org.uk/) (FCA), an independent public body that is accountable to the Treasury, regulates 58,000 financial firms and markets in the UK and serves as the prudential regulator for over 18,000 of those organizations. [Prudential Regulation Authority](http://www.bankofengland.co.uk/pra/pages/default.aspx) (PRA), which also serves as the prudential regulator for the Bank of England and regulates 1,500 of the larger financial services institutions such as banks, building societies, credit unions, insurers, and investment firms. (The FCA picks up prudential regulation for firms that do not fall under the PRA remit.)
 

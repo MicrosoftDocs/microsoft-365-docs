@@ -14,7 +14,7 @@ ms.collection: M365-security-compliance
 
 # Compliance Offering: United Kingdom Government-Cloud (G-Cloud)
 
-## UK G-Cloud Overview
+## UK G-Cloud overview
 
 Government Cloud (G-Cloud) is a UK government initiative to ease procurement of cloud services by government departments and promote government-wide adoption of cloud computing. G-Cloud comprises a series of framework agreements with cloud services suppliers (such as Microsoft), and a listing of their services in an online store—the Digital Marketplace. This enables public-sector organizations to compare and procure those services without having to do their own full review process. Inclusion in the Digital Marketplace requires a self-attestation of compliance, followed by a verification performed by the Government Digital Service (GDS) branch at its discretion.
 

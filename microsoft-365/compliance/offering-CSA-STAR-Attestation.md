@@ -14,7 +14,7 @@ ms.collection: M365-security-compliance
 
 # Compliance Offering: Cloud Security Alliance (CSA) STAR Attestation
 
-## CSA STAR Attestation Overview
+## CSA STAR Attestation overview
 
 The Cloud Security Alliance (CSA) maintains the Security, Trust & Assurance Registry (STAR), a free, publicly accessible registry where cloud service providers (CSPs) can publish their CSA-related assessments. STAR consists of three levels of assurance aligned with control objectives in the CSA Cloud Controls Matrix (CCM). (The CCM covers fundamental security principles across 16 domains to help cloud customers assess the overall security risk of a cloud service.):
 

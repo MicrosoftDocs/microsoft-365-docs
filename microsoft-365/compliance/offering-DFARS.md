@@ -14,7 +14,7 @@ ms.collection: M365-security-compliance
 
 # Compliance Offering: Defense Federal Acquisition Regulation Supplement (DFARS)
 
-## DFARS Overview
+## DFARS overview
 
 On October 21, 2016, the Department of Defense (DoD) issued its Final Rule amending the Defense Federal Acquisition Regulation Supplement (DFARS) and imposing safeguarding and cyber incident reporting obligations on defense contractors whose information systems process, store, or transmit covered defense information (CDI).  
   

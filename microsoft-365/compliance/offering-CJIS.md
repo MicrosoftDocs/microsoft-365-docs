@@ -24,7 +24,7 @@ The CJIS Security Policy defines 13 areas that private contractors such as cloud
   
 In addition, all private contractors who process CJI must sign the CJIS Security Addendum, a uniform agreement approved by the US Attorney General that helps ensure the security and confidentiality of CJI required by the Security Policy. It also commits the contractor to maintaining a security program consistent with federal and state laws, regulations, and standards, and limits the use of CJI to the purposes for which a government agency provided it.
 
-## Microsoft and CJIS Security Policy
+## Microsoft and CJIS security policy
 
 Microsoft signs the CJIS Security Addendum in states with CJIS Information Agreements. These tell state law enforcement authorities responsible for compliance with CJIS Security Policy how Microsoft's cloud security controls help protect the full lifecycle of data and ensure appropriate background screening of operating personnel with access to CJI. Microsoft continues to work with state governments to enter into CJIS Information Agreements.  
   

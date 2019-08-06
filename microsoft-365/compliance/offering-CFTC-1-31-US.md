@@ -36,7 +36,7 @@ To evaluate Office 365 compliance with CFTC Rule 1.31(c-d), Microsoft engaged a 
 
 Archiving in Office 365 helps to preserve a wide range of data, including email, voicemail, shared documents, instant messages, and third-party data. In particular, archiving in Office 365 enables customers to set global or granular messaging retention policies to store data for a defined period and beyond in a non-rewriteable, non-erasable format.
 
-## How to implement 
+## How to implement
 
 [Financial services regulation — Compliance map of key US regulatory principles for cloud computing and Microsoft online services.
 

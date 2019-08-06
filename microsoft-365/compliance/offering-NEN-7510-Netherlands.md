@@ -14,7 +14,7 @@ ms.collection: M365-security-compliance
 
 # Compliance Offering: NEN 7510
 
-## NEN 7510 Overview
+## NEN 7510 overview
 
 Organizations in the Netherlands that process patient health information must demonstrate control over that data and their organization consistent with the requirements set out in the NEN 7510 standard. Microsoft is not itself subject to NEN 7510, but its cloud customers in the healthcare sector need to establish that they comply with NEN 7510 regarding solutions built on the Microsoft Cloud. Microsoft cloud services undergo various periodic certifications and audits, some of which include elements closely related to requirements specified in NEN 7510.
 

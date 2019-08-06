@@ -14,7 +14,7 @@ ms.collection: M365-security-compliance
 
 # Compliance Offering: Spanish Royal Decree 1720/2007, Spanish Organic Law 15/1999
 
-## Spanish Royal Decree 1720/2007, Spanish Organic Law 15/1999 Overview
+## Spanish Royal Decree 1720/2007, Spanish Organic Law 15/1999 overview
 
 The AEPD is the public authority that oversees compliance with Spanish Organic Law 15/1999 for the Protection of Personal Data ([Ley Orgánica 15/1999 de Protección de Datos](https://www.boe.es/buscar/act.php?id=BOE-A-1999-23750), or LOPD), including the transfer of data across international boundaries. In 2014, the AEPD reviewed Microsoft’s terms and conditions applicable to the EU Model Clauses-covered Microsoft Azure, Dynamics 365, and Office 365, and issued a resolution determining that those terms provided adequate safeguards for customers to move their personal data to those services.
 

@@ -14,7 +14,7 @@ ms.collection: M365-security-compliance
 
 # Compliance Offering: Australian Government Certified Cloud Services List (CCSL)
 
-## CCSL Overview
+## CCSL overview
 
 The Certified Cloud Services List (CCSL) identifies cloud services that have successfully completed an IRAP assessment by the Australian Government, and have been awarded certification by the Australian Cyber Security Centre (ACSC). The certification recognizes the successful completion, review, and acceptance of a comprehensive assessment undertaken by an Information Security Registered Assessor, so all Australian Government agencies can use it. The CCSL can also be referenced by New Zealand Government organizations as the NZ ISM and Australian ISM are aligned.
 

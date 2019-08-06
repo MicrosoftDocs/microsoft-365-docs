@@ -14,7 +14,7 @@ ms.collection: M365-security-compliance
 
 # Compliance Offering: Multi-Tier Cloud Security (MTCS) Standard for Singapore
 
-## MTCS Overview
+## MTCS overview
 
 The Multi-Tier Cloud Security (MTCS) Standard for Singapore was prepared under the direction of the Information Technology Standards Committee (ITSC) of the Infocomm Development Authority of Singapore (IDA). The ITSC promotes and facilitates national programs to standardize IT and communications, and Singapore’s participation in international standardization activities.
 

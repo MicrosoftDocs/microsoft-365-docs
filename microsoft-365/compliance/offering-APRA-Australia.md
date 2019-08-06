@@ -14,7 +14,7 @@ ms.collection: M365-security-compliance
 
 # Compliance Offering: Australian Prudential Regulation Authority (APRA)
 
-## APRA Overview
+## APRA overview
 
 The [Australian Prudential Regulation Authority (APRA)](https://www.apra.gov.au/) oversees banks, credit unions, insurance companies, and other financial services institutions in Australia. Recognizing the momentum towards cloud computing, APRA has called on regulated entities to implement a thoughtful cloud-adoption strategy with effective governance, thorough risk assessment, and regular assurance processes. Regulated institutions must comply with the APRA [Prudential Standard CPS 231 Outsourcing](https://www.apra.gov.au/sites/default/files/Prudential-Standard-CPS-231-Outsourcing-%28July-2017%29.pdf) when outsourcing a material business activity — any activity that has the potential, if disrupted, to have a significant impact on the financial institution’s business operations or ability to manage its risks effectively. Based on its review of outsourcing arrangements involving shared computing services submitted to APRA, APRA published specific, detailed guidance in its information paper, [Outsourcing involving shared computing services (including cloud)](https://www.apra.gov.au/sites/default/files/information-paper-outsourcing-involving-shared-computing-services.pdf) to help regulated entities assess cloud providers and services more effectively.
 
@@ -24,7 +24,7 @@ For financial institutions in Australia that are assessing cloud providers and t
   
 To learn about the benefits of APRA-compliant financial services on Azure, read the [Regtech meets Fintech: Perpetual and Microsoft transform the finance sector article](https://news.microsoft.com/en-au/features/regtech-meets-fintech-perpetual-microsoft-transform-finance-sector/).
 
-### Microsoft response to the APRA information paper on Cloud
+### Microsoft response to the APRA information paper on the cloud
 
 This Microsoft paper provides detailed guidance for financial services with a detailed response to each issue raised in the APRA information paper, [Outsourcing involving shared computing services (including cloud)](https://www.apra.gov.au/sites/default/files/information-paper-outsourcing-involving-shared-computing-services.pdf). The APRA guidelines identify three risk categories into which usage typically falls — low risk, heightened inherent risk, and extreme impact if disrupted — and highlight key issues that regulated entities must consider as part of their risk assessment.  
   

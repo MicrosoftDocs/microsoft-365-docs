@@ -48,7 +48,7 @@ The Microsoft checklist helps Swiss financial firms conducting due-diligence ass
 - [Dynamics 365](https://aka.ms/d365-compliance-list)
 - [Microsoft 365](https://aka.ms/o365-compliance-framework)
 
-## Frequently asked questions 
+## Frequently asked questions
 
 **Is regulatory approval required?**
 

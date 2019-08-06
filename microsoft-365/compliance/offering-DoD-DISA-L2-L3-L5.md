@@ -22,7 +22,7 @@ To implement its mandate, DISA developed the DoD Cloud Computing Security Requir
   
 DoD Cloud Service Support defines the policies, security controls, and other requirements in the SRG, which it publishes and maintains. It guides DoD agencies and departments in planning and authorizing the use of a cloud service provider. Cloud Service Support also evaluates CSP offerings for compliance with the SRG — an authorization process whereby CSPs can provide attestations of compliance with DoD standards. It issues DoD Provisional Authorizations (PAs) when appropriate, so DoD agencies and supporting organizations can use cloud services without having to go through a full approval process on their own, saving time and effort.
 
-## Microsoft and US DoD Provisional Authorization
+## Microsoft and US DoD provisional authorization
 
 Microsoft’s government cloud services meet the demanding requirements of the US Department of Defense, from impact levels 2 through 5, enabling U.S. defense agencies to benefit from the cost savings and rigorous security of the Microsoft Cloud. By deploying protected services including Azure Government, Office 365 U.S. Government, and Dynamics 365 Government, defense agencies can use a rich array of compliant services.
 
@@ -34,15 +34,15 @@ Learn how to accelerate your DoD DISA L2, L4, L5 deployment with our Azure Secur
 
 - [Download the Azure DoD Level 5 security control implementations](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=e391da04-ae17-472c-9634-959c5ce6ba92&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_DoD%20Blueprint)
 
-### DoD Impact Level 5 Provisional Authorization
+### DoD Impact Level 5 provisional authorization
 
 DISA Cloud Service Support has granted a DoD Impact Level 5 PA for Microsoft Azure Government for DoD. DISA has also granted Office 365 U.S. Government Defense a DoD Impact Level 5 PA. Impact Level 5 covers Controlled Unclassified Information (CUI) deemed by law, other government regulations, or the agency that owns the information and needs a higher level of protection than Level 4 provides. It also covers unclassified National Security Systems.
 
-### DoD Impact Level 4 Provisional Authorization
+### DoD Impact Level 4 provisional authorization
 
 DISA Cloud Service Support has granted a DoD Impact Level 4 PA for both Microsoft Azure Government and Office 365 U.S. Government Defense. This was based on a review of their FedRAMP authorizations and additional security controls required by the Cloud Computing SRG. (FedRAMP is a US program that enables secure cloud computing for the government.) Impact Level 4 covers Controlled Unclassified Information — data requiring protection from unauthorized disclosure under Executive Order 13556 (November 2010) and other mission-critical data. It may include data designated as For Official Use Only, Law Enforcement Sensitive, or Sensitive Security Information. This authorization enables US federal government customers to deploy these types of highly sensitive data on in-scope Microsoft government cloud services.
 
-### Covered services for DoD Impact Level 2 Authorization
+### Covered services for DoD Impact Level 2 authorization
 
 Based on FedRAMP authorizations, DISA Cloud Service Support granted a DoD Impact Level 2 PA to:
 

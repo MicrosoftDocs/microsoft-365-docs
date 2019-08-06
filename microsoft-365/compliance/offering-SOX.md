@@ -14,7 +14,7 @@ ms.collection: M365-security-compliance
 
 # Compliance Offering: Sarbanes-Oxley Act of 2002 (SOX)
 
-## SOX Overview
+## SOX overview
 
 The Sarbanes-Oxley Act of 2002 is a US federal law administered by the Securities and Exchange Commission (SEC). Among other directives, SOX requires publicly traded companies to have proper internal control structures in place to validate that their financial statements accurately reflect their financial results.
 

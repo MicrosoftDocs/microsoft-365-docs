@@ -14,7 +14,7 @@ ms.collection: M365-security-compliance
 
 # Compliance Offering: Motion Picture Association of America (MPAA)
 
-## MPAA Overview
+## MPAA overview
 
 The Motion Picture Association of America (MPAA) provides best-practices guidance and control frameworks to help major studio partners and vendors design infrastructure and solutions to ensure the security of digital film assets. The MPAA also performs content security assessments on behalf of its member companies: Walt Disney Studios Motion Pictures, Paramount Pictures Corporation, Sony Pictures Entertainment Inc., Twentieth Century Fox Film Corporation, Universal City Studios LLC, and Warner Bros. Entertainment Inc.
 

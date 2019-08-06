@@ -14,7 +14,7 @@ ms.collection: M365-security-compliance
 
 # Compliance Offering: ISO 9001:2015 Quality Management Systems Standards
 
-## ISO 9001 Overview
+## ISO 9001 overview
 
 ISO 9001:2015 is an international standard that establishes the criteria for a quality management system. It is the only standard in the ISO 9000 family that results in a formal certification. The standard is based on several quality management principles, including clear focus on meeting customer requirements, strong corporate governance and leadership commitment to quality objectives, process-driven approach to meeting objectives, and focus on continuous improvement. ISO 9001:2015 helps organizations improve customer satisfaction by focusing on the consistency and quality of products and services provided to customers.
 

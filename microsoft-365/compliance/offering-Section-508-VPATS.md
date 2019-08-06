@@ -22,7 +22,7 @@ Because it is a major software and cloud-services provider to U.S. federal and s
 
 [Learn More](https://go.microsoft.com/fwlink/?linkid=2052068)
 
-## Microsoft and U.S. Section 508 
+## Microsoft and U.S. Section 508
 
 Microsoft’s adherence to U.S. Section 508 regulation points to its commitment to making technology and data accessible for all customers. U.S. Section 508 is the U.S.-specific accessibility requirement that complements EN 301 549 (Europe) and WCAG (international).
 

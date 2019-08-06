@@ -14,7 +14,7 @@ ms.collection: M365-security-compliance
 
 # Compliance Offering: Spain Esquema Nacional de Seguridad (ENS) High-Level Security Measures
 
-## Spain ENS Overview
+## Spain ENS overview
 
 In 2007, the Spanish government enacted Law 11/2007, which established a legal framework to give citizens electronic access to government and public services. This law is the basis for Esquema Nacional de Seguridad (National Security Framework), which is governed by Royal Decree (RD) 3/2010. The goal of the framework is to build trust in the provision of electronic services, and ensure the access, integrity, availability, authenticity, confidentiality, traceability, and preservation of data, information, and services.
 
@@ -26,7 +26,7 @@ Each government agency is required to adopt a risk-management approach to securi
 
 The framework prescribes an accreditation process that is voluntary for systems handling information of low sensitivity, but mandatory for systems handling information at an intermediate or high level of sensitivity. An audit is performed by an accredited independent auditor; the report is then reviewed in a process of certification before risk-management controls are accepted in the final step of accreditation.
 
-## Microsoft and Spain ENS High-Level Security Measures
+## Microsoft and Spain ENS high-level security measures
 
 Microsoft Azure and Microsoft Office 365 have gone through a rigorous assessment by BDO, an independent auditor, which issued an official statement of their compliance. BDO reports that the security measures in both services, and their information systems and data processing facilities, comply at the high level with RD 3/2010 without requiring any corrective measures. Microsoft was the first hyperscale cloud service provider to receive this certification in Spain.
 

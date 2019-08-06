@@ -14,7 +14,7 @@ ms.collection: M365-security-compliance
 
 # Compliance Offering: Family Educational Rights and Privacy Act (FERPA)
 
-## FERPA Overview
+## FERPA overview
 
 The Family Educational Rights and Privacy Act (FERPA) is a US federal law that protects the privacy of students’ education records, including personally identifiable and directory information. FERPA was enacted to ensure that parents and students age 18 and older can access those records, request changes to them, and control the disclosure of information, except in specific and limited cases where FERPA allows for disclosure without consent.
 
