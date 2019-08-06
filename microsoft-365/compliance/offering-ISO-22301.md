@@ -66,5 +66,5 @@ Yes. If your business requires ISO 22301 certification for implementations deplo
 
 - [ISO 22301:2012 standard](http://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.htm?csnumber=50038) (for purchase)
 - [Azure resiliency technical guidance](https://aka.ms/Azure-resiliency-guide) (Explains the Azure shared responsibility model for business continuity.)
-- Microsoft Common Controls Hub Compliance Framework
+- [Microsoft Common Controls Hub Compliance Framework](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 - [Microsoft Online Services Terms](http://aka.ms/Online-Services-Terms)

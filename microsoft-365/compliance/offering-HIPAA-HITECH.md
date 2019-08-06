@@ -100,8 +100,8 @@ To assist customers with this task, Microsoft has published these guides:
 ## Resources
 
 - [HIPAA Omnibus Rule](http://aka.ms/HIPAA-omnibus) (The final regulations-modifying HIPAA rules)
-- Microsoft Common Controls Hub Compliance Framework
+- [Microsoft Common Controls Hub Compliance Framework](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 - [Microsoft Online Services Terms](http://aka.ms/Online-Services-Terms)
 - [Microsoft Cloud for Government](http://enterprise.microsoft.com/industries/government/start-your-microsoft-cloud-for-government-trial-today)
-- Understanding HIPAA Compliance with Azure (May 19, 2016)
+- [Understanding HIPAA Compliance with Azure (May 19, 2016)](https://www.youtube.com/embed/6ptdye1LZ5k?autoplay=0)
 - [Azure HIPAA implementation guidance](https://aka.ms/azure-hipaa-guide)

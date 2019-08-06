@@ -82,6 +82,6 @@ Microsoft ensures that its enterprise cloud services meet the terms defined with
 - [FDA guidance for industry Part 11: Electronic records and signatures](http://www.fda.gov/RegulatoryInformation/Guidances/ucm125067.htm)
 - [Qualification guidelines for Azure](https://aka.ms/azurefda21cfrpart11qualguide)
 - [Qualification guidelines for Office 365](https://aka.ms/o365-qualification-guideline)
-- Microsoft Common Controls Hub Compliance Framework
+- [Microsoft Common Controls Hub Compliance Framework](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 - [Microsoft Online Services Terms](http://aka.ms/Online-Services-Terms)
 - [Microsoft Cloud for Government](http://aka.ms/govt-cloud)

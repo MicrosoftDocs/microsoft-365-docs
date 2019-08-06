@@ -65,6 +65,6 @@ You can download the [CSA STAR Attestation](https://aka.ms/CSASTAR-Attestation) 
 - [Office 365 Mapping of CSA Cloud Control Matrix](https://aka.ms/Office365CSACloudControlMatrix)
 - [Cloud Security Alliance](http://cloudsecurityalliance.org/)
 - [CSA Security, Trust & Assurance Registry (STAR)](https://cloudsecurityalliance.org/star/)
-- SOC 1, 2, and 3 Reports
+- [SOC 1, 2, and 3 Reports](offering-soc.md)
 - [Cloud Controls Matrix (CCM)](https://cloudsecurityalliance.org/group/cloud-controls-matrix/)
-- Microsoft Common Controls Hub Compliance Framework
+- [Microsoft Common Controls Hub Compliance Framework](https://www.microsoft.com/trust-center/compliance/compliance-overview)

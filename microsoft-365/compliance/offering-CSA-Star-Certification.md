@@ -85,5 +85,5 @@ Azure, Cloud App Security, Intune, and Power BI have achieved the highest possib
 - [CSA Security, Trust & Assurance Registry (STAR)](https://cloudsecurityalliance.org/star/)
 - [About CSA STAR certification](https://cloudsecurityalliance.org/star/certification/)
 - [Cloud Controls Matrix (CCM)](https://cloudsecurityalliance.org/group/cloud-controls-matrix/)
-- ISO/IEC 27001
-- Microsoft Common Controls Hub Compliance Framework
+- [ISO/IEC 27001](offering-iso-27001.md)
+- [Microsoft Common Controls Hub Compliance Framework](https://www.microsoft.com/trust-center/compliance/compliance-overview)

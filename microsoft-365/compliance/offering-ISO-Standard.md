@@ -76,7 +76,5 @@ Visit the [Microsoft Trust Center](https://www.microsoft.com/en-us/trust-center?
 # Feature Resources
 
   - [ISO/IEC 27552 (PIMS) for purchase](https://www.iso.org/standard/71670.html)
-
   - [BSI whitepaper and content about PIMS](https://www.bsigroup.com/en-GB/iso-27552-privacy-information-management/)
-
   - PIMS Introductory video

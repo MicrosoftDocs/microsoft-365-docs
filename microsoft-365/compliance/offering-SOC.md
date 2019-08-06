@@ -124,6 +124,6 @@ The [SOC Toolkit for Service Organizations](http://aka.ms/soc-toolkit) is a help
 - [Service Organization Control (SOC) Reports](https://aka.ms/mssocreports)
 - [SSAE 16 Auditing Standard](http://www.ssae-16.com/)
 - [ISAE 3402 Standard](http://isae3402.com/)
-- **Microsoft Common Controls Hub Compliance Framework**
+- [Microsoft Common Controls Hub Compliance Framework](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 - [Microsoft Online Services Terms](http://aka.ms/Online-Services-Terms)
 - [Microsoft Cloud for Government](http://enterprise.microsoft.com/industries/government/start-your-microsoft-cloud-for-government-trial-today)

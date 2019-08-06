@@ -50,8 +50,8 @@ Compliance with FACT is voluntary, but Microsoft elected to carry out an indepen
 ## Resources
 
 - [Federation Against Copyright Theft](http://www.fact-uk.org.uk/)
-- FACT Certification Program
+- [FACT Certification Program](https://www.fact-uk.org.uk/services/certification/)
 - [CDSA certification of Azure Media Services](http://aka.ms/cdsa-cert)
 - [Azure ISO 27001 certification](http://aka.ms/Azure-BSI-Cert)
-- MPAA Assessment
+- [MPAA Assessment](offering-mpaa.md)
 - [Azure Responses to CSA CAIQ v3.0.1](https://aka.ms/csacaiqresponses)

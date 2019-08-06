@@ -85,5 +85,5 @@ States with appropriate CJIS documentation, as of August 2017, include: Alaska, 
 - [CJIS Security Policy](http://aka.ms/cjis-security-policy)
 - [CJIS security policy version 5.3 backgrounder](https://aka.ms/cjis-backgrounder)
 - [CJIS implementation guidelines for Azure Government](https://aka.ms/cjisimplementationguidelines)
-- Microsoft Common Controls Hub Compliance Framework
+- [Microsoft Common Controls Hub Compliance Framework](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 - [Microsoft Cloud for Government](http://enterprise.microsoft.com/industries/government/start-your-microsoft-cloud-for-government-trial-today)

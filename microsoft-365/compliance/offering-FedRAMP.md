@@ -103,6 +103,6 @@ Yes. You may use the certifications of Microsoft cloud services as the foundatio
 ## Resources
 
 - [Federal Risk and Authorization Management Program](http://www.fedramp.gov/)
-- Microsoft Common Controls Hub Compliance Framework
+- [Microsoft Common Controls Hub Compliance Framework](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 - [Microsoft Cloud for Government](http://enterprise.microsoft.com/en-us/industries/government/start-your-microsoft-cloud-for-government-trial-today)
 - [FedRAMP Security Assessment Package](https://www.fedramp.gov/documents/) (under Key Agency Documents, choose Package Request Form); only government agencies can request this document

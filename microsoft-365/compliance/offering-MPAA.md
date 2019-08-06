@@ -62,5 +62,5 @@ Production facilities, visual effects houses, and other service partners should 
 - [MPAA Common Guidelines](http://www.mpaa.org/wp-content/uploads/2015/11/MPAA-Best-Practices-Common-Guidelines_V3_0_2015_04_02_FINAL-r7.pdf)
 - [MPAA Application and Cloud Guidelines](http://www.mpaa.org/wp-content/uploads/2015/12/MPAA-Best-Practices-App-and-Cloud_V1-0-20150507-RELEASE-CANDIDATE-6.docx)
 - [MPAA Frequently Asked Questions](http://www.mpaa.org/content-security-program/#15)
-- CSA STAR Azure Self-Assessment
+- [CSA STAR Self-Assessment](offering-csa-star-self-assessment.md)
 - [Azure Responses to CSA CAIQ v3.0.1](https://gallery.technet.microsoft.com/Azure-Responses-to-CSA-46034a11)

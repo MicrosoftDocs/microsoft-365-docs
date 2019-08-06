@@ -95,6 +95,6 @@ Yes. If you have a requirement to certify your services built on these Microsoft
 
 ## Resources
 
-- MTCS Certification Scheme
+- [MTCS Certification](https://www2.imda.gov.sg/)
 - [Azure compliance in the context of Singapore security and privacy requirements](https://aka.ms/azurecompliancesingapore)
 - [**Microsoft Online Services Terms](http://aka.ms/Online-Services-Terms)
