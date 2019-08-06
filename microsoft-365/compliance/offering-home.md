@@ -25,7 +25,7 @@ Learn how Microsoft 365 products and services help your organization meet regula
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/get-started.svg" alt="Get started" />
+                            <img src="https://docs.microsoft.com/en-us/office/media/icons/user-accounts.svg" alt="Global icon" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -55,7 +55,7 @@ Learn how Microsoft 365 products and services help your organization meet regula
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/chat.svg" alt="Chat" />
+                            <img src="https://docs.microsoft.com/en-us/office/media/icons/user-accounts.svg" alt="Government icon" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -86,7 +86,7 @@ Learn how Microsoft 365 products and services help your organization meet regula
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/user-accounts.svg" alt="User account" />
+                            <img src="https://docs.microsoft.com/en-us/office/media/icons/user-accounts.svg" alt="Industry icon" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -141,7 +141,7 @@ Learn how Microsoft 365 products and services help your organization meet regula
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/user-accounts.svg" alt="User account" />
+                            <img src="https://docs.microsoft.com/en-us/office/media/icons/user-accounts.svg" alt="Regional icon" />
                         </div>
                     </div>
                     <div class="cardText">
