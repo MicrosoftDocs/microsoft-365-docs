@@ -127,7 +127,7 @@ Learn how Microsoft 365 products and services help your organization meet regula
                         <p><a href="offering-rbi-irdai-india.md">RBI + IRDAI (India)</a></p>
                         <p><a href="offering-sec-17a-4.md">SEC 17a-4</a></p>
                         <p><a href="">Shared Assessments</a></p>
-                        <p><a href="offering-soc.md">SOC</a></p>
+                        <p><a href="offering-sox.md">SOX</a></p>
                         <p><a href="offering-tisax-germany.md">TISAX (Germany)</a></p>
                     </div>
                 </div>
