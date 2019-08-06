@@ -64,7 +64,7 @@ In addition, if the cloud services are deemed to carry "heightened inherent risk
 
 Yes. General privacy legislation (which applies across all sectors, not just to financial institutions) permits transfers outside of Australia under certain conditions. Microsoft agrees to contractual terms in line with Australian Privacy Principles so that transfers of data outside of Australia are permitted when you use Microsoft cloud services. However, many of our Australian financial services customers take advantage of the cloud services available from our Australian datacenters, for which we make specific contractual commitments to store categories of data at rest in the Australian geography. These are outlined further in the [**compliance checklist**](https://aka.ms/microsoftaprachecklistjun17).
 
-## Featured resources
+## Resources
 
 - [Prudential Standard CPS 231 Outsourcing](https://www.apra.gov.au/sites/default/files/Prudential-Standard-CPS-231-Outsourcing-%28July-2017%29.pdf)
 - [Outsourcing involving shared computing services (including cloud)](https://www.apra.gov.au/sites/default/files/information-paper-outsourcing-involving-shared-computing-services.pdf)

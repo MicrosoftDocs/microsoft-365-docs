@@ -75,7 +75,7 @@ Yes. The independent third-party compliance reports of the IEC/ISO 27001, ISO/IE
 
 Microsoft ensures that its enterprise cloud services meet the terms defined within the governing [Online Services Terms](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31) and applicable Service Level Agreements (SLAs). These define our responsibility for implementing and maintaining controls adequate to secure and monitor the system.
 
-## Featured resources
+## Resources
 
 - [Azure GxP Qualification Guidelines](https://aka.ms/gxpcompliance)
 - [Code of Federal Regulations Title 21](http://aka.ms/FDA-CFR)

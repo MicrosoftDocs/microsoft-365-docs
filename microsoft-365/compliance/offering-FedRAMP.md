@@ -100,7 +100,7 @@ For an overview of the steps federal agencies must take to successfully navigate
 
 Yes. You may use the certifications of Microsoft cloud services as the foundation for any program or initiative that requires an ATO from a federal government agency. However, you need to achieve your own authorizations for components outside these services.
 
-## Featured resources
+## Resources
 
 - [Federal Risk and Authorization Management Program](http://www.fedramp.gov/)
 - Microsoft Common Controls Hub Compliance Framework

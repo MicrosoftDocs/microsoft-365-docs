@@ -47,7 +47,7 @@ The MeitY accreditation of Microsoft was the result of a rigorous audit conducte
 
 Making government services available to citizens online is a key part of the Digital India program, which aims to “transform India into a digitally empowered society and knowledge economy.” MeitY lists accredited cloud service providers in the government cloud services directory, which enables public sector organizations to compare and procure those services.
 
-## Featured resources
+## Resources
 
 - [Ministry of Electronics and Information Technology](http://meity.gov.in/)
 - [MeghRaj Cloud Initiative](http://meity.gov.in/content/gi-cloud-meghraj)

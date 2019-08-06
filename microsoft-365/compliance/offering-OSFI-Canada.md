@@ -65,7 +65,7 @@ The [OSFI B-10 Guidelines](http://www.osfi-bsif.gc.ca/Eng/fi-if/rg-ro/gdn-ort/gl
 
 Yes, but only if the outsourcing arrangement is a material outsourcing or if it involves any transfer of personal information to the cloud service provider.
 
-## Featured resources
+## Resources
 
 - [Microsoft and Canadian privacy laws](https://aka.ms/CanadianPrivacyLaws-Compliance)
 - [Microsoft Financial Services Compliance Program](https://aka.ms/FSCP-Print)

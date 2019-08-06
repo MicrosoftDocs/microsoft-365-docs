@@ -77,7 +77,7 @@ An outsourcing arrangement is “material” if a service failure or breach has 
 
 This definition is important since certain provisions of MAS Outsourcing Guidelines apply only to “material outsourcing arrangements.” These include an obligation to perform annual reviews, mandatory contractual clauses addressing audit rights, and ensuring that outsourcing outside of Singapore does not affect MAS supervisory efforts.
 
-## Featured resources
+## Resources
 
 - [MAS Guidelines on Outsourcing Risk Management](http://www.mas.gov.sg/~/media/MAS/Regulations%20and%20Financial%20Stability/Regulatory%20and%20Supervisory%20Framework/Risk%20Management/Outsourcing%20Guidelines_Jul%202016.pdf)
 - [Frequently Asked Questions on MAS Guidelines on Outsourcing](http://www.mas.gov.sg/~/media/MAS/Regulations%20and%20Financial%20Stability/Regulatory%20and%20Supervisory%20Framework/Risk%20Management/Outsourcing%20Guidelines%20Jul%202016_FAQ.pdf)

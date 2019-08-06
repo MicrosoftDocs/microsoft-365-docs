@@ -67,7 +67,7 @@ The [Service Trust Portal](http://aka.ms/stphelp) provides the audit reports and
 
 If your organization is using Azure or Office 365, you can use ENS Microsoft audit reports and accreditation as part of your own accreditation process. However, you are responsible for engaging an auditor to evaluate your implementation for compliance, and for ensuring that the controls and processes within your own organization align with the framework.
 
-## Featured Resources
+## Resources
 
 - Esquema Nacional de Seguridad of Spain ([Spanish](http://administracionelectronica.gob.es/pae_Home/pae_Estrategias/pae_Seguridad_Inicio/pae_Esquema_Nacional_de_Seguridad.html?idioma=sp#.Vwxp82mcGM8) and [English](http://administracionelectronica.gob.es/pae_Home/pae_Estrategias/pae_Seguridad_Inicio/pae_Esquema_Nacional_de_Seguridad.html?idioma=en#.VwvcgmmcGM9))
 - [Microsoft Online Services Terms](http://aka.ms/Online-Services-Terms)

@@ -73,7 +73,7 @@ No. However, the Circulaire Cloud Computing states that the DNB expects supervis
 
 Yes. The provisions and arrangements to be included in cloud contracts depend on the type of financial institution. Requirements, such as those described in Art. 31 of the Commission Delegated Regulation (EU) 2017/565, are set out in Part 2 of the checklist.
 
-## Featured resources
+## Resources
 
 - [Microsoft Financial Services Compliance Program](https://aka.ms/FSCP-Print)
 - Microsoft business cloud services and financial services

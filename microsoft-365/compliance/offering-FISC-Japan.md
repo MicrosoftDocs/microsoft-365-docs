@@ -69,7 +69,7 @@ You can also see security references (in Japanese) from third parties who have e
 
 Yes. However, although Microsoft responses to this framework are confirmed compliant by third parties, customers are responsible for validating the compliance of solutions they have implemented on Azure or Office 365.
 
-## Featured resources
+## Resources
 
 - Azure FISC Security Reference
 - [Microsoft Online Services Terms](http://aka.ms/Online-Services-Terms)

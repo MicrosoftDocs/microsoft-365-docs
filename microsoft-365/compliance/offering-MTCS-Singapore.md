@@ -93,7 +93,7 @@ The [MTCS SS Implementation Guideline Report](https://go.microsoft.com/fwlink/p/
 
 Yes. If you have a requirement to certify your services built on these Microsoft cloud services, you can use the MTCS certification to reduce the impact of auditing your IT infrastructure, to the extent that it relies on them. However, you are responsible for engaging an assessor to evaluate your implementation for compliance, and for the controls and processes within your own organization.
 
-## Featured resources
+## Resources
 
 - MTCS Certification Scheme
 - [Azure compliance in the context of Singapore security and privacy requirements](https://aka.ms/azurecompliancesingapore)

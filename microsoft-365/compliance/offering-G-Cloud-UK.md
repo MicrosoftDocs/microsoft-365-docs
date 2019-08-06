@@ -102,7 +102,7 @@ In addition to the UK datacenters, Microsoft cloud services has data centers in 
 
 The [Service Trust Portal](https://support.office.com/article/Get-started-with-the-Service-Trust-Portal-for-Office-365-for-business-Azure-and-Dynamics-CRM-Online-subscriptions-f30e2353-0bd6-41ed-8347-eea1fb8d2662) provides independently audited compliance reports. You can use the portal to request audit reports so that your auditors can compare the Microsoft results with your own legal and regulatory requirements.
 
-## Featured resources
+## Resources
 
 - [Effective Compliance Controls to Address the UK Governments Common 14 Cloud Security Principles Using Microsoft Azure](https://aka.ms/complianceuk)
 - [UK Government Cloud Strategy](http://aka.ms/UK_govt_cloud_strategy)

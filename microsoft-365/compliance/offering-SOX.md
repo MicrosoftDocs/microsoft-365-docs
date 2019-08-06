@@ -58,7 +58,7 @@ SOC 1 Type 2 reports for:
 
 When you migrate your applications and data to covered Microsoft cloud services, you can build on the attestations and certifications that Microsoft holds. Independent auditor reports attest to the effectiveness of controls that Microsoft has implemented to help maintain the security and privacy of your data. However, you are wholly responsible for ensuring your organization’s compliance with all applicable laws and regulations.
 
-## Featured resources
+## Resources
 
 - [Azure Guidance for Sarbanes-Oxley](https://aka.ms/Azure-SOX-Guide)
 - [Microsoft Financial Services Compliance Program](https://www.microsoft.com/en-us/download/details.aspx?id=55332)

@@ -41,7 +41,7 @@ Customers seeking to host ITAR-regulated data should work with their Microsoft a
 
 Please contact your Microsoft account representative.
 
-## Featured resources
+## Resources
 
 - [DDTC ITAR](https://www.pmddtc.state.gov/?id=ddtc_kb_article_page&sys_id=24d528fddbfc930044f9ff621f961987)
 - [ITAR Title 22 CFR 120–130](https://aka.ms/itar)

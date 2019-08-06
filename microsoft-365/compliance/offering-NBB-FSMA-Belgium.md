@@ -66,7 +66,7 @@ No. However, financial institutions must notify the NBB and FSMA in the event of
 
 Yes. There are specific points that financial institutions must be sure to incorporate in their cloud services contracts. Part 2 of the [Microsoft checklist](https://aka.ms/FinServ-Guide-Belgium) (page 49) maps these against the sections in the Microsoft contractual documents where they are addressed.
 
-## Featured resources
+## Resources
 
 - [Microsoft Financial Services Compliance Program](https://aka.ms/FSCP-Print)
 - [Microsoft business cloud services and financial services](https://www.microsoft.com/en-us/trustcenter/cloudservices/financialservices)

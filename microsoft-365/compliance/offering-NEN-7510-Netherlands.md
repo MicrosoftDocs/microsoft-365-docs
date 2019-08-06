@@ -67,7 +67,7 @@ The report is provided with you under a non-disclosure agreement (NDA), on the b
 
 Customers can share the report with their own internal or external auditor as part of their compliance or assurance processes.
 
-## Featured resources
+## Resources
 
 - [About NEN](https://www.nen.nl/About-NEN.htm)
 - [NEN 7510:2011 standard](https://www.nen.nl/NEN-Shop-2/Standard/NEN-75102011-nl.htm)

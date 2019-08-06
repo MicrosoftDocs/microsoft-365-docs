@@ -64,7 +64,7 @@ To help streamline evaluations, the VDA set up a common assessment and exchange 
 
 ENX provides certification confirmation only to registered industry representatives through the ENX portal. For details about how to proceed, see the “Audits, reports, and certificates” section above.
 
-## Additional resources
+## Resources
 
 - [TISAX Frequently Asked Questions](https://portal.enx.com/en-US/en-en/TISAX/faqs/)
 - [Volkswagen and Microsoft announce strategic partnership](https://www.volkswagen-newsroom.com/en/press-releases/volkswagen-and-microsoft-announce-strategic-partnership-4234)

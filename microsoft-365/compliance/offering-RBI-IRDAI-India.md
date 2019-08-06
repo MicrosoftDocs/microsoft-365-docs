@@ -65,7 +65,7 @@ Financial firms using cloud services must also comply with privacy rules, includ
 
 Yes. The guidelines referenced above stipulate some specific points that financial institutions must incorporate into their cloud services contracts. Part 2 of the[checklist](https://servicetrust.microsoft.com/Documents/TrustDocuments?command=Download&downloadType=Document&downloadId=26f4af15-2771-4cd4-a7c7-9328149f9453&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides) (page 70) maps these against the sections in the Microsoft contractual documents where they are addressed.
 
-## Additional resources
+## Resources
 
 - [Microsoft and MeitY](https://www.microsoft.com/TrustCenter/Compliance/MeitY)
 - [Microsoft Financial Services Compliance Program](http://download.microsoft.com/download/6/4/7/64707E3E-6D3E-45D0-8207-A0EA3201B4A6/Microsoft%20Cloud%20-%20Financial%20Services%20Compliance%20Program%20\(Print\).pdf)

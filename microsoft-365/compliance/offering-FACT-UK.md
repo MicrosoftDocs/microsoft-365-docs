@@ -47,7 +47,7 @@ Content security is critical for feature film and television development, as the
 
 Compliance with FACT is voluntary, but Microsoft elected to carry out an independent assessment so that media customers can be confident in the content security and protection capabilities of Azure. However, customers’ individual cloud environments are not managed by Azure, and thus may be subject to additional regulation that is best addressed by an individual audit.
 
-## Featured resources
+## Resources
 
 - [Federation Against Copyright Theft](http://www.fact-uk.org.uk/)
 - FACT Certification Program

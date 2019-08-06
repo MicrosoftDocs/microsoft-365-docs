@@ -59,7 +59,7 @@ The high-level standard applies to the processing of sensitive data such as heal
 
 Yes. If your organization requires or is seeking an accreditation in line with the LOPD or Royal Decree 1720/2007, you can use AEPD’s authorization and the security measures certification in your compliance assessment. However, you are responsible for engaging an assessor to evaluate your implementation as deployed on Microsoft Azure, Dynamics 365, or Office 365, and for the controls and processes within your own organization.
 
-## Featured resources
+## Resources
 
 - Spanish Data Protection Agency ([Spanish](https://www.agpd.es/portalwebAGPD/index-ides-idphp.php) and English)
 - Organic Law 15/1999 of December 13 for the Protection of Personal Data ([**Spanish**](https://www.boe.es/buscar/act.php?id=BOE-A-1999-23750) and [English](http://www.mjusticia.gob.es/cs/Satellite/Portal/1292426984243))

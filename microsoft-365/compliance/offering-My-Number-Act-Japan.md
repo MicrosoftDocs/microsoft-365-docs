@@ -71,7 +71,7 @@ The Personal Information Protection Commission (PPC), which acts as the centrali
 
 [Section Q3-13](https://www.ppc.go.jp/legal/policy/faq/) (Japanese) of the PPC Q\&A states that because the ownership of personal data lies with Microsoft customers, they are required to take appropriate security measures, such as controlling administrator passwords, to protect personal information and My Number data.
 
-## Featured resources
+## Resources
 
 - [Azure Compliance and the Japan Security and Privacy Requirements](https://gallery.technet.microsoft.com/Azure-Compliance-and-the-53409748)
 - [Privacy at Microsoft](https://privacy.microsoft.com/en-US/)

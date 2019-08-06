@@ -39,7 +39,7 @@ The [Azure Cyber Essentials PLUS certification](https://aka.ms/AzureCyberEPlusCe
 - [Azure Cyber Essentials PLUS compliance report](https://aka.ms/AzureCyberEPlusReport)
 - [Azure Cyber Essentials PLUS certification](https://aka.ms/AzureCyberEPlusCert)
 
-## Featured resources
+## Resources
 
 - [United Kingdom Cyber Essentials PLUS](https://www.cyberaware.gov.uk/cyberessentials/)
 - [Cyber Essentials Scheme: Assurance framework](https://www.cyberaware.gov.uk/cyberessentials/files/assurance-framework.pdf)

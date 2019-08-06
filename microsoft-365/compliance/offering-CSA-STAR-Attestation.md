@@ -58,7 +58,7 @@ You can download the [CSA STAR Attestation](https://aka.ms/CSASTAR-Attestation) 
 - **Level 2**: **CSA STAR Certification**: Azure, Cloud App Security, Intune, and Microsoft Power BI. STAR Certification is based on achieving ISO/IEC 27001 certification and meeting criteria specified in the CCM. It is awarded after a rigorous third-party assessment of the security controls and practices of a cloud service provider.
 - **Level 2**: **CSA STAR Attestation**: Azure and Intune. CSA and the AICPA have collaborated to provide guidelines for CPAs to use in conducting SOC 2 engagements, using criteria from the AICPA (Trust Service Principles, AT 101) and the CSA CCM. STAR Attestation is based on these guidelines and is awarded after rigorous independent assessments of cloud providers.
 
-## Featured resources 
+## Resources
 
 - [Azure standard response for request for information](https://aka.ms/AzureStandardRequestForInformation)
 - [Azure Cloud Security Alliance CAIQ](https://aka.ms/AzureCSACAIQ)

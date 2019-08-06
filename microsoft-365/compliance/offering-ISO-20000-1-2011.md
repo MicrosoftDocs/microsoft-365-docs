@@ -64,7 +64,7 @@ You can download the ISO 20000-1:2011 certificate for Azure and additional servi
 
 Yes. If your business is seeking certification for implementations deployed on in-scope services, you can use the relevant Microsoft certifications in your compliance assessment. However, you are responsible for engaging an assessor to evaluate your implementation for compliance, and for the controls and processes within your own organization.
 
-## Featured resources
+## Resources
 
 - [ISO 20000-1:2011 — Service management](https://www.iso.org/standard/51986.html) (requirements for purchase)
 - [Microsoft Online Services Terms](http://aka.ms/Online-Services-Terms)

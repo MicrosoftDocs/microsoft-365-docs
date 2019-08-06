@@ -69,7 +69,7 @@ IG Toolkit attainment levels are from 0 to 3:
 - 2: There are approved and implemented IG policies and procedures in place that have been made available to all relevant staff
 - 3: Staff compliance and the effectiveness of the policies and procedures is monitored and assured
 
-## Featured resources
+## Resources
 
 - [Information Governance Toolkit](https://www.igt.hscic.gov.uk/)
 - [Microsoft Azure IG Toolkit Assessment Report](https://www.igt.hscic.gov.uk/AssessmentReportCriteria.aspx?tk=427399452776248&lnv=3&cb=48ea00e0-c594-4758-8634-f22b6efa0c39&sViewOrgId=50721&sDesc=8JH14)

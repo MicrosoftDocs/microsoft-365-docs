@@ -57,7 +57,7 @@ Microsoft ensures that the Azure platform meets the terms defined within the gov
 
 Yes. Third-party audit reports to the FedRAMP standards attest to the effectiveness of the controls Microsoft has implemented to maintain the security and privacy of the Azure platform. Azure and Azure Government customers may use the audited controls described in these related reports as part of their own FedRAMP and MARS-E risk analysis and qualification efforts.
 
-## Featured resources
+## Resources
 
 - MARS-E regulatory guidance, MARS-E Document Suite, Version 2.0
 - [**Volume II: Minimum acceptable risk standards for exchanges**](https://www.cms.gov/CCIIO/Resources/Regulations-and-Guidance/Downloads/2-MARS-E-v2-0-Minimum-Acceptable-Risk-Standards-for-Exchanges-11102015.pdf)

@@ -118,7 +118,7 @@ Yes. If compliance with ISO/IEC 27018 is important for your business and impleme
 
 However, you are responsible for engaging an assessor to evaluate your implementation for compliance, and for the controls and processes within your own organization.
 
-## Featured resources
+## Resources
 
 - [ISO/IEC 27018:2014 code of practice](http://aka.ms/ISO.IEC_27018.2014)
 - [Microsoft Common Controls Hub Compliance Framework](https://www.microsoft.com/en-us/trustcenter/common-controls-hub)

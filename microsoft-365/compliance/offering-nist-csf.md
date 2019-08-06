@@ -85,7 +85,7 @@ The in-scope services of NIST CSF certification are Exchange Online Archiving, E
 
 Microsoft provides the most comprehensive offerings compared to other cloud service providers. To keep up with our broad compliance offerings across regions and industries, we include services in the scope of our assurance efforts based on the market demand, customer feedback, and product lifecycle. If a service is not included in the current scope of a specific compliance offering, your organization has the responsibility to assess the risks based on your compliance obligations and determine the way you process data in that service. We continuously collect feedback from customers and work with regulators and auditors to expand our compliance coverage to meet your security and compliance needs.
 
-## Featured resources
+## Resources
 
 - [Microsoft Cloud Services Authorizations](https://marketplace.fedramp.gov/index.html#/products?status=Compliant&sort=productName)
 - [Mapping Microsoft Cyber Offerings to: NIST Cybersecurity Framework (CSF), CIS Controls, ISO27001:2013 and HITRUST CSF](https://go.microsoft.com/fwlink/p/?linkid=2074025)

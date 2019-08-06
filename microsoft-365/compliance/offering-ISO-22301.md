@@ -62,7 +62,7 @@ The [Service Trust Portal](http://aka.ms/stphelp) provides independently audited
 
 Yes. If your business requires ISO 22301 certification for implementations deployed on Microsoft services, you can use the Azure certification in your compliance assessment. You are responsible, however, for engaging an assessor to evaluate the controls, processes, and implementation for ISO 22301 compliance within your own organization and for your own applications.
 
-## Featured resources
+## Resources
 
 - [ISO 22301:2012 standard](http://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.htm?csnumber=50038) (for purchase)
 - [Azure resiliency technical guidance](https://aka.ms/Azure-resiliency-guide) (Explains the Azure shared responsibility model for business continuity.)

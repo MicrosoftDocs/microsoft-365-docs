@@ -79,7 +79,7 @@ Yes. If your business is seeking certification for implementations deployed on a
 
 The [Service Trust Portal](http://aka.ms/stphelp) provides independent, third-party audit reports and other related documentation. You can use the portal to download and review this documentation for assistance with your own regulatory requirements.
 
-## Featured resources
+## Resources
 
 - [ISO/IEC 27017:2015 code of practice](http://www.iso.org/iso/iso_catalogue/catalogue_tc/catalogue_detail.htm?csnumber=43757)
 - [Microsoft Online Services Terms](http://aka.ms/Online-Services-Terms)

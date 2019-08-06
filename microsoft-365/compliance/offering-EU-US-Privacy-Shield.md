@@ -77,7 +77,7 @@ Privacy Shield is not a GDPR compliance mechanism, but rather a framework that e
 
 If you have a complaint that is Privacy Shield-related, please let us know using the [How to Contact Us](https://privacy.microsoft.com/PrivacyStatement#mainhowtocontactusmodule) section of the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement). For any complaints that you cannot resolve with Microsoft directly, we cooperate with EU DPAs and will comply with the advice they provide. Contact us to be directed to the relevant DPA contacts. As further explained in the [Privacy Shield Principles](https://www.privacyshield.gov/article?id=Requirements-of-Participation), you can take advantage of a binding arbitration option to address complaints unresolved by other means.
 
-## Additional resources
+## Resources
 
 - [EU Data Protection Directive](https://eur-lex.europa.eu/legal-content/en/ALL/?uri=CELEX:31995L0046)
 - [Privacy Shield Frequently Asked Questions](https://www.privacyshield.gov/article?id=FAQs)

@@ -68,7 +68,7 @@ The EBA publication, [Recommendations on outsourcing to cloud services providers
 
 Yes. Article 239 of the [ACPR Order of 3 November 2014](https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000029700770&categorieLien=id) and Article 313-75 of the [AMF General Regulation](https://www.amf-france.org/eli/fr/aai/amf/rg/livre/1/fr.html) set forth conditions that must be reflected in contracts that financial institutions enter into with cloud service providers. Part 2 of the Microsoft [checklist](https://aka.ms/FinServ-Guide-France) (page 62) maps these against the sections in Microsoft contractual documents where they are addressed.
 
-## Featured resources
+## Resources
 
 - [Microsoft Financial Services Compliance Program](https://aka.ms/FSCP-Print)
 - Microsoft business cloud services and financial services

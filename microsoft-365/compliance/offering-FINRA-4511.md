@@ -60,7 +60,7 @@ To evaluate Office 365 compliance with FINRA Rule 4511(c), Microsoft retained a 
 - [Azure](https://aka.ms/FinServ-Guide-US)
 - [Office 365](https://docs.microsoft.com/azure/storage/blobs/storage-blob-immutable-storage)
 
-## Featured resources
+## Resources
 
 - [Microsoft Financial Services Compliance Program](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide)
 - Microsoft business cloud services and financial services

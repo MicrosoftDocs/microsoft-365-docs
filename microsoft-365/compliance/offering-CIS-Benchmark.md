@@ -84,7 +84,7 @@ The release of revised CIS Benchmarks changes depending on the community of IT p
 
 CIS notes that its “Benchmarks are developed through the generous volunteer efforts of subject matter experts, technology vendors, public and private CIS Benchmark community members, and the CIS Benchmark Development team.” For example, you’ll find a list of Azure contributors on [**CIS Microsoft Azure Foundations Benchmark v1.0.0 Now Available**](https://www.cisecurity.org/blog/cis-microsoft-azure-foundations-benchmark-v1-0-0-now-available/).
 
-## Featured resources
+## Resources
 
 - [CIS best practices for securely using Microsoft 365](https://www.microsoft.com/security/blog/2019/01/10/best-practices-for-securely-using-microsoft-365-the-cis-microsoft-365-foundations-benchmark-now-available/)
 - [Windows 10 security policy settings](https://docs.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/security-policy-settings)

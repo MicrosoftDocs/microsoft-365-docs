@@ -80,7 +80,7 @@ The information that the PCI Security Standards Council makes available is a goo
 
 Compliance involves several factors, including assessing the systems and processes not hosted on Azure. Individual requirements vary based on which Azure services are used and how they are employed within the solution.
 
-## Featured resources
+## Resources
 
 - [PCI Security Standards Council](http://www.pcisecuritystandards.org/)
 - [PCI Data Security Standard](https://www.pcisecuritystandards.org/documents/PCI_DSS_v3-1.pdf)

@@ -52,7 +52,7 @@ The Cloud Computing Compliance Controls Catalog (C5) is an audited standard from
 
 Microsoft Cloud Germany is physically based in Germany and adheres to the requirement of German privacy law, which strictly limits the transfer of personal data to other countries, including protection against access by authorities from other jurisdictions who could violate domestic laws. It offers Azure Germany, our public cloud computing platform, and all its services.
 
-## Featured resources
+## Resources
 
 - [IT-Grundschutz](https://www.bsi.bund.de/EN/Topics/ITGrundschutz/ITGrundschutzHome/itgrundschutzhome_node.html;jsessionid=5ABC53411232B460035220974AE634C4.1_cid351)
 - [IT-Grundschutz Catalogues v.15](https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Grundschutz/International/GSK_15_EL_EN_Draft.pdf?__blob=publicationFile&v=2) (2015)

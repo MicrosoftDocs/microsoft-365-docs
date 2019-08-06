@@ -53,7 +53,7 @@ Customers with national security systems (NSS) must comply with CNSSI 1253 requi
 
 Azure Government (FedRAMP package ID F1603087869) has been tested again these controls.
 
-## Featured resources
+## Resources
 
 - [What is Azure Government?](https://docs.microsoft.com/azure/azure-government/documentation-government-welcome)
 - [Azure Government](https://aka.ms/Azure-Government)

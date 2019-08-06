@@ -48,7 +48,7 @@ Sections in the Microsoft guide map in depth to each area of interest in the FCA
 
 Yes. However, although Microsoft responses to this framework are confirmed compliant by third parties, customers are responsible for validating the compliance of solutions they have implemented on Azure or Power BI.
 
-## Featured resources
+## Resources
 
 - [Microsoft Cloud Checklist for Financial Institutions in the UK](https://aka.ms/Azure-UK-compliance)
 - [FG 16/5 — Guidance for firms outsourcing to the cloud and other third-party IT service](https://www.fca.org.uk/publication/finalised-guidance/fg16-5.pdf)

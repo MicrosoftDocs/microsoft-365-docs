@@ -138,7 +138,7 @@ Adopting ISO/IEC 27001 is a strategic commitment. As a starting point, consult t
 
 Yes. If your business requires ISO/IEC 27001 certification for implementations deployed on Microsoft services, you can use the applicable certification in your compliance assessment. You are responsible, however, for engaging an assessor to evaluate the controls and processes within your own organization and your implementation for ISO/IEC 27001 compliance.
 
-## Featured resources
+## Resources
 
 - [Mapping Microsoft Cyber Offerings to: NIST Cybersecurity (CSF), CIS Controls, and ISO27001:2013 Frameworks](http://download.microsoft.com/download/B/1/8/B18F4C7D-5CBA-4E68-A437-31F1E908ACBA/Microsoft_Cyber_Offerings_Mapped_to_Security_Frameworks_EN_US.pdf)
 - [The ISO/IEC 27000 Directory](http://www.27000.org/index.htm)

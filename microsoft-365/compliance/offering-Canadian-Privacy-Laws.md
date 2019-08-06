@@ -71,7 +71,7 @@ Canadian customers of Microsoft business cloud services will [know where their c
 
 PIPEDA doesn’t require Canadian businesses to keep personal information in Canada. However, depending on the province where organizations do business, or their industry, they could be required to keep certain types of data within Canadian borders. To help address these types of requirements, Microsoft has established two datacenters in Canada that support Azure and Intune — in Toronto and Quebec City — and verifies that each datacenter meets stringent security requirements.
 
-## Additional resources
+## Resources
 
 - [Summary of privacy laws in Canada](https://gallery.technet.microsoft.com/Overview-of-Azure-c1be3942) (OPCC)
 - [Privacy at Microsoft](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/)

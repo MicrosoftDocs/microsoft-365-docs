@@ -50,7 +50,7 @@ To assist local police services with their due-diligence review, the NPIRMT perf
 
 Yes. Law enforcement can use the NPIRMT assessment of Azure to support their own local risk assessment before a move to the cloud.
 
-## Additional resources
+## Resources
 
 - [National Policing Accreditation Policy](http://library.college.police.uk/docs/APP-National-Policing-Accreditation-Policy-2013.pdf)
 - [Azure facilities, premises, and physical security](https://azure.microsoft.com/blog/azure-layered-approach-to-physical-security/)

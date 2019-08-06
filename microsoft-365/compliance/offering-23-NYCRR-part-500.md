@@ -90,7 +90,7 @@ Develop plans to respond to and recover from cybersecurity incidents. Microsoft 
 
 Consult the New York Department of Financial Services **Who We Supervise** to determine whether your institution is governed by this regulation.
 
-## Featured resources
+## Resources
 
 - New York State Department of Financial Services 23 NYCRR 500: Cybersecurity Requirements For Financial Services Companies
 - **Frequently Asked Questions regarding 23 NYCRR Part 500**

@@ -118,7 +118,7 @@ Yes. When you migrate your applications and data to covered Microsoft cloud serv
 
 The [SOC Toolkit for Service Organizations](http://aka.ms/soc-toolkit) is a helpful resource for understanding SOC reporting processes and promoting your organization’s use of them.
 
-## Featured resources
+## Resources
 
 - Better protect your data by using Microsoft cloud services
 - [Service Organization Control (SOC) Reports](https://aka.ms/mssocreports)

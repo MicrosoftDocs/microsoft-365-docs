@@ -52,7 +52,7 @@ Accreditation is valid for three years, with a yearly surveillance audit to be c
 
 If your organization is using Azure or Office 365, you need to ensure that the CS Mark addresses your own security requirements. If CS Mark does address your security requirements, then you can use the Microsoft accreditation and audit report as part of your own accreditation process. You are responsible for engaging an auditor to evaluate your implementation for compliance, and for the controls and processes within your own organization.
 
-## Featured resources
+## Resources
 
 - [CS Mark Accreditation Scheme](http://jcispa.jasa.jp/cloud_security/) (Japanese)
 - [CS Mark Standard accreditation rules](http://jcispa.jasa.jp/cloud_security/jcispa_regulation/) (Japanese)

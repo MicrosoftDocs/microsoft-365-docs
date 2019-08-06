@@ -66,7 +66,7 @@ No. The FSA does not approve outsourcing and the outsourcer (or cloud service pr
 
 Yes. The Executive Order on Outsourcing of Significant Areas of Activity (and the accompanying Guideline) stipulates some specific points that financial institutions must incorporate in their cloud services contracts. Part 2 of the Microsoft [checklist](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/) (page 48) maps these against the sections in the Microsoft contractual documents where they are addressed.
 
-## Featured resources
+## Resources
 
 - [Microsoft Financial Services Compliance Program](https://aka.ms/FinServ-Guide-Denmark)
 - Microsoft business cloud services and financial services

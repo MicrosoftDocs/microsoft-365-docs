@@ -57,7 +57,7 @@ Yes. The ISO 9001:2015 annual assessment includes the underlying physical infras
 
 You can download the [ISO 9001:2015 certificate](https://aka.ms/Azure9001Cert) for Azure and additional services that are in scope of this assessment.
 
-## Featured resources
+## Resources
 
 - [ISO 9001:2015 — Quality management](https://www.iso.org/iso-9001-quality-management.html)
 - [ISO 9001: 2015 standard](https://www.iso.org/standard/62085.html) (requirements for purchase)

@@ -42,7 +42,7 @@ Find conformance reports for all our products and services.
 
 [Learn more](https://go.microsoft.com/fwlink/p/?linkid=2050974)
 
-## Featured resources
+## Resources
 
 [Microsoft accessibility page](https://go.microsoft.com/fwlink/p/?linkid=2051579)
     - Explore the ways in which Microsoft innovates so everyone has the ability to achieve more.

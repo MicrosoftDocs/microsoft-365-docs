@@ -61,7 +61,7 @@ No. It is a supporting tool for the customer’s internal BIR assurance process 
 
 The report is provided to customers under a non-disclosure agreement (NDA), on the basis that it is for customer information only and that it will not be copied or disclosed via other channels than the Microsoft [**Service Trust Platform**](https://www.microsoft.com/TrustCenter/STP/default.aspx). Customers can share the report with their own internal or external auditor as part of their compliance or assurance processes.
 
-## Featured resources
+## Resources
 
 - **ISO-IEC 27001**
 - [Security prescription national 2013 (BVR)](http://wetten.overheid.nl/BWBR0033512/2013-06-01)

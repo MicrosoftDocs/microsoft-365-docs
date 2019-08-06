@@ -59,7 +59,7 @@ Archiving in Office 365 helps to preserve a wide range of data, including email,
 - [Azure](https://aka.ms/AzureCompliance)
 - [Office 365](https://aka.ms/o365-compliance-framework)
 
-## Featured resources
+## Resources
 
 - [Microsoft Financial Services Compliance Program](https://aka.ms/FSCP-Print)
 - [Microsoft business cloud services and financial services](https://www.microsoft.com/en-us/trustcenter/cloudservices/financialservices)

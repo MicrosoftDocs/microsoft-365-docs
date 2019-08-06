@@ -59,7 +59,7 @@ The HDS certification is valid for three years.
 
 Note that The HDS certificate does not apply to Microsoft online services in preview or pre-release.
 
-## Featured resources
+## Resources
 
 - [Microsoft Online Services Terms](https://aka.ms/Online-Services-Terms)
 - [Microsoft HDS certification blog](https://news.microsoft.com/fr-fr/2018/11/06/microsoft-1er-acteur-majeur-du-cloud-public-a-etre-certifie-hebergeur-de-donnees-de-sante-en-france/)

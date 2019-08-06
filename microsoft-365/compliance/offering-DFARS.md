@@ -68,7 +68,7 @@ The following Microsoft cloud services have received a FedRAMP moderate authoriz
 
 Additionally, Microsoft offerings outside the FedRAMP-certified boundary that could potentially be used by DoD contractors to process, store, or transmit “covered defense information” are undergoing a review to meet a December 31, 2017, compliance deadline. Microsoft is working to document how these internal and customer-facing services comply with NIST SP 800–171 or an acceptable security equivalent, to meet the DFARS relevant clauses.
 
-## Featured resources
+## Resources
 
 - [Defense Federal Acquisition Regulation Supplement (DFARS)](http://www.acq.osd.mil/dpap/dars/dfarspgi/current/index.html)
 - [Microsoft Cloud for Government](http://enterprise.microsoft.com/industries/government/start-your-microsoft-cloud-for-government-trial-today)

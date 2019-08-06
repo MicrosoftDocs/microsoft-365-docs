@@ -71,7 +71,7 @@ Yes, if your organization meets the eligibility requirements for Azure Governmen
 
 No. The only environments where FTI can be stored and processed are Azure Government or Office 365 U.S. Government. Government customers must meet the eligibility requirements to use these environments.
 
-## Featured resources
+## Resources
 
 - [IRS Publication 1075](http://www.irs.gov/pub/irs-pdf/p1075.pdf)
 - [IRS Safeguards Program](http://www.irs.gov/uac/Safeguards-Program)

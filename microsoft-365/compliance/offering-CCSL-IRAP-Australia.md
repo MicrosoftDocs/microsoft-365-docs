@@ -73,7 +73,7 @@ Start with the [**IRAP tool kit**](http://www.asd.gov.au/infosec/irap/toolkit.ht
 - [Who provides IRAP training?](http://www.asd.gov.au/infosec/irap/training.htm)
 - [Compliance and noncompliance requirements information](http://www.asd.gov.au/infosec/irap/compliance.htm)
 
-## Featured resources
+## Resources
 
 - [Australian Government ISM](http://www.asd.gov.au/infosec/ism/index.htm)
 - [ASD IRAP policy and procedures](http://aka.ms/irap-policy)

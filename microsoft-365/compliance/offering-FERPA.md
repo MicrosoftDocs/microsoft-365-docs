@@ -63,7 +63,7 @@ This US federal law mandates the protection of the privacy of students’ educat
 - [Federal Register: FERPA Final Rule](http://aka.ms/ferpa-reg) (December 2011)
 - [FERPA general guidance for parents](http://www2.ed.gov/policy/gen/guid/fpco/ferpa/parents.html)
 
-## Featured resources
+## Resources
 
 - [**Family Educational Rights and Privacy Act**](http://www.ed.gov/policy/gen/guid/fpco/ferpa/index.html)
 - [**Electronic Code of Federal Regulations: FERPA**](http://aka.ms/FERPA-GPO)

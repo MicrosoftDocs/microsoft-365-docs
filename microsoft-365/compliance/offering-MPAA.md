@@ -55,7 +55,7 @@ MPAA guidelines provide major studio vendors and partners with a set of best pra
 
 Production facilities, visual effects houses, and other service partners should work with their executive producers and directors to understand the new security requirements, and whether a formal MPAA audit is necessary. Compliance with MPAA guidelines is voluntary, but Microsoft elected to carry out an independent assessment so that media customers can be confident in the content security and protection capabilities of Azure. However, Azure does not manage the individual cloud environments of customers, which may be subject to additional MPAA regulation that is best addressed by your own audit of your environment.
 
-## Featured resources
+## Resources
 
 - [Motion Picture Association of America](http://www.mpaa.org/)
 - [MPAA Content Security Program](http://www.mpaa.org/content-security-program/)

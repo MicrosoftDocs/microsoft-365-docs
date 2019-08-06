@@ -79,7 +79,7 @@ States with appropriate CJIS documentation, as of August 2017, include: Alaska, 
 
 [CJIS Security Policy](http://aka.ms/cjis-security-policy) covers the precautions that your agency must take to protect CJI. In addition, your Microsoft account representative can put you in touch with those familiar with the requirements of your jurisdiction.
 
-## Featured resources
+## Resources
 
 - [Criminal Justice Information Services](https://aka.ms/cjis)
 - [CJIS Security Policy](http://aka.ms/cjis-security-policy)

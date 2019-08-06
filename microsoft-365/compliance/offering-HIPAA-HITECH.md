@@ -97,7 +97,7 @@ To assist customers with this task, Microsoft has published these guides:
 - [Practical guide to designing secure health solutions using Microsoft Azure](http://aka.ms/azureindustrysecurity) helps you better understand what it takes to successfully adopt a cloud service in a secure manner.
 - [Addressing HIPAA security and privacy requirements in the Microsoft Cloud](http://smb.blob.core.windows.net/smbproduction/Content/Microsoft_Cloud_Healthcare_HIPAA_Security_Privacy.pdf) offers a brief overview of regulation requirements. It also provides a detailed analysis of how Microsoft’s cloud services were built with methodologies that map to those requirements, and guidance on how to build compliance-ready solutions.
 
-## Featured resources
+## Resources
 
 - [HIPAA Omnibus Rule](http://aka.ms/HIPAA-omnibus) (The final regulations-modifying HIPAA rules)
 - Microsoft Common Controls Hub Compliance Framework

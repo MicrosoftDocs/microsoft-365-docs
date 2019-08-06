@@ -57,7 +57,7 @@ For financial institutions in the EU, Microsoft has also published [Risk Assessm
 
 The Microsoft publication, [Risk Assessment and Compliance Guide for Financial Institutions in the Microsoft Cloud](https://aka.ms/RiskGovernanceGuide), offers a checklist of questions that the EBA guidance recommends answering in a regulatory submission, and provides suggestions on how to answer those questions.
 
-## Featured resources
+## Resources
 
 - [Microsoft Service Trust Portal](https://aka.ms/STP)
 - [Microsoft Financial Services Compliance Program](https://aka.ms/FSCP-Print)

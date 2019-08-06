@@ -54,7 +54,7 @@ In 2016, the AAIP issued a new regulation, [Provision 60-E/2016](http://servicio
 
 In late 2018, Argentina has not yet enacted GDPR-related regulations, but it has drafted a new data protection bill — already submitted to Congress by the Executive Power and under revision by the House of Representatives — to bring its data protection law into alignment with the GDPR. It addresses such differences as the definition of data subjects and concerns over the cross-border transfer of personal information.
 
-## Additional resources
+## Resources
 
 - [Privacy at Microsoft](https://privacy.microsoft.com)
 - [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement)

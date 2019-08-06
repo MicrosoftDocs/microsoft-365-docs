@@ -67,7 +67,7 @@ No. Only low-level cryptographic modules are validated.
 
 An agency does not need to be certified. To comply with FIPS 140-2, your system must be configured to run in a FIPS mode of operation, which means that you must ensure that a cryptographic module uses only FIPS-approved security methods. Microsoft business cloud services and Windows Server enable organizations to configure them to use FIPS mode. You’ll find information about the FIPS 140 mode of operation in [FIPS 140 Validation](http://aka.ms/technet-FIPS).
 
-## Featured resources
+## Resources
 
 - [FIPS Pub 140-2 Security Requirements for Cryptographic Modules](http://csrc.nist.gov/publications/fips/fips140-2/fips1402.pdf)
 - [NIST Cryptographic Module Validation Program](http://csrc.nist.gov/groups/STM/cmvp/index.html)

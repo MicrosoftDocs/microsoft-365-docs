@@ -85,7 +85,7 @@ When you store your data in a SaaS like Office 365, it’s a shared responsibili
 
 Yes, you can find recommended customer actions in Compliance Manager, cross-Microsoft Cloud solutions that help your organization meet complex compliance obligations when using cloud services. Specifically, for HITRUST CSF, we recommend that you perform risk assessments using the NIST 800-53 and NIST CSF assessments in Compliance Manager. In the assessments, we provide you with step-by-step guidance and the Microsoft solutions you can use to implement your data protection controls. You can learn more about Compliance Manager in this [whitepaper](https://resources.office.com/ww-landing-m365e-gdpr-compliance-manager-whitepaper.html?lcid=en-us).
 
-## Featured resources
+## Resources
 
 - [HITRUST Alliance](https://hitrustalliance.net/)
 - [HITRUST CSF 8.1](https://hitrustalliance.net/csf-license-agreement/)

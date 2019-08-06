@@ -79,7 +79,7 @@ A "subprocessor" is someone who processes personal data following the data contr
 
 You can enter an agreement such, as the [Online Services Terms](http://aka.ms/Online-Services-Terms), or explore amending your existing agreement to incorporate the Standard Contractual Clauses.
 
-## Featured resources
+## Resources
 
 - [EU Standards Organization](http://eur-lex.europa.eu/)
 - [EU Model Clauses](http://aka.ms/EU-model_clauses)

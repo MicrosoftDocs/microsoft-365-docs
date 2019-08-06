@@ -70,7 +70,7 @@ No. However, under the Banking Act of 1997, if the service provider is based out
 
 Yes. Part 2 of the [Microsoft checklist](https://aka.ms/FinServ-Guide-Poland) (page 77) contains a comprehensive list of the requirements that should be included in contracts with cloud service providers.
 
-## Featured resources
+## Resources
 
 - [Microsoft Financial Services Compliance Program](https://aka.ms/FSCP-Print)
 - [Microsoft business cloud services and financial services](https://www.microsoft.com/en-us/trustcenter/cloudservices/financialservices)

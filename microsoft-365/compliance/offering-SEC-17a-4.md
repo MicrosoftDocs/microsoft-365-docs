@@ -62,7 +62,7 @@ The SEC defines rigorous and explicit requirements for regulated entities that e
 
 An electronic storage system meets those conditions if it prevents the alteration or erasure of records for the required retention period. Retention periods vary from three to six years based on record types, with immediate accessibility mandated for the first two years. Moreover, one of the interpretive releases requires that the storage system be capable of retaining records beyond the SEC-established retention period to comply with subpoenas, legal hold, or other such requirements.
 
-## Additional resources
+## Resources
 
 - [Archiving in Microsoft Office 365, Data Retention, and Rule 17a-4 Compliance](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?linkid=830440)
 - [Microsoft Financial Services Compliance Program](https://servicetrust.microsoft.com/ViewPage/TrustDocuments)

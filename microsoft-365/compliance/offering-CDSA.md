@@ -64,7 +64,7 @@ For guidance, refer to the [**CDSA Azure implementation guide**](https://aka.ms/
 
 Yes. You can build on Azure CPS certification within your own CPS certification effort by using the security and encryption features in Azure.
 
-## Featured resources
+## Resources
 
 - [CDSA](http://www.cdsaonline.org/)
 - [CPS Standard](http://aka.ms/cdsa-standard)

@@ -54,7 +54,7 @@ Organizations that fall under the GCIO mandate — the public and non-public ser
 
 If your agency is required to undertake certification and accreditation of its ICT system under the New Zealand Information Security Manual, then you can use these responses as part of your analysis.
 
-## Featured resources
+## Resources
 
 - [Security requirements for offshore hosted Office productivity services: conformance guide for Office 365](https://aka.ms/o365-gcio-conformance-guidance)
 - [Microsoft Azure compliance in the context of New Zealand security and privacy requirements](https://aka.ms/azurecompliancenewzealand)
