@@ -50,15 +50,14 @@ Providing access to Microsoft 365 online services is a partnership between your 
 ![balance of customer and Microsoft responsibilities](\media\ebcm\Responsibilities.png)
 
 ## Your environment - service continuity
-When thinking about your continuity plan, be mindful of events which may impact your organization and the overall ability to communicate. At a high level there are three factors that could impact your business: 
+When thinking about your continuity plan, be mindful of events which may impact your organization and it's overall ability to communicate. At a high level there are three factors that could impact your business.
 
 ### People
-Consider events that would cause impact to your workforce. This is often overlooked, due to the unlikely nature of a broad-scale impact. For example, if a pandemic or epidemic caused a percentage of the workforce to be offline, would your business continue to operate? 
+Consider events that would cause impact to your workforce like a natural disaster or a pandemic. This is often overlooked, due to the unlikely nature of a broad-scale impact if your workforce is widely distributed. But, if a large percentage of the workforce were offline, would your business continue to operate? How do you mitigate that?
 
 ### Location
-Many organizations implement connectivity restrictions to resources, requiring employees to be in specific locations for connecting to enterprise systems and collaboration services.  
-M365 publishes network connectivity principles that guide enterprises through best practices for accessing cloud resources. Examples of optimization include implementation of split tunnel VPNs to allow connections directly from a user’s network rather than over a VPN tunnel.  While these connectivity principles are important for maintaining low-latency connections, service resiliency requires alternative methods of connecting to corporate resources or general collaboration. 
-
+Many organizations require employees to be in specific physical or network locations in order to connect to enterprise systems, and cloud services.  
+Microsoft publishes [network connectivity principles](https://docs.microsoft.com/en-us/office365/enterprise/office-365-network-connectivity-principles) that guide enterprises through best practices for setting up network connectivity to cloud resources. Examples of optimization include implementation of split tunnel VPNs to allow connections directly from a user’s network rather than over a VPN tunnel.  While these connectivity principles are important for maintaining low-latency connections, service resiliency requires alternative methods of connecting to corporate resources or general collaboration.
 
 ### Systems
 Many collaboration solutions are interconnected to organizational systems. A simple example is the company wide area network (WAN). When those systems are not available, how would your organization respond? 
@@ -66,7 +65,7 @@ The Venn diagram below represents issues that may impact more than one area. The
 
 ![venn-diagram](media\ebcm\venn-diagram.png)
 
-
+Your continuity plans should consider each of these areas. For example: If you require users to be on the corporate network and there is a snowstorm, how do those users gain access to key resources? If the snow prevents travel into the office and service engineers are required to connect to the corporate network, is there a policy mandating they have their corporate laptops in their possession at home?  
 
 
 ## heading 2
