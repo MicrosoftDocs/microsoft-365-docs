@@ -20,40 +20,51 @@ Microsoft is your partner in providing Microsoft 365 cloud services to your user
 
 # Transparency during service incidents
 
-As a trusted partner, Microsoft  builds highly resilient cloud services and follow highly structure procedures to resolve service incidents when they happen. When a service incident occurs, Microsoft recognizes that **timely**, **targeted**, and **accurate** communications are critical for customers. 
+As a trusted partner, Microsoft  builds highly resilient cloud services and follow highly structure procedures to resolve service incidents when they happen. When a service incident occurs, Microsoft recognizes that **timely**, **targeted**, and **highly available** communications are critical for customers.
 
 ## Timely
 Microsoft notifies Microsoft 365 administrators by updating the tenant-specific Service Health Dashboard (SHD) in the Microsoft 365 Admin Portal. Service incident updates are normally provided on an hourly cadence. If a different cadence is needed we'll keep you informed of the change in the SHD communication postings.
 
 ## Targeted
-In most cases, when our monitoring systems detect an issue, we can (isolate) OR (identify) the affected customer base, from a single customer up to region or beyond and direct communications to those impacted customers. This helps you know what you need to know for your business and not be distracted by noise notifications that don't impact you. For example, if a specific mailbox database is impacted, we're able to identify exactly which customers have users on the affected infrastructure and scope our communications to them. If the scope of impact of the incident is unclear, we expand our communications out to the widest group of customer who are potentially impacted. 
+In most cases, when our monitoring systems detect an issue, we can (isolate) OR (identify) the affected customer base, from a single customer up to region or beyond and direct communications to those impacted customers. This helps you know what you need to know for your business and not be distracted by noise notifications that don't impact you. For example, if a specific mailbox database is impacted, we're able to identify exactly which customers have users on the affected infrastructure and scope our communications to them. If the scope of impact of the incident is unclear, we expand our communications out to the widest group of customer who are potentially impacted.
 
+## Highly Avaliable
+Microsoft maintains multiple channels for service status communicxations that customers can use.
 
+- In the event the Admin center or the Service Health Dashboard within the Admin center are unavailable, you can monitor the service status using our [backup site](https://status.office365.com/).
+- We maintain a Twitter account [@MSFT365Status](https://twitter.com/msft365status?lang=en) where we will respond to reports of impact and post updates on SHD impacting events. 
+- The Admin App for Microsoft 365 tenant administrators gives you the ability to connect with your organization's Microsoft 365 service status on the go. Tenant administrators will have the ability to view service health information and maintenance status updates from their mobile devices. For more information, visit the [Admin App FAQ](https://docs.microsoft.com/en-us/office365/admin/admin-overview/admin-mobile-app?view=o365-worldwide).
+- The [Microsoft 365 Service Communications API](https://docs.microsoft.com/en-us/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity#office-365-service-communications-api) enables you to access service communications for simplifying the monitoring of your environment. Connect to the API, receive real-time service health data, and publish the information on an internal dashboard to inform enterprise users of incidents. Distributing the information internally can decrease your helpdesk traffic during an outage.
+- For highly impacting incidents, Microsoft publishes Post Incident Reviews (PIR) to the SHD within the Admin center. PIRs contain key incident information useful for understanding the nature of the outage and generally contain the following sections: 
+    - user impact
+    - scope of impact
+    - incident start-end date and time
+    - root cause
+    - actions taken
+    - next steps
+- Ancillary communications are available in the Microsoft 365 Message Center, such as notice of upcoming changes, new features, or maintenance. 
+- For more information, see the [Service Health and Continuity guide](https://docs.microsoft.com/en-us/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity) to learn more about the different communication channels and how to monitor service health.
  
-Customers should use the [Service Health and Continuity guide](https://docs.microsoft.com/en-us/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity) to learn about the different communication channels and how to monitor service health. 
- 
-In the event the M365 Admin center or the Service Health Dashboard within the Admin center are unavailable, you can monitor the status of M365 using our backup site: 
-https://status.office365.com/. Additionally, we maintain a Twitter account (@MSFT365Status) where we will respond to reports of impact and post updates on SHD impacting events. 
-The Admin App for M365 tenant administrators gives you the ability to connect with your organization's M365 service status on the go. M365 tenant administrators will have the ability to view service health information and maintenance status updates from their mobile devices. For more information, visit the Admin App FAQ. 
-The M365 Service Communications API enables you to access M365 service communications for simplifying the monitoring of your environment. Connect to the API, receive real-time service health data, and publish the information on an internal dashboard to inform enterprise users of incidents. Distributing the information internally can decrease your helpdesk traffic during an outage. We provide several other methods for customers to implement their own monitoring solutions on top of those options mentioned above.   
-For highly impacting incidents, Microsoft publishes Post Incident Reviews (PIR) to the SHD within the Admin center. PIRs contain key incident information useful for understanding the nature of the outage and generally contain the following sections: 
-•	User Impact 
-•	Scope of Impact 
-•	Incident Start-End Date and Time 
-•	Root Cause 
-•	Actions Taken 
-•	Next Steps 
-Ancillary communications are available in the M365 Message Center, such as notice of upcoming changes, new features, or maintenance. 
-
-
 Providing access to Microsoft 365 online services is a partnership between your organization and Microsoft. The following chart summarizes the balance of responsibility for both Microsoft and the customer during a service incident and regular operations.
 
 ![balance of customer and Microsoft responsibilities](\media\ebcm\Responsibilities.png)
 
+## Your environment - service continuity
+When thinking about your continuity plan, be mindful of events which may impact your organization and the overall ability to communicate. At a high level there are three factors that could impact your business: 
+
+### People
+Consider events that would cause impact to your workforce. This is often overlooked, due to the unlikely nature of a broad-scale impact. For example, if a pandemic or epidemic caused a percentage of the workforce to be offline, would your business continue to operate? 
+
+### Location
+Many organizations implement connectivity restrictions to resources, requiring employees to be in specific locations for connecting to enterprise systems and collaboration services.  
+M365 publishes network connectivity principles that guide enterprises through best practices for accessing cloud resources. Examples of optimization include implementation of split tunnel VPNs to allow connections directly from a user’s network rather than over a VPN tunnel.  While these connectivity principles are important for maintaining low-latency connections, service resiliency requires alternative methods of connecting to corporate resources or general collaboration. 
 
 
+### Systems
+Many collaboration solutions are interconnected to organizational systems. A simple example is the company wide area network (WAN). When those systems are not available, how would your organization respond? 
+The Venn diagram below represents issues that may impact more than one area. The accompanying table provides examples to consider
 
-https://docs.microsoft.com/en-us/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity
+![venn-diagram](media\ebcm\venn-diagram.png)
 
 
 
