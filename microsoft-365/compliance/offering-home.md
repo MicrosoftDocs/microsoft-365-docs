@@ -146,32 +146,32 @@ Learn how Microsoft 365 products and services help your organization meet regula
                     </div>
                     <div class="cardText">
                         <h3>Regional</h3>
-                        <P><a href="offering-file.md">BIR 2012 (Netherlands)</a></p>
-                        <P><a href="offering-file.md">C5 (Germany)</a></p>
-                        <P><a href="offering-file.md">CCSL / IRAP (Australia)</a></p>
-                        <P><a href="offering-file.md">C5 Mark Gold (Japan)</a></p>
-                        <P><a href="offering-file.md">Cyber Essentials Plus (UK)</a></p>
-                        <P><a href="offering-file.md">Canadian Privacy Laws</a></p>
-                        <P><a href="offering-file.md">DJCP (China)</a></p>
-                        <P><a href="offering-file.md">EN 301 549 (EU)</a></p>
-                        <P><a href="offering-file.md">ENS (Spain)</a></p>
-                        <P><a href="offering-file.md">ENISA IAF (EU)</a></p>
-                        <P><a href="offering-file.md">EU Model Clauses</a></p>
-                        <P><a href="offering-file.md">EU-US Privacy Shield</a></p>
-                        <P><a href="offering-file.md">GB 18030 (China)</a></p>
-                        <P><a href="offering-file.md">GDPR (EU)</a></p>
-                        <P><a href="offering-file.md">G-Cloud (UK)</a></p>
-                        <P><a href="offering-file.md">IDW PS 951 (Germany)</a></p>
-                        <P><a href="offering-file.md">ISMS (Korea)</a></p>
-                        <P><a href="offering-file.md">IT Grundschutz Workbook (Germany)</a></p>
-                        <P><a href="offering-file.md">LOPD (Spain)</a></p>
-                        <P><a href="offering-file.md">MeitY (India)</a></p>
-                        <P><a href="offering-file.md">MTCS (Singapore)</a></p>
-                        <P><a href="offering-file.md">My Number (Japan)</a></p>
-                        <P><a href="offering-file.md">NZ CC Framework (New Zealand)</a></p>
-                        <P><a href="offering-file.md">PASF (UK)</a></p>
-                        <P><a href="offering-file.md">PDPA (Argentina)</a></p>
-                        <P><a href="offering-file.md">TRUCS (China)</a></p>
+                        <P><a href="offering-bir-2012-netherlands.md">BIR 2012 (Netherlands)</a></p>
+                        <P><a href="offering-c5-germany.md">C5 (Germany)</a></p>
+                        <P><a href="offering-ccsl-irap-australia.md">CCSL / IRAP (Australia)</a></p>
+                        <P><a href="offering-cs-mark-gold-japan.md">CS Mark Gold (Japan)</a></p>
+                        <P><a href="offering-cyber-essentials-plus-uk.md">Cyber Essentials Plus (UK)</a></p>
+                        <P><a href="offering-canadian-privacy-laws.md">Canadian Privacy Laws</a></p>
+                        <P><a href="">DJCP (China)</a></p>
+                        <P><a href="offering-en-301-549-eu.md">EN 301 549 (EU)</a></p>
+                        <P><a href="offering-ens-spain.md">ENS (Spain)</a></p>
+                        <P><a href="">ENISA IAF (EU)</a></p>
+                        <P><a href="offering-eu-model-clauses.md">EU Model Clauses</a></p>
+                        <P><a href="offering-eu-us-privacy-shield.md">EU-US Privacy Shield</a></p>
+                        <P><a href="">GB 18030 (China)</a></p>
+                        <P><a href="offering-gdpr-eu.md">GDPR (EU)</a></p>
+                        <P><a href="offering-g-cloud-uk.md">G-Cloud (UK)</a></p>
+                        <P><a href="">IDW PS 951 (Germany)</a></p>
+                        <P><a href="offering-k-isms-compliance.md">ISMS (Korea)</a></p>
+                        <P><a href="offering-it-grundschutz-workbook-germany.md">IT Grundschutz Workbook (Germany)</a></p>
+                        <P><a href="offering-lopd-spain.md">LOPD (Spain)</a></p>
+                        <P><a href="offering-meity-india.md">MeitY (India)</a></p>
+                        <P><a href="offering-mtcs-singapore.md">MTCS (Singapore)</a></p>
+                        <P><a href="offering-my-number-act-japan.md">My Number (Japan)</a></p>
+                        <P><a href="offering-nz-cc-framework.md">NZ CC Framework (New Zealand)</a></p>
+                        <P><a href="offering-pasf-uk.md">PASF (UK)</a></p>
+                        <P><a href="offering-pdpa-argentina.md">PDPA (Argentina)</a></p>
+                        <P><a href="">TRUCS (China)</a></p>
                     </div>
                 </div>
             </div>
