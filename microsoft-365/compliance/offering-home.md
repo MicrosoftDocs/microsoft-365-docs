@@ -110,7 +110,7 @@ Learn how Microsoft 365 products and services help your organization meet regula
                         <p><a href="offering-fisc-japan.md">FISC (Japan)</a></p>
                         <p><a href="offering-fsa-denmark.md">FSA (Denmark)</a></p>
                         <p><a href="offering-glba.md">GLBA</a></p>
-                        <p><a href="">GxP</a></p>
+                        <p><a href="offering-gxp.md">GxP</a></p>
                         <p><a href="offering-hds-france.md">HDS (France)</a></p>
                         <p><a href="offering-hippa-hitech.md">HIPAA / HITECH</a></p>
                         <p><a href="offering-hitrust.md">HITRUST</a></p>

@@ -93,7 +93,7 @@
 ### [FISC (Japan)](offering-fisc-japan.md)
 ### [FSA (Denmark)](offering-fsa-denmark.md)
 ### [GLBA](offering-glba.md)
-### [GxP]()
+### [GxP](offering-gxp.md)
 ### [HDS (France)](offering-hds-france.md)
 ### [HIPAA/HITECH](offering-hipaa-hitech.md)
 ### [HITRUST](offering-hitrust.md)
