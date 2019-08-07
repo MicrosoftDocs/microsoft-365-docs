@@ -39,7 +39,7 @@ Overview of US export controls and guidance for customers assessing their obliga
 
 ## About the EAR
 
-The US Department of Commerce enforces the Export Administration Regulations (EAR) through th[e <span class="underline">Bureau of Industry and</span> <span class="underline">Security</span> (](https://www.bis.doc.gov/)BIS). The EAR broadly governs and imposes controls on the export and re-export of most commercial goods, software, and technology, including “dual-use” items that can be used both for commercial and military purposes and certain defense items.
+The US Department of Commerce enforces the Export Administration Regulations (EAR) through the [Bureau of Industry and Security (BIS)](https://www.bis.doc.gov/). The EAR broadly governs and imposes controls on the export and re-export of most commercial goods, software, and technology, including “dual-use” items that can be used both for commercial and military purposes and certain defense items.
 
 BIS guidance holds that, when data or software is uploaded to the cloud or transferred between user nodes, the customer, not the cloud provider, is the “exporter” who has the responsibility to ensure that transfers of, storage of, and access to that data or software complies with the EAR.
 
