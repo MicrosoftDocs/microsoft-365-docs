@@ -1,7 +1,6 @@
 ---
 title: Microsoft Compliance Offerings
 layout: LandingPage
-hide_bc: true
 description: Microsoft documentation for compliance offerings.
 author: robmazz
 ms.author: robmazz
