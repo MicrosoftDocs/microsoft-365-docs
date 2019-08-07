@@ -112,15 +112,15 @@ Learn how Microsoft 365 products and services help your organization meet regula
                         <p><a href="offering-glba.md">GLBA</a></p>
                         <p><a href="offering-gxp.md">GxP</a></p>
                         <p><a href="offering-hds-france.md">HDS (France)</a></p>
-                        <p><a href="offering-hippa-hitech.md">HIPAA / HITECH</a></p>
+                        <p><a href="offering-hipaa-hitech.md">HIPAA / HITECH</a></p>
                         <p><a href="offering-hitrust.md">HITRUST</a></p>
                         <p><a href="offering-knf-poland.md">KNF (Poland)</a></p>
                         <p><a href="offering-mars-e.md">MARS-E</a></p>
                         <p><a href="offering-mas-abs-singapore.md">MAS + ABS (Singapore)</a></p>
                         <p><a href="offering-mpaa.md">MPAA</a></p>
                         <p><a href="offering-nbb-fsma-belgium.md">NBB + FSMA (Belgium)</a></p>
-                        <p><a href="offering-nen-7510.md">NEN-7510</a></p>
-                        <p><a href="offering-nerc.md">NERC</a></p>
+                        <p><a href="offering-nen-7510-netherlands.md">NEN-7510 (Netherlands)</a></p>
+                        <p><a href="offering-nerc-cip.md">NERC</a></p>
                         <p><a href="offering-nhs-ig-toolkit-uk.md">NHS IG Toolkit (UK)</a></p>
                         <p><a href="offering-osfi-canada.md">OSFI (Canada)</a></p>
                         <p><a href="offering-pci-dss.md">PCI DSS</a></p>
@@ -169,7 +169,7 @@ Learn how Microsoft 365 products and services help your organization meet regula
                         <p><a href="offering-meity-india.md">MeitY (India)</a></p>
                         <p><a href="offering-mtcs-singapore.md">MTCS (Singapore)</a></p>
                         <p><a href="offering-my-number-act-japan.md">My Number (Japan)</a></p>
-                        <p><a href="offering-nz-cc-framework.md">NZ CC Framework (New Zealand)</a></p>
+                        <p><a href="offering-nz-cc-framework-nz.md">NZ CC Framework (New Zealand)</a></p>
                         <p><a href="offering-pasf-uk.md">PASF (UK)</a></p>
                         <p><a href="offering-pdpa-argentina.md">PDPA (Argentina)</a></p>
                         <p><a href="https://aka.ms/TRUCS-Compliance">TRUCS (China)</a></p>
