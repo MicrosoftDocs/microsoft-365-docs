@@ -75,16 +75,16 @@ ISO 27001 and 27018 documentation for Azure, Intune, Power BI, Cloud App Securit
 
 Covered services include:
 
-- Azure, Azure Government, and Azure Germany [**detailed list**](https://aka.ms/AzureCompliance)
+- [Azure, Azure Government, and Azure Germany](https://aka.ms/AzureCompliance)
 - Cloud App Security
 - Microsoft Professional Services: Premier and On Premises for Azure, Dynamics 365, Intune, and for medium business and enterprise customers of Office 365
-- Dynamics 365 and Dynamics 365 U.S. Government [**detailed list**](https://aka.ms/d365-compliance-list)
+- [Dynamics 365 and Dynamics 365 U.S. Government](https://aka.ms/d365-compliance-list)
 - Genomics
 - Graph
 - Health Bot
 - Intune
 - Microsoft Flow cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
-- Office 365, Office 365 U.S. Government, and Office 365 U.S. Government Defense [**detailed list**](https://go.microsoft.com/fwlink/p/?linkid=2077751)
+- [Office 365, Office 365 U.S. Government, and Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?linkid=2077751)
 - Office 365 Germany
 - OMS Service Map
 - PowerApps cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
@@ -108,9 +108,9 @@ In the context of ISO/IEC 27018:
 
 **Where can I view Microsoft compliance information for ISO/IEC 27018?**
 
-- You can review the ISO/IEC 27018 certificates from BSI for [**Azure**](http://www.bsigroup.com/Our-services/Management-system-certification/Certificate-and-Client-Directory-Search/Certificate-Client-Directory-Search-Results/?searchkey=company%3dMicrosoft%2bAzure&licencenumber=PII%20648972), Azure Germany, [**Microsoft Professional Services**](http://www.bsigroup.com/Our-services/Management-system-certification/Certificate-and-Client-Directory-Search/Certificate-Client-Directory-Search-Results/?searchkey=company%3dMicrosoft%2bCorporation&licencenumber=PII%20642270), and **Power BI**.
-- You can also review ISO/IEC 27001 certificates from BSI upon which ISO/IEC 27018 certification is based for [**Dynamics 365**](https://aka.ms/Dynamics-CRM-Online-Cert), [**Office 365**](https://aka.ms/Office365-Cert), and [**Azure DevOps Services**](https://go.microsoft.com/fwlink/p/?linkid=2062159).
-- To review the BSI reports, the independent auditor that validated Microsoft compliance with ISO/IEC 27018, visit the [**Service Trust Portal**](http://aka.ms/stphelp)
+- You can review the ISO/IEC 27018 certificates from BSI for [Azure](http://www.bsigroup.com/Our-services/Management-system-certification/Certificate-and-Client-Directory-Search/Certificate-Client-Directory-Search-Results/?searchkey=company%3dMicrosoft%2bAzure&licencenumber=PII%20648972), Azure Germany, [Microsoft Professional Services](http://www.bsigroup.com/Our-services/Management-system-certification/Certificate-and-Client-Directory-Search/Certificate-Client-Directory-Search-Results/?searchkey=company%3dMicrosoft%2bCorporation&licencenumber=PII%20642270), and Power BI.
+- You can also review ISO/IEC 27001 certificates from BSI upon which ISO/IEC 27018 certification is based for [Dynamics 365](https://aka.ms/Dynamics-CRM-Online-Cert), [Office 365](https://aka.ms/Office365-Cert), and [Azure DevOps Services](https://go.microsoft.com/fwlink/p/?linkid=2062159).
+- To review the BSI reports, the independent auditor that validated Microsoft compliance with ISO/IEC 27018, visit the [Service Trust Portal](http://aka.ms/stphelp)
 
 **Can I use Microsoft’s compliance in my organization’s certification process?**
 

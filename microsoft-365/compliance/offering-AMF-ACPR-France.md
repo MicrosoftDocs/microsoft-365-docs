@@ -40,17 +40,9 @@ The Microsoft checklist helps French financial firms conducting due-diligence as
 
 ## How to implement
 
-[Compliance checklist: France](https://aka.ms/FinServ-Guide-France)
-
-- Financial firms can get help conducting risk assessments of Microsoft business cloud services.
-
-[Risk Assessment & Compliance Guide](https://aka.ms/RiskGovernanceGuide)
-
-- Create a governance model for risk assessment of Microsoft cloud services, and regulator notification.
-
-[Financial use cases](https://docs.microsoft.com/en-us/azure/industry/financial/)
-
-- Use-case overviews, tutorials, and other resources to build Azure solutions for financial services.
+- [Compliance checklist: France](https://aka.ms/FinServ-Guide-France): Financial firms can get help conducting risk assessments of Microsoft business cloud services.
+- [Risk Assessment & Compliance Guide](https://aka.ms/RiskGovernanceGuide): Create a governance model for risk assessment of Microsoft cloud services, and regulator notification.
+- [Financial use cases](https://docs.microsoft.com/en-us/azure/industry/financial/): Use-case overviews, tutorials, and other resources to build Azure solutions for financial services.
 
 ## Microsoft in-scope cloud services
 

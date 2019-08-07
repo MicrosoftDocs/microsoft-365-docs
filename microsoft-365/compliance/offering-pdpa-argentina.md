@@ -30,15 +30,8 @@ The Microsoft data-transfer agreement is an amendment (Amendment ID M314) to the
 
 ## How to implement
 
-### Privacy in Microsoft Cloud Services
-
-Get details on Microsoft privacy principles and standards and on privacy laws specific to Argentina.  
-- [Learn more](https://www.microsoft.com/download/details.aspx?id=55710)
-
-### Azure data protection
-
-Azure offers customers strong data security, both by default and as customer options.  
-- [Learn more](https://docs.microsoft.com/azure/security/azure-protection-of-customer-data)
+- [Privacy in Microsoft Cloud Services](https://www.microsoft.com/download/details.aspx?id=55710): Get details on Microsoft privacy principles and standards and on privacy laws specific to Argentina.  
+- [Azure data protection](https://docs.microsoft.com/azure/security/azure-protection-of-customer-data): Azure offers customers strong data security, both by default and as customer options.
 
 ## About the PDPA
 

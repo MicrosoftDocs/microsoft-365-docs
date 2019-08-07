@@ -24,9 +24,7 @@ The BIR coverage report provides guidance where the BIR standards are covered by
 
 While Microsoft is not subject to BIR 2012 compliance, customers from the government sector seeking to use cloud services can use Microsoft’s existing certifications to determine their compliance with this standard. Azure and Office 365 undergo various periodic independent certifications and attestations, some of which are closely related to BIR 2012.
 
-Learn how to accelerate your BIR 2012 deployment with our Azure Security and Compliance Blueprint.
-
-[Download the Microsoft Cloud — Azure and Office 365 BIR-2012 Baseline Coverage User Guide](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=f49ee594-6c56-4b6f-93c1-646850798354&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)
+Learn how to accelerate your BIR 2012 deployment with our [Azure Security and Compliance Blueprint](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=f49ee594-6c56-4b6f-93c1-646850798354&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides).
 
 ## Audits, reports, and certificates
 
@@ -59,7 +57,7 @@ No. It is a supporting tool for the customer’s internal BIR assurance process 
 
 **Can we share this report?**
 
-The report is provided to customers under a non-disclosure agreement (NDA), on the basis that it is for customer information only and that it will not be copied or disclosed via other channels than the Microsoft [**Service Trust Platform**](https://www.microsoft.com/TrustCenter/STP/default.aspx). Customers can share the report with their own internal or external auditor as part of their compliance or assurance processes.
+The report is provided to customers under a non-disclosure agreement (NDA), on the basis that it is for customer information only and that it will not be copied or disclosed via other channels than the Microsoft [Service Trust Platform](https://www.microsoft.com/TrustCenter/STP/default.aspx). Customers can share the report with their own internal or external auditor as part of their compliance or assurance processes.
 
 ## Resources
 

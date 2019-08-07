@@ -36,7 +36,7 @@ The TISAX assessment focused on the following Microsoft services:
 
 ## Audits, reports, and certificates
 
-Industry representatives registered with ENX can find details on the TISAX assessment of in-scope Microsoft cloud services on the [**ENX portal**](https://portal.enx.com/en-US/). To search for Microsoft assessment results, sign in to your existing TISAX account, and search for Microsoft. Alternatively, you may narrow your search using the information below:
+Industry representatives registered with ENX can find details on the TISAX assessment of in-scope Microsoft cloud services on the [ENX portal](https://portal.enx.com/en-US/). To search for Microsoft assessment results, sign in to your existing TISAX account, and search for Microsoft. Alternatively, you may narrow your search using the information below:
 
 - Microsoft Participant ID: PGKYK0
 - Microsoft Corp. EU Assessment Level (AL) 3 scope ID: SY869K
@@ -48,7 +48,7 @@ This assessment is valid for three years.
 
 ### Manufacturing use cases
 
-Use case overviews, solution guides, tutorials, and other resources to help build Azure solutions. [Learn more](https://docs.microsoft.com/en-us/azure/industry/manufacturing/)
+Use case overviews, solution guides, tutorials, and other resources to help build [Azure solutions](https://docs.microsoft.com/en-us/azure/industry/manufacturing/).
 
 ## About TISAX
 
@@ -68,7 +68,7 @@ ENX provides certification confirmation only to registered industry representati
 
 - [TISAX Frequently Asked Questions](https://portal.enx.com/en-US/en-en/TISAX/faqs/)
 - [Volkswagen and Microsoft announce strategic partnership](https://www.volkswagen-newsroom.com/en/press-releases/volkswagen-and-microsoft-announce-strategic-partnership-4234)
-- [Office in your Car: BMW offers Skype for Business](https://news.microsoft.com/de-de/skype-business-ab-sofort-fahrzeugen-von-bmw-verfugbar/)** (German)
+- [Office in your Car: BMW offers Skype for Business](https://news.microsoft.com/de-de/skype-business-ab-sofort-fahrzeugen-von-bmw-verfugbar/) (German)
 - [Connecting vehicles for the long haul: Daimler](https://customers.microsoft.com/en-us/story/daimlertrucks)
 - [Continental is adopting Microsoft Office 365 to boost productivity](https://www.avanade.com/en/clients/continental)
 - [Microsoft and ISO/IEC 27001:2013](offering-iso-27001.md)

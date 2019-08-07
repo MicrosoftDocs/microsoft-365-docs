@@ -58,28 +58,26 @@ Once granted a DoD PA, Microsoft cloud services are monitored and assessed annua
 
 ## Microsoft in-scope cloud services
 
-**Covered services for DoD Impact Level 5**
+### Covered services for DoD Impact Level 5
 
-- Azure Government for DoD [**detailed list**](https://aka.ms/AzureCompliance)
+- [Azure Government for DoD](https://aka.ms/AzureCompliance)
 - Office 365 U.S. Government Defense
 
-**Covered services for DoD Impact Level 4**
+### Covered services for DoD Impact Level 4
 
-- Azure Government [detailed list](https://aka.ms/AzureCompliance)
+- [Azure Government](https://aka.ms/AzureCompliance)
 - Office 365 U.S. Government Defense
 
-**Covered services for DoD Impact Level 2**
+### Covered services for DoD Impact Level 2
 
-- Azure [detailed list](https://aka.ms/AzureCompliance)
-- Dynamics 365 U.S. Government [detailed list](https://aka.ms/d365-compliance-list)
-- Office 365 U.S. Government [detailed list](https://aka.ms/o365-compliance-framework)
+- [Azure](https://aka.ms/AzureCompliance)
+- [Dynamics 365 U.S. Government](https://aka.ms/d365-compliance-list)
+- [Office 365 U.S. Government](https://aka.ms/o365-compliance-framework)
 - Power BI cloud service either as a standalone service or as included in an Office 365 branded plan or suite
 
 ## Fast track your deployment of DoD solutions on Azure
 
-Get a head start on taking advantage of the benefits of the cloud in government with the Azure Security and Compliance Department of Defense Blueprint. This blueprint provides tools and guidance to get you started building DoD-compliant solutions today.
-
-- [Start using the Azure DoD Blueprint](https://aka.ms/Azure-Blueprint-DoD-NIST)
+Get a head start on taking advantage of the benefits of the cloud in government with the [Azure Security and Compliance Department of Defense Blueprint](https://aka.ms/Azure-Blueprint-DoD-NIST). This blueprint provides tools and guidance to get you started building DoD-compliant solutions today.
 
 ## Frequently asked questions
 
@@ -89,7 +87,7 @@ Yes. All DoD agencies may rely on the certifications of Microsoft cloud services
 
 **Does Microsoft’s DoD certification meet NIST 800–171 requirements?**
 
-In October 2016, the Department of Defense (DoD) promulgated a final rule implementing Defense Federal Acquisition Regulation Supplement (DFARS) clauses that apply to all DoD contractors who process, store, or transmit “covered defense information” through their information systems. The rule states that such systems must meet the security requirements set forth in NIST SP 800–171, [**Protecting Controlled Unclassified Information in nonfederal information systems and organizations**](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-171.pdf), or an “alternative, but equally effective, security measure” that is approved by the DoD contracting officer. And where a DoD contractor uses an external cloud service provider to process, store, or transmit covered defense information, such provider must meet security requirements that are equivalent to the FedRAMP Moderate baseline.
+In October 2016, the Department of Defense (DoD) promulgated a final rule implementing Defense Federal Acquisition Regulation Supplement (DFARS) clauses that apply to all DoD contractors who process, store, or transmit “covered defense information” through their information systems. The rule states that such systems must meet the security requirements set forth in NIST SP 800–171, [Protecting Controlled Unclassified Information in nonfederal information systems and organizations](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-171.pdf), or an “alternative, but equally effective, security measure” that is approved by the DoD contracting officer. And where a DoD contractor uses an external cloud service provider to process, store, or transmit covered defense information, such provider must meet security requirements that are equivalent to the FedRAMP Moderate baseline.
 
 The following Microsoft cloud services have received a FedRAMP moderate authorization: Azure, Azure Government, Dynamics 365 U.S. Government, Office 365 MT, Office 365 U.S. Government, and Office 365 U.S. Government Defense.
 

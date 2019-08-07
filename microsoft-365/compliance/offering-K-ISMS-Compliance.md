@@ -22,8 +22,8 @@ Achieving this certification means that Azure customers in Korea can more easily
 
 The audit covered the measures Microsoft takes to secure data and protect its confidentiality including the:
 
-- Certification of Microsoft business cloud services (with annual audits for compliance) to [**ISO/IEC 27001:2013 Information Security Management Standards**](offering-iso-27001.md).
-- High level of privacy protection based on Microsoft compliance with the [**ISO/IEC 27018 Code of Practice for Protecting Personal Data in the Cloud**](offering-iso-27018.md).
+- Certification of Microsoft business cloud services (with annual audits for compliance) to [ISO/IEC 27001:2013 Information Security Management Standards](offering-iso-27001.md).
+- High level of privacy protection based on Microsoft compliance with the [ISO/IEC 27018 Code of Practice for Protecting Personal Data in the Cloud](offering-iso-27018.md).
 - Layered approach in how Microsoft datacenters are designed, built, and operated to strictly control physical access to the areas where customer data is stored.
 
 ## Microsoft in-scope cloud services

@@ -46,10 +46,10 @@ SOC 1 Type 2 reports for:
 
 ## Microsoft in-scope cloud services
 
-- Azure [detailed list](https://aka.ms/AzureCompliance)
-- Dynamics 365 [detailed list](https://aka.ms/d365-compliance-list)
+- [Azure](https://aka.ms/AzureCompliance)
+- [Dynamics 365](https://aka.ms/d365-compliance-list)
 - Intune
-- Office 365 [detailed list](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
+- [Office 365](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 - Power BI cloud service either as a standalone service or as included in an Office 365 branded plan or suite
 
 ## Frequently asked questions

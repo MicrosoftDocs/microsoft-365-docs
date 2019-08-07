@@ -42,17 +42,10 @@ A checklist that sets forth the issues to be addressed and maps Microsoft Azure,
 
 ## How to implement
 
-[Compliance checklist: Poland](https://aka.ms/FinServ-Guide-Poland)
-    - Financial firms can get help in conducting risk assessments of Microsoft business cloud services.
-
-[Risk Assessment & Compliance Guide](https://aka.ms/RiskGovernanceGuide)
-    - Create a governance model for risk assessment of Microsoft cloud services, and regulator notification.
-
-[Financial use cases](https://docs.microsoft.com/en-us/azure/industry/financial/)
-    - Use case overviews, tutorials, and other resources to build Azure solutions for financial services.
-
-[Privacy in Microsoft Cloud](https://aka.ms/MCSPrivacy)
-    - Get details on Microsoft privacy principles and standards and on privacy laws specific to Poland.
+- [Compliance checklist: Poland](https://aka.ms/FinServ-Guide-Poland): Financial firms can get help in conducting risk assessments of Microsoft business cloud services.
+- [Risk Assessment & Compliance Guide](https://aka.ms/RiskGovernanceGuide): Create a governance model for risk assessment of Microsoft cloud services, and regulator notification.
+- [Financial use cases](https://docs.microsoft.com/en-us/azure/industry/financial/): Use case overviews, tutorials, and other resources to build Azure solutions for financial services.
+- [Privacy in Microsoft Cloud](https://aka.ms/MCSPrivacy): Get details on Microsoft privacy principles and standards and on privacy laws specific to Poland.
 
 ## Microsoft in-scope cloud services
 

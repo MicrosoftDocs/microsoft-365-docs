@@ -26,9 +26,9 @@ Learn about the benefits of ISO/IEC 27017 on the Microsoft Cloud.
 
 Covered services include:
 
-- Azure, Azure Government, and Azure Germany [detailed list](https://aka.ms/AzureCompliance)
+- [Azure, Azure Government, and Azure Germany](https://aka.ms/AzureCompliance)
 - Cloud App Security
-- Dynamics 365 [detailed list](https://aka.ms/d365-compliance-list)
+- [Dynamics 365](https://aka.ms/d365-compliance-list)
 - Genomics
 - Graph
 - Intune

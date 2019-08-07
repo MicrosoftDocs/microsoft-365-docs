@@ -78,11 +78,11 @@ CIS benchmarks establish the basic level of security for anyone adopting in-scop
 
 **How often are CIS Benchmarks updated?**
 
-The release of revised CIS Benchmarks changes depending on the community of IT professionals who developed it and on the release schedule of the technology the benchmark supports. CIS distributes monthly reports that announce new benchmarks and updates to existing benchmarks. To receive these, register for the [**CIS Workbench**](https://workbench.cisecurity.org/) (it’s free) and check Receive newsletter in your profile.
+The release of revised CIS Benchmarks changes depending on the community of IT professionals who developed it and on the release schedule of the technology the benchmark supports. CIS distributes monthly reports that announce new benchmarks and updates to existing benchmarks. To receive these, register for the [CIS Workbench](https://workbench.cisecurity.org/) (it’s free) and check Receive newsletter in your profile.
 
 **Who contributed to the development of Microsoft CIS Benchmarks?**
 
-CIS notes that its “Benchmarks are developed through the generous volunteer efforts of subject matter experts, technology vendors, public and private CIS Benchmark community members, and the CIS Benchmark Development team.” For example, you’ll find a list of Azure contributors on [**CIS Microsoft Azure Foundations Benchmark v1.0.0 Now Available**](https://www.cisecurity.org/blog/cis-microsoft-azure-foundations-benchmark-v1-0-0-now-available/).
+CIS notes that its “Benchmarks are developed through the generous volunteer efforts of subject matter experts, technology vendors, public and private CIS Benchmark community members, and the CIS Benchmark Development team.” For example, you’ll find a list of Azure contributors on [CIS Microsoft Azure Foundations Benchmark v1.0.0 Now Available](https://www.cisecurity.org/blog/cis-microsoft-azure-foundations-benchmark-v1-0-0-now-available/).
 
 ## Resources
 

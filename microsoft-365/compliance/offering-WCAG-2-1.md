@@ -20,9 +20,7 @@ WCAG 2.1 provides a framework for developing web content that improves accessibi
   
 Content that conforms to WCAG 2.1 also conforms to WCAG 2.0. For policies requiring conformance to WCAG 2.0, WCAG 2.1 can provide an alternate means of conformance.  
   
-Conformance requirements for each guideline are measured in three levels: A, AA, and AAA. Because Microsoft is a major software and cloud-services provider to states and governments around the world, it is committed to complying with all relevant international standards and compliance controls. By adhering to these wide-ranging accessibility standards, Microsoft ensures that all customers — both inside and outside of government — can use Microsoft services and products.  
-  
-[Learn more](https://go.microsoft.com/fwlink/p/?linkid=2052226)
+Conformance requirements for each guideline are measured in three levels: A, AA, and AAA. Because Microsoft is a major software and cloud-services provider to states and governments around the world, it is committed to complying with all relevant [international standards and compliance controls](https://go.microsoft.com/fwlink/p/?linkid=2052226). By adhering to these wide-ranging accessibility standards, Microsoft ensures that all customers — both inside and outside of government — can use Microsoft services and products.  
 
 ## Microsoft and WCAG 2.1
 

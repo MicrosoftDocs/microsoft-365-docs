@@ -38,13 +38,9 @@ Archiving in Office 365 helps to preserve a wide range of data, including email,
 
 ## How to implement
 
-[Financial services regulation — Compliance map of key US regulatory principles for cloud computing and Microsoft online services.
-
-[Risk Assessment & Compliance Guide](https://aka.ms/RiskGovernanceGuide)
-    - Create a governance model for risk assessment of Microsoft cloud services, and regulator notification.
-
-[Financial use cases](https://docs.microsoft.com/azure/industry/financial/)
-    - Use case overviews, tutorials, and other resources to build Azure solutions for financial services.
+- [Financial services regulation](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=5b483567-00b0-4d86-96ae-ee887dadb61c&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides): Compliance map of key US regulatory principles for cloud computing and Microsoft online services.
+- [Risk Assessment & Compliance Guide](https://aka.ms/RiskGovernanceGuide): Create a governance model for risk assessment of Microsoft cloud services, and regulator notification.
+- [Financial use cases](https://docs.microsoft.com/azure/industry/financial/): Use case overviews, tutorials, and other resources to build Azure solutions for financial services.
 
 ## Audits, reports, and certificates
 

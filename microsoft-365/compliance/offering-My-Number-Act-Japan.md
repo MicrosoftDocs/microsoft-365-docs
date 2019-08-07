@@ -39,25 +39,15 @@ Therefore, Microsoft business cloud services support My Number Act requirements 
 
 ## How to implement
 
-### Microsoft Security Policy
+- [Microsoft Security Policy](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=231213ea-9954-41fd-a757-ae62f3721dc7&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers): How Microsoft handles the security of personal and organizational information in its cloud services.
 
-How Microsoft handles the security of personal and organizational information in its cloud services. Learn more (Japanese)
+- [Privacy in Office 365](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=a1b48a5b-bcb1-4c19-9277-952c0df87113&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers): How Microsoft builds strong privacy protections into Office 365.
 
-### Privacy in Office 365
+- [Admin Access in Office 365](https://docs.microsoft.com/en-us/office365/SecurityCompliance/office-365-administrative-access-controls-overview): How Microsoft manages administrative access to Office 365 customer data.
 
-How Microsoft builds strong privacy protections into Office 365. [Learn more](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=a1b48a5b-bcb1-4c19-9277-952c0df87113&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
+- [Audits & Reports in Office 365](https://docs.microsoft.com/en-us/office365/SecurityCompliance/office-365-auditing-and-reporting-overview): Explore the features customers can use to track user and administrative activity within their tenant.
 
-### Admin Access in Office 365
-
-How Microsoft manages administrative access to Office 365 customer data. [Learn more](https://docs.microsoft.com/en-us/office365/SecurityCompliance/office-365-administrative-access-controls-overview)
-
-### Audits & Reports in Office 365
-
-Explore the features customers can use to track user and administrative activity within their tenant. [Learn more](https://docs.microsoft.com/en-us/office365/SecurityCompliance/office-365-auditing-and-reporting-overview)
-
-### Data Retention in Office 365
-
-Understand the data handling policy for how long customer data is retained after being deleted. [Learn more](https://docs.microsoft.com/en-us/office365/SecurityCompliance/office-365-data-retention-deletion-and-destruction-overview)
+- [Data Retention in Office 365](https://docs.microsoft.com/en-us/office365/SecurityCompliance/office-365-data-retention-deletion-and-destruction-overview): Understand the data handling policy for how long customer data is retained after being deleted.
 
 ## About the My Number Act
 

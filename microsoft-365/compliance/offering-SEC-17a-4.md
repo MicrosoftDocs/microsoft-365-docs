@@ -22,8 +22,8 @@ Microsoft Azure Immutable Blob Storage with Policy Lock and Microsoft Office 365
 
 To evaluate Azure and Office 365 compliance with SEC Rule 17a-4(f), Microsoft retained an independent assessment firm that specializes in records management and information governance, Cohasset Associates. In the resulting report for:
 
-- **Azure**, [SEC 17a-4(f) Compliance Assessment: Microsoft Azure Storage](https://www.sec.gov/rules/interp/34-47806.htm?command=Download&downloadType=Document&downloadId=19b08fd4-d276-43e8-9461-715981d0ea20&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_GRC_Assessment_Reports), Cohasset validated that [**Azure Immutable Blob Storage**](https://docs.microsoft.com/en-us/office365/securitycompliance/retention-policies) with the Policy Lock option, when used to retain time-based Blobs in a non-erasable and non-rewritable (WORM) format, meets the immutable storage requirements of the SEC rule. Each Blob (record) is protected from being modified, overwritten, or deleted until the required retention period has expired and any associated legal holds have been released. Software providers and partners with sensitive workloads can now rely on Azure Immutable Blob Storage as a one stop-shop cloud solution for records retention and immutable storage. Financial institutions can now build their own applications taking advantage of these features while remaining compliant.
-- **Office 365**, [Use Exchange Online to Comply with SEC 17a-4](https://www.govinfo.gov/app/details/CFR-2012-title17-vol3/CFR-2012-title17-vol3-sec240-17a-3), Cohasset validated that [Office 365 with Preservation Lock](https://techcommunity.microsoft.com/t5/Financial-Services-Blog/bg-p/FinancialServicesBlog#locking-a-retention-policy) includes archiving features that enable regulated customers, including broker-dealers, to store data in a manner that helps them comply with SEC requirements for records retention. Retention policies in Office 365 help preserve a wide range of data, including email, voicemail, shared documents, instant messages, and third-party data. In particular, archiving in Office 365 enables customers to set global or granular messaging retention policies to store data for a defined period and beyond in a non-rewriteable, nonerasable format.
+- Azure, [SEC 17a-4(f) Compliance Assessment: Microsoft Azure Storage](https://www.sec.gov/rules/interp/34-47806.htm?command=Download&downloadType=Document&downloadId=19b08fd4-d276-43e8-9461-715981d0ea20&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_GRC_Assessment_Reports), Cohasset validated that [**Azure Immutable Blob Storage**](https://docs.microsoft.com/en-us/office365/securitycompliance/retention-policies) with the Policy Lock option, when used to retain time-based Blobs in a non-erasable and non-rewritable (WORM) format, meets the immutable storage requirements of the SEC rule. Each Blob (record) is protected from being modified, overwritten, or deleted until the required retention period has expired and any associated legal holds have been released. Software providers and partners with sensitive workloads can now rely on Azure Immutable Blob Storage as a one stop-shop cloud solution for records retention and immutable storage. Financial institutions can now build their own applications taking advantage of these features while remaining compliant.
+- Office 365, [Use Exchange Online to Comply with SEC 17a-4](https://www.govinfo.gov/app/details/CFR-2012-title17-vol3/CFR-2012-title17-vol3-sec240-17a-3), Cohasset validated that [Office 365 with Preservation Lock](https://techcommunity.microsoft.com/t5/Financial-Services-Blog/bg-p/FinancialServicesBlog#locking-a-retention-policy) includes archiving features that enable regulated customers, including broker-dealers, to store data in a manner that helps them comply with SEC requirements for records retention. Retention policies in Office 365 help preserve a wide range of data, including email, voicemail, shared documents, instant messages, and third-party data. In particular, archiving in Office 365 enables customers to set global or granular messaging retention policies to store data for a defined period and beyond in a non-rewriteable, nonerasable format.
 
 ## Microsoft in-scope cloud services
 
@@ -42,17 +42,9 @@ Helps UK customers accelerate IaaS and PaaS deployments of compliant workloads i
 
 ## How to implement
 
-### Financial services regulation
-
-Compliance map of key US regulatory principles for cloud computing and Microsoft online services. [Learn more](https://www.microsoft.com/en-us/trustcenter/cloudservices/financialservices?command=Download&downloadType=Document&downloadId=5b483567-00b0-4d86-96ae-ee887dadb61c&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)
-
-### Risk Assessment & Compliance Guide
-
-Create a governance model for risk assessment of Microsoft cloud services, and regulator notification. [Learn more](https://azure.microsoft.com/en-us/resources/videos/azurecon-2015-financial-services-compliance-in-azure/?command=Download&downloadType=Document&downloadId=edee9b14-3661-4a16-ba83-c35caf672bd7&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
-
-### Financial use cases
-
-Use case overviews, tutorials, and other resources to build Azure solutions for financial services. [Learn more](https://servicetrust.microsoft.com/ViewPage/TrustDocuments)
+- [Financial services regulation](https://www.microsoft.com/en-us/trustcenter/cloudservices/financialservices?command=Download&downloadType=Document&downloadId=5b483567-00b0-4d86-96ae-ee887dadb61c&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides): Compliance map of key US regulatory principles for cloud computing and Microsoft online services.
+- [Risk Assessment & Compliance Guide](https://azure.microsoft.com/en-us/resources/videos/azurecon-2015-financial-services-compliance-in-azure/?command=Download&downloadType=Document&downloadId=edee9b14-3661-4a16-ba83-c35caf672bd7&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers): Create a governance model for risk assessment of Microsoft cloud services, and regulator notification.
+- [Financial use cases](https://servicetrust.microsoft.com/ViewPage/TrustDocuments): Use case overviews, tutorials, and other resources to build Azure solutions for financial services.
 
 ## About SEC Rule 17a-4(f)
 

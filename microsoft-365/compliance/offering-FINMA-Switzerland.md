@@ -33,14 +33,9 @@ The Microsoft checklist helps Swiss financial firms conducting due-diligence ass
 
 ## How to implement
 
-[Compliance checklist: Switzerland](https://aka.ms/FinServ-Guide-Switzerland)
-    - Financial firms can get help in conducting risk assessments of Microsoft business cloud services.
-
-[Risk Assessment & Compliance Guide](https://aka.ms/RiskGovernanceGuide)
-    - Create a governance model for risk assessment of Microsoft cloud services, and regulator notification.
-
-[Financial use cases](https://docs.microsoft.com/en-us/azure/industry/financial/)
-    - Use case overviews, tutorials, and other resources to build Azure solutions for financial services.
+- [Compliance checklist: Switzerland](https://aka.ms/FinServ-Guide-Switzerland): Financial firms can get help in conducting risk assessments of Microsoft business cloud services.
+- [Risk Assessment & Compliance Guide](https://aka.ms/RiskGovernanceGuide): Create a governance model for risk assessment of Microsoft cloud services, and regulator notification.
+- [Financial use cases](https://docs.microsoft.com/azure/industry/financial/): Use case overviews, tutorials, and other resources to build Azure solutions for financial services.
 
 ## Microsoft in-scope cloud services
 
@@ -62,5 +57,5 @@ Yes. In Part 2 of the Compliance Checklist, we have mapped these terms against t
 
 - [Microsoft Financial Services Compliance Program](https://aka.ms/FSCP-Print)
 - [Microsoft business cloud services and financial services](https://servicetrust.microsoft.com/viewpage/financialservicesoverview)
-- [Financial services compliance in Azure](https://azure.microsoft.com/en-us/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
+- [Financial services compliance in Azure](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
 - [Azure Financial Services Cloud Risk Assessment Tool](https://aka.ms/FFIEC-CSDT)

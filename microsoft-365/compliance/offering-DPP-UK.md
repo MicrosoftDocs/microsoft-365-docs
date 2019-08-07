@@ -28,11 +28,8 @@ This means that broadcasters and other media customers using Azure can have conf
 
 ## How to implement
 
-[Asset Management Hardening Guide](https://aka.ms/Azure-Asset-Mgmt)
-    - Best practices in Azure protect pre-release content from unauthorized disclosure, change, or deletion.
-
-[Azure Media Services](https://docs.microsoft.com/azure/media-services/)
-    - Build solutions that achieve high-definition video encoding and broadcast-quality video streaming.
+- [Asset Management Hardening Guide](https://aka.ms/Azure-Asset-Mgmt): Best practices in Azure protect pre-release content from unauthorized disclosure, change, or deletion.
+- [Azure Media Services](https://docs.microsoft.com/azure/media-services/): Build solutions that achieve high-definition video encoding and broadcast-quality video streaming.
 
 ## Audits, reports, and certificates
 

@@ -41,14 +41,9 @@ The Microsoft checklist helps financial firms in Belgium that are conducting due
 
 ## How to implement
 
-[Compliance checklist: Belgium](https://aka.ms/FinServ-Guide-Belgium)
-    - Financial institutions can get help in conducting risk assessments of Microsoft cloud services.
-
-[Risk Assessment & Compliance Guide](https://aka.ms/RiskGovernanceGuide)
-    - Create a governance model for risk assessment of Microsoft cloud services, and regulator notification.
-
-[Financial use cases](https://docs.microsoft.com/en-us/azure/industry/financial/)
-    - Use case overviews, tutorials, and other resources to build Azure solutions for financial services.
+- [Compliance checklist: Belgium](https://aka.ms/FinServ-Guide-Belgium): Financial institutions can get help in conducting risk assessments of Microsoft cloud services.
+- [Risk Assessment & Compliance Guide](https://aka.ms/RiskGovernanceGuide): Create a governance model for risk assessment of Microsoft cloud services, and regulator notification.
+- [Financial use cases](https://docs.microsoft.com/en-us/azure/industry/financial/): Use case overviews, tutorials, and other resources to build Azure solutions for financial services.
 
 ## Microsoft in-scope cloud services
 

@@ -43,15 +43,13 @@ Services certified by ASD and included on the CCSL must be periodically recertif
 - DLM certified services must be recertified every 24 months after the effective date of certification; and
 - PROTECTED certified services must be recertified annually on or before 1 Sep.
 
-The effective dates for the Microsoft certifications are contained in the ACSC Letter of Certification for each platform. All of the documentation associated with the Microsoft inclusions on the CCSL, including the IRAP assessment reports, risk management guides, ACSC certification letter and reports, and the ACSC consumer guides, are available from the Australia-specific page of the Service Trust Portal.
-
-[Learn more](https://go.microsoft.com/fwlink/p/?LinkID=2079423)
+The effective dates for the Microsoft certifications are contained in the ACSC Letter of Certification for each platform. All of the documentation associated with the Microsoft inclusions on the CCSL, including the IRAP assessment reports, risk management guides, ACSC certification letter and reports, and the ACSC consumer guides, are available from the Australia-specific page of the [Service Trust Portal](https://go.microsoft.com/fwlink/p/?LinkID=2079423).
 
 ## Microsoft in-scope cloud services
 
-- Azure [detailed list](https://aka.ms/AzureCompliance)
-- Dynamics 365 [detailed list](https://aka.ms/d365-compliance-list)
-- Office 365 [detailed list](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
+- [Azure](https://aka.ms/AzureCompliance)
+- [Dynamics 365](https://aka.ms/d365-compliance-list)
+- [Office 365](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 
 Power BI cloud service and Azure Information Protection either as a standalone service or as included in an Office 365 branded plan or suite
 
@@ -67,7 +65,7 @@ Yes. If your organization requires or is seeking an accreditation in line with t
 
 **Where do I start with my organization’s own compliance effort?**
 
-Start with the [**IRAP tool kit**](http://www.asd.gov.au/infosec/irap/toolkit.htm) and follow it with the information below:
+Start with the [IRAP tool kit](http://www.asd.gov.au/infosec/irap/toolkit.htm) and follow it with the information below:
 
 - [What is an IRAP assessment?](http://www.asd.gov.au/infosec/irap/irap_assessments.htm)
 - [Who provides IRAP training?](http://www.asd.gov.au/infosec/irap/training.htm)

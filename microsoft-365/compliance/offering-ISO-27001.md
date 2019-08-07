@@ -32,7 +32,7 @@ Learn about the benefits of ISO-Iec-27001 on the Microsoft Cloud.
 
 ## Audits, reports, and certificates
 
-[See additional audit reports](https://aka.ms/auditreports)
+See additional [audit reports](https://aka.ms/auditreports).
 
 ### Compliance certificates
 

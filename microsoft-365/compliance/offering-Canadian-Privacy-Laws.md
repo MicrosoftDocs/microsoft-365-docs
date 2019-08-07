@@ -29,17 +29,9 @@ To assist Canadian customers who are considering outsourcing business functions 
 
 ## How to implement
 
-### Privacy at Microsoft
-
-Get details on Microsoft privacy principles and standards and on privacy laws specific to Canada. [Learn more](offering-iso-27001.md).
-
-### Compliance checklist: Canada
-
-Learn more about Azure and Intune functionalities that can help meet Canadian privacy laws. [Learn more](offering-iso-27018.md).
-
-### Azure data protection
-
-Azure provides customers with strong data security, both by default and as customer options. [Learn more](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx).
+- [Privacy at Microsoft](offering-iso-27001.md): Get details on Microsoft privacy principles and standards and on privacy laws specific to Canada.
+- [Compliance checklist for Canada](offering-iso-27018.md): Learn more about Azure and Intune functionalities that can help meet Canadian privacy laws.
+- [Azure data protection](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx): Azure provides customers with strong data security, both by default and as customer options.
 
 ## About Canadian Privacy Laws
 

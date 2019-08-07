@@ -38,22 +38,14 @@ To evaluate Office 365 compliance with FINRA Rule 4511(c), Microsoft retained a 
 
 ## How to implement
 
-[Financial services regulation](http://www.finra.org/sites/default/files/NoticeDocument/p123548.pdf)
-    - Compliance map of key US regulatory principles for cloud computing and Microsoft online services.
-
-[Risk Assessment & Compliance Guide](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide)
-    - Create a governance model for risk assessment of Microsoft cloud services, and regulator notification.
-
-[Financial use cases](https://azure.microsoft.com/en-us/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
-    - Use case overviews, tutorials, and other resources to build Azure solutions for financial services. Learn
+- [Financial services regulation](http://www.finra.org/sites/default/files/NoticeDocument/p123548.pdf): Compliance map of key US regulatory principles for cloud computing and Microsoft online services.
+- [Risk Assessment & Compliance Guide](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide): Create a governance model for risk assessment of Microsoft cloud services, and regulator notification.
+- [Financial use cases](https://azure.microsoft.com/en-us/resources/videos/azurecon-2015-financial-services-compliance-in-azure/): Use case overviews, tutorials, and other resources to build Azure solutions for financial services. Learn
 
 ## Audits, reports, and certificates
 
-[Azure & FINRA Rule 4511(c)](https://aka.ms/FFIEC-CSDT?command=Download&downloadType=Document&downloadId=19b08fd4-d276-43e8-9461-715981d0ea20&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_GRC_Assessment_Reports)
-    - SEC 17a-4(f) & CFTC 1.31 (c-d) Compliance Assessment of Azure Storage
-
-[Office 365 & FINRA Rule 4511(c)](https://docs.microsoft.com/en-us/office365/securitycompliance/retention-policies)
-    - Archiving in Office 365, data retention, and SEC Rule 17a-4 compliance
+- [Azure & FINRA Rule 4511(c)](https://aka.ms/FFIEC-CSDT?command=Download&downloadType=Document&downloadId=19b08fd4-d276-43e8-9461-715981d0ea20&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_GRC_Assessment_Reports): SEC 17a-4(f) & CFTC 1.31 (c-d) Compliance Assessment of Azure Storage
+- [Office 365 & FINRA Rule 4511(c)](https://docs.microsoft.com/en-us/office365/securitycompliance/retention-policies): Archiving in Office 365, data retention, and SEC Rule 17a-4 compliance
 
 ## Microsoft in-scope cloud services
 

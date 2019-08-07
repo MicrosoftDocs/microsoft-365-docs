@@ -34,9 +34,7 @@ The NPIRMT audits one Azure datacenter each year, annually cycling through the f
 
 ## How to implement
 
-### Azure UK OFFICIAL Blueprint
-
-Helps UK customers accelerate IaaS and PaaS deployments of compliant workloads in Azure. [Learn more](https://servicetrust.microsoft.com/ViewPage/UKBlueprints)
+- [Azure UK Official Blueprint](https://servicetrust.microsoft.com/ViewPage/UKBlueprints): Helps UK customers accelerate IaaS and PaaS deployments of compliant workloads in Azure.
 
 ## About PASF
 

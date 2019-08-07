@@ -58,7 +58,7 @@ The standard applies to any provider that wants to provide cloud services to the
 
 **How do I start my organization’s compliance effort?**
 
-For guidance, refer to the [**CDSA Azure implementation guide**](https://aka.ms/cdsaprotectsecure). To discuss specific requirements and the application process for CPS Standard Certification Program, please [**contact the CDSA**](http://www.cdsaonline.org/about/contact-us).
+For guidance, refer to the [CDSA Azure implementation guide](https://aka.ms/cdsaprotectsecure). To discuss specific requirements and the application process for CPS Standard Certification Program, please [contact the CDSA](http://www.cdsaonline.org/about/contact-us).
 
 **Can I use Microsoft compliance in my organization’s certification process?**
 

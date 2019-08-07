@@ -65,9 +65,9 @@ This US federal law mandates the protection of the privacy of students’ educat
 
 ## Resources
 
-- [**Family Educational Rights and Privacy Act**](http://www.ed.gov/policy/gen/guid/fpco/ferpa/index.html)
-- [**Electronic Code of Federal Regulations: FERPA**](http://aka.ms/FERPA-GPO)
-- [**Federal Register: FERPA Final Rule**](http://aka.ms/ferpa-reg)
-- [**FERPA implementation guide for Microsoft Azure**](https://aka.ms/azureferpa)
-- [**Azure FERPA compliance framework mapping**](https://aka.ms/AzureFERPAMapping)
-- [**Microsoft Online Services Terms**](http://aka.ms/Online-Services-Terms)
+- [Family Educational Rights and Privacy Act](http://www.ed.gov/policy/gen/guid/fpco/ferpa/index.html)
+- [Electronic Code of Federal Regulations: FERPA](http://aka.ms/FERPA-GPO)
+- [Federal Register: FERPA Final Rule](http://aka.ms/ferpa-reg)
+- [FERPA implementation guide for Microsoft Azure](https://aka.ms/azureferpa)
+- [Azure FERPA compliance framework mapping](https://aka.ms/AzureFERPAMapping)
+- [Microsoft Online Services Terms](http://aka.ms/Online-Services-Terms)
