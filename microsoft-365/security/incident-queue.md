@@ -47,13 +47,6 @@ You can apply the following filters to limit the list of incidents and get a mor
 ### Severity
 Incident severity is determined according to the highest severity of the alerts that are correlated into the incident.
 
-Incident severity | Description
-:---|:---
-High </br>(Red) | Threats often associated with advanced persistent threats (APT). These incidents indicate a high risk due to the severity of damage they can inflict on machines.
-Medium </br>(Orange) | Threats rarely observed in the organization, such as anomalous registry change, execution of suspicious files, and observed behaviors typical of attack stages.
-Low </br>(Yellow) | Threats associated with prevalent malware and hack-tools that do not necessarily indicate an advanced threat targeting the organization.
-Informational </br>(Grey) | Informational incidents are those that might not be considered harmful to the network but might be good to keep track of.
-
 ### Assigned to
 You can choose to show between all incidents or those which are assigned to you.
 

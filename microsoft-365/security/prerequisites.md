@@ -25,9 +25,10 @@ Learn about the licensing, hardware and software requirements, and other configu
 
 
 ## Licensing requirements
-Microsoft 365 Security requires the following license:
+Microsoft 365 Security requires one of the following license:
 
 - Microsoft 365 E5 
+- Office 365 E5 and Enterprise Mobility + Security E5 and Windows E5
 
 You can acquire this from the [Microsoft 365 Enterprise page](https://www.microsoft.com/en-us/microsoft-365/enterprise).
 

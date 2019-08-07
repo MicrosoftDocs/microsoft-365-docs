@@ -25,7 +25,6 @@ Managing incidents is an important part of every cybersecurity operation. You ca
 
 Selecting an incident from the **Incidents queue** brings up the **Incident management pane** where you can open the incident page for details.
 
-![Image of selected incident](images/incident-selected.png)
 
 From the management pane, you'll be able to assign an incidents to yourself and change the status and classification. Opening the incident page allows you to take other management actions.
  

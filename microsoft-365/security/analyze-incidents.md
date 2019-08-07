@@ -21,11 +21,9 @@ search.appverid:
 
 # Analyze incidents in Microsoft 365
 
-## Overview
-
 Analyze incidents that affect your network, understand what they mean, and collate evidence to resolve them. 
 
-When you analyze an incident, you'll see:
+The incidents dashboard provides information on:
 - Incident details
 - Incident comments and actions
 - Tabs (alerts, machines, investigations, evidence, graph)
@@ -37,29 +35,15 @@ Click an incident to see the **Incident pane**. Select **Open incident page** to
 
 
 ### Alerts
-You can investigate the alerts and see how they were linked together in an incident. 
-Alerts are grouped into incidents based on the following reasons:
-- Automated investigation - The automated investigation triggered the linked alert while investigating the original alert 
-- File characteristics - The files associated with the alert have similar characteristics
-- Manual association - A user manually linked the alerts
-- Proximate time - The alerts were triggered on the same machine within a certain timeframe
-- Same file - The files associated with the alert are exactly the same
-- Same URL - The URL that triggered the alert is exactly the same
+Microsoft Threat Protection uses sophisticated correlation analysis on alerts to determine the connection between events. Alerts are then grouped together based on certain characteristics regardless of what surface it was seen on. 
 
-![Image of alert selected in an incident](images/alert-incident.png)
+So whether they are events seen on the same machine or files that show similar characteristics, or alerts that were triggered on the same user within a certain timeframe, you’ll be able to see all the related alerts in one place. 
 
-You can also manage an alert and see alert metadata along with other information.
+### Devices 
+The devices tab lists all the devices where alerts related to the incident are seen. You can do further investigative work and remediation actions within Microsoft 365 security center.
 
-
-### Machines / Devices 
-You can also investigate the machines that are part of, or related to a given incident. You can do further investigative work and remediation actions within Microsoft 365 security center. 
-
-![Image of machine tab in incident](images/machine-incident.png)
-
-### Users / Identities
-See users that have been identified to be part of, or related to a given incident. To do further investigative work, selecting the user will open the Microsoft Cloud App portal where you can take remediation actions.
-
-![Image of user in incident](images/user-incident.png)
+### Users
+See users that have been identified to be part of, or related to a given incident. To do further investigative work, selecting the user will open the Microsoft Cloud App Security portal where you can take remediation actions.
 
 
 ### Mailboxes
@@ -68,14 +52,11 @@ Investigate mail that's been identified to be part of, or related to an incident
 ### Investigations
 Select **Investigations** to see all the automatic investigations launched by the system in response to the incident alerts.
 
-![Image of investigations tab in incident](images/investigations-tab-incident.png)
 
 ## Going through the evidence
 Microsoft Threat Protection automatically investigates all the incidents' supported events and suspicious entities in the alerts, providing you with auto-response and information about the important files, processes, services, and more. This helps quickly detect and block potential threats in the incident. 
 
 Each of the analyzed entities will be marked as infected, remediated, or suspicious. 
-
-![Image of the evidence tab in incidents](images/evidence-tab-incident.png)
 
 
 

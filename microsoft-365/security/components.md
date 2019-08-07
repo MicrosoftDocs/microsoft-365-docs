@@ -26,19 +26,25 @@ Microsoft Threat Protection helps secure the modern workplace across its entire 
 Utilizing complex signal sharing, incident correlation, and querying across date sources, security teams are empowered to better protect valuable assets across an organization.
 
 
-![Image of Microsoft Threat Protection](images/mtp-architecture.png)
-
-
 This section describes the main components of the platform and their functionalities:
-- Microsoft 365 security center
 - Signal sources
 
 
-## Microsoft 365 security center
-Microsoft 365 security center is the portal where incidents, automated investigations, advanced hunting, and other capabilities are surfaced. It's where security teams can monitor and manage security across Microsoft identities, data, devices, apps, and infrastructure.
-
 ## Signal sources
 Microsoft Threat Protection gathers signals from various detection engines and applies intelligent correlation to provide security analysts with better context on the full scope of a threat. 
+
+Sophisticated attacks often look for multiple ways and assets to compromise to achieve a goal. To comprehensively defend your environment from these types of attacks, you’ll need to have visibility into events happening across all the entities in your environment.
+
+Microsoft Threat Protection sources signals from the following surfaces, giving you unparalleled visibility into suspicious events occurring across all assets:
+-	Azure Advanced Threat Protection
+-	Office 365 Advanced Threat Protection
+-	Microsoft Cloud App Security
+-	Microsoft Defender Advanced Threat Protection
+
+## Security experiences
+Microsoft Threat Protection provides a familiar experience that you might already been acquainted to while using other Microsoft security products. One key difference is that Microsoft Threat Protection provides signals across users, devices, and mailboxes. 
+
+
 
 
 
