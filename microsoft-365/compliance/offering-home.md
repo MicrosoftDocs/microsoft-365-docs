@@ -163,7 +163,7 @@ Learn how Microsoft 365 products and services help your organization meet regula
                         <p><a href="offering-gdpr-eu.md">GDPR (EU)</a></p>
                         <p><a href="offering-g-cloud-uk.md">G-Cloud (UK)</a></p>
                         <p><a href="">IDW PS 951 (Germany)</a></p>
-                        <p><a href="offering-k-isms-compliance.md">ISMS (Korea)</a></p>
+                        <p><a href="offering-ISMS-korea.md">ISMS (Korea)</a></p>
                         <p><a href="offering-it-grundschutz-workbook-germany.md">IT Grundschutz Workbook (Germany)</a></p>
                         <p><a href="offering-lopd-spain.md">LOPD (Spain)</a></p>
                         <p><a href="offering-meity-india.md">MeitY (India)</a></p>

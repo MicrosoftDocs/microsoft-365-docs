@@ -130,7 +130,7 @@
 ### [GDPR (EU)](offering-gdpr-eu.md)
 ### [G-Cloud (UK)](offering-g-cloud-uk.md)
 ### [IDW PS 951 (Germany)]()
-### [ISMS (Korea)](offering-k-isms-compliance.md)
+### [ISMS (Korea)](offering-ISMS-korea.md)
 ### [IT Grundschutz Workbook (Germany)](offering-it-grundschutz-workbook-germany.md)
 ### [LOPD (Spain)](offering-lopd-spain.md)
 ### [MeitY (India)](offering-meity-india.md)
