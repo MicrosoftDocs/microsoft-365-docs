@@ -65,13 +65,13 @@ Learn how Microsoft 365 products and services help your organization meet regula
                         <p><a href="offering-cnssi-1253.md">CNSSI 1253</a></p>
                         <p><a href="offering-dfars.md">DFARS</a></p>
                         <p><a href="offering-dod-disa-l2-l3-l5.md">DoD DISA L2, L3, L5</a></p>
-                        <p><a href="">DoE 10 CFR Part 810</a></p>
-                        <p><a href="">EAR (US Export Adm. Reg.)</a></p>
+                        <p><a href="offering-doe-10-cfr-part-810.md">DoE 10 CFR Part 810</a></p>
+                        <p><a href="offering-ear.md">EAR (US Export Adm. Reg.)</a></p>
                         <p><a href="offering-fedramo.md">FedRAMP</a></p>
                         <p><a href="offering-fips-140-2.md">FIPS 140-2</a></p>
                         <p><a href="offering-irs-1075.md">IRS 1075</a></p>
                         <p><a href="offering-itar.md">ITAR</a></p>
-                        <p><a href="">NIST 800-171</a></p>
+                        <p><a href="offering-nist-sp-800-171.md">NIST 800-171</a></p>
                         <p><a href="offering-nist-csf.md">NIST CSF</a></p>
                         <p><a href="offering-section-508-vpats.md">Section 508 VPATS</a></p>
                     </div>
@@ -126,7 +126,7 @@ Learn how Microsoft 365 products and services help your organization meet regula
                         <p><a href="offering-pci-dss.md">PCI DSS</a></p>
                         <p><a href="offering-rbi-irdai-india.md">RBI + IRDAI (India)</a></p>
                         <p><a href="offering-sec-17a-4.md">SEC 17a-4</a></p>
-                        <p><a href="">Shared Assessments</a></p>
+                        <p><a href="offering-shared-assessments.md">Shared Assessments</a></p>
                         <p><a href="offering-sox.md">SOX</a></p>
                         <p><a href="offering-tisax-germany.md">TISAX (Germany)</a></p>
                     </div>
