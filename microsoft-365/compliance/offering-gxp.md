@@ -38,9 +38,7 @@ Life sciences organizations building GxP solutions on Azure and Office 365 can t
 
 - [Azure GxP Guidelines](https://aka.ms/gxpcompliance): A comprehensive toolset for using Azure while adhering to GxP best practices and regulations.
 - [Using Azure with GxP Systems](https://aka.ms/GXP-Azure-Strategies): Help for life science organizations in establishing a strategy for building GxP applications.
-- FDA CFR Title 21 Part 11 Guides: Get help establishing a qualification strategy that complies with FDA guidelines for electronic records.
-    - [Azure](https://aka.ms/Azure-FDA-Guidelines)
-    - [Office 365](https://aka.ms/o365-qualification-guideline)
+- FDA CFR Title 21 Part 11 Guides: Get help establishing an [Azure](https://aka.ms/Azure-FDA-Guidelines) and [Office 365](https://aka.ms/o365-qualification-guideline) qualification strategy that complies with FDA guidelines for electronic records.
 
 ## About GxP
 
