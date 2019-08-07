@@ -21,7 +21,7 @@ Microsoft can help organizations that deal with regulated aspects of the researc
 There is no GxP certification for cloud service providers; however:
 
 - Microsoft Azure and Microsoft Office 365 have undergone many independent audits for quality management and information security, including ISO 9001 (QMS) and ISO/IEC 27001 (ISMS). This includes regular audits of Microsoft procedural and technical controls, verified for effectiveness.
-- The Microsoft qualification approach is also based on industry best practices, including the *Good Automated Manufacturing Practices* (GAMP) series of Good Practices Guides (from the International Society for Pharmaceutical Engineering (ISPE)), and *Good Practices for Computerized Systems in Regulated GxP Environments* (from the Pharmaceutical Inspection Co-operation Scheme (PIC/S) PI 011-3).
+- The Microsoft qualification approach is also based on industry best practices, including the *Good Automated Manufacturing Practices* (GAMP) series of Good Practices Guides (from the International Society for Pharmaceutical Engineering (ISPE)), and *Good Practices for Computerized Systems in Regulated GxP Environments* (from the Pharmaceutical Inspection Cooperation Scheme (PIC/S) PI 011-3).
 
 Although these standards and best practices do not specifically focus on GxP regulatory compliance, their purpose and objectives are similar and help ensure the confidentiality, integrity, and availability of data stored in Microsoft cloud services.
 
@@ -44,7 +44,7 @@ Life sciences organizations building GxP solutions on Azure and Office 365 can t
 
 ## About GxP
 
-The term *GxP* is a general abbreviation for "good practice" guidelines and regulations. The "x" represents a particular field— clinical (GCP), manufacturing (GMP), distribution (GDP), laboratory (GLP), agriculture (GAP), and so on. There is no single regulatory entity or administration; each country has its own guidelines and regulators, although requirements are generally similar from country to country. GxP regulations include those outlined in the [US FDA CFR Title 21 Part 11](http://aka.ms/FDA-CFR) and [EudraLex Volume 4 – GMP Guidelines, Annex 11](https://ec.europa.eu/health/documents/eudralex/vol-4_en) in the EU.
+The term *GxP* is a general abbreviation for "good practice" guidelines and regulations. The "x" represents a particular field — clinical (GCP), manufacturing (GMP), distribution (GDP), laboratory (GLP), agriculture (GAP), and so on. There is no single regulatory entity or administration; each country has its own guidelines and regulators, although requirements are similar from country to country. GxP regulations include those outlined in the [US FDA CFR Title 21 Part 11](http://aka.ms/FDA-CFR) and [EudraLex Volume 4 — GMP Guidelines, Annex 11](https://ec.europa.eu/health/documents/eudralex/vol-4_en) in the EU.
 
 Regulatory goals aim to make sure that businesses in regulated industries manufacture products that are safe to use and meet stringent quality standards during the production process. Computerized systems that use GxP processes require validation of adherence to GxP requirements and are considered qualified when the system can demonstrate its ability to fulfill them.
 
