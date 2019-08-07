@@ -67,7 +67,7 @@ Learn how Microsoft 365 products and services help your organization meet regula
                         <p><a href="offering-dod-disa-l2-l3-l5.md">DoD DISA L2, L3, L5</a></p>
                         <p><a href="offering-doe-10-cfr-part-810.md">DoE 10 CFR Part 810</a></p>
                         <p><a href="offering-ear.md">EAR (US Export Adm. Reg.)</a></p>
-                        <p><a href="offering-fedramo.md">FedRAMP</a></p>
+                        <p><a href="offering-fedramp.md">FedRAMP</a></p>
                         <p><a href="offering-fips-140-2.md">FIPS 140-2</a></p>
                         <p><a href="offering-irs-1075.md">IRS 1075</a></p>
                         <p><a href="offering-itar.md">ITAR</a></p>
