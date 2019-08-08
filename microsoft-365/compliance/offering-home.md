@@ -39,6 +39,7 @@ Learn how Microsoft 365 products and services help your organization meet regula
                         <p><a href="offering-ISO-27001.md">ISO 27001</a></p>
                         <p><a href="offering-ISO-27017.md">ISO 27017</a></p>
                         <p><a href="offering-ISO-27018.md">ISO 27018</a></p>
+                        <p><a href="offering-ISO-27701.md">ISO 27701</a></p>
                         <p><a href="offering-ISO-9001.md">ISO 9001</a></p>
                         <p><a href="offering-soc.md">SOC</a></p>
                         <p><a href="offering-wcag-2-1.md">WCAG 2.1</a></p>

@@ -55,6 +55,7 @@
 ### [ISO 27001](offering-iso-27001.md)
 ### [ISO 27017](offering-iso-27017.md)
 ### [ISO 27018](offering-iso-27018.md)
+### [ISO 27701](offering-iso-27701.md)
 ### [ISO-9001](offering-iso-9001.md)
 ### [SOC](offering-soc.md)
 ### [WCAG 2.1](offering-wcag-2-1.md)
