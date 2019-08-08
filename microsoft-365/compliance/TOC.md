@@ -66,7 +66,7 @@
 ### [DFARS](offering-dfars.md)
 ### [DoD DISA L2,L3,L5](offering-dod-disa-l2-l3-l5.md)
 ### [DoE 10 CFR Part 810](offering-doe-10-cfr-part-810.md)
-### [EAR (US Export Administration Reg.)](offering-ear.md)
+### [EAR (US Export Admin. Reg.)](offering-ear.md)
 ### [FedRAMP](offering-fedramp.md)
 ### [FIPS 140-2](offering-fips-140-2.md)
 ### [IRS 1075](offering-irs-1075.md)
