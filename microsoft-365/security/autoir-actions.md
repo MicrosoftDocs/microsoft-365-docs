@@ -58,8 +58,3 @@ Similar to other reports in the automated investigation and remediation [dashboa
 > [!TIP]
 > When you visit the Action Center, make sure to approve or reject pending actions. That way, investigations can complete as soon as possible, and remediation steps can be taken. 
 
-## Next steps
-
-[Learn about the automated investigations dashboard](autoir-dashboard-overview.md)
-
-[Analyze alerts and investigations in Microsoft 365](analyze-autoir.md)
