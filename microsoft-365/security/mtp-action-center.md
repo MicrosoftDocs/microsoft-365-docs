@@ -37,6 +37,28 @@ Viewing information about investigations across Windows, Office, and Azure in on
 
 - Select an item in the list to view more details about an investigation. (To learn more, see Details and results of an investigation section.)
 
-## Next steps
+In the Action center, you see two tabs: **Pending** and **History**:
 
-- Learn about automated investigation and remediation
+- The **Pending** tab lists investigations that require review and approval by someone in your security operations team to proceed. Make sure to review and take action on pending items you see here.
+
+- The **History** tab lists past investigations. You can view data for the past day, week, month, or six months
+
+Selecting an item on either the Pending or History tab brings you to the **Investigation details** view.
+
+### Investigation details
+
+![Investigation details view](images/mtp-investigation-details.png)
+
+Investigation details include alerts, machines, key findings, and other relevant information associated with an investigation. The following table describes the tabs you'll see in the **Investigation details** view.
+
+|Tab | Description |
+|--------|--------|
+|**Investigation graph** |Provides a visual representation of the investigation. Depicts entities and lists threats found, along with alerts and whether any actions are awaiting approval.|
+|**Alerts** |Lists alerts associated with the investigation. Alerts can come from threat protection features on a user's machine, in Office apps, Cloud App Security, and other Microsoft 365 Threat Protection features.|
+|**Machines** |Lists machines included in the investigation along with remediation level.|
+|**Key findings** |Lists results from the investigation along with status and actions taken.|
+|**Entities** |Lists user activities, files, processes, services, drivers, IP addresses, and persistence methods associated with the investigation, along with status and actions taken.|
+|**Log** |Provides a detailed view of all steps taken during the investigation, along with status.|
+|**Pending actions** |Lists items that require approval to proceed.|
+
+
