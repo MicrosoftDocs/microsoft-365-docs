@@ -21,7 +21,6 @@
 ##### [AIR overview](autoir-overview.md)
 ##### [The Action center](mtp-action-center.md)
 ##### [Investigate and remediate issues](mtp-autoir.md)
-##### [Analyze alerts and investigations](analyze-autoir.md)
 ##### [Manage actions related to investigations](autoir-actions.md)
 
 #### [Advanced hunting]()
