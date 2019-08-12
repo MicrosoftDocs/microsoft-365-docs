@@ -28,6 +28,7 @@
 ##### [Proactively hunt for threats](advanced-hunting.md)
 ##### [Learn the query language](advanced-hunting-language-overview.md)
 ##### [Use shared queries](advanced-hunting-shared-queries.md)
+##### [Hunt on devices and emails](advanced-hunting-query-emails-devices.md)
 ##### [Understand the schema](advanced-hunting-schema-tables.md)
 ###### [AlertEvents](advanced-hunting-alertevents-table.md)
 ###### [MachineInfo](advanced-hunting-machineinfo-table.md)
