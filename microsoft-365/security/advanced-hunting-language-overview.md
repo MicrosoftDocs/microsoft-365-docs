@@ -131,6 +131,7 @@ For more information on Kusto query language and supported operators, see  [Quer
 ## Related topics
 - [Proactively hunt for threats](advanced-hunting.md)
 - [Use shared queries](advanced-hunting-shared-queries.md)
+- [Hunt for threats across devices and emails](advanced-hunting-query-emails-devices.md)
 - [Understand the schema](advanced-hunting-schema-tables.md)
 - [Find miscellaneous events](advanced-hunting-misc-events.md)
 - [Apply query best practices](advanced-hunting-best-practices.md)
