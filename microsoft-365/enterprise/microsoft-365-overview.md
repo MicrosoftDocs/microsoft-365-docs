@@ -3,7 +3,7 @@ title: Microsoft 365 Enterprise overview
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/30/2019
+ms.date: 08/12/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -63,6 +63,17 @@ The [Microsoft 365 Enterprise poster](http://aka.ms/m365eposter) is a central lo
 ![](./media/m365-poster/m365e-poster.png)
 
 To download a copy of the poster, click [here](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/Microsoft365Enterprise.pdf).
+
+
+## Transition your entire organization
+
+To get a better picture of how to move your entire organization to the products and services in Microsoft 365 Enterprise, download the [transition poster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/TransitionOrgToM365.pdf).
+
+![](./media/deploy-microsoft-365-enterprise/TransitionOrgToM365.png)
+
+This two-page poster is a quick way to inventory your existing infrastructure and get to the guidance for moving to the corresponding product or service in Microsoft 365 Enterprise. It includes Windows and Office products and other infrastructure and security elements such as device management, identity, and information and threat protection.
+
+You can print this poster in letter, legal, or tabloid (11 x 17) formats.
 
 ## Deploying
 

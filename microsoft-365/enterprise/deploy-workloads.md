@@ -61,7 +61,7 @@ Here are some common workloads to deploy right away:
   - [Exchange Online](exchangeonline-workload.md) so that users can begin using cloud-based email.
 - If you don't have an immediate need for storing highly regulated digital assets in the cloud, deploy [Microsoft Teams](teams-workload.md) and [SharePoint Online](sharepoint-online-onedrive-workload.md) for your users prior to the **Information protection** layer.
 
-You must decide on how to best order and deploy the configuration of prerequisite phases of foundation infrastructure to best meet your business needs.
+You must decide on how to best order and deploy the configuration of prerequisite phases of foundation infrastructure to meet your business needs.
 
 ### Best practice
 
@@ -72,3 +72,4 @@ The **Identity** phase ensures that your cloud-based identity, whether cloud-onl
 Although foundational and very important to overall performance, the rollout of the **Networking** phase on your network can be in progress while onboarding your users to workloads, with the understanding that Microsoft 365 application and service performance will improve over time.
 
 This is especially true for enterprise organizations with multiple locations and a mixture of edge devices and Internet connections.
+
