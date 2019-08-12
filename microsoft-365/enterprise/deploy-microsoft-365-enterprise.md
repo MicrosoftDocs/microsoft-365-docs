@@ -3,7 +3,7 @@ title: "Deploy Microsoft 365 Enterprise"
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 07/30/2019
+ms.date: 08/09/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -25,13 +25,13 @@ Microsoft 365 Enterprise is a combination of local and cloud-based productivity 
 - Unlocks creativity.
 - Is built for teamwork.
 
-These benefits are not realized just by obtaining the licenses for the three products, but by deploying them and their features in a specific way that includes integration and state-of-the-art security.
+You can realize these benefits by deploying the infrastructure and productivity workloads in an integrated way that includes state-of-the-art security services and features.
 
 There are three main ways to deploy Microsoft 365 Enterprise:
 
-- Do it with Microsoft engineers using FastTrack for Microsoft 365.
+- Do it with Microsoft engineers using [FastTrack for Microsoft 365](#fasttrack-for-microsoft-365).
 - Do it with help from Microsoft Consulting Services or a [Microsoft partner](https://partner.microsoft.com/).
-- Do it yourself with the Microsoft 365 Enterprise deployment guide.
+- Do it yourself with the [Microsoft 365 Enterprise deployment guide](#microsoft-365-enterprise-deployment-guide).
 
 ## FastTrack for Microsoft 365
 
@@ -53,7 +53,7 @@ To deploy Microsoft 365 Enterprise yourself, you can:
 
   **If you are a smaller or newer organization**, follow the phases in order to methodically build out your infrastructure.
 
-  However, you can deploy phases or the portions of phases of this infrastructure in any order as needed, [one after the other or in parallel](deployment-strategies-microsoft-365-enterprise.md), to integrate with your current infrastructure, fit your IT plans and resources, and meet your business needs. 
+  However, you can deploy phases or the portions of phases of this infrastructure in any order as needed, [one after the other or in parallel](deployment-strategies-microsoft-365-enterprise.md), to integrate with your current infrastructure, fit your IT plans and resources, and meet your business needs. For a simplified deployment for non-enterprises, click [here](deploy-foundation-infrastructure-non-enterprises.md).
 
   **If you are an enterprise organization**, view the phases as layers of IT infrastructure, rather than a defined path, and determine how to best work toward eventual adherence to the requirements of each layer across your organization.
 
@@ -81,6 +81,16 @@ For more information, see [Microsoft 365 Enterprise Test Lab Guides](m365-enterp
 
 ![Test Lab Guides for the Microsoft cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
+## Transition your entire organization
+
+To get a better picture of how to move your entire organization to the products and services in Microsoft 365 Enterprise, download the [transition poster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transitionorgtom365.pdf).
+
+![](./media/deploy-microsoft-365-enterprise/TransitionOrgToM365.png)
+
+This two-page poster is a quick way to inventory your existing infrastructure and get to the guidance for moving to the corresponding product or service in Microsoft 365 Enterprise. It includes Windows and Office products and other infrastructure and security elements such as device management, identity, and information and threat protection.
+
+You can print this poster in letter, legal, or tabloid (11 x 17) formats.
+
 ## How did others do it?
 
 Use these resources to understand how others have deployed and are using Microsoft 365 Enterprise.
@@ -94,11 +104,10 @@ Use the Customer Stories site to see how Microsoft customers are using Microsoft
 3. Select your organization's industry in **Industry**.
 4. Select **Microsoft 365** in **Product**.
 5. Click on a card for the customer's case study.
-  
 
 ### How Microsoft uses Microsoft 365 Enterprise
 
-Defining a digital culture is a major priority for every leader who strives to foster a modern workplace. Microsoft 365 was designed to support this kind of cultural shift, helping leaders empower everyone at their companies to unleash creativity and collaboration. At Microsoft, establishing our foundational infrastructure has sparked precisely this kind of digital culture shift. Implementing Microsoft 365 Enterprise has allowed us to deploy collaboration technology, like Microsoft Teams and Exchange Online, and to share sensitive data online across secure SharePoint intranet sites.
+Defining a digital culture is a major priority for every leader who strives to foster a modern workplace. Microsoft 365 was designed to support this kind of cultural shift helping leaders empower everyone at their companies to unleash creativity and collaboration. Establishing Microsoft's foundational infrastructure has sparked precisely this kind of digital culture shift. Implementing Microsoft 365 Enterprise has allowed us to deploy collaboration technology, like Microsoft Teams and Exchange Online, and to share sensitive data online across secure SharePoint intranet sites.
 
 At the same time, intelligent security features and product integration helps streamline management needs and minimize the total cost of ownership across the IT lifecycle. 
 
@@ -111,7 +120,7 @@ Learn how Core Services Engineering and Operations (formerly Microsoft IT) [plan
 
 The Contoso Corporation is a fictional but representative global manufacturing conglomerate with its headquarters in Paris, France. See how [Contoso deployed Microsoft 365 Enterprise](contoso-case-study.md) and addressed major design decisions and implementation details for networking, identity, Windows 10 Enterprise, Office 365 ProPlus, mobile device management, information protection, and security. 
 
-## Next step to deploy Microsoft 365 Enterprise
+## Next step
 
 To do it with direct Microsoft assistance, use [FastTrack](https://fasttrack.microsoft.com/microsoft365).
 
