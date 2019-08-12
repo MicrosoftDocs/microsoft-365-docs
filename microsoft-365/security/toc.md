@@ -18,7 +18,6 @@
 ##### [Manage incidents](manage-incidents.md)
 
 #### [Automated investigation and remediation]()
-##### [AIR overview](autoir-overview.md)
 ##### [The Action center](mtp-action-center.md)
 ##### [Investigate and remediate issues](mtp-autoir.md)
 ##### [Manage actions related to investigations](autoir-actions.md)
