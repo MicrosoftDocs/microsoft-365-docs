@@ -33,7 +33,7 @@ The action center consists of two main tabs:
 - **Pending**: Lists pending actions for current investigations. For example, actions that require approval in order to proceed are listed here. 
 - **History**: Lists previous actions, along with their associated investigations and status.
 
-Similar to other reports in the automated investigation and remediation [dashboard](autoir-dashboard-overview.md), you can:
+Similar to other reports in the Microsoft 365 security center, you can:
 - Use filters to focus on specific information
 - Choose which columns to display in the list
 - Export the list to a file in .csv format 
