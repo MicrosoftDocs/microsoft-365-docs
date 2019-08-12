@@ -56,3 +56,18 @@ Most often, an automated investigation begins when an alert is triggered and an 
 ### An analyst can start an automated investigation
 
 The Microsoft 365 security center includes several reports to help your security operations team stay on top of threat management for your organization. In some cases, security analysts can start investigations manually, while viewing a report or an alert. For an example of how this works in Office 365 Advanced Threat Protection, see [A security administrator triggers an investigation from Threat Explorer](https://docs.microsoft.com/office365/securitycompliance/automated-investigation-response-office#example-a-security-administrator-triggers-an-investigation-from-threat-explorer).
+
+## The automated investigation process
+
+Whether through an alert or by a security analyst, once an automated investigation is triggered, the process begins immediately. The investigation typically includes the following steps:
+- Gather information about the type of threat
+- Determine where the threat came from
+- Identify who in your organization is affected by the threat
+- Find out whether and where other instances of the threat exist in your work environment
+- ... and so on.
+
+### Automated investigation scope can increase
+
+While an investigation is running, any other related alerts that are generated are added to an ongoing automated investigation until that investigation is completed. In addition, if the same threat is seen on other entities, those entities are added to the investigation.
+
+If an incriminated entity is seen in elsewhere, the automated investigation will expand the investigation to include that entity, and a general security playbook will run on that entity.
