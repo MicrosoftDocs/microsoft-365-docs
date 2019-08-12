@@ -53,20 +53,5 @@ Most often, an automated investigation begins when an alert is triggered and an 
 
 
 
-## Approve pending actions
 
-Although many steps in AIR are automated, some actions require approval from someone on your security operations team. 
 
-**Example**: Review and approve a pending action 
-
-1. On the **Investigation details** page, select the **Pending actions** tab.
-
-    ![Pending actions](images/air-2pendingactions.png)
-
-2. Select an item to open a flyout, where you can view more details about the incident and proposed action. Then, choose **Approve** (or **Reject**).
-
-## Next steps
-
-[Analyze automated investigations](analyze-autoir.md)
-
-[Learn about the automated investigations dashboard](autoir-dashboard-overview.md)
