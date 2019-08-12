@@ -33,9 +33,16 @@ With [automated investigation and remediation](autoir-overview.md) (AIR) capabil
 
 |Phase  |What happens  |
 |---------|---------|
-|Automated investigation begins     |An automated investigation begins when one of the following occurs:<br/>- An alert triggers an incident that includes an automated investigation<br/>- A security analyst starts an investigation manually while viewing an alert or a security report
-         |
-|Row2     |         |
+|Automated investigation begins     |An automated investigation begins when one of the following occurs:<br/>- An alert triggers an incident that includes an automated investigation<br/>- A security analyst starts an investigation manually while viewing an alert or a security report        |
+|The automated investigation runs     |- Details about the threat and affected entities (user accounts, machines, and so on) are gathered<br/>- The investigation scope can increase if new alerts or entities related to the initial threat emerge          |
+|Details and results emerge |- During and after an automated investigation, details are available in the Action center<br/>- Automated investigation results inform remediation steps  |
+|Remediation steps are taken |- Remediation happens automatically or by approval from your security operations team |
+
+## Automated investigation begins
+
+An automated investigation can begin when one of the following occurs:
+- An alert triggers an automated investigation; or
+- An analyst starts an automated investigation manually.
 
 
 
