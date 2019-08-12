@@ -39,9 +39,9 @@ We recommend going through several steps to quickly get up and running with adva
 
 | Learning goal | Description | Resource |
 |--|--|--|
-| **Get a feel for the language** | Advanced hunting is based on the [Kusto query language](https://docs.microsoft.com/en-us/azure/kusto/query/) and thus supports the same syntax and operators | [Query language overview](advanced-hunting-language-overview.md) |
-| **Understand the schema** | A good high-level understanding of the tables in the schema and the columns will give you a decent grasp of the kinds of data that are available | [Schema reference](advanced-hunting-schema-tables.md) |
-| **Use predefined queries** | If you would like to quickly jump into specific threat hunting scenarios, explore several collections of predefined queries | [Shared queries](advanced-hunting-shared-queries.md)
+| **Get a feel for the language** | Advanced hunting is based on the [Kusto query language](https://docs.microsoft.com/en-us/azure/kusto/query/) and thus supports the same syntax and operators. Start learning the query language by running your first query. | [Query language overview](advanced-hunting-language-overview.md) |
+| **Understand the schema** | Get a good, high-level understanding of the tables in the schema and their columns. This will help you determine where to look for data and how to construct your queries. | [Schema reference](advanced-hunting-schema-tables.md) |
+| **Use predefined queries** | Explore collections of predefined queries covering different threat hunting scenarios. | [Shared queries](advanced-hunting-shared-queries.md), [Hunt across devices and emails](advanced-hunting-query-emails-devices)
 
 ## Get help as you write queries
 Take advantage of the following functionality to write queries faster:
