@@ -31,9 +31,9 @@ With automated investigation and remediation (AIR) capabilities in Microsoft Thr
 
 |Phase  |What happens  |
 |---------|---------|
-|Automated investigation begins     |An automated investigation begins when one of the following occurs:<br/>- An alert triggers an incident that includes an automated investigation<br/>- A security analyst starts an investigation manually while viewing an alert or a security report        |
-|The automated investigation runs     |- Details about the threat and affected entities (user accounts, machines, and so on) are gathered<br/>- The investigation scope can increase if new alerts or entities related to the initial threat emerge          |
-|Details and results emerge |- During and after an automated investigation, details are available in the Action center<br/>- Automated investigation results inform remediation steps  |
+|[Automated investigation begins](#automated-investigation-begins)     |An automated investigation begins when one of the following occurs:<br/>- [An alert triggers an incident](#an-alert-can-trigger-an-automated-investigation) that includes an automated investigation<br/>- [A security analyst starts an investigation manually](#an-analyst-can-start-an-automated-investigation) while viewing an alert or a security report        |
+|[The automated investigation runs](#the-automated-investigation-process)     |- Details about the threat and affected entities (user accounts, machines, and so on) are gathered<br/>- [The investigation scope can increase](#automated-investigation-scope-can-increase) if new alerts or entities related to the initial threat emerge          |
+|[Details and results emerge](#details-and-results-of-an-automated-investigation) |- During and after an automated investigation, details are available in the Action center<br/>- Automated investigation results inform remediation steps  |
 |Remediation steps are taken |- Remediation happens automatically or by approval from your security operations team |
 
 ## Automated investigation begins
