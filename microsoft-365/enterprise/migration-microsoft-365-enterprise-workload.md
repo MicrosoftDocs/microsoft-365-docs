@@ -2,7 +2,7 @@
 title: "Migration to Microsoft 365 Enterprise"
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 02/13/2019
+ms.date: 08/12/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -23,6 +23,10 @@ To maximize the business value of the Microsoft 365 Enterprise integrated suite 
 - The Office client installed on your computers to Office 365 ProPlus
 - Office servers installed on your servers to their equivalent services in Office 365
 - Windows 7 and Windows 8.1 on your devices to Windows 10 Enterprise
+
+>[!Note]
+>Windows 7 reaches end of support on January 14, 2020. For more information, click [here](https://support.microsoft.com/help/4057281/windows-7-support-will-end-on-january-14-2020).
+>
 
 Accomplishing all of these migrations over time gets your organization closer to the [modern workplace](https://www.microsoft.com/microsoft-365/blog/2018/04/27/making-it-simpler-with-a-modern-workplace/), a secure and integrated environment that unlocks teamwork and creativity in your organization, all of which is enabled and empowered by Microsoft 365 Enterprise. 
 
@@ -147,6 +151,16 @@ See how IT experts at Microsoft migrated the company to Microsoft 365 Enterprise
 - [SharePoint to the cloud: Learn how Microsoft ran its own migration](https://www.microsoft.com/itshowcase/Article/Content/691/SharePoint-to-the-cloud-Learn-how-Microsoft-ran-its-own-migration)
 - [Deploying Windows 10 at Microsoft as an in-place upgrade](https://www.microsoft.com/itshowcase/Article/Content/668/Deploying-Windows-10-at-Microsoft-as-an-inplace-upgrade)
 - [Windows 10 deployment: tips and tricks from Microsoft IT](https://www.microsoft.com/itshowcase/Article/Content/951/Windows-10-deployment-tips-and-tricks-from-Microsoft-IT) (video)
+
+## Transition your entire organization
+
+To get a better picture of how to move your entire organization to Microsoft 365 Enterprise, download the [transition poster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/TransitionOrgToM365.pdf).
+
+![](./media/deploy-microsoft-365-enterprise/TransitionOrgToM365.png)
+
+This two-page poster is a quick way to inventory your existing infrastructure and get to the guidance for moving to the corresponding product or service in Microsoft 365 Enterprise. It includes the products in this article and other infrastructure and security elements such as device management, identity, and information and threat protection.
+
+You can print this poster in letter, legal, or tabloid (11 x 17) formats.
 
 ## Result
 
