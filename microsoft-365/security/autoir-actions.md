@@ -30,7 +30,11 @@ The Action Center aggregates all actions that require an approval or another act
 To go to the Action Center, in the Microsoft 365 security center, click the **Action Center** icon.
 
 The action center consists of two main tabs:
-- **Pending**: Lists pending actions for current investigations. For example, actions that require approval in order to proceed are listed here. 
+- **Pending**: Lists pending actions for current investigations. For example, actions that require approval in order to proceed are listed here.
+
+    > [!TIP]
+    > When you visit the Action Center, make sure to approve or reject pending actions. That way, investigations can complete as soon as possible, and remediation steps can be taken. 
+
 - **History**: Lists previous actions, along with their associated investigations and status.
 
 Similar to other reports in the Microsoft 365 security center, you can:
@@ -52,6 +56,5 @@ Similar to other reports in the Microsoft 365 security center, you can:
     - Select **Reject** for a recommended action you do not want to take at this time. (This can cause an investigation to halt or complete.)
 
 
-> [!TIP]
-> When you visit the Action Center, make sure to approve or reject pending actions. That way, investigations can complete as soon as possible, and remediation steps can be taken. 
+
 
