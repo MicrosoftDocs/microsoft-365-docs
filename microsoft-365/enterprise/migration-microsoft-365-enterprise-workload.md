@@ -154,7 +154,7 @@ See how IT experts at Microsoft migrated the company to Microsoft 365 Enterprise
 
 ## Transition your entire organization
 
-To get a better picture of how to move your entire organization to Microsoft 365 Enterprise, download the [transition poster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/TransitionOrgToM365.pdf).
+To get a better picture of how to move your entire organization to Microsoft 365 Enterprise, download the [transition poster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transitionorgtom365.pdf).
 
 ![](./media/deploy-microsoft-365-enterprise/TransitionOrgToM365.png)
 

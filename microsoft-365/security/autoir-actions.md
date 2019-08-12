@@ -27,19 +27,20 @@ The Action Center aggregates all actions that require an approval or another act
 
 ![Action Center](images/air-actioncenter.png)
 
-To go to the Action Center, in the Microsoft 365 security center, click the Action Center icon.
+To go to the Action Center, in the Microsoft 365 security center, click the **Action Center** icon.
 
 The action center consists of two main tabs:
-- **Pending**: Lists pending actions for current investigations. For example, actions that require approval in order to proceed are listed here. 
+- **Pending**: Lists pending actions for current investigations. For example, actions that require approval in order to proceed are listed here.
+
+    > [!TIP]
+    > When you visit the Action Center, make sure to approve or reject pending actions. That way, investigations can complete as soon as possible, and remediation steps can be taken. 
+
 - **History**: Lists previous actions, along with their associated investigations and status.
 
-Similar to other reports in the automated investigation and remediation [dashboard](autoir-dashboard-overview.md), you can:
+Similar to other reports in the Microsoft 365 security center, you can:
 - Use filters to focus on specific information
 - Choose which columns to display in the list
 - Export the list to a file in .csv format 
-
-> [!NOTE]
-> You must be a global administrator, security administrator, security operator, or security reader to perform the tasks described in this article. To learn more, see [Microsoft 365 security center: roles and permissions](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions).
 
 ## Approve or reject an action
 
@@ -55,11 +56,5 @@ Similar to other reports in the automated investigation and remediation [dashboa
     - Select **Reject** for a recommended action you do not want to take at this time. (This can cause an investigation to halt or complete.)
 
 
-> [!TIP]
-> When you visit the Action Center, make sure to approve or reject pending actions. That way, investigations can complete as soon as possible, and remediation steps can be taken. 
 
-## Next steps
 
-[Learn about the automated investigations dashboard](autoir-dashboard-overview.md)
-
-[Analyze alerts and investigations in Microsoft 365](analyze-autoir.md)

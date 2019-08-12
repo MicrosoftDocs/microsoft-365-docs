@@ -83,7 +83,7 @@ For more information, see [Microsoft 365 Enterprise Test Lab Guides](m365-enterp
 
 ## Transition your entire organization
 
-To get a better picture of how to move your entire organization to the products and services in Microsoft 365 Enterprise, download the [transition poster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/TransitionOrgToM365.pdf).
+To get a better picture of how to move your entire organization to the products and services in Microsoft 365 Enterprise, download the [transition poster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transitionorgtom365.pdf).
 
 ![](./media/deploy-microsoft-365-enterprise/TransitionOrgToM365.png)
 

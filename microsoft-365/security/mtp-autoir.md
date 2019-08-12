@@ -1,7 +1,7 @@
 ---
-title: Automatically investigate and remediate issues using Microsoft 365 
-description: Automatically remediate issues seen on entities
-keywords: automated, investigation, detection, source, threat types, id, tags, machines, duration, filter export
+title: Automatically investigate and remediate issues using Microsoft Threat Protection 
+description: Get an overview of automated investigation and remediation capabilities in Microsoft Threat Protection
+keywords: automated, investigation, alert, trigger, action, remediation
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -23,94 +23,80 @@ ms.topic: conceptual
 **Applies to**:
 - Microsoft 365
 
-With [automated investigation and remediation](autoir-overview.md) (AIR) capabilities in Microsoft 365, security administrators can set up alerts that trigger investigations automatically, or start an automated investigation from a report in the Microsoft 365 security center. Once an investigation is underway, your security team can monitor progress, approve pending actions, review the results, and remediate security issues. 
+## Summary
+
+With automated investigation and remediation (AIR) capabilities in Microsoft Threat Protection, security administrators can set up alerts that trigger investigations automatically or start an automated investigation manually. Once an investigation is underway, your security team can use the [Action center](mtp-action-center.md) to monitor progress, approve pending actions, review the results, and remediate security issues. 
+
+## The automated investigation and remediation flow
+
+|Phase  |What happens  |
+|---------|---------|
+|[Automated investigation begins](#automated-investigation-begins)     |An automated investigation begins when one of the following occurs:<br/>- [An alert triggers an incident](#an-alert-can-trigger-an-automated-investigation) that includes an automated investigation<br/>- [A security analyst starts an investigation manually](#an-analyst-can-start-an-automated-investigation) while viewing an alert or a security report        |
+|[The automated investigation runs](#the-automated-investigation-process)     |- Details about the threat and affected entities (user accounts, machines, and so on) are gathered<br/>- [The investigation scope can increase](#automated-investigation-scope-can-increase) if new alerts or entities related to the initial threat emerge          |
+|[Details and results emerge](#details-and-results-of-an-automated-investigation) |- During and after an automated investigation, details are available in the [Action center](mtp-action-center.md)<br/>- Automated investigation results inform remediation steps  |
+|[Remediation steps are taken](#remediation-steps) |- Remediation happens automatically or by approval from your security operations team |
+
+## Automated investigation begins
+
+An automated investigation can begin when one of the following occurs:
+- An alert triggers an automated investigation; or
+- An analyst starts an automated investigation manually.
+
+### An alert can trigger an automated investigation
+
+Most often, an automated investigation begins when an alert is triggered and an incident is created. Not every alert will trigger an automated investigation; this depends on how your organization's alert policies are configured. With automated investigation and remediation capabilities, several kinds of alerts can be configured to work with security playbooks that define the automated investigation process. Here are just a few examples:
+
+- Malware is detected on a user's machine
+- A malicious file is detected in email
+- A user account is flagged as compromised
+- ... and many other other scenarios.
 
 > [!NOTE]
-> You must be a global administrator, security administrator, security operator, or security reader to perform the tasks described in this article. To learn more, see [Microsoft 365 security center: roles and permissions](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions).
+> To view (or set up) alerts, in the Microsoft 365 security center, in the navigation pane, choose **Alerts**.
 
-## Set up alerts to trigger automated investigations
+### An analyst can start an automated investigation
 
-Certain [alert policies](https://docs.microsoft.com/office365/securitycompliance/alert-policies) can trigger automated investigations and remediation. 
+The Microsoft 365 security center includes several reports to help your security operations team stay on top of threat management for your organization. In some cases, security analysts can start investigations manually, while viewing a report or an alert. For an example of how this works in Office 365 Advanced Threat Protection, see [A security administrator triggers an investigation from Threat Explorer](https://docs.microsoft.com/office365/securitycompliance/automated-investigation-response-office#example-a-security-administrator-triggers-an-investigation-from-threat-explorer).
 
-**Example**: Set up a threat protection alert for email messages that contain malware detected after the messages are delivered 
+## The automated investigation process
 
-To review (and if necessary, add) alert policies, follow these steps:
+Whether through an alert or by a security analyst, once an automated investigation is triggered, the process begins immediately. The investigation typically includes the following steps:
 
-1. In the Microsoft 365 security center ([https://security.microsoft.com/homepage](https://security.microsoft.com/homepage)), in the navigation pane on the left side, choose **Policies**.
+- Gather information about the type of threat
+- Determine where the threat came from
+- Identify who in your organization is affected by the threat
+- Find out whether and where other instances of the threat exist in your work environment
+- ... and so on.
 
-2. Under **Alert**, choose **Office 365 alert**. This takes you to the Office 365 Security & Compliance Center.
+### Automated investigation scope can increase
 
-3. In the navigation pane on the left side, choose **Alerts** > **Alert policies**.
+While an investigation is running, any other related alerts that are generated are added to an ongoing automated investigation until that investigation is completed. In addition, if the same threat is seen on other entities, those entities are added to the investigation.
 
-4. Review the list of existing policies, especially your [default alert policies](https://docs.microsoft.com/office365/securitycompliance/alert-policies?#default-alert-policies). Some default policies are set up to trigger AIR automatically through one or more security playbooks.
+If an incriminated entity is seen in elsewhere, the automated investigation will expand the investigation to include that entity, and a general security playbook will run on that entity.
 
-5. If necessary, add an alert policy. (Choose **+ New alert policy**.) To get help with this, see [Alert policies](https://docs.microsoft.com/office365/securitycompliance/alert-policies).
+## Details and results of an automated investigation
 
-## Start an automated investigation from a report
+During and after an automated investigation, you can view detailed information about the investigation in the [Action center](mtp-action-center.md). 
 
-When you use a view in a dashboard, such as a widget, you can click an item to view more details. Depending on the entity, whether an investigation is already underway, and whether starting an automated investigation is possible, you'll see an **Initiate Automated Investigation** button across the top of the report you're viewing. Click that button to trigger AIR.
+![Action center in Microsoft Threat Protection](images/mtp-action-center.png)
 
-**Example**: Start an investigation on a machine
+To visit the Action center, in the Microsoft 365 security center, in the navigation pane, choose **Action center**. To learn more, see [Action center](mtp-action-center.md).
 
-Suppose that you are viewing a dashboard that looks the following image:
+> [!TIP]
+> Visit the Action center regularly, and make sure to approve or reject pending actions as soon as possible. That way, investigations can complete in a timely manner, and remediation steps can be taken right away.
 
-![Security dashboard](images/air-securitydashboard.png)
+## Remediation steps
 
-Suppose that you're interested in learning more about machines listed in the **Machines at risk** widget.
+Depending on the threat and how automated investigation and remediation capabilities areis configured for your organization, remediation can occur automatically or only upon approval by your security operations team. Remediation steps can include:
 
-![Machines at risk](images/air-machinesatrisk.png)
+- Deleting a malicious file
+- Resetting a user's password
+- Blocking website addresses (URLs) that were identified as malicious
+- Enabling multi-factor authentication for user accounts
+- ... and more.
 
-In the widget, you select an item, such as **client5**. A report opens with more details about that machine, including alerts, incidents, and recommendations.
 
-![Machines at risk details](images/air-machinesatrisk-client5.png)
 
-Across the top of the report, you can click **Initiate Automated Investigation** to trigger an AIR process.
 
-## Monitor progress of investigations
 
-When you have one or more investigations in progress, you can monitor status and view progress.
 
-**Example**: Navigate from a widget to a detailed view of an investigation
-
-1. In your security dashboard, select an item, such as the chart in the **Active automated investigations** widget. 
-
-    ![Security operations dashboard](images/air-secopsdashboard.png)
-
-    This opens the **Automated Investigations** view.
-
-    ![automated investigations detailed view](images/air-automated-investigations-list-with-filters.png)
-
-2. Select an item, such as an item in the **Triggering alert** column. This takes you to the Investigation details page, with the Investigation graph in view.
-
-    ![Investigation details](images/air-investigationgraph.png)
-
-3. Use the various tabs to view details about the investigation.
-
-    |Tab  |Description  |
-    |---------|---------|
-    |**Investigation graph**     |Provides a visual representation of the investigation. Depicts entities and lists threats found, along with alerts and whether any actions are awaiting approval.         |
-    |**Alerts**     |Lists alerts associated with the investigation. Alerts can come from threat protection features on a user's machine, in Office apps, Cloud App Security, and other Microsoft 365 Threat Protection features.          |
-    |**Machines** |Lists machines included in the investigation along with remediation level. |
-    |**Users** |Lists user accounts included in the investigation, including a threat determination (verdict). | 
-    |**Key findings** |Lists results from the investigation along with status and actions taken. |
-    |**Entities** |Lists user activities, files, processes, services, drivers, IP addresses, and persistence methods associated with the investigation, along with status and actions taken. |
-    |**Log** |Provides a detailed view of all steps taken during the investigation, along with status.  |
-    |**Pending actions** |Lists items that require approval to proceed. |
-
-## Approve pending actions
-
-Although many steps in AIR are automated, some actions require approval from someone on your security operations team. 
-
-**Example**: Review and approve a pending action 
-
-1. On the **Investigation details** page, select the **Pending actions** tab.
-
-    ![Pending actions](images/air-2pendingactions.png)
-
-2. Select an item to open a flyout, where you can view more details about the incident and proposed action. Then, choose **Approve** (or **Reject**).
-
-## Next steps
-
-[Analyze automated investigations](analyze-autoir.md)
-
-[Learn about the automated investigations dashboard](autoir-dashboard-overview.md)
