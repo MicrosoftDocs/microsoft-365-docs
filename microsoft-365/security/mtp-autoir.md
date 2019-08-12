@@ -87,7 +87,7 @@ During and after an automated investigation, you can view detailed information a
 
 ![Action center in Microsoft Threat Protection](images/mtp-action-center.png)
 
-To visit the Action center, in the Microsoft 365 security center, in the navigation pane, choose **Action center**. 
+To visit the Action center, in the Microsoft 365 security center, in the navigation pane, choose **Action center**. To learn more, see [Action center](mtp-action-center.md).
 
 > [!TIP]
 > Visit the Action center regularly, and make sure to approve or reject pending actions as soon as possible. That way, investigations can complete in a timely manner, and remediation steps can be taken right away.
