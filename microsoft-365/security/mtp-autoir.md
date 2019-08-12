@@ -45,9 +45,13 @@ An automated investigation can begin when one of the following occurs:
 ### An alert can trigger an automated investigation
 
 Most often, an automated investigation begins when an alert is triggered and an incident is created. Not every alert will trigger an automated investigation; this depends on how your organization's alert policies are configured. With automated investigation and remediation capabilities, several kinds of alerts can be configured to work with security playbooks that define the automated investigation process. Here are just a few examples:
+
 - Malware is detected on a user's machine
+
 - A malicious file is detected in email
+
 - A user account is flagged as compromised
+
 - ... and many other other scenarios.
 
 > [!NOTE]
@@ -60,10 +64,15 @@ The Microsoft 365 security center includes several reports to help your security
 ## The automated investigation process
 
 Whether through an alert or by a security analyst, once an automated investigation is triggered, the process begins immediately. The investigation typically includes the following steps:
+
 - Gather information about the type of threat
+
 - Determine where the threat came from
+
 - Identify who in your organization is affected by the threat
+
 - Find out whether and where other instances of the threat exist in your work environment
+
 - ... and so on.
 
 ### Automated investigation scope can increase
@@ -80,6 +89,8 @@ During and after an automated investigation, you can view detailed information a
 
 To visit the Action center, in the Microsoft 365 security center, in the navigation pane, choose **Action center**. 
 
+> [!TIP]
+> Visit the Action center regularly, and make sure to approve or reject pending actions as soon as possible. That way, investigations can complete in a timely manner, and remediation steps can be taken right away.
 
 
 
