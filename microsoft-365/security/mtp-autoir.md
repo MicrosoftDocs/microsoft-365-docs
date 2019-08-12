@@ -74,13 +74,14 @@ If an incriminated entity is seen in elsewhere, the automated investigation will
 
 ## Details and results of an automated investigation
 
-During and after an automated investigation, you can view detailed information about the investigation in the Action center. To visit the Action center, in the Microsoft 365 security center, in the navigation pane, choose **Action center**. 
+During and after an automated investigation, you can view detailed information about the investigation in the [Action center](mtp-action-center.md). 
 
 ![Action center in Microsoft Threat Protection](images/mtp-action-center.png)
 
-In the Action center, you see two tabs: **Pending** and **History**.
-- The **Pending** tab lists investigations that require review and approval by someone in your security operations team to proceed. Make sure to review and take action on pending items you see here.
-- The **History** tab lists past investigations. You can view data for the past day, week, month, or six months
+To visit the Action center, in the Microsoft 365 security center, in the navigation pane, choose **Action center**. 
 
-Selecting an item in the Action center brings you to the Investigation details view, which includes the Investigation graph, Alerts, Machines, Key findings, Entities, and Log, and Pending actions tabs, described in the following table.
+
+
+
+
 
