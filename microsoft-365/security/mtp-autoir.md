@@ -23,10 +23,21 @@ ms.topic: conceptual
 **Applies to**:
 - Microsoft 365
 
-With [automated investigation and remediation](autoir-overview.md) (AIR) capabilities in Microsoft 365, security administrators can set up alerts that trigger investigations automatically, or start an automated investigation from a report in the Microsoft 365 security center. Once an investigation is underway, your security team can monitor progress, approve pending actions, review the results, and remediate security issues. 
+With [automated investigation and remediation](autoir-overview.md) (AIR) capabilities in Microsoft 365, security administrators can set up alerts that trigger investigations automatically or start an automated investigation manually. Once an investigation is underway, your security team can use the [Action center](mtp-action-center.md) to monitor progress, approve pending actions, review the results, and remediate security issues. 
 
 > [!NOTE]
 > You must be a global administrator, security administrator, security operator, or security reader to perform the tasks described in this article. To learn more, see [Microsoft 365 security center: roles and permissions](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions).
+
+## The automated investigation and remediation flow
+
+
+|Phase  |What happens  |
+|---------|---------|
+|Automated investigation begins     |An automated investigation begins when one of the following occurs:<br/>- An alert triggers an incident that includes an automated investigation<br/>- A security analyst starts an investigation manually while viewing an alert or a security report
+         |
+|Row2     |         |
+
+
 
 ## Set up alerts to trigger automated investigations
 
