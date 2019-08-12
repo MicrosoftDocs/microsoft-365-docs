@@ -50,8 +50,9 @@ Most often, an automated investigation begins when an alert is triggered and an 
 - A user account is flagged as compromised
 - ... and many other other scenarios.
 
+> [!NOTE]
+> To view (or set up) alerts, in the Microsoft 365 security center, in the navigation pane, choose **Alerts**.
 
+### An analyst can start an automated investigation
 
-
-
-
+The Microsoft 365 security center includes several reports to help your security operations team stay on top of threat management for your organization. In some cases, security analysts can start investigations manually, while viewing a report or an alert. For an example of how this works in Office 365 Advanced Threat Protection, see [A security administrator triggers an investigation from Threat Explorer](https://docs.microsoft.com/office365/securitycompliance/automated-investigation-response-office#example-a-security-administrator-triggers-an-investigation-from-threat-explorer).
