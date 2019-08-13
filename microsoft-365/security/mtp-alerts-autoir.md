@@ -40,3 +40,7 @@ To review (and if necessary, add) alert policies, follow these steps:
 4. Review the list of existing policies, especially your [default alert policies](https://docs.microsoft.com/office365/securitycompliance/alert-policies?#default-alert-policies). Some default policies are set up to trigger AIR automatically through one or more security playbooks.
 
 5. If necessary, add an alert policy. (Choose **+ New alert policy**.) To get help with this, see [Alert policies](https://docs.microsoft.com/office365/securitycompliance/alert-policies).
+
+## Next steps
+
+- [Manage actions related to automated investigation and remediation in Microsoft 365](autoir-actions.md)
