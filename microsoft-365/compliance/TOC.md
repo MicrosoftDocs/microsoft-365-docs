@@ -42,7 +42,7 @@
 ### [Microsoft's data protection officer](gdpr-data-protection-officer.md)
 
 # [Compliance offerings]()
-## [Microsoft compliance offerings](offering-home.md)
+## [Microsoft 365 compliance offerings](offering-home.md)
 
 ## [Global]()
 ### [CIS Benchmark](offering-cis-benchmark.md)
