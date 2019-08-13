@@ -1,6 +1,6 @@
 ---
-title: Automatically investigate and remediate issues using Microsoft Threat Protection 
-description: Get an overview of automated investigation and remediation capabilities in Microsoft Threat Protection
+title: Set up alerts that trigger automated investigation and remediation in Microsoft Threat Protection 
+description: Learn how to configure alerts that trigger automated investigation and remediation capabilities in Microsoft Threat Protection
 keywords: automated, investigation, alert, trigger, action, remediation
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,7 +18,7 @@ ms.collection:
 ms.topic: conceptual
 ---
 
-# Automatically investigate and remediate issues in Microsoft Threat Protection
+# Set up alerts that trigger automated investigation and remediation in Microsoft Threat Protection
 
 **Applies to**:
 - Microsoft 365
