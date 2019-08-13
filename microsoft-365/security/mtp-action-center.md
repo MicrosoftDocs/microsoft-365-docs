@@ -31,19 +31,17 @@ Viewing information about investigations across Windows, Office, and Azure in on
 
 ## View and use the Action center
 
-- To go to the Action center, in the Microsoft 365 security center, in the navigation pane on the left side, choose **Action center**.) 
+- To go to the Action center, in the Microsoft 365 security center, in the navigation pane on the left side, choose **Action center**.
 
-- In the Action center, select **Customize columns** to show only the columns you want to see.
+    In the Action center, you see two tabs: **Pending** and **History**:
 
-- Select an item in the list to view more details about an investigation. (To learn more, see Details and results of an investigation section.)
+    - The **Pending** tab lists investigations that require review and approval by someone in your security operations team to proceed. Make sure to review and take action on pending items you see here.
 
-In the Action center, you see two tabs: **Pending** and **History**:
+    - The **History** tab lists past investigations. You can view data for the past day, week, month, or six months
 
-- The **Pending** tab lists investigations that require review and approval by someone in your security operations team to proceed. Make sure to review and take action on pending items you see here.
+    Selecting an item on either the **Pending** or **History** tab brings you to the **[Investigation details](#investigation-details)** view.
 
-- The **History** tab lists past investigations. You can view data for the past day, week, month, or six months
-
-Selecting an item on either the Pending or History tab brings you to the **Investigation details** view.
+- Select **Customize columns** to show only the columns you want to see.
 
 ### Investigation details
 
