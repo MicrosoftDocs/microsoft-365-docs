@@ -24,7 +24,7 @@ Learn how Microsoft 365 products and services help your organization meet regula
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/user-accounts.svg" alt="Global icon" />
+                            <img src="./media/offering-global-icon.png" alt="Global icon" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -56,7 +56,7 @@ Learn how Microsoft 365 products and services help your organization meet regula
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/user-accounts.svg" alt="Government icon" />
+                            <img src="./media/offering-global-icon.png" alt="Government icon" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -87,7 +87,7 @@ Learn how Microsoft 365 products and services help your organization meet regula
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/user-accounts.svg" alt="Industry icon" />
+                            <img src="./media/offering-global-icon.png" alt="Industry icon" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -142,7 +142,7 @@ Learn how Microsoft 365 products and services help your organization meet regula
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/user-accounts.svg" alt="Regional icon" />
+                            <img src="./media/offering-global-icon.png" alt="Regional icon" />
                         </div>
                     </div>
                     <div class="cardText">
