@@ -46,7 +46,6 @@
 
 ## [Global]()
 ### [CIS Benchmark](offering-cis-benchmark.md)
-### [CSA Cloud Control Matrix]()
 ### [CSA-STAR Attestation](offering-csa-star-attestation.md)
 ### [CSA-STAR Certification](offering-csa-star-certification.md)
 ### [CSA-STAR Self-Assessment](offering-csa-star-self-assessment.md)

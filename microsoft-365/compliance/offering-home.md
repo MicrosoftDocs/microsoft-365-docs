@@ -30,7 +30,6 @@ Learn how Microsoft 365 products and services help your organization meet regula
                     <div class="cardText">
                         <h3>Global</h3>
                         <p><a href="offering-cis-benchmark.md">CIS Benchmark</a></p>
-                        <p><a href="">Cloud Control Matrix</a></p>
                         <p><a href="offering-csa-star-attestation.md">CSA-STAR Attestation</a></p>
                         <p><a href="offering-csa-star-certification.md">CSA-STAR Certification</a></p>
                         <p><a href="offering-csa-star-self-assessment.md">CSA-STAR Self Assessment</a></p>
