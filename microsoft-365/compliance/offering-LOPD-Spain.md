@@ -61,7 +61,6 @@ Yes. If your organization requires or is seeking an accreditation in line with t
 
 ## Resources
 
-- Spanish Data Protection Agency ([Spanish](https://www.agpd.es/portalwebAGPD/index-ides-idphp.php) and English)
+- Spanish Data Protection Agency ([Spanish](https://www.agpd.es/portalwebAGPD/index-ides-idphp.php)
 - Organic Law 15/1999 of December 13 for the Protection of Personal Data ([Spanish](https://www.boe.es/buscar/act.php?id=BOE-A-1999-23750) and [English](http://www.mjusticia.gob.es/cs/Satellite/Portal/1292426984243))
 - [Microsoft Online Services terms](http://aka.ms/Online-Services-Terms)
-- AEPD resolution on Microsoft Cloud Services as a recommended resource (Spanish)

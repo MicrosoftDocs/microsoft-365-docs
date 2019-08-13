@@ -120,7 +120,7 @@ The [SOC Toolkit for Service Organizations](http://aka.ms/soc-toolkit) is a help
 
 ## Resources
 
-- Better protect your data by using Microsoft cloud services
+- [Better protect your data by using Microsoft cloud services](https://www.microsoft.com/security/technology/information-protection)
 - [Service Organization Control (SOC) Reports](https://aka.ms/mssocreports)
 - [SSAE 16 Auditing Standard](http://www.ssae-16.com/)
 - [ISAE 3402 Standard](http://isae3402.com/)

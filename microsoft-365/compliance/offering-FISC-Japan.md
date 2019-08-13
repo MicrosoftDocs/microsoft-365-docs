@@ -71,14 +71,10 @@ Yes. However, although Microsoft responses to this framework are confirmed compl
 
 ## Resources
 
-- Azure FISC Security Reference
 - [Microsoft Online Services Terms](http://aka.ms/Online-Services-Terms)
 - [FISC Security Guidelines/Safety Standards](https://www.fisc.or.jp/english)
 - [FISC Report on Usage of Cloud Computing](https://www.fisc.or.jp/data/english/pdf/FISC_Cloud_Report_2014.pdf)
-- Microsoft response to new FISC guidelines
 
 ## Resources in Japanese
 
 - [FISC](https://www.fisc.or.jp/)
-- FISC Report on Usage of Cloud Computing
-- Microsoft response to new FISC guidelines
