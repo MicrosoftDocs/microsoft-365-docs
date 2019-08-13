@@ -59,4 +59,8 @@ Investigation details include alerts, machines, key findings, and other relevant
 |**Log** |Provides a detailed view of all steps taken during the investigation, along with status.|
 |**Pending actions** |Lists items that require approval to proceed.|
 
+## Next steps
 
+- [Automatically investigate and remediate issues in Microsoft Threat Protection](mtp-autoir.md)
+
+- [Manage actions related to automated investigation and remediation in Microsoft 365](autoir-actions.md)
