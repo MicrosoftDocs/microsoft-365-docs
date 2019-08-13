@@ -43,7 +43,7 @@ Viewing information about investigations across Windows, Office, and Azure in on
 
 - Select **Customize columns** to show only the columns you want to see.
 
-### Investigation details
+## Investigation details
 
 ![Investigation details view](images/mtp-investigation-details.png)
 
