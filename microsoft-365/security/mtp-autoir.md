@@ -50,7 +50,7 @@ Most often, an automated investigation begins when an alert is triggered and an 
 - ... and many other other scenarios.
 
 > [!NOTE]
-> To view (or set up) alerts, in the Microsoft 365 security center, in the navigation pane, choose **Alerts**.
+> To view (or set up) alerts, in the Microsoft 365 security center, in the navigation pane, choose **Alerts**. To learn more, see [Set up alerts that trigger automated investigation and remediation in Microsoft Threat Protection](mtp-alerts-autoir.md).
 
 ### An analyst can start an automated investigation
 
