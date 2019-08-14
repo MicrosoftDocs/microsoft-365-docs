@@ -85,7 +85,7 @@ To visit the Action Center, in the Microsoft 365 security center, in the navigat
 
 ## Remediation steps
 
-Depending on the threat and how automated investigation and remediation capabilities areis configured for your organization, remediation can occur automatically or only upon approval by your security operations team. Remediation steps can include:
+Depending on the threat and how automated investigation and remediation capabilities are configured for your organization, remediation can occur automatically or only upon approval by your security operations team. Remediation steps can include:
 
 - Deleting a malicious file
 - Resetting a user's password
