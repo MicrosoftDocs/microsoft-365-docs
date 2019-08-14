@@ -1,7 +1,7 @@
 ---
-title: The Action center in Microsoft Threat Protection 
-description: Use the Action center to view details about automated investigation and approve pending actions
-keywords: action center, threat protection, investigation, alert, pending, automated, detection
+title: The Action Center in Microsoft Threat Protection 
+description: Use the Action Center to view details about automated investigation and approve pending actions
+keywords: Action Center, threat protection, investigation, alert, pending, automated, detection
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: M365-security-compliance
@@ -18,22 +18,22 @@ ms.collection:
 ms.topic: conceptual
 ---
 
-# The Action center in Microsoft Threat Protection
+# The Action Center in Microsoft Threat Protection
 
 **Applies to**:
 - Microsoft 365
 
-In Microsoft Threat Protection, an investigation occurs within the context of an incident that is created when an alert is triggered. The **Action center** provides a view of current and past investigations across Microsoft Defender Advanced Threat Protection (ATP), Office 365 ATP, and Azure Active Directory Identity Protection. 
+In Microsoft Threat Protection, an investigation occurs within the context of an incident that is created when an alert is triggered. The **Action Center** provides a view of current and past investigations across Microsoft Defender Advanced Threat Protection (ATP), Office 365 ATP, and Azure Active Directory Identity Protection. 
 
-![Action center in Microsoft Threat Protection](images/mtp-action-center.png)
+![Action Center in Microsoft Threat Protection](images/mtp-action-center.png)
 
 Viewing information about investigations across Windows, Office, and Azure in one place not only enables your security operations team to operate more effectively and efficiently, it provides a more comprehensive view of Microsoft Threat Protection at work for your organization. 
 
-## View and use the Action center
+## View and use the Action Center
 
-- To go to the Action center, in the Microsoft 365 security center, in the navigation pane on the left side, choose **Action center**.
+- To go to the Action Center, in the Microsoft 365 security center, in the navigation pane on the left side, choose **Action Center**.
 
-    In the Action center, you see two tabs: **Pending** and **History**:
+    In the Action Center, you see two tabs: **Pending** and **History**:
 
     - The **Pending** tab lists investigations that require review and approval by someone in your security operations team to proceed. Make sure to review and take action on pending items you see here.
 
