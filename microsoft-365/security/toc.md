@@ -18,7 +18,7 @@
 ##### [Manage incidents](manage-incidents.md)
 
 #### [Automated investigation and remediation]()
-##### [The Action center](mtp-action-center.md)
+##### [Visit the Action Center](mtp-action-center.md)
 ##### [Investigate and remediate issues](mtp-autoir.md)
 ##### [Set up alerts that trigger automated investigation and remediation](mtp-alerts-autoir.md)
 ##### [Manage actions related to investigations](autoir-actions.md)
