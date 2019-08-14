@@ -3,9 +3,10 @@ title: Desktop Deployment Center
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
-ms.date: 06/01/19
+ms.date: 08/14/19
 ms.audience: ITPro
-ms.topic: article
+layout: LandingPage
+ms.topic: landing-page
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection: 
@@ -20,59 +21,66 @@ description: Overview of the Desktop Deployment Center.
 <strong>Upgrading from Windows 7 to Windows 10</strong>
 <p>Windows 7 extended support ends January 14, 2020. In-place upgrade from Windows 7 to Windows 10 is the fastest method to deploy. You can <a href="https://docs.microsoft.com/en-us/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-manual">upgrade a single PC</a> or <a href="https://docs.microsoft.com/en-us/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-automated">upgrade thousands of PCs using System Center Configuration Manager</a>. You don’t need to focus on app delivery, file migration, custom imaging, or enabling cloud-based services with in-place upgrades. You can use tools you already have to upgrade existing PCs and focus on the following deployment steps for upgrades: </p>
 
-<p>
-<table>
-	 <tr>
-	 <td>
-		<table border="0">
-         	 <tr>
-            	  <td>
-            	  <img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-5.png" alt="Upgrade ConfigMgr" height="100" width="100" />
-           	  </td>
-           	  <td>
-           	  <strong>Upgrade Configuration Manager to Current Branch</strong>
-            	  </td>
-                 </tr>
-            	</table>
-	</td>
-        <td>
-		<table border="0">
-         	 <tr>
-            	  <td>
-            	  <img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-3.png" alt="Device and App Readiness" height="100" width="100" />
-           	  </td>
-           	  <td>
-           	  <strong>Validate device and app readiness</strong>
-            	  </td>
-                 </tr>
-            	</table>
-	</td>
-        <td>
-		<table border="0">
-         	 <tr>
-            	  <td>
-            	  <img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-9.png" alt="Upgrade Windows 7 PCs" height="100" width="100" />
-           	  </td>
-           	  <td>
-           	  <strong>Upgrade Windows 7 PCs to Windows 10</strong>
-            	  </td>
-                 </tr>
-            	</table>
-	</td>
-	</tr>
-    <tr>
-    <td>
-    Part of Directory and network readiness step for organizations using System Center Configuration Manager
-    </td>
-    <td>
-    Part of Device and app readiness step; help is available via Desktop App Assure
-    </td>
-    <td>
-    Part of OS deployment and feature updates step for user-retained PCs
-    </td>
-    </tr>
-</table>
-</p>
+<ul class="panelContent cardsFTitle">
+    <li>
+        <a href="https://docs.microsoft.com/en-us/microsoft-365/enterprise/step-2-directory-and-network-readiness">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-5.png" alt="Upgrade ConfigMgr" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Upgrade Configuration Manager to Current Branch</h3>
+			<p>Part of Directory and network readiness step for organizations using System Center Configuration Manager</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="https://docs.microsoft.com/en-us/microsoft-365/enterprise/step-1-device-and-app-readiness">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-3.png" alt="Device and App Readiness" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Validate device and app readiness</h3>
+			<p>Part of Device and app readiness step; help is available via Desktop App Assure</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="https://docs.microsoft.com/en-us/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-automated">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-9.png" alt="Upgrade Windows 7 PCs" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Upgrade Windows 7 PCs to Windows 10</h3>
+			<p>Part of OS deployment and feature updates step for user-retained PCs</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+</ul>
+
 
 <img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-2.png" alt="Desktop Deployment Wheel" height="450" width="802" align="middle" style="background-color: #fff;" />
 
