@@ -23,7 +23,7 @@ ms.topic: conceptual
 **Applies to**:
 - Microsoft 365
 
-**Summary** With automated investigation and remediation (AIR) capabilities in Microsoft Threat Protection, security administrators can set up alerts that trigger investigations automatically or start an automated investigation manually. Once an investigation is underway, your security team can use the [Action center](mtp-action-center.md) to monitor progress, approve pending actions, review the results, and remediate security issues. 
+**Summary** With automated investigation and remediation (AIR) capabilities in Microsoft Threat Protection, security administrators can set up alerts that trigger investigations automatically or start an automated investigation manually. Once an investigation is underway, your security team can use the [Action Center](mtp-action-center.md) to monitor progress, approve pending actions, review the results, and remediate security issues. 
 
 ## The automated investigation and remediation flow
 
@@ -31,7 +31,7 @@ ms.topic: conceptual
 |---------|---------|
 |[Automated investigation begins](#automated-investigation-begins)     |An automated investigation begins when one of the following occurs:<br/>- [An alert triggers an incident](#an-alert-can-trigger-an-automated-investigation) that includes an automated investigation<br/>- [A security analyst starts an investigation manually](#an-analyst-can-start-an-automated-investigation) while viewing an alert or a security report        |
 |[The automated investigation runs](#the-automated-investigation-process)     |- Details about the threat and affected entities (user accounts, machines, and so on) are gathered<br/>- [The investigation scope can increase](#automated-investigation-scope-can-increase) if new alerts or entities related to the initial threat emerge          |
-|[Details and results emerge](#details-and-results-of-an-automated-investigation) |- During and after an automated investigation, details are available in the [Action center](mtp-action-center.md)<br/>- Automated investigation results inform remediation steps  |
+|[Details and results emerge](#details-and-results-of-an-automated-investigation) |- During and after an automated investigation, details are available in the [Action Center](mtp-action-center.md)<br/>- Automated investigation results inform remediation steps  |
 |[Remediation steps are taken](#remediation-steps) |- Remediation happens automatically or by approval from your security operations team |
 
 ## Automated investigation begins
@@ -50,7 +50,7 @@ Most often, an automated investigation begins when an alert is triggered and an 
 - ... and many other other scenarios.
 
 > [!NOTE]
-> To view (or set up) alerts, in the Microsoft 365 security center, in the navigation pane, choose **Alerts**. To learn more, see [Set up alerts that trigger automated investigation and remediation in Microsoft Threat Protection](mtp-alerts-autoir.md).
+> To view alerts, in the Microsoft 365 security center, in the navigation pane, choose **Alerts**. To set up alerts, see [Set up alerts that trigger automated investigation and remediation](mtp-alerts-autoir.md).
 
 ### An analyst can start an automated investigation
 
@@ -74,14 +74,14 @@ If an incriminated entity is seen in elsewhere, the automated investigation will
 
 ## Details and results of an automated investigation
 
-During and after an automated investigation, you can view detailed information about the investigation in the [Action center](mtp-action-center.md). 
+During and after an automated investigation, you can view detailed information about the investigation in the [Action Center](mtp-action-center.md). 
 
-![Action center in Microsoft Threat Protection](images/mtp-action-center.png)
+![Action Center in Microsoft Threat Protection](images/mtp-action-center.png)
 
-To visit the Action center, in the Microsoft 365 security center, in the navigation pane, choose **Action center**. To learn more, see [Action center](mtp-action-center.md).
+To visit the Action Center, in the Microsoft 365 security center, in the navigation pane, choose **Action Center**. To learn more, see [Action Center](mtp-action-center.md).
 
 > [!TIP]
-> Visit the Action center regularly, and make sure to approve or reject pending actions as soon as possible. That way, investigations can complete in a timely manner, and remediation steps can be taken right away.
+> Visit the Action Center regularly, and make sure to approve or reject pending actions as soon as possible. That way, investigations can complete in a timely manner, and remediation steps can be taken right away.
 
 ## Remediation steps
 
