@@ -34,7 +34,45 @@ description: Overview of the Desktop Deployment Center.
                     </div>
                     <div class="cardText">
                         <h3>Upgrade Configuration Manager to Current Branch</h3>
-			<p> Part of Directory and network readiness step for organizations using System Center Configuration Manager</p>
+			<p>Part of Directory and network readiness step for organizations using System Center Configuration Manager</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="https://docs.microsoft.com/en-us/microsoft-365/enterprise/step-1-device-and-app-readiness">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-3.png" alt="Device and App Readiness" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Validate device and app readiness</h3>
+			<p>Part of Device and app readiness step; help is available via Desktop App Assure</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="https://docs.microsoft.com/en-us/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-automated">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-9.png" alt="Upgrade Windows 7 PCs" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Upgrade Windows 7 PCs to Windows 10</h3>
+			<p>Part of OS deployment and feature updates step for user-retained PCs</p>
                     </div>
                 </div>
             </div>
