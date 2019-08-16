@@ -28,7 +28,7 @@ Each Microsoft Defender ATP alert has a corresponding severity—high, medium, low
 
 Use the **Device alert severity** card to focus specifically on alerts that are more severe and might require immediate response. From this card, you can view more information on the Microsoft Defender Security Center portal.
 
-![Device alerts severity card](images/device-alerts-severity.png)
+![Device alerts severity card](../images/device-alerts-severity.png)
 
 ### Understand sources of alerts
 
@@ -36,7 +36,7 @@ Microsoft Defender ATP leverages data from a broad range of security sensors and
 
 The **Device alert detection** sources card shows the distribution of alerts by source. This card can help you track activity related to certain sources, particularly your custom sources. You can also use this to focus on alerts coming from sensors that are not configured to automatically block malicious activity or components.
 
-![Device alert detection sources card](images/device-alert-detection-sources.png)
+![Device alert detection sources card](../images/device-alert-detection-sources.png)
 
 From this card, you can view more information on the Microsoft Defender Security Center portal.
 
@@ -46,13 +46,13 @@ Microsoft Defender ATP sorts each alert into a category representing a certain s
 
 The **Device threat categories** card shows the distribution of alerts into these categories. You can use this information to identify threat activity, such as attempts at credential theft, which can have more significant impact compared to attempts at social engineering, for example. You can also use this to monitor for potentially destructive threats like ransomware.
 
-![Device threat categories card](images/device-threat-categories.png)
+![Device threat categories card](../images/device-threat-categories.png)
 
 ### Monitor active alerts
 
 The **Device alert status** card indicates the number of alerts that have not been resolved and might require attention. From this card, you can view more information on the Microsoft Defender Security Center portal.
 
-![Device alert status card](images/device-alert-status.png)
+![Device alert status card](../images/device-alert-status.png)
 
 ### Monitor classification of resolved alerts
 
@@ -65,7 +65,7 @@ The **Device alert classification** card shows whether your resolved alerts have
 
 Note: In some cases, classification information is unavailable for certain alerts.
 
-![Device alert classification card](images/device-alert-classification.png)
+![Device alert classification card](../images/device-alert-classification.png)
 
 ### Monitor determination of resolved alerts
 
@@ -82,13 +82,13 @@ The **Device alert determination** card shows the determination provided for eac
 
 From this card, you can view more information in Microsoft Defender Security Center.
 
-![Device alert determination card](images/device-alert-determination.png)
+![Device alert determination card](../images/device-alert-determination.png)
 
 ### Understand which devices are at risk
 
 **Device protection** shows the risk level for devices. The risk level is based on factors such as the type and severity of alerts on the device.
 
-![Device protection card](images/device-protection.png)
+![Device protection card](../images/device-protection.png)
 
 ## Monitor and report status of Intune-managed devices
 
@@ -107,43 +107,43 @@ Intune enrolled device data includes:
 
 **Device compliance** shows how many devices that are enrolled in Intune comply with configuration policies.
 
-![Device compliance card](images/device-compliance.png)
+![Device compliance card](../images/device-compliance.png)
 
 ### Discover devices with malware detections
 
 **Device malware detections** provides the number of Intune enrolled devices with malware that have not been fully resolved due to pending actions—a restart, a full scan or manual user actions—or if the remediation action did not complete successfully.
 
-![Device malware detections card](images/device-malware-detections.png)
+![Device malware detections card](../images/device-malware-detections.png)
 
 ### Understand the types of malware detected
 
 **Types of malware on devices** shows different kinds of malware that have been detected on devices enrolled in Intune. You can investigate each type in Microsoft 365 security center.
 
-![Types of malware on devices card](images/types-of-malware-on-devices.png)
+![Types of malware on devices card](../images/types-of-malware-on-devices.png)
 
 ### Understand the specific malware detected on your devices
 
 **Malware on devices** provides a list of the specific malware detected on your devices.
 
-![Malware on devices card](images/malware-on-devices.png)
+![Malware on devices card](../images/malware-on-devices.png)
 
 ### Understand which devices have the most malware
 
 **Devices with malware detections** shows which devices have the most malware detections. In Microsoft 365 security center, you can investigate whether malware is active, who uses the device, and its management status in Intune.
 
-![Devices with malware detections card](images/devices-with-malware-detections.png)
+![Devices with malware detections card](../images/devices-with-malware-detections.png)
 
 ### Understand which users have devices with the most malware
 
 **Users with malware detections** shows users with devices that had the most malware detections. In Microsoft 365 security center, you can see how many devices are assigned to each user and more information about each device and the type of malware.
 
-![Users with malware detection card](images/users-with-malware-detections.png)
+![Users with malware detection card](../images/users-with-malware-detections.png)
 
 ## Monitor and manage ASR rule deployment and detections
 
 [Attack Surface Reduction (ASR) rules](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard) help prevent actions and apps that are typically used by exploit-seeking malware to infect machines. These rules control when and how executables can run. For example, you can prevent JavaScript or VBScript from launching a downloaded executable, block Win32 API calls from Office macros, or block processes that run from USB drives.
 
-![Attack surface reductions card](images/attack-surface-reduction-rules.png)
+![Attack surface reductions card](../images/attack-surface-reduction-rules.png)
 
 The **Attack surface reduction rules** card provides an overview of the deployment of rules across your devices.
 
@@ -159,7 +159,7 @@ The lower part of this card shows settings by rule across your devices. Each bar
 
 To view detailed information about ASR rule detections in your network, select **View detections** on the **Attack surface reduction rules** card. The **Detections** tab in the detailed report page will open.
 
-![Detections tab](images/detections-tab.png)
+![Detections tab](../images/detections-tab.png)
 
 The chart at the top of the page shows detections over time stacking detections that were either blocked or audited. The table at the bottom lists the most recent detections. Use the following information on the table to understand the nature of the detections:
 
@@ -172,7 +172,7 @@ The chart at the top of the page shows detections over time stacking detections 
 
 In the **Attack surface reduction rules** report page, go to the **Configuration** tab to review rule settings for individual devices. Select a device to get detailed information about whether each rule is in block mode, audit mode, or turned off entirely.
 
-![Configuration tab](images/configuration-tab.png)
+![Configuration tab](../images/configuration-tab.png)
 
 Microsoft Intune provides management functionality for your ASR rules. If you want to update your settings, select **Get started** under **Configure devices** in the tab to open device management on Intune.
 
@@ -187,7 +187,7 @@ To start collecting files for exclusion, go to the **Add exclusions** tab in the
 >[!NOTE]  
 >The tool analyzes detections by all attack surface reduction rules, but [only some rules support exclusions](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules).
 
-![Add exclusions tab](images/add-exclusions-tab.png)
+![Add exclusions tab](../images/add-exclusions-tab.png)
 
 The table lists all the file names detected by your attack surface reduction rules. You can select files to review the impact of excluding them:
 

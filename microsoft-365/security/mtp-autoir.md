@@ -76,7 +76,7 @@ If an incriminated entity is seen in elsewhere, the automated investigation will
 
 During and after an automated investigation, you can view detailed information about the investigation in the [Action Center](mtp-action-center.md). 
 
-![Action Center in Microsoft Threat Protection](images/mtp-action-center.png)
+![Action Center in Microsoft Threat Protection](../images/mtp-action-center.png)
 
 To visit the Action Center, in the Microsoft 365 security center, in the navigation pane, choose **Action Center**. To learn more, see [Action Center](mtp-action-center.md).
 

@@ -31,7 +31,7 @@ The incidents dashboard provides information on:
 ## Analyze incident details 
 Click an incident to see the **Incident pane**. Select **Open incident page** to see the incident details and related information (alerts, machines, users, mailboxes, investigations, evidence).
 
-![Image of incident details](images/indicent-details.png)
+![Image of incident details](../images/indicent-details.png)
 
 
 ### Alerts

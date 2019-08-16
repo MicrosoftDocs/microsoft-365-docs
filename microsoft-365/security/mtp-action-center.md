@@ -25,7 +25,7 @@ ms.topic: conceptual
 
 In Microsoft Threat Protection, an investigation occurs within the context of an incident that is created when an alert is triggered. The **Action Center** provides a view of current and past investigations across Microsoft Defender Advanced Threat Protection (ATP), Office 365 ATP, and Azure Active Directory Identity Protection. 
 
-![Action Center in Microsoft Threat Protection](images/mtp-action-center.png)
+![Action Center in Microsoft Threat Protection](../images/mtp-action-center.png)
 
 Viewing information about investigations across Windows, Office, and Azure in one place not only enables your security operations team to operate more effectively and efficiently, it provides a more comprehensive view of Microsoft Threat Protection at work for your organization. 
 
@@ -45,7 +45,7 @@ Viewing information about investigations across Windows, Office, and Azure in on
 
 ## Investigation details
 
-![Investigation details view](images/mtp-investigation-details.png)
+![Investigation details view](../images/mtp-investigation-details.png)
 
 Investigation details include alerts, machines, key findings, and other relevant information associated with an investigation. The following table describes the tabs you'll see in the **Investigation details** view.
 

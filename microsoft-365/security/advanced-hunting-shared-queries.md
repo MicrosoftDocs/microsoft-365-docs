@@ -24,7 +24,7 @@ ms.topic: article
 
 Shared queries are predefined queries that enable you to quickly pursue specific threat hunting scenarios without having to learn the query language in depth.
 
-![Image of shared queries](images/atp-advanced-hunting-shared-queries.png)
+![Image of shared queries](../images/atp-advanced-hunting-shared-queries.png)
 
 You can save, edit, update, or delete queries.
 
@@ -37,7 +37,7 @@ You can create or modify a query and save it as your own query or share it with 
     
 3. Enter a name for the query. 
 
-   ![Image of saving a query](images/advanced-hunting-save-query.png)
+   ![Image of saving a query](../images/advanced-hunting-save-query.png)
 
 4. Select the folder where you'd like to save the query.
     - Shared queries - Allows other users in the tenant to access the query
@@ -55,7 +55,7 @@ These steps guide you on modifying and overwriting an existing query.
 ### Delete a query
 1. Right-click on a query you want to delete.
 
-    ![Image of delete query](images/atp_advanced_hunting_delete_rename.png)
+    ![Image of delete query](../images/atp_advanced_hunting_delete_rename.png)
 
 2. Select **Delete** and confirm that you want to delete the query.
 

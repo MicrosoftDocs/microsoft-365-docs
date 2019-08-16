@@ -52,7 +52,7 @@ To help you the information you need more quickly, Microsoft recommendations are
 
 In the Microsoft Secure Score overview page, you can see how points are split between these groups and what points are available. The overview page is also the place to get an all-up view of the total score, historical trend of your secure score with benchmark comparisons, and prioritized improvement actions that can be taken to improve your score. You can use this data to act and make big differences in your security posture.  
 
-![M365 homepage](images/homepage-original.png)
+![M365 homepage](../images/homepage-original.png)
 *Figure 1: Microsoft Secure Score overview page*
 
 ## Take action to improve your score
@@ -71,7 +71,7 @@ When you click on an improvement action, a fly out appears. To complete the acti
 
 4. Select **Review** because the improvement action requires you to regularly review a part of your environment to gain and retain points. For example, mailbox forwarding rules should be reviewed on a weekly basis to make sure data is not being exfiltrated from your network. You do not need to make any changes, but an action will need to be performed. If you regularly review the rules, you will receive the points. If not, the score will be reduced.
 
-![M365 homepage](images/secure-score1x450.png) ![M365 homepage](images/secure-score2x450.png)
+![M365 homepage](../images/secure-score1x450.png) ![M365 homepage](../images/secure-score2x450.png)
 
 *Figures 2 & 3: Improvement action flyouts*
 

@@ -25,7 +25,7 @@ ms.topic: conceptual
 
 The Action Center aggregates all actions that require an approval or another action for an investigation to proceed or complete.
 
-![Action Center](images/air-actioncenter.png)
+![Action Center](../images/air-actioncenter.png)
 
 To go to the Action Center, in the Microsoft 365 security center, click the **Action Center** icon.
 
@@ -48,7 +48,7 @@ Similar to other reports in the Microsoft 365 security center, you can:
 
 1. In the Action Center, on the **Pending** tab, select an item. This opens a flyout that includes details, links to an associated alert or investigation, and buttons to approve or reject the action. 
 
-    ![Approve or reject an action](images/air-actioncenter-itemselected.png)
+    ![Approve or reject an action](../images/air-actioncenter-itemselected.png)
 
 2. Review the information about the action, and then do one of the following:
     - Select **Open investigation page** to view more details about the investigation
