@@ -68,7 +68,7 @@ The new servicing model includes Feature Updates for Windows twice a year, Offic
 
 The third component to consider is user personalization. Here you need to plan network bandwidth to accommodate the restoring of user files, their settings, and their applications as part of the PC refresh or replacement process. Together, these items often exceed 20 GB per PC; for some users these may exceed 100 GB.
 
-## **Limiting Bandwidth**
+## Limiting Bandwidth
 
 One way to limit the impact of deployment-related traffic on the network is to throttle it using the BITS (Background Intelligent Transfer Service) setting on clients. BITS uses an Adaptive Bit Rate (ABR) to adjust bandwidth available for deployment purposes; it can be configured on clients using Group Policy.
 
@@ -82,7 +82,7 @@ Fortunately, there are new tools to make it easier for you to manage the network
 
 ![](media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-3.png)
 
-## **Scavenging Bandwidth**
+## Scavenging Bandwidth
 
 Low Extra Delay Background Transport (LEDBAT), supported in Windows Server 2019 and System Center Configuration Manager (Current Branch), is designed to optimize network traffic to Windows clients.
 
@@ -92,7 +92,7 @@ Unlike traditional throttling, LEDBAT can use all available network bandwidth as
 
 ![](media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-4.png)
 
-## **Peer-to-Peer options**
+## Peer-to-Peer options
 
 Peer-to-Peer options are increasingly being used in Windows 10 migrations, for PC imaging, software updates and user personalization. They are also valuable in facilitating build-to-build upgrades after your initial Windows 10 deployment. Here we will cover several examples to help move Windows 10 and Office-related traffic away from the center of the network, reducing the need for classic throttling approaches, and allowing PCs to find the update files they need on peers in their local network rather than downloading them from a distribution point or the internet.
 
