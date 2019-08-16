@@ -1,6 +1,6 @@
 ---
 title: Manage actions related to automated investigation and remediation in Microsoft 365 
-description: Use the action center to manage actions related to automated investigation and response
+description: Use the Action Center to manage actions related to automated investigation and response
 keywords: action, center, autoair, automated, investigation, response, remediation
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -29,7 +29,7 @@ The Action Center aggregates all actions that require an approval or another act
 
 To go to the Action Center, in the Microsoft 365 security center, click the **Action Center** icon.
 
-The action center consists of two main tabs:
+The Action Center consists of two main tabs:
 - **Pending**: Lists pending actions for current investigations. For example, actions that require approval in order to proceed are listed here.
 
     > [!TIP]
