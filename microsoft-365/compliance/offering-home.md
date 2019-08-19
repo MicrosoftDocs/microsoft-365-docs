@@ -1,7 +1,7 @@
 ---
-title: Microsoft 365 Compliance Offerings
+title: Microsoft Compliance Offerings
 layout: LandingPage
-description: Learn how Microsoft 365 products and services help your organization meet regulatory compliance standards.
+description: Learn how Microsoft products and services help your organization meet regulatory compliance standards.
 author: robmazz
 ms.author: robmazz
 manager: laurawi
@@ -12,9 +12,9 @@ audience: ITPro
 ms.prod: Microsoft-365-enterprise
 ---
 
-# Microsoft 365 Compliance Offerings
+# Microsoft Compliance Offerings
 
-Learn how Microsoft 365 products and services help your organization meet regulatory compliance standards.
+Learn how Microsoft products and services help your organization meet regulatory compliance standards.
 
 <ul class="panelContent cardsD">
     <li>
