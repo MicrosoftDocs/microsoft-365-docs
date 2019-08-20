@@ -34,9 +34,7 @@ To help government agencies in their compliance efforts, Microsoft:
 - Provides to the IRS Azure Government Compliance Considerations and Office 365 U.S. Government Compliance Considerations, which outline how an agency can use Microsoft Cloud for Government services in a way that complies with IRS 1075. Government customers under NDA can request these documents.
 - Offers customers the opportunity (at their expense) to communicate with Microsoft subject matter experts or outside auditors if needed.
 
-Learn about the benefits of IRS 1075 on the Microsoft Cloud.
-
-- [Download the IRS 1075 backgrounder](https://aka.ms/irs1075-backgrounder)
+Learn about the benefits of IRS 1075 on the Microsoft Cloud: [Download the IRS 1075 backgrounder](https://aka.ms/irs1075-backgrounder)
 
 ## Audits, reports, and certificates
 

@@ -30,9 +30,7 @@ The framework prescribes an accreditation process that is voluntary for systems 
 
 Microsoft Azure and Microsoft Office 365 have gone through a rigorous assessment by BDO, an independent auditor, which issued an official statement of their compliance. BDO reports that the security measures in both services, and their information systems and data processing facilities, comply at the high level with RD 3/2010 without requiring any corrective measures. Microsoft was the first hyperscale cloud service provider to receive this certification in Spain.
 
-Learn about the benefits of Spain ENS High-Level Security Measures on the Microsoft Cloud.
-
-[Download the Spain ENS backgrounder](https://aka.ms/spainens-backgrounder)
+Learn about the benefits of Spain ENS High-Level Security Measures on the Microsoft Cloud: [Download the Spain ENS backgrounder](https://aka.ms/spainens-backgrounder)
 
 ## Audits, reports, and certificates
 

@@ -32,9 +32,7 @@ FERPA does not require or recognize audits or other certifications, so any acade
 
 As a result of these contractual commitments, customers that are subject to FERPA — both educational institutions and third parties to whom they give access to sensitive student data — can confidently use in-scope Microsoft business cloud services to process, store, and transmit that data.
 
-Learn about the benefits of FERPA on the Microsoft Cloud.
-
-- [Download the FERPA backgrounder](https://aka.ms/ferpa-compliance)
+Learn about the benefits of FERPA on the Microsoft Cloud: [Download the FERPA backgrounder](https://aka.ms/ferpa-compliance)
 
 ## Audits, reports, and certificates
 

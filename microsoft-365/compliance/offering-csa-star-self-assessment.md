@@ -33,13 +33,9 @@ STAR provides three levels of assurance; CSA-STAR Self-Assessment is the introdu
 
 As part of the STAR Self-Assessment, CSPs can submit two different types of documents to indicate their compliance with CSA best practices: a completed CAIQ, or a report documenting compliance with CCM. For the CSA STAR Self-Assessment, Microsoft publishes both a CAIQ and a CCM-based report for Microsoft Azure, and CCM-based reports for Microsoft Dynamics 365 and Microsoft Office 365.  
   
-Learn about the benefits of CSA STAR Self-Assessment on the Microsoft Cloud.
+Learn about the benefits of CSA STAR Self-Assessment on the Microsoft Cloud: [Download the CSA STAR Self-Assessment backgrounder](https://aka.ms/csastar-selfassessment-backgrounder)
 
-- [Download the CSA STAR Self-Assessment backgrounder](https://aka.ms/csastar-selfassessment-backgrounder)
-
-Learn how to accelerate your CSA STAR Self-Assessment deployment with our Azure Security and Compliance Blueprint.
-
-- [Download Azure response to the CSA Consensus Assessments](https://gallery.technet.microsoft.com/Azure-Responses-to-CSA-46034a11)
+Learn how to accelerate your CSA STAR Self-Assessment deployment with our Azure Security and Compliance Blueprint: [Download Azure response to the CSA Consensus Assessments](https://gallery.technet.microsoft.com/Azure-Responses-to-CSA-46034a11)
 
 ## Audits, reports, and certificates
 

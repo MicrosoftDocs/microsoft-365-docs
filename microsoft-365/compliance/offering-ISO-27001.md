@@ -26,9 +26,7 @@ ISO/IEC 27001 is a security standard that formally specifies an Information Secu
 
 The international acceptance and applicability of ISO/IEC 27001 is the key reason why certification to this standard is at the forefront of Microsoft’s approach to implementing and managing information security. Microsoft’s achievement of ISO/IEC 27001 certification points up its commitment to making good on customer promises from a business, security compliance standpoint. Currently, both Azure Public and Azure Germany are audited once a year for ISO/IEC 27001 compliance by a third-party accredited certification body, providing independent validation that security controls are in place and operating effectively.  
   
-Learn about the benefits of ISO-Iec-27001 on the Microsoft Cloud.
-
-- [Download the ISO/IEC 27001:2013 information security management standards](https://aka.ms/iso27001-backgrounder)
+Learn about the benefits of ISO-Iec-27001 on the Microsoft Cloud: [Download the ISO/IEC 27001:2013 information security management standards](https://aka.ms/iso27001-backgrounder)
 
 ## Audits, reports, and certificates
 

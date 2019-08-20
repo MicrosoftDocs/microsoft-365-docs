@@ -28,9 +28,7 @@ NIST publishes a list of vendors and their cryptographic modules validated for F
   
 When a new version of Windows and Windows Server is in development, a new certification project is started to validate compliance with FIPS 140-2. In fact, Microsoft has maintained a FIPS 140 validation program for every major release of the Windows operating system and Windows Server since the inception of the standard in 2001.  
   
-Learn about the benefits of FIPS on the Microsoft Cloud.
-
-- [Download the FIPS backgrounder](https://aka.ms/fips-backgrounder)
+Learn about the benefits of FIPS on the Microsoft Cloud: [Download the FIPS backgrounder](https://aka.ms/fips-backgrounder)
 
 ## Validations and certifications
 

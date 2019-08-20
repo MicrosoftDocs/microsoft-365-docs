@@ -18,9 +18,7 @@ ms.collection: M365-security-compliance
 
 ISO/IEC 27017 is unique in providing guidance for both cloud service providers and cloud service customers. It also provides cloud service customers with practical information on what they should expect from cloud service providers. Customers can benefit directly from ISO/IEC 27017 by ensuring they understand the shared responsibilities in the cloud.
 
-Learn about the benefits of ISO/IEC 27017 on the Microsoft Cloud.
-
-[Download the ISO/IEC 27017: Code of Practice for Information Security Controls](https://aka.ms/iso27017-backgrounder)
+Learn about the benefits of ISO/IEC 27017 on the Microsoft Cloud: [Download the ISO/IEC 27017: Code of Practice for Information Security Controls](https://aka.ms/iso27017-backgrounder)
 
 ## Microsoft in-scope cloud services
 

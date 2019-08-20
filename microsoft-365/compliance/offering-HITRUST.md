@@ -26,9 +26,7 @@ The CSF is divided into 19 different domains, including endpoint protection, mob
 
 HITRUST offers 3 degrees of assurance, or levels of assessment: self-assessment, CSF validated, and CSF certified. Each level builds with increasing rigor on the one below it. An organization with the highest level, CFS-certified, meets all the certification requirements of the CSF. Microsoft Azure and Office 365 are the first hyperscale cloud services to receive certification for the HITRUST CSF. Coalfire, a HITRUST assessor firm, performed the assessments based on how Azure and Office 365 implement security, privacy, and regulatory requirements to protect sensitive information.
 
-Learn how to accelerate your HITRUST deployment with our Azure Security and Compliance Blueprint.
-
-[Download the Microsoft Azure HITRUST Customer Responsibility Matrix (CRM) blueprint v9.0d](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=3ccde498-4761-4be0-be8b-cd8d379a3a4f&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_Healthcare_Blueprint)
+Learn how to accelerate your HITRUST deployment with our Azure Security and Compliance Blueprint: [Download the Microsoft Azure HITRUST Customer Responsibility Matrix (CRM) blueprint v9.0d](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=3ccde498-4761-4be0-be8b-cd8d379a3a4f&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_Healthcare_Blueprint)
 
 ## Audits, reports, and certificates
 

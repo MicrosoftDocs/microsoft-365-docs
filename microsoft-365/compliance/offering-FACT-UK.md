@@ -24,9 +24,7 @@ To underscore Microsoft’s commitment to protect customers when they entrust su
 
 Based on the voluntary submission by Microsoft to a FACT audit, the FACT auditor certified Azure. Azure was the first multitenant public cloud service to achieve FACT certification, adding to Azure’s portfolio of media-related certifications, including CDSA certification and a formal assessment by the MPAA.
 
-Learn about the benefits of FACT on the Microsoft Cloud.
-
-- [Download the FACT backgrounder](https://aka.ms/fact-backgrounder)
+Learn about the benefits of FACT on the Microsoft Cloud: [Download the FACT backgrounder](https://aka.ms/fact-backgrounder)
 
 ## Audits, reports, and certificates
 

@@ -34,9 +34,7 @@ Although these regular audits and certifications do not specifically focus on FD
 
 Customers can request access to the compliance reports, subject to nondisclosure agreement terms and conditions, through their Microsoft account representative, or through the [Service Trust Portal](http://aka.ms/stphelp). In addition, qualification guidelines for Microsoft Azure and Microsoft Office 365 provide a detailed explanation of how Microsoft audit controls correspond to the requirements of CFR Title 21 Part 11, guidance for implementing an FDA qualification strategy, and a description of areas of shared responsibility.
 
-Learn how to accelerate your FDA CFR Title 21 deployment.
-
-- [Download the Azure FDA 21 qualification guide](https://go.microsoft.com/fwlink/p/?linkid=2086604)
+Learn how to accelerate your FDA CFR Title 21 deployment: [Download the Azure FDA 21 qualification guide](https://go.microsoft.com/fwlink/p/?linkid=2086604)
 
 ## Audits, reports, and certificates
 

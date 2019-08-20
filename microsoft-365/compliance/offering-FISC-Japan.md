@@ -34,9 +34,7 @@ Microsoft engaged outside assessors to validate that Microsoft Azure and Microso
 
 Financial institutions can rely on this evaluation of the compliance of these three areas for the in-scope infrastructure and platform services of Azure, Office 365, and Microsoft Cloud App Security.
 
-Learn about the benefits of FISC on the Microsoft Cloud.
-
-[Download the FISC Japan backgrounder](https://aka.ms/fisc-backgrounder)
+Learn about the benefits of FISC on the Microsoft Cloud: [Download the FISC Japan backgrounder](https://aka.ms/fisc-backgrounder)
 
 ## Microsoft in-scope cloud services
 

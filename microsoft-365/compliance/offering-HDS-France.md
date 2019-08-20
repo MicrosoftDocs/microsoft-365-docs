@@ -37,7 +37,7 @@ The rigorous audit covered the measures Microsoft has taken to secure personal h
 
 ## How to implement
 
-Contractual terms
+**Contractual terms**
     - French Public Health code requires the execution of specific contractual terms between the health data hosting service or cloud service provider and its customers. Eligible customers must reach out to their Microsoft licensing point of contact to enter into these specific contractual terms before hosting health personal data on Microsoft online services.
 
 [Health and life sciences](https://docs.microsoft.com/en-us/azure/industry/health/)

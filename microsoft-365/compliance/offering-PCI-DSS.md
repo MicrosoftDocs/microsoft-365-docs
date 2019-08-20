@@ -28,9 +28,7 @@ Customers who want to develop a cardholder environment or card processing servic
 
 It is, however, important to understand that Azure PCI DSS compliance status does not automatically translate to PCI DSS certification for the services that customers build or host on the Azure platform. Customers are responsible for ensuring that they achieve compliance with PCI DSS requirements. The Azure Customer PCI Guide specifies areas of responsibility for each PCI DSS requirement, and whether it is assigned to Azure or the customer, or if the responsibility is shared.
 
-Learn about the benefits of PCI DSS on the Microsoft Cloud.
-
-[Download the Payment Card Industry (PCI) Data Security Standards (DSS) backgrounder](https://aka.ms/pcidss-backgrounder)
+Learn about the benefits of PCI DSS on the Microsoft Cloud: [Download the Payment Card Industry (PCI) Data Security Standards (DSS) backgrounder](https://aka.ms/pcidss-backgrounder)
 
 ## Microsoft in-scope cloud services
 

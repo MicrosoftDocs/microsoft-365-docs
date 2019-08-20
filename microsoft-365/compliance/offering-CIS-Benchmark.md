@@ -41,17 +41,10 @@ In addition to the benchmarks for Microsoft products and services, CIS has also 
 
 ## How to implement
 
-[CIS Benchmark for Azure](https://azure.microsoft.com/mediahandler/files/resourcefiles/cis-microsoft-azure-foundations-security-benchmark/CIS_Microsoft_Azure_Foundations_Benchmark_v1.0.0.pdf)  
-    - Get prescriptive guidance for establishing a secure baseline configuration for Azure.  
-  
-[Office 365 security best practices](https://docs.microsoft.com/office365/securitycompliance/security-best-practices)  
-    - Minimize the potential of a data breach or compromised account by following these best practices.  
-  
-[Windows security baselines](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines)  
-    - Follow these guidelines for effective use of security baselines in your organization.  
-  
-[CIS Controls Cloud Companion Guide](https://www.cisecurity.org/white-papers/cis-controls-cloud-companion-guide/)  
-    - Get guidance on applying security best practices in CIS Controls Version 7 to cloud environments.
+- [CIS Benchmark for Azure](https://azure.microsoft.com/mediahandler/files/resourcefiles/cis-microsoft-azure-foundations-security-benchmark/CIS_Microsoft_Azure_Foundations_Benchmark_v1.0.0.pdf): Get prescriptive guidance for establishing a secure baseline configuration for Azure.  
+- [Office 365 security best practices](https://docs.microsoft.com/office365/securitycompliance/security-best-practices): Minimize the potential of a data breach or compromised account by following these best practices.
+- [Windows security baselines](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines): Follow these guidelines for effective use of security baselines in your organization.
+- [CIS Controls Cloud Companion Guide](https://www.cisecurity.org/white-papers/cis-controls-cloud-companion-guide/): Get guidance on applying security best practices in CIS Controls Version 7 to cloud environments.
 
 ## Audits, reports, and certificates
 

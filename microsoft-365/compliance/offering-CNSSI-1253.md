@@ -32,8 +32,7 @@ The compliance of Azure Government with the demanding CNSSI 1253 requirements me
 
 ## How to implement
 
-[Azure government documentation](https://docs.microsoft.com/azure/azure-government/)
-    - Tutorials and how-to guides help developers deploy and manage services using Azure Government.
+- [Azure government documentation](https://docs.microsoft.com/azure/azure-government/): Tutorials and how-to guides help developers deploy and manage services using Azure Government.
 
 ## Audits, reports, and certificates
 

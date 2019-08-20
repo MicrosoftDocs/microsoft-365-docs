@@ -28,13 +28,9 @@ Microsoft Azure, Microsoft Intune, and Microsoft Power BI have obtained STAR Cer
   
 During the assessment, an accredited CSA certification auditor assigns a Maturity Capability score to each of the 16 CCM control areas. The average score is then used to assign the overall level of maturity and the corresponding Bronze, Silver, or Gold award. Azure, Intune, Power BI, and Microsoft Cloud App Security were awarded Cloud Security Alliance (CSA) STAR Certification at the Gold level.  
   
-Learn about the benefits of CSA STAR Certification on the Microsoft Cloud.
+Learn about the benefits of CSA STAR Certification on the Microsoft Cloud: [Download the CSA STAR Certification backgrounder](https://aka.ms/csastar-certification-backgrounder)
 
-- [Download the CSA STAR Certification backgrounder](https://aka.ms/csastar-certification-backgrounder)
-
-Learn how to accelerate your CSA STAR Certification deployment with our Azure Security and Compliance Blueprints.
-
-- [Download the Microsoft Azure Responses to CSA Consensus Assessments Initiative Questionnaire](https://gallery.technet.microsoft.com/Azure-Responses-to-CSA-46034a11)
+Learn how to accelerate your CSA STAR Certification deployment with our Azure Security and Compliance Blueprints: [Download the Microsoft Azure Responses to CSA Consensus Assessments Initiative Questionnaire](https://gallery.technet.microsoft.com/Azure-Responses-to-CSA-46034a11)
 
 ## Audits, reports, and certificates
 

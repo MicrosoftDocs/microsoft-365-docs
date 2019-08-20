@@ -36,9 +36,8 @@ When financial institutions in Poland outsource business activities to the cloud
 
 The Microsoft checklist helps Polish financial firms conducting due-diligence assessments of Microsoft business cloud services and includes:
 
-An overview of the regulatory landscape for context.
-
-A checklist that sets forth the issues to be addressed and maps Microsoft Azure, Microsoft Dynamics 365, and Microsoft 365 services against those regulatory obligations. The checklist can be used as a tool to measure compliance against a regulatory framework and provide an internal structure for documenting compliance, and help customers conduct their own risk assessments of Microsoft business cloud services.
+- An overview of the regulatory landscape for context.
+- A checklist that sets forth the issues to be addressed and maps Microsoft Azure, Microsoft Dynamics 365, and Microsoft 365 services against those regulatory obligations. The checklist can be used as a tool to measure compliance against a regulatory framework and provide an internal structure for documenting compliance, and help customers conduct their own risk assessments of Microsoft business cloud services.
 
 ## How to implement
 

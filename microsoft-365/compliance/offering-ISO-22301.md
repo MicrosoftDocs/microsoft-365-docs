@@ -24,9 +24,7 @@ Published in 2012 by the technical committee, ISO 22301:2012 is the first intern
 
 Microsoft is the first hyperscale cloud service provider to receive the ISO 22301 certification for business continuity management. An independent certification body awarded this certification to Microsoft Azure, Microsoft Azure Government, Microsoft Office 365 (including Commercial, Government, and Education offerings), Microsoft Cloud App Security, Microsoft Intune, and Microsoft Power BI after a stringent audit covering all aspects of their business continuity processes. The audit covered the in-scope services listed below and Azure management features, the Azure Portal, and the systems used to monitor, operate, and update the in-scope services.  
   
-Learn about the benefits of ISO/IEC 22301 on the Microsoft Cloud.
-
-- [Download the ISO/IEC 22301 backgrounder](https://aka.ms/iso22301-backgrounder)
+Learn about the benefits of ISO/IEC 22301 on the Microsoft Cloud: [Download the ISO/IEC 22301 backgrounder](https://aka.ms/iso22301-backgrounder)
 
 ## Audits, reports, and certificates
 

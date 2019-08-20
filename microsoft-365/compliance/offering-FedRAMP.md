@@ -30,13 +30,9 @@ Microsoft’s government cloud services, including Azure Government, Office 365 
 
 Microsoft government cloud services offer public sector customers a rich array of services compliant with FedRAMP, and robust guidance and implementation tools, including the Azure Security and Compliance Blueprint for FedRAMP, which helps automate deployment and configuration of Azure resources in a FedRAMP environment.
 
-Learn about the benefits of FEDRAMP on the Microsoft Cloud.
+Learn about the benefits of FEDRAMP on the Microsoft Cloud: [Download the FedRAMP compliance backgrounder](https://aka.ms/fedramp-backgrounder).
 
-- [Download the FedRAMP compliance backgrounder](https://aka.ms/fedramp-backgrounder).
-
-Learn how to accelerate your FEDRAMP deployment with our Azure Security and Compliance Blueprint.
-
-- [Download the Azure — Blueprint FedRAMP High SSP](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=64de30d4-42c6-47e7-bd52-0be935710df9&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_FedRAMP%20Blueprint).
+Learn how to accelerate your FEDRAMP deployment with our Azure Security and Compliance Blueprint: [Download the Azure — Blueprint FedRAMP High SSP](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=64de30d4-42c6-47e7-bd52-0be935710df9&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_FedRAMP%20Blueprint).
 
 ### Microsoft Azure P-ATOs
 

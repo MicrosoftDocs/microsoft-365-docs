@@ -26,9 +26,7 @@ These updates address the confidentiality, integrity, and availability in health
 
 Currently, there is no formal authorization and accreditation process for MARS-E. However, Microsoft Azure platform services have undergone independent FedRAMP audits at the Moderate Impact Level and Azure Government at the High Impact Level, and are authorized according to FedRAMP standards. Although these standards do not specifically focus on MARS-E, the MARS-E control requirements and objectives are closely aligned and serve to protect the confidentiality, integrity, and availability of data on Azure.
 
-Learn more about the benefits of MARS-E 2.0 Framework on the Microsoft Cloud
-
-[Download the MARS-E backgrounder](https://aka.ms/mars-e-backgrounder)
+Learn more about the benefits of MARS-E 2.0 Framework on the Microsoft Cloud: [Download the MARS-E backgrounder](https://aka.ms/mars-e-backgrounder)
 
 ## Audits, reports, and certificates
 

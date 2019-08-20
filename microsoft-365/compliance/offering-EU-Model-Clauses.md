@@ -30,9 +30,7 @@ Microsoft provided its Standard Contractual Clauses to the EU's Article 29 Worki
 
 The group determined that implementation of the provisions in Microsoft agreements was in line with their stringent requirements. (Microsoft was the first cloud service provider to receive a letter of endorsement and approval from the group.) Approval covered the engagements reflected in Model Clauses 2010/87/EU but not in the appendices, which describe the transfers of data and the security measures implemented by the data importer. The appendices may be analyzed separately by the DPA.
 
-Learn about the benefits of European Union Model Clauses on the Microsoft Cloud
-
-[Download the European Union model clauses backgrounder](https://aka.ms/eu-model-backgrounder)
+Learn about the benefits of European Union Model Clauses on the Microsoft Cloud: [Download the European Union model clauses backgrounder](https://aka.ms/eu-model-backgrounder)
 
 ## Audits, reports, and certificates
 

@@ -33,9 +33,7 @@ After rigorous assessments conducted by the MTCS Certification Body, Microsoft c
 
 Certifications were granted at Level 3 for Microsoft Azure services (IaaS and PaaS), Microsoft Dynamics 365 services (SaaS), and Microsoft Office 365 services (SaaS). A Level 3 certification means that in-scope Microsoft cloud services can host high-impact data for regulated organizations with the strictest security requirements. It’s required for certain cloud solution implementations by the Singapore government.
 
-Learn about the benefits of MTCS on the Microsoft Cloud.
-
-[Download the MTCS Standard for Singapore Backgrounder](https://aka.ms/mtcs-backgrounder)
+Learn about the benefits of MTCS on the Microsoft Cloud: [Download the MTCS Standard for Singapore Backgrounder](https://aka.ms/mtcs-backgrounder)
 
 ## Audits, reports, and certificates
 
