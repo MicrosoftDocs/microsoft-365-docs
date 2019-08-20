@@ -28,8 +28,8 @@ Learn about the benefits of ISO/IEC 22301 on the Microsoft Cloud: [Download the 
 
 ## Audits, reports, and certificates
 
-- Azure ISO 22301 — Business Continuity Management Standard Certificate
-- Azure ISO 22301 — Business Continuity Management Standard Audit Assessment Report
+- [Azure ISO 22301 — Certificate of Registration](https://gallery.technet.microsoft.com/Azure-ISO-22301-Certificate-81618b09)
+- [Azure ISO 22301 — Assessment Report](https://servicetrust.microsoft.com/Documents/ComplianceReports?command=Download&downloadType=Document&downloadId=869cf69e-4e09-42cb-a0cb-daaad7016aae&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports)
 - [BSI 22301 Microsoft Office 365 Certificate](https://go.microsoft.com/fwlink/p/?linkid=2092109)
 - [BSI 22301 Microsoft Office 365 Stage 2 Addendum](https://go.microsoft.com/fwlink/p/?linkid=2092209)
 - [Office 365 ISO 22301 Stage 2 Report](https://go.microsoft.com/fwlink/p/?linkid=2092211)
@@ -66,3 +66,4 @@ Yes. If your business requires ISO 22301 certification for implementations deplo
 - [Azure resiliency technical guidance](https://aka.ms/Azure-resiliency-guide) (Explains the Azure shared responsibility model for business continuity.)
 - [Microsoft Common Controls Hub Compliance Framework](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 - [Microsoft Online Services Terms](http://aka.ms/Online-Services-Terms)
+- [Microsoft Enterprise Business Continuity Management Program Description](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=64f922a6-d624-40dd-a8ae-6f996b5186f3&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)

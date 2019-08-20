@@ -50,7 +50,7 @@ Microsoft cloud services are audited at least annually against SOC 1 (SSAE18, IS
 
 ### Dynamics 365
 
-- Dynamics 365 SOC 1 Type 2 Report
+- [Dynamics 365 SOC 1 Type 2 Report](https://aka.ms/Dynamics365SOC1AuditReport)
 - [Dynamics 365 SOC 2 AT 101 Type II Audit Report](https://aka.ms/Dynamics365SOC2AuditReport)
 - [See bridge letters and additional audit reports](https://aka.ms/auditreports)
 
@@ -102,7 +102,7 @@ With the reports, your auditors can compare Microsoft business cloud services re
 
 **How often are Azure SOC reports issued?**
 
-SOC reports for Azure, Cloud App Security, Flow, Graph, Intune, Power BI, PowerApps, Stream, and Microsoft Datacenters are based on a rolling 12-month run window (audit period) with new reports issued quarterly. The increased audit frequency provides a more timely audit period coverage through a SOC report that provides greater assurance by an external auditor when compared to a bridge letter. Customers can download the latest reports from the Service Trust Portal.
+SOC reports for Azure, Cloud App Security, Flow, Graph, Intune, Power BI, PowerApps, Stream, and Microsoft Datacenters are based on a rolling 12-month run window (audit period) with new reports issued quarterly. The increased audit frequency provides a more timely audit period coverage through a SOC report that provides greater assurance by an external auditor when compared to a bridge letter. Customers can download the latest reports from the [Service Trust Portal](https://aka.ms/stp).
 
 **Do I need to conduct my own audit of Microsoft datacenters?**
 
