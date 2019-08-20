@@ -61,7 +61,7 @@ The report is provided to customers under a non-disclosure agreement (NDA), on t
 
 ## Resources
 
-- **ISO-IEC 27001**
+- [ISO-IEC 27001](offering-ISO-27001.md)
 - [Security prescription national 2013 (BVR)](http://wetten.overheid.nl/BWBR0033512/2013-06-01)
 - [Prescription information security national 2007 (VIR)](http://wetten.overheid.nl/BWBR0022141/2007-07-01)
 - [Baseline Information Security (BIR)](http://www.earonline.nl/index.php/Overzicht_Baseline_Informatiebeveiliging_Rijksdienst_\(BIR_2012\))
