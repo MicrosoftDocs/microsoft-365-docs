@@ -47,7 +47,7 @@ Compliance with the substantive requirements of IRS 1075 is covered under the Fe
 
 FedRAMP authorizations are granted at three impact levels based on NIST guidelines—low, medium, and high. These rank the impact that the loss of confidentiality, integrity, or availability could have on an organization—low (limited effect), medium (serious adverse effect), and high (severe or catastrophic effect).
 
-- [Azure and Azure Government](https://aka.ms/AzureCompliance)
+- [Azure and Azure Government](https://azure.microsoft.com/global-infrastructure/government/)
 - Dynamics 365 U.S. Government
 - [Office 365 and Office 365 U.S. Government](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 - Office 365 U.S. Government Defense

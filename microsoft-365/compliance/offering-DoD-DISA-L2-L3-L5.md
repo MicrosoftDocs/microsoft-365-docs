@@ -12,7 +12,7 @@ audience: itpro
 ms.collection: M365-security-compliance
 ---
 
-# Compliance Offering: US Department of Defense (DoD) Provisional Authorization
+# Compliance Offering: US Department of Defense (DoD) Provisional Authorization at Impact Levels 2, 4, and 5
 
 ## DoD and DISA overview
 
@@ -57,12 +57,12 @@ Once granted a DoD PA, Microsoft cloud services are monitored and assessed annua
 ### Covered services for DoD Impact Level 5
 
 - [Azure Government for DoD](https://aka.ms/AzureCompliance)
-- Office 365 U.S. Government Defense
+- [Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 
 ### Covered services for DoD Impact Level 4
 
 - [Azure Government](https://aka.ms/AzureCompliance)
-- Office 365 U.S. Government Defense
+- [Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 
 ### Covered services for DoD Impact Level 2
 
@@ -91,7 +91,7 @@ Additionally, Microsoft offerings outside the FedRAMP-certified boundary that co
 
 ## Resources
 
-- [DoD Cloud Computing Security Requirements Guide (SRG)](http://iase.disa.mil/cloud_security/cloudsrg/Pages/home.aspx)
+- [DoD Cloud Computing Security Requirements Guide (SRG)](https://public.cyber.mil/)
 - [DISA Cloud Service Support](https://storefront.disa.mil/kinetic/disa/service-catalog#/forms/cloud-service-support)
 - [Protecting Controlled Unclassified Information in nonfederal information systems and organizations](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-171.pdf)
 - [NIST Cybersecurity Framework](https://www.nist.gov/cyberframework)

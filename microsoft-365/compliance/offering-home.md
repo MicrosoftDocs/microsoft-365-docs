@@ -33,7 +33,7 @@ Learn how Microsoft products and services help your organization meet regulatory
                         <p><a href="offering-csa-star-attestation.md">CSA-STAR Attestation</a></p>
                         <p><a href="offering-csa-star-certification.md">CSA-STAR Certification</a></p>
                         <p><a href="offering-csa-star-self-assessment.md">CSA-STAR Self Assessment</a></p>
-                        <p><a href="offering-ISO-20000-1-2011.md">ISO 200000-1:2011</a></p>
+                        <p><a href="offering-ISO-20000-1-2011.md">ISO 20000-1:2011</a></p>
                         <P><a href="offering-ISO-22301.md">ISO 22301</a></p>
                         <p><a href="offering-ISO-27001.md">ISO 27001</a></p>
                         <p><a href="offering-ISO-27017.md">ISO 27017</a></p>

@@ -62,7 +62,7 @@ Microsoft is required to recertify its cloud services each year to maintain its 
 
 ## Microsoft in-scope cloud services
 
-- [Azure and Azure Government](https://aka.ms/AzureCompliance)
+- [Azure and Azure Government](https://docs.microsoft.com/azure/security/compliance/azure-services-in-fedramp-auditscope)
 - [Dynamics 365 U.S. Government](https://aka.ms/d365-compliance-list)
 - Intune
 - [Office 365 and Office 365 U.S. Government](https://aka.ms/o365-compliance-framework)

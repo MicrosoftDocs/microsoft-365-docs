@@ -24,9 +24,7 @@ The final DFARS clause 252.204–7012 (Safeguarding Covered Defense Information 
 
 Microsoft Government Cloud services help the United States defense industrial base and defense contractor customers meet the DFARS requirements as enumerated in the DFARS clauses of 252.204-7012 that apply to cloud service providers. When defense contractors are required to comply with DFARS clause 252.204–7012 in contracts, Microsoft can support the requirements applicable to cloud service providers for Azure Government and Office 365 U.S. Government Defense services. Both services demonstrate support for the capabilities necessary for customers to comply with the DFARS 7012 clauses through their L5 accreditation to the Department of Defense Security Requirements Guide.  
   
-Learn how to accelerate your DFARS deployment with our Azure Security and Compliance Blueprint.
-
-- [Download the Azure — Blueprint DFARS Customer Responsibilities Matrix](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=7ed1b47c-b180-4323-9aec-21712d54b167&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_DoD_Blueprint)
+Learn how to accelerate your DFARS deployment with our Azure Security and Compliance Blueprint: [Download the Azure — Blueprint DFARS Customer Responsibilities Matrix](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=7ed1b47c-b180-4323-9aec-21712d54b167&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_DoD_Blueprint)
 
 ## Audits, reports, and certificates
 

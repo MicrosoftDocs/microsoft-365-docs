@@ -30,13 +30,9 @@ Microsoft signs the CJIS Security Addendum in states with CJIS Information Agree
   
 Microsoft has assessed the operational policies and procedures of Microsoft Azure Government, Microsoft Office 365 U.S. Government, and Microsoft Dynamics 365 U.S. Government, and will attest to their ability in the applicable services agreements to meet FBI requirements for the use of in-scope services.  
   
-Learn about the benefits of CJIS Security policy on the Microsoft Cloud.
+Learn about the benefits of CJIS Security policy on the Microsoft Cloud: [Read how Genetec cleared criminal investigations](https://customers.microsoft.com/story/genetec)
 
-- [Read how Genetec cleared criminal investigations](https://customers.microsoft.com/story/genetec)
-
-Learn how to accelerate your CJIS Security policy with our Azure Security and Compliance Blueprint.
-
-- [Download the CJIS implementation guidelines for Microsoft Government Cloud Services](https://gallery.technet.microsoft.com/CJIS-Implementation-62af7c27)
+Learn how to accelerate your CJIS Security policy with our Azure Security and Compliance Blueprint: [Download the CJIS implementation guidelines for Microsoft Government Cloud Services](https://gallery.technet.microsoft.com/CJIS-Implementation-62af7c27)
 
 ## Audits, reports, and certificates
 
@@ -49,7 +45,7 @@ The FBI does not offer certification of Microsoft compliance with CJIS requireme
 Services subject to CJIS Security Policy commitments include:
 
 - [Azure Government](https://aka.ms/AzureCompliance)
-- [Dynamics 365 U.S. Government](NULL)
+- [Dynamics 365 U.S. Government](https://aka.ms/d365-compliance-list)
 - [Office 365 U.S. Government](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 - Power BI cloud service either as a standalone service or as included in an Office 365 branded plan or suite
 
