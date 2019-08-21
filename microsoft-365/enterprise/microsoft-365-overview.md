@@ -50,7 +50,7 @@ These offerings contain additional features that are included with Microsoft 365
 
 For more information, see [Features and capabilities for each plan](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans).
 
-## At-a-glance
+## Get the big picture
 
 The [Microsoft 365 Enterprise poster](http://aka.ms/m365eposter) is a central location for you to view:
 
@@ -75,7 +75,7 @@ This two-page poster is a quick way to inventory your existing infrastructure an
 
 You can print this poster in letter, legal, or tabloid (11 x 17) formats.
 
-## Avoiding end of service for Office 2010 clients and servers and Windows 7
+## Avoid end of service for Office 2010 clients and servers and Windows 7
 
 The following products reach end of support on **January 14, 2010**:
 
@@ -95,7 +95,7 @@ This one-page poster is a quick way to understand the various paths you can take
 
 You can print this poster in letter, legal, or tabloid (11 x 17) formats.
 
-## Deploying
+## Deploy
 
 There are three ways to deploy the products, features, and components of Microsoft 365 Enterprise:
 
