@@ -22,7 +22,7 @@ The FCA had received feedback that financial institutions and cloud service prov
 
 ## Microsoft and FCA (UK)
 
-Microsoft has published a comprehensive guide, [Enabling compliance: The Microsoft approach to FCA finalized cloud guidance](https://enterprise.blob.core.windows.net/whitepapers/Enabling_Compliance_Microsoft_Approach_to_the_FCA.pdf), detailing how Azure can help financial services customers that are authorized and regulated by the UK Financial Conduct Authority (FCA) and the Prudential Regulation Authority (PRA) when moving IT operations to the cloud.
+Microsoft has published a comprehensive guide, [Enabling compliance: The Microsoft approach to FCA finalized cloud guidance](https://aka.ms/Enable-FCA), detailing how Azure can help financial services customers that are authorized and regulated by the UK Financial Conduct Authority (FCA) and the Prudential Regulation Authority (PRA) when moving IT operations to the cloud.
 
 The Microsoft guide describes in great detail our compliance with numerous recognized international standards, our transparency around how your customer data is handled to give you control over it, and the contractual provisions that address-specific financial regulatory requirements.
 
