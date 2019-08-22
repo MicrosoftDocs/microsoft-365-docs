@@ -1,3 +1,22 @@
+---
+title: "Create a new case in Advanced eDiscovery"
+ms.author: markjjo
+author: markjjo
+manager: laurawi
+ms.date: 
+audience: Admin
+ms.topic: article
+ms.service: O365-seccomp
+localization_priority: Normal
+ms.collection: M365-security-compliance 
+search.appverid: 
+- MOE150
+- MET150
+ms.assetid: 
+
+description: ""
+---
+
 ## Create tag groups
 
 Before you or other people can tag documents in a review set, the tags must be created. You can do this by creating tag groups that contain child tags. Tags are displayed in the tagging panel when reviewing documents in a review set.
