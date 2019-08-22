@@ -39,5 +39,6 @@ End users with Microsoft Managed Desktop devices also have access to toll-free p
 >Please have your organizational email address ready when you call to verify your identity. 
 
 ## Additional resources
+-  If you are already a subscriber to Microsoft Managed Desktop, see the Microsoft Managed Desktop User Support Guide for more detailed information on the support experience for end users. This can be found in the ‘Online resources’ section of the [Microsoft Managed Desktop Admin Portal](aka.ms/mwaasportal).
 - [Admin support for Microsoft Managed Desktop](admin-support.md). 
 - [Support for Microsoft Managed Desktop](../service-description/support.md).
