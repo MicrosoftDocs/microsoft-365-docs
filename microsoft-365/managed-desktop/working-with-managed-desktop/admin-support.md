@@ -49,5 +49,6 @@ Additional details:
  
 
 ## Additional resources
+- If you already subscribe to Microsoft Managed Desktop, you can find detailed procedures, process flows, work instructions, and FAQs in the Microsoft Managed Desktop Admin Guide in the **Online resources** section of the [Microsoft Managed Desktop Admin Portal](aka.ms/mwaasportal).
 - [End user support for Microsoft Managed Desktop](end-user-support.md). 
 - [Support for Microsoft Managed Desktop](../service-description/support.md). 
