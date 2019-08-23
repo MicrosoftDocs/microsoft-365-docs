@@ -58,14 +58,16 @@ Right-click a value in the result set to quickly enhance your query. You can use
 - Exclude the selected value from the query (`!=`)
 - Get more advanced operators for adding the value to your query, such as `contains`, `starts with` and `ends with` 
 
-![Image of Microsoft Defender ATP Advanced hunting result set](../images/atp-advanced-hunting-results-filter.png)
+![Image of Microsoft Defender ATP Advanced hunting result set](./images/atp-advanced-hunting-results-filter.png)
+
+C:\Users\lomayor\Documents\GitHub\microsoft-365-docs-pr\microsoft-365\images
 
 ## Filter the query results
 The filters displayed to the right provide a summary of the result set. Each column has its own section that lists the distinct values found for that column and the number of instances.
 
 Refine your query by selecting the "+" or "-" buttons on the values that you want to include or exclude and then selecting **Run query**.
 
-![Image of Advanced hunting filter](../images/atp-filter-advanced-hunting.png)
+![Image of Advanced hunting filter](./images/atp-filter-advanced-hunting.png)
 
 The filter selections are added as additional query elements and the results are updated accordingly.
 
