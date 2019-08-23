@@ -5,7 +5,6 @@ keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.date: 11/28/2018
 ms.collection: M365-modern-desktop
 ---
 
@@ -39,5 +38,6 @@ End users with Microsoft Managed Desktop devices also have access to toll-free p
 >Please have your organizational email address ready when you call to verify your identity. 
 
 ## Additional resources
+-  If you already subscribe to Microsoft Managed Desktop, you can find detailed procedures, process flows, work instructions, and FAQs in the Microsoft Managed Desktop Admin Guide in the **Online resources** section of the [Microsoft Managed Desktop Admin Portal](https://aka.ms/mwaasportal).
 - [Admin support for Microsoft Managed Desktop](admin-support.md). 
 - [Support for Microsoft Managed Desktop](../service-description/support.md).
