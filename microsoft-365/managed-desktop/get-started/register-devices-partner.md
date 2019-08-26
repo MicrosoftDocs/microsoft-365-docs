@@ -36,7 +36,7 @@ Your file needs to include the **exact same column headings** as the sample one 
 >This format is only for the Partner process. The process for self-registration is documented in [Register devices in Microsoft Managed Desktop yourself](register-devices-self.md).
 
 >[!IMPORTANT]
->These values must match the manufacturer values from SMBIOS exactly. You must also include *Hardware Hash* in the first row (but no value for it in the second row) the trailing comma after the *Serial Number* value in the second row.
+>These values must match the manufacturer values from SMBIOS exactly, including capitalization and special characters. 
 
 - Device manufacturer (example: SpiralOrbit) 
 - Device model (example: ContosoABC)
