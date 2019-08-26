@@ -10,6 +10,7 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
+hideEdit: true
 ---
 
 # Compliance Offering: Good Clinical, Laboratory, and Manufacturing Practices (GxP)

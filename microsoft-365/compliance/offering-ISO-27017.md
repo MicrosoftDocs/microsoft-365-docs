@@ -10,6 +10,7 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
+hideEdit: true
 ---
 
 # Compliance Offering: ISO/IEC 27017:2015 Code of Practice for Information Security Controls

@@ -10,6 +10,7 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
+hideEdit: true
 ---
 
 # Compliance Offering: US Department of Defense (DoD) Provisional Authorization at Impact Levels 2, 4, and 5

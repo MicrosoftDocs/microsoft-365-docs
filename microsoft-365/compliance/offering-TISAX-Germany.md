@@ -10,6 +10,7 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
+hideEdit: true
 ---
 
 # Compliance Offering: Trusted Information Security Assessment Exchange (TISAX) Germany

@@ -10,6 +10,7 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
+hideEdit: true
 ---
 
 # Compliance Offering: Minimum Acceptable Risk Standards for Exchanges (MARS-E) 2.0 Framework
