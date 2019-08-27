@@ -25,7 +25,7 @@ With more personal devices being used for work, there’s increased risk for app
 
 Windows Information Protection (WIP) helps protect against these types of data leakage on Windows 10 devices. For more information, see [Protect your enterprise data using WIP](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip).
 
-In Microsoft 365 Enterprise, WIP is a combination of Windows 10 Enterprise and Microsoft Intune, which is included with Enterprise Mobility + Security (EMS) in your subscription. 
+In Microsoft 365 Enterprise, WIP is a combination of Windows 10 Enterprise and Microsoft Intune, which is included with your subscription. 
 
 To deploy WIP in your organization with Microsoft 365 Enterprise:
 
@@ -41,7 +41,6 @@ See [WIP best practices]( https://docs.microsoft.com/windows/security/informatio
 As an interim checkpoint, see the [exit criteria](infoprotect-exit-criteria.md#crit-infoprotect-step4) corresponding to this step.
 
 ## Next step
-
 
 |||
 |:-------|:-----|
