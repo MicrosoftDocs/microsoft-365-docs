@@ -30,7 +30,7 @@ If you already have an Office 365 for business subscription, for example, Office
   
 ## Add Microsoft 365 Business licenses
 
-You have two ways to get Microsoft 365 Business. If you have a partner, they can purchase Microsoft 365 Business for you from [Microsoft Partner Center](get-microsoft-365-business.md). Your partner can also help you transition to Microsoft 365 Business.
+You have two ways to get Microsoft 365 Business. A partner can purchase Microsoft 365 Business for you from [Microsoft Partner Center](get-microsoft-365-business.md). Your partner can also help you transition to Microsoft 365 Business.
   
 If you manage your own subscription, you can [contact sales](https://www.microsoft.com/microsoft-365/business) to purchase Microsoft 365 Business licenses. 
   
