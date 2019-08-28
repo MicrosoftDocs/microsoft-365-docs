@@ -37,6 +37,8 @@ Learn about the robust security solutions and services in Microsoft  365 Securit
 				<div class="cardPadding">
 					<div class="card">
 						<div class="cardImageOuter">
+                        <div class="cardImage">
+						<img src=images/blue-shield.png>
 					</div>
 						<div class="cardText">
 							<h3>Security Management</h3>
@@ -67,6 +69,8 @@ Learn about the robust security solutions and services in Microsoft  365 Securit
 				<div class="cardPadding">
 					<div class="card">
 						<div class="cardImageOuter">
+                        <div class="cardImage">
+						<img src=images/blue-shield.png>
 					</div>
 						<div class="cardText">
 							<h3>Microsoft Defender ATP</h3>
@@ -82,6 +86,8 @@ Learn about the robust security solutions and services in Microsoft  365 Securit
 				<div class="cardPadding">
 					<div class="card">
 						<div class="cardImageOuter">
+                        <div class="cardImage">
+						<img src=images/blue-shield.png>
 					</div>
 						<div class="cardText">
 							<h3>Office 365 ATP</h3>
@@ -97,6 +103,8 @@ Learn about the robust security solutions and services in Microsoft  365 Securit
 				<div class="cardPadding">
 					<div class="card">
 						<div class="cardImageOuter">
+                        <div class="cardImage">
+						<img src=images/blue-shield.png>
 					</div>
 						<div class="cardText">
 							<h3>Azure ATP</h3>
@@ -112,6 +120,8 @@ Learn about the robust security solutions and services in Microsoft  365 Securit
 				<div class="cardPadding">
 					<div class="card">
 						<div class="cardImageOuter">
+                        <div class="cardImage">
+						<img src=images/blue-shield.png>
 					</div>
 						<div class="cardText">
 							<h3>Azure Security Center</h3>
@@ -127,6 +137,8 @@ Learn about the robust security solutions and services in Microsoft  365 Securit
 				<div class="cardPadding">
 					<div class="card">
 						<div class="cardImageOuter">
+                        <div class="cardImage">
+						<img src=images/blue-shield.png>
 					</div>
 						<div class="cardText">
 							<h3>Other security solutions</h3>
