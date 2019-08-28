@@ -65,28 +65,4 @@ This graphic represents issues that may impact more than one area. The accompany
 
 ![venn-diagram](media\ebcm\venn-diagram.png)
 
-Your continuity plans should consider each of these areas. For example: If you require users to be on the corporate network and there is a snowstorm, how do those users gain access to key resources? If the snow prevents travel into the office and service engineers are required to connect to the corporate network, is there a policy mandating they have their corporate laptops in their possession at home?  
-
-
-## heading 2
-
-[Microsoft 365 deployment advisor](https://aka.ms/microsoft365setupguide)
-
-[here](https://fasttrack.microsoft.com/microsoft365).
-
-## Microsoft 365 Enterprise deployment guide
-
-[foundation infrastructure](deploy-foundation-infrastructure.md)
-
-  **If you are a smaller or newer organization**
-text
-
- [one after the other or in parallel](deployment-strategies-microsoft-365-enterprise.md)
-
-![](./media/deploy-microsoft-365-enterprise/m365-deploy-content-arch.png)
-
-“*For the things we have to learn before we can do them, we learn by doing them.*” - Aristotle
-
-![Test Lab Guides for the Microsoft cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
-> [!Note]
-> This web page is only available in English.
+Your continuity plans should consider each of these areas. For example: If you require users to be on the corporate network and there is a snowstorm, how do those users gain access to key resources? If the snow prevents travel into the office and service engineers are required to connect to the corporate network, is there a policy mandating they have their corporate laptops in their possession at home?
