@@ -20,6 +20,8 @@ Learn about the robust security solutions and services in Microsoft  365 Securit
 				<div class="cardPadding">
 					<div class="card">
 						<div class="cardImageOuter">
+                            <div class="cardImage">
+                                <img src=images/blue-shield.png>
 									</div>
 										<div class="cardText">
 											<h3>Microsoft Threat Protection</h3>
