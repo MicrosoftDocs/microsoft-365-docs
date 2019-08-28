@@ -15,23 +15,24 @@ ms.prod: microsoft-365-enterprise
 Learn about the robust security solutions and services in Microsoft  365 Security so that you can better protect your enterprise across attack surfaces. 
 
 <ul class="cardsF panelContent">
-    <li>
-			<div class="cardSize">
-				<div class="cardPadding">
-					<div class="card">
-						<div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img src=images/blue-shield.png>
-									</div>
-										<div class="cardText">
-											<h3>Microsoft Threat Protection</h3>
-											<P><a href="microsoft-threat-protection.md" target="_blank">What is Microsoft Threat Protection?</a></p>
-											<P><a href="overview-security-center.md" target="_blank">Microsoft 365 security center</a></p>
-										</div>
-									</div>
+  <li>
+	<div class="cardSize">
+		<div class="cardPadding">
+			<div class="card">
+				<div class="cardImageOuter">
+				   <div class="cardImage">
+						<img src=images/blue-shield.png>
+					</div>
+					<div class="cardText">
+						<h3>Microsoft Threat Protection</h3>
+						<P><a href="microsoft-threat-protection.md" target="_blank">What is Microsoft Threat Protection?</a></p>
+						<P><a href="overview-security-center.md" target="_blank">Microsoft 365 security center</a></p>
+					</div>
 				</div>
 			</div>
-		<li>
+		</div>
+	</div>
+    <li>
 			<div class="cardSize">
 				<div class="cardPadding">
 					<div class="card">
