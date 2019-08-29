@@ -1,5 +1,5 @@
 ---
-title: Overview of automatic investigation and remediation in Microsoft 365 
+title: Overview of automatic investigation and remediation in Microsoft Threat Protection 
 description: Get an overview of automated investigation and remediation capabilities in Microsoft Threat Protection
 keywords: automated, investigation, alert, trigger, action, remediation
 search.product: eADQiWindows 10XVcnh
@@ -18,7 +18,7 @@ ms.collection:
 ms.topic: conceptual
 ---
 
-# Overview of automatic investigation and remediation in Microsoft 365
+# Overview of automatic investigation and remediation in Microsoft Threat Protection
 
 **Applies to**:
 - Microsoft 365

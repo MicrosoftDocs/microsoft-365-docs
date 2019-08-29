@@ -1,5 +1,5 @@
 ---
-title: Visit the Action center in Microsoft 365 
+title: Visit the Action center in Microsoft Threat Protection 
 description: Use the Action Center to view details about automated investigation and approve pending actions
 keywords: Action Center, threat protection, investigation, alert, pending, automated, detection
 search.product: eADQiWindows 10XVcnh
@@ -18,7 +18,7 @@ ms.collection:
 ms.topic: conceptual
 ---
 
-# The Action center in Microsoft 365
+# The Action center in Microsoft Threat Protection
 
 **Applies to**:
 - Microsoft 365

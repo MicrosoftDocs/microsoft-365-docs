@@ -1,7 +1,7 @@
 ---
-title: View the results of an automated investigation in Microsoft 365 
+title: View the results of an automated investigation in Microsoft Threat Protection 
 description: During and after an automated investigation, you can view the results and key findings
-keywords: automated, investigation, results, analyze, details, remediation
+keywords: automated, investigation, results, analyze, details, remediation, autoair
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -18,7 +18,7 @@ ms.collection:
 ms.topic: conceptual
 ---
 
-# View the results of an automated investigation in Microsoft 365
+# View the results of an automated investigation in Microsoft Threat Protection
 
 **Applies to**:
 - Microsoft 365
@@ -51,3 +51,7 @@ When an automated investigation completes, a verdict is reached for every piece 
 |Malicious	|Email content (URLs or attachments) | Recommended remediation actions are pending approval|
 |Suspicious	|Device, identity, or email content |Recommended remediation actions are pending approval|
 |Clean	|Device, identity, or email content	|No remediation actions are needed|
+
+## Next steps
+
+[Approve or reject actions related to automated investigation and remediation](mtp-autoir-actions.md)

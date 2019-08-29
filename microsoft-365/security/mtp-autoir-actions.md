@@ -1,5 +1,5 @@
 ---
-title: Approve or reject actions related to automated investigation and remediation in Microsoft 365 
+title: Approve or reject actions related to automated investigation and remediation in Microsoft Threat Protection 
 description: Use the Action Center to manage actions related to automated investigation and response
 keywords: action, center, autoair, automated, investigation, response, remediation
 search.product: eADQiWindows 10XVcnh
@@ -18,7 +18,7 @@ ms.collection:
 ms.topic: conceptual
 ---
 
-# Approve or reject actions related to automated investigation and remediation in Microsoft 365
+# Approve or reject actions related to automated investigation and remediation in Microsoft Threat Protection
 
 **Applies to**:
 - Microsoft 365
