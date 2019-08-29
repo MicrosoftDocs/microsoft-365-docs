@@ -50,6 +50,8 @@ The Microsoft Security Development Lifecycle (SDL) further promotes resiliency a
 
 M365 services are highly interconnected, but the systems and technology behind them are engineered in a way that limits the impact of one service incident from spilling over to other services. For example, an issue affecting Exchange Online will not impact core functionality in Teams, or an issue with search functionality in SharePoint Online won’t affect users’ ability to upload or download files.
 
+<!-- the following section is being re-evaluated by the authors for purpose  DO NOT PUBLISH AS IS -->
+
 ## Defense in Depth
 
 Microsoft is committed to a defense in depth approach, which means layering safeguards to protect service continuity. Microsoft’s redundant cloud architecture and rigorous internal processes aim to keep our services accessible. When we experience an incident, we take them seriously and use postmortems to learn from every situation. By applying the knowledge we gain from a single incident across our suite of offerings, we can prevent the same root cause from impacting other services and additional customers. Additionally, granularity in service architecture prevents incidents from impacting our customers on a global scale.
