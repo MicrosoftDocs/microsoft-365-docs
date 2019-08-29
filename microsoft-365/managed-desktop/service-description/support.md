@@ -5,7 +5,6 @@ keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.date: 11/7/2018
 ms.collection: M365-modern-desktop
 ---
 
@@ -29,7 +28,7 @@ Microsoft Managed Desktop support includes:
 Supported products:
 
 - Windows 10 with Microsoft Defender Advanced Threat Protection 
-- Subset of the Office 365 suite: Outlook, Word, PowerPoint, Excel, Skype for Business client, Microsoft Teams 
+- These Office 365 ProPlus apps: Outlook, Word, PowerPoint, Excel, Skype for Business client, Microsoft Teams 
 - Microsoft Store for Business 
 - OneDrive for Business client 
 
@@ -37,8 +36,8 @@ Support details:
 
 - Current: North America, Canada (excluding Quebec), United Kingdom, Australia, and New Zealand only (24x7x365) 
 - English is the only supported language for phone and chat conversations with customers 
-- We are partnering with, not replacing, your corporate helpdesk; Line-of-Business (LOB) apps, network resources, etc. are still handled by your helpdesk 
-- Microsoft Managed Devices residing in the test group and non-Microsoft Managed Desktop devices are out of scope 
+- We are partnering with, not replacing, your corporate helpdesk; line-of-Business (LOB) apps, network resources, etc. are still handled by your helpdesk 
+- Microsoft Managed Desktop devices in the "Test" group and devices not part of Microsoft Managed Desktop are out of scope 
 
 
 ## Related topics
