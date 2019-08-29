@@ -43,4 +43,4 @@ To review (and if necessary, add) alert policies, follow these steps:
 
 ## Next steps
 
-- [Manage actions related to automated investigation and remediation in Microsoft 365](autoir-actions.md)
+- [Manage actions related to automated investigation and remediation in Microsoft 365](mtp-autoir-actions.md)

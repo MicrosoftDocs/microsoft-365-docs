@@ -63,6 +63,6 @@ Investigation details include alerts, machines, key findings, and other relevant
 
 - [Automatically investigate and remediate issues in Microsoft Threat Protection](mtp-autoir.md)
 
-- [Manage actions related to automated investigation and remediation in Microsoft 365](autoir-actions.md)
+- [Manage actions related to automated investigation and remediation in Microsoft 365](mtp-autoir-actions.md)
 
 - [Learn about hunting for malware and other threats](hunting.md)
