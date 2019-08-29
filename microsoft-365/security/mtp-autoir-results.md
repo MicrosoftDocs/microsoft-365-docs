@@ -24,10 +24,15 @@ ms.topic: conceptual
 - Microsoft 365
 
 During and after an automated investigation, you can view detailed information about the investigation in an investigation details view. You can open this view in one of two ways:
-- In the Action center, select an item on either the Pending or History tab.
-- On an incident details page, select Investigations.
+- In the Action center, select an item on either the **Pending** or **History** tab.
+- On an incident details page, select **Investigations**, and then select an item in the list.
 
+Either step takes you to the investigation details view, which resembles the following image:
 
+![Investigation details](images/mtp-air-investdetails.png)
+
+> [!NOTE]
+> If the item you select in either the Action center or incident details page is a mailbox investigation, you'll be taken to the investigation details in the Office 365 Security & Compliance Center. 
 
 In the Investigation details view, you can see information on the **Investigation graph**, **Alerts**, **Machines**, **Identities**, **Key findings**, **Entities**, **Log**, and **Pending actions** tabs, described in the following table.
 
