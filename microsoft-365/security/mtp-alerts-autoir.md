@@ -1,6 +1,6 @@
 ---
-title: Set up alerts that trigger automated investigation and remediation in Microsoft Threat Protection 
-description: Learn how to configure alerts that trigger automated investigation and remediation capabilities in Microsoft Threat Protection
+title: Alerts that trigger automated investigation and remediation in Microsoft Threat Protection 
+description: Learn about alerts that trigger automated investigation and remediation capabilities in Microsoft Threat Protection
 keywords: automated, investigation, alert, trigger, action, remediation
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,10 @@ ms.collection:
 ms.topic: conceptual
 ---
 
-# Set up alerts that trigger automated investigation and remediation in Microsoft Threat Protection
+# Alerts that trigger automated investigation and remediation in Microsoft Threat Protection
 
 **Applies to**:
 - Microsoft 365
-
-## Alerts that trigger automated investigations
 
 Certain [alert policies](https://docs.microsoft.com/office365/securitycompliance/alert-policies) can trigger automated investigations and remediation. 
 
