@@ -23,7 +23,7 @@ ms.topic: conceptual
 **Applies to**:
 - Microsoft 365
 
-## Set up alerts to trigger automated investigations
+## Alerts that trigger automated investigations
 
 Certain [alert policies](https://docs.microsoft.com/office365/securitycompliance/alert-policies) can trigger automated investigations and remediation. 
 

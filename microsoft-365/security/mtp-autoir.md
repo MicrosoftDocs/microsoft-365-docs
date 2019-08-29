@@ -26,7 +26,6 @@ ms.topic: conceptual
 ## Overview of automated investigation and remediation in Microsoft Threat Protection
 
 When security alerts are triggered, it’s up to your security operations team to look into those alerts and take steps to protect your organization. Prioritizing and investigating alerts can be very time consuming. Automating some of these processes can help. Automated investigation and remediation (AIR) capabilities, such as those included in Microsoft Threat Protection, mimic the ideal steps a human would take to investigate and respond to a cyberthreat, except AIR completes these steps more efficiently and effectively. AIR steps include the following:
-
 1.	Determining whether a threat requires action
 2.	Performing necessary remediation actions
 3.	Determining what additional investigations should occur
@@ -38,3 +37,16 @@ In Microsoft Threat Protection, investigations can be done on devices (also refe
 - Get the most out of your threat protection suite.
 
 ## The automated investigation process
+
+An automated investigation begins when an alert is triggered, and an incident is created. Security playbooks go into effect, and the automated investigation process begins. Depending on the type of threat and resulting verdict, remediation actions occur automatically or upon approval by your organization’s security operations team. Not every alert will trigger an automated investigation, and not every investigation results in automated remediation actions; this all depends on how AIR is configured for your organization. 
+
+Once an automated investigation is triggered, the process begins immediately. In line with security operations best practices, an automated investigation typically includes the following steps:
+- Gather information about the type of threat and where it came from
+- Identify who and what devices are affected by the threat
+- Find out whether and where other instances of the threat exist in your work environment, and what other investigations should be done
+- Determine verdicts and remediation actions
+
+While an investigation is running, any other related alerts that are generated are added to the investigation until it completes. If the same threat is seen on other entities (such as identities, files, processes, services, drivers, etc.), those entities are added to the investigation. If an incriminated entity is seen in elsewhere, the automated investigation will expand its scope to include that entity, and a general security playbook will run.
+
+## Next steps
+
