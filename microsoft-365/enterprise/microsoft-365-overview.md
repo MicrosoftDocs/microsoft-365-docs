@@ -67,15 +67,17 @@ To download a copy of the poster, click [here](https://github.com/MicrosoftDocs/
 
 ## Transition your entire organization
 
-To get a better picture of how to move your entire organization to the products and services in Microsoft 365 Enterprise, download the [transition poster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transitionorgtom365.pdf).
+To get a better picture of how to move your entire organization to the products and services in Microsoft 365 Enterprise, download the [transition poster](media/deploy-microsoft-365-enterprise/transitionorgtom365.pdf).
 
-![](./media/deploy-microsoft-365-enterprise/TransitionOrgToM365.png)
+[![Image for the Transition to Microsoft 365 poster](./media/deploy-microsoft-365-enterprise/TransitionOrgToM365.png)](media/deploy-microsoft-365-enterprise/transitionorgtom365.pdf)
 
 This two-page poster is a quick way to inventory your existing infrastructure and get to the guidance for moving to the corresponding product or service in Microsoft 365 Enterprise. It includes Windows and Office products and other infrastructure and security elements such as device management, identity, and information and threat protection.
 
 You can print this poster in letter, legal, or tabloid (11 x 17) formats.
 
-## Avoid end of service for Office 2010 clients and servers and Windows 7
+To download a copy of this poster, click [here](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transitionorgtom365.pdf).
+
+## Avoid end of support for Office 2010 clients and servers and Windows 7
 
 The following products reach end of support on **January 14, 2010**:
 
@@ -87,13 +89,15 @@ The following products reach end of support on  **October 13, 2020**:
 - [Office 2010](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap)
 - [SharePoint Server 2010](https://docs.microsoft.com/office365/enterprise/upgrade-from-sharepoint-2010)
 
-For a visual summary of the upgrade, migrate, and move-to-the-cloud options for these products, download the [end of service poster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfService.pdf).
+For a visual summary of the upgrade, migrate, and move-to-the-cloud options for these products, download the [end of service poster](media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfService.pdf).
 
-![](./media/migration-microsoft-365-enterprise-workload/office2010-windows7-end-of-service.png)
+[![Image for the end of support for Office 2010 clients and servers and Windows 7 poster](./media/migration-microsoft-365-enterprise-workload/office2010-windows7-end-of-service.png)](media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfService.pdf)
 
 This one-page poster is a quick way to understand the various paths you can take to prevent Office 2010 client and server products and Windows 7 from reaching end of service, with preferred paths and option support in Microsoft 365 Enterprise highlighted.
 
 You can print this poster in letter, legal, or tabloid (11 x 17) formats.
+
+To download a copy of this poster, click [here](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfService.pdf).
 
 ## Deploy
 
