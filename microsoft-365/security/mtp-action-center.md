@@ -23,19 +23,25 @@ ms.topic: conceptual
 **Applies to**:
 - Microsoft 365
 
-In Microsoft Threat Protection, the Action center provides a view of current and past investigations across Microsoft Defender Advanced Threat Protection (ATP), Office 365 ATP, and Azure Active Directory Identity Protection. This not only enables your security operations team to operate more effectively and efficiently, it also provides a more comprehensive view of Microsoft Threat Protection at work for your organization. 
+In Microsoft Threat Protection, the Action center provides a view of current and past investigations across [Azure Advanced Threat Protection](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp), [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations), and [Office 365 Advanced Threat Protection](https://docs.microsoft.com/office365/securitycompliance/office-365-atp). This not only enables your security operations team to operate more effectively and efficiently, it also provides a more comprehensive view of Microsoft Threat Protection at work for your organization. 
 
 You can get to the Action center by using one of several methods:
-- While viewing information about an incident, choose the Investigations tab.
-- In the Microsoft 365 security center, in the navigation pane on the left side, choose Action center. 
+- While viewing information about an incident, choose the **Investigations** tab.
+- In the Microsoft 365 security center, in the navigation pane on the left side, choose **Action center**. 
 
-In the Action center, you’ll see two tabs: Pending and History.
-- The Pending tab lists investigations that require review and approval by someone in your security operations team to proceed. Make sure to review and take action on pending items you see here.
-- The History tab lists past investigations as well as remediation actions that were taken automatically. You can view data for the past day, week, month, or six months.
+In the Action center, you’ll see two tabs: **Pending** and **History**.
+- The **Pending** tab lists investigations that require review and approval by someone in your security operations team to proceed. Make sure to review and take action on pending items you see here.
+- The **History** tab lists past investigations as well as remediation actions that were taken automatically. You can view data for the past day, week, month, or six months.
 
-To show only the columns you want to see, select Customize columns.
+To show only the columns you want to see, select **Customize columns**.
 
 ![Action Center in Microsoft Threat Protection](../images/mtp-action-center.png)
 
-Select an item in the list to view more details about an investigation. (See the Details and results of an investigation section.)
+Select an item in the list to view more details about an investigation. 
+
+## Next steps 
+
+
+
+See the Details and results of an investigation section.)
 
