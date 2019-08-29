@@ -1,5 +1,5 @@
 ---
-title: Automatically investigate and remediate issues using Microsoft Threat Protection 
+title: Overview of automatic investigation and remediation in Microsoft 365 
 description: Get an overview of automated investigation and remediation capabilities in Microsoft Threat Protection
 keywords: automated, investigation, alert, trigger, action, remediation
 search.product: eADQiWindows 10XVcnh
@@ -18,12 +18,10 @@ ms.collection:
 ms.topic: conceptual
 ---
 
-# Automatically investigate and remediate issues in Microsoft Threat Protection
+# Overview of automatic investigation and remediation in Microsoft 365
 
 **Applies to**:
 - Microsoft 365
-
-## Overview of automated investigation and remediation in Microsoft Threat Protection
 
 When security alerts are triggered, it’s up to your security operations team to look into those alerts and take steps to protect your organization. Prioritizing and investigating alerts can be very time consuming. Automating some of these processes can help. Automated investigation and remediation (AIR) capabilities, such as those included in Microsoft Threat Protection, mimic the ideal steps a human would take to investigate and respond to a cyberthreat, except AIR completes these steps more efficiently and effectively. AIR steps include the following:
 1.	Determining whether a threat requires action

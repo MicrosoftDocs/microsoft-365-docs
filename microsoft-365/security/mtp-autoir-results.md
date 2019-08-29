@@ -43,9 +43,9 @@ In the Investigation details view, you can see information on the **Investigatio
 
 ## Remediation actions following automated investigation
 
-When an automated investigation completes, a verdict is reached for every piece of evidence involved, and remediation actions are identified. In some cases, remediation actions are taken automatically; in other cases, remediation actions are pending approval. The following table lists possible verdicts and results:
+When an automated investigation completes, a verdict is reached for every piece of evidence involved, and remediation actions are identified. In some cases, remediation actions are taken automatically; in other cases, remediation actions are pending approval. The following table lists possible verdicts and outcomes:
 
-|This verdict	|In this area	|Results in these actions|
+|Verdict	|Area	|Outcomes|
 |------|------|------|
 |Malicious	|Device (endpoints)<br/>Identity (user accounts)	|Remedation actions are taken automatically|
 |Malicious	|Email content (URLs or attachments) | Recommended remediation actions are pending approval|
