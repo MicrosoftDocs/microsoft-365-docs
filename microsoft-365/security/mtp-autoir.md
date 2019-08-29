@@ -38,6 +38,8 @@ In Microsoft Threat Protection, investigations can be done on devices (also refe
 
 ## The automated investigation process
 
+In a nutshell, a triggered **alert** creates an **incident** that can start an **automated investigation** that can result in **remediation actions**.
+
 An automated investigation begins when an alert is triggered, and an incident is created. Security playbooks go into effect, and the automated investigation process begins. Depending on the type of threat and resulting verdict, remediation actions occur automatically or upon approval by your organization’s security operations team. Not every alert will trigger an automated investigation, and not every investigation results in automated remediation actions; this all depends on how AIR is configured for your organization. 
 
 Once an automated investigation is triggered, the process begins immediately. In line with security operations best practices, an automated investigation typically includes the following steps:
@@ -50,3 +52,6 @@ While an investigation is running, any other related alerts that are generated a
 
 ## Next steps
 
+[Approve or reject actions related to automated investigation and remediation in Microsoft 365](mtp-autoir-actions.md)
+
+[Learn more about the Action center in Microsoft Threat Protection](mtp-action-center.md)
