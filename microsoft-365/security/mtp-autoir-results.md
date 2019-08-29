@@ -27,7 +27,7 @@ During and after an automated investigation, you can view detailed information a
 - In the Action center, select an item on either the Pending or History tab.
 - On an incident details page, select Investigations.
 
-SCREENSHOT
+
 
 In the Investigation details view, you can see information on the **Investigation graph**, **Alerts**, **Machines**, **Identities**, **Key findings**, **Entities**, **Log**, and **Pending actions** tabs, described in the following table.
 
