@@ -15,7 +15,7 @@ ms.custom:
 
 description: Understand how planning and implementing business continuity looks different when cloud services are part of your IT offering. 
 ---
-
+<!-- already covered in ebcm customer and cloud partner ebcm responsibilities -->
 # Enterprise Business Continuity Management (EBCM) with cloud services
 
 You probably already have business continuity plans in place for the IT services and infrastructure you support internally. You've taken facilities and environmental needs, physical security, network connectivity, storage and compute hardware and data availability all into account. Now, as your digital transformation proceeds to include Microsoft 365 cloud services, some of your critical business processes include cloud components and depend on those cloud services being available.

@@ -18,7 +18,7 @@ description:  Understand what Microsoft does during a service incident so you ca
 
 Getting Microsoft 365 cloud services to your users is a partnership between your organization and Microsoft. Microsoft provides the services and you are responsible for connecting your client endpoints, managing identity and access and how those services are used. There are shared responsibilities, such as the identity and directory infrastructure as well. This article covers some of the critical items you need to be mindful to keep your business functioning in the event of a service incident and it helps set expectations as to what Microsoft will do during a service incident.
 
-# Transparency during service incidents
+## Transparency during service incidents
 
 As a trusted partner, Microsoft  builds highly resilient cloud services and follows structured procedures to resolve service incidents when they happen. When a service incident occurs, Microsoft recognizes that **timely**, **targeted**, and **highly available** communications are critical for customers.
 
