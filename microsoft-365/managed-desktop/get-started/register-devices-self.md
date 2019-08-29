@@ -110,7 +110,6 @@ A REST API is available to allow you greater flexibility and repeatability with 
 | Error message | Details |
 |---------------|-------------|
 | Device not found | We couldn’t register this device because we could not find a match for the provided manufacturer, model, or serial number. Confirm these values with your device supplier. |
-| Device not found | We couldn’t de-register this device because it does not exist in your organization. No further action required. |
 | Hardware hash not valid | The hardware hash you provided for this device was not formatted correctly. Double-check the hardware hash and then resubmit. |
 | Device already registered | This device is already registered to your organization. No further action required. |
 | Device claimed by another organization | This device has already been claimed by another organization. Check with your device supplier. |
