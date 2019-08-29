@@ -1,5 +1,5 @@
 ---
-title: Overview of automatic investigation and remediation in Microsoft Threat Protection 
+title: Automated investigation and remediation in Microsoft Threat Protection 
 description: Get an overview of automated investigation and remediation capabilities in Microsoft Threat Protection
 keywords: automated, investigation, alert, trigger, action, remediation
 search.product: eADQiWindows 10XVcnh
@@ -18,14 +18,14 @@ ms.collection:
 ms.topic: conceptual
 ---
 
-# Overview of automatic investigation and remediation in Microsoft Threat Protection
+# Automated investigation and remediation in Microsoft Threat Protection
 
 **Applies to**:
 - Microsoft 365
 
-When security alerts are triggered, it’s up to your security operations team to look into those alerts and take steps to protect your organization. Prioritizing and investigating alerts can be very time consuming, especially when new alerts come in while investigation is going on. Automating some of these processes can help. 
+When security alerts are triggered, it’s up to your security operations team to look into those alerts and take steps to protect your organization. Prioritizing and investigating alerts can be very time consuming, especially when new alerts come in while investigation is going on. Automating some of this can help. 
 
-Automated investigation and remediation (AIR) capabilities, such as those included in Microsoft Threat Protection, mimic the ideal steps a human would take to investigate and respond to a cyberthreat, except AIR completes these steps more efficiently and effectively. AIR steps include the following:
+Automated investigation and remediation (AIR) capabilities, such as those included in Microsoft Threat Protection mimic the ideal steps a human would take to investigate and respond to a cyberthreat, and AIR can do this more efficiently and effectively. AIR includes steps such as the following:
 1.	Determining whether a threat requires action
 2.	Performing necessary remediation actions
 3.	Determining what additional investigations should occur
