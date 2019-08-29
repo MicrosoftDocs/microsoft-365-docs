@@ -24,7 +24,7 @@ description: Understand identity options and configure Azure AD Connect to synch
 
 *This is required for hybrid environments and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
 
-In this section, you'll synchronize your on-premises Active Directory Domain Services (AD DS) with the Azure Active Directory (Azure AD) tenant used by your Office 365 and Enterprise Mobility + Security (EMS) subscriptions.
+In this section, you'll synchronize your on-premises Active Directory Domain Services (AD DS) with the Azure Active Directory (Azure AD) tenant used by Office 365, Microsoft Intune, and other cloud-based services.
 
 Azure AD Connect is the supported Microsoft tool that guides you through synchronizing only the identities you really need from single or multi-forest AD DS environments to your Azure AD tenant. The following figure shows the basic process for Azure AD Connect synchronization.
 
