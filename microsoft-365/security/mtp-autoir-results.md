@@ -52,7 +52,7 @@ When an automated investigation completes, a verdict is reached for every piece 
 
 |Verdict	|Area	|Outcomes|
 |------|------|------|
-|Malicious	|Device (endpoints)<br/>Identity (user accounts)	|Remedation actions are taken automatically|
+|Malicious	|Device (endpoints)<br/>Identity (user accounts)	|Remediation actions are taken automatically|
 |Malicious	|Email content (URLs or attachments) | Recommended remediation actions are pending approval|
 |Suspicious	|Device, identity, or email content |Recommended remediation actions are pending approval|
 |Clean	|Device, identity, or email content	|No remediation actions are needed|
