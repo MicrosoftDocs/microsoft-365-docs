@@ -18,10 +18,10 @@
 ##### [Manage incidents](manage-incidents.md)
 
 #### [Automated investigation and remediation]()
-##### [Visit the Action Center](mtp-action-center.md)
-##### [Investigate and remediate issues](mtp-autoir.md)
-##### [Set up alerts that trigger automated investigation and remediation](mtp-alerts-autoir.md)
-##### [Manage actions related to investigations](mtp-autoir-actions.md)
+##### [Overview](mtp-autoir.md)
+##### [Results and details of an automated investigation](mtp-autoir-results.md)
+##### [Approve or reject actions related to automated investigation and remediation](mtp-autoir-actions.md)
+##### [The Action center in Microsoft 365](mtp-action-center.md)
 
 #### [Advanced hunting]()
 ##### [Proactively hunt for threats](advanced-hunting.md)
