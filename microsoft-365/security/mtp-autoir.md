@@ -25,7 +25,7 @@ ms.topic: conceptual
 
 When security alerts are triggered, it’s up to your security operations team to look into those alerts and take steps to protect your organization. Prioritizing and investigating alerts can be very time consuming, especially when new alerts come in while investigation is going on. Automating some of this can help. 
 
-Automated investigation and remediation (AIR) capabilities, such as those included in Microsoft Threat Protection mimic the ideal steps a human would take to investigate and respond to a cyberthreat. AIR can do this more efficiently and effectively. AIR includes steps such as the following:
+Automated investigation and remediation (AIR) capabilities, such as those included in Microsoft Threat Protection mimic the ideal steps a human would take to investigate and respond to a cyberthreat. AIR can do this more efficiently and effectively. AIR steps include:
 1.	Determining whether a threat requires action
 2.	Performing necessary remediation actions
 3.	Determining what additional investigations should occur
