@@ -75,7 +75,7 @@ Learn about the robust security solutions and services in Microsoft  365 Securit
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src=images/blue-shield.png>
+                            <img src=images/microsoft-defender-atp-banner.png>
                         </div>
                     </div>
                     <div class="cardText">
