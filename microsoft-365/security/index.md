@@ -39,7 +39,7 @@ Learn about the robust security solutions and services in Microsoft  365 Securit
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src=images/blue-shield.png>
+                            <img src=images/security-management-icon.png>
                         </div>
                     </div>
                     <div class="cardText">
@@ -57,7 +57,7 @@ Learn about the robust security solutions and services in Microsoft  365 Securit
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src=images/blue-shield.png>
+                            <img src=images/cloud-security-icon.png>
                         </div>
                     </div>
                     <div class="cardText">
@@ -93,7 +93,7 @@ Learn about the robust security solutions and services in Microsoft  365 Securit
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src=images/blue-shield.png>
+                            <img src=images/mail-security-icon.png>
                         </div>
                     </div>
                     <div class="cardText">
@@ -111,7 +111,7 @@ Learn about the robust security solutions and services in Microsoft  365 Securit
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src=images/blue-shield.png>
+                            <img src=images/azure-atp-icon.png>
                         </div>
                     </div>
                     <div class="cardText">
@@ -129,7 +129,7 @@ Learn about the robust security solutions and services in Microsoft  365 Securit
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src=images/blue-shield.png>
+                            <img src=images/asc-icon.png>
                         </div>
                     </div>
                     <div class="cardText">
@@ -147,11 +147,11 @@ Learn about the robust security solutions and services in Microsoft  365 Securit
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src=images/blue-shield.png>
+                            <img src=images/other-sec-icon.png>
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Other security solutions</h3>
+                        <h3>Azure Sentinel (preview)</h3>
 							<P><a href="https://docs.microsoft.com/azure/sentinel/overview" target="_blank">What is Azure Sentinel? (Preview)</a></p>
                     </div>
                 </div>
