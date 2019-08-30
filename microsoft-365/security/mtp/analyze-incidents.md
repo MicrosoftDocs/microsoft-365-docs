@@ -31,13 +31,13 @@ Selecting an incident opens the incident page where you'll find more information
 ## Analyze incident details 
 From the incidents queue, click an incident to see the **Incident pane**. Select **Open incident page** to see the incident details and related information (alerts, devices, users, mailboxes, investigations, evidence).
 
-![Image of incident details](images/indicent-details.png)
+![Image of incident details](../images/indicent-details.png)
 
 
 ### Alerts
 Microsoft Threat Protection uses sophisticated correlation analysis on alerts to determine the connection between events. Alerts are then grouped together based on certain characteristics regardless of what surface it was seen on. 
 
-So whether they are events seen on the same machine or files that show similar characteristics, or alerts that were triggered on the same user within a certain timeframe, you’ll be able to see all the related alerts in one place. 
+So whether they are events seen on the same machine or files that show similar characteristics, or alerts that were triggered on the same user within a certain timeframe, you'll be able to see all the related alerts in one place. 
 
 ### Devices 
 The devices tab lists all the devices where alerts related to the incident are seen. You can do further investigative work and remediation actions within Microsoft 365 security center.

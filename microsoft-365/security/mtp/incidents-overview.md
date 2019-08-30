@@ -22,7 +22,7 @@ search.appverid:
 # Incidents overview in Microsoft Threat Protection
 
 
-Incidents in Microsoft 365 tell the broader story of an attack by connecting the dots seen on individual alerts across entities. You'll know exactly where an attack started, what devices are impacted, who are affected, and where the threat has gone.
+Incidents in Microsoft Threat Protection tell the broader story of an attack by connecting the dots seen on individual alerts across entities. You'll know exactly where an attack started, what devices are impacted, who are affected, and where the threat has gone.
 
 
 Malicious events on the following entities are surfaced in Microsoft 365 security center:
