@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 incident queue 
+title: Incident queue in Microsoft Threat Protection
 description: Learn how to navigate the incident queue to manage incidents in Microsoft 365 security center
 keywords: incident, queue, overview, devices, identities, mailbox, email, incidents
 search.product: eADQiWindows 10XVcnh
@@ -19,7 +19,7 @@ search.appverid:
 - MET150
 ---
 
-# Incident queue in Microsoft 365
+# Incident queue in Microsoft Threat Protection
 
 The **Incidents queue** shows a collection of incidents that were flagged from across devices, identities, and mailboxes. It helps you sort through incidents to prioritize and create an informed cybersecurity response decision.
 
@@ -44,14 +44,6 @@ On the top navigation you can:
 ## Sort and filter the incidents queue
 You can apply the following filters to limit the list of incidents and get a more focused view.
 
-### Severity
-Incident severity is determined according to the highest severity of the alerts that are correlated into the incident.
-
-### Assigned to
-You can choose to show between all incidents or those which are assigned to you.
-
-### Status
-You can choose to limit the list of incidents shown based on their status to see which ones are active or resolved.
 
 ## Related topics
 - [Incidents overview](incidents-overview.md)

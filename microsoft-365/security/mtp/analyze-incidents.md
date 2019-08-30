@@ -1,5 +1,5 @@
 ---
-title: Analyze incidents in Microsoft 365 
+title: Analyze incidents in Microsoft Threat Protection
 description: Analyze incidents related to machines, users, and mailboxes.
 keywords: incident, incidents, machines, devices, users, identities, mail, email, mailbox, investigation, graph, evidence
 search.product: eADQiWindows 10XVcnh
@@ -19,19 +19,19 @@ search.appverid:
 - MET150
 ---
 
-# Analyze incidents in Microsoft 365
+# Analyze incidents in Microsoft Threat Protection
 
 Analyze incidents that affect your network, understand what they mean, and collate evidence to resolve them. 
 
-The incidents dashboard provides information on:
+Selecting an incident opens the incident page where you'll find more information on:
 - Incident details
 - Incident comments and actions
 - Tabs (alerts, machines, investigations, evidence, graph)
 
 ## Analyze incident details 
-Click an incident to see the **Incident pane**. Select **Open incident page** to see the incident details and related information (alerts, machines, users, mailboxes, investigations, evidence).
+From the incidents queue, click an incident to see the **Incident pane**. Select **Open incident page** to see the incident details and related information (alerts, devices, users, mailboxes, investigations, evidence).
 
-![Image of incident details](../images/indicent-details.png)
+![Image of incident details](images/indicent-details.png)
 
 
 ### Alerts
