@@ -8,6 +8,6 @@
 
     - name: Microsoft Threat Protection
 
-      tocHref: /microsoft-365/security
+      tocHref: /microsoft-365/security/mtp
 
-      topicHref: /microsoft-365/security/index
+      topicHref: /microsoft-365/security/mtp/index
