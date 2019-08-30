@@ -29,13 +29,13 @@ Watch this video for an overview of identity models and authentication for Micro
 >If you’ve already deployed an identity infrastructure, please see the [identity exit criteria](identity-exit-criteria.md) to make sure that you meet the required and optional conditions for Microsoft 365 Enterprise.
 >
 
-Download the [identity architecture poster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/identity-infrastructure/M365E-ID-Infra.pdf) for the identity features of each Microsoft 365 Enterprise plan, the role of Azure Active Directory (Azure AD), on-premises and cloud-based components, and the most common authentication configurations.
+For the identity features of each Microsoft 365 Enterprise plan, the role of Azure Active Directory (Azure AD), on-premises and cloud-based components, and the most common authentication configurations, see the [Identity Infrastructure poster](media/identity-infrastructure/identity-infrastructure/M365E-ID-Infra.pdf).
 
-![](./media/identity-infrastructure/m365e-identity-arch-poster.png)
+[![The Identity Infrastructure poster](./media/identity-infrastructure/m365e-identity-arch-poster.png)](media/identity-infrastructure/identity-infrastructure/M365E-ID-Infra.pdf)
 
-This two-page poster is a quick way to ramp up on identity for Microsoft 365 Enterprise.
+This two-page poster is a quick way to ramp up on identity concepts and configurations for Microsoft 365 Enterprise.
 
-You can print this poster in letter, legal, or tabloid (11 x 17) formats.
+You can [download this poster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/identity-infrastructure/M365E-ID-Infra.pdf) and print it in letter, legal, or tabloid (11 x 17) formats.
 
 ## Plan and deploy your Microsoft 365 Enterprise identity infrastructure 
 
