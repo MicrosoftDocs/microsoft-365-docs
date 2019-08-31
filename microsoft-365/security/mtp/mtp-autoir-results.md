@@ -29,7 +29,7 @@ During and after an automated investigation, you can view detailed information a
 
 Either step takes you to the investigation details view, which resembles the following image:
 
-![Investigation details](images/mtp-air-investdetails.png)
+![Investigation details](../images/mtp-air-investdetails.png)
 
 > [!NOTE]
 > If the item you select in either the Action center or incident details page is a mailbox investigation, you'll be taken to the investigation details in the Office 365 Security & Compliance Center. 

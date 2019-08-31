@@ -17,10 +17,11 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
+# Learn the advanced hunting query language
+
 **Applies to**:
 - Microsoft 365 security center
 
-# Learn the advanced hunting query language
 
 ## Try your first query
 
@@ -42,7 +43,7 @@ ProcessCreationEvents
 
 This is how it will look like in advanced hunting.
 
-![Image of Microsoft Defender ATP Advanced hunting query](./images/advanced-hunting-query-example.png)
+![Image of Microsoft Defender ATP Advanced hunting query](../images/advanced-hunting-query-example.png)
 
 The query starts with a short comment describing what it is for. This helps if you later decide to save your query and share it with others in your organization.
 
@@ -119,7 +120,7 @@ Data in advanced hunting tables are generally classified into the following data
 
 The **Get started** section provides a few simple queries using commonly used operators. Try running these queries and making small modifications to them.
 
-![Image of Advanced hunting window](./images/atp-advanced-hunting.png)
+![Image of Advanced hunting window](../images/atp-advanced-hunting.png)
 
 >[!NOTE]
 >Apart from the basic query samples, you can also access [shared queries](advanced-hunting-shared-queries.md) for specific threat hunting scenarios. Explore the shared queries on the left side of the page or the GitHub query repository.

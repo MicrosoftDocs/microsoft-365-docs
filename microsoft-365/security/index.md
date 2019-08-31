@@ -26,8 +26,8 @@ Learn about the robust security solutions and services in Microsoft  365 Securit
                     </div>
                     <div class="cardText">
                         <h3>Microsoft Threat Protection</h3>
-					<p><a href="microsoft-threat-protection.md" target="_blank">What is Microsoft Threat Protection?</a></p>
-						<p><a href="overview-security-center.md" target="_blank">Microsoft 365 security center</a></p>
+					<p><a href="mtp/microsoft-threat-protection.md" target="_blank">What is Microsoft Threat Protection?</a></p>
+						<p><a href="mtp/overview-security-center.md" target="_blank">Microsoft 365 security center</a></p>
                     </div>
                 </div>
             </div>
@@ -44,7 +44,7 @@ Learn about the robust security solutions and services in Microsoft  365 Securit
                     </div>
                     <div class="cardText">
                         <h3>Security Management</h3>
-							<P><a href="microsoft-secure-score.md" target="_blank">Secure Score</a></p>
+							<P><a href="mtp/microsoft-secure-score.md" target="_blank">Secure Score</a></p>
 							<P><a href="" target="_blank">Security baselines</a></p>
                     </div>
                 </div>
