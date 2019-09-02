@@ -3,7 +3,7 @@ title: "Create and edit AutoPilot devices"
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -36,9 +36,9 @@ Devices need to meet these requirements:
     
 - New devices that have not been through Windows out-of-box experience.
 
-1. In the Microsoft 365 Business Admin center, choose **Devices** \> **AutoPilot** \> **Add**.
+1. In the Microsoft 365 Business Admin center, choose **Devices** \> **AutoPilot**.
   
-2. On the **Prepare Windows** page, choose the **Devices** tab \> **Add devices**.
+2. On the **AutoPilot** page, choose the **Devices** tab \> **Add devices**.
     
     ![In the Devices tab, choose Add devices.](media/6ba81e22-c873-40ad-8a72-ce64d15ea6ba.png)
   

@@ -3,7 +3,7 @@ title: Step 2 - Directory and Network Readiness
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
-ms.date: 09/14/2018
+ms.date: 05/10/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -68,13 +68,13 @@ The new servicing model includes Feature Updates for Windows twice a year, Offic
 
 The third component to consider is user personalization. Here you need to plan network bandwidth to accommodate the restoring of user files, their settings, and their applications as part of the PC refresh or replacement process. Together, these items often exceed 20 GB per PC; for some users these may exceed 100 GB.
 
-## **Limiting Bandwidth**
+## Limiting Bandwidth
 
 One way to limit the impact of deployment-related traffic on the network is to throttle it using the BITS (Background Intelligent Transfer Service) setting on clients. BITS uses an Adaptive Bit Rate (ABR) to adjust bandwidth available for deployment purposes; it can be configured on clients using Group Policy.
 
 [About BITS](https://docs.microsoft.com/en-us/windows/desktop/bits/about-bits)
 
-If you use System Center Configuration Manager, you can also configure BITS-enabled Distribution Points or enable multicast with WDS.
+If you use System Center Configuration Manager (Current Branch), you can also configure BITS-enabled Distribution Points or enable multicast with WDS.
 
 Throttling specific traffic means that normal network traffic is less impacted by PCs downloading updates and applications. But carving out a certain percentage of bandwidth for these tasks helps ensure productivity isn’t impacted by Windows or Office deployment and processes continue to run as needed, it can worsen deployment-related downtime, with users locked out of their PCs while a deployment runs.
 
@@ -82,9 +82,9 @@ Fortunately, there are new tools to make it easier for you to manage the network
 
 ![](media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-3.png)
 
-## **Scavenging Bandwidth**
+## Scavenging Bandwidth
 
-Low Extra Delay Background Transport (LEDBAT), supported in Windows Server 2019 and System Center Configuration Manager version 1806, is designed to optimize network traffic to Windows clients.
+Low Extra Delay Background Transport (LEDBAT), supported in Windows Server 2019 and System Center Configuration Manager (Current Branch), is designed to optimize network traffic to Windows clients.
 
 [Top 10 Networking Features in Windows Server 2019: \#9 LEDBAT – Latency Optimized Background Transport](https://blogs.technet.microsoft.com/networking/2018/07/25/ledbat/)
 
@@ -92,7 +92,7 @@ Unlike traditional throttling, LEDBAT can use all available network bandwidth as
 
 ![](media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-4.png)
 
-## **Peer-to-Peer options**
+## Peer-to-Peer options
 
 Peer-to-Peer options are increasingly being used in Windows 10 migrations, for PC imaging, software updates and user personalization. They are also valuable in facilitating build-to-build upgrades after your initial Windows 10 deployment. Here we will cover several examples to help move Windows 10 and Office-related traffic away from the center of the network, reducing the need for classic throttling approaches, and allowing PCs to find the update files they need on peers in their local network rather than downloading them from a distribution point or the internet.
 
@@ -104,7 +104,7 @@ Note: BranchCache and Peer Cache are complementary and can work together in the 
 
 [BranchCache vs. Peer Cache](https://blogs.technet.microsoft.com/swisspfe/2018/01/25/branch-cache-vs-peer-cache/)
 
-**Delivery Optimization** Delivery Optimization is another peer-to-peer caching technology, providing network-based controls for deployments. Windows 10 Delivery Optimization to update built-in UWP apps, also to install applications from the Microsoft Store, and for software updates using Express Updates. It has been available since early versions of Windows 10, though it has only recently integrated with System Center Configuration Manager. Since Windows 10 version 1803 new configuration options mean you can now independently set bandwidth limits for background updates and foreground jobs such as an app install from the Store. Windows Delivery Optimization now also supports Office 365 ProPlus during client updates, available in all supported Office 365 client update channels. Support for Windows Delivery Optimization during Office 365 client initial installation will be coming soon.  
+**Delivery Optimization** Delivery Optimization is another peer-to-peer caching technology, providing network-based controls for deployments. Windows 10 Delivery Optimization to update built-in UWP apps, also to install applications from the Microsoft Store, and for software updates using Express Updates. It has been available since early versions of Windows 10, though it has only recently integrated with System Center Configuration Manager (Current Branch). Since Windows 10 version 1803 new configuration options mean you can now independently set bandwidth limits for background updates and foreground jobs such as an app install from the Store. Windows Delivery Optimization now also supports Office 365 ProPlus during client updates, available in all supported Office 365 client update channels. Support for Windows Delivery Optimization during Office 365 client initial installation will be coming soon.  
 
 ![](media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-5.png)
 

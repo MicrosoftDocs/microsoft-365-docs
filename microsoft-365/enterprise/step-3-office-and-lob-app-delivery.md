@@ -3,7 +3,7 @@ title: Step 3 - Office and LOB App Delivery
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
-ms.date: 09/14/2018
+ms.date: 05/27/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions

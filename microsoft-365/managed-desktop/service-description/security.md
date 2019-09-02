@@ -3,7 +3,7 @@ title: Security in Microsoft Managed Desktop
 description:  
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
-author: trudyha
+author: jaimeo
 ms.localizationpriority: normal
 ms.date: 09/24/2018
 ---
@@ -12,7 +12,7 @@ ms.date: 09/24/2018
 
 <!--Security, also Onboarding doc: data handling/store, privileged account access -->
 
-Microsoft Managed Desktop applies a standard set of policies and utilizes many Microsoft technologies to help secure Microsoft Managed Desktop devices, stored company data, and more. The areas listed below are detailed further:  
+Microsoft Managed Desktop uses several Microsoft technologies to help secure managed devices and data. Specifically: 
 
 - [Data security](#data-security) - types of data collected by Microsoft Managed Desktop and where it's securely stored
 - [Device security](#device-security) – security and protection on Microsoft Managed Desktop devices
@@ -32,6 +32,7 @@ Listed below are the types of data transmitted from your tenant:
 - App deployment and reliability data
 - Update and security policy deployment data
 - Users assigned to devices
+- Security logs from your tenant related to the accounts used by Microsoft Managed Desktop to manage the service
 
 
 
@@ -41,9 +42,9 @@ Microsoft Managed Desktop ensures all managed devices are secured and protected,
 
 Service | Description
 --- | ---
-Antivirus |	Windows Defender AV is installed and configured<br>Windows Defender AV definitions are up to date
+Antivirus |	Microsoft Defender AV is installed and configured<br>Microsoft Defender AV definitions are up to date
 Full Volume Encryption |	Windows BitLocker is the volume encryption solution for Microsoft Managed Desktop devices.<br><br>Once an organization is onboarded into the service, devices will be encrypted using Windows BitLocker with built-in Trust Platform Module (TPM) to prevent unauthorized access to local data when the device is in sleep mode, or off. 
-Monitoring |	Windows Defender Advanced Threat Protection (Windows Defender ATP) is used for security threat monitoring across all Microsoft Managed Desktop devices. Windows Defender ATP allows enterprise customers to detect, investigate, and respond to advanced threats in their corporate network. For more information, see [Windows Defender Advanced Threat Protection.](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) 
+Monitoring |	Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) is used for security threat monitoring across all Microsoft Managed Desktop devices. Microsoft Defender ATP allows enterprise customers to detect, investigate, and respond to advanced threats in their corporate network. For more information, see [Microsoft Defender Advanced Threat Protection.](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) 
 Operating system updates |	Microsoft Managed Desktop devices are always secured with the latest security updates.
 Secure Device Configuration |	Microsoft Managed Desktop implements the Microsoft Security Baseline. For more information, see [Windows security baselines.](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines)
 
@@ -55,8 +56,7 @@ Identity and access management protects corporate assets and business-critical d
 
 Service | Description
 --- | ---
-Biometric Authentication |	Windows Hello allows users to login using their face or a PIN, making passwords harder to forget or steal. For more information, see [Windows Hello.](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello)
-Multi-factor authentication	| Azure multi-factor authentication more tightly controls access to sensitive functions of the Microsoft Managed Desktop service by providing an additional level of authentication using a mobile phone, as well as self-service password reset. 
+Biometric Authentication |	Windows Hello allows users to login using their face or a PIN, making passwords harder to forget or steal. Customers are responsible for implementing the necessary pre-requisites for their on-premises Active Directory for use of this service in a hybrid configuration. For more information, see [Windows Hello.](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello) 
 Standard user permission |	To protect the system and make it more secure, the user will be assigned Standard User Permissions. This is assigned as part of the Windows Autopilot out-of-box experience.
 
 

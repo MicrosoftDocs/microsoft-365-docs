@@ -8,7 +8,7 @@ ms.collection: M365-modern-desktop
 audience: microsoft-business
 ms.prod: microsoft-365-enterprise
 ms.topic: article
-ms.date: 09/18/2018
+ms.date: 08/28/2019
 ms.author: greglin
 ---
 
@@ -23,19 +23,6 @@ Microsoft 365 Enterprise includes Windows 10 Enterprise, which gives you the too
 - **Enables creativity and teamwork** - Unlocks creativity and teamwork to deliver the most productive experience that both users and IT will love.
 
 You'll need to understand the different ways you can deploy the Windows 10 operating system and choose the right one for your organization. Depending on your Microsoft 365 Enterprise subscription, there are also Windows 10 services and security features that you'll need to configure to get the most out of Windows 10.
-
-Windows 10 enables these strategic business scenarios for Microsoft 365 Enterprise:
-
-- Harness collective knowledge and expertise by empowering people to discover, share, and progress files, information, and ideas across your organization
-- Work securely from anywhere, anytime across your device to achieve more while maintaining a flexible workstyle
-- Provide peace-of-mind with controls and visibility for industry-verified conformity with global standards in compliance
-- Protect your information and reduce the risk of data loss
-- Detect and protect against external threats --Monitor, report and analyze activity to react promptly to provide organizational security
-- Protect your users and their accounts
-- Support your organization with enhanced privacy and compliance to meet the General Data Protection Regulation (GDPR)
-- Get current and stay current on your desktop software and devices while reducing security risks and maximizing IT efficiency
-
-For more information, see the [Digital transformation using Microsoft 365](http://transform.microsoft.com). 
 
 >[!Note]
 >To deploy both Windows 10 Enterprise and Office 365 ProPlus together and shift to a [modern desktop](https://www.microsoft.com/microsoft-365/modern-desktop), see the [Modern Desktop Deployment Center](http://aka.ms/howtoshift).
@@ -80,15 +67,7 @@ To learn more about the security features that you get with Windows 10 Enterpris
 
 ## How Microsoft does Microsoft 365 Enterprise
 
-To peek inside Microsoft and learn how the company planned for, deployed, and is managing updates for Windows 10, see:
-
-- [Preparing your organization for a seamless Windows 10 deployment](https://www.microsoft.com/itshowcase/windows10deployment?wt.mc_id=bmkg_itsc)
-- [Adopting Windows as a service at Microsoft](https://www.microsoft.com/itshowcase/Article/Content/851/Adopting-Windows-as-a-service-at-Microsoft)
-- [Deploying Windows 10 at Microsoft as an in-place upgrade](https://www.microsoft.com/itshowcase/Article/Content/668/Deploying-Windows-10-at-Microsoft-as-an-inplace-upgrade)
-- [Implementing strong user authentication with Windows Hello for Business](https://www.microsoft.com/itshowcase/Article/Content/756/Implementing-strong-user-authentication-with-Windows-Hello-for-Business)
-- [Windows 10 deployment: tips and tricks from Microsoft IT](https://www.microsoft.com/itshowcase/Article/Content/951/Windows-10-deployment-tips-and-tricks-from-Microsoft-IT) (video)
-- [Windows Defender ATP helps detect sophisticated threats](https://www.microsoft.com/itshowcase/Article/Content/854/Windows-Defender-ATP-helps-detect-sophisticated-threats)
-- [Securing the modern enterprise with Windows Defender and Windows Defender ATP](https://www.microsoft.com/itshowcase/Article/Content/903/Securing-the-modern-enterprise-with-Windows-Defender-and-Windows-Defender-ATP) (video)
+Peek inside Microsoft and learn how the company [deployed Windows 10 Enterprise and is using strong authentication, Intune, and Windows Defender ATP](https://www.microsoft.com/en-us/itshowcase/deploying-and-managing-microsoft-365#primaryR6).
 
 ## How Contoso did Microsoft 365 Enterprise
 

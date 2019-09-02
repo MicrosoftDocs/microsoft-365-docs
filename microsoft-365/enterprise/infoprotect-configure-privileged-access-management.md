@@ -1,9 +1,9 @@
 ---
-title: "Step 4: Configure privileged access management for Office 365"
+title: "Step 6: Configure privileged access management for Office 365"
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -15,7 +15,7 @@ ms.custom:
 description: Understand and configure privileged access management for Office 365.
 ---
 
-# Step 4: Configure privileged access management for Office 365
+# Step 6: Configure privileged access management for Office 365
 
 *This step is optional and applies only to the E5 and Advanced Compliance versions of Microsoft 365 Enterprise*
 
@@ -38,7 +38,7 @@ For more information, see the [Privileged access management in Office 365](https
 
 The result of this step is that you've increased the security of Office 365 by enabling just-in-time access control for key data and configuration settings for your organization.
 
-As an interim checkpoint, see the [exit criteria](infoprotect-exit-criteria.md#crit-infoprotect-step5) corresponding to this step.
+As an interim checkpoint, see the [exit criteria](infoprotect-exit-criteria.md#crit-infoprotect-step6) corresponding to this step.
 
 ## Next Step
 

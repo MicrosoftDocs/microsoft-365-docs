@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 04/01/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -36,18 +36,16 @@ Next, use the following steps to build out information protection for Microsoft 
 |![](./media/stepnumbers/Step1.png)|[Define security and information protection levels](infoprotect-define-sec-infoprotect-levels.md)|
 |![](./media/stepnumbers/Step2.png)|[Configure classification for your environment](infoprotect-configure-classification.md)|
 |![](./media/stepnumbers/Step3.png)|[Configure increased security for Microsoft 365](infoprotect-configure-increased-security-office-365.md)|
-|![](./media/stepnumbers/Step4.png)|[Configure privileged access management for Office 365](infoprotect-configure-privileged-access-management.md)|
+|![](./media/stepnumbers/Step4.png)|[Configure Windows Information Protection](infoprotect-deploy-windows-information-protection.md)|
+|![](./media/stepnumbers/Step5.png)|[Configure Office 365 Data Loss Prevention](infoprotect-data-loss-prevention.md)|
+|![](./media/stepnumbers/Step6.png)|[Configure privileged access management for Office 365](infoprotect-configure-privileged-access-management.md)|
 
 
 When you've completed these steps, go to the [exit criteria](infoprotect-exit-criteria.md) for this phase to ensure that you meet the required and optional conditions for Microsoft 365 Enterprise.
 
 ## How Microsoft does Microsoft 365 Enterprise
 
-Learn how IT experts at Microsoft use the information protection capabilities of Microsoft 356 Enterprise to protect information and defend against cyber attacks:
-
-- [Protecting files in the cloud with Azure Information Protection](https://www.microsoft.com/itshowcase/Article/Content/924/Protecting-files-in-the-cloud-with-Azure-Information-Protection)
-- [Microsoft uses threat intelligence to protect, detect, and respond to threats](https://www.microsoft.com/itshowcase/Article/Content/934/Microsoft-uses-threat-intelligence-to-protect-detect-and-respond-to-threats)
-- [Microsoft thwarts phishing attempts with Office 365](https://www.microsoft.com/itshowcase/Article/Content/956/Microsoft-thwarts-phishing-attempts-with-Office-365)
+Learn how IT experts at Microsoft use [Azure Information Protection and safeguard data](https://www.microsoft.com/en-us/itshowcase/deploying-and-managing-microsoft-365#primaryR9).
 
 ## How Contoso did Microsoft 365 Enterprise
 

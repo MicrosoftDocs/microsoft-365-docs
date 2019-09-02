@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 11/14/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -30,14 +30,14 @@ If you just want to configure MAM policies in a lightweight way with the minimum
 If you want to configure MAM policies in a simulated enterprise, follow the instructions in [Pass-through authentication](pass-through-auth-m365-ent-test-environment.md).
   
 > [!NOTE]
-> Testing automated licensing and group membership does not require the simulated enterprise test environment, which includes a simulated intranet connected to the Internet and directory synchronization for a Windows Server AD forest. It is provided here as an option so that you can test automated licensing and group membership and experiment with it in an environment that represents a typical organization. 
+> Testing automated licensing and group membership does not require the simulated enterprise test environment, which includes a simulated intranet connected to the Internet and directory synchronization for a Active Directory Domain Services (AD DS) forest. It is provided here as an option so that you can test automated licensing and group membership and experiment with it in an environment that represents a typical organization. 
 >  
 
 ## Phase 2: Create a device compliance policy for Windows 10 devices
 
 In this phase, you create a device compliance policy for Windows 10 devices.
   
-1. Go to the Office portal at ([https://office.com](https://office.com)) and sign in to your Office 365 trial subscription with your global administrator account.
+1. Go to the Office 365 portal at ([https://portal.office.com](https://portal.office.com)) and sign in to your Office 365 test lab subscription with your global administrator account.
     
 2. On a new tab of your browser, open the Azure portal at [https://portal.azure.com](https://portal.azure.com).
 
@@ -49,7 +49,7 @@ In this phase, you create a device compliance policy for Windows 10 devices.
     
 6. On the **Groups-All groups** blade, click **+ New Group**.
     
-7. On the **Group** blade, select **Office 365** for **Group type?**, type **Managed Windows 10 device users** in **Name**, select **Assigned** in **Membership type**,  and then click **Create**. 
+7. On the **Group** blade, select **Office 365** or **Security** for **Group type?**, type **Managed Windows 10 device users** in **Name**, select **Assigned** in **Membership type**,  and then click **Create**. 
     
 8. Close the **Group** blade.
     
@@ -85,7 +85,7 @@ In this phase, you create a device compliance policy for Windows 10 devices.
 
 26. On the **Add app** blade, click **Add**.
 
-You now have a device compliance policy for testing the selected apps in the **Windows 10** device compliance policy and for members of the **Managed Windows 10 device users** group. 
+You now have a device compliance policy for testing the selected apps in the **Windows 10** device compliance policy and for members of the **Managed Windows 10 device users** group. Please note that selecting Office 365 as the group type will create additional resources. 
   
 ## Next step
 

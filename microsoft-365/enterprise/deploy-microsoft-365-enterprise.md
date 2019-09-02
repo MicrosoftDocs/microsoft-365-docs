@@ -3,8 +3,8 @@ title: "Deploy Microsoft 365 Enterprise"
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 02/26/2019
-ms.audience: ITPro
+ms.date: 08/09/2019
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -18,31 +18,32 @@ description: Understand the resources you can use to deploy Microsoft 365 Enterp
 
 # Deploy Microsoft 365 Enterprise
 
-Microsoft 365 Enterprise is a combination of Office 365, Enterprise Mobility + Security (EMS), and Windows 10 Enterprise that: 
+Microsoft 365 Enterprise is a combination of local and cloud-based productivity apps and services with Windows 10 Enterprise that:  
 
 - Has intelligent security.
 - Is integrated for simplicity.
 - Unlocks creativity.
 - Is built for teamwork.
 
-These benefits are not realized just by obtaining the licenses for the three products, but by deploying them and their features in a specific way that includes integration and state-of-the-art security.
+You can realize these benefits by deploying the infrastructure and productivity workloads in an integrated way that includes state-of-the-art security services and features.
 
-There are two main ways to deploy Microsoft 365 Enterprise:
+There are three main ways to deploy Microsoft 365 Enterprise:
 
-- Do it with Microsoft engineers using FastTrack for Microsoft 365
-- Do it yourself with the Microsoft 365 Enterprise deployment guide
+- Do it with Microsoft engineers using [FastTrack for Microsoft 365](#fasttrack-for-microsoft-365).
+- Do it with help from Microsoft Consulting Services or a [Microsoft partner](https://partner.microsoft.com/).
+- Do it yourself with the [Microsoft 365 Enterprise deployment guide](#microsoft-365-enterprise-deployment-guide).
 
 ## FastTrack for Microsoft 365
 
 FastTrack is an ongoing and repeatable benefit—available as part of your subscription—that is delivered by Microsoft engineers to help you move to the cloud at your own pace. FastTrack also gives you access to qualified partners for additional services. With over 40,000 customers enabled to date, FastTrack helps maximize ROI, accelerate deployment, and increase adoption across your organization. See [FastTrack for Microsoft 365](https://fasttrack.microsoft.com/microsoft365).
 
-If you want to take advantage of FastTrack to deploy Microsoft 365 Enterprise, you can use the FastTrack [Microsoft 365 deployment advisor](https://aka.ms/microsoft365setupguide) for guidance on how to deploy and set up your foundation infrastructure. Note that you must be signed on as a global administrator in an Office 365 or Microsoft 365 tenant in order to access this page.
+If you want to take advantage of FastTrack to deploy Microsoft 365 Enterprise, you can use the FastTrack [Microsoft 365 deployment advisor](https://aka.ms/microsoft365setupguide) for guidance on how to deploy and set up your foundation infrastructure. You must be signed in as a global administrator in an Office 365 or Microsoft 365 tenant to access this page.
 
 Get started on your end-to-end deployment journey with FastTrack [here](https://fasttrack.microsoft.com/microsoft365).
 
 ## Microsoft 365 Enterprise deployment guide
 
-The Microsoft 365 Enterprise Deployment Guide steps you through the correct and required configuration of Microsoft 365 Enterprise products and features.
+The Microsoft 365 Enterprise deployment guide steps you through the correct and required configuration of Microsoft 365 Enterprise products and features.
 
 To deploy Microsoft 365 Enterprise yourself, you can:
 
@@ -52,7 +53,7 @@ To deploy Microsoft 365 Enterprise yourself, you can:
 
   **If you are a smaller or newer organization**, follow the phases in order to methodically build out your infrastructure.
 
-  However, you can deploy phases or the portions of phases of this infrastructure in any order as needed, [one after the other or in parallel](deployment-strategies-microsoft-365-enterprise.md), to integrate with your current infrastructure, fit your IT plans and resources, and meet your business needs. 
+  However, you can deploy phases or the portions of phases of this infrastructure in any order as needed, [one after the other or in parallel](deployment-strategies-microsoft-365-enterprise.md), to integrate with your current infrastructure, fit your IT plans and resources, and meet your business needs. For a simplified deployment for non-enterprises, click [here](deploy-foundation-infrastructure-non-enterprises.md).
 
   **If you are an enterprise organization**, view the phases as layers of IT infrastructure, rather than a defined path, and determine how to best work toward eventual adherence to the requirements of each layer across your organization.
 
@@ -80,104 +81,40 @@ For more information, see [Microsoft 365 Enterprise Test Lab Guides](m365-enterp
 
 ![Test Lab Guides for the Microsoft cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
+## Transition your entire organization
+
+To get a better picture of how to move your entire organization to the products and services in Microsoft 365 Enterprise, see the [Transition Your Organization to Microsoft 365](media/deploy-microsoft-365-enterprise/transitionorgtom365.pdf).
+
+[![Transition Your Organization to Microsoft 365 poster](./media/deploy-microsoft-365-enterprise/TransitionOrgToM365.png)](media/deploy-microsoft-365-enterprise/transitionorgtom365.pdf)
+
+This two-page poster is a quick way to inventory your existing infrastructure and get to the guidance for moving to the corresponding product or service in Microsoft 365 Enterprise. It includes Windows and Office products and other infrastructure and security elements such as device management, identity, and information and threat protection.
+
+You can [download the transition poster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transitionorgtom365.pdf) and print it in letter, legal, or tabloid (11 x 17) formats.
+
 ## How did others do it?
 
 Use these resources to understand how others have deployed and are using Microsoft 365 Enterprise.
 
 ### How customers use Microsoft 365 Enterprise
 
-Here's how our customers are using Microsoft 365 Enterprise as their complete, intelligent solution that empowers everyone to be creative and work together securely:
+Use the Customer Stories site to see how Microsoft customers are using Microsoft 365 Enterprise.
 
-- Construction
-  - [Search for data security solution unearths collaborative capabilities of Microsoft 365 at general contracting company](https://aka.ms/Transbluecasestudy)
-  - [EMCOR Group transitions to the cloud, constructs intelligent workplace with Microsoft 365](https://aka.ms/EMCOR)
-- Consulting
-  - [ERM contributes to a more sustainable future with Microsoft 365](https://aka.ms/ERM_CS)
-- Energy services
-  - [Schlumberger refines global teamwork with Microsoft 365](https://aka.ms/Schlumberger_)
-- Engineering
-   - [Cadence increases the pace of business with mobile collaboration tools](https://customers.microsoft.com/story/cadence-partner-professional-services-microsoft-365)
-- Financial services
-  - [TD Bank empowers employees with assistive technology in Office 365 and Windows 10](https://aka.ms/tdbankgroup)
-  - [Family tax preparation startup chooses all-in-one solution to help grow business](https://aka.ms/SOSCaseStudy)
-- Gaming
-  - [Gaming company improves productivity and communications with Microsoft 365 and Surface devices](https://aka.ms/PlaynGO)
-  - [Razer plays to win, gains advantage in global gaming industry with Microsoft 365](https://aka.ms/Razer_)
-- Health services
-  - [Lilly envisions a workplace where internal and external collaboration help enable innovation and accelerate time-to-market for new medicines](https://aka.ms/Eli_CLS)
-  - [Healthcare technology innovator accelerates diabetes prevention in the cloud ](https://aka.ms/Soleracasestudy)
-  - [Adventist Health System is enhancing healthcare delivery using Microsoft 365](https://aka.ms/adventisthealth)
-  - [Abrona accelerates GDPR compliance and increases productivity with Microsoft 365](https://aka.ms/Abrona)
-  - [Centra embraces transformation, improves patient care with Microsoft 365 intelligent business tools](https://aka.ms/Centra_Health)
-  - [Advocate Aurora Health helps patients live well using Microsoft care coordination solution to enhance collaboration](https://aka.ms/Advocate_)
-- Importing
-  - [Sales, marketing, and import company increases data security and cuts operating costs with Microsoft 365](https://aka.ms/MvmtGroupNordic)
-- Manufacturing
-  - [Steel company eliminates hardware costs, streamlines IT, and gains mobile productivity in the cloud](https://aka.ms/Steeledalecasestudy)
-  - [Embroidery equipment supplier empowers its business with cloud-based services, spreads word to other small businesses](https://aka.ms/PriorityLLCCaseStudy)
-  - [Father and son business shows the world what employees with disabilities can achieve](https://aka.ms/JCSCaseStudy)
-  - [Coconut company gains improved mobility, better metrics, and increased productivity by modernizing collaboration tools](https://aka.ms/SilvermillCS)
-  - [Thriving Japanese innovator finds future-proof flexibility and enhanced security with Microsoft 365 Business](https://aka.ms/DreamFactoryCaseStudy)
-- Non-profit
-  - [Move to the cloud saves nonprofit $500,000 while improving security, mobility, and collaboration ](https://aka.ms/MOWCaseStudy)
-- Professional services
-  - [Boutique business and real estate law firm supports expansion with comprehensive cloud-based platform ](https://aka.ms/Lieserskaffcasestudy)
-  - [Sports technology company helps athletes reach their peak through biofeedback and analytics ](https://aka.ms/KMOTIONCasestudy)
-  - [Digital transformation and the cloud empower business association to serve its members better ](https://aka.ms/AIMCS)
-- Transportation
-  - [Qantas empowers employees to do their best work with Microsoft 365, enhancing customer experience](https://aka.ms/Qantas_CS)
-  - [Amtrak keeps its mobile enterprise running ahead of schedule with Microsoft 365](https://aka.ms/Amtrak_)
-  - [Amtrak is all aboard with workplace modernization, saving labor costs and improving portfolio transparency using Microsoft 365](https://aka.ms/Amtrak_CS)
-  
+1. Go to [https://customers.microsoft.com/](https://customers.microsoft.com/) and click **Search**.
+2. In the left pane, select your language in **Language**.
+3. Select your organization's industry in **Industry**.
+4. Select **Microsoft 365** in **Product**.
+5. Click on a card for the customer's case study.
+
 ### How Microsoft uses Microsoft 365 Enterprise
 
-Take a peek inside Microsoft IT and learn how they deployed Microsoft 365 Enterprise and how Microsoft employees use it every day.
+Defining a digital culture is a major priority for every leader who strives to foster a modern workplace. Microsoft 365 was designed to support this kind of cultural shift helping leaders empower everyone at their companies to unleash creativity and collaboration. Establishing Microsoft's foundational infrastructure has sparked precisely this kind of digital culture shift. Implementing Microsoft 365 Enterprise has allowed us to deploy collaboration technology, like Microsoft Teams and Exchange Online, and to share sensitive data online across secure SharePoint intranet sites.
 
-#### Networking
+At the same time, intelligent security features and product integration helps streamline management needs and minimize the total cost of ownership across the IT lifecycle. 
 
-- [Optimizing network performance for Microsoft Office 365](https://www.microsoft.com/itshowcase/Article/Content/631/Optimizing-network-performance-for-Microsoft-Office-365)
+Learn how Core Services Engineering and Operations (formerly Microsoft IT) [planned and deployed a foundation](https://www.microsoft.com/en-us/itshowcase/deploying-and-managing-microsoft-365) to support the applications and services that unlock creativity and foster teamwork in a secure environment.
 
-#### Identity
-
-- [Managing user identities and secure access at Microsoft](https://www.microsoft.com/itshowcase/Article/Content/931/Managing-user-identities-and-secure-access-at-Microsoft)
-- [Using Azure AD Privileged Identity Management for elevated access](https://www.microsoft.com/itshowcase/Article/Content/887/Using-Azure-AD-Privileged-Identity-Management-for-elevated-access)
-
-#### Windows 10 Enterprise
-
-- [Preparing your organization for a seamless Windows 10 deployment](https://www.microsoft.com/itshowcase/windows10deployment?wt.mc_id=bmkg_itsc)
-- [Adopting Windows as a service at Microsoft](https://www.microsoft.com/itshowcase/Article/Content/851/Adopting-Windows-as-a-service-at-Microsoft)
-- [Deploying Windows 10 at Microsoft as an in-place upgrade](https://www.microsoft.com/itshowcase/Article/Content/668/Deploying-Windows-10-at-Microsoft-as-an-inplace-upgrade)
-- [Implementing strong user authentication with Windows Hello for Business](https://www.microsoft.com/itshowcase/Article/Content/756/Implementing-strong-user-authentication-with-Windows-Hello-for-Business)
-- [Windows 10 deployment: tips and tricks from Microsoft IT](https://www.microsoft.com/itshowcase/Article/Content/951/Windows-10-deployment-tips-and-tricks-from-Microsoft-IT) (video)
-- [Windows Defender ATP helps detect sophisticated threats](https://www.microsoft.com/itshowcase/Article/Content/854/Windows-Defender-ATP-helps-detect-sophisticated-threats)
-- [Securing the modern enterprise with Windows Defender and Windows Defender ATP](https://www.microsoft.com/itshowcase/Article/Content/903/Securing-the-modern-enterprise-with-Windows-Defender-and-Windows-Defender-ATP) (video)
-
-#### Office 365 ProPlus
-
-- [Deploying and updating Microsoft Office 365 ProPlus](https://www.microsoft.com/itshowcase/Article/Content/757/Deploying-and-updating-Microsoft-Office-365-ProPlus)
-- [Automation and update channels help deploy Microsoft Office 365 ProPlus](https://www.microsoft.com/itshowcase/Article/Content/794/Automation-and-update-channels-help-deploy-Microsoft-Office-365-ProPlus) (video)
-
-#### Mobility and device management
-
-- [Managing modern mobile productivity with Enterprise Mobility + Security](https://www.microsoft.com/itshowcase/Article/Content/972/Managing-modern-mobile-productivity-with-Enterprise-Mobility--Security)
-- [Connecting to work on your Windows 10 device with Microsoft Intune](https://www.microsoft.com/itshowcase/Article/Content/783/Connecting-to-work-on-your-Windows-10-device-with-Microsoft-Intune)
-- [Enabling mobile productivity for iOS, OS X, and Android devices at Microsoft](https://www.microsoft.com/itshowcase/Article/Content/773/Enabling-mobile-productivity-for-iOS-OS-X-and-Android-devices-at-Microsoft)
-
-#### Security and information protection
-
-- [Protecting files in the cloud with Azure Information Protection](https://www.microsoft.com/itshowcase/Article/Content/924/Protecting-files-in-the-cloud-with-Azure-Information-Protection)
-- [Microsoft uses threat intelligence to protect, detect, and respond to threats](https://www.microsoft.com/itshowcase/Article/Content/934/Microsoft-uses-threat-intelligence-to-protect-detect-and-respond-to-threats)
-- [Microsoft thwarts phishing attempts with Office 365](https://www.microsoft.com/itshowcase/Article/Content/956/Microsoft-thwarts-phishing-attempts-with-Office-365)
-
-#### Microsoft Teams
-
-- [Deploying Microsoft Teams streamlines collaboration and improves teamwork](https://www.microsoft.com/itshowcase/Article/Content/1013/Deploying-Microsoft-Teams-streamlines-collaboration-and-improves-teamwork)
-- [Microsoft Teams increases collaboration in the modern workplace at Microsoft](https://www.microsoft.com/itshowcase/Article/Content/1012/Microsoft-Teams-increases-collaboration-in-the-modern-workplace-at-Microsoft)
-
-#### Data migration
-
-- [Microsoft migrates 150,000 mailboxes to Exchange Online](https://www.microsoft.com/itshowcase/Article/Content/577/Microsoft-migrates-150000-mailboxes-to-Exchange-Online)
-- [SharePoint to the cloud: Learn how Microsoft ran its own migration](https://www.microsoft.com/itshowcase/Article/Content/691/SharePoint-to-the-cloud-Learn-how-Microsoft-ran-its-own-migration)
+> [!Note]
+> This web page is only available in English.
 
 ### How the Contoso Corporation deployed Microsoft 365 Enterprise
 
@@ -186,5 +123,7 @@ The Contoso Corporation is a fictional but representative global manufacturing c
 ## Next step
 
 To do it with direct Microsoft assistance, use [FastTrack](https://fasttrack.microsoft.com/microsoft365).
+
+To do it with a consultant, contact Microsoft Consulting Services or a [Microsoft partner](https://partner.microsoft.com/).
 
 To get started doing it yourself, see the [foundation infrastructure](deploy-foundation-infrastructure.md).

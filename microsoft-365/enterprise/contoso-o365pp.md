@@ -4,7 +4,7 @@ author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
 ms.date: 09/13/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -71,7 +71,7 @@ Because Contoso chose to automatically update devices from the cloud, there was 
 
 ## Next step
 
-[Learn](contoso-mdm.md) how Contoso is using Enterprise Mobility + Security (EMS) in Microsoft 365 Enterprise to manage its devices and the apps that run on them across its organization.
+[Learn](contoso-mdm.md) how Contoso is using Intune in Microsoft 365 Enterprise to manage its devices and the apps that run on them across its organization.
 
 ## See also
 

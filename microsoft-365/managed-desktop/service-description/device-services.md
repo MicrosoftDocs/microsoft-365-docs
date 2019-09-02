@@ -3,7 +3,7 @@ title: Microsoft Managed Desktop device services
 description:  This topic lists device services and limitation for Microsoft Managed Desktop.
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
-author: jdeckerms
+author: jaimeo
 ms.localizationpriority: normal
 ms.date: 02/06/2019
 ms.collection: M365-modern-desktop
@@ -21,7 +21,7 @@ Microsoft will provide these services for Microsoft Managed Desktop devices. For
  --- | ---
 Support	| Support agents will answer questions directly related to device functionality and diagnose device issues.
 Inventory |	All devices are tracked in the Microsoft Managed Desktop Admin portal for inventory and status tracking.
-Firmware / driver updates |	Firmware/Driver updates are deployed and monitored for compatibility by Microsoft. 
+Firmware / driver updates |	By default, Microsoft Managed Desktop devices receive firmware and driver updates from Windows Update. Not all hardware partners deploy their updates via Windows Update; those updates can be separately requested.
 Accessories	| Accessories that come with your device are covered by the same services as the device itself, but warranty terms may differ. Refer to the warranty terms chosen when selecting your devices. 
 Device setup	| Devices will be pre-configured with the current version of Windows and receive their apps and configurations via the cloud. 
 

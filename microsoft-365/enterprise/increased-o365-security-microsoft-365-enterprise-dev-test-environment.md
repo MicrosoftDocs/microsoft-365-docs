@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 04/10/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -41,16 +41,15 @@ In this phase, you enable increased Microsoft 365 security for your Microsoft 36
 
 Apps that do not support modern authentication cannot have [identity and device access configurations](microsoft-365-policies-configurations.md) applied to them, which is an important element of securing your Microsoft 365 subscription and its digital assets. 
 
-1. Go to the Office portal ([https://office.com](https://office.com)) and sign in to your Office 365 trial subscription with your global administrator account.
+1. Go to the Microsoft 365 admin center ([https://portal.microsoft.com](https://portal.microsoft.com)) and sign in to your Office 365 test lab subscription with your global administrator account.
     
   - If you are using the lightweight Microsoft 365 test environment, sign in from your local computer.
     
   - If you are using the simulated enterprise Microsoft 365 test environment, use the [Azure portal](https://portal.azure.com) to connect to the CLIENT1 virtual machine, and then sign in from CLIENT1.
  
-2. From the **Microsoft 365 admin center** tab, click **Admin**.
-3. On the new **Microsoft 365 admin center** tab, click **Admin centers > SharePoint**.
-4. On the new **SharePoint admin center** tab, click **Access control**.
-5. Under **Apps that don’t support modern authentication**, click **Block**, and then click **OK**.
+2. On the new **Microsoft 365 admin center** tab, click **Admin centers > SharePoint**.
+3. On the new **SharePoint admin center** tab, click **Access control**.
+4. Under **Apps that don’t support modern authentication**, click **Block**, and then click **OK**.
 
 
 ### Enable Advanced Threat Protection for SharePoint, OneDrive for Business, and Microsoft Teams
@@ -81,20 +80,15 @@ To ensure that anti-malware processing is being performed on files with common a
 4. Under **Common Attachment Types filter**, click **On > Save**.
 
 
-## Phase 3: Examine Office 365 security tools and logs
-
-In this phase, you look at built-in services that inform you about security events and measure your overall security posture.
-
-### Threat management dashboard
+## Phase 3: Examine the threat management dashboard
 
 Office 365 Threat management can help you control and manage mobile device access to your organization's data, help protect your organization from data loss, and help protect inbound and outbound messages from malicious software and spam. You also use threat management to protect your domain's reputation and to determine whether or not senders are maliciously spoofing accounts from your domain. For more information, see [Threat management in the Microsoft 365 security center](https://docs.microsoft.com/office365/securitycompliance/threat-management).
 
-
+<!--
 ### Office 365 Cloud App Security dashboard
 
 Office 365 Cloud App Security, previously known as Office 365 Advanced Security Management, allows you to create policies that monitor for and inform you of suspicious activities in your Office 365 subscription, so that you can investigate and take possible remediation action. For more information, see [Overview of Office 365 Cloud App Security](https://docs.microsoft.com/office365/securitycompliance/office-365-cas-overview).
 
-<!--
 ### Microsoft 365 Secure Score
 
 1. Create a new tab in your browser and go to the [Microsoft 365 security center](https://security.microsoft.com/), and then click **Secure score**.

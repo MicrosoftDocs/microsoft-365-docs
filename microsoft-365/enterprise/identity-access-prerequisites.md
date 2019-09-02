@@ -94,7 +94,7 @@ For more information about Office 365 client support, see the following articles
 - [Office 365 Client App Support - Modern Authentication](https://docs.microsoft.com/en-us/office365/enterprise/office-365-client-support-modern-authentication)
 
 ## Protecting administrator accounts
-Azure AD provides a simple way for you to begin protecting administrator access with a preconfigured conditional access policy. In Azure AD, go to **Conditional access** and look for this policy — **Baseline policy: Require MFA for admins**. Select this policy and then select **Use policy immediately**. 
+Azure AD provides a simple way for you to begin protecting administrator access with a preconfigured conditional access policy. In Azure AD, go to **Conditional access** and look for this policy — **Baseline policy: Require MFA for admins (preview)**. Select this policy and then select **Use policy immediately**. 
 
 This policy requires MFA for the following roles:
 - Global administrators

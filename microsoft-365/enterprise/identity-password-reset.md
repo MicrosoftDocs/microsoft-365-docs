@@ -3,8 +3,8 @@ title: "Step 5: Simplify access for users"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 02/25/2019
-ms.audience: ITPro
+ms.date: 04/19/2019
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -19,28 +19,13 @@ description: Understand and configure self-service password reset (SSPR) for Azu
 
 ![](./media/deploy-foundation-infrastructure/identity_icon-small.png)
 
-<a name="identity-pw-reset"></a>
-## Simplify password resets
-
-*This is optional and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
-
-In this section, you'll enable self-service password reset (SSPR) to allow users to reset or unlock their passwords or accounts. To alert you to misuse or abuse, you can use the detailed reporting that tracks when users access the system, along with notifications.
-
-See the [instructions to enable password reset](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-best-practices).
-
-|||
-|:-------|:-----|
-|![Test Lab Guides for the Microsoft cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Test Lab Guide: Password reset](password-reset-m365-ent-test-environment.md) |
-|||
-
-As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria.md#crit-identity-pw-reset) for this section.
 
 <a name="identity-pw-writeback"></a>
 ## Simplify password updates
 
 *This is optional for hybrid environments and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
 
-In this section, you'll allow users to reset their passwords through Azure Active Directory (Azure AD), which is then replicated to your local Active Directory Domain Services (AD DS). This process is known as password writeback. With password writeback, users don’t need to update their passwords through the on-premises Windows Server AD where user accounts and their attributes are stored. This is valuable to roaming or remote users who do not have a remote access connection to the on-premises network.
+In this section, you'll allow users to reset their passwords through Azure Active Directory (Azure AD), which is then replicated to your local Active Directory Domain Services (AD DS). This process is known as password writeback. With password writeback, users don’t need to update their passwords through the on-premises AD DS where user accounts and their attributes are stored. This is valuable to roaming or remote users who do not have a remote access connection to the on-premises network.
 
 Password writeback is required to fully utilize Identity Protection feature capabilities, such as requiring users to change their on-premises passwords when there has been a high risk of account compromise detected.
 
@@ -56,6 +41,23 @@ For additional information and configuration instructions, see [Azure AD SSPR wi
 |||
 
 As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria.md#crit-identity-pw-writeback) for this section.
+
+<a name="identity-pw-reset"></a>
+## Simplify password resets
+
+*This is optional and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
+
+In this section, you'll enable self-service password reset (SSPR) to allow users to reset or unlock their passwords or accounts. To alert you to misuse or abuse, you can use the detailed reporting that tracks when users access the system, along with notifications. You must enable password writeback before you can deploy password resets.
+
+See the [instructions to roll out password reset](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-deployment).
+
+|||
+|:-------|:-----|
+|![Test Lab Guides for the Microsoft cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Test Lab Guide: Password reset](password-reset-m365-ent-test-environment.md) |
+|||
+
+As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria.md#crit-identity-pw-reset) for this section.
+
 
 <a name="identity-sso"></a>
 ## Simplify user sign-in

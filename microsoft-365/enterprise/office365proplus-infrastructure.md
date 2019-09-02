@@ -3,8 +3,8 @@ title: "Phase 4: Office 365 ProPlus"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/18/2018
-ms.audience: ITPro
+ms.date: 08/29/2019
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -25,28 +25,10 @@ Microsoft 365 Enterprise includes Office 365 ProPlus, the subscription version o
 
 In this phase, you deploy Office 365 ProPlus to client devices as part of Microsoft 365 Enterprise. In addition to this guidance, we recommend you use [Microsoft Fastrack](https://fasttrack.microsoft.com/office) to help with your deployment. 
 
-Office 365 ProPlus enables these strategic business scenarios for Microsoft 365 Enterprise:
-
-- Collaborate on documents in real time or on your own time to simplify the cocreation process
-- Harness collective knowledge and expertise by empowering people to discover, share, and progress files, information, and ideas across your organization
-- Empower users to transform business processes and increase efficiency
-- Manage projects, tasks, and deadlines to meet your business objectives
-- Use intelligent assistance for design, writing, content discovery, and more to help your work shine
-- Discover insights, analyze your data, and share your findings to help everyone make informed decisions
-- Communicate with your team to stay informed, solicit input, and build cohesion and consensus
-- Communicate with partners, colleagues, and customers around the world for scheduled and ad hoc calls and online meetings with groups of all sizes
-- Store and share files inside and outside your organization to work seamlessly across organizational boundaries
-- Work securely from anywhere, anytime across your device to achieve more while maintaining a flexible workstyle
-- Provide peace-of-mind with controls and visibility for industry-verified conformity with global standards in compliance
-- Protect your information and reduce the risk of data loss
-- Get current and stay current on your desktop software and devices while reducing security risks and maximizing IT efficiency
-
-For more information, see the [Digital transformation using Microsoft 365](http://transform.microsoft.com). 
-
 If you already have Office 365 ProPlus deployed, please see the [exit criteria](office365proplus-exit-criteria.md) for this phase to make sure that it meets the required conditions for Microsoft 365 Enterprise.
 
 >[!Note]
->To deploy both Windows 10 Enterprise and Office 365 ProPlus together and shift to a [modern desktop](https://www.microsoft.com/microsoft-365/modern-desktop), see the [Modern Desktop Deployment Center](http://aka.ms/howtoshift).
+>To deploy both Windows 10 Enterprise and Office 365 ProPlus together, see the [Desktop Deployment Center](desktop-deployment-center-home.md).
 >
 
 ## Step 1: Assess your environment
@@ -82,10 +64,7 @@ If your organization uses Configuration Manager, we recommend upgrading to the C
 
 ## How Microsoft does Microsoft 365 Enterprise
 
-Learn how the experts at Microsoft planned for and deployed Office 365 ProPlus in Microsoft 365 Enterprise with these resources:
-
-- [Deploying and updating Microsoft Office 365 ProPlus](https://www.microsoft.com/itshowcase/Article/Content/757/Deploying-and-updating-Microsoft-Office-365-ProPlus)
-- [Automation and update channels help deploy Microsoft Office 365 ProPlus](https://www.microsoft.com/itshowcase/Article/Content/794/Automation-and-update-channels-help-deploy-Microsoft-Office-365-ProPlus) (video)
+Learn how the experts at Microsoft are [deploying and mananging updates for Office 365 ProPlus](https://www.microsoft.com/en-us/itshowcase/deploying-and-managing-microsoft-365#primaryR7).
 
 ## How Contoso did Microsoft 365 Enterprise
 

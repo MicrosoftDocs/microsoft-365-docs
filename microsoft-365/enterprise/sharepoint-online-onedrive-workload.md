@@ -2,8 +2,8 @@
 title: "Deploy SharePoint Online and OneDrive for Business for Microsoft 365 Enterprise"
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/19/2018
-ms.audience: ITPro
+ms.date: 08/28/2019
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -62,23 +62,6 @@ The following business pillars can address your organization’s needs:
 See [SharePoint Online admin](https://docs.microsoft.com/sharepoint/sharepoint-online) for resources on how to configure SharePoint Online for your needs.
 
 One way to see the benefits of SharePoint Online is to examine how individuals, a team, a division, or your entire organization interact today, and then find an appropriate scenario that provides easier ways to store and share files collaborate. Keep in mind that [Microsoft Teams](teams-workload.md) might be a better choice for some of your scenarios.
-
-SharePoint Online enables these strategic business scenarios for Microsoft 365 Enterprise:
-
-- Communicate with your team to stay informed, solicit input, and build cohesion and consensus
-- Harness collective knowledge
-- Empower users to transform business processes
-- Shape the company culture
-- Manage projects, tasks, and deadlines to meet your business objectives
-- Engage your firstline workers to enable your Digital Transformation
-- Understand your work habits to improve your influence and impact
-- Communicate with partners, colleagues, and customers
-- Store and share files inside and outside your organization to work seamlessly across organizational boundaries
-- Work securely from anywhere, anytime across your device to achieve more while maintaining a flexible workstyle
-- Protect your information and reduce the risk of data loss
-- Support your organization with enhanced privacy and compliance to meet the General Data Protection Regulation (GDPR)
-
-For more information, see the [Digital transformation using Microsoft 365](http://transform.microsoft.com). 
 
 #### SharePoint Online site for highly regulated data
 

@@ -3,7 +3,7 @@ title: Working with Microsoft Managed Desktop
 description:  
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
-author: trudyha
+author: jaimeo
 ms.localizationpriority: normal
 ms.date: 06/06/2018
 ms.collection: M365-modern-desktop

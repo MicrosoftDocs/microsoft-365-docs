@@ -1,8 +1,8 @@
 ---
 title: Microsoft 365 Business Frequently Asked Questions 
 description: Find answers to the most frequently asked questions about Microsoft 365 Business, a new solution designed for small and midsize businesses (SMB). 
-author: jasongroce
-ms.author: jasgro
+author: Sirkkuw
+ms.author: sirkkuw
 ms.topic: article 
 ms.prod: microsoft-365-business
 ms.collection: M365-subscription-management
@@ -23,7 +23,7 @@ Microsoft 365 is an integrated solution that brings together best-in-class produ
 **A holistic set of business productivity and collaboration tools** 
 * Word, Excel, PowerPoint, Outlook, OneNote, Publisher, and Access 
 * Exchange, OneDrive, Skype for Business, Microsoft Teams, SharePoint 
-* Business apps from Office (Bookings, Outlook Customer Manager, MileIQ<sup>[1](#footnote1)</sup>, Microsoft Listings<sup>[1](#footnote1)</sup>, Microsoft Connections<sup>[1](#footnote1)</sup>, Microsoft Invoicing<sup>[1](#footnote1)</sup>) 
+* Business apps from Office (Bookings, Outlook Customer Manager, MileIQ<sup>[1](#footnote1)</sup>, Microsoft Invoicing<sup>[1](#footnote1)</sup>) 
  
 **Enterprise-grade device management and security capabilities** 
 - Helps provide protection from external threats like phishing & sophisticated malware with Office 365 Advanced Threat Protection and Windows Defender Exploit Guard 
@@ -68,7 +68,9 @@ If the hardware you run today runs Windows 7 Pro or later, it likely meets the m
 Existing desktop (Win32) application compatibility is strong in Windows 10, with most existing applications working without any changes. Customers and their trusted IT advisors should read the recommended application testing process for <a href="https://docs.microsoft.com/windows/deployment/planning/windows-10-compatibility#recommended-application-testing-process" target="_blank">Windows 10 compatibility</a> and review the <a href="https://products.office.com/office-system-requirements#subscription-plans-section" target="_blank">Office system requirements</a> to ensure a smooth transition to Microsoft 365 Business. 
 
 ### What is Windows 10 Business? 
-Windows 10 Business is a set of cloud-services and device management capabilities that complement Windows 10 Pro and enable the centralized management and security controls of Microsoft 365 Business. Windows 10 Business also comes with Windows AutoPilot, a service that streamlines the deployment of new Windows 10 PCs. If you have devices that are licensed for Windows 7, 8 and 8.1 Professional, Microsoft 365 Business provides an upgrade to Windows 10 Pro which is the prerequisite for deploying Windows 10 Business. 
+Windows 10 Business is a set of cloud-services and device management capabilities that complement Windows 10 Pro and enable the centralized management and security controls of Microsoft 365 Business. Windows 10 Business also comes with Windows AutoPilot, a service that streamlines the deployment of new Windows 10 PCs. If you have devices that are licensed for Windows 7, 8 and 8.1 Professional, Microsoft 365 Business provides an upgrade to Windows 10 Pro which is the prerequisite for deploying Windows 10 Business.
+> [!IMPORTANT]
+> You need to supply the original product key when you upgrade, otherwise the upgrade won't work. 
 
 ### How does Microsoft 365 Business help support our Bring Your Own Device (BYOD) policy? 
 Many employees prefer to use their own mobile phones or tablets to access personal and work information rather than carrying multiple devices for each purpose. The use of personal devices for work, while commonplace, increases the risk that business information could end up in the wrong hands. Many competing mobile data protection solutions require users to switch to a specific mode on their device or use another complex mechanism that users may find intrusive and therefore avoid using. 
@@ -76,7 +78,7 @@ Many employees prefer to use their own mobile phones or tablets to access person
 Microsoft 365 Business offers customers a simple but powerful means of enabling employees to use their personal devices for work while providing the business with the ability to prevent those devices from accessing, retaining, and/or sharing business information. More specifically: 
 * **App Protection for Office mobile apps** helps protect Office data, including email, calendar, contacts, and documents on iOS and Android mobile devices, by enforcing policies such as automatically deleting business data after a prescribed amount of time of not connecting to the service, requiring that information is stored only to OneDrive for Business, requiring a PIN/fingerprint verification to access Office apps, and preventing company data from being copied from an Office app into personal apps. Mobile application management for other mobile apps through Intune is also available for Microsoft 365 Business subscribers. 
   
-* **Device Management for Windows 10 PCs** aallows businesses to choose to set and enforce capabilities such as Windows Defender protection for malware, automatic updates, and turning off screens after a prescribed amount of time. In addition, lost or stolen Windows 10 devices can be completely wiped of business applications and data through the Admin center. 
+* **Device Management for Windows 10 PCs** allows businesses to choose to set and enforce capabilities such as Windows Defender protection for malware, automatic updates, and turning off screens after a prescribed amount of time. In addition, lost or stolen Windows 10 devices can be completely wiped of business applications and data through the Admin center. 
 
 * **Device Management for iOS, Android & MacOS** features helps businesses securely manage a diverse device ecosystem that includes iOS, Android, Windows, and macOS devices. 
 
@@ -112,7 +114,8 @@ Customers that wish to experience the complete capabilities of Microsoft 365 Bus
 The most direct path to a successful Microsoft 365 Business deployment is to engage with a Microsoft Partner. They have extensive training and experience with a wide variety of customer scenarios and are best equipped to understand your environment and needs. Customers that have experienced IT on staff can use the <a href="https://support.office.com/article/496e690b-b75d-4ff5-bf34-cc32905d0364" target="_blank">Microsoft 365 Business Getting Started</a> to assist them in their Microsoft 365 Business deployment. 
 
 ### Does Microsoft 365 Business include the full capabilities of Microsoft Intune? 
-Yes, Microsoft 365 Business subscribers are licensed to use full Intune capabilities for iOS, Android, MacOS, and other cross-platform device management. Features not available in the simplified management console in Microsoft 365 Business, like 3rd party app management and configuration of things like WiFi profiles, VPN certificates, etc., can be managed in full Intune console.   
+Yes, Microsoft 365 Business subscribers are licensed to use full Intune capabilities for iOS, Android, MacOS, and other cross-platform device management. Features not available in the simplified management console in Microsoft 365 Business, like 3rd party app management and configuration of WiFi profiles, VPN certificates, etc, can be managed in full Intune console. 
+You have rights to use Configuration Manager to manage clients covered by the EMS license. For SCCM related queries, please see <a href="https://docs.microsoft.com/en-us/sccm/core/understand/product-and-licensing-faq#bkmk_csp" target="_blank">SCCM faqs</a>
   
 
 ### Does Azure Active Directory Premium P1 come with Microsoft 365 Business? 

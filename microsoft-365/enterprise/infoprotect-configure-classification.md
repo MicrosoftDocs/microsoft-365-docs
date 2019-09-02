@@ -3,8 +3,8 @@ title: "Step 2: Configure classification for your environment"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/10/2019
-ms.audience: ITPro
+ms.date: 04/25/2019
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -42,38 +42,31 @@ Sensitive information types are especially helpful for meeting compliance and re
 
 Part of defining a data governance strategy is deciding how long specific types of documents or documents with specific contents should be retained in compliance with organization policies and regional regulations. For example, some types of documents should be retained for a set amount of time and then deleted and others must be retained indefinitely.
 
-For documents stored in Microsoft 365, you define and apply retention labels to documents and data stored in Exchange email, SharePoint Online, OneDrive for Business, and Teams chat and channel messages. For more information, including how to create them, see [Overview of retention labels](https://docs.microsoft.com/office365/securitycompliance/labels).
+For documents stored in Microsoft 365, you define and apply retention labels to documents and data stored in Exchange email, SharePoint Online, OneDrive for Business, and Teams chat and channel messages. 
 
 If you use retention labels, you should configure a label for each category of file that needs to have a retention policy applied. Within the retention label, you can specify:
 
 - A set of descriptors for the files (for example, by business department, file category, or regulation).
-
 - The retention settings for the files that have the retention label attached, such as retain times and behaviors after the retain time has been reached.
 
 You can also apply a retention label to files automatically by configuring a SharePoint Online site to apply a default retention label to all new documents in the site. 
 
-For more information, see this [overview of retention labels](https://docs.microsoft.com/office365/securitycompliance/labels).
+For more information, see the [overview of retention labels](https://docs.microsoft.com/office365/securitycompliance/labels).
 
 ### Sensitivity labels
 
 Part of protecting and implementing security for specific types of documents or documents with specific contents is marking them with a label so that the additional security can be applied. With sensitivity labels in Microsoft 365, you can:
 
 - Enforce protection settings such as encryption, permissions, or adding a watermark.
-
 - Prevent sensitive content from leaving your organization on devices running Windows, by using endpoint protection in Microsoft Intune. 
-
 - Use Windows Information Protection (WIP) endpoint protection to prevent that content from being copied to a third-party app, such as Twitter or Gmail, or being copied to removable storage, such as a USB drive.
-
 - Use Microsoft Cloud App Security to protect content in third-party apps and services. 
-
 - Classify content without using any protection settings.
 
 If you use sensitivity labels, you should configure a label for each security and information protection level. For example, create three sensitivity labels for:
 
 - Baseline
-
 - Sensitive
-
 - Highly regulated
 
 For more information, see this [overview of sensitivity labels](https://docs.microsoft.com/office365/securitycompliance/sensitivity-labels).
@@ -93,16 +86,18 @@ Existing Azure Information Protection labels work seamlessly with sensitivity la
 
 If you have both sensitivity and Azure Information Protection labels, you should [migrate your Azure Information Protection labels to sensitivity labels](https://docs.microsoft.com/office365/securitycompliance/sensitivity-labels#how-sensitivity-labels-work-with-existing-azure-information-protection-labels).
 
-## Classification for GDPR
+## Example: Classification for GDPR
 
 For an example classification scheme that includes personal data for GDPR, see [Architect a classification schema for personal data](https://docs.microsoft.com/office365/enterprise/architect-a-classification-schema-for-personal-data).
+
+## Take it for a test drive
 
 |||
 |:-------|:-----|
 |![Test Lab Guides for the Microsoft cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Test Lab Guide: Data classification](data-classification-microsoft-365-enterprise-dev-test-environment.md) |
 |||
 
-As an interim checkpoint, see the [exit criteria](infoprotect-exit-criteria.md#crit-infoprotect-step3) corresponding to this step.
+As an interim checkpoint, see the [exit criteria](infoprotect-exit-criteria.md#crit-infoprotect-step2) corresponding to this step.
 
 ## Next step
 
