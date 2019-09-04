@@ -30,7 +30,7 @@ Once you have the new devices in hand, you'll follows these steps:
 Microsoft Managed Desktop identifies each device uniquely by referencing its hardware hash. You have four options for getting this information from devices you're already using:
 
 - Ask your OEM supplier for the AutoPilot registration file, which will include the hardware hashes.
-- Create a custom report in Configuration Manager.
+- Create a custom report in [Configuration Manager](#configuration-manager).
 - Run a [Windows PowerShell script](#powershell-script-method) on each device and collect the results in a file.
 - Start each device--but don't complete the Windows setup experience--and [collect the hashes on a removable flash drive](#flash-drive-method).
 
@@ -61,12 +61,9 @@ If you've met all these prerequisites, you're ready to collect the information b
 
 1. Select **Datasets**, and then right-click to **Add Dataset**.
 2. Select the **Query** property, and then enter the name as *DataSet0*. 
-3. Select **Use a dataset embedded in my report** 
-4. Select Use a dataset embedded in my report 
- 
-Data source: Select the source in Report Server 
- 
-Choose **Query type as Text** and enter this query:
+3. Select **Use a dataset embedded in my report**; a window opens.
+4. In the windows that opens, select **Data source:** Select the source in Report Server 
+5. Choose **Query type as Text**, and then enter this query:
 
 ```
 
@@ -88,14 +85,55 @@ FROM   Fn_rbac_gs_computer_system(@UserSIDs) comp 
     - Model 
     - Serial_Number 
     - HardwareHash
-7. 
+7. Select **OK**.
+
+**Next, define the report display and create the report** by following these steps:
+
+1. Select **Table or Matrix**; a new wizard will open.
+2. In **Choose a dataset**, select **Choose an existing dataset in this report or a shared dataset**.  
+3. Select **DataSet0**, and then drag the {SOMETHING}, {SOMETHING} and {SOMETHING} fields from {SOMEWHERE} to {SOMEWHERE ELSE}.
+4. Select **Next**. Choose the layout do not select any Options: Show subtotals and grand totals and Expand/Collapse groups, then click Next and Finish. {UNCLEAR WHAT THIS IS TRYING TO SAY; WHAT IS UI OR WHAT}
+5. Select **Run** to run your report. Verify that the report provides the information that you expect. If necessary, select **Design** to return to the Design view to modify the report.
+6. Select **Save** to save the report to the report server. You can run the new report in the Reports node in the Monitoring workspace. 
+
+**Finally, export the report and use it to register devices** by following these steps:
+
+1. {CURRENT PROCEDURE DOESN'T ACTUALLY TELL YOU HOW TO GET THE REPORT OUT OF SCCM AND FEED IT TO MMD REGISTRATION?}
+2. This version of report extracts hashes from all Windows 10 devices that SCCM communicates with. You will need to filter results to just those devices you plan to register with Microsoft Managed Desktop.
+3. {EXPORT?} the report in CSV format by {DOING SOMETHING}
+
+> [!IMPORTANT]
+> The query in Configuration Manager doesn’t allow spaces in exported column names; that's why the steps had you enter "Serial_Number" and "HardwareHash." Now that you have the exported CSV file, you must edit the report headers to read *Serial Number* and *Hardware Hash* as shown here.
+
+Now you can proceed to [Register devices by using the Azure Portal](#register-devices-by-using-the-azure-portal).
 
 
 #### PowerShell script method
 
+In an Active Directory environment, you can use the `Get-MMDRegistrationInfo` PowerShell cmdlet to remotely collect the information from devices in Active Directory Groups by using WinRM. You can also use the `Get-AD Computer` cmdlet and get filtered results for a specific hardware model names included in the catalog. To do this, first confirm these prerequisites, and then proceed with the steps:
+
+- WinRM is enabled.
+- The devices you want to register are active on the network (that is, they are not disconnected or turned off).
+- Make sure you have a domain credential parameter that has permission to execute remotely on the devices.
+
 1.	Open a PowerShell prompt with administrative rights.
-2.	Run `Install-Script -Name Get-MMDRegistrationInfo`
-3.	Run `powershell -ExecutionPolicy Unrestricted Get-MMDRegistrationInfo -OutputFile <path>\hardwarehash.csv`
+2.	Run this script:
+```powershell
+Install-script -name Get-MMDRegistrationInfo 
+#example one – leverage Get-ADComputer to enumerate devices 
+Get-ADComputer -filter * | powershell -ExecutionPolicy Unrestricted Get-MMDRegistrationInfo.ps1 -credential Domainname\<accountname> 
+#example two – target specific machines: 
+powershell -ExecutionPolicy Unrestricted Get-MMDRegistrationInfo.ps1 -credential Domainname\<accountname> -Name Machine1,Machine2,Machine3
+```
+3. Remove entries for each device from *all* directories, including Windows Server Active Directory Domain Services and 
+Azure Active Directory. Be aware that this removal could take a few hours to completely process.
+4. Remove entries for each device from *all* management services, including System Center Configuration Manger, Microsoft Intune, and Windows Autopilot. Be aware that this removal could take a few hours to completely process.
+
+Now you can proceed to [register devices](#register-devices).
+
+
+
+
 
 #### Flash drive method
 
