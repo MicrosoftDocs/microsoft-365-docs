@@ -20,7 +20,7 @@ ms.topic: article
 # EmailAttachmentInfo
 
 **Applies to:**
-- Microsoft 365 security center
+- Microsoft Threat Protection
 
 The EmailAttachmentInfo table in the advanced hunting schema contains information about attachments on emails processed by Office 365 ATP. Use this reference to construct queries that return information from this table.
 
