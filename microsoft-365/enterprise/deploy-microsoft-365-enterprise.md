@@ -83,13 +83,13 @@ For more information, see [Microsoft 365 Enterprise Test Lab Guides](m365-enterp
 
 ## Transition your entire organization
 
-To get a better picture of how to move your entire organization to the products and services in Microsoft 365 Enterprise, download the [transition poster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transitionorgtom365.pdf).
+To get a better picture of how to move your entire organization to the products and services in Microsoft 365 Enterprise, see the [Transition Your Organization to Microsoft 365](media/deploy-microsoft-365-enterprise/transitionorgtom365.pdf).
 
-![](./media/deploy-microsoft-365-enterprise/TransitionOrgToM365.png)
+[![Transition Your Organization to Microsoft 365 poster](./media/deploy-microsoft-365-enterprise/TransitionOrgToM365.png)](media/deploy-microsoft-365-enterprise/transitionorgtom365.pdf)
 
 This two-page poster is a quick way to inventory your existing infrastructure and get to the guidance for moving to the corresponding product or service in Microsoft 365 Enterprise. It includes Windows and Office products and other infrastructure and security elements such as device management, identity, and information and threat protection.
 
-You can print this poster in letter, legal, or tabloid (11 x 17) formats.
+You can [download the transition poster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transitionorgtom365.pdf) and print it in letter, legal, or tabloid (11 x 17) formats.
 
 ## How did others do it?
 
