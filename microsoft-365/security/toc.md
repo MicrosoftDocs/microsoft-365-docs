@@ -11,8 +11,8 @@
 ### [How-to guides]()
 #### [Incidents]()
 ##### [Overview](mtp/incidents-overview.md)
-##### [Incident queue](mtp/incident-queue.md)
-##### [Analyze incidents](mtp/analyze-incidents.md)
+##### [Prioritize incidents](mtp/incident-queue.md)
+##### [Investigate incidents](mtp/investigate-incidents.md)
 ##### [Manage incidents](mtp/manage-incidents.md)
 
 #### [Automated investigation and remediation]()

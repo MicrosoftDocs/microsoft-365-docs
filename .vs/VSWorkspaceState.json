@@ -2,10 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\microsoft-365",
-    "\\microsoft-365\\enterprise",
-    "\\microsoft-365\\images",
-    "\\microsoft-365\\security"
+    "\\microsoft-365\\security",
+    "\\microsoft-365\\security\\mtp",
+    "\\microsoft-365\\security\\mtp\\breadcrumb"
   ],
-  "SelectedNode": "\\microsoft-365\\enterprise\\index.md",
+  "SelectedNode": "\\microsoft-365\\security\\mtp\\incident-queue.md",
   "PreviewInSolutionExplorer": false
 }

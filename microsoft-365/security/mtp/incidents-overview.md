@@ -21,24 +21,25 @@ search.appverid:
 
 # Incidents overview in Microsoft Threat Protection
 
+The basis of all incidents are alerts. Alerts are created when an anomalous event is seen on your network. Individual alerts provide valuable clues in what's happening on individual events or entities. However, attacks typically employ various attack vectors to carry out a breach. Piecing individual clues together can be a challenging and time-consuming task. 
 
-Incidents in Microsoft Threat Protection tell the broader story of an attack by connecting the dots seen on individual alerts across entities. You'll know exactly where an attack started, what devices are impacted, who are affected, and where the threat has gone.
+Microsoft Threat Protection connects the dots on individual alerts seen across endpoints, identities, and mailboxes to tell the broader story of an attack.  Suspicious events that are seen to show characteristics of being part of a larger attack are aggregated into an incident. 
+
+You'll know exactly where an attack started, impacted endpoints, affected users, and other details to help you see the extent of the attack.
 
 
 Malicious events on the following entities are surfaced in Microsoft 365 security center:
-- Devices
+- Devices or endpoints
 - Identities
 - Mailboxes
 
-Suspicious events that are seen to show characteristics of being part of a larger attack are aggregated into an incident. 
 
 The platform provides security defenders with the right visuals and data representations to understand and address complex cross-entity threats. 
 
 Not only will you have visibility on the scope of an attack, but you'll also have access to services that will allow you to take tactical steps to contain an incident.
 
 
-
 ## Related topics
-- [Incident queue](incident-queue.md)
-- [Analyze incidents](analyze-incidents.md)
+- [Prioritize incidents](incident-queue.md)
+- [Investigate incidents](investigate-incidents.md)
 - [Manage incidents](manage-incidents.md)

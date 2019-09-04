@@ -1,5 +1,5 @@
 ---
-title: Analyze incidents in Microsoft Threat Protection
+title: Investigate incidents in Microsoft Threat Protection
 description: Analyze incidents related to machines, users, and mailboxes.
 keywords: incident, incidents, machines, devices, users, identities, mail, email, mailbox, investigation, graph, evidence
 search.product: eADQiWindows 10XVcnh
@@ -19,25 +19,39 @@ search.appverid:
 - MET150
 ---
 
-# Analyze incidents in Microsoft Threat Protection
+# Investigate incidents in Microsoft Threat Protection
 
-Analyze incidents that affect your network, understand what they mean, and collate evidence to resolve them. 
+Investigate incidents that affect your network, understand what they mean, and collate evidence so that you can devise an effective remediation plan. 
 
-Selecting an incident opens the incident page where you'll find more information on:
+You can start an investigation by selecting an incident from the queue. This opens the incident page where you'll find more information on:
 - Incident details
 - Incident comments and actions
 - Tabs (alerts, machines, investigations, evidence, graph)
 
-## Analyze incident details 
+## Investigate incident details 
+The incident page provides valauble insight on 
+
+Seeing the severity and the affected entities 
+
+
+
 From the incidents queue, click an incident to see the **Incident pane**. Select **Open incident page** to see the incident details and related information (alerts, devices, users, mailboxes, investigations, evidence).
 
 ![Image of incident details](../images/indicent-details.png)
 
 
 ### Alerts
-Microsoft Threat Protection uses sophisticated correlation analysis on alerts to determine the connection between events. Alerts are then grouped together based on certain characteristics regardless of what surface it was seen on. 
 
-So whether they are events seen on the same machine or files that show similar characteristics, or alerts that were triggered on the same user within a certain timeframe, you'll be able to see all the related alerts in one place. 
+
+
+
+
+uses sophisticated  
+
+So whether they are events seen on the same machine or files that show similar characteristics, or alerts that were triggered on the same user within a certain timeframe, you'll be able to see all the related alerts in one place.
+
+
+You can check all the alerts related to the incident and other information about them such as severity, entities that were involved in the alert, the detection source of the alerts (Azure ATP, Microsoft Defender ATP , Office  365 ATP) and the reason they were linked together. 
 
 ### Devices 
 The devices tab lists all the devices where alerts related to the incident are seen. You can do further investigative work and remediation actions within Microsoft 365 security center.
@@ -62,5 +76,5 @@ Each of the analyzed entities will be marked as infected, remediated, or suspici
 
 ## Related topics
 - [Incidents overview](incidents-overview.md)
-- [Incident queue](incident-queue.md)
+- [Prioritize incidents](incident-queue.md)
 - [Manage incidents](manage-incidents.md)
