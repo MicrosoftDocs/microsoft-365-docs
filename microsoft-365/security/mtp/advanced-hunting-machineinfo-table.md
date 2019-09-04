@@ -20,7 +20,7 @@ ms.topic: article
 # MachineInfo
 
 **Applies to:**
-- Microsoft 365 security center
+- Microsoft Threat Protection
 
 The MachineInfo table in the advanced hunting schema contains information about machines in the organization, including OS version, active users, and computer name. Use this reference to construct queries that return information from this table.
 

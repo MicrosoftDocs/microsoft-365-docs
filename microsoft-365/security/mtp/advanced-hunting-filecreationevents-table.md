@@ -20,7 +20,7 @@ ms.topic: article
 # FileCreationEvents
 
 **Applies to:**
-- Microsoft 365 security center
+- Microsoft Threat Protection
 
 The FileCreationEvents table in the advanced hunting schema contains information about file creation, modification, and other file system events. Use this reference to construct queries that return information from this table.
 

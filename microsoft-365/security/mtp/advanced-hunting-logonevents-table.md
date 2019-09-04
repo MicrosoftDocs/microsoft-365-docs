@@ -20,7 +20,7 @@ ms.topic: article
 # LogonEvents
 
 **Applies to:**
-- Microsoft 365 security center
+- Microsoft Threat Protection
 
 The LogonEvents table in the advanced hunting schema contains information about user logons and other authentication events. Use this reference to construct queries that return information from this table.
 

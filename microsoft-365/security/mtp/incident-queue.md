@@ -21,6 +21,9 @@ search.appverid:
 
 # Prioritize incidents in Microsoft Threat Protection
 
+**Applies to:**
+- Microsoft Threat Protection
+
 Microsoft Threat Protection applies correlation analytics and aggregates all related alerts and investigations from different products into one "incident" entity. By doing so, Microsoft Threat Protection narrates a broader attack story, allowing the SOC analyst to understand and deal with complex threats across the organization.
 
 

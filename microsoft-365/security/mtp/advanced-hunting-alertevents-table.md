@@ -20,7 +20,7 @@ ms.topic: article
 # AlertEvents
 
 **Applies to:**
-- Microsoft 365 security center
+- Microsoft Threat Protection
 
 The AlertEvents table in the advanced hunting schema contains information about Microsoft Defender ATP alerts. Use this reference to construct queries that return information from this table.
 

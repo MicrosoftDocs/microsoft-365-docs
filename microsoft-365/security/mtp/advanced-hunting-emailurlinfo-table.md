@@ -20,7 +20,7 @@ ms.topic: article
 # EmailUrlInfo
 
 **Applies to:**
-- Microsoft 365 security center
+- Microsoft Threat Protection
 
 The EmailUrlInfo table in the advanced hunting schema contains information about URLs on emails and attachments processed by Office 365 ATP. Use this reference to construct queries that return information from this table.
 

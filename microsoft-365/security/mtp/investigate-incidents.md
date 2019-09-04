@@ -21,6 +21,10 @@ search.appverid:
 
 # Investigate incidents in Microsoft Threat Protection
 
+**Applies to:**
+- Microsoft Threat Protection
+
+
 Investigate incidents that affect your network, understand what they mean, and collate evidence so that you can devise an effective remediation plan. 
 
 You can start an investigation by selecting an incident from the queue. This opens the incident page where you'll find more information on:

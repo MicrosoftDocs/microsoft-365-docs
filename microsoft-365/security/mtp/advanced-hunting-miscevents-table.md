@@ -20,7 +20,7 @@ ms.topic: article
 # MiscEvents
 
 **Applies to:**
-- Microsoft 365 security center
+- Microsoft Threat Protection
 
 The MiscEvents table in the advanced hunting schema contains information about multiple event types, including events triggered by security controls, such as Windows Defender Antivirus and exploit protection. Use this reference to construct queries that return information from this table.
 

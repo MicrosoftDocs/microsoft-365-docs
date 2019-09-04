@@ -21,6 +21,9 @@ search.appverid:
 
 # Manage incidents in Microsoft Threat Protection
 
+**Applies to:**
+- Microsoft Threat Protection
+
 Managing incidents is an important part of every cybersecurity operation. You can manage incidents by selecting an incident from the **Incidents queue**. You can assign incidents to yourself, change the status, classify, rename, or comment on them to keep track of their progress. 
 
 Selecting an incident from the **Incidents queue** brings up the **Incident management pane** where you can open the incident page for details.

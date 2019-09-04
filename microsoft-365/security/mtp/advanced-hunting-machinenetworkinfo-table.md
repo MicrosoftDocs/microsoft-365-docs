@@ -20,7 +20,7 @@ ms.topic: article
 # MachineNetworkInfo
 
 **Applies to:**
-- Microsoft 365 security center
+- Microsoft Threat Protection
 
 The MachineNetworkInfo table in the advanced hunting schema contains information about networking configuration of machines, including network adapters, IP and MAC addresses, and connected networks or domains. Use this reference to construct queries that return information from this table.
 
