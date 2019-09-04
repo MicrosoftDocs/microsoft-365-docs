@@ -25,14 +25,9 @@
 #### [Working with Microsoft Consulting Services](get-ready/apps-MCS.md)
 ## [Get started with Microsoft Managed Desktop](get-started/index.md)
 ### [Add Admin contacts](get-started/add-admin-contacts.md)
-### [Get started with devices](get-started/get-started-devices.md)
-#### [Obtain devices]
-#### [Order new devices](get-started/devices.md)
-##### [Register devices in Microsoft Managed Desktop yourself](get-started/register-devices-self.md)
-##### [Register devices in Microsoft Managed Desktop for Partners](get-started/register-devices-partner.md)
-#### [Reuse existing devices]
-##### [Register devices in Microsoft Managed Desktop yourself](get-started/register-devices-self.md)
-##### [Register devices in Microsoft Managed Desktop for Partners](get-started/register-devices-partner.md)
+### [Set up devices](get-started/set-up-devices.md)
+#### [Register new devices in Microsoft Managed Desktop yourself](get-started/register-devices-self.md)
+#### [Register existing devices in Microsoft Managed Desktop yourself](get-started/register-reused-devices-self.md)
 #### [Get your users ready to use devices]
 ### [Deploy apps](get-started/deploy-apps.md)
 #### [Intune Company Portal](get-started/company-portal.md)
