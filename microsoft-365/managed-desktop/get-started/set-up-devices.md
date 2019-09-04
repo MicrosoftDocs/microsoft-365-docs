@@ -19,7 +19,7 @@ We recommend working with one of our approved device partners. You can work with
 1. Review the list of [currently approved devices](../service-description/device-list.md).
 2. Order the devices, working with an approved device partner.
 3. Once they've arrived, do either of the following:
-    - Register the devices in Microsoft Managed Desktop yourself
+    - Register new devices in Microsoft Managed Desktop yourself
     - Work with a partner to register the devices
 4. Get your users ready to use Microsoft Managed Desktop devices
 
@@ -27,7 +27,7 @@ We recommend working with one of our approved device partners. You can work with
 
 1. Review the list of [currently approved devices](../service-description/device-list.md) to identify which of your devices is approved for use with Microsoft Managed Desktop. If you re-use an existing device, it will be re-imaged.
 2. Do either of the following:
-    - Register the devices in Microsoft Managed Desktop yourself
+    - Register existing devices in Microsoft Managed Desktop yourself
     - Work with a partner to register the devices
 3. Get your users ready to use Microsoft Managed Desktop devices
 
