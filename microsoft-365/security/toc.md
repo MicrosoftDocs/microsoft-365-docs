@@ -1,7 +1,6 @@
 # [Security solutions](index.md)
 
 ## [Microsoft Threat Protection]()
-
 ### [Overview]()
 #### [What is Microsoft Threat Protection?](mtp/microsoft-threat-protection.md)
 #### [Microsoft 365 security center](mtp/overview-security-center.md)
