@@ -45,4 +45,6 @@ In the investigation details view, you can review and approve pending actions.
 
 ![Investigation details](../images/mtp-air-investdetails.png)
 
-1. 
+1. On an [investigation details](mtp-autoir-results.md) page, select the **Pending actions** (or **Actions**) tab. Items that are pending approval are listed here.
+
+2. Select an item in the list, and then choose **Approve** or **Reject**.
