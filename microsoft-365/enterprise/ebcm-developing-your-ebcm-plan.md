@@ -86,3 +86,16 @@ During your Business Impact Analysis and Dependency Analysis, you will be mappin
 - If your internal Incident Management processes rely on voice communications to coordinate your responses, establish an alternative telephony solution for use during a crisis. This solution doesn’t need to have full parity with your primary service but should provide the minimum level of collaboration to coordinate your Business Continuity and Incident Management teams. Additionally, asking users to publish their mobile phone numbers in your Global Address List can provide an additional layer of backup communication in extreme cases.
 - You may want to create a custom service health dashboard, or other such site, which can provide status updates during an incident. Training users where to go for information beforehand will help reduce unnecessary calls to help desk and instill confidence in your user base that the situation is being handled quickly and efficiently. Use the O365 Service Communications API to tie this into M365 for an even greater level of visibility.  
 - Where you store your Business Continuity Plans and Standard Operating Procedures. We recommend maintaining online and offline copies of critical documentation, such as with SharePoint Online or OneDrive for Business configured for automatic sync to local devices. For Service/Network Operations Centers and other similar teams that will be absolutely critical for recovery, you may also want to keep hard copies available to be used in the event of an emergency.
+
+## Know Your External Points of Integration
+
+Regardless of business model, every company has points of integration with their customers, partners and vendors. The business value supply chain is build on integration with external entities. Improving business continuity in the event of service disruption requires consideration – and protection – of each point of integration.  
+As you analyze your supply chain, external communications should be considered in the same way internal communications are analyzed. Do your customers rely on your Exchange Online servers as the only method of contacting you? Have you established and made your suppliers aware of alternative communication methods, in the event uptime is impacted? Here's
+a sample table that suggests how to organize your thinking   
+
+|external entity name|impacting incident scenario|Microsoft 365 services integrated|alternatives|
+|---------|---------|---------|---------|
+|`vendor name`|mail flow|Exchange Online is the only means of communication with Contoso|set up external Microsoft Teams channels or a third-party collaboration software          |
+|`service supplier name`|chat|Microsoft Teams|third party instant messaging|
+|`partner name`|voice|Microsoft Teams|mobile or public pstn      |
+|`supplier name`|file sharing|externally shared SharePoint sites and OneDrive|third party file sharing         |
