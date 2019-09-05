@@ -1,7 +1,7 @@
 ---
 title: "Migrate from Microsoft 365 Business to Microsoft 365 Enterprise"
 ms.author: josephd
-author: Josephd_MSFT
+author: JoeDavies-MSFT
 manager: laurawi
 audience: Admin
 ms.topic: article
