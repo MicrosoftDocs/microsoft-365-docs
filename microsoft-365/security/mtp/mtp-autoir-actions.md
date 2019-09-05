@@ -33,7 +33,7 @@ During and after an automated investigation in Microsoft Threat Protection, depe
 
 2. In the navigation pane, choose **Action center**. 
 
-2. In the Action Center, on the **Pending** tab, select an item in the list Depending on what you select, one of the following occurs:
+3. In the Action Center, on the **Pending** tab, select an item in the list. Depending on what you select, one of the following occurs:
 
     - If you select an item in the Investigation number column, the investigation details page opens. There, you can view the results of the investigation, and then either approve or reject the recommended action.
  
