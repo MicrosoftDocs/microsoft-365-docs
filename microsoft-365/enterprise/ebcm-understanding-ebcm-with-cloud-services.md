@@ -24,10 +24,12 @@ If you haven't updated your plans yet this series of topics helps you to plan yo
 
 **List of topics with links**
 
-- [Customer and Cloud Partner Responsiblities](customer-and-cloud-partner-ebcm-responsibilities.md)
-- [Microsoft 365 Service Resiliency](m365-service-resiliency)
-- [How Microsoft handles Microsoft 365 Service Interruptions](how-microsoft-handles-m365-service-interruptions)
-- [Considerations for your EBCM plan](considerations-for-your-ebcm-plan)
+- [Enterprise Business Continuity Legal Disclaimer](ebcm-legal-disclaimer.md)
+- [Customer and Cloud Partner Responsibilities](ebcm-customer-and-cloud-partner-ebcm-responsibilities.md)
+- [Microsoft 365 Service Resiliency](ebcm-m365-service-resiliency.md)
+- [Developing your Continuity Plan](ebcm-developing-your-ebcm-plan.md)
+
 - [EBCM technology dependency inventory](ebcm-technology-dependency-inventory)
 - [EBCM workforce and partner dependency inventory](ebcm-workforce-and-partner-dependency-inventory)
 - [Mapping of critical business processes to backup methods](map-critical-business-processes-to-backup-methods)
+- - [How Microsoft handles Microsoft 365 Service Interruptions](how-microsoft-handles-m365-service-interruptions)
