@@ -20,10 +20,7 @@ ms.topic: conceptual
 
 # Approve or reject actions related to automated investigation and remediation in Microsoft Threat Protection
 
-**Applies to**:
-- Microsoft 365
-
-Pending actions can be reviewed and approved (or rejected) within the Action center, within the context of an incident, or in an investigation details view.
+Pending actions for machines or user accounts can be reviewed and approved (or rejected) within the Action center, within the context of an incident, or in an investigation details view. Pending actions for email content can be reviewed and approved (or rejected) in the Office 365 Security & Compliance Center.
 
 ## Review a pending action in the Action center
 
@@ -31,15 +28,13 @@ Pending actions can be reviewed and approved (or rejected) within the Action cen
 
 1. To go to the Action Center, in the Microsoft 365 security center, click the **Action Center** icon.
 
-2. In the Action Center, on the **Pending** tab, select an item. This opens a flyout that includes details, links to an associated alert or investigation, and buttons to approve or reject the action.
+2. In the Action Center, on the **Pending** tab, select an item. Depending on the item, one of the following occurs:
 
-    ![Approve or reject an action](../images/air-actioncenter-itemselected.png)
-
-3. Review the information about the action, and then do one of the following:
-    - Select **Open investigation page** to view more details about the investigation
-    - Select **Approve** to take the recommended action and enable the investigation to proceed
-    - Select **Reject** for a recommended action you do not want to take at this time. (This can cause an investigation to halt or complete.)
+    - If the action pertains to email content, you are taken to the investigation in the Office 365 Security & Compliance Center, where you can view more information and then either approve or reject the recommended action.
+ 
+    - If the action pertains to a machine or user account, a flyout opens, where you can view more information, click links to an associated alert or investigation,and approve or reject the action.<br/>![Approve or reject an action](../images/air-actioncenter-itemselected.png)
 
 ## Review a pending action in the investigation details view
 
-In the investigation details view, you can review and approve pending actions on either the Key Findings tab or the Pending actions tab.
+In the investigation details view, you can review and approve pending actions. 
+
