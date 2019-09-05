@@ -27,6 +27,7 @@
 ### [Add Admin contacts](get-started/add-admin-contacts.md)
 ### [Set up devices](get-started/set-up-devices.md)
 #### [Register new devices in Microsoft Managed Desktop yourself](get-started/register-devices-self.md)
+##### [Register devices in Microsoft Managed Desktop for Partners](get-started/register-devices-partner.md)
 #### [Register existing devices in Microsoft Managed Desktop yourself](get-started/register-reused-devices-self.md)
 #### [Get your users ready to use devices]
 ### [Deploy apps](get-started/deploy-apps.md)
