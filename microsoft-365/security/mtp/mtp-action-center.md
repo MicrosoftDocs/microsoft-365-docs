@@ -29,9 +29,7 @@ In Microsoft Threat Protection, the Action center provides a view of current and
 
 1. Go to [https://securityoperations.microsoft.com](https://securityoperations.microsoft.com) and sign in. 
 
-2. Take one of the following steps:
-    - While viewing information about an incident, choose the **Investigations** tab.
-    - In the Microsoft 365 security center, in the navigation pane, choose **Action center**. 
+2. In the navigation pane, choose **Action center**. 
 
 3. In the Action center, you’ll see two tabs: **Pending** and **History**.
     - The **Pending** tab lists investigations that require review and approval by someone in your security operations team to proceed. Make sure to review and take action on pending items you see here.
