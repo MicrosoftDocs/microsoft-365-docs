@@ -35,7 +35,7 @@ During and after an automated investigation in Microsoft Threat Protection, depe
 
 3. In the Action Center, on the **Pending** tab, select an item in the list. Depending on what you select, one of the following occurs:
 
-    - If you select an item in the Investigation number column, the investigation details page opens. There, you can view the results of the investigation, and then either approve or reject the recommended action.
+    - If you select an item in the **Investigation number** column, the investigation details page opens. There, you can view the results of the investigation, and then either approve or reject the recommended action.
  
     - If you select a row in the list, a flyout opens, where you can view information about that item, click links to an associated alert or an investigation, and either approve or reject the action.<br/>![Approve or reject an action](../images/air-actioncenter-itemselected.png)
 
