@@ -48,7 +48,7 @@ Microsoft maintains multiple channels for service status communications that cus
  
 Providing access to Microsoft 365 online services is a partnership between your organization and Microsoft. The following chart summarizes the balance of responsibility for both Microsoft and the customer during a service incident and during regular operations.
 
-![balance of customer and Microsoft responsibilities](\media\ebcm\responsibilities.png)
+![balance of customer and Microsoft responsibilities](media\ebcm\responsibilities.png)
 
 ## Your environment - service continuity
 When thinking about your continuity plan, be mindful of events which may impact your organization and it's overall ability to communicate. At a high level there are three factors that could impact your business.
