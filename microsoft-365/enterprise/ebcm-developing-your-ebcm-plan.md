@@ -20,7 +20,7 @@ description: Things to consider when developing your cloud aware business contin
 
 This topic provides guidance on developing a business continuity plan that takes Microsoft 365 dependencies into account. Here we recommend methods for analyzing your business functions and identifying the ones which depend on Microsoft 365 services. You'll perform this analysis with the anticipation that there will be service failures and that you have to prepare for those possibilities.
 
-Broadly speaking, business continuity planning involves three phases, assessment, planning, and capability validation.
+Broadly speaking, business continuity planning involves four aspects phases, assessment, planning, capability validation,and communication and coordination.
 
 ## Assesment
 First you must identify the business functions in your org and the services and processes that support them. This includes completing a business impact analysis, where each business function is ranked according to how critical it is and you identify the processes and services that each one depends on. Here's a sample table you can refer to help you get started with your own assessment.
@@ -73,3 +73,16 @@ Here's a sample dependency analysis (DA) you can start from. In your dependency 
 
 Once you have inventoried your business processes and mapped out relationships to other process and technologies, you need to build validation scenarios for all the processes. Basically, figure out how you are going to validate your business process continuity plans. You'll probably find that some are more important that others and you'll want to prioritize those.
 Don't forget that regularly training employees on incident response and continuity measures is important, once the plan is established. Post incident reviews should be used to enhance your resiliency strategies by incorporating learnings from each validation or test.
+
+## Incident Coordination and Communication
+
+During a service incident, normal communications channels may be impacted or degraded, so you should pre-arrange alternatives to help your organization stay connected during an incident. It is critical that the communication channels be established, vetted for security and compliance, and users trained on their use prior to a disruption. Failing from a known state to another known state is far preferable to users coming up with ad-hoc, unknown solutions in the middle of a crisis.
+
+At Microsoft, each service team has established internal alternative communication channels to help us coordinate when our normal communications channels aren’t available. These include backup telephony and audio-conferencing solutions, Yammer groups, Teams groups, internal Service Health Dashboards, and internal Incident Management software.
+
+During your Business Impact Analysis and Dependency Analysis, you will be mapping critical processes and the technologies or services they depend on. Pay special attention to communication during this phase of planning and think of alternatives. For example:
+
+- If email is your primary method of keeping your users and stakeholders informed, and your email service is degraded or unavailable, you can use another service such as Microsoft Teams, Yammer, or another 3rd-party service as a backup. The key is to establish these beforehand and train your users on where to go. A Yammer thread isn’t going to be useful if no one knows it exists or if no one has it bookmarked.  
+- If your internal Incident Management processes rely on voice communications to coordinate your responses, establish an alternative telephony solution for use during a crisis. This solution doesn’t need to have full parity with your primary service but should provide the minimum level of collaboration to coordinate your Business Continuity and Incident Management teams. Additionally, asking users to publish their mobile phone numbers in your Global Address List can provide an additional layer of backup communication in extreme cases.
+- You may want to create a custom service health dashboard, or other such site, which can provide status updates during an incident. Training users where to go for information beforehand will help reduce unnecessary calls to help desk and instill confidence in your user base that the situation is being handled quickly and efficiently. Use the O365 Service Communications API to tie this into M365 for an even greater level of visibility.  
+- Where you store your Business Continuity Plans and Standard Operating Procedures. We recommend maintaining online and offline copies of critical documentation, such as with SharePoint Online or OneDrive for Business configured for automatic sync to local devices. For Service/Network Operations Centers and other similar teams that will be absolutely critical for recovery, you may also want to keep hard copies available to be used in the event of an emergency.
