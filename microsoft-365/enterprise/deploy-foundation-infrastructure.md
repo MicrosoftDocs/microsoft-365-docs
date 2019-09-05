@@ -55,7 +55,7 @@ Here's the foundation infrastructure in the overall Microsoft 365 Enterprise dep
 
 ## At-a-glance
 
-The [Microsoft 365 Enterprise foundation infrastructure poster](http://aka.ms/m365efoundinfraposter) is a central location for you to view, for each phase:
+The [Microsoft 365 Enterprise foundation infrastructure poster](media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf) is a central location for you to view, for each phase:
 
 - The overall goals of the phase for administrators and users
 - The services, features, and tools
@@ -64,7 +64,7 @@ The [Microsoft 365 Enterprise foundation infrastructure poster](http://aka.ms/m3
 - The process for onboarding a new user
 - How to monitor and update
 
-![](./media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.png)
+[![Image for the Microsoft 365 Enterprise foundation infrastructure poster](./media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.png)](media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf)
 
 To download a copy of the poster, click [here](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf).
 
