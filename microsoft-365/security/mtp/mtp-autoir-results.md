@@ -45,7 +45,9 @@ You can open the investigation details view by using the Action center or an inc
 
 2. In the navigation pane, choose **Incidents**. 
 
-3. Select an item in the list to open the incident details view.
+3. Select an item in the list to open the incident details view.<br/>![Incident details](../images/mtp-incidentdetails-tabs.png)
+
+4. On the **Investigations** tab, select an investigation in the list.
 
 ## Investigation details
 
