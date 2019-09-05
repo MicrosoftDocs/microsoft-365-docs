@@ -50,22 +50,24 @@ While an investigation is running, any other related alerts that are generated a
 ## Requirements for AIR in Microsoft Threat Protection
 
 - Subscription requirements: 
-    - Microsoft 365 E5 <br/>
-    or 
-    - Microsoft 365 E3 together with Identity & Threat Protection. <br/>
-    To learn more, see [Microsoft 365 plans](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview#plans).
+    - Either Microsoft 365 E5, or Microsoft 365 E3 together with Identity & Threat Protection.
+    - See [Microsoft 365 plans](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview#plans).
+
 - Network requirements:
     - [Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) enabled
     - [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) (MCAS) configured
     - [MCAS integrated with Azure ATP](https://docs.microsoft.com/cloud-app-security/aatp-integration)
+
 - Identity requirements:
     - [User accounts synced to Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-sync-whatis)
     - [Azure Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/overview) enabled
     - [User risk policy](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-user-risk-policy) configured
+
 - Windows machine requirements:  
     - Windows 10, version 1709 or later installed (To learn more, see [Windows 10 release information](https://docs.microsoft.com/windows/release-information/).)
     - [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints) configured
     - [Windows Defender Antivirus](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features) configured
+
 - Permissions:
     - To configure AIR, you must be a global administrator or security administrator.
     - To use AIR capabilities, you must be a global administrator, security administrator, security operator, or security reader.
