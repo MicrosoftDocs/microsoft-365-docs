@@ -47,6 +47,27 @@ Once an automated investigation is triggered, the process begins immediately. In
 
 While an investigation is running, any other related alerts that are generated are added to the investigation until it completes. If the same threat is seen on other entities (such as identities, files, processes, services, drivers, etc.), those entities are added to the investigation. If an incriminated entity is seen in elsewhere, the automated investigation will expand its scope to include that entity, and a general security playbook will run.
 
+## Requirements for AIR in Microsoft Threat Protection
+
+- Subscription requirements: 
+    - Microsoft 365 E5 <br/>
+    or 
+    - Microsoft 365 E3 together with Identity & Threat Protection. <br/>
+    To learn more, see [Microsoft 365 plans](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview#plans).
+- Network requirements:
+    - Azure ATP enabled
+    - Microsoft Cloud App Security configured
+- Identity requirements:
+    - User accounts synced to Azure Active Directory
+    - Azure Identity Protection enabled
+    - User risk policy configured
+- Windows machine requirements:  
+    - Windows 10, version 1709 or later (To learn more, see [Windows 10 release information](https://docs.microsoft.com/windows/release-information/).)
+    - [Onboarded to Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)
+    - [Windows Defender Antivirus configured](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features)
+
+
+
 ## Next steps
 
 [Approve or reject actions related to automated investigation and remediation in Microsoft 365](mtp-autoir-actions.md)
