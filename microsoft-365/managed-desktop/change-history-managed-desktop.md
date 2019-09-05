@@ -14,6 +14,19 @@ ms.localizationpriority: normal
 
 This topic lists new and updated topics in the [Microsoft Managed Desktop documentation](index.yml).
 
+## August 2019
+New or changed topic | Description
+--- | ---
+[Working with Microsoft Consulting Services](get-ready/apps-mcs.md) | Updated topic
+[Admin support for Microsoft Managed Desktop](working-with-managed-desktop/admin-support.md) | Updated topic
+[Getting help for end users](working-with-managed-desktop/end-user-support.md) | Updated topic
+[Prerequisites for Microsoft Managed Desktop](get-ready/prerequisites.md) | Updated topic
+[Microsoft Managed Desktop technologies](intro/technologies.md) | Updated topic
+
+
+
+
+
 ## July 2019
 New or changed topic | Description
 --- | ---
@@ -41,7 +54,7 @@ New or changed topic | Description
 [Prepare mapped drives for Microsoft Managed Desktop](get-ready/mapped-drives.md) | New topic
 [Prepare certificates and network profiles for Microsoft Managed Desktop](get-ready/certs-wifi-lan.md) | New topic
 [Order Microsoft Managed Desktop devices](get-started/devices.md) | Updated topic
-
+[Getting help for end users](working-with-managed-desktop/end-user-support.md)
 
 ## April 2019
 New or changed topic | Description
