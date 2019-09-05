@@ -41,7 +41,6 @@ In Microsoft Threat Protection, the Action center provides a view of current and
 
 5. Select an item in the list to view more details about an investigation. This opens the investigation details view.<br/>![Investigation details](../images/mtp-air-investdetails.png)
 
-
 ## Next steps 
 
 [View the results of an automated investigation in Microsoft 365](mtp-autoir-results.md)

@@ -41,8 +41,6 @@ During and after an automated investigation in Microsoft Threat Protection, depe
 
 ## Review a pending action in the investigation details view
 
-In the investigation details view, you can review and approve pending actions. 
-
 ![Investigation details](../images/mtp-air-investdetails.png)
 
 1. On an [investigation details](mtp-autoir-results.md) page, select the **Pending actions** (or **Actions**) tab. Items that are pending approval are listed here.
