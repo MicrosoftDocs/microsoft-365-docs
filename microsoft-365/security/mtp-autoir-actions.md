@@ -20,9 +20,6 @@ ms.topic: conceptual
 
 # Approve or reject actions related to automated investigation and remediation in Microsoft Threat Protection
 
-**Applies to**:
-- Microsoft 365
-
 Pending actions can be reviewed and approved (or rejected) within the Action center, within the context of an incident, or in an investigation details view.
 
 ## Review a pending action in the Action center
