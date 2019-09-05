@@ -43,5 +43,6 @@ In Microsoft Threat Protection, the Action center provides a view of current and
 
 ## Next steps 
 
-[View the results of an automated investigation in Microsoft 365](mtp-autoir-results.md)
+[Learn about hunting in Microsoft Threat Protection](hunting.md)
 
+[Learn about incidents in Microsoft Threat Protection](incidents-overview.md)
