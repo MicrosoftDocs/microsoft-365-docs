@@ -39,6 +39,14 @@ You can open the investigation details view by using the Action center or an inc
 > [!NOTE]
 > If the item you select in either the Action center or incident details page is a mailbox investigation, you'll be taken to the investigation details in the Office 365 Security & Compliance Center. 
 
+### Open an investigation from an incident details page
+
+1. Go to [https://securityoperations.microsoft.com](https://securityoperations.microsoft.com) and sign in. 
+
+2. In the navigation pane, choose **Incidents**. 
+
+3. Select an item in the list to open the incident details view.
+
 ## Investigation details
 
 The investigation details view resembles the following image:
