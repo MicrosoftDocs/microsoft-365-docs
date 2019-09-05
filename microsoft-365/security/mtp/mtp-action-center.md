@@ -34,7 +34,9 @@ To show only the columns you want to see, select **Customize columns**.
 
 ![Action Center in Microsoft Threat Protection](../images/mtp-action-center.png)
 
-Select an item in the list to view more details about an investigation. 
+Select an item in the list to view more details about an investigation.
+- If the investigation pertains to email content (as in, the entity is a mailbox), investigation details open in the Office 365 Security & Compliance Center ([https://protection.office.com/threatinvestigation](https://protection.office.com/threatinvestigation)).
+- If the investigation involves a user account or a device, investigation details open in the security center ([https://securityoperations.microsoft.com](https://securityoperations.microsoft.com)).
 
 ## Next steps 
 
