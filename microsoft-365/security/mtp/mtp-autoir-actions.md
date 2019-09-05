@@ -29,7 +29,9 @@ Pending actions for machines or user accounts can be reviewed and approved (or r
 
 ![Action Center](../images/air-actioncenter.png)
 
-1. To go to the Action Center, in the Microsoft 365 security center, click the **Action Center** icon.
+1. Go to [https://securityoperations.microsoft.com](https://securityoperations.microsoft.com) and sign in. 
+
+2. In the navigation pane, choose **Action center**. 
 
 2. In the Action Center, on the **Pending** tab, select an item. Depending on the item, one of the following occurs:
 
@@ -41,3 +43,6 @@ Pending actions for machines or user accounts can be reviewed and approved (or r
 
 In the investigation details view, you can review and approve pending actions. 
 
+![Investigation details](../images/mtp-air-investdetails.png)
+
+1. 
