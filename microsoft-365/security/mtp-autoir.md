@@ -66,7 +66,10 @@ While an investigation is running, any other related alerts that are generated a
     - Windows 10, version 1709 or later installed (To learn more, see [Windows 10 release information](https://docs.microsoft.com/windows/release-information/).)
     - [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints) configured
     - [Windows Defender Antivirus configured](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features)
-
+- Permissions:
+    - To configure AIR, you must be a global administrator or security administrator.
+    - To use AIR capabilities, you must be a global administrator, security administrator, security operator, or security reader.
+    - See [Permissions in the Microsoft 365 compliance center and Microsoft 365 security center](https://docs.microsoft.com/office365/securitycompliance/permissions-microsoft-365-compliance-security) 
 
 
 ## Next steps
