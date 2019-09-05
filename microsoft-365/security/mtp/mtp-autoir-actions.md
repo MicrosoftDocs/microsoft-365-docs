@@ -33,11 +33,11 @@ During and after an automated investigation in Microsoft Threat Protection, depe
 
 2. In the navigation pane, choose **Action center**. 
 
-2. In the Action Center, on the **Pending** tab, select an item. Depending on the item, one of the following occurs:
+2. In the Action Center, on the **Pending** tab, select an item in the list Depending on what you select, one of the following occurs:
 
-    - If the action pertains to email content, you are taken to the investigation in the Office 365 Security & Compliance Center, where you can view more information and then either approve or reject the recommended action.
+    - If you select an item in the Investigation number column, the investigation details page opens. There, you can view the results of the investigation, and then either approve or reject the recommended action.
  
-    - If the action pertains to a machine or user account, a flyout opens, where you can view more information, click links to an associated alert or investigation,and approve or reject the action.<br/>![Approve or reject an action](../images/air-actioncenter-itemselected.png)
+    - If you select a row in the list, a flyout opens, where you can view information about that item, click links to an associated alert or an investigation, and either approve or reject the action.<br/>![Approve or reject an action](../images/air-actioncenter-itemselected.png)
 
 ## Review a pending action in the investigation details view
 
