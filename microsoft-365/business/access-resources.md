@@ -38,7 +38,7 @@ Complete the following steps to enable your organization's Azure AD joined devic
     
 3. Once the Windows 10 devices are Azure AD joined, each user should reboot their devices and login with their Microsoft 365 Business credentials. All devices will now have access to on-premises resources as well.
     
-No additional steps are required to get access to on-premise resources for Azure AD joined devices. This is built-in functionality available in Windows 10. 
+No additional steps are required to get access to on-premises resources for Azure AD joined devices. This is built-in functionality available in Windows 10. 
   
 If your organization is not ready to deploy in the Azure AD Joined Device Configuration described above, consider setting up [Hybrid Azure AD Joined device configuration](manage-windows-devices.md).
   
