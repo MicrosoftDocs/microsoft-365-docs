@@ -20,11 +20,15 @@ ms.topic: conceptual
 
 # View the results of an automated investigation in Microsoft Threat Protection
 
-During and after an automated investigation, you can view detailed information about the investigation in an investigation details view. You can open this view in one of two ways:
+During and after an automated investigation, you can view detailed information about the investigation in an investigation details view. 
+
+## Open the investigation details view
+
+You can open the investigation details view by using one of several methods:
 - In the Action center, select an item on either the **Pending** or **History** tab.
 - On an incident details page, select **Investigations**, and then select an item in the list.
 
-Either step takes you to the investigation details view, which resembles the following image:
+Either step takes you to an investigation details view, which resembles the following image:
 
 ![Investigation details](../images/mtp-air-investdetails.png)
 
