@@ -20,7 +20,7 @@ ms.topic: conceptual
 
 # View the results of an automated investigation in Microsoft Threat Protection
 
-During and after an automated investigation, you can view detailed information about the investigation in an investigation details view. 
+During and after an automated investigation, you can view detailed information about the investigation in an investigation details view. Once there, you can review remedation actions following an automated investigation.
 
 ## Open the investigation details view
 
