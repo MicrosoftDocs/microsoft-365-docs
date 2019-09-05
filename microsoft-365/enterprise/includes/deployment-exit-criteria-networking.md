@@ -45,6 +45,6 @@ If needed, [Step 4](../networking-configure-proxies-firewalls.md) can help you w
 <a name="crit-networking-step5"></a>
 ### Optional: Your clients and Office 365 applications are configured for optimal performance
 
-You have optimized the Transmssion Control Protocol (TCP) settings on your client devices and for Exchange Online, Skype for Business Online, SharePoint Online, and Project Online services.
+You have optimized the Transmission Control Protocol (TCP) settings on your client devices and for Exchange Online, Skype for Business Online, SharePoint Online, and Project Online services.
 
 If needed, [Step 5](../networking-optimize-tcp-performance.md) can help you with this option.
