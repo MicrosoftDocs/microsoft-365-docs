@@ -26,7 +26,7 @@ During and after an automated investigation, you can view detailed information a
 
 ![Investigation details](../images/mtp-air-investdetails.png)
 
-You can open the investigation details view by using the Action center or an incident details page.
+You can open the investigation details view by selecting an item in the Action center, or by selecting an investigation from an incident details page.
 
 ### Select an item in the Action center
 
