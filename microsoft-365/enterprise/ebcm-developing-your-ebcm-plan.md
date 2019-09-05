@@ -16,7 +16,7 @@ ms.custom:
 description: Things to consider when developing your cloud aware business continuity plan. 
 ---
 
-# Developing your continuity plan
+# Developing your Continuity Plan
 
 This topic provides guidance on developing a business continuity plan that takes Microsoft 365 dependencies into account. Here we recommend methods for analyzing your business functions and identifying the ones which depend on Microsoft 365 services. You'll perform this analysis with the anticipation that there will be service failures and that you have to prepare for those possibilities.
 
@@ -28,6 +28,7 @@ First you must identify the business functions in your org and the services and 
 **Sample Business Impact Assessment (BIA)**
 
 This is a BIA document for `name of the service, system, process, or function`
+
 |BIA fields|Description|
 |---------|---------|
 |BIA type|`is it a business process or technology, service or system?`|
