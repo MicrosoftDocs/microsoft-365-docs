@@ -84,7 +84,6 @@ While an investigation is running, any other related alerts that are generated a
     - To use AIR capabilities, you must be a global administrator, security administrator, security operator, or security reader.
     - See [Permissions in the Microsoft 365 compliance center and Microsoft 365 security center](https://docs.microsoft.com/office365/securitycompliance/permissions-microsoft-365-compliance-security) 
 
-
 ## Next steps
 
 [Approve or reject actions related to automated investigation and remediation in Microsoft 365](mtp-autoir-actions.md)

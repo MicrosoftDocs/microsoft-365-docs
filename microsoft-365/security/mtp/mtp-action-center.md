@@ -20,12 +20,7 @@ ms.topic: conceptual
 
 # The Action center in Microsoft Threat Protection
 
-In Microsoft Threat Protection, the Action center provides a view of current and past investigations across 
-- [Azure Advanced Threat Protection](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp),
-- [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations), and 
-- [Office 365 Advanced Threat Protection](https://docs.microsoft.com/office365/securitycompliance/office-365-atp). 
-
-This not only enables your security operations team to operate more effectively and efficiently, it also provides a more comprehensive view of Microsoft Threat Protection at work for your organization. 
+In Microsoft Threat Protection, the Action center provides a view of current and past investigations across identities, devices, and mailboxes. This not only enables your security operations team to operate more effectively and efficiently, it also provides a more comprehensive view of Microsoft Threat Protection at work for your organization. 
 
 > [!NOTE]
 > You must be a global administrator, security administrator, security operator, or security reader to perform the tasks described in this article. To learn more, see [Microsoft 365 security center: roles and permissions](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions).
