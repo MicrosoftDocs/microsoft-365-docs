@@ -21,15 +21,15 @@ search.appverid:
 
 # Manage incidents in Microsoft Threat Protection
 
-**Applies to:**
-- Microsoft Threat Protection
-
-Managing incidents is an important part of every cybersecurity operation. You can manage incidents by selecting an incident from the **Incidents queue**. You can assign incidents to yourself, change the status, classify, rename, or comment on them to keep track of their progress. 
-
-Selecting an incident from the **Incidents queue** brings up the **Incident management pane** where you can open the incident page for details.
+Managing incidents is critical in ensuring that threats are contained and addressed. In Microsoft Threat Protection, you have access to managing incidents on endpoints, identities, and mailboxes. 
 
 
-From the management pane, you'll be able to assign an incidents to yourself and change the status and classification. Opening the incident page allows you to take other management actions.
+You can manage incidents by selecting an incident from the **Incidents queue**. 
+
+You can edit the name of an incident, set its classification, resolve it, or assign the incident to yourself. 
+
+## Edit incident name
+By default, 
  
 ## Assign incidents
 If an incident has not been assigned yet, you can select **Assign to me** to assign the incident to yourself. Doing so assumes ownership of not just the incident, but also all the alerts associated with it.

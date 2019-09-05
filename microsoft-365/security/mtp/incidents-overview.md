@@ -28,7 +28,7 @@ The basis of all incidents are alerts. Alerts are created when an anomalous even
 
 Microsoft Threat Protection connects the dots on individual alerts seen across endpoints, identities, and mailboxes to tell the broader story of an attack.  Suspicious events that are seen to show characteristics of being part of a larger attack are aggregated into an incident. 
 
-You'll know exactly where an attack started, impacted endpoints, affected users, and other details to help you see the extent of the attack.
+You'll know exactly where an attack started, impacted endpoints, affected users, affected mailboxes, and other details to help you see the extent of the attack.
 
 
 Malicious events on the following entities are surfaced in Microsoft 365 security center:
