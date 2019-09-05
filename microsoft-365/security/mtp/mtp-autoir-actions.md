@@ -22,6 +22,9 @@ ms.topic: conceptual
 
 Pending actions for machines or user accounts can be reviewed and approved (or rejected) within the Action center, within the context of an incident, or in an investigation details view. Pending actions for email content can be reviewed and approved (or rejected) in the Office 365 Security & Compliance Center.
 
+> [!NOTE]
+> You must be a global administrator, security administrator, or security operator to approve or reject an action. Security readers can view, but not approve or reject, actions. To learn more about roles and permissions, see [Permissions in the Microsoft 365 compliance center and Microsoft 365 security center](https://docs.microsoft.com/office365/securitycompliance/permissions-microsoft-365-compliance-security).
+
 ## Review a pending action in the Action center
 
 ![Action Center](../images/air-actioncenter.png)
