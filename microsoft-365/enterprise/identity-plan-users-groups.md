@@ -26,7 +26,7 @@ In this step, you'll create your identity infrastructure that combines users, gr
 - Maintain control over who has access to resources in your environment.
 - Secure access with controls that ensure strong assurances of identity (users are who they say they are) and access from safe devices.
 - Provision resources in your environment with appropriate permissions to reduce the potential for harm and data leakage. 
-- Monitor your environment for anomalous user behavior and automatically taking action.
+- Monitor your environment for anomalous user behavior and automatically acting.
 
 ## Plan your primary identity provider
 

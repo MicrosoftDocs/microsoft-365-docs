@@ -32,9 +32,9 @@ In this section, you'll help prevent digital attacks on your organization by ens
 For your dedicated global admin accounts, you must also:
 
 1. Test per-user account or conditional access-based multi-factor authentication (MFA) settings on a test user account to ensure that MFA works correctly and predictably. MFA requires a secondary form of authentication, such as a verification code sent to a smart phone.
-2. Enable the **Baseline policy: Require MFA for admins** conditional access policy for your global administrator accounts, and use the strongest form of secondary authentication available in your organization. See [Multi-factor authentication](identity-access-prerequisites.md#protecting-administrator-accounts) for more information.
+2. Enable the **Baseline policy: Require MFA for admins** conditional access policy for your global administrator accounts and use the strongest form of secondary authentication available in your organization. See [Multi-factor authentication](identity-access-prerequisites.md#protecting-administrator-accounts) for more information.
 
-See [Protect your Office 365 global administrator accounts](https://docs.microsoft.com/office365/enterprise/protect-your-global-administrator-accounts#additional-protections-for-enterprise-organizations) for additonal protections.
+See [Protect your Office 365 global administrator accounts](https://docs.microsoft.com/office365/enterprise/protect-your-global-administrator-accounts#additional-protections-for-enterprise-organizations) for additional protections.
 
 > [!Note]
 > Organizations should use cloud-only identities to create privileged accounts, such as global administrators, for break-glass scenarios in emergencies, such as a cyberattack. For more information, see [Manage emergency-access administrative accounts in Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-emergency-access).
