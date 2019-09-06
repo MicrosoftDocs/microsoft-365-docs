@@ -3,7 +3,7 @@ title: "Step 1: Plan for users and groups"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 02/25/2019
+ms.date: 09/06/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -62,10 +62,10 @@ Additionally, some cloud services can be shared with users outside your organiza
 
 You can use groups in Azure AD for several purposes that simplify management of your cloud environment. For example, for Azure AD groups, you can:
 
-- Use group-based licensing to assign licenses for Office 365 and Enterprise Mobility + Security (EMS) to your user accounts automatically as soon as they are added in Azure AD or synchronized from AD DS. 
-- Add user accounts to specific groups dynamically based on user account attributes, such as department.  
+- Use group-based licensing to assign licenses to your user accounts automatically as soon as they are added in Azure AD or synchronized from AD DS. 
+- Add user accounts to specific groups dynamically based on user account attributes, such as Department.  
 - Automatically provision users for Software as a Service (SaaS) applications and to protect access to those applications with multi-factor authentication and other conditional access rules.
-- Provision permissions and levels of access for SharePoint Online team sites. Azure AD groups can also be used with scoped Azure Information Protection policies to protect files with encryption and permissions. 
+- Provision permissions and levels of access for SharePoint Online team sites. Azure AD groups can also be used with sensitivity or Azure Information Protection labels to protect files with encryption and permissions. 
 
 ## Results
 
@@ -76,7 +76,7 @@ When you complete this step, you’ll have:
 
 As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria.md#crit-identity-user-groups) for this step.
 
-Once your Azure AD users and groups are created, you can start assigning licenses and using Exchange Online. To roll out Exchange Online to your users, see [Deploy Exchange Online for Microsoft 365 Enterprise](exchangeonline-workload.md).
+Once your Azure AD users and groups are created, you can start assigning licenses and using productivity workloads such as OneDrive for Business or Exchange Online.
 
 ## Next step
 
