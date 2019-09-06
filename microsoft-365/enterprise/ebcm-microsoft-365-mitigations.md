@@ -16,18 +16,22 @@ ms.custom:
 description: Some sample mitigations for Microsoft 365 service incident scenarios. 
 ---
 
-# Service Incident Mitigation Scenarios
+# Service Incident Mitigation Strategies
 
-The scenarios below serve as examples of how to mitigate the impact an M365 service disruption has on your business functions.
+Here are some strategies and scenarios that show how the impact of a Microsoft 365 service incident on your business process can be mitigated.
 
 ## Leveraging Mobile App Access
-As mobile use has proliferated, there are new means to stay connected and M365 mobile applications can be a key part of your resiliency strategy. In addition to allowing your users to collaborate flexibly, mobile applications use cellular data for connectivity which offers an alternative means of connecting to the cloud.  
-If you decide to allow users to connect to M365 services via their mobile devices, preparation is required. Ensure that users have the apps downloaded and configured, along with any associated identity-authentication solutions. Microsoft Intune is recommended for secure configuration and management of mobile devices connecting to corporate resources.  
-Examples of how mobile applications can protect continuity of business communication and collaboration include: 
-- When your corporate network connection is disrupted at your worksite, providing no hard wired or wireless connectivity.  
-    - Mobile devices can circumvent this issue by accessing the service via Cellular Network. 
-    - When a M365 service connection protocol is impacted resulting in reduced or completely disrupted functionality.  
-    - For example, if Outlook MAPI connections experience an outage, users accessing their EXO mailboxes via the Outlook Desktop client will be negatively affected. Due to segmentation of the infrastructure that supports connectivity to the service, impact is often isolated to only one protocol. Connecting to your mailbox via Outlook Mobile, or Outlook on the Web, would be potential mitigations in this scenario.  
+
+As mobile use has proliferated, they are new means to stay connected and Microsoft 365 mobile applications can be a key part of your resiliency strategy. Because they connect to cloud services over the cellular provider network, they are not dependent on your organizations network infrastructure.
+
+If you decide to allow users to connect to Microsoft 365 services via their mobile devices you can use Microsoft Intune to securely configure and manage those devices. Once the devices are enrolled in your mobile management solution, there are a few additional preparatory steps to take:
+
+- plan and deploy your identity/authentication solution
+- Ensure that users have the apps downloaded and configured
+  <!--left off here  -->
+Examples of how mobile applications can protect continuity of business communication and collaboration include:
+
+- When a M365 service connection protocol is impacted resulting in reduced or completely disrupted functionality.For example, if Outlook MAPI connections experience an outage, users accessing their EXO mailboxes via the Outlook Desktop client will be negatively affected. Due to segmentation of the infrastructure that supports connectivity to the service, impact is often isolated to only one protocol. Connecting to your mailbox via Outlook Mobile, or Outlook on the Web, would be potential mitigations in this scenario.  
 
 
 |Microsoft 365 dependency|potential mitigations|
