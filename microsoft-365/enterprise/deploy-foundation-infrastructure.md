@@ -3,7 +3,7 @@ title: "Microsoft 365 Enterprise foundation infrastructure"
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 05/22/2019
+ms.date: 08/09/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -32,14 +32,14 @@ For a defined end-to-end path for deployment, you can use these phases to plan f
 
 The phases start with the most foundational (networking and identity), and then create layers of infrastructure settings and groups to:
 
-- Install the most current and secure version of Windows on your devices.
-- Install the most current version of Microsoft Office on your devices.
-- Manage your organization's devices.
+- Install the most current and secure version of Windows on your devices and keep it current.
+- Install the most current version of Microsoft Office on your devices and keep it current.
+- Manage your organization's devices and their access to apps.
 - Protect the information on those devices and in the cloud.
 
 However, you have the flexibility of configuring and rolling out the phases or steps within phases to fit your IT resources and business needs.
 
-- **If you are a smaller or newer organization**, follow the phases as needed to methodically build out your infrastructure.
+- **If you are a smaller or newer organization**, follow the phases as needed to methodically build out your infrastructure. For a simplified deployment for non-enterprises, click [here](deploy-foundation-infrastructure-non-enterprises.md).
 
 -  **If you are an enterprise organization**, view the phases as layers of IT infrastructure, rather than a defined path, and determine how to best work toward eventual adherence to the requirements for each layer across your organization.
 
@@ -55,7 +55,7 @@ Here's the foundation infrastructure in the overall Microsoft 365 Enterprise dep
 
 ## At-a-glance
 
-The [Microsoft 365 Enterprise foundation infrastructure poster](http://aka.ms/m365efoundinfraposter) is a central location for you to view, for each phase:
+The [Microsoft 365 Enterprise foundation infrastructure poster](media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf) is a central location for you to view, for each phase:
 
 - The overall goals of the phase for administrators and users
 - The services, features, and tools
@@ -64,7 +64,7 @@ The [Microsoft 365 Enterprise foundation infrastructure poster](http://aka.ms/m3
 - The process for onboarding a new user
 - How to monitor and update
 
-![](./media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.png)
+[![Image for the Microsoft 365 Enterprise foundation infrastructure poster](./media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.png)](media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf)
 
 To download a copy of the poster, click [here](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf).
 
@@ -75,7 +75,7 @@ The foundation infrastructure is a set of configured software and services that,
 
 However, it is important to note that the Microsoft 365 Enterprise foundation infrastructure is independent of the rollout of software and services to your users. ***You can configure the layers of the foundation infrastructure without having to roll out those layers to all of your users.***
 
-Therefore, it is possible to configure, test, and pilot elements of the foundation infrastructure well ahead of the rollout of those elements to the multitude of your users in the offices, regions, or divisions of your organization.
+It is possible to configure, test, and pilot elements of the foundation infrastructure well ahead of the rollout of those elements to the multitude of your users in the offices, regions, or divisions of your organization.
 
 For example, you create the settings for:
 
@@ -97,7 +97,7 @@ When you are ready to rollout elements of this infrastructure to users, you:
 | Mobile device management | Add accounts to the groups for device enrollment and device-based conditional access policies. |
 | Information protection | Add user accounts to the groups for Information Protection labels. |
 
-Once the foundation infrastructure is completed, tested, and piloted, you can roll out installed software, such as Windows 10 Enterprise and Office 365 ProPlus, and cloud-based services and protections, such as device enrollment and conditional access policies, to your users in the manner that best fits your business goals and IT resources.
+Once phases or elements of the foundation infrastructure are completed, tested, and piloted, you can roll out installed software, such as Windows 10 Enterprise and Office 365 ProPlus, and cloud-based services and protections, such as device enrollment and conditional access policies, to your users in the manner that best fits your business goals and IT resources.
 
 ## Deployment and project management strategies
 
@@ -109,7 +109,6 @@ If your organization is smaller and Microsoft 365 Business is not suitable for y
 
 
 ## Next step
-
 
 | Where I am | Where I need to go |
 |:-------|:-----|

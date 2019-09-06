@@ -21,8 +21,13 @@ description: "Learn how to get access to on-premises resources like Line Of Busi
 
 # Access on-premises resources from an Azure AD-joined device in Microsoft 365 Business
 
-Any Windows 10 device that is Azure Active Directory joined will have access to all cloud-based resources such as your Office 365 apps and can be protected by Microsoft 365 Business. To also allow access to on-premises resources like Line Of Business (LOB) apps, file shares, and printers, you must synchronize your on-premises Active Directory with Azure Active Directory by using [Azure AD Connect](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect). See [Introduction to device management in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction) to learn more. 
-  
+Any Windows 10 device that is Azure Active Directory joined will have access to all cloud-based resources such as your Office 365 apps and can be protected by Microsoft 365 Business. To also allow access to on-premises resources like Line Of Business (LOB) apps, file shares, and printers, you must synchronize your on-premises Active Directory with Azure Active Directory by using [Azure AD Connect](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect). The following video details the steps for how to set this up for the most common scenario.
+ 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3C9hO]
+
+See [Introduction to device management in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction) to learn more.
+The steps are also summarized in the following sections.
+
 ## Run Azure AD Connect
 
 Complete the following steps to enable your organization's Azure AD joined devices to access on-premises resources.
@@ -33,7 +38,7 @@ Complete the following steps to enable your organization's Azure AD joined devic
     
 3. Once the Windows 10 devices are Azure AD joined, each user should reboot their devices and login with their Microsoft 365 Business credentials. All devices will now have access to on-premises resources as well.
     
-No additional steps are required to get access to on-premise resources for Azure AD joined devices. This is built-in functionality available in Windows 10. 
+No additional steps are required to get access to on-premises resources for Azure AD joined devices. This is built-in functionality available in Windows 10. 
   
 If your organization is not ready to deploy in the Azure AD Joined Device Configuration described above, consider setting up [Hybrid Azure AD Joined device configuration](manage-windows-devices.md).
   
