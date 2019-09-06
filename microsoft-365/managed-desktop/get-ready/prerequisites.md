@@ -34,7 +34,7 @@ When you're ready to get started with Microsoft Managed Desktop, contact your Mi
 Microsoft Managed Desktop requires certain license options in order to function. These options are available in a number of various license bundles, some of which you might already own. This table shows which necessary options are available in which licenses and summarizes their role in Microsoft Managed Desktop.
 
 > [!TIP]
-> To assign these license options to specific users, that you take advantage of the [group-based licensing feature](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal) of Azure Active Directory.
+> To assign these license options to specific users, we recommend that you take advantage of the [group-based licensing feature](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal) of Azure Active Directory.
 
 
 
