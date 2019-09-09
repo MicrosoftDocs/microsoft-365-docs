@@ -139,7 +139,7 @@ If your organization needs to comply with legal or regulatory standards, you're 
 </ul>
 
 <hr>
-<h2>Security and Compliance Resources</h2>
+<h2>Compliance Resources</h2>
 
 <ul class="panelContent cardsF">
     <li>
