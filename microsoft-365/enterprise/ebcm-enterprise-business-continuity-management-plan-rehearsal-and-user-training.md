@@ -23,10 +23,10 @@ Your technical staff should regularly review and make the necessary updates.
 
 Be sure to include these key topics in your service resiliency training:
 
-- the locations of critical business continuity resources such as call tree outlines and emergency procedures 
-<!-- - Awareness of role criticality with respect to business continuity -->
+- the locations of critical business continuity resources such as call tree outlines and emergency procedures
+- clear definitions of all participant roles and responsibilities during an incident
 - Incident policy guidelines and standard operating procedures
-- Available alternative forms of communication, such as emergency phone bridges, social media pages, or mobile phones 
+- Available alternative forms of communication, such as emergency phone bridges, social media pages, or mobile phones
 - Alternative means of connectivity, including the use of M365 mobile or web applications in the event rich clients are unavailable
 
 ## Plan the Exercise and Exercise the Plan
