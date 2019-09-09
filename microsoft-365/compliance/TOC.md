@@ -218,7 +218,6 @@
 #### [Conversation review sets](conversation-review-sets.md)
 #### [Troubleshoot AzCopy](troubleshooting-azcopy.md)
 
-
 ## [Manage eDiscovery cases](ediscovery-cases.md)
 ### [Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
 #### [Getting started in Advanced eDiscovery](quick-setup-for-advanced-ediscovery.md)
