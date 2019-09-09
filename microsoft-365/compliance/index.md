@@ -22,7 +22,7 @@ If your organization needs to comply with legal or regulatory standards, you're 
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/office/media/icons/caret-right-blue.svg" alt="Right-facing arrow" />
+                            <img src="https://docs.microsoft.com/office/media/icons/lock-protected-blue.svg" alt="Lock icon" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -43,7 +43,7 @@ If your organization needs to comply with legal or regulatory standards, you're 
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/office/media/icons/caret-right-blue.svg" alt="Right-facing arrow" />
+                            <img src="https://docs.microsoft.com/office/media/icons/task-checklist-planning-blue.svg" alt="Records management icon" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -61,7 +61,7 @@ If your organization needs to comply with legal or regulatory standards, you're 
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/office/media/icons/renew.svg" alt="Renew" />
+                            <img src="https://docs.microsoft.com/office/media/icons/process-flow-blue.svg" alt="Data governance icon" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -82,7 +82,7 @@ If your organization needs to comply with legal or regulatory standards, you're 
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/office/media/icons/caret-right-blue.svg" alt="Right-facing arrow" />
+                            <img src="https://docs.microsoft.com/office/media/icons/notebook-blue.svg" alt="Legal investigations icon" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -102,7 +102,7 @@ If your organization needs to comply with legal or regulatory standards, you're 
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/office/media/icons/caret-right-blue.svg" alt="Right-facing arrow" />
+                            <img src="https://docs.microsoft.com/office/media/icons/radar-blue.svg" alt="Data investigation icon" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -121,7 +121,7 @@ If your organization needs to comply with legal or regulatory standards, you're 
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/office/media/icons/caret-right-blue.svg" alt="Right-facing arrow" />
+                            <img src="https://docs.microsoft.com/office/media/icons/secure-document-blue.svg" alt="Compliance solutions icon" />
                         </div>
                     </div>
                     <div class="cardText">
