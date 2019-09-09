@@ -16,122 +16,146 @@ Learn about the robust security solutions and services in Microsoft  365 Securit
 
 <ul class="cardsF panelContent">
     <li>
-			<div class="cardSize">
-				<div class="cardPadding">
-					<div class="card">
-						<div class="cardImageOuter">
-									</div>
-										<div class="cardText">
-											<h3>Microsoft Threat Protection</h3>
-											<P><a href="microsoft-threat-protection.md" target="_blank">What is Microsoft Threat Protection?</a></p>
-											<P><a href="overview-security-center.md" target="_blank">Microsoft 365 security center</a></p>
-										</div>
-									</div>
-				</div>
-			</div>
-		<li>
-			<div class="cardSize">
-				<div class="cardPadding">
-					<div class="card">
-						<div class="cardImageOuter">
-					</div>
-						<div class="cardText">
-							<h3>Security Management</h3>
-							<P><a href="microsoft-secure-score.md" target="_blank">Secure Score</a></p>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src=images/blue-shield.png>
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Microsoft Threat Protection</h3>
+					<p><a href="mtp/microsoft-threat-protection.md" target="_blank">What is Microsoft Threat Protection?</a></p>
+						<p><a href="mtp/overview-security-center.md" target="_blank">Microsoft 365 security center</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src=images/security-management-icon.png>
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Security Management</h3>
+							<P><a href="mtp/microsoft-secure-score.md" target="_blank">Secure Score</a></p>
 							<P><a href="" target="_blank">Security baselines</a></p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</li>
-		<li>
-			<div class="cardSize">
-				<div class="cardPadding">
-					<div class="card">
-						<div class="cardImageOuter">
-					</div>
-						<div class="cardText">
-							<h3>Microsoft Cloud App Security</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src=images/cloud-security-icon.png>
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Microsoft Cloud App Security</h3>
 							<P><a href="https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security" target="_blank">What is Microsoft Cloud App Security?</a></p>
 							<P><a href="https://docs.microsoft.com/cloud-app-security/cas-compliance-trust" target="_blank">Microsoft Cloud App Security data security and privacy</a></p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</li> 
-		<li>
-			<div class="cardSize">
-				<div class="cardPadding">
-					<div class="card">
-						<div class="cardImageOuter">
-					</div>
-						<div class="cardText">
-							<h3>Microsoft Defender ATP</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+	<li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src=images/microsoft-defender-atp-banner.png>
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Microsoft Defender ATP</h3>
 							<P><a href="https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection" target="_blank">What is Microsft Defender Advanced Threat Protection?</a></p>
 							<P><a href="https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/get-started" target="_blank">Get started</a></p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</li> 
-		<li>
-			<div class="cardSize">
-				<div class="cardPadding">
-					<div class="card">
-						<div class="cardImageOuter">
-					</div>
-						<div class="cardText">
-							<h3>Office 365 ATP</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+	<li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src=images/mail-security-icon.png>
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Office 365 ATP</h3>
 							<P><a href="https://docs.microsoft.com/office365/securitycompliance/office-365-atp" target="_blank">What is Office 365 ATP?</a></p>
 							<P><a href="https://docs.microsoft.com/office365/securitycompliance/office-365-ti" target="_blank">Office 365 threat investigation and response</a></p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</li> 
-		<li>
-			<div class="cardSize">
-				<div class="cardPadding">
-					<div class="card">
-						<div class="cardImageOuter">
-					</div>
-						<div class="cardText">
-							<h3>Azure ATP</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+	<li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src=images/azure-atp-icon.png>
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Azure ATP</h3>
 							<P><a href="https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp" target="_blank">What is Azure ATP?</a></p>
 							<P><a href="https://docs.microsoft.com/azure-advanced-threat-protection/atp-architecture" target="_blank">Azure ATP architecture</a></p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</li>
-		<li>
-			<div class="cardSize">
-				<div class="cardPadding">
-					<div class="card">
-						<div class="cardImageOuter">
-					</div>
-						<div class="cardText">
-							<h3>Azure Security Center</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+	<li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src=images/asc-icon.png>
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Azure Security Center</h3>
 							<P><a href="https://docs.microsoft.com/azure/security-center/security-center-intro" target="_blank">What is Azure Security Center?</a></p>
 							<P><a href="https://docs.microsoft.com/azure/security-center/security-center-os-coverage" target="_blank">Supported platforms and features</a></p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</li> 		
-			<li>
-			<div class="cardSize">
-				<div class="cardPadding">
-					<div class="card">
-						<div class="cardImageOuter">
-					</div>
-						<div class="cardText">
-							<h3>Other security solutions</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+	<li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src=images/other-sec-icon.png>
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Azure Sentinel (preview)</h3>
 							<P><a href="https://docs.microsoft.com/azure/sentinel/overview" target="_blank">What is Azure Sentinel? (Preview)</a></p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</li> 
-	</li>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
 </ul>
