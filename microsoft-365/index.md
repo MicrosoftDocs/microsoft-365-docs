@@ -94,7 +94,7 @@ description: Find documentation and resources for Microsoft 365--a complete, int
                                                 <div class="cardText">
                                                     <br />
                                                     <h3>Microsoft 365 Compliance</h3>
-                                                    <p>Microsoft 365 Compliance documentation to help your organization comply with legal or regulatory standards.</p>
+                                                    <p>Microsoft 365 Compliance solutions help your organization comply with legal or regulatory standards.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -114,7 +114,7 @@ description: Find documentation and resources for Microsoft 365--a complete, int
                                                 <div class="cardText">
                                                     <br />
                                                     <h3>Microsoft 365 Security</h3>
-                                                    <p>Microsoft 365 Security documentation to help your organization protect data.</p>
+                                                    <p>Microsoft 365 Security solutions help your organization protect data.</p>
                                                 </div>
                                             </div>
                                         </div>
