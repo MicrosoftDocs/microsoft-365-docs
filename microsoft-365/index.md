@@ -82,7 +82,7 @@ description: Find documentation and resources for Microsoft 365--a complete, int
                                 </a>
                             </li>
                             <li>
-                                <a href="https://docs.microsoft.com/compliance/" target="blank">
+                                <a href="https://docs.microsoft.com/microsoft-365/compliance/" target="blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -102,7 +102,7 @@ description: Find documentation and resources for Microsoft 365--a complete, int
                                 </a>
                             </li>
                             <li>
-                                <a href="https://docs.microsoft.com/security/" target="blank">
+                                <a href="https://docs.microsoft.com/microsoft-365/security/" target="blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
