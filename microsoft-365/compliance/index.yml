@@ -39,13 +39,7 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: linktext1
-            url: file1.md
-          - text: linktext2
-            url: file2.md
-      - linkListType: overview
-        links:
-          - text: linktext1
+          - text: Manage records in Microsoft 365
             url: file1.md
           - text: linktext2
             url: file2.md
@@ -55,15 +49,13 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: linktext1
+          - text: Import data
             url: file1.md
-          - text: linktext2
+          - text: Store data
             url: file2.md
-      - linkListType: overview
-        links:
-          - text: linktext1
+          - text: Retain data
             url: file1.md
-          - text: linktext2
+          - text: Supervise communications
             url: file2.md
 
   # Card
@@ -71,31 +63,21 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: linktext1
+          - text: Advanced eDiscovery
             url: file1.md
-          - text: linktext2
+          - text: Manage eDiscovery cases
             url: file2.md
-      - linkListType: overview
-        links:
-          - text: linktext1
+          - text: Manage legal holds
             url: file1.md
-          - text: linktext2
-            url: file2.md
   
   # Card
   - title: Manage data investigations
     linkLists:
       - linkListType: overview
         links:
-          - text: linktext1
+          - text: Manage a data investigation
             url: file1.md
-          - text: linktext2
-            url: file2.md
-      - linkListType: overview
-        links:
-          - text: linktext1
-            url: file1.md
-          - text: linktext2
+          - text: Create a new investigation
             url: file2.md
               
   # Card
@@ -103,13 +85,11 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: linktext1
+          - text: Compliance Manager
             url: file1.md
-          - text: linktext2
+          - text: Information barriers
             url: file2.md
-      - linkListType: overview
-        links:
-          - text: linktext1
+          - text: Customer Key
             url: file1.md
-          - text: linktext2
+          - text: Information protection for GDPR
             url: file2.md
