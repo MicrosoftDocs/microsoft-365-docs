@@ -334,7 +334,7 @@
 ## [Use sharing auditing in the audit log](use-sharing-auditing.md)
 ## [Search for eDiscovery activities in the audit log](search-for-ediscovery-activities-in-the-audit-log.md)
 
-# Regulatory compliance solutions
+# Microsoft 365 compliance solutions
 ## [Microsoft Service Trust Portal](get-started-with-service-trust-portal.md)
 ## [Compliance Manager (Classic)](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
 ## [Compliance Manager (Preview)](compliance-manager-overview.md)
@@ -368,6 +368,49 @@
 ### [GDPR for Project Server](gdpr-for-project-server.md)
 ### [GDPR for Office Web Apps Server and Office Online Server](gdpr-for-office-online-server.md)
 ### [GDPR for on-premises Windows Server file shares](gdpr-for-on-premises-file-shares.md)
+
+# [Regulatory compliance solutions](compliance-solutions-overview.md)
+
+## [ISO — Recommended action plan](iso-action-plan.md)
+## [NIST — Recommended action plan](nist-action-plan.md) 
+
+## [GDPR](gdpr.md)
+### [Recommended action plan for GDPR](gdpr-action-plan.md)
+
+### [Accountability readiness checklists]()
+#### [Accountability readiness checklists](gdpr-arc.md)
+#### [Azure](gdpr-arc-azure.md)
+#### [Dynamics 365](gdpr-arc-dynamics365.md)
+#### [Microsoft Support & Professional Services](gdpr-arc-prof-services.md)
+#### [Office 365](gdpr-arc-office365.md)
+
+### [Information protection](gdpr-information-protection.md)
+
+### [Data subject requests]()
+#### [Data subject requests](gdpr-data-subject-requests.md)
+#### [Azure](gdpr-dsr-azure.md)
+#### [Azure DevOps Services](gdpr-dsr-vsts.md)
+#### [Dynamics 365](gdpr-dsr-dynamics365.md)
+#### [Intune](gdpr-dsr-intune.md)
+#### [Microsoft Support & Professional Services](gdpr-dsr-prof-services.md)
+#### [Office 365](gdpr-dsr-office365.md)
+#### [Visual Studio Family](gdpr-dsr-visual-studio-family.md)
+
+### [Breach notification]()
+#### [Breach notification](gdpr-breach-notification.md)
+#### [Azure](gdpr-breach-azure.md)
+#### [Dynamics 365](gdpr-breach-dynamics365.md)
+#### [Microsoft Support & Professional Services](gdpr-breach-microsoft-support-professional-services.md)
+#### [Office 365](gdpr-breach-office365.md)
+
+### [Data protection impact assessments]()
+#### [Data protection impact assessments](gdpr-data-protection-impact-assessments.md)
+#### [Azure](gdpr-dpia-azure.md)
+#### [Dynamics 365](gdpr-dpia-dynamics.md)
+#### [Microsoft Support & Professional Services](gdpr-dpia-prof-services.md)
+#### [Office 365](gdpr-dpia-office365.md)
+
+### [Microsoft's data protection officer](gdpr-data-protection-officer.md)
 
 # Hybrid compliance capabilities
 ## [Exchange Online mail encryption with AD RMS](information-rights-management-in-exchange-online.md)
