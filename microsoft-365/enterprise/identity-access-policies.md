@@ -318,11 +318,11 @@ For all the above policies to be considered deployed, they must be targeted at u
 ||Windows Defender Antimalware signature up to date|Require||
 ||Real-time protection|Require|Only supported for Windows 10 desktop|
 
-**Windows Defender ATP**
+**Microsoft Defender ATP**
 
 |Type|Properties|Values|Notes|
 |:---|:---------|:-----|:----|
-|Windows Defender Advanced Threat Protection rules|Require the device to be at or under the machine-risk score|Medium||
+|Microsoft Defender Advanced Threat Protection rules|Require the device to be at or under the machine-risk score|Medium||
 
 ## Require compliant PCs (but not compliant phones and tablets)
 Before adding a policy to require compliant PCs, be sure to enroll devices for management into Intune. Using multi-factor authentication is recommended before enrolling devices into Intune for assurance that the device is in the possession of the intended user. 
