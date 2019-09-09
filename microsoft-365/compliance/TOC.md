@@ -41,7 +41,7 @@
 ### [DLP functions for sensitive information](what-the-dlp-functions-look-for.md)
 ### [Watch an extended overview of customizing DLP](https://go.microsoft.com/fwlink/?linkid=852306)
 
-## [Email encryption in Office 365](email-encryption.md)
+## [Email encryption](email-encryption.md)
 ### [Office 365 Message Encryption (OME)](ome.md)
 ### [Set up new Office 365 Message Encryption capabilities](set-up-new-message-encryption-capabilities.md)
 ### [Define mail flow rules to encrypt email messages in Office 365](define-mail-flow-rules-to-encrypt-email.md)
@@ -333,15 +333,6 @@
 ## [Use the audit log to troubleshoot common scenarios](auditing-troubleshooting-scenarios.md)
 ## [Use sharing auditing in the audit log](use-sharing-auditing.md)
 ## [Search for eDiscovery activities in the audit log](search-for-ediscovery-activities-in-the-audit-log.md)
-
-# Monitor security and compliance
-## Microsoft 365 security center
-### [Monitor and view reports](monitoring-and-reporting.md)
-### [Identity monitoring and reporting](monitor-and-report-identities.md)
-### [Data monitoring and reporting](monitor-data.md)
-### [Device monitoring and reporting](monitor-devices.md)
-### [App monitoring and reporting](monitor-apps.md)
-## [Alert policies](alert-policies.md)
 
 # Regulatory compliance solutions
 ## [Microsoft Service Trust Portal](get-started-with-service-trust-portal.md)
