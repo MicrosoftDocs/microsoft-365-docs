@@ -1,4 +1,4 @@
-# [Compliance](index.md)
+# [Microsoft 365 Compliance](index.md)
 
 # Get started
 ## [Microsoft 365 compliance center](microsoft-365-compliance-center.md)
