@@ -1,6 +1,6 @@
 ---
 title: Deploy Windows 10 Enterprise security features
-description: Provides a high-level guidance on the steps you need to deploy Windows 10 Enterprise on PCs as part of Microsoft 365 Enterprise.
+description: Provides a high-level guidance on the steps you need to deploy Windows 10 Enterprise security features on PCs as part of Microsoft 365 Enterprise.
 keywords: Microsoft 365, Microsoft 365 Enterprise, Microsoft 365 documentation, Windows 10 Enterprise, security
 author: greg-lindsay
 localization_priority: Normal
@@ -19,6 +19,7 @@ ms.author: greglin
 Windows 10 provides security features to protect enterprise users, stop cyberthreats, and prevent data loss. 
 
 To learn more about these technologies, see:
+
 * [Identity protection](https://docs.microsoft.com/windows/security/identity-protection/) - Learn about Windows Hello for Business, Credential Guard, and access control.
 * [Threat protection](https://docs.microsoft.com/windows/threat-protection/) - Learn about Microsoft Defender Advanced Threat Protection, a unified platform for preventative protection, post-breach detection, automated investigation, and response.
 * [Information protection](https://docs.microsoft.com/windows/security/information-protection/) - Learn about BitLocker, Windows Information Protection, and other ways that Windows 10 helps protect enterprise data. 
@@ -27,7 +28,7 @@ This step shows you how you can deploy, manage, configure, and troubleshoot usin
 
 * [Windows Defender Antivirus](#windows-defender-antivirus)
 * [Windows Defender Exploit Guard](#windows-defender-exploit-guard)
-* [Microsoft Defender Advanced Threat Protection](#windows-defender-advanced-threat-protection)
+* [Microsoft Defender Advanced Threat Protection](#windows10-sec-atp)
 
 <a name="windows10-sec-av"></a>
 ## Windows Defender Antivirus
