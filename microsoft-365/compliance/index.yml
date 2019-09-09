@@ -41,7 +41,9 @@ landingContent:
         links:
           - text: Manage records in Microsoft 365
             url: file1.md
-          - text: linktext2
+          - text: File plan manager
+            url: file2.md
+          - text: Event-based retention
             url: file2.md
 
   # Card
