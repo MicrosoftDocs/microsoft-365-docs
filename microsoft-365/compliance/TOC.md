@@ -6,6 +6,11 @@
 ## [Use your free Azure Active Directory subscription](use-your-free-azure-ad-subscription-in-office-365.md)
 ## [Plan for security and compliance in Office 365](plan-for-security-and-compliance.md)
 
+# Protect user and device access
+## [Protect user and device access](protect-access-to-data-and-services.md)
+## [Privileged access management](privileged-access-management-overview.md)
+## [Configure privileged access management](privileged-access-management-configuration.md)
+
 # [Protect information](protect-information.md)
 ## [Sensitivity labels](sensitivity-labels.md)
 ### [Restrict access to content by using encryption in sensitivity labels](encryption-sensitivity-labels.md)
