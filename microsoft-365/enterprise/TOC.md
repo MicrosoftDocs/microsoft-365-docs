@@ -142,3 +142,5 @@
 #### [Microsoft Support and Professional Services](../compliance/gdpr-dpia-prof-services.md)
 
 ### [Microsoft's data protection officer](../compliance/gdpr-data-protection-officer.md)
+
+# [Security solutions](../security/index.yml?toc=/microsoft-365/enterprise/toc.json)
