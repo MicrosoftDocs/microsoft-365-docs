@@ -114,7 +114,7 @@ description: Find documentation and resources for Microsoft 365--a complete, int
                                                 <div class="cardText">
                                                     <br />
                                                     <h3>Microsoft 365 Security</h3>
-                                                    <p>Microsoft 365 security solutions help your organization protect data.</p>
+                                                    <p>Microsoft 365 security solutions help to protect your enterprise across attack surfaces.</p>
                                                 </div>
                                             </div>
                                         </div>
