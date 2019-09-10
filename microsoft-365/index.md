@@ -88,7 +88,7 @@ description: Find documentation and resources for Microsoft 365--a complete, int
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="https://docs.microsoft.com/en-us/office/media/hub-tiles/M365-HubTile-Education-400x140.svg" alt="Microsoft 365 compliance documentation and resources" />
+                                                        <img src="./images/m365-hubtile-compliance.svg" alt="Microsoft 365 compliance documentation and resources" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -108,7 +108,7 @@ description: Find documentation and resources for Microsoft 365--a complete, int
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="https://docs.microsoft.com/en-us/office/media/hub-tiles/M365-HubTile-Education-400x140.svg" alt="Microsoft 365 security documentation and resources" />
+                                                        <img src="./images/m365-hubtile-security.svg" alt="Microsoft 365 security documentation and resources" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
