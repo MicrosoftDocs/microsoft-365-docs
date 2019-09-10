@@ -1,0 +1,97 @@
+### YamlMime:Landing
+
+title: Microsoft 365 Compliance documentation # < 60 chars
+summary: If your organization needs to comply with legal or regulatory standards, the areas below are your first stop for learning about compliance in Microsoft 365. # < 160 chars
+
+metadata:
+  title: Microsoft 365 Compliance documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Documentation for Microsoft 365 compliance features # Required; article description that is displayed in search results. < 160 chars.
+  services: office-365-security-compliance
+  ms.service: O365-seccomp #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.subservice: subservice
+  ms.topic: landing-page # Required
+  ms.collection: m365-security-compliance
+  author: robmazz #Required; your GitHub user alias, with correct capitalization.
+  ms.author: robmazz #Required; microsoft alias of author; optional team alias.
+  ms.date: 09/13/2019 #Required; mm/dd/yyyy format.
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: Protect information
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Sensitivity labels
+            url: file1.md
+          - text: Data loss prevention (DLP)
+            url: file2.md
+          - text: Sensitive information types
+            url: file2.md
+          - text: Email encryption
+            url: file2.md
+
+  # Card (optional)
+  - title: Manage records
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Manage records in Microsoft 365
+            url: file1.md
+          - text: File plan manager
+            url: file2.md
+          - text: Event-based retention
+            url: file2.md
+
+  # Card
+  - title: Manage data governance
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Import data
+            url: file1.md
+          - text: Store data
+            url: file2.md
+          - text: Retain data
+            url: file1.md
+          - text: Supervise communications
+            url: file2.md
+
+  # Card
+  - title: Manage legal investigations
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Advanced eDiscovery
+            url: file1.md
+          - text: Manage eDiscovery cases
+            url: file2.md
+          - text: Manage legal holds
+            url: file1.md
+  
+  # Card
+  - title: Manage data investigations
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Manage a data investigation
+            url: file1.md
+          - text: Create a new investigation
+            url: file2.md
+              
+  # Card
+  - title: Compliance solutions
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Compliance Manager
+            url: file1.md
+          - text: Information barriers
+            url: file2.md
+          - text: Customer Key
+            url: file1.md
+          - text: Information protection for GDPR
+            url: file2.md
