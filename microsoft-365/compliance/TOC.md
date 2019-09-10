@@ -418,4 +418,4 @@
 
 # [Office 365 Enterprise](https://docs.microsoft.com/Office365/Enterprise)
 # [Office 365 Business](https://docs.microsoft.com/office365/admin/admin-home)
-# [Microsoft 365 Security](https://docs.microsoft.com/microsoft-365/secuurity/)
+# [Microsoft 365 Security](https://docs.microsoft.com/microsoft-365/security/)
