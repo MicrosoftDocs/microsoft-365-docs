@@ -1,4 +1,4 @@
-# [Security solutions](index.yml)
+# [Microsoft 365 Security](index.yml)
 
 ## [Office 365 Security]()
 ### [Get started]()
@@ -246,7 +246,7 @@
 ###### [Sending mail to Office 365](office365/sending-mail-to-office-365.md)
 ###### [Services for non-customers](office365/services-for-non-customers.md)
 
-### [Legacy security and compliance capabilities]()
+### [Legacy security capabilities]()
 #### [S/MIME](office365/s-mime-for-message-signing-and-encryption.md)
 ##### [S/MIME for message signing and encryption](office365/s-mime-for-message-signing-and-encryption.md)
 ##### [Configure S/MIME settings for Outlook on the web](office365/configure-s-mime-settings-for-outlook-web-app.md)
@@ -256,4 +256,4 @@
 
 ### [Office 365 Enterprise](https://docs.microsoft.com/Office365/Enterprise)
 ### [Office 365 for Business](https://docs.microsoft.com/office365/admin/admin-home)
-### [Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+### [Microsoft 365 Compliance](../compliance/index.yml)
