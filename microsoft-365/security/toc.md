@@ -1,4 +1,4 @@
-# [Security solutions](index.md)
+# [Security solutions](index.yml)
 
 ## [Office 365 Security]()
 ### [Get started]()
