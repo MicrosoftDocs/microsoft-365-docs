@@ -3,7 +3,7 @@ title: "Step 6: Use groups for easier management"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 02/25/2019
+ms.date: 09/06/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -69,14 +69,11 @@ As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria
 
 *This is optional and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
 
-In this section, you'll configure security groups in Azure AD to automatically assign licenses from a set of subscriptions to all the members of the group. This is known as *group-based licensing*. If a user account is added to or removed from the group, the licenses for the group’s subscriptions will be automatically assigned or removed from the user account.
+In this section, you'll configure security groups in Azure AD to automatically assign licenses from a set of subscriptions to all the members of the group. This is known as *group-based licensing*. If a user account is added to or removed from the group, the licenses for the group’s subscriptions will be automatically assigned or unassignedfrom the user account.
 
-For Microsoft 365 Enterprise, you'll configure Azure AD security groups to assign both of these licenses:
+For Microsoft 365 Enterprise, you'll configure Azure AD security groups to assign the appropriate Microsoft 365 Enterprise license.
 
-- Office 365 Enterprise E3 or E5
-- Enterprise Mobility + Security (EMS) E3 or E5
-
-Using the groups you identified in Step 2, look for groups that contain a list of accounts where all users in that group must have both Office 365 and EMS licenses. Make sure you have enough licenses for all the group members. If you run out of licenses, new users won’t be assigned licenses until licenses become available.
+Make sure you have enough licenses for all the group members. If you run out of licenses, new users won’t be assigned licenses until licenses become available.
 
 >[!Note]
 >You should not configure *group-based licensing* for groups that contain Azure business to business (B2B) accounts.
@@ -98,6 +95,6 @@ The results of this section are:
 
 As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria.md#crit-identity-group-license) for this section.
 
-## Next step
-
-[Identity infrastructure exit criteria](identity-exit-criteria.md)
+|||
+|:-------|:-----|
+|![](./media/stepnumbers/Step7.png)| [Configure identity governance](identity-governance.md) |

@@ -2,7 +2,7 @@
 title: "Deploy Microsoft Teams for Microsoft 365 Enterprise"
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/16/2018
+ms.date: 08/28/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -45,14 +45,6 @@ Teams can be used for many different purposes. You need to figure out which purp
 You should target Teams to address fast-moving and highly collaborative teams that work closely together and require many more facilities than just email with Exchange Online can provide. Examples are live group chats with a recorded history and a common and easy-to-find place to store files and notes. 
 
 One way to see the benefits of Teams is to examine how a team or v-team interacts today, and then find an appropriate Teams scenario that replaces the interaction and provides easier ways to collaborate and provide additional capabilities.
-
-Teams enables these strategic business scenarios for Microsoft 365 Enterprise:
-
-- Communicate with your team to stay informed, solicit input, and build cohesion and consensus
-- Engage your firstline workers to enable your Digital Transformation
-- Understand your work habits to improve your influence and impact
-
-For more information, see the [Digital transformation using Microsoft 365](http://transform.microsoft.com). 
 
 #### Microsoft Teams for highly regulated data
 

@@ -5,7 +5,7 @@ keywords: Microsoft 365, Microsoft 365 Enterprise, Microsoft 365 documentation, 
 author: MandiOhlinger 
 ms.author: mandia 
 manager: dougeby 
-ms.date: 09/18/2018 
+ms.date: 08/28/2019
 ms.topic: conceptual 
 
 ms.prod: microsoft-365-enterprise
@@ -22,17 +22,7 @@ ms.custom: microsoft-intune
 
 *This feature applies to the E3 and E5 versions of Microsoft 365 Enterprise*
 
-Microsoft 365 Enterprise includes features to help manage devices, and their apps, within your organization. Using Microsoft Intune, you can manage iOS, Android, macOS, and Windows devices to protect access to your organization's resources, including your data. Intune integrates with Azure Active Directory (Azure AD), and enables the following business scenarios for Microsoft 365:
-
-- Store and share files inside and outside your organization to work seamlessly across organizational boundaries
-- Work securely from anywhere, anytime across your device to achieve more while maintaining a flexible workstyle
-- Provide peace-of-mind with controls and visibility for industry-verified conformity with global standards in compliance
-- Protect your information and reduce the risk of data loss
-- Detect and protect against external threats
-- Monitor, report, and analyze activity to react promptly to provide organizational security
-- Protect your users and their accounts
-
-For more information, see the [Digital transformation using Microsoft 365](http://transform.microsoft.com). 
+Microsoft 365 Enterprise includes features to help manage devices, and their apps, within your organization. Using Microsoft Intune, you can manage iOS, Android, macOS, and Windows devices to protect access to your organization's resources, including your data. 
 
 In this phase, you enroll your devices in Intune, and create and enforce policies to help keep your data secure and protected. The entire library of Intune documentation is [available online](https://docs.microsoft.com/intune). It's also good practice to review the [Intune deployment planning, design and implementation guide](https://docs.microsoft.com/intune/planning-guide) before you get started.
 
@@ -142,7 +132,7 @@ Remember, start small, and use a staged approach. Assign the profile to a pilot 
 Intune is a powerful service, and includes many features. Here are some other tasks you can do using Intune:
 
 - Manage software and updates on Windows [devices](https://docs.microsoft.com/intune/windows-update-for-business-configure) & [PCs](https://docs.microsoft.com/intune/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune), and [iOS](https://docs.microsoft.com/intune/software-updates-ios) devices
-- Turn on [Windows Defender Advanced Threat Protection (ATP)](https://docs.microsoft.com/intune/advanced-threat-protection) on your Windows 10 devices, and use compliance and conditional access to protect access to corporate resources, such as SharePoint or Exchange Online
+- Turn on [Microsoft Defender Advanced Threat Protection (ATP)](https://docs.microsoft.com/intune/advanced-threat-protection) on your Windows 10 devices, and use compliance and conditional access to protect access to corporate resources, such as SharePoint or Exchange Online
 - Use [Lookout](https://docs.microsoft.com/intune/lookout-mobile-threat-defense-connector), [Symantec](https://docs.microsoft.com/intune/skycure-mobile-threat-defense-connector), and other mobile defense threat partners
 - Add a [partner certificate authority (CA)](https://docs.microsoft.com/intune/certificate-authority-add-scep-overview) to issue and renew certificates
 - [Provide guidance to your end users](https://docs.microsoft.com/intune/end-user-educate) on the Company Portal app, getting apps, and more

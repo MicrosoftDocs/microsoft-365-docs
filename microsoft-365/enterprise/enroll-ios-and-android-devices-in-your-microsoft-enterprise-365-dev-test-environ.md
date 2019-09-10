@@ -75,4 +75,3 @@ Explore additional [mobile device management](m365-enterprise-test-lab-guides.md
   
 [Deploy Microsoft 365 Enterprise](deploy-microsoft-365-enterprise.md)
 
-[Enterprise Mobility + Security (EMS)](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)

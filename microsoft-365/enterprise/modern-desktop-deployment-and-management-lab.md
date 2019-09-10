@@ -91,7 +91,7 @@ Detailed lab guides take you through multiple deployment and management scenario
   - Windows Defender Application Guard
   - Windows Defender Exploit Guard
   - Windows Defender Application Control
-  - Windows Defender Advanced Threat Protection
+  - Microsoft Defender Advanced Threat Protection
 
 ### **OS Deployment and Feature Updates**
 
