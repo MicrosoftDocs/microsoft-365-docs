@@ -19,12 +19,24 @@
 ##### [Module 4b - Threat protection strategy, Part II](office365/ciso-workshop-module-4b.md)
 ##### [Module 5 - Information protection](office365/ciso-workshop-module-5.md)
 
-### [Protect user and device access](office365/protect-access-to-data-and-services.md)
-#### [Privileged access management](office365/privileged-access-management-overview.md)
-#### [Configure privileged access management](office365/privileged-access-management-configuration.md)
 
 ### [Protect against threats](office365/reduce-spam.md)
 #### [Anti-spam and anti-malware protection](office365/anti-spam-and-anti-malware-protection.md)
+##### [Advanced spam filtering options](office365/advanced-spam-filtering-asf-options.md)
+##### [High-risk delivery pool for outbound messages](office365/high-risk-delivery-pool-for-outbound-messages.md)
+##### [Anti-malware protection FAQ](office365/anti-malware-protection-faq-eop.md)
+##### [Anti-spam and anti-malware protection in Office 365](office365/anti-malware-protection.md)
+##### [Anti-spam protection FAQ](office365/anti-spam-protection-faq.md)
+##### [Control outbound spam in Office 365](office365/controlling-outbound-spam-in-Office-365.md)
+##### [Avoid invalid characters in your spam filter rules and the spam filter policy](office365/invalid-characters-hosted-spam-filter-rules-policies.md)
+##### [Safe sender and blocked sender lists in Exchange Online](office365/safe-sender-and-blocked-sender-lists-faq.md)
+##### [Safety tips in email messages in Office 365](office365/safety-tips-in-office-365.md)
+##### [Sample notification when a sender is blocked sending outbound spam](office365/sample-notification-when-a-sender-is-blocked-sending-outbound-spam.md)
+##### [Use end-user spam notifications to release and report spam-quarantined messages](office365/use-end-user-spam-notifications-to-release-and-report-spam-quarantined-messages.md)
+##### [Fighting junk email sent to Office 365](office365/fighting-junk-email.md)
+##### [Virus detection in SharePoint Online](office365/virus-detection-in-spo.md)
+
+
 ##### [Office 365 email anti-spam protection](office365/anti-spam-protection.md)
 ##### [How to prevent real email from being marked as spam in Office 365](office365/prevent-email-from-being-marked-as-spam.md)
 ##### [How policies and protections are combined](office365/how-policies-and-protections-are-combined.md)
@@ -60,9 +72,18 @@
 
 #### [Anti-spoofing protection in Office 365](office365/anti-spoofing-protection.md)
 ##### [Learn more about spoof intelligence](office365/learn-about-spoof-intelligence.md)
+##### [Walkthrough spoof intelligence insight](office365/walkthrough-spoof-intelligence-insight.md)
 
 #### [What is EOP?](office365/what-is-eop.md)
 ##### [Support for anonymous inbound email messages over IPv6](office365/support-for-anonymous-inbound-email-messages-over-ipv6.md)
+##### [Block email spam in EOP Standalone](office365/block-email-spam-in-EOPStandalone.md)
+##### [Configure end-user spam notifications in EOP](office365/configure-end-user-spam-notifications-in-eop.md)
+##### [Configure end-user spam notifications in Exchange Online](office365/configure-end-user-spam-notifications-in-exchange-online.md)
+##### [Report junk email and phishing scams in Outlook on the web](office365/report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)
+##### [Protect on-premises mailboxes with Exchange Online Protection](office365/protect-on-premises-mailboxes-with-exchange-online-protection.md)
+##### [Install the Junk Email Reporting Add-in for Microsoft Outlook](office365/junk-email-reporting-add-in-for-microsoft-outlook.md)
+#####[Turn off junk email reporting in Outlook on the web](office365/turn-off-junk-email-reporting-in-outlook-on-the-web.md)
+#####[What's the difference between junk email and bulk email?](office365/what-s-the-difference-between-junk-email-and-bulk-email.md)
 
 #### [Quarantine email messages in Office 365](office365/quarantine-email-messages.md)
 ##### [Manage quarantined messages and files as an administrator](office365/manage-quarantined-messages-and-files.md)
