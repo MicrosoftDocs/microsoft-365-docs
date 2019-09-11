@@ -6,6 +6,11 @@
 ## [Use your free Azure Active Directory subscription](use-your-free-azure-ad-subscription-in-office-365.md)
 ## [Plan for security and compliance in Office 365](plan-for-security-and-compliance.md)
 
+# Protect user and device access
+## [Protect user and device access](protect-access-to-data-and-services.md)
+## [Privileged access management](privileged-access-management-overview.md)
+## [Configure privileged access management](privileged-access-management-configuration.md)
+
 # [Protect information](protect-information.md)
 ## [Sensitivity labels](sensitivity-labels.md)
 ### [Restrict access to content by using encryption in sensitivity labels](encryption-sensitivity-labels.md)
@@ -334,7 +339,7 @@
 ## [Use sharing auditing in the audit log](use-sharing-auditing.md)
 ## [Search for eDiscovery activities in the audit log](search-for-ediscovery-activities-in-the-audit-log.md)
 
-# Microsoft 365 compliance solutions
+# Microsoft 365 compliance action plans
 ## [Microsoft Service Trust Portal](get-started-with-service-trust-portal.md)
 ## [Compliance Manager (Classic)](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
 ## [Compliance Manager (Preview)](compliance-manager-overview.md)
@@ -417,5 +422,5 @@
 ### [Configure IRM to use an on-premises AD RMS server](configure-irm-to-use-an-on-premises-ad-rms-server.md)
 
 # [Office 365 Enterprise](https://docs.microsoft.com/Office365/Enterprise)
-# [Office 365 for Business](https://docs.microsoft.com/office365/admin/admin-home)
-# [Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+# [Office 365 Business](https://docs.microsoft.com/office365/admin/admin-home)
+# [Microsoft 365 Security](https://docs.microsoft.com/microsoft-365/security/)
