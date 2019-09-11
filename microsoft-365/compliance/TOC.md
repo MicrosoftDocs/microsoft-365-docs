@@ -121,12 +121,6 @@
 ## More information about data governance
 ### [Watch videos from the Microsoft Data Governance team](https://go.microsoft.com/fwlink/?linkid=867039)
 
-# Security incident management
-## [Office 365 Security Incident Response](office365-security-incident-response-overview.md)
-## [Detect and Remediate Illicit Consent Grants in Office 365](detect-and-remediate-illicit-consent-grants.md)
-## [Detect and Remediate Outlook Rules and Custom Forms Injections Attacks in Office 365](detect-and-remediate-outlook-rules-forms-attack.md)
-## [Responding to a Compromised Email Account in Office 365](responding-to-a-compromised-email-account.md)
-
 # [Search for content](search-for-content.md)
 ## [Use Content Search](content-search.md)
 ### [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md)
