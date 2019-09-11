@@ -1,6 +1,6 @@
 # [Microsoft 365 Compliance](index.md)
 
-# Get started with compliance
+# Get started
 ## [Microsoft 365 compliance center](microsoft-365-compliance-center.md)
 ## [Go to the Security & Compliance Center](go-to-the-securitycompliance-center.md)
 ## [Use your free Azure Active Directory subscription](use-your-free-azure-ad-subscription-in-office-365.md)
