@@ -19,7 +19,7 @@ Microsoft Managed Desktop can work with brand-new devices or you can re-use devi
 ## Prepare to register brand-new devices
 
 
-Once you have the new devices in hand, you'll follows these steps:
+Once you have the new devices in hand, you'll follow these steps:
 
 1. [Obtain the hardware hash for each device.](#obtain-the-hardware-hash)
 2. [Merge the hash data](#merge-hash-data)
@@ -49,22 +49,21 @@ If you've met all these prerequisites, you're ready to collect the information b
 2. In the Monitoring workspace, expand **Reporting**, and then select **Reports**. 
 3. On the **Home** tab, in the **Create** section, select **Create Report** to open the Create Report wizard. 
 4. On the **Information** page, set these settings: 
-    - **Type:** Select **SQL-based Report** to create a report in Report Builder by using a SQL statement. 
     - **Name:** Specify a name for the report. 
     - **Description:** Specify a description for the report. 
     - **Server:** Displays the name of the report server on which you are creating this report. 
     - **Path:** Select **Browse** to specify a folder in which you want to store the report. 
 5. Select **Next**. 
 6. On the **Summary** page, review the settings. Select **Previous** to change the settings or select **Next** to create the report in Configuration Manager. 
-7. On the **Confirmation** page, select **Close** to exit the wizard and open **Report Builder** to enter the report settings. Enter your user account and password if you are prompted, and then select **OK.** If Report Builder is not installed on the device, you are prompted to install it. Select **Run to install Report Builder**, which is required to modify and create reports. 
+7. On the **Completion** page, select **Close** to exit the wizard and open **Report Builder** to enter the report settings. Enter your user account and password if you are prompted, and then select **OK.** If Report Builder is not installed on the device, you are prompted to install it. Select **Run to install Report Builder**, which is required to modify and create reports. 
 
 
 **In Microsoft Report Builder**, provide the SQL statement for the report and follow these steps:
 
-1. Select **Datasets**, and then right-click to **Add Dataset**.
-2. Select the **Query** property, and then enter the name as *DataSet0*. 
-3. Select **Use a dataset embedded in my report**; a window opens.
-4. In the windows that opens, select **Data source:** Select the source in Report Server 
+1. In the left pane, select **Datasets**, and then right-click to **Add Dataset**.
+2. Go to the **Query** tab, and then enter the name as *DataSet0*. 
+3. Select **Use a dataset embedded in my report**; Report Builder opens.
+4. In **Report Builder**, select **Data source:**. Select the default data source, which should start with "AutoGen". 
 5. Choose **Query type as Text**, and then enter this query:
 
 ```
@@ -81,7 +80,7 @@ FROM   Fn_rbac_gs_computer_system(@UserSIDs) comp 
 
 
 ```
-5. Navigate to the **Field** properties, select **Add**, and then select **Query Field**. Enter the **Field Name** and **Field Source**.
+5. Navigate to the **Field** tab, wehre values for **Field Name** and **Field Source** should already be populated. If they aren't, then select **Add**, and then select **Query Field**. Enter the **Field Name** and **Field Source**.
 6. Repeat for each of these values: 
     - Manufacturer 
     - Model 
@@ -93,16 +92,22 @@ FROM   Fn_rbac_gs_computer_system(@UserSIDs) comp 
 
 1. Select **Table or Matrix**; a new wizard will open.
 2. In **Choose a dataset**, select **Choose an existing dataset in this report or a shared dataset**.  
-3. Select **DataSet0**, and then drag the {SOMETHING}, {SOMETHING} and {SOMETHING} fields from {SOMEWHERE} to {SOMEWHERE ELSE}.
-4. Select **Next**. Choose the layout do not select any Options: Show subtotals and grand totals and Expand/Collapse groups, then click Next and Finish. {UNCLEAR WHAT THIS IS TRYING TO SAY; WHAT IS UI OR WHAT}
-5. Select **Run** to run your report. Verify that the report provides the information that you expect. If necessary, select **Design** to return to the Design view to modify the report.
-6. Select **Save** to save the report to the report server. You can run the new report in the Reports node in the Monitoring workspace. 
+3. Select **DataSet0** (the default), and then select **Next**.
+4. Drag **Manufacturer**, **Model**, and **Serial Number** into the **Row Groups** box. Drag **HardwareHash** into the **Values** box and then select **Next**.
+5. Clear the checkboxes for **Show subtotals and grand totals** and **Expand/collapse groups**. Select **Next**.
+6. Select **Finish**.
+7. Select **Run** to run your report. Verify that the report provides the information that you expect. If necessary, select **Design** to return to the Design view to modify the report.
+8. Select **Save** to save the report to the report server. You can run the new report in the Reports node in the Monitoring workspace. 
 
-**Finally, export the report and use it to register devices** by following these steps:
+**Finally, export the report and use it to register devices** by following these steps. (You should only need to follow these steps if you have navigated away after the previous steps.):
 
-1. {CURRENT PROCEDURE DOESN'T ACTUALLY TELL YOU HOW TO GET THE REPORT OUT OF SCCM AND FEED IT TO MMD REGISTRATION?}
-2. This version of report extracts hashes from all Windows 10 devices that SCCM communicates with. You will need to filter results to just those devices you plan to register with Microsoft Managed Desktop.
-3. {EXPORT?} the report in CSV format by {DOING SOMETHING}
+1. In the Configuration Manager console, select **Monitoring**.
+2. In **Monitoring**, expand **Reporting**, and then select **Reports**.
+3. Find the report using the name you created earlier.
+4. Right-click this report, and select **Run**.
+5. In the dialog that opens, select **Export** and then select **Save as CSV**.
+6. This version of report extracts hashes from all Windows 10 devices that SCCM communicates with. You will need to filter results to just those devices you plan to register with Microsoft Managed Desktop.
+
 
 > [!IMPORTANT]
 > The query in Configuration Manager doesn’t allow spaces in exported column names; that's why the steps had you enter "Serial_Number" and "HardwareHash." Now that you have the exported CSV file, you must edit the report headers to read *Serial Number* and *Hardware Hash* as shown here before you proceed with device registration.
