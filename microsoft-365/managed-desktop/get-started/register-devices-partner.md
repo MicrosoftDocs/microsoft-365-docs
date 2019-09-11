@@ -63,7 +63,7 @@ You can monitor the progress of device registration on the main **Microsoft Mana
 | State | Description |
 |---------------|-------------|
 | Registration pending | Registration is not done yet. Check back later. |
-| Registration failed | Registration could not be completed. Refer to [Troubleshooting](register-devices-self.md#troubleshooting) for more information. |
+| Registration failed | Registration could not be completed. Refer to [Troubleshooting device registration](register-devices-self.md#troubleshooting-device-registration) for more information. |
 | Ready for user | Registration succeeded and the device is now ready to be delivered to the end user. Microsoft Managed Desktop will guide them through first time set-up, so there’s no need for you to do any further preparations. |
 | Active | The device has been delivered to the end user and they have registered with your tenant. This also indicates that they are regularly using the device. |
 | Inactive | The device has been delivered to the end user and they have registered with your tenant. However, they have not used the device recently (in the last 7 days).  |
