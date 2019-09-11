@@ -46,7 +46,7 @@ Figure 1 shows Contoso's networking infrastructure and its connections to the In
 
 ## Use of SD-WAN for optimal network connectivity to Microsoft
 
-Contoso followed [Office 365 network connectivity principles](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles):
+Contoso followed [Office 365 network connectivity principles](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles) to:
 
 1. Identify and differentiate Office 365 network traffic
 2. Egress network connections locally
