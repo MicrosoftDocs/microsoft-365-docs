@@ -28,7 +28,7 @@ landingContent:
           - text: What is Microsoft Threat Protection?
             url:  mtp/microsoft-threat-protection.md
           - text: Microsoft 365 security center
-            url: https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center
+            url: mtp/overview-security-center.md
   
   # Card (optional)
   - title: Microsoft Defender ATP
