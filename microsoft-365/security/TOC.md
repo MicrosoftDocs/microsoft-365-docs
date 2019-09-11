@@ -146,12 +146,6 @@
 ##### [How threat investigation and response works](office365/office-365-ti.md)
 ##### [How Automated Investigation and Response works](office365/automated-investigation-response-office.md)
 
-#### [Security incident management]()
-##### [Office 365 Security Incident Response](office365/office365-security-incident-response-overview.md)
-##### [Detect and Remediate Illicit Consent Grants in Office 365](office365/detect-and-remediate-illicit-consent-grants.md)
-##### [Detect and Remediate Outlook Rules and Custom Forms Injections Attacks in Office 365](office365/detect-and-remediate-outlook-rules-forms-attack.md)
-##### [Responding to a Compromised Email Account in Office 365](office365/responding-to-a-compromised-email-account.md)
-
 ### [Security incident management]()
 #### [Office 365 Security Incident Response](office365/office365-security-incident-response-overview.md)
 #### [Detect and Remediate Illicit Consent Grants in Office 365](office365/detect-and-remediate-illicit-consent-grants.md)
