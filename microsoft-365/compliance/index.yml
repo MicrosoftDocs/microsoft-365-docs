@@ -26,13 +26,13 @@ landingContent:
       - linkListType: overview
         links:
           - text: Sensitivity labels
-            url: file1.md
+            url: sensitivity-labels.md
           - text: Data loss prevention (DLP)
-            url: file2.md
+            url: data-loss-prevention-policies.md
           - text: Sensitive information types
-            url: file2.md
+            url: custom-sensitive-info-types.md
           - text: Email encryption
-            url: file2.md
+            url: email-encryption.md
 
   # Card (optional)
   - title: Manage records
