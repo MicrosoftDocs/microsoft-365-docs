@@ -1,20 +1,20 @@
 ---
-title: Register existing devices in Microsoft Managed Desktop yourself
-description: Register devices yourself so they can be managed by Microsoft Managed Desktop
+title: Register existing devices yourself
+description: Register re-used devices you might already have yourself so they can be managed by Microsoft Managed Desktop
 ms.prod: w10
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: medium
 ---
 
-# Register existing devices in Microsoft Managed Desktop yourself
+# Register existing devices yourself
 
 >[!NOTE]
 >This topic describes the steps for you to re-use devices you already have and register them in Microsoft Managed Desktop. If you are working with brand-new devices, follow the steps in [Register new devices in Microsoft Managed Desktop yourself](register-devices-self.md) instead.
 
 The process for Partners is documented in [Register devices in Microsoft Managed Desktop for Partners](register-devices-partner.md).
 
-Microsoft Managed Desktop can work with brand-new devices or you can re-use devices you might already have (which will require that you re-image them). You can register devices by using Microsoft Managed Desktop on the Azure Portal or gain flexibility by using an API.
+Microsoft Managed Desktop can work with brand-new devices or you can re-use devices you might already have (which will require that you re-image them). You can register devices by using Microsoft Managed Desktop on the Azure Portal.
 
 ## Prepare to register brand-new devices
 
@@ -99,14 +99,14 @@ FROM   Fn_rbac_gs_computer_system(@UserSIDs) comp 
 7. Select **Run** to run your report. Verify that the report provides the information that you expect. If necessary, select **Design** to return to the Design view to modify the report.
 8. Select **Save** to save the report to the report server. You can run the new report in the Reports node in the Monitoring workspace. 
 
-**Finally, export the report and use it to register devices** by following these steps. (You should only need to follow these steps if you have navigated away after the previous steps.):
+**Finally, export the report and use it to register devices** by following these steps. (You should only need to follow Steps 1 and 2 of this section if you have navigated away after the previous steps.):
 
 1. In the Configuration Manager console, select **Monitoring**.
 2. In **Monitoring**, expand **Reporting**, and then select **Reports**.
 3. Find the report using the name you created earlier.
 4. Right-click this report, and select **Run**.
 5. In the dialog that opens, select **Export** and then select **Save as CSV**.
-6. This version of report extracts hashes from all Windows 10 devices that SCCM communicates with. You will need to filter results to just those devices you plan to register with Microsoft Managed Desktop.
+6. This version of report extracts hashes from all Windows 10 devices that Configuration Manager communicates with. You will need to filter results to just those devices you plan to register with Microsoft Managed Desktop.
 
 
 > [!IMPORTANT]
@@ -115,26 +115,31 @@ FROM   Fn_rbac_gs_computer_system(@UserSIDs) comp 
 Now you can proceed to [Register devices by using the Azure Portal](#register-devices-by-using-the-azure-portal).
 
 
-#### Directory PowerShell script method
+#### Active Directory PowerShell script method
 
 In an Active Directory environment, you can use the `Get-MMDRegistrationInfo` PowerShell cmdlet to remotely collect the information from devices in Active Directory Groups by using WinRM. You can also use the `Get-AD Computer` cmdlet and get filtered results for a specific hardware model names included in the catalog. To do this, first confirm these prerequisites, and then proceed with the steps:
 
 - WinRM is enabled.
 - The devices you want to register are active on the network (that is, they are not disconnected or turned off).
 - Make sure you have a domain credential parameter that has permission to execute remotely on the devices.
+- Make sure that Windows Firewall allows access to WMI. To do that, follow these steps:
+    1. Open the **Windows Defender Firewall** control panel and select **Allow an app or feature through Windows Defender Firewall**.
+    2. Find **Windows Management Instrumentation (WMI)** in the list, enable for both **Private and Public**, and then select **OK**.
 
 1.	Open a PowerShell prompt with administrative rights.
-2.	Run this script:
+2.	Run either one of these scripts:
 ```powershell
 Install-script -name Get-MMDRegistrationInfo 
 #example one – leverage Get-ADComputer to enumerate devices 
-Get-ADComputer -filter * | powershell -ExecutionPolicy Unrestricted Get-MMDRegistrationInfo.ps1 -credential Domainname\<accountname> 
-#example two – target specific machines: 
-powershell -ExecutionPolicy Unrestricted Get-MMDRegistrationInfo.ps1 -credential Domainname\<accountname> -Name Machine1,Machine2,Machine3
+Get-ADComputer -filter * | powershell -ExecutionPolicy Unrestricted Get-MMDRegistrationInfo.ps1 -credential Domainname\<accountname>
 ```
-3. Remove entries for each device from *all* directories, including Windows Server Active Directory Domain Services and 
+```powershell 
+#example two – target specific devices: 
+{MISSING A GET?} powershell -ExecutionPolicy Unrestricted Get-MMDRegistrationInfo.ps1 -credential Domainname\<accountname> -Name Machine1,Machine2,Machine3
+```
+3. Access any directories where there might be entries for the devices. Remove entries for each device from *all* directories, including Windows Server Active Directory Domain Services and 
 Azure Active Directory. Be aware that this removal could take a few hours to completely process.
-4. Remove entries for each device from *all* management services, including System Center Configuration Manger, Microsoft Intune, and Windows Autopilot. Be aware that this removal could take a few hours to completely process.
+4. Access management services where there might be entries for the devices. Remove entries for each device from *all* management services, including System Center Configuration Manger, Microsoft Intune, and Windows Autopilot. Be aware that this removal could take a few hours to completely process.
 
 Now you can proceed to [register devices](#register-devices).
 
