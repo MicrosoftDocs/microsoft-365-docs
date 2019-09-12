@@ -16,7 +16,7 @@ ms.custom:
 description: offering. 
 ---
 
-## Train your organization
+# Train your organization
 
 Ultimately, your business processes are realized by interactions between your employees, partners and customers. You can build a terrific business continuity plan, but if you don't train your users, administrators and partners on it, it won't be nearly as successful as it would be if you had. Train your users when they are hired and run refresher training annually. 
 Your technical staff should regularly review and make the necessary updates.

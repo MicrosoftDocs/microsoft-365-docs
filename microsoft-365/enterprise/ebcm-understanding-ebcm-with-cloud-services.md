@@ -23,10 +23,13 @@ As part of your organizations digital transformation, you need to revisit and up
 If you haven't updated your plans yet this series of topics helps you to plan your strategy so your services can fail to a known state. These topics highlight key considerations for improving your continuity readiness.
 
 ## List of topics with links
+
 - [Customer and Cloud Partner Responsibilities](ebcm-customer-and-cloud-partner-ebcm-responsibilities.md)
 - [Microsoft 365 Service Resiliency](ebcm-m365-service-resiliency.md)
 - [Developing your Continuity Plan](ebcm-developing-your-ebcm-plan.md)
 - [Microsoft 365 Service Incident Mitigation Scenarios](ebcm-microsoft-365-mitigations.md)
-- [Microsoft 365 Business Continuity Plan Training and Rehearsal](ebcm-developing-your-ebcm-plan.md) 
+- [Microsoft 365 Business Continuity Plan Training and Rehearsal](ebcm-enterprise-business-continuity-management-plan-rehearsal-and-user-training.md)
+
 ## See Also
+
 - [Enterprise Business Continuity Legal Disclaimer](ebcm-legal-disclaimer.md)
