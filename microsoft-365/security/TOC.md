@@ -1,5 +1,21 @@
 # [Microsoft 365 Security](index.yml)
 
+## Microsoft Threat Protection
+### [Overview]()
+#### [What is Microsoft Threat Protection?](mtp/microsoft-threat-protection.md)
+#### [Microsoft 365 security center](mtp/overview-security-center.md)
+
+### [Hunting in Microsoft 365](./office365/hunting.md)
+
+### [Secure Score](./mtp/microsoft-secure-score.md)
+
+### [Reports]()
+#### [Monitor and view reports](./mtp/monitoring-and-reporting.md)
+#### [Identity monitoring and reporting](./mtp/monitor-and-report-identities.md)
+#### [Data monitoring and reporting](./mtp/monitor-data.md)
+#### [Device monitoring and reporting](./mtp/monitor-devices.md)
+#### [App monitoring and reporting](./mtp/monitor-apps.md)
+
 ## [Office 365 Security]()
 ### [Get started]()
 #### [Office 365 security roadmap](./office365/security-roadmap.md)
