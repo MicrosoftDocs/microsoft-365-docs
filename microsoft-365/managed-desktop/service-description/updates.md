@@ -50,6 +50,7 @@ How update deployment works:
 <tr><td>Feature updates for operating system</td><td>0 days</td><td>30 days</td><td>60 days</td><td>90 days</td></tr>
 <tr><td>Drivers/firmware</td><td colspan="4">Follows the schedule for quality updates</td></tr>
 <tr><td>Anti-virus definition</td><td colspan="4">Updated with each scan</td></tr>
+<tr><td>Office 365 ProPlus</td><td colspan="4">Follows the Monthly Channel, for more information see [Overview of update channels for Office 365 ProPlus](https://docs.microsoft.com/deployoffice/overview-of-update-channels-for-office-365-proplus)
 </table>
 
 >[!NOTE]
