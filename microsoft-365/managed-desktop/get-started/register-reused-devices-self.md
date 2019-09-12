@@ -33,7 +33,7 @@ Microsoft Managed Desktop identifies each device uniquely by referencing its har
 
 - Ask your OEM supplier for the AutoPilot registration file, which will include the hardware hashes.
 - Create a custom report in [Configuration Manager](#configuration-manager).
-- Run a Windows PowerShell script--either by using [Active Directory](#directory-powershell-script-method) or [manually](#manual-powershell-script-method) on each device--and collect the results in a file.
+- Run a Windows PowerShell script--either by using [Active Directory](#active-directory-powershell-script-method) or [manually](#manual-powershell-script-method) on each device--and collect the results in a file.
 - Start each device--but don't complete the Windows setup experience--and [collect the hashes on a removable flash drive](#flash-drive-method).
 
 #### Configuration Manager
