@@ -59,6 +59,10 @@ landingContent:
             url: file1.md
           - text: Supervise communications
             url: file2.md
+      - linkListType: get-started
+        links:
+          - text: Configure Supervise communications
+            url: file2.md
 
   # Card
   - title: Manage legal investigations
