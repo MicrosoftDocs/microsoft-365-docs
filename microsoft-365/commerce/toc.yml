@@ -27,11 +27,12 @@
           href: /microsoft-store/billing-profile?context=/microsoft-365/commerce/context/context-commerce
         - name: Order history
           href: /microsoft-store/manage-orders-microsoft-store-for-business?context=/microsoft-365/commerce/context/context-commerce
-    - name: Billing account
+        - name: Payment Services Directive 2 and Strong Customer Authenticatin
+          href: psd2.md
       items: 
         - name: Manage billing account info
           href: /microsoft-store/update-microsoft-store-for-business-account-settings?context=/microsoft-365/commerce/context/context-commerce
         - name: Associate a tenant with my billing account
           href: /microsoft-store/manage-mpsa-software-microsoft-store-for-business?context=/microsoft-365/commerce/context/context-commerce
     - name: Manage relationships with my partners
-      href: /microsoft-store/work-with-partner-microsoft-store-business?context=/microsoft-365/commerce/context/context-commerce
+      href: manage-partners.md
