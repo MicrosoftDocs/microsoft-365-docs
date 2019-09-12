@@ -97,7 +97,7 @@ landingContent:
             url: file2.md
 
    # Card
-  - title: Search and audit
+  - title: Manage search and audit
     linkLists:
       - linkListType: overview
         links:
