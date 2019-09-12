@@ -81,7 +81,7 @@
 ##### [Configure end-user spam notifications in Exchange Online](./office365/configure-end-user-spam-notifications-in-exchange-online.md)
 ##### [Report junk email and phishing scams in Outlook on the web](./office365/report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)
 ##### [Protect on-premises mailboxes with Exchange Online Protection](./office365/protect-on-premises-mailboxes-with-exchange-online-protection.md)
-##### [Install the Junk Email Reporting Add-in for Microsoft Outlook](./office365/junk-email-reporting-add-in-for-microsoft-outlook.md)
+##### [Install the Junk Email Reporting Add-in for Microsoft Outlook](./office365/install-the-junk-email-reporting-add-in-for-microsoft-outlook.md)
 #####[Turn off junk email reporting in Outlook on the web](./office365/turn-off-junk-email-reporting-in-outlook-on-the-web.md)
 #####[What's the difference between junk email and bulk email?](./office365/what-s-the-difference-between-junk-email-and-bulk-email.md)
 
