@@ -334,7 +334,7 @@
 ## [Use sharing auditing in the audit log](use-sharing-auditing.md)
 ## [Search for eDiscovery activities in the audit log](search-for-ediscovery-activities-in-the-audit-log.md)
 
-# Microsoft 365 compliance action plans
+# Microsoft 365 compliance solutions
 ## [Microsoft Service Trust Portal](get-started-with-service-trust-portal.md)
 ## [Compliance Manager (Classic)](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
 ## [Compliance Manager (Preview)](compliance-manager-overview.md)
@@ -369,7 +369,7 @@
 ### [GDPR for Office Web Apps Server and Office Online Server](gdpr-for-office-online-server.md)
 ### [GDPR for on-premises Windows Server file shares](gdpr-for-on-premises-file-shares.md)
 
-# [Regulatory compliance solutions](compliance-solutions-overview.md)
+# [Regulatory compliance action plans](compliance-solutions-overview.md)
 
 ## [ISO — Recommended action plan](iso-action-plan.md)
 ## [NIST — Recommended action plan](nist-action-plan.md) 
