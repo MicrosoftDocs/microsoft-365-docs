@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 >[!NOTE]
 >This topic describes the steps for you to re-use devices you already have and register them in Microsoft Managed Desktop. If you are working with brand-new devices, follow the steps in [Register new devices in Microsoft Managed Desktop yourself](register-devices-self.md) instead.
 
-The process for Partners is documented in [Register devices in Microsoft Managed Desktop for Partners](register-devices-partner.md).
+The process for Partners is documented in [Steps for Partners to register devices](register-devices-partner.md).
 
 Microsoft Managed Desktop can work with brand-new devices or you can re-use devices you might already have (which will require that you re-image them). You can register devices by using Microsoft Managed Desktop on the Azure Portal.
 
