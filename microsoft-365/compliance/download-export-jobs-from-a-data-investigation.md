@@ -1,5 +1,5 @@
 ---
-title: "Download export jobs"
+title: "Download export jobs from a data investigation"
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -13,8 +13,8 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 
-
 description: "Install and use the Azure Storage Explorer to download documents that were exported from a review set in Advanced eDiscovery."
+
 ---
 
 # Download export jobs
@@ -105,3 +105,4 @@ The final step is to use the Azure Storage Explorer and the SAS URL to connect t
 
 > [!NOTE]
 > Instead of downloading the entire export job, you can select specific items to download. And instead of downloading items, you can double-click an item to view it.
+
