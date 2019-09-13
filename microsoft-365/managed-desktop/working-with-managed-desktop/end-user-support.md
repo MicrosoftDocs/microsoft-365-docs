@@ -33,9 +33,10 @@ End users with Microsoft Managed Desktop devices also have access to toll-free p
 - Canada (excluding Quebec): +1 855 425 0216
 - United Kingdom: +44 800 026 0698
 - Australia: +61 180 037 0619
+- New Zealand: +64 988 44380
 
 >[!NOTE]
->Please have your organizational email address ready when you call to verify your identity. 
+>You'll need to have your organizational email address ready when you call to verify your identity. 
 
 ## Additional resources
 - [Admin support for Microsoft Managed Desktop](admin-support.md). 
