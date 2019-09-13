@@ -41,7 +41,7 @@ Charges for recurring payments might fail. If they do, you’ll receive an email
 
 ## Need more help?
 
-Your financial institution is the best contact if these things ha
+Your financial institution is the best contact for these scenarios:
 - You didn't receive a verification code.  
-- The verification process didn't work after you submitting the verification code.
-- You're not sure if the contact info for your credit card is correct (especially when using a mobile phone to receive the verification code).
+- The verification process didn't work after you submitted the verification code.
+- You're not sure if the contact info for your credit card is correct.
