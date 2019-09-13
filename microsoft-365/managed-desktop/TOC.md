@@ -27,7 +27,7 @@
 ### [Add Admin contacts](get-started/add-admin-contacts.md)
 ### [Set up devices](get-started/set-up-devices.md)
 #### [Register new devices yourself](get-started/register-devices-self.md)
-##### [Steps for Partners to register devices)](get-started/register-devices-partner.md)
+##### [Steps for Partners to register devices](get-started/register-devices-partner.md)
 #### [Register existing devices yourself](get-started/register-reused-devices-self.md)
 #### [Get your users ready to use devices](get-started/get-started-devices.md)
 ### [Deploy apps](get-started/deploy-apps.md)

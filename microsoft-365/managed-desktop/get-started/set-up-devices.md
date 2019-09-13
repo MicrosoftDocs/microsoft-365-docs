@@ -21,7 +21,7 @@ We recommend working with one of our approved device partners. You can work with
 3. Once they've arrived, do either of the following:
     - [Register new devices yourself](register-devices-self.md)
     - Work with a partner to register the devices
-4. Get your users ready to use Microsoft Managed Desktop devices
+4. [Get your users ready](get-started-devices.md) to use Microsoft Managed Desktop devices
 
 ## To re-use existing devices
 
@@ -29,4 +29,4 @@ We recommend working with one of our approved device partners. You can work with
 2. Do either of the following:
     - [Register existing devices yourself](register-reused-devices-self.md)
     - Work with a partner to register the devices
-3. Get your users ready to use Microsoft Managed Desktop devices
+3. [Get your users ready](get-started-devices.md) to use Microsoft Managed Desktop devices

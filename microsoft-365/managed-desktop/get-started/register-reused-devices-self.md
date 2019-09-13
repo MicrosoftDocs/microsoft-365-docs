@@ -16,10 +16,10 @@ The process for Partners is documented in [Register devices in Microsoft Managed
 
 Microsoft Managed Desktop can work with brand-new devices or you can re-use devices you might already have (which will require that you re-image them). You can register devices by using Microsoft Managed Desktop on the Azure Portal.
 
-## Prepare to register brand-new devices
+## Prepare to register existing devices
 
 
-Once you have the new devices in hand, you'll follow these steps:
+To register existing devices, follow these steps:
 
 1. [Obtain the hardware hash for each device.](#obtain-the-hardware-hash)
 2. [Merge the hash data](#merge-hash-data)
@@ -127,7 +127,7 @@ In an Active Directory environment, you can use the `Get-MMDRegistrationInfo` Po
     2. Find **Windows Management Instrumentation (WMI)** in the list, enable for both **Private and Public**, and then select **OK**.
 
 1.	Open a PowerShell prompt with administrative rights.
-2.	Run either one of these scripts:
+2.	Run *either one* of these scripts:
 ```powershell
 Install-script -name Get-MMDRegistrationInfo 
 #example one – leverage Get-ADComputer to enumerate devices 
@@ -135,7 +135,7 @@ Get-ADComputer -filter * | powershell -ExecutionPolicy Unrestricted Get-MMDRegis
 ```
 ```powershell 
 #example two – target specific devices: 
-{MISSING A GET?} powershell -ExecutionPolicy Unrestricted Get-MMDRegistrationInfo.ps1 -credential Domainname\<accountname> -Name Machine1,Machine2,Machine3
+Set-ExecutionPolicy powershell -ExecutionPolicy Unrestricted Get-MMDRegistrationInfo.ps1 -credential Domainname\<accountname> -Name Machine1,Machine2,Machine3
 ```
 3. Access any directories where there might be entries for the devices. Remove entries for each device from *all* directories, including Windows Server Active Directory Domain Services and 
 Azure Active Directory. Be aware that this removal could take a few hours to completely process.
@@ -243,10 +243,9 @@ You’re also welcome to apply the image on your own if you prefer. To get start
 ### Deliver the device
 
 > [!IMPORTANT]
-> Before you hand off the device to your user, make sure you have obtained and applied the appropriate licenses for that user.
+> Before you hand off the device to your user, make sure you have obtained and applied the [appropriate licenses](../get-ready/prerequisites.md) for that user.
 
-If all the licenses are applied, your user can start up the device and proceed through the Windows setup experience. You might also want to provide them with a user guide {LINK}.
-
+If all the licenses are applied, you can [get your users ready to use devices](get-started-devices.md), and then your user can start up the device and proceed through the Windows setup experience.
 
 
 
