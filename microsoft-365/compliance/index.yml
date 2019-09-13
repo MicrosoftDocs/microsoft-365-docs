@@ -81,7 +81,7 @@ landingContent:
             url: ediscovery-cases.md
           - text: Create an eDiscovery hold
             url: ediscovery-cases#step-4-place-content-locations-on-hold.md
-          - text: Create an litigation hold
+          - text: Create a litigation hold
             url: create-a-litigation-hold.md
   
   # Card
@@ -121,9 +121,9 @@ landingContent:
             url: search-the-audit-log-in-security-and-compliance.md
 
     # Card
-  - title: Use regulatory compliance action plans
+  - title: Get started with regulatory compliance action plans
     linkLists:
-      - linkListType: overview
+      - linkListType: get-started
         links:
           - text: GDPR compliance action plan
             url: gdpr-action-plan.md
