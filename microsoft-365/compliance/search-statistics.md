@@ -82,3 +82,4 @@ The following information is displayed in the **Queries** view:
 - **Items** - The total number of items that matched the search criteria for the part/condition displayed in the row.
 
 - **Size** - The total number of items that matched the search criteria for the part/condition displayed in the row.
+
