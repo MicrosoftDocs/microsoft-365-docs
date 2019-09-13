@@ -25,6 +25,8 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
+          - text: Protect information
+            url: protect-information.md
           - text: Sensitivity labels
             url: sensitivity-labels.md
           - text: Data loss prevention (DLP)
@@ -40,11 +42,13 @@ landingContent:
       - linkListType: overview
         links:
           - text: Manage records in Microsoft 365
-            url: file1.md
+            url: records-management.md
           - text: File plan manager
-            url: file2.md
+            url: file-plan-manager.md
+          - text: Retention labels
+            url: labels.md
           - text: Event-based retention
-            url: file2.md
+            url: event-driven-retention.md
 
   # Card
   - title: Manage data governance
@@ -52,25 +56,33 @@ landingContent:
       - linkListType: overview
         links:
           - text: Import data
-            url: file1.md
+            url: importing-pst-files-to-office-365.md
           - text: Store data
-            url: file2.md
+            url: unlimited-archiving.md
           - text: Retain data
-            url: file1.md
+            url: retention-policies.md
           - text: Supervise communications
-            url: file2.md
+            url: supervision-policies.md
+          - text: Inactive mailboxes
+            url: inactive-mailboxes-in-office-365.md
+          - text: View data governance reports
+            url: view-the-data-governance-reports.md
 
   # Card
   - title: Manage legal investigations
     linkLists:
       - linkListType: overview
         links:
+          - text: Manage legal investigations
+            url: manage-legal-investigations.md
           - text: Advanced eDiscovery
-            url: file1.md
+            url: overview-ediscovery-20.md
           - text: Manage eDiscovery cases
-            url: file2.md
-          - text: Manage legal holds
-            url: file1.md
+            url: ediscovery-cases.md
+          - text: Create an eDiscovery hold
+            url: ediscovery-cases#step-4-place-content-locations-on-hold.md
+          - text: Create an litigation hold
+            url: create-a-litigation-hold.md
   
   # Card
   - title: Manage data investigations
@@ -78,9 +90,11 @@ landingContent:
       - linkListType: overview
         links:
           - text: Manage a data investigation
-            url: file1.md
+            url: overview-data-investigations.md
+          - text: Manage a data spillage incident
+            url: manage-data-spillage-incidents.md
           - text: Create a new investigation
-            url: file2.md
+            url: create-new-investigation.md
               
   # Card
   - title: Find compliance solutions
@@ -88,13 +102,13 @@ landingContent:
       - linkListType: overview
         links:
           - text: Compliance Manager
-            url: file1.md
+            url: compliance-manager-overview.md
           - text: Information barriers
-            url: file2.md
+            url: information-barriers.md
           - text: Customer Key
-            url: file1.md
+            url: controlling-your-data-using-customer-key.md
           - text: Information protection for GDPR
-            url: file2.md
+            url: office-365-info-protection-for-gdpr-overview.md
 
    # Card
   - title: Manage search and audit
@@ -102,6 +116,6 @@ landingContent:
       - linkListType: overview
         links:
           - text: Search for content
-            url: file1.md
+            url: search-for-content.md
           - text: Search the audit log
-            url: file2.md
+            url: search-the-audit-log-in-security-and-compliance.md
