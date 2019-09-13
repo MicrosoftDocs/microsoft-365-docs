@@ -123,7 +123,7 @@ landingContent:
     # Card
   - title: Use regulatory compliance action plans
     linkLists:
-      - linkListType: overview
+      - linkListType: get-started
         links:
           - text: GDPR compliance action plan
             url: gdpr-action-plan.md
