@@ -46,7 +46,7 @@ landingContent:
       - linkListType: overview
         links:
           - text: What is Office 365 ATP?
-            url: office365/office-365-atp.md
+            url: office-365-security/office-365-atp.md
           - text: Office 365 ATP service description
             url: https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description
 
