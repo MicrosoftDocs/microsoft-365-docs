@@ -10,9 +10,10 @@ ms.collection: M365-modern-desktop
 
 # Getting help for end users
 
-There are two ways that users in your organization can get help with their Microsoft Managed Desktop devices: **Get Help** app, or phone support. Both of these support options are available to users 24 hours a day, 7 days a week. 
+There are two ways that users in your organization can get help with their Microsoft Managed Desktop devices: **Get Help** app, or phone support. Both of these support options are available to users 24 hours a day, 7 days a week.
+ 
 >[!NOTE]
->Devices residing in the test group are out of scope for these end user support options. 
+>These support options are not available for devices in the Test group. 
 
 ## Get Help app
 
