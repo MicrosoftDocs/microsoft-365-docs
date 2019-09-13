@@ -33,6 +33,7 @@ Your bank may require verification through multi-factor authentication. Some exa
 - Adding licenses to a subscription
 - Adding or replacing the credit card used to pay for a subscription or service
 - Adding or replacing a credit card on a billing profile
+- Buying apps
 
 ### Subscription lifecycle events
 

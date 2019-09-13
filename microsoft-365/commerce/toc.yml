@@ -27,7 +27,7 @@
           href: /microsoft-store/billing-profile?context=/microsoft-365/commerce/context/context-commerce
         - name: Order history
           href: /microsoft-store/manage-orders-microsoft-store-for-business?context=/microsoft-365/commerce/context/context-commerce
-        - name: Payment Services Directive 2 and Strong Customer Authenticatin
+        - name: Payment Services Directive 2 and Strong Customer Authentication
           href: psd2.md
       items: 
         - name: Manage billing account info
