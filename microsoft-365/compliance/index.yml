@@ -21,6 +21,18 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
+  - title: Protect user and device access
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Protect user and device access
+            url: protect-access-to-data-and-services.md
+          - text: Privileged access management
+            url: privileged-access-management-overview.md
+          - text: Configure privileged access management
+            url: privileged-access-management-configuration.md
+  
+  # Card (optional)
   - title: Protect information
     linkLists:
       - linkListType: overview
