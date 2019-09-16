@@ -32,7 +32,7 @@ To set up your organization's domain-joined devices to benefit from the capabili
   
 Complete the steps below to make your Windows 10 devices Hybrid Azure AD joined and managed by Microsoft 365 Business.
   
-1. **Prepare for Directory Synchronization**: Before you synchronize your users and computers from the local Active Directory Domain, review [Prepare for directory synchronization](https://docs.microsoft.com/en-us/office365/enterprise/prepare-for-directory-synchronization). In particular:
+1. **Prepare for Directory Synchronization**: Before you synchronize your users and computers from the local Active Directory Domain, review [Prepare for directory synchronization to Office 365](https://docs.microsoft.com/office365/enterprise/prepare-for-directory-synchronization). In particular:
 
    - Ensure that no duplicates exist among your directory for the following attributes: **mail**, **proxyAddresses**, and **userPrincipalName**. These values should be unique and any duplicates should be removed as necessary.
    
