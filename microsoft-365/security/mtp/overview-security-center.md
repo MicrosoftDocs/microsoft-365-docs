@@ -32,7 +32,7 @@ The **Home** page shows many of the common cards that security teams need. The c
 
 This at-a-glance information helps you keep up with the latest activities in your organization. The Microsoft 365 security center brings together signals from a variety of sources to present a holistic view of your Microsoft 365 environment.
 
-![Microsoft 365 security homepage](./media/security-docs/home.jpg)
+![Microsoft 365 security homepage](../media/security-docs/home.jpg)
 
 The Microsoft 365 security center includes:
 
