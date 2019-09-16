@@ -14,6 +14,15 @@ ms.localizationpriority: normal
 
 This topic lists new and updated topics in the [Microsoft Managed Desktop documentation](index.yml).
 
+## September 2019
+New or changed topic | Description
+--- | ---
+[Prerequisites for Microsoft Managed Desktop](get-ready/prerequisites.md) | Updated topic
+[Set up Microsoft Managed Desktop devices](get-started/set-up-devices.md) | New topic
+[Register new devices yourself](get-started/register-devices-self.md) | Updated topic
+[Register existing devices yourself](get-started/register-reused-devices-self.md) | New topic
+[How updates are handled in Microsoft Managed Desktop](service-description/updates.md) | Updated topic
+
 ## August 2019
 New or changed topic | Description
 --- | ---
@@ -22,8 +31,6 @@ New or changed topic | Description
 [Getting help for end users](working-with-managed-desktop/end-user-support.md) | Updated topic
 [Prerequisites for Microsoft Managed Desktop](get-ready/prerequisites.md) | Updated topic
 [Microsoft Managed Desktop technologies](intro/technologies.md) | Updated topic
-
-
 
 
 
