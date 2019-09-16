@@ -3,7 +3,7 @@ title: "Phase 2: Identity"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/21/2019
+ms.date: 09/06/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -21,7 +21,7 @@ description: The steps to deploy the identity infrastructure for Microsoft 365 E
 
 In Microsoft 365 Enterprise, a well-planned and executed identity infrastructure paves the way for stronger security and access to your productivity workloads and their data only by authenticated users and devices.
 
-Watch this video for an overview of identity models and authentication for Microsoft 365.
+Watch this video for an overview of identity models and authentication for Microsoft 365 Enterprise.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2Pjwu]
 
@@ -35,7 +35,7 @@ For the identity features of each Microsoft 365 Enterprise plan, the role of Azu
 
 This two-page poster is a quick way to ramp up on identity concepts and configurations for Microsoft 365 Enterprise.
 
-You can [download this poster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/identity-infrastructure/M365E-ID-Infra.pdf) and print it in letter, legal, or tabloid (11 x 17) formats.
+You can also [download this poster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/identity-infrastructure/M365E-ID-Infra.pdf) and print it in letter, legal, or tabloid (11 x 17) formats.
 
 ## Plan and deploy your Microsoft 365 Enterprise identity infrastructure 
 
@@ -49,8 +49,9 @@ Use the following steps to plan and deploy your new identity infrastructure in t
 |![](./media/stepnumbers/Step4.png)| [Configure secure user authentication](identity-multi-factor-authentication.md) |
 |![](./media/stepnumbers/Step5.png)| [Simplify access for users](identity-password-reset.md) |
 |![](./media/stepnumbers/Step6.png)| [Use groups for easier management](identity-self-service-group-management.md) |
+|![](./media/stepnumbers/Step7.png)| [Configure identity governance](identity-governance.md) |
 
-When you've completed these steps, go to the [exit criteria](identity-exit-criteria.md) for this phase to ensure that you meet the required and optional conditions for Microsoft 365 Enterprise.
+When you've completed these steps, go to the [exit criteria](identity-exit-criteria.md) for this phase to ensure that you meet the required and optional conditions for Microsoft 365 Enterprise identity.
 
 ## Identity and device access recommendations
 
