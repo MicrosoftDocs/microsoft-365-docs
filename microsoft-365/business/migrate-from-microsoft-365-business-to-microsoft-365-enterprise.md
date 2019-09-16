@@ -31,10 +31,13 @@ Or, your business needs enterprise features, such as Office 365 ProPlus, Windows
 
 Migrating is easy: Just switch licenses. All your data and configuration in your current subscription is maintained. There is nothing for you to do to prepare for the migration and nothing to do afterward, except take advantage of the new features. 
 
+>[!Note]
+>You can also use a Microsoft 365 Business subscription for up to 300 seats and get a Microsoft 365 Enterprise E3 subscription for more than 300 seats. However, Office 365 ATP is not included with Microsoft 365 Enterprise E3. You should add additional Office 365 ATP licenses for the users in your Microsoft 365 Enterprise E3 subscription.
+>
+
 ## Differences between Microsoft 365 Business and Microsoft 365 Enterprise
 
 This table shows the differences between Microsoft 365 Business and Microsoft 365 Enterprise E3.
-
 
 ||||
 |:-------|:-----|:-----|
@@ -43,27 +46,27 @@ This table shows the differences between Microsoft 365 Business and Microsoft 36
 | Windows 10 licenses	| | 	Windows 10 Enterprise E3| 
 | Office apps	| Business apps*	| ProPlus apps | 
 | **Cloud productivity apps**		| | | 
-| Exchange Online and Outlook	| 50 GB storage limit per user	| Unlimited | 
-| Teams	| ![](./media/check-mark.png)	| ![](./media/check-mark.png) | 
+| Exchange Online and Outlook	| 100 GB storage limit per user or unlimited when Exchange Online Archiving is enabled	| Same as Microsoft 365 Business | 
+| Teams	| ![Included with Microsoft 365 Business](./media/check-mark.png)	| ![Included with Microsoft 365 Enterprise E3](./media/check-mark.png) | 
 | OneDrive for Business	| 1 TB storage limit per user	| Unlimited | 
-| Yammer, SharePoint Online, Planner, Stream	| ![](./media/check-mark.png)	| ![](./media/check-mark.png) | 
-| StaffHub	| ![](./media/check-mark.png)	| ![](./media/check-mark.png) | 
-| Outlook Customer Manager, MileIQ	| ![](./media/check-mark.png)	| | 
+| Yammer, SharePoint Online, Planner, Stream	| ![Included with Microsoft 365 Business](./media/check-mark.png)	| ![Included with Microsoft 365 Enterprise E3](./media/check-mark.png) | 
+| StaffHub	| ![Included with Microsoft 365 Business](./media/check-mark.png)	| ![Included with Microsoft 365 Enterprise E3](./media/check-mark.png) | 
+| Outlook Customer Manager, MileIQ	| ![Included with Microsoft 365 Business](./media/check-mark.png)	| | 
 | **Threat Protection**		| | | 
-| Microsoft Advanced Threat Analytics, Device Guard, Credential Guard, App Locker, Enterprise Data Protection	| 	| ![](./media/check-mark.png) | 
-| Office 365 Advanced Threat Protection (ATP)	| ![](./media/check-mark.png)	| Not included, but can be added on | 
+| Microsoft Advanced Threat Analytics, Device Guard, Credential Guard, App Locker, Enterprise Data Protection	| 	| ![Included with Microsoft 365 Enterprise E3](./media/check-mark.png) | 
+| Office 365 Advanced Threat Protection (ATP) Plan 1 | ![Included with Microsoft 365 Business](./media/check-mark.png)	| Not included, but can be added on | 
 | **Identity management**		| | | 
-| Self-service password reset for hybrid Azure Active Directory (Azure AD) accounts, Azure multi factor authentication (MFA), conditional access| 	![](./media/check-mark.png)	| ![](./media/check-mark.png) | 
-| Cloud App Discovery, Azure AD Connect Health, Single Sign-On (SSO) for more than 10 Apps	| 	| ![](./media/check-mark.png) | 
+| Self-service password reset for hybrid Azure Active Directory (Azure AD) accounts, Azure multi factor authentication (MFA), conditional access| 	![Included with Microsoft 365 Business](./media/check-mark.png)	| ![Included with Microsoft 365 Enterprise E3](./media/check-mark.png) | 
+| Cloud App Discovery, Azure AD Connect Health, Single Sign-On (SSO) for more than 10 Apps	| 	| ![Included with Microsoft 365 Enterprise E3](./media/check-mark.png) | 
 | **Device and app management**		| | | 
-| Microsoft Intune, Windows Autopilot| 	![](./media/check-mark.png)	| ![](./media/check-mark.png) | 
-| Microsoft Desktop Optimization Package, Virtual Desktop Access (VDA)	| | 	![](./media/check-mark.png) | 
+| Microsoft Intune, Windows Autopilot| 	![Included with Microsoft 365 Business](./media/check-mark.png)	| ![Included with Microsoft 365 Enterprise E3](./media/check-mark.png) | 
+| Microsoft Desktop Optimization Package, Virtual Desktop Access (VDA)	| | 	![Included with Microsoft 365 Enterprise E3](./media/check-mark.png) | 
 | **Information protection**		| | | 
-| Office 365 Data Loss Prevention, Azure Information Protection Plan 1	| ![](./media/check-mark.png)	| ![](./media/check-mark.png) | 
+| Office 365 Data Loss Prevention, Azure Information Protection Plan 1	| ![Included with Microsoft 365 Business](./media/check-mark.png)	| ![Included with Microsoft 365 Enterprise E3](./media/check-mark.png) | 
 | **Client Access License (CAL rights)**	| | | 	
-| Enterprise CAL Suite (Exchange, SharePoint, Skype, Windows, System Center Configuration Manager, Windows Rights Management)| | 		![](./media/check-mark.png) | 
+| Enterprise CAL Suite (Exchange, SharePoint, Skype, Windows, System Center Configuration Manager, Windows Rights Management)| | 		![Included with Microsoft 365 Enterprise E3](./media/check-mark.png) | 
 | **Compliance**		| | | 
-| Unlimited email archiving	| ![](./media/check-mark.png)	| ![](./media/check-mark.png) | 
+| Unlimited email archiving	| ![Included with Microsoft 365 Business](./media/check-mark.png)	| ![Included with Microsoft 365 Enterprise E3](./media/check-mark.png) | 
 ||||
 
 \* The Microsoft 365 Business version of the Office apps do not include volume activation through Group Policy, app telemetry, update controls, spreadsheet compare and inquire, and business Intelligence.
@@ -106,19 +109,9 @@ You can begin using Microsoft Desktop Optimization Package and VDA.
 
 ### Windows 10
 
-Microsoft 365 Business does not include any Windows 10 licenses. When you migrate to Microsoft 365 Enterprise E3, each user license includes Windows 10 Enterprise E3, which you can install with Windows Autopilot.
+Microsoft 365 Business does not include any Windows 10 licensing entitlement. When you migrate to Microsoft 365 Enterprise E3, each user license includes Windows 10 Enterprise E3, which you can install with Windows Autopilot.
 
 ### Office client 
 
-Your Office client installed on your devices will automatically begin to use the features of Office 365 ProPlus. After migration, you can now use volume activation through Group Policy, app telemetry, update controls, spreadsheet compare and inquire, and business Intelligence.
+Your Office client installed on your devices will automatically begin to use the features of Office 365 ProPlus. After migration, you can now use volume activation through Group Policy, app telemetry, update controls, spreadsheet compare and inquire, and business intelligence.
 
-<!--
-<<Need to confirm that a reinstallation is NOT required
-Is there a shared computer activation issue? Different users on same machine having different capabilities depending on their licenses>>
---> 
-
-## FAQ
-
-**Q:** Can I use a Microsoft 365 Business subscription for up to 300 seats and then get a Microsoft 365 Enterprise E3 subscription for more than 300 seats?
-
-**A:** Yes, you can mix and match the subscriptions. However, Office 365 ATP is not included with Microsoft 365 Enterprise E3. You should add additional Office 365 ATP licenses for the users in your Microsoft 365 Enterprise E3 subscription.
