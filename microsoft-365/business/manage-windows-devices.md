@@ -38,7 +38,7 @@ Complete the steps below to make your Windows 10 devices Hybrid Azure AD joined 
    
    - It is recommended that the **userPrincipalName** (UPN) attribute for each local user account be configured to match the primary email address that corresponds to the licensed Microsoft 365 user. For example **mary.shelley@contoso.com** rather than **mary@contoso.local**
    
-   - Finally, if the Active Directory domain ends in a non-routable suffix like **.local** or **.lan**, instead of an internet routable suffix such as **.com** or **.org**, then you will need to adjust the UPN suffix of the local user accounts first as described in [Prepare a non-routable domain for directory synchronization](https://docs.microsoft.com/en-us/office365/enterprise/prepare-a-non-routable-domain-for-directory-synchronization). 
+   - Finally, if the Active Directory domain ends in a non-routable suffix like **.local** or **.lan**, instead of an internet routable suffix such as **.com** or **.org**, you will need to adjust the UPN suffix of the local user accounts first as described in [Prepare a non-routable domain for directory synchronization](https://docs.microsoft.com/office365/enterprise/prepare-a-non-routable-domain-for-directory-synchronization). 
 
 2. **Install and configure Azure AD Connect**: To synchronize your users, groups, and contacts from the local Active Directory into Azure Active Directory, run the Directory synchronization wizard from Azure Active Directory Connect as described in [Set up directory synchronization for Office 365](https://support.office.com/article/1b3b5318-6977-42ed-b5c7-96fa74b08846).
     
