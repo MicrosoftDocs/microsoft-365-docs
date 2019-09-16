@@ -42,7 +42,7 @@ The model produces the following three properties for every document:
 
 These properties (and their corresponding values) are added to the file metadata of the documents in a review set, as shown in the following screenshot:
 
-![Attorney-client privilege properties shown in file metadata](../media/AeDAttorneyClientPrivilegeMetadata.png)
+![Attorney-client privilege properties shown in file metadata](media/AeDAttorneyClientPrivilegeMetadata.png)
 
 These three properties are also searchable within a review set. For more information, see [Query the data in a review set](review-set-search.md).
 
@@ -58,7 +58,7 @@ As previously stated, the attorney-client privilege detection model is in Previe
 
 2. On the **Advanced eDiscovery** home page, in the **Settings** tile, click **Configure experimental features**.
 
-   ![Click "Configure experimental features"](../media/AeDExperimentalFeatures.png)
+   ![Click "Configure experimental features"](media/AeDExperimentalFeatures.png)
 
 3. On the **Experimental features** tab, click **Manage attorney-client privilege setting**.
 
@@ -76,7 +76,7 @@ To upload an attorney list for use by the attorney-client privilege detection mo
 
    The **Attorney-client privilege** page is displayed, and the **Attorney-client privilege detection** toggle is turned on.
 
-   ![Attorney-client privilege flyout page](../media/AeDUploadAttorneyList.png)
+   ![Attorney-client privilege flyout page](media/AeDUploadAttorneyList.png)
 
 3. Click **Browse** and then find and select the .csv file that you created in step 1.
 
@@ -94,13 +94,13 @@ One of the primary ways to see the results of attorney-client privilege detectio
  
 2. Under **Tags**, click the pull-down next to **Add group** and then click **Add smart tag group**.
 
-   ![Click "Add smart tag group"](../media/AeDCreateSmartTag.png)
+   ![Click "Add smart tag group"](media/AeDCreateSmartTag.png)
 
 3. On the **Choose a model for your smart tag** page, click **Select** next to **Attorney-client privilege**.
 
    A tag group named **Attorney-client privilege** is displayed. It contains two child tags named **Positive** and **Negative**, which correspond to the possible results produced by the model.
 
-   ![Attorney-client privilege smart tag group](../media/AeDAttorneyClientSmartTagGroup.png)
+   ![Attorney-client privilege smart tag group](media/AeDAttorneyClientSmartTagGroup.png)
 
 3. Rename the tag group and tags as appropriate for your review. For example, you can rename **Positive** to **Privileged** and **Negative** to **Not privileged**.
 
@@ -122,8 +122,8 @@ If the model determines that a document doesn't contain content that is legal in
 
 For example, the following screenshots show two documents; the first one contains content that is legal in nature and has a participant found in the list of attorneys; the second contains neither and therefore doesn't display any labels.
 
-![Document with Attorney and Legal content labels](../media/AeDTaggingPanelLegalContentAttorney.png)
+![Document with Attorney and Legal content labels](media/AeDTaggingPanelLegalContentAttorney.png)
 
-![Document without any labels](../media/AeDTaggingPanelNegative.png)
+![Document without any labels](media/AeDTaggingPanelNegative.png)
 
 After you review a document to see if it contains privileged content, you can tag the document with the appropriate tag.

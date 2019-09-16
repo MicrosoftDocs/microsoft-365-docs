@@ -43,4 +43,4 @@ Based on the configuration of your legal hold notification, your custodians may 
 ## Compliance Portal
 In addition to the email notifications, each custodian will also have access to a unique Compliance Portal. Through the portal, each custodian will be able to view, access, and acknowledge their active hold notifications.
 
-![Compliance Portal for a custodian](../media/CustodianPortal.jpg)
+![Compliance Portal for a custodian](media/CustodianPortal.jpg)
