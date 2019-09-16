@@ -4,7 +4,7 @@ keywords: AIR, autoIR, ATP, automated, investigation, response, remediation, thr
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 09/09/2019
+ms.date: 09/04/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,14 +13,14 @@ search.appverid:
 - MET150
 - MOE150
 ms.collection: M365-security-compliance
-description: "Get started using automated incident response capabilities in Office 365 Advanced Threat Protection Plan 2."
+description: "Get started using automated investigation and response capabilities in Office 365 Advanced Threat Protection Plan 2."
 ---
 
 # Automatically investigate and respond to threats in Office 365
 
 ## Overview
 
-[Office 365 Advanced Threat Protection](office-365-atp.md) Plan 2 includes automated incident response (AIR) capabilities that can save your security operations team time and effort in dealing with alerts and threats. Read this article to get started using AIR capabilities in Office 365. To learn more about how AIR works, see [Automated incident response (AIR) in Office 365](automated-investigation-response-office.md).
+[Office 365 Advanced Threat Protection](office-365-atp.md) Plan 2 includes automated investigation and response (AIR) capabilities that can save your security operations team time and effort in dealing with alerts and threats. Read this article to get started using AIR capabilities in Office 365. To learn more about how AIR works, see [Automated Investigation and Response (AIR) with Office 365](automated-investigation-response-office.md).
 
 With AIR, when certain alerts are triggered, one or more security playbooks initiate, and automated investigation begins. During and after an automated investigation process, your administrators and security operations team can:
 
@@ -85,15 +85,9 @@ Certain kinds of alerts trigger automated investigation in Office 365. To learn 
 
 6. Review the information on the flyout, and, depending on the particular alert, take an action, such as **Resolve**, **Suppress**, or **Notify users**. 
 
-    - **Resolve** is equivalent to closing an alert
-    
-    - **Suppress** causes a policy to not trigger alerts for a specified period of time
-    
-    - **Notify users** starts an email with users' email addresses already entered, and enables your security operations team to type a message to those users. (This is similar to sending a message to recipients using [Threat Explorer](threat-explorer.md).)  
-
 ## Use the Office 365 Management Activity API for custom or third-party reporting solutions
 
-If your organization is using a custom or third-party reporting solution, you can view information about automated investigations in that solution by using the Office 365 Management Activity API.
+If your organization is using a custom reporting solution, or a third-party reporting solution, you can view information about automated investigations in that solution by using the Office 365 Management Activity API.
 
 Use the following resources to set this up:
 

@@ -5,7 +5,7 @@
 #### [What is Microsoft Threat Protection?](mtp/microsoft-threat-protection.md)
 #### [Microsoft 365 security center](mtp/overview-security-center.md)
 
-### [Hunting in Microsoft 365](./office-365-security/hunting.md)
+### [Hunting in Microsoft 365](./mtp/hunting.md)
 
 ### [Secure Score](./mtp/microsoft-secure-score.md)
 
@@ -24,7 +24,6 @@
 #### [Go to the Security & Compliance Center](./office-365-security/go-to-the-securitycompliance-center.md)
 ##### [Permissions in the Security & Compliance Center](./office-365-security/permissions-in-the-security-and-compliance-center.md)
 ##### [Give users access to the Security & Compliance Center](./office-365-security/grant-access-to-the-security-and-compliance-center.md)
-#### [Use your free Azure Active Directory subscription](./office-365-security/use-your-free-azure-ad-subscription-in-office-365.md)
 #### [Plan for security and compliance in Office 365](./office-365-security/plan-for-security-and-compliance.md)
 
 #### [Chief Information Security Officer (CISO) workshop training](./office-365-security/ciso-workshop.md)
@@ -36,7 +35,7 @@
 ##### [Module 5 - Information protection](./office-365-security/ciso-workshop-module-5.md)
 
 
-### [Protect against threats](./office-365-security/reduce-spam.md)
+### [Protect against threats](./office-365-security/reduce-spam-email.md)
 #### [Anti-spam and anti-malware protection](./office-365-security/anti-spam-and-anti-malware-protection.md)
 ##### [Advanced spam filtering options](./office-365-security/advanced-spam-filtering-asf-options.md)
 ##### [High-risk delivery pool for outbound messages](./office-365-security/high-risk-delivery-pool-for-outbound-messages.md)
@@ -137,7 +136,7 @@
 
 ##### [Role Administrator setup tasks]()
 ###### [Turn on ATP for SharePoint, OneDrive, and Microsoft Teams](./office-365-security/turn-on-atp-for-spo-odb-and-teams.md)
-#### [Understanding latest attack campaigns with threat analytics](./office-365-security/latest-attack-campaigns.md)
+#### [Understanding latest attack campaigns with threat analytics](./mtp/latest-attack-campaigns.md)
 #### [View and read your ATP reports](./office-365-security/view-reports-for-atp.md)
 #### [What ATP Safe Links warning pages mean](./office-365-security/atp-safe-links-warning-pages.md)
 #### [Use Threat Trackers](./office-365-security/threat-trackers.md)
@@ -185,7 +184,7 @@
 ##### [Slow mail flow rules insight](./office-365-security/mfi-slow-mail-flow-rules-insight.md)
 
 ### [Security solutions]()
-#### [Microsoft Security Guidance for Political Campaigns, Nonprofits, and Other Agile Organizations](./office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-#o.md)
+#### [Microsoft Security Guidance for Political Campaigns, Nonprofits, and Other Agile Organizations](./office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
 ##### [Configure groups and users for a political campaign dev/test environment](./office-365-security/configure-groups-and-users-for-a-political-campaign-dev-test-environment.md)
 ##### [Create team sites in a political campaign dev/test environment](./office-365-security/create-team-sites-in-a-political-campaign-dev-test-environment.md)
 
@@ -202,9 +201,6 @@
 ##### [Isolated SharePoint Online team site dev/test environment](./office-365-security/isolated-sharepoint-online-team-site-dev-test-environment.md)
 #### [SIEM server integration](./office-365-security/siem-server-integration.md)
 
-### [Hybrid security capabilities]()
-#### [Exchange Online mail encryption with AD RMS](./office-365-security/information-rights-management-in-exchange-online.md)
-##### [Configure IRM to use an on-premises AD RMS server](./office-365-security/configure-irm-to-use-an-on-premises-ad-rms-server.md)
 
 #### [Exchange Online Protection](./office-365-security/exchange-online-protection-overview.md)
 ##### [EOP features](./office-365-security/eop-features.md)
@@ -234,12 +230,7 @@
 ###### [Use mail flow rules to see what your users are reporting to Microsoft](./office-365-security/use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md)
 ###### [Reducing malware threats through file attachment blocking](./office-365-security/reducing-malware-threats-through-file-attachment-blocking-in-exchange-online-pro.md)
 ###### [Reporting and message trace](./office-365-security/reporting-and-message-trace-in-exchange-online-protection.md)
-###### [Search for and delete messages](./office-365-security/search-for-and-delete-messagesadmin-help.md)
 ###### [Mail flow intelligence in Office 365](./office-365-security/mail-flow-intelligence-in-office-365.md)
-
-##### [Mailbox holds]()
-###### [Create a Litigation Hold](./office-365-security/create-a-litigation-hold.md)
-###### [Put an In-Place Hold on a soft-deleted mailbox](./office-365-security/put-an-in-place-hold-on-a-soft-deleted-mailbox.md)
 
 ##### [Quarantine](./office-365-security/quarantine.md)
 ###### [Find and release quarantined messages as an administrator](./office-365-security/find-and-release-quarantined-messages-as-an-administrator.md)
