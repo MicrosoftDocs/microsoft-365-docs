@@ -1,4 +1,4 @@
-# [Microsoft 365 Compliance](index.md)
+# [Microsoft 365 compliance](index.md)
 
 # Get started
 ## [What's new in the compliance center](whats-new.md)
