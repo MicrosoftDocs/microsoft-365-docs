@@ -14,3 +14,65 @@ ms.collection: m365-security-compliance
 
 # Insider Risk Management in Microsoft 365
 
+Effectively managing and minimizing risk in your organization starts with understanding the types of risks found in the modern workplace. Some risks are driven by external events and factors and are outside direct control, while other risks are driven by internal events and employee activities that can be eliminated and avoided. Some examples are risks from illegal, inappropriate, unauthorized, or unethical behavior and actions by employees and managers. These behaviors include a broad range of risks from employees:
+
+- Leaks of sensitive data and data spillage
+- Confidentiality violations
+- Intellectual property (IP) theft
+- Fraud
+- Insider trading
+- Regulatory compliance violations
+
+Employees in the modern workplace have access to create, manage, and share data across a broad spectrum of platforms and services. In most cases, organizations have limited resources and tools to identify and mitigate organization-wide risks while also meeting employee privacy standards.
+
+Microsoft 365 Insider Risk Management uses the full breadth of service and 3rd-party signals to help you quickly identify, triage, and remediate risks. By using logs from Office 365 and Azure services, 
+
+Insider Risk Management is centered around the following principles:
+
+- **Transparency**: Balance employee privacy versus organization risk with privacy-by-design architecture
+- **Configurable**: Configurable policies based on industry, geographical, and business groups
+- **Integrated**: Integrated workflow across Microsoft 365 compliance solutions
+- **Actionable**: Provides insights to enable employee notifications, data investigations, and employee investigations
+
+## Terminology
+
+The Insider Risk compliance solution...
+
+| Term | Definition |
+|:-----|:-----|
+| Alerts| An Insider Risk alert is |
+| Cases| An Insider Risk case is |
+| Content Explorer | The Insider Risk Content Explorer is  |
+| Notices| Insider Risk notices are |
+| Playbooks| Insider Risk playbooks are pre-configured templates applied to policies that contain a comprehensive set of risk signals to drive alerts. Default playbooks address security controls violations, data theft from departing employees, communication policy violations, potential reporting violations, and data leakage. |
+| Policies| An Insider Risk policy |
+| Policy severity| |
+| User Activities | User activities are |
+| User risk|  |
+
+## Workflow
+
+Set policies
+Receive alerts
+Triage alerts
+Take action
+    Notice/education for employee
+    Investigate data
+    Investigate employee
+
+## Requirements
+
+- The following plans include Insider Risk Management:
+    - Microsoft 365 E5
+    - Microsoft 365 E5 Compliance
+
+## Scenarios
+
+### Data theft by departing employee
+
+### Intentional or unintentional leak of sensitive or confidential information
+
+### Employees and contractors that violate security policies
+
+### Actions and behaviors that violate Human Resources policies
+
