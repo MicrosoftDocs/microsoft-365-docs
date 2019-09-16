@@ -5,11 +5,10 @@ keywords: Microsoft Managed Desktop, device, get started, Microsoft 365
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.date: 2/27/2019
 ms.collection: M365-modern-desktop
 ---
 
-# Get started using Microsoft Managed Desktop devices
+# Get your users ready to use devices
 
 Microsoft Managed Desktop devices come pre-configured with the current version of Windows. Configurations and apps will be installed from the cloud as the user completes setting up the device. 
  
