@@ -15,7 +15,7 @@ ms.custom:
 
 description:  Understand what Microsoft does during a service incident so you can better prepare your business continuity plans.
 ---
-# Enterprise Business Continuity Management Customer and Cloud Partner Responsibilities
+# Enterprise business continuity management customer and cloud partner responsibilities
 
 Getting Microsoft 365 cloud services to your users is a partnership between your organization and Microsoft. Microsoft provides the services and you are responsible for connecting your client endpoints, managing identity and access and how those services are used. There are shared responsibilities, such as the identity and directory infrastructure as well. This article covers some of the critical items you need to be mindful to keep your business functioning in the event of a service incident and it helps set expectations as to what Microsoft will do during a service incident.
 
@@ -29,7 +29,7 @@ Microsoft notifies Microsoft 365 administrators by updating the tenant-specific 
 ## Targeted
 In most cases, when our monitoring systems detect an issue, we can (isolate) OR (identify) the affected customer base, from a single customer up to region or beyond and direct the necessary communications to those impacted customers. This helps you know what you need to know for your business and not be distracted by noise notifications that don't impact you. For example, if a specific mailbox database is impacted, we're able to identify exactly which customers have users on the affected infrastructure and scope our communications to them. If the scope of impact of the incident is unclear, we expand our communications out to the widest group of customer who are potentially impacted.
 
-## Highly Avaliable
+## Highly avaliable
 Microsoft maintains multiple channels for service status communications that customers can use.
 
 - In the event the Admin center or the Service Health Dashboard within the Admin center are unavailable, you can monitor the service status using our [backup site](https://status.office365.com/).

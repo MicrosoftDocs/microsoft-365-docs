@@ -13,7 +13,7 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom:
 
-description: offering. 
+description: understand the benefits of regular training and practice of your business continuity plan. 
 ---
 
 # Train your organization
@@ -29,7 +29,7 @@ Be sure to include these key topics in your service resiliency training:
 - Available alternative forms of communication, such as emergency phone bridges, social media pages, or mobile phones
 - Alternative means of connectivity, including the use of M365 mobile or web applications in the event rich clients are unavailable
 
-## Plan the Exercise and Exercise the Plan
+## Plan the exercise and exercise the plan
 
 You should regularly practice your continuity plans and update them based on what was learned from the practice. If you don't test them, your continuity plans quickly become outdated and most tabletop exercises are insufficient preparation for addressing the issues you encounter in a hands on, real world test. A standard practice is to exercise each Business Continuity Plan (BCP) within 12 months (at a minimum) of the last validation. Microsoft recommends integrating continuity exercises into your routine operations more frequently, which may involve taking systems offline or temporarily disabling primary methods of communication.  
 

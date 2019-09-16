@@ -16,7 +16,7 @@ ms.custom:
 description: Things to consider when developing your cloud aware business continuity plan. 
 ---
 
-# Developing your Continuity Plan
+# Developing your continuity plan
 
 This topic provides guidance on developing a business continuity plan that takes Microsoft 365 dependencies into account. Here we recommend methods for analyzing your business functions and identifying the ones which depend on Microsoft 365 services. You'll perform this analysis with the anticipation that there will be service failures and that you have to prepare for those possibilities.
 
@@ -70,12 +70,12 @@ Here's a sample dependency analysis (DA) you can start from. In your dependency 
 |completed date|         |
 |contributors|         |
   
-## Capability Validation
+## Capability validation
 
 Once you have inventoried your business processes and mapped out relationships to other process and technologies, you need to build validation scenarios for all the processes. Basically, figure out how you are going to validate your business process continuity plans. You'll probably find that some are more important that others and you'll want to prioritize those.
 Don't forget that regularly training employees on incident response and continuity measures is important, once the plan is established. Post incident reviews should be used to enhance your resiliency strategies by incorporating learnings from each validation or test.
 
-## Incident Coordination and Communication
+## Incident coordination and communication
 
 During a service incident, normal communications channels may be impacted or degraded, so you should pre-arrange alternatives to help your organization stay connected during an incident. It is critical that the communication channels be established, vetted for security and compliance, and users trained on their use prior to a disruption. Failing from a known state to another known state is far preferable to users coming up with ad-hoc, unknown solutions in the middle of a crisis.
 
@@ -88,7 +88,7 @@ During your Business Impact Analysis and Dependency Analysis, you will be mappin
 - You may want to create a custom service health dashboard, or other such site, which can provide status updates during an incident. Training users where to go for information beforehand will help reduce unnecessary calls to help desk and instill confidence in your user base that the situation is being handled quickly and efficiently. Use the O365 Service Communications API to tie this into M365 for an even greater level of visibility.  
 - Where you store your Business Continuity Plans and Standard Operating Procedures. We recommend maintaining online and offline copies of critical documentation, such as with SharePoint Online or OneDrive for Business configured for automatic sync to local devices. For Service/Network Operations Centers and other similar teams that will be absolutely critical for recovery, you may also want to keep hard copies available to be used in the event of an emergency.
 
-## Know Your External Points of Integration
+## Know your external points of integration
 
 Regardless of business model, every company has points of integration with their customers, partners and vendors. The business value supply chain is build on integration with external entities. Improving business continuity in the event of service disruption requires consideration – and protection – of each point of integration.  
 As you analyze your supply chain, external communications should be considered in the same way internal communications are analyzed. Do your customers rely on your Exchange Online servers as the only method of contacting you? Have you established and made your suppliers aware of alternative communication methods, in the event uptime is impacted? Here's

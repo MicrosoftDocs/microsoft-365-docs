@@ -16,19 +16,11 @@ ms.custom:
 description: Some sample mitigations for Microsoft 365 service incident scenarios. 
 ---
 
-# Service Incident Mitigation Strategies
+# Service incident mitigation strategies
 
 Here are some strategies and scenarios that show how the impact of a Microsoft 365 service incident on your business process can be mitigated.
 
-## Leveraging Mobile App Access
-
-As mobile use has proliferated, there are new means to stay connected and Microsoft 365 mobile applications can be a key part of your resiliency strategy. Because they connect to cloud services over the cellular provider network, they are not dependent on your organizations network infrastructure.
-
-Let's use Outlook as an example. Users can Connect to their Exchange Online mailboxsover different network protocols (https or MAPI) depending on the email app being used. If there is a service incident that involves one of the protocols, say MAPI for instance which the desktop client uses, then your users can still get to their mailbox through the Outlook Mobile app or Outlook on the Web.
-  
-If you decide to allow users to connect to Microsoft 365 services via their mobile devices you can use Microsoft Intune to securely configure and manage those devices. Once the user accounts and devices are enrolled in your mobile management solution ensure that the apps have been downloaded and configured.
-
-## Service Incident Scenarios and Potential Mitigations
+## Service incident scenarios and potential mitigations
 
 Deploying mobile access is one way to mitigate the impact of one type of service incident scenario. Here are some others.
 
@@ -40,3 +32,11 @@ Deploying mobile access is one way to mitigate the impact of one type of service
 |VoIP phones are used as a secondary method of communication.|Implement non-VoIP phones capable of PSTN calling, especially for network and service operations centers during incidents. Add employee mobile phone numbers to the company directory for enabling critical personnel to be contacted over the cellular network.|
 |OneDrive for Business is relied upon for file storage and user productivity. [Files On-Demand](https://techcommunity.microsoft.com/t5/Microsoft-OneDrive-Blog/OneDrive-Files-On-Demand-For-The-Enterprise/ba-p/117234) is configured to free up space on local user drives.|OneDrive sync supplies group policies allowing admins to require specific content to be synced locally or free up space when desired. To mitigate the risk of document inaccessibility, configure this policy to sync critical documents locally. Train users to manually apply the “always keep on this device” setting for key documents.|
 |Communication of business disruptions to customers and suppliers relies on Exchange Online.|Public third-party social networks can be used as an alternative means of mass communication.
+
+## Leveraging mobile app access
+
+As mobile use has proliferated, there are new means to stay connected and Microsoft 365 mobile applications can be a key part of your resiliency strategy. Because they connect to cloud services over the cellular provider network, they are not dependent on your organizations network infrastructure.
+
+Let's use Outlook as an example. Users can Connect to their Exchange Online mailboxs over different network protocols (https or MAPI) depending on the email app being used. If there is a service incident that involves one of the protocols, say MAPI for instance which the desktop client uses, then your users can still get to their mailbox through the Outlook Mobile app or Outlook on the Web.
+  
+If you decide to allow users to connect to Microsoft 365 services via their mobile devices you can use Microsoft Intune to securely configure and manage those devices. Once the user accounts and devices are enrolled in your mobile management solution ensure that the apps have been downloaded and configured.

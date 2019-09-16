@@ -16,7 +16,7 @@ ms.custom:
 description: Understand how planning and implementing business continuity looks different when cloud services are part of your IT offering. 
 ---
 
-# Enterprise Business Continuity Management (EBCM) with cloud services
+# Enterprise business continuity management (EBCM) with cloud services
 
 As part of your organizations digital transformation, you need to revisit and update your disaster recovery and business continuity plans to account for the business process that depend on Microsoft 365 Cloud services. Microsoft 365 Cloud services, like Exchange Online, SharePoint Online and OneDrive for Business are designed and operated to be highly resilient. Even with this resilience, service incidents do occur. When they do, your organization should be prepared and have a well defined business continuity strategy.
 
@@ -24,12 +24,12 @@ If you haven't updated your plans yet this series of topics helps you to plan yo
 
 ## List of topics with links
 
-- [Customer and Cloud Partner Responsibilities](ebcm-customer-and-cloud-partner-ebcm-responsibilities.md)
-- [Microsoft 365 Service Resiliency](ebcm-m365-service-resiliency.md)
-- [Developing your Continuity Plan](ebcm-developing-your-ebcm-plan.md)
-- [Microsoft 365 Service Incident Mitigation Scenarios](ebcm-microsoft-365-mitigations.md)
-- [Microsoft 365 Business Continuity Plan Training and Rehearsal](ebcm-enterprise-business-continuity-management-plan-rehearsal-and-user-training.md)
+- [Customer and cloud partner responsibilities](ebcm-customer-and-cloud-partner-ebcm-responsibilities.md)
+- [Microsoft 365 service resiliency](ebcm-m365-service-resiliency.md)
+- [Developing your continuity plan](ebcm-developing-your-ebcm-plan.md)
+- [Microsoft 365 service incident mitigation scenarios](ebcm-microsoft-365-mitigations.md)
+- [Microsoft 365 business continuity plan training and rehearsal](ebcm-enterprise-business-continuity-management-plan-rehearsal-and-user-training.md)
 
-## See Also
+## See also
 
-- [Enterprise Business Continuity Legal Disclaimer](ebcm-legal-disclaimer.md)
+- [Enterprise business continuity legal disclaimer](ebcm-legal-disclaimer.md)
