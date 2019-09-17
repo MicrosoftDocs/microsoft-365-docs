@@ -21,9 +21,8 @@
 #### [Office 365 security roadmap](./office-365-security/security-roadmap.md)
 #### [Configure your Office 365 tenant for increased security](./office-365-security/tenant-wide-setup-for-increased-security.md)
 
-#### [Go to the Security & Compliance Center](./office-365-security/go-to-the-securitycompliance-center.md)
-##### [Permissions in the Security & Compliance Center](./office-365-security/permissions-in-the-security-and-compliance-center.md)
-##### [Give users access to the Security & Compliance Center](./office-365-security/grant-access-to-the-security-and-compliance-center.md)
+#### [Permissions in the Security & Compliance Center](./office-365-security/permissions-in-the-security-and-compliance-center.md)
+#### [Give users access to the Security & Compliance Center](./office-365-security/grant-access-to-the-security-and-compliance-center.md)
 
 #### [Chief Information Security Officer (CISO) workshop training](./office-365-security/ciso-workshop.md)
 ##### [Module 1 - Microsoft cybersecurity briefing](./office-365-security/ciso-workshop-module-1.md)
