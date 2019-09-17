@@ -45,11 +45,11 @@ With AIR, when certain alerts are triggered, one or more security playbooks init
 
     Either method takes you to a list of investigations.
 
-    ![Main investigation page for AIR](media/air-maininvestigationpage.png) 
+    ![Main investigation page for AIR](../media/air-maininvestigationpage.png) 
 
 3. In the list of investigations, select an item in the **ID** column. This opens investigation details page, starting with the investigation graph.
 
-    ![AIR investigation graph page](media/air-investigationgraphpage.png)
+    ![AIR investigation graph page](../media/air-investigationgraphpage.png)
 
 4. Use the various tabs to learn more about the investigation.
 

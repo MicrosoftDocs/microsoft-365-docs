@@ -48,7 +48,7 @@ When you decide to switch to EOP, make sure you give special consideration to th
   
 - **Custom Filtering Rules**: If you have custom filtering or business-policy rules to catch specific spam, we recommend that you try EOP with the default settings for a period, before you migrate your rules. EOP offers enterprise-level spam protection with the default settings, it may turn out that you don't need to migrate some of your rules to EOP. Of course, if you have rules in place that enforce specific custom business policies, you can create those. [Mail flow rules (transport rules) in Exchange Online Protection](mail-flow-rules-transport-rules-0.md) provides detailed instructions for creating mail flow rules in EOP.
 
-- **IP allow lists and IP block lists**: If you have per-user allow lists and block lists, allow some time to copy the lists to EOP as part of your setup process. For more information about IP allow lists and IP block lists, see [Configure the connection filter policy](../configure-the-connection-filter-policy.md).
+- **IP allow lists and IP block lists**: If you have per-user allow lists and block lists, allow some time to copy the lists to EOP as part of your setup process. For more information about IP allow lists and IP block lists, see [Configure the connection filter policy](configure-the-connection-filter-policy.md).
 
 - **Secure Communication**: If you have a partner that requires encrypted messaging, we recommend that you set this up in the Exchange admin center. To configure this scenario, see [Set up connectors for secure mail flow with a partner organization](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-for-secure-mail-flow-with-a-partner).
 

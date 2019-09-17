@@ -67,4 +67,4 @@ When you click the number of queued messages in **Queues**, the queue details an
 
 ## See also
 
-For more information about other mail flow insights in the mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights.md).
+For more information about other mail flow insights in the mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).

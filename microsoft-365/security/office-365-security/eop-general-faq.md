@@ -20,13 +20,13 @@ Here we answer the most common general questions about the Microsoft Exchange On
 
 - [Delegated administration FAQ](delegated-administration-faq.md)
 
-- [Anti-spam protection FAQ](../anti-spam-protection-faq.md)
+- [Anti-spam protection FAQ](anti-spam-protection-faq.md)
 
-- [Safe sender and blocked sender lists in Exchange Online](../safe-sender-and-blocked-sender-lists-faq.md)
+- [Safe sender and blocked sender lists in Exchange Online](safe-sender-and-blocked-sender-lists-faq.md)
 
-- [Quarantine FAQ](../quarantine-faq.md)
+- [Quarantine FAQ](quarantine-faq.md)
 
-- [Anti-malware protection FAQ](../anti-malware-protection-faq-eop.md)
+- [Anti-malware protection FAQ](anti-malware-protection-faq-eop.md)
 
 - [Message Trace FAQ](http://technet.microsoft.com/library/aa49e3f9-a5b1-4410-aac2-ddbbf3f5bfb2.aspx)
 

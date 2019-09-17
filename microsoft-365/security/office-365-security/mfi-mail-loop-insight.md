@@ -23,4 +23,4 @@ You can click **View details** to see the details in a flyout pane. We also iden
 
 ## See also
 
-For more information about other mail flow insights in the mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights.md).
+For more information about other mail flow insights in the mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).

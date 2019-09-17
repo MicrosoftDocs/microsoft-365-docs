@@ -23,7 +23,7 @@ Exchange Online Protection (EOP) is a cloud-based email filtering service that h
 EOP attempts to filter out junk, keeping your Inbox clear of content that users don't want to see. Normally, junk mail is delivered to the Junk Email folder. Some users like to check to make sure the filtering is doing what they want so the Junk Email folder is an easy way for users to check on their own.  
 
 > [!TIP]
-> It is a good thing when junk or otherwise bad email goes into the Junk Email folder automatically. The service will do what is necessary based on what the default or the custom admin settings state. In other words, users should not worry about seeing a lot of spam mail in the Junk Email folder. If admins prefer to move all junk out of sight, then the Quarantine should be configured. For more details, see the [Quarantine email messages in Office 365](../quarantine-email-messages.md) article.
+> It is a good thing when junk or otherwise bad email goes into the Junk Email folder automatically. The service will do what is necessary based on what the default or the custom admin settings state. In other words, users should not worry about seeing a lot of spam mail in the Junk Email folder. If admins prefer to move all junk out of sight, then the Quarantine should be configured. For more details, see the [Quarantine email messages in Office 365](quarantine-email-messages.md) article.
 
 ## Important terms
 

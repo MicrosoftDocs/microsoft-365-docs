@@ -18,7 +18,7 @@ Although Office 365 comes with a variety of anti-phishing features that are enab
 
 ## First things first: deal with any compromised accounts and make sure you block any more phishing messages from getting through
 
-If a recipient's account was compromised as a result of the phishing message, follow the steps in [Responding to a compromised email account in Office 365](responding-to-a-compromised-email-account.md).
+If a recipient's account was compromised as a result of the phishing message, follow the steps in [Responding to a compromised email account in Office 365](../../compliance/responding-to-a-compromised-email-account.md).
 
 If your subscription includes Advanced Threat Protection (ATP), you can use [Office 365 Threat Intelligence](office-365-ti.md) to identify other users who also received the phishing message. You have additional options to block phishing messages:
 
@@ -46,7 +46,7 @@ Specifically, you should check the **X-Forefront-Antispam-Report** header field 
 
 ## Best practices to stay protected
 
-- On a monthly basis, run [Secure Score](microsoft-secure-score.md) to assess your Office 365 organization's security settings.
+- On a monthly basis, run [Secure Score](../mtp/microsoft-secure-score.md) to assess your Office 365 organization's security settings.
 
 - Periodically review the [Spoof intelligence report](learn-about-spoof-intelligence.md) and [enable anti-spoofing protection in the anti-phishing policy](learn-about-spoof-intelligence.md#configuring-the-anti-spoofing-policy) to **quarantine** suspicious messages instead of delivering them to the user's Junk Email folder.
 
@@ -72,4 +72,4 @@ Specifically, you should check the **X-Forefront-Antispam-Report** header field 
 
 - Multi factor authentication (MFA) is a really good way to prevent compromised accounts. You should strongly consider enabling MFA for all of your users. For a phased approach, start by enabling MFA for your most sensitive users (admins, executives, etc.) before you enable MFA for everyone. For instructions, see [Set up multi-factor authentication](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication).
 
-- Forwarding rules to external recipients are often used by attackers to extract data. Use the **Review mailbox forwarding rules** information in [Microsoft Secure Score](microsoft-secure-score.md) to find and even prevent forwarding rules to external recipients. For more information, see [Mitigating Client External Forwarding Rules with Secure Score](https://blogs.technet.microsoft.com/office365security/mitigating-client-external-forwarding-rules-with-secure-score/).
+- Forwarding rules to external recipients are often used by attackers to extract data. Use the **Review mailbox forwarding rules** information in [Microsoft Secure Score](../mtp/microsoft-secure-score.md) to find and even prevent forwarding rules to external recipients. For more information, see [Mitigating Client External Forwarding Rules with Secure Score](https://blogs.technet.microsoft.com/office365security/mitigating-client-external-forwarding-rules-with-secure-score/).

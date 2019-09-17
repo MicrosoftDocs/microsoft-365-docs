@@ -46,4 +46,4 @@ Insights point to connectors to help draw your attention to potential TLS encryp
 
 ## See also
 
-For more information about other mail flow insights in the mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights.md).
+For more information about other mail flow insights in the mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).

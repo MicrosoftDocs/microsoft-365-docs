@@ -26,13 +26,13 @@ To implement specific messaging policies by using mail flow rules, see these top
   
 - [Use mail flow rules to inspect message attachments in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments)
 
-- [Set up encryption in Office 365 Enterprise](../set-up-encryption.md)
+- [Set up encryption in Office 365 Enterprise](../../compliance/set-up-encryption.md)
 
 - [Organization-wide message disclaimers, signatures, footers, or headers in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers)
 
-- [Use mail flow rules to set the spam confidence level (SCL) in messages](../use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)
+- [Use mail flow rules to set the spam confidence level (SCL) in messages](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)
 
-- [Create block sender lists in Office 365](../create-block-sender-lists-in-office-365.md)
+- [Create block sender lists in Office 365](create-block-sender-lists-in-office-365.md)
 
 - [Reducing malware threats through file attachment blocking in Exchange Online Protection](reducing-malware-threats-through-file-attachment-blocking-in-exchange-online-pro.md)
 

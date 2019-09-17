@@ -42,11 +42,11 @@ The Help content for EOP administrators consists of the following top-level cate
 
 - [Messaging policy and compliance in EOP](messaging-policy-and-compliance-in-eop.md): Describes how to use Exchange mail flow rules (also known as transport rules) to enforce specific company regulations and policies, and how to use auditing reports to track configuration changes to the service.
 
-- [Anti-spam and anti-malware protection in Office 365](../anti-spam-and-anti-malware-protection.md): Describes spam filtering and malware filtering and shows how to customize them to best meet the needs of your organization. Also describes tasks that administrators and end users can perform on quarantined messages.
+- [Anti-spam and anti-malware protection in Office 365](anti-spam-and-anti-malware-protection.md): Describes spam filtering and malware filtering and shows how to customize them to best meet the needs of your organization. Also describes tasks that administrators and end users can perform on quarantined messages.
 
 - [Reporting and message trace in Exchange Online Protection](reporting-and-message-trace-in-exchange-online-protection.md): Describes the reports and troubleshooting tools that are available.
 
-- [Exchange admin center in Exchange Online Protection ](../exchange-admin-center-in-exchange-online-protection-eop.md): Describes how to access and navigate through the Exchange admin center (EAC) management interface in order to manage your EOP service.
+- [Exchange admin center in Exchange Online Protection ](exchange-admin-center-in-exchange-online-protection-eop.md): Describes how to access and navigate through the Exchange admin center (EAC) management interface in order to manage your EOP service.
 
 - [Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/exchange-online-protection-powershell): Provides information about remote PowerShell, which lets you manage your EOP service from the command line.
 
@@ -56,11 +56,11 @@ The Help content for EOP administrators consists of the following top-level cate
 
 The Help content for assisting EOP end users to manage spam consists of the following topics:
   
-- [Find and release quarantined messages as a user](../find-and-release-quarantined-messages-as-a-user.md): Describes how end users can find and release their own spam-quarantined messages in the spam quarantine user interface, and optionally report them as not junk to Microsoft.
+- [Find and release quarantined messages as a user](find-and-release-quarantined-messages-as-a-user.md): Describes how end users can find and release their own spam-quarantined messages in the spam quarantine user interface, and optionally report them as not junk to Microsoft.
 
-- [Submit spam, non-spam, and phishing scam messages to Microsoft for analysis](../submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md): Describes the different ways end users can submit spam (junk) and non-spam (not junk) messages to Microsoft. This topic includes links to the reporting tools available in Microsoft Outlook and Outlook on the web (formerly known as Outlook Web App).
+- [Submit spam, non-spam, and phishing scam messages to Microsoft for analysis](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md): Describes the different ways end users can submit spam (junk) and non-spam (not junk) messages to Microsoft. This topic includes links to the reporting tools available in Microsoft Outlook and Outlook on the web (formerly known as Outlook Web App).
 
-- [Submitting malware and non-malware to Microsoft for analysis](../submitting-malware-and-non-malware-to-microsoft-for-analysis.md): Describes how end users can submit malware that made it past the filters, or submit a file that was incorrectly identified as malware.
+- [Submitting malware and non-malware to Microsoft for analysis](submitting-malware-and-non-malware-to-microsoft-for-analysis.md): Describes how end users can submit malware that made it past the filters, or submit a file that was incorrectly identified as malware.
 
 - End users can add specific users or domains to a safe sender list or a blocked sender list by configuring their junk email settings in Outlook or Outlook on the web. Note that messages that are sent from blocked senders are marked as spam, not rejected, meaning that they can be retrieved from the Junk Email folder or quarantine (depending on where your admin has configured the service to send spam.) For more information, see [Use the Report Message add-in](https://support.office.com/article/addin-b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
 

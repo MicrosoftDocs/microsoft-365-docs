@@ -20,7 +20,7 @@ In Microsoft Exchange Online Protection (EOP), you can use the Exchange admin ce
 
 - Estimated time to complete: 5-10 minutes
 
-- To open the Exchange admin center, see [Exchange admin center in Exchange Online Protection](../exchange-admin-center-in-exchange-online-protection-eop.md).
+- To open the Exchange admin center, see [Exchange admin center in Exchange Online Protection](exchange-admin-center-in-exchange-online-protection-eop.md).
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Users, Contacts, and Role Groups" entry in the [Feature permissions in EOP](feature-permissions-in-eop.md) topic.
 

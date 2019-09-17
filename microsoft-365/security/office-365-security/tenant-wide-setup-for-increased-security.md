@@ -23,7 +23,7 @@ This topic walks you through recommended configuration for tenant-wide settings 
   
 ## Check Office 365 Secure Score
 
-Office 365 Secure Score analyzes your Office 365 organization's security based on your regular activities and security settings and assigns a score. Begin by taking note of your current score. Adjusting some tenant-wide settings will increase your score. The goal is not to achieve the max score, but to be aware of opportunities to protect your environment that do not negatively affect productivity for your users. See [Microsoft Secure Score](microsoft-secure-score.md).
+Office 365 Secure Score analyzes your Office 365 organization's security based on your regular activities and security settings and assigns a score. Begin by taking note of your current score. Adjusting some tenant-wide settings will increase your score. The goal is not to achieve the max score, but to be aware of opportunities to protect your environment that do not negatively affect productivity for your users. See [Microsoft Secure Score](../mtp/microsoft-secure-score.md).
   
 ## Tune threat management policies in the Microsoft 365 security center
 
@@ -44,7 +44,7 @@ The Microsoft 365 security center includes capabilities that protect your enviro
 
 ## View dashboards and reports in the security and compliance centers
 
-Visit these reports and dashboards to learn more about the health of your environment. The data in these reports will become richer as your organization uses Office 365 services. For now, be familiar with what you can monitor and take action on. For more information, see : [Reports in the Microsoft 365 security and compliance centers](reports-in-security-and-compliance.md).
+Visit these reports and dashboards to learn more about the health of your environment. The data in these reports will become richer as your organization uses Office 365 services. For now, be familiar with what you can monitor and take action on. For more information, see : [Reports in the Microsoft 365 security and compliance centers](../../compliance/reports-in-security-and-compliance.md).
   
 |****Dashboard****|****Description****|
 |:-----|:-----|

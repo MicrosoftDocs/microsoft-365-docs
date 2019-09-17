@@ -24,7 +24,6 @@
 #### [Go to the Security & Compliance Center](./office-365-security/go-to-the-securitycompliance-center.md)
 ##### [Permissions in the Security & Compliance Center](./office-365-security/permissions-in-the-security-and-compliance-center.md)
 ##### [Give users access to the Security & Compliance Center](./office-365-security/grant-access-to-the-security-and-compliance-center.md)
-#### [Plan for security and compliance in Office 365](./office-365-security/plan-for-security-and-compliance.md)
 
 #### [Chief Information Security Officer (CISO) workshop training](./office-365-security/ciso-workshop.md)
 ##### [Module 1 - Microsoft cybersecurity briefing](./office-365-security/ciso-workshop-module-1.md)
@@ -53,7 +52,6 @@
 
 
 ##### [Office 365 email anti-spam protection](./office-365-security/anti-spam-protection.md)
-##### [How to prevent real email from being marked as spam in Office 365](./office-365-security/prevent-email-from-being-marked-as-spam.md)
 ##### [How policies and protections are combined](./office-365-security/how-policies-and-protections-are-combined.md)
 ##### [How to reduce spam email in Office 365](./office-365-security/reduce-spam-email.md)
 ##### [Controlling outbound spam in Office 365](./office-365-security/outbound-spam-controls.md)
@@ -124,7 +122,7 @@
 ###### [Download existing reports](./office-365-security/download-existing-reports.md)
 ##### [Enable or disable safety tips in Office 365](./office-365-security/enable-or-disable-safety-tips.md)
 ##### [View information about malicious files](./office-365-security/malicious-files-detected-in-spo-odb-or-teams.md)
-##### [View email security reports in the Security & Compliance Center](./office-365-security/view-email-security-reports.md)
+
 
 ### [Advanced Threat Protection ](./office-365-security/office-365-atp.md)
 #### [ATP setup tasks for admins]()
@@ -165,7 +163,6 @@
 #### [Office 365 Security Incident Response](./office-365-security/office365-security-incident-response-overview.md)
 #### [Detect and Remediate Illicit Consent Grants in Office 365](./office-365-security/detect-and-remediate-illicit-consent-grants.md)
 #### [Detect and Remediate Outlook Rules and Custom Forms Injections Attacks in Office 365](./office-365-security/detect-and-remediate-outlook-rules-forms-attack.md)
-#### [Responding to a Compromised Email Account in Office 365](./office-365-security/responding-to-a-compromised-email-account.md)
 
 ### [Mail flow]()
 #### [Enable the Report Message add-in](./office-365-security/enable-the-report-message-add-in.md)
@@ -189,9 +186,6 @@
 ##### [Create team sites in a political campaign dev/test environment](./office-365-security/create-team-sites-in-a-political-campaign-dev-test-environment.md)
 
 #### [Secure SharePoint Online sites and files](./office-365-security/secure-sharepoint-online-sites-and-files.md)
-##### [Deploy SharePoint Online sites for three tiers of protection](./office-365-security/deploy-sharepoint-online-sites-for-three-tiers-of-protection.md)
-##### [Protect SharePoint Online files with retention labels and DLP](./office-365-security/protect-sharepoint-online-files-with-office-365-labels-and-dlp.md)
-##### [Protect SharePoint Online files with Azure Information Protection](./office-365-security/protect-sharepoint-online-files-with-azure-information-protection.md)
 ##### [Secure SharePoint Online sites in a dev/test environment](./office-365-security/secure-sharepoint-online-sites-in-a-dev-test-environment.md)
 
 #### [Isolated SharePoint Online team sites](./office-365-security/isolated-sharepoint-online-team-sites.md)

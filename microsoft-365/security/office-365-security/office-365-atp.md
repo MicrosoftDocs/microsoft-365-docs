@@ -41,7 +41,7 @@ ATP is included in Office 365 E5; however, ATP Plan 1 and ATP Plan 2 are each av
 
 Office 365 ATP provides numerous tools to set an appropriate level of protection for your organization. 
 
-Your organization's security team must define policies for each ATP tool in the Office 365 Security & Compliance Center. Go to **Threat management** > **Policy** to access policy options. (To get some help with this, see [Quick Start Guide: Set up Office 365 Advanced Threat Protection](checklist-atp-setup.md).)
+Your organization's security team must define policies for each ATP tool in the Office 365 Security & Compliance Center. Go to **Threat management** > **Policy** to access policy options. For more information, see [Protect against threats](protect-against-threats.md).
 
 The policies that are defined for your organization determine the behavior and protection level for predefined threats. Policy options are extremely flexible. For example, your organization's security team can set fine-grained threat protection at the user, organization, recipient, and domain level. It is important to review your policies regularly because new threats and challenges emerge daily.  
 

@@ -49,7 +49,7 @@ Once you have identified the policy and rules that contain invalid characters, y
   
  ## For more information
 
-[Threat management in the Security &amp; Compliance Center](threat-management.md)
+[Threat management in the Security &amp; Compliance Center](protect-against-threats.md)
   
 [Set-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedcontentfilterpolicy?view=exchange-ps)
 

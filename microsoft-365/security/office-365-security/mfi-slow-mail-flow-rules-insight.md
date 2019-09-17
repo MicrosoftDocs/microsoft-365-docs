@@ -32,4 +32,4 @@ When you click **View details**, a flyout pane appears where you can review the 
 
 ## See also
 
-For more information about other mail flow insights in the mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights.md).
+For more information about other mail flow insights in the mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).

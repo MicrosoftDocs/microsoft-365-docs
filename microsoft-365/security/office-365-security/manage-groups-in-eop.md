@@ -31,7 +31,7 @@ You can create two types of groups for your Exchange organization:
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Distribution Groups and Security Groups" entry in the [Feature permissions in EOP](feature-permissions-in-eop.md) topic.
 
-- To open the Exchange admin center, see [Exchange admin center in Exchange Online Protection](../exchange-admin-center-in-exchange-online-protection-eop.md).
+- To open the Exchange admin center, see [Exchange admin center in Exchange Online Protection](exchange-admin-center-in-exchange-online-protection-eop.md).
 
 - Be aware that when creating and managing groups by using Exchange Online Protection PowerShell cmdlets, you may encounter throttling.
 
