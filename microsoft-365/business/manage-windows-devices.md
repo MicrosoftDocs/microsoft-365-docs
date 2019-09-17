@@ -25,6 +25,9 @@ description: "Learn how to enable Microsoft 365 to protect local AD joined Windo
 # Enable domain-joined Windows 10 devices to be managed by Microsoft 365 Business
 
 If your organization uses Windows Server Active Directory on-premises, you can set up Microsoft 365 Business to protect your Windows 10 devices, while still maintaining access to on-premises resources that require local authentication. You can set this up by first synchronizing your Active Directory with Azure Active Directory, followed by registering the Windows 10 devices with Azure AD and enrolling them for mobile device management by Microsoft 365 Business.
+The following video details the steps for how to set this up for the most common scenario.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3C9hO]
   
 ## Set up domain-joined devices to be managed by Microsoft 365 Business
 
