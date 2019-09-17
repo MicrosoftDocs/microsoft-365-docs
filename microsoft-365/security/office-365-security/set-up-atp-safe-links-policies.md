@@ -140,6 +140,6 @@ Once your ATP Safe Links policies are in place, you can see how ATP is working f
 
 - [View reports for Office 365 Advanced Threat Protection](view-reports-for-atp.md)
 
-- [Use Explorer in the Security &amp; Compliance Center](use-explorer-in-security-and-compliance.md)
+- [Use Explorer in the Security &amp; Compliance Center](threat-explorer.md)
 
 Stay on top of new features coming to ATP. visit the [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=O365).

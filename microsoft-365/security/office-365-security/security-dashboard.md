@@ -110,11 +110,11 @@ And, if your organization's Office 365 subscription includes [Office 365 Advance
 
 To view or access the Sent and Received Email widget, you must have permissions to view Advanced Threat Protection reports. To learn more, see [What permissions are needed to view the ATP reports?](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports). 
 
-To view or access the Recent Threat Management Alerts widget, you must have permissions to view alerts. To learn more, see [RBAC permissions required to view alerts](alert-policies.md#rbac-permissions-required-to-view-alerts).
+To view or access the Recent Threat Management Alerts widget, you must have permissions to view alerts. To learn more, see [RBAC permissions required to view alerts](../../compliance/alert-policies.md#rbac-permissions-required-to-view-alerts).
   
 ## Related topics
 
-[View email security reports in the Security &amp; Compliance Center](view-email-security-reports.md)
+[View email security reports in the Security &amp; Compliance Center](../../compliance/view-email-security-reports.md)
   
 [View reports for Office 365 Advanced Threat Protection](view-reports-for-atp.md)
   

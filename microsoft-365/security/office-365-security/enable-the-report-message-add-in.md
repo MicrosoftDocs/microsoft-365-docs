@@ -145,6 +145,6 @@ You can review and edit the default settings for the Report Message add-in on th
 
 [View reports for Office 365 Advanced Threat Protection](view-reports-for-atp.md)
 
-[Use Explorer in the Security &amp; Compliance Center](use-explorer-in-security-and-compliance.md)
+[Use Explorer in the Security &amp; Compliance Center](threat-explorer.md)
   
 

@@ -80,6 +80,6 @@ Once this is enabled, provided you haven't opted out, you can start using the ne
   
 ![Screenshot that shows an OME protected message in Outlook on the web.](../media/599ca9e7-c05a-429e-ae8d-359f1291a3d8.png)
   
-For more information about the new enhancements, see [Office 365 Message Encryption](ome.md).
+For more information about the new enhancements, see [Office 365 Message Encryption](../../compliance/ome.md).
   
 

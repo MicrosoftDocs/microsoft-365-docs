@@ -26,24 +26,24 @@ If your organization has existing user accounts in an on-premisesActive Director
   
 ## SPF record customization to help prevent spoofing
 
-When you set up EOP, you added an SPF (sender policy framework) record for EOP to your DNS records. The SPF record helps prevent spoofing. For more information about how an SPF record prevents spoofing and how you can add your on-premises IP addresses to the SPF record, see [Set up SPF in Office 365 to help prevent spoofing](../set-up-spf-in-office-365-to-help-prevent-spoofing.md). 
+When you set up EOP, you added an SPF (sender policy framework) record for EOP to your DNS records. The SPF record helps prevent spoofing. For more information about how an SPF record prevents spoofing and how you can add your on-premises IP addresses to the SPF record, see [Set up SPF in Office 365 to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md). 
   
 ## Set anti-spam options
 
-Mange your connection filter settings by adding IP addresses to IP Allow and IP Block lists, and by selecting the **Enable safe list** option, which should reduce the number of false positives (good mail that's classified as spam) you receive. Learn more at [Configure the connection filter policy](../configure-the-connection-filter-policy.md). For more spam settings that apply to the whole organization, take a look at [How to prevent real email from being marked as spam in Office 365](../prevent-email-from-being-marked-as-spam.md) or [How to reduce spam email in Office 365](../reduce-spam-email.md)). These topics are helpful if you have administrator-level control and you want to prevent false positives or false negatives.
+Mange your connection filter settings by adding IP addresses to IP Allow and IP Block lists, and by selecting the **Enable safe list** option, which should reduce the number of false positives (good mail that's classified as spam) you receive. Learn more at [Configure the connection filter policy](configure-the-connection-filter-policy.md). For more spam settings that apply to the whole organization, take a look at [How to prevent real email from being marked as spam in Office 365](../../compliance/prevent-email-from-being-marked-as-spam.md) or [How to reduce spam email in Office 365](reduce-spam-email.md)). These topics are helpful if you have administrator-level control and you want to prevent false positives or false negatives.
   
-Manage your content filters by reviewing and optionally changing the default settings. For example, you can change the action for what happens to spam-detected messages. If you want to pursue an aggressive approach to spam filtering, you can configure advanced spam filtering  options. We recommend that you test these options first before implementing them in your production environment (by turning them on) It's recommended that organizations who are concerned about phishing turn on the **SPF record: hard fail** option. Learn more at [Configure your spam filter policies](../configure-your-spam-filter-policies.md) and [Advanced spam filtering  options](../advanced-spam-filtering-asf-options.md).
+Manage your content filters by reviewing and optionally changing the default settings. For example, you can change the action for what happens to spam-detected messages. If you want to pursue an aggressive approach to spam filtering, you can configure advanced spam filtering  options. We recommend that you test these options first before implementing them in your production environment (by turning them on) It's recommended that organizations who are concerned about phishing turn on the **SPF record: hard fail** option. Learn more at [Configure your spam filter policies](configure-your-spam-filter-policies.md) and [Advanced spam filtering  options](advanced-spam-filtering-asf-options.md).
   
 > [!IMPORTANT]
-> If you are using the default content filter action, **Move message to Junk Email folder**, in order to ensure that this action will work with on-premises mailboxes, you must configure mail flow rules (also known as transport rules) on your on-premises Exchange servers to detect spam headers added by EOP. For details, see [Ensure that spam is routed to each user's Junk Email folder](../ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
+> If you are using the default content filter action, **Move message to Junk Email folder**, in order to ensure that this action will work with on-premises mailboxes, you must configure mail flow rules (also known as transport rules) on your on-premises Exchange servers to detect spam headers added by EOP. For details, see [Ensure that spam is routed to each user's Junk Email folder](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
   
-We recommend that you review the [Anti-spam protection FAQ](../anti-spam-protection-faq.md), including the outbound mailing best practices section, which will help ensure that your outbound mail is delivered.
+We recommend that you review the [Anti-spam protection FAQ](anti-spam-protection-faq.md), including the outbound mailing best practices section, which will help ensure that your outbound mail is delivered.
   
-You can submit false negatives (spam) and false positives (non-spam) to Microsoft for analysis in several ways. For details, see [Submit spam, non-spam, and phishing scam messages to Microsoft for analysis](../submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md).
+You can submit false negatives (spam) and false positives (non-spam) to Microsoft for analysis in several ways. For details, see [Submit spam, non-spam, and phishing scam messages to Microsoft for analysis](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md).
   
 ## Set anti-malware options
 
-Review and fine tune your malware filter settings in the Exchange admin center(EAC). Learn more at [Configure anti-malware policies](../configure-anti-malware-policies.md). We also recommend reading about other frequently asked questions and answers pertaining to anti-malware protection in our [Anti-malware protection FAQ ](../anti-malware-protection-faq-eop.md).
+Review and fine tune your malware filter settings in the Exchange admin center(EAC). Learn more at [Configure anti-malware policies](configure-anti-malware-policies.md). We also recommend reading about other frequently asked questions and answers pertaining to anti-malware protection in our [Anti-malware protection FAQ ](anti-malware-protection-faq-eop.md).
   
 If you're concerned about executable files containing malware, you can create an Exchange mail flow rule that blocks any email attachment that has executable content. Follow the steps in [How to reduce malware threats through file attachment blocking in Exchange Online Protection](https://support.microsoft.com/kb/2959596) in order to block the file types listed in [Use mail flow rules to inspect message attachments in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection).
   
@@ -51,7 +51,7 @@ You can use the Common Attachment Types Filter in the EAC. Select **Protection**
   
 For increased protection, we also recommend using mail flow rules to block some or all of the following extensions: ade, adp, ani, bas, bat, chm, cmd, com, cpl, crt, hlp, ht, hta, inf, ins, isp, job, js, jse, lnk, mda, mdb, mde, mdz, msc, msi, msp, mst, pcd, reg, scr, sct, shs, url, vb, vbe, vbs, wsc, wsf, wsh. This can be done by using the **Any attachment file extension includes these words** condition.
   
-Administrators and end users can submit malware that made it past the filters, or submit a file that you think was incorrectly identified as malware, by sending it to Microsoft for analysis. For more information, see [Submitting malware and non-malware to Microsoft for analysis](../submitting-malware-and-non-malware-to-microsoft-for-analysis.md).
+Administrators and end users can submit malware that made it past the filters, or submit a file that you think was incorrectly identified as malware, by sending it to Microsoft for analysis. For more information, see [Submitting malware and non-malware to Microsoft for analysis](submitting-malware-and-non-malware-to-microsoft-for-analysis.md).
   
 ## Create mail flow rules
 
@@ -84,7 +84,7 @@ Successful spam and phishing campaigns can also be reduced by blocking inbound, 
   
 ### Extension Blocking
 
-If you're concerned about executable files containing malware, you can configure anti-malware policies to block any email attachment that has executable content. Follow the steps in [Configure anti-malware policies](../configure-anti-malware-policies.md).
+If you're concerned about executable files containing malware, you can configure anti-malware policies to block any email attachment that has executable content. Follow the steps in [Configure anti-malware policies](configure-anti-malware-policies.md).
   
 For increased protection, we also recommend that you block some or all of the following extensions: ade, adp, ani, bas, bat, chm, cmd, com, cpl, crt, hlp, ht, hta, inf, ins, isp, job, js, jse, lnk, mda, mdb, mde, mdz, msc, msi, msp, mst, pcd, reg, scr, sct, shs, url, vb, vbe, vbs, wsc, wsf, wsh.
   
@@ -98,6 +98,6 @@ Troubleshoot general issues and trends by using the reports in the admin center.
   
 [Help and support for EOP](help-and-support-for-eop.md)
   
-[How to prevent real email from being marked as spam in Office 365](../prevent-email-from-being-marked-as-spam.md)
+[How to prevent real email from being marked as spam in Office 365](../../compliance/prevent-email-from-being-marked-as-spam.md)
   
-[How to reduce spam email in Office 365](../reduce-spam-email.md)
+[How to reduce spam email in Office 365](reduce-spam-email.md)
