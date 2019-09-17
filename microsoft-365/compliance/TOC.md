@@ -60,6 +60,10 @@
 ### [Revoke email encrypted by Office 365 Advanced Message Encryption](revoke-ome-encrypted-mail.md)
 ### [Compare versions of OME](ome-version-comparison.md)
 ### [Office 365 Message Encryption FAQ](ome-faq.md)
+### [How Exchange Online secures your email secrets](exchange-online-secures-email-secrets.md)
+### [How Exchange Online uses TLS to secure email connections in Office 365](exchange-online-uses-tls-to-secure-email-connections.md)
+### [Technical reference details about encryption in Office 365](technical-reference-details-about-encryption.md)
+### [BitLocker and Distributed Key Manager (DKM) for Encryption](office-365-bitlocker-and-distributed-key-manager-for-encryption.md)
 ### Legacy OME
 #### [Legacy information for Office 365 Message Encryption](legacy-information-for-message-encryption.md)
 #### [Set up Azure Rights Management for the previous version of Office 365 Message Encryption](set-up-azure-rms-for-previous-version-message-encryption.md)
