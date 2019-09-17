@@ -54,7 +54,7 @@ Threat Explorer is a powerful report that can serve multiple purposes, such as f
     
 2. In the left navigation, choose **Threat management** \> **Explorer**.
 
-    ![Explorer with Delivery Action and Delivery Location fields.](media/ThreatExFields.PNG)
+    ![Explorer with Delivery Action and Delivery Location fields.](../media/ThreatExFields.PNG)
 
     You may notice the new **Special actions** column. This feature is aimed at telling admins the outcome of processing an email. The **Special actions** column can be accessed in the same place as **Delivery action** and **Delivery location**. Special actions might be updated at the end of Threat Explorer's email timeline, which is a new feature aimed at making the hunting experience better for admins.
 
@@ -68,31 +68,31 @@ Threat Explorer is a powerful report that can serve multiple purposes, such as f
 
 4. In the **View** menu, choose **All email**.
 
-    ![Use the View menu to choose between Email and Content reports](media/d39013ff-93b6-42f6-bee5-628895c251c2.png)
+    ![Use the View menu to choose between Email and Content reports](../media/d39013ff-93b6-42f6-bee5-628895c251c2.png)
   
     Notice the labels that appear in the report, such as **Delivered**, **Unknown**, or **Delivered to junk**.
 
-    ![Threat Explorer showing data for all email](media/208826ed-a85e-446f-b276-b5fdc312fbcb.png)
+    ![Threat Explorer showing data for all email](../media/208826ed-a85e-446f-b276-b5fdc312fbcb.png)
     
     (Depending on the actions that were taken on email messages for your organization, you might see other labels, such as **Blocked** or **Replaced**.)
     
 6. In the report, choose **Delivered** to view only email messages that ended up in users' inboxes.
 
-    ![Clicking "Delivered to junk" removes that data from view](media/e6fb2e47-461e-4f6f-8c65-c331bd858758.png)
+    ![Clicking "Delivered to junk" removes that data from view](../media/e6fb2e47-461e-4f6f-8c65-c331bd858758.png)
   
 7. Below the chart, review the **Email** list below the chart.
 
-    ![Below the chart, view a list of email messages that were detected](media/dfb60590-1236-499d-97da-86c68621e2bc.png)
+    ![Below the chart, view a list of email messages that were detected](../media/dfb60590-1236-499d-97da-86c68621e2bc.png)
   
 8. In the list, choose an item to view more details about that email message. For example, you can click the subject line to view information about the sender, recipients, attachments, and other similar email messages.
 
-    ![You can view additional information about an item](media/5a5707c3-d62a-4610-ae7b-900fff8708b2.png)
+    ![You can view additional information about an item](../media/5a5707c3-d62a-4610-ae7b-900fff8708b2.png)
   
 9. After viewing information about email messages, select one or more items in the list to activate **+ Actions**.
     
 10. Use the **+ Actions** list to apply an action, such as **Move to deleted** items. This deletes the selected messages from the recipients' mailboxes.
 
-    ![When you select one or more email messages, you can choose from several available actions](media/ef12e10c-60a7-4f66-8f76-68d77ae26de1.png)
+    ![When you select one or more email messages, you can choose from several available actions](../media/ef12e10c-60a7-4f66-8f76-68d77ae26de1.png)
 
 ## Dealing with suspicious email messages
 
@@ -122,7 +122,7 @@ To access your message header and email download options, follow these steps:
 
     This opens the flyout, where both header preview and email download links are positioned.
 
-    ![Threat Explorer flyout with download and preview links on the page.](media/ThreatExplorerDownloadandPreview.PNG)
+    ![Threat Explorer flyout with download and preview links on the page.](../media/ThreatExplorerDownloadandPreview.PNG)
 
 > [!IMPORTANT]
 > This capability doesn't show up for email messages that were never found in a user's mailbox, which can happen if an email was dropped or its delivery failed. In cases where email messages were deleted from users' mailboxes, admins see a "Mail not found" error message.

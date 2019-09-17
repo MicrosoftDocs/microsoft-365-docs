@@ -35,7 +35,7 @@ If you are an Office 365 customer you can manage this feature through the Securi
 
 - In the Office 365 Security & Compliance Center, global or security administrators can turn the feature on or off, through anti-spoofing protection under the Anti-Phish policy. Additionally, it can be managed through the ‘Set-AntiPhishPolicy’ cmdlet. For more details, see [Anti-phishing protection in Office 365](anti-phishing-protection.md) and [Set-AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-antiphishpolicy?view=exchange-ps).
 
-    ![Editing unauthenticated senders in the graphic interface.](media/unverified-sender-article-editing-unauthenticated-senders.jpg)
+    ![Editing unauthenticated senders in the graphic interface.](../media/unverified-sender-article-editing-unauthenticated-senders.jpg)
 
 - If an admin has identified a false positive, and a sender should not be receiving the unverified sender treatment they can take one of the following actions to add the sender to the Spoof Intelligence spoof allow list:
 		
@@ -49,7 +49,7 @@ Additionally, we do not apply the unverified sender treatment if it was delivere
 
 When Outlook.com and Outlook on the web can't verify the identity of the sender using email authentication techniques, they display a '?' in the sender photo. 
 
-![Message did not pass verification](media/message-did-not-pass-verification.jpg)
+![Message did not pass verification](../media/message-did-not-pass-verification.jpg)
 
 Not every message that fails to authenticate is malicious. However, you should be careful about interacting with messages that don't authenticate if you don't recognize the sender. Or, if you recognize a sender that normally doesn't have a '?' in the sender image, but you suddenly start seeing it, that could be a sign the sender is being spoofed.
 

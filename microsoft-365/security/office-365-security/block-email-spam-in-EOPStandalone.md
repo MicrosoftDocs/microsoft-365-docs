@@ -36,7 +36,7 @@ Customize your Office 365 spam filter by adding the sender IP address to the con
 
 Is the spam primarily bulk mail, for example, newsletters or promotions? You can customize the spam filter in Office 365 if you [Use mail flow rules to configure bulk email filtering](use-transport-rules-to-configure-bulk-email-filtering.md) or turn on the **Bulk mail** setting in your spam filter's [Advanced spam filtering options](advanced-spam-filtering-asf-options.md). In the Exchange admin center, get started by clicking **Protection** \> **Content filter** and then double click the filter policy you want to adjust. Click **Spam and bulk mail actions** to adjust the settings, as shown here. 
   
-![Setting the bulk mail filter in Exchange Online](media/a45095c2-269d-45b8-a76c-999b5e78da68.png)
+![Setting the bulk mail filter in Exchange Online](../media/a45095c2-269d-45b8-a76c-999b5e78da68.png)
   
 ### Block email spam using spam filter block lists
 
@@ -46,7 +46,7 @@ Is the spam primarily bulk mail, for example, newsletters or promotions? You can
 
 It will help your Office 365 anti-spam efforts to prevent false negatives and junk mail if you tell your users to add the spam sender address to their blocked sender list in [Outlook](https://go.microsoft.com/fwlink/p/?LinkId=270065) or [Outlook on the web](https://go.microsoft.com/fwlink/p/?LinkId=294862). In Outlook on the web, get started by clicking **Settings** \> **Options** \> **Block or allow**, and then adding the address to the **Blocked senders** list, as shown here. 
   
-![Blocking a sender in Outlook on the web](media/fdf51381-2527-4819-ac2a-5dff84d2a36d.png)
+![Blocking a sender in Outlook on the web](../media/fdf51381-2527-4819-ac2a-5dff84d2a36d.png)
   
 > [!NOTE]
 > For more detailed information about safe sender lists, see [Safe Sender and Blocked Sender Lists FAQ](https://technet.microsoft.com/en-us/library/dn133608%28v=exchg.150%29.aspx). 

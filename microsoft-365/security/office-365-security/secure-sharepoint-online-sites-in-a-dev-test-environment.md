@@ -23,7 +23,7 @@ description: "Summary: Create public, private, sensitive, and highly confidentia
   
 This article provides step-by-step instructions to create a dev/test environment that includes the four different types of SharePoint Online team sites for the [Secure SharePoint Online sites and files](secure-sharepoint-online-sites-and-files.md) solution.
   
-![All four team sites in the secure SharePoint Online dev/test environment.](media/b0fea489-359c-4c85-a0ad-e4efb4a1e47f.png)
+![All four team sites in the secure SharePoint Online dev/test environment.](../media/b0fea489-359c-4c85-a0ad-e4efb4a1e47f.png)
   
 Use this dev/test environment to experiment with the information protection behaviors and fine-tune settings for your specific needs before deploying SharePoint Online team sites in production.
   
@@ -566,7 +566,7 @@ You are now ready to create documents in these four sites and test access to the
   
 Here is the overall configuration for all four SharePoint Online team sites.
   
-![All four team sites in the secure SharePoint Online dev/test environment.](media/b0fea489-359c-4c85-a0ad-e4efb4a1e47f.png)
+![All four team sites in the secure SharePoint Online dev/test environment.](../media/b0fea489-359c-4c85-a0ad-e4efb4a1e47f.png)
   
 ## Next step
 

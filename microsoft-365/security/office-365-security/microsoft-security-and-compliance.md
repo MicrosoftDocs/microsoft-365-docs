@@ -21,7 +21,7 @@ description: "Get ready for the all-new Microsoft 365 security center and compli
 
 Your new [Microsoft 365 security center](overview-security-center.md) includes a dashboard to help you manage and monitor security across your identities, data, devices, apps, and infrastructure. You will also have easy access to your all-new [Microsoft Secure Score](microsoft-secure-score.md), new device threat reports, new identity threat reports, and your Cloud App Security reports. 
 
-[![New Microsoft 365 security center](media/m365-security-center.png)](overview-security-center.md)
+[![New Microsoft 365 security center](../media/m365-security-center.png)](overview-security-center.md)
 
 When you use the Microsoft 365 security center for the first time, you'll see information across the top of the screen to help you get started. You'll also see how to navigate easily to the security features you're most interested in exploring. To learn more, see [Overview of the Microsoft 365 security center](overview-security-center.md).
 
@@ -36,7 +36,7 @@ Your new [Microsoft 365 compliance center](microsoft-365-compliance-center.md) p
 
 You’ll have easy access to sensitivity and retention labels and policies, data loss prevention (DLP), data governance, eDiscovery, data subject requests (DSRs), case management, and Cloud App Security. Additionally, you can gain actionable insights and leverage intelligent automation to reduce your compliance risks and safeguard your digital estate. 
 
-[![Microsoft 365 compliance center](media/m365-compliance-center.png)](microsoft-365-compliance-center.md)
+[![Microsoft 365 compliance center](../media/m365-compliance-center.png)](microsoft-365-compliance-center.md)
 
 When you use the Microsoft 365 compliance center for the first time, you'll see information across the top of the screen to help you get started. You'll see how to navigate easily to the compliance features you're most interested in exploring. To learn more, see [Welcome to your all-new Microsoft 365 compliance center](microsoft-365-compliance-center.md).
 
