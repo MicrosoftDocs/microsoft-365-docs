@@ -208,7 +208,7 @@
 
 ### Configure case settings
 #### [Close or delete a case](close-or-delete-case.md)
-#### [Add or remove members from a case](aadd-or-remove-members-from-a-case-in-advanced-ediscovery.md)
+#### [Add or remove members from a case](add-or-remove-members-from-a-case-in-advanced-ediscovery.md)
 #### [Configure search and analytics settings](configure-search-and-analytics-settings-in-advanced-ediscovery.md)
 
 ### Advanced eDiscovery reference
