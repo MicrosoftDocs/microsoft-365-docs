@@ -50,7 +50,7 @@ As you configure your options for Azure AD Connect, we recommend enabling **Pass
 > [!NOTE]
 > There are some additional steps for password writeback beyond the check box in Azure AD Connect. Refer to [How-to: configure password writeback](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-writeback). 
      
-3. **Configure Hybrid Azure AD Join**: Before you proceed to enable Windows 10 devices to become Hybrid Azure AD joined, you need to make sure that you meet the following prerequisites:
+3. **Configure Hybrid Azure AD Join**: Before you enable Windows 10 devices to be Hybrid Azure AD joined, you should make sure that you meet the following prerequisites:
 
    - You are running the latest version of Azure AD connect.
 
