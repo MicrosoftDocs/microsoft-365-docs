@@ -237,7 +237,6 @@
 ###### [Delegated administration FAQ](./office-365-security/delegated-administration-faq.md)
 
 ##### [Reference: Policies, practices, and guidelines](./office-365-security/reference-policies-practices-and-guidelines.md)
-###### [Accessibility for people with disabilities](./office-365-security/accessibility-for-people-with-disabilities.md)
 ###### [Sending mail to Office 365](./office-365-security/sending-mail-to-office-365.md)
 ###### [Services for non-customers](./office-365-security/services-for-non-customers.md)
 
