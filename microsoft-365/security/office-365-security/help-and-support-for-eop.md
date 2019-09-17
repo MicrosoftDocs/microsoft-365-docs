@@ -74,7 +74,5 @@ Microsoft provides local or toll-free telephone numbers for product support arou
 |United States|Toll-free: 1-877-913-2707|Toll-free: 1-800-865-9408|
    
 ## For more information about EOP documentation
-
-[Third-party copyright notices](third-party-copyright-notices.md)
-  
-[Accessibility for people with disabilities](accessibility-for-people-with-disabilities.md)
+ 
+[Accessibility in Exchange Online](https://docs.microsoft.com/Exchange/accessibility/accessibility)
