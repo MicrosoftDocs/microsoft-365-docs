@@ -28,7 +28,7 @@ You can use the new alert policy and alert dashboard tools in the Office 365 and
 
 Here's a quick overview of how alert policies work and the alerts that are triggers when user or admin activity match the conditions of an alert policy.
   
-![Overview of how alert policies work](media/e02a622d-b429-448b-8107-dd1a4770b4e0.png)
+![Overview of how alert policies work](../media/e02a622d-b429-448b-8107-dd1a4770b4e0.png)
   
 1. An admin in your organization creates, configures, and turns on an alert policy by using the **Alert policies** page in the security and compliance center. You can also create alert policies by using the **New-ProtectionAlert** cmdlet in Security & Compliance Center PowerShell. To create alert policies, you have to be assigned the Manage Alerts role or the Organization Configuration role in the security and compliance center.  
     
@@ -44,7 +44,7 @@ An alert policy consists of a set of rules and conditions that define the user o
   
 To view and create alert policies, go to [https://protection.office.com](https://protection.office.com) and then click **Alerts** \> **Alert policies**. 
   
-![In the security and compliance center, click Alerts, then click Alert policies to view and create alert policies](media/09ebd451-8e84-44e1-aefc-63e70bba4d97.png)
+![In the security and compliance center, click Alerts, then click Alert policies to view and create alert policies](../media/09ebd451-8e84-44e1-aefc-63e70bba4d97.png)
   
 An alert policy consists of the following settings and conditions.
   
@@ -57,7 +57,7 @@ An alert policy consists of the following settings and conditions.
     
 - **When the alert is triggered** – You can configure a setting that defines how often an activity can occur before an alert is triggered. This allows you to set up a policy to generate an alert every time an activity matches the policy conditions, when a certain threshold is exceeded, or when the occurrence of the activity the alert is tracking becomes unusual for your organization. 
     
-    ![Configure how alerts are triggered, based on when the activity occurs, a threshold, or unusual activity for your organization](media/97ee1ed2-e7a9-47a2-a980-5f9f63872c65.png)
+    ![Configure how alerts are triggered, based on when the activity occurs, a threshold, or unusual activity for your organization](../media/97ee1ed2-e7a9-47a2-a980-5f9f63872c65.png)
   
     If you select the setting based on unusual activity, Office 365 establishes a baseline value that defines the normal frequency for the selected activity. It takes up to 7 days to establish this baseline, during which alerts won't be generated. After the baseline is established, an alert is triggered when the frequency of the activity tracked by the alert policy greatly exceeds the baseline value. For auditing-related activities (such as file and folder activities), you can establish a baseline based on a single user or based on all users in your organization; for malware-related activities, you can establish a baseline based on a single malware family, a single recipient, or all messages in your organization.
     
@@ -99,7 +99,7 @@ The table also indicates the Office 365 Enterprise and Office 365 US Government 
 |:-----|:-----|:-----|:-----|
 |**A potentially malicious URL click was detected** <br/> |Generates an alert when a user protected by [Office 365 ATP Safe Links](https://docs.microsoft.com/office365/securitycompliance/atp-safe-links) in your organization clicks a malicious link. This event is triggered when URL verdict changes are identified by Office 365 ATP or when users override the Office 365 ATP Safe Links pages (based on your organization's Office 365 ATP Safe Links policy). This alert policy has a **High** severity setting. For Office 365 ATP P2, E5, G5 customers, this alert automatically triggers [Office 365 Automated Investigation and Response](https://go.microsoft.com/fwlink/?linkid=2084737). For more information on events that trigger this alert, see [Set up Office 365 ATP Safe Links policies](https://docs.microsoft.com/office365/securitycompliance/set-up-atp-safe-links-policies).  <br/> |Threat management <br/> |E5/G5 or Office 365 ATP P2 add-on subscription  <br/> |
 |**Creation of forwarding/redirect rule** <br/> |Generates an alert when someone in your organization creates an inbox rule for their mailbox that forwards or redirects messages to another email account. This policy only tracks inbox rules that are created using Outlook on the web (formerly known as Outlook Web App) or Exchange Online PowerShell. This policy has a **Low** severity setting. For more information using inbox rules to forward and redirect email in Outlook on the web, see [Use rules in Outlook on the web to automatically forward messages to another account](https://support.office.com/article/1433e3a0-7fb0-4999-b536-50e05cb67fed).  <br/> |Threat management <br/> |E1/G1, E3/G3, or E5/G5  <br/> |
-|**eDiscovery search started or exported** <br/> |Generates an alert when someone uses the Content search tool in the Security and compliance center. An alert is triggered when the following content search activities are performed: <br/><br/>• A content search is started<br/>• The results of a content search are exported<br/>• A content search report is exported<br/><br/>Alerts are also triggered when the previous content search activities are performed in association with an eDiscovery case. This policy has a **Medium** severity setting. For more information about content search activities, see [Search for eDiscovery activities in the Office 365 audit log](search-for-ediscovery-activities-in-the-audit-log.md#ediscovery-activities). <br/> |Threat management<br/> |E1/G1, E3/G3, or E5/G5  <br/> |
+|**eDiscovery search started or exported** <br/> |Generates an alert when someone uses the Content search tool in the Security and compliance center. An alert is triggered when the following content search activities are performed: <br/><br/>• A content search is started<br/>• The results of a content search are exported<br/>• A content search report is exported<br/><br/>Alerts are also triggered when the previous content search activities are performed in association with an eDiscovery case. This policy has a **Medium** severity setting. For more information about content search activities, see [Search for eDiscovery activities in the Office 365 audit log](../../compliance/search-for-ediscovery-activities-in-the-audit-log.md#ediscovery-activities). <br/> |Threat management<br/> |E1/G1, E3/G3, or E5/G5  <br/> |
 |**Elevation of Exchange admin privilege** <br/> |Generates an alert when someone is assigned administrative permissions in your Exchange Online organization. For example, when a user is added to the Organization Management role group in Exchange Online. This policy has a **Low** severity setting.  <br/> |Permissions <br/> |E1/G1, E3/G3, or E5/G5  <br/> |
 |**Email messages containing malware removed after delivery** <br/> |Generates an alert when any messages containing malware are delivered to mailboxes in your organization. If this event occurs, Office 365 removes the infected messages from Exchange Online mailboxes using [Zero-hour auto purge](https://docs.microsoft.com/en-us/office365/securitycompliance/zero-hour-auto-purge). This policy has an **Informational** severity setting and automatically triggers [Office 365 Automated Investigation and Response](https://go.microsoft.com/fwlink/?linkid=2084737).<br/> |Threat management <br/> |E5/G5 or Office 365 ATP P2 add-on subscription  <br/> |
 |**Email messages containing phish URLs removed after delivery** <br/> |Generates an alert when any messages containing phish are delivered to mailboxes in your organization. If this event occurs, Office 365 removes the infected messages from Exchange Online mailboxes using [Zero-hour auto purge](https://docs.microsoft.com/en-us/office365/securitycompliance/zero-hour-auto-purge). This policy has an **Informational** severity setting and automatically triggers [Office 365 Automated Investigation and Response](https://go.microsoft.com/fwlink/?linkid=2084737).<br/> |Threat management <br/> |E5/G5 or Office 365 ATP P2 add-on subscription  <br/> |
@@ -130,7 +130,7 @@ When an activity performed by users in your organization matches the settings of
   
 To view alerts, go to [https://protection.office.com](https://protection.office.com) and then click **Alerts** \> **View alerts**. 
   
-![In the security and compliance, click Alerts, then click View alerts to view alerts](media/ec5ea59b-bf61-459f-8b65-970ab4bb8bcc.png)
+![In the security and compliance, click Alerts, then click View alerts to view alerts](../media/ec5ea59b-bf61-459f-8b65-970ab4bb8bcc.png)
   
 You can use the following filters to view a subset of all the alerts on the **View alerts** page. 
   
@@ -166,33 +166,33 @@ To see which category a default alert policy is assigned to, see the table in th
 |:---------|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
 |Audit Logs <br/> |         ||         |         |         |         |
 |Case Management <br/>|         |         |         |         |         |         |
-|Compliance Administrator<br/>|![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)| ![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|         |![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Compliance Administrator<br/>|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)| ![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|         |![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |Compliance Search<br/>|         |         |         |         |         |         |
 |Device Management<br/>|         |         |         |         |         |         |
 |Disposition Management<br/>|         |         |         |         |         |         |
-|DLP Compliance Management<br/>|         |![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|         |         |         |         |
+|DLP Compliance Management<br/>|         |![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|         |         |         |         |
 |Export<br/>|         |         |         |         |         |         |
 |Hold<br/>|         |         |         |         |         |         |
-|Manage Alerts<br/>|         |         |         |         |         |![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|Organization Configuration|         |         |         |         |         |![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Manage Alerts<br/>|         |         |         |         |         |![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Organization Configuration|         |         |         |         |         |![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |Preview <br/>|         |         |         |         |         |         |
-|Record Management <br/>|![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|         |         |         |         |         |
-|Retention Management <br/>| ![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|         |         |         |         |         |
+|Record Management <br/>|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|         |         |         |         |         |
+|Retention Management <br/>| ![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|         |         |         |         |         |
 |Review <br/>|         |         |         |         |         |         |
 |RMS Decrypt<br/>|         |         |         |         |         |         |
-|Role Management<br/>|         |         |         |![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|         |         |
+|Role Management<br/>|         |         |         |![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|         |         |
 |Search And Purge<br/>|         |         |         |         |         |         |
-|Security Administrator<br/>||![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)| | ![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)| ![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|Security Reader<br/>|         |![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)| | ![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)| ![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)
+|Security Administrator<br/>||![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)| | ![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)| ![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Security Reader<br/>|         |![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)| | ![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)| ![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)
 |Service Assurance View<br/>|         |         |         |         |         |         |
 |Supervisory Review Administrator<br/>|         |         |         |         |         |         |
 |View-Only Audit Logs<br/>|         |         |         |         |         |         |
 |View-Only Device Management<br/>|         |         |         |         |         |         |
-|View-Only DLP Compliance Management<br/>|         |![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|         |         |         |         |
-|View-Only Manage Alerts<br/>|         |         |         |         |         |![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|View-Only Recipients<br/>|         |         |  ![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)       |         ||         |
-|View-Only Record Management<br/>|![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|         |         |         |         |         |
-|View-Only Retention Management<br/>|![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|         |         |         |         |         |
+|View-Only DLP Compliance Management<br/>|         |![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|         |         |         |         |
+|View-Only Manage Alerts<br/>|         |         |         |         |         |![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|View-Only Recipients<br/>|         |         |  ![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)       |         ||         |
+|View-Only Record Management<br/>|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|         |         |         |         |         |
+|View-Only Retention Management<br/>|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|         |         |         |         |         |
 |         |         |         |         |         |         |
 
 **Tip:** To view the roles that are assigned to each of the default role groups, run the following commands in Security & Compliance Center PowerShell: 
@@ -240,11 +240,11 @@ Organizations that have Microsoft Cloud App Security as part of an Enterprise Mo
 
 To display only Cloud App Security alerts in the security and compliance center, use the **Source** filter and select **Cloud App Security**.
 
-![Use the Source filter to display only Cloud App Security alerts](media/FilterCASAlerts.png)
+![Use the Source filter to display only Cloud App Security alerts](../media/FilterCASAlerts.png)
 
 Similar to an alert triggered by an alert policy in the security and compliance center, you can click a Cloud App Security alert to display a flyout page with details about the alert. The alert includes a link to view the details and manage the alert in the Cloud App Security portal and a link to the corresponding Cloud App Security policy that triggered the alert. See [Monitor alerts in Cloud App Security](https://docs.microsoft.com/cloud-app-security/monitor-alerts).
 
-![Alert details contain links to the Cloud App Security portal](media/CASAlertDetail.png)
+![Alert details contain links to the Cloud App Security portal](../media/CASAlertDetail.png)
 
 > [!IMPORTANT]
 > Changing the status of a Cloud App Security alert in the security and compliance center won't update the resolution status for the same alert in the Cloud App Security portal. For example, if you mark the status of the alert as **Resolved** in the security and compliance center, the status of the alert in the Cloud App Security portal is unchanged. To resolve or dismiss a Cloud App Security alert, manage the alert in the Cloud App Security portal.
