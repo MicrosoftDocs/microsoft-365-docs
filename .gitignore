@@ -9,3 +9,4 @@ _repo.*/
 .openpublishing.buildcore.ps1
 .vs/slnx.sqlite
 .vs/slnx.sqlite
+*.sqlite
