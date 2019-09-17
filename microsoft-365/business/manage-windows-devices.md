@@ -45,7 +45,7 @@ Complete the steps below to make your Windows 10 devices Hybrid Azure AD joined 
     > [!NOTE]
     > The steps are exactly the same for Microsoft 365 Business. 
     
-As you configure your options for Azure AD Connect, we recommend enabling **Password Synchronization** and **Seamless Single Sign-On**, as well as the **Password writeback** feature, which is also supported in Microsoft 365 Business.
+As you configure your options for Azure AD Connect, we recommend enabling **Password Synchronization** and **Seamless Single Sign-On**, as well as the **password writeback** feature, which is also supported in Microsoft 365 Business.
 
 > [!NOTE]
 > There are some additional steps for password writeback beyond the check box in Azure AD Connect. Refer to [How-to: configure password writeback](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-writeback). 
