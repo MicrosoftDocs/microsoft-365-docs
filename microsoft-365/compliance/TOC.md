@@ -1,4 +1,4 @@
-# [Microsoft 365 Compliance](index.md)
+# [Microsoft 365 compliance](index.md)
 
 # Get started
 ## [What's new in the compliance center](whats-new.md)
@@ -11,6 +11,7 @@
 ## [Protect user and device access](protect-access-to-data-and-services.md)
 ## [Privileged access management](privileged-access-management-overview.md)
 ## [Configure privileged access management](privileged-access-management-configuration.md)
+## [Customer Lockbox](customer-lockbox-requests.md)
 
 # [Protect information](protect-information.md)
 ## [Sensitivity labels](sensitivity-labels.md)
@@ -351,7 +352,6 @@
 ### [Controlling your data in Office 365 using Customer Key](controlling-your-data-using-customer-key.md)
 ### [Service encryption with Customer Key for Office 365 FAQ](service-encryption-with-customer-key-faq.md)
 ## [GDPR data subject request tool](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)
-## [Customer Lockbox](customer-lockbox-requests.md)
 ## [Office 365 Information Protection for GDPR](office-365-information-protection-for-gdpr.md)
 ### [Overview: Office 365 Protection for GDPR](office-365-info-protection-for-gdpr-overview.md)
 ### [Search for and find personal data](search-for-and-find-personal-data.md)
@@ -359,7 +359,6 @@
 ### [Architect a classification schema for personal plan](architect-a-classification-schema-for-personal-data.md)
 ### [Apply labels to personal data in Office 365](apply-labels-to-personal-data-in-office-365.md)
 ### [Apply protection to personal data in Office 365](apply-protection-to-personal-data-in-office-365.md)
-### [Monitor for leaks of personal data](monitor-for-leaks-of-personal-data.md)
 ### [Office 365 GDPR dev/test environment](gdpr-discovery-protection-reporting-in-office365-dev-test-environment.md)
 ## [GDPR for on-premises Office servers](gdpr-for-office-servers.md)
 ### [GDPR for SharePoint Server](gdpr-for-sharepoint-server.md)
