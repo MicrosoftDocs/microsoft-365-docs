@@ -93,7 +93,7 @@ As you set up your ATP Safe Attachments policies, you choose from among many opt
 
 Once your ATP Safe Attachments policies are in place, you can see how ATP is working for your organization by viewing reports. See the following resources to learn more:
 - [View reports for Office 365 Advanced Threat Protection](view-reports-for-atp.md)
-- [Use Explorer in the Security &amp; Compliance Center](use-explorer-in-security-and-compliance.md)
+- [Use Explorer in the Security &amp; Compliance Center](threat-explorer.md)
 
 Stay on top of new features coming to ATP. visit the [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=O365) and learn about [new features that are being added to ATP](office-365-atp.md#new-features-in-office-365-atp).
  

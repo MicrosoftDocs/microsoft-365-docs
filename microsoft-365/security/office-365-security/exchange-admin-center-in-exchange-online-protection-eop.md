@@ -34,7 +34,7 @@ You can also access the EAC sign in page directly via the following URL: https:/
 
 This section describes the user interface elements that are found in the EAC.
   
-![EOP-AdminCenter](media/EOP-AdminCenter.png)
+![EOP-AdminCenter](../media/EOP-AdminCenter.png)
   
 ### Feature Pane
 
@@ -60,14 +60,14 @@ When you click most tabs, you'll see a toolbar. The toolbar has icons that perfo
   
 |**Icon**|**Name**|**Action**|
 |:-----|:-----|:-----|
-|![Add Icon](media/ITPro-EAC-AddIcon.gif)           <br/> |Add, New  <br/> |Use this icon to create a new object. Some of these icons have an associated down arrow you can click to show additional objects you can create.  <br/> |
-|![Edit icon](media/ITPro-EAC-EditIcon.gif)           <br/> |Edit  <br/> |Use this icon to edit an object.  <br/> |
-|![Delete icon](media/ITPro-EAC-DeleteIcon.gif)           <br/> |Delete  <br/> |Use this icon to delete an object. Some delete icons have a down arrow you can click to show additional options.  <br/> |
-|![Search icon](media/ITPro-EAC-.gif)           <br/> |Search  <br/> |Use this icon to open a search box in which you can type the search phrase for an object you want to find.  <br/> |
-|![Refresh Icon](media/ITPro-EAC-RefreshIcon.gif)           <br/> |Refresh  <br/> |Use this icon to refresh the list view.  <br/> |
-|![More Options Icon](media/ITPro-EAC-MoreOptionsIcon.gif)           <br/> |More options  <br/> |Use this icon to view more actions you can perform for that tab's objects. For example, in **Recipients \> Users** clicking this icon shows the option to perform an **Advanced Search**.  <br/> |
-|![Up Arrow Icon](media/ITPro-EAC-UpArrowIcon.gif)![Down Arrow Icon](media/ITPro-EAC-DownArrowIcon.gif)           <br/> |Up arrow and down arrow  <br/> |Use these icons to move an object's priority up or down.  <br/> |
-|![Remove icon](media/ITPro-EAC-RemoveIcon.gif)           <br/> |Remove  <br/> |Use this icon to remove objects from a list.  <br/> |
+|![Add Icon](../media/ITPro-EAC-AddIcon.gif)           <br/> |Add, New  <br/> |Use this icon to create a new object. Some of these icons have an associated down arrow you can click to show additional objects you can create.  <br/> |
+|![Edit icon](../media/ITPro-EAC-EditIcon.gif)           <br/> |Edit  <br/> |Use this icon to edit an object.  <br/> |
+|![Delete icon](../media/ITPro-EAC-DeleteIcon.gif)           <br/> |Delete  <br/> |Use this icon to delete an object. Some delete icons have a down arrow you can click to show additional options.  <br/> |
+|![Search icon](../media/ITPro-EAC-.gif)           <br/> |Search  <br/> |Use this icon to open a search box in which you can type the search phrase for an object you want to find.  <br/> |
+|![Refresh Icon](../media/ITPro-EAC-RefreshIcon.gif)           <br/> |Refresh  <br/> |Use this icon to refresh the list view.  <br/> |
+|![More Options Icon](../media/ITPro-EAC-MoreOptionsIcon.gif)           <br/> |More options  <br/> |Use this icon to view more actions you can perform for that tab's objects. For example, in **Recipients \> Users** clicking this icon shows the option to perform an **Advanced Search**.  <br/> |
+|![Up Arrow Icon](../media/ITPro-EAC-UpArrowIcon.gif)![Down Arrow Icon](../media/ITPro-EAC-DownArrowIcon.gif)           <br/> |Up arrow and down arrow  <br/> |Use these icons to move an object's priority up or down.  <br/> |
+|![Remove icon](../media/ITPro-EAC-RemoveIcon.gif)           <br/> |Remove  <br/> |Use this icon to remove objects from a list.  <br/> |
    
 ### List View
 
@@ -79,9 +79,9 @@ When you select an object from the list view, information about that object is d
   
 ### Me tile and Help
 
-The **Me** tile allows you to sign out the EAC and sign in as a different user. From the **Help**![Help Icon](media/ITPro-EAC-HelpIcon.gif) drop-down menu, you can perform the following actions: 
+The **Me** tile allows you to sign out the EAC and sign in as a different user. From the **Help**![Help Icon](../media/ITPro-EAC-HelpIcon.gif) drop-down menu, you can perform the following actions: 
   
-1. **Help** Click ![Help Icon](media/ITPro-EAC-HelpIcon.gif) to view the online help content. 
+1. **Help** Click ![Help Icon](../media/ITPro-EAC-HelpIcon.gif) to view the online help content. 
     
 2. **Disable Help bubble** The Help bubble displays contextual help for fields when you create or edit an object. You can turn off the Help bubble or turn it on if it has been disabled. 
     

@@ -23,7 +23,7 @@ This topic walks you through recommended configuration for tenant-wide settings 
   
 ## Check Office 365 Secure Score
 
-Office 365 Secure Score analyzes your Office 365 organization's security based on your regular activities and security settings and assigns a score. Begin by taking note of your current score. Adjusting some tenant-wide settings will increase your score. The goal is not to achieve the max score, but to be aware of opportunities to protect your environment that do not negatively affect productivity for your users. See [Microsoft Secure Score](microsoft-secure-score.md).
+Office 365 Secure Score analyzes your Office 365 organization's security based on your regular activities and security settings and assigns a score. Begin by taking note of your current score. Adjusting some tenant-wide settings will increase your score. The goal is not to achieve the max score, but to be aware of opportunities to protect your environment that do not negatively affect productivity for your users. See [Microsoft Secure Score](../mtp/microsoft-secure-score.md).
   
 ## Tune threat management policies in the Microsoft 365 security center
 
@@ -44,7 +44,7 @@ The Microsoft 365 security center includes capabilities that protect your enviro
 
 ## View dashboards and reports in the security and compliance centers
 
-Visit these reports and dashboards to learn more about the health of your environment. The data in these reports will become richer as your organization uses Office 365 services. For now, be familiar with what you can monitor and take action on. For more information, see : [Reports in the Microsoft 365 security and compliance centers](reports-in-security-and-compliance.md).
+Visit these reports and dashboards to learn more about the health of your environment. The data in these reports will become richer as your organization uses Office 365 services. For now, be familiar with what you can monitor and take action on. For more information, see : [Reports in the Microsoft 365 security and compliance centers](../../compliance/reports-in-security-and-compliance.md).
   
 |****Dashboard****|****Description****|
 |:-----|:-----|
@@ -52,7 +52,7 @@ Visit these reports and dashboards to learn more about the health of your enviro
 |[Threat Explorer (or real-time detections)](threat-explorer.md)  <br/> |This is also in the **Threat management** section of the security center. If you are investigating or experiencing an attack against your Office 365 tenant, use Explorer (or real-time detections) to analyze threats. Explorer (and the real-time detections report) shows you the volume of attacks over time, and you can analyze this data by threat families, attacker infrastructure, and more. You can also mark any suspicious email for the Incidents list.  <br/> |
 |Reports — Dashboard  <br/> |In the **Reports** section of security center, view audit reports for your SharePoint Online and Exchange Online organizations. You can also access Azure Active Directory (Azure AD) user sign-in reports, user activity reports, and the Azure AD audit log from the **View reports** page.  <br/> |
    
-![Security center Dashboard](media/870ab776-36d2-49c7-b615-93b2bc42fce5.png)
+![Security center Dashboard](../media/870ab776-36d2-49c7-b615-93b2bc42fce5.png)
   
 ## Configure additional Exchange Online tenant-wide settings
 
@@ -60,7 +60,7 @@ Many of the controls for security and protection in the Exchange admin center ar
   
 |****Area****|****Includes a default policy****|****Recommendation****|
 |:-----|:-----|:-----|
-|**Mail Flow** (mail flow rules, also known as transport rules)|No|Add a mail flow rule to help protect against ransomware. See "How to use Exchange Transport Rules to track or block emails with file extensions used by ransomware" in this blog article: [How to deal with ransomware](https://blogs.technet.microsoft.com/office365security/how-to-deal-with-ransomware/). <br><br/> See these topics: <br/>•[Protect against ransomware](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data?view=o365-worldwide#ransomware)<br/>•[Malware and Ransomware Protection in Office 365](office-365-malware-and-ransomware-protection.md)<br/><br/>  Create a mail flow rule to prevent auto-forwarding of email to external domains. For more information, see [Mitigating Client External Forwarding Rules with Secure Score](https://blogs.technet.microsoft.com/office365security/mitigating-client-external-forwarding-rules-with-secure-score/). <br/><br/> More information: [Mail flow rules (transport rules) in Exchange Online](https://technet.microsoft.com/en-us/library/jj919238%28v=exchg.150%29.aspx)|
+|**Mail Flow** (mail flow rules, also known as transport rules)|No|Add a mail flow rule to help protect against ransomware. See "How to use Exchange Transport Rules to track or block emails with file extensions used by ransomware" in this blog article: [How to deal with ransomware](https://blogs.technet.microsoft.com/office365security/how-to-deal-with-ransomware/). <br><br/> See these topics: <br/>•[Protect against ransomware](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data?view=o365-worldwide#ransomware)<br/>•[Malware and Ransomware Protection in Office 365](https://docs.microsoft.com/Office365/Enterprise/office-365-malware-and-ransomware-protection)<br/><br/>  Create a mail flow rule to prevent auto-forwarding of email to external domains. For more information, see [Mitigating Client External Forwarding Rules with Secure Score](https://blogs.technet.microsoft.com/office365security/mitigating-client-external-forwarding-rules-with-secure-score/). <br/><br/> More information: [Mail flow rules (transport rules) in Exchange Online](https://technet.microsoft.com/en-us/library/jj919238%28v=exchg.150%29.aspx)|
 |**Enable modern authentication**|No|Modern authentication in Office 365 is a prerequisite for using multi-factor authentication (MFA). MFA is recommended for securing access to cloud resources, including email. <br/><br/> See these topics:  <br/>• [Enable or disable modern authentication in Exchange Online](https://support.office.com/article/58018196-f918-49cd-8238-56f57f38d662) <br/>• [Skype for Business Online: Enable your tenant for modern authentication](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) <br/><br/> Modern authentication is enabled by default for Office 2016 clients, SharePoint Online, and OneDrive for Business. <br/><br/> More information: [Using Office 365 modern authentication with Office clients](https://support.office.com/article/776c0036-66fd-41cb-8928-5495c0f9168a)|
    
 ## Configure tenant-wide sharing policies in SharePoint admin center
@@ -115,7 +115,7 @@ More information:
     
 - [What is Cloud App Security?](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)
     
-![Cloud App Security dashboard](media/1fb2aa65-54b8-4746-9f5e-c187d339e9f5.png)
+![Cloud App Security dashboard](../media/1fb2aa65-54b8-4746-9f5e-c187d339e9f5.png)
   
 ## Additional resources
 

@@ -24,7 +24,7 @@ You can create a mail flow rule (also known as a transport rule) that sets the s
   
 - Estimated time to complete this procedure: 10 minutes.
     
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mail flow rules" entry in [Feature Permissions in Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx) or [Feature permissions in EOP](eop/feature-permissions-in-eop.md). 
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mail flow rules" entry in [Feature Permissions in Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx) or [Feature permissions in EOP](feature-permissions-in-eop.md). 
     
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center in Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
     
@@ -32,14 +32,14 @@ You can create a mail flow rule (also known as a transport rule) that sets the s
 
 1. In the Exchange admin center (EAC), choose **Mail flow** \> **Rules**.
     
-2. Choose **New**![Add Icon](media/ITPro-EAC-AddIcon.gif), and then select **Create a new rule**.
+2. Choose **New**![Add Icon](../media/ITPro-EAC-AddIcon.gif), and then select **Create a new rule**.
     
 3. Specify a name for the rule.
     
 4. Choose **More options**, and then under **Apply this rule if**, specify a condition that will trigger the action you'll be setting for this rule (which is to set the SCL value).
     
     For example, you can set **The sender** \> **is internal/external**, and then in the **select sender location** dialog box, select **Inside the organization**, and choose **ok**.<br/>
-    ![Select sender location](media/EOP-ETR-SetSCL-1.jpg)
+    ![Select sender location](../media/EOP-ETR-SetSCL-1.jpg)
   
 5. Under **Do the following**, select **Modify the message properties** \> **set the spam confidence level (SCL)**.
   

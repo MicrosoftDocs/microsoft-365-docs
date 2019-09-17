@@ -65,4 +65,4 @@ For information on assigning Security & Compliance Center roles to users, see [G
 
 2. Expand **Mail flow** and then select **Dashboard**.
 
-   ![The mail flow dashboard in the Office 365 Security & Compliance Center](media/mail-flow-dashboard-v2.png)
+   ![The mail flow dashboard in the Office 365 Security & Compliance Center](../media/mail-flow-dashboard-v2.png)

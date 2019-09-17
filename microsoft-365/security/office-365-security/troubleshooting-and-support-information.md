@@ -81,7 +81,7 @@ As an administrator, you might experience issues with users using the Junk Email
     
 ## Support Information
 
-If you need help with the installation, configuration, or uninstallation of the add-in, please contact technical support using the new service request link on the support page in the Microsoft 365 admin center. For additional options including submitting a service request via the telephone and self-support options, see [Help and support for EOP](eop/help-and-support-for-eop.md).
+If you need help with the installation, configuration, or uninstallation of the add-in, please contact technical support using the new service request link on the support page in the Microsoft 365 admin center. For additional options including submitting a service request via the telephone and self-support options, see [Help and support for EOP](help-and-support-for-eop.md).
   
 ## For more information
 

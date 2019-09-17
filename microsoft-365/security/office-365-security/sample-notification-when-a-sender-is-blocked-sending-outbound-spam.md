@@ -57,6 +57,6 @@ Exchange Online Protection.
 \*\*NOTE - Please do not respond to this email as it is sent from an unmonitored address\*\*
   
 > [!TIP]
-> You can also contact support via the options documented at [Help and support for EOP](eop/help-and-support-for-eop.md). 
+> You can also contact support via the options documented at [Help and support for EOP](help-and-support-for-eop.md). 
   
 
