@@ -27,7 +27,7 @@ In addition, some accessibility features and utilities of Windows may benefit Ex
   
 ## Accessibility features of Exchange Help
 
-Every figure in Help for Microsoft Exchange, including screenshots, diagrams, flow charts, and other figures, has associated alternate text. Users who have difficulty viewing figures can pause the cursor on the figure to read the alternate text. The alternate text describes what is illustrated in the figure.
+Every figure in Help for Microsoft Exchange, including screenshots, diagrams, flow charts, and other figures, has associated alternate text. Users who have difficulty viewing figures can pause the cursor on the figure to read the alternate text. The alternate text describes what is illustrated in the figure. 
   
 ## Accessibility products and services from Microsoft
 
