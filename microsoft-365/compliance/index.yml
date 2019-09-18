@@ -93,8 +93,8 @@ landingContent:
             url: overview-ediscovery-20.md
           - text: Manage eDiscovery cases
             url: ediscovery-cases.md
-          - text: Create an eDiscovery hold
-            url: ediscovery-cases#step-4-place-content-locations-on-hold.md
+          - text: Assign eDiscovery permissions
+            url: assign-ediscovery-permissions.md
           - text: Create a litigation hold
             url: create-a-litigation-hold.md
   
