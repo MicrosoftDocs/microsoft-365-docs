@@ -35,13 +35,12 @@ We’ll show Desktop background picture in these instructions. After you’ve st
 3. In **Deployment status** workspace, select the setting you want to deploy, and then select the staged deployment to deploy.
 4. Select **Deploy** to deploy the change to one of the deployment groups.
 
-![Configurable settings deployment status overview](images/deploy-cs-overview.png)
-
+![Configurable settings deployment status overview](images/1deployedit.png)
 Microsoft Managed Desktop recommends deploying to deployment groups in this order: Test, First, Fast, and then Broad. 
 
 When changes complete in each group, the status changes to **Complete**.
 
-![Configurable settings deployment complete](images/config-setting-complete.png)
+![Configurable settings deployment complete](images/2completeedit.png)
 
 ## Revert deployment
 
@@ -55,7 +54,7 @@ We’ll show the steps to revert a change using the Desktop background picture a
 3. In **Deployment status** workspace, select the setting you want to revert, and then select the staged deployment to revert.
 4. Under **Need to revert this change**, select **Revert deployment**.
 
-![Configurable settings deployment revert](images/config-setting-revert.png) 
+![Configurable settings deployment revert](images/3revert.png) 
 
 ## Additional resources
 - [Configurable settings overview](config-setting-overview.md)
