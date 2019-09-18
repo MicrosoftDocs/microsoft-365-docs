@@ -27,3 +27,12 @@ For more information preview features, see [Preview features in Office 365 ATP](
 
 ## September 2019
 
+- [Leverage automated incident response (AIR) in Office 365](automated-investigation-response-office.md)
+
+- [Integrate with Office 365 ATP AIR events using the Office 365 Management Activity API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema) 
+
+- [View the email headers and download the email body of malicious email that was detected](investigate-malicious-email-that-was-delivered.md#view-the-email-headers-and-download-the-email-body) 
+
+## August 2019
+
+- 
