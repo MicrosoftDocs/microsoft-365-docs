@@ -23,9 +23,7 @@ ms.topic: conceptual
 
 The following features are generally available (GA) in the latest release of Office 365 ATP.
 
-
 For more information preview features, see [Preview features in Office 365 ATP](office-365-atp-preview.md).
-
 
 ## September 2019
 
