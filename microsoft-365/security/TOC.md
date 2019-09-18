@@ -5,6 +5,7 @@
 #### [What is Microsoft Threat Protection?](mtp/microsoft-threat-protection.md)
 #### [Microsoft 365 security center](mtp/overview-security-center.md)
 
+
 ### [Hunting in Microsoft 365](./mtp/hunting.md)
 
 ### [Secure Score](./mtp/microsoft-secure-score.md)
@@ -20,9 +21,9 @@
 ### [Get started]()
 #### [Office 365 security roadmap](./office-365-security/security-roadmap.md)
 #### [Configure your Office 365 tenant for increased security](./office-365-security/tenant-wide-setup-for-increased-security.md)
-
+#### [New Microsoft 365 security center](./office-365-security/microsoft-security-and-compliance.md)
 #### [Permissions in the Security & Compliance Center](./office-365-security/permissions-in-the-security-and-compliance-center.md)
-#### [Give users access to the Security & Compliance Center](./office-365-security/grant-access-to-the-security-and-compliance-center.md)
+#### [Give users access to the Security center](./office-365-security/grant-access-to-the-security-and-compliance-center.md)
 
 #### [Chief Information Security Officer (CISO) workshop training](./office-365-security/ciso-workshop.md)
 ##### [Module 1 - Microsoft cybersecurity briefing](./office-365-security/ciso-workshop-module-1.md)
@@ -33,7 +34,7 @@
 ##### [Module 5 - Information protection](./office-365-security/ciso-workshop-module-5.md)
 
 
-### [Protect against threats](./office-365-security/reduce-spam-email.md)
+### [Protect against threats](./office-365-security/protect-against-threats.md)
 #### [Anti-spam and anti-malware protection](./office-365-security/anti-spam-and-anti-malware-protection.md)
 ##### [Advanced spam filtering options](./office-365-security/advanced-spam-filtering-asf-options.md)
 ##### [High-risk delivery pool for outbound messages](./office-365-security/high-risk-delivery-pool-for-outbound-messages.md)
@@ -48,7 +49,6 @@
 ##### [Use end-user spam notifications to release and report spam-quarantined messages](./office-365-security/use-end-user-spam-notifications-to-release-and-report-spam-quarantined-messages.md)
 ##### [Fighting junk email sent to Office 365](./office-365-security/fighting-junk-email.md)
 ##### [Virus detection in SharePoint Online](./office-365-security/virus-detection-in-spo.md)
-
 
 ##### [Office 365 email anti-spam protection](./office-365-security/anti-spam-protection.md)
 ##### [How policies and protections are combined](./office-365-security/how-policies-and-protections-are-combined.md)
@@ -121,6 +121,7 @@
 ###### [Download existing reports](./office-365-security/download-existing-reports.md)
 ##### [Enable or disable safety tips in Office 365](./office-365-security/enable-or-disable-safety-tips.md)
 ##### [View information about malicious files](./office-365-security/malicious-files-detected-in-spo-odb-or-teams.md)
+
 
 
 ### [Advanced Threat Protection ](./office-365-security/office-365-atp.md)
