@@ -148,7 +148,7 @@ A retention policy can apply to all content in the locations that it includes, o
   
 ### Retain content that contains specific keywords
 
-You can apply a retention policy only to content that satisfies certain conditions, and then take retention actions on just that content. The conditions available now support applying a retention policy to content that contains specific words or phrases. You can refine your query by using search operators like AND, OR, and NOT. For more information on these operators, see [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).
+You can apply a retention policy only to content that satisfies certain conditions, and then take retention actions on just that content. The conditions available now support applying a retention policy to content that contains specific words or phrases. You can refine your query by using search operators like AND, OR, and NOT. For more information on these operators, see [Keyword queries and search conditions for Content Search](compliance/keyword-queries-and-search-conditions.md).
   
 Support for adding searchable properties (for example, **subject:**) is coming soon.
   
@@ -369,7 +369,7 @@ If you were using a preservation policy, that policy has been automatically conv
 
 Members of your compliance team who will create retention policies need permissions to the [Security &amp; Compliance Center](https://protection.office.com/). By default, your tenant admin will have access to this location and can give compliance officers and other people access to the [Security &amp; Compliance Center](https://protection.office.com/), without giving them all of the permissions of a tenant admin. To do this, we recommend that you go to the **Permissions** page of the [Security &amp; Compliance Center](https://protection.office.com/), edit the **Compliance Administrator** role group, and add members to that role group. 
   
-For more information, see [Give users access to the Office 365 Security &amp; Compliance Center](grant-access-to-the-security-and-compliance-center.md).
+For more information, see [Give users access to the Office 365 Security &amp; Compliance Center](compliance/grant-access-to-the-security-and-compliance-center.md).
   
 These permissions are required only to create and apply a retention policy. Policy enforcement does not require access to the content.
   

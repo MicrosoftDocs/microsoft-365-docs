@@ -28,4 +28,4 @@ The **Processing** tab in Advanced eDiscovery provides transparency into the sta
 See the following articles for more details.
 
 - [Advanced indexing of custodian data](indexing-custodian-data.md)
-- [Error remediation when processing data](error-remediation.md)
+- [Error remediation when processing data](compliance/error-remediation.md)

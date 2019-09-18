@@ -47,10 +47,10 @@ No more scrolling through a sea of reports to find the ones you want. You can no
 Pull up a chair, grab a cup of coffee, and let our latest compliance docs sweep you away.
 
 **Advanced eDiscovery**
-- [Review conversations in Advanced eDiscovery](compliance20/conversation-review-sets.md) (New)
-- [Troubleshoot AzCopy in Advanced eDiscovery](compliance20/troubleshooting-azcopy.md)
-- [Load non-Office 365 data into a review set](compliance20/load-non-office365-data.md)
-- [Error remediation when processing data](compliance20/error-remediation.md)
+- [Review conversations in Advanced eDiscovery](compliance/conversation-review-sets.md) (New)
+- [Troubleshoot AzCopy in Advanced eDiscovery](compliance/troubleshooting-azcopy.md)
+- [Load non-Office 365 data into a review set](compliance/load-non-office365-data.md)
+- [Error remediation when processing data](compliance/error-remediation.md)
 
 **Archiving 3rd-party data**
 - [Set up a connector to archive Instant Bloomberg data in Office 365](archive-instant-bloomberg-data.md)
@@ -59,7 +59,7 @@ Pull up a chair, grab a cup of coffee, and let our latest compliance docs sweep 
 - [Use sharing auditing in the Office 365 audit log](use-sharing-auditing.md)
 - [Office 365 Management Activity API reference](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)
 - [Troubleshooting the Office 365 Management Activity API](https://docs.microsoft.com/office/office-365-management-api/troubleshooting-the-office-365-management-activity-api)
-- [Search the audit log in the Security & Compliance Center](search-the-audit-log-in-security-and-compliance.md)
+- [Search the audit log in the Security & Compliance Center](compliance/search-the-audit-log-in-security-and-compliance.md)
 
 **Encryption**
 - [Legacy information for Office 365 Message Encryption](legacy-information-for-message-encryption.md)

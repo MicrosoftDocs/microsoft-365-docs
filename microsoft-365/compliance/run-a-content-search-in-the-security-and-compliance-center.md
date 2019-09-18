@@ -48,9 +48,9 @@ Content Search is a new eDiscovery search tool with new and improved scaling and
   
 ## Before you begin
 
-- For information and guidance about building search queries and using Boolean search operators, see [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md). This article also contains information about searching for sensitive information types and searching for content that's shared with people inside and outside of your organization.
+- For information and guidance about building search queries and using Boolean search operators, see [Keyword queries and search conditions for Content Search](compliance/keyword-queries-and-search-conditions.md). This article also contains information about searching for sensitive information types and searching for content that's shared with people inside and outside of your organization.
     
-- To have access to the **Content search** page to perform searches and preview and export search results, an administrator, compliance officer, or eDiscovery manager must be a member of the eDiscovery Manager role group in the Security & Compliance Center. You don't have to assign additional search permissions in Exchange Online, SharePoint Online, or for OneDrive for Business sites. For more information, see [Assign eDiscovery permissions in the Office‍ 365 Security & Compliance Center](assign-ediscovery-permissions.md).
+- To have access to the **Content search** page to perform searches and preview and export search results, an administrator, compliance officer, or eDiscovery manager must be a member of the eDiscovery Manager role group in the Security & Compliance Center. You don't have to assign additional search permissions in Exchange Online, SharePoint Online, or for OneDrive for Business sites. For more information, see [Assign eDiscovery permissions in the Office‍ 365 Security & Compliance Center](compliance/assign-ediscovery-permissions.md).
     
 - There are limits applied to Content Search to maintain the health and quality of services provided to Office 365 organizations. In most cases, you can't modify these limits, but you should be aware of them so that you can take these limits into consideration when planning, running, and troubleshooting searches. For more information, see [Limits for Search in the Security & Compliance Center](limits-for-content-search.md).
     
@@ -137,7 +137,7 @@ Content Search is a new eDiscovery search tool with new and improved scaling and
     
 ||
 |:-----|
-|For more information about creating a search query and using conditions, see [Keyword queries and search conditions for Content Search ](keyword-queries-and-search-conditions.md). |
+|For more information about creating a search query and using conditions, see [Keyword queries and search conditions for Content Search ](compliance/keyword-queries-and-search-conditions.md). |
    
 9. Click **Search** to save the search settings and start the search. 
     

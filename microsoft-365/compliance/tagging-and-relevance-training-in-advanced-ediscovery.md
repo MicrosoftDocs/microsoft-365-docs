@@ -97,13 +97,13 @@ The sample files list allows you to view a list of the files in a training sampl
 
 [Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
   
-[Understanding Assessment in Relevance](assessment-in-relevance-in-advanced-ediscovery.md)
+[Understanding Assessment in Relevance](compliance/assessment-in-relevance-in-advanced-ediscovery.md)
   
 [Tagging and Assessment](tagging-and-assessment-in-advanced-ediscovery.md)
   
-[Tracking Relevance analysis](track-relevance-analysis-in-advanced-ediscovery.md)
+[Tracking Relevance analysis](compliance/track-relevance-analysis-in-advanced-ediscovery.md)
   
-[Deciding based on the results](decision-based-on-the-results-in-advanced-ediscovery.md)
+[Deciding based on the results](compliance/decision-based-on-the-results-in-advanced-ediscovery.md)
   
-[Testing Relevance analysis](test-relevance-analysis-in-advanced-ediscovery.md)
+[Testing Relevance analysis](compliance/test-relevance-analysis-in-advanced-ediscovery.md)
 
