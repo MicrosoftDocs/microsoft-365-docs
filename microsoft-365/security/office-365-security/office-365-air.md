@@ -27,9 +27,7 @@ description: "Get started using automated incident response capabilities in Offi
 With AIR, when certain alerts are triggered, one or more security playbooks initiate, and automated investigation begins. During and after an automated investigation process, your administrators and security operations team can:
 
 - [View the details of an investigation](#view-details-of-an-investigation)
-
 - [Review and approve actions as a result of an investigation](#review-and-approve-actions) 
-
 - [View details about an alert related to an investigation](#view-details-about-an-alert-related-to-an-investigation)
 
 > [!NOTE]
@@ -49,7 +47,7 @@ With AIR, when certain alerts are triggered, one or more security playbooks init
 
     ![Main investigation page for AIR](../media/air-maininvestigationpage.png) 
 
-3. In the list of investigations, select an item in the **ID** column. This opens investigation details page, starting with the investigation graph.
+3. In the list of investigations, select an item in the **ID** column. This opens investigation details page, starting with the investigation graph in view.
 
     ![AIR investigation graph page](../media/air-investigationgraphpage.png)
 
