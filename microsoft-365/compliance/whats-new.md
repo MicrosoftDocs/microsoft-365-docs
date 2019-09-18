@@ -34,7 +34,7 @@ We released two new admin roles to help manage security and compliance in your o
 - **Compliance data admin**. Users with this role have permissions to protect and track data in the Microsoft 365 compliance center, Microsoft 365 admin center, and Azure. They can also manage everything the Exchange admin center, Compliance Manager, Teams & Skype for Business admin center and create support tickets for Azure and Microsoft 365.
 - **Security operator**. Users with this role can manage alerts and have global read-only access to security-related features, including everything in the Microsoft 365 security center, Azure Active Directory, Identity Protection, Privileged Identity Management and Office 365 Security & Compliance Center.
 
-[Learn more about these roles](https://docs.microsoft.com/office365/securitycompliance/permissions-microsoft-365-compliance-security)
+[Learn more about these roles](https://docs.microsoft.com/office365/compliance/permissions-microsoft-365-compliance-security)
 
 ### Search and filtering for reports
 
