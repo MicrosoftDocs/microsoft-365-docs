@@ -5,7 +5,6 @@ keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation, depl
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.date: 2/17/2019
 ms.collection: M365-modern-desktop
 ---
 
@@ -15,7 +14,7 @@ After you make changes to your setting categories and stage a deployment, the De
 
 ## Deployment statuses 
 
-These are the statues you’ll see for each deployment.
+These are the statuses you’ll see for each deployment.
 
 Status	| Explanation 
 --- | --- 
