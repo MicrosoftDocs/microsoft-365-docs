@@ -37,7 +37,7 @@ The following procedure can also be performed via remote PowerShell. Use the Get
 
 ## Remove restrictions for a blocked Office 365 email account
 
-You complete this task in the Security & Compliance Center (SCC). [Go to the Security & Compliance Center](go-to-the-securitycompliance-center.md) for more details about SCC. You need to be in the **Organization Management** or the **Security Administrator** role group in order to perform these functions. [Go to Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md) for more details about SCC role groups.
+You complete this task in the Security & Compliance Center (SCC). [Go to the Security & Compliance Center](../../compliance/go-to-the-securitycompliance-center.md) for more details about SCC. You need to be in the **Organization Management** or the **Security Administrator** role group in order to perform these functions. [Go to Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md) for more details about SCC role groups.
 
 1. Using a work or school account that has Office 365 global administrator privileges, sign into the Office 365 Security and Compliance Center and in the list on the left, expand **Threat Management**, choose **Review**, and then choose **Restricted Users**.
     
