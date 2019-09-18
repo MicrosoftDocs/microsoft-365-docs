@@ -26,7 +26,7 @@ As an Office 365 user, you can manage messages that were sent to quarantine inst
   
 ## View messages that were sent to quarantine instead of to you
 
-1. Sign in to Office 365 and [go to the Security and Compliance Center](go-to-the-securitycompliance-center.md) using your work or school account. 
+1. Sign in to Office 365 and [go to the Security and Compliance Center](../../compliance/go-to-the-securitycompliance-center.md) using your work or school account. 
     
 2. On the left, expand **Threat Management**, choose **Review**, and then choose **Quarantine**.
     

@@ -33,7 +33,7 @@ This is one of several walkthroughs for the Security &amp; Compliance Center. To
   
 ## Getting to the spoof intelligence insight in the Security &amp; Compliance Center
 
-1. To get started, you'll need [go to the Security &amp; Compliance Center](go-to-the-securitycompliance-center.md).
+1. To get started, you'll need [go to the Security &amp; Compliance Center](../../compliance/go-to-the-securitycompliance-center.md).
     
 2. In the Security &amp; Compliance Center, go to **Threat Management** \> **Dashboard.**
     

@@ -29,7 +29,7 @@ Estimated time to complete: 30 minutes
   
 You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the Anti-spam entry in the [Feature Permissions in Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx) topic.
 
-The spam filter policy settings are all in the Security & Compliance Center (SCC). More information can be found in [Go to the Office 365 Security & Compliance Center](go-to-the-securitycompliance-center.md). The Anti-spam settings page is inside the SCC \> **Threat management** \> **Policy** \> **Anti-spam** section.
+The spam filter policy settings are all in the Security & Compliance Center (SCC). More information can be found in [Go to the Office 365 Security & Compliance Center](../../compliance/go-to-the-securitycompliance-center.md). The Anti-spam settings page is inside the SCC \> **Threat management** \> **Policy** \> **Anti-spam** section.
 
 ## Access and create spam filter policies
 
