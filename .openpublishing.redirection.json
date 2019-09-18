@@ -3186,9 +3186,14 @@
         "redirect_document_id": false
     },
     {
-    "source_path": "securitycompliance/office-365-air.md ",
-    "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air",
-    "redirect_document_id": false
+        "source_path": "securitycompliance/office-365-air.md",
+        "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "securitycompliance/how-policies-and-protections-are-combined.md",
+        "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/how-policies-and-protections-are-combined.md",
+        "redirect_document_id": false
     }
   ] 
 }
