@@ -1,36 +1,35 @@
 ---
-title: Microsoft Defender ATP preview features
-description: Learn how to access Microsoft Defender Advanced Threat Protection preview features.
-keywords: preview, preview experience, Microsoft Defender Advanced Threat Protection, features, updates
-search.product: eADQiWindows 10XVcnh
+title: Office 365 ATP preview features
+description: Learn about Office 365 Advanced Threat Protection preview features.
+keywords: preview, preview experience, Office 365 Advanced Threat Protection, features, updates
 search.appverid: met150
-ms.prod: w10
-ms.mktglfcycl: deploy
+ms.service: O365-seccomp
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
-ms.localizationpriority: medium
+ms.author: deniseb
+author: denisebmsft
+localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: conceptual
 ---
 
-# Microsoft Defender ATP preview features
+# Office 365 ATP preview features
 
 **Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Office 365 Advanced Threat Protection (Microsoft Defender ATP)](office-365-atp.md)
 
-The Microsoft Defender ATP service is constantly being updated to include new feature enhancements and capabilities.
+Office 365 ATP is constantly being updated to include new feature enhancements and capabilities.
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-preview-abovefoldlink) 
+>Don't have Office 365 ATP yet? [Contact sales to start a trial.](https://go.microsoft.com/fwlink/p/?LinkId=518644) 
 
-Learn about new features in the Microsoft Defender ATP preview release and be among the first to try upcoming features by turning on the preview experience.
+Learn about new features in Office 365 ATP preview and be among the first to try upcoming features.
 
-For more information on new capabilities that are generally available, see [What's new in Microsoft Defender ATP](whats-new-in-microsoft-defender-atp.md).
+For more information on new capabilities that are generally available, see LINK.
 
 ## Turn on preview features
+
 You'll have access to upcoming features which you can provide feedback on to help improve the overall experience before features are generally available.
 
 Turn on the preview experience setting to be among the first to try upcoming features.
@@ -40,6 +39,7 @@ Turn on the preview experience setting to be among the first to try upcoming fea
 2. Toggle the setting between **On** and **Off** and select **Save preferences**.
 
 ## Preview features
+
 The following features are included in the preview release:
 
 - [Tamper Protection settings in Intune](../windows-defender-antivirus/prevent-changes-to-security-settings-with-tamper-protection.md#turn-tamper-protection-on-or-off-for-your-organization-with-intune)<br/>You can now turn Tamper Protection on (or off) for your organization in the Microsoft 365 Device Management portal (Intune).
