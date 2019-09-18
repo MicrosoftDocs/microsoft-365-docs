@@ -1,7 +1,7 @@
 ---
 title: "Attack Simulator in Office 365"
-ms.author: deniseb
-author: denisebmsft
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: overview
