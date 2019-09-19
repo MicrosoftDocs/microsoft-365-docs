@@ -41,7 +41,7 @@ Microsoft 365 is an integrated solution that brings together best-in-class produ
 * Streamlined deployment of PCs with Windows AutoPilot
 
 **Enabling Conditional Access**
-- Microsoft 365 Business customers can enable Conditional Access via the Azure Directory settings in the Azure portal. For more information on how to configure Conditional Access policies, please see the article [What is Conditional access](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/overview).
+- Microsoft 365 Business customers can enable Conditional Access via the Azure Directory settings in the Azure portal. For more information on how to configure Conditional Access policies, please see the article [What is Conditional access](https://docs.microsoft.com/azure/active-directory/conditional-access/overview).
 
 ### Who should consider adopting Microsoft 365 Business? 
 Microsoft 365 Business was built for small and medium-sized customers that have little to no IT resources on staff and want best-in-class productivity and collaboration capabilities of Office 365 together with device management and security solutions that safeguard business data. The Microsoft 365 Business customer is ready to move their IT operations to the cloud and is interested in maintaining a proactive stance to help protect data on both company and employee-owned devices.
