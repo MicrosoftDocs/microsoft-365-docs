@@ -5,16 +5,15 @@ metadata:
   title: Microsoft Managed Desktop documentation
   description: 
   keywords: device, app, management
-  author: trudyha
-  ms.author: trudyha
-  ms.date: 11/1/2018
+  author: jaimeo
+  ms.author: jaimeo
   ms.topic: landing-page
   ms.devlang: na
   ms.service: m365-md
 sections:
 - items:
   - type: markdown
-    text: The easiest way to delight users and free up IT.
+    text: Microsoft Managed Desktop brings together Microsoft 365 Enterprise, cloud-based device management by Microsoft, and security monitoring, enabling you to free up your IT teams to focus on core business needs.
 - items:
   - type: list
     style: cards
@@ -22,27 +21,27 @@ sections:
     columns: 2
     items:
     - href: intro/index.md
-      html: <p>Read about what Microsoft Managed Desktop is and how it works.</p>
+      html: <p>Introduction to Microsoft Managed Desktop for decision makers--what it is, how it works, and what it can do for you</p>
       image:
         src: https://docs.microsoft.com/en-us/media/common/i_overview.svg
       title: What is Microsoft Managed Desktop?
     - href: service-description/index.md
-      html: <p>Learn what is included in Microsoft Managed Desktop.</p>
+      html: <p>Detailed description of all parts of Microsoft Managed Desktop</p>
       image:
         src: https://docs.microsoft.com/en-us/media/common/i_get-started.svg
       title: Service Description
     - href: get-ready/index.md
-      html: <p>Learn how to prepare to enroll in Microsoft Managed Desktop.</p>
+      html: <p>All the steps to get your environment and organization ready to work with the service</p>
       image:
         src: https://docs.microsoft.com/en-us/media/common/i_support.svg
       title: Get ready
     - href: get-started/index.md
-      html: <p>Learn how to order devices and add contacts.</p>
+      html: <p>Get your organization on board with Microsoft Managed Desktop, including setting up devices and deploying apps</p>
       image:
         src: https://docs.microsoft.com/en-us/media/common/i_whats-new.svg
       title: Get started
     - href: working-with-managed-desktop/index.md
-      html: <p>Learn about app management.</p>
+      html: <p>All about your day-to-day operations with the service</p>
       image:
         src: https://docs.microsoft.com/en-us/media/common/i_portal.svg
       title: Working with Microsoft Managed Desktop
