@@ -29,12 +29,14 @@ landingContent:
             url: protect-access-to-data-and-services.md
           - text: Privileged access management
             url: privileged-access-management-overview.md
-          - text: Configure privileged access management
-            url: privileged-access-management-configuration.md
           - text: Customer Lockbox
             url: customer-lockbox-requests.md
           - text: Supervise communications
-            url: customer-lockbox-requests.md
+            url: xxxx
+          - text: Information barriers
+            url: information-barriers.md
+          - text: Customer Key
+            url: controlling-your-data-using-customer-key.md
   
   # Card (optional)
   - title: Protect information
@@ -53,7 +55,7 @@ landingContent:
             url: email-encryption.md
 
   # Card
-  - title: Manage Information governance
+  - title: Manage information governance
     linkLists:
       - linkListType: overview
         links:
@@ -99,16 +101,12 @@ landingContent:
             url: create-new-investigation.md
               
   # Card
-  - title: Find compliance solutions
+  - title: Assess compliance risk
     linkLists:
       - linkListType: overview
         links:
           - text: Compliance Manager
             url: compliance-manager-overview.md
-          - text: Information barriers
-            url: information-barriers.md
-          - text: Customer Key
-            url: controlling-your-data-using-customer-key.md
           - text: Information protection for GDPR
             url: office-365-info-protection-for-gdpr-overview.md
 
