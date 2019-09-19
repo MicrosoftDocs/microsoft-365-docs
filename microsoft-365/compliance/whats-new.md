@@ -3,7 +3,6 @@ title: "What's new in the Microsoft 365 compliance center"
 ms.author: brendonb
 author: brendonb
 manager: laurawi
-ms.date:
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
@@ -24,6 +23,10 @@ We're continuously adding new features to the [Microsoft 365 compliance center](
 
 > [!TIP]
 > Interested in what's going on in other admin centers? Check out these articles:<br>[What's new in the Microsoft 365 admin center](https://docs.microsoft.com/office365/admin/whats-new-in-preview?view=o365-worldwide)<br>[What's new in the SharePoint admin center](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
+
+## August 2019
+
+Wondering why it's quiet on the release front this month? We're heads down building new, innovative compliance solutions that'll be unveiled at [Microsoft Ignite](https://www.microsoft.com/ignite) in November. Stay tuned!
 
 ## July 2019
 
