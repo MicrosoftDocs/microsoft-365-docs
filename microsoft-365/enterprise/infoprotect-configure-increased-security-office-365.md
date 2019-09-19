@@ -23,7 +23,7 @@ description: Understand and configure increased security for Microsoft 365.
 
 To ensure that your Microsoft 365 subscription and its data start off and remain secure from malicious threats, configure the following:
 
-- [Tune threat management policies](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security##tune-threat-management-policies-in-the-microsoft-365-security-center)
+- [Tune threat management policies](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security#tune-threat-management-policies-in-the-microsoft-365-security-center)
 - [Additional Exchange Online tenant-wide settings](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security#configure-additional-exchange-online-tenant-wide-settings)
 - [Tenant-wide sharing policies in the SharePoint admin center](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security#configure-tenant-wide-sharing-policies-in-sharepoint-admin-center)
 - [Settings in Azure Active Directory (Azure AD)](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security#configure-settings-in-azure-active-directory)
