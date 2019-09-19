@@ -72,7 +72,7 @@ There are additional limits related to different aspects of Content Search, such
   
 - [Export Content Search results](export-search-results.md#export-limits)
     
-- [Partially indexed items in Content Search in Office 365](compliance/partially-indexed-items-in-content-search.md)
+- [Partially indexed items in Content Search in Office 365](partially-indexed-items-in-content-search.md)
     
 - [Investigating partially indexed items in Office 365 eDiscovery](investigating-partially-indexed-items-in-ediscovery.md)
     
@@ -82,4 +82,4 @@ For information about Content Searches, see:
   
 - [Content Search in Office 365](content-search.md)
     
-- [Keyword queries and search conditions for Content Search](compliance/keyword-queries-and-search-conditions.md)
+- [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md)

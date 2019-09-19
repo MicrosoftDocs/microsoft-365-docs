@@ -70,7 +70,7 @@ The first step is to assign the appropriate eDiscovery-related permissions to pe
 > [!IMPORTANT]
 > If a person isn't a member of one of these eDiscovery-related role groups, or isn't a member of a role group that's assigned the Reviewer role, you can't add them as a member of an eDiscovery case. 
 
-For more information about eDiscovery permissions, see [Assign eDiscovery permissions](compliance/assign-ediscovery-permissions.md).
+For more information about eDiscovery permissions, see [Assign eDiscovery permissions](assign-ediscovery-permissions.md).
   
  **To assign eDiscovery permissions:**
   
@@ -202,7 +202,7 @@ To create a hold for an eDiscovery case:
     
     b. Click ![Add Icon](media/ITPro-EAC-AddIcon.gif) **Add conditions** to add one or more conditions to narrow the search query for the hold. Each condition adds a clause to the KQL search query that is created and run when you create the hold. For example you can specify a date range so that email or site documents that were created within the date ranged are placed on hold. A condition is logically connected to the keyword query (specified in the keyword box) by the **AND** operator. That means that items have to satisfy both the keyword query and the condition to be placed on hold.
 
-    For more information about creating a search query and using conditions, see [Keyword queries and search conditions for Content Search](compliance/keyword-queries-and-search-conditions.md).
+    For more information about creating a search query and using conditions, see [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).
     
 11. After configuring a query-based hold, click **Next**.
     
@@ -218,7 +218,7 @@ Keep the following things in mind about hold statistics:
   
 - The total number of items on hold indicates the number of items from all content sources that are placed on hold. If you've created a query-based hold, this statistic indicates the number of items that match the query.
     
-- The number of items on hold also includes unindexed items found in the content locations. Note that if you create a query-based hold, all unindexed items in the content locations are placed on hold. This includes unindexed items that don't match the search criteria of a query-based hold and unindexed items that might fall outside of a date range condition. This is different than what happens when you run a Content Search, in which unindexed items that don't match the search query or are excluded by a date range condition aren't included in the search results. For more information about unindexed items, see [Partially indexed items in Content Search in Office 365](compliance/partially-indexed-items-in-content-search.md).
+- The number of items on hold also includes unindexed items found in the content locations. Note that if you create a query-based hold, all unindexed items in the content locations are placed on hold. This includes unindexed items that don't match the search criteria of a query-based hold and unindexed items that might fall outside of a date range condition. This is different than what happens when you run a Content Search, in which unindexed items that don't match the search query or are excluded by a date range condition aren't included in the search results. For more information about unindexed items, see [Partially indexed items in Content Search in Office 365](partially-indexed-items-in-content-search.md).
     
 - You can get the latest hold statistics by clicking **Update statistics** to re-run a search estimate that calculates the current number of items on hold. If necessary, click **Refresh**![Refresh icon](media/O365-MDM-Policy-RefreshIcon.gif) in the toolbar to update the hold statistics in the details pane. 
     
@@ -257,7 +257,7 @@ After an eDiscovery case is created and any custodians related to the case are p
     
 8. Under **Conditions**, add conditions to a search query to narrow a search and return a more refined set of results. Each condition adds a clause to the KQL search query that is created and run when you start the search. A condition is logically connected to the keyword query (specified in the keyword box) by the **AND** operator. That means that items have to satisfy both the keyword query and the condition to be included in the results. This is how conditions help to narrow your results. 
     
-    For more information about creating a search query and using conditions, see [Keyword queries for Content Search](compliance/keyword-queries-and-search-conditions.md).
+    For more information about creating a search query and using conditions, see [Keyword queries for Content Search](keyword-queries-and-search-conditions.md).
     
 9. Under **Locations: locations on hold**, choose the content locations that you want to search. You can search mailboxes, sites, and public folders in the same search.
     

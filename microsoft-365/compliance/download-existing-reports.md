@@ -17,7 +17,7 @@ description: "Learn how to download one or more existing reports in the Security
 
 # Download existing reports in the Security &amp; Compliance Center
 
-In the [Security &amp; Compliance Center](https://protection.office.com), several [reports and insights](compliance/reports-and-insights-in-security-and-compliance.md) are available to help your organization's security team mitigate and address threats to your organization. If you're a member of your organization's security team, you can download one or more existing reports. 
+In the [Security &amp; Compliance Center](https://protection.office.com), several [reports and insights](reports-and-insights-in-security-and-compliance.md) are available to help your organization's security team mitigate and address threats to your organization. If you're a member of your organization's security team, you can download one or more existing reports. 
   
 ## Download existing reports
 
@@ -32,12 +32,12 @@ In the [Security &amp; Compliance Center](https://protection.office.com), severa
     
 ## Related topics
 
-[Reports and insights in the Office 365 Security &amp; Compliance Center](compliance/reports-and-insights-in-security-and-compliance.md)
+[Reports and insights in the Office 365 Security &amp; Compliance Center](reports-and-insights-in-security-and-compliance.md)
   
-[Create a schedule for a report in the Security &amp; Compliance Center](compliance/create-a-schedule-for-a-report.md)
+[Create a schedule for a report in the Security &amp; Compliance Center](create-a-schedule-for-a-report.md)
   
 [Manage schedules for reports in the Security &amp; Compliance Center](manage-schedules-for-multiple-reports.md)
   
-[Download a custom report in the Security &amp; Compliance Center](compliance/set-up-and-download-a-custom-report.md)
+[Download a custom report in the Security &amp; Compliance Center](set-up-and-download-a-custom-report.md)
   
 

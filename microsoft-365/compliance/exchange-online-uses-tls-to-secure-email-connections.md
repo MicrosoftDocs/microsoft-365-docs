@@ -26,7 +26,7 @@ Learn how Exchange Online and Office 365 use Transport Layer Security (TLS) and 
 
 Transport Layer Security (TLS), and SSL that came before TLS, are cryptographic protocols that secure communication over a network by using security certificates to encrypt a connection between computers. TLS supersedes Secure Sockets Layer (SSL) and is often referred to as SSL 3.1. For Exchange Online, we use TLS to encrypt the connections between our Exchange servers and the connections between our Exchange servers and other servers such as your on-premises Exchange servers or your recipients' mail servers. Once the connection is encrypted, all data sent through that connection is sent through the encrypted channel. However, if you forward a message that was sent through a TLS-encrypted connection, that message isn't necessarily encrypted. This is because, in simple terms, TLS doesn't encrypt the message, just the connection.
   
-If you want to encrypt the message you need to use an encryption technology that encrypts the message contents, for example, something like Office Message Encryption. See [Email encryption in Office 365](../../compliance/email-encryption.md) and [Office 365 Message Encryption (OME)](../../compliance/ome.md) for information on message encryption options in Office 365. 
+If you want to encrypt the message you need to use an encryption technology that encrypts the message contents, for example, something like Office Message Encryption. See [Email encryption in Office 365](email-encryption.md) and [Office 365 Message Encryption (OME)](ome.md) for information on message encryption options in Office 365. 
   
 We recommend using TLS in situations where you want to set up a secure channel of correspondence between Office 365 and your on-premises organization or another organization, such as a partner. Exchange Online always attempts to use TLS first to secure your email but cannot always do this if the other party does not offer TLS security. Keep reading to find out how you can secure all mail to your on-premises servers or important partners by using  *connectors*. 
   
@@ -97,12 +97,12 @@ Normally, you receive updates to your root certificates automatically through Wi
 
 ## Get more information about TLS and Office 365
 
-For a list of supported cipher suites, see [Technical reference details about encryption in Office 365](../../compliance/technical-reference-details-about-encryption.md).
+For a list of supported cipher suites, see [Technical reference details about encryption in Office 365](technical-reference-details-about-encryption.md).
   
 [Set up connectors for secure mail flow with a partner organization](https://technet.microsoft.com/library/dn751021%28v=exchg.150%29.aspx)
   
 [Connectors with enhanced email security](https://technet.microsoft.com/library/261d92e4-7371-4555-b781-2062b5bb5278.aspx)
   
-[Encryption in Office 365](../../compliance/encryption.md)
+[Encryption in Office 365](encryption.md)
   
 
