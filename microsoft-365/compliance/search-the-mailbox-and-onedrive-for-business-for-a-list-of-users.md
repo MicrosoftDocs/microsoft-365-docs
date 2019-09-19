@@ -58,7 +58,7 @@ When you run the script in this step, it will prompt you for the following infor
     
 - **Name of the Content Search** - The name of the Content Search that will be created by the script. 
     
-- **Search query** - The search query that will be used with the Content Search is created and run. For more information about search queries, see [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).
+- **Search query** - The search query that will be used with the Content Search is created and run. For more information about search queries, see [Keyword queries and search conditions for Content Search](compliance/keyword-queries-and-search-conditions.md).
 
 
 **To run the script:**

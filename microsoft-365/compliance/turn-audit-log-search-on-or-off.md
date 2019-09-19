@@ -32,7 +32,7 @@ You (or another admin) must turn on audit logging before you can start searching
   
 - If you turn off audit log search in Office 365, you won't be able to use the Office 365 Management Activity API to access auditing data for your organization. Turning off audit log search by following the steps in this article means that no results will be returned when you search the audit log using the Security & Compliance Center or when you run the **Search-UnifiedAuditLog** cmdlet in Exchange Online PowerShell. This also means that your audit logs won't be available through the Office 365 Management Activity API.  
     
-- For step-by-step instructions on searching the Office 365 audit log, see [Search the audit log in the Security & Compliance Center](search-the-audit-log-in-security-and-compliance.md).
+- For step-by-step instructions on searching the Office 365 audit log, see [Search the audit log in the Security & Compliance Center](compliance/search-the-audit-log-in-security-and-compliance.md).
     
 ## Turn on audit log search
 
