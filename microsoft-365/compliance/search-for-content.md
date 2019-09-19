@@ -23,7 +23,7 @@ The first step is to starting using the Content Search tool to choose content lo
   
 - [Create and run](content-search.md) a content search 
     
-- [Build search queries and use conditions](keyword-queries-and-search-conditions.md) to narrow your search 
+- [Build search queries and use conditions](compliance/keyword-queries-and-search-conditions.md) to narrow your search 
     
 - [Configure search permissions filtering](permissions-filtering-for-content-search.md) so that an eDiscovery manager can only search subset of mailboxes or sites in your organization 
     
@@ -58,13 +58,13 @@ After you run a search and refine it as necessary, the next step is to do someth
 
 Content Search is easy to use, but it's also a powerful tool. Behind-the-scenes, there's a lot going on. The more you know about it and understand its behavior and its limitations, the more successful you'll be using it for your organization's search and investigation needs. Learn about:
   
-- [Partially indexed items in Exchange and SharePoint](partially-indexed-items-in-content-search.md) and how to include or exclude them when you export and download search results 
+- [Partially indexed items in Exchange and SharePoint](compliance/partially-indexed-items-in-content-search.md) and how to include or exclude them when you export and download search results 
     
 - [Investigate partially indexed items](investigating-partially-indexed-items-in-ediscovery.md) and determine your organization's exposure to them 
     
 - [Limits of the Content Search tool](limits-for-content-search.md), such as the maximum number of searches that you can run at one time and the maximum number of content locations you can include in a single search 
     
-- [Estimated and actual search results](differences-between-estimated-and-actual-ediscovery-search-results.md) and the reasons why there might be differences between them when you export and download search results 
+- [Estimated and actual search results](compliance/differences-between-estimated-and-actual-ediscovery-search-results.md) and the reasons why there might be differences between them when you export and download search results 
     
 - [De-duplication in search results](de-duplication-in-ediscovery-search-results.md) that you can enable when you export email messages that are the results of a search 
     

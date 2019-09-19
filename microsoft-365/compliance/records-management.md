@@ -33,6 +33,6 @@ The records-management solution supports the following elements:
 
 - 	**Review disposed items with disposition review** and [export a disposition report](disposition-reviews.md#export-the-disposition-items) for further validation and reporting.
 
-- 	**Set specific permissions** for records manager functions in your organization to [have the right access](permissions-in-the-security-and-compliance-center.md).
+- 	**Set specific permissions** for records manager functions in your organization to [have the right access](protect-against-threats.md).
 
 With the records-management solution in Microsoft 365, you can incorporate your organization’s retention schedules into the file plan to manage retention, records declaration, and disposition in support of the full content lifecycle. 

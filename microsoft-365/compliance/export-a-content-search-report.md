@@ -29,7 +29,7 @@ When you export a report, it's downloaded to a folder that has the same name as 
 
 ## Before you begin
 
-- To export a Content Search report, you have to be assigned the Compliance Search management role in the Security & Compliance Center. This role is assigned to the built-in eDiscovery Manager and Organization Management role groups. It isn't assigned by default to the Organization Management role group. For more information, see [Assign eDiscovery permissions](assign-ediscovery-permissions.md).
+- To export a Content Search report, you have to be assigned the Compliance Search management role in the Security & Compliance Center. This role is assigned to the built-in eDiscovery Manager and Organization Management role groups. It isn't assigned by default to the Organization Management role group. For more information, see [Assign eDiscovery permissions](compliance/assign-ediscovery-permissions.md).
     
 - When you export a report, the data is temporarily stored in a unique Windows Azure storage area in the Microsoft cloud before it's downloaded to your local computer. Be sure your organization can connect to the endpoint in Azure, which is **\*.blob.core.windows.net** (the wildcard represents a unique identifier for your export). The search results data is deleted from the Azure storage area two weeks after it's created. 
     
@@ -82,7 +82,7 @@ The first step is to prepare the report for downloading to your computer exporti
     
     - Export only unindexed items
     
-    For more information about unindexed items, see [Partially indexed items in Content Search](partially-indexed-items-in-content-search.md).
+    For more information about unindexed items, see [Partially indexed items in Content Search](compliance/partially-indexed-items-in-content-search.md).
     
 7. Choose to include search statistics for all versions of SharePoint documents. This option appears only if the content sources of the search includes SharePoint or OneDrive for Business sites.
     

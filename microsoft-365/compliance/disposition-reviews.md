@@ -85,13 +85,13 @@ A reviewer can also use the link to view the document in its original location, 
   
 Note that the email notifications are sent automatically to reviewers on a weekly basis. Therefore, when content reaches the end of its retention period, it may take up to seven days for reviewers to receive the email notification that content is awaiting disposition.
   
-Also note that all disposition actions are audited. To ensure this, you must turn on auditing at least one day prior to the first disposition action - for more information, see [Search the audit log in the Office 365 Security &amp; Compliance Center](search-the-audit-log-in-security-and-compliance.md). 
+Also note that all disposition actions are audited. To ensure this, you must turn on auditing at least one day prior to the first disposition action - for more information, see [Search the audit log in the Office 365 Security &amp; Compliance Center](compliance/search-the-audit-log-in-security-and-compliance.md). 
   
 ## Permissions for disposition
 
 To get access to the **Disposition** page, reviewers must be members of the **Disposition Management** role and the **View-Only Audit Logs** role. We recommend creating a new role group called Disposition Reviewers, adding these two roles to that role group, and then adding members to the role group. 
   
-For more information, see [Give users access to the Office 365 Security &amp; Compliance Center](grant-access-to-the-security-and-compliance-center.md)
+For more information, see [Give users access to the Office 365 Security &amp; Compliance Center](compliance/grant-access-to-the-security-and-compliance-center.md)
   
 ## How long until disposed content is permanently deleted
 

@@ -31,9 +31,9 @@ eDiscovery cases let you control who can create, access, and manage eDiscovery c
   
 - [Manage your eDiscovery workflow](ediscovery-cases.md) by creating and using eDiscovery cases for every legal investigation your organization has to undertake 
     
-- [Assign eDiscovery permissions](assign-ediscovery-permissions.md) to control who can create and manage eDiscovery cases in your organization 
+- [Assign eDiscovery permissions](compliance/assign-ediscovery-permissions.md) to control who can create and manage eDiscovery cases in your organization 
     
-- [Set up compliance boundaries](set-up-compliance-boundaries.md) to control the user content locations that eDiscovery managers can search 
+- [Set up compliance boundaries](tagging-and-assessment-in-advanced-ediscovery.md) to control the user content locations that eDiscovery managers can search 
     
 - [Search for content](search-for-content.md) in your organization 
     
@@ -100,17 +100,17 @@ After set up training, you're ready to run the Relevance module and assess the e
   
 - [Learn about the Relevance process](use-relevance-in-advanced-ediscovery.md) and the iterative process of assessment, tagging, tracking, and re-training based on sample set of files 
     
-- [Learn about assessment](assessment-in-relevance-in-advanced-ediscovery.md) , where a expert familiar with the case reviews a set of case files and determines the effectiveness of the Relevance training 
+- [Learn about assessment](compliance/assessment-in-relevance-in-advanced-ediscovery.md) , where a expert familiar with the case reviews a set of case files and determines the effectiveness of the Relevance training 
     
 - [Assess case files](tagging-and-assessment-in-advanced-ediscovery.md) to calculate the effectiveness (called  *richness*  ) of training settings, and then tag files as relevant or not relevant to your case; this helps you determine if the current training is sufficient or if you should adjust the training settings. 
     
-- [Perform the relevance training](tagging-and-relevance-training-in-advanced-ediscovery.md) after assessment is complete, and then once again tag files as relevant or not relevant to the issues you've defined for the case 
+- [Perform the relevance training](compliance/tagging-and-relevance-training-in-advanced-ediscovery.md) after assessment is complete, and then once again tag files as relevant or not relevant to the issues you've defined for the case 
     
-- [Track the Relevance analysis](track-relevance-analysis-in-advanced-ediscovery.md) process to determine if Relevance training has achieved your assessment target (known as a  *stable training status*  ) or whether more training is needed; you can also view the Relevance results for each case issue 
+- [Track the Relevance analysis](compliance/track-relevance-analysis-in-advanced-ediscovery.md) process to determine if Relevance training has achieved your assessment target (known as a  *stable training status*  ) or whether more training is needed; you can also view the Relevance results for each case issue 
     
-- [Make decisions based on Relevance analysis](decision-based-on-the-results-in-advanced-ediscovery.md) to determine the size of the resulting set of case files that can be exported for review 
+- [Make decisions based on Relevance analysis](compliance/decision-based-on-the-results-in-advanced-ediscovery.md) to determine the size of the resulting set of case files that can be exported for review 
     
-- [Test the quality of the Relevance analysis](test-relevance-analysis-in-advanced-ediscovery.md) to validate the culling decisions made during the Relevance process 
+- [Test the quality of the Relevance analysis](compliance/test-relevance-analysis-in-advanced-ediscovery.md) to validate the culling decisions made during the Relevance process 
     
 ### Export results
 

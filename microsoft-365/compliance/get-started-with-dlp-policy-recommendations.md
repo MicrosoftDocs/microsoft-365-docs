@@ -29,7 +29,7 @@ To help protect the sensitive information, this DLP policy:
   
 - Detects when content in Exchange, SharePoint, and OneDrive that contains one of the unprotected types of sensitive information is shared with people outside your organization.
     
-- Generates detailed activity reports so that you can track things like who shared the content with people outside your organization and when they did it. You can use the [DLP reports](view-the-dlp-reports.md) and [audit log data](search-the-audit-log-in-security-and-compliance.md) (where **Activity** = **DLP**) to see this information.
+- Generates detailed activity reports so that you can track things like who shared the content with people outside your organization and when they did it. You can use the [DLP reports](view-the-dlp-reports.md) and [audit log data](compliance/search-the-audit-log-in-security-and-compliance.md) (where **Activity** = **DLP**) to see this information.
     
 You can also choose to have the DLP policy:
   

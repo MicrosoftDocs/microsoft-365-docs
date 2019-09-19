@@ -31,4 +31,4 @@ For information about performing data subject requests for the GDPR, see [Office
 
 ## See Also
   
-[Microsoft Security Guidance for Political Campaigns, Nonprofits, and Other Agile Organizations](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
+[Microsoft Security Guidance for Political Campaigns, Nonprofits, and Other Agile Organizations](compliance/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)

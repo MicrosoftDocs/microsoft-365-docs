@@ -23,7 +23,7 @@ description: "Summary: Create and configure SharePoint Online team sites for var
 
  **Summary:** Create and configure SharePoint Online team sites for various levels of information protection.
   
-Use the steps in this article to design and deploy baseline, sensitive, and highly confidential SharePoint Online team sites. For more information about these three tiers of protection, see [Secure SharePoint Online sites and files](secure-sharepoint-online-sites-and-files.md).
+Use the steps in this article to design and deploy baseline, sensitive, and highly confidential SharePoint Online team sites. For more information about these three tiers of protection, see [Secure SharePoint Online sites and files](compliance/secure-sharepoint-online-sites-and-files.md).
   
 ## Baseline SharePoint Online team sites
 
@@ -117,7 +117,7 @@ To deploy your isolated site, you first need to:
     
 - Create the access groups and add the user and group members.
     
-For the detailed steps, see **Phase 1** of [Deploy an isolated SharePoint Online team site](deploy-an-isolated-sharepoint-online-team-site.md).
+For the detailed steps, see **Phase 1** of [Deploy an isolated SharePoint Online team site](compliance/design-an-isolated-sharepoint-online-team-site.md).
   
 Next, you create the SharePoint Online team site with these steps.
   
@@ -237,7 +237,7 @@ To deploy your isolated site, you first need to:
     
 - Create an isolated team site that uses your access groups
     
-For the detailed steps, see [Deploy an isolated SharePoint Online team site](deploy-an-isolated-sharepoint-online-team-site.md).
+For the detailed steps, see [Deploy an isolated SharePoint Online team site](compliance/design-an-isolated-sharepoint-online-team-site.md).
   
 The results of the permission settings are:
   
@@ -263,8 +263,8 @@ The members of the site, through group membership in one of the access groups, c
 
 ## See also
 
-[Secure SharePoint Online sites and files](secure-sharepoint-online-sites-and-files.md)
+[Secure SharePoint Online sites and files](compliance/secure-sharepoint-online-sites-and-files.md)
   
-[Microsoft Security Guidance for Political Campaigns, Nonprofits, and Other Agile Organizations](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
+[Microsoft Security Guidance for Political Campaigns, Nonprofits, and Other Agile Organizations](compliance/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   
 [Cloud adoption and hybrid solutions](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)

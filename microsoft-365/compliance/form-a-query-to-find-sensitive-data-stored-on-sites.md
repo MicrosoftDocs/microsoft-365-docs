@@ -84,6 +84,6 @@ Not all queries are created equal. The following table gives examples of queries
   
 [Run a Content Search in the Office 365 Security &amp; Compliance Center](run-a-content-search-in-the-security-and-compliance-center.md)
   
-[Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md)
+[Keyword queries and search conditions for Content Search](compliance/keyword-queries-and-search-conditions.md)
   
 
