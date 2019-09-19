@@ -70,7 +70,7 @@ Here's the high-level process for using the DSR case tool to manage DSR investig
 
 By default, an Office 365 global administrator can access the DSR case tool in the Security & Compliance Center. By design, other users such as a data privacy officer, a human resources manager, or other people involved in DSR investigations don't have access to the DSR case tool and will have to be assigned the appropriate permissions to access the tool. The easiest way to do this is to go to the **Permissions** page in the Security & Compliance Center and add users to the eDiscovery Manager role group. You also have to assign these permissions so you can add them as members of the DSR case that you create in Step 2. 
   
-For step-by-step instructions, see [Assign eDiscovery permissions in the Office‍ 365 Security & Compliance Center](assign-ediscovery-permissions.md).
+For step-by-step instructions, see [Assign eDiscovery permissions in the Office‍ 365 Security & Compliance Center](compliance/assign-ediscovery-permissions.md).
   
 > [!NOTE]
 > By default, an Office 365 global administrator (or other members of the Organization Management role group in the Security & Compliance Center don't have the necessary permissions to export Content Search results (see Step 4 in this article). To address this, an admin can add themselves as a member of the eDiscovery Manager role group. 
@@ -240,7 +240,7 @@ Here are some examples of the conditions that you can add to the built-in search
     
 - **Compliance tag (`compliancetag`)** – Specifies a label assigned to an email message or a document. This condition returns items that are classified with a specific label. Labels are used to classify email and documents for data governance and enforce retention rules based on the classification defined by the label. This is a useful condition for DSR investigations because your organization may be using labels to classify content related to data privacy or that contains personal data or sensitive information. For the value of this condition, use the complete label name or the first part of the label name with a wildcard. For more information, see [Overview of labels in Office 365](labels.md).
     
-For a list and description of all the conditions available in the DSR case tool, see [Search conditions](keyword-queries-and-search-conditions.md#search-conditions) in the "Keyword queries and search conditions for Content Search" article. 
+For a list and description of all the conditions available in the DSR case tool, see [Search conditions](compliance/compliance/keyword-queries-and-search-conditions.md#search-conditions) in the "Keyword queries and search conditions for Content Search" article. 
   
 ### Changing the content locations that are searched
 
@@ -383,7 +383,7 @@ Here's a high-level process to export partially indexed items. After they're exp
     
 For more information about partially indexed items, see: 
   
-- [Partially indexed items in Content Search in Office 365](partially-indexed-items-in-content-search.md)
+- [Partially indexed items in Content Search in Office 365](compliance/partially-indexed-items-in-content-search.md)
 
 - [Exporting partially indexed items](export-search-results.md#exporting-partially-indexed-items)
     

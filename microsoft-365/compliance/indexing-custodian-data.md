@@ -24,7 +24,7 @@ When a custodian is added to an Advanced eDiscovery case, any content in Office 
 To learn more about processing support in Office 365 and partially indexed items, see:
 
 - [Supported file types in Advanced eDiscovery](supported-filetypes-ediscovery20.md)
-- [Partially indexed items in Content Search in Office 365](https://docs.microsoft.com/en-us/office365/securitycompliance/partially-indexed-items-in-content-search)
+- [Partially indexed items in Content Search in Office 365](https://docs.microsoft.com/en-us/office365/compliance/partially-indexed-items-in-content-search)
 - [File formats indexed by Exchange Search](https://docs.microsoft.com/en-us/exchange/file-formats-indexed-by-exchange-search-exchange-2013-help)
 - [Default crawled file name extensions and parsed file types in SharePoint Server](https://docs.microsoft.com/en-us/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)
 
@@ -32,7 +32,7 @@ To learn more about processing support in Office 365 and partially indexed items
 
 After the Advanced indexing process is completed, you can get an understanding of the effectiveness of re-processing.  In the Custodian Indexing view, the graph lists all items added to the *hybrid index*.  The hybrid index is where Advanced eDiscovery stores the re-processed content.
 
-The graph also includes the number of items that require remediation and another graph of errors by file type. For more information, see [Error remediation when processing data](error-remediation.md).
+The graph also includes the number of items that require remediation and another graph of errors by file type. For more information, see [Error remediation when processing data](compliance/error-remediation.md).
 
 ## Updating Advanced indexes for custodians
 

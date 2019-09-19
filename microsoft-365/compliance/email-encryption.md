@@ -45,7 +45,7 @@ Here's how email encryption typically works:
 
   - A central server decrypts the message on behalf of the recipient, after validating the recipient's identity.
 
-For more information on how Office 365 secures communication between servers, such as between organizations within Office 365 or between Office 365 and a trusted business partner outside of Office 365, see [How Exchange Online uses TLS to secure email connections in Office 365](exchange-online-uses-tls-to-secure-email-connections.md).
+For more information on how Office 365 secures communication between servers, such as between organizations within Office 365 or between Office 365 and a trusted business partner outside of Office 365, see [How Exchange Online uses TLS to secure email connections in Office 365](compliance/exchange-online-uses-tls-to-secure-email-connections.md).
   
 Watch this video for an introduction to [Encryption in Office 365](https://www.youtube.com/watch?v=KmfxCd5ublI).
   

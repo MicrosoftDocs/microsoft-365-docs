@@ -1,183 +1,183 @@
 {
-  "redirections": [
-      {
-        "source_path": "microsoft-365/enterprise/using-microsoft-azure-active-directory-for-sharepoint-2013-authentication.md",
-        "redirect_url": "https://docs.microsoft.com/office365/enterprise/microsoft-azure-architectures-for-sharepoint-2013",
-        "redirect_document_id": true
-      },
-      {
-        "source_path": "microsoft-365/managed-desktop/intro/technologies-and-devices.md",
-        "redirect_url": "https://docs.microsoft.com/microsoft-365/managed-desktop/intro/technologies",
-        "redirect_document_id": true
-      },
-      {
-        "source_path": "microsoft-365/managed-desktop/get-started/mmd-app-requirements.md",
-        "redirect_url": "https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/mmd-app-requirements",
-        "redirect_document_id": true
-      },
-      {
-        "source_path": "microsoft-365/managed-desktop/get-started/apps.md",
-        "redirect_url": "https://docs.microsoft.com/microsoft-365/managed-desktop/get-ready/apps",
-        "redirect_document_id": true
-      },
-      {
-        "source_path": "microsoft-365/managed-desktop/intro/device-list.md",
-        "redirect_url": "https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/device-list",
-        "redirect_document_id": true
-      },
-      {
-        "source_path": "microsoft-365/managed-desktop/intro/prerequisites.md",
-        "redirect_url": "https://docs.microsoft.com/microsoft-365/managed-desktop/get-ready/prerequisites",
-        "redirect_document_id": true
-      },
-      {
-        "source_path": "microsoft-365/managed-desktop/working-with-managed-desktop/operations-and-monitoring.md",
-        "redirect_url": "https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/operatons-and-monitoring",
-        "redirect_document_id": true
-      },
-      {
-        "source_path": "microsoft-365/managed-desktop/intro/how-managed-desktop-works.md",
-        "redirect_url": "https://docs.microsoft.com/microsoft-365/managed-desktop/intro/index",
-        "redirect_document_id": true 
-      },
-      {
-        "source_path": "microsoft-365/managed-desktop/working-with-managed-desktop/support.md",
-        "redirect_url": "https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/support",
-        "redirect_document_id": true
-      },
-      {
-        "source_path": "microsoft-365/managed-desktop/get-started/security.md",
-        "redirect_url": "https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/security",
-        "redirect_document_id": true 
-      },
-      {
-        "source_path": "microsoft-365/managed-desktop/working-with-managed-desktop/updates.md",
-        "redirect_url": "https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/updates"
-      },
-      {
-        "source_path": "microsoft-365/managed-desktop/get-started/device-policies.md",
-        "redirect_url": "https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/device-policies",
-        "redirect_document_id": true 
-      },
-      {
-        "source_path": "microsoft-365/managed-desktop/intro/device-catalog.md",
-        "redirect_url": "https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/device-list",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "microsoft-365/enterprise/obsolete-article.md",
-        "redirect_url": "https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "microsoft-365/enterprise/obsolete-bi-article.md",
-        "redirect_url": "https://docs.microsoft.com/SharePoint/administration/business-intelligence-0",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "microsoft-365/compliance/gdpr-dsr-o365.md",
-        "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "microsoft-365/enterprise/identity-device-policies.md",
-        "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/identity-access-policies",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "microsoft-365/enterprise/deploy-office-proplus-intune.md",
-        "redirect_url": "https://docs.microsoft.com/intune/apps-add-office365",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "microsoft-365/enterprise/deploy-sites-for-three-tiers-of-protection.md",
-        "redirect_url": "https://docs.microsoft.com/office365/securitycompliance/deploy-sharepoint-online-sites-for-three-tiers-of-protection",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "microsoft-365/enterprise/microsoft-security-guidance.md",
-        "redirect_url": "https://docs.microsoft.com/office365/SecurityCompliance",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "microsoft-365/enterprise/protect-files-with-aip.md",
-        "redirect_url": "https://docs.microsoft.com/office365/SecurityCompliance/protect-sharepoint-online-files-with-azure-information-protection",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "microsoft-365/enterprise/protect-files-with-o365-labels-dlp.md",
-        "redirect_url": "https://docs.microsoft.com/office365/SecurityCompliance/protect-sharepoint-online-files-with-office-365-labels-and-dlp",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "microsoft-365/enterprise/secure-sharepoint-online-sites-dev-test.md",
-        "redirect_url": "https://docs.microsoft.com/office365/SecurityCompliance/secure-sharepoint-online-sites-in-a-dev-test-environment",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "microsoft-365/enterprise/secure-sharepoint-online-sites-and-files.md",
-        "redirect_url": "https://docs.microsoft.com/office365/SecurityCompliance/secure-sharepoint-online-sites-and-files",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "microsoft-365/managed-desktop/service-description/daas.md",
-        "redirect_url": "https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/",
-        "redirect_document_id": true
-      },
-      {
-        "source_path": "microsoft-365/managed-desktop/service-description/itaas.md",
-        "redirect_url": "https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "microsoft-365/enterprise/identity-privileged-identity-management.md",
-        "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/identity-designate-protect-admin-accounts",
-        "redirect_document_id": true
-      },
-      {
-        "source_path": "microsoft-365/enterprise/identity-azure-ad-connect-health.md",
-        "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/identity-azure-ad-connect",
-        "redirect_document_id": true
-      },
-      {
-        "source_path": "microsoft-365/enterprise/identity-azure-ad-identity-protection.md",
-        "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/identity-multi-factor-authentication",
-        "redirect_document_id": true
-      },
-      {
-        "source_path": "microsoft-365/enterprise/identity-azure-ad-access-usage-reporting.md",
-        "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/identity-multi-factor-authentication",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "microsoft-365/enterprise/identity-password-writeback.md",
-        "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/identity-password-reset",
-        "redirect_document_id": true
-      },
-      {
-        "source_path": "microsoft-365/enterprise/identity-single-sign-on.md",
-        "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/identity-password-reset",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "microsoft-365/enterprise/identity-customize-office-365-sign-in.md",
-        "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/identity-password-reset",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "microsoft-365/enterprise/identity-automatic-group-membership.md",
-        "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/identity-self-service-group-management",
-        "redirect_document_id": true
-      },
-      {
-        "source_path": "microsoft-365/enterprise/identity-group-based-licensing.md",
-        "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/identity-self-service-group-management",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "microsoft-365/business/set-up-advanced-security.md",
-        "redirect_url": "https://docs.microsoft.com/microsoft-365/business/increase-threat-protection",
-        "redirect_document_id": true
-      }
-    ]
-}
+    "redirections": [
+        {
+          "source_path": "microsoft-365/enterprise/using-microsoft-azure-active-directory-for-sharepoint-2013-authentication.md",
+          "redirect_url": "https://docs.microsoft.com/office365/enterprise/microsoft-azure-architectures-for-sharepoint-2013",
+          "redirect_document_id": true
+        },
+        {
+          "source_path": "microsoft-365/managed-desktop/intro/technologies-and-devices.md",
+          "redirect_url": "https://docs.microsoft.com/microsoft-365/managed-desktop/intro/technologies",
+          "redirect_document_id": true
+        },
+        {
+          "source_path": "microsoft-365/managed-desktop/get-started/mmd-app-requirements.md",
+          "redirect_url": "https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/mmd-app-requirements",
+          "redirect_document_id": true
+        },
+        {
+          "source_path": "microsoft-365/managed-desktop/get-started/apps.md",
+          "redirect_url": "https://docs.microsoft.com/microsoft-365/managed-desktop/get-ready/apps",
+          "redirect_document_id": true
+        },
+        {
+          "source_path": "microsoft-365/managed-desktop/intro/device-list.md",
+          "redirect_url": "https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/device-list",
+          "redirect_document_id": true
+        },
+        {
+          "source_path": "microsoft-365/managed-desktop/intro/prerequisites.md",
+          "redirect_url": "https://docs.microsoft.com/microsoft-365/managed-desktop/get-ready/prerequisites",
+          "redirect_document_id": true
+        },
+        {
+          "source_path": "microsoft-365/managed-desktop/working-with-managed-desktop/operations-and-monitoring.md",
+          "redirect_url": "https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/operatons-and-monitoring",
+          "redirect_document_id": true
+        },
+        {
+          "source_path": "microsoft-365/managed-desktop/intro/how-managed-desktop-works.md",
+          "redirect_url": "https://docs.microsoft.com/microsoft-365/managed-desktop/intro/index",
+          "redirect_document_id": true 
+        },
+        {
+          "source_path": "microsoft-365/managed-desktop/working-with-managed-desktop/support.md",
+          "redirect_url": "https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/support",
+          "redirect_document_id": true
+        },
+        {
+          "source_path": "microsoft-365/managed-desktop/get-started/security.md",
+          "redirect_url": "https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/security",
+          "redirect_document_id": true 
+        },
+        {
+          "source_path": "microsoft-365/managed-desktop/working-with-managed-desktop/updates.md",
+          "redirect_url": "https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/updates"
+        },
+        {
+          "source_path": "microsoft-365/managed-desktop/get-started/device-policies.md",
+          "redirect_url": "https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/device-policies",
+          "redirect_document_id": true 
+        },
+        {
+          "source_path": "microsoft-365/managed-desktop/intro/device-catalog.md",
+          "redirect_url": "https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/device-list",
+          "redirect_document_id": false
+        },
+        {
+          "source_path": "microsoft-365/enterprise/obsolete-article.md",
+          "redirect_url": "https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions",
+          "redirect_document_id": false
+        },
+        {
+          "source_path": "microsoft-365/enterprise/obsolete-bi-article.md",
+          "redirect_url": "https://docs.microsoft.com/SharePoint/administration/business-intelligence-0",
+          "redirect_document_id": false
+        },
+        {
+          "source_path": "microsoft-365/compliance/gdpr-dsr-o365.md",
+          "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365",
+          "redirect_document_id": false
+        },
+        {
+          "source_path": "microsoft-365/enterprise/identity-device-policies.md",
+          "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/identity-access-policies",
+          "redirect_document_id": false
+        },
+        {
+          "source_path": "microsoft-365/enterprise/deploy-office-proplus-intune.md",
+          "redirect_url": "https://docs.microsoft.com/intune/apps-add-office365",
+          "redirect_document_id": false
+        },
+        {
+          "source_path": "microsoft-365/enterprise/deploy-sites-for-three-tiers-of-protection.md",
+          "redirect_url": "https://docs.microsoft.com/office365/securitycompliance/deploy-sharepoint-online-sites-for-three-tiers-of-protection",
+          "redirect_document_id": false
+        },
+        {
+          "source_path": "microsoft-365/enterprise/microsoft-security-guidance.md",
+          "redirect_url": "https://docs.microsoft.com/office365/SecurityCompliance",
+          "redirect_document_id": false
+        },
+        {
+          "source_path": "microsoft-365/enterprise/protect-files-with-aip.md",
+          "redirect_url": "https://docs.microsoft.com/office365/SecurityCompliance/protect-sharepoint-online-files-with-azure-information-protection",
+          "redirect_document_id": false
+        },
+        {
+          "source_path": "microsoft-365/enterprise/protect-files-with-o365-labels-dlp.md",
+          "redirect_url": "https://docs.microsoft.com/office365/SecurityCompliance/protect-sharepoint-online-files-with-office-365-labels-and-dlp",
+          "redirect_document_id": false
+        },
+        {
+          "source_path": "microsoft-365/enterprise/secure-sharepoint-online-sites-dev-test.md",
+          "redirect_url": "https://docs.microsoft.com/office365/SecurityCompliance/secure-sharepoint-online-sites-in-a-dev-test-environment",
+          "redirect_document_id": false
+        },
+        {
+          "source_path": "microsoft-365/enterprise/secure-sharepoint-online-sites-and-files.md",
+          "redirect_url": "https://docs.microsoft.com/office365/SecurityCompliance/secure-sharepoint-online-sites-and-files",
+          "redirect_document_id": false
+        },
+        {
+          "source_path": "microsoft-365/managed-desktop/service-description/daas.md",
+          "redirect_url": "https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/",
+          "redirect_document_id": true
+        },
+        {
+          "source_path": "microsoft-365/managed-desktop/service-description/itaas.md",
+          "redirect_url": "https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/",
+          "redirect_document_id": false
+        },
+        {
+          "source_path": "microsoft-365/enterprise/identity-privileged-identity-management.md",
+          "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/identity-designate-protect-admin-accounts",
+          "redirect_document_id": true
+        },
+        {
+          "source_path": "microsoft-365/enterprise/identity-azure-ad-connect-health.md",
+          "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/identity-azure-ad-connect",
+          "redirect_document_id": true
+        },
+        {
+          "source_path": "microsoft-365/enterprise/identity-azure-ad-identity-protection.md",
+          "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/identity-multi-factor-authentication",
+          "redirect_document_id": true
+        },
+        {
+          "source_path": "microsoft-365/enterprise/identity-azure-ad-access-usage-reporting.md",
+          "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/identity-multi-factor-authentication",
+          "redirect_document_id": false
+        },
+        {
+          "source_path": "microsoft-365/enterprise/identity-password-writeback.md",
+          "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/identity-password-reset",
+          "redirect_document_id": true
+        },
+        {
+          "source_path": "microsoft-365/enterprise/identity-single-sign-on.md",
+          "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/identity-password-reset",
+          "redirect_document_id": false
+        },
+        {
+          "source_path": "microsoft-365/enterprise/identity-customize-office-365-sign-in.md",
+          "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/identity-password-reset",
+          "redirect_document_id": false
+        },
+        {
+          "source_path": "microsoft-365/enterprise/identity-automatic-group-membership.md",
+          "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/identity-self-service-group-management",
+          "redirect_document_id": true
+        },
+        {
+          "source_path": "microsoft-365/enterprise/identity-group-based-licensing.md",
+          "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/identity-self-service-group-management",
+          "redirect_document_id": false
+        },
+        {
+          "source_path": "microsoft-365/business/set-up-advanced-security.md",
+          "redirect_url": "https://docs.microsoft.com/microsoft-365/business/increase-threat-protection",
+          "redirect_document_id": true
+        }
+      ]
+  }

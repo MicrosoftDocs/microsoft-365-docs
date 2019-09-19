@@ -54,7 +54,7 @@ Here's the workflow for using Data Investigations (Preview) to manage a data spi
 
 - To create a data investigation, search for content, and delete spilled data, you have to be a member of the Data Investigator role group in the Security & Compliance Center.
 
-- To control which user mailboxes and OneDrive accounts an investigator can search, your organization can set up compliance boundaries. For more information, [Set up compliance boundaries for eDiscovery investigations](../set-up-compliance-boundaries.md). 
+- To control which user mailboxes and OneDrive accounts an investigator can search, your organization can set up compliance boundaries. For more information, [Set up compliance boundaries for eDiscovery investigations](../tagging-and-assessment-in-advanced-ediscovery.md). 
 
 ## Step 1: Create a data investigation
 
@@ -109,7 +109,7 @@ To group documents and get more assistance for your review, click **Manage evide
 - [Email threading](email-threading.md)
 - [Themes](themes.md)
 
-To determine which users are involved in the data spillage, you can create a query in the evidence set and then use the Sender/Author and Recipients conditions. This creates a list of all senders, recipients, and authors found in collected data that was added to the evidence. Be sure to examine the list to determine if there are any external users. For more information about using conditions to narrow search results, see [Search conditions](../keyword-queries-and-search-conditions.md#search-conditions).
+To determine which users are involved in the data spillage, you can create a query in the evidence set and then use the Sender/Author and Recipients conditions. This creates a list of all senders, recipients, and authors found in collected data that was added to the evidence. Be sure to examine the list to determine if there are any external users. For more information about using conditions to narrow search results, see [Search conditions](../compliance/compliance/keyword-queries-and-search-conditions.md#search-conditions).
 
 ## Step 4: Delete the spilled data
 
@@ -125,7 +125,7 @@ To delete items from their original locations:
 
 3. On the flyout page, verify the number of items and related child documents that will be deleted, and then click **Delete**.
 
-At this time, when you delete items from their original location, the items are soft-deleted. This means that the deleted items will be retained until the deleted item recovery period for the item expires. This also means it's possible for users to recover these items. For more information about what happens when items are deleted from mailboxes and sites, see [Delete items from their original location](delete-items-from-original-locations.md).
+At this time, when you delete items from their original location, the items are soft-deleted. This means that the deleted items will be retained until the deleted item recovery period for the item expires. This also means it's possible for users to recover these items. For more information about what happens when items are deleted from mailboxes and sites, see [Delete items from their original location](compliance/delete-items-from-original-locations.md).
 
 ## Step 5: Close or delete the investigation
 

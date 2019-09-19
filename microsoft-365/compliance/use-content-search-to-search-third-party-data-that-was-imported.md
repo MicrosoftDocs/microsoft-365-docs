@@ -30,7 +30,7 @@ kind:externaldata AND subject:contoso
 
 The previous keyword query example includes the subject property. For a list of other properties for third-party data items that can include in a keyword query, see the "More information" section in [Work with a partner to archive third-party data in Office 365](work-with-partner-to-archive-third-party-data.md#more-information).
   
-When creating queries to search and hold third-party data, you can also use conditions to narrow the search results. For more information about creating Content Search queries, see [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).
+When creating queries to search and hold third-party data, you can also use conditions to narrow the search results. For more information about creating Content Search queries, see [Keyword queries and search conditions for Content Search](compliance/keyword-queries-and-search-conditions.md).
   
 ## Creating a query to search specific types of third-party data
 

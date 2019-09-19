@@ -18,7 +18,7 @@ description: "Partially indexed items (also call unindexed items) are Exchange m
 
 A Content Search that you run from the Security & Compliance Center automatically includes partially indexed items in the estimated search results when you run a search. Partially indexed items are Exchange mailbox items and documents on SharePoint and OneDrive for Business sites that for some reason weren't completely indexed for search. Most email messages and site documents are successfully indexed because they fall within the [Indexing limits for email messages](limits-for-content-search.md#indexing-limits-for-email-messages). However, some items may exceed these indexing limits, and will be partially indexed. Here are other reasons why items can't be indexed for search and are returned as partially indexed items when you run a Content Search:
   
-- Email messages have an attached file of a file type that can't be indexed; in most cases, the file type is [unrecognized or unsupported for indexing](partially-indexed-items-in-content-search.md#file-types-not-indexed-for-search)
+- Email messages have an attached file of a file type that can't be indexed; in most cases, the file type is [unrecognized or unsupported for indexing](compliance/partially-indexed-items-in-content-search.md#file-types-not-indexed-for-search)
     
 - Email messages have an attached file without a valid handler, such as image files; this is the most common cause of partially indexed email items
     
@@ -179,4 +179,4 @@ Note the following:
   
 ## See also
 
-[Partially indexed items in Content Search in Office 365](partially-indexed-items-in-content-search.md)
+[Partially indexed items in Content Search in Office 365](compliance/partially-indexed-items-in-content-search.md)
