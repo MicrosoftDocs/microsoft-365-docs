@@ -3,7 +3,7 @@ title: "Step 5: Configure Office 365 Data Loss Prevention"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/25/2019
+ms.date: 09/19/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -51,9 +51,8 @@ As an interim checkpoint, see the [exit criteria](infoprotect-exit-criteria.md#c
 
 ## Next step
 
-
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step6.png)|[Configure privileged access management for Office 365](infoprotect-configure-privileged-access-management.md)|
+|![](./media/stepnumbers/Step6.png)|[Configure email encryption](infoprotect-email-encryption.md)|
 
 
