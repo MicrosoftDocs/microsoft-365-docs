@@ -30,7 +30,7 @@ To ensure that your Microsoft 365 subscription and its data start off and remain
 
 Once configured, you can obtain information about your security status from:
 
-- [Dashboards and reports in the Microsoft security Center](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security##view-dashboards-and-reports-in-the-security-and-compliance-centers)
+- [Dashboards and reports in the Microsoft security Center](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security#view-dashboards-and-reports-in-the-security-and-compliance-centers)
 - [Microsoft Secure Score](https://docs.microsoft.com/office365/securitycompliance/microsoft-secure-score)
 
 An additional security feature is [Office 365 Advanced Threat Protection (ATP)](https://docs.microsoft.com/office365/securitycompliance/office-365-atp), which helps your organization collaborate more securely by:
