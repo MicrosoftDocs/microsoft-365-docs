@@ -16,6 +16,7 @@
 #### [Step 4: Configure secure user authentication](identity-multi-factor-authentication.md)
 #### [Step 5: Simplify access for users](identity-password-reset.md)
 #### [Step 6: Use groups for easier management](identity-self-service-group-management.md)
+#### [Step 7: Configure identity governance](identity-governance.md)
 #### [Identity exit criteria](identity-exit-criteria.md)
 ### [Phase 3: Windows 10 Enterprise](windows10-infrastructure.md)
 #### [Step 1: Prepare your organization](windows10-prepare-your-org.md)
@@ -141,3 +142,5 @@
 #### [Microsoft Support and Professional Services](../compliance/gdpr-dpia-prof-services.md)
 
 ### [Microsoft's data protection officer](../compliance/gdpr-data-protection-officer.md)
+
+# [Security solutions](../security/index.yml)

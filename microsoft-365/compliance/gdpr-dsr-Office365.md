@@ -92,7 +92,7 @@ The following table lists the Office 365 applications that people use to create 
 | ![Excel icon](media/o365-excel-64x64.png) <br> Excel | ![Skype for Business icon](media/o365-skypeforbusiness-64x64.png) <br> Skype for Business |
 | ![Office Lens icon](media/o365-lens-64x64.png) <br> Office Lens | ![Tasks icon](media/O365-DSR-Doc-Final_image8.png) <br> Tasks |
 | ![OneDrive icon](media/o365-OneDrive-64x64.png) <br> OneDrive for Business |![Teams icon](media/o365-teams-64x64.png) <br> Teams |
-| ![OneNote icon](media/o365-onenote-64x64.png) <br> OneNote| ![To-do icon](media/o365-todo-64x64.png) <br> To-Do |
+| ![OneNote icon](media/o365-onenote-64x64.png) <br> OneNote| ![To do icon](media/o365-todo-64x64.png) <br> To Do |
 | ![Outlook icon](media/o365-outlook-64x64.png) <br> Outlook/Exchange | ![Video icon](media/O365-DSR-Doc-Final_image14.png) <br> Video |
 | ![People icon](media/O365-DSR-Doc-Final_image15.png) <br> People | ![Visio icon](media/o365-visio-64x64.png) <br> Visio |
 | ![PowerPoint icon](media/o365-powerpoint-64x64.png) <br> PowerPoint | ![Word icon](media/o365-word-64x64.png) <br> Word
@@ -154,7 +154,7 @@ The following table lists some conditions you can use to narrow the scope of a s
 | :--- | :--- |:--- |
 |**Condition**|**Description** |**Example of condition values**|
 | File type | The extension of a document or file. Use this condition to search for Office documents and files created by Office 365 applications. Use this condition when searching for documents on SharePoint Online sites and OneDrive for Business accounts.<br/>The corresponding document property is filetype. <br/>For a complete list of file extensions that you can search for, see that Default crawled file name extensions and parsed file types in SharePoint](https://technet.microsoft.com/library/jj219530.aspx).|&nbsp;&bull;&nbsp;&nbsp;csv — Searches for comma-separated value (CSV) files; Excel files can be saved in CSV format and CSV file can easily be imported into Excel<br><br>&bull;&nbsp;&nbsp;docx — Searches for Word file <br><br>&bull;&nbsp;&nbsp;mpp — Searches for Project files<br/><br>&bull;&nbsp;&nbsp;one — Searches for OneNote files <br><br>&bull;&nbsp;&nbsp;pdf — Search for files saved in a PDF format <br><br>&bull;&nbsp;&nbsp;pptx — Searches for PowerPoint files <br><br>&bull;&nbsp;&nbsp;xlxs — Searches for Excel files <br><br>&bull;&nbsp;&nbsp;vsd — Searches for Visio files <br><br>&bull;&nbsp;&nbsp;wmv — Searches for Windows Media video files <br>|
-| Message type | The email message type to search for. Use this condition to search mailboxes for contacts (People), meetings (Calendar) tasks, or Skype for Business conversations. The corresponding email property is *kind*.|&bull;&nbsp;&nbsp;*contacts — Searches the My Contacts list (People) of a mailbox <br><br>&bull;&nbsp;&nbsp;*email — Searches email messages <br><br>&bull;&nbsp;&nbsp;*im — Searches Skype for Business conversations<br><br>&bull;&nbsp;&nbsp;*meetings — Searches appointments and meeting requests (Calendar) <br><br>&bull;&nbsp;&nbsp;*tasks — Searches the My Tasks list (Tasks); using this value will also return tasks created in Microsoft To-Do.<br>|
+| Message type | The email message type to search for. Use this condition to search mailboxes for contacts (People), meetings (Calendar) tasks, or Skype for Business conversations. The corresponding email property is *kind*.|&bull;&nbsp;&nbsp;*contacts — Searches the My Contacts list (People) of a mailbox <br><br>&bull;&nbsp;&nbsp;*email — Searches email messages <br><br>&bull;&nbsp;&nbsp;*im — Searches Skype for Business conversations<br><br>&bull;&nbsp;&nbsp;*meetings — Searches appointments and meeting requests (Calendar) <br><br>&bull;&nbsp;&nbsp;*tasks — Searches the My Tasks list (Tasks); using this value will also return tasks created in Microsoft To Do.<br>|
 | Compliance tag |The label assigned to an email message or a document. Labels are used to classify email and documents for data governance and enforce retention rules based on the classification defined by the label. Use this condition to search for items that have been automatically or manually assigned a label.<br/>This is a useful condition for DSR investigations because your organization may be using labels to classify content related to data privacy or that contains personal data or sensitive information. See the “Using Content Search to find all content with a specific label applied to it” section in [Overview of labels in Office 365.](https://support.office.com/article/overview-of-labels-af398293-c69d-465e-a249-d74561552d30)|compliancetag="personal data"|
 ||||
 
@@ -251,7 +251,7 @@ The following sections describe things you should keep in mind when searching fo
 - [Office Lens](#office-lens)
 - [OneDrive for Business and SharePoint Experience Settings](#onedrive-for-business-and-sharepoint-online-experience-settings)
 - [Microsoft Teams for Education](#microsoft-teams-for-education)
-- [Microsoft To-Do](#microsoft-to-do)
+- [Microsoft To Do](#microsoft-to-do)
 - [Skype for Business](#skype-for-business)
 
 #### Office Lens
@@ -357,9 +357,9 @@ Here’s specific guidance to search for a Class Notebook.
    ```
 6.  Rerun the Content Search. The search results should include all OneNote files for the Class Notebook from the class team.
 
-#### Microsoft To-Do
+#### Microsoft To Do
 
-Tasks (called *to-dos*, which are saved in *to-do lists*) in Microsoft To-Do are saved as tasks in a user’s Exchange Online mailbox. That means that you can use the Content Search tool to search, access, delete, and export to-dos. For more information, see [Set up Microsoft To-Do](https://support.office.com/article/Set-up-Microsoft-To-Do-490c1a8c-2333-4952-8125-841afadb9620).
+Tasks (called *to-dos*, which are saved in *to-do lists*) in Microsoft To Do are saved as tasks in a user’s Exchange Online mailbox. That means that you can use the Content Search tool to search, access, delete, and export to-dos. For more information, see [Set up Microsoft To Do](https://support.office.com/article/Set-up-Microsoft-To-Do-490c1a8c-2333-4952-8125-841afadb9620).
 
 #### Skype for Business
 

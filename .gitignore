@@ -7,3 +7,6 @@ _repo.*/
 .vscode/
 
 .openpublishing.buildcore.ps1
+.vs/slnx.sqlite
+.vs/slnx.sqlite
+*.sqlite

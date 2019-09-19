@@ -1,9 +1,9 @@
 ---
-title: "Step 4: Configure secure user authenticationn"
+title: "Step 4: Configure secure user authentication"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/17/2019
+ms.date: 09/06/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -31,7 +31,7 @@ With MFA, the second layer of security can be:
 - A personal and trusted device that isn’t easily spoofed or duplicated, such as a smart phone.
 - A biometric attribute, such as a fingerprint.
 
-You'll enable MFA and configure the secondary authentication method on a per-user account basis. Make sure to let users know that MFA is being enabled so they understand the requirements, such as mandatory use of a smart phone to sign in, and can sign in successfully.
+You'll enable MFA and configure the secondary authentication method with [conditional access policies](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted#enable-multi-factor-authentication-with-conditional-access), which allow you to use Azure Active Directory (Azure AD) groups to roll out MFA to specified sets of users, such as pilot users, geographical regions, or departments. Make sure to let your users know that MFA is being enabled so they understand the requirements, such as mandatory use of a smart phone to sign in, and can sign in successfully. 
 
 For more information, see [Plan for multi-factor authentication](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted).
 
@@ -46,7 +46,22 @@ For more information, see [Plan for multi-factor authentication](https://docs.mi
 
 As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria.md#crit-identity-mfa) for this section.
 
+<a name="identity-password-prot"></a>
+## Prevent bad passwords
 
+*This is optional and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
+
+To prevent users from creating easily determined password, use Azure AD password protection, which uses both a global banned password list and an optional custom banned password list that you specify. For example, you can specify terms that are specific to your organization, such as"
+
+- Brand names
+- Product names
+- Locations (for example, such as company headquarters)
+- Company-specific internal terms
+- Abbreviations that have specific company meaning.
+
+You can ban bad passwords [in the cloud](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad) and for your [on-premises Active Directory Domain Services (AD DS)](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad-on-premises).
+
+As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria.md#crit-password-prot) for this section.
 
 <a name="identity-ident-prot"></a>
 ## Protect against credential compromise
@@ -59,8 +74,8 @@ With Azure AD Identity Protection, you can:
 
 |||
 |:---------|:---------|
-|Determine and address potential vulnerabilities in your organization’s identities|Azure AD uses machine learning to detect anomalies and suspicious activity, such as sign-ins and post-sign-in activities. Using this data, Identity Protection generates reports and alerts that help you evaluate the issues and take action.|
-|Detect suspicious actions that are related to your organization’s identities and respond to them automatically|You can configure risk-based policies that automatically respond to detected issues when a specified risk level has been reached. These policies, in addition to other conditional access controls provided by Azure Active Directory and Microsoft Intune, can either automatically block access or take corrective actions, including password resets and requiring multi-factor authentication for subsequent sign-ins.|
+|Determine and address potential vulnerabilities in your organization’s identities|Azure AD uses machine learning to detect anomalies and suspicious activity, such as sign-ins and post-sign-in activities. Using this data, Azure AD Identity Protection generates reports and alerts that help you evaluate the issues and take action.|
+|Detect suspicious actions that are related to your organization’s identities and respond to them automatically|You can configure risk-based policies that automatically respond to detected issues when a specified risk level has been reached. These policies, in addition to other conditional access controls provided by Azure AD and Microsoft Intune, can either automatically block access or take corrective actions, including password resets and requiring multi-factor authentication for subsequent sign-ins.|
 |Investigate suspicious incidents and resolve them with administrative actions|You can investigate risk events using information about the security incident. Basic workflows are available to track investigations and initiate remediation actions, such as password resets.|
 
 See [more information about Azure AD Identity Protection](https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection).
@@ -101,8 +116,6 @@ The **Sign-ins activity report** records who performed the tasks reported by the
 For more information about the reports and how to access them, see [Azure Active Directory reporting](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-azure-portal).
 
 As a result of this step, you'll gain awareness of these reports and an understanding of how you can use them to gain insights on Azure AD events and activities for planning and security purposes.
-
-
 
 ## Next step
 

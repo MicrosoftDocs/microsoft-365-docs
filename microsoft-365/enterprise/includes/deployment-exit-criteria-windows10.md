@@ -83,10 +83,10 @@ You deployed Windows Defender Exploit Guard to protect your devices running Wind
 If needed, [Step 5](../windows10-enable-security-features.md#windows10-sec-eg) can help you with this requirement.
 
 <a name="crit-windows10-step5c"></a>
-### Required: You are using Windows Defender Advanced Threat Protection (Microsoft 365 Enterprise E5 only)
+### Required: You are using Microsoft Defender Advanced Threat Protection (Microsoft 365 Enterprise E5 only)
 
-You deployed Windows Defender Advanced Threat Protection (ATP) to detect, investigate, and respond to advanced threats against your network and devices running Windows 10 Enterprise. 
+You deployed Microsoft Defender Advanced Threat Protection (ATP) to detect, investigate, and respond to advanced threats against your network and devices running Windows 10 Enterprise. 
 
-Optionally, you have integrated Windows Defender ATP with other tools to expand its capabilities.
+Optionally, you have integrated Microsoft Defender ATP with other tools to expand its capabilities.
 
 If needed, [Step 5](../windows10-enable-security-features.md#windows10-sec-atp) can help you with this requirement.
