@@ -21,24 +21,6 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
-  - title: Manage insider risks
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Protect user and device access
-            url: protect-access-to-data-and-services.md
-          - text: Privileged access management
-            url: privileged-access-management-overview.md
-          - text: Customer Lockbox
-            url: customer-lockbox-requests.md
-          - text: Supervise communications
-            url: xxxx
-          - text: Information barriers
-            url: information-barriers.md
-          - text: Customer Key
-            url: controlling-your-data-using-customer-key.md
-  
-  # Card (optional)
   - title: Protect information
     linkLists:
       - linkListType: overview
@@ -52,7 +34,7 @@ landingContent:
           - text: Sensitive information types
             url: custom-sensitive-info-types.md
           - text: Email encryption
-            url: email-encryption.md
+            url: email-encryption.md  
 
   # Card
   - title: Manage information governance
@@ -72,6 +54,24 @@ landingContent:
           - text: View data governance reports
             url: view-the-data-governance-reports.md
 
+# Card (optional)
+  - title: Manage insider risks
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Protect user and device access
+            url: protect-access-to-data-and-services.md
+          - text: Privileged access management
+            url: privileged-access-management-overview.md
+          - text: Customer Lockbox
+            url: customer-lockbox-requests.md
+          - text: Supervise communications
+            url: xxxx
+          - text: Information barriers
+            url: information-barriers.md
+          - text: Customer Key
+            url: controlling-your-data-using-customer-key.md
+
   # Card
   - title: Discover and respond
     linkLists:
@@ -86,19 +86,13 @@ landingContent:
           - text: Search the audit log
             url: search-the-audit-log-in-security-and-compliance.md
 
-  # Card
-  - title: Assess compliance risk
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Compliance Manager
-            url: compliance-manager-overview.md
-
     # Card
   - title: Get started with regulatory compliance
     linkLists:
       - linkListType: get-started
         links:
+          - text: Compliance Manager
+            url: compliance-manager-overview.md
           - text: GDPR compliance action plan
             url: gdpr-action-plan.md
           - text: Information protection for GDPR
