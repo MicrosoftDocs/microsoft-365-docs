@@ -3,7 +3,7 @@ title: "Step 5: Configure Office 365 Data Loss Prevention"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/25/2019
+ms.date: 09/19/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
