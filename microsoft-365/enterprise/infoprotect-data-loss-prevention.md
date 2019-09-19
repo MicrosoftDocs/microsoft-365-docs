@@ -51,9 +51,8 @@ As an interim checkpoint, see the [exit criteria](infoprotect-exit-criteria.md#c
 
 ## Next step
 
-
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step6.png)|[Configure privileged access management for Office 365](infoprotect-configure-privileged-access-management.md)|
+|![](./media/stepnumbers/Step6.png)|[Configure email encryption](infoprotect-email-encryption.md)|
 
 
