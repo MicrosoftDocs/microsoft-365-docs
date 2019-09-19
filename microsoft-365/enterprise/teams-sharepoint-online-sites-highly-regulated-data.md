@@ -141,7 +141,7 @@ Use the instructions in [Deploy an isolated SharePoint Online team site](https:/
 - Create and populate the access groups for each SharePoint permission level used on the site.
 - Create and configure the isolated team site.
 
-### Step 2: Configure the site for an Office 365 retention label DLP policy
+### Step 2: Configure the site for an Office 365 retention label
 
 Use the instructions in [Protect SharePoint Online files with Office 365 labels and DLP](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-office-365-labels-and-dlp) to:
 
