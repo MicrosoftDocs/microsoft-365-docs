@@ -99,16 +99,6 @@ landingContent:
             url: manage-data-spillage-incidents.md
           - text: Create a new investigation
             url: create-new-investigation.md
-              
-  # Card
-  - title: Assess compliance risk
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Compliance Manager
-            url: compliance-manager-overview.md
-          - text: Information protection for GDPR
-            url: office-365-info-protection-for-gdpr-overview.md
 
    # Card
   - title: Manage search and audit
@@ -120,13 +110,23 @@ landingContent:
           - text: Search the audit log
             url: search-the-audit-log-in-security-and-compliance.md
 
+  # Card
+  - title: Assess compliance risk
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Compliance Manager
+            url: compliance-manager-overview.md
+
     # Card
-  - title: Get started with regulatory compliance action plans
+  - title: Get started with regulatory compliance
     linkLists:
       - linkListType: get-started
         links:
           - text: GDPR compliance action plan
             url: gdpr-action-plan.md
+          - text: Information protection for GDPR
+            url: office-365-info-protection-for-gdpr-overview.md
           - text: ISO compliance action plan
             url: iso-action-plan.md
           - text: NIST compliance action plan
