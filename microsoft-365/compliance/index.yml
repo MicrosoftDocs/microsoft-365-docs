@@ -73,38 +73,14 @@ landingContent:
             url: view-the-data-governance-reports.md
 
   # Card
-  - title: Manage legal investigations
+  - title: Discover and respond
     linkLists:
       - linkListType: overview
         links:
-          - text: Manage legal investigations
-            url: manage-legal-investigations.md
           - text: Advanced eDiscovery
             url: overview-ediscovery-20.md
-          - text: Manage eDiscovery cases
-            url: ediscovery-cases.md
-          - text: Assign eDiscovery permissions
-            url: assign-ediscovery-permissions.md
-          - text: Create a litigation hold
-            url: create-a-litigation-hold.md
-  
-  # Card
-  - title: Manage data investigations
-    linkLists:
-      - linkListType: overview
-        links:
           - text: Manage a data investigation
             url: overview-data-investigations.md
-          - text: Manage a data spillage incident
-            url: manage-data-spillage-incidents.md
-          - text: Create a new investigation
-            url: create-new-investigation.md
-
-   # Card
-  - title: Manage search and audit
-    linkLists:
-      - linkListType: overview
-        links:
           - text: Search for content
             url: search-for-content.md
           - text: Search the audit log
