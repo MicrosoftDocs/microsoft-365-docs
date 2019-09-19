@@ -26,7 +26,7 @@ See [this article](https://docs.microsoft.com/azure/active-directory/governance/
 <a name="identity-access-reviews"></a>
 ## Set up Azure AD access reviews
 
-*This is optional and only applies to E5 version of Microsoft 365 Enterprise*
+*This is optional and only applies to the E5 version of Microsoft 365 Enterprise*
 
 In this step, you'll set up Azure AD access reviews, which allow you to review a user's access to ensure only the right people have continued access. For example:
 
