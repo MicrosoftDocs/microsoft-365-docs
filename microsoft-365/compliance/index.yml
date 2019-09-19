@@ -21,7 +21,7 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
-  - title: Protect user and device access
+  - title: Manage insider risks
     linkLists:
       - linkListType: overview
         links:
@@ -32,6 +32,8 @@ landingContent:
           - text: Configure privileged access management
             url: privileged-access-management-configuration.md
           - text: Customer Lockbox
+            url: customer-lockbox-requests.md
+          - text: Supervise communications
             url: customer-lockbox-requests.md
   
   # Card (optional)
@@ -50,8 +52,8 @@ landingContent:
           - text: Email encryption
             url: email-encryption.md
 
-  # Card (optional)
-  - title: Manage records
+  # Card
+  - title: Manage Information governance
     linkLists:
       - linkListType: overview
         links:
@@ -63,20 +65,6 @@ landingContent:
             url: labels.md
           - text: Event-based retention
             url: event-driven-retention.md
-
-  # Card
-  - title: Manage data governance
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Import data
-            url: importing-pst-files-to-office-365.md
-          - text: Store data
-            url: unlimited-archiving.md
-          - text: Retain data
-            url: retention-policies.md
-          - text: Supervise communications
-            url: supervision-policies.md
           - text: Inactive mailboxes
             url: inactive-mailboxes-in-office-365.md
           - text: View data governance reports
