@@ -35,7 +35,7 @@ Check back here monthly as more articles will be added over time.
 
 ## Detect and remediate articles
 
-- [Detect and Remediate Illicit Consent Grants in Office 365](https://docs.microsoft.com/en-us/office365/securitycompliance/detect-and-remediate-illicit-consent-grants)
+- [Detect and Remediate Illicit Consent Grants in Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/detect-and-remediate-illicit-consent-grants)
 - [Detect and Remediate Outlook Rules and Custom Forms Injections Attacks in Office 365](https://docs.microsoft.com/en-us/office365/securitycompliance/detect-and-remediate-outlook-rules-forms-attack)
  
 ## Incident response articles

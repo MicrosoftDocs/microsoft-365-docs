@@ -212,5 +212,5 @@ There isn't a report that shows if an encrypted message has been viewed, but the
   
  **Q. What does Microsoft do with the information I provide through the OME Portal and the OME Viewer App?**
   
-The [Office 365 Messaging Encryption Portal privacy statement](protected-message-viewer-portal-privacy-statement.md) provides detailed information about what Microsoft does and doesn't do with your private information.
+The [Office 365 Messaging Encryption Portal privacy statement](https://privacy.microsoft.com/en-US/privacystatement) provides detailed information about what Microsoft does and doesn't do with your private information.
  
