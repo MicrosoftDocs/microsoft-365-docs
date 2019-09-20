@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Records management in Microsoft 365"
 ms.author: stephow
 author: stephow-MSFT
