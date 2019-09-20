@@ -34,7 +34,7 @@ Complete the steps below to make your Windows 10 devices Hybrid Azure AD joined 
   
 1. **Prepare for Directory Synchronization**: Before you synchronize your users and computers from the local Active Directory Domain, review [Prepare for directory synchronization to Office 365](https://docs.microsoft.com/office365/enterprise/prepare-for-directory-synchronization). In particular:
 
-   - Ensure that no duplicates exist among your directory for the following attributes: **mail**, **proxyAddresses**, and **userPrincipalName**. These values should be unique and any duplicates should be removed as necessary.
+   - Ensure that no duplicates exist in your directory for the following attributes: **mail**, **proxyAddresses**, and **userPrincipalName**. These values should be unique and any duplicates should be removed..
    
    - We recommended that the **userPrincipalName** (UPN) attribute for each local user account is configured to match the primary email address that corresponds to the licensed Microsoft 365 user. For example **mary.shelley@contoso.com** rather than **mary@contoso.local**
    
