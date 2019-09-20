@@ -9,6 +9,7 @@
 #### [Step 4: Configure traffic bypass](networking-configure-proxies-firewalls.md)
 #### [Step 5: Optimize client and Office 365 service performance](networking-optimize-tcp-performance.md)
 #### [Networking exit criteria](networking-exit-criteria.md)
+### [Phase 2: Identity](identity-infrastructure.md)
 #### [Step 1: Create and protect your global admin accounts](identity-create-protect-global-admins.md)
 #### [Step 2: Secure your passwords](identity-secure-your-passwords.md)
 #### [Step 3: Secure and manage your user sign-ins](identity-secure-user-sign-ins.md)
