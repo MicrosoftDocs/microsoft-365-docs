@@ -85,8 +85,8 @@ In time you should see the:
 
 See these steps in the Identity phase for information and links to deploy dynamic group membership and automatic licensing in production:
 
-- [Set up automatic licensing](identity-self-service-group-management.md#identity-group-license)
-- [Set up dynamic group membership](identity-self-service-group-management.md#identity-dyn-groups)
+- [Set up automatic licensing](identity-use-group-management.md#identity-group-license)
+- [Set up dynamic group membership](identity-use-group-management.md#identity-dyn-groups)
 
 ## Next step
 
