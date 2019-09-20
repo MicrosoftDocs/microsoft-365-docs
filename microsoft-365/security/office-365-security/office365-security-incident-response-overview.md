@@ -33,10 +33,7 @@ This series of article helps you understand what a particular type of attack mig
 
 Check back here monthly as more articles will be added over time.
 
-## Detect and remediate articles
 
-- [Detect and Remediate Illicit Consent Grants in Office 365](detect-and-remediate-illicit-consent-grants.md)
-- [Detect and Remediate Outlook Rules and Custom Forms Injections Attacks in Office 365](detect-and-remediate-outlook-rules-forms-attack.md)
  
 ## Incident response articles
 
