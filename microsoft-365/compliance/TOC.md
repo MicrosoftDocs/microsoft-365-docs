@@ -78,22 +78,6 @@
 #### [Legacy information for Office 365 Message Encryption](legacy-information-for-message-encryption.md)
 #### [Set up Azure Rights Management for the previous version of Office 365 Message Encryption](set-up-azure-rms-for-previous-version-message-encryption.md)
 
-# Records management
-## [Records management](records-management.md)
-## File plan
-### [File plan manager](file-plan-manager.md)
-### [Retention labels](labels.md)
-### [Create and publish retention labels by using PowerShell](https://docs.microsoft.com/en-us/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
-### [View label usage with label analytics](label-analytics.md)
-### [View label activity for documents](view-label-activity-for-documents.md)
-### [View the data governance reports](view-the-data-governance-reports.md)
-## Events
-### [Event-based retention](event-driven-retention.md)
-### [Automate event-based retention](automate-event-driven-retention.md)
-## [Disposition](disposition-reviews.md)
-## More about records management
-### [Watch videos about records management](https://go.microsoft.com/fwlink/?linkid=867039)
-
 # Manage information governance
 ## [Import data](importing-pst-files-to-office-365.md)
 ### [Use network upload to import PST files](use-network-upload-to-import-pst-files.md)
@@ -134,6 +118,21 @@
 ### [View the data governance reports](view-the-data-governance-reports.md)
 ## More information about data governance
 ### [Watch videos from the Microsoft Data Governance team](https://go.microsoft.com/fwlink/?linkid=867039)
+## Records management
+### [Records management](records-management.md)
+### File plan
+#### [File plan manager](file-plan-manager.md)
+#### [Retention labels](labels.md)
+#### [Create and publish retention labels by using PowerShell](https://docs.microsoft.com/en-us/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
+#### [View label usage with label analytics](label-analytics.md)
+#### [View label activity for documents](view-label-activity-for-documents.md)
+#### [View the data governance reports](view-the-data-governance-reports.md)
+### Events
+#### [Event-based retention](event-driven-retention.md)
+#### [Automate event-based retention](automate-event-driven-retention.md)
+### [Disposition](disposition-reviews.md)
+### More about records management
+#### [Watch videos about records management](https://go.microsoft.com/fwlink/?linkid=867039)
 
 # [Search for content](search-for-content.md)
 ## [Use Content Search](content-search.md)
@@ -347,7 +346,7 @@
 ## [Use sharing auditing in the audit log](use-sharing-auditing.md)
 ## [Search for eDiscovery activities in the audit log](search-for-ediscovery-activities-in-the-audit-log.md)
 
-# Assess compliance risks
+# Manage compliance risks
 ## [Microsoft Service Trust Portal](get-started-with-service-trust-portal.md)
 ## [Compliance Manager (Classic)](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
 ## [Compliance Manager (Preview)](compliance-manager-overview.md)
