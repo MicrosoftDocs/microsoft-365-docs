@@ -54,9 +54,9 @@ The Security &amp; Compliance Center gives you a single view into the controls y
   
 - [Go to the Office 365 Security &amp; Compliance Center](go-to-the-securitycompliance-center.md)
     
-- [Permissions in the Office 365 Security &amp; Compliance Center](protect-against-threats.md)
+- [Permissions in the Office 365 Security &amp; Compliance Center](/security/office-365-security/protect-against-threats.md)
     
-- [Give users access to the Office 365 Security &amp; Compliance Center](grant-access-to-the-security-and-compliance-center.md)
+- [Give users access to the Office 365 Security &amp; Compliance Center](/security/office-365-security/grant-access-to-the-security-and-compliance-center.md)
     
 ## Step 6: Use end-to-end security scenarios as starting points
 
