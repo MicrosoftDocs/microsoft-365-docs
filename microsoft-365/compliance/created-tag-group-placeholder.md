@@ -51,7 +51,7 @@ Once inside the tag management, tags can be created to meet the requirements of 
 
 |                                                                                                                             |                                                                                                                                         |
 | --------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| ![](../media/ED-tipicon.png)Tip | Option tags will force users to select one tag from a group of tags. Check box tags will allow users to select any combination of tags. |
+| ![](media/ED-tipicon.png)Tip | Option tags will force users to select one tag from a group of tags. Check box tags will allow users to select any combination of tags. |
 
 ## Nested tags
 
