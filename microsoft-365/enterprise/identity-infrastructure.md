@@ -23,6 +23,8 @@ In Microsoft 365 Enterprise, a well-planned and executed identity infrastructure
 
 Watch this video for an overview of identity models and authentication for Microsoft 365 Enterprise.
 
+<p> </p>
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2Pjwu]
 
 >[!Note]
