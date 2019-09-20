@@ -18,7 +18,7 @@ description: Understand and configure privileged access management for Office 36
 
 # Step 6: Configure email encryption
 
-*This step is optional and applies only to the E5 and Advanced Compliance versions of Microsoft 365 Enterprise*
+*This step is optional and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
 
 ![](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
