@@ -1,4 +1,4 @@
-# [Microsoft 365 Security](index.yml)
+# [Microsoft 365 security](index.yml)
 
 ## Microsoft Threat Protection
 ### [Overview]()
