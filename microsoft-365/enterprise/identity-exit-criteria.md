@@ -105,7 +105,7 @@ You used [Plan for Azure Multi-Factor Authentication](https://docs.microsoft.com
 
 If you skip this option, your user accounts are vulnerable to credential compromise by cyber attackers. If a user account’s password is compromised, all the resources and capabilities of the account, such as administrator roles, are available to the attacker. This allows the attacker to copy, destroy, or hold for ransom internal documents and other data.
 
-If needed, [Step 3](identity-secure-your-passwords.md#identity-mfa) can help you with this option.
+If needed, [Step 3](identity-secure-user-sign-ins.md#identity-mfa) can help you with this option.
 
 ### How to test
 
@@ -126,7 +126,7 @@ You've enabled Azure AD Identity Protection to:
 
 If you skip this option, you won’t be able to detect or automatically thwart credential compromise attempts or investigate identity-related security incidents. This potentially leaves your organization vulnerable to a successful credential compromise and the resulting threat to your organization’s sensitive data.
 
-If needed, [Step 3](identity-secure-your-passwords.md#identity-ident-prot) can help you with this option.
+If needed, [Step 3](identity-secure-user-sign-ins.md#identity-ident-prot) can help you with this option.
 
 
 ### How to test
