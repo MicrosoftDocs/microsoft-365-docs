@@ -51,6 +51,8 @@ The first decision in your hybrid identity solution is your authentication requi
 
 Watch this video for an overview of identity models and authentication for Microsoft 365 Enterprise.
 
+<p> </p>
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2Pjwu]
 
 After you've determined your hybrid identity solution, download and run the [IdFix Directory Synchronization Error Remediation Tool](https://www.microsoft.com/download/details.aspx?id=36832) to analyze your AD DS for issues.
