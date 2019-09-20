@@ -43,12 +43,12 @@ Use the following steps to plan and deploy your new identity infrastructure in t
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step1.png)| [Create and protect your global admin accounts](_identity-create-protect-global-admins.md) |
-|![](./media/stepnumbers/Step2.png)| [Secure your passwords](_identity-secure-your-passwords.md) |
-|![](./media/stepnumbers/Step3.png)| [Secure and manage your user sign-ins](_identity-secure-user-sign-ins.md) |
-|![](./media/stepnumbers/Step4.png)| [Add your user accounts](_identity-add-user-accounts.md) |
-|![](./media/stepnumbers/Step5.png)| [Use groups for management](_identity-use-group-management.md) |
-|![](./media/stepnumbers/Step6.png)| [Configure identity governance](configure-identity-governance.md) |
+|![](./media/stepnumbers/Step1.png)| [Create and protect your global admin accounts](identity-create-protect-global-admins.md) |
+|![](./media/stepnumbers/Step2.png)| [Secure your passwords](identity-secure-your-passwords.md) |
+|![](./media/stepnumbers/Step3.png)| [Secure and manage your user sign-ins](identity-secure-user-sign-ins.md) |
+|![](./media/stepnumbers/Step4.png)| [Add your user accounts](identity-add-user-accounts.md) |
+|![](./media/stepnumbers/Step5.png)| [Use groups for management](identity-use-group-management.md) |
+|![](./media/stepnumbers/Step6.png)| [Configure identity governance](identity-configure-identity-governance.md) |
 
 When you've completed these steps, go to the [exit criteria](identity-exit-criteria.md) for this phase to ensure that you meet the required and optional conditions for Microsoft 365 Enterprise identity.
 
@@ -74,4 +74,4 @@ See how the Contoso Corporation, a fictional but representative multi-national b
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step1.png)| [Create and protect your global admin accounts](_identity-create-protect-global-admins.md) |
+|![](./media/stepnumbers/Step1.png)| [Create and protect your global admin accounts](identity-create-protect-global-admins.md) |

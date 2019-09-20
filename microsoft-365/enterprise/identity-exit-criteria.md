@@ -278,7 +278,7 @@ You have used these articles to configure different types of access reviews to m
 - [Azure AD roles](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-how-to-start-security-review?toc=%2fazure%2factive-directory%2fgovernance%2ftoc.json)
 - [Azure resource roles](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-resource-roles-start-access-review?toc=%2fazure%2factive-directory%2fgovernance%2ftoc.json)
 
-If needed, [Step 6](configure-identity-governance.md#identity-access-reviews) can help you with this option.
+If needed, [Step 6](identity-configure-identity-governance.md#identity-access-reviews) can help you with this option.
 
 
 ## Results and next steps

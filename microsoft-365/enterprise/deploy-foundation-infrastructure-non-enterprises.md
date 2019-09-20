@@ -58,9 +58,9 @@ Each of the employees of your organization must be able to sign in, which requir
 
 ### Administrator accounts
 
-Protect your global administrator user accounts by requiring very strong passwords and multi-factor authentication (MFA). See [Protect global administrator accounts](identity-create-protect-global-admins.md#protect-global-administrator-accounts) for more information.
+Protect your global administrator user accounts by requiring strong passwords and multi-factor authentication (MFA). See [Protect global administrator accounts](identity-create-protect-global-admins.md#protect-global-administrator-accounts) for more information.
 
-If your organization requires high security and you have Microsoft 365 Enterprise E5, use Azure AD Privileged Identity Management to enable just-in-time administrator access. See [Set up on-demand global administrators](identity-create-protect-global-admins.md#set-up-on-demand-global-administrators) for more information.
+If your organization requires high security and you have Microsoft 365 Enterprise E5, use Azure AD Privileged Identity Management to enable just-in-time administrator access. See [Set up on-demand global administrators](identity-create-protect-global-admins.md#identity-pim) for more information.
 
 ### Recommendations for groups
 

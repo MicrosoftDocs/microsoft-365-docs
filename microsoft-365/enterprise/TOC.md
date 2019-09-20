@@ -14,7 +14,7 @@
 #### [Step 3: Secure and manage your user sign-ins](identity-secure-user-sign-ins.md)
 #### [Step 4: Add your user accounts](identity-add-user-accounts.md)
 #### [Step 5: Use groups for management](identity-use-group-management.md)
-#### [Step 6: Configure identity governance](configure-identity-governance.md)
+#### [Step 6: Configure identity governance](identity-configure-identity-governance.md)
 #### [Identity exit criteria](identity-exit-criteria.md)
 ### [Phase 3: Windows 10 Enterprise](windows10-infrastructure.md)
 #### [Step 1: Prepare your organization](windows10-prepare-your-org.md)

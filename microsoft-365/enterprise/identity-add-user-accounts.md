@@ -119,4 +119,4 @@ As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step5.png)| [Use groups for management](_identity-use-group-management.md) |
+|![](./media/stepnumbers/Step5.png)| [Use groups for management](identity-use-group-management.md) |
