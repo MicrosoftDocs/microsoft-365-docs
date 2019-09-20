@@ -36,7 +36,7 @@ Complete the steps below to make your Windows 10 devices Hybrid Azure AD joined 
 
    - Ensure that no duplicates exist among your directory for the following attributes: **mail**, **proxyAddresses**, and **userPrincipalName**. These values should be unique and any duplicates should be removed as necessary.
    
-   - It is recommended that the **userPrincipalName** (UPN) attribute for each local user account be configured to match the primary email address that corresponds to the licensed Microsoft 365 user. For example **mary.shelley@contoso.com** rather than **mary@contoso.local**
+   - We recommended that the **userPrincipalName** (UPN) attribute for each local user account is configured to match the primary email address that corresponds to the licensed Microsoft 365 user. For example **mary.shelley@contoso.com** rather than **mary@contoso.local**
    
    - If the Active Directory domain ends in a non-routable suffix like **.local** or **.lan**, instead of an internet routable suffix such as **.com** or **.org**, you will need to adjust the UPN suffix of the local user accounts first as described in [Prepare a non-routable domain for directory synchronization](https://docs.microsoft.com/office365/enterprise/prepare-a-non-routable-domain-for-directory-synchronization). 
 
