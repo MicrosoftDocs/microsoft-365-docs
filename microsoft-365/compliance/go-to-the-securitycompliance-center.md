@@ -22,7 +22,7 @@ Before you can use the Security & Compliance Center, you need the right permissi
   
 - For more information about the Office 365 global administrator role, see [About Office 365 admin roles](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d). 
 
-- For information on assigning Security & Compliance Center roles to other users, see [Give users access to the Security & Compliance Center](grant-access-to-the-security-and-compliance-center.md).
+- For information on assigning Security & Compliance Center roles to other users, see [Give users access to the Security & Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
 
 > [!NOTE]
 > Delegated Access Permission (DAP) partners with Administer On Behalf Of (AOBO) permissions can't access the Security & Compliance Center.

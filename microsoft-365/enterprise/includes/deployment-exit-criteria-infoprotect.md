@@ -60,10 +60,24 @@ Your data compliance and security staff are using the Office 365 Security & Comp
 
 If needed, [Step 5](../infoprotect-data-loss-prevention.md) can help you meet this requirement. 
 
-
 <a name="crit-infoprotect-step6"></a>
+### Optional: Email encryption is configured
+
+You've configured the following email encryption as needed for your organization:
+
+|||
+|:-------|:-----|
+| **Encryption method** | **For email sent** |
+| [Office 365 Message Encryption (OME)](https://docs.microsoft.com/Office365/SecurityCompliance/ome)  | Outside your organization with encryption |
+| [Information Rights Management (IRM)](https://docs.microsoft.com/office365/SecurityCompliance/information-rights-management-in-exchange-online) | With both encryption and permissions |
+| [Secure/Multipurpose Internet Mail Extensions (S/MIME)](https://docs.microsoft.com/Exchange/policy-and-compliance/smime) | With both encryption and digital signatures using public key cryptography |
+|||
+
+If needed, [Step 6](../infoprotect-email-encryption.md) can help you meet this requirement.
+
+<a name="crit-infoprotect-step7"></a>
 ### Optional: Configure privileged access management in Office 365
 
 You've used the information in the [Configure privileged access management in Office 365](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration) topic to enable privileged access and create one or more privileged access policies in your organization. You've configured these policies and just-in-time access is enabled for access to sensitive data or access to critical configuration settings.
 
-If needed, [Step 6](../infoprotect-configure-privileged-access-management.md) can help you meet this requirement. 
+If needed, [Step 7](../infoprotect-configure-privileged-access-management.md) can help you meet this requirement. 

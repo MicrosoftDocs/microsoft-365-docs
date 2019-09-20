@@ -54,7 +54,7 @@ Here's the workflow for using Data Investigations (Preview) to manage a data spi
 
 - To create a data investigation, search for content, and delete spilled data, you have to be a member of the Data Investigator role group in the Security & Compliance Center.
 
-- To control which user mailboxes and OneDrive accounts an investigator can search, your organization can set up compliance boundaries. For more information, [Set up compliance boundaries for eDiscovery investigations](../set-up-compliance-boundaries.md). 
+- To control which user mailboxes and OneDrive accounts an investigator can search, your organization can set up compliance boundaries. For more information, [Set up compliance boundaries for eDiscovery investigations](tagging-and-assessment-in-advanced-ediscovery.md). 
 
 ## Step 1: Create a data investigation
 
@@ -109,7 +109,7 @@ To group documents and get more assistance for your review, click **Manage evide
 - [Email threading](email-threading.md)
 - [Themes](themes.md)
 
-To determine which users are involved in the data spillage, you can create a query in the evidence set and then use the Sender/Author and Recipients conditions. This creates a list of all senders, recipients, and authors found in collected data that was added to the evidence. Be sure to examine the list to determine if there are any external users. For more information about using conditions to narrow search results, see [Search conditions](../keyword-queries-and-search-conditions.md#search-conditions).
+To determine which users are involved in the data spillage, you can create a query in the evidence set and then use the Sender/Author and Recipients conditions. This creates a list of all senders, recipients, and authors found in collected data that was added to the evidence. Be sure to examine the list to determine if there are any external users. For more information about using conditions to narrow search results, see [Search conditions](keyword-queries-and-search-conditions.md#search-conditions).
 
 ## Step 4: Delete the spilled data
 

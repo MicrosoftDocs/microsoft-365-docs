@@ -59,7 +59,7 @@ Use the following workflow to remediate files with errors in Data Investigations
     ![Preparing error remediation](media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)
 
     > [!NOTE]
-    > If you have issues running this command, see [Troubleshoot AzCopy in Advanced eDiscovery](../compliance20/troubleshooting-azcopy.md).
+    > If you have issues running this command, see [Troubleshoot AzCopy in Advanced eDiscovery](troubleshooting-azcopy.md).
 
 7. After downloading the files, you can remediate them with an appropriate tool. For password protected files, there are several password cracking tools you can use. If you know the passwords for the files, you can open them and remove the password protection.
     

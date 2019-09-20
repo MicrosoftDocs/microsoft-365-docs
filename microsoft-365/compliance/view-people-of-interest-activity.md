@@ -96,4 +96,4 @@ You can export the results of an audit log search to a comma separated value (CS
 
 3. After you select an export option, a message is displayed at the bottom of the window that prompts you to open the CSV file, save it to the Downloads folder, or save it to a specific folder
 
-For more information about viewing, filtering, or exporting audit log search results, see [Search the audit log in the Office 365](../search-the-audit-log-in-security-and-compliance.md).
+For more information about viewing, filtering, or exporting audit log search results, see [Search the audit log in the Office 365](search-the-audit-log-in-security-and-compliance.md).

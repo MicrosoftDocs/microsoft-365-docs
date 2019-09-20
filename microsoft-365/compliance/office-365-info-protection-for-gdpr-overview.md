@@ -47,9 +47,9 @@ For more information, see [Use Compliance Manager in the Service Trust Portal](h
 
 Discover personal data in your environment that is subject to the GDPR. Use Content Search together with sensitive information types to:
 
--   Find and report on where personal data resides.
+- Find and report on where personal data resides.
 
--   Optimize sensitive data types and other queries to find all personal data in your environment.
+- Optimize sensitive data types and other queries to find all personal data in your environment.
 
 ![Use Content Search and sensitive info types to find personal data](Media/Overview-image2.png)
 
@@ -77,22 +77,22 @@ Protection for personal data starts with Office 365 data loss prevention. There 
 
 These protections can be targeted to specific data sets:
 
--   Site and library-level permissions
+- Site and library-level permissions
 
--   Site-level external sharing policies
+- Site-level external sharing policies
 
--   Site-level device access policies
+- Site-level device access policies
 
 Protection for access to Office 365 and other cloud services include:
 
--   Identity and device access protection in Enterprise Mobility + Security (EMS)
+- Identity and device access protection in Enterprise Mobility + Security (EMS)
 
--   Privileged access management
+- Privileged access management
 
--   Windows 10 security capabilities
+- Windows 10 security capabilities
 
 For more information about applying proteciton, see [Apply protection to personal data in Office 365](apply-protection-to-personal-data-in-office-365.md).
 
 ### Step 5 — Monitor for leaks of personal data
 
-Office 365 data loss prevention reports provide the greatest level of detail for monitoring sensitive data. You can setup automated alerts and investigate breaches by using the Office 365 audit log. Cloud App Security extends the ability to find and monitor sensitive data to other SaaS providers. For more information on these tools, see [Monitor for breaches of personal data](monitor-for-leaks-of-personal-data.md).
+Office 365 data loss prevention reports provide the greatest level of detail for monitoring sensitive data. You can setup automated alerts and investigate breaches by using the Office 365 audit log. Cloud App Security extends the ability to find and monitor sensitive data to other SaaS providers. For more information on these tools, see [Monitor for breaches of personal data](/security/office-365-security/monitor-for-leaks-of-personal-data.md).
