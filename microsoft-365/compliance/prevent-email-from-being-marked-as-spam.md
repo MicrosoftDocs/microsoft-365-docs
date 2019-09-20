@@ -20,7 +20,7 @@ description: "Learn how to prevent False Positives and keep real email out of ju
 
  **Is your real email getting marked as spam in Office 365? Do this.**
   
-If you get a false positive, you should report the message to Microsoft by using the [Use the Report Message add-in](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2). Additionally, you can submit the message using [Submissions Explorer](admin-submission.md).
+If you get a false positive, you should report the message to Microsoft by using the [Use the Report Message add-in](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2). Additionally, you can submit the message using [Submissions Explorer](/security/office-365-security/admin-submission.md).
     
 ## Determine the reason why the message was marked as spam
 
@@ -54,13 +54,13 @@ In order to work effectively, Exchange Online Protection (EOP) requires that adm
 
 - **Point your DNS records to Office 365** In order for EOP to provide protection, your mail exchanger (MX) DNS record(s) for all domains must be pointed to Office 365 -- and only to Office 365. If your MX does not point to Office 365, then EOP will not provide spam filtering for your users. In the situation where you wish to use another service or appliance to provide spam filtering for your domain, you should consider disabling the spam protection in EOP. You can do this by creating a mail flow rule that sets the SCL value to -1. If you later decide to use EOP, make sure to remove this mail flow rule. 
     
-- **Turn on the report message add-in for users** We strongly recommend that you [enable the report message add-in for you users](enable-the-report-message-add-in.md).
+- **Turn on the report message add-in for users** We strongly recommend that you [enable the report message add-in for you users](/security/office-365-security/enable-the-report-message-add-in.md).
 
-- **Use [Submissions Explorer](admin-submission.md)** Admins can now send emails by using file or network message ID, URLs, and files for scanning by Microsoft in Office 365. As an administrator, you may also be able to view the feedback your users are sending and use any patterns to adjust any settings that may be causing problems.
+- **Use [Submissions Explorer](/security/office-365-security/admin-submission.md)** Admins can now send emails by using file or network message ID, URLs, and files for scanning by Microsoft in Office 365. As an administrator, you may also be able to view the feedback your users are sending and use any patterns to adjust any settings that may be causing problems.
 
 - **Make sure that your users are inside the allowed limits** for sending and receiving emails as showed [here](https://docs.microsoft.com/en-us/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits).
 
- - **Double-check the bulk levels** as specified [here](bulk-complaint-level-values.md)
+ - **Double-check the bulk levels** as specified [here](/security/office-365-security/bulk-complaint-level-values.md)
     
 ### For users
     
