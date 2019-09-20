@@ -34,7 +34,6 @@ This series of article helps you understand what a particular type of attack mig
 Check back here monthly as more articles will be added over time.
 
 
- 
 ## Incident response articles
 
 - [Responding to a Compromised Email Account in Office 365](/compliance/responding-to-a-compromised-email-account.md)
