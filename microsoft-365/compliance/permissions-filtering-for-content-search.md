@@ -36,7 +36,7 @@ Search permissions filtering is supported by the Content Search feature in the S
 
 ## Before you begin
 
-- To run the compliance security filter cmdlets, you have to be a member of the Organization Management role group in the Security & Compliance Center. For more information, see [Permissions in the Security & Compliance Center](protect-against-threats.md).
+- To run the compliance security filter cmdlets, you have to be a member of the Organization Management role group in the Security & Compliance Center. For more information, see [Permissions in the Security & Compliance Center](/security/office-365-security/protect-against-threats.md).
     
 - You have to connect Windows PowerShell to both the Security & Compliance Center and to your Exchange Online organization to use the compliance security filter cmdlets. This is necessary because these cmdlets require access to mailbox properties, which is why you have to connect to Exchange Online. See the steps in the next section. 
     
@@ -73,7 +73,7 @@ If you receive errors, check the following requirements:
   
 - A common problem is an incorrect password. Run the two steps again and pay close attention to the user name and password you enter in Step 1.
     
-- Verify that your account has permission to access the Security & Compliance Center. For details, see [Give users access to the Security & Compliance Center](grant-access-to-the-security-and-compliance-center.md).
+- Verify that your account has permission to access the Security & Compliance Center. For details, see [Give users access to the Security & Compliance Center](/security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
     
 - To help prevent denial-of-service (DoS) attacks, you're limited to three open remote PowerShell connections to the Security & Compliance Center.
     

@@ -54,7 +54,7 @@ Here's the workflow for using Data Investigations (Preview) to manage a data spi
 
 - To create a data investigation, search for content, and delete spilled data, you have to be a member of the Data Investigator role group in the Security & Compliance Center.
 
-- To control which user mailboxes and OneDrive accounts an investigator can search, your organization can set up compliance boundaries. For more information, [Set up compliance boundaries for eDiscovery investigations](../tagging-and-assessment-in-advanced-ediscovery.md). 
+- To control which user mailboxes and OneDrive accounts an investigator can search, your organization can set up compliance boundaries. For more information, [Set up compliance boundaries for eDiscovery investigations](tagging-and-assessment-in-advanced-ediscovery.md). 
 
 ## Step 1: Create a data investigation
 
