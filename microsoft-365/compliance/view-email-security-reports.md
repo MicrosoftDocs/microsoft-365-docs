@@ -209,23 +209,23 @@ In order to view and use the reports described in this article, **you must have 
 
 To learn more, see the following resources:
 
-- [Permissions in the Office 365 Security &amp; Compliance Center](protect-against-threats.md)
+- [Permissions in the Office 365 Security &amp; Compliance Center](/security/office-365-security/protect-against-threats.md)
 
 - [Feature permissions in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
    
    
 ## What if the reports aren't showing data?
 
-If you are not seeing data in your reports, double-check that your policies are set up correctly. To learn more, see [Protect against threats in Office 365](protect-against-threats.md).
+If you are not seeing data in your reports, double-check that your policies are set up correctly. To learn more, see [Protect against threats in Office 365](/security/office-365-security/protect-against-threats.md).
   
 ## Related topics
 
-[Office 365 Email Anti-Spam Protection](compliance/anti-spam-protection.md)
+[Office 365 Email Anti-Spam Protection](/security/office-365-security/anti-spam-protection.md)
   
-[Reports and insights in the Office 365 Security &amp; Compliance Center](compliance/reports-and-insights-in-security-and-compliance.md)
+[Reports and insights in the Office 365 Security &amp; Compliance Center](/security/office-365-security/reports-and-insights-in-security-and-compliance.md)
   
-[Create a schedule for a report in the Security &amp; Compliance Center](compliance/create-a-schedule-for-a-report.md)
+[Create a schedule for a report in the Security &amp; Compliance Center](/security/office-365-security/create-a-schedule-for-a-report.md)
   
-[Set up and download a custom report in the Security &amp; Compliance Center](compliance/set-up-and-download-a-custom-report.md)
+[Set up and download a custom report in the Security &amp; Compliance Center](/security/office-365-security/set-up-and-download-a-custom-report.md)
   
 
