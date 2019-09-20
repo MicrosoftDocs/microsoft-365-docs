@@ -63,7 +63,7 @@ Assessments include several components:
 
 ## Controls
 
-[Controls](working-with-compliance-manager#controls-and-actions.md) are compliance process containers in Compliance Manager that define how you manage compliance activities. These controls are organized into control families that align with the Assessment structure for corresponding certifications or regulations.
+[Controls](working-with-compliance-manager.md#controls-and-actions) are compliance process containers in Compliance Manager that define how you manage compliance activities. These controls are organized into control families that align with the Assessment structure for corresponding certifications or regulations.
 
 - **Control ID**: The name of the selected control from the corresponding certification or regulation.
 - **Control Title**: The title for the Control ID from the corresponding certification or regulation.
