@@ -88,7 +88,7 @@ With supervision policies, you can choose to monitor messages in one or more of 
 
     - **For Skype for Business Online chat supervision:** Assign individual users or assign a [distribution group](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) to the supervision policy. This is for 1-to-1 or 1-to-many user/chat relationships.
 
-- **Third-party sources:** You can supervise communications from third-party sources (like from Facebook or DropBox) for data imported into Office 365 mailboxes in your organization. [Learn how to import 3rd-party data into Office 365](archiving-third-party-data).
+- **Third-party sources:** You can supervise communications from third-party sources (like from Facebook or DropBox) for data imported into Office 365 mailboxes in your organization. [Learn how to import 3rd-party data into Office 365](archiving-third-party-data.md).
 
 Communications captured across these platforms are retained for seven years for each policy by default, even if users leave your organization and their mailbox is deleted.
 
