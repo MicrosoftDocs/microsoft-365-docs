@@ -23,7 +23,7 @@
 ### [Troubleshooting information barriers](information-barriers-troubleshooting.md)
 ### [Edit information barrier policies](information-barriers-edit-segments-policies.md.md)
 
-# [Protect information](protect-information.md)
+# [Manage information protection](protect-information.md)
 ## [Sensitivity labels](sensitivity-labels.md)
 ### [Restrict access to content by using encryption in sensitivity labels](encryption-sensitivity-labels.md)
 ### [Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md)
