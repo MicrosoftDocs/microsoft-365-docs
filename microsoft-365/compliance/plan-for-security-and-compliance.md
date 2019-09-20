@@ -30,7 +30,7 @@ Orient yourself to the information protection capabilities in the Information Pr
 
 After setting up your Office 365 subscription, take note of your starting score. Secure Score provides Office 365 configuration suggestions that you can take to increase your score. The goal is to be aware of opportunities that you can take to protect your environment which won't negatively affect the productivity of your users.
   
-- [Introducing the Office 365 Secure Score](compliance/microsoft-secure-score.md)
+- [Introducing the Office 365 Secure Score](../security/mtp/microsoft-secure-score.md)
     
 ## Step 3: Plan access protection for identity and devices
 
@@ -56,7 +56,7 @@ The Security &amp; Compliance Center gives you a single view into the controls y
     
 - [Permissions in the Office 365 Security &amp; Compliance Center](protect-against-threats.md)
     
-- [Give users access to the Office 365 Security &amp; Compliance Center](compliance/grant-access-to-the-security-and-compliance-center.md)
+- [Give users access to the Office 365 Security &amp; Compliance Center](grant-access-to-the-security-and-compliance-center.md)
     
 ## Step 6: Use end-to-end security scenarios as starting points
 

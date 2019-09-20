@@ -27,6 +27,6 @@ There are three ways to export data from a review set:
 
    - [Export documents from a review set](export-documents-from-review-set.md)
 
-   - [Download export jobs](compliance/download-export-jobs.md)
+   - [Download export jobs](download-export-jobs.md)
 
 **Add to another review set** – Use to copy data from one review set to a different review set. For more information, see [Add data from one review set to another review set](add-data-to-review-set-from-another-review-set.md). 

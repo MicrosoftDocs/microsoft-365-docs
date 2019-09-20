@@ -217,7 +217,7 @@ To view the value of the *ComplianceTagHoldApplied* property, run the following 
 Get-Mailbox <username> |FL ComplianceTagHoldApplied
 ```
 
-After you've identified that a mailbox is on hold because a retention label is applied to a folder or item, you can use the Content Search tool in the security and compliance center to search for labeled items by using the ComplianceTag search condition. For more information, see the "Search conditions" section in [Keyword queries and search conditions for Content Search](compliance/keyword-queries-and-search-conditions.md#conditions-for-common-properties).
+After you've identified that a mailbox is on hold because a retention label is applied to a folder or item, you can use the Content Search tool in the security and compliance center to search for labeled items by using the ComplianceTag search condition. For more information, see the "Search conditions" section in [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md#conditions-for-common-properties).
 
 For more information about labels, see [Overview of Office 365 labels](labels.md).
 

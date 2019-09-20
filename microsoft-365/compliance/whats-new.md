@@ -62,7 +62,7 @@ Pull up a chair, grab a cup of coffee, and let our latest compliance docs sweep 
 - [Use sharing auditing in the Office 365 audit log](use-sharing-auditing.md)
 - [Office 365 Management Activity API reference](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)
 - [Troubleshooting the Office 365 Management Activity API](https://docs.microsoft.com/office/office-365-management-api/troubleshooting-the-office-365-management-activity-api)
-- [Search the audit log in the Security & Compliance Center](compliance/search-the-audit-log-in-security-and-compliance.md)
+- [Search the audit log in the Security & Compliance Center](search-the-audit-log-in-security-and-compliance.md)
 
 **Encryption**
 - [Legacy information for Office 365 Message Encryption](legacy-information-for-message-encryption.md)

@@ -136,7 +136,7 @@ Understand that Asset ID is simply another document property in SharePoint and O
   
 Your organization might have applied other properties and IDs to the documents related to this event type. For example, if you need to detect a specific product's records, the ID might be a combination of your custom property ProductID and the value "XYZ". In this case, you'd enter ProductID:XYZ in the box for asset IDs shown below.
   
-For Exchange items, you can include keywords. You can refine your query by using search operators like AND, OR, and NOT. For more information on operators, see [Keyword queries and search conditions for Content Search](compliance/keyword-queries-and-search-conditions.md).
+For Exchange items, you can include keywords. You can refine your query by using search operators like AND, OR, and NOT. For more information on operators, see [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).
   
 Finally, choose the date when the event occurred; this date is used as the start of the retention period. After you create an event, that event date is synced to all of the content with a label of that event type, asset ID, and keywords. Like any label, this syncing can take up to 7 days.
   
@@ -152,13 +152,13 @@ When you create a content search:
     
 - To find all content with a specific asset ID, enter the **ComplianceAssetID** property and a value, like ComplianceAssetID:\<value\>. 
     
-For more information, see [Keyword queries and search conditions for Content Search](compliance/keyword-queries-and-search-conditions.md).
+For more information, see [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).
   
 ## Permissions
 
 To get access to the **Events** page, reviewers must be members of a role group with the **Disposition Management** role and the **View-Only Audit Logs** role. We recommend creating a new role group called Disposition Reviewers, adding these two roles to that role group, and then adding members to the role group. 
   
-For more information, see [Give users access to the Office 365 Security &amp; Compliance Center](compliance/grant-access-to-the-security-and-compliance-center.md).
+For more information, see [Give users access to the Office 365 Security &amp; Compliance Center](grant-access-to-the-security-and-compliance-center.md).
   
 ## Automate events by using PowerShell
 

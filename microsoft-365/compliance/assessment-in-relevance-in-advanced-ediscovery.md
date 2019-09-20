@@ -51,11 +51,11 @@ You can accept the Relevance recommendations or adjust the current margin of err
   
 [Tagging and Assessment](tagging-and-assessment-in-advanced-ediscovery.md)
   
-[Tagging and Relevance training](compliance/tagging-and-relevance-training-in-advanced-ediscovery.md)
+[Tagging and Relevance training](tagging-and-relevance-training-in-advanced-ediscovery.md)
   
-[Tracking Relevance analysis](compliance/track-relevance-analysis-in-advanced-ediscovery.md)
+[Tracking Relevance analysis](track-relevance-analysis-in-advanced-ediscovery.md)
   
-[Deciding based on the results](compliance/decision-based-on-the-results-in-advanced-ediscovery.md)
+[Deciding based on the results](decision-based-on-the-results-in-advanced-ediscovery.md)
   
-[Testing Relevance analysis](compliance/test-relevance-analysis-in-advanced-ediscovery.md)
+[Testing Relevance analysis](test-relevance-analysis-in-advanced-ediscovery.md)
 

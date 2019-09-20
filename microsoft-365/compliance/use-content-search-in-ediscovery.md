@@ -44,7 +44,7 @@ The first step is to use the Security & Compliance Center (or Security & Complia
     
 4. Under **Where do you want us to look?**, click **Search all mailboxes**, and then click **Next**.
     
-5. In the box under **What do you want us to look for?**, type a search query in the box. You can specify keywords, message properties such as sent and received dates, or document properties such as file names or the date that a document was last changed. You can use a more complex queries that use a Boolean operator, such as AND, OR, NOT or NEAR, or you can also search for sensitive information (such as social security numbers) in messages. For more information about creating search queries, see [Keyword queries for Content Search](compliance/keyword-queries-and-search-conditions.md).
+5. In the box under **What do you want us to look for?**, type a search query in the box. You can specify keywords, message properties such as sent and received dates, or document properties such as file names or the date that a document was last changed. You can use a more complex queries that use a Boolean operator, such as AND, OR, NOT or NEAR, or you can also search for sensitive information (such as social security numbers) in messages. For more information about creating search queries, see [Keyword queries for Content Search](keyword-queries-and-search-conditions.md).
     
 6. Click **Search** to save the search settings and start the search. 
     

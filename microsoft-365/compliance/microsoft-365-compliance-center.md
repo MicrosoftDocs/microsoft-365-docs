@@ -49,26 +49,26 @@ Each card has a link to a report or additional information where you can learn m
 
 ## The Respond section
 
-The **Respond** section on the home page surfaces [alerts](compliance/alerts.md) and [pending dispositions](disposition-reviews.md) that you'll want to review and potentially act upon.
+The **Respond** section on the home page surfaces [alerts](alerts.md) and [pending dispositions](disposition-reviews.md) that you'll want to review and potentially act upon.
 
 ![Respond section in the Microsoft 365 compliance center](media/m365-compliance-center-respond.png)
 
-Cards, such as the [Active alerts](compliance/alerts.md) card, include a link to a page where you can view more detailed information, such as Severity, Status, Category, and more.
+Cards, such as the [Active alerts](alerts.md) card, include a link to a page where you can view more detailed information, such as Severity, Status, Category, and more.
 
 ![Active alerts details](media/m365-compliance-center-alerts-details.png) 
 
 ## Easy navigation to more compliance features and capabilities
 
-In addition to links in cards on the home page, you'll find a navigation pane on the left side of the screen that gives you easy access to your [alerts](compliance/alerts.md), [reports](reports-in-security-and-compliance.md), [policies](alert-policies.md), compliance solutions, and more. 
+In addition to links in cards on the home page, you'll find a navigation pane on the left side of the screen that gives you easy access to your [alerts](alerts.md), [reports](reports-in-security-and-compliance.md), [policies](alert-policies.md), compliance solutions, and more. 
 
 |  |  |
 |---------|---------|
-|![Navigation in the Microsoft 365 compliance center](media/m365-compliance-center-leftnav.png)  |<br/><br/> Go to **Alerts** to view and resolve [alerts](compliance/alerts.md)<br/><br/>Visit **Reports** to view data about [label usage and retention](sensitivity-labels.md), [DLP policy matches and overrides](view-the-dlp-reports.md), [shared files](https://docs.microsoft.com/cloud-app-security/file-filters), [third-party apps in use](https://docs.microsoft.com/cloud-app-security/discovered-apps), and more.<br/><br/>Expand the **Classification** section to access your [labels](labels.md), [label policies](sensitivity-labels.md#what-label-policies-can-do), [sensitive information types](what-the-sensitive-information-types-look-for.md), and [label analytics](view-label-activity-for-documents.md).<br/><br/>Go to **Policies** to view [alerts](compliance/alerts.md) and to access your [DLP](data-loss-prevention-policies.md) and [retention](retention-policies.md) policies.<br/><br/> Use the links in the **Solutions** section to access your organization's compliance solutions. These include: <br/>[Data governance > Dispositions](disposition-reviews.md)<br/>[eDiscovery](compliance/overview-ediscovery-20.md)<br/>[Supervision](supervision-policies.md)<br/>[Data investigations](datainvestigations/compliance/overview-data-investigations.md)<br/>[Data subject requests](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)        |
+|![Navigation in the Microsoft 365 compliance center](media/m365-compliance-center-leftnav.png)  |<br/><br/> Go to **Alerts** to view and resolve [alerts](alerts.md)<br/><br/>Visit **Reports** to view data about [label usage and retention](sensitivity-labels.md), [DLP policy matches and overrides](view-the-dlp-reports.md), [shared files](https://docs.microsoft.com/cloud-app-security/file-filters), [third-party apps in use](https://docs.microsoft.com/cloud-app-security/discovered-apps), and more.<br/><br/>Expand the **Classification** section to access your [labels](labels.md), [label policies](sensitivity-labels.md#what-label-policies-can-do), [sensitive information types](what-the-sensitive-information-types-look-for.md), and [label analytics](view-label-activity-for-documents.md).<br/><br/>Go to **Policies** to view [alerts](alerts.md) and to access your [DLP](data-loss-prevention-policies.md) and [retention](retention-policies.md) policies.<br/><br/> Use the links in the **Solutions** section to access your organization's compliance solutions. These include: <br/>[Data governance > Dispositions](disposition-reviews.md)<br/>[eDiscovery](overview-ediscovery-20.md)<br/>[Supervision](supervision-policies.md)<br/>[Data investigations](overview-data-investigations.md)<br/>[Data subject requests](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)        |
 
 
 ## How do I get this?
 
-- If you don't have the new Microsoft 365 compliance center already, you will have it soon. The [new Microsoft 365 compliance center](compliance/microsoft-security-and-compliance.md#microsoft-365-compliance-center) will be generally available now.
+- If you don't have the new Microsoft 365 compliance center already, you will have it soon. The [new Microsoft 365 compliance center](microsoft-security-and-compliance.md#microsoft-365-compliance-center) will be generally available now.
 
 - To visit the Microsoft 365 compliance center, as a global administrator or compliance administrator, go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and sign in. 
 

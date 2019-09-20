@@ -34,7 +34,7 @@ You can use the Content Search feature in Office 365 to search for and delete an
   
 ## Before you begin
 
-- To create and run a Content Search, you have to be a member of the **eDiscovery Manager** role group or be assigned the **Compliance Search** management role. To delete messages, you have to be a member of the **Organization Management** role group or be assigned the **Search And Purge** management role. For information about adding users to a role group, see [Give users access to the security and compliance center](compliance/grant-access-to-the-security-and-compliance-center.md).
+- To create and run a Content Search, you have to be a member of the **eDiscovery Manager** role group or be assigned the **Compliance Search** management role. To delete messages, you have to be a member of the **Organization Management** role group or be assigned the **Search And Purge** management role. For information about adding users to a role group, see [Give users access to the security and compliance center](grant-access-to-the-security-and-compliance-center.md).
     
 - You have to use Security & Compliance Center PowerShell to delete messages. See [Step 2](#step-2-connect-to-security--compliance-center-powershell) for instructions about how to connect.
     
@@ -50,7 +50,7 @@ The first step is to create and run a Content Search to find the message that yo
   
 - [Content Search in Office 365](content-search.md)
     
-- [Keyword queries for Content Search](compliance/keyword-queries-and-search-conditions.md)
+- [Keyword queries for Content Search](keyword-queries-and-search-conditions.md)
     
 - [New-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/New-ComplianceSearch)
     

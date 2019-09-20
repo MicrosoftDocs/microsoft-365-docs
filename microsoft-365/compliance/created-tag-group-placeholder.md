@@ -25,11 +25,11 @@ To create a tag group:
 
 1.  Within the working set, select Manage Working Set.
 
-> ![](../media/ED-managews.png)
+> ![](media/ED-managews.png)
 
 2.  Then select the Manage tags link.
 
-> ![](../media/ED-managetags.png)
+> ![](media/ED-managetags.png)
 
 Once inside the tag management, tags can be created to meet the requirements of your case.
 
@@ -38,16 +38,16 @@ Once inside the tag management, tags can be created to meet the requirements of 
 1.  Click the “Add section” button
 
 > ![A picture containing screenshot
-> Description automatically generated](../media/ED-addtagsection.png)
+> Description automatically generated](media/ED-addtagsection.png)
 
 |                                                                                                                             |                                                                                                                                                                 |
 | --------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ![](../media/ED-tipicon.png)Tip | The preview screen will update when you save so you can preview the tag panel without having to close the tag management screen and go back to the working set. |
+| ![](media/ED-tipicon.png)Tip | The preview screen will update when you save so you can preview the tag panel without having to close the tag management screen and go back to the working set. |
 
 2.  Enter a title and optional description. To create a tag within that section, click the ellipses on the new tag section to create tags in that new section.
     
     ![A screenshot of a cell phone
-    Description automatically generated](../media/ED-createtag.png)
+    Description automatically generated](media/ED-createtag.png)
 
 |                                                                                                                             |                                                                                                                                         |
 | --------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
@@ -57,5 +57,5 @@ Once inside the tag management, tags can be created to meet the requirements of 
 
 1.  To nest tags, click the ellipses of a **tag** and select a new tag to add.
     
-    ![](../media/ED-tagnesting.png)
+    ![](media/ED-tagnesting.png)
 
