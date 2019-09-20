@@ -638,7 +638,7 @@ For a list and detailed description of the eDiscovery activities that are logged
 
 ### Advanced eDiscovery activities
 
-The following table lists activities that result from IT and legal professionals performing tasks in Advanced eDiscovery in Microsoft 365. For more information, see [Overview of the Advanced eDiscovery solution in Microsoft 365](compliance/overview-ediscovery-20.md).
+The following table lists activities that result from IT and legal professionals performing tasks in Advanced eDiscovery in Microsoft 365. For more information, see [Overview of the Advanced eDiscovery solution in Microsoft 365](overview-ediscovery-20.md).
 
 |**Friendly name**|**Operation**|**Description**|
 |:-----|:-----|:-----|
@@ -790,11 +790,11 @@ Here are some tips for searching for Exchange admin activities when searching th
 
 **Where can I find about the features offered by the auditing service in Office 365?**
 
-For more information about the auditing and reporting features available in Office 365, see [Auditing and Reporting in Office 365](compliance/office-365-auditing-and-reporting-overview.md).
+For more information about the auditing and reporting features available in Office 365, see [Auditing and Reporting in Office 365](office-365-auditing-and-reporting-overview.md).
 
 **What are different Office 365 services that are currently audited?**
 
-The most used Office 365 services like Exchange Online, SharePoint Online, OneDrive for Business, Azure Active Directory, Microsoft Teams, Dynamics 365, Advanced Threat Protection, and Power BI are audited. See the [beginning of this article](compliance/search-the-audit-log-in-security-and-compliance.md) for a list of services that are audited.
+The most used Office 365 services like Exchange Online, SharePoint Online, OneDrive for Business, Azure Active Directory, Microsoft Teams, Dynamics 365, Advanced Threat Protection, and Power BI are audited. See the [beginning of this article](search-the-audit-log-in-security-and-compliance.md) for a list of services that are audited.
 
 **What activities are audited by auditing service in Office 365?**
 

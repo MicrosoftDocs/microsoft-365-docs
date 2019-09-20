@@ -135,6 +135,6 @@ After the you've run the script to clone an existing Content Search, the next st
   
 - [Content Search in Office 365](content-search.md)
     
-- [Keyword queries and search conditions for Content Search](compliance/keyword-queries-and-search-conditions.md)
+- [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md)
     
 - [eDiscovery cases](ediscovery-cases.md)

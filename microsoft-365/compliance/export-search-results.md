@@ -30,7 +30,7 @@ Exporting the results of a Content Search involves preparing the results, and th
   
 ## Before you begin
 
-- To export search results, you have to be assigned the Export management role in the Security & Compliance Center. This role is assigned to the built-in eDiscovery Manager role group. It isn't assigned by default to the Organization Management role group. For more information, see [Assign eDiscovery permissions](compliance/assign-ediscovery-permissions.md).
+- To export search results, you have to be assigned the Export management role in the Security & Compliance Center. This role is assigned to the built-in eDiscovery Manager role group. It isn't assigned by default to the Organization Management role group. For more information, see [Assign eDiscovery permissions](assign-ediscovery-permissions.md).
     
 - The computer you use to export the search results has to meet the following system requirements:
     
@@ -96,7 +96,7 @@ The first step is to prepare the search results for exporting. When you prepare 
     
     - Only items that have an unrecognized format, are encrypted, or weren't indexed for other reasons
     
-    See the [More information](#more-information) section for a description about how partially indexed items are exported. For more information about partially indexed items, see [Partially indexed items in Content Search](compliance/partially-indexed-items-in-content-search.md).
+    See the [More information](#more-information) section for a description about how partially indexed items are exported. For more information about partially indexed items, see [Partially indexed items in Content Search](partially-indexed-items-in-content-search.md).
     
 7. Under **Export Exchange content as**, choose one of the following options:
     
@@ -137,7 +137,7 @@ As previously explained, you can increase the download speed by configuring a Wi
     
     - The estimated total size of the items that will be downloaded.
     
-    - Whether indexed or unindexed will be exported. Unindexed items are items that have a recognized format, are encrypted, or weren't indexed for other reasons. For more information, see [Unindexed items in Content Search](compliance/partially-indexed-items-in-content-search.md).
+    - Whether indexed or unindexed will be exported. Unindexed items are items that have a recognized format, are encrypted, or weren't indexed for other reasons. For more information, see [Unindexed items in Content Search](partially-indexed-items-in-content-search.md).
     
     - Whether versions of SharePoint documents will be downloaded.
     

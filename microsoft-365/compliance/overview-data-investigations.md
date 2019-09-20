@@ -54,7 +54,7 @@ Use the **People of interest** tab to add and manage the people that you've iden
 
 ## Indexing the data of people of interest
 
-Adding a person of interest to an investigation re-indexes any partially indexed items from the person's data sources. This process is called *Advanced indexing*. Advanced indexing re-processes data such as images and unsupported file types so that this data is fully discoverable when you run searches to collect data for an investigation. Use the **Processing** tab to monitor the status of Advanced indexing and fix any processing errors that may occur using a process called *error remediation*. For more information, see [Error remediation when processing data for an investigation](compliance/error-remediation.md).
+Adding a person of interest to an investigation re-indexes any partially indexed items from the person's data sources. This process is called *Advanced indexing*. Advanced indexing re-processes data such as images and unsupported file types so that this data is fully discoverable when you run searches to collect data for an investigation. Use the **Processing** tab to monitor the status of Advanced indexing and fix any processing errors that may occur using a process called *error remediation*. For more information, see [Error remediation when processing data for an investigation](error-remediation.md).
 
 ## Exporting data
 

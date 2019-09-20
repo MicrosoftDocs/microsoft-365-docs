@@ -282,7 +282,7 @@ For more information on query syntax, see:
 
 Query-based labels use the search index to identify content. For more information on valid searchable properties, see:
 
-- [Keyword queries and search conditions for Content Search](compliance/keyword-queries-and-search-conditions.md)
+- [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md)
 - [Overview of crawled and managed properties in SharePoint Server](https://docs.microsoft.com/en-us/SharePoint/technical-reference/crawled-and-managed-properties-overview)
 
 Examples queries:
@@ -398,7 +398,7 @@ After you publish or auto-apply your retention labels, you'll want to verify tha
 
 After retention labels are assigned to content, either by users or auto-applied, you can use content search to find all content that's classified with a specific retention label.
   
-When you create a content search, choose the **Compliance Tag** condition, and then enter the complete label name or part of the label name and use a wildcard. For more information, see [Keyword queries and search conditions for Content Search](compliance/keyword-queries-and-search-conditions.md).
+When you create a content search, choose the **Compliance Tag** condition, and then enter the complete label name or part of the label name and use a wildcard. For more information, see [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).
   
 ![Compliance Tag condition](media/82d6af16-59f8-462f-babb-c894b2917018.png)
   
@@ -448,7 +448,7 @@ There are several other features that have previously been used to classify cont
 
 Members of your compliance team who will create retention labels need permissions to the Security &amp; Compliance Center. By default, your tenant admin will have access to this location and can give compliance officers and other people access to the Security &amp; Compliance Center, without giving them all of the permissions of a tenant admin. To do this, we recommend that you go to the **Permissions** page of the Security &amp; Compliance Center, edit the **Compliance Administrator** role group, and add members to that role group. 
   
-For more information, see [Give users access to the Office 365 Security &amp; Compliance Center](compliance/grant-access-to-the-security-and-compliance-center.md).
+For more information, see [Give users access to the Office 365 Security &amp; Compliance Center](grant-access-to-the-security-and-compliance-center.md).
   
 These permissions are required only to create and apply retention labels and a label policy. Policy enforcement does not require access to the content.  
 ## Find the PowerShell cmdlets for labels

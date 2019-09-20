@@ -65,7 +65,7 @@ Not every email message with an partially indexed file attachment or every parti
   
 Similarly, messages with partially indexed file attachments and documents of an partially indexed file type are included in search results when other message or document properties, which are indexed and searchable, meet the search criteria. Message properties that are indexed for search include sent and received dates, sender and recipient, the file name of an attachment, and text in the message body. Document properties indexed for search include created and modified dates. So even though a message attachment may be an partially indexed item, the message will be included in the regular search results if the value of other message or document properties matches the search criteria.
   
-For a list of email and document properties that you can search for by using the Search feature in the Security & Compliance Center, see [Keyword queries and search conditions for Content Search](compliance/keyword-queries-and-search-conditions.md).
+For a list of email and document properties that you can search for by using the Search feature in the Security & Compliance Center, see [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).
   
 ## Partially indexed items included in the search results
 

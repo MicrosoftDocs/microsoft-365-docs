@@ -63,21 +63,21 @@ Alternatively, you can use a condition card in the Advanced eDiscovery Search to
 
 ![Search conditions in the Advanced eDiscovery search tool](media/AeDSearchConditions.png)
 
-For more information about searchable properties, see [Keyword queries and search conditions](compliance/keyword-queries-and-search-conditions.md).
+For more information about searchable properties, see [Keyword queries and search conditions](keyword-queries-and-search-conditions.md).
   
 ## See also
 
 [Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
   
-[Understanding Assessment in Relevance](compliance/assessment-in-relevance-in-advanced-ediscovery.md)
+[Understanding Assessment in Relevance](assessment-in-relevance-in-advanced-ediscovery.md)
   
 [Tagging and Assessment](tagging-and-assessment-in-advanced-ediscovery.md)
   
-[Tagging and Relevance training](compliance/tagging-and-relevance-training-in-advanced-ediscovery.md)
+[Tagging and Relevance training](tagging-and-relevance-training-in-advanced-ediscovery.md)
   
-[Tracking Relevance analysis](compliance/track-relevance-analysis-in-advanced-ediscovery.md)
+[Tracking Relevance analysis](track-relevance-analysis-in-advanced-ediscovery.md)
   
-[Deciding based on the results](compliance/decision-based-on-the-results-in-advanced-ediscovery.md)
+[Deciding based on the results](decision-based-on-the-results-in-advanced-ediscovery.md)
   
-[Testing Relevance analysis](compliance/test-relevance-analysis-in-advanced-ediscovery.md)
+[Testing Relevance analysis](test-relevance-analysis-in-advanced-ediscovery.md)
 

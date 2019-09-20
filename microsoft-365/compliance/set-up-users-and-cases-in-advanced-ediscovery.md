@@ -33,7 +33,7 @@ Before setting up cases and users in Advanced eDiscovery, the following is requi
     
   - [Permissions in the Microsoft 365 Security &amp; Compliance Center](protect-against-threats.md)
     
-  - [Assign eDiscovery permissions in the Microsoft‍ 365 Security &amp; Compliance Center](compliance/assign-ediscovery-permissions.md)
+  - [Assign eDiscovery permissions in the Microsoft‍ 365 Security &amp; Compliance Center](assign-ediscovery-permissions.md)
     
 ## Step 1: Assign users eDiscovery permissions
 

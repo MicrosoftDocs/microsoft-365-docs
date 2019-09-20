@@ -41,7 +41,7 @@ There's few things you have to do before you can search the Office 365 audit log
   
 After you turn on auditing, you search for hundreds of individual types of events from multiple Office 365 services.
   
-- [Search the audit log](compliance/search-the-audit-log-in-security-and-compliance.md) for user and admin activities 
+- [Search the audit log](search-the-audit-log-in-security-and-compliance.md) for user and admin activities 
     
 - [Understand the detailed properties](detailed-properties-in-the-office-365-audit-log.md) in each auditing record included in the search results 
     

@@ -580,5 +580,5 @@ To revoke consent for a third-party data connector, you can delete the applicati
     
   - [Content Search in Office 365](content-search.md)
     
-  - [Keyword queries and search conditions for Content Search](compliance/keyword-queries-and-search-conditions.md)
+  - [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md)
  

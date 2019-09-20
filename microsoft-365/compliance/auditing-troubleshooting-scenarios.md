@@ -36,7 +36,7 @@ You have to be assigned the View-Only Audit Logs or Audit Logs role in Exchange 
 
 ### Running audit log searches
 
-This section describes the basics for creating and running audit log searches. Use these instructions as a starting point for each troubleshooting scenario in this article. For more detailed step-by-step instructions, see [Search the audit log](compliance/search-the-audit-log-in-security-and-compliance.md#step-1-run-an-audit-log-search).
+This section describes the basics for creating and running audit log searches. Use these instructions as a starting point for each troubleshooting scenario in this article. For more detailed step-by-step instructions, see [Search the audit log](search-the-audit-log-in-security-and-compliance.md#step-1-run-an-audit-log-search).
 
 1. Go to [https://protection.office.com/unifiedauditlog](https://protection.office.com/unifiedauditlog) and sign in using your work or school account.
     
@@ -60,9 +60,9 @@ This section describes the basics for creating and running audit log searches. U
 
     For more information about viewing, filtering, or exporting audit log search results, see:
 
-    - [View search results](compliance/search-the-audit-log-in-security-and-compliance.md#step-2-view-the-search-results)
-    - [Filter search results](compliance/search-the-audit-log-in-security-and-compliance.md#step-3-filter-the-search-results)
-    - [Export search results](compliance/search-the-audit-log-in-security-and-compliance.md#step-4-export-the-search-results-to-a-file)
+    - [View search results](search-the-audit-log-in-security-and-compliance.md#step-2-view-the-search-results)
+    - [Filter search results](search-the-audit-log-in-security-and-compliance.md#step-3-filter-the-search-results)
+    - [Export search results](search-the-audit-log-in-security-and-compliance.md#step-4-export-the-search-results-to-a-file)
 
 ## Find the IP address of the computer used to access a compromised account
 
