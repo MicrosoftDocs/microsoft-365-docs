@@ -28,7 +28,7 @@ You can create an activity alert that will send you an email notification when u
   
 ## Before you begin
 
-- You must be assigned the Organization Configuration role in the Security & Compliance Center to manage activity alerts. By default, this role is assigned to the Compliance Administrator and Organization Management role groups. For more information about adding members to role groups, see [Give users access to the Security & Compliance Center](grant-access-to-the-security-and-compliance-center.md).
+- You must be assigned the Organization Configuration role in the Security & Compliance Center to manage activity alerts. By default, this role is assigned to the Compliance Administrator and Organization Management role groups. For more information about adding members to role groups, see [Give users access to the Security & Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
     
 - You (or another admin) must first turn on audit logging for your organization before you can start using activity alerts. To do this, just click **Start recording user and admin activity** on the **Activity alerts** page. (If you don't see this link, auditing has already been turned on for your organization.) You can also turn on auditing on the **Audit log search** page in the Security & Compliance Center (go to **Search** \> **Audit log search**). You only have to do this once for your organization.
   
