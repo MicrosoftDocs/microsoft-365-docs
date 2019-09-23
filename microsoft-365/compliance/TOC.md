@@ -514,3 +514,10 @@
 ### [PDPA (Argentina)](offering-pdpa-argentina.md)
 ### [TRUCS (China)](https://aka.ms/TRUCS-Compliance)
 
+# Hybrid compliance capabilities
+## [Exchange Online mail encryption with AD RMS](information-rights-management-in-exchange-online.md)
+### [Configure IRM to use an on-premises AD RMS server](configure-irm-to-use-an-on-premises-ad-rms-server.md)
+
+# [Office 365 Enterprise](https://docs.microsoft.com/Office365/Enterprise)
+# [Office 365 Business](https://docs.microsoft.com/office365/admin/admin-home)
+# [Microsoft 365 Security](https://docs.microsoft.com/microsoft-365/security/)
