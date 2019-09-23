@@ -20,21 +20,21 @@ Insider risk policies determine which employees are monitored and which types of
 
 ## Policy dashboard
 
-**Policy name**
-**Active alerts**
-**Total confirmed alerts**
-**Total actioned alerts**
-**Policy effectiveness**
-**Active status**
+- **Policy name**
+- **Active alerts**
+- **Total confirmed alerts**
+- **Total actioned alerts**
+- **Policy effectiveness**
+- **Active status**
 
 ## Policy playbooks
 
 Insider risk playbooks are pre-defined templates that define the types of risk signals monitored by a policy. Each policy must have a playbook assigned in the policy creation wizard before the policy is created. The following playbooks are available:
 
-**Depart employee data theft**: When employees leave your organization, there are specific risk signals that typically...
-**Data leaks**: 
-**Security control violations**: 
-**HR policy violations**: 
+- **Depart employee data theft**: When employees leave your organization, there are specific risk signals that typically...
+- **Data leaks**: 
+- **Security control violations**: 
+- **HR policy violations**: 
 
 ## Create a new policy
 
