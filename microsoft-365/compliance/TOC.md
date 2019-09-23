@@ -9,6 +9,14 @@
 
 # Manage insider risks
 ## [Protect user and device access](protect-access-to-data-and-services.md)
+## [Insider risk management]()
+### [Learn about insider risk management](insider-risk-overview.md)
+### [Get started with insider risk management](insider-risk-get-started.md)
+### [Insider risk policies](insider-risk-policies.md)
+### [Insider risk alerts](insider-risk-alerts.md)
+### [Insider risk cases](insider-risk-cases.md)
+### [Insider risk notices](insider-risk-notices.md)
+### [Insider risk reporting](insider-risk-reporting.md)
 ## [Privileged access management](privileged-access-management-overview.md)
 ## [Configure privileged access management](privileged-access-management-configuration.md)
 ## [Customer Lockbox](customer-lockbox-requests.md)
