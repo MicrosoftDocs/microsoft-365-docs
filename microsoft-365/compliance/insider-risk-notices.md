@@ -47,4 +47,4 @@ To manage an existing insider risk notice, complete the following steps:
     - **BCC (optional)**:
     - **Subject (required)**:
     - **Message body (required)**:
-4. Select **Save** to update and save the notice.
+5. Select **Save** to update and save the notice.
