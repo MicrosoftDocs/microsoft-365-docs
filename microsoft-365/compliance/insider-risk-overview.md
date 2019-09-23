@@ -38,7 +38,7 @@ Insider Risk Management is centered around the following principles:
 
 The Insider Risk compliance solution...
 
-| Term | Definition |
+| **Term** | **Definition** |
 |:-----|:-----|
 | Alerts| An Insider Risk alert is |
 | Cases| An Insider Risk case is |
