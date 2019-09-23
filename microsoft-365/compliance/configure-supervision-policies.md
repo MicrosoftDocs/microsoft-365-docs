@@ -125,7 +125,7 @@ To do this, you can either add yourself as a member of the Supervisory Review ro
 
 4. In the **Members** section, add the people who you want to manage supervision for your organization.
 
-For more information about role groups and permissions, see [Permissions in the Compliance Center](permissions-in-the-security-and-compliance-center.md).
+For more information about role groups and permissions, see [Permissions in the Compliance Center](../security/office-365-security/protect-against-threats.md).
 
 ### Enable remote PowerShell access for reviewers (if email is hosted on Exchange Online)
 

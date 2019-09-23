@@ -13,7 +13,7 @@ metadata:
   ms.collection: m365-security-compliance
   author: robmazz #Required; your GitHub user alias, with correct capitalization.
   ms.author: robmazz #Required; microsoft alias of author; optional team alias.
-  ms.date: 09/13/2019 #Required; mm/dd/yyyy format.
+  ms.date: 09/20/2019 #Required; mm/dd/yyyy format.
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -21,21 +21,7 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
-  - title: Protect user and device access
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Protect user and device access
-            url: protect-access-to-data-and-services.md
-          - text: Privileged access management
-            url: privileged-access-management-overview.md
-          - text: Configure privileged access management
-            url: privileged-access-management-configuration.md
-          - text: Customer Lockbox
-            url: customer-lockbox-requests.md
-  
-  # Card (optional)
-  - title: Protect information
+  - title: Manage information protection
     linkLists:
       - linkListType: overview
         links:
@@ -48,10 +34,10 @@ landingContent:
           - text: Sensitive information types
             url: custom-sensitive-info-types.md
           - text: Email encryption
-            url: email-encryption.md
+            url: email-encryption.md  
 
-  # Card (optional)
-  - title: Manage records
+  # Card
+  - title: Manage information governance
     linkLists:
       - linkListType: overview
         links:
@@ -63,84 +49,54 @@ landingContent:
             url: labels.md
           - text: Event-based retention
             url: event-driven-retention.md
-
-  # Card
-  - title: Manage data governance
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Import data
-            url: importing-pst-files-to-office-365.md
-          - text: Store data
-            url: unlimited-archiving.md
-          - text: Retain data
-            url: retention-policies.md
-          - text: Supervise communications
-            url: supervision-policies.md
           - text: Inactive mailboxes
             url: inactive-mailboxes-in-office-365.md
           - text: View data governance reports
             url: view-the-data-governance-reports.md
 
-  # Card
-  - title: Manage legal investigations
+# Card (optional)
+  - title: Manage insider risks
     linkLists:
       - linkListType: overview
         links:
-          - text: Manage legal investigations
-            url: manage-legal-investigations.md
-          - text: Advanced eDiscovery
-            url: overview-ediscovery-20.md
-          - text: Manage eDiscovery cases
-            url: ediscovery-cases.md
-          - text: Create an eDiscovery hold
-            url: ediscovery-cases#step-4-place-content-locations-on-hold.md
-          - text: Create a litigation hold
-            url: create-a-litigation-hold.md
-  
-  # Card
-  - title: Manage data investigations
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Manage a data investigation
-            url: overview-data-investigations.md
-          - text: Manage a data spillage incident
-            url: manage-data-spillage-incidents.md
-          - text: Create a new investigation
-            url: create-new-investigation.md
-              
-  # Card
-  - title: Find compliance solutions
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Compliance Manager
-            url: compliance-manager-overview.md
+          - text: Protect user and device access
+            url: protect-access-to-data-and-services.md
+          - text: Privileged access management
+            url: privileged-access-management-overview.md
+          - text: Customer Lockbox
+            url: customer-lockbox-requests.md
+          - text: Supervise communications
+            url: supervision-policies.md
           - text: Information barriers
             url: information-barriers.md
           - text: Customer Key
             url: controlling-your-data-using-customer-key.md
-          - text: Information protection for GDPR
-            url: office-365-info-protection-for-gdpr-overview.md
 
-   # Card
-  - title: Manage search and audit
+  # Card
+  - title: Discover and respond
     linkLists:
       - linkListType: overview
         links:
+          - text: Advanced eDiscovery
+            url: overview-ediscovery-20.md
+          - text: Manage a data investigation
+            url: overview-data-investigations.md
           - text: Search for content
             url: search-for-content.md
           - text: Search the audit log
             url: search-the-audit-log-in-security-and-compliance.md
 
     # Card
-  - title: Get started with regulatory compliance action plans
+  - title: Get started with regulatory compliance
     linkLists:
       - linkListType: get-started
         links:
+          - text: Compliance Manager
+            url: compliance-manager-overview.md
           - text: GDPR compliance action plan
             url: gdpr-action-plan.md
+          - text: Information protection for GDPR
+            url: office-365-info-protection-for-gdpr-overview.md
           - text: ISO compliance action plan
             url: iso-action-plan.md
           - text: NIST compliance action plan

@@ -7,13 +7,23 @@
 ## [Use your free Azure Active Directory subscription](use-your-free-azure-ad-subscription-in-office-365.md)
 ## [Plan for security and compliance in Office 365](plan-for-security-and-compliance.md)
 
-# Protect user and device access
+# Manage insider risks
 ## [Protect user and device access](protect-access-to-data-and-services.md)
 ## [Privileged access management](privileged-access-management-overview.md)
 ## [Configure privileged access management](privileged-access-management-configuration.md)
 ## [Customer Lockbox](customer-lockbox-requests.md)
+## Customer Key
+### [Controlling your data in Office 365 using Customer Key](controlling-your-data-using-customer-key.md)
+### [Service encryption with Customer Key for Office 365 FAQ](service-encryption-with-customer-key-faq.md)
+## [Supervise communications](supervision-policies.md)
+### [Configure supervision policies for your organization](configure-supervision-policies.md)
+## [Information barriers](information-barriers.md)
+### [Define information barrier policies](information-barriers-policies.md)
+### [Attributes for information barrier policies](information-barriers-attributes.md)
+### [Troubleshooting information barriers](information-barriers-troubleshooting.md)
+### [Edit information barrier policies](information-barriers-edit-segments-policies.md.md)
 
-# [Protect information](protect-information.md)
+# [Manage information protection](protect-information.md)
 ## [Sensitivity labels](sensitivity-labels.md)
 ### [Restrict access to content by using encryption in sensitivity labels](encryption-sensitivity-labels.md)
 ### [Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md)
@@ -60,27 +70,15 @@
 ### [Revoke email encrypted by Office 365 Advanced Message Encryption](revoke-ome-encrypted-mail.md)
 ### [Compare versions of OME](ome-version-comparison.md)
 ### [Office 365 Message Encryption FAQ](ome-faq.md)
+### [How Exchange Online secures your email secrets](exchange-online-secures-email-secrets.md)
+### [How Exchange Online uses TLS to secure email connections in Office 365](exchange-online-uses-tls-to-secure-email-connections.md)
+### [Technical reference details about encryption in Office 365](technical-reference-details-about-encryption.md)
+### [BitLocker and Distributed Key Manager (DKM) for Encryption](office-365-bitlocker-and-distributed-key-manager-for-encryption.md)
 ### Legacy OME
 #### [Legacy information for Office 365 Message Encryption](legacy-information-for-message-encryption.md)
 #### [Set up Azure Rights Management for the previous version of Office 365 Message Encryption](set-up-azure-rms-for-previous-version-message-encryption.md)
 
-# Records management
-## [Records management](records-management.md)
-## File plan
-### [File plan manager](file-plan-manager.md)
-### [Retention labels](labels.md)
-### [Create and publish retention labels by using PowerShell](https://docs.microsoft.com/en-us/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
-### [View label usage with label analytics](label-analytics.md)
-### [View label activity for documents](view-label-activity-for-documents.md)
-### [View the data governance reports](view-the-data-governance-reports.md)
-## Events
-### [Event-based retention](event-driven-retention.md)
-### [Automate event-based retention](automate-event-driven-retention.md)
-## [Disposition](disposition-reviews.md)
-## More about records management
-### [Watch videos about records management](https://go.microsoft.com/fwlink/?linkid=867039)
-
-# Manage data governance
+# Manage information governance
 ## [Import data](importing-pst-files-to-office-365.md)
 ### [Use network upload to import PST files](use-network-upload-to-import-pst-files.md)
 ### [Use drive shipping to import PST files](use-drive-shipping-to-import-pst-files-to-office-365.md)
@@ -108,8 +106,6 @@
 ### [Event-based retention](event-driven-retention.md)
 ### [Automate event-based retention](automate-event-driven-retention.md)
 ## [Dispose data](disposition-reviews.md)
-## [Supervise communications](supervision-policies.md)
-### [Configure supervision policies for your organization](configure-supervision-policies.md)
 ## [Manage inactive mailboxes](inactive-mailboxes-in-office-365.md)
 ### [Create and manage inactive mailboxes](create-and-manage-inactive-mailboxes.md)
 ### [Change the hold duration for an inactive mailbox](change-the-hold-duration-for-an-inactive-mailbox.md)
@@ -122,6 +118,21 @@
 ### [View the data governance reports](view-the-data-governance-reports.md)
 ## More information about data governance
 ### [Watch videos from the Microsoft Data Governance team](https://go.microsoft.com/fwlink/?linkid=867039)
+## Records management
+### [Records management](records-management.md)
+### File plan
+#### [File plan manager](file-plan-manager.md)
+#### [Retention labels](labels.md)
+#### [Create and publish retention labels by using PowerShell](https://docs.microsoft.com/en-us/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
+#### [View label usage with label analytics](label-analytics.md)
+#### [View label activity for documents](view-label-activity-for-documents.md)
+#### [View the data governance reports](view-the-data-governance-reports.md)
+### Events
+#### [Event-based retention](event-driven-retention.md)
+#### [Automate event-based retention](automate-event-driven-retention.md)
+### [Disposition](disposition-reviews.md)
+### More about records management
+#### [Watch videos about records management](https://go.microsoft.com/fwlink/?linkid=867039)
 
 # [Search for content](search-for-content.md)
 ## [Use Content Search](content-search.md)
@@ -335,22 +346,14 @@
 ## [Use sharing auditing in the audit log](use-sharing-auditing.md)
 ## [Search for eDiscovery activities in the audit log](search-for-ediscovery-activities-in-the-audit-log.md)
 
-# Microsoft 365 compliance solutions
+# Manage compliance risks
 ## [Microsoft Service Trust Portal](get-started-with-service-trust-portal.md)
 ## [Compliance Manager (Classic)](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
 ## [Compliance Manager (Preview)](compliance-manager-overview.md)
 ### [What's new in Compliance Manager (Preview)](compliance-manager-release-notes.md)
 ### [Working with Compliance Manager (Preview)](working-with-compliance-manager.md)
 ### [Compliance score methodology (Preview)](compliance-score-methodology.md)
-## [Information barriers](information-barriers.md)
-### [Define information barrier policies](information-barriers-policies.md)
-### [Attributes for information barrier policies](information-barriers-attributes.md)
-### [Troubleshooting information barriers](information-barriers-troubleshooting.md)
-### [Edit information barrier policies](information-barriers-edit-segments-policies.md.md)
 
-## Customer Key
-### [Controlling your data in Office 365 using Customer Key](controlling-your-data-using-customer-key.md)
-### [Service encryption with Customer Key for Office 365 FAQ](service-encryption-with-customer-key-faq.md)
 ## [GDPR data subject request tool](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)
 ## [Office 365 Information Protection for GDPR](office-365-information-protection-for-gdpr.md)
 ### [Overview: Office 365 Protection for GDPR](office-365-info-protection-for-gdpr-overview.md)

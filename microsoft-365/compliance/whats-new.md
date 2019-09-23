@@ -3,7 +3,6 @@ title: "What's new in the Microsoft 365 compliance center"
 ms.author: brendonb
 author: brendonb
 manager: laurawi
-ms.date:
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
@@ -25,6 +24,10 @@ We're continuously adding new features to the [Microsoft 365 compliance center](
 > [!TIP]
 > Interested in what's going on in other admin centers? Check out these articles:<br>[What's new in the Microsoft 365 admin center](https://docs.microsoft.com/office365/admin/whats-new-in-preview?view=o365-worldwide)<br>[What's new in the SharePoint admin center](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
 
+## August 2019
+
+Wondering why it's quiet on the release front this month? We're heads down building new, innovative compliance solutions that'll be unveiled at [Microsoft Ignite](https://www.microsoft.com/ignite) in November. Stay tuned!
+
 ## July 2019
 
 ### New admin roles
@@ -34,7 +37,7 @@ We released two new admin roles to help manage security and compliance in your o
 - **Compliance data admin**. Users with this role have permissions to protect and track data in the Microsoft 365 compliance center, Microsoft 365 admin center, and Azure. They can also manage everything the Exchange admin center, Compliance Manager, Teams & Skype for Business admin center and create support tickets for Azure and Microsoft 365.
 - **Security operator**. Users with this role can manage alerts and have global read-only access to security-related features, including everything in the Microsoft 365 security center, Azure Active Directory, Identity Protection, Privileged Identity Management and Office 365 Security & Compliance Center.
 
-[Learn more about these roles](https://docs.microsoft.com/office365/securitycompliance/permissions-microsoft-365-compliance-security)
+[Learn more about these roles](https://docs.microsoft.com/microsoft-365/security//office-365-security/permissions-microsoft-365-compliance-security)
 
 ### Search and filtering for reports
 
@@ -47,10 +50,10 @@ No more scrolling through a sea of reports to find the ones you want. You can no
 Pull up a chair, grab a cup of coffee, and let our latest compliance docs sweep you away.
 
 **Advanced eDiscovery**
-- [Review conversations in Advanced eDiscovery](compliance20/conversation-review-sets.md) (New)
-- [Troubleshoot AzCopy in Advanced eDiscovery](compliance20/troubleshooting-azcopy.md)
-- [Load non-Office 365 data into a review set](compliance20/load-non-office365-data.md)
-- [Error remediation when processing data](compliance20/error-remediation.md)
+- [Review conversations in Advanced eDiscovery](conversation-review-sets.md) (New)
+- [Troubleshoot AzCopy in Advanced eDiscovery](troubleshooting-azcopy.md)
+- [Load non-Office 365 data into a review set](load-non-office365-data.md)
+- [Error remediation when processing data](error-remediation.md)
 
 **Archiving 3rd-party data**
 - [Set up a connector to archive Instant Bloomberg data in Office 365](archive-instant-bloomberg-data.md)

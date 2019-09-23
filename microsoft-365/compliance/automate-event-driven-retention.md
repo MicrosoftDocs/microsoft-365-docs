@@ -54,7 +54,7 @@ Identify the different roles in an organization that perform Record Management t
 
 ### Set up the Security & Compliance Center
   
-1. Compliance admin creates an event type – for example, Employee Termination or Contract Expiration or End of Product Manufacturing (Please refer to step by step process in [Event-driven retention](https://docs.microsoft.com/en-us/office365/securitycompliance/event-driven-retention).
+1. Compliance admin creates an event type – for example, Employee Termination or Contract Expiration or End of Product Manufacturing (Please refer to step by step process in [Event-driven retention](event-driven-retention.md).
     
 1. Compliance admin creates a retention label based on an event and associates the label with an event type.
     
