@@ -74,8 +74,6 @@ When you complete this step, you’ll have:
 - A list of user accounts in Azure AD that correspond to the employees in your organization and the vendors, contractors, and external partners that work for or with your organization.
 - A set of groups and their membership in Azure AD that reflect logical sets of user accounts and other groups for automatic licensing provisioning of security settings for Microsoft cloud services.
 
-As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria.md#crit-identity-user-groups) for this step.
-
 Once your Azure AD users and groups are created, you can start assigning licenses and using productivity workloads such as OneDrive for Business or Exchange Online.
 
 ## Next step

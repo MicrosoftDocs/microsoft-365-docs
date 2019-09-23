@@ -3,7 +3,7 @@ title: "Phase 6: Information protection"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/01/2019
+ms.date: 09/19/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -38,8 +38,9 @@ Next, use the following steps to build out information protection for Microsoft 
 |![](./media/stepnumbers/Step3.png)|[Configure increased security for Microsoft 365](infoprotect-configure-increased-security-office-365.md)|
 |![](./media/stepnumbers/Step4.png)|[Configure Windows Information Protection](infoprotect-deploy-windows-information-protection.md)|
 |![](./media/stepnumbers/Step5.png)|[Configure Office 365 Data Loss Prevention](infoprotect-data-loss-prevention.md)|
-|![](./media/stepnumbers/Step6.png)|[Configure privileged access management for Office 365](infoprotect-configure-privileged-access-management.md)|
-
+|![](./media/stepnumbers/Step6.png)|[Configure email encryption](infoprotect-email-encryption.md)|
+|![](./media/stepnumbers/Step7.png)|[Configure privileged access management for Office 365](infoprotect-configure-privileged-access-management.md)|
+|||
 
 When you've completed these steps, go to the [exit criteria](infoprotect-exit-criteria.md) for this phase to ensure that you meet the required and optional conditions for Microsoft 365 Enterprise.
 

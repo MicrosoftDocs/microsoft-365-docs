@@ -10,9 +10,10 @@ ms.collection: M365-modern-desktop
 
 # Getting help for end users
 
-There are two ways that users in your organization can get help with their Microsoft Managed Desktop devices: **Get Help** app, or phone support. Both of these support options are available to users 24 hours a day, 7 days a week. 
+There are two ways that users in your organization can get help with their Microsoft Managed Desktop devices: **Get Help** app, or phone support. Both of these support options are available to users 24 hours a day, 7 days a week.
+ 
 >[!NOTE]
->Devices residing in the test group are out of scope for these end user support options. 
+>These support options are not available for devices in the Test group. 
 
 ## Get Help app
 
@@ -33,9 +34,10 @@ End users with Microsoft Managed Desktop devices also have access to toll-free p
 - Canada (excluding Quebec): +1 855 425 0216
 - United Kingdom: +44 800 026 0698
 - Australia: +61 180 037 0619
+- New Zealand: +64 988 44380
 
 >[!NOTE]
->Please have your organizational email address ready when you call to verify your identity. 
+>You'll need to have your organizational email address ready when you call to verify your identity. 
 
 ## Additional resources
 - [Admin support for Microsoft Managed Desktop](admin-support.md). 

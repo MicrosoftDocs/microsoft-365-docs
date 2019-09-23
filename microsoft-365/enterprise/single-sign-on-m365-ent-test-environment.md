@@ -104,7 +104,7 @@ This configuration consists of:
 - Azure AD Connect runs on APP1 to synchronize the list of accounts and groups from the Azure AD tenant of your Office 365 and EMS E5 subscriptions to the TESTLAB AD DS domain. 
 - Azure AD Seamless SSO is enabled so that computers on the simulated intranet can sign in to Microsoft 365 cloud resources without specifing a user account password.
 
-See the [Simplify user sign-in](identity-password-reset.md#identity-sso) step in the Identity phase for information and links to configure Azure AD Seamless SSO in production.
+See the [Simplify user sign-in](identity-secure-your-passwords.md#identity-sso) step in the Identity phase for information and links to configure Azure AD Seamless SSO in production.
 
 ## Next step
 
