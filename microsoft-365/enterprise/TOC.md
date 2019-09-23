@@ -104,43 +104,5 @@
 ## [Recommended Exchange Online access policies](secure-email-recommended-policies.md)
 ## [Recommended SharePoint Online access policies](sharepoint-file-access-policies.md)
 
-# [Compliance solutions](../compliance/compliance-solutions-overview.md?toc=/microsoft-365/enterprise/toc.json)
-## [ISO — Recommended action plan](../compliance/iso-action-plan.md)
-## [NIST — Recommended action plan](../compliance/nist-action-plan.md) 
-## [GDPR](../compliance/gdpr.md?toc=/microsoft-365/enterprise/toc.json)
-
-### [Recommended action plan for GDPR](../compliance/gdpr-action-plan.md)
-
-### [Accountability readiness checklists](../compliance/gdpr-arc.md)
-#### [Office 365](../compliance/gdpr-arc-Office365.md)
-#### [Azure](../compliance/gdpr-arc-Azure.md)
-#### [Dynamics 365](../compliance/gdpr-arc-Dynamics365.md)
-#### [Microsoft Support and Professional Services](../compliance/gdpr-arc-prof-services.md)
-
-
-### [Information protection](../compliance/gdpr-information-protection.md?toc=/microsoft-365/enterprise/toc.json)
-
-### [Data subject requests](../compliance/gdpr-data-subject-requests.md?toc=/microsoft-365/enterprise/toc.json)
-#### [Office 365](../compliance/gdpr-dsr-Office365.md?toc=/microsoft-365/enterprise/toc.json)
-#### [Azure](../compliance/gdpr-dsr-Azure.md?toc=/microsoft-365/enterprise/toc.json)
-#### [Intune](../compliance/gdpr-dsr-Intune.md?toc=/microsoft-365/enterprise/toc.json)
-#### [Dynamics 365](../compliance/gdpr-dsr-Dynamics365.md?toc=/microsoft-365/enterprise/toc.json)
-#### [Visual Studio family](../compliance/gdpr-dsr-visual-studio-family.md?toc=/microsoft-365/enterprise/toc.json)
-#### [Azure DevOps Services](../compliance/gdpr-dsr-vsts.md?toc=/microsoft-365/enterprise/toc.json)
-#### [Microsoft Support and Professional Services](../compliance/gdpr-dsr-prof-services.md?toc=/microsoft-365/enterprise/toc.json)
-
-### [Breach notification](../compliance/gdpr-breach-notification.md?toc=/microsoft-365/enterprise/toc.json)
-#### [Office 365](../compliance/gdpr-breach-Office365.md?toc=/microsoft-365/enterprise/toc.json)
-#### [Azure](../compliance/gdpr-breach-Azure.md?toc=/microsoft-365/enterprise/toc.json)
-#### [Dynamics 365](../compliance/gdpr-breach-Dynamics365.md?toc=/microsoft-365/enterprise/toc.json)
-#### [Microsoft Support and Professional Services](../compliance/gdpr-breach-Microsoft-Support-Professional-Services.md?toc=/microsoft-365/enterprise/toc.json)
-
-### [Data protection impact assessments](../compliance/gdpr-data-protection-impact-assessments.md)
-#### [Office 365](../compliance/gdpr-dpia-office365.md)
-#### [Azure](../compliance/gdpr-dpia-azure.md)
-#### [Dynamics](../compliance/gdpr-dpia-dynamics.md)
-#### [Microsoft Support and Professional Services](../compliance/gdpr-dpia-prof-services.md)
-
-### [Microsoft's data protection officer](../compliance/gdpr-data-protection-officer.md)
-
-# [Security solutions](../security/index.yml)
+# [Microsoft 365 compliance](../compliance/index.yml)
+# [Microsoft 365 security](../security/index.yml)
