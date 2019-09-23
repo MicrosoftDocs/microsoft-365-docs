@@ -106,3 +106,9 @@
 
 # [Microsoft 365 compliance](../compliance/index.yml)
 # [Microsoft 365 security](../security/index.yml)
+
+# [Enterprise Business Continuity Management (EBCM) with cloud services](ebcm-understanding-ebcm-with-cloud-services.md)
+## [Customer and cloud partner EBCM responsibilities](ebcm-customer-and-cloud-partner-ebcm-responsibilities.md)
+## [Microsoft 365 cloud services resiliency](ebcm-m365-service-resiliency.md)
+## [Developing your continuity plan](ebcm-developing-your-ebcm-plan.md)
+## [Service incident mitigation scenarios](ebcm-microsoft-365-mitigations.md)
