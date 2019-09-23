@@ -188,7 +188,7 @@ To ensure that your Windows 10 Enterprise devices are integrated into the identi
 
   Join each Windows 10 Enterprise device to the Azure AD tenant of your subscription.
 
-  See [Join your work device to your organization's network](https://docs.microsoft.com/en-us/azure/active-directory/user-help/user-help-join-device-on-network) for more information.
+  See [Join your work device to your organization's network](https://docs.microsoft.com/azure/active-directory/user-help/user-help-join-device-on-network) for more information.
 
 
 Once installed and joined, each Windows 10 Enterprise device automatically installs updates from the Windows Update for Business cloud service. There is typically no need in a non-enterprise organization to set up an infrastructure to distribute and install Windows 10 updates.
