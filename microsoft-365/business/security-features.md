@@ -27,7 +27,7 @@ Microsoft 365 Business offers simplified security features to help safeguard you
     
 ## Microsoft 365 Business admin center security features
 
-![Banner that point to https://aka.ms/aboutM365preview.](media/m365admincenterchanging.png)
+[![Label to let you know the admin center is changing and you can find more details at aka.ms/aboutM365preview.](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
 You can manage many of the Microsoft 365 Business security features in the admin center, which gives you a simplified way to turn these features on or off. In the admin center you can do the following:
   
