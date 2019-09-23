@@ -3,7 +3,7 @@ title: "Phase 1: Networking infrastructure exit criteria"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/05/2019
+ms.date: 09/23/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -24,16 +24,16 @@ Make sure your networking infrastructure meets the following required criteria a
 <a name="crit-networking-step1"></a>
 ## Required: Your network is ready for Microsoft 365 Enterprise
 
-- Your offices have adequate Internet bandwidth for Microsoft 365 traffic, including Office 365, Microsoft Intune, and Windows 10 Enterprise installation and updates
-- Your overall network maps to an [Office 365 reference architecture](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#BKMK_P2)
-- Your network changes have been piloted and tested and meet with your traffic latency requirements 
+- Your offices have adequate Internet bandwidth for Microsoft 365 traffic, including Office 365, Microsoft Intune, and Windows 10 Enterprise installation and updates.
+- Your overall network maps to an [Office 365 reference architecture](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#BKMK_P2).
+- Your network changes have been piloted and tested and meet with your traffic latency requirements.
 
 If needed, [Step 1](networking-provide-bandwidth-cloud-services.md) can help you with this requirement.
 
 <a name="crit-networking-step2"></a>
 ## Required: Your local offices have local Internet connections and name resolution
 
-You configured each local office with Internet access with a local ISP whose DNS servers use a local public IP address that identifies their location on the Internet. This ensures the best possible performance for users who access Office 365 and Intune.
+You configured each local office with Internet access with a local ISP whose DNS servers use a local public IP address that identifies their location on the Internet. This ensures the best possible performance for users who access Microsoft 365 cloud services.
 
 If you don’t use a local ISP for each branch office, performance can suffer because network traffic must traverse an organization’s backbone or data requests are serviced by remote front-end servers.
 
@@ -43,7 +43,7 @@ Use a tool or web site from a device in that office to determine the public IP a
 If needed, [Step 2](networking-dns-resolution-same-location.md) can help you with this requirement.
 
 <a name="crit-networking-step3"></a>
-## Optional: Unneeded network hairpins are removed
+## Optional: Unneccessary network hairpins are removed
 
 You examined your network hairpins and determined their impact on performance for all of your offices. You removed network hairpins where possible or worked with your third-party network or security provider to implement optimal Microsoft 365 peering for their network.
 
