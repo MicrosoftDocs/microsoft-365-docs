@@ -36,7 +36,7 @@ Devices need to meet these requirements:
     
 ## Use the setup guide to create devices and profiles
 
-![Banner that point to https://aka.ms/aboutM365preview.](media/m365admincenterchanging.png)
+[![Label to let you know the admin center is changing and you can find more details at aka.ms/aboutM365preview.](../media/O365-Admin-AdminCenterChanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
 If you have no device groups or profiles created yet, the best way to get started is by using the step-by-step guide, but you can also [add devices](create-and-edit-autopilot-devices.md) and [assign profiles](create-and-edit-autopilot-profiles.md) to them without using the guide. 
   
