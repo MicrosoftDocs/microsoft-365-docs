@@ -19,7 +19,7 @@ Microsoft 365 Enterprise licensing is required for all Microsoft Managed Desktop
 
 This topic summarizes the components included in the required Enterprise licenses, with a description of how the service uses each component with Microsoft Managed Desktop devices. Specific roles and responsibilities for each area are detailed throughout Microsoft Managed Desktop documentation. 
 
-## Office 365 E3/E5
+## Office 365 E3 or E5
  |
  --- | ---
 Office 365 ProPlus (64-bit) | These Office applications will be shipped with the device: Word, Excel, PowerPoint, Outlook, Publisher, Access, Skype for Business, OneNote.<br><br>The 64-bit full versions of Microsoft Project and Microsoft Visio are not included. However, since the installation of these applications depends on the Office 365 ProPlus installation, Microsoft Managed Desktop has created default Microsoft Intune deployments and security groups that you can then use to deploy these applications to licensed end users. For more information, see [Install Microsoft Project or Microsoft Visio on Microsoft Managed Desktop devices](../get-started/project-visio.md).
@@ -29,7 +29,7 @@ Win32 Applications |	Teams is not shipped with the device, but is packaged and p
 Web Applications |	Yammer, Office in a browser, Delve, Flow, StaffHub, PowerApps, and Planner are not shipped with the device. Users can access the web version of these applications with a browser.
 
 
-## Windows 10 Enterprise E3/E5
+## Windows 10 Enterprise E3 or E5
 
  |
  --- | ---
