@@ -43,7 +43,7 @@ Here are these recommendations in your network infrastructure.
 
 ![Recommentations for optimizing on-premises traffic](./media/networking-configure-proxies-firewalls/bypassing-edge-devices.png)
 
-Edge devices include firewalls, SSL Break and Inspect, packet inspection devices, and data loss prevention systems. To configure and update the configurations of edge devices, you can use a script or a REST call to consume a structured list of endpoints from the Office 365 Endpoints web service. For more information, see [Office 365 IP Address and URL Web service](https://docs.microsoft.com/en-us/office365/enterprise/office-365-ip-web-service).
+Edge devices include firewalls, SSL Break and Inspect, packet inspection devices, and data loss prevention systems. To configure and update the configurations of edge devices, you can use a script or a REST call to consume a structured list of endpoints from the Office 365 Endpoints web service. For more information, see [Office 365 IP Address and URL Web service](https://docs.microsoft.com/office365/enterprise/office-365-ip-web-service).
 
 Note that you are only bypassing normal proxy and network security processing for traffic to Microsoft 365 Optimize and Allow categories endpoints. All other general Internet traffic will be proxied and be subject to your existing network security processing.
 
