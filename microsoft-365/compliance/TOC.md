@@ -7,7 +7,7 @@
 ## [Use your free Azure Active Directory subscription](use-your-free-azure-ad-subscription-in-office-365.md)
 ## [Plan for security and compliance in Office 365](plan-for-security-and-compliance.md)
 
-# Manage insider risks
+# Manage internal risks
 ## [Protect user and device access](protect-access-to-data-and-services.md)
 ## [Customer Lockbox](customer-lockbox-requests.md)
 ## [Privileged access management]()
@@ -522,4 +522,4 @@
 
 # [Office 365 Enterprise](https://docs.microsoft.com/Office365/Enterprise)
 # [Office 365 Business](https://docs.microsoft.com/office365/admin/admin-home)
-# [Microsoft 365 Security](https://docs.microsoft.com/microsoft-365/security/)
+# [Microsoft 365 security](https://docs.microsoft.com/microsoft-365/security/)
