@@ -58,9 +58,9 @@ Each of the employees of your organization must be able to sign in, which requir
 
 ### Administrator accounts
 
-Protect your global administrator user accounts by requiring very strong passwords and multi-factor authentication (MFA). See [Protect global administrator accounts](identity-designate-protect-admin-accounts.md#protect-global-administrator-accounts) for more information.
+Protect your global administrator user accounts by requiring strong passwords and multi-factor authentication (MFA). See [Protect global administrator accounts](identity-create-protect-global-admins.md#protect-global-administrator-accounts) for more information.
 
-If your organization requires high security and you have Microsoft 365 Enterprise E5, use Azure AD Privileged Identity Management to enable just-in-time administrator access. See [Set up on-demand global administrators](identity-designate-protect-admin-accounts.md#set-up-on-demand-global-administrators) for more information.
+If your organization requires high security and you have Microsoft 365 Enterprise E5, use Azure AD Privileged Identity Management to enable just-in-time administrator access. See [Set up on-demand global administrators](identity-create-protect-global-admins.md#identity-pim) for more information.
 
 ### Recommendations for groups
 
@@ -77,7 +77,7 @@ If you don’t have an on-premises AD DS domain, create security groups in Azure
 
 ### Hybrid identity
 
-If you have an on-premises AD DS domain, you need to synchronize the set of user accounts, groups, and contacts of your domain with the Azure AD tenant of your Microsoft 365 Enterprise subscription. For your non-enterprise, you configure Azure AD Connect on a server with password hash synchronization (PHS). See [Synchronize identities](identity-azure-ad-connect.md) for more information.
+If you have an on-premises AD DS domain, you need to synchronize the set of user accounts, groups, and contacts of your domain with the Azure AD tenant of your Microsoft 365 Enterprise subscription. For your non-enterprise, you configure Azure AD Connect on a server with password hash synchronization (PHS). See [Synchronize identities](identity-add-user-accounts.md) for more information.
 
 ### More secure user access with conditional access policies
 
@@ -130,16 +130,16 @@ Here are some features that can make group and licensing management easier for y
 
 | Feature | Use |
 |:------|:-----|
-| Self-service group management | Allow management of Azure AD groups by group owners instead of IT staff. See [Self-service group management](identity-self-service-group-management.md#allow-users-to-create-and-manage-their-own-groups) for more information. |
-| Dynamic group membership | Configure automatic addition or removal of user accounts from Azure AD groups based on user account attributes, such as Department or Country. See [Dynamic group membership](identity-self-service-group-management.md#set-up-dynamic-group-membership) for more information. |
-| Group-based licensing | Use group membership to automatically assign or unassign licenses to user accounts. See [Group-based licensing](identity-self-service-group-management.md#set-up-automatic-licensing) for more information. |
+| Self-service group management | Allow management of Azure AD groups by group owners instead of IT staff. See [Self-service group management](identity-use-group-management.md#allow-users-to-create-and-manage-their-own-groups) for more information. |
+| Dynamic group membership | Configure automatic addition or removal of user accounts from Azure AD groups based on user account attributes, such as Department or Country. See [Dynamic group membership](identity-use-group-management.md#set-up-dynamic-group-membership) for more information. |
+| Group-based licensing | Use group membership to automatically assign or unassign licenses to user accounts. See [Group-based licensing](identity-use-group-management.md#set-up-automatic-licensing) for more information. |
 |  |  |
 
 If you are using group-based licensing, create a group named LICENSED to contain user account names that are assigned a Microsoft 365 Enterprise license.
 
 ### Monitor user access
 
-If you have Microsoft 365 Enterprise E5, you can use Azure AD Identity Protection to monitor and analyze user sign-ins for credential compromise. See [Protect against credential compromise](identity-multi-factor-authentication.md#protect-against-credential-compromise) for more information.
+If you have Microsoft 365 Enterprise E5, you can use Azure AD Identity Protection to monitor and analyze user sign-ins for credential compromise. See [Protect against credential compromise](identity-secure-user-sign-ins.md#protect-against-credential-compromise) for more information.
 
 ### Your configuration so far
 
@@ -188,7 +188,7 @@ To ensure that your Windows 10 Enterprise devices are integrated into the identi
 
   Join each Windows 10 Enterprise device to the Azure AD tenant of your subscription.
 
-  See [Join your work device to your organization's network](https://docs.microsoft.com/en-us/azure/active-directory/user-help/user-help-join-device-on-network) for more information.
+  See [Join your work device to your organization's network](https://docs.microsoft.com/azure/active-directory/user-help/user-help-join-device-on-network) for more information.
 
 
 Once installed and joined, each Windows 10 Enterprise device automatically installs updates from the Windows Update for Business cloud service. There is typically no need in a non-enterprise organization to set up an infrastructure to distribute and install Windows 10 updates.

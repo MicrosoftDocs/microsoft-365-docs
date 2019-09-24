@@ -3,7 +3,7 @@ title: "Phase 1: Networking infrastructure for Microsoft 365 Enterprise"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 10/31/2018
+ms.date: 09/23/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions

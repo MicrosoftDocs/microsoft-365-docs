@@ -28,7 +28,7 @@ description: "Learn how to set up Microsoft 365 Business."
 
 ## Add your domain, users, and set up policies
 
-![Banner that point to https://aka.ms/aboutM365preview.](media/m365admincenterchanging.png)
+[![Label to let you know the admin center is changing and you can find more details at aka.ms/aboutM365preview.](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
 When you purchase Microsoft 365 Business, you have the option of using a domain you own, or buying one during the [sign-up](sign-up.md).
 
