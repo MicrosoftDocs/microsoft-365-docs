@@ -9,13 +9,15 @@
 
 # Manage insider risks
 ## [Protect user and device access](protect-access-to-data-and-services.md)
-## [Privileged access management](privileged-access-management-overview.md)
-## [Configure privileged access management](privileged-access-management-configuration.md)
 ## [Customer Lockbox](customer-lockbox-requests.md)
+## [Privileged access management]()
+### [Learn about privileged access management](privileged-access-management-overview.md)
+### [Configure privileged access management](privileged-access-management-configuration.md)
 ## Customer Key
 ### [Controlling your data in Office 365 using Customer Key](controlling-your-data-using-customer-key.md)
 ### [Service encryption with Customer Key for Office 365 FAQ](service-encryption-with-customer-key-faq.md)
-## [Supervise communications](supervision-policies.md)
+## [Communications supervision]()
+### [Learn about communications supervision](supervision-policies.md)
 ### [Configure supervision policies for your organization](configure-supervision-policies.md)
 ## [Information barriers](information-barriers.md)
 ### [Define information barrier policies](information-barriers-policies.md)
