@@ -1,5 +1,5 @@
 ---
-title: Insider Risk notices
+title: Insider risk notices
 description: Learn about Insider Risk in Microsoft 365
 keywords: Microsoft 365, Insider Risk, risk management, compliance
 localization_priority: Normal
@@ -12,11 +12,14 @@ audience: itpro
 ms.collection: m365-security-compliance
 ---
 
-# Insider Risk notices
+# Insider risk notices
 
-Insider risk notices allow you to notify employees when an insider risk policy match and alert was generated based on their activities. Providing a notice in email reminding them of the 
+Insider risk notices allow you to notify employees when their activities generate an insider risk policy match and an alert. Most users take actions that generate alerts by mistake and without ill intent, and reminder notices serve as refresher training and as an important part of your internal compliance training program. 
 
 ## Notice dashboard
+
+The notice dashboard displays a list of configured notices and allows you to create new notices.
+
 
 ## Create a new notice
 
@@ -25,8 +28,8 @@ To create a new insider risk notice, complete the following steps:
 1. In the Microsoft 365 compliance center, go to **Insider Risk** and select the **Notices** tab.
 2. Select **Add notice** to open the notice wizard
 3. On the **Create a new notice template** page, complete the following fields:
-    - **Template name (required)**: Enter a friendly name for the notice
-    - **Send from (required)**: Enter the sender email address for the notice.
+    - **Template name (required)**: Enter a friendly name for the notice. This name appears on the list of notices on the notice dashboard and in the notice selection list when sending notices from a case.
+    - **Send from (required)**: Enter the sender email address for the notice. This address will appear in the **From:** field in all notices sent to employees unless changed when sending a notice from a case.
     - **CC (optional)**:
     - **BCC (optional)**:
     - **Subject (required)**:
