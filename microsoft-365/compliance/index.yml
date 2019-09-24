@@ -55,7 +55,7 @@ landingContent:
             url: view-the-data-governance-reports.md
 
 # Card (optional)
-  - title: Manage insider risks
+  - title: Manage internal risks
     linkLists:
       - linkListType: overview
         links:
