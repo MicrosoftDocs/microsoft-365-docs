@@ -35,4 +35,12 @@ For more information preview features, see [Preview features in Office 365 ATP](
 
 ## August 2019
 
-- 
+- [View the timeline of email that was detected](investigate-malicious-email-that-was-delivered.md#view-the-timeline-of-your-email)
+
+## July 2019
+
+- [Check the delivery action and location of detected email messages](investigate-malicious-email-that-was-delivered.md#check-the-delivery-action-and-location)
+
+ ## June 2019
+
+- [View data about phishing URLs and click verdict](threat-explorer.md#view-data-about-phishing-urls-and-click-verdict)
