@@ -175,6 +175,41 @@
           "redirect_document_id": false
         },
         {
+          "source_path": "microsoft-365/enterprise/identity-azure-ad-connect.md",
+          "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/identity-add-user-accounts",
+          "redirect_document_id": false
+        },
+        {
+          "source_path": "microsoft-365/enterprise/identity-designate-protect-admin-accounts.md",
+          "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/identity-create-protect-global-admins",
+          "redirect_document_id": false
+        },
+        {
+          "source_path": "microsoft-365/enterprise/identity-multi-factor-authentication.md",
+          "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/identity-secure-user-sign-ins",
+          "redirect_document_id": false
+        },
+        {
+          "source_path": "microsoft-365/enterprise/identity-password-reset.md",
+          "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/identity-secure-your-passwords",
+          "redirect_document_id": false
+        },
+        {
+          "source_path": "microsoft-365/enterprise/identity-plan-users-groups.md",
+          "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/identity-add-user-accounts",
+          "redirect_document_id": false
+        },
+        {
+          "source_path": "microsoft-365/enterprise/identity-self-service-group-management.md",
+          "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/identity-use-group-management",
+          "redirect_document_id": false
+        },
+        {
+          "source_path": "microsoft-365/enterprise/identity-governance.md",
+          "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/identity-configure-identity-governance",
+          "redirect_document_id": false
+        },
+        {
           "source_path": "microsoft-365/business/set-up-advanced-security.md",
           "redirect_url": "https://docs.microsoft.com/microsoft-365/business/increase-threat-protection",
           "redirect_document_id": true
