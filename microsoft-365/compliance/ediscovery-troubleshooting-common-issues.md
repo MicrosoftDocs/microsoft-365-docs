@@ -23,13 +23,11 @@ This topic covers basic troubleshooting steps that you can take to identify and 
 
 ## Error/issue ambiguous location
 
-the location is ambiguous
-
-"The compliance search contains the following invalid location `(s):*useralias@contoso.com*. The location "useralias@contoso.com" is ambiguous"`
+You'll receive this error "The compliance search contains the following invalid location `(s):useralias@contoso.com. The location "useralias@contoso.com" is ambiguous"`
 
 ### Details
 
-You may receive this error if you tried to add user’s mailbox location to search and there are duplicate or conflicting object with the same user Ids in the Exchange Online Protection(EOP) directory.
+You may receive this error if you tried to add user’s mailbox location to search and there are duplicate or conflicting objects with the same user ids in the Exchange Online Protection (EOP) directory.
 
 ### Resolution
 
@@ -58,7 +56,7 @@ Specific locations in a large search fails
 
 ### Details
 
-This search completed with # errors.  Would you like to retry the search on the failed locations?
+This search completed with (#) errors.  Would you like to retry the search on the failed locations?
 
 ![search specific location fails error screenshot]( media/edisc-tshoot-specific-location-search-fails.png)
 
@@ -74,7 +72,7 @@ Get-Compliancesearch searchname|fl
 ```
 
 3. From the PowerShell output, view the failed locations in the Errors field or from the Status details in the error form the Search output.
-1. Retry the Ediscovery Search on the failed locations only
+1. Retry the eDiscovery search on the failed locations only.
 1. If you continue to receive these error, see [Retry  Failed Locations](https://docs.microsoft.com/en-us/Office365/SecurityCompliance/retry-failed-content-search) for additional troubleshooting steps.
 
 ## Error/issue file not found
@@ -82,22 +80,22 @@ Get-Compliancesearch searchname|fl
 
 ### Details
 
-When running an eDiscovery search that includes SharePoint Online and One Drive For Business locations, you may receive error: File Not Found although the file is located on the site.  This may occur if the file cannot be located on the site or the index is out of date. Heres is the text of an actual error, with emphasis added.
+When running an eDiscovery search that includes SharePoint Online and One Drive For Business locations, you may receive the error `File Not Found` although the file is located on the site.  This may occur if the file cannot be located on the site or the index is out of date. Heres is the text of an actual error, with emphasis added.
   
 > 28.06.2019 10:02:19_FailedToExportItem_Failed to download content. Additional diagnostic info : Microsoft.Office.Compliance.EDiscovery.ExportWorker.Exceptions.ContentDownloadTemporaryFailure: Failed to download from content 6ea52149-91cd-4965-b5bb-82ca6a3ec9be of type Document. Correlation Id: 3bd84722-937b-4c23-b61b-08d6fba9ec32. ServerErrorCode: -2147024894 ---> Microsoft.SharePoint.Client.ServerException: ***File Not Found***. at Microsoft.SharePoint.Client.ClientRequest.ProcessResponseStream(Stream responseStream) at Microsoft.SharePoint.Client.ClientRequest.ProcessResponse()
 --- End of inner exception stack trace ---
 
 ### Resolution
 
-1. Check location identified in the search to ensure the correct locations have been verified and added in the search locations.
+1. Check location identified in the search to ensure the that the location of the file is correct and added in the search locations.
 2. Use the procedures at [Manually request crawling and re-indexing of a site, a library or a list](https://docs.microsoft.com/en-us/sharepoint/crawl-site-content) to re-index the site.
 
 ## Error/issue search fails recipient not found
- eDiscovery search fails with Error: Recipient Not Found
+ eDiscovery search fails with error `Recipient Not Found`
 
 ### Details
 
-This error may occur if the user object cannot be found in Exchange Online Protection(EOP) because the object has not synced.
+This error may occur if the user object cannot be found in Exchange Online Protection (EOP) because the object has not synced.
 
 ### Resolution
 
@@ -112,7 +110,7 @@ Get-Recipient userId|fl
 
 ## Error/issue exporting search results is slow
 
-eDiscovery export is slow when exporting search results from Ediscovery or Content Search in the Security and Compliance center.
+eDiscovery export is slow when exporting search results from eDiscovery or Content Search in the Security and Compliance center.
 
 ### Details
 
@@ -120,7 +118,7 @@ When running eDiscovery export, the download is taking longer than expected.  Yo
 
 ### Resolution
 
-1.	Try using the steps identified in the article first [Increase Download Speeds](https://docs.microsoft.com/en-us/office365/securitycompliance/increase-download-speeds-when-exporting-ediscovery-results)
+1.	Try using the steps identified in the article [Increase Download Speeds](https://docs.microsoft.com/en-us/office365/securitycompliance/increase-download-speeds-when-exporting-ediscovery-results).
 2.	If you still have issues, connect to [Exchange Online Protection PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell?view=exchange-ps) and type:
 
 ```powershell
@@ -135,7 +133,7 @@ Get-ComplianceSearchAction |fl
 ```
 
 6. In the results field find the data that has been exported and view and errors encountered.
-7. Check the trace.log file (located in the directory that you exported the content to for any errors.
+7. Check the trace.log file located in the directory that you exported the content to for any errors.
 
 ## Error/issue "Internal server error (500) occurred"
 
@@ -172,7 +170,9 @@ eDiscovery Case Hold Policy Sync Distribution error.
 ```powershell
 Get-RetentionCompliancePolicy  policyname - Distributiondetail|fl
 ```
-2. Examine the value in the Distributiondetail parameter for errors like the following: 
-> If error exists, create escalation to PG to force a manual re-sync on the Policy.
-3. Contact CSS
 
+2. Examine the value in the Distributiondetail parameter for errors like the following:
+
+> If error exists, create escalation to PG to force a manual re-sync on the Policy.
+
+3. Contact CSS.
