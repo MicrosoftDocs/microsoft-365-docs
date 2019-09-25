@@ -30,31 +30,13 @@ MTCS is the first cloud security standard with different levels of security, so 
 
 ## Microsoft and MTCS
 
-After rigorous assessments conducted by the MTCS Certification Body, Microsoft cloud services received MTCS 584:2013 certification across all three service classifications — Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS). Microsoft was the first global CSP to receive this certification across all three classifications.
+After rigorous assessments conducted by the MTCS Certification Body, Microsoft cloud services received MTCS 584:2013 certification across all three service classifications—Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS). Microsoft was the first global CSP to receive this certification across all three classifications.
 
 Certifications were granted at Level 3 for Microsoft Azure services (IaaS and PaaS), Microsoft Dynamics 365 services (SaaS), and Microsoft Office 365 services (SaaS). A Level 3 certification means that in-scope Microsoft cloud services can host high-impact data for regulated organizations with the strictest security requirements. It’s required for certain cloud solution implementations by the Singapore government.
 
 Learn about the benefits of MTCS on the Microsoft Cloud: [Download the MTCS Standard for Singapore Backgrounder](https://aka.ms/mtcs-backgrounder)
 
-## Audits, reports, and certificates
-
-Certification is valid for three years, with a yearly surveillance audit to be conducted.
-
-### Microsoft MTCS certification
-
-- [Microsoft Azure and Other Online Services](https://go.microsoft.com/fwlink/p/?linkid=2092614)
-- [Dynamics 365](https://go.microsoft.com/fwlink/p/?linkid=2092451)
-- [Office 365](https://go.microsoft.com/fwlink/p/?linkid=2092719)
-
-### MTCS cloud service provider disclosure
-
-- [Microsoft Azure and Other Online Services](https://go.microsoft.com/fwlink/p/?linkid=2092614)
-- [Dynamics 365](https://go.microsoft.com/fwlink/p/?linkid=2092720)
-- [Office 365](https://go.microsoft.com/fwlink/p/?linkid=2092550)
-
 ## Microsoft in-scope cloud services
-
-Covered services include:
 
 - [Azure](https://go.microsoft.com/fwlink/p/?linkid=2092718)
 - [Dynamics 365](https://go.microsoft.com/fwlink/p/?linkid=2051700)
@@ -70,6 +52,23 @@ Covered services include:
 - Stream
 - [Office 365](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 
+## Audits, reports and certificates
+
+Certification is valid for three years, with a yearly surveillance audit to be conducted.
+
+### Microsoft MTCS certification
+
+- [Microsoft Azure and Other Online Services</span>](https://go.microsoft.com/fwlink/p/?linkid=2092614)
+- [Dynamics 365</span>](https://go.microsoft.com/fwlink/p/?linkid=2092451)
+- [Office 365</span>](https://go.microsoft.com/fwlink/p/?linkid=2092719)
+
+### Microsoft MTCS cloud service provider disclosure
+
+- [Microsoft Azure and Other Online Services</span>](https://go.microsoft.com/fwlink/p/?linkid=2092614)
+- [Dynamics 365</span>](https://go.microsoft.com/fwlink/p/?linkid=2092720)
+- [Intune</span>](https://go.microsoft.com/fwlink/p/?linkid=2099397)
+- [Office 365</span>](https://go.microsoft.com/fwlink/p/?linkid=2092550)
+
 ## Frequently asked questions
 
 **To whom does the standard apply?**
@@ -80,13 +79,13 @@ It applies to businesses in Singapore that purchase cloud services requiring com
 
 MTCS has a total of 535 controls that cover three levels of security:
 
-- Level 1 is low cost, with a minimum number of required baseline security controls. It is suitable for web site hosting, test and development work, simulation, and noncritical business applications.
+- Level 1 is designed to be low-cost, with a minimum number of required baseline security controls. It is suitable for web site hosting, test and development work, simulation, and noncritical business applications.
 - Level 2 addresses the needs of most organizations that are concerned about data security, with a set of more stringent controls targeted at security risks and threats to data. Level 2 is applicable for most cloud usage, including mission-critical business applications.
 - Level 3 is designed for regulated organizations with specific requirements and those willing to pay for stricter security requirements. Level 3 adds a set of security controls to supplement those in Levels 1 and 2. They address security risks and threats in high-impact information systems using cloud services, such as hosting applications with sensitive information and in regulated systems.
 
 **Where do I start with my organization’s own compliance effort?**
 
-The [MTCS SS Implementation Guideline Report](https://go.microsoft.com/fwlink/p/?linkid=2092618) provides guidance on audit controls and security requirements.
+The [MTCS Certification Scheme](https://go.microsoft.com/fwlink/p/?linkid=2099490) provides guidance on audit controls and security requirements.
 
 **Can I use Microsoft’s compliance in my organization’s certification process?**
 
@@ -94,6 +93,6 @@ Yes. If you have a requirement to certify your services built on these Microsoft
 
 ## Resources
 
-- [MTCS Certification](https://www2.imda.gov.sg/)
+- [MTCS Certification Scheme](https://go.microsoft.com/fwlink/p/?linkid=2092918)
 - [Azure compliance in the context of Singapore security and privacy requirements](https://aka.ms/azurecompliancesingapore)
 - [Microsoft Online Services Terms](http://aka.ms/Online-Services-Terms)

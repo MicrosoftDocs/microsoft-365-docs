@@ -25,18 +25,18 @@ The BIR coverage report provides guidance where the BIR standards are covered by
 
 While Microsoft is not subject to BIR 2012 compliance, customers from the government sector seeking to use cloud services can use Microsoft’s existing certifications to determine their compliance with this standard. Azure and Office 365 undergo various periodic independent certifications and attestations, some of which are closely related to BIR 2012.
 
-Learn how to accelerate your BIR 2012 deployment with our [Azure Security and Compliance Blueprint](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=f49ee594-6c56-4b6f-93c1-646850798354&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides).
-
-## Audits, reports, and certificates
-
-- [Azure and Office 365 BIR-2012 Baseline Coverage](https://protection.office.com/DownloadFile/ServiceAssurance/Document/compliance/Azure%20and%20Office%20365%20BIR-2012%20Baseline%20Coverage/pdf)
-- [Azure and Office 365 BIR-2012 Baseline Coverage User Guide (Dutch)](https://protection.office.com/DownloadFile/ServiceAssurance/Document/compliance/Azure%20and%20Office%20365%20BIR-2012%20Baseline%20Coverage%20User%20Guide_Dutch/docx)
+[Download the Microsoft Cloud - Azure and Office 365 BIR-2012 Baseline Coverage User Guide](https://go.microsoft.com/fwlink/p/?linkid=2099461)
 
 ## Microsoft in-scope cloud services
 
 - [Azure](https://aka.ms/AzureCompliance)
 - Intune
 - [Office 365](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
+
+## Audits, reports and certificates
+
+- [Azure and Office 365 BIR-2012 Baseline Coverage](https://protection.office.com/DownloadFile/ServiceAssurance/Document/compliance/Azure%20and%20Office%20365%20BIR-2012%20Baseline%20Coverage/pdf)
+- [Azure and Office 365 BIR-2012 Baseline Coverage User Guide (Dutch)](https://protection.office.com/DownloadFile/ServiceAssurance/Document/compliance/Azure%20and%20Office%20365%20BIR-2012%20Baseline%20Coverage%20User%20Guide_Dutch/docx)
 
 ## Frequently asked questions
 
@@ -48,7 +48,7 @@ The responsibility for BIR compliance is applicable to the government sector. It
 
 Demonstrating BIR compliance is the responsibility of the customer. When using a cloud services vendor, customers typically demand assurances from the vendor, and add their own (additional) technology and organizational decisions, choices, and processes. This results in an overall assessment by the customer on its BIR compliance, which can be submitted for review or certification to a third-party auditor. The BIR coverage report provides insight into what BIR controls are covered by Microsoft Online Services, but as such does not cover end-to-end compliance.
 
-**The report does not show 100% coverage. Is BIR 2012 compliance not feasible?**
+**The report does not show 100% coverage; is BIR 2012 compliance not feasible?**
 
 Microsoft Online Services provides many controls that help organizations within the Netherlands with their BIR compliance needs. However, an organization needs to complement those vendor assurances with their own implementation choices, additional technology controls, and administrative processes. The report shows already over 91% direct coverage of the full list of applicable controls. For the remaining controls, Microsoft provides guidance in the report on how compliance with those controls can be demonstrated.
 
@@ -58,11 +58,11 @@ No. It is a supporting tool for the customer’s internal BIR assurance process 
 
 **Can we share this report?**
 
-The report is provided to customers under a non-disclosure agreement (NDA), on the basis that it is for customer information only and that it will not be copied or disclosed via other channels than the Microsoft [Service Trust Platform](https://www.microsoft.com/TrustCenter/STP/default.aspx). Customers can share the report with their own internal or external auditor as part of their compliance or assurance processes.
+The report is provided to customers under a non-disclosure agreement (NDA), on the basis that it is for customer information only and that it will not be copied or disclosed via other channels than the Microsoft [Service Trust Platform](https://www.microsoft.com/en-us/TrustCenter/STP/default.aspx). Customers can share the report with their own internal or external auditor as part of their compliance or assurance processes.
 
 ## Resources
 
-- [ISO-IEC 27001](offering-ISO-27001.md)
+- [ISO-IEC 27001](https://www.microsoft.com/en-us/trustcenter/compliance/iso-iec-27001)
 - [Security prescription national 2013 (BVR)](http://wetten.overheid.nl/BWBR0033512/2013-06-01)
 - [Prescription information security national 2007 (VIR)](http://wetten.overheid.nl/BWBR0022141/2007-07-01)
 - [Baseline Information Security (BIR)](http://www.earonline.nl/index.php/Overzicht_Baseline_Informatiebeveiliging_Rijksdienst_\(BIR_2012\))

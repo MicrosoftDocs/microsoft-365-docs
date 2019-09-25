@@ -23,7 +23,7 @@ The government expects all New Zealand State Service agencies to work within thi
 
 To assist NZ government agencies in conducting consistent and robust due diligence on potential cloud solutions, the GCIO has published “Cloud Computing: Information Security and Privacy Considerations” (the “Cloud Computing ISPC”). This document contains more than 100 questions focused on data sovereignty, privacy, security, governance, confidentiality, data integrity, availability, and incident response and management. Note that “Cloud Computing IPSC” does not define a NZ government standard against which cloud service providers must demonstrate formal compliance. Many of the questions set out in the document do, however, point toward the importance of understanding how cloud service providers comply with a wide array of relevant standards.
 
-## Microsoft and New Zealand Government Cloud Computing Security and Privacy Considerations
+Microsoft and New Zealand Government Cloud Computing Security and Privacy Considerations
 
 To help agencies undertake their analysis and evaluation of Microsoft enterprise cloud services, Microsoft New Zealand has produced a series of documents showing how its enterprise cloud services address the questions set out in the “Cloud Computing ISPC” by linking them to the standards against which Microsoft cloud services are certified. These certifications are central to how Microsoft assures both public and private sector customers that its cloud services are designed, built, and operated to effectively mitigate privacy and security risks and address data sovereignty concerns.
 
@@ -38,18 +38,17 @@ Learn how to accelerate your NZ CC Framework deployment with our Azure Security 
 - Intune
 - Power BI cloud service either as a standalone service or as included in an Office 365 branded plan or suite
 - [Office 365](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
-
-Exchange Online, SharePoint Online, and Skype for Business Online. (Note that Microsoft NZ has worked with the GCIO team to develop a reference architecture for integrating Exchange Online and SEEMail described in the white paper [Office 365: SEEMail Integration and Reference Architecture](http://download.microsoft.com/download/8/5/9/859CDCEE-D293-47D8-9B6A-670B108B48E1/Microsoft_Office_365_white_paper_EN_US.pdf)
+- Exchange Online, SharePoint Online, and Skype for Business Online. Microsoft NZ has worked with the GCIO team to develop a reference architecture for integrating Exchange Online and SEEMail described in the white paper [Office 365: SEEMail Integration and Reference Architecture](http://download.microsoft.com/download/8/5/9/859CDCEE-D293-47D8-9B6A-670B108B48E1/Microsoft_Office_365_white_paper_EN_US.pdf)
 
 ## Frequently asked questions
 
 **To whom does the framework apply?**
 
-Organizations that fall under the GCIO mandate — the public and non-public service departments, the 20 district health boards, and seven Crown entities — must adhere to the framework when they are deciding on the use of a cloud service. The complete list of agencies mandated to follow the framework is available on the [ICT Assurance Scope page](http://aka.ms/NZICT-Assurance-Scope). The government expects other [State Service Agencies](http://www.ssc.govt.nz/what-is-the-public-sector) to follow this framework as well.
+Organizations that fall under the GCIO mandate—the public and non-public service departments, the 20 district health boards, and seven Crown entities—must adhere to the framework when they are deciding on the use of a cloud service.
 
 **Can my agency use Microsoft’s responses to this framework in the certification process of our ICT systems?**
 
-If your agency is required to undertake certification and accreditation of its ICT system under the New Zealand Information Security Manual, then you can use these responses as part of your analysis.
+If your agency is required to undertake certification and accreditation of its ICT system under the [New Zealand Information Security Manual](https://go.microsoft.com/fwlink/p/?linkid=2099496), then you can use these responses as part of your analysis.
 
 ## Resources
 
@@ -59,7 +58,7 @@ If your agency is required to undertake certification and accreditation of its I
 - [NZ Government requirements for cloud computing](http://aka.ms/NZ-Cloud-Requirements)
 - [Cloud Computing: Information Security and Privacy Considerations (ISPC)](http://aka.ms/NZ-Cloud-Computing-Considerations)
 - [Microsoft Online Services Terms](http://aka.ms/Online-Services-Terms)
-- [Office 365: SEEMail Integration and Reference Architecture](http://download.microsoft.com/download/8/5/9/859CDCEE-D293-47D8-9B6A-670B108B48E1/Microsoft_Office_365_white_paper_EN_US.pdf) (additional Microsoft NZ guidance on cloud service adoption)
+- [Office 365: SEEMail Integration and Reference Architecture</span>](http://download.microsoft.com/download/8/5/9/859CDCEE-D293-47D8-9B6A-670B108B48E1/Microsoft_Office_365_white_paper_EN_US.pdf) (additional Microsoft NZ guidance on cloud service adoption)
 
 ## Microsoft responses to “Cloud Computing IPSC”
 

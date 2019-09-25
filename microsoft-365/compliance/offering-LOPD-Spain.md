@@ -19,13 +19,20 @@ hideEdit: true
 
 The AEPD is the public authority that oversees compliance with Spanish Organic Law 15/1999 for the Protection of Personal Data ([Ley Orgánica 15/1999 de Protección de Datos](https://www.boe.es/buscar/act.php?id=BOE-A-1999-23750), or LOPD), including the transfer of data across international boundaries. In 2014, the AEPD reviewed Microsoft’s terms and conditions applicable to the EU Model Clauses-covered Microsoft Azure, Dynamics 365, and Office 365, and issued a resolution determining that those terms provided adequate safeguards for customers to move their personal data to those services.
 
-Title VIII of LOPD also establishes stringent requirements for processing personal data, including a specific listing of basic, intermediate-level, and high-level security measures that must be implemented. Microsoft retained an independent third-party auditing firm in Spain, BDO Auditores, to assess Microsoft Azure and Office 365 for compliance with the high-level requirements and Microsoft Dynamics 365 for compliance with the intermediate-level requirements established in Royal Decree 1720/2007. Based on interviews, visits to facilities, and a review of the environmental and physical security measures and controls, the auditor determined that Microsoft Azure and Office 365 information systems, facilities, and data processing met the high-level standard with no points requiring correction.
+Title VIII of Royal Decree 1720/2007 establishes stringent requirements for processing personal data, including a specific listing of basic, intermediate-level, and high-level security measures that must be implemented. Microsoft retained an independent third-party auditing firm in Spain, BDO Auditores, to assess Microsoft Azure and Office 365 for compliance with the high-level requirements and Microsoft Dynamics 365 for compliance with the intermediate-level requirements established in Royal Decree 1720/2007. Based on interviews, visits to facilities, and a review of the environmental and physical security measures and controls, the auditor determined that Microsoft Azure and Office 365 information systems, facilities, and data processing met the high-level standard with no points requiring correction.
 
 ## Microsoft and Spanish Royal Decree 1720/2007, Spanish Organic Law 15/1999
 
 Microsoft was the first hyper-scale cloud service provider to receive, for the benefit of its customers, an authorization from the Spanish Data Protection Agency (Agencia Española de Protección de Datos, or AEPD) for its compliance with the high standards governing international data transfer under Spanish Organic Law 15/1999 (Ley Orgánica 15/1999 de Protección de Datos, or LOPD). Microsoft is also the first hyper-scale cloud service provider to obtain a third-party audit certification for its online services’ compliance with the security measures set forth in Title VIII of Royal Decree 1720/2007. This authorization lets customers make transfers of personal data to Microsoft Azure, Dynamics 365, and Office 365 services covered by the European Union Model Clauses.
 
-## Audits, reports, and certificates
+## Microsoft in-scope cloud services
+
+- [Microsoft Azure](https://aka.ms/AzureCompliance)
+- [Microsoft Dynamics 365](https://aka.ms/d365-compliance-list)
+- Intune
+- [Microsoft Office 365](https://aka.ms/o365-compliance-framework)
+
+## Audits, reports and certificates
 
 ### Microsoft Azure
 
@@ -39,16 +46,8 @@ Microsoft was the first hyper-scale cloud service provider to receive, for the b
 
 ### Microsoft Dynamics 365
 
-- [Certification](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=12df3501-4070-4bc7-8b0b-b9ce2c873d7f&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_GRC_Assessment_Reports) (Spanish)
 - [Audit report](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=1339c931-f316-4521-88fc-d60ef1d84106&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_GRC_Assessment_Reports) (Spanish)
 - [Audit report](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=9efdba37-fa64-4d09-9703-714187435024&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_GRC_Assessment_Reports) (English)
-
-## Microsoft in-scope cloud services
-
-- [Microsoft Azure](https://aka.ms/AzureCompliance)
-- [Microsoft Dynamics 365](https://aka.ms/d365-compliance-list)
-- Intune
-- [Microsoft Office 365](https://aka.ms/o365-compliance-framework)
 
 ## Frequently asked questions
 

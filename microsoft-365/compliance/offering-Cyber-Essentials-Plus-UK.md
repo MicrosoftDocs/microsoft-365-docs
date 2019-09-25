@@ -26,21 +26,19 @@ Cyber Essentials is a UK government-backed scheme designed to help organizations
 The Cyber Essentials scheme is designed for UK government suppliers to identify potential weaknesses in their IT systems and software that could exploit customer data. The methodology has defined two different levels of certification:
 
 - Cyber Essentials is the first level and includes a self-assessment for organizations to check the most important IT security controls of their IT infrastructure. The responses are independently reviewed by an external certifying body.
-
-Cyber Essentials PLUS offers the same controls coverage as Cyber Essentials and also includes additional assurance by carrying out systems tests of implemented controls through an authorized third-party certifying body.
+- Cyber Essentials PLUS offers the same controls coverage as Cyber Essentials and also includes additional assurance by carrying out systems tests of implemented controls through an authorized third party certifying body.
 
 ## Microsoft and UK Cyber Essentials PLUS
 
-Microsoft Azure has attained Cyber Essentials PLUS badge and meets the requirements outlined in the [Cyber Essentials Scheme Assurance Framework](https://www.cyberaware.gov.uk/cyberessentials/files/assurance-framework.pdf). Azure production systems are frequently tested and audited to provide evidence of a world-leading compliance portfolio.
+Microsoft Azure has attained Cyber Essentials PLUS badge and meets the requirements outlined in the [Cyber Essentials Scheme](https://go.microsoft.com/fwlink/p/?linkid=2099398). Azure production systems are frequently tested and audited to provide evidence of a world-leading compliance portfolio.
 
 The [Azure Cyber Essentials PLUS certification](https://aka.ms/AzureCyberEPlusCert), which applies to our global operation of Azure, is available for download.
 
-## Audits, reports, and certificates
+## Audits, Reports and certificates
 
 - [Azure Cyber Essentials PLUS compliance report](https://aka.ms/AzureCyberEPlusReport)
 - [Azure Cyber Essentials PLUS certification](https://aka.ms/AzureCyberEPlusCert)
 
 ## Resources
 
-- [United Kingdom Cyber Essentials PLUS](https://www.cyberaware.gov.uk/cyberessentials/)
 - [Cyber Essentials Scheme: Assurance framework](https://www.cyberaware.gov.uk/cyberessentials/files/assurance-framework.pdf)
