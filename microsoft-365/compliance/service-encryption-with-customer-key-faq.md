@@ -68,7 +68,7 @@ Yes. You can use the Windows PowerShell cmdlet Set-MailUser to assign a data enc
   
 If the mailboxes aren't encrypted after waiting 72 hours from the time you assigned the DEP, initiate a mailbox move. To do this, [connect to Exchange Online using remote PowerShell](https://technet.microsoft.com/en-us/library/jj984289%28v=exchg.160%29.aspx) and then use the New-MoveRequest cmdlet and provide the alias of the mailbox as follows:
   
-```
+```powershell
 New-MoveRequest <alias>
 ```
 
@@ -101,7 +101,7 @@ For SharePoint Online, the Office 365 Administrator who configures Customer Key 
   
 For Exchange Online, "user" mailboxes and "mail user" mailboxes must be licensed. All others, such as shared mailboxes, are not required to have a license for Customer Key. To check that your Exchange Online mailbox is properly licensed, run the following cmdlet:
   
-```
+```powershell
 (Get-Mailbox <alias >).PersistedCapabilities
 ```
 
@@ -112,7 +112,6 @@ If the string BPOS_S_EquivioAnalytics exists, then the mailbox is properly licen
 No. By definition, trial subscriptions have a limited lifetime. Encryption keys that are hosted in trial subscriptions can be lost at the end of the trial lifetime. Because Microsoft cannot and does not prevent customers from putting important customer data in trial subscriptions, the use of Customer Key with trial subscriptions is prohibited.
   
 ## How much will using Customer Key cost?
-
 
 In addition to the licensing required for Customer Key, customers will incur a cost for Key Vault usage. [Azure Key Vault pricing details](https://azure.microsoft.com/en-us/pricing/details/key-vault/) describes the cost model and will assist with estimating. There is no way to predict the exact cost that any customer will incur because usage patterns vary. Experience has shown that the cost is very low and generally falls within the range of $0.002 to $0.005 per user per month plus the cost of HSM-backed keys. The cost will also vary according to the logging configuration chosen by the customer and the amount of Azure storage used for Azure Key Vault logs. 
   
