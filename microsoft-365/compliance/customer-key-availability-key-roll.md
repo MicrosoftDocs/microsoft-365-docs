@@ -51,7 +51,7 @@ To roll either of the Azure Key Vault keys used with Exchange Online and Skype f
 
    Within 72 hours, the active mailboxes encrypted by this policy become associated with the updated key.
 
-2. To check the value for the DataEncryptionPolicyID property for the mailbox, use the steps in [Determine the DEP assigned to a mailbox](controlling-your-data-using-customer-key.md#DeterminemailboxDEP). The value for this property changes once the service applies the updated key.
+2. To check the value for the DataEncryptionPolicyID property for the mailbox, use the steps in [Determine the DEP assigned to a mailbox](customer-key-manage.md#DeterminemailboxDEP). The value for this property changes once the service applies the updated key.
   
 ## Roll the Customer Key for SharePoint Online, including Team Sites, and OneDrive for Business
 
@@ -75,7 +75,7 @@ To roll either of the Azure Key Vault keys used with SharePoint Online and OneDr
 
 ## Roll the availability key
 
-To roll the availability key, you create a new DEP. Office 365 rolls the availability keys on an internally defined schedule. There is no customer-facing service-level agreement (SLA) for these key rolls.
+To roll the availability key, you create a new DEP. Office 365 rolls the availability keys on an internally defined schedule. There is no customer-facing, service-level agreement (SLA) for these key rolls.
 
 ## Related articles
 
