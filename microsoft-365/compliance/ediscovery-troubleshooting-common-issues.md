@@ -139,7 +139,7 @@ Get-ComplianceSearchAction |fl
 
 ## Error/issue "Internal server error (500) occurred"
 
-![internal server error (500)](media\edisc-tshoot-error-500.png)
+![internal server error 500](media\edisc-tshoot-error-500.png)
 
 ### Details 
 When running an eDiscovery search, if the search continually fails with error similar to "Internal server error (500) occurred, you may need re-run the search only on specific mailbox locations.
