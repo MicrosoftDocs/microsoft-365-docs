@@ -138,7 +138,7 @@ Yes. If your business requires ISO/IEC 27001 certification for implementations d
 
 - [Mapping Microsoft Cyber Offerings to: NIST Cybersecurity (CSF),CIS Controls and ISO27001:2013 Frameworks](http://download.microsoft.com/download/B/1/8/B18F4C7D-5CBA-4E68-A437-31F1E908ACBA/Microsoft_Cyber_Offerings_Mapped_to_Security_Frameworks_EN_US.pdf)
 - [The ISO/IEC 27000 Directory](http://www.27000.org/index.htm)
-- [ISO/IEC 27001: 2013 standard</span>](http://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.htm?csnumber=54534) (for purchase)
+- [ISO/IEC 27001: 2013 standard](http://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.htm?csnumber=54534) (for purchase)
 - [Microsoft sets a high bar for information security](http://pages.bsigroup.com/l/73472/2015-07-24/v9btr) (BSI case study)
 - [Microsoft Common Controls Hub Compliance Framework](https://www.microsoft.com/en-us/trustcenter/common-controls-hub)
 - [Microsoft Online Services Terms](http://aka.ms/Online-Services-Terms)

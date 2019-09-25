@@ -58,16 +58,16 @@ Certification is valid for three years, with a yearly surveillance audit to be c
 
 ### Microsoft MTCS certification
 
-- [Microsoft Azure and Other Online Services</span>](https://go.microsoft.com/fwlink/p/?linkid=2092614)
-- [Dynamics 365</span>](https://go.microsoft.com/fwlink/p/?linkid=2092451)
-- [Office 365</span>](https://go.microsoft.com/fwlink/p/?linkid=2092719)
+- [Microsoft Azure and Other Online Services](https://go.microsoft.com/fwlink/p/?linkid=2092614)
+- [Dynamics 365](https://go.microsoft.com/fwlink/p/?linkid=2092451)
+- [Office 365](https://go.microsoft.com/fwlink/p/?linkid=2092719)
 
 ### Microsoft MTCS cloud service provider disclosure
 
-- [Microsoft Azure and Other Online Services</span>](https://go.microsoft.com/fwlink/p/?linkid=2092614)
-- [Dynamics 365</span>](https://go.microsoft.com/fwlink/p/?linkid=2092720)
-- [Intune</span>](https://go.microsoft.com/fwlink/p/?linkid=2099397)
-- [Office 365</span>](https://go.microsoft.com/fwlink/p/?linkid=2092550)
+- [Microsoft Azure and Other Online Services](https://go.microsoft.com/fwlink/p/?linkid=2092614)
+- [Dynamics 365](https://go.microsoft.com/fwlink/p/?linkid=2092720)
+- [Intune](https://go.microsoft.com/fwlink/p/?linkid=2099397)
+- [Office 365](https://go.microsoft.com/fwlink/p/?linkid=2092550)
 
 ## Frequently asked questions
 

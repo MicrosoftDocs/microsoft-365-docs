@@ -83,5 +83,5 @@ Compliance involves several factors, including assessing the systems and process
 - [PCI Data Security Standard](https://www.pcisecuritystandards.org/documents/PCI_DSS_v3-1.pdf)
 - [Azure PCI DSS Attestation of Compliance Package](https://go.microsoft.com/fwlink/p/?linkid=2099705)
 - [Azure PCI DSS 3.2 Responsibility Matrix](https://aka.ms/pciresponsibilitymatrix)
-- [PCI DSS Quick Reference Guide</span>](https://www.pcisecuritystandards.org/documents/PCISSC%20QRG%20August%202014%20-print.pdf) for merchants and others involved in payment card processing
+- [PCI DSS Quick Reference Guide](https://www.pcisecuritystandards.org/documents/PCISSC%20QRG%20August%202014%20-print.pdf) for merchants and others involved in payment card processing
 - [Microsoft Common Controls Hub Compliance Framework](https://www.microsoft.com/en-us/trustcenter/common-controls-hub)

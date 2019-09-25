@@ -37,7 +37,7 @@ The NHS IG Toolkit is intended to:
 
 ## Microsoft and NHS IG Toolkit
 
-As a commercial third party, Microsoft Azure has completed level 2 of the [<span class="underline">NHS IG Toolkit assessment</span>](https://www.igt.hscic.gov.uk/AssessmentReportCriteria.aspx?tk=427399452776248&lnv=3&cb=48ea00e0-c594-4758-8634-f22b6efa0c39&sViewOrgId=50721&sDesc=8JH14). Interim assessments are also expected to be completed during the year when a new version of the NHS IG Toolkit is released.
+As a commercial third party, Microsoft Azure has completed level 2 of the [NHS IG Toolkit assessment](https://www.igt.hscic.gov.uk/AssessmentReportCriteria.aspx?tk=427399452776248&lnv=3&cb=48ea00e0-c594-4758-8634-f22b6efa0c39&sViewOrgId=50721&sDesc=8JH14). Interim assessments are also expected to be completed during the year when a new version of the NHS IG Toolkit is released.
 
 ## Microsoft in-scope cloud services
 

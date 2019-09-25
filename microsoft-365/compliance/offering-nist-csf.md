@@ -21,7 +21,7 @@ The National Institute of Standards and Technology (NIST) promotes and maintains
 
 The main priorities of the FICIC were to establish a set of standards and practices to help organizations manage cybersecurity risk, while enabling business efficiency. The NIST Framework addresses cybersecurity risk without imposing additional regulatory requirements for both government and private sector organizations.
 
-The FICIC references globally-recognized standards including NIST SP 800-53 found in Appendix A of the NIST’s [<span class="underline">2014 Framework for Improving Critical Infrastructure Cybersecurity</span>](https://www.nist.gov/sites/default/files/documents/cyberframework/cybersecurity-framework-021214.pdf). Each control within the FICIC framework is mapped to corresponding NIST 800-53 controls within the FedRAMP Moderate Baseline.
+The FICIC references globally-recognized standards including NIST SP 800-53 found in Appendix A of the NIST’s [2014 Framework for Improving Critical Infrastructure Cybersecurity](https://www.nist.gov/sites/default/files/documents/cyberframework/cybersecurity-framework-021214.pdf). Each control within the FICIC framework is mapped to corresponding NIST 800-53 controls within the FedRAMP Moderate Baseline.
 
 ## Microsoft and the NIST CSF
 
