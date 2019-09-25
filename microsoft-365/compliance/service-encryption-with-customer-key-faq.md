@@ -36,12 +36,6 @@ Both options enable you to provide and control your own encryption keys; however
   
 BYOK with Azure Information Protection for Exchange Online is offered in the Office 365 Message Encryption capabilities.
   
-## Does Office 365 Message Encryption and Bring Your Own Key with Azure Information Protection change Microsoft's approach to third-party data requests such as subpoenas?
-
-No. Office 365 Message Encryption and the option to provide and control your own encryption keys with Bring Your Own Key (BYOK) for Azure Information Protection was not designed to respond to law enforcement subpoenas. Office 365 Message Encryption with BYOK for AIP was designed for compliance focused customers that need to meet their internal or external compliance obligations. Microsoft takes third-party requests for customer data very seriously. As a cloud service provider, we always advocate for the privacy of customer data. In the event we get a subpoena, we always attempt to redirect the third party to the customer to obtain the information. (Please read Brad Smith's blog: [Protecting customer data from government snooping](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)). We periodically publish detailed information of the request we receive [here](https://www.microsoft.com/en-us/trustcenter/Privacy/govt-requests-for-data).
-  
-See the [Microsoft Trust Center](https://www.microsoft.com/en-us/trustcenter/default.aspx) regarding third-party data requests and "Disclosure of Customer Data" in the [Online Services Terms (OST) ](https://www.microsoft.com/en-us/Licensing/product-licensing/products.aspx)for more information.
-  
 ## Does service encryption with Customer Key change Microsoft's approach to third-party data requests such as subpoenas?
 
 No. Customer Key was not designed to respond to law enforcement subpoenas. It was designed for regulated customers to meet their internal or external compliance obligations. Microsoft takes third-party requests for customer data very seriously. As a cloud service provider, we always advocate for the privacy of customer data. In the event we get a subpoena, we always attempt to redirect the third party to the customer to obtain the information. (Please read Brad Smith's blog: [Protecting customer data from government snooping](http://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)). We periodically publish detailed information of the request we receive [here](https://www.microsoft.com/en-us/trustcenter/Privacy/govt-requests-for-data).
@@ -56,7 +50,7 @@ If you need additional support beyond the documentation, contact Microsoft Consu
   
 ## If my keys are destroyed, how can I recover? What is the availability key?
 
-The availability key provides you with the capability to recover from the unanticipated loss of root keys that you manage. For more information about the availability key, see [Understand the availability key for Office 365 Customer Key](customer-key-availability-key.md)
+The availability key provides you with the capability to recover from the unanticipated loss of root keys that you manage. For more information about the availability key, see [Understand the availability key for Office 365 Customer Key](customer-key-availability-key-understand.md).
   
 ## How many data encryption policies (DEPs) can I create?
 
