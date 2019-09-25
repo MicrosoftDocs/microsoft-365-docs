@@ -48,8 +48,7 @@ The output for 'useralias@contoso.com' might be
 > |Name  |RecipientType  |
 > |---------|---------|
 > |Alias, User     |MailUser         |
-> |Alias, User     |MailUser         |
-> |Alias, User     |MailUser         |
+> |Alias, User     |User         |
 
 3. If multiple users are returned, locate and fix the conflicting object.
 
@@ -102,15 +101,78 @@ This error may occur if the user object cannot be found in Exchange Online Prote
 
 ### Resolution
 
-1. Connect to [Exchange Online Protection PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell?view=exchange-ps)
+1. Connect to [Exchange Online Protection PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell?view=exchange-ps).
 1. Check to see if the user object is synced to Exchange Online Protection type:
 
 ```powershell
 Get-Recipient userId|fl
 ```
 
-3. here should be a mailuser object for the user question. If nothing is returned, investigate the user object. Contact CSS if the object can't be synced.
+3. There should be a mailuser object for the user question. If nothing is returned, investigate the user object. Contact CSS if the object can't be synced.
 
-### Error/issue exporting search results is slow
+## Error/issue exporting search results is slow
 
+eDiscovery export is slow when exporting search results from Ediscovery or Content Search in the Security and Compliance center.
+
+### Details
+
+When running eDiscovery export, the download is taking longer than expected.  You can check to see the amount of data to be download and possibly increase your export speed.
+
+### Resolution
+
+1.	Try using the steps identified in the article first [Increase Download Speeds](https://docs.microsoft.com/en-us/office365/securitycompliance/increase-download-speeds-when-exporting-ediscovery-results)
+2.	If you still have issues, connect to [Exchange Online Protection PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell?view=exchange-ps) and type:
+
+```powershell
+Get-ComplianceSearch searchname\fl
+```
+
+4. Find the amount of data to be downloaded in the SearchResults and SearchStatistics parameters.
+5. Type:
+
+```powershell
+Get-ComplianceSearchAction |fl
+```
+
+6. In the results field find the data that has been exported and view and errors encountered.
+7. Check the trace.log file (located in the directory that you exported the content to for any errors.
+
+## Error/issue "Internal server error (500) occurred"
+
+![internal server error (500)](media\edisc-tshoot-error-500.png)
+
+### Details 
+When running an eDiscovery search, if the search continually fails with error similar to "Internal server error (500) occurred, you may need re-run the search only on specific mailbox locations.
+
+### Resolution
+
+1. Rerun the search and break the search into smaller searches.  Try using smaller date range or limit the number of locations being searched.
+2. Connect to [Exchange Online Protection PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell?view=exchange-ps) and type:
+
+```powershell
+Get-ComplianceSearch searchname |fl
+```
+
+3. Examine the output for results and errors.
+3. Examine the trace.log file. It will be in the same folder that you sent the export to.
+4. Contact Support CSS.
+
+## Error/issue holds don't sync
+
+eDiscovery Case Hold Policy Sync Distribution error. 
+
+### Details
+
+"Resources: It's taking longer than expected to deploy the policy. It might take an additional 2 hours to update the final deployment status, so check back in a couple hours.”
+
+### Resolution
+
+1.	Connect to [Exchange Online Protection PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell?view=exchange-ps) and type:
+
+```powershell
+Get-RetentionCompliancePolicy  policyname - Distributiondetail|fl
+```
+2. Examine the value in the Distributiondetail parameter for errors like the following: 
+> If error exists, create escalation to PG to force a manual re-sync on the Policy.
+3. Contact CSS
 
