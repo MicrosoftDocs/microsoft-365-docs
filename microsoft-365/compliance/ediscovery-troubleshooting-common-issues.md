@@ -25,7 +25,7 @@ This topic covers basic troubleshooting steps that you can take to identify and 
 
 the location is ambiguous
 
-"The compliance search contains the following invalid location `(s):useralias@contoso.com. The location "useralias@contoso.com" is ambiguous"`
+"The compliance search contains the following invalid location `(s):*useralias@contoso.com*. The location "useralias@contoso.com" is ambiguous"`
 
 ### Details
 
@@ -35,7 +35,7 @@ You may receive this error if you tried to add user’s mailbox location to sear
 
 Check for duplicate users or distribution list with the same user ID.
 
-1. Connect to [EXO PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
+1. Connect to [Exchange Online PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
 2. Retrieve all instances of the username, type:
 
 ```powershell
@@ -61,4 +61,56 @@ Specific locations in a large search fails
 
 This search completed with # errors.  Would you like to retry the search on the failed locations?
 
+![search specific location fails error screenshot]( media/edisc-tshoot-specific-location-search-fails.png)
+
 ### Resolution
+
+If you receive this error, we recommend that you locate the failed location in the search and re-run the search only on the failed locations.
+
+1. Connect to [Exchange Online Protection Powershell](https://docs.microsoft.com/en-us/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell?view=exchange-ps).
+1. Type:
+
+```powershell
+Get-Compliancesearch searchname|fl 
+```
+
+3. From the PowerShell output, view the failed locations in the Errors field or from the Status details in the error form the Search output.
+1. Retry the Ediscovery Search on the failed locations only
+1. If you continue to receive these error, see [Retry  Failed Locations](https://docs.microsoft.com/en-us/Office365/SecurityCompliance/retry-failed-content-search) for additional troubleshooting steps.
+
+## Error/issue file not found
+“File not found” in the export warnings and errors.csv or skipped items.csv.
+
+### Details
+
+When running an eDiscovery search that includes SharePoint Online and One Drive For Business locations, you may receive error: File Not Found although the file is located on the site.  This may occur if the file cannot be located on the site or the index is out of date. Heres is the text of an actual error, with emphasis added.
+  
+> 28.06.2019 10:02:19_FailedToExportItem_Failed to download content. Additional diagnostic info : Microsoft.Office.Compliance.EDiscovery.ExportWorker.Exceptions.ContentDownloadTemporaryFailure: Failed to download from content 6ea52149-91cd-4965-b5bb-82ca6a3ec9be of type Document. Correlation Id: 3bd84722-937b-4c23-b61b-08d6fba9ec32. ServerErrorCode: -2147024894 ---> Microsoft.SharePoint.Client.ServerException: ***File Not Found***. at Microsoft.SharePoint.Client.ClientRequest.ProcessResponseStream(Stream responseStream) at Microsoft.SharePoint.Client.ClientRequest.ProcessResponse()
+--- End of inner exception stack trace ---
+
+### Resolution
+
+1. Check location identified in the search to ensure the correct locations have been verified and added in the search locations.
+2. Use the procedures at [Manually request crawling and re-indexing of a site, a library or a list](https://docs.microsoft.com/en-us/sharepoint/crawl-site-content) to re-index the site.
+
+## Error/issue search fails recipient not found
+ eDiscovery search fails with Error: Recipient Not Found
+
+### Details
+
+This error may occur if the user object cannot be found in Exchange Online Protection(EOP) because the object has not synced.
+
+### Resolution
+
+1. Connect to [Exchange Online Protection PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell?view=exchange-ps)
+1. Check to see if the user object is synced to Exchange Online Protection type:
+
+```powershell
+Get-Recipient userId|fl
+```
+
+3. here should be a mailuser object for the user question. If nothing is returned, investigate the user object. Contact CSS if the object can't be synced.
+
+### Error/issue exporting search results is slow
+
+
