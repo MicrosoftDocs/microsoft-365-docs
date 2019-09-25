@@ -64,3 +64,25 @@ In addition to the policies for users who are internal to your business or organ
 External access is sometimes confused with guest access, so it's important to be clear that these two access mechanisms are actually quite different. While guest access occurs on a per-user basis (you add one user at a time), external access allows you to add all the users of an external domain at the same time, but they have less access than an individual who's been added via guest access would have. External access users can chat with your internal users via Teams.
 
 For more reading about external access, and how to implement it, please review [Manage external access in Microsoft Teams](https://docs.microsoft.com/en-us/microsoftteams/manage-external-access)
+
+## Teams and Channels Policies
+
+Teams and channels are two commonly used elements in Microsoft Teams, and there are policies you can put in place to control what users can and cannot do in these locations. While you can create a global team, if your organization is less than 5000 people strong, you are likely to find it helpful to have smaller teams and channels for specific purposes, in-line with your organizational needs.
+
+Custom policies would likely be helpful in that scenario, and you can learn more about them at this link: [Manage teams policies in Microsoft Teams](https://docs.microsoft.com/en-us/microsoftteams/teams-policies).
+
+## Messaging Policies
+
+Messaging, or chat, can also be managed through the default global policy, or through custom policies, and this can help your users communicate with one another in a way that's appropriate for your organization. This information can be reviewed at [Managing messaging policies in Teams](https://docs.microsoft.com/en-us/microsoftteams/messaging-policies-in-teams).
+
+## App Permission Policies
+
+Teams also allows you to use apps in various places, such as channels or personal chats. Having policies around what apps can be added and used, and where, is essential to maintaining a content-rich environment that is also secure.
+
+For more reading about App Permission Policies, check out [Manage app permission policies in Microsoft Teams](https://docs.microsoft.com/en-us/microsoftteams/teams-app-permission-policies).
+
+## Meeting Policies
+
+No discussion of Teams would be complete without planning and implementing policies around Teams meetings.
+
+Please review [Manage meeting policies in Teams](https://docs.microsoft.com/en-us/microsoftteams/meeting-policies-in-teams) for more information.
