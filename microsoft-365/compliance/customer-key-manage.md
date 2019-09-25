@@ -17,12 +17,10 @@ description: "After you setup Customer Key, learn how to manage it by restoring 
 ---
 
 # Manage Customer Key for Office 365
-<a name="ManageCustomerKey"> </a>
 
 After you've set up Customer Key for Office 365, you can manage your keys as described in this article and learn more about Customer Key in the related topics.
 
 ## Restore Azure Key Vault keys
-<a name="RestoreAzureKeyVaultKeys"> </a>
 
 Before performing a restore, use the recovery capabilities provided by soft delete. All keys that are used with Customer Key are required to have soft delete enabled. Soft delete acts like a recycle bin and allows recovery for up to 90 days without the need to restore. Restore should only be required in extreme or unusual circumstances, for example if the key or key vault is lost. If you must restore a key for use with Customer Key, in Azure PowerShell, run the Restore-AzureKeyVaultKey cmdlet as follows:
   
@@ -39,10 +37,9 @@ Restore-AzureKeyVaultKey -VaultName Contoso-O365EX-NA-VaultA1 -InputFile Contoso
 If the key vault already contains a key with the same name, the restore operation fails. Restore-AzureKeyVaultKey restores all key versions and all metadata for the key including the key name.
   
 ## Manage key vault permissions
-<a name="Managekeyvaultperms"> </a>
 
 Several cmdlets are available that enable you to view and, if necessary, remove key vault permissions. You might need to remove permissions, for example, when an employee leaves the team.
-  
+ 
 To view key vault permissions, run the Get-AzureRmKeyVault cmdlet:
   
 ```powershell
@@ -85,6 +82,21 @@ Get-DataEncryptionPolicy <GUID>
 ```
 
 Where *GUID* is the GUID returned by the Get-MailboxStatistics cmdlet in the previous step.
+
+## Encryption ciphers used by Customer Key
+
+> [!IMPORTANT]
+> **@Reviewers!!**  Need to redo these graphics these are placeholders for now. Please confirm the data on them is still accurate. Also, I'd like to remove the "microsoft-managed" from the SPO piece as this will undoubtedly cause confusion. @Jeff McDowell Please verify
+
+Customer Key uses a variety of encryption ciphers to encrypt keys as shown in the following figures.
+
+### Encryption ciphers used to encrypt keys for Exchange Online and Skype for Business
+
+![Encryption ciphers for Exchange Online Customer Key](media/customerkeyexoencryptcipher.png)
+
+### Encryption ciphers used to encrypt keys for SharePoint Online and OneDrive for Business
+
+![Encryption ciphers for SharePoint Online Customer Key](media/customerkeyspoencryptcipher.png)
 
 ## Related articles
 

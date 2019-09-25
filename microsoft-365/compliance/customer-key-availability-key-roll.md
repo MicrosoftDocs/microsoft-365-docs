@@ -73,7 +73,7 @@ SharePoint Online only allows you to roll one key at a time. If you want to roll
 
 ## Roll the availability key
 
-Microsoft does not expose direct control of the availability key to customers. For example, you can only rotate (roll) the keys that you own in Azure Key Vault. To roll the availability key, you create a new DEP. Office 365 rolls the availability keys on an internally defined schedule. There is no customer-facing, service-level agreement (SLA) for these key rolls. For more information about the availability key, see - [Understand the availability key](customer-key-availability-key-understand.md).
+Microsoft does not expose direct control of the availability key to customers. For example, you can only rotate (roll) the keys that you own in Azure Key Vault. To roll the availability key, you create a new DEP. Office 365 rolls the availability keys on an internally defined schedule. There is no customer-facing, service-level agreement (SLA) for these key rolls. Office 365 rotates the availability key using O365 service code in a touchless, non-manual process. Microsoft administrators may initiate the process, but no one logs into the availability key store and manually rotates the availability key. To be clear, that type of access does not exist. Availability key rotation occurs using Office 365 service code, which also leverages the mechanism to initially generate the key. For more information about the availability key, see [Understand the availability key](customer-key-availability-key-understand.md).
 
 ## Related articles
 

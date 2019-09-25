@@ -51,7 +51,15 @@ The availability key is not a back door – Microsoft is transparent about the e
 
 ## Access to the availability key
 
-Microsoft does not expose direct control of the availability key to customers. For example, you can only rotate (roll) the keys that you own in Azure Key Vault. For more information about rolling the availability key and other keys stored in Azure Key Vault and used by Customer Key, see [Roll or rotate a customer key or an availability key](customer-key-availability-key-roll.md). 
+Microsoft does not expose direct control of the availability key to customers. For example, you can only rotate (roll) the keys that you own in Azure Key Vault. You can't roll the availability key. For more information about rolling the availability key and other keys stored in Azure Key Vault and used by Customer Key, see [Roll or rotate a customer key or an availability key](customer-key-availability-key-roll.md).
+
+Authorized Office 365 services have access to the keys. The services use the key to perform encryption-decryption procedures. Office 365 rotates the availability key using O365 service code in a touchless, non-manual process. Microsoft administrators may initiate the process, but no one logs into the availability key store and manually rotates the availability key. To be clear, that type of access does not exist. Availability key rotation occurs using Office 365 service code, which also leverages the mechanism to initially generate the key.
+
+Microsoft protects the availability key in an access-controlled, internal secret store similar to the customer-facing Azure Key Vault. We implement access controls implemented to prevent Microsoft administrators from directly accessing the secrets contained within. Secret Store operations, including key rotation, revocation, and retrieval occur through automated commands that don't require Microsoft administrator access to the availability key. Access to adjust these commands is limited to specific engineers and requires privilege escalation through an internal tool, Lockbox. Privilege escalation requires manager approval and justification prior to being granted. Lockbox ensures access is time bound with automatic access revocation upon time expiration or engineer log out.
+
+The application layer is the only method through which keys, including the availability key, can be used to decrypt data. Only Office 365 service code has the ability to interpret and traverse the key hierarchy for encryption-decryption activities. Even if a malicious Microsoft administrator were to (somehow) extract an availability key from the secret store, the key would be unusable to access customer data.
+
+Microsoft employs a defense-in-depth strategy to prevent external attackers from impacting the confidentiality, integrity, or availability of customer data stored in the Microsoft Cloud. For more information about the safeguards in place, see [Administrative Access Controls in Office 365](https://docs.microsoft.com/en-us/Office365/securitycompliance/office-365-administrative-access-controls-overview).
 
 ## Availability key audit and logs
 
@@ -166,7 +174,7 @@ As of today, Customer Key is involved in the encryption and decryption chain of 
 
 You control the revocation of all root keys including the availability key. Customer Key provides control of the exit planning aspect of regulatory requirements for you. The data purge feature is not available with Microsoft-managed keys; only Customer Key offers this ability. If you decide to revoke your keys to purge their data and exit the service, the service deletes the availability key. This process takes Microsoft about 72 hours.
 
-The Office 365 core audits and validates this Data Purge Path. For more information, see the SSAE 18 SOC 2 Report available on the [Service Trust Portal](https://servicetrust.microsoft.com/). Microsoft recommends that you review the following documents:
+The Office 365 core audits and validates this Data Purge Path. For more information, see the SSAE 18 SOC 2 Report available on the [Service Trust Portal](https://servicetrust.microsoft.com/). In addition, Microsoft recommends the following documents:
 
 - [Risk Assessment and Compliance Guide for Financial Institutions in the Microsoft Cloud](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=edee9b14-3661-4a16-ba83-c35caf672bd7&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
 
