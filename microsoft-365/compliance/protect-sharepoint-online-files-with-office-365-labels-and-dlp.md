@@ -23,9 +23,10 @@ description: "Summary: Apply retention labels and data loss prevention (DLP) pol
 
  **Summary:** Apply retention labels and data loss prevention (DLP) policies for SharePoint Online team sites with various levels of information protection.
   
-Use the steps in this article to design and deploy retention labels and DLP policies for baseline, sensitive, and highly confidential SharePoint Online team sites. For more information about these three tiers of protection, see [Secure SharePoint Online sites and files](secure-sharepoint-online-sites-and-files.md).
+Use the steps in this article to design and deploy retention labels and DLP policies for baseline, sensitive, and highly confidential SharePoint Online team sites. For more information about these three tiers of protection, see [Secure SharePoint Online sites and files](/security/office-365-security/secure-sharepoint-online-sites-and-files.md).
   
 ## How this works
+
 1. Create the desired retention labels and publish these. It can take up to 12 hours for these to be published.
 2. For the desired SharePoint sites, edit the document library settings to apply the desired retention labels to items in the library.
 3. Create DLP policies to take action based on the retention labels.
@@ -216,9 +217,15 @@ Here is your resulting configuration for high confidentiality SharePoint Online 
     
 ## See Also
 
-[Secure SharePoint Online sites and files](secure-sharepoint-online-sites-and-files.md)
+<<<<<<< HEAD
+[Secure SharePoint Online sites and files](/security/office-365-security/secure-sharepoint-online-sites-and-files.md)
   
-[Microsoft Security Guidance for Political Campaigns, Nonprofits, and Other Agile Organizations](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
+[Microsoft Security Guidance for Political Campaigns, Nonprofits, and Other Agile Organizations](/security/office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
+=======
+[Secure SharePoint Online sites and files](../security/office-365-security/secure-sharepoint-online-sites-and-files.md)
+  
+[Microsoft Security Guidance for Political Campaigns, Nonprofits, and Other Agile Organizations](../security/office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
+>>>>>>> 9904103ea22646c71f6541e03c7491a767a783ce
   
 [Cloud adoption and hybrid solutions](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
 

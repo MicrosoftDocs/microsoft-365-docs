@@ -125,7 +125,7 @@ The following table provides technical details for the Office 365 Message Encryp
 |Message size limits  <br/> |Office 365 Message Encryption can encrypt messages of up to 25 megabytes. For more details about message size limits, see [Exchange Online Limits](http://technet.microsoft.com/library/exchange-online-limits.aspx).  <br/> |
 |Exchange Online email retention policies  <br/> |Exchange Online doesn't store the encrypted messages.  <br/> |
 |Language support for Office 365 Message Encryption  <br/> | Office 365 Message encryption supports Office 365 languages, as follows:  <br/>  Incoming email messages and attached HTML files are localized based on the sender's language settings.  <br/>  The viewing portal is localized based on the recipient's browser settings.  <br/>  The body (content) of the encrypted message isn't localized.  <br/> |
-|Privacy information for OME Portal and OME Viewer App  <br/> |The [Office 365 Messaging Encryption Portal privacy statement](protected-message-viewer-portal-privacy-statement.md) provides detailed information about what Microsoft does and doesn't do with your private information.  <br/> |
+|Privacy information for OME Portal and OME Viewer App  <br/> |The [Office 365 Messaging Encryption Portal privacy statement](https://privacy.microsoft.com/en-US/privacystatement) provides detailed information about what Microsoft does and doesn't do with your private information.  <br/> |
 
 ## Frequently Asked Questions about legacy OME
 <a name="LegacyServiceInfo"> </a>
@@ -212,5 +212,5 @@ There isn't a report that shows if an encrypted message has been viewed, but the
   
  **Q. What does Microsoft do with the information I provide through the OME Portal and the OME Viewer App?**
   
-The [Office 365 Messaging Encryption Portal privacy statement](protected-message-viewer-portal-privacy-statement.md) provides detailed information about what Microsoft does and doesn't do with your private information.
+The [Office 365 Messaging Encryption Portal privacy statement](https://privacy.microsoft.com/en-US/privacystatement) provides detailed information about what Microsoft does and doesn't do with your private information.
  

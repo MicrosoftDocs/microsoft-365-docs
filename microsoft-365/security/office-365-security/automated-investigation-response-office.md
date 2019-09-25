@@ -3,7 +3,7 @@ title: "Automated investigation and response (AIR) in Office 365"
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 09/04/2019
+ms.date: 09/18/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -17,10 +17,12 @@ description: "Learn about Automated Investigation and Response capabilities in O
 
 # Automated investigation and response (AIR) in Office 365
 
-Automated investigation and response (AIR) capabilities (included in [Office 365 Advanced Threat Protection](office-365-atp.md) Plan 2) enable you to run automated investigation processes in response to well known threats that exist today. Read this article to get an overview of AIR and how it can help your organization and security operations teams mitigate threats more effectively and efficiently. To get started using AIR, see [Automatically investigate and respond to threats in Office 365](office-365-air.md).
+Automated investigation and response (AIR) capabilities (included in [Office 365 Advanced Threat Protection](office-365-atp.md) Plan 2) enable you to run automated investigation processes in response to well known threats that exist today. AIR can help your security operations team operate more efficiently and effectively.
+- To get an overview how AIR works, use this article.
+- To get started using AIR, see [Automatically investigate and respond to threats in Office 365](office-365-air.md).
 
 > [!NOTE]
-> You must be a global administrator, security administrator, security operator, or security reader to perform the tasks described in this article. To learn more, see [Microsoft 365 security center: roles and permissions](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions).
+> You must be a global administrator, security administrator, security operator, or security reader to access AIR capabilities. To learn more about these permissions, see [Microsoft 365 security center: roles and permissions](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions).
 
 ## The overall flow of AIR
 
@@ -51,7 +53,7 @@ In the initial release of AIR (beginning April 2019), alerts generated from foll
 - Email messages containing phish URLs removed after delivery*
 
 > [!NOTE]
-> These alerts have been assigned an "Informational" severity in the respective alert policies within the Security & Compliance Center with email notifications turned off. These can be turned on through the Alert policy configuration.
+> The alerts marked with an asterisk are assigned an *Informational* severity in the respective alert policies within the Security & Compliance Center, with email notifications turned off. Email notifications can be turned on through [Alert policy configuration](../../compliance/alert-policies.md#alert-policy-settings).
 
 To view alerts, in the Security & Compliance Center, choose **Alerts** > **View alerts**. Select an alert to view its details, and from there, use the **View investigation** link to go to the corresponding [investigation](#investigation-graph). Note that informational alerts are hidden in the alert view by default. To see them, you need to change the alert filtering to include informational alerts.
 

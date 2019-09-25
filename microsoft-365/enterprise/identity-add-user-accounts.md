@@ -1,9 +1,9 @@
 ---
-title: "Step 3: Configure hybrid identity"
+title: "Step 4: Add your user accounts"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/06/2019
+ms.date: 09/20/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,23 +12,32 @@ ms.collection:
 - M365-identity-device-management
 - Strat_O365_Enterprise
 ms.custom:
-description: Understand identity options and configure Azure AD Connect to synchronize your on-premises Active Directory Domain Services (AD DS) with Azure AD.
+description: Add user accounts and groups either directly in the cloud or through synchronizing with your on-premises directory.
 ---
 
-# Step 3: Configure hybrid identity
+# Step 4: Add your user accounts
 
 ![](./media/deploy-foundation-infrastructure/identity_icon-small.png)
 
+<a name="identity-cloud-only"></a>
+## Create your user accounts for cloud-only identity
+
+For cloud-only identity, create your users and groups in Azure Active Directory (Azure AD). You can use:
+
+- The Microsoft 365 admin center
+- The Azure portal
+- Azure PowerShell
+
 <a name="identity-sync"></a>
-## Synchronize identities
+## Synchronize identities for hybrid identity
 
 *This is required for hybrid environments and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
 
-In this section, you'll synchronize your on-premises Active Directory Domain Services (AD DS) with the Azure Active Directory (Azure AD) tenant used by Office 365, Microsoft Intune, and other cloud-based services included with Microsoft 365 Enterprise.
+In this section, you'll synchronize your on-premises Active Directory Domain Services (AD DS) with the Azure AD tenant used by Office 365, Microsoft Intune, and other cloud-based services included with Microsoft 365 Enterprise.
 
 Azure AD Connect is the supported Microsoft tool that guides you through synchronizing only the identities you really need from single or multi-forest AD DS environments to your Azure AD tenant. The following figure shows the basic process for Azure AD Connect synchronization.
 
-![How Azure AD Connect synchronizes your on-premises directory with Azure AD](./media/identity-azure-ad-connect/azure-ad-connect.png)
+![How Azure AD Connect synchronizes your on-premises directory with Azure AD](./media/identity-add-user-accounts/azure-ad-connect.png)
 
 1. Azure AD Connect running on a server polls AD DS for changes in accounts, groups, and contacts.
 2. Azure AD Connect sends those changes to the Azure AD tenant of your Microsoft 365 subscription.
@@ -36,11 +45,13 @@ Azure AD Connect is the supported Microsoft tool that guides you through synchro
 The first decision in your hybrid identity solution is your authentication requirement. The following options are options:
 
 - With **managed authentication**, Azure AD handles the authentication process for user sign-in. There are two methods for managed authentication: 
-    - **Password Hash Sync (PHS)** [Recommended and required for some premium features]. This is the simplest way to enable authentication for on-premises directory objects in Azure AD. Azure AD Connect extracts the hashed password from AD DS, does extra security processing on the password, and saves it in Azure AD. For more information, see [Implement password hash synchronization with Azure AD Connect sync](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization).
+    - **Password Hash Sync (PHS)** [Recommended and required for some premium features]. This is the simplest way to enable authentication for on-premises directory objects in Azure AD. Azure AD Connect extracts the hashed password from AD DS, does extra security processing on the password hash, and synchronizes it to Azure AD. For more information, see [Implement password hash synchronization with Azure AD Connect sync](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization).
     - **Pass-through Authentication (PTA)** provides a simple password validation solution for Azure AD-based services. PTA uses an agent running on one or more on-premises servers to validate the user authentications directly with your on-premises AD DS. For more information, see [User sign-in with Azure Active Directory Pass-through Authentication](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-pass-through-authentication).
 - With **federated authentication**, the authentication process is redirected to another identity provider through an identity federation server, such as Active Directory Federation Services (AD FS), for a user’s sign-in. The identity provider can provide additional authentication methods, such as smartcard-based authentication. For more information, see [Choosing the right authentication method for your Azure Active Directory hybrid identity solution](https://docs.microsoft.com/azure/security/azure-ad-choose-authn).
 
 Watch this video for an overview of identity models and authentication for Microsoft 365 Enterprise.
+
+<p> </p>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2Pjwu]
 
@@ -70,7 +81,7 @@ As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria
 
 In this section, you'll install an Azure AD Connect Health agent on each of your on-premises AD DS domain controllers to monitor your identity infrastructure and the synchronization services provided by Azure AD Connect. The monitoring information is made available in an Azure AD Connect Health portal, where you can view alerts, performance monitoring, usage analytics, and other information.
 
-![Components of Azure AD Connect Health](./media/identity-azure-ad-connect-health/identity-azure-ad-connect-health.png)
+![Components of Azure AD Connect Health](./media/identity-add-user-accounts/identity-azure-ad-connect-health.png)
 
 The key design decision of how to use Azure AD Connect Health is based on how you are using Azure AD Connect:
 
@@ -84,8 +95,30 @@ When you complete this section, you’ll have:
 
 As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria.md#crit-identity-sync-health) for this section.
 
-## Next step
+
+
+<a name="identity-pw-writeback"></a>
+## Simplify password updates
+
+*This is optional for hybrid environments and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
+
+In this section, you'll allow users to reset their passwords through Azure Active Directory (Azure AD), which is then replicated to your local Active Directory Domain Services (AD DS). This process is known as password writeback. With password writeback, users don’t need to update their passwords through the on-premises AD DS where user accounts and their attributes are stored. This is valuable to roaming or remote users who do not have a remote access connection to the on-premises network.
+
+Password writeback is required to fully utilize Azure AD Identity Protection capabilities, such as requiring users to change their on-premises passwords when there has been a high risk of account compromise detected.
+
+For additional information and configuration instructions, see [Azure AD SSPR with password writeback](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-writeback).
+
+>[!Note]
+>Upgrade to the latest version of Azure AD Connect to ensure the best possible experience and new features as they are released. For more information, see [Custom installation of Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-get-started-custom).
+>
 
 |||
 |:-------|:-----|
-![](./media/stepnumbers/Step4.png)| [Configure secure user authentication](identity-multi-factor-authentication.md)
+|![Test Lab Guides for the Microsoft cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Test Lab Guide: Password writeback](password-writeback-m365-ent-test-environment.md) |
+|||
+
+As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria.md#crit-identity-pw-writeback) for this section.
+
+|||
+|:-------|:-----|
+|![](./media/stepnumbers/Step5.png)| [Use groups for management](identity-use-group-management.md) |

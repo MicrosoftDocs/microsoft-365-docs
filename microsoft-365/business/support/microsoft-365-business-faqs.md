@@ -1,6 +1,6 @@
 ---
 title: Microsoft 365 Business Frequently Asked Questions 
-description: Find answers to the most frequently asked questions about Microsoft 365 Business, a new solution designed for small and midsize businesses (SMB). 
+description: Find answers to the most frequently asked questions about Microsoft 365 Business, a new solution designed for small, and midsize businesses (SMB). 
 author: Sirkkuw
 ms.author: sirkkuw
 ms.topic: article 
@@ -18,9 +18,9 @@ ms.date: 06/08/2018
 ## General
 
 ### What is Microsoft 365 Business? 
-Microsoft 365 is an integrated solution that brings together best-in-class productivity tools, security, and device management capabilities for small to medium-sized businesses. 
+Microsoft 365 is an integrated solution, that brings together best-in-class productivity tools, security, and device management capabilities for small to medium-sized businesses. 
 
-**A holistic set of business productivity and collaboration tools** 
+**A set of business productivity and collaboration tools** 
 * Word, Excel, PowerPoint, Outlook, OneNote, Publisher, and Access 
 * Exchange, OneDrive, Skype for Business, Microsoft Teams, SharePoint 
 * Business apps from Office (Bookings, Outlook Customer Manager, MileIQ<sup>[1](#footnote1)</sup>, Microsoft Invoicing<sup>[1](#footnote1)</sup>) 
@@ -28,7 +28,7 @@ Microsoft 365 is an integrated solution that brings together best-in-class produ
 **Enterprise-grade device management and security capabilities** 
 - Helps provide protection from external threats like phishing & sophisticated malware with Office 365 Advanced Threat Protection and Windows Defender Exploit Guard 
 -  Helps control & manage how sensitive information is accessed and transmitted with Office 365 Data Loss Prevention policies (to be available in summer, 2018) and Azure Information Protection Plan 1 
--  Helps protect, preserve and backup your data with Exchange Online Archiving  
+-  Helps protect, preserve, and backup your data with Exchange Online Archiving  
 -   App protection for Office & other mobile apps with Intune App Protection 
 -  Device management for Windows 10 PCs, MacOS & Mobiles Devices with Intune device management 
 -  Consistent security configuration across devices -  Protection of company data across devices -  Windows Defender, always-on and up-to-date 
@@ -39,6 +39,9 @@ Microsoft 365 is an integrated solution that brings together best-in-class produ
 * Auto-installation of Office apps on Windows 10 PCs 
 * Always up-to-date Office + Windows 10 
 * Streamlined deployment of PCs with Windows AutoPilot
+
+**Enabling Conditional Access**
+- Microsoft 365 Business customers can enable Conditional Access via the Azure Directory settings in the Azure portal. For more information on how to configure Conditional Access policies, please see the article [What is Conditional access](https://docs.microsoft.com/azure/active-directory/conditional-access/overview).
 
 ### Who should consider adopting Microsoft 365 Business? 
 Microsoft 365 Business was built for small and medium-sized customers that have little to no IT resources on staff and want best-in-class productivity and collaboration capabilities of Office 365 together with device management and security solutions that safeguard business data. The Microsoft 365 Business customer is ready to move their IT operations to the cloud and is interested in maintaining a proactive stance to help protect data on both company and employee-owned devices.

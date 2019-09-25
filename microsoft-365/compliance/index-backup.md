@@ -31,7 +31,7 @@ If your organization needs to comply with legal or regulatory standards, you're 
                     - <a href="sensitivity-labels.md">Sensitivity labels</a> <br> 
                     - <a href="data-loss-prevention-policies.md">Data loss prevention (DLP)</a> <br> 
                     - <a href="data-loss-prevention-policies.md">Sensitive information types</a> <br> 
-                    - <a href="tenant-wide-setup-for-increased-security.md">Email encryption</a> </p>
+                    - <a href="../security/office-365-security/tenant-wide-setup-for-increased-security.md">Email encryption</a> </p>
                     </div>
                 </div>
             </div>

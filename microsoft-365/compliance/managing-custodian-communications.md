@@ -59,4 +59,4 @@ To create and manage legal hold notifications, a user must be part of the follow
     - Manage any case in the organization after they add themselves as a member of the case.
     - Access case data in Advanced eDiscovery for any case in the organization.
 
-For more information, see [Assign eDiscovery permissions in the Security & Compliance Center](../assign-ediscovery-permissions.md).
+For more information, see [Assign eDiscovery permissions in the Security & Compliance Center](assign-ediscovery-permissions.md).

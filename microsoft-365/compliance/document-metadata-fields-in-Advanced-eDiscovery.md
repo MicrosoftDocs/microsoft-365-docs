@@ -145,4 +145,4 @@ The following table lists the metadata fields for documents in a review set in a
 ||||||
 
   > [!NOTE]
-  > For more information about searchable fields when searching directly against Office 365, refer to [Keyword queries and search conditions for Content Search](https://docs.microsoft.com/en-us/office365/securitycompliance/keyword-queries-and-search-conditions)
+  > For more information about searchable fields when searching directly against Office 365, refer to [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md)

@@ -69,4 +69,4 @@ The following table contains links to topics that will help you use eDiscovery c
 
 The Advanced eDiscovery solution in Microsoft 365 builds on the existing eDiscovery and analytics capabilities in Office 365. This new solution, called *Advanced eDiscovery*, provides an end-to-end workflow to preserve, collect, review, analyze, and export content that's responsive to your organization's internal and external investigations. It also lets legal teams manage the entire legal hold notification workflow to communicate with custodians involved in a case. 
 
-For more information, see [Overview of the Advanced eDiscovery solution in Microsoft 365](compliance20/overview-ediscovery-20.md).
+For more information, see [Overview of the Advanced eDiscovery solution in Microsoft 365](overview-ediscovery-20.md).

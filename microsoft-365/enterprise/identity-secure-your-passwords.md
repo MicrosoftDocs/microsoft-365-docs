@@ -1,9 +1,9 @@
 ---
-title: "Step 5: Simplify access for users"
+title: "Step 2: Secure your passwords"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/06/2019
+ms.date: 09/20/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,35 +12,31 @@ ms.collection:
 - M365-identity-device-management
 - Strat_O365_Enterprise
 ms.custom:
-description: Understand and configure self-service password reset (SSPR) for Azure AD.
+description: You need to make your passwords strong and manageable across your organization.
 ---
 
-# Step 5: Simplify access for users
+# Step 2: Secure your passwords
 
 ![](./media/deploy-foundation-infrastructure/identity_icon-small.png)
 
+<a name="identity-password-prot"></a>
+## Prevent bad passwords
 
-<a name="identity-pw-writeback"></a>
-## Simplify password updates
+*This is optional and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
 
-*This is optional for hybrid environments and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
+All you users should be using [Microsoft's password guidance](https://www.microsoft.com/research/publication/password-guidance/) to create their user account passwords.
 
-In this section, you'll allow users to reset their passwords through Azure Active Directory (Azure AD), which is then replicated to your local Active Directory Domain Services (AD DS). This process is known as password writeback. With password writeback, users don’t need to update their passwords through the on-premises AD DS where user accounts and their attributes are stored. This is valuable to roaming or remote users who do not have a remote access connection to the on-premises network.
+To prevent users from creating easily determined password, use Azure AD password protection, which uses both a global banned password list and an optional custom banned password list that you specify. For example, you can specify terms that are specific to your organization, such as:
 
-Password writeback is required to fully utilize Azure AD Identity Protection capabilities, such as requiring users to change their on-premises passwords when there has been a high risk of account compromise detected.
+- Brand names
+- Product names
+- Locations (for example, such as company headquarters)
+- Company-specific internal terms
+- Abbreviations that have specific company meaning
 
-For additional information and configuration instructions, see [Azure AD SSPR with password writeback](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-writeback).
+You can ban bad passwords [in the cloud](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad) and for your [on-premises Active Directory Domain Services (AD DS)](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad-on-premises).
 
->[!Note]
->Upgrade to the latest version of Azure AD Connect to ensure the best possible experience and new features as they are released. For more information, see [Custom installation of Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-get-started-custom).
->
-
-|||
-|:-------|:-----|
-|![Test Lab Guides for the Microsoft cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Test Lab Guide: Password writeback](password-writeback-m365-ent-test-environment.md) |
-|||
-
-As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria.md#crit-identity-pw-writeback) for this section.
+As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria.md#crit-password-prot) for this section.
 
 <a name="identity-pw-reset"></a>
 ## Simplify password resets
@@ -64,7 +60,7 @@ As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria
 
 *This is optional for hybrid environments and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
 
-In this section, you'll set up Azure Active Directory Seamless Single Sign-On (Azure AD Seamless SSO) to allow your users to sign in to services that use Azure AD user accounts without having to type in their passwords, and in many cases, their usernames. This gives your users easier access to cloud-based applications, such as Office 365, without needing any additional on-premises components such as identity federation servers.
+In this section, you'll set up Azure Active Directory Seamless Single Sign-On (Azure AD Seamless SSO), which works with Password Hash Synchronization (PHS) and Pass-Through Authentication (PTA), to allow your users to sign in to services that use Azure AD user accounts without having to type in their passwords, and in many cases, their usernames. This gives your users easier access to cloud-based applications, such as Office 365, without needing any additional on-premises components such as identity federation servers.
 
 You configure Azure AD Seamless SSO with the Azure AD Connect tool.
 
@@ -97,6 +93,4 @@ As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step6.png)| [Use groups for easier management](identity-self-service-group-management.md) |
-
-
+|![](./media/stepnumbers/Step3.png)| [Secure and manage your user sign-ins](identity-secure-user-sign-ins.md) |

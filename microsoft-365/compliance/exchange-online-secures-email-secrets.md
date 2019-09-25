@@ -24,7 +24,7 @@ This article describes how Microsoft secures your email secrets in its datacente
 
 In addition to the Office 365 Trust Center which provides [Security, Privacy and Compliance Information for Office 365](https://go.microsoft.com/fwlink/?linkid=874644), you might want to know how Office 365 helps protects secrets you provide in its datacenters. We use a technology called Distributed Key Manager (DKM).
   
-[Distributed Key Manager](../../compliance/office-365-bitlocker-and-distributed-key-manager-for-encryption.md) (DKM) is a client-side functionality that uses a set of secret keys to encrypt and decrypt information. Only members of a specific security group in Active Directory Domain Services can access those keys in order to decrypt the data that is encrypted by DKM. In Exchange Online, only certain service accounts under which the Exchange processes run are part of that security group. As part of standard operating procedure in the datacenter, no human is given credentials that are part of this security group and therefore no human has access to the keys that can decrypt these secrets.
+[Distributed Key Manager](office-365-bitlocker-and-distributed-key-manager-for-encryption.md) (DKM) is a client-side functionality that uses a set of secret keys to encrypt and decrypt information. Only members of a specific security group in Active Directory Domain Services can access those keys in order to decrypt the data that is encrypted by DKM. In Exchange Online, only certain service accounts under which the Exchange processes run are part of that security group. As part of standard operating procedure in the datacenter, no human is given credentials that are part of this security group and therefore no human has access to the keys that can decrypt these secrets.
   
 For debugging, troubleshooting, or auditing purposes, a datacenter administrator must request elevated access to gain temporary credentials that are part of the security group. This process requires multiple levels of legal approval. If access is granted, all activity is logged and audited. In addition access is only granted for a set interval of time after which it automatically expires.
   
@@ -32,17 +32,17 @@ For extra protection, DKM technology includes automated key rollover and archivi
   
 ## Where does Exchange Online make use of DKM?
 
-Microsoft uses [Distributed Key Manager](../../compliance/office-365-bitlocker-and-distributed-key-manager-for-encryption.md) to encrypt your secrets in Exchange Online datacenters. For example:
+Microsoft uses [Distributed Key Manager](office-365-bitlocker-and-distributed-key-manager-for-encryption.md) to encrypt your secrets in Exchange Online datacenters. For example:
   
 - Email account credentials for connected accounts. Connected accounts are third-party accounts such as Hotmail, Gmail, and Yahoo! mail accounts.
     
-- Customer key. If you are using [Customer Key in Office 365](../../compliance/controlling-your-data-using-customer-key.md), you'll use [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/key-vault-whatis) to safeguard your secrets.
+- Customer key. If you are using [Customer Key in Office 365](controlling-your-data-using-customer-key.md), you'll use [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/key-vault-whatis) to safeguard your secrets.
     
 ## Related topics
 
-[Encryption in Office 365](../../compliance/encryption.md)
+[Encryption in Office 365](encryption.md)
   
-[Technical reference details about encryption in Office 365](../../compliance/technical-reference-details-about-encryption.md)
+[Technical reference details about encryption in Office 365](technical-reference-details-about-encryption.md)
   
 [Service assurance in the Office 365 Security &amp; Compliance Center](https://go.microsoft.com/fwlink/?linkid=874645)
   

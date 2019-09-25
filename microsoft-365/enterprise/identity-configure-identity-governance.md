@@ -3,7 +3,7 @@ title: "Step 7: Configure identity governance"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/06/2019
+ms.date: 09/20/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -23,10 +23,14 @@ Identity governance is all about protecting, monitoring, and auditing access to 
 
 See [this article](https://docs.microsoft.com/azure/active-directory/governance/identity-governance-overview) for more information about identity governance for Azure Active Directory (Azure AD).
 
+
+*This is optional and applies only to the E5 version of Microsoft 365 Enterprise*
+
+
 <a name="identity-access-reviews"></a>
 ## Set up Azure AD access reviews
 
-*This is optional and only applies to E5 version of Microsoft 365 Enterprise*
+*This is optional and only applies to the E5 version of Microsoft 365 Enterprise*
 
 In this step, you'll set up Azure AD access reviews, which allow you to review a user's access to ensure only the right people have continued access. For example:
 
@@ -37,6 +41,8 @@ In this step, you'll set up Azure AD access reviews, which allow you to review a
 This is especially important if your organization is subject to security audits to determine if user accounts have too much access, which could result in fines if in violation of industry or regional regulations.
 
 See [this article](https://docs.microsoft.com/azure/active-directory/governance/access-reviews-overview) for more information about Azure AD access reviews.
+
+Azure AD Privileged Identity Management (PIM) provides additional controls tailored to securing access rights for resources, across Azure AD, Azure, and other Microsoft cloud service. Azure AD PIM provides a comprehensive set of governance controls to help secure your company's resources such as directory, Office 365, and Azure resource roles. As with other forms of access, organizations can use access reviews to configure recurring access recertification for all users in administrator roles. Azure AD PIM is only available with the E5 version of Microsoft 365 Enterprise.
 
 See these articles to configure different types of access reviews:
 
