@@ -17,7 +17,6 @@ description: "Learn how to roll the Customer and availability keys stored in Azu
 
 # Roll or rotate a customer key or an availability key
 
-
 Even though Customer Key supports key rolls, we recommend that you should never roll the keys you use with Customer Key. Keys that you protect with a hardware security module (HSM) are virtually impossible to compromise. Even if a root key were in the possession of a malicious actor, there is no feasible means to use it to decrypt data. Only Office 365 code knows how to use these keys.
   
 > [!CAUTION]
