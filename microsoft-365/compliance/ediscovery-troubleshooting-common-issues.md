@@ -19,7 +19,7 @@ siblings_only: true
 ---
 # Investigate, troubleshoot and resolve common eDiscovery issues
 
-This topic covers basic troubleshooting steps that you can take to identify and resolve several issues you may encounter during an eDiscovery search or elsewhere in the eDiscovery process. Resolving some of these scenarios requires help from Customer Support Services (CSS). Information on when to contact CSS is included in the resolution steps.
+This topic covers basic troubleshooting steps you can take to identify and resolve issues you may encounter during an eDiscovery search or elsewhere in the eDiscovery process. Resolving some of these scenarios requires help from Customer Support Services (CSS). Information on when to contact CSS is included in the resolution steps.
 
 ## Error/issue ambiguous location
 
@@ -27,7 +27,7 @@ You'll receive this error "The compliance search contains the following invalid 
 
 ### Details
 
-You may receive this error if you tried to add user’s mailbox location to search and there are duplicate or conflicting objects with the same user ids in the Exchange Online Protection (EOP) directory.
+You may receive this error if you tried to add user’s mailbox location to search and there are duplicate or conflicting objects with the same user id in the Exchange Online Protection (EOP) directory.
 
 ### Resolution
 
@@ -52,7 +52,7 @@ The output for 'useralias@contoso.com' might be
 
 ## Error/issue specific location search fails
 
-Specific locations in a large search fails
+Specific locations in a large search fails.
 
 ### Details
 
@@ -62,7 +62,7 @@ This search completed with (#) errors.  Would you like to retry the search on th
 
 ### Resolution
 
-If you receive this error, we recommend that you locate the failed location in the search and re-run the search only on the failed locations.
+If you receive this error, we recommend that you verify the locations that failed in the search  then re-run the search only on the failed locations.
 
 1. Connect to [Exchange Online Protection Powershell](https://docs.microsoft.com/en-us/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell?view=exchange-ps).
 1. Type:
@@ -71,9 +71,9 @@ If you receive this error, we recommend that you locate the failed location in t
 Get-Compliancesearch searchname|fl 
 ```
 
-3. From the PowerShell output, view the failed locations in the Errors field or from the Status details in the error form the Search output.
+3. From the PowerShell output, view the failed locations in the errors field or from the status details in the error from the search output.
 1. Retry the eDiscovery search on the failed locations only.
-1. If you continue to receive these error, see [Retry  Failed Locations](https://docs.microsoft.com/en-us/Office365/SecurityCompliance/retry-failed-content-search) for additional troubleshooting steps.
+1. If you continue to receive these error, see [Retry failed locations](https://docs.microsoft.com/en-us/Office365/SecurityCompliance/retry-failed-content-search) for additional troubleshooting steps.
 
 ## Error/issue file not found
 “File not found” in the export warnings and errors.csv or skipped items.csv.
@@ -91,7 +91,7 @@ When running an eDiscovery search that includes SharePoint Online and One Drive 
 2. Use the procedures at [Manually request crawling and re-indexing of a site, a library or a list](https://docs.microsoft.com/en-us/sharepoint/crawl-site-content) to re-index the site.
 
 ## Error/issue search fails recipient not found
- eDiscovery search fails with error `Recipient Not Found`
+ eDiscovery search fails with error `recipient not found`
 
 ### Details
 
@@ -110,11 +110,11 @@ Get-Recipient userId|fl
 
 ## Error/issue exporting search results is slow
 
-eDiscovery export is slow when exporting search results from eDiscovery or Content Search in the Security and Compliance center.
+Exporting search results is slow from eDiscovery or Content Search in the Security and Compliance center.
 
 ### Details
 
-When running eDiscovery export, the download is taking longer than expected.  You can check to see the amount of data to be download and possibly increase your export speed.
+When running eDiscovery export, the download is taking longer than expected.  You can check to see the amount of data to be download and possibly increase the export speed.
 
 ### Resolution
 
@@ -132,7 +132,7 @@ Get-ComplianceSearch searchname\fl
 Get-ComplianceSearchAction |fl
 ```
 
-6. In the results field find the data that has been exported and view and errors encountered.
+6. In the results field find the data that has been exported and view any errors encountered.
 7. Check the trace.log file located in the directory that you exported the content to for any errors.
 
 ## Error/issue "Internal server error (500) occurred"
@@ -140,7 +140,7 @@ Get-ComplianceSearchAction |fl
 ![internal server error 500 screenshot](media/edisc-tshoot-error-500.png)
 
 ### Details 
-When running an eDiscovery search, if the search continually fails with error similar to "Internal server error (500) occurred, you may need re-run the search only on specific mailbox locations.
+When running an eDiscovery search, if the search continually fails with error similar to "Internal server error (500) occurred", you may need re-run the search only on specific mailbox locations.
 
 ### Resolution
 
@@ -157,11 +157,11 @@ Get-ComplianceSearch searchname |fl
 
 ## Error/issue holds don't sync
 
-eDiscovery Case Hold Policy Sync Distribution error. 
+eDiscovery Case Hold Policy Sync Distribution error.
 
 ### Details
 
-"Resources: It's taking longer than expected to deploy the policy. It might take an additional 2 hours to update the final deployment status, so check back in a couple hours.”
+"Resources: It's taking longer than expected to deploy the policy. It might take an additional two hours to update the final deployment status, so check back in a couple hours.”
 
 ### Resolution
 
