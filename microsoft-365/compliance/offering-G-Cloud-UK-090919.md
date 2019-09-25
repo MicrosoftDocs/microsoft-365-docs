@@ -1,0 +1,117 @@
+United Kingdom Government-Cloud (G-Cloud) OFFICIAL
+
+UK G-Cloud Overview
+
+Government Cloud (G-Cloud) is a UK government initiative to ease procurement of cloud services by government departments and promote government-wide adoption of cloud computing. G-Cloud comprises a series of framework agreements with cloud services suppliers (such as Microsoft), and a listing of their services in an online store—the Digital Marketplace. This enables public-sector organizations to compare and procure those services without having to do their own full review process. Inclusion in the Digital Marketplace requires a self-attestation of compliance, followed by a verification performed by the Government Digital Service (GDS) branch at its discretion.
+
+The G-Cloud appointment process was streamlined in 2014 to reduce the time and cost to the UK government, and the government’s security classification scheme was simplified from six to three levels: OFFICIAL, SECRET, and TOP SECRET. (G-Cloud certification levels are no longer expressed as an Impact Level, or IL; Microsoft formerly held an IL2 accreditation for Microsoft Azure, Microsoft Dynamics 365, and Microsoft Office 365.)
+
+Instead of the central assessment of cloud services previously provided, the new process requires cloud service providers to self-certify and supply evidence in support of the 14 Cloud Security Principles of G-Cloud. This has not changed either the evidence Microsoft produces or the standards that the company adheres to.
+
+.
+
+Microsoft and UK G-Cloud
+
+Every year, Microsoft prepares documentation and submits evidence to attest that its in-scope enterprise cloud services comply with the principles, giving potential G-Cloud customers an overview of its risk environment. (As with previous G-Cloud accreditation, it relies on the ISO 27001 certification.) A GDS accreditor then performs several random checks on the Microsoft assertion statement, samples the evidence, and makes a determination of compliance.
+
+The appointment of Microsoft services to the Digital Marketplace means that UK government agencies and partners can use in-scope services to store and process UK OFFICIAL government data, the vast majority of government data. In addition, there are now more than 450 Microsoft partners included in G-Cloud who are resellers of Microsoft cloud services. They can directly assert the compliance of in-scope services with the 14 principles in their own applications. Customers and partners, however, will need to achieve their own compliance for any components that are not included in the attestation and determination of compliance for Microsoft cloud services.
+
+Learn more about the benefits of United Kingdom G-Cloud v6 on the Microsoft Cloud.
+
+[Download the United Kingdom G-Cloud v6 background document](https://aka.ms/uk-g-cloud_backgrounder)
+
+Learn how to accelerate your United Kingdom G-Cloud v6 deployment with our Azure Security and Compliance Blueprint.
+
+[Download the Azure Blueprint UK G-Cloud Principle Implementation Guidance](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=c3804aba-03a7-4d21-88ad-d9bbe5314a00&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_UK_G-Cloud_Blueprint)
+
+Microsoft in-scope cloud services
+
+  - > Azure [<span class="underline">detailed list</span>](https://aka.ms/AzureCompliance)
+
+  - > Cloud App Security
+
+  - > Dynamics 365 [<span class="underline">detailed list</span>](https://aka.ms/d365-compliance-list)
+
+  - > Intune
+
+  - > Microsoft Flow cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
+
+  - > Office 365: Exchange Online, SharePoint Online, and Skype for Business Online
+
+  - > PowerApps cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
+
+  - > Power BI cloud service either as a standalone service or as included in an Office 365 branded plan or suite
+
+Audits, reports and certificates
+
+To confirm that Microsoft cloud services maintain their compliance with G-Cloud agreements, the GDS accreditor may review evidence at any time, at its discretion.
+
+[Azure](javascript:void\(0\);)
+
+  - > [Azure UK G-Cloud Risk Environment](https://go.microsoft.com/fwlink/?linkid=2099702)
+
+  - > [Azure UK G Cloud Residual Risk](https://go.microsoft.com/fwlink/?linkid=2099497)
+
+  - > [Intune UK G Cloud Security Cloud Assessment Summary](https://go.microsoft.com/fwlink/?linkid=2099703)
+
+[Dynamics 365](javascript:void\(0\);)
+
+  - > [Dynamics 365 UK G cloud Risk Environment](https://aka.ms/Dynamics365UKGCloudRiskEnvironment)
+
+[Intune](javascript:void\(0\);)
+
+  - > [Intune UK G cloud Risk Environment](https://aka.ms/IntuneUKGCloudRiskEnvironment)
+
+  - > [Intune UK G cloud Residual Risk](https://aka.ms/IntuneUKGCloudResidualRisk)
+
+  - > [Azure UK G cloud Security Assessment Summary](https://aka.ms/IntuneUKGCloudSecurityAssessmentSummary)
+
+[Office 365](javascript:void\(0\);)
+
+  - > [Office 365 UK G cloud Risk Environment](https://aka.ms/Office365UKGCloudRiskEnvironment)
+
+Accelerate your deployment of UK G-Cloud solutions on Azure
+
+Moving your government services to the cloud is now easier than ever using the Azure Security and Compliance UK Blueprint. This blueprint provides guidance and automated scripts that will get you started building compliant solutions today.
+
+[**Start using the Azure UK G-Cloud Blueprint**](https://aka.ms/ukofficialblueprint)
+
+Frequently asked questions
+
+Collapse all
+
+[Who is eligible to use the Digital Marketplace?](javascript:void\(0\);)
+
+All UK government departments, devolved administrations, local authorities, wider public-sector bodies, and arm’s-length bodies are eligible to buy services in the marketplace. If you’re uncertain of your eligibility, consult the [<span class="underline">complete list of public-sector organizations</span>](https://www.gov.uk/government/publications/public-sector-organisations-eligible-to-use-cloudstore).
+
+[What is an arm's-length body?](javascript:void\(0\);)
+
+It is an organization or agency that is funded by the UK government but acts independently of it.
+
+[What do local datacenter locations mean for UK customers, and where are they located?](javascript:void\(0\);)
+
+The Microsoft Cloud in the UK provides reliability and performance combined with data residency in the UK. This provides customers with trusted cloud services that help them meet local compliance and policy requirements. In addition, replication of data in multiple datacenters across the UK gives customers geo-redundant data protection for business continuity, for both pure cloud and hybrid scenarios. We have datacenters in multiple locations across the UK.
+
+  - > You can see the new Azure regions, UK West and UK South, on the [<span class="underline">global Azure map</span>](http://azuredatacentermap.azurewebsites.net/).
+
+  - > For Office 365, the UK datacenters collectively comprise the new UK Office 365 region. You can see more on the [<span class="underline">global Office 365 map</span>](http://o365datacentermap.azurewebsites.net/).
+
+[Where are the other Microsoft EU datacenters located?](javascript:void\(0\);)
+
+In addition to the UK datacenters, Microsoft cloud services has data centers in multiple locations. For the most up to date list of all centers visit our [<span class="underline">data location page</span>](https://www.microsoft.com/en-us/TrustCenter/Privacy/where-your-data-is-located).
+
+[How can I get copies of the auditor’s reports?](javascript:void\(0\);)
+
+The [<span class="underline">Service Trust Portal</span>](https://support.office.com/en-US/article/Get-started-with-the-Service-Trust-Portal-for-Office-365-for-business-Azure-and-Dynamics-CRM-Online-subscriptions-f30e2353-0bd6-41ed-8347-eea1fb8d2662) provides independently audited compliance reports. You can use the portal to request audit reports so that your auditors can compare the Microsoft results with your own legal and regulatory requirements.
+
+Resources
+
+  - [**Effective Compliance Controls to Address the UK Governments Common 14 Cloud Security Principles Using Microsoft Azure**](https://aka.ms/complianceuk)
+
+  - [**UK Government Cloud Strategy**](http://aka.ms/UK_govt_cloud_strategy)
+
+  - [**G-Cloud Security Principles**](http://aka.ms/UK-G-Cloud)
+
+  - [**Digital Marketplace**](https://www.digitalmarketplace.service.gov.uk/)
+
+  - [**Microsoft Online Services**](http://aka.ms/Online-Services-Terms)
