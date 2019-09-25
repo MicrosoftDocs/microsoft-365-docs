@@ -14,13 +14,9 @@ ms.assetid: 41ae293a-bd5c-4083-acd8-e1a2b4329da6
 description: "Learn about the availability key used to recover lost Office 365 Customer Keys."
 ---
 
-# Understand how to use the availability key for Office 365 Customer Key
+# Understand the availability key for Office 365 Customer Key
 
 You use the availability key to recover from the unanticipated loss of root keys that you manage. If you lose your root keys, contact Microsoft Support and Microsoft will assist you through the process of enabling the availability key. You'll use the availability key to migrate to a new Data Encryption Policy with new keys provisioned by you.
-
-See the [Microsoft Trust Center](https://www.microsoft.com/en-us/trustcenter/Privacy/govt-requests-for-data) for more information about how we secure keys.
-  
-## About the availability key
 
 The availability key is a root key provisioned when you create a data encryption policy. Office 365 stores and protects the availability key. The availability key is functionally similar to the two root keys that you supply for use with service encryption with Customer Key. Unlike the keys that you provide and manage in Azure Key Vault, you can't directly access the availability key. Storage and control of the availability key are deliberately different from Azure Key Vault keys for three reasons:
 
@@ -28,8 +24,80 @@ The availability key is a root key provisioned when you create a data encryption
 - The availability key provides a "break glass" capability in the event that both Azure Key Vault keys are lost.
 - The separation of logical controls provides defense-in-depth and protects against the loss of all keys from a single attack or point of failure.
 
-Sharing the responsibility to protect the keys, while using a variety of protections and processes for key management, ultimately reduces the risk that all keys (and therefore your data) will be lost or destroyed. Microsoft provides you with sole authority over the destruction of the availability key. By design, no one at Microsoft has access to the availability key - it is only accessible by Office 365 service code.
+Sharing the responsibility to protect the keys, while using a variety of protections and processes for key management, ultimately reduces the risk that all keys (and therefore your data) will be lost or destroyed. Microsoft provides you with sole authority over the destruction of the availability key. By design no one at Microsoft has access to the availability key - it is only accessible by Office 365 service code.
+
+See the [Microsoft Trust Center](https://www.microsoft.com/en-us/trustcenter/Privacy/govt-requests-for-data) for more information about how we secure keys.
   
+## Availability key uses
+
+The availability key provides recovery capability for scenarios in which a malefactor steals control of the customer's key vault. It also ensures service availability during transient - intermittent - operational issues related to Customer Key access by the service.
+
+When the service finds both Customer Keys in Azure Key Vault unreachable, it uses the availability key. The service NEVER goes directly to the availability key.
+
+> [!IMPORTANT]
+> **@Reviewers!!**  Look into details around availability key scenarios when customer keys are revoked?</br>
+In Exchange, system calls fall back on the availability key when access is revoked from AKVs. (IP - i think this should be public)</br>
+In SPO all data locked down once customers revoke SPO access to AKVs.
+
+### Customer Key service encryption
+
+Encryption at rest protects application data stored on disks on top of BitLocker disk encryption. It's not meant to prevent Microsoft from accessing customer data. Customers give the O365 service permissions to use their encryption keys to provide value added services, such as eDiscovery, anti-malware, anti-spam, search, etc. The availability key is created from the customer’s root keys for recovery and service availability. (IP)
+
+### Protect access to the application layer
+
+Logical access controls like Lockbox and Customer Lockbox prevent unauthorized individuals from accessing decrypted data through the service. The application layer is the ONLY method through which keys can be used to decrypt data. Only Office 365 service code has the ability to interpret and traverse the key hierarchy for encryption-decryption activities.
+
+The availability key is not a back door – Microsoft is transparent with the existence and use of the availability key.
+
+## Key Revocation and the Data Purge Path process
+
+You control the revocation of all root keys including the availability key. Customer Key provides control of the exit planning aspect of regulatory requirements for financial services customers. The data purge feature is not available with Microsoft-managed keys; only Customer Key offers this ability. If you decide to revoke your keys to purge their data and exit the service, the service deletes the availability key.
+
+The Office 365 core audits and validates this Data Purge Path. For more information, see the SSAE 18 SOC 2 Report available on the [Service Trust Portal](https://servicetrust.microsoft.com/). The Data Purge Path process differs slightly between Exchange Online and Skype for Business, and SharePoint Online and OneDrive for Business.
+
+### Revoke the Customer Key and availability key for Exchange Online and Skype for Business
+
+To initiate the Data Purge Path process for Exchange Online and Skype for Business, complete these steps:
+
+1. Delete your Customer Key keys in Azure Key Vault. All key vault admins must agree to delete these keys.
+
+1. Using a work or school account that has administrator privileges in your Office 365 organization. 
+
+1. From Windows PowerShell, run set-permanentdatapurgerequest as follows:
+
+   ```powershell
+   set-permanentdatapurgerequest TRUE
+   ```
+
+1. Contact Microsoft to delete the availability key.
+
+   When you contact Microsoft to delete the availability key, we will send you a legal document. The person in your organization who signed up as an approver in the FastTrack offer during onboarding needs to sign this document. Normally, this is an executive or other designated person in your company who is legally authorized to sign the paperwork on behalf of your organization.
+
+1. Once your representative has signed the legal document, return it to Microsoft (usually through an eDoc signature).
+
+   Once Microsoft receives the legal document, we run cmdlets to trigger the data purge which performs crypto deletion of the availability key. Once the data purge cmdlets complete, the data has been purged.
+
+### Revoke the Customer Key and availability key for SharePoint Online, including Team Sites, and OneDrive for Business
+
+To initiate the Data Purge Path process for Exchange Online and Skype for Business, complete these steps:
+> [!IMPORTANT]
+> **@Reviewers!!**  Why is it delete for EXO and revoke for SPO?
+
+1. Revoke Azure Key Vault access. All key vault admins must agree to revoke access.
+
+1. Contact Microsoft to delete the availability key.
+
+   When you contact Microsoft to delete the availability key, we will send you a legal document. The person in your organization who signed up as an approver in the FastTrack offer during onboarding needs to sign this document. Normally, this is an executive or other designated person in your company who is legally authorized to sign the paperwork on behalf of your organization.
+
+1. Once your representative signs the legal document, return it to Microsoft (usually through an eDoc signature).
+
+   Once Microsoft receives the legal document, we run cmdlets to trigger the data purge which performs crypto deletion of the tenant key, site key, and all individual per-document keys, irrevocably breaking the key hierarchy. Once the data purge cmdlets complete, your data has been purged.
+
+8. Availability key Rotation: Microsoft does not expose direct control of the availability key to customers. Customers can only rotate (roll) the keys they own in Azure Key Vault. Once customers rotate their keys in AKV, they need to run Set-DataEncryptionPolicy <policyname> -Refresh for updating the availability key version on the DEP Key. This does not rotate the availability key. If customers want to rotate the availability key, they have to create a completely new DEP.  (IP)
+Availability Key Logging and Risk
+
+(1) The notion of logging to audit use of availability keys to detect unauthorized activity is a common customer misconception. While Microsoft does not currently provide customer visibility into which O365 services access the availability key, it is a lack of visibility – not a vulnerability. As described in the previous section, logging of access to customer data – whether by Microsoft employees or customers is available. Data access logs are the correct events to examine for determining unauthorized activity within the O365 tenant.
+
 ## Use the availability key to recover from key loss
 
 If you lose your keys contact Microsoft to enable the use of the availability key. More information about the process follows in this article.

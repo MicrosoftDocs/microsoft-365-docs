@@ -16,7 +16,7 @@ description: "Learn how to roll the Customer and availability keys stored in Azu
 ---
 
 # Roll or rotate a customer key or an availability key
-<a name="RollCKkey"> </a>
+
 
 Even though Customer Key supports key rolls, we recommend that you should never roll the keys you use with Customer Key. Keys that you protect with a hardware security module (HSM) are virtually impossible to compromise. Even if a root key were in the possession of a malicious actor, there is no feasible means to use it to decrypt data. Only Office 365 code knows how to use these keys.
   
@@ -39,9 +39,9 @@ For example:
 
    In this example, since a key named **Contoso-O365EX-NA-VaultA1-Key001** exists in the **Contoso-O365EX-NA-VaultA1** vault, the cmdlet creates a version of the key. This operation preserves the previous key versions in the version history for the key. You need the previous key version to decrypt the data that it still encrypts. Once you complete rolling any key associated with a DEP,  run an extra cmdlet to ensure that Customer Key begins using the new key. The following sections describe the cmdlets in more detail.
   
-## Roll the Customer Key for Exchange Online and Skype for Business
+## Update the Customer Key for Exchange Online and Skype for Business
 
-To roll either of the Azure Key Vault keys used with Exchange Online and Skype for Business, complete these steps:
+To refresh the availability key version on the new DEP Key, follow these steps. This does not rotate the availability key.
 
 1. Run the Set-DataEncryptionPolicy cmdlet in Azure PowerShell:
   
@@ -53,11 +53,9 @@ To roll either of the Azure Key Vault keys used with Exchange Online and Skype f
 
 2. To check the value for the DataEncryptionPolicyID property for the mailbox, use the steps in [Determine the DEP assigned to a mailbox](customer-key-manage.md#DeterminemailboxDEP). The value for this property changes once the service applies the updated key.
   
-## Roll the Customer Key for SharePoint Online, including Team Sites, and OneDrive for Business
+## Update the Customer Key for SharePoint Online, including Team Sites, and OneDrive for Business
 
-SharePoint Online only allows you to roll one key at a time. If you want to roll both keys in a key vault, wait for the first key roll operation to complete. Microsoft recommends that you stagger your key roll operations at different intervals to avoid this issue.
-
-To roll either of the Azure Key Vault keys used with SharePoint Online and OneDrive for Business:
+SharePoint Online only allows you to roll one key at a time. If you want to roll both keys in a key vault, wait for the first operation to complete. Microsoft recommends that you stagger your operations at different intervals to avoid this issue. To refresh the availability key version on the new DEP Key, follow these steps. This does not rotate the availability key.
 
 1. Run the [Update-SPODataEncryptionPolicy](https://technet.microsoft.com/library/mt843948.aspx) cmdlet as follows:
   
@@ -75,7 +73,7 @@ To roll either of the Azure Key Vault keys used with SharePoint Online and OneDr
 
 ## Roll the availability key
 
-To roll the availability key, you create a new DEP. Office 365 rolls the availability keys on an internally defined schedule. There is no customer-facing, service-level agreement (SLA) for these key rolls.
+Microsoft does not expose direct control of the availability key to customers. For example, you can only rotate (roll) the keys that you own in Azure Key Vault. To roll the availability key, you create a new DEP. Office 365 rolls the availability keys on an internally defined schedule. There is no customer-facing, service-level agreement (SLA) for these key rolls. For more information about the availability key, see - [Understand the availability key](customer-key-availability-key-understand.md).
 
 ## Related articles
 
