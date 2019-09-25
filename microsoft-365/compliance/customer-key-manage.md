@@ -67,7 +67,7 @@ For example:
 Remove-AzureRmKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 -UserPrincipalName alice@contoso.com
 ```
 
-### Determine the DEP assigned to a mailbox
+## Determine the DEP assigned to a mailbox
 <a name="DeterminemailboxDEP"> </a>
 
 To determine the DEP assigned to a mailbox, use the Get-MailboxStatistics cmdlet. The cmdlet returns a unique identifier (GUID).
