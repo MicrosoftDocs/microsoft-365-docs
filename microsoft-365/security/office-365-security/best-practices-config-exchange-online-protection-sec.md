@@ -97,7 +97,7 @@ Recommended for **ON** in both Recommended and Aggressive Levels:
 
 ## Anti-phishing
 
-Phishing is an attempt to masquerade as reputable company or person, for the purpose of stealing personal information like credit-card numbers, or computer or device pins or passwords. Phishing can involve:
+Phishing is an attempt to masquerade as reputable company or person for the purpose of stealing personal information like credit-card numbers, or computer or device pins or passwords. Phishing can involve:
 
 - *Spoofing*, where spoofers try to send mail on behalf of a specific target in a domain (for example, ellar@2020contoso.com trying to send mail for ellar@2020litware.com (a scenario email authentication methods can help thwart). 
 
