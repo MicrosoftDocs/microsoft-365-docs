@@ -5,32 +5,30 @@ keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.date: 10/24/2018
 ---
 
 # What is Microsoft Managed Desktop?
 
 <!--from Overview-->
 
-We’re always looking for ways to help make our customer’s workplace more productive and secure. Using the Microsoft 365 service starts by empowering employees to work together in a creative, secure, device and app environment.
+Microsoft Managed Desktop is a service you can subscribe to that provides monitored IT services for registered devices. It brings together [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise) (including Windows 10 Enterprise and Office 365 ProPlus), cloud-based device management by Microsoft, and security monitoring, enabling you to free up your IT teams to focus on core business needs.
 
-Microsoft Managed Desktop takes this further by combining the power of Microsoft 365 Enterprise on a modern device, with endpoint management, protection, and security provided and run by Microsoft.
+## Microsoft 365 Enterprise
 
 
-<table>
-<tr><th>Delight end users</th><th>Empower IT</th><th>Backed by Microsoft</th></tr>
-<tr><td><p>Modern device</p><p>Windows 10</p><p>Office 365 ProPlus</p><p>Security built-in</p><p>Login with facial recognition</p><p>Always up-to-date</p></td><td><p>Built-in security</p><p>Actionable insights</p><p>Operations support</p><p>Guidance from Microsoft experts</p></td><td><p>Security Operations team</p><p>Health monitoring</p><p>Cloud backup for data</p><p>Stateless principles</p><p>24x7 End user support</p></td></tr>
-</table>
+### Windows 10 Enterprise
 
-Microsoft Managed Desktop gives customers a comprehensive IT solution that delights users and frees up IT resources for more important tasks. We’ve developed this service based on feedback we commonly hear:
-- My users want the latest technology.
-- I want more predictable costs.
-- I want to focus on my core business. 
-- I’m drowning in complexity. 
-- I want to be more strategic. 
-- It’s hard to find enough IT talent.  
 
-Microsoft Managed Desktop provides the best user experience with the latest technology, all backed by Microsoft. 
+### Office 365 ProPlus
+
+
+### Security thingies
+
+## Device management
+
+## Security monitoring
+
+## What happens when we subscribe?
 
 ## Additional resources
 - [Microsoft Managed Desktop service description](../service-description/index.md)
