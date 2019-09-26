@@ -20,6 +20,7 @@ search.appverid:
 - MET150
 ms.assetid: cbc6bfe5-565a-4fb8-95f0-b06e7b74ac46
 description: "Install or uninstall Office on Windows 10 devices from the Microsoft 365 Business admin center. "
+ms.custom: OKR_SMB_M365
 ---
 
 # Automatically install or uninstall Office on Windows 10 devices
