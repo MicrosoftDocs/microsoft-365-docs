@@ -19,6 +19,7 @@ search.appverid:
 - MET150
 ms.assetid: c4db6caf-74df-4734-b1dd-53e371c7a3c3
 description: "Learn how to use Microsoft 365 Business to factory reset your Windows 10 devices. "
+ms.custom: OKR_SMB_M365
 ---
 
 # Reset Windows 10 devices to their factory settings

@@ -17,6 +17,7 @@ search.appverid:
 - BCS160
 - MET150
 description: "Set up Office 365 Advanced Threat Protection, and safeguard sensitive data."
+ms.custom: OKR_SMB_M365
 ---
 # Set up compliance features
 

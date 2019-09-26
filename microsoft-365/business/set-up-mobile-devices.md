@@ -19,6 +19,7 @@ search.appverid:
 - MET150
 ms.assetid: d868561b-d340-4c04-a973-e2575d7f09bc
 description: "Install Office on an iPhone or an Android phone, and your work files in Office apps will be protected by Microsoft 365 Business."
+ms.custom: OKR_SMB_M365
 ---
 
 # Set up mobile devices for Microsoft 365 Business users
