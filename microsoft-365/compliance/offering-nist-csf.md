@@ -97,3 +97,4 @@ Microsoft provides the most comprehensive offerings compared to other cloud serv
 - [Presidential Executive Order on Strengthening the Cybersecurity of Federal Networks and Critical Infrastructure](https://www.whitehouse.gov/the-press-office/2017/05/11/presidential-executive-order-strengthening-cybersecurity-federal)
 - [Microsoft Government Cloud](https://go.microsoft.com/fwlink/p/?linkid=2087246)
 - [Online Services Terms](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
+- [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)

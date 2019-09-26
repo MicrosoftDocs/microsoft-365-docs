@@ -83,3 +83,4 @@ The United States also has separate and more specialized export control regulati
 - [Export restrictions on cryptography](https://docs.microsoft.com/windows/uwp/security/export-restrictions-on-cryptography)
 - [Microsoft and FIPS 140-2](offering-fips-140-2.md)
 - [Microsoft and ITAR](offering-itar.md)
+- [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)

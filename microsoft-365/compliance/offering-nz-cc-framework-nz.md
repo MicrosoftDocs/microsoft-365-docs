@@ -59,6 +59,7 @@ If your agency is required to undertake certification and accreditation of its I
 - [Cloud Computing: Information Security and Privacy Considerations (ISPC)](http://aka.ms/NZ-Cloud-Computing-Considerations)
 - [Microsoft Online Services Terms](http://aka.ms/Online-Services-Terms)
 - [Office 365: SEEMail Integration and Reference Architecture](http://download.microsoft.com/download/8/5/9/859CDCEE-D293-47D8-9B6A-670B108B48E1/Microsoft_Office_365_white_paper_EN_US.pdf) (additional Microsoft NZ guidance on cloud service adoption)
+- [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## Microsoft responses to “Cloud Computing IPSC”
 

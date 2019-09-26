@@ -69,3 +69,4 @@ Yes. If your business is seeking certification for implementations deployed on i
 
 - [ISO 20000-1:2011 — Service management](https://www.iso.org/standard/51986.html) (requirements for purchase)
 - [Microsoft Online Services Terms](http://aka.ms/Online-Services-Terms)
+- [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)

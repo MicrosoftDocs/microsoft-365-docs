@@ -74,6 +74,7 @@ Yes. However, although Microsoft responses to this framework are confirmed compl
 - [Microsoft Online Services Terms](http://aka.ms/Online-Services-Terms)
 - [FISC Security Guidelines/Safety Standards](https://www.fisc.or.jp/english)
 - [FISC Report on Usage of Cloud Computing](http://aka.ms/cloud-computing-report-en)
+- [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## Resources in Japanese
 

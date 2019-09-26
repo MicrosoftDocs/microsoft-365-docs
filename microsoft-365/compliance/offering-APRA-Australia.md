@@ -63,12 +63,13 @@ Yes. General privacy legislation (which applies across all sectors, not just to 
 
 ## Resources
 
-- [**Prudential Standard CPS 231 Outsourcing**](https://www.apra.gov.au/sites/default/files/Prudential-Standard-CPS-231-Outsourcing-%28July-2017%29.pdf)
-- [**Outsourcing involving shared computing services (including cloud)**](https://www.apra.gov.au/sites/default/files/information-paper-outsourcing-involving-shared-computing-services.pdf)
-- [**Australian Prudential Regulation Authority**](https://www.apra.gov.au/)
-- [**Microsoft response to the APRA Information Paper on the Cloud**](https://aka.ms/navigatecloudaustralia)
-- [**Navigating your way to the cloud: A compliance checklist for financial institutions in Australia**](https://aka.ms/microsoftaprachecklistjun17)
-- [**Microsoft Australia: Cloud in Financial Services**](https://www.microsoft.com/en-sg/apac/trustedcloud/australia-financial-service.aspx)
-- [**Microsoft Financial Services Compliance Program**](https://www.microsoft.com/en-us/download/details.aspx?id=55332)
-- [**Financial services compliance in Azure**](https://azure.microsoft.com/en-us/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
-- [**Microsoft business cloud services and financial services**](https://www.microsoft.com/en-us/trustcenter/cloudservices/financialservices)
+- [Prudential Standard CPS 231 Outsourcing](https://www.apra.gov.au/sites/default/files/Prudential-Standard-CPS-231-Outsourcing-%28July-2017%29.pdf)
+- [Outsourcing involving shared computing services (including cloud)](https://www.apra.gov.au/sites/default/files/information-paper-outsourcing-involving-shared-computing-services.pdf)
+- [Australian Prudential Regulation Authority](https://www.apra.gov.au/)
+- [Microsoft response to the APRA Information Paper on the Cloud](https://aka.ms/navigatecloudaustralia)
+- [Navigating your way to the cloud: A compliance checklist for financial institutions in Australia](https://aka.ms/microsoftaprachecklistjun17)
+- [Microsoft Australia: Cloud in Financial Services](https://www.microsoft.com/en-sg/apac/trustedcloud/australia-financial-service.aspx)
+- [Microsoft Financial Services Compliance Program](https://www.microsoft.com/en-us/download/details.aspx?id=55332)
+- [Financial services compliance in Azure](https://azure.microsoft.com/en-us/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
+- [Microsoft business cloud services and financial services](https://www.microsoft.com/en-us/trustcenter/cloudservices/financialservices)
+- [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)

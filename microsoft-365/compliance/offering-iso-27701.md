@@ -64,3 +64,4 @@ No matter the size of your organization and whether it is a controller or a proc
 - [ISO/IEC 27701 (PIMS) for purchase](https://www.iso.org/standard/71670.html)
 - [BSI whitepaper and content about PIMS](https://www.bsigroup.com/globalassets/localfiles/en-gb/data-protection/bsi_privacy_matters_white_paper-web.pdf)
 - [PIMS introductory video](https://www.microsoft.com/videoplayer/embed/RE3uaQJ)
+- [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)

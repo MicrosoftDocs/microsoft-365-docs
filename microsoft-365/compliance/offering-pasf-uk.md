@@ -55,3 +55,4 @@ Yes. Law enforcement can use the NPIRMT assessment of Azure to support their own
 - [Azure facilities, premises, and physical security](https://azure.microsoft.com/blog/azure-layered-approach-to-physical-security/)
 - [Microsoft and ISO/IEC 27001:2013 ISM Standards](offering-iso-27001.md)
 - [Microsoft Online Services Terms](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
+- [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)

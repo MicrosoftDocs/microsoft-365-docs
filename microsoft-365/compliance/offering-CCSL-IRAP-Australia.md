@@ -78,3 +78,4 @@ Start with the [IRAP tool kit](http://www.asd.gov.au/infosec/irap/toolkit.htm) a
 - [ASD IRAP policy and procedures](http://aka.ms/irap-policy)
 - [ASD Certified Cloud Services](http://www.asd.gov.au/infosec/irap/certified_clouds.htm)
 - [Microsoft Online Services Terms](http://aka.ms/Online-Services-Terms)
+- [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)

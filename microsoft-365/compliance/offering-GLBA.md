@@ -49,6 +49,7 @@ The FTC answers this in detail on its GLB Act page, [Who is covered by the priva
 - [Gramm-Leach-Bliley Act](https://www.ftc.gov/tips-advice/business-center/privacy-and-security/gramm-leach-bliley-act)
 - [Azure Financial Services Cloud Risk Assessment Tool](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=6b218946-c235-4234-9beb-d557e39a3f44&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)
 - [Office 365 Cloud Risk Assessment Tool](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=55702ffd-c35a-4619-8722-ab71c0c02002&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)
+- [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## Other Microsoft resources for financial services
 

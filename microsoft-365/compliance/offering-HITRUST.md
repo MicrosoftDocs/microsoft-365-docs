@@ -101,3 +101,4 @@ Login to the HITRUST MyCSF® tool and pre-populate your assessment for your solu
 - [HITRUST CSF 8.1](https://hitrustalliance.net/csf-license-agreement/)
 - [Understanding and Leveraging the CSF](https://hitrustalliance.net/understanding-leveraging-csf/)
 - [Find out more about the HITRUST Shared Responsibility Program](https://go.microsoft.com/fwlink/p/?linkid=2100268)
+- [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)

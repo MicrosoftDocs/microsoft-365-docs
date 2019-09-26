@@ -69,3 +69,4 @@ Yes. Part 2 of the [Microsoft checklist](https://aka.ms/FinServ-Guide-Poland) (p
 - [Microsoft business cloud services and financial services](https://www.microsoft.com/en-us/trustcenter/cloudservices/financialservices)
 - [Financial services compliance in Azure](https://azure.microsoft.com/en-us/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
 - [Azure Financial Services Cloud Risk Assessment Tool](https://servicetrust.microsoft.com/ViewPage/FFIECBlueprint?command=Download&downloadType=Document&downloadId=079a1973-711a-428f-9312-9ddd290cff7b&docTab=c726d5c0-2d1e-11e8-a485-57140ec19669_PaaS)
+- [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)

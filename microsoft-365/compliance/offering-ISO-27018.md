@@ -114,12 +114,9 @@ However, you are responsible for engaging an assessor to evaluate your implement
 
 ## Resources
 
-  - [**ISO/IEC 27018:2014 code of practice**](http://aka.ms/ISO.IEC_27018.2014)
-
-  - [**Microsoft Common Controls Hub Compliance Framework**](https://www.microsoft.com/en-us/trustcenter/common-controls-hub)
-
-  - [**Data access policies for Microsoft enterprise cloud and technical services**](https://www.microsoft.com/en-us/trustcenter/Privacy/Who-can-access-your-data-and-on-what-terms)
-
-  - [**Microsoft Online Services Terms**](http://aka.ms/Online-Services-Terms)
-
-  - [**Microsoft Government Cloud**](https://go.microsoft.com/fwlink/p/?linkid=2087246)
+- [ISO/IEC 27018:2014 code of practice](http://aka.ms/ISO.IEC_27018.2014)
+- [Microsoft Common Controls Hub Compliance Framework](https://www.microsoft.com/en-us/trustcenter/common-controls-hub)
+- [Data access policies for Microsoft enterprise cloud and technical services](https://www.microsoft.com/en-us/trustcenter/Privacy/Who-can-access-your-data-and-on-what-terms)
+- [Microsoft Online Services Terms](http://aka.ms/Online-Services-Terms)
+- [Microsoft Government Cloud](https://go.microsoft.com/fwlink/p/?linkid=2087246)
+- [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)

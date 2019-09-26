@@ -143,6 +143,7 @@ Yes. If your business requires ISO/IEC 27001 certification for implementations d
 - [Microsoft Common Controls Hub Compliance Framework](https://www.microsoft.com/en-us/trustcenter/common-controls-hub)
 - [Microsoft Online Services Terms](http://aka.ms/Online-Services-Terms)
 - [Microsoft Cloud for Government](http://enterprise.microsoft.com/en-us/industries/government/start-your-microsoft-cloud-for-government-trial-today)
+- [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## White papers
 

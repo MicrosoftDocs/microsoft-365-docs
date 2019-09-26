@@ -83,3 +83,4 @@ CIS notes that its “Benchmarks are developed through the generous volunteer ef
 - [CIS best practices for securely using Microsoft 365](https://www.microsoft.com/security/blog/2019/01/10/best-practices-for-securely-using-microsoft-365-the-cis-microsoft-365-foundations-benchmark-now-available/)
 - [Windows 10 security policy settings](https://docs.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/security-policy-settings)
 - [Windows 10 enterprise security](https://docs.microsoft.com/en-us/windows/security/index)
+- [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)

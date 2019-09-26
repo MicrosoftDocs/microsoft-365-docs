@@ -84,3 +84,4 @@ Microsoft ensures that its enterprise cloud services meet the terms defined with
 - [Microsoft Common Controls Hub Compliance Framework](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 - [Microsoft Online Services Terms](http://aka.ms/Online-Services-Terms)
 - [Microsoft Cloud for Government](http://aka.ms/govt-cloud)
+- [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)

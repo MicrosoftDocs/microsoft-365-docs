@@ -57,3 +57,4 @@ Yes. However, although Microsoft responses to this framework are confirmed compl
 - [Microsoft Financial Services Compliance Program](https://www.microsoft.com/en-us/download/details.aspx?id=55332)
 - [Financial services compliance in Azure](https://azure.microsoft.com/en-us/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
 - [Microsoft business cloud services and financial services](https://www.microsoft.com/en-us/trustcenter/cloudservices/financialservices)
+- [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)

@@ -60,3 +60,4 @@ Azure Government (FedRAMP package ID F1603087869) has been tested again these co
 - [Microsoft and FedRAMP](offering-fedramp.md)
 - [Microsoft and DoD Provisional Authorization](offering-DoD-DISA-L2-L3-L5.md)
 - [Microsoft Government Cloud](https://www.microsoft.com/enterprise/government)
+- [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)

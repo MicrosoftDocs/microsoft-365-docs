@@ -67,3 +67,4 @@ Note that The HDS certificate does not apply to Microsoft online services in pre
 - [Azure France](https://azure.microsoft.com/en-us/global-infrastructure/france/)
 - [Azure for health](https://azure.microsoft.com/en-us/industries/healthcare/)
 - [Security at Microsoft](https://www.microsoft.com/en-us/security)
+- [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)

@@ -73,3 +73,4 @@ ENX provides certification confirmation only to registered industry representati
 - [Connecting vehicles for the long haul: Daimler](https://customers.microsoft.com/en-us/story/daimlertrucks)
 - [Continental is adopting Microsoft Office 365 to boost productivity](https://www.avanade.com/en/clients/continental)
 - [Microsoft and ISO/IEC 27001:2013](offering-iso-27001.md)
+- [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)

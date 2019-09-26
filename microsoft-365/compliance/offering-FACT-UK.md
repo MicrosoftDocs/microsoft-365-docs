@@ -53,3 +53,4 @@ Compliance with FACT is voluntary, but Microsoft elected to carry out an indepen
 - [Azure ISO 27001 certification](http://aka.ms/Azure-BSI-Cert)
 - [MPAA Assessment](https://www.microsoft.com/en-us/trustcenter/Compliance/MPAA)
 - [Azure Responses to CSA CAIQ v3.0.1](https://aka.ms/csacaiqresponses)
+- [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)

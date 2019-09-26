@@ -85,3 +85,4 @@ You can enter an agreement such, as the [Online Services Terms](http://aka.ms/On
 - [Microsoft and the EU-U.S. Privacy Shield](https://go.microsoft.com/fwlink/p/?linkid=2099701)
 - [Microsoft Common Controls Hub Compliance Framework](https://www.microsoft.com/en-us/trustcenter/common-controls-hub)
 - [Microsoft Online Services Terms](http://aka.ms/Online-Services-Terms)
+- [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)

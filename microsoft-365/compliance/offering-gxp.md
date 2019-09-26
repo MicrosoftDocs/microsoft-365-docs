@@ -58,3 +58,4 @@ Customers deploying applications on Azure should determine the GxP requirements 
 - [Microsoft and FDA CFR Title 21 Part 11](offering-fda-cfr-title-21-part-11.md)
 - [Microsoft and ISO/IEC 27001](offering-iso-27001.md)
 - [Microsoft and ISO 9001](offering-iso-9001.md)
+- [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)

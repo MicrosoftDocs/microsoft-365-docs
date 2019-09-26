@@ -106,3 +106,4 @@ The [Service Trust Portal](https://support.office.com/en-US/article/Get-started-
 - [G-Cloud Security Principles](http://aka.ms/UK-G-Cloud)
 - [Digital Marketplace](https://www.digitalmarketplace.service.gov.uk/)
 - [Microsoft Online Services](http://aka.ms/Online-Services-Terms)
+- [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)

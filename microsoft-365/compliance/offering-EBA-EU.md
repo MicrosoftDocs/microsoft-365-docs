@@ -61,3 +61,4 @@ The Microsoft publication, [Risk Assessment and Compliance Guide for Financial I
 - [Financial services compliance in Azure](https://azure.microsoft.com/en-us/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
 - [Azure Financial Services Cloud Risk Assessment Tool](https://aka.ms/FFIEC-CSDT)
 - [Microsoft Financial Services Blog](https://techcommunity.microsoft.com/t5/Financial-Services-Blog/bg-p/FinancialServicesBlog)
+- [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)

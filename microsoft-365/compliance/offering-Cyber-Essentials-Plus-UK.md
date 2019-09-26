@@ -42,3 +42,4 @@ The [Azure Cyber Essentials PLUS certification](https://aka.ms/AzureCyberEPlusCe
 ## Resources
 
 - [Cyber Essentials Scheme: Assurance framework](https://www.cyberaware.gov.uk/cyberessentials/files/assurance-framework.pdf)
+- [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)

@@ -81,3 +81,4 @@ The NERC ERO Enterprise [released](https://www.nerc.com/pa/comp/guidance/Pages/d
 - [Microsoft and FedRAMP](offering-fedramp.md)
 - Microsoft and CSA STAR [Attestation](offering-csa-star-attestation.md) and [Certification](offering-csa-star-certification.md)
 - [Microsoft and SOC 2 Reports](offering-soc.md)
+- [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)

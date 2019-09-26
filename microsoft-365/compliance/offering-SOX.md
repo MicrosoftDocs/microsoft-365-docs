@@ -64,3 +64,4 @@ When you migrate your applications and data to covered Microsoft cloud services,
 - [Financial services compliance in Azure](https://azure.microsoft.com/en-us/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
 - [Microsoft business cloud services and financial services](https://www.microsoft.com/en-us/trustcenter/cloudservices/financialservices)
 - [Shared responsibilities for cloud computing](https://aka.ms/sharedresponsibility)
+- [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)

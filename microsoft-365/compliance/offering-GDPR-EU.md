@@ -87,3 +87,7 @@ Explore the [interactive GDPR and Data Governance e-book](https://go.microsoft.c
 ### Safeguard individual privacy
 
 [Read the Microsoft 365 blog](https://go.microsoft.com/fwlink/p/?linkid=2048733).
+
+### Microsoft Trust Center
+
+[Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
