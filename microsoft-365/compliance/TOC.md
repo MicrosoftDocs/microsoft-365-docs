@@ -287,6 +287,7 @@
 ## [Assign eDiscovery permissions](assign-ediscovery-permissions.md)
 ## [Set up compliance boundaries for eDiscovery investigations in Office 365](set-up-compliance-boundaries.md)
 ## [eDiscovery solution series - Data spillage scenario - Search and purge](data-spillage-scenariosearch-and-purge.md)
+## [Troubleshoot common eDiscovery issues](ediscovery-troubleshooting-common-issues.md)
 
 ## Manage holds
 ### [Create an eDiscovery hold](ediscovery-cases.md#step-4-place-content-locations-on-hold)
