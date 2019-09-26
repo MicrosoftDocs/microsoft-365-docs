@@ -23,11 +23,7 @@ This topic covers basic troubleshooting steps you can take to identify and resol
 
 ## Error/issue ambiguous location
 
-You'll receive this error "The compliance search contains the following invalid location `(s):useralias@contoso.com. The location "useralias@contoso.com" is ambiguous"`
-
-### Details
-
-You may receive this error if you tried to add user’s mailbox location to search and there are duplicate or conflicting objects with the same user id in the Exchange Online Protection (EOP) directory.
+You'll receive this error "The compliance search contains the following invalid location `(s):useralias@contoso.com. The location "useralias@contoso.com" is ambiguous"` if you tried to add user’s mailbox location to search and there are duplicate or conflicting objects with the same user id in the Exchange Online Protection (EOP) directory.
 
 ### Resolution
 
@@ -50,13 +46,10 @@ The output for 'useralias@contoso.com' might be
 
 3. If multiple users are returned, locate and fix the conflicting object.
 
-## Error/issue specific location search fails
+## Error/issue search fails on specific locations
 
-Specific locations in a large search fails.
-
-### Details
-
-This search completed with (#) errors.  Would you like to retry the search on the failed locations?
+An eDiscovery or content search may yield the following error:
+>This search completed with (#) errors.  Would you like to retry the search on the failed >locations?
 
 ![search specific location fails error screenshot]( media/edisc-tshoot-specific-location-search-fails.png)
 
@@ -76,11 +69,8 @@ Get-Compliancesearch searchname|fl
 1. If you continue to receive these error, see [Retry failed locations](https://docs.microsoft.com/en-us/Office365/SecurityCompliance/retry-failed-content-search) for additional troubleshooting steps.
 
 ## Error/issue file not found
-“File not found” in the export warnings and errors.csv or skipped items.csv.
 
-### Details
-
-When running an eDiscovery search that includes SharePoint Online and One Drive For Business locations, you may receive the error `File Not Found` although the file is located on the site.  This may occur if the file cannot be located on the site or the index is out of date. Heres is the text of an actual error, with emphasis added.
+“File not found” in the export warnings and errors.csv or skipped items.csv. When running an eDiscovery search that includes SharePoint Online and One Drive For Business locations, you may receive the error `File Not Found` although the file is located on the site.  This may occur if the file cannot be located on the site or the index is out of date. Heres is the text of an actual error, with emphasis added.
   
 > 28.06.2019 10:02:19_FailedToExportItem_Failed to download content. Additional diagnostic info : Microsoft.Office.Compliance.EDiscovery.ExportWorker.Exceptions.ContentDownloadTemporaryFailure: Failed to download from content 6ea52149-91cd-4965-b5bb-82ca6a3ec9be of type Document. Correlation Id: 3bd84722-937b-4c23-b61b-08d6fba9ec32. ServerErrorCode: -2147024894 ---> Microsoft.SharePoint.Client.ServerException: ***File Not Found***. at Microsoft.SharePoint.Client.ClientRequest.ProcessResponseStream(Stream responseStream) at Microsoft.SharePoint.Client.ClientRequest.ProcessResponse()
 --- End of inner exception stack trace ---
@@ -91,11 +81,8 @@ When running an eDiscovery search that includes SharePoint Online and One Drive 
 2. Use the procedures at [Manually request crawling and re-indexing of a site, a library or a list](https://docs.microsoft.com/en-us/sharepoint/crawl-site-content) to re-index the site.
 
 ## Error/issue search fails recipient not found
- eDiscovery search fails with error `recipient not found`
 
-### Details
-
-This error may occur if the user object cannot be found in Exchange Online Protection (EOP) because the object has not synced.
+eDiscovery search fails with error `recipient not found`. This error may occur if the user object cannot be found in Exchange Online Protection (EOP) because the object has not synced.
 
 ### Resolution
 
@@ -110,11 +97,7 @@ Get-Recipient userId|fl
 
 ## Error/issue exporting search results is slow
 
-Exporting search results is slow from eDiscovery or Content Search in the Security and Compliance center.
-
-### Details
-
-When running eDiscovery export, the download is taking longer than expected.  You can check to see the amount of data to be download and possibly increase the export speed.
+When exporting search results from eDiscovery or Content Search in the Security and Compliance center, the download is taking longer than expected.  You can check to see the amount of data to be download and possibly increase the export speed.
 
 ### Resolution
 
@@ -137,10 +120,9 @@ Get-ComplianceSearchAction |fl
 
 ## Error/issue "Internal server error (500) occurred"
 
-![internal server error 500 screenshot](media/edisc-tshoot-error-500.png)
-
-### Details 
 When running an eDiscovery search, if the search continually fails with error similar to "Internal server error (500) occurred", you may need re-run the search only on specific mailbox locations.
+
+![internal server error 500 screenshot](media/edisc-tshoot-error-500.png)
 
 ### Resolution
 
@@ -157,11 +139,9 @@ Get-ComplianceSearch searchname |fl
 
 ## Error/issue holds don't sync
 
-eDiscovery Case Hold Policy Sync Distribution error.
+eDiscovery Case Hold Policy Sync Distribution error. The error reads:
 
-### Details
-
-"Resources: It's taking longer than expected to deploy the policy. It might take an additional two hours to update the final deployment status, so check back in a couple hours.”
+>"Resources: It's taking longer than expected to deploy the policy. It might take an additional >two hours to update the final deployment status, so check back in a couple hours.”
 
 ### Resolution
 
@@ -176,3 +156,6 @@ Get-RetentionCompliancePolicy  policyname - Distributiondetail|fl
 > If error exists, create escalation to PG to force a manual re-sync on the Policy.
 
 3. Contact CSS.
+
+## See Also
+- [Tips to avoid content location errors](https://docs.microsoft.com/en-us/microsoft-365/compliance/retry-failed-content-search%23tips-to-avoid-content-location-errors)
