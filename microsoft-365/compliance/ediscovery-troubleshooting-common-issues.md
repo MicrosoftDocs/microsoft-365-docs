@@ -49,7 +49,7 @@ The output for 'useralias@contoso.com' might be
 ## Error/issue search fails on specific locations
 
 An eDiscovery or content search may yield the following error:
->This search completed with (#) errors.  Would you like to retry the search on the failed >locations?
+>This search completed with (#) errors.  Would you like to retry the search on the failed locations?
 
 ![search specific location fails error screenshot]( media/edisc-tshoot-specific-location-search-fails.png)
 
@@ -70,7 +70,7 @@ Get-Compliancesearch searchname|fl
 
 ## Error/issue file not found
 
-“File not found” in the export warnings and errors.csv or skipped items.csv. When running an eDiscovery search that includes SharePoint Online and One Drive For Business locations, you may receive the error `File Not Found` although the file is located on the site.  This may occur if the file cannot be located on the site or the index is out of date. Heres is the text of an actual error, with emphasis added.
+When running an eDiscovery search that includes SharePoint Online and One Drive For Business locations, you may receive the error `File Not Found` although the file is located on the site. This error will be in the export warnings and errors.csv or skipped items.csv  This may occur if the file cannot be located on the site or the index is out of date. Here's the text of an actual error, with emphasis added.
   
 > 28.06.2019 10:02:19_FailedToExportItem_Failed to download content. Additional diagnostic info : Microsoft.Office.Compliance.EDiscovery.ExportWorker.Exceptions.ContentDownloadTemporaryFailure: Failed to download from content 6ea52149-91cd-4965-b5bb-82ca6a3ec9be of type Document. Correlation Id: 3bd84722-937b-4c23-b61b-08d6fba9ec32. ServerErrorCode: -2147024894 ---> Microsoft.SharePoint.Client.ServerException: ***File Not Found***. at Microsoft.SharePoint.Client.ClientRequest.ProcessResponseStream(Stream responseStream) at Microsoft.SharePoint.Client.ClientRequest.ProcessResponse()
 --- End of inner exception stack trace ---
@@ -97,7 +97,7 @@ Get-Recipient userId|fl
 
 ## Error/issue exporting search results is slow
 
-When exporting search results from eDiscovery or Content Search in the Security and Compliance center, the download is taking longer than expected.  You can check to see the amount of data to be download and possibly increase the export speed.
+When exporting search results from eDiscovery or Content Search in the Security and Compliance center, the download takes longer than expected.  You can check to see the amount of data to be download and possibly increase the export speed.
 
 ### Resolution
 
@@ -126,7 +126,7 @@ When running an eDiscovery search, if the search continually fails with error si
 
 ### Resolution
 
-1. Rerun the search and break the search into smaller searches.  Try using smaller date range or limit the number of locations being searched.
+1. Break the search into smaller searches and run the search again.  Try using a smaller date range or limit the number of locations being searched.
 2. Connect to [Exchange Online Protection PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell?view=exchange-ps) and type:
 
 ```powershell
@@ -141,7 +141,7 @@ Get-ComplianceSearch searchname |fl
 
 eDiscovery Case Hold Policy Sync Distribution error. The error reads:
 
->"Resources: It's taking longer than expected to deploy the policy. It might take an additional >two hours to update the final deployment status, so check back in a couple hours.”
+> "Resources: It's taking longer than expected to deploy the policy. It might take an additional two hours to update the final deployment status, so check back in a couple hours.”
 
 ### Resolution
 
