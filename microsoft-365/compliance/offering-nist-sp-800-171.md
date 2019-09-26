@@ -57,9 +57,9 @@ Yes. Microsoft customers may use the audited controls described in the reports f
 
 ## Resources
 
+- [Microsoft DoD Certification Meets NIST 800-171 Requirements](offering-DoD-DISA-L2-L4-L5.md)
 - [NIST 800–171 Compliance Starts with Cybersecurity Documentation](https://www.nist800171.com/)
 - [Microsoft Cloud Services FedRAMP Authorizations](https://marketplace.fedramp.gov/index.html?status=Compliant&sort=productName#/products)
 - [NIST 800-171 3.3 Audit and Accountability with Office 365 GCC High](https://info.summit7systems.com/blog/nist-3.3-audit-and-accountability-with-office-365)
 - [Microsoft and the NIST Cybersecurity Framework](offering-nist-csf.md)
-- [Microsoft and the US Department of Defense](offering-DoD-DISA-L2-L3-L5.md)
 - [Microsoft Government Cloud](https://www.microsoft.com/enterprise/government)

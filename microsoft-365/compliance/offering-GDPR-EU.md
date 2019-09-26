@@ -64,11 +64,13 @@ Learn how Microsoft customer INAIL is using Azure Information Protection to clas
 
 [Learn more](https://www.microsoft.com/en-us/trust-center/privacy/gdpr-faqs) about our contractual commitments to our customers plus our own commitment to GDPR compliance.
 
+### ISO/IEC 27701 Privacy Information Management System (PIMS)
+
+[Learn more](offering-iso-27701.md)
+
 ### Compliance Manager
 
 Use [Compliance manager](https://go.microsoft.com/fwlink/p/?linkid=2048390) to help perform ongoing risk assessments, get actionable insights, and simplify your compliance processes.
-
-[Compliance manager](https://go.microsoft.com/fwlink/p/?linkid=2048390)
 
 ### Security and Compliance Center
 

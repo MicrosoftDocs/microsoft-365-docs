@@ -52,7 +52,7 @@ No. The use of public cloud computing is permitted without an approval by the FI
 
 **Are there any mandatory terms that must be included in the contract with the cloud services provider?**
 
-Yes. In Part 2 of the Compliance Checklist, we have mapped these terms against the sections in the Microsoft contractual documents where you find them addressed. In addition, the Swiss Federal Data Protection and Information Commissioner (FDPIC) supplies a sample contract for transborder outsourcing of data processing. This is the same as the Standard Contractual Clauses (also known as EU Model Clauses) under the [Microsoft Online Services Terms](https://aka.ms/Online-Services-Terms).
+Yes. In Part 2 of the Compliance Checklist, we have mapped these terms against the sections in the Microsoft contractual documents where you find them addressed. In addition, the Swiss Federal Data Protection and Information Commissioner (FDPIC) supplies a sample contract for transborder outsourcing of data processing. This is the same as the Standard Contractual Clauses (also known as [EU Model Clauses](offering-EU-Model-Clauses.md)) under the [Microsoft Online Services Terms](https://aka.ms/Online-Services-Terms).
 
 ## Resources
 

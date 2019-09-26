@@ -62,7 +62,7 @@ Microsoft created a mapping between its global assurances to the controls in the
 
 **Can we share this report?**
 
-The report is provided with you under a non-disclosure agreement (NDA), on the basis that it is for customer information only and that it will not be copied or disclosed via other channels than the Microsoft Service Trust Platform.
+The report is provided with you under a non-disclosure agreement (NDA), on the basis that it is for customer information only and that it will not be copied or disclosed via other channels than the Microsoft Service Trust Portal.
 
 Customers can share the report with their own internal or external auditor as part of their compliance or assurance processes.
 

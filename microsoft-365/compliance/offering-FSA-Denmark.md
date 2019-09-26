@@ -17,16 +17,16 @@ hideEdit: true
 
 ## About the FSA
 
-The [Financial Supervisory Authority](https://aka.ms/FinServ-Guide-Denmark) ([Finanstilsynet](https://servicetrust.microsoft.com/ViewPage/FFIECBlueprint)), under the Ministry of Industry, Business, and Financial Affairs, is the financial regulatory authority of the Danish government. Its principal role is to prepare regulatory guidelines for financial institutions in Denmark and monitor their compliance, as well as cooperate with regional and international authorities and regulators.
+The [Financial Supervisory Authority](https://aka.ms/FinServ-Guide-Denmark) ([Finanstilsynet](https://www.finanstilsynet.dk/)), under the Ministry of Industry, Business, and Financial Affairs, is the financial regulatory authority of the Danish government. Its principal role is to prepare regulatory guidelines for financial institutions in Denmark and monitor their compliance, as well as cooperate with regional and international authorities and regulators.
 
-The FSA acts in concert with the European Banking Authority (EBA), “an independent EU authority, which works to ensure effective and consistent prudential regulation and supervision across the European banking sector.” To that end, the EBA has outlined a comprehensive approach to the use of cloud computing by financial institutions in the EU, [Recommendations on outsourcing to cloud services providers](https://aka.ms/d365-compliance-list).
+The FSA acts in concert with the European Banking Authority (EBA), “an independent EU authority, which works to ensure effective and consistent prudential regulation and supervision across the European banking sector.” To that end, the EBA has outlined a comprehensive approach to the use of cloud computing by financial institutions in the EU, [Recommendations on outsourcing to cloud services providers](https://eba.europa.eu/documents/10180/2170121/Final+draft+Recommendations+on+Cloud+Outsourcing+%28EBA-Rec-2017-03%29.pdf/5fa5cdde-3219-4e95-946d-0c0d05494362).
 
 There are several guidelines that financial institutions in Denmark should be aware of when moving business functions to the cloud. In general, they prescribe contractual requirements for both financial institutions and cloud service providers to help ensure that financial organizations can adequately monitor and audit the outsourced functions. These include:
 
 Guidelines issued by the Ministry of Industry, Business, and Financial Affairs:
 
-- The Danish Act on Financial Institutions ([Danish](https://aka.ms/FinServ-Guide-Denmark?id=193767))
-- The Executive Order 1304 on outsourcing of significant areas of activity ([Danish](https://aka.ms/o365-compliance-framework?id=134352) and [English](https://www.dfsa.dk/?la=en)) and the accompanying Guideline (Danish)
+- The Danish Act on Financial Institutions ([Danish](https://www.retsinformation.dk/Forms/R0710.aspx?id=193767))
+- The Executive Order 1304 on outsourcing of significant areas of activity ([Danish](https://www.retsinformation.dk/Forms/R0710.aspx?id=134352) and [English](https://www.dfsa.dk/?la=en)) and the accompanying Guideline (Danish)
 - Guidance on the use of cloud services as part of IT–outsourcing ([Danish](https://www.finanstilsynet.dk/?id=131889)) issued by the FSA.
 
 ## Microsoft and the FSA
@@ -48,8 +48,8 @@ The Microsoft checklist helps Danish financial firms conducting due-diligence as
 
 ## Microsoft in-scope cloud services
 
-- [Azure](https://www.retsinformation.dk/Forms/R0710.aspx)
-- [Dynamics 365](https://www.retsinformation.dk/Forms/R0710.aspx)
+- [Azure](https://gallery.technet.microsoft.com/Overview-of-Azure-c1be3942)
+- [Dynamics 365](http://download.microsoft.com/download/E/1/9/E1977163-7A86-4812-AC18-C03ADC958AAF/Microsoft_Dynamics_365_Cloud_Service_Compliance_Datasheet.pdf)
 - [Microsoft 365](https://aka.ms/RiskGovernanceGuide)
 
 ## Frequently asked questions
@@ -64,7 +64,7 @@ Yes. The Executive Order on Outsourcing of Significant Areas of Activity (and th
 
 ## Resources
 
-- [Microsoft Financial Services Compliance Program](https://aka.ms/FinServ-Guide-Denmark)
+- [Microsoft Financial Services Compliance Program](http://download.microsoft.com/download/6/4/7/64707E3E-6D3E-45D0-8207-A0EA3201B4A6/Microsoft%20Cloud%20-%20Financial%20Services%20Compliance%20Program%20(Print).pdf)
 - [Microsoft business cloud services and financial services](https://servicetrust.microsoft.com/viewpage/financialservicesoverview)
 - [Financial services compliance in Azure](https://aka.ms/AzureCompliance)
-- [Azure Financial Services Cloud Risk Assessment Tool](https://aka.ms/FSCP-Print?command=Download&downloadType=Document&downloadId=079a1973-711a-428f-9312-9ddd290cff7b&docTab=c726d5c0-2d1e-11e8-a485-57140ec19669_PaaS)
+- [Azure Financial Services Cloud Risk Assessment Tool](https://servicetrust.microsoft.com/ViewPage/FFIECBlueprint?command=Download&downloadType=Document&downloadId=079a1973-711a-428f-9312-9ddd290cff7b&docTab=c726d5c0-2d1e-11e8-a485-57140ec19669_PaaS)

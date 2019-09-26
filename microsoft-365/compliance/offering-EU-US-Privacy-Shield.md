@@ -15,6 +15,14 @@ hideEdit: true
 
 # Compliance Offering: EU-US and Swiss-US Privacy Shield Frameworks
 
+## About the EU-U.S. and Swiss-U.S. Privacy Shield frameworks
+
+According to the Privacy Shield Program, “the [EU-U.S. and Swiss-U.S. Privacy Shield Frameworks](https://www.privacyshield.gov/welcome) were designed by the US Department of Commerce, and the European Commission and Swiss Administration, respectively, to provide companies on both sides of the Atlantic with a mechanism to comply with data protection requirements when transferring personal data from the European Union and Switzerland to the United States.” The International Trade Administration within the Department of Commerce administers the Privacy Shield Program in the United States.
+
+The transfer of personal data outside of the EU and Switzerland is governed by EU and Swiss law, which generally prohibit personal data from being transferred to countries outside the EEA unless “adequate” levels of protection are ensured. The Privacy Shield Frameworks and the Standard Contractual Clauses (or [EU Model Clauses](offering-EU-Model-Clauses.md)) are two mechanisms designed to provide this level of data protection.
+
+The 23 [Privacy Shield Principles](https://www.privacyshield.gov/article?id=Requirements-of-Participation) define a set of requirements that govern the use and handling of personal data transferred from the EU as well as access and dispute resolution mechanisms that participating companies must provide to EU citizens. Companies must let individuals know how their data is processed, limit the purposes for which it is used, protect data for as long as it is held, and ensure accountability for data transferred to third parties. Requirements also include providing free and accessible dispute resolution and transparency related to government requests for personal data.
+
 ## Microsoft and the EU-U.S. and Swiss-U.S. Privacy Shield frameworks
 
 To join the EU-U.S. and Swiss-U.S. Privacy Shield Frameworks — an action that is voluntary — US-based companies must publicly commit to complying with framework requirements and self-certify their compliance to the US Department of Commerce. Once they publicly commit and self-certify, that commitment becomes enforceable under US law.
@@ -46,14 +54,6 @@ Privacy in the Microsoft Cloud
 Data protection in Azure  
     - Azure provides customers with strong data security, both by default and as customer options.  
     - [Learn more](https://docs.microsoft.com/azure/security/azure-protection-of-customer-data)
-
-## About the EU-U.S. and Swiss-U.S. Privacy Shield frameworks
-
-According to the Privacy Shield Program, “the [EU-U.S. and Swiss-U.S. Privacy Shield Frameworks](https://www.privacyshield.gov/welcome) were designed by the US Department of Commerce, and the European Commission and Swiss Administration, respectively, to provide companies on both sides of the Atlantic with a mechanism to comply with data protection requirements when transferring personal data from the European Union and Switzerland to the United States.” The International Trade Administration within the Department of Commerce administers the Privacy Shield Program in the United States.
-
-The transfer of personal data outside of the EU and Switzerland is governed by EU and Swiss law, which generally prohibit personal data from being transferred to countries outside the EEA unless “adequate” levels of protection are ensured. The Privacy Shield Frameworks and the Standard Contractual Clauses (or EU Model Clauses) are two mechanisms designed to provide this level of data protection.
-
-The 23 [Privacy Shield Principles](https://www.privacyshield.gov/article?id=Requirements-of-Participation) define a set of requirements that govern the use and handling of personal data transferred from the EU as well as access and dispute resolution mechanisms that participating companies must provide to EU citizens. Companies must let individuals know how their data is processed, limit the purposes for which it is used, protect data for as long as it is held, and ensure accountability for data transferred to third parties. Requirements also include providing free and accessible dispute resolution and transparency related to government requests for personal data.
 
 ## Frequently asked questions
 

@@ -15,6 +15,12 @@ hideEdit: true
 
 # Compliance Offering: My Number Act (Japan)
 
+## About the My Number Act
+
+The Japanese government enacted the My Number Act ([Japanese](http://elaws.e-gov.go.jp/search/elawsSearch/elaws_search/lsg0500/viewContents?lawId=425AC0000000027_20180627_430AC0000000066) and [English](https://www.ppc.go.jp/files/pdf/en3.pdf)), which took effect in January 2016. It assigned a unique 12-digit number — called My Number, or the Social Benefits and Tax Number or Individual Number — to every resident of Japan, whether Japanese or foreign. Giving each person one number for all purposes (like the US Social Security number) was designed to simplify and make more efficient taxation and the implementation of social benefits such as the national pension, medical insurance, and unemployment.
+
+The Personal Information Protection Commission (PPC), which acts as the centralized data protection authority, was established by the Act on the Protection of Personal Information ([Japanese](https://www.ppc.go.jp/personal/preparation/) and [English](https://www.ppc.go.jp/en/legal/)). In the PPC’s role of supervising and monitoring compliance with the My Number Act, it has issued [My Number Guidelines](https://www.ppc.go.jp/legal/policy/faq/) (Japanese) to ensure that organizations properly handle and adequately protect personal data, including My Number data, as required by law.
+
 ## Microsoft and the My Number Act
 
 To help our Japanese customers protect the privacy of personal data, Microsoft contractually commits through the [Microsoft Online Services Terms](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31) that our in-scope business cloud services have implemented the technical and organizational security safeguards that help our customers comply with the My Number Act. This means that customers in Japan can deploy Microsoft business cloud services with the confidence that they can comply with Japanese legislative requirements.
@@ -49,12 +55,6 @@ Therefore, Microsoft business cloud services support My Number Act requirements 
 - [Audits & Reports in Office 365](https://docs.microsoft.com/en-us/office365/SecurityCompliance/office-365-auditing-and-reporting-overview): Explore the features customers can use to track user and administrative activity within their tenant.
 
 - [Data Retention in Office 365](https://docs.microsoft.com/en-us/office365/SecurityCompliance/office-365-data-retention-deletion-and-destruction-overview): Understand the data handling policy for how long customer data is retained after being deleted.
-
-## About the My Number Act
-
-The Japanese government enacted the My Number Act ([Japanese](http://elaws.e-gov.go.jp/search/elawsSearch/elaws_search/lsg0500/viewContents?lawId=425AC0000000027_20180627_430AC0000000066) and [English](https://www.ppc.go.jp/files/pdf/en3.pdf)), which took effect in January 2016. It assigned a unique 12-digit number — called My Number, or the Social Benefits and Tax Number or Individual Number — to every resident of Japan, whether Japanese or foreign. Giving each person one number for all purposes (like the US Social Security number) was designed to simplify and make more efficient taxation and the implementation of social benefits such as the national pension, medical insurance, and unemployment.
-
-The Personal Information Protection Commission (PPC), which acts as the centralized data protection authority, was established by the Act on the Protection of Personal Information ([Japanese](https://www.ppc.go.jp/personal/preparation/) and [English](https://www.ppc.go.jp/en/legal/)). In the PPC’s role of supervising and monitoring compliance with the My Number Act, it has issued [My Number Guidelines](https://www.ppc.go.jp/legal/policy/faq/) (Japanese) to ensure that organizations properly handle and adequately protect personal data, including My Number data, as required by law.
 
 ## Frequently asked questions
 

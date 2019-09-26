@@ -15,6 +15,12 @@ hideEdit: true
 
 # Compliance Offering: Police-Assured Secure Facilities (PASF) United Kingdom
 
+## About PASF
+
+The National Policing Information Risk Management Team (NPIRMT) of the UK Home Office (the ministry responsible for security, immigration, and law and order) is charged with ensuring that the storage of and access to police information meet its standards. Through the [National Policing Information Risk Management Policy](http://library.college.police.uk/docs/APP-National-Policing-Information-Risk-Management-Policy.pdf), it sets the central standards and controls for law enforcement agencies across the UK that are assessing the risk of moving police information systems to the cloud. The policy requires that all national police services in the UK that store and process protectively marked or other sensitive law enforcement information take an extra step in their risk assessment: a physical inspection of the datacenter where their data will be stored. The successful assessment of a datacenter determines that it is PASF.
+
+To assist local police services with their due-diligence review, the NPIRMT performed a PASF audit of Azure datacenters and has determined that they are compliant. Local police services can use this NPIRMT assessment to support their own review. Using the NPIRMT policy guidelines, the senior information risk owner for each police service is responsible for assessing the suitability of an individual datacenter in the context of their particular application, which they then submit to the NPIRMT for approval.
+
 ## Microsoft and PASF
 
 The UK National Policing Information Risk Management Team (NPIRMT) completed a comprehensive security assessment of the physical infrastructure of Microsoft Azure datacenters in the UK and concluded that they are in compliance with NPIRMT requirements without any remedial actions. This successful physical audit means that Microsoft business cloud services can now support police forces across the UK who require Police-Assured Secure Facilities (PASF) to process and store their data in the cloud.
@@ -36,12 +42,6 @@ The NPIRMT audits one Azure datacenter each year, annually cycling through the f
 ## How to implement
 
 - [Azure UK Official Blueprint](https://servicetrust.microsoft.com/ViewPage/UKBlueprints): Helps UK customers accelerate IaaS and PaaS deployments of compliant workloads in Azure.
-
-## About PASF
-
-The National Policing Information Risk Management Team (NPIRMT) of the UK Home Office (the ministry responsible for security, immigration, and law and order) is charged with ensuring that the storage of and access to police information meet its standards. Through the [National Policing Information Risk Management Policy](http://library.college.police.uk/docs/APP-National-Policing-Information-Risk-Management-Policy.pdf), it sets the central standards and controls for law enforcement agencies across the UK that are assessing the risk of moving police information systems to the cloud. The policy requires that all national police services in the UK that store and process protectively marked or other sensitive law enforcement information take an extra step in their risk assessment: a physical inspection of the datacenter where their data will be stored. The successful assessment of a datacenter determines that it is PASF.
-
-To assist local police services with their due-diligence review, the NPIRMT performed a PASF audit of Azure datacenters and has determined that they are compliant. Local police services can use this NPIRMT assessment to support their own review. Using the NPIRMT policy guidelines, the senior information risk owner for each police service is responsible for assessing the suitability of an individual datacenter in the context of their particular application, which they then submit to the NPIRMT for approval.
 
 ## Frequently asked questions
 

@@ -35,7 +35,7 @@ The MeitY accreditation of Microsoft was the result of a rigorous audit conducte
 
 ## Audits, reports, and certificates
 
-- Microsoft Cloud accreditation under AUDIT STATUS OF CLOUD SERVICE PROVIDERS
+- Microsoft Cloud accreditation under [Audit Status of Cloud Service Providers](http://meity.gov.in/content/gi-cloud-meghraj)
 
 ## Microsoft in-scope cloud services
 

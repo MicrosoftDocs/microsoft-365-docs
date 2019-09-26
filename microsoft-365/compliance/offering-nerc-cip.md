@@ -15,6 +15,10 @@ hideEdit: true
 
 # Compliance Offering: North American Electric Reliability Corporation (NERC)
 
+## About the NERC
+
+The [North American Electric Reliability Corporation](https://www.nerc.com/) (NERC) is a nonprofit regulatory authority whose mission is to ensure the reliability of the North American bulk power system. NERC is subject to oversight by the US Federal Energy Regulatory Commission (FERC) and governmental authorities in Canada. In 2006, FERC granted the Electric Reliability Organization (ERO) designation to NERC in accordance with the Energy Policy Act of 2005 (US Public Law 109-58). NERC develops and enforces reliability standards known as NERC [Critical Infrastructure Protection (CIP) standards](https://www.nerc.com/pa/Stand/Pages/CIPStandards.aspx).
+
 ## Microsoft and the NERC CIP standard
 
 The North American Electric Reliability Corporation (NERC) is a nonprofit regulatory authority whose mission is to ensure the reliability of the North American bulk power system. NERC is subject to oversight by the US Federal Energy Regulatory Commission (FERC) and governmental authorities in Canada. In 2006, FERC granted the Electric Reliability Organization (ERO) designation to NERC in accordance with the Energy Policy Act of 2005 (US Public Law 109-58). NERC develops and enforces reliability standards known as NERC [Critical Infrastructure Protection (CIP) standards](https://www.nerc.com/pa/Stand/Pages/CIPStandards.aspx).
@@ -54,10 +58,6 @@ Addresses compliance for Registered Entities considering cloud adoption for work
 Technical guidance helps Registered Entities with NERC audits of assets deployed in Azure or Azure Government. 
 
 [Learn more](https://aka.ms/AzureNERCGuide)
-
-## About the NERC
-
-The [North American Electric Reliability Corporation](https://www.nerc.com/) (NERC) is a nonprofit regulatory authority whose mission is to ensure the reliability of the North American bulk power system. NERC is subject to oversight by the US Federal Energy Regulatory Commission (FERC) and governmental authorities in Canada. In 2006, FERC granted the Electric Reliability Organization (ERO) designation to NERC in accordance with the Energy Policy Act of 2005 (US Public Law 109-58). NERC develops and enforces reliability standards known as NERC [Critical Infrastructure Protection (CIP) standards](https://www.nerc.com/pa/Stand/Pages/CIPStandards.aspx).
 
 ## Frequently asked questions
 

@@ -15,6 +15,20 @@ hideEdit: true
 
 # Compliance Offering: ISO/IEC 27017:2015 Code of Practice for Information Security Controls
 
+## ISO-IEC 27017 Overview
+
+The ISO/IEC 27017:2015 code of practice is designed for organizations to use as a reference for selecting cloud services information security controls when implementing a cloud computing information security management system based on ISO/IEC 27002:2013. It can also be used by cloud service providers as a guidance document for implementing commonly accepted protection controls.
+
+This international standard provides additional cloud-specific implementation guidance based on ISO/IEC 27002, and provides additional controls to address cloud-specific information security threats and risks referring to clauses 5–18 in ISO/IEC 27002: 2013 for controls, implementation guidance, and other information. Specifically, this standard provides guidance on 37 controls in ISO/IEC 27002, and it also features seven new controls that are not duplicated in ISO/IEC 27002. These new controls address the following important areas:
+
+- Shared roles and responsibilities within a cloud computing environment
+- Removal and return of cloud service customer assets upon contract termination
+- Protection and separation of a customer’s virtual environment from that of other customers
+- Virtual machine hardening requirements to meet business needs
+- Procedures for administrative operations of a cloud computing environment
+- Enabling customers to monitor relevant activities within a cloud computing environment
+- Alignment of security management for virtual and physical networks
+
 ## Microsoft and ISO/IEC 27017
 
 ISO/IEC 27017 is unique in providing guidance for both cloud service providers and cloud service customers. It also provides cloud service customers with practical information on what they should expect from cloud service providers. Customers can benefit directly from ISO/IEC 27017 by ensuring they understand the shared responsibilities in the cloud.
@@ -45,20 +59,6 @@ Microsoft cloud services are audited once a year for the ISO/IEC 27017:2015 code
 - [Azure ISO 27017 Assessment report](https://go.microsoft.com/fwlink/p/?linkid=2078010)
 - [Azure ISO 27017 Statement of Applicability](https://aka.ms/AzureISO27017StatementofApplicability)
 - [Office 365 ISO 27001, 27018, and 27017 Audit Assessment Report](https://aka.ms/o365isoreport)
-
-## ISO-IEC 27017 Overview
-
-The ISO/IEC 27017:2015 code of practice is designed for organizations to use as a reference for selecting cloud services information security controls when implementing a cloud computing information security management system based on ISO/IEC 27002:2013. It can also be used by cloud service providers as a guidance document for implementing commonly accepted protection controls.
-
-This international standard provides additional cloud-specific implementation guidance based on ISO/IEC 27002, and provides additional controls to address cloud-specific information security threats and risks referring to clauses 5–18 in ISO/IEC 27002: 2013 for controls, implementation guidance, and other information. Specifically, this standard provides guidance on 37 controls in ISO/IEC 27002, and it also features seven new controls that are not duplicated in ISO/IEC 27002. These new controls address the following important areas:
-
-- Shared roles and responsibilities within a cloud computing environment
-- Removal and return of cloud service customer assets upon contract termination
-- Protection and separation of a customer’s virtual environment from that of other customers
-- Virtual machine hardening requirements to meet business needs
-- Procedures for administrative operations of a cloud computing environment
-- Enabling customers to monitor relevant activities within a cloud computing environment
-- Alignment of security management for virtual and physical networks
 
 ## Frequently asked questions
 

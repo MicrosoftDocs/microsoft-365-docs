@@ -24,7 +24,7 @@ Both of these institutions act in concert with the European Banking Authority (E
 In general, the laws and guidelines support the point of view that cloud computing involving third-party services qualifies as a form of outsourcing, and financial institutions in the Netherlands must address the associated risks before moving business activities to the cloud. These include:
 
 - The Financial Supervision Act (FSA) ([Dutch](https://wetten.overheid.nl/BWBR0020368/2018-02-09) and [English](https://www.toezicht.dnb.nl/en/binaries/51-217291.pdf)), issued by the Dutch legislature in 2018, attaches conditions for financial institutions to control the risks associated with outsourcing and ensure that it doesn’t impede regulatory supervision.
-- The Circulaire Cloud Computing (Dutch and [English](https://www.toezicht.dnb.nl/en/binaries/51-224828.pdf)), issued by the DNB, requires that before supervised Dutch institutions engage in cloud computing, they must inform the DNB of their prospective outsourcing arrangements to ensure that operational processes and risks are under control.
+- The Circulaire Cloud Computing ([Dutch](https://www.toezicht.dnb.nl/binaries/50-224828.pdf) and [English](https://www.toezicht.dnb.nl/en/binaries/51-224828.pdf)), issued by the DNB, requires that before supervised Dutch institutions engage in cloud computing, they must inform the DNB of their prospective outsourcing arrangements to ensure that operational processes and risks are under control.
 
 Using a template that the DNB provides, they must submit a mandatory risk analysis that includes:
 

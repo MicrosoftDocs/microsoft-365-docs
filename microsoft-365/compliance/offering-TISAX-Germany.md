@@ -15,6 +15,14 @@ hideEdit: true
 
 # Compliance Offering: Trusted Information Security Assessment Exchange (TISAX) Germany
 
+## About TISAX
+
+To help secure the ever-increasing connectivity in the automotive industry, the German Association of the Automotive Industry ([Verband der Automobilindustrie](https://www.dict.cc/deutsch-englisch/Verband.html), VDA) developed a catalogue of criteria for assessing information security. The VDA Information Security Assessment ([German](https://www.vda.de/de/themen/sicherheit-und-standards/informationssicherheit/informationssicherheit-sicherheitsanforderungen.html) and [English](https://www.vda.de/en/topics/safety-and-standards/information-security/information-security-requirements)) is based on the fundamentals of the international ISO/IEC 27001 and 27002 standards adapted to the automotive industry. In 2017, it was updated to cover controls for the use of cloud services.
+
+VDA member companies used this instrument both for internal security assessments and for assessments of suppliers, service providers, and other partners that process sensitive information on their behalf. However, because these evaluations were handled individually by each company, it created a burden on partners and duplicated effort on the part of VDA members.
+
+To help streamline evaluations, the VDA set up a common assessment and exchange mechanism, the [Trusted Information Security Assessment Exchange](http://www.enx.com/tisax/) (TISAX). The catalogue of underlying TISAX requirements, Questionnaire for Checking Information Security Assessment and Information Security Management, Vers. 4 ([German](https://www.vda.de/de/services/Publikationen.html) and [English](https://www.vda.de/en/services/Publications.html)), provides common standards for IT security measures, and enables companies registered in TISAX to share assessment results. The VDA entrusted a neutral third party, the [ENX Association](https://portal.enx.com/en-US/en-en/TISAX/tisaxassessmentresults/), with TISAX implementation. In that capacity, it accredits audit providers (auditors), maintains the accreditation criteria and assessment requirements, and monitors the quality of implementation and assessment results.
+
 ## Microsoft and TISAX
 
 European automotive companies rely on trust to develop, build, and operate new cars. They use the Trusted Information Security Assessment Exchange (TISAX) to provide a common information security assessment for internal analysis, an evaluation of suppliers, and as an information exchange mechanism. An independent ENX-accredited auditor, PwC, completed the TISAX assessment of Microsoft datacenters and operations centers against TISAX specifications and IT security requirements.
@@ -50,14 +58,6 @@ This assessment is valid for three years.
 ### Manufacturing use cases
 
 Use case overviews, solution guides, tutorials, and other resources to help build [Azure solutions](https://docs.microsoft.com/en-us/azure/industry/manufacturing/).
-
-## About TISAX
-
-To help secure the ever-increasing connectivity in the automotive industry, the German Association of the Automotive Industry ([Verband der Automobilindustrie](https://www.dict.cc/deutsch-englisch/Verband.html), VDA) developed a catalogue of criteria for assessing information security. The VDA Information Security Assessment ([German](https://www.vda.de/de/themen/sicherheit-und-standards/informationssicherheit/informationssicherheit-sicherheitsanforderungen.html) and [English](https://www.vda.de/en/topics/safety-and-standards/information-security/information-security-requirements)) is based on the fundamentals of the international ISO/IEC 27001 and 27002 standards adapted to the automotive industry. In 2017, it was updated to cover controls for the use of cloud services.
-
-VDA member companies used this instrument both for internal security assessments and for assessments of suppliers, service providers, and other partners that process sensitive information on their behalf. However, because these evaluations were handled individually by each company, it created a burden on partners and duplicated effort on the part of VDA members.
-
-To help streamline evaluations, the VDA set up a common assessment and exchange mechanism, the [Trusted Information Security Assessment Exchange](http://www.enx.com/tisax/) (TISAX). The catalogue of underlying TISAX requirements, Questionnaire for Checking Information Security Assessment and Information Security Management, Vers. 4 ([German](https://www.vda.de/de/services/Publikationen.html) and [English](https://www.vda.de/en/services/Publications.html)), provides common standards for IT security measures, and enables companies registered in TISAX to share assessment results. The VDA entrusted a neutral third party, the [ENX Association](https://portal.enx.com/en-US/en-en/TISAX/tisaxassessmentresults/), with TISAX implementation. In that capacity, it accredits audit providers (auditors), maintains the accreditation criteria and assessment requirements, and monitors the quality of implementation and assessment results.
 
 ## Frequently asked questions
 

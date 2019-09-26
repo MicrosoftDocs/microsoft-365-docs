@@ -37,7 +37,7 @@ Learn more about how to use Microsoft Azure compliance reports when addressing y
 
 ## Audits, reports, and certificates
 
-SOC 1 Type 2 reports for:
+[SOC 1 Type 2](offering-SOC.md) reports for:
 
 - Azure and Power BI
 - Dynamics 365

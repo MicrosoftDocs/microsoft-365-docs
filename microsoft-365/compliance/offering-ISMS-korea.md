@@ -15,6 +15,16 @@ hideEdit: true
 
 # Compliance Offering: Korea-Information Security Management System (K-ISMS)
 
+## About K-ISMS
+
+Under Article 47 in the “Act on Promotion of Information and Communications Network Utilization and Information Protection” ([Korean](http://law.go.kr/lsSc.do?tabMenuId=tab18&query=%EC%A0%95%EB%B3%B4%ED%86%B5%EC%8B%A0%EB%A7%9D%20%EC%9D%B4%EC%9A%A9%EC%B4%89%EC%A7%84%20%EB%B0%8F%20%EC%A0%95%EB%B3%B4%EB%B3%B4%ED%98%B8) and [English](http://law.go.kr/engLsSc.do?tabMenuId=tab45)), the Korean government introduced the [Korea-Information Security Management System](https://isms.kisa.or.kr/main/isms/intro/) (K-ISMS). A country-specific ISMS framework, it defines a stringent set of control requirements designed to help ensure that organizations in Korea consistently and securely protect their information assets.
+
+To obtain the certification, a company must undergo an assessment by an independent auditor that covers both information security management and security countermeasures. It covers 104 criteria including 12 control items in 5 sectors for information security management, and 92 control items in 13 sectors for information security countermeasures. Some of these include examination of the organization’s security management responsibilities, security policies, security training, incident response, risk management, and more. A special committee examines the results of the audit and grants the certification.
+
+The K-ISMS framework is built on successful information security strategies and policies, as well as security counter measures and threat response procedures to minimize the impact of any security breaches. These have a significant overlap with ISO/IEC 27001 control objectives but are not identical. K-ISMS is more a detailed investigation against requirements than it is a general ISO/IEC 27001 assessment.
+
+Under the supervision of the Korean Ministry of Science and Information Technology (MSIT) ([Korean](https://www.msit.go.kr/web/main/main.do) and [English](https://english.msit.go.kr/english/main/main.do)), the Korea Internet & Security Agency (KISA) ([Korean](https://www.kisa.or.kr/main.jsp) and [English](https://www.kisa.or.kr/eng/main.jsp)) is the certifying authority of the K-ISMS. Certification is valid for three years, and certified entities must pass an annual audit to maintain it.
+
 ## Microsoft and K-ISMS
 
 Based on a rigorous evaluation by the Korea Internet & Security Agency (KISA), Microsoft Azure achieved the Korea Information Security Management System (K-ISMS) certification to host data. The certification covers Azure services that encompass compute, storage, networking, databases, and security, and the datacenter infrastructure of the Microsoft Korea Central and Korea South regions. The specifications for K-ISMS certification are based on ISO/IEC 27001, ISO/IEC 27018, and other international standards that govern the hosting of data.
@@ -37,16 +47,6 @@ The audit covered the measures Microsoft takes to secure data and protect its co
 Azure certification is effective for three years from the certification date (19 November 2018) with an annual reassessment by KISA, the certifying body.
 
 - [Azure K-ISMS certification](https://isms.kisa.or.kr/main/isms/issue/?certificationMode=list&crtfYear=2018&searchCondition=2&searchKeyword=%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C%EC%86%8C%ED%94%84%ED%8A%B8) (Korean)
-
-## About K-ISMS
-
-Under Article 47 in the “Act on Promotion of Information and Communications Network Utilization and Information Protection” ([Korean](http://law.go.kr/lsSc.do?tabMenuId=tab18&query=%EC%A0%95%EB%B3%B4%ED%86%B5%EC%8B%A0%EB%A7%9D%20%EC%9D%B4%EC%9A%A9%EC%B4%89%EC%A7%84%20%EB%B0%8F%20%EC%A0%95%EB%B3%B4%EB%B3%B4%ED%98%B8) and [English](http://law.go.kr/engLsSc.do?tabMenuId=tab45)), the Korean government introduced the [Korea-Information Security Management System](https://isms.kisa.or.kr/main/isms/intro/) (K-ISMS). A country-specific ISMS framework, it defines a stringent set of control requirements designed to help ensure that organizations in Korea consistently and securely protect their information assets.
-
-To obtain the certification, a company must undergo an assessment by an independent auditor that covers both information security management and security countermeasures. It covers 104 criteria including 12 control items in 5 sectors for information security management, and 92 control items in 13 sectors for information security countermeasures. Some of these include examination of the organization’s security management responsibilities, security policies, security training, incident response, risk management, and more. A special committee examines the results of the audit and grants the certification.
-
-The K-ISMS framework is built on successful information security strategies and policies, as well as security counter measures and threat response procedures to minimize the impact of any security breaches. These have a significant overlap with ISO/IEC 27001 control objectives but are not identical. K-ISMS is more a detailed investigation against requirements than it is a general ISO/IEC 27001 assessment.
-
-Under the supervision of the Korean Ministry of Science and Information Technology (MSIT) ([Korean](https://www.msit.go.kr/web/main/main.do) and [English](https://english.msit.go.kr/english/main/main.do)), the Korea Internet & Security Agency (KISA) ([Korean](https://www.kisa.or.kr/main.jsp) and [English](https://www.kisa.or.kr/eng/main.jsp)) is the certifying authority of the K-ISMS. Certification is valid for three years, and certified entities must pass an annual audit to maintain it.
 
 ## Frequently asked questions
 
