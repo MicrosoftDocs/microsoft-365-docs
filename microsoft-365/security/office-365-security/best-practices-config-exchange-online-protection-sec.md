@@ -1,5 +1,5 @@
 ---
-title: "Configuration best practices for EOP security, best practices, settings, recommendations, Sender Policy Framework, Domain-based Message Reporting and Conformance, DomainKeys Identified Mail,"
+title: "Configuration best practices for EOP security, best practices, settings, recommendations, Sender Policy Framework, Domain-based Message Reporting and Conformance, DomainKeys Identified Mail, steps, how does it work,"
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -121,4 +121,4 @@ Phising filters are on by default in Office 365, but can be configured for a bet
 |Enable Mailbox intelligence based Impersonation protection | Y | Y | - |
 |Domain Impersonation action should be | JMF | Quarantine | - |
 |User Impersonation action should be | JMF | Qurantine | - |
-|Mailbox intelligence based impersonation protection action should be | |||
+|Mailbox intelligence based impersonation protection action should be |  |||
