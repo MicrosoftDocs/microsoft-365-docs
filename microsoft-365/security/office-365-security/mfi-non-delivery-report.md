@@ -7,7 +7,7 @@ audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.assetid: 
+ms.assetid:
 description: "Admins can learn about the non-delivery report in the mail flow dashboard in the Security & Compliance Center."
 ---
 
