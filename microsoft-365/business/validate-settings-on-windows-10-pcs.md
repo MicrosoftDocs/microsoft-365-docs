@@ -21,6 +21,7 @@ search.appverid:
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
 description: "Learn how to validate Microsoft 365 Business app protection settings in Windows 10 devices."
+ms.custom: OKR_SMB_M365
 ---
 
 # Validate device protection settings on Windows 10 PCs

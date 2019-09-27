@@ -20,6 +20,7 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: "Learn to set up Microsoft 365 Business."
+ms.custom: OKR_SMB_M365
 ---
 
 # Get started with Microsoft 365 Business
