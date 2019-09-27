@@ -1,5 +1,5 @@
 ---
-title: "Empower people to work remotely"
+title: "Empower remote workers"
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
@@ -16,11 +16,11 @@ ms.custom:
 description: Configure the infrastructure and security that allows your employees to work remotely from anywhere and at any time.
 ---
 
-# Empower people to work remotely
+# Empower remote workers
 
 *This scenario applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
 
-[Empower people to work remotely](empower-people-to-work-remotely.md)
+[Empower remote workers](empower-people-to-work-remotely.md)
 
 
 Allowing employees to work away from the office seamlessly and securely is important for many organizations to save on office space, hire and retain employees who are unwilling to relocate, and reduce employee commuting, leaving them with more time to be productive and for stress-reducing activities outside of work.
@@ -73,7 +73,7 @@ The following phases step you through deploying the feature of Microsoft 365 Ent
 
 Because of the breadth and number of features and capabilities required for this scenario, we’ll step you through the required elements of the foundation infrastructure and workloads sections of the [Microsoft 365 Enterprise Deployment Guide](deploy-microsoft-365-enterprise.md).
 
-## Step 1: Foundation infrastructure requirements for remote workers
+### Step 1: Foundation infrastructure requirements for remote workers
 
 In this step, we’ll visit the phases of the [foundation infrastructure](deploy-foundation-infrastructure.md) and list the required elements to enable remote workers.
 
@@ -157,11 +157,11 @@ When offline (not connected to the Internet), your remote workers can change loc
 
 Here's the resulting configuration for remote workers of your organization if you use hybrid identity.
 
-![Final configuration for an organization with cloud-only identity](./media/empower-people-to-work-remotely/remote-workers-cloud-only.png)
+![Final configuration for an organization with hybrid identity](./media/empower-people-to-work-remotely/remote-workers-hybrid.png) 
  
 Here's the resulting configuration for remote workers your organization if you use cloud-only identity.
 
-![Final configuration for an organization with hybrid identity](./media/empower-people-to-work-remotely/remote-workers-hybrid.png) 
+![Final configuration for an organization with cloud-only identity](./media/empower-people-to-work-remotely/remote-workers-cloud-only.png)
 
 ## Phase 2: Drive user adoption for remote workers
 
