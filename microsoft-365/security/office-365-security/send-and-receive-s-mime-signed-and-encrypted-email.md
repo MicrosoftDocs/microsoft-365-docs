@@ -3,7 +3,7 @@ title: "Send and receive S/MIME signed and encrypted email in Exchange Online"
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: 
+ms.date:
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
