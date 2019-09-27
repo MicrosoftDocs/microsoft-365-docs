@@ -16,8 +16,8 @@
 ## Customer Key
 ### [Controlling your data in Office 365 using Customer Key](controlling-your-data-using-customer-key.md)
 ### [Service encryption with Customer Key for Office 365 FAQ](service-encryption-with-customer-key-faq.md)
-## [Communications supervision]()
-### [Learn about communications supervision](supervision-policies.md)
+## [Communication supervision]()
+### [Learn about communication supervision](supervision-policies.md)
 ### [Configure supervision policies for your organization](configure-supervision-policies.md)
 ## [Information barriers](information-barriers.md)
 ### [Define information barrier policies](information-barriers-policies.md)
@@ -287,6 +287,7 @@
 ## [Assign eDiscovery permissions](assign-ediscovery-permissions.md)
 ## [Set up compliance boundaries for eDiscovery investigations in Office 365](set-up-compliance-boundaries.md)
 ## [eDiscovery solution series - Data spillage scenario - Search and purge](data-spillage-scenariosearch-and-purge.md)
+## [Troubleshoot common eDiscovery issues](ediscovery-troubleshooting-common-issues.md)
 
 ## Manage holds
 ### [Create an eDiscovery hold](ediscovery-cases.md#step-4-place-content-locations-on-hold)
