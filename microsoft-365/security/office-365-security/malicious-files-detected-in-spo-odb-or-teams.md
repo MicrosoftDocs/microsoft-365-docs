@@ -38,9 +38,9 @@ To view status and detailed information about files that were detected by Office
   
 ## View and take action on files in quarantine
 
-1. In the Office 365 Security &amp; Compliance Center, choose **Threat management** \> **Review** \> **Quarantine** or browse directly to https://protection.office.com/quarantine.
+1. In the Office 365 Security &amp; Compliance Center, choose **Threat management** \> **Review** \> **Quarantine**. (You can also go directly to [https://protection.office.com/quarantine](https://protection.office.com/quarantine).)
     
-2. In the upper left corner, change the drop-down menu from **Emails** to **files**. If too many items are returned, you can use the **Filter** functionality to narrow down the selection.
+2. In the upper left corner, change the drop-down menu from **Emails** to **Files**. If the list of results includes too many items, use the **Filter** functionality to narrow down the selection.
     
 3. Select an item in the list to view detailed information, including the file's URL.
     
