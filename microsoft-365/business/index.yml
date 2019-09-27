@@ -13,7 +13,7 @@ metadata:
   ms.collection: collection
   author: samanro #Required; your GitHub user alias, with correct capitalization.
   ms.author: samanro #Required; microsoft alias of author; optional team alias.
-  ms.date: 07/03/2019 #Required; mm/dd/yyyy format.
+  ms.date: 10/01/2019 #Required; mm/dd/yyyy format.
 
 # conceptualContent section (optional)
 conceptualContent:
@@ -28,34 +28,34 @@ conceptualContent:
         - url: https://www.microsoft.com/microsoft-365/partners/resources/microsoft-365-business-licensing-deck
           itemType: overview
           text: Licenses and purchasing
-        - url: https://docs.microsoft.com/en-us/microsoft-365/business/sign-up
+        - url: https://docs.microsoft.com/microsoft-365/business/sign-up
           itemType: get-started
           text: Sign up for Microsoft 365 Business
         - url: https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description
           itemType: reference
-          text: Service descriptions
+          text: Service description
   #Card
     - title: How do I...
       links:
-        - url: https://docs.microsoft.com/en-us/microsoft-365/business/auto-install-or-uninstall-office
+        - url: https://docs.microsoft.com/microsoft-365/business/auto-install-or-uninstall-office
           itemType: how-to-guide
           text: Install Office
-        - url: https://support.office.com/en-us/article/where-to-store-files-c7c20284-bc94-47f4-9728-d28e9daf0790
+        - url: https://support.office.com/article/where-to-store-files-c7c20284-bc94-47f4-9728-d28e9daf0790
           itemType: video
           text: Store files in the cloud
-        - url: https://support.office.com/en-us/article/using-outlook-and-teams-together-9bc459c4-ce13-479b-b88b-b8ae49092732?ui=en-US&rs=en-US&ad=US
+        - url: https://support.office.com/article/9bc459c4-ce13-479b-b88b-b8ae49092732
           itemType: video
           text: Collaborate with Microsoft Teams
-        - url: https://docs.microsoft.com/en-us/Office365/Admin/subscriptions-and-billing/view-your-bill-or-invoice?toc=%2Fmicrosoft-365%2Fbusiness%2Ftoc.json&bc=%2Fmicrosoft-365%2Fbusiness%2Fbreadcrumb%2Ftoc.json&view=o365-worldwide
+        - url: https://docs.microsoft.com/Office365/Admin/subscriptions-and-billing/view-your-bill-or-invoice?toc=%2Fmicrosoft-365%2Fbusiness%2Ftoc.json&bc=%2Fmicrosoft-365%2Fbusiness%2Fbreadcrumb%2Ftoc.json&view=o365-worldwide
           itemType: how-to-guide
           text: View my bill
   #Card
     - title: User training
       links:
-        - url: https://support.office.com/en-us/article/office-365-basics-video-training-396b8d9e-e118-42d0-8a0d-87d1f2f055fb
+        - url: https://support.office.com/article/office-365-basics-video-training-396b8d9e-e118-42d0-8a0d-87d1f2f055fb
           itemType: video
           text: Office basics
-        - url: https://support.office.com/en-us/modernworkplace
+        - url: https://support.office.com/modernworkplace
           itemType: video
           text: Modern workplace
         - url: https://support.office.com/office-training-center/featured-tips
@@ -69,26 +69,26 @@ conceptualContent:
           text: Partner page
         - url: https://www.microsoft.com/microsoft-365/partners/resources/microsoft-365-business-customer-pitch-deck
           itemType: download
-          text: Pitch decks
+          text: Pitch deck (customer focus)
         - url: https://www.microsoft.com/microsoft-365/partners/resources/microsoft-365-business-partner-pitch-deck
           itemType: download
-          text: Profitability
+          text: Pitch deck (partner focus) 
         - url: https://www.microsoft.com/microsoft-365/partners/resources/microsoft-365-business-technical-fundamentals-decks-zip
           itemType: download
           text: Tech fundamentals
   #Card
     - title: Set up Microsoft 365
       links:
-        - url: set-up-overview.md
+        - url: https://support.office.com/article/38003e30-9d10-44cf-b596-f1b5f662bfa1
           itemType: get-started
           text: 1. Run the setup wizard
-        - url: set-up-overview.md
+        - url: https://support.office.com/article/af577fcf-6fe9-4a9e-9c41-a07d0f47935a
           itemType: get-started
           text: 2. Secure your data
-        - url: set-up-overview.md
+        - url: https://support.office.com/article/5b5aec9e-e267-463a-bc39-54753375e579
           itemType: get-started
           text: 3. Secure Windows 10 devices
-        - url: set-up-overview.md
+        - url: auto-install-or-uninstall-office.md
           itemType: get-started
           text: 4. Install Office
   # Card
@@ -96,7 +96,7 @@ conceptualContent:
       links:
         - url: add-users-m365.md
           itemType: how-to-guide
-          text: Add a user (update)
+          text: Add a user
         - url: https://docs.microsoft.com/office365/admin/add-users/remove-former-employee
           itemType: how-to-guide
           text: Remove a user
@@ -110,70 +110,64 @@ conceptualContent:
   # Card
     - title: Manage data
       links:
-        - url: file1.md OR https://docs.microsoft.com/file1
-          itemType: how-to-guide
-          text: Backup
-        - url: file1.md OR https://docs.microsoft.com/file1
-          itemType: how-to-guide
-          text: Recover
-        - url: file1.md OR https://docs.microsoft.com/file1
+        - url: https://docs.microsoft.com/microsoft-365/compliance/microsoft-365-compliance-center
+          itemType: overview
+          text: Compliance overview
+        - url: https://docs.microsoft.com/microsoft-365/compliance/retention-policies
           itemType: how-to-guide
           text: Retention
-        - url: file1.md OR https://docs.microsoft.com/file1
+        - url: https://docs.microsoft.com/microsoft-365/compliance/encryption
           itemType: how-to-guide
           text: Encryption
       # footerLink (optional)
       footerLink:
-        url: https://docs.microsoft.com/office365/admin/admin-home
+        url: https://docs.microsoft.com/microsoft-365/compliance/
         text: See more
   # Card
     - title: Manage devices
       links:
-        - url: file1.md OR https://docs.microsoft.com/file1
+        - url: view-policies-and-devices.md
           itemType: how-to-guide
           text: PC & Mobile devices
-        - url: file1.md OR https://docs.microsoft.com/file1
+        - url: remove-company-data.md
           itemType: how-to-guide
-          text: Registration
-        - url: file1.md OR https://docs.microsoft.com/file1
+          text: Remove company data
+        - url: reset-devices-to-factory-settings.md
           itemType: how-to-guide
-          text: Wipe or reset devices
-        - url: file1.md OR https://docs.microsoft.com/file1
+        - text: Wipe and reset
+        - url: map-protection-features-to-intune-settings.md
           itemType: how-to-guide
           text: Intune
       # footerLink (optional)
       footerLink:
-        url: protection-settings-for-windows-10-pcs.md
+        url: https://docs.microsoft.com/intune/what-is-intune
         text: See more
   # Card
     - title: Monitor security
       links:
-        - url: file1.md OR https://docs.microsoft.com/file1
+        - url: https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score
           itemType: how-to-guide
           text: Secure score
-        - url: file1.md OR https://docs.microsoft.com/file1
-          itemType: how-to-guide
-          text: Compliance score
-        - url: file1.md OR https://docs.microsoft.com/file1
-          itemType: how-to-guide
+        - url: https://support.office.com/article/e12187b8-216a-4490-9e3b-df34a06fb787
+          itemType: video
           text: Multi-factor authentication
-        - url: file1.md OR https://docs.microsoft.com/file1
+        - url: https://docs.microsoft.com/office365/enterprise/view-service-health
           itemType: how-to-guide
           text: Health monitoring alerts
       # footerLink (optional)
       footerLink:
-        url: https://docs.microsoft.com/office365/admin/admin-home
+        url: https://docs.microsoft.com/microsoft-365/security/
         text: See more 
   # Card
     - title: Manage threats
       links:
-        - url: file1.md OR https://docs.microsoft.com/file1
-          itemType: how-to-guide
-          text: Manage Office 365 Advanced Threat Protection
-        - url: file2.md OR https://docs.microsoft.com/file2
-          itemType: how-to-guide
-          text: Manage Data Loss Prevention (new or video?)
-        - url: https://docs.microsoft.com/office365/securitycompliance/office365-security-incident-response-overview
+        - url: https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection
+          itemType: overview
+          text: Threat Protection overview
+        - url: https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies
+          itemType: overview
+          text: Data Loss Prevention 
+        - url: https://docs.microsoft.com/microsoft-365/compliance/responding-to-a-compromised-email-account
           itemType: how-to-guide
           text: Respond to security incidents
       # footerLink (optional)
