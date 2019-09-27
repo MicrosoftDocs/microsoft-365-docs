@@ -42,6 +42,8 @@ In this article:
   
 - [How DKIM works better than SPF alone to prevent malicious spoofing in Office 365](use-dkim-to-validate-outbound-email.md#HowDKIMWorks)
 
+- [Manually upgrade your 1024-bit key to 2048-bit DKIM encryption keys](use-dkim-to-validate-outbound-email.md#1024to2048DKIM)
+
 - [What you need to do to manually set up DKIM in Office 365](use-dkim-to-validate-outbound-email.md#SetUpDKIMO365)
 
 - [To configure DKIM for more than one custom domain in Office 365](use-dkim-to-validate-outbound-email.md#DKIMMultiDomain)
@@ -69,6 +71,7 @@ In this example, if you had only published an SPF TXT record for your domain, th
 The nitty gritty: DKIM uses a private key to insert an encrypted signature into the message headers. The signing domain, or outbound domain, is inserted as the value of the **d=** field in the header. The verifying domain, or recipient's domain, then use the **d=** field to look up the public key from DNS and authenticate the message. If the message is verified, the DKIM check passes. 
 
 ## Manually upgrade your 1024-bit key to 2048-bit DKIM encryption keys
+<a name="1024to2048DKIM"> </a>
 
 Since both 1024 and 2048 bitness are supported for DKIM keys, these directions will tell you how to upgrade your 1024-bit key to 2048. The steps below are for two use cases, please choose the one that best fits your configuration.
 
