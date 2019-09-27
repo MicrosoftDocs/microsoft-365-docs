@@ -10,10 +10,10 @@ ms.collection: M365-modern-desktop
 
 # Admin support for Microsoft Managed Desktop
 
-You can submit Support tickets or Feedback requests to Microsoft using the Microsoft Managed Desktop Administrative Portal. Support requests are always prioritized over Feedback submissions. Support requests are triaged and managed according to Severity as outlined in the [severity definition table](#sev). Feedback is reviewed, and a response provided where requested. 
+You can submit support tickets or feedback requests to Microsoft using the Microsoft Managed Desktop Administrative Portal. Support requests are always prioritized over feedback submissions. Support requests are triaged and managed according to severity as outlined in the [severity definition table](#sev). Feedback is reviewed, and a response provided where requested. 
 
 >[!IMPORTANT]
->Make sure that you [set up an Admin contact](../get-started/add-admin-contacts.md) for app packaging, devices, security, and other. You are unable to submit a Support request in any of these areas if an admin contact is not configured.
+>Make sure that you [set up an Admin contact](../get-started/add-admin-contacts.md) for app packaging, devices, security, and other. You are unable to submit a support request in any of these areas if an admin contact is not configured.
 
 **To submit a support request**
 1. Sign in to [Microsoft Managed Desktop Admin portal](http://aka.ms/mwaasportal). 
@@ -45,7 +45,14 @@ Additional details:
 - **Business hours** - For most countries, business hours are from 9:00 AM to 5:00 PM, Pacific Standard Time.
 - **Application compatibility** - For an application compatibility issue to be considered, there must be a reproduceable error, of the same version of the application, between the previous and current version of Windows or Office. To resolve application compatibility issues, Microsoft requires a customer point of contact to work with. The individual must work directly with our Fast Track team to investigate and resolve the issue.
 - **Customer response time** If a customer is unable to meet the expected response requirements, Microsoft will downgrade the request by one severity level, to a minimum of Severity C. If a customer is unresponsive to requests for action, Microsoft will mitigate and close the support request within 48 hours of the last request.
- 
+
+
+## Providing administrator rights to specific users
+
+While working with support personnel, you might need to provide local administrator rights to a user on a device to assist with troubleshooting. To do this, you must already have global administrator or device administrator rights in Microsoft Intune for your own account. Follow either one of these steps, depending on your situation:
+
+- If your users are synchronized from on-premises Active Directory account, run **net localgroup administrators /add "Contoso\username"** from an elevated command prompt.
+- If your users are created in Azure Active Directory, run **net localgroup administrators /add "AzureAD\UserUpn"** from an elevated command prompt.
 
 ## Additional resources
 - [End user support for Microsoft Managed Desktop](end-user-support.md). 

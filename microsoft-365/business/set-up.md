@@ -22,13 +22,14 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: "Learn how to set up Microsoft 365 Business."
+ms.custom: OKR_SMB_M365
 ---
 
 # Set up Microsoft 365 Business in the setup wizard
 
 ## Add your domain, users, and set up policies
 
-![Banner that point to https://aka.ms/aboutM365preview.](media/m365admincenterchanging.png)
+[![Label to let you know the admin center is changing and you can find more details at aka.ms/aboutM365preview.](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
 When you purchase Microsoft 365 Business, you have the option of using a domain you own, or buying one during the [sign-up](sign-up.md).
 

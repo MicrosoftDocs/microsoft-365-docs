@@ -18,8 +18,8 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: f3433b6b-02f7-447f-9d62-306bf03638b0
-description: "Learn how to validate the Microsoft 365 Business app protection settings in your Android or iOS devices. 
-"
+description: "Learn how to validate the Microsoft 365 Business app protection settings in your Android or iOS devices."
+ms.custom: OKR_SMB_M365
 ---
 
 # Validate app protection settings on Android or iOS devices
