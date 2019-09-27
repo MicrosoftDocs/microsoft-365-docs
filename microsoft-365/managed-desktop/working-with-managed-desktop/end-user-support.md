@@ -17,14 +17,26 @@ There are two ways that users in your organization can get help with their Micro
 
 ## Get Help app
 
-The preferred method for providing support to your users is **Get Help**, an easy to use interface built into the end user device.  
+The preferred method for providing support to your users is **Get Help**, an easy-to-use interface built into the end user device.  
 
 ![Get Help](images/get-help.png)
 
 This is an application that’s installed on all Microsoft Managed Desktop devices and is pinned to the task bar. 
 
 - End users can request a call back to a provided phone number, or chat online with a service rep.
-- Requests that fall outside of Microsoft Managed Desktop support scope are redirected to the local IT helpdesk via phone call.  
+- Requests that fall outside of Microsoft Managed Desktop support scope are redirected to the local IT helpdesk via phone call.
+
+For your end users to be able to get help through the app, make sure these prerequisites are met:
+
+- The device must be enrolled in Microsoft Managed Desktop.
+- The display language for the device must be set to any locale of English.
+- The Get Help app should be up to date {HOW CAN YOU TELL? WHAT TO DO IT IF ISN'T?}
+- {GET HELP URLS ACCESSIBLE -- URLS NOT PROVIDED IN DELIVERABLE}
+
+> [!NOTE]
+> The Get Help app can take up to one hour after a device is deployed to fully function.
+
+If you've checked these prerequisites and the Get Help app still isn't working, you as an IT admin should file a [support request](admin-support.md).
 
 ## Phone support
 
