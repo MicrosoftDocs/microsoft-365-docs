@@ -42,9 +42,9 @@ In this article:
   
 - [How DKIM works better than SPF alone to prevent malicious spoofing in Office 365](use-dkim-to-validate-outbound-email.md#HowDKIMWorks)
 
-- [Manually upgrade your 1024-bit key to 2048-bit DKIM encryption keys](use-dkim-to-validate-outbound-email.md#1024to2048DKIM)
+- [Manually upgrade your 1024-bit keys to 2048-bit DKIM encryption keys](use-dkim-to-validate-outbound-email.md#1024to2048DKIM)
 
-- [What you need to do to manually set up DKIM in Office 365](use-dkim-to-validate-outbound-email.md#SetUpDKIMO365)
+- [Steps you need to do to manually set up DKIM in Office 365](use-dkim-to-validate-outbound-email.md#SetUpDKIMO365)
 
 - [To configure DKIM for more than one custom domain in Office 365](use-dkim-to-validate-outbound-email.md#DKIMMultiDomain)
 
@@ -70,18 +70,18 @@ In this example, if you had only published an SPF TXT record for your domain, th
   
 The nitty gritty: DKIM uses a private key to insert an encrypted signature into the message headers. The signing domain, or outbound domain, is inserted as the value of the **d=** field in the header. The verifying domain, or recipient's domain, then use the **d=** field to look up the public key from DNS and authenticate the message. If the message is verified, the DKIM check passes. 
 
-## Manually upgrade your 1024-bit key to 2048-bit DKIM encryption keys
+## Manually upgrade your 1024-bit keys to 2048-bit DKIM encryption keys
 <a name="1024to2048DKIM"> </a>
 
-Since both 1024 and 2048 bitness are supported for DKIM keys, these directions will tell you how to upgrade your 1024-bit key to 2048. The steps below are for two use cases, please choose the one that best fits your configuration.
+Since both 1024 and 2048 bitness are supported for DKIM keys, these directions will tell you how to upgrade your 1024-bit key to 2048. The steps below are for two use-cases, please choose the one that best fits your configuration.
 
-1. When you already have DKIM configured, you rotate bitness as follows.
+1. When you **already have DKIM configured**, you rotate bitness as follows:
     1. [Connect to Office 365 workloads via PowerShell](https://docs.microsoft.com/en-us/office365/enterprise/powershell/connect-to-all-office-365-services-in-a-single-windows-powershell-window). (The cmdlet comes from Exchange Online.)
     1. And then execute the following cmdlet:
 
 &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`Rotate-DkimSigningConfig -KeySize 2048 -Identity {Guid of the existing Signing Config}`
 
-1. New implementations of DKIM.
+1. Or for a **new implementation of DKIM**:
     1. [Connect to Office 365 workloads via PowerShell](https://docs.microsoft.com/en-us/office365/enterprise/powershell/connect-to-all-office-365-services-in-a-single-windows-powershell-window). (This is an Exchange Online cmdlet.)
     1. Execute the following cmdlet:
 
@@ -99,7 +99,7 @@ Stay connected to Office 365 to *verify* the configuration.
 >This new 2048-bit key takes effect on the RotateOnDate, and will send emails with the 1024-bit key in the interim. After four days, you can test again with the 2048-bit key (that is, once the rotation takes effect to the second selector).
 
 
-## What you need to do to manually set up DKIM in Office 365
+## Steps you need to do to manually set up DKIM in Office 365
 <a name="SetUpDKIMO365"> </a>
 
 To configure DKIM, you will complete these steps:
