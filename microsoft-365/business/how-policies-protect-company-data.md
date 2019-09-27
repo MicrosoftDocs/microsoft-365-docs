@@ -23,6 +23,7 @@ search.appverid:
 - MOE150
 ms.assetid: 665485be-2389-4f1d-9ef8-dbef19c6acdf
 description: "Learn about policies  that target specific devices and security groups to protect company data on user's personal devices."
+ms.custom: OKR_SMB_M365
 ---
 
 # How policies in Microsoft 365 Business protect company data

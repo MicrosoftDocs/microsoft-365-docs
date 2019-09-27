@@ -17,6 +17,7 @@ search.appverid:
 - MET150
 ms.assetid: 7770e280-3a6c-436f-a157-b008a2744f51
 description: "Know the pre-requisites for setting up your organization with Microsoft 365 Business. "
+ms.custom: OKR_SMB_M365
 ---
 
 # Pre-requisites for protecting data on devices with Microsoft 365 Business
