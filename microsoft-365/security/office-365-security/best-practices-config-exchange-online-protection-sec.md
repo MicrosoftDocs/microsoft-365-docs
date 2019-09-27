@@ -95,7 +95,11 @@ Recommended for **ON** in both Recommended and Aggressive Levels:
 |Security feature name  |Recommended |Aggressive  |Comment  |
 |---------|---------|---------|---------|
 
-## Anti-phishing
+## Advanced Threat Protection (ATP)
+
+Earlier, I said that it was encouraged for E3 subscriptions to add ATP plan 1, or the more fully-realized ATP Plan 2. Anti-phishing is one reason why. Enabled by default, anti-phishing ***must*** be configured with policies to operate. Forgetting to configure anti-phishing policies exposes users to risk, be sure that's step-2 after you add an ATP subscription.
+
+### Anti-phishing
 
 Phishing is an attempt to masquerade as reputable company or person for the purpose of stealing personal information like credit-card numbers, or computer or device pins or passwords. Phishing can involve:
 
@@ -111,3 +115,10 @@ Phising filters are on by default in Office 365, but can be configured for a bet
 |Zero Hour Autopurge should be enabled - Phish| True | True | - | 
 |Phish detection action should be set to | Quarantine - Request | Quarantine - Admin | - |
 |High confidence Phish detection action should be set to | Quarantine - Admin | Quarantine - Admin | - |
+|Set Advanced phishing threshold to | 2 | 4 | - |
+|Enable Anti-impersonation protection | Y | Y | - |
+|Enable Mailbox intelligence in Anti-Impersonation policies | Y | Y | - |
+|Enable Mailbox intelligence based Impersonation protection | Y | Y | - |
+|Domain Impersonation action should be | JMF | Quarantine | - |
+|User Impersonation action should be | JMF | Qurantine | - |
+|Mailbox intelligence based impersonation protection action should be | |||
