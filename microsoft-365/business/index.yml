@@ -134,7 +134,7 @@ conceptualContent:
           text: Remove company data
         - url: reset-devices-to-factory-settings.md
           itemType: how-to-guide
-        - text: Wipe and reset
+          text: Wipe and reset
         - url: map-protection-features-to-intune-settings.md
           itemType: how-to-guide
           text: Intune
