@@ -62,11 +62,11 @@ conceptualContent:
           itemType: tutorial
           text: Tips
   #Card
-    - title: Resources for partners
+    - title: Resources for partners (US only)
       links:
         - url: https://www.microsoft.com/microsoft-365/partners/business
           itemType: overview
-          text: Partner page
+          text: Partner page 
         - url: https://www.microsoft.com/microsoft-365/partners/resources/microsoft-365-business-customer-pitch-deck
           itemType: download
           text: Pitch deck (customer focus)
@@ -75,22 +75,19 @@ conceptualContent:
           text: Pitch deck (partner focus) 
         - url: https://www.microsoft.com/microsoft-365/partners/resources/microsoft-365-business-technical-fundamentals-decks-zip
           itemType: download
-          text: Tech fundamentals
+          text: Tech fundamentals (US only)
   #Card
     - title: Set up Microsoft 365
       links:
         - url: https://support.office.com/article/38003e30-9d10-44cf-b596-f1b5f662bfa1
           itemType: get-started
           text: 1. Run the setup wizard
-        - url: https://support.office.com/article/af577fcf-6fe9-4a9e-9c41-a07d0f47935a
+        - url: https://support.office.com/article/a32541df-079c-420d-9395-9d59354f7225
           itemType: get-started
-          text: 2. Secure your data
-        - url: https://support.office.com/article/5b5aec9e-e267-463a-bc39-54753375e579
-          itemType: get-started
-          text: 3. Secure Windows 10 devices
+          text: 2. Secure your business
         - url: auto-install-or-uninstall-office.md
           itemType: get-started
-          text: 4. Install Office
+          text: 3. Install Office
   # Card
     - title: Manage people
       links:
@@ -148,7 +145,7 @@ conceptualContent:
         - url: https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score
           itemType: how-to-guide
           text: Secure score
-        - url: https://support.office.com/article/e12187b8-216a-4490-9e3b-df34a06fb787
+        - url: https://support.office.com/article/a32541df-079c-420d-9395-9d59354f7225
           itemType: video
           text: Multi-factor authentication
         - url: https://docs.microsoft.com/office365/enterprise/view-service-health
