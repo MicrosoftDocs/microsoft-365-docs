@@ -17,6 +17,7 @@ search.appverid:
 - MET150
 ms.assetid: b0f4d010-9fd1-44d0-9d20-fabad2cdbab5
 description: "Learn how to get access to on-premises resources like Line Of Business apps, file shares, and printers from an Azure Active Directory joined Windows 10 device."
+ms.custom: OKR_SMB_M365
 ---
 
 # Access on-premises resources from an Azure AD-joined device in Microsoft 365 Business

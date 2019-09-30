@@ -13,7 +13,7 @@ ms.collection:
 description: "The Safe Attachments feature provides time-of-click verification of email attachments. Use Safe Attachments to protect your organization from malicious files people send or receive in email."
 ---
 
-# How ffice 365 ATP Safe Attachments works
+# How Office 365 ATP Safe Attachments works
 
 ## How it works
 

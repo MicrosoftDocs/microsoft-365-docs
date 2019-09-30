@@ -18,11 +18,11 @@ Microsoft Exchange Online Protection (EOP) offers many different reports that ca
 
 ## Usage reports
 
-**Office 365 groups activity**: View information about the number of Office 365 groups that are created and used.  
+**Office 365 groups activity**: View information about the number of Office 365 groups that are created and used.
 
-**Email activity**: View information about the number of messages sent, received and read in your whole organization, and by specific users.  
+**Email activity**: View information about the number of messages sent, received and read in your whole organization, and by specific users.
 
-**Email app usage**: View information about the email apps that are used. This include the total number of connections for each app, and the versions of Outlook that are connecting.  
+**Email app usage**: View information about the email apps that are used. This include the total number of connections for each app, and the versions of Outlook that are connecting.
 
 **Mailbox usage**: View information about storage used, quota consumption, item count, and last activity (send or read activity) for mailboxes.
 
@@ -38,11 +38,11 @@ See the following resources for more information:
 
 ## Security & compliance reports in the Microsoft 365 admin center
 
-These enhanced reports provide an interactive reporting experience for EOP admins, which includes summary information, and the ability to drill down for more details.  
+These enhanced reports provide an interactive reporting experience for EOP admins, which includes summary information, and the ability to drill down for more details.
 
-**Advanced Threat Protection (ATP)**: View information about safe links and safe attachments that are part of ATP.  
+**Advanced Threat Protection (ATP)**: View information about safe links and safe attachments that are part of ATP.
 
-**EOP**: View information about malware detections, spoofed mail, spam detections, and mail flow to and from your organization.  
+**EOP**: View information about malware detections, spoofed mail, spam detections, and mail flow to and from your organization.
 
 [View reports for Advanced Threat Protection and Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkid=852409)
 
@@ -58,9 +58,9 @@ See [Office 365 Reporting Web Services](https://go.microsoft.com/fwlink/p/?LinkI
 
 ## Message trace
 
-Follows email messages as they travel through EOP. You can determine if an email message was received, rejected, deferred, or delivered by the service. It also shows what actions were taken on the message before it reached its final status.  
+Follows email messages as they travel through EOP. You can determine if an email message was received, rejected, deferred, or delivered by the service. It also shows what actions were taken on the message before it reached its final status.
 
-You can use this information to efficiently answer your user's questions, troubleshoot mail flow issues, validate policy changes, and alleviates the need to contact technical support for assistance.  
+You can use this information to efficiently answer your user's questions, troubleshoot mail flow issues, validate policy changes, and alleviates the need to contact technical support for assistance.
 
 See [Trace an email message](https://docs.microsoft.com/exchange/monitoring/trace-an-email-message/trace-an-email-message)
 
@@ -71,7 +71,7 @@ Tracks specific changes made by admins to your organization. These reports can h
 ## Reporting and message trace data availability and latency
 
 The following table describes when EOP reporting and message trace data is available and for how long.
-  
+
 ||||
 |:-----|:-----|:-----|
 |**Report type**|**Data available for (look back period)**|**Latency**|
@@ -80,4 +80,4 @@ The following table describes when EOP reporting and message trace data is avail
 |Message trace data|90 days|When you run a message trace for messages that are less than 7 days old, the messages should appear within 5-30 minutes.<br/><br/> When you run a message trace for messages that are greater than 7 days old, results may take up to a few hours.|
 
 > [!NOTE]
-> Data availability and latency is the same whether requested via the Microsoft 365 admin center or remote PowerShell. 
+> Data availability and latency is the same whether requested via the Microsoft 365 admin center or remote PowerShell.
