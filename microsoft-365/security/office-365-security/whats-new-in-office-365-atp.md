@@ -25,6 +25,8 @@ The following features are generally available (GA) in the latest release of Off
 
 For more information preview features, see [Preview features in Office 365 ATP](office-365-atp-preview.md).
 
+>Don't have Office 365 ATP yet? [Contact sales to start a trial.](https://go.microsoft.com/fwlink/p/?LinkId=518644) 
+
 ## September 2019
 
 - [Leverage automated incident response (AIR) in Office 365](automated-investigation-response-office.md)
@@ -44,3 +46,10 @@ For more information preview features, see [Preview features in Office 365 ATP](
  ## June 2019
 
 - [View data about phishing URLs and click verdict](threat-explorer.md#view-data-about-phishing-urls-and-click-verdict)
+
+
+## See also
+
+[Microsoft 365 roadmap](https://www.microsoft.com/microsoft-365/roadmap)
+
+[Office 365 ATP Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
