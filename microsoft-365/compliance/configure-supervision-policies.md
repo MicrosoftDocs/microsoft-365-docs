@@ -1,5 +1,5 @@
 ---
-title: "Configure supervision policies for your organization"
+title: "Configure communication supervision for your organization (Preview)"
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -15,24 +15,26 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-description: "Set up supervisory review policies to capture employee communications for review."
+description: "Set up communication supervision policies to configure employee communications for review."
 ---
 
-# Configure supervision policies for your organization
+# Configure communication supervision for your organization (Preview)
 
-Use supervision policies to capture employee communications for examination by internal or external reviewers. For more information about how supervision policies can help you monitor communications in your organization, see [Supervision policies in Office 365](supervision-policies.md).
+Use communication supervision policies to capture employee communications for examination by internal or external reviewers. For more information about how supervision policies can help you monitor communications in your organization, see [Communication supervision policies in Microsoft 365](supervision-policies.md).
 
 > [!NOTE]
 > Users monitored by supervision policies must have either a Microsoft 365 E5 Compliance license, an Office 365 Enterprise E3 license with the Advanced Compliance add-on, or be included in an Office 365 Enterprise E5 subscription.
 > If you don't have an existing Enterprise E5 plan and want to try supervision, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
   
-Follow these steps to set up and use supervision in your Office 365 organization:
+Follow these steps to set up and use communication supervision in your Microsoft 365 organization:
+
+- **Step 1 (optional)**: FIRST RUN EXPERIENCE?
   
 - **Step 1 (optional)**: [Set up groups for Supervision](#step-1-set-up-groups-for-supervision-optional) 
 
     Before you start using supervision, determine who needs communications reviewed and who performs reviews. If you want to get started with just a few users to see how supervision works, you can skip setting up groups for now.
 
-- **Step 2 (required)**: [Make supervision available in your organization](#step-2-make-supervision-available-in-your-organization-required)
+- **Step 2 (required)**: [Make communication supervision available in your organization](#step-2-make-supervision-available-in-your-organization-required)
 
     Add yourself to the Supervisory Review role group so you can set up policies. Anyone who has this role assigned can access the **Supervision** page in the Compliance Center. If reviewable email is hosted on Exchange Online, each reviewer must have [remote PowerShell access to Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell).
 
@@ -42,13 +44,13 @@ Follow these steps to set up and use supervision in your Office 365 organization
 
 - **Step 4 (required)**: [Set up a supervision policy](#step-4-set-up-a-supervision-policy-required)
 
-    You create supervision policies in the Compliance Center. These policies define which communications are subject to review in your organization and specifies who performs reviews. Communications include email and Microsoft Teams communications, and 3rd-party platform communications (such as Facebook, Twitter, etc.)
+    You create communication supervision policies in the Microsoft 365 Compliance Center. These policies define which communications are subject to review in your organization and specifies who performs reviews. Communications include email and Microsoft Teams communications, and 3rd-party platform communications (such as Facebook, Twitter, etc.)
 
 - **Step 5 (optional)**: [Test your supervision policy](#step-5-test-your-supervision-policy-optional)
 
     Test your supervision policy to make sure it functions as desired. It is important to ensure that your compliance strategy is meeting your standards.
 
-## Step 1: Set up groups for Supervision (optional)
+## Step 1: Set up groups for communication supervision (optional)
 
  When you create a supervision policy, you define who has their communications reviewed and who performs reviews. In the policy, you'll use email addresses to identify individuals or groups of people. To simplify your setup, you can create groups for people who have their communication reviewed and groups for people who review those communications. If you're using groups, you may need several. For example, you want to monitor communications between two distinct groups of people or if you want to specify a group that isn't going to be supervised.
 
@@ -95,9 +97,9 @@ For more information about setting up groups, see:
 - [Manage mail-enabled security groups](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups)
 - [Overview of Office 365 Groups](https://docs.microsoft.com/office365/admin/create-groups/office-365-groups?view=o365-worldwide)
 
-## Step 2: Make supervision available in your organization (required)
+## Step 2: Make communication supervision available in your organization (required)
 
-To make **Supervision** available as a menu option in the Compliance Center, you must be assigned the Supervisory Review Administrator role.
+To make **Supervision** available as a menu option in Compliance Center, you must be assigned the Supervisory Review Administrator role.
   
 To do this, you can either add yourself as a member of the Supervisory Review role group, or you can create a role group.
   

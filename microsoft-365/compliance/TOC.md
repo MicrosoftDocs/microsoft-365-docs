@@ -19,6 +19,7 @@
 ## [Communication supervision]()
 ### [Learn about communication supervision](supervision-policies.md)
 ### [Configure supervision policies for your organization](configure-supervision-policies.md)
+### [Configure supervision policies for Office 365](supervision-policies-office-365.md)
 ## [Information barriers](information-barriers.md)
 ### [Define information barrier policies](information-barriers-policies.md)
 ### [Attributes for information barrier policies](information-barriers-attributes.md)
