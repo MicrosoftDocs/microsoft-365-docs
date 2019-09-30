@@ -76,7 +76,7 @@ You can download a copy of letter of certification for [Azure](https://aka.ms/Az
 
 The in-scope services of HITRUST CSF certification are Exchange Online Archiving, Exchange Online Protection, Exchange Online, Skype for Business, Admin Center, SharePoint Online, Project Online, OneDrive for Business, Office Online, MyAnalytics, Microsoft Teams, Office ProPlus in Office 365 Multi-tenant cloud and Office 365 GCC.
 
-> NOTE
+> [!NOTE]
 > Office 365 ProPlus enables access to various cloud services, such as Roaming Settings, Licensing, and OneDrive consumer cloud storage, and may enable access to additional cloud services in the future. Roaming Settings and Licensing support the standards for HITRUST. OneDrive consumer cloud storage does not, and other cloud services that are accessible through Office 365 ProPlus and that Microsoft may offer in the future also may not, support these standards.*
 
 **Why are some Office 365 services not in the scope of this certification?**

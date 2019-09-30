@@ -50,7 +50,8 @@ The responsibility for NEN 7510 compliance is applicable to Dutch Healthcare org
 
 Microsoft Online Services provides many controls that help organizations within Dutch Healthcare with their NEN 7510 compliance needs. However, an organization needs to complement those vendor assurances with their own implementation choices, additional technology controls, and administrative processes. The report shows already over 94% direct coverage of the full list of applicable controls. For the remaining controls, Microsoft provides guidance in the report on how compliance with those controls can be demonstrated.
 
-Note: Implementing the full list of controls is not the primary purpose of NEN 7510 (although the large coverage of Microsoft Online Services does help). NEN 7510 mandates the implementation of a risk-based information security system that can be used by an organization to determine which controls are applicable to them.
+> [!NOTE]
+> Implementing the full list of controls is not the primary purpose of NEN 7510 (although the large coverage of Microsoft Online Services does help). NEN 7510 mandates the implementation of a risk-based information security system that can be used by an organization to determine which controls are applicable to them.
 
 **Is the NEN 7510 coverage report a legal binding document?**
 

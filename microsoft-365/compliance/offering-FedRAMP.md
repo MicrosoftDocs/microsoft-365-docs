@@ -67,7 +67,7 @@ Once a P-ATO is granted, a CSP still requires an authorization—an ATO—from a
 - Power BI cloud service either as a standalone service or as included in an Office 365 branded plan or suite
 - Microsoft Defender ATP
 
-> NOTE
+> [!NOTE]
 > The use of Azure Active Directory within Azure Government requires the use of components that are deployed outside of Azure Government on the Azure public cloud.
 
 ## Audits, reports and certificates
