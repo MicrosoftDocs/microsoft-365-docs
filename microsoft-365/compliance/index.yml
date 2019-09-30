@@ -13,7 +13,8 @@ metadata:
   ms.collection: m365-security-compliance
   author: robmazz #Required; your GitHub user alias, with correct capitalization.
   ms.author: robmazz #Required; microsoft alias of author; optional team alias.
-  ms.date: 09/20/2019 #Required; mm/dd/yyyy format.
+  ms.date: 09/20/2019 #Required; mm/dd/yyyy format
+  localization_priority: Priority
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
