@@ -38,21 +38,21 @@ To view status and detailed information about files that were detected by Office
   
 ## View and take action on files in quarantine
 
-1. In the Office 365 Security &amp; Compliance Center, choose **Threat management** \> **Review** \> **Quarantine**.
+1. In the Office 365 Security &amp; Compliance Center, choose **Threat management** \> **Review** \> **Quarantine**. (You can also go directly to [https://protection.office.com/quarantine](https://protection.office.com/quarantine).)
     
-2. In the upper left corner, change the filter from **Email** to **Content**.
+2. In the upper left corner, change the drop-down menu from **Emails** to **Files**. If the list of results includes too many items, use the **Filter** functionality to narrow down the selection.
     
 3. Select an item in the list to view detailed information, including the file's URL.
     
 4. Choose an available action.
     
-  - Choose **Release &amp; report** to unblock the file. 
+  - Choose **Release file** to unblock the file. 
     
     Select **Send report to Microsoft** to report the file as a false positive to Microsoft. 
     
   - Choose **Download file** to investigate the file further. 
     
-  - Choose **Delete** to remove the file from the list of quarantined items. If you choose this option, you must also delete the file from its respective library in SharePoint Online, OneDrive for Business, or Microsoft Teams. This option does not unblock a file from being opened or shared. 
+  - Choose **Remove from quarantine** to remove the file from the list of quarantined items. If you choose this option, you must also delete the file from its respective library in SharePoint Online, OneDrive for Business, or Microsoft Teams. This option does not unblock a file from being opened or shared. 
     
 5. Choose **Close** to close the details for a selected item. 
   

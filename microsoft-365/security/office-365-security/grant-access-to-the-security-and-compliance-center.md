@@ -3,7 +3,7 @@ title: "Give users access to the Office 365 Security & Compliance Center"
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: 
+ms.date:
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -11,7 +11,7 @@ f1_keywords:
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Strat_O365_IP
-search.appverid: 
+search.appverid:
 - MOE150
 - MET150
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
@@ -20,10 +20,10 @@ description: "Users need to be assigned permissions in the Office 365 Security &
 
 # Give users access to the Office 365 Security & Compliance Center
 
-Users need to be assigned permissions in the Office 365 Security & Compliance Center before they can manage any of its security or compliance features. As an Office 365 global admin or member of the OrganizationManagement role group in the Security & Compliance Center, you can give these permissions to users. Users will only be able to manage the security or compliance features that you give them access to. 
-  
+Users need to be assigned permissions in the Office 365 Security & Compliance Center before they can manage any of its security or compliance features. As an Office 365 global admin or member of the OrganizationManagement role group in the Security & Compliance Center, you can give these permissions to users. Users will only be able to manage the security or compliance features that you give them access to.
+
 For more information about the different permissions you can give to users in the Security & Compliance Center, check out [Permissions in the Office 365 Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
-  
+
 ## What do you need to know before you begin?
 
 - You need to be an Office 365 global admin, or a member of the OrganizationManagement role group in the Security & Compliance Center, to complete the steps in this article.
@@ -60,27 +60,27 @@ For more information about the different permissions you can give to users in th
 
 ## Use PowerShell to give another user access to the Security & Compliance Center
 
-1. [Connect to Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
+1. [Connect to Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
 2. Use the **Add-RoleGroupMember** command to add a user to the Organization Management Role, as shown in the following example.
 
-   ```
+   ```PowerShell
    Add-RoleGroupMember -Identity "Organization Management" -Member MatildaS
    ```
 
    **Parameters**:
-  
+
    - _Identity_ is the role group to add a member to.
 
    - _Member_ is the mailbox, universal security group (USG), or computer to add to the role group. You can specify only one member at a time.
 
 For detailed information on syntax and parameters, see [Add-RoleGroupMember](https://go.microsoft.com/fwlink/p/?LinkId=510859).
-  
+
 ### How do you know this worked?
 
 To verify that you've given users access to the Security & Compliance Center, use the **Get-RoleGroupMember** cmdlet to view the members in the Organization Management role group, as shown in the following example.
-  
-```
+
+```PowerShell
 Get-RoleGroupMember -Identity "Organization Management"
 ```
 
