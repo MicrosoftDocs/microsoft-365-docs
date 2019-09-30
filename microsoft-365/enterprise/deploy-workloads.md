@@ -20,13 +20,13 @@ To get the creativity and teamwork benefits of Microsoft 365 Enterprise, deploy 
 
 - [Microsoft Teams](teams-workload.md)
 - [Exchange Online](exchangeonline-workload.md)
-- [SharePoint](sharepoint-online-onedrive-workload.md)
+- [SharePoint and OneDrive](sharepoint-online-onedrive-workload.md)
 
-See the [migration](migration-microsoft-365-enterprise-workload.md) workload for a general roadmap to migrate your entire organization to Microsoft 365 Enterprise, which includes Microsoft Office client products, on-premises Office Server products, and Microsoft Windows-based devices.
+See the [migration](migration-microsoft-365-enterprise-workload.md) article for a general roadmap to migrate your entire organization to Microsoft 365 Enterprise, which includes Microsoft Office client products, on-premises Office Server products, and Microsoft Windows-based devices.
 
 Scenarios use features and services from across Microsoft 365 Enterprise in an integrated way to address a business need. 
 
-One such need is to ensure that your employees can work productively and securely when they're not directly connected to your intranet. See the [Empower remote workers](empower-people-to-work-remotely.md) scenario for a roadmap to deploy the infrastructure elements and and drive remote user adoption for key workloads, such as Teams and Exchange Online.
+One such need is to ensure that your employees can work productively and securely when they're not directly connected to your intranet. See the [Empower remote workers](empower-people-to-work-remotely.md) scenario for a roadmap to deploy the infrastructure elements and drive remote user adoption for key workloads, such as Teams and Exchange Online.
 
 Another such need is to protect highly regulated data stored in Microsoft 365. Highly regulated data includes digital assets that are:
 
