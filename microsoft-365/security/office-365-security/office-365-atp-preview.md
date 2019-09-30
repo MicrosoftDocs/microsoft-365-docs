@@ -26,6 +26,26 @@ Office 365 ATP is constantly being updated to include new feature enhancements a
 
 Learn about new features in Office 365 ATP preview and be among the first to try upcoming features.
 
-For more information on new capabilities that are generally available, see LINK.
+For more information on new capabilities that are generally available, see [What's new in Office 365 ATP](whats-new-in-office-365-atp.md).
 
-CONTENT COMING SOON
+## October 2019
+
+- New security playbook to detect and respond to compromised user threats ([Office 365 Automated Incident Response](automated-investigation-response-office.md))
+
+## November 2019
+
+- Improvements in compromised user detections and automated investigations in [Office 365 ATP](office-365-atp.md)
+
+- Searching/filtering improvements for [email hunting](investigate-malicious-email-that-was-delivered.md)
+
+- Visualize and action phishing campaigns in [Threat Explorer](threat-explorer.md)
+
+## December 2019
+
+- Improving your security operations efficiency with Incidents in Office ATP
+
+- Enhanced automated-investigations email clustering and related analyzers and actions
+
+## See also
+
+
