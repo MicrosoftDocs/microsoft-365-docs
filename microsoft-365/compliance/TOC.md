@@ -348,7 +348,9 @@
 ### [Document metadata fields](document-metadata-fields.md)
 ### [Manage jobs](manage-jobs.md)
 
-# [Search the audit log](search-the-audit-log-in-security-and-compliance.md)
+# Manage auditing and alert policies
+## [Search the audit log](search-the-audit-log-in-security-and-compliance.md)
+## [Manage alert policies](alert-policies.md)
 ## [Turn audit log search on or off](turn-audit-log-search-on-or-off.md)
 ## [Manage mailbox auditing](enable-mailbox-auditing.md)
 ## [Detailed properties in the audit log](detailed-properties-in-the-office-365-audit-log.md)
