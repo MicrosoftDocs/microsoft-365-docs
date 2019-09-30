@@ -20,7 +20,7 @@ description: Step through the process of planning for, rolling out, and driving 
 
 SharePoint and Microsoft Teams are how you do file storage and sharing, content management, and collaboration and are key elements of the Built for Teamwork value of Microsoft 365 Enterprise. 
 
-SharePoint also has advanced security capabilities including access control and permissions and encryption in flight and at rest. SharePoint security is a key element of the Intelligent Security value of Microsoft 365 Enterprise.
+SharePoint also has advanced security capabilities including access control with permissions and encryption in flight and at rest. SharePoint security is a key element of the Intelligent Security value of Microsoft 365 Enterprise.
 
 If you are brand new to SharePoint, see [SharePoint](https://products.office.com/sharepoint/sharepoint-online-collaboration-software) and [Get Started with SharePoint](https://support.office.com/article/Get-started-with-SharePoint-3a26444b-08c5-46ad-b80a-cda82b11b27b#ID0EAABAAA=Basics).
 
@@ -29,7 +29,7 @@ The following phases and steps guide you through the process of envisioning the 
 To deploy OneDrive for Microsoft 365 Enterprise, see the [OneDrive guide for enterprises](https://docs.microsoft.com/onedrive/plan-onedrive-enterprise).
 
 ## Phase 1: Envision
-In this phase, you gather the people for your SharePoint deployment and determine how your organization will use SharePoint to address its business needs.
+In this phase, you gather the organization partners for your SharePoint deployment and determine how your organization will use SharePoint to address its business needs.
 
 ### Step 1: Gather your SharePoint deployment members
 
@@ -39,7 +39,7 @@ These three groups ensure that your deployment includes considerations that addr
 
 #### Result
 
-A list of people that represent the business, technical, and end user aspects of your organization.
+A list of people that represent the business, technical, and end user persepctives of your organization.
 
 ### Step 2: Determine and prioritize your SharePoint business scenarios
 
@@ -56,7 +56,7 @@ The following business pillars can address your organization’s needs:
 | Transform | Uses Flow to create a store or workflow. |
 | Harness Collective Knowledge | Uses Search to give the desired results within your organization. |
 | Protect | Ensures your organization is secured and has the correct compliance. |
-| External/Develop | Lets your organization develop customize solutions and apps by using the SharePoint Framework. |
+| External/Develop | Lets your organization develop customize solutions and apps with the SharePoint Framework. |
 |||
 
 See [SharePoint admin](https://docs.microsoft.com/sharepoint/sharepoint-online) for resources on how to configure SharePoint for your needs.
@@ -68,7 +68,7 @@ One way to see the benefits of SharePoint is to examine how individuals, a team,
 Highly regulated data is subject to regional regulations or is the most valuable data for your organization, such as trade secrets, financial or human resources information, and organization strategy. You can configure a SharePoint site for restricted access, data classification, data loss prevention, and encryption for this type of data. For the details, see [Microsoft Teams and SharePoint sites for highly regulated data](teams-sharepoint-online-sites-highly-regulated-data.md).
 
 #### Result
-A list of SharePoint scenarios that address your organization’s needs for document storage and sharing, content management, and collaboration.
+A list of SharePoint scenarios that address your organization’s needs for document storage and sharing, content management, collaboration, and security.
 
 ## Phase 2: Onboard
 
@@ -80,7 +80,7 @@ To protect access to SharePoint sites, ensure that you have configured [identity
 
 ### Step 1: Complete your technical planning
 
-Before you begin technical planning, determine whether you want to use FastTrack. If your organization has over 50 seats and is participating in an [eligible plan](https://technet.microsoft.com/library/dn783224.aspx), you can use FastTrack benefits, available at no additional cost to guide you through planning, deployment, and service adoption. Or, you can complete this work yourself using FastTrack Onboarding Wizards, which are available from [FastTrack](https://docs.microsoft.com/fasttrack/m365-fasttrack-benefit-overview) once you sign in with your Microsoft 365 account.
+Before you begin technical planning, determine whether you want to use FastTrack. If your organization has over 50 seats and is participating in an [eligible plan](https://technet.microsoft.com/library/dn783224.aspx), you can use FastTrack benefits, available at no additional cost to guide you through planning, migration, deployment, and service adoption. Or, you can complete this work yourself using FastTrack Onboarding Wizards, which are available from [FastTrack](https://docs.microsoft.com/fasttrack/m365-fasttrack-benefit-overview) once you sign in with your Microsoft 365 account.
 
 If you are doing your own planning, or in conjunction with FastTrack, you need to determine if your network and organization are ready for SharePoint. It is especially important that you meet the exit criteria for networking in your foundation infrastructure, with special attention to Internet bandwidth, throughput, and traffic delays to maximize performance for the additional traffic for SharePoint-based documents.
 
@@ -105,7 +105,7 @@ In most medium-sized and large organizations, you should run an IT pilot with yo
 - Choose a SharePoint business scenario in which your IT pilot participants can practice.
 - Give your pilot participants a set of exercises to test SharePoint document storage, sharing, collaboration, team-based scheduling, and other capabilities.
 - Determine your change management strategy and produce materials to drive organization-wide user adoption of SharePoint. Change management materials can include email announcement text, internal training plans, hallway posters, and presentations. These materials will inform your organization about SharePoint and its benefits with the goals of raising awareness and driving usage. See the change management strategy for [Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/change-management-strategy) article for some ideas.
-- Have your IT pilot participants review the change management materials based on their experiences. They can provide tips on best practices and advice on how to best describe the benefits of SharePoint and how to use it for communication and scheduling.
+- Have your IT pilot participants review the change management materials based on their experiences. They can provide tips on best practices and advice on how to best describe the benefits of SharePoint and how to use it.
 
 #### Result
 
@@ -116,7 +116,7 @@ Your SharePoint IT pilot is complete and the initial change management materials
 After completing your IT pilot, roll out SharePoint to a business group or department in your organization. This rollout should include:
 
 - Identification of key business scenarios for SharePoint within the business group.
-- Announcement activities to inform users of the expectations and timelines for SharePoint usage for departments and work or project teams.
+- Announcement activities to inform users of the expectations and timelines for SharePoint usage for departments and for working or project teams.
 - Migration of on-premises folders and documents of your business group members to SharePoint.
 - Delivering user training or links to resources to introduce SharePoint and how to use it. See [SharePoint](https://support.office.com/article/sharepoint-online-video-training-cb8ef501-84db-4427-ac77-ec2009fb8e23) video training.
 - A feedback mechanism, such as a central Microsoft Teams team containing everyone in the business group, to collect comments and act on issues from users in the business group.
@@ -149,14 +149,14 @@ Your organization is up and running and your change management strategy is in pl
 After rolling out to your entire organization, you must continue to employ your change management strategy to:
 
 - Have your leadership promote SharePoint as the primary tool for document storage and sharing and team, division, or organization-wide collaboration.
-- Encourage individuals to use it for business group, departmental, work, and project team collaboration and calendaring.
+- Encourage individuals to use it for business group, departmental, working, and project team collaboration and calendaring.
 
 Here are some suggested activities:
 
 - See [Success factors for Office 365](https://aka.ms/successfactors) to learn about general best practices for cloud service adoption. 
 - See [Office 365 activity reports](https://docs.microsoft.com/office365/admin/activity-reports/activity-reports) to understand Office 365 service usage across your organization. If you aren’t an Office 365 global admin for your organization, ask someone who is a global admin to grant Reports Reader permissions to your user account so you can access activity reports.
 - Monitor your feedback venue (a public channel in a central Teams team or Yammer) for issues and feedback from individuals about their experiences with SharePoint. Address questions and issues as quickly as you can to prevent frustrated individuals and demonstrate support for the rollout.
-- Identify and nurture champions in each business group and highlight their accomplishments and best practices by using SharePoint. Reflect their successes out to the organization to show project success and adoption. Endorsement by technical leaders within a business group can exert a powerful influence over leaders and peers.
+- Identify and nurture champions in each business group and highlight their accomplishments and best practices when using SharePoint. Reflect their successes out to the organization to show project success and adoption. Endorsement by technical leaders within a business group can exert a powerful influence over leadership and peers.
 
 #### Result
 
@@ -164,7 +164,7 @@ Your organization has adopted SharePoint in Microsoft 365 Enterprise to support 
 
 ## How Microsoft does Microsoft 365 Enterprise
 
-To peek inside Microsoft and learn how Microsoft deployed SharePoint, see [SharePoint to the cloud: Learn how Microsoft ran its own migration](https://www.microsoft.com/en-us/itshowcase/sharepoint-to-the-cloud-learn-how-microsoft-ran-its-own-migration).
+To peek inside Microsoft and learn how we deployed SharePoint, see [SharePoint to the cloud: Learn how Microsoft ran its own migration](https://www.microsoft.com/en-us/itshowcase/sharepoint-to-the-cloud-learn-how-microsoft-ran-its-own-migration).
 
 ## Next steps
 
