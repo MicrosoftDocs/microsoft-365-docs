@@ -20,13 +20,11 @@ ms.topic: conceptual
 **Applies to:**
 - [Office 365 Advanced Threat Protection (Microsoft Defender ATP)](office-365-atp.md)
 
-Office 365 ATP is constantly being updated to include new feature enhancements and capabilities.
-
->Don't have Office 365 ATP yet? [Contact sales to start a trial.](https://go.microsoft.com/fwlink/p/?LinkId=518644) 
-
-Learn about new features in Office 365 ATP preview and be among the first to try upcoming features.
+Office 365 ATP is constantly being updated to include new feature enhancements and capabilities. This article lists features that are moving into preview over the next several weeks and months. Learn about new features in Office 365 ATP preview and be among the first to try upcoming features.
 
 For more information on new capabilities that are generally available, see [What's new in Office 365 ATP](whats-new-in-office-365-atp.md).
+
+>Don't have Office 365 ATP yet? [Contact sales to start a trial.](https://go.microsoft.com/fwlink/p/?LinkId=518644) 
 
 ## October 2019
 
@@ -48,4 +46,4 @@ For more information on new capabilities that are generally available, see [What
 
 ## See also
 
-
+[Microsoft 365 roadmap](https://www.microsoft.com/microsoft-365/roadmap)
