@@ -29,9 +29,15 @@ This is an application that’s installed on all Microsoft Managed Desktop devic
 For your end users to be able to get help through the app, make sure these prerequisites are met:
 
 - The device must be enrolled in Microsoft Managed Desktop.
-- The display language for the device must be set to any locale of English.
-- The Get Help app should be up to date {HOW CAN YOU TELL? WHAT TO DO IT IF ISN'T?}
-- {GET HELP URLS ACCESSIBLE -- URLS NOT PROVIDED IN DELIVERABLE}
+- The display language for the device must be set to any of these English-language locales: en-us, en-gb, en-au, en-nz, or en-ca.
+- The Get Help app should be up to date. To confirm this, check for app updates in the Microsoft Store.
+- These endpoints must be accessible from the device:
+    - *.support.services.microsoft.com 
+    - inprod.support.services.microsoft.com 
+    - supportchannels.services.microsoft.com 
+    - graph.windows.net 
+    - login.windows.net 
+    - prod-mwaas-services-customerapi.azurewebsites.net
 
 > [!NOTE]
 > The Get Help app can take up to one hour after a device is deployed to fully function.
