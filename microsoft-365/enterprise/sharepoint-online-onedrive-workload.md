@@ -39,7 +39,7 @@ These three groups ensure that your deployment includes considerations that addr
 
 #### Result
 
-A list of people that represent the business, technical, and end user persepctives of your organization.
+A list of people that represent the business, technical, and end user perspectives of your organization.
 
 ### Step 2: Determine and prioritize your SharePoint business scenarios
 
@@ -148,8 +148,8 @@ Your organization is up and running and your change management strategy is in pl
 
 After rolling out to your entire organization, you must continue to employ your change management strategy to:
 
-- Have your leadership promote SharePoint as the primary tool for document storage and sharing and team, division, or organization-wide collaboration.
-- Encourage individuals to use it for business group, departmental, working, and project team collaboration and calendaring.
+- Have your leadership promote SharePoint as the primary tool for document storage and sharing.
+- Encourage individuals to use it for document storage and sharing among business groups, departments, and working and project teams.
 
 Here are some suggested activities:
 

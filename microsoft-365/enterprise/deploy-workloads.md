@@ -55,7 +55,7 @@ See the [Microsoft 365 Productivity Library](https://www.microsoft.com/microsoft
 | Windows 10 Enterprise | Your computers running Windows 7 or Windows 8.1 can upgrade to Windows 10 Enterprise and new devices are installed with Windows 10 Enterprise. |
 | Office 365 ProPlus | Your existing users of Microsoft Office can upgrade to Office 365 ProPlus. |
 | Mobile device management | Your devices can be enrolled and managed. |
-| Information protection | Office 365 information features are configured and your sensitivity or Azure Information Protection labels are ready to protect documents and email. |
+| Information protection | Microsoft 365 information protection features are configured and your sensitivity or Azure Information Protection labels are ready to protect documents and email. |
 
 Remember that this is ideal and can take some time to plan for, configure, test, and pilot, especially in large organizations with existing infrastructure and multiple locations. Completing all of these phases in all locations is not necessary for you to more quickly get business value from Microsoft 365 Enterprise. 
 
