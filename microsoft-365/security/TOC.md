@@ -1,4 +1,4 @@
-# [Microsoft 365 Security](index.yml)
+# [Microsoft 365 security](index.yml)
 
 ## Microsoft Threat Protection
 ### [Overview]()
@@ -253,4 +253,4 @@
 
 ### [Office 365 Enterprise](https://docs.microsoft.com/office-365-security/Enterprise)
 ### [Office 365 for Business](https://docs.microsoft.com/office-365-security/admin/admin-home)
-### [Microsoft 365 Compliance](https://docs.microsoft.com/microsoft-365/compliance/)
+## [Microsoft 365 Compliance](https://docs.microsoft.com/microsoft-365/compliance/)

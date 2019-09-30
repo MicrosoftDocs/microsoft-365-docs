@@ -11,7 +11,7 @@ f1_keywords:
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Strat_O365_IP
-search.appverid: 
+search.appverid:
 - MOE150
 - MET150
 description: "Admins can learn about the permissions that are available in the Office 365 Security & Compliance Center."
@@ -20,31 +20,31 @@ description: "Admins can learn about the permissions that are available in the O
 # Permissions in the Office 365 Security & Compliance Center
 
 The Office 365 Security & Compliance Center lets you grant permissions to people who perform compliance tasks like device management, data loss prevention, eDiscovery, retention, and so on. These people can perform only the tasks that you explicitly grant them access to. To access the Security & Compliance Center, users need to be an Office 365 global administrator or a member of one or more Security & Compliance Center role groups.
-  
+
 Permissions in the Security & Compliance Center are based on the Role Based Access Control (RBAC) permissions model. This is the same permissions model that's used by Exchange, so if you're familiar with Exchange, granting permissions in the Security & Compliance Center will be very similar. It's important to remember, however, that Exchange role groups and Security & Compliance Center role groups don't share membership or permissions. While both have an Organization Management role group, they aren't the same. The permissions they grant, and the members of the role groups, are different. There's a list of Security & Compliance Center role groups below.
-  
+
 ![Permissions page in the Office 365 Security & Compliance Center](../media/992c20ca-e82e-497c-9c8d-6fab212deb80.png)
-  
+
 ## Relationship of members, roles, and role groups
 
 A **role** grants permissions to do a set of tasks; for example, the Case Management role lets people work with eDiscovery cases.
-  
+
 A **role group** is a set of roles that lets people perform their job across the Security & Compliance Center; for example, the Compliance Administrator role group includes the roles for Case Management, Content Search, and Organization Configuration (plus others) because someone who's a compliance admin will need the permissions for those tasks to do their job.
-  
+
 The Security & Compliance Center includes default role groups for the most common tasks and functions that you'll need to assign people to. We recommend simply adding individual users as **members** to the default role groups.
-  
+
 ![Diagram showing relationship of role groups to roles and members](../media/2a16d200-968c-4755-98ec-f1862d58cb8b.png)
-  
+
 You can edit or delete the existing role groups, but we don't recommend this. Instead of editing a default role group, you can copy it, modify it, and then save it with a different name.
-  
+
 ## Permissions needed to use features in the Security & Compliance Center
 
 The following table lists the default role groups that are available in the Security & Compliance Center, and the roles that are assigned to the role groups by default. To grant permissions to a user to perform a compliance task, add them to the appropriate Security & Compliance Center role group.
-  
+
 Managing permissions in the Security & Compliance Center only gives users access to the compliance features that are available within the Security & Compliance Center itself. If you want to grant permissions to other compliance features that aren't in the Security & Compliance Center, such as Exchange mail flow rules (also known as transport rules), you need to use the Exchange admin center.
-  
+
 To see how to grant access to the Security & Compliance Center, check out [Give users access to Office 365 Compliance admin center](grant-access-to-the-security-and-compliance-center.md).
-  
+
 |**Role group**|**Description**|**Default roles assigned**|
 |:-----|:-----|:-----|
 |**Compliance Administrator**<sup>1</sup>|Members can manage settings for device management, data loss prevention, reports, and preservation.|Case Management <br/><br/> Compliance Administrator <br/><br/> Compliance Search <br/><br/> DLP Compliance Management <br/><br/> Device Management <br/><br/> Disposition Management <br/><br/> Hold <br/><br/> IB Compliance Management <br/><br/> Manage Alerts <br/><br/> Organization Configuration <br/><br/> RecordManagement <br/><br/> Retention Management <br/><br/> View-Only Audit Logs <br/><br/> View-Only Retention Management <br/><br/> View-Only DLP Compliance Management <br/><br/> View-Only Device Management <br/><br/> View-Only IB Compliance Management <br/><br/> View-Only Manage Alerts <br/><br/> View-Only Recipients <br/><br/> View-Only Record Management|
@@ -63,7 +63,7 @@ To see how to grant access to the Security & Compliance Center, check out [Give 
 
 > [!NOTE]
 > <sup>1</sup>This role group doesn't assign members the permissions necessary to search the Office 365 audit log or to use any reports that might include Exchange data, such as the DLP or ATP reports. To search the audit log or to view all reports, a user has to be assigned permissions in Exchange Online. This is because the underlying cmdlet used to search the audit log is an Exchange Online cmdlet. Office 365 global admins can search the audit log and view all reports because they're automatically added as members of the Organization Management role group in Exchange Online. For more information, see [Search the audit log in the Office 365 Security & Compliance Center](https://go.microsoft.com/fwlink/p/?LinkID=708432).
-  
+
 ## Roles in the Security & Compliance Center
 
 The following table lists the available roles and the role groups that they're assigned to by default.

@@ -124,16 +124,16 @@ It is possible to accept or override Data investigations Next step processing ch
   
 ## More information
 
-[Understanding Assessment in Relevance](../assessment-in-relevance-in-advanced-ediscovery.md)
+[Understanding Assessment in Relevance](assessment-in-relevance-in-advanced-ediscovery.md)
   
-[Tagging and assessment](../tagging-and-assessment-in-advanced-ediscovery.md)
+[Tagging and assessment](tagging-and-assessment-in-advanced-ediscovery.md)
   
-[Tagging and Relevance training](../tagging-and-relevance-training-in-advanced-ediscovery.md)
+[Tagging and Relevance training](tagging-and-relevance-training-in-advanced-ediscovery.md)
   
-[Tracking Relevance analysis](../track-relevance-analysis-in-advanced-ediscovery.md)
+[Tracking Relevance analysis](track-relevance-analysis-in-advanced-ediscovery.md)
   
-[Deciding based on the results](../decision-based-on-the-results-in-advanced-ediscovery.md)
+[Deciding based on the results](decision-based-on-the-results-in-advanced-ediscovery.md)
   
-[Testing Relevance analysis](../test-relevance-analysis-in-advanced-ediscovery.md)
+[Testing Relevance analysis](test-relevance-analysis-in-advanced-ediscovery.md)
 
 [Query the data in evidence](evidence-query.md)

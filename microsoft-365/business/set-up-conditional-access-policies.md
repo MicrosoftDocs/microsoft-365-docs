@@ -20,6 +20,7 @@ search.appverid:
 - MET150
 - MOE150
 description: "Learn how to set  up conditional access policies for Microsoft 365 Campaigns."
+ms.custom: OKR_SMB_M365
 ---
 
 # Set up conditional access policies

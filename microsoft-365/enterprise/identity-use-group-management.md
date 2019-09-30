@@ -1,9 +1,9 @@
 ---
-title: "Step 6: Use groups for easier management"
+title: "Step 5: Use groups for management"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/06/2019
+ms.date: 09/20/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,10 +12,12 @@ ms.collection:
 - M365-identity-device-management
 - Strat_O365_Enterprise
 ms.custom:
-description: Understand and configure Azure AD self-service group management.
+description: You can use groups to automate management of some administrative tasks.
 ---
 
-# Step 6: Use groups for easier management
+# Step 5: Use groups for management
+
+![](./media/deploy-foundation-infrastructure/identity_icon-small.png)
 
 <a name="identity-self-service-groups"></a>
 ## Allow users to create and manage their own groups
@@ -97,4 +99,4 @@ As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step7.png)| [Configure identity governance](identity-governance.md) |
+|![](./media/stepnumbers/Step6.png)| [Configure identity governance](identity-configure-identity-governance.md) |
