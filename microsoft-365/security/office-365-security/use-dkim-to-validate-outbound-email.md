@@ -96,8 +96,9 @@ Stay connected to Office 365 to *verify* the configuration.
 `Get-DkimSigningConfig | fl`
 
 > [!TIP]
->This new 2048-bit key takes effect on the RotateOnDate, and will send emails with the 1024-bit key in the interim. After four days, you can test again with the 2048-bit key (that is, once the rotation takes effect to the second selector).
+>This new 2048-bit key takes effect on the RotateOnDate, and will send emails with the 1024-bit key in the interim. After four days, you can test again with the 2048-bit key (that is, once the rotation takes effect to the second selector). 
 
+If you want to rotate to the second selector, your options are a) let the Office 365 service rotate the selector and upgrade to 2048-bitness within the next 6 months, or b) after 4 days and confirming that 2048-bitness is in use, manually rotate the second selector key by using the appropriate cmdlet listed above.
 
 ## Steps you need to do to manually set up DKIM in Office 365
 <a name="SetUpDKIMO365"> </a>
