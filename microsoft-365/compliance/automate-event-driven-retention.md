@@ -1,7 +1,7 @@
 ---
 title: "Automate event-driven retention"
-ms.author: stephow
-author: stephow-MSFT
+ms.author: laurawi
+author: laurawi
 manager: laurawi
 audience: Admin
 ms.topic: article

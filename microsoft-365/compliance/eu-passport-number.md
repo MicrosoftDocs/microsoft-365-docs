@@ -1,7 +1,7 @@
 ---
 title: "EU Passport Number"
-ms.author: stephow
-author: stephow-MSFT
+ms.author: laurawi
+author: laurawi
 manager: laurawi
 ms.date: 8/16/2018
 audience: Admin
