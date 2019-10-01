@@ -27,7 +27,7 @@ description: "With sensitivity labels, you can classify and help protect your se
 
 ### Additional requirements for Office for Windows 
 
-4. The Azure Information Protection client must not be running in Office. See also: How do I configure whether Azure Information Protection client or the built-in Sensitivity feature should be turned on 
+4. The Azure Information Protection client must not be running in Office. See also: [How do I configure whether Azure Information Protection client or the built-in Sensitivity feature should be enabled](#how-do-i-configure-whether-the-azure-information-protection-client-or-the-built-in-sensitivity-feature-should-be-enabled-in-office-for-windows).
 
 ### Additional requirements for Outlook on all platforms 
 
@@ -42,13 +42,13 @@ description: "With sensitivity labels, you can classify and help protect your se
 <table border="1">
 <tr><td>Capability<td colspan="2">Windows<td colspan="2">Mac<td colspan="2">iOS<td colspan="2">Android<td colspan="2">Web</tr>
 <tr><td><td>Word, Excel, PowerPoint<td>Outlook<td>Word, Excel, PowerPoint<td>Outlook<td>Word, Excel, PowerPoint<td>Outlook<td>Word, Excel, PowerPoint<td>Outlook<td>Word, Excel, PowerPoint<td>Outlook</tr>
-<tr><td>Manually apply, change, or remove label<td><font color="green" size="10">✔</font><br>(Version 1910+)<td><font color="green" size="10">✔</font><br>(Version 1910+)<td><font color="green" size="10">✔</font><br>(Version 16.21.0+)<td><font color="green" size="10">✔</font><br>(Version 16.21.0+)<td><font color="green" size="10">✔</font><br>(Version 2.21+)<td>Coming October 2019<td><font color="green" size="10">✔</font><br>(Version 16.0.11231+)<td>Coming October 2019<td>Coming Q4 of calendar year 2019<td>Coming October 2019
-<tr><td><a href="https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do">Apply a default label</a><td><font color="green" size="10">✔</font><br>(Version 1910+)<td><font color="green" size="10">✔</font><br>(Version 1910+)<td><font color="green" size="10">✔</font><br>(Version 16.21.0+)<td><font color="green" size="10">✔</font><br>(Version 16.21.0+)<td><font color="green" size="10">✔</font><br>(Version 2.21+)<td>Coming October 2019<td><font color="green" size="10">✔</font><br>(Version 16.0.11231+)<td>Coming October 2019<td>Coming Q4 of calendar year 2019<td>Coming October 2019
-<tr><td><a href="https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do">Require a justification for changing a label</a><sup>1</sup><td><font color="green" size="10">✔</font><br>(Version 1910+)<td><font color="green" size="10">✔</font><br>(Version 1910+)<td><font color="green" size="10">✔</font><br>(Version 16.21.0+)<td><font color="green" size="10">✔</font><br>(Version 16.21.0+)<td><font color="green" size="10">✔</font><br>(Version 2.21+)<td>Coming October 2019<td><font color="green" size="10">✔</font><br>(Version 16.0.11231+)<td>Coming October 2019<td>Coming Q4 of calendar year 2019<td>Coming October 2019
-<tr><td><a href="https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do">Provide help link to a custom help page</a><td><font color="green" size="10">✔</font><br>(Version 1910+)<td><font color="green" size="10">✔</font><br>(Version 1910+)<td><font color="green" size="10">✔</font><br>(Version 16.21.0+)<td><font color="green" size="10">✔</font><br>(Version 16.21.0+)<td><font color="green" size="10">✔</font><br>(Version 2.21+)<td>Coming October 2019<td><font color="green" size="10">✔</font><br>(Version 16.0.11231+)<td>Coming October 2019<td>Coming Q4 of calendar year 2019<td>Coming October 2019
-<tr><td><a href="https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels#what-sensitivity-labels-can-do">Mark the content</a><td><font color="green" size="10">✔</font><br>(Version 1910+)<td><font color="green" size="10">✔</font><br>(Version 1910+)<td><font color="green" size="10">✔</font><br>(Version 16.21.0+)<td><font color="green" size="10">✔</font><br>(Version 16.21.0+)<td><font color="green" size="10">✔</font><br>(Version 2.21+)<td>Coming October 2019<td><font color="green" size="10">✔</font><br>(Version 16.0.11231+)<td>Coming October 2019<td>Coming Q4 of calendar year 2019<td>Coming October 2019
-<tr><td>Assign pre-defined permissions<td><font color="green" size="10">✔</font><br>(Version 1910+)<td><font color="green" size="10">✔</font><br>(Version 1910+)<td><font color="green" size="10">✔</font><br>(Version 16.21.0+)<td><font color="green" size="10">✔</font><br>(Version 16.21.0+)<td><font color="green" size="10">✔</font><br>(Version 2.21+)<td>Coming October 2019<td><font color="green" size="10">✔</font><br>(Version 16.0.11231+)<td>Coming October 2019<td>Coming Q4 of calendar year 2019<td>Coming October 2019
-<tr><td><a href="https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels#let-users-assign-permissions">Let users assign permissions</a><td>TBD<td><font color="green" size="10">✔</font><br>(Version 1910+)<td>TBD<td><font color="green" size="10">✔</font><br>(Version 16.21.0+)<td>TBD<td>Coming October 2019<td>TBD<td>Coming October 2019<td>TBD<td>Coming October 2019
+<tr><td>Manually apply, change, or remove label<td><font color="green" size="6">✔</font><br>(Version 1910+)<td><font color="green" size="6">✔</font><br>(Version 1910+)<td><font color="green" size="6">✔</font><br>(Version 16.21.0+)<td><font color="green" size="6">✔</font><br>(Version 16.21.0+)<td><font color="green" size="6">✔</font><br>(Version 2.21+)<td>Coming October 2019<td><font color="green" size="6">✔</font><br>(Version 16.0.11231+)<td>Coming October 2019<td>Coming Q4 of calendar year 2019<td>Coming October 2019
+<tr><td><a href="https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do">Apply a default label</a><td><font color="green" size="6">✔</font><br>(Version 1910+)<td><font color="green" size="6">✔</font><br>(Version 1910+)<td><font color="green" size="6">✔</font><br>(Version 16.21.0+)<td><font color="green" size="6">✔</font><br>(Version 16.21.0+)<td><font color="green" size="6">✔</font><br>(Version 2.21+)<td>Coming October 2019<td><font color="green" size="6">✔</font><br>(Version 16.0.11231+)<td>Coming October 2019<td>Coming Q4 of calendar year 2019<td>Coming October 2019
+<tr><td><a href="https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do">Require a justification for changing a label</a><sup>1</sup><td><font color="green" size="6">✔</font><br>(Version 1910+)<td><font color="green" size="6">✔</font><br>(Version 1910+)<td><font color="green" size="6">✔</font><br>(Version 16.21.0+)<td><font color="green" size="6">✔</font><br>(Version 16.21.0+)<td><font color="green" size="6">✔</font><br>(Version 2.21+)<td>Coming October 2019<td><font color="green" size="6">✔</font><br>(Version 16.0.11231+)<td>Coming October 2019<td>Coming Q4 of calendar year 2019<td>Coming October 2019
+<tr><td><a href="https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do">Provide help link to a custom help page</a><td><font color="green" size="6">✔</font><br>(Version 1910+)<td><font color="green" size="6">✔</font><br>(Version 1910+)<td><font color="green" size="6">✔</font><br>(Version 16.21.0+)<td><font color="green" size="6">✔</font><br>(Version 16.21.0+)<td><font color="green" size="6">✔</font><br>(Version 2.21+)<td>Coming October 2019<td><font color="green" size="6">✔</font><br>(Version 16.0.11231+)<td>Coming October 2019<td>Coming Q4 of calendar year 2019<td>Coming October 2019
+<tr><td><a href="https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels#what-sensitivity-labels-can-do">Mark the content</a><td><font color="green" size="6">✔</font><br>(Version 1910+)<td><font color="green" size="6">✔</font><br>(Version 1910+)<td><font color="green" size="6">✔</font><br>(Version 16.21.0+)<td><font color="green" size="6">✔</font><br>(Version 16.21.0+)<td><font color="green" size="6">✔</font><br>(Version 2.21+)<td>Coming October 2019<td><font color="green" size="6">✔</font><br>(Version 16.0.11231+)<td>Coming October 2019<td>Coming Q4 of calendar year 2019<td>Coming October 2019
+<tr><td>Assign pre-defined permissions<td><font color="green" size="6">✔</font><br>(Version 1910+)<td><font color="green" size="6">✔</font><br>(Version 1910+)<td><font color="green" size="6">✔</font><br>(Version 16.21.0+)<td><font color="green" size="6">✔</font><br>(Version 16.21.0+)<td><font color="green" size="6">✔</font><br>(Version 2.21+)<td>Coming October 2019<td><font color="green" size="6">✔</font><br>(Version 16.0.11231+)<td>Coming October 2019<td>Coming Q4 of calendar year 2019<td>Coming October 2019
+<tr><td><a href="https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels#let-users-assign-permissions">Let users assign permissions</a><td>TBD<td><font color="green" size="6">✔</font><br>(Version 1910+)<td>TBD<td><font color="green" size="6">✔</font><br>(Version 16.21.0+)<td>TBD<td>Coming October 2019<td>TBD<td>Coming October 2019<td>TBD<td>Coming October 2019
 <tr><td>Send <a href="https://docs.microsoft.com/microsoft-365/compliance/label-analytics">label analytics</a> data for administrators<td>TBD<td>TBD<td>TBD<td>TBD<td>TBD<td>TBD<td>TBD<td>TBD<td>TBD<td>TBD
 <tr><td>Require users to apply a label to their email and documents<td>TBD<td>TBD<td>TBD<td>TBD<td>TBD<td>TBD<td>TBD<td>TBD<td>TBD<td>TBD
 <tr><td><a href="https://docs.microsoft.com/microsoft-365/compliance/apply-sensitivity-label-automatically">Apply a sensitivity label to content automatically</a><td>TBD<td>TBD<td>TBD<td>TBD<td>TBD<td>TBD<td>TBD<td>TBD<td>TBD<td>TBD
@@ -65,49 +65,56 @@ Testing table with Office vector icons
 <tr><td>
 
 <td>
-<img src="https://docs.microsoft.com/media/logos/logo-word.svg" alt="Word" title="Word" height="50px" width="50px" />
-<img src="https://docs.microsoft.com/media/logos/logo-excel.svg" alt="Excel" title="Excel" height="50px" width="50px" />
-<img src="https://docs.microsoft.com/media/logos/logo-powerpoint.svg" alt="PowerPoint" title="PowerPoint" height="50px" width="50px" />
+<img src="https://docs.microsoft.com/media/logos/logo-word.svg" alt="Word" title="Word" height="40px" width="40px" />
+<img src="https://docs.microsoft.com/media/logos/logo-excel.svg" alt="Excel" title="Excel" height="40px" width="40px" />
+<img src="https://docs.microsoft.com/media/logos/logo-powerpoint.svg" alt="PowerPoint" title="PowerPoint" height="40px" width="40px" />
 <td>
-<img src="https://docs.microsoft.com/media/logos/logo-outlook.svg" alt="Outlook" title="Outlook" height="50px" width="50px" />
+<img src="https://docs.microsoft.com/media/logos/logo-outlook.svg" alt="Outlook" title="Outlook" height="40px" width="40px" />
 
 <td>
-<img src="https://docs.microsoft.com/media/logos/logo-word.svg" alt="Word" title="Word" height="50px" width="50px" />
-<img src="https://docs.microsoft.com/media/logos/logo-excel.svg" alt="Excel" title="Excel" height="50px" width="50px" />
-<img src="https://docs.microsoft.com/media/logos/logo-powerpoint.svg" alt="PowerPoint" title="PowerPoint" height="50px" width="50px" />
+<img src="https://docs.microsoft.com/media/logos/logo-word.svg" alt="Word" title="Word" height="40px" width="40px" />
+<img src="https://docs.microsoft.com/media/logos/logo-excel.svg" alt="Excel" title="Excel" height="40px" width="40px" />
+<img src="https://docs.microsoft.com/media/logos/logo-powerpoint.svg" alt="PowerPoint" title="PowerPoint" height="40px" width="40px" />
 <td>
-<img src="https://docs.microsoft.com/media/logos/logo-outlook.svg" alt="Outlook" title="Outlook" height="50px" width="50px" />
+<img src="https://docs.microsoft.com/media/logos/logo-outlook.svg" alt="Outlook" title="Outlook" height="40px" width="40px" />
 
 <td>
-<img src="https://docs.microsoft.com/media/logos/logo-word.svg" alt="Word" title="Word" height="50px" width="50px" />
-<img src="https://docs.microsoft.com/media/logos/logo-excel.svg" alt="Excel" title="Excel" height="50px" width="50px" />
-<img src="https://docs.microsoft.com/media/logos/logo-powerpoint.svg" alt="PowerPoint" title="PowerPoint" height="50px" width="50px" />
+<img src="https://docs.microsoft.com/media/logos/logo-word.svg" alt="Word" title="Word" height="40px" width="40px" />
+<img src="https://docs.microsoft.com/media/logos/logo-excel.svg" alt="Excel" title="Excel" height="40px" width="40px" />
+<img src="https://docs.microsoft.com/media/logos/logo-powerpoint.svg" alt="PowerPoint" title="PowerPoint" height="40px" width="40px" />
 <td>
-<img src="https://docs.microsoft.com/media/logos/logo-outlook.svg" alt="Outlook" title="Outlook" height="50px" width="50px" />
+<img src="https://docs.microsoft.com/media/logos/logo-outlook.svg" alt="Outlook" title="Outlook" height="40px" width="40px" />
 
 <td>
-<img src="https://docs.microsoft.com/media/logos/logo-word.svg" alt="Word" title="Word" height="50px" width="50px" />
-<img src="https://docs.microsoft.com/media/logos/logo-excel.svg" alt="Excel" title="Excel" height="50px" width="50px" />
-<img src="https://docs.microsoft.com/media/logos/logo-powerpoint.svg" alt="PowerPoint" title="PowerPoint" height="50px" width="50px" />
+<img src="https://docs.microsoft.com/media/logos/logo-word.svg" alt="Word" title="Word" height="40px" width="40px" />
+<img src="https://docs.microsoft.com/media/logos/logo-excel.svg" alt="Excel" title="Excel" height="40px" width="40px" />
+<img src="https://docs.microsoft.com/media/logos/logo-powerpoint.svg" alt="PowerPoint" title="PowerPoint" height="40px" width="40px" />
 <td>
-<img src="https://docs.microsoft.com/media/logos/logo-outlook.svg" alt="Outlook" title="Outlook" height="50px" width="50px" />
+<img src="https://docs.microsoft.com/media/logos/logo-outlook.svg" alt="Outlook" title="Outlook" height="40px" width="40px" />
 
 <td>
-<img src="https://docs.microsoft.com/media/logos/logo-word.svg" alt="Word" title="Word" height="50px" width="50px" />
-<img src="https://docs.microsoft.com/media/logos/logo-excel.svg" alt="Excel" title="Excel" height="50px" width="50px" />
-<img src="https://docs.microsoft.com/media/logos/logo-powerpoint.svg" alt="PowerPoint" title="PowerPoint" height="50px" width="50px" />
+<img src="https://docs.microsoft.com/media/logos/logo-word.svg" alt="Word" title="Word" height="40px" width="40px" />
+<img src="https://docs.microsoft.com/media/logos/logo-excel.svg" alt="Excel" title="Excel" height="40px" width="40px" />
+<img src="https://docs.microsoft.com/media/logos/logo-powerpoint.svg" alt="PowerPoint" title="PowerPoint" height="40px" width="40px" />
 <td>
-<img src="https://docs.microsoft.com/media/logos/logo-outlook.svg" alt="Outlook" title="Outlook" height="50px" width="50px" />
+<img src="https://docs.microsoft.com/media/logos/logo-outlook.svg" alt="Outlook" title="Outlook" height="40px" width="40px" />
 
 </tr>
 
-<tr><td>Manually apply, change, or remove label<td><font color="green" size="10">✔</font><br>1910+<td><font color="green" size="10">✔</font><br>1910+<td><font color="green" size="10">✔</font><br>16.21.0+<td><font color="green" size="10">✔</font><br>16.21.0+<td><font color="green" size="10">✔</font><br>2.21+<td>Coming October 2019<td><font color="green" size="10">✔</font><br>16.0.11231+<td>Coming October 2019<td>Coming Q4 of calendar year 2019<td>Coming October 2019
-<tr><td><a href="https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do">Apply a default label</a><td><font color="green" size="10">✔</font><br>1910+<td><font color="green" size="10">✔</font><br>1910+<td><font color="green" size="10">✔</font><br>16.21.0+<td><font color="green" size="10">✔</font><br>16.21.0+<td><font color="green" size="10">✔</font><br>2.21+<td>Coming October 2019<td><font color="green" size="10">✔</font><br>16.0.11231+<td>Coming October 2019<td>Coming Q4 of calendar year 2019<td>Coming October 2019
-<tr><td><a href="https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do">Require a justification for changing a label</a><sup>1</sup><td><font color="green" size="10">✔</font><br>1910+<td><font color="green" size="10">✔</font><br>1910+<td><font color="green" size="10">✔</font><br>16.21.0+<td><font color="green" size="10">✔</font><br>16.21.0+<td><font color="green" size="10">✔</font><br>2.21+<td>Coming October 2019<td><font color="green" size="10">✔</font><br>16.0.11231+<td>Coming October 2019<td>Coming Q4 of calendar year 2019<td>Coming October 2019
-<tr><td><a href="https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do">Provide help link to a custom help page</a><td><font color="green" size="10">✔</font><br>1910+<td><font color="green" size="10">✔</font><br>1910+<td><font color="green" size="10">✔</font><br>16.21.0+<td><font color="green" size="10">✔</font><br>16.21.0+<td><font color="green" size="10">✔</font><br>2.21+<td>Coming October 2019<td><font color="green" size="10">✔</font><br>16.0.11231+<td>Coming October 2019<td>Coming Q4 of calendar year 2019<td>Coming October 2019
-<tr><td><a href="https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels#what-sensitivity-labels-can-do">Mark the content</a><td><font color="green" size="10">✔</font><br>1910+<td><font color="green" size="10">✔</font><br>1910+<td><font color="green" size="10">✔</font><br>16.21.0+<td><font color="green" size="10">✔</font><br>16.21.0+<td><font color="green" size="10">✔</font><br>2.21+<td>Coming October 2019<td><font color="green" size="10">✔</font><br>16.0.11231+<td>Coming October 2019<td>Coming Q4 of calendar year 2019<td>Coming October 2019
-<tr><td>Assign pre-defined permissions<td><font color="green" size="10">✔</font><br>1910+<td><font color="green" size="10">✔</font><br>1910+<td><font color="green" size="10">✔</font><br>16.21.0+<td><font color="green" size="10">✔</font><br>16.21.0+<td><font color="green" size="10">✔</font><br>2.21+<td>Coming October 2019<td><font color="green" size="10">✔</font><br>16.0.11231+<td>Coming October 2019<td>Coming Q4 of calendar year 2019<td>Coming October 2019
-<tr><td><a href="https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels#let-users-assign-permissions">Let users assign permissions</a><td>TBD<td><font color="green" size="10">✔</font><br>1910+<td>TBD<td><font color="green" size="10">✔</font><br>16.21.0+<td>TBD<td>Coming October 2019<td>TBD<td>Coming October 2019<td>TBD<td>Coming October 2019
+<tr>
+<td>Manually apply, change, or remove label<td><font color="green" size="6">✔</font><br>1910+
+<td><font color="green" size="6">✔</font><br>1910+
+<td><font color="green" size="6">✔</font><br>16.21.0+<td><font color="green" size="6">✔</font><br>16.21.0+
+<td><font color="green" size="6">✔</font><br>2.21+
+<td>Coming October 2019<td><font color="green" size="6">✔</font><br>16.0.11231+<td>Coming October 2019<td>Coming Q4 of calendar year 2019<td>Coming October 2019
+
+<tr>
+<td><a href="https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do">Apply a default label</a><td><font color="green" size="6">✔</font><br>1910+<td><font color="green" size="6">✔</font><br>1910+<td><font color="green" size="6">✔</font><br>16.21.0+<td><font color="green" size="6">✔</font><br>16.21.0+<td><font color="green" size="6">✔</font><br>2.21+<td>Coming October 2019<td><font color="green" size="6">✔</font><br>16.0.11231+<td>Coming October 2019<td>Coming Q4 of calendar year 2019<td>Coming October 2019
+<tr><td><a href="https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do">Require a justification for changing a label</a><sup>1</sup><td><font color="green" size="6">✔</font><br>1910+<td><font color="green" size="6">✔</font><br>1910+<td><font color="green" size="6">✔</font><br>16.21.0+<td><font color="green" size="6">✔</font><br>16.21.0+<td><font color="green" size="6">✔</font><br>2.21+<td>Coming October 2019<td><font color="green" size="6">✔</font><br>16.0.11231+<td>Coming October 2019<td>Coming Q4 of calendar year 2019<td>Coming October 2019
+<tr><td><a href="https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do">Provide help link to a custom help page</a><td><font color="green" size="6">✔</font><br>1910+<td><font color="green" size="6">✔</font><br>1910+<td><font color="green" size="6">✔</font><br>16.21.0+<td><font color="green" size="6">✔</font><br>16.21.0+<td><font color="green" size="6">✔</font><br>2.21+<td>Coming October 2019<td><font color="green" size="6">✔</font><br>16.0.11231+<td>Coming October 2019<td>Coming Q4 of calendar year 2019<td>Coming October 2019
+<tr><td><a href="https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels#what-sensitivity-labels-can-do">Mark the content</a><td><font color="green" size="6">✔</font><br>1910+<td><font color="green" size="6">✔</font><br>1910+<td><font color="green" size="6">✔</font><br>16.21.0+<td><font color="green" size="6">✔</font><br>16.21.0+<td><font color="green" size="6">✔</font><br>2.21+<td>Coming October 2019<td><font color="green" size="6">✔</font><br>16.0.11231+<td>Coming October 2019<td>Coming Q4 of calendar year 2019<td>Coming October 2019
+<tr><td>Assign pre-defined permissions<td><font color="green" size="6">✔</font><br>1910+<td><font color="green" size="6">✔</font><br>1910+<td><font color="green" size="6">✔</font><br>16.21.0+<td><font color="green" size="6">✔</font><br>16.21.0+<td><font color="green" size="6">✔</font><br>2.21+<td>Coming October 2019<td><font color="green" size="6">✔</font><br>16.0.11231+<td>Coming October 2019<td>Coming Q4 of calendar year 2019<td>Coming October 2019
+<tr><td><a href="https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels#let-users-assign-permissions">Let users assign permissions</a><td>TBD<td><font color="green" size="6">✔</font><br>1910+<td>TBD<td><font color="green" size="6">✔</font><br>16.21.0+<td>TBD<td>Coming October 2019<td>TBD<td>Coming October 2019<td>TBD<td>Coming October 2019
 <tr><td>Send <a href="https://docs.microsoft.com/microsoft-365/compliance/label-analytics">label analytics</a> data for administrators<td>TBD<td>TBD<td>TBD<td>TBD<td>TBD<td>TBD<td>TBD<td>TBD<td>TBD<td>TBD
 <tr><td>Require users to apply a label to their email and documents<td>TBD<td>TBD<td>TBD<td>TBD<td>TBD<td>TBD<td>TBD<td>TBD<td>TBD<td>TBD
 <tr><td><a href="https://docs.microsoft.com/microsoft-365/compliance/apply-sensitivity-label-automatically">Apply a sensitivity label to content automatically</a><td>TBD<td>TBD<td>TBD<td>TBD<td>TBD<td>TBD<td>TBD<td>TBD<td>TBD<td>TBD
@@ -123,22 +130,18 @@ Testing table with Office vector icons
 
 ## Can the built-in Sensitivity feature run alongside the Azure Information Protection client in Office for Windows?
 
-No. The built-in Sensitivity feature is turned off if the Azure Information Protection client is loaded in Office for Windows. See also: [below question] 
+No. The built-in Sensitivity feature is turned off if the Azure Information Protection client is loaded in Office for Windows. Also see the next question in this FAQ.
 
 ## How do I configure whether the Azure Information Protection client or the built-in Sensitivity feature should be enabled in Office for Windows? 
 
 If you have the Azure Information Protection client installed, but you want to use the built-in Sensitivity feature instead, you can: 
 
-1. Configure the Use the Sensitivity feature in Office to apply and view sensitivity labels Group Policy setting, which can be found under User Configuration\Administrative Templates\Microsoft Office 2016\Security Settings.  
-Note: this setting can be deployed via traditional group policy deployment mechanisms, or by the Office cloud policy service. 
+1. Configure the **Use the Sensitivity feature in Office to apply and view sensitivity labels Group Policy** setting, which can be found under **User Configuration\Administrative Templates\Microsoft Office 2016\Security Settings**.  
+>Note: this setting can be deployed via traditional group policy deployment mechanisms, or by the [Office cloud policy service](https://docs.microsoft.com/DeployOffice/overview-office-cloud-policy-service). 
  
- Alternatively, you can uninstall or disable the Azure Information Protection client. 
+ Alternatively, you can uninstall or [disable](https://support.office.com/article/view-manage-and-install-add-ins-in-office-programs-16278816-1948-4028-91e5-76dca5380f8d) the Azure Information Protection client. 
 
 2. Restart all Office applications. 
-
-## If I share labeled content with someone outside my tenant, will they see my tenant’s sensitivity label?
-
-No. [elaborate] 
 
 ## Will the built-in Sensitivity feature be supported in non-subscription versions of Office like Office 2016 or Office 2019?
 
@@ -146,16 +149,16 @@ No. The Sensitivity feature will only be supported in the Office 365 subscriptio
 
 ## I previously deployed protection templates before setting up Sensitivity labels. Where did they go?
 
-Administrator-defined protection templates are hidden from the Office user experience when Sensitivity labels are enabled because they are redundant with Sensitivity labels that have encryption enabled. 
+Administrator-defined [protection templates](https://docs.microsoft.com/azure/information-protection/configure-policy-templates) are hidden from the Office user experience when Sensitivity labels are enabled because they are redundant with Sensitivity labels that have encryption enabled. 
 
 ## Can a file or email have more than one classification?
 
 Users can select just one label at a time for each document or email, which often results in just one classification. However, if users select a sublabel, this actually applies two labels at the same time; a primary label and a secondary label. By using sublabels, a file can have two classifications that denote a parent\child relationship for an additional level of control. 
 
-For example, the label Confidential might contain sublabels such as Legal and Finance. You can apply different classification visual markings and different Rights Management templates to these sublabels. A user cannot select the Confidential label by itself; only one of its sublabels, such as Legal. As a result, the label that they see set is Confidential \ Legal. The metadata for that file includes one custom text property for Confidential, one custom text property for Legal, and another that contains both values (Confidential Legal). 
+For example, the label **Confidential** might contain sublabels such as **Legal** and **Finance**. You can apply different classification visual markings and different Rights Management templates to these sublabels. A user cannot select the **Confidential** label by itself; only one of its sublabels, such as **Legal**. As a result, the label that they see set is **Confidential** \ **Legal**. The metadata for that file includes one custom text property for **Confidential**, one custom text property for **Legal**, and another that contains both values (**Confidential Legal**). 
 
-When you use sublabels, don't configure visual markings, protection, and conditions at the primary label. When you use sublevels, configure these setting on the sublabel only. If you configure these settings on the primary label and its sublabel, the settings at the sublabel take precedence. 
+When you use sublabels, don't configure visual markings, protection, and conditions at the primary label. When you use sublevels, configure these setting on the sublabel only. If you configure these settings on the primary label and its sublabel, the settings at the sublabel take precedence. For more information, see [Frequently asked questions about classification and labeling in Azure Information Protection](https://docs.microsoft.com/azure/information-protection/faqs-infoprotect).
 
 ## When an email is labeled, do any attachments automatically get the same labeling?
 
-No. When you label an email message that has attachments, those attachments do not inherit the same label. The attachments remain either without a label or retain a separately applied label. However, if the label for the email applies protection, that protection is applied to Office attachments.
+No. When you label an email message that has attachments, those attachments do not inherit the same label. The attachments remain either without a label or retain a separately applied label. However, if the label for the email applies protection, that protection is applied to Office attachments. For more information, see [Frequently asked questions about classification and labeling in Azure Information Protection](https://docs.microsoft.com/azure/information-protection/faqs-infoprotect).
