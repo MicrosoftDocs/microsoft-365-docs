@@ -56,61 +56,7 @@ description: "With sensitivity labels, you can classify and help protect your se
 
 <br><sup>1</sup>If configured, users are prompted to justify label downgrades. However, the justification data is not made available for administrators yet. It will become available when the “send label analytics data for administrators” capability is supported. 
 
-Simplified table below:
-
-<table border="1">
-<tr><td>Capability<td colspan="2">Windows<td colspan="2">Mac<td colspan="2">iOS<td colspan="2">Android<td colspan="2">Web</tr>
-<tr><td><td>Word, Excel, PowerPoint<td>Outlook<td>Word, Excel, PowerPoint<td>Outlook<td>Word, Excel, PowerPoint<td>Outlook<td>Word, Excel, PowerPoint<td>Outlook<td>Word, Excel, PowerPoint<td>Outlook</tr>
-<tr><td>
-<ul><li>Manually apply, change, or remove label
-<li><a href="https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do">Apply a default label</a>
-<li><a href="https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do">Require a justification for changing a label</a><sup>1</sup>
-<li><a href="https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do">Provide help link to a custom help page</a>
-<li><a href="https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels#what-sensitivity-labels-can-do">Mark the content</a>
-<li>Assign pre-defined permissions
-</ul>
-<td><img src="images\check_grn.png">(Version 1910+)<td><img src="images\check_grn.png">(Version 1910+)<td><img src="images\check_grn.png">(Version 16.21.0+)<td><img src="images\check_grn.png">(Version 16.21.0+)<td><img src="images\check_grn.png">(Version 2.21+)<td>Coming October 2019<td><img src="images\check_grn.png">(Version 16.0.11231+)<td>Coming October 2019<td>Coming Q4 of calendar year 2019<td>Coming October 2019
-
-<tr><td><ul><li><a href="https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels#let-users-assign-permissions">Let users assign permissions</a></ul><td>TBD<td><img src="images\check_grn.png">(Version 1910+)<td>TBD<td><img src="images\check_grn.png">(Version 16.21.0+)<td>TBD<td>Coming October 2019<td>TBD<td>Coming October 2019<td>TBD<td>Coming October 2019
-
-<tr><td><ul>
-<li>Send <a href="https://docs.microsoft.com/microsoft-365/compliance/label-analytics">label analytics</a> data for administrators
-<li>Require users to apply a label to their email and documents
-<li><a href="https://docs.microsoft.com/microsoft-365/compliance/apply-sensitivity-label-automatically">Apply a sensitivity label to content automatically</a>
-</ul>
-<td>TBD<td>TBD<td>TBD<td>TBD<td>TBD<td>TBD<td>TBD<td>TBD<td>TBD<td>TBD
-</table>
-
-Simplified table with width descreased:
-
-<div style='font-size:9.0pt'>
-
-<table border="1">
-<tr><td>Capability<td colspan="2">Windows<td colspan="2">Mac<td colspan="2">iOS<td colspan="2">Android<td colspan="2">Web</tr>
-<tr><td><td>Word, Excel, PowerPoint<td>Outlook<td>Word, Excel, PowerPoint<td>Outlook<td>Word, Excel, PowerPoint<td>Outlook<td>Word, Excel, PowerPoint<td>Outlook<td>Word, Excel, PowerPoint<td>Outlook</tr>
-<tr><td>
-Manually apply, change, or remove label
-<br>&nbsp;<br><a href="https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do">Apply a default label</a>
-<br>&nbsp;<br><a href="https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do">Require a justification for changing a label</a><sup>1</sup>
-<br>&nbsp;<br><a href="https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do">Provide help link to a custom help page</a>
-<br>&nbsp;<br><a href="https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels#what-sensitivity-labels-can-do">Mark the content</a>
-<br>&nbsp;<br>Assign pre-defined permissions
-
-<td><img src="images\check_grn.png">Version 1910+<td><img src="images\check_grn.png">(Version 1910+)<td><img src="images\check_grn.png">Version 16.21.0+<td><img src="images\check_grn.png">Version 16.21.0+<td><img src="images\check_grn.png">Version 2.21+<td>Coming October 2019<td><img src="images\check_grn.png">Version 16.0.11231+<td>Coming October 2019<td>Coming Q4 of calendar year 2019<td>Coming October 2019
-
-<tr><td><a href="https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels#let-users-assign-permissions">Let users assign permissions</a><td>TBD<td><img src="images\check_grn.png">Version 1910+<td>TBD<td><img src="images\check_grn.png">Version 16.21.0+<td>TBD<td>Coming October 2019<td>TBD<td>Coming October 2019<td>TBD<td>Coming October 2019
-
-<tr><td>
-Send <a href="https://docs.microsoft.com/microsoft-365/compliance/label-analytics">label analytics</a> data for admins
-<br>&nbsp;<br>Require users to apply a label to their email and documents
-<br>&nbsp;<br><a href="https://docs.microsoft.com/microsoft-365/compliance/apply-sensitivity-label-automatically">Apply a sensitivity label to content automatically</a>
-
-<td>TBD<td>TBD<td>TBD<td>TBD<td>TBD<td>TBD<td>TBD<td>TBD<td>TBD<td>TBD
-</table>
-
-</div>
-
-Full table with decreased font:
+Table with smaller font to hopefully avoid scrolling
 
 <div style='font-size:9.0pt'>
 
@@ -130,6 +76,23 @@ Full table with decreased font:
 </table>
 
 </div>
+
+Testing table with Office icons and parens removed
+
+<table border="1">
+<tr><td>Capability<td colspan="2">Windows<td colspan="2">Mac<td colspan="2">iOS<td colspan="2">Android<td colspan="2">Web</tr>
+<tr><td><td><img src="images\word.jpg"><img src="images\excel.jpg"><img src="images\powerpoint.jpg"><td><img src="images\outlook.jpg"><td><img src="images\word.jpg"><img src="images\excel.jpg"><img src="images\powerpoint.jpg"><td><img src="images\outlook.jpg"><td><img src="images\word.jpg"><img src="images\excel.jpg"><img src="images\powerpoint.jpg"><td><img src="images\outlook.jpg"><td><img src="images\word.jpg"><img src="images\excel.jpg"><img src="images\powerpoint.jpg"><td><img src="images\outlook.jpg"><td><img src="images\word.jpg"><img src="images\excel.jpg"><img src="images\powerpoint.jpg"><td><img src="images\outlook.jpg"></tr>
+<tr><td>Manually apply, change, or remove label<td><img src="images\check_grn.png">1910+<td><img src="images\check_grn.png">1910+<td><img src="images\check_grn.png">16.21.0+<td><img src="images\check_grn.png">16.21.0+<td><img src="images\check_grn.png">2.21+<td>Coming October 2019<td><img src="images\check_grn.png">16.0.11231+<td>Coming October 2019<td>Coming Q4 of calendar year 2019<td>Coming October 2019
+<tr><td><a href="https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do">Apply a default label</a><td><img src="images\check_grn.png">1910+<td><img src="images\check_grn.png">1910+<td><img src="images\check_grn.png">16.21.0+<td><img src="images\check_grn.png">16.21.0+<td><img src="images\check_grn.png">(2.21+<td>Coming October 2019<td><img src="images\check_grn.png">16.0.11231+<td>Coming October 2019<td>Coming Q4 of calendar year 2019<td>Coming October 2019
+<tr><td><a href="https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do">Require a justification for changing a label</a><sup>1</sup><td><img src="images\check_grn.png">1910+<td><img src="images\check_grn.png">1910+<td><img src="images\check_grn.png">16.21.0+<td><img src="images\check_grn.png">16.21.0+<td><img src="images\check_grn.png">(2.21+<td>Coming October 2019<td><img src="images\check_grn.png">16.0.11231+<td>Coming October 2019<td>Coming Q4 of calendar year 2019<td>Coming October 2019
+<tr><td><a href="https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do">Provide help link to a custom help page</a><td><img src="images\check_grn.png">1910+<td><img src="images\check_grn.png">1910+<td><img src="images\check_grn.png">16.21.0+<td><img src="images\check_grn.png">16.21.0+<td><img src="images\check_grn.png">(2.21+<td>Coming October 2019<td><img src="images\check_grn.png">16.0.11231+<td>Coming October 2019<td>Coming Q4 of calendar year 2019<td>Coming October 2019
+<tr><td><a href="https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels#what-sensitivity-labels-can-do">Mark the content</a><td><img src="images\check_grn.png">1910+<td><img src="images\check_grn.png">1910+<td><img src="images\check_grn.png">16.21.0+<td><img src="images\check_grn.png">16.21.0+<td><img src="images\check_grn.png">(2.21+<td>Coming October 2019<td><img src="images\check_grn.png">16.0.11231+<td>Coming October 2019<td>Coming Q4 of calendar year 2019<td>Coming October 2019
+<tr><td>Assign pre-defined permissions<td><img src="images\check_grn.png">1910+<td><img src="images\check_grn.png">1910+<td><img src="images\check_grn.png">16.21.0+<td><img src="images\check_grn.png">16.21.0+<td><img src="images\check_grn.png">(2.21+<td>Coming October 2019<td><img src="images\check_grn.png">16.0.11231+<td>Coming October 2019<td>Coming Q4 of calendar year 2019<td>Coming October 2019
+<tr><td><a href="https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels#let-users-assign-permissions">Let users assign permissions</a><td>TBD<td><img src="images\check_grn.png">1910+<td>TBD<td><img src="images\check_grn.png">16.21.0+<td>TBD<td>Coming October 2019<td>TBD<td>Coming October 2019<td>TBD<td>Coming October 2019
+<tr><td>Send <a href="https://docs.microsoft.com/microsoft-365/compliance/label-analytics">label analytics</a> data for administrators<td>TBD<td>TBD<td>TBD<td>TBD<td>TBD<td>TBD<td>TBD<td>TBD<td>TBD<td>TBD
+<tr><td>Require users to apply a label to their email and documents<td>TBD<td>TBD<td>TBD<td>TBD<td>TBD<td>TBD<td>TBD<td>TBD<td>TBD<td>TBD
+<tr><td><a href="https://docs.microsoft.com/microsoft-365/compliance/apply-sensitivity-label-automatically">Apply a sensitivity label to content automatically</a><td>TBD<td>TBD<td>TBD<td>TBD<td>TBD<td>TBD<td>TBD<td>TBD<td>TBD<td>TBD
+</table>
 
 ## When do content marks or encryption get applied after content is given a sensitivity label?
 
