@@ -1,5 +1,5 @@
 # Microsoft 365 Business
-## [Microsoft 365](index.md)
+## [Microsoft 365](index.yml)
 ## [What is Microsoft 365 Business?](microsoft-365-business-overview.md)
 ## [Get Microsoft 365 Business](sign-up.md)
 ## [Pre-requisites for data protection](pre-requisites-for-data-protection.md)
