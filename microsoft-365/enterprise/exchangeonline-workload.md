@@ -158,7 +158,7 @@ Your organization has adopted Exchange Online and Outlook as its primary individ
 
 ## How Microsoft does Microsoft 365 Enterprise
 
-To peek inside Microsoft and learn how we migrated to Exchange Online and is using Exchange Online Protection to protect against cyber attacks, see:
+To peek inside Microsoft and learn how we migrated to Exchange Online and are using Exchange Online Protection to protect against cyber attacks, see:
 
 - [Microsoft migrates 150,000 mailboxes to Exchange Online](https://www.microsoft.com/itshowcase/Article/Content/577/Microsoft-migrates-150000-mailboxes-to-Exchange-Online)
 - [Microsoft uses threat intelligence to protect, detect, and respond to threats](https://www.microsoft.com/itshowcase/Article/Content/934/Microsoft-uses-threat-intelligence-to-protect-detect-and-respond-to-threats)
