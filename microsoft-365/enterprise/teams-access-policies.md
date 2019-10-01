@@ -19,9 +19,11 @@ ms.collection:
 
 # Policy recommendations for securing Teams chats, groups, and files
 
+WHY NOT SKYPE HYBRID
+
 This article describes how to implement the recommended identity and device-access policies to protect Teams chats, groups, and content such as files and calendars. This guidance builds on the [Common identity and device access policies](identity-access-policies.md), with additional information that's Teams-specific. Because Teams integrates with our other products, there will be reference out to [Policy recommendations for securing SharePoint sites and files](sharepoint-file-access-policies.md) and [Policy recommendations for securing email](secure-email-recommended-policies.md).
 
-These recommendations are based on three different tiers of security and protection for SharePoint files that can be applied based on the granularity of your needs: baseline, sensitive, and highly regulated. You can learn more about these security tiers, and the recommended client operating systems, referenced by these recommendations in the [Identity and device access configurations](microsoft-365-policies-configurations.md).
+These recommendations are based on three different tiers of security and protection for Teams that can be applied based on the granularity of your needs: baseline, sensitive, and highly regulated. You can learn more about these security tiers, and the recommended client operating systems, referenced by these recommendations in the [Identity and device access configurations](microsoft-365-policies-configurations.md).
 
 Additional recommendations specific to Teams deployment are included in this article, to cover specific authentication circumstances, including for users outside your organization, and you will need to follow this guidance for a complete security experience.
 
@@ -33,18 +35,18 @@ The following diagram illustrates the set of recommended policies for protecting
 
 If you included Teams when you created the common policies, you should be able to proceed to create policy rules around guest and external access, along with policies for Teams and Channels, Messaging, Meeting, and Applications.
 
-This is a table of rules to follow, it's from a link I'll put in here.
+This is a table of rules to follow, and you can learn more from .
 
 |Protection level|Policies|More information|
 |:---------------|:-------|:----------------|
-|**Baseline**|[Require MFA when sign-in risk is *medium* or *high*](#require-mfa-based-on-sign-in-risk)|For high-risk users, MFA should be enabled, as defined by your organization|
+|**Baseline**|[Require MFA when sign-in risk is *medium* or *high*](#require-mfa-based-on-sign-in-risk)|For high-risk users, as defined by your organization, MFA should be enabled|
 |        |[Block clients that don't support modern authentication](#block-clients-that-dont-support-modern-authentication)|Clients that do not use modern authentication can bypass conditional access rules, so it's important to block these|
-|        |[High risk users must change password](#high-risk-users-must-change-password)|Forces users to change their password when signing in if high-risk activity is detected for their account|
+|        |[High risk users must change password](#high-risk-users-must-change-password)|Forces Teams users to change their password when signing in if high-risk activity is detected for their account|
 |        |[Define app protection policies](#define-app-protection-policies)|One policy per platform (iOS, Android, Windows).|
 |        |[Require approved apps](#require-approved-apps)|Enforces mobile app protection for phones and tablets|
 |        |[Define device compliance policies](#define-device-compliance-policies)|One policy for each platform|
 |        |[Require compliant PCs](#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Enforces Intune management of PCs|
-|**Sensitive**|[Require MFA when sign-in risk is *low*, *medium* or *high*](#require-mfa-based-on-sign-in-risk)|A range of low-risk to high-risk users should be required to use MFA, as defined by your organization|
+|**Sensitive**|[Require MFA when sign-in risk is *low*, *medium* or *high*](#require-mfa-based-on-sign-in-risk)|A range of low-risk to high-risk users, as defined by your organization, should be required to use MFA|
 |         |[Require compliant PCs *and* mobile devices](#require-compliant-pcs-and-mobile-devices)|Enforces Intune management for PCs and phone/tablets|
 |**Highly regulated**|[*Always* require MFA](#require-mfa-based-on-sign-in-risk)|Regardless of user identity, MFA will be used by your organization
 | | |
@@ -77,7 +79,7 @@ For more reading about App Permission Policies, check out [Manage app permission
 
 ## How these policies work together
 
-As noted above, Teams can have many layers of access and security ranges from channels that can encompass your entire organization to one on one chats. These policies cover security reliably no matter what you're using Teams to do. Please review the following diagram, which shows not just the many things you can do with Teams, but also some of the underlying dependencies on other applications.
+As noted above, Teams can have many layers of access and security ranges from channels that can encompass your entire organization to one-on-one chats. These policies cover security reliably no matter what you're using Teams to do. Please review the following diagram, which shows not just the many things you can do with Teams, but also some of the underlying dependencies on other applications.
 
 ![Diagram showing the many things you do in Teams and dependencies.](../images/identity-access-logical-architecture-teams.png)
 
