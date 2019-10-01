@@ -35,7 +35,7 @@ To get you started, an ISO/IEC 27001:2103 Assessment for Office 365 appears by d
 
 ## Administration
 
-There are specific administrative functions that are only available to the tenant administrator and only visible when logged in with a global administrator account. However, until the administrator assigns Compliance Manager roles to users, data in Compliance Manager is visible to all users in your organization. We recommend implementing role-based access control to determine who can access and perform actions in Compliance Manager.
+There are specific administrative functions that are only available to the tenant administrator and only visible when logged in with a global administrator account. Once the administrator assigns Compliance Manager roles to other users, those users can view data in Compliance Manager and perform actions determined by their role.
   
 ### Assigning Compliance Manager roles to users
 
@@ -556,7 +556,3 @@ The following table describes each Compliance Manager permission and what it all
 |**Manage assessments:** Users can create, archive, and delete Assessments.  <br> |||| X | X |
 |**Manage master data:** Users can view, edit, and delete template data and tenant management data.  <br> |||| X | X |
 |**Manage users:** Users can add other users in their organization to the Reader, Contributor, Assessor, and Administrator roles. Only those users with the Global Administrator role in your organization can add or remove users from the Portal Admin role.  <br> ||||| X |
-
-### Guest access
-  
-After Compliance Manager access is configured, any user that does not have a provisioned role is in the **Guest access** role by default (which is also the experience of any non-organization-provisioned accounts like personal Microsoft Accounts). Guest Access users do not have full access to all Compliance Manager features. They are not able to see any of the organization's compliance assessment data, however they are able to use Compliance Manager to view Microsoft's compliance assessment reports and Service Trust documents.
