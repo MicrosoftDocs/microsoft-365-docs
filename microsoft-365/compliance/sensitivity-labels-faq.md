@@ -77,10 +77,10 @@ Table with smaller font to hopefully avoid scrolling
 
 </div>
 
-Testing table with Office icons and parens removed
+Testing table with Office icons and parens removed, and some font resizing
 
-<table border="1">
-<tr><td>Capability<td colspan="2">Windows<td colspan="2">Mac<td colspan="2">iOS<td colspan="2">Android<td colspan="2">Web</tr>
+<table border="1" cellspacing="0" cellpadding="0">
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>Capability<td colspan="2">Windows<td colspan="2">Mac<td colspan="2">iOS<td colspan="2">Android<td colspan="2">Web</tr>
 <tr><td><td><img src="images\word.jpg"><img src="images\excel.jpg"><img src="images\powerpoint.jpg"><td><img src="images\outlook.jpg"><td><img src="images\word.jpg"><img src="images\excel.jpg"><img src="images\powerpoint.jpg"><td><img src="images\outlook.jpg"><td><img src="images\word.jpg"><img src="images\excel.jpg"><img src="images\powerpoint.jpg"><td><img src="images\outlook.jpg"><td><img src="images\word.jpg"><img src="images\excel.jpg"><img src="images\powerpoint.jpg"><td><img src="images\outlook.jpg"><td><img src="images\word.jpg"><img src="images\excel.jpg"><img src="images\powerpoint.jpg"><td><img src="images\outlook.jpg"></tr>
 <tr><td>Manually apply, change, or remove label<td><img src="images\check_grn.png">1910+<td><img src="images\check_grn.png">1910+<td><img src="images\check_grn.png">16.21.0+<td><img src="images\check_grn.png">16.21.0+<td><img src="images\check_grn.png">2.21+<td>Coming October 2019<td><img src="images\check_grn.png">16.0.11231+<td>Coming October 2019<td>Coming Q4 of calendar year 2019<td>Coming October 2019
 <tr><td><a href="https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do">Apply a default label</a><td><img src="images\check_grn.png">1910+<td><img src="images\check_grn.png">1910+<td><img src="images\check_grn.png">16.21.0+<td><img src="images\check_grn.png">16.21.0+<td><img src="images\check_grn.png">(2.21+<td>Coming October 2019<td><img src="images\check_grn.png">16.0.11231+<td>Coming October 2019<td>Coming Q4 of calendar year 2019<td>Coming October 2019
