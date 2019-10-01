@@ -22,7 +22,7 @@ ms.topic: conceptual
 
 Office 365 ATP is constantly being updated to include new feature enhancements and capabilities. This article lists features that are moving into preview over the next several weeks and months. 
 
-For more information on new capabilities that are generally available, see [What's new in Office 365 ATP](whats-new-in-office-365-atp.md). Also, see the [differences between Office 365 ATP Plan 1 and Plan 2](whats-new-in-office-365-atp.md#differentiating-between-office-365-atp-plan-1-and-plan-2).
+For more information on new capabilities that are generally available, see [What's new in Office 365 ATP](whats-new-in-office-365-atp.md). Also, see the [differences between Office 365 ATP Plan 1 and Plan 2](whats-new-in-office-365-atp.md#office-365-atp-plan-1-and-plan-2).
 
 >Don't have Office 365 ATP yet? [Contact sales to start a trial.](https://go.microsoft.com/fwlink/p/?LinkId=518644) 
 
