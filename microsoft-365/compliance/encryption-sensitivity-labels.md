@@ -130,7 +130,7 @@ For more information, see [Rights Management issuer and Rights Management owner]
 
 You can use these options to let users assign permissions when they manually apply a sensitivity label to content:
 
-- In Outlook, a user can enforce restrictions equivalent to the **Do Not Forward** option. This option is supported natively in Outlook on Windows, and does not require you to install the Azure Information Protection unified labeling client.
+- In Outlook, a user can enforce restrictions equivalent to the [Do Not Forward](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails) option. This option is supported natively in Outlook on Windows, and does not require you to install the Azure Information Protection unified labeling client.
 - In Word, PowerPoint, and Excel, a user is prompted to select a permission level for specific users, groups, or organizations. This option is not supported natively in these Office apps, so your users must install the Azure Information Protection unified labeling client.
 
 These options determine in which apps the sensitivity label will appear:
