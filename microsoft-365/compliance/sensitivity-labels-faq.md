@@ -56,6 +56,31 @@ description: "With sensitivity labels, you can classify and help protect your se
 
 <br><sup>1</sup>If configured, users are prompted to justify label downgrades. However, the justification data is not made available for administrators yet. It will become available when the “send label analytics data for administrators” capability is supported. 
 
+Simplified table below:
+
+<table border="1">
+<tr><td>Capability<td colspan="2">Windows<td colspan="2">Mac<td colspan="2">iOS<td colspan="2">Android<td colspan="2">Web</tr>
+<tr><td><td>Word, Excel, PowerPoint<td>Outlook<td>Word, Excel, PowerPoint<td>Outlook<td>Word, Excel, PowerPoint<td>Outlook<td>Word, Excel, PowerPoint<td>Outlook<td>Word, Excel, PowerPoint<td>Outlook</tr>
+<tr><td>
+<ul><li>Manually apply, change, or remove label
+<li><a href="https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do">Apply a default label</a>
+<li><a href="https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do">Require a justification for changing a label</a><sup>1</sup>
+<li><a href="https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do">Provide help link to a custom help page</a>
+<li><a href="https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels#what-sensitivity-labels-can-do">Mark the content</a>
+<li>Assign pre-defined permissions
+</ul>
+<td><img src="images\check_grn.png">(Version 1910+)<td><img src="images\check_grn.png">(Version 1910+)<td><img src="images\check_grn.png">(Version 16.21.0+)<td><img src="images\check_grn.png">(Version 16.21.0+)<td><img src="images\check_grn.png">(Version 2.21+)<td>Coming October 2019<td><img src="images\check_grn.png">(Version 16.0.11231+)<td>Coming October 2019<td>Coming Q4 of calendar year 2019<td>Coming October 2019
+
+<tr><td><ul><li><a href="https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels#let-users-assign-permissions">Let users assign permissions</a></ul><td>TBD<td><img src="images\check_grn.png">(Version 1910+)<td>TBD<td><img src="images\check_grn.png">(Version 16.21.0+)<td>TBD<td>Coming October 2019<td>TBD<td>Coming October 2019<td>TBD<td>Coming October 2019
+
+<tr><td><ul>
+<li>Send <a href="https://docs.microsoft.com/microsoft-365/compliance/label-analytics">label analytics</a> data for administrators
+<li>Require users to apply a label to their email and documents
+<li><a href="https://docs.microsoft.com/microsoft-365/compliance/apply-sensitivity-label-automatically">Apply a sensitivity label to content automatically</a>
+</ul>
+<td>TBD<td>TBD<td>TBD<td>TBD<td>TBD<td>TBD<td>TBD<td>TBD<td>TBD<td>TBD
+</table>
+
 ## When do content marks or encryption get applied after content is given a sensitivity label?
 
 | Application | Content marking | Encryption
