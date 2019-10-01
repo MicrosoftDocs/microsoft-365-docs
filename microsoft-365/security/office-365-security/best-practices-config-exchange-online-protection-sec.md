@@ -130,7 +130,7 @@ Phising filters are on by default in Office 365, but can be configured for a bet
 |TreatSoftPassAsAuthenticated |True |False | - |
 |EnableSuspiciousSafetyTip |True |True | - |
 
-If you've added an ATP subscription to your EOP, be sure to set the following configurationss.
+If you've added an ATP subscription to your EOP, be sure to set the following configurations.
 
 |Security feature name  |Recommended |Aggressive  |Comment  |
 |---------|---------|---------|---------|
@@ -140,5 +140,4 @@ If you've added an ATP subscription to your EOP, be sure to set the following co
 |Enable Mailbox intelligence based Impersonation protection | Y | Y | - |
 |Domain Impersonation action should be | JMF | Quarantine | - |
 |User Impersonation action should be | JMF | Qurantine | - |
-|Mailbox intelligence based impersonation protection action should be |  |||
-|
+|Mailbox intelligence based impersonation protection action should be |Tip  |JMF | - |
