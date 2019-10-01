@@ -31,7 +31,7 @@ Just like features in the Microsoft 365 compliance center, our help content is a
 
 [Investigate, troubleshoot and resolve common eDiscovery issues](ediscovery-troubleshooting-common-issues.md) (new)<br> Includes basic troubleshooting steps you can take to identify and resolve issues you may encounter during an eDiscovery search or elsewhere in the eDiscovery process
 
-### Supervision
+###Supervision
 
 [Configure supervision policies for your organization](configure-supervision-policies.md) (updated)<br>Removed details about using Outlook to perform reviews. Instead, use the review and tagging options that are available in the supervision user interface.
 
@@ -58,13 +58,13 @@ Just like features in the Microsoft 365 compliance center, our help content is a
 
 ### Data investigations
 
-[Delete items from their original location](datainvestigations/delete-items-from-original-locations.md) (new)<br>Now available in preview, you can select items in an evidence set and then soft-delete them from their original locations in Exchange, SharePoint, and OneDrive.
+[Delete items from their original location (Preview)](delete-items-from-original-locations.md) (new)<br>Now available in preview, you can select items in an evidence set and then soft-delete them from their original locations in Exchange, SharePoint, and OneDrive.
 
-[Manage a data spillage incident in Microsoft 365](datainvestigations/manage-data-spillage-incidents.md#step-4-delete-the-spilled-data) (updated)<br>Added details about using the new ‘Delete items from their original location’ feature to delete spilled data.
+[Manage a data spillage incident in Microsoft 365](manage-data-spillage-incidents.md#step-4-delete-the-spilled-data) (updated)<br>Added details about using the new ‘Delete items from their original location’ feature to delete spilled data.
 
 ### Permissions
 
-[Permissions in the Microsoft 365 compliance center and Microsoft 365 security center](permissions-microsoft-365-compliance-security.md) (new)<br>New Azure Active Directory role groups were released to public preview.
+[Permissions in the Microsoft 365 compliance center and Microsoft 365 security center](../security/office-365-security/permissions-microsoft-365-compliance-security.md) (new)<br>New Azure Active Directory role groups were released to public preview.
 
 ### Records management
 
