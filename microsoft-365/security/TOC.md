@@ -17,6 +17,8 @@
 #### [Device monitoring and reporting](./mtp/monitor-devices.md)
 #### [App monitoring and reporting](./mtp/monitor-apps.md)
 
+### [Manage tickets through ServiceNow](./mtp/tickets.md)
+
 ## [Office 365 Security]()
 ### [Get started]()
 #### [Office 365 security roadmap](./office-365-security/security-roadmap.md)
@@ -253,4 +255,4 @@
 
 ### [Office 365 Enterprise](https://docs.microsoft.com/office-365-security/Enterprise)
 ### [Office 365 for Business](https://docs.microsoft.com/office-365-security/admin/admin-home)
-## [Microsoft 365 Compliance](https://docs.microsoft.com/microsoft-365/compliance/)
+## [Microsoft 365 compliance](https://docs.microsoft.com/microsoft-365/compliance/)
