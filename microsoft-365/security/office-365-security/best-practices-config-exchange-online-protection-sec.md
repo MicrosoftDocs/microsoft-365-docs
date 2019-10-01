@@ -109,12 +109,16 @@ Phishing is an attempt to masquerade as reputable company or person for the purp
 
 Phising filters are on by default in Office 365, but can be configured for a better fit. Here's what we would recommend.
 
-
 |Security feature name  |Recommended |Aggressive  |Comment  |
 |---------|---------|---------|---------|
 |Zero Hour Autopurge should be enabled - Phish| True | True | - | 
 |Phish detection action should be set to | Quarantine - Request | Quarantine - Admin | - |
 |High confidence Phish detection action should be set to | Quarantine - Admin | Quarantine - Admin | - |
+
+If you've added an ATP subscription to your EOP, be sure to set the following configurations.
+
+|Security feature name  |Recommended |Aggressive  |Comment  |
+|---------|---------|---------|---------|
 |Set Advanced phishing threshold to | 2 | 4 | - |
 |Enable Anti-impersonation protection | Y | Y | - |
 |Enable Mailbox intelligence in Anti-Impersonation policies | Y | Y | - |
