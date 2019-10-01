@@ -27,7 +27,7 @@ For more information preview features, see [Preview features in Office 365 ATP](
 
 >Don't have Office 365 ATP yet? [Contact sales to start a trial.](https://go.microsoft.com/fwlink/p/?LinkId=518644) 
 
-## Differentiating between Office 365 ATP Plan 1 and Plan 2
+## Office 365 ATP Plan 1 and Plan 2
 
 The following table summarizes the differences between Office 365 ATP Plan 1 and Plan 2. Office 365 ATP Plan 2 is included in Office 365 Enterprise E5, Office 365 Education A5, and Microsoft 365 Enterprise E5. Office 365 ATP Plan 1 is included in Microsoft 365 Business. Office 365 ATP Plan 1 or Plan 2 can be added on to certain other subscriptions. To learn more, see [Office 365 Advanced Threat Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
 
