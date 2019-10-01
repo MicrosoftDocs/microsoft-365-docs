@@ -1,5 +1,5 @@
 ---
-title: "Configuration best practices for EOP security, best practices, settings, recommendations, Sender Policy Framework, Domain-based Message Reporting and Conformance, DomainKeys Identified Mail, steps, how does it work,"
+title: "Configuration best practices for EOP and ATP security, best practices, settings, recommendations, Sender Policy Framework, Domain-based Message Reporting and Conformance, DomainKeys Identified Mail, steps, how does it work,"
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -13,10 +13,10 @@ search.appverid:
 ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
-description: "What are best practices for Exchange Online Protection (EOP) security settings? What's recommended? What should be used aggressively? And what extras do you get if you also use Advanced Threat Protection (ATP)?"
+description: "What are best practices for Exchange Online Protection (EOP) and Advanced Threat Protection (ATP) security settings? What's recommended? What should be used aggressively? And what extras do you get if you also use Advanced Threat Protection (ATP)?"
 ---
 
-# Best-practices for configuring EOP security
+# Best-practices for configuring EOP and ATP security
 
 Exchange Online Protection (EOP) is the core of security for E3 Office 365 subscriptions. It's optional, and even encouraged, for E3 customers to buy a subscription to Advanced Threat Protection (ATP), ex. ATP Plan 1 or ATP Plan 2, in order to leverage the added security available in E5 Office 365 subscriptions.
 
@@ -127,7 +127,10 @@ Recommended for **ON** in both Recommended and Aggressive Levels:
 
 ## Advanced Threat Protection (ATP) security
 
-Earlier, I said that it was encouraged for E3 subscriptions to add ATP plan 1, or the more fully-realized ATP Plan 2. Anti-phishing is one reason why. Enabled by default, anti-phishing ***must*** be configured with policies to operate. Forgetting to configure anti-phishing policies exposes users to risk, be sure that's step-2 after you add an ATP subscription.
+Earlier, I said that it was encouraged for E3 subscriptions to add ATP plan 1, or the more fully-realized ATP Plan 2. Advanced Anti-phishing is one reason why. Enabled by default, anti-phishing ***must*** be configured with policies to operate. Forgetting to configure anti-phishing policies exposes users to risk, be sure that's step-2 after you add an ATP subscription.
+
+> [!IMPORTANT]
+>  If you have an E5 subscription, you currently have [ATP Plan 2](https://products.office.com/en-us/exchange/advance-threat-protection). Check this link when you want to find out [what's new in ATP](https://review.docs.microsoft.com/en-us/microsoft-365/security/office-365-security/whats-new-in-office-365-atp?branch=oatp-newstuff).
 
 ### Advanced Anti-phishing
 
