@@ -39,11 +39,13 @@ These methods handle outbound email from Office 365, and help destination system
 > [!IMPORTANT]
 > To work with security roles and permissions, be sure you have the right role or roles in Office 365 or the Security and Compliance Center. If you are a *Security Administrator* in Azure Active Directory, a *Global Administrator* in Office 365, or an *Exchange Online Organizational Manager* in Exchange Online/Exchange Online Powershell, you're ready to go.
 
-## Anti-Spam and Anti-Malware
+## Anti-Spam, Anti-Malware, and Anti-Phishing
 
 Both anti-spam and anti-malware are features of EOP. Spam filtering, on by default in Office 365, scans all mail and assigns a Spam Confidence Level (SCL) number value to each mail. Just to clarify, its purpose is to enumerate how confident the filter is that the mail is (or isn't) spam. Low values, like -1 are non-spam from safe senders and lands in a user Inbox. High scores, like 7, 8, or 9 are either highly suspect, or known spammers and heads for a user's Junk Mail, or administrator-accessible Quarantine.
 
 Malware filtering is also on by default in Office 365. Like anti-spam filtering, anti-malware filters work on both inbound and outbound mail. In both cases this protection can be configured for a better fit, by admins.
+
+Phising filters are on by default in Office 365, but should be configured for a better fit. Here's what we would recommend for Anti-Phishing in EOP.
 
 ### Anti-Spam
 
@@ -100,19 +102,7 @@ Recommended for **ON** in both Recommended and Aggressive Levels:
 |Malware ZAP |True |True |- |
 |Malware action |Block |Block |- |
 
-## Advanced Threat Protection (ATP)
-
-Earlier, I said that it was encouraged for E3 subscriptions to add ATP plan 1, or the more fully-realized ATP Plan 2. Anti-phishing is one reason why. Enabled by default, anti-phishing ***must*** be configured with policies to operate. Forgetting to configure anti-phishing policies exposes users to risk, be sure that's step-2 after you add an ATP subscription.
-
-### Anti-phishing
-
-Phishing is an attempt to masquerade as reputable company or person for the purpose of stealing personal information like credit-card numbers, or computer or device pins or passwords. Phishing can involve:
-
-- *Spoofing*, where spoofers try to send mail on behalf of a specific target in a domain (for example, ellar@2020contoso.com trying to send mail for ellar@2020litware.com (a scenario email authentication methods can help thwart). 
-
-- *Impersonation*, where mail is received whose sender is visually similar (or look-alike) to a target domain or username. The bad actor here, mimics a specific username, or pretends to be sending mail from a target domain. Here's a pretense domain: ellar@2020|itware.com, and here's a pretense user: ellαr@2020litware.com (look closely at the domain and user names in these examples to catch the domain- and user impersonation).
-
-Phising filters are on by default in Office 365, but can be configured for a better fit. Here's what we would recommend in EOP.
+### Anti-Phishing
 
 |Security feature name  |Recommended |Aggressive  |Comment  |
 |---------|---------|---------|---------|
@@ -135,6 +125,18 @@ Phising filters are on by default in Office 365, but can be configured for a bet
 |TreatSoftPassAsAuthenticated |True |False | - |
 |EnableSuspiciousSafetyTip |True |True | - |
 
+## Advanced Threat Protection (ATP) security
+
+Earlier, I said that it was encouraged for E3 subscriptions to add ATP plan 1, or the more fully-realized ATP Plan 2. Anti-phishing is one reason why. Enabled by default, anti-phishing ***must*** be configured with policies to operate. Forgetting to configure anti-phishing policies exposes users to risk, be sure that's step-2 after you add an ATP subscription.
+
+### Advanced Anti-phishing
+
+Phishing is an attempt to masquerade as reputable company or person for the purpose of stealing personal information like credit-card numbers, or computer or device pins or passwords. Phishing can involve:
+
+- **Spoofing**, where spoofers try to send mail on behalf of a specific target in a domain (for example, ellar@2020contoso.com trying to send mail for ellar@2020litware.com (a scenario email authentication methods can help thwart). 
+
+- **Impersonation**, where mail is received whose sender is visually similar (or look-alike) to a target domain or username. The bad actor here, mimics a specific username, or pretends to be sending mail from a target domain. Here's a pretense domain: ellar@2020|itware.com, and here's a pretense user: ellαr@2020litware.com (look closely at the domain and user names in these examples to catch the domain- and user impersonation).
+
 If you've added an ATP subscription to your EOP, be sure to set the following configurations.
 
 |Security feature name  |Recommended |Aggressive  |Comment  |
@@ -149,8 +151,9 @@ If you've added an ATP subscription to your EOP, be sure to set the following co
 
 ### Safe Links and Safe Attachments
 
- ATP includes the Safe Attachment and Safe Links policies to prevent email with potentially malicious attachments from being delivered, and to  keep users from clicking and traveling to potentially unsafe URLs. We'll start with Safe Links and continue to Safe Attachments.
+ ATP includes the Safe Attachment and Safe Links policies to prevent email with potentially malicious attachments from being delivered, and to  keep users from clicking and traveling to potentially unsafe URLs.
 
+#### Safe links
 
 |Security feature name  |Recommended |Aggressive  |Comment  |
 |---------|---------|---------|---------|
@@ -163,10 +166,12 @@ If you've added an ATP subscription to your EOP, be sure to set the following co
 |URLs to block | | | |
 |URLs not to wrap | | | |-->
 
+#### Safe Attachments
+
 |Security feature name  |Recommended |Aggressive  |Comment  |
 |---------|---------|---------|---------|
-|ATP protection should be enabled for OneDrive, SharePoint, and Teams |Yes |Yes |- |
 |ATP Safe Attachment policy action should be |Quarantine |Quarantine |- |
+|ATP protection should be enabled for OneDrive, SharePoint, and Teams |Yes |Yes |- |
 <!--
 |Allowed file hashes | | | |
 |Blocked file hashes | | | |
