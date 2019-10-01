@@ -22,7 +22,7 @@ description: "Feature reference for communication supervision in Microsoft 365. 
 
 ## Supervision policy
 
-You create supervision policies in the Compliance center. These policies define which communications and users are subject to review in your organization, define custom conditions that the communications must meet, and specifies who should perform reviews. Users included in the Supervisory Review role group can set up policies and anyone who has this role assigned can access the Supervision page in the Compliance center.
+You create communication supervision policies for Microsoft 365 organizations in the Microsoft 365 compliance center. If you're an Office 365 organization, you'll configure communication policies in the Office 365 Security and Compliance Center. These policies define which communications and users are subject to review in your organization, define custom conditions that the communications must meet, and specifies who should perform reviews. Users included in the Supervisory Review role group can set up policies and anyone who has this role assigned can access the Supervision page in the Compliance center.
 
 ## Supervised users
 
@@ -33,7 +33,7 @@ Before you start using supervision, you must determine who needs their communica
 
 ## Reviewers
 
-When you create a supervision policy, you must determine who will perform the reviews of the messages of the supervised users. In the policy, user email addresses identify individuals or groups of people to review supervised communications. All reviewers must have mailboxes hosted on Exchange Online.
+When you create a communication supervision policy, you must determine who will perform the reviews of the messages of the supervised users. In the policy, user email addresses identify individuals or groups of people to review supervised communications. All reviewers must have mailboxes hosted on Exchange Online.
 
 ## Groups for supervised users and reviewers
 
@@ -45,7 +45,7 @@ When you select an Office 365 group for supervised users, the policy monitors th
 
 With supervision policies, you can choose to monitor messages in one or more of the following communication platforms:
 
-- **Exchange email:** Mailboxes hosted on Exchange Online as part of your Office 365 subscription are all eligible for message supervision. Emails and attachments matching supervision policy conditions are instantly available for monitoring and in supervision reports. Supported attachment types for supervision are the same as the [file types supported for Exchange mail flow rule content inspections](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection).
+- **Exchange email:** Mailboxes hosted on Exchange Online as part of your Microsoft 365 or Office 365 subscription are all eligible for message supervision. Emails and attachments matching supervision policy conditions are instantly available for monitoring and in supervision reports. Supported attachment types for supervision are the same as the [file types supported for Exchange mail flow rule content inspections](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection).
 
 - **Microsoft Teams:** Chat communications and associated attachments in both public and private Microsoft Teams channels and individual chats can be supervised. Teams chats matching supervision policy conditions are processed once every 24 hours and then are available for monitoring and in supervision reports. Use the following group management configurations to supervise individual user chats and channel communications in Teams:
 
@@ -56,9 +56,16 @@ With supervision policies, you can choose to monitor messages in one or more of 
 
     - **For Skype for Business Online chat supervision:** Assign individual users or assign a [distribution group](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) to the supervision policy. This is for 1-to-1 or 1-to-many user/chat relationships.
 
-- **Third-party sources:** You can supervise communications from third-party sources (like from Facebook or DropBox) for data imported into Office 365 mailboxes in your organization. [Learn how to import 3rd-party data into Office 365](archiving-third-party-data.md).
+- **Third-party sources:** You can supervise communications from third-party sources for data imported into mailboxes in your Microsoft 365 organization. Connectors support the following third-party resources:
 
-Communications captured across these platforms are retained for seven years for each policy by default, even if users leave your organization and their mailbox is deleted.
+- Instant Bloomberg
+- Facebook
+- LinkedIn
+- SuccessFactors
+- Twitter
+- Custom data connector
+
+Communications captured across these platforms are retained for seven years for each policy by default, even if users leave your organization and their mailbox is deleted. To learn more about third-party Connectors, see [Learn how to import 3rd-party data into Office 365](archiving-third-party-data.md).
 
 ## Policy settings
 
@@ -115,6 +122,8 @@ The following table explains more about each condition.
   
 |**Condition**|**How to use this condition**|
 |:-----|:-----|
+| **Content matches any of these classifiers** | Apply to the policy when any classifiers are included or excluded in a message. Some classifiers are pre-defined in your tenant and custom classifiers must be configured separately before they are available for this condition. Only one classifier can be defined as a condition in a policy. For more information about configuring classifiers, see [CLASSIFIER TOPIC](). |
+| **Content contains any of these sensitive info types** | Apply to the policy when any sensitive information types are included or excluded in a message. Some classifiers are pre-defined in your tenant and custom classifiers can be configured separately or as part of the condition assignment process. Each sensitive information type you choose is applied separately and only one of these sensitive information types must apply for the policy to apply to the message. For more information about custom sensitive information types, see [Custom sensitive information types](custom-sensitive-info-types.md). |
 | **Message is received from any of these domains**  <br><br> **Message is not received from any of these domains** | Apply the policy to include or exclude specific domains or email addresses in received messages. Enter each domain or email address and separate multiple domains or email addresses with a comma. Each domain or email address entered is applied separately, only one domain or email address must apply for the policy to apply to the message. <br><br> If you want to monitor all email from a specific domain but want to exclude messages that do not need review (newsletters, announcements, etc.), you must configure the condition a **Message is not received from any of these domains** condition that excludes the email address (example "newsletter@contoso.com"). |
 | **Message is sent to any of these domains**  <br><br> **Message is not sent to any of these domains** | Apply the policy to include or exclude specific domains or email addresses in sent messages. Enter each domain or email address and separate multiple domains or email addresses with a comma. Each domain or email address is applied separately, only one domain or email address must apply for the policy to apply to the message. <br><br> If you want to monitor all email sent to a specific domain but want to exclude sent messages that do not need review, you must configure two conditions: <br> - A **Message is sent to any of these domains** condition that defines the domain ("contoso.com"), AND <br> - A **Message is not sent to any of these domains** condition that excludes the email address ("subscriptions@contoso.com"). |
 | **Message is classified with any of these labels**  <br><br> **Message is not classified with any of these labels** | To apply the policy when certain retention labels are included or excluded in a message. Retention labels must be configured separately and configured labels are chosen as part of this condition. Each label you choose is applied separately (only one of these labels must apply for the policy to apply to the message). For more information about configuring retention labels, see [Overview of retention labels](labels.md).|
@@ -142,7 +151,19 @@ If you enter multiple conditions, Office 365 uses all the conditions together to
 
 ### Review percentage
 
-If you want to reduce the amount of content to review, you can specify a percentage of all the communications governed by a supervision policy. A real-time, random sample of content is selected from the total percentage of content that matches chosen policy conditions. If you want reviewers to review all items, you can enter **100%** in a supervision policy.
+If you want to reduce the amount of content to review, you can specify a percentage of all the communications governed by a supervision policy. A real-time, random sample of content is selected from the total percentage of content that matches chosen policy conditions. If you want reviewers to review all items, you can configure **100%** in a supervision policy.
+
+## Notices
+
+You can create notice templates if you want to send users an email reminder notice for policy violations as part of the issue resolution process. Notices templates are custom email templates where you can define the following message fields:
+
+- Template name
+- Sender address
+- BCC and CC addresses
+- Message subject
+- Message body
+
+When selecting a notice template to apply to a policy violation, you can choose to accept the field values you defined for the template or overwrite the fields as needed. The Message body field accepts either text or HTML data, all other notice template fields accept text-only data.
 
 ## Monitor & manage
 
@@ -248,4 +269,4 @@ In addition to information provided in the supervision reports and logs, you can
 
 ## Ready to get started?
 
-To configure communication supervision for your organization, see [Configure supervision policies](configure-supervision-policies.md).
+To configure communication supervision for your Microsoft 365 organization, see [Configure communication supervision for your Microsoft 365 organization (Preview)](configure-supervision-policies.md). To configure communication supervision in your Office 365 organization, see [Configure communication supervision in Office 365](supervision-configure-office-365.md).

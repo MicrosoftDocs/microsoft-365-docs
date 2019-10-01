@@ -20,6 +20,9 @@ description: "Set up communication supervision policies to configure employee co
 
 # Configure communication supervision for your Microsoft 365 organization (Preview)
 
+> [!IMPORTANT]
+> This guidance applies to configuring communication in a Microsoft 365 subscription. If you want to configure communication supervision for an Office 365 subscription, see [Configure communication supervision for Office 365](supervision-configure-office-365.md).
+
 Use communication supervision policies to capture employee communications for examination by internal or external reviewers. For more information about how supervision policies can help you monitor communications in your organization, see [Communication supervision policies in Microsoft 365](supervision-policies.md).
 
 > [!NOTE]
@@ -105,9 +108,9 @@ To do this, you can either add yourself as a member of the Supervisory Review ro
   
 ### Add members to the Supervisory Review role group
 
-1. Sign into [https://protection.office.com](https://protection.office.com) using credentials for an admin account in your Office 365 organization.
+1. Sign into [https://protection.office.com](https://protection.office.com) using credentials for an admin account in your Microsoft 365 organization.
 
-2. In the Compliance Center, go to **Permissions**.
+2. In the Microsoft 365 compliance center, go to **Permissions**.
 
 3. Select the **Supervisory Review** role group and then click the Edit icon.
 
@@ -117,7 +120,7 @@ To do this, you can either add yourself as a member of the Supervisory Review ro
 
 1. Sign into [https://protection.office.com](https://protection.office.com) using credentials for an admin account in your Office 365 organization.
 
-2. In the Compliance Center, go to **Permissions** and then click Add (**+**).
+2. In the Microsoft 365 compliance center, go to **Permissions** and then click Add (**+**).
 
 3. In the **Roles** section, click Add (**+**) and scroll down to **Supervisory Review Administrator**. Add this role to the role group.
 
@@ -131,7 +134,7 @@ For more information about role groups and permissions, see [Permissions in the 
 
 ## Step 3: Create custom sensitive information types and custom keyword dictionaries (optional)
 
-In order to pick from existing custom sensitive information types or custom keyword dictionaries in the supervision policy wizard, you first need to create these items if needed.
+In order to pick from existing custom sensitive information types or custom keyword dictionaries in the communication supervision policy wizard, you can create these items if needed. If desired, you can create new sensitive information types from within the communication supervision policy wizard.
 
 ### Create custom keyword dictionary/lexicon (optional)
 
@@ -152,11 +155,22 @@ Use a text editor (like Notepad), to create a file that includes the keyword ter
 
 ## Step 4: Set up a supervision policy (required)
   
-1. Sign into [https://protection.office.com](https://protection.office.com) using credentials for an admin account in your Office 365 organization.
+1. Sign into [https://protection.office.com](https://protection.office.com) using credentials for an admin account in your Microsoft 365 organization.
 
-2. In the Compliance Center, select **Supervision**.
+2. In the Microsoft 365 compliance center, select **Supervision**.
   
-3. Select **Create** and follow the wizard to set up the policy configuration. Using the wizard, you will:
+3. Select the **Policies** tab.
+
+4. Select **Create policy** to create and configure a new policy from a template or to create and configure a custom policy.
+
+    If you choose a policy template to create a policy, you will:
+
+    - Confirm or update the policy name
+    - Choose the users or groups to supervise, including choosing users or groups you'd like to exclude.
+    - Choose the reviewers for the policy. Reviewers can be individual users or [mail-enabled security groups](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups#create-a-mail-enabled-security-group). All reviewers must have mailboxes hosted on Exchange Online.
+    - Choose a limited condition field, usually a keyword dictionary to apply to the policy.
+
+    If you choose to use the wizard to create a custom policy, you will:
 
     - Give the policy a name and description.
     - Choose the users or groups to supervise, including choosing users or groups you'd like to exclude.
@@ -177,7 +191,7 @@ After you create a supervision policy, it's a good idea to test to make sure tha
     > [!NOTE]
     > Emails subject to defined policies are processed in near real-time and can be tested immediately after the policy is configured. Chats in Microsoft Teams can take up to 24 hours to fully process in a policy. 
 
-3. Log into your Office 365 tenant as a reviewer designated in the supervision policy. Navigate to **Supervision** > *Your Custom Policy* > **Open** to view the report for the policy.
+3. Log into Microsoft 365 as a reviewer designated in the communication supervision policy. Navigate to **Supervision** > **Policies** > *Your Custom Policy* > **Open** to view the report for the policy.
 
 ## PowerShell reference
 
