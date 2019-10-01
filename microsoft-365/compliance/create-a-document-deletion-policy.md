@@ -1,7 +1,7 @@
 ---
 title: "Create a document deletion policy"
-ms.author: stephow
-author: stephow-MSFT
+ms.author: laurawi
+author: laurawi
 manager: laurawi
 ms.date: 
 audience: Admin
