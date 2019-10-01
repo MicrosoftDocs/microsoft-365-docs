@@ -107,15 +107,30 @@ Phishing is an attempt to masquerade as reputable company or person for the purp
 
 - *Impersonation*, where mail is received whose sender is visually similar (or look-alike) to a target domain or username. The bad actor here, mimics a specific username, or pretends to be sending mail from a target domain. Here's a pretense domain: ellar@2020|itware.com, and here's a pretense user: ellαr@2020litware.com (look closely at the domain and user names in these examples to catch the domain- and user impersonation).
 
-Phising filters are on by default in Office 365, but can be configured for a better fit. Here's what we would recommend.
+Phising filters are on by default in Office 365, but can be configured for a better fit. Here's what we would recommend in EOP.
 
 |Security feature name  |Recommended |Aggressive  |Comment  |
 |---------|---------|---------|---------|
 |Zero Hour Autopurge should be enabled - Phish| True | True | - | 
 |Phish detection action should be set to | Quarantine - Request | Quarantine - Admin | - |
 |High confidence Phish detection action should be set to | Quarantine - Admin | Quarantine - Admin | - |
+|EnableMailboxIntelligence | True | True | - |
+|EnableSimilarUsersSafetyTips | True | True | - |
+|EnableSimilarDomainsSafetyTips | True | True | - |
+|EnableUnusualCharactersSafetyTips | True | True | - |
+|TargetedUserProtectionAction |NoAction |Block | - |
+|MailboxIntelligenceProtectionAction |NoAction |Block | - |
+|TargetedDomainProtectionAction |NoAction |Block | - |
+|AuthenticationFailAction |MoveToJmf |Quarantine | - |
+|AntiSpoofEnforcementType |High |High | - |
+|EnableAuthenticationSafetyTip |False |True | - |
+|EnableAntiSpoofEnforcement |True |True | - |
+|EnableUnauthenticatedSender |True |True | - |
+|EnableAuthenticationSoftPassSafetyTip |False |True | - |
+|TreatSoftPassAsAuthenticated |True |False | - |
+|EnableSuspiciousSafetyTip |True |True | - |
 
-If you've added an ATP subscription to your EOP, be sure to set the following configurations.
+If you've added an ATP subscription to your EOP, be sure to set the following configurationss.
 
 |Security feature name  |Recommended |Aggressive  |Comment  |
 |---------|---------|---------|---------|
@@ -126,3 +141,4 @@ If you've added an ATP subscription to your EOP, be sure to set the following co
 |Domain Impersonation action should be | JMF | Quarantine | - |
 |User Impersonation action should be | JMF | Qurantine | - |
 |Mailbox intelligence based impersonation protection action should be |  |||
+|
