@@ -17,9 +17,9 @@ This topic lists new and updated topics in the [Microsoft Managed Desktop docume
 ## September 2019
 New or changed topic | Description
 --- | ---
-[Microsoft Managed Desktop devices](service-description/device-list.md)
-[Deploy and track configurable settings - Microsoft Managed Desktop](working-with-managed-desktop/config-setting-deploy.md)
-[Admin support for Microsoft Managed Desktop](working-with-managed-desktop/admin-support.md)
+[Microsoft Managed Desktop devices](service-description/device-list.md) | Updated topic
+[Deploy and track configurable settings - Microsoft Managed Desktop](working-with-managed-desktop/config-setting-deploy.md) | Updated topic
+[Admin support for Microsoft Managed Desktop](working-with-managed-desktop/admin-support.md) | Updated topic
 [Prerequisites for Microsoft Managed Desktop](get-ready/prerequisites.md) | Updated topic
 [Set up Microsoft Managed Desktop devices](get-started/set-up-devices.md) | New topic
 [Register new devices yourself](get-started/register-devices-self.md) | Updated topic
