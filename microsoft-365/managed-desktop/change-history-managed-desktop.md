@@ -12,11 +12,14 @@ ms.localizationpriority: normal
 
 # Change history for Microsoft Managed Desktop documentation
 
-This topic lists new and updated topics in the [Microsoft Managed Desktop documentation](index.yml).
+This topic lists new and updated topics in the [Microsoft Managed Desktop documentation](index.yml). "Updated" topics are those which have had material additions or corrections--minor fixes such as correction of typos or style issues are not listed. You can always view the history of specific commits (including details of any changes) by visiting the [repo on GitHub](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop).
 
 ## September 2019
 New or changed topic | Description
 --- | ---
+[Microsoft Managed Desktop devices](service-description/device-list.md)
+[Deploy and track configurable settings - Microsoft Managed Desktop](working-with-managed-desktop/config-setting-deploy.md)
+[Admin support for Microsoft Managed Desktop](working-with-managed-desktop/admin-support.md)
 [Prerequisites for Microsoft Managed Desktop](get-ready/prerequisites.md) | Updated topic
 [Set up Microsoft Managed Desktop devices](get-started/set-up-devices.md) | New topic
 [Register new devices yourself](get-started/register-devices-self.md) | Updated topic
