@@ -21,31 +21,39 @@ ms.topic: conceptual
 
 - [Office 365 Advanced Threat Protection (Office 365 ATP)](office-365-atp.md)
 
-The following features are generally available (GA) in the latest release of Office 365 ATP.
+The following features are now generally available (GA) in the latest release of Office 365 ATP. 
 
 For more information preview features, see [Preview features in Office 365 ATP](office-365-atp-preview.md).
 
 >Don't have Office 365 ATP yet? [Contact sales to start a trial.](https://go.microsoft.com/fwlink/p/?LinkId=518644) 
 
+## Differentiating between Office 365 ATP Plan 1 and Plan 2
+
+The following table summarizes the differences between Office 365 ATP Plan 1 and Plan 2. Office 365 ATP Plan 2 is included in Office 365 Enterprise E5, Office 365 Education A5, and Microsoft 365 Enterprise E5. Office 365 ATP Plan 1 is included in Microsoft 365 Business. Office 365 ATP Plan 1 or Plan 2 can be added on to certain other subscriptions. To learn more, see [Office 365 Advanced Threat Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
+
+|Office 365 ATP Plan 1  |Office 365 ATP Plan 2  |
+|---------|---------|
+|**Configuration, protection, and detection capabilities**, such as:<br/>- [Safe Attachments](atp-safe-attachments.md)<br/>- [Safe Links](atp-safe-links.md)<br/>- [ATP for SharePoint, OneDrive, and Microsoft Teams](atp-for-spo-odb-and-teams.md)<br/>- [Advanced antiphishing protection](atp-anti-phishing.md)<br/>- [Real-time detections](threat-explorer.md)     |**All of the Plan 1 capabilities plus automation, investigation, remediation, and education capabilities**, such as:<br/>- [Threat Trackers](threat-trackers.md)<br/>- [Threat Explorer](threat-explorer.md)<br/>- [Automated incident response](automated-investigation-response-office.md)<br/>- [Attack Simulator](attack-simulator.md)         |
+
 ## September 2019
 
-- [Leverage automated incident response (AIR) in Office 365](automated-investigation-response-office.md)
+- [Leverage automated incident response (AIR) in Office 365](automated-investigation-response-office.md) (Office 365 ATP Plan 2)
 
-- [Integrate with Office 365 ATP AIR events using the Office 365 Management Activity API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema) 
+- [Integrate with Office 365 ATP AIR events using the Office 365 Management Activity API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema) (Office 365 ATP Plan 2)
 
-- [View the email headers and download the email body of malicious email that was detected](investigate-malicious-email-that-was-delivered.md#view-the-email-headers-and-download-the-email-body) 
+- [View the email headers and download the email body](investigate-malicious-email-that-was-delivered.md#view-the-email-headers-and-download-the-email-body) (Office 365 ATP Plan 1 or Plan 2)
 
 ## August 2019
 
-- [View the timeline of email that was detected](investigate-malicious-email-that-was-delivered.md#view-the-timeline-of-your-email)
+- [View the timeline of email](investigate-malicious-email-that-was-delivered.md#view-the-timeline-of-your-email) (Office 365 ATP Plan 1 or Plan 2)
 
 ## July 2019
 
-- [Check the delivery action and location of detected email messages](investigate-malicious-email-that-was-delivered.md#check-the-delivery-action-and-location)
+- [Check the delivery action and location of email messages](investigate-malicious-email-that-was-delivered.md#check-the-delivery-action-and-location) (Office 365 ATP Plan 1 or 2)
 
  ## June 2019
 
-- [View data about phishing URLs and click verdict](threat-explorer.md#view-data-about-phishing-urls-and-click-verdict)
+- [View data about phishing URLs and click verdict](threat-explorer.md#view-data-about-phishing-urls-and-click-verdict) (Office 365 ATP Plan 1 or Plan 2)
 
 
 ## See also

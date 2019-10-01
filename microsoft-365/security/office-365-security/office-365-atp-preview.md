@@ -18,29 +18,29 @@ ms.topic: conceptual
 # Office 365 ATP preview features
 
 **Applies to:**
-- [Office 365 Advanced Threat Protection (Microsoft Defender ATP)](office-365-atp.md)
+- [Office 365 Advanced Threat Protection (Office 365 ATP)](office-365-atp.md)
 
-Office 365 ATP is constantly being updated to include new feature enhancements and capabilities. This article lists features that are moving into preview over the next several weeks and months. Learn about new features in Office 365 ATP preview and be among the first to try upcoming features.
+Office 365 ATP is constantly being updated to include new feature enhancements and capabilities. This article lists features that are moving into preview over the next several weeks and months. 
 
-For more information on new capabilities that are generally available, see [What's new in Office 365 ATP](whats-new-in-office-365-atp.md).
+For more information on new capabilities that are generally available, see [What's new in Office 365 ATP](whats-new-in-office-365-atp.md). Also, see the [differences between Office 365 ATP Plan 1 and Plan 2](whats-new-in-office-365-atp.md#differentiating-between-office-365-atp-plan-1-and-plan-2).
 
 >Don't have Office 365 ATP yet? [Contact sales to start a trial.](https://go.microsoft.com/fwlink/p/?LinkId=518644) 
 
 ## October 2019
 
-- New security playbook to detect and respond to compromised user threats ([Office 365 Automated Incident Response](automated-investigation-response-office.md))
+- New security playbook to detect and respond to compromised user threats ([Office 365 Automated Incident Response](automated-investigation-response-office.md)) (Office 365 ATP Plan 2)
 
 ## November 2019
 
-- Improvements in compromised user detections and automated investigations in [Office 365 ATP](office-365-atp.md)
+- Improvements in compromised user detections and automated investigations in [Office 365 ATP](office-365-atp.md) (Office 365 ATP Plan 2)
 
-- Searching/filtering improvements for [email hunting](investigate-malicious-email-that-was-delivered.md)
+- Searching/filtering improvements for [email hunting](investigate-malicious-email-that-was-delivered.md) (Office 365 ATP Plan 1 or 2)
 
-- Visualize and action phishing campaigns in [Threat Explorer](threat-explorer.md)
+- Visualize and take action on phishing campaigns in [Threat Explorer](threat-explorer.md)
 
 ## December 2019
 
-- Improving your security operations efficiency with Incidents in Office ATP
+- Improve your security operations efficiency with Incidents in Office ATP
 
 - Enhanced automated-investigations email clustering and related analyzers and actions
 
