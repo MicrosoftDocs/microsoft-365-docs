@@ -64,20 +64,40 @@ Testing table with Office vector icons
 <tr><td>Capability<td colspan="2">Windows<td colspan="2">Mac<td colspan="2">iOS<td colspan="2">Android<td colspan="2">Web</tr>
 <tr><td>
 
-<td><img style='max-height:100px; max-width:100px' src="https://docs.microsoft.com/media/logos/logo-word.svg" alt="Word" title="Word" /><img src="https://docs.microsoft.com/media/logos/logo-excel.svg" alt="Excel" title="Excel" /><img src="https://docs.microsoft.com/media/logos/logo-powerpoint.svg" alt="PowerPoint" title="PowerPoint" />
-<td><img src="https://docs.microsoft.com/media/logos/logo-outlook.svg" alt="Outlook" title="Outlook" />
+<td>
+<img src="https://docs.microsoft.com/media/logos/logo-word.svg" alt="Word" title="Word" height="50px" width="50px" />
+<img src="https://docs.microsoft.com/media/logos/logo-excel.svg" alt="Excel" title="Excel" height="50px" width="50px" />
+<img src="https://docs.microsoft.com/media/logos/logo-powerpoint.svg" alt="PowerPoint" title="PowerPoint" height="50px" width="50px" />
+<td>
+<img src="https://docs.microsoft.com/media/logos/logo-outlook.svg" alt="Outlook" title="Outlook" height="50px" width="50px" />
 
-<td><img style='max-height:100px; max-width:100px' src="https://docs.microsoft.com/media/logos/logo-word.svg" alt="Word" title="Word" /><img src="https://docs.microsoft.com/media/logos/logo-excel.svg" alt="Excel" title="Excel" /><img src="https://docs.microsoft.com/media/logos/logo-powerpoint.svg" alt="PowerPoint" title="PowerPoint" />
-<td><img src="https://docs.microsoft.com/media/logos/logo-outlook.svg" alt="Outlook" title="Outlook" />
+<td>
+<img src="https://docs.microsoft.com/media/logos/logo-word.svg" alt="Word" title="Word" height="50px" width="50px" />
+<img src="https://docs.microsoft.com/media/logos/logo-excel.svg" alt="Excel" title="Excel" height="50px" width="50px" />
+<img src="https://docs.microsoft.com/media/logos/logo-powerpoint.svg" alt="PowerPoint" title="PowerPoint" height="50px" width="50px" />
+<td>
+<img src="https://docs.microsoft.com/media/logos/logo-outlook.svg" alt="Outlook" title="Outlook" height="50px" width="50px" />
 
-<td><img style='max-height:100px; max-width:100px' src="https://docs.microsoft.com/media/logos/logo-word.svg" alt="Word" title="Word" /><img src="https://docs.microsoft.com/media/logos/logo-excel.svg" alt="Excel" title="Excel" /><img src="https://docs.microsoft.com/media/logos/logo-powerpoint.svg" alt="PowerPoint" title="PowerPoint" />
-<td><img src="https://docs.microsoft.com/media/logos/logo-outlook.svg" alt="Outlook" title="Outlook" />
+<td>
+<img src="https://docs.microsoft.com/media/logos/logo-word.svg" alt="Word" title="Word" height="50px" width="50px" />
+<img src="https://docs.microsoft.com/media/logos/logo-excel.svg" alt="Excel" title="Excel" height="50px" width="50px" />
+<img src="https://docs.microsoft.com/media/logos/logo-powerpoint.svg" alt="PowerPoint" title="PowerPoint" height="50px" width="50px" />
+<td>
+<img src="https://docs.microsoft.com/media/logos/logo-outlook.svg" alt="Outlook" title="Outlook" height="50px" width="50px" />
 
-<td><img style='max-height:100px; max-width:100px' src="https://docs.microsoft.com/media/logos/logo-word.svg" alt="Word" title="Word" /><img src="https://docs.microsoft.com/media/logos/logo-excel.svg" alt="Excel" title="Excel" height="100px" width="100px" /><img src="https://docs.microsoft.com/media/logos/logo-powerpoint.svg" alt="PowerPoint" title="PowerPoint" height="100px" width="100px" />
-<td><img src="https://docs.microsoft.com/media/logos/logo-outlook.svg" alt="Outlook" title="Outlook" />
+<td>
+<img src="https://docs.microsoft.com/media/logos/logo-word.svg" alt="Word" title="Word" height="50px" width="50px" />
+<img src="https://docs.microsoft.com/media/logos/logo-excel.svg" alt="Excel" title="Excel" height="50px" width="50px" />
+<img src="https://docs.microsoft.com/media/logos/logo-powerpoint.svg" alt="PowerPoint" title="PowerPoint" height="50px" width="50px" />
+<td>
+<img src="https://docs.microsoft.com/media/logos/logo-outlook.svg" alt="Outlook" title="Outlook" height="50px" width="50px" />
 
-<td><img style='max-height:100px; max-width:100px' src="https://docs.microsoft.com/media/logos/logo-word.svg" alt="Word" title="Word" /><img src="https://docs.microsoft.com/media/logos/logo-excel.svg" alt="Excel" title="Excel" /><img src="https://docs.microsoft.com/media/logos/logo-powerpoint.svg" alt="PowerPoint" title="PowerPoint" />
-<td><img src="https://docs.microsoft.com/media/logos/logo-outlook.svg" alt="Outlook" title="Outlook" />
+<td>
+<img src="https://docs.microsoft.com/media/logos/logo-word.svg" alt="Word" title="Word" height="50px" width="50px" />
+<img src="https://docs.microsoft.com/media/logos/logo-excel.svg" alt="Excel" title="Excel" height="50px" width="50px" />
+<img src="https://docs.microsoft.com/media/logos/logo-powerpoint.svg" alt="PowerPoint" title="PowerPoint" height="50px" width="50px" />
+<td>
+<img src="https://docs.microsoft.com/media/logos/logo-outlook.svg" alt="Outlook" title="Outlook" height="50px" width="50px" />
 
 </tr>
 
