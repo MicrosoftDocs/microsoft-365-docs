@@ -18,7 +18,7 @@ search.appverid:
 description: "Set up communication supervision policies to configure employee communications for review."
 ---
 
-# Configure communication supervision for your organization (Preview)
+# Configure communication supervision for your Microsoft 365 organization (Preview)
 
 Use communication supervision policies to capture employee communications for examination by internal or external reviewers. For more information about how supervision policies can help you monitor communications in your organization, see [Communication supervision policies in Microsoft 365](supervision-policies.md).
 
