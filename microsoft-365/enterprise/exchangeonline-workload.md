@@ -2,7 +2,7 @@
 title: "Deploy Exchange Online for Microsoft 365 Enterprise"
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/29/2018
+ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -35,9 +35,9 @@ In this phase, you gather the people for your Exchange Online deployment and det
 
 ### Step 1: Gather your Exchange Online deployment members
 
-For a successful deployment of Exchange Online on top of [Phase 2-Identity](identity-infrastructure.md) of the Microsoft 365 Enterprise foundation infrastructure, you need to get the right people for input and feedback. Key people include business decision makers, IT staff such as architects and implementers, and advocates for your end users. 
+For a successful deployment of Exchange Online on top of [Phase 2-Identity](identity-infrastructure.md) of the Microsoft 365 Enterprise foundation infrastructure, you need to gather the right people for input and feedback. Key people include business decision makers, IT staff such as architects and implementers, and advocates for your end users. 
 
-These three groups ensure that your Exchange Online deployment includes considerations that address business needs, technical aspects of mailbox migration and security, and that the result will be something that typical users will use.
+These three groups ensure that your Exchange Online deployment includes considerations that address business needs, technical aspects of mailbox migration and security, and that the result is something that typical users will use.
 
 #### Result
 
@@ -62,27 +62,27 @@ To protect access to Exchange Online mailboxes, ensure that you have configured 
 
 ### Step 1: Complete your technical planning
 
-Before you begin technical planning, determine whether you want to use FastTrack. If your organization has over 50 seats and is participating in an [eligible plan](https://technet.microsoft.com/library/dn783224.aspx), you can use [FastTrack for Microsoft 365](https://fasttrack.microsoft.com/microsoft365), available at no additional cost to guide you through planning, deployment, and service adoption. Or, you can complete this work yourself using FastTrack Onboarding Wizards, which are available from [FastTrack](https://fasttrack.microsoft.com/) once you sign in with your Office 365 account.
+Before you begin technical planning, determine whether you want to use FastTrack. If your organization has over 50 seats and is participating in an [eligible plan](https://technet.microsoft.com/library/dn783224.aspx), you can use [FastTrack for Microsoft 365](https://fasttrack.microsoft.com/microsoft365), *available at no additional cost* to guide you through planning, deployment, and service adoption. Or, you can complete this work yourself using FastTrack Onboarding Wizards, which are available from [FastTrack](https://fasttrack.microsoft.com/) once you sign in with your Microsoft 365 account.
 
-If you are doing your own planning, or in conjunction with FastTrack, you need to determine if your network and organization are ready for Exchange Online. It is especially important that you meet the exit criteria for networking in your foundation infrastructure, with special attention to Internet bandwidth, throughput, and traffic delays to maximize performance for the additional traffic for Exchange Online-based email and attachments.
+If you are doing your own planning, or in conjunction with FastTrack, you need to determine if your network and organization are ready for Exchange Online. It is especially important that you meet the exit criteria for [networking](networking-infrastructure.md) in your foundation infrastructure for users connected to your organization network. Pay special attention to Internet bandwidth, throughput, and traffic delays to maximize performance for the additional traffic for Exchange Online-based email and attachments.
 
 Use these resources to prepare for the technical aspects of an Exchange Online rollout: 
 
 - [Ways to migrate multiple email accounts to Office 365](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration)
-- [Collaboration in Exchange Online](https://technet.microsoft.com/library/jj983794(v=exchg.150).aspx)
-- [Recipients in Exchange Online](https://technet.microsoft.com/library/jj200702(v=exchg.150).aspx)
+- [Collaboration in Exchange Online](https://docs.microsoft.com/exchange/collaboration-exo/collaboration-exo)
+- [Recipients in Exchange Online](https://docs.microsoft.com/exchange/recipients-in-exchange-online/recipients-in-exchange-online)
 
 For a better understanding of security in Exchange Online, review the following resources:
 
-- [Permissions in Exchange Online](https://technet.microsoft.com/library/jj200692(v=exchg.150).aspx) 
-- [Security and compliance for Exchange Online](https://technet.microsoft.com/library/jj200706(v=exchg.150).aspx) 
-- [Anti-spam and anti-malware protection](https://technet.microsoft.com/library/jj200731(v=exchg.150).aspx)
+- [Permissions in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) 
+- [Security and compliance for Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/security-and-compliance) 
+- [Anti-spam and anti-malware protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-and-anti-malware-protection)
 
 Next, use these resources to understand Exchange Online mailbox management:
 
-- [Create user mailboxes in Exchange Online](https://technet.microsoft.com/library/jj907304(v=exchg.150).aspx)
-- [Manage user mailboxes](https://technet.microsoft.com/library/bb123809(v=exchg.150).aspx) 
-- [Create and manage distribution groups](https://technet.microsoft.com/library/bb124513%28v=exchg.150%29.aspx)
+- [Create user mailboxes in Exchange Online](https://docs.microsoft.com/exchange/recipients-in-exchange-online/create-user-mailboxes)
+- [Manage user mailboxes](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes) 
+- [Create and manage distribution groups](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)
 
 #### Result
 
@@ -90,13 +90,15 @@ You understand mailbox migration, security, and management and are ready to begi
 
 ### Step 2: Run an IT pilot
 
-In most medium-sized and large organizations, you should run an IT pilot with your stakeholders from Phase 1 and early adopters and technical enthusiasts. During the IT pilot:
+For most medium-sized and large organizations, you should run an IT pilot with your stakeholders from Phase 1, early adopters, and technical enthusiasts. During the IT pilot:
 
-- Choose an Exchange Online business scenario in which your IT pilot participants can practice.
-- Give your pilot participants Office 365 licenses and migrate their on-premises mailboxes to Exchange Online.
+- Give your pilot participants Microsoft 365 licenses and migrate their on-premises mailboxes to Exchange Online.
 - Give your pilot participants a set of exercises to test Exchange Online email, scheduling, and other capabilities.
-- Determine your change management strategy and produce materials to drive organization-wide user adoption of Exchange Online. Change management materials can include email announcement text, internal training plans, hallway posters, and presentations. These materials will inform your organization about Exchange Online and its benefits with the goals of raising awareness and driving usage. See the [change management strategy for Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/change-management-strategy) article for some ideas.
-- Have your IT pilot participants review the change management materials based on their experiences. They can provide tips on best practices and advice on how to best describe the benefits of Exchange Online and how to use it for communication and scheduling.
+- Determine your change management strategy and produce materials to drive organization-wide user adoption of Outlook and Exchange Online. 
+ 
+  Change management materials can include email announcement text, internal training plans, hallway posters, and presentations. These materials will inform your organization about Exchange Online and its benefits with the goals of raising awareness and driving usage. See the [change management strategy for Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/change-management-strategy) article for some ideas.
+
+- Have your IT pilot participants review the change management materials based on their experiences. They can provide tips on best practices and advice on how to best describe the benefits of Outlook and Exchange Online and how to use it for communication and scheduling.
 
 #### Result
 
@@ -109,14 +111,14 @@ After completing your IT pilot, roll out Exchange Online to a business group or 
 - Identification of key business scenarios for Exchange Online within the business group.
 - Announcement activities to inform users of the expectations and timelines for Exchange Online usage for departments and work or project teams.
 - Migration of on-premises mailboxes of your business group members to Exchange Online.
-- Delivering user training on Exchange Online or links to resources to introduce Exchange Online and how to use it.
+- Delivering [user training](https://support.office.com/article/outlook-training-8a5b816d-9052-4190-a5eb-494512343cca) on Outlook or links to resources to introduce Outlook and how to use it.
 - A feedback mechanism, such as a central Microsoft Teams team containing everyone in the business group, to collect comments and act on issues from users in the business group.
 
 During the rollout, you can refine your change management materials in preparation for the organization-wide rollout.
 
 #### Result
 
-A business group is up and running with Exchange Online and the change management materials have been tested and refined.
+A business group is up and running with Outlook and Exchange Online and the change management materials have been tested and refined.
 
 ## Phase 3: Drive value
 
@@ -129,7 +131,7 @@ The rollout to the rest of your organization should include:
 - Identification of key business scenarios for Exchange Online within separate business groups.
 - Use of your refined change management materials for announcement activities to inform your organization of the expectations and timelines for Exchange Online usage.
 - Migration of the mailboxes for the rest of your organization to Exchange Online.
-- Delivering user training on Exchange Online or provide links to resources to introduce Exchange Online and how to use it.
+- Delivering [user training](https://support.office.com/article/outlook-training-8a5b816d-9052-4190-a5eb-494512343cca) on Outlook or provide links to resources to introduce Outlook and how to use it.
 - A feedback mechanism, such as a central Team containing everyone, to collect comments and issues from organization users. If your organization has less than 2500 individuals, use a public channel in Teams. Otherwise, use a public group in Yammer.
 
 #### Result
@@ -145,18 +147,18 @@ After rolling out Exchange Online to your entire organization, you must continue
 
 Here are some suggested activities:
 
-- See [Office 365 adoption guidance](https://aka.ms/successfactors) to learn about general best practices for cloud service adoption. 
+- See [Success factors for Office 365](https://aka.ms/successfactors) to learn about general best practices for cloud service adoption. 
 - See [Office 365 activity reports](https://docs.microsoft.com/office365/admin/activity-reports/activity-reports) to understand Office 365 service usage across your organization. If you aren’t an Office 365 global admin for your organization, ask someone who is a global admin to grant Reports Reader permissions to your user account so you can access activity reports.
 - Monitor your feedback venue (a public channel in a central Teams team or Yammer) for issues and feedback from individuals about their experiences with Exchange Online. Address questions and issues as quickly as you can to prevent frustrated individuals and demonstrate support for the rollout.
-- Identify and nurture champions in each business group and highlight their accomplishments and best practices using Exchange Online. Reflect their successes out to the organization to show project success and adoption. Endorsement by technical leaders within a business group can exert a powerful influence over leaders and peers.
+- Identify and nurture champions in each business group and highlight their best practices using Outlook. Reflect their successes out to the organization to show project success and adoption. Endorsement by technical leaders within a business group can exert a powerful influence over leaders and peers.
 
 #### Result
 
-Your organization has adopted Exchange Online as its primary individual and small group short-lived communication and scheduling tool.
+Your organization has adopted Exchange Online and Outlook as its primary individual and small group short-lived communication and scheduling tool.
 
 ## How Microsoft does Microsoft 365 Enterprise
 
-To peek inside Microsoft and learn how the company migrated to Exchange Online and is using Exchange Online Protection to protect against cyber attacks, see:
+To peek inside Microsoft and learn how we migrated to Exchange Online and are using Exchange Online Protection to protect against cyber attacks, see:
 
 - [Microsoft migrates 150,000 mailboxes to Exchange Online](https://www.microsoft.com/itshowcase/Article/Content/577/Microsoft-migrates-150000-mailboxes-to-Exchange-Online)
 - [Microsoft uses threat intelligence to protect, detect, and respond to threats](https://www.microsoft.com/itshowcase/Article/Content/934/Microsoft-uses-threat-intelligence-to-protect-detect-and-respond-to-threats)
@@ -166,6 +168,6 @@ To peek inside Microsoft and learn how the company migrated to Exchange Online a
 
 See these resources for the ongoing maintenance of Exchange Online:
 
-- [Exchange admin center in Exchange Online](https://technet.microsoft.com/library/jj200743(v=exchg.150).aspx) 
-- [Monitoring, reporting, and message tracing in Exchange Online](https://technet.microsoft.com/library/jj200725(v=exchg.150).aspx)
-- [Backing up email in Exchange Online](https://technet.microsoft.com/library/dn440734(v=exchg.150).aspx) 
+- [Exchange admin center in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center) 
+- [Monitoring, reporting, and message tracing in Exchange Online](https://docs.microsoft.com/exchange/monitoring/monitoring)
+- [Backing up email in Exchange Online](https://docs.microsoft.com/exchange/back-up-email) 
