@@ -28,7 +28,7 @@ CIS benchmarks provide two levels of security settings:
 - **Level 1** recommends essential basic security requirements that can be configured on any system and should cause little or no interruption of service or reduced functionality.
 - **Level 2** recommends security settings for environments requiring greater security that could result in some reduced functionality.
 
-*CIS Hardened Images* are securely configured virtual machine images based on CIS Benchmarks hardened to either a Level 1 or Level 2 CIS benchmark profile. Hardening is a process that helps protect against unauthorized access, denial of service, and other cyberthreats by limiting potential weaknesses that make systems vulnerable to cyberattacks.
+[CIS Hardened Images](https://www.cisecurity.org/blog/cis-hardened-images-now-in-microsoft-azure-marketplace/) are securely configured virtual machine images based on CIS Benchmarks hardened to either a Level 1 or Level 2 CIS benchmark profile. Hardening is a process that helps protect against unauthorized access, denial of service, and other cyberthreats by limiting potential weaknesses that make systems vulnerable to cyberattacks.
 
 ## Microsoft and the CIS Benchmarks
 
@@ -51,7 +51,7 @@ In addition to the benchmarks for Microsoft products and services, CIS has also 
 
 Get a [complete list of CIS benchmarks](https://www.cisecurity.org/cis-benchmarks/) for Microsoft products and services.
 
-- CIS Azure Foundations Benchmark
+- [CIS Azure Foundations Benchmark](https://www.cisecurity.org/benchmark/azure/)
 - [CIS Microsoft 365 Foundations Benchmark](https://www.cisecurity.org/benchmark/microsoft_office/)
 - [Windows 10 Benchmark](https://www.cisecurity.org/benchmark/microsoft_windows_desktop/)
 - [Windows Server 2016 Benchmark](https://www.cisecurity.org/benchmark/microsoft_windows_server/)

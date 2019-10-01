@@ -30,7 +30,7 @@ Learn how to accelerate your DFARS deployment with our Azure Security and Compli
 ## Audits, reports, and certificates
 
 - [Microsoft Cloud Services Authorizations](https://marketplace.fedramp.gov/index.html#/products?status=Compliant&sort=productName)
-- Azure P-ATO Letter Signed June 21, 2016
+- [Azure P-ATO Letter Signed March 3, 2017](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=94ff5b42-4077-4612-8cf7-3194ded323dc&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_GRC_Assessment_Reports)
 - [See additional audit reports](https://aka.ms/auditreports)
 
 ## Microsoft in-scope cloud services
