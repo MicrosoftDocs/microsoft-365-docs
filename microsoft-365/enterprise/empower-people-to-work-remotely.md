@@ -20,9 +20,6 @@ description: Configure the infrastructure and security that allows your employee
 
 *This scenario applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
 
-[Empower remote workers](empower-people-to-work-remotely.md)
-
-
 Allowing employees to work away from the office seamlessly and securely is important for many organizations to save on office space, hire and retain employees who are unwilling to relocate, and reduce employee commuting, leaving them with more time to be productive and for stress-reducing activities outside of work.
 
 Remote working, also known as teleworking, can span a spectrum that includes:
