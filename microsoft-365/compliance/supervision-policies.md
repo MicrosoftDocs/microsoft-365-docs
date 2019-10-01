@@ -62,34 +62,33 @@ In this workflow step, you identify your compliance requirements and configure a
 
 - **Offensive language and anti-harassment**: Use the *Monitor for offensive language* template to quickly create a supervision policy that uses an abusive language machine learning model to automatically detect content that may be considered as harassment.
 - **Sensitive information**: Use the *Monitor for sensitive info* template to create a policy to monitor communications containing defined sensitive information types or keywords to help make sure important data isn't shared with people that shouldn't have access.
-- **Regulatory compliance**: Use the FINRA info template to... 
-- **Custom policy**: Custom policies allow you to configure specific communication channels, individual detection conditions, and the amount of content to review in your organization.
+- **Regulatory compliance**: Use the *Monitor for FINRA info* template to... 
+- **Custom policy**: Use the *Custom Policy* template to configure specific communication channels, individual detection conditions, and the amount of content to review for supervision in your organization.
 
 ### Investigate
 
 In this step, you look deeper into the issues detected as matching your supervision policies. This step includes the following actions: 
 
-- **Alerts**:
-- **Issue management**: 
-- **Document review**:
-- **Reviewing user activity history**:
+- **Alerts**: When a message matches a supervision policy, an alert is automatically generated. For each alert, you can see a status, the severity, the time detected, and if a case is assigned and its status.
+- **Issue management**: For each alert, you can take investigative actions to help resolve the issue detected in the message
+- **Document review**: During the investigation of an issue, you can use several views of the message to help properly evaluate the detected issue. The views include a conversation summary, text-only, annotated, and detail views of the communication conversation.
+- **Reviewing user activity history**: In addition to message views, you can view the history... NEED MORE INFO
 
 ### Resolve
 
 You resolve supervision issues you've investigated using the following remediation options:
 
 - Resolve
-- Tag
-- Notify the user
-- Escalate to another reviewer
-- Mark as a false positive
-- Open a case in other Microsoft 365 compliance solutions:
-    - Insider risk management case
-    - Data investigation case
-    - Advanced eDiscovery case
+- **Tag a message**: As part of the resolution of an issue, you can tag the detected message as compliant, non-compliant, or as questionable as it relates to the policies and standards for your organization.
+- **Notify the user**: In many cases, users accidentally or inadvertently violate a communication policy. You can use the notify feature to provide a simple warning notice to the user and to resolve the issue.
+- **Escalate to another reviewer**: In some cases, the intial reviewer of an issue may need input from other reviewers to help resolve the incident. You can easily escalate message issues to reviewers in other areas of your organization as part of the resolution process.
+- **Mark as a false positive**: Messages incorrectly detected as violations of compliance policies will occasionally slip through to the review process. You can mark these types of messages as false positives to help improve the machine learning process in supervision policies.
+- **Open a case in other Microsoft 365 compliance solutions**: In the most severe cases, you may need to open a case for deeper investigation and review of an issue. Communication supervision is fully integrated with other Microsoft 365 compliance review features to help you with end-to-end resolution management.
+    - **Insider risk management case**: jlkljlkj. To learn more about insider risk management cases in Microsoft 365, see [Insider risk management in Microsoft 365](insider-risk-overview.md).
+    - **Data investigation case**: uouiu. To learn more about data investigation cases, see [Overview of Data Investigations in Microsoft 365](overview-data-investigations.md).
+    - **Advanced eDiscovery case**: asdf. To learn more about Advanced eDiscovery cases, see [Overview of the Advanced eDiscovery in Microsoft 365](overview-ediscovery-20.md).
 
 ### Monitor
-
 
 ## Ready to get started?
 
