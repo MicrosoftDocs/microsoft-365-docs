@@ -31,27 +31,53 @@ The following diagram illustrates the set of recommended policies for protecting
 
 ![A diagram showing how to use Microsoft Teams on various devices.](../images/identity-access-ruleset-teams.png)
 
-If you included SharePoint Online when you created the common policies, you only need to create policy rules around guest and external access, and stuff.
+If you included Teams when you created the common policies, you should be able to proceed to create policy rules around guest and external access, along with policies for Teams and Channels, Messaging, Meeting, and Applications.
 
 This is a table of rules to follow, it's from a link I'll put in here.
 
 |Protection level|Policies|More information|
 |:---------------|:-------|:----------------|
-|**Baseline**|[Require MFA when sign-in risk is *medium* or *high*](#require-mfa-based-on-sign-in-risk)| |
+|**Baseline**|[Require MFA when sign-in risk is *medium* or *high*](#require-mfa-based-on-sign-in-risk)|For high-risk users, MFA should be enabled, as defined by your organization|
 |        |[Block clients that don't support modern authentication](#block-clients-that-dont-support-modern-authentication)|Clients that do not use modern authentication can bypass conditional access rules, so it's important to block these|
 |        |[High risk users must change password](#high-risk-users-must-change-password)|Forces users to change their password when signing in if high-risk activity is detected for their account|
 |        |[Define app protection policies](#define-app-protection-policies)|One policy per platform (iOS, Android, Windows).|
 |        |[Require approved apps](#require-approved-apps)|Enforces mobile app protection for phones and tablets|
 |        |[Define device compliance policies](#define-device-compliance-policies)|One policy for each platform|
 |        |[Require compliant PCs](#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Enforces Intune management of PCs|
-|**Sensitive**|[Require MFA when sign-in risk is *low*, *medium* or *high*](#require-mfa-based-on-sign-in-risk)| |
+|**Sensitive**|[Require MFA when sign-in risk is *low*, *medium* or *high*](#require-mfa-based-on-sign-in-risk)|A range of low-risk to high-risk users should be required to use MFA, as defined by your organization|
 |         |[Require compliant PCs *and* mobile devices](#require-compliant-pcs-and-mobile-devices)|Enforces Intune management for PCs and phone/tablets|
-|**Highly regulated**|[*Always* require MFA](#require-mfa-based-on-sign-in-risk)|
+|**Highly regulated**|[*Always* require MFA](#require-mfa-based-on-sign-in-risk)|Regardless of user identity, MFA will be used by your organization
 | | |
+
+## Teams Policies
+
+Outside of the common policies listed above, there are Teams-specific policies that can and should be configured to manage various Teams functionalities.
+
+### Teams and Channels Policies
+
+Teams and channels are two commonly used elements in Microsoft Teams, and there are policies you can put in place to control what users can and cannot do when using teams and channels. While you can create a global team, if your organization has 5000 users or less, you are likely to find it helpful to have smaller teams and channels for specific purposes, in-line with your organizational needs.
+
+Changing the default policy or creating custom policies would be recommended, and you can learn more about managing your policies at this link: [Manage teams policies in Microsoft Teams](https://docs.microsoft.com/en-us/microsoftteams/teams-policies).
+
+### Messaging Policies
+
+Messaging, or chat, can also be managed through the default global policy, or through custom policies, and this can help your users communicate with one another in a way that's appropriate for your organization. This information can be reviewed at [Managing messaging policies in Teams](https://docs.microsoft.com/en-us/microsoftteams/messaging-policies-in-teams).
+
+### Meeting Policies
+
+No discussion of Teams would be complete without planning and implementing policies around Teams meetings.
+
+Please review [Manage meeting policies in Teams](https://docs.microsoft.com/en-us/microsoftteams/meeting-policies-in-teams) for more information.
+
+### App Permission Policies
+
+Teams also allows you to use apps in various places, such as channels or personal chats. Having policies around what apps can be added and used, and where, is essential to maintaining a content-rich environment that is also secure.
+
+For more reading about App Permission Policies, check out [Manage app permission policies in Microsoft Teams](https://docs.microsoft.com/en-us/microsoftteams/teams-app-permission-policies).
 
 ## How these policies work together
 
-Teams can have many layers of access and security ranges from channels that can encompass your entire organization to one on one chats. These policies cover security reliably no matter what you're using Teams for. Please review the following diagram, which shows not just the many things you'll be doing in Teams, but also some of the underlying dependencies on other applications.
+As noted above, Teams can have many layers of access and security ranges from channels that can encompass your entire organization to one on one chats. These policies cover security reliably no matter what you're using Teams to do. Please review the following diagram, which shows not just the many things you can do with Teams, but also some of the underlying dependencies on other applications.
 
 ![Diagram showing the many things you do in Teams and dependencies.](../images/identity-access-logical-architecture-teams.png)
 
@@ -64,25 +90,3 @@ In addition to the policies for users who are internal to your business or organ
 External access is sometimes confused with guest access, so it's important to be clear that these two access mechanisms are actually quite different. While guest access occurs on a per-user basis (you add one user at a time), external access allows you to add all the users of an external domain at the same time, but they have less access than an individual who's been added via guest access would have. External access users can chat with your internal users via Teams.
 
 For more reading about external access, and how to implement it, please review [Manage external access in Microsoft Teams](https://docs.microsoft.com/en-us/microsoftteams/manage-external-access)
-
-## Teams and Channels Policies
-
-Teams and channels are two commonly used elements in Microsoft Teams, and there are policies you can put in place to control what users can and cannot do in these locations. While you can create a global team, if your organization is less than 5000 people strong, you are likely to find it helpful to have smaller teams and channels for specific purposes, in-line with your organizational needs.
-
-Custom policies would likely be helpful in that scenario, and you can learn more about them at this link: [Manage teams policies in Microsoft Teams](https://docs.microsoft.com/en-us/microsoftteams/teams-policies).
-
-## Messaging Policies
-
-Messaging, or chat, can also be managed through the default global policy, or through custom policies, and this can help your users communicate with one another in a way that's appropriate for your organization. This information can be reviewed at [Managing messaging policies in Teams](https://docs.microsoft.com/en-us/microsoftteams/messaging-policies-in-teams).
-
-## App Permission Policies
-
-Teams also allows you to use apps in various places, such as channels or personal chats. Having policies around what apps can be added and used, and where, is essential to maintaining a content-rich environment that is also secure.
-
-For more reading about App Permission Policies, check out [Manage app permission policies in Microsoft Teams](https://docs.microsoft.com/en-us/microsoftteams/teams-app-permission-policies).
-
-## Meeting Policies
-
-No discussion of Teams would be complete without planning and implementing policies around Teams meetings.
-
-Please review [Manage meeting policies in Teams](https://docs.microsoft.com/en-us/microsoftteams/meeting-policies-in-teams) for more information.
