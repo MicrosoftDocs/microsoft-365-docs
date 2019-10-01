@@ -94,6 +94,11 @@ Recommended for **ON** in both Recommended and Aggressive Levels:
 
 |Security feature name  |Recommended |Aggressive  |Comment  |
 |---------|---------|---------|---------|
+|Configure Malware Notifications for Internal Sources |Yes |Yes |- |
+|Disable notifying external senders of malware detection |Yes |Yes |- |
+|Use "Common Attachment Type Filter" for blocking suspicious file types | Yes |Yes |- |
+|Malware ZAP |True |True |- |
+|Malware action |Block |Block |- |
 
 ## Advanced Threat Protection (ATP)
 
@@ -135,9 +140,56 @@ If you've added an ATP subscription to your EOP, be sure to set the following co
 |Security feature name  |Recommended |Aggressive  |Comment  |
 |---------|---------|---------|---------|
 |Set Advanced phishing threshold to | 2 | 4 | - |
-|Enable Anti-impersonation protection | Y | Y | - |
-|Enable Mailbox intelligence in Anti-Impersonation policies | Y | Y | - |
-|Enable Mailbox intelligence based Impersonation protection | Y | Y | - |
+|Enable Anti-impersonation protection | Yes | Yes | - |
+|Enable Mailbox intelligence in Anti-Impersonation policies | Yes | Yes | - |
+|Enable Mailbox intelligence based Impersonation protection | Yes | Yes | - |
 |Domain Impersonation action should be | JMF | Quarantine | - |
 |User Impersonation action should be | JMF | Qurantine | - |
 |Mailbox intelligence based impersonation protection action should be |Tip  |JMF | - |
+
+### Safe Links and Safe Attachments
+
+ ATP includes the Safe Attachment and Safe Links policies to prevent email with potentially malicious attachments from being delivered, and to  keep users from clicking and traveling to potentially unsafe URLs. We'll start with Safe Links and continue to Safe Attachments.
+
+
+|Security feature name  |Recommended |Aggressive  |Comment  |
+|---------|---------|---------|---------|
+|ATP Safe Links should track user clicks for response purposes |Yes |Yes |- |
+|ATP Safe Links should be enabled for Office Applications |Yes |Yes |- |
+|ATP Safe Links should be enabled for Intra Domain |Yes |Yes |- |
+|ATP Safe Links should apply real-time URL scanning for suspicious links and links that point to files. |Yes |Yes |- |
+|ATP Safe Links should wait for URL scanning to complete before delivering the message. |Yes |Yes |- |
+<!--
+|URLs to block | | | |
+|URLs not to wrap | | | |-->
+
+|Security feature name  |Recommended |Aggressive  |Comment  |
+|---------|---------|---------|---------|
+|ATP protection should be enabled for OneDrive, SharePoint, and Teams |Yes |Yes |- |
+|ATP Safe Attachment policy action should be |Quarantine |Quarantine |- |
+<!--
+|Allowed file hashes | | | |
+|Blocked file hashes | | | |
+-->
+
+## Miscellaneous settings
+
+These settings cover a range of features that don't necessarily fit into specific categories above. You may find some 1-off settings here as well.
+
+Security feature name  |Recommended |Aggressive  |Comment  |
+|---------|---------|---------|---------|
+|Create SPF records |Yes |Yes |- |
+|Configure DKIM Signing for Domains |Yes |Yes |- |
+|Implement Domain-based Message Reporting and Conformance (DMARC) with reject or quarantine action |action=none |action=reject | |
+|Deploy Report Message add-on to improve End User Reporting of Suspicious Emails |Yes |Yes |- |
+|Schedule Malware and Spam Reports |Yes |Yes |- |
+|Auto-fowarding to external domains should be disallowed or monitored |- |Yes |- |
+|Unified Auditing should be enabled |Yes |Yes |- |
+|IMAP should be disabled where not required |- |disabled |- |
+|POP should be disabled where not required |- |disabled |- |
+|SMTP Authenticated Submission should be turned off when not required by Applications |- |disabled |- |
+|EWS should be disabled |- |disabled |- |
+|PowerShell |- |disabled |- |
+|Configure Sender Policy Framework to hard-fail |-all |-all |- |
+|Use Spoof Intelligence to whitelist senders whenever possible |Yes |Yes |- |
+|Directory-Based Edge Blocking (DBEB) |Enabled |Enabled |Domain Type = Authoritative |
