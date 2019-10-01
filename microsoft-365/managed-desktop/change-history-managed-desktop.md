@@ -17,8 +17,8 @@ This topic lists new and updated topics in the [Microsoft Managed Desktop docume
 ## September 2019
 New or changed topic | Description
 --- | ---
-[Microsoft Managed Desktop technologies](intro/technologies.md)
-[Getting help for end users](working-with-managed-desktop/end-user-support.md)
+[Microsoft Managed Desktop technologies](intro/technologies.md) | Updated topic
+[Getting help for end users](working-with-managed-desktop/end-user-support.md) | Updated topic
 [Microsoft Managed Desktop devices](service-description/device-list.md) | Updated topic
 [Deploy and track configurable settings - Microsoft Managed Desktop](working-with-managed-desktop/config-setting-deploy.md) | Updated topic
 [Admin support for Microsoft Managed Desktop](working-with-managed-desktop/admin-support.md) | Updated topic
