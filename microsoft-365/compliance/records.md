@@ -96,9 +96,6 @@ After a record label is assigned to a document, any user in the default Members 
 
 :::image type="content" source="media/recordversioning9.png" alt-text="Record status shows record document is unlocked":::
 
-![A screenshot of a computer
-Description automatically generated](c:\\GitHub\\microsoft-365-docs-pr\\microsoft-365\\compliance/media/image9.png)
-
 When a user unlocks a record, the following actions occur:
 
 1. If the current site collection does not yet contain a Preservation Hold library, one is created.
@@ -116,18 +113,22 @@ When a user locks a record, the original document again can’t be edited. But i
 ## About record versions
 
 Each time you unlock a record, the latest version is copied to the Records folder, and that version contains the word “Record” in the **Comments** field of the version history.
+<br/><br/>
 
-![A screenshot of a cell phone
-Description automatically generated](c:\\GitHub\\microsoft-365-docs-pr\\microsoft-365\\compliance/media/image10.png)
+:::image type="content" source="media/recordversioning10.png" alt-text="Record shown in the Preservation Hold library":::
 
 To view the version history, select a document in the document library \> item menu \> **Version history.**
 
 ## Where records are stored
 
 Records are stored in a Records folder in the Preservation Hold library in the top-level site in the site collection. In the left nav on the top-level site, choose **Site contents** \> **Preservation Hold Library**.
+<br/><br/>
 
-![A screenshot of a cell phone
-Description automatically generated](c:\\GitHub\\microsoft-365-docs-pr\\microsoft-365\\compliance/media/image11.png)
+:::image type="content" source="media/recordversioning11.png" alt-text="Preservation Hold library":::
+
+<br/><br/>
+
+:::image type="content" source="media/recordversioning12.png" alt-text="Record in Preservation Hold library":::
 
 ![A screenshot of a cell phone
 Description automatically generated](c:\\GitHub\\microsoft-365-docs-pr\\microsoft-365\\compliance/media/image12.png)
