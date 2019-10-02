@@ -19,13 +19,10 @@ search.appverid:
 
 # Microsoft Secure Score
 
-**Applies to:**
-- Microsoft Threat Protection
-
 >[!IMPORTANT]
 >Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-With Microsoft Secure Score in the Microsoft 365 security center, you can have increased visibility and control over your organization's security posture. From a centralized dashboard you can monitor and improve the security for your Microsoft 365 identities, data, apps, devices, and infrastructure.
+With Microsoft Secure Score in the Microsoft 365 security center, you can have increased visibility and control over your organization’s security posture. From a centralized dashboard you can monitor and improve the security for your Microsoft 365 identities, data, apps, devices, and infrastructure.
 
 Microsoft Secure Score gives you robust visualizations, integration with other Microsoft products, comparison of your score with other companies, filtering by category, and much more. With the tool, you can complete security improvement actions within your organization and track the history of your score. The score can also reflect when third-party solutions have addressed recommended improvement actions.  
 
@@ -43,7 +40,7 @@ Currently, to view Microsoft Secure Score, you must be assigned one of the follo
 
 ## Rich experiences & additional security recommendations
 
-In Microsoft Secure Score, we've added recommendations from Azure AD, Intune, and Cloud App Security, with recommendations from Azure Security Center and Microsoft Defender ATP coming soon. We've also added even more Office 365 security recommendations. With additional insights and more visibility into a broader set of Microsoft products and services, you can feel confident reporting up to management about your organization's security health. You can also get your score using the [Microsoft Graph API](https://docs.microsoft.com/graph/api/resources/securescores?view=graph-rest-beta).
+In Microsoft Secure Score, we’ve added recommendations from Azure AD, Intune, and Cloud App Security, with recommendations from Azure Security Center and Microsoft Defender ATP coming soon. We've also added even more Office 365 security recommendations. With additional insights and more visibility into a broader set of Microsoft products and services, you can feel confident reporting up to management about your organization’s security health. You can also get your score using the [Microsoft Graph API](https://docs.microsoft.com/graph/api/resources/securescores?view=graph-rest-beta).
 
 To help you the information you need more quickly, Microsoft recommendations are organized into groups:
 
@@ -55,12 +52,12 @@ To help you the information you need more quickly, Microsoft recommendations are
 
 In the Microsoft Secure Score overview page, you can see how points are split between these groups and what points are available. The overview page is also the place to get an all-up view of the total score, historical trend of your secure score with benchmark comparisons, and prioritized improvement actions that can be taken to improve your score. You can use this data to act and make big differences in your security posture.  
 
-![M365 homepage](../images/homepage-original.png)
+![M365 homepage](../media/secure-score/homepage-original.png)
 *Figure 1: Microsoft Secure Score overview page*
 
 ## Take action to improve your score
 
-The improvement actions tab lists all the security recommendations applicable to your tenant along with their status (completed, not completed, resolved through third party, and ignored). You can search, filter, and group all the controls.  Ranking is based on Microsoft's evaluation of both security value and effort to complete.
+The improvement actions tab lists all the security recommendations applicable to your tenant along with their status (completed, not completed, resolved through third party, and ignored). You can search, filter, and group all the controls.  Ranking is based on Microsoft’s evaluation of both security value and effort to complete.
 
 Actions labeled as [Not Scored] are not tracked by Microsoft Secure Score. You can still take action but completing them will not affect your score. If an action becomes tracked by Microsoft Secure Score in the future and you have already completed it, your secure score will automatically reflect the change.
 
@@ -74,7 +71,7 @@ When you click on an improvement action, a fly out appears. To complete the acti
 
 4. Select **Review** because the improvement action requires you to regularly review a part of your environment to gain and retain points. For example, mailbox forwarding rules should be reviewed on a weekly basis to make sure data is not being exfiltrated from your network. You do not need to make any changes, but an action will need to be performed. If you regularly review the rules, you will receive the points. If not, the score will be reduced.
 
-![M365 homepage](../images/secure-score1x450.png) ![M365 homepage](../images/secure-score2x450.png)
+![M365 homepage](../media/secure-score/secure-score1x450.png) ![M365 homepage](../media/secure-score/secure-score2x450.png)
 
 *Figures 2 & 3: Improvement action flyouts*
 
@@ -86,7 +83,7 @@ The score is calculated once per day (around 1:00 AM PST). If you make a change 
 
 ## How improvement actions are scored
 
-Most are scored in a binary fashion - you get 100% of the points if you implement the improvement action, like creating a new policy or turning on a specific setting. For other improvement actions, points are given as a percentage of the total configuration. For example, if the improvement action states you'll get 30 points if you protect all your users with multi-factor authentication and you only have 5 of 100 total users protected, you would be given a partial score of around 2 points (5 protected / 100 total * 30 max pts = 2 pts partial score).
+Most are scored in a binary fashion - you get 100% of the points if you implement the improvement action, like creating a new policy or turning on a specific setting. For other improvement actions, points are given as a percentage of the total configuration. For example, if the improvement action states you’ll get 30 points if you protect all your users with multi-factor authentication and you only have 5 of 100 total users protected, you would be given a partial score of around 2 points (5 protected / 100 total * 30 max pts = 2 pts partial score).
 
 ## Risk awareness
 

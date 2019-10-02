@@ -20,6 +20,7 @@ search.appverid:
 - MOE150
 ms.assetid: be5b6d90-3344-4c5e-bf40-5733eb845beb
 description: "Learn how to use Windows AutoPilot to set up new Windows 10 devices for your business."
+ms.custom: OKR_SMB_M365
 ---
 
 # Use the step-by-step guide to add Autopilot devices and profile
@@ -36,7 +37,7 @@ Devices need to meet these requirements:
     
 ## Use the setup guide to create devices and profiles
 
-![Banner that point to https://aka.ms/aboutM365preview.](media/m365admincenterchanging.png)
+[![Label to let you know the admin center is changing and you can find more details at aka.ms/aboutM365preview.](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
 If you have no device groups or profiles created yet, the best way to get started is by using the step-by-step guide, but you can also [add devices](create-and-edit-autopilot-devices.md) and [assign profiles](create-and-edit-autopilot-profiles.md) to them without using the guide. 
   

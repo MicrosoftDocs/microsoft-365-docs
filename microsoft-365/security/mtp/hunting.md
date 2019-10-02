@@ -18,7 +18,7 @@ search.appverid: met150
 
 Hunting provides security teams a view into possible threats in your organization across email and data, devices, and identities. Within Microsoft Defender ATP, Office 365 ATP, and Azure ATP portals you can look for compromised accounts, file less malware, suspicious emails, and more.
 
-![Hunting page](../images/hunt.png)
+![Hunting page](../media/security-docs/hunt.png)
 
 Learn more:
 

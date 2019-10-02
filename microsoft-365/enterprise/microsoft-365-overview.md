@@ -3,7 +3,7 @@ title: Microsoft 365 Enterprise overview
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/16/2019
+ms.date: 09/19/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -73,7 +73,7 @@ To get a better picture of how to move your entire organization to the products 
 
 This two-page poster is a quick way to inventory your existing infrastructure and get to the guidance for moving to the corresponding product or service in Microsoft 365 Enterprise. It includes Windows and Office products and other infrastructure and security elements such as device management, identity, and information and threat protection.
 
-You can [download this poster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf) and print it in letter, legal, or tabloid (11 x 17) formats.
+You can also [download this poster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf) and print it in letter, legal, or tabloid (11 x 17) formats.
 
 ## Avoid end of support for Windows 7 and Office 2010 clients and servers
 
@@ -91,9 +91,9 @@ For a visual summary of the upgrade, migrate, and move-to-the-cloud options for 
 
 [![Image for the end of support for Office 2010 clients and servers and Windows 7 poster](./media/migration-microsoft-365-enterprise-workload/office2010-windows7-end-of-support.png)](media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)
 
-This one-page poster is a quick way to understand the various paths you can take to prevent Windows 7 and Office 2010 client and server products from reaching end of support, with preferred paths and option support in Microsoft 365 Enterprise highlighted.
+This one-page poster is a quick way to understand the various paths you can take to prevent Windows 7 and Office 2010 client and server products from reaching end of support, with preferred paths and support in Microsoft 365 Enterprise highlighted.
 
-You can [download this poster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf) and print it in letter, legal, or tabloid (11 x 17) formats.
+You can also [download this poster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf) and print it in letter, legal, or tabloid (11 x 17) formats.
 
 ## Deploy
 
@@ -135,13 +135,13 @@ For more deployment information, see how:
 
 |||
 |:-------|:-----|
-![](./media/m365-poster/m365-fundamentals.svg)| Get yourself trained and work towards a Microsoft 365 certification. <BR> Start with [Microsoft 365 Fundamentals](https://docs.microsoft.com/learn/paths/m365-fundamentals/).
+![Microsoft 365 Fundamentals training](./media/m365-poster/m365-fundamentals.svg)| Get yourself trained and work towards a Microsoft 365 certification. <BR> Start with [Microsoft 365 Fundamentals](https://docs.microsoft.com/learn/paths/m365-fundamentals/).
 |||
 
 
 ## Next step
 
-If you are doing the deployment yourself, start your [Microsoft 365 Enterprise deployment journey](deploy-microsoft-365-enterprise.md).
+If you're doing the deployment yourself, start your [Microsoft 365 Enterprise deployment journey](deploy-microsoft-365-enterprise.md).
 
 ## See also
 

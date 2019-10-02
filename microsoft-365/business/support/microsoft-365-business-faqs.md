@@ -1,6 +1,6 @@
 ---
 title: Microsoft 365 Business Frequently Asked Questions 
-description: Find answers to the most frequently asked questions about Microsoft 365 Business, a new solution designed for small and midsize businesses (SMB). 
+description: Find answers to the most frequently asked questions about Microsoft 365 Business, a new solution designed for small, and midsize businesses (SMB). 
 author: Sirkkuw
 ms.author: sirkkuw
 ms.topic: article 
@@ -18,9 +18,9 @@ ms.date: 06/08/2018
 ## General
 
 ### What is Microsoft 365 Business? 
-Microsoft 365 is an integrated solution that brings together best-in-class productivity tools, security, and device management capabilities for small to medium-sized businesses. 
+Microsoft 365 is an integrated solution, that brings together best-in-class productivity tools, security, and device management capabilities for small to medium-sized businesses. 
 
-**A holistic set of business productivity and collaboration tools** 
+**A set of business productivity and collaboration tools** 
 * Word, Excel, PowerPoint, Outlook, OneNote, Publisher, and Access 
 * Exchange, OneDrive, Skype for Business, Microsoft Teams, SharePoint 
 * Business apps from Office (Bookings, Outlook Customer Manager, MileIQ<sup>[1](#footnote1)</sup>, Microsoft Invoicing<sup>[1](#footnote1)</sup>) 
@@ -28,7 +28,7 @@ Microsoft 365 is an integrated solution that brings together best-in-class produ
 **Enterprise-grade device management and security capabilities** 
 - Helps provide protection from external threats like phishing & sophisticated malware with Office 365 Advanced Threat Protection and Windows Defender Exploit Guard 
 -  Helps control & manage how sensitive information is accessed and transmitted with Office 365 Data Loss Prevention policies (to be available in summer, 2018) and Azure Information Protection Plan 1 
--  Helps protect, preserve and backup your data with Exchange Online Archiving  
+-  Helps protect, preserve, and backup your data with Exchange Online Archiving  
 -   App protection for Office & other mobile apps with Intune App Protection 
 -  Device management for Windows 10 PCs, MacOS & Mobiles Devices with Intune device management 
 -  Consistent security configuration across devices -  Protection of company data across devices -  Windows Defender, always-on and up-to-date 
@@ -39,6 +39,9 @@ Microsoft 365 is an integrated solution that brings together best-in-class produ
 * Auto-installation of Office apps on Windows 10 PCs 
 * Always up-to-date Office + Windows 10 
 * Streamlined deployment of PCs with Windows AutoPilot
+
+**Enabling Conditional Access**
+- Microsoft 365 Business customers can enable Conditional Access via the Azure Directory settings in the Azure portal. For more information on how to configure Conditional Access policies, please see the article [What is Conditional access](https://docs.microsoft.com/azure/active-directory/conditional-access/overview).
 
 ### Who should consider adopting Microsoft 365 Business? 
 Microsoft 365 Business was built for small and medium-sized customers that have little to no IT resources on staff and want best-in-class productivity and collaboration capabilities of Office 365 together with device management and security solutions that safeguard business data. The Microsoft 365 Business customer is ready to move their IT operations to the cloud and is interested in maintaining a proactive stance to help protect data on both company and employee-owned devices.
@@ -115,11 +118,10 @@ The most direct path to a successful Microsoft 365 Business deployment is to eng
 
 ### Does Microsoft 365 Business include the full capabilities of Microsoft Intune? 
 Yes, Microsoft 365 Business subscribers are licensed to use full Intune capabilities for iOS, Android, MacOS, and other cross-platform device management. Features not available in the simplified management console in Microsoft 365 Business, like 3rd party app management and configuration of WiFi profiles, VPN certificates, etc, can be managed in full Intune console. 
-You have rights to use Configuration Manager to manage clients covered by the EMS license. For SCCM related queries, please see <a href="https://docs.microsoft.com/en-us/sccm/core/understand/product-and-licensing-faq#bkmk_csp" target="_blank">SCCM faqs</a>
   
 
 ### Does Azure Active Directory Premium P1 come with Microsoft 365 Business? 
-Microsoft 365 Business is built on technology from across Microsoft and while it shares some features with Azure Active Directory, it is not a full version. The security and management policies created in Microsoft 365 Business rely on some Azure functionality but does not include all features (e.g. self-service features, conditional access features, and reporting). Customers may choose to purchase Azure Active Directory Premium P1 or P2 as an add-on to Microsoft 365 Business. Please see the [Microsoft 365 Business Service Description](https://technet.microsoft.com/library/b042d1fd-c997-46d8-8c02-1df4c932f148) for more information 
+Microsoft 365 Business includes select Azure AD Premium P1 (AADP P1) features such as Self Service Password reset with AD write-back, Azure MFA and Conditional Access. It does not include the entirety of AADP P1. Please see the  Please see the [Microsoft 365 Business Service Description](https://technet.microsoft.com/library/b042d1fd-c997-46d8-8c02-1df4c932f148) for more information 
  
  
 ### Does Microsoft 365 Business allow customers to manage Macs? 

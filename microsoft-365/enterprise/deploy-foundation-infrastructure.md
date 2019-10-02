@@ -3,7 +3,7 @@ title: "Microsoft 365 Enterprise foundation infrastructure"
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 08/09/2019
+ms.date: 09/19/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -23,12 +23,12 @@ For a defined end-to-end path for deployment, you can use these phases to plan f
 
 | | Phase | Results |
 |:-------|:-----|:-----|
-|![](./media/deploy-foundation-infrastructure/networking_icon-small.png)|[Phase 1: Networking](networking-infrastructure.md)| Your network is optimized for access to Microsoft 365's cloud-based services. |
-|![](./media/deploy-foundation-infrastructure/identity_icon-small.png)|[Phase 2: Identity](identity-infrastructure.md)| Your admin accounts are protected, your users and groups are synchronized, and your user authentication is strong. |
-|![](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)|[Phase 3: Windows 10 Enterprise](windows10-infrastructure.md)| Your existing Windows-based computers can upgrade to Windows 10 Enterprise and new devices are installed with Windows 10 Enterprise. |
-|![](./media/deploy-foundation-infrastructure/O365proplus_icon-small.png)|[Phase 4: Office 365 ProPlus](office365proplus-infrastructure.md)| Your existing users of Microsoft Office can upgrade to Office 365 ProPlus. |
-|![](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon-small.png)|[Phase 5: Mobile device management](mobility-infrastructure.md)| Your devices can be enrolled and managed. |
-|![](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)|[Phase 6: Information protection](infoprotect-infrastructure.md)| Your labels are ready to protect documents and Office 365 security features are enabled. |
+|![Phase 1: Networking](./media/deploy-foundation-infrastructure/networking_icon-small.png)|[Phase 1: Networking](networking-infrastructure.md)| Your network is optimized for access to Microsoft 365's cloud-based services. |
+|![Phase 2: Identity](./media/deploy-foundation-infrastructure/identity_icon-small.png)|[Phase 2: Identity](identity-infrastructure.md)| Your admin accounts are protected, your users and groups are synchronized, and your user authentication is strong. |
+|![Phase 3: Windows 10 Enterprise](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)|[Phase 3: Windows 10 Enterprise](windows10-infrastructure.md)| Your existing Windows-based computers can upgrade to Windows 10 Enterprise and new devices are installed with Windows 10 Enterprise. |
+|![Phase 4: Office 365 ProPlus](./media/deploy-foundation-infrastructure/O365proplus_icon-small.png)|[Phase 4: Office 365 ProPlus](office365proplus-infrastructure.md)| Your existing users of Microsoft Office can upgrade to Office 365 ProPlus. |
+|![Phase 5: Mobile device management](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon-small.png)|[Phase 5: Mobile device management](mobility-infrastructure.md)| Your devices can be enrolled and managed. |
+|![Phase 6: Information protection](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)|[Phase 6: Information protection](infoprotect-infrastructure.md)| Office 365 security features are enabled and your labels and policies are ready to protect documents and email. |
 
 The phases start with the most foundational (networking and identity), and then create layers of infrastructure settings and groups to:
 
@@ -43,7 +43,7 @@ However, you have the flexibility of configuring and rolling out the phases or s
 
 -  **If you are an enterprise organization**, view the phases as layers of IT infrastructure, rather than a defined path, and determine how to best work toward eventual adherence to the requirements for each layer across your organization.
 
-At the end of each phase, you should examine its exit criteria, which include required conditions that you must meet and optional conditions to consider. Exit criteria for each phase ensures that your on-premises and cloud infrastructure and resulting end-to-end configuration meet the requirements for a Microsoft 365 Enterprise deployment.
+At the end of each phase, you should examine its *exit criteria*, which include required conditions that you must meet and optional conditions to consider. Exit criteria for each phase ensures that your on-premises and cloud infrastructure and resulting end-to-end configuration meet the requirements for a Microsoft 365 Enterprise deployment.
 
 To see how the content is structured, watch this short video.
 
@@ -51,7 +51,7 @@ To see how the content is structured, watch this short video.
 
 Here's the foundation infrastructure in the overall Microsoft 365 Enterprise deployment guide:
 
-![](./media/deploy-foundation-infrastructure/m365-deploy-content-arch-foundation.png)
+![The foundation infrastructure in the overall Microsoft 365 Enterprise deployment guide](./media/deploy-foundation-infrastructure/m365-deploy-content-arch-foundation.png)
 
 ## At-a-glance
 
@@ -85,7 +85,7 @@ For example, you create the settings for:
 | Windows 10 Enterprise | Groups to automatically upgrade computers running Windows 7 or Windows 8.1 to Windows 10 Enterprise in place. |
 | Office 365 ProPlus | Groups to automatically deploy Office 365 ProPlus for users with Office 2010, Office 2013, or Office 2016. |
 | Mobile device management | Groups for device enrollment and device-based conditional access policies. |
-| Information protection | Office 365 sensitivity and Azure Information Protection labels and groups. |
+| Information protection | Groups for Office 365 sensitivity labels. |
 
 When you are ready to rollout elements of this infrastructure to users, you:
 
@@ -95,7 +95,7 @@ When you are ready to rollout elements of this infrastructure to users, you:
 | Windows 10 Enterprise | Add accounts to the groups to automatically deploy Windows 10 Enterprise in place for users with Windows 7 or Windows 8.1. |
 | Office 365 ProPlus | Add user accounts to the groups to automatically deploy Office 365 ProPlus for users with Office 2010, Office 2013, or Office 2016. |
 | Mobile device management | Add accounts to the groups for device enrollment and device-based conditional access policies. |
-| Information protection | Add user accounts to the groups for Information Protection labels. |
+| Information protection | Add user accounts to the groups for sensitivity labels. |
 
 Once phases or elements of the foundation infrastructure are completed, tested, and piloted, you can roll out installed software, such as Windows 10 Enterprise and Office 365 ProPlus, and cloud-based services and protections, such as device enrollment and conditional access policies, to your users in the manner that best fits your business goals and IT resources.
 
@@ -105,13 +105,13 @@ To give you some ideas on how to approach the project management of the differen
 
 ## Deployment for non-enterprises
 
-If your organization is smaller and Microsoft 365 Business is not suitable for you, see [deployment for non-enterprises](deploy-foundation-infrastructure-non-enterprises.md).
+If your organization is smaller and Microsoft 365 Business is not suitable for you, see [deployment for non-enterprises](deploy-foundation-infrastructure-non-enterprises.md) for a simplified deployment method.
 
 
 ## Next step
 
 | Where I am | Where I need to go |
 |:-------|:-----|
-| I have existing infrastructure for Office 365, Enterprise Mobility + Security (EMS), or Windows 10 Enterprise | Start with [Deploy with existing infrastructure](deploy-with-existing-infrastructure.md), which  steps you through the exit criteria for each phase. |
+| I have existing infrastructure for Office 365, Enterprise Mobility + Security (EMS), or Windows 10 Enterprise | Start with [Deploy with existing infrastructure](deploy-with-existing-infrastructure.md), which steps you through the exit criteria for each phase. |
 | I'm starting from scratch as an enterprise | Begin your end-to-end deployment journey with [Phase 1: Networking](networking-infrastructure.md). |
 | I'm starting from scratch as a non-enterprise | Begin your end-to-end deployment journey with [Deployment for non-enterprises](deploy-foundation-infrastructure-non-enterprises.md). |

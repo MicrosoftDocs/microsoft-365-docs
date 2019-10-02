@@ -22,6 +22,7 @@ search.appverid:
 - MET150
 ms.assetid: aad21b1a-c775-469a-b89c-c5d1d59d27db
 description: "Learn how protection features in Microsoft 365 Business map to Intune settings. The subscription provides you with a license to modify Intune settings."
+ms.custom: OKR_SMB_M365
 ---
 
 # How do protection features in Microsoft 365 Business map to Intune settings

@@ -60,7 +60,7 @@ This scenario requires that you have already deployed:
 - For highly regulated data in SharePoint Online team sites, [SharePoint Online](sharepoint-online-onedrive-workload.md).
 - For highly regulated data in Microsoft Teams teams, [Microsoft Teams](teams-workload.md).
 
-The following phases step you through designing, configurating, and driving adoption for SharePoint Online sites and teams for highly regulated data.
+The following phases step you through designing, configuring, and driving adoption for SharePoint Online sites and teams for highly regulated data.
 
 To see how the Contoso Corporation, a fictional but representative multi-national organization, designed a SharePoint Online site for its research teams, see this [example configuration](contoso-sharepoint-online-site-for-highly-confidential-assets.md).
 
@@ -141,7 +141,7 @@ Use the instructions in [Deploy an isolated SharePoint Online team site](https:/
 - Create and populate the access groups for each SharePoint permission level used on the site.
 - Create and configure the isolated team site.
 
-### Step 2: Configure the site for an Office 365 retention label DLP policy
+### Step 2: Configure the site for an Office 365 retention label
 
 Use the instructions in [Protect SharePoint Online files with Office 365 labels and DLP](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-office-365-labels-and-dlp) to:
 

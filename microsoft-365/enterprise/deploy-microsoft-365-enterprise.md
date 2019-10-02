@@ -3,7 +3,7 @@ title: "Deploy Microsoft 365 Enterprise"
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 08/09/2019
+ms.date: 09/19/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -35,7 +35,7 @@ There are three main ways to deploy Microsoft 365 Enterprise:
 
 ## FastTrack for Microsoft 365
 
-FastTrack is an ongoing and repeatable benefit—available as part of your subscription—that is delivered by Microsoft engineers to help you move to the cloud at your own pace. FastTrack also gives you access to qualified partners for additional services. With over 40,000 customers enabled to date, FastTrack helps maximize ROI, accelerate deployment, and increase adoption across your organization. See [FastTrack for Microsoft 365](https://fasttrack.microsoft.com/microsoft365).
+FastTrack is an ongoing and repeatable benefit—*available for free as part of your subscription*—that is delivered by Microsoft engineers to help you move to the cloud at your own pace. FastTrack also gives you access to qualified partners for additional services. With over 40,000 customers enabled to date, FastTrack helps maximize ROI, accelerate deployment, and increase adoption across your organization. See [FastTrack for Microsoft 365](https://fasttrack.microsoft.com/microsoft365).
 
 If you want to take advantage of FastTrack to deploy Microsoft 365 Enterprise, you can use the FastTrack [Microsoft 365 deployment advisor](https://aka.ms/microsoft365setupguide) for guidance on how to deploy and set up your foundation infrastructure. You must be signed in as a global administrator in an Office 365 or Microsoft 365 tenant to access this page.
 
@@ -61,7 +61,7 @@ To deploy Microsoft 365 Enterprise yourself, you can:
 
 Here's the relationship between the foundation infrastructure and the workloads and scenarios.
 
-![](./media/deploy-microsoft-365-enterprise/m365-deploy-content-arch.png)
+![The relationship between the foundation infrastructure and the workloads and scenarios](./media/deploy-microsoft-365-enterprise/m365-deploy-content-arch.png)
 
 Workloads and scenarios operate over the top of the foundation infrastructure. However, you do not have to have all of the foundation infrastructure phases built out to begin using workloads for productivity and collaboration.
 
@@ -73,9 +73,9 @@ Get self-started on your end-to-end deployment journey [here](deploy-foundation-
 
 If you're new to Microsoft 365 Enterprise or to a specific product or feature, one of the best ways to gain understanding is to build it out yourself and see it working.
 
-We've made this easier with Test Lab Guides (TLGs), which step you through the configuration of infrastructure or a feature in a simplified but representative environment using trial or paid subscriptions.
+We've made this easier with Test Lab Guides (TLGs), which step you through the configuration of infrastructure or a feature in a simplified but representative test environment using trial or paid subscriptions.
 
-With TLGs, you can self-learn, demonstrate, customize, or build a proof of concept of a complex configuration, workload, or end-to-end scenario.
+With TLGs, you can self-learn, demonstrate, customize, or build a proof of concept (PoC) of a complex configuration, workload, or end-to-end scenario.
 
 For more information, see [Microsoft 365 Enterprise Test Lab Guides](m365-enterprise-test-lab-guides.md).
 
@@ -83,13 +83,13 @@ For more information, see [Microsoft 365 Enterprise Test Lab Guides](m365-enterp
 
 ## Transition your entire organization
 
-To get a better picture of how to move your entire organization to the products and services in Microsoft 365 Enterprise, see the [Transition Your Organization to Microsoft 365](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf).
+To get a better picture of how to move your entire organization to the products and services in Microsoft 365 Enterprise, see the [Transition Your Organization to Microsoft 365](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf) poster.
 
 [![Transition Your Organization to Microsoft 365 poster](./media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
 
 This two-page poster is a quick way to inventory your existing infrastructure and get to the guidance for moving to the corresponding product or service in Microsoft 365 Enterprise. It includes Windows and Office products and other infrastructure and security elements such as device management, identity, and information and threat protection.
 
-You can [download the transition poster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf) and print it in letter, legal, or tabloid (11 x 17) formats.
+You can also [download the transition poster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf) and print it in letter, legal, or tabloid (11 x 17) formats.
 
 ## How did others do it?
 

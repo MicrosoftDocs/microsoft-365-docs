@@ -3,7 +3,7 @@ title: "Step 2: Configure classification for your environment"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/25/2019
+ms.date: 09/19/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -19,7 +19,7 @@ description: Understand and configure various ways to classify data in your orga
 
 *This step is optional and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
 
-![](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
+![Phase 6: Information Protection](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
 In this step, you work with your legal and compliance teams to define a classification scheme for your organization’s data.
 
@@ -58,9 +58,8 @@ For more information, see the [overview of retention labels](https://docs.micros
 Part of protecting and implementing security for specific types of documents or documents with specific contents is marking them with a label so that the additional security can be applied. With sensitivity labels in Microsoft 365, you can:
 
 - Enforce protection settings such as encryption, permissions, or adding a watermark.
-- Prevent sensitive content from leaving your organization on devices running Windows, by using endpoint protection in Microsoft Intune. 
 - Use Windows Information Protection (WIP) endpoint protection to prevent that content from being copied to a third-party app, such as Twitter or Gmail, or being copied to removable storage, such as a USB drive.
-- Use Microsoft Cloud App Security to protect content in third-party apps and services. 
+- Use Microsoft Cloud App Security (CAS) to protect content in third-party apps and services. 
 - Classify content without using any protection settings.
 
 If you use sensitivity labels, you should configure a label for each security and information protection level. For example, create three sensitivity labels for:
@@ -68,6 +67,8 @@ If you use sensitivity labels, you should configure a label for each security an
 - Baseline
 - Sensitive
 - Highly regulated
+
+If you store files with highly regulated data in a SharePoint Online site and want those files to have the same permissions as the site if the files leave the site, you need to create an additional sensitivity label whose permissions are the same as the site.
 
 For more information, see this [overview of sensitivity labels](https://docs.microsoft.com/office365/securitycompliance/sensitivity-labels).
 
@@ -103,5 +104,5 @@ As an interim checkpoint, see the [exit criteria](infoprotect-exit-criteria.md#c
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step3.png)|[Configure increased security for Office 365](infoprotect-configure-increased-security-office-365.md)|
+|![Step 3](./media/stepnumbers/Step3.png)|[Configure increased security for Office 365](infoprotect-configure-increased-security-office-365.md)|
 
