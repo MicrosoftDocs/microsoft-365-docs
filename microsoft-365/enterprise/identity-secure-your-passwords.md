@@ -93,4 +93,4 @@ As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step3.png)| [Secure and manage your user sign-ins](identity-secure-user-sign-ins.md) |
+|![Step 3](./media/stepnumbers/Step3.png)| [Secure and manage your user sign-ins](identity-secure-user-sign-ins.md) |

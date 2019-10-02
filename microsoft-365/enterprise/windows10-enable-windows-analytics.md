@@ -28,4 +28,4 @@ As an interim checkpoint, you can see the [exit criteria](windows10-exit-criteri
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step5.png)| [Deploy Windows 10 Enterprise security features](windows10-enable-security-features.md) |
+|![Step 5](./media/stepnumbers/Step5.png)| [Deploy Windows 10 Enterprise security features](windows10-enable-security-features.md) |

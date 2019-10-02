@@ -53,6 +53,6 @@ As an interim checkpoint, see the [exit criteria](infoprotect-exit-criteria.md#c
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step6.png)|[Configure email encryption](infoprotect-email-encryption.md)|
+|![Step 6](./media/stepnumbers/Step6.png)|[Configure email encryption](infoprotect-email-encryption.md)|
 
 

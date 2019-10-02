@@ -136,7 +136,7 @@ As an interim checkpoint, you can see the [exit criteria](windows10-exit-criteri
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step3.png)| [Deploy Windows 10 Enterprise for new devices with Windows Autopilot](windows10-deploy-autopilot.md) |
+|![Step 3](./media/stepnumbers/Step3.png)| [Deploy Windows 10 Enterprise for new devices with Windows Autopilot](windows10-deploy-autopilot.md) |
 
 
 

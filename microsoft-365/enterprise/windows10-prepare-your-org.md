@@ -62,7 +62,7 @@ As an interim checkpoint, you can see the [exit criteria](windows10-exit-criteri
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step2.png)| [Deploy Windows 10 Enterprise for existing devices as an in-place upgrade](windows10-deploy-inplaceupgrade.md) |
+|![Step 2](./media/stepnumbers/Step2.png)| [Deploy Windows 10 Enterprise for existing devices as an in-place upgrade](windows10-deploy-inplaceupgrade.md) |
 
 
 

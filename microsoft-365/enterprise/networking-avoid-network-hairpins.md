@@ -47,4 +47,4 @@ As an interim checkpoint, you can see the [exit criteria](networking-exit-criter
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step4.png)|[Configure traffic bypass](networking-configure-proxies-firewalls.md)|
+|![Step 4](./media/stepnumbers/Step4.png)|[Configure traffic bypass](networking-configure-proxies-firewalls.md)|

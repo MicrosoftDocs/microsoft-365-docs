@@ -74,4 +74,4 @@ As an interim checkpoint, see the [exit criteria](infoprotect-exit-criteria.md#c
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step7.png)|[Configure privileged access management for Office 365](infoprotect-configure-privileged-access-management.md)|
+|![Step 7](./media/stepnumbers/Step7.png)|[Configure privileged access management for Office 365](infoprotect-configure-privileged-access-management.md)|

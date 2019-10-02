@@ -35,5 +35,5 @@ As an interim checkpoint, you can see the [exit criteria](networking-exit-criter
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step2.png)|[Configure local Internet connections for each office](networking-dns-resolution-same-location.md)|
+|![Step 2](./media/stepnumbers/Step2.png)|[Configure local Internet connections for each office](networking-dns-resolution-same-location.md)|
 
