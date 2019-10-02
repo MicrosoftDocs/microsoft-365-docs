@@ -24,9 +24,9 @@ ms.custom: OKR_SMB_M365
 
 # Validate app protection settings on Android or iOS devices
 
-Follow the instructions in the tabs to validate app protection settings on Android or iOS devices.
+Follow the instructions in the following sections to validate app protection settings on Android or iOS devices.
   
-## [Android](#tab/)
+## Android
   
 ### Check that the App protection settings are working on user devices
 
@@ -115,7 +115,7 @@ In the **Edit policy** pane, choose **Edit** next to **Protection against lost o
     
     ![An encrypted image file in the Gallery app.](media/25936414-bd7e-421d-824e-6e59b877722d.png)
   
-## [iOS](#tab/)
+## iOS
   
 ### Check that the App protection settings are working on user devices
 

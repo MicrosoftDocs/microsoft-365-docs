@@ -3,7 +3,7 @@ title: "Overview of the Contoso Corporation"
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 09/13/2018
+ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -20,15 +20,15 @@ description: Understand the Contoso Corporation as a business and the tiered str
 
 **Summary:** Understand the Contoso Corporation as a business and the tiered structure of its worldwide offices.
 
-The Contoso Corporation is a multi-national business with headquarters in Paris, France. It is a conglomerate manufacturing, sales, and support organization with over 100,000 products.
+![The Contoso Corporation](./media/contoso-overview/contoso-icon.png)
 
-![](./media/contoso-overview/contoso-icon.png)
+The Contoso Corporation is a multi-national business with headquarters in Paris, France. It is a conglomerate manufacturing, sales, and support organization with over 100,000 products.
 
 ## Contoso around the world
 
 Figure 1 shows the headquarters office in Paris and regional hub and satellite offices in various continents.
 
-![](./media/contoso-overview/contoso-overview-fig1.png)
+![Contoso's offices around the world](./media/contoso-overview/contoso-overview-fig1.png)
 
 **Figure 1: Contoso's offices around the world**
  
@@ -56,7 +56,7 @@ Contoso's offices around the world follow a three-tier design.
 
 ## Design considerations for Microsoft 365 Enterprise
 
-Contoso's IT architects identified the following design considerations when deploying Microsoft 365 Enterprise: 
+Contoso's IT architects identified the following design requirements and considerations when deploying Microsoft 365 Enterprise: 
 
 - Multiple geographic locations with local regulations and compliance requirements
 - A central intranet datacenter in the headquarters office and regional application servers that host internal line of business applications
@@ -65,12 +65,12 @@ Contoso's IT architects identified the following design considerations when depl
 - A mix of personal and company-owned mobile devices, including iOS (iPhone and iPad) and Android smart phones and tablets
 - Many remote and mobile workers
 - Many business partners
-- A large amount of customer and personally identifiable data
+- A large amount of customer and personally identifiable information
 - A large amount of high-value intellectual property in the form of design specifications for products and manufacturing trade secrets
 
 ## Next step
 
-[Learn](contoso-infra-needs.md) about the Contoso Corporation’s on-premises IT infrastructure and how their business needs can be addressed with Microsoft 365 Enterprise.
+[Learn](contoso-infra-needs.md) about the Contoso Corporation’s on-premises IT infrastructure and how their business needs were addressed with Microsoft 365 Enterprise.
 
 ## See also
 
