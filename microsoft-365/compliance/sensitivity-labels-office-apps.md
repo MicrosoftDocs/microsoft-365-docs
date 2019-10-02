@@ -27,7 +27,7 @@ description: "With sensitivity labels, you can classify and help protect your se
 
 ### Additional requirements for Office for Windows 
 
-- The Azure Information Protection client must not be running in Office. See also: [How do I configure whether Azure Information Protection client or sensitivity labels should be enabled](#how-do-i-configure-whether-the-azure-information-protection-client-or-sensitivity-labels-should-be-enabled-in-office-for-windows).
+- The Azure Information Protection client must not be running in Office. See also: [Can sensitivity labels run alongside the Azure Information Protection client in Office for Windows?](#can-sensitivity-labels-run-alongside-the-azure-information-protection-client-in-office-for-windows).
 
 ### Additional requirements for Outlook on all platforms 
 
@@ -43,60 +43,60 @@ description: "With sensitivity labels, you can classify and help protect your se
 <tr><td>Capability<td colspan="2">Windows<td colspan="2">Mac<td colspan="2">iOS<td colspan="2">Android<td colspan="2">Web</tr>
 <tr><td>
 
-<td>
-Word
-Excel
+<td><font size="-1">
+Word<br>
+Excel<br>
 PowerPoint
-<td>
+<td><font size="-1">
 Outlook
 
-<td>
-Word
-Excel
+<td><font size="-1">
+Word<br>
+Excel<br>
 PowerPoint
-<td>
+<td><font size="-1">
 Outlook
 
-<td>
-Word
-Excel
+<td><font size="-1">
+Word<br>
+Excel<br>
 PowerPoint
-<td>
+<td><font size="-1">
 Outlook
 
-<td>
-Word
-Excel
+<td><font size="-1">
+Word<br>
+Excel<br>
 PowerPoint
-<td>
+<td><font size="-1">
 Outlook
 
-<td>
-Word
-Excel
+<td><font size="-1">
+Word<br>
+Excel<br>
 PowerPoint
-<td>
+<td><font size="-1">
 Outlook
 
 </tr>
 
 <tr>
-<td>Manually apply, change, or remove label<td><font size="-1">Yes<br>version version 1910+</font>
-<td><font size="-1">Yes<br>1910+</font>
-<td><font size="-1">Yes<br>16.21.0+</font><td><font size="-1">Yes<br>16.21.0+</font>
-<td><font size="-1">Yes<br>2.21+</font>
-<td><font size="-1">Coming soon<sup>2</sup><td><font size="-1">Yes<br>16.0.11231+</font><td><font size="-1">Coming soon<sup>2</sup><td><font size="-1">Coming soon<sup>2</sup><td><font size="-1">Coming soon<sup>2</sup>
+<td><font size="-1">Manually apply, change, or remove label<td><font size="-1"><b>Yes</b><br>  1910+</font>
+<td><font size="-1"><b>Yes</b><br>1910+</font>
+<td><font size="-1"><b>Yes</b><br>16.21.0+</font><td><font size="-1"><b>Yes</b><br>16.21.0+</font>
+<td><font size="-1"><b>Yes</b><br>2.21+</font>
+<td><font size="-1">Coming soon<sup>2</sup><td><font size="-1"><b>Yes</b><br>16.0.11231+</font><td><font size="-1">Coming soon<sup>2</sup><td><font size="-1">Coming soon<sup>2</sup><td><font size="-1">Coming soon<sup>2</sup>
 
 <tr>
-<td><a href="https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do">Apply a default label</a><td><font size="-1">Yes<br>1910+</font><td><font size="-1">Yes<br>1910+</font><td><font size="-1">Yes<br>16.21.0+</font><td><font size="-1">Yes<br>16.21.0+</font><td><font size="-1">Yes<br>2.21+</font><td><font size="-1">Coming soon<sup>2</sup><td><font size="-1">Yes<br>16.0.11231+</font><td><font size="-1">Coming soon<sup>2</sup><td><font size="-1">Coming soon<sup>2</sup><td><font size="-1">Coming soon<sup>2</sup>
-<tr><td><a href="https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do">Require a justification for changing a label</a><sup>1</sup><td><font size="-1">Yes<br>1910+</font><td><font size="-1">Yes<br>1910+</font><td><font size="-1">Yes<br>16.21.0+</font><td><font size="-1">Yes<br>16.21.0+</font><td><font size="-1">Yes<br>2.21+</font><td><font size="-1">Coming soon<sup>2</sup><td><font size="-1">Yes<br>16.0.11231+</font><td><font size="-1">Coming soon<sup>2</sup><td><font size="-1">Coming soon<sup>2</sup><td><font size="-1">Coming soon<sup>2</sup>
-<tr><td><a href="https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do">Provide help link to a custom help page</a><td><font size="-1">Yes<br>1910+</font><td><font size="-1">Yes<br>1910+</font><td><font size="-1">Yes<br>16.21.0+</font><td><font size="-1">Yes<br>16.21.0+</font><td><font size="-1">Yes<br>2.21+</font><td><font size="-1">Coming soon<sup>2</sup><td><font size="-1">Yes<br>16.0.11231+</font><td><font size="-1">Coming soon<sup>2</sup><td><font size="-1">Coming soon<sup>2</sup><td><font size="-1">Coming soon<sup>2</sup>
-<tr><td><a href="https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels#what-sensitivity-labels-can-do">Mark the content</a><td><font size="-1">Yes<br>1910+</font><td><font size="-1">Yes<br>1910+</font><td><font size="-1">Yes<br>16.21.0+</font><td><font size="-1">Yes<br>16.21.0+</font><td><font size="-1">Yes<br>2.21+</font><td><font size="-1">Coming soon<sup>2</sup><td><font size="-1">Yes<br>16.0.11231+</font><td><font size="-1">Coming soon<sup>2</sup><td><font size="-1">Coming soon<sup>2</sup><td><font size="-1">Coming soon<sup>2</sup>
-<tr><td>Assign pre-defined permissions<td><font size="-1">Yes<br>1910+</font><td><font size="-1">Yes<br>1910+</font><td><font size="-1">Yes<br>16.21.0+</font><td><font size="-1">Yes<br>16.21.0+</font><td><font size="-1">Yes<br>2.21+</font><td><font size="-1">Coming soon<sup>2</sup><td><font size="-1">Yes<br>16.0.11231+</font><td><font size="-1">Coming soon<sup>2</sup><td><font size="-1">Coming soon<sup>2</sup><td><font size="-1">Coming soon<sup>2</sup>
-<tr><td><a href="https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels#let-users-assign-permissions">Let users assign permissions</a><td><font size="-1">TBD<td><font size="-1">Yes<br>1910+</font><td><font size="-1">TBD<td><font size="-1">Yes<br>16.21.0+</font><td><font size="-1">TBD<td><font size="-1">Coming soon<sup>2</sup><td><font size="-1">TBD<td><font size="-1">Coming soon<sup>2</sup><td><font size="-1">TBD<td><font size="-1">Coming soon<sup>2</sup>
-<tr><td>Send <a href="https://docs.microsoft.com/microsoft-365/compliance/label-analytics">label analytics</a> data for administrators<td><font size="-1">TBD<td><font size="-1">TBD<td><font size="-1">TBD<td><font size="-1">TBD<td><font size="-1">TBD<td><font size="-1">TBD<td><font size="-1">TBD<td><font size="-1">TBD<td><font size="-1">TBD<td><font size="-1">TBD
-<tr><td>Require users to apply a label to their email and documents<td><font size="-1">TBD<td><font size="-1">TBD<td><font size="-1">TBD<td><font size="-1">TBD<td><font size="-1">TBD<td><font size="-1">TBD<td><font size="-1">TBD<td><font size="-1">TBD<td><font size="-1">TBD<td><font size="-1">TBD
-<tr><td><a href="https://docs.microsoft.com/microsoft-365/compliance/apply-sensitivity-label-automatically">Apply a sensitivity label to content automatically</a><td><font size="-1">TBD<td><font size="-1">TBD<td><font size="-1">TBD<td><font size="-1">TBD<td><font size="-1">TBD<td><font size="-1">TBD<td><font size="-1">TBD<td><font size="-1">TBD<td><font size="-1">TBD<td><font size="-1">TBD
+<td><font size="-1"><a href="https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do">Apply a default label</a><td><font size="-1"><b>Yes</b><br>1910+</font><td><font size="-1"><b>Yes</b><br>1910+</font><td><font size="-1"><b>Yes</b><br>16.21.0+</font><td><font size="-1"><b>Yes</b><br>16.21.0+</font><td><font size="-1"><b>Yes</b><br>2.21+</font><td><font size="-1">Coming soon<sup>2</sup><td><font size="-1"><b>Yes</b><br>16.0.11231+</font><td><font size="-1">Coming soon<sup>2</sup><td><font size="-1">Coming soon<sup>2</sup><td><font size="-1">Coming soon<sup>2</sup>
+<tr><td><font size="-1"><a href="https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do">Require a justification for changing a label</a><sup>1</sup><td><font size="-1"><b>Yes</b><br>1910+</font><td><font size="-1"><b>Yes</b><br>1910+</font><td><font size="-1"><b>Yes</b><br>16.21.0+</font><td><font size="-1"><b>Yes</b><br>16.21.0+</font><td><font size="-1"><b>Yes</b><br>2.21+</font><td><font size="-1">Coming soon<sup>2</sup><td><font size="-1"><b>Yes</b><br>16.0.11231+</font><td><font size="-1">Coming soon<sup>2</sup><td><font size="-1">Coming soon<sup>2</sup><td><font size="-1">Coming soon<sup>2</sup>
+<tr><td><font size="-1"><a href="https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do">Provide help link to a custom help page</a><td><font size="-1"><b>Yes</b><br>1910+</font><td><font size="-1"><b>Yes</b><br>1910+</font><td><font size="-1"><b>Yes</b><br>16.21.0+</font><td><font size="-1"><b>Yes</b><br>16.21.0+</font><td><font size="-1"><b>Yes</b><br>2.21+</font><td><font size="-1">Coming soon<sup>2</sup><td><font size="-1"><b>Yes</b><br>16.0.11231+</font><td><font size="-1">Coming soon<sup>2</sup><td><font size="-1">Coming soon<sup>2</sup><td><font size="-1">Coming soon<sup>2</sup>
+<tr><td><font size="-1"><a href="https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels#what-sensitivity-labels-can-do">Mark the content</a><td><font size="-1"><b>Yes</b><br>1910+</font><td><font size="-1"><b>Yes</b><br>1910+</font><td><font size="-1"><b>Yes</b><br>16.21.0+</font><td><font size="-1"><b>Yes</b><br>16.21.0+</font><td><font size="-1"><b>Yes</b><br>2.21+</font><td><font size="-1">Coming soon<sup>2</sup><td><font size="-1"><b>Yes</b><br>16.0.11231+</font><td><font size="-1">Coming soon<sup>2</sup><td><font size="-1">Coming soon<sup>2</sup><td><font size="-1">Coming soon<sup>2</sup>
+<tr><td><font size="-1">Assign pre-defined permissions<td><font size="-1"><b>Yes</b><br>1910+</font><td><font size="-1"><b>Yes</b><br>1910+</font><td><font size="-1"><b>Yes</b><br>16.21.0+</font><td><font size="-1"><b>Yes</b><br>16.21.0+</font><td><font size="-1"><b>Yes</b><br>2.21+</font><td><font size="-1">Coming soon<sup>2</sup><td><font size="-1"><b>Yes</b><br>16.0.11231+</font><td><font size="-1">Coming soon<sup>2</sup><td><font size="-1">Coming soon<sup>2</sup><td><font size="-1">Coming soon<sup>2</sup>
+<tr><td><font size="-1"><a href="https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels#let-users-assign-permissions">Let users assign permissions</a><td><font size="-1">TBD<td><font size="-1"><b>Yes</b><br>1910+</font><td><font size="-1">TBD<td><font size="-1"><b>Yes</b><br>16.21.0+</font><td><font size="-1">TBD<td><font size="-1">Coming soon<sup>2</sup><td><font size="-1">TBD<td><font size="-1">Coming soon<sup>2</sup><td><font size="-1">TBD<td><font size="-1">Coming soon<sup>2</sup>
+<tr><td><font size="-1">Send <a href="https://docs.microsoft.com/microsoft-365/compliance/label-analytics">label analytics</a> data for administrators<td><font size="-1">TBD<td><font size="-1">TBD<td><font size="-1">TBD<td><font size="-1">TBD<td><font size="-1">TBD<td><font size="-1">TBD<td><font size="-1">TBD<td><font size="-1">TBD<td><font size="-1">TBD<td><font size="-1">TBD
+<tr><td><font size="-1">Require users to apply a label to their email and documents<td><font size="-1">TBD<td><font size="-1">TBD<td><font size="-1">TBD<td><font size="-1">TBD<td><font size="-1">TBD<td><font size="-1">TBD<td><font size="-1">TBD<td><font size="-1">TBD<td><font size="-1">TBD<td><font size="-1">TBD
+<tr><td><font size="-1"><a href="https://docs.microsoft.com/microsoft-365/compliance/apply-sensitivity-label-automatically">Apply a sensitivity label to content automatically</a><td><font size="-1">TBD<td><font size="-1">TBD<td><font size="-1">TBD<td><font size="-1">TBD<td><font size="-1">TBD<td><font size="-1">TBD<td><font size="-1">TBD<td><font size="-1">TBD<td><font size="-1">TBD<td><font size="-1">TBD
 </table>
 
 <br><sup>1</sup>If configured, users are prompted to justify label downgrades. However, the justification data is not made available for administrators yet. It will become available when the “send label analytics data for administrators” capability is supported.
@@ -124,9 +124,9 @@ If you have the Azure Information Protection client installed, but you want to u
 
 2. Restart all Office applications. 
 
-## Will sensitivity labels be supported in non-subscription versions of Office like Office 2016 or Office 2019?
+## Will sensitivity labels be supported in non-subscription s of Office like Office 2016 or Office 2019?
 
-No. Sensitivity labels will only be supported in the Office 365 subscription and will not be supported in any non-subscription version. However, the Azure Information Protection unified labeling client may be used in non-subscription versions of Office. 
+No. Sensitivity labels will only be supported in the Office 365 subscription and will not be supported in any non-subscription . However, the Azure Information Protection unified labeling client may be used in non-subscription s of Office. 
 
 ## I previously deployed protection templates before setting up Sensitivity labels. Where did they go?
 
