@@ -19,7 +19,7 @@ description: Understand and configure increased security for Microsoft 365.
 
 *This step is required and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
 
-![](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
+![Phase 6: Information Protection](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
 To ensure that your Microsoft 365 subscription and its data start off and remain secure from malicious threats, configure the following:
 

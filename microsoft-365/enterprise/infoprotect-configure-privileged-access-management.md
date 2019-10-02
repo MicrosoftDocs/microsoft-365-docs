@@ -19,7 +19,7 @@ description: Understand and configure privileged access management for Office 36
 
 *This step is optional and applies only to the E5 and Advanced Compliance versions of Microsoft 365 Enterprise*
 
-![](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
+![Phase 6: Information Protection](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
 Privileged access management is enabled by configuring policies that specify just-in-time access for task-based activities in your Office 365 tenant. It can help protect your organization from breaches that may use existing privileged administrator accounts with standing access to sensitive data or access to critical configuration settings. For example, you could configure a privileged access management policy that requires explicit approval to access and change organization mailbox settings in your Office 365 tenant.
 

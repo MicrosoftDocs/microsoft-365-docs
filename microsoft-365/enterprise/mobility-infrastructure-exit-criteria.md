@@ -37,4 +37,4 @@ Your devices are enrolled in Intune and configured with the appropriate policies
 
 |||
 |:-------|:-----|
-|![](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)| If you're following the phases for the end-to-end deployment of Microsoft 365 Enterprise, your next phase is [information protection](infoprotect-infrastructure.md). |
+|![Phase 6: Information Protection](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)| If you're following the phases for the end-to-end deployment of Microsoft 365 Enterprise, your next phase is [information protection](infoprotect-infrastructure.md). |
