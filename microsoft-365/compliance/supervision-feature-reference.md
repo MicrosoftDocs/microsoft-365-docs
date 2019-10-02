@@ -60,12 +60,12 @@ NOW EXCHANGE IS OPTIONAL
 
 - **Third-party sources:** You can supervise communications from third-party sources for data imported into mailboxes in your Microsoft 365 organization. Connectors support the following third-party resources:
 
-- Instant Bloomberg
-- Facebook
-- LinkedIn
-- SAP SuccessFactors
-- Twitter
-- Custom data connector
+    - Instant Bloomberg
+    - Facebook
+    - LinkedIn
+    - SAP SuccessFactors
+    - Twitter
+    - Custom data connector
 
 Communications captured across these platforms are retained for seven years for each policy by default, even if users leave your organization and their mailbox is deleted. To learn more about third-party Connectors, see [Learn how to import 3rd-party data into Office 365](archiving-third-party-data.md).
 
