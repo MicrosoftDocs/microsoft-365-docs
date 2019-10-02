@@ -1,5 +1,5 @@
 ---
-title: "Sensitivity labels FAQ"
+title: "How sensitivity labels work in Office apps"
 ms.author: greglin
 author: greg-lindsay
 manager: laurawi
@@ -214,11 +214,11 @@ Outlook
 
 ## Can sensitivity labels run alongside the Azure Information Protection client in Office for Windows?
 
-No. Sensitivity labels are turned off if the Azure Information Protection client is loaded in Office for Windows. Also see the next question in this FAQ.
+No. Sensitivity labels are turned off if the Azure Information Protection client is loaded in Office for Windows.
 
-If you have the Azure Information Protection client installed, but you want to use sensitivity labels instead, you can: 
+If you have the Azure Information Protection client installed, but you want to use sensitivity labels instead, you can:
 
-1. Configure the **Use the Sensitivity feature in Office to apply and view sensitivity labels** Group Policy setting, which can be found under **User Configuration\Administrative Templates\Microsoft Office 2016\Security Settings**.
+1. Configure the **Use the Sensitivity feature in Office to apply and view sensitivity labels** Group Policy setting, which can be found under **User Configuration/Administrative Templates/Microsoft Office 2016/Security Settings**.
 
   >Note: this setting can be deployed via traditional group policy deployment mechanisms, or by the [Office cloud policy service](https://docs.microsoft.com/DeployOffice/overview-office-cloud-policy-service). 
  
@@ -230,15 +230,15 @@ If you have the Azure Information Protection client installed, but you want to u
 
 No. Sensitivity labels will only be supported in the Office 365 subscription and will not be supported in any non-subscription version. However, the Azure Information Protection unified labeling client may be used in non-subscription versions of Office. 
 
-## I previously deployed protection templates before setting up Sensitivity labels. Where did they go?
+## I previously deployed protection templates before setting up sensitivity labels. Where did they go?
 
-Administrator-defined [protection templates](https://docs.microsoft.com/azure/information-protection/configure-policy-templates) are hidden from the Office user experience when Sensitivity labels are enabled because they are redundant with Sensitivity labels that have encryption enabled. 
+Administrator-defined [protection templates](https://docs.microsoft.com/azure/information-protection/configure-policy-templates) are hidden from the Office user experience when sensitivity labels are enabled because they are redundant with sensitivity labels that have encryption enabled. 
 
 ## Can a file or email have more than one classification?
 
-Users can select just one label at a time for each document or email, which often results in just one classification. However, if users select a sublabel, this actually applies two labels at the same time; a primary label and a secondary label. By using sublabels, a file can have two classifications that denote a parent\child relationship for an additional level of control. 
+Users can select just one label at a time for each document or email, which often results in just one classification. However, if users select a sublabel, this actually applies two labels at the same time; a primary label and a secondary label. By using sublabels, a file can have two classifications that denote a parent/child relationship for an additional level of control. 
 
-For example, the label **Confidential** might contain sublabels such as **Legal** and **Finance**. You can apply different classification visual markings and different Rights Management templates to these sublabels. A user cannot select the **Confidential** label by itself; only one of its sublabels, such as **Legal**. As a result, the label that they see set is **Confidential** \ **Legal**. The metadata for that file includes one custom text property for **Confidential**, one custom text property for **Legal**, and another that contains both values (**Confidential Legal**). 
+For example, the label **Confidential** might contain sublabels such as **Legal** and **Finance**. You can apply different classification visual markings and different Rights Management templates to these sublabels. A user cannot select the **Confidential** label by itself; only one of its sublabels, such as **Legal**. As a result, the label that they see set is **Confidential** / **Legal**. The metadata for that file includes one custom text property for **Confidential**, one custom text property for **Legal**, and another that contains both values (**Confidential Legal**). 
 
 When you use sublabels, don't configure visual markings, protection, and conditions at the primary label. When you use sublevels, configure these setting on the sublabel only. If you configure these settings on the primary label and its sublabel, the settings at the sublabel take precedence.
 
