@@ -99,4 +99,4 @@ As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step6.png)| [Configure identity governance](identity-configure-identity-governance.md) |
+|![Step 6](./media/stepnumbers/Step6.png)| [Configure identity governance](identity-configure-identity-governance.md) |

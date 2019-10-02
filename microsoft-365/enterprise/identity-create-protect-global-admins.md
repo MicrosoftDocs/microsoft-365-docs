@@ -105,5 +105,5 @@ As an interim checkpoint, see the [exit criteria](identity-exit-criteria.md#crit
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step2.png)| [Secure your passwords](identity-secure-your-passwords.md) |
+|![Step 2](./media/stepnumbers/Step2.png)| [Secure your passwords](identity-secure-your-passwords.md) |
 

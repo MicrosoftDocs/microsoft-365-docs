@@ -87,4 +87,4 @@ As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step4.png)| [Add your user accounts](identity-add-user-accounts.md) |
+|![Step 4](./media/stepnumbers/Step4.png)| [Add your user accounts](identity-add-user-accounts.md) |

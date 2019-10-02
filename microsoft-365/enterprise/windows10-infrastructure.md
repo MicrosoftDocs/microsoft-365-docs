@@ -79,4 +79,4 @@ See how the Contoso Corporation, a fictional but representative multi-national b
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step1.png)| [Prepare your organization for Windows 10 Enterprise](windows10-prepare-your-org.md) |
+|![Step 1](./media/stepnumbers/Step1.png)| [Prepare your organization for Windows 10 Enterprise](windows10-prepare-your-org.md) |

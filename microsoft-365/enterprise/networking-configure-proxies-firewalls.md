@@ -54,7 +54,7 @@ As an interim checkpoint, you can see the [exit criteria](networking-exit-criter
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step5.png)|[Optimize client and Office 365 service performance](networking-optimize-tcp-performance.md) |
+|![Step 5](./media/stepnumbers/Step5.png)|[Optimize client and Office 365 service performance](networking-optimize-tcp-performance.md) |
 
 
 

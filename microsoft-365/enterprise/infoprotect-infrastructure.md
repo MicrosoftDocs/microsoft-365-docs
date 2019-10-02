@@ -33,13 +33,13 @@ Next, use the following steps to build out information protection for Microsoft 
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step1.png)|[Define security and information protection levels](infoprotect-define-sec-infoprotect-levels.md)|
-|![](./media/stepnumbers/Step2.png)|[Configure classification for your environment](infoprotect-configure-classification.md)|
-|![](./media/stepnumbers/Step3.png)|[Configure increased security for Microsoft 365](infoprotect-configure-increased-security-office-365.md)|
-|![](./media/stepnumbers/Step4.png)|[Configure Windows Information Protection](infoprotect-deploy-windows-information-protection.md)|
-|![](./media/stepnumbers/Step5.png)|[Configure Office 365 Data Loss Prevention](infoprotect-data-loss-prevention.md)|
-|![](./media/stepnumbers/Step6.png)|[Configure email encryption](infoprotect-email-encryption.md)|
-|![](./media/stepnumbers/Step7.png)|[Configure privileged access management for Office 365](infoprotect-configure-privileged-access-management.md)|
+|![Step 1](./media/stepnumbers/Step1.png)|[Define security and information protection levels](infoprotect-define-sec-infoprotect-levels.md)|
+|![Step 2](./media/stepnumbers/Step2.png)|[Configure classification for your environment](infoprotect-configure-classification.md)|
+|![Step 3](./media/stepnumbers/Step3.png)|[Configure increased security for Microsoft 365](infoprotect-configure-increased-security-office-365.md)|
+|![Step 4](./media/stepnumbers/Step4.png)|[Configure Windows Information Protection](infoprotect-deploy-windows-information-protection.md)|
+|![Step 5](./media/stepnumbers/Step5.png)|[Configure Office 365 Data Loss Prevention](infoprotect-data-loss-prevention.md)|
+|![Step 6](./media/stepnumbers/Step6.png)|[Configure email encryption](infoprotect-email-encryption.md)|
+|![Step 7](./media/stepnumbers/Step7.png)|[Configure privileged access management for Office 365](infoprotect-configure-privileged-access-management.md)|
 |||
 
 When you've completed these steps, go to the [exit criteria](infoprotect-exit-criteria.md) for this phase to ensure that you meet the required and optional conditions for Microsoft 365 Enterprise.
@@ -58,5 +58,5 @@ See how the Contoso Corporation, a fictional but representative multi-national b
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step1.png)|[Define security and information protection levels](infoprotect-define-sec-infoprotect-levels.md)|
+|![Step 1](./media/stepnumbers/Step1.png)|[Define security and information protection levels](infoprotect-define-sec-infoprotect-levels.md)|
 
