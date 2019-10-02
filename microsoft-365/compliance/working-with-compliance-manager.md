@@ -35,7 +35,7 @@ To get you started, an ISO/IEC 27001:2103 Assessment for Office 365 appears by d
 
 ## Administration
 
-There are specific administrative functions that are only available to the tenant administrator and only visible when logged in with a global administrator account. Once the administrator assigns Compliance Manager roles to other users, those users can view data in Compliance Manager and perform actions determined by their role.
+There are specific administrative functions that are only available to the tenant administrator and only visible when logged in with a global administrator account. Once the administrator assigns Compliance Manager roles to other users, those users can view data in Compliance Manager and perform actions determined by their role. The administration can also give read-only access to Compliance Manager by assigning the user the [Global Reader role in Azure Active Directory (Azure AD)](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader).
   
 ### Assigning Compliance Manager roles to users
 
@@ -548,11 +548,11 @@ You can export an Assessment to an Excel file for compliance stakeholders in you
 
 The following table describes each Compliance Manager permission and what it allows the user do. The table also indicates the role that each permission is assigned.
 
-||**Compliance Manager Reader**|**Compliance Manager Contributor**|**Compliance Manager Assessor**|**Compliance Manager Administrator**|**Portal Admin**|
-|:-----|:-----|:-----|:-----|:-----|:-----|
-|**Read data:** Users can read but not edit data (except for Template data and Tenant Management).  <br> | X | X | X | X  | X |
-|**Edit data:** Users can edit all fields, except the Test Result and Test Date fields (except for Template data and Tenant Management).  <br> || X | X  | X | X |
-|**Edit test results:** Users can edit the Test Result and Test Date fields.  <br> ||| X | X | X |
-|**Manage assessments:** Users can create, archive, and delete Assessments.  <br> |||| X | X |
-|**Manage master data:** Users can view, edit, and delete template data and tenant management data.  <br> |||| X | X |
-|**Manage users:** Users can add other users in their organization to the Reader, Contributor, Assessor, and Administrator roles. Only those users with the Global Administrator role in your organization can add or remove users from the Portal Admin role.  <br> ||||| X |
+||**Azure AD Global Reader**|**Compliance Manager Reader**|**Compliance Manager Contributor**|**Compliance Manager Assessor**|**Compliance Manager Administrator**|**Portal Admin**|
+|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
+|**Read data:** Users can read but not edit data (except for Template data and Tenant Management).  <br> | X | X | X | X | X  | X  |X |
+|**Edit data:** Users can edit all fields, except the Test Result and Test Date fields (except for Template data and Tenant Management).  <br> ||| X | X  | X | X |
+|**Edit test results:** Users can edit the Test Result and Test Date fields.  <br> |||| X | X | X |
+|**Manage assessments:** Users can create, archive, and delete Assessments.  <br> ||||| X | X |
+|**Manage master data:** Users can view, edit, and delete template data and tenant management data.  <br> ||||| X | X |
+|**Manage users:** Users can add other users in their organization to the Reader, Contributor, Assessor, and Administrator roles. Only those users with the Global Administrator role in your organization can add or remove users from the Portal Admin role.  <br> |||||| X |
