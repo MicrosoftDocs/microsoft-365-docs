@@ -136,7 +136,6 @@
 ###### [Set up ATP Safe Attachments policies](./office-365-security/set-up-atp-safe-attachments-policies.md)
 ###### [Set up a custom "do not rewrite" URLs list](./office-365-security/set-up-a-custom-do-not-rewrite-urls-list-with-atp.md)
 ###### [Set up a custom blocked URLs list](./office-365-security/set-up-a-custom-blocked-urls-list-wtih-atp.md)
-
 ##### [Role Administrator setup tasks]()
 ###### [Turn on ATP for SharePoint, OneDrive, and Microsoft Teams](./office-365-security/turn-on-atp-for-spo-odb-and-teams.md)
 #### [Understanding latest attack campaigns with threat analytics](./mtp/latest-attack-campaigns.md)
