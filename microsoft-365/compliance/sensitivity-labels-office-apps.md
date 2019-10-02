@@ -43,7 +43,7 @@ description: "With sensitivity labels, you can classify and help protect your se
 <th><font size="-1">Capability<th colspan="2"><font size="-1">Windows<th colspan="2"><font size="-1">Mac<th colspan="2"><font size="-1">iOS<th colspan="2"><font size="-1">Android<th colspan="2"><font size="-1">Web</tr>
 <tr><td>
 
-<td><font size="-1">
+<td width="0"><font size="-1">
 Word<br>
 Excel<br>
 PowerPoint
