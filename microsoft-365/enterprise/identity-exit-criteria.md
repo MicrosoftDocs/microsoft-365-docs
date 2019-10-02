@@ -17,7 +17,7 @@ description: Ensure that your configuration meets Microsoft 365 Enterprise crite
 
 # Phase 2: Identity infrastructure exit criteria
 
-![](./media/deploy-foundation-infrastructure/identity_icon-small.png)
+![Phase 2-Identity](./media/deploy-foundation-infrastructure/identity_icon-small.png)
 
 Make sure your identity infrastructure meets the following required criteria and that you've considered those that are optional.
 

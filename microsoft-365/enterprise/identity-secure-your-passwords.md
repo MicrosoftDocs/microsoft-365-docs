@@ -17,7 +17,7 @@ description: You need to make your passwords strong and manageable across your o
 
 # Step 2: Secure your passwords
 
-![](./media/deploy-foundation-infrastructure/identity_icon-small.png)
+![Phase 2-Identity](./media/deploy-foundation-infrastructure/identity_icon-small.png)
 
 <a name="identity-password-prot"></a>
 ## Prevent bad passwords

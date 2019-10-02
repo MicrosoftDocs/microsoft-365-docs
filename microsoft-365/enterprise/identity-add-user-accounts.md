@@ -17,7 +17,7 @@ description: Add user accounts and groups either directly in the cloud or throug
 
 # Step 4: Add your user accounts
 
-![](./media/deploy-foundation-infrastructure/identity_icon-small.png)
+![Phase 2-Identity](./media/deploy-foundation-infrastructure/identity_icon-small.png)
 
 <a name="identity-cloud-only"></a>
 ## Create your user accounts for cloud-only identity
