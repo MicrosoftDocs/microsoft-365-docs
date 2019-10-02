@@ -17,7 +17,7 @@ description: You need to make your passwords strong and manageable across your o
 
 # Step 2: Secure your passwords
 
-![](./media/deploy-foundation-infrastructure/identity_icon-small.png)
+![Phase 2-Identity](./media/deploy-foundation-infrastructure/identity_icon-small.png)
 
 <a name="identity-password-prot"></a>
 ## Prevent bad passwords
@@ -93,4 +93,4 @@ As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step3.png)| [Secure and manage your user sign-ins](identity-secure-user-sign-ins.md) |
+|![Step 3](./media/stepnumbers/Step3.png)| [Secure and manage your user sign-ins](identity-secure-user-sign-ins.md) |

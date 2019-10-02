@@ -32,11 +32,11 @@ Use the following steps to build out your networking infrastructure for the requ
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step1.png)|[Prepare your network for Microsoft 365](networking-provide-bandwidth-cloud-services.md)|
-|![](./media/stepnumbers/Step2.png)|[Configure local Internet connections for each office](networking-dns-resolution-same-location.md)|
-|![](./media/stepnumbers/Step3.png)|[Avoid network hairpins](networking-avoid-network-hairpins.md)|
-|![](./media/stepnumbers/Step4.png)|[Configure traffic bypass](networking-configure-proxies-firewalls.md)|
-|![](./media/stepnumbers/Step5.png)|[Optimize client and Office 365 service performance](networking-optimize-tcp-performance.md)|
+|![Step 1](./media/stepnumbers/Step1.png)|[Prepare your network for Microsoft 365](networking-provide-bandwidth-cloud-services.md)|
+|![Step 2](./media/stepnumbers/Step2.png)|[Configure local Internet connections for each office](networking-dns-resolution-same-location.md)|
+|![Step 3](./media/stepnumbers/Step3.png)|[Avoid network hairpins](networking-avoid-network-hairpins.md)|
+|![Step 4](./media/stepnumbers/Step4.png)|[Configure traffic bypass](networking-configure-proxies-firewalls.md)|
+|![Step 5](./media/stepnumbers/Step5.png)|[Optimize client and Office 365 service performance](networking-optimize-tcp-performance.md)|
 
 
 When you've completed these steps, go to the [exit criteria](networking-exit-criteria.md) for this phase to ensure that you meet the required and optional conditions for Microsoft 365 Enterprise.
@@ -49,11 +49,11 @@ Peek inside Microsoft and learn how the company [optimized the Microsoft network
 
 See how the Contoso Corporation, a fictional but representative multi-national business, [optimized their network devices and Internet connections](contoso-networking.md) for Microsoft 365 cloud services.
 
-![](./media/contoso-overview/contoso-icon.png)
+![The Contoso Corporation](./media/contoso-overview/contoso-icon.png)
 
 ## Next step
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step1.png)|[Prepare your network for Microsoft 365](networking-provide-bandwidth-cloud-services.md)|
+|![Step 1](./media/stepnumbers/Step1.png)|[Prepare your network for Microsoft 365](networking-provide-bandwidth-cloud-services.md)|
 
