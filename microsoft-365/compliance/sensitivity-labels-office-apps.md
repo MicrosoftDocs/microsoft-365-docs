@@ -33,10 +33,6 @@ description: "With sensitivity labels, you can classify and help protect your se
 
 - In your label configuration, if you turn on content marking, you must be using Exchange Online for that content marking to be inserted in transit.
 
-### Additional requirements for Outlook for iOS and Android 
-
-- In your label configuration, if you turn on encryption, you must be using Exchange Online for that encryption to be applied in transit.
-
 ## What sensitivity label capabilities are supported in Office today? 
 
 <table border="1" cellspacing="0" cellpadding="0">
