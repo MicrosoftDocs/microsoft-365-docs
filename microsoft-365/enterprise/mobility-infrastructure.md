@@ -18,7 +18,7 @@ ms.custom: microsoft-intune
 
 # Phase 5: Mobile device management for Microsoft 365 Enterprise
 
-![](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon.png)
+![Phase 5: Mobile Device Management](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon.png)
 
 *This feature applies to the E3 and E5 versions of Microsoft 365 Enterprise*
 
