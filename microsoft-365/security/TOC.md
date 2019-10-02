@@ -96,8 +96,8 @@
 ##### [Report junk email and phishing scams in Outlook on the web](./office-365-security/report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)
 ##### [Protect on-premises mailboxes with Exchange Online Protection](./office-365-security/protect-on-premises-mailboxes-with-exchange-online-protection.md)
 ##### [Install the Junk Email Reporting Add-in for Microsoft Outlook](./office-365-security/install-the-junk-email-reporting-add-in-for-microsoft-outlook.md)
-#####[Turn off junk email reporting in Outlook on the web](./office-365-security/turn-off-junk-email-reporting-in-outlook-on-the-web.md)
-#####[What's the difference between junk email and bulk email?](./office-365-security/what-s-the-difference-between-junk-email-and-bulk-email.md)
+##### [Turn off junk email reporting in Outlook on the web](./office-365-security/turn-off-junk-email-reporting-in-outlook-on-the-web.md)
+##### [What's the difference between junk email and bulk email?](./office-365-security/what-s-the-difference-between-junk-email-and-bulk-email.md)
 
 #### [Quarantine email messages in Office 365](./office-365-security/quarantine-email-messages.md)
 ##### [Manage quarantined messages and files as an administrator](./office-365-security/manage-quarantined-messages-and-files.md)
