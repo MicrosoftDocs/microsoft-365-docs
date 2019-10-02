@@ -1,7 +1,7 @@
 ---
 title: "EU Driver's License Number"
-ms.author: stephow
-author: stephow-MSFT
+ms.author: laurawi
+author: laurawi
 manager: laurawi
 ms.date: 8/17/2018
 audience: Admin

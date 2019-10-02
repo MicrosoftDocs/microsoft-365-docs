@@ -1,7 +1,7 @@
 ---
 title: "Overview of event-driven retention"
-ms.author: stephow
-author: stephow-MSFT
+ms.author: laurawi
+author: laurawi
 manager: laurawi
 ms.date: 
 audience: Admin
@@ -118,9 +118,7 @@ Understand that Asset ID is simply another document property in SharePoint and O
   
 ### Step 5: Create an event
 
-When a particular instance of that event type occurs - for example, a product reaches its end of life - go to the Events page in the Security &amp; Compliance Center and create an event. You need to manually trigger an event by creating it.
-  
-![Events page in Security and Compliance Center](media/811bddfb-a7e9-4990-bf5e-abe0dfb91809.png)
+When a particular instance of that event type occurs - for example, a product reaches its end of life - go to the **Records management** > **Events** page in the Security &amp; Compliance Center and create an event. You need to manually trigger an event by creating it.
   
 ### Step 6: Choose the same event type used by the label in step 2
 
