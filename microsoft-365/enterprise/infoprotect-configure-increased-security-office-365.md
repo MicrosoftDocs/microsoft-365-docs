@@ -52,6 +52,6 @@ As an interim checkpoint, see the [exit criteria](infoprotect-exit-criteria.md#c
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step4.png)|[Configure Windows Information Protection](infoprotect-deploy-windows-information-protection.md)|
+|![Step 4](./media/stepnumbers/Step4.png)|[Configure Windows Information Protection](infoprotect-deploy-windows-information-protection.md)|
 
 

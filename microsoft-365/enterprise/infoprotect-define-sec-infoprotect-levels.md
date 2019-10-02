@@ -37,4 +37,4 @@ As an interim checkpoint, see the [exit criteria](infoprotect-exit-criteria.md#c
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step2.png)|[Configure classification for your environment](infoprotect-configure-classification.md)|
+|![Step 2](./media/stepnumbers/Step2.png)|[Configure classification for your environment](infoprotect-configure-classification.md)|

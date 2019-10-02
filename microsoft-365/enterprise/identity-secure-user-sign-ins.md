@@ -17,7 +17,7 @@ description: You can make user sign-ins to Windows devices and to Microsoft 365 
 
 # Step 3: Secure and manage your user sign-ins
 
-![](./media/deploy-foundation-infrastructure/identity_icon-small.png)
+![Phase 2-Identity](./media/deploy-foundation-infrastructure/identity_icon-small.png)
 
 
 <a name="identity-windows-hello"></a>
@@ -87,4 +87,4 @@ As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step4.png)| [Add your user accounts](identity-add-user-accounts.md) |
+|![Step 4](./media/stepnumbers/Step4.png)| [Add your user accounts](identity-add-user-accounts.md) |
