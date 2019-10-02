@@ -17,7 +17,7 @@ description: The steps to deploy the networking infrastructure for Microsoft 365
 
 # Phase 1: Networking infrastructure for Microsoft 365 Enterprise
 
-![](./media/deploy-foundation-infrastructure/networking_icon.png)
+![Phase 1: Networking](./media/deploy-foundation-infrastructure/networking_icon.png)
 
 Microsoft 365 Enterprise includes Office 365, Microsoft Intune, and many identity and security services of Microsoft Azure. All of these cloud-based services rely on the security, performance, and reliability of connections from client devices over the Internet or dedicated circuits. To host these services and make them available to customers all over the world, Microsoft has designed a networking infrastructure that emphasizes performance and integration. 
 
