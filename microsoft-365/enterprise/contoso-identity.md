@@ -28,7 +28,7 @@ Contoso uses a single Active Directory Domain Services (AD DS) forest for contos
 
 Figure 1 shows the Contoso forest with regional domains for the different parts of the world that contain regional hubs.
 
-![](./media/contoso-identity/contoso-identity-fig1.png)
+![Contoso's forest and domains worldwide](./media/contoso-identity/contoso-identity-fig1.png)
  
 **Figure 1: Contoso's forest and domains worldwide**
 
@@ -43,7 +43,7 @@ Contoso allows:
 
 Figure 2 shows the Contoso DMZ containing a public web site, a partner extranet, and a set of Active Directory Federation Services (AD FS) servers. The DMZ is connected to the Internet that contains customers, partners, and Internet services.
 
-![](./media/contoso-identity/contoso-identity-fig2.png)
+![Contoso's support for federated authentication for customers and partners](./media/contoso-identity/contoso-identity-fig2.png)
 
 **Figure 2: Contoso's support for federated authentication for customers and partners**
  
@@ -59,7 +59,7 @@ PHS synchronizes the on-premises AD DS forest with the Azure AD tenant of their 
 
 To perform the ongoing directory synchronization, Contoso has deployed the Azure AD Connect tool on a server in its Paris datacenter. Figure 3 shows the server running Azure AD Connect polling the Contoso AD DS forest for changes and then synchronizing those changes with the Azure AD tenant.
 
-![](./media/contoso-identity/contoso-identity-fig4.png)
+![Contoso's PHS directory synchronization infrastructure](./media/contoso-identity/contoso-identity-fig4.png)
  
 **Figure 3: Contoso's PHS directory synchronization infrastructure**
 
@@ -74,7 +74,7 @@ Contoso created a set of Azure AD and Intune [conditional access policies](ident
 
 Figure 4 shows their resulting set of identity and device conditional access policies.
 
-![](./media/contoso-identity/contoso-identity-fig5.png)
+![Contoso’s identity and device conditional access policies](./media/contoso-identity/contoso-identity-fig5.png)
  
 **Figure 4: Contoso’s identity and device conditional access policies**
 
