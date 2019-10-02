@@ -106,7 +106,7 @@ Certification controls are usually implemented by one person and tested by anoth
 
 ## Permissions
 
-Compliance Manager uses a role-based access control permission model. Only users who are assigned a user role may access Compliance Manager, and the actions allowed by each user are restricted by role type. View a table showing the actions allowed for each permission. [View a table](working-with-compliance-manager.md#permissions) showing the actions allowed for each permission.
+Compliance Manager uses a role-based access control permission model. Only users who are assigned a user role may access Compliance Manager, and the actions allowed by each user are restricted by role type. [View a table](working-with-compliance-manager.md#permissions) showing the actions allowed for each permission.
 
 The tenant admin for your organization can set permissions for other users in Compliance Manager. To grant users access to Compliance Manger:
 
