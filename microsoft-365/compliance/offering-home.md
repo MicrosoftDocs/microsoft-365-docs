@@ -63,7 +63,7 @@ Learn how Microsoft products and services help your organization meet regulatory
                         <p><a href="offering-cjis.md">CJIS</a></p>
                         <p><a href="offering-cnssi-1253.md">CNSSI 1253</a></p>
                         <p><a href="offering-dfars.md">DFARS</a></p>
-                        <p><a href="offering-dod-disa-l2-l3-l5.md">DoD DISA L2, L3, L5</a></p>
+                        <p><a href="offering-dod-disa-l2-l4-l5.md">DoD DISA L2, L4, L5</a></p>
                         <p><a href="offering-doe-10-cfr-part-810.md">DoE 10 CFR Part 810</a></p>
                         <p><a href="offering-ear.md">EAR (US Export Adm. Reg.)</a></p>
                         <p><a href="offering-fedramp.md">FedRAMP</a></p>
