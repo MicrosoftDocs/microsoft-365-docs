@@ -1,7 +1,7 @@
 ---
 title: "How content is identified for data-governance recommendations"
 ms.author: brendonb
-author: stephow-MSFT
+author: laurawi
 manager: laurawi
 ms.date: 1/15/2019
 audience: Admin

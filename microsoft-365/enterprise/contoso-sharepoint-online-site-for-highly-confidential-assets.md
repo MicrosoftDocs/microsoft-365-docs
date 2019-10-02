@@ -51,7 +51,7 @@ Contoso SharePoint admins first created a new team site named **Research**. They
 
 Here are the resulting SharePoint permission levels, SharePoint groups, and their members.
 
-![](./media/contoso-sharepoint-online-site-for-highly-confidential-assets/spo-permissions.png)
+![SharePoint permission levels, SharePoint groups, and their members](./media/contoso-sharepoint-online-site-for-highly-confidential-assets/spo-permissions.png)
 
 Next, they configured additional restrictions for the site.
 
@@ -83,7 +83,7 @@ For the configuration details, see [Protect SharePoint Online files with Azure I
 
 Here is the resulting configuration of the **Research** site for highly confidential assets.
 
-![](./media/contoso-sharepoint-online-site-for-highly-confidential-assets/final-config.png)
+![The resulting configuration of the **Research** site for highly confidential assets](./media/contoso-sharepoint-online-site-for-highly-confidential-assets/final-config.png)
 
 Files in folders of the **Research** site are protected by:
 

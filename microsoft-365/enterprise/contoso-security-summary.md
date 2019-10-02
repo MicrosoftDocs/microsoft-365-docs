@@ -3,7 +3,7 @@ title: "Summary of Microsoft 365 Enterprise security for the Contoso Corporation
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 09/13/2018
+ms.date: 10/02/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -27,8 +27,8 @@ To obtain the sign-off of the deployment of Microsoft 365 Enterprise by the IT s
 - PCs and email are protected from malware
 - Permissions on cloud-based digital assets define who can access what and what they can do and are designed for least privilege access
 - Sensitive and highly regulated digital assets are labeled, encrypted, and stored in secure locations
-- Highly regulated digital assets are protected with permissions
-- IT security can monitor security posture from central dashboards and get notified of security events for quick response and mitigation
+- Highly regulated digital assets are protected with additional encryption and permissions
+- IT security staff can monitor the current security posture from central dashboards and get notified of security events for quick response and mitigation
 
 ## Contoso's path to Microsoft 365 security readiness
 
@@ -36,7 +36,7 @@ Contoso used the following steps to ready their security for their deployment of
 
 1. Limited administrator accounts for the cloud
 
-   Contoso did an extensive review of the existing Active Directory Domain Services (AD DS) administrator accounts and set up a series of cloud administrator accounts and groups.
+   Contoso did an extensive review of the existing Active Directory Domain Services (AD DS) administrator accounts and set up a series of dedicated cloud administrator accounts and groups.
 
 2. Performed data classification analysis into three levels
 
@@ -52,7 +52,7 @@ In accordance with security best practices and Microsoft 365 Enterprise deployme
 
 - Dedicated global administrator accounts with MFA and PIM
 
-  Rather than assign the global admin role to everyday user accounts, Contoso created three, dedicated global administrator accounts with very strong passwords and protected them with multi-factor authentication (MFA) and Azure AD Privileged Identity Management (PIM).  PIM is only available with Microsoft 365 Enterprise E5.
+  Rather than assign the global admin role to everyday user accounts, Contoso created three, dedicated global administrator accounts with strong passwords and protected them with Azure Multi-Factor Authentication (MFA) and Azure Active Directory (Azure AD) Privileged Identity Management (PIM). PIM is only available with Microsoft 365 Enterprise E5.
 
   Signing in with a global administrator account is only done for specific administrative tasks, the passwords are only known to designated staff, and can only be used within the time configured with Azure AD PIM. 
 
@@ -65,11 +65,11 @@ In accordance with security best practices and Microsoft 365 Enterprise deployme
   MFA adds an additional layer of protection to the sign-in process by requiring users to acknowledge a phone call, text message, or an app notification on their smart phone after correctly entering their password. With MFA, Azure AD user accounts are protected against unauthorized sign-in even if an account password is compromised.
 
    - To protect against a compromise of the Microsoft 365 subscription, Contoso requires MFA on all global administrator accounts.
-   - To protect against phishing attacks, in which an attacker compromises the credentials of a trusted person in the organization and sends malicious emails, Contoso enabled MFA on all user accounts, including manager and executive staff. 
+   - To protect against phishing attacks, in which an attacker compromises the credentials of a trusted person in the organization and sends malicious emails, Contoso enabled MFA on all user accounts, including managers and executives. 
 
-- Safer device and application access with conditional access policies
+- Safer device and application access with Conditional Access policies
 
-  Contoso is using [conditional access policies](microsoft-365-policies-configurations.md) for identity, devices, Exchange Online, and SharePoint Online. Identity conditional access policies include requiring password changes for high-risk users and blocking clients from using apps that don’t support modern authentication. Device conditional policies include the definition of approved apps and requiring compliant PCs and mobile devices. Exchange Online conditional access policies include blocking ActiveSync clients and setting up Office 365 message encryption. SharePoint Online conditional access policies include additional protection for sensitive and highly regulated sites.
+  Contoso is using [Conditional Access policies](microsoft-365-policies-configurations.md) for identity, devices, Exchange Online, and SharePoint. Identity Conditional Access policies include requiring password changes for high-risk users and blocking clients from using apps that don’t support modern authentication. Device policies include the definition of approved apps and requiring compliant PCs and mobile devices. Exchange Online Conditional Access policies include blocking ActiveSync clients and setting up Office 365 message encryption. SharePoint Conditional Access policies include additional protection for sensitive and highly regulated sites.
 
 - Windows Hello for Business
 
@@ -103,11 +103,11 @@ In accordance with security best practices and Microsoft 365 Enterprise deployme
 
 - Protect sensitive and highly regulated digital assets with Azure Information Protection labels
 
-  Contoso determined three levels of data protection and deployed [Azure Information Protection](https://docs.microsoft.com/azure/information-protection/what-is-information-protection) labels that users apply to digital assets. For its trade secrets and other intellectual property, Contoso uses Azure Information Protection sub-labels in a scoped policy for highly regulated data that encrypts content and restricts access to specific security groups.
+  Contoso determined three levels of data protection and deployed [Office 365 sensitivity labels](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels) that users apply to digital assets. For its trade secrets and other intellectual property, Contoso uses sensitivity sublabels highly regulated data that encrypts content and restricts access to specific user accounts and groups.
 
 - Prevent intranet data leaks with Office 365 Data Loss Prevention
 
-  Contoso has configured [Data Loss Prevention](https://docs.microsoft.com/office365/securitycompliance/data-loss-prevention-policies) policies for Exchange Online, SharePoint Online, and OneDrive for Business to prevent users from accidentally or intentionally sharing sensitive data.
+  Contoso has configured [Data Loss Prevention](https://docs.microsoft.com/en-us/microsoft-365/compliance/data-loss-prevention-policies) policies for Exchange Online, SharePoint, and OneDrive for Business to prevent users from accidentally or intentionally sharing sensitive data.
 
 - Prevent device data leaks Windows Information Protection
 
@@ -119,20 +119,20 @@ In accordance with security best practices and Microsoft 365 Enterprise deployme
 
 - Device management with Microsoft Intune
 
-  Contoso uses [Microsoft Intune](https://docs.microsoft.com/intune/introduction-intune) to enroll, manage, and configure access to mobile devices and the apps that run on them. Device-based conditional access policies also require approved apps and compliant PCs and mobile devices.
+  Contoso uses [Microsoft Intune](https://docs.microsoft.com/intune/introduction-intune) to enroll, manage, and configure access to mobile devices and the apps that run on them. Device-based Conditional Access policies also require approved apps and compliant PCs and mobile devices.
 
 ## Security management
 
 - Central security dashboard for IT with Azure Security Center
 
-  Contoso uses the [Azure Security Center](https://docs.microsoft.com/intune/introduction-intune) for a unified view of security and threat protection, to manage security policies across its workloads, and to respond to cyberattacks.
+  Contoso uses the [Azure Security Center](https://azure.microsoft.com/services/security-center/) for a unified view of security and threat protection, to manage security policies across its workloads, and to respond to cyberattacks.
 
 - Central security dashboard for users with Windows Defender Security Center
 
-  Contoso has deployed the [Windows Defender Security Center app](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center) to its PCs and devices running Windows 10 Enterprise so that users can see their security posture at a glance and take action.
+  Contoso has deployed the [Windows Security app](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center) to its PCs and devices running Windows 10 Enterprise so that users can see their security posture at a glance and take action.
 
 
 ## Next step
 
-[Learn](contoso-sharepoint-online-site-for-highly-confidential-assets.md) how Contoso created a SharePoint Online site for highly regulated data to enable collaboration among its research teams.
+[Learn](contoso-sharepoint-online-site-for-highly-confidential-assets.md) how Contoso created a SharePoint site for highly regulated data to enable collaboration among its research teams.
 

@@ -2,6 +2,7 @@
 
 # Get started
 ## [What's new in the compliance center](whats-new.md)
+## [Recent updates to compliance content](recently-updated-topics-mcc.md)
 ## [Microsoft 365 compliance center](microsoft-365-compliance-center.md)
 ## [Go to the Security & Compliance Center](go-to-the-securitycompliance-center.md)
 ## [Use your free Azure Active Directory subscription](use-your-free-azure-ad-subscription-in-office-365.md)
@@ -340,7 +341,9 @@
 ### [Document metadata fields](document-metadata-fields.md)
 ### [Manage jobs](manage-jobs.md)
 
-# [Search the audit log](search-the-audit-log-in-security-and-compliance.md)
+# Manage auditing and alert policies
+## [Search the audit log](search-the-audit-log-in-security-and-compliance.md)
+## [Manage alert policies](alert-policies.md)
 ## [Turn audit log search on or off](turn-audit-log-search-on-or-off.md)
 ## [Manage mailbox auditing](enable-mailbox-auditing.md)
 ## [Detailed properties in the audit log](detailed-properties-in-the-office-365-audit-log.md)
