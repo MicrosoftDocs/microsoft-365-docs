@@ -58,7 +58,7 @@ Communication Supervision policies can scan and capture messages across several 
 - **Microsoft Teams:** Chat communications and associated attachments in both public and private Microsoft Teams channels and individual chats are supported in Communication Supervision as a standalone service source or with other Microsoft 365 services. Automatically scans all Microsoft Teams channels and teams for specific users defined in a policy.
 - **Third-party sources:** You can supervise communications from third-party sources for data imported into mailboxes in your Microsoft 365 organization. Communication Supervision supports connections to several popular platforms, including Instant Bloomberg, Facebook, Twitter, and others.
 
-To learn more about support service integration in supervision policies, see [Supported communication types](supervision-feature-reference.md#Supportedcommunicationtypes) for Communication Supervision.
+To learn more about support service integration in supervision policies, see [supported communication types](supervision-feature-reference.md#supported-communication-types) for Communication Supervision.
 
 ## Communication Supervision workflow
 
