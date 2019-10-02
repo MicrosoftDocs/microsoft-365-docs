@@ -43,62 +43,62 @@ description: "With sensitivity labels, you can classify and help protect your se
 <th><font size="-1">Capability<th colspan="2"><font size="-1">Windows<th colspan="2"><font size="-1">Mac<th colspan="2"><font size="-1">iOS<th colspan="2"><font size="-1">Android<th colspan="2"><font size="-1">Web</tr>
 <tr><td>
 
-<td><font size="-1"><b>
+<td><font size="-1">
 Word<br>
 Excel<br>
 PowerPoint
-<td><font size="-1"><b>
+<td><font size="-1">
 Outlook
 
-<td><font size="-1"><b>
+<td><font size="-1">
 Word<br>
 Excel<br>
 PowerPoint
-<td><font size="-1"><b>
+<td><font size="-1">
 Outlook
 
-<td><font size="-1"><b>
+<td><font size="-1">
 Word<br>
 Excel<br>
 PowerPoint
-<td><font size="-1"><b>
+<td><font size="-1">
 Outlook
 
-<td><font size="-1"><b>
+<td><font size="-1">
 Word<br>
 Excel<br>
 PowerPoint
-<td><font size="-1"><b>
+<td><font size="-1">
 Outlook
 
-<td><font size="-1"><b>
+<td><font size="-1">
 Word<br>
 Excel<br>
 PowerPoint
-<td><font size="-1"><b>
+<td><font size="-1">
 Outlook
 </b>
 </tr>
 
 <tr>
-<td border="1"><font size="-2">Manually apply, change, or remove label<td><font size="-1"><b>Yes</b><br>  1910+</font>
-<td border="1"><font size="-1"><b>Yes</b><br>1910+</font>
-<td><font size="-1"><b>Yes</b><br>16.21.0+</font><td><font size="-1"><b>Yes</b><br>16.21.0+</font>
-<td><font size="-1"><b>Yes</b><br>2.21+</font>
-<td><font size="-1">Coming soon<sup>2</sup><td><font size="-1"><b>Yes</b><br>16.0.11231+</font><td><font size="-1">Coming soon<sup>2</sup><td><font size="-1">Coming soon<sup>2</sup><td><font size="-1">Coming soon<sup>2</sup>
+<td border="1"><font size="-2">Manually apply, change, or remove label<td><font size="-1"><b>Yes</b><br><font size="-2">1910+</font>
+<td border="1"><font size="-1"><b>Yes</b><br><font size="-2">1910+</font>
+<td><font size="-1"><b>Yes</b><br><font size="-2">16.21.0+</font><td><font size="-1"><b>Yes</b><br><font size="-2">16.21.0+</font>
+<td><font size="-1"><b>Yes</b><br><font size="-2">2.21+</font>
+<td><font size="-1">Coming soon<sup>2</sup><td><font size="-1"><b>Yes</b><br><font size="-2">16.0.11231+</font><td><font size="-1">Coming soon<sup>2</sup><td><font size="-1">Coming soon<sup>2</sup><td><font size="-1">Coming soon<sup>2</sup>
 
 <tr>
-<td><font size="-2"><a href="https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do">Apply a default label</a><td><font size="-1"><b>Yes</b><br>1910+</font><td><font size="-1"><b>Yes</b><br>1910+</font><td><font size="-1"><b>Yes</b><br>16.21.0+</font><td><font size="-1"><b>Yes</b><br>16.21.0+</font><td><font size="-1"><b>Yes</b><br>2.21+</font><td><font size="-1">Coming soon<sup>2</sup><td><font size="-1"><b>Yes</b><br>16.0.11231+</font><td><font size="-1">Coming soon<sup>2</sup><td><font size="-1">Coming soon<sup>2</sup><td><font size="-1">Coming soon<sup>2</sup>
+<td><font size="-2"><a href="https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do">Apply a default label</a><td><font size="-1"><b>Yes</b><br><font size="-2">1910+</font><td><font size="-1"><b>Yes</b><br><font size="-2">1910+</font><td><font size="-1"><b>Yes</b><br><font size="-2">16.21.0+</font><td><font size="-1"><b>Yes</b><br><font size="-2">16.21.0+</font><td><font size="-1"><b>Yes</b><br><font size="-2">2.21+</font><td><font size="-1">Coming soon<sup>2</sup><td><font size="-1"><b>Yes</b><br><font size="-2">16.0.11231+</font><td><font size="-1">Coming soon<sup>2</sup><td><font size="-1">Coming soon<sup>2</sup><td><font size="-1">Coming soon<sup>2</sup>
 
-<tr><td><font size="-2"><a href="https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do">Require a justification for changing a label</a><sup>1</sup><td><font size="-1"><b>Yes</b><br>1910+</font><td><font size="-1"><b>Yes</b><br>1910+</font><td><font size="-1"><b>Yes</b><br>16.21.0+</font><td><font size="-1"><b>Yes</b><br>16.21.0+</font><td><font size="-1"><b>Yes</b><br>2.21+</font><td><font size="-1">Coming soon<sup>2</sup><td><font size="-1"><b>Yes</b><br>16.0.11231+</font><td><font size="-1">Coming soon<sup>2</sup><td><font size="-1">Coming soon<sup>2</sup><td><font size="-1">Coming soon<sup>2</sup>
+<tr><td><font size="-2"><a href="https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do">Require a justification for changing a label</a><sup>1</sup><td><font size="-1"><b>Yes</b><br><font size="-2">1910+</font><td><font size="-1"><b>Yes</b><br><font size="-2">1910+</font><td><font size="-1"><b>Yes</b><br><font size="-2">16.21.0+</font><td><font size="-1"><b>Yes</b><br><font size="-2">16.21.0+</font><td><font size="-1"><b>Yes</b><br><font size="-2">2.21+</font><td><font size="-1">Coming soon<sup>2</sup><td><font size="-1"><b>Yes</b><br><font size="-2">16.0.11231+</font><td><font size="-1">Coming soon<sup>2</sup><td><font size="-1">Coming soon<sup>2</sup><td><font size="-1">Coming soon<sup>2</sup>
 
-<tr><td><font size="-2"><a href="https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do">Provide help link to a custom help page</a><td><font size="-1"><b>Yes</b><br>1910+</font><td><font size="-1"><b>Yes</b><br>1910+</font><td><font size="-1"><b>Yes</b><br>16.21.0+</font><td><font size="-1"><b>Yes</b><br>16.21.0+</font><td><font size="-1"><b>Yes</b><br>2.21+</font><td><font size="-1">Coming soon<sup>2</sup><td><font size="-1"><b>Yes</b><br>16.0.11231+</font><td><font size="-1">Coming soon<sup>2</sup><td><font size="-1">Coming soon<sup>2</sup><td><font size="-1">Coming soon<sup>2</sup>
+<tr><td><font size="-2"><a href="https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do">Provide help link to a custom help page</a><td><font size="-1"><b>Yes</b><br><font size="-2">1910+</font><td><font size="-1"><b>Yes</b><br><font size="-2">1910+</font><td><font size="-1"><b>Yes</b><br><font size="-2">16.21.0+</font><td><font size="-1"><b>Yes</b><br><font size="-2">16.21.0+</font><td><font size="-1"><b>Yes</b><br><font size="-2">2.21+</font><td><font size="-1">Coming soon<sup>2</sup><td><font size="-1"><b>Yes</b><br><font size="-2">16.0.11231+</font><td><font size="-1">Coming soon<sup>2</sup><td><font size="-1">Coming soon<sup>2</sup><td><font size="-1">Coming soon<sup>2</sup>
 
-<tr><td><font size="-2"><a href="https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels#what-sensitivity-labels-can-do">Mark the content</a><td><font size="-1"><b>Yes</b><br>1910+</font><td><font size="-1"><b>Yes</b><br>1910+</font><td><font size="-1"><b>Yes</b><br>16.21.0+</font><td><font size="-1"><b>Yes</b><br>16.21.0+</font><td><font size="-1"><b>Yes</b><br>2.21+</font><td><font size="-1">Coming soon<sup>2</sup><td><font size="-1"><b>Yes</b><br>16.0.11231+</font><td><font size="-1">Coming soon<sup>2</sup><td><font size="-1">Coming soon<sup>2</sup><td><font size="-1">Coming soon<sup>2</sup>
+<tr><td><font size="-2"><a href="https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels#what-sensitivity-labels-can-do">Mark the content</a><td><font size="-1"><b>Yes</b><br><font size="-2">1910+</font><td><font size="-1"><b>Yes</b><br><font size="-2">1910+</font><td><font size="-1"><b>Yes</b><br><font size="-2">16.21.0+</font><td><font size="-1"><b>Yes</b><br><font size="-2">16.21.0+</font><td><font size="-1"><b>Yes</b><br><font size="-2">2.21+</font><td><font size="-1">Coming soon<sup>2</sup><td><font size="-1"><b>Yes</b><br><font size="-2">16.0.11231+</font><td><font size="-1">Coming soon<sup>2</sup><td><font size="-1">Coming soon<sup>2</sup><td><font size="-1">Coming soon<sup>2</sup>
 
-<tr><td><font size="-2">Assign pre-defined permissions<td><font size="-1"><b>Yes</b><br>1910+</font><td><font size="-1"><b>Yes</b><br>1910+</font><td><font size="-1"><b>Yes</b><br>16.21.0+</font><td><font size="-1"><b>Yes</b><br>16.21.0+</font><td><font size="-1"><b>Yes</b><br>2.21+</font><td><font size="-1">Coming soon<sup>2</sup><td><font size="-1"><b>Yes</b><br>16.0.11231+</font><td><font size="-1">Coming soon<sup>2</sup><td><font size="-1">Coming soon<sup>2</sup><td><font size="-1">Coming soon<sup>2</sup>
+<tr><td><font size="-2">Assign pre-defined permissions<td><font size="-1"><b>Yes</b><br><font size="-2">1910+</font><td><font size="-1"><b>Yes</b><br><font size="-2">1910+</font><td><font size="-1"><b>Yes</b><br><font size="-2">16.21.0+</font><td><font size="-1"><b>Yes</b><br><font size="-2">16.21.0+</font><td><font size="-1"><b>Yes</b><br><font size="-2">2.21+</font><td><font size="-1">Coming soon<sup>2</sup><td><font size="-1"><b>Yes</b><br><font size="-2">16.0.11231+</font><td><font size="-1">Coming soon<sup>2</sup><td><font size="-1">Coming soon<sup>2</sup><td><font size="-1">Coming soon<sup>2</sup>
 
-<tr><td><font size="-2"><a href="https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels#let-users-assign-permissions">Let users assign permissions</a><td><font size="-1">TBD<td><font size="-1"><b>Yes</b><br>1910+</font><td><font size="-1">TBD<td><font size="-1"><b>Yes</b><br>16.21.0+</font><td><font size="-1">TBD<td><font size="-1">Coming soon<sup>2</sup><td><font size="-1">TBD<td><font size="-1">Coming soon<sup>2</sup><td><font size="-1">TBD<td><font size="-1">Coming soon<sup>2</sup>
+<tr><td><font size="-2"><a href="https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels#let-users-assign-permissions">Let users assign permissions</a><td><font size="-1">TBD<td><font size="-1"><b>Yes</b><br><font size="-2">1910+</font><td><font size="-1">TBD<td><font size="-1"><b>Yes</b><br><font size="-2">16.21.0+</font><td><font size="-1">TBD<td><font size="-1">Coming soon<sup>2</sup><td><font size="-1">TBD<td><font size="-1">Coming soon<sup>2</sup><td><font size="-1">TBD<td><font size="-1">Coming soon<sup>2</sup>
 
 <tr><td><font size="-2">Send <a href="https://docs.microsoft.com/microsoft-365/compliance/label-analytics">label analytics</a> data for administrators<td><font size="-1">TBD<td><font size="-1">TBD<td><font size="-1">TBD<td><font size="-1">TBD<td><font size="-1">TBD<td><font size="-1">TBD<td><font size="-1">TBD<td><font size="-1">TBD<td><font size="-1">TBD<td><font size="-1">TBD
 
