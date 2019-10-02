@@ -35,7 +35,7 @@ To get you started, an ISO/IEC 27001:2103 Assessment for Office 365 appears by d
 
 ## Administration
 
-There are specific administrative functions that are only available to the tenant administrator and only visible when logged in with a global administrator account. Once the administrator assigns Compliance Manager roles to other users, those users can view data in Compliance Manager and perform actions determined by their role. The administration can also give read-only access to Compliance Manager by assigning the user the [Global Reader role in Azure Active Directory (Azure AD)](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader).
+There are specific administrative functions that are only available to the tenant administrator and only visible when logged in with a global administrator account. Once the administrator assigns Compliance Manager roles to other users, those users can view data in Compliance Manager and perform actions determined by their role. The administrator can also give read-only access to Compliance Manager by assigning the user the [Global Reader role in Azure Active Directory (Azure AD)](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader).
   
 ### Assigning Compliance Manager roles to users
 
