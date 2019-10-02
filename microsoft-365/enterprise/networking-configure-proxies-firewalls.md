@@ -19,7 +19,7 @@ description: Understand and configure web browsers and edge devices for traffic 
 
 *This step is optional and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
 
-![](./media/deploy-foundation-infrastructure/networking_icon-small.png)
+![Phase 1-Networking](./media/deploy-foundation-infrastructure/networking_icon-small.png)
 
 Because general Internet traffic can be risky, typical organization networks enforce security with edge devices such as proxy servers, SSL Break and Inspect, packet inspection devices, and data loss prevention systems. Read about some of the issues with network interception devices at [Using third-party network devices or solutions on Office 365 traffic](https://support.microsoft.com/help/2690045/using-third-party-network-devices-or-solutions-with-office-365).
 

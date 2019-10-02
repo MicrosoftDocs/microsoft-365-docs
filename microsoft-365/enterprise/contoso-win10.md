@@ -73,11 +73,9 @@ To complete the in-place upgrade deployment of Windows 10 Enterprise, Contoso im
 6. Ran the Configuration Manager deployment task sequences to deploy the selected Windows package to the broad deployment ring.
 7. Monitored PCs and devices in the broad deployment ring using the Device Health and Update Compliance solutions to address issues.
 
-Figure 1 shows the in-place upgrade and ongoing updates deployment architecture.
+Here is Contoso’s in-place upgrade and ongoing updates deployment architecture.
 
 ![Contoso’s Windows 10 Enterprise deployment infrastructure](./media/contoso-win10/contoso-win10-fig1.png)
- 
-**Figure 1: Contoso’s Windows 10 Enterprise deployment infrastructure**
 
 This infrastructure consists of:
 

@@ -19,7 +19,7 @@ description: Understand the need for Internet bandwidth for Microsoft 365 Enterp
 
 *This step is required and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
 
-![](./media/deploy-foundation-infrastructure/networking_icon-small.png)
+![Phase 1-Networking](./media/deploy-foundation-infrastructure/networking_icon-small.png)
 
 In Step 1, you must:
 

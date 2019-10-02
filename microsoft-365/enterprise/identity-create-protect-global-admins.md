@@ -17,7 +17,7 @@ description: Your global admin accounts need special treatment to help keep them
 
 # Step 1: Create and protect your global admin accounts
 
-![](./media/deploy-foundation-infrastructure/identity_icon-small.png)
+![Phase 2-Identity](./media/deploy-foundation-infrastructure/identity_icon-small.png)
 
 <a name="identity-global-admin"></a>
 ## Protect global administrator accounts
