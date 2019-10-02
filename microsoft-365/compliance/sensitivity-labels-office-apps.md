@@ -43,10 +43,11 @@ description: "With sensitivity labels, you can classify and help protect your se
 <th><font size="-1">Capability<th colspan="2"><font size="-1">Windows<th colspan="2"><font size="-1">Mac<th colspan="2"><font size="-1">iOS<th colspan="2"><font size="-1">Android<th colspan="2"><font size="-1">Web</tr>
 <tr><td>
 
-<td width="0"><font size="-1">
+<td><font size="-1">
 Word<br>
 Excel<br>
 PowerPoint
+
 <td><font size="-1">
 Outlook
 
@@ -132,9 +133,9 @@ If you have the Azure Information Protection client installed, but you want to u
 
 2. Restart all Office applications. 
 
-## Will sensitivity labels be supported in non-subscription s of Office like Office 2016 or Office 2019?
+## Will sensitivity labels be supported in non-subscription versions of Office like Office 2016 or Office 2019?
 
-No. Sensitivity labels will only be supported in the Office 365 subscription and will not be supported in any non-subscription . However, the Azure Information Protection unified labeling client may be used in non-subscription s of Office. 
+No. Sensitivity labels will only be supported in the Office 365 subscription and will not be supported in any non-subscription version. However, the Azure Information Protection unified labeling client may be used in non-subscription versions of Office. 
 
 ## I previously deployed protection templates before setting up Sensitivity labels. Where did they go?
 
