@@ -3,7 +3,7 @@ title: "Configure the outbound spam policy"
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 11/10/2016
+ms.date: 10/02/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
