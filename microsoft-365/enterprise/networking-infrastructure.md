@@ -49,7 +49,7 @@ Peek inside Microsoft and learn how the company [optimized the Microsoft network
 
 See how the Contoso Corporation, a fictional but representative multi-national business, [optimized their network devices and Internet connections](contoso-networking.md) for Microsoft 365 cloud services.
 
-![](./media/contoso-overview/contoso-icon.png)
+![The Contoso Corporation](./media/contoso-overview/contoso-icon.png)
 
 ## Next step
 

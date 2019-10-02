@@ -17,7 +17,7 @@ description: The steps to deploy the information protection infrastructure for M
 
 # Phase 6: Information protection
 
-![](./media/deploy-foundation-infrastructure/infoprotection_icon.png)
+![Phase 6: Information protection](./media/deploy-foundation-infrastructure/infoprotection_icon.png)
 
 Information protection is a set of policies and technologies that define how you transmit, store, and process sensitive information. In Phase 6, you step through information protection settings and features of Microsoft 365 Enterprise that help you secure data for your cloud-based workloads and scenarios.
 
@@ -52,7 +52,7 @@ Learn how IT experts at Microsoft use [Azure Information Protection and safeguar
 
 See how the Contoso Corporation, a fictional but representative multi-national business, [implemented information protection](contoso-info-protect.md) with Microsoft 365 cloud services.
 
-![](./media/contoso-overview/contoso-icon.png)
+![The Contoso Corporation](./media/contoso-overview/contoso-icon.png)
 
 ## Next step
 

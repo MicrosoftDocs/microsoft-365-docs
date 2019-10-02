@@ -17,7 +17,7 @@ description: Ensure that your configuration meets Microsoft 365 Enterprise crite
 
 # Phase 3: Windows 10 Enterprise infrastructure exit criteria
 
-![](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
+![Phase 3: Windows 10 Enterprise](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
 
 Make sure your Windows 10 Enterprise infrastructure meets the following required criteria and that you've considered those that are optional.
 

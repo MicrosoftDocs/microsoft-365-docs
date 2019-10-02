@@ -19,7 +19,7 @@ description: Understand and deploy Windows Information Protection in Microsoft 3
 
 *This step is optional and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
 
-![](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
+![Phase 6: Information Protection](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
 With more personal devices being used for work, there’s increased risk for apps and devices to leak private organization data. For example, an employee inadvertently sends a picture of a marketing plan for a future product to a social media site or saves a file containing highly confidential information to their public cloud storage. 
 
