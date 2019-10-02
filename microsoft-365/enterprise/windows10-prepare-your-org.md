@@ -16,7 +16,7 @@ ms.author: josephd
 
 *This article applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
 
-![](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
+![Phase 3: Windows 10 Enterprise](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
 
 Before upgrading your devices to Windows 10 Enterprise, consider the following:
 

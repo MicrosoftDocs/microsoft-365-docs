@@ -73,7 +73,7 @@ Peek inside Microsoft and learn how the company [deployed Windows 10 Enterprise 
 
 See how the Contoso Corporation, a fictional but representative multi-national business, [deployed Windows 10 Enterprise](contoso-win10.md).
 
-![](./media/contoso-overview/contoso-icon.png)
+![The Contoso Corporation](./media/contoso-overview/contoso-icon.png)
 
 ## Next step
 

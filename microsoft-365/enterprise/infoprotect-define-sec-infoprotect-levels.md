@@ -19,7 +19,7 @@ description: Understand and configure security and information protection levels
 
 *This step is required and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
 
-![](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
+![Phase 6: Information Protection](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
 In this step, you'll define the levels of security and protection for your organization. For example, your sales department might only require a low security level. However, your research department and its highly valuable intellectual property might require a high security level that encrypts files and limits access to only research staff.
 
