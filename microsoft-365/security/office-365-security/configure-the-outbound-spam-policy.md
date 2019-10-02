@@ -56,7 +56,7 @@ Use the following procedure to edit the default outbound spam policy:
 
    The administrator for the domain, who is specified using this setting, will be informed that outbound messages are blocked for this user.  To see what this notification looks like, see [Sample notification when a sender is blocked sending outbound spam](sample-notification-when-a-sender-is-blocked-sending-outbound-spam.md).
 
-   [NOTE!] A system alert is also generated indicating the user has been restricted.  To learn more about the alert and how to recover the user see, [removing a user from the Restricted Users portal after sending spam email](removing-user-from-restricted-users-portal-after-spam).
+   [NOTE!] A system alert is also generated indicating the user has been restricted.  To learn more about the alert and how to recover the user see, [Removing a user from the Restricted Users portal after sending spam email](removing-user-from-restricted-users-portal-after-spam.md).
 
 4. Expand the **Recipient limits** section to specify the maximum number of recipients that a user can send to, per hour for internal and external recipients together with the maximum number per day.
 
@@ -65,7 +65,7 @@ Use the following procedure to edit the default outbound spam policy:
 7. Specify the **action** to take when a user exceeds the specified limits.  The actions that are possible are as follows:
     * **Restrict the user from sending mail till the following day**.  Once any sending limit has been exceeded (internal, external or daily) an alert will be generated for the admin and the user will be unable to send any further email until the following day, based on UTC time. There is no way for the administrator to override this block.
 
-    * **Restrict the user from sending mail**.  Once any sending limit has been exceeded (internal, external or daily) an alert will be generated for the admin and the user will be unable to send any further email until the administrator removes the restriction.  In these cases the user will be listed on the [restricted users page](removing-user-from-restricted-users-portal-after-spam).  Once removed from the list the user will not be restricted again for that day.
+    * **Restrict the user from sending mail**.  Once any sending limit has been exceeded (internal, external or daily) an alert will be generated for the admin and the user will be unable to send any further email until the administrator removes the restriction.  In these cases the user will be listed on the [Restricted Users page](removing-user-from-restricted-users-portal-after-spam.md).  Once removed from the list the user will not be restricted again for that day.
 
     * **No Action/Alert only**. Once any sending limit has been exceeded (internal, external or daily) an alert will be generated for the admin but no action will be taken to restrict the user.
 
