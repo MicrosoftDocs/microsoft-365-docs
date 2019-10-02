@@ -20,7 +20,7 @@
 ## [Communication Supervision]()
 ### [Learn about Communication Supervision](supervision-policies.md)
 ### [Configure supervision policies for your organization](configure-supervision-policies.md)
-### [Investigate and resolve supervision alerts](supervision-investigate-resolve.md)
+### [Investigate and resolve supervision alerts](supervision-investigate-remediate.md)
 ### [Feature reference for Communication Supervision](supervision-feature-reference.md)
 ### [Configure supervision policies for Office 365](supervision-configure-office-365.md)
 ## [Information barriers](information-barriers.md)
