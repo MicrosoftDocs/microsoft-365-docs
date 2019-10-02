@@ -17,7 +17,7 @@ description: The steps to deploy the Office 365 ProPlus infrastructure for Micro
 
 # Phase 4: Office 365 ProPlus
 
-![](./media/deploy-foundation-infrastructure/O365proplus_icon.png)
+![Phase 4: Office 365 ProPlus](./media/deploy-foundation-infrastructure/O365proplus_icon.png)
 
 *This applies to both the E3 and E5 versions of Microsoft 365 Enterprise and Microsoft 365 Education*
 
