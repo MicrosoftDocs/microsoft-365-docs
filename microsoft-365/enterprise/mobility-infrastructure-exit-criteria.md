@@ -17,7 +17,7 @@ ms.custom: microsoft-intune
 
 # Mobile device management infrastructure exit criteria
 
-![](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon-small.png)
+![Phase 5: Mobile Device Management](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon-small.png)
 
 *This applies to the E3 and E5 versions of Microsoft 365 Enterprise*
 

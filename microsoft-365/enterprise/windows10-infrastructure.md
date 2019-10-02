@@ -14,7 +14,7 @@ ms.author: greglin
 
 # Phase 3: Windows 10 Enterprise
 
-![](./media/deploy-foundation-infrastructure/win10enterprise_icon.png)
+![Phase 3: Windows 10 Enterprise](./media/deploy-foundation-infrastructure/win10enterprise_icon.png)
 
 Microsoft 365 Enterprise includes Windows 10 Enterprise, which gives you the tools to do more and stay secure. Windows 10 Enterprise:
 
