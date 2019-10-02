@@ -1,5 +1,5 @@
 ---
-title: "Investigate and resolve communication supervision alerts"
+title: "Investigate and resolve Communication Supervision alerts"
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -15,8 +15,8 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-description: "Investigate and resolve communication supervision alerts in Microsoft 365."
+description: "Investigate and resolve Communication Supervision alerts in Microsoft 365."
 ---
 
-# Investigate and resolve communication supervision alerts
+# Investigate and resolve Communication Supervision alerts
 

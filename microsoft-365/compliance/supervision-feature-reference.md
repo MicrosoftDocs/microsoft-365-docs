@@ -1,5 +1,5 @@
 ---
-title: "Communication supervision feature reference"
+title: "Communication Supervision feature reference"
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -15,14 +15,14 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-description: "Feature reference for communication supervision in Microsoft 365. Learn details and specifications for feature components."
+description: "Feature reference for Communication Supervision in Microsoft 365. Learn details and specifications for feature components."
 ---
 
-# Communication supervision feature reference
+# Communication Supervision feature reference
 
 ## Supervision policy
 
-You create communication supervision policies for Microsoft 365 organizations in the Microsoft 365 compliance center. If you're an Office 365 organization, you'll configure communication policies in the Office 365 Security and Compliance Center. These policies define which communications and users are subject to review in your organization, define custom conditions that the communications must meet, and specifies who should perform reviews. Users included in the Supervisory Review role group can set up policies and anyone who has this role assigned can access the Supervision page in the Compliance center.
+You create Communication Supervision policies for Microsoft 365 organizations in the Microsoft 365 compliance center. If you're an Office 365 organization, you'll configure communication policies in the Office 365 Security and Compliance Center. These policies define which communications and users are subject to review in your organization, define custom conditions that the communications must meet, and specifies who should perform reviews. Users included in the Supervisory Review role group can set up policies and anyone who has this role assigned can access the Supervision page in the Compliance center.
 
 ## Supervised users
 
@@ -33,7 +33,7 @@ Before you start using supervision, you must determine who needs their communica
 
 ## Reviewers
 
-When you create a communication supervision policy, you must determine who will perform the reviews of the messages of the supervised users. In the policy, user email addresses identify individuals or groups of people to review supervised communications. All reviewers must have mailboxes hosted on Exchange Online.
+When you create a Communication Supervision policy, you must determine who will perform the reviews of the messages of the supervised users. In the policy, user email addresses identify individuals or groups of people to review supervised communications. All reviewers must have mailboxes hosted on Exchange Online.
 
 ## Groups for supervised users and reviewers
 
@@ -44,6 +44,8 @@ When you select an Office 365 group for supervised users, the policy monitors th
 ## Supported communication types
 
 With supervision policies, you can choose to monitor messages in one or more of the following communication platforms:
+
+NOW EXCHANGE IS OPTIONAL
 
 - **Exchange email:** Mailboxes hosted on Exchange Online as part of your Microsoft 365 or Office 365 subscription are all eligible for message supervision. Emails and attachments matching supervision policy conditions are instantly available for monitoring and in supervision reports. Supported attachment types for supervision are the same as the [file types supported for Exchange mail flow rule content inspections](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection).
 
@@ -61,7 +63,7 @@ With supervision policies, you can choose to monitor messages in one or more of 
 - Instant Bloomberg
 - Facebook
 - LinkedIn
-- SuccessFactors
+- SAP SuccessFactors
 - Twitter
 - Custom data connector
 
@@ -269,4 +271,4 @@ In addition to information provided in the supervision reports and logs, you can
 
 ## Ready to get started?
 
-To configure communication supervision for your Microsoft 365 organization, see [Configure communication supervision for your Microsoft 365 organization (Preview)](configure-supervision-policies.md). To configure communication supervision in your Office 365 organization, see [Configure communication supervision in Office 365](supervision-configure-office-365.md).
+To configure Communication Supervision for your Microsoft 365 organization, see [Configure Communication Supervision for your Microsoft 365 organization (Preview)](configure-supervision-policies.md). To configure Communication Supervision in your Office 365 organization, see [Configure Communication Supervision in Office 365](supervision-configure-office-365.md).
