@@ -28,10 +28,6 @@ description: "Learn how to roll the Customer and availability keys stored in Azu
 
 ## Request a new version of each existing key you want to roll
 
-<!---
-(TB): "You use the same cmdlet" as...? When you created the key? 
--->
-
 When you roll a key, you request a new version of an existing key. To request a new version of an existing key, you use the same cmdlet, [Add-AzureKeyVaultKey](https://docs.microsoft.com/powershell/module/AzureRM.KeyVault/Add-AzureKeyVaultKey), with the same syntax that you used to create the key in the first place. After you’ve finished rolling any key associated with a Data Encryption Policy (DEP), you run another cmdlet to ensure that Customer Key begins using the new key. Do this step in each Azure Key Vault (AKV).
 
 For example:
