@@ -224,7 +224,7 @@ If you have the Azure Information Protection client installed, but you want to u
  
   Alternatively, you can uninstall or [disable](https://support.office.com/article/view-manage-and-install-add-ins-in-office-programs-16278816-1948-4028-91e5-76dca5380f8d) the Azure Information Protection client. 
 
-2. Restart all Office applications. 
+2. Restart all Office applications.
 
 ## Will sensitivity labels be supported in non-subscription versions of Office like Office 2016 or Office 2019?
 
@@ -248,4 +248,5 @@ No. When you label an email message that has attachments, those attachments do n
 
 ## Additional resources
 
-[Frequently asked questions about classification and labeling in Azure Information Protection](https://docs.microsoft.com/azure/information-protection/faqs-infoprotect).
+[Frequently asked questions about classification and labeling in Azure Information Protection](https://docs.microsoft.com/azure/information-protection/faqs-infoprotect)<br>
+[Apply sensitivity labels to your documents and email within Office](https://support.office.com/article/apply-sensitivity-labels-to-your-documents-and-email-within-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
