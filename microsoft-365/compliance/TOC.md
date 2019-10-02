@@ -130,6 +130,7 @@
 #### [View label usage with label analytics](label-analytics.md)
 #### [View label activity for documents](view-label-activity-for-documents.md)
 #### [View the data governance reports](view-the-data-governance-reports.md)
+### [Records](records.md)
 ### Events
 #### [Event-based retention](event-driven-retention.md)
 #### [Automate event-based retention](automate-event-driven-retention.md)
