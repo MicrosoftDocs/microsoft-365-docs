@@ -17,6 +17,9 @@ description: "Admins can use message trace in the Security & Compliance Center t
 
 Message trace in the Security & Compliance Center follows email messages as they travel through your Exchange Online organization. You can determine if a message was received, rejected, deferred, or delivered by the service. It also shows what actions were taken on the message before it reached its final status.
 
+> [!NOTE]
+> To perform message trace, administrator must be member of Organization Management, Compliance Management or Help Desk role groups.
+
 Message trace in the Security & Compliance Center improves upon message trace that was available in the Exchange admin center (EAC). You can use the information from message trace to efficiently answer user questions about what happened to their messages, troubleshoot mail flow issues, and validate policy changes.
 
 > [!NOTE]
