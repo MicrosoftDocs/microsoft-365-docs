@@ -3,7 +3,7 @@ title: "Automated investigation and response (AIR) in Office 365"
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 09/18/2019
+ms.date: 10/02/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
