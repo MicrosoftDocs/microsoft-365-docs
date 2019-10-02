@@ -61,7 +61,7 @@ To deploy Microsoft 365 Enterprise yourself, you can:
 
 Here's the relationship between the foundation infrastructure and the workloads and scenarios.
 
-![](./media/deploy-microsoft-365-enterprise/m365-deploy-content-arch.png)
+![The relationship between the foundation infrastructure and the workloads and scenarios](./media/deploy-microsoft-365-enterprise/m365-deploy-content-arch.png)
 
 Workloads and scenarios operate over the top of the foundation infrastructure. However, you do not have to have all of the foundation infrastructure phases built out to begin using workloads for productivity and collaboration.
 

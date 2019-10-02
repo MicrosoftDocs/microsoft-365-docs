@@ -154,7 +154,7 @@ Learn how IT experts at Microsoft [manage devices with EMS](https://www.microsof
 
 See how the Contoso Corporation, a fictional but representative multi-national business, [deployed their mobile device management infrastructure](contoso-mdm.md) with Microsoft 365 cloud services.
 
-![](./media/contoso-overview/contoso-icon.png)
+![The Contoso Corporation](./media/contoso-overview/contoso-icon.png)
 
 ## Next step
 
