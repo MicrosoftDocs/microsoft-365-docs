@@ -36,7 +36,7 @@ Keep the following things in mind about records:
 
     - The label can't be removed.
 
-  - **Records and folders.** You can apply a retention label to a folder in Exchange, SharePoint, or OneDrive. If a folder is labeled as a record, and you move an item into the folder, the item is labeled as a record. When you move the item out of the folder, the item will continue to be labeled as a record.
+  - **Records and folders.** You can apply a retention label to a folder in Exchange, SharePoint, or OneDrive. If a folder is labeled as a record, and you move an item into the folder, the item is labeled as a record. When you move the item out of the folder, the item continues to be labeled as a record.
 
   - **Records can't be deleted**. If you attempt to delete a record in Exchange, the item is moved to the Recoverable Items folder as described in [How a retention policy works with content in place](https://docs.microsoft.com/en-us/office365/securitycompliance/retention-policies#how-a-retention-policy-works-with-content-in-place).
 
@@ -52,11 +52,11 @@ To declare content as a record, you need to do the following:
 
 1. Create a retention label. In the Microsoft 365 compliance center, go to **Records Management** \> **File Plan**. On the **File plan** page, click **File plan actions** \> **Create a label**.
 
-2. On the **Label settings** page in the wizard, choose the option shown below to set the retention label to declare content as a record.
+2. On the **Label settings** page in the wizard, choose the option to set the retention label to declare content as a record.<br/><br/>
+
+  :::image type="content" source="media/recordversioning6.png" alt-text="Click Use label to classify content as a Record checkbox":::
 
 3. [Publish](labels.md#how-retention-labels-work-with-retention-label-policies) or [auto-apply](labels.md#applying-a-retention-label-automatically-based-on-conditions) the retention label to SharePoint sites and/or OneDrive accounts. 
-
-:::image type="content" source="media/recordversioning6.png" alt-text="Label settings page":::
 
 ### Applying a retention label to content
 
@@ -71,27 +71,25 @@ Here’s what this looks like when a record label is applied to a document on a 
 
 An essential part of records management is the ability to declare a document as a record, and have that record be immutable. At the same time, record immutability prevents collaboration on the document if people need to create subsequent versions. For example, you might declare a sales contract as a record, but then need to update the contract with new terms and declare the latest version as a new record while still retaining the previous record version. SharePoint Online and OneDrive for Business now support *record versioning*.
 
-To use record versioning, the first step is to use the Microsoft 365 compliance center to create and publish retention label(s) that declare records to all of SharePoint and/or OneDrive for Business or to specific SharePoint sites or specific OneDrive for Business users. The next step is to apply a published retention record label to a document. When this is done, a document property, called *Record status* is displayed next to the retention label, and the initial record status will be **Locked**. At this point, you can do the following things:
+To use record versioning, the first step is to use the Microsoft 365 compliance center to create and publish retention labels that declare records to all of SharePoint and/or OneDrive for Business or to specific SharePoint sites or specific OneDrive for Business users. The next step is to apply a published retention record label to a document. When this is done, a document property, called *Record status* is displayed next to the retention label, and the initial record status will be **Locked**. At this point, you can do the following things:
 
-  - **Continually edit and declare individual versions of the document as records, by unlocking and locking the document’s Record status property.** Only the versions declared as records, are retained when the Record status property is set to Locked. This reduces the risk of retaining unnecessary versions and copies of the document.
-
-<!-- end list -->
+  - **Continually edit and declare individual versions of the document as records, by unlocking and locking the Record status property.** Only the versions declared as records are retained when the **Record status** property is set to **Locked**. This reduces the risk of retaining unnecessary versions and copies of the document.
 
   - **Have the records stored automatically in an in-place records repository located within the site collection.** Each site collection in SharePoint and OneDrive for Business preserves content in its Preservation Hold library. Record versions are stored in the Records folder within this library.
 
   - **Maintain an evergreen document** **containing all versions.** By default, each SharePoint and OneDrive document has a version history available on the item menu. In this version history, you can easily see which versions are records and view those documents.
 
-Record versioning is automatically available for any document that has a retention label that declares the item as a record. When a user views the document properties through the details pane, they simply toggle the **Record status** from **Locked** to **Unlocked**. This single click creates a record in the Records folder in the Preservation Hold library, where it will reside for the remainder of its retention period. While the document is unlocked, any user with permissions can edit the file. However, users can’t delete the file, because it is considered a declared record. After all the necessary changes are made, the user can then toggle the **Record status** from **Unlocked** to **Locked**, so that the document is again declared a record and can’t be edited.
+> [!NOTE]
+> Record versioning requires an Office 365 Enterprise E5 license for each user who has permissions to edit content that's been declared as a record in a SharePoint site or OneDrive account. Users who simply have read-only access don’t require a license.
+
+Record versioning is automatically available for any document that has a retention label that declares the item as a record. When a user views the document properties through the details pane, they toggle the **Record status** from **Locked** to **Unlocked**. This single click creates a record in the Records folder in the Preservation Hold library, where it resides for the remainder of its retention period. While the document is unlocked, any user with permissions can edit the file. However, users can’t delete the file, because it is considered a declared record. After all the necessary changes are made, the user can then toggle the **Record status** from **Unlocked** to **Locked**, so that the document is again declared a record and can’t be edited.
 <br/><br/>
 
 :::image type="content" source="media/recordversioning8.png" alt-text="Record status property on document tagged as a record":::
 
-> [!NOTE]
-> Record versioning requires an Office 365 Enterprise E5 license for each user who has permissions to edit content that's been declared as a record in a SharePoint site or OneDrive account. Users who simply have read-only access don’t require a license.
-
 ## Locking and unlocking a record
 
-After a record label is assigned to a document, any user in the default Members group (the Contribute permission level) can unlock or lock the record. An unlocked record can be edited but not deleted.
+After a record label is assigned to a document, any user in the default Members group (the Contribute permission level) can unlock (or lock an unlocked record). An unlocked record can be edited but not deleted.
 <br/><br/>
 
 :::image type="content" source="media/recordversioning9.png" alt-text="Record status shows record document is unlocked":::
@@ -112,7 +110,7 @@ When a user locks a record, the original document again can’t be edited. But i
 
 ## About record versions
 
-Each time you unlock a record, the latest version is copied to the Records folder, and that version contains the word “Record” in the **Comments** field of the version history.
+Each time you unlock a record, the latest version is copied to the Records folder in the Preservation Hold library, and that version contains the value of **Record** in the **Comments** field of the version history.
 <br/><br/>
 
 :::image type="content" source="media/recordversioning10.png" alt-text="Record shown in the Preservation Hold library":::
@@ -128,18 +126,15 @@ Records are stored in a Records folder in the Preservation Hold library in the t
 
 <br/><br/>
 
-:::image type="content" source="media/recordversioning12.png" alt-text="Record in Preservation Hold library":::
+:::image type="content" source="media/recordversioning12.png" alt-text="The Records folder in the Preservation Hold library":::
 
-![A screenshot of a cell phone
-Description automatically generated](c:\\GitHub\\microsoft-365-docs-pr\\microsoft-365\\compliance/media/image12.png)
+The Preservation Hold library is visible only to site collection administrators. Also, the Preservation Hold library doesn't exist by default. It’s created only when content subject to a retention label or retention policy is deleted for the first time in the site collection.
 
-The Preservation Hold library is visible only to site collection administrators. Also, the Preservation Hold library does not exist by default; instead, it’s created only when content subject to a retention label or retention policy is deleted for the first time in the site collection.
+## Searching the audit log for record versioning-related events
 
-## Searching the audit log for record-related events
+The actions of locking and unlocking records are logged in the Office 365 audit log. You can search for the specific activities **Changed record status to locked** and **Changed record status to unlocked**, which are located in the **File and page activities** section in the **Activities** dropdown list on the Audit log search page in the security and compliance center.
+<br/><br/>
 
-The actions of locking and unlocking records are logged and available when you search the Office 365 audit log. You can search for the specific activities **Changed record status to locked** and **Changed record status to unlocked**, which are located in the File and page activities section in the Activities dropdown list.
+:::image type="content" source="media/recordversioning13.png" alt-text="Search the audit log for record versioning events":::
 
-For more information about searching for these events, see [this section](https://docs.microsoft.com/en-us/office365/securitycompliance/search-the-audit-log-in-security-and-compliance#file-and-page-activities) in the topic [Search the audit log](https://docs.microsoft.com/en-us/office365/securitycompliance/search-the-audit-log-in-security-and-compliance).
-
-![A screenshot of a social media post
-Description automatically generated](c:\\GitHub\\microsoft-365-docs-pr\\microsoft-365\\compliance/media/image13.png)
+For more information about searching for these events, see the "File and page activities" section in [Search the audit log in the Security & Compliance Center](search-the-audit-log-in-security-and-compliance.md#file-and-page-activities).
