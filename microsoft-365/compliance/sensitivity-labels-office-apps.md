@@ -201,7 +201,7 @@ Outlook
 </table>
 
 <br><sup>1</sup>If configured, users are prompted to justify label downgrades. However, the justification data is not made available for administrators yet. It will become available when the “send label analytics data for administrators” capability is supported.
-<br><sup>2</sup>Let users assign permissions is currently only available in Outlook. Availability for Word, Excel, and PowerPoint is TBD.
+<br><sup>2</sup>Let users assign permissions is currently only available in Outlook for Windows and Mac. Availability for Word, Excel, and PowerPoint is TBD.
 <br><sup>3</sup>Expected Q4 of calendar year 2019.
 
 ## When do content marks or encryption get applied after content is given a sensitivity label?
