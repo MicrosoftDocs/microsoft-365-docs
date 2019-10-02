@@ -37,7 +37,7 @@ To protect this data from internal and external threats, see [Microsoft Teams an
 
 Here are the workloads and scenarios in the overall Microsoft 365 Enterprise deployment guide:
 
-![](./media/deploy-workloads/m365-deploy-content-arch-workloads.png)
+![The workloads and scenarios in the overall Microsoft 365 Enterprise deployment guide](./media/deploy-workloads/m365-deploy-content-arch-workloads.png)
 
 See the [Microsoft 365 Productivity Library](https://www.microsoft.com/microsoft-365/success/) for additional scenarios. 
 
