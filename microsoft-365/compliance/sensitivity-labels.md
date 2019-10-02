@@ -43,6 +43,10 @@ You create sensitivity labels in the Microsoft 365 compliance center, Microsoft 
 
 For Azure Information Protection customers, you can use your Azure Information Protection labels in the other admin centers, and your labels will be synced with the Azure portal in case you choose to perform additional or advanced configuration. **Azure Information Protection labels and Office 365 sensitivity labels are fully compatible with each other.** This means, for example, if you have content labeled by Azure Information Protection, you won’t need to reclassify or relabel your content.
 
+For more information about capabilities and prerequisites to use sensitivity labels, see [MIP in Office - FAQ for admins](sensitivity-labels-faq.md).
+
+>Note: Sensitivity labels are only supported for tenants in the global (public) cloud. Sensitivity labels are not supported for tenants in other clouds such as [national clouds](https://docs.microsoft.com/azure/active-directory/develop/authentication-national-cloud).
+
 ## What a sensitivity label is
 
 When you assign a sensitivity label to a document or email, it’s simply like a tag that is:
