@@ -43,46 +43,46 @@ description: "With sensitivity labels, you can classify and help protect your se
 <tr><td>Capability<td colspan="2">Windows<td colspan="2">Mac<td colspan="2">iOS<td colspan="2">Android<td colspan="2">Web</tr>
 <tr><td>
 
-<td><font size="-1">
+<td><font size="-2">
 Word<br>
 Excel<br>
 PowerPoint
-<td><font size="-1">
+<td><font size="-2">
 Outlook
 
-<td><font size="-1">
+<td><font size="-2">
 Word<br>
 Excel<br>
 PowerPoint
-<td><font size="-1">
+<td><font size="-2">
 Outlook
 
-<td><font size="-1">
+<td><font size="-2">
 Word<br>
 Excel<br>
 PowerPoint
-<td><font size="-1">
+<td><font size="-2">
 Outlook
 
-<td><font size="-1">
+<td><font size="-2">
 Word<br>
 Excel<br>
 PowerPoint
-<td><font size="-1">
+<td><font size="-2">
 Outlook
 
-<td><font size="-1">
+<td><font size="-2">
 Word<br>
 Excel<br>
 PowerPoint
-<td><font size="-1">
+<td><font size="-2">
 Outlook
 
 </tr>
 
 <tr>
-<td><font size="-1">Manually apply, change, or remove label<td><font size="-1"><b>Yes</b><br>  1910+</font>
-<td><font size="-1"><b>Yes</b><br>1910+</font>
+<td border="1"><font size="-1">Manually apply, change, or remove label<td><font size="-1"><b>Yes</b><br>  1910+</font>
+<td border="1"><font size="-1"><b>Yes</b><br>1910+</font>
 <td><font size="-1"><b>Yes</b><br>16.21.0+</font><td><font size="-1"><b>Yes</b><br>16.21.0+</font>
 <td><font size="-1"><b>Yes</b><br>2.21+</font>
 <td><font size="-1">Coming soon<sup>2</sup><td><font size="-1"><b>Yes</b><br>16.0.11231+</font><td><font size="-1">Coming soon<sup>2</sup><td><font size="-1">Coming soon<sup>2</sup><td><font size="-1">Coming soon<sup>2</sup>
