@@ -73,7 +73,7 @@ The security playbooks you'll get with AIR are designed to tackle the most frequ
 
 ### Security playbooks are rolling out in phases
 
-As part of AIR, security playbooks are rolling out in phases. Phase 1 is now generally available and includes several playbooks provide recommendations for actions that security administrators can review and approve:
+As part of AIR, security playbooks are rolling out in phases. Phase 1 is now generally available and includes several playbooks that provide recommendations for actions that security administrators can review and approve:
 - User-reported phish message
 - URL click verdict change
 - Malware detected post-delivery (Malware ZAP)
@@ -81,7 +81,7 @@ As part of AIR, security playbooks are rolling out in phases. Phase 1 is now gen
 
 Phase 1 also includes support for manual e-mail investigations (using [Threat Explorer](threat-explorer.md)).
 
-Phase 2 is now progress with the following playbooks in **public preview**, providing recommendations for actions and aiding security administrators investigate issues.
+Phase 2 is now progress with the following playbooks in **public preview**, providing recommendations for actions and aiding security administrators in investigating issues:
 - User reported as compromised (public preview)
 
 Further playbooks will be released as they are completed. Visit the [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap) to see what else is planned and coming soon.
