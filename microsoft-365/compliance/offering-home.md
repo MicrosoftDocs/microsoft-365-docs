@@ -12,7 +12,7 @@ audience: ITPro
 ms.prod: Microsoft-365-enterprise
 ---
 
-# Microsoft Compliance Offerings
+# Microsoft compliance offerings
 
 Learn how Microsoft products and services help your organization meet regulatory compliance standards.
 
