@@ -18,7 +18,7 @@ ms.custom: microsoft-intune
 
 # Phase 5: Mobile device management for Microsoft 365 Enterprise
 
-![](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon.png)
+![Phase 5: Mobile Device Management](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon.png)
 
 *This feature applies to the E3 and E5 versions of Microsoft 365 Enterprise*
 
@@ -154,7 +154,7 @@ Learn how IT experts at Microsoft [manage devices with EMS](https://www.microsof
 
 See how the Contoso Corporation, a fictional but representative multi-national business, [deployed their mobile device management infrastructure](contoso-mdm.md) with Microsoft 365 cloud services.
 
-![](./media/contoso-overview/contoso-icon.png)
+![The Contoso Corporation](./media/contoso-overview/contoso-icon.png)
 
 ## Next step
 

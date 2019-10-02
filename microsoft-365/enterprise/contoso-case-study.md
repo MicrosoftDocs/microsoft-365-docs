@@ -3,7 +3,7 @@ title: "Microsoft 365 Enterprise for the Contoso Corporation"
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 09/13/2018
+ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -38,15 +38,15 @@ See these articles for the details:
 
 - [Networking](contoso-networking.md)
 
-  Contoso's network engineers have optimized traffic to their intranet edge and to the closest Microsoft network location on the Internet.
+  Contoso's network engineers have optimized traffic for their on-premises users to their intranet edge and to the closest Microsoft network location on the Internet.
 
 - [Identity](contoso-identity.md)
 
-  Contoso's identity in the cloud solution leverages their on-premises identity provider and includes federated authentication with their existing trusted, third-party identity providers.
+  Contoso's identity in the cloud solution leverages their on-premises Active Directory Domain Services (AD DS) forest and includes federated authentication with their existing trusted, third-party identity providers.
 
 - [Windows 10 Enterprise](contoso-win10.md)
 
-  Contoso's Windows 10 Enterprise infrastructure deploys and automatically installs updates for their primary PC and device operating system.
+  Contoso's Windows 10 Enterprise infrastructure deploys and automatically installs updates for devices running their primary PC and device operating system.
 
 - [Office 365 ProPlus](contoso-o365pp.md)
 
@@ -54,7 +54,7 @@ See these articles for the details:
 
 - [Mobile device management](contoso-mdm.md)
 
-  With many roaming employees and both company and personal smart phones and tablets, Contoso uses mobile device management to enroll and secure the devices and their data.
+  With many roaming employees and both company and personal smart phones and tablets, Contoso uses mobile device management to enroll and secure the devices and their data and manage apps.
 
 - [Information protection](contoso-info-protect.md)
 
@@ -66,7 +66,7 @@ See these articles for the details:
 
 - [SharePoint Online site for highly confidential digital assets](contoso-sharepoint-online-site-for-highly-confidential-assets.md)
 
-  To protect the intellectual property andl allow its research teams to more easily collaborate, Contoso used a SharePoint Online site for sites for highly regulated data.
+  To protect the intellectual property and allow its research teams to more easily collaborate, Contoso used a SharePoint Online site for highly regulated data.
 
 
 ## Next step
