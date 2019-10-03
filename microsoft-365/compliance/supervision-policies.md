@@ -20,11 +20,11 @@ description: "Learn about Communication Supervision in Microsoft 365"
 
 # Communication Supervision in Microsoft 365 (Preview)
 
-Communication Supervision in Microsoft 365 allows you to capture employee communications for examination and remediation by designated reviewers. You can define specific policies to scan and capture internal and external email, Microsoft Teams, or 3rd-party communications in your organization. Reviewers can then examine the messages to make sure that they are compliant with your organization's message standards and remediate them according to their importance and severity.
+Communication Supervision in Microsoft 365 allows you to capture employee corporate communications for examination and remediation by designated reviewers. You can define specific policies to scan and capture internal and external email, Microsoft Teams, or 3rd-party communications in your organization. Reviewers can then examine the messages to make sure that they are compliant with your organization's message standards and remediate them according to their importance and severity.
 
 Communication Supervision policies help you overcome many modern compliance challenges associated with internal and external communications, including:
 
-- Monitoring increasing types of communication channels
+- Scanning increasing types of communication channels
 - The increasing volume of message data
 - Regulatory enforcement & the risk of fines
 
@@ -36,19 +36,19 @@ To learn more about upcoming Communication Supervision feature improvements and 
 
 ## Scenarios for Communication Supervision
 
-Communication Supervision policies can assist monitoring communications in your organization in several areas:
+Communication Supervision policies can assist with reviewing communications in your organization in several areas:
 
 - **Corporate policies**
 
-    Employees must comply with acceptable use, ethical standards, and other corporate policies in all their business-related communications. Communication Supervision policies can detect policy violations and help you take corrective actions to help mitigate these types of incidents. For example, you could monitor your organization for potential human resources violations such as harassment or the use of inappropriate or offensive language in employee communications.
+    Employees must comply with acceptable use, ethical standards, and other corporate policies in all their business-related communications. Communication Supervision policies can detect policy violations and help you take corrective actions to help mitigate these types of incidents. For example, you could scan employee communications in your organization for potential human resources violations such as harassment or the use of inappropriate or offensive language.
 
 - **Risk management**
 
-    Organizations are responsible to all communications distributed throughout their infrastructure and corporate network systems. Using communications supervision policies to help identify and manage potential legal exposure and risk can help minimize risks before they can damage corporate operations. For example, you could monitor your organization for unauthorized communications for confidential projects such as upcoming acquisitions, mergers, earnings disclosures, reorganizations, or leadership team changes.
+    Organizations are responsible to all communications distributed throughout their infrastructure and corporate network systems. Using communications supervision policies to help identify and manage potential legal exposure and risk can help minimize risks before they can damage corporate operations. For example, you could scan messages in your organization for unauthorized communications about confidential projects such as upcoming acquisitions, mergers, earnings disclosures, reorganizations, or leadership team changes.
 
 - **Regulatory compliance**
-
-    Most organizations must comply with some type of regulatory compliance standards as part of their normal operating procedures. These regulations often require organizations to implement some type of supervisory or oversight process for messaging that is appropriate for their industry. The Financial Industry Regulatory Authority (FINRA) Rule 3110 is a good example of a requirement for organizations to have supervisory procedures in place to monitor the activities of its employees and the types of businesses in which it engages. Another example may be a need to monitor broker-dealers in your organization to safeguard against potential money-laundering, insider trading, collusion, or bribery activities. Communication Supervision policies can help your organization meet these requirements by providing a process to both monitor and report on corporate communications.
+scan
+    Most organizations must comply with some type of regulatory compliance standards as part of their normal operating procedures. These regulations often require organizations to implement some type of supervisory or oversight process for messaging that is appropriate for their industry. The Financial Industry Regulatory Authority (FINRA) Rule 3110 is a good example of a requirement for organizations to have supervisory procedures in place to scan employee communications and the types of businesses in which it engages. Another example may be a need to review broker-dealer communications in your organization to safeguard against potential money-laundering, insider trading, collusion, or bribery activities. Communication Supervision policies can help your organization meet these requirements by providing a process to both scan and report on corporate communications.
 
 ## Integration with Microsoft 365 services
 
@@ -70,8 +70,8 @@ WORKFLOW ARTWORK
 
 In this workflow step, you identify your compliance requirements and configure applicable supervision policies. You can choose from the following policy types:
 
-- **Offensive language and anti-harassment**: Use the *Monitor for offensive language* template to quickly create a supervision policy that uses an abusive language machine learning model to automatically detect content that may be considered as harassment.
-- **Sensitive information**: Use the *Monitor for sensitive info* template to create a policy to monitor communications containing defined sensitive information types or keywords to help make sure important data isn't shared with people that shouldn't have access.
+- **Offensive language and anti-harassment**: Use the *Monitor for offensive language* template to quickly create a supervision policy that uses the built-in machine learning classifier to automatically detect content that may be considered as harassment.
+- **Sensitive information**: Use the *Monitor for sensitive info* template to create a policy to scan communications containing defined sensitive information types or keywords to help make sure important data isn't shared with people that shouldn't have access.
 - **Regulatory compliance**: Use the *Monitor for FINRA info* template to... 
 - **Custom policy**: Use the *Custom Policy* template to configure specific communication channels, individual detection conditions, and the amount of content to review for supervision in your organization.
 
