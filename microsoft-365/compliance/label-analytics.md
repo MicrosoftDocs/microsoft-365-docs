@@ -1,7 +1,7 @@
 ---
 title: "View label usage with label analytics"
-ms.author: stephow
-author: stephow-MSFT
+ms.author: laurawi
+author: laurawi
 manager: laurawi
 ms.date: 
 audience: Admin

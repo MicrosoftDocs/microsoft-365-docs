@@ -21,6 +21,7 @@ search.appverid:
 - MOE150
 ms.assetid: 5ffd5327-a83a-4d53-94d6-22ba2f9fd090
 description: "Learn now to automatically deploy Office to Windows 10 devices during setup."
+ms.custom: OKR_SMB_M365
 ---
 
 # Install Office on Windows 10 during setup

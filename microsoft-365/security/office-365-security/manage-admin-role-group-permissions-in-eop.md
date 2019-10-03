@@ -3,7 +3,7 @@ title: "Manage admin role group permissions in EOP"
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: 
+ms.date:
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,9 +13,9 @@ description: "Admins can learn how to assign or remove permissions in the Exchan
 ---
 
 # Manage admin role group permissions in EOP
-  
+
 In Microsoft Exchange Online Protection (EOP), you can use the Exchange admin center (EAC) to make a user a member of a role group or groups in order to assign them permissions to perform specific administrative tasks. You can also remove a user from a role group or groups by using the EAC.
-  
+
 ## What do you need to know before you begin?
 
 - Estimated time to complete: 5-10 minutes
@@ -28,7 +28,7 @@ In Microsoft Exchange Online Protection (EOP), you can use the Exchange admin ce
 
 > [!TIP]
 > Having problems? Ask for help in the [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) forum.
-  
+
 ## Use the EAC to assign members to admin role groups
 
 1. In the EAC, go to **Permissions** \> **Admin roles**, click the role group that you want to add the user or users to, and then click **Edit** ![Edit icon](../media/ITPro-EAC-EditIcon.gif).
@@ -42,8 +42,8 @@ In Microsoft Exchange Online Protection (EOP), you can use the Exchange admin ce
 5. You will see that the user has been added to the **Members** pane. Click **Save**.
 
    > [!NOTE]
-   > Users may have to sign out and sign in again to see the change in their administrative rights after you add or remove members from the role group. 
-  
+   > Users may have to sign out and sign in again to see the change in their administrative rights after you add or remove members from the role group.
+
 ## Use the EAC to remove members from admin role groups
 
 1. In the EAC, go to **Permissions** \> **Admin Roles**, click the role group that you want to remove a user or users from, and then click **Edit** ![Edit icon](../media/ITPro-EAC-EditIcon.gif).
@@ -54,7 +54,7 @@ In Microsoft Exchange Online Protection (EOP), you can use the Exchange admin ce
 
    > [!NOTE]
    > Users may have to sign out and sign in again to see the change in their administrative rights after you add or remove members from the role group.
-  
+
 ## For more information
 
 [Feature permissions in EOP](feature-permissions-in-eop.md)

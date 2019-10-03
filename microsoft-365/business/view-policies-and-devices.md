@@ -18,7 +18,8 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6b70fa27-d171-4593-8ecf-f78bb4ed2e99
-description: "View device policies and actions by signing in to Microsoft 365 business with global admin credintials."
+description: "View device policies and actions by signing in to Microsoft 365 business with global admin credentials."
+ms.custom: OKR_SMB_M365
 ---
 
 # View and manage policies and devices
