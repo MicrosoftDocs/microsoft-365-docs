@@ -20,7 +20,7 @@ description: "Feature reference for Communication Supervision in Microsoft 365. 
 
 # Communication Supervision feature reference
 
-## Communication Supervision policy
+## Policies
 
 You create Communication Supervision policies for Microsoft 365 organizations in the Microsoft 365 compliance center. If you're an Office 365 organization, you'll configure communication policies in the Office 365 Security and Compliance Center. These policies define which communications and users are subject to review in your organization, define custom conditions that the communications must meet, and specifies who should perform reviews. Users included in the Supervisory Review role group can set up policies and anyone who has this role assigned can access the Supervision page in the Compliance center. If needed, you can export the history of modifications to a policy to a .csv file that also includes the current status of alerts pending review, escalated items, and resolved items. Policies can be deleted when no longer needed.
 
@@ -51,9 +51,7 @@ When you select an Office 365 group for supervised users, the policy scans the c
 
 ## Supported communication types
 
-With supervision policies, you can choose to scan messages in one or more of the following communication platforms:
-
-NOW EXCHANGE IS OPTIONAL
+With supervision policies, you can choose to scan messages in one or more of the following communication platforms as a group or as standalone sources:
 
 - **Exchange email:** Mailboxes hosted on Exchange Online as part of your Microsoft 365 or Office 365 subscription are all eligible for message supervision. Emails and attachments matching supervision policy conditions are instantly available in supervision reports. Supported attachment types for supervision are the same as the [file types supported for Exchange mail flow rule content inspections](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection).
 
