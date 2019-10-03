@@ -206,7 +206,7 @@ Outlook
 | --- | --- | --- |
 | Word, Excel, PowerPoint on all platforms | Immediately | Immediately |
 | Outlook for PC and Mac | After the email is sent by Exchange Online | Immediately |
-| Word, Excel, PowerPoint on all platforms | After the email is sent by Exchange Online | After the email is sent by Exchange Online |
+| Outlook on the web, iOS, and Android | After the email is sent by Exchange Online | After the email is sent by Exchange Online |
 
 ## Can sensitivity labels run alongside the Azure Information Protection client in Office for Windows?
 
