@@ -3,12 +3,12 @@ title: Overview of the new Microsoft 365 compliance center
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 05/29/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-seccomp
 localization_priority: Normal
 description: Learn about the new Microsoft 365 compliance center, including what it contains, how to get it, and your next steps.
+ms.collection: M365-security-compliance
 ---
 
 # Overview of the all-new Microsoft 365 compliance center
