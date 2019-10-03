@@ -167,6 +167,20 @@ You can create notice templates if you want to send users an email reminder noti
 
 When selecting a notice template to apply to a policy violation, you can choose to accept the field values you defined for the template or overwrite the fields as needed. The Message body field accepts either text or HTML data, all other notice template fields accept text-only data.
 
+## PowerShell reference for Office 365 subscriptions
+
+If needed, you can create and manage Communication Supervision policies in Office 365 subscriptions with the following PowerShell cmdlets. Graph and PowerShell scripting support is not supported for Communication Supervision in Microsoft 365 subscriptions.
+
+- [New-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-supervisoryreviewpolicyv2?view=exchange-ps)
+- [Get-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/get-supervisoryreviewpolicyv2?view=exchange-ps)
+- [Set-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-supervisoryreviewpolicyv2?view=exchange-ps)
+- [Remove-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/remove-supervisoryreviewpolicyv2?view=exchange-ps)
+- [New-SupervisoryReviewRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-supervisoryreviewrule?view=exchange-ps)
+- [Set-SupervisoryReviewRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-supervisoryreviewrule?view=exchange-ps)
+- [Get-SupervisoryReviewActivity](https://docs.microsoft.com/powershell/module/exchange/reporting/get-supervisoryreviewactivity)
+- [Get-SupervisoryReviewOverallProgressReport](https://docs.microsoft.com/powershell/module/exchange/reporting/get-supervisoryreviewoverallprogressreport)
+- [Get-SupervisoryReviewTopCasesReport](https://docs.microsoft.com/powershell/module/exchange/reporting/get-supervisoryreviewtopcasesreport)
+
 ## Monitor & manage
 
 It is easy to monitor the results of your supervision policies and apply a resolution tag. You can quickly see:

@@ -32,7 +32,7 @@ The first step to investigate issues detected by your policies is to review gene
 
 ## Remediate alerts
 
-No matter where you start to review alerts, the next step to take action to remediate the alert. Start your alert remediation using the following workflow:
+No matter where you start to review alerts, the next step is to take action to remediate the alert. Start your alert remediation using the following workflow:
 
 1. **Examine the message basics**: Sometimes it's obvious from the source or subject that a message is spurious and it should be resolved as a false positive. Select the **False Positive** control to immediately resolve the alert and remove from the pending alert queue. This is also a good time to consider using the **Tag as** or **Escalate** controls to assign a tag to applicable messages or to send the message to a designated reviewer. From the source or sender information, you may already know how the message should routed or handled in these circumstances.
 
