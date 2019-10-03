@@ -15,13 +15,9 @@ ms.collection:
 description: "Learn how to roll the Customer and availability keys stored in Azure Key Vault for Office 365 Customer Key. Services include Exchange Online, Skype for Business, SharePoint Online, including Team Sites, and OneDrive for Business."
 ---
 
-<!---
-(TB):The first sentence here should be removed since it conflicts with the Caution below it, "Only roll an encryption key that you use with Customer Key when a clear technical reason exists or a compliance requirement dictates that you have to roll the key." The word "never" is wrong, since, given enough time, a hacker will be able to crack any code. Brijesh got mad at me when I said "customers don't need to rotate keys" during a customer meeting, despite my alignment with the documentation.   
--->
-
 # Roll or rotate a Customer Key or an availability key
 
- Customers can configure their Customer Keys to be stored in a hardware security module (HSM). Keys that you protect with a HSM are virtually impossible to compromise. Even if a root key were in the possession of a malicious actor, there is no feasible means to use it to decrypt data. Only Office 365 code knows how to use these keys.
+You can store your Customer Keys in a hardware security module (HSM). Keys that you protect with an HSM are virtually impossible to compromise. Even if a root key were in the possession of a malicious actor, there is no feasible means to use it to decrypt data. Only Office 365 code knows how to use these keys.
   
 > [!CAUTION]
 > Only roll an encryption key that you use with Customer Key when a clear technical reason exists or a compliance requirement dictates that you must roll the key. In addition, do not delete any keys that are or were associated with policies. When you roll your keys, there will be content encrypted with the previous keys. For example, while active mailboxes will be re-encrypted frequently, inactive, disconnected, and disabled mailboxes may still be encrypted with the previous keys. SharePoint Online performs backup of content for restore and recovery purposes, so there may still be archived content using older keys.
