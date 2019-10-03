@@ -108,12 +108,12 @@ Certification controls are usually implemented by one person and tested by anoth
 
 Compliance Manager uses a role-based access control permission model. Only users who are assigned a user role may access Compliance Manager, and the actions allowed by each user are restricted by role type. [View a table](working-with-compliance-manager.md#permissions) showing the actions allowed for each permission.
 
-The portal admin can set permissions for other users in within Compliance Manager by following these steps:
+The portal admin for Compliance Manager can set permissions for other users in within Compliance Manager by following these steps:
 
 1. From the top **More** drop-down menu, select **Admin**, then **Settings**.
 2. From here, select the role you want to assign and then add the employee you want to assign to that role. Users will then be able to perform certain actions.
 
-In addition, the organization's global admin can [assign users the Global Reader role in Azure Active Directory (Azure AD)](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader). This role gives users read-only permissions to access Compliance Manager, but users cannot edit data or perform any actions within Compliance Manager.
+In addition, users who are assigned the [Global Reader role in Azure Active Directory (Azure AD)](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader) have read-only permission to access Compliance Manager; however they cannot edit data or perform any actions within Compliance Manager.
 
 Note that there is no longer a default **Guest access** role. Each user must be assigned a role in order to access and work within Compliance Manager.
   
