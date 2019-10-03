@@ -24,7 +24,7 @@ You can evaluate and then tag content in your organization in order to control w
 - the top applied sensitivity labels
 - the top applied retention labels
 - the locations of your sensitive and retained data
-- a summary of activities that meet the action criteria for sensitive content, be that monitor, notify or block.
+- a summary of activities that meet the action criteria for sensitive content, be that monitor, notify or block access
 
 <!-- After you create your retention labels and sensitivity labels, you’ll want to see how they’re being used across your tenant. With label analytics in the Microsoft 365 compliance center and Microsoft 365 security center, you can quickly see which labels are used the most and where they’re being applied.
 
