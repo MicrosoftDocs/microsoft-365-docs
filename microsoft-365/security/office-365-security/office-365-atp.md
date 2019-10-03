@@ -81,9 +81,16 @@ Office 365 ATP Plan 2 includes best-of-class [threat investigation and response 
     
 ## Save time with automated investigation and response
 
-(**NEW!**) When you are investigating a potential cyberattack, time is of the essence. The sooner you can identify and mitigate threats, the better off your organization will be. Office 365 ATP Plan 2 will now include [automated investigation and response (AIR)](automated-investigation-response-office.md) capabilities. (If you don't have these capabilities yet, you'll have them soon with ATP Plan 2.)
+(**NEW!**) When you are investigating a potential cyberattack, time is of the essence. The sooner you can identify and mitigate threats, the better off your organization will be. The subscriptions listed below now include [automated investigation and response (AIR)](automated-investigation-response-office.md) capabilities. (If you don't have these capabilities yet, you'll have them soon if you have one of these subscriptions.)
 
-AIR includes a set of security playbooks that can be launched automatically, such as when an alert is triggered, or manually, such as from a view in Explorer. AIR can save your security operations team time and effort in mitigating threats, effectively and efficiently. To learn more, see [Automated Investigation and Response (AIR) with Office 365](automated-investigation-response-office.md).
+Office 365 AIR is included in the following subscriptions:
+
+- Microsoft 365 E5
+- Microsoft 365 E5 Security
+- Office 365 E5
+- Office 365 Advanced Threat Protection Plan 2
+
+AIR includes a set of security playbooks that can be launched automatically, such as when an alert is triggered, or manually, such as from a view in Explorer. AIR can save your security operations team time and effort in mitigating threats effectively and efficiently. To learn more, see [Automated Investigation and Response (AIR) with Office 365](automated-investigation-response-office.md).
 
 ## Permissions required to use ATP features
 
