@@ -98,11 +98,6 @@
 ## [Windows and Office Deployment and Lab Kit](modern-desktop-deployment-and-management-lab.md)
 ## [Find help for your deployment](find-help-for-modern-desktop-deployment.md)
 
-# [Identity and device access configurations](microsoft-365-policies-configurations.md)
-##[Prerequisite work](identity-access-prerequisites.md)
-## [Common identity and device access policies](identity-access-policies.md)
-## [Recommended Exchange Online access policies](secure-email-recommended-policies.md)
-## [Recommended SharePoint Online access policies](sharepoint-file-access-policies.md)
 
 # [Microsoft 365 compliance](../compliance/index.yml)
 # [Microsoft 365 security](../security/index.yml)

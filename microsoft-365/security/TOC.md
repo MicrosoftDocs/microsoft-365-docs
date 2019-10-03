@@ -250,4 +250,14 @@
 
 ### [Office 365 Enterprise](https://docs.microsoft.com/office-365-security/Enterprise)
 ### [Office 365 for Business](https://docs.microsoft.com/office-365-security/admin/admin-home)
+
+## [Identity and device access configurations](../enterprise/microsoft-365-policies-configurations.md)
+### [Prerequisite work](../enterprise/identity-access-prerequisites.md)
+### [Common identity and device access policies](../enterprise/identity-access-policies.md)
+### [Recommended Exchange Online access policies](../enterprise/secure-email-recommended-policies.md)
+### [Recommended SharePoint Online access policies](../enterprise/sharepoint-file-access-policies.md)
+
+
+
+
 ## [Microsoft 365 Compliance](https://docs.microsoft.com/microsoft-365/compliance/)
