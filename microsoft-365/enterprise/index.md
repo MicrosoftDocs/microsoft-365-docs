@@ -75,7 +75,7 @@ description: Learn about the product documentation and resources available for M
                                                 <h3>Manage security &amp; compliance</h3>
                                                 <P><a href="https://docs.microsoft.com/microsoft-365/compliance/compliance-solutions-overview" target="_blank">Compliance action plans</a></p>
                                                 <P><a href="https://docs.microsoft.com/microsoft-365/compliance/" target="_blank">Microsoft 365 compliance</a></p>
-                                                <P><a href="https://docs.microsoft.com/microsoft-365/security/ target="_blank">Microsoft 365 security</a></p>
+                                                <P><a href="https://docs.microsoft.com/microsoft-365/security/" target="_blank">Microsoft 365 security</a></p>
                                                 <P><a href="microsoft-365-policies-configurations.md" target="_blank">Identity &amp; device access</a></p>
                                                 <P><a href="https://docs.microsoft.com/windows/security/threat-protection/index" target="_blank">Windows Defender ATP</a></p>
                                             </div>
