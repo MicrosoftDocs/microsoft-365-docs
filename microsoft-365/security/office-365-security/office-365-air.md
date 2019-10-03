@@ -4,7 +4,7 @@ keywords: AIR, autoIR, ATP, automated, investigation, response, remediation, thr
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 09/18/2019
+ms.date: 10/03/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
