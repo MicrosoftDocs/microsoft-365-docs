@@ -1,6 +1,6 @@
 ---
-title: Compliance offering — Cloud Security Alliance (CSA) STAR Attestation
-description: Azure and Intune were awarded Cloud Security Alliance STAR Attestation based on an independent audit.
+title: Compliance offering — Cloud Security Alliance (CSA) STAR attestation
+description: Azure and Intune were awarded Cloud Security Alliance STAR attestation based on an independent audit.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
@@ -13,9 +13,9 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance offering: Cloud Security Alliance (CSA) STAR Attestation
+# Compliance offering: Cloud Security Alliance (CSA) STAR attestation
 
-## CSA STAR Attestation overview
+## CSA STAR attestation overview
 
 The Cloud Security Alliance (CSA) maintains the Security, Trust & Assurance Registry (STAR), a free, publicly accessible registry where cloud service providers (CSPs) can publish their CSA-related assessments. STAR consists of three levels of assurance aligned with control objectives in the CSA Cloud Controls Matrix (CCM). (The CCM covers fundamental security principles across 16 domains to help cloud customers assess the overall security risk of a cloud service.):
 

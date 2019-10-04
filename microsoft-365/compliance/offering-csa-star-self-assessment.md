@@ -1,5 +1,5 @@
 ---
-title: Compliance offering- Cloud Security Alliance (CSA) STAR Self-Assessment
+title: Compliance offering- Cloud Security Alliance (CSA) STAR self-assessment
 description: Microsoft STAR Self-Assessment details how cloud services fulfill Cloud Security Alliance requirements.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -13,9 +13,9 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance offering: Cloud Security Alliance (CSA) STAR Self-Assessment
+# Compliance offering: Cloud Security Alliance (CSA) STAR self-assessment
 
-## CSA STAR Self-Assessment overview
+## CSA STAR self-assessment overview
 
 The Cloud Security Alliance (CSA) is a nonprofit organization led by a broad coalition of industry practitioners, corporations, and other important stakeholders. It is dedicated to defining best practices to help ensure a more secure cloud computing environment, and to helping potential cloud customers make informed decisions when transitioning their IT operations to the cloud.  
   
