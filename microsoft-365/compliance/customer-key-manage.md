@@ -1,5 +1,5 @@
 ---
-title: "Controlling your data in Office 365 using Customer Key"
+title: "Manage Customer Key for Office 365"
 ms.author: krowley
 author: kccross
 manager: laurawi

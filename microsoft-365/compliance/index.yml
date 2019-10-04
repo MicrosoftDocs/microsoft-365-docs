@@ -71,7 +71,7 @@ landingContent:
           - text: Information barriers
             url: information-barriers.md
           - text: Customer Key
-            url: controlling-your-data-using-customer-key.md
+            url: customer-key-overview.md
 
   # Card
   - title: Discover and respond
