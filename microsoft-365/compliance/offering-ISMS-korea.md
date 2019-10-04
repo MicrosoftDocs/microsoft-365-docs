@@ -1,5 +1,5 @@
 ---
-title: Compliance Offering — Korea-Information Security Management System (K-ISMS)
+title: Compliance offering — Korea-Information Security Management System (K-ISMS)
 description: Microsoft Azure has achieved certification for the Korea-Information Security Management System (K-ISMS).
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance Offering: Korea-Information Security Management System (K-ISMS)
+# Compliance offering: Korea-Information Security Management System (K-ISMS)
 
 ## About K-ISMS
 

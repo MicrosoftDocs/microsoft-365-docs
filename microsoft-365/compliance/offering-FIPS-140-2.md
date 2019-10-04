@@ -1,5 +1,5 @@
 ---
-title: Compliance Offering — Federal Information Processing Standard (FIPS) Publication 140-2
+title: Compliance offering — Federal Information Processing Standard (FIPS) Publication 140-2
 description: Microsoft certifies that its cryptographic modules comply with the US Federal Information Processing Standard.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance Offering: Federal Information Processing Standard (FIPS) Publication 140-2
+# Compliance offering: Federal Information Processing Standard (FIPS) Publication 140-2
 
 ## FIPS overview
 

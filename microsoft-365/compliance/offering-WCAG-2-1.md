@@ -1,5 +1,5 @@
 ---
-title: Compliance Offering — Web Content Accessibility Guidelines 2.1
+title: Compliance offering — Web Content Accessibility Guidelines 2.1
 description: Microsoft publishes WCAG 2.1 AA reports that reflect the complete product or service, or portions of the product that may be installed separately.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance Offering: Web Content Accessibility Guidelines 2.1
+# Compliance offering: Web Content Accessibility Guidelines 2.1
 
 ## About WCAG 2.1
 

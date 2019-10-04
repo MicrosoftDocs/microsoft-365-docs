@@ -1,5 +1,5 @@
 ---
-title: Compliance Offering — US DoE 10 CFR Part 810
+title: Compliance offering — US DoE 10 CFR Part 810
 description: Customers subject to the export control requirements of US DoE 10 CFR Part 810 can use Azure Government.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance Offering: US DoE 10 CFR Part 810
+# Compliance offering: US DoE 10 CFR Part 810
 
 ## Microsoft and DoE 10 CFR Part 810
 

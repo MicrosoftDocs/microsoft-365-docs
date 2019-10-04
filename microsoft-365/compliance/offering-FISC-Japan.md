@@ -1,5 +1,5 @@
 ---
-title: Compliance Offering — Center for Financial Industry Information Systems (FISC)
+title: Compliance offering — Center for Financial Industry Information Systems (FISC)
 description: Microsoft meets the requirements of the Financial Industry Information Systems v.8 standard in Japan.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance Offering: Center for Financial Industry Information Systems (FISC)
+# Compliance offering: Center for Financial Industry Information Systems (FISC)
 
 ## FISC overview
 

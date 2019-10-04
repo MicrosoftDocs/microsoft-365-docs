@@ -1,5 +1,5 @@
 ---
-title: Compliance Offering — Spain Esquema Nacional de Seguridad (ENS) High-Level Security Measures
+title: Compliance offering — Spain Esquema Nacional de Seguridad (ENS) High-Level Security Measures
 description: Microsoft received Spain's Esquema Nacional de Seguridad (National Security Framework) certification.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance Offering: Spain Esquema Nacional de Seguridad (ENS) High-Level Security Measures
+# Compliance offering: Spain Esquema Nacional de Seguridad (ENS) High-Level Security Measures
 
 ## Spain ENS overview
 

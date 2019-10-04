@@ -1,5 +1,5 @@
 ---
-title: Compliance Offering — Baseline Informatiebeveiliging Rijksdienst standard (BIR 2012)
+title: Compliance offering — Baseline Informatiebeveiliging Rijksdienst standard (BIR 2012)
 description: Microsoft cloud services help public sector agencies in the Netherlands comply with the BIR 2012 standard.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance Offering: Baseline Informatiebeveiliging Rijksdienst standard (BIR 2012)
+# Compliance offering: Baseline Informatiebeveiliging Rijksdienst standard (BIR 2012)
 
 ## BIR 2012 overview
 

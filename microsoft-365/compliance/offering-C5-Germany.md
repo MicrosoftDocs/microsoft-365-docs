@@ -1,5 +1,5 @@
 ---
-title: Compliance Offering — Cloud Computing Compliance Controls Catalog (C5)
+title: Compliance offering — Cloud Computing Compliance Controls Catalog (C5)
 description: Find out how Azure, Azure Government, and Azure Germany demonstrated proof of compliance with the Cloud Computing Compliance Controls Catalog (C5).
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance Offering: Cloud Computing Compliance Controls Catalog (C5)
+# Compliance offering: Cloud Computing Compliance Controls Catalog (C5)
 
 ## C5 overview
 

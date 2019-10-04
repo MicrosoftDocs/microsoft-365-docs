@@ -1,5 +1,5 @@
 ---
-title: Compliance Offering — European Union Model Clauses
+title: Compliance offering — European Union Model Clauses
 description: Microsoft offers EU Standard Contractual Clauses, guarantees for transfers of personal data.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance Offering: European Union Model Clauses
+# Compliance offering: European Union Model Clauses
 
 ## European Union Model Clauses overview
 

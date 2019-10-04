@@ -1,5 +1,5 @@
 ---
-title: Compliance Offering — US Export Administration Regulations (EAR)
+title: Compliance offering — US Export Administration Regulations (EAR)
 description: Microsoft cloud services help customers subject to the US Export Administration Regulations (EAR) meet their compliance requirements and manage export control risk.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance Offering: US Export Administration Regulations (EAR)
+# Compliance offering: US Export Administration Regulations (EAR)
 
 ## Microsoft and the EAR
 

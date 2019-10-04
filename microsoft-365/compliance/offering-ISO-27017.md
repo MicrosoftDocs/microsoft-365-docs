@@ -1,5 +1,5 @@
 ---
-title: Compliance Offering — ISO/IEC 27017:2015 Code of Practice for Information Security Controls
+title: Compliance offering — ISO/IEC 27017:2015 Code of Practice for Information Security Controls
 description: Microsoft cloud services have implemented this Code of Practice for Information Security Controls.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance Offering: ISO/IEC 27017:2015 Code of Practice for Information Security Controls
+# Compliance offering: ISO/IEC 27017:2015 Code of Practice for Information Security Controls
 
 ## ISO-IEC 27017 Overview
 

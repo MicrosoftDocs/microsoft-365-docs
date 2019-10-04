@@ -1,5 +1,5 @@
 ---
-title: Compliance Offering — Office of the Superintendent of Financial Institutions (OSFI) Canada
+title: Compliance offering — Office of the Superintendent of Financial Institutions (OSFI) Canada
 description: Microsoft guidance to help financial institutions in Canada with cloud adoption.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance Offering: Office of the Superintendent of Financial Institutions (OSFI) Canada
+# Compliance offering: Office of the Superintendent of Financial Institutions (OSFI) Canada
 
 ## About the OSFI
 

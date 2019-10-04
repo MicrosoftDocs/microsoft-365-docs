@@ -1,5 +1,5 @@
 ---
-title: Compliance Offering — Health Data Hosting (HDS) France
+title: Compliance offering — Health Data Hosting (HDS) France
 description: Microsoft cloud services are certified for their compliance with the Health Data Hosting (Hébergeurs de Données de Santé) standard.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance Offering: Health Data Hosting (HDS) France
+# Compliance offering: Health Data Hosting (HDS) France
 
 ## About HDS
 
@@ -52,7 +52,7 @@ The HDS certification is valid for three years.
 
 ## Microsoft in-scope cloud services
 
-- [Azure](https://aka.ms/AzureCompliance). The HDS certificate applies to Azure services listed as compliant with the ISO/IEC 27001 standard in Azure Compliance Offerings and provisioned from the France Central, France South, Europe West, and Europe North Azure regions.
+- [Azure](https://aka.ms/AzureCompliance). The HDS certificate applies to Azure services listed as compliant with the ISO/IEC 27001 standard in Azure Compliance offerings and provisioned from the France Central, France South, Europe West, and Europe North Azure regions.
 - Dynamics 365. The HDS certificate applies to Dynamics 365 [Core Online Services](http://aka.ms/Online-Services-Terms) provisioned from France and European Union geographies.
 - Intune
 - Microsoft 365. The HDS certificate applies to Office 365 [Core Online Services](http://aka.ms/Online-Services-Terms) provisioned from France and European Union geographies.

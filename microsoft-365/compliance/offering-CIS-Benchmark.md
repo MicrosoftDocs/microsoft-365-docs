@@ -1,5 +1,5 @@
 ---
-title: Compliance Offering — Center for Internet Security (CIS) Benchmarks
+title: Compliance offering — Center for Internet Security (CIS) Benchmarks
 description: The Center for Internet Security (CIS) has published a series of benchmarks for Microsoft products and services
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance Offering: Center for Internet Security (CIS) Benchmarks
+# Compliance offering: Center for Internet Security (CIS) Benchmarks
 
 ## About CIS Benchmarks
 

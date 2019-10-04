@@ -1,5 +1,5 @@
 ---
-title: Compliance Offering — North American Electric Reliability Corporation (NERC)
+title: Compliance offering — North American Electric Reliability Corporation (NERC)
 description: Azure and Azure Government are suitable for registered entities deploying certain workloads in the cloud subject to NERC CIP standards.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance Offering: North American Electric Reliability Corporation (NERC)
+# Compliance offering: North American Electric Reliability Corporation (NERC)
 
 ## About the NERC
 

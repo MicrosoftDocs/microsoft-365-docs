@@ -1,5 +1,5 @@
 ---
-title: Compliance Offering — Cloud Security Mark Gold (CS Gold Mark)
+title: Compliance offering — Cloud Security Mark Gold (CS Gold Mark)
 description: Microsoft received the CS Gold Mark in Japan for Azure (IaaS and PaaS) and Office 365 (SaaS).
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance Offering: Cloud Security Mark Gold (CS Gold Mark)
+# Compliance offering: Cloud Security Mark Gold (CS Gold Mark)
 
 ## CS Gold Mark overview
 

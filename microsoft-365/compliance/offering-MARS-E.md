@@ -1,5 +1,5 @@
 ---
-title: Compliance Offering — Minimum Acceptable Risk Standards for Exchanges (MARS-E) 2.0 Framework
+title: Compliance offering — Minimum Acceptable Risk Standards for Exchanges (MARS-E) 2.0 Framework
 description: Microsoft complies with the US Minimum Acceptable Risk Standards for Exchanges (MARS-E).
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance Offering: Minimum Acceptable Risk Standards for Exchanges (MARS-E) 2.0 Framework
+# Compliance offering: Minimum Acceptable Risk Standards for Exchanges (MARS-E) 2.0 Framework
 
 ## MARS-E 2.0 Framework overview
 

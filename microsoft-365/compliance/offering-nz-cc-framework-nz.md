@@ -1,5 +1,5 @@
 ---
-title: Compliance Offering — New Zealand Government Cloud Computing Security and Privacy Considerations
+title: Compliance offering — New Zealand Government Cloud Computing Security and Privacy Considerations
 description: Microsoft NZ addresses the questions published in the New Zealand cloud computing framework.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance Offering: New Zealand Government Cloud Computing Security and Privacy Considerations
+# Compliance offering: New Zealand Government Cloud Computing Security and Privacy Considerations
 
 ## New Zealand Government Cloud Computing Security and Privacy overview
 

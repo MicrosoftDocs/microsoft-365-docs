@@ -1,5 +1,5 @@
 ---
-title: Compliance Offering — Defense Federal Acquisition Regulation Supplement (DFARS)
+title: Compliance offering — Defense Federal Acquisition Regulation Supplement (DFARS)
 description: Microsoft Azure Government supports Defense Federal Acquisition Regulation (DFARS) requirements.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance Offering: Defense Federal Acquisition Regulation Supplement (DFARS)
+# Compliance offering: Defense Federal Acquisition Regulation Supplement (DFARS)
 
 ## DFARS overview
 

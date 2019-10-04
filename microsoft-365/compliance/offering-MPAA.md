@@ -1,5 +1,5 @@
 ---
-title: Compliance Offering — Motion Picture Association of America (MPAA)
+title: Compliance offering — Motion Picture Association of America (MPAA)
 description: Azure successfully completed a formal assessment by the Motion Picture Association of America.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance Offering: Motion Picture Association of America (MPAA)
+# Compliance offering: Motion Picture Association of America (MPAA)
 
 ## MPAA overview
 

@@ -1,5 +1,5 @@
 ---
-title: Compliance Offering — Health Information Trust Alliance (HITRUST) Common Security Framework (CSF)
+title: Compliance offering — Health Information Trust Alliance (HITRUST) Common Security Framework (CSF)
 description: Azure and Office 365 are certified to the Health Information Trust Alliance (HITRUST) Common Security Framework (CSF).
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance Offering: Health Information Trust Alliance (HITRUST) Common Security Framework (CSF)
+# Compliance offering: Health Information Trust Alliance (HITRUST) Common Security Framework (CSF)
 
 ## HITRUST — CSF overview
 

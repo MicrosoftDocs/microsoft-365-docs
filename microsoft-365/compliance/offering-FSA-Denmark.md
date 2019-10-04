@@ -1,5 +1,5 @@
 ---
-title: Compliance Offering — Financial Supervisory Authority (FSA) Denmark
+title: Compliance offering — Financial Supervisory Authority (FSA) Denmark
 description: Microsoft guidance to help financial institutions in Denmark with cloud adoption.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance Offering: Financial Supervisory Authority (FSA) Denmark
+# Compliance offering: Financial Supervisory Authority (FSA) Denmark
 
 ## About the FSA
 

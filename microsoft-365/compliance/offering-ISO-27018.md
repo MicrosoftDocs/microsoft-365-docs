@@ -1,5 +1,5 @@
 ---
-title: Compliance Offering — ISO/IEC 27018 Code of Practice for Protecting Personal Data in the Cloud
+title: Compliance offering — ISO/IEC 27018 Code of Practice for Protecting Personal Data in the Cloud
 description: Microsoft was the first cloud provider to adhere to this code of practice for cloud privacy.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance Offering: ISO/IEC 27018 Code of Practice for Protecting Personal Data in the Cloud
+# Compliance offering: ISO/IEC 27018 Code of Practice for Protecting Personal Data in the Cloud
 
 ## ISO/IEC 27018 overview
 

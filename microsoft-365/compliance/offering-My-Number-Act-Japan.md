@@ -1,5 +1,5 @@
 ---
-title: Compliance Offering — My Number Act (Japan)
+title: Compliance offering — My Number Act (Japan)
 description: Microsoft business cloud services comply with My Number Act standards for protecting the privacy of My Number data.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance Offering: My Number Act (Japan)
+# Compliance offering: My Number Act (Japan)
 
 ## About the My Number Act
 

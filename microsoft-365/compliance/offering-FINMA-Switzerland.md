@@ -1,5 +1,5 @@
 ---
-title: Compliance Offering — Financial Market Supervisory Authority (FINMA) Switzerland
+title: Compliance offering — Financial Market Supervisory Authority (FINMA) Switzerland
 description: Microsoft guidance to help financial institutions in Switzerland with cloud adoption.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance Offering: Financial Market Supervisory Authority (FINMA) Switzerland
+# Compliance offering: Financial Market Supervisory Authority (FINMA) Switzerland
 
 ## About FINMA
 

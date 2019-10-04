@@ -1,5 +1,5 @@
 ---
-title: Compliance Offering — Financial Authority (AMF) and Prudential Authority (ACPR) France
+title: Compliance offering — Financial Authority (AMF) and Prudential Authority (ACPR) France
 description: Microsoft guidance to help financial institutions in France with cloud adoption.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance Offering: Financial Authority (AMF) and Prudential Authority (ACPR) France
+# Compliance offering: Financial Authority (AMF) and Prudential Authority (ACPR) France
 
 ## About the AMF and ACPR
 

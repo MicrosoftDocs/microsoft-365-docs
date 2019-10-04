@@ -1,5 +1,5 @@
 ---
-title: Compliance Offering — United Kingdom Financial Conduct Authority (FCA)
+title: Compliance offering — United Kingdom Financial Conduct Authority (FCA)
 description: Microsoft guidance for financial firms in the UK follows Financial Conduct Authority and guidelines for outsourcing to the cloud.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance Offering: United Kingdom Financial Conduct Authority (FCA)
+# Compliance offering: United Kingdom Financial Conduct Authority (FCA)
 
 ## FCA (UK) overview
 

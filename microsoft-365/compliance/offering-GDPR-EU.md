@@ -1,5 +1,5 @@
 ---
-title: Compliance Offering — General Data Protection Regulation (GDPR)
+title: Compliance offering — General Data Protection Regulation (GDPR)
 description: Read Safeguarding individual privacy rights with the Microsoft Cloud to learn about essential General Data Protection Regulation (GDPR) topics including how Microsoft 365 and the Microsoft Cloud help keep your organization compliant.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance Offering: General Data Protection Regulation (GDPR)
+# Compliance offering: General Data Protection Regulation (GDPR)
 
 Read Safeguarding individual privacy rights with the Microsoft Cloud to learn about essential General Data Protection Regulation (GDPR) topics including how Microsoft 365 and the Microsoft Cloud help keep your organization compliant.
 

@@ -1,5 +1,5 @@
 ---
-title: Compliance Offering — Federal Risk and Authorization Management Program (FedRAMP)
+title: Compliance offering — Federal Risk and Authorization Management Program (FedRAMP)
 description: Microsoft was granted US Federal Risk and Authorization Management Program P-ATOs and ATOs.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance Offering: Federal Risk and Authorization Management Program (FedRAMP)
+# Compliance offering: Federal Risk and Authorization Management Program (FedRAMP)
 
 ## FedRAMP overview
 

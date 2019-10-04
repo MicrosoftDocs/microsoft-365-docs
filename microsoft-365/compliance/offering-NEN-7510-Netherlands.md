@@ -1,5 +1,5 @@
 ---
-title: Compliance Offering — NEN 7510
+title: Compliance offering — NEN 7510
 description: Organizations in the Netherlands must demonstrate control over patient health data in accordance with the NEN 7510 standard.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance Offering: NEN 7510
+# Compliance offering: NEN 7510
 
 ## NEN 7510 overview
 

@@ -1,5 +1,5 @@
 ---
-title: Compliance Offering — Health Insurance Portability and Accountability (HIPAA) & HITECH Acts
+title: Compliance offering — Health Insurance Portability and Accountability (HIPAA) & HITECH Acts
 description: Microsoft offers Health Insurance Portability & Accountability Act Business Associate Agreements (BAAs).
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance Offering: Health Insurance Portability and Accountability (HIPAA) & HITECH Acts
+# Compliance offering: Health Insurance Portability and Accountability (HIPAA) & HITECH Acts
 
 ## HIPAA and the HITECH Act overview
 

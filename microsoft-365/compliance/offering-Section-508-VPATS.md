@@ -1,5 +1,5 @@
 ---
-title: Compliance Offering — U.S. Section 508
+title: Compliance offering — U.S. Section 508
 description: Microsoft offers detailed accessibility conformance reports for many of its cloud services describing the accessibility features of those services.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance Offering: U.S. Section 508
+# Compliance offering: U.S. Section 508
 
 ## About U.S. Section 508
 

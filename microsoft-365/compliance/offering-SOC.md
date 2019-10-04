@@ -1,5 +1,5 @@
 ---
-title: Compliance Offering — Service Organization Controls (SOC)
+title: Compliance offering — Service Organization Controls (SOC)
 description: Microsoft cloud services comply with Service Organization Controls standards for operational security.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance Offering: Service Organization Controls (SOC)
+# Compliance offering: Service Organization Controls (SOC)
 
 ## SOC 1, 2, and 3 Reports overview
 

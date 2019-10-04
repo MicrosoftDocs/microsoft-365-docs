@@ -1,5 +1,5 @@
 ---
-title: Compliance Offering — Criminal Justice Information Services (CJIS) Security Policy
+title: Compliance offering — Criminal Justice Information Services (CJIS) Security Policy
 description: Microsoft government cloud services adhere to the US Criminal Justice Information Services Security Policy.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance Offering: Criminal Justice Information Services (CJIS) Security Policy
+# Compliance offering: Criminal Justice Information Services (CJIS) Security Policy
 
 ## CJIS overview
 

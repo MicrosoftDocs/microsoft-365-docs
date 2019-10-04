@@ -1,5 +1,5 @@
 ---
-title: Compliance Offering — Title 23 NYCRR Part 500
+title: Compliance offering — Title 23 NYCRR Part 500
 description: Microsoft has prepared a guide to explain how Azure, Office 365, and Power BI can help financial institutions comply with 23 NYCRR 500 requirements.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance Offering: Title 23 NYCRR Part 500
+# Compliance offering: Title 23 NYCRR Part 500
 
 ## Title 23 NYCRR Part 500 overview
 

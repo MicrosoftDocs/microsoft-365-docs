@@ -1,5 +1,5 @@
 ---
-title: Compliance Offering — Food and Drug Administration CFR Title 21 Part 11
+title: Compliance offering — Food and Drug Administration CFR Title 21 Part 11
 description: Microsoft helps customers comply with these US Food and Drug Administration regulations.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance Offering: Food and Drug Administration CFR Title 21 Part 11
+# Compliance offering: Food and Drug Administration CFR Title 21 Part 11
 
 ## FDA CFR Title 21 overview
 

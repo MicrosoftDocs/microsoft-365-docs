@@ -1,5 +1,5 @@
 ---
-title: Compliance Offering — Payment Card Industry (PCI) Data Security Standard (DSS)
+title: Compliance offering — Payment Card Industry (PCI) Data Security Standard (DSS)
 description: Azure complies with Payment Card Industry Data Security Standards Level 1 version 3.2.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance Offering: Payment Card Industry (PCI) Data Security Standard (DSS)
+# Compliance offering: Payment Card Industry (PCI) Data Security Standard (DSS)
 
 ## PCI DSS overview
 

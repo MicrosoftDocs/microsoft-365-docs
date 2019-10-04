@@ -1,5 +1,5 @@
 ---
-title: Compliance Offering — ISO 9001:2015 Quality Management Systems Standards
+title: Compliance offering — ISO 9001:2015 Quality Management Systems Standards
 description: Microsoft is certified for its implementation of these quality management standards.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance Offering: ISO 9001:2015 Quality Management Systems Standards
+# Compliance offering: ISO 9001:2015 Quality Management Systems Standards
 
 ## ISO 9001 overview
 

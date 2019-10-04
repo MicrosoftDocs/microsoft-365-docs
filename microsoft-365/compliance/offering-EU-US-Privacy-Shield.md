@@ -1,5 +1,5 @@
 ---
-title: Compliance Offering — EU-US and Swiss-US Privacy Shield Frameworks
+title: Compliance offering — EU-US and Swiss-US Privacy Shield Frameworks
 description: Microsoft is certified to the EU-U.S. and Swiss-U.S. Privacy Shield Frameworks and the commitments they entail.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance Offering: EU-US and Swiss-US Privacy Shield Frameworks
+# Compliance offering: EU-US and Swiss-US Privacy Shield Frameworks
 
 ## About the EU-U.S. and Swiss-U.S. Privacy Shield frameworks
 

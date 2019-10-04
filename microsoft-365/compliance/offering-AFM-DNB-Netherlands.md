@@ -1,5 +1,5 @@
 ---
-title: Compliance Offering — Dutch Authority for the Financial Markets and the Central Bank of the Netherlands
+title: Compliance offering — Dutch Authority for the Financial Markets and the Central Bank of the Netherlands
 description: Microsoft has published guidance to help financial institutions in the Netherlands with cloud adoption.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance Offering: Dutch Authority for the Financial Markets and the Central Bank of the Netherlands
+# Compliance offering: Dutch Authority for the Financial Markets and the Central Bank of the Netherlands
 
 ## About the AFM and DNB
 

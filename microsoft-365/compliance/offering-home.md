@@ -1,5 +1,5 @@
 ---
-title: Microsoft Compliance Offerings
+title: Microsoft Compliance offerings
 layout: LandingPage
 description: Learn how Microsoft products and services help your organization meet regulatory compliance standards.
 author: robmazz

@@ -1,5 +1,5 @@
 ---
-title: Compliance Offering — Cloud Security Alliance (CSA) STAR Attestation
+title: Compliance offering — Cloud Security Alliance (CSA) STAR Attestation
 description: Azure and Intune were awarded Cloud Security Alliance STAR Attestation based on an independent audit.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance Offering: Cloud Security Alliance (CSA) STAR Attestation
+# Compliance offering: Cloud Security Alliance (CSA) STAR Attestation
 
 ## CSA STAR Attestation overview
 

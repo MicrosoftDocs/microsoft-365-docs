@@ -1,5 +1,5 @@
 ---
-title: Compliance Offering — Securities and Exchange Commission (SEC) Rule 17a-4(f) United States
+title: Compliance offering — Securities and Exchange Commission (SEC) Rule 17a-4(f) United States
 description: An independent assessment firm validated that Azure and Office 365 can help financial firms meet SEC Rule 17a-4(f) records retention and immutable storage requirements.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance Offering: Securities and Exchange Commission (SEC) Rule 17a-4(f) United States
+# Compliance offering: Securities and Exchange Commission (SEC) Rule 17a-4(f) United States
 
 ## Microsoft and SEC Rule 17a-4(f)
 

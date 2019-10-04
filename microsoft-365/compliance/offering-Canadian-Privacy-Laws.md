@@ -1,5 +1,5 @@
 ---
-title: Compliance Offering — Canadian Privacy Laws
+title: Compliance offering — Canadian Privacy Laws
 description: Azure and Intune can help customers meet their obligations under Canadian privacy laws.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance Offering: Canadian Privacy Laws
+# Compliance offering: Canadian Privacy Laws
 
 ## About Canadian Privacy Laws
 

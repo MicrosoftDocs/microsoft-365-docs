@@ -1,5 +1,5 @@
 ---
-title: Compliance Offering- Cloud Security Alliance (CSA) STAR Self-Assessment
+title: Compliance offering- Cloud Security Alliance (CSA) STAR Self-Assessment
 description: Microsoft STAR Self-Assessment details how cloud services fulfill Cloud Security Alliance requirements.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance Offering: Cloud Security Alliance (CSA) STAR Self-Assessment
+# Compliance offering: Cloud Security Alliance (CSA) STAR Self-Assessment
 
 ## CSA STAR Self-Assessment overview
 

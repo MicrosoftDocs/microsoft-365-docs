@@ -1,5 +1,5 @@
 ---
-title: Compliance Offering — Good Clinical, Laboratory, and Manufacturing Practices (GxP)
+title: Compliance offering — Good Clinical, Laboratory, and Manufacturing Practices (GxP)
 description: Azure and Office 365 can help life sciences organizations meet GxP regulatory requirements.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance Offering: Good Clinical, Laboratory, and Manufacturing Practices (GxP)
+# Compliance offering: Good Clinical, Laboratory, and Manufacturing Practices (GxP)
 
 ## About GxP
 
