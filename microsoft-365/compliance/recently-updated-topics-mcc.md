@@ -25,13 +25,9 @@ Just like features in the Microsoft 365 compliance center, our help content is a
 > [!TIP]
 > To stay on top of the latest feature updates in the Microsoft 365 compliance center, check out [What's new in the Microsoft 365 compliance center](whats-new.md).
 
-## September
+## September 2019
 
-### eDiscovery
-
-[Investigate, troubleshoot and resolve common eDiscovery issues](ediscovery-troubleshooting-common-issues.md) (new)<br> Includes basic troubleshooting steps you can take to identify and resolve issues you may encounter during an eDiscovery search or elsewhere in the eDiscovery process
-
-###Supervision
+### Supervision
 
 [Configure supervision policies for your organization](configure-supervision-policies.md) (updated)<br>Removed details about using Outlook to perform reviews. Instead, use the review and tagging options that are available in the supervision user interface.
 
