@@ -18,17 +18,17 @@ description: "Learn how to set up Customer Key for Office 365 for Exchange Onlin
 # Set up Customer Key for Office 365
 
 > [!IMPORTANT]
-> We strongly recommend that you follow the best practices in this topic. These are called out as **TIP** and **IMPORTANT**. Customer Key gives you control over root encryption keys whose scope can be as large as your entire organization. This means that mistakes made with these keys can have a broad impact and may result in service interruptions or irrevocable loss of your data. 
+> We strongly recommend that you follow the best practices in this topic. These are called out as **TIP** and **IMPORTANT**. Customer Key gives you control over root encryption keys whose scope can be as large as your entire organization. This means that mistakes made with these keys can have a broad impact and may result in service interruptions or irrevocable loss of your data.
   
 ## Before you set up Customer Key
-<a name="Beforeyoustart"> </a>
 
 Before you get started, ensure that you have the appropriate licensing for your organization. Customer Key in Office 365 is offered in Office 365 E5 or the Advanced Compliance SKU. To understand the concepts and procedures in this topic, review the [Azure Key Vault](https://azure.microsoft.com/en-us/documentation/services/key-vault/) documentation. Also, become familiar with the terms used in Azure, for example, [tenant](https://msdn.microsoft.com/library/azure/jj573650.aspx#BKMK_WhatIsAnAzureADTenant).
+
+FastTrack is only used to collect the required tenant and service configuration information used to register for Customer Key. The Customer Key Offers are published via FastTrack so that it is convenient for you and our partners to submit the required information using the same method. FastTrack also makes it easy to archive the data that you provide in the Offer.
   
-To provide feedback on Customer Key, including the documentation, send your ideas, suggestions, and perspectives to customerkeyfeedback@microsoft.com.
+If you need additional support beyond the documentation, contact Microsoft Consulting Services (MCS), Premier Field Engineering (PFE), or a Microsoft partner for assistance. To provide feedback on Customer Key, including the documentation, send your ideas, suggestions, and perspectives to customerkeyfeedback@microsoft.com.
   
 ## Overview of steps to set up Customer Key
-<a name="Overview"> </a>
 
 To set up Customer Key, complete these tasks in the listed order. The rest of this article provides detailed instructions for each task, or links out to more information for each step in the process.
   

@@ -45,7 +45,16 @@ Using keys you provide, Customer Key for Office 365 encrypts:
 - Text conversations from Skype for Business.
 
 We don't currently offer customer control of the encryption keys for Skype Meeting Broadcast and Skype Meeting content uploads. Instead, this content is encrypted along with all other content in Office 365.
-  
+
+## About the different keys used by Customer Key
+
+> [!WARNING]
+> Add VERY brief into about the keys here then point off to more info about availability keys.
+
+Your keys, our keys... A brief architecture.
+
+The availability key provides you with the capability to recover from the unanticipated loss of root keys that you manage. For more information about the availability key, see [Understand the availability key for Office 365 Customer Key](customer-key-availability-key-understand.md).
+
 ## Use Customer Key and Bring Your Own Key (BYOK) with Azure Information Protection for Exchange Online
 
 Both options enable you to provide and control your own encryption keys; however, service encryption with Customer Key for Office 365 encrypts your data at rest, residing in Office 365 servers. BYOK with Azure Information Protection for Exchange Online encrypts your data-in-transit and provides persistent online and offline protection for email messages and attachments for Office 365. Customer Key and BYOK with Azure Information Protection for Exchange Online are complementary, and whether you choose to use Microsoft's service-managed keys or your own keys, encrypting your data-at-rest and in-transit can provide added protection from malicious attacks.
@@ -54,6 +63,12 @@ BYOK with Azure Information Protection for Exchange Online is offered with the n
 
 > [!WARNING]
 > REVIEWERS - For more information, see *** Azure or OME content?
+
+## Microsoft's approach to third-party data requests
+
+Customer Key wasn't designed to respond to law enforcement subpoenas. Regulated customers use Customer Key to meet their internal or external compliance obligations. Microsoft takes third-party requests for customer data very seriously. As a cloud service provider, we always advocate for the privacy of customer data. In the event we get a subpoena, we always attempt to redirect the third party to the customer to obtain the information.
+  
+See the [Microsoft Trust Center](https://www.microsoft.com/en-us/trustcenter/Privacy/govt-requests-for-data) regarding third-party data requests and for periodic updates about requests that we receive. Also, see "Disclosure of Customer Data" in the [Online Services Terms (OST)](https://www.microsoft.com/en-us/Licensing/product-licensing/products.aspx).
 
 ## We welcome your feedback
 

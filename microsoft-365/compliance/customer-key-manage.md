@@ -37,16 +37,16 @@ If the key vault already contains a key with the same name, the restore operatio
   
 ## Manage key vault permissions
 
-Several cmdlets are available that enable you to view and, if necessary, remove key vault permissions. You might need to remove permissions, for example, when an employee leaves the team.
+Several cmdlets are available that enable you to view and, if necessary, remove key vault permissions. You might need to remove permissions, for example, when an employee leaves the team. For each of these tasks, you will use Azure PowerShell. For information about Azure Powershell, see [Overview of Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azure/azurerm/overview?view=azurermps-6.13.0).
 
-To view key vault permissions, run the Get-AzureRmKeyVault cmdlet:
-  
+To view key vault permissions, run the Get-AzureRmKeyVault cmdlet.
+
 ```powershell
 Get-AzureRmKeyVault -VaultName <vaultname>
 ```
 
 For example:
-  
+
 ```powershell
 Get-AzureRmKeyVault -VaultName Contoso-O365EX-NA-VaultA1
 ```
@@ -58,7 +58,7 @@ Remove-AzureRmKeyVaultAccessPolicy -VaultName <vaultname> -UserPrincipalName <UP
 ```
 
 For example:
-  
+
 ```powershell
 Remove-AzureRmKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 -UserPrincipalName alice@contoso.com
 ```
@@ -74,6 +74,20 @@ Customer Key handles DEPs differently between the different Office 365 services.
 > [!WARNING]
 > Isn't it also one DEP for an entire forest for SPO? That means there might be multiple tenants on a DEP? I'm a tad confused now about WHO creates the DEP to be honest. JEFF MCDOWELL please enlighten me. ***For information about creating additional DEPs, refer to the setup instructions*** link
   
+### View the DEPs you've created for Exchange Online and Skype for Business
+
+To view a list of all the DEPs you've created for Exchange Online and Skype for Business using the Get-DtaEncryptionPolicy PowerShell cmdlet.
+
+1. Using a work or school account that has global administrator permissions in your Office 365 organization, [connect to Exchange Online PowerShell](https://technet.microsoft.com/en-us/library/jj984289%28v=exchg.160%29.aspx).
+
+2. To return all DEPs in your organization, run the Get-DataEncryptionPolicy cmdlet without any parameters.
+
+  ```powershell
+  Get-DataEncryptionPolicy
+  ```
+
+  For more information about the Get-DataEncryptionPolicy cmdlet, see [Get-DataEncryptionPolicy](https://docs.microsoft.com/en-us/powershell/module/exchange/encryption-and-certificates/get-dataencryptionpolicy?view=exchange-ps).
+
 ### Assign a DEP before you migrate a mailbox to the cloud
 
 When you assign the DEP, Office 365 encrypts the contents of the mailbox using the assigned DEP during the migration. This process is more efficient than migrating the mailbox, assigning the DEP, and then waiting for encryption to take place, which can take hours or possibly days.
@@ -91,23 +105,46 @@ To assign a DEP to a mailbox before you migrate it to Office 365, run the Set-Ma
   Where *GeneralMailboxOrMailUserIdParameter* specifies a mailbox, and *DataEncryptionPolicyIdParameter* is the ID of the DEP. For more information about the Set-MailUser cmdlet, see [Set-MailUser](https://docs.microsoft.com/en-us/powershell/module/exchange/users-and-groups/set-mailuser?view=exchange-ps).
 
 ### Determine the DEP assigned to a mailbox
-<a name="DeterminemailboxDEP"> </a>
 
 To determine the DEP assigned to a mailbox, use the Get-MailboxStatistics cmdlet. The cmdlet returns a unique identifier (GUID).
   
+1. Using a work or school account that has global administrator permissions in your Office 365 organization, [connect to Exchange Online PowerShell](https://technet.microsoft.com/en-us/library/jj984289%28v=exchg.160%29.aspx).
+
+   ```powershell
+   Get-MailboxStatistics -Identity <GeneralMailboxOrMailUserIdParameter> | fl DataEncryptionPolicyID
+   ```
+
+   Where *GeneralMailboxOrMailUserIdParameter* specifies a mailbox and DataEncryptionPolicyID returns the GUID of the DEP. For more information about the Get-MailboxStatistics cmdlet, see [Get-MailboxStatistics](https://technet.microsoft.com/library/bb124612%28v=exchg.160%29.aspx).
+  
+2. Run the Get-DataEncryptionPolicy cmdlet to find out the friendly name of the DEP to which the mailbox is assigned.
+  
+   ```powershell
+   Get-DataEncryptionPolicy <GUID>
+   ```
+
+   Where *GUID* is the GUID returned by the Get-MailboxStatistics cmdlet in the previous step.
+
+## Verify that Customer Key has finished encryption
+
+> [!WARNING]
+> I think this is a duplicate after setup or in manage already. if it's a duplicate, ensure the other version has all this information (in the proper format, which this is not), then delete one of them.
+
+Whether you've just rolled a Customer Key, assigned a new DEP, or migrated a mailbox, use the steps in this section to ensure that encryption completes.
+
+### Verify encryption completes for Exchange Online and Skype for Business
+
+ You can [connect to Exchange Online using remote PowerShell](https://technet.microsoft.com/en-us/library/jj984289%28v=exchg.160%29.aspx) and then use the Get-MailboxStatistics cmdlet for each mailbox that you want to check. In the output from the Get-MailboxStatistics cmdlet, the  _IsEncrypted_ property returns a value of **true** if the mailbox is encrypted and a value of **false** if it's not. If the mailbox is encrypted, the value returned for the  _DataEncryptionPolicyID_ property is the GUID of the DEP with which the mailbox is encrypted. For more information on running this cmdlet, see [Get-MailboxStatistics](https://technet.microsoft.com/en-us/library/bb124612%28v=exchg.160%29.aspx) and using PowerShell with Exchange Online.
+  
+If the mailboxes aren't encrypted after waiting 72 hours from the time you assigned the DEP, initiate a mailbox move. To do this, [connect to Exchange Online using remote PowerShell](https://technet.microsoft.com/en-us/library/jj984289%28v=exchg.160%29.aspx) and then use the New-MoveRequest cmdlet and provide the alias of the mailbox as follows:
+  
 ```powershell
-Get-MailboxStatistics -Identity <GeneralMailboxOrMailUserIdParameter> | fl DataEncryptionPolicyID
+New-MoveRequest <alias>
 ```
 
-Where *GeneralMailboxOrMailUserIdParameter* specifies a mailbox. For more information about the Get-MailboxStatistics cmdlet, see [Get-MailboxStatistics](https://technet.microsoft.com/library/bb124612%28v=exchg.160%29.aspx).
-  
-Use the GUID to find out the friendly name of the DEP to which the mailbox is assigned by running the following cmdlet.
-  
-```powershell
-Get-DataEncryptionPolicy <GUID>
-```
+### Verify encryption completes for SharePoint Online, including Teams Sites, and OneDrive for Business
 
-Where *GUID* is the GUID returned by the Get-MailboxStatistics cmdlet in the previous step.
+ You can [connect to SharePoint Online PowerShell](https://technet.microsoft.com/en-us/library/fp161372.aspx), and then use the Get-SPODataEncryptionPolicy cmdlet to check the status of your tenant. The _State_ property returns a value of **registered** if Customer Key encryption is enabled and all files in all sites have been encrypted. If encryption is still in progress, this cmdlet provides information on what percentage of sites is complete.
+
 
 ## Encryption ciphers used by Customer Key
 

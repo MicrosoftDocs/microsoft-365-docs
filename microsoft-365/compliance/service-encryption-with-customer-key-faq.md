@@ -16,48 +16,16 @@ description: "In addition to the baseline, volume-level encryption that's enable
 
 # Service encryption with Customer Key for Office 365 FAQ
 
-## Does service encryption with Customer Key change Microsoft's approach to third-party data requests such as subpoenas?
+  
+## Switch to new keys - move to roll or delete
 
-No. Customer Key was not designed to respond to law enforcement subpoenas. It was designed for regulated customers to meet their internal or external compliance obligations. Microsoft takes third-party requests for customer data very seriously. As a cloud service provider, we always advocate for the privacy of customer data. In the event we get a subpoena, we always attempt to redirect the third party to the customer to obtain the information. (Please read Brad Smith's blog: [Protecting customer data from government snooping](http://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)). We periodically publish detailed information of the request we receive [here](https://www.microsoft.com/en-us/trustcenter/Privacy/govt-requests-for-data).
+ **Exchange Online and Skype for Business:** It can take up to 72 hours to protect a mailbox according to a new Data Encryption Policy (DEP) from the time the new DEP is assigned to the mailbox.
   
-See the [Microsoft Trust Center](https://www.microsoft.com/en-us/trustcenter/Privacy/govt-requests-for-data) regarding third-party data requests and "Disclosure of Customer Data" in the [Online Services Terms (OST)](https://www.microsoft.com/en-us/Licensing/product-licensing/products.aspx) for more information. 
-  
-## Is FastTrack support available for implementing Customer Key?
-
-No. FastTrack is only used to collect tenant and service configuration information that is required to register for Customer Key. The Customer Key Offers are published via FastTrack so that it is convenient for customers and partners to submit this required information using the same method and for ease of archiving the data that customers provide in the Offer.
-  
-If you need additional support beyond the documentation, contact Microsoft Consulting Services (MCS), Premier Field Engineering (PFE), or a Microsoft partner for assistance.
-  
-## If my keys are destroyed, how can I recover? What is the availability key?
-
-The availability key provides you with the capability to recover from the unanticipated loss of root keys that you manage. For more information about the availability key, see [Understand the availability key for Office 365 Customer Key](customer-key-availability-key-understand.md).
-  
- 
-## Verify that encryption with Customer Key activation and Office 365 has finished encrypting with Customer Key?
-
-> [!WARNING]
-> I think this is a duplicate after setup or in manage already. if it's a duplicate, ensure the other version has all this information (in the proper format, which this is not), then delete one of them.
-
- **Exchange Online and Skype for Business:** You can [connect to Exchange Online using remote PowerShell](https://technet.microsoft.com/en-us/library/jj984289%28v=exchg.160%29.aspx) and then use the **[Get-MailboxStatistics]** cmdlet for each mailbox that you want to check. In the output from the Get-MailboxStatistics cmdlet, the  _IsEncrypted_ property returns a value of **true** if the mailbox is encrypted and a value of **false** if it's not. If the mailbox is encrypted, the value returned for the  _DataEncryptionPolicyID_ property is the GUID of the DEP with which the mailbox is encrypted. For more information on running this cmdlet, see [Get-MailboxStatistics](https://technet.microsoft.com/en-us/library/bb124612%28v=exchg.160%29.aspx) and using PowerShell with Exchange Online.
-  
-If the mailboxes aren't encrypted after waiting 72 hours from the time you assigned the DEP, initiate a mailbox move. To do this, [connect to Exchange Online using remote PowerShell](https://technet.microsoft.com/en-us/library/jj984289%28v=exchg.160%29.aspx) and then use the New-MoveRequest cmdlet and provide the alias of the mailbox as follows:
-  
-```powershell
-New-MoveRequest <alias>
-```
-
- **SharePoint Online and OneDrive for Business:** You can [connect to SharePoint Online PowerShell](https://technet.microsoft.com/en-us/library/fp161372.aspx), and then use the **[Get-SPODataEncryptionPolicy]** cmdlet to check the status of your tenant. The ** _State_** property returns a value of **registered** if Customer Key encryption is enabled and all files in all sites have been encrypted. If encryption is still in progress, this cmdlet provides information on what percentage of sites is complete. 
-  
-## If I want to switch to a different set of keys, how long does it take for the new set of keys to protect my data?
-
-
- **Exchange Online and Skype for Business:** It can take up to 72 hours to protect a mailbox according to a new Data Encryption Policy (DEP) from the time the new DEP is assigned to the mailbox. 
-  
- **SharePoint Online and OneDrive for Business:** It can take up to four hours to re-encrypt your entire tenant once a new key has been assigned. 
+ **SharePoint Online and OneDrive for Business:** It can take up to four hours to re-encrypt your entire tenant once a new key has been assigned.
   
 ## Is my existing data stored without encryption at any time while it is decrypted or encrypted with Customer Key?
 
-No. Your data is always encrypted at rest in the Office 365 service with BitLocker and DKM. For more information, see the "Security, Privacy, and Compliance Information for Office 365", and [How Exchange Online secures your email secrets](https://support.office.com/article/989BA10C-F73F-4EFB-AD1B-AF3322E5F376).
+Your data is always encrypted at rest in the Office 365 service with BitLocker and DKM. For more information, see the "Security, Privacy, and Compliance Information for Office 365", and [How Exchange Online secures your email secrets](https://support.office.com/article/989BA10C-F73F-4EFB-AD1B-AF3322E5F376).
   
 ## If I no longer want to use customer-managed encryption keys, can I switch to Microsoft-managed keys?
 
