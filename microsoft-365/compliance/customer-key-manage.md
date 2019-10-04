@@ -3,22 +3,21 @@ title: "Manage Customer Key for Office 365"
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 9/23/2019
+ms.date: 10/4/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
-ms.assetid: f2cd475a-e592-46cf-80a3-1bfb0fa17697
 ms.collection:
 - M365-security-compliance
-description: "After you setup Customer Key, learn how to manage it by restoring AKV keys, managing permissions, and determining the DEP assigned to a mailbox."
+description: "After you set up Customer Key, learn how to manage it by restoring AKV keys, managing permissions, and determining the DEP assigned to a mailbox."
 ---
 
 # Manage Customer Key for Office 365
 
-After you've set up Customer Key for Office 365, you can manage your keys as described in this article and learn more about Customer Key in the related topics.
+After you've set up Customer Key for Office 365, you can manage your keys as described in this article. Learn more about Customer Key in the related topics.
 
 ## Restore Azure Key Vault keys
 
@@ -39,7 +38,7 @@ If the key vault already contains a key with the same name, the restore operatio
 ## Manage key vault permissions
 
 Several cmdlets are available that enable you to view and, if necessary, remove key vault permissions. You might need to remove permissions, for example, when an employee leaves the team.
- 
+
 To view key vault permissions, run the Get-AzureRmKeyVault cmdlet:
   
 ```powershell
@@ -64,7 +63,34 @@ For example:
 Remove-AzureRmKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 -UserPrincipalName alice@contoso.com
 ```
 
-## Determine the DEP assigned to a mailbox
+## Manage data encryption policies (DEPs) with Customer Key
+
+Customer Key handles DEPs differently between the different Office 365 services. For example, you can create a different number of DEPs for the different services.
+
+**Exchange Online and Skype for Business:** You can create up to 50 DEPs. For instructions, see [Create a data encryption policy (DEP) for use with Exchange Online and Skype for Business](customer-key-set-up.md#create-a-data-encryption-policy-dep-for-use-with-exchange-online-and-skype-for-business).
+
+**SharePoint Online, including Teams Sites, and OneDrive for Business:** A DEP applies to data in one geographic location, also called a geo. If you use the multi-geo feature of Office 365, you can create one DEP per geo. If you are not using multi-geo, you can create one DEP. Normally, you create the DEP when you set up Customer Key. For instructions, see [Create a data encryption policy (DEP) for each SharePoint Online and OneDrive for Business geo](customer-key-set-up.md#create-a-data-encryption-policy-dep-for-each-sharepoint-online-and-onedrive-for-business-geo).
+
+> [!WARNING]
+> Isn't it also one DEP for an entire forest for SPO? That means there might be multiple tenants on a DEP? I'm a tad confused now about WHO creates the DEP to be honest. JEFF MCDOWELL please enlighten me. ***For information about creating additional DEPs, refer to the setup instructions*** link
+  
+### Assign a DEP before you migrate a mailbox to the cloud
+
+When you assign the DEP, Office 365 encrypts the contents of the mailbox using the assigned DEP during the migration. This process is more efficient than migrating the mailbox, assigning the DEP, and then waiting for encryption to take place, which can take hours or possibly days.
+
+To assign a DEP to a mailbox before you migrate it to Office 365, run the Set-MailUser cmdlet in Exchange Online PowerShell:
+
+1. Using a work or school account that has global administrator permissions in your Office 365 organization, [connect to Exchange Online PowerShell](https://technet.microsoft.com/en-us/library/jj984289%28v=exchg.160%29.aspx).
+
+2. Run the Set-MailUser cmdlet.
+
+  ```powershell
+  Set-MailUser -Identity <GeneralMailboxOrMailUserIdParameter> -DataEncryptionPolicy <DataEncryptionPolicyIdParameter>
+  ```
+
+  Where *GeneralMailboxOrMailUserIdParameter* specifies a mailbox, and *DataEncryptionPolicyIdParameter* is the ID of the DEP. For more information about the Set-MailUser cmdlet, see [Set-MailUser](https://docs.microsoft.com/en-us/powershell/module/exchange/users-and-groups/set-mailuser?view=exchange-ps).
+
+### Determine the DEP assigned to a mailbox
 <a name="DeterminemailboxDEP"> </a>
 
 To determine the DEP assigned to a mailbox, use the Get-MailboxStatistics cmdlet. The cmdlet returns a unique identifier (GUID).
@@ -100,7 +126,9 @@ Customer Key uses a variety of encryption ciphers to encrypt keys as shown in th
 
 ## Related articles
 
-- [Controlling your data using Customer Key for Office 365](controlling-your-data-using-customer-key.md)
+- [Control your data in Office 365 using Customer Key](customer-key-overview.md)
+
+- [Set up Customer Key for Office 365](customer-key-set-up.md)
 
 - [Roll or rotate a customer key or an availability key](customer-key-availability-key-roll.md)
 

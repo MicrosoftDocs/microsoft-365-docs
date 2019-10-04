@@ -16,26 +16,6 @@ description: "In addition to the baseline, volume-level encryption that's enable
 
 # Service encryption with Customer Key for Office 365 FAQ
 
-In addition to the baseline, volume-level encryption that's enabled through BitLocker and Distributed Key Manager (DKM), Office 365 offers an added layer of encryption at the application level for customer content in Office 365, including data from Exchange Online, Skype for Business, SharePoint Online, and OneDrive for Business. This is called service encryption.
-  
-Customer Key is built on service encryption and enables you to provide and control keys that are used to encrypt your data at rest in Office 365 as described in the [Online Services Terms (OST)](https://www.microsoft.com/en-us/Licensing/product-licensing/products.aspx). Customer Key helps you meet compliance obligations because you control the encryption keys that Office 365 uses to decrypt data.
-  
-To provide feedback on Customer Key, including the documentation, send your ideas, suggestions, and perspectives to customerkeyfeedback@microsoft.com.
-  
-## What is service encryption with Customer Key?
-
-Customer Key enhances the ability of your organization to meet the demands of compliance requirements that specify key arrangements with the cloud service provider. With Customer Key, you provide and control the encryption keys for your Office 365 data at-rest at the application level. As a result, you may exercise control and revoke your organization's keys, should you decide to exit the service. By revoking the keys, the data is unreadable to the service. Key revocation is the first step on the path towards data deletion.
-
-## What Office 365 data at rest is covered by Customer Key?
-
-SharePoint Online site content and the files stored on that site and files uploaded to OneDrive for Business are covered. Exchange Online mailbox content (e-mail body, calendar entries, and content of email attachments) is covered. Text conversations from Skype for Business are covered, but Skype Meeting Broadcast recordings and Skype Meeting content uploads are not covered. Skype Meeting Broadcast and Skype Meeting content uploads are encrypted along with all other content in Office 365, but we currently don't offer customer control of the encryption keys.
-  
-## What is the difference between Customer Key and Bring Your Own Key (BYOK) with Azure Information Protection for Exchange Online?
-
-Both options enable you to provide and control your own encryption keys; however, service encryption with Customer Key encrypts your data at rest, residing in Office 365 servers at-rest, while BYOK with Azure Information Protection for Exchange Online encrypts your data-in-transit and provides persistent online and offline protection for email messages and attachments for Office 365. Customer Key and BYOK with Azure Information Protection for Exchange Online are complementary, and whether you choose to use Microsoft's service-managed keys or your own keys, encrypting your data-at-rest and in-transit can provide added protection from malicious attacks.
-  
-BYOK with Azure Information Protection for Exchange Online is offered in the Office 365 Message Encryption capabilities.
-  
 ## Does service encryption with Customer Key change Microsoft's approach to third-party data requests such as subpoenas?
 
 No. Customer Key was not designed to respond to law enforcement subpoenas. It was designed for regulated customers to meet their internal or external compliance obligations. Microsoft takes third-party requests for customer data very seriously. As a cloud service provider, we always advocate for the privacy of customer data. In the event we get a subpoena, we always attempt to redirect the third party to the customer to obtain the information. (Please read Brad Smith's blog: [Protecting customer data from government snooping](http://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)). We periodically publish detailed information of the request we receive [here](https://www.microsoft.com/en-us/trustcenter/Privacy/govt-requests-for-data).
@@ -52,17 +32,25 @@ If you need additional support beyond the documentation, contact Microsoft Consu
 
 The availability key provides you with the capability to recover from the unanticipated loss of root keys that you manage. For more information about the availability key, see [Understand the availability key for Office 365 Customer Key](customer-key-availability-key-understand.md).
   
-## How many data encryption policies (DEPs) can I create?
+## Manage data encryption policies (DEPs) with Customer Key
 
- **Exchange Online and Skype for Business:** You can create up to 50 DEPs.
-  
- **SharePoint Online and OneDrive for Business:** A DEP applies to data in one geographic location, also called a geo. If you use the multi-geo feature of Office 365, you can create one DEP per geo. If you are not using multi-geo, you can create one DEP.
-  
-## Can I assign a data encryption policy before migrating a mailbox to the cloud?
+Customer Key handles DEP differently between the different Office 365 services.
 
-Yes. You can use the Windows PowerShell cmdlet Set-MailUser to assign a data encryption policy (DEP) to the user prior to migrating the mailbox to Office 365. When you do this, the contents of the mailbox will be encrypted using the assigned DEP as the content is migrated. This can be more efficient than assigning a DEP after the mailbox has already been migrated and then waiting for encryption to take place, which can take hours or possibly days. 
+**Exchange Online and Skype for Business:** You can create up to 50 DEPs.
+
+**SharePoint Online and OneDrive for Business:** A DEP applies to data in one geographic location, also called a geo. If you use the multi-geo feature of Office 365, you can create one DEP per geo. If you are not using multi-geo, you can create one DEP.
+
+> [!WARNING]
+> Isn't it also one DEP for an entire forest? That means there might be multiple tenants on a DEP? I'm a tad confused now about WHO creates the DEP to be honest. JEFF MCDOWELL please enlighten me. ***For information about creating additional DEPs, refer to the setup instructions*** link
   
-## How do I verify that encryption with Customer Key is activated and Office 365 has finished encrypting with Customer Key?
+You can I assign a data encryption policy before you migrate a mailbox to the cloud
+
+You can use the Windows PowerShell cmdlet Set-MailUser to assign a data encryption policy (DEP) to the user prior to migrating the mailbox to Office 365. When you assign the DEP, Office 365 encrypts the contents of the mailbox using the assigned DEP during the migration. This process is more efficient than migrating the mailbox, assigning the DEP, and then waiting for encryption to take place, which can take hours or possibly days.
+  
+## Verify that encryption with Customer Key activation and Office 365 has finished encrypting with Customer Key?
+
+> [!WARNING]
+> I think this is a duplicate after setup or in manage already. if it's a duplicate, ensure the other version has all this information (in the proper format, which this is not), then delete one of them.
 
  **Exchange Online and Skype for Business:** You can [connect to Exchange Online using remote PowerShell](https://technet.microsoft.com/en-us/library/jj984289%28v=exchg.160%29.aspx) and then use the **[Get-MailboxStatistics]** cmdlet for each mailbox that you want to check. In the output from the Get-MailboxStatistics cmdlet, the  _IsEncrypted_ property returns a value of **true** if the mailbox is encrypted and a value of **false** if it's not. If the mailbox is encrypted, the value returned for the  _DataEncryptionPolicyID_ property is the GUID of the DEP with which the mailbox is encrypted. For more information on running this cmdlet, see [Get-MailboxStatistics](https://technet.microsoft.com/en-us/library/bb124612%28v=exchg.160%29.aspx) and using PowerShell with Exchange Online.
   
