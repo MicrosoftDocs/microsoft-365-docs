@@ -1,5 +1,5 @@
 ---
-title: "Communication Supervision in Office 365"
+title: "Configure Communication Supervision for Office 365"
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -15,13 +15,13 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-description: "Configure Communication Supervision in Office 365"
+description: "Configure Communication Supervision for Office 365"
 ---
 
-# Configure Communication Supervision in Office 365
+# Configure Communication Supervision for Office 365
 
 > [!IMPORTANT]
-> This guidance applies to configuring communication in an Office 365 subscription. If you want to configure Communication Supervision for a Microsoft 365 subscription, see [Configure Communication Supervision for your Microsoft 365 organization (Preview)](configure-supervision-policies.md).
+> This guidance applies to configuring communication in an Office 365 subscription. If you want to configure Communication Supervision for a Microsoft 365 subscription, see [Configure Communication Supervision for Microsoft 365 (Preview)](configure-supervision-policies.md).
 
 Use Communication Supervision policies to capture employee communications for examination by internal or external reviewers. For more information about how supervision policies can help you monitor communications in your organization, see [Communication Supervision policies in Microsoft 365](supervision-policies.md).
 
@@ -45,7 +45,7 @@ Follow these steps to set up and use Communication Supervision in your Office 36
 
 - **Step 4 (required)**: [Set up a supervision policy](#step-4-set-up-a-supervision-policy-required)
 
-    You create Communication Supervision policies in the Office 365 Security and Compliance Center. These policies define which communications are subject to review in your organization and specifies who performs reviews. Communications include email and Microsoft Teams communications, and 3rd-party platform communications (such as Facebook, Twitter, etc.)
+    You create Communication Supervision policies in the Office 365 Security and Compliance Center. These policies define which communications are subject to review in your organization and specifies who performs reviews. Communications include email and Microsoft Teams communications, and 3rd-party platform communications (such as Facebook, Twitter, etc.). Supervision policies created in Office 365 organizations are not supported in Communication Supervision in Microsoft 365.
 
 - **Step 5 (optional)**: [Test your supervision policy](#step-5-test-your-supervision-policy-optional)
 
@@ -53,7 +53,7 @@ Follow these steps to set up and use Communication Supervision in your Office 36
 
 ## Step 1: Set up groups for Communication Supervision (optional)
 
- When you create a supervision policy, you define who has their communications reviewed and who performs reviews. In the policy, you'll use email addresses to identify individuals or groups of people. To simplify your setup, you can create groups for people who have their communication reviewed and groups for people who review those communications. If you're using groups, you may need several. For example, you want to monitor communications between two distinct groups of people or if you want to specify a group that isn't going to be supervised.
+ When you create a Communication Supervision policy, you define who has their communications scanned and who performs reviews. In the policy, you'll use email addresses to identify individuals or groups of people. To simplify your setup, you can create groups for people who have their communication scanned and groups for people who review those communications. If you're using groups, you may need several. For example, you want to monitor communications between two distinct groups of people or if you want to specify a group that isn't going to be supervised.
 
 Use the following chart to help you configure groups in your organization for supervision policies:
 

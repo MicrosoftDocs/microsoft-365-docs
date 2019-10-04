@@ -20,7 +20,7 @@ description: "Learn about Communication Supervision in Microsoft 365"
 
 # Communication Supervision in Microsoft 365 (Preview)
 
-Communication Supervision in Microsoft 365 allows you to capture employee corporate communications for examination and remediation by designated reviewers. You can define specific policies to scan and capture internal and external email, Microsoft Teams, or 3rd-party communications in your organization. Reviewers can then examine the messages to make sure that they are compliant with your organization's message standards and remediate them according to their importance and severity.
+Communication Supervision in Microsoft 365 allows you to capture employee corporate communications for examination and remediation by designated reviewers. By defining specific conditions in supervision policies, you can scan and capture internal and external email, Microsoft Teams, or 3rd-party communications in your organization. Designated reviewers can then examine messages with alerts to make sure that they are compliant with your organization's message standards and remediate them according to their importance and severity.
 
 Communication Supervision policies help you overcome many modern compliance challenges associated with internal and external communications, including:
 
@@ -52,17 +52,18 @@ scan
 
 ## Integration with Microsoft 365 services
 
-Communication Supervision policies can scan and capture messages across several communication channels for you to review and remediate issues:
+Communication Supervision policies scan and capture messages across several communication channels to help you review and remediate compliance issues:
 
-- **Exchange Online:** All mailboxes hosted on Exchange Online as part of your Microsoft 365 or Office 365 subscription are eligible for message supervision. Emails and attachments matching Communication Supervision policy conditions are instantly available for monitoring and in supervision reports. Exchange Online organizations are now optional and no longer a required source in supervision policies.
-- **Microsoft Teams:** Chat communications and associated attachments in both public and private Microsoft Teams channels and individual chats are supported in Communication Supervision as a standalone service source or with other Microsoft 365 services. Automatically scans all Microsoft Teams channels and teams for specific users defined in a policy.
+- **Exchange Online:** All mailboxes hosted on Exchange Online in your Microsoft 365 or Office 365 subscription are eligible for supervision. Emails and attachments matching Communication Supervision policy conditions are instantly available for monitoring and in supervision reports. Exchange Online is now an optional source channel and is no longer a required in Communication Supervision policies.
+- **Microsoft Teams:** Chat communications and associated attachments for public and private Microsoft Teams channels and individual chats are supported in Communication Supervision as a standalone channel source or with other Microsoft 365 services. Policies now automatically scan all Microsoft Teams channels and teams for specific users defined in a policy, eliminating the need to keep a separate mapping list for Microsoft Teams assignments.
+- **Skype for Business Online:** Communication Supervision policies support scanning chat communications and associated attachments in Skype for Business Online.
 - **Third-party sources:** You can supervise communications from third-party sources for data imported into mailboxes in your Microsoft 365 organization. Communication Supervision supports connections to several popular platforms, including Instant Bloomberg, Facebook, Twitter, and others.
 
-To learn more about support service integration in supervision policies, see [supported communication types](supervision-feature-reference.md#supported-communication-types) for Communication Supervision.
+To learn more about communication channel support in Communication Supervision policies, see [supported communication types](supervision-feature-reference.md#supported-communication-types).
 
-## Communication Supervision workflow
+## Workflow
 
-Communication Supervision helps you address common pain points associated with complying with internal policies and regulatory compliance requirements. With intelligent policy templates and a flexible workflow, you can use actionable insights to quickly resolve detected communication issues. Identifying and resolving communication issues with supervision in Microsoft 365 uses the following workflow:
+Communication Supervision helps you address common pain points associated with complying with internal policies and regulatory compliance requirements. With intelligent policy templates and a flexible workflow, you can use actionable insights to quickly resolve detected compliance issues. Identifying and resolving communication comliance issues with supervision in Microsoft 365 uses the following workflow:
 
 WORKFLOW ARTWORK
 
@@ -98,8 +99,10 @@ You remediate supervision issues you've investigated using the following options
     - **Data Investigation case**: Data Investigations allow you to search for sensitive, malicious, or misplaced data across Microsoft 365 and to take appropriate action to redmediate the data spillage. Creating a new investigation from a Communication Supervision alert allows reviewers to properly evaluate the extent of any data spillage. To learn more about data investigation cases, see [Overview of Data Investigations in Microsoft 365](overview-data-investigations.md).
     - **Advanced eDiscovery case**: Advanced eDiscovery provides an end-to-end workflow to preserve, collect, review, analyze, and export content that's responsive to your organization's internal and external investigations. It also lets legal teams manage the entire legal hold notification workflow to communicate with custodians involved in a case. Assigning an employee as a custodian in an Advanced eDiscovery case from a Communication Supervision alert helps your legal team take appropriate actions and manage content preservation. To learn more about Advanced eDiscovery cases, see [Overview of the Advanced eDiscovery in Microsoft 365](overview-ediscovery-20.md).
 
-### Monitor NEED NEW TERM?
+### Monitor
+
+Keeping track and managing compliance issues identified by Communication Supervision policies spans the entire workflow process. As alerts are generated and investigation and remediation actions are implemented, existing policies may need review and updates and new policies may need to be created. Use Communication Supervision dashboards, reports, and events recorded in the unified Office 365 audit logs to evaluate and improve your compliance posture.
 
 ## Ready to get started?
 
-To configure Communication Supervision for your Microsoft 365 organization, see [Configure Communication Supervision for your Microsoft 365 organization (Preview)](configure-supervision-policies.md). To configure Communication Supervision in your Office 365 organization, see [Configure Communication Supervision in Office 365](supervision-configure-office-365.md).
+To configure Communication Supervision for your Microsoft 365 organization, see [Configure Communication Supervision for Microsoft 365 (Preview)](configure-supervision-policies.md). To configure Communication Supervision in your Office 365 organization, see [Configure Communication Supervision for Office 365](supervision-configure-office-365.md).

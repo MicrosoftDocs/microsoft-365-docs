@@ -1,5 +1,5 @@
 ---
-title: "Configure Communication Supervision for your organization (Preview)"
+title: "Configure Communication Supervision for Microsoft 365 (Preview)"
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -18,7 +18,7 @@ search.appverid:
 description: "Set up Communication Supervision policies to configure employee communications for review."
 ---
 
-# Configure Communication Supervision for your Microsoft 365 organization (Preview)
+# Configure Communication Supervision for Microsoft 365 (Preview)
 
 > [!IMPORTANT]
 > This guidance applies to configuring communication in a Microsoft 365 subscription. If you want to configure Communication Supervision for an Office 365 subscription, see [Configure Communication Supervision for Office 365](supervision-configure-office-365.md).
