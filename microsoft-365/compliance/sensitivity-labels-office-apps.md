@@ -206,7 +206,7 @@ Outlook
 | --- | --- | --- |
 | Word, Excel, PowerPoint on all platforms | Immediately | Immediately |
 | Outlook for PC and Mac | After the email is sent by Exchange Online | Immediately |
-| Word, Excel, PowerPoint on all platforms | After the email is sent by Exchange Online | After the email is sent by Exchange Online |
+| Outlook on the web, iOS, and Android | After the email is sent by Exchange Online | After the email is sent by Exchange Online |
 
 ## Can sensitivity labels run alongside the Azure Information Protection client in Office for Windows?
 
@@ -232,11 +232,7 @@ Administrator-defined [protection templates](https://docs.microsoft.com/azure/in
 
 ## Can a file or email have more than one classification?
 
-Users can select just one label at a time for each document or email, which often results in just one classification. However, if users select a sublabel, this actually applies two labels at the same time; a primary label and a secondary label. By using sublabels, a file can have two classifications that denote a parent/child relationship for an additional level of control. 
-
-For example, the label **Confidential** might contain sublabels such as **Legal** and **Finance**. You can apply different classification visual markings and different Rights Management templates to these sublabels. A user cannot select the **Confidential** label by itself; only one of its sublabels, such as **Legal**. As a result, the label that they see set is **Confidential** / **Legal**. The metadata for that file includes one custom text property for **Confidential**, one custom text property for **Legal**, and another that contains both values (**Confidential Legal**). 
-
-When you use sublabels, don't configure visual markings, protection, and conditions at the primary label. When you use sublevels, configure these setting on the sublabel only. If you configure these settings on the primary label and its sublabel, the settings at the sublabel take precedence.
+No. Users can select just one label at a time for each document or email.
 
 ## When an email is labeled, do any attachments automatically get the same labeling?
 
