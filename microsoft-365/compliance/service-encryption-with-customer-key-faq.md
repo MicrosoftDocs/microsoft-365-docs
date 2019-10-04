@@ -32,21 +32,7 @@ If you need additional support beyond the documentation, contact Microsoft Consu
 
 The availability key provides you with the capability to recover from the unanticipated loss of root keys that you manage. For more information about the availability key, see [Understand the availability key for Office 365 Customer Key](customer-key-availability-key-understand.md).
   
-## Manage data encryption policies (DEPs) with Customer Key
-
-Customer Key handles DEP differently between the different Office 365 services.
-
-**Exchange Online and Skype for Business:** You can create up to 50 DEPs.
-
-**SharePoint Online and OneDrive for Business:** A DEP applies to data in one geographic location, also called a geo. If you use the multi-geo feature of Office 365, you can create one DEP per geo. If you are not using multi-geo, you can create one DEP.
-
-> [!WARNING]
-> Isn't it also one DEP for an entire forest? That means there might be multiple tenants on a DEP? I'm a tad confused now about WHO creates the DEP to be honest. JEFF MCDOWELL please enlighten me. ***For information about creating additional DEPs, refer to the setup instructions*** link
-  
-You can I assign a data encryption policy before you migrate a mailbox to the cloud
-
-You can use the Windows PowerShell cmdlet Set-MailUser to assign a data encryption policy (DEP) to the user prior to migrating the mailbox to Office 365. When you assign the DEP, Office 365 encrypts the contents of the mailbox using the assigned DEP during the migration. This process is more efficient than migrating the mailbox, assigning the DEP, and then waiting for encryption to take place, which can take hours or possibly days.
-  
+ 
 ## Verify that encryption with Customer Key activation and Office 365 has finished encrypting with Customer Key?
 
 > [!WARNING]

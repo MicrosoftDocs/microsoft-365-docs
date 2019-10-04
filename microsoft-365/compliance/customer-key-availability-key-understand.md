@@ -47,10 +47,6 @@ In SPO all data is locked down once customers revoke SPO access to AKVs. ( I det
 <!-->
 (TB): This sections seems a bit out of place, since the availability key only exists in the context of service encryption. This should have been introduced first, or we should link to our primary documentation for Service Encryption at the top. Something like "The availability key is used in the context of service encryption using Customer Key. For details on Customer Key, please refer to xxx. 
 
-### Customer Key service encryption
-
-Service encryption ensures content at rest is encrypted at the application layer providing additional protection against viewing of data by unauthorized systems or personnel, complementary to BitLocker disk encryption in Microsoft datacenters. Service encryption is not meant to prevent Microsoft personnel from accessing customer data. The primary purpose is to assist customers in meeting regulatory or compliance obligations for controlling root keys. Customers explicitly authorize O365 services to use their encryption keys to provide value added cloud services, such as eDiscovery, anti-malware, anti-spam, search indexing, etc.-->
-
 ### Protect access to the application layer
 
 Logical access controls like Lockbox and Customer Lockbox prevent unauthorized individuals from accessing decrypted data through the service. The application layer is the ONLY method through which keys can be used to decrypt data. Only Office 365 service code has the ability to interpret and traverse the key hierarchy for encryption-decryption activities. <!--(TB): link to Customer Lockbox in-text?: https://docs.microsoft.com/en-us/microsoft-365/compliance/customer-lockbox-requests-->

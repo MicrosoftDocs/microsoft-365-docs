@@ -83,7 +83,7 @@ Microsoft does not expose direct control of the availability key to customers. F
 
 - [Controlling your data using Customer Key for Office 365](controlling-your-data-using-customer-key.md)
 
-- [Roll or rotate a customer key or an availability key](customer-key-availability-key-roll.md)
+- [Manage Customer Key for Office 365](customer-key-manage.md)
 
 - [Understand the availability key](customer-key-availability-key-understand.md)
 

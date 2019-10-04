@@ -1,5 +1,5 @@
 ---
-title: "Set up Office 365 Customer Key"
+title: "Set up Customer Key for Office 365"
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -15,7 +15,7 @@ ms.collection:
 description: "Learn how to set up Customer Key for Office 365 for Exchange Online, Skype for Business, SharePoint Online, including Team Sites, and OneDrive for Business."
 ---
 
-# Set up Office 365 Customer Key
+# Set up Customer Key for Office 365
 
 > [!IMPORTANT]
 > We strongly recommend that you follow the best practices in this topic. These are called out as **TIP** and **IMPORTANT**. Customer Key gives you control over root encryption keys whose scope can be as large as your entire organization. This means that mistakes made with these keys can have a broad impact and may result in service interruptions or irrevocable loss of your data. 

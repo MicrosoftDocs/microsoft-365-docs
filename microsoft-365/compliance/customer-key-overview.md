@@ -35,6 +35,26 @@ With Customer Key, you control your organization's encryption keys and then conf
 
 Service encryption ensures that content at rest is encrypted at the application layer. This provides additional protection against viewing of data by unauthorized systems or personnel, and complements BitLocker disk encryption in Microsoft datacenters. Service encryption is not meant to prevent Microsoft personnel from accessing customer data. The primary purpose is to assist customers in meeting regulatory or compliance obligations for controlling root keys. Customers explicitly authorize O365 services to use their encryption keys to provide value added cloud services, such as eDiscovery, anti-malware, anti-spam, search indexing, etc.
 
+## Customer Key encrypts data at rest in Office 365
+
+Using keys you provide, Customer Key for Office 365 encrypts:
+
+- SharePoint Online site content and files stored on that site, including Team Sites.
+- Files uploaded to OneDrive for Business.
+- Exchange Online mailbox content including e-mail body content, calendar entries, and the content of email attachments.
+- Text conversations from Skype for Business.
+
+We don't currently offer customer control of the encryption keys for Skype Meeting Broadcast and Skype Meeting content uploads. Instead, this content is encrypted along with all other content in Office 365.
+  
+## Use Customer Key and Bring Your Own Key (BYOK) with Azure Information Protection for Exchange Online
+
+Both options enable you to provide and control your own encryption keys; however, service encryption with Customer Key for Office 365 encrypts your data at rest, residing in Office 365 servers. BYOK with Azure Information Protection for Exchange Online encrypts your data-in-transit and provides persistent online and offline protection for email messages and attachments for Office 365. Customer Key and BYOK with Azure Information Protection for Exchange Online are complementary, and whether you choose to use Microsoft's service-managed keys or your own keys, encrypting your data-at-rest and in-transit can provide added protection from malicious attacks.
+  
+BYOK with Azure Information Protection for Exchange Online is offered with the new Office 365 Message Encryption capabilities. 
+
+> [!WARNING]
+> REVIEWERS - For more information, see *** Azure or OME content?
+
 ## We welcome your feedback
 
 To provide feedback on Customer Key, including the documentation, send your ideas, suggestions, and perspectives to customerkeyfeedback@microsoft.com.
