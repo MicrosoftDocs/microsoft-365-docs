@@ -30,9 +30,9 @@ Learn how Microsoft products and services help your organization meet regulatory
                     <div class="cardText">
                         <h3>Global</h3>
                         <p><a href="offering-cis-benchmark.md">CIS Benchmark</a></p>
-                        <p><a href="offering-csa-star-attestation.md">CSA-STAR Attestation</a></p>
-                        <p><a href="offering-csa-star-certification.md">CSA-STAR Certification</a></p>
-                        <p><a href="offering-csa-star-self-assessment.md">CSA-STAR Self Assessment</a></p>
+                        <p><a href="offering-csa-star-attestation.md">CSA-STAR attestation</a></p>
+                        <p><a href="offering-csa-star-certification.md">CSA-STAR certification</a></p>
+                        <p><a href="offering-csa-star-self-assessment.md">CSA-STAR self assessment</a></p>
                         <p><a href="offering-ISO-20000-1-2011.md">ISO 20000-1:2011</a></p>
                         <P><a href="offering-ISO-22301.md">ISO 22301</a></p>
                         <p><a href="offering-ISO-27001.md">ISO 27001</a></p>
@@ -125,7 +125,7 @@ Learn how Microsoft products and services help your organization meet regulatory
                         <p><a href="offering-pci-dss.md">PCI DSS</a></p>
                         <p><a href="offering-rbi-irdai-india.md">RBI + IRDAI (India)</a></p>
                         <p><a href="offering-sec-17a-4.md">SEC 17a-4</a></p>
-                        <p><a href="offering-shared-assessments.md">Shared Assessments</a></p>
+                        <p><a href="offering-shared-assessments.md">Shared assessments</a></p>
                         <p><a href="offering-sox.md">SOX</a></p>
                         <p><a href="offering-tisax-germany.md">TISAX (Germany)</a></p>
                     </div>
