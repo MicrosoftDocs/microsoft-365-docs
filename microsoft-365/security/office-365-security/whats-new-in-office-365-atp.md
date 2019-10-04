@@ -23,8 +23,6 @@ ms.topic: conceptual
 
 The following features are now generally available (GA) in the latest release of Office 365 ATP. 
 
-For more information preview features, see [Preview features in Office 365 ATP](office-365-atp-preview.md).
-
 >Don't have Office 365 ATP yet? [Contact sales to start a trial](https://go.microsoft.com/fwlink/p/?LinkId=518644). 
 
 ## Office 365 ATP Plan 1 and Plan 2

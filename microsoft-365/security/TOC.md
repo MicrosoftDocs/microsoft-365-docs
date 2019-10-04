@@ -129,7 +129,6 @@
 ### [Advanced Threat Protection ](./office-365-security/office-365-atp.md)
 #### [See what's new]()
 ##### [What's new in Office 365 ATP](office-365-security/whats-new-in-office-365-atp.md)
-##### [Office 365 ATP preview features](office-365-security/office-365-atp-preview.md)
 #### [ATP setup tasks for admins]()
 ##### [Global Administrator setup tasks]()
 ###### [Set up ATP Safe Links policies](./office-365-security/set-up-atp-safe-links-policies.md)
