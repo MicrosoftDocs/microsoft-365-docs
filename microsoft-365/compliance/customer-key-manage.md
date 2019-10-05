@@ -172,6 +172,15 @@ The output from this cmdlet includes:
 
   - **Rolling:** A key roll is in progress. If your geo is in this state, you'll also be shown information on what percentage of sites have completed the key roll operation so that you can monitor progress.
 
+## Switch to Microsoft-managed keys from Customer Key
+
+> [!IMPORTANT]
+> **@Reviewers!!** Please verify that EXO is still not supported. Also, i need instructions for SPO.
+
+ **Exchange Online and Skype for Business:** This is not currently supported.
+  
+ **SharePoint Online and OneDrive for Business:** You can revert to using Microsoft-managed keys separately for each geo (if you use the multi-geo feature) or for all your data if it is in a single geo. 
+
 ## Encryption ciphers used by Customer Key
 
 > [!IMPORTANT]
