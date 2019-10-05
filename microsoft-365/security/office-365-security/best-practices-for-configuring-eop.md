@@ -47,7 +47,7 @@ Review and fine tune your malware filter settings in the Exchange admin center(E
   
 If you're concerned about executable files containing malware, you can create an Exchange mail flow rule that blocks any email attachment that has executable content. Follow the steps in [How to reduce malware threats through file attachment blocking in Exchange Online Protection](https://support.microsoft.com/kb/2959596) in order to block the file types listed in [Use mail flow rules to inspect message attachments in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection).
   
-You can use the Common Attachment Types Filter in the EAC. Select **Protection** \> **Malware filters**. You can create an mail flow rule that blocks any email attachment that has executable content.
+You can use the Common Attachment Types Filter in the EAC. Select **Protection** \> **Malware filters**. You can create a mail flow rule that blocks any email attachment that has executable content.
   
 For increased protection, we also recommend using mail flow rules to block some or all of the following extensions: ade, adp, ani, bas, bat, chm, cmd, com, cpl, crt, hlp, ht, hta, inf, ins, isp, job, js, jse, lnk, mda, mdb, mde, mdz, msc, msi, msp, mst, pcd, reg, scr, sct, shs, url, vb, vbe, vbs, wsc, wsf, wsh. This can be done by using the **Any attachment file extension includes these words** condition.
   

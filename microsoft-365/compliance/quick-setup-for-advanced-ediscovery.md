@@ -18,7 +18,7 @@ description: "Learn how to access Office 365 Advanced eDiscovery from the Office
 
 # Quick setup for Office 365 Advanced eDiscovery
 
-This setup section shows an Microsoft 365 Security &amp; Compliance Center eDiscovery manager how to get started with Advanced eDiscovery. A working knowledge of both is assumed.
+This setup section shows a Microsoft 365 Security &amp; Compliance Center eDiscovery manager how to get started with Advanced eDiscovery. A working knowledge of both is assumed.
   
 > [!NOTE]
 > Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 

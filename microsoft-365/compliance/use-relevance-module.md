@@ -103,7 +103,7 @@ In the **Relevance \> Track** tab, Data investigations provides recommendations 
     
   - Implication: A new load has been added, and Catch-up is required to continue working.
     
-- Tag inconsistencies: Process identifies, via an Data investigations algorithm, inconsistencies in the file tagging process that may negatively impact the analysis.
+- Tag inconsistencies: Process identifies, via a Data investigations algorithm, inconsistencies in the file tagging process that may negatively impact the analysis.
     
   - Implication: The next sample will include files that have been tagged in previous samples, and their tagging must be redone.
     

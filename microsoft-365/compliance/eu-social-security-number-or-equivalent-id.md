@@ -603,7 +603,7 @@ For details, see the section "Spain Social Security Number (SSN)" in [What the s
     
   - The last digit in the serial number indicates gender by the assignment of an odd number for male and an even number for female
     
-  - Up to 1990, the assignment of serial number corresponded to the county where the bearer of the number was born or (if born before 1947) where he/she had been living, according to tax records, on January 1, 1947, with a special code (usually 9 as the 7th digit) for immigrants 
+  - Up to 1990, the assignment of serial number corresponded to the county where the bearer of the number was born or (if born before 1947) where they had been living, according to tax records, on January 1, 1947, with a special code (usually 9 as the 7th digit) for immigrants 
     
 - One check digit
     

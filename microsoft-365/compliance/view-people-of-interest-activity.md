@@ -27,7 +27,7 @@ You have to be assigned the View-Only Audit Logs or Audit Logs role in Exchange 
 > [!IMPORTANT]
 > If you assign a user the View-Only Audit Logs or Audit Logs role on the Permissions page in the Security & Compliance Center, they won't be able to search the Office 365 audit log. You have to assign the permissions in Exchange Online. This is because the underlying cmdlet used to search the audit log is an Exchange Online cmdlet.
 
-## Step 1: Create an Data Investigations (Preview) audit log search
+## Step 1: Create a Data Investigations (Preview) audit log search
 
    1. Select an existing investigation from the **Security & Compliance Center > Data Investigations (Preview)**.
    

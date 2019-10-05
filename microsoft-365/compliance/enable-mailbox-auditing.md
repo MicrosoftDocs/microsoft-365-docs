@@ -265,7 +265,7 @@ This example restores the default audited mailbox actions for the Admin logon ty
 Set-Mailbox -Identity chris@contoso.onmicrosoft.com -DefaultAuditSet Admin
 ```
 
-Restoring he default audited mailbox actions for a logon type has the following results:
+Restoring the default audited mailbox actions for a logon type has the following results:
 
 - The current list of mailbox actions is replaced with the default mailbox actions for the logon type.
 

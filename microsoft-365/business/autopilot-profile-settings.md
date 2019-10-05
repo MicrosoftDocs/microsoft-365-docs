@@ -39,7 +39,7 @@ You can control how Windows gets installed on user devices by using the AutoPilo
   
 |**Setting**|**Description**|
 |:-----|:-----|
-|Skip Cortana, OneDrive and OEM registration  <br/> |Skips the installation of consumer apps like Cortana and personal OneDrive. The device user can install these later as long as he or she is a local admin on the device. The original manufacturer registration is skipped because the device will be managed by Microsoft 365 Business.  <br/> |
+|Skip Cortana, OneDrive and OEM registration  <br/> |Skips the installation of consumer apps like Cortana and personal OneDrive. The device user can install these later as long as they are a local admin on the device. The original manufacturer registration is skipped because the device will be managed by Microsoft 365 Business.  <br/> |
 |Sign in experience with your company brand  <br/> |If your company has a [Add your company branding to Office 365 Sign In page](https://support.office.com/article/a1229cdb-ce19-4da5-90c7-2b9b146aef0a), the device user will get that experience when signing in.  <br/> |
 |MDM auto-enrollment with configured AAD accounts.  <br/> |The user identity will be managed by Azure Active directory, and the users will sign into Windows and Office 365 with their Microsoft 365 Business credentials.  <br/> |
    
@@ -47,6 +47,6 @@ You can control how Windows gets installed on user devices by using the AutoPilo
   
 |**Setting**|**Description**|
 |:-----|:-----|
-|Skip privacy settings (Off by default)  <br/> |If this option is set to **On**, the device user will not see the license agreement for the device and Windows when he or she first signs in.  <br/> |
+|Skip privacy settings (Off by default)  <br/> |If this option is set to **On**, the device user will not see the license agreement for the device and Windows when they first sign in.  <br/> |
 |Don't allow the user to become the local admin  <br/> |If this option is set to **On**, the device user will not be able to install any personal apps, such as Cortana.  <br/> |
    

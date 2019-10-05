@@ -22,7 +22,7 @@ This topic describes what you can do if you see status code 550 5.7.7xx in a non
 
 ## 5.7.705: Tenant has exceeded threshold restriction: What you need to know
 
-Internal senders could see this NDR whenever you try to send mail if your tenant was compromised. This usually occus when the majority of traffic from your tenant has been detected as suspicious and has resulted in a ban on sending ability for the tenant. This can also occur if your users send an large amount of bulk mail from Office 365. As stated in the service description, Exchange Online customers who need to send legitimate bulk commercial email (for example, customer newsletters) should use third-party providers that specialize in these services.
+Internal senders could see this NDR whenever you try to send mail if your tenant was compromised. This usually occus when the majority of traffic from your tenant has been detected as suspicious and has resulted in a ban on sending ability for the tenant. This can also occur if your users send a large amount of bulk mail from Office 365. As stated in the service description, Exchange Online customers who need to send legitimate bulk commercial email (for example, customer newsletters) should use third-party providers that specialize in these services.
 
 Once your users collectively, as a tenant, send a certain amount of suspicious mail through the service, all users can be prevented from sending any mail until the problem is fixed. Users will receive a Non-Delivery Report (NDR) that states:
 

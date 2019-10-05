@@ -48,7 +48,7 @@ The guide, divided into two parts, describes how to use Dynamics 365 products, s
 
 When data subjects exercise their rights and make requests, consider the following points:
 
-- Properly identify the person and role — such as employee, customer, vendor — by using information that the data subject gave you as part of his or her request. This information might be a name, an employee ID or customer number, or other identifier.
+- Properly identify the person and role — such as employee, customer, vendor — by using information that the data subject gave you as part of their request. This information might be a name, an employee ID or customer number, or other identifier.
 - Record the data and time of the request. (You have 30 days to complete the request.)
 - Affirm that the request meets your organization's requirements for honoring or declining a data subject’s request. For example, you must make sure that executing the request doesn't conflict with any other legal, financial, or regulatory obligations that you have, or infringe on the rights and freedoms of others.
 - Verify that you have the information that is related to the request.
@@ -89,7 +89,7 @@ In Dynamics 365 for Marketing, you have the following additional capabilities:
 - [Extend the Person search report](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/gdpr/gdpr-extend-person-search-report) by authoring a new entity or extending an existing entity.
 - Use search and filter features to find specific personal data and export that data by using the Microsoft Office Export functionality or print that information to a .pdf using browser extensions.
 - Author a custom form that locates and exports personal data.
-- Author an external portal or website that allows an authenticated customer to see his or her personal data.
+- Author an external portal or website that allows an authenticated customer to see their own personal data.
 
 ***Dynamics 365 Business Central*** provides several ways for you to search for customer data. For details, see [Searching, filtering, and sorting data](https://docs.microsoft.com/dynamics365/business-central/ui-enter-criteria-filters).
 
