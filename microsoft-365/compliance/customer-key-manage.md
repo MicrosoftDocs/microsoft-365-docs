@@ -181,21 +181,6 @@ The output from this cmdlet includes:
   
  **SharePoint Online and OneDrive for Business:** You can revert to using Microsoft-managed keys separately for each geo (if you use the multi-geo feature) or for all your data if it is in a single geo. 
 
-## Encryption ciphers used by Customer Key
-
-> [!IMPORTANT]
-> **@Reviewers!!** Need to redo these graphics these are placeholders for now. Please confirm the data on them is still accurate. Also, I'd like to remove the "microsoft-managed" from the SPO piece as this will undoubtedly cause confusion. @Jeff McDowell Please verify.
-
-Customer Key uses a variety of encryption ciphers to encrypt keys as shown in the following figures.
-
-### Encryption ciphers used to encrypt keys for Exchange Online and Skype for Business
-
-![Encryption ciphers for Exchange Online Customer Key](media/customerkeyexoencryptcipher.png)
-
-### Encryption ciphers used to encrypt keys for SharePoint Online and OneDrive for Business
-
-![Encryption ciphers for SharePoint Online Customer Key](media/customerkeyspoencryptcipher.png)
-
 ## Related articles
 
 - [Control your data in Office 365 using Customer Key](customer-key-overview.md)
