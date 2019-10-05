@@ -81,10 +81,10 @@ Microsoft does not expose direct control of the availability key to customers. F
 
 ## Related articles
 
-- [Controlling your data using Customer Key for Office 365](controlling-your-data-using-customer-key.md)
+- [Service encryption with Customer Key for Office 365](customer-key-overview.md)
 
-- [Manage Customer Key for Office 365](customer-key-manage.md)
+- [Learn about the availability key](customer-key-availability-key-understand.md)
 
-- [Understand the availability key](customer-key-availability-key-understand.md)
+- [Set up Customer Key for Office 365](customer-key-set-up.md)
 
-- [Service encryption with Customer Key for Office 365 FAQ](service-encryption-with-customer-key-faq.md)
+- [Manage Customer Key for Office 365](customer-key-manage.md)

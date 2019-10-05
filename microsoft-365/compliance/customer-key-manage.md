@@ -181,15 +181,68 @@ The output from this cmdlet includes:
   
  **SharePoint Online and OneDrive for Business:** You can revert to using Microsoft-managed keys separately for each geo (if you use the multi-geo feature) or for all your data if it is in a single geo.
 
+## Revoke your keys and start the data purge path process
+
+> [!WARNING]
+> @REVIEWERS! Move this to a separate article? it doesn't fit with "learn about the availability key" so i moved it here.
+
+You control the revocation of all root keys including the availability key. Customer Key provides control of the exit planning aspect of the regulatory requirements for you. If you decide to revoke your keys to purge your data and exit the service, the service deletes the availability key. This process takes Microsoft about 72 hours.
+
+The Office 365 core audits and validates the data purge path. For more information, see the SSAE 18 SOC 2 Report available on the [Service Trust Portal](https://servicetrust.microsoft.com/). In addition, Microsoft recommends the following documents:
+
+- [Risk Assessment and Compliance Guide for Financial Institutions in the Microsoft Cloud](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=edee9b14-3661-4a16-ba83-c35caf672bd7&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
+
+- [O365 Exit Planning Considerations](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=77ea7ebf-ce1b-4a5f-9972-d2d81a951d99&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
+
+The data purge path differs slightly between the different Office 365 services.
+
+### Revoke your Customer Keys and the availability key for Exchange Online and Skype for Business
+
+To initiate the data purge path for Exchange Online and Skype for Business, complete these steps:
+
+1. Delete your Customer Key keys in Azure Key Vault. All key vault admins must agree to delete these keys.
+
+1. Using a work or school account that has administrator privileges in your Office 365 organization.
+
+1. From Windows PowerShell, run set-permanentdatapurgerequest as follows:
+
+    ```powershell
+    set-permanentdatapurgerequest TRUE
+    ```
+
+1. Contact Microsoft to delete the availability key.
+
+    When you contact Microsoft to delete the availability key, we will send you a legal document. The person in your organization who signed up as an approver in the FastTrack offer during onboarding needs to sign this document. Normally, this is an executive or other designated person in your company who is legally authorized to sign the paperwork on behalf of your organization.
+
+1. Once your representative has signed the legal document, return it to Microsoft (usually through an eDoc signature).
+
+    Once Microsoft receives the legal document, we run cmdlets to trigger the data purge which performs crypto deletion of the availability key. Once the data purge cmdlets complete, the data has been purged.
+
+### Revoke your Customer Keys and the availability key for SharePoint Online, including Team Sites, and OneDrive for Business
+
+To initiate the data purge path for SharePoint Online, including Team Sites, and OneDrive for Business, complete these steps:
+
+1. Revoke Azure Key Vault access. All key vault admins must agree to revoke access.
+
+   You do not delete the Azure Key Vault for SharePoint Online. Key vaults may be shared among a number of SharePoint Online tenants and DEPs.
+
+1. Contact Microsoft to delete the availability key.
+
+    When you contact Microsoft to delete the availability key, we'll send you a legal document. The person in your organization who signed up as an approver in the FastTrack offer during onboarding needs to sign this document. Normally, this is an executive or other designated person in your company who's legally authorized to sign the paperwork on behalf of your organization.
+
+1. Once your representative signs the legal document, return it to Microsoft (usually through an eDoc signature).
+
+   Once Microsoft receives the legal document, we run cmdlets to trigger the data purge which performs crypto deletion of the tenant key, site key, and all individual per-document keys, irrevocably breaking the key hierarchy. Once the data purge cmdlets complete, your data has been purged.
+
 ## Related articles
 
 - [Service encryption with Customer Key for Office 365](customer-key-overview.md)
 
+- [Learn about the availability key](customer-key-availability-key-understand.md)
+
 - [Set up Customer Key for Office 365](customer-key-set-up.md)
 
 - [Roll or rotate a Customer Key or an availability key](customer-key-availability-key-roll.md)
-
-- [Learn about the availability key](customer-key-availability-key-understand.md)
 
 - [Customer Lockbox in Office 365](customer-lockbox-requests.md)
 

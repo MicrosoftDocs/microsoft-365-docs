@@ -55,6 +55,8 @@ We don't currently offer customer control of the encryption keys for Skype Meeti
 
 These are keys you provide and store in Azure Key Vault.
 
+The data purge feature is not available with Microsoft-managed keys; only Customer Key offers this ability. For information about the data purge process and key revocation, see [Revoke your keys and start the data purge path process](customer-key-manage.md#revoke-your-keys-and-start-the-data-purge-path-process).
+
 > [!WARNING]
 > @REVIEWERS! What else to say here You can generate and store these in a Thales ? HSM or some other mechanism? Move some of the overview material about the keys here? differentiate between the customer keys and the availability key here. Keep this VERY brief.
 
@@ -125,13 +127,13 @@ To provide feedback on Customer Key, including the documentation, send your idea
   
 ## Related articles
 
+- [Learn about the availability key](customer-key-availability-key-understand.md)
+
 - [Set up Customer Key for Office 365](customer-key-set-up.md)
 
 - [Manage Customer Key for Office 365](customer-key-manage.md)
 
 - [Roll or rotate a Customer Key or an availability key](customer-key-availability-key-roll.md)
-
-- [Learn about the availability key](customer-key-availability-key-understand.md)
 
 - [Customer Lockbox in Office 365](customer-lockbox-requests.md)
 

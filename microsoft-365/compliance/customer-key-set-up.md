@@ -492,11 +492,10 @@ To create a DEP, you need to remotely connect to SharePoint Online by using Wind
 
 - [Service encryption with Customer Key for Office 365](customer-key-overview.md)
 
+- [Learn about the availability key](customer-key-availability-key-understand.md)
+
 - [Manage Customer Key for Office 365](customer-key-manage.md)
 
 - [Roll or rotate a Customer Key or an availability key](customer-key-availability-key-roll.md)
 
-- [Learn about the availability key](customer-key-availability-key-understand.md)
-
 - [Office 365 Service Encryption](office-365-service-encryption.md)
- 
