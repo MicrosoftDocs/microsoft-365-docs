@@ -1,9 +1,9 @@
 ---
-title: "Roll keys in Azure Key Vault used with Office 365 Customer Key"
+title: "Roll or rotate a Customer Key or an availability key"
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 9/23/2019
+ms.date: 10/4/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -12,7 +12,7 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: "Learn how to roll the Customer and availability keys stored in Azure Key Vault for Office 365 Customer Key. Services include Exchange Online, Skype for Business, SharePoint Online, including Team Sites, and OneDrive for Business."
+description: "Learn how to roll the Customer and availability keys stored in Azure Key Vault that are used with Office 365 Customer Key. Services include Exchange Online, Skype for Business, SharePoint Online, including Team Sites, and OneDrive for Business."
 ---
 
 # Roll or rotate a Customer Key or an availability key

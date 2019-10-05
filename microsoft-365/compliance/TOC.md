@@ -19,7 +19,7 @@
 ### [Set up Customer Key for Office 365](customer-key-set-up.md)
 ### [Manage Customer Key for Office 365](customer-key-manage.md)
 ### [Roll or rotate a Customer Key or an availability key](customer-key-availability-key-roll.md)
-### [Understand the availability key](customer-key-availability-key-understand.md)
+### [Learn about the availability key](customer-key-availability-key-understand.md)
 ### [Service encryption with Customer Key for Office 365 FAQ](service-encryption-with-customer-key-faq.md)
 ## Communication supervision
 ### [Learn about communication supervision](supervision-policies.md)

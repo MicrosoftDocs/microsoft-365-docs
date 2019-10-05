@@ -3,7 +3,7 @@ title: "Set up Customer Key for Office 365"
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 10/3/2019
+ms.date: 10/4/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -36,49 +36,49 @@ To set up Customer Key, complete these tasks in the listed order. The rest of th
   
 You will complete most of these tasks by remotely connecting to Azure PowerShell. For best results, use version 4.4.0 or later of Azure PowerShell.
   
-- [Create two new Azure subscriptions](customer-key-set-up.md#Create2newsubs)
+- [Create two new Azure subscriptions](#create-two-new-azure-subscriptions)
 
-- [Register Azure subscriptions to use a mandatory retention period](customer-key-set-up.md#RegisterSubsforMRP)
+- [Register Azure subscriptions to use a mandatory retention period](#register-azure-subscriptions-to-use-a-mandatory-retention-period)
 
   Registration can take from one to five business days.
 
-- [Submit a request to activate Customer Key for Office 365](customer-key-set-up.md#FastTrack)
+- [Submit a request to activate Customer Key for Office 365](#submit-a-request-to-activate-customer-key-for-office-365)
 
   Once you've created the two new Azure subscriptions, you'll need to submit the appropriate Customer Key offer request by completing a web form that is hosted in the Microsoft FastTrack portal. **The FastTrack team doesn't provide assistance with Customer Key. Office simply uses the FastTrack portal to allow you to submit the form and to help us track the relevant offers for Customer Key**.
   
 Once you have submitted a Customer Key offer, Microsoft reviews your request and notifies you when you can proceed with the rest of the setup tasks. This process can take up to five business days.
 
-- [Create a premium Azure Key Vault in each subscription](customer-key-set-up.md#CreateKeyVault)
+- [Create a premium Azure Key Vault in each subscription](#create-a-premium-azure-key-vault-in-each-subscription)
 
-- [Assign permissions to each key vault](customer-key-set-up.md#KeyVaultPerms)
+- [Assign permissions to each key vault](#assign-permissions-to-each-key-vault)
 
-- [Enable and then confirm soft delete on your key vaults](customer-key-set-up.md#SoftDelete)
+- [Enable and then confirm soft delete on your key vaults](#enable-and-then-confirm-soft-delete-on-your-key-vaults)
 
-- [Add a key to each key vault either by creating or importing a key](customer-key-set-up.md#AddKeystoKeyVault)
+- [Add a key to each key vault either by creating or importing a key](#add-a-key-to-each-key-vault-either-by-creating-or-importing-a-key)
 
-- [Check the recovery level of your keys](customer-key-set-up.md#CheckKeyRecoveryLevel)
+- [Check the recovery level of your keys](#check-the-recovery-level-of-your-keys)
 
-- [Backup Azure Key Vault](customer-key-set-up.md#BackupAzureKeyVaultkeys)
+- [Back up Azure Key Vault](#back-up-azure-key-vault)
 
-- [Validate Azure Key Vault configuration settings](customer-key-set-up.md#Validateconfiguration)
+- [Validate Azure Key Vault configuration settings](#validate-azure-key-vault-configuration-settings)
 
-- [Obtain the URI for each Azure Key Vault key](customer-key-set-up.md#GetKeyURI)
+- [Obtain the URI for each Azure Key Vault key](#obtain-the-uri-for-each-azure-key-vault-key)
 
 **In Office 365:**
   
 Exchange Online and Skype for Business:
   
-- [Create a data encryption policy (DEP) for use with Exchange Online and Skype for Business](customer-key-set-up.md#CreateDEP4EXOSkype)
+- [Create a data encryption policy (DEP) for use with Exchange Online and Skype for Business](#create-a-data-encryption-policy-dep-for-use-with-exchange-online-and-skype-for-business)
 
-- [Assign a DEP to a mailbox](customer-key-set-up.md#assignDEPtomailbox)
+- [Assign a DEP to a mailbox](#assign-a-dep-to-a-mailbox)
 
-- [Validate mailbox encryption](customer-key-set-up.md#validatemailboxencryption)
+- [Validate mailbox encryption](#validate-mailbox-encryption)
 
 SharePoint Online and OneDrive for Business:
   
-- [Create a data encryption policy (DEP) for each SharePoint Online and OneDrive for Business geo](customer-key-set-up.md#CreateDEP4SPOODfB)
+- [Create a data encryption policy (DEP) for each SharePoint Online and OneDrive for Business geo](#create-a-data-encryption-policy-dep-for-each-sharepoint-online-and-onedrive-for-business-geo)
 
-- [Validate encryption of Group Sites, Team Sites, and OneDrive for Business](customer-key-set-up.md#validateencryptionSPO)
+- [Validate encryption of Group Sites, Team Sites, and OneDrive for Business](#validate-encryption-of-group-sites-team-sites-and-onedrive-for-business)
 
 ## Complete tasks in Azure Key Vault and Microsoft FastTrack for Customer Key
 
@@ -370,7 +370,7 @@ Set-AzureKeyVaultKeyAttribute -VaultName <vaultname> -Name <keyname>
   
 ### Obtain the URI for each Azure Key Vault key
 
-Once you have completed all the steps in Azure to set up your key vaults and added your keys, run the following command to get the URI for the key in each key vault. You will need to use these URIs when you create and assign each DEP later, so save this information in a safe place. Remember to run this command once for each key vault.
+Once you've completed all the steps in Azure to set up your key vaults and added your keys, run the following command to get the URI for the key in each key vault. You will need to use these URIs when you create and assign each DEP later, so save this information in a safe place. Remember to run this command once for each key vault.
   
 In Azure PowerShell:
   
@@ -379,14 +379,12 @@ In Azure PowerShell:
 ```
 
 ## Office 365: Setting up Customer Key for Exchange Online and Skype for Business
-<a name="AzureSteps"> </a>
 
 Before you begin, ensure that you have completed the tasks required to set up Azure Key Vault. See [Complete tasks in Azure Key Vault and Microsoft FastTrack for Customer Key](customer-key-set-up.md#AzureSteps) for information.
   
 To set up Customer Key for Exchange Online and Skype for Business, you will need to perform these steps by remotely connecting to Exchange Online with Windows PowerShell.
   
 ### Create a data encryption policy (DEP) for use with Exchange Online and Skype for Business
-<a name="CreateDEP4EXOSkype"> </a>
 
 A DEP is associated with a set of keys stored in Azure Key Vault. You assign a DEP to a mailbox in Office 365. Office 365 will then use the keys identified in the policy to encrypt the mailbox. To create the DEP, you need the Key Vault URIs you obtained earlier. See [Obtain the URI for each Azure Key Vault key](customer-key-set-up.md#GetKeyURI) for instructions.
   
@@ -488,27 +486,7 @@ To create a DEP, you need to remotely connect to SharePoint Online by using Wind
 
 ### Validate encryption of Group Sites, Team Sites, and OneDrive for Business
 
-You can check on the status of encryption by running the Get-SPODataEncryptionPolicy cmdlet as follows:
-  
-```powershell
-Get-SPODataEncryptionPolicy -Identity <SPOAdminSiteUrl>
-```
-
-The output from this cmdlet includes:
-  
-- The URI of the primary key.
-
-- The URI of the secondary key.
-
-- The encryption status for the geo. Possible states include:
-
-  - **Unregistered:** Customer Key encryption has not yet been applied.
-
-  - **Registering:** Customer Key encryption has been applied and your files are in the process of being encrypted. If your geo is in this state, you'll also be shown information on what percentage of sites in the geo are complete so that you can monitor encryption progress.
-
-  - **Registered:** Customer Key encryption has been applied, and all files in all sites have been encrypted.
-
-  - **Rolling:** A key roll is in progress. If your geo is in this state, you'll also be shown information on what percentage of sites have completed the key roll operation so that you can monitor progress.
+ You can [connect to SharePoint Online PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps), and then use the Get-SPODataEncryptionPolicy cmdlet to check the status of your tenant. The _State_ property returns a value of **registered** if Customer Key encryption is enabled and all files in all sites have been encrypted. If encryption is still in progress, this cmdlet provides information on what percentage of sites is complete.
 
 ## Related articles
 

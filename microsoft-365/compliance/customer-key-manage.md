@@ -175,7 +175,7 @@ The output from this cmdlet includes:
 ## Encryption ciphers used by Customer Key
 
 > [!IMPORTANT]
-> **@Reviewers!!**  Need to redo these graphics these are placeholders for now. Please confirm the data on them is still accurate. Also, I'd like to remove the "microsoft-managed" from the SPO piece as this will undoubtedly cause confusion. @Jeff McDowell Please verify.
+> **@Reviewers!!** Need to redo these graphics these are placeholders for now. Please confirm the data on them is still accurate. Also, I'd like to remove the "microsoft-managed" from the SPO piece as this will undoubtedly cause confusion. @Jeff McDowell Please verify.
 
 Customer Key uses a variety of encryption ciphers to encrypt keys as shown in the following figures.
 

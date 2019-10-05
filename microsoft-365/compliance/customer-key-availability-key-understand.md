@@ -1,5 +1,5 @@
 ---
-title: "Understand the availability key for Office 365 Customer Key"
+title: "Learn about the availability key for Office 365 Customer Key"
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -14,7 +14,7 @@ ms.assetid: 41ae293a-bd5c-4083-acd8-e1a2b4329da6
 description: "Learn about the availability key used to recover lost Office 365 Customer Keys."
 ---
 
-# Understand the availability key for Office 365 Customer Key
+# Learn about the availability key for Office 365 Customer Key
 
 The availability key is a root key automatically generated and provisioned when you create a data encryption policy. Office 365 stores and protects the availability key. The availability key is functionally similar to the two root keys that you supply for service encryption with Customer Key. The availability key wraps the keys one tier lower in the key hierarchy. Unlike the keys that you provide and manage in Azure Key Vault, you can't directly access the availability key. Microsoft personnel manage the availability key using PowerShell cmdlets to initiate automated operations that never involve direct access to the availability key.
 
