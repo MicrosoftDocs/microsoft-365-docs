@@ -34,7 +34,7 @@ See the [Microsoft Trust Center](https://www.microsoft.com/en-us/trustcenter/Pri
 <!--This information feels redundant to what was stated above, but I see it's part of a hierarchy of information presented at the beginning-->
 The availability key provides recovery capability for scenarios in which an external malefactor or malicious insider steals control of your key vault, or when inadvertent mismanagement results in loss of root keys.
 
-For Exchange Online and Skype for Business, the availability key also ensures data availability during transient - intermittent - operational issues related to the service accessing root keys. When the O365 service finds both Customer Keys in Azure Key Vault unreachable, it uses the availability key. The service NEVER goes directly to the availability key.
+For Exchange Online and Skype for Business, the availability key also ensures data availability during transient, or intermittent operational issues related to the service accessing root keys. When the Office 365 service can't reach either Customer Key in Azure Key Vault, the service uses the availability key. The service NEVER goes directly to the availability key.
 
 For SharePoint Online, including Team Sites, and OneDrive for Business, the availability key is never used outside of the recovery capability. Customers must explicitly instruct Microsoft to initiate use of the availability key during a recovery scenario.
 
@@ -42,7 +42,6 @@ For SharePoint Online, including Team Sites, and OneDrive for Business, the avai
 > **@Reviewers!!**  Look into details around availability key scenarios when customer keys are revoked? I address some of these in this document, but this was a specific concern for at least one customer</br>
 In Exchange, system calls fall back on the availability key when access is revoked from AKVs. (IP right now, but I think this should be public. I detail the process in this article.)</br>
 In SPO all data is locked down once customers revoke SPO access to AKVs. ( I detail the process in this article. But I don't have a definition of "locked down".) **@KC** **(TB):** we are no longer talking about "Key Revocation" and instead focusing on the "data purge" process. Customers can roll existing keys, or they can leave the service, but they can't really revoke the keys. If they are leaving the service, there is a period of time when the availability key is active and still indexing things before the data purge process is complete, but we don't really need to address this here, since no one can login to access the data because they are leaving the service and all logins have been revoked.
-
 
 <!-->
 (TB): This sections seems a bit out of place, since the availability key only exists in the context of service encryption. This should have been introduced first, or we should link to our primary documentation for Service Encryption at the top. Something like "The availability key is used in the context of service encryption using Customer Key. For details on Customer Key, please refer to xxx. 
@@ -78,25 +77,24 @@ Customer Key’s primary purpose is for compliance. If you need to manage your o
 
 - If Microsoft employees ever need to access customer content in SharePoint Online or Exchange Online:
 
-   - The employee must have a valid support ticket
+    - The employee must have a valid support ticket
 
-   - The employee's privilege elevation must be approved by??
+    - The employee's privilege elevation must be approved by??
 
 > [!IMPORTANT]
 > **@Reviewers!!**  Who approves this elevation?
 
-   - You'll receive a Customer Lockbox request (if you've got Customer Lockbox properly licensed and configured) that allows you to approve or deny the employee access to your data. If you approve the request, the service generates customer-visible logs for the activity. The service generates these logs regardless of whether the service uses the Customer Key or availability key to decrypt the data the service retrieves.
+    - You'll receive a Customer Lockbox request (if you've got Customer Lockbox properly licensed and configured) that allows you to approve or deny the employee access to your data. If you approve the request, the service generates customer-visible logs for the activity. The service generates these logs regardless of whether the service uses the Customer Key or availability key to decrypt the data the service retrieves.
 
 Bottom line: You will see logged events of our (incredibly rare and customer-approved) access to customer content in Exchange and SharePoint logs. Customer Key is not related to preventing Microsoft’s access to customer data.
 
 Our documentation doesn't currently list which services have access to the availability key in Office 365. Instead, use the data access logs to identify activity with Customer Key. If you want to examine or determine activity within your Office 365 organization, use the data access logs within the ***.
 Customer Key has no separate audit logging capability. Instead, Customer Key relies on Microsoft 365 and Office 365 logs.
 
-
 <!--(TB): left off here for the day (10/2/2019) -->
 ## Use the availability key to recover from key loss
 
-If you lose your keys contact Microsoft to enable the use of the availability key. More information about the process follows in this article.
+If you lose your keys, contact Microsoft to enable the use of the availability key. More information about the process follows in this article.
 
 ### Exchange Online and Skype for Business
 
@@ -172,7 +170,7 @@ Office 365 follows this process to access a blob that has customer file data:
 
 Office 365 decrypts a TIK and issues two decryption requests to Azure Key Vault with a slight offset. The first one to finish furnishes the result, canceling the other request.
   
-In case the customer loses access to their customer keys, Office 365 also encrypts the TIK with an availability key and stores this along with the TIKs encrypted with each customer key. The TIK encrypted with the availability key is used only when the customer calls Microsoft to enlist the recovery path when they have lost access to their keys, maliciously or accidentally.
+In case you lose access to your customer keys, Office 365 also encrypts the TIK with an availability key and stores this along with the TIKs encrypted with each customer key. The TIK encrypted with the availability key is used only when the customer calls Microsoft to enlist the recovery path when they have lost access to their keys, maliciously or accidentally.
   
 For availability and scale reasons, decrypted TIKs are cached in a time-limited memory cache. Two hours before a TIK cache is set to expire, Office 365 attempts to decrypt each TIK. Decrypting the TIKs extends the lifetime of the cache. If TIK decryption fails for a significant amount of time, Office 365 generates an alert to notify engineering prior to the cache expiration. Only if the customer calls Microsoft will Office 365 initiate the recovery operation, which involves decrypting the TIK with the availability key stored in Microsoft's secret store and onboarding the tenant again using the decrypted TIK and a new set of customer-supplied Azure Key Vault keys.
   
@@ -180,7 +178,10 @@ As of today, Customer Key is involved in the encryption and decryption chain of 
 
 ## Key Revocation and the Data Purge Path process
 
-You control the revocation of all root keys including the availability key. Customer Key provides control of the exit planning aspect of regulatory requirements for you. The data purge feature is not available with Microsoft-managed keys; only Customer Key offers this ability. If you decide to revoke your keys to purge their data and exit the service, the service deletes the availability key. This process takes Microsoft about 72 hours.
+> [!WARNING]
+> @REVIEWERS! Move this to a separate article? it doesn't fit with "learn about". Otherwise, I'm going to move this to "Manage customer key"
+
+You control the revocation of all root keys including the availability key. Customer Key provides control of the exit planning aspect of regulatory requirements for you. The data purge feature is not available with Microsoft-managed keys; only Customer Key offers this ability. If you decide to revoke your keys to purge your data and exit the service, the service deletes the availability key. This process takes Microsoft about 72 hours.
 
 The Office 365 core audits and validates this Data Purge Path. For more information, see the SSAE 18 SOC 2 Report available on the [Service Trust Portal](https://servicetrust.microsoft.com/). In addition, Microsoft recommends the following documents:
 
@@ -190,7 +191,7 @@ The Office 365 core audits and validates this Data Purge Path. For more informat
 
 The Data Purge Path process differs slightly between Exchange Online and Skype for Business, and SharePoint Online and OneDrive for Business.
 
-### Revoke the Customer Key and availability key for Exchange Online and Skype for Business
+### Revoke your Customer Keys and the availability key for Exchange Online and Skype for Business
 
 To initiate the Data Purge Path process for Exchange Online and Skype for Business, complete these steps:
 
@@ -200,19 +201,19 @@ To initiate the Data Purge Path process for Exchange Online and Skype for Busine
 
 1. From Windows PowerShell, run set-permanentdatapurgerequest as follows:
 
-   ```powershell
-   set-permanentdatapurgerequest TRUE
-   ```
+    ```powershell
+    set-permanentdatapurgerequest TRUE
+    ```
 
 1. Contact Microsoft to delete the availability key.
 
-   When you contact Microsoft to delete the availability key, we will send you a legal document. The person in your organization who signed up as an approver in the FastTrack offer during onboarding needs to sign this document. Normally, this is an executive or other designated person in your company who is legally authorized to sign the paperwork on behalf of your organization.
+    When you contact Microsoft to delete the availability key, we will send you a legal document. The person in your organization who signed up as an approver in the FastTrack offer during onboarding needs to sign this document. Normally, this is an executive or other designated person in your company who is legally authorized to sign the paperwork on behalf of your organization.
 
 1. Once your representative has signed the legal document, return it to Microsoft (usually through an eDoc signature).
 
-   Once Microsoft receives the legal document, we run cmdlets to trigger the data purge which performs crypto deletion of the availability key. Once the data purge cmdlets complete, the data has been purged.
+    Once Microsoft receives the legal document, we run cmdlets to trigger the data purge which performs crypto deletion of the availability key. Once the data purge cmdlets complete, the data has been purged.
 
-### Revoke the Customer Key and availability key for SharePoint Online, including Team Sites, and OneDrive for Business
+### Revoke your Customer Keys and the availability key for SharePoint Online, including Team Sites, and OneDrive for Business
 
 To initiate the Data Purge Path process for Exchange Online and Skype for Business, complete these steps:
 > [!IMPORTANT]
@@ -222,7 +223,7 @@ To initiate the Data Purge Path process for Exchange Online and Skype for Busine
 
 1. Contact Microsoft to delete the availability key.
 
-   When you contact Microsoft to delete the availability key, we will send you a legal document. The person in your organization who signed up as an approver in the FastTrack offer during onboarding needs to sign this document. Normally, this is an executive or other designated person in your company who is legally authorized to sign the paperwork on behalf of your organization.
+    When you contact Microsoft to delete the availability key, we will send you a legal document. The person in your organization who signed up as an approver in the FastTrack offer during onboarding needs to sign this document. Normally, this is an executive or other designated person in your company who is legally authorized to sign the paperwork on behalf of your organization.
 
 1. Once your representative signs the legal document, return it to Microsoft (usually through an eDoc signature).
 
@@ -230,10 +231,10 @@ To initiate the Data Purge Path process for Exchange Online and Skype for Busine
 
 ## Related articles
 
-- [Controlling your data using Customer Key for Office 365](controlling-your-data-using-customer-key.md)
+- [Service encryption with Customer Key for Office 365](customer-key-overview.md)
 
-- [Manage Customer Key for Office 365](customer-key-manage.md)
+- [Set up Customer Key for Office 365](customer-key-set-up.md)
 
-- [Roll or rotate a customer key or an availability key](customer-key-availability-key-roll.md)
+- [Manage Customer Key for Office 365](customer-key-manage.md)
 
-- [Service encryption with Customer Key for Office 365 FAQ](service-encryption-with-customer-key-faq.md)
+- [Roll or rotate a Customer Key or an availability key](customer-key-availability-key-roll.md)

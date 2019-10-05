@@ -18,7 +18,7 @@ description: "With Customer Key, you control your organization's encryption keys
 # Service encryption with Customer Key in Office 365
 
 > [!IMPORTANT]
-> REVIEWERS - This topic is made up of the OVERVIEW/CONCEPTUAL content from the FAQ. This needs review for content, readability, and especially REDUNDANCY (the faq had lots of that). **AYLA: My goal is to get rid of the FAQ**. This topic will introduce Service encryption (as it relates to customer key), lockbox and customer lockbox (as they relate to Customer Key), Customer Key itself (what it is and isn't), and BYOK (as it relates to Customer Key). This article then introduces the rest of the customer key articles in logical order.
+> @REVIEWERS - This topic is made up of the OVERVIEW/CONCEPTUAL content from the FAQ. This needs review for content, readability, and especially REDUNDANCY (the faq had lots of that). **AYLA: My goal is to get rid of the FAQ**. This topic will introduce Service encryption (as it relates to customer key), lockbox and customer lockbox (as they relate to Customer Key), Customer Key itself (what it is and isn't), and BYOK (as it relates to Customer Key). This article then introduces the rest of the customer key articles in logical order.
 
 Office 365 provides baseline, volume-level encryption enabled through BitLocker and Distributed Key Manager (DKM). Office 365 offers an added layer of encryption at the application level for your content. This content includes data from Exchange Online, Skype for Business, SharePoint Online, including Team Sites, and OneDrive for Business. This added layer of encryption is called service encryption.
 
@@ -31,7 +31,7 @@ Customer Key is built on service encryption and lets you provide and control enc
 Customer Key enhances the ability of your organization to meet the demands of compliance requirements that specify key arrangements with the cloud service provider. With Customer Key, you provide and control the encryption keys for your Office 365 data at-rest at the application level. As a result, you exercise control over your organization's keys. If you decide to exit the service, you revoke your organization's keys. By revoking the keys, the data is unreadable to the service. For all Office 365 services, key revocation is the first step on the path towards data deletion.
 
 > [!IMPORTANT]
-> REVIEWERS - For more information about this process, see ***Data Purge Path???*** in Manage Customer Key??? I believe this should go either in its own topic (exiting the service) or in managing customer key. I think right now the only mention is in learn about availability key. Find out and move it. Also, what about Customer Lockbox? (I don't have a link to non customer lockbox.)
+> @REVIEWERS - For more information about this process, see ***Data Purge Path???*** in Manage Customer Key??? I believe this should go either in its own topic (exiting the service) or in managing customer key. I think right now the only mention is in learn about availability key. Find out and move it. Also, what about Customer Lockbox? (I don't have a link to non customer lockbox.)
 
 With Customer Key, you control your organization's encryption keys and then configure Office 365 to use them to encrypt your data at rest in Microsoft's data centers. In other words, Customer Key allows customers to add a layer of encryption that belongs to them, with their keys. Data at rest includes data from Exchange Online and Skype for Business stored in mailboxes and files stored in SharePoint Online and OneDrive for Business.
 
@@ -49,14 +49,14 @@ We don't currently offer customer control of the encryption keys for Skype Meeti
 ## About the keys used by Customer Key
 
 > [!WARNING]
-> Add VERY brief into about the keys here then point off to more info about availability keys. I'm thinking of putting the encryption cipher stuff here.
+> @KC Add VERY brief into about the keys here then point off to more info about availability keys.
 
 ### Customer-managed keys
 
 These are keys you provide and store in Azure Key Vault.
 
 > [!WARNING]
-> @REVIEWERS! What else to say here You can *** generate and store these in a Thales ? HSM or some other mechanism? Move some of the overview material about the keys here? differentiate between the customer keys and the availability key here. Keep this VERY brief.
+> @REVIEWERS! What else to say here You can generate and store these in a Thales ? HSM or some other mechanism? Move some of the overview material about the keys here? differentiate between the customer keys and the availability key here. Keep this VERY brief.
 
 ### Availability key
 
@@ -64,7 +64,7 @@ The availability key is a Microsoft-managed key (is it?) that provides you with 
 
 ### Encryption ciphers used by Customer Key
 
-> [!IMPORTANT]
+> [!WARNING]
 > **@Reviewers!!** Need to redo these graphics these are placeholders for now. Please confirm the data on them is still accurate. Also, I'd like to remove the "microsoft-managed" from the SPO piece as this will undoubtedly cause confusion. @Jeff McDowell Please verify.
 
 Customer Key uses a variety of encryption ciphers to encrypt keys as shown in the following figures.
@@ -125,15 +125,14 @@ To provide feedback on Customer Key, including the documentation, send your idea
   
 ## Related articles
 
-- [Set up Customer Key for Office 365](customer-key-set-up.md)
+- [Set up Customer Key for Office 365](customer-key-set-up.md)
 
-- [Manage Customer Key for Office 365](customer-key-manage.md)
+- [Manage Customer Key for Office 365](customer-key-manage.md)
 
-- [Roll or rotate a customer key or an availability key](customer-key-availability-key-roll.md)
+- [Roll or rotate a Customer Key or an availability key](customer-key-availability-key-roll.md)
 
-- [Understand the availability key](customer-key-availability-key-understand.md)
+- [Learn about the availability key](customer-key-availability-key-understand.md)
 
-- [Service encryption with Customer Key for Office 365 FAQ](service-encryption-with-customer-key-faq.md)
+- [Customer Lockbox in Office 365](customer-lockbox-requests.md)
 
 - [Office 365 Service Encryption](office-365-service-encryption.md)
-  

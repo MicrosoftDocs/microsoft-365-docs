@@ -22,7 +22,7 @@ description: "Learn how to set up Customer Key for Office 365 for Exchange Onlin
   
 ## Before you set up Customer Key
 
-Before you get started, ensure that you have the appropriate licensing for your organization. Customer Key in Office 365 is offered in Office 365 E5 or the Advanced Compliance SKU. To understand the concepts and procedures in this topic, review the [Azure Key Vault](https://azure.microsoft.com/en-us/documentation/services/key-vault/) documentation. Also, become familiar with the terms used in Azure, for example, [tenant](https://msdn.microsoft.com/library/azure/jj573650.aspx#BKMK_WhatIsAnAzureADTenant).
+Before you get started, ensure that you have the appropriate licensing for your organization. Customer Key in Office 365 is offered in Office 365 E5 or the Advanced Compliance SKU. To understand the concepts and procedures in this topic, review the [Azure Key Vault](https://docs.microsoft.com/en-us/azure/key-vault/) documentation. Also, become familiar with the terms used in Azure, for example, [tenant](https://docs.microsoft.com/en-us/previous-versions/azure/azure-services/jj573650(v=azure.100)).
 
 FastTrack is only used to collect the required tenant and service configuration information used to register for Customer Key. The Customer Key Offers are published via FastTrack so that it is convenient for you and our partners to submit the required information using the same method. FastTrack also makes it easy to archive the data that you provide in the Offer.
   
@@ -490,13 +490,13 @@ To create a DEP, you need to remotely connect to SharePoint Online by using Wind
 
 ## Related articles
 
-- [Manage Customer Key for Office 365](customer-key-manage.md)
+- [Service encryption with Customer Key for Office 365](customer-key-overview.md)
 
-- [Roll or rotate a customer key or an availability key](customer-key-availability-key-roll.md)
+- [Manage Customer Key for Office 365](customer-key-manage.md)
 
-- [Understand the availability key](customer-key-availability-key-understand.md)
+- [Roll or rotate a Customer Key or an availability key](customer-key-availability-key-roll.md)
 
-- [Service encryption with Customer Key for Office 365 FAQ](service-encryption-with-customer-key-faq.md)
+- [Learn about the availability key](customer-key-availability-key-understand.md)
 
 - [Office 365 Service Encryption](office-365-service-encryption.md)
-  
+ 

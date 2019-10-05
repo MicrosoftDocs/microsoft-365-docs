@@ -12,7 +12,7 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: "After you set up Customer Key, learn how to manage it by restoring AKV keys, managing permissions, and determining the DEP assigned to a mailbox."
+description: "After you set up Customer Key, learn how to manage it by restoring AKV keys, managing permissions, and managing your data encryption policies."
 ---
 
 # Manage Customer Key for Office 365
@@ -175,20 +175,22 @@ The output from this cmdlet includes:
 ## Switch to Microsoft-managed keys from Customer Key
 
 > [!IMPORTANT]
-> **@Reviewers!!** Please verify that EXO is still not supported. Also, i need instructions for SPO.
+> **@Reviewers!!** Please verify that EXO is still not supported. Also, I need instructions for SPO.
 
  **Exchange Online and Skype for Business:** This is not currently supported.
   
- **SharePoint Online and OneDrive for Business:** You can revert to using Microsoft-managed keys separately for each geo (if you use the multi-geo feature) or for all your data if it is in a single geo. 
+ **SharePoint Online and OneDrive for Business:** You can revert to using Microsoft-managed keys separately for each geo (if you use the multi-geo feature) or for all your data if it is in a single geo.
 
 ## Related articles
 
-- [Control your data in Office 365 using Customer Key](customer-key-overview.md)
+- [Service encryption with Customer Key for Office 365](customer-key-overview.md)
 
-- [Set up Customer Key for Office 365](customer-key-set-up.md)
+- [Set up Customer Key for Office 365](customer-key-set-up.md)
 
-- [Roll or rotate a customer key or an availability key](customer-key-availability-key-roll.md)
+- [Roll or rotate a Customer Key or an availability key](customer-key-availability-key-roll.md)
 
-- [Understand the availability key](customer-key-availability-key-understand.md)
+- [Learn about the availability key](customer-key-availability-key-understand.md)
 
-- [Service encryption with Customer Key for Office 365 FAQ](service-encryption-with-customer-key-faq.md)
+- [Customer Lockbox in Office 365](customer-lockbox-requests.md)
+
+- [Office 365 Service Encryption](office-365-service-encryption.md)
