@@ -353,11 +353,15 @@
 
 # Manage compliance risks
 ## [Microsoft Service Trust Portal](get-started-with-service-trust-portal.md)
-## [Compliance Manager (Classic)](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
-## [Compliance Manager (Preview)](compliance-manager-overview.md)
+## Compliance Score and Compliance Manager
+### Compliance Score (Preview)
+### Working with Compliance Score (Preview)
+### Compliance Score feature reference
+### [Compliance Score calculation (Preview)](compliance-score-methodology.md)
+### [Compliance Manager (Preview)](compliance-manager-overview.md)
 ### [What's new in Compliance Manager (Preview)](compliance-manager-release-notes.md)
 ### [Working with Compliance Manager (Preview)](working-with-compliance-manager.md)
-### [Compliance score methodology (Preview)](compliance-score-methodology.md)
+### [Compliance Manager (Classic)](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
 
 ## [GDPR data subject request tool](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)
 ## [Office 365 Information Protection for GDPR](office-365-information-protection-for-gdpr.md)
