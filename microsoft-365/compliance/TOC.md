@@ -555,6 +555,10 @@
 #### [My Number (Japan)](offering-my-number-act-japan.md)
 #### [TRUCS (China)](https://aka.ms/TRUCS-Compliance)
 
+### Australia / Pacific
+#### [CCSL/IRAP (Australia)](offering-CCSL-IRAP-Australia.md)
+#### [NZ CC Framework (New Zealand)](offering-nz-cc-framework-nz.md)
+
 ### Europe
 #### [BIR 2012 (Netherlands)](offering-bir-2012-netherlands.md)
 #### [C5 (Germany)](offering-c5-germany.md)
@@ -573,10 +577,6 @@
 
 ### North America
 #### [Canadian Privacy Laws](offering-canadian-privacy-laws.md)
-
-### Oceania
-#### [CCSL/IRAP (Australia)](offering-CCSL-IRAP-Australia.md)
-#### [NZ CC Framework (New Zealand)](offering-nz-cc-framework-nz.md)
 
 ### South America
 #### [PDPA (Argentina)](offering-pdpa-argentina.md)
