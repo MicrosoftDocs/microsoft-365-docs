@@ -20,7 +20,7 @@ conceptualContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
   items:
   #Card
-    - title: What is Microsoft 365?
+    - title: What is Microsoft 365 Business?
       links:
         - url: https://support.office.com/article/901e2522-c2cf-4b8c-894e-f482cda3347a
           itemType: video
@@ -32,6 +32,9 @@ conceptualContent:
           itemType: get-started
           text: Sign up for Microsoft 365 Business
         - url: https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description
+          itemType: reference
+          text: Compare Microsoft 365 Business
+        - url: file2.md OR https://docs.microsoft.com/file2
           itemType: reference
           text: Service description
   #Card
@@ -77,7 +80,7 @@ conceptualContent:
           itemType: download
           text: Tech fundamentals
   #Card
-    - title: Set up Microsoft 365
+    - title: Set up Microsoft 365 Business
       links:
         - url: https://support.office.com/article/38003e30-9d10-44cf-b596-f1b5f662bfa1
           itemType: get-started
@@ -89,7 +92,7 @@ conceptualContent:
           itemType: get-started
           text: 3. Install Office
   # Card
-    - title: Manage people
+    - title: Manage users
       links:
         - url: https://docs.microsoft.com/microsoft-365/business/add-users-m365b
           itemType: how-to-guide
@@ -104,15 +107,31 @@ conceptualContent:
       footerLink:
         url: https://docs.microsoft.com/office365/admin/admin-home
         text: See more 
+ # Card
+    - title: Manage threats
+      links:
+        - url: https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/office-365-atp
+          itemType: overview
+          text: Office 365 Advanced Threat Protection
+        - url: https://support.office.com/article/eaa43495-9bbb-4fca-922a-df90dee51980
+          itemType: how-to-guide
+          text: Send encrypted email
+        - url: file2a.md OR https://docs.microsoft.com/file2a
+          itemType: video
+          text: Create and use sensitivity labels
+      # footerLink (optional)
+      footerLink:
+        url: https://docs.microsoft.com/office365/admin/admin-home
+        text: See more 
   # Card
     - title: Manage data
       links:
-        - url: https://docs.microsoft.com/microsoft-365/compliance/microsoft-365-compliance-center
+        - url: https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies
           itemType: overview
-          text: Compliance overview
-        - url: https://docs.microsoft.com/microsoft-365/compliance/retention-policies
+          text: Data Loss Prevention 
+        - url: https://docs.microsoft.com/microsoft-365/business/set-up-compliance#set-up-email-retention-with-exchange-online-archiving
           itemType: how-to-guide
-          text: Retention
+          text: Set up email retention
         - url: https://docs.microsoft.com/microsoft-365/compliance/encryption
           itemType: how-to-guide
           text: Encryption
@@ -135,9 +154,15 @@ conceptualContent:
         - url: map-protection-features-to-intune-settings.md
           itemType: how-to-guide
           text: Intune
+        - url: manage-windows-devices.md
+          itemType: how-to-guide
+          text: Set up hybrid Azure AD join
+        - url: access-resources.md
+          itemType: how-to-guide
+          text: Set up Azure AD join      
       # footerLink (optional)
       footerLink:
-        url: https://docs.microsoft.com/intune/what-is-intune
+        url: manage-windows-devices.md
         text: See more
   # Card
     - title: Monitor security
@@ -154,23 +179,27 @@ conceptualContent:
       # footerLink (optional)
       footerLink:
         url: https://docs.microsoft.com/microsoft-365/security/
-        text: See more 
+        text: See more
   # Card
-    - title: Manage threats
+    - title: Stay on top of changes and get help
       links:
-        - url: https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection
+        - url: https://techcommunity.microsoft.com/t5/Microsoft-365-Business-Blog/bg-p/Microsoft365BusinessBlog
+          itemType: whats-new
+          text: Microsoft 365 Business tech community
+        - url: https://techcommunity.microsoft.com/t5/Microsoft-365-Business/bd-p/Microsoft365business
           itemType: overview
-          text: Threat Protection overview
-        - url: https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies
+          text: Send feedback
+        - url: https://techcommunity.microsoft.com/t5/Small-and-Medium-Businesses/ct-p/SMB
           itemType: overview
-          text: Data Loss Prevention 
-        - url: https://docs.microsoft.com/microsoft-365/compliance/responding-to-a-compromised-email-account
-          itemType: how-to-guide
-          text: Respond to security incidents
+          text: Small and medium business tech community
+        - url: https://support.office.com/article/7f681212-c649-4a3e-a43b-32b1d1e58988
+          itemType: video
+          text: Get help
       # footerLink (optional)
       footerLink:
-        url: https://docs.microsoft.com/office365/admin/admin-home
+        url: https://docs.microsoft.com/microsoft-365/security/
         text: See more 
+  
 
 
 
