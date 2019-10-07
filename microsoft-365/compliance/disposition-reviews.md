@@ -1,7 +1,7 @@
 ---
 title: "Overview of disposition reviews"
-ms.author: stephow
-author: stephow-MSFT
+ms.author: laurawi
+author: laurawi
 manager: laurawi
 ms.date: 
 audience: Admin

@@ -16,7 +16,7 @@ ms.author: greglin
 
 *This article applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
 
-![](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
+![Phase 3: Windows 10 Enterprise](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
 
 If you have new Windows 10 PCs, you can use Windows Autopilot to customize the out-of-box-experience (OOBE) for your organization and deploy a new system with apps and settings already configured. There are no images to deploy, no drivers to inject, and no infrastructure to manage. Users can go through the deployment process independently, without the need consult their IT administrator.
 
@@ -99,7 +99,7 @@ As an interim checkpoint, you can see the [exit criteria](windows10-exit-criteri
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step4.png)| [Monitor device health and compliance](windows10-enable-windows-analytics.md) |
+|![Step 4](./media/stepnumbers/Step4.png)| [Monitor device health and compliance](windows10-enable-windows-analytics.md) |
 
 
 

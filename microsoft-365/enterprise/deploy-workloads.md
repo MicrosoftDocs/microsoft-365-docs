@@ -37,12 +37,9 @@ To protect this data from internal and external threats, see [Microsoft Teams an
 
 Here are the workloads and scenarios in the overall Microsoft 365 Enterprise deployment guide:
 
-![](./media/deploy-workloads/m365-deploy-content-arch-workloads.png)
+![The workloads and scenarios in the overall Microsoft 365 Enterprise deployment guide](./media/deploy-workloads/m365-deploy-content-arch-workloads.png)
 
-See the [Microsoft 365 Productivity Library](https://www.microsoft.com/microsoft-365/success/) for additional scenarios. 
-
-1. From this web page, type a search string or click **Filter by** and specify industry, roles (departments), and products within Microsoft 365.
-2. From the results, click a card to see the steps that can get you started.
+See the [Microsoft 365 Productivity Library](https://aka.ms/productivitylibrary) (https://aka.ms/productivitylibrary) for additional scenarios. 
 
 ## Foundation infrastructure prerequisites
 
