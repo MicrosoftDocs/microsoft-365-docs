@@ -356,7 +356,6 @@
 ## Compliance Score and Compliance Manager
 ### Compliance Score (Preview)
 ### Working with Compliance Score (Preview)
-### Compliance Score feature reference
 ### [Compliance Score calculation (Preview)](compliance-score-methodology.md)
 ### [Compliance Manager (Preview)](compliance-manager-overview.md)
 ### [What's new in Compliance Manager (Preview)](compliance-manager-release-notes.md)
