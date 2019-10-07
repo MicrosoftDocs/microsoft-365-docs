@@ -1,5 +1,5 @@
 ---
-title: "Data classification overview"
+title: "Get started with data classification"
 ms.author: chrfox
 author: chrfox
 manager: laurawi

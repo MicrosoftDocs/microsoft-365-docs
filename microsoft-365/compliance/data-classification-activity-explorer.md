@@ -1,5 +1,5 @@
 ---
-title: "Data classification activity explorer"
+title: "Using data classification activity explorer"
 ms.author: chrfox
 author: chrfox
 manager: laurawi

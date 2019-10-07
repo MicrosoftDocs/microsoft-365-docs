@@ -1,5 +1,5 @@
 ---
-title: "Data classification content explorer"
+title: "Using data classification content explorer"
 ms.author: chrfox
 author: chrfox
 manager: laurawi
