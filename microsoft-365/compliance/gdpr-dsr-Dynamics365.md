@@ -48,7 +48,7 @@ The guide, divided into two parts, describes how to use Dynamics 365 products, s
 
 When data subjects exercise their rights and make requests, consider the following points:
 
-- Properly identify the person and role — such as employee, customer, vendor — by using information that the data subject gave you as part of their request. This information might be a name, an employee ID or customer number, or other identifier.
+- Properly identify the person and role—such as employee, customer, vendor—by using information that the data subject gave you as part of their request. This information might be a name, an employee ID or customer number, or other identifier.
 - Record the data and time of the request. (You have 30 days to complete the request.)
 - Affirm that the request meets your organization's requirements for honoring or declining a data subject’s request. For example, you must make sure that executing the request doesn't conflict with any other legal, financial, or regulatory obligations that you have, or infringe on the rights and freedoms of others.
 - Verify that you have the information that is related to the request.
