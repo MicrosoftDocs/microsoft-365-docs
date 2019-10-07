@@ -26,13 +26,13 @@ Microsoft Compliance Score is a new feature within the Microsoft 365 compliance 
 
 While Compliance Score used to be a component of [Compliance Manager](compliance-manager-overview.md), it is now a standalone feature with its own design and capabilities—many of which replace functions you previously performed in Compliance Manager (see how it works with Compliance Manager<link to subhead below>).
 
-## Simplifying compliance management
+## Simplified compliance management
 
 Compliance Score helps to simplify and automate the process of managing compliance for your organization. It gives you a centralized, user-friendly environment in which to efficiently and comprehensively manage your organization’s data protection and risk management posture—from keeping track of regulatory changes to defining controls, conducting auditing and testing to preparing reports. Specifically, Compliance Score provides:
 
-- **Continuous assessment** - helping to automatically detect and monitor control effectiveness in your system
-- **Suggested solutions** - providing recommendations and step-by-step guidance to help improve your score
--  **Streamlined collaboration** - letting you easily assign, track, record, and report compliance activities with built-in workflow management
+- **Continuous assessment** - automatically detects and monitor control effectiveness in your system <details? per laura, detects what or how monitors?>
+- **Suggested solutions** - provides recommendations and step-by-step guidance to help improve your score
+-  **Streamlined collaboration** - lets you easily assign, track, record, and report compliance activities with built-in workflow management
 
 ## Understanding your score
 
@@ -40,7 +40,7 @@ When you first come to Compliance Score, you see a dashboard featuring a numeric
 
 Compliance Score gives you an out-of-the-box score based on the Microsoft Data Protection Standard (MSDP), which is a set of controls that includes key regulations and standards. While this score is a good starting point for assessing your compliance posture, Compliance Score becomes more relevant and powerful for you once you customize it by creating assessments, customizing controls, and taking recommended improvement actions.
 
-Visit other topics for details about [how your compliance score is calculated](compliance-score-methodology.md) and how to improve your score via the workflow <link to working with article>.
+Visit other topics for details about [how your compliance score is calculated](compliance-score-methodology.md) and how to improve your score via the workflow. <link to working with article>
 
 > [!NOTE]
 > Compliance Score does not express an absolute measure of organizational compliance with any particular standard or regulation. It expresses the extent to which you have adopted controls which can reduce the risks to personal data and individual privacy. Compliance Score should not be interpreted as a guarantee in any way.
