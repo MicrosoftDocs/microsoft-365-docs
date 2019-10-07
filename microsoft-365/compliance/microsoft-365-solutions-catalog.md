@@ -21,11 +21,9 @@ Read this article to get acquainted with the Microsoft 365 solutions catalog, [h
 
 ## Organization
 
-The solutions catalog is organized into sections that contain information cards for each compliance solution available in your Microsoft 365 subscription.
+The solutions catalog is organized into sections that contain information cards for each compliance solution available in your Microsoft 365 subscription. Each section contains cards for solutions grouped by compliance area. More details about these sections is provided later in this article.
 
 SCREENSHOT OF SOLUTIONS CATALOG MAIN PAGE
-
-Each section contains cards for solutions grouped by compliance area. More details about these sections is provided later in this article.
 
 When you select **View** for a solution card, you'll see detailed information about the compliance solution. This information includes an overview, requirements, additional learning resources, and controls that allow you to pin and share the solution card.
 
