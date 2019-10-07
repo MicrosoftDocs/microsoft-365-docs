@@ -22,7 +22,7 @@ description: "Microsoft Compliance Score helps organizations simplify and automa
 
 ## What is Compliance Score
 
-Microsoft Compliance Score is a new feature in the Microsoft 365 compliance center. It calculates a personalized, risk-based score to help you understand the state of your compliance, and recommends actions you can take to strengthen your overall compliance posture. If you use [Compliance Manager](compliance-manager-overview.md), you'll notice that Compliance Score is now a standalone feature with its own design and capabilities—many of which replace functions you previously performed in the Compliance Manager interface.
+Microsoft Compliance Score is a new feature in the Microsoft 365 compliance center. It calculates a personalized, risk-based score to help understand your organization's state of compliance with key standards and regulations, and recommends actions you can take to strengthen your overall compliance posture. If you use [Compliance Manager](compliance-manager-overview.md), you'll notice that Compliance Score is now a standalone feature with its own design and capabilities—many of which replace functions you previously performed within Compliance Manager.
 
 ### Simplified compliance management
 
@@ -45,7 +45,7 @@ Visit other topics for details about [how your compliance score is calculated](c
 
 ## Relationship to Compliance Manager
 
-Use Compliance Score as your starting point for taking actions to manage compliance for your organization. While most actions can be performed within the Compliance Score interface, some actions are powered by Compliance Manager because the two systems have connected functionality in the public preview. When you come to functions that are handled in Compliance Manager, you will be guided along those points and will clearly know when you are being directed to that tool.
+Use Compliance Score as your starting point to manage compliance for your organization. While most actions can be performed within the Compliance Score, some actions are powered by Compliance Manager because the two systems have connected functionality during the public preview phase of release. When you come to functions that are supported only by Compliance Manager, notifications will guide you so that you know when you are being directed to that tool.
 
 ## Getting started
 
