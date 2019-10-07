@@ -356,7 +356,7 @@
 # Manage compliance risks
 ## [Microsoft Service Trust Portal](get-started-with-service-trust-portal.md)
 ## Compliance Score and Compliance Manager
-### Compliance Score (Preview)
+### [Compliance Score (Preview)](compliance-score.md)
 ### Working with Compliance Score (Preview)
 ### [Compliance Score calculation (Preview)](compliance-score-methodology.md)
 ### [Compliance Manager (Preview)](compliance-manager-overview.md)
