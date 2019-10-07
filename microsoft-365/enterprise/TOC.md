@@ -43,9 +43,10 @@
 ## [Deploy workloads and scenarios](deploy-workloads.md)
 ### [Microsoft Teams](teams-workload.md)
 ### [Exchange Online](exchangeonline-workload.md)
-### [SharePoint Online and OneDrive for Business](sharepoint-online-onedrive-workload.md)
+### [SharePoint and OneDrive for Business](sharepoint-online-onedrive-workload.md)
 ### [Migration](migration-microsoft-365-enterprise-workload.md)
-### [Teams and sites for highly regulated data](teams-sharepoint-online-sites-highly-regulated-data.md)
+### [Empower remote workers](empower-people-to-work-remotely.md)
+### [SharePoint sites for highly regulated data](teams-sharepoint-online-sites-highly-regulated-data.md)
 ## [Test Lab Guides](m365-enterprise-test-lab-guides.md)
 ### [Base configuration]()
 #### [Lightweight](lightweight-base-configuration-microsoft-365-enterprise.md)
@@ -81,7 +82,7 @@
 ### [Mobile device management](contoso-mdm.md)
 ### [Information protection](contoso-info-protect.md)
 ### [Security summary](contoso-security-summary.md)
-### [SharePoint Online site for highly regulated data](contoso-sharepoint-online-site-for-highly-confidential-assets.md)
+### [SharePoint site for highly regulated data](contoso-sharepoint-online-site-for-highly-confidential-assets.md)
 
 # [Desktop Deployment Center](desktop-deployment-center-home.md)
 ## [Getting Started: People, Process and Technology Guidance](getting-started.md)
@@ -101,3 +102,9 @@
 
 # [Microsoft 365 compliance](../compliance/index.yml)
 # [Microsoft 365 security](../security/index.yml)
+
+# [Enterprise Business Continuity Management (EBCM) with cloud services](ebcm-understanding-ebcm-with-cloud-services.md)
+## [Customer and cloud partner EBCM responsibilities](ebcm-customer-and-cloud-partner-ebcm-responsibilities.md)
+## [Microsoft 365 cloud services resiliency](ebcm-m365-service-resiliency.md)
+## [Developing your continuity plan](ebcm-developing-your-ebcm-plan.md)
+## [Service incident mitigation scenarios](ebcm-microsoft-365-mitigations.md)

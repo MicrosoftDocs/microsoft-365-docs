@@ -18,6 +18,7 @@ search.appverid:
 - MET150
 ms.assetid: 27ff1678-865a-4707-8145-e1155aa815d6
 description: "Learn to manage Microsoft 365 Business related admin tasks, mobile devices, Windows 10PCs, and many such tasks."
+ms.custom: OKR_SMB_M365
 ---
 
 # Manage Microsoft 365 Business

@@ -17,6 +17,15 @@
 #### [Device monitoring and reporting](./mtp/monitor-devices.md)
 #### [App monitoring and reporting](./mtp/monitor-apps.md)
 
+### [Manage tickets through ServiceNow](./mtp/tickets.md)
+
+
+## [Identity and device access configurations](../enterprise/microsoft-365-policies-configurations.md)
+### [Prerequisite work](../enterprise/identity-access-prerequisites.md)
+### [Common identity and device access policies](../enterprise/identity-access-policies.md)
+### [Recommended Exchange Online access policies](../enterprise/secure-email-recommended-policies.md)
+### [Recommended SharePoint Online access policies](../enterprise/sharepoint-file-access-policies.md)
+
 ## [Office 365 Security]()
 ### [Get started]()
 #### [Office 365 security roadmap](./office-365-security/security-roadmap.md)
@@ -94,8 +103,8 @@
 ##### [Report junk email and phishing scams in Outlook on the web](./office-365-security/report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)
 ##### [Protect on-premises mailboxes with Exchange Online Protection](./office-365-security/protect-on-premises-mailboxes-with-exchange-online-protection.md)
 ##### [Install the Junk Email Reporting Add-in for Microsoft Outlook](./office-365-security/install-the-junk-email-reporting-add-in-for-microsoft-outlook.md)
-#####[Turn off junk email reporting in Outlook on the web](./office-365-security/turn-off-junk-email-reporting-in-outlook-on-the-web.md)
-#####[What's the difference between junk email and bulk email?](./office-365-security/what-s-the-difference-between-junk-email-and-bulk-email.md)
+##### [Turn off junk email reporting in Outlook on the web](./office-365-security/turn-off-junk-email-reporting-in-outlook-on-the-web.md)
+##### [What's the difference between junk email and bulk email?](./office-365-security/what-s-the-difference-between-junk-email-and-bulk-email.md)
 
 #### [Quarantine email messages in Office 365](./office-365-security/quarantine-email-messages.md)
 ##### [Manage quarantined messages and files as an administrator](./office-365-security/manage-quarantined-messages-and-files.md)
@@ -125,13 +134,14 @@
 
 
 ### [Advanced Threat Protection ](./office-365-security/office-365-atp.md)
+#### [See what's new]()
+##### [What's new in Office 365 ATP](office-365-security/whats-new-in-office-365-atp.md)
 #### [ATP setup tasks for admins]()
 ##### [Global Administrator setup tasks]()
 ###### [Set up ATP Safe Links policies](./office-365-security/set-up-atp-safe-links-policies.md)
 ###### [Set up ATP Safe Attachments policies](./office-365-security/set-up-atp-safe-attachments-policies.md)
 ###### [Set up a custom "do not rewrite" URLs list](./office-365-security/set-up-a-custom-do-not-rewrite-urls-list-with-atp.md)
 ###### [Set up a custom blocked URLs list](./office-365-security/set-up-a-custom-blocked-urls-list-wtih-atp.md)
-
 ##### [Role Administrator setup tasks]()
 ###### [Turn on ATP for SharePoint, OneDrive, and Microsoft Teams](./office-365-security/turn-on-atp-for-spo-odb-and-teams.md)
 #### [Understanding latest attack campaigns with threat analytics](./mtp/latest-attack-campaigns.md)
@@ -250,12 +260,6 @@
 
 ### [Office 365 Enterprise](https://docs.microsoft.com/office-365-security/Enterprise)
 ### [Office 365 for Business](https://docs.microsoft.com/office-365-security/admin/admin-home)
-
-## [Identity and device access configurations](../enterprise/microsoft-365-policies-configurations.md)
-### [Prerequisite work](../enterprise/identity-access-prerequisites.md)
-### [Common identity and device access policies](../enterprise/identity-access-policies.md)
-### [Recommended Exchange Online access policies](../enterprise/secure-email-recommended-policies.md)
-### [Recommended SharePoint Online access policies](../enterprise/sharepoint-file-access-policies.md)
 
 
 

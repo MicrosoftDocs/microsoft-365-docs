@@ -19,11 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 80bdae57-f8bc-4e40-a58c-956007117ecb
 description: "Learn how to use Microsoft 365 Business to remove company data from user devices or Windows PCs. "
+ms.custom: OKR_SMB_M365
 ---
 
 # Remove company data from devices
 
-![Banner that point to https://aka.ms/aboutM365preview.](media/m365admincenterchanging.png)
+[![Label to let you know the admin center is changing and you can find more details at aka.ms/aboutM365preview.](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
 ## Remove company data
 

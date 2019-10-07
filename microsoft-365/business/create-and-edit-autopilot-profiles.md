@@ -22,6 +22,7 @@ search.appverid:
 - MOE150
 ms.assetid: 5cf7139e-cfa1-4765-8aad-001af1c74faa
 description: "Learn to create, edit, delete, or remove AutoPilot profiles. "
+ms.custom: OKR_SMB_M365
 ---
 
 # Create and edit AutoPilot profiles

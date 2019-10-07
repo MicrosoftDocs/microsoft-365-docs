@@ -2,20 +2,23 @@
 
 # Get started
 ## [What's new in the compliance center](whats-new.md)
+## [Recent updates to compliance content](recently-updated-topics-mcc.md)
 ## [Microsoft 365 compliance center](microsoft-365-compliance-center.md)
 ## [Go to the Security & Compliance Center](go-to-the-securitycompliance-center.md)
 ## [Use your free Azure Active Directory subscription](use-your-free-azure-ad-subscription-in-office-365.md)
 ## [Plan for security and compliance in Office 365](plan-for-security-and-compliance.md)
 
-# Manage insider risks
+# Manage internal risks
 ## [Protect user and device access](protect-access-to-data-and-services.md)
-## [Privileged access management](privileged-access-management-overview.md)
-## [Configure privileged access management](privileged-access-management-configuration.md)
 ## [Customer Lockbox](customer-lockbox-requests.md)
+## [Privileged access management]()
+### [Learn about privileged access management](privileged-access-management-overview.md)
+### [Configure privileged access management](privileged-access-management-configuration.md)
 ## Customer Key
 ### [Controlling your data in Office 365 using Customer Key](controlling-your-data-using-customer-key.md)
 ### [Service encryption with Customer Key for Office 365 FAQ](service-encryption-with-customer-key-faq.md)
-## [Supervise communications](supervision-policies.md)
+## [Communication supervision]()
+### [Learn about communication supervision](supervision-policies.md)
 ### [Configure supervision policies for your organization](configure-supervision-policies.md)
 ## [Information barriers](information-barriers.md)
 ### [Define information barrier policies](information-barriers-policies.md)
@@ -28,6 +31,7 @@
 ### [Restrict access to content by using encryption in sensitivity labels](encryption-sensitivity-labels.md)
 ### [Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md)
 ### [View label usage with label analytics](label-analytics.md)
+### [Sensitivity labels in Office apps](sensitivity-labels-office-apps.md)
 
 ## [Data loss prevention (DLP)](data-loss-prevention-policies.md)
 ### [DLP and Microsoft Teams](dlp-microsoft-teams.md)
@@ -285,6 +289,7 @@
 ## [Assign eDiscovery permissions](assign-ediscovery-permissions.md)
 ## [Set up compliance boundaries for eDiscovery investigations in Office 365](set-up-compliance-boundaries.md)
 ## [eDiscovery solution series - Data spillage scenario - Search and purge](data-spillage-scenariosearch-and-purge.md)
+## [Troubleshoot common eDiscovery issues](ediscovery-troubleshooting-common-issues.md)
 
 ## Manage holds
 ### [Create an eDiscovery hold](ediscovery-cases.md#step-4-place-content-locations-on-hold)
@@ -337,7 +342,9 @@
 ### [Document metadata fields](document-metadata-fields.md)
 ### [Manage jobs](manage-jobs.md)
 
-# [Search the audit log](search-the-audit-log-in-security-and-compliance.md)
+# Manage auditing and alert policies
+## [Search the audit log](search-the-audit-log-in-security-and-compliance.md)
+## [Manage alert policies](alert-policies.md)
 ## [Turn audit log search on or off](turn-audit-log-search-on-or-off.md)
 ## [Manage mailbox auditing](enable-mailbox-auditing.md)
 ## [Detailed properties in the audit log](detailed-properties-in-the-office-365-audit-log.md)
@@ -420,4 +427,4 @@
 
 # [Office 365 Enterprise](https://docs.microsoft.com/Office365/Enterprise)
 # [Office 365 Business](https://docs.microsoft.com/office365/admin/admin-home)
-# [Microsoft 365 Security](https://docs.microsoft.com/microsoft-365/security/)
+# [Microsoft 365 security](https://docs.microsoft.com/microsoft-365/security/)
