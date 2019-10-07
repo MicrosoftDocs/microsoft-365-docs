@@ -35,11 +35,11 @@ The **Assess** section on the home page shows you at a glance how your organizat
 
 ![Assess section in Microsoft 365 compliance center](media/m365-compliance-center-assess.png)
 
-From here, you can go to the Microsoft Compliance Score card, which leads you to [Compliance Manager](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md), where you can review or edit your configurations and potentially improve your overall compliance score.
+From here, you can:
 
-You can use the Compliance checklist to quickly see recommended steps to set your organization up for compliance and reduce potential compliance risks.
-
-You'll also see additional cards, such as one showing your organization's cloud app compliance, and another showing data about users with shared files, with links to [Cloud App Security](https://docs.microsoft.com/cloud-app-security/) or other tools where you can explore data.
+- Select the Microsoft Compliance Score card, which leads you to [Compliance Manager](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md), where you can review or edit your configurations and potentially improve your overall compliance score.
+- You can use the Compliance checklist to quickly see recommended steps to set your organization up for compliance and reduce potential compliance risks.
+- You'll also see additional cards, such as one showing your organization's cloud app compliance, and another showing data about users with shared files, with links to [Cloud App Security](https://docs.microsoft.com/cloud-app-security/) or other tools where you can explore data.
 
 ## The Protect section
 
@@ -65,7 +65,7 @@ In addition to links in cards on the home page, you'll find a navigation pane on
 
 |  |  |
 |---------|---------|
-|![Navigation in the Microsoft 365 compliance center](media/m365-compliance-center-leftnav.png)  |<br/><br/> Go to **Alerts** to view and resolve [alerts](../security/office-365-security/alerts.md)<br/><br/>Visit **Reports** to view data about [label usage and retention](sensitivity-labels.md), [DLP policy matches and overrides](view-the-dlp-reports.md), [shared files](https://docs.microsoft.com/cloud-app-security/file-filters), [third-party apps in use](https://docs.microsoft.com/cloud-app-security/discovered-apps), and more.<br/><br/>Expand the **Classification** section to access your [labels](labels.md), [label policies](sensitivity-labels.md#what-label-policies-can-do), [sensitive information types](what-the-sensitive-information-types-look-for.md), and [label analytics](view-label-activity-for-documents.md).<br/><br/>Go to **Policies** to view [alerts](../security/office-365-security/alerts.md) and to access your [DLP](data-loss-prevention-policies.md) and [retention](retention-policies.md) policies.<br/><br/> Use the links in the **Solutions** section to access your organization's compliance solutions. These include: <br/>[Data governance > Dispositions](disposition-reviews.md)<br/>[eDiscovery](overview-ediscovery-20.md)<br/>[Communication Supervision](supervision-policies.md)<br/>[Data investigations](overview-data-investigations.md)<br/>[Data subject requests](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md) <br/>[Insider Risk Management](insider-risk-overview.md)     |
+|![Navigation in the Microsoft 365 compliance center](media/m365-compliance-center-leftnav.png)  | Select **Home** to return to the Microsoft 365 compliance center main page. <br><br> Expand the **Classification** section to access your [labels](labels.md), [label policies](sensitivity-labels.md#what-label-policies-can-do), [sensitive information types](what-the-sensitive-information-types-look-for.md), and [label analytics](view-label-activity-for-documents.md). <br/><br/> Select **Data connectors** to import and archive data in your Microsoft 365 subscription. <br><br> Go to **Alerts** to view and resolve [alerts](../security/office-365-security/alerts.md)<br/><br/>Visit **Reports** to view data about [label usage and retention](sensitivity-labels.md), [DLP policy matches and overrides](view-the-dlp-reports.md), [shared files](https://docs.microsoft.com/cloud-app-security/file-filters), [third-party apps in use](https://docs.microsoft.com/cloud-app-security/discovered-apps), and more. <br/><br/> Go to **Policies** to set up policies to govern data, manage devices, and receive v[alerts](../security/office-365-security/alerts.md). You can also access your [DLP](data-loss-prevention-policies.md) and [retention](retention-policies.md) policies.<br/><br/> Select **Permissions** to manage who in your organization has access to the Microsoft 365 compliance center to view content and perform tasks. <br/><br/> Use the links in the **Solutions** section to access your organization's compliance solutions. These include: <br/> [Catalog](microsoft-365-solutions-catalog.md) <br> [Data governance > Dispositions](disposition-reviews.md)<br/>[eDiscovery](overview-ediscovery-20.md) <br> [Communication supervision](supervision-policies.md)<br/>[Data investigations](overview-data-investigations.md)<br/>[Data subject requests](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md) <br/>[Insider risk management](insider-risk-overview.md)     |
 
 ## How do I get this?
 
@@ -96,14 +96,14 @@ To go there, in the Microsoft 365 compliance center, in the navigation pane on t
 
 ## Next steps
 
-- **Review your Microsoft Compliance Score**, and use Compliance Manager to improve your score. To learn more, see [Use Compliance Manager to help meet data protection and regulatory requirements when using Microsoft cloud services](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md).
+- **Review your Microsoft Compliance Score**, and use the new Compliance Manager (Preview) to improve your compliance score. To learn more, see [Compliance Manager (Preview)](compliance-manager-overview.md).
 
 - **Review your organization's Data Loss Prevention policies** and make required adjustments as necessary. To learn more about, see [Overview of data loss prevention policies](data-loss-prevention-policies.md).
 
 - **Get acquainted with and set up Microsoft Cloud App Security**. See [Quickstart: Get started with Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security).
 
-- **Learn about and create Communication Supervision policies**. See [Communication Supervision in Microsoft 365](supervision-policies.md).
+- **Learn about and create Communication supervision policies**. See [Communication Supervision in Microsoft 365](supervision-policies.md).
 
-- **Use Insider Risk Management to identify, triage, and remediate risks in your organization**. See [Insider Risk Management in Microsoft 365](insider-risk-overview.md)
+- **Use Insider risk management to identify, triage, and remediate risks in your organization**. See [Insider risk management in Microsoft 365](insider-risk-overview.md)
 
 - **Visit your Microsoft 365 compliance center often**, and make sure to review any alerts or potential risks that might arise. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and sign in.

@@ -11,15 +11,25 @@ description: Learn about the Microsoft 365 solutions catalog, including what it 
 ms.collection: M365-security-compliance
 ---
 
-# Overview of the Microsoft 365 solutions catalog
+# Overview of the Microsoft 365 solutions catalog (Preview)
 
 ## Overview
 
-If you're interested in your organization's compliance posture, you're going to love the [Microsoft 365 compliance center](https://compliance.microsoft.com). The Microsoft 365 compliance center provides easy access to the data and tools you need to manage to your organization's compliance needs. 
+Are you looking for a way to quickly get started with compliance solutions in Microsoft 365? Check out the new [Microsoft 365 solutions catalog](https://compliance.microsoft.com) to discover, learn, and quickly get started with compliance and risk management solutions.
 
-Read this article to get acquainted with the Microsoft 365 compliance center, [how to get it](#how-do-i-get-this), [frequently asked questions](#frequently-asked-questions), and your [next steps](#next-steps).
+Read this article to get acquainted with the Microsoft 365 solutions catalog, [how to get it](#how-do-i-get-this), [frequently asked questions](#frequently-asked-questions), and your [next steps](#next-steps).
 
-SCREENSHOT OF SOLUTIONS CATALOG PAGE
+## Organization
+
+The solutions catalog is organized into sections that contain information cards for each compliance solution available in your Microsoft 365 subscription.
+
+SCREENSHOT OF SOLUTIONS CATALOG MAIN PAGE
+
+Each section contains cards for solutions grouped by compliance area. More details about these sections is provided later in this article.
+
+When you select **View** for a solution card, you'll see detailed information about the compliance solution. This information includes an overview, requirements, additional learning resources, and controls that allow you to pin and share the solution card.
+
+SCREENSHOT OF EXAMPLE SOLUTION (COMMUNICATION SUPERVISION)
 
 ## The Information protection & governance section
 
@@ -27,12 +37,12 @@ The **Information protection & governance** section shows you at a glance how yo
 
 SCREENSHOT OF INFORMATION PROTECTION & GOVERNANCE SECTION CARDS
 
-From here, you can go to one of the following cards:
+From here, you can go to one of the following solution cards:
 
-- **Data governance**:
-- **Data loss prevention**:
-- **Information protection**:
-- **Records management**:
+- Data governance
+- [Data loss prevention](data-loss-prevention-policies.md)
+- [Information protection](protect-information.md)
+- [Records management](records-management.md)
 
 ## The Internal risk management section
 
@@ -40,8 +50,8 @@ The **Internal risk management** section on the home page shows you at a glance 
 
 From here, you can go to one of the following cards:
 
-- **Insider Risk Management**:
-- **Communication Supervision**:
+- [Insider risk management](insider-risk-overview.md)
+- [Communication supervision](supervision-policies.md)
 
 ## The Discovery & response section
 
@@ -49,11 +59,11 @@ The **Discovery & response** section on the home page shows you at a glance how 
 
 From here, you can go to one of the following cards:
 
-- **Advanced eDiscovery**:
-- **Audit log search**:
-- **Data investigations**:
-- **Data subject requests**:
-- **eDiscovery**:
+- [Advanced eDiscovery](overview-ediscovery-20.md)
+- [Audit log search](search-the-audit-log-in-security-and-compliance.md)
+- [Data investigations](overview-data-investigations.md)
+- Data subject requests
+- [eDiscovery](manage-legal-investigations.md)
 
 ## How do I get this?
 
@@ -67,15 +77,15 @@ From here, you can go to one of the following cards:
 
 ### Why don't I see the new Microsoft 365 solutions catalog yet?
 
-First, make sure you have the appropriate [licenses and permissions](../security/office-365-security/microsoft-security-and-compliance.md#required-licenses-and-permissions). Then, sign in at [https://compliance.microsoft.com](https://compliance.microsoft.com). If you don't see the new compliance center yet, you will have it soon.
+First, make sure you have the appropriate [licenses and permissions](../security/office-365-security/microsoft-security-and-compliance.md#required-licenses-and-permissions). Then, sign in at [https://compliance.microsoft.com](https://compliance.microsoft.com). If you don't see the new solutions catalog in the left navigation pane yet, you will have it soon.
 
 ### Some of my compliance features listed on the solutions catalog page are not available in the Microsoft 365 compliance center. What do I do?
 
-We are still adding functionality to the Microsoft 365 compliance center. If you can't find something, such as Insider Risk Management, it will be accessible as soon as the solution is available in your subscription.
+We are still adding functionality to the Microsoft 365 compliance center and the solutions catalog. If you can't find something, such as Insider risk management, it will be accessible as soon as the solution is available in your subscription.
 
 ## Next steps
 
-- **Review your Microsoft Compliance Score**, and use Compliance Manager to improve your score. To learn more, see [Use Compliance Manager to help meet data protection and regulatory requirements when using Microsoft cloud services](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md).
+- **Review your Microsoft Compliance Score**, and use the new Compliance Manager (Preview) to improve your compliance score. To learn more, see [Compliance Manager (Preview)](compliance-manager-overview.md).
 
 - **Review your organization's Data Loss Prevention policies** and make required adjustments as necessary. To learn more about, see [Overview of data loss prevention policies](data-loss-prevention-policies.md).
 
@@ -83,6 +93,6 @@ We are still adding functionality to the Microsoft 365 compliance center. If you
 
 - **Learn about and create Communication Supervision policies**. See [Communication Supervision in Microsoft 365](supervision-policies.md).
 
-- **Use Insider Risk Management to identify, triage, and remediate risks in your organization**. See [Insider Risk Management in Microsoft 365](insider-risk-overview.md)
+- **Use Insider risk management to identify, triage, and remediate risks in your organization**. See [Insider risk management in Microsoft 365](insider-risk-overview.md)
 
-- **Visit your Microsoft 365 solutions catalog often**, and make sure to review new solutions to help you with your compliance needs. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and sign in.
+- **Visit your Microsoft 365 solutions catalog often**, and make sure to review new solutions to help you with your compliance needs. Sign in at [https://compliance.microsoft.com](https://compliance.microsoft.com) and then select **Catalog** in the left navigation pane.
