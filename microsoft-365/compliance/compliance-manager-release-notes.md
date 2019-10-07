@@ -22,6 +22,8 @@ You can use the updated [Compliance Manager](https://servicetrust.microsoft.com/
 
 ## What’s new in Compliance Manager (Preview)
 
+- **Role-based access to Compliance Manager:** The default **Guess access** role has been removed. In order for a user to access Compliance Manager, the global admin must [assign each user a permission](compliance-manager-overview#permissions.md).
+
 - **Integration with Microsoft Secure Score:** Compliance Manager supports integration with [Microsoft Secure Score](../security/mtp/microsoft-secure-score.md) by mapping customer-managed Actions to more than 50 Secure Score actions. When you complete a mapped action in Secure Score, the corresponding Compliance Manager Action automatically updates.
 
 - **Import custom Assessments:** In addition to built-in Assessments, Compliance Manager now supports importing custom Templates. You can create custom Assessments for any product or service and any standard or regulation.
@@ -33,7 +35,7 @@ You can use the updated [Compliance Manager](https://servicetrust.microsoft.com/
     - **Owners:** Specify an owner for each Action Item.
     - **Customer Actions:** Manage the complete list of Actions Items included in Compliance Manager (Preview) and enable/disable Secure Score monitoring for Action Items integrated with Secure Score.
 
-- **Updated Compliance Score**: The methodology has changed to support syncing with Microsoft Secure Score. The scoring system removes the Microsoft-managed control credits and focuses solely on the completion of customer-managed controls.
+- **Updated Compliance Score**: The methodology has changed to support syncing with Microsoft Secure Score. The score is calculated based on Microsoft-managed action scores and customer-managed action scores.
 
 ## Known issues in Compliance Manager (Preview)
 
