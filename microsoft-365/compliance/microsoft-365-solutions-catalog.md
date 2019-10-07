@@ -48,6 +48,8 @@ From here, you can go to one of the following solution cards:
 
 The **Internal risk management** section on the home page shows you at a glance how your organization is doing with respect to [data protection and compliance](protect-access-to-data-and-services.md).
 
+SCREENSHOT OF INTERNAL RISK MANAGEMENT SECTION CARDS
+
 From here, you can go to one of the following cards:
 
 - [Insider risk management](insider-risk-overview.md)
@@ -56,6 +58,8 @@ From here, you can go to one of the following cards:
 ## The Discovery & response section
 
 The **Discovery & response** section on the home page shows you at a glance how your organization is doing with respect to [data protection and compliance](protect-access-to-data-and-services.md).
+
+SCREENSHOT OF DISCOVERY & RESPONSE SECTION CARDS
 
 From here, you can go to one of the following cards:
 
@@ -79,7 +83,7 @@ From here, you can go to one of the following cards:
 
 First, make sure you have the appropriate [licenses and permissions](../security/office-365-security/microsoft-security-and-compliance.md#required-licenses-and-permissions). Then, sign in at [https://compliance.microsoft.com](https://compliance.microsoft.com). If you don't see the new solutions catalog in the left navigation pane yet, you will have it soon.
 
-### Some of my compliance features listed on the solutions catalog page are not available in the Microsoft 365 compliance center. What do I do?
+### Some of the compliance features listed on the solutions catalog page are not available in the Microsoft 365 compliance center. What do I do?
 
 We are still adding functionality to the Microsoft 365 compliance center and the solutions catalog. If you can't find something, such as Insider risk management, it will be accessible as soon as the solution is available in your subscription.
 
