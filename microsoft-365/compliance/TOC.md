@@ -544,32 +544,41 @@
 #### [G-Cloud (UK)](offering-g-cloud-uk.md)
 
 ## [Regional]()
-### [BIR 2012 (Netherlands)](offering-bir-2012-netherlands.md)
-### [C5 (Germany)](offering-c5-germany.md)
-### [CCSL/IRAP (Australia)](offering-CCSL-IRAP-Australia.md)
-### [CS Mark (Gold) (Japan))](offering-cs-mark-gold-japan.md)
-### [Cyber Essentials Plus (UK)](offering-cyber-essentials-plus-uk.md)
-### [Canadian Privacy Laws](offering-canadian-privacy-laws.md)
-### [DJCP (China)](https://www.trustcenter.cn/compliance/default.html#DJCP)
-### [EN 301 549 (EU)](offering-en-301-549-eu.md)
-### [ENS (Spain)](offering-ens-spain.md)
-### [ENISA IAF (EU)](https://aka.ms/ENISA)
-### [EU Model Clauses](offering-eu-model-clauses.md)
-### [EU U.S. Privacy Shield](offering-eu-us-privacy-shield.md)
-### [GB 18030 (China)](https://www.trustcenter.cn/compliance/default.html#GB18030)
-### [GDPR (EU)](offering-gdpr-eu.md)
-### [G-Cloud (UK)](offering-g-cloud-uk.md)
-### [IDW PS 951 (Germany)]()
-### [ISMS (Korea)](offering-ISMS-korea.md)
-### [IT Grundschutz Workbook (Germany)](offering-it-grundschutz-workbook-germany.md)
-### [LOPD (Spain)](offering-lopd-spain.md)
-### [MeitY (India)](offering-meity-india.md)
-### [MTCS (Singapore)](offering-mtcs-singapore.md)
-### [My Number (Japan)](offering-my-number-act-japan.md)
-### [NZ CC Framework (New Zealand)](offering-nz-cc-framework-nz.md)
-### [PASF (UK)](offering-pasf-uk.md)
-### [PDPA (Argentina)](offering-pdpa-argentina.md)
-### [TRUCS (China)](https://aka.ms/TRUCS-Compliance)
+### Asia
+#### [CS Mark (Gold) (Japan))](offering-cs-mark-gold-japan.md)
+#### [DJCP (China)](https://www.trustcenter.cn/compliance/default.html#DJCP)
+#### [GB 18030 (China)](https://www.trustcenter.cn/compliance/default.html#GB18030)
+#### [ISMS (Korea)](offering-ISMS-korea.md)
+#### [MeitY (India)](offering-meity-india.md)
+#### [MTCS (Singapore)](offering-mtcs-singapore.md)
+#### [My Number (Japan)](offering-my-number-act-japan.md)
+#### [TRUCS (China)](https://aka.ms/TRUCS-Compliance)
+
+### Europe
+#### [BIR 2012 (Netherlands)](offering-bir-2012-netherlands.md)
+#### [C5 (Germany)](offering-c5-germany.md)
+#### [Cyber Essentials Plus (UK)](offering-cyber-essentials-plus-uk.md)
+#### [EN 301 549 (EU)](offering-en-301-549-eu.md)
+#### [ENS (Spain)](offering-ens-spain.md)
+#### [ENISA IAF (EU)](https://aka.ms/ENISA)
+#### [EU Model Clauses](offering-eu-model-clauses.md)
+#### [EU U.S. Privacy Shield](offering-eu-us-privacy-shield.md)
+#### [GDPR (EU)](offering-gdpr-eu.md)
+#### [G-Cloud (UK)](offering-g-cloud-uk.md)
+#### [IDW PS 951 (Germany)]()
+#### [IT Grundschutz Workbook (Germany)](offering-it-grundschutz-workbook-germany.md)
+#### [LOPD (Spain)](offering-lopd-spain.md)
+#### [PASF (UK)](offering-pasf-uk.md)
+
+### North America
+#### [Canadian Privacy Laws](offering-canadian-privacy-laws.md)
+
+### Oceania
+#### [CCSL/IRAP (Australia)](offering-CCSL-IRAP-Australia.md)
+#### [NZ CC Framework (New Zealand)](offering-nz-cc-framework-nz.md)
+
+### South America
+#### [PDPA (Argentina)](offering-pdpa-argentina.md)
 
 # Hybrid compliance capabilities
 ## [Exchange Online mail encryption with AD RMS](information-rights-management-in-exchange-online.md)
