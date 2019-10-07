@@ -24,7 +24,7 @@ After you've configured your Communication Supervision policies, you'll start to
 
 ## Review pending alerts
 
-The first step to investigate issues detected by your policies is to review generated alerts. There are several areas to quickly review alerts, depending on how you prefer to view alert grouping:
+The first step to investigate issues detected by your policies is to review generated alerts in the Microsoft 365 compliance center. There are several areas to quickly review alerts, depending on how you prefer to view alert grouping:
 
 - **Communication Supervision home page**: When you sign into [https://protection.office.com](https://protection.office.com) using credentials for an admin account in your Microsoft 365 organization, select **Supervision** > **Overview** to display the Communication Supervision home page. Here you'll see alerts needing review that are listed from high to low severity. Select an alert to launch the alert details page and to start remediation actions.
 - **Alerts tab**: Navigate to **Supervision** > **Alerts** to display alerts grouped by matching Communication Supervision policy. This view allows you to quickly see which policies are generating the most alerts ordered by severity.  Expand a policy to select a specific alert to launch the alert details page and to start remediation actions.
@@ -32,7 +32,7 @@ The first step to investigate issues detected by your policies is to review gene
 
 ## Remediate alerts
 
-No matter where you start to review alerts, the next step is to take action to remediate the alert. Start your alert remediation using the following workflow:
+No matter where you start to review alerts, the next step is to take action to remediate the alert. Start your alert remediation using the following workflow in the Microsoft 365 compliance center:
 
 1. **Examine the message basics**: Sometimes it's obvious from the source or subject that a message is spurious and it should be resolved as a false positive. Select the **False Positive** control to immediately resolve the alert and remove from the pending alert queue. This is also a good time to consider using the **Tag as** or **Escalate** controls to assign a tag to applicable messages or to send the message to a designated reviewer. From the source or sender information, you may already know how the message should routed or handled in these circumstances.
 

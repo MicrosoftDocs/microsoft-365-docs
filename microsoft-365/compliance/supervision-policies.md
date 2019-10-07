@@ -63,13 +63,13 @@ To learn more about communication channel support in Communication Supervision p
 
 ## Workflow
 
-Communication Supervision helps you address common pain points associated with complying with internal policies and regulatory compliance requirements. With intelligent policy templates and a flexible workflow, you can use actionable insights to quickly resolve detected compliance issues. Identifying and resolving communication comliance issues with supervision in Microsoft 365 uses the following workflow:
+Communication Supervision helps you address common pain points associated with complying with internal policies and regulatory compliance requirements. With focused policy templates and a flexible workflow, you can use actionable insights to quickly resolve detected compliance issues. Identifying and resolving communication compliance issues with supervision in Microsoft 365 uses the following workflow:
 
 WORKFLOW ARTWORK
 
 ### Configure
 
-In this workflow step, you identify your compliance requirements and configure applicable supervision policies. You can choose from the following policy types:
+In this workflow step, you identify your compliance requirements and configure applicable supervision policies. You can choose from the following policy types in the Microsoft 365 compliance center:
 
 - **Offensive language and anti-harassment**: Use the *Monitor for offensive language* template to quickly create a supervision policy that uses the built-in machine learning classifier to automatically detect content that may be considered as harassment.
 - **Sensitive information**: Use the *Monitor for sensitive info* template to create a policy to scan communications containing defined sensitive information types or keywords to help make sure important data isn't shared with people that shouldn't have access.
@@ -78,7 +78,7 @@ In this workflow step, you identify your compliance requirements and configure a
 
 ### Investigate
 
-In this step, you look deeper into the issues detected as matching your supervision policies. This step includes the following actions:
+In this step, you look deeper into the issues detected as matching your supervision policies. This step includes the following actions available in the Microsoft 365 compliance center:
 
 - **Alerts**: When a message matches a supervision policy, an alert is automatically generated. For each alert, you can see the status, the severity, the time detected, and if a case is assigned and its status. New alerts are displayed on the Communication Supervision home page and the Alerts page and are listed in order of severity.
 - **Issue management**: For each alert, you can take investigative actions to help remediate the issue detected in the message
