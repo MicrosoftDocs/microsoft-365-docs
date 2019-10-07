@@ -128,6 +128,7 @@ Learn how Microsoft products and services help your organization meet regulatory
                         <p><a href="offering-shared-assessments.md">Shared assessments</a></p>
                         <p><a href="offering-sox.md">SOX</a></p>
                         <p><a href="offering-tisax-germany.md">TISAX (Germany)</a></p>
+                        <p><a href="offering-trusight.md">TruSight</a></p>
                     </div>
                 </div>
             </div>

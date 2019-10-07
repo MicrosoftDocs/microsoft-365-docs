@@ -484,6 +484,7 @@
 #### [SEC 17a-4](offering-sec-17a-4.md)
 #### [SOC](offering-soc.md)
 #### [SOX](offering-sox.md)
+#### [TruSight](offering-trusight.md)
 
 ### Health
 #### [HDS (France)](offering-hds-france.md)
