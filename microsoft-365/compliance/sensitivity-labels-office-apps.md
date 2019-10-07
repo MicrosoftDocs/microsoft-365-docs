@@ -135,7 +135,7 @@ Outlook
 <td><font size="-1">Coming soon<sup>3</sup>
 <td><font size="-1">Coming soon<sup>3</sup>
 
-<tr><td><font size="-1">Assign pre-defined permissions
+<tr><td><font size="-1"><a href="https://docs.microsoft.com/en-us/microsoft-365/compliance/encryption-sensitivity-labels#assign-permissions-now">Assign pre-defined permissions</a>
 <td><font size="-1"><b>Yes</b><br><font size="-1">1910+</font>
 
 <td><font size="-1"><b>Yes</b><br><font size="-1">16.21.0+</font>
@@ -171,7 +171,7 @@ Outlook
 <td><font size="-1">TBD
 <td><font size="-1">TBD
 
-<tr><td><font size="-1">Require users to apply a label to their email and documents
+<tr><td><font size="-1"><a href="https://docs.microsoft.com/en-us/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do">Require users to apply a label to their email and documents</a>
 <td><font size="-1">TBD
 
 <td><font size="-1">TBD
