@@ -18,7 +18,9 @@ description: "File plan manager provides advanced management capabilities for re
 
 # Overview of file plan manager
 
-File plan manager provides advanced management capabilities for retention labels, retention label policies, and provides an integrated way to traverse label and label-to-content activity for your entire content lifecycle – from creation, through collaboration, record declaration, retention, and finally disposition. To access File plan manager in the security and compliance center, go to **Records management** > **File plan**.
+File plan manager provides advanced management capabilities for retention labels, retention label policies, and provides an integrated way to traverse label and label-to-content activity for your entire content lifecycle – from creation, through collaboration, record declaration, retention, and finally disposition. 
+
+To access file plan manager in the security and compliance center, go to **Records management** > **File plan**.
 
 ![File plan page](media/file-plan-page.png)
 
@@ -100,7 +102,7 @@ Here's a view of the file plan descriptors columns on the **Labels** tab of file
 
 From file plan manager, you can export the details of all retention labels into a .csv file to assist you in facilitating periodic compliance reviews with data governance stakeholders in your organization.
 
-To export all retention labels, on the **File plan** page, **File plan actions** \> **Export labels**.
+To export all retention labels: On the **File plan** page, **File plan actions** \> **Export labels**.
 
 ![Option to export file plan](media/file-plan-export-labels-option.png)
 
@@ -110,50 +112,56 @@ A *.csv file containing all existing retention labels will open.
 
 ## Import retention labels into your file plan
 
-From file plan manager, you can bulk import new retention labels as well as modify existing retention labels.
+In the File plan manager, you can bulk import new retention labels and modify existing retention labels.
 
-To import new retention labels and update existing retention labels, go to **file plan manager** \> **file plan actions** \> **import labels**.
+To import new retention labels and modify existing retention labels: 
 
-![Option to import file plan](media/file-plan-import-labels-option.png)
+1. On the **File plan** page, go to **File plan actions** > **Import labels**.
 
-![Option to download a blank file plan template](media/file-plan-blank-template-option.png)
+   ![Option to import file plan](media/file-plan-import-labels-option.png)
 
-Download a blank template (or start from an export of your current file plan).
+   ![Option to download a blank file plan template](media/file-plan-blank-template-option.png)
 
-![Blank file plan template open in Excel](media/file-plan-blank-template.png)
+2. Download a blank template to import new retention labels. Alternatively, you can start with the .csv file that is exported when you export the existing retention labels in your organization.
 
-Fill-out the template. This table provides valid values.
+   ![Blank file plan template open in Excel](media/file-plan-blank-template.png)
 
-|**Property**|**Type**|**Valid values**|
-|:-----|:-----|:-----|
-|LabelName|String|This property specifies the name of the retention label.|
-|Comment|String|This property specifies a comment to add to the Comment propety of the retention label.|
-|Notes|String|Custom|
-|IsRecordLabel|String|This property specifies whether the label is a record label. Items tagged with a record label are declared as records. Valid values are:</br>**TRUE**: The label is a record label. Note that items that are declared as a record can't be deleted. </br>**FALSE**: The label isn't a record label. This is the default value.|
-|RetentionAction|String|This property specifies what action to take after the value specified by the RetentionDuration property expires. Valid values are:</br>**Delete**: Items older than the value specified by the RetentionDuration property are deleted.</br>**Keep**: Retain items for the duration specified by the RetentionDuration property and then doing nothing when the duration period expires. </br>**KeepAndDelete**: Retain items for the duration specified by the RetentionDuration property and then delete them when the duration period expires.   |
-|RetentionDuration|String|This property specifies the number of days to retain the content. Valid values are:</br>**Unlimited**: Items will be retained indefinitely. </br>***n***: A positive integer; for example, **365**. 
-|RetentionType|String|This property specifies whether the retention duration is calculated from the content creation date, event date, labeled (tagged) date, or last modified date. Valid values are:</br>**CreationAgeInDays**</br>**EventAgeInDays**</br>**TaggedAgeInDays**</br>**ModificationAgeInDays** |
-|ReviewerEmail|SmtpAddress[]|When this property is populated, a disposition review will be triggered when the retention duration expires. This property specifies the email address of a reviewer for **Delete** and **KeepAndDelete** retention actions. You can include the email address of individual users, distribution or security groups, or Office 365 groups. You can specify multiple email addresses separated by commas.|
-|ReferenceId|String|This property specifies the value that's displayed in the **Reference Id** file plan descriptor.| 
-|DepartmentName|String|This property specifies the value that's displayed in the **Function/deparment** file plan descriptor.|
-|Category|String|This property specifies the value that's displayed in the **Category** file plan descriptor.|
-|SubCategory|String|This property specifies the value that's displayed in the **Sub category** file plan descriptor.|
-|AuthorityType|String|This property specifies the value that's displayed in the **Authority type** file plan descriptor.|
-|CitationName|String|This property specifies the name of the citation displayed in the **Provision/citation** file plan descriptor; for example "Sarbanes-Oxley Act or 2002". |
-|CitationUrl|String|This property specifies the URL that's displayed in the **Provision/citation** file plan descriptor.|
-|CitationJurisdiction|String|This property specifies the jurisdiction or agency that's displayed in the **Provision/citation** file plan descriptor; for example, "U.S. Securities and Exchange Commission (SEC)".|
-|Regulatory|String|Leave blank. This property isn't used at this time.|
-|EventType|String|This property specifies the retention rule that's associated with the label. You can use any value that uniquely identifies the rule. For example:</br>**Name**</br>**Distinguished name (DN)**</br>**GUID** </br>You can use the [Get-RetentionComplianceRule](https://docs.microsoft.com/en-us/powershell/module/exchange/policy-and-compliance-retention/get-retentioncompliancerule?view=exchange-ps) cmdlet to view the available retention rules. Note that if you export labels from one Office 365 organization, you can't use the values for the EventType  property from that organization when importing labels to a different Office 365 organization. That because the EventType values are unique to an organization. |
+3. Fill-out the template. The following describes the properties and valid values for each property in the file plan template.<br/>
 
-![File plan template with information filled in](media/file-plan-filled-out-template.png)
+   |**Property**|**Type**|**Valid values**|
+   |:-----|:-----|:-----|
+   |LabelName|String|This property specifies the name of the retention label.|
+   |Comment|String|Use this property to add a description about the retention label for admins. This description appears only to admins who manage the label in the security and compliance center.|
+   |Notes|String|Use this property to add a description about the retention label for users. This description appears when users hover over the label in apps like Outlook, SharePoint, and OneDrive. If you leave this property blank, a default description is displayed, which explains the label's retention settings. |
+   |IsRecordLabel|String|This property specifies whether the label is a record label. Items tagged with a record label are declared as records. Valid values are:</br>**TRUE**: The label is a record label. Note that items that are declared as a record can't be deleted. </br>**FALSE**: The label isn't a record label. This is the default value.|
+   |RetentionAction|String|This property specifies what action to take after the value specified by the RetentionDuration property expires. Valid values are:</br>**Delete**: Items older than the value specified by the RetentionDuration property are deleted.</br>**Keep**: Retain items for the duration specified by the RetentionDuration property and then doing nothing when the duration period expires. </br>**KeepAndDelete**: Retain items for the duration specified by the RetentionDuration property and then delete them when the duration period expires.   |
+   |RetentionDuration|String|This property specifies the number of days to retain the content. Valid values are:</br>**Unlimited**: Items will be retained indefinitely. </br>***n***: A positive integer; for example, **365**. 
+   |RetentionType|String|This property specifies whether the retention duration is calculated from the content creation date, event date, labeled (tagged) date, or last modified date. Valid values are:</br>**CreationAgeInDays**</br>**EventAgeInDays**</br>**TaggedAgeInDays**</br>**ModificationAgeInDays** |
+   |ReviewerEmail|SmtpAddress|When this property is populated, a disposition review will be triggered when the retention duration expires. This property specifies the email address of a reviewer for **Delete** and **KeepAndDelete** retention actions. You can include the email address of individual users, distribution or security groups, or Office 365 groups. You can specify multiple email addresses separated by commas.|
+   |ReferenceId|String|This property specifies the value that's displayed in the **Reference Id** file plan descriptor.| 
+   |DepartmentName|String|This property specifies the value that's displayed in the **Function/department** file plan descriptor.|
+   |Category|String|This property specifies the value that's displayed in the **Category** file plan descriptor.|
+   |SubCategory|String|This property specifies the value that's displayed in the **Sub category** file plan descriptor.|
+   |AuthorityType|String|This property specifies the value that's displayed in the **Authority type** file plan descriptor.|
+   |CitationName|String|This property specifies the name of the citation displayed in the **Provision/citation** file plan descriptor; for example "Sarbanes-Oxley Act or 2002". |
+   |CitationUrl|String|This property specifies the URL that's displayed in the **Provision/citation** file plan descriptor.|
+   |CitationJurisdiction|String|This property specifies the jurisdiction or agency that's displayed in the **Provision/citation** file plan descriptor; for example, "U.S. Securities and Exchange Commission (SEC)".|
+   |Regulatory|String|Leave blank. This property isn't used at this time.|
+   |EventType|String|This property specifies the retention rule that's associated with the label. You can use any value that uniquely identifies the rule. For example:</br>**Name**</br>**Distinguished name (DN)**</br>**GUID** </br>You can use the [Get-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/get-retentioncompliancerule?view=exchange-ps) cmdlet to view the available retention rules. Note that if you export labels from one Office 365 organization, you can't use the values for the EventType  property from that organization when importing labels to a different Office 365 organization. That because the EventType values are unique to an organization. |
+   |||
 
-Upload the filled-out template, and file plan manager will validate the entries and display import statistics.
+   Here's an example the template containing the information about retention labels.
 
-![File plan import statistics](media/file-plan-import-statistics.png)
+   ![File plan template with information filled in](media/file-plan-filled-out-template.png)
 
-In the event there is a validation error, file plan import will continue to validate every entry in the import file and display all errors referencing line/row numbers in the import file, copy the displayed error results so that you can easily return to the import file and correct the errors. 
+4. Under step 3 on the import file plan wizard page, click **Browse for files** to upload the filled-out template. 
 
-When the import is complete, return to file plan manager to associate the new retention labels to new or existing retention label policies.
+   File plan manager will validate the entries and display the import statistics.
 
-![Option to publish labels](media/file-plan-publish-labels-option.png)
+   ![File plan import statistics](media/file-plan-import-statistics.png)
 
+   In the event there is a validation error, file plan import will continue to validate every entry in the import file and display all errors referencing line/row numbers in the import file, copy the displayed error results so that you can easily return to the import file and correct the errors.
+
+5. When the import is complete, return to file plan manager to associate the new retention labels to new or existing retention label policies.
+
+   ![Option to publish labels](media/file-plan-publish-labels-option.png)
