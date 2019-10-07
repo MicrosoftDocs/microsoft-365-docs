@@ -35,7 +35,7 @@ The **Information protection & governance** section shows you at a glance how yo
 
 SCREENSHOT OF INFORMATION PROTECTION & GOVERNANCE SECTION CARDS
 
-From here, you can go to one of the following solution cards:
+From here, you can go to a card for the following solutions:
 
 - Data governance
 - [Data loss prevention](data-loss-prevention-policies.md)
@@ -48,7 +48,7 @@ The **Internal risk management** section on the home page shows you at a glance 
 
 SCREENSHOT OF INTERNAL RISK MANAGEMENT SECTION CARDS
 
-From here, you can go to one of the following cards:
+From here, you can go to a card for the following solutions:
 
 - [Insider risk management](insider-risk-overview.md)
 - [Communication supervision](supervision-policies.md)
@@ -59,7 +59,7 @@ The **Discovery & response** section on the home page shows you at a glance how 
 
 SCREENSHOT OF DISCOVERY & RESPONSE SECTION CARDS
 
-From here, you can go to one of the following cards:
+From here, you can go to a card for the following solutions:
 
 - [Advanced eDiscovery](overview-ediscovery-20.md)
 - [Audit log search](search-the-audit-log-in-security-and-compliance.md)
