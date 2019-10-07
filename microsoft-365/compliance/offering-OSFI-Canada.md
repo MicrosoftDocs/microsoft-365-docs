@@ -39,7 +39,7 @@ The Microsoft checklist helps Canadian financial firms conducting due-diligence 
 - [Compliance checklist: Canada](https://aka.ms/Azure-Canada-Compliance): Financial firms can get help in conducting risk assessments of Microsoft business cloud services.
 - [Privacy in Microsoft Cloud](https://aka.ms/MCSPrivacy): Get details on Microsoft privacy principles and standards and on privacy laws specific to Canada.
 - [Risk Assessment & Compliance Guide](https://aka.ms/RiskGovernanceGuide): Create a governance model for risk assessment of Microsoft cloud services, and regulator notification.
-- [Industry use cases for Azure](https://docs.microsoft.com/en-us/azure/industry/financial/): Use case overviews, tutorials, and other resources to build Azure solutions for financial services.
+- [Industry use cases for Azure](https://docs.microsoft.com/azure/industry/financial/): Use case overviews, tutorials, and other resources to build Azure solutions for financial services.
 
 ## Microsoft in-scope cloud services
 
@@ -63,7 +63,7 @@ Yes, but only if the outsourcing arrangement is a material outsourcing or if it 
 
 - [Microsoft and Canadian privacy laws](https://aka.ms/CanadianPrivacyLaws-Compliance)
 - [Microsoft Financial Services Compliance Program](https://aka.ms/FSCP-Print)
-- [Microsoft business cloud services and financial services](https://www.microsoft.com/en-us/trustcenter/cloudservices/financialservices)
-- [Financial services compliance in Azure](https://azure.microsoft.com/en-us/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
+- [Microsoft business cloud services and financial services](https://www.microsoft.com/trustcenter/cloudservices/financialservices)
+- [Financial services compliance in Azure](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
 - [Azure Financial Services Cloud Risk Assessment Tool](https://aka.ms/FFIEC-CSDT)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)

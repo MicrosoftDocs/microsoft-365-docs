@@ -33,7 +33,7 @@ Azure Media Services was the first hyperscale cloud media platform to offer encr
   
 Learn about the benefits of CDSA on the Microsoft Cloud.
 
-- [Learn how the CDSA transforms movie-making in the cloud with Microsoft Azure](https://customers.microsoft.com/en-us/story/cdsa-nonprofit-azure-sharepoint-office365-mobility-security-en)
+- [Learn how the CDSA transforms movie-making in the cloud with Microsoft Azure](https://customers.microsoft.com/story/cdsa-nonprofit-azure-sharepoint-office365-mobility-security-en)
 
 Learn how to accelerate your CDSA deployment with our Azure Security and Compliance Blueprints.
 
@@ -71,5 +71,5 @@ Yes. You can build on Azure CPS certification within your own CPS certification 
 - [CPS Standard](http://aka.ms/cdsa-standard)
 - [Azure Media Services Certificate of Compliance](http://aka.ms/cdsa-cert)
 - [How Azure Media Services earned CDSA security certification](http://johndeutscher.com/2015/04/14/how-azure-media-services-earned-cdsa-security-certification/)
-- [Understanding CDSA and Azure compliance](https://www.microsoft.com/en-us/videoplayer/embed/RE1SR9Y?autoplay=0)
+- [Understanding CDSA and Azure compliance](https://www.microsoft.com/videoplayer/embed/RE1SR9Y?autoplay=0)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)

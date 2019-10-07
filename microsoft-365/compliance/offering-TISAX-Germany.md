@@ -57,7 +57,7 @@ This assessment is valid for three years.
 
 ### Manufacturing use cases
 
-Use case overviews, solution guides, tutorials, and other resources to help build [Azure solutions](https://docs.microsoft.com/en-us/azure/industry/manufacturing/).
+Use case overviews, solution guides, tutorials, and other resources to help build [Azure solutions](https://docs.microsoft.com/azure/industry/manufacturing/).
 
 ## Frequently asked questions
 
@@ -70,7 +70,7 @@ ENX provides certification confirmation only to registered industry representati
 - [TISAX Frequently Asked Questions](https://portal.enx.com/en-US/en-en/TISAX/faqs/)
 - [Volkswagen and Microsoft announce strategic partnership](https://www.volkswagen-newsroom.com/en/press-releases/volkswagen-and-microsoft-announce-strategic-partnership-4234)
 - [Office in your Car: BMW offers Skype for Business](https://news.microsoft.com/de-de/skype-business-ab-sofort-fahrzeugen-von-bmw-verfugbar/) (German)
-- [Connecting vehicles for the long haul: Daimler](https://customers.microsoft.com/en-us/story/daimlertrucks)
+- [Connecting vehicles for the long haul: Daimler](https://customers.microsoft.com/story/daimlertrucks)
 - [Continental is adopting Microsoft Office 365 to boost productivity](https://www.avanade.com/en/clients/continental)
 - [Microsoft and ISO/IEC 27001:2013](offering-iso-27001.md)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)

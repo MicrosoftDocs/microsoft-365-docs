@@ -29,7 +29,7 @@ The Microsoft guide describes in great detail our compliance with numerous recog
 
 Sections in the Microsoft guide map in depth to each area of interest in the FCA guidance. For example, a key aspect of the regulatory outsourcing requirements is that financial services firms must identify and manage any risks which outsourcing may introduce into their business. Microsoft discusses its approach in carrying out a risk assessment, documenting it, identifying current best practices, and so on. We help you assess the relevant risks and make available a wide range of resources to facilitate your due diligence.
 
-Learn how Azure is enabling FCA compliance in UK banks: [Read Microsoft collaborates with ClearBank: Launch of first new UK clearing bank in over 250 years](https://customers.microsoft.com/en-us/story/microsoft-collaborates-with-clearbank)
+Learn how Azure is enabling FCA compliance in UK banks: [Read Microsoft collaborates with ClearBank: Launch of first new UK clearing bank in over 250 years](https://customers.microsoft.com/story/microsoft-collaborates-with-clearbank)
 
 ## Accelerate your deployment on Azure
 
@@ -54,7 +54,7 @@ Yes. However, although Microsoft responses to this framework are confirmed compl
 - [Microsoft Cloud Checklist for Financial Institutions in the UK](https://aka.ms/Azure-UK-compliance)
 - [FG 16/5 – Guidance for firms outsourcing to the cloud and other third-party IT services](https://www.fca.org.uk/publication/finalised-guidance/fg16-5.pdf)
 - [Enabling compliance: The Microsoft approach to FCA finalised cloud guidance](https://go.microsoft.com/fwlink/p/?linkid=2101561)
-- [Microsoft Financial Services Compliance Program](https://www.microsoft.com/en-us/download/details.aspx?id=55332)
-- [Financial services compliance in Azure](https://azure.microsoft.com/en-us/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
-- [Microsoft business cloud services and financial services](https://www.microsoft.com/en-us/trustcenter/cloudservices/financialservices)
+- [Microsoft Financial Services Compliance Program](https://www.microsoft.com/download/details.aspx?id=55332)
+- [Financial services compliance in Azure](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
+- [Microsoft business cloud services and financial services](https://www.microsoft.com/trustcenter/cloudservices/financialservices)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)

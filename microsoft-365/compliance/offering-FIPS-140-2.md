@@ -37,8 +37,8 @@ Validated Microsoft business cloud services include Azure, Azure Government, Dyn
   
 Certification goes into effect when Microsoft receives validation from NIST. It does not expire.
 
-- [Learn how Microsoft products and cryptographic modules comply with FIPS 140](https://www.microsoft.com/en-us/msrc?rtc=1#_Microsoft_FIPS_140)
-- [Microsoft FIPS 140 Validated Cryptographic Modules](https://technet.microsoft.com/en-us/library/cc750357.aspx#ID0EWFAC)
+- [Learn how Microsoft products and cryptographic modules comply with FIPS 140](https://www.microsoft.com/msrc?rtc=1#_Microsoft_FIPS_140)
+- [Microsoft FIPS 140 Validated Cryptographic Modules](https://technet.microsoft.com/library/cc750357.aspx#ID0EWFAC)
 - [Validations in process](http://aka.ms/FIPS-validations-in-process)
 
 ## Frequently asked questions

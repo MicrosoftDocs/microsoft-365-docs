@@ -93,11 +93,11 @@ The Microsoft Cloud in the UK provides reliability and performance combined with
 
 **Where are the other Microsoft EU datacenters located?**
 
-In addition to the UK datacenters, Microsoft cloud services has data centers in multiple locations. For the most up to date list of all centers visit our [data location page](https://www.microsoft.com/en-us/TrustCenter/Privacy/where-your-data-is-located).
+In addition to the UK datacenters, Microsoft cloud services has data centers in multiple locations. For the most up to date list of all centers visit our [data location page](https://www.microsoft.com/TrustCenter/Privacy/where-your-data-is-located).
 
 **How can I get copies of the auditor’s reports?**
 
-The [Service Trust Portal](https://support.office.com/en-US/article/Get-started-with-the-Service-Trust-Portal-for-Office-365-for-business-Azure-and-Dynamics-CRM-Online-subscriptions-f30e2353-0bd6-41ed-8347-eea1fb8d2662) provides independently audited compliance reports. You can use the portal to request audit reports so that your auditors can compare the Microsoft results with your own legal and regulatory requirements.
+The [Service Trust Portal](https://support.office.com/article/Get-started-with-the-Service-Trust-Portal-for-Office-365-for-business-Azure-and-Dynamics-CRM-Online-subscriptions-f30e2353-0bd6-41ed-8347-eea1fb8d2662) provides independently audited compliance reports. You can use the portal to request audit reports so that your auditors can compare the Microsoft results with your own legal and regulatory requirements.
 
 ## Resources
 

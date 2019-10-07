@@ -40,9 +40,9 @@ To assist Canadian customers who are considering outsourcing business functions 
 
 ## How to implement
 
-- [Privacy at Microsoft](https://www.microsoft.com/en-us/download/details.aspx?id=55710): Get details on Microsoft privacy principles and standards and on privacy laws specific to Canada.
+- [Privacy at Microsoft](https://www.microsoft.com/download/details.aspx?id=55710): Get details on Microsoft privacy principles and standards and on privacy laws specific to Canada.
 - [Compliance checklist for Canada](https://servicetrust.microsoft.com/Documents/TrustDocuments?command=Download&downloadType=Document&downloadId=626fb641-9dca-45c0-abaf-0a7849c15f81&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides): Learn more about Azure and Intune functionalities that can help meet Canadian privacy laws.
-- [Azure data protection](https://docs.microsoft.com/en-us/azure/security/fundamentals/protection-customer-data): Azure provides customers with strong data security, both by default and as customer options.
+- [Azure data protection](https://docs.microsoft.com/azure/security/fundamentals/protection-customer-data): Azure provides customers with strong data security, both by default and as customer options.
 
 ## Frequently asked questions
 

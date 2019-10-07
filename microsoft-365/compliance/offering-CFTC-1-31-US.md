@@ -48,7 +48,7 @@ Archiving in Office 365 helps to preserve a wide range of data, including email,
 [Azure & CFTC Rule 1.31](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=19b08fd4-d276-43e8-9461-715981d0ea20&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_GRC_Assessment_Reports)
     - SEC 17a-4(f) & CFTC 1.31(c-d) Compliance Assessment of Azure Storage
 
-[Office 365 & CFTC Rule 1.31](https://www.microsoft.com/en-us/microsoft-365/blog/2015/11/10/office-365-exchange-online-archiving-now-meets-sec-rule-17a-4-requirements/)
+[Office 365 & CFTC Rule 1.31](https://www.microsoft.com/microsoft-365/blog/2015/11/10/office-365-exchange-online-archiving-now-meets-sec-rule-17a-4-requirements/)
     - Archiving in Office 365, data retention, and SEC Rule 17a-4 compliance
 
 ## Microsoft in-scope cloud services
@@ -59,9 +59,9 @@ Archiving in Office 365 helps to preserve a wide range of data, including email,
 ## Resources
 
 - [Microsoft Financial Services Compliance Program](https://aka.ms/FSCP-Print)
-- [Microsoft business cloud services and financial services](https://www.microsoft.com/en-us/trustcenter/cloudservices/financialservices)
-- [Financial services compliance in Azure](https://azure.microsoft.com/en-us/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
+- [Microsoft business cloud services and financial services](https://www.microsoft.com/trustcenter/cloudservices/financialservices)
+- [Financial services compliance in Azure](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
 - [Azure Financial Services Cloud Risk Assessment Tool](https://aka.ms/FFIEC-CSDT)
-- [Microsoft Office 365 Retention Policies](https://docs.microsoft.com/en-us/office365/securitycompliance/retention-policies)
+- [Microsoft Office 365 Retention Policies](https://docs.microsoft.com/office365/securitycompliance/retention-policies)
 - [Microsoft Financial Services Blog](https://techcommunity.microsoft.com/t5/Financial-Services-Blog/bg-p/FinancialServicesBlog)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)

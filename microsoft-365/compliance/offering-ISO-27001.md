@@ -140,12 +140,12 @@ Yes. If your business requires ISO/IEC 27001 certification for implementations d
 - [The ISO/IEC 27000 Directory](http://www.27000.org/index.htm)
 - [ISO/IEC 27001: 2013 standard](http://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.htm?csnumber=54534) (for purchase)
 - [Microsoft sets a high bar for information security](http://pages.bsigroup.com/l/73472/2015-07-24/v9btr) (BSI case study)
-- [Microsoft Common Controls Hub Compliance Framework](https://www.microsoft.com/en-us/trustcenter/common-controls-hub)
+- [Microsoft Common Controls Hub Compliance Framework](https://www.microsoft.com/trustcenter/common-controls-hub)
 - [Microsoft Online Services Terms](http://aka.ms/Online-Services-Terms)
-- [Microsoft Cloud for Government](http://enterprise.microsoft.com/en-us/industries/government/start-your-microsoft-cloud-for-government-trial-today)
+- [Microsoft Cloud for Government](http://enterprise.microsoft.com/industries/government/start-your-microsoft-cloud-for-government-trial-today)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## White papers
 
-- [Azure DevOps Services data protection overview](https://www.visualstudio.com/en-us/articles/team-services-security-whitepaper)
+- [Azure DevOps Services data protection overview](https://www.visualstudio.com/articles/team-services-security-whitepaper)
 - [13 effective Azure security controls for ISO 27001 compliance](https://aka.ms/13securitycontrolsforiso27001compliance)

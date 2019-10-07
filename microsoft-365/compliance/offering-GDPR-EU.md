@@ -25,7 +25,7 @@ Discover privacy program best practices and how Microsoft approaches regulations
 
 ## Accountability documentation
 
-[Access GDPR documentation](https://www.microsoft.com/en-us/trust-center/privacy/gdpr-accountability-documentation)
+[Access GDPR documentation](https://www.microsoft.com/trust-center/privacy/gdpr-accountability-documentation)
     - Find information about capabilities in Microsoft services used to address requirements of the GDPR.
 
 [Accountability readiness checklist](https://go.microsoft.com/fwlink/p/?linkid=2048396)
@@ -62,7 +62,7 @@ Learn how Microsoft customer INAIL is using Azure Information Protection to clas
 
 ### GDPR FAQ
 
-[Learn more](https://www.microsoft.com/en-us/trust-center/privacy/gdpr-faqs) about our contractual commitments to our customers plus our own commitment to GDPR compliance.
+[Learn more](https://www.microsoft.com/trust-center/privacy/gdpr-faqs) about our contractual commitments to our customers plus our own commitment to GDPR compliance.
 
 ### ISO/IEC 27701 Privacy Information Management System (PIMS)
 
@@ -78,7 +78,7 @@ The Microsoft 365 [Security & compliance center](https://go.microsoft.com/fwlink
 
 ### Discover Compliance Solutions
 
-[Learn more](https://products.office.com/en-us/business/security-and-compliance/compliance-solutions) about integrated tools that use intelligence to reduce risk.
+[Learn more](https://products.office.com/business/security-and-compliance/compliance-solutions) about integrated tools that use intelligence to reduce risk.
 
 ### Data governance and the GDPR
 

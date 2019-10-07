@@ -41,7 +41,7 @@ Currently there is no official certification for HIPAA or HITECH Act compliance.
 
 Microsoft enterprise cloud services are also covered by FedRAMP assessments. Microsoft Azure and Microsoft Azure Government received a Provisional Authority to Operate from the FedRAMP Joint Authorization Board; Microsoft Dynamics 365 U.S. Government received an Agency Authority to Operate from the US Department of Housing and Urban Development, as did Microsoft Office 365 U.S. Government from the US Department of Health and Human Services.
 
-Learn about the benefits of HIPAA and the HITECH on the Microsoft Cloud: [Read the Zwanger – Pesiri Radiology Customer Story](https://customers.microsoft.com/en-us/story/radiology-clinics-ease-compliance-drive-innovation-with-cloud-based-data-network)
+Learn about the benefits of HIPAA and the HITECH on the Microsoft Cloud: [Read the Zwanger – Pesiri Radiology Customer Story](https://customers.microsoft.com/story/radiology-clinics-ease-compliance-drive-innovation-with-cloud-based-data-network)
 
 ## Microsoft in-scope cloud services
 
@@ -84,7 +84,7 @@ Microsoft cannot modify the HIPAA BAA, because Microsoft services are consistent
 
 **How can I get copies of the auditor’s reports?**
 
-The [Service Trust Portal](https://www.microsoft.com/en-us/trustcenter/STP/default.aspx) provides independently audited compliance reports. You can use the portal to request audit reports so that your auditors can compare Microsoft's cloud services results with your own legal and regulatory requirements.
+The [Service Trust Portal](https://www.microsoft.com/trustcenter/STP/default.aspx) provides independently audited compliance reports. You can use the portal to request audit reports so that your auditors can compare Microsoft's cloud services results with your own legal and regulatory requirements.
 
 **How can I learn more about complying with HIPAA and the HITECH Act?**
 
@@ -97,7 +97,7 @@ To assist customers with this task, Microsoft has published these guides:
 ## Resources
 
 - [HIPAA Omnibus Rule](http://aka.ms/HIPAA-omnibus) (The final regulations modifying HIPAA rules)
-- [Microsoft Common Controls Hub Compliance Framework](https://www.microsoft.com/en-us/trustcenter/common-controls-hub)
+- [Microsoft Common Controls Hub Compliance Framework](https://www.microsoft.com/trustcenter/common-controls-hub)
 - [Microsoft Online Services Terms](http://aka.ms/Online-Services-Terms)
 - [Microsoft Government Cloud](https://go.microsoft.com/fwlink/p/?linkid=2087246)
 - [Understanding HIPAA Compliance with Azure](https://www.youtube.com/embed/6ptdye1LZ5k?autoplay=0)(May 19, 2016)

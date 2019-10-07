@@ -44,7 +44,7 @@ The Microsoft checklist helps financial firms in Belgium that are conducting due
 
 - [Compliance checklist: Belgium](https://aka.ms/FinServ-Guide-Belgium): Financial institutions can get help in conducting risk assessments of Microsoft cloud services.
 - [Risk Assessment & Compliance Guide](https://aka.ms/RiskGovernanceGuide): Create a governance model for risk assessment of Microsoft cloud services, and regulator notification.
-- [Financial use cases](https://docs.microsoft.com/en-us/azure/industry/financial/): Use case overviews, tutorials, and other resources to build Azure solutions for financial services.
+- [Financial use cases](https://docs.microsoft.com/azure/industry/financial/): Use case overviews, tutorials, and other resources to build Azure solutions for financial services.
 
 ## Microsoft in-scope cloud services
 
@@ -65,7 +65,7 @@ Yes. There are specific points that financial institutions must be sure to incor
 ## Resources
 
 - [Microsoft Financial Services Compliance Program](https://aka.ms/FSCP-Print)
-- [Microsoft business cloud services and financial services](https://www.microsoft.com/en-us/trustcenter/cloudservices/financialservices)
-- [Financial services compliance in Azure](https://azure.microsoft.com/en-us/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
+- [Microsoft business cloud services and financial services](https://www.microsoft.com/trustcenter/cloudservices/financialservices)
+- [Financial services compliance in Azure](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
 - [Azure Financial Services Cloud Risk Assessment Tool](https://servicetrust.microsoft.com/ViewPage/FFIECBlueprint?command=Download&downloadType=Document&downloadId=079a1973-711a-428f-9312-9ddd290cff7b&docTab=c726d5c0-2d1e-11e8-a485-57140ec19669_PaaS)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)

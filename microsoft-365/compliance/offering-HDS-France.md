@@ -41,7 +41,7 @@ The rigorous audit covered the measures Microsoft has taken to secure personal h
 **Contractual terms**
     - French Public Health code requires the execution of specific contractual terms between the health data hosting service or cloud service provider and its customers. Eligible customers must reach out to their Microsoft licensing point of contact to enter into these specific contractual terms before hosting health personal data on Microsoft online services.
 
-[Health and life sciences](https://docs.microsoft.com/en-us/azure/industry/health/)
+[Health and life sciences](https://docs.microsoft.com/azure/industry/health/)
     - Case overviews, solution guides, tutorials, and other resources to help build Azure solutions. Learn more
 
 ## Audits, reports, and certificates
@@ -64,7 +64,7 @@ Note that The HDS certificate does not apply to Microsoft online services in pre
 
 - [Microsoft Online Services Terms](https://aka.ms/Online-Services-Terms)
 - [Microsoft HDS certification blog](https://news.microsoft.com/fr-fr/2018/11/06/microsoft-1er-acteur-majeur-du-cloud-public-a-etre-certifie-hebergeur-de-donnees-de-sante-en-france/)
-- [Azure France](https://azure.microsoft.com/en-us/global-infrastructure/france/)
-- [Azure for health](https://azure.microsoft.com/en-us/industries/healthcare/)
-- [Security at Microsoft](https://www.microsoft.com/en-us/security)
+- [Azure France](https://azure.microsoft.com/global-infrastructure/france/)
+- [Azure for health](https://azure.microsoft.com/industries/healthcare/)
+- [Security at Microsoft](https://www.microsoft.com/security)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
