@@ -64,7 +64,7 @@ From here, you can go to one of the following cards:
 - [Advanced eDiscovery](overview-ediscovery-20.md)
 - [Audit log search](search-the-audit-log-in-security-and-compliance.md)
 - [Data investigations](overview-data-investigations.md)
-- Data subject requests
+- [Data subject requests](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)
 - [eDiscovery](manage-legal-investigations.md)
 
 ## How do I get this?
