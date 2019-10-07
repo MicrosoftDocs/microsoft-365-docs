@@ -197,5 +197,6 @@ Your remote workers can use their Windows 10 Enterprise or other devices and Off
 
 [Workloads and scenarios](deploy-workloads.md)
 
-[Deployment guide](deploy-microsoft-365-enterprise.md)
+[Microsoft 365 Productivity Library](https://aka.ms/productivitylibrary) (https://aka.ms/productivitylibrary)
 
+[Deployment guide](deploy-microsoft-365-enterprise.md)
