@@ -240,15 +240,16 @@ Note that Teams chats and channel messages are not affected by retention policie
   
 We're still working on retention in Teams, and additional features are coming. In the meantime, here are a few limitations to be aware of:
   
-- **Teams require a separate retention policy** When you create a retention policy and toggle on the Teams location, all other locations toggle off. A retention policy that includes Teams can include only Teams and no other locations. 
+- **Teams require a separate retention policy**. When you create a retention policy and toggle on the Teams location, all other locations toggle off. A retention policy that includes Teams can include only Teams and no other locations. 
     
-- **Teams are not included in an org-wide policy** If you create an org-wide policy, Teams are not included because they require a separate retention policy. 
+- **Teams are not included in an org-wide policy**. If you create an org-wide policy, Teams are not included because they require a separate retention policy. 
     
-- **Teams doesn't support advanced retention** When you create a retention policy, if you choose the [Advanced settings that apply a policy only to content that meets certain conditions](#advanced-settings-that-apply-a-policy-only-to-content-that-meets-certain-conditions), the Teams location is not available. At this time, retention in Teams applies to all of the chat and channel message content. 
+- **Teams doesn't support advanced retention**. When you create a retention policy, if you choose the [Advanced settings that apply a policy only to content that meets certain conditions](#advanced-settings-that-apply-a-policy-only-to-content-that-meets-certain-conditions), the Teams location is not available. At this time, retention in Teams applies to all of the chat and channel message content. 
     
-- **Teams may take up to 30 days to clean up retained content** A retention policy applied to Teams will delete the content from all relevant storage locations. However, immediately after launch, it may take up to 30 days for Teams clients to clean up content based on the retention policy. But even though content still appears in the Teams clients, that content will not appear in content search or eDiscovery after the end of the retention period.
+- **Teams may take up to 30 days to clean up retained content**. A retention policy applied to Teams will delete the content from all relevant storage locations. However, immediately after launch, it may take up to 30 days for Teams clients to clean up content based on the retention policy. But even though content still appears in the Teams clients, that content will not appear in content search or eDiscovery after the end of the retention period.
 
-- **Note** The retention period can be any number of days you choose. It used to be true that a retention policy couldn't delete Teams content that's less than 30 days old, but we've removed this limitation.
+> [!NOTE]
+> The retention period for Teams content can be any number of days you choose. It used to be true that a retention policy couldn't delete Teams content that's less than 30 days old, but we've removed this limitation.
     
 In a Team, files that are shared in chat are stored in the OneDrive account of the user who shared the file. Files that are uploaded into channels are stored in the SharePoint site for the Team. Therefore, to retain or delete files in a Team, you need to create a retention policy that applies to the SharePoint and OneDrive locations specifically. If you want to apply a policy to the files of just a specific team, you can choose the SharePoint site for the Team and the OneDrive accounts of users in the Team.
   
