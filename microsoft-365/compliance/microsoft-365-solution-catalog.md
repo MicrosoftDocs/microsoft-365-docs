@@ -37,10 +37,10 @@ SCREENSHOT OF INFORMATION PROTECTION & GOVERNANCE SECTION CARDS
 
 From here, you can go to a card for the following solutions:
 
-- **Information governance**: Identifies sensitive content throughout your organization, including cloud and endpoint locations, and helps prevent accidental sharing.
-- [Data loss prevention](data-loss-prevention-policies.md): Identifies sensitive content throughout your organization, including cloud and endpoint locations, and helps prevent accidental sharing.
-- [Information protection](protect-information.md): Manages your content life-cycle by importing and archiving data and applying policies to keep what you need and get rid of what you don't.
-- [Records management](records-management.md): Uses intelligent classification to automate and simplify the retention schedule for regulatory, legal and business-critical records in your organization.
+- **Information governance**: Manages your content lifecycle using solutions to import, store, and classify business-critical data so you can keep what you need and delete what you don’t.​
+- [Data loss prevention](data-loss-prevention-policies.md): Detects sensitive content as its used and shared throughout your organization, in the cloud and on devices, and helps prevent accidental data loss.
+- [Information protection](protect-information.md): Discovers, classifies, and protects sensitive and business-critical content throughout its lifecycle across your organization.
+- [Records management](records-management.md): Uses intelligent classification to automate and simplify the retention schedule for regulatory, legal, and business-critical records in your organization.
 
 ## Internal risk management section
 
@@ -50,8 +50,8 @@ SCREENSHOT OF INTERNAL RISK MANAGEMENT SECTION CARDS
 
 From here, you can go to a card for the following solutions:
 
-- [Insider risk management](insider-risk-overview.md)
-- [Communication supervision](supervision-policies.md)
+- [Insider risk management](insider-risk-overview.md): Monitors activity and communications across your organization to help you quickly identify and remediate insider risks and threats.
+- [Communication supervision](supervision-policies.md): Minimizes communication risks by helping you automatically capture inappropriate messages, investigate possible policy violations, and take steps to remediate.
 
 ## Discovery & response section
 
@@ -61,11 +61,11 @@ SCREENSHOT OF DISCOVERY & RESPONSE SECTION CARDS
 
 From here, you can go to a card for the following solutions:
 
-- [Advanced eDiscovery](overview-ediscovery-20.md)
-- [Audit log search](search-the-audit-log-in-security-and-compliance.md)
-- [Data investigations](overview-data-investigations.md)
-- [Data subject requests](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)
-- [eDiscovery](manage-legal-investigations.md)
+- [Advanced eDiscovery](overview-ediscovery-20.md): Builds on eDiscovery capabilities by providing intelligent analytics and  machine learning to help you further analyze data that’s relevant to discovery requests. 
+- [Auditing](search-the-audit-log-in-security-and-compliance.md): Records user and admin activity from your organization so you can search the audit log and investigate a comprehensive list of activities across all locations and services.
+- [Data investigations](overview-data-investigations.md): Searches across content locations to identify sensitive, malicious, or misplaced data across Microsoft 365 locations so you can investigate and remediate any incidents, such as data spillage.
+- [Data subject requests](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md): Finds and exports a user’s personal data to help you respond to data subject requests for GDPR.
+- [eDiscovery](manage-legal-investigations.md): Searches across content locations to identify, preserve, and export data in response to legal discovery requests.
 
 ## How do I get this?
 
