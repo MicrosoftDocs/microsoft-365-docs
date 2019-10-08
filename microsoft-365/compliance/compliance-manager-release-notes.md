@@ -70,6 +70,7 @@ The following sections cover known issues to be resolved in upcoming releases of
 
 ### Templates
 
+- When you receive an alert notification (orange triangle icon in the Templates dashboard) that a template is ready to be updated, we strongly suggest selecting **Update** to ensure proper functionality for upcoming releases.
 - Archived templates are editable and they should not be editable.
 - Locked templates allow for Assessment creation when they should not. Locking a Template is meant to prevent it from being used to create Assessments.
 

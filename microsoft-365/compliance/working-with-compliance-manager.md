@@ -214,6 +214,9 @@ When you create an Assessment, you have the option to copy information from an e
 
 ### Viewing Assessments
 
+> [!IMPORTANT]
+> When you receive an alert notification (designated by an orange triangle icon on the Assessments dashboard) that an assessment is ready for update, we strongly suggest selecting **Update**. Updates are provided for both standard and custom assessments, and will help ensure your assessments function properly as laws and regulations change.  
+
 #### View an Assessment
   
 1. In the Assessments dashboard, select the assessment name to open it and view the Action Items and Controls Info.
@@ -363,6 +366,9 @@ A Template is the base object in Compliance Manager (Preview) that is associated
 The dashboard displays each Template, along with the Certification and Product associated with the Template, the dates on which the Template was created and last modified, the number of customer and Microsoft-managed controls, the maximum Compliance Score for the Template, and the status of the Template (for example, Approved, Pending Approval, Imported).
 
 The built-in Templates each have a built-in Assessment associated with them, but you can create additional Assessments based on built-in Templates, and you can import your own Templates, and create custom Assessments based off those.
+
+> [!IMPORTANT]
+> When you receive an alert notification (designated by an orange triangle icon on the Templates dashboard) that a template is ready for update, we strongly suggest selecting **Update** to ensure your score is accurately calculated. Updates do not automatically extend to the Assessment level, so it is also important to accept all updates for Assessments to ensure proper functionality.
 
 ### Create a Template
 
