@@ -1,5 +1,5 @@
 ---
-title: Overview of the Microsoft 365 solutions catalog
+title: Overview of the Microsoft 365 solution catalog
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -7,21 +7,21 @@ audience: ITPro
 ms.topic: article
 ms.service: o365-seccomp
 localization_priority: Normal
-description: Learn about the Microsoft 365 solutions catalog, including what it contains, how to get it, and your next steps.
+description: Learn about the Microsoft 365 solution catalog, including what it contains, how to get it, and your next steps.
 ms.collection: M365-security-compliance
 ---
 
-# Overview of the Microsoft 365 solutions catalog (Preview)
+# Overview of the Microsoft 365 solution catalog (Preview)
 
 ## Overview
 
-Are you looking for a way to quickly get started with compliance solutions in Microsoft 365? Check out the new [Microsoft 365 solutions catalog](https://compliance.microsoft.com) to discover, learn, and quickly get started with compliance and risk management solutions.
+Are you looking for a way to quickly get started with compliance solutions in Microsoft 365? Check out the new [Microsoft 365 solution catalog](https://compliance.microsoft.com) to discover, learn, and quickly get started with compliance and risk management solutions.
 
-Read this article to get acquainted with the Microsoft 365 solutions catalog, [how to get it](#how-do-i-get-this), [frequently asked questions](#frequently-asked-questions), and your [next steps](#next-steps).
+Read this article to get acquainted with the Microsoft 365 solution catalog, [how to get it](#how-do-i-get-this), [frequently asked questions](#frequently-asked-questions), and your [next steps](#next-steps).
 
 ## Organization
 
-The solutions catalog is organized into sections that contain information cards for each compliance solution available in your Microsoft 365 subscription. Each section contains cards for solutions grouped by compliance area. More details about these sections is provided later in this article.
+The solution catalog is organized into sections that contain information cards for each compliance solution available in your Microsoft 365 subscription. Each section contains cards for solutions grouped by compliance area. More details about these sections is provided later in this article.
 
 SCREENSHOT OF SOLUTIONS CATALOG MAIN PAGE
 
@@ -69,7 +69,7 @@ From here, you can go to a card for the following solutions:
 
 ## How do I get this?
 
-- If you don't have the new Microsoft 365 solutions catalog already, you will have it soon. We are in the process of enabling the catalog for all Microsoft 365 subscriptions.
+- If you don't have the new Microsoft 365 solution catalog already, you will have it soon. We are in the process of enabling the catalog for all Microsoft 365 subscriptions.
 
 - To visit the Microsoft 365 solution catalog, as a global administrator or compliance administrator, go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and sign in. Select **Catalog** in the navigation pane on the left side of the screen to open the catalog home page.
 
@@ -77,13 +77,13 @@ From here, you can go to a card for the following solutions:
 
 ## Frequently asked questions
 
-### Why don't I see the new Microsoft 365 solutions catalog yet?
+### Why don't I see the new Microsoft 365 solution catalog yet?
 
-First, make sure you have the appropriate [licenses and permissions](../security/office-365-security/microsoft-security-and-compliance.md#required-licenses-and-permissions). Then, sign in at [https://compliance.microsoft.com](https://compliance.microsoft.com). If you don't see the new solutions catalog in the left navigation pane yet, you will have it soon.
+First, make sure you have the appropriate [licenses and permissions](../security/office-365-security/microsoft-security-and-compliance.md#required-licenses-and-permissions). Then, sign in at [https://compliance.microsoft.com](https://compliance.microsoft.com). If you don't see the new solution catalog in the left navigation pane yet, you will have it soon.
 
-### Some of the compliance features listed on the solutions catalog page are not available in the Microsoft 365 compliance center. What do I do?
+### Some of the compliance features listed on the solution catalog page are not available in the Microsoft 365 compliance center. What do I do?
 
-We are still adding functionality to the Microsoft 365 compliance center and the solutions catalog. If you can't find something, such as Insider risk management, it will be accessible as soon as the solution is available in your subscription.
+We are still adding functionality to the Microsoft 365 compliance center and the solution catalog. If you can't find something, such as Insider risk management, it will be accessible as soon as the solution is available in your subscription.
 
 ## Next steps
 
@@ -97,4 +97,4 @@ We are still adding functionality to the Microsoft 365 compliance center and the
 
 - **Use Insider risk management to identify, triage, and remediate risks in your organization**. See [Insider risk management in Microsoft 365](insider-risk-overview.md)
 
-- **Visit your Microsoft 365 solutions catalog often**, and make sure to review new solutions to help you with your compliance needs. Sign in at [https://compliance.microsoft.com](https://compliance.microsoft.com) and then select **Catalog** in the left navigation pane.
+- **Visit your Microsoft 365 solution catalog often**, and make sure to review new solutions to help you with your compliance needs. Sign in at [https://compliance.microsoft.com](https://compliance.microsoft.com) and then select **Catalog** in the left navigation pane.
