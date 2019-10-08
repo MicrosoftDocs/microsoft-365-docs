@@ -18,7 +18,7 @@ description: "The data classification dashboard gives you visibility into how mu
 
 # Data classification overview page
 
-You can evaluate and then tag content in your organization in order to control where it goes, protect it no matter where it is and to ensure that it is preserved and deleted according your your organizations needs. You do this through the application of [sensitivity labels](sensitivity-labels.md) and [retention labels](labels.md). There are various ways to do the discovery, evaluation and tagging, but the end result is that you may have very large numbers of documents and emails that are tagged with one or both of these labels. The data classification blade provides visibility that body of content, specifically:
+You can evaluate and then tag content in your organization in order to control where it goes, protect it no matter where it is and to ensure that it is preserved and deleted according your your organizations needs. You do this through the application of [sensitivity labels](sensitivity-labels.md) and [retention labels](labels.md). There are various ways to do the discovery, evaluation and tagging, but the end result is that you may have very large numbers of documents and emails that are tagged with one or both of these labels. After you apply  your retention labels and sensitivity labels, you’ll want to see how they’re being used across your tenant. With the data classification blade provides visibility into that body of content, specifically:
 
 - the volume of content that has been classified and what those classifications are
 - the top applied sensitivity labels
@@ -26,21 +26,23 @@ You can evaluate and then tag content in your organization in order to control w
 - the locations of your sensitive and retained data
 - a summary of activities that meet the action criteria for sensitive content, be that monitor, notify or block access
 
-<!-- After you create your retention labels and sensitivity labels, you’ll want to see how they’re being used across your tenant. With label analytics in the Microsoft 365 compliance center and Microsoft 365 security center, you can quickly see which labels are used the most and where they’re being applied.
+placeholder image and text
 
-For example, with label analytics, you can view the:
+![data classification blade placeholder](media/data-classification-overview.png)
 
-- Total number of retention labels and sensitivity labels applied to content.
-- Top labels and the count of how many times each label was applied.
-- Locations where labels are applied and the count for each location.
-- Count for how many files and folders had their retention label changed or removed.
+You can find data classification in the [Microsoft 365 compliance center](https://compliance.microsoft.com/dataclassification?viewid=overview) or [Microsoft 365 security center](https://security.microsoft.com/dataclassification?viewid=overview) > **Classification**.
 
-You can find label analytics in the [Microsoft 365 compliance center](https://compliance.microsoft.com/labelanalytics) or [Microsoft 365 security center](https://security.microsoft.com/labelanalytics) > **Classification** > **Label analytics**.
 
-![Label analytics page](media/label-analytics-page.png) -->
 
 ## Sensitive data classification
 
+The Sensitive data classification widget shows the top sensitive information types that have been found and labeled across your organization.
+
+![top sensitive information types placeholder](media/data-classification-top-sensitive-info-types.png)
+
+to find out how many documents are in any given classification category, hover over the bar for the category.
+
+![top sensitive information types hover detail placeholder](media\data-classification-hover-detail-top-sensitive-info-types.png)
 
 ## Top applied sensitivity labels
 
