@@ -421,10 +421,14 @@
 
 ### [Microsoft's data protection officer](gdpr-data-protection-officer.md)
 
-# [Compliance offerings]()
+# Hybrid compliance capabilities
+## [Exchange Online mail encryption with AD RMS](information-rights-management-in-exchange-online.md)
+### [Configure IRM to use an on-premises AD RMS server](configure-irm-to-use-an-on-premises-ad-rms-server.md)
+
+# Compliance offerings
 ## [Microsoft compliance offerings](offering-home.md)
 
-## [Global]()
+## Global
 ### [CIS Benchmark](offering-cis-benchmark.md)
 ### [CSA-STAR attestation](offering-csa-star-attestation.md)
 ### [CSA-STAR certification](offering-csa-star-certification.md)
@@ -439,7 +443,7 @@
 ### [SOC](offering-soc.md)
 ### [WCAG 2.1](offering-wcag-2-1.md)
 
-## [Government]()
+## Government
 ### [CJIS](offering-cjis.md)
 ### [CNSSI 1253](offering-cnssi-1253.md)
 ### [DFARS](offering-dfars.md)
@@ -454,8 +458,7 @@
 ### [NIST CSF](offering-nist-csf.md)
 ### [Section 508 VPATS](offering-section-508-vpats.md)
 
-## [Industry]()
-
+## Industry
 ### Education
 #### [FERPA](offering-ferpa.md)
 
@@ -544,7 +547,7 @@
 #### [Cyber Essentials Plus (UK)](offering-cyber-essentials-plus-uk.md)
 #### [G-Cloud (UK)](offering-g-cloud-uk.md)
 
-## [Regional]()
+## Regional
 ### Asia
 #### [CS Mark (Gold) (Japan))](offering-cs-mark-gold-japan.md)
 #### [DJCP (China)](https://www.trustcenter.cn/compliance/default.html#DJCP)
@@ -580,10 +583,6 @@
 
 ### South America
 #### [PDPA (Argentina)](offering-pdpa-argentina.md)
-
-# Hybrid compliance capabilities
-## [Exchange Online mail encryption with AD RMS](information-rights-management-in-exchange-online.md)
-### [Configure IRM to use an on-premises AD RMS server](configure-irm-to-use-an-on-premises-ad-rms-server.md)
 
 # [Office 365 Enterprise](https://docs.microsoft.com/Office365/Enterprise)
 # [Office 365 Business](https://docs.microsoft.com/office365/admin/admin-home)
