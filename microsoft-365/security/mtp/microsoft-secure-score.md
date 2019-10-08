@@ -29,7 +29,7 @@ Secure Score helps organizations do the following:
 
 Secure Score gives organizations access to robust visualizations of metrics and trends, integration with other Microsoft products, score comparison with other organizations of similar size and industry, and much more. The score can also reflect when third-party solutions have addressed recommended actions.
 
-You can also get your recommendations and score using the [Microsoft Graph API](https://docs.microsoft.com/graph/api/resources/securescores?view=graph-rest-beta).
+Additionally, you can access your recommendations and score using the [Microsoft Graph API](https://docs.microsoft.com/graph/api/resources/securescores?view=graph-rest-beta).
 
 ## How it works
 
