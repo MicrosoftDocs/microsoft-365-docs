@@ -21,7 +21,7 @@ description: "You can turn on the Audit log search feature in the Security & Com
 
 # Turn Office 365 audit log search on or off
 
-You (or another admin) must turn on audit logging before you can start searching the Office 365 audit log. When audit log search in the Security & Compliance Center is turned on, user and admin activity from your organization is recorded in the audit log and retained for 90 days. However, your organization might not want to record and retain audit log data. Or you might be using a third-party security information and event management (SIEM) application to access your auditing data. In those cases, a global admin can turn off audit log search in Office 365.
+You (or another admin) must turn on audit logging before you can start searching the Office 365 audit log. When audit log search in the Security & Compliance Center is turned on, user and admin activity from your organization is recorded in the audit log and retained for 90 days. However, your organization may not want to record and retain audit log data. Or you may be using a third-party security information and event management (SIEM) application to access your auditing data. In those cases, a global admin can turn off audit log search in Office 365.
   
 ## Before you begin
 
@@ -30,27 +30,25 @@ You (or another admin) must turn on audit logging before you can start searching
     > [!IMPORTANT]
     > Users have to be assigned permissions in Exchange Online to turn audit log search on or off. If you assign users the Audit Logs role on the **Permissions** page in the Security & Compliance Center, they won't be able to turn audit log search on or off. This is because the underlying cmdlet is an Exchange Online cmdlet. 
   
-- If you turn off audit log search in Office 365, you won't be able to use the Office 365 Management Activity API to access auditing data for your organization. Turning off audit log search by following the steps in this article means that no results will be returned when you search the audit log using the Security & Compliance Center or when you run the **Search-UnifiedAuditLog** cmdlet in Exchange Online PowerShell. This also means that your audit logs won't be available through the Office 365 Management Activity API.  
+- If you turn off audit log search in Office 365, you can't use the Office 365 Management Activity API to access auditing data for your organization. Turning off audit log search by following the steps in this article means that no results will be returned when you search the audit log using the Security & Compliance Center or when you run the **Search-UnifiedAuditLog** cmdlet in Exchange Online PowerShell. This also means that your audit logs won't be available through the Office 365 Management Activity API.  
     
 - For step-by-step instructions on searching the Office 365 audit log, see [Search the audit log in the Security & Compliance Center](search-the-audit-log-in-security-and-compliance.md).
     
 ## Turn on audit log search
 
-You can use the Security & Compliance Center or PowerShell to turn on audit log search in Office 365. It might take several hours after you turn on audit log search before you can return results when you search the audit log. You have to be assigned the Audit Logs role in Exchange Online to turn on audit log search.
+You can use the Security & Compliance Center or PowerShell to turn on audit log search in Office 365. It may take several hours after you turn on audit log search before you can return results when you search the audit log. You have to be assigned the Audit Logs role in Exchange Online to turn on audit log search.
   
 ### Use the Security & Compliance Center to turn on audit log search
 
 1. In the Security & Compliance Center, go to **Search** \> **Audit log search**.
     
-2. Click **Start recording user and admin activities**.
+   A banner is displayed saying that auditing has to be turned on to record user and admin activity.
+
+2. Click **Turn on auditing**.
     
-    ![Click Start recording user and admin activities to turn on auditing](media/39a9d35f-88d0-4bbe-a962-0be2f838e2bf.png)
+    ![Click Turn on auditing](media/39a9d35f-88d0-4bbe-a962-0be2f838e2bf.png)
   
-    A dialog box is displayed saying that user and admin activity in your organization will be recorded to the Office 365 audit log and available to view in a report. 
-    
-3. Click **Turn on**.
-    
-    A message is displayed that says the audit log is being prepared and that you can run a search in a couple of hours after the preparation is complete.
+    The banner is updated to say the audit log is being prepared and that you can search for user and admin activity in a few hours.
     
 ### Use PowerShell to turn on audit log search
 
@@ -62,7 +60,7 @@ You can use the Security & Compliance Center or PowerShell to turn on audit log 
     Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $true
     ```
 
-    A message is displayed saying that it might take up to 60 minutes for the change to take effect.
+    A message is displayed saying that it may take up to 60 minutes for the change to take effect.
   
 ## Turn off audit log search
 
@@ -80,14 +78,12 @@ You have to use remote PowerShell connected to your Exchange Online organization
     
     - In PowerShell, run the following command:
 
-        ```
-        Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled
-        ```
+            ```
+            Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled
+            ```
 
-        The value of  `False` for the  _UnifiedAuditLogIngestionEnabled_ property indicates that audit log search is turned off. 
+           The value of  `False` for the  _UnifiedAuditLogIngestionEnabled_ property indicates that audit log search is turned off. 
     
-    - In the Security & Compliance Center, go to **Search** \> **Audit log search**, and then click **Search**.
+    - In the Security & Compliance Center, go to **Search** \> **Audit log search**.
     
-      A message is displayed saying that audit log search isn't turned on. 
-    
-      ![A message is displayed if auditing is turned off](media/dca53da6-1cbe-4fa3-9860-f0d674de9538.png)
+           A banner is displayed saying that auditing has to be turned on in order to record user and admin activity.

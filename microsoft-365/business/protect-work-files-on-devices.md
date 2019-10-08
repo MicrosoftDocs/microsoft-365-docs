@@ -24,6 +24,7 @@ search.appverid:
 - MOE150
 ms.assetid: 52089919-9a5e-475f-a49a-f65369487861
 description: "Learn about default configuration and adding application management policies to protect company data on users' personal mobile devices. "
+ms.custom: OKR_SMB_M365
 ---
 
 # Protect work files on devices

@@ -17,6 +17,7 @@ search.appverid:
 - BCS160
 - MET150
 description: "Set up Office 365 Advanced Threat Protection, and safeguard sensitive data."
+ms.custom: OKR_SMB_M365
 ---
 # Increase threat protection
 
@@ -142,8 +143,6 @@ To create an ATP anti-phishing policy, watch  [this short training video](https:
 |Mailbox intelligence  <br/> |By default, mailbox intelligence is selected when you create a new anti-phishing policy. Leave this setting **On** for best results.  <br/> |
 |Add trusted senders and domains  <br/> |Here you can add your own domain, or any other trusted domains.  <br/> |
 |Applied to  <br/> |Select **The recipient domain is**. Under **Any of these**, select **Choose**. Select **+ Add**. Select the check box next to the name of the domain, for example, *contoso.<span><span>com*, in the list, and then select **Add**. Select **Done**.  <br/> |
-   
-For more information, see [Set up Office 365 ATP anti-phishing policies](https://go.microsoft.com/fwlink/?linkid=2016505&amp;clcid=0x409).
   
 ## Protect against malicious attachments and files with ATP Safe Attachments
 

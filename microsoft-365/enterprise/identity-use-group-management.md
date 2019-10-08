@@ -17,7 +17,7 @@ description: You can use groups to automate management of some administrative ta
 
 # Step 5: Use groups for management
 
-![](./media/deploy-foundation-infrastructure/identity_icon-small.png)
+![Phase 2-Identity](./media/deploy-foundation-infrastructure/identity_icon-small.png)
 
 <a name="identity-self-service-groups"></a>
 ## Allow users to create and manage their own groups
@@ -99,4 +99,4 @@ As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step6.png)| [Configure identity governance](identity-configure-identity-governance.md) |
+|![Step 6](./media/stepnumbers/Step6.png)| [Configure identity governance](identity-configure-identity-governance.md) |

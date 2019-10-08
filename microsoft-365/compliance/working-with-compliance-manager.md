@@ -35,7 +35,7 @@ To get you started, an ISO/IEC 27001:2103 Assessment for Office 365 appears by d
 
 ## Administration
 
-There are specific administrative functions that are only available to the tenant administrator and only visible when logged in with a global administrator account. However, until the administrator assigns Compliance Manager roles to users, data in Compliance Manager is visible to all users in your organization. We recommend implementing role-based access control to determine who can access and perform actions in Compliance Manager.
+There are specific administrative functions that are only available to the global administrator and only visible when logged in with a global administrator account. Once the administrator assigns Compliance Manager roles to other users, those users can view data in Compliance Manager and perform actions determined by their role. The administrator can also give read-only access to Compliance Manager by assigning the user the [Global Reader role in Azure Active Directory (Azure AD)](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader).
   
 ### Assigning Compliance Manager roles to users
 
@@ -89,7 +89,7 @@ When you work with groups, remember:
 
 Compliance Manager (Preview) includes a new interface for managing new data elements called **Tenant Management**. This interface enables you to manage tenant-wide settings:
 
-- **Dimensions:** View, add and customize metadata for Templates, Assessments, and Action Items that allow you to create custom pivots for filters.
+- **Dimensions:** View metadata for Templates, Assessments, and Action Items that allow you to create custom pivots for filters.
 - **Owners:** Specify an owner for each Action Item.
 - **Customer Actions:** Manage the complete list of Actions Items included in Compliance Manager (Preview) and enable/disable Secure Score monitoring for Actions that are integrated with Secure Score.
 
@@ -97,34 +97,7 @@ Select **Tenant Management** to open the management interface, and use the follo
 
 ### Dimensions
 
-Dimensions are sets of metadata that provide information about a Template, an Assessment, or an Action Item. Dimensions use the concept of Keys and Values, where the Dimension Key represents a property, and Dimension Value represents valid values for the property. For example, in Compliance Manager there are three types of Actions. They are defined by a Dimension Key of **Action Type** and Dimension Values of **Documentation**, **Operational**, and **Technical**. You can modify existing Dimensions or add your own. Adding Dimensions is often necessary when importing custom Templates.
-
-#### Add a Dimension
-
-1. Open **Tenant Management** and select **Dimensions**.
-2. Select **+ Add Dimension**.
-3. Enter a unique name in the **Key** field.
-4. Optionally enable multiple values to be used concurrently for the same Key, slide the toggle for **Allow multi selection for dimensions** to on.
-5. Select **+ Add** to add a value by providing a unique name and clicking the save icon.
-6. Repeat Step 5 for each value you want to add.
-7. Select **Save** to save the new Dimension.
-
-#### Edit a Dimension
-
-You can rename a Dimension Key, but you can modify the values for custom Dimensions.
-
-1. Open **Tenant Management** and select **Dimensions**.
-2. Locate the Dimension you want to edit, select the ellipses (…) next to it, and select **Edit**.
-3. Select **+ Add** to add a value by providing a unique name and clicking the save icon, or select the value you want to edit or delete, and select **Remove** or **Edit**.
-4. Select **Save** when you have finished making changes.
-
-#### Delete a Dimension
-
-You can delete custom Dimensions if needed.
-
-1. Open **Tenant Management** and select **Dimensions**.
-2. Locate the Dimension you want to delete, select the ellipses (…) next to it, and select **Delete**.
-3. When the confirmation message appears, select **Delete**.
+Dimensions are sets of metadata that provide information about a Template, an Assessment, or an Action Item. Dimensions use the concept of Keys and Values, where the Dimension Key represents a property, and Dimension Value represents valid values for the property. For example, in Compliance Manager there are three types of Actions. They are defined by a Dimension Key of **Action Type** and Dimension Values of **Documentation**, **Operational**, and **Technical**. You can edit or delete existing Dimensions.
 
 ### Owners
 
@@ -351,11 +324,11 @@ Controls can be viewed from the Controls Info dashboard. Controls represent the 
 
 ![Compliance Manager Microsoft Controls Details](media/compliance-manager-control-details.png)
 
-There are three types of controls. Two are provided by Microsoft in the built-in Templates, and the third is created and managed by customers in custom Templates. The three types are:
+There are three types of controls:
 
-1. **Microsoft-managed controls (MM):** these are controls for which only Microsoft has responsibility. They appear in the in-box Templates and are added to Compliance Manager by Microsoft.
-2. **Customer-managed controls (CM):** these are controls for which only customers have responsibility. They appear in the in-box Templates and are added to Compliance Manager by Microsoft or customers. Customer can also edit or disable Microsoft-provided customer-managed controls.
-3. **Shared controls (SM):** these are controls where responsibility is shared between Microsoft and customer. These appear in the in-box Templates and are added to Compliance Manager by Microsoft.
+1. **Microsoft-managed controls:** these are controls for which only Microsoft has responsibility. They appear in the in-box Templates and are added to Compliance Manager by Microsoft.
+2. **Customer-managed controls:** these are controls for which only customers have responsibility. They appear in the in-box Templates and are added to Compliance Manager by customers.
+3. **Shared management controls:** these are controls where responsibility is shared between Microsoft and the customer. These appear in the in-box Templates and are added to Compliance Manager by Microsoft. The customer can also edit or disable Microsoft-managed controls.
 
 ### Actions Items
 
@@ -420,7 +393,7 @@ This tab includes columns that define the controls that are mapped to the Action
 - **controlDescription:** Control description from certification/standard/regulation, etc.
 - **controlVersion:** Optional control version info.  Example: for NIST 800-53, the current value is Rev 4, so the controlVersion is 4.  For CSA CCM, it is 3.0.1.
 - **isDisabled:** Use TRUE or FALSE to indicate whether the control has been disabled.
-- **controlType:** Use CM to indicate these are customer-managed controls.
+- **controlType:** Use CC to indicate these are customer-managed controls.
 - **controlComplianceScore:** Sum of the score of all Actions assigned to the Control.
 - **controlActionTitle:** Double semi-colon-delimited list of all actionTitles for this control as listed on the Actions tab. 
 
@@ -446,7 +419,7 @@ This tab includes columns that define individual Actions, and it includes detail
     Product::Office 365;;Certification::NIST CSF
     ```
 
-    All Dimensions that are used in a custom Template must be listed on the Dimensions tab of the import file, even if they are already listed on the Dimensions dashboard. If you are adding new Dimension Keys or Values, you must add them first to the Dimensions dashboard.
+    All Dimensions that are used in a custom Template must be listed on the Dimensions tab of the import file, even if they are already listed on the Dimensions dashboard.
 - **actionScore:** Numeric value for each Action, which represents the score for that action. We recommend following the scoring model used by the built-in assessments, which is based on each Action’s purpose and enforcement.
 - **actionOwnership:** Double semicolon-delimited list of Owners. All listed Owners must be included on the Ownership tab.
 - **actionDescription:** Text of each Action, which must be unique. This field supports Markdown Language as described below.
@@ -524,7 +497,7 @@ You can create a Template by copying an existing Template or by importing Templa
 
 1. Open the **Templates** dashboard and select **+ Add Template**.
 2. In the **Enter template name** field, provide a unique name for the Template.
-3. Add one or more Dimensions. Even if the Dimensions you use are already listed on the Dimensions dashboard, they must still be listed in the import file.
+3. Select at least one Dimension from the available list.
 4. Select **Browse** to navigate to the location of the import file, select it, and select **Open**.
 5. The import file will be validated and indicate the number of controls and control families that were detected. If there are errors, a link will be provided to a modified version of the import file that includes error details. All errors must be resolved before the data will be imported.
 6. Once the data passes validation, select **Add to Dashboard**.
@@ -575,15 +548,11 @@ You can export an Assessment to an Excel file for compliance stakeholders in you
 
 The following table describes each Compliance Manager permission and what it allows the user do. The table also indicates the role that each permission is assigned.
 
-||**Compliance Manager Reader**|**Compliance Manager Contributor**|**Compliance Manager Assessor**|**Compliance Manager Administrator**|**Portal Admin**|
-|:-----|:-----|:-----|:-----|:-----|:-----|
-|**Read data:** Users can read but not edit data (except for Template data and Tenant Management).  <br> | X | X | X | X  | X |
-|**Edit data:** Users can edit all fields, except the Test Result and Test Date fields (except for Template data and Tenant Management).  <br> || X | X  | X | X |
-|**Edit test results:** Users can edit the Test Result and Test Date fields.  <br> ||| X | X | X |
-|**Manage assessments:** Users can create, archive, and delete Assessments.  <br> |||| X | X |
-|**Manage master data:** Users can view, edit, and delete template data and tenant management data.  <br> |||| X | X |
-|**Manage users:** Users can add other users in their organization to the Reader, Contributor, Assessor, and Administrator roles. Only those users with the Global Administrator role in your organization can add or remove users from the Portal Admin role.  <br> ||||| X |
-
-### Guest access
-  
-After Compliance Manager access is configured, any user that does not have a provisioned role is in the **Guest access** role by default (which is also the experience of any non-organization-provisioned accounts like personal Microsoft Accounts). Guest Access users do not have full access to all Compliance Manager features. They are not able to see any of the organization's compliance assessment data, however they are able to use Compliance Manager to view Microsoft's compliance assessment reports and Service Trust documents.
+||**Azure AD Global Reader**|**Compliance Manager Reader**|**Compliance Manager Contributor**|**Compliance Manager Assessor**|**Compliance Manager Administrator**|**Portal Admin**|
+|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
+|**Read data:** Users can read but not edit data (except for Template data and Tenant Management).  <br> | X | X | X | X | X  | X  |X |
+|**Edit data:** Users can edit all fields, except the Test Result and Test Date fields (except for Template data and Tenant Management).  <br> ||| X | X  | X | X |
+|**Edit test results:** Users can edit the Test Result and Test Date fields.  <br> |||| X | X | X |
+|**Manage assessments:** Users can create, archive, and delete Assessments.  <br> ||||| X | X |
+|**Manage master data:** Users can view, edit, and delete template data and tenant management data.  <br> ||||| X | X |
+|**Manage users:** Users can add other users in their organization to the Reader, Contributor, Assessor, and Administrator roles. Only those users with the Global Administrator role in your organization can add or remove users from the Portal Admin role.  <br> |||||| X |

@@ -1,7 +1,7 @@
 ---
 title: "Use Exchange Online and the Security & Compliance Center to comply with SEC Rule 17a-4"
-ms.author: stephow
-author: stephow-MSFT
+ms.author: laurawi
+author: laurawi
 manager: laurawi
 ms.date: 
 audience: Admin

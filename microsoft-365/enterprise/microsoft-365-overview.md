@@ -135,7 +135,7 @@ For more deployment information, see how:
 
 |||
 |:-------|:-----|
-![](./media/m365-poster/m365-fundamentals.svg)| Get yourself trained and work towards a Microsoft 365 certification. <BR> Start with [Microsoft 365 Fundamentals](https://docs.microsoft.com/learn/paths/m365-fundamentals/).
+![Microsoft 365 Fundamentals training](./media/m365-poster/m365-fundamentals.svg)| Get yourself trained and work towards a Microsoft 365 certification. <BR> Start with [Microsoft 365 Fundamentals](https://docs.microsoft.com/learn/paths/m365-fundamentals/).
 |||
 
 

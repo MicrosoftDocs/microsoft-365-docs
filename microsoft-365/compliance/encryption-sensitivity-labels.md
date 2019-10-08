@@ -1,7 +1,7 @@
 ---
 title: "Restrict access to content by using encryption in sensitivity labels"
-ms.author: stephow
-author: stephow-MSFT
+ms.author: laurawi
+author: laurawi
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -58,9 +58,9 @@ Alternatively, if you have a sensitivity label named **Business Contracts**, and
 
 Use the options below to control who can access email or documents to which this label is applied. You can:
 
-1. **Apply encryption to both email and documents, or just email.** If you choose just email, messages with this label will be encrypted in Outlook, but documents with this label won't be encrypted in other apps, such as Word or PowerPoint. 
-2. **Allow access to labeled content to expire**, either on a specific date or after a specific number of days after the label is applied. After this time, users won’t be able to open the labeled item. If you specify a date, it is effective midnight on that date in your current time zone. (Note that some email clients may not enforce expiration and show emails past their expiration date, due to their caching mechanisms.)
-3. **Allow offline access** never, always, or for a specific number of days after the label is applied. If you restrict offline access to never or a number of days, when that threshold is reached, users must be reauthenticated and their access is logged. For more information, see the next section on the Rights Management use license.
+1. **Allow access to labeled content to expire**, either on a specific date or after a specific number of days after the label is applied. After this time, users won’t be able to open the labeled item. If you specify a date, it is effective midnight on that date in your current time zone. (Note that some email clients may not enforce expiration and show emails past their expiration date, due to their caching mechanisms.)
+
+2. **Allow offline access** never, always, or for a specific number of days after the label is applied. If you restrict offline access to never or a number of days, when that threshold is reached, users must be reauthenticated and their access is logged. For more information, see the next section on the Rights Management use license.
 
 ![Settings for admin defined permissions](media/sensitivity-encryption-settings-for-admin-defined-permissions.png)
 
@@ -130,7 +130,7 @@ For more information, see [Rights Management issuer and Rights Management owner]
 
 You can use these options to let users assign permissions when they manually apply a sensitivity label to content:
 
-- In Outlook, a user can enforce restrictions equivalent to the **Do Not Forward** option. This option is supported natively in Outlook on Windows, and does not require you to install the Azure Information Protection unified labeling client.
+- In Outlook, a user can enforce restrictions equivalent to the [Do Not Forward](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails) option. This option is supported natively in Outlook on Windows, and does not require you to install the Azure Information Protection unified labeling client.
 - In Word, PowerPoint, and Excel, a user is prompted to select a permission level for specific users, groups, or organizations. This option is not supported natively in these Office apps, so your users must install the Azure Information Protection unified labeling client.
 
 These options determine in which apps the sensitivity label will appear:

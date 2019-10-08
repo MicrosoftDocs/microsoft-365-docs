@@ -20,6 +20,7 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: "Learn how to purchase Microsoft 365 Business from Microsoft Partner Center."
+ms.custom: OKR_SMB_M365
 ---
 
 # Get Microsoft 365 Business

@@ -4,7 +4,7 @@ keywords: AIR, autoIR, ATP, automated, investigation, response, remediation, thr
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 09/18/2019
+ms.date: 10/03/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -20,7 +20,8 @@ description: "Get started using automated incident response capabilities in Offi
 
 ## Overview
 
-[Office 365 Advanced Threat Protection](office-365-atp.md) Plan 2 includes automated incident response (AIR) capabilities that can save your security operations team time and effort in dealing with alerts and threats. 
+Depending on your subscription, [Office 365 Advanced Threat Protection](office-365-atp.md) can include automated incident response (AIR) capabilities that can save your security operations team time and effort in dealing with alerts and threats.
+
 - To get started using AIR capabilities in Office 365, use this article. 
 - To get an overview of how AIR works, see [Automated incident response (AIR) in Office 365](automated-investigation-response-office.md).
 
@@ -32,6 +33,12 @@ With AIR, when certain alerts are triggered, one or more security playbooks init
 
 > [!NOTE]
 > You must be a global administrator, security administrator, security operator, or security reader to perform the tasks described in this article. To learn more, see [Microsoft 365 security center: roles and permissions](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions).
+
+AIR is included in the following subscriptions:
+- Microsoft 365 E5
+- Microsoft 365 E5 Security
+- Office 365 E5
+- Office 365 Advanced Threat Protection Plan 2
 
 ## View details of an investigation
 

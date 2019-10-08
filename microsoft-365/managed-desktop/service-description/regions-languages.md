@@ -12,7 +12,7 @@ ms.collection: M365-modern-desktop
 
 This topic provides details about regions and languages supported by Microsoft Managed Desktop. 
 
-- **Regions:** United States, Canada (excluding Quebec), United Kingdom, Australia, and New Zealand
+- **Regions:** United States, Canada (excluding Quebec), United Kingdom, Belgium, Luxembourg, the Netherlands, Australia, and New Zealand
 - **Languages:** English is the only supported language currently available to users on managed devices. This is applicable to both [Admin support](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/admin-support) and [End-user support](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/end-user-support) options. 
 
 However, customers can still use managed devices outside of the regions listed above without an interruption to the Microsoft Managed Desktop service. For example, an employee based in the United Kingdom can work securely and receive updates on their managed device while traveling Asia, Europe, or South America.

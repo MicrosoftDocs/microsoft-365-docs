@@ -1,7 +1,7 @@
 ---
 title: "Permissions in the Microsoft 365 compliance center and Microsoft 365 security center"
-ms.author: stephow
-author: stephow-MSFT
+ms.author: laurawi
+author: laurawi
 manager: laurawi
 ms.date: 
 ms.audience: Admin
