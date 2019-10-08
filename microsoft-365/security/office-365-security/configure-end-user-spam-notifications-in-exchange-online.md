@@ -73,11 +73,11 @@ For information about keyboard shortcuts that may apply to the procedures in thi
   
 ## Use the SCC to configure end-user spam notifications
 
-You can also use the Security and Compliance Center (SCC) to configure end-user spam notifications. To do, follow these steps:
+You can also use the Security and Compliance Center (SCC) to configure end-user spam notifications. Follow these steps:
 
-1. Open the Security and Compliance Center, then navigate to **Threat management** \> **Policy** \> **Anti-spam** or use the direct link https://protection.office.com/antispam.
+1. Open the Security and Compliance Center, navigate to **Threat management** \> **Policy** \> **Anti-spam** or use the direct link https://protection.office.com/antispam.
 
-2. Click the down arrow next to the spam filter policy for which you want to enable end-user spam notifications to display its settings.
+2. Click the down arrow next to the spam filter policy for which you want to enable end-user spam notifications.
 
 3. Click on the **Configure End-user spam notifications** link.
 
