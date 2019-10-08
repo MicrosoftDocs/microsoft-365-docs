@@ -76,7 +76,7 @@ Outlook
 </tr>
 
 <tr>
-<td><font size="-1">Manually apply, change, or remove label<td><font size="-1"><b>Yes</b><br><font size="-1">1910+</font>
+<td><font size="-1"><a href="https://support.office.com/en-us/article/apply-sensitivity-labels-to-your-documents-and-email-within-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9">Manually apply, change, or remove label</a><td><font size="-1"><b>Yes</b><br><font size="-1">1910+</font>
 
 <td><font size="-1"><b>Yes</b><br><font size="-1">16.21.0+</font>
 
