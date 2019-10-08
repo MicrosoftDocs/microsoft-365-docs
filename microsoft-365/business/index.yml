@@ -83,14 +83,17 @@ conceptualContent:
     - title: Set up Microsoft 365 Business
       links:
         - url: https://support.office.com/article/38003e30-9d10-44cf-b596-f1b5f662bfa1
-          itemType: get-started
+          itemType: video
           text: 1. Run the setup wizard
-        - url: https://support.office.com/article/a32541df-079c-420d-9395-9d59354f7225
-          itemType: get-started
-          text: 2. Secure your business
+        - url: protection-settings-for-windows-10-pcs.md
+          itemType: how-to-guide
+          text: 2. Secure your PCs
+        - url: set-up-conditional-access-policies.md
+          itemType: how-to-guide
+          text: 3. Set up MFA
         - url: auto-install-or-uninstall-office.md
           itemType: get-started
-          text: 3. Install Office
+          text: 4. Install Office
   # Card
     - title: Manage users
       links:
