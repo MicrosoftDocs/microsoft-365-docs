@@ -14,7 +14,7 @@ ms.prod: Microsoft-365-enterprise
 
 # Microsoft compliance offerings
 
-Learn how Microsoft products and services help your organization meet regulatory compliance standards.
+Microsoft offers a comprehensive set of compliance offerings to help your organization comply with national, regional, and industry-specific requirements governing the collection and use of data.
 
 <ul class="panelContent cardsD">
     <li>
