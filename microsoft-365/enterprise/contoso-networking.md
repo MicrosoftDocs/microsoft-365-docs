@@ -3,7 +3,7 @@ title: "Networking for the Contoso Corporation"
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 09/18/2018
+ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,26 +13,26 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom:
 
-description: Understand the Contoso networking infrastructure and how it uses its SD-WAN technology for optimal performance network connectivity to Microsoft 365 Enterprise cloud-based services.
+description: Understand the Contoso networking infrastructure and how it uses its SD-WAN technology for optimal networking performance to Microsoft 365 Enterprise cloud services.
 ---
 
 # Networking for the Contoso Corporation
 
-**Summary:** Understand the Contoso networking infrastructure and how it uses its SD-WAN technology for optimal performance network connectivity to Microsoft 365 Enterprise cloud based services.
+**Summary:** Understand the Contoso networking infrastructure and how it uses its SD-WAN technology for optimal networking performance to Microsoft 365 Enterprise cloud services.
 
-To adopt a cloud-inclusive infrastructure, Contoso's network engineers realized the fundamental shift in the way that network traffic to cloud-based services travels. Instead of a hub and spoke model that focusses network connectivity on the head office, they worked to map user locations to local Internet egress and local connections to Microsoft network locations on the Internet.
+To adopt a cloud-inclusive infrastructure, Contoso's network engineers realized the fundamental shift in the way that network traffic to cloud services travels. Instead of an internal hub and spoke model that focusses network connectivity and traffic for the next level of the Contoso office hierarchy, they worked to map user locations to local Internet egress and local connections to the closest Microsoft 365 network location on the Internet.
 
 ## Contoso's networking infrastructure
 
 The elements of Contoso's network that links their offices across the globe are the following:
 
-- MPLS WAN network
+- Multiprotocol Label Switching (MPLS) WAN network
 
-  An MPLS WAN network connects the Paris headquarters to regional offices and regional offices to satellite offices in a spoke and hub configuration. This is for users to access on-premises servers that make up line of business applications in the Paris office. It also routes any generic Internet traffic to the Paris office where network security devices scrub the requests. Within each office, routers deliver traffic to hosts or wireless access points on subnets, which use the private IP address space.
+  An MPLS WAN network connects the Paris headquarters to regional offices and regional offices to satellite offices in a spoke and hub configuration. This is for users to access on-premises servers that make up line of business applications in the Paris office. It also routes any generic Internet traffic to the Paris office where network security devices scrub the requests. Within each office, routers deliver traffic to wired hosts or wireless access points on subnets, which use the private IP address space.
 
-- Local direct Internet access for Office 365 traffic
+- Local direct Internet access for Microsoft 365 traffic
 
-  Each office has an SD-WAN device with one of more local Internet ISP network circuits, with its own Internet connectivity through a proxy server. This is typically implemented as a WAN link to a local ISP that also provides public IP addresses and local DNS server IP addresses for the proxy server.
+  Each office has a Software-Defined WAN (SD-WAN) device with one of more local Internet ISP network circuits, with its own Internet connectivity through a proxy server. This is typically implemented as a WAN link to a local ISP that also provides public IP addresses and a local DNS server.
 
 - Internet presence
 
@@ -40,7 +40,7 @@ The elements of Contoso's network that links their offices across the globe are 
 
 Figure 1 shows Contoso's networking infrastructure and its connections to the Internet.
 
-![](./media/contoso-networking/contoso-networking-fig1.png)
+![Contoso's network](./media/contoso-networking/contoso-networking-fig1.png)
  
 **Figure 1: Contoso's network**
 
@@ -53,17 +53,19 @@ Contoso followed [Office 365 network connectivity principles](https://docs.micro
 3. Avoid network hairpins
 4. Bypass duplicate network security devices
 
-There are three categories of network traffic for Office 365: Optimize, Allow, and Default. Optimize and Allow traffic is trusted network traffic that is encrypted and secured at the endpoints and is destined for Microsoft datacenters.
+There are three categories of network traffic for Office 365: Optimize, Allow, and Default. Optimize and Allow traffic is trusted network traffic that is encrypted and secured at the endpoints and is destined for the Microsoft 365 network.
 
-Contoso decided to use direct Internet egress for Optimize and Allow category traffic and to forward all Default category traffic to the Paris-based central Internet connection.
+Contoso decided to:
 
-They decided to deploy SD-WAN devices at each of their office locations as a simple way to follow these principles and achieve optimal network performance for Microsoft 365 cloud-based services.
+- Use direct Internet egress for Optimize and Allow category traffic and to forward all Default category traffic to the Paris-based central Internet connection.
 
-The SD-WAN devices have a LAN port for the local office network and multiple WAN ports. One WAN port connects to their MPLS network and other WAN ports connect to local ISP circuits. The SD-WAN device routes Optimize and Allow category network traffic to the ISP links.
+- Deploy SD-WAN devices at each of their office locations as a simple way to follow these principles and achieve optimal network performance for Microsoft 365 cloud-based services.
+
+  The SD-WAN devices have a LAN port for the local office network and multiple WAN ports. One WAN port connects to their MPLS network and another WAN port connects to a local ISP circuit. The SD-WAN device routes Optimize and Allow category network traffic over the ISP link.
 
 ## Contoso's line of business app infrastructure
 
-Contoso has architected its line of business application and server infrastructure for the following:
+Contoso has architected its line of business application and server intranet infrastructure for the following:
 
 - Satellite offices use local caching servers to store frequently accessed documents and internal web sites.
 - Regional hubs use regional application servers for the regional and satellite offices. These servers synchronize with servers in the Paris headquarters.
@@ -71,7 +73,7 @@ Contoso has architected its line of business application and server infrastructu
 
 Figure 2 shows the percentage of network traffic when accessing servers across Contoso’s intranet.
 
-![](./media/contoso-networking/contoso-networking-fig2.png)
+![Contoso's infrastructure for internal applications](./media/contoso-networking/contoso-networking-fig2.png)
  
 **Figure 2: Contoso's infrastructure for internal applications**
 
@@ -95,7 +97,7 @@ Successful adoption of Microsoft 365 Enterprise services by Contoso’s users de
 
 4. Optimized performance to Microsoft network services
 
-   Contoso determined the set of Office 365, Intune, and Azure endpoints and configured firewalls, security devices, and other systems in the Internet path for optimal performance. Endpoints for Office 365 Optimize and Allow category traffic was configured into the SD-WAN devices that provided direct Internet access.
+   Contoso determined the set of Office 365, Intune, and Azure endpoints and configured firewalls, security devices, and other systems in the Internet path for optimal performance. Endpoints for Office 365 Optimize and Allow category traffic was configured into the SD-WAN devices for routing over the ISP circuit.
 
 5. Configured internal DNS
 
@@ -111,7 +113,7 @@ Successful adoption of Microsoft 365 Enterprise services by Contoso’s users de
 
 ## Next step
 
-[Learn](contoso-identity.md) how Contoso is leveraging its on-premises identity provider in the cloud for employees and federating authentication for customers and business partners.
+[Learn](contoso-identity.md) how Contoso is leveraging its on-premises Active Directory Domain Services (AD DS) in the cloud for employees and federating authentication for customers and business partners.
 
 ## See also
 

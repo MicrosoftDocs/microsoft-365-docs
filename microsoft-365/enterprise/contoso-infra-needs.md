@@ -3,7 +3,7 @@ title: "Contoso's IT infrastructure and business needs"
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 09/13/2018
+ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,13 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom:
 
-description: Understand the basic structure of Contoso's on-premises IT infrastructure and how its business needs can be met by Microsoft 365 Enterprise.
+description: Understand the basic structure of Contoso's on-premises IT infrastructure and how its business needs were met by Microsoft 365 Enterprise.
 ---
 
 # Contoso's IT infrastructure and business needs
 
-**Summary:** Understand the basic structure of Contoso's on-premises IT infrastructure and how its business needs can be met by Microsoft 365 Enterprise.
-
+**Summary:** Understand the basic structure of Contoso's on-premises IT infrastructure and how its business needs were met by Microsoft 365 Enterprise.
 
 Contoso has been transitioning from an on-premises, centralized IT infrastructure to a cloud-inclusive one that incorporates cloud-based personal productivity workloads and applications.
 
@@ -29,7 +28,7 @@ Contoso uses a mostly centralized on-premises IT infrastructure, with applicatio
 
 Figure 1 shows a headquarters office with application datacenters, a DMZ, and the Internet.
 
-![](./media/contoso-infra-needs/contoso-infra-needs-fig1.png)
+![Contoso's existing IT infrastructure](./media/contoso-infra-needs/contoso-infra-needs-fig1.png)
 
 **Figure 1: Contoso's existing IT infrastructure**
  
@@ -39,15 +38,15 @@ The on-premises application datacenters host:
 - A set of legacy SharePoint servers.
 - Organization and team-level servers for file storage.
 
-Additionally, each regional hub office that supports a set of servers with a similar set of applications. These servers are under the control of regional IT departments.
+Additionally, each regional hub office supports a set of servers with a similar set of applications. These servers are under the control of regional IT departments.
 
 Searchability across the applications and data of these separate multi-geographical datacenters continues to be a challenge.
 
 In Contoso's headquarters DMZ, different sets of servers provide:
 
-- VPN-based remote access to the Contoso intranet and web proxying for workers in the Paris headquarters.
 - Hosting for the Contoso public web site, from which customers can order products, parts, supplies, or service.
 - Hosting for the Contoso partner extranet for partner communication and collaboration.
+- Virtual private network (VPN)-based remote access to the Contoso intranet and web proxying for workers in the Paris headquarters.
 
 ## Contoso's business needs
 
@@ -77,7 +76,7 @@ Security:
 
 - Information protection
 
-  Lock down access to and encrypt high-value digital assets, such as customer data, design specifications, and employee information.
+  Lock down access to and encrypt high-value digital assets, such as customer data, design and manufacturing specifications, and employee information.
 
 - Security management
 
@@ -91,7 +90,7 @@ Remote and mobile access and business partners:
 
 - Reduce remote access infrastructure for employees
 
-  Reduce maintenance and support costs and improve performance for remote access solution by moving resources commonly accessed to the cloud.
+  Reduce maintenance and support costs and improve performance for remote access solution by moving commonly-accessed resources to the cloud.
 
 - Provide better connectivity and lower overhead for Business-to-Business (B2B) transactions
 
@@ -107,7 +106,7 @@ Management:
 
 - Lower the IT overhead for managing software running on client PCs and devices
 
-  Automate the installation of updates to the Windows operating system and Microsoft Office across the organization.
+  Automate the installation of updates to the Windows operating system and Microsoft Office ProPlus across the organization.
 
 ## Mapping Contoso's business needs to Microsoft 365 Enterprise
 
@@ -117,27 +116,27 @@ Contoso's IT department determined the following mapping of business needs to Mi
 |:-------|:-----|:-----|
 | **Category** | **Business need** | **Microsoft 365 Enterprise products or features** |
 | Productivity |  |  |
-|  | Make collaboration easier | Teams, SharePoint Online, Skype for Business Online |
-|  | Improve productivity for remote and mobile workers | Office 365 workloads and cloud-based data |
+|  | Make collaboration easier | Microsoft Teams, SharePoint, OneDrive |
+|  | Improve productivity for remote and mobile workers | Microsoft 365 workloads and cloud-based data |
 |  | Increase creativity and innovation | Windows Ink, Cortana at Work, PowerPoint |
 | Security |  |  |
-|  | Identity & access management | Dedicated global administrator accounts with Multi-factor authentication (MFA) and Azure AD Privileged Identity Management (PIM) <BR> MFA for all user accounts <BR> Conditional access <BR> Windows Hello <BR> Windows Credential Guard |
+|  | Identity & access management | Dedicated global administrator accounts with Azure Multi-Factor Authentication (MFA) and Azure AD Privileged Identity Management (PIM) <BR> MFA for all user accounts <BR> Conditional Access <BR> Windows Hello <BR> Windows Credential Guard |
 |  | Threat protection | Advanced Threat Analytics <BR> Windows Defender <BR> Advanced Threat Protection <BR> Office 365 Advanced Threat Protection <BR> Office 365 threat investigation and response <BR> |
-|  | Information protection | Azure Information Protection <BR> Office 365 Data Loss Prevention (DLP) <BR> Windows Information Protection <BR> Microsoft Cloud App Security <BR> Microsoft Intune |
+|  | Information protection | Azure Information Protection <BR> Office 365 Data Loss Prevention (DLP) <BR> Windows Information Protection (WIP) <BR> Microsoft Cloud App Security <BR> Microsoft Intune |
 |  | Security management | Azure Security Center  <BR> Windows Defender Security Center |
 | Remote and mobile access and business partners |  |  |
 |  | Better security for remote and mobile workers | Microsoft Intune |
-|  | Reduce remote access infrastructure for employees | Office 365 workloads and cloud-based data |
+|  | Reduce remote access infrastructure for employees | Microsoft 365 workloads and cloud-based data |
 |  | Provide better connectivity and lower overhead for B2B transactions | Federated authentication and cloud-based resources |
 | Compliance |  |  |
 |  | Adhere to regional regulatory requirements | GDPR features in Office 365 |
 | Management |  |  |
-|  | Lower the IT overhead for installing client updates | Deployment rings <BR> Windows 10 upgrade in place and Autopilot <BR> Office 365 ProPlus |
+|  | Lower the IT overhead for installing client updates | Deployment rings <BR> Windows 10 Enterprise updates <BR> Office 365 ProPlus updates |
 ||||
 
 ## Next step
 
-[Learn](contoso-networking.md) about the Contoso Corporation’s on-premises network and how it was optimized for access and latency to Microsoft 365 cloud-based resources across its organization.
+[Learn](contoso-networking.md) about the Contoso Corporation’s on-premises network and how it was optimized for access and latency to Microsoft 365 cloud-based resources.
 
 ## See also
 

@@ -1,5 +1,5 @@
 ---
-title: "Configuration best practices for EOP and ATP security, best practices, settings, recommendations, Sender Policy Framework, Domain-based Message Reporting and Conformance, DomainKeys Identified Mail, steps, how does it work,"
+title: "Configuration best practices for EOP and Office 365 ATP security, best practices, settings, recommendations, Sender Policy Framework, Domain-based Message Reporting and Conformance, DomainKeys Identified Mail, steps, how does it work,"
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -16,9 +16,9 @@ ms.collection:
 description: "What are best practices for Exchange Online Protection (EOP) and Advanced Threat Protection (ATP) security settings? What's recommended? What should be used aggressively? And what extras do you get if you also use Advanced Threat Protection (ATP)?"
 ---
 
-# Best-practices for configuring EOP and ATP security
+# Best-practices for configuring EOP and Office 365 ATP security
 
-Exchange Online Protection (EOP) is the core of security for E3 Office 365 subscriptions. It's optional, and even encouraged, for E3 customers to buy a subscription to Advanced Threat Protection (ATP), ex. ATP Plan 1 or ATP Plan 2, in order to leverage the added security available in E5 Office 365 subscriptions.
+Exchange Online Protection (EOP) is the core of security for E3 Office 365 subscriptions. It's optional, and even encouraged, for E3 customers to buy a subscription to Office 365 Advanced Threat Protection (ATP), ex. ATP Plan 1 or ATP Plan 2, in order to leverage the added security available in E5 Office 365 subscriptions.
 
 We'll discuss two security levels, called Recommended and Aggressive in EOP, covering comments on how to use features at both levels of security. The sections begin with email validation and authentication, which involves some tinkering outside of Office 365, in DNS, and secures outbound mail, making tenants good citizens to the resources they mail. These settings best protect your subscription.
 
@@ -32,9 +32,9 @@ These methods handle outbound email from Office 365, and help destination system
 
 |Security feature name  |Recommended |Aggressive  |Comment  |
 |---------|---------|---------|---------|
-|[Create SPF records](https://docs.microsoft.com/en-us/office365/securitycompliance/set-up-spf-in-office-365-to-help-prevent-spoofing)    | Y        |    Y     |   -      |
-|[Configure DKIM Signing for Domains](https://docs.microsoft.com/en-us/office365/securitycompliance/use-dkim-to-validate-outbound-email)     |  Y       |    Y     |  -       |
-|[Implement DMARC with reject or quarantine action](https://docs.microsoft.com/en-us/office365/securitycompliance/use-dmarc-to-validate-email)     |   Y      |     Y    |   Use action=none for Recommended, and action=reject for Aggressive.     |
+|[Create SPF records](https://docs.microsoft.com/en-us/office365/securitycompliance/set-up-spf-in-office-365-to-help-prevent-spoofing)    | Yes        |    Yes     |   -      |
+|[Configure DKIM Signing for Domains](https://docs.microsoft.com/en-us/office365/securitycompliance/use-dkim-to-validate-outbound-email)     |  Yes       |    Yes     |  -       |
+|[Implement DMARC with reject or quarantine action](https://docs.microsoft.com/en-us/office365/securitycompliance/use-dmarc-to-validate-email)     |   Yes      |     Yes    |   Use action=none for Recommended, and action=reject for Aggressive.     |
 
 > [!IMPORTANT]
 > To work with security roles and permissions, be sure you have the right role or roles in Office 365 or the Security and Compliance Center. If you are a *Security Administrator* in Azure Active Directory, a *Global Administrator* in Office 365, or an *Exchange Online Organizational Manager* in Exchange Online/Exchange Online Powershell, you're ready to go.
@@ -51,9 +51,9 @@ Phising filters are on by default in Office 365, but should be configured for a 
 
 |Security feature name  |Recommended |Aggressive  |Comment  |
 |---------|---------|---------|---------|
-|Quarantine retention period    |   Y      |     Y    |   30 days   |
-|End user spam notification frequency   |   Y      |     Y    |   3 days   |
-|Zero Hour Autopurge should be enabled   |   Y      |     Y    |   True  |
+|Quarantine retention period    |   Yes      |     Yes    |   30 days   |
+|End user spam notification frequency   |   Yes      |     Yes    |   3 days   |
+|Zero Hour Autopurge should be enabled   |   Yes      |     Yes    |   True  |
 |Spam detection action should be sent to | JMF | Quarantine | - |
 |High confidence spam detection action should be sent to | Quarantine | Quarantine| - |
 |Bulk detection action should be set to | JMF | Quarantine | - |
@@ -125,9 +125,9 @@ Recommended for **ON** in both Recommended and Aggressive Levels:
 |TreatSoftPassAsAuthenticated |True |False | - |
 |EnableSuspiciousSafetyTip |True |True | - |
 
-## Advanced Threat Protection (ATP) security
+## Office 365 Advanced Threat Protection (ATP) security
 
-Earlier, I said that it was encouraged for E3 subscriptions to add ATP plan 1, or the more fully-realized ATP Plan 2. Advanced Anti-phishing is one reason why. Enabled by default, anti-phishing ***must*** be configured with policies to operate. Forgetting to configure anti-phishing policies exposes users to risk, be sure that's step-2 after you add an ATP subscription.
+Earlier, I said that it was encouraged for E3 subscriptions to add an Office 365 ATP plan 1, or the more fully-realized ATP Plan 2. Advanced Anti-phishing is one reason why. Enabled by default, anti-phishing ***must*** be configured with policies to operate. Forgetting to configure anti-phishing policies exposes users to risk, be sure that's step-2 after you add an ATP subscription.
 
 > [!IMPORTANT]
 >  If you have an E5 subscription, you currently have [ATP Plan 2](https://products.office.com/en-us/exchange/advance-threat-protection). Check this link when you want to find out [what's new in ATP](https://review.docs.microsoft.com/en-us/microsoft-365/security/office-365-security/whats-new-in-office-365-atp?branch=oatp-newstuff).
@@ -140,7 +140,7 @@ Phishing is an attempt to masquerade as reputable company or person for the purp
 
 - **Impersonation**, where mail is received whose sender is visually similar (or look-alike) to a target domain or username. The bad actor here, mimics a specific username, or pretends to be sending mail from a target domain. Here's a pretense domain: ellar@2020|itware.com, and here's a pretense user: ellαr@2020litware.com (look closely at the domain and user names in these examples to catch the domain- and user impersonation).
 
-If you've added an ATP subscription to your EOP, be sure to set the following configurations.
+If you've added an Office 365 ATP subscription to your EOP, be sure to set the following configurations.
 
 |Security feature name  |Recommended |Aggressive  |Comment  |
 |---------|---------|---------|---------|
