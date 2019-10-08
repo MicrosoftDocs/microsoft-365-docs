@@ -23,12 +23,6 @@ ISO 9001:2015 is an international standard that establishes the criteria for a q
 
 An independent third-party auditing firm performed a rigorous examination of Microsoft Azure and several Microsoft online services for adherence to the quality management principles established by ISO 9001:2015. The available third-party certification provides independent confirmation that Azure and covered Microsoft online services meet the ISO 9001:2015 requirements.
 
-## Audits, reports, and certificates
-
-- [FY19 Microsoft Azure ISO 9001 Assessment Report](https://go.microsoft.com/fwlink/p/?linkid=2077661)
-- [FY19 Microsoft Azure ISO 9001 Certificate](https://go.microsoft.com/fwlink/p/?linkid=2077747)
-- [See additional audit reports](https://aka.ms/auditreports)
-
 ## Microsoft in-scope cloud services
 
 - [Azure](https://aka.ms/AzureCompliance)
@@ -39,6 +33,12 @@ An independent third-party auditing firm performed a rigorous examination of Mic
 - Microsoft Flow cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
 - PowerApps cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
 - Power BI cloud service either as a standalone service or as included in an Office 365 branded plan or suite
+
+## Audits, reports, and certificates
+
+- [FY19 Microsoft Azure ISO 9001 Assessment Report](https://go.microsoft.com/fwlink/p/?linkid=2077661)
+- [FY19 Microsoft Azure ISO 9001 Certificate](https://go.microsoft.com/fwlink/p/?linkid=2077747)
+- [See additional audit reports](https://aka.ms/auditreports)
 
 ## Frequently asked questions
 

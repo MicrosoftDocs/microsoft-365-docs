@@ -44,17 +44,17 @@ The Microsoft checklist helps financial firms in the Netherlands conducting due-
 - An overview of the regulatory landscape for context.
 - A checklist that sets forth the issues to be addressed and maps Microsoft Azure, Microsoft Dynamics 365, and Microsoft 365 services against those regulatory obligations. The checklist can be used as a tool to measure compliance against a regulatory framework and provide an internal structure for documenting compliance, as well as help customers conduct their own risk assessments of Microsoft business cloud services.
 
-## How to implement
-
-- [Compliance checklist: Netherlands](https://aka.ms/FinServ-Guide-Netherlands): Financial firms can get help when conducting risk assessments of Microsoft business cloud services.
-- [Risk Assessment & Compliance Guide](https://aka.ms/RiskGovernanceGuide): Create a governance model for risk assessment of Microsoft cloud services, and regulator notification.
-- [Financial use cases](https://docs.microsoft.com/azure/industry/financial/): Case overviews, tutorials, and other resources to build Azure solutions for financial services.
-
 ## Microsoft in-scope cloud services
 
 - [Azure](https://aka.ms/AzureCompliance)
 - [Dynamics 365](https://aka.ms/d365-compliance-list)
 - [Microsoft 365](https://aka.ms/o365-compliance-framework)
+
+## How to implement
+
+- [Compliance checklist: Netherlands](https://aka.ms/FinServ-Guide-Netherlands): Financial firms can get help when conducting risk assessments of Microsoft business cloud services.
+- [Risk Assessment & Compliance Guide](https://aka.ms/RiskGovernanceGuide): Create a governance model for risk assessment of Microsoft cloud services, and regulator notification.
+- [Financial use cases](https://docs.microsoft.com/azure/industry/financial/): Case overviews, tutorials, and other resources to build Azure solutions for financial services.
 
 ## Frequently asked questions
 

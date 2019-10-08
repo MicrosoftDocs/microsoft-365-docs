@@ -37,13 +37,6 @@ To help government agencies in their compliance efforts, Microsoft:
 
 Learn about the benefits of IRS 1075 on the Microsoft Cloud: [Download the IRS 1075 backgrounder](https://aka.ms/irs1075-backgrounder)
 
-## Audits, reports, and certificates
-
-Compliance with the substantive requirements of IRS 1075 is covered under the FedRAMP audit every year.
-
-- [FedRAMP authorizations](https://marketplace.fedramp.gov/#/product/azure-government?sort=productName&productNameSearch=azure)
-- [Azure IRS 1075 safeguard security report](https://aka.ms/AzureIRS1075SafeguardSecurityReport)
-
 ## Microsoft in-scope cloud services
 
 FedRAMP authorizations are granted at three impact levels based on NIST guidelines—low, medium, and high. These rank the impact that the loss of confidentiality, integrity, or availability could have on an organization—low (limited effect), medium (serious adverse effect), and high (severe or catastrophic effect).
@@ -53,6 +46,13 @@ FedRAMP authorizations are granted at three impact levels based on NIST guidelin
 - [Office 365 and Office 365 U.S. Government](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 - Office 365 U.S. Government Defense
 - Power BI cloud service either as a standalone service or as included in an Office 365 branded plan or suite
+
+## Audits, reports, and certificates
+
+Compliance with the substantive requirements of IRS 1075 is covered under the FedRAMP audit every year.
+
+- [FedRAMP authorizations](https://marketplace.fedramp.gov/#/product/azure-government?sort=productName&productNameSearch=azure)
+- [Azure IRS 1075 safeguard security report](https://aka.ms/AzureIRS1075SafeguardSecurityReport)
 
 ## Frequently asked questions
 

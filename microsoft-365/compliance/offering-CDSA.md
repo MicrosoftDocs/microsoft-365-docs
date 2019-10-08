@@ -39,6 +39,10 @@ Learn how to accelerate your CDSA deployment with our Azure Security and Complia
 
 - [Download the Microsoft Azure — Implementing CDSA-Compliant Content Protection and Security guide](https://gallery.technet.microsoft.com/Azure-Implementing-CDSA-8087c7a2)
 
+## Microsoft in-scope cloud services
+
+- [Azure Media Services](https://aka.ms/AzureCompliance)
+
 ## Audits, reports, and certificates
 
 Microsoft has successfully completed the six-month renewal of the CDSA CPS certification, and Azure is now on an annual audit cycle.
@@ -46,10 +50,6 @@ Microsoft has successfully completed the six-month renewal of the CDSA CPS certi
 - [Azure Media Services Certificate of Compliance](http://aka.ms/cdsa-cert)
 - [Azure CDSA CPS Audit Report](https://aka.ms/AzureCDSACPSAuditReport)
 - [Azure CDSA implementation guide](https://aka.ms/AzureCDSAImplementationGuide)
-
-## Microsoft in-scope cloud services
-
-- [Azure Media Services](https://aka.ms/AzureCompliance)
 
 ## Frequently asked questions
 

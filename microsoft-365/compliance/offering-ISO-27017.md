@@ -37,8 +37,6 @@ Learn about the benefits of ISO/IEC 27017 on the Microsoft Cloud: [Download the 
 
 ## Microsoft in-scope cloud services
 
-Covered services include:
-
 - [Azure, Azure Government, and Azure Germany](https://aka.ms/AzureCompliance)
 - Cloud App Security
 - [Dynamics 365](https://aka.ms/d365-compliance-list)

@@ -38,16 +38,16 @@ Learn about the benefits of CSA STAR Self-Assessment on the Microsoft Cloud: [Do
 
 Learn how to accelerate your CSA STAR Self-Assessment deployment with our Azure Security and Compliance Blueprint: [Download Azure response to the CSA Consensus Assessments](https://gallery.technet.microsoft.com/Azure-Responses-to-CSA-46034a11)
 
+## Microsoft in-scope cloud services
+
+- [Azure and Azure Government](https://gallery.technet.microsoft.com/Overview-of-Azure-c1be3942)
+- [Dynamics 365 CSA STAR Self-Assessment](https://cloudsecurityalliance.org/star/registry/microsoft/)
+
 ## Audits, reports, and certificates
 
 - [Azure standard response for request for information](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=f7ca8423-1bc5-4be0-bff8-b6056f87c134&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ%20and%20White%20Papers)
 - [Azure Cloud Security Alliance CAIQ](https://servicetrust.microsoft.com/ViewPage/TrustDocumentsV3?command=Download&downloadType=Document&downloadId=a966a424-ecfd-4de2-9739-b08aee2d3ca0&tab=7f51cb60-3d6c-11e9-b2af-7bb9f5d2d913&docTab=7f51cb60-3d6c-11e9-b2af-7bb9f5d2d913_Compliance_Guides)
 - [Azure responses to the CSA CAIQ v3.0.1](https://gallery.technet.microsoft.com/Azure-Responses-to-CSA-46034a11)
-
-## Microsoft in-scope cloud services
-
-- [Azure and Azure Government](https://gallery.technet.microsoft.com/Overview-of-Azure-c1be3942)
-- [Dynamics 365 CSA STAR Self-Assessment](https://cloudsecurityalliance.org/star/registry/microsoft/)
 
 ## Frequently asked questions
 

@@ -36,20 +36,6 @@ The rigorous audit covered the measures Microsoft has taken to secure personal h
 - [ISO/IEC 27001:2013 Information Security Management](offering-iso-27001.md) certification of Microsoft cloud services, which are audited annually for compliance.
 - High level of privacy based on compliance with the GDPR and the [ISO/IEC 27018 Code of Practice for Protecting Personal Data in the Cloud](offering-iso-27018.md).
 
-## How to implement
-
-**Contractual terms**
-    - French Public Health code requires the execution of specific contractual terms between the health data hosting service or cloud service provider and its customers. Eligible customers must reach out to their Microsoft licensing point of contact to enter into these specific contractual terms before hosting health personal data on Microsoft online services.
-
-[Health and life sciences](https://docs.microsoft.com/azure/industry/health/)
-    - Case overviews, solution guides, tutorials, and other resources to help build Azure solutions. Learn more
-
-## Audits, reports, and certificates
-
-The HDS certification is valid for three years.
-
-- HDS:2018: [ASIP SANTÉ](https://esante.gouv.fr/) and [BSI Group](https://www.bsigroup.com/fr-FR/Nos-services/Certification/Recherche-dans-le-repertoire-des-certificats-et-des-clients/Resultats-de-la-recherche-dans-le-repertoire-des-certificats-et-des-clients/?searchkey=licence%3dHDS%2b701569%26company%3dMicrosoft%2bCorp&licencenumber=HDS%20701569)
-
 ## Microsoft in-scope cloud services
 
 - [Azure](https://aka.ms/AzureCompliance). The HDS certificate applies to Azure services listed as compliant with the ISO/IEC 27001 standard in Azure Compliance offerings and provisioned from the France Central, France South, Europe West, and Europe North Azure regions.
@@ -59,6 +45,20 @@ The HDS certification is valid for three years.
 - Power BI cloud service either as a standalone service or as included in an Office 365 branded plan or suite
 
 Note that The HDS certificate does not apply to Microsoft online services in preview or pre-release.
+
+## Audits, reports, and certificates
+
+The HDS certification is valid for three years.
+
+- HDS:2018: [ASIP SANTÉ](https://esante.gouv.fr/) and [BSI Group](https://www.bsigroup.com/fr-FR/Nos-services/Certification/Recherche-dans-le-repertoire-des-certificats-et-des-clients/Resultats-de-la-recherche-dans-le-repertoire-des-certificats-et-des-clients/?searchkey=licence%3dHDS%2b701569%26company%3dMicrosoft%2bCorp&licencenumber=HDS%20701569)
+
+## How to implement
+
+**Contractual terms**
+    - French Public Health code requires the execution of specific contractual terms between the health data hosting service or cloud service provider and its customers. Eligible customers must reach out to their Microsoft licensing point of contact to enter into these specific contractual terms before hosting health personal data on Microsoft online services.
+
+[Health and life sciences](https://docs.microsoft.com/azure/industry/health/)
+    - Case overviews, solution guides, tutorials, and other resources to help build Azure solutions.
 
 ## Resources
 

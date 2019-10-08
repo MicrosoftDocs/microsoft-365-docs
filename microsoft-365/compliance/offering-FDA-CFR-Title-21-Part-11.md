@@ -37,10 +37,6 @@ Customers can request access to the compliance reports, subject to nondisclosure
 
 Learn how to accelerate your FDA CFR Title 21 deployment: [Download the Azure FDA 21 qualification guide](https://go.microsoft.com/fwlink/p/?linkid=2086604)
 
-## Audits, reports, and certificates
-
-The audit reports for SOC 1 and SOC 2 Type 2, ISO/IEC 27001 and ISO/IEC 27018 standards attest to the effectiveness of the controls Microsoft has implemented and may help customers in their compliance with FDA CFR Title 21 Part 11.
-
 ## Microsoft in-scope cloud services
 
 Although there is no certification for complying with CFR Title 21 Part 11, the following Microsoft enterprise cloud services have undergone independent, third-party audits, which may help customers in their compliance efforts. These services include:
@@ -49,6 +45,10 @@ Although there is no certification for complying with CFR Title 21 Part 11, the 
 - Intune
 - [Dynamics 365 and Dynamics 365 U.S. Government](https://aka.ms/d365-compliance-list)
 - [Office 365 and Office 365 U.S. Government](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
+
+## Audits, reports, and certificates
+
+The audit reports for SOC 1 and SOC 2 Type 2, ISO/IEC 27001 and ISO/IEC 27018 standards attest to the effectiveness of the controls Microsoft has implemented and may help customers in their compliance with FDA CFR Title 21 Part 11.
 
 ## Frequently asked questions
 

@@ -27,18 +27,18 @@ Microsoft Government Cloud services help the United States defense industrial ba
   
 Learn how to accelerate your DFARS deployment with our Azure Security and Compliance Blueprint: [Download the Azure — Blueprint DFARS Customer Responsibilities Matrix](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=7ed1b47c-b180-4323-9aec-21712d54b167&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_DoD_Blueprint)
 
-## Audits, reports, and certificates
-
-- [Microsoft Cloud Services Authorizations](https://marketplace.fedramp.gov/index.html#/products?status=Compliant&sort=productName)
-- [Azure P-ATO Letter Signed March 3, 2017](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=94ff5b42-4077-4612-8cf7-3194ded323dc&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_GRC_Assessment_Reports)
-- [See additional audit reports](https://aka.ms/auditreports)
-
 ## Microsoft in-scope cloud services
 
 Covered services for DoD Impact Level 5
 
 - [Azure and Azure Government](https://aka.ms/AzureCompliance)
 - [Office 365 U.S. Government and Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
+
+## Audits, reports, and certificates
+
+- [Microsoft Cloud Services Authorizations](https://marketplace.fedramp.gov/index.html#/products?status=Compliant&sort=productName)
+- [Azure P-ATO Letter Signed March 3, 2017](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=94ff5b42-4077-4612-8cf7-3194ded323dc&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_GRC_Assessment_Reports)
+- [See additional audit reports](https://aka.ms/auditreports)
 
 ## Frequently asked questions
 

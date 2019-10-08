@@ -25,16 +25,16 @@ Microsoft has analyzed our current certifications and assurance statements and c
 
 Learn how to accelerate your NEN 7510 deployment with our Azure Security and Compliance Blueprints: [Download the Microsoft Cloud — Azure and Office 365 NEN7510-2011 Standard Coverage User Guide](https://aka.ms/Azure-NEN7510-2011)
 
-## Audits, reports, and certificates
-
-- [Azure and Office 365 NEN 7510:2011 Standard Coverage](https://protection.office.com/DownloadFile/ServiceAssurance/Document/compliance/Azure%20and%20Office%20365%20NEN7510-2011%20Standard%20Coverage/pdf)
-- [Azure and Office 365 NEN 7510:2011 Standard Coverage User Guide](https://protection.office.com/DownloadFile/ServiceAssurance/Document/compliance/Azure%20and%20Office%20365%20NEN7510-2011%20Standard%20Coverage%20User%20Guide/DOCX)
-
 ## Microsoft in-scope cloud services
 
 - [Azure and Azure Government](https://aka.ms/AzureCompliance)
 - Intune
 - [Office 365](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
+
+## Audits, reports, and certificates
+
+- [Azure and Office 365 NEN 7510:2011 Standard Coverage](https://protection.office.com/DownloadFile/ServiceAssurance/Document/compliance/Azure%20and%20Office%20365%20NEN7510-2011%20Standard%20Coverage/pdf)
+- [Azure and Office 365 NEN 7510:2011 Standard Coverage User Guide](https://protection.office.com/DownloadFile/ServiceAssurance/Document/compliance/Azure%20and%20Office%20365%20NEN7510-2011%20Standard%20Coverage%20User%20Guide/DOCX)
 
 ## Frequently asked questions
 

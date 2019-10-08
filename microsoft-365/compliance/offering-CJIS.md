@@ -37,8 +37,6 @@ Learn how to accelerate your CJIS Security policy with our Azure Security and Co
 
 ## Microsoft in-scope cloud services
 
-Services subject to CJIS Security Policy commitments include:
-
 - [Azure Government](https://aka.ms/AzureCompliance)
 - [Dynamics 365 U.S. Government](https://aka.ms/d365-compliance-list)
 - [Office 365 U.S. Government](https://go.microsoft.com/fwlink/p/?LinkID=2077751)

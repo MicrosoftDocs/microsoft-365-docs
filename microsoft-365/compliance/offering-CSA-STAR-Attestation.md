@@ -27,10 +27,6 @@ STAR Attestation involves a rigorous independent audit of a cloud provider’s s
   
 A SOC 2 Type 2 audit is based on American Institute of Certified Public Accountants (AICPA) Trust Services Principles and Criteria, including security, availability, confidentiality, and processing integrity, and the criteria in the CCM. STAR Attestation provides an auditor’s findings on the design suitability and operating effectiveness of SOC 2 controls in Microsoft cloud services. The objective is to meet both the AICPA criteria mentioned above and requirements set forth in the CCM.
 
-## Audits, reports, and certificates
-
-- [CSA STAR Attestation and Certification](https://cloudsecurityalliance.org/star/registry/microsoft/)
-
 ## Microsoft in-scope cloud services
 
 Microsoft Azure and Microsoft Intune have been awarded CSA STAR Attestation. STAR Attestation provides an auditor’s findings on the design suitability and operating effectiveness of SOC 2 controls in Microsoft cloud services.
@@ -43,6 +39,10 @@ Microsoft Azure and Microsoft Intune have been awarded CSA STAR Attestation. STA
 - Microsoft Flow cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
 - PowerApps cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite 
 - Power BI
+
+## Audits, reports, and certificates
+
+- [CSA STAR Attestation and Certification](https://cloudsecurityalliance.org/star/registry/microsoft/)
 
 ## Frequently asked questions
 

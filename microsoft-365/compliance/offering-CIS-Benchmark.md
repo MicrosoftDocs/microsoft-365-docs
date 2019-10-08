@@ -40,12 +40,13 @@ Like all CIS benchmarks, the Microsoft benchmarks were created using a consensus
   
 In addition to the benchmarks for Microsoft products and services, CIS has also published [CIS Hardened Images for use on Azure virtual machines](https://www.cisecurity.org/blog/cis-hardened-images-now-in-microsoft-azure-marketplace/) configured to meet CIS benchmarks. These include the CIS Hardened Image for Microsoft Windows Server 2016 certified to run on Azure. CIS states that, “All CIS hardened images that are available on the [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/apps?search=center%20for%20internet%20security) are certified to run on Azure. They have been pre-tested for readiness and compatibility with the Azure public cloud, the Microsoft Cloud Platform hosted by service providers through the Cloud OS Network, and on-premise private cloud Windows Server Hyper-V deployments managed by customers.”
 
-## How to implement
+## Microsoft in-scope cloud services
 
-- [CIS Benchmark for Azure](https://azure.microsoft.com/mediahandler/files/resourcefiles/cis-microsoft-azure-foundations-security-benchmark/CIS_Microsoft_Azure_Foundations_Benchmark_v1.0.0.pdf): Get prescriptive guidance for establishing a secure baseline configuration for Azure.  
-- [Office 365 security best practices](https://docs.microsoft.com/office365/securitycompliance/security-best-practices): Minimize the potential of a data breach or compromised account by following these best practices.
-- [Windows security baselines](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines): Follow these guidelines for effective use of security baselines in your organization.
-- [CIS Controls Cloud Companion Guide](https://www.cisecurity.org/white-papers/cis-controls-cloud-companion-guide/): Get guidance on applying security best practices in CIS Controls Version 7 to cloud environments.
+- [Azure and Azure Government](https://aka.ms/AzureCompliance)
+- [Office and Microsoft 365](https://aka.ms/o365-compliance-framework)
+- SQL Server
+- Windows 10
+- Windows Server 2016
 
 ## Audits, reports, and certificates
 
@@ -56,13 +57,12 @@ Get a [complete list of CIS benchmarks](https://www.cisecurity.org/cis-benchmark
 - [Windows 10 Benchmark](https://www.cisecurity.org/benchmark/microsoft_windows_desktop/)
 - [Windows Server 2016 Benchmark](https://www.cisecurity.org/benchmark/microsoft_windows_server/)
 
-## Microsoft in-scope cloud services
+## How to implement
 
-- [Azure and Azure Government](https://aka.ms/AzureCompliance)
-- [Office and Microsoft 365](https://aka.ms/o365-compliance-framework)
-- SQL Server
-- Windows 10
-- Windows Server 2016
+- [CIS Benchmark for Azure](https://azure.microsoft.com/mediahandler/files/resourcefiles/cis-microsoft-azure-foundations-security-benchmark/CIS_Microsoft_Azure_Foundations_Benchmark_v1.0.0.pdf): Get prescriptive guidance for establishing a secure baseline configuration for Azure.  
+- [Office 365 security best practices](https://docs.microsoft.com/office365/securitycompliance/security-best-practices): Minimize the potential of a data breach or compromised account by following these best practices.
+- [Windows security baselines](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines): Follow these guidelines for effective use of security baselines in your organization.
+- [CIS Controls Cloud Companion Guide](https://www.cisecurity.org/white-papers/cis-controls-cloud-companion-guide/): Get guidance on applying security best practices in CIS Controls Version 7 to cloud environments.
 
 ## Frequently asked questions
 

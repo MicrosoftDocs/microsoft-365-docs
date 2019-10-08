@@ -37,11 +37,10 @@ To evaluate Office 365 compliance with CFTC Rule 1.31(c-d), Microsoft engaged a 
 
 Archiving in Office 365 helps to preserve a wide range of data, including email, voicemail, shared documents, instant messages, and third-party data. In particular, archiving in Office 365 enables customers to set global or granular messaging retention policies to store data for a defined period and beyond in a non-rewriteable, non-erasable format.
 
-## How to implement
+## Microsoft in-scope cloud services
 
-- [Financial services regulation](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=5b483567-00b0-4d86-96ae-ee887dadb61c&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides): Compliance map of key US regulatory principles for cloud computing and Microsoft online services.
-- [Risk Assessment & Compliance Guide](https://aka.ms/RiskGovernanceGuide): Create a governance model for risk assessment of Microsoft cloud services, and regulator notification.
-- [Financial use cases](https://docs.microsoft.com/azure/industry/financial/): Use case overviews, tutorials, and other resources to build Azure solutions for financial services.
+- [Azure](https://aka.ms/AzureCompliance)
+- [Office 365](https://aka.ms/o365-compliance-framework)
 
 ## Audits, reports, and certificates
 
@@ -51,10 +50,11 @@ Archiving in Office 365 helps to preserve a wide range of data, including email,
 [Office 365 & CFTC Rule 1.31](https://www.microsoft.com/microsoft-365/blog/2015/11/10/office-365-exchange-online-archiving-now-meets-sec-rule-17a-4-requirements/)
     - Archiving in Office 365, data retention, and SEC Rule 17a-4 compliance
 
-## Microsoft in-scope cloud services
+## How to implement
 
-- [Azure](https://aka.ms/AzureCompliance)
-- [Office 365](https://aka.ms/o365-compliance-framework)
+- [Financial services regulation](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=5b483567-00b0-4d86-96ae-ee887dadb61c&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides): Compliance map of key US regulatory principles for cloud computing and Microsoft online services.
+- [Risk Assessment & Compliance Guide](https://aka.ms/RiskGovernanceGuide): Create a governance model for risk assessment of Microsoft cloud services, and regulator notification.
+- [Financial use cases](https://docs.microsoft.com/azure/industry/financial/): Use case overviews, tutorials, and other resources to build Azure solutions for financial services.
 
 ## Resources
 

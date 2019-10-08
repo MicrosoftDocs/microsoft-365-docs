@@ -34,16 +34,16 @@ To help financial institution clients meet their FFIEC compliance requirements w
 
 To further help you comply with FFIEC requirements, Microsoft cloud services provide [SOC attestation reports](offering-SOC.md) produced by an independent CPA firm. For example, the SOC 1 Type 2 attestation is based on the AICPA SSAE 18 standard (see AT-C Section 105) that replaced SAS 70, and is appropriate for reporting on certain controls for financial reporting. The SOC reports include the auditor’s opinion on the effectiveness of Microsoft controls in achieving the related control objectives during the specified monitoring period. Financial institutions can use this formal audit when pursuing FFIEC-specific compliance obligations for assets deployed on Azure, Power BI, and Office 365.
 
-## Audits, reports, and certificates
-
-Azure and Office 365 SOC attestation reports.
-
 ## Microsoft in-scope cloud services
 
 - [Azure](https://aka.ms/AzureCompliance)
 - Intune
 - [Office 365](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 - Power BI cloud service either as a standalone service or as included in an Office 365 branded plan or suite
+
+## Audits, reports, and certificates
+
+Azure and Office 365 SOC attestation reports.
 
 ## Frequently asked questions
 

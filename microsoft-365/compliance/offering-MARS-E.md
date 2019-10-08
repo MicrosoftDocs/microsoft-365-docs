@@ -29,14 +29,14 @@ Currently, there is no formal authorization and accreditation process for MARS-E
 
 Learn more about the benefits of MARS-E 2.0 Framework on the Microsoft Cloud: [Download the MARS-E backgrounder](https://aka.ms/mars-e-backgrounder)
 
-## Audits, reports, and certificates
-
-Microsoft business cloud services are monitored and assessed each year for the FedRAMP authorization process.
-
 ## Microsoft in-scope cloud services
 
 - [Azure and Azure Government](https://aka.ms/AzureCompliance)
 - Intune
+
+## Audits, reports, and certificates
+
+Microsoft business cloud services are monitored and assessed each year for the FedRAMP authorization process.
 
 ## Frequently asked questions
 

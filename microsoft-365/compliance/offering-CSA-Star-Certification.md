@@ -33,13 +33,7 @@ Learn about the benefits of CSA STAR Certification on the Microsoft Cloud: [Down
 
 Learn how to accelerate your CSA STAR Certification deployment with our Azure Security and Compliance Blueprints: [Download the Microsoft Azure Responses to CSA Consensus Assessments Initiative Questionnaire](https://gallery.technet.microsoft.com/Azure-Responses-to-CSA-46034a11)
 
-## Audits, reports, and certificates
-
-- [Azure, Cloud App Security, Flow, Genomics, Graph, Health Bot, Intune, OMS Service Map, PowerApps, Power BI, Stream — CSA STAR Certification](https://servicetrust.microsoft.com/Documents/ComplianceReports?command=Download&downloadType=Document&downloadId=6d07d7e3-da62-4153-a91c-14d259dac9f1&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports)
-
 ## Microsoft in-scope cloud services
-
-Covered services include
 
 - [Azure, Azure Government, and Azure Germany](https://aka.ms/AzureCompliance)
 - Cloud App Security
@@ -52,6 +46,10 @@ Covered services include
 - PowerApps cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
 - Power BI: The cloud service portion of Power BI offered as a standalone service or as included in an Office 365 branded plan or suite
 - Stream
+
+## Audits, reports, and certificates
+
+- [Azure, Cloud App Security, Flow, Genomics, Graph, Health Bot, Intune, OMS Service Map, PowerApps, Power BI, Stream — CSA STAR Certification](https://servicetrust.microsoft.com/Documents/ComplianceReports?command=Download&downloadType=Document&downloadId=6d07d7e3-da62-4153-a91c-14d259dac9f1&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports)
 
 ## Frequently asked questions
 

@@ -27,10 +27,9 @@ Microsoft Azure has been awarded the DPP Committed to Security Mark for Broadcas
   
 This means that broadcasters and other media customers using Azure can have confidence that its robust security and resilient service can help meet the unique demands of the broadcast industry, from program development to transmission.
 
-## How to implement
+## Microsoft in-scope cloud services
 
-- [Asset Management Hardening Guide](https://aka.ms/Azure-Asset-Mgmt): Best practices in Azure protect pre-release content from unauthorized disclosure, change, or deletion.
-- [Azure Media Services](https://docs.microsoft.com/azure/media-services/): Build solutions that achieve high-definition video encoding and broadcast-quality video streaming.
+- [Azure](https://aka.ms/AzureCompliance)
 
 ## Audits, reports, and certificates
 
@@ -39,9 +38,10 @@ The Azure Broadcast mark is valid for one year and renewed annually.
 - [Azure NABA DPP Broadcaster Security Requirements Checklist](https://aka.ms/Azure-CTS-Broadcast-Checklist)
 - [DPP Committed to Security Companies Awarded the Marks](https://aka.ms/Azure-Asset-Mgmt)
 
-## Microsoft in-scope cloud services
+## How to implement
 
-- [Azure](https://aka.ms/AzureCompliance)
+- [Asset Management Hardening Guide](https://aka.ms/Azure-Asset-Mgmt): Best practices in Azure protect pre-release content from unauthorized disclosure, change, or deletion.
+- [Azure Media Services](https://docs.microsoft.com/azure/media-services/): Build solutions that achieve high-definition video encoding and broadcast-quality video streaming.
 
 ## Resources
 

@@ -40,17 +40,17 @@ The Microsoft checklist helps Danish financial firms conducting due-diligence as
 - An overview of the regulatory landscape for context.
 - A checklist that sets forth the issues to be addressed and maps Microsoft Azure, Microsoft Dynamics 365, and Microsoft 365 services against those regulatory obligations. The checklist can be used as a tool to measure compliance against a regulatory framework and provide an internal structure for documenting compliance, and help customers conduct their own risk assessments of Microsoft business cloud services.
 
-## How to implement
-
-- [Compliance checklist: Denmark](https://www.retsinformation.dk/Forms/R0710.aspx): Financial firms can get help in conducting risk assessments of Microsoft business cloud services.
-- [Risk Assessment & Compliance Guide](https://docs.microsoft.com/azure/industry/financial/): Create a governance model for risk assessment of Microsoft cloud services, and regulator notification.
-- [Financial use cases](https://www.finanstilsynet.dk/~/media/Lovgivning/Oversat-lovgivning/Executive-orders/1304_251110-pdf.pdf): Use case overviews, tutorials, and other resources to build Azure solutions for financial services.
-
 ## Microsoft in-scope cloud services
 
 - [Azure](https://gallery.technet.microsoft.com/Overview-of-Azure-c1be3942)
 - [Dynamics 365](http://download.microsoft.com/download/E/1/9/E1977163-7A86-4812-AC18-C03ADC958AAF/Microsoft_Dynamics_365_Cloud_Service_Compliance_Datasheet.pdf)
 - [Microsoft 365](https://aka.ms/RiskGovernanceGuide)
+
+## How to implement
+
+- [Compliance checklist: Denmark](https://www.retsinformation.dk/Forms/R0710.aspx): Financial firms can get help in conducting risk assessments of Microsoft business cloud services.
+- [Risk Assessment & Compliance Guide](https://docs.microsoft.com/azure/industry/financial/): Create a governance model for risk assessment of Microsoft cloud services, and regulator notification.
+- [Financial use cases](https://www.finanstilsynet.dk/~/media/Lovgivning/Oversat-lovgivning/Executive-orders/1304_251110-pdf.pdf): Use case overviews, tutorials, and other resources to build Azure solutions for financial services.
 
 ## Frequently asked questions
 

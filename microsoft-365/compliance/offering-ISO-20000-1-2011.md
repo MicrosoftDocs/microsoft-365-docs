@@ -27,14 +27,6 @@ Obtaining the ISO 20000-1:2011 certification is a logical step for Microsoft Azu
   
 An independent third-party auditing firm performed a rigorous examination of Microsoft Azure and several Microsoft online services for adherence to the requirements established in the ISO 20000-1:2011 standard. The available ISO 20000-1 certificate demonstrates that Azure and covered Microsoft online services have implemented the right IT service management procedures to deliver efficient and reliable IT services that are subject to regular monitoring, review, and improvement.
 
-## Audits, reports, and certificates
-
-2017 ISO 20000-1 documentation for Azure, Intune, Power BI, Cloud App Security, Microsoft PowerApps, Microsoft Flow, Microsoft Graph, Microsoft Genomics and Microsoft Datacenters
-
-- [Assessment Report](https://go.microsoft.com/fwlink/p/?linkid=2077810)
-- [Certificate](https://go.microsoft.com/fwlink/p/?linkid=2077815)
-- [Statement of applicability](https://aka.ms/AzureISO20000StatementofApplicability)
-
 ## Microsoft in-scope cloud services
 
 - [Azure and Azure Government](https://aka.ms/AzureCompliance)
@@ -46,6 +38,14 @@ An independent third-party auditing firm performed a rigorous examination of Mic
 - Microsoft Genomics
 - Office 365 Operated by 21Vianet
 - Power BI
+
+## Audits, reports, and certificates
+
+2017 ISO 20000-1 documentation for Azure, Intune, Power BI, Cloud App Security, Microsoft PowerApps, Microsoft Flow, Microsoft Graph, Microsoft Genomics and Microsoft Datacenters
+
+- [Assessment Report](https://go.microsoft.com/fwlink/p/?linkid=2077810)
+- [Certificate](https://go.microsoft.com/fwlink/p/?linkid=2077815)
+- [Statement of applicability](https://aka.ms/AzureISO20000StatementofApplicability)
 
 ## Frequently asked questions
 

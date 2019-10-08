@@ -15,6 +15,22 @@ hideEdit: true
 
 # Compliance offering: US Export Administration Regulations (EAR)
 
+## About the EAR
+
+The US Department of Commerce enforces the Export Administration Regulations (EAR) through the [Bureau of Industry and Security (BIS)](https://www.bis.doc.gov/). The EAR broadly governs and imposes controls on the export and re-export of most commercial goods, software, and technology, including “dual-use” items that can be used both for commercial and military purposes and certain defense items.
+
+BIS guidance holds that, when data or software is uploaded to the cloud or transferred between user nodes, the customer, not the cloud provider, is the “exporter” who has the responsibility to ensure that transfers of, storage of, and access to that data or software complies with the EAR.
+
+[According to the BIS](https://www.bis.doc.gov/index.php/documents/regulation-docs/412-part-734-scope-of-the-export-administration-regulations/file), *export* refers to the transfer of protected technology or technical data to a foreign destination or its release to a foreign person in the United States (also referred to as a *deemed export*). The EAR broadly governs:
+
+- Exports from the United States.
+- Re-exports or retransfers of US-origin items and certain foreign-origin items with more than a *de minimis* portion of US-origin content.
+- Transfers or disclosures to persons from other countries.
+
+Items subject to the EAR can be found on the Commerce Control List (CCL) where each item is assigned a unique [Export Control Classification Number (ECCN)](https://www.bis.doc.gov/index.php/licensing/commerce-control-list-classification/export-control-classification-number-eccn). Items not listed on the CCL are designated as EAR99 and most EAR99 commercial products will not require a license to be exported. However, depending on the destination, end user, or end use of the item, even an EAR99 item may require a BIS export license.
+
+The [final rule](https://www.federalregister.gov/documents/2016/06/03/2016-12734/revisions-to-definitions-in-the-export-administration-regulations), published in June 2016, clarified that EAR licensing requirements also would not apply to the transmission and storage of unclassified technical data and software if they were encrypted end-to-end using FIPS 140-2 validated cryptographic modules and were not intentionally stored in a military-embargoed country or in the Russian Federation.
+
 ## Microsoft and the EAR
 
 Microsoft technologies, products, and services are subject to the US Export Administration Regulations (EAR). While there is no compliance certification for the EAR, Microsoft Azure, Microsoft Azure Government, and Microsoft Office 365 Government (GCCHigh and DoD environments) offer important features and tools to help eligible customers subject to the EAR manage export control risks and meet their compliance requirements.
@@ -37,22 +53,6 @@ Overview of US export controls and guidance for customers assessing their obliga
 
 - [Azure](https://aka.ms/Azure-Export-Controls)
 - [Office 365](https://aka.ms/Office-365-Export-Controls)
-
-## About the EAR
-
-The US Department of Commerce enforces the Export Administration Regulations (EAR) through the [Bureau of Industry and Security (BIS)](https://www.bis.doc.gov/). The EAR broadly governs and imposes controls on the export and re-export of most commercial goods, software, and technology, including “dual-use” items that can be used both for commercial and military purposes and certain defense items.
-
-BIS guidance holds that, when data or software is uploaded to the cloud or transferred between user nodes, the customer, not the cloud provider, is the “exporter” who has the responsibility to ensure that transfers of, storage of, and access to that data or software complies with the EAR.
-
-[According to the BIS](https://www.bis.doc.gov/index.php/documents/regulation-docs/412-part-734-scope-of-the-export-administration-regulations/file), *export* refers to the transfer of protected technology or technical data to a foreign destination or its release to a foreign person in the United States (also referred to as a *deemed export*). The EAR broadly governs:
-
-- Exports from the United States.
-- Re-exports or retransfers of US-origin items and certain foreign-origin items with more than a *de minimis* portion of US-origin content.
-- Transfers or disclosures to persons from other countries.
-
-Items subject to the EAR can be found on the Commerce Control List (CCL) where each item is assigned a unique [Export Control Classification Number (ECCN)](https://www.bis.doc.gov/index.php/licensing/commerce-control-list-classification/export-control-classification-number-eccn). Items not listed on the CCL are designated as EAR99 and most EAR99 commercial products will not require a license to be exported. However, depending on the destination, end user, or end use of the item, even an EAR99 item may require a BIS export license.
-
-The [final rule](https://www.federalregister.gov/documents/2016/06/03/2016-12734/revisions-to-definitions-in-the-export-administration-regulations), published in June 2016, clarified that EAR licensing requirements also would not apply to the transmission and storage of unclassified technical data and software if they were encrypted end-to-end using FIPS 140-2 validated cryptographic modules and were not intentionally stored in a military-embargoed country or in the Russian Federation.
 
 ## Frequently asked questions
 

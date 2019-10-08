@@ -45,12 +45,12 @@ Azure maintains a P-ATO at the Moderate Impact Level. (Azure was the first publi
 
 Once a P-ATO is granted, a CSP still requires an authorization—an ATO—from any government agency it works with. In the case of Azure, a government agency can leverage the Azure P-ATO in its own security authorization process and rely on it as the basis for issuing an agency ATO that also meets FedRAMP requirements.
 
-## [Dynamics 365 U.S. Government ATO
+## Dynamics 365 U.S. Government ATO
 
 - Dynamics 365 U.S. Government has received an ATO from HUD
 - Dynamics 365 U.S. Government was granted a FedRAMP Agency ATO at the High Impact Level by the Department of Housing and Urban Development (HUD). (Note that although the scope of the certification is limited to the Government Community Cloud, Dynamics 365 U.S. Government business and enterprise plans operate following the same set of stringent FedRAMP controls.)
 
-## [Office 365 ATOs
+## Office 365 ATOs
 
 - Office 365, Office 365 U.S. Government have an ATO from DHHS.
 - Office 365 U.S. Government Defense has a P-ATO from Defense Information Systems Agency (DISA).
@@ -59,7 +59,7 @@ Once a P-ATO is granted, a CSP still requires an authorization—an ATO—from a
 
 ## Microsoft in-scope cloud services
 
-- [Azure and Azure Government](https://go.microsoft.com/fwlink/p/?linkid=2095323)\*
+- [Azure and Azure Government](https://go.microsoft.com/fwlink/p/?linkid=2095323)
 - [Dynamics 365 U.S. Government](https://aka.ms/d365-compliance-list)
 - Intune
 - [Office 365 and Office 365 U.S. Government](https://aka.ms/o365-compliance-framework)

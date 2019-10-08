@@ -35,10 +35,6 @@ As a result of these contractual commitments, customers that are subject to FERP
 
 Learn about the benefits of FERPA on the Microsoft Cloud: [Download the FERPA backgrounder](https://aka.ms/ferpa-compliance)
 
-## Audits, reports, and certificates
-
-FERPA does not require or recognize audits or certifications.
-
 ## Microsoft in-scope cloud services
 
 Services for which Microsoft agrees to be designated as a “school official” with “legitimate educational interests” in customer data include:
@@ -50,6 +46,10 @@ Services for which Microsoft agrees to be designated as a “school official” 
 - Power BI, PowerApps, and Microsoft Flow either as a standalone service or as included in an Office 365 branded plan or suite
 - Azure DevOps Services
 - Windows Defender ATP
+
+## Audits, reports, and certificates
+
+FERPA does not require or recognize audits or certifications.
 
 ## Frequently asked questions
 

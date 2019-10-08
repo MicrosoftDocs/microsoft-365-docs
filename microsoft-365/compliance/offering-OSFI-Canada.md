@@ -34,18 +34,18 @@ The Microsoft checklist helps Canadian financial firms conducting due-diligence 
 - An overview of the regulatory landscape for context.
 - A checklist that sets forth the issues to be addressed and maps Microsoft Azure, Microsoft Dynamics 365, and Microsoft 365 services against those regulatory obligations. The checklist can be used as a tool to measure compliance against a regulatory framework and provide an internal structure for documenting compliance, and help customers conduct their own risk assessments of Microsoft business cloud services.
 
+## Microsoft in-scope cloud services
+
+- [Azure](https://aka.ms/AzureCompliance)
+- [Dynamics 365](https://aka.ms/d365-compliance-list)
+- [Microsoft 365](https://aka.ms/o365-compliance-framework)
+
 ## How to implement
 
 - [Compliance checklist: Canada](https://aka.ms/Azure-Canada-Compliance): Financial firms can get help in conducting risk assessments of Microsoft business cloud services.
 - [Privacy in Microsoft Cloud](https://aka.ms/MCSPrivacy): Get details on Microsoft privacy principles and standards and on privacy laws specific to Canada.
 - [Risk Assessment & Compliance Guide](https://aka.ms/RiskGovernanceGuide): Create a governance model for risk assessment of Microsoft cloud services, and regulator notification.
 - [Industry use cases for Azure](https://docs.microsoft.com/azure/industry/financial/): Use case overviews, tutorials, and other resources to build Azure solutions for financial services.
-
-## Microsoft in-scope cloud services
-
-- [Azure](https://aka.ms/AzureCompliance)
-- [Dynamics 365](https://aka.ms/d365-compliance-list)
-- [Microsoft 365](https://aka.ms/o365-compliance-framework)
 
 ## Frequently asked questions
 

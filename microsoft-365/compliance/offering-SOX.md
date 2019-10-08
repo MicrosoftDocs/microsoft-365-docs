@@ -35,14 +35,6 @@ At Microsoft we share the responsibility of compliance with our customers. We su
 
 Learn more about how to use Microsoft Azure compliance reports when addressing your SOX compliance obligations: [Download the Azure Guidance for Sarbanes-Oxley](https://aka.ms/Azure-SOX-Guide)
 
-## Audits, reports, and certificates
-
-[SOC 1 Type 2](offering-SOC.md) reports for:
-
-- Azure and Power BI
-- Dynamics 365
-- Office 365
-
 ## Microsoft in-scope cloud services
 
 - [Azure](https://aka.ms/AzureCompliance)
@@ -50,6 +42,14 @@ Learn more about how to use Microsoft Azure compliance reports when addressing y
 - Intune
 - [Office 365](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 - Power BI cloud service either as a standalone service or as included in an Office 365 branded plan or suite
+
+## Audits, reports, and certificates
+
+[SOC 1 Type 2](offering-SOC.md) reports for:
+
+- Azure and Power BI
+- Dynamics 365
+- Office 365
 
 ## Frequently asked questions
 

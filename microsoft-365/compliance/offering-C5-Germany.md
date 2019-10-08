@@ -29,14 +29,14 @@ The BSI also puts emphasis on transparency. As part of an audit, the cloud provi
 
 Microsoft cloud services are audited at least annually against SOC 2 (AT Section 101) standards. According to BSI, a C5 audit can be combined with a SOC 2 audit to reuse parts of the system description and audit results for overlapping controls. Microsoft Azure, Azure Government, and Azure Germany maintain a combined report (C5, SOC 2 Type 2, CSA STAR Attestation) based on the audit assessment performed by an independent auditor, which demonstrates proof of compliance with C5.
 
-## Audits, reports, and certificates
-
-- [Azure, Azure Government, and Azure Germany SOC 2 Type II Report.pdf](https://go.microsoft.com/fwlink/p/?linkid=2093520)
-
 ## Microsoft in-scope cloud services
 
 - [Azure, Azure Government, and Azure Germany](https://go.microsoft.com/fwlink/p/?linkid=2051569)
 - Office 365 Germany
+
+## Audits, reports, and certificates
+
+- [Azure, Azure Government, and Azure Germany SOC 2 Type II Report.pdf](https://go.microsoft.com/fwlink/p/?linkid=2093520)
 
 ## Frequently asked questions
 

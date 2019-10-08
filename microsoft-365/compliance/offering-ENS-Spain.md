@@ -33,6 +33,11 @@ Microsoft Azure and Microsoft Office 365 have gone through a rigorous assessment
 
 Learn about the benefits of Spain ENS High-Level Security Measures on the Microsoft Cloud: [Download the Spain ENS backgrounder](https://aka.ms/spainens-backgrounder)
 
+## Microsoft in-scope cloud services
+
+- [Azure and Azure Government](https://aka.ms/AzureCompliance)
+- [Office 365](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
+
 ## Audits, reports, and certificates
 
 The certification is valid for two years, with an annual surveillance audit.
@@ -50,11 +55,6 @@ The certification is valid for two years, with an annual surveillance audit.
 - [Office 365 Spanish National Security Framework (ENS) Audit Report](https://aka.ms/Office365NationalSecurityFrameworkAuditReport)
 - [Office 365 Informe Auditoria ENS (Spanish)](https://aka.ms/Office365InformeAuditoriaENS)
 - [Office 365 National Security Framework Certificado ENS (Spanish)](https://aka.ms/Office365NationalSecurityFrameworkCertificadoENS)
-
-## Microsoft in-scope cloud services
-
-- [Azure and Azure Government](https://aka.ms/AzureCompliance)
-- [Office 365](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 
 ## Frequently asked questions
 
