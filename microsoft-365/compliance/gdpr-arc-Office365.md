@@ -9,6 +9,7 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 ms.collection: GDPR
+hideEdit: true
 ---
 
 # Accountability Readiness Checklist for Microsoft Office 365
