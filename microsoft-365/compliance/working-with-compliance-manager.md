@@ -35,9 +35,11 @@ To get you started, an ISO/IEC 27001:2103 Assessment for Office 365 appears by d
 
 ## Administration
 
-There are specific administrative functions that are only available to the global administrator and only visible when logged in with a global administrator account. Once the administrator assigns Compliance Manager roles to other users, those users can view data in Compliance Manager and perform actions determined by their role. The administrator can also give read-only access to Compliance Manager by assigning the user the [Global Reader role in Azure Active Directory (Azure AD)](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader).
+There are specific administrative functions that are only available to the global administrator and only visible when logged in with a global administrator account. The global administrator can assign user permissions and control the settings for automatic Secure Score updates.
   
 ### Assigning Compliance Manager roles to users
+
+Once the administrator assigns Compliance Manager roles to other users, those users can view data in Compliance Manager and perform actions determined by their role. The administrator can also give read-only access to Compliance Manager by assigning the user the [Global Reader role in Azure Active Directory (Azure AD)](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader).
 
 Each Compliance Manager role has slightly different permissions. You can view the permissions assigned to each role, see which users are in which roles, and add or remove users from that role through the Service Trust Portal. Select the **Admin** menu item, and choose **Settings** to view.
   
@@ -62,6 +64,16 @@ To add or remove users from Compliance Manager roles.
 7. To remove users from this role, select the users and select **Delete**.
 
     ![Compliance Manager — delete users](media/compliance-manager-delete-users.png)
+
+### Controlling automatic updates from Secure Score
+
+The global administrator can control how or whether to turn on automatic updates from Secure Score. Secure Score updates can be turned on automatically for all actions, can be turned off for all actions, or can be set by individual action.
+
+1. Sign in to the [Service Trust Portal](https://servicetrust.microsoft.com) with your global administrator account.
+
+2. On the Service Trust Portal top menu bar, select **Admin** and then choose **Settings**.
+
+4. In the **Secure Score** tab, select the appropriate button for you chosen setting.
 
 ## Groups
 
@@ -186,6 +198,7 @@ Action Type dimension key.
 - The date it was created and date when it was last modified.
 - The Assessment Score shown as a percentage.
 - Progress indicators that show the number of assessed Microsoft-managed and customer-manged controls.
+- Secure Score integration - after creating a new assessment,the assessment score reflected will automatically include your scores from Microsoft-managed controls as well as from Secure Score.
 
 ### Copying information from existing Assessments
 
