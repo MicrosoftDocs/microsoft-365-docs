@@ -25,7 +25,7 @@ The solution catalog is organized into sections that contain information cards f
 
 SCREENSHOT OF SOLUTIONS CATALOG MAIN PAGE
 
-When you select **View** for a solution card, you'll see detailed information about the compliance solution. This information includes an overview, requirements, additional learning resources, and controls that allow you to pin and share the solution card.
+When you select **View** for a solution card, you'll see detailed information about the compliance solution and how to get started. This information includes an overview, requirements, additional learning resources, and controls that allow you to pin and share the solution card.
 
 SCREENSHOT OF EXAMPLE SOLUTION (COMMUNICATION SUPERVISION)
 
@@ -37,7 +37,7 @@ SCREENSHOT OF INFORMATION PROTECTION & GOVERNANCE SECTION CARDS
 
 From here, you can go to a card for the following solutions:
 
-- Data governance
+- Information governance
 - [Data loss prevention](data-loss-prevention-policies.md)
 - [Information protection](protect-information.md)
 - [Records management](records-management.md)
@@ -93,7 +93,7 @@ We are still adding functionality to the Microsoft 365 compliance center and the
 
 - **Get acquainted with and set up Microsoft Cloud App Security**. See [Quickstart: Get started with Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security).
 
-- **Learn about and create Communication Supervision policies**. See [Communication Supervision in Microsoft 365](supervision-policies.md).
+- **Learn about and create Communication supervision policies**. See [Communication supervision in Microsoft 365](supervision-policies.md).
 
 - **Use Insider risk management to identify, triage, and remediate risks in your organization**. See [Insider risk management in Microsoft 365](insider-risk-overview.md)
 
