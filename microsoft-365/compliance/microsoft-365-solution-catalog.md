@@ -11,7 +11,7 @@ description: Learn about the Microsoft 365 solution catalog, including what it c
 ms.collection: M365-security-compliance
 ---
 
-# Overview of the Microsoft 365 solution catalog (Preview)
+# Overview of the Microsoft 365 solution catalog (preview)
 
 ## Overview
 
@@ -25,7 +25,7 @@ The solution catalog is organized into sections that contain information cards f
 
 SCREENSHOT OF SOLUTIONS CATALOG MAIN PAGE
 
-When you select **View** for a solution card, you'll see detailed information about the compliance solution and how to get started. This information includes an overview, requirements, additional learning resources, and controls that allow you to pin and share the solution card.
+When you select **View** for a solution card, you'll see detailed information about the compliance solution and how to get started. This information includes an overview, pre-configuration requirements, additional learning resources, and controls that allow you to pin and share the solution card.
 
 SCREENSHOT OF EXAMPLE SOLUTION (COMMUNICATION SUPERVISION)
 
