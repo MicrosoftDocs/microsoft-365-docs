@@ -248,6 +248,8 @@ We're still working on retention in Teams, and additional features are coming. I
     
 - **Teams may take up to 30 days to clean up retained content**. A retention policy applied to Teams will delete the content from all relevant storage locations. However, immediately after launch, it may take up to 30 days for Teams clients to clean up content based on the retention policy. But even though content still appears in the Teams clients, that content will not appear in content search or eDiscovery after the end of the retention period.
 
+- **Teams content in private channels not supported**. At this time, retention policies created for Teams don't apply to private channel messages. Only content in standards channels is subject to a retention policy created for Teams. Support for retention policies for private channels is coming soon.  
+
 > [!NOTE]
 > The retention period for Teams content can be any number of days you choose. It used to be true that a retention policy couldn't delete Teams content that's less than 30 days old, but we've removed this limitation.
     
