@@ -1,7 +1,7 @@
 ---
 title: "Overview of retention labels"
-ms.author: stephow
-author: stephow-MSFT
+ms.author: laurawi
+author: laurawi
 manager: laurawi
 ms.date: 
 audience: Admin
@@ -108,7 +108,7 @@ If you publish retention labels to SharePoint or OneDrive, it can take one day f
   
 ### Auto-apply retention labels
 
-If you auto-apply retention labels to content matching specific conditions, it can take seven days for the retention labels to be applied to all existing content that matches the conditions. But note that after your retention labels are deployed, they are applied to new content quickly, typically in 15 minutes or less.
+If you auto-apply retention labels to content matching specific conditions, it can take seven days for the retention labels to be applied to all existing content that matches the conditions.
   
 ![Diagram of when auto-apply labels take effect](media/b8c00657-477a-4ade-b914-e643ef97a10d.png)
   

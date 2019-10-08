@@ -20,7 +20,7 @@ description: Understand and configure privileged access management for Office 36
 
 *This step is optional and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
 
-![](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
+![Phase 6: Information Protection](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
 There are three types of email encryption in Microsoft 365.
 
@@ -74,4 +74,4 @@ As an interim checkpoint, see the [exit criteria](infoprotect-exit-criteria.md#c
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step7.png)|[Configure privileged access management for Office 365](infoprotect-configure-privileged-access-management.md)|
+|![Step 7](./media/stepnumbers/Step7.png)|[Configure privileged access management for Office 365](infoprotect-configure-privileged-access-management.md)|

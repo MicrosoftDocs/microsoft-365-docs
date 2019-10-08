@@ -3,7 +3,7 @@ title: "Office 365 ProPlus deployment for Contoso"
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 09/13/2018
+ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -29,7 +29,7 @@ Contoso upgraded their PCs to Windows 10 Enterprise and Office 365 ProPlus to en
 
 ## Deployment tools
 
-Based on their requirements, Contoso chose to deploy Windows and Office with System Center Configuration Manager (Current Branch). Configuration Manager scales for large environments and provides extensive control over installation, updates, and settings. It also has built-in features to make it easier and more efficient to deploy and manage Office, including:
+Based on their requirements, Contoso chose to deploy Windows 10 Enterprise and Office 365 ProPlus with System Center Configuration Manager (Current Branch). Configuration Manager scales for large environments and provides extensive control over installation, updates, and settings. It also has built-in features to make it easier and more efficient to deploy and manage Office, including:
 
 - Peer cache, which can help with limited network capacity when deploying to devices in remote locations
 - The Office Client Management dashboard, which makes it easy to deploy Office and monitor updates and gives administrators access to the latest deployment and management features
@@ -47,7 +47,7 @@ Office 365 ProPlus has a new release model: Office as a service. The service mod
 
 Instead of managing updates to Office with Configuration Manager, Contoso enabled automatic updates from the cloud. Cloud-based updates reduced their administrative overhead while ensuring the devices stayed up to date. 
 
-Contoso followed the same two-stage approach for feature updates+ that they used for deploying Office: devices in the pilot group received feature updates four months earlier than devices in the rest of the organization (the broad group). To enable this for Office, Contoso used two recommended [update channels](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus): 
+Contoso followed the same two-stage approach for feature updates that they used for deploying Office: devices in the pilot group received feature updates four months earlier than devices in the rest of the organization (the broad group). To enable this for Office, Contoso used two recommended [update channels](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus): 
 
 - Semi-Annual Channel (Targeted) for updates to the pilot group 
 - Semi-Annual Channel for updates to the broad group. 
@@ -69,9 +69,13 @@ To complete the deployment of Office, Contoso implemented the following process,
 
 Because Contoso chose to automatically update devices from the cloud, there was no need to manage the process in Configuration Manager. Their devices are automatically updated directly from the cloud based on the update channel that was defined as part of the initial deployment. 
 
+Here is Contoso’s Office 365 ProPlus installation and ongoing updates deployment architecture.
+
+![Contoso’s Office 365 ProPlus deployment infrastructure](./media/contoso-o365pp/contoso-o365pp-fig1.png)
+ 
 ## Next step
 
-[Learn](contoso-mdm.md) how Contoso is using Intune in Microsoft 365 Enterprise to manage its devices and the apps that run on them across its organization.
+[Learn](contoso-mdm.md) how Contoso is using Microsoft Intune in Microsoft 365 Enterprise to manage its devices and the apps that run on them across its organization.
 
 ## See also
 

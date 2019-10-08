@@ -37,9 +37,9 @@ The following video details the steps for how to set this up for the most common
 
 Before you synchronize your users and computers from the local Active Directory Domain, review [Prepare for directory synchronization to Office 365](https://docs.microsoft.com/office365/enterprise/prepare-for-directory-synchronization). In particular:
 
-   - Ensure that no duplicates exist in your directory for the following attributes: **mail**, **proxyAddresses**, and **userPrincipalName**. These values should be unique and any duplicates should be removed..
+   - Ensure that no duplicates exist in your directory for the following attributes: **mail**, **proxyAddresses**, and **userPrincipalName**. These values should be unique and any duplicates should be removed.
    
-   - We recommended that the **userPrincipalName** (UPN) attribute for each local user account is configured to match the primary email address that corresponds to the licensed Microsoft 365 user. For example *mary.shelley@<span>contoso.<span>com* rather than *mary@contoso.local*
+   - We recommend that the **userPrincipalName** (UPN) attribute for each local user account is configured to match the primary email address that corresponds to the licensed Microsoft 365 user. For example *mary.shelley@contoso.com* rather than *mary@contoso.local*
    
    - If the Active Directory domain ends in a non-routable suffix like *.local* or *.lan*, instead of an internet routable suffix such as *.com* or *.org*, you will need to adjust the UPN suffix of the local user accounts first as described in [Prepare a non-routable domain for directory synchronization](https://docs.microsoft.com/office365/enterprise/prepare-a-non-routable-domain-for-directory-synchronization). 
 
@@ -75,6 +75,6 @@ To register existing domain-joined Windows 10 devices as Hybrid Azure AD joined,
 
 ## 6. Set up Windows Hello for Business
 
- Windows Hello for Business replaces passwords with strong two-factor authentication (2FA) for signing into a local computer. One factor is an asymmetric key pair, and the other is a PIN or other local gesture such as fingerprint or facial recognition if your device supports it. We recommended that you replace passwords with 2FA and Windows Hello for Business where possible.
+ Windows Hello for Business replaces passwords with strong two-factor authentication (2FA) for signing into a local computer. One factor is an asymmetric key pair, and the other is a PIN or other local gesture such as fingerprint or facial recognition if your device supports it. We recommend that you replace passwords with 2FA and Windows Hello for Business where possible.
 
 To configure Hybrid Windows Hello for Business, review the [Hybrid Key trust Windows Hello for Business Prerequisites](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-hybrid-key-trust-prereqs). Then follow the instructions in [Configure Hybrid Windows Hello for Business key trust settings](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-hybrid-key-whfb-settings). 

@@ -11,6 +11,7 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
+hideEdit: true
 ---
 
 # Data Protection Impact Assessments: Guidance for Data Controllers Using Microsoft Professional Services
