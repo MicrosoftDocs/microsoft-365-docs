@@ -19,7 +19,7 @@ Are you looking for a way to quickly get started with compliance solutions in Mi
 
 Read this article to get acquainted with the Microsoft 365 solution catalog, [how to get it](#how-do-i-get-this), [frequently asked questions](#frequently-asked-questions), and your [next steps](#next-steps).
 
-## Organization
+## Catalog organization
 
 The solution catalog is organized into sections that contain information cards for each compliance solution available in your Microsoft 365 subscription. Each section contains cards for solutions grouped by compliance area. More details about these sections is provided later in this article.
 
@@ -29,7 +29,7 @@ When you select **View** for a solution card, you'll see detailed information ab
 
 SCREENSHOT OF EXAMPLE SOLUTION (COMMUNICATION SUPERVISION)
 
-## The Information protection & governance section
+## Information protection & governance section
 
 The **Information protection & governance** section shows you at a glance how you can use Microsoft 365 compliance solutions to protect and govern data in your organization.
 
@@ -37,12 +37,12 @@ SCREENSHOT OF INFORMATION PROTECTION & GOVERNANCE SECTION CARDS
 
 From here, you can go to a card for the following solutions:
 
-- Information governance
-- [Data loss prevention](data-loss-prevention-policies.md)
-- [Information protection](protect-information.md)
-- [Records management](records-management.md)
+- **Information governance**: Identifies sensitive content throughout your organization, including cloud and endpoint locations, and helps prevent accidental sharing.
+- [Data loss prevention](data-loss-prevention-policies.md): Identifies sensitive content throughout your organization, including cloud and endpoint locations, and helps prevent accidental sharing.
+- [Information protection](protect-information.md): Manages your content life-cycle by importing and archiving data and applying policies to keep what you need and get rid of what you don't.
+- [Records management](records-management.md): Uses intelligent classification to automate and simplify the retention schedule for regulatory, legal and business-critical records in your organization.
 
-## The Internal risk management section
+## Internal risk management section
 
 The **Internal risk management** section on the home page shows you at a glance how your organization is doing with respect to [data protection and compliance](protect-access-to-data-and-services.md).
 
@@ -53,7 +53,7 @@ From here, you can go to a card for the following solutions:
 - [Insider risk management](insider-risk-overview.md)
 - [Communication supervision](supervision-policies.md)
 
-## The Discovery & response section
+## Discovery & response section
 
 The **Discovery & response** section on the home page shows you at a glance how your organization is doing with respect to [data protection and compliance](protect-access-to-data-and-services.md).
 
