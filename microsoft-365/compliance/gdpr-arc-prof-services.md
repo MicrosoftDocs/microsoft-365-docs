@@ -10,6 +10,7 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
+hideEdit: true
 ---
 
 # Microsoft Support and Professional Services accountability readiness checklist for the GDPR
