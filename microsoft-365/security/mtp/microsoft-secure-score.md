@@ -125,7 +125,7 @@ Microsoft Secure Score is a numerical summary of your security posture based on 
 
 ## What's coming?
 
-In order to make Microsoft Secure Score a better representative of your security posture and improve usability, we are making some changes on November 4th. Your score and the maximum possible score will change. However, this does not imply a change in your security posture.
+In order to make Microsoft Secure Score a better representative of your security posture and improve usability, we are making some changes in the near future. Your score and the maximum possible score will change. However, this does not imply a change in your security posture.
 
 ### Removed “not scored” and “review” improvement actions
 
