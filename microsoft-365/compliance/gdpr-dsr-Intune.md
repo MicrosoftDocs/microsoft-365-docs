@@ -10,6 +10,7 @@ author: dougeby
 manager: angrobe
 audience: itpro
 ms.collection: GDPR
+hideEdit: true
 ---
 
 # Intune Data Subject Requests for the GDPR

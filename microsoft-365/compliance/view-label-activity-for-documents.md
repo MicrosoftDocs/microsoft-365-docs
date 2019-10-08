@@ -1,7 +1,7 @@
 ---
 title: "View label activity for documents"
-ms.author: stephow
-author: stephow-MSFT
+ms.author: laurawi
+author: laurawi
 manager: laurawi
 ms.date: 5/9/2018
 audience: Admin
