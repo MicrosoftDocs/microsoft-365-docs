@@ -4,7 +4,7 @@
 ## [What's new in the compliance center](whats-new.md)
 ## [Recent updates to compliance content](recently-updated-topics-mcc.md)
 ## [Microsoft 365 compliance center](microsoft-365-compliance-center.md)
-## [Microsoft 365 solutions catalog (Preview)](microsoft-365-solutions-catalog.md)
+## [Microsoft 365 solution catalog (Preview)](microsoft-365-solution-catalog.md)
 ## [Go to the Security & Compliance Center](go-to-the-securitycompliance-center.md)
 ## [Use your free Azure Active Directory subscription](use-your-free-azure-ad-subscription-in-office-365.md)
 ## [Plan for security and compliance in Office 365](plan-for-security-and-compliance.md)
