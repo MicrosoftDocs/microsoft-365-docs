@@ -42,24 +42,35 @@ The sensitive information type widget shows the top sensitive information types 
 
 ![top sensitive information types placeholder](media/data-classification-top-sensitive-info-types.png)
 
-to find out how many documents are in any given classification category, hover over the bar for the category.
+to find out how many items are in any given classification category, hover over the bar for the category.
 
 ![top sensitive information types hover detail placeholder](media\data-classification-hover-detail-top-sensitive-info-types.png)
 
 ## Top applied sensitivity labels
 
-When you apply a sensitivity label to content, two things happen:
+When you apply a sensitivity label to an item, two things happen:
 
-- a tag that indicates the value of the content to your org is embedded in the document and will follow it everywhere it goes
-- the presence of the tag enables various protective behaviors, such as mandatory watermarking or encryption. With end point protection enabled you can even prevent content from leaving your organizational control.
+- a tag that indicates the value of the item to your org is embedded in the document and will follow it everywhere it goes
+- the presence of the tag enables various protective behaviors, such as mandatory watermarking or encryption. With end point protection enabled you can even prevent an item from leaving your organizational control.
 
-for more information on Sensitivity labels, see: [Overview of sensitivity labels](https://docs.microsoft.com/en-us/microsoft-365/compliance/sensitivity-labels)
+for more information on sensitivity labels, see: [Overview of sensitivity labels](https://docs.microsoft.com/en-us/microsoft-365/compliance/sensitivity-labels)
 
-The sensitivity label widget shows the number of pieces of content by sensitivity level.
+The sensitivity label widget shows the number of items (email or document) by sensitivity level.
 
-![breakdown of content by sensitivity label classification](media\data-classification-top-applied-sensitivity-labels.png)
+![breakdown of content by sensitivity label classification placeholder screenshot](media\data-classification-top-applied-sensitivity-labels.png)
 
 
+## Top applied retention labels
+
+Retention labels are used to manage the disposition of critical content in your organization. When applied, they can be used to control how long a document will be kept before deletion, whether it should be reviewed prior to deletion when it's retention period expires or whether it should be marked as a record which can never be deleted. For more information see, [Overview of retention labels](labels.md)
+ 
+The top applied retention labels widget show you how many items have a given retention lable applied.
+
+![top applied retention labels placeholder screenshot](media\data-classification-top-applied-retention-labels.png)
+
+
+## Sensitive data by location
+<!--
 
 Note that the Azure Information Protection reports have [prerequisites](https://docs.microsoft.com/en-us/azure/information-protection/reports-aip#prerequisites-for-azure-information-protection-analytics) that also apply to label analytics on sensitivity labels in the Microsoft 365 compliance center and Microsoft 365 security center. For example, you need an Azure subscription that includes the Log Analytics because these reports are a result of sending information protection audit events from Azure Information Protection clients and scanners to a centralized location based on Azure Log Analytics service.
 
@@ -71,7 +82,7 @@ For sensitivity label usage:
 
 ![Sensitivity label usage report](media/sensitivity-label-usage-report.png) -->
 
-## Top applied retention labels
+
 
 <!-- This report shows a quick view of what the top labels are and where they’re applied. For more detailed information on how content in SharePoint and OneDrive is labeled, see [View label activity for documents](view-label-activity-for-documents.md).
 
@@ -107,7 +118,7 @@ When you choose a mailbox or site collection, you can view a list of items with 
 
 ![Items with this label tab showing all items with that retention label](media/retention-label-usage-content-explorer.png) -->
 
-## Sensitive data by location
+
 
 <!-- To view label analytics, you must be assigned one of the following roles in Azure Active Directory:
 
