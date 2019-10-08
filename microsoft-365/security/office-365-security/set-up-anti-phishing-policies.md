@@ -34,7 +34,7 @@ What to do:
 3. Set up an anti-phishing policy or an ATP anti-phishing policy.
 
 >[!IMPORTANT]
-> To learn how multiple technologies are applied, please visit [how policies and protections are combined](https://docs.microsoft.com/office365/securitycompliance/how-policies-and-protections-are-combined).
+> To learn how multiple technologies are applied, please visit [how policies and protections are combined](https://docs.microsoft.com/microsoft-365/security/office-365-security/how-policies-and-protections-are-combined).
 
 ## Review the prerequisites
 

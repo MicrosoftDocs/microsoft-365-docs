@@ -19,16 +19,21 @@ search.appverid:
 
 # Microsoft Secure Score
 
->[!IMPORTANT]
->Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+Microsoft Secure Score is a measurement of an organization’s security posture, with a higher number indicating lower risk. From a centralized dashboard in the Microsoft 365 security center, organizations can monitor and improve the security of their Microsoft 365 identities, data, apps, devices, and infrastructure.
 
-With Microsoft Secure Score in the Microsoft 365 security center, you can have increased visibility and control over your organization’s security posture. From a centralized dashboard you can monitor and improve the security for your Microsoft 365 identities, data, apps, devices, and infrastructure.
+Secure Score helps organizations do the following:  
 
-Microsoft Secure Score gives you robust visualizations, integration with other Microsoft products, comparison of your score with other companies, filtering by category, and much more. With the tool, you can complete security improvement actions within your organization and track the history of your score. The score can also reflect when third-party solutions have addressed recommended improvement actions.  
+* Report on the current state of the organization’s security posture.
+* Improve their security posture by providing discoverability, visibility, guidance, and control.
+* Compare with benchmarks and establish key performance indicator (KPIs).
+
+Secure Score gives organizations access to robust visualizations, metrics and trends, integration with other Microsoft products, score comparison with other organizations of similar size and industry, and much more. The score can also reflect when third-party solutions have addressed recommended actions.
+
+You can also get your score using the [Microsoft Graph API](https://docs.microsoft.com/graph/api/resources/securescores?view=graph-rest-beta).  
 
 ## How it works
 
-You are given points for configuring recommended security features, performing security-related tasks (such as viewing reports), or addressing the improvement action with a third-party application or software. Some actions are scored for partial completion, like enabling multi-factor authentication (MFA) for your users. Security should always be balanced with usability, and not every recommendation will work for your environment.
+You, as a security professional, are given points for configuring recommended security features, performing security-related tasks (such as viewing reports), or addressing the improvement action with a third-party application or software. Some actions are scored for partial completion, like enabling multi-factor authentication (MFA) for your users. Security should always be balanced with usability, and not every recommendation will work for your environment.
 
 ## Required permissions
 
@@ -37,10 +42,11 @@ Currently, to view Microsoft Secure Score, you must be assigned one of the follo
 * Global Administrator
 * Security Administrator
 * Security Reader
+* Global Reader
 
 ## Rich experiences & additional security recommendations
 
-In Microsoft Secure Score, we’ve added recommendations from Azure AD, Intune, and Cloud App Security, with recommendations from Azure Security Center and Microsoft Defender ATP coming soon. We've also added even more Office 365 security recommendations. With additional insights and more visibility into a broader set of Microsoft products and services, you can feel confident reporting up to management about your organization’s security health. You can also get your score using the [Microsoft Graph API](https://docs.microsoft.com/graph/api/resources/securescores?view=graph-rest-beta).
+In Microsoft Secure Score, we’ve added recommendations from Azure AD, Intune, and Cloud App Security, with recommendations from Azure Security Center and Microsoft Defender ATP coming soon. We've also added even more Office 365 security recommendations. With additional insights and more visibility into a broader set of Microsoft products and services, you can feel confident reporting up to management about your organization’s security health.
 
 To help you the information you need more quickly, Microsoft recommendations are organized into groups:
 
