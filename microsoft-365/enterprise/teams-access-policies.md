@@ -67,7 +67,7 @@ Messaging, or chat, can also be managed through the default global policy, or th
 
 ### Meeting Policies
 
-No discussion of Teams would be complete without planning and implementing policies around Teams meetings.
+No discussion of Teams would be complete without planning and implementing policies around Teams meetings. Meetings are an essential component of Teams, allowing people to formally meet and present to many users at once, as well as share content relevant to the meeting. Setting the right policies for your organization around meetings is essential.
 
 Please review [Manage meeting policies in Teams](https://docs.microsoft.com/en-us/microsoftteams/meeting-policies-in-teams) for more information.
 
@@ -81,7 +81,9 @@ For more reading about App Permission Policies, check out [Manage app permission
 
 As noted above, Teams can have many layers of access and security ranges from channels that can encompass your entire organization to one-on-one chats. These policies cover security reliably no matter what you're using Teams to do. Please review the following diagram, which shows not just the many things you can do with Teams, but also some of the underlying dependencies on other applications.
 
-![Diagram showing the many things you do in Teams and dependencies.](../images/identity-access-logical-architecture-teams.png)
+![Diagram showing Teams dependencies on SharePoint Online, OneDrive for Business, and Exchange.](../images/identity-access-logical-architecture-teams.png)
+
+As noted in the diagram above, Teams has many dependencies. To achieve full functionality for files for Teams, you will need to have SharePoint and OneDrive configured, as shown in [Policy recommendations for securing SharePoint sites and files](sharepoint-file-access-policies.md). SharePoint is also used for wiki functionality. Many Teams functionalities, including 1:1 and group chats, channel messages, meetings and calls. To review Exchange configuration recommendations, see [Policy recommendations for securing email](secure-email-recommended-policies.md).
 
 ## Guest Access
 
