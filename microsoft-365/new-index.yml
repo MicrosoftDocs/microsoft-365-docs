@@ -92,13 +92,13 @@ conceptualContent:
     - title: cardtitle1
       links:
         - url: file1.md OR https://docs.microsoft.com/file1
-          itemType: itemType
+          itemType: concept
           text: linktext1
         - url: file2.md OR https://docs.microsoft.com/file2
-          itemType: itemType
+          itemType: concept
           text: linktext2
         - url: file3.md OR https://docs.microsoft.com/file3
-          itemType: itemType
+          itemType: concept
           text: linktext3
       # footerLink (optional)
       footerLink:
@@ -108,13 +108,13 @@ conceptualContent:
     - title: cardtitle2
       links:
         - url: file1.md OR https://docs.microsoft.com/file1
-          itemType: itemType
+          itemType: concept
           text: linktext1
         - url: file2.md OR https://docs.microsoft.com/file2
-          itemType: itemType
+          itemType: concept
           text: linktext2
         - url: file3.md OR https://docs.microsoft.com/file3
-          itemType: itemType
+          itemType: concept
           text: linktext3
       # footerLink (optional)
       footerLink:
@@ -124,13 +124,13 @@ conceptualContent:
     - title: cardtitle3
       links:
         - url: file1.md OR https://docs.microsoft.com/file1
-          itemType: itemType
+          itemType: concept
           text: linktext1
         - url: file2.md OR https://docs.microsoft.com/file2
-          itemType: itemType
+          itemType: concept
           text: linktext2
         - url: file3.md OR https://docs.microsoft.com/file3
-          itemType: itemType
+          itemType: concept
           text: linktext3
       # footerLink (optional)
       footerLink:
