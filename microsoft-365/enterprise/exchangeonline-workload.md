@@ -2,7 +2,7 @@
 title: "Deploy Exchange Online for Microsoft 365 Enterprise"
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 10/01/2019
+ms.date: 10/09/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -17,7 +17,7 @@ description: Step through the process of planning for, rolling out, and driving 
 
 *This workload is included in both the E3 and E5 versions of Microsoft 365 Enterprise*
 
-Exchange Online is your primary cloud service for email and calendaring that helps your users collaborate in ways that do not require real-time chatting or centralized document storage. Exchange Online is how you do individual and small group short-lived communication and scheduling and is a key element of the Built for Teamwork value of Microsoft 365 Enterprise. Exchange Online lets you accomplish more and work more effectively with the well-known Outlook application, no matter what device you’re on.
+Exchange Online is your primary cloud service for email and calendaring that helps your users collaborate in ways that do not require real-time chatting or centralized document storage. Exchange Online is a key element of the Built for Teamwork value of Microsoft 365 Enterprise. Exchange Online lets you accomplish more and work more effectively with the well-known Outlook application, no matter what device you’re on.
 
 Exchange Online also has advanced security capabilities including anti-malware and anti-spam filtering to protect mailboxes and data loss prevention capabilities that prevent users from mistakenly sending sensitive information to unauthorized people. Exchange Online security is a key element of the Intelligent Security value of Microsoft 365 Enterprise.
 
@@ -26,10 +26,10 @@ If you are brand new to Exchange Online, see [Microsoft Exchange Online](https:/
 The following phases and steps guide you through the process of envisioning the role of Exchange Online in your organization, onboarding your organization to Exchange Online through a series of progressive rollouts, and driving usage of Exchange Online and its value to your end users.
 
 >[!Note]
->These deployment instructions should be followed only after you’ve completed [Phase 2-Identity](identity-infrastructure.md) of the Microsoft 365 Enterprise foundation infrastructure.
+>These deployment instructions should be followed only after you’ve completed [Phase 2-Identity of the Microsoft 365 Enterprise foundation infrastructure](identity-infrastructure.md).
 >
 
-## Phase 1: Envision
+## Phase 1: Envision your Exchange Online deployment
 
 In this phase, you gather the people for your Exchange Online deployment and determine how your organization will use Exchange Online to address its business needs.
 
