@@ -1,6 +1,6 @@
 ---
 title: Microsoft Secure Score
-description: Describes Microsoft Secure Score in the Microsoft 365 security center, how details are calculated, and what security admins can expect using it.
+description: Describes Microsoft Secure Score in the Microsoft 365 security center, how details are calculated, and what security admins can expect.
 keywords: security, malware, Microsoft 365, M365, secure score, security center, improvement actions
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -27,34 +27,34 @@ Secure Score helps organizations do the following:
 * Improve their security posture by providing discoverability, visibility, guidance, and control.  
 * Compare with benchmarks and establish key performance indicators (KPIs).
 
-Secure Score gives organizations access to robust visualizations of metrics and trends, integration with other Microsoft products, score comparison with other organizations of similar size and industry, and much more. The score can also reflect when third-party solutions have addressed recommended actions.
+Secure Score gives organizations access to robust visualizations of metrics and trends, integration with other Microsoft products, score comparison with similar organizations, and much more. The score can also reflect when third-party solutions have addressed recommended actions.
 
-Additionally, you can access your recommendations and score using the [Microsoft Graph API](https://docs.microsoft.com/graph/api/resources/securescores?view=graph-rest-beta).
+Additionally, you can access your recommendations and score through the [Microsoft Graph API](https://docs.microsoft.com/graph/api/resources/securescores?view=graph-rest-beta).
 
 ## How it works
 
-You are given points for configuring recommended security features, performing security-related tasks (such as viewing reports), or addressing the improvement action with a third-party application or software. Some improvement actions only give points when fully completed, and some give partial points if they are completed for some devices or users. Security should always be balanced with usability, and not every recommendation will work for your environment.
+You are given points for configuring recommended security features, performing security-related tasks (such as viewing reports), or addressing the improvement action with a third-party application or software. Some improvement actions only give points when fully completed, and some give partial points if they are completed for some devices or users. Security should always be balanced with usability, and not every recommendation can work for your environment.
 
-Your score is updated in real time to reflect the information presented in the visualizations and improvement action pages. Secure Score will also sync daily to receive system data about your achieved points for each action.
+Your score is updated in real time to reflect the information presented in the visualizations and improvement action pages. Secure Score also syncs daily to receive system data about your achieved points for each action.
 
 ### How improvement actions are scored
 
-Most are scored in a binary fashion - you get 100% of the points if you implement the improvement action, like creating a new policy or turning on a specific setting. For other improvement actions, points are given as a percentage of the total configuration. For example, if the improvement action states you’ll get 30 points if you protect all your users with multi-factor authentication and you only have 5 of 100 total users protected, you would be given a partial score of around 2 points (5 protected / 100 total * 30 max pts = 2 pts partial score).
+Most are scored in a binary fashion — if you implement the improvement action, like creating a new policy or turning on a specific setting, you get 100% of the points . For other improvement actions, points are given as a percentage of the total configuration. For example, if the improvement action states you get 30 points by protecting all your users with multi-factor authentication and you only have 5 of 100 total users protected, you would be given a partial score of around 2 points (5 protected / 100 total * 30 max pts = 2 pts partial score).
 
 ## Required permissions
 
 To have permission to access Microsoft Secure Score, you must be assigned one of the following roles in Azure Active Directory.
 
-### Read and Write roles
+### Read and write roles
 
-With read and write access, you can make changes and directly interact with Secure Score. You can also assign read only access to other users.
+With read and write access, you can make changes and directly interact with Secure Score. You can also assign read-only access to other users.
 
 * CompanyAdministrator
 * SecurityAdministrator
 * ExchangeAdmin
 * SharePointAdmin
 
-### Read only roles
+### Read-only roles
 
 With read-only access, you are not able to edit status or notes for an improvement action, edit score zones, or edit custom comparisons.
 
@@ -69,10 +69,10 @@ With read-only access, you are not able to edit status or notes for an improveme
 
 To access the Graph API, you need to have one of the following scopes in addition to a role:
 
-* SecurityEvents.Read.All (for read only role)
+* SecurityEvents.Read.All (for read-only role)
 * SecurityEvents.ReadWrite.All (for read and write role)
 
-## Rich experiences & additional security recommendations
+## Rich experiences & security recommendations
 
 In Microsoft Secure Score, there are recommendations from Office 365, Azure AD, Intune, and Cloud App Security, with recommendations from Azure Security Center and Microsoft Defender Security Center coming soon.
 
@@ -95,7 +95,7 @@ The improvement actions tab lists the security recommendations that address poss
 
 ### Ranking
 
-Ranking is based on the number of remaining points left to achieve, implementation difficulty, user impact, and complexity. The highest ranked improvement actions will have large amount of points remaining and low difficulty, user impact, and complexity.
+Ranking is based on the number of remaining points left to achieve, implementation difficulty, user impact, and complexity. The highest ranked improvement actions have the large amount of points remaining with low difficulty, user impact, and complexity.
 
 ### Actions
 
@@ -103,13 +103,13 @@ Actions labeled as [Not Scored] are not tracked by Microsoft Secure Score. You c
 
 When you select a specific improvement action, a fly out appears. To complete the action, you have a few options:
 
-1. Select **View settings** to go the configuration screen and make the change. You will then gain the points that the action is worth, visible at the top of the fly out. Points may take up to 24 hours to update.
+1. Select **View settings** to go the configuration screen and make the change. You then gain the points that the action is worth, visible at the top of the fly out. Points may take up to 24 hours to update.
 
-2. Select **Resolve through third party** because the improvement action has already been addressed by a third-party application or software. You will gain the points that the action is worth, so your secure score better reflects your overall security posture. If a third party no longer covers the control, you can mark the improvement action as not complete. Please keep in mind, Microsoft will have no visibility into whether the score requirements have been met if the improvement action is marked as resolved through third party.
+2. Select **Resolve through third party** because the improvement action has already been addressed by a third-party application or software. You gain the points that the action is worth, so your secure score better reflects your overall security posture. If a third party no longer covers the control, you can mark the improvement action as not complete. Keep in mind, Microsoft has no visibility into whether the score requirements have been met if the improvement action is marked as resolved through third party.
 
-3. Select **Ignore** because you have decided to accept the risk and not enact the improvement action. Once you ignore an improvement action, the total number of secure score points you can achieve will be reduced. You can view this action in history or undo it at any time.
+3. Select **Ignore** because you have decided to accept the risk and not enact the improvement action. Once you ignore an improvement action, the total number of secure score points you can achieve is reduced. You can view this action in history or undo it at any time.
 
-4. Select **Review** because the improvement action requires you to regularly review a part of your environment to gain and retain points. For example, mailbox forwarding rules should be reviewed on a weekly basis to make sure data is not being exfiltrated from your network. You do not need to make any changes, but an action will need to be performed. If you regularly review the rules, you will receive the points. If not, the score will be reduced.
+4. Select **Review** because the improvement action requires you to regularly review a part of your environment to gain and retain points. For example, mailbox forwarding rules should be reviewed on a weekly basis to make sure data is not being exfiltrated from your network. You do not need to make any changes, but an action will need to be performed. If you regularly review the rules, you will receive the points. If not, the score is reduced.
 
 ![Secure Score improvement action example](../media/secure-score/secure-score1x450.png) ![Secure Score review improvement action example](../media/secure-score/secure-score2x450.png)
 
@@ -121,7 +121,7 @@ You can view a graph of your organization's score over time in the **History** t
 
 ## Risk awareness
 
-Microsoft Secure Score is a numerical summary of your security posture based on system configurations, user behavior and other security related measurements; it is not an absolute measurement of how likely your system or data will be breached. Rather, it represents the extent to which you have adopted security controls in your Microsoft environment which can help offset the risk of being breached. No online service is completely immune from security breaches, and secure score should not be interpreted as a guarantee against security breach in any manner.
+Microsoft Secure Score is a numerical summary of your security posture based on system configurations, user behavior and other security-related measurements; it is not an absolute measurement of how likely your system or data will be breached. Rather, it represents the extent to which you have adopted security controls in your Microsoft environment which can help offset the risk of being breached. No online service is completely immune from security breaches, and secure score should not be interpreted as a guarantee against security breach in any manner.
 
 ## What's coming?
 
@@ -135,7 +135,7 @@ For these reasons, all improvement actions that were not scored or required a re
 
 ### Simplification of the point system
 
-To standardize points across multiple experiences, each Secure Score improvement action point totals will be updated to be worth 10 points or less. It is necessary be more consistent across the wide breather of security controls that we have today and ones that we will be adding in the future. While this is a significant change and you will see a drop in point totals, there will be no change to your security posture.  
+To standardize points across multiple experiences, each Secure Score improvement action point total will be updated to be worth 10 points or less. It is necessary be more consistent across the wide breather of security controls that we have today and ones that we will be adding in the future. While this is a significant change and you will see a drop in point totals, there will be no change to your security posture.  
 
 ### Preview features
 
