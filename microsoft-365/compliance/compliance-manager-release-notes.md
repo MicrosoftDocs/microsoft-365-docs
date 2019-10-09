@@ -22,7 +22,7 @@ You can use the updated [Compliance Manager](https://servicetrust.microsoft.com/
 
 ## What’s new in Compliance Manager (Preview)
 
-- **Role-based access to Compliance Manager:** The default **Guess access** role has been removed. In order for a user to access Compliance Manager, the global admin must [assign each user a permission](compliance-manager-overview#permissions.md).
+- **Role-based access to Compliance Manager:** The default **Guess access** role has been removed. In order for a user to access Compliance Manager, the global admin must [assign each user a permission](compliance-manager-overview.md#permissions).
 
 - **Integration with Microsoft Secure Score:** Compliance Manager supports integration with [Microsoft Secure Score](../security/mtp/microsoft-secure-score.md) by mapping customer-managed Actions to more than 50 Secure Score actions. When you complete a mapped action in Secure Score, the corresponding Compliance Manager Action automatically updates.
 
