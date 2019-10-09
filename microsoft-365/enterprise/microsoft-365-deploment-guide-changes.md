@@ -30,7 +30,7 @@ description: See the new content and changes to the content in the Microsoft 365
 
 - [Microsoft 365 Enterprise poster](microsoft-365-overview.md#get-the-big-picture) for new scenarios 
 
-  [![Image for the Microsoft 365 Enterprise poster](./media/m365-poster/m365e-poster.png)](media/Microsoft365Enterprise.pdf)
+  [![Image for the Microsoft 365 Enterprise poster](./media/m365-poster/m365e-poster.png)](media/m365-poster/Microsoft365Enterprise.pdf)
 
 ## September 2019
 
@@ -59,33 +59,44 @@ description: See the new content and changes to the content in the Microsoft 365
 
   [![The Identity Infrastructure poster](./media/identity-infrastructure/m365e-identity-arch-poster.png)](media/identity-infrastructure/M365E-ID-Infra.pdf)
 
-- [Windows 7 and Office 10 End-of-Support poster](migration-microsoft-365-enterprise-workload.md)
+  Announcements: [Microsoft 365 Technical Community blog](https://techcommunity.microsoft.com/t5/Microsoft-365-Blog/Get-the-new-Identity-infrastructure-for-Microsoft-365-Enterprise/ba-p/874941)  |  [LinkedIn](https://www.linkedin.com/pulse/how-can-i-quickly-ramp-up-key-concepts-features-identity-joe-davies/?published=t)
+
+
+- [Windows 7 and Office 10 End-of-Support poster](migration-microsoft-365-enterprise-workload.md#summary-of-options-for-office-2010-clients-and-servers-and-windows-7)
   
   [![Image for the end of support for Office 2010 clients and servers and Windows 7 poster](./media/migration-microsoft-365-enterprise-workload/office2010-windows7-end-of-support.png)](media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)
 
+  Announcements: [Microsoft 365 Technical Community blog](https://techcommunity.microsoft.com/t5/Microsoft-365-Blog/Move-from-Office-2010-clients-and-servers-and-Windows-7-to/ba-p/846994)  |  [LinkedIn](https://www.linkedin.com/pulse/how-can-microsoft-365-enterprise-help-me-end-support-products-davies/)
+
+
 ### Updates and enhancements
 
-- [Microsoft 365 Enterprise poster](microsoft-365-overview.md) for new productivity scenarios
+- [Microsoft 365 Enterprise poster](microsoft-365-overview.md#get-the-big-picture) for new productivity scenarios
 
-   [![Image for the Microsoft 365 Enterprise poster](./media/m365-poster/m365e-poster.png)](media/Microsoft365Enterprise.pdf)
+   [![Image for the Microsoft 365 Enterprise poster](./media/m365-poster/m365e-poster.png)](media/m365-poster/Microsoft365Enterprise.pdf)
 
 ## July 2019
 
 ### New content
 
-- Excel workbook for [Microsoft 365 Enterprise for non-enterprise organizations article](deploy-foundation-infrastructure.md)
+- Excel workbook for [Microsoft 365 Enterprise for non-enterprise organizations article](deploy-foundation-infrastructure-non-enterprises.md#onboarding)
 
 ## May 2019
 
 ### New content
 
-- [Foundation Infrastructure poster](deploy-foundation-infrastructure.md)
+- [Foundation Infrastructure poster](deploy-foundation-infrastructure.md#at-a-glance)
 
   [![Image for the Microsoft 365 Enterprise foundation infrastructure poster](./media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.png)](media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf)
+
+  Announcements: [LinkedIn](https://www.linkedin.com/pulse/how-can-i-get-big-picture-microsoft-365-enterprise-joe-davies/)
+
  
 - [Microsoft 365 Enterprise for non-enterprise organizations article](deploy-foundation-infrastructure-non-enterprises.md)
 
   [![Summary of the infrastructure if your organization uses cloud-only identity](./media/deploy-foundation-infrastructure-non-enterprises/final-cloud-only-config.png)](deploy-foundation-infrastructure-non-enterprises.md)
+
+  Announcements: [Microsoft 365 Technical Community blog](https://techcommunity.microsoft.com/t5/Microsoft-365-Blog/Deploy-Microsoft-365-Enterprise-infrastructure-even-if-you-re/ba-p/900012)  |  [LinkedIn](https://www.linkedin.com/pulse/how-do-i-deploy-microsoft-365-enterprise-without-joe-davies/)
 
 ## April 2019
 
