@@ -49,25 +49,25 @@ productDirectory:
           text: Microsoft 365 Enterprise is designed for large organizations and integrates Office 365 Enterprise, Windows 10 Enterprise, and Enterprise Mobility + Security.
     # Card
     - title: Microsoft 365 Business
-      imageSrc: https://docs.microsoft.com/en-us/office/media/icons/on-premises-blue.svg
+      imageSrc: https://docs.microsoft.com/en-us/office/media/icons/small-business-blue.svg
       links:
         - url: ./business/index.md
           text: Microsoft 365 Business is designed for small and midsize businesses, bringing together the productivity and collaboration capabilities of Office 365 with device management and security solutions to safeguard business data.
     # Card
     - title: Microsoft 365 Education
-      imageSrc: https://docs.microsoft.com/en-us/office/media/icons/on-premises-blue.svg
+      imageSrc: https://docs.microsoft.com/en-us/office/media/icons/education-tutorial-blue.svg
       links:
         - url: ./education/index.md
           text: Microsoft 365 Education empowers educators to unlock creativity, promote teamwork, and provide a simple and safe experience in a single, affordable solution built for education.
      # Card
     - title: Microsoft 365 Compliance
-      imageSrc: https://docs.microsoft.com/en-us/office/media/icons/on-premises-blue.svg
+      imageSrc: https://docs.microsoft.com/en-us/office/media/icons/tasks-blue.svg
       links:
         - url: ./compliance/index.yml
           text: Microsoft 365 compliance solutions help your organization comply with legal or regulatory standards.
      # Card
     - title: Microsoft 365 security
-      imageSrc: https://docs.microsoft.com/en-us/office/media/icons/on-premises-blue.svg
+      imageSrc: https://docs.microsoft.com/en-us/office/media/icons/lock-protected-blue.svg
       links:
         - url: ./security/index.yml
           text: Microsoft 365 security solutions help to protect your enterprise across attack surfaces.
