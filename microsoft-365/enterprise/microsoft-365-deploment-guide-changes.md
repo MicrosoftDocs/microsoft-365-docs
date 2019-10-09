@@ -26,7 +26,7 @@ description: See the new content and changes to the content in the Microsoft 365
 - Refresh of the [Exchange Online](exchangeonline-workload.md) workload
 - Refresh of the [SharePoint sites for highly regulated data](teams-sharepoint-online-sites-highly-regulated-data.md) scenario
  
-  ![The SharePoint sites for highly regulated data scenario](./media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration.png)
+  [![The SharePoint sites for highly regulated data scenario](./media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration.png)]((teams-sharepoint-online-sites-highly-regulated-data.md))
 
 - [Microsoft 365 Enterprise poster](microsoft-365-overview.md#get-the-big-picture) for new scenarios 
 

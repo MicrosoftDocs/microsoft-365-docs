@@ -120,9 +120,9 @@ Learn how Core Services Engineering and Operations (formerly Microsoft IT) [plan
 
 The Contoso Corporation is a fictional but representative global manufacturing conglomerate with its headquarters in Paris, France. See how [Contoso deployed Microsoft 365 Enterprise](contoso-case-study.md) and addressed major design decisions and implementation details for networking, identity, Windows 10 Enterprise, Office 365 ProPlus, mobile device management, information protection, and security. 
 
-## Stay current with new and updated Microsoft 365 Enterprise deployment content
+## Stay current with deployment content
 
-For the latest changes, see [this article](microsoft-365-deploment-guide-changes.md).
+For the latest changes in content, see [this article](microsoft-365-deploment-guide-changes.md).
 
 ## Next step
 
