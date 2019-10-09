@@ -40,7 +40,7 @@ highlightedContent:
 additionalContent:
   # Supports up to 3 sections
   sections:
-    - title: Documentation by subscription or area# < 60 chars (optional)
+    - title: Documentation by subscription or area
       summary: Find guidance for admins and IT professionals to deploy, configure, and manage the following products or feature areas. # < 160 chars (optional)
       items:
         # Card
