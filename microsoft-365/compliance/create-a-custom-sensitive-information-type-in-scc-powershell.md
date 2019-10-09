@@ -110,8 +110,7 @@ Here's the sample XML of the rule package that we'll create in this topic. Eleme
 			<Description default="true" langcode="en-us">
 			A custom classification for detecting Employee IDs.
 			</Description>
-			<Name default="true" langcode="de-de">Name for German locale</Name>
-			<Description default="true" langcode="de-de">
+			<Description default="false" langcode="de-de">
 			Description for German locale.
 			</Description>
 		</Resource>

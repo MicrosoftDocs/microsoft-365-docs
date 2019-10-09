@@ -3,7 +3,7 @@ title: "Microsoft 365 Enterprise foundation infrastructure for non-enterprises"
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 09/25/2019
+ms.date: 10/08/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -305,14 +305,14 @@ Based on these levels of data security, the next step is to identify and impleme
 
 See [Microsoft 365 classification types](infoprotect-configure-classification.md#microsoft-365-classification-types) for more information.
 
-If you use sensitivity labels with permissions, you might have to create additional Azure AD security groups to define who is allowed to do what with email and documents that have the sensitivity label applied. 
+If you use sensitivity labels with permissions, you might have to create additional Office 365 security groups to define who is allowed to do what with email and documents that have the sensitivity label applied. 
 
 For example, you need to create a RESEARCH sensitivity label to protect the email and documents of your research team. You determine that:
 
 - Researchers must have the ability to change documents marked with the RESEARCH sensitivity label.
 - Non-research employees only need to have the ability to view documents marked with the RESEARCH sensitivity label. 
 
-This means you need to create and manage two additional groups:
+This means you need to create and manage two additional Office 365 groups:
 
 - RESEARCH-ALL
 - RESEARCH-VIEW
@@ -398,7 +398,7 @@ After the build-out and configuration of your Microsoft 365 Enterprise infrastru
   - COND-ACCESS-EXCLUDE
   - The appropriate AD DS or Azure AD security groups that are also members of the BASELINE, SENSITIVE, and HIGHLY-REGULATED Azure AD groups 
   - Workgroup, departmental, and regional groups
-  - Sensitivity label groups (as needed)
+  - Sensitivity label Office 365 groups (as needed)
 - Azure AD sign-in Conditional Access policies that use the BASELINE, SENSITIVE, and HIGHLY-REGULATED, and COND-ACCESS-EXCLUDE Azure AD groups.
 - Intune application and device compliance policies.
 - Custom sensitive information types (as needed).
@@ -422,7 +422,7 @@ After their onboarding, each employee should have:
    - LICENSED
    - The appropriate AD DS or Azure AD security groups, which are also members of the BASELINE, SENSITIVE, and HIGHLY-REGULATED Azure AD groups for Conditional Access policies 
    - The appropriate workgroup, departmental, and regional groups
-   - Sensitivity label groups (as needed)
+   - Sensitivity label Office 365  groups (as needed)
 - A Windows 10 Enterprise device that:
    - Is joined to the Azure AD tenant (cloud-only) or to both the Azure AD tenant and your AD DS domain (hybrid).
    - Automatically updates itself with the latest Windows 10 Enterprise product improvements and security enhancements.
