@@ -77,13 +77,13 @@ productDirectory:
 additionalContent:
   # Supports up to 3 sections
   sections:
-    - title: sectiontitle # < 60 chars (optional)
-      summary: sectionsummary # < 160 chars (optional)
+    - title: Resources # < 60 chars (optional)
+      summary: Need help with Microsoft 365? Use these resources for assistance. # < 160 chars (optional)
       items:
         # Card
-        - title: cardtitle1
-          summary: cardsummary1
-          url: file1.md OR https://docs.microsoft.com/file1
+        - title: Find a solution provider
+          summary: Microsoft certified solution providers specialize in providing up-to-date Microsoft technology-based customer solutions all over the world.
+          url: https://www.microsoft.com/solution-providers/home
         # Card
         - title: cardtitle2
           summary: cardsummary2
