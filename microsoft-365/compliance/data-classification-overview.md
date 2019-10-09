@@ -92,7 +92,7 @@ This widget provides a quick summary of the most common actions that users are t
 
 **Placeholder screenshot of top acivities detected**
 
-![place holder screenshot top activities dectected](\media\data-classification-top-activities.png)
+![place holder screenshot top activities detected](media\data-classification-top-activities.png)
 
 
 ## See also
