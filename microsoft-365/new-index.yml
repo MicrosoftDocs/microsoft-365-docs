@@ -61,7 +61,7 @@ productDirectory:
           text: Microsoft 365 Education empowers educators to unlock creativity, promote teamwork, and provide a simple and safe experience in a single, affordable solution built for education.
      # Card
     - title: Microsoft 365 Compliance
-      imageSrc: https://docs.microsoft.com/en-us/office/media/icons/tasks-blue.svg
+      imageSrc: https://docs.microsoft.com/en-us/office/media/icons/task-checklist-planning-blue.svg
       links:
         - url: ./compliance/index.yml
           text: Microsoft 365 compliance solutions help your organization comply with legal or regulatory standards.
