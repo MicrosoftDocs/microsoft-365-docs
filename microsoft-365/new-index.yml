@@ -45,7 +45,7 @@ productDirectory:
       # imageSrc should be square in ratio with no whitespace
       imageSrc: https://docs.microsoft.com/en-us/office/media/icons/on-premises-blue.svg
       links:
-        - url: /enterprise/index.md
+        - url: ./enterprise/index.md
           text: Microsoft 365 Enterprise is designed for large organizations and integrates Office 365 Enterprise, Windows 10 Enterprise, and Enterprise Mobility + Security.
     # Card
     - title: Microsoft 365 Business
