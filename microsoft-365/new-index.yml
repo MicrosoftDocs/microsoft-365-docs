@@ -45,18 +45,14 @@ productDirectory:
       # imageSrc should be square in ratio with no whitespace
       imageSrc: ./media/index/image1.svg OR https://docs.microsoft.com/media/logos/image1.svg
       links:
-        - url: file1a.md OR https://docs.microsoft.com/file1a
-          text: linktext1a
-        - url: file1b.md OR https://docs.microsoft.com/file1b
-          text: linktext1b
+        - url: /enterprise/index.md
+          text: Microsoft 365 Enterprise is designed for large organizations and integrates Office 365 Enterprise, Windows 10 Enterprise, and Enterprise Mobility + Security.
     # Card
     - title: Microsoft 365 Business
-      imageSrc: ./media/index/image2.svg OR https://docs.microsoft.com/media/logos/image2.svg
+      imageSrc: https://docs.microsoft.com/en-us/office/media/hub-tiles/M365-HubTile-Business-400x140.svg
       links:
-        - url: file2a.md OR https://docs.microsoft.com/file2a
-          text: linktext2a
-        - url: file2b.md OR https://docs.microsoft.com/file2b
-          text: linktext2b
+        - url: /business/index.md
+          text: Microsoft 365 Business is a new solution designed for small and midsize businesses (SMB), bringing together the best-in-class productivity and collaboration capabilities of Office 365 with device management and security solutions to safeguard business data.
     # Card
     - title: Microsoft 365 Education
       imageSrc: ./media/index/image3.svg OR https://docs.microsoft.com/media/logos/image3.svg
