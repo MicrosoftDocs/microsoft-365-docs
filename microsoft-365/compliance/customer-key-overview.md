@@ -53,7 +53,9 @@ We don't currently offer customer control of the encryption keys for Skype Meeti
 
 A data encryption policy defines the encryption hierarchy Customer Key uses to encrypt each of the keys you provide as well as the availability key protected by Microsoft. You create one or more DEPs when you set up Customer Key. Next, you assign a DEP to parts of each service that you can encrypt. For example:
 
-**Exchange Online and Skype for Business** You can create up to 50 DEPs to mailboxes in your organization. Each mailbox gets assigned to one DEP. When you assign the DEP, ***encryption doesn't begin automatically, it's triggered by a powershell cmdlet or a mailbox move as described in [Set up Customer Key for Office 365](customer-key-set-up.md). Later, you can reassign the mailbox to another DEP as described in [Manage Customer Key for Office 365](customer-key-manage.md). Each mailbox must have appropriate licenses. (For more information, see [Customer Key licensing](#about-customer-key-licensing).)
+**Exchange Online and Skype for Business** You can create up to 50 DEPs for your organization. You assign each mailbox to one DEP. When you assign the DEP, ***encryption doesn't begin automatically, it's triggered by a powershell cmdlet or a mailbox move as described in [Set up Customer Key for Office 365](customer-key-set-up.md). Later, you can reassign the mailbox to another DEP as described in [Manage Customer Key for Office 365](customer-key-manage.md). Each mailbox must have appropriate licenses. (For more information, see [Customer Key licensing](#about-customer-key-licensing).)
+
+**SharePoint Online, including Team Sites, and OneDrive for Business** You can create up 1 DEP per geo for your organization. If you're not using the multi-geo feature, you can create one DEP. You assign each geo to one DEP. When you assign the DEP, ***encryption doesn't begin automatically, it's triggered by a powershell cmdlet as described in [Set up Customer Key for Office 365](customer-key-set-up.md). Later, you can reassign the mailbox to another DEP as described in [Manage Customer Key for Office 365](customer-key-manage.md). Each mailbox must have appropriate licenses. (For more information, see [Customer Key licensing](#about-customer-key-licensing).)
 
 ## About the keys used by Customer Key
 
@@ -67,7 +69,7 @@ These are keys you provide and store in Azure Key Vault.
 The data purge feature is not available with Microsoft-managed keys; only Customer Key offers this ability. For information about the data purge process and key revocation, see [Revoke your keys and start the data purge path process](customer-key-manage.md#revoke-your-keys-and-start-the-data-purge-path-process).
 
 > [!WARNING]
-> @REVIEWERS! What else to say here You can generate and store these in a Thales ? HSM or some other mechanism? Move some of the overview material about the keys here? differentiate between the customer keys and the availability key here. Keep this VERY brief.
+> @REVIEWERS! What else to say here? You can generate and store these in a Thales ? HSM or some other mechanism? Move some of the overview material about the keys here? differentiate between the customer keys and the availability key here. Keep this VERY brief.
 
 ### Availability key
 
