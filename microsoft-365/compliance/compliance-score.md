@@ -22,7 +22,7 @@ description: "Microsoft Compliance Score helps organizations simplify and automa
 
 ## What is Compliance Score
 
-Microsoft Compliance Score is a new feature in the Microsoft 365 compliance center. It calculates a personalized, risk-based score to help understand your organization's state of compliance with key standards and regulations, and recommends actions you can take to strengthen your overall compliance posture. If you use [Compliance Manager](compliance-manager-overview.md), you'll notice that Compliance Score is now a standalone feature with its own design and capabilities—many of which replace functions you previously performed within Compliance Manager.
+Microsoft Compliance Score is a new, streamlined experience that is part of your overall M365 compliance activity. As a new feature within the Microsoft 365 compliance center, Compliance Score calculates a personalized, risk-based score to help understand your organization's state of compliance with key standards and regulations, and recommends actions you can take to strengthen your overall compliance posture. If you use [Compliance Manager](compliance-manager-overview.md), you'll notice that Compliance Score is now a standalone feature with its own design and capabilities—many of which replace functions you previously performed within Compliance Manager. 
 
 ### Simplified compliance management
 
