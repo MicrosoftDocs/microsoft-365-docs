@@ -66,7 +66,7 @@ productDirectory:
         - url: ./compliance/index.yml
           text: Microsoft 365 compliance solutions help your organization comply with legal or regulatory standards.
      # Card
-    - title: Microsoft 365 security
+    - title: Microsoft 365 Security
       imageSrc: https://docs.microsoft.com/en-us/office/media/icons/lock-protected-blue.svg
       links:
         - url: ./security/index.yml
