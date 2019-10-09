@@ -24,9 +24,9 @@ As a Microsoft 365 administrator or compliance administrator, you can evaluate a
 - the top applied sensitivity labels
 - the top applied retention labels
 - the locations of your sensitive and retained data
-- a summary of activities that meet the action criteria for sensitive content, be that monitor, notify or block access
+- a summary of activities that users are taking on your sensitive content.
 
-placeholder image and text
+**placeholder image and text**
 
 ![data classification blade placeholder](media/data-classification-overview.png)
 
@@ -40,9 +40,13 @@ A sensitive information type is a pre-defined type of information, such as a soc
 
 The sensitive information type widget shows the top sensitive information types that have been found and labeled across your organization.
 
+**placeholder image**
+
 ![top sensitive information types placeholder](media/data-classification-top-sensitive-info-types.png)
 
 to find out how many items are in any given classification category, hover over the bar for the category.
+
+**placeholder image**
 
 ![top sensitive information types hover detail placeholder](media\data-classification-hover-detail-top-sensitive-info-types.png)
 
@@ -57,6 +61,8 @@ for more information on sensitivity labels, see: [Overview of sensitivity labels
 
 The sensitivity label widget shows the number of items (email or document) by sensitivity level.
 
+**placeholder image**
+
 ![breakdown of content by sensitivity label classification placeholder screenshot](media\data-classification-top-applied-sensitivity-labels.png)
 
 
@@ -65,6 +71,8 @@ The sensitivity label widget shows the number of items (email or document) by se
 Retention labels are used to manage the disposition of critical content in your organization. When applied, they can be used to control how long a document will be kept before deletion, whether it should be reviewed prior to deletion when it's retention period expires or whether it should be marked as a record which can never be deleted. For more information see, [Overview of retention labels](labels.md)
  
 The top applied retention labels widget show you how many items have a given retention label applied.
+
+**placeholder image**
 
 ![top applied retention labels placeholder screenshot](media\data-classification-top-applied-retention-labels.png)
 
