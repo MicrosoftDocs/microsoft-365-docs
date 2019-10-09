@@ -7,7 +7,7 @@ audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.date: 4/30/2019
+ms.date: 10/8/2019
 ms.collection: 
 - Strat_O365_IP
 - M365-security-compliance
@@ -18,7 +18,7 @@ description: "As an Office 365 administrator, you can revoke certain emails that
 
 # Revoke email encrypted by Office 365 Advanced Message Encryption
 
-Email revocation is offered as part of Office 365 Advanced Message Encryption. Office 365 Advanced Message Encryption is available on top of Office 365 Message Encryption in certain subscriptions. Advanced Message Encryption is included in [Microsoft 365 Enterprise E5](https://www.microsoft.com/microsoft-365/enterprise/home), Office 365 Enterprise E5, and Office 365 Education A5. If your organization has an Office 365 subscription that does not include Office 365 Advanced Message Encryption, you can purchase Advanced Message Encryption as an add-on with E5 Compliance of the Advanced Compliance SKU.
+Email revocation is offered as part of Office 365 Advanced Message Encryption. Office 365 Advanced Message Encryption is included in [Microsoft 365 Enterprise E5](https://www.microsoft.com/microsoft-365/enterprise/home), Office 365 E5, Microsoft 365 E5 (Nonprofit Staff Pricing), Office 365 Enterprise E5 (Nonprofit Staff Pricing), and Office 365 Education A5. If your organization has a subscription that does not include Office 365 Advanced Message Encryption, you can purchase it with the Microsoft 365 E5 Compliance SKU add-on for Microsoft 365 E3, Microsoft 365 E3 (Nonprofit Staff Pricing), or the Office 365 Advanced Compliance SKU add-on for Microsoft 365 E3, Microsoft 365 E3 (Nonprofit Staff Pricing), or Office 365 SKUs.
 
 This article is part of a larger series of articles about [Office 365 Message Encryption](ome.md).
 
