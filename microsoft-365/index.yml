@@ -8,7 +8,7 @@ brand: m365
 metadata:
   title: Microsoft 365 documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: description # Required; article description that is displayed in search results. < 160 chars.
-  services: service
+  services: office-365-security-compliance
   ms.service: O365-seccomp #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.subservice: subservice
   ms.topic: hub-page # Required
