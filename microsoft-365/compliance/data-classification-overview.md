@@ -18,7 +18,7 @@ description: "The data classification dashboard gives you visibility into how mu
 
 # Data classification overview page
 
-You can evaluate and then tag content in your organization in order to control where it goes, protect it no matter where it is and to ensure that it is preserved and deleted according your your organizations needs. You do this through the application of [sensitivity labels](sensitivity-labels.md), [retention labels](labels.md), and sensitive information types. There are various ways to do the discovery, evaluation and tagging, but the end result is that you may have very large numbers of documents and emails that are tagged with one or both of these labels. After you apply  your retention labels and sensitivity labels, you’ll want to see how they’re being used across your tenant. With the data classification blade provides visibility into that body of content, specifically:
+As a Microsoft 365 administrator or compliance administrator, you can evaluate and then tag content in your organization in order to control where it goes, protect it no matter where it is and to ensure that it is preserved and deleted according your your organizations needs. You do this through the application of [sensitivity labels](sensitivity-labels.md), [retention labels](labels.md), and sensitive information type classification. There are various ways to do the discovery, evaluation and tagging, but the end result is that you may have very large numbers of documents and emails that are tagged and classified with one or both of these labels. After you apply  your retention labels and sensitivity labels, you’ll want to see how the labels are being used across your tenant and what is being done with those items. With the data classification blade provides visibility into that body of content, specifically:
 
 - the volume of content that has been classified and what those classifications are
 - the top applied sensitivity labels
@@ -36,7 +36,7 @@ You can find data classification in the [Microsoft 365 compliance center](https:
 
 ## Sensitive information types classification
 
-A sensitive information type is a pre-defined type of information, such as a social security number or a credit card number that comes with Microsoft 365. For more information on sensitive information types, see [What the sensitive information types look for](what-the-sensitive-information-types-look-for).
+A sensitive information type is a pre-defined type of information, such as a social security number or a credit card number that comes with Microsoft 365. For more information on sensitive information types, see [What the sensitive information types look for](what-the-sensitive-information-types-look-for.md).
 
 The sensitive information type widget shows the top sensitive information types that have been found and labeled across your organization.
 
@@ -64,12 +64,39 @@ The sensitivity label widget shows the number of items (email or document) by se
 
 Retention labels are used to manage the disposition of critical content in your organization. When applied, they can be used to control how long a document will be kept before deletion, whether it should be reviewed prior to deletion when it's retention period expires or whether it should be marked as a record which can never be deleted. For more information see, [Overview of retention labels](labels.md)
  
-The top applied retention labels widget show you how many items have a given retention lable applied.
+The top applied retention labels widget show you how many items have a given retention label applied.
 
 ![top applied retention labels placeholder screenshot](media\data-classification-top-applied-retention-labels.png)
 
 
 ## Sensitive data by location
+
+The point of the data classification reporting is to provide visibility into the quantity of labeled items as well as their location. This widget lets you know how many labeled items the are in Exchange, SharePoint, and OneDrive etc
+
+**PLACE HOLDER SCREENSHOT OF SENSITIVE DATA BY LOCATION**
+
+![PLACEHOLDER SCREENSHOT](media\data-classification-by-location.png)
+ 
+## Top activities detected
+
+This widget provides a quick summary of the most common actions that users are taking on the sensitive labeled items. You can use the Activity explorer **INSERT LINK TO ACTIVITY EXPLORER** to drill deep down on eight different activities that Microsoft 365 tracks on labeled content and content that is located on Windows 10 endpoints.
+
+
+**Placeholder screenshot of top acivities detected**
+
+![place holder screenshot top activities dectected](\media\data-classification-top-activities.png)
+
+
+## See also
+- [Sensitivity labels](sensitivity-labels.md)
+- [Retention labels](labels.md)
+- [What the sensitive information types look for](what-the-sensitive-information-types-look-for.md)
+- [Overview of retention policies](retention-policies.md)
+
+
+
+
+
 <!--
 
 Note that the Azure Information Protection reports have [prerequisites](https://docs.microsoft.com/en-us/azure/information-protection/reports-aip#prerequisites-for-azure-information-protection-analytics) that also apply to label analytics on sensitivity labels in the Microsoft 365 compliance center and Microsoft 365 security center. For example, you need an Azure subscription that includes the Log Analytics because these reports are a result of sending information protection audit events from Azure Information Protection clients and scanners to a centralized location based on Azure Log Analytics service.
@@ -129,4 +156,3 @@ When you choose a mailbox or site collection, you can view a list of items with 
 
 In addition, note these reports use Azure Monitor to store the data in a Log Analytics workspace that your organization owns. Therefore, the user should be added as a reader to the Azure Monitoring worksapce that holds the data - for more information, see [Permissions required for Azure Information Protection analytics](https://docs.microsoft.com/en-us/azure/information-protection/reports-aip#permissions-required-for-azure-information-protection-analytics). -->
 
-## Potential risky activity
