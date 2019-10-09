@@ -39,7 +39,7 @@ The following table describes the properties that are included (depending on the
 |ChannelName|The name of a Microsoft Teams channel. The team that the channel is located in is identified by the **TeamName** and **TeamGuid** properties.|Microsoft Teams|
 |Client|The client device, the device OS, and the device browser used for the login event (for example, Nokia Lumia 920; Windows Phone 8; IE Mobile 11).|Azure Active Directory|
 |ClientInfoString|Information about the email client that was used to perform the operation, such as a browser version, Outlook version, and mobile device information|Exchange (mailbox activity)|
-|ClientIP|The IP address of the device that was used when the activity was logged. The IP address is displayed in either an IPv4 or IPv6 address format.<br/><br/>Note that for admin activity for Azure Active Directory-related events, the value for ClientIP property isn't logged and is replaced with the value `null`. |Exchange and Azure Active Directory|
+|ClientIP|The IP address of the device that was used when the activity was logged. The IP address is displayed in either an IPv4 or IPv6 address format.<br/><br/>Note that for admin activity for Azure Active Directory-related events, the IP address isn't logged and the value for the ClientIP property is `null`. |Exchange and Azure Active Directory|
 |ClientIPAddress|Same as ClientIP.|SharePoint|
 |CreationTime|The date and time in Coordinated Universal Time (UTC) when the user performed the activity.|All|
 |DestinationFileExtension|The file extension of a file that is copied or moved. This property is displayed only for the FileCopied and FileMoved user activities.|SharePoint|
