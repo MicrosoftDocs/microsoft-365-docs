@@ -127,7 +127,7 @@ Microsoft Secure Score is a numerical summary of your security posture based on 
 
 In order to make Microsoft Secure Score a better representative of your security posture and improve usability, we are making some changes in the near future. Your score and the maximum possible score will change. However, this does not imply a change in your security posture.
 
-### Removed “not scored” and “review” improvement actions
+### Removing “not scored” and “review” improvement actions
 
 One of the principles of Secure Score is that the score should be standardized and easy to relate to. Having improvement actions that are not measurable or actionable has been causing confusion. One Microsoft Secure Score only makes sense when every recommendation can have a clear effect on the score. Not scored improvement actions are not measurable, and review improvement actions are not measured to the same standard as other improvement actions.  
 
@@ -137,9 +137,9 @@ For these reasons, all improvement actions that were not scored or required a re
 
 To standardize points across multiple experiences, each Secure Score improvement action point totals will be updated to be worth 10 points or less. It is necessary be more consistent across the wide breather of security controls that we have today and ones that we will be adding in the future. While this is a significant change and you will see a drop in point totals, there will be no change to your security posture.  
 
-## Preview features
+### Preview features
 
-The following features are included in the preview release:
+The following features will be included in the preview release:
 
 * All new metrics and trends views for CISO and lead level discussions
 * New ways to track and benchmark your score
