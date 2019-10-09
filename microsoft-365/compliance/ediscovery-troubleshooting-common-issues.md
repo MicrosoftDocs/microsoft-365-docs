@@ -138,7 +138,7 @@ When running an eDiscovery search, if the search continually fails with error si
 
 2. Connect to [Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) and then enter the following command:
 
-    ```powershell
+    ```powershell Set-CaseHoldPolicy -RetryDistribution
     Get-ComplianceSearch <searchname> | FL
     ```
 
@@ -156,17 +156,28 @@ eDiscovery Case Hold Policy Sync Distribution error. The error reads:
 
 ### Resolution
 
-1.	Connect to [Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) and then enter the following command:
+1.	Connect to [Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) and then enter the following command for eDiscovery CaseHold
+
+ ```powershell
+    Get-CaseHoldPolicy  <policyname> - DistributionDetail | FL
+    ```
+For a Retention Policy Hold , run the following:
 
     ```powershell
     Get-RetentionCompliancePolicy  <policyname> - DistributionDetail | FL
     ```
 
 2. Examine the value in the DistributionDetail parameter for errors like the following:
+ 
+   > Error: Resources :It's taking longer than expected to deploy the policy. It might take an additional 2 hours to update the final deployment status, so check back in a couple hours.” 
+   
+   3. Try running -RetryDistribution on the policy in question:
+   
+   
+    Set-CaseHoldPolicy  <policyname> -RetryDistribution 
+    Set-RetentionCompliancePolicy  <policyname> -RetryDistribution 
 
-   > If error exists, create escalation to PG to force a manual re-sync on the Policy.
-
-3. Contact Microsoft Support.
+4. Contact Microsoft Support.
 
 ## See Also
 
