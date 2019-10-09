@@ -52,7 +52,7 @@ To instruct Customer Key to use the new key to encrypt mailboxes in Office 365 r
 
    Within 72 hours, the active mailboxes associated with this DEP become encrypted with the new key.
 
-2. To check the value for the DataEncryptionPolicyID property for the mailbox, use the steps in [Determine the DEP assigned to a mailbox](customer-key-manage.md#DeterminemailboxDEP). The value for this property changes once the service applies the updated key.
+2. To check the value for the DataEncryptionPolicyID property for the mailbox, use the steps in [Determine the DEP assigned to a mailbox](customer-key-manage.md#determine-the-dep-assigned-to-a-mailbox). The value for this property changes once the service applies the updated key.
   
 ## Update the Customer Key for SharePoint Online, including Team Sites, and OneDrive for Business
 
