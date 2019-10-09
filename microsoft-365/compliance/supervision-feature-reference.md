@@ -162,7 +162,7 @@ If you want to reduce the amount of content to review, you can specify a percent
 
 ## Notices
 
-You can create notice templates if you want to send users an email reminder notice for policy violations as part of the issue resolution process. Notices templates are custom email templates where you can define the following message fields:
+You can create notice templates if you want to send users an email reminder notice for policy matches as part of the issue resolution process. Notices templates are custom email templates where you can define the following message fields:
 
 - Template name
 - Sender address
