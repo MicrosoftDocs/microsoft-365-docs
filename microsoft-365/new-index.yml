@@ -24,7 +24,7 @@ highlightedContent:
   items:
     # Card
     - title: Test lab guides
-      itemType: how-to-guide
+      itemType: tutorial
       url: ./enterprise/m365-enterprise-test-lab-guides.md
     # Card
     - title: Support for users
@@ -32,7 +32,7 @@ highlightedContent:
       url: https://support.microsoft.com
     # Card
     - title: Developers
-      itemType: get-started
+      itemType: reference
       url: https://developer.microsoft.com/microsoft-365
 
 # productDirectory section (optional)
@@ -88,6 +88,3 @@ additionalContent:
         - title: Microsoft 365 Tech Community
           summary: The place to share Microsoft 365 experiences and to engage and learn from experts. 
           url: https://techcommunity.microsoft.com/t5/Microsoft-365/ct-p/microsoft365
-
-  # footer (optional)
-  footer: "footertext [linktext](https://docs.microsoft.com/footerfile)"
