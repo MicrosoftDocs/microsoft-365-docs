@@ -3,7 +3,7 @@ title: "Learn about the availability key for Office 365 Customer Key"
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 9/23/2019
+ms.date: 10/9/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -69,17 +69,17 @@ Microsoft engineering is working on exposing logs to your admin dashboard that s
 
 Customer Key assists you in meeting compliance obligations by allowing you to revoke your keys when you leave the service. When you revoke your keys as part of leaving the service, the availability key is deleted or disabled resulting in cryptographic deletion of your data. Cryptographic deletion mitigates the risk of data remanence which is important for meeting both security and compliance obligations. Customer Key is not a solution for preventing Microsoft personnel from accessing to your data, which is a risk mitigated by the following access controls:
 
-- If Microsoft employees ever need access to your tenant, as part of providing support you have requested:
+If Microsoft employees ever need access to your tenant, as part of providing support you have requested:
 
-    - The assigned engineer must have a valid support ticket submitted by you
+- The assigned engineer must have a valid support ticket submitted by you
 
-    - The engineer must request privilege escalation to your tenant through an internal escalation tool
-    
-    - The privileged access escalation is programmatically time-bound and automatically revokes engineer access upon time expiration or logout
+- The engineer must request privilege escalation to your tenant through an internal escalation tool
 
-    - The request must be approved by another engineer belonging to an approval group, which enforces segregation of duties
-    
-    - If you have Customer Lockbox properly licensed and configured, you will receive a Customer Lockbox request that allows you to approve or deny the engineer's access to your data. If you approve the request, the service generates customer-visible logs for the Customer Lockbox request. 
+- The privileged access escalation is programmatically time-bound and automatically revokes engineer access upon time expiration or logout
+
+- The request must be approved by another engineer belonging to an approval group, which enforces segregation of duties
+
+- If you have Customer Lockbox properly licensed and configured, you will receive a Customer Lockbox request that allows you to approve or deny the engineer's access to your data. If you approve the request, the service generates customer-visible logs for the Customer Lockbox request.
   
 > [!IMPORTANT]
 > Customer Lockbox is a technical control that prevents Microsoft engineers from accessing your tenant if you deny the request. The system will not provide the engineer access to your tenant if you deny the request. This is not a process control. For more information on Customer Lockbox, review [Customer Lockbox in Office 365](https://docs.microsoft.com/en-us/microsoft-365/compliance/customer-lockbox-requests).
@@ -90,17 +90,17 @@ Automated systems in the Office 365 service are approved to access your data to 
 
 If you lose your keys, contact Microsoft to enable the use of the availability key.
 
-### Exchange Online and Skype for Business
+### Recovery time for Exchange Online and Skype for Business
 
 Once you call in to use the availability key, you can access your mailboxes within minutes.
   
-### SharePoint Online, Team Sites, and OneDrive for Business
+### Recovery time for SharePoint Online, Team Sites, and OneDrive for Business
 
-This operation is proportional to the number of sites you have. Once you call Microsoft to use the availability key, you should be fully online within about four hours.
+This operation is proportional to the number of sites in your organization. Once you call Microsoft to use the availability key, you should be fully online within about four hours.
 
 ## Availability key in the Customer Key hierarchy
   
-Office 365 uses the availability key to wrap the tier of keys lower in the key hierarchy established for Customer Key service encryption. Different key hierarchies exist between services. Key algorithms also differ between availability keys and other keys in the hierarchy of each applicable service.
+Office 365 uses the availability key to wrap the tier of keys lower in the key hierarchy established for Customer Key service encryption. Different key hierarchies exist between services. Key algorithms also differ between availability keys and other keys in the hierarchy of each applicable service. Two lines: Exchange AK is AES-256 and SharePoint is RSA-2048
 
 ### Encryption ciphers used to encrypt keys for Exchange Online and Skype for Business
 
@@ -126,16 +126,18 @@ For SharePoint Online, including Teams Sites, and OneDrive for Business, the ava
 
 3. If the request to unwrap the DEP key using the Customer Key fails, Office 365 sends a second request to Azure Key Vault, this time instructing it to use the alternate (second) Customer Key.
 
-4. If the second request to unwrap the DEP key using the Customer Key fails, Office 365 examines the results of both requests:
+4. If the second request to unwrap the DEP key using the Customer Key fails, Office 365 examines the results of both requests.
+     
+     If the examination determines that the requests failed returning a system ERROR:
 
-    - If the examination determines that the requests failed returning a system ERROR: 
-        - Office 365 triggers the availability key to decrypt the DEP key. 
-        - Office 365 then uses the DEP key to decrypt the mailbox key and complete the user request. 
-        - In this case, Azure Key Vault is either unable to respond or unreachable due to a transient ERROR.
+         - Office 365 triggers the availability key to decrypt the DEP key. 
+         - Office 365 then uses the DEP key to decrypt the mailbox key and complete the user request. 
+         - In this case, Azure Key Vault is either unable to respond or unreachable due to a transient ERROR.
+     
+     If the examination determines that the requests failed returning ACCESS DENIED:
 
-    - If the examination determines that the requests failed returning ACCESS DENIED: 
-        - This means deliberate, inadvertent, or malicious action has been taken to render the customer keys unavailable (e.g. during the data purge process as part of leaving the service)
-        - In this case, the availability key will not be used, the user request fails, and the user receives an error message.
+         - This means deliberate, inadvertent, or malicious action has been taken to render the customer keys unavailable (e.g. during the data purge process as part of leaving the service)
+         - In this case, the availability key will not be used, the user request fails, and the user receives an error message.
 
 >[!IMPORTANT]
 >Office 365 service code always has a valid login token for reasoning over customer data to provide value-adding cloud services. Therefore, until the availability key has been deleted or disabled, it can be used as a fallback for actions initiated by, or internal to, Exchange Online and Skype for Business such as search index creation or moving mailboxes. This applies to both transient ERRORS and ACCESS DENIED requests to Azure Key Vault.
