@@ -46,6 +46,15 @@ Using keys you provide, Customer Key for Office 365 encrypts:
 
 We don't currently offer customer control of the encryption keys for Skype Meeting Broadcast and Skype Meeting content uploads. Instead, this content is encrypted along with all other content in Office 365.
 
+## About the data encryption policy (DEP)
+
+> [!WARNING]
+> @REVIEWERS a customer points out in github issues that we never define the dep. we tell them what we DO with it but not what it is. i gave this a whirl please refine this section.
+
+A data encryption policy defines the encryption hierarchy Customer Key uses to encrypt each of the keys you provide as well as the availability key protected by Microsoft. You create one or more DEPs when you set up Customer Key. Next, you assign a DEP to parts of each service that you can encrypt. For example:
+
+**Exchange Online and Skype for Business** You can create up to 50 DEPs to mailboxes in your organization. Each mailbox gets assigned to one DEP. When you assign the DEP, ***encryption doesn't begin automatically, it's triggered by a powershell cmdlet or a mailbox move as described in [Set up Customer Key for Office 365](customer-key-set-up.md). Later, you can reassign the mailbox to another DEP as described in [Manage Customer Key for Office 365](customer-key-manage.md). Each mailbox must have appropriate licenses. (For more information, see [Customer Key licensing](#about-customer-key-licensing).)
+
 ## About the keys used by Customer Key
 
 > [!WARNING]
