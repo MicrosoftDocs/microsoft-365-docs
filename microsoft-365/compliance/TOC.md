@@ -16,10 +16,10 @@
 ### [Configure privileged access management](privileged-access-management-configuration.md)
 ## Customer Key
 ### [Service encryption with Customer Key for Office 365](customer-key-overview.md)
-### [Learn about the availability key](customer-key-availability-key-understand.md)
 ### [Set up Customer Key for Office 365](customer-key-set-up.md)
 ### [Manage Customer Key for Office 365](customer-key-manage.md)
 ### [Roll or rotate a Customer Key or an availability key](customer-key-availability-key-roll.md)
+### [Learn about the availability key](customer-key-availability-key-understand.md)
 ## Communication supervision
 ### [Learn about communication supervision](supervision-policies.md)
 ### [Configure supervision policies for your organization](configure-supervision-policies.md)

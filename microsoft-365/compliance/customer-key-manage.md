@@ -69,7 +69,7 @@ Customer Key handles DEPs differently between the different Office 365 services.
 
 **Exchange Online and Skype for Business:** You can create up to 50 DEPs. For instructions, see [Create a data encryption policy (DEP) for use with Exchange Online and Skype for Business](customer-key-set-up.md#create-a-data-encryption-policy-dep-for-use-with-exchange-online-and-skype-for-business).
 
-**SharePoint Online, including Teams Sites, and OneDrive for Business:** A DEP applies to data in one geographic location, also called a geo. If you use the multi-geo feature of Office 365, you can create one DEP per geo. If you are not using multi-geo, you can create one DEP. Normally, you create the DEP when you set up Customer Key. For instructions, see [Create a data encryption policy (DEP) for each SharePoint Online and OneDrive for Business geo](customer-key-set-up.md#create-a-data-encryption-policy-dep-for-each-sharepoint-online-and-onedrive-for-business-geo).
+**SharePoint Online, including Teams Sites, and OneDrive for Business:** A DEP applies to data in one geographic location, also called a _geo_. If you use the multi-geo feature of Office 365, you can create one DEP per geo. If you are not using multi-geo, you can create one DEP. Normally, you create the DEP when you set up Customer Key. For instructions, see [Create a data encryption policy (DEP) for each SharePoint Online and OneDrive for Business geo](customer-key-set-up.md#create-a-data-encryption-policy-dep-for-each-sharepoint-online-and-onedrive-for-business-geo).
 
 > [!WARNING]
 > Isn't it also one DEP for an entire forest for SPO? That means there might be multiple tenants on a DEP? I'm a tad confused now about WHO creates the DEP to be honest. JEFF MCDOWELL please enlighten me. ***For information about creating additional DEPs, refer to the setup instructions*** link
@@ -166,11 +166,11 @@ The output from this cmdlet includes:
 
   - **Unregistered:** Customer Key encryption has not yet been applied.
 
-  - **Registering:** Customer Key encryption has been applied and your files are in the process of being encrypted. If your geo is in this state, you'll also be shown information on what percentage of sites in the geo are complete so that you can monitor encryption progress.
+  - **Registering:** Customer Key encryption has been applied and your files are in the process of being encrypted. If the key for the geo is registering, you'll also be shown information on what percentage of sites in the geo are complete so that you can monitor encryption progress.
 
   - **Registered:** Customer Key encryption has been applied, and all files in all sites have been encrypted.
 
-  - **Rolling:** A key roll is in progress. If your geo is in this state, you'll also be shown information on what percentage of sites have completed the key roll operation so that you can monitor progress.
+  - **Rolling:** A key roll is in progress. If the key for the geo is rolling, you'll also be shown information on what percentage of sites have completed the key roll operation so that you can monitor progress.
 
 ## Switch to Microsoft-managed keys from Customer Key
 
@@ -179,7 +179,7 @@ The output from this cmdlet includes:
 
  **Exchange Online and Skype for Business:** This is not currently supported.
   
- **SharePoint Online and OneDrive for Business:** You can revert to using Microsoft-managed keys separately for each geo (if you use the multi-geo feature) or for all your data if it is in a single geo.
+ **SharePoint Online and OneDrive for Business:** You can revert to using Microsoft-managed keys separately for each geo (if you use the multi-geo feature) or for all your data if your data is in a single geo.
 
 ## Revoke your keys and start the data purge path process
 
