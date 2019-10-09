@@ -85,12 +85,9 @@ additionalContent:
           summary: Microsoft certified solution providers specialize in providing up-to-date Microsoft technology-based customer solutions all over the world.
           url: https://www.microsoft.com/solution-providers/home
         # Card
-        - title: cardtitle2
-          summary: cardsummary2
-          url: file1.md OR https://docs.microsoft.com/file2
-        # Card
-        - title: cardtitle3
-          summary: cardsummary3
-          url: file1.md OR https://docs.microsoft.com/file3
+        - title: Microsoft 365 Tech Community
+          summary: The place to share Microsoft 365 experiences and to engage and learn from experts. 
+          url: https://techcommunity.microsoft.com/t5/Microsoft-365/ct-p/microsoft365
+
   # footer (optional)
   footer: "footertext [linktext](https://docs.microsoft.com/footerfile)"
