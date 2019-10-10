@@ -20,10 +20,14 @@ description: Create a secure SharePoint team site to store your most valuable an
 
 *This scenario applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
 
-Microsoft 365 Enterprise includes a full suite of cloud-based services so that you can create, store, and secure your highly regulated data stored in files. This includes data that is:
+Microsoft 365 Enterprise includes a full suite of cloud-based services so that you can create, store, secure, and manage your highly regulated data stored in files. This includes data that is:
 
 - Subject to regional regulations.
 - The most valuable data for your organization, such as trade secrets, financial or human resources information, and organization strategy.
+
+>[!Note]
+> A similar scenario using Microsoft Teams is in development.
+>
 
 A Microsoft 365 Enterprise cloud-based scenario that meets this business need requires that you:
 
