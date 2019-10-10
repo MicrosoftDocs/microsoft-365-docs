@@ -16,8 +16,8 @@
 ### [Set up mobile devices](set-up-mobile-devices.md)
 ### [Set up Windows devices](set-up-windows-devices.md)
 ## [Secure your business](security-features.md)
+### [Set up MFA](set-up-mfa.md)
 ### [Increase threat protection](increase-threat-protection.md)
-### [Get started with Conditional Access](set-up-conditional-access-policies.md)
 ### [Set up compliance features](set-up-compliance.md)
 ## Manage Users
 ### [Add users](add-users-m365b.md)
@@ -29,9 +29,9 @@
 ### [Map protection features to Intune settings](map-protection-features-to-intune-settings.md)
 ### [App protection settings for Android and iOS](app-protection-settings-for-android-and-ios.md)
 #### [Validate settings on Android or iOS](validate-settings-on-android-or-ios.md)
-### [Protection settings  for Windows 10 PCs](protection-settings-for-windows-10-pcs.md)
+### [Device protection settings  for Windows 10 PCs](protection-settings-for-windows-10-pcs.md)
 #### [Validate settings on Windows 10 PCs](validate-settings-on-windows-10-pcs.md)
-### [Protection settings for Windows 10 devices](protection-settings-for-windows-10-devices.md)
+### [App protection settings for Windows 10 PCs](protection-settings-for-windows-10-devices.md)
 ## [Migrate to Microsoft 365 Business](migrate-to-microsoft-365-business.md)
 ## Billing
 ### [Your bill](/Office365/Admin/subscriptions-and-billing/view-your-bill-or-invoice?toc=/microsoft-365/business/toc.json&bc=/microsoft-365/business/breadcrumb/toc.json)

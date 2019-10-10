@@ -10,6 +10,7 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
+hideEdit: true
 ---
 
 # Dynamics 365 Data Subject Requests for the GDPR

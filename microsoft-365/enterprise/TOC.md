@@ -83,7 +83,7 @@
 ### [Information protection](contoso-info-protect.md)
 ### [Security summary](contoso-security-summary.md)
 ### [SharePoint site for highly regulated data](contoso-sharepoint-online-site-for-highly-confidential-assets.md)
-
+## [Changes to Microsoft 365 Enterprise deployment content](microsoft-365-deploment-guide-changes.md)
 # [Desktop Deployment Center](desktop-deployment-center-home.md)
 ## [Getting Started: People, Process and Technology Guidance](getting-started.md)
 ## [Step 1: Device and App Readiness](step-1-device-and-app-readiness.md)
