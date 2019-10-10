@@ -32,7 +32,7 @@ Check for duplicate users or distribution list with the same user ID.
 
 1. Connect to [Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
-2. Retrieve all instances of the username, type:
+2. Run the following command to retrieve all instances of the username:
 
     ```powershell
     Get-Recipient <username>
@@ -59,7 +59,7 @@ An eDiscovery or content search may yield the following error:
 
 If you receive this error, we recommend that you verify the locations that failed in the search  then rerun the search only on the failed locations.
 
-1. Connect to [Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) and then enter the following command:
+1. Connect to [Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) and then run the following command:
 
     ```powershell
     Get-ComplianceSearch <searchname> | FL 
@@ -92,7 +92,7 @@ An eDiscovery search fails with error the `recipient not found`. This error may 
 
 1. Connect to [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 
-2. Check to see if the user object is synced to Exchange Online Protection type:
+2. Run the following command to check if the user is synced to Exchange Online Protection:
 
     ```powershell
     Get-Recipient <userId> | FL
@@ -108,7 +108,7 @@ When exporting search results from eDiscovery or Content Search in the Security 
 
 1.	Try using the steps identified in the article [Increase Download Speeds](https://docs.microsoft.com/en-us/office365/securitycompliance/increase-download-speeds-when-exporting-ediscovery-results).
 
-2.	If you still have issues, connect to [Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) and then enter the following command:
+2.	If you still have issues, connect to [Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) and then run the following command:
 
     ```powershell
     Get-ComplianceSearch <searchname> | FL
@@ -116,7 +116,7 @@ When exporting search results from eDiscovery or Content Search in the Security 
 
 4. Find the amount of data to be downloaded in the SearchResults and SearchStatistics parameters.
 
-5. Enter the following command:
+5. Run the following command:
 
    ```powershell
    Get-ComplianceSearchAction | FL
@@ -136,9 +136,9 @@ When running an eDiscovery search, if the search continually fails with error si
 
 1. Break the search into smaller searches and run the search again.  Try using a smaller date range or limit the number of locations being searched.
 
-2. Connect to [Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) and then enter the following command:
+2. Connect to [Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) and then run the following command:
 
-    ```powershell Set-CaseHoldPolicy -RetryDistribution
+    ```powershell Set-CaseHoldPolicy <policyname> -RetryDistribution
     Get-ComplianceSearch <searchname> | FL
     ```
 
@@ -152,16 +152,16 @@ When running an eDiscovery search, if the search continually fails with error si
 
 eDiscovery Case Hold Policy Sync Distribution error. The error reads:
 
-> "Resources: It's taking longer than expected to deploy the policy. It might take an additional two hours to update the final deployment status, so check back in a couple hours.”
+> "Resources: It's taking longer than expected to deploy the policy. It might take an additional 2 hours to update the final deployment status, so check back in a couple hours.”
 
 ### Resolution
 
-1.	Connect to [Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) and then enter the following command for eDiscovery CaseHold
+1.	Connect to [Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) and then run the following command for an eDiscovery case hold:
 
- ```powershell
+    ```powershell
     Get-CaseHoldPolicy  <policyname> - DistributionDetail | FL
     ```
-For a Retention Policy Hold , run the following:
+   For a retention policy hold, run the following command:
 
     ```powershell
     Get-RetentionCompliancePolicy  <policyname> - DistributionDetail | FL
@@ -169,13 +169,12 @@ For a Retention Policy Hold , run the following:
 
 2. Examine the value in the DistributionDetail parameter for errors like the following:
  
-   > Error: Resources :It's taking longer than expected to deploy the policy. It might take an additional 2 hours to update the final deployment status, so check back in a couple hours.” 
+   > Error: Resources: It's taking longer than expected to deploy the policy. It might take an additional 2 hours to update the final deployment status, so check back in a couple hours.” 
    
-   3. Try running -RetryDistribution on the policy in question:
+3. Try running -RetryDistribution on the policy in question:
    
-   
-    Set-CaseHoldPolicy  <policyname> -RetryDistribution 
-    Set-RetentionCompliancePolicy  <policyname> -RetryDistribution 
+    Set-CaseHoldPolicy <policyname> -RetryDistribution 
+    Set-RetentionCompliancePolicy <policyname> -RetryDistribution 
 
 4. Contact Microsoft Support.
 
