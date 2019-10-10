@@ -125,6 +125,6 @@ Typically, this error means Office 365 encountered an error while trying to vali
 
 ## Other error codes
 
-Office 365 is having difficulty delivering messages to your on-premises or partner email server. Use the **Destination server** information in the error to examine the issue in your environment, or modify the connector if there's a configuration error. 
+Office 365 is having difficulty delivering messages to your on-premises or partner email server. Use the **Destination server** information in the error to examine the issue in your environment, or modify the connector if there's a configuration error.
 
 If the error is from your partner organization (for example, a 3rd party cloud service provider), you need to contact your partner to fix the issue.
