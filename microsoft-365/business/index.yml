@@ -28,19 +28,22 @@ conceptualContent:
         - url: https://www.microsoft.com/microsoft-365/partners/resources/microsoft-365-business-licensing-deck
           itemType: overview
           text: Licenses and purchasing
-        - url: https://docs.microsoft.com/microsoft-365/business/sign-up
-          itemType: get-started
-          text: Sign up for Microsoft 365 Business
         - url: https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description
           itemType: reference
-          text: Compare Microsoft 365 Business
+          text: Compare Microsoft 365 Business plans
         - url: file2.md OR https://docs.microsoft.com/file2
           itemType: reference
           text: Service description
+        - url: support/microsoft-365-business-faqs.md
+          itemType: reference
+          text: FAQ
   #Card
     - title: How do I...
       links:
-        - url: https://docs.microsoft.com/microsoft-365/business/auto-install-or-uninstall-office
+        - url: sign-up.md
+          itemType: get-started
+          text: Sign up for Microsoft 365 Business
+        - url: auto-install-or-uninstall-office.md
           itemType: how-to-guide
           text: Install Office
         - url: https://support.office.com/article/where-to-store-files-c7c20284-bc94-47f4-9728-d28e9daf0790
@@ -88,7 +91,7 @@ conceptualContent:
         - url: protection-settings-for-windows-10-pcs.md
           itemType: how-to-guide
           text: 2. Secure your PCs
-        - url: set-up-conditional-access-policies.md
+        - url: set-up-mfa.md
           itemType: how-to-guide
           text: 3. Set up MFA
         - url: auto-install-or-uninstall-office.md
@@ -119,9 +122,9 @@ conceptualContent:
         - url: https://support.office.com/article/eaa43495-9bbb-4fca-922a-df90dee51980
           itemType: how-to-guide
           text: Send encrypted email
-        - url: file2a.md OR https://docs.microsoft.com/file2a
-          itemType: video
-          text: Create and use sensitivity labels
+        - url: https://docs.microsoft.com/en-us/microsoft-365/business/increase-threat-protection#protect-against-ransomware
+          itemType: how-to-guide
+          text: Protect against ransomware
       # footerLink (optional)
       footerLink:
         url: https://docs.microsoft.com/office365/admin/admin-home
@@ -135,9 +138,9 @@ conceptualContent:
         - url: https://docs.microsoft.com/microsoft-365/business/set-up-compliance#set-up-email-retention-with-exchange-online-archiving
           itemType: how-to-guide
           text: Set up email retention
-        - url: https://docs.microsoft.com/microsoft-365/compliance/encryption
-          itemType: how-to-guide
-          text: Encryption
+        - url: https://support.office.com/article/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9
+          itemType: video
+          text: Create and use sensitivity labels
       # footerLink (optional)
       footerLink:
         url: https://docs.microsoft.com/microsoft-365/compliance/
@@ -184,20 +187,20 @@ conceptualContent:
         url: https://docs.microsoft.com/microsoft-365/security/
         text: See more
   # Card
-    - title: Stay on top of changes and get help
+    - title: Support and community
       links:
         - url: https://techcommunity.microsoft.com/t5/Microsoft-365-Business-Blog/bg-p/Microsoft365BusinessBlog
           itemType: whats-new
-          text: Microsoft 365 Business tech community
+          text: Announcements
+        - url: https://support.office.com/article/7f681212-c649-4a3e-a43b-32b1d1e58988
+          itemType: video
+          text: Get help
         - url: https://techcommunity.microsoft.com/t5/Microsoft-365-Business/bd-p/Microsoft365business
           itemType: overview
           text: Send feedback
         - url: https://techcommunity.microsoft.com/t5/Small-and-Medium-Businesses/ct-p/SMB
           itemType: overview
           text: Small and medium business tech community
-        - url: https://support.office.com/article/7f681212-c649-4a3e-a43b-32b1d1e58988
-          itemType: video
-          text: Get help
       # footerLink (optional)
       footerLink:
         url: https://docs.microsoft.com/microsoft-365/security/
