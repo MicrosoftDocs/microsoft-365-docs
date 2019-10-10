@@ -124,6 +124,7 @@
 ### [Watch videos from the Microsoft Data Governance team](https://go.microsoft.com/fwlink/?linkid=867039)
 ## Records management
 ### [Records management](records-management.md)
+### [Records](records.md)
 ### File plan
 #### [File plan manager](file-plan-manager.md)
 #### [Retention labels](labels.md)
@@ -131,7 +132,6 @@
 #### [View label usage with label analytics](label-analytics.md)
 #### [View label activity for documents](view-label-activity-for-documents.md)
 #### [View the data governance reports](view-the-data-governance-reports.md)
-### [Records](records.md)
 ### Events
 #### [Event-based retention](event-driven-retention.md)
 #### [Automate event-based retention](automate-event-driven-retention.md)

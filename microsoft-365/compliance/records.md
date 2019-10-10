@@ -18,9 +18,17 @@ description: ""
 
 # Overview of records
 
-<Roberto, please add an overview\>
+<Roberto, please review the overview and revise as necessary>
 
-\<Roberto, as per your comment, then Records in Exchange, Records and folders, and Records can’t be deleted sections can be added here in this section, which I have done\>
+At a high level, records management means that:
+  
+- Important content is classified as a record by users.
+    
+- A record can't be modified or deleted.
+    
+- Records are finally disposed of after their stated lifetime is past.
+    
+You use retention labels to classify content as a record. After you create retention labels that to declare records, you can either publish those labels or auto-apply those labels to content that you want to classify as a record. By using retention labels to declare records, you can implement a single, consistent records-management strategy across Office 365, whereas other records-management features such as the Record Center apply only to SharePoint content. And you can enforce retention actions on records, so that they're disposed of automatically at the end of their lifecycle.
 
 Keep the following things in mind about records:
 
@@ -36,19 +44,19 @@ Keep the following things in mind about records:
 
     - The label can't be removed.
 
-  - **Records and folders.** You can apply a retention label to a folder in Exchange, SharePoint, or OneDrive. If a folder is labeled as a record, and you move an item into the folder, the item is labeled as a record. When you move the item out of the folder, the item continues to be labeled as a record.
+  - **Records and folders.** You can apply a retention label to a folder in Exchange, SharePoint, or OneDrive. If a folder is labeled as a record, and you move an item into the folder, the item is labeled as a record. When you move the item out of the folder, the item remains labeled as a record.
 
   - **Records can't be deleted**. If you attempt to delete a record in Exchange, the item is moved to the Recoverable Items folder as described in [How a retention policy works with content in place](https://docs.microsoft.com/en-us/office365/securitycompliance/retention-policies#how-a-retention-policy-works-with-content-in-place).
 
     If you attempt to delete a record in a SharePoint, you see an error that the item wasn't deleted, and the item remains in the library.
 
+    ![Message that item wasn't deleted from SharePoint](media/d0020726-1593-4a96-b07c-89b275e75c49.png)
+
     If you attempt to delete a record in OneDrive, the item is moved to the Preservation Hold library as described in [How a retention policy works with content in place](https://docs.microsoft.com/en-us/office365/securitycompliance/retention-policies#how-a-retention-policy-works-with-content-in-place).
 
 ## Using retention labels to declare records
 
-(add intro content?)
-
-To declare content as a record, you need to do the following:
+When you create a retention label, you have the option to use the retention label to classify the content as a record. To declare content as a record, you need to do the following:
 
 1. Create a retention label. In the Microsoft 365 compliance center, go to **Records Management** \> **File Plan**. On the **File plan** page, click **File plan actions** \> **Create a label**.
 
@@ -130,7 +138,7 @@ Records are stored in a Records folder in the Preservation Hold library in the t
 
 The Preservation Hold library is visible only to site collection administrators. Also, the Preservation Hold library doesn't exist by default. It’s created only when content subject to a retention label or retention policy is deleted for the first time in the site collection.
 
-## Searching the audit log for record versioning-related events
+## Searching the audit log for record versioning events
 
 The actions of locking and unlocking records are logged in the Office 365 audit log. You can search for the specific activities **Changed record status to locked** and **Changed record status to unlocked**, which are located in the **File and page activities** section in the **Activities** dropdown list on the Audit log search page in the security and compliance center.
 <br/><br/>
