@@ -71,7 +71,7 @@ For a 1-page summary of this scenario, see the [Empower remote workers poster](m
 
 [![Empower remote workers poster](./media/empower-people-to-work-remotely/empower-remote-workers-poster-half.png)](media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf)
 
-You can also [download this poster](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/master/microsoft-365/enterprise/media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf) and print it in letter, legal, or tabloid (11 x 17) formats.
+You can also [download this poster](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/public/microsoft-365/enterprise/media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf) and print it in letter, legal, or tabloid (11 x 17) formats.
 
 
 ## Phase 1: Deploy Microsoft 365 features and capabilities for remote workers
