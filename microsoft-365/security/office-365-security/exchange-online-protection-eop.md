@@ -1,5 +1,5 @@
 ---
-title: "Exchange Online Protection "
+title: "Exchange Online Protection"
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -15,7 +15,7 @@ description: "Here are a few things you should be aware of before you start work
 # Exchange Online Protection
 
 Welcome to the Microsoft Exchange Online Protection (EOP) hosted email filtering service. Here are a few things you should be aware of before you start working with EOP and using this content:
-  
+
 - To learn more about EOP, check out the [Exchange Online Protection Service Description](https://go.microsoft.com/fwlink/p/?LinkId=320619). Other useful resources are [Exchange Online Protection overview](exchange-online-protection-overview.md), [EOP general FAQ](eop-general-faq.md), and [EOP features](eop-features.md), as well as the [Exchange Online Protection home page](https://go.microsoft.com/fwlink/?LinkId=279912).
 
 - To get started with EOP, new customers should head for [Set up your EOP service](set-up-your-eop-service.md). This topic provides steps that'll help you get EOP up and running.
@@ -25,7 +25,7 @@ Welcome to the Microsoft Exchange Online Protection (EOP) hosted email filtering
 ## EOP Help for administrators
 
 The Help content for EOP administrators consists of the following top-level categories:
-  
+
 - [Exchange Online Protection overview](exchange-online-protection-overview.md): Introduces how EOP works and provides links to additional information.
 
 - [EOP features](eop-features.md): Provides a list of features that are available in EOP.
@@ -46,7 +46,7 @@ The Help content for EOP administrators consists of the following top-level cate
 
 - [Reporting and message trace in Exchange Online Protection](reporting-and-message-trace-in-exchange-online-protection.md): Describes the reports and troubleshooting tools that are available.
 
-- [Exchange admin center in Exchange Online Protection ](exchange-admin-center-in-exchange-online-protection-eop.md): Describes how to access and navigate through the Exchange admin center (EAC) management interface in order to manage your EOP service.
+- [Exchange admin center in Exchange Online Protection](exchange-admin-center-in-exchange-online-protection-eop.md): Describes how to access and navigate through the Exchange admin center (EAC) management interface in order to manage your EOP service.
 
 - [Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/exchange-online-protection-powershell): Provides information about remote PowerShell, which lets you manage your EOP service from the command line.
 
@@ -55,7 +55,7 @@ The Help content for EOP administrators consists of the following top-level cate
 ## EOP Help for end users
 
 The Help content for assisting EOP end users to manage spam consists of the following topics:
-  
+
 - [Find and release quarantined messages as a user](find-and-release-quarantined-messages-as-a-user.md): Describes how end users can find and release their own spam-quarantined messages in the spam quarantine user interface, and optionally report them as not junk to Microsoft.
 
 - [Submit spam, non-spam, and phishing scam messages to Microsoft for analysis](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md): Describes the different ways end users can submit spam (junk) and non-spam (not junk) messages to Microsoft. This topic includes links to the reporting tools available in Microsoft Outlook and Outlook on the web (formerly known as Outlook Web App).
