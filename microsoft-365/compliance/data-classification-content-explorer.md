@@ -16,5 +16,6 @@ search.appverid:
 description: "blah"
 ---
 
-# View label usage with label analytics
+# Using data classification content explorer
+
 
