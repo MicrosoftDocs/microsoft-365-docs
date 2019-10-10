@@ -21,9 +21,9 @@ description: "Configure communication supervision for Office 365"
 # Configure communication supervision for Office 365
 
 > [!IMPORTANT]
-> This guidance applies to configuring communication in an Office 365 subscription. If you want to configure communication supervision for a Microsoft 365 subscription, see [Configure communication supervision for Microsoft 365 (Preview)](configure-supervision-policies.md).
+> This guidance applies to configuring communication in an Office 365 subscription. If you want to configure communication supervision for a Microsoft 365 subscription, see [Configure communication supervision for Microsoft 365 (preview)](configure-supervision-policies.md).
 
-Use communication supervision policies to capture employee communications for examination by internal or external reviewers. For more information about how supervision policies can help you monitor communications in your organization, see [Communication supervision policies in Microsoft 365](supervision-policies.md).
+Use communication supervision policies to capture employee communications for examination by internal or external reviewers. For more information about how communication supervision policies can help you monitor communications in your organization, see [Communication supervision policies in Microsoft 365 (preview)](supervision-policies.md).
 
 > [!NOTE]
 > Users monitored by supervision policies must have either a Microsoft 365 E5 Compliance license, an Office 365 Enterprise E3 license with the Advanced Compliance add-on, or be included in an Office 365 Enterprise E5 subscription.
