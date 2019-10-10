@@ -66,9 +66,9 @@ To meet these criteria for remote workers, use the following Microsoft 365 Enter
 
 The following phases step you through deploying the feature of Microsoft 365 Enterprise for remote access and driving adoption for remote workers. If you have already deployed elements of these phases, ensure that they meet the stated requirements before moving on to the next element.
 
-For a 1-page summary of this scenario, see the [Empower Remote Workers poster](media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf).
+For a 1-page summary of this scenario, see the [Empower remote workers poster](media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf).
 
-[![Empower Remote Workers poster](./media/empower-people-to-work-remotely/empower-remote-workers-poster-half.png)](media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf)
+[![Empower remote workers poster](./media/empower-people-to-work-remotely/empower-remote-workers-poster-half.png)](media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf)
 
 You can also [download this poster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/mediaempower-people-to-work-remotely/empower-remote-workers-scenario.pdf) and print it in letter, legal, or tabloid (11 x 17) formats.
 
