@@ -16,13 +16,11 @@ description: "Microsoft Compliance Score helps organizations simplify and automa
 
 # Microsoft Compliance Score (Preview)
 
-## Introduction
-
  **Microsoft Compliance Score**, a new feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md), is now available for public preview. Read this article to understand what Compliance Score is, how it can help you manage compliance for your organization, and how to get started.
 
 ## What is Compliance Score
 
-Microsoft Compliance Score is a new, streamlined experience that is part of your overall M365 compliance activity. As a new feature within the Microsoft 365 compliance center, Compliance Score calculates a personalized, risk-based score to help understand your organization's state of compliance with key standards and regulations, and recommends actions you can take to strengthen your overall compliance posture. If you use [Compliance Manager](compliance-manager-overview.md), you'll notice that Compliance Score is now a standalone feature with its own design and capabilities—many of which replace functions you previously performed within Compliance Manager. 
+Microsoft Compliance Score is a new, streamlined experience that is part of your overall M365 compliance activity. As a new feature within the Microsoft 365 compliance center, Compliance Score calculates a personalized, risk-based score to help understand your organization's state of compliance with key standards and regulations, and recommends actions you can take to strengthen your overall compliance posture. If you use [Compliance Manager](compliance-manager-overview.md), you'll notice that Compliance Score is now a standalone feature with its own design and capabilities to help you manage compliance more easily.
 
 ### Simplified compliance management
 
@@ -31,6 +29,12 @@ Compliance Score helps to simplify and automate the process of managing complian
 - **Continuous assessment** - automatically scans through your Microsoft 365 environments to detect and monitor the effectiveness of data protection controls in your system
 - **Suggested solutions** - provides recommendations and step-by-step guidance for how to implement controls to maximize your score
 -  **Streamlined collaboration** - lets you easily assign, track, record, and report on compliance tasks with built-in workflow tools
+
+## Relationship to Compliance Manager
+
+Compliance Score acts as a simplified version of Compliance Manager. Many of the tasks you may be used to doing in Compliance Manager can now be done more easily in Compliance Score. So that you can benefit from improved functionality and experience, use Compliance Score as the starting point for monitoring your compliance score and working on compliance-strengthening activities (called **Improvement actions** in Compliance Score).
+
+During public preview, some functionality remain in Compliance Manager, such as managing Assessments and creating templates. We recommend beginning all of your compliance management functions in Compliance Score. When you come to functions that are handled in Compliance Manager, you will be clearly directed to that tool. Accordingly, at points in this documentation, you will be directed to Compliance Manager topics.
 
 ## Understanding your score
 
@@ -42,12 +46,6 @@ Visit other topics for details about [how your compliance score is calculated](c
 
 > [!IMPORTANT]
 > Compliance Score does not express an absolute measure of organizational compliance with any particular standard or regulation. It expresses the extent to which you have adopted controls which can reduce the risks to personal data and individual privacy. Compliance Score should not be interpreted as a guarantee in any way.
-
-## Relationship to Compliance Manager
-
-Compliance Score acts as a simplified version of Compliance Manager. Many of the tasks you may be used to doing in Compliance Manager can now be done more easily in Compliance Score. So that you can benefit from improved functionality and experience, use Compliance Score as the starting point for monitoring your compliance score and working on compliance-strengthening activities (called **Improvement actions** in Compliance Score).
-
-During public preview, some functionality remain in Compliance Manager, such as managing Assessments and creating templates. We recommend beginning all of your compliance management functions in Compliance Score. When you come to functions that are handled in Compliance Manager, you will be clearly directed to that tool. Accordingly, at points in this documentation, you will be directed to Compliance Manager topics.
 
 ## Key components: controls, assessments, templates, & groups
 
