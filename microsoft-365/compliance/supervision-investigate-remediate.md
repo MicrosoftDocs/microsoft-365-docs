@@ -1,5 +1,5 @@
 ---
-title: "Investigate and remediate communication supervision alerts"
+title: "Investigate and remediate communication supervision alerts (preview)"
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -18,7 +18,7 @@ search.appverid:
 description: "Investigate and remediate communication supervision alerts in Microsoft 365."
 ---
 
-# Investigate and remediate communication supervision alerts
+# Investigate and remediate communication supervision alerts (preview)
 
 After you've configured your communication supervision policies, you'll start to receive alerts in the Microsoft 365 compliance center for message issues that match your policy conditions. Follow the workflow instructions here to investigate and remediate alert issues.
 

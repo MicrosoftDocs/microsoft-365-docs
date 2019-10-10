@@ -1,5 +1,5 @@
 ---
-title: "Communication supervision in Microsoft 365 (Preview)"
+title: "Communication supervision in Microsoft 365 (preview)"
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -18,7 +18,7 @@ search.appverid:
 description: "Learn about communication supervision in Microsoft 365"
 ---
 
-# Communication supervision in Microsoft 365 (Preview)
+# Communication supervision in Microsoft 365 (preview)
 
 Communication supervision in Microsoft 365 allows you to capture employee corporate communications for examination and remediation by designated reviewers. By defining specific conditions in supervision policies, you can scan and capture internal and external email, Microsoft Teams, or 3rd-party communications in your organization. Designated reviewers can then examine messages with alerts to make sure that they are compliant with your organization's message standards and remediate them according to their importance and severity.
 
