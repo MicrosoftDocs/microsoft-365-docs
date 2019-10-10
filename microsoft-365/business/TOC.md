@@ -16,8 +16,8 @@
 ### [Set up mobile devices](set-up-mobile-devices.md)
 ### [Set up Windows devices](set-up-windows-devices.md)
 ## [Secure your business](security-features.md)
+### [Set up MFA](set-up-mfa.md)
 ### [Increase threat protection](increase-threat-protection.md)
-### [Get started with Conditional Access](set-up-conditional-access-policies.md)
 ### [Set up compliance features](set-up-compliance.md)
 ## Manage Users
 ### [Add users](add-users-m365b.md)
