@@ -46,7 +46,7 @@ A sample ScanOnly command line that completes the compatibility scan silently wo
 
 	Setup.EXE /Auto Upgrade /Quiet /NoReboot /Compat ScanOnly
 
-For more information on ScanOnly and other Windows setup command switches please review the [Windows Setup Commmand-line Options](https://aka.ms/setupswitches).
+For more information on ScanOnly and other Windows setup command switches please review the [Windows Setup Command-line Options](https://aka.ms/setupswitches).
 
 ## Recommended Tool: Desktop Analytics
 
