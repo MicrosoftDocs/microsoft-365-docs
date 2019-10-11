@@ -19,7 +19,7 @@
 ### [Service encryption with Customer Key for Office 365 FAQ](service-encryption-with-customer-key-faq.md)
 ## [Communications compliance]()
 ### [Learn about communications compliance (preview)](communications-compliance.md)
-### [Configure communications compliance in Microsoft 365](communications-compliance-configure.md)
+### [Configure communications compliance in Microsoft 365 (preview)](communications-compliance-configure.md)
 ### [Investigate and remediate communications compliance alerts (preview)](communications-compliance-investigate-remediate.md)
 ### [Feature reference for communications compliance](communications-compliance-feature-reference.md)
 ### [Supervision policies in Office 365](supervision-policies.md)
