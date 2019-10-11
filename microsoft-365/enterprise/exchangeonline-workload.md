@@ -69,8 +69,11 @@ If you are doing your own planning, or in conjunction with FastTrack, you need t
 Use these resources to prepare for the technical aspects of an Exchange Online rollout: 
 
 - [Ways to migrate multiple email accounts to Office 365](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration)
+- [Migrate Exchange Server public folders to Exchange Online](https://docs.microsoft.com/Exchange/collaboration/public-folders/migrate-to-exchange-online?view=exchserver-2019)
+- [Migrate Exchange Server public folders to Office 365 Groups](https://docs.microsoft.com/Exchange/collaboration/public-folders/batch-migration-to-office-365-groups?view=exchserver-2019)
 - [Collaboration in Exchange Online](https://docs.microsoft.com/exchange/collaboration-exo/collaboration-exo)
 - [Recipients in Exchange Online](https://docs.microsoft.com/exchange/recipients-in-exchange-online/recipients-in-exchange-online)
+- [Outlook for iOS and Android](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android)
 
 For a better understanding of security in Exchange Online, review the following resources:
 
