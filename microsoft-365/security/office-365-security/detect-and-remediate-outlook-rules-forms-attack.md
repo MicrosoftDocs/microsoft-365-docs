@@ -118,7 +118,7 @@ There are two remote PowerShell cmdlets you can use to remove or disable dangero
 Steps for mailboxes that are on an Exchange server
 
 1. Connect to the Exchange server using remote PowerShell. Follow the steps in [Connect to Exchange servers using remote PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-server/connect-to-exchange-servers-using-remote-powershell?view=exchange-ps).
-2. If you want to completely remove a single rule, multiple rules, or all rules from a mailbox use the [Remove-Inbox Rule cmdlet ](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Remove-InboxRule?view=exchange-ps)- use this to completely remove one, multiple, or all rules from the mailbox.
+2. If you want to completely remove a single rule, multiple rules, or all rules from a mailbox use the [Remove-Inbox Rule cmdlet](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Remove-InboxRule?view=exchange-ps)- use this to completely remove one, multiple, or all rules from the mailbox.
 3. If you want to retain the rule and its contents for further investigation use the [Disable-InboxRule cmdlet](https://technet.microsoft.com/en-us/library/dd298120(v=exchg.160).aspx). 
 
 Steps for mailboxes in Exchange Online
