@@ -10,7 +10,6 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
-ms.assetid: 41ae293a-bd5c-4083-acd8-e1a2b4329da6
 description: "Learn about the availability key used to recover lost Office 365 Customer Keys."
 ---
 
@@ -129,7 +128,7 @@ For SharePoint Online, including Teams Sites, and OneDrive for Business, the ava
 4. If the second request to unwrap the DEP key using the Customer Key fails, Office 365 examines the results of both requests.
      
      If the examination determines that the requests failed returning a system ERROR:
-
+         
          - Office 365 triggers the availability key to decrypt the DEP key. 
          - Office 365 then uses the DEP key to decrypt the mailbox key and complete the user request. 
          - In this case, Azure Key Vault is either unable to respond or unreachable due to a transient ERROR.
