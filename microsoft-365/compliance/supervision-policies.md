@@ -15,7 +15,7 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-description: "Learn about Supervision policies in Office 365"
+description: "Learn about supervision policies in Office 365"
 ---
 
 # Supervision policies in Office 365

@@ -22,7 +22,7 @@ description: "Feature reference for communication compliance in Microsoft 365. L
 
 ## Policies
 
-You create communication compliance policies for Microsoft 365 organizations in the Microsoft 365 compliance center. If you're an Office 365 organization, you'll configure communication compliance policies in the Office 365 security and compliance center. These policies define which communications and users are subject to review in your organization, define custom conditions that the communications must meet, and specifies who should perform reviews. Users included in the Supervisory Review role group can set up policies and anyone who has this role assigned can access the supervision page in either the Microsoft 365 or Office 365 compliance centers. If needed, you can export the history of modifications to a policy to a .csv file that also includes the current status of alerts pending review, escalated items, and resolved items. Policies can be deleted when no longer needed.
+You create communication compliance policies for Microsoft 365 organizations in the Microsoft 365 compliance center. If you're an Office 365 organization, you'll configure communication compliance policies in the Microsoft 365 compliance center. These policies define which communications and users are subject to review in your organization, define custom conditions that the communications must meet, and specifies who should perform reviews. Users included in the Supervisory Review role group can set up policies and anyone who has this role assigned can access the supervision page in the Microsoft 365 compliance center. If needed, you can export the history of modifications to a policy to a .csv file that also includes the current status of alerts pending review, escalated items, and resolved items. Policies can be deleted when no longer needed.
 
 ## Policy templates
 
@@ -172,20 +172,6 @@ You can create notice templates if you want to send users an email reminder noti
 
 When selecting a notice template to apply to a policy violation, you can choose to accept the field values you defined for the template or overwrite the fields as needed. The Message body field accepts either text or HTML data, all other notice template fields accept text-only data.
 
-## PowerShell reference for Office 365 subscriptions
-
-If needed, you can create and manage communication compliance policies in Office 365 subscriptions with the following PowerShell cmdlets. Graph and PowerShell scripting support is not supported for communication compliance in Microsoft 365 subscriptions.
-
-- [New-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-supervisoryreviewpolicyv2?view=exchange-ps)
-- [Get-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/get-supervisoryreviewpolicyv2?view=exchange-ps)
-- [Set-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-supervisoryreviewpolicyv2?view=exchange-ps)
-- [Remove-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/remove-supervisoryreviewpolicyv2?view=exchange-ps)
-- [New-SupervisoryReviewRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-supervisoryreviewrule?view=exchange-ps)
-- [Set-SupervisoryReviewRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-supervisoryreviewrule?view=exchange-ps)
-- [Get-SupervisoryReviewActivity](https://docs.microsoft.com/powershell/module/exchange/reporting/get-supervisoryreviewactivity)
-- [Get-SupervisoryReviewOverallProgressReport](https://docs.microsoft.com/powershell/module/exchange/reporting/get-supervisoryreviewoverallprogressreport)
-- [Get-SupervisoryReviewTopCasesReport](https://docs.microsoft.com/powershell/module/exchange/reporting/get-supervisoryreviewtopcasesreport)
-
 ## Monitor & manage
 
 It is easy to review the results of your supervision policies and apply a resolution tag. You can quickly see:
@@ -290,4 +276,4 @@ In addition to information provided in the supervision reports and logs, you can
 
 ## Ready to get started?
 
-To configure communication compliance for your Microsoft 365 organization, see [Configure communication compliance for your Microsoft 365 organization (preview)](configure-supervision-policies.md). To configure communication compliance in your Office 365 organization, see [Configure communication compliance in Office 365](supervision-configure-office-365.md).
+To configure communication compliance for your Microsoft 365 organization, see [Configure communication compliance for your Microsoft 365 organization (preview)](communication-compliance-configure.md).

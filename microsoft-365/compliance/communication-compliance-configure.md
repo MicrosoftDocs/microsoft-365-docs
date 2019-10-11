@@ -1,5 +1,5 @@
 ---
-title: "Configure communication compliance for Microsoft 365 (Preview)"
+title: "Configure communication compliance for Microsoft 365 (preview)"
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -18,46 +18,46 @@ search.appverid:
 description: "Set up communication compliance policies to configure employee communications for review."
 ---
 
-# Configure communication compliance for Microsoft 365 (Preview)
+# Configure communication compliance for Microsoft 365 (preview)
 
 > [!IMPORTANT]
 > This guidance applies to configuring communication compliance in a Microsoft 365 subscription. If you want to configure supervision policies for an Office 365 subscription, see [Configure supervision for Office 365](supervision-policies.md).
 
-Use communication compliance policies to capture employee communications for examination by internal or external reviewers. For more information about how supervision policies can help you monitor communications in your organization, see [communication compliance policies in Microsoft 365](supervision-policies.md).
+Use communication compliance policies to capture employee communications for examination by internal or external reviewers. For more information about how communication compliance policies can help you monitor communications in your organization, see [Communication compliance policies in Microsoft 365](communication-compliance.md).
 
 > [!NOTE]
-> Users monitored by supervision policies must have either a Microsoft 365 E5 Compliance license, an Office 365 Enterprise E3 license with the Advanced Compliance add-on, or be included in an Office 365 Enterprise E5 subscription.
+> Users monitored by communication compliance policies must have either a Microsoft 365 E5 Compliance license, an Office 365 Enterprise E3 license with the Advanced Compliance add-on, or be included in an Office 365 Enterprise E5 subscription.
 > If you don't have an existing Enterprise E5 plan and want to try supervision, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
   
 Follow these steps to set up and use communication compliance in your Microsoft 365 organization:
 
 - **Step 1 (optional)**: FIRST RUN EXPERIENCE?
   
-- **Step 1 (optional)**: [Set up groups for Supervision](#step-1-set-up-groups-for-supervision-optional) 
+- **Step 1 (optional)**: [Set up groups for communication compliance](#step-1-set-up-groups-for-communication-compliance-optional) 
 
-    Before you start using supervision, determine who needs communications reviewed and who performs reviews. If you want to get started with just a few users to see how supervision works, you can skip setting up groups for now.
+    Before you start using communication compliance, determine who needs communications reviewed and who performs reviews. If you want to get started with just a few users to see how supervision works, you can skip setting up groups for now.
 
-- **Step 2 (required)**: [Make communication compliance available in your organization](#step-2-make-supervision-available-in-your-organization-required)
+- **Step 2 (required)**: [Make communication compliance available in your organization](#step-2-make-communication-compliance-available-in-your-organization-required)
 
-    Add yourself to the Supervisory Review role group so you can set up policies. Anyone who has this role assigned can access the **Supervision** page in the Compliance Center. If reviewable email is hosted on Exchange Online, each reviewer must have [remote PowerShell access to Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell).
+    Add yourself to the Supervisory Review role group so you can set up policies. Anyone who has this role assigned can access the **Communication compliance** page in the Microsoft 365 compliance center. If reviewable email is hosted on Exchange Online, each reviewer must have [remote PowerShell access to Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell).
 
 - **Step 3 (optional)**: [Create custom sensitive information types and custom keyword dictionaries](#step-3-create-custom-sensitive-information-types-and-custom-keyword-dictionaries-optional)
 
-    If you need a custom sensitive info type or a custom keyword dictionary for your supervision policy, you need to create it before starting the supervision wizard.
+    If you need a custom sensitive info type or a custom keyword dictionary for your communication compliance policy, you need to create it before starting the communication compliance wizard.
 
-- **Step 4 (required)**: [Set up a supervision policy](#step-4-set-up-a-supervision-policy-required)
+- **Step 4 (required)**: [Set up a communication compliance policy](#step-4-set-up-a-communication-compliance-policy-required)
 
     You create communication compliance policies in the Microsoft 365 Compliance Center. These policies define which communications are subject to review in your organization and specifies who performs reviews. Communications include email and Microsoft Teams communications, and 3rd-party platform communications (such as Facebook, Twitter, etc.)
 
-- **Step 5 (optional)**: [Test your supervision policy](#step-5-test-your-supervision-policy-optional)
+- **Step 5 (optional)**: [Test your communication compliance policy](#step-5-test-your-communication-compliance-policy-optional)
 
-    Test your supervision policy to make sure it functions as desired. It is important to ensure that your compliance strategy is meeting your standards.
+    Test your communication compliance policy to make sure it functions as desired. It is important to ensure that your compliance strategy is meeting your standards.
 
 ## Step 1: Set up groups for communication compliance (optional)
 
- When you create a supervision policy, you define who has their communications reviewed and who performs reviews. In the policy, you'll use email addresses to identify individuals or groups of people. To simplify your setup, you can create groups for people who have their communication reviewed and groups for people who review those communications. If you're using groups, you may need several. For example, you want to monitor communications between two distinct groups of people or if you want to specify a group that isn't going to be supervised.
+ When you create a communication compliance policy, you define who has their communications reviewed and who performs reviews. In the policy, you'll use email addresses to identify individuals or groups of people. To simplify your setup, you can create groups for people who have their communication reviewed and groups for people who review those communications. If you're using groups, you may need several. For example, you want to monitor communications between two distinct groups of people or if you want to specify a group that isn't going to be supervised.
 
-Use the following chart to help you configure groups in your organization for supervision policies:
+Use the following chart to help you configure groups in your organization for communication compliance policies:
 
 | **Policy Member** | **Supported Groups** | **Unsupported Groups** |
 |:-----|:-----|:-----|
@@ -102,7 +102,7 @@ For more information about setting up groups, see:
 
 ## Step 2: Make communication compliance available in your organization (required)
 
-To make **Supervision** available as a menu option in Compliance Center, you must be assigned the Supervisory Review Administrator role.
+To make **Communication compliance** available as a menu option in Microsoft 365 compliance center, you must be assigned the Supervisory Review Administrator role.
   
 To do this, you can either add yourself as a member of the Supervisory Review role group, or you can create a role group.
   
@@ -157,7 +157,7 @@ Use a text editor (like Notepad), to create a file that includes the keyword ter
   
 1. Sign into [https://protection.office.com](https://protection.office.com) using credentials for an admin account in your Microsoft 365 organization.
 
-2. In the Microsoft 365 compliance center, select **Supervision**.
+2. In the Microsoft 365 compliance center, select **Communication compliance**.
   
 3. Select the **Policies** tab.
 
@@ -187,7 +187,7 @@ If you want to have the option of responding to a policy alert by sending a remi
 
 1. Sign into [https://protection.office.com](https://protection.office.com) using credentials for an admin account in your Microsoft 365 organization.
 
-2. In the Microsoft 365 compliance center, go to **Supervision**.
+2. In the Microsoft 365 compliance center, go to **Communication compliance**.
 
 3. Select the **Notices** tab and then select **Create notice**.
 
@@ -203,7 +203,7 @@ If you want to have the option of responding to a policy alert by sending a remi
 
 ## Step 6: Test your communication compliance policy (optional)
 
-After you create a supervision policy, it's a good idea to test to make sure that the conditions you defined are being properly enforced by the policy. You may also want to [test your data loss prevention (DLP) policies](create-test-tune-dlp-policy.md) if your supervision policies include sensitive information types. Follow these steps to test your supervision policy:
+After you create a communication compliance policy, it's a good idea to test to make sure that the conditions you defined are being properly enforced by the policy. You may also want to [test your data loss prevention (DLP) policies](create-test-tune-dlp-policy.md) if your communication compliance policies include sensitive information types. Follow these steps to test your communication compliance policy:
 
 1. Open an email client or Microsoft Teams logged in as a supervised user defined in the policy you want to test.
 2. Send an email or Microsoft Teams chat that meets the criteria you've defined in the supervision policy. This can be a keyword, attachment size, domain, etc. Make sure that you determine if your configured conditional settings in the policy are too restrictive or too lenient.
@@ -211,4 +211,4 @@ After you create a supervision policy, it's a good idea to test to make sure tha
     > [!NOTE]
     > Emails subject to defined policies are processed in near real-time and can be tested immediately after the policy is configured. Chats in Microsoft Teams can take up to 24 hours to fully process in a policy. 
 
-3. Log into Microsoft 365 as a reviewer designated in the communication compliance policy. Navigate to **Supervision** > **Policies** > *Your Custom Policy* > **Open** to view the report for the policy.
+3. Log into Microsoft 365 as a reviewer designated in the communication compliance policy. Navigate to **Communication compliance** > **Policies** > *Your Custom Policy* > **Open** to view the report for the policy.
