@@ -17,7 +17,7 @@
 ## Customer Key
 ### [Controlling your data in Office 365 using Customer Key](controlling-your-data-using-customer-key.md)
 ### [Service encryption with Customer Key for Office 365 FAQ](service-encryption-with-customer-key-faq.md)
-## [Supervision]()
+## Supervision
 ### [Learn about supervision policies](supervision-policies.md)
 ### [Configure supervision policies for your organization](configure-supervision-policies.md)
 ## [Information barriers](information-barriers.md)
@@ -303,7 +303,7 @@
 ## [Manage a data spillage incident](manage-data-spillage-incidents.md)
 ## [Create a new investigation](create-new-investigation.md)
 ## [Assign permissions for data investigations](permissions.md)
- 
+
 ## [Search for data in an investigation](search-for-data.md)
 ### [Build search queries](build-search-queries.md)
 ### [Search statistics](search-statistics.md)
@@ -381,7 +381,7 @@
 # [Regulatory compliance action plans](compliance-solutions-overview.md)
 
 ## [ISO — Recommended action plan](iso-action-plan.md)
-## [NIST — Recommended action plan](nist-action-plan.md) 
+## [NIST — Recommended action plan](nist-action-plan.md)
 
 ## [GDPR](gdpr.md)
 ### [Recommended action plan for GDPR](gdpr-action-plan.md)
@@ -426,5 +426,7 @@
 ### [Configure IRM to use an on-premises AD RMS server](configure-irm-to-use-an-on-premises-ad-rms-server.md)
 
 # [Office 365 Enterprise](https://docs.microsoft.com/Office365/Enterprise)
+
 # [Office 365 Business](https://docs.microsoft.com/office365/admin/admin-home)
+
 # [Microsoft 365 security](https://docs.microsoft.com/microsoft-365/security/)
