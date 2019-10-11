@@ -1,6 +1,6 @@
 ---
 title: Compliance offering — Payment Card Industry (PCI) Data Security Standard (DSS)
-description: Azure complies with Payment Card Industry Data Security Standards Level 1 version 3.2.
+description: Azure, SharePoint Online, and OneDrive for Business comply with Payment Card Industry Data Security Standards Level 1 version 3.2.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
@@ -40,6 +40,12 @@ Learn about the benefits of PCI DSS on the Microsoft Cloud: [Download the Paymen
 - Microsoft Flow cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
 - PowerApps cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
 - Power BI cloud service either as a standalone service or as included in an Office 365 branded plan or suite
+- SharePoint Online and OneDrive for Business (United States only)
+
+## Audit, reports, and certificates
+
+- [Azure](http://aka.ms/azure-pci)
+- [SharePoint Online and OneDrive for Business PCI DSS](http://aka.ms/spo-pci)
 
 ## Get your PCI DSS solution running on Azure
 
@@ -76,6 +82,14 @@ The latest Azure AoC is available at [http://aka.ms/azure-pci](http://aka.ms/azu
 The information that the PCI Security Standards Council makes available is a good place to learn about specific compliance requirements. The council publishes the [PCI DSS Quick Reference Guide](https://www.pcisecuritystandards.org/documents/PCISSC%20QRG%20August%202014%20-print.pdf) that explains how the PCI DSS can help protect a payment card transaction environment and how to apply it. The council also offers [resources for assessing PCI DSS compliance](https://www.pcisecuritystandards.org/pci_security/why_security_matters).
 
 Compliance involves several factors, including assessing the systems and processes not hosted on Azure. Individual requirements will vary based on which Azure services are used and how they are employed within the solution.
+
+**Are there plans for SharePoint Online and OneDrive for Business to be PCI DSS compliant outside of the United States?**
+
+Currently SharePoint Online and OneDrive for Business is PCI-DSS compliant only in the United States (US). Microsoft will evaluate the requirements and timelines for regions outside of US and provide updates when and if other regions are added to the roadmap.
+
+**What is in-scope for SharePoint Online and OneDrive for Business?**
+
+Currently, only files and documents uploaded to SharePoint Online and OneDrive for Business will be complaint with PCI DSS.  
 
 ## Resources
 
