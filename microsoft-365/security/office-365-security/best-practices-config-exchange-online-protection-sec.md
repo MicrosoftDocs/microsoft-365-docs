@@ -113,8 +113,8 @@ Recommended for **ON** in both Recommended and Aggressive Levels:
 |EnableSimilarUsersSafetyTips | True | True | - |
 |EnableSimilarDomainsSafetyTips | True | True | - |
 |EnableUnusualCharactersSafetyTips | True | True | - |
-|TargetedUserProtectionAction |NoAction |Block | - |
-|MailboxIntelligenceProtectionAction |NoAction |Block | - |
+|TargetedUserProtectionAction |MoveToJmf |Quarantine | - |
+|MailboxIntelligenceProtectionAction |NoAction |MoveToJMF | - |
 |TargetedDomainProtectionAction |NoAction |Block | - |
 |AuthenticationFailAction |MoveToJmf |Quarantine | - |
 |AntiSpoofEnforcementType |High |High | - |
@@ -148,9 +148,9 @@ If you've added an Office 365 ATP subscription to your EOP, be sure to set the f
 |Enable Anti-impersonation protection | Yes | Yes | - |
 |Enable Mailbox intelligence in Anti-Impersonation policies | Yes | Yes | - |
 |Enable Mailbox intelligence based Impersonation protection | Yes | Yes | - |
-|Domain Impersonation action should be | JMF | Quarantine | - |
-|User Impersonation action should be | JMF | Qurantine | - |
-|Mailbox intelligence based impersonation protection action should be |Tip  |JMF | - |
+|Domain Impersonation action should be | MoveToJMF | MoveToJMF | - |
+|User Impersonation action should be | MoveToJMF | Qurantine | - |
+|Mailbox intelligence based impersonation protection action should be | NoAction  | MoveToJMF | - |
 
 ### Safe Links and Safe Attachments
 
