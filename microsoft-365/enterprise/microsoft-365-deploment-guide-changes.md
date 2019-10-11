@@ -3,7 +3,7 @@ title: "Changes to Microsoft 365 Enterprise deployment content"
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 10/09/2019
+ms.date: 10/10/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -19,6 +19,13 @@ description: See the new content and changes to the content in the Microsoft 365
 # Changes to Microsoft 365 Enterprise deployment content
 
 ## October 2019
+
+### New content 
+
+- [Empower remote workers poster](empower-people-to-work-remotely.md#poster)
+
+  [![Empower remote workers poster](./media/empower-people-to-work-remotely/empower-remote-workers-poster-half.png)](media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf) 
+ 
 
 ### Updates and enhancements
 
