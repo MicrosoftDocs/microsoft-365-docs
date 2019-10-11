@@ -23,7 +23,7 @@ TBD.
 
 The Azure Information Protection client must not be running in Office. For information, see [Use sensitivity labels alongside the Azure Information Protection client in Office for Windows](#use-sensitivity-labels-alongside-the-azure-information-protection-client-in-office-for-windows).
 
-### Additional requirements for sensitivity labels for Outlook on all platforms
+### Requirements for sensitivity labels for Outlook on all platforms
 
 In your label configuration, if you turn on content marking, you must be using Exchange Online for that content marking to be inserted in transit.
 

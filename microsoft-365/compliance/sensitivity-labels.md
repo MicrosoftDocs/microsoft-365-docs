@@ -17,6 +17,13 @@ description: "With sensitivity labels, you can classify and help protect your se
 
 # Overview of sensitivity labels
 
+
+
+- Users must have at least one of the following licenses assigned:
+  - [Microsoft 365 E5](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) or above
+  - [Office 365 E3](https://www.microsoft.com/microsoft-365/business/office-365-enterprise-e3-business-software) or above
+  - [Azure Information Protection Premium P1](https://azure.microsoft.com/pricing/details/information-protection/) or above
+
 To get their work done, people in your organization need to collaborate with others both inside and outside the organization. This means that content no longer stays behind a firewall – it roams everywhere, across devices, apps, and services. And when it roams, you want it to do so in a secure, protected way that meets your organization’s business and compliance policies.
 
 With sensitivity labels, you can classify and help protect your sensitive content, while making sure that your people’s productivity and ability to collaborate isn’t hindered.
@@ -24,6 +31,8 @@ With sensitivity labels, you can classify and help protect your sensitive conten
 ![Sensitivity label on Excel ribbon and status bar](media/Sensitivity-label-in-Excel.png)
 
 Sensitivity labels are only supported for tenants in the global (public) cloud. Sensitivity labels are not currently supported for tenants in other clouds such as [national clouds](https://docs.microsoft.com/azure/active-directory/develop/authentication-national-cloud).
+
+Users must be signed in to Office with their work account in order to apply sensitivity labels.
 
 You can use sensitivity labels to:
   
@@ -150,14 +159,14 @@ If a user or group in your organization is not seeing an option in the label pol
 
 While priority matters for sensitivity label policies, it does **not** matter for retention label policies. As explained in [The principles of retention, or what takes precedence?](labels.md#the-principles-of-retention-or-what-takes-precedence), content can be subject to multiple retention policies.
 
-## How to get started
+## How to get started with sensitivity labels
 
 Getting started with sensitivity labels is a quick process:
 
 1. **Define the labels.** First, you want to establish your taxonomy for defining different levels of sensitive content. You should use common names or terms that make sense to your users. For example, you can start with labels such as Personal, Public, General, Confidential, and Highly Confidential. You can use sublabels to group similar labels by category. Also, when you create a label, a tool tip is required, which appears in the Office apps when a user hovers over a label option on the Ribbon.
 
 1. **Define what each label can do.** Then, configure the protection settings you want associated with each label. For example, lower sensitivity content (a “General” label) might simply have a header or footer applied to it, while higher sensitivity content (a “Confidential” label) may have a watermark, encryption, and WIP applied to it, to help ensure that only privileged users can access it.
- 
+
 1. **Define who gets the labels.** After you define your organization’s labels, you publish them in a label policy that controls which users and groups see those labels. A single label is reusable – you define it once, and then you can include it in several label policies assigned to different users. But in order for a label to be assigned to content, you must first publish that label so that it’s available in Office apps and other services. When just starting out, you can pilot your sensitivity labels by assigning them to just a few people.
 
 Here’s the basic flow of what the admin, user, and Office app do to make sensitivity labels work.
@@ -216,20 +225,10 @@ Azure Information Protection users are currently able to classify and label cont
 
 If you are using Azure Information Protection labels, for now we recommend that you avoid creating new labels in other admin centers until after you’ve completed your migration. The [Azure Information Protection migration topic](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels) has important information and some specific caveats. If you are not yet ready to migrate your production tenants to sensitivity labels, there is no cause for concern: for the moment, your users can continue using the Azure Information Protection client, and admins can continue using the Azure portal for management.
 
-## Use sensitivity labels alongside the Azure Information Protection client in Office for Windows
+## Sensitivity labels the Azure Information Protection client
 
-Office 365 automatically turns off Sensitivity labels if you have installed the Azure Information Protection client in Office for Windows.
-
-To use sensitivity labels if you have the Azure Information Protection client installed:
-
-1. Do either of the following:
-   - Configure the **Use the Sensitivity feature in Office to apply and view sensitivity labels** Group Policy setting. Find this setting under **User Configuration/Administrative Templates/Microsoft Office 2016/Security Settings**.
-
-    You can deploy this setting through traditional group policy deployment mechanisms, or by the [Office cloud policy service](https://docs.microsoft.com/DeployOffice/overview-office-cloud-policy-service).
-
-   - Uninstall or [disable](https://support.office.com/article/view-manage-and-install-add-ins-in-office-programs-16278816-1948-4028-91e5-76dca5380f8d) the Azure Information Protection client.
-
-2. Restart all Office applications.
+Office 365 automatically turns off sensitivity labels if you have installed the Azure Information Protection client in Office for Windows.
+For information on how to fix this, see [Use sensitivity labels alongside the Azure Information Protection client in Office for Windows](sensitivity-labels-office-apps.md#use-sensitivity-labels-alongside-the-azure-information-protection-client-in-office-for-windows).
 
 ## Protect content on Windows devices by using endpoint protection in Microsoft InTune
 

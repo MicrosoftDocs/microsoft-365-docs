@@ -31,6 +31,7 @@
 ### [Restrict access to content by using encryption in sensitivity labels](encryption-sensitivity-labels.md)
 ### [Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md)
 ### [View label usage with label analytics](label-analytics.md)
+### [Sensitivity labels for Office 365 groups and SharePoint sites (Public preview)](sensitivity-labels-groups-sites.md)
 ### [Sensitivity labels in Office apps](sensitivity-labels-office-apps.md)
 
 ## [Data loss prevention (DLP)](data-loss-prevention-policies.md)
@@ -330,14 +331,14 @@
 ### [Export documents from evidence](export-documents-from-incident.md)
 ### [Download export jobs](download-export-jobs-from-a-data-investigation.md)
 
-## Configure investigation settings
+## [Configure settings for data investigations](configure-settings-datainvestigations.md)
 ### [Add or remove members from an investigation](add-remove-members.md)
 ### [Configure search and analytics settings](configure-search-analytics-settings.md)
 ### [Close or delete an investigation](close-or-delete-investigation.md)
 
-## Data investigations reference
+## Data Investigations reference
 ### [Release notes](data-investigations-release-notes.md)
-### [Limits in data investigations](limits-datainvestigations.md)
+### [Limits in Data Investigations](limits-datainvestigations.md)
 ### [Supported file types](supported-filetypes-datainvestigations.md)
 ### [Document metadata fields](document-metadata-fields.md)
 ### [Manage jobs](manage-jobs.md)
