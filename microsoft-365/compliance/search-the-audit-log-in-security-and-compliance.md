@@ -719,7 +719,7 @@ The following table lists the user and admin activities in Microsoft Teams that 
 |Removed tab|TabRemoved|A user removes a tab from a channel.|
 |Updated connector|ConnectorUpdated|A user modified a connector in a channel.|
 |Updated tab|TabUpdated|A user modified a tab in a channel.|
-|User signed in to Teams|TeamsSessionStarted|A user signs in to a Microsoft Teams client. This event does not capture token refresh activities|
+|User signed in to Teams|TeamsSessionStarted|A user signs in to a Microsoft Teams client. This event doesn't capture token refresh activities.|
 ||||
 
 ### Yammer activities
