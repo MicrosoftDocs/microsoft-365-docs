@@ -20,8 +20,8 @@
 ### [Manage Customer Key for Office 365](customer-key-manage.md)
 ### [Roll or rotate a Customer Key or an availability key](customer-key-availability-key-roll.md)
 ### [Learn about the availability key](customer-key-availability-key-understand.md)
-## Communication supervision
-### [Learn about communication supervision](supervision-policies.md)
+## Supervision
+### [Learn about supervision policies](supervision-policies.md)
 ### [Configure supervision policies for your organization](configure-supervision-policies.md)
 ## [Information barriers](information-barriers.md)
 ### [Define information barrier policies](information-barriers-policies.md)
