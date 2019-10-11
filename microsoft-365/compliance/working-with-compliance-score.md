@@ -81,7 +81,7 @@ You will see your score adjusted in real-time, and you will only see improvement
 
 ### What are improvement actions
 
-Improvement actions are the key elements of the workflow process in Compliance Score. You use them to conduct work on [controls for particular assessments](compliance-score.md#key-components-controls-assessments-templates-groups). You can assign them to users in your organization to carry out the recommended actions, store documentation around implementation and testing details, and track implementation and testing status. Below are the key features of improvement actions and how to work with them.
+Improvement actions are the key elements of the workflow process in Compliance Score. You use them to conduct work on [controls for particular assessments](compliance-score.md#key-components-controls-assessments-templates--groups). You can assign them to users in your organization to carry out the recommended actions, store documentation around implementation and testing details, and track implementation and testing status. Below are the key features of improvement actions and how to work with them.
 
 ### View your improvement actions
 
