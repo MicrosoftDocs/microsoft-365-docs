@@ -32,9 +32,9 @@ Compliance Score helps to simplify and automate the process of managing complian
 
 ## Relationship to Compliance Manager
 
-Compliance Score acts as a simplified version of Compliance Manager. Many of the tasks you may be used to doing in Compliance Manager can now be done more easily in Compliance Score. So that you can benefit from improved functionality and experience, use Compliance Score as the starting point for monitoring your compliance score and working on compliance-strengthening activities (called **Improvement actions** in Compliance Score).
+Think of Compliance Score as a simplified version of Compliance Manager. While they exist for now as two distinct yet fully integrated tools, many of the tasks you perform in Compliance Manager can now be done more easily in Compliance Score. To benefit most from the improved functionality and experience, we recommend using Compliance Score as the starting point for monitoring your compliance posture and taking actions to improve it.
 
-During public preview, some functionality remain in Compliance Manager, such as managing Assessments and creating templates. We recommend beginning all of your compliance management functions in Compliance Score. When you come to functions that are handled in Compliance Manager, you will be clearly directed to that tool. Accordingly, at points in this documentation, you will be directed to Compliance Manager topics.
+During public preview, some functionality remains in Compliance Manager, such as managing assessments and creating templates. We recommend beginning all of your compliance management functions in Compliance Score. When you come to functions that are handled in Compliance Manager, you will be clearly directed to that tool. For that reason, some of this documentation directs you to Compliance Manager topics.
 
 ## Understanding your score
 
@@ -44,32 +44,32 @@ Compliance Score gives you an out-of-the-box score based on the Microsoft Data P
 
 Compliance Score also synchronizes automatically with your [Microsoft Secure Score](../security/mtp/microsoft-secure-score.md), providing you with a more meaningful score and centralized management of activities that affect both sets of scores.
 
-Visit other topics for details about [how your compliance score is calculated](compliance-score-methodology.md) and how to improve your score through the [workflow](working-with-compliance-score.md).
+Visit other topics for details about [how your compliance score is calculated](compliance-score-methodology.md) and how to improve your score through the [Compliance Score workflow](working-with-compliance-score.md).
 
 > [!IMPORTANT]
 > Compliance Score does not express an absolute measure of organizational compliance with any particular standard or regulation. It expresses the extent to which you have adopted controls which can reduce the risks to personal data and individual privacy. Compliance Score should not be interpreted as a guarantee in any way.
 
 ## Key components: controls, assessments, templates, & groups
 
-Compliance Score uses several components to help you manage your compliance activities. As you work with Compliance Score to assign, test, and monitor compliance activities, it’s helpful to have a basic understanding of the key terms and concepts below. This diagram  shows the relationship between the primary components:
+Compliance Score uses several components to help you manage your compliance activities. As you work with Compliance Score to assign, test, and monitor compliance activities, it’s helpful to have a basic understanding up front of these key components. This diagram shows the relationship among them:
 
 SCREENSHOT CM/CS GROUPS DIAGRAM
 
 ### Controls
 
-A control is an activity or process created to manage a compliance activity. Controls can be organized and grouped into assessments to meet the requirement of a standard, regulation, or law. 
+A control is a process created to manage a compliance activity. Controls can be organized and grouped into assessments to meet the requirement of a standard, regulation, or law.
 
-When you manage your compliance activities through improvement actions (the key elements of the [wokflow process](working-with-compliance-score.md#the-workflow-managing-compliance-with-improvement-actions)), the control is represented on the improvement action page by its title at the top, a description, references to related regulations and standards , and implementation instructions.
+When you manage your compliance activities through improvement actions (the key elements of the [wokflow process](working-with-compliance-score.md#the-workflow-managing-compliance-with-improvement-actions)), the control is represented on the **Improvement actions** page by its title at the top, a description, references to related regulations and standards , and implementation instructions.
 
 There are three types of controls:
 
-1. **Microsoft-managed controls**: for each cloud service, these are controls for which only Microsoft has responsibility. They appear in the inbox Templates and are added by Microsoft.
-2. **Customer-managed controls**: controls for which only you have responsibility. They appear in the inbox Templates and are added by you.
-3. **Shared management controls**: controls where responsibility is shared between Microsoft and you. These appear in the inbox Templates and are added by Microsoft; you can also edit or disable Microsoft-managed controls.
+1. **Microsoft-managed controls**: for each cloud service, these are controls for which only Microsoft has responsibility. 
+2. **Customer-managed controls**: controls for which only you have responsibility.
+3. **Shared management controls**: controls where responsibility is shared between Microsoft and you. These are added by Microsoft, and you can edit or disable them.
  
 ### Assessments
 
-Assessments help you carry out the necessary tasks, or improvement actions, as specified by a compliance standard and applicable data protection standards, regulations, or laws. Think of them as containers that allow you to organize controls. Assessments are completed when you take action to implement the controls included in the Assessment.
+Assessments help you carry out improvement actions as specified by applicable data protection standards, regulations, or laws. Think of them as containers that allow you to organize controls. Assessments are completed when you take action to implement the controls included in the assessment.
 
 > [!NOTE]
 > Compliance Score displays your assessments and how they factor into your overall compliance score. However, during public preview you will be directed to Compliance Manager to manage your assessments. Therefore, some instructions in this documentation link to Compliance Manager documentation.
@@ -84,7 +84,7 @@ By default, the following Assessments are already created for your organization:
 
 ### Templates
 
-Compliance Score provides pre-configured templates for Assessments and allows you to create customized templates for customer-managed controls for your compliance needs. New templates are created by importing controls information from an Excel file, or you can create a template from a copy of an existing template.
+Compliance Score provides pre-configured templates for Assessments and allows you to create customized templates for customer-managed controls to suit your compliance needs. New templates are created by importing controls information from an Excel file, or you can create a template from a copy of an existing template.
 
 The pre-configured templates for Compliance Score are:
 
@@ -107,10 +107,10 @@ The pre-configured templates for Compliance Score are:
 
 ### Groups
 
-Groups allow you to logically organize Assessments. You can group Assessments by year, compliance standard, service, teams within your organization, or other groupings to help organize your compliance work. When two different Assessments in the same group share customer-managed controls, the completion of implementation details, testing, and status for the control automatically synchronize to the same control in any other Assessment in the Group. This unifies the assigned Improvement actions for each control across the group and reduces duplicating work.
+Groups allow you to organize assessments in a way that is logical to you. For example, you can group assessments by year, compliance standard, service, teams within your organization, or some other way. When two different assessments in the same group share customer-managed controls, the completion of implementation details, testing, and status for the control automatically synchronize to the same control in any other assessment in the group. This unifies the assigned improvement actions for each control across the group and reduces duplicating work.
 
 [Read more about working with groups](working-with-compliance-manager.md#groups)
 
 ## Getting started
 
-The next step is to read [Working with Compliance Score](working-with-compliance-score.md) for detailed instructions for accessing, optimizing, and working with Compliance Score.
+The next step is to read [Working with Compliance Score](working-with-compliance-score.md) for detailed instructions on accessing, optimizing, and working with Compliance Score.
