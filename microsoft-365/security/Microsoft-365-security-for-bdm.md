@@ -84,9 +84,10 @@ The following diagram illustrates these capabilities.
 Additional recommendations:
 - Secure partner channel communications like Emails using TLS.
 - Open Teams Federation only to Partners you communicate with.
-- Do not whitelist domains or IPs as this allows these to bypass spam and malware checks — A common practice with customers is whitelisting their own accepted domains or a number of other domains where email flow issues may have been reported. Do not add domains in the Spam and Connection Filtering list as this potentially bypasses all spam checks. 
+- Do not whitelist sender domains, individual senders, or source IPs as this allows these to bypass spam and malware checks — A common practice with customers is whitelisting their own accepted domains or a number of other domains where email flow issues may have been reported. Do not add domains in the Spam and Connection Filtering list as this potentially bypasses all spam checks. 
 - Enable outbound spam notifications — Enable outbound spam notifications to a distribution list internally to the Helpdesk or IT Admin team to report if any of the internal users are sending out Spam emails externally. This could be an indicator that the account has been compromised.
 - Disable Remote PowerShell for all users — Remote PowerShell is mainly used by Admins to access Office 365 services for administrative purposes or programmatic API access. We recommended disabling this option for non-Admin users to avoid reconnaissance unless they have a business requirement to access it. 
+- Block access to the Microsoft Azure Management portal to all non-administrators. You can accomplish this by creating a conditional access rule to block all users, with the exception of admins. 
 
 
 ## Assume breach
