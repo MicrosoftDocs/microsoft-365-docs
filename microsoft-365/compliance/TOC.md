@@ -21,7 +21,7 @@
 ### [Learn about communications compliance (preview)](communications-compliance.md)
 ### [Configure communications compliance in Microsoft 365 (preview)](communications-compliance-configure.md)
 ### [Investigate and remediate communications compliance alerts (preview)](communications-compliance-investigate-remediate.md)
-### [Feature reference for communications compliance and supervision](communications-compliance-feature-reference.md)
+### [Feature reference for communications compliance (preview)](communications-compliance-feature-reference.md)
 ### [Supervision policies in Office 365](supervision-policies.md)
 ### [Configure supervision policies for Office 365](configure-supervision-policies.md)
 ## [Information barriers](information-barriers.md)
