@@ -27,15 +27,13 @@ Use communication compliance policies to capture employee communications for exa
 
 > [!NOTE]
 > Users monitored by communication compliance policies must have either a Microsoft 365 E5 Compliance license, an Office 365 Enterprise E3 license with the Advanced Compliance add-on, or be included in an Office 365 Enterprise E5 subscription.
-> If you don't have an existing Enterprise E5 plan and want to try supervision, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
+> If you don't have an existing Enterprise E5 plan and want to try communication compliance, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
   
 Follow these steps to set up and use communication compliance in your Microsoft 365 organization:
-
-- **Step 1 (optional)**: FIRST RUN EXPERIENCE?
   
 - **Step 1 (optional)**: [Set up groups for communication compliance](#step-1-set-up-groups-for-communication-compliance-optional) 
 
-    Before you start using communication compliance, determine who needs communications reviewed and who performs reviews. If you want to get started with just a few users to see how supervision works, you can skip setting up groups for now.
+    Before you start using communication compliance, determine who needs communications reviewed and who performs reviews. If you want to get started with just a few users to see how communication compliance works, you can skip setting up groups for now.
 
 - **Step 2 (required)**: [Make communication compliance available in your organization](#step-2-make-communication-compliance-available-in-your-organization-required)
 
@@ -66,20 +64,20 @@ Use the following chart to help you configure groups in your organization for co
   
 When you select an Office 365 group for supervised users, the policy monitors the content of the shared Office 365 mailbox and the Microsoft Teams channels associated with the group. When you select a distribution list, the policy monitors individual user mailboxes.
 
-To manage supervised users in large enterprise organizations, you may need to monitor all users across large groups. You can use PowerShell to configure a distribution group for a global supervision policy for the assigned group. This enables you to monitor thousands of users with a single policy and keep the supervision policy updated as new employees join your organization.
+To manage supervised users in large enterprise organizations, you may need to monitor all users across large groups. You can use PowerShell to configure a distribution group for a global communication compliance policy for the assigned group. This enables you to monitor thousands of users with a single policy and keep the communication compliance policy updated as new employees join your organization.
 
-1. Create a dedicated [distribution group](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/new-distributiongroup?view=exchange-ps) for your global supervision policy with the following properties: Make sure that this distribution group isn't used for other purposes or other Office 365 services.
+1. Create a dedicated [distribution group](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/new-distributiongroup?view=exchange-ps) for your global communication compliance policy with the following properties: Make sure that this distribution group isn't used for other purposes or other Office 365 services.
 
     - **MemberDepartRestriction = Closed**. Ensures that users cannot remove themselves from the distribution group.
     - **MemberJoinRestriction = Closed**. Ensures that users cannot add themselves to the distribution group.
-    - **ModerationEnabled = True**. Ensures that all messages sent to this group are subject to approval and that the group is not being used to communicate outside of the supervision policy configuration.
+    - **ModerationEnabled = True**. Ensures that all messages sent to this group are subject to approval and that the group is not being used to communicate outside of the communication compliance policy configuration.
 
     ```
     New-DistributionGroup -Name <your group name> -Alias <your group alias> -MemberDepartRestriction 'Closed' -MemberJoinRestriction 'Closed' -ModerationEnabled $true
     ```
-2. Select an unused [Exchange custom attribute](https://docs.microsoft.com/Exchange/recipients/mailbox-custom-attributes?view=exchserver-2019&viewFallbackFrom=exchonline-ww) to track users added to the supervision policy in your organization.
+2. Select an unused [Exchange custom attribute](https://docs.microsoft.com/Exchange/recipients/mailbox-custom-attributes?view=exchserver-2019&viewFallbackFrom=exchonline-ww) to track users added to the communication compliance policy in your organization.
 
-3. Run the following PowerShell script on a recurring schedule to add users to the supervision policy:
+3. Run the following PowerShell script on a recurring schedule to add users to the communication compliance policy:
 
     ```
     $Mbx = (Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited -Filter {CustomAttribute9 -eq $Null})
@@ -114,7 +112,7 @@ To do this, you can either add yourself as a member of the Supervisory Review ro
 
 3. Select the **Supervisory Review** role group and then click the Edit icon.
 
-4. In the **Members** section, add the people who you want to manage supervision for your organization.
+4. In the **Members** section, add the people who you want to manage communication compliance for your organization.
 
 ### Create a new role group
 
@@ -124,7 +122,7 @@ To do this, you can either add yourself as a member of the Supervisory Review ro
 
 3. In the **Roles** section, click Add (**+**) and scroll down to **Supervisory Review Administrator**. Add this role to the role group.
 
-4. In the **Members** section, add the people who you want to manage supervision for your organization.
+4. In the **Members** section, add the people who you want to manage communication compliance for your organization.
 
 For more information about role groups and permissions, see [Permissions in the Compliance Center](../security/office-365-security/protect-against-threats.md).
 
@@ -138,7 +136,7 @@ In order to pick from existing custom sensitive information types or custom keyw
 
 ### Create custom keyword dictionary/lexicon (optional)
 
-Use a text editor (like Notepad), to create a file that includes the keyword terms you'd like to monitor in a supervision policy. Make sure that each term is on a separate line and save the file in the **Unicode/UTF-16 (Little Endian)** format.
+Use a text editor (like Notepad), to create a file that includes the keyword terms you'd like to monitor in a communication compliance policy. Make sure that each term is on a separate line and save the file in the **Unicode/UTF-16 (Little Endian)** format.
 
 ### Create custom sensitive information types
 
@@ -174,7 +172,7 @@ Use a text editor (like Notepad), to create a file that includes the keyword ter
 
     - Give the policy a name and description.
     - Choose the users or groups to supervise, including choosing users or groups you'd like to exclude.
-    - Define the supervision policy [conditions](supervision-policies.md#ConditionalSettings). You can choose from message address, keyword, file types, and size match conditions.
+    - Define the communication compliance policy [conditions](communication-compliance-feature-reference.md#ConditionalSettings). You can choose from message address, keyword, file types, and size match conditions.
     - Choose if you'd like to include sensitive information types. This is where you can select default and custom sensitive info types.
     - Choose if you'd like to enable the offensive language model. This detects inappropriate language sent or received in the body of email messages.
     - Define the percentage of communications to review.
@@ -183,7 +181,7 @@ Use a text editor (like Notepad), to create a file that includes the keyword ter
 
 ## Step 5: Create employee notices (optional)
 
-If you want to have the option of responding to a policy alert by sending a reminder notice to the associated employee, you'll need to create at least one notice template in your organization. The notice template fields are editable prior to sending as part of the alert remediation process and creating a customized notice template for each supervision policy is recommended.
+If you want to have the option of responding to a policy alert by sending a reminder notice to the associated employee, you'll need to create at least one notice template in your organization. The notice template fields are editable prior to sending as part of the alert remediation process and creating a customized notice template for each communication compliance policy is recommended.
 
 1. Sign into [https://protection.office.com](https://protection.office.com) using credentials for an admin account in your Microsoft 365 organization.
 
@@ -206,7 +204,7 @@ If you want to have the option of responding to a policy alert by sending a remi
 After you create a communication compliance policy, it's a good idea to test to make sure that the conditions you defined are being properly enforced by the policy. You may also want to [test your data loss prevention (DLP) policies](create-test-tune-dlp-policy.md) if your communication compliance policies include sensitive information types. Follow these steps to test your communication compliance policy:
 
 1. Open an email client or Microsoft Teams logged in as a supervised user defined in the policy you want to test.
-2. Send an email or Microsoft Teams chat that meets the criteria you've defined in the supervision policy. This can be a keyword, attachment size, domain, etc. Make sure that you determine if your configured conditional settings in the policy are too restrictive or too lenient.
+2. Send an email or Microsoft Teams chat that meets the criteria you've defined in the communication compliance policy. This can be a keyword, attachment size, domain, etc. Make sure that you determine if your configured conditional settings in the policy are too restrictive or too lenient.
 
     > [!NOTE]
     > Emails subject to defined policies are processed in near real-time and can be tested immediately after the policy is configured. Chats in Microsoft Teams can take up to 24 hours to fully process in a policy. 

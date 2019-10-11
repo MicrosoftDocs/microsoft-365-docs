@@ -66,8 +66,8 @@ landingContent:
             url: privileged-access-management-overview.md
           - text: Customer Lockbox
             url: customer-lockbox-requests.md
-          - text: Supervise communications
-            url: supervision-policies.md
+          - text: Communication compliance
+            url: communication-compliance.md
           - text: Information barriers
             url: information-barriers.md
           - text: Customer Key
