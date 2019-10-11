@@ -1,9 +1,9 @@
 ---
 title: "Overview of sensitivity labels"
-ms.author: laurawi
-author: laurawi
+ms.author: krowley
+author: kccross
 manager: laurawi
-ms.date: 
+ms.date: 10/11/2019
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -23,12 +23,14 @@ With sensitivity labels, you can classify and help protect your sensitive conten
 
 ![Sensitivity label on Excel ribbon and status bar](media/Sensitivity-label-in-Excel.png)
 
+Sensitivity labels are only supported for tenants in the global (public) cloud. Sensitivity labels are not currently supported for tenants in other clouds such as [national clouds](https://docs.microsoft.com/azure/active-directory/develop/authentication-national-cloud).
+
 You can use sensitivity labels to:
   
-- **Enforce protection settings such as encryption or watermarks on labeled content.** For example, your users can apply a Confidential label to a document or email, and that label can encrypt the content and apply a Confidential watermark.    
+- **Enforce protection settings such as encryption or watermarks on labeled content.** For example, your users can apply a Confidential label to a document or email, and that label can encrypt the content and apply a Confidential watermark.
 
 - **Protect content in Office apps across different platforms and devices.** Sensitivity labels work in Office apps on Windows, Mac, iOS, and Android. Support for Office web apps is coming soon.
-    
+
 - **Prevent sensitive content from leaving your organization on devices running Windows**, by using endpoint protection in Microsoft Intune. After a sensitivity label has been applied to content that resides on a Windows device, endpoint protection can prevent that content from being copied to a third-party app, such as Twitter or Gmail, or being copied to removable storage, such as a USB drive.
 
 - **Protect content in third-party apps and services**, by using Microsoft Cloud App Security. With Cloud App Security, you can detect, classify, label, and protect content in third-party apps and services, such as SalesForce, Box, or DropBox, even if the third-party app or service does not read or support sensitivity labels.
@@ -36,14 +38,12 @@ You can use sensitivity labels to:
 - **Extend sensitivity labels to third-party apps and services.** With the Microsoft Information Protection SDK, third-party apps on [these platforms](https://docs.microsoft.com/en-us/information-protection/develop/overview#microsoft-information-protection-sdk) can read sensitivity labels and apply protection settings.
 
 - **Classify content without using any protection settings.** You can also simply assign a classification to content (like a sticker) that persists and roams with the content as it's used and shared. You can use this classification to generate usage reports and see activity data for your sensitive content. Based on this information, you can always choose at a later time to apply protection settings.
-    
+
 In all of these cases, sensitivity labels in Office 365 can help you take the right actions on the right content. With sensitivity labels, you can classify data across your organization and enforce protection settings based on that classification.
   
 You create sensitivity labels in the Microsoft 365 compliance center, Microsoft 365 security center, or Office 365 Security & Compliance Center under **Classification** > **Sensitivity labels**. These sensitivity labels can be used by Azure Information Protection, Office apps, and Office 365 services.
 
 For Azure Information Protection customers, you can use your Azure Information Protection labels in the other admin centers, and your labels will be synced with the Azure portal in case you choose to perform additional or advanced configuration. **Azure Information Protection labels and Office 365 sensitivity labels are fully compatible with each other.** This means, for example, if you have content labeled by Azure Information Protection, you won’t need to reclassify or relabel your content.
-
->Note: Sensitivity labels are only supported for tenants in the global (public) cloud. Sensitivity labels are not supported for tenants in other clouds such as [national clouds](https://docs.microsoft.com/azure/active-directory/develop/authentication-national-cloud).
 
 ## What a sensitivity label is
 
@@ -53,11 +53,11 @@ When you assign a sensitivity label to a document or email, it’s simply like a
 
 - **Clear text.** Because the label is in clear text, it’s available for third-party apps and services to apply protective actions to labeled content.
 
-- **Persistent.** After a sensitivity label is applied to content, it persists in the metadata of that email or document. This means the label roams with the content, including the protection settings, and becomes the basis for applying and enforcing policies.
+- **Persistent.** After you apply a sensitivity label to content, the label persists in the metadata of that email or document. This means the label roams with the content, including the protection settings, and becomes the basis for applying and enforcing policies.
 
 In the Office apps, a sensitivity label simply appears as a tag on an email or document.
 
-Each item of content can have a single sensitivity label applied to it. But note that an item can have both a single sensitivity label and a single [retention label](labels.md) applied to it.
+Each item of content can have a single sensitivity label applied to it. An item can have both a single sensitivity label and a single [retention label](labels.md) applied to it.
 
 ![Sensitivity label applied to an email](media/Sensitivity-label-on-email.png)
 
@@ -65,18 +65,17 @@ Each item of content can have a single sensitivity label applied to it. But note
 
 After a sensitivity label is applied to an email or document, the protection settings for that label are enforced on the content. With a sensitivity label, you can:
 
-- **Encrypt** email only or both email and documents. You can choose which users or group have permissions to perform which actions and for how long. For example, you can choose to allow users in a specific domain outside your organization to have permissions to review the content for only 7 days after the content is labeled. Alternatively, instead of assiging permissions yourself, you can allow your users to assign permissions to the content when they apply the label. For more information, see [Restrict access to content by using encryption in sensitivity labels](encryption-sensitivity-labels.md).
+- **Encrypt** email only or both email and documents. You can choose which users or group have permissions to perform which actions and for how long. For example, you can choose to allow users in a specific domain outside your organization to have permissions to review the content for only 7 days after the content is labeled. Alternatively, instead of assigning permissions yourself, you can allow your users to assign permissions to the content when they apply the label. For more information, see [Restrict access to content by using encryption in sensitivity labels](encryption-sensitivity-labels.md).
 
-- **Mark the content** by adding custom watermarks, headers, or footers to email or documents that have the label applied. Note that watermarks are applied only to documents, not email, and they're limited to 255 characters. Also, headers and footers are limited to 1024 characters (except in Excel, where they're limited to 255 characters or fewer, depending on whether the document contains other headers or footers and other factors.)
+- **Mark the content** by adding custom watermarks, headers, or footers to email or documents that have the label applied. You only apply watermarks to documents, not email, and they're limited to 255 characters. Also, headers and footers are limited to 1024 characters (except in Excel, where they're limited to 255 characters or fewer, depending on whether the document contains other headers or footers and other factors.)
 
     ![Watermark and header applied to document](media/Sensitivity-label-watermark-header.png)
 
-- **Prevent data loss** by turning on endpoint protection in Intune. If sensitive content gets downloaded, you can help prevent the loss of data from Windows devices. For example, you can’t copy labeled content into Dropbox, Gmail, or USB drive. Before your sensitivity labels can use Windows Information Protection (WIP), you first need to create an app protection policy in the Azure portal. For more information, see [How Windows Information Protection protects files with a sensitivity label](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/how-wip-works-with-labels?branch=vsts17546553).
+- **Prevent data loss** by turning on endpoint protection in Intune. If sensitive content gets downloaded, you can help prevent the loss of data from Windows devices. For example, you can’t copy labeled content into Dropbox, Gmail, or a USB drive. Before your sensitivity labels can use Windows Information Protection (WIP), you first need to create an app protection policy in the Azure portal. For more information, see [How Windows Information Protection protects files with a sensitivity label](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/how-wip-works-with-labels?branch=vsts17546553).
 
 - **Apply the label automatically to content that contains sensitive information.** You can choose what types of sensitive information that you want labeled, and the label can either be applied automatically, or you can prompt users to apply the label that you recommend. If you recommend a label, the prompt displays whatever text you choose. For more information, see [Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md).
 
     ![Prompt to assign a required label](media/Sensitivity-label-Prompt-for-required-label.png)
-
 
 All of these options are available when you create a sensitivity label.
 
@@ -86,25 +85,23 @@ All of these options are available when you create a sensitivity label.
 
 When you create your sensitivity labels, they appear in a list on the **Sensitivity** tab on the **Labels** page. In this list, the order of the labels is important because it reflects their priority. You want your most restrictive sensitivity label, such as Highly Confidential, to appear at the **bottom** of the list, and your least restrictive sensitivity label, such as Public, to appear at the **top**.
 
-A document or email can have only a single sensitivity label applied to it. If you require your users to provide a justification for changing the label to a lower classification, the order of this list determines what's a lower classification.
+You can only apply a single sensitivity label to a document or email. If you require your users to provide a justification for changing the label to a lower classification, the order of this list identifies the lower classifications.
 
 ![Option to create a sublabel](media/Sensitivity-label-sublabel-options.png)
-
-Note that in addition to label priority, the order of the label policies also matters - see [Label policy priority (order matters)](#label-policy-priority-order-matters).
 
 ### Sublabels (grouping labels)
 
 With sublabels, you can group one or more labels below a parent label that a user sees in an Office app. For example, under Confidential, your organization might use several different labels for specific types of that classification. In this example, the parent label Confidential is simply a text label with no protection settings, and because it has sublabels, it can’t be applied to content. Instead, users must choose Confidential to view the sublabels, and then they can choose a sublabel to apply to content.
 
-Sublabels are simply a way to present labels to users in logical groups. Sublabels don’t inherit any settings from their parent label. Sublabels can be applied to content; parent labels cannot.
+Sublabels are simply a way to present labels to users in logical groups. Sublabels don’t inherit any settings from their parent label. You can apply sublabels to content; you can't apply parent labels.
 
-(Also, you should not choose a parent label as the default label (see next section), or configure a parent label to be auto-applied or recommended, because the parent label won't be applied to content in Office apps that use the Azure Information Protection unified labeling client.)
+Don't choose a parent label as the default label (see next section), or configure a parent label to be auto-applied or recommended, because the parent label won't be applied to content in Office apps that use the Azure Information Protection unified labeling client.
 
 ![Grouped sublabels on the Ribbon](media/Sensitivity-label-grouped-labels.png)
 
 ### Editing or deleting a sensitivity label
 
-If you delete a sensitivity label, note that the label is not removed from content, and any protection settings continue to be enforced on the content.
+If you delete a sensitivity label, the label is not removed from content, and any protection settings continue to be enforced on the content.
 
 If you edit a sensitivity label, the version of the label that was applied to content is what’s enforced on that content.
 
@@ -129,7 +126,7 @@ With a label policy, you can:
 
     ![Prompt in Outlook asking user to apply required label](media/sensitivity-labels-mandatory-prompt-aipv2-outlook.PNG)
 
-- **Provide help link to a custom help page.** If your users aren’t sure what your sensitivity labels mean or how they should be used, you can provide a Learn More URL that appears at the bottom of the Sensitivity label menu in the Office apps.
+- **Provide help link to a custom help page.** If your users aren’t sure what your sensitivity labels mean or how they should be used, you can provide a Learn More URL that appears at the bottom of the **Sensitivity label** menu in the Office apps.
 
     ![Learn more link on Sensitivity button on Ribbon](media/Sensitivity-label-learn-more.png)
 
@@ -137,7 +134,7 @@ After you create a label policy and assign sensitivity labels to users and group
 
 ### Label policy priority (order matters)
 
-You make your sensitivity labels available to users by publishing them in a sensitivity label policy, which appears in a list on the **Sensitivity policies** tab on the **Label policies** page. Just like sensitivity labels (see the above section [Label priority (order matters)](#label-priority-order-matters)), the order of the sensitivity label policies is important because it reflects their priority. The label policy with lowest priority is shown at the **top**, and label policy with the highest priority is shown at the **bottom**.
+You make your sensitivity labels available to users by publishing them in a sensitivity label policy that appears in a list on the **Sensitivity policies** tab on the **Label policies** page. Just like sensitivity labels (see [Label priority (order matters)](#label-priority-order-matters)), the order of the sensitivity label policies is important because it reflects their priority. The label policy with lowest priority is shown at the **top**, and the label policy with the highest priority is shown at the **bottom**.
 
 A label policy consists of:
 
@@ -151,7 +148,7 @@ If a user or group in your organization is not seeing an option in the label pol
 
 ![Move option on the page for sensitivity label policies](media/sensitivity-label-policy-priority.png)
 
-Note that while priority matters for sensitivity label policies, it does **not** matter for retention label policies. As explained in [The principles of retention, or what takes precedence?](labels.md#the-principles-of-retention-or-what-takes-precedence), content can be subject to multiple retention policies.
+While priority matters for sensitivity label policies, it does **not** matter for retention label policies. As explained in [The principles of retention, or what takes precedence?](labels.md#the-principles-of-retention-or-what-takes-precedence), content can be subject to multiple retention policies.
 
 ## How to get started
 
@@ -175,11 +172,16 @@ Sensitivity labels appear in the UI of Office apps. To view the current availabi
 
 In Office apps on devices running Windows, sensitivity labels appear on the **Sensitivity** button, on the **Home** tab on the Ribbon. The label applied also appears in the Status bar at the bottom of the window.
 
-Coming soon is native support for sensitivity labels in Office apps on Windows.
-
 If you're an existing Azure Information Protection customer, you can deploy the Azure Information Protection unified labeling client, which supports sensitivity labels. For more information about downloading the client, see [Azure Information Protection unified labeling client: Version release information](https://docs.microsoft.com/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history). We’re currently working on native support for sensitivity labels in Office apps on Windows, so that the Azure Information Protection unified labeling client will no longer be required.
 
 ![Sensitivity button on Ribbon in Excel on Windows](media/Sensitivity-label-Sensitivity-button.png)
+
+### Office apps on the web
+
+For information sensitivity labels with Office apps on the web, see [Apply sensitivity labels to your documents and email within Office - Web](https://support.office.com/en-us/article/apply-sensitivity-labels-to-your-documents-and-email-within-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9?ad=US&ui=en-US&rs=en-US#bkmk_whereavailable&ID0EAEAAA=Web).
+
+> [!WARNING]
+> @REVIEWERS - I don't have comparable data for the web apps. Instead, I decided to just link to the specific web instructions that David will need to write up with your help. Please confirm this is OK.
 
 ### Office apps on Mac
 
@@ -214,7 +216,22 @@ Azure Information Protection users are currently able to classify and label cont
 
 If you are using Azure Information Protection labels, for now we recommend that you avoid creating new labels in other admin centers until after you’ve completed your migration. The [Azure Information Protection migration topic](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels) has important information and some specific caveats. If you are not yet ready to migrate your production tenants to sensitivity labels, there is no cause for concern: for the moment, your users can continue using the Azure Information Protection client, and admins can continue using the Azure portal for management.
 
-## Protect content on Windows devices by using endpoint protection in Microsoft Intune
+## Use sensitivity labels alongside the Azure Information Protection client in Office for Windows
+
+Office 365 automatically turns off Sensitivity labels if you have installed the Azure Information Protection client in Office for Windows.
+
+To use sensitivity labels if you have the Azure Information Protection client installed:
+
+1. Do either of the following:
+   - Configure the **Use the Sensitivity feature in Office to apply and view sensitivity labels** Group Policy setting. Find this setting under **User Configuration/Administrative Templates/Microsoft Office 2016/Security Settings**.
+
+    You can deploy this setting through traditional group policy deployment mechanisms, or by the [Office cloud policy service](https://docs.microsoft.com/DeployOffice/overview-office-cloud-policy-service).
+
+   - Uninstall or [disable](https://support.office.com/article/view-manage-and-install-add-ins-in-office-programs-16278816-1948-4028-91e5-76dca5380f8d) the Azure Information Protection client.
+
+2. Restart all Office applications.
+
+## Protect content on Windows devices by using endpoint protection in Microsoft InTune
 
 When you create a sensitivity label, you have the option to tell Windows that files with this label are sensitive and need to be protected against data leakage when stored on Windows devices. This option can help ensure that content with this label can be shared or copied only to sanctioned locations, even when it’s stored on an endpoint. In essence, turning on this option for a sensitivity label tells Windows that this is extra critical data that warrants additional usage constraints.
 
@@ -230,15 +247,16 @@ And if a user attempts to save labeled content to a USB drive, they see this mes
 
 ![Message that labeled content cannot be copied to USB drive](media/Sensitivity-label-WIP-USB-drive.png)
 
-### Important prerequisites
+### Important prerequisites for using WIP
 
 Before your sensitivity labels can use WIP, you first need to do the prerequisites described here: [How Windows Information Protection protects files with a sensitivity label](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/how-wip-works-with-labels?branch=vsts17546553). This topic describes the following prerequisites:
 
 - Make sure you're running Windows 10, version 1809 or later.
 - [Set up Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://docs.microsoft.com/windows/security/threat-protection/), which scans content for a label and applies the corresponding WIP protection. ATP performs some actions independently from WIP, such as reporting anomalies.
 - Create a Windows Information Protection (WIP) policy that applies to endpoint devices. You can do this in either of these locations:
-    - [Create a Windows Information Protection (WIP) policy with MDM using the Azure portal for Microsoft Intune](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure)
-    - [Create and deploy a Windows Information Protection (WIP) policy using System Center Configuration Manager](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/create-wip-policy-using-sccm)
+
+  - [Create a Windows Information Protection (WIP) policy with MDM using the Azure portal for Microsoft Intune](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure)
+  - [Create and deploy a Windows Information Protection (WIP) policy using System Center Configuration Manager](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/create-wip-policy-using-sccm)
 
 ## Protect content in third-party apps and services by using Microsoft Cloud App Security
 
@@ -246,7 +264,7 @@ Protect content in third-party apps and services by using Cloud App Security (CA
 
 For more information, see [Automatically apply Azure Information Protection classification labels](https://docs.microsoft.com/cloud-app-security/use-case-information-protection).
 
-### Important prerequisites
+### Important prerequisites for using CAS
 
 Before your sensitivity labels can use CAS, you first need to do the prerequisites described here: [Automatically apply Azure Information Protection classification labels](https://docs.microsoft.com/cloud-app-security/use-case-information-protection). This topic describes the following prerequisites:
 
@@ -263,9 +281,9 @@ Using the SDK, you can label and protect content in a way that works with other 
 
 To learn more about the Microsoft Information Protection SDK, see the [announcement on the Tech Community blog](https://techcommunity.microsoft.com/t5/Microsoft-Information-Protection/Microsoft-Information-Protection-SDK-Now-Generally-Available/ba-p/263144). You can also learn about [partner solutions that are integrated with Microsoft Information Protection](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Microsoft-Information-Protection-showcases-integrated-partner/ba-p/262657).
 
-## Permissions
+## Permissions required to create sensitivity labels
 
-Members of your compliance team who will create sensitivity labels need permissions to the Microsoft 365 compliance center, Microsoft 365 security center, or Office 365 Security & Compliance Center. By default, your tenant admin will have access to these admin centers and can give compliance officers and other people access, without giving them all of the permissions of a tenant admin. To do this, we recommend that you go to the **Permissions** page of one of these admin centers, and then add members to the **Compliance Administrator** or **Security Administrator** role group.
+Members of your compliance team who will create sensitivity labels need permissions to the Microsoft 365 compliance center, Microsoft 365 security center, or Office 365 Security & Compliance Center. By default, your tenant admin has access to these admin centers and can give compliance officers and other people access, without giving them all of the permissions of a tenant admin. To do this, we recommend that you go to the **Permissions** page of one of these admin centers, and then add members to the **Compliance Administrator** or **Security Administrator** role group.
 
 For more information, see  [Give users access to the Office 365 Security & Compliance Center](/security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
 
