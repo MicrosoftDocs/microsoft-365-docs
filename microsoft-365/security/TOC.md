@@ -19,6 +19,13 @@
 
 ### [Manage tickets through ServiceNow](./mtp/tickets.md)
 
+
+## [Identity and device access configurations](../enterprise/microsoft-365-policies-configurations.md)
+### [Prerequisite work](../enterprise/identity-access-prerequisites.md)
+### [Common identity and device access policies](../enterprise/identity-access-policies.md)
+### [Recommended Exchange Online access policies](../enterprise/secure-email-recommended-policies.md)
+### [Recommended SharePoint Online access policies](../enterprise/sharepoint-file-access-policies.md)
+
 ## [Office 365 Security]()
 ### [Get started]()
 #### [Office 365 security roadmap](./office-365-security/security-roadmap.md)
@@ -43,7 +50,6 @@
 ##### [Anti-malware protection FAQ](./office-365-security/anti-malware-protection-faq-eop.md)
 ##### [Anti-spam and anti-malware protection in Office 365](./office-365-security/anti-malware-protection.md)
 ##### [Anti-spam protection FAQ](./office-365-security/anti-spam-protection-faq.md)
-##### [Control outbound spam in Office 365](./office-365-security/controlling-outbound-spam-in-Office-365.md)
 ##### [Avoid invalid characters in your spam filter rules and the spam filter policy](./office-365-security/invalid-characters-hosted-spam-filter-rules-policies.md)
 ##### [Safe sender and blocked sender lists in Exchange Online](./office-365-security/safe-sender-and-blocked-sender-lists-faq.md)
 ##### [Safety tips in email messages in Office 365](./office-365-security/safety-tips-in-office-365.md)
@@ -55,7 +61,7 @@
 ##### [Office 365 email anti-spam protection](./office-365-security/anti-spam-protection.md)
 ##### [How policies and protections are combined](./office-365-security/how-policies-and-protections-are-combined.md)
 ##### [How to reduce spam email in Office 365](./office-365-security/reduce-spam-email.md)
-##### [Controlling outbound spam in Office 365](./office-365-security/outbound-spam-controls.md)
+##### [Control outbound spam in Office 365](./office-365-security/outbound-spam-controls.md)
 ##### [Block email spam with the Office 365 spam filter to prevent false negative issues](./office-365-security/reduce-spam-email.md)
 ##### [Zero-hour auto purge - protection against spam and malware](./office-365-security/zero-hour-auto-purge.md)
 ##### [Ensure that spam is routed to each user's Junk Email folder](./office-365-security/ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)
@@ -253,4 +259,8 @@
 
 ### [Office 365 Enterprise](https://docs.microsoft.com/office-365-security/Enterprise)
 ### [Office 365 for Business](https://docs.microsoft.com/office-365-security/admin/admin-home)
-## [Microsoft 365 compliance](https://docs.microsoft.com/microsoft-365/compliance/)
+
+
+
+
+## [Microsoft 365 Compliance](https://docs.microsoft.com/microsoft-365/compliance/)
