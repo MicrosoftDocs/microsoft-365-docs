@@ -27,7 +27,7 @@ The Microsoft 365 global administrator will likely be the first user to access a
 
 ### Set user permissions
 
-Compliance Score uses a role-based access control (RBAC) permission model. Only users who are assigned a user role may access Compliance Score, and the actions allowed by each user are restricted by role type. View a table showing the actions allowed for each permission. (Note that Compliance Manager permissions work in the same way; for example …) 
+Compliance Score uses a role-based access control (RBAC) permission model. Only users who are assigned a user role may access Compliance Score, and the actions allowed by each user are restricted by role type. ***draft note - this section needs verification; RBAC management in CS is unclear; the following is existing CM language**View a table showing the actions allowed for each permission. (Note that Compliance Manager permissions work in the same way; for example …) 
 
 The portal admin for Compliance Manager can set permissions for other users in within Compliance Manager by following these steps:
 
@@ -38,7 +38,7 @@ In addition, users who are assigned the [Global Reader role in Azure Active Dire
 
 ### Invite collaborators who work on compliance for your organization
 
-The most productive initial action you can take to make Compliance Score work best for you is to invite other users to the feature so that you can begin collaborating with them and assigning them tasks. When you invite users, they receive an email inviting them to collaborate. To invite users, follow these steps: ???......
+**draft note: unclear if this exists in PP or is only in FRE for GA; to confirm**The most productive initial action you can take to make Compliance Score work best for you is to invite other users to the feature so that you can begin collaborating with them and assigning them tasks. When you invite users, they receive an email inviting them to collaborate. To invite users, follow these steps: ???......
 
 ## Understanding the Compliance Score dashboard
 
@@ -48,7 +48,7 @@ SCREENSHOT DASHBOARD
 
 ### Overall compliance score
 
-Your compliance score, featured prominently at the top, shows a percentage based on points achievable for completing improvement actions addressing key data protection standards and regulations. When you come to Compliance Score for the first time, you're presented with a custom score based on the built-in Microsoft Data Protection Standard (MSDP), a set of controls that includes key regulations and standards. Because Compliance Score scans your system to take inventory of your existing Microsoft 365 solutions, it can already give an initial assessment of your compliance posture based on privacy and security settings currently enabled by your organization. 
+Your compliance score, featured prominently at the top, shows a percentage based on points achievable for completing improvement actions addressing key data protection standards and regulations. When you come to Compliance Score for the first time, you're presented with a custom score based on the built-in Microsoft Data Protection Standard (MSDP)—a set of controls that includes key regulations and standards. Because Compliance Score scans your system to take inventory of your existing Microsoft 365 solutions, it can give an initial assessment of your compliance posture based on privacy and security settings currently enabled by your organization.
 
 As you work to customize Compliance Score, your score number becomes even more relevant and meaningful to your organization. Learn more about [how your score is calculated](compliance-score-methodology.md).
 
@@ -69,7 +69,7 @@ This section gives you a more detailed view of your score in two different ways:
 
 ### Customizing your view
 
-You can filter your dashboard view to see only the items related to particular regulations and standards, solutions, or action types. Filtering your view in this way will also filter the score on your dashboard so you can see how many points you’ve achieved out of total possible points based on your filter criteria.  To filter your view, select **Filter** on the upper-right side of the dashboard:
+You can filter your dashboard view to see only the items related to particular regulations and standards, solutions, or action types. Filtering your view in this way will also filter the score on your dashboard, showing how many points you’ve achieved out of total possible points based on your filter criteria.  To filter your view, select **Filter** on the upper-right side of the dashboard:
 
 SCREENSHOT DASHBOARD FILTER BUTTON
 
@@ -136,17 +136,17 @@ abc
 
 ## Viewing solutions
 
-The Solutions screen shows you the share of earned and potential points toward your score are available to you as organized by improvement actions taken within specific Microsoft solutions. The **Solutions that affect your score** section on your Compliance Score dashboard shows the solutions with the greatest potential to positively impact your score. View all your solutions by selecting **Solutions** on the top menu bar or **View all solutions**.
+The Solutions screen shows you the share of earned and potential points that are available to you as organized by improvement actions taken within specific Microsoft solutions. The **Solutions that affect your score** section on your Compliance Score dashboard shows the solutions with the greatest potential to positively impact your score. View all your solutions by selecting **Solutions** on the top menu bar or **View all solutions**.
 
 SCREENSHOT SOLUTIONS FROM DASHBOARD
 
 ### How Compliance Score monitors your solutions
 
-Compliance Score automatically scans through your Microsoft 365 environment and detect your system settings, continuously and automatically updating your technical control status. For example, if you turned on multi-factor authentication (MFA) in the Azure AD portal, Compliance Score detects the setting and reflect that in the access control details. Vice versa, if you didn’t turn on MFA, Microsoft Compliance Score would flag that as a recommended action for you to take. With the ongoing control assessment, you can now proactively maintain compliance, instead of reactively fixing settings when getting audited.
+Compliance Score automatically scans through your Microsoft 365 environment and detect your system settings, continuously and automatically updating your technical control status. For example, if you turned on multi-factor authentication (MFA) in the Azure AD portal, Compliance Score detects the setting and reflect that in the access control details. Conversely, if you didn’t turn on MFA, Compliance Score flags that as a recommended action for you to take.
 
 ### Monitoring and taking action
 
-On the solutions screen, you can easily view all of your organization’s Microsoft solutions. The table lists each solution's contribution to your overall score, the score-enhancing points achieved and possible within that solution, and the remaining number of improvement actions grouped in that solution that can increase your score. Select **Open** underneath the **Open Solution** column to work on that particular solution. For instance, in the example below, selecting **Open** takes you to your Azure AD Identity Protection instance so that you can take the action recommended in the **Description** column.
+The solutions screen displays all of your organization’s Microsoft solutions. The table lists each solution's contribution to your overall score, the score-enhancing points achieved and possible within that solution, and the remaining number of improvement actions grouped in that solution that can increase your score. Select **Open** underneath the **Open Solution** column to work on that particular solution. For instance, in the example below, selecting **Open** takes you to your Azure AD Identity Protection instance so that you can take the action recommended in the **Description** column.
 
 SCREENSHOT SOLUTIONS PAGE OPEN LINK
 
@@ -190,4 +190,4 @@ SCREENSHOT ASSESSMENT PAGE LINK TO CUST MANAGED ACTIONS
 
 ## Reporting
 
-Improvement actions provide a secure repository because of Role-Based Access Control (RBAC). All your supporting documentation proving that a control was successfully tested and implemented reside in the improvement action, stored securely in the Microsoft cloud.
+Improvement actions provide a secure repository because of Role-Based Access Control (RBAC). All your supporting documentation proving that a control was successfully tested and implemented reside in the improvement action, stored securely in the Microsoft cloud. For audting and reporting functions...
