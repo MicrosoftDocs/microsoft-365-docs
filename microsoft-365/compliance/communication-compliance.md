@@ -20,9 +20,9 @@ description: "Learn about communications compliance in Microsoft 365"
 
 # Communications compliance in Microsoft 365 (preview)
 
-Communication supervision in Microsoft 365 allows you to capture employee corporate communications for examination and remediation by designated reviewers. By defining specific conditions in supervision policies, you can scan and capture internal and external email, Microsoft Teams, or 3rd-party communications in your organization. Designated reviewers can then examine messages with alerts to make sure that they are compliant with your organization's message standards and remediate them according to their importance and severity.
+Communication compliance in Microsoft 365 allows you to capture employee corporate communications for examination and remediation by designated reviewers. By defining specific conditions in supervision policies, you can scan and capture internal and external email, Microsoft Teams, or 3rd-party communications in your organization. Designated reviewers can then examine messages with alerts to make sure that they are compliant with your organization's message standards and remediate them according to their importance and severity.
 
-Communication supervision policies help you overcome many modern compliance challenges associated with internal and external communications, including:
+Communication compliance policies help you overcome many modern compliance challenges associated with internal and external communications, including:
 
 - Scanning increasing types of communication channels
 - The increasing volume of message data
@@ -36,11 +36,11 @@ To learn more about upcoming communication compliance feature improvements and a
 
 ## Scenarios for communication compliance
 
-Communication supervision policies can assist with reviewing messages in your organization in several areas:
+Communication compliance policies can assist with reviewing messages in your organization in several areas:
 
 - **Corporate policies**
 
-    Employees must comply with acceptable use, ethical standards, and other corporate policies in all their business-related communications. Communication supervision policies can detect policy matches and help you take corrective actions to help mitigate these types of incidents. For example, you could scan employee communications in your organization for potential human resources concerns such as harassment or the use of inappropriate or offensive language.
+    Employees must comply with acceptable use, ethical standards, and other corporate policies in all their business-related communications. Communication compliance policies can detect policy matches and help you take corrective actions to help mitigate these types of incidents. For example, you could scan employee communications in your organization for potential human resources concerns such as harassment or the use of inappropriate or offensive language.
 
 - **Risk management**
 
@@ -48,22 +48,22 @@ Communication supervision policies can assist with reviewing messages in your or
 
 - **Regulatory compliance**
 scan
-    Most organizations must comply with some type of regulatory compliance standards as part of their normal operating procedures. These regulations often require organizations to implement some type of supervisory or oversight process for messaging that is appropriate for their industry. The Financial Industry Regulatory Authority (FINRA) Rule 3110 is a good example of a requirement for organizations to have supervisory procedures in place to scan employee communications and the types of businesses in which it engages. Another example may be a need to review broker-dealer communications in your organization to safeguard against potential money-laundering, insider trading, collusion, or bribery activities. Communication supervision policies can help your organization meet these requirements by providing a process to both scan and report on corporate communications.
+    Most organizations must comply with some type of regulatory compliance standards as part of their normal operating procedures. These regulations often require organizations to implement some type of supervisory or oversight process for messaging that is appropriate for their industry. The Financial Industry Regulatory Authority (FINRA) Rule 3110 is a good example of a requirement for organizations to have supervisory procedures in place to scan employee communications and the types of businesses in which it engages. Another example may be a need to review broker-dealer communications in your organization to safeguard against potential money-laundering, insider trading, collusion, or bribery activities. Communication compliance policies can help your organization meet these requirements by providing a process to both scan and report on corporate communications.
 
 ## Integration with Microsoft 365 services
 
-Communication supervision policies scan and capture messages across several communication channels to help you review and remediate compliance issues:
+Communication compliance policies scan and capture messages across several communication channels to help you review and remediate compliance issues:
 
 - **Exchange Online:** All mailboxes hosted on Exchange Online in your Microsoft 365 or Office 365 subscription are eligible for supervision. Emails and attachments matching communication compliance policy conditions are instantly available for monitoring and in supervision reports. Exchange Online is now an optional source channel and is no longer required in communication compliance policies.
 - **Microsoft Teams:** Chat communications and associated attachments for public and private Microsoft Teams channels and individual chats are supported in communication compliance as a standalone channel source or with other Microsoft 365 services. Policies now automatically scan all Microsoft Teams channels and teams for specific users defined in a policy, eliminating the need to keep a separate mapping list for Microsoft Teams assignments.
-- **Skype for Business Online:** Communication supervision policies support scanning chat communications and associated attachments in Skype for Business Online.
-- **Third-party sources:** You can scan messages from third-party sources for data imported into mailboxes in your Microsoft 365 organization. Communication supervision supports connections to several popular platforms, including Instant Bloomberg, Facebook, Twitter, and others.
+- **Skype for Business Online:** Communication compliance policies support scanning chat communications and associated attachments in Skype for Business Online.
+- **Third-party sources:** You can scan messages from third-party sources for data imported into mailboxes in your Microsoft 365 organization. Communication compliance supports connections to several popular platforms, including Instant Bloomberg, Facebook, Twitter, and others.
 
 To learn more about messaging channel support in communication compliance policies, see [supported communication types](supervision-feature-reference.md#supported-communication-types).
 
 ## Workflow
 
-Communication supervision helps you address common pain points associated with complying with internal policies and regulatory compliance requirements. With focused policy templates and a flexible workflow, you can use actionable insights to quickly resolve detected compliance issues. Identifying and resolving communication compliance issues with supervision in Microsoft 365 uses the following workflow:
+Communication compliance helps you address common pain points associated with complying with internal policies and regulatory compliance requirements. With focused policy templates and a flexible workflow, you can use actionable insights to quickly resolve detected compliance issues. Identifying and resolving communication compliance issues with supervision in Microsoft 365 uses the following workflow:
 
 WORKFLOW ARTWORK
 
@@ -94,7 +94,7 @@ You remediate communication compliance issues you've investigated using the foll
 - **Notify the user**: In many cases, users accidentally or inadvertently violate a communication compliance policy. You can use the notify feature to provide a simple warning notice to the user and to resolve the issue.
 - **Escalate to another reviewer**: In some cases, the initial reviewer of an issue may need input from other reviewers to help resolve the incident. You can easily escalate message issues to reviewers in other areas of your organization as part of the resolution process.
 - **Mark as a false positive**: Messages incorrectly detected as matches of compliance policies will occasionally slip through to the review process. You can mark these types of alerts as false positives and automatically resolve the issue.
-- **Open a case in other Microsoft 365 compliance solutions**: In the most severe cases, you may need to open a case for deeper investigation and review of an issue. Communication supervision is tightly integrated with other Microsoft 365 compliance review features to help you with end-to-end resolution management. Opening a case transfers management of the issue and automatically resolves the alert in the communication compliance workflow.
+- **Open a case in other Microsoft 365 compliance solutions**: In the most severe cases, you may need to open a case for deeper investigation and review of an issue. Communication compliance is tightly integrated with other Microsoft 365 compliance review features to help you with end-to-end resolution management. Opening a case transfers management of the issue and automatically resolves the alert in the communication compliance workflow.
     - **Insider risk management case**: Insider risk management uses logs and risk signals across Microsoft 365 services and other third-party sources to help identify, triage, and remediate risks. Cases in insider risk management contain alerts, user activities, and content sets and alert submissions from communication compliance help provide reviewers with a complete end-to-end perspective of risky activities. To learn more about insider risk management cases in Microsoft 365, see [insider risk management in Microsoft 365](insider-risk-overview.md).
     - **Data Investigation case**: Data Investigations allow you to search for sensitive, malicious, or misplaced data across Microsoft 365 and to take appropriate action to redmediate the data spillage. Creating a new investigation from a communication compliance alert allows reviewers to properly evaluate the extent of any data spillage. To learn more about data investigation cases, see [Overview of Data Investigations in Microsoft 365](overview-data-investigations.md).
     - **Advanced eDiscovery case**: Advanced eDiscovery provides an end-to-end workflow to preserve, collect, review, analyze, and export content that's responsive to your organization's internal and external investigations. It also lets legal teams manage the entire legal hold notification workflow to communicate with custodians involved in a case. Assigning an employee as a custodian in an Advanced eDiscovery case from a communication compliance alert helps your legal team take appropriate actions and manage content preservation. To learn more about Advanced eDiscovery cases, see [Overview of the Advanced eDiscovery in Microsoft 365](overview-ediscovery-20.md).
@@ -105,4 +105,4 @@ Keeping track and managing compliance issues identified by communication complia
 
 ## Ready to get started?
 
-To configure communication compliance for your Microsoft 365 organization, see [Configure communication compliance for Microsoft 365 (Preview)](configure-supervision-policies.md). To configure communication compliance in your Office 365 organization, see [Configure communication compliance for Office 365](supervision-configure-office-365.md).
+To configure communication compliance for your Microsoft 365 organization, see [Configure communication compliance for Microsoft 365 (Preview)](configure-supervision-policies.md).
