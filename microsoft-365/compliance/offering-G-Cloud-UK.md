@@ -107,3 +107,7 @@ The [Service Trust Portal](https://support.office.com/article/Get-started-with-t
 - [Digital Marketplace](https://www.digitalmarketplace.service.gov.uk/)
 - [Microsoft Online Services](http://aka.ms/Online-Services-Terms)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+
+## Download the offering backgrounder
+
+Do you need the backgrounder document for this offering? Download the

@@ -64,3 +64,7 @@ Yes. Microsoft customers may use the audited controls described in the reports f
 - [Microsoft and the NIST Cybersecurity Framework](offering-nist-csf.md)
 - [Microsoft Government Cloud](https://www.microsoft.com/enterprise/government)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+
+## Download the offering backgrounder
+
+Do you need the backgrounder document for this offering? Download the

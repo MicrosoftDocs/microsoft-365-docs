@@ -75,3 +75,7 @@ IG Toolkit attainment levels are from 0 to 3:
 - [IG Toolkit requirements](https://www.igt.hscic.gov.uk/requirementsorganisation.aspx?tk=427399392327814&cb=5815499d-070a-49e2-ac2e-c70d74d81ddc&lnv=2&clnav=YES)
 - [IG Toolkit FAQ](https://www.igt.hscic.gov.uk/resources/About%20the%20IG%20Toolkit.pdf)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+
+## Download the offering backgrounder
+
+Do you need the backgrounder document for this offering? Download the

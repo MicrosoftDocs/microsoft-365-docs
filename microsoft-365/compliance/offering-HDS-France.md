@@ -68,3 +68,7 @@ The HDS certification is valid for three years.
 - [Azure for health](https://azure.microsoft.com/industries/healthcare/)
 - [Security at Microsoft](https://www.microsoft.com/security)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+
+## Download the offering backgrounder
+
+Do you need the backgrounder document for this offering? Download the

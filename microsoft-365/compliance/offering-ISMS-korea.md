@@ -78,3 +78,7 @@ Organizations can apply for the K-ISMS certification based on the 80 controls fo
 - [K-ISMS documents and guidelines](https://isms.kisa.or.kr/main/isms/notice/) (Korean)
 - [Azure Regions](https://azure.microsoft.com/global-infrastructure/regions/)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+
+## Download the offering backgrounder
+
+Do you need the backgrounder document for this offering? Download the

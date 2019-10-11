@@ -59,3 +59,7 @@ Find WCAG reports for all our products and services.
     - Dedicated support for enterprise customers with accessibility questions about our products and services or compliance.
 
 [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+
+## Download the offering backgrounder
+
+Do you need the backgrounder document for this offering? Download the

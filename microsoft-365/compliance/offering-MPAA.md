@@ -62,3 +62,7 @@ Production facilities, visual effects houses, and other service partners should 
 - [CSA STAR Azure Self-Assessment](https://www.microsoft.com/TrustCenter/Compliance/CSA-self-assessment)
 - [Azure Responses to CSA CAIQ v3.0.1](https://gallery.technet.microsoft.com/Azure-Responses-to-CSA-46034a11)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+
+## Download the offering backgrounder
+
+Do you need the backgrounder document for this offering? Download the

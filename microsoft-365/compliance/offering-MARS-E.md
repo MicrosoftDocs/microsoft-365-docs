@@ -64,3 +64,7 @@ Yes. Third-party audit reports to the FedRAMP standards attest to the effectiven
 - [Microsoft compliance framework for online services white paper](http://aka.ms/compliance-framework)
 - [Microsoft Online Services Terms](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+
+## Download the offering backgrounder
+
+Do you need the backgrounder document for this offering? Download the

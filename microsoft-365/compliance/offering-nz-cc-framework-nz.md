@@ -68,3 +68,7 @@ If your agency is required to undertake certification and accreditation of its I
 - [Intune](http://aka.ms/Intune-NZ-response)
 - [Office 365](http://aka.ms/O365-NZ-Response)
 - [Power BI](http://download.microsoft.com/download/5/1/7/51726B9B-2E76-49C4-9D4F-A36BF025CB93/Response-to-GCIO-105-questions-Power-BI.pdf)
+
+## Download the offering backgrounder
+
+Do you need the backgrounder document for this offering? Download the

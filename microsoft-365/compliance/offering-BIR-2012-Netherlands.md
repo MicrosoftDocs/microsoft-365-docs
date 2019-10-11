@@ -67,3 +67,7 @@ The report is provided to customers under a non-disclosure agreement (NDA), on t
 - [Prescription information security national 2007 (VIR)](http://wetten.overheid.nl/BWBR0022141/2007-07-01)
 - [Baseline Information Security (BIR)](http://www.earonline.nl/index.php/Overzicht_Baseline_Informatiebeveiliging_Rijksdienst_\(BIR_2012\))
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+
+## Download the offering backgrounder
+
+Do you need the backgrounder document for this offering? Download the

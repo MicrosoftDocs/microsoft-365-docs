@@ -77,3 +77,7 @@ It enables CSPs to document compliance with CSA published best practices in a tr
 
 - [Azure](http://aka.ms/Azure_STAR)
 - [Dynamics 365](http://aka.ms/DynamicsCRM_Online_STAR)
+
+## Download the offering backgrounder
+
+Do you need the backgrounder document for this offering? Download the

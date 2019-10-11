@@ -127,3 +127,7 @@ The [SOC Toolkit for Service Organizations](http://aka.ms/soc-toolkit) is a help
  - [Microsoft Online Services Terms](http://aka.ms/Online-Services-Terms)
  - [Microsoft Government Cloud](https://go.microsoft.com/fwlink/p/?linkid=2087246)
  - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+
+## Download the offering backgrounder
+
+Do you need the backgrounder document for this offering? Download the

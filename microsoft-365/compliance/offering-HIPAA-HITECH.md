@@ -103,3 +103,7 @@ To assist customers with this task, Microsoft has published these guides:
 - [Understanding HIPAA Compliance with Azure](https://www.youtube.com/embed/6ptdye1LZ5k?autoplay=0)(May 19, 2016)
 - [Azure HIPAA implementation guidan](https://aka.ms/azure-hipaa-guide)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+
+## Download the offering backgrounder
+
+Do you need the backgrounder document for this offering? Download the

@@ -72,3 +72,7 @@ An agency does not need to be certified. To comply with FIPS 140-2, your system 
 - [NIST Cryptographic Module Validation Program](http://csrc.nist.gov/groups/STM/cmvp/index.html)
 - [Microsoft Online Services Terms](http://aka.ms/Online-Services-Terms)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+
+## Download the offering backgrounder
+
+Do you need the backgrounder document for this offering? Download the

@@ -59,3 +59,7 @@ Customers deploying applications on Azure should determine the GxP requirements 
 - [Microsoft and ISO/IEC 27001](offering-iso-27001.md)
 - [Microsoft and ISO 9001](offering-iso-9001.md)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+
+## Download the offering backgrounder
+
+Do you need the backgrounder document for this offering? Download the

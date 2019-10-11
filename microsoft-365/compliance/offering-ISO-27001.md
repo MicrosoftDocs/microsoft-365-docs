@@ -149,3 +149,7 @@ Yes. If your business requires ISO/IEC 27001 certification for implementations d
 
 - [Azure DevOps Services data protection overview](https://www.visualstudio.com/articles/team-services-security-whitepaper)
 - [13 effective Azure security controls for ISO 27001 compliance](https://aka.ms/13securitycontrolsforiso27001compliance)
+
+## Download the offering backgrounder
+
+Do you need the backgrounder document for this offering? Download the

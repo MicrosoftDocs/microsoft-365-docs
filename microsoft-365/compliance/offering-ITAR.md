@@ -50,3 +50,7 @@ Please contact your Microsoft account representative.
 - [Azure Government](https://azure.microsoft.com/features/gov/)
 - [Office 365 U.S. Government](https://products.office.com/government/office-365-web-services-for-government)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+
+## Download the offering backgrounder
+
+Do you need the backgrounder document for this offering? Download the

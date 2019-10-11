@@ -108,3 +108,7 @@ Yes. You may use the certifications of Microsoft cloud services as the foundatio
 - [Microsoft Government Cloud](https://go.microsoft.com/fwlink/p/?linkid=2087246)
 - [FedRAMP Security Assessment Framework](https://go.microsoft.com/fwlink/p/?linkid=2099507)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+
+## Download the offering backgrounder
+
+Do you need the backgrounder document for this offering? Download the

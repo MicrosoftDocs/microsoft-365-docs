@@ -54,3 +54,7 @@ Compliance with FACT is voluntary, but Microsoft elected to carry out an indepen
 - [MPAA Assessment](offering-mpaa.md)
 - [Azure Responses to CSA CAIQ v3.0.1](https://aka.ms/csacaiqresponses)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+
+## Download the offering backgrounder
+
+Do you need the backgrounder document for this offering? Download the

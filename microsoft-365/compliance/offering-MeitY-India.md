@@ -54,3 +54,7 @@ Making government services available to citizens online is a key part of the Dig
 - [MeghRaj Cloud Initiative](http://meity.gov.in/content/gi-cloud-meghraj)
 - [Accredited cloud service providers](http://meity.gov.in/content/gi-cloud-meghraj)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+
+## Download the offering backgrounder
+
+Do you need the backgrounder document for this offering? Download the

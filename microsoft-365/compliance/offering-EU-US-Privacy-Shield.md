@@ -86,3 +86,7 @@ If you have a complaint that is Privacy Shield-related, please let us know using
 - [Privacy at Microsoft](https://privacy.microsoft.com)
 - [Privacy considerations in the cloud](http://download.microsoft.com/download/0/9/D/09DE47F6-F9E5-4C14-B9E8-E8119A130ACC/Privacy_considerations_in_the_cloud.pdf)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+
+## Download the offering backgrounder
+
+Do you need the backgrounder document for this offering? Download the

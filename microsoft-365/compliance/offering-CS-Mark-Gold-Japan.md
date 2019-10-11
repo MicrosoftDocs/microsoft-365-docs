@@ -57,3 +57,7 @@ If your organization is using Azure or Office 365, you will need to ensure that 
 - [ISO/IEC 27017: 2015](http://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.htm?csnumber=43757)
 - [Microsoft Online Services Terms](http://aka.ms/Online-Services-Terms)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+
+## Download the offering backgrounder
+
+Do you need the backgrounder document for this offering? Download the

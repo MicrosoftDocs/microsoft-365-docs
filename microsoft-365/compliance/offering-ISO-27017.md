@@ -81,3 +81,7 @@ The [Service Trust Portal](http://aka.ms/stphelp) provides independent, third-pa
 - [ISO/IEC 27017:2015 code of practice](http://www.iso.org/iso/iso_catalogue/catalogue_tc/catalogue_detail.htm?csnumber=43757)
 - [Microsoft Online Services Terms](http://aka.ms/Online-Services-Terms)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+
+## Download the offering backgrounder
+
+Do you need the backgrounder document for this offering? Download the
