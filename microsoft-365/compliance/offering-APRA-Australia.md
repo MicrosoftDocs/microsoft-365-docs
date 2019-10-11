@@ -76,4 +76,4 @@ Yes. General privacy legislation (which applies across all sectors, not just to 
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the
+Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/2/6/0/26056353-2F4C-4A6A-AE5D-019E35EB8E2C/APRA-Compliance.pdf).

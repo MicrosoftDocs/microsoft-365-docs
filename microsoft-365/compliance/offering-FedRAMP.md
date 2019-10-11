@@ -111,4 +111,4 @@ Yes. You may use the certifications of Microsoft cloud services as the foundatio
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the
+Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/6/B/7/6B7B25B8-D44F-439A-80A9-1ED04C88B922/FedRAMP_backgrounder-2018.pdf).

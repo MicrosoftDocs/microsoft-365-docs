@@ -123,4 +123,4 @@ However, you are responsible for engaging an assessor to evaluate your implement
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the
+Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/F/D/A/FDA4697E-D72D-4513-8626-A5F294DC7A0F/ISOIEC_27018_Compliance_Backgrounder.pdf).

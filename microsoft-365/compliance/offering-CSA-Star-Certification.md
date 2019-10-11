@@ -86,4 +86,4 @@ Azure, Cloud App Security, Intune, and Power BI have achieved the highest possib
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the
+Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/C/3/6/C36C6DBB-AF39-44A2-B6C6-50CC6E4991D7/CSA-STAR-Certification-Compliance.pdf).

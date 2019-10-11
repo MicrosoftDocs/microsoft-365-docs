@@ -74,4 +74,4 @@ You can download the [CSA STAR Attestation](https://aka.ms/CSASTAR-Attestation) 
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the
+Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/0/0/F/00F2766F-00E5-4235-8CE8-90FE657D768F/CSA-STAR-Attestation-Compliance.pdf).

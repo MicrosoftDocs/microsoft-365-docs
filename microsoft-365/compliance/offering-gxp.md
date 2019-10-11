@@ -62,4 +62,4 @@ Customers deploying applications on Azure should determine the GxP requirements 
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the
+Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/4/5/B/45B4B144-E0D0-432E-A210-B8AF841F9A0A/GXP-Compliance.pdf).

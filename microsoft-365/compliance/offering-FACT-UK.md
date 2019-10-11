@@ -57,4 +57,4 @@ Compliance with FACT is voluntary, but Microsoft elected to carry out an indepen
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the
+Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/D/B/B/DBBA0998-F08A-4CA8-B668-41A5EE0CFBED/FACT-Compliance.pdf).

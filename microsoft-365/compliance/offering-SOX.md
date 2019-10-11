@@ -68,4 +68,4 @@ When you migrate your applications and data to covered Microsoft cloud services,
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the
+Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/5/D/2/5D278460-AF57-470F-B166-5BD9258BCE3E/SOX-Compliance.pdf).

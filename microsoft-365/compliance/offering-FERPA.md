@@ -74,4 +74,4 @@ This US federal law mandates the protection of the privacy of students’ educat
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the
+Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/2/8/3/2839FB21-353E-472E-BE57-883EC9C6185F/FERPA_Compliance_Backgrounder.pdf).

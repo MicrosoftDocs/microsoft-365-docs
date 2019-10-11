@@ -57,4 +57,4 @@ Making government services available to citizens online is a key part of the Dig
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the
+Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/E/8/B/E8B5BC95-2B66-4759-8BBE-31D2F641B3FD/MeitY-Compliance.pdf).

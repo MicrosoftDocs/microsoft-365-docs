@@ -82,4 +82,4 @@ Yes. However, although Microsoft responses to this framework are confirmed compl
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the
+Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/9/1/D/91D74F03-AA26-4D22-AB99-576FE9F88B58/FISC_Compliance_Backgrounder.pdf).

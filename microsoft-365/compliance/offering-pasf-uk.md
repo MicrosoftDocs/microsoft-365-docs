@@ -59,4 +59,4 @@ Yes. Law enforcement can use the NPIRMT assessment of Azure to support their own
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the
+Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/C/9/7/C97C7B62-F582-4C25-8ABB-80DFB87628CA/PASF-Compliance.pdf).

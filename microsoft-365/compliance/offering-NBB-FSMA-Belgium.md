@@ -72,4 +72,4 @@ Yes. There are specific points that financial institutions must be sure to incor
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the
+Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/5/F/3/5F3E78C9-767C-4260-92D9-A244EF3BA607/NBB-FSMA-Compliance.pdf).

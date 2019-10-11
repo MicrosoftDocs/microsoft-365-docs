@@ -130,4 +130,4 @@ The [SOC Toolkit for Service Organizations](http://aka.ms/soc-toolkit) is a help
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the
+Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/F/E/1/FE10DD69-B5A9-4DA7-A86A-1F565D2B6472/SOC_backgrounder-2018.pdf).

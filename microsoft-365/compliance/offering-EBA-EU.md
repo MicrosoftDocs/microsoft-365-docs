@@ -65,4 +65,5 @@ The Microsoft publication, [Risk Assessment and Compliance Guide for Financial I
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the
+Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/A/9/3/A93DEE11-4758-4E03-8035-D8C5843B70C2/EBA-Compliance.pdf).
+

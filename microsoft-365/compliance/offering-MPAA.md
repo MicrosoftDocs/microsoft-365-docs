@@ -65,4 +65,4 @@ Production facilities, visual effects houses, and other service partners should 
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the
+Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/7/A/1/7A19B051-3399-4222-BEF1-E6E3E0A17961/MPAA_Backgrounder.pdf).

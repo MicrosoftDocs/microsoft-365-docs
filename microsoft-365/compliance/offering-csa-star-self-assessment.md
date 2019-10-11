@@ -80,4 +80,5 @@ It enables CSPs to document compliance with CSA published best practices in a tr
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the
+Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/7/C/E/7CE08DFE-86D6-4690-9455-5123DA0A7C09/CSA-STAR-SelfAssessment-Compliance.pdf).
+

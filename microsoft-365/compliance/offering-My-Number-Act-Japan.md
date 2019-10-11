@@ -72,4 +72,4 @@ Therefore, Microsoft business cloud services support My Number Act requirements 
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the
+Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/0/E/C/0EC14DDA-6041-4841-A180-199870B136C4/MyNumberAct-Compliance.pdf).

@@ -74,4 +74,4 @@ PIPEDA doesn’t require Canadian businesses to keep personal information in Can
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the
+Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/1/9/3/19390188-F5C7-4819-80BB-30B84304E499/CanadianPrivacyLaws-Compliance.pdf).

@@ -74,4 +74,4 @@ If your organization is using Azure or Office 365, you can use ENS Microsoft aud
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the
+Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/2/3/2/23208181-BA86-4011-8B4A-3CA7E8E383A1/ENS-Spain-Compliance.pdf).

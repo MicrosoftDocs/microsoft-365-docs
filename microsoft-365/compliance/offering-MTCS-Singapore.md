@@ -100,4 +100,4 @@ Yes. If you have a requirement to certify your services built on these Microsoft
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the
+Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/3/1/A/31AA4618-A5AE-4013-832B-C7A23CEBC26E/MCTS_Compliance_Backgrounder.pdf).

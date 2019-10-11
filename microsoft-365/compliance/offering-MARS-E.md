@@ -67,4 +67,4 @@ Yes. Third-party audit reports to the FedRAMP standards attest to the effectiven
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the
+Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/7/C/2/7C2690A7-19CC-4EED-A47A-B43CC418790A/MARS-E-Compliance.pdf).

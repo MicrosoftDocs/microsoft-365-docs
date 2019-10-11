@@ -63,4 +63,4 @@ Customers deploying data to Azure Government are responsible for their own secur
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the
+Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/A/E/3/AE309D0E-F8D5-42C9-9B36-86FF51464AFC/DOE_10CFR_Part810-Compliance.pdf).

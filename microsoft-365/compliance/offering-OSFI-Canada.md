@@ -70,4 +70,4 @@ Yes, but only if the outsourcing arrangement is a material outsourcing or if it 
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the
+Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/6/9/9/699E9434-6376-4F2A-A666-1F10D715B898/OFSI-Compliance.pdf).

@@ -68,4 +68,4 @@ You can download the [ISO 9001:2015 certificate](https://aka.ms/Azure9001Cert) f
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the
+Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/E/6/3/E63F54DC-766E-477C-98D8-ADDB6A94F5C5/ISO-9001-Compliance.pdf ).

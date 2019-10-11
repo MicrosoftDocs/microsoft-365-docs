@@ -73,4 +73,4 @@ Yes. If your business requires ISO 22301 certification for implementations deplo
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the
+Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/0/0/9/009B2F34-96F6-4D85-8BDC-238B91A2C6EE/ISO-22301-Compliance.pdf ).

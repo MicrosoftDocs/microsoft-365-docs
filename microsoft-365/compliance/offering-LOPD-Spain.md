@@ -68,4 +68,4 @@ Yes. If your organization requires or is seeking an accreditation in line with t
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the
+Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/A/2/8/A280F049-3C15-4638-A2FA-EFD2793A956E/LOPD-Compliance.pdf).

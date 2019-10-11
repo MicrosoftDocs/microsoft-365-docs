@@ -64,4 +64,4 @@ Azure Government (FedRAMP package ID F1603087869) has been tested again these co
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the
+Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/6/E/C/6EC27E89-826E-44CB-A107-2A37AC879206/CNSSI_1253-Compliance.pdf).

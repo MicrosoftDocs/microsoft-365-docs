@@ -89,4 +89,4 @@ If you have a complaint that is Privacy Shield-related, please let us know using
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the
+Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/3/F/4/3F4C5C35-6653-4E9B-8C4F-917B1064F537/PrivacyShield-Compliance.pdf).

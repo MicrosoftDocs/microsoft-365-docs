@@ -80,4 +80,4 @@ No. The only environments where FTI can be stored and processed are Azure Govern
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the
+Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/D/1/8/D1825AE2-4FDA-4A4B-8D4F-9B7D2976D54A/IRS1075_Compliance_Backgrounder.pdf).

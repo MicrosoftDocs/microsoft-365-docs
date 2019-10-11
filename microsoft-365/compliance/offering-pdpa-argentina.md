@@ -57,4 +57,4 @@ In late 2018, Argentina has not yet enacted GDPR-related regulations, but it has
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the
+Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/7/0/1/7018F836-AE7C-4E98-8159-C6AA04D803CB/PDPA-Compliance.pdf).

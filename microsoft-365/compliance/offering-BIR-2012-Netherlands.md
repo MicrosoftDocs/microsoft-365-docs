@@ -70,4 +70,4 @@ The report is provided to customers under a non-disclosure agreement (NDA), on t
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the
+Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/F/0/0/F00F62B6-254B-41AC-AC79-7A43CD6E376C/BIR2012-Compliance.pdf).

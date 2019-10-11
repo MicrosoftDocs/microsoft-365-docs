@@ -60,4 +60,4 @@ If your organization is using Azure or Office 365, you will need to ensure that 
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the
+Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/D/A/A/DAAF35AB-60DE-4A70-AF1D-DD5CBAF16477/CSMarkGold-Compliance.pdf).

@@ -72,4 +72,4 @@ Yes. The Executive Order on Outsourcing of Significant Areas of Activity (and th
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the
+Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/E/9/7/E9793230-8137-4297-BC5E-A43F8732CCCD/FSA-Compliance.pdf).

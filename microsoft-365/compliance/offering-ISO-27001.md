@@ -152,4 +152,4 @@ Yes. If your business requires ISO/IEC 27001 certification for implementations d
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the
+Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/1/2/9/12926039-8F90-4BAF-AC8F-7124D48F400B/ISOIEC_27001_Compliance_Backgrounder.pdf).

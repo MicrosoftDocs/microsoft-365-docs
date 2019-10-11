@@ -77,4 +77,4 @@ ENX provides certification confirmation only to registered industry representati
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the
+Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/5/C/3/5C32AD74-703F-4B61-A290-B00B96E8DD8D/TISAX-Compliance.pdf).

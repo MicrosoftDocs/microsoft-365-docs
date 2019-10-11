@@ -65,4 +65,4 @@ Microsoft Cloud Germany is physically based in Germany and adheres to the requir
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the
+Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/B/3/5/B35DE78F-C346-4E31-ABC5-FF87BD1FF97F/ITGrundschutz-Compliance.pdf).

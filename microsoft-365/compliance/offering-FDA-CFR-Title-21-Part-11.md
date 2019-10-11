@@ -88,4 +88,4 @@ Microsoft ensures that its enterprise cloud services meet the terms defined with
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the
+Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/8/8/D/88DA8B65-8CEE-46A5-8E93-DAFC3699AD06/FDA_Compliance_Backgrounder.pdf).

@@ -71,4 +71,5 @@ Yes. Article 239 of the [ACPR Order of 3 November 2014](https://www.legifrance.g
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the
+Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/3/D/8/3D81D753-0896-4D8C-9131-D9F9153942DB/AMF-ACPR-Compliance.pdf).
+

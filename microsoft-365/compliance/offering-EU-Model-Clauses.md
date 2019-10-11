@@ -89,4 +89,4 @@ You can enter an agreement such, as the [Online Services Terms](http://aka.ms/On
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the
+Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/E/5/F/E5FA8D11-07A4-4496-82B3-0BCFABAA2FB7/EU_Model_Clauses_Compliance_Backgrounder.pdf).

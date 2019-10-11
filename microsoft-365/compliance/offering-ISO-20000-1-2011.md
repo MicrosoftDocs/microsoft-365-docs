@@ -73,4 +73,4 @@ Yes. If your business is seeking certification for implementations deployed on i
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the
+Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/4/E/5/4E58193E-F4D8-4A98-A39E-27F604BD8292/ISO-IEC-20000-Compliance.pdf).

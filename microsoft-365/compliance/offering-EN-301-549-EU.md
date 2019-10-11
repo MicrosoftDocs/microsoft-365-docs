@@ -48,4 +48,4 @@ Find [conformance reports](https://go.microsoft.com/fwlink/p/?linkid=2050974) fo
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the
+Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/F/B/B/FBB0D35E-A1B3-4078-A75D-702368311649/China-Compliance.pdf).

@@ -67,4 +67,4 @@ Yes. The guidelines referenced above stipulate some specific points that financi
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the
+Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/3/5/A/35AA1544-5E50-43C7-AA08-4911E5429205/RBI-IRDAI-Compliance.pdf).

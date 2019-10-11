@@ -71,4 +71,4 @@ The HDS certification is valid for three years.
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the
+Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/E/7/B/E7BC3E72-A6E5-4A10-96C9-3B210C4DBE35/HDS-Compliance.pdf).

@@ -84,7 +84,3 @@ The United States also has separate and more specialized export control regulati
 - [Microsoft and FIPS 140-2](offering-fips-140-2.md)
 - [Microsoft and ITAR](offering-itar.md)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## Download the offering backgrounder
-
-Do you need the backgrounder document for this offering? Download the

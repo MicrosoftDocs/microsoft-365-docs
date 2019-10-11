@@ -73,4 +73,4 @@ Yes. Part 2 of the [Microsoft checklist](https://aka.ms/FinServ-Guide-Poland) (p
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the
+Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/B/3/9/B392C073-FDF7-4F0C-8765-03ACEE5E0289/KNF-Compliance.pdf).

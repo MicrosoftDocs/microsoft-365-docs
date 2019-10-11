@@ -61,4 +61,4 @@ Yes. However, although Microsoft responses to this framework are confirmed compl
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the
+Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/E/F/4/EF49C18B-BB31-44F8-BCDD-655702C63BE8/FCA-PRA-Compliance.pdf).

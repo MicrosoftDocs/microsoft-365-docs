@@ -82,4 +82,4 @@ Start with the [IRAP tool kit](http://www.asd.gov.au/infosec/irap/toolkit.htm) a
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the
+Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/9/9/C/99CF1E4A-510C-45FD-9819-B81E1CDFC3C3/IRAP_CCSL_Compliance_Backgrounder.pdf).

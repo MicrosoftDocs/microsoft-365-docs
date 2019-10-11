@@ -71,4 +71,4 @@ Yes. You can build on Azure CPS certification within your own CPS certification 
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the
+Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/2/6/3/263C244E-20A8-41B1-B2DA-2835E30CE92E/CDSA_Compliance_Backgrounder.pdf).
