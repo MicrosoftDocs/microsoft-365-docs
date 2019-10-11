@@ -20,7 +20,7 @@ description: "Microsoft Compliance Score helps organizations simplify and automa
 
 ## What is Compliance Score
 
-Microsoft Compliance Score is a new, streamlined experience that is part of your overall M365 compliance activity. As a new feature within the Microsoft 365 compliance center, Compliance Score calculates a personalized, risk-based score to help understand your organization's state of compliance with key standards and regulations, and recommends actions you can take to strengthen your overall compliance posture. If you use [Compliance Manager](compliance-manager-overview.md), you'll notice that Compliance Score is now a standalone feature with its own design and capabilities to help you manage compliance more easily.
+Microsoft Compliance Score is a new, streamlined experience that is part of your overall Microsoft 365 compliance activity. As a new feature within the Microsoft 365 compliance center, Compliance Score calculates a personalized, risk-based score to help understand your organization's state of compliance with key standards and regulations, and recommends actions you can take to strengthen your overall compliance posture. If you use [Compliance Manager](compliance-manager-overview.md), you'll notice that Compliance Score is now a standalone feature with its own design and capabilities to help you manage compliance more easily.
 
 ### Simplified compliance management
 
@@ -40,7 +40,9 @@ During public preview, some functionality remain in Compliance Manager, such as 
 
 Your compliance score is based on a behavior-based scoring system for activities related to data protection, privacy, and security in your organization. It calculates a numerical percentage based on points you can achieve by implementing and testing controls.
 
-Compliance Score gives you an out-of-the-box score based on the Microsoft Data Protection Standard (MSDP), which is a set of controls that includes key regulations and standards. While this score is a good starting point for assessing your compliance posture, Compliance Score becomes more relevant and powerful for you once you personalize it by creating assessments, customizing controls, and taking recommended improvement actions.
+Compliance Score gives you an out-of-the-box score based on the Microsoft Data Protection Standard (MSDP), which is a set of controls that includes key regulations and standards. While this score is a good starting point for assessing your compliance posture, Compliance Score becomes more relevant and powerful for you once you personalize it by creating assessments, customizing controls, and taking recommended improvement actions. 
+
+Compliance Score also synchronizes automatically with your [Microsoft Secure Score](../security/mtp/microsoft-secure-score.md), providing you with a more meaningful score and centralized management of activities that affect both sets of scores.
 
 Visit other topics for details about [how your compliance score is calculated](compliance-score-methodology.md) and how to improve your score through the [workflow](working-with-compliance-score.md).
 
@@ -51,11 +53,13 @@ Visit other topics for details about [how your compliance score is calculated](c
 
 Compliance Score uses several components to help you manage your compliance activities. As you work with Compliance Score to assign, test, and monitor compliance activities, it’s helpful to have a basic understanding of the key terms and concepts below. This diagram  shows the relationship between the primary components:
 
-INSERT SCREEN SHOT- ROB'S GROUPS DIAGRAM
+SCREENSHOT CM/CS GROUPS DIAGRAM
 
 ### Controls
 
-A control is an activity or process created to meet a certain standard, regulation, or law. Think of controls as process containers that define how you manage your compliance activities. They are organized into control families that align with the Assessment structure for corresponding certifications or regulations. When you manage your compliance activities through Improvement actions, the control is represented on the Improvement action page by its title at the top, a description, references to related regulations and standards , and implementation instructions.
+A control is an activity or process created to manage a compliance activity. Controls can be organized and grouped into assessments to meet the requirement of a standard, regulation, or law. 
+
+When you manage your compliance activities through improvement actions (the key elements of the [wokflow process](working-with-compliance-score.md#the-workflow-managing-compliance-with-improvement-actions)), the control is represented on the improvement action page by its title at the top, a description, references to related regulations and standards , and implementation instructions.
 
 There are three types of controls:
 
@@ -65,7 +69,7 @@ There are three types of controls:
  
 ### Assessments
 
-Assessments help you carry out the necessary tasks, or improvement actions, as specified by a compliance standard and applicable data protection standards, regulations, or laws. They can include actions that have been taken by Microsoft to protect your data. Think of them as containers that allow you to organize controls. They are completed when you take action to implement the controls included in the Assessment.
+Assessments help you carry out the necessary tasks, or improvement actions, as specified by a compliance standard and applicable data protection standards, regulations, or laws. Think of them as containers that allow you to organize controls. Assessments are completed when you take action to implement the controls included in the Assessment.
 
 > [!NOTE]
 > Compliance Score displays your assessments and how they factor into your overall compliance score. However, during public preview you will be directed to Compliance Manager to manage your assessments. Therefore, some instructions in this documentation link to Compliance Manager documentation.
@@ -75,13 +79,6 @@ By default, the following Assessments are already created for your organization:
 - Office 365 ISO 27001
 - Office 365 NIST 800-53
 - Office 365 GDPR
-
-Assessments include several components:
-
-- **Microsoft-managed controls**
-- **Customer-managed controls**
-- **In-scope services**: each assessment applies to a specific set of Microsoft services
-- **Assessment score**: the percentage of the total possible score for customer-managed controls in the Assessment. This helps you track the implementation of the Actions assigned to each control.- 
 
 [View detailed instructions for working with Assessments](working-with-compliance-manager.md#assessments)
 

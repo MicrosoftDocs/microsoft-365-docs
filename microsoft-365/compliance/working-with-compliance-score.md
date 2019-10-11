@@ -18,12 +18,12 @@ description: "Learn how to access, customize, work with Microsoft Compliance Sco
 
 ## Getting started: sign in, set permissions, invite collaborators
 
-The Microsoft 365 global administrator will likely be the first user type to access and work within Compliance Score. To access Compliance Score and set it up for maximum benefit at the outset, we recommend following each of the actions below upon your first visit to Compliance Score.
+The Microsoft 365 global administrator will likely be the first user to access and work in Compliance Score. To access Compliance Score and set it up for maximum benefit, we recommend taking actions below as you first visit Compliance Score.
 
 ### Sign in to Compliance Score
 
-- Go to the [Microsoft Compliance Center](https://compliance.microsoft.com/) and **sign in** with your M365 global administrator account
-- Select **Compliance Score** on the left-hand navigation. You should then see your Compliance Score dashboard with your score (learn more about your dashboard LINK TO section right below>)
+- Go to the [Microsoft Compliance Center](https://compliance.microsoft.com/) and **sign in** with your Microsoft 365 global administrator account.
+- Select **Compliance Score** on the left-hand navigation. You should then see your [Compliance Score dashboard with your score](#understanding-the-compliance-score-dashboard)).
 
 ### Set user permissions
 
@@ -34,7 +34,7 @@ The portal admin for Compliance Manager can set permissions for other users in w
 1. From the top **More** drop-down menu, select **Admin**, then **Settings**.
 2. Select the role you want to assign and then add the employee you want to assign to that role. Users will then be able to perform certain actions.
 
-In addition, users who are assigned the [Global Reader role in Azure Active Directory (Azure AD)](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader) have read-only permission to access Compliance Manager; however they cannot edit data or perform any actions within Compliance Manager.
+In addition, users who are assigned the [Global Reader role in Azure Active Directory (Azure AD)](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader) have read-only permission to access Compliance Score; however they cannot edit data or perform any actions within Compliance Score.
 
 ### Invite collaborators who work on compliance for your organization
 
@@ -42,17 +42,19 @@ The most productive initial action you can take to make Compliance Score work be
 
 ## Understanding the Compliance Score dashboard
 
-The Compliance Score dashboard is configured to provide you an at-a-glance view of your current compliance posture.
+The Compliance Score dashboard is designed to provide you an at-a-glance view of your current compliance posture.
 
 SCREENSHOT DASHBOARD
 
 ### Overall compliance score
 
-Your compliance score, featured prominently at the top, shows a percentage based on points achievable for performing improvement actions that help address key data protection standards and regulations. When you come to Compliance Score for the first time, your score represents an initial figure based on the built-in Microsoft Data Protection Standard. As you work to customize Compliance Score, your score number becomes even more relevant and meaningful to your organization. Learn more about [how your score is calculated](compliance-score-methodology.md).
+Your compliance score, featured prominently at the top, shows a percentage based on points achievable for completing improvement actions addressing key data protection standards and regulations. When you come to Compliance Score for the first time, you're presented with a custom score based on the built-in Microsoft Data Protection Standard (MSDP), a set of controls that includes key regulations and standards. Because Compliance Score scans your system to take inventory of your existing Microsoft 365 solutions, it can already give an initial assessment of your compliance posture based on privacy and security settings currently enabled by your organization. 
+
+As you work to customize Compliance Score, your score number becomes even more relevant and meaningful to your organization. Learn more about [how your score is calculated](compliance-score-methodology.md).
 
 ### Key improvement actions
 
-This section lists the top improvement actions you can take right now to make the largest positive impact on your overall score.
+This section lists the top improvement actions you can take right now to make the largest positive impact on your overall compliance score.
 
 ### Solutions that affect your score
 
