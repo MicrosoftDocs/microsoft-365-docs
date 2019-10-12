@@ -214,7 +214,7 @@ In Office apps on Android devices, sensitivity labels appear on the **Sensitivit
 
 - [Apply sensitivity labels to your documents and email within Office](https://support.office.com/article/apply-sensitivity-labels-to-your-documents-and-email-within-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
 - [Known issues when you apply sensitivity labels to your Office files](https://support.office.com/article/known-issues-when-you-apply-sensitivity-labels-to-your-office-files-b169d687-2bbd-4e21-a440-7da1b2743edc)
-- [How sensitivity labels work in Office apps](sensitivity-labels-office-apps.md)
+- [Sensitivity labels in Office apps](sensitivity-labels-office-apps.md)
 
 ## How sensitivity labels work with existing Azure Information Protection labels
 

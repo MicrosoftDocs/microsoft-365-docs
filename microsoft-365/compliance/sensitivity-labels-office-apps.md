@@ -1,5 +1,5 @@
 ---
-title: "How sensitivity labels work in Office apps"
+title: "Sensitivity labels in Office apps"
 ms.author: greglin
 author: greg-lindsay
 manager: laurawi
@@ -12,18 +12,23 @@ ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
 - MET150
-description: "NEEDS NEW ONE"
+description: "Learn about how users work with sensitivity labels in Office apps for Windows and Office apps for the web."
 ---
 
-# How sensitivity labels work in Office apps
+# Sensitivity labels in Office apps
 
-TBD.
+Read this article to find out:
 
-### Requirements for sensitivity labels for Office for Windows
+- Requirements for your environment before you apply sensitivity labels to email, files, and attachments.
+- What happens when you combine sensitivity labels with other Microsoft security and compliance technologies that work with Office apps.
+- How people in your organization can use sensitivity labels when they work with Office apps for Windows and Office apps for the web.
+- Where to go to get people in your organization started with sensitivity labels.
+
+## Requirements for sensitivity labels for Office for Windows
 
 The Azure Information Protection client must not be running in Office. For information, see [Use sensitivity labels alongside the Azure Information Protection client in Office for Windows](#use-sensitivity-labels-alongside-the-azure-information-protection-client-in-office-for-windows).
 
-### Requirements for sensitivity labels for Outlook on all platforms
+## Requirements for sensitivity labels for Outlook on all platforms
 
 In your label configuration, if you turn on content marking, you must be using Exchange Online for that content marking to be inserted in transit.
 
@@ -53,7 +58,6 @@ To use sensitivity labels if you have the Azure Information Protection client in
    - Uninstall or [disable](https://support.office.com/article/view-manage-and-install-add-ins-in-office-programs-16278816-1948-4028-91e5-76dca5380f8d) the Azure Information Protection client.
 
 2. Restart all Office applications.
-
 
 ## Protection templates and sensitivity labels
 
