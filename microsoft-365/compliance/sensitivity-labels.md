@@ -17,13 +17,6 @@ description: "With sensitivity labels, you can classify and help protect your se
 
 # Overview of sensitivity labels
 
-
-
-- Users must have at least one of the following licenses assigned:
-  - [Microsoft 365 E5](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) or above
-  - [Office 365 E3](https://www.microsoft.com/microsoft-365/business/office-365-enterprise-e3-business-software) or above
-  - [Azure Information Protection Premium P1](https://azure.microsoft.com/pricing/details/information-protection/) or above
-
 To get their work done, people in your organization need to collaborate with others both inside and outside the organization. This means that content no longer stays behind a firewall – it roams everywhere, across devices, apps, and services. And when it roams, you want it to do so in a secure, protected way that meets your organization’s business and compliance policies.
 
 With sensitivity labels, you can classify and help protect your sensitive content, while making sure that your people’s productivity and ability to collaborate isn’t hindered.

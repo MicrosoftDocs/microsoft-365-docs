@@ -19,6 +19,9 @@ description: "You can apply labels to Office 365 groups and SharePoint sites. Se
 
 As part of Microsoft's Public preview, you can opt-in to use sensitivity labels to restrict access to Office 365 groups and SharePoint sites.
 
+> [!WARNING]
+> @REVIEWERS - Content from [Sensitivity labels for Office 365 groups and SharePoint sites (preview)](https://microsoft.sharepoint-df.com/:w:/t/CrossPremises/Ecl81il3l19HklBamX9nLdIBnoxNxsp8_9p9uT1iIP1gNQ?e=SDQ8AS) fills out the rest of this article.
+
 ## How ***encryption works***
 
 ---
