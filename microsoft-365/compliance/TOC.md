@@ -333,14 +333,14 @@
 ### [Export documents from evidence](export-documents-from-incident.md)
 ### [Download export jobs](download-export-jobs-from-a-data-investigation.md)
 
-## [Configure settings for data investigations](configure-settings-datainvestigations.md)
+## Configure investigation settings
 ### [Add or remove members from an investigation](add-remove-members.md)
 ### [Configure search and analytics settings](configure-search-analytics-settings.md)
 ### [Close or delete an investigation](close-or-delete-investigation.md)
 
-## Data Investigations reference
+## Data investigations reference
 ### [Release notes](data-investigations-release-notes.md)
-### [Limits in Data Investigations](limits-datainvestigations.md)
+### [Limits in data investigations](limits-datainvestigations.md)
 ### [Supported file types](supported-filetypes-datainvestigations.md)
 ### [Document metadata fields](document-metadata-fields.md)
 ### [Manage jobs](manage-jobs.md)
