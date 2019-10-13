@@ -2,6 +2,7 @@
 
 ## Get started
 ### [Microsoft 365 Security for BDMs](Microsoft-365-security-for-bdm.md)
+### [Secure Score](./mtp/microsoft-secure-score.md)
 
 ## Microsoft Threat Protection
 ### [Overview]()
@@ -11,7 +12,6 @@
 
 ### [Hunting in Microsoft 365](./mtp/hunting.md)
 
-### [Secure Score](./mtp/microsoft-secure-score.md)
 
 ### [Reports]()
 #### [Monitor and view reports](./mtp/monitoring-and-reporting.md)
