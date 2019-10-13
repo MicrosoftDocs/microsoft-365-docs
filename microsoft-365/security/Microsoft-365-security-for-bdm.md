@@ -18,7 +18,8 @@ This article discusses some of the most common threat and attack scenarios curre
 
 This article is organized by priority of work, starting with protecting those accounts used to administer the most critical services and assets, such as your tenant, e-mail, and SharePoint. It  provides a methodical way for approaching security and works together with the following spreadsheet so you can track your progress with stakeholders and teams across your organization: [Microsoft 365 security for BDMs spreadsheet](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/live/microsoft-365/downloads/Microsoft-365-BDM-security-recommendations-spreadsheet.xlsx). 
 
-[![Thumb image Microsoft 365 BDM security recommendations spreadsheet](downloads/microsoft-365-bdm-security-recommendations-spreadsheet-thumb.png)](downloads/Microsoft-365-BDM-security-recommendations-spreadsheet.xlsx)
+
+[![Thumb image Microsoft 365 BDM security recommendations spreadsheet](../downloads/microsoft-365-bdm-security-recommendations-spreadsheet-thumb.png)](downloads/Microsoft-365-BDM-security-recommendations-spreadsheet.xlsx)
 
 Microsoft provides you with the Secure Score tool within your tenant to automatically analyze your security posture based on your regular activities, assign a score, and provide security improvement recommendations. Before taking the actions recommended in this article, take note of your current score and recommendations. The actions recommended in this article will increase your score. The goal is not to achieve the max score, but to be aware of opportunities to protect your environment that do not negatively affect productivity for your users. See [Microsoft Secure Score](mtp/microsoft-secure-score.md).
 
