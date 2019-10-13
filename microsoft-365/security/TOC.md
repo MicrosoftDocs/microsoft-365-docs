@@ -1,7 +1,7 @@
 # [Microsoft 365 security](index.yml)
 
 ## Get started
-### [Microsoft 365 Security for Business Decision Makers (BDMs)](Microsoft-365-security-for-bdm.md)
+### [Microsoft 365 Security for BDMs](Microsoft-365-security-for-bdm.md)
 
 ## Microsoft Threat Protection
 ### [Overview]()
