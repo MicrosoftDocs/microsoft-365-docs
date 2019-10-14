@@ -213,6 +213,12 @@
           "source_path": "microsoft-365/business/set-up-advanced-security.md",
           "redirect_url": "https://docs.microsoft.com/microsoft-365/business/increase-threat-protection",
           "redirect_document_id": true
+        },
+        {
+          "source_path": "microsoft-365/security/office-365-security/controlling-outbound-spam-in-office-365.md",
+          "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/outbound-spam-controls",
+          "redirect_document_id": true
         }
       ]
   }
+  

@@ -1,9 +1,9 @@
 ---
 title: "Manage recipients and admin role groups in EOP"
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 3/9/2015
+ms.date:
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,7 +15,7 @@ description: "Microsoft Exchange Online Protection (EOP) offers several ways to 
 # Manage recipients and admin role groups in EOP
 
 Microsoft Exchange Online Protection (EOP) offers several ways to manage your mail recipients. The following topics and their associated subtopics provide information and configuration procedures for managing recipients and assigning admin role group permissions.
-  
+
 |**Topic**|**Description**|
 |:-----|:-----|
 |[Manage recipients in EOP](manage-recipients-in-eop.md)|Describes the types of recipients in EOP (mail users and groups), how to add, remove, and edit recipients, where to locate recipients in the EAC, and other aspects of managing recipients.|

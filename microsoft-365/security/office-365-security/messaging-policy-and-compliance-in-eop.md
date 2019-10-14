@@ -15,7 +15,7 @@ description: "Microsoft Exchange Online Protection provides messaging policy and
 # Messaging policy and compliance in EOP
 
 Microsoft Exchange Online Protection provides messaging policy and compliance features for that can help you manage your email data.
-  
+
 ## Messaging policy and compliance documentation
 
 |**Topic**|**Description**|

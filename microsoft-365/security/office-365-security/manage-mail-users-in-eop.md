@@ -3,7 +3,7 @@ title: "Manage mail users in EOP"
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 
+ms.date:
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,16 +15,16 @@ description: "Defining mail users is an important part of managing the Exchange 
 # Manage mail users in EOP
 
 Defining mail users is an important part of managing the Exchange Online Protection (EOP) service. There are several ways that you can manage users in EOP:
-  
-- Use directory synchronization to manage mail users: If your company has existing user accounts in an on-premises Active Directory environment, you can synchronize those accounts to Azure Active Directory (AD), where a copy of the accounts is stored in the cloud. When you synchronize your existing user accounts to Azure Active Directory, you can view those users in the **Recipients** pane of the Exchange admin center (EAC). Using directory synchronization is recommended. 
 
-- Use the EAC to manage mail users: Add and manage mail users directly in the EAC. This is the easiest way to add mail users and is useful for adding one user at a time.
+- **Use directory synchronization to manage mail users**: If your company has existing user accounts in an on-premises Active Directory environment, you can synchronize those accounts to Azure Active Directory (AD), where a copy of the accounts is stored in the cloud. When you synchronize your existing user accounts to Azure Active Directory, you can view those users in the **Recipients** pane of the Exchange admin center (EAC). Using directory synchronization is recommended.
 
-- Use remote Windows PowerShell to manage mail users: Add and manage mail users by running remote Windows PowerShell. This method is useful for adding multiple records and creating scripts.
+- **Use the EAC to manage mail users**: Add and manage mail users directly in the EAC. This is the easiest way to add mail users and is useful for adding one user at a time.
+
+- **Use PowerShell to manage mail users**: Add and manage mail users by in Exchange Online Protection PowerShell. This method is useful for adding multiple records and creating scripts.
 
 > [!NOTE]
 > You can add users in the Microsoft 365 admin center, however these users can't be used as mail recipients.
-  
+
 ## Before you begin
 
 - To open the Exchange admin center, see [Exchange admin center in Exchange Online Protection](exchange-admin-center-in-exchange-online-protection-eop.md).
@@ -41,16 +41,27 @@ Defining mail users is an important part of managing the Exchange Online Protect
 
 > [!TIP]
 > Having problems? Ask for help in the [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) forum.
-  
+
 ## Use directory synchronization to manage mail users
 
 This section provides information about managing email users by using directory synchronization.
-  
-> [!NOTE]
-> If you use directory synchronization to manage your recipients, you can still add and manage users in the Microsoft 365 admin center, but they will not be synchronized with your on-premises Active Directory. This is because directory synchronization only syncs recipients from your on-premises Active Directory to the cloud. <br/><br/> Directory synchronization is recommended for use with the following features: <br/><br/>• **Outlook safe sender and blocked sender lists**: When synchronized to the service, these lists will take precedence over spam filtering in the service. This lets users manage their own safe sender and blocked sender lists on a per-user or per-domain basis. <br/><br/>• **Directory Based Edge Blocking (DBEB)**: For more information about DBEB, see [Use Directory Based Edge Blocking to Reject Messages Sent to Invalid Recipients](http://technet.microsoft.com/library/ca7b7416-92ed-40ad-abdb-695be46ea2e4.aspx). <br/><br/>• **End user spam quarantine**: In order to access the end user spam quarantine, end users must have a valid Office 365 user ID and password. EOP customers protecting on-premises mailboxes must be valid email users. <br/><br/>• **Mail flow rules**: When you use directory synchronization, your existing Active Directory users and groups are automatically uploaded to the cloud, and you can then create mail flow rules (also known as transport rules) that target specific users and/or groups without having to manually add them via the the EAC or Exchange Online Protection PowerShell. Note that [dynamic distribution groups](https://go.microsoft.com/fwlink/?LinkId=507569) can't be synchronized via directory synchronization.
-  
+
+**Notes**:
+
+- If you use directory synchronization to manage your recipients, you can still add and manage users in the Microsoft 365 admin center, but they will not be synchronized with your on-premises Active Directory. This is because directory synchronization only syncs recipients **from** your on-premises Active Directory **to** the cloud.
+
+- Directory synchronization is recommended for use with the following features:
+
+  - **Outlook safe sender and blocked sender lists**: When synchronized to the service, these lists will take precedence over spam filtering in the service. This lets users manage their own safe sender and blocked sender lists on a per-user or per-domain basis.
+
+  - **Directory Based Edge Blocking (DBEB)**: For more information about DBEB, see [Use Directory Based Edge Blocking to Reject Messages Sent to Invalid Recipients](http://technet.microsoft.com/library/ca7b7416-92ed-40ad-abdb-695be46ea2e4.aspx).
+
+  - **End user spam quarantine**: In order to access the end user spam quarantine, end users must have a valid Office 365 user ID and password. EOP customers protecting on-premises mailboxes must be valid email users.
+ 
+  - **Mail flow rules**: When you use directory synchronization, your existing Active Directory users and groups are automatically uploaded to the cloud, and you can then create mail flow rules (also known as transport rules) that target specific users and/or groups without having to manually add them via the the EAC or Exchange Online Protection PowerShell. Note that [dynamic distribution groups](https://go.microsoft.com/fwlink/?LinkId=507569) can't be synchronized via directory synchronization.
+
 Get the necessary permissions and prepare for directory synchronization, as described in [Prepare for directory synchronization](https://go.microsoft.com/fwlink/p/?LinkId=308908).
-  
+
 ### To synchronize user directories with Azure Active Directory Connect (AAD Connect)
 
 To synchronize users to Azure Active Directory (AAD) you first have to **activate directory synchronization**, as described in [Activate directory synchronization](https://go.microsoft.com/fwlink/p/?LinkId=308909).
@@ -67,12 +78,12 @@ After configuring your sync, be sure to verify that EOP is synchronizing correct
 ## Use the EAC to manage mail users
 
 This section provides information about adding and managing email users directly in the EAC.
-  
+
 ### Use the EAC to add a mail user
 
 1. Create an email user by going to go to **Recipients** \> **Contacts** in the EAC, and then clicking **New +**.
 
-2. On the **New mail user** page, enter the user's information, including the following: 
+2. On the **New mail user** page, enter the user's information, including the following:
 
    ****
 
@@ -90,16 +101,16 @@ This section provides information about adding and managing email users directly
 
 ### Use the EAC to edit or remove a mail user
 
-- In the EAC, go to **Recipients** \> **Contacts**. In the list of users, click the user that you want to view or change, and then select **Edit** ![Edit icon](../media/ITPro-EAC-EditIcon.gif) to update the user settings as needed. You can change the user's name, alias, or contact information, and you can record detailed information about the user's role in the organization. You can also select a user and then choose **Remove** ![Remove icon](../media/ITPro-EAC-RemoveIcon.gif) to delete it. 
+- In the EAC, go to **Recipients** \> **Contacts**. In the list of users, click the user that you want to view or change, and then select **Edit** ![Edit icon](../media/ITPro-EAC-EditIcon.gif) to update the user settings as needed. You can change the user's name, alias, or contact information, and you can record detailed information about the user's role in the organization. You can also select a user and then choose **Remove** ![Remove icon](../media/ITPro-EAC-RemoveIcon.gif) to delete it.
 
 ## Use Exchange Online Protection PowerShell to manage mail users
 
 This section provides information about adding and managing mail users by using remote Windows PowerShell.
-  
+
 ### Use EOP PowerShell to add a mail user
-  
+
 This example uses the [New-EOPMailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/new-eopmailuser) cmdlet to create a mail-enabled user account for Jeffrey Zeng in EOP with the following details:
-  
+
 - The first name is Jeffrey and the last name is Zeng.
 
 - The name is Jeffrey and the display name is Jeffrey Zeng.
@@ -112,62 +123,59 @@ This example uses the [New-EOPMailUser](https://docs.microsoft.com/powershell/mo
 
 - The password is Pa$$word1.
 
-```Powershell
+```PowerShell
 New-EOPMailUser -LastName Zeng -FirstName Jeffrey -DisplayName "Jeffrey Zeng" -Name Jeffrey -Alias jeffreyz -MicrosoftOnlineServicesID jeffreyz@contoso.onmicrosoft.com -ExternalEmailAddress jeffreyz@tailspintoys.com -Password (ConvertTo-SecureString -String 'Pa$$word1' -AsPlainText -Force)
 ```
 
 To verify that this worked, run the following command to display information about new mail user Jeffrey Zeng:
-  
-```Powershell
+
+```PowerShell
 Get-User -Identity "Jeffrey Zeng"
 ```
 
 For detailed syntax and parameter information, see [Get-User](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-user).
 
 ### Use EOP PowerShell to edit the properties of a mail user
-  
+
 Use the [Get-Recipient](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-recipient) and [Set-EOPMailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-eopmailuser) cmdlets to view or change properties for mail users.
-  
+
 This example sets the external email address for Pilar Pinilla.
-  
-```Powershell
+
+```PowerShell
 Set-EOPMailUser -Identity "Pilar Pinilla" -EmailAddresses pilarp@tailspintoys.com
 ```
 
 This example sets the Company property for all mail users to Contoso.
-  
-```Powershell
+
+```PowerShell
 $Recip = Get-Recipient -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'mailuser')}
 $Recip | foreach {Set-EOPUser -Identity $_.Alias -Company Contoso}
 ```
-  
+
 To verify that this worked, use the [Get-Recipient](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-recipient) cmdlet to verify the changes. (Note that you can view multiple properties for multiple mail contacts.)
-  
-```Powershell
+
+```PowerShell
 Get-Recipient -Identity "Pilar Pinilla" | Format-List
 ```
 
 In the previous example where the Company property was set to Contoso for all mail users, run the following command to verify the changes:
-  
-```Powershell
+
+```PowerShell
 Get-Recipient -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'mailuser')} | Format-List Name,Company
 ```
 
 > [!IMPORTANT]
 > This cmdlet uses a batch processing method that results in a propagation delay of a few minutes before the results of the cmdlet are visible.
-  
+
 ### Use EOP PowerShell to remove a mail user
-  
+
 This example uses the [Remove-EOPMailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-recipient/remove-eopmailuser) cmdlet to delete user Jeffrey Zeng:
-  
-```Powershell
+
+```PowerShell
 Remove-EOPMailUser -Identity Jeffrey
 ```
-
- **To verify that this worked**
-  
 To verify that this worked, run the [Get-Recipient](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-recipient) cmdlet to verify that the mail user no longer exists.
-  
-```Powershell
+
+```PowerShell
 Get-Recipient Jeffrey | Format-List
 ```
