@@ -15,7 +15,7 @@ search.appverid:
 description: "You can apply labels to Office 365 groups and SharePoint sites. Sensitivity labels can use encryption to protect groups and sites."
 ---
 
-# Opt-in to restrict access to groups and sites by using encryption in sensitivity labels
+# Opt-in to restrict access to groups and sites by using encryption in sensitivity labels  (Public Preview)
 
 As part of Microsoft's Public preview, you can opt-in to use sensitivity labels to restrict access to Office 365 groups and SharePoint sites.
 
@@ -24,9 +24,6 @@ As part of Microsoft's Public preview, you can opt-in to use sensitivity labels 
 
 We are happy to announce a new capability for sensitivity labels in public preview. Sensitivity labels can now be applied to Office 365 groups and SharePoint sites, and admins can add policies related to these labels. End users can select a label when they create an Office 365 group or SharePoint site. Affected apps will be SharePoint, Teams, Outlook. 
 
-
- 
- 
 PowerShell cmdlet for a global admin to opt in 
 A global admin needs to run the following Azure AD cmdlet to opt –in to this feature. Learn how to run Azure AD PowerShell cmdlets. You can opt-out at any point in time.  
 Connect-AzureAD 
@@ -46,7 +43,6 @@ else
  
 Note: If you are using the classic Azure AD classification list ($setting["ClassificationList"]), those classifications will not be used for new Office 365 groups and SharePoint sites after you enable this feature. Old groups and sites will still display those classification tags unless you convert them. Learn how.  
  
-
 Page Break
  
 How to create a label on the Site and group settings tab 
@@ -55,9 +51,6 @@ Privacy {Private/Public}:  Private means only approved members in your organizat
 External users access: You can control if guests can be added to a group . Learn about managing guest access in Office 365 Groups 
 Unmanaged devices: This setting applies to any SharePoint site and controls access to sites from devices that are not managed by your organization. Learn about setting up SharePoint and Azure to control access from unmanaged devices. 
 
-
- 
- 
 Publishing the sensitivity label   
 The steps to publish labels can be found here  
 Select a sensitivity label when creating a site  
@@ -73,23 +66,14 @@ Example of a SharePoint site with label applied:
 Manage sensitivity labels in the SharePoint admin center  
 Global and SharePoint admins can go to the Active sites page to see the labels applied to all sites. 
 
-
-
-
- 
  
 They can select sites and change their labels.  
 To learn how to manage sensitivity labels in PowerShell, see <link>. 
-
-
- 
 
 Page Break
 Using sensitivity labels while creating groups 
 When users create Office 365 groups from Outlook on the web, they’ll notice the new “Sensitivity” box that contains published labels. If users want more info, they can also click the help icon to read details about the available labels and associated policies.  
 
-
- 
 The same labels appear when users create groups from Yammer, Planner, and other Office 365 services. They’re also available when users create teams in Microsoft Teams.  
 
 
