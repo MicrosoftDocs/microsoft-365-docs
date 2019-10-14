@@ -13,21 +13,56 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "blah blah blah."
+description: "Activity explorer rounds out the functionality of the data classification feature by letting you see and filter on the actions users are taking on your labeled content."
 ---
 
 # View activity on your labeled content
 
-text
+The data classification over view and content explorer tabs give you visibility into what content has been discovered and labeled, where that content is. You can even opened and examined the content natively. Activity explorer rounds out this suite of functionality by allowing you to monitor what's being done with your labeled content. Unlike content explorer which gives you a view of the current state only, activity explorer provides a historical view.
 
-explanatory text before a bulleted list:
 
-- bullet 1
-- bullet 2
+![placeholder screenshot overview activity explorer](media\data-classification-activity-explorer-1.png)
 
-You can find label analytics in the [Microsoft 365 compliance center](https://compliance.microsoft.com/labelanalytics) or [Microsoft 365 security center](https://security.microsoft.com/labelanalytics) > **Classification** > **Label analytics**.
+You can filter the data by:
 
-![Label analytics page](media/label-analytics-page.png)
+- date range
+- activity type
+- location
+- user
+- sensitivity label
 
-## heading 2
+You can view the data either as a list or a bar graph.
+
+## Activity type
+
+Microsoft 365 monitors and reports on 11 types of activities across SharePoint Online, OneDrive and endpoints. Endpoints are user devices running Windows 10.
+
+- label changed
+- file created
+- file modified
+- file renamed
+- file copied to network share
+- file copied to removable media
+- file copied to cloud
+- file printed
+- file copied to clipboard
+- file accessed by unallowed app
+- file read
+
+The value of understanding what actions are being taken with your sensitive labeled content is that you can see if the controls that you have already put into place, such as [data loss prevention policies](data-investigations-release-notes.md) are effective or not. If not, or if you discover something unexpected, such as a large number of items that are labeled highly classified are being copied to a third party cloud service, you can create new data loss prevention policies and take new actions to restrict the undesired behavior.
+
+Once your filters are set, you can:
+
+- hover over a segement of the bar chart to see the number of items that fall into that category
+![activity explorer hover over](media/data-classification-activity-explorer-hover-over-2.png)
+- export the data
+- select any given item from the list and view the details of the action in the fly-out
+
+![activity explorer details fly out](media/data-classification-activity-explorer-fly-out-3.png)
+
+## See also
+- [Sensitivity labels](sensitivity-labels.md)
+- [Retention labels](labels.md)
+- [What the sensitive information types look for](what-the-sensitive-information-types-look-for.md)
+- [Overview of retention policies](retention-policies.md)
 
