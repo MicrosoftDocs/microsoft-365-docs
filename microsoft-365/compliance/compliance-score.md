@@ -53,11 +53,11 @@ Visit other topics for details about [how your compliance score is calculated](c
 
 Compliance Score uses several components to help you manage your compliance activities. As you work with Compliance Score to assign, test, and monitor compliance activities, it’s helpful to have a basic understanding up front of these key components. This diagram shows the relationship among them:
 
-SCREENSHOT CM/CS GROUPS DIAGRAM
+![Relationships in Compliance Manager Version 3](media/compliance-manager-relationships.png)
 
 ### Controls
 
-A control is a process created to manage a compliance activity. Controls can be organized and grouped into assessments to meet the requirement of a standard, regulation, or law.
+A control is a process container that defines how you manage compliance activities. Controls can be organized and grouped into assessments to meet the requirement of a standard, regulation, or law.
 
 When you manage your compliance activities through improvement actions (the key elements of the [wokflow process](working-with-compliance-score.md#the-workflow-managing-compliance-with-improvement-actions)), the control is represented on the **Improvement actions** page by its title at the top, a description, references to related regulations and standards , and implementation instructions.
 
@@ -69,7 +69,9 @@ There are three types of controls:
  
 ### Assessments
 
-Assessments help you carry out improvement actions as specified by applicable data protection standards, regulations, or laws. Think of them as containers that allow you to organize controls. Assessments are completed when you take action to implement the controls included in the assessment.
+Assessments are containers for organizing controls based on responsibilities shared between Microsoft and your organization. Assessments help you implement data protection safeguards specified by a compliance standard and applicable data protection standards, regulations, or laws.
+
+Assessments include actions that have been taken by Microsoft to protect your data, and are completed when you take action to implement the controls included in the assessment.
 
 > [!NOTE]
 > Compliance Score displays your assessments and how they factor into your overall compliance score. However, during public preview you will be directed to Compliance Manager to manage your assessments. Therefore, some instructions in this documentation link to Compliance Manager documentation.
@@ -79,6 +81,7 @@ By default, the following Assessments are already created for your organization:
 - Office 365 ISO 27001
 - Office 365 NIST 800-53
 - Office 365 GDPR
+
 
 [View detailed instructions for working with Assessments](working-with-compliance-manager.md#assessments)
 
