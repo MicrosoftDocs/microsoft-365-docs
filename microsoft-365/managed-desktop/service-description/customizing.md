@@ -8,7 +8,7 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 ---
 
-# Customize the Microsoft Managed Desktop service
+# Customize the service
 
 Microsoft Managed Desktop provides a curated device list, [standard device settings](device-policies.md), applications requirements, and certain [configurable settings](../working-with-managed-desktop/config-setting-overview.md), all designed to provide a secure, productive, and pleasant experience for end users. It’s best to always stay with the service as provided. However, we recognize that some details of the service might not fit exactly with your organization’s needs. If you feel you need to alter the service in some way, it’s important that you follow the following processes to request those changes. 
 Types of customizations
