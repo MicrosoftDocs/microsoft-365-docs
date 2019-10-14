@@ -20,7 +20,9 @@ description: "Microsoft Compliance Score helps organizations simplify and automa
 
 ## What is Compliance Score
 
-Microsoft Compliance Score is a new, streamlined experience that is part of your overall Microsoft 365 compliance activity. As a new feature within the Microsoft 365 compliance center, Compliance Score calculates a personalized, risk-based score to help understand your organization's state of compliance with key standards and regulations, and recommends actions you can take to strengthen your overall compliance posture. If you use [Compliance Manager](compliance-manager-overview.md), you'll notice that Compliance Score is now a standalone feature with its own design and capabilities to help you manage compliance more easily.
+Microsoft Compliance Score is a new feature within the Microsoft 365 compliance center that calculates a personalized, risk-based score to help understand your organization's state of compliance with key standards and regulations. It provides recommended actions you can take to strengthen your overall compliance posture, and provides workflow capabilities to to help you efficiently carry out those actions. If you use [Compliance Manager](compliance-manager-overview.md), you'll notice that Compliance Score is now a standalone feature with its own design and capabilities to help you manage compliance more easily.
+
+![Compliance Score - dashboard](media/draft-compliance-score-dashboard.png)
 
 ### Simplified compliance management
 
@@ -32,7 +34,7 @@ Compliance Score helps to simplify and automate the process of managing complian
 
 ## Relationship to Compliance Manager
 
-Think of Compliance Score as a simplified version of Compliance Manager. While the two exist for now as distinct yet integrated tools, Compliance Score gives you a simpler way to montior your overall compliance posture take steps to improve it. 
+Think of Compliance Score as a simplified version of Compliance Manager. While the two exist for now as distinct yet integrated tools, Compliance Score makes it easier to montior your overall compliance posture and take steps to improve it. 
 
 During public preview, some functionality remains in Compliance Manager, such as managing assessments and creating templates. We recommend beginning all of your compliance management functions in Compliance Score. When you come to functions that are handled in Compliance Manager, you will be clearly directed to that tool. For that reason, some of this documentation directs you to Compliance Manager topics.
 
@@ -59,22 +61,17 @@ Compliance Score uses several components to help you manage your compliance acti
 
 A control is a process container that defines how you manage compliance activities. Controls can be organized and grouped into assessments to meet the requirement of a standard, regulation, or law.
 
-When you manage your compliance activities through improvement actions (the key elements of the [wokflow process](working-with-compliance-score.md#the-workflow-managing-compliance-with-improvement-actions)), the control is represented on the **Improvement actions** page by its title at the top, a description, references to related regulations and standards , and implementation instructions.
+When you manage your compliance activities through improvement actions (the key elements of the [wokflow process](working-with-compliance-score.md#the-workflow-managing-compliance-with-improvement-actions)), the control is represented on an improvement action's details page by its title, a description, references to related regulations and standards, and implementation instructions.
 
 There are three types of controls:
 
-1. **Microsoft-managed controls**: for each cloud service, these are controls for which only Microsoft has responsibility. 
-2. **Customer-managed controls**: controls for which only you have responsibility.
-3. **Shared management controls**: controls where responsibility is shared between Microsoft and you. These are added by Microsoft, and you can edit or disable them.
+1. **Microsoft-managed controls**: for each cloud service, these are controls for which only Microsoft has responsibility 
+2. **Customer-managed controls**: controls for which only you have responsibility
+3. **Shared management controls**: controls where responsibility is shared between Microsoft and you. These are added by Microsoft, and you can edit or disable them
  
 ### Assessments
 
-Assessments are containers for organizing controls based on responsibilities shared between Microsoft and your organization. Assessments help you implement data protection safeguards specified by a compliance standard and applicable data protection standards, regulations, or laws.
-
-Assessments include actions that have been taken by Microsoft to protect your data, and are completed when you take action to implement the controls included in the assessment.
-
-> [!NOTE]
-> Compliance Score displays your assessments and how they factor into your overall compliance score. However, during public preview you will be directed to Compliance Manager to manage your assessments. Therefore, some instructions in this documentation link to Compliance Manager documentation.
+Assessments are containers for organizing controls based on responsibilities shared between Microsoft and your organization. Assessments help you implement data protection safeguards specified by a compliance standard and applicable data protection standards, regulations, or laws. Your score within an assessment tells you
 
 By default, the following Assessments are already created for your organization:
 
@@ -82,12 +79,21 @@ By default, the following Assessments are already created for your organization:
 - Office 365 NIST 800-53
 - Office 365 GDPR
 
+Assessments include several components:
+
+- **In-scope services**: each assessment applies to a specific set of Microsoft services
+- **Microsoft-managed controls**
+- **Customer-managed controls**
+- **Assessment score**: the percentage of the total possible score for customer-managed controls in the assessment; this helps you track the implementation of actions assigned to each control
+
+> [!NOTE]
+> Compliance Score displays your assessments and how they factor into your overall compliance score. However, during public preview you will be directed to Compliance Manager to manage your assessments. Therefore, some instructions in this documentation link to Compliance Manager documentation. 
 
 [View detailed instructions for working with Assessments](working-with-compliance-manager.md#assessments)
 
 ### Templates
 
-Compliance Score provides pre-configured templates for Assessments and allows you to create customized templates for customer-managed controls to suit your compliance needs. New templates are created by importing controls information from an Excel file, or you can create a template from a copy of an existing template.
+Compliance Score provides pre-configured templates for assessments and allows you to create customized templates for customer-managed controls to suit your needs. You can create new templates by copying an existing template, or by importing controls information from an Excel file.
 
 The pre-configured templates for Compliance Score are:
 
