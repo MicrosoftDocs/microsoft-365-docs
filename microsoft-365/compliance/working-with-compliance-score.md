@@ -22,8 +22,8 @@ The Microsoft 365 global administrator will likely be the first user to access a
 
 ### Sign in to Compliance Score
 
-- Go to the [Microsoft Compliance Center](https://compliance.microsoft.com/) and **sign in** with your Microsoft 365 global administrator account.
-- Select **Compliance Score** on the left-hand navigation. You should then see your [Compliance Score dashboard with your score](#understanding-the-compliance-score-dashboard)).
+1. Go to the [Microsoft Compliance Center](https://compliance.microsoft.com/) and **sign in** with your Microsoft 365 global admin account.
+2. Select **Compliance Score** on the left-hand navigation. You should then see your [Compliance Score dashboard with your score](#understanding-the-compliance-score-dashboard)).
 
 ### Set user permissions
 
@@ -31,7 +31,8 @@ Compliance Score uses a role-based access control (RBAC) permission model. Only 
 
 The portal admin for Compliance Manager can set permissions for other users in within Compliance Manager by following these steps:
 
-1. From the top **More** drop-down menu, select **Admin**, then **Settings**.
+1. Go to the [Microsoft Compliance Center](https://compliance.microsoft.com/) and **sign in** with your Microsoft 365 global admin account. - OR....follow CM instructions
+2. From the top **More** drop-down menu, select **Admin**, then **Settings**.
 2. Select the role you want to assign and then add the employee you want to assign to that role. Users will then be able to perform certain actions.
 
 In addition, users who are assigned the [Global Reader role in Azure Active Directory (Azure AD)](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader) have read-only permission to access Compliance Score; however they cannot edit data or perform any actions within Compliance Score.
@@ -40,7 +41,7 @@ In addition, users who are assigned the [Global Reader role in Azure Active Dire
 
 The Compliance Score dashboard is designed to provide you an at-a-glance view of your current compliance posture.
 
-![Compliance Score - dashboard](media/draft-compliance-score-dashboard.png)
+![Compliance Score - dashboard](media/compliance-score-dashboard.png)
 
 ### Overall compliance score
 
@@ -75,7 +76,7 @@ SCREENSHOT DASHBOARD FILTERS FLYOUT
 
 You will see your score adjusted in real-time, and you will only see improvement actions, solutions, and score breakdown information that correspond to your filter criteria.
 
-## The workflow: managing compliance with improvement actions
+## Managing compliance activities with improvement actions
 
 ### What are improvement actions
 
