@@ -98,6 +98,7 @@ Compliance Score provides pre-configured templates for assessments and allows yo
 The pre-configured templates for Compliance Score are:
 
 - [ISO 27001:2013](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-2:v1:en)
+- [ISO 27001:2019](https://www.iso.org/standard/71670.html)
 - [ISO 27018:2019](https://www.iso.org/obp/ui/#iso:std:iso-iec:27018:ed-2:v1:en)
 - [NIST 800-53](https://csrc.nist.gov/publications/detail/sp/800-53/rev-4/final)
 - [NIST 800-171](https://csrc.nist.gov/publications/detail/sp/800-171/rev-1/final)
