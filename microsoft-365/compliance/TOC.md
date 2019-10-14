@@ -17,8 +17,8 @@
 ## Customer Key
 ### [Controlling your data in Office 365 using Customer Key](controlling-your-data-using-customer-key.md)
 ### [Service encryption with Customer Key for Office 365 FAQ](service-encryption-with-customer-key-faq.md)
-## [Communication supervision]()
-### [Learn about communication supervision](supervision-policies.md)
+## [Supervision]()
+### [Learn about supervision policies](supervision-policies.md)
 ### [Configure supervision policies for your organization](configure-supervision-policies.md)
 ## [Information barriers](information-barriers.md)
 ### [Define information barrier policies](information-barriers-policies.md)
@@ -330,14 +330,14 @@
 ### [Export documents from evidence](export-documents-from-incident.md)
 ### [Download export jobs](download-export-jobs-from-a-data-investigation.md)
 
-## [Configure settings for data investigations](configure-settings-datainvestigations.md)
+## Configure investigation settings
 ### [Add or remove members from an investigation](add-remove-members.md)
 ### [Configure search and analytics settings](configure-search-analytics-settings.md)
 ### [Close or delete an investigation](close-or-delete-investigation.md)
 
-## Data Investigations reference
+## Data investigations reference
 ### [Release notes](data-investigations-release-notes.md)
-### [Limits in Data Investigations](limits-datainvestigations.md)
+### [Limits in data investigations](limits-datainvestigations.md)
 ### [Supported file types](supported-filetypes-datainvestigations.md)
 ### [Document metadata fields](document-metadata-fields.md)
 ### [Manage jobs](manage-jobs.md)
