@@ -363,7 +363,7 @@
 ### [Compliance Manager (Preview)](compliance-manager-overview.md)
 ### [What's new in Compliance Manager (Preview)](compliance-manager-release-notes.md)
 ### [Working with Compliance Manager (Preview)](working-with-compliance-manager.md)
-### [Compliance Manager (Classic)](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
+### [Compliance Manager (Legacy)](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
 
 ## [GDPR data subject request tool](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)
 ## [Office 365 Information Protection for GDPR](office-365-information-protection-for-gdpr.md)
