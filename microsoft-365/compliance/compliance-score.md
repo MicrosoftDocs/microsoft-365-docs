@@ -61,7 +61,7 @@ Compliance Score uses several components to help you manage your compliance acti
 
 A control is a process container that defines how you manage compliance activities. Controls can be organized and grouped into assessments to meet the requirement of a standard, regulation, or law.
 
-When you manage your compliance activities through improvement actions (the key elements of the [wokflow process](working-with-compliance-score.md#the-workflow-managing-compliance-with-improvement-actions)), the control is represented on an improvement action's details page by its title, a description, references to related regulations and standards, and implementation instructions.
+When you manage your compliance activities through improvement actions (the key elements of the [wokflow process](working-with-compliance-score.md#managing-compliance-activities-with-improvement-actions)), the control is represented on an improvement action's details page by its title, a description, references to related regulations and standards, and implementation instructions.
 
 There are three types of controls:
 
