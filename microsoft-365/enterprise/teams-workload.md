@@ -31,9 +31,9 @@ Before you begin:
 - Learn about security and compliance in Teams with [this article](https://docs.microsoft.com/microsoftteams/security-compliance-overview).
 - Learn about Office 365 licensing for Teams with [this article](https://docs.microsoft.com/microsoftteams/office-365-licensing).
 
-To roll out Teams in your organization, see [this article](https://docs.microsoft.com/microsoftteams/how-to-roll-out-teams).
+To roll out Teams in your organization, read [How to roll out Teams](https://docs.microsoft.com/microsoftteams/how-to-roll-out-teams).
 
-For your first set of Teams capabilities, see [Chat, teams, channels, & apps in Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/deploy-chat-teams-channels-microsoft-teams-landing-page).
+For your first set of Teams capabilities, see [Chat, teams, channels, and apps in Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/deploy-chat-teams-channels-microsoft-teams-landing-page).
 
 For more advanced Teams capabilities, see:
 
@@ -56,7 +56,7 @@ See the [Getting started with your Microsoft Teams upgrade](https://docs.microso
 
 ## How Microsoft does Microsoft 365 Enterprise
 
-To peek inside Microsoft and learn how we deployed and are using Microsoft Teams for collaboration, see:
+To peek inside Microsoft and learn how we deployed and are using Teams for collaboration, see:
 
 - [Microsoft Teams adoption strategy prepares employees for a new culture of work](https://www.microsoft.com/en-us/itshowcase/microsoft-teams-adoption-strategy-prepares-employees-for-a-new-culture-of-work)
 - [With Microsoft Teams Rooms, comes a globally scalable modern meeting experience](https://www.microsoft.com/en-us/itshowcase/with-microsoft-teams-rooms-comes-a-globally-scalable-modern-meeting-experience)
