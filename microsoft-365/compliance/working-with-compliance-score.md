@@ -16,9 +16,9 @@ description: "Learn how to access, customize, work with Microsoft Compliance Sco
 
 # Working with Microsoft Compliance Score (Preview)
 
-## Getting started: sign in, set permissions, invite collaborators
+## Getting started: sign in and set permissions
 
-The Microsoft 365 global administrator will likely be the first user to access and work in Compliance Score. To access Compliance Score and set it up for maximum benefit, we recommend taking actions below as you first visit Compliance Score.
+The Microsoft 365 global administrator will likely be the first user to access and work in Compliance Score. We recommend taking the actions below when visiting Compliance Score for the first time.
 
 ### Sign in to Compliance Score
 
@@ -36,15 +36,11 @@ The portal admin for Compliance Manager can set permissions for other users in w
 
 In addition, users who are assigned the [Global Reader role in Azure Active Directory (Azure AD)](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader) have read-only permission to access Compliance Score; however they cannot edit data or perform any actions within Compliance Score.
 
-### Invite collaborators who work on compliance for your organization
-
-**draft note: unclear if this exists in PP or is only in FRE for GA; to confirm**The most productive initial action you can take to make Compliance Score work best for you is to invite other users to the feature so that you can begin collaborating with them and assigning them tasks. When you invite users, they receive an email inviting them to collaborate. To invite users, follow these steps: ???......
-
 ## Understanding the Compliance Score dashboard
 
 The Compliance Score dashboard is designed to provide you an at-a-glance view of your current compliance posture.
 
-SCREENSHOT DASHBOARD
+![Compliance Score - dashboard](media/draft-compliance-score-dashboard.png)
 
 ### Overall compliance score
 

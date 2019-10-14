@@ -89,7 +89,7 @@ Assessments include several components:
 > [!NOTE]
 > Compliance Score displays your assessments and how they factor into your overall compliance score. However, during public preview you will be directed to Compliance Manager to manage your assessments. Therefore, some instructions in this documentation link to Compliance Manager documentation. 
 
-[View detailed instructions for working with Assessments](working-with-compliance-manager.md#assessments)
+[View detailed instructions for working with assessments](working-with-compliance-manager.md#assessments)
 
 ### Templates
 
