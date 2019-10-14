@@ -32,7 +32,7 @@ Compliance Score helps to simplify and automate the process of managing complian
 
 ## Relationship to Compliance Manager
 
-Think of Compliance Score as a simplified version of Compliance Manager. While they exist for now as two distinct yet fully integrated tools, many of the tasks you perform in Compliance Manager can now be done more easily in Compliance Score. To benefit most from the improved functionality and experience, we recommend using Compliance Score as the starting point for monitoring your compliance posture and taking actions to improve it.
+Think of Compliance Score as a simplified version of Compliance Manager. While the two exist for now as distinct yet integrated tools, Compliance Score gives you a simpler way to montior your overall compliance posture take steps to improve it. 
 
 During public preview, some functionality remains in Compliance Manager, such as managing assessments and creating templates. We recommend beginning all of your compliance management functions in Compliance Score. When you come to functions that are handled in Compliance Manager, you will be clearly directed to that tool. For that reason, some of this documentation directs you to Compliance Manager topics.
 
@@ -40,7 +40,7 @@ During public preview, some functionality remains in Compliance Manager, such as
 
 Your compliance score is based on a behavior-based scoring system for activities related to data protection, privacy, and security in your organization. It calculates a numerical percentage based on points you can achieve by implementing and testing controls.
 
-Compliance Score gives you an out-of-the-box score based on the Microsoft Data Protection Standard (MSDP), which is a set of controls that includes key regulations and standards. While this score is a good starting point for assessing your compliance posture, Compliance Score becomes more relevant and powerful for you once you personalize it by creating assessments, customizing controls, and taking recommended improvement actions. 
+Compliance Score gives you an out-of-the-box score based on the Microsoft 365 Data Protection Baseline, which is a set of controls that includes key regulations and standards. While this score is a good starting point for assessing your compliance posture, Compliance Score becomes more relevant and powerful for you once you personalize it by creating assessments, customizing controls, and taking recommended improvement actions. 
 
 Compliance Score also synchronizes automatically with your [Microsoft Secure Score](../security/mtp/microsoft-secure-score.md), providing you with a more meaningful score and centralized management of activities that affect both sets of scores.
 
