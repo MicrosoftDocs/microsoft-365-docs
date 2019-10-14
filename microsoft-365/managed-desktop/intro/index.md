@@ -45,7 +45,7 @@ Microsoft Managed Desktop takes on the burden of managing registered devices and
 - **Apps:** As part of Microsoft 365 Enterprise, Microsoft provides (and manages) several key Microsoft apps for you. But you probably also have a number of other apps that you need for your business. Instead of your IT department having to test, package, and deploy those apps, when you subscribe to Microsoft Managed Desktop, we can handle all of those operations for you. Learn more at [Apps in Microsoft Managed Desktop](../get-ready/apps.md).
 
 
-## Monitoring
+## Device monitoring
 
 {NEED MORE--we actually don't have any truly friendly summary of what exactly MMD monitors, just the very dry and hard-to-parse tables in [Microsoft Managed Desktop operations and monitoring](../service-description/operations-and-monitoring.md)}
 
