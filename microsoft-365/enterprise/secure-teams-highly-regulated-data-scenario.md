@@ -34,7 +34,7 @@ The elements of configuration for secure teams for highly regulated data are:
 
 Here is the resulting configuration with a sensitivity label.
 
-+Figure
+![The secure team scenario configuration](./media/secure-teams-highly-regulated-data-scenario/secure-team-final.png)
  
 ## Configuration
 
@@ -58,24 +58,24 @@ When you create a private team, here are the default configuration of permission
 
 - The Office 365 group for the team (the Team Group) has group owners and group members
 - For the underlying SharePoint site for the team (the Team Site):
-- The Site Collection Administrators is configured for the Team Group owners
-- For the Team Site: 
-- The Team Site Owners SharePoint group—with the Full Control permission level—is set to the Team Group owners
-- The Team Site Members SharePoint group—with the Edit permission level—is set to the Team Group members
-- The Team Site Visitors SharePoint group—with the Read permission level—has no groups or user accounts
+  - The Site Collection Administrators is configured for the Team Group owners
+  - For the Team Site: 
+    - The Team Site Owners SharePoint group—with the Full Control permission level—is set to the Team Group owners
+    - The Team Site Members SharePoint group—with the Edit permission level—is set to the Team Group members
+    - The Team Site Visitors SharePoint group—with the Read permission level—has no groups or user accounts
 
 Here are the default permissions for the Team Site.
 
-+Figure
+![The default permissions of a Team Site](./media/secure-teams-highly-regulated-data-scenario/secure-team-default-site-permissions.png)
  
 >[!Note]
 >If you view the \<team name> Owners SharePoint group for the Edit permission level, it does not display \<team name> Owners.
-The result is that Team Group owners can administer the site and have full control over the site contents and Team Group members can edit files on the site. Permissions maintenance is the same as team member and owner maintenance..
+The result is that Team Group owners can administer the site and have full control over the site contents and Team Group members can edit files on the site. Permissions maintenance is the same as team member and owner maintenance.
 >
 
 Here’s the resulting configuration so far.
 
-+Figure
+![Step 2 of the secure team scenario configuration](./media/secure-teams-highly-regulated-data-scenario/secure-team-step2.png)
  
 ### Step 3: Configure the underlying SharePoint site for additional security
 
@@ -90,7 +90,8 @@ With these settings, the ability for Team Group members to share the Team Site w
 
 Here’s the resulting configuration so far.
 
-+Figure
+![Step 3 of the secure team scenario configuration](./media/secure-teams-highly-regulated-data-scenario/secure-team-step3.png)
+
  
 ### Step 4: Create a retention label and DLP policy
 
@@ -102,7 +103,7 @@ Use [these instructions](https://docs.microsoft.com/microsoft-365/compliance/pro
 
 Here’s the resulting configuration so far.
 
-+Figure
+![Step 4 of the secure team scenario configuration](./media/secure-teams-highly-regulated-data-scenario/secure-team-step4.png)
  
 ### Step 5: Create the label or a sublabel of the highly regulated label
 
@@ -117,17 +118,18 @@ Use a sensitivity label when there is a small number of labels you will need for
 
 [Use these instructions](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels) to configure a separate label or a sublabel with the following settings:
 
-- The name of the label contains the name of the team for easy association when assign the sublabel to a file.
-- Encryption is enabled.
-- The Team Group has Co-Author permissions.
+- The name of the label contains the name of the team
+- Encryption is enabled
+- The Team Group has Co-Author permissions
 
 Here’s the resulting configuration with the new label.
 
-+Figure 
+![Step 5 of the secure team scenario configuration](./media/secure-teams-highly-regulated-data-scenario/secure-team-final.png)
 
 Here’s the relationship between the sensitivity label and the Team Group.
 
-+Figure
+![Relationship between the Team Group and the label permissions](./media/secure-teams-highly-regulated-data-scenario/secure-team-label-permissions.png)
+
 
 >[!Note]
 >If you configure the sensitivity label or sublabel for user-defined permissions or with an expiration date, you cannot open the file from Teams or SharePoint Online. You must use an Office app.
@@ -137,7 +139,7 @@ Here’s the relationship between the sensitivity label and the Team Group.
 
 Members of the Team Group can access the team and all of its resources, including chats, meetings, and other apps. When working with files from the **Files** menu option of a channel, members of the Team Group must assign the sensitivity label or sublabel to the file created for the secure team. Here’s an example.
 
-+Figure
+![Example of a label applied to a file in a secure team](./media/secure-teams-highly-regulated-data-scenario/secure-team-label-applied.png)
  
 When the label gets applied to the file it is secured. Members of the Team Group can open it in Teams and collaborate in real time. It is encrypted and includes the Co-Author permissions set to the Team Group members. If the file leaves the site and gets forwarded to a malicious user, they will have to supply credentials of a user account that is member of the Team Group to open the file and view its contents. 
 
@@ -162,11 +164,12 @@ If some staff only need to view the contents of highly regulated files in the Te
 
 Here are the resulting permissions on the label.
 
-+Figure
+![Example of custom permissions for viewing labeled files](./media/secure-teams-highly-regulated-data-scenario/secure-team-custom-view-permissions.png)
  
 The site visitor users will be able to access the Team Site directly and view the contents of files that have the sublabel applied. But because they are not members of the Team Group, they will not be able to access the team or any of its resources.
 
 ## See also
 
 [SharePoint sites for highly regulated data](teams-sharepoint-online-sites-highly-regulated-data.md)
+
 [Deployment guide](deploy-microsoft-365-enterprise.md)
