@@ -27,11 +27,11 @@ If you're brand new to Teams, see [Welcome to Microsoft Teams](https://docs.micr
 
 Before you begin:
 
-- Make sure you've configured the right [foundation infrastructure](deploy-foundation-infrastructure.md) phases so that your teams have the user accounts and security capabilities you need.
-- Learn about security and compliance in Teams, see [this article](https://docs.microsoft.com/microsoftteams/security-compliance-overview).
-- Learn about Office 365 licensing for Teams, see [this article](https://docs.microsoft.com/microsoftteams/office-365-licensing).
+- Make sure you've configured the right [foundation infrastructure](deploy-foundation-infrastructure.md) phases so that your teams have the user accounts and security capabilities you need. The Identity and Information Protection phases are the most important for signing on and using securing email and files with retention and sensitivity labels.
+- Learn about security and compliance in Teams with [this article](https://docs.microsoft.com/microsoftteams/security-compliance-overview).
+- Learn about Office 365 licensing for Teams with [this article](https://docs.microsoft.com/microsoftteams/office-365-licensing).
 
-To roll out Teams, see [this article](https://docs.microsoft.com/microsoftteams/how-to-roll-out-teams).
+To roll out Teams in your organization, see [this article](https://docs.microsoft.com/microsoftteams/how-to-roll-out-teams).
 
 For your first set of Teams capabilities, see [Chat, teams, channels, & apps in Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/deploy-chat-teams-channels-microsoft-teams-landing-page).
 
@@ -65,8 +65,6 @@ To peek inside Microsoft and learn how we deployed and are using Microsoft Teams
 
 - [Manage Microsoft Teams features for your organization](https://docs.microsoft.com/microsoftteams/enable-features-office-365)
 - [Admin training for Microsoft Teams](https://docs.microsoft.com/microsoftteams/itadmin-readiness)
-
-
 
 <!--
 
