@@ -6,7 +6,7 @@
 ### [Chief Information Security Officer (CISO) workshop training](./office-365-security/ciso-workshop.md)
 #### [Module 1 - Microsoft cybersecurity briefing](./office-365-security/ciso-workshop-module-1.md)
 #### [Module 2 - Security management](./office-365-security/ciso-workshop-module-2.md)
-#### [Module 3 - Identity and access management](./office-365-security/ciso-workshop-module-3.md)
+#### [Module 3 - Identity and Zero Trust User Access](./office-365-security/ciso-workshop-module-3.md)
 #### [Module 4a - Threat protection strategy, Part I](./office-365-security/ciso-workshop-module-4a.md)
 #### [Module 4b - Threat protection strategy, Part II](./office-365-security/ciso-workshop-module-4b.md)
 #### [Module 5 - Information protection](./office-365-security/ciso-workshop-module-5.md)

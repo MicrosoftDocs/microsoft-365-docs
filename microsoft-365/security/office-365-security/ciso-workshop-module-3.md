@@ -12,7 +12,7 @@ ms.collection:
 description: "Learn more about security principles and recommendations for modernizing security in your organization."
 ---
 
-# CISO Workshop Module 3: Identity and Access Management 
+# CISO Workshop Module 3: Identity and Zero Trust User Access
 
 Because most modern attacks involve compromising user identities, learn how to build a new identity security perimeter to protect assets outside your corporate network.
 

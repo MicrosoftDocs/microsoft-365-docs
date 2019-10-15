@@ -27,7 +27,7 @@ The CISO workshop videos and PDF/PowerPoint download content 're modular so you 
 
 - [Module 2: Security Management](ciso-workshop-module-2.md): Learn how to increase visibility and control over your hybrid enterprise estate with integrated guidance, automated policy enforcement, and monitoring.
 
-- [Module 3: Identity and Access Management](ciso-workshop-module-3.md): Because most modern attacks involve compromising user identities, learn how to build a new identity security perimeter to protect assets outside your corporate network.
+- [Module 3: Module 3 - Identity and Zero Trust User Access](ciso-workshop-module-3.md): Because most modern attacks involve compromising user identities, learn how to build a new identity security perimeter to protect assets outside your corporate network.
 
 - [Module 4a: Threat Protection Strategy, Part I](ciso-workshop-module-4a.md): Explore key learnings about threat protection, security evolution, strategies, and security road maps.
 
