@@ -142,7 +142,7 @@ At a high level, we want to tell Office 365 to "apply the **Product Specificatio
 
 When SharePoint indexes content, it automatically generates crawled properties for each site column. For this scenario, we're interested in the **Doc Type** and **Status** properties. We need documents in the library using the right content type and have the site columns filled in, in order for search to create the crawled properties.
 
-In the **SharePoint admin center**, we can open the Search configuration, and select **Manage Search Schema** to view and configure the crawled properties.
+In the SharePoint admin center, we can open the Search configuration, and select **Manage Search Schema** to view and configure the crawled properties.
 
 ![](media/SPRetention8.png)
 
@@ -171,15 +171,15 @@ For more information about crawled and managed properties, see [Automatically cr
 
 ### Mapping crawled properties to pre-defined managed properties
 
-KQL can't use crawled properties in search queries. It has to use a managed property. In a normal search scenario, we create a managed property and map it to the crawled property that we need. However, for auto-applying retention labels, KQL can only use a pre-defined managed properties and not custom managed properties. There is a set of predefined managed properties already created in the system for string RefinableString00 to RefinableString199 can be used. There are others for date, int, … see <https://docs.microsoft.com/en-us/sharepoint/manage-search-schema#default-unused-managed-properties>. These managed properties are normally used for defining search refiners.
+KQL can't use crawled properties in search queries. It has to use a managed property. In a normal search scenario, we create a managed property and map it to the crawled property that we need. However, for auto-applying retention labels, KQL can only use a pre-defined managed properties and not custom managed properties. There is a set of predefined managed properties already created in the system for string RefinableString00 to RefinableString199 can be used. For a complete list, see [Default unused managed properties](https://docs.microsoft.com/sharepoint/manage-search-schema#default-unused-managed-properties). These default managed properties are normally used for defining search refiners.
 
-For our KQL query to work and automatically apply the right retention label we will map the crawled properties ows\_\_status and ows\_Doc\_x0020\_Type to two refinable managed properties. On tenant used for this white paper RefinableString00 andRefinableString01 are not used:
+For the KQL query to work and automatically apply the correct retention label to product document content, we'll map the crawled properties **ows\_Doc\_x0020\_Type** and **ows\_\_Status** to two refinable managed properties. In our test environment for this scenario, **RefinableString00** and **RefinableString01** aren't being used. We determined this by looking at **Managed Properties** in the **Manage Search Schema** in the SharePont admin center.
 
 ![](media/SPRetention12.png)
 
-As shown in the screenshot above the managed property RefinableString00 is not mapped.
+Notice that the **Mapped Crawled Properties** column in the previous screenshot is empty.
 
-Click the hyperlink RefinableString00, scroll down, and click “Add a mapping”, type ows\_Doc\_x0020\_Type in the “Search for a crawled property name”, click Find and select the right result and click OK you should see something like this:
+To map the **ows\_Doc\_x0020\_Type** crawled property, click the **RefinableString00** link, and then scroll down to the **Mappings to crawled properties** section.  Click **Add a Mapping** and type **ows\_Doc\_x0020\_Type** in the**Search for a crawled property name** box.  click Find and select the right result and click OK you should see something like this:
 
 ![](media/SPRetention13.png)
 
