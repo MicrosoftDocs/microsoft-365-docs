@@ -12,25 +12,25 @@ search.appverid:
 ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
 ms.collection:
 - M365-security-compliance
-description: "When Exchange Online Protection scans an inbound email message it inserts the **X-Forefront-Antispam-Report** header into each message."
+description: "Learn about the header fields and values that are added to messages by Exchange Online Protection."
 ---
 
 # Anti-spam message headers
 
 When Exchange Online Protection scans an inbound email message it inserts the **X-Forefront-Antispam-Report** header into each message. The fields in this header can help provide administrators with information about the message and about how it was processed. The fields in the **X-Microsoft-Antispam** header provide additional information about bulk mail and phishing. In addition to these two headers, Exchange Online Protection also inserts email authentication results for each message it processes in the **Authentication-results** header.
 
-For information about how to view an email message header in various email clients, see [Message Header Analyzer](https://go.microsoft.com/fwlink/p/?LinkId=306583). 
-  
+For information about how to view an email message header in various email clients, see [Message Header Analyzer](https://go.microsoft.com/fwlink/p/?LinkId=306583).
+
 > [!TIP]
->  You can copy and paste the contents of a message header into the [Message Analyzer](https://testconnectivity.microsoft.com/?tabid=mha) tool. This tool helps parse headers and put them into a more readable format.
-  
+> You can copy and paste the contents of a message header into the [Message Analyzer](https://testconnectivity.microsoft.com/?tabid=mha) tool. This tool helps parse headers and put them into a more readable format.
+
 ## X-Forefront-Antispam-Report message header fields
 
 After accessing the message header information, search for **X-Forefront-Antispam-Report** and then look for these fields. Other fields in this header are used exclusively by the Microsoft anti-spam team for diagnostic purposes.
 
 |**Header field**|**Description**|
 |:-----|:-----|
-|CIP: [IP address]|The connecting IP address. You may want to specify this IP address when creating an IP Allow list or an IP Block list in the connection filter. For more information, see [Configure the connection filter policy](configure-the-connection-filter-policy.md).|
+|CIP: \[IP address\]|The connecting IP address. You may want to specify this IP address when creating an IP Allow list or an IP Block list in the connection filter. For more information, see [Configure the connection filter policy](configure-the-connection-filter-policy.md).|
 |CTRY|The country from which the message connected to the service. This is determined by the connecting IP address, which may not be the same as the originating sending IP address.|
 |LANG|The language in which the message was written, as specified by the country code (for example, ru_RU for Russian).|
 |SCL|The Spam Confidence Level (SCL) value of the message. For more information about interpreting these values, see [Spam confidence levels](spam-confidence-levels.md).|
@@ -48,71 +48,70 @@ After accessing the message header information, search for **X-Forefront-Antispa
 |SFV:SKI|Similar to SFV:SKN, the message skipped filtering for another reason such as being intra-organizational email within a tenant.|
 |SFV:SKQ|The message was released from the quarantine and was sent to the intended recipients.|
 |SFV:NSPM|The message was marked as non-spam and was sent to the intended recipients.|
-|H: [helostring]|The HELO or EHLO string of the connecting mail server.|
-|PTR: [ReverseDNS]|The PTR record, or pointer record, of the sending IP address, also known as the reverse DNS address.|
-|CAT:|The category of protection policy, applied to the message: <br/>MALW: Malware <br/>PHSH: Phishing <br/>HSPM: High confidence spam <br/>SPOOF: Spoofing <br/>SPM: Spam <br/>BULK: Bulk <br/>DIMP: Domain Impersonation <br/>UIMP: User Impersonation <br/>Potentially, an incoming message may be flagged by multiple forms of protection and multiple detection scans. Policies have different priorities, and the policy with the highest priority will apply. See [What policy applies when multiple protection methods and detection scans run on your email](https://docs.microsoft.com/microsoft365/securitycompliance/how-policies-and-protections-are-combined).|
+|H: \[helostring\]|The HELO or EHLO string of the connecting mail server.|
+|PTR: \[ReverseDNS\]|The PTR record, or pointer record, of the sending IP address, also known as the reverse DNS address.|
+|CAT:|The category of protection policy, applied to the message: <br/>MALW: Malware <br/>PHSH: Phishing <br/>HSPM: High confidence spam <br/>SPOOF: Spoofing <br/>SPM: Spam <br/>BULK: Bulk <br/>DIMP: Domain Impersonation <br/>UIMP: User Impersonation <br/>Potentially, an incoming message may be flagged by multiple forms of protection and multiple detection scans. Policies have different priorities, and the policy with the highest priority will apply. See [What policy applies when multiple protection methods and detection scans run on your email](https://docs.microsoft.com/microsoft-365/security/office-365-security/how-policies-and-protections-are-combined).|
 |SFTY|The message was identified as phishing and will also be marked with one of the following values: <br/>9.1: Default value. The message contains a phishing URL, may contain other phishing content, or may have been marked as phishing by another mail filter such as an on-premises version of Exchange Server before relaying the message to Office 365. <br/>9.11: Message failed anti-spoofing checks where the sending domain in the From: header is the same as, or aligns with, or is part of the same organization as the receiving domain. This indicates a intra-org spoofing safety tip will be added to the message. <br/>9.19: Message failed domain impersonation checks where the sending domain is attempting to impersonate a domain owned by the receiver, or a custom domain protected by the Anti-Phishing policy. This indicates an impersonation safety tip will be added to the message, if enabled via the Anti-Phishing policy. <br/>9.20: Message failed user impersonation checks where the sending user is attempting to impersonate a user within receivers organization, or a custom user protected by the Anti-Phishing policy. This indicates an impersonation safety tip will be added to the message, if enabled via the Anti-Phishing policy. <br/>9.21: Message failed anti-spoofing checks and the sending domain in the From: header does not authenticate and is from an external domain. Used in combination with CompAuth (see Authentication-Results). <br/>9.22: Same as 9.21, except that the user has a safe sender that was overridden. <br/>9.23: Same as 9.22, except that the organization has an allowed sender or domain that was overridden. <br/>9.24: Same as 9.23, except that the user has an Exchange mail flow rule that was overridden.|
-|X-CustomSpam: [ASFOption]|The message matched an advanced spam filtering  option. For example, **X-CustomSpam: Image links to remote sites** denotes that the **Image links to remote sites** ASF option was matched. To find out which X-header text is added for each specific ASF option, see [Advanced spam filtering  options](advanced-spam-filtering-asf-options.md).|
+|X-CustomSpam: \[ASFOption\]|The message matched an advanced spam filtering option. For example, **X-CustomSpam: Image links to remote sites** denotes that the **Image links to remote sites** ASF option was matched. To find out which X-header text is added for each specific ASF option, see [Advanced spam filtering options](advanced-spam-filtering-asf-options.md).|
 |
 
 ## X-Microsoft-Antispam message header fields
 
 The following table describes useful fields in the **X-Microsoft-Antispam** message header. Other fields in this header are used exclusively by the Microsoft anti-spam team for diagnostic purposes.
-  
+
 |**Header field**|**Description**|
 |:-----|:-----|
-|BCL|The Bulk Complaint Level (BCL) of the message. For more information, see [Bulk Complaint Level values](bulk-complaint-level-values.md).|
 |PCL|The Phishing Confidence Level (PCL) of the message, which indicates whether it's a phishing message. This status can be returned as one of the following numerical values: <br/>**0-3**: The message's content isn't likely to be phishing. <br/>**4-8**: The message's content is likely to be phishing. <br/>**-9990**: (Exchange Online Protection only) The message's content is likely to be phishing.  <br/>  The values are used to determine what action your email client takes on messages. For example, Outlook uses the PCL stamp to block the content of suspicious messages. For more information about phishing, and how Outlook processes phishing messages, see [Turn on or off links in email messages](https://support.office.com/article/2D79B907-93B6-4774-82E6-1F0385CF20F8).|
 |
 
 ## Authentication-results message header
 
 The results of checks against SPF, DKIM, and DMARC are recorded, or stamped, by Office 365 in the **Authentication-results** message header when our mail servers receive an email message.
-  
-### check stamp syntax and examples
+
+### Check stamp syntax and examples
 
 The following syntax examples show a portion of the text "stamp" that Office 365 applies to the message header for each email that undergoes an email authentication check when it is received by our mail servers. The stamp is added to the **Authentication-Results** header.
-  
-**Syntax: SPF check stamp**
-  
+
+#### Syntax: SPF check stamp
+
 For SPF, the following syntax applies.
-  
+
 ```text
 spf=<pass (IP address)|fail (IP address)|softfail (reason)|neutral|none|temperror|permerror> smtp.mailfrom=<domain>
 ```
 
-**Examples: SPF check stamp**
-  
+**Examples: SPF check stamp
+
 ```text
 spf=pass (sender IP is 192.168.0.1) smtp.mailfrom=contoso.com
 spf=fail (sender IP is 127.0.0.1) smtp.mailfrom=contoso.com
 ```
 
-**Syntax: DKIM check stamp**
-  
+#### Syntax: DKIM check stamp
+
 For DKIM, the following syntax applies.
-  
+
 ```text
 dkim=<pass|fail (reason)|none> header.d=<domain>
 ```
 
-**Examples: DKIM check stamp**
-  
+**Examples: DKIM check stamp
+
 ```text
 dkim=pass (signature was verified) header.d=contoso.com
 dkim=fail (body hash did not verify) header.d=contoso.com
 ```
 
-**Syntax: DMARC check stamp**
-  
+#### Syntax: DMARC check stamp
+
 For DMARC, the following syntax applies.
-  
+
 ```text
 dmarc=<pass|fail|bestguesspass|none> action=<permerror|temperror|oreject|pct.quarantine|pct.reject> header.from=<domain>
 ```
 
-**Examples: DMARC check stamp**
-  
+#### Examples: DMARC check stamp
+
 ```text
 dmarc=pass action=none header.from=contoso.com
 dmarc=bestguesspass action=none header.from=contoso.com
@@ -123,7 +122,7 @@ dmarc=fail action=oreject header.from=contoso.com
 ### Authentication-results message header fields used by Office 365 email authentication
 
 This table describes the fields and possible values for each email authentication check.
-  
+
 |**Header field**|**Description**|
 |:-----|:-----|
 |spf|Describes the results of the SPF check for the message. Possible values include: <br/>**pass (IP address)**: Indicates the SPF check for the message passed and includes the sender's IP address. The client is authorized to send or relay email on behalf of the sender's domain. <br/>**fail (IP address)**: Indicates the SPF check for the message failed and includes the sender's IP address. This is sometimes called _hard fail_. <br/>**softfail (reason)**: Indicates that the SPF record has designated the host as not being allowed to send but is in transition. <br/>**neutral**: Indicates that the SPF record has explicitly stated that it is not asserting whether the IP address is authorized. <br/>**none**: Indicates that the domain does not have an SPF record or the SPF record does not evaluate to a result. <br/>**temperror**: Indicates that an error has occurred that may be temporary in nature, for example, a DNS error. Trying again later might succeed without any administrator action. <br/>**permerror**: Indicates that a permanent error has occurred. This happens when, for example, the domain has a badly formatted SPF record.|

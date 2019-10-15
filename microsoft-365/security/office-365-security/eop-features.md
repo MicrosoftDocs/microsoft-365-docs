@@ -1,9 +1,9 @@
 ---
 title: "EOP features"
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 
+ms.date:
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,10 +15,10 @@ description: "The following table provides a list of features that are available
 # EOP features
 
 The following table provides a list of features that are available in the Exchange Online Protection (EOP) hosted email filtering service.
-  
+
 > [!TIP]
-> The [Office 365 for business roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=O365) is a good resource for finding out information about upcoming new features. For a broader view about what features are available with the different EOP subscription plans, see [Exchange Online Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description). 
-  
+> The [Office 365 for business roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=O365) is a good resource for finding out information about upcoming new features. For a broader view about what features are available with the different EOP subscription plans, see [Exchange Online Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description).
+
 |||
 |:-----|:-----|
 |**Feature**|**Description**|
@@ -36,7 +36,7 @@ The following table provides a list of features that are available in the Exchan
 |The ability to configure advanced options for aggressive spam filtering|For more information, see [Configure your spam filter policies](configure-your-spam-filter-policies.md) (which is where you configure them) and [Advanced spam filtering  options](advanced-spam-filtering-asf-options.md) (which provides specific details about what each option does).|
 |International spam filtering|You can configure EOP to filter messages written in specific languages or sent from specific countries or regions. You can configure up to 86 different languages and 250 different regions. The service will apply the configured action for high confidence spam. For more information, see [Configure your spam filter policies](configure-your-spam-filter-policies.md).|
 |Manage spam via Outlook or Outlook on the web (formerly known as Outlook Web App)|Admins and end users can create safe sender lists and blocked sender lists. For more information: <br/>• **Outlook on the web**: See [Block or allow (junk email settings)](https://support.office.com/article/48c9f6f7-2309-4f95-9a4d-de987e880e46).  <br/>• **Outlook**: See [Overview of the Junk Email Filter](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089). <br/><br/> If you're using EOP to help protect on-premises mailboxes, be sure to use directory synchronization to help ensure that these settings are synced to the service. For more information about setting up directory synchronization, see "Use directory synchronization to manage mail users" in [Manage mail users in EOP](manage-mail-users-in-eop.md).|
-|Spam submissions via the Junk Email Reporting Add-in for Microsoft Office Outlook|You can download an add-in to Outlook that lets you submit spam messages to Microsoft for analysis. For more information about downloading and using this tool, see [Enable the Report Message add-in](https://support.office.com/article/4250c4bc-6102-420b-9e0a-a95064837676). <br/><br/> If you're using Exchange Server 2013 or later with EOP, you can also right-click in Outlook on the web to submit spam messages, as described in [Report junk email and phishing scams in Outlook on the web ](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md).|
+|Spam submissions via the Junk Email Reporting Add-in for Microsoft Office Outlook|You can download an add-in to Outlook that lets you submit spam messages to Microsoft for analysis. For more information about downloading and using this tool, see [Enable the Report Message add-in](https://support.office.com/article/4250c4bc-6102-420b-9e0a-a95064837676). <br/><br/> If you're using Exchange Server 2013 or later with EOP, you can also right-click in Outlook on the web to submit spam messages, as described in [Report junk email and phishing scams in Outlook on the web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md).|
 |Spam and non spam submissions via an email alias|You can submit spam (junk) and non spam (not junk) messages to Microsoft via email. For more information, see [Submit spam, non-spam, and phishing scam messages to Microsoft for analysis](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md).|
 |Spam and non spam submissions via Outlook on the web Junk Email Reporting|You can submit spam and non spam messages to Microsoft via Outlook on the web Junk Email Reporting. For more information, see [Report junk email and phishing scams in Outlook on the web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md).  <br/><br/> This feature is currently available for Outlook on the web customers whose Exchange Server 2013 SP1 or later mailboxes are being filtered by EOP. Exchange Online Outlook on the web customers will also have this functionality in the near future.|
 |End-user spam quarantine notifications|End users can release their own spam-quarantined messages and optionally report them as not junk via end-user spam notification messages. These notification emails must be configured and enabled by an admin, as described in [Configure end-user spam notifications in Exchange Online](configure-end-user-spam-notifications-in-exchange-online.md) or [Configure end-user spam notifications in EOP](configure-end-user-spam-notifications-in-eop.md).|
@@ -72,7 +72,7 @@ The following table provides a list of features that are available in the Exchan
 |Change the spam confidence level of a message by rule.|You can inspect an in-transit message and assign a spam confidence level to it based on criteria that you choose. For more information, see [Use mail flow rules to set the spam confidence level (SCL) in messages](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md).|
 |Inspect message attachments|You can examine the content of an attachment or the characteristics of an attached file and define an action to take based on what is found. For more information, see [Using mail flow rules to inspect message attachments in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments).|
 |**Administration**||
-|Web-based administration|EOP administrators can manage the service via the Exchange admin center (EAC) interface, which is supported in 60 languages. For more information, see [Exchange admin center in Exchange Online Protection ](exchange-admin-center-in-exchange-online-protection-eop.md).|
+|Web-based administration|EOP administrators can manage the service via the Exchange admin center (EAC) interface, which is supported in 60 languages. For more information, see [Exchange admin center in Exchange Online Protection](exchange-admin-center-in-exchange-online-protection-eop.md).|
 |Directory synchronization|Directory synchronization is available via the Azure Active Directory Sync tool. For more information, see the "Use directory synchronization to manage mail users" section in [Manage mail users in EOP](manage-mail-users-in-eop.md).|
 |Directory Based Edge Blocking (DBEB)|The DBEB feature lets you reject messages for invalid recipients at the service network perimeter. DBEB lets admins add mail-enabled recipients to Office 365 and block all messages sent to email addresses that aren't present in Office 365. For more information about configuring DBEB, see [Use Directory Based Edge Blocking to reject messages sent to invalid recipients](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-directory-based-edge-blocking).|
 |Remote Windows PowerShell access|Full EOP functionality is available via remote Windows PowerShell. For more information, see [Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/exchange-online-protection-powershell).|

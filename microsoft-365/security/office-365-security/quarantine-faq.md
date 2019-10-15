@@ -42,15 +42,15 @@ A. In order to access the end user spam quarantine, end users must have a valid 
   
  **Q. Can anything other than spam be sent to the quarantine?**
   
-A. Messages that match a mail flow rule (also known as a transport rule) can also be sent to the administrator quarantine, if that's the configured action. The end user quarantine is for spam only.
+A. Yes. Messages that match a mail flow rule (also known as a transport rule) along with messages identified as phish can also be sent to the administrator quarantine, if that's the configured action. The end user quarantine is for spam only.
   
  **Q. For how long are messages kept in the quarantine?**
   
-A. By default, spam-quarantined messages are kept in the quarantine for 30 days, while quarantined messages that matched a mail flow rule are kept in the quarantine for 7 days. After this period of time the messages are deleted and are not retrievable. The retention period for quarantined messages that matched a mail flow rule is not configurable. However, the retention period for spam-quarantined messages can be lowered via the **Retain spam for (days)** setting in your content filter policies. For more information, see [Configure your spam filter policies](configure-your-spam-filter-policies.md).
+A. By default, spam-quarantined messages are kept in the quarantine for 30 days, while quarantined messages that matched a mail flow rule are kept in the quarantine for up to 30 days based on the retention period set in your default content filter policy. After this period of time the messages are deleted and are not retrievable. The retention period for quarantined messages that matched a mail flow rule is not configurable. However, the retention period for spam-quarantined messages can be lowered via the **Retain spam for (days)** setting in your content filter policies. For more information, see [Configure your spam filter policies](configure-your-spam-filter-policies.md).
   
  **Q. Can I release or report more than one quarantined message at a time?**
   
-A. The ability to release or report multiple messages at once is not currently available in the EAC or the end user spam quarantine. However, admins can create a remote Windows PowerShell script to accomplish this task. Use the [Get-QuarantineMessage](http://technet.microsoft.com/library/88026da1-8dbc-49e7-80e8-112a32773c34.aspx) cmdlet to search for messages, and the [Release-QuarantineMessage](http://technet.microsoft.com/library/4a3aa05c-238f-46f2-b8dd-b0e3c38eab3e.aspx) cmdlet to release them. 
+A. Yes, up to 100 messages can be released at one time in the Quarantine portal. In addition, admins can create a remote Windows PowerShell script to accomplish this task. Use the [Get-QuarantineMessage](http://technet.microsoft.com/library/88026da1-8dbc-49e7-80e8-112a32773c34.aspx) cmdlet to search for messages, and the [Release-QuarantineMessage](http://technet.microsoft.com/library/4a3aa05c-238f-46f2-b8dd-b0e3c38eab3e.aspx) cmdlet to release them. 
   
  **Q. Are wildcards supported when searching for quarantined messages? Can I search for quarantined messages for a specific domain?**
   
