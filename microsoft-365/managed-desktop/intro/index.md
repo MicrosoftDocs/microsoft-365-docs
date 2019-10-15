@@ -11,7 +11,9 @@ ms.localizationpriority: normal
 
 <!--from Overview-->
 
-Microsoft Managed Desktop is a subscription service that provides monitored IT services for all or some devices in your enterprise or small-business environment. It brings together [Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview) (including Windows 10 Enterprise and Office 365 Enterprise), cloud-based device management by Microsoft, and security monitoring, enabling you to free up your IT teams to focus on core business needs. Your end users will enjoy the latest versions of Windows 10 and Office 365 ProPlus apps (and more besides), using devices and software that are curated for best performance and reliability--and you'll never have to worry about keeping any of this software up to date because that happens automatically. And even better: registered devices are monitored 24x7 for technical and security issues, so if something goes wrong, help will be on the way. 
+Microsoft Managed Desktop is a subscription service that provides monitored IT services for all or some devices in your enterprise or small-business environment. It brings together [Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview) (including Windows 10 Enterprise and Office 365 Enterprise), cloud-based device management by Microsoft, and security monitoring, enabling you to free up your IT teams to focus on core business needs. 
+
+Your end users will enjoy the latest versions of Windows 10 and Office 365 ProPlus apps (and more besides), using devices and software that are curated for best performance and reliability--and you'll never have to worry about keeping any of this software up to date because that happens automatically. And even better: registered devices are monitored 24x7 for technical and security issues, so if something goes wrong, help will be on the way. 
 
 ## Microsoft 365 Enterprise
 To use Microsoft Managed Desktop, you'll have to obtain a Microsoft 365 Enterprise [E3 or E5 license](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans?rtc=1).
@@ -21,8 +23,8 @@ Microsoft 365 Enterprise includes Windows 10 Enterprise, Office 365 Enterprise (
 ### Windows 10 Enterprise
 Addresses the needs of both large and midsize organizations, providing users with the most productive and secure version of Windows and IT professionals with comprehensive deployment, device, and app management. Learn more at [Windows 10](https://docs.microsoft.com/windows/windows-10/).
 
-### Office 365 ProPlus
-[Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/about-office-365-proplus-in-the-enterprise) is a version of Office that's available as part of Microsoft 365 Enterprise. It includes the applications that you're familiar with, including Access, Excel, OneNote, Outlook, PowerPoint, Publisher, Skype for Business, and Word, as well as OneDrive. You can use these applications to connect with Office 365 services such as SharePoint Online, Exchange Online, and Skype for Business Online. All of these apps are kept continuously up to date for you.
+### Office 365 Enterprise
+[Office 365 Enterprise](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans) is a version of Office that's available as part of Microsoft 365 Enterprise. It includes the applications that you're familiar with, including Access, Excel, OneNote, Outlook, PowerPoint, Publisher, Skype for Business, and Word, as well as OneDrive. You can use these applications to connect with Office 365 services such as SharePoint Online, Exchange Online, and Skype for Business Online. All of these apps are kept continuously up to date for you.
 
 ### Enterprise Mobility + Security
 [Enterprise Mobility + Security](https://docs.microsoft.com/enterprise-mobility-security/#pivot=products&panel=products-all) is a collection of inter-related products and features designed to manage devices and users, control access, protect information, and detect, analyze, and protect against threats. It includes these products:
