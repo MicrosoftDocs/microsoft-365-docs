@@ -215,7 +215,7 @@ When you create an Assessment, you have the option to copy information from an e
 ### Viewing Assessments
 
 > [!IMPORTANT]
-> When you receive an alert notification (designated by an orange triangle icon on the Assessments dashboard) that an assessment is ready for update, we strongly suggest selecting **Update**. Updates are provided for both standard and custom assessments, and will help ensure your assessments function properly as laws and regulations change.  
+> When you receive an alert notification (designated by an orange triangle icon on the Assessments dashboard) that an Assessment is ready for update, select **Update**. This ensures that updates to templates are reflected in the Assessment.  
 
 #### View an Assessment
   
@@ -368,7 +368,7 @@ The dashboard displays each Template, along with the Certification and Product a
 The built-in Templates each have a built-in Assessment associated with them, but you can create additional Assessments based on built-in Templates, and you can import your own Templates, and create custom Assessments based off those.
 
 > [!IMPORTANT]
-> When you receive an alert notification (designated by an orange triangle icon on the Templates dashboard) that a template is ready for update, we strongly suggest selecting **Update** to ensure your score is accurately calculated. Updates do not automatically extend to the Assessment level, so it is also important to accept all updates for Assessments to ensure proper functionality.
+> When you receive an alert notification (designated by an orange triangle icon on the Templates dashboard) that a template is ready for update, select **Update** to ensure your score is accurately calculated. Updates do not automatically extend to the Assessment level, so you should also accept updates to Assessments to ensure proper functionality.
 
 ### Create a Template
 
