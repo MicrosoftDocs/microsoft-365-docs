@@ -49,7 +49,7 @@ How to create a label on the Site and group settings tab
 On the site and group settings tab, you can select: 
 Privacy {Private/Public}:  Private means only approved members in your organization can see what's inside the group. Anyone else in your organization cannot see what's in the group. Learn more 
 External users access: You can control if guests can be added to a group . Learn about managing guest access in Office 365 Groups 
-Unmanaged devices: This setting applies to any SharePoint site and controls access to sites from devices that are not managed by your organization. Learn about setting up SharePoint and Azure to control access from unmanaged devices. 
+Unmanaged devices: This setting applies to any SharePoint site and controls access to sites from devices that are not managed by your organization. Learn about setting up SharePoint and Azure to control access from unmanaged devices.
 
 Publishing the sensitivity label   
 The steps to publish labels can be found here  
@@ -68,7 +68,7 @@ Global and SharePoint admins can go to the Active sites page to see the labels a
 
  
 They can select sites and change their labels.  
-To learn how to manage sensitivity labels in PowerShell, see <link>. 
+To learn how to manage sensitivity labels in PowerShell, see <link>.
 
 Page Break
 Using sensitivity labels while creating groups 
