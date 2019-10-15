@@ -10,8 +10,10 @@ ms.collection: M365-modern-desktop
 
 # Customize the service
 
-Microsoft Managed Desktop provides a curated device list, [standard device settings](device-policies.md), applications requirements, and certain [configurable settings](../working-with-managed-desktop/config-setting-overview.md), all designed to provide a secure, productive, and pleasant experience for end users. It’s best to always stay with the service as provided. However, we recognize that some details of the service might not fit exactly with your organization’s needs. If you feel you need to alter the service in some way, it’s important that you follow the following processes to request those changes. 
-Types of customizations
+Microsoft Managed Desktop provides a curated device list, [standard device settings](device-policies.md), applications requirements, and certain [configurable settings](../working-with-managed-desktop/config-setting-overview.md), all designed to provide a secure, productive, and pleasant experience for end users. It’s best to always stay with the service as provided. However, we recognize that some details of the service might not fit exactly with your organization’s needs. If you feel you need to alter the service in some way, it’s important that you follow the following processes to request those changes.
+
+ 
+## Types of customizations
 A customization is any addition or change to the Microsoft Managed Desktop base configuration; examples range from USB ports configuration to deploying a new security agent. We group various customizations as follows:
 
 
@@ -61,13 +63,13 @@ These conditions could change in the future. If we do make such changes, we’ll
 
 ## Revoking approval for a customization
 
-After a requested customization is approved and deployed, it’s possible that we might discover problems that violate the key conditions that weren’t evident when we approved the change in the first place. If this happens, we might have to revoke approval for the customization.
+After a requested customization is approved and deployed, it’s possible that we might discover problems that violate the key conditions that weren’t evident when we approved the change in the first place. In this situation, we might have to revoke approval for the customization.
  
 If this happens, we’ll notify you by using the Microsoft Managed Desktop admin portal. From the first time we notify you, you have 90 days to remove the customization before the devices with the customization are no longer bound by Microsoft Managed Desktop service level agreements. We'll send you several notifications according to a strict timeline--however, a severe incident or threat might require us to change the timeline or our decisions about a customization. We won't *remove* a customization without your consent, but any device with a revoked customization will no longer be bound by our service level agreement. Here is the timeline of notifications we will send you:
 
-- First notice: We provide the first notice of our decision to revoke approval, including information about why we’re revoking it, the actions we advise you to take, the deadline for those actions, and steps to follow if you want to appeal the decision. This is 90 days in advance before the customization needs to be removed from all devices. 
-- Second notice (30 days later): We provide a second notice, including the same information provided in the first notice. 
-- Third notice (60 days after the first notice): We provide a third notice, including the same information provided in the first notice. 
-- Final notice (1 week before the 90-day deadline): We provide a fourth notice, including the same information provided in the first notice.
-- 90 days after first notice: Microsoft Managed Desktop service level agreements no longer apply to any devices that have the revoked customization. At any time, you can challenge the decision and provide additional information for consideration, including upgrade, configuration changes, or change of software. 
+- **First notice:** We provide the first notice of our decision to revoke approval, including information about why we’re revoking it, the actions we advise you to take, the deadline for those actions, and steps to follow if you want to appeal the decision. This is 90 days in advance before the customization needs to be removed from all devices. 
+- **Second notice (30 days later):** We provide a second notice, including the same information provided in the first notice. 
+- **Third notice (60 days after the first notice):** We provide a third notice, including the same information provided in the first notice. 
+- **Final notice (1 week before the 90-day deadline):** We provide a fourth notice, including the same information provided in the first notice.
+- **90 days after first notice:** Microsoft Managed Desktop service level agreements no longer apply to any devices that have the revoked customization. At any time, you can challenge the decision and provide additional information for consideration, including upgrade, configuration changes, or change of software. 
 
