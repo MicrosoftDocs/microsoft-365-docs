@@ -58,7 +58,7 @@ Selecting the Timeline tab enables you to scroll through the machine timeline an
 ## Users 
 See users that have been identified to be part of, or related to a given incident as reported by Microsoft Cloud App Security. 
 
-Selecting the username navigates you to the user’s Cloud App Security page where further investigation can be conducted.
+Selecting the username navigates you to the user's Cloud App Security page where further investigation can be conducted.
 
 
 ## Mailboxes
