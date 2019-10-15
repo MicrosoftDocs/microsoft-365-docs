@@ -1,8 +1,8 @@
 ---
 title: "Chief Information Security Officer (CISO) Workshop, Module 4b: Threat Protection Strategy"
-ms.author: robmazz
-author: robmazz
-manager: laurawi
+ms.author: dansimp
+author: dansimp
+manager: dansimp
 audience: Admin
 ms.topic: tutorial
 ms.service: o365-seccomp

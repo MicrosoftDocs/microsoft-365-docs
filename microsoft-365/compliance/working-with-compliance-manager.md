@@ -99,6 +99,9 @@ Select **Tenant Management** to open the management interface, and use the follo
 
 Dimensions are sets of metadata that provide information about a Template, an Assessment, or an Action Item. Dimensions use the concept of Keys and Values, where the Dimension Key represents a property, and Dimension Value represents valid values for the property. For example, in Compliance Manager there are three types of Actions. They are defined by a Dimension Key of **Action Type** and Dimension Values of **Documentation**, **Operational**, and **Technical**. You can edit or delete existing Dimensions.
 
+> [!IMPORTANT]
+> You can add new dimensions, and they can be assigned to Templates that you have already imported. You can also add new dimensions to any new Templates you create.
+
 ### Owners
 
 Owners are used to identify the responsible party for each control. All built-in controls are owned by Microsoft, by customers, or by both. You can create custom values for Owners that can be used to specify more granular responsibilities within your organization. For example, you could create Owners that represent specific groups, teams, or business units within your organization.
@@ -213,6 +216,9 @@ When you create an Assessment, you have the option to copy information from an e
 3. Select **Save** to create the Assessment.
 
 ### Viewing Assessments
+
+> [!IMPORTANT]
+> When you receive an alert notification (designated by an orange triangle icon on the Assessments dashboard) that an Assessment is ready for update, select **Update**. This ensures that updates to templates are reflected in the Assessment.  
 
 #### View an Assessment
   
@@ -363,6 +369,9 @@ A Template is the base object in Compliance Manager (Preview) that is associated
 The dashboard displays each Template, along with the Certification and Product associated with the Template, the dates on which the Template was created and last modified, the number of customer and Microsoft-managed controls, the maximum Compliance Score for the Template, and the status of the Template (for example, Approved, Pending Approval, Imported).
 
 The built-in Templates each have a built-in Assessment associated with them, but you can create additional Assessments based on built-in Templates, and you can import your own Templates, and create custom Assessments based off those.
+
+> [!IMPORTANT]
+> When you receive an alert notification (designated by an orange triangle icon on the Templates dashboard) that a template is ready for update, select **Update** to ensure your score is accurately calculated. Updates do not automatically extend to the Assessment level, so you should also accept updates to Assessments to ensure proper functionality.
 
 ### Create a Template
 
