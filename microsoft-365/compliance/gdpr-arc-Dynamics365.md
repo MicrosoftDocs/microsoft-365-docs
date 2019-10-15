@@ -135,7 +135,7 @@ For more GDPR-related documentation, visit https://aka.ms/gdprgetstarted.
 | 10 <a name="10"> </a> | [Who can access data and at what terms](https://www.microsoft.com/trustcenter/Privacy/Who-can-access-your-data-and-on-what-terms) |
 | 11 <a name="11"> </a> | [Contracts for sub-processors: Contracting with Microsoft](https://www.microsoft.com/en-us/procurement/supplier-contracting.aspx#SSPA) |
 | 12<a name="12"> </a>  | [Dynamics 365 Breach Notification Under the GDPR](https://servicetrust.microsoft.com/ViewPage/GDPRBreach) |
-| 13 <a name="13"> </a> | [Microsoft Trust Center Compliance offerings](https://www.microsoft.com/trustcenter/compliance/complianceofferings) |
+| 13 <a name="13"> </a> | [Microsoft Trust Center Compliance offerings](offering-home.md) |
 | 14 <a name="14"> </a> | [Dynamics 365 Penetration Testing and Security Assessment Report](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=25aa47b1-c510-43f2-84de-6b78ed3b1258&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Pen_Test_and_Security_Assessments) |
 | 15 <a name="15"> </a> | [Compliance Manager](https://servicetrust.microsoft.com/ComplianceManager) |
 | 16 <a name="16"> </a> | [Microsoft DPO Information](https://docs.microsoft.com/microsoft-365/compliance/gdpr-data-protection-officer) |
