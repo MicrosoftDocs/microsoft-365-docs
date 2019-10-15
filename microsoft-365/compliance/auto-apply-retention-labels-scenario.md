@@ -66,7 +66,7 @@ The manufacturing company's compliance and data governance policies dictate the 
 | **Document type**          | **Retention**                          | **Disposition**                              |
 | -------------------------- | -------------------------------------- | -------------------------------------------- |
 | Product specification      | 5 years after cessation of production  | Delete                                       |
-| Agreement                  | 10 years after cessation of production | Review                                       |
+| Product agreement          | 10 years after cessation of production | Review                                       |
 | User manual                | 5 years after cessation of production  | Delete                                       |
 | All other types of documents | Don't actively retain other documents  | Delete when document is older than 3 years<sup>\*</sup>  |
 |||
@@ -74,7 +74,7 @@ The manufacturing company's compliance and data governance policies dictate the 
 > [!NOTE]
 > <sup>\*</sup> A document is considered older than 3 years if it hasn't been modified within the last 3 years.
 
-Using the security and compliance center we can create the following retention labels:
+Using the security and compliance center, we will create the following retention labels:
 
   - Product Specification
 
@@ -82,7 +82,7 @@ Using the security and compliance center we can create the following retention l
 
   - User Manual
 
-(In this article, we create only one retention label named **Product Specification**. To implement the complete scenario, you would create retention labels for the other two document types.
+In this article, we only show how to create the Product Specification retention label. To implement the complete scenario, you would create retention labels for the other two document types.
 
 ### Settings for the Product Specification retention label
 
@@ -98,70 +98,80 @@ Here's the [file plan](file-plan-manager.md) for the Product Specification reten
 
 - **Retention duration:** 5 years (1825 days)
 
+- **Record label**: Configure the retention label to classify content as a record
+
 - **File plan descriptors:** (for simplifying the scenario, no file descriptors are provided)
 
-Enable Retention and configure with the following settings:
+The following screenshot shows the settings when you create the Product Specification [retention label](labels.md) in the security and compliance center. You can create the **Product Cessation** event type when you create the retention label. See the how-to steps below.
 
 ![](media/SPRetention5.png)
 
 > [!NOTE]
-> For the practical purposes of this scenario and to avoid having to wait 5 years to see a document automatically deleted, set the retention duration to 1 day if you're recreating this scenario.
+> For the practical purposes and to avoid having to wait 5 years to see a document automatically deleted, set the retention duration to 1 day if you're recreating this scenario in your test environment.
 
-Click **Choose an event type** and then click **You can create new event types here**.
+### Create an event type when creating a retention label
 
-Create an event type called **Product Cessation**, give a description, and then select it before clicking **Add**. It should look like that:
+For more detailed steps on creating event types, see 
 
-![](media/SPRetention6.png)
+1. In the **Retain or delete content based** on dropdown list, select **an event**.
 
-Select the check box:
+2. Click **Choose an event type**.
+
+   ![](media/SPRetention6.png)
+
+3. On the **Choose an event type** page, click **You can create new event types here**.
+
+4. Create an event type named **Product Cessation**, give a description, and click **Finish** to create it. 
+
+5. Back on the **Choose an event type** page, select the **Product Cessation** event type that you just created and then click **Add**.
+
+Here's what the settings look like for the Product Specification retention label. Click **Create this label** to create it.
 
 ![](media/SPRetention7.png)
 
-Click Next and Create this Label.
+> [!TIP]
+> For more detailed steps, see [Create a label whose retention period is based on an event](event-driven-retention.md#step-1-create-a-label-whose-retention-period-is-based-on-an-event).
 
-Now that the retention label is created, let's look at auto-applying the retention label.
+Now that the retention label is created, let's look at auto-applying the retention label to product specification content.
 
-## Classifying content by auto-applying retention labels
+## Classify content by auto-applying retention labels
 
-We are going to auto-apply the retention labels by using Keyword Query Language (KQL). KQL is the language used to build search queries. In KQL, you can search by using keywords or managed properties.
+We're going to [auto-apply](labels.md#applying-a-retention-label-automatically-based-on-conditions) the retention labels that we've created for this scenario by using Keyword Query Language (KQL). KQL is the language used to build search queries. In KQL, you can search by using keywords or managed properties. For more information about KQL, see <https://docs.microsoft.com/en-us/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference>
 
-We want to tell the system to apply the **Product Specification** label to all documents that have a **Status** of **Final** and a **Doc Type** of **Product Specification. Status** and **Doc Type** are the site columns we defined in the content type earlier on. To achieve this there is some search schema configuration to be done.
+At a high level, we want to tell Office 365 to "apply the **Product Specification** retention label to all documents that have a **Status** of **Final** and a **Doc Type** of **Product Specification**. Recall that **Status** and **Doc Type** are the site columns we previously defined for Product Documentation content type in the [Information architecture](#information-architecture) section. To achieve this, we need to configure the search schema.
 
-For more information on KQL, see <https://docs.microsoft.com/en-us/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference>
+When SharePoint indexes content, it automatically generates crawled properties for each site column. For this scenario, we're interested in the **Doc Type** and **Status** properties. We need documents in the library using the right content type and have the site columns filled in, in order for search to create the crawled properties.
 
-When SharePoint indexes content, it automatically generates crawled properties for each site column. Here we are interested in Doc Type and Status. We need documents in the library using the right content type and have the site columns filled in, in order for the search to create the crawled properties.
-
-From the SharePoint Admin page, we can open the search configuration and by selecting Manage Search Schema we can find and manipulate the crawled properties:
+In the **SharePoint admin center**, we can open the Search configuration, and select **Manage Search Schema** to view and configure the crawled properties.
 
 ![](media/SPRetention8.png)
 
-If we type **status** in the **Crawled Properties** text box, and then click the green arrow, we should see a result like this:
+If we type **status** in the **Crawled properties** box, and click the green arrow, we should see a result like this:
 
 ![](media/SPRetention9.png)
 
-The property ows\_\_status (note the double underscore) is the one that interests us. Now if we type **ows\_doc** and click the green arrow we should see something like this:
+The property **ows\_\_Status** (notice the double underscore) is the one that interests us. This maps to the **Status** property of the Production Document content type.
+
+Now if we type **ows\_doc** and click the green arrow we should see something like this:
 
 ![](media/SPRetention10.png)
 
-The property ows\_Doc\_x0020\_Type is the second property that interests us.
+The property **ows\_Doc\_x0020\_Type** is the second property that interests us. This maps to the **Doc Type** property of the Production Document content type.
 
-**<span class="underline">Note</span>**: to know the name of the crawled property we can navigate to the library settings and click the column name of interest; for example the **Status** column.
+> [!TIP]
+> To identify the name of a crawled property for this scenario, go the document library that contains the production documents and then go to the library settings. In the **Columns**, click the name of the column (for example, **Status** or **Doc Type**) to open the site column page. The **Field** parameter in the URL for that page contains the name of the field. This field name, prefixed with "ows_", is the name of the crawled property. For example, the URL `https://tenantname.sharepoint.com/sites/SpinningWidget/_layouts/15/FldEdit.aspx?List=%7BC38C2F45-3BD6-4C3B-AA3B-EF5DF6B3D172%7D&Field=_Status` corresponds to the **ows\_\_Status** crawled property.
 
-![](media/SPRetention11.png)
+If the crawled properties you're looking for don't appear in the Manage Search Schema section in the SharePoint admin center, it could be for one of the following reasons:
 
-This opens the edit site column page, and then in the address bar we should see the URL, something like this:
+- The documents haven't been indexed. You can force a re-index of the library by going to Document library settings > Advanced Settings.
 
-<https://tenantname.sharepoint.com/sites/SpinningWidget/_layouts/15/FldEdit.aspx?List=%7BC38C2F45-3BD6-4C3B-AA3B-EF5DF6B3D172%7D&Field=_Status> the field parameter contains the name of the field, prefixing that with “ows\_” will give us the name of the crawled property.
+- If the document library is in a modern site, make sure that the SharePoint admin is also a site collection admin.
 
-**<span class="underline">Note</span>**: If the crawled properties do not appear in the SharePoint Adminmanage search schema it could be:
+For more information about crawled and managed properties, see [Automatically created managed properties in SharePoint Server](https://docs.microsoft.com/sharepoint/technical-reference/automatically-created-managed-properties-in-sharepoint).
 
-  - The documents are not yet indexed, we can force a re-index of the library (document library settingsadvanced settings)
+### Mapping crawled properties to pre-defined managed properties
 
-  - If the site used is a modern site, make sure that SharePoint admin is also a site collection admin.
-
-For more information on crawled and managed properties, see <https://docs.microsoft.com/en-us/sharepoint/technical-reference/automatically-created-managed-properties-in-sharepoint>
-
-KQL cannot use crawled properties in search queries but need a managed property to do so. In a normal search scenario, we create a managed property and map it to the crawled property that we need. However, for auto-apply label the KQL can only deal we pre-defined managed property and not with custom managed properties. There is a set of predefined managed properties already created in the system for string RefinableString00 to RefinableString199 can be used. There are others for date, int, … see <https://docs.microsoft.com/en-us/sharepoint/manage-search-schema#default-unused-managed-properties>. These managed properties are normally used for defining search refiners.
+KQL can't use crawled properties in search queries. It has to use a managed property. In a normal search scenario, we create a managed property and map it to the crawled property that we need. However, for auto-applying retention labels, KQL can only use a pre-defined managed properties and not custom managed properties. There is a set of predefined managed properties already created in the system for string RefinableString00 to RefinableString199 can be used. There are others for date, int, … see <https://docs.microsoft.com/en-us/sharepoint/manage-search-schema#default-unused-managed-properties>. These managed properties are normally used for defining search refiners.
 
 For our KQL query to work and automatically apply the right retention label we will map the crawled properties ows\_\_status and ows\_Doc\_x0020\_Type to two refinable managed properties. On tenant used for this white paper RefinableString00 andRefinableString01 are not used:
 
