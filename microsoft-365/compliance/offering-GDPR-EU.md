@@ -15,8 +15,6 @@ hideEdit: true
 
 # Compliance offering: General Data Protection Regulation (GDPR)
 
-Read Safeguarding individual privacy rights with the Microsoft Cloud to learn about essential General Data Protection Regulation (GDPR) topics including how Microsoft 365 and the Microsoft Cloud help keep your organization compliant.
-
 ## Learn about GDPR compliance best practices
 
 Discover privacy program best practices and how Microsoft approaches regulations in Journey to GDPR Compliance. Learn how Microsoft 365 and Office 365 data loss prevention help you achieve compliance.
@@ -32,12 +30,6 @@ Discover privacy program best practices and how Microsoft approaches regulations
     - A convenient way to access information you may need to support GDPR when using Microsoft services.
 
 ## GDPR customer stories
-
-### Stade de France protects data with Microsoft 365
-
-See how Stade de France, the biggest stadium in France and the host of 2024 Olympics, uses Compliance Manager and Azure Information Protection to enhance their data protection controls.
-
-[Watch now](https://go.microsoft.com/fwlink/p/?linkid=2051153)
 
 ### Abrona prepares for GDPR with Microsoft 365
 
@@ -74,17 +66,15 @@ Use [Compliance manager](https://go.microsoft.com/fwlink/p/?linkid=2048390) to h
 
 ### Security and Compliance Center
 
-The Microsoft 365 [Security & compliance center](https://go.microsoft.com/fwlink/p/?linkid=2048716) lets you discover security and compliance controls.
+The Microsoft 365 [security & compliance centers](https://docs.microsoft.com/microsoft-365/security/office-365-security/microsoft-security-and-compliance) lets you discover security and compliance controls.
 
 ### Discover Compliance Solutions
 
 [Learn more](https://products.office.com/business/security-and-compliance/compliance-solutions) about integrated tools that use intelligence to reduce risk.
 
-### Data governance and the GDPR
-
-Explore the [interactive GDPR and Data Governance e-book](https://go.microsoft.com/fwlink/p/?linkid=2048728) to help you build an effective compliance program.
-
 ### Safeguard individual privacy
+
+Read Safeguarding individual privacy rights with the Microsoft Cloud to learn about essential General Data Protection Regulation (GDPR) topics including how Microsoft 365 and the Microsoft Cloud help keep your organization compliant.
 
 [Read the Microsoft 365 blog](https://go.microsoft.com/fwlink/p/?linkid=2048733).
 
