@@ -39,16 +39,6 @@
         ]
       }
     ],
-
-    "contributors_to_exclude": [
-
-      "rjagiewich",
-      "traya1",
-      "v-raaba",
-      "rmca14",
-      "claydetels19"
-    ],
-    ],
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
@@ -58,6 +48,13 @@
       "breadcrumb_path": "/microsoft-365/breadcrumb/toc.json",
       "extendBreadcrumb": true
     },
+    "contributors_to_exclude": [
+      "rjagiewich",
+      "traya1",
+      "v-raaba",
+      "rmca14",
+      "claydetels19"
+    ],
     "fileMetadata": {},
     "template": [],
     "dest": "microsoft-365-docs",
