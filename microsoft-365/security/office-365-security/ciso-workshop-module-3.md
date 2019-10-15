@@ -20,16 +20,25 @@ Because most modern attacks involve compromising user identities, learn how to b
 - Download PowerPoint summary: [Module 3: Identity and Access Management](https://docs.microsoft.com/microsoft-365/security/media/ciso-workshop-3-identity-protection.pptx)
 
 ## Part 1: Identity and Zero Trust History (9:33)
-CISO A
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE3Yyhs]
+
 ## Part 2: Zero Trust Definition and Models (15:37)
-CISO B
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE3YaUL]
+
 ## Part 3: Strategy and Priorities (9:54)
-CISO C
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE3YvHy]
+
 ## Part 4: Account Security: Measuring Cost of Attack Password-less Authentication (13:11)
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtGm5]
+
 ##  Part 5: Zero Trust User Access Reference Architecture (8:42)
-CISO D
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE3Yyhx]
+
 ##  Part 6: Build an Identity Perimeter (13:57)
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtGm5]
@@ -39,33 +48,5 @@ CISO D
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtYMf]
 
 ##  Part 8: Lowering Risk using business-to-business and business-to-customer (4:47)
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtYMi]
-
-
-------------SAVE---------------
-
-## Part 1: History and Trends of Identity Security (7:45)
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtQL7]
-
-## Part 2: Identity System Security (3:37)
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtYMf]
-
-## Part 3: Account Security: Measuring Cost of Attack Password-less Authentication (13:11)
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtGm5]
-
-## Part 4: Build an Identity Perimeter (13:57)
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtYMg]
-
-
-
-
-
-
-## Part 5: Lowering Risk using business-to-business and business-to-customer (4:47)
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtYMi]
