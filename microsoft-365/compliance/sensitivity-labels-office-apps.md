@@ -25,16 +25,15 @@ Read this article to find out:
 - How people in your organization can use sensitivity labels when they work with Office apps for Windows and Office apps for the web.
 - Where to go to get people in your organization started with sensitivity labels.
 
-## Requirements for sensitivity labels for Outlook on all platforms
-
-In your label configuration, if you turn on content marking, you must be using Exchange Online for that content marking to be inserted in transit.
-
 ## Subscription and licensing requirements for sensitivity labels
 
-- Users must have at least one of the following licenses assigned:
-  - [Microsoft 365 E3](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) or above
-  - [Office 365 E3](https://www.microsoft.com/microsoft-365/business/office-365-enterprise-e3-business-software) or above
-  - [Azure Information Protection Premium P1](https://azure.microsoft.com/pricing/details/information-protection/) or above
+Users must have at least one of the following licenses assigned:
+
+- [Microsoft 365 E3](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) or above
+
+- [Office 365 E3](https://www.microsoft.com/microsoft-365/business/office-365-enterprise-e3-business-software) or above
+
+- [Azure Information Protection Premium P1](https://azure.microsoft.com/pricing/details/information-protection/) or above
 
 Office 365 only supports sensitivity labels with a subscription and not with a non-subscription version such as Office 2016 or Office 2019. However, you can use the Azure Information Protection unified labeling client in the [versions of Office listed here](https://docs.microsoft.com/azure/information-protection/requirements#applications).
 
@@ -62,6 +61,8 @@ Office 365 only supports sensitivity labels with a subscription and not with a n
 
 > [!WARNING]
 > @REVIEWERS - Mike, I need you to vet this line same as above: Where support exists for a capability, the following table provides the minimum build number you need to use sensitivity labels for that type (hard to use 'version' here because of build #) of Outlook. TBD indicates that we don't yet have support for that capability for that *type*(?) of Outlook. For information about future releases, and upcoming features, see *** MIKE I need a link here. Also, Support AutoSave and co-authoring on labeled and protected documents is n/a for Outlook, so it's not in this table.
+
+In your label configuration, if you turn on content marking, you must be using Exchange Online for that content marking to be inserted in transit.
 
 |Capability                                                                                                        |Outlook on Windows Desktop |Outlook on Mac Desktop  |Outlook on iOS |Outlook on Android |Outlook on the web |
 |------------------------------------------------------------------------------------------------------------------|---------------------------|------------------------|---------------|-------------------|-------------------|
