@@ -50,6 +50,7 @@ The following sections cover known issues to be resolved in upcoming releases of
 - Secure Score results are not available for some Actions Items in certain Microsoft 365 and Office 365 subscriptions. The Secure Score result is 'Could not be detected' in these cases.
 - Sometimes Secure Score results are returned for corresponding policies and Action Items not completed.
 - For new tenants, Secure Score updates for all actions is automatically turned on. The global administrator can set the Secure Score continuous update switch to off, which turns off updates for all actions.
+- When new assessments are created, scores automatically include Microsoft-Managed control scores and Secure Score integration.
 
 ### Microsoft-managed Controls
 
