@@ -4,7 +4,6 @@ description: A prioritized action plan you can follow as you work to meet the re
 keywords: Microsoft 365, Microsoft 365 Education, Microsoft 365 documentation, ISO, ISO 27001
 author: BrendaCarter
 localization_priority: Priority
-
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.author: bcarter
@@ -22,8 +21,8 @@ ISO/IEC 27001 is the international standard for implementing an information secu
 
 This article includes a prioritized action plan you can follow as you work to meet the requirements of ISO/IEC 27001. This action plan was developed in partnership with Protiviti, a Microsoft partner specializing in regulatory compliance. Learn more about how to use this action plan at Microsoft Ignite by attending this session: [Chart your Microsoft 365 compliance path and information protection strategy](https://myignite.techcommunity.microsoft.com/sessions/65720?source=sessions), presented by Maithili Dandige (Microsoft) and Antonio Maio (Protiviti).
 
-
 ## Action plan outcomes
+
 These recommendations are provided across three phases in a logical order with the following outcomes: 
 
 |||
@@ -33,10 +32,8 @@ These recommendations are provided across three phases in a logical order with t
 |90 days|**Use Microsoft 365 security capabilities to control access to the environment, and protect organizational information and assets according to your defined standard operating procedures (SOPs).**<br>•	Protect administrator and end-user accounts by enabling identity and authentication solutions, such as multi-factor authentication and modern authentication.<br>•	Establish strong password policies to manage and protect user account credentials.<br>•	Configure and roll out message encryption capabilities to help end users comply with your organization’s SOPs when sending sensitive data via email.<br>•	Protect against malicious code and implement data breach prevention and response procedures.<br>•	Configure Data Loss Prevention (DLP) policies to identify, protect, and control access to sensitive data.<br>•	Ensure that sensitive data is stored and accessed according to corporate policies.<br>•	Prevent the most common attack vectors including phishing emails and Office documents containing malicious links and attachments.
 |Beyond 90 days|**Use Microsoft 365 advanced data governance tools and information protection to implement ongoing governance programs for personal data.**<br>•	Automatically identify personal information in documents and emails<br>•	Protect sensitive data stored and accessed on mobile devices across the organization, and ensure that compliant corporate devices are used to data.<br><br>**Monitor ongoing compliance across Microsoft 365 and other Cloud applications.**<br>•	To evaluate performance against standard operating procedures (SOPs), utilize Microsoft Compliance Manager to perform regular assessments of the organization’s information security policies and their implementation.<br>•	Review and monitor the information security management system on an on-going basis.<br>•	Control and perform regular reviews of all users and groups with high levels of permissions (i.e. privileged or administrative users).<br>•	Deploy and configure Microsoft 365 capabilities for protecting privileged identities and strictly controlling privileged access.<br>•	As part of your standard operating procedures (SOPs), search the Office 365 audit logs to review changes that have been made to the tenant’s configuration settings, elevation of end-user privileges and risky user activities.<br>•	Monitor your organization’s usage of cloud applications and implement advanced alerting policies.<br>•	Track risky activities, to identify potentially malicious administrators, to investigate data breaches, or to verify that compliance requirements are being met.
 
-
-
-
 ## 30 days — Powerful Quick Wins
+
 These tasks can be accomplished quickly and have low impact to users.
 
 |||
@@ -47,10 +44,8 @@ These tasks can be accomplished quickly and have low impact to users.
 |Ensure that records related to information security are protected from loss, deletion, modification, or unauthorized access by creating Audit and Accountability policies as part of your Standard Operating Procedures (SOPs).|•	Enable [Office 365 audit logging](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c) and [mailbox auditing](https://support.office.com/article/Enable-mailbox-auditing-in-Office-365-aaca8987-5b62-458b-9882-c28476a66918) (for all Exchange mailboxes) to monitor Office 365 for potentially malicious activity and to enable forensic analysis of data breaches.<br>•	On a regular cadence, search your Office 365 tenant’s audit logs to review changes that have been made to the tenant’s configuration settings.<br>•	Enable [Office 365 Alert Policies](https://support.office.com/article/alert-policies-in-the-office-365-security-compliance-center-8927b8b9-c5bc-45a8-a9f9-96c732e58264) in the Microsoft 365 security or compliance center for sensitive activities, such as when an elevation of privileges occurs on a user account.<br>•	For long-term storage of Office 365 audit log data, use the [Office 365 Management Activity API reference](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference) to integrate with a security information and event management (SIEM) tool.
 |Define administrative and security roles for the organization, along with appropriate policies related to segregation of duties.|•	Utilize the [Office 365 administrative roles](https://support.office.com/article/understanding-administrative-roles-52f29955-6a60-435f-aba9-eb69c898606a) to enable separation of administration duties. Note: many administrator roles in Office 365 have a corresponding role in Exchange Online, SharePoint Online, and Skype for Business Online.<br>•	Segment permissions to ensure that a single administrator does not have greater access than necessary.|
 
+## 90 days — Enhanced Protections
 
-
-
-## 90 days — Enhanced Protections 
 These tasks take a bit more time to plan and implement but greatly increase your security posture. 
 
 |||
@@ -59,8 +54,8 @@ These tasks take a bit more time to plan and implement but greatly increase your
 |Use Microsoft 365 security capabilities to control access to the environment, and protect organizational information and assets according to your defined standard operating procedures (SOPs).|•	Protect administrator and end-user accounts by implementing [identity and device access policies](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-policies-configurations), including enabling multi-factor authentication (MFA) for all user accounts and modern authentication for all apps.<br>•	Establish [strong password policies](https://www.microsoft.com/research/publication/password-guidance/) to manage and protect user account credentials.<br>•	Set up [Office 365 Message Encryption (OME)](https://support.office.com/article/office-365-message-encryption-f87cb016-7876-4317-ae3c-9169b311ff8a) to help end users comply with your organization’s SOPs when sending sensitive data via email.<br>•	Deploy [Windows Defender Advanced Threat Protection (ATP)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) to all desktops for protection against malicious code, as well as data breach prevention and response.<br>•	Configure, test, and deploy [Office 365 Data Loss Prevention (DLP) policies](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention) to identify, monitor and [automatically protect](https://docs.microsoft.com/office365/enterprise/apply-protection-to-personal-data-in-office-365) over 80 common sensitive data types within documents and emails, including financial, medical, and personally identifiable information.<br>•	Automatically inform email senders that they may be about to violate one of your policies — even before they send an offending message by configuring [Policy Tips](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/policy-tips). Policy Tips can be configured to present a brief note in Outlook, Outlook on the web, and OWA for devices, that provides information about possible policy violations during message creation.<br>•	Implement [Office 365 Advanced Threat Protection (ATP)](https://support.office.com/article/office-365-advanced-threat-protection-e100fe7c-f2a1-4b7d-9e08-622330b83653) to help prevent the most common attack vectors including phishing emails and Office documents containing malicious links and attachments.|
 
 
-
 ## Beyond 90 Days — Ongoing Security, Data Governance, and Reporting
+
 Secure personal data at rest and in transit, detect and respond to data breaches, and facilitate regular testing of security measures. These are important security measures that build on previous work.  
 
 
@@ -70,16 +65,7 @@ Secure personal data at rest and in transit, detect and respond to data breaches
 |Use Microsoft 365 advanced data governance tools and information protection to implement ongoing governance programs for personal data.|•	Use [Office 365 Advanced Data Governance](https://docs.microsoft.com/office365/enterprise/apply-labels-to-personal-data-in-office-365) to identify personal information in documents and emails by automatically applying Office 365 Labels.<br>•	Use [Microsoft Intune](https://docs.microsoft.com/intune/) to protect sensitive data stored and accessed on mobile devices across the organization, and ensure that compliant corporate devices are used to data.|
 |Monitor ongoing compliance across Microsoft 365 and other Cloud applications.|•	To evaluate performance against standard operating procedures (SOPs), utilize [Microsoft Compliance Manager](https://support.office.com/article/use-compliance-manager-to-help-meet-data-protection-and-regulatory-requirements-when-using-microsoft-cloud-services-429e686f-d8a6-455e-a2b6-3791d763f000) on an ongoing basis to perform regular ISO 27001:2013 assessments of the organization’s information security policies and their implementation.<br>•	Review and monitor the information security management system on an on-going basis.<br>•	Use [Azure AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure) to control and perform regular reviews of all users and groups with high levels of permissions (i.e. privileged or administrative users).<br>•	Deploy and configure [Privileged Access Management in Office 365](https://docs.microsoft.com/office365/enterprise/privileged-access-management-in-office-365) to provide granular access control over privileged admin tasks in Office 365.  Once enabled, users need to request just-in-time access to complete elevated and privileged tasks through an approval workflow that is highly scoped and time-bound.<br>•	As part of your standard operating procedures (SOPs), search the Office 365 audit logs to review changes that have been made to the tenant’s configuration settings, elevation of end-user privileges and risky user activities.<br>•	Audit [non-owner mailbox access](https://docs.microsoft.com/Exchange/policy-and-compliance/non-owner-mailbox-access-reports) to identify potential leaks of information and to proactively review non-owner access on all Exchange Online mailboxes.<br>•	Use [Office 365 Alert Policies, data loss prevention reports and  Microsoft Cloud App Security](https://docs.microsoft.com/office365/enterprise/monitor-for-leaks-of-personal-data) to monitor your organization’s usage of cloud applications and implement advanced alerting policies based on heuristics and user activity.<br>•	Use [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) to automatically track risky activities, to identify potentially malicious administrators, to investigate data breaches, or to verify that compliance requirements are being met.|
 
-
-
-
-
-
-
 ## Learn more
 
-Microsoft Trust Center: [ISO/IEC 27001:2013 Information Security Management Standards](https://www.microsoft.com/TrustCenter/Compliance/ISO-IEC-27001)
-
-[Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
-
-
+- Microsoft Trust Center: [ISO/IEC 27001:2013 Information Security Management Standards](offering-iso-27001.md)
+- [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
