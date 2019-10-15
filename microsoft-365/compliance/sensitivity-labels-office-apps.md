@@ -46,7 +46,7 @@ Office 365 only supports sensitivity labels with a subscription and not with a n
 |------------------------------------------------------------------------------------------------------------------|----------------|------------|-------|-------------|-------------------|
 |[Manually apply, change, or remove label](https://support.office.com/article/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| 1910+          | 16.21.0+   | 2.21+ | 16.0.11231+ | Evergreen (date?) |
 |[Apply a default label](sensitivity-labels.md#what-label-policies-can-do)                                         | 1910+          | 16.21.0+   | 2.21+ | 16.0.11231+ | Evergreen (date?) |
-|[Require a justification for changing a label](sensitivity-labels.md#what-label-policies-can-do)                  | 1910+          | 16.21.0+   | 2.21+ | 16.0.11231+ | Evergreen (date?) |
+|[Require a justification to change a label](sensitivity-labels.md#what-label-policies-can-do)                  | 1910+          | 16.21.0+   | 2.21+ | 16.0.11231+ | Evergreen (date?) |
 |[Provide help link to a custom help page](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+          | 16.21.0+   | 2.21+ | 16.0.11231+ | Evergreen (date?) |
 |[Mark the content](sensitivity-labels.md#what-label-policies-can-do)                                              | 1910+          | 16.21.0+   | 2.21+ | 16.0.11231+ | Evergreen (date?) |
 |[Assign permissions now](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21.0+   | 2.21+ | 16.0.11231+ | Evergreen (date?) |
@@ -68,7 +68,7 @@ In your label configuration, if you turn on content marking, you must be using E
 |------------------------------------------------------------------------------------------------------------------|---------------------------|------------------------|---------------|-------------------|-------------------|
 |[Manually apply, change, or remove label](https://support.office.com/article/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| 1910+                     | 16.21.0+               | TBD           | TBD               | Evergreen (date?) |
 |[Apply a default label](sensitivity-labels.md#what-label-policies-can-do)                                         | 1910+                     | 16.21.0+               | TBD           | TBD               | Evergreen (date?) |
-|[Require a justification for changing a label](sensitivity-labels.md#what-label-policies-can-do)                  | 1910+                     | 16.21.0+               | TBD           | TBD               | Evergreen (date?) |
+|[Require a justification to change a label](sensitivity-labels.md#what-label-policies-can-do)                  | 1910+                     | 16.21.0+               | TBD           | TBD               | Evergreen (date?) |
 |[Provide help link to a custom help page](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+                     | 16.21.0+               | TBD           | TBD               | Evergreen (date?) |
 |[Mark the content](sensitivity-labels.md#what-label-policies-can-do)                                              | 1910+                     | 16.21.0+               | TBD           | TBD               | Evergreen (date?) |
 |[Assign permissions now](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+                     | 16.21.0+               | TBD           | TBD               | Evergreen (date?) |
@@ -87,7 +87,7 @@ In your label configuration, if you turn on content marking, you must be using E
 > The AIP client is an add-in for Office that provides *** for applying sensitivity labels. lets you do stuff with sensitivity labels in Office. It was released 3 years ago and it only works in the Windows platform of Office. (carol bailey). MIP sensitivity label platform came out about a year ago.
 we want folks to use the S&CC. we don't yet have parity with the AIP client. for Office 365, you can use Azure Portalv1, Azure Portalv2, and S&CC. Azure Portalv2 and S&CC provide access to additional platforms like iOS and Android. (customers need to migrate from v1 to v2 to get the support for that or go straight to S&CC.) Now office on windows has some of this capability built-in. like the built-in sensitivity button. for folks that don't have the EMS SKU this is great. or it's good for folks that don't want to deploy add-ins on top of office. it's faster, etc. we don't expect a ton of aip customers to swap over because of the parity gap. Folks should use the S&CC. in the future, we will have parity, Carol has a table identifying which client to use when. get the link from her. there are two aip clients (aipv1 and unified aip client or aipv2).
 
-If you have the Azure Information Protection add-in installed on your computer, and you want to use sensitivity labels with Office, you'll need to override the Azure Information Protection add-in. To do this, you can either temporarily or permanently uninstall or disable the add-in.
+If you have the Azure Information Protection add-in installed, and you want to use sensitivity labels with Office, you need to override the add-in. To do this, you can either temporarily or permanently uninstall or disable the add-in.
 
 1. Do either of the following:
 
