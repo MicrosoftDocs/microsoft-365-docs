@@ -97,6 +97,8 @@ If you have the Azure Information Protection add-in installed, and you want to u
 
 2. Restart all Office applications.
 
+For more information about client support for sensitivity labels, see 
+
 ## Protection templates and sensitivity labels
 
 Administrator-defined [protection templates](https://docs.microsoft.com/azure/information-protection/configure-policy-templates) are hidden from the Office user experience when sensitivity labels are enabled because they are redundant with sensitivity labels that have encryption enabled.
