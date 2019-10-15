@@ -18,11 +18,11 @@ ms.collection:
 description: "Document for EOP Standalone admins to help prevent spam false negatives"
 ---
 
-## Customize the Office 365 anti-spam filter with these settings
+# Customize the Office 365 anti-spam filter with these settings
 
 An Admin can use several Office 365 spam filter settings to help prevent email spam from being sent to a user inbox. The Office 365 spam filter will become better able to block email spam and prevent false negative messages if you use the options listed here. In this context, a false negative refers to email spam or junk messages that are getting sent to a user inbox.
   
-### Block IP addresses with a connection filter
+## Block IP addresses with a connection filter
 
 Customize your Office 365 spam filter by adding the sender IP address to the connection filter IP block list:
   
@@ -32,13 +32,13 @@ Customize your Office 365 spam filter by adding the sender IP address to the con
     
 3. Add the IP address to the IP Block list by following the steps in "Use the EAC to edit the default connection filter policy" in [Configure the Connection Filter Policy](https://technet.microsoft.com/en-us/library/jj200718%28v=exchg.150%29.aspx).
     
-### Block bulk mail with mail flow rules (transport rules) or the spam filter
+## Block bulk mail with mail flow rules (transport rules) or the spam filter
 
 Is the spam primarily bulk mail, for example, newsletters or promotions? You can customize the spam filter in Office 365 if you [Use mail flow rules to configure bulk email filtering](use-transport-rules-to-configure-bulk-email-filtering.md) or turn on the **Bulk mail** setting in your spam filter's [Advanced spam filtering options](advanced-spam-filtering-asf-options.md). In the Exchange admin center, get started by clicking **Protection** \> **Content filter** and then double click the filter policy you want to adjust. Click **Spam and bulk mail actions** to adjust the settings, as shown here. 
   
 ![Setting the bulk mail filter in Exchange Online](../media/a45095c2-269d-45b8-a76c-999b5e78da68.png)
   
-### Block email spam using spam filter block lists
+## Block email spam using spam filter block lists
 
 [Configure your spam filter policies](https://technet.microsoft.com/en-us/library/jj200684%28v=exchg.150%29.aspx) to add the sender address to the sender block list or domain to the domain block list in the spam filter. Emails from a sender or domain on a spam filter block list will marked as spam. 
   
