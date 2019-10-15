@@ -39,7 +39,7 @@ As a result of this rigorous TruSight evaluation, financial services customers n
 
 ## Audits, reports, and certificates
 
-To purchase the *Comprehensive Assessment of Microsoft Cloud* report, contact [info@trusightsolutions.com](info@trusightsolutions.com). TruSight will update its assessment annually of our cloud services to ensure alignment with the latest regulatory requirements and advancements in Microsoft technology.
+To purchase the *Comprehensive Assessment of Microsoft Cloud* report, contact info@trusightsolutions.com. TruSight will update its assessment annually of our cloud services to ensure alignment with the latest regulatory requirements and advancements in Microsoft technology.
 
 ## How to implement
 

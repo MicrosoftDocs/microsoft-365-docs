@@ -57,7 +57,7 @@ Customers deploying data to Azure Government are responsible for their own secur
 
 - [Azure Cloud Services and US Export Controls](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=c24c11f2-2cd4-444a-9160-19762855ad3a&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
 - [Microsoft and FedRAMP](offering-fedramp.md)
-- [Microsoft and DoD](offering-dod-disa-l2-l3-l5.md)
+- [Microsoft and DoD](offering-dod-disa-l2-l4-l5.md)
 - [Microsoft Government Cloud](https://www.microsoft.com/enterprise/government)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
