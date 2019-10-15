@@ -24,7 +24,7 @@ You can use the updated [Compliance Manager](https://servicetrust.microsoft.com/
 
 - **Role-based access to Compliance Manager:** The default **Guess access** role has been removed. In order for a user to access Compliance Manager, the global admin must [assign each user a permission](compliance-manager-overview.md#permissions).
 
-- **Integration with Microsoft Secure Score:** Compliance Manager supports integration with [Microsoft Secure Score](../security/mtp/microsoft-secure-score.md) by mapping customer-managed Actions to more than 50 Secure Score actions. When you complete a mapped action in Secure Score, the corresponding Compliance Manager Action automatically updates.
+- **Integration with Microsoft Secure Score:** Compliance Manager supports integration with [Microsoft Secure Score](../security/mtp/microsoft-secure-score.md) by mapping customer-managed and Microsoft-managed Actions to more than 50 Secure Score actions. When you complete a mapped action in Secure Score, the corresponding Compliance Manager Action automatically updates.
 
 - **Import custom Assessments:** In addition to built-in Assessments, Compliance Manager now supports importing custom Templates. You can create custom Assessments for any product or service and any standard or regulation.
 
@@ -49,6 +49,7 @@ The following sections cover known issues to be resolved in upcoming releases of
 
 - Secure Score results are not available for some Actions Items in certain Microsoft 365 and Office 365 subscriptions. The Secure Score result is 'Could not be detected' in these cases.
 - Sometimes Secure Score results are returned for corresponding policies and Action Items not completed.
+- For new tenants, Secure Score updates for all actions is automatically turned on. The global administrator can set the Secure Score continuous update switch to off, which turns off updates for all actions.
 
 ### Microsoft-managed Controls
 
