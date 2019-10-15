@@ -61,3 +61,7 @@ To purchase the *Comprehensive Assessment of Microsoft Cloud* report, contact [i
 - [Microsoft business cloud services and financial services](https://aka.ms/FinServ-Compliance)
 - [Shared responsibilities for cloud computing](https://aka.ms/sharedresponsibility)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+
+## Download the offering backgrounder
+
+Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/D/A/D/dad1cf29-5529-4797-9eda-96e5e472e619/TruSight-Compliance.pdf).
