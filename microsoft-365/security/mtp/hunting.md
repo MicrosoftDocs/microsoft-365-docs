@@ -2,7 +2,7 @@
 title: Hunt for malware and other threats in Microsoft 365
 description: Describes how you can look for compromised accounts, file less malware, suspicious emails, and more.
 keywords: security, malware, Microsoft 365, M365, security center, hunt, hunting, Microsoft Defender ATP, Office 365 ATP, Azure ATP
-ms.prod: w10
+ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.author: ellevin
@@ -18,7 +18,7 @@ search.appverid: met150
 
 Hunting provides security teams a view into possible threats in your organization across email and data, devices, and identities. Within Microsoft Defender ATP, Office 365 ATP, and Azure ATP portals you can look for compromised accounts, file less malware, suspicious emails, and more.
 
-![Hunting page](../media/security-docs/hunt.png)
+![Hunting page](../images/hunt.png)
 
 Learn more:
 

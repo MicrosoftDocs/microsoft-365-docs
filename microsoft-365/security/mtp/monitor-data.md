@@ -2,7 +2,7 @@
 title: Data monitoring and reporting in Microsoft 365 security center
 description: Describes how you can track user activity that could lead to unauthorized data disclosure.
 keywords: security, malware, Microsoft 365, M365, security center, monitor, report, data
-ms.prod: w10
+ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.author: ellevin
@@ -25,4 +25,4 @@ You can see:
 * How many DLP policies overrides or false positives are reported
 * How many DLP policy matches happened in 3rd party cloud services via Microsoft Cloud App Security
 
-![Data category of reports page](../media/security-docs/data.png)
+![Data category of reports page](../images/data.png)

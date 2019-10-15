@@ -2,7 +2,7 @@
 title: Identity monitoring and reporting in Microsoft 365 security center
 description: Describes how you can monitor the identities in your organization and keep track of suspicious or risky behaviors.
 keywords: security, malware, Microsoft 365, M365, security center, monitor, report, identity
-ms.prod: w10
+ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.author: ellevin
@@ -22,7 +22,7 @@ You can monitor the identities in your organization and keep track of suspicious
 * How many users are reported at risk by conditional access policies
 * The number of global admins in your org
 
-![Identities category of reports page](../media/security-docs/identities.png)
+![Identities category of reports page](../images/identities.png)
 
 For users with specific detections, you can explore the specific alert and investigate in Microsoft Defender Security Center. Detections include anomalies such as users who sign in from unfamiliar locations.
 
