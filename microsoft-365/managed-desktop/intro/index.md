@@ -11,18 +11,18 @@ ms.localizationpriority: normal
 
 <!--from Overview-->
 
-Microsoft Managed Desktop is a service you can subscribe to that provides monitored IT services for all or some devices in your enterprise or small-business environment. It brings together [Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview) (including Windows 10 Enterprise and Office 365 ProPlus), cloud-based device management by Microsoft, and security monitoring, enabling you to free up your IT teams to focus on core business needs. Your end users will enjoy the latest versions of Windows 10 and Office 365 ProPlus apps (and more besides)--and you'll never have to worry about keeping any of this software up to date because that happens automatically. And even better: registered devices are monitored 24x7 for technical and security issues, so if anything goes wrong, help will be on the way. 
+Microsoft Managed Desktop is a subscription service that provides monitored IT services for all or some devices in your enterprise or small-business environment. It brings together [Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview) (including Windows 10 Enterprise and Office 365 Enterprise), cloud-based device management by Microsoft, and security monitoring, enabling you to free up your IT teams to focus on core business needs. Your end users will enjoy the latest versions of Windows 10 and Office 365 ProPlus apps (and more besides), using devices and software that are curated for best performance and reliability--and you'll never have to worry about keeping any of this software up to date because that happens automatically. And even better: registered devices are monitored 24x7 for technical and security issues, so if something goes wrong, help will be on the way. 
 
 ## Microsoft 365 Enterprise
 To use Microsoft Managed Desktop, you'll have to obtain a Microsoft 365 Enterprise [E3 or E5 license](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans?rtc=1).
 
-Microsoft 365 Enterprise includes Windows 10 Enterprise, Office 365 ProPlus, and Enterprise Mobility + Security.
+Microsoft 365 Enterprise includes Windows 10 Enterprise, Office 365 Enterprise (including Office 365 ProPlus), and Enterprise Mobility + Security.
 
 ### Windows 10 Enterprise
 Addresses the needs of both large and midsize organizations, providing users with the most productive and secure version of Windows and IT professionals with comprehensive deployment, device, and app management. Learn more at [Windows 10](https://docs.microsoft.com/windows/windows-10/).
 
 ### Office 365 ProPlus
-[Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/about-office-365-proplus-in-the-enterprise) is a version of Office that's available as part of Microsoft 365 Enterprise. It includes the applications that you're familiar with, including Access, Excel, OneNote, Outlook, PowerPoint, Publisher, Skype for Business, and Word. You can use these applications to connect with Office 365 services such as SharePoint Online, Exchange Online, and Skype for Business Online.
+[Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/about-office-365-proplus-in-the-enterprise) is a version of Office that's available as part of Microsoft 365 Enterprise. It includes the applications that you're familiar with, including Access, Excel, OneNote, Outlook, PowerPoint, Publisher, Skype for Business, and Word, as well as OneDrive. You can use these applications to connect with Office 365 services such as SharePoint Online, Exchange Online, and Skype for Business Online. All of these apps are kept continuously up to date for you.
 
 ### Enterprise Mobility + Security
 [Enterprise Mobility + Security](https://docs.microsoft.com/enterprise-mobility-security/#pivot=products&panel=products-all) is a collection of inter-related products and features designed to manage devices and users, control access, protect information, and detect, analyze, and protect against threats. It includes these products:
@@ -42,18 +42,20 @@ Microsoft Managed Desktop takes on the burden of managing registered devices and
 
 - **Hardware:** Instead of your IT department having to research and test devices (and their drivers), specific devices are carefully tested by Microsoft Managed Desktop, resulting in a curated [list of devices](../service-description/device-list.md) that meet enterprise-level performance requirements and are guaranteed to work with the service. You can either obtain devices yourself (or work with a partner) or reuse devices you already have, provided they are on the approved list. Registering devices is easy and straightforward, and before they're deployed, you can also [customize](../working-with-managed-desktop/config-setting-overview.md) certain aspects of the device experience for your end users.
 - **Updates:** Microsoft Managed Desktop sets up and manages all aspects of [deployment groups](../service-description/updates.md) for Windows 10 quality and feature updates, drivers, firmware, anti-virus definitions, and Office ProPlus updates. This includes extensive testing and verification of all updates, assuring that registered devices are always up to date and minimizing disruptions, freeing your IT department from that ongoing task.
-- **Apps:** As part of Microsoft 365 Enterprise, Microsoft provides (and manages) several key Microsoft apps for you. But you probably also have a number of other apps that you need for your business. Instead of your IT department having to test, package, and deploy those apps, when you subscribe to Microsoft Managed Desktop, we can handle all of those operations for you. Learn more at [Apps in Microsoft Managed Desktop](../get-ready/apps.md).
+- **Apps:** As part of Microsoft 365 Enterprise, Microsoft provides (and manages) several key Microsoft apps for you. But you probably also have other apps that you need for your business. Instead of your IT department having to test, package, and deploy those apps Microsoft helps you deploy them and can assist with [Desktop App Assure](https://docs.microsoft.com/fasttrack/win-10-desktop-app-assure) if needed. Learn more at [Apps in Microsoft Managed Desktop](../get-ready/apps.md).
 
 
 ## Device monitoring
 
-{NEED MORE--we actually don't have any truly friendly summary of what exactly MMD monitors, just the very dry and hard-to-parse tables in [Microsoft Managed Desktop operations and monitoring](../service-description/operations-and-monitoring.md)}
+We help maintain the security of your devices with a dedicated security operations center that monitors your devices and uses data from the unique threats that Microsoft analyzes each month. These security features are built in instead of added on later.
+
+We also monitor device health and provide you with insights about device performance. Learn more at [Microsoft Managed Desktop operations and monitoring](../service-description/operations-and-monitoring.md)
 
 
 ## Need more details?
-For more about the value proposition of Microsoft Managed desktop, including customer stories, see [Microsoft Managed Desktop](https://aka.ms/mmd). You can find the latest news at the Microsoft Managed Desktop [blog](https://techcommunity.microsoft.com/t5/Microsoft-Managed-Desktop/bg-p/MicrosoftManagedDesktop).
+For more about the value of Microsoft Managed desktop, including customer stories, see [Microsoft Managed Desktop](https://aka.ms/mmd). You can find the latest news at the Microsoft Managed Desktop [blog](https://techcommunity.microsoft.com/t5/Microsoft-Managed-Desktop/bg-p/MicrosoftManagedDesktop).
 
-If Microsoft Managed Desktop seems right for your organization, you can delve into additional documentation that explains more about the service, how to prepare your organization to enroll, how to get started with the service, and ongoing operations thereafter, including how you and your end users can easily get help if needed.
+If Microsoft Managed Desktop seems right for your organization, you can delve into additional documentation that explains more about the service, how to prepare your organization to enroll, how to get started with the service, and ongoing operations thereafter, including how you and your end users can easily get help if needed. If you're already ready to come on board, start with contacting your [local account team](https://pages.email.office.com/contactmmd/).
 
 **More overview and background**
 Primarily for technical and business decision makers, these topics detail the division of roles and responsibilities between your organization and Microsoft, more about the technologies used in Microsoft Managed Desktop, and how the service fits into a broader strategy as part of the ITIL framework.
@@ -64,7 +66,7 @@ Primarily for technical and business decision makers, these topics detail the di
 - [Microsoft Managed Desktop service description](https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/)
 
 **Get ready for enrollment**
-These topics describe the steps you'll need to take in your organization to prepare for enrollment, including checking that your environment meets key prerequisites, configuring networks, setting up certificates, and preparing your apps for inclusion in the service.
+These topics describe the steps you'll need to take in your organization to prepare for enrollment, including checking that your environment meets key prerequisites, configuring networks, setting up certificates, and preparing your apps.
 
 - [Prerequisites for Microsoft Managed Desktop](../get-ready/prerequisites.md)
 - [Network configuration for Microsoft Managed Desktop](../get-ready/network.md)
