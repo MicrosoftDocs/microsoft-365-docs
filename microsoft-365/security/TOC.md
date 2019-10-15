@@ -1,14 +1,31 @@
 # [Microsoft 365 security](index.yml)
 
+## Get started
+### [Microsoft 365 Security for BDMs](Microsoft-365-security-for-bdm.md)
+### [Secure Score](./mtp/microsoft-secure-score.md)
+### [Chief Information Security Officer (CISO) workshop training](./office-365-security/ciso-workshop.md)
+#### [Module 1 - Microsoft cybersecurity briefing](./office-365-security/ciso-workshop-module-1.md)
+#### [Module 2 - Security management](./office-365-security/ciso-workshop-module-2.md)
+#### [Module 3 - Identity and access management](./office-365-security/ciso-workshop-module-3.md)
+#### [Module 4a - Threat protection strategy, Part I](./office-365-security/ciso-workshop-module-4a.md)
+#### [Module 4b - Threat protection strategy, Part II](./office-365-security/ciso-workshop-module-4b.md)
+#### [Module 5 - Information protection](./office-365-security/ciso-workshop-module-5.md)
+
+
+## [Identity and device access configurations](../enterprise/microsoft-365-policies-configurations.md)
+### [Prerequisite work](../enterprise/identity-access-prerequisites.md)
+### [Common identity and device access policies](../enterprise/identity-access-policies.md)
+### [Recommended Exchange Online access policies](../enterprise/secure-email-recommended-policies.md)
+### [Recommended SharePoint Online access policies](../enterprise/sharepoint-file-access-policies.md)
+
+
 ## Microsoft Threat Protection
 ### [Overview]()
 #### [What is Microsoft Threat Protection?](mtp/microsoft-threat-protection.md)
 #### [Microsoft 365 security center](mtp/overview-security-center.md)
 
-
 ### [Hunting in Microsoft 365](./mtp/hunting.md)
 
-### [Secure Score](./mtp/microsoft-secure-score.md)
 
 ### [Reports]()
 #### [Monitor and view reports](./mtp/monitoring-and-reporting.md)
@@ -20,12 +37,6 @@
 ### [Manage tickets through ServiceNow](./mtp/tickets.md)
 
 
-## [Identity and device access configurations](../enterprise/microsoft-365-policies-configurations.md)
-### [Prerequisite work](../enterprise/identity-access-prerequisites.md)
-### [Common identity and device access policies](../enterprise/identity-access-policies.md)
-### [Recommended Exchange Online access policies](../enterprise/secure-email-recommended-policies.md)
-### [Recommended SharePoint Online access policies](../enterprise/sharepoint-file-access-policies.md)
-
 ## [Office 365 Security]()
 ### [Get started]()
 #### [Office 365 security roadmap](./office-365-security/security-roadmap.md)
@@ -34,13 +45,8 @@
 #### [Permissions in the Security & Compliance Center](./office-365-security/permissions-in-the-security-and-compliance-center.md)
 #### [Give users access to the Security center](./office-365-security/grant-access-to-the-security-and-compliance-center.md)
 
-#### [Chief Information Security Officer (CISO) workshop training](./office-365-security/ciso-workshop.md)
-##### [Module 1 - Microsoft cybersecurity briefing](./office-365-security/ciso-workshop-module-1.md)
-##### [Module 2 - Security management](./office-365-security/ciso-workshop-module-2.md)
-##### [Module 3 - Identity and access management](./office-365-security/ciso-workshop-module-3.md)
-##### [Module 4a - Threat protection strategy, Part I](./office-365-security/ciso-workshop-module-4a.md)
-##### [Module 4b - Threat protection strategy, Part II](./office-365-security/ciso-workshop-module-4b.md)
-##### [Module 5 - Information protection](./office-365-security/ciso-workshop-module-5.md)
+
+
 
 
 ### [Protect against threats](./office-365-security/protect-against-threats.md)
