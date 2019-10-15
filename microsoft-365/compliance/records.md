@@ -18,7 +18,7 @@ description: ""
 
 # Overview of records
 
-<Roberto, please review the overview and revise as necessary>
+<Roberto, please review the overview and revise as necessary - TBD>
 
 At a high level, records management means that:
   
