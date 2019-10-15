@@ -99,6 +99,9 @@ Select **Tenant Management** to open the management interface, and use the follo
 
 Dimensions are sets of metadata that provide information about a Template, an Assessment, or an Action Item. Dimensions use the concept of Keys and Values, where the Dimension Key represents a property, and Dimension Value represents valid values for the property. For example, in Compliance Manager there are three types of Actions. They are defined by a Dimension Key of **Action Type** and Dimension Values of **Documentation**, **Operational**, and **Technical**. You can edit or delete existing Dimensions.
 
+> [!IMPORTANT]
+> You can add new dimensions, and they can be assigned to Templates that you have already imported. You can also add new dimensions to any new Templates you create.
+
 ### Owners
 
 Owners are used to identify the responsible party for each control. All built-in controls are owned by Microsoft, by customers, or by both. You can create custom values for Owners that can be used to specify more granular responsibilities within your organization. For example, you could create Owners that represent specific groups, teams, or business units within your organization.
