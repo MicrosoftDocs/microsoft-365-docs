@@ -32,9 +32,9 @@ Compliance Score uses a role-based access control (RBAC) permission model. Only 
 **Where to set permissions**
 
 User permissions can be set in the Microsoft 365 compliance center, in Compliance Manager, or—for read-only access—in Azure Active Directory (Azure AD).
-- If you set user permissions in the Microsoft 365 compliance center, those settings will automatically apply in Compliance Score and Compliance Manager.
-- If you set user permissions only in Compliance Manager, those permissions will also carry over to all actions in the Microsoft 365 compliance center, including Compliance Score.
-- Setting the Global Reader role in Azure AD applies to users of the Microsoft 365 compliance center, Compliance Score, and Compliance Manager
+- **If you set user permissions in the Microsoft 365 compliance center** - those settings will automatically apply in Compliance Score and Compliance Manager.
+- **If you set user permissions only in Compliance Manager** - those permissions will also carry over to all actions in the Microsoft 365 compliance center, including Compliance Score.
+- **If you assign Global Reader role in Azure AD** - this will apply to users of the Microsoft 365 compliance center, Compliance Score, and Compliance Manager
 
 The table below shows how user roles in the Microsoft 365 compliance center map to user roles in Compliance Manager.
 
@@ -51,9 +51,12 @@ The table below shows how user roles in the Microsoft 365 compliance center map 
 
 #### Set permissions in the Microsoft 365 compliance center
 
-You can view available roles and set permissions by selecting **Permissions** from the left navigation menu in the Microsoft 365 compliance center.
+To set permissions from the Microsoft 365 compliance center, follow these steps:
 
-For detailed instructions, read [roles and permissions in the Microsoft 365 compliance center]((../security/office-365-security/microsoft-security-and-compliance.md#required-licenses-and-permissions)).
+1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and sign in with your global administrator account.
+2. Select **Permissions** from the left navigation pane. From here, you can view roles and assign permissions.
+
+For details, read [roles and permissions in the Microsoft 365 compliance center](../security/office-365-security/microsoft-security-and-compliance.md#required-licenses-and-permissions).
 
 #### Set permissions in Compliance Manager
 
