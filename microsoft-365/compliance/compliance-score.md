@@ -46,10 +46,13 @@ Compliance Score gives you an out-of-the-box score based on the Microsoft 365 Da
 
 Compliance Score also synchronizes automatically with your [Microsoft Secure Score](../security/mtp/microsoft-secure-score.md), providing you with a more meaningful score and centralized management of activities that affect both sets of scores.
 
+> [!NOTE]
+> Compliance Score and Secure Score do not cover everything in Office 365 or Microsoft Intune. The data they provide is to increase understanding of your compliance posture to help you make informed risk-based decisions.
+
 Visit other topics for details about [how your compliance score is calculated](compliance-score-methodology.md) and how to improve your score through the [Compliance Score workflow](working-with-compliance-score.md).
 
 > [!IMPORTANT]
-> Compliance Score does not express an absolute measure of organizational compliance with any particular standard or regulation. It expresses the extent to which you have adopted controls which can reduce the risks to personal data and individual privacy. Compliance Score should not be interpreted as a guarantee in any way.
+> Compliance Score does not express an absolute measure of organizational compliance with any particular standard or regulation. It expresses the extent to which you have adopted controls which can reduce the risks to personal data and individual privacy. Compliance Score should not be interpreted as a guarantee in any way.Compliance Score does not cover everything in Office 365 or Microsoft Intune.
 
 ## Key components: controls, assessments, templates, & groups
 
@@ -87,9 +90,9 @@ Assessments include several components:
 - **Assessment score**: the percentage of the total possible score for customer-managed controls in the assessment; this helps you track the implementation of actions assigned to each control
 
 > [!NOTE]
-> Compliance Score displays your assessments and how they factor into your overall compliance score. However, during public preview you will be directed to Compliance Manager to manage your assessments. Therefore, some instructions in this documentation link to Compliance Manager documentation. 
+> Compliance Score displays your assessments and how they factor into your overall compliance score. However, during public preview you will be directed to Compliance Manager to manage your assessments.
 
-[View detailed instructions for working with assessments](working-with-compliance-manager.md#assessments)
+View detailed instructions for [working with assessments in Compliance Manager](working-with-compliance-manager.md#assessments).
 
 ### Templates
 
@@ -111,15 +114,15 @@ The pre-configured templates for Compliance Score are:
 - [California Consumer Privacy Act (CCPA)](https://oag.ca.gov/privacy/ccpa)
 
 > [!NOTE]
-> During public preview, creating and customizing templates occurs within the Compliance Manager tool. Therefore, instructions for working with templates will point to the documentation for Compliance Manager.
+> During public preview, creating and customizing templates occurs within the Compliance Manager tool.
 
-[View detailed instructions for creating and customizing templates](working-with-compliance-manager.md#templates)
+View detailed instructions for [creating and customizing templates in Compliance Manager](working-with-compliance-manager.md#templates).
 
 ### Groups
 
 Groups allow you to organize assessments in a way that is logical to you. For example, you can group assessments by year, compliance standard, service, teams within your organization, or some other way. When two different assessments in the same group share customer-managed controls, the completion of implementation details, testing, and status for the control automatically synchronize to the same control in any other assessment in the group. This unifies the assigned improvement actions for each control across the group and reduces duplicating work.
 
-[Read more about working with groups](working-with-compliance-manager.md#groups)
+Read more about [working with groups in Compliance Manager](working-with-compliance-manager.md#groups).
 
 ## Getting started
 
