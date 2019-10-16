@@ -17,7 +17,7 @@ description: ""
 
 # Manage the lifecycle of documents by auto-applying retention labels and using event-based retention
 
-This article describes how you can manage the life cycle of product-related documents stored in SharePoint Online using Office 365 retention labels, and more specifically by auto-applying labels and configuring event-based retention. The auto-apply functionality leverages document classification that uses SharePoint metadata. The scenario in this article is based on product-related documents, but the same concepts could be used for other scenarios. For example, in the Oil and Gas industry, you could manage the life cycle of documents related to a physical asset such as oil platforms, well logs, or production licenses. In the financial services industry, you can manage documents related to bank accounts, mortgages, or insurance contracts. In the public sector, you can manage documents related to construction permits or tax forms.
+This article describes how you can manage the life cycle of product-related documents stored in SharePoint Online using Office 365 retention labels, and more specifically by auto-applying labels and configuring event-based retention. The auto-apply functionality leverages document classification that uses SharePoint metadata. The scenario in this article is based on product-related documents, but the same concepts could be used for other scenarios. For example, in the oil and gas industry, you could manage the life cycle of documents related to a physical asset such as oil platforms, well logs, or production licenses. In the financial services industry, you can manage documents related to bank accounts, mortgages, or insurance contracts. In the public sector, you can manage documents related to construction permits or tax forms.
 
 Let's look at the scenario for this article. We'll look at the information architecture and the definition of the retention labels. Then we'll look at the classifying and auto-applying the labels, and finally at generating the events.
 
@@ -241,7 +241,7 @@ Now that we verified that the KQL query is working correctly, let's create the l
 
 ### Verifying the retention label was automatically applied
 
-After 7 days, use the Label activity explorer in the security and compliance center to see that the label policy that we created has automatically applied the retention labels in our scenario to the product documents. Notice in the following screenshot that retention labels have also been applied to product agreements and user manuals, even though we didn't cover creating those retention labels and label policies in this article.
+After 7 days, use the [Label activity explorer](view-label-activity-for-documents.md) in the security and compliance center to see that the label policy that we created has automatically applied the retention labels in our scenario to the product documents. Notice in the following screenshot that retention labels have also been applied to product agreements and user manuals, even though we didn't cover creating those retention labels and label policies in this article.
 
 ![](media/SPRetention20.png)
 
