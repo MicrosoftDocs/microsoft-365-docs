@@ -23,7 +23,10 @@ description: "With sensitivity labels, you can classify and help protect your se
 
 - Unified sensitivity labels must be [configured and published in the Security and Compliance Center](https://aka.ms/managemip)
 - Users must be signed in to Office with their work account.
-- Users must have an Office 365 E3 or above license assigned.
+- Users must have at least one of the following licenses assigned:
+    - [Microsoft 365 E3](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) or above
+    - [Office 365 E3](https://www.microsoft.com/microsoft-365/business/office-365-enterprise-e3-business-software) or above
+    - [Azure Information Protection Premium P1](https://azure.microsoft.com/pricing/details/information-protection/) or above
 
 ### Additional requirements for Office for Windows 
 
@@ -194,6 +197,18 @@ Outlook
 <td><font size="-1">TBD
 <td><font size="-1">TBD
 <td><font size="-1">TBD
+  
+<tr><td><font size="-1">Support <a href="https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5">AutoSave</a> and <a href="https://support.office.com/article/document-collaboration-and-co-authoring-ee1509b4-1f6e-401e-b04a-782d26f564a4">co-authoring</a> on labeled and protected documents
+<td><font size="-1">TBD
+
+<td><font size="-1">TBD
+
+<td><font size="-1">TBD
+<td><font size="-1">n/a
+<td><font size="-1">TBD
+<td><font size="-1">n/a
+<td><font size="-1">TBD
+<td><font size="-1">n/a
 </table>
 
 <br><sup>1</sup>If configured, users are prompted to justify label downgrades. However, the justification data is not made available for administrators yet. It will become available when the “send label analytics data for administrators” capability is supported.
@@ -224,7 +239,7 @@ If you have the Azure Information Protection client installed, but you want to u
 
 ## Will sensitivity labels be supported in non-subscription versions of Office like Office 2016 or Office 2019?
 
-No. Sensitivity labels will only be supported in the Office 365 subscription and will not be supported in any non-subscription version. However, the Azure Information Protection unified labeling client may be used in non-subscription versions of Office. 
+No. Sensitivity labels will only be supported in the Office 365 subscription and will not be supported in any non-subscription version. However, the Azure Information Protection unified labeling client may be used in the [versions of Office listed here](https://docs.microsoft.com/azure/information-protection/requirements#applications).
 
 ## I previously deployed protection templates before setting up sensitivity labels. Where did they go?
 

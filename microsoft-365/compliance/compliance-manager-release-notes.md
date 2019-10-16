@@ -64,12 +64,9 @@ The following sections cover known issues to be resolved in upcoming releases of
 
 - When you import a Template, all Assessments based on that Template reflect all Control Families that are part of the Template. But if you add new Control Families to the Template, any existing Assessments will not reflect the changes. Only new Assessments created off the updated Template reflect the changes.
 
-### Filters
-
-- Filtering on Action Items or Controls does not consistently produce correct results.
-
 ### Templates
 
+- When you receive an alert notification (orange triangle icon in the Templates dashboard) that a template is ready to be updated, select **Update** to ensure proper functionality for upcoming releases. To complete the update process, go to your Assessments and accept **Update**.
 - Archived templates are editable and they should not be editable.
 - Locked templates allow for Assessment creation when they should not. Locking a Template is meant to prevent it from being used to create Assessments.
 
