@@ -21,23 +21,21 @@ The Payment Card Industry (PCI) Data Security Standards (DSS) is a global inform
 
 ## Microsoft and PCI DSS
 
-Microsoft Azure completes an annual PCI DSS assessment using an approved Qualified Security Assessor (QSA). The auditor reviews the Azure environment, which includes validating the infrastructure, development, operations, management, support, and in-scope services. The PCI DSS designates four levels of compliance based on transaction volume. Azure is certified as compliant under PCI DSS version 3.2 at Service Provider Level 1 (the highest volume of transactions—more than 6 million a year).
+Microsoft completed an annual PCI DSS assessment using an approved Qualified Security Assessor (QSA). The auditors reviewed Microsoft  Azure and SharePoint Online and OneDrive for Business environments, which includes validating the infrastructure, development, operations, management, support, and in-scope services. The PCI DSS designates four levels of compliance based on transaction volume. Azure and SharePoint Online and OneDrive for Business are certified as compliant under PCI DSS version 3.2 at Service Provider Level 1 (the highest volume of transactions—more than 6 million a year).
 
-The assessment results in an Attestation of Compliance (AoC) and Report on Compliance (RoC) issued by the QSA. The effective period for compliance begins upon passing the audit and receiving the AoC from the assessor, and ends one year from the date the AoC is signed. The AoC is available to customers to show the QSA has determined that Azure is in compliance with PCI DSS v3.2.
+The assessment results in an Attestation of Compliance (AoC), which is available to customers and Report on Compliance (RoC) issued by the QSA. The effective period for compliance begins upon passing the audit and receiving the AoC from the assessor and ends one year from the date the AoC is signed. 
 
-Customers who want to develop a cardholder environment or card processing service can leverage the Azure validation in many of the underlying portions, thereby reducing the associated effort and costs of getting their own PCI DSS certification.
+Customers who want to develop a cardholder environment or card processing service can leverage these validations in many of the underlying portions, thereby reducing the associated effort and costs of getting their own PCI DSS certification.
 
-It is, however, important to understand that Azure PCI DSS compliance status does not automatically translate to PCI DSS certification for the services that customers build or host on the Azure platform. Customers are responsible for ensuring that they achieve compliance with PCI DSS requirements. The Azure Customer PCI Guide specifies areas of responsibility for each PCI DSS requirement, and whether it is assigned to Azure or the customer, or if the responsibility is shared.
-
-Learn about the benefits of PCI DSS on the Microsoft Cloud: [Download the Payment Card Industry (PCI) Data Security Standards (DSS) backgrounder](https://aka.ms/pcidss-backgrounder)
+It is, however, important to understand that Azure and SharePoint Online and OneDrive for Business’ PCI DSS compliance status does not automatically translate to PCI DSS certification for the services that customers build or host on these platforms. Customers are responsible for ensuring that they achieve compliance with PCI DSS requirements.
 
 ## Microsoft in-scope cloud services
 
 - [Azure and Azure Government](https://aka.ms/AzureCompliance)
 - Cloud App Security
+- Flow cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
 - Graph
 - Intune
-- Microsoft Flow cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
 - PowerApps cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
 - Power BI cloud service either as a standalone service or as included in an Office 365 branded plan or suite
 - SharePoint Online and OneDrive for Business (United States only)
@@ -57,9 +55,9 @@ Build and deploy your PCI DSS solution in the cloud even faster with the Azure S
 
 The June 2018 date on the cover page is when the AoC template was published. Refer to Section 2 for the date of the assessment.
 
-**Why are there two Azure Attestations of Compliance (AoCs)?**
+**Why are there multiple Azure Attestations of Compliance (AoCs)?**
 
-Azure is continuously releasing new services that PCI customers want to leverage. To keep up with customer demand, Azure undergoes two PCI assessments annually. The "Core" AoC covers the Azure platform, infrastructure, and the bulk of Azure services. The "Add-on" AoC covers new Azure services that were not included in the Core assessment. Both AoCs should be used together, as the Add-on AoC relies on the Core AoC. The Core AoC is issued in March, and the Add-on AoC follows each year in June.
+The Azure AoC package has AoCs corresponding to Azure Public, Germany, and Government cloud. Customers should use the AoC that corresponds with their Azure environment.  
 
 **What is the relationship between the PA DSS and PCI DSS?**
 
@@ -67,19 +65,15 @@ The Payment Application Data Security Standard (PA DSS) is a set of requirements
 
 **What is an acquirer and does Azure use one?**
 
-An "acquirer" is a bank or other entity that processes payment card transactions. Azure does not offer payment card processing as a service and thus does not use an acquirer.
+An acquirer is a bank or other entity that processes payment card transactions. Azure does not offer payment card processing as a service and thus does not use an acquirer.
 
 **To what organizations and merchants does the PCI DSS apply?**
 
-It applies to any company, no matter the size or number of transactions, that accepts, transmits, or stores cardholder data. That is, if any customer ever pays a company using a credit or debit card, then the PCI DSS requirements apply. Companies are validated at one of four levels based on the total transaction volume over a 12-month period. Level 1 is for companies that process over 6 million transactions a year; Level 2 for 1 million to 6 million transactions; Level 3 is for 20,000 to 1 million transactions; and Level 4 is for fewer than 20,000 transactions.
-
-**How can I get copies of the Azure Attestations of Compliance (AoCs)?**
-
-The latest Azure AoC is available at [http://aka.ms/azure-pci](http://aka.ms/azure-pci).
+PCI DSS applies to any company, no matter the size or number of transactions, that accepts, transmits, or stores cardholder data. That is, if any customer ever pays a company using a credit or debit card, then the PCI DSS requirements apply. Companies are validated at one of four levels based on the total transaction volume over a 12-month period. Level 1 is for companies that process over 6 million transactions a year; Level 2 for 1 million to 6 million transactions; Level 3 is for 20,000 to 1 million transactions; and Level 4 is for fewer than 20,000 transactions.
 
 **Where do I begin my organization’s PCI DSS compliance efforts for a solution deployed on Azure?**
 
-The information that the PCI Security Standards Council makes available is a good place to learn about specific compliance requirements. The council publishes the [PCI DSS Quick Reference Guide](https://www.pcisecuritystandards.org/documents/PCISSC%20QRG%20August%202014%20-print.pdf) that explains how the PCI DSS can help protect a payment card transaction environment and how to apply it. The council also offers [resources for assessing PCI DSS compliance](https://www.pcisecuritystandards.org/pci_security/why_security_matters).
+The information that the PCI Security Standards Council makes available is a good place to learn about specific compliance requirements. The council publishes the [PCI DSS Quick Reference Guide](https://www.pcisecuritystandards.org/documents/PCISSC%20QRG%20August%202014%20-print.pdf) for merchants and others involved in payment card processing. The guide explains how the PCI DSS can help protect a payment card transaction environment and how to apply it.
 
 Compliance involves several factors, including assessing the systems and processes not hosted on Azure. Individual requirements will vary based on which Azure services are used and how they are employed within the solution.
 
@@ -95,10 +89,8 @@ Currently, only files and documents uploaded to SharePoint Online and OneDrive f
 
 - [PCI Security Standards Council](http://www.pcisecuritystandards.org/)
 - [PCI Data Security Standard](https://www.pcisecuritystandards.org/documents/PCI_DSS_v3-1.pdf)
-- [Azure PCI DSS Attestation of Compliance Package](https://go.microsoft.com/fwlink/p/?linkid=2099705)
-- [Azure PCI DSS 3.2 Responsibility Matrix](https://aka.ms/pciresponsibilitymatrix)
-- [PCI DSS Quick Reference Guide](https://www.pcisecuritystandards.org/documents/PCISSC%20QRG%20August%202014%20-print.pdf) for merchants and others involved in payment card processing
-- [Microsoft Common Controls Hub Compliance Framework](https://www.microsoft.com/trustcenter/common-controls-hub)
+- [Azure PCI DSS 3.2.1 Responsibility Matrix](https://aka.ms/pciresponsibilitymatrix)
+- [PCI DSS Quick Reference Guide](https://www.pcisecuritystandards.org/documents/PCISSC%20QRG%20August%202014%20-print.pdf)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## Download the offering backgrounder
