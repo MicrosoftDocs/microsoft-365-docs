@@ -40,7 +40,7 @@ This metadata forms the base content type called **Production Document** for all
 
 We can have several content types that represent different types of documents, but let's focus on the Product Documentation.
 
-We are using in this example the Managed Metadata services and the term store, creating a term set for **Doc Type**, and another one for **Product Name**. For each term set, we create a term for each value. It would look like something like this in Term store for your SharePoint organization:
+In this scenario, we use the Managed Metadata service and the Term store to create a term set for **Doc Type** and another one for **Product Name**. For each term set, we create a term for each value. It would look like something like this in Term store for your SharePoint organization:
 
 ![](media/SPRetention2.png)
 
@@ -98,7 +98,7 @@ Here's the [file plan](file-plan-manager.md) for the Product Specification reten
 
 - **Retention duration:** 5 years (1825 days)
 
-- **Record label**: Configure the retention label to classify content as a record
+- **Record label**: Configure the retention label to classify content as a [record](labels.md#using-retention-labels-for-records-management) (documents that are classified as a record can't be modified or deleted by users)
 
 - **File plan descriptors:** (for simplifying the scenario, no file descriptors are provided)
 
@@ -179,57 +179,77 @@ For the KQL query to work and automatically apply the correct retention label to
 
 Notice that the **Mapped Crawled Properties** column in the previous screenshot is empty.
 
-To map the **ows\_Doc\_x0020\_Type** crawled property, click the **RefinableString00** link, and then scroll down to the **Mappings to crawled properties** section.  Click **Add a Mapping** and type **ows\_Doc\_x0020\_Type** in the**Search for a crawled property name** box.  click Find and select the right result and click OK you should see something like this:
+To map the **ows\_Doc\_x0020\_Type** crawled property, do the following:
 
-![](media/SPRetention13.png)
+1. In the **Managed property** filter box, type **RefinableString00** and click the green arrow.
 
-Scroll to the bottom of the page and click OK.
+2. In the results list, click the **RefinableString00** link, and then scroll down to the **Mappings to crawled properties** section.  
 
-Repeat the same procedure for RefinableString01 and ows\_\_status.
+3. Click **Add a Mapping** and type **ows\_Doc\_x0020\_Type** in the **Search for a crawled property name** box in the **Crawled property selection** window and click **Find**.  
 
-You should have now the two managed properties mapped to the two crawled properties:
+4. In the results list, select **ows\_Doc\_x0020\_Type** and then click **OK**.
+
+   In the **Mapped Crawled Properties** section, you should see something similar to this screenshot:
+
+   ![](media/SPRetention13.png)
+
+5. Scroll to the bottom of the page and click **OK** to save the mapping.
+
+Repeat this same procedure to map RefinableString01 and ows\_\_Status.
+
+Now you should have two managed properties mapped to the two crawled properties:
 
 ![](media/SPRetention14.png)
 
-![](media/SPRetention15.png)
+Let's verify that all of this is set up correctly by running an enterprise search. In a browser, go to https://yourtenant.sharepoint.com/search. In the search box, type **RefinableString00:"Product Specification"** and press enter. This should return all documents that have Product Specification as **Doc Type**.
 
-Let's verify that all is set correctly, by using the enterprise search. Navigate in a browser to <https://yourtenant.sharepoint.com/search>
+Now in the search box, type **RefinableString00:"Product Specification" AND RefinableString01:Final** and press enter. This should return all documents that have Product Specification as **Doc Type** and a Status of **Final**.
 
-In the search box type **RefinableString00:"Product Specification"** and press enter, this should return all documents that have Product Specification as Doc Type.
+### Creating the auto-apply label policies
 
-Now in the search box type **Refinablestring01:Final AND RefinableString00:"Product Specification"** and press enter, this should return all documents that have Product Specification as Doc Type and a status of final.
+Now that we verified that the KQL query is working correctly, let's create the label policy that will use a KQL query to auto-apply the Product Specification retention label to the appropriate documents.
 
-Now that we verified that the KQL query is correct let's create the auto-apply policies.
+1. In the [security and compliance center](https://protection.office.com), go to **Classification** > **Retention labels**, and then click **Auto-apply a label**. 
 
-In the compliance center under classification and labels, select retention labels and then auto-apply a label
+   ![](media/SPRetention16.png)
 
-![](media/SPRetention16.png)
+2. On the **Choose a label to auto-apply** wizard page, click **Choose a label to auto-apply**.
 
-Choose **Product Specification** as the label to apply
+3. In the list of labels, select **Product Specification**, click **Add**, and then click **Next**.
 
-![](media/SPRetention17.png)
+4. Select **Apply label to content that contains specific words or phrases, or properties**, and then click **Next**.
 
-Click Next and select **Apply label to content that contains specific word or phrases**
+   ![](media/SPRetention17.png)
 
-![](media/SPRetention18.png)
+   In the next step, you will provide the same KQL search query that we tested in the previous section. As you recall, this query returned all Product Specification documents that have a status of Final. The result of using this same query in the label policy will mean that the Product Specification retention label will be automatically applied to all documents that match this search query.
 
-Click Next, in the query editor type the query we have been testing
+5. In the **Keyword query editor** box, type **RefinableString00:"Product Specification" AND RefinableString01:Final**, and then click **Next**.
 
-![](media/SPRetention19.png)
+   ![](media/SPRetention19.png)
 
-Click next, name your policy **Auto apply product specification label,** click next and select the location here you want this policy to apply to, here let's choose everything, click next, review your settings and click auto-apply.
+6. Type a name (for example, **Auto apply Product Specification label**) and an optional description for the label policy, and then click **Next**. 
 
-It takes up to 7 days to automatically apply the label to all items that match your conditions.
+7. On the **Choose locations** wizard page, you can select the content locations that you want to apply the policy to. This means that the policy will auto-apply the retention label to documents located in one or more Office 365 services. This includes Exchange mailboxes, SharePont sites, OneDrive accounts, and Office 365 groups. 
 
-In the Security and Compliance Center in the label activity explorer we can see that the policy has been automatically applied:
+    For this scenario, we'll select **All locations** and click **Next**. This means here you want this policy to apply to, here let's choose everything, click next, review your settings and click auto-apply.
+
+    The Review you settings wizard page is displayed. 
+
+    ![](media/SPRetention18.png)
+
+8. Click **Auto-apply** to create the label policy. Note that it takes up to 7 days to automatically apply the Product Specification label to all documents that match the KQL search query that you provided.
+
+### Verifying the retention label was automatically applied
+
+After 7 days, use the Label activity explorer in the security and compliance center to see that the label policy that we created has automatically applied the retention labels in our scenario to the product documents. Notice in the following screenshot that retention labels have also been applied to product agreements and user manuals, even though we didn't cover creating those retention labels and label policies in this article.
 
 ![](media/SPRetention20.png)
 
-When we look at the properties of the document in the Document Library and the information panel, we can also see the label applied:
+Another verification step is to look at the properties of the document in the Document Library. In the information panel, you can see that the retention label is applied to a selected document.
 
 ![](media/SPRetention21.png)
 
-From now on the documents are protected by the retention label, for example, if we try to delete the user manual, we receive the following error message:
+Because the retention labels have been auto-applied to documents, the are documents are protected from being deleted because the retention label was configured to declare the documents as records. As an example of this protection, we receive an error message shown in the following screenshot when we try to delete one of these documents.
 
 ![](media/SPRetention22.png)
 
