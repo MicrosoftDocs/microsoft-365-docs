@@ -218,10 +218,10 @@ Azure Information Protection users are currently able to classify and label cont
 
 If you are using Azure Information Protection labels, for now we recommend that you avoid creating new labels in other admin centers until after you’ve completed your migration. The [Azure Information Protection migration topic](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels) has important information and some specific caveats. If you are not yet ready to migrate your production tenants to sensitivity labels, there is no cause for concern: for the moment, your users can continue using the Azure Information Protection client, and admins can continue using the Azure portal for management.
 
-## Sensitivity labels the Azure Information Protection client
+## Sensitivity labels and the Azure Information Protection client
 
 Office 365 automatically turns off sensitivity labels if you have installed the Azure Information Protection client in Office for Windows.
-For information on how to fix this, see [Use sensitivity labels alongside the Azure Information Protection client in Office for Windows](sensitivity-labels-office-apps.md#use-sensitivity-labels-alongside-the-azure-information-protection-client-in-office-for-windows).
+For information on how to fix this, see [About the Office built-in labeling client](sensitivity-labels-office-apps.md#about-the-office-built-in-labeling-client).
 
 ## Protect content on Windows devices by using endpoint protection in Microsoft InTune
 
