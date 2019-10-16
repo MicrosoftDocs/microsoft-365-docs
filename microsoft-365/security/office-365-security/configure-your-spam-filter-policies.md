@@ -45,7 +45,7 @@ To enable more custom settings or to add custom policies, change the **Custom se
 
 3. Under the **Spam and bulk actions** section:
 
-  - Select an action for the **Spam**, **High confidence spam**, **Phishing email**, and **Bulk email** types. The available values are: 
+  - Select an action for the **Spam**, **High confidence spam**, **High confidence phishing email**, **Phishing email**, and **Bulk email** types. The available values are: 
 
     - **Move message to Junk Email folder:** Sends the message to the Junk Email folder of the specified recipients. This is the default action for spam, high confidence spam, and bulk.<br/><br/>
 

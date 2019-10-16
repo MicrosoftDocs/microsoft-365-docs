@@ -24,7 +24,7 @@ description: "With sensitivity labels, you can classify and help protect your se
 - Unified sensitivity labels must be [configured and published in the Security and Compliance Center](https://aka.ms/managemip)
 - Users must be signed in to Office with their work account.
 - Users must have at least one of the following licenses assigned:
-    - [Microsoft 365 E5](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) or above
+    - [Microsoft 365 E3](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) or above
     - [Office 365 E3](https://www.microsoft.com/microsoft-365/business/office-365-enterprise-e3-business-software) or above
     - [Azure Information Protection Premium P1](https://azure.microsoft.com/pricing/details/information-protection/) or above
 
