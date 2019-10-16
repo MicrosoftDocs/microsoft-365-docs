@@ -330,7 +330,8 @@ After you create a label, you can then use that label as a condition in your DLP
     
 By using labels as a condition in your DLP rules, can you selectively enforce protection actions on a specific set of content, locations, or users.
 
-NOTE:  If you specify a retention label as a condition in a DLP policy, and you also include Exchange and/or Teams as a location you will receive the following error:
+> [!NOTE]
+> If you specify a retention label as a condition in a DLP policy and you also include Exchange and/or Teams as a location, you will receive the following error:
 
 ~~~powershell"Protecting labeled content in email and teams messages isn't supported. Either remove the label below or turn off Exchange and Teams as a location."
 ```
