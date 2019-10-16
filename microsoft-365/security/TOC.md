@@ -99,6 +99,7 @@
 #### [Anti-spoofing protection in Office 365](./office-365-security/anti-spoofing-protection.md)
 ##### [Learn more about spoof intelligence](./office-365-security/learn-about-spoof-intelligence.md)
 ##### [Walkthrough spoof intelligence insight](./office-365-security/walkthrough-spoof-intelligence-insight.md)
+##### [Identify suspicious messages in Outlook.com and Outlook on the web](./office-365-security/unverified-sender-feature.md)
 
 #### [What is EOP?](./office-365-security/what-is-eop.md)
 ##### [Support for anonymous inbound email messages over IPv6](./office-365-security/support-for-anonymous-inbound-email-messages-over-ipv6.md)
@@ -160,7 +161,7 @@
 
 #### [Threat Explorer (and real-time detections)](./office-365-security/threat-explorer.md)
 ##### [Threat Explorer views](./office-365-security/threat-explorer-views.md)
-##### [Identify suspicious messages in Outlook.com and Outlook on the web](./office-365-security/unverified-sender-feature.md)
+
 
 #### [Integration for greater security]()
 ##### [Integrate Office 365 ATP with Microsoft Defender ATP](./office-365-security/integrate-office-365-ti-with-wdatp.md)
