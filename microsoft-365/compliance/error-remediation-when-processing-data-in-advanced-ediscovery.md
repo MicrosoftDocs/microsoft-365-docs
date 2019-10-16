@@ -92,6 +92,16 @@ Use the following workflow to remediate files with errors in Advanced eDiscovery
 
     When processing is complete, you can go to review set and view the remediated files. 
 
+
+## Special considerations when remediating container files
+
+In cases when the contents of a container file cannot be extracted by Advanced eDiscovery, those containers can be downloaded and the contents expanded into the same folder in which the original container resided.  The expanded files will be attributed to the parent container as if it was originally expanded by Advanced eDiscovery.  The process works as described as above with the exception of uploading a single file as the replacement file.  Note, the original container file should not be uploaded with the other remediated files.
+
+## Special considerations when remediating files but only supplying extracted text (Text overlay)
+
+Sometimes, it is not possible to remediate a file in a native form that Advanced eDiscovery can interpret.  However, it is possible to replace the original file with a text file that contains the orginal text of the native file.  To do this, follow the steps above, but instead of supplying the original file type, instead, provide a text file with the same name with .txt appended.  For instance, if during remediation, a file was downloaded with the filename 335850cc-6602-4af0-acfa-1d14d9128ca2.abc, open the file in the native appliacation, copy the text and paste into a new text file called 335850cc-6602-4af0-acfa-1d14d9128ca2.abc.txt.  Be sure to remove the orignal file before uploading back to Advanced eDiscovery.
+
+
 ## What happens when files are remediated
 
 When remediated files are uploaded, the original metadata is preserved except for the following fields: 
