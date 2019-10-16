@@ -17,8 +17,8 @@
 ## Customer Key
 ### [Controlling your data in Office 365 using Customer Key](controlling-your-data-using-customer-key.md)
 ### [Service encryption with Customer Key for Office 365 FAQ](service-encryption-with-customer-key-faq.md)
-## [Communication supervision]()
-### [Learn about communication supervision](supervision-policies.md)
+## [Supervision]()
+### [Learn about supervision policies](supervision-policies.md)
 ### [Configure supervision policies for your organization](configure-supervision-policies.md)
 ## [Information barriers](information-barriers.md)
 ### [Define information barrier policies](information-barriers-policies.md)
@@ -330,14 +330,14 @@
 ### [Export documents from evidence](export-documents-from-incident.md)
 ### [Download export jobs](download-export-jobs-from-a-data-investigation.md)
 
-## [Configure settings for data investigations](configure-settings-datainvestigations.md)
+## Configure investigation settings
 ### [Add or remove members from an investigation](add-remove-members.md)
 ### [Configure search and analytics settings](configure-search-analytics-settings.md)
 ### [Close or delete an investigation](close-or-delete-investigation.md)
 
-## Data Investigations reference
+## Data investigations reference
 ### [Release notes](data-investigations-release-notes.md)
-### [Limits in Data Investigations](limits-datainvestigations.md)
+### [Limits in data investigations](limits-datainvestigations.md)
 ### [Supported file types](supported-filetypes-datainvestigations.md)
 ### [Document metadata fields](document-metadata-fields.md)
 ### [Manage jobs](manage-jobs.md)
@@ -424,6 +424,165 @@
 # Hybrid compliance capabilities
 ## [Exchange Online mail encryption with AD RMS](information-rights-management-in-exchange-online.md)
 ### [Configure IRM to use an on-premises AD RMS server](configure-irm-to-use-an-on-premises-ad-rms-server.md)
+
+# Compliance offerings
+## [Microsoft compliance offerings](offering-home.md)
+
+## Global
+### [CIS Benchmark](offering-cis-benchmark.md)
+### [CSA-STAR attestation](offering-csa-star-attestation.md)
+### [CSA-STAR certification](offering-csa-star-certification.md)
+### [CSA-STAR self-Assessment](offering-csa-star-self-assessment.md)
+### [ISO 20000-1:2011](offering-iso-20000-1-2011.md)
+### [ISO 22301](offering-iso-22301.md)
+### [ISO 27001](offering-iso-27001.md)
+### [ISO 27017](offering-iso-27017.md)
+### [ISO 27018](offering-iso-27018.md)
+### [ISO 27701](offering-iso-27701.md)
+### [ISO-9001](offering-iso-9001.md)
+### [SOC](offering-soc.md)
+### [WCAG 2.1](offering-wcag-2-1.md)
+
+## Government
+### [CJIS](offering-cjis.md)
+### [CNSSI 1253](offering-cnssi-1253.md)
+### [DFARS](offering-dfars.md)
+### [DoD DISA L2,L4,L5](offering-dod-disa-l2-l4-l5.md)
+### [DoE 10 CFR Part 810](offering-doe-10-cfr-part-810.md)
+### [EAR (US Export Admin. Reg.)](offering-ear.md)
+### [FedRAMP](offering-fedramp.md)
+### [FIPS 140-2](offering-fips-140-2.md)
+### [IRS 1075](offering-irs-1075.md)
+### [ITAR](offering-itar.md)
+### [NIST 800-171](offering-nist-sp-800-171.md)
+### [NIST CSF](offering-nist-csf.md)
+### [Section 508 VPATS](offering-section-508-vpats.md)
+
+## Industry
+### Education
+#### [FERPA](offering-ferpa.md)
+
+### Energy
+#### [NERC](offering-nerc-cip.md)
+
+### Financial
+#### [23 NYCRR Part 500](offering-23-nycrr-part-500.md)
+#### [AFM + DNB (Netherlands)](offering-afm-dnb-netherlands.md)
+#### [APRA (Australia)](offering-apra-australia.md)
+#### [AMF and ACPR (France)](offering-amf-acpr-france.md)
+#### [EBA (EU)](offering-eba-eu.md)
+#### [FCA (UK)](offering-fca-uk.md)
+#### [FFIEC (US)](offering-ffiec-us.md)
+#### [FINMA (Switzerland)](offering-finma-switzerland.md)
+#### [FINRA 4511](offering-finra-4511.md)
+#### [FISC (Japan)](offering-fisc-japan.md)
+#### [FSA (Denmark)](offering-fsa-denmark.md)
+#### [GLBA](offering-glba.md)
+#### [KNF (Poland)](offering-knf-poland.md)
+#### [MAS + ABS (Singapore)](offering-mas-abs-singapore.md)
+#### [NBB + FSMA (Belgium)](offering-nbb-fsma-belgium.md)
+#### [OSFI (Canada)](offering-osfi-canada.md)
+#### [PCI DSS](offering-pci-dss.md)
+#### [RBI + IRDAI (India)](offering-rbi-irdai-india.md)
+#### [SEC 17a-4](offering-sec-17a-4.md)
+#### [SOC](offering-soc.md)
+#### [SOX](offering-sox.md)
+#### [TruSight](offering-trusight.md)
+
+### Health
+#### [HDS (France)](offering-hds-france.md)
+#### [HIPAA/HITECH](offering-hipaa-hitech.md)
+#### [HITRUST](offering-hitrust.md)
+#### [MARS-E](offering-mars-e.md)
+#### [NEN-7510 (Netherlands)](offering-nen-7510-netherlands.md)
+#### [NHS IG Toolkit (UK)](offering-nhs-ig-toolkit-uk.md)
+
+### Manufacturing
+#### [FDA CFR Title 21 Part 11](offering-fda-cfr-title-21-part-11.md)
+#### [GxP](offering-gxp.md)
+#### [TISAX (Germany)](offering-tisax-germany.md)
+
+### Media
+#### [CDSA](offering-cdsa.md)
+#### [DPP (UK)](offering-dpp-uk.md)
+#### [FACT (UK)](offering-fact-uk.md)
+#### [MPAA](offering-mpaa.md)
+
+### Retail
+#### [23 NYCRR Part 500](offering-23-nycrr-part-500.md)
+#### [AFM + DNB (Netherlands)](offering-afm-dnb-netherlands.md)
+#### [AMF and ACPR (France)](offering-amf-acpr-france.md)
+#### [CDSA](offering-cdsa.md)
+#### [CIS Benchmark](offering-cis-benchmark.md)
+#### [CSA-STAR attestation](offering-csa-star-attestation.md)
+#### [DoE 10 CFR Part 810](offering-doe-10-cfr-part-810.md)
+#### [DPP (UK)](offering-dpp-uk.md)
+#### [EAR (US Export Admin. Reg.)](offering-ear.md)
+#### [ENISA IAF (EU)](https://aka.ms/ENISA)
+#### [EU Model Clauses](offering-eu-model-clauses.md)
+#### [EBA (EU)](offering-eba-eu.md)
+#### [EU U.S. Privacy Shield](offering-eu-us-privacy-shield.md)
+#### [FACT (UK)](offering-fact-uk.md)
+#### [FCA (UK)](offering-fca-uk.md)
+#### [FFIEC (US)](offering-ffiec-us.md)
+#### [FINMA (Switzerland)](offering-finma-switzerland.md)
+#### [GDPR (EU)](offering-gdpr-eu.md)
+#### [GLBA](offering-glba.md)
+#### [HITRUST](offering-hitrust.md)
+#### [IRS 1075](offering-irs-1075.md)
+#### [ISO 27018](offering-iso-27018.md)
+#### [ISO-9001](offering-iso-9001.md)
+#### [ITAR](offering-itar.md)
+#### [KNF (Poland)](offering-knf-poland.md)
+#### [MARS-E](offering-mars-e.md)
+#### [MPAA](offering-mpaa.md)
+#### [NBB + FSMA (Belgium)](offering-nbb-fsma-belgium.md)
+#### [NHS IG Toolkit (UK)](offering-nhs-ig-toolkit-uk.md)
+#### [NIST CSF](offering-nist-csf.md)
+#### [PCI DSS](offering-pci-dss.md)
+#### [Section 508 VPATS](offering-section-508-vpats.md)
+#### [Shared Assessments](offering-shared-assessments.md)
+#### [SOC](offering-soc.md)
+#### [LOPD (Spain)](offering-lopd-spain.md)
+#### [Cyber Essentials Plus (UK)](offering-cyber-essentials-plus-uk.md)
+#### [G-Cloud (UK)](offering-g-cloud-uk.md)
+
+## Regional
+### Asia
+#### [CS Mark (Gold) (Japan))](offering-cs-mark-gold-japan.md)
+#### [DJCP (China)](https://www.trustcenter.cn/compliance/default.html#DJCP)
+#### [GB 18030 (China)](https://www.trustcenter.cn/compliance/default.html#GB18030)
+#### [ISMS (Korea)](offering-ISMS-korea.md)
+#### [MeitY (India)](offering-meity-india.md)
+#### [MTCS (Singapore)](offering-mtcs-singapore.md)
+#### [My Number (Japan)](offering-my-number-act-japan.md)
+#### [TRUCS (China)](https://aka.ms/TRUCS-Compliance)
+
+### Australia / Pacific
+#### [CCSL/IRAP (Australia)](offering-CCSL-IRAP-Australia.md)
+#### [NZ CC Framework (New Zealand)](offering-nz-cc-framework-nz.md)
+
+### Europe
+#### [BIR 2012 (Netherlands)](offering-bir-2012-netherlands.md)
+#### [C5 (Germany)](offering-c5-germany.md)
+#### [Cyber Essentials Plus (UK)](offering-cyber-essentials-plus-uk.md)
+#### [EN 301 549 (EU)](offering-en-301-549-eu.md)
+#### [ENS (Spain)](offering-ens-spain.md)
+#### [ENISA IAF (EU)](https://aka.ms/ENISA)
+#### [EU Model Clauses](offering-eu-model-clauses.md)
+#### [EU U.S. Privacy Shield](offering-eu-us-privacy-shield.md)
+#### [GDPR (EU)](offering-gdpr-eu.md)
+#### [G-Cloud (UK)](offering-g-cloud-uk.md)
+#### [IDW PS 951 (Germany)]()
+#### [IT Grundschutz Workbook (Germany)](offering-it-grundschutz-workbook-germany.md)
+#### [LOPD (Spain)](offering-lopd-spain.md)
+#### [PASF (UK)](offering-pasf-uk.md)
+
+### North America
+#### [Canadian Privacy Laws](offering-canadian-privacy-laws.md)
+
+### South America
+#### [PDPA (Argentina)](offering-pdpa-argentina.md)
 
 # [Office 365 Enterprise](https://docs.microsoft.com/Office365/Enterprise)
 # [Office 365 Business](https://docs.microsoft.com/office365/admin/admin-home)

@@ -8,7 +8,7 @@
 ### [Set up Microsoft 365 Business](set-up.md)
 ### [Upgrade to Windows Pro Creators Update](upgrade-to-windows-pro-creators-update.md)
 ### [Prepare for Office client deployment](prepare-for-office-client-deployment.md)
-### [Auto install or uninstall Office](auto-install-or-uninstall-office.md)
+### [Help users install Office](help-users-install-office.md)
 ### [Access on-premises resources]()
 #### [Enable domain-joined Windows 10 devices to be managed](manage-windows-devices.md)
 #### [Access resources from an Azure AD-joined device](access-resources.md)
@@ -16,8 +16,8 @@
 ### [Set up mobile devices](set-up-mobile-devices.md)
 ### [Set up Windows devices](set-up-windows-devices.md)
 ## [Secure your business](security-features.md)
+### [Set up MFA](set-up-mfa.md)
 ### [Increase threat protection](increase-threat-protection.md)
-### [Get started with Conditional Access](set-up-conditional-access-policies.md)
 ### [Set up compliance features](set-up-compliance.md)
 ## Manage Users
 ### [Add users](add-users-m365b.md)

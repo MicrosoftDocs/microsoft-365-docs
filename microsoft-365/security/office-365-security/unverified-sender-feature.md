@@ -29,6 +29,15 @@ To prevent phishing messages from reaching your mailbox, Outlook.com and Outlook
 
 Outlook.com and Outlook on the web show indicators when the sender of a message either can't be identified or their identity is different from what you see in the From address.
 
+## You see a '?' in the sender image
+
+When Outlook.com and Outlook on the web can't verify the identity of the sender using email authentication techniques, they display a '?' in the sender photo. 
+
+![Message did not pass verification](../media/message-did-not-pass-verification.jpg)
+
+Not every message that fails to authenticate is malicious. However, you should be careful about interacting with messages that don't authenticate if you don't recognize the sender. Or, if you recognize a sender that normally doesn't have a '?' in the sender image, but you suddenly start seeing it, that could be a sign the sender is being spoofed.
+
+
 ## How to manage which messages receive the unverified sender treatment 
 
 If you are an Office 365 customer you can manage this feature through the Security & Compliance Center. 
@@ -45,19 +54,11 @@ If you are an Office 365 customer you can manage this feature through the Securi
 
 Additionally, we do not apply the unverified sender treatment if it was delivered to the inbox via an admin allow list, including Email Transport Rules (ETRs), Safe Domain List (Anti-Spam Policy), Safe Sender List or a user has set this user as a “Safe Sender” in their inbox.
 
-### You see a '?' in the sender image
-
-When Outlook.com and Outlook on the web can't verify the identity of the sender using email authentication techniques, they display a '?' in the sender photo. 
-
-![Message did not pass verification](../media/message-did-not-pass-verification.jpg)
-
-Not every message that fails to authenticate is malicious. However, you should be careful about interacting with messages that don't authenticate if you don't recognize the sender. Or, if you recognize a sender that normally doesn't have a '?' in the sender image, but you suddenly start seeing it, that could be a sign the sender is being spoofed.
-
 ## Frequently asked questions
 
 ### What criteria does Outlook.com and Outlook on the web use to add the '?' and the 'via' properties?
 
-For the '?' in the sender image:  Outlook.com requires that the message pass either SPF or DKIM authentication. For more details, see [Set up SPF in Office 365 to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md) and [Use DKIM to validate outbound email sent from your custom domain in Office 365](use-dkim-to-validate-outbound-email.md).
+For the '?' in the sender image:  Outlook.com requires that the message pass either SPF or DKIM authentication and receive either a dmarc pass, or a composite authentication pass from Office 365 Spoof Intelligence. For more details, see [Set up SPF in Office 365 to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md) and [Use DKIM to validate outbound email sent from your custom domain in Office 365](use-dkim-to-validate-outbound-email.md).
 
 For the via tag: If the domain in the From address is different from the domain in the DKIM signature or the SMTP MAIL FROM, Outlook.com displays the domain in one of those two fields (preferring the DKIM signature).
 
