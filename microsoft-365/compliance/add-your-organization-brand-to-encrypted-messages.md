@@ -34,7 +34,7 @@ As an Exchange Online or Exchange Online Protection administrator, you can apply
 
 You can also revert back to the default look and feel at any time.
 
- If you'd like more control, you can use Office 365 Advanced Message Encryption and create multiple templates for encrypted emails originating from your organization. Using these templates, you can control more than just the look and feel of the email messages, but also control parts of the end-user experience. For example, you can specify whether or not recipients of mail that have this template applied and who use Google, Yahoo, and Microsoft Accounts can use these accounts to sign in to the Office 365 Message Encryption portal. You might use templates to fulfill several use cases, such as:
+If you'd like more control, you can use Office 365 Advanced Message Encryption and create multiple templates for encrypted emails originating from your organization. Using these templates, you can control more than just the look and feel of the email messages, but also control parts of the end-user experience. For example, you can specify whether or not recipients of mail that have this template applied and who use Google, Yahoo, and Microsoft Accounts can use these accounts to sign in to the Office 365 Message Encryption portal. You might use templates to fulfill several use cases, such as:
 
 - Templates for each department, such as Finance, Sales, etc.
 
@@ -48,11 +48,6 @@ You can also revert back to the default look and feel at any time.
 
 Once you've created the templates, you can apply them to encrypted emails by using Exchange mail flow rules. If you have Office 365 Advanced Message Encryption, you can revoke any email that you've branded by using these templates.
   
-||
-|:-----|
-|This article is part of a larger series of articles about Office 365 Message Encryption. This article is intended for administrators and ITPros. If you're just looking for information on sending or receiving an encrypted message, see the list of articles in [Office 365 Message Encryption (OME)](ome.md) and locate the article that best fits your needs.|
-||
-
 ## Create branding templates
 
 You create branding templates for your organization in Windows PowerShell with the New-OMEConfiguration cmdlet. Once you've created the template, you define the pieces of the template by using the Set-OMEConfiguration cmdlet. You can create multiple templates.
@@ -78,7 +73,7 @@ You create branding templates for your organization in Windows PowerShell with t
 |**To customize this feature of the encryption experience**|**Use these commands**|
 |:-----|:-----|
 |Background color|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -BackgroundColor "<Hexadecimal color code>"` <br/> **Example:** <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -BackgroundColor "#ffffff"`|
-|Logo|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -Image <Byte[]>` <br/> **Example:** <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -Image (Get-Content "C:\Temp\contosologo.png" -Encoding byte)` <br/> Supported file formats: .png, .jpg, .bmp, or .tiff  <br/> Optimal size of logo file: less than 40 KB  <br/> Optimal size of logo image: 170x70 pixels|
+|Logo|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -Image <Byte[]>` <br/> **Example:** <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -Image (Get-Content "C:\Temp\contosologo.png" -Encoding byte)` <br/> Supported file formats: .png, .jpg, .bmp, or .tiff  <br/> Optimal size of logo file: less than 40 KB  <br/> Optimal size of logo image: 170x70 pixels. If your image exceeds these dimensions, the service resizes your logo for display in the portal. The service does not modify the graphic file itself. For best results, use the optimal size.|
 |Text next to the sender's name and email address|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -IntroductionText "<String up to 1024 characters>"` <br/> **Example:** <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -IntroductionText "has sent you a secure message."`|
 |Text that appears on the "Read Message" button|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -ReadButtonText "<String up to 1024 characters>"` <br/> **Example:** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -ReadButtonText "Read Secure Message."`|
 |Text that appears above below the "Read Message" button|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -EmailText "<String up to 1024 characters>"` <br/> **Example:** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -EmailText "Encrypted message from ContosoPharma secure messaging system."`|
