@@ -18,12 +18,12 @@ description: "Learn how to access, customize, work with Microsoft Compliance Sco
 
 ## Getting started: sign in and set permissions
 
-The Microsoft 365 global administrator will likely be the first user to access and work in Compliance Score. We recommend taking the actions below when visiting Compliance Score for the first time.
+The Microsoft 365 global administrator for your organization will likely be the first user to access Compliance Score. We recommend signing in and setting permissions as outlined below when visiting Compliance Score for the first time.
 
 ### Sign in to Compliance Score
 
 1. Go to the [Microsoft Compliance Center](https://compliance.microsoft.com/) and **sign in** with your Microsoft 365 global admin account.
-2. Select **Compliance Score** on the left-hand navigation. You should then see your [Compliance Score dashboard with your score](#understanding-the-compliance-score-dashboard)).
+2. Select **Compliance Score** on the left navigation pane. You should then see your [Compliance Score dashboard with your score](#understanding-the-compliance-score-dashboard).
 
 ### Set user permissions
 
@@ -31,12 +31,13 @@ Compliance Score uses a role-based access control (RBAC) permission model. Only 
 
 **Where to set permissions**
 
-User permissions can be set in the Microsoft 365 compliance center, in Compliance Manager, or—for read-only access—in Azure Active Directory (Azure AD).
-- **If you set user permissions in the Microsoft 365 compliance center** - those settings will automatically apply in Compliance Score and Compliance Manager.
-- **If you set user permissions only in Compliance Manager** - those permissions will also carry over to all actions in the Microsoft 365 compliance center, including Compliance Score.
-- **If you assign Global Reader role in Azure AD** - this will apply to users of the Microsoft 365 compliance center, Compliance Score, and Compliance Manager
+You can set user permissions in three places: in the Microsoft 365 compliance center or in Compliance Manager for all user roles, or in Azure Active Directory (Azure AD) for read-only access.
 
-The table below shows how user roles in the Microsoft 365 compliance center map to user roles in Compliance Manager.
+- **If you set user permissions in the Microsoft 365 compliance center** - those permissions will automatically apply in Compliance Manager.
+- **If you set user permissions only in Compliance Manager** - those permissions will automatically apply to the Microsoft 365 compliance center, including Compliance Score.
+- **If you assign the Global Reader role in Azure AD** - this will apply to users of the Microsoft 365 compliance center, Compliance Score, and Compliance Manager
+
+The table below shows how user role titles in the Microsoft 365 compliance center map to user role titles in Compliance Manager.
 
 | User can: | Microsoft 365 compliance center role | Compliance Manager role | 
 | :------------- | :-------------: | :------------: |
@@ -47,34 +48,36 @@ The table below shows how user roles in the Microsoft 365 compliance center map 
 | **Manage assessments and master data**| Compliance administrator<br>Compliance data administrator<br>Security administrator | Compliance Manager administrator | 
 | **Assign users***| Global administrator | Portal admin | 
 
-*The Global Administrator and the Portal Admin can add other users in their organization to the reader, contributor, assessor, adn administrator roles. Only Global Administrator role in your organization add users to, or remove them from, the Portal Admin role.
+*The Global Administrator and the Portal Admin can add other users in their organization to the reader, contributor, assessor, and administrator roles. Only Global Administrator role in your organization add users to, or remove them from, the Portal Admin role.
 
 #### Set permissions in the Microsoft 365 compliance center
 
 To set permissions from the Microsoft 365 compliance center, follow these steps:
 
-1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and sign in with your global administrator account.
-2. Select **Permissions** from the left navigation pane. From here, you can view roles and assign permissions.
+1. Go to the [Microsoft Compliance Center](https://compliance.microsoft.com) and sign in with your global admin account.
+2. Select **Permissions** on the left navigation pane. From here, you can view roles and assign permissions.
 
 For details, read [roles and permissions in the Microsoft 365 compliance center](../security/office-365-security/microsoft-security-and-compliance.md#required-licenses-and-permissions).
 
 #### Set permissions in Compliance Manager
 
-The portal admin for Compliance Manager can set permissions for other users in within Compliance Manager, which you access from the Microsoft Service Trust Portal. Anyone with a Microsoft account or Azure AD organizational account can access Compliance Manager. Follow these steps to set user permissions:
+The Compliance Manager portal admin can set permissions for other users in Compliance Manager. [View a table](working-with-compliance-manager.md#permissions) showing details about the actions allowed for each permission.
 
-1. Go to the [https://servicetrust.microsoft.com](https://servicetrust.microsoft.com/).
+Follow these steps to set user permissions:
 
-2. Sign in with your Microsoft service account. This is your Office 365, Microsoft 365, or Azure AD user account.
+1. Go to the [Service Trust Portal](https://servicetrust.microsoft.com/). 
 
-3. In the Service Trust Portal, select **Compliance Manager**.
+2. Select **Compliance Manager** (not **Compliance Manager (classic)**) and sign in with your global admin or portal admin account.
 
 4. When the Non-Disclosure Agreement is displayed, read it, and select **Agree** to continue. You must agree once, and then the Compliance Manager dashboard is displayed.
-2. From the top **More** drop-down menu, select **Admin**, then **Settings**.
-3. Select the role you want to assign and then add the employee you want to assign to that role. Users will then be able to perform certain actions.
 
-### Set read-only permissions in Azure AD
+5. From the top **More** drop-down menu, select **Admin**, then **Settings**.
 
-Users who are assigned the **Global Reader** role in Azure Active Directory (Azure AD)have read-only permission to access Compliance Score and the Microsoft 365 Compliance Center. However, they cannot edit data or perform any actions within Compliance Manager. Read instructions on assigning the [Global Reader role in Azure Active Directory (Azure AD)](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader).
+6. Select the role you want to assign, then select **+ Add** to add the employee you want to assign to that role. Users will then be able to perform the actions assigned to that role.
+
+#### Set read-only permissions in Azure AD
+
+Users who are assigned the **Global Reader** role in Azure AD have read-only permission to access Compliance Score and the Microsoft 365 compliance center. However, they cannot edit data or perform any actions within Compliance Manager. Read instructions on assigning the [Global Reader role in Azure Active Directory (Azure AD)](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader).
 
 ## Understanding the Compliance Score dashboard
 
