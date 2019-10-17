@@ -20,9 +20,7 @@ description: "Learn about communication compliance in Microsoft 365"
 
 # Communication compliance in Microsoft 365 (preview)
 
-Communication compliance in Microsoft 365 allows you to scan internal and external communications for policy matches so they can be examined by designated reviewers. Reviewers can investigate scanned email, Microsoft Teams, or third-party communications in your organization and take appropriate remediation actions to make sure that they are compliant with your organization's message standards.
-
-Communication compliance policies in Microsoft 365 help you overcome many modern compliance challenges associated with internal and external communications, including:
+Communication compliance in Microsoft 365 allows you to scan internal and external communications for policy matches so they can be examined by designated reviewers. Reviewers can investigate scanned email, Microsoft Teams, or third-party communications in your organization and take appropriate remediation actions to make sure that they are compliant with your organization's message standards. Communication compliance policies in Microsoft 365 help you overcome many modern compliance challenges associated with internal and external communications, including:
 
 - Scanning increasing types of communication channels
 - The increasing volume of message data
@@ -47,6 +45,17 @@ Communication compliance policies can assist with reviewing messages in your org
 - **Regulatory compliance**
 
     Most organizations must comply with some type of regulatory compliance standards as part of their normal operating procedures. These regulations often require organizations to implement some type of supervisory or oversight process for messaging that is appropriate for their industry. The Financial Industry Regulatory Authority (FINRA) Rule 3110 is a good example of a requirement for organizations to have supervisory procedures in place to scan employee communications and the types of businesses in which it engages. Another example may be a need to review broker-dealer communications in your organization to safeguard against potential money-laundering, insider trading, collusion, or bribery activities. Communication compliance policies can help your organization meet these requirements by providing a process to both scan and report on corporate communications.
+
+## New enhancements
+
+Communication compliance in Microsoft 365 builds on the features of [Supervision policies in Office 365](supervision-policies.md) with the following enhancements:
+
+- **Policy templates**: Policy creation is now quicker with new anti-harassment and offensive language, sensitive information, and regulatory compliance templates.
+- **Conversation threading**: Messages are now visually grouped by original message and all associated reply messages, giving you better context during investigation and remediation actions.
+- **Keyword highlighting**: Terms matching policy conditions are highlighted in the message text view to help reviewers quickly locate and remediate policy alerts.
+- **Exact and near duplicate detection**: In addition to scanning for exact terms matching communication compliance polices, near duplicate detection groups textually similar terms and messages together to help speed up your review process.
+- **Improved filters**: Investigate and remediate policy alerts faster with filters for alert state, severity, age, or user.
+- **Improved message views**: Investigation and remediation actions are now quicker with new message source, text, and annotation views.
 
 ## Integration with Microsoft 365 services
 
