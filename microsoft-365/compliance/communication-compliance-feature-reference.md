@@ -100,24 +100,17 @@ Configure custom keyword dictionaries (or lexicons) to provide simple management
 
 ### Classifiers
 
-Scan sent or received email messages in your organization for offensive language. The built-in machine learning classifier uses a combination of machine learning, artificial intelligence, and keywords to identify language in email messages likely to violate anti-harassment and bullying policies. The offensive language classifier currently supports English keywords and scans the body of email messages.
+Machine learning classifiers scan sent or received email messages in your organization for different types of compliance issues. Classifiers use a combination of machine learning, artificial intelligence, and keywords to identify language in email messages likely to violate anti-harassment policies. Classifiers currently support English keywords and scans the body of email messages.
 
-> [!NOTE]
-> Create a [data loss prevention policy](create-test-tune-dlp-policy.md) with a [custom keyword dictionary](create-a-keyword-dictionary.md) of blocked terms if you need to:
->
-> - monitor Microsoft Teams communications in your organization for offensive language
-> - prevent or block offensive language in communications in your organization
+The current communication compliance classifiers scans email for terms and sentiment for the following types of language:
 
-Please note that the built-in machine learning classifier does not provide an exhaustive list of offensive language. Further, language and cultural standards continually change, and in light of these realities, Microsoft reserves the right to update the classier in its discretion. While the classifier may assist your organization in monitoring offensive language, the classifier is not intended to provide your organization’s sole means of monitoring or addressing such language. Your organization, not Microsoft, remains responsible for all decisions related to scanning and blocking offensive language.
+- **Threat**: Scans for threats to commit violence or physical harm to a person or property.
+- **Harassment**: Scans for offensive conduct targeting people regarding race, color, religion, national origin
+- **Profanity**: Scans for profane expressions that embarrass most people.
+
+Please note that the built-in classifiers do not provide an exhaustive list of terms across these areas. Further, language and cultural standards continually change, and in light of these realities, Microsoft reserves the right to update classifiers in its discretion. While classifiers may assist your organization in monitoring these areas, classifiers are not intended to provide your organization’s sole means of monitoring or addressing such language. Your organization, not Microsoft, remains responsible for all decisions related to scanning and blocking language in these areas.
 
 The offensive language classifier scans email for sentiment associated with the following types of language:
-
-|**Type**|**Description**|
-|:-----|:-----|
-| **Profanities** | Expressions that embarrass most people. |
-| **Slurs** | Expressions that express prejudice against particular groups (e.g., race, ethnicity, sexual orientation, disability). |
-| **Taunts** | Expressions that taunt, condemn, ridicule, or could potentially cause anger or violence. |
-| **Disguised expressions** | Expressions for which the meaning or pronunciation is the same as another more offensive term. |
 
 ### Conditional settings
 <a name="ConditionalSettings"> </a>
@@ -128,7 +121,7 @@ The following table explains more about each condition.
   
 |**Condition**|**How to use this condition**|
 |:-----|:-----|
-| **Content matches any of these classifiers** | Apply to the policy when any classifiers are included or excluded in a message. Some classifiers are pre-defined in your tenant and custom classifiers must be configured separately before they are available for this condition. Only one classifier can be defined as a condition in a policy. For more information about configuring classifiers, see [CLASSIFIER TOPIC](). |
+| **Content matches any of these classifiers** | Apply to the policy when any classifiers are included or excluded in a message. Some classifiers are pre-defined in your tenant and custom classifiers must be configured separately before they are available for this condition. Only one classifier can be defined as a condition in a policy. For more information about configuring classifiers, see [Classifiers](classifier-getting-started-with.md). |
 | **Content contains any of these sensitive info types** | Apply to the policy when any sensitive information types are included or excluded in a message. Some classifiers are pre-defined in your tenant and custom classifiers can be configured separately or as part of the condition assignment process. Each sensitive information type you choose is applied separately and only one of these sensitive information types must apply for the policy to apply to the message. For more information about custom sensitive information types, see [Custom sensitive information types](custom-sensitive-info-types.md). |
 | **Message is received from any of these domains**  <br><br> **Message is not received from any of these domains** | Apply the policy to include or exclude specific domains or email addresses in received messages. Enter each domain or email address and separate multiple domains or email addresses with a comma. Each domain or email address entered is applied separately, only one domain or email address must apply for the policy to apply to the message. <br><br> If you want to scan all email from a specific domain but want to exclude messages that do not need review (newsletters, announcements, etc.), you must configure the condition a **Message is not received from any of these domains** condition that excludes the email address (example "newsletter@contoso.com"). |
 | **Message is sent to any of these domains**  <br><br> **Message is not sent to any of these domains** | Apply the policy to include or exclude specific domains or email addresses in sent messages. Enter each domain or email address and separate multiple domains or email addresses with a comma. Each domain or email address is applied separately, only one domain or email address must apply for the policy to apply to the message. <br><br> If you want to scan all email sent to a specific domain but want to exclude sent messages that do not need review, you must configure two conditions: <br> - A **Message is sent to any of these domains** condition that defines the domain ("contoso.com"), AND <br> - A **Message is not sent to any of these domains** condition that excludes the email address ("subscriptions@contoso.com"). |
