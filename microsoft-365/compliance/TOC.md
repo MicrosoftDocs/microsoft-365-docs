@@ -359,7 +359,7 @@
 ### [Compliance Score (Preview)](compliance-score.md)
 ### [Working with Compliance Score (Preview)](working-with-compliance-score.md)
 ### [Compliance Score calculation (Preview)](compliance-score-methodology.md)
-### [Compliance Score release notes](compliance-score-release-notes)
+### [Compliance Score release notes](compliance-score-release-notes.md)
 ### [Compliance Manager (Preview)](compliance-manager-overview.md)
 #### [What's new in Compliance Manager (Preview)](compliance-manager-release-notes.md)
 #### [Working with Compliance Manager (Preview)](working-with-compliance-manager.md)
