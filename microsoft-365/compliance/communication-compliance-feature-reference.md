@@ -98,7 +98,7 @@ To learn more about sensitive information details and the patterns included in t
 
 Configure custom keyword dictionaries (or lexicons) to provide simple management of keywords specific to your organization or industry. Keyword dictionaries support up to 100,000 terms per dictionary. If needed, you can apply multiple custom keyword dictionaries to a single policy or have a single keyword dictionary per policy. These dictionaries are assigned in a communication compliance policy and can be sourced from a file (such as a .csv or .txt list), or from a list you can [import in the Compliance center](create-a-keyword-dictionary.md).
 
-### Offensive language
+### Classifiers
 
 Scan sent or received email messages in your organization for offensive language. The built-in machine learning classifier uses a combination of machine learning, artificial intelligence, and keywords to identify language in email messages likely to violate anti-harassment and bullying policies. The offensive language classifier currently supports English keywords and scans the body of email messages.
 
