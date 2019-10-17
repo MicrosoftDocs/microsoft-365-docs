@@ -376,7 +376,7 @@ After the deletion job has run and we go back to the library, the document in qu
 
 This concludes the scenario where we automatically applied the correct retention label based on a site column in SharePoint, and then used event-based retention and Microsoft Flow to automatically trigger retention based on external events.
 
-## Credits
+### Credits
 
 This scenario was authored by:
 
