@@ -39,13 +39,14 @@ You can set user permissions in three places: in the Microsoft 365 compliance ce
 
 The table below shows how user role titles in the Microsoft 365 compliance center map to user role titles in Compliance Manager.
 
+
 | User can: | Microsoft 365 compliance center role | Compliance Manager role | 
 | :------------- | :-------------: | :------------: |
 | **Read but not edit data**| Azure AD global reader  | Azure AD global reader | 
 | **Read but not edit data**| Security reader | Compliance Manager reader  | 
 | **Edit data**| Compliance administrator | Compliance Manager contributor | 
 | **Edit test results**| Compliance administrator | Compliance Manager assessor | 
-| **Manage assessments and master data**| Compliance administrator<br>Compliance data administrator<br>Security administrator | Compliance Manager administrator | 
+| **Manage assessments, and template and tenant data**| Compliance administrator<br>Compliance data administrator<br>Security administrator | Compliance Manager administrator | 
 | **Assign users***| Global administrator | Portal admin | 
 
 *The Global Administrator and the Portal Admin can add other users in their organization to the reader, contributor, assessor, and administrator roles. Only Global Administrator role in your organization add users to, or remove them from, the Portal Admin role.
@@ -93,7 +94,7 @@ As you work to customize Compliance Score, your score number becomes even more r
 
 ### Key improvement actions
 
-This section lists the top improvement actions you can take right now to make the largest positive impact on your overall compliance score.
+This section lists the top improvement actions you can take right now to make the largest positive impact on your overall compliance score. It lists status of actions that are not completed, completed, and not in scope—which means ???
 
 ### Solutions that affect your score
 
@@ -103,18 +104,18 @@ This section shows which solution areas within Microsoft 365 contain actions tha
 
 This section gives you a more detailed view of your score in two different ways:
 
-- **Categories**: Viewing your score by category shows the percentage of your overall score within compliance categories, such as “protect information” or “manage devices.”
-- **Assessments**: Viewing your score by assessment shows the percentage of your progress in implementing/managing assessments for particular compliance and data protection standards, regulations, or laws, such as GDPR or NIST 800-53.
+- **Categories**: this view shows the percentage of your overall score within compliance categories, such as “protect information” or “manage devices.”
+- **Assessments**: this view shows the percentage of your progress in managing assessments for particular compliance and data protection standards, regulations, or laws, such as GDPR or NIST 800-53.
 
 ### Customizing your view
 
 You can filter your dashboard view to see only the items related to particular regulations and standards, solutions, or action types. Filtering your view in this way will also filter the score on your dashboard, showing how many points you’ve achieved out of total possible points based on your filter criteria.  To filter your view, select **Filter** on the upper-right side of the dashboard:
 
-SCREENSHOT DASHBOARD FILTER BUTTON
+![Compliance Score - dashboard filter button](media/compliance-score-filter.png)
 
 Then select your filter criteria from the flyout **Filters** pane, then select **Apply**.
 
-SCREENSHOT DASHBOARD FILTERS FLYOUT
+![Compliance Score - dashboard filter pane](media/compliance-score-filter-pane.png)
 
 You will see your score adjusted in real-time, and you will only see improvement actions, solutions, and score breakdown information that correspond to your filter criteria.
 
@@ -130,15 +131,21 @@ Improvement actions are the key elements of the workflow process in Compliance S
 
 The home screen of Compliance Score shows your **key improvement actions**—the ones with the most available points which address the more important issues. To view all of your improvement actions, select **View all improvement actions** underneath the list of key improvement actions, or select **Improvement actions** on the top navigation.
 
-SCREENSHOT IMPROVEMENT ACTIONS FROM DASHBOARD
+![Compliance Score - improvement actions navigation](media/compliance-score-improvement-actions-navigation.png)
 
-On the improvement actions screen, you can see all of your organization’s improvement actions, which can be a very long list. It may be helpful to filter your view by selecting **Filter** above the list, and then selecting the desired criteria based on regulations and standards, solution, and group.
+On the improvement actions screen, you can see all of your organization’s improvement actions, which can be a long list. It may be helpful to filter your view by selecting **Filter** above the list, and then selecting the desired criteria based on regulations and standards, solution, and group.
 
-You can also customize your view by selecting **Group**, and from that drop-down menu, select to view by group, solution, category, action type, or status.
+You can also customize your view by selecting **Group**, and from that drop-down menu, select to view by group, solution, category, action type, or status. 
 
-### Improvement actions details
+![Compliance Score - improvement actions screen](media/compliance-score-improvement-actions.png)
 
-The improvement actions screen gives detailed information on each improvement action:
+### Improvement actions details - where you begin your workflow
+
+To go into the detailed view of an improvement action, double-click anywhere in the row of your intended improvement action. A details page opens Once the detailed view opens, you can perform tasks such as assigning it to users for work, updating its status, and uploading documentation. 
+
+![Compliance Score - improvement actions details](media/compliance-score-improvement-actions-details.png)
+
+This view contains implementation instructions, along with the following details:
 
 - **Score impact**: the points by which your overall score will increase by completing the action
 - **Regulations**: the applicable regulation or standard that the action seeks to satisfy
@@ -155,23 +162,29 @@ The improvement actions screen gives detailed information on each improvement ac
     - **Passed**: the improvement action has been successfully tested 
 - **Pointed achieved**: lists progress in points achieved out of the maximum potential to be earned
 
-### Assigning improvement actions
+### Assign improvement actions
+
+To assign an improvement action to a user, select **Edit status**. In the edit status flyout pane, click or tap in the **Assigned to** box, which will populate a list of all available users, labled **Suggested people**. You can either select the user from that list, or begin typing the name or email address of your selected user and selecting from results. Select **Save and close** to complete the assignment. The assigned user will receive an email that the improvement action has been assigned to them, and they can then open the improvement action from their dashboard.
+
+![Compliance Score - improvement actions assign to user](media/compliance-score-improvement-actions-assign.png)
+
+> [!NOTE]
+> The **Suggested people** list pulls from the users roles assigned when you set up permissions. Therefore, be sure the assigned user has the [role](#getting-started-sign-in-and-set-permissions
+) that gives them the proper level of access to perform necessary functions. 
+
+### Store documentation in improvement actions
 
 abc
 
-### Storing documentation in improvement actions
+### Change improvement action status
 
 abc
 
-### Changing improvement action status
+### Edit implementation notes
 
 abc
 
-### Editing implementation notes
-
-abc
-
-### Applying filter on overview(?)
+### Apply filter on overview(?)
 
 abc
 
