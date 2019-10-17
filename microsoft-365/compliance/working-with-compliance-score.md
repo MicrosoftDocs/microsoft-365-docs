@@ -31,7 +31,7 @@ Compliance Score uses a role-based access control (RBAC) permission model. Only 
 
 **Where to set permissions**
 
-You can set user permissions in three places: in the Microsoft 365 compliance center or in Compliance Manager for all user roles, or in Azure Active Directory (Azure AD) for read-only access.
+The global admin for your organization can set user permissions in three places: in the Microsoft 365 compliance center or in Compliance Manager for all user roles, or in Azure Active Directory (Azure AD) for read-only access.
 
 - **If you set user permissions in the Microsoft 365 compliance center** - those permissions will automatically apply in Compliance Manager.
 - **If you set user permissions only in Compliance Manager** - those permissions will automatically apply to the Microsoft 365 compliance center, including Compliance Score.
@@ -49,7 +49,7 @@ The table below shows how user role titles in the Microsoft 365 compliance cente
 | **Manage assessments, and template and tenant data**| Compliance administrator<br>Compliance data administrator<br>Security administrator | Compliance Manager administrator | 
 | **Assign users***| Global administrator | Portal admin | 
 
-*The Global Administrator and the Portal Admin can add other users in their organization to the reader, contributor, assessor, and administrator roles. Only Global Administrator role in your organization add users to, or remove them from, the Portal Admin role.
+*The global admin and the portal admin can add other users in their organization to the reader, contributor, assessor, and administrator roles. Only the global admin can add users to, or remove them from, the portal admin role.
 
 #### Set permissions in the Microsoft 365 compliance center
 
@@ -109,13 +109,9 @@ This section gives you a more detailed view of your score in two different ways:
 
 ### Customizing your view
 
-You can filter your dashboard view to see only the items related to particular regulations and standards, solutions, or action types. Filtering your view in this way will also filter the score on your dashboard, showing how many points you’ve achieved out of total possible points based on your filter criteria.  To filter your view, select **Filter** on the upper-right side of the dashboard:
+You can filter your dashboard view to see only the items related to particular regulations and standards, solutions, or action types. Filtering your view in this way will also filter the score on your dashboard, showing how many points you’ve achieved out of total possible points based on your filter criteria.  To filter your view, select **Filter** on the upper-right side of the dashboard. Then select your filter criteria from the flyout **Filters** pane, then select **Apply**.
 
-![Compliance Score - dashboard filter button](media/compliance-score-filter.png)
-
-Then select your filter criteria from the flyout **Filters** pane, then select **Apply**.
-
-![Compliance Score - dashboard filter pane](media/compliance-score-filter-pane.png)
+![Compliance Score - dashboard filter view](media/compliance-score-filter.png)
 
 You will see your score adjusted in real-time, and you will only see improvement actions, solutions, and score breakdown information that correspond to your filter criteria.
 
@@ -139,15 +135,32 @@ You can also customize your view by selecting **Group**, and from that drop-down
 
 ![Compliance Score - improvement actions screen](media/compliance-score-improvement-actions.png)
 
-### Improvement actions details - where you begin your workflow
+The following data points are listed for each improvement action:
 
-To bring up an improvement action's details page, first go to the improvement actions screen. Then double-click anywhere in the row of your intended improvement action. A details page opens Once the detailed view opens, you can perform tasks such as assigning it to users for work, updating its status, and uploading documentation. 
+- **Score impact**: the points by which your overall score will increase by completing the action
+- **Regulations**: the applicable regulation or standard that the action seeks to satisfy
+- **Group**: the group to which you assigned the action
+- **Solutions**: the applicable Microsoft solutions; where you go to perform the action
+- **Assessments**: the assessment in which the action resides
+- **Categories**: the grouping of actions based on the compliance area (i.e., protect information, manage devices, etc.)
+- **Status**:
+    - **None**: has not been assigned for work (???)
+    - **Not assessed**: testing on the improvement action has not started (???)
+    - **Not in scope**: ???
+    - **Partially tested**: testing of implementation is in progress
+    - **Failed high risk**: testing of implementation has failed, and the risk of falling out of compliance with the applicable standard is high
+    - **Passed**: the improvement action implementation successfully tested 
+- **Pointed achieved**: lists progress in points achieved out of the maximum potential to be earned
+
+### Begin your workflow at the improvement actions details
+
+To view an improvement action's details page, first go to the improvement actions screen (as seen above). Then double-click anywhere in the row of your intended improvement action. A details page opens, and from here you can read detailed implementation instructions, assign it to a users for work, update its status, and attach notes and documentation.
 
 ![Compliance Score - improvement actions details](media/compliance-score-improvement-actions-details.png)
 
-This view contains implementation instructions, along with the following details:
+A closer look at the details page fields:
 
-- **Score impact**: the points by which your overall score will increase by completing the action
+- **Points achieved**: the points by which your overall score will increase by completing the action
 - **Regulations**: the applicable regulation or standard that the action seeks to satisfy
 - **Group**: the group to which you assigned the action
 - **Solutions**: the applicable Microsoft solutions; where you go to perform the action
@@ -220,10 +233,6 @@ You can designate implementation and testing status for improvement actions. Bel
 
 > [!NOTE]
 > Implementation and test status fields can be edited by any user with editing permissions, not just the **Assigned to** user.
-
-### Apply filter on overview(?)
-
-abc
 
 ## Viewing solutions
 
