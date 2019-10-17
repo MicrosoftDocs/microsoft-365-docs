@@ -22,7 +22,7 @@ description: "Investigate and remediate communication compliance alerts in Micro
 
 After you've configured your communication compliance policies, you'll start to receive alerts in the Microsoft 365 compliance center for message issues that match your policy conditions. Follow the workflow instructions here to investigate and remediate alert issues.
 
-## Review pending alerts
+## Investigate alerts
 
 The first step to investigate issues detected by your policies is to review generated alerts in the Microsoft 365 compliance center. There are several areas in the compliance center to help you to quickly review alerts, depending on how you prefer to view alert grouping:
 
