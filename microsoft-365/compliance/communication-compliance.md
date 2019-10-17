@@ -59,7 +59,7 @@ Communication compliance in Microsoft 365 builds on the features of [Supervision
 
 ## Integration with Microsoft 365 services
 
-Communication compliance policies scan and capture messages across several communication channels to help you review and remediate compliance issues:
+Communication compliance policies scan and capture messages across several communication channels to help you quickly review and remediate compliance issues:
 
 - **Exchange Online:** All mailboxes hosted on Exchange Online in your Microsoft 365 organization are eligible for scanning. Emails and attachments matching communication compliance policy conditions are instantly available for monitoring and in supervision reports. Exchange Online is now an optional source channel and is no longer required in communication compliance policies.
 - **Microsoft Teams:** Chat communications and associated attachments for public and private Microsoft Teams channels and individual chats are supported in communication compliance as a standalone channel source or with other Microsoft 365 services. Policies now automatically scan all Microsoft Teams channels and teams for specific users defined in a policy, eliminating the need to keep a separate mapping list for Microsoft Teams assignments.

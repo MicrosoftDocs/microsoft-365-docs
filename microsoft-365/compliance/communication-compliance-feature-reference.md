@@ -103,7 +103,7 @@ Configure custom keyword dictionaries (or lexicons) to provide simple management
 
 ### Classifiers
 
-Machine learning classifiers scan sent or received email messages in your organization for different types of compliance issues. Classifiers use a combination of machine learning, artificial intelligence, and keywords to identify language in email messages likely to violate anti-harassment policies. Classifiers currently support English keywords and scans the body of email messages.
+Trainable classifiers scan sent or received email messages in your organization for different types of compliance issues. Classifiers use a combination of artificial intelligence and keywords to identify language in email messages likely to violate anti-harassment policies. Classifiers currently support English keywords and scans the body of email messages.
 
 The current communication compliance classifiers scans email for terms and sentiment for the following types of language:
 
