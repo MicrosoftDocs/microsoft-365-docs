@@ -16,8 +16,8 @@ description: "Learn more about security principles and recommendations for moder
 
 Because most modern attacks involve compromising user identities, learn how to build a new identity security perimeter to protect assets outside your corporate network.
 
-- Download PDF summary: [Module 3: Identity and Access Management](../media/ciso-workshop-3-identity-protection.pdf)
-- Download PowerPoint summary: [Module 3: Identity and Access Management](https://docs.microsoft.com/microsoft-365/security/media/ciso-workshop-3-identity-protection.pptx)
+- Download PDF summary: [Module 3: Identity and Zero Trust User Access](../media/ciso-workshop-3-identity-and-zero-trust-user-access.pdf)
+- Download PowerPoint summary: [Module 3: Identity and Access Management](../media/ciso-workshop-3-identity-and-zero-trust-user-access.pptx)
 
 ## Part 1: Identity and Zero Trust History (9:33)
 
