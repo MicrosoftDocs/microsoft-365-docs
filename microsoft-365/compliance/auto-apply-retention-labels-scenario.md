@@ -17,9 +17,9 @@ description: ""
 
 # Manage the lifecycle of documents in SharePoint by auto-applying retention labels and using event-based retention
 
-This article describes how you can manage the life cycle of product-related documents stored in SharePoint Online using Office 365 retention labels, and more specifically by auto-applying labels and configuring event-based retention. The auto-apply functionality leverages document classification that uses SharePoint metadata. The scenario in this article is based on product-related documents, but the same concepts could be used for other scenarios. For example, in the oil and gas industry, you could manage the life cycle of documents related to a physical asset such as oil platforms, well logs, or production licenses. In the financial services industry, you can manage documents related to bank accounts, mortgages, or insurance contracts. In the public sector, you can manage documents related to construction permits or tax forms.
+This article describes how you can manage the life cycle of product-related documents stored in SharePoint Online using Office 365 retention labels, and more specifically by auto-applying labels and configuring event-based retention. The auto-apply functionality leverages document classification that uses SharePoint metadata. The scenario in this article is based on product-related documents, but the same concepts can be used for other scenarios. For example, in the oil and gas industry, you could manage the life cycle of documents related to physical assets such as oil platforms, well logs, or production licenses. In the financial services industry, you can manage documents related to bank accounts, mortgages, or insurance contracts. In the public sector, you can manage documents related to construction permits or tax forms.
 
-Let's look at the scenario for this article. We'll look at the information architecture and the definition of the retention labels. Then we'll look at the classifying and auto-applying the labels, and finally at generating the events.
+Let's look at the scenario for this article. We'll look at the information architecture and the definition of the retention labels. Then we'll look at the classifying and auto-applying the labels, and finally generating the events that initiate the start of the retention period.
 
 ## Information architecture
 
@@ -82,7 +82,7 @@ Using the security and compliance center, we will create the following retention
 
   - User Manual
 
-In this article, we only show how to create the Product Specification retention label. To implement the complete scenario, you would create retention labels for the other two document types.
+In this article, we only show how to create and auto-apply the Product Specification retention label. To implement the complete scenario, you would create and auto-apply retention labels for the other two document types.
 
 ### Settings for the Product Specification retention label
 
@@ -102,7 +102,7 @@ Here's the [file plan](file-plan-manager.md) for the Product Specification reten
 
 - **File plan descriptors:** (for simplifying the scenario, no file descriptors are provided)
 
-The following screenshot shows the settings when you create the Product Specification [retention label](labels.md) in the security and compliance center. You can create the **Product Cessation** event type when you create the retention label. See the how-to steps below.
+The following screenshot shows the settings when you create the Product Specification [retention label](labels.md) in the security and compliance center. You can create the **Product Cessation** event type when you create the retention label. See the steps below.
 
 ![](media/SPRetention5.png)
 
@@ -110,8 +110,6 @@ The following screenshot shows the settings when you create the Product Specific
 > For the practical purposes and to avoid having to wait 5 years to see a document automatically deleted, set the retention duration to 1 day if you're recreating this scenario in your test environment.
 
 ### Create an event type when creating a retention label
-
-For more detailed steps on creating event types, see 
 
 1. In the **Retain or delete content based** on dropdown list, select **an event**.
 
