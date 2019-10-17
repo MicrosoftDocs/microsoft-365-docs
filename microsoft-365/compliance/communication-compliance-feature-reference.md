@@ -110,7 +110,7 @@ The current communication compliance classifiers scans email for terms and senti
 
 Please note that the built-in classifiers do not provide an exhaustive list of terms across these areas. Further, language and cultural standards continually change, and in light of these realities, Microsoft reserves the right to update classifiers in its discretion. While classifiers may assist your organization in monitoring these areas, classifiers are not intended to provide your organization’s sole means of monitoring or addressing such language. Your organization, not Microsoft, remains responsible for all decisions related to scanning and blocking language in these areas.
 
-The offensive language classifier scans email for sentiment associated with the following types of language:
+For information about classifiers in Microsoft 365, see [Classifiers](classifier-getting-started-with.md).
 
 ### Conditional settings
 <a name="ConditionalSettings"> </a>
