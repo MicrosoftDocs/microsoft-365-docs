@@ -13,11 +13,11 @@ ms.collection:
 ms.custom:
 - MiniMaven
 - MSB365
+- OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 description: "Set up Office 365 Advanced Threat Protection, and safeguard sensitive data."
-ms.custom: OKR_SMB_M365
 ---
 # Increase threat protection
 
