@@ -156,28 +156,9 @@ The following data points are listed for each improvement action:
 
 To view an improvement action's details page, first go to the improvement actions screen (as seen above). Then double-click anywhere in the row of your intended improvement action. A details page opens, and from here you can read detailed implementation instructions, assign it to a users for work, update its status, and attach notes and documentation.
 
-![Compliance Score - improvement actions details](media/compliance-score-improvement-actions-details.png)
-
-A closer look at the details page fields:
-
-- **Points achieved**: the points by which your overall score will increase by completing the action
-- **Regulations**: the applicable regulation or standard that the action seeks to satisfy
-- **Group**: the group to which you assigned the action
-- **Solutions**: the applicable Microsoft solutions; where you go to perform the action
-- **Assessments**: the assessment in which the action resides
-- **Categories**: the grouping of actions based on the compliance area (i.e., protect information, manage devices, etc.)
-- **Status**:
-    - **None**: has not been assigned for work (???)
-    - **Not assessed**: testing on the improvement action has not started (???)
-    - **Not in scope**: ???
-    - **Partially tested**: testing of implementation is in progress
-    - **Failed high risk**: testing of implementation has failed, and the risk of falling out of compliance with the applicable standard is high
-    - **Passed**: the improvement action implementation successfully tested 
-- **Pointed achieved**: lists progress in points achieved out of the maximum potential to be earned
-
 You can easily view the next or previous improvement action in the list by selecting the up or down arrow in the upper-right corner of the screen. If you filtered your list on the **Improvement actions** screen, moving up or down will take you to the next item within that filtered list.
 
-![Compliance Score - improvement actions move up or down](media/compliance-score-improvement-actions-move-up-down.png)
+![Compliance Score - improvement actions details](media/compliance-score-improvement-actions-details.png)
 
 ### Assign improvement actions
 
@@ -236,9 +217,10 @@ You can designate implementation and testing status for improvement actions. Bel
 
 ## Viewing solutions
 
-The Solutions screen shows you the share of earned and potential points that are available to you as organized by improvement actions taken within specific Microsoft solutions. The **Solutions that affect your score** section on your Compliance Score dashboard shows the solutions with the greatest potential to positively impact your score. View all your solutions by selecting **Solutions** on the top menu bar or **View all solutions**.
+The Solutions screen shows you the share of earned and potential points available to you as organized by improvement actions taken with certain solution areas—some of which will be specific to Microsoft (e.g., Azure AD Identity Protection, OneDrive for Business) while others describe solution areas (e.g., data investigation, records management). 
+The **Solutions that affect your score** section on your Compliance Score dashboard shows the solutions with the greatest potential to positively impact your score. View all your solutions by selecting **Solutions** on the top menu bar or **View all solutions**, which displays the following screen:
 
-SCREENSHOT SOLUTIONS FROM DASHBOARD
+![Compliance Score - solutions screen](media/compliance-score-solutions.png)
 
 ### How Compliance Score monitors your solutions
 
