@@ -172,7 +172,7 @@ Now you can proceed to [register devices](#register-devices).
 
 If you collected the hardware hash data by the manual PowerShell or flash drive methods, you now need to have the data in the CSV files combined into a single file to complete registration. Here's a sample PowerShell script to make this easy:
 
-`Get-ChildItem -Filter *.csv |Select-Object -expandproperty FullName | Import-Csv |ConvertTo-Csv -NoTypeInformation | %{$_.Replace('"','')}| Out-File -Append .\joinedcsv\aggregatedDevices.csv`
+`Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformation | % {$_.Replace('"', '')} | Out-File .\aggregatedDevices.csv`
 
 With the hash data merged into one CSV file, you can now proceed to [register the devices](#register-devices).
 
