@@ -117,11 +117,11 @@ You will see your score adjusted in real-time, and you will only see improvement
 
 ## Managing compliance activities with improvement actions
 
-The work you do to implement controls is done through the improvement actions in Compliance Score.
+Managing your compliance activities through the improvement actions centralizes your workflow of implementing recommended actions to improve your score.
 
 ### What are improvement actions
 
-Improvement actions are the key elements of the workflow process in Compliance Score. They exist within Compliance Manager as a type of task, a centralized work item you use to conduct work on [controls for particular assessments](compliance-score.md#key-components-controls-assessments-templates--groups). Within an improvement action, you assign users in your organization to carry out the recommended actions, store documentation around implementation and testing details, and track testing status. Below are the key features of improvement actions and how to work with them.
+Improvement actions are the key elements of the workflow process in Compliance Score. Their structure is built in Compliance Manager as a centralized work item you use to implement [controls for particular assessments](compliance-score.md#key-components-controls-assessments-templates--groups). Within an improvement action, you assign users in your organization to carry out the recommended actions, store documentation around implementation and testing details, and track testing status. Below are the key features of improvement actions and how to work with them.
 
 ### View your improvement actions
 
@@ -197,6 +197,8 @@ Fields in this section include:
 
 You can designate implementation and testing status for improvement actions. Below are the available fields and selection options:
 
+> [!IMPORTANT]@REVIEWERS - need help listing all available status types and their definitions below.
+
 - **Implementation status**: select from these status options
     - **Not implemented**
     - **Implemented**
@@ -215,33 +217,38 @@ You can designate implementation and testing status for improvement actions. Bel
 > [!NOTE]
 > Implementation and test status fields can be edited by any user with editing permissions, not just the **Assigned to** user.
 
-## Viewing solutions
+## Working from the solutions screen
 
-The Solutions screen shows you the share of earned and potential points available to you as organized by improvement actions taken with certain solution areas—some of which will be specific to Microsoft (e.g., Azure AD Identity Protection, OneDrive for Business) while others describe solution areas (e.g., data investigation, records management). 
-The **Solutions that affect your score** section on your Compliance Score dashboard shows the solutions with the greatest potential to positively impact your score. View all your solutions by selecting **Solutions** on the top menu bar or **View all solutions**, which displays the following screen:
+Approaching your work from the **Solutions screen** is another way to start actions that will improve your compliance score. This screen shows the share of earned and potential points as organized by compliance solution areas—some of which will be specific to Microsoft (e.g., Azure AD Identity Protection, OneDrive for Business), while others describe solution areas in the Microsoft 365 and Office 365 security and compliance centers (e.g., data investigation, records management). Viewing your remaining points and improvement actions from this view helps you understand the overall solution areas which may need more immediate attention.
 
-![Compliance Score - solutions screen](media/compliance-score-solutions.png)
+The **Solutions that affect your score** section on your Compliance Score dashboard shows the solutions with the greatest potential to positively impact your score. Selecting **View all solutions** in that section, or selecting **Solutions** on the top navigation of your dashboard, displays the solutions screen showing all your solutions, as seen below:
 
-### How Compliance Score monitors your solutions
+![Compliance Score - solutions screen](media/compliance-score-solutions.png "Compliance Score solutions screen")
 
-Compliance Score automatically scans through your Microsoft 365 environment and detect your system settings, continuously and automatically updating your technical control status. For example, if you turned on multi-factor authentication (MFA) in the Azure AD portal, Compliance Score detects the setting and reflect that in the access control details. Conversely, if you didn’t turn on MFA, Compliance Score flags that as a recommended action for you to take.
+### How Compliance Score monitors solutions
+
+Compliance Score automatically scans through your Microsoft 365 environment and detect your system settings, continuously and automatically updating your technical control status. For example, if you turned on multi-factor authentication (MFA) in the Azure AD portal, Compliance Score detects the setting and reflect that in the control access solution details. Conversely, if you didn’t turn on MFA, Compliance Score flags that as a recommended action for you to take.
 
 > [!NOTE]
-> Compliance Score and Secure Score do not cover everything in Office 365 or Microsoft Intune. The data they provide is to increase understanding of your compliance posture to help you make informed risk-based decisions.
+> Compliance Score does not cover every feature in Office 365 or Microsoft Intune. The score is to help you better understand your compliance posture so you can make more informed risk-based decisions.
 
-### Monitoring and taking action
+### Taking actions
 
-The solutions screen displays all of your organization’s Microsoft solutions. The table lists each solution's contribution to your overall score, the score-enhancing points achieved and possible within that solution, and the remaining number of improvement actions grouped in that solution that can increase your score. Select **Open** underneath the **Open Solution** column to work on that particular solution. For instance, in the example below, selecting **Open** takes you to your Azure AD Identity Protection instance so that you can take the action recommended in the **Description** column.
+The solutions screen displays all of your organization’s Microsoft solutions. The table lists each solution's contribution to your overall score, the score-enhancing points achieved and possible within that solution, and the remaining number of improvement actions grouped in that solution that can increase your score. 
 
-SCREENSHOT SOLUTIONS PAGE OPEN LINK
+There are two ways you can take action from this screen:
 
-## Viewing assessments
+1. On the row of your intented solution, under the **Remaining actions** column, click or tap on the hyperlinked number. This takes you to a filtered view of the improvement actions screen showing untested improvement actions for that solution. You can then ???manage improvement actions???.
 
-The assessments screen lists all the assessments set up for your organization by both you and Microsoft. It lists only assessments that have yet to begin work, are in progress, or are not yet compliant. Assessments which you have previously tested and implemented are archived in Compliance Manager.
+2. On the row of your intented solution, under the **Open solution** column, select **Open**. This takes you to the Microsft solution or location in the Microsoft 365 and Office 365 security and compliance centers where you can take the recommended action.
 
-SCREENSHOT ASSESSMENTS PAGE
+## Working from the assessments screen
 
-On the assessments screen you can quickly view important information about each assessment:
+The assessments screen lists the assessments set up for your organization by both you and Microsoft. It lists only assessments that have not yet started, are in progress, or are not yet compliant. Any assessments you may have previously tested and implemented are archived in Compliance Manager.
+
+![Compliance Score - solutions screen](media/compliance-score-assessments.png "Compliance Score assessments screen")
+
+On this screen you can quickly view important information about each assessment:
 
 - **Status**: the status toward completion of all the improvement actions in the assessment will be listed as either:
     - **Non-compliant**: the improvement actions in the assessment have not been implemented and successfully tested; work has not yet begun
@@ -253,25 +260,21 @@ On the assessments screen you can quickly view important information about each 
 - **Related services**: associated Microsoft 365 service
 - **Related regulations**: the regulatory standard, policy, or law which the assessment seeks to satisfy
 
-**Note:** Note: during public preview, functionality for creating, exporting, and archiving assessments remains in the Compliance Manager tool. To manage your assessments, select **Manage Assessments in Compliance Manager**, as seen below. [View detailed instructions for working with assessments](working-with-compliance-manager.md#assessments).
-
-SCREENSHOT ASSSESMENTS SCREEN MANAGE IN CM LINK
+**Note:** during public preview, functionality for viewing, creating, exporting, and archiving assessments remains in the Compliance Manager tool. To manage your assessments, select **Manage Assessments in Compliance Manager** at the top of the assessments list.
 
 ### Customizing your view
 
-You can filter you view by selecting **Filter**, then on the filter flyout **Filters** pane, make your selections based on regulation and standard or group, then choose the **Apply** button.
+To filter you view of assessments: 
 
-2 SCREENSHOTS ASSESSMENT FILTER BUTTON AND FLYOUT PANE
+1. Select **Filter** at the top left corner of your assessments list.
+2. On the flyout **Filters** pane, place a check next to the desired .regulation and standard or group.
+3. Select the **Apply** button.
 
-You can also modify your view to see assessments by group, product, or regulation by selecting the type of grouping from the **Group** drop-down. The example below shows a view of assessments grouped by regulation:
+You can also modify your view to see assessments by group, product, or regulation by selecting the type of grouping from the **Group** drop-down menu above your assessments list.
 
-SCREENSHOT ASSESSMENT GROUP DROPDOWN
+### Managing improvement actions within an assessment
 
-To view an assessment: ?? waint for SDF to catch up
-
-To view or manage an action, select the linked text under **Customer-managed actions** or **Microsoft-managed actions**. This will take you the improvement actions screen with a filtered view of the actions for the group of actions you chose.
-
-SCREENSHOT ASSESSMENT PAGE LINK TO CUST MANAGED ACTIONS
+From the assessment list, under the **Customer-managed actions** column, select the linked text on the row of the intended assessment. This takes you a filtered view of the improvement actions screen showing the actions within that assessment.
 
 ## Reporting
 
