@@ -32,7 +32,7 @@ Microsoft was the first hyper-scale cloud service provider to receive, for the b
 - Intune
 - [Microsoft Office 365](https://aka.ms/o365-compliance-framework)
 
-## Audits, reports and certificates
+## Audits, reports, and certificates
 
 ### Microsoft Azure
 

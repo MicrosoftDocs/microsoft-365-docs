@@ -21,13 +21,13 @@ The Center for Financial Industry Information Systems (FISC) is a not-for-profit
 
 In collaboration with its member institutions, the Bank of Japan, and the Financial Services Agency (a government organization responsible for overseeing banking, securities and exchange, and insurance in Japan), the FISC created guidelines for the security of banking information systems. These include basic auditing standards for computer system controls, contingency planning in the event of a disaster, and the development of security policies and standards encompassed in more than 300 controls.
 
-Although the application of these guidelines in a cloud computing environment is not required by regulation, most financial institutions in Japan that implement cloud services have built information systems that satisfy these security standards, and it can be very difficult to justify diverging from them. (The latest guidelines, Version 8 Supplemental Revised, issued in 2015, added two revisions relating to the use of cloud services by financial institutions and countermeasures against cyberattack.)
+Although the application of these guidelines in a cloud computing environment is not required by regulation, most financial institutions in Japan that implement cloud services have built information systems that satisfy these security standards, and it can be difficult to justify diverging from them. (The latest guidelines, Version 8 Supplemental Revised, issued in 2015, added two revisions relating to the use of cloud services by financial institutions and countermeasures against cyberattack.)
 
 Conformance with this framework is not required by regulation, and not audited or otherwise validated by the FISC.
 
 ## Microsoft and FISC
 
-Microsoft engaged outside assessors to validate that Microsoft Azure, Dynamics 365 and Microsoft Office 365 meet requirements of the FISC Security Guidelines on Computer Systems for Financial Institutions 9th Edition Revised. Microsoft provided evidence of compliance in each of the following areas:
+Microsoft engaged outside assessors to validate that Microsoft Azure, Dynamics 365, and Microsoft Office 365 meet requirements of the FISC Security Guidelines on Computer Systems for Financial Institutions 9th Edition Revised. Microsoft provided evidence of compliance in each of the following areas:
 
 - Datacenter guidelines for buildings and computer rooms, power, air conditioning, datacenter, and facilities monitoring.
 - Operational guidelines for organizations, training, access control, system development, and auditing.

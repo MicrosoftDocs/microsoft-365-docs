@@ -350,7 +350,7 @@
 ## [Manage mailbox auditing](enable-mailbox-auditing.md)
 ## [Detailed properties in the audit log](detailed-properties-in-the-office-365-audit-log.md)
 ## [Export, configure, and view audit log records](export-view-audit-log-records.md)
-## [Use the audit log to troubleshoot common scenarios](auditing-troubleshooting-scenarios.md)
+## [Use the audit log to investigate common issues](auditing-troubleshooting-scenarios.md)
 ## [Use sharing auditing in the audit log](use-sharing-auditing.md)
 ## [Search for eDiscovery activities in the audit log](search-for-ediscovery-activities-in-the-audit-log.md)
 
