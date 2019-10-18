@@ -30,9 +30,6 @@ Customer Key is built on service encryption and lets you provide and control enc
   
 Customer Key enhances the ability of your organization to meet the demands of compliance requirements that specify key arrangements with the cloud service provider. With Customer Key, you provide and control the encryption keys for your Office 365 data at-rest at the application level. As a result, you exercise control over your organization's keys. If you decide to exit the service, you revoke your organization's keys. By revoking the keys, the data is unreadable to the service. For all Office 365 services, key revocation is the first step on the path towards data deletion.
 
-> [!IMPORTANT]
-> @REVIEWERS - For more information about this process, see ***Data Purge Path???*** in Manage Customer Key??? I believe this should go either in its own topic (exiting the service) or in managing customer key. I think right now the only mention is in learn about availability key. Find out and move it. Also, what about Customer Lockbox? (I don't have a link to non customer lockbox.)
-
 With Customer Key, you control your organization's encryption keys and then configure Office 365 to use them to encrypt your data at rest in Microsoft's data centers. In other words, Customer Key allows customers to add a layer of encryption that belongs to them, with their keys. Data at rest includes data from Exchange Online and Skype for Business stored in mailboxes and files stored in SharePoint Online and OneDrive for Business.
 
 ## Customer Key encrypts data at rest in Office 365
@@ -45,6 +42,10 @@ Using keys you provide, Customer Key for Office 365 encrypts:
 - Text conversations from Skype for Business.
 
 We don't currently offer customer control of the encryption keys for Skype Meeting Broadcast and Skype Meeting content uploads. Instead, this content is encrypted along with all other content in Office 365.
+
+### Customer Key with hybrid deployments
+
+Customer Key only encrypts data at rest in the cloud. Customer Key does not work to protect your on-premises mailboxes and files. You can encrypt your on-premises data using another method, such as BitLocker.
 
 ## About the data encryption policy (DEP)
 
