@@ -39,7 +39,7 @@ Learn about the benefits of IRS 1075 on the Microsoft Cloud: [Download the IRS 1
 
 ## Microsoft in-scope cloud services
 
-FedRAMP authorizations are granted at three impact levels based on NIST guidelines—low, medium, and high. These rank the impact that the loss of confidentiality, integrity, or availability could have on an organization—low (limited effect), medium (serious adverse effect), and high (severe or catastrophic effect).
+FedRAMP authorizations are granted at three impact levels based on NIST guidelines — low, medium, and high. These rank the impact that the loss of confidentiality, integrity, or availability could have on an organization — low (limited effect), medium (serious adverse effect), and high (severe or catastrophic effect).
 
 - [Azure and Azure Government](https://azure.microsoft.com/global-infrastructure/government/)
 - Dynamics 365 U.S. Government

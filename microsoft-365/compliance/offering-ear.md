@@ -73,7 +73,7 @@ That said, a few Microsoft products have been assigned an ECCN that may or may n
 
 The primary US export controls with the broadest application are the EAR, administered by the US Department of Commerce. The EAR is applicable to dual-use items that have both commercial and military applications, and to items with purely commercial applications.
 
-The United States also has separate and more specialized export control regulations, such as the ITAR, that govern the most sensitive items and technology. Administered by the US Department of State, they impose controls on the export, temporary import, re-export, and transfer of many military, defense, and intelligence items (also known as “defense articles”), including related technical data.
+The United States also has separate and more specialized export control regulations, such as the ITAR, that governs the most sensitive items and technology. Administered by the US Department of State, they impose controls on the export, temporary import, re-export, and transfer of many military, defense, and intelligence items (also known as “defense articles”), including related technical data.
 
 ## Resources
 

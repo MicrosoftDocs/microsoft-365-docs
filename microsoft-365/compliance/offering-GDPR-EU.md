@@ -23,11 +23,9 @@ Discover privacy program best practices and how Microsoft approaches regulations
 
 ## Accountability documentation
 
-[Access GDPR documentation](https://www.microsoft.com/trust-center/privacy/gdpr-accountability-documentation)
-    - Find information about capabilities in Microsoft services used to address requirements of the GDPR.
+[Access GDPR documentation — Find information about capabilities in Microsoft services used to address requirements of the GDPR.
 
-[Accountability readiness checklist](https://go.microsoft.com/fwlink/p/?linkid=2048396)
-    - A convenient way to access information you may need to support GDPR when using Microsoft services.
+[Accountability readiness checklist — A convenient way to access information you may need to support GDPR when using Microsoft services.
 
 ## GDPR customer stories
 
@@ -46,9 +44,9 @@ Learn how Microsoft customer INAIL is using Azure Information Protection to clas
 ## More information on GDPR
 
 - Safeguard individual privacy — [Watch the webcast](https://go.microsoft.com/fwlink/p/?linkid=2048711)
-- Enable privacy with Microsoft 365 - [Learn more](https://go.microsoft.com/fwlink/p/?linkid=2048712)
-- Data governance for compliance - [Learn more](https://go.microsoft.com/fwlink/p/?linkid=2052751)
-- Assess your GDPR compliance - [Take the assessment](https://go.microsoft.com/fwlink/?linkid=2048712)
+- Enable privacy with Microsoft 365 — Learn more](https://go.microsoft.com/fwlink/p/?linkid=2048712)
+- Data governance for compliance — Learn more](https://go.microsoft.com/fwlink/p/?linkid=2052751)
+- Assess your GDPR compliance — Take the assessment](https://go.microsoft.com/fwlink/?linkid=2048712)
 
 ## Additional GDPR resources
 
