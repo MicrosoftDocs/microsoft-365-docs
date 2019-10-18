@@ -37,7 +37,7 @@ Advanced eDiscovery supports many file types to many different levels, which are
 | Mime type | File identification | Metadata extraction | Text extraction | Native viewer | Annotate viewer | Possible Extensions |
 | :- |  :- |  :- |  :- |  :- |  :- |  :- |
 | application/mp4 | Yes | Yes | No | Yes | No | .f4v; .m4a; .m4v; .mp4; .mp4v; .mpeg; .mpeg4 |
-| audio/mpeg | Yes | Yes | No | Yes | No | n/a |
+| audio/mpeg | Yes | Yes | No | Yes | No | .mpeg |
 | video/3gpp | Yes | Yes | No | Yes | No | .3gp |
 | video/3gpp2 | Yes | Yes | No | Yes | No | .3g2; .3gp2 |
 | video/quicktime | Yes | Yes | No | Yes | No | .moov; .mov; .qt |
