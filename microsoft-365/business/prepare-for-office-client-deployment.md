@@ -13,12 +13,12 @@ ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
 - MSB365
+- OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: ed34fff3-2881-4ed4-9906-1ba6bb8dd804
 description: "Learn how to automatically install the 32-bit Office apps to Windows 10 computers and keep them updated."
-ms.custom: OKR_SMB_M365
 ---
 
 # Prepare for Office client deployment by Microsoft 365 Business

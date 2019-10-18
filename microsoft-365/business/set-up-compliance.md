@@ -13,11 +13,11 @@ ms.collection:
 ms.custom:
 - MiniMaven
 - MSB365
+- OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 description: "Set up compliance features to prevent data loss and label sensitive data."
-ms.custom: OKR_SMB_M365
 ---
 # Set up compliance features
 

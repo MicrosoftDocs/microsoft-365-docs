@@ -32,7 +32,7 @@ You can use the Content Search eDiscovery tool in the compliance center in Offic
     
 - Office 365 Groups
     
-After you run a Content Search, the number of content locations and an estimated number of search results are displayed in the search profile. You can also quickly view statistics, such as the content locations that have the most items that match the search query. After you run a search, you can preview the results or export them to a local computer.
+After you run a Content Search, the number of content locations and an estimated number of search results are displayed in the search statistics. You can also quickly view statistics, such as the content locations that have the most items that match the search query. After you run a search, you can preview the results or export them to a local computer.
 
 ## Create a search
 
@@ -98,11 +98,10 @@ To have access to the **Content search** page to run searches and preview and ex
 To access this content search again or access other content searches listed on the **Content search** page, select the search and then click **Open**. 
   
 To clear the results or create another search, click ![Add icon](media/O365-MDM-CreatePolicy-AddIcon.gif) **New search**. 
-
   
 ## Preview search results
 
-There are two configuration settings for previewing search results. After you run a new search or open an existing search, click ** Individual results ** to view the following preview settings: 
+There are two configuration settings for previewing search results. After you run a new search or open an existing search, click **Individual results** to view the following preview settings: 
   
 ![Preview search results settings](media/83519477-1c85-4442-8886-481f186fd758.png)
   
@@ -128,7 +127,7 @@ To view search statistics:
     
 2. On the flyout page, click **Open query**. 
     
-3. In the **Individual results** drop down list, click **Search profile**.
+3. In the **Individual results** drop down list, click **Search statistics**.
     
 4. In the **Type** drop down list, click one of the following options depending on the search statistics you want to view. 
     
