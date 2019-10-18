@@ -44,11 +44,9 @@ Archiving in Office 365 helps to preserve a wide range of data, including email,
 
 ## Audits, reports, and certificates
 
-[Azure & CFTC Rule 1.31](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=19b08fd4-d276-43e8-9461-715981d0ea20&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_GRC_Assessment_Reports)
-    - SEC 17a-4(f) & CFTC 1.31(c-d) Compliance Assessment of Azure Storage
+[Azure & CFTC Rule 1.31 — SEC 17a-4(f) & CFTC 1.31(c-d) Compliance Assessment of Azure Storage
 
-[Office 365 & CFTC Rule 1.31](https://www.microsoft.com/microsoft-365/blog/2015/11/10/office-365-exchange-online-archiving-now-meets-sec-rule-17a-4-requirements/)
-    - Archiving in Office 365, data retention, and SEC Rule 17a-4 compliance
+[Office 365 & CFTC Rule 1.31 — Archiving in Office 365, data retention, and SEC Rule 17a-4 compliance
 
 ## How to implement
 

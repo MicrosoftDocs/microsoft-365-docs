@@ -21,7 +21,7 @@ The Committee on National Security Systems (CNSS) is a governmental organization
   
 The CNSSI 1253 builds on NIST SP 800-53, which provides the control baseline for the FedRAMP High authorization. There are, however, some key differences between the CNSSI 1253 and NIST publications.  
   
-For example, the CNSSI 1253 approach explicitly defines the associations of Confidentiality, Integrity, and Availability with security controls, and refines the use of security control overlays for the national security community. The CNSS uses a separate Low, Medium, and High category for each of these three security objectives. This results in categorizations such as Moderate-Moderate-Low—Moderate Confidentiality, Moderate Integrity, and Low Availability. CNSSI 1253 then provides the appropriate security baselines for each possible system categorization using controls from NIST SP 800-53.
+For example, the CNSSI 1253 approach explicitly defines the associations of Confidentiality, Integrity, and Availability with security controls, and refines the use of security control overlays for the national security community. The CNSS uses a separate Low, Medium, and High category for each of these three security objectives. This results in categorizations such as Moderate-Moderate-Low — Moderate Confidentiality, Moderate Integrity, and Low Availability. CNSSI 1253 then provides the appropriate security baselines for each possible system categorization using controls from NIST SP 800-53.
 
 ## Microsoft and CNSSI 1253
 
