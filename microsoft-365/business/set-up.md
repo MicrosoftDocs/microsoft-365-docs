@@ -17,12 +17,12 @@ ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
 - MSB365
+- OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: "Learn how to set up Microsoft 365 Business."
-ms.custom: OKR_SMB_M365
 ---
 
 # Set up Microsoft 365 Business in the setup wizard

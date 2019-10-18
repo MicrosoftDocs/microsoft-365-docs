@@ -40,7 +40,7 @@ Customers seeking to host ITAR-regulated data should work with their Microsoft a
 
 **Where can I request compliance information?**
 
-Please contact your Microsoft account representative.
+Contact your Microsoft account representative.
 
 ## Resources
 
