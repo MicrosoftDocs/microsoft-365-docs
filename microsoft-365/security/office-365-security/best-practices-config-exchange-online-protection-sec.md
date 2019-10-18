@@ -41,11 +41,11 @@ These methods handle outbound email from Office 365, and help destination system
 
 ## Anti-Spam, Anti-Malware, and Anti-Phishing
 
-Both anti-spam and anti-malware are features of EOP. Spam filtering, on by default in Office 365, scans all mail and assigns a Spam Confidence Level (SCL) number value to each mail. Just to clarify, its purpose is to enumerate how confident the filter is that the mail is (or isn't) spam. Low values, like -1 are non-spam from safe senders and lands in a user Inbox. High scores, like 7, 8, or 9 are either highly suspect, or known spammers and heads for a user's Junk Mail, or administrator-accessible Quarantine.
+Both anti-spam and anti-malware are features of EOP. Spam filtering, on by default in Office 365, scans all mail and assigns a Spam Confidence Level (SCL) number value to each mail. Just to clarify, its purpose is to enumerate how confident the filter is that the mail is (or isn't) spam. Low values, like -1, 0, 1 are whitelisted or non-spam messages that land in a user Inbox. High score, like  9 is either highly suspect, or known spammers and heads for a user's Junk Mail, or administrator-accessible Quarantine.
 
 Malware filtering is also on by default in Office 365. Like anti-spam filtering, anti-malware filters work on both inbound and outbound mail. In both cases this protection can be configured for a better fit, by admins.
 
-Phising filters are on by default in Office 365, but should be configured for a better fit. Here's what we would recommend for Anti-Phishing in EOP.
+Phishing filters are on by default in Office 365, but should be configured for a better fit. Here's what we would recommend for Anti-Phishing in EOP.
 
 ### Anti-Spam
 
@@ -54,9 +54,9 @@ Phising filters are on by default in Office 365, but should be configured for a 
 |Quarantine retention period    |   Yes      |     Yes    |   30 days   |
 |End user spam notification frequency   |   Yes      |     Yes    |   3 days   |
 |Zero Hour Autopurge should be enabled   |   Yes      |     Yes    |   True  |
-|Spam detection action should be sent to | JMF | Quarantine | - |
+|Spam detection action should be sent to | MoveToJmf | Quarantine | - |
 |High confidence spam detection action should be sent to | Quarantine | Quarantine| - |
-|Bulk detection action should be set to | JMF | Quarantine | - |
+|Bulk detection action should be set to | MoveToJmf | Quarantine | - |
 |Set Bulk email threshold to | 6 | 4 | - |
 |Safety tips should be enabled| True | True | - |
 |Enable end user spam notification| True | False | - |
@@ -113,9 +113,9 @@ Recommended for **ON** in both Recommended and Aggressive Levels:
 |EnableSimilarUsersSafetyTips | True | True | - |
 |EnableSimilarDomainsSafetyTips | True | True | - |
 |EnableUnusualCharactersSafetyTips | True | True | - |
-|TargetedUserProtectionAction |NoAction |Block | - |
-|MailboxIntelligenceProtectionAction |NoAction |Block | - |
-|TargetedDomainProtectionAction |NoAction |Block | - |
+|TargetedUserProtectionAction |MoveToJmf |Quarantine| - |
+|MailboxIntelligenceProtectionAction |NoAction + Safety Tip|Block | - |
+|TargetedDomainProtectionAction |MoveToJmf |Quarantine| - |
 |AuthenticationFailAction |MoveToJmf |Quarantine | - |
 |AntiSpoofEnforcementType |High |High | - |
 |EnableAuthenticationSafetyTip |False |True | - |
@@ -148,9 +148,9 @@ If you've added an Office 365 ATP subscription to your EOP, be sure to set the f
 |Enable Anti-impersonation protection | Yes | Yes | - |
 |Enable Mailbox intelligence in Anti-Impersonation policies | Yes | Yes | - |
 |Enable Mailbox intelligence based Impersonation protection | Yes | Yes | - |
-|Domain Impersonation action should be | JMF | Quarantine | - |
-|User Impersonation action should be | JMF | Qurantine | - |
-|Mailbox intelligence based impersonation protection action should be |Tip  |JMF | - |
+|Domain Impersonation action should be | MoveToJmf | Quarantine | - |
+|User Impersonation action should be | MoveToJmf | Qurantine | - |
+|Mailbox intelligence based impersonation protection action should be | No Action + Safety Tip  | MoveToJmf | - |
 
 ### Safe Links and Safe Attachments
 
@@ -191,7 +191,7 @@ Security feature name  |Recommended |Aggressive  |Comment  |
 |Implement Domain-based Message Reporting and Conformance (DMARC) with reject or quarantine action |action=none |action=reject | |
 |Deploy Report Message add-on to improve End User Reporting of Suspicious Emails |Yes |Yes |- |
 |Schedule Malware and Spam Reports |Yes |Yes |- |
-|Auto-fowarding to external domains should be disallowed or monitored |- |Yes |- |
+|Auto-forwarding to external domains should be disallowed or monitored |- |Yes |- |
 |Unified Auditing should be enabled |Yes |Yes |- |
 |IMAP should be disabled where not required |- |disabled |- |
 |POP should be disabled where not required |- |disabled |- |
