@@ -17,7 +17,7 @@ hideEdit: true
 
 ## CJIS overview
 
-The Criminal Justice Information Services (CJIS) Division of the US Federal Bureau of Investigation (FBI) gives state, local, and federal law enforcement and criminal justice agencies access to criminal justice information (CJI)—for example, fingerprint records and criminal histories. Law enforcement and other government agencies in the United States must ensure that their use of cloud services for the transmission, storage, or processing of CJI complies with the [CJIS Security Policy](http://aka.ms/cjis-security-policy), which establishes minimum security requirements and controls to safeguard CJI.
+The Criminal Justice Information Services (CJIS) Division of the US Federal Bureau of Investigation (FBI) gives state, local, and federal law enforcement and criminal justice agencies access to criminal justice information (CJI) — for example, fingerprint records and criminal histories. Law enforcement and other government agencies in the United States must ensure that their use of cloud services for the transmission, storage, or processing of CJI complies with the [CJIS Security Policy](http://aka.ms/cjis-security-policy), which establishes minimum security requirements and controls to safeguard CJI.
 
 The CJIS Security Policy integrates presidential and FBI directives, federal laws, and the criminal justice community’s Advisory Policy Board decisions, along with guidance from the National Institute of Standards and Technology (NIST). The Policy is periodically updated to reflect evolving security requirements.
 
@@ -27,7 +27,7 @@ In addition, all private contractors who process CJI must sign the CJIS Security
 
 ## Microsoft and CJIS Security Policy
 
-Microsoft will sign the CJIS Security Addendum in states with CJIS Information Agreements. These tell state law enforcement authorities responsible for compliance with CJIS Security Policy how Microsoft's cloud security controls help protect the full lifecycle of data and ensure appropriate background screening of operating personnel with access to CJI. Microsoft continues to work with state governments to enter into CJIS Information Agreements.
+Microsoft signs the CJIS Security Addendum in states with CJIS Information Agreements. These tell state law enforcement authorities responsible for compliance with CJIS Security Policy how Microsoft's cloud security controls help protect the full lifecycle of data and ensure appropriate background screening of operating personnel with access to CJI. Microsoft continues to work with state governments to enter into CJIS Information Agreements.
 
 Microsoft has assessed the operational policies and procedures of Microsoft Azure Government, Microsoft Office 365 U.S. Government, and Microsoft Dynamics 365 U.S. Government, and will attest to their ability in the applicable services agreements to meet FBI requirements for the use of in-scope services.
 
@@ -42,7 +42,7 @@ Learn how to accelerate your CJIS Security policy with our Azure Security and Co
 - [Office 365 U.S. Government](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 - Power BI cloud service either as a standalone service or as included in an Office 365 branded plan or suite
 
-## Audits, reports and certificates
+## Audits, reports, and certificates
 
 The FBI does not offer certification of Microsoft compliance with CJIS requirements. Instead, a Microsoft attestation is included in agreements between Microsoft and a state’s CJIS authority, and between Microsoft and its customers.
 
@@ -54,7 +54,7 @@ The FBI does not offer certification of Microsoft compliance with CJIS requireme
 
 Alabama, Alaska, Arkansas, Arizona, California, Colorado, Florida, Georgia, Hawaii, Illinois, Indiana, Iowa, Kansas, Kentucky, Maine, Massachusetts, Michigan, Minnesota, Missouri, Montana, New Jersey, New York, Nevada, North Carolina, Oklahoma, Oregon, Pennsylvania, Rhode Island, South Carolina, Tennessee, Texas, Utah, Vermont, Virginia, Washington, Washington D.C., West Virginia.
 
-Microsoft's commitment to meeting the applicable CJIS regulatory controls allows Criminal Justice organizations to implement cloud based solutions and be compliant with CJIS Security Policy V5.7.
+Microsoft's commitment to meeting the applicable CJIS regulatory controls allows Criminal Justice organizations to implement cloud-based solutions and be compliant with CJIS Security Policy V5.7.
 
 ## Frequently asked questions
 

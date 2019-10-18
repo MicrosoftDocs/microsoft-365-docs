@@ -23,14 +23,14 @@ In 2014, the ISO adopted ISO/IEC 27018:2014, an addendum to ISO/IEC 27001, the f
 
 Microsoft and ISO/IEC 27018
 
-At least once a year, Microsoft Azure and Azure Germany are audited for compliance with ISO/IEC 27001 and ISO/IEC 27018 by an accredited third party certification body, providing independent validation that applicable security controls are in place and operating effectively. As part of this compliance verification process, the auditors validate in their statement of applicability that Microsoft in-scope cloud services and commercial technical support services have incorporated ISO/IEC 27018 controls for the protection of PII in Azure. To remain compliant, Microsoft cloud services must be subject to annual third-party reviews.
+At least once a year, Microsoft Azure and Azure Germany are audited for compliance with ISO/IEC 27001 and ISO/IEC 27018 by an accredited third-party certification body, providing independent validation that applicable security controls are in place and operating effectively. As part of this compliance verification process, the auditors validate in their statement of applicability that Microsoft in-scope cloud services and commercial technical support services have incorporated ISO/IEC 27018 controls for the protection of PII in Azure. To remain compliant, Microsoft cloud services must be subject to annual third-party reviews.
 
-By following the standards of ISO/IEC 27001 and the code of practice embodied in ISO/IEC 27018, Microsoft—the first major cloud provider to incorporate this code of practice—demonstrates that its privacy policies and procedures are robust and in line with its high standards.
+By following the standards of ISO/IEC 27001 and the code of practice embodied in ISO/IEC 27018, Microsoft — the first major cloud provider to incorporate this code of practice — demonstrates that its privacy policies and procedures are robust and in line with its high standards.
 
 - **Customers of Microsoft cloud services know where their data is stored.** Because ISO/IEC 27018 requires certified CSPs to inform customers of the countries in which their data may be stored, Microsoft cloud service customers have the visibility they need to comply with any applicable information security rules.
 - **Customer data won’t be used for marketing or advertising without explicit consent.** Some CSPs use customer data for their own commercial ends, including for targeted advertising. Because Microsoft has adopted ISO/IEC 27018 for its in-scope enterprise cloud services, customers can rest assured that their data will never be used for such purposes without explicit consent, and that consent cannot be a condition for use of the cloud service.
 - **Microsoft customers know what’s happening with their PII.** ISO/IEC 27018 requires a policy that allows for the return, transfer, and secure disposal of personal information within a reasonable period of time. If Microsoft works with other companies that need access to your customer data, Microsoft proactively discloses the identities of those sub-processors.
-- **Microsoft will comply only with legally binding requests for disclosure of customer data.** If Microsoft must comply with such a request—as in the case of a criminal investigation—it will always notify the customer unless it is prohibited by law from doing so.
+- **Microsoft complies only with legally binding requests for disclosure of customer data.** If Microsoft must comply with such a request — as in the case of a criminal investigation — it will always notify the customer unless it is prohibited by law from doing so.
 
 Learn about the benefits of ISO-Iec-27018 on the Microsoft Cloud: [Download the ISO/IEC 27017 backgrounder](https://aka.ms/iso27017-backgrounder)
 
@@ -52,9 +52,9 @@ Learn about the benefits of ISO-Iec-27018 on the Microsoft Cloud: [Download the 
 - Power BI cloud service either as a standalone service or as included in an Office 365 branded plan or suite
 - Stream
 - Azure DevOps Services
-- Windows Defender ATP - Endpoint Detection & Response, Automatic Investigation & Remediation, Secure Score
+- Windows Defender ATP — Endpoint Detection & Response, Automatic Investigation & Remediation, Secure Score
 
-## Audits, reports and certificates
+## Audits, reports, and certificates
 
 ### Audit cycle
 
@@ -62,14 +62,14 @@ Microsoft cloud and commercial technical support services are audited once a yea
 
 ### Audits and reports
 
-- [Azure, Intune, Power BI, Cloud App Security, Microsoft PowerApps, Microsoft Flow, Microsoft Graph, Microsoft Genomics, and Microsoft Datacenter - ISO 27001 and 27018 Certificate](https://go.microsoft.com/fwlink/p/?linkid=2078016)
-- [Azure, Intune, Power BI, Cloud App Security, Microsoft PowerApps, Microsoft Flow, Microsoft Graph, Microsoft Genomics, and Microsoft Datacenter - ISO 27001 and 27018 Audit Assessment Report](https://go.microsoft.com/fwlink/p/?linkid=2078020)
-- [Azure, Intune, Power BI, Cloud App Security, Microsoft PowerApps, Microsoft Flow, Microsoft Graph, Microsoft Genomics, and Microsoft Datacenter - ISO 27001 and 27018 Statement of Applicability (SOA) 2017](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=47d89200-b24b-491d-b657-7c523ddfb6f9&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports)
-- [Azure - Germany ISO 27018 - Code of Practice for Protecting Personal Data in the Cloud - Certificate](https://servicetrust.microsoft.com/Documents/ComplianceReports?downloadDocument=1&documentId=6a0dab80-8382-4af6-980c-ed2ed9a341c6)
+- [Azure, Intune, Power BI, Cloud App Security, Microsoft PowerApps, Microsoft Flow, Microsoft Graph, Microsoft Genomics, and Microsoft Datacenter — ISO 27001 and 27018 Certificate](https://go.microsoft.com/fwlink/p/?linkid=2078016)
+- [Azure, Intune, Power BI, Cloud App Security, Microsoft PowerApps, Microsoft Flow, Microsoft Graph, Microsoft Genomics, and Microsoft Datacenter — ISO 27001 and 27018 Audit Assessment Report](https://go.microsoft.com/fwlink/p/?linkid=2078020)
+- [Azure, Intune, Power BI, Cloud App Security, Microsoft PowerApps, Microsoft Flow, Microsoft Graph, Microsoft Genomics, and Microsoft Datacenter — ISO 27001 and 27018 Statement of Applicability (SOA) 2017](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=47d89200-b24b-491d-b657-7c523ddfb6f9&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports)
+- [Azure — Germany ISO 27018 — Code of Practice for Protecting Personal Data in the Cloud — Certificate](https://servicetrust.microsoft.com/Documents/ComplianceReports?downloadDocument=1&documentId=6a0dab80-8382-4af6-980c-ed2ed9a341c6)
 
 ### Office 365
 
-- [Office 365 - ISO 27001, ISO 27018, and ISO 27017 Audit Assessment Report](https://aka.ms/o365isoreport)
+- [Office 365 — ISO 27001, ISO 27018, and ISO 27017 Audit Assessment Report](https://aka.ms/o365isoreport)
 - [Yammer ISO 27018 Audit Assessment Report](https://aka.ms/YammerISO27018Auditreport)
 
 ### Dynamics 365
@@ -84,8 +84,8 @@ Microsoft cloud and commercial technical support services are audited once a yea
 
 ### Windows Defender ATP
 
-- [Windows Defender ATP - Endpoint Detection & Response, Automatic Investigation & Remediation, Secure Score - ISO 27018 certificate](https://aka.ms/windowsdefenderatpiso27018certificate)
-- [Windows Defender ATP - Endpoint Detection & Response, Automatic Investigation & Remediation, Secure Score - ISO 27001 and 27018 Audit Assessment Report](https://aka.ms/WindowsDefenderATPISO27001AuditReport)
+- [Windows Defender ATP — Endpoint Detection & Response, Automatic Investigation & Remediation, Secure Score — ISO 27018 certificate](https://aka.ms/windowsdefenderatpiso27018certificate)
+- [Windows Defender ATP — Endpoint Detection & Response, Automatic Investigation & Remediation, Secure Score — ISO 27001 and 27018 Audit Assessment Report](https://aka.ms/WindowsDefenderATPISO27001AuditReport)
 
 ## Frequently asked questions
 
@@ -98,7 +98,7 @@ This code of practice applies to CSPs that process PII under contract for other 
 In the context of ISO/IEC 27018:
 
 - “Controllers” control the collection, holding, processing, or use of personal information; they include those who control it on another company’s behalf.
-- “Processors” process information on behalf of controllers; they do not make decisions as to how to use the information or the purposes of the processing. In providing its enterprise cloud services, Microsoft—as a vendor to you—is an information processor.
+- “Processors” process information on behalf of controllers; they do not make decisions as to how to use the information or the purposes of the processing. In providing its enterprise cloud services, Microsoft — as a vendor to you — is an information processor.
 
 **Where can I view Microsoft compliance information for ISO/IEC 27018?**
 
@@ -108,9 +108,9 @@ In the context of ISO/IEC 27018:
 
 **Can I use Microsoft’s compliance in my organization’s certification process?**
 
-Yes. If compliance with ISO/IEC 27018 is important for your business and implementations deployed on any of Microsoft in-scope enterprise cloud services, you can use Microsoft’s attestation of compliance with ISO/IEC 27018 in conjunction with Microsoft’s certification for ISO/IEC 27001 in your compliance assessment.
+Yes. If compliance with ISO/IEC 27018 is important for your business and implementations deployed on any of Microsoft in-scope enterprise cloud services, you can use Microsoft’s attestation of compliance with ISO/IEC 27018 with Microsoft’s certification for ISO/IEC 27001 in your compliance assessment.
 
-However, you are responsible for engaging an assessor to evaluate your implementation for compliance, as well as for the controls and processes within your own organization.
+However, you are responsible for engaging an assessor to evaluate your implementation for compliance, and for the controls and processes within your own organization.
 
 ## Resources
 
