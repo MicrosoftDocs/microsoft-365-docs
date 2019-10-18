@@ -122,6 +122,6 @@ Groups allow you to organize assessments in a way that is logical to you. For ex
 
 Read more about [working with groups in Compliance Manager](working-with-compliance-manager.md#groups).
 
-## Getting started
+## Next step
 
-The next step is to read [Working with Compliance Score](working-with-compliance-score.md) for detailed instructions on accessing, optimizing, and working with Compliance Score.
+Sign in, set up permissions, and learn about your dashboard in [Compliance Score setup](compliance-score-setup.md).
