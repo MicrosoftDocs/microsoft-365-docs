@@ -17,7 +17,7 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Proactively hunt for threats with advanced hunting
+# Proactively hunt for threats with Advanced hunting
 
 **Applies to**:
 - Microsoft 365 security center
@@ -33,7 +33,7 @@ In Microsoft 365 security center, Advanced hunting supports queries that look in
 | Custom detections | Not available  | Available |
 | Shared queries | Available  | Available — queries are shared with M365 security center |
 
-## Get started with advanced hunting
+## Get started with Advanced hunting
 
 We recommend going through several steps to quickly get up and running with advanced hunting.
 
