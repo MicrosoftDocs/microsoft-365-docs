@@ -5,6 +5,8 @@ author: cmcatee-MSFT
 manager: mnirkhe
 audience: Admin
 ms.topic: article
+f1_keywords:
+- 'MACBillingBillsPaymentsBillingProfiles'
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
