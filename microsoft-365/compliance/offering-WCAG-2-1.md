@@ -49,8 +49,7 @@ Find WCAG reports for all our products and services.
 
 ## Resources
 
-[Microsoft accessibility site](https://go.microsoft.com/fwlink/?linkid=2055323)
-    - Get information on using accessibility features and explore the ways Microsoft innovates to help everyone achieve more.
+[Microsoft accessibility site — Get information on using accessibility features and explore the ways Microsoft innovates to help everyone achieve more.
 
 [Office 365 Accessibility Center](https://go.microsoft.com/fwlink/p/?linkid=2051801)
     - Office 365 resources for people with disabilities.
