@@ -24,7 +24,7 @@ Billing profiles include the following information:
 - **Billing account** &mdash; Name of the billing account the profile is related to
 - **Payment methods** &mdash; Credit or debit cards, bank accounts, check, or wire transfer
 - **Contact information** &mdash; Billing address and a contact name
-- **Invoice settings** &mdash; Currency based on the country of the billing account, an optional PO number, the option to receive invoices as email attachments
+- **Invoice settings** &mdash; Currency based on the country of the billing account, an optional PO number, and the option to receive invoices as email attachments
 - **Permissions** &mdash; Permissions that allow you to change the billing profile, pay bills, or use the payment method on the billing profile to make purchases
 
 Use billing profiles to control your purchases and customize your invoice. A monthly invoice is generated for the products bought with the
@@ -51,16 +51,16 @@ Roles on billing profiles have permissions to control purchases, and view and ma
 
 2. Choose **Billing profiles**, and then choose a billing profile from the list.
 
-    - On **Overview**, you can edit billing profile details, and turn on or off sending an invoice by email.
+    - On the **Overview** tab, you can edit billing profile details, and turn on or off sending an invoice by email.
 
-    - On **Permissions**, you can assign roles to users to pay invoices.
+    - On the **Permissions** tab, you can assign roles to users to pay invoices.
 
-    - On **Azure credit balance**, Azure customers can see transaction balance history for the Azure credits used by that billing profile.
+    - On the **Azure credit balance** tab, Azure customers can see transaction balance history for the Azure credits used by that billing profile.
 
-    - On **Azure credits**, Azure customers can see a list of Azure credits associated with that billing profile, and their expiration dates.
+    - On the **Azure credits** tab, Azure customers can see a list of Azure credits associated with that billing profile, and their expiration dates.
 
     > [!NOTE]
-    > If you don't have any Azure credits, you won't see **Azure credit balance** or **Azure credits** tabs.
+    > If you don't have any Azure credits, you won't see the **Azure credit balance** or **Azure credits** tabs.
 
 ## Need help? Contact support.
 
