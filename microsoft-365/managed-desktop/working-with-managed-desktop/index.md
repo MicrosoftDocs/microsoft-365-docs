@@ -5,16 +5,13 @@ keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.date: 06/06/2018
 ms.collection: M365-modern-desktop
 ---
 
 # Working with Microsoft Managed Desktop
 
-After working with your Microsoft Account team to onboard to Microsoft Managed Desktop, you can use the [Admin portal](https://aka.ms/mmdportal) to manage your environment. 
+This section includes information about your day-to-day life with the service, such as how your IT admins can get support if needed, how your end users get support, managing your apps once deployed, and how to work the customizable settings on devices.
 
-## In this section
-
-- [End user support for Microsoft Managed Desktop](end-user-support.md)
 - [Admin support for Microsoft Managed Desktop](admin-support.md)
-- [Manage apps in Microsoft Managed Desktop](manage-apps.md)
+- [Getting help for end users](end-user-support.md)
+- [Configurable settings - Microsoft Managed Desktop](config-setting-overview.md)
