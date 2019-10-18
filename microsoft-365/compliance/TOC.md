@@ -18,7 +18,7 @@
 ## Customer Key
 ### [Controlling your data in Office 365 using Customer Key](controlling-your-data-using-customer-key.md)
 ### [Service encryption with Customer Key for Office 365 FAQ](service-encryption-with-customer-key-faq.md)
-## [Supervision]()
+## [Supervise communications]()
 ### [Learn about supervision policies](supervision-policies.md)
 ### [Configure supervision policies for your organization](configure-supervision-policies.md)
 ## [Information barriers](information-barriers.md)
@@ -125,6 +125,7 @@
 ### [Watch videos from the Microsoft Data Governance team](https://go.microsoft.com/fwlink/?linkid=867039)
 ## Records management
 ### [Records management](records-management.md)
+### [Records](records.md)
 ### File plan
 #### [File plan manager](file-plan-manager.md)
 #### [Retention labels](labels.md)
@@ -350,7 +351,7 @@
 ## [Manage mailbox auditing](enable-mailbox-auditing.md)
 ## [Detailed properties in the audit log](detailed-properties-in-the-office-365-audit-log.md)
 ## [Export, configure, and view audit log records](export-view-audit-log-records.md)
-## [Use the audit log to troubleshoot common scenarios](auditing-troubleshooting-scenarios.md)
+## [Use the audit log to investigate common issues](auditing-troubleshooting-scenarios.md)
 ## [Use sharing auditing in the audit log](use-sharing-auditing.md)
 ## [Search for eDiscovery activities in the audit log](search-for-ediscovery-activities-in-the-audit-log.md)
 

@@ -25,7 +25,7 @@ On a practical level, compliance with EU data protection laws also means that cu
 
 Microsoft has invested in the operational processes necessary to meet the exacting requirements of the Model Clauses for the transfer of personal data to processors. Microsoft offers customers Model Clauses, referred to as Standard Contractual Clauses, that make specific guarantees around transfers of personal data for in-scope Microsoft services. This ensures that Microsoft customers can freely move data through the Microsoft cloud from the EEA to the rest of the world.
 
-However, Microsoft enterprise customers, who are the controllers of the personal data, carry the primary obligation to protect that data. This means that EEA enterprise customers have a strong interest in ensuring that their service provider abides by EU data protection laws, or the customer can face liability—and even blockage of its ability to use a service.
+However, Microsoft enterprise customers, who are the controllers of the personal data, carry the primary obligation to protect that data. This means that EEA enterprise customers have a strong interest in ensuring that their service provider abides by EU data protection laws, or the customer can face liability — and even blockage of its ability to use a service.
 
 Microsoft provided its Standard Contractual Clauses to the EU's Article 29 Working Party for review and approval. The Article 29 Working Party includes representatives from the European Data Protection Supervisor, the European Commission, and each of the 28 EU data protection authorities (DPAs).
 
@@ -49,7 +49,7 @@ Learn about the benefits of European Union Model Clauses on the Microsoft Cloud
 - Azure DevOps Services
 - Windows Defender Advanced Threat Protection for the following cloud service portions: Endpoint Detection & Response, Automatic Investigation & Remediation, Secure Score.
 
-## Audits, Reports and certificates
+## Audits, reports, and certificates
 
 Microsoft continually assesses the EU standards, and updates its services as needed.
 
@@ -69,7 +69,7 @@ Compliance is a contractual commitment. Microsoft Standard Contractual Clauses a
 
 **What is a "sub-processor"?**
 
-A "sub-processor" is someone who processes personal data following the data controller’s instructions, as well as the terms of the EU Model Clauses and the subcontract. Microsoft customers—independent software vendors (ISVs), in particular—are sometimes themselves data processors; in those instances, Microsoft is the sub-processor.
+A "sub-processor" is someone who processes personal data following the data controller’s instructions, and the terms of the EU Model Clauses and the subcontract. Microsoft customers—independent software vendors (ISVs), in particular — are sometimes themselves data processors. In those instances, Microsoft is the sub-processor.
 
 **Where do I start with my own organization’s compliance efforts?**
 

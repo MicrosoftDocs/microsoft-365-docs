@@ -15,12 +15,12 @@ ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
 - MSB365
+- OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 96153102-1db1-4df8-bca5-38cea80b65ce
 description: "Learn how to add new users, secure their devices,  and assign roles in Microsoft 365 Business."
-ms.custom: OKR_SMB_M365
 ---
 
 # Add additional users to Microsoft 365 Business

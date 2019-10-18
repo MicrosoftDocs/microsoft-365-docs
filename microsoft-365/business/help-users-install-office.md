@@ -15,12 +15,12 @@ ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
 - MSB365
+- OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: cbc6bfe5-565a-4fb8-95f0-b06e7b74ac46
-description: "Help your users install Office apps. "
-ms.custom: OKR_SMB_M365
+description: "Help your users install Office apps."
 ---
 
 # Help your users install Office on Windows 10 devices

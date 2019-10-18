@@ -13,11 +13,11 @@ ms.collection:
 ms.custom:
 - MiniMaven
 - MSB365
+- OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 description: "Set up multi-factor authentication for Microsoft 365 Business."
-ms.custom: OKR_SMB_M365
 ---
 
 # Multi-factor authentication
