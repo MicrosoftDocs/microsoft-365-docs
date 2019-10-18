@@ -54,7 +54,7 @@ The charges pages show the cost broken down by product. For Azure customers, thi
 
 | Term |Description |
 | --- | --- |
-| Unit price | The effective unit price of the service (in pricing currency) that is used to the rate the usage. This is unique for a product, service family, meter, and offer. |
+| Unit price | The effective unit price of the service (in pricing currency) that is used to calculate the charge. This is unique for a product, service family, meter, and offer. |
 | Qty | Quantity purchased or consumed during the billing period |
 | Charges/Credits | Net amount of charges after credits/refunds are applied |
 | Azure Credit | The amount of Azure credits applied to the Charges/Credits |
