@@ -34,7 +34,7 @@ These methods handle outbound email from Office 365, and help destination system
 |---------|---------|---------|---------|
 |[Create SPF records](https://docs.microsoft.com/en-us/office365/securitycompliance/set-up-spf-in-office-365-to-help-prevent-spoofing)    | Yes        |    Yes     |   -      |
 |[Configure DKIM Signing for Domains](https://docs.microsoft.com/en-us/office365/securitycompliance/use-dkim-to-validate-outbound-email)     |  Yes       |    Yes     |  -       |
-|[Implement DMARC with reject or quarantine action](https://docs.microsoft.com/en-us/office365/securitycompliance/use-dmarc-to-validate-email)     |   Yes      |     Yes    |   Use action=none for Recommended, and action=reject for Aggressive.     |
+|[Implement DMARC with reject or quarantine action](https://docs.microsoft.com/en-us/office365/securitycompliance/use-dmarc-to-validate-email)     |   Yes      |     Yes    |   Use action=quarantine for Recommended, and action=reject for Aggressive.     |
 
 > [!IMPORTANT]
 > To work with security roles and permissions, be sure you have the right role or roles in Office 365 or the Security and Compliance Center. If you are a *Security Administrator* in Azure Active Directory, a *Global Administrator* in Office 365, or an *Exchange Online Organizational Manager* in Exchange Online/Exchange Online Powershell, you're ready to go.
@@ -45,26 +45,27 @@ Both anti-spam and anti-malware are features of EOP. Spam filtering, on by defau
 
 Malware filtering is also on by default in Office 365. Like anti-spam filtering, anti-malware filters work on both inbound and outbound mail. In both cases this protection can be configured for a better fit, by admins.
 
-Phising filters are on by default in Office 365, but should be configured for a better fit. Here's what we would recommend for Anti-Phishing in EOP.
+Phising filters are on by default in Office 365, but should be configured for a better fit. Here's what we would recommend for securing your tenant using EOP.
 
-### Anti-Spam
+### Anti-Spam policy
 
-|Security feature name  |Recommended |Aggressive  |Comment  |
+| Security feature name | Recommended | Aggressive | Comment |
 |---------|---------|---------|---------|
-|Quarantine retention period    |   Yes      |     Yes    |   30 days   |
-|End user spam notification frequency   |   Yes      |     Yes    |   3 days   |
-|Zero Hour Autopurge should be enabled   |   Yes      |     Yes    |   True  |
-|Spam detection action should be sent to | JMF | Quarantine | - |
-|High confidence spam detection action should be sent to | Quarantine | Quarantine| - |
-|Bulk detection action should be set to | JMF | Quarantine | - |
-|Set Bulk email threshold to | 6 | 4 | - |
-|Safety tips should be enabled| True | True | - |
-|Enable end user spam notification| True | False | - |
-|Allowed Senders | None | None | - |
-|Allowed Senders Domains | None | None | - |
-|Blocked Senders | None | None | - |
-|Blocked Senders domains | None | None | - |
-|Outbound spam policy RRL | 500 | 500 | - |
+| Spam detection action | Move message to Junk Email folder | Quarantine message | - |
+| High confidence spam detection action | Quarantine message | Quarantine message| - |
+| Phishing email detection action | Quarantine message | Quarantine message | - |
+| Bulk detection action | Move message to Junk Email folder | Quarantine message | - |
+| Bulk email threshold | 6 | 4 | - |
+| Quarantine retention period | Yes | Yes | 30 days |
+| Safety tips should be enabled| On | On | - |
+| Allowed Senders | None | None | - |
+| Allowed Senders Domains | None | None | - |
+| Blocked Senders | None | None | - |
+| Blocked Senders domains | None | None | - |
+| Outbound spam policy RRL | 500 | 500 | - |
+| End user spam notification frequency   |   Yes      |     Yes    |   3 days   |
+| Zero Hour Autopurge should be enabled   |   Yes      |     Yes    |   True  |
+| Enable end user spam notification| True | False | - |
 
 Recommended for **OFF** in both Recommended and Aggressive Levels:
 
@@ -92,22 +93,21 @@ Recommended for **ON** in both Recommended and Aggressive Levels:
 |MarkAsSpamSpfRecordHardFail|
 |MarkAsSpamBulkMail|
 
-### Anti-Malware
+### Anti-Malware policy
 
 |Security feature name  |Recommended |Aggressive  |Comment  |
 |---------|---------|---------|---------|
-|Configure Malware Notifications for Internal Sources |Yes |Yes |- |
-|Disable notifying external senders of malware detection |Yes |Yes |- |
-|Use "Common Attachment Type Filter" for blocking suspicious file types | Yes |Yes |- |
-|Malware ZAP |True |True |- |
-|Malware action |Block |Block |- |
+| Malware Detection Response | Yes and use the default notification text | Yes and use the default notification text | - |
+| "Common Attachment Type Filter" for blocking suspicious file types | On | On | - |
+| Malware Zero-hour Auto Purge | On | On | - |
+| Notify internal senders of the undelivered message | Disabled | Disabled | - |
+| Notify external senders of the undelivered message | Disabled | Disabled | - |
 
-### Anti-Phishing
+### Anti-Phishing policy
 
 |Security feature name  |Recommended |Aggressive  |Comment  |
 |---------|---------|---------|---------|
 |Zero Hour Autopurge should be enabled - Phish| True | True | - | 
-|Phish detection action should be set to | Quarantine - Request | Quarantine - Admin | - |
 |High confidence Phish detection action should be set to | Quarantine - Admin | Quarantine - Admin | - |
 |EnableMailboxIntelligence | True | True | - |
 |EnableSimilarUsersSafetyTips | True | True | - |
@@ -119,8 +119,8 @@ Recommended for **ON** in both Recommended and Aggressive Levels:
 |AuthenticationFailAction |MoveToJmf |Quarantine | - |
 |AntiSpoofEnforcementType |High |High | - |
 |EnableAuthenticationSafetyTip |False |True | - |
-|EnableAntiSpoofEnforcement |True |True | - |
-|EnableUnauthenticatedSender |True |True | - |
+|Enable antispoofing protection |On |On | - |
+|Enable Unauthenticated Sender tagging |On |On | - |
 |EnableAuthenticationSoftPassSafetyTip |False |True | - |
 |TreatSoftPassAsAuthenticated |True |False | - |
 |EnableSuspiciousSafetyTip |True |True | - |
@@ -144,7 +144,7 @@ If you've added an Office 365 ATP subscription to your EOP, be sure to set the f
 
 |Security feature name  |Recommended |Aggressive  |Comment  |
 |---------|---------|---------|---------|
-|Set Advanced phishing threshold to | 2 | 4 | - |
+|Advanced phishing thresholds | 2 | 4 | - |
 |Enable Anti-impersonation protection | Yes | Yes | - |
 |Enable Mailbox intelligence in Anti-Impersonation policies | Yes | Yes | - |
 |Enable Mailbox intelligence based Impersonation protection | Yes | Yes | - |
@@ -158,23 +158,25 @@ If you've added an Office 365 ATP subscription to your EOP, be sure to set the f
 
 #### Safe links
 
-|Security feature name  |Recommended |Aggressive  |Comment  |
+| Security feature name | Recommended | Aggressive | Comment |
 |---------|---------|---------|---------|
-|ATP Safe Links should track user clicks for response purposes |Yes |Yes |- |
-|ATP Safe Links should be enabled for Office Applications |Yes |Yes |- |
-|ATP Safe Links should be enabled for Intra Domain |Yes |Yes |- |
-|ATP Safe Links should apply real-time URL scanning for suspicious links and links that point to files. |Yes |Yes |- |
-|ATP Safe Links should wait for URL scanning to complete before delivering the message. |Yes |Yes |- |
+| Use ATP Safe Links in Office Applications | Enabled | Enabled | - |
+| ATP Safe Links action for unknown potentially malicious URLs in messages | On | On | - |
+| ATP Safe Links should apply real-time URL scanning for suspicious links and links that point to files | Enabled | Enabled | - |
+| ATP Safe Links should wait for URL scanning to complete before delivering the message | Enabled | Enabled | - |
+| ATP Safe Links should not track when users click for safe links | Disabled | Disabled | - |
+| ATP Safe Links should not let users click through safe links to original URL | Disabled | Enabled | - |
 <!--
 |URLs to block | | | |
 |URLs not to wrap | | | |-->
 
 #### Safe Attachments
 
-|Security feature name  |Recommended |Aggressive  |Comment  |
+| Security feature name | Recommended | Aggressive | Comment |
 |---------|---------|---------|---------|
-|ATP Safe Attachment policy action should be |Quarantine |Quarantine |- |
-|ATP protection should be enabled for OneDrive, SharePoint, and Teams |Yes |Yes |- |
+| Turn on ATP for SharePoint, OneDrive, and Microsoft Teams | Enabled | Enabled | - |
+| ATP Safe attachments unknown malware response | Block | Block | - |
+| ATP Safe attachments response if malware scanning for attachments times out or error occurs | Enabled | Enabled | - |
 <!--
 |Allowed file hashes | | | |
 |Blocked file hashes | | | |
