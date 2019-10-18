@@ -21,7 +21,7 @@ The [Financial Industry Regulatory Authority (FINRA)](https://www.finra.org/#/) 
 
 In 2011, the US Security and Exchange Commission (SEC) approved the FINRA adoption of SEC rules governing the retention of books and records on electronic storage media. [FINRA Rule 4511(c)](https://www.finra.org/sites/default/files/NoticeDocument/p123548.pdf) specifies that “all books and records required to be made pursuant to the FINRA rules shall be preserved in a format and media that complies with SEA (Securities Exchange Act) Rule 17a-4.”
 
-Additionally, FINRA Rule 4511(c) requires firms to preserve for a period of at least six years those books and records for which there is no specified retention period under applicable FINRA or SEA rules. Effectively, if the books and records pertain to an account, the retention period is mandated to be six years following account closure; otherwise, the retention period is for six years after such books and records are created.
+Also, FINRA Rule 4511(c) requires firms to preserve for a period of at least six years those books and records for which there is no specified retention period under applicable FINRA or SEA rules. Effectively, if the books and records pertain to an account, the retention period is mandated to be six years following account closure. Otherwise, the retention period is for six years after such books and records are created.
 
 ## Microsoft and FINRA Rule 4511(c)
 

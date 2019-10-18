@@ -23,7 +23,7 @@ Published in 2012 by the technical committee, ISO 22301:2012 is the first intern
 
 ## Microsoft and ISO 22301
 
-Microsoft is the first hyperscale cloud service provider to receive the ISO 22301 certification for business continuity management. An independent certification body awarded this certification to Microsoft Azure, Microsoft Azure Government, Microsoft Office 365 (including Commercial, Government, and Education offerings), Microsoft Cloud App Security, Microsoft Intune, and Microsoft Power BI after a stringent audit covering all aspects of their business continuity processes. The audit covered the in-scope services listed below as well as Azure management features, the Azure Portal, and the systems used to monitor, operate, and update the in-scope services.
+Microsoft is the first hyperscale cloud service provider to receive the ISO 22301 certification for business continuity management. An independent certification body awarded this certification to Microsoft Azure, Microsoft Azure Government, Microsoft Office 365 (including Commercial, Government, and Education offerings), Microsoft Cloud App Security, Microsoft Intune, and Microsoft Power BI after a stringent audit covering all aspects of their business continuity processes. The audit covered the in-scope services listed below and Azure management features, the Azure Portal, and the systems used to monitor, operate, and update the in-scope services.
 
 Learn about the benefits of ISO/IEC 22301 on the Microsoft Cloud: [Download the ISO/IEC 22301 backgrounder](https://aka.ms/iso22301-backgrounder)
 
@@ -39,7 +39,7 @@ Learn about the benefits of ISO/IEC 22301 on the Microsoft Cloud: [Download the 
 - PowerApps cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
 - Power BI cloud service either as a standalone service or as included in an Office 365 branded plan or suite
 
-## Audits, reports and certificates
+## Audits, reports, and certificates
 
 - [Azure and Azure ISO 22301 Certificate of Registration](https://go.microsoft.com/fwlink/p/?linkid=2099078)
 - [Azure ISO 22301 Assessment Report](https://go.microsoft.com/fwlink/p/?linkid=2099079)
@@ -51,7 +51,7 @@ Learn about the benefits of ISO/IEC 22301 on the Microsoft Cloud: [Download the 
 
 **Why is Microsoft compliance with ISO 22301 important?**
 
-ISO 22301 is a certification used by enterprises and governmental organization to show their commitment to serving their customers by achieving the highest available international standard for business continuity management. ISO 22301 is a comprehensive standard which demonstrates the highest level of commitment to business continuity and disaster preparedness.
+ISO 22301 is a certification used by enterprises and governmental organization to show their commitment to serving their customers by achieving the highest available international standard for business continuity management. ISO 22301 is a comprehensive standard that demonstrates the highest level of commitment to business continuity and disaster preparedness.
 
 **Where can I get the ISO 22301 audit reports and scope statements for Microsoft services?**
 
