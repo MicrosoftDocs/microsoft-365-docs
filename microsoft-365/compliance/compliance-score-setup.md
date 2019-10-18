@@ -11,7 +11,7 @@ ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
 - MET150
-description: "Learn how to access, customize, work with Microsoft Compliance Score to help manage compliance for your organization."
+description: "Learn how to sign in, set up permissions, and understand your dashboard for Microsoft Compliance Score, which helps simplify and automate risk assessments."
 ---
 
 # Microsoft Compliance Score setup (Preview)

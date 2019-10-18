@@ -11,7 +11,7 @@ ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
 - MET150
-description: "Learn how to access, customize, work with Microsoft Compliance Score to help manage compliance for your organization."
+description: "Learn how to use the workflow tools in Microsoft Compliance Score to help you manage compliance for your organization."
 ---
 
 # Working with Microsoft Compliance Score (Preview)
@@ -53,15 +53,25 @@ The following data points are listed for each improvement action:
 
 ## Improvement actions details
 
-To view an improvement action's details page, first go to the improvement actions screen (as seen above). Then double-click anywhere in the row of your intended improvement action. A details page opens, and from here you can read detailed implementation instructions, assign it to a users for work, update its status, and attach notes and documentation.
+To view an improvement action's details page, first go to the improvement actions screen, then double-click anywhere in the row of your intended improvement action. A details page opens, and from here you can read detailed implementation instructions, assign it to a users for work, update its status, and attach notes and documentation.
 
 You can easily view the next or previous improvement action in the list by selecting the up or down arrow in the upper-right corner of the screen. If you filtered your list on the **Improvement actions** screen, moving up or down will take you to the next item within that filtered list.
 
 ![Compliance Score - improvement actions details](media/compliance-score-improvement-actions-details.png)
 
+### Implementation instructions
+
+Each improvement action contains detailed instructions under the **Implementation** header. This gives clear guidance on how to take the recommended actions to address the related standards and regulatory requirements listed under the **At a glance** header. The first step then is to assign it to the proper person for action.
+
 ## Assign improvement actions
 
-To begin implementation work on an improvement action, you must assign it to a user to begin work. To assign an improvement action: 
+To begin implementation work on an improvement action, you must assign it to a user to begin work. The assigned person could be:
+
+- A business policy owner
+- An IT implementer
+- Another emplyoee with responsibility to perform the task 
+
+Once the proper person is identified, be sure they have the adequate [permissions](compliance-score-setup.md#permissions) in Compliance Score to perform the work, then take the following steps: 
 
 1. From the improvement actions details page, select **Edit status**. 
 
@@ -72,7 +82,9 @@ To begin implementation work on an improvement action, you must assign it to a u
 ![Compliance Score - improvement actions assign to user](media/compliance-score-improvement-actions-assign.png)
 
 > [!NOTE]
-> The **Suggested people** list pulls from the users roles assigned when you set up permissions. Therefore, be sure the assigned user has the [role](compliance-score-setup.md#set-user-permissions) that gives them the proper level of access to perform necessary functions. 
+> The **Suggested people** list pulls from the users roles assigned when you set up permissions. Therefore, be sure the assigned user has the [role](compliance-score-setup.md#set-user-permissions) that gives them the proper level of access to perform necessary functions.
+
+The assigned user then performs the tasks suggested in the implementation instructions
 
 ## Store documentation in improvement actions
 
@@ -115,7 +127,7 @@ You can designate implementation and testing status for improvement actions. Bel
 
 ## Working on solutions
 
-Approaching your work from the **Solutions screen** is another way to start actions that will improve your compliance score. This screen shows the share of earned and potential points as organized by compliance solution areas—some of which will be specific to Microsoft (e.g., Azure AD Identity Protection, OneDrive for Business), while others describe solution areas in the Microsoft 365 and Office 365 security and compliance centers (e.g., data investigation, records management). Viewing your remaining points and improvement actions from this view helps you understand the overall solution areas which may need more immediate attention.
+Approaching your work from the **Solutions screen** is another way to begin actions to improve your compliance score. This screen shows the share of earned and potential points as organized by compliance solution areas—some of which will be specific to Microsoft (e.g., Azure AD Identity Protection, OneDrive for Business), while others describe solution areas in the Microsoft 365 and Office 365 security and compliance centers (e.g., data investigation, records management). Viewing your remaining points and improvement actions from this view helps you understand the overall solution areas which may need more immediate attention.
 
 The **Solutions that affect your score** section on your Compliance Score dashboard shows the solutions with the greatest potential to positively impact your score. Selecting **View all solutions** in that section, or selecting **Solutions** on the top navigation of your dashboard, displays the solutions screen showing all your solutions, as seen below:
 
@@ -138,7 +150,7 @@ There are two ways you can take action from this screen:
 
 2. On the row of your intented solution, under the **Open solution** column, select **Open**. This takes you to the Microsft solution or location in the Microsoft 365 and Office 365 security and compliance centers where you can take the recommended action.
 
-## Working on assessments
+## Work with assessments
 
 The assessments screen lists the assessments set up for your organization by both you and Microsoft. It lists only assessments that have not yet started, are in progress, or are not yet compliant. Any assessments you may have previously tested and implemented are archived in Compliance Manager.
 
@@ -174,4 +186,4 @@ From the assessment list, under the **Customer-managed actions** column, select 
 
 ## Reporting
 
-Link to reporting in compliance center..do those tools pull data from Compliance Score?...https://docs.microsoft.com/en-us/microsoft-365/compliance/reports-in-security-and-compliance
+> [!IMPORTANT]@REVIEWERS - anything we can/should say here? Should we also link to reporting in compliance center; do those tools pull data from Compliance Score? https://docs.microsoft.com/en-us/microsoft-365/compliance/reports-in-security-and-compliance
