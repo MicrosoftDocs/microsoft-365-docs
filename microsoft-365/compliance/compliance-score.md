@@ -54,7 +54,7 @@ Visit other topics for details about [how your compliance score is calculated](c
 > [!IMPORTANT]
 > Compliance Score does not express an absolute measure of organizational compliance with any particular standard or regulation. It expresses the extent to which you have adopted controls which can reduce the risks to personal data and individual privacy. Compliance Score should not be interpreted as a guarantee in any way.Compliance Score does not cover everything in Office 365 or Microsoft Intune.
 
-## Key components: controls, assessments, templates, & groups
+## Key components: controls, assessments, templates, groups
 
 Compliance Score uses several components to help you manage your compliance activities. As you work with Compliance Score to assign, test, and monitor compliance activities, it’s helpful to have a basic understanding of these key components. This diagram shows the relationship among them:
 

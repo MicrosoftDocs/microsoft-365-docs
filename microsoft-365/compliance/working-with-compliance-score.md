@@ -20,7 +20,7 @@ Managing your compliance activities through the improvement actions centralizes 
 
 ## Managing your workflow with improvement actions
 
-Improvement actions are the key elements of the workflow process in Compliance Score. Their structure is built in Compliance Manager as a centralized work item you use to implement [controls for particular assessments](compliance-score.md#key-components-controls-assessments-templates--groups). Within an improvement action, you assign users in your organization to carry out the recommended actions, store documentation around implementation and testing details, and track testing status. Below are the key features of improvement actions and how to work with them.
+Improvement actions are the key elements of the workflow process in Compliance Score. Their structure is built in Compliance Manager as a centralized work item you use to implement [controls for particular assessments](compliance-score.md#key-components-controls-assessments-templates-groups). Within an improvement action, you assign users in your organization to carry out the recommended actions, store documentation around implementation and testing details, and track testing status. Below are the key features of improvement actions and how to work with them.
 
 ## View your improvement actions
 
