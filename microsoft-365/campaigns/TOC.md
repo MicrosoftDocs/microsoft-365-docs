@@ -37,4 +37,4 @@
 ## [Reset devices to factory settings](../business/reset-devices-to-factory-settings.md?toc=/microsoft-365/campaigns/toc.json)
 
 # Security incident management
-## [Respond to a compromised email account](../security/responding-to-a-compromised-email-account?toc=/microsoft-365/campaigns/toc.json)
+## [Respond to a compromised email account](../compliance/responding-to-a-compromised-email-account?toc=/microsoft-365/campaigns/toc.json)
