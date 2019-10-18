@@ -20,7 +20,7 @@ hideEdit: true
 Microsoft Azure Government can help support customers subject to the export control requirements of US Department of Energy (DoE) 10 CFR Part 810 through two authorizations:
 
 - The FedRAMP High Provisional Authorization to Operate (P-ATO) issued by the Joint Authorization Board (JAB)
-- The Level 4 and five Provisional Authorizations from the Department of Defense (DoD) Defense Information Systems Agency
+- The Level 4 and 5 Provisional Authorizations from the Department of Defense (DoD) Defense Information Systems Agency
 
 FedRAMP offers an appropriate baseline to provide assurances that Azure Government delivers core infrastructure and virtualization technologies and services such as compute, storage, and networking that are designed with stringent NIST controls. These help meet customer data separation requirements and help enable secure connections to customers’ on-premises environments.
 

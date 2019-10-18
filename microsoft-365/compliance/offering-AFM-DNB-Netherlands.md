@@ -17,9 +17,9 @@ hideEdit: true
 
 ## About the AFM and DNB
 
-The primary financial regulators in the Netherlands are the [Dutch Authority for the Financial Markets](https://afm.nl/en) ([Autoriteit Financiële Markten, AFM](https://afm.nl/)) and the [Central Bank of the Netherlands](https://www.dnb.nl/en/home/index.jsp) ([De Nederlandsche Bank, DNB](https://www.dnb.nl/home/)). The AFM, whose role is comparable to the SEC in the United States, is “the independent supervisory authority for the savings, lending, investment, and insurance markets.” The DNB, within the European System of Central Banks, determines and implements monetary policy and exercises prudential supervision of financial organizations for the Netherlands.  
+The primary financial regulators in the Netherlands are the [Dutch Authority for the Financial Markets](https://afm.nl/en) ([Autoriteit Financiële Markten, AFM](https://afm.nl/)) and the [Central Bank of the Netherlands](https://www.dnb.nl/en/home/index.jsp) ([De Nederlandsche Bank, DNB](https://www.dnb.nl/home/)). The AFM, whose role is comparable to the SEC in the United States, is “the independent supervisory authority for the savings, lending, investment, and insurance markets.” The DNB, within the European System of Central Banks, determines, and implements monetary policy and exercises prudential supervision of financial organizations for the Netherlands.  
   
-Both of these institutions act in concert with the European Banking Authority (EBA), “an independent EU authority which works to ensure effective and consistent prudential regulation and supervision across the European banking sector.” To that end, the EBA has outlined a comprehensive approach to the use of cloud computing by financial institutions in the EU, [Recommendations on outsourcing to cloud services providers](https://eba.europa.eu/documents/10180/2170121/Final+draft+Recommendations+on+Cloud+Outsourcing+\(EBA-Rec-2017-03\).pdf).  
+Both of these institutions act in concert with the European Banking Authority (EBA), “an independent EU authority that works to ensure effective and consistent prudential regulation and supervision across the European banking sector.” To that end, the EBA has outlined a comprehensive approach to the use of cloud computing by financial institutions in the EU, [Recommendations on outsourcing to cloud services providers](https://eba.europa.eu/documents/10180/2170121/Final+draft+Recommendations+on+Cloud+Outsourcing+\(EBA-Rec-2017-03\).pdf).  
   
 In general, the laws and guidelines support the point of view that cloud computing involving third-party services qualifies as a form of outsourcing, and financial institutions in the Netherlands must address the associated risks before moving business activities to the cloud. These include:
 
@@ -42,7 +42,7 @@ When financial institutions in the Netherlands outsource business activities to 
 The Microsoft checklist helps financial firms in the Netherlands conducting due-diligence assessments of Microsoft business cloud services and includes:
 
 - An overview of the regulatory landscape for context.
-- A checklist that sets forth the issues to be addressed and maps Microsoft Azure, Microsoft Dynamics 365, and Microsoft 365 services against those regulatory obligations. The checklist can be used as a tool to measure compliance against a regulatory framework and provide an internal structure for documenting compliance, as well as help customers conduct their own risk assessments of Microsoft business cloud services.
+- A checklist that sets forth the issues to be addressed and maps Microsoft Azure, Microsoft Dynamics 365, and Microsoft 365 services against those regulatory obligations. The checklist can be used as a tool to measure compliance against a regulatory framework and provide an internal structure for documenting compliance, and help customers conduct their own risk assessments of Microsoft business cloud services.
 
 ## Microsoft in-scope cloud services
 
