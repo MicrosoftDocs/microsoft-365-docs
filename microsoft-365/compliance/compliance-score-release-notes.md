@@ -11,68 +11,43 @@ ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
 - MET150
-description: "Release notes for the public preview of Microsoft Compliance Score, which helps organizations simplify and automate risk assessments."
+description: "Release notes for the public preview of Microsoft Compliance Score, a dashboard in the M365 compliance center that helps simplify and automate risk assessments."
 ---
 
 # Compliance Score release notes (Preview)
 
-The public preview of Compliance Manager provides you with early access to upcoming functionality and updates.
+The public preview of Microsoft Compliance Score provides you with early access to upcoming functionality and updates.
 
-You can use the updated [Compliance Manager](https://servicetrust.microsoft.com/ComplianceManager) tool on the [Service Trust Portal](https://servicetrust.microsoft.com) to track, assign, and verify regulatory compliance activities related to Microsoft cloud services.
+Compliance Score is a new feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) that calculates a personalized, risk-based score to help understand your organization's state of compliance with key standards and regulations.
 
-## What’s new in Compliance Manager (Preview)
+## Compliance Score and Compliance Manager relationship
 
-- **Role-based access to Compliance Manager:** The default **Guess access** role has been removed. In order for a user to access Compliance Manager, the global admin must [assign each user a permission](compliance-manager-overview.md#permissions).
+Many of the compliance functions handled in Compliance Manager can now be done in Compliance Score, but there remain some functions the user still needs to do in Compliance Manager. Below are points to keep in mind as you wok with Compliance Score and Compliance Manager during public preview.
 
-- **Integration with Microsoft Secure Score:** Compliance Manager supports integration with [Microsoft Secure Score](../security/mtp/microsoft-secure-score.md) by mapping customer-managed Actions to more than 50 Secure Score actions. When you complete a mapped action in Secure Score, the corresponding Compliance Manager Action automatically updates.
+- **Managing assessments**: users can view assessments and their status details in Compliance Score, yet tasks to manage assessments must be done in Compliance Manager ([view instructions](working-with-compliance-manager.md#assessments)). Such tasks include:
+    - Adding assessments
+    - Copying information from existing assessments
+    - Importing and exporting assessments
+    - Archiving assessments
+    - Viewing archived assessments
+ - **Creating templates for assessments**: users can only create, customize, and export templates—used for building assessments—in Compliance Manager ([view instructions](working-with-compliance-manager.md#templates)).
+ - **Setting permissions**: if a global admin sets user permissions in Compliance Manager, those permissions automatically apply to the same level of access in Compliance Score.
+- **Transfer of data**: ???
+- **Signing in**: if a user is signed in to Compliance Score, then from there selects a link to go to Compliance Manager, the user ??WILL/WILL NOT?? have to sign in again.
 
-- **Import custom Assessments:** In addition to built-in Assessments, Compliance Manager now supports importing custom Templates. You can create custom Assessments for any product or service and any standard or regulation.
+## Known issues in Compliance Score (Preview)
 
-- **Actions Items:** Action Items are now individual items and many include telemetry collection from the Microsoft Secure Score Graph API. Where possible, technical action recommendations now have links to the applicable configuration page in the Office 365 service.
-
-- **Tenant Management:** New interface for managing new data elements in Compliance Manager (Preview):
-    - **Dimensions:** View, add and customize metadata for Templates, Assessments, and Action Items that allow you to create custom pivots for filters.
-    - **Owners:** Specify an owner for each Action Item.
-    - **Customer Actions:** Manage the complete list of Actions Items included in Compliance Manager (Preview) and enable/disable Secure Score monitoring for Action Items integrated with Secure Score.
-
-- **Updated Compliance Score**: The methodology has changed to support syncing with Microsoft Secure Score. The score is calculated based on Microsoft-managed action scores and customer-managed action scores.
-
-## Known issues in Compliance Manager (Preview)
-
-The following sections cover known issues to be resolved in upcoming releases of Compliance Manager.
-
-### Compliance Score
-
-- For Action Items marked as **Not in Scope**, the score assigned to the Action Item is not excluded from the Compliance Score calculation. Action Items marked **Not in Scope** do not increase your Compliance Score.
+The following sections cover known issues to be resolved in upcoming releases of Compliance Score.
 
 ### Secure Score
 
-- Secure Score results are not available for some Actions Items in certain Microsoft 365 and Office 365 subscriptions. The Secure Score result is 'Could not be detected' in these cases.
-- Sometimes Secure Score results are returned for corresponding policies and Action Items not completed.
+- Secure Score results are not available for some improvement actions in certain Microsoft 365 and Office 365 subscriptions. The Secure Score result is "Could not be detected" in these cases.
 
-### Microsoft-managed Controls
+- Sometimes Secure Score results are returned for corresponding policies and improvement actions not completed.
 
-- The test date for Microsoft-managed controls is not appearing in the UI, even when included in the Assessment. To see test date information, you must export the Assessment.
+- Compliance Score and Secure Score do not cover every feature in Office 365 or Microsoft Intune. The scores are meant to help you better understand your compliance posture so you can make more informed risk-based decisions.
 
-### Customization
-
-- Adding custom Controls enables adding a new control to an existing control family, but it does not allow you to add a new Control Family.
-- This release does not support linking Action Items or adding Actions Items or Controls to an Assessment.
-- If you create a custom Action, you cannot edit or delete it.
-
-### Control Families Not Shown in Assessments
-
-- When you import a Template, all Assessments based on that Template reflect all Control Families that are part of the Template. But if you add new Control Families to the Template, any existing Assessments will not reflect the changes. Only new Assessments created off the updated Template reflect the changes.
-
-### Templates
-
-- When you receive an alert notification (orange triangle icon in the Templates dashboard) that a template is ready to be updated, select **Update** to ensure proper functionality for upcoming releases. To complete the update process, go to your Assessments and accept **Update**.
-- Archived templates are editable and they should not be editable.
-- Locked templates allow for Assessment creation when they should not. Locking a Template is meant to prevent it from being used to create Assessments.
-
-### Export
-
-- Template export to JSON fails when the template status is set to **Imported** or **Pending Approval**.
+###
 
 ### Supported browsers
 
@@ -80,11 +55,7 @@ The following sections cover known issues to be resolved in upcoming releases of
 - There may be instances where updated data does not appear until your browser is refreshed.
 - The preview version of Microsoft Edge is not supported but has no known issues.
 - Internet Explorer is not supported.
-
-### Session timeout
-
-- When a session times out, a “Something went wrong” error may appear. To resolve, go to [Compliance Manager](https://servicetrust.microsoft.com/ComplianceManager) and log in again.
  
 ### Language support
 
-- All languages are not supported for all webpages. If your local language is unsupported, view in US English.
+- Compliance Score is only available in U.S. English.

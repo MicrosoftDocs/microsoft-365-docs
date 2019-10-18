@@ -45,7 +45,7 @@ The following data points are listed for each improvement action:
 - **Status**:
     - **None**: has not been assigned for work (???)
     - **Not assessed**: testing on the improvement action has not started (???)
-    - **Not in scope**: ???
+    - **Not in scope**: is excluded from Compliance Score calculation and does not increase your score
     - **Partially tested**: testing of implementation is in progress
     - **Failed high risk**: testing of implementation has failed, and the risk of falling out of compliance with the applicable standard is high
     - **Passed**: the improvement action implementation successfully tested 
@@ -87,15 +87,13 @@ Fields in this section include:
 - **Test notes**: select **Edit test notes** to enter notes in this text field. To save notes and close the flyout pane, select **Save and close.**
 
 - **Additional notes**: select **Edit additional notes** to enter notes in this text field. To save notes and close the flyout pane, select **Save and close.**
-
-> [!NOTE]
-> There is no character limit in the text fields for notes. We recommend keeping notes brief so that the **Notes and documentation** section of the screen remains easy to view and navigate.
+  - There is no character limit in this field; we recommend keeping notes brief to better view the entire screen
 
 ## Change improvement action status
 
 You can designate implementation and testing status for improvement actions. Below are the available fields and selection options:
 
-> [!IMPORTANT]@REVIEWERS - need help listing all available status types and their definitions below.
+> [!IMPORTANT]@REVIEWERS - need help listing all available status types and definitions for each, below.
 
 - **Implementation status**: select from these status options
     - **Not implemented**
