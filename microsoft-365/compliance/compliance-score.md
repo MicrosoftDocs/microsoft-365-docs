@@ -16,7 +16,7 @@ description: "Microsoft Compliance Score helps organizations simplify and automa
 
 # Microsoft Compliance Score (Preview)
 
- **Microsoft Compliance Score**, a new feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md), is now available for public preview. Read this article to understand what Compliance Score is, how it can help you manage compliance for your organization, and how to get started.
+ **Microsoft Compliance Score** is now available for public preview in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md). Read this article to understand what Compliance Score is, how it can help you manage compliance for your organization, and how to get started.
 
 ## What is Compliance Score
 
@@ -64,7 +64,7 @@ Compliance Score uses several components to help you manage your compliance acti
 
 A control is a process container that defines how you manage compliance activities. Controls can be organized and grouped into assessments to meet the requirement of a standard, regulation, or law.
 
-When you manage your compliance activities through improvement actions (the key elements of the [wokflow process](working-with-compliance-score.md#managing-compliance-activities-with-improvement-actions)), the control is represented on an improvement action's details page by its title, a description, references to related regulations and standards, and implementation instructions.
+When you manage your compliance activities through [improvement actions](working-with-compliance-score.md), the control is represented on an improvement action's details page by its title, a description, references to related regulations and standards, and implementation instructions.
 
 There are three types of controls:
 
