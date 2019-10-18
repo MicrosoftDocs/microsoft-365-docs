@@ -35,13 +35,15 @@ Compliance Score helps to simplify and automate the process of managing complian
 -  **Streamlined collaboration** - lets you easily assign, track, record, and report on compliance tasks with built-in workflow tools
 
 > [!IMPORTANT]
-> Compliance Score does not express an absolute measure of organizational compliance with any particular standard or regulation. It expresses the extent to which you have adopted controls which can reduce the risks to personal data and individual privacy. Recommendations from Compliance Score and Compliance Manager should not be interpreted as a guarantee of compliance.
+> Compliance Score does not express an absolute measure of organizational compliance with any particular standard or regulation. It expresses the extent to which you have adopted controls which can reduce the risks to personal data and individual privacy. Recommendations from Compliance Score and Compliance Manager should not be interpreted as a guarantee of compliance. This service is currently in preview and is subject to the terms and conditions in the [Online Services Terms](https://go.microsoft.com/fwlink/?linkid=2108910).
 
 ## Relationship to Compliance Manager
 
 Think of Compliance Score as a simplified version of Compliance Manager. While the two exist for now as distinct yet integrated tools, Compliance Score makes it easier to montior your overall compliance posture and take steps to improve it. 
 
 During public preview, some functionality remains solely in Compliance Manager, such as managing assessments and creating templates. We recommend beginning all of your compliance management activities in Compliance Score. When you come to functions handled by Compliance Manager, you will be guided to that tool. For that reason, some of this documentation directs you to Compliance Manager topics.
+
+Learn more about the relationship between Compliance Score and Compliance Manager in the [release notes](compliance-manager-release-notes.md).
 
 ## Understanding your score
 

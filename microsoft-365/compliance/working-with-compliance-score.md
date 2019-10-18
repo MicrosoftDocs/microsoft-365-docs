@@ -20,7 +20,7 @@ Managing your compliance activities through the improvement actions centralizes 
 
 ## Managing your workflow with improvement actions
 
-Improvement actions are the key elements of the workflow process in Compliance Score. Their structure is built in Compliance Manager as a centralized work item you use to implement [controls for particular assessments](compliance-score.md#key-components-controls-assessments-templates-groups). Within an improvement action, you assign users in your organization to carry out the recommended actions, store documentation around implementation and testing details, and track testing status. Below are the key features of improvement actions and how to work with them.
+Improvement actions are the key elements of the workflow process in Compliance Score. Improvement actions list detailed implementation instructions for following data protection standards and regulations, are assigned to users to perform the work, and provide a centralized place to collect implementation and testing documentation and status.
 
 ## View your improvement actions
 
@@ -34,7 +34,7 @@ You can also customize your view by selecting **Group**, and from that drop-down
 
 ![Compliance Score - improvement actions screen](media/compliance-score-improvement-actions.png)
 
-The following data points are listed for each improvement action:
+This screen shows the following data points for each improvement action:
 
 - **Score impact**: the points by which your overall score will increase by completing the action
 - **Regulations**: the applicable regulation or standard that the action seeks to satisfy
@@ -53,7 +53,11 @@ The following data points are listed for each improvement action:
 
 ## Improvement actions details
 
-To view an improvement action's details page, first go to the improvement actions screen, then double-click anywhere in the row of your intended improvement action. A details page opens, and from here you can read detailed implementation instructions, assign it to a users for work, update its status, and attach notes and documentation.
+To begin the process of assigning an improvement action for work, bring up an improvement action's details page by following these steps:
+
+1. Go to your improvement actions screen.
+2. Double-click anywhere in the row of your intended improvement action.
+3. When the improvement action's details page opens, you can read detailed implementation instructions, assign it to a users for work, update its status, and attach notes and documentation.
 
 You can easily view the next or previous improvement action in the list by selecting the up or down arrow in the upper-right corner of the screen. If you filtered your list on the **Improvement actions** screen, moving up or down will take you to the next item within that filtered list.
 
@@ -69,9 +73,9 @@ To begin implementation work on an improvement action, you must assign it to a u
 
 - A business policy owner
 - An IT implementer
-- Another emplyoee with responsibility to perform the task 
+- Another employee with responsibility to perform the task 
 
-Once the proper person is identified, be sure they have the adequate [permissions](compliance-score-setup.md#permissions) in Compliance Score to perform the work, then take the following steps: 
+Once the proper person is identified, be sure they have the adequate [permissions](compliance-score-setup.md#set-user-permissions) in Compliance Score to perform the work, then take the following steps: 
 
 1. From the improvement actions details page, select **Edit status**. 
 
@@ -84,11 +88,11 @@ Once the proper person is identified, be sure they have the adequate [permission
 > [!NOTE]
 > The **Suggested people** list pulls from the users roles assigned when you set up permissions. Therefore, be sure the assigned user has the [role](compliance-score-setup.md#set-user-permissions) that gives them the proper level of access to perform necessary functions.
 
-The assigned user then performs the tasks suggested in the implementation instructions
+The assigned user then performs the tasks suggested in the implementation instructions.
 
-## Store documentation in improvement actions
+## Perform work and store documentation
 
-The **Notes and documentation** fields on the improvement actions details page allows you to upload files and enter notes documenting implementation and testing. This provides a secure, centralized repository to help you demonstrate satisfaction of controls to meet compliance standards and regulations. Any user with read-only access can read content in this section. The ability to upload, download, or delete fields, or to enter or edit notes, is restricted to roles with editing rights.
+When you perform implementation work, you can upload evidence in the form of files and notes directly into the improvement action in the **Notes and documentation** section. This provides a secure, centralized repository to help you demonstrate satisfaction of controls to meet compliance standards and regulations. Any user with read-only access can read content in this section. The ability to upload, download, or delete fields, or to enter or edit notes, is restricted to roles with editing rights.
 
 Fields in this section include:
 
@@ -103,7 +107,7 @@ Fields in this section include:
 
 ## Change improvement action status
 
-You can designate implementation and testing status for improvement actions. Below are the available fields and selection options:
+You can record the implementation status and date, and the test status and date for each improvement action. Below are the available fields and status options:
 
 > [!IMPORTANT]@REVIEWERS - need help listing all available status types and definitions for each, below.
 
@@ -125,7 +129,22 @@ You can designate implementation and testing status for improvement actions. Bel
 > [!NOTE]
 > Implementation and test status fields can be edited by any user with editing permissions, not just the **Assigned to** user.
 
-## Working on solutions
+## Assign improvement action to assessor for completion
+
+After you complete the work and upload evidence, the next step is to set the implementation status and date, and assign the improvement action to an assessor for validation.
+
+Types of assessors include:
+
+- Internal assessors who perform validation of controls within your organization
+- External assessors who examine, verify, and certify compliance—such as third-party independent organizations that audit Microsoft cloud services
+
+The assessor validates the work and examines the documentation, and selects the appropriate test status. 
+
+**If the test status is "Passed"**: the assessment is complete and ??? is/are notified by email. The controls to satisfy the assessment are completed, and the **points achieved** shows the full number of possible points achieved and counted toward your overall compliance score.
+
+**If the test status is any degree of "Failed"**: the action does not meet the requirements, and the assessor should assign it back to the appropriate user for additional work.
+
+## Solutions view
 
 Approaching your work from the **Solutions screen** is another way to begin actions to improve your compliance score. This screen shows the share of earned and potential points as organized by compliance solution areas—some of which will be specific to Microsoft (e.g., Azure AD Identity Protection, OneDrive for Business), while others describe solution areas in the Microsoft 365 and Office 365 security and compliance centers (e.g., data investigation, records management). Viewing your remaining points and improvement actions from this view helps you understand the overall solution areas which may need more immediate attention.
 
@@ -146,11 +165,11 @@ The solutions screen displays all of your organization’s Microsoft solutions. 
 
 There are two ways you can take action from this screen:
 
-1. On the row of your intented solution, under the **Remaining actions** column, click or tap on the hyperlinked number. This takes you to a filtered view of the improvement actions screen showing untested improvement actions for that solution. You can then ???manage improvement actions???.
+1. On the row of your intended solution, under the **Remaining actions** column, click or tap on the hyperlinked number. This takes you to a filtered view of the improvement actions screen showing untested improvement actions for that solution. You can then ???manage improvement actions???.
 
-2. On the row of your intented solution, under the **Open solution** column, select **Open**. This takes you to the Microsft solution or location in the Microsoft 365 and Office 365 security and compliance centers where you can take the recommended action.
+2. On the row of your intended solution, under the **Open solution** column, select **Open**. This takes you to the Microsft solution or location in the Microsoft 365 and Office 365 security and compliance centers where you can take the recommended action.
 
-## Work with assessments
+## Assessments view
 
 The assessments screen lists the assessments set up for your organization by both you and Microsoft. It lists only assessments that have not yet started, are in progress, or are not yet compliant. Any assessments you may have previously tested and implemented are archived in Compliance Manager.
 

@@ -18,7 +18,7 @@ description: "Learn how to sign in, set up permissions, and understand your dash
 
 ## Before you begin
 
-The Microsoft 365 global administrator for your organization will likely be the first user to access Compliance Score. We recommend signing in and setting permissions as outlined below when visiting Compliance Score for the first time.
+The Microsoft 365 global administrator for your organization will likely be the first user to access Compliance Score. We recommend the global admin sign in and set user permissions as outlined below when visiting Compliance Score for the first time.
 
 ## Sign in
 
