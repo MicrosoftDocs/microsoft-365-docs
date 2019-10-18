@@ -14,11 +14,11 @@ ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
 - MSB365
+- OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 description: "Learn how to purchase and sign up for Microsoft 365 Business."
-ms.custom: OKR_SMB_M365
 ---
 
 # Sign up for Microsoft 365 Business

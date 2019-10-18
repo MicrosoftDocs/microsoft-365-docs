@@ -14,12 +14,12 @@ ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
 - MSB365
+- OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 2d7ff45e-0da0-4caa-89a9-48cabf41f193
 description: "Learn how to set up Windows devices running Windows 10 Pro for Microsoft 365 Business users. "
-ms.custom: OKR_SMB_M365
 ---
 
 # Set up Windows devices for Microsoft 365 Business users
