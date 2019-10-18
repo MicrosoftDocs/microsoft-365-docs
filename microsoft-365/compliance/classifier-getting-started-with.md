@@ -51,7 +51,7 @@ These appear in the **Microsoft 365 compliance center** > **Data classification 
 
 ### Trainable classifiers
 
-When the pre-trained classifiers don't meet your needs, you can create and train your own classifiers. There is significantly more work involved with creating your own, but they'll be much better tailored to your organizations needs. For more detail on how to use a pre-trained classifier, see [Using a pre-trained classifier](classifier-user-a-pre-trained-classifier.md)
+When the pre-trained classifiers don't meet your needs, you can create and train your own classifiers. There is significantly more work involved with creating your own, but they'll be much better tailored to your organizations needs. For more detail on how to use a pre-trained classifier, see [Using a pre-trained classifier](classifier-using-a-pre-trained-classifier.md)
 
 #### Process flow for creating trainable classifiers
 
