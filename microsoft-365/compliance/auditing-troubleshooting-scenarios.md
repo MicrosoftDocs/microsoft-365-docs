@@ -16,9 +16,9 @@ search.appverid:
 description: "You can use the Office 365 audit log search tool to help you troubleshoot common issues such as investigating a compromised account, finding out who set up email forwarding for a mailbox, or determining why an external user was able to successfully log in to your organization."
 ---
 
-# Search the Office 365 audit log to troubleshoot common scenarios
+# Search the Office 365 audit log to investigate common support issues
 
-This article describes how to use the Office 365 audit log search tool to help you troubleshoot common support scenarios. This includes using the audit log to:
+This article describes how to use the Office 365 audit log search tool to help you investigate common support issues. This includes using the audit log to:
 
 - Find the IP address of the computer used to access a compromised account
 - Determine who set up email forwarding for a mailbox

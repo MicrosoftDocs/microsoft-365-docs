@@ -44,7 +44,7 @@ Learn how to accelerate your NZ CC Framework deployment with our Azure Security 
 
 **To whom does the framework apply?**
 
-Organizations that fall under the GCIO mandate—the public and non-public service departments, the 20 district health boards, and seven Crown entities—must adhere to the framework when they are deciding on the use of a cloud service.
+Organizations that fall under the GCIO mandate — the public and non-public service departments, the 20 district health boards, and seven Crown entities — must adhere to the framework when they are deciding on the use of a cloud service.
 
 **Can my agency use Microsoft’s responses to this framework in the certification process of our ICT systems?**
 

@@ -25,7 +25,7 @@ In February 2016, Microsoft Azure became the first hyperscale, multitenant cloud
 
 The MPAA assessment covers 48 security topics in the Common Guidelines, and an additional six in the Application and Cloud Security Guidelines. These are built on industry-accepted security standards such as ISO/IEC 27001 and NIST 800-53, and are aligned to best practices, such as the Cloud Security Alliance (CSA) Cloud Controls Matrix.
 
-The formal assessment of Azure compliance means that companies who do business with major studios can use Azure to help reduce the IT costs that are normally associated with the secure creation, management, storage, and distribution of content—all while complying with MPAA requirements. Azure Media Services, Storage, Virtual Networks, and more than 30 other services provide a content workflow engine in the cloud that is more secure and scalable than traditional on-premises production processes and more effective at protecting media assets downstream.
+The formal assessment of Azure compliance means that companies who do business with major studios can use Azure to help reduce the IT costs that are normally associated with the secure creation, management, storage, and distribution of content — all while complying with MPAA requirements. Azure Media Services, Storage, Virtual Networks, and more than 30 other services provide a content workflow engine in the cloud that is more secure and scalable than traditional on-premises production processes and more effective at protecting media assets downstream.
 
 Learn about the benefits of MPAA on the Microsoft Cloud: [Download the MPAA backgrounder](https://aka.ms/mpaa-backgrounder)
 
@@ -33,7 +33,7 @@ Learn about the benefits of MPAA on the Microsoft Cloud: [Download the MPAA back
 
 - [Azure complies with MPAA best-practices guidelines](https://aka.ms/AzureCompliance)
 
-## Audits, reports and certificates
+## Audits, reports, and certificates
 
 - [Azure MPAA common guidelines](https://aka.ms/AzureMPAACommonGuidelines)
 - [Azure MPAA application and cloud security guidelines](https://aka.ms/AzureMPAAApplicationandCloudSecurityGuidelines)
@@ -50,7 +50,7 @@ Content security is critical for feature film development, as there are multiple
 
 MPAA guidelines provide major studio vendors and partners with a set of best practices for creating, processing, storing, and distributing digital assets. Service providers such as Azure who undergo the formal assessment can provide an additional layer of assurance that content uploaded to the cloud will be managed in accordance with established industry requirements for encryption, authentication, access control, and resiliency, among others.
 
-**Does my organization still need to undergo an MPAA audit, or can we just use the Azure audit?**
+**Does my organization still need to undergo an MPAA audit, or can we use the Azure audit?**
 
 Production facilities, visual effects houses, and other service partners should work with their executive producers and directors to understand the new security requirements, and whether a formal MPAA audit is necessary. Compliance with MPAA guidelines is voluntary, but Microsoft elected to carry out an independent assessment so that media customers can be confident in the content security and protection capabilities of Azure. However, Azure does not manage the individual cloud environments of customers, which may be subject to additional MPAA regulation that is best addressed by your own audit of your environment.
 

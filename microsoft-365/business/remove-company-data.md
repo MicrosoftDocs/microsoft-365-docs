@@ -14,12 +14,12 @@ ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
 - MSB365
+- OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 80bdae57-f8bc-4e40-a58c-956007117ecb
 description: "Learn how to use Microsoft 365 Business to remove company data from user devices or Windows PCs. "
-ms.custom: OKR_SMB_M365
 ---
 
 # Remove company data from devices

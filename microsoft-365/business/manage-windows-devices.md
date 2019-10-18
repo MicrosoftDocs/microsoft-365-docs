@@ -15,12 +15,12 @@ ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
 - MSB365
+- OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 9b4de218-f1ad-41fa-a61b-e9e8ac0cf993
 description: "Learn how to enable Microsoft 365 to protect local AD joined Windows 10 devices."
-ms.custom: OKR_SMB_M365
 ---
 
 # Enable domain-joined Windows 10 devices to be managed by Microsoft 365 Business
