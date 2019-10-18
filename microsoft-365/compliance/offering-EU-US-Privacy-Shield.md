@@ -47,12 +47,10 @@ Microsoft has certified to the US Department of Commerce that it adheres to the 
 
 ## How to implement
 
-Privacy in the Microsoft Cloud  
-    - Get details on Microsoft privacy principles and standards and our approach to regulatory compliance.  
+Privacy in the Microsoft Cloud — Get details on Microsoft privacy principles and standards and our approach to regulatory compliance.  
     - [Learn more](https://www.microsoft.com/download/details.aspx?id=55710)
 
-Data protection in Azure  
-    - Azure provides customers with strong data security, both by default and as customer options.  
+Data protection in Azure — Azure provides customers with strong data security, both by default and as customer options.  
     - [Learn more](https://docs.microsoft.com/azure/security/azure-protection-of-customer-data)
 
 ## Frequently asked questions
