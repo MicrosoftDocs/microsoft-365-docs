@@ -1,9 +1,9 @@
 ---
 title: "Sample script for applying EOP settings to multiple tenants"
-ms.author: krowley
-author: kccross
-manager: laurawi
-ms.date: 11/17/2014
+ms.author: chrisda
+author: chrisda
+manager: dansimp
+ms.date:
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,8 +15,8 @@ description: "The following sample script lets Microsoft Exchange Online Protect
 # Sample script for applying EOP settings to multiple tenants
 
 The following sample script lets Microsoft Exchange Online Protection (EOP) admins who manage multiple tenants (companies) use Windows PowerShell to apply configuration settings to their tenants.
-  
-### To run a script or cmdlet on multiple tenants
+
+## To run a script or cmdlet on multiple tenants
 
 1. Using an application such as Excel, create a .csv file (for example, c:\scripts\inputfile.csv):
 
@@ -32,7 +32,7 @@ The following sample script lets Microsoft Exchange Online Protection (EOP) admi
    & "<file path>\RunCmdletOnMultipleTenants.ps1" "<file path>\inputfile.csv"
    ```
 
-   Here's an example.
+   Here's an example:
 
    ```Powershell
    & "c:\scripts\RunCmdletOnMultipleTenanats.ps1" "c:\scripts\inputfile.csv"
@@ -45,7 +45,7 @@ The following sample script lets Microsoft Exchange Online Protection (EOP) admi
 ```Powershell
 # This script runs Windows PowerShell cmdlets on multiple tenants.
 # Usage: RunCmdletOnMultipleTenants.ps1 inputfile.csv
-#  
+#
 # .csv input file sample:
 # UserName,Cmdlet
 # admin@contoso.com,Get-AcceptedDomain | ft Name

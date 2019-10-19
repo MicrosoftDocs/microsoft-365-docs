@@ -17,12 +17,12 @@ ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
 - MSB365
+- OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: "Overview of the set up steps for Microsoft 365 Business."
-ms.custom: OKR_SMB_M365
 ---
 
 # Overview of setup
@@ -40,7 +40,7 @@ Most of the set up steps can be done in the setup wizard, but the other options 
         - You can also [add users later](add-users-m365b.md) in the admin center.
 ## Step 2: Set up security policies and configure devices 
 
-  - Use the [Setup wizard](set-up.md#set-up-security-policies-and-device-configurations) to configure device and security policies. 
+  - Use the [Setup wizard](set-up.md#protect-data-and-devices) to configure device and security policies. 
   - You can also add more or edit them later in the [admin center](view-policies-and-devices.md) and in the [Intune portal](https://docs.microsoft.com/intune/tutorial-walkthrough-intune-portal).
   - In addition to the security settings in the setup wizard, you can increase your security by adding the following settings:
 
@@ -61,7 +61,7 @@ Most of the set up steps can be done in the setup wizard, but the other options 
    When you join a Windows 10 device to Azure AD, the policies you set up in [Step 2](#step-2-set-up-security-policies-and-configure-devices) get applied to it.
 
    - Windows 10 Pro is a [pre-requisite](pre-requisites-for-data-protection.md) for Microsoft 365 Business, but if you have Windows 7 Pro, Windows 8 Pro, or Windows 8.1 Pro, your subscription entitles you to an [upgrade to  Windows 10 Pro](https://docs.microsoft.com/microsoft-365/business/upgrade-to-windows-pro-creators-update).
-    - Use the [setup wizard](set-up.md#set-up-security-policies-and-device-configurations) to configure policies for Windows 10 devices.
+    - Use the [Setup wizard](set-up.md#protect-data-and-devices) to configure policies for Windows 10 devices.
 
 ## Stes 4: Install Office 365 Business
 - You can automatically install Office in the Windows devices by using the [setup wizard](set-up.md#deploy-office-365-client-apps).

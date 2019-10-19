@@ -14,12 +14,12 @@ ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
 - MSB365
+- OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: bd66c26c-73a4-45a8-8642-3ea4ee7cd89d
 description: "Learn about default and other settings available in Microsoft 365 Business to secure Windows 10 devices."
-ms.custom: OKR_SMB_M365
 ---
 
 # Set device protection settings for Windows 10 PCs
