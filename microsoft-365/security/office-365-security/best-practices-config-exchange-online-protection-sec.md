@@ -3,7 +3,7 @@ title: "Configuration best practices for EOP and Office 365 ATP security, best p
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 09/18/2019
+ms.date: 10/18/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -32,9 +32,9 @@ These methods handle outbound email from Office 365, and help destination system
 
 |Security feature name  |Recommended |Aggressive  |Comment  |
 |---------|---------|---------|---------|
-|[Create SPF records](https://docs.microsoft.com/en-us/office365/securitycompliance/set-up-spf-in-office-365-to-help-prevent-spoofing)    | Y        |    Y     |   -      |
-|[Configure DKIM Signing for Domains](https://docs.microsoft.com/en-us/office365/securitycompliance/use-dkim-to-validate-outbound-email)     |  Y       |    Y     |  -       |
-|[Implement DMARC with reject or quarantine action](https://docs.microsoft.com/en-us/office365/securitycompliance/use-dmarc-to-validate-email)     |   Y      |     Y    |   Use action=none for Recommended, and action=reject for Aggressive.     |
+|[Create SPF records](https://docs.microsoft.com/en-us/office365/securitycompliance/set-up-spf-in-office-365-to-help-prevent-spoofing)    | Yes        |    Yes     |   -      |
+|[Configure DKIM Signing for Domains](https://docs.microsoft.com/en-us/office365/securitycompliance/use-dkim-to-validate-outbound-email)     |  Yes       |    Yes     |  -       |
+|[Implement DMARC with reject or quarantine action](https://docs.microsoft.com/en-us/office365/securitycompliance/use-dmarc-to-validate-email)     |   Yes      |     Yes    |   Use action=none for Recommended, and action=reject for Aggressive.     |
 
 > [!IMPORTANT]
 > To work with security roles and permissions, be sure you have the right role or roles in Office 365 or the Security and Compliance Center. If you are a *Security Administrator* in Azure Active Directory, a *Global Administrator* in Office 365, or an *Exchange Online Organizational Manager* in Exchange Online/Exchange Online Powershell, you're ready to go.
@@ -51,9 +51,9 @@ Phising filters are on by default in Office 365, but should be configured for a 
 
 |Security feature name  |Recommended |Aggressive  |Comment  |
 |---------|---------|---------|---------|
-|Quarantine retention period    |   Y      |     Y    |   30 days   |
-|End user spam notification frequency   |   Y      |     Y    |   3 days   |
-|Zero Hour Autopurge should be enabled   |   Y      |     Y    |   True  |
+|Quarantine retention period    |   Yes      |     Yes    |   30 days   |
+|End user spam notification frequency   |   Yes      |     Yes    |   3 days   |
+|Zero Hour Autopurge should be enabled   |   Yes      |     Yes    |   True  |
 |Spam detection action should be sent to | JMF | Quarantine | - |
 |High confidence spam detection action should be sent to | Quarantine | Quarantine| - |
 |Bulk detection action should be set to | JMF | Quarantine | - |
