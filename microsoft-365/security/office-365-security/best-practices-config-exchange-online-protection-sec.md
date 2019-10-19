@@ -3,7 +3,7 @@ title: "Configuration best practices for EOP and Office 365 ATP security, best p
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 09/18/2019, 10/08/2019
+ms.date: 10/18/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
