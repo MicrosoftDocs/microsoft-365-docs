@@ -78,12 +78,11 @@ You have to use remote PowerShell connected to your Exchange Online organization
     
     - In PowerShell, run the following command:
 
-            ```
-            Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled
-            ```
-
-           The value of  `False` for the  _UnifiedAuditLogIngestionEnabled_ property indicates that audit log search is turned off. 
+    ```
+    Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled
+    ```
+    The value of  `False` for the  _UnifiedAuditLogIngestionEnabled_ property indicates that audit log search is turned off. 
     
     - In the Security & Compliance Center, go to **Search** \> **Audit log search**.
     
-           A banner is displayed saying that auditing has to be turned on in order to record user and admin activity.
+    A banner is displayed saying that auditing has to be turned on in order to record user and admin activity.
