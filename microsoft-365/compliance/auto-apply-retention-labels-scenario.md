@@ -227,19 +227,22 @@ Now that we verified that the KQL query is working correctly, let's create the l
 
 6. Type a name (for example, **Auto apply Product Specification label**) and an optional description for the label policy, and then click **Next**. 
 
-7. On the **Choose locations** wizard page, you can select the content locations that you want to apply the policy to. This means that the policy will auto-apply the retention label to documents located in one or more Office 365 services. This includes Exchange mailboxes, SharePont sites, OneDrive accounts, and Office 365 groups. 
+7. On the **Choose locations** wizard page, you select the content locations that you want to apply the policy to. For this scenario, we'll apply the policy only to SharePoint locations because all production documents are stored only in SharePoint document libraries. Therefore click **Let me choose specific locations**, toggle the status for Exchange email, OneDrive accounts, and Office 365 groups to off and make sure the status for SharePoint sites is toggled on. 
 
-    For this scenario, we'll select **All locations** and click **Next**. This means here you want this policy to apply to, here let's choose everything, click next, review your settings and click auto-apply.
+    ![](media/SPRetentionSPlocations.png)
 
-    The Review you settings wizard page is displayed. 
+   > [!TIP]
+   > Instead of applying the policy to all SharePoint sites, you can click **Choose sites** and add the URLs for specific SharePoint sites.
+
+8. Click **Next** to display the **Review your settings** page. 
 
     ![](media/SPRetention18.png)
 
-8. Click **Auto-apply** to create the label policy. Note that it takes up to 7 days to automatically apply the Product Specification label to all documents that match the KQL search query that you provided.
+9. Click **Auto-apply** to create the label policy. Note that it takes up to 7 days to automatically apply the Product Specification label to all documents that match the KQL search query that you provided.
 
 ### Verifying the retention label was automatically applied
 
-After 7 days, use the [Label activity explorer](view-label-activity-for-documents.md) in the security and compliance center to see that the label policy that we created has automatically applied the retention labels in our scenario to the product documents. Notice in the following screenshot that retention labels have also been applied to product agreements and user manuals, even though we didn't cover creating those retention labels and label policies in this article.
+After 7 days, use the [Label activity explorer](view-label-activity-for-documents.md) in the security and compliance center to see that the label policy that we created has automatically applied the retention labels in this scenario to the product documents. Notice in the following screenshot that retention labels have also been applied to product agreements and user manuals, even though we didn't cover creating those retention labels and label policies in this article.
 
 ![](media/SPRetention20.png)
 
@@ -251,52 +254,48 @@ Because the retention labels have been auto-applied to documents, the are docume
 
 ![](media/SPRetention22.png)
 
-## Generate the events
+## Generate the events that trigger the start of the retention period
 
-Now that the retention labels were successfully automatically applied let's focus on the event that indicates the end of the production of a particular product, which will indicate how long the documents will be retained from that moment.
+Now that the retention labels were successfully automatically applied, let's focus on the event that indicates the end of production for a particular product. When this event occurs, it will trigger the beginning of the retention period. For example, for product specification documents, the five-year retention period will begin when the "end of production" event is triggered.
 
-In the Security and Compliance Center under Records Managements > Events, you can create your event manually, by choosing the event type and setting the right Asset Id.
+You can manually create the event in the security and compliance center (by going to **Records Managements** > **Events**) and choosing the event type and setting the correct Asset Ids. For more information, see [Overview of event-driven retention](event-driven-retention.md).
 
-For more information about event-driven retention, see:
+For this scenario, we will automatically generate the event from an external production system. In this case, the system to generate the event is a simple SharePoint list that indicates if a product is in production or not and a [Microsoft Flow](https://docs.microsoft.com/flow/getting-started) that's associated with the list and will trigger the event. In a real-world scenario, it could any system that generates the event, such as an HR or CRM system. Flow contains many ready-to-use interactions building block for Office 365 workloads such as Exchange, SharePoint, Teams, and Dynamics 365, as well as third party apps such as Twitter, Box, Salesforce, and Workdays. This makes it easy to integrate Flow with these systems. For more information, see [Automate event-driven retention](automate-event-driven-retention.md).
 
-- [Overview of event-driven retention](event-driven-retention.md)
-
-- [Automate event-driven retention](automate-event-driven-retention.md)
-
-For our scenario, we will automatically generate the event from an external production system, in this case it is a simple SharePoint list that indicates if a product is in production or not. In a real-world scenario, it could any system that generates the event, such as an HR or CRM system.
-
-Flow contains many ready-to-use interactions building block for Office 365 workloads such as Exchange, SharePoint, Teams, Dynamics 365, but also third parties such as Twitter, Box, Salesforce, Workdays, etc., making it easy to integrate with these systems.
+The following screenshot shows the SharePoint list that will be used: 
 
 ![](media/SPRetention23.png)
 
-In the example above there are two products currently in production, when we set the “In Production” field to No, the Microsoft Flow associate with the list will trigger and generate the event.
+There are two products currently in production, which is indicated by the value of **Yes** in the **In Production** column. When the value in this column is set to **No** for a product, the flow associated with the list will generate the event. This in turn will trigger the beginning of the retention period for the retention label that was automatically applied to the corresponding product documents.
 
-This is the Microsoft Flow:
+We'll use this flow to trigger the event:
 
 ![](media/SPRetention24.png)
 
-We will need the following information:
+To create this flow, start rom a SharePoint connector and select the **When an item is created or modified** trigger. Specify the site address and list name, and then add a condition based on when the **In Production** list column value is set to **No** (or equal to false in the condition card). Then add an action based on the built-in HTTP template. Use the values in the following table to configure the action. You can copy the values for the URI and Body properties from the table below and then paste them into the condition.
 
 <table>
 <thead>
 <tr class="header">
-<th>Method</th>
-<th>POST</th>
-<th></th>
+<th><strong>Parameter</strong></th>
+<th><strong>Value</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
+<td>Method</td>
+<td>POST</td>
+<tr class="even">
 <td>URI</td>
 <td><a href="https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent">https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent</a></td>
 <td></td>
 </tr>
-<tr class="even">
-<td>Headers</td>
-<td>Content-Type</td>
-<td>application/atom+xml</td>
-</tr>
 <tr class="odd">
+<td>Headers</td>
+<td>Key = Content-Type, Value = application/atom+xml</td>
+<td></td>
+</tr>
+<tr class="even">
 <td>Body</td>
 <td><p>&lt;?xml version='1.0' encoding='utf-8' standalone='yes'?&gt;</p>
 <p>&lt;entry xmlns:d='http://schemas.microsoft.com/ado/2007/08/dataservices' xmlns:m='http://schemas.microsoft.com/ado/2007/08/dataservices/metadata' xmlns='http://www.w3.org/2005/Atom'&gt;</p>
@@ -313,31 +312,38 @@ We will need the following information:
 <p>&lt;/entry&gt;</p></td>
 <td></td>
 </tr>
+
 </tbody>
 </table>
 
-In the Body the following parameters are to be set:
+The following table describes the parameters within the Body property of the action that must be specifically configured for this scenario. 
 
 <table>
 <thead>
 <tr class="header">
-<th>Event Name</th>
-<th>“Cessation Production xxx” where xxx is the product name (value)</th>
+<th><strong>Parameter</strong></th>
+<th><strong>Description</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Event Type</td>
+<td>Name</td>
+<td>"Cessation Production xxx", where xxx is the product name (value)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>EventType</td>
 <td>As per definition earlier in this document which is: “Product Cessation”</td>
 </tr>
 <tr class="even">
-<td>Asset Id</td>
-<td>I will use the Product Name site column and not the AssetId one. I have create a Managed Property called “ProductName” that is mapped with the crawled property ows_Product_x0020_Name, I will use the following KQL query ‘ProductName:”xxx”' where xxx is the product name.<br />
-<img src="c:\GitHub\microsoft-365-docs-pr\microsoft-365\compliance/media/SPRetention25.png" style="width:6.49722in;height:0.45069in" /></td>
+<td>SharePointAssetIdQuery</td>
+<td>This defines the Asset Ids for the event. Use the Product Name site column and not the AssetId column. For this scenario, we created a Managed Property called "ProductName" that is mapped to the ows_Product_x0020_Name crawled property. Use the following KQL query: 'ProductName:"xxx"' where xxx is the product name. Here's a screenshot of the this managed property:<br/><br/>
+<img src="media/SPRetention25.png" style="width:6.49722in;height:0.45069in" /></td>
 </tr>
 <tr class="odd">
-<td>Event Date</td>
-<td>current date: <strong>formatDateTime(utcNow()</strong>,'yyyy-MM-dd'<strong>)</strong></td>
+<td>EventDateTime</td>
+<td>Use the current date format: <strong>formatDateTime(utcNow(),'yyyy-MM-dd'<strong>)</strong></td>
 </tr>
 </tbody>
 </table>
