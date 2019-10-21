@@ -49,6 +49,11 @@ These appear in the **Microsoft 365 compliance center** > **Data classification 
 
 #### Process flow for using pre-trained classifiers
 
+Pre-trained classifiers don't need to be trained, but you do need to confirm that they will identify the types of content that you need them to before you use them in compliance solutions. Testing a pre-trained classifier follows this flow.
+
+![process flow testing a pre-trained classifier](media\classifier-pub-pre-trained-classifier.png)
+
+
 ### Trainable classifiers
 
 When the pre-trained classifiers don't meet your needs, you can create and train your own classifiers. There is significantly more work involved with creating your own, but they'll be much better tailored to your organizations needs. For more detail on how to use a pre-trained classifier, see [Using a pre-trained classifier](classifier-using-a-pre-trained-classifier.md)
