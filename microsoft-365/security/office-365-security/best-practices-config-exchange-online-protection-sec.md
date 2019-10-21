@@ -3,7 +3,7 @@ title: "Configuration best practices for EOP and Office 365 ATP security, best p
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 09/18/2019
+ms.date: 10/18/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -27,14 +27,14 @@ We'll discuss two security levels, called Recommended and Aggressive in EOP, cov
 
 SPF, DKIM, and DMARC are acronyms for Sender Policy Framework, DomainKeys Identified Mail, and Domain-based Message Authentication, Reporting, and Conformance (quite a mouthful), and are the basis of email authentication and validation.
 
-These methods handle outbound email from Office 365, and help destination systems trust that email from your domain is valid. They're the only best practices we'll be covering that involve configurations to be made *outside* of Office 365, in your DNS. For specific configuration steps, see the [Email validation and authentication](https://docs.microsoft.com/en-us/office365/securitycompliance/how-office-365-uses-spf-to-prevent-spoofing) section in the Security and Compliance table of contents.
+These methods handle outbound email from Office 365, and help destination systems trust that email from your domain is valid. They're the only best practices we'll be covering that involve configurations to be made *outside* of Office 365, in your DNS. For specific configuration steps, see the [Email validation and authentication](https://docs.microsoft.com/office365/securitycompliance/how-office-365-uses-spf-to-prevent-spoofing) section in the Security and Compliance table of contents.
 
 
 |Security feature name  |Recommended |Aggressive  |Comment  |
 |---------|---------|---------|---------|
-|[Create SPF records](https://docs.microsoft.com/en-us/office365/securitycompliance/set-up-spf-in-office-365-to-help-prevent-spoofing)    | Y        |    Y     |   -      |
-|[Configure DKIM Signing for Domains](https://docs.microsoft.com/en-us/office365/securitycompliance/use-dkim-to-validate-outbound-email)     |  Y       |    Y     |  -       |
-|[Implement DMARC with reject or quarantine action](https://docs.microsoft.com/en-us/office365/securitycompliance/use-dmarc-to-validate-email)     |   Y      |     Y    |   Use action=none for Recommended, and action=reject for Aggressive.     |
+|[Create SPF records](https://docs.microsoft.com/office365/securitycompliance/set-up-spf-in-office-365-to-help-prevent-spoofing)    | Yes        |    Yes     |   -      |
+|[Configure DKIM Signing for Domains](https://docs.microsoft.com/office365/securitycompliance/use-dkim-to-validate-outbound-email)     |  Yes       |    Yes     |  -       |
+|[Implement DMARC with reject or quarantine action](https://docs.microsoft.com/office365/securitycompliance/use-dmarc-to-validate-email)     |   Yes      |     Yes    |   Use action=none for Recommended, and action=reject for Aggressive.     |
 
 > [!IMPORTANT]
 > To work with security roles and permissions, be sure you have the right role or roles in Office 365 or the Security and Compliance Center. If you are a *Security Administrator* in Azure Active Directory, a *Global Administrator* in Office 365, or an *Exchange Online Organizational Manager* in Exchange Online/Exchange Online Powershell, you're ready to go.
@@ -51,9 +51,9 @@ Phising filters are on by default in Office 365, but should be configured for a 
 
 |Security feature name  |Recommended |Aggressive  |Comment  |
 |---------|---------|---------|---------|
-|Quarantine retention period    |   Y      |     Y    |   30 days   |
-|End user spam notification frequency   |   Y      |     Y    |   3 days   |
-|Zero Hour Autopurge should be enabled   |   Y      |     Y    |   True  |
+|Quarantine retention period    |   Yes      |     Yes    |   30 days   |
+|End user spam notification frequency   |   Yes      |     Yes    |   3 days   |
+|Zero Hour Autopurge should be enabled   |   Yes      |     Yes    |   True  |
 |Spam detection action should be sent to | JMF | Quarantine | - |
 |High confidence spam detection action should be sent to | Quarantine | Quarantine| - |
 |Bulk detection action should be set to | JMF | Quarantine | - |
@@ -130,7 +130,7 @@ Recommended for **ON** in both Recommended and Aggressive Levels:
 Earlier, I said that it was encouraged for E3 subscriptions to add an Office 365 ATP plan 1, or the more fully-realized ATP Plan 2. Advanced Anti-phishing is one reason why. Enabled by default, anti-phishing ***must*** be configured with policies to operate. Forgetting to configure anti-phishing policies exposes users to risk, be sure that's step-2 after you add an ATP subscription.
 
 > [!IMPORTANT]
->  If you have an E5 subscription, you currently have [ATP Plan 2](https://products.office.com/en-us/exchange/advance-threat-protection). Check this link when you want to find out [what's new in ATP](https://review.docs.microsoft.com/en-us/microsoft-365/security/office-365-security/whats-new-in-office-365-atp?branch=oatp-newstuff).
+>  If you have an E5 subscription, you currently have [ATP Plan 2](https://products.office.com/exchange/advance-threat-protection). Check this link when you want to find out [what's new in ATP](https://review.docs.microsoft.com/microsoft-365/security/office-365-security/whats-new-in-office-365-atp?branch=oatp-newstuff).
 
 ### Advanced Anti-phishing
 

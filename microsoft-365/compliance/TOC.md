@@ -17,7 +17,7 @@
 ## Customer Key
 ### [Controlling your data in Office 365 using Customer Key](controlling-your-data-using-customer-key.md)
 ### [Service encryption with Customer Key for Office 365 FAQ](service-encryption-with-customer-key-faq.md)
-## [Supervision]()
+## [Supervise communications]()
 ### [Learn about supervision policies](supervision-policies.md)
 ### [Configure supervision policies for your organization](configure-supervision-policies.md)
 ## [Information barriers](information-barriers.md)
@@ -124,6 +124,7 @@
 ### [Watch videos from the Microsoft Data Governance team](https://go.microsoft.com/fwlink/?linkid=867039)
 ## Records management
 ### [Records management](records-management.md)
+### [Records](records.md)
 ### File plan
 #### [File plan manager](file-plan-manager.md)
 #### [Retention labels](labels.md)
