@@ -1,5 +1,5 @@
 ---
-title: "Getting started with Microsoft 365 classifiers"
+title: "Getting started with Microsoft 365 classifiers (Preview)"
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -36,12 +36,12 @@ Getting a trainable classifier to a publishable state requires a time investment
 
 Microsoft 365 comes with six pre-trained classifiers:
 
-- Offensive Language
-- Resumes
-- SourceCode
-- Harassment
-- Profanity
-- Threat
+- Offensive Language: detects items which contain sentiment associated with profanities, slurs, and disguised expressions
+- Resumes: detects items which are textual accounts of an applicant's personal, educational, professional qualifications, work experience and other personally identifying information
+- SourceCode: detects items which contain a set of instructions and statements written in widely used computer programming languages.
+- Harassment: detects items with a specific category of offensive language related to offensive conduct targeting one or multiple individuals regarding race, color, religion, national origin, gender, sexual orientation, age, disability and genetic information.
+- Profanity: detects items with a specific category of offensive language that contains swear words or vulgar language
+- Threat: detects items with a specific category of offensive language related to threat to commit violence or do physical harm/damage to a person/property
 
 These appear in the **Microsoft 365 compliance center** > **Data classification (preview)** > **Trainable classifiers** view with the status of `Ready to use`.
 
