@@ -27,7 +27,7 @@ When you go to your Microsoft 365 compliance center for the first time, you are 
 
 ![Microsoft 365 compliance center intro](media/m365-compliancecenter-welcomesteps.png)
 
-The welcome banner gives you some pointers on how to get started, with next steps and an invitation for you to give us feedback.
+The welcome banner gives you some pointers on how to get started, with next steps, and an invitation for you to give us feedback.
 
 ## Assess section
 
