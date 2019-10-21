@@ -15,7 +15,7 @@ ms.collection: M365-security-compliance
 
 ## Overview
 
-Are you looking for a way to quickly get started with compliance tasks in Microsoft 365? Check out the new [Microsoft 365 solution catalog](https://compliance.microsoft.com) to discover, learn, and quickly get started with compliance and risk management solutions.
+Are you looking for a way to quickly get started with compliance tasks in Microsoft 365? Check out the new [Microsoft 365 solution catalog](https://compliance.microsoft.com/solutioncatalog) to discover, learn, and quickly get started with compliance and risk management solutions.
 
 Read this article to get acquainted with the Microsoft 365 solution catalog, [how to get it](#how-do-i-get-this), [frequently asked questions](#frequently-asked-questions), and your [next steps](#next-steps).
 
