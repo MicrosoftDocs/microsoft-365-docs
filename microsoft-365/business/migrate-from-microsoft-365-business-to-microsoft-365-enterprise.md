@@ -39,9 +39,8 @@ Migrating is easy: Just switch licenses. All your data and configuration in your
 
 This table shows the differences between Microsoft 365 Business and Microsoft 365 Enterprise E3.
 
-||||
-|:-------|:-----|:-----|
 | Feature	| Support in Microsoft 365 Business	| Support in Microsoft 365 Enterprise E3 | 
+|:-------|:-----|:-----|
 | **On-premises**		| | | 
 | Windows 10 licenses	| | 	Windows 10 Enterprise E3| 
 | Office apps	| [Office 365 Business](#office-365-business)	| Office 365 ProPlus | 
@@ -107,8 +106,6 @@ You can now use Microsoft Advanced Threat Analytics, Device Guard, Credential Gu
 ### Device management with Intune
 
 You don’t need to do any changes to your current Intune configuration prior to migrating, which includes enrolled devices and device and app settings.
-
-You can begin using Microsoft Desktop Optimization Package and VDA.
 
 ### Windows 10
 
