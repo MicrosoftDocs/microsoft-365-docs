@@ -91,7 +91,7 @@ Contoso security staff trained the members of the **Research** Office 365 group 
 
 The end result is a secure environment in which the researchers can collaborate across Contoso in a secure environment on files containing research information. 
 
-If a research document with the **Research Teams** sublabel leaves the **Research** site, it is encrypted and accessible only to members of the **Research** Office 365 groups with valid user account credentials.
+If a research document with the **Research Teams** sublabel leaves the **Research** site, it is encrypted and accessible only to members of the **Research** Office 365 group with valid user account credentials.
 
 ## Next step
 
