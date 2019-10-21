@@ -5,14 +5,12 @@ keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.date: 09/24/2018
 ---
 
 # Get started with Microsoft Managed Desktop
 
-With Microsoft Managed Desktop, managing your desktop devices is transitioned to an enterprise cloud infrastructure. 
+Once you're ready to enroll in the service, this section includes the steps to follow to actually join the service, obtain and set up devices, prep your end users, and deploy apps.
 
-## In this section
-
-- [Add Admin contacts](add-admin-contacts.md)
-- [Order devices](devices.md)
+- [Add Admin contacts in Microsoft Managed Desktop Admin portal](add-admin-contacts.md)
+- [Set up Microsoft Managed Desktop devices](set-up-devices.md)
+- [Deploy apps to Microsoft Managed Desktop devices](deploy-apps.md)

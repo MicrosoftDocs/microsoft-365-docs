@@ -1,9 +1,9 @@
 ---
-title: "Use DKIM for email in your custom domain in Office 365"
+title: "Use DKIM for email in your custom domain in Office 365, 2048-bit, 1024-bit, steps, How it works, SPF, DMARC"
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 09/27/2019, 10/8/2019
+ms.date: 10/8/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
