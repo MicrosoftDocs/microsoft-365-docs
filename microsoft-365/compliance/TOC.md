@@ -84,6 +84,7 @@
 #### [Set up Azure Rights Management for the previous version of Office 365 Message Encryption](set-up-azure-rms-for-previous-version-message-encryption.md)
 
 # Manage information governance
+## [Manage information governance](manage-information-governance.md)
 ## [Import data](importing-pst-files-to-office-365.md)
 ### [Use network upload to import PST files](use-network-upload-to-import-pst-files.md)
 ### [Use drive shipping to import PST files](use-drive-shipping-to-import-pst-files-to-office-365.md)

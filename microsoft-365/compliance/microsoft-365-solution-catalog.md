@@ -17,7 +17,9 @@ ms.collection: M365-security-compliance
 
 Are you looking for a way to quickly get started with compliance tasks in Microsoft 365? Check out the new [Microsoft 365 solution catalog](https://compliance.microsoft.com/solutioncatalog) to discover, learn, and quickly get started with compliance and risk management solutions.
 
-Read this article to get acquainted with the Microsoft 365 solution catalog, [how to get it](#how-do-i-get-this), [frequently asked questions](#frequently-asked-questions), and your [next steps](#next-steps).
+Compliance solutions in Microsoft 365 are collections of integrated capabilities you can use to help you manage end-to-end compliance scenarios. A solution's capabilities and tools might include a combination of policies, alerts, reports, and more.
+
+Read this article to get acquainted with the new Microsoft 365 solution catalog, [how to get it](#how-do-i-get-this), [frequently asked questions](#frequently-asked-questions), and your [next steps](#next-steps).
 
 ## Catalog organization
 
@@ -88,14 +90,12 @@ We're still adding functionality to the Microsoft 365 compliance center and the 
 
 ## Next steps
 
-- **Review your Microsoft Compliance Score**, and use the new Compliance Manager (Preview) to improve your compliance score. To learn more, see [Compliance Manager (Preview)](compliance-manager-overview.md).
+- **Review your Microsoft Compliance Score**, a personalized, risk-based score to help you understand your organization's state of compliance with key standards and regulations. It provides recommended actions you can take to strengthen your overall compliance posture, and provides workflow capabilities to to help you efficiently carry out those actions. To learn more, see [Compliance Score (Preview)](compliance-score.md).
 
-- **Review your organization's Data Loss Prevention policies** and make required changes as necessary. To learn more about, see [Overview of data loss prevention policies](data-loss-prevention-policies.md).
+- **Microsoft Information Protection**, learn how Microsoft 365 solutions help you discover, classify, and protect sensitive information wherever it lives or travels.
+    - **Get acquainted with and set up Microsoft Cloud App Security**. See [Quickstart: Get started with Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security).
+    - **Get started with Classifiers**. Classifying content and then labeling it so it can be protected and handled properly is the starting place for the information protection discipline. See [Getting started with trainable classifiers](classifier-getting-started-with.md).
 
-- **Get acquainted with and set up Microsoft Cloud App Security**. See [Quickstart: Get started with Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security).
-
-- **Learn about and create Communication supervision policies**. See [Communication supervision in Microsoft 365](supervision-policies.md).
-
-- **Use Insider risk management to identify, triage, and remediate risks in your organization**. See [Insider risk management in Microsoft 365](insider-risk-overview.md)
+- **Learn about and create Communication compliance policies**. See [Communication compliance in Microsoft 365](communication-compliance.md).
 
 - **Visit your Microsoft 365 solution catalog often**, and make sure to review new solutions to help you with your compliance needs. Sign in at [https://compliance.microsoft.com](https://compliance.microsoft.com) and then select **Catalog** in the left navigation pane.
