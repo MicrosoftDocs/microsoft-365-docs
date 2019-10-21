@@ -44,9 +44,9 @@ This table shows the differences between Microsoft 365 Business and Microsoft 36
 | Feature	| Support in Microsoft 365 Business	| Support in Microsoft 365 Enterprise E3 | 
 | **On-premises**		| | | 
 | Windows 10 licenses	| | 	Windows 10 Enterprise E3| 
-| Office apps	| Business apps*	| ProPlus apps | 
+| Office apps	| [Office 365 Business](#office-365-business)	| Office 365 ProPlus | 
 | **Cloud productivity apps**		| | | 
-| Exchange Online and Outlook	| 100 GB storage limit per user or unlimited when Exchange Online Archiving is enabled	| Same as Microsoft 365 Business | 
+| Exchange Online and Outlook	| 50 GB storage limit per mailbox and unlimited Exchange Online archiving	| Same as Microsoft 365 Business | 
 | Teams	| ![Included with Microsoft 365 Business](./media/check-mark.png)	| ![Included with Microsoft 365 Enterprise E3](./media/check-mark.png) | 
 | OneDrive for Business	| 1 TB storage limit per user	| Unlimited | 
 | Yammer, SharePoint Online, Planner, Stream	| ![Included with Microsoft 365 Business](./media/check-mark.png)	| ![Included with Microsoft 365 Enterprise E3](./media/check-mark.png) | 
@@ -57,10 +57,13 @@ This table shows the differences between Microsoft 365 Business and Microsoft 36
 | Office 365 Advanced Threat Protection (ATP) Plan 1 | ![Included with Microsoft 365 Business](./media/check-mark.png)	| Not included, but can be added on | 
 | **Identity management**		| | | 
 | Self-service password reset for hybrid Azure Active Directory (Azure AD) accounts, Azure multi factor authentication (MFA), conditional access| 	![Included with Microsoft 365 Business](./media/check-mark.png)	| ![Included with Microsoft 365 Enterprise E3](./media/check-mark.png) | 
-| Cloud App Discovery, Azure AD Connect Health, Single Sign-On (SSO) for more than 10 Apps	| 	| ![Included with Microsoft 365 Enterprise E3](./media/check-mark.png) | 
+| Cloud App Discovery, Azure AD Connect Health	| 	| ![Included with Microsoft 365 Enterprise E3](./media/check-mark.png) | 
+| Single Sign-On (SSO) for more than 10 Apps	| ![Included with Microsoft 365 Business](./media/check-mark.png)	| ![Included with Microsoft 365 Enterprise E3](./media/check-mark.png) | 
 | **Device and app management**		| | | 
 | Microsoft Intune, Windows Autopilot| 	![Included with Microsoft 365 Business](./media/check-mark.png)	| ![Included with Microsoft 365 Enterprise E3](./media/check-mark.png) | 
-| Microsoft Desktop Optimization Package, Virtual Desktop Access (VDA)	| | 	![Included with Microsoft 365 Enterprise E3](./media/check-mark.png) | 
+|Virtual Desktop Access (VDA)	| ![Included with Microsoft 365 Business](./media/check-mark.png) | 	![Included with Microsoft 365 Enterprise E3](./media/check-mark.png) | 
+|Shared Computer Activation (SCA)	| ![Included with Microsoft 365 Business](./media/check-mark.png) | 	![Included with Microsoft 365 Enterprise E3](./media/check-mark.png) | 
+| Microsoft Desktop Optimization Package	| | 	![Included with Microsoft 365 Enterprise E3](./media/check-mark.png) | 
 | **Information protection**		| | | 
 | Office 365 Data Loss Prevention, Azure Information Protection Plan 1	| ![Included with Microsoft 365 Business](./media/check-mark.png)	| ![Included with Microsoft 365 Enterprise E3](./media/check-mark.png) | 
 | **Client Access License (CAL rights)**	| | | 	
@@ -109,9 +112,16 @@ You can begin using Microsoft Desktop Optimization Package and VDA.
 
 ### Windows 10
 
-Microsoft 365 Business does not include any Windows 10 licensing entitlement. When you migrate to Microsoft 365 Enterprise E3, each user license includes Windows 10 Enterprise E3, which you can install with Windows Autopilot.
+Microsoft 365 Business includes Windows 10 Business, which you can install with Windows Autopilot. When you migrate to Microsoft 365 Enterprise E3, each user license includes Windows 10 Enterprise E3, which you can also install with Windows Autopilot.
 
-### Office client 
+<a name="office-365-business"></a>
+### Office 365 Business
 
-Your Office client installed on your devices will automatically begin to use the features of Office 365 ProPlus. After migration, you can now use volume activation through Group Policy, app telemetry, update controls, spreadsheet compare and inquire, and business intelligence.
+Your Office 365 Business client installed on your devices will automatically begin to use the features of Office 365 ProPlus. After migration, you can now use:
+
+ - Volume activation through Group Policy
+ - App telemetry
+ - Update controls
+ - Spreadsheet compare and inquire
+ - Business intelligence
 
