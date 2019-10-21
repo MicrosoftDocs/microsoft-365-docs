@@ -20,7 +20,7 @@ description: "Microsoft Compliance Score helps organizations simplify and automa
 
 ## What is Compliance Score
 
-Microsoft Compliance Score is a new feature within the Microsoft 365 compliance center that calculates a personalized, risk-based score to help understand your organization's state of compliance with key standards and regulations. It provides recommended actions you can take to strengthen your overall compliance posture, and provides workflow capabilities to to help you efficiently carry out those actions.
+Microsoft Compliance Score is a <!-- call it preview, not new, new is a relative/subjective term --> new feature within the Microsoft 365 compliance center that calculates a personalized, risk-based score to help <!-- you --> understand your organization's state of compliance with key standards and regulations. It provides recommended actions you can take to strengthen your overall compliance posture, and provides workflow capabilities to to help you efficiently carry out those actions.
 
 If you currently use [Compliance Manager](compliance-manager-overview.md), you'll notice that Compliance Score is now a standalone feature with its own design and capabilities to help you manage compliance more easily.
 
@@ -28,13 +28,13 @@ If you currently use [Compliance Manager](compliance-manager-overview.md), you'l
 
 ### Simplified compliance management
 
-Compliance Score helps to simplify and automate the process of managing compliance for your organization through a centralized, user-friendly experience. Specifically, Compliance Score provides:
+<!-- this could be your opening line --> Compliance Score helps to simplify and automate the process of managing compliance for your organization through a centralized, user-friendly experience. Specifically, Compliance Score provides:
 
 - **Continuous assessment** - automatically scans through your Microsoft 365 environments to detect and monitor the effectiveness of data protection controls in your system
 - **Suggested solutions** - provides recommendations and step-by-step guidance for how to implement controls to maximize your score
 -  **Streamlined collaboration** - lets you easily assign, track, record, and report on compliance tasks with built-in workflow tools
 
-> [!IMPORTANT]
+> [!IMPORTANT] <!-- NICE! -->
 > Compliance Score does not express an absolute measure of organizational compliance with any particular standard or regulation. It expresses the extent to which you have adopted controls which can reduce the risks to personal data and individual privacy. Recommendations from Compliance Score and Compliance Manager should not be interpreted as a guarantee of compliance. This service is currently in preview and is subject to the terms and conditions in the [Online Services Terms](https://go.microsoft.com/fwlink/?linkid=2108910).
 
 ## Relationship to Compliance Manager
@@ -54,7 +54,7 @@ Compliance Score gives you an out-of-the-box score based on the Microsoft 365 Da
 Compliance Score also synchronizes automatically with your [Microsoft Secure Score](../security/mtp/microsoft-secure-score.md), providing you with a more meaningful score and centralized management of activities that affect both sets of scores.
 
 > [!NOTE]
-> Compliance Score and Secure Score do not cover every feature in Office 365 or Microsoft Intune. The scores are meant to help you better understand your compliance posture so you can make more informed risk-based decisions.
+> Compliance Score and Secure Score do not cover every feature in <!-- is this for O365 or M365? --> Office 365 or Microsoft Intune. The scores are meant to help you better understand your compliance posture so you can make more informed risk-based decisions.
 
 Learn more about [how your compliance score is calculated](compliance-score-methodology.md).
 
@@ -79,7 +79,7 @@ There are three types of controls:
  
 ### Assessments
 
-Assessments are containers for organizing controls based on responsibilities shared between Microsoft and your organization. Assessments help you implement data protection safeguards specified by a compliance standard and applicable data protection standards, regulations, or laws. By default, the following Assessments are already created for your organization:
+Assessments are containers for organizing controls based on responsibilities shared between Microsoft and your organization. Assessments help you implement data protection safeguards specified by a compliance standard and applicable data protection standards, regulations, or laws. By default, the following <!-- is assesments a proper noun or a trademark? if not, don't capitalize --> Assessments are already created for your organization:
 
 - Office 365 ISO 27001
 - Office 365 NIST 800-53
@@ -93,7 +93,7 @@ Assessments include several components:
 - **Assessment score**: the percentage of the total possible score for customer-managed controls in the assessment; this helps you track the implementation of actions assigned to each control
 
 > [!NOTE]
-> Compliance Score displays your assessments and how they factor into your overall compliance score. However, during public preview you will be directed to Compliance Manager to manage your assessments.
+> Compliance Score displays your assessments and how they factor into your overall <!-- is this second compliance required or redundant? --> compliance score. However, during public preview you will be directed to Compliance Manager to manage your assessments.
 
 View detailed instructions for [working with assessments in Compliance Manager](working-with-compliance-manager.md#assessments).
 
