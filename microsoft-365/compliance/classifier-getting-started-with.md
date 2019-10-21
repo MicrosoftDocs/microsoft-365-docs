@@ -51,7 +51,7 @@ These appear in the **Microsoft 365 compliance center** > **Data classification 
 
 Pre-trained classifiers don't need to be trained, but you do need to confirm that they will identify the types of content that you need them to before you use them in compliance solutions. Testing a pre-trained classifier follows this flow.
 
-![process flow testing a pre-trained classifier](media\classifier-pub-pre-trained-classifier.png)
+![process flow testing a pre-trained classifier](media/classifier-pub-pre-trained-classifier.png)
 
 
 ### Trainable classifiers
