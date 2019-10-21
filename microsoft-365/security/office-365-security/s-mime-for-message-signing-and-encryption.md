@@ -43,7 +43,7 @@ The steps that you follow to set up S/MIME with each of these end points is slig
 - Set up the Outlook or EAS end point to use S/MIME.
 
 > [!NOTE]
-> You can't install S/MIME control in Outlook on the web on Mac, iOS, Android, or other non-Windows devices. For more information, see [Encrypt messages by using S/MIME in Outlook on the web](https://support.office.com/article/encrypt-messages-by-using-s-mime-in-outlook-on-the-web-878c79fc-7088-4b39-966f-14512658f480).
+> You can't install S/MIME control in Outlook on the web on Mac, iOS, Android, or other non-Windows devices. For more information, see [Encrypt messages by using S/MIME in Outlook on the web](https://support.office.com/article/878c79fc-7088-4b39-966f-14512658f480).
 
 ## Setup S/MIME with Outlook on the web
 
