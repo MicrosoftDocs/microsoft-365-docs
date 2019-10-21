@@ -20,7 +20,9 @@ description: "Learn about communication compliance in Microsoft 365"
 
 # Communication compliance in Microsoft 365 (preview)
 
-Communication compliance in Microsoft 365 allows you to scan internal and external communications for policy matches so they can be examined by designated reviewers. Reviewers can investigate scanned email, Microsoft Teams, or third-party communications in your organization and take appropriate remediation actions to make sure that they are compliant with your organization's message standards. Communication compliance policies in Microsoft 365 help you overcome many modern compliance challenges associated with internal and external communications, including:
+Communication compliance in Microsoft 365 helps you minimize communication risks by helping you detect, capture, and take remediation actions for inappropriate messages in your organization. Pre-defined and custom policies allow you to scan internal and external communications for policy matches so they can be examined by designated reviewers. Reviewers can investigate scanned email, Microsoft Teams, or third-party communications in your organization and take appropriate remediation actions to make sure that they are compliant with your organization's message standards.
+
+Communication compliance policies in Microsoft 365 help you overcome many modern compliance challenges associated with internal and external communications, including:
 
 - Scanning increasing types of communication channels
 - The increasing volume of message data

@@ -33,9 +33,9 @@ Policy templates are pre-defined policy settings that you can use to quickly cre
 
 |**Area**|**Policy Template**|**Details**|
 |:-----|:-----|:-----|
-| **Offensive language and anti-harassment** | Monitor communications for offensive language | - Locations: Exchange, Teams, Skype for Business channels <br> - Direction: Inbound, Outbound, Internal <br> - Review Percentage: 100% <br> - Conditions: Offensive language trainable classifier |
-| **Sensitive information** | Monitor communications for sensitive information | - Locations: Exchange, Teams, Skype for Business channels <br> - Direction: Inbound, Outbound, Internal <br> - Review Percentage: 10% <br> - Conditions: Sensitive information, attachments larger than 1 MB |
-| **Regulatory compliance** | Monitor communications for info related to financial regulatory compliance | - Locations: Exchange, Teams, Skype for Business channels <br> - Direction: Inbound, Outbound <br> - Review Percentage: 10% <br> - Conditions: Standard regulatory leak terms, attachments larger than 1 MB |
+| **Offensive language and anti-harassment** | Monitor communications for offensive language | - Locations: Exchange, Teams, Skype for Business <br> - Direction: Inbound, Outbound, Internal <br> - Review Percentage: 100% <br> - Conditions: Offensive language trainable classifier |
+| **Sensitive information** | Monitor communications for sensitive information | - Locations: Exchange, Teams, Skype for Business <br> - Direction: Inbound, Outbound, Internal <br> - Review Percentage: 10% <br> - Conditions: Sensitive information, attachments larger than 1 MB |
+| **Regulatory compliance** | Monitor communications for info related to financial regulatory compliance | - Locations: Exchange, Teams, Skype for Business <br> - Direction: Inbound, Outbound <br> - Review Percentage: 10% <br> - Conditions: Standard regulatory leak terms, attachments larger than 1 MB |
 
 ## Supervised users
 
@@ -160,15 +160,17 @@ If you want to reduce the amount of content to review, you can specify a percent
 
 ## Notices
 
-You can create notice templates if you want to send users an email reminder notice for policy matches as part of the issue resolution process. Notices templates are custom email templates where you can define the following message fields:
+You can create notice templates if you want to send users an email reminder notice for policy matches as part of the issue resolution process. Notices can only be sent to the employee email address associated with the policy match that generated the specific alert for remediation. Notices templates are custom email templates where you can define the following message fields:
 
-- Template name
-- Sender address
-- BCC and CC addresses
-- Message subject
-- Message body
+|**Field**|**Required**| **Details** |
+|:-----|:-----|:-----|
+|**Template name** | Yes | Friendly name for the notice template that you'll select in the notify workflow during remediation, supports up to ### text characters |
+| **Sender address** | Yes | The address of one or more users or groups that sends the message to the employee with a policy match, selected from the Active Directory for your subscription |
+| **CC and BCC addresses** | No | Optional users or groups to be notified of the policy match, selected from the Active Directory for your subscription |
+| **Subject** | Yes | Information that appears in the subject line of the message, supports up to ### text characters |
+| **Message body** | Yes | Information that appears in the message body, supports up to ### text or HTML values |
 
-When selecting a notice template to apply to a policy violation, you can choose to accept the field values you defined for the template or overwrite the fields as needed. The Message body field accepts either text or HTML data, all other notice template fields accept text-only data.
+When selecting a notice template to apply to a policy violation as part of the remediation workflow, you can choose to accept the field values defined in the template or overwrite the fields as needed.
 
 ## Monitor & manage
 
