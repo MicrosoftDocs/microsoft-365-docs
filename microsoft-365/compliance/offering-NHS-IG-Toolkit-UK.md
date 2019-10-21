@@ -17,7 +17,7 @@ hideEdit: true
 
 ## NHS IG Toolkit overview
 
-The National Health Service (NHS) is the national health system for England, and provides the majority of healthcare for the citizens of England, covering all healthcare practice areas. Founded in 1948, the NHS was the world’s first single-payer health system. It is also the world’s largest health system, employing over 1.5 million people with a 2016 budget of £116.4 billion.
+The National Health Service (NHS) is the national health system for England, and provides most of the healthcare for the citizens of England, covering all healthcare practice areas. Founded in 1948, the NHS was the world’s first single-payer health system. It is also the world’s largest health system, employing over 1.5 million people with a 2016 budget of £116.4 billion.
 
 The NHS manages the health data of more than 64 million NHS patients. The collection, storage, and processing of NHS patient data are subject to multiple laws and regulations, including the Data Protection Act of 1998 and the Confidentiality NHS Code of Practice.
 
@@ -25,7 +25,7 @@ The NHS commissioned the Health and Social Care Information Centre (HSCIC) to de
 
 All organizations that have access to NHS patient data are required to provide evidence, by using the NHS IG Toolkit, that they are taking adequate measures to protect patient data.
 
-Additionally, organizations such as Microsoft that provide a platform for healthcare providers use the toolkit to conduct a self-assessment on their security and privacy controls against NHS information governance, security, and privacy requirements.
+Also, organizations such as Microsoft that provide a platform for healthcare providers use the toolkit to conduct a self-assessment on their security and privacy controls against NHS information governance, security, and privacy requirements.
 
 Adherence with the NHS IG Toolkit helps protect the integrity and confidentiality of patient data against unauthorized access, loss, damage, and destruction. Appropriate mitigating steps must be taken to remediate any noncompliance issues identified during the assessment process.
 
@@ -45,9 +45,9 @@ As a commercial third party, Microsoft Azure has completed level 2 of the [NHS I
 - Intune
 - Power BI: cloud service either as a standalone service or as included in an Office 365 branded plan or suite
 
-## Audits, reports and certificates
+## Audits, reports, and certificates
 
-The Azure assessment will be renewed annually: [Microsoft Azure IG Toolkit Assessment Report](https://www.igt.hscic.gov.uk/AssessmentReportCriteria.aspx?tk=427399452776248&lnv=3&cb=48ea00e0-c594-4758-8634-f22b6efa0c39&sViewOrgId=50721&sDesc=8JH14)
+The Azure assessment is renewed annually: [Microsoft Azure IG Toolkit Assessment Report](https://www.igt.hscic.gov.uk/AssessmentReportCriteria.aspx?tk=427399452776248&lnv=3&cb=48ea00e0-c594-4758-8634-f22b6efa0c39&sViewOrgId=50721&sDesc=8JH14)
 
 ## Frequently asked questions
 

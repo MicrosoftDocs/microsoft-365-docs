@@ -19,7 +19,7 @@ hideEdit: true
 
 Increasingly, businesses outsource basic functions such as data storage and access to applications to cloud service providers (CSPs) and other service organizations. In response, the American Institute of Certified Public Accountants (AICPA) has developed the Service Organization Controls (SOC) framework, a standard for controls that safeguard the confidentiality and privacy of information stored and processed in the cloud. This aligns with the International Standard on Assurance Engagements (ISAE), the reporting standard for international service organizations.
 
-Service audits based on the SOC framework fall into two categories—SOC 1 and SOC 2—that apply to in-scope Microsoft cloud services.
+Service audits based on the SOC framework fall into two categories — SOC 1 and SOC 2 — that apply to in-scope Microsoft cloud services.
 
 A SOC 1 audit, intended for CPA firms that audit financial statements, evaluates the effectiveness of a CSP’s internal controls that affect the financial reports of a customer using the provider’s cloud services. The Statement on Standards for Attestation Engagements (SSAE 18) and the International Standards for Assurance Engagements No. 3402 (ISAE 3402) are the standards under which the audit is performed, and is the basis of the SOC 1 report.
 
@@ -27,7 +27,7 @@ A SOC 2 audit gauges the effectiveness of a CSP’s system based on the AICPA Tr
 
 At the conclusion of a SOC 1 or SOC 2 audit, the service auditor renders an opinion in a SOC 1 Type 2 or SOC 2 Type 2 report, which describes the CSP’s system and assesses the fairness of the CSP’s description of its controls. It also evaluates whether the CSP’s controls are designed appropriately, were in operation on a specified date, and were operating effectively over a specified time period.
 
-Auditors can also create a SOC 3 report—an abbreviated version of the SOC 2 Type 2 audit report—for users who want assurance about the CSP’s controls but don’t need a full SOC 2 report. A SOC 3 report can be conferred only if the CSP has an unqualified audit opinion for SOC 2.
+Auditors can also create a SOC 3 report — an abbreviated version of the SOC 2 Type 2 audit report — for users who want assurance about the CSP’s controls but don’t need a full SOC 2 report. A SOC 3 report can be conferred only if the CSP has an unqualified audit opinion for SOC 2.
 
 ## Microsoft and SOC 1, 2, and 3 Reports
 
@@ -65,7 +65,7 @@ Learn about the benefits of SOC 1, 2, 3 on the Microsoft Cloud: [Download the SO
 - Power BI
 - Stream
 
-## Audits, Reports and certificates
+## Audits, reports, and certificates
 
 ### Audit cycle
 
@@ -99,11 +99,11 @@ Microsoft cloud services are audited at least annually against SOC 1 (SSAE18, IS
 With the reports, your auditors can compare Microsoft business cloud services results with your own legal and regulatory requirements.
 
 - You can see all SOC reports through the [Service Trust Platform](https://www.microsoft.com/trustcenter/STP/default.aspx).
-- Azure DevOps Service customers that can’t access [Service Trust Platform](https://www.microsoft.com/trustcenter/STP/default.aspx) can email [Azure DevOps](mailto:AzureDevOpsSOCReport@microsoft.com) for its SOC 1 and SOC 2 reports. Note that this email is to request Azure DevOps SOC reports only.
+- Azure DevOps Service customers that can’t access [Service Trust Platform](https://www.microsoft.com/trustcenter/STP/default.aspx) can email [Azure DevOps](mailto:AzureDevOpsSOCReport@microsoft.com) for its SOC 1 and SOC 2 reports. This email is to request Azure DevOps SOC reports only.
 
 **How often are Azure SOC reports issued?**
 
-SOC reports for Azure, Cloud App Security, Flow, Graph, Intune, Power BI, PowerApps, Stream, and Microsoft Datacenters are based on a rolling 12 month run window (audit period) with new reports issued quarterly. The increased audit frequency provides a more timely audit period coverage through a SOC report which provides greater assurance by an external auditor when compared to a bridge letter. Customers can [download](https://aka.ms/stp) the latest reports from the Service Trust Portal.
+SOC reports for Azure, Cloud App Security, Flow, Graph, Intune, Power BI, PowerApps, Stream, and Microsoft Datacenters are based on a rolling 12-month run window (audit period) with new reports issued quarterly. The increased audit frequency provides a more timely audit period coverage through a SOC report, which provides greater assurance by an external auditor when compared to a bridge letter. Customers can [download](https://aka.ms/stp) the latest reports from the Service Trust Portal.
 
 **Do I need to conduct my own audit of Microsoft datacenters?**
 
