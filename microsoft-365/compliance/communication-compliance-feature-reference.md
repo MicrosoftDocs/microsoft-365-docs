@@ -31,9 +31,11 @@ You create communication compliance policies for Microsoft 365 organizations in 
 
 Policy templates are pre-defined policy settings that you can use to quickly create policies to address common compliance scenarios. Each of these templates have differences in conditions and scope and all templates use the same types of scanning signals. You can choose from the following policy templates:
 
-- **Monitor for offensive language**: Use this template to quickly create a communication compliance policy that uses the  built-in machine learning classifier to automatically detect content that may be considered as harassment.
-- **Monitor for sensitive info**: Use this template to create a policy to scan communications containing defined sensitive information types or keywords to help make sure important data isn't shared with people that shouldn't have access.
-- **Monitor for FINRA info**: Use this template to... 
+|**Area**|**Policy Template**|**Details**|
+|:-----|:-----|:-----|
+| **Offensive language and anti-harassment** | Monitor communications for offensive language | - Locations: Exchange, Teams, Skype for Business channels <br> - Direction: Inbound, Outbound, Internal <br> - Review Percentage: 100% <br> - Conditions: Offensive language trainable classifier |
+| **Sensitive information** | Monitor communications for sensitive information | - Locations: Exchange, Teams, Skype for Business channels <br> - Direction: Inbound, Outbound, Internal <br> - Review Percentage: 10% <br> - Conditions: Sensitive information, attachments larger than 1 MB |
+| **Regulatory compliance** | Monitor communications for info related to financial regulatory compliance | - Locations: Exchange, Teams, Skype for Business channels <br> - Direction: Inbound, Outbound <br> - Review Percentage: 10% <br> - Conditions: Standard regulatory leak terms, attachments larger than 1 MB |
 
 ## Supervised users
 

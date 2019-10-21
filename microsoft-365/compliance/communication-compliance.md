@@ -78,9 +78,9 @@ Communication compliance helps you address common pain points associated with co
 
 In this workflow step, you identify your compliance requirements and configure applicable communication compliance policies. You can choose from the following policy types in the Microsoft 365 compliance center:
 
-- **Offensive language and anti-harassment**: Use the *Monitor for offensive language* template to quickly create a supervision policy that uses the built-in machine learning classifier to automatically detect content that may be considered as harassment.
-- **Sensitive information**: Use the *Monitor for sensitive info* template to create a policy to scan communications containing defined sensitive information types or keywords to help make sure important data isn't shared with people that shouldn't have access.
-- **Regulatory compliance**: Use the *Monitor for FINRA info* template to... 
+- **Offensive language and anti-harassment**: Use the *Monitor communications for offensive language* template to quickly create a supervision policy that uses the built-in trainable classifier to automatically detect content that may be considered as harassment.
+- **Sensitive information**: Use the *Monitor communications for sensitive information* template to create a policy to scan communications containing defined sensitive information types or keywords to help make sure important data isn't shared with people that shouldn't have access.
+- **Regulatory compliance**: Use the *Monitor communications for info related to financial regulatory compliance* template to create a policy to scan communications for references to standard financial terms associated with regulatory standards. 
 - **Custom policy**: Use the *Custom Policy* template to configure specific communication channels, individual detection conditions, and the amount of content to review for supervision in your organization.
 
 ### Investigate
