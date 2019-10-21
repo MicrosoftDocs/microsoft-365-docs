@@ -152,7 +152,7 @@ Outlook
 <td><font size="-1"><b>Yes</b><sup>2</sup><br><font size="-1">16.21.0+</font>
 <td><font size="-1">TBD
 <td><font size="-1">Rolling out<br><font size="-1">4.7.1+</font>
-<td><font size="-1">TBD<td
+<td><font size="-1">TBD
 <td><font size="-1">Rolling out<br><font size="-1">4.0.39+</font>
 <td><font size="-1">TBD
 <td><b>Yes</b>
