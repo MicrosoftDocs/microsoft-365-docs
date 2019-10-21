@@ -2,7 +2,7 @@
 title: "Microsoft 365 Enterprise workloads and scenarios"
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 10/14/2019
+ms.date: 10/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -35,7 +35,7 @@ Another such need is to protect highly regulated data stored in Microsoft 365. H
 
 To protect this data from internal and external threats, see:
 
-- [Secure teams for highly regulated data](secure-teams-highly-regulated-data-scenario.md)
+- [Teams for highly regulated data](secure-teams-highly-regulated-data-scenario.md)
 - [SharePoint sites for highly regulated data](teams-sharepoint-online-sites-highly-regulated-data.md). 
 
 These scenarios step you through configuring a Microsoft Teams team or SharePoint site to securely store your most valuable data.

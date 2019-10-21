@@ -1,9 +1,9 @@
 ---
-title: "Secure teams for highly regulated data"
+title: "Teams for highly regulated data"
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 10/14/2019
+ms.date: 10/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -16,21 +16,21 @@ ms.custom:
 description: Create a secure team to store your most valuable and sensitive files.
 ---
 
-# Secure teams for highly regulated data
+# Teams for highly regulated data
 
-This article provides recommendations and steps for configuring a private team in Microsoft Teams to lock down access to Teams features—such as chats, meetings, and files—to only members and owners of the Office 365 group for the team. 
+This article provides you with recommendations and steps to configure a private team in Microsoft Teams that locks down access to Teams features—such as chats, meetings, and files—to only members and owners of the Office 365 group for the team. 
 
-Beyond the private access based on the Office 365 group, this article defines how to configure the underlying private SharePoint team site, which you can access from the Files menu option of a team channel, for the additional security needed to store highly regulated data. On this SharePoint team site, you can store and collaborate on files, pages, a shared calendar, tasks, a notebook, and lists.
+Beyond the private access based on the Office 365 group, this article describes how to configure the underlying private SharePoint team site, which you can access from the **Files** section of a team channel, for the additional security needed to store highly regulated data. On this SharePoint team site, you can store and collaborate on files, pages, a shared calendar, tasks, a notebook, and lists.
 
-The elements of configuration for secure teams for highly regulated data are:
+The elements of configuration for a team for highly regulated data are:
 
 - A private team with a corresponding Office 365 group that has owner and member user accounts.
 - Additional security on the underlying SharePoint site for the team that:
   - Prevents members of the site from granting access to others.
   - Prevents non-members of the site from requesting access to the site.
 - An Office 365 retention label for the underlying SharePoint site that is automatically applied to new files on the site as a default way to define retention policies.
-- A Data Loss Prevention (DLP) policy that uses the retention label and blocks users from sending files outside the organization.
-- An Office 365 sensitivity label or a sublabel of a highly regulated label that has encryption enabled and Co-Author permissions for the Office 365 group for the team. Users apply the label or sublabel to files stored in Files section of the team from the Sensitivity menu bar option in Word, Excel, and PowerPoint.
+- A Data Loss Prevention (DLP) policy that uses the retention label and blocks users from sharing or sending files outside the organization.
+- An Office 365 sensitivity label or a sublabel of a highly regulated label that has encryption enabled and Co-Author permissions for the Office 365 group of the team. Users apply the label or sublabel to files stored in **Files** section of the team from the Sensitivity menu bar option in Word, Excel, and PowerPoint.
 
 Here is the resulting configuration with a sensitivity label.
 
@@ -40,11 +40,11 @@ Here is the resulting configuration with a sensitivity label.
 
 The end-to-end configuration of a secure team consists of these steps:
 
-1. Configure identity and device access
-2. Create a private team
-3. Configure the underlying SharePoint site for additional security
-4. Create a retention label and DLP policy
-5. Create the label or sublabel of the highly regulated label
+1. Configure identity and device access.
+2. Create a private team.
+3. Configure the underlying SharePoint site for additional security.
+4. Create a retention label and DLP policy.
+5. Create the label or sublabel of the highly regulated label.
 
 ### Step 1: Configure identity and device access
 
@@ -54,7 +54,7 @@ To protect access to the team and its underlying SharePoint site, ensure that yo
 
 Use [these instructions](https://support.office.com/article/create-a-team-from-scratch-174adf5f-846b-4780-b765-de1a0a737e2b) to create a private team.
 
-When you create a private team, here are the default configuration of permissions:
+When you create a private team, here are the default permissions:
 
 - The Office 365 group for the team (the Team Group) has group owners and group members
 - For the underlying SharePoint site for the team (the Team Site):
@@ -70,8 +70,14 @@ Here are the default permissions for the Team Site.
  
 >[!Note]
 >If you view the \<team name> Owners SharePoint group for the Edit permission level, it does not display \<team name> Owners.
-The result is that Team Group owners can administer the site and have full control over the site contents and Team Group members can edit files on the site. Permissions maintenance is the same as team member and owner maintenance.
 >
+
+The resulting permissions allow:
+
+- Team Group owners to administer the site and have full control over the site contents.
+- Team Group members to create and edit files on the site. 
+
+Permissions maintenance is the same as team member and owner maintenance.
 
 Here’s the resulting configuration so far.
 
@@ -114,7 +120,7 @@ Unlike a sensitivity label for highly regulated data that anyone can apply to an
 
 To accomplish this additional level of security for files stored in the Team Site, you must configure a new sensitivity label that is either its own label a sublabel of the general label for highly regulated files. Only Team Group members will see it in their list of labels.
 
-Use a sensitivity label when there is a small number of labels you will need for both global use and for individual private teams. Use a sensitivity sublabel when you want to organize them under the highly regulated label.
+Use a sensitivity label when you need is a small number of labels for both global use and individual private teams. Use a sensitivity sublabel when you have a large number of labels or want to organize labels for private teams the under the highly regulated label.
 
 [Use these instructions](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels) to configure a separate label or a sublabel with the following settings:
 
@@ -137,7 +143,7 @@ Here’s the relationship between the sensitivity label and the Team Group.
 
 ## Using the team and a sensitivity label
 
-Members of the Team Group can access the team and all of its resources, including chats, meetings, and other apps. When working with files from the **Files** menu option of a channel, members of the Team Group must assign the sensitivity label or sublabel to the file created for the secure team. Here’s an example.
+Members of the Team Group can access the team and all of its resources, including chats, meetings, and other apps. When working with files from the **Files** section of a channel, members of the Team Group must assign the sensitivity label or sublabel to files created for the secure team. Here’s an example.
 
 ![Example of a label applied to a file in a secure team](./media/secure-teams-highly-regulated-data-scenario/secure-team-label-applied.png)
  
@@ -147,17 +153,17 @@ You can see which files have a label assigned by viewing a folder in SharePoint 
 
 ## Custom permissions
 
-You can also configure custom permissions for the Team Site and, if needed, its corresponding sensitivity label. Here are two examples.
+You can also configure custom SharePoint site permissions for the Team Site and, if needed, its corresponding sensitivity label. Here are two examples.
 
 ### Example 1: Delegating SharePoint site administration
 
 If the team owner does not have SharePoint administration experience or wants to delegate administration of the Team Site, they could add the user account of a SharePoint administrator to the list of team owners. But then the SharePoint administrator would have full access to the team and all its resources and would be able to open a file with the sensitivity label applied. 
 
-To prevent this over-granting of privileges, add the user account of the SharePoint administrator to the Team Site Owners SharePoint group in the advanced permissions settings of the site. The SharePoint administrator can administer the site but will not be able to access the team and any of its resources or open the files with the label assigned.
+To prevent this over-granting of privileges, add the user account of the SharePoint administrator to the Team Site Owners SharePoint group in the advanced permissions settings of the site. The SharePoint administrator can administer the site but will not be able to access the team and any of its resources or open the files with the sensitivity label assigned.
 
-### Example 2: Allowing view-only access to files that have the label applied
+### Example 2: Allowing view-only access to labeled files
 
-If some staff only need to view the contents of highly regulated files in the Team Site that have the label applied, add their individual user accounts to the:
+If some staff only need to view the contents of labeled files in the Team Site, add their individual user accounts to the:
 
 - \<team name> Visitors SharePoint group, which by default has the Read permission level. 
 - The sensitivity label with the Viewer permissions.
@@ -166,7 +172,7 @@ Here are the resulting permissions on the label.
 
 ![Example of custom permissions for viewing labeled files](./media/secure-teams-highly-regulated-data-scenario/secure-team-custom-view-permissions.png)
  
-The site visitor users will be able to access the Team Site directly and view the contents of files that have the sublabel applied. But because they are not members of the Team Group, they will not be able to access the team or any of its resources.
+The site visitors will be able to access the Team Site directly and view the contents of files that have the sublabel applied. But because they are not members of the Team Group, they will not be able to access the team or any of its resources.
 
 ## See also
 
