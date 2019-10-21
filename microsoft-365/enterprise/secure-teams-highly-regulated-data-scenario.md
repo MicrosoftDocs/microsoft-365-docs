@@ -88,9 +88,9 @@ Here’s the resulting configuration so far.
 From the Team Site, configure these permission settings.
 
 1. In the tool bar, click the settings icon, and then click **Site permissions**.
-2. In the **Site permissions** pane, click **Advanced permissions settings**.
-3. On the new **Permissions** tab of your browser, click **Access Request Settings**.
-4. In the **Access Requests Settings** dialog box, clear **Allow member to share the site and individual files and folders** and **Allow access requests** (so that all three check boxes are cleared), and then click **OK**.
+2. In the **Site permissions** pane,, under **Sharing Settings**, click **Change sharing settings**.
+3. Under **Sharing permissions**, choose **Only site owners can share files, folders, and the site**.
+4. Turn off **Allow access requests**, and then click **Save**.
 
 With these settings, the ability for Team Group members to share the Team Site with other members or for non-members to request access to the Team Site is disabled.
 
