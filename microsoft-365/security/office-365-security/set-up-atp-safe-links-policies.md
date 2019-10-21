@@ -126,7 +126,7 @@ Default policy options apply to everyone in your organization.
 |This option  |Does this  |
 |---------|---------|
 |**Off** <br/> |Does not scan URLs in email messages.  <br/> Enables you to define an exception rule, such as a rule that does not scan URLs in email messages for a specific group of recipients.  <br/> |
-|**On** <br/> |Rewrites URLs to route users through ATP Safe Links protection when the users click URLs in email messages.  <br/> Checks a URL when clicked against a list of blocked or malicious URLs.  <br/> |
+|**On** <br/> |Rewrites URLs to route users through ATP Safe Links protection when the users click URLs in email messages and enables ATP Safe Links within Outlook (C2R) on Windows.  <br/> Checks a URL when clicked against a list of blocked or malicious URLs and triggers a detonation of the URL in the background asynchronously if the URL does not have a valid reputation.  <br/> |
 |**Apply real-time URL scanning for suspicious links and links that point to files** <br/> |When this option is selected, suspicious URLs and links that point to downloadable content are scanned.  <br/> |
 |**Wait for URL scanning to complete before delivering the message** <br/> |When this option is selected, messages that contain URLs to be scanned will be held until the URLs finish scanning and are confirmed to be safe before the messages are delivered.  <br/> |
 |**Apply Safe Links to messages sent within the organization** <br/> | When this option is available and selected, ATP Safe Links protection is applied to email messages sent between people in your organization, provided the email accounts are hosted in Office 365.  <br/> |

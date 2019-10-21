@@ -7,13 +7,13 @@ audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.date: 10/8/2019
+ms.date: 10/16/2019
 ms.collection: 
 - Strat_O365_IP
 - M365-security-compliance
 search.appverid:
 - MET150
-description: "Advanced Message Encryption in Office 365 helps organizations meet their compliance obligations by enabling admins to expire and revoke access through an Office 365 web portal to encrypted emails."
+description: "Advanced Message Encryption in Office 365 helps organizations meet their compliance obligations by enabling admins to do even more with protected messages."
 ---
 
 # Office 365 Advanced Message Encryption
@@ -24,16 +24,18 @@ Advanced Message Encryption in Office 365 helps customers meet compliance obliga
 
 You can only revoke and set an expiration date for emails sent to external recipients.
 
-With Office 365 Advanced Message Encryption, anytime you apply a custom branding template, Office 365 applies a wrapper to email that fits the mail flow rule to which you apply the template. You can only revoke messages and apply expiration dates to messages that users receive through the portal. In other words, email that has a custom branding template applied.
-
 ## Get started with Office 365 Advanced Message Encryption
 
-The following topics describe how you set up and use Advanced Message Encryption.
+The following articles describe how you set up and use Advanced Message Encryption.
 
 Your organization must have a subscription that includes Office 365 Advanced Message Encryption. For detailed information about supported subscriptions, see the [Message policy and compliance service description](https://docs.microsoft.com/en-us/office365/servicedescriptions/exchange-online-service-description/message-policy-and-compliance).
 
 If you do not have Office 365 Message Encryption set up already, see [Set up new Office 365 Message Encryption capabilities](set-up-new-message-encryption-capabilities.md).
 
+With Advanced Message Encryption you're not limited to a single branding template. Instead, you can create and use multiple branding templates. For information, see [Add your organization's brand to your encrypted messages](add-your-organization-brand-to-encrypted-messages.md).
+
 [Set an expiration date for email encrypted by Office 365 Advanced Message Encryption](ome-advanced-expiration.md). Control sensitive emails shared outside the organization with automatic policies that enhance protection by expiring access through a secure web portal to encrypted emails.
 
 [Revoke email encrypted by Office 365 Advanced Message Encryption](revoke-ome-encrypted-mail.md). Control sensitive emails shared outside the organization and enhance protection by revoking access through a secure web portal to encrypted emails.  
+
+With Office 365 Advanced Message Encryption, anytime you apply a custom branding template, Office 365 applies a wrapper to email that fits the mail flow rule to which you apply the template. You can only revoke messages and apply expiration dates to messages that users receive through the portal. In other words, email that has a custom branding template applied. For more information and an example, see  the guidance in [Ensure all external recipients use the OME Portal to read encrypted mail — Office 365 Advanced Message Encryption only](manage-office-365-message-encryption.md#ensure-all-external-recipients-use-the-ome-portal-to-read-encrypted-mail--office-365-advanced-message-encryption-only).

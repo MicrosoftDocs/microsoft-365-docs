@@ -17,13 +17,13 @@ ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
 - MSB365
+- OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: f338e660-6483-4eef-acb9-53dee5bd4408
 description: "Learn what to expect after Business Cloud Suite setup is complete."
-ms.custom: OKR_SMB_M365
 ---
 
 # Help users connect to Microsoft 365 Business
