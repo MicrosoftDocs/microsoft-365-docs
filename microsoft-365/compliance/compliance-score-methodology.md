@@ -32,11 +32,7 @@ The displayed Compliance Score values for the control are applied *in their enti
 
 ## Microsoft 365 Data Protection Baseline
   
-Compliance Score gives you an out-of-the-box score based on the Microsoft 365 Data Protection Baseline, which is a set of controls that includes key regulations and standards. 
-
-This baseline includes....???
-
-This baseline is not...???
+Compliance Score gives you an out-of-the-box score based on the Microsoft 365 Data Protection Baseline, which is a set of controls that includes key regulations and standards for data protection and general data governance. This baseline draws elements primarily from from NIST CSF (National Institute of Standards and Technology Cybersecurity Framework) and ISO (International Organization for Standardization), as well as from FedRAMP (Federal Risk and Authorization Management Program) and GDPR (General Data Protection Regulation of the European Union).
   
 ## Control types
 

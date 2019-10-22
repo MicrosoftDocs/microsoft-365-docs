@@ -31,11 +31,10 @@ Compliance Score uses a role-based access control (RBAC) permission model. Only 
 
 ### Where to set permissions
 
-The global admin for your organization can set user permissions in three places: in the Microsoft 365 compliance center or in Compliance Manager for all user roles, or in Azure Active Directory (Azure AD) for read-only access.
+The global admin for your organization sets user permissions in the Microsoft 365 compliance center. If user permissions for your organization had previously been set in Compliance Manager, those roles will carry over to Compliance Score.
 
-- **If you set user permissions in the Microsoft 365 compliance center** - those permissions will automatically apply in Compliance Manager.
-- **If you set user permissions only in Compliance Manager** - those permissions will automatically apply to the Microsoft 365 compliance center, including Compliance Score.
-- **If you assign the Global Reader role in Azure AD** - this will apply to users of the Microsoft 365 compliance center, Compliance Score, and Compliance Manager
+- **When you set user permissions in the Microsoft 365 compliance center** - those permissions will automatically apply in Compliance Manager.
+- **If you previously set user permissions in Compliance Manager before the availability of Compliance Score** - those permissions will automatically apply to the Microsoft 365 compliance center, including Compliance Score.
 
 The table below shows how user role titles in the Microsoft 365 compliance center map to user role titles in Compliance Manager.
 
@@ -59,26 +58,6 @@ To set permissions from the Microsoft 365 compliance center, follow these steps:
 2. Select **Permissions** on the left navigation pane. From here, you can view roles and assign permissions.
 
 For details, read [roles and permissions in the Microsoft 365 compliance center](../security/office-365-security/microsoft-security-and-compliance.md#required-licenses-and-permissions).
-
-### Set permissions in Compliance Manager
-
-The Compliance Manager portal admin can set permissions for other users in Compliance Manager. [View a table](working-with-compliance-manager.md#permissions) showing details about the actions allowed for each permission.
-
-Follow these steps to set user permissions:
-
-1. Go to the [Service Trust Portal](https://servicetrust.microsoft.com/). 
-
-2. Select **Compliance Manager** (not **Compliance Manager (classic)**) and sign in with your global admin or portal admin account.
-
-4. When the Non-Disclosure Agreement is displayed, read it, and select **Agree** to continue. You must agree once, and then the Compliance Manager dashboard is displayed.
-
-5. From the top **More** drop-down menu, select **Admin**, then **Settings**.
-
-6. Select the role you want to assign, then select **+ Add** to add the employee you want to assign to that role. Users will then be able to perform the actions assigned to that role.
-
-### Set read-only permissions in Azure AD
-
-Users who are assigned the **Global Reader** role in Azure AD have read-only permission to access Compliance Score and the Microsoft 365 compliance center. However, they cannot edit data or perform any actions within Compliance Manager. Read instructions on assigning the [Global Reader role in Azure Active Directory (Azure AD)](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader).
 
 ## Understand the Compliance Score dashboard
 
