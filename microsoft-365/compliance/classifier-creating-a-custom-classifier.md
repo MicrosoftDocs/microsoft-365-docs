@@ -59,7 +59,7 @@ Once the trainable classifier has processed enough positive samples to build a p
 
 8. Review the settings and choose `Create trainable classifier`.
 
-9. Wait 24 hours for the trainable classifier to process the seed data and build a prediction model. The classifier status will be `In progress` while it processes the seed data. When the classifier is finished processing the seed data, the status will change to `never tested`
+9. Wait 24 hours for the trainable classifier to process the seed data and build a prediction model. The classifier status will be `In progress` while it processes the seed data. When the classifier is finished processing the seed data, the status will change to `Need test items`.
 
 10. 
 
