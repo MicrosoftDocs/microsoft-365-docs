@@ -27,7 +27,7 @@ Use the following workflow to set up and use eDiscovery cases in the Security & 
 
 [Step 1: Assign eDiscovery permissions to potential case members](#step-1-assign-ediscovery-permissions-to-potential-case-members)
 
-[Step 2: Create a case](#step-2-create-a-new-case)
+[Step 2: Create a new case](#step-2-create-a-new-case)
 
 [Step 3: Add members to a case](#step-3-add-members-to-a-case)
 
@@ -88,7 +88,7 @@ For more information about eDiscovery permissions, see [Assign eDiscovery permis
     
 4. After you've added all the users, click **Done**, click **Save** to save the changes to the role group, and then click **Close**.
 
-## Step 2: Create a case
+## Step 2: Create a new case
 
 The next step is to create a eDiscovery case. You must be a member of the eDiscovery Managers role group to create eDiscovery cases. As previously explained, after you create a case in the Security & Compliance Center, you (and other case members) will be able to access that same case in Advanced eDiscovery if your organization has an Office 365 E5 subscription.
   
