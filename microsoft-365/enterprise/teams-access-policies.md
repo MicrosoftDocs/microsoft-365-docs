@@ -33,31 +33,31 @@ The following diagram illustrates the set of recommended policies for protecting
 
 If you included Teams when you created the common policies, you should be able to proceed to create policy rules around guest and external access, along with policies for Teams and Channels, Messaging, Meeting, and Applications.
 
-This is a table of rules to follow, and you can learn more from .
+This is a table of rules to follow, and you can learn more from [Common identity and device access policies](identity-access-policies.md), which has the wider rule-set for all Office applications.
 
 |Protection level|Policies|Further information for Teams implementation|
 |:---------------|:-------|:----------------|
-|**Baseline**|[Require MFA when sign-in risk is *medium* or *high*](#require-mfa-based-on-sign-in-risk)|For high-risk users, as defined by your organization, MFA should be enabled|
-|        |[Block clients that don't support modern authentication](#block-clients-that-dont-support-modern-authentication)|Clients that do not use modern authentication can bypass conditional access rules, so it's important to block these|
-|        |[High risk users must change password](#high-risk-users-must-change-password)|Forces Teams users to change their password when signing in if high-risk activity is detected for their account|
-|        |[Define app protection policies](#define-app-protection-policies)|One policy per platform (iOS, Android, Windows).|
-|        |[Require approved apps](#require-approved-apps)|Enforces mobile app protection for phones and tablets|
-|        |[Define device compliance policies](#define-device-compliance-policies)|One policy for each platform|
-|        |[Require compliant PCs](#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Enforces Intune management of PCs|
-|**Sensitive**|[Require MFA when sign-in risk is *low*, *medium* or *high*](#require-mfa-based-on-sign-in-risk)|A range of low-risk to high-risk users, as defined by your organization, should be required to use MFA|
-|         |[Require compliant PCs *and* mobile devices](#require-compliant-pcs-and-mobile-devices)|Enforces Intune management for PCs and phone/tablets|
-|**Highly regulated**|[*Always* require MFA](#require-mfa-based-on-sign-in-risk)|Regardless of user identity, MFA will be used by your organization
+|**Baseline**|[Require MFA when sign-in risk is *medium* or *high*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Teams has Guest Access and External Access rules to consider as well, you'll learn more about them in this article|
+|        |[Block clients that don't support modern authentication](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Include Teams in the assignment of cloud apps|
+|        |[High risk users must change password](identity-access-policies.md#high-risk-users-must-change-password)|Forces Teams users to change their password when signing in if high-risk activity is detected for their account|
+|        |[Define app protection policies](identity-access-policies.md#define-app-protection-policies)|Be sure Teams is included in the list of apps. Be sure to update the policy for each platform (iOS, Android, Windows)|
+|        |[Require approved apps](identity-access-policies.md#require-approved-apps)|Include Teams in this policy|
+|        |[Define device compliance policies](identity-access-policies.md#define-device-compliance-policies)|Include Teams in this policy|
+|        |[Require compliant PCs](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Include Teams in this policy|
+|**Sensitive**|[Require MFA when sign-in risk is *low*, *medium* or *high*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Teams has Guest Access and External Access rules to consider as well, you'll learn more about them in this article|
+|         |[Require compliant PCs *and* mobile devices](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|Include Teams in this policy to ensure all devices are compliant|
+|**Highly regulated**|[*Always* require MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Regardless of user identity, MFA will be used by your organization
 | | |
 
 ### Guest Access
 
-In addition to the policies for users who are internal to your business or organization, guest access can be enabled on a user-by-user basis to allow people who are external to your business or organization to access Teams resources and interact with internal people for things like group conversations, chat, and meetings. You can learn more about this at the following link: [Teams guest access](https://docs.microsoft.com/en-us/microsoftteams/guest-access)
+In addition to the policies for users who are internal to your business or organization, administrators may enable guest access too allow, on a user-by-user basis, people who are external to your business or organization to access Teams resources and interact with internal people for things like group conversations, chat, and meetings. You can learn more about Guest Access at the following link: [Teams guest access](https://docs.microsoft.com/en-us/microsoftteams/guest-access)
 
 ### External Access
 
-External access is sometimes confused with guest access, so it's important to be clear that these two access mechanisms are actually quite different. While guest access occurs on a per-user basis (you add one user at a time), external access allows you to add all the users of an external domain at the same time, but they have less access than an individual who's been added via guest access would have. External access users can chat with your internal users via Teams.
+External access is sometimes confused with guest access, so it's important to be clear that these two non-internal access mechanisms are actually quite different. While guest access occurs on a per-user basis (you add one user at a time), when an administrator enables external access it allows you to add all the users of an external domain at the same time to Teams. However those external users have less access and functionality than an individual who's been added via guest access would have. External access users can chat with your internal users via Teams.
 
-For more reading about external access, and how to implement it, please review [Manage external access in Microsoft Teams](https://docs.microsoft.com/en-us/microsoftteams/manage-external-access)
+For more reading about external access, and how to implement it if you need to, please review [Manage external access in Microsoft Teams](https://docs.microsoft.com/en-us/microsoftteams/manage-external-access)
 
 ## How these policies work together
 
