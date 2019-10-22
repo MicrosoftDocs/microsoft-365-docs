@@ -36,9 +36,9 @@ Here is the resulting configuration with a sensitivity label.
 
 ![The secure team scenario configuration](./media/secure-teams-highly-regulated-data-scenario/secure-team-final.png)
  
-## Configuration
+## Phase 1: Configure a team for highly regulated data
 
-The end-to-end configuration of a secure team consists of these steps:
+The end-to-end configuration consists of these steps:
 
 1. Configure identity and device access.
 2. Create a private team.
@@ -88,9 +88,9 @@ Here’s the resulting configuration so far.
 From the Team Site, configure these permission settings.
 
 1. In the tool bar, click the settings icon, and then click **Site permissions**.
-2. In the **Site permissions** pane, click **Advanced permissions settings**.
-3. On the new **Permissions** tab of your browser, click **Access Request Settings**.
-4. In the **Access Requests Settings** dialog box, clear **Allow member to share the site and individual files and folders** and **Allow access requests** (so that all three check boxes are cleared), and then click **OK**.
+2. In the **Site permissions** pane, under **Sharing Settings**, click **Change sharing settings**.
+3. Under **Sharing permissions**, choose **Only site owners can share files, folders, and the site**.
+4. Turn off **Allow access requests**, and then click **Save**.
 
 With these settings, the ability for Team Group members to share the Team Site with other members or for non-members to request access to the Team Site is disabled.
 
@@ -120,7 +120,7 @@ Unlike a sensitivity label for highly regulated data that anyone can apply to an
 
 To accomplish this additional level of security for files stored in the Team Site, you must configure a new sensitivity label that is either its own label a sublabel of the general label for highly regulated files. Only Team Group members will see it in their list of labels.
 
-Use a sensitivity label when you need is a small number of labels for both global use and individual private teams. Use a sensitivity sublabel when you have a large number of labels or want to organize labels for private teams the under the highly regulated label.
+Use a sensitivity label when you need a small number of labels for both global use and individual private teams. Use a sensitivity sublabel when you have a large number of labels or want to organize labels for private teams the under the highly regulated label.
 
 [Use these instructions](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels) to configure a separate label or a sublabel with the following settings:
 
@@ -138,30 +138,20 @@ Here’s the relationship between the sensitivity label and the Team Group.
 
 
 >[!Note]
->If you configure the sensitivity label or sublabel for user-defined permissions or with an expiration date, you cannot open the file from Teams or SharePoint Online. You must use an Office app.
+>If you configure the sensitivity label or sublabel for user-defined permissions or with an expiration date, you cannot open the file from Teams or SharePoint. You must use an Office app.
 >
 
-## Using the team and a sensitivity label
-
-Members of the Team Group can access the team and all of its resources, including chats, meetings, and other apps. When working with files from the **Files** section of a channel, members of the Team Group must assign the sensitivity label or sublabel to files created for the secure team. Here’s an example.
-
-![Example of a label applied to a file in a secure team](./media/secure-teams-highly-regulated-data-scenario/secure-team-label-applied.png)
- 
-When the label gets applied to the file it is secured. Members of the Team Group can open it in Teams and collaborate in real time. It is encrypted and includes the Co-Author permissions set to the Team Group members. If the file leaves the site and gets forwarded to a malicious user, they will have to supply credentials of a user account that is member of the Team Group to open the file and view its contents. 
-
-You can see which files have a label assigned by viewing a folder in SharePoint Online and adding the **Sensitivity** column through the **Show/hide columns** option of **Add column**.
-
-## Custom permissions
+### Custom permissions
 
 You can also configure custom SharePoint site permissions for the Team Site and, if needed, its corresponding sensitivity label. Here are two examples.
 
-### Example 1: Delegating SharePoint site administration
+#### Example 1: Delegating SharePoint site administration
 
 If the team owner does not have SharePoint administration experience or wants to delegate administration of the Team Site, they could add the user account of a SharePoint administrator to the list of team owners. But then the SharePoint administrator would have full access to the team and all its resources and would be able to open a file with the sensitivity label applied. 
 
 To prevent this over-granting of privileges, add the user account of the SharePoint administrator to the Team Site Owners SharePoint group in the advanced permissions settings of the site. The SharePoint administrator can administer the site but will not be able to access the team and any of its resources or open the files with the sensitivity label assigned.
 
-### Example 2: Allowing view-only access to labeled files
+#### Example 2: Allowing view-only access to labeled files
 
 If some staff only need to view the contents of labeled files in the Team Site, add their individual user accounts to the:
 
@@ -174,8 +164,48 @@ Here are the resulting permissions on the label.
  
 The site visitors will be able to access the Team Site directly and view the contents of files that have the sublabel applied. But because they are not members of the Team Group, they will not be able to access the team or any of its resources.
 
+
+## Phase 2: Drive user adoption for team members
+
+With the team in place, it’s time to drive the adoption of this team and its additional security to team members.
+
+### Step 1: Train your users
+
+Members of the Team Group can access the team and all of its resources, including chats, meetings, and other apps. When working with files from the **Files** section of a channel, members of the Team Group must assign the sensitivity label or sublabel to files created for the secure team. Here’s an example.
+
+![Example of a label applied to a file in a secure team](./media/secure-teams-highly-regulated-data-scenario/secure-team-label-applied.png)
+ 
+When the label gets applied to the file it is secured. Members of the Team Group can open it in Teams and collaborate in real time. It is encrypted and includes the Co-Author permissions set to the Team Group members. If the file leaves the site and gets forwarded to a malicious user, they will have to supply credentials of a user account that is member of the Team Group to open the file and view its contents. 
+
+Train your team members:
+
+- On the importance of using the new team for chats, meetings, files, and the other resources of the Team Site and the consequences of a highly regulated data leak, such as legal ramifications, regulatory fines, ransomware, or loss of competitive advantage.
+- How to access the team.
+- How to create new files on the site and upload new files stored locally.
+- How the DLP policy blocks them from sharing files externally.
+- How to label files with the custom label or sublabel for the team.
+- How the label or sublabel protects files even when they are leaked off the site.
+
+This training should include hands-on exercises so that your team members can experience these capabilities and their results.
+
+### Step 2: Conduct periodic reviews of usage and address team member feedback
+
+In the weeks after training:
+
+- Quickly address team member feedback and fine tune polices and configurations.
+- Analyze usage for the team and compare it with usage expectations.
+- Verify that highly regulated files have been properly labeled with the custom sensitivity label or sublabel.
+
+  You can see which files have a label assigned by viewing a folder in SharePoint and adding the **Sensitivity** column through the **Show/hide columns** option of **Add column**.
+
+Retrain your users as needed.
+
 ## See also
 
 [SharePoint sites for highly regulated data](teams-sharepoint-online-sites-highly-regulated-data.md)
+
+[Microsoft 365 Enterprise workloads and scenarios](deploy-workloads.md)
+
+[Microsoft 365 Productivity Library](https://aka.ms/productivitylibrary) (https://aka.ms/productivitylibrary)
 
 [Deployment guide](deploy-microsoft-365-enterprise.md)
