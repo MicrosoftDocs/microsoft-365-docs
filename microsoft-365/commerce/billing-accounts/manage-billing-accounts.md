@@ -88,25 +88,6 @@ Businesses in these countries can provide their VAT number:
 - Switzerland  
 - United Kingdom
 
-|  |  |
-|------------------|------------------|
-| - Austria | - Liechtenstein |
-| - Belgium | - Lithuania |
-| - Bulgaria | - Luxembourg |
-| - Croatia | - Malta |
-| - Cyprus | - Monaco |
-| - Czech Republic | - Netherlands |
-| - Denmark | - Norway |
-| - Estonia | - Poland |
-| - Finland | - Portugal |
-| - France | - Romania |
-| - Germany | - Slovakia |
-| - Greece | - South Africa |
-| - Hungary | - Spain |
-| - Ireland | - Sweden |
-| - Italy | - Switzerland |
-| - Latvia | - United Kingdom |
-
 These countries can provide their VAT number or local equivalent on their billing account information.
 
 |Market| Tax identifier |
