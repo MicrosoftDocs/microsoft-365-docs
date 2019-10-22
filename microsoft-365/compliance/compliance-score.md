@@ -101,20 +101,20 @@ View detailed instructions for [working with assessments in Compliance Manager](
 
 Compliance Score provides pre-configured templates for assessments and allows you to create customized templates for customer-managed controls to suit your needs. You can create new templates by copying an existing template, or by importing controls information from an Excel file.
 
-The pre-configured templates for Compliance Score are:
+The twelve pre-configured templates for Compliance Score are:
 
-- [ISO 27001:2013](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-2:v1:en)
-- [ISO 27001:2019](https://www.iso.org/standard/71670.html)
-- [ISO 27018:2019](https://www.iso.org/obp/ui/#iso:std:iso-iec:27018:ed-2:v1:en)
-- [NIST 800-53](https://csrc.nist.gov/publications/detail/sp/800-53/rev-4/final)
-- [NIST 800-171](https://csrc.nist.gov/publications/detail/sp/800-171/rev-1/final)
-- [NIST Cybersecurity Framework (CSF)](https://www.nist.gov/cyberframework)
-- [Cloud Security Alliance (CSA) Cloud Control Matrix (CCM) 3.0.1](https://cloudsecurityalliance.org/working-groups/cloud-controls-matrix/#_overview)
-- [Federal Financial Institutions Examination Council (FFIEC) Information Security Booklet](https://ithandbook.ffiec.gov/it-booklets/information-security.aspx) 
-- [HIPAA](https://www.hhs.gov/hipaa/for-professionals/index.html) / [HITECH](https://www.hhs.gov/hipaa/for-professionals/special-topics/hitech-act-enforcement-interim-final-rule/index.html)
-- [FedRAMP Moderate](https://www.fedramp.gov/documents/)
-- [European Union GDPR](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679&from=EN)
-- [California Consumer Privacy Act (CCPA)](https://oag.ca.gov/privacy/ccpa)
+1. [ISO 27001:2013](https://go.microsoft.com/fwlink/?linkid=2109073)
+2. [ISO 27001:2019](https://go.microsoft.com/fwlink/?linkid=2108866)
+3. [ISO 27018:2019](https://go.microsoft.com/fwlink/?linkid=2109074)
+4. [NIST 800-53](https://go.microsoft.com/fwlink/?linkid=2109075)
+5. [NIST 800-171](https://go.microsoft.com/fwlink/?linkid=2108867)
+6. [NIST Cybersecurity Framework (CSF)](https://go.microsoft.com/fwlink/?linkid=2108868)
+7. [Cloud Security Alliance (CSA) Cloud Control Matrix (CCM) 3.0.1](https://go.microsoft.com/fwlink/?linkid=2109076)
+8. [Federal Financial Institutions Examination Council (FFIEC) Information Security Booklet](https://go.microsoft.com/fwlink/?linkid=2109077) 
+9. [HIPAA](https://go.microsoft.com/fwlink/?linkid=2109078) / [HITECH](https://go.microsoft.com/fwlink/?linkid=2109079)
+10. [FedRAMP Moderate](https://go.microsoft.com/fwlink/?linkid=2108869)
+11. [European Union GDPR](https://go.microsoft.com/fwlink/?linkid=2108870)
+12. [California Consumer Privacy Act (CCPA)](https://go.microsoft.com/fwlink/?linkid=2108871)
 
 > [!NOTE]
 > During public preview, go to Compliance Manager to create and customize your templates.
