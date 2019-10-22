@@ -1,6 +1,6 @@
 ---
-title: Identity and device access policies for allowing guests and external B2B access - Microsoft 365 Enterprise | Microsoft Docs
-description: Describes the recommended conditional access and related policies for protecting guest and external access.
+title: Identity and device access policies for allowing guest and external B2B access - Microsoft 365 Enterprise | Microsoft Docs
+description: Describes the recommended conditional access and related policies for protecting access of guest and external users.
 author: BrendaCarter
 manager: johmar
 ms.prod: microsoft-365-enterprise
@@ -16,7 +16,7 @@ ms.collection:
 - M365-security-compliance
 ---
 
-# Policies for allowing guest and external access
+# Policies for allowing guest and external B2B access
 This article describes how to adjust the recommended common identity and device access policies to allow B2B account access (guest and external users). This guidance builds on the [Common identity and device access policies](identity-access-policies.md).
 
 These recommendations are designed to apply to the **baseline** tier of protection. However, you can adjust the recommendations based on the granularity of your needs for **sensitive** and **highly regulated** protection. 
