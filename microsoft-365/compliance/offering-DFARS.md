@@ -65,7 +65,7 @@ In October 2016, the Department of Defense (DoD) promulgated a final rule implem
 
 The following Microsoft cloud services have received a FedRAMP moderate authorization and are adequate for DFARS: Azure Government, Dynamics 365 U.S. Government, Office 365 U.S. Government, and Office 365 U.S. Government Defense.
 
-Additionally, Microsoft offerings outside the FedRAMP-certified boundary that could potentially be used by DoD contractors to process, store, or transmit “covered defense information” are undergoing a review to meet a December 31, 2017, compliance deadline. Microsoft is working to document how these internal and customer-facing services comply with NIST SP 800–171 or an acceptable security equivalent, to meet the DFARS relevant clauses.
+Also, Microsoft offerings outside the FedRAMP-certified boundary that could potentially be used by DoD contractors to process, store, or transmit “covered defense information” are undergoing a review to meet a December 31, 2017, compliance deadline. Microsoft is working to document how these internal and customer-facing services comply with NIST SP 800–171 or an acceptable security equivalent, to meet the DFARS relevant clauses.
 
 ## Resources
 
