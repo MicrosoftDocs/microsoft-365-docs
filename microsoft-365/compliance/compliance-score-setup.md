@@ -31,10 +31,11 @@ Compliance Score uses a role-based access control (RBAC) permission model. Only 
 
 ### Where to set permissions
 
-The global admin for your organization sets user permissions in the Microsoft 365 compliance center. If user permissions for your organization had previously been set in Compliance Manager, those roles will carry over to Compliance Score.
+The global admin for your organization sets user permissions in the Microsoft 365 compliance center.
 
-- **When you set user permissions in the Microsoft 365 compliance center** - those permissions will automatically apply in Compliance Manager.
-- **If you previously set user permissions in Compliance Manager before the availability of Compliance Score** - those permissions will automatically apply to the Microsoft 365 compliance center, including Compliance Score.
+- **When you set user permissions in the Microsoft 365 compliance center**: those permissions will automatically apply in Compliance Manager.
+
+- **If you previously set user permissions in Compliance Manager before the release of Compliance Score**: those permissions will automatically apply to Compliance Score.
 
 The table below shows how user role titles in the Microsoft 365 compliance center map to user role titles in Compliance Manager.
 
