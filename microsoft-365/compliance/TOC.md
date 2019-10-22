@@ -11,13 +11,13 @@
 # Manage internal risks
 ## [Protect user and device access](protect-access-to-data-and-services.md)
 ## [Customer Lockbox](customer-lockbox-requests.md)
-## [Privileged access management]()
+## Privileged access management
 ### [Learn about privileged access management](privileged-access-management-overview.md)
 ### [Configure privileged access management](privileged-access-management-configuration.md)
 ## Customer Key
 ### [Controlling your data in Office 365 using Customer Key](controlling-your-data-using-customer-key.md)
 ### [Service encryption with Customer Key for Office 365 FAQ](service-encryption-with-customer-key-faq.md)
-## [Supervise communications]()
+## Supervise communications
 ### [Learn about supervision policies](supervision-policies.md)
 ### [Configure supervision policies for your organization](configure-supervision-policies.md)
 ## [Information barriers](information-barriers.md)
@@ -387,7 +387,7 @@
 ## [GDPR](gdpr.md)
 ### [Recommended action plan for GDPR](gdpr-action-plan.md)
 
-### [Accountability readiness checklists]()
+### Accountability readiness checklists
 #### [Accountability readiness checklists](gdpr-arc.md)
 #### [Azure](gdpr-arc-azure.md)
 #### [Dynamics 365](gdpr-arc-dynamics365.md)
@@ -396,7 +396,7 @@
 
 ### [Information protection](gdpr-information-protection.md)
 
-### [Data subject requests]()
+### Data subject requests
 #### [Data subject requests](gdpr-data-subject-requests.md)
 #### [Azure](gdpr-dsr-azure.md)
 #### [Azure DevOps Services](gdpr-dsr-vsts.md)
@@ -406,14 +406,14 @@
 #### [Office 365](gdpr-dsr-office365.md)
 #### [Visual Studio Family](gdpr-dsr-visual-studio-family.md)
 
-### [Breach notification]()
+### Breach notification
 #### [Breach notification](gdpr-breach-notification.md)
 #### [Azure](gdpr-breach-azure.md)
 #### [Dynamics 365](gdpr-breach-dynamics365.md)
 #### [Microsoft Support & Professional Services](gdpr-breach-microsoft-support-professional-services.md)
 #### [Office 365](gdpr-breach-office365.md)
 
-### [Data protection impact assessments]()
+### Data protection impact assessments
 #### [Data protection impact assessments](gdpr-data-protection-impact-assessments.md)
 #### [Azure](gdpr-dpia-azure.md)
 #### [Dynamics 365](gdpr-dpia-dynamics.md)
@@ -574,7 +574,7 @@
 #### [EU U.S. Privacy Shield](offering-eu-us-privacy-shield.md)
 #### [GDPR (EU)](offering-gdpr-eu.md)
 #### [G-Cloud (UK)](offering-g-cloud-uk.md)
-#### [IDW PS 951 (Germany)]()
+#### IDW PS 951 (Germany)
 #### [IT Grundschutz Workbook (Germany)](offering-it-grundschutz-workbook-germany.md)
 #### [LOPD (Spain)](offering-lopd-spain.md)
 #### [PASF (UK)](offering-pasf-uk.md)
