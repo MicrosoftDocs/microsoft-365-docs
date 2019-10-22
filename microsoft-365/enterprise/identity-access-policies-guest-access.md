@@ -21,7 +21,7 @@ This article describes how to adjust the recommended common identity and device 
 
 These recommendations are designed to apply to the **baseline** tier of protection. However, you can adjust the recommendations based on the granularity of your needs for **sensitive** and **highly regulated** protection. 
 
-Providing a path for B2B users to authenticate with your Azure AD tenant doesn't give these users access to your entire environment. B2B users only have access to resources that are shared with them within the services granted in the conditional access policies.
+Providing a path for B2B users to authenticate with your Azure AD tenant doesn't give these users access to your entire environment. B2B users only have access to resources that are shared with them (such as files) within the services granted in the conditional access policies.
 
 ## Updating the common policies to allow and protect guest and external access 
 
