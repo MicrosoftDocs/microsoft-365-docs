@@ -1,5 +1,5 @@
 ---
-title: "Creating a custom classifier (Preview)"
+title: "Creating a custom classifier (preview)"
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,7 +14,7 @@ search.appverid:
 description: "Use trainable classifiers when one of the out of the box classifiers won't meet your needs. A Microsoft 365 classifier is a tool you can train to recognize various types of content by giving it samples to look at. This topics shows you how to create a custom classifier."
 ---
 
-# Creating a trainable classifier (Preview)
+# Creating a trainable classifier (preview)
 
 Use trainable classifiers when one of the out of the box classifiers won't meet your needs. A Microsoft 365 classifier is a tool you can train to recognize various types of content by giving it samples to look at. Training the classifier involves first giving it samples that are human picked and positively match the category, then after it has processed those, testing it predictions by giving it a mix of positive and negative samples. 
 
@@ -34,7 +34,9 @@ Once the trainable classifier has processed enough positive samples to build a p
 > [!TIP]
 > For best results, have 10,000 items in your test sample set with an even distribution of positive and negative matches.
 
-## Using a trainable classifier as a source for information protection and compliance features
+## How to create a trainable classifier
+
+1. 
 
 
 

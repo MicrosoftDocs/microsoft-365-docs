@@ -1,5 +1,5 @@
 ---
-title: "Getting started with Microsoft 365 classifiers (Preview)"
+title: "Getting started with Microsoft 365 classifiers (preview)"
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,7 +14,7 @@ search.appverid:
 description: "A Microsoft 365 trainable classifier is a tool you can train to recognize various types of content by giving it positive and negative samples to look at. Once the classifier is trained and you confirm it's results are accurate, you use it to search through your organizations content, classify it to apply retention or sensitivity labels or include it in data loss prevention (DLP) or retention policies."
 ---
 
-# Getting started with trainable classifiers
+# Getting started with trainable classifiers (preview)
 
 Classifying content and then labeling it so it can be protected and handled properly is the starting place for the information protection discipline. Microsoft 365 has three ways to classify content:
 
@@ -28,7 +28,10 @@ This category of classification mechanisms includes, finding content by keywords
 
 ## Trainable classifiers
 
-This classification method is particularly well suited to content that, by it's nature, isn't predisposed to being easily identified by either the manual or automated pattern matching methods. This method of classification is more about training a classifier to identify what an item is, not by elements that are in the item (pattern matching) but by examples of the type of items. A classifier learns how to identify a type of content by looking a hundreds of examples of the type of content you are interested in classifying. You start by feeding it examples that are definitely in the category, then once it processes those, you test it by giving it a mix of both matching and non-matching examples. The classifier then makes predictions as to whether or not any given item falls into the category you are building. You then confirm it's results, sorting out the positives, negatives and false positives and false negatives to help increase the accuracy of it's predictions. When you publish the trained classifier, it sorts through items in locations, like SharePoint Online, and classifies the content. The trainable classifier is then available as a condition for auto-apply retention label policy workflow.
+This classification method is particularly well suited to content that, by it's nature, isn't predisposed to being easily identified by either the manual or automated pattern matching methods. This method of classification is more about training a classifier to identify what an item is, not by elements that are in the item (pattern matching) but by examples of the type of items. A classifier learns how to identify a type of content by looking a hundreds of examples of the type of content you are interested in classifying. You start by feeding it examples that are definitely in the category, then once it processes those, you test it by giving it a mix of both matching and non-matching examples. The classifier then makes predictions as to whether or not any given item falls into the category you are building. You then confirm it's results, sorting out the positives, negatives and false positives and false negatives to help increase the accuracy of it's predictions. When you publish the trained classifier, it sorts through items in locations, like SharePoint Online, and classifies the content.
+
+> [!IMPORTANT]
+> Both types of classifiers are available as a condition for [auto-apply retention label policy based on a condition](labels#applying-a-retention-label-automatically-based-on-conditions) and the [communication compliance workflow](communication-compliance-feature-reference.md).
 
 > [!IMPORTANT]
 > Trainable classifiers only work with items that are in english.
