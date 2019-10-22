@@ -121,7 +121,7 @@ Follow [these instructions]( https://support.office.com/article/create-a-site-in
 From the SharePoint site, configure these permission settings.
 
 1. In the tool bar, click the settings icon, and then click **Site permissions**.
-2. In the **Site permissions** pane,, under **Sharing Settings**, click **Change sharing settings**.
+2. In the **Site permissions** pane, under **Sharing Settings**, click **Change sharing settings**.
 3. Under **Sharing permissions**, choose **Only site owners can share files, folders, and the site**.
 4. Turn off **Allow access requests**, and then click **Save**.
 

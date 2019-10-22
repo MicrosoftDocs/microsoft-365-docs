@@ -88,7 +88,7 @@ Here’s the resulting configuration so far.
 From the Team Site, configure these permission settings.
 
 1. In the tool bar, click the settings icon, and then click **Site permissions**.
-2. In the **Site permissions** pane,, under **Sharing Settings**, click **Change sharing settings**.
+2. In the **Site permissions** pane, under **Sharing Settings**, click **Change sharing settings**.
 3. Under **Sharing permissions**, choose **Only site owners can share files, folders, and the site**.
 4. Turn off **Allow access requests**, and then click **Save**.
 
@@ -186,9 +186,9 @@ Train your team members:
 - How to label files with the custom label or sublabel for the team.
 - How the label or sublabel protects files even when they are leaked off the site.
 
-This training should include hands-on exercises so that your teamn members can experience these capabilities and their results.
+This training should include hands-on exercises so that your team members can experience these capabilities and their results.
 
-### Step 2: Conduct periodic reviews of usage and address worker feedback
+### Step 2: Conduct periodic reviews of usage and address team member feedback
 
 In the weeks after training:
 
