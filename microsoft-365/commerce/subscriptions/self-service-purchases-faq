@@ -1,0 +1,119 @@
+---
+title: Self-service purchases FAQ
+ms.author: cmcatee
+author: cmcatee-MSFT
+manager: mnirkhe
+audience: Admin
+ms.topic: article
+ms.service: o365-administration 
+localization_priority: Normal
+ms.collection:
+- commerce 
+ms.custom:
+search.appverid:
+- MET150
+description: "Find answers to commonly asked questions about the self-service purchases feature."
+---
+
+# Self-service purchases FAQ
+
+## Purchasing
+
+### How does a user buy subscriptions?
+<need info about this> You must have an Azure Active Directory (AAD) account to buy subscriptions. For more information, see Manage self-service purchases (Users).
+
+### What products can a user buy?
+<need info>
+
+### Can an admin prevent users from buying products? 
+Many companies have internal policies that specify when users can buy software and services. Microsoft doesn’t block anyone from making a purchase.
+
+### For users who already made a purchase, can an admin prevent them from buying additional licenses? 
+No. Microsoft doesn’t block users from making purchases.
+
+### Can an admin prevent certain products from being bought? 
+There is no setting that can prevent certain products from being bought. Use internal company guidelines and documentation to ensure employees know what is and is not acceptable for use within your organization.
+
+### We have a regulatory, compliance, security, or legal reason to prevent the use of a certain product in our organization. How can an admin prevent the purchase of those products? 
+We recommend that you use internal company guidelines and documentation to ensure employees know what is and is not acceptable for use within your organization.
+
+### What type of users can buy products? 
+Anyone with an Azure Active Directory (AAD) account in your AAD tenant.
+
+### Can guest users buy products? 
+TODO @Michael Curnutt Add a description. Press tab when you are done. 
+
+### My users were synced from on prem. Can they buy products? 
+Yes, if they already have a valid AAD account. 
+
+### If a user makes a purchase, will that use up an admin’s Azure consumption? 
+None of these products by default use Azure consumption. If the user has access to Azure resources, they can tie the product they purchased to that Azure resource. 
+
+### Can an admin see the purchases? Where can they do that?
+If you’re a global admin, you can see purchases made by your users on the Products and services page. For more information, see View self-service purchases in Manage self-service purchases (Admins).
+
+If you’re a partner, go to the admin center, and choose Billing > Licenses. <need additional steps> You can see the product name, purchaser name, number of seats purchased, and number of assigned users (only if DAP setup).
+
+###  If an admin has already bought a subscription for a product, will you stop the user from buying it again? 
+No.
+
+### Can I, as an admin, merge a users’ purchase with mine? 
+Not currently. 
+
+### Will users get the benefit of admin-negotiated discounts? 
+No. 
+
+### Who is responsible for payment? 
+The user is responsible for payment.
+
+### Will this impact the admin’s bill? 
+No. This will not impact your bill.
+
+### What if the admin has already turned off self-service signup for Azure Active Directory (AAD)? 
+That will not affect their ability to make a purchase. 
+
+### What if the admin already turned off Azure purchases? 
+<try to avoid this question as others will want to know how that happened… but the short answer is we plan on disabling it for these tenants too> 
+
+### Can an admin remove, delete, or takeover purchases made by a user?
+No, not currently. 
+
+
+## Licensing
+
+### How do I assign or unassign licenses?
+See Assign or unassign licenses in Manage self-service purchases (Users).
+
+### Who can users assign licenses to? 
+Users can assign licenses to other first line workers, users with an existing license to the same product, and guest users.
+Users can’t assign licenses to users in another tenant, users without an account, or friends and family. All users must have a valid AAD account in the same tenant as the user assigning the licenses. 
+
+### Can an admin block what types of users can be given licenses? 
+No.
+ 
+### If a user bought a subscription, can an admin control or unassign licenses through PowerShell or Graph, AAD Portal (user assignment or group assignment), admin center users page, or some other method?
+No to all of these. Only the person who bought the subscription can assign licenses.
+ 
+### Can an admin see who has a license? 
+Yes. In the admin center, go to Billing > Licenses and choose the subscription you want to view licenses for. 
+
+### What if an admin has already assigned a license for the same product to a user? Will the license conflict?  What about conflicting service plans?
+No. None of the products available for self-service purchasing have conflicting services with other products. This includes the free, trial, and admin versions of these products. 
+
+
+## Support
+
+### How can an admin be expected to support these products? 
+<need answer>
+
+### If the user calls support, will that use the admin’s premier support time? 
+<need answer>
+ 
+### {segment specific questions} 
+<need answer>
+
+### Who owns the data? Where does the data go? 
+Your company owns the data. Data is shared with broader tenant data. If the employee loses access to the product, they also lose access to the data. 
+
+### What happens if a user is deleted, disabled, or locked out? 
+The user loses access to their data and product, but the subscription doesn’t go away. They can call support at any time to cancel their subscription.
