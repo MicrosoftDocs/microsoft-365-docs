@@ -38,7 +38,7 @@ We’ll routinely make other changes to the service to improve user experience, 
 - Updates to the security baseline applied to devices
 - [Supported devices](device-list.md)
 
-We'll communicate these changes by using established channels. If you have any questions about any changes, contact the Microsoft Managed Desktop [Operations team](../working-with-managed-desktop/admin-support.md). You can
+We'll communicate these changes by using established channels. If you have any questions about any changes, contact the Microsoft Managed Desktop [Operations team](../working-with-managed-desktop/admin-support.md). Changes to the service are also documented as needed in the [change history](../change-history-managed-desktop.md).
 
 Microsoft Managed Desktop changes and communications are governed by two Microsoft policies:
 - [Modern Lifecycle Policy](https://support.microsoft.com/help/30881/modern-lifecycle-policy)
