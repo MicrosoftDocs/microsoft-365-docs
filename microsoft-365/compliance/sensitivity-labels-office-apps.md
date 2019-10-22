@@ -38,7 +38,7 @@ description: "With sensitivity labels, you can classify and help protect your se
 
 ## What sensitivity label capabilities are supported in Office today? 
 
-<table border="1" cellspacing="0" cellpadding="0">
+<table border="0" cellspacing="0" cellpadding="0">
 <th><font size="-1">Capability<th><font size="-1">Windows<th><font size="-1">Mac<th colspan="2"><font size="-1">iOS<th colspan="2"><font size="-1">Android<th colspan="2"><font size="-1">Web</tr>
 <tr><td>
 
@@ -79,88 +79,83 @@ Outlook
 </tr>
 
 <tr>
-<td><font size="-1"><a href="https://support.office.com/en-us/article/apply-sensitivity-labels-to-your-documents-and-email-within-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9">Manually apply, change, or remove label</a><td><font size="-1"><b>Yes</b><br><font size="-1">1910+</font>
+<td><font size="-1"><a href="https://support.office.com/en-us/article/apply-sensitivity-labels-to-your-documents-and-email-within-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9">Manually apply, change, or remove label</a>
 
+<td><font size="-1"><b>Yes</b><br><font size="-1">1910+</font>
 <td><font size="-1"><b>Yes</b><br><font size="-1">16.21.0+</font>
-
 <td><font size="-1"><b>Yes</b><br><font size="-1">2.21+</font>
-<td><font size="-1">Coming soon<sup>3</sup>
+<td><font size="-1">Rolling out<br><font size="-1">4.7.1+</font>
 <td><font size="-1"><b>Yes</b><br><font size="-1">16.0.11231+</font>
+<td><font size="-1">Rolling out<br><font size="-1">4.0.39+</font>
 <td><font size="-1">Coming soon<sup>3</sup>
-<td><font size="-1">Coming soon<sup>3</sup><td><font size="-1">Coming soon<sup>3</sup>
+<td><b>Yes</b>
 
 <tr>
 <td><font size="-1"><a href="https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do">Apply a default label</a>
+
 <td><font size="-1"><b>Yes</b><br><font size="-1">1910+</font>
-
 <td><font size="-1"><b>Yes</b><br><font size="-1">16.21.0+</font>
-
 <td><font size="-1"><b>Yes</b><br><font size="-1">2.21+</font>
-<td><font size="-1">Coming soon<sup>3</sup>
+<td><font size="-1">Rolling out<br><font size="-1">4.7.1+</font>
 <td><font size="-1"><b>Yes</b><br><font size="-1">16.0.11231+</font>
+<td><font size="-1">Rolling out<br><font size="-1">4.0.39+</font>
 <td><font size="-1">Coming soon<sup>3</sup>
-<td><font size="-1">Coming soon<sup>3</sup>
-<td><font size="-1">Coming soon<sup>3</sup>
+<td><b>Yes</b>
 
 <tr><td><font size="-1"><a href="https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do">Require a justification for changing a label</a><sup>1</sup>
+
 <td><font size="-1"><b>Yes</b><br><font size="-1">1910+</font>
-
 <td><font size="-1"><b>Yes</b><br><font size="-1">16.21.0+</font>
-
 <td><font size="-1"><b>Yes</b><br><font size="-1">2.21+</font>
-<td><font size="-1">Coming soon<sup>3</sup>
+<td><font size="-1">Rolling out<br><font size="-1">4.7.1+</font>
 <td><font size="-1"><b>Yes</b><br><font size="-1">16.0.11231+</font>
+<td><font size="-1">Rolling out<br><font size="-1">4.0.39+</font>
 <td><font size="-1">Coming soon<sup>3</sup>
-<td><font size="-1">Coming soon<sup>3</sup>
-<td><font size="-1">Coming soon<sup>3</sup>
+<td><b>Yes</b>
 
 <tr><td><font size="-1"><a href="https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do">Provide help link to a custom help page</a>
+
 <td><font size="-1"><b>Yes</b><br><font size="-1">1910+</font>
-
 <td><font size="-1"><b>Yes</b><br><font size="-1">16.21.0+</font>
-
 <td><font size="-1"><b>Yes</b><br><font size="-1">2.21+</font>
-<td><font size="-1">Coming soon<sup>3</sup>
+<td><font size="-1">Rolling out<br><font size="-1">4.7.1+</font>
 <td><font size="-1"><b>Yes</b><br><font size="-1">16.0.11231+</font>
+<td><font size="-1">Rolling out<br><font size="-1">4.0.39+</font>
 <td><font size="-1">Coming soon<sup>3</sup>
-<td><font size="-1">Coming soon<sup>3</sup>
-<td><font size="-1">Coming soon<sup>3</sup>
+<td><b>Yes</b>
 
 <tr><td><font size="-1"><a href="https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels#what-sensitivity-labels-can-do">Mark the content</a>
+
 <td><font size="-1"><b>Yes</b><br><font size="-1">1910+</font>
-
 <td><font size="-1"><b>Yes</b><br><font size="-1">16.21.0+</font>
-
 <td><font size="-1"><b>Yes</b><br><font size="-1">2.21+</font>
+<td><font size="-1">Rolling out<br><font size="-1">4.7.1+</font>
+<td><font size="-1"><b>Yes</b><br><font size="-1">16.0.11231+</font>
+<td><font size="-1">Rolling out<br><font size="-1">4.0.39+</font>
 <td><font size="-1">Coming soon<sup>3</sup>
-<td><font size="-1"><b>Yes</b><br><font size="-1">16.0.11231+</font
-><td><font size="-1">Coming soon<sup>3</sup>
-<td><font size="-1">Coming soon<sup>3</sup>
-<td><font size="-1">Coming soon<sup>3</sup>
+<td><b>Yes</b>
 
 <tr><td><font size="-1"><a href="https://docs.microsoft.com/en-us/microsoft-365/compliance/encryption-sensitivity-labels#assign-permissions-now">Assign pre-defined permissions</a>
+
 <td><font size="-1"><b>Yes</b><br><font size="-1">1910+</font>
-
 <td><font size="-1"><b>Yes</b><br><font size="-1">16.21.0+</font>
-
 <td><font size="-1"><b>Yes</b><br><font size="-1">2.21+</font>
-<td><font size="-1">Coming soon<sup>3</sup>
+<td><font size="-1">Rolling out<br><font size="-1">4.7.1+</font>
 <td><font size="-1"><b>Yes</b><br><font size="-1">16.0.11231+</font>
+<td><font size="-1">Rolling out<br><font size="-1">4.0.39+</font>
 <td><font size="-1">Coming soon<sup>3</sup>
-<td><font size="-1">Coming soon<sup>3</sup>
-<td><font size="-1">Coming soon<sup>3</sup>
+<td><b>Yes</b>
 
 <tr><td><font size="-1"><a href="https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels#let-users-assign-permissions">Let users assign permissions</a>
+
 <td><font size="-1"><b>Yes</b><sup>2</sup><br><font size="-1">1910+</font>
-
 <td><font size="-1"><b>Yes</b><sup>2</sup><br><font size="-1">16.21.0+</font>
-
 <td><font size="-1">TBD
-<td><font size="-1">Coming soon<sup>3</sup>
-<td><font size="-1">TBD<td
-><font size="-1">Coming soon<sup>3</sup>
+<td><font size="-1">Rolling out<br><font size="-1">4.7.1+</font>
 <td><font size="-1">TBD
-<td><font size="-1">Coming soon<sup>3</sup>
+<td><font size="-1">Rolling out<br><font size="-1">4.0.39+</font>
+<td><font size="-1">TBD
+<td><b>Yes</b>
 
 <tr><td><font size="-1">Send <a href="https://docs.microsoft.com/microsoft-365/compliance/label-analytics">label analytics</a> data for administrators
 <td><font size="-1">TBD
