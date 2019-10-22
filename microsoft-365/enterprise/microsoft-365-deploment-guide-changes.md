@@ -3,7 +3,7 @@ title: "Changes to Microsoft 365 Enterprise deployment content"
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 10/14/2019
+ms.date: 10/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -21,6 +21,10 @@ description: See the new content and changes to the content in the Microsoft 365
 ## October 2019
 
 ### New content 
+
+- [Teams for highly regulated data scenario](secure-teams-highly-regulated-data-scenario.md)
+
+  [![The Teams for highly regulated data scenario](./media/secure-teams-highly-regulated-data-scenario/secure-team-final.png)](secure-teams-highly-regulated-data-scenario.md)
 
 - [Empower remote workers poster](empower-people-to-work-remotely.md#poster)
 
