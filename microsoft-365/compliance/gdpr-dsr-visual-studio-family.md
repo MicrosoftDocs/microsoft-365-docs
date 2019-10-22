@@ -1,7 +1,7 @@
 ---
-title: Visual Studio Family Data Subject Requests for the GDPR
-description: Visual Studio Family Data Subject Requests for the GDPR
-keywords: Visual Studio, Visual Studio Code, Visual Studio for Mac, Visual Studio documentation, privacy, GDPR
+title: Visual Studio Family Data Subject Requests for the GDPR and CCPA
+description: Visual Studio Family Data Subject Requests for the GDPR anc CCPA
+keywords: Visual Studio, Visual Studio Code, Visual Studio for Mac, Visual Studio documentation, privacy, GDPR, CCPA
 localization_priority: Priority
 audience: itpro
 ms.prod: visual-studio-family
@@ -14,9 +14,13 @@ ms.collection: GDPR
 ms.workload:
   - "multiple"
 ---
-# Visual Studio Family Data Subject Requests for the GDPR
+# Visual Studio Family Data Subject Requests for the GDPR and CCPA
 
-The European Union [General Data Protection Regulation (GDPR)](https://ec.europa.eu/justice/data-protection/reform/index_en.htm) gives rights to people (known in the regulation as _data subjects_) to manage their personal data. Personal data is defined very broadly under the GDPR as any data that relates to an identified or identifiable natural person. The GDPR gives data subjects specific rights to their personal data; these rights include obtaining copies of personal data, requesting corrections to it, restricting the processing of it, deleting it, or receiving it in an electronic format. A formal request by a data subject to a data controller (an employer or other type of agency or organization that has control over personal data) to take an action on that data subject's personal data is called a _data subject request_ or DSR. For general information about GDPR, see the [GDPR section of the Service Trust portal](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted).
+The European Union [General Data Protection Regulation (GDPR)](https://ec.europa.eu/justice/data-protection/reform/index_en.htm) gives rights to people (known in the regulation as _data subjects_) to manage their personal data. Personal data is defined very broadly under the GDPR as any data that relates to an identified or identifiable natural person. The GDPR gives data subjects specific rights to their personal data; these rights include obtaining copies of personal data, requesting corrections to it, restricting the processing of it, deleting it, or receiving it in an electronic format. A formal request by a data subject to a data controller (an employer or other type of agency or organization that has control over personal data) to take an action on that data subject's personal data is called a _data subject request_ or DSR.
+
+Similarly, the California Consumer Privacy Act (CCPA), provides privacy rights and obligations to California consumers, including rights similar to GDPR’s Data Subject Rights, such as the right to delete, access and receive (portability) their personal information.  The CCPA also provides for certain disclosures, protections against discrimination when electing exercise rights, and “opt-out/ opt-ins” requirements for certain data transfers classified as “sales".
+
+For general information about GDPR, see the [GDPR section of the Service Trust portal](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted).
 
 ## Products covered by this guide
 

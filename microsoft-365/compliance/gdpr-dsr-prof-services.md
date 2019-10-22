@@ -1,7 +1,7 @@
 ---
-title: Microsoft Support and Professional Services Data Subject Requests for the GDP
-description: How Microsoft Support and Professional Services handle data subject requests. 
-keywords: Professional Services, sMicrosoft 365, Microsoft 365 Education, Microsoft 365 documentation, GDPR
+title: Microsoft Support and Professional Services Data Subject Requests for the GDPR and CCPA
+description: How Microsoft Support and Professional Services handle data subject requests for the GDPR and CCPA. 
+keywords: Professional Services, sMicrosoft 365, Microsoft 365 Education, Microsoft 365 documentation, GDPR, CCPA
 author: herviicban
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
@@ -13,7 +13,7 @@ audience: itpro
 ms.collection: GDPR
 ---
 
-# Microsoft Support and Professional Services Data Subject Requests for the GDPR
+# Microsoft Support and Professional Services Data Subject Requests for the GDPR and CCPA
 
 ## Introduction to Microsoft Professional Services
 
@@ -24,6 +24,8 @@ Find out more about Microsoft Professional Services by going to the Microsoft Pr
 ### Introduction to DSRs 
 
 The GDPR gives rights to people (known in the regulation as *data subjects*) to manage the personal data that has been collected by an employer or other type of agency or organization (known as the *data controller* or just *controller*). Personal data is defined very broadly under the GDPR as any data that relates to an identified or identifiable natural person. The GDPR gives data subjects specific rights to their personal data; these rights include obtaining copies of it, requesting changes to it, restricting the processing of it, and deleting it. A formal request by a data subject to a controller to take an action on their personal data is called a *Data Subject Request* or DSR. Additionally, it obligates companies working on behalf of a controller (known as the *data processor* or just *processor*) to reasonably assist the controller in fulfilling DSRs.
+
+Similarly, the California Consumer Privacy Act (CCPA), provides privacy rights and obligations to California consumers, including rights similar to GDPR’s Data Subject Rights, such as the right to delete, access and receive (portability) their personal information.  The CCPA also provides for certain disclosures, protections against discrimination when electing exercise rights, and “opt-out/ opt-ins” requirements for certain data transfers classified as “sales".
 
 This guide discusses how to find, access, and act on personal data that reside in Microsoft IT systems that may have been collected to provide Support and other Professional Services offerings.
 
@@ -38,7 +40,7 @@ All requests must be made through a support representative, as described below. 
 - **Rectify:** Make changes or implement other requested actions on the personal data, where applicable.
 - **Restrict:** Restrict the processing of personal data, either by removing licenses for various Azure services or turning off the desired services where possible. You can also remove data from the Microsoft cloud and retain it on-premises or at another location.
 - **Delete:** Permanently remove personal data that resided in the Microsoft cloud.
-- **Export:** Provide an electronic copy (in a machine-readable format) of personal data to the data subject.
+- **Export/Receive (Portability):** Provide an electronic copy (in a machine-readable format) of personal data or personal information to the data subject.
 
 ### Terminology
 
