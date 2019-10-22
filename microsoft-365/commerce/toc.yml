@@ -29,8 +29,8 @@
           href: /microsoft-store/manage-orders-microsoft-store-for-business?context=/microsoft-365/commerce/context/context-commerce
         - name: Payment Services Directive 2 and Strong Customer Authentication
           href: psd2.md
-      - name: Billing accounts
-        items: 
+    - name: Billing accounts
+      items: 
         - name: Manage billing account info
           href: /microsoft-store/update-microsoft-store-for-business-account-settings?context=/microsoft-365/commerce/context/context-commerce
         - name: Associate a tenant with my billing account
