@@ -16,7 +16,7 @@ description: "Learn how to view your order history in the admin center."
 keywords: 
 ---
 
-# Manage app orders in Microsoft Store for Business and Education
+# View your order history
 
 After you've bought products or services for your organization, you can review order information on the <a href="https://go.microsoft.com/fwlink/p/?linkid=2109257" target="_blank">Order history</a> page.
 
