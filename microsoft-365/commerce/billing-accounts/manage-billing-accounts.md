@@ -19,7 +19,7 @@ description: "Learn about billing accounts and how to manage them."
 
 The billing account provides you a summary of your account information. It’s available online in the Microsoft 365 admin center on the <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">Billing accounts</a> page. The page lets you manage your account profile and define the parts of your organization that do business with Microsoft. This information includes addresses, contact information, and Tax info.
 
-## Understand the Billing account details
+## Understand the billing account details
 
 The top of the **Billing account** detail page contains information about your organization. This organization is the legal entity that pays for the products that you purchase.
 
@@ -28,7 +28,7 @@ The top of the **Billing account** detail page contains information about your o
 | Sold-to address | The billing account that identifies the name and address of the legal entity responsible for payment. This information can be managed on the **Billing account** page. |
 | Segment | The business segment that your organization belongs to (Commercial, Education, Government, or Non-profit). This information is read-only. |
 | Account status | The status of your account with Microsoft. This information is read-only. |
-| Tax iD | If you are outside the United States, you must provide a VAT or local equivalent. Your **Sold-to** address determines what tax to charge for purchases you make. For more information, see [Tax information](#tax-information). |
+| Tax ID | If you are outside the United States, you must provide a VAT or local equivalent. Your **Sold-to** address determines what tax to charge for purchases you make. For more information, see [Tax information](#tax-information). |
 | Agreement | Each organization signs the purchasing agreement with Microsoft. You can view the agreement and the agreement history, if applicable, here. If there's an updated version of the Microsoft customer agreement for you to sign, there is a link for **Approve agreement**. |
 | Billing profiles | The name of the billing profile used to define invoice properties like Bill to, PO number, and payment terms. For more information about billing profiles and how you can use them to build more flexible billing options for your organization, see [Manage billing profiles](../billing-and-payments/manage-billing-profiles.md). |
 
@@ -36,7 +36,7 @@ The top of the **Billing account** detail page contains information about your o
 
 This section lists the shipping addresses associated with your billing account. You can have one or more shipping addresses associated with your billing account. When you make a purchase, you select which shipping address to use. If the address is different from the **Sold-to address**, the shipping address is used to determine what tax to charge. For example, you can have one shipping address for Seattle, Washington, and another shipping address for Miami, Florida. When you make a purchase and specify that it's for use at the Miami, Florida address, the tax you pay is based on the tax rate for that location.
 
-## Understand the Billing account roles
+## Understand the billing account roles
 
 Roles on the billing account have permissions to control view and manage account. Only a billing account owner can assign roles to users. Assign these roles to users who track, organize, and manage the account information for the purchase made.
 
@@ -119,7 +119,7 @@ Have the following documentation ready:
 
 ## Calculating tax
 
-Sales taxes are calculated against the unit price, and then aggregated.
+Sales tax is calculated against the unit price, and then aggregated.
 
 For example:
 
