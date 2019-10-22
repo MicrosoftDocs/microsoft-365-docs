@@ -98,7 +98,7 @@ see more details for each item. The online invoice includes:
 
 ### To view your online invoice
 
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Billing and payments</a> page.
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & payments</a> page.
 
 2. To download the .pdf version of your invoice, choose **Download invoice PDF** in the row for the invoice you want to see.
 
