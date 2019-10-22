@@ -204,6 +204,13 @@ Office 365 is configured like this because some legitimate email may fail DMARC.
 - Users add safe senders individually by using their email client
     
 - Administrators create an Exchange mail flow rule (also known as a transport rule) for all users that allows messages for those particular senders. 
+
+## How Office 365 utilizes Authenticated Received Chain (ARC)
+<a name="ARC"> </a>
+
+All hosted mailboxes in Office 365 will now gain the benefit of ARC with improved deliverability of messages and enhanced anti-spoofing protection. ARC preserves the email authentication results from all participating intermediaries, or hops, when an email is routed from the originating server to the recipient mailbox. Before ARC, modifications performed by intermediaries in email routing, like forwarding rules or automatic signatures, could cause DMARC failures by the time the email reached the recipient mailbox. With ARC, the cryptographic preservation of the authentication results allows Office 365 to verify the authenticity of an email's sender. 
+
+Office 365 currently utilizes ARC to verify authentication results when Microsoft is the ARC Sealer, but plan to add support for third party ARC sealers in the future. 
     
 ## Troubleshooting your DMARC implementation
 <a name="dmarctroubleshoot"> </a>
