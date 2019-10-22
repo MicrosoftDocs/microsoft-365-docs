@@ -26,7 +26,9 @@ These recommendations are based on three different tiers of security and protect
 Additional recommendations specific to Teams deployment are included in this article, to cover specific authentication circumstances, including for users outside your organization, and you will need to follow this guidance for a complete security experience.
 
 ## Getting started with Teams before other dependent services
+
 You don’t need to enable dependent services to get started with Microsoft Teams. These will all ‘just work.’ However, you do need to be prepared to manage the following:
+
 - Office 365 groups
 - SharePoint team sites
 - OneDrive for Business
@@ -35,11 +37,12 @@ You don’t need to enable dependent services to get started with Microsoft Team
 
 ## Updating common policies to include Teams
 
-The following diagram illustrates the set of recommended policies for protecting chat, groups and content in Teams. The pencil icon indiciates which policies need to be revisitited to be sure that Teams and dependent services are included in the assignment of cloud apps.
+The following diagram illustrates the set of recommended policies for protecting chat, groups and content in Teams. The pencil icon indicates which policies need to be revisited to be sure that Teams and dependent services are included in the assignment of cloud apps.
 
 ![A diagram showing how to use Microsoft Teams on various devices.](../images/identity-access-ruleset-teams.png)
 
 These are the dependent services to include in the assignment of cloud apps for Teams:
+
 - Microsoft Teams
 - SharePoint Online and OneDrive for Business
 - Exchange Online
@@ -64,11 +67,13 @@ This table lists the policies that need to be revisited and links to each policy
 | | |
 
 ## Teams dependent services architecture
+
 For reference, the following diagram illustrates the services Teams relies on. For more information and additional illustrations, see [Microsoft Teams and related productivity services in Microsoft 365 for IT architects](https://docs.microsoft.com/en-us/office365/enterprise/microsoft-cloud-it-architecture-resources#microsoft-teams-and-related-productivity-services-in-microsoft-365-for-it-architects).
 
 ![Diagram showing Teams dependencies on SharePoint Online, OneDrive for Business, and Exchange.](../images/identity-access-logical-architecture-teams.png)
 
 ## Enabling guest and external access for Teams
+
 In Azure AD, guest and external users are the same. The user type for both of these is Guest. Guest users are B2B users. Microsoft Teams differentiates between guest users and external users and it's important to understand how each of these are treated in Teams.
 
 ### Guest Access
@@ -80,7 +85,6 @@ In addition to the policies for users who are internal to your business or organ
 External access is sometimes confused with guest access, so it's important to be clear that these two non-internal access mechanisms are actually quite different. While guest access occurs on a per-user basis (you add one user at a time), when an administrator enables external access it allows you to add all the users of an external domain at the same time to Teams. However those external users have less access and functionality than an individual who's been added via guest access would have. External access users can chat with your internal users via Teams.
 
 For more reading about external access, and how to implement it if you need to, please review [Manage external access in Microsoft Teams](https://docs.microsoft.com/en-us/microsoftteams/manage-external-access)
-
 
 ## Teams Policies
 
