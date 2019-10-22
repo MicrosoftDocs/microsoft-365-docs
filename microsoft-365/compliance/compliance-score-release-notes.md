@@ -22,16 +22,18 @@ Compliance Score is a new feature in the [Microsoft 365 compliance center](micro
 
 ## Compliance Score and Compliance Manager relationship
 
-Many of the compliance functions handled in Compliance Manager can now be done in Compliance Score. However some functionality still resides only in Compliance Manager, and some previous functionality in Compliance Manager is altered during the public preview period. Below are points to keep in mind as you work with Compliance Score and Compliance Manager during public preview.
+Many of the compliance functions handled in Compliance Manager can now be done in Compliance Score. However some functionality still resides only in Compliance Manager, and some previous functionality in Compliance Manager is altered during the public preview period. 
 
-- **Managing assessments**: users can view assessments and their status details in Compliance Score, yet tasks to manage assessments must be done in Compliance Manager ([view instructions](working-with-compliance-manager.md#assessments)). Some Compliance Manager functionality has changed during public preview. Below are the tasks users can perform on assessments in Compliance Manager:
+Keep these points in mind as you work with Compliance Score and Compliance Manager during public preview:
+
+- **Managing assessments**: users can view assessments and their status details in Compliance Score. However users can only perform assessment management tasks in Compliance Manager ([view instructions](working-with-compliance-manager.md#assessments)), and tasks and are limited to the following:
     - Upload new assessments, but not modify existing assessments. If you need to modify an existing assessment, you will need to upload a new template.
     - Export assessments
     - Archive assessments
     - View archived assessments
  - **Creating templates for assessments**: users can only create, customize, and export templates—used for building assessments—in Compliance Manager ([view instructions](working-with-compliance-manager.md#templates)), not Compliance Score.
  - **Setting permissions**: Compliance Score users who were not previously granted permissions in Compliance Manager must have their permissions set in Microsoft 365 compliance center. Users whose roles were previously set in Compliance Manager can use that same level of access when working in Compliance Score.
-- **Transfer of data**: ???
+- **Transfer of data**: organizations with data residing in Compliance Manger will see that data resolve in Compliance Score. 
 - **Signing in**: if a user is signed in to Compliance Score, then from there selects a link to go to Compliance Manager, the user ??WILL/WILL NOT?? have to sign in again.
 
 ## Known issues in Compliance Score (Preview)
