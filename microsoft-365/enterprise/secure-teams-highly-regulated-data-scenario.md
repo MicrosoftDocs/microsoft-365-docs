@@ -206,4 +206,6 @@ Retrain your users as needed.
 
 [Microsoft 365 Enterprise workloads and scenarios](deploy-workloads.md)
 
+[Microsoft 365 Productivity Library](https://aka.ms/productivitylibrary) (https://aka.ms/productivitylibrary)
+
 [Deployment guide](deploy-microsoft-365-enterprise.md)
