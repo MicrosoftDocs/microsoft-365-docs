@@ -1,7 +1,7 @@
 ---
-title: EmailAttachmentInfo
-description: EmailAttachmentInfo table in the advanced hunting schema
-keywords: advanced hunting, atp query, query atp data, intellisense, atp telemetry, events, events telemetry, azure log analytics, column name, data type, description, EmailAttachmentInfo
+title: EmailAttachmentInfo table in the Advanced hunting schema
+description: Learn about email attachment information in the EmailAttachmentInfo table of the Advanced hunting schema
+keywords: advanced hunting, threat hunting, cyber threat hunting, search, query, telemetry, schema reference, kusto, table, column, data type, description, EmailAttachmentInfo, network message id, sender, recipient, attachment id, attachment name, malware verdict
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise

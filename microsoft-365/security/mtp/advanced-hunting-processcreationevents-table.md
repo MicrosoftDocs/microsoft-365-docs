@@ -1,7 +1,7 @@
 ---
-title: ProcessCreationEvents
-description: ProcessCreationEvents table in the Advanced hunting schema
-keywords: advanced hunting, atp query, query atp data, intellisense, atp telemetry, events, events telemetry, azure log analytics, column name, data type, description, processcreationevents
+title: ProcessCreationEvents table in the Advanced hunting schema 
+description: Learn about the process spawning or creation events in the ProcessCreationEvents table of the Advanced hunting schema
+keywords: advanced hunting, threat hunting, cyber threat hunting, search, query, telemetry, schema reference, kusto, table, column, data type, processcreationevents, process id, command line
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise

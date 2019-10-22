@@ -1,7 +1,7 @@
 ---
-title: EmailUrlInfo
-description: EmailUrlInfo table in the advanced hunting schema
-keywords: advanced hunting, atp query, query atp data, intellisense, atp telemetry, events, events telemetry, azure log analytics, column name, data type, description, emailurlinfo
+title: EmailUrlInfo table in the Advanced hunting schema
+description: Learn about URL or link information in the EmailUrlInfo table of the Advanced hunting schema
+keywords: advanced hunting, threat hunting, cyber threat hunting, search, query, telemetry, schema reference, kusto, table, column, data type, description, EmailUrlInfo, network message id, url, link
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise

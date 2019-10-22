@@ -1,7 +1,7 @@
 ---
-title: MachineNetworkInfo
-description: MachineNetworkInfo table in the Advanced hunting schema
-keywords: advanced hunting, atp query, query atp data, intellisense, atp telemetry, events, events telemetry, azure log analytics, column name, data type, description, machinenetworkinfo
+title: MachineNetworkInfo table in the Advanced hunting schema
+description: Learn about network configuration information in the MachineNetworkInfo table of the Advanced hunting schema
+keywords: advanced hunting, threat hunting, cyber threat hunting, search, query, telemetry, schema reference, kusto, table, column, data type, description, machinenetworkinfo, device, machine, mac, ip, adapter, dns, dhcp, gateway, tunnel
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise

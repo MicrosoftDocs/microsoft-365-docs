@@ -1,7 +1,7 @@
 ---
-title: Find threats across devices and emails using advanced hunting
+title: Find threats across devices and emails using Advanced hunting
 description: Study common hunting scenarios and sample queries that cover devices and emails.
-keywords: advanced hunting, office 365 data, tolower, emails, atp query, query atp data, atp telemetry, events, events telemetry, azure log analytics
+keywords: advanced hunting, Office365 data, tolower, Windows devices, Office365 emails normalize, emails, threat hunting, cyber threat hunting, search, query, telemetry
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise

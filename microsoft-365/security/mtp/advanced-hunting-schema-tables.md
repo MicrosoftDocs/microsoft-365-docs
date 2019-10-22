@@ -1,7 +1,7 @@
 ---
-title: Data tables in the Microsoft 365 security center advanced hunting schema
-description: Learn about the tables in the Microsoft 365 advanced hunting schema
-keywords: advanced hunting, atp query, query atp data, intellisense, atp telemetry, events, events telemetry, azure log analytics, schema reference
+title: Data tables in the Microsoft 365 Advanced hunting schema
+description: Learn about the tables in the Advanced hunting schema to understand the data you can run threat hunting queries on
+keywords: advanced hunting, threat hunting, cyber threat hunting, search, query, telemetry, schema reference, kusto, table, data
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise

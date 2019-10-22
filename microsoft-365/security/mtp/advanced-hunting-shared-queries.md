@@ -1,7 +1,7 @@
 ---
 title: Use shared queries in Microsoft 365 advanced hunting
-description: Take advantage of shared advanced hunting queries. Share your queries to the public and to your organization.
-keywords: advanced hunting, atp query, query atp data, intellisense, atp telemetry, events, events telemetry, azure log analytics
+description: Start threat hunting immediately with predefined and shared queries. Share your queries to the public or to your organization.
+keywords: advanced hunting, threat hunting, cyber threat hunting, search, query, telemetry, custom detections, schema, kusto, github repo, my queries, shared queries
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise

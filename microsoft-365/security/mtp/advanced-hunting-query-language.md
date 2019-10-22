@@ -1,7 +1,7 @@
 ---
-title: Learn the advanced hunting query language in Microsoft 365
-description: Get an overview of the common operators and other aspects of the advanced hunting query language you can use to formulate queries
-keywords: advanced hunting, atp query, query atp data, intellisense, atp telemetry, events, events telemetry, azure log analytics
+title: Learn the Advanced hunting query language in Microsoft 365
+description: Create your first threat hunting query and learn about common operators and other aspects of the Advanced hunting query language
+keywords: advanced hunting, threat hunting, cyber threat hunting, search, query, language, learn, first query, telemetry, events, telemetry, custom detections, schema, kusto, operators, data types
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise

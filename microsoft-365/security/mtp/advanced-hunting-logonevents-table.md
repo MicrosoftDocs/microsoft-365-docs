@@ -1,7 +1,7 @@
 ---
-title: LogonEvents
-description: LogonEvents table in the Advanced hunting schema
-keywords: advanced hunting, atp query, query atp data, intellisense, atp telemetry, events, events telemetry, azure log analytics, column name, data type, description, logonevents
+title: LogonEvents table in the Advanced hunting schema
+description: Learn about authentication or sign-in events in the LogonEvents table of the Advanced hunting schema
+keywords: advanced hunting, threat hunting, cyber threat hunting, search, query, telemetry, schema reference, kusto, table, column, data type, description, logonevents, authentication, logon, sign in
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise

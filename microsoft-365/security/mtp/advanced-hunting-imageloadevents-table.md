@@ -1,7 +1,7 @@
 ---
-title: ImageLoadEvents
-description: ImageLoadEvents table in the Advanced hunting schema
-keywords: advanced hunting, atp query, query atp data, intellisense, atp telemetry, events, events telemetry, azure log analytics, column name, data type, description, imageloadevents
+title: ImageLoadEvents table in the Advanced hunting schema
+description: Learn about DLL loading events in the ImageLoadEvents table of the Advanced hunting schema
+keywords: advanced hunting, threat hunting, cyber threat hunting, search, query, telemetry, schema reference, kusto, table, column, data type, description, imageloadevents, DLL loading, library, file image
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise

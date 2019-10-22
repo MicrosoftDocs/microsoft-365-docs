@@ -1,7 +1,7 @@
 ---
-title: Security events and other events in the advanced hunting MiscEvents table
-description: Find security events or other potentially relevant event in the advanced hunting miscellaneous events (MiscEvents) table
-keywords: advanced hunting, atp query, query atp data, intellisense, atp telemetry, events, events telemetry, azure log analytics, miscevents, security events
+title: Security events and other events in the Advanced hunting MiscEvents table
+description: Find security events or other potentially relevant events in the Advanced hunting miscellaneous events (MiscEvents) table
+keywords: advanced hunting, threat hunting, cyber threat hunting, search, query, telemetry, schema reference, kusto, table, column, data type, security events, antivirus, firewall, exploit guard
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise

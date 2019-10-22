@@ -1,7 +1,7 @@
 ---
-title: Overview of advanced hunting in Microsoft 365
-description: Learn about advanced hunting queries in Microsoft 365 and how to use it to proactively find threats in your organization
-keywords: advanced hunting, atp query, query atp data, intellisense, atp telemetry, events, events telemetry, azure log analytics
+title: Overview of Advanced hunting in Microsoft 365
+description: Learn about Advanced hunting queries in Microsoft 365 and how to use them to proactively find threats and weaknesses in your network
+keywords: advanced hunting, threat hunting, cyber threat hunting, search, query, telemetry, custom detections, schema, kusto, microsoft 365
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise

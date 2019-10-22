@@ -1,7 +1,7 @@
 ---
-title: Advanced hunting best practices
-description: Learn about advanced hunting best practices to improve query performance and avoid exhausting resources.
-keywords: advanced hunting, best practices, keyword, filters, atp query, query atp data, intellisense, atp telemetry, events, events telemetry, azure log analytics
+title: Advanced hunting best practices in Microsoft 365
+description: Learn how to construct fast, efficient, and error-free threat hunting queries when using Advanced hunting
+keywords: advanced hunting, threat hunting, cyber threat hunting, search, query, telemetry, custom detections, schema, kusto, avoid timeout, command lines, process id
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
