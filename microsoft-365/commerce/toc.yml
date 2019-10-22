@@ -21,11 +21,11 @@
       expanded: true
       items: 
         - name: Understand your invoice
-          href: billing-and-payments/understand-your-invoice
+          href: /commerce/billing-and-payments/understand-your-invoice
         - name: Manage payment methods
           href: /microsoft-store/payment-methods?context=/microsoft-365/commerce/context/context-commerce
         - name: Manage billing profiles
-          href: billing-and-payments/manage-billing-profiles
+          href: /commerce/billing-and-payments/manage-billing-profiles
         - name: Order history
           href: /microsoft-store/manage-orders-microsoft-store-for-business?context=/microsoft-365/commerce/context/context-commerce
         - name: Payment Services Directive 2 and Strong Customer Authentication
@@ -34,7 +34,7 @@
       expanded: true
       items: 
         - name: Manage billing accounts
-          href: billing-accounts/manage-billing-accounts
+          href: /commerce/billing-accounts/manage-billing-accounts
         - name: Associate a tenant with my billing account
           href: /microsoft-store/manage-mpsa-software-microsoft-store-for-business?context=/microsoft-365/commerce/context/context-commerce
     - name: Manage relationships with my partners
