@@ -13,13 +13,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 
-description: "Install and use the Azure Storage Explorer to download documents that were exported from a review set in Advanced eDiscovery."
+description: "Install and use the Azure Storage Explorer to download documents that were exported from evidence in a data investigation."
 
 ---
 
 # Download export jobs
 
-When you export documents from a review set in an Advanced eDiscovery case, the documents are uploaded to a Microsoft-provided Azure Storage location or to an Azure Storage location managed by your organization. The type of Azure Storage location used depends on which option was selected when the documents were exported. 
+When you export documents from evidence in a data investigation, the documents are uploaded to a Microsoft-provided Azure Storage location or to an Azure Storage location managed by your organization. The type of Azure Storage location used depends on which option was selected when the documents were exported. 
 
 This article provides instructions for how to use the Microsoft Azure Storage Explorer to connect to an Azure Storage location to browse and download the exported documents. For more information about Azure Storage Explorer, see [Quickstart: Use Azure Storage Explorer](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-storage-explorer).
 
@@ -31,7 +31,7 @@ The first step is to download and install the Azure Storage Explorer. For instru
 
 The next step is to obtain the shared access signature (SAS) URL that's generated when you created the export job to [export documents from a review set](export-documents-from-review-set.md). You can copy the SAS URL for documents that are uploaded to a Microsoft-provided Azure Storage location or an Azure Storage location managed by your organization. In either case, you use the SAS URL to connect to the Azure Storage location in Step 3.
 
-1. On the **Advanced eDiscovery** page, go to the case, and then click the **Exports** tab.
+1. On the **Data investigations** page, go to the investigation, and then click the **Exports** tab.
 
 2. On the **Exports** tab, click the export job that you want to download.
 
@@ -57,7 +57,7 @@ The final step is to use the Azure Storage Explorer and the SAS URL to connect t
 
     ![Paste the SAS URL in the URI box](media/AzureStorageConnect3.png)
 
-    Notice that a portion of the SAS URL is displayed in the **Display name** box. This will be used as the display name of the container that's created under the **Storage accounts** after you connect to the storage location. This name consists of the ID of the Advanced eDiscovery case is from and a unique identifier. You can keep the default display name or change it. If you change it, the display name must be unique.
+    Notice that a portion of the SAS URL is displayed in the **Display name** box. This will be used as the display name of the container that's created under the **Storage accounts** after you connect to the storage location. This name consists of the ID of the data investigation is from and a unique identifier. You can keep the default display name or change it. If you change it, the display name must be unique.
 
 5.  Click **Next**.
 
@@ -97,7 +97,7 @@ The final step is to use the Azure Storage Explorer and the SAS URL to connect t
  
 8. To export all contents in the export, select the export folder, and then click **Download**.
 
-9. Specify the location where you want to download the exported files, and then click Select folder.
+9. Specify the location where you want to download the exported files, and then click **Select folder**.
 
     The Azure Storage Explorer starts the export process. The status of the downloading the exported items is displayed in the **Activities** pane. A message is displayed when the download is finished.
 

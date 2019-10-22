@@ -22,7 +22,7 @@ You can use the updated [Compliance Manager](https://servicetrust.microsoft.com/
 
 ## What’s new in Compliance Manager (Preview)
 
-- **Role-based access to Compliance Manager:** The default **Guess access** role has been removed. In order for a user to access Compliance Manager, the global admin must [assign each user a permission](compliance-manager-overview#permissions.md).
+- **Role-based access to Compliance Manager:** The default **Guess access** role has been removed. In order for a user to access Compliance Manager, the global admin must [assign each user a permission](compliance-manager-overview.md#permissions).
 
 - **Integration with Microsoft Secure Score:** Compliance Manager supports integration with [Microsoft Secure Score](../security/mtp/microsoft-secure-score.md) by mapping customer-managed Actions to more than 50 Secure Score actions. When you complete a mapped action in Secure Score, the corresponding Compliance Manager Action automatically updates.
 
@@ -64,12 +64,9 @@ The following sections cover known issues to be resolved in upcoming releases of
 
 - When you import a Template, all Assessments based on that Template reflect all Control Families that are part of the Template. But if you add new Control Families to the Template, any existing Assessments will not reflect the changes. Only new Assessments created off the updated Template reflect the changes.
 
-### Filters
-
-- Filtering on Action Items or Controls does not consistently produce correct results.
-
 ### Templates
 
+- When you receive an alert notification (orange triangle icon in the Templates dashboard) that a template is ready to be updated, select **Update** to ensure proper functionality for upcoming releases. To complete the update process, go to your Assessments and accept **Update**.
 - Archived templates are editable and they should not be editable.
 - Locked templates allow for Assessment creation when they should not. Locking a Template is meant to prevent it from being used to create Assessments.
 
