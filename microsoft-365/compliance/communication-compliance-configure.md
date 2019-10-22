@@ -21,7 +21,7 @@ description: "Set up communication compliance policies to configure employee com
 # Configure communication compliance for Microsoft 365 (preview)
 
 > [!IMPORTANT]
-> This guidance applies to configuring communication compliance in a Microsoft 365 subscription. If you want to configure supervision policies for an Office 365 subscription, see [Configure supervision for Office 365](supervision-policies.md).
+> This topic applies to configuring communication compliance in a Microsoft 365 subscription. If you want to configure supervision policies for an Office 365 subscription, see [Configure supervision for Office 365](supervision-policies.md).
 
 Use communication compliance policies to capture employee communications for examination by internal or external reviewers. For more information about how communication compliance policies can help you monitor communications in your organization, see [Communication compliance policies in Microsoft 365](communication-compliance.md).
 
@@ -41,7 +41,7 @@ Follow these steps to set up and use communication compliance in your Microsoft 
 
 - **Step 3 (optional)**: [Create custom sensitive information types and custom keyword dictionaries](#step-3-create-custom-sensitive-information-types-and-custom-keyword-dictionaries-optional)
 
-    If you need a custom sensitive info type or a custom keyword dictionary for your communication compliance policy, you need to create it before starting the communication compliance wizard.
+    You'll pick from existing custom sensitive information types or custom keyword dictionaries in the communication compliance policy wizard, you can create these items before running the wizard if needed. If desired, you can also create new sensitive information types from within the communication compliance policy wizard.
 
 - **Step 4 (required)**: [Set up a communication compliance policy](#step-4-set-up-a-communication-compliance-policy-required)
 
@@ -106,7 +106,7 @@ To do this, you can either add yourself as a member of the Supervisory Review ro
   
 ### Add members to the Supervisory Review role group
 
-1. Sign into [https://protection.office.com](https://protection.office.com) using credentials for an admin account in your Microsoft 365 organization.
+1. Sign into [https://compliance.microsoft.com](https://compliance.microsoft.com) using credentials for an admin account in your Microsoft 365 organization.
 
 2. In the Microsoft 365 compliance center, go to **Permissions**.
 
@@ -116,7 +116,7 @@ To do this, you can either add yourself as a member of the Supervisory Review ro
 
 ### Create a new role group
 
-1. Sign into [https://protection.office.com](https://protection.office.com) using credentials for an admin account in your Office 365 organization.
+1. Sign into [https://compliance.microsoft.com](https://compliance.microsoft.com) using credentials for an admin account in your Office 365 organization.
 
 2. In the Microsoft 365 compliance center, go to **Permissions** and then click Add (**+**).
 
@@ -126,13 +126,9 @@ To do this, you can either add yourself as a member of the Supervisory Review ro
 
 For more information about role groups and permissions, see [Permissions in the Compliance Center](../security/office-365-security/protect-against-threats.md).
 
-### Enable remote PowerShell access for reviewers (if email is hosted on Exchange Online)
-
-1. Follow the guidance in [Enable or disable access to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell).
-
 ## Step 3: Create custom sensitive information types and custom keyword dictionaries (optional)
 
-In order to pick from existing custom sensitive information types or custom keyword dictionaries in the communication compliance policy wizard, you can create these items if needed. If desired, you can create new sensitive information types from within the communication compliance policy wizard.
+In order to pick from existing custom sensitive information types or custom keyword dictionaries in the communication compliance policy wizard, you can create these items if needed. If desired, you can also create new sensitive information types from within the communication compliance policy wizard.
 
 ### Create custom keyword dictionary/lexicon (optional)
 
@@ -153,7 +149,7 @@ Use a text editor (like Notepad), to create a file that includes the keyword ter
 
 ## Step 4: Create a communication compliance policy (required)
   
-1. Sign into [https://protection.office.com](https://protection.office.com) using credentials for an admin account in your Microsoft 365 organization.
+1. Sign into [https://compliance.microsoft.com](https://compliance.microsoft.com) using credentials for an admin account in your Microsoft 365 organization.
 
 2. In the Microsoft 365 compliance center, select **Communication compliance**.
   
@@ -183,7 +179,7 @@ Use a text editor (like Notepad), to create a file that includes the keyword ter
 
 If you want to have the option of responding to a policy alert by sending a reminder notice to the associated employee, you'll need to create at least one notice template in your organization. The notice template fields are editable prior to sending as part of the alert remediation process and creating a customized notice template for each communication compliance policy is recommended.
 
-1. Sign into [https://protection.office.com](https://protection.office.com) using credentials for an admin account in your Microsoft 365 organization.
+1. Sign into [https://compliance.microsoft.com](https://compliance.microsoft.com) using credentials for an admin account in your Microsoft 365 organization.
 
 2. In the Microsoft 365 compliance center, go to **Communication compliance**.
 

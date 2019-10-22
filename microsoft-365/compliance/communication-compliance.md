@@ -58,6 +58,7 @@ Communication compliance in Microsoft 365 builds on the features of [Supervision
 - **Exact and near duplicate detection**: In addition to scanning for exact terms matching communication compliance polices, near duplicate detection groups textually similar terms and messages together to help speed up your review process.
 - **Improved filters**: Investigate and remediate policy alerts faster with filters for alert state, severity, age, or user.
 - **Improved message views**: Investigation and remediation actions are now quicker with new message source, text, and annotation views.
+- **
 
 ## Integration with Microsoft 365 services
 
@@ -78,12 +79,12 @@ Communication compliance helps you address common pain points associated with co
 
 ### Configure
 
-In this workflow step, you identify your compliance requirements and configure applicable communication compliance policies. You can choose from the following policy types in the Microsoft 365 compliance center:
+In this workflow step, you identify your compliance requirements and configure applicable communication compliance policies. You can choose from the following policy templates in the Microsoft 365 compliance center:
 
-- **Offensive language and anti-harassment**: Use the *Monitor communications for offensive language* template to quickly create a supervision policy that uses the built-in trainable classifier to automatically detect content that may be considered as harassment.
-- **Sensitive information**: Use the *Monitor communications for sensitive information* template to create a policy to scan communications containing defined sensitive information types or keywords to help make sure important data isn't shared with people that shouldn't have access.
-- **Regulatory compliance**: Use the *Monitor communications for info related to financial regulatory compliance* template to create a policy to scan communications for references to standard financial terms associated with regulatory standards. 
-- **Custom policy**: Use the *Custom Policy* template to configure specific communication channels, individual detection conditions, and the amount of content to review for supervision in your organization.
+- **Offensive language and anti-harassment**: Use this template to quickly create a supervision policy that uses the built-in trainable classifier to automatically detect content that may be considered abusive or offensive.
+- **Sensitive information**: Use this template to create a policy to scan communications containing defined sensitive information types or keywords to help make sure important data isn't shared with people that shouldn't have access.
+- **Regulatory compliance**: Use this template to create a policy to scan communications for references to standard financial terms associated with regulatory standards. 
+- **Custom policy**: Use this template to configure specific communication channels, individual detection conditions, and the amount of content to review for supervision in your organization.
 
 ### Investigate
 
