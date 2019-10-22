@@ -26,7 +26,7 @@ Microsoft 365 Enterprise includes a full suite of cloud-based services so that y
 - The most valuable data for your organization, such as trade secrets, financial or human resources information, and organization strategy.
 
 >[!Note]
-> A similar scenario using Microsoft Teams is in development.
+> A similar scenario using Microsoft Teams is [here](secure-teams-highly-regulated-data-scenario.md).
 >
 
 A Microsoft 365 Enterprise cloud-based scenario that meets this business need requires that you:
@@ -46,14 +46,14 @@ The following table maps the requirements of this scenario to a feature of Micro
 |:-------|:-----|
 | **Requirement** | **Microsoft 365 Enterprise feature** |
 | Store files | SharePoint team sites |
-| Lock down the site | Azure Active Directory (Azure AD) groups and SharePoint team site permissions |
+| Lock down the site | Office 365 groups and SharePoint team site permissions |
 | Label the files of the site | Office 365 retention labels |
 | Block users when sending files outside the organization | Data Loss Prevention (DLP) policies in Office 365 |
-| Encrypt all of the files of the site | Office 365 sensitivity sublabels |
-| Add permissions to the files of the site | Office 365 sensitivity sublabels |
+| Encrypt all of the files of the site | Office 365 sensitivity labels or sublabels |
+| Add permissions to the files of the site | Office 365 sensitivity labels or sublabels |
 |||
 
-Here is the configuration for a secure SharePoint site.
+Here is an example configuration for a secure SharePoint site.
 
 ![The SharePoint sites for highly regulated data scenario](./media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration.png)
 
