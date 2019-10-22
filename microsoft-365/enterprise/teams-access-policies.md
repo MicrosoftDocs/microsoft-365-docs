@@ -6,7 +6,7 @@ manager: serdars
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.author: heidip
-ms.date: 10/15/2019
+ms.date: 10/31/2019
 ms.reviewer: anmorgan
 ms.custom: 
 - it-pro
@@ -18,8 +18,6 @@ ms.collection:
 ---
 
 # Policy recommendations for securing Teams chats, groups, and files
-
-WHY NOT SKYPE HYBRID
 
 This article describes how to implement the recommended identity and device-access policies to protect Teams chats, groups, and content such as files and calendars. This guidance builds on the [Common identity and device access policies](identity-access-policies.md), with additional information that's Teams-specific. Because Teams integrates with our other products, there will be reference out to [Policy recommendations for securing SharePoint sites and files](sharepoint-file-access-policies.md) and [Policy recommendations for securing email](secure-email-recommended-policies.md).
 
@@ -37,7 +35,7 @@ If you included Teams when you created the common policies, you should be able t
 
 This is a table of rules to follow, and you can learn more from .
 
-|Protection level|Policies|More information|
+|Protection level|Policies|Further information for Teams implementation|
 |:---------------|:-------|:----------------|
 |**Baseline**|[Require MFA when sign-in risk is *medium* or *high*](#require-mfa-based-on-sign-in-risk)|For high-risk users, as defined by your organization, MFA should be enabled|
 |        |[Block clients that don't support modern authentication](#block-clients-that-dont-support-modern-authentication)|Clients that do not use modern authentication can bypass conditional access rules, so it's important to block these|
@@ -50,6 +48,24 @@ This is a table of rules to follow, and you can learn more from .
 |         |[Require compliant PCs *and* mobile devices](#require-compliant-pcs-and-mobile-devices)|Enforces Intune management for PCs and phone/tablets|
 |**Highly regulated**|[*Always* require MFA](#require-mfa-based-on-sign-in-risk)|Regardless of user identity, MFA will be used by your organization
 | | |
+
+### Guest Access
+
+In addition to the policies for users who are internal to your business or organization, guest access can be enabled on a user-by-user basis to allow people who are external to your business or organization to access Teams resources and interact with internal people for things like group conversations, chat, and meetings. You can learn more about this at the following link: [Teams guest access](https://docs.microsoft.com/en-us/microsoftteams/guest-access)
+
+### External Access
+
+External access is sometimes confused with guest access, so it's important to be clear that these two access mechanisms are actually quite different. While guest access occurs on a per-user basis (you add one user at a time), external access allows you to add all the users of an external domain at the same time, but they have less access than an individual who's been added via guest access would have. External access users can chat with your internal users via Teams.
+
+For more reading about external access, and how to implement it, please review [Manage external access in Microsoft Teams](https://docs.microsoft.com/en-us/microsoftteams/manage-external-access)
+
+## How these policies work together
+
+As noted above, Teams can have many layers of access and security ranges from channels that can encompass your entire organization to one-on-one chats. These policies cover security reliably no matter what you're using Teams to do. Please review the following diagram, which shows not just the many things you can do with Teams, but also some of the underlying dependencies on other applications.
+
+![Diagram showing Teams dependencies on SharePoint Online, OneDrive for Business, and Exchange.](../images/identity-access-logical-architecture-teams.png)
+
+As noted in the diagram above, Teams has many dependencies. To achieve full functionality for files for Teams, you will need to have SharePoint and OneDrive configured, as shown in [Policy recommendations for securing SharePoint sites and files](sharepoint-file-access-policies.md). SharePoint is also used for wiki functionality. Many Teams functionalities, including 1:1 and group chats, channel messages, meetings and calls. To review Exchange configuration recommendations, see [Policy recommendations for securing email](secure-email-recommended-policies.md).
 
 ## Teams Policies
 
@@ -76,21 +92,3 @@ Please review [Manage meeting policies in Teams](https://docs.microsoft.com/en-u
 Teams also allows you to use apps in various places, such as channels or personal chats. Having policies around what apps can be added and used, and where, is essential to maintaining a content-rich environment that is also secure.
 
 For more reading about App Permission Policies, check out [Manage app permission policies in Microsoft Teams](https://docs.microsoft.com/en-us/microsoftteams/teams-app-permission-policies).
-
-## How these policies work together
-
-As noted above, Teams can have many layers of access and security ranges from channels that can encompass your entire organization to one-on-one chats. These policies cover security reliably no matter what you're using Teams to do. Please review the following diagram, which shows not just the many things you can do with Teams, but also some of the underlying dependencies on other applications.
-
-![Diagram showing Teams dependencies on SharePoint Online, OneDrive for Business, and Exchange.](../images/identity-access-logical-architecture-teams.png)
-
-As noted in the diagram above, Teams has many dependencies. To achieve full functionality for files for Teams, you will need to have SharePoint and OneDrive configured, as shown in [Policy recommendations for securing SharePoint sites and files](sharepoint-file-access-policies.md). SharePoint is also used for wiki functionality. Many Teams functionalities, including 1:1 and group chats, channel messages, meetings and calls. To review Exchange configuration recommendations, see [Policy recommendations for securing email](secure-email-recommended-policies.md).
-
-## Guest Access
-
-In addition to the policies for users who are internal to your business or organization, guest access can be enabled on a user-by-user basis to allow people who are external to your business or organization to access Teams resources and interact with internal people for things like group conversations, chat, and meetings. You can learn more about this at the following link: [Teams guest access](https://docs.microsoft.com/en-us/microsoftteams/guest-access)
-
-## External Access
-
-External access is sometimes confused with guest access, so it's important to be clear that these two access mechanisms are actually quite different. While guest access occurs on a per-user basis (you add one user at a time), external access allows you to add all the users of an external domain at the same time, but they have less access than an individual who's been added via guest access would have. External access users can chat with your internal users via Teams.
-
-For more reading about external access, and how to implement it, please review [Manage external access in Microsoft Teams](https://docs.microsoft.com/en-us/microsoftteams/manage-external-access)
