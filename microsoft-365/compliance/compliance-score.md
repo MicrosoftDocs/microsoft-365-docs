@@ -109,7 +109,7 @@ The twelve pre-configured templates for Compliance Score are:
 4. [NIST 800-53](https://go.microsoft.com/fwlink/?linkid=2109075)
 5. [NIST 800-171](https://go.microsoft.com/fwlink/?linkid=2108867)
 6. [NIST Cybersecurity Framework (CSF)](https://go.microsoft.com/fwlink/?linkid=2108868)
-7. [Cloud Security Alliance (CSA) Cloud Control Matrix (CCM) 3.0.1](https://go.microsoft.com/fwlink/?linkid=2109076)
+7. [Cloud Security Alliance (CSA) Cloud Controls Matrix (CCM) 3.0.1](https://go.microsoft.com/fwlink/?linkid=2109076)
 8. [Federal Financial Institutions Examination Council (FFIEC) Information Security Booklet](https://go.microsoft.com/fwlink/?linkid=2109077) 
 9. [HIPAA](https://go.microsoft.com/fwlink/?linkid=2109078) / [HITECH](https://go.microsoft.com/fwlink/?linkid=2109079)
 10. [FedRAMP Moderate](https://go.microsoft.com/fwlink/?linkid=2108869)
