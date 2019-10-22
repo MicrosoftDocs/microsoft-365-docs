@@ -25,7 +25,7 @@ Providing a path for B2B users to authenticate with your Azure AD tenant doesn't
 
 ## Updating the common policies to allow and protect guest and external access 
 
-The following diagram illustrates the common identity and device access policies and indicates which policies to add or update to protect guest and external access. 
+The following diagram illustrates the common identity and device access policies and indicates (with a pencil icon) which policies to add or update to protect guest and external access. 
 
 ![Summary of policy updates for protecting guest access](../images/identity-access-ruleset-guest.png)
 
@@ -35,7 +35,7 @@ The following table lists the policies you either need to update or create new. 
 |:---------------|:-------|:----------------|
 |**Baseline**|[Require MFA always for guest and external users](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Create this new rule and apply it only to guests and external users. Under sign-in risk, leave all options unchecked to always enforce MFA.|
 |        |[Require MFA when sign-in risk is *medium* or *high*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Modify this rule to exclude guest and external users.|
-|        |[Require compliant PCs](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Modify this rule to exclude guest users.|
+|        |[Require compliant PCs](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Modify this rule to exclude guest and external users.|
 
 To include or exclude guests and external users in conditional access rules, click the include or exclude tab and check **All guests and external users**.
 
@@ -46,7 +46,7 @@ To include or exclude guests and external users in conditional access rules, cli
 ### Guests vs. external users
 In Azure AD, guest and external users are the same. The user type for both of these is Guest. Guest users are B2B users.
 
-Microsoft Teams differentiates between guest users and external users. For more information, see ___________________.
+Microsoft Teams differentiates between guest users and external users. 
 
 ### Require MFA always for guest and external users
 This rule prompts guests to register for MFA in your tenant, regardless of whether they're registered for MFA in their home tenant. When accessing resources in your tenant, guests and external users are required to use MFA for every request. 
