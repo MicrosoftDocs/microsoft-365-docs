@@ -30,7 +30,7 @@ Microsoft Managed Desktop will give you notice of any “major” changes 30 day
 - Adding new feature to the service
 
 > [!NOTE]
-> We might have to make changes to mitigate incidents that would be excluded from the 30-day notification policy. 
+> We might have to make changes to mitigate incidents or security issues that would be excluded from the 30-day notification policy.
 
 We’ll routinely make other changes to the service to improve user experience, security, reliability, and reporting. Some examples of these minor changes include:
 
