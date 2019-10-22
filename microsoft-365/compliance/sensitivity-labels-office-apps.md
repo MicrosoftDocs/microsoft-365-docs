@@ -1,9 +1,9 @@
 ---
 title: "Sensitivity labels in Office apps"
-ms.author: greglin
-author: greg-lindsay
+ms.author: krowley
+author: kccross
 manager: laurawi
-ms.date: 
+ms.date: 10/21/2019
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -12,7 +12,7 @@ ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
 - MET150
-description: "Learn about how users work with sensitivity labels in Office apps for Windows and Office apps for the web. Find out which apps support sensitivity labels."
+description: "Learn about how users work with sensitivity labels in Office apps for the desktop, Office apps for mobile, and Office apps for the web. Find out which apps support sensitivity labels."
 ---
 
 # Sensitivity labels in Office apps
@@ -44,13 +44,13 @@ Office 365 only supports sensitivity labels with a subscription and not with a n
 
 |Capability                                                                                                        |Windows Desktop |Mac Desktop |iOS    |Android      |Web                |
 |------------------------------------------------------------------------------------------------------------------|----------------|------------|-------|-------------|-------------------|
-|[Manually apply, change, or remove label](https://support.office.com/article/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| 1910+          | 16.21.0+   | 2.21+ | 16.0.11231+ | Evergreen (date?) |
-|[Apply a default label](sensitivity-labels.md#what-label-policies-can-do)                                         | 1910+          | 16.21.0+   | 2.21+ | 16.0.11231+ | Evergreen (date?) |
-|[Require a justification to change a label](sensitivity-labels.md#what-label-policies-can-do)                     | 1910+          | 16.21.0+   | 2.21+ | 16.0.11231+ | Evergreen (date?) |
-|[Provide help link to a custom help page](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+          | 16.21.0+   | 2.21+ | 16.0.11231+ | Evergreen (date?) |
-|[Mark the content](sensitivity-labels.md#what-label-policies-can-do)                                              | 1910+          | 16.21.0+   | 2.21+ | 16.0.11231+ | Evergreen (date?) |
-|[Assign permissions now](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21.0+   | 2.21+ | 16.0.11231+ | Evergreen (date?) |
-|[Let users assign permissions](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | TBD            | TBD        | TBD   | TBD         | TBD               |
+|[Manually apply, change, or remove label](https://support.office.com/article/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| 1910+          | 16.21.0+   | 2.21+ | 16.0.11231+ | Ignite? (Yes?)    |
+|[Apply a default label](sensitivity-labels.md#what-label-policies-can-do)                                         | 1910+          | 16.21.0+   | 2.21+ | 16.0.11231+ | Ignite? (Yes?)    |
+|[Require a justification to change a label](sensitivity-labels.md#what-label-policies-can-do)                     | 1910+          | 16.21.0+   | 2.21+ | 16.0.11231+ | Ignite? (Yes?)    |
+|[Provide help link to a custom help page](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+          | 16.21.0+   | 2.21+ | 16.0.11231+ | Ignite? (Yes?)    |
+|[Mark the content](sensitivity-labels.md#what-label-policies-can-do)                                              | 1910+          | 16.21.0+   | 2.21+ | 16.0.11231+ | Ignite? (Yes?)    |
+|[Assign permissions now](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21.0+   | 2.21+ | 16.0.11231+ | Ignite? (Yes?)    |
+|[Let users assign permissions](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+          | 16.21.0+   | TBD   | TBD         | TBD               |
 |[View label usage with label analytics](label-analytics.md) and send data for administrators                      | TBD            | TBD        | TBD   | TBD         | TBD               |
 |[Require users to apply a label to their email and documents](sensitivity-labels.md#what-label-policies-can-do)   | TBD            | TBD        | TBD   | TBD         | TBD               |
 |[Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md)                    | TBD            | TBD        | TBD   | TBD         | TBD               |
@@ -69,13 +69,13 @@ In your label configuration, if you turn on content marking, you must be using E
 
 |Capability                                                                                                        |Outlook on Windows Desktop |Outlook on Mac Desktop  |Outlook on iOS |Outlook on Android |Outlook on the web |
 |------------------------------------------------------------------------------------------------------------------|---------------------------|------------------------|---------------|-------------------|-------------------|
-|[Manually apply, change, or remove label](https://support.office.com/article/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| 1910+                     | 16.21.0+               | TBD           | TBD               | Yes               |
-|[Apply a default label](sensitivity-labels.md#what-label-policies-can-do)                                         | 1910+                     | 16.21.0+               | TBD           | TBD               | Yes               |
-|[Require a justification to change a label](sensitivity-labels.md#what-label-policies-can-do)                     | 1910+                     | 16.21.0+               | TBD           | TBD               | Yes               |
-|[Provide help link to a custom help page](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+                     | 16.21.0+               | TBD           | TBD               | Yes               |
-|[Mark the content](sensitivity-labels.md#what-label-policies-can-do)                                              | 1910+                     | 16.21.0+               | TBD           | TBD               | Yes               |
-|[Assign permissions now](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+                     | 16.21.0+               | TBD           | TBD               | Yes               |
-|[Let users assign permissions](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16.21.0+               | TBD           | TBD               | TBD               |
+|[Manually apply, change, or remove label](https://support.office.com/article/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| 1910+                     | 16.21.0+               | 4.71+         | 4.0.39+           | Yes               |
+|[Apply a default label](sensitivity-labels.md#what-label-policies-can-do)                                         | 1910+                     | 16.21.0+               | 4.71+         | 4.0.39+           | Yes               |
+|[Require a justification to change a label](sensitivity-labels.md#what-label-policies-can-do)                     | 1910+                     | 16.21.0+               | 4.71+         | 4.0.39+           | Yes               |
+|[Provide help link to a custom help page](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+                     | 16.21.0+               | 4.71+         | 4.0.39+           | Yes               |
+|[Mark the content](sensitivity-labels.md#what-label-policies-can-do)                                              | 1910+                     | 16.21.0+               | 4.71+         | 4.0.39+           | Yes               |
+|[Assign permissions now](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+                     | 16.21.0+               | 4.71+         | 4.0.39+           | Yes               |
+|[Let users assign permissions](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16.21.0+               | 4.71+         | 4.0.39+           | Yes               |
 |[View label usage with label analytics](label-analytics.md) and send data for administrators                      | TBD                       | TBD                    | TBD           | TBD               | TBD               |
 |[Require users to apply a label to their email and documents](sensitivity-labels.md#what-label-policies-can-do)   | TBD                       | TBD                    | TBD           | TBD               | TBD               |
 |[Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md)                    | TBD                       | TBD                    | TBD           | TBD               | TBD               |
@@ -105,7 +105,7 @@ For more information about client apps for information protection, see [Choose w
 
 ## Protection templates and sensitivity labels
 
-Administrator-defined [protection templates](https://docs.microsoft.com/azure/information-protection/configure-policy-templates) are hidden from the Office user experience when sensitivity labels are enabled because they are redundant with sensitivity labels that have encryption enabled.
+Administrator-defined [protection templates](https://docs.microsoft.com/azure/information-protection/configure-policy-templates), such as those you define for Office 365 Message Encryption, are hidden from the Office user experience when sensitivity labels are enabled because they are redundant with sensitivity labels that have encryption enabled.
 
 ## Apply classifications to files, emails, and attachments
 
@@ -116,7 +116,7 @@ When you label an email message that has attachments, those attachments do not i
 ## Apply classifications to groups and sites
 
 > [!WARNING]
-> @Sanjoyan what does sensitivity labels for groups and sites look like to end users? Anything to mention here to admins for client side?
+> @Kaarin to send @Krowley the links for the admin topics that tell admins how to tell users to apply labels to groups and sites that they set up. The actual end user topics (are they on SOC?) will end up in the More resources list as well.
 
 ## When Office 365 applies marks and encryption to content
 
