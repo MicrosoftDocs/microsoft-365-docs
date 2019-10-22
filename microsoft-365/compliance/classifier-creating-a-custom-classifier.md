@@ -36,8 +36,32 @@ Once the trainable classifier has processed enough positive samples to build a p
 
 ## How to create a trainable classifier
 
-1. 
+1. Collect between 50-500 seed content items. These must be samples that strongly represent the type of content you want the trainable classifier to positively identify as being in the classification category. See, [Default crawled file name extensions and parsed file types in SharePoint Server](https://docs.microsoft.com/en-us/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) for the supported file types.
 
+> [!IMPORTANT]
+> The sample items must not be encrypted and they must be in English.
+
+2. Place the seed content in a SharePoint Online folder that is dedicated to holding *the seed content only*. Make note of the site url and folder. 
+> [!TIP]
+> If you create a new site and folder for your seed data, allow at least an hour for that location to be indexed before creating the trainable classifier that will use that seed data.
+
+3. Sign in to Microsoft 365 compliance center with compliance admin or security admin role access and open [Microsoft 365 compliance center](https://compliance.microsoft.com/dataclassification?viewid=overview) or [Microsoft 365 security center](https://security.microsoft.com/dataclassification?viewid=overview) > **Classification** > **Data Classification**
+
+![data classification blade placeholder](media/data-classification-overview.png)
+
+4. Choose the **Trainable classifiers** tab.
+
+5. Choose **Create trainable classifier**.
+
+6. Fill in appropriate values for the `Name`, and `Description` fields of the category of items you want this trainable classifier to identify.
+
+7. Enter the exact URL and folder for the seed content site from step 2. Choose `Add`.
+
+8. Review the settings and choose `Create trainable classifier`.
+
+9. Wait 24 hours for the trainable classifier to process the seed data and build a prediction model. The classifier status will be `In progress` while it processes the seed data. When the classifier is finished processing the seed data, the status will change to `never tested`
+
+10. 
 
 
 
