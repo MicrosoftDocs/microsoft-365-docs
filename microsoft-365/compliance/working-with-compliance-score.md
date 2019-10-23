@@ -109,8 +109,6 @@ Fields in this section include:
 
 You can record the implementation status and date, and the test status and date for each improvement action. Below are the available fields and status options:
 
-> [!IMPORTANT]@REVIEWERS - need help listing all available status types and definitions for each, below.
-
 - **Implementation status**: select from these status options
     - **Not implemented**
     - **Implemented**
@@ -205,4 +203,4 @@ From the assessment list, under the **Customer-managed actions** column, select 
 
 ## Reporting
 
-> [!IMPORTANT]@REVIEWERS - anything we can/should say here? Should we also link to reporting in compliance center; do those tools pull data from Compliance Score? https://docs.microsoft.com/en-us/microsoft-365/compliance/reports-in-security-and-compliance
+??? anything we can/should say here? Should we also link to reporting in compliance center; do those tools pull data from Compliance Score? https://docs.microsoft.com/en-us/microsoft-365/compliance/reports-in-security-and-compliance
