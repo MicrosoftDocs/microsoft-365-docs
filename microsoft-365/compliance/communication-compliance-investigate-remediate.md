@@ -26,7 +26,12 @@ After you've configured your communication compliance policies, you'll start to 
 
 The first step to investigate issues detected by your policies is to review generated alerts in the Microsoft 365 compliance center. There are several areas in the compliance center to help you to quickly investigate alerts, depending on how you prefer to view alert grouping:
 
-- **Communication compliance home page**: When you sign into [https://compliance.microsoft.com](https://compliance.microsoft.com) using credentials for an admin account in your Microsoft 365 organization, select **Communication compliance** > **Overview** to display the communication compliance home page. Here you'll see alerts needing review that are listed from high to low severity. Select an alert to launch the alert details page and to start remediation actions.
+- **Communication compliance home page**: When you sign into [https://compliance.microsoft.com](https://compliance.microsoft.com) using credentials for an admin account in your Microsoft 365 organization, select **Communication compliance** > **Overview** to display the communication compliance home page. Here you'll see:
+    - Alerts needing review, listed from high to low severity. Select an alert to launch the alert details page and to start remediation actions.
+    - Recent policy matches, listed by policy name
+    - Resolved items, listed by policy name
+    - Escalations, listed by policy name
+    - Users with the most policy matches, listed from the most to the least number of matches
 - **Alerts tab**: Navigate to **Communication compliance** > **Alerts** to display alerts grouped by matched communication compliance policy. This view allows you to quickly see which communication compliance policies are generating the most alerts ordered by severity.  To start remediation actions, expand a policy to select a specific alert and to launch the alert details page.
 - **Policies tab**: Navigate to **Communication compliance** > **Policies** to display communication compliance policies configured for your Microsoft 365 organization. Each policy listed includes the count of alerts that need review. Selecting a policy displays all the pending alerts for matches to the policy, select a specific alert to launch the policy details page and to start remediation actions.
 
@@ -34,7 +39,9 @@ The first step to investigate issues detected by your policies is to review gene
 
 The next step is to sort the messages so that it's easier for you to investigate alerts. Communication compliance supports multi-level filtering for several message fields to help you quickly investigate and review messages with policy matches. Filtering is available for pending and and resolved items for each configured policy. You can configure ad-hoc filter queries for a policy or configure and save custom and default filter queries for use across all policies. After configuring fields for a filter, you'll see the filter fields displayed on the top of the alert message queue that you can configure for specific values.
 
-For a complete list of filters and field details, see Filters in the feature reference topic.
+For a complete list of filters and field details, see [Filters](communication-compliance-feature-reference.md#filters) in the feature reference topic.
+
+SCREENSHOT OF FILTER CONTROLS
 
 #### To configure a filter
 
@@ -42,7 +49,7 @@ For a complete list of filters and field details, see Filters in the feature ref
 
 2. In the Microsoft 365 compliance center, go to **Communication compliance**.
 
-3. Select the **Policies** tab and then select a policy for investigation.
+3. Select the **Policies** tab and then select a policy for investigation, double-click to open the **Policy** page.
 
 4. On the **Policy** page, select either the **Pending** or **Resolved** tab to display the items for filtering.
 
@@ -53,6 +60,12 @@ For a complete list of filters and field details, see Filters in the feature ref
 7. If you'd like to save the filter selected as the default filter, select **Save as default**. If you want to use this filter as an ad-hoc filter, select **Done**.
 
 8. If you'd like to save the selected filters as a filter query, select **Save the query** control after you've configured at least one filter value. Enter a name for the filter query and select **Save**. This filter will be available to use across all policies and will be listed as a selection in the **Saved filter queries** section of the **Filters** details page.
+
+#### Using near and exact duplicate filters
+
+Communication compliance policies automatically scan and pre-filter near and exact message duplicates without any additional configuration steps. This allows you to quickly remediate similar messages one-by-one or as a group, reducing the message investigation burden for reviewers. As duplicates are detected, the **Near Duplicates** and/or the **Exact Duplicates** controls are displayed in the remediation action toolbar.
+
+SCREENSHOT OF EXACT DUPLICATE FILTER
 
 ## Remediate alerts
 
@@ -76,4 +89,6 @@ No matter where you start to review alerts or the filtering you configure, the n
     - **Notify**: You can use the **Notify** control to assign a custom notice template to the alert and to send a simple warning notice to the user. Choose the appropriate notice template and select **Send** to email a reminder to the employee that sent the message and to resolve the issue.
     - **Escalate**: Using the **Escalate** control, you can choose who else in your organization should review the message. HOW IS THE ESCALATION LIST OF USERS GENERATED
 
-4. **Determine if message details should be archived outside of communication compliance**: Message details can be exported or downloaded if you need to archive the messages in a separate storage solution.
+SCREENSHOT OF REMEDIATION CONTROLS
+
+4. **Determine if message details should be archived outside of communication compliance**: Message details can be exported or downloaded if you need to archive the messages in a separate storage solution. Selecting the **Download** control automatically adds selected messages to a .ZIP file that can be saved to storage outside of Microsoft 365.

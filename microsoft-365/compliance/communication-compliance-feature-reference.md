@@ -193,105 +193,34 @@ Communication compliance filters allow you to filter and sort alert messages for
 
 ## Monitor & manage
 
-It is easy to review the results of your supervision policies and apply a resolution tag. You can quickly see:
+It is easy to quickly review the alerts and policy matches generated of your Communication compliance policies. On the Communication compliance home page, you can quickly see:
 
-- The status of reviewed items
-- Users and groups under supervision
-- Users and groups designated as reviewers
-
-## Supervision policy dashboard
-
-Use the supervision policy dashboard to manage supervision policy results and to resolve outstanding items. This dashboard allows reviewers to view items that need to be reviewed, act on an item, and review the results of previously reviewed and resolved items for each supervision policy. You can access the supervision policy dashboard in the Compliance center at **Supervision** > *Your Custom Policy* > **Open**.
-
-### Dashboard Home
-
-The dashboard **Home** page has several sections to help you quickly act on your supervision policies. Here you can:
-
-- Quickly review the pending and resolved highlights for the week
-- See a list of the supervised users and supervised groups for the selected policy
-- See a list of the reviewers and review teams for the selected policy
-- See which communication platforms have content under supervision for the policy
-
-### Review tab
-
-The **Review** tab is where reviewers classify and resolve items identified by the selected policy. Here you can:
-
-- Filter by pending, compliant, non-compliant, and questionable items.
-- Tag a single item as compliant, non-compliant, or questionable. You can also record a comment with the item to help clarify the tagging action taken.
-- Bulk tag multiple items as compliant, non-compliant, or questionable. You can also record a comment with multiple items to help clarify the tagging action taken.
-- View the history of the tagging for a single item. Includes who resolved the item, the date and time of the action, the resolution tag, and any included comments.
-- Reclassify previously reviewed items as compliant, non-compliant, or questionable. You can also record a comment with single or multiple items to help clarify the reclassification action taken.
-
-### Resolved Items tab
-
-The **Resolved Items** tab is where reviewers can view all previously resolved items for the selected policy. Here you can:
-
-- Quickly view and sort the subject, sender, and date of resolved items
-- View the classification and comment history of any selected item
-
-## Reports
-
-Use the supervision reports to see the review activity at the policy and reviewer level. For each policy, you can also view live statistics on the current state of review activity. You can use the supervision reports to:
-  
-- Verify that your policies are working as you intended.
-- Find out how many communications need review.
-- Find out how many communications aren't compliant and which ones are passing review. This information can help you decide whether to fine-tune your policies or change the number of reviewers.
-
-## View the Supervision report
-
-1. Sign into the [Compliance center](https://compliance.microsoft.com) with credentials for an admin account with permissions to view supervision reports.
-2. Go to either **Reports** \> **Dashboard** or **Supervision** to view the supervision reporting widget for a summary of current supervision policy activity.
-3. Select the **Supervision** widget to open the detailed report page.
-
-> [!NOTE]
-> If you aren't able to access the **Reports** page, check that you're a member of the Supervisory Review role group, as described in [Make supervision available in your organization](configure-supervision-policies.md). Inclusion in this role group lets you create and manage supervision polices and run the report.
-  
-## How to use the report
-
-This report lists each policy and the number of communications at each stage in the review process. Use the report to:
-  
-- View data for all or specific policies.
-- View data grouped by tag type, reviewer, or message type.
-- Export data to a CSV file based on activity date, policy, and by reviewer activity.
-- Filter data based on activity date, tag type, reviewer, and message type.
-
-Here's a breakdown of the values displayed the **Tag type** column.
-  
-|**Tag type**|**What it means**|
-|:-----|:-----|
-| **Not Reviewed** | The number of emails not reviewed yet. These emails are awaiting review in the Office 365 supervision dashboard.
-| **Compliant** | The number of emails reviewed and marked as compliant. These messages still need resolution. |
-| **Questionable** | The number of emails reviewed and marked questionable. Serves as a flag for other reviewers to help check whether an email needs investigation for compliance. These messages still need resolution. |
-| **Non-Compliant (Active)** | The number of non-compliant emails that reviewers are currently investigating. |
-| **Non-Compliant (Resolved)** | The number of non-compliant emails that reviewers investigated and resolved. |
-| **Hit Policy** | The total number (daily) of messages from Exchange, Teams, and third-party data sources that matched one or more conditions defined in a supervision policy |
-| **In Purview** | The total number (daily) of messages from Exchange, Teams, and third-party data sources scanned by a supervision policy |
-| **Resolved** | The total number of messages from Exchange, Teams, and third-party data sources classified as **Resolved**|
-
-> [!NOTE]
-> Supervision policies must be provisioned before they appear in reports. If policies are deleted, historical data is still shown. However, they're indicated as a "Non-existent policy" and the **Export** function isn't available.
+- Alerts needing review, listed from high to low severity. Select an alert to launch the alert details page and to start remediation actions.
+- Recent policy matches, listed by policy name
+- Resolved items, listed by policy name
+- Escalations, listed by policy name
+- Users with the most policy matches, listed from the most to the least number of matches
 
 ## Audit
 
-In some instances, you must provide information to regulatory or compliance auditors to prove supervision of employee activities and communications. This may be a summary of all supervisory activities associated with a defined policy or anytime a supervision policy changes. Supervision policies have built-in audit trails for complete readiness for internal or external audits. Detailed audit histories of every action captured by your supervision policies provide proof of supervisory procedures.
+In some instances, you must provide information to regulatory or compliance auditors to prove supervision of employee activities and communications. This may be a summary of all activities associated with a defined organizational policy or anytime a communication compliance policy changes. Communication compliance policies have built-in audit trails for complete readiness for internal or external audits. Detailed audit histories of every create, edit, and delete action are captured by your communication policies to provide proof of supervisory procedures.
 
-The following supervision policy activities are audited and available in the unified Office 365 audit logs:
+To view Communication compliance policy activities, select the **Export review activities** control on the main page for any policy. This generates an audit file in the .csv format that contains the following information:
 
-|**Activity**|**Associated commands**|
+|**Field**|**Details**|
 |:-----|:-----|
-| **Create a policy** | [New-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-supervisoryreviewpolicyv2) <br> [New-SupervisoryReviewRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-supervisoryreviewrule) |
-| **Edit a policy** | [Set-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-supervisoryreviewpolicyv2) <br> [Set-SupervisoryReviewRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-supervisoryreviewrule) |
-| **Delete a policy** | [Remove-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/remove-supervisoryreviewpolicyv2) |
+| **CreationDate** |  |
+| **UserIds** | |
+| **Operations** | |
+| **AuditData** | This is the main data source field for all policy activities. All activities are recorded and separated by comman delimiters. |
 
-View audit activities in the unified audit log or with the [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog) PowerShell cmdlet.
+You can also view audit activities in the unified audit log or with the [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog) PowerShell cmdlet.
 
 For example, the following example returns the activities for the all the supervisory review activities (policies and rules) and lists detailed information for each:
 
 ```
 Search-UnifiedAuditLog -StartDate 3/1/2019 -EndDate ([System.DateTime]::Now) -RecordType DataGovernance -ResultSize 5000 | Where-Object {$_.Operations -like "*SupervisoryReview*"}  | fl CreationDate,Operations,UserIds,AuditData
 ```
-
-In addition to information provided in the supervision reports and logs, you can also use the [Get-SupervisoryReviewActivity](https://docs.microsoft.com/powershell/module/exchange/reporting/get-supervisoryreviewactivity?view=exchange-ps) PowerShell cmdlet to return a complete detailed listing of all supervision policy activities.
 
 ## Ready to get started?
 
