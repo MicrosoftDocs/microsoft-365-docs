@@ -172,6 +172,25 @@ You can create notice templates if you want to send users an email reminder noti
 
 When selecting a notice template to apply to a policy violation as part of the remediation workflow, you can choose to accept the field values defined in the template or overwrite the fields as needed.
 
+## Filters
+
+Communication compliance filters allow you to filter and sort alert messages for quicker investigation and remediation actions. Filtering is available on the **Pending** and **Resolved** tabs for each policy. The following table outlines filter details:
+
+|**Filter**|**Details**|
+|:-----|:-----|
+| **Date** | The date the message was sent or received by a user in your organization. |
+| **File class** | The class of the message based on the message type, either email or chat. |
+| **Has attachment** | The attachment presence in the message. |
+| **Item class** | The class of the message based on the message channel. Options are... |
+| **Recipient** domains | The domain to which the message was sent. This is normally your Microsoft 365 subscription domain by default. |
+| **Recipient** | The user to which the message was sent. |
+| **Sender** | The person who sent the message. |
+| **Sender domain** | The domain that sent the message. |
+| **Size** | The size of the message, measured in KBs???? INCLUDES ATTACHMENT SIZE??? |
+| **Subject/Title** | The message subject or chat title. |
+| **Labels** | Retention labels assigned to the message or the MESSAGE ATTACHMENT? |
+| **Escalated To** | The user name of the person included as part of a message escalation action. |
+
 ## Monitor & manage
 
 It is easy to review the results of your supervision policies and apply a resolution tag. You can quickly see:
