@@ -174,7 +174,7 @@ When selecting a notice template to apply to a policy violation as part of the r
 
 ## Filters
 
-Communication compliance filters allow you to filter and sort alert messages for quicker investigation and remediation actions. Filtering is available on the **Pending** and **Resolved** tabs for each policy. The following table outlines filter details:
+Communication compliance filters allow you to filter and sort alert messages for quicker investigation and remediation actions. Filtering is available on the **Pending** and **Resolved** tabs for each policy. To save a filter or filter set as a saved filter query, one or more values must be configured as filter selections. The following table outlines filter details:
 
 |**Filter**|**Details**|
 |:-----|:-----|
