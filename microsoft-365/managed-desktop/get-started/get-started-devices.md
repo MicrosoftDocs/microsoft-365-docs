@@ -24,3 +24,13 @@ Here are a few ways IT administrators can personalize *Get started with your dev
 - Give the user with the appropriate username, or domain name to enter at step 3
 - Add a support contact within your organization for support outside of Microsoft Managed Desktop support
 - Add instructions about where to pick up their device (if this is separate from these instructions)
+
+At this point, you're ready to continue with the getting started steps:
+
+| | |
+| --- | --- |
+| ![done](images/checklistdone.png) | [Set up Microsoft Managed Desktop devices](set-up-devices.md) |
+| ![to do](images/checklistbox.gif) | [Assign licenses](assign-licenses.md)|
+| ![to do](images/checklistbox.gif) | [Adjust conditional access](conditional-access.md) |
+| ![to do](images/checklistbox.gif)| [Enable Enterprise State Roaming](enterprise-state-roaming.md) |
+| ![to do](images/checklistbox.gif) | [Deploy apps to Microsoft Managed Desktop devices](deploy-apps.md) |
