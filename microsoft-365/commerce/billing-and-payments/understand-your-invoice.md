@@ -20,9 +20,9 @@ keywords: billing accounts, organization info, invoices
 
 # Understand your invoice
 
-The invoice provides a summary of your charges and instructions for payment. You can [view your invoice online](#view-your-online-invoice) in the Microsoft 365 admin center. You can also download it in the Portable Document Format (.pdf) to send via email.
+The invoice provides a summary of your charges and instructions for payment. You can [view your online invoice](#view-your-online-invoice) in the Microsoft 365 admin center. You can also download it in the Portable Document Format (.pdf) to send via email.
 
-If you only have an Office 365 subscription, see [Understand your invoice for Office 365 for business](https://docs.microsoft.com/en-us/office365/admin/subscriptions-and-billing/view-your-bill-or-invoice).
+If you only have an Office 365 subscription, see [View your invoice for Office 365 for business](https://docs.microsoft.com/en-us/office365/admin/subscriptions-and-billing/view-your-bill-or-invoice).
 
 ## Understand the invoice header
 
@@ -34,7 +34,7 @@ The top of the first page identifies who is accountable for payment, where the b
 | Bill to |Identifies who receives the invoice. This information can be managed on the <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">Billing profiles</a> page. The billing profile is also shown on the online invoice page, in the **Invoice summary** section. To learn more about billing profiles and how you can use them to build more flexible billing options for your organization, see [Manage billing profiles](manage-billing-profiles.md). |
 | Billing Profile |The name of the billing profile used to define invoice properties like Bill to, PO number, and payment terms. This information can be managed on the <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">Billing profiles</a> page. For more information about billing profiles and how you can use them to build more flexible billing options for your organization, see [Manage billing profiles](manage-billing-profiles.md). |
 | Invoice number |A unique, Microsoft-generated invoice number used for tracking purposes. |
-| Invoice date |Date that the invoice is generated, typically five to 12 days after the end of the Billing cycle. You can check your invoice date on the billing profile details page. Charges that occur between the end of the billing period and the invoice date are included in the next month's invoice, since they are in the next billing period. The billing period start and end dates for each invoice are listed in the invoice PDF above **Billing Summary**.|
+| Invoice date |Date that the invoice is generated, typically five to 12 days after the end of the billing cycle. You can check your invoice date on the billing profile details page. Charges that occur between the end of the billing period and the invoice date are included in the next month's invoice, since they are in the next billing period. The billing period start and end dates for each invoice are listed in the invoice PDF above **Billing Summary**.|
 | Payment terms |How you pay for your Microsoft bill. *Net 30 days* means you pay by following instructions on your invoice, within 30 days of the invoice date. |
 
 ## Understand the billing summary
@@ -106,6 +106,6 @@ see more details for each item. The online invoice includes:
 
 ## Need help? Contact support.
 
-If you have questions or need help with your Azure credits, [create a support request with Azure support](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest).
+If you have questions or need help with your Azure credits, <a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">create a support request with Azure support</a>.
 
 If you have questions or need help with your invoice in Microsoft 365 admin center, [contact support for business products](https://docs.microsoft.com/en-us/office365/admin/contact-support-for-business-products).
