@@ -34,8 +34,8 @@ The top of the first page identifies who is accountable for payment, where the b
 | Bill to |Identifies who receives the invoice. This information can be managed on the <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">Billing profiles</a> page. The billing profile is also shown on the online invoice page, in the **Invoice summary** section. To learn more about billing profiles and how you can use them to build more flexible billing options for your organization, see [Manage billing profiles](manage-billing-profiles.md). |
 | Billing Profile |The name of the billing profile used to define invoice properties like Bill to, PO number, and payment terms. This information can be managed on the <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">Billing profiles</a> page. For more information about billing profiles and how you can use them to build more flexible billing options for your organization, see [Manage billing profiles](manage-billing-profiles.md). |
 | Invoice number |A unique, Microsoft-generated invoice number used for tracking purposes. |
-| Invoice date |Date that the invoice is generated, typically five to 12 days after the end of the billing cycle. You can check your invoice date on the billing profile details page. Charges that occur between the end of the billing period and the invoice date are included in the next month's invoice, since they are in the next billing period. The billing period start and end dates for each invoice are listed in the invoice PDF above **Billing Summary**.|
-| Payment terms |How you pay for your Microsoft bill. *Net 30 days* means you pay by following instructions on your invoice, within 30 days of the invoice date. |
+| Invoice date |Date that the invoice is generated, typically five to 12 days after the end of the billing cycle. You can check your invoice date on the billing profile details page. Charges that occur between the end of the billing period and the invoice date are included in the invoice for the next month, since they are in the next billing period. The billing period start and end dates for each invoice are listed in the invoice PDF above **Billing Summary**.|
+| Payment terms |How you pay for your Microsoft bill. *Net 30 days* means that you pay by following instructions on your invoice, within 30 days of the invoice date. |
 
 ## Understand the billing summary
 
@@ -47,24 +47,24 @@ The **Billing Summary** shows the summary of charges since the previous billing 
 | Credits |Credits you received from returns |
 | Azure credits applied |Your Azure credits that are automatically applied to Azure charges each billing period. If you don't have any Azure credits, this field is hidden. For more information about Azure credits, see [Track Microsoft Customer Agreement Azure credit balance](https://docs.microsoft.com/en-us/azure/billing/billing-mca-check-azure-credits-balance). |
 | Subtotal |The pre-tax amount due |
-| Tax |The type and amount of tax that you pay, depending on the country of your billing profile. If you don't have to pay tax, then you won't see tax on your invoice. |
+| Tax |The type and amount of tax that you pay, depending on the country of your billing profile. If you don't have to pay tax, no tax is shown on your invoice. |
 
 ### Understand your charges
 
-The charges pages show the cost broken down by product. For Azure customers, this might be organized by invoice section. For more information about how invoice sections are used with Azure products, see
+The charges pages show the cost broken down by product. For Azure customers, the charges might be organized by invoice section. For more information about how invoice sections are used with Azure products, see
 [Invoice sections](https://docs.microsoft.com/en-us/azure/billing/billing-mca-overview#invoice-sections) in [Get started with your Microsoft Customer Agreement billing account](https://docs.microsoft.com/en-us/azure/billing/billing-mca-overview). Within each product order, cost is broken down by service family.
 
 | Term |Description |
 | --- | --- |
-| Unit price | The effective unit price of the service (in pricing currency) that is used to calculate the charge. This is unique for a product, service family, meter, and offer. |
+| Unit price | The effective unit price of the service (in pricing currency) that is used to calculate the charge. This price is unique for a product, service family, meter, and offer. |
 | Qty | Quantity purchased or consumed during the billing period |
 | Charges/Credits | Net amount of charges after credits/refunds are applied |
 | Azure Credit | The amount of Azure credits applied to the Charges/Credits |
-| Tax rate | Tax rate(s) depending on the country |
+| Tax rate | Tax rate, depending on the country |
 | Tax amount | Amount of tax applied to the purchase based on tax rate |
 | Total | The total amount due for the purchase |
 
-Line items details vary depending on the type of product you are charged for. For example, for Azure products, the amount of Azure credits applied is shown, while seat-based products will list a unit price and
+Line items details vary depending on the type of product you're charged for. For example, for Azure products, the amount of Azure credits applied is shown. Seat-based products show a unit price and
 quantity. The invoice details outline the products purchased, discount or credits that were applied, tax rate and amount, and the line item totals.
 
 `Total = Charges - Azure Credit + Tax`
@@ -79,7 +79,7 @@ If there are Azure charges on your invoice that you would like more details on, 
 
 ### Payment instructions
 
-At the bottom of the invoice are instructions for paying your bill. You can pay by wire, check, or online.
+At the bottom of the invoice are instructions on how to pay your bill. You can pay by wire, check, or online.
 
 ### Publisher information
 
@@ -92,7 +92,7 @@ see more details for each item. The online invoice includes:
 
 - **Pricing details** &mdash; Additional information including details about discounts and product pricing.
 
-- **Online payment** &mdash; You have the option to make a payment online from the invoice.
+- **Online payment** &mdash; You can choose to make a payment online from the invoice.
 
 - **Azure cost management** &mdash; For Azure customers, online invoices include a link to Azure cost management.
 
