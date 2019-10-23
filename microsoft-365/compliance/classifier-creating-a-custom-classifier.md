@@ -18,7 +18,7 @@ description: "Use trainable classifiers when one of the out of the box classifie
 
 Use trainable classifiers when one of the out of the box classifiers won't meet your needs. A Microsoft 365 classifier is a tool you can train to recognize various types of content by giving it samples to look at. Training the classifier involves first giving it samples that are human picked and positively match the category, then after it has processed those, testing it predictions by giving it a mix of positive and negative samples. 
 
-To learn more about the different types of classifiers, see [Getting started with trainable classifiers (Preview)](classifier-getting-started-with.md)
+To learn more about the different types of classifiers, see [Getting started with trainable classifiers (preview)](classifier-getting-started-with.md)
 
 ## Seed content
 
@@ -61,30 +61,59 @@ Once the trainable classifier has processed enough positive samples to build a p
 
 9. Within 24 hours the the trainable classifier will process the seed data and build a prediction model. The classifier status will be `In progress` while it processes the seed data. When the classifier is finished processing the seed data, the status will change to `Need test items`.
 
-10. Collect a large number of test content items. Microsoft recommends  10,000 for best results. These should be a mix of items that are strong positives, strong negatives and some that are a little less obvious in their nature. See, [Default crawled file name extensions and parsed file types in SharePoint Server](https://docs.microsoft.com/en-us/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) for the supported file types.
+10. You can now view the details page by clicking on the classifier. 
+
+**placeholder screenshot**
+
+![trainable classifier ready for testing](media/classifier-trainable-ready-to-test-detail.png)
+
+11. Collect at least 200 test content items. Microsoft recommends 10,000 for best results. These should be a mix of items that are strong positives, strong negatives and some that are a little less obvious in their nature. See, [Default crawled file name extensions and parsed file types in SharePoint Server](https://docs.microsoft.com/en-us/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) for the supported file types.
 
 > [!IMPORTANT]
 > The sample items must not be encrypted and they must be in English.
 
-11. Place the test content in a SharePoint Online folder that is dedicated to holding *the test content only*. Make note of the site url and folder.
+12. Place the test content in a SharePoint Online folder that is dedicated to holding *the test content only*. Make note of the site url and folder.
 
 > [!TIP]
 > If you create a new site and folder for your seed data, allow at least an hour for that location to be indexed before creating the trainable classifier that will use that seed data.
 
-12. 
+13. Choose `Add items to test`.
+
+14. Enter the exact URL and folder for the seed content site from step 12. Choose `Add`.
+
+15. Finish the wizard by choosing `Done`. Your trainable classifier will take up to an hour to process the test files.
+
+16. When the trainable classifier is done processing your test files, the status on the details page will change to `Ready to review`. If you need to increase the test sample size, choose `Add items to test` and allow the trainable classifier to process the additional items.
+
+![ready to review screenshot](media/classifier-trainable-ready-to-review-detail.png)
+
+17. Choose `Tested items to review` tab to review items.
+
+18. Micrososft 365 will present 30 items at a time. Review them and in the `We predict this item is "Relevant". Do you agree?` box choose either `Yes` or `No` or `Not sure, skip to next item`. Model accuracy is automatically updated after every 30 items. 
+
+![review items box](media/classifier-trainable-review-detail.png)
+
+19. Review *at least* 200 items.
+
+20. Continue to review until the accuracy reaches at least 70% and the `Publish the classifier` status is `Ready to use`.
+
+![accuracy and ready to publish](media/classifier-trainable-review-ready-to-publish.png)
+
+21. Publish the classifier.
+
+22. Once published your classifier will be available as a condition in the [auto-apply retention label policy based on a condition](labels#applying-a-retention-label-automatically-based-on-conditions) and the [communication compliance workflow](communication-compliance-feature-reference.md).
+
+> [!CAUTION]
+> Once a classifier is published, it can't go through any additional training, so be very sure that you have tested and reviewed as many items as possible to ensure that the accuracy is as high as possible.
+
+## See also
+- [Getting started with trainable classifiers (preview)](classifier-getting-started-with.md)
+- [Default crawled file name extensions and parsed file types in SharePoint Server](https://docs.microsoft.com/en-us/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)
 
 
 
 
-
-<!-- o	Explain what seed material is and the goal of seeding
-o	Gather seed material in either an SPO folder or EXO mailbox
-o	Run training
-o	Gather test materials in either an SPO folder or EXO mailbox
-o	Run test
-o	Review and evaluate test results
-o	Achieve stability
-o	Publish (BE REALLY SURE B/C ONCE PUBLISHED, NO UPDATING)
+<!-- 
 o	Use Classifier classified content for auto-apply labels
 o	See Also
 	Retention labels
