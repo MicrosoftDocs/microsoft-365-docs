@@ -59,11 +59,19 @@ Once the trainable classifier has processed enough positive samples to build a p
 
 8. Review the settings and choose `Create trainable classifier`.
 
-9. Wait 24 hours for the trainable classifier to process the seed data and build a prediction model. The classifier status will be `In progress` while it processes the seed data. When the classifier is finished processing the seed data, the status will change to `Need test items`.
+9. Within 24 hours the the trainable classifier will process the seed data and build a prediction model. The classifier status will be `In progress` while it processes the seed data. When the classifier is finished processing the seed data, the status will change to `Need test items`.
 
-10. 
+10. Collect a large number of test content items. Microsoft recommends  10,000 for best results. These should be a mix of items that are strong positives, strong negatives and some that are a little less obvious in their nature. See, [Default crawled file name extensions and parsed file types in SharePoint Server](https://docs.microsoft.com/en-us/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) for the supported file types.
 
+> [!IMPORTANT]
+> The sample items must not be encrypted and they must be in English.
 
+11. Place the test content in a SharePoint Online folder that is dedicated to holding *the test content only*. Make note of the site url and folder.
+
+> [!TIP]
+> If you create a new site and folder for your seed data, allow at least an hour for that location to be indexed before creating the trainable classifier that will use that seed data.
+
+12. 
 
 
 
