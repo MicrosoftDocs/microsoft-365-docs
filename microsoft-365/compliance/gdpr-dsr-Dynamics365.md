@@ -129,7 +129,7 @@ Additionally, for Dynamics 365 for Marketing you can also:
 - Update-my-data landing page, by editing single or multiple rows directly
 - Prepare a [subscription centers](https://docs.microsoft.com/dynamics365/customer-engagement/marketing/set-up-subscription-center) page that has as many editable contact fields that can be included. This enables an end user to update their own information as much as possible.
 
-***Dynamics 365 Customer Service Insights*** also provides capabilities that enable organizations to [rectify or make changes to customer data](https://docs.microsoft.com/dynamics365/ai/customer-service-insights/gdpr-summary#a=note-about-requests-to-rectify-personal-data).
+***Dynamics 365 Customer Service Insights*** also provides capabilities that enable organizations to [rectify or make changes to customer data](https://docs.microsoft.com/dynamics365/ai/customer-service-insights/gdpr-summary).
 
 In ***Dynamics 365 for Finance and Operations***, you may also use of [*customization tools*](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/dev-tools/developer-home-page), but the decision and implementation is your responsibility.
 
@@ -215,7 +215,7 @@ This first step — finding and reviewing the personal data at issue — will he
 #### Social media users (authors)
 
 - To find their personal data, follow the first four steps in [Find and delete an author](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/manage-authors#find-and-delete-an-author).
-- Employees can create Social Engagement rules that search on social platforms for certain defined content; these search rules may contain author names. To make sure that you find these rules, review the social account search rules for the appropriate account such as [Twitter](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/add-rules-search-topic#add-a-twitter-rule), [Instagram](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/add-rules-search-topic#add-an-instagram-rule), and [YouTube](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/add-rules-search-topic#add-a-includetnyoutubeincludestn-youtubemd-rule).
+- Employees can create Social Engagement rules that search on social platforms for certain defined content; these search rules may contain author names. To make sure that you find these rules, review the social account search rules for the appropriate account such as [Twitter](https://docs.microsoft.com/dynamics365/social-engagement/add-rules-search-topic#add-a-private-messages-rule), [Instagram](https://docs.microsoft.com/dynamics365/social-engagement/add-rules-search-topic#add-a-custom-sources-rule), and [YouTube](https://docs.microsoft.com/dynamics365/social-engagement/add-rules-search-topic#add-a--rule).
 - To find author tags for an author, first [filter posts](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/use-filters#add-edit-or-remove-a-filter) by [author](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/understand-filters#authors), and then [view author tags](https://go.microsoft.com/fwlink/?linkid=864795).
 
 ##### Your employees
