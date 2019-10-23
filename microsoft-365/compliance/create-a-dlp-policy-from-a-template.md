@@ -164,7 +164,7 @@ Here are the different statuses and what they mean.
 |**On** <br/> |The policy is active and enforced. The policy was successfully deployed to all its content sources.  <br/> |
 |**Turning off…** <br/> |The policy is being removed from the content sources that it includes. The policy may still be active and enforced on some sources. Turning off a policy may take up to 45 minutes.  <br/> |
 |**Off** <br/> |The policy is not active and not enforced. The settings for the policy (sources, keywords, duration, etc) are saved.  <br/> |
-|**Deleting…** <br/> |The policy is in the process of being deleted. The policy is not active and not enforced.  <br/> |
+|**Deleting…** <br/> |The policy is in the process of being deleted. The policy is not active and not enforced. It normally takes an hour for a policy to delet <br/> |
    
 ## Turn off a DLP policy
 
