@@ -161,7 +161,7 @@ IT service providers that are not already Microsoft partners can learn more abou
 Partners now selling Office 365 can use the same consultative selling methods to sell Microsoft 365 Business. In addition, we are introducing more resources and training for your sales team to understand the customers’ existing desktop environment, Active Directory reliance, mobility and security needs to effectively communicate the full value of Microsoft 365 Business in a way that is relevant to the customer. Find these resources on the Office Partner portal at [http://partners.office.com/microsoft365business](http://partners.office.com/microsoft365business). 
 
 ### How can Microsoft 365 Business help partners increase the profitability? 
-Microsoft 365 Business will help partners reduce costs through greater operational efficiencies and enhance revenue through the sale of additional services. The Forrester Research, Microsoft 365 Business Total Economic Impact (TEI) Study, June 2017 (https://partners.office.com/TEIBusiness), demonstrates that Microsoft 365 Business will have positive impact on partner profitability. 
+Microsoft 365 Business will help partners reduce costs through greater operational efficiencies and enhance revenue through the sale of additional services. The Forrester Research, Microsoft 365 Business Total Economic Impact (TEI) Study, June 2017 (https://www.microsoft.com/microsoft-365/partners/PartnerTEI), demonstrates that Microsoft 365 Business will have positive impact on partner profitability. 
 
 In the TEI study partners reported that with Microsoft 365 Business they expect: 
 
