@@ -14,13 +14,13 @@ ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
 - MSB365
+- OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: be5b6d90-3344-4c5e-bf40-5733eb845beb
 description: "Learn how to use Windows AutoPilot to set up new Windows 10 devices for your business."
-ms.custom: OKR_SMB_M365
 ---
 
 # Use the step-by-step guide to add Autopilot devices and profile
