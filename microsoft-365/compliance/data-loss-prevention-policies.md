@@ -333,7 +333,8 @@ By using labels as a condition in your DLP rules, can you selectively enforce pr
 > [!NOTE]
 > If you specify a retention label as a condition in a DLP policy and you also include Exchange and/or Teams as a location, you will receive the following error:
 
-~~~powershell"Protecting labeled content in email and teams messages isn't supported. Either remove the label below or turn off Exchange and Teams as a location."
+```powershell
+"Protecting labeled content in email and teams messages isn't supported. Either remove the label below or turn off Exchange and Teams as a location."
 ```
 This is because Exchange transport does not evaluate the label metadata during message submission and delivery.  
   
