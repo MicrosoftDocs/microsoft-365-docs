@@ -67,7 +67,7 @@ ENX provides certification confirmation only to registered industry representati
 
 ## Resources
 
-- [TISAX Frequently Asked Questions](https://portal.enx.com/en-US/en-en/TISAX/faqs/)
+- [TISAX Frequently Asked Questions](https://portal.enx.com/en-US/TISAX/faqs/)
 - [Volkswagen and Microsoft announce strategic partnership](https://www.volkswagen-newsroom.com/en/press-releases/volkswagen-and-microsoft-announce-strategic-partnership-4234)
 - [Office in your Car: BMW offers Skype for Business](https://news.microsoft.com/de-de/skype-business-ab-sofort-fahrzeugen-von-bmw-verfugbar/) (German)
 - [Connecting vehicles for the long haul: Daimler](https://customers.microsoft.com/story/daimlertrucks)
