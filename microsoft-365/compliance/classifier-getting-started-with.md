@@ -32,7 +32,6 @@ This classification method is particularly well suited to content that, by it's 
 
 > [!IMPORTANT]
 > Both types of classifiers are available as a condition for [auto-apply retention label policy based on a condition](../labels#applying-a-retention-label-automatically-based-on-conditions) and the [communication compliance workflow](../communication-compliance-feature-reference.md).
-
 > [!IMPORTANT]
 > Trainable classifiers only work with items that are in english.
 
@@ -43,7 +42,7 @@ Getting a trainable classifier to a publishable state requires a time investment
 > [!NOTE]
 > Before you use pre-trained classifiers in your classification and labeling workflow, you should test it against a sample of your organizations content that you feel fits the category to verify that its classification predictions meet your expectations.
 
-### Pre-trained classifiers
+### Understanding pre-trained classifiers
 
 Microsoft 365 comes with six pre-trained classifiers:
 
@@ -64,8 +63,7 @@ Pre-trained classifiers don't need to be trained, but you do need to confirm tha
 
 ![process flow testing a pre-trained classifier](media/classifier-pub-pre-trained-classifier.png)
 
-
-### Trainable classifiers
+### Understanding trainable classifiers
 
 When the pre-trained classifiers don't meet your needs, you can create and train your own classifiers. There is significantly more work involved with creating your own, but they'll be much better tailored to your organizations needs. For more detail on how to use a pre-trained classifier, see [Using a pre-trained classifier](classifier-using-a-pre-trained-classifier.md)
 
