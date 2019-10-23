@@ -187,7 +187,7 @@ pilar@contoso.com AND filetype="xlxs"
 
 ***GUI***
 
-![](media/O365-DSR-Doc_image18.png)
+![keyword dialog](media/O365-DSR-Doc_image18.png)
 
 ##### Example 2
 
@@ -197,7 +197,7 @@ This example returns Excel or Word files on SharePoint Online sites and OneDrive
 
 ***GUI***
 
-![](media/O365-DSR-Doc_image19.png)
+![keyword dialog](media/O365-DSR-Doc_image19.png)
 
 ##### Example 3
 
@@ -209,7 +209,7 @@ This example returns email messages that contain the specified ID number, which 
 
 ***GUI***
 
-![](media/O365-DSR-Doc_image20.png)
+![keyword dialog](media/O365-DSR-Doc_image20.png)
 
 #### Working with partially indexed items in Content Search
 
@@ -424,13 +424,13 @@ When you export the results of a Content Search, email items can be downloaded a
 To export and download items:
 
 1. Open the Content Search in the Security & Compliance Center.
-2. On the search fly out page, click ![](media/o365-dsr_image21.png) **More**, and then click **Export results**. You can also export a report.
+2. On the search fly out page, click ![download icon](media/o365-dsr_image21.png) **More**, and then click **Export results**. You can also export a report.
 3. Complete the sections on the **Export results** fly out page. Be sure to use the scroll bar to view all export options.
 4. Go back to the Content search page in the Security & Compliance Center, and click the **Export** tab.
 5. Click **Refresh** to update the page.
 6. Under the **Name** column, click the export job that you created. The name of the export job is the name of the content search appended with **\_Export**.
 7. On the export fly out page, under **Export key**, **click Copy to clipboard**. You'll use this key in step 10 to download the search results
-8. On the top of the fly out page, click ![](media/o365-dsr_image21.png) **Download results**.
+8. On the top of the fly out page, click ![download icon](media/o365-dsr_image21.png) **Download results**.
 9. If you're prompted to install the **Microsoft Office 365 eDiscovery Export Tool**, click **Install**.
 10. In the **eDiscovery Export Tool**, paste the export key that you copied in step 7 in the appropriate box.
 11. Click **Browse** to specify the location where you want to download the search result files.
