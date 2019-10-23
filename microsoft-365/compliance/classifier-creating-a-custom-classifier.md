@@ -47,7 +47,7 @@ Once the trainable classifier has processed enough positive samples to build a p
 
 3. Sign in to Microsoft 365 compliance center with compliance admin or security admin role access and open [Microsoft 365 compliance center](https://compliance.microsoft.com/dataclassification?viewid=overview) or [Microsoft 365 security center](https://security.microsoft.com/dataclassification?viewid=overview) > **Classification** > **Data Classification**
 
-![data classification blade placeholder](media/data-classification-overview.png)
+![data classification blade placeholder](media/data-classification-overview.png "placehholder image")
 
 4. Choose the **Trainable classifiers** tab.
 
