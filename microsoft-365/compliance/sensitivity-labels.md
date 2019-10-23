@@ -65,6 +65,11 @@ Each item of content can have a single sensitivity label applied to it. An item 
 
 ## What sensitivity labels can do
 
+After you apply a sensitivity label to a group or site, you can:
+
+> [!WARNING]
+> SANJOYAN and Kaarin I need to know exactly what they do here. will fill this in or ask you to
+
 After a sensitivity label is applied to an email or document, the protection settings for that label are enforced on the content. With a sensitivity label, you can:
 
 - **Encrypt** email only or both email and documents. You can choose which users or group have permissions to perform which actions and for how long. For example, you can choose to allow users in a specific domain outside your organization to have permissions to review the content for only 7 days after the content is labeled. Alternatively, instead of assigning permissions yourself, you can allow your users to assign permissions to the content when they apply the label. For more information, see [Restrict access to content by using encryption in sensitivity labels](encryption-sensitivity-labels.md).

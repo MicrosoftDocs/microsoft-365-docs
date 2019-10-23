@@ -1,5 +1,5 @@
 ---
-title: "Apply labels to Office 365 groups and SharePoint sites (Public preview) "
+title: "Apply labels to Office 365 groups and SharePoint sites (Public Preview)"
 ms.author: laurawi
 author: kccross
 manager: laurawi
@@ -15,86 +15,85 @@ search.appverid:
 description: "You can apply labels to Office 365 groups and SharePoint sites. Sensitivity labels can use encryption to protect groups and sites."
 ---
 
-# Opt-in to restrict access to groups and sites by using encryption in sensitivity labels  (Public Preview)
+# About the Office 354 groups and sites public preview for sensitivity labels
 
-As part of Microsoft's Public preview, you can opt-in to use sensitivity labels to restrict access to Office 365 groups and SharePoint sites.
+With the release of this public preview, administrators that opt-in can apply sensitivity labels to Office 365 groups and SharePoint sites and add policies related to these labels. End-users can then select a label when they create an Office 365 group or SharePoint site. Sensitivity labels for groups and sites work with SharePoint Online, Microsoft Teams, and Outlook.
 
-> [!WARNING]
-> @REVIEWERS - Content from [Sensitivity labels for Office 365 groups and SharePoint sites (preview)](https://microsoft.sharepoint-df.com/:w:/t/CrossPremises/Ecl81il3l19HklBamX9nLdIBnoxNxsp8_9p9uT1iIP1gNQ?e=SDQ8AS) fills out the rest of this article. This is a copy/paste of this content and is not formatted or rewritten for docs yet. Please ignore for now.
+## Opt-in to to the public preview
 
-We are happy to announce a new capability for sensitivity labels in public preview. Sensitivity labels can now be applied to Office 365 groups and SharePoint sites, and admins can add policies related to these labels. End users can select a label when they create an Office 365 group or SharePoint site. Affected apps will be SharePoint, Teams, Outlook. 
+As part of Microsoft's public preview, you'll need to opt-in to use sensitivity labels to restrict access to Office 365 groups and SharePoint sites. You use Azure PowerShell to opt-in.
+To opt-in to the public preview follow these steps:
 
-PowerShell cmdlet for a global admin to opt in 
-A global admin needs to run the following Azure AD cmdlet to opt –in to this feature. Learn how to run Azure AD PowerShell cmdlets. You can opt-out at any point in time.  
-Connect-AzureAD 
-$setting=(Get-AzureADDirectorySetting | where -Property DisplayName -Value "Group.Unified" -EQ) 
-if ($setting -eq $null) 
-{ 
-    $template = Get-AzureADDirectorySettingTemplate -Id 62375ab9-6b52-47ed-826b-58e47e0e304b 
+1. Using a work or school account with global admin permissions in your tenant, log in to your Azure subscription with Azure PowerShell. For instructions, see [Log in with Azure PowerShell](https://docs.microsoft.com/powershell/azure/authenticate-azureps).
+
+2. Run the following PowerShell at the command-line.
+
+```powershell
+  Connect-AzureAD
+  $setting=(Get-AzureADDirectorySetting | where -Property DisplayName -Value "Group.Unified" -EQ)
+  if ($setting -eq $null)
+  {
+    $template = Get-AzureADDirectorySettingTemplate -Id 62375ab9-6b52-47ed-826b-58e47e0e304b
     $setting = $template.CreateDirectorySetting() 
     $setting["EnableMIPLabels"] = "True" 
     New-AzureADDirectorySetting -DirectorySetting $setting 
-} 
-else 
-{ 
+  }
+  else
+  {
     $setting["EnableMIPLabels"] = "True" 
     Set-AzureADDirectorySetting -Id $setting.Id -DirectorySetting $setting 
-} 
- 
+  }
+```
+
 Note: If you are using the classic Azure AD classification list ($setting["ClassificationList"]), those classifications will not be used for new Office 365 groups and SharePoint sites after you enable this feature. Old groups and sites will still display those classification tags unless you convert them. Learn how.  
- 
-Page Break
- 
+
+## Create sensitivity labels for SharePoint Online groups and sites
+
 How to create a label on the Site and group settings tab 
 On the site and group settings tab, you can select: 
 Privacy {Private/Public}:  Private means only approved members in your organization can see what's inside the group. Anyone else in your organization cannot see what's in the group. Learn more 
 External users access: You can control if guests can be added to a group . Learn about managing guest access in Office 365 Groups 
 Unmanaged devices: This setting applies to any SharePoint site and controls access to sites from devices that are not managed by your organization. Learn about setting up SharePoint and Azure to control access from unmanaged devices.
 
-Publishing the sensitivity label   
+Publishing the sensitivity label
 The steps to publish labels can be found here  
 Select a sensitivity label when creating a site  
 1. As an end user: Sign in and go to the SharePoint start page, and then select Create site. 
 As an admin: Go to the Active sites page in the new SharePoint admin center, and then select Create.  
 2. Click Create site.  
 3. Choose Team site or Communication site.  
- 
-4. In the Sensitivity box, choose a label. The admin has selected the default. If users want more info, they can also click the help icon to read details about the available labels and associated policies. 
- 
-Example of a SharePoint site with label applied: 
- 
-Manage sensitivity labels in the SharePoint admin center  
-Global and SharePoint admins can go to the Active sites page to see the labels applied to all sites. 
 
- 
+4. In the Sensitivity box, choose a label. The admin has selected the default. If users want more info, they can also click the help icon to read details about the available labels and associated policies. 
+
+Example of a SharePoint site with label applied:
+
+Manage sensitivity labels in the SharePoint admin center  
+Global and SharePoint admins can go to the Active sites page to see the labels applied to all sites.
+
 They can select sites and change their labels.  
 To learn how to manage sensitivity labels in PowerShell, see <link>.
 
-Page Break
 Using sensitivity labels while creating groups 
 When users create Office 365 groups from Outlook on the web, they’ll notice the new “Sensitivity” box that contains published labels. If users want more info, they can also click the help icon to read details about the available labels and associated policies.  
 
 The same labels appear when users create groups from Yammer, Planner, and other Office 365 services. They’re also available when users create teams in Microsoft Teams.  
 
+Change label settings related to Office 365 Groups
+Once the label is created, published, and used across several groups then it’s advisable to not change the label’s setting pertaining to Office 365 Groups. In case this change is must for a given label and if it is desired that all existing groups using the label must follow this new settings then it is recommended to follow the sample Azure AD PowerShell script to manually apply updates to applicable groups. Download the script here. General documentation to run Azure AD PowerShell is here.
 
- 
- 
-Change label settings related to Office 365 Groups   
-Once the label is created, published, and used across several groups then it’s advisable to not change the label’s setting pertaining to Office 365 Groups. In case this change is must for a given label and if it is desired that all existing groups using the label must follow this new settings then it is recommended to follow the sample Azure AD PowerShell script to manually apply updates to applicable groups. Download the script here. General documentation to run Azure AD PowerShell is here. 
- 
 Support for the new sensitivity labels for groups 
 For this preview, the following services support the new sensitivity labels for groups: 
-SharePoint 
-Outlook Web App 
-Teams 
-SharePoint admin center 
-Azure AD admin center 
-Security & Compliance admin center 
+SharePoint
+Outlook Web App
+Teams
+SharePoint admin center
+Azure AD admin center
+Security & Compliance admin center
 The following apps and services can’t be used to create Office 365 groups with the new sensitivity labels: 
 
-Outlook for the Mac 
+Outlook for the Mac
 Outlook mobile  
-Outlook desktop app for Windows 
+Outlook desktop for Windows
 Forms  
 Dynamics 365  
 Yammer  
@@ -104,23 +103,23 @@ Project
 PowerBI  
 Teams admin center  
 Microsoft 365 admin center  
-Exchange admin center 
- 
+Exchange admin center
+
 We’re working to make all these apps compatible with new sensitivity labels.  
-When is GA expected? 
+When is GA expected?
 We expect to make this open for general availability around March 2020.  
-Do I need make any changes when I move from the preview to GA? 
+Do I need make any changes when I move from the preview to GA?
 You should not need to make any changes to your labels or groups that you have created during preview period 
- 
-What happens to AAD labels and Groups that used them before preview? 
+
+What happens to AAD labels and Groups that used them before preview?
 You have few different routes to take.  
-During Public Preview 
+During Public Preview
 <Sanjoyan to add> 
- 
+
 After GA 
 <Sanjoyan to add> 
- 
-Refer to following documentation to learn more 
-Teams 
-AAD 
+
+Refer to following documentation to learn more
+Teams
+AAD
 Groups
