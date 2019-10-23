@@ -90,7 +90,7 @@ Once the trainable classifier has processed enough positive samples to build a p
 
 17. Choose `Tested items to review` tab to review items.
 
-18. Micrososft 365 will present 30 items at a time. Review them and in the `We predict this item is "Relevant". Do you agree?` box choose either `Yes` or `No` or `Not sure, skip to next item`. Model accuracy is automatically updated after every 30 items.
+18. Microsoft 365 will present 30 items at a time. Review them and in the `We predict this item is "Relevant". Do you agree?` box choose either `Yes` or `No` or `Not sure, skip to next item`. Model accuracy is automatically updated after every 30 items.
 
 ![review items box](media/classifier-trainable-review-detail.png)
 
