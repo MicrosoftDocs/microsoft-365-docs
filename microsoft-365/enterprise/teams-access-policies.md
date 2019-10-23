@@ -74,13 +74,13 @@ For reference, the following diagram illustrates the services Teams relies on. F
 
 ## Enabling guest and external access for Teams
 
-In Azure AD, guest and external users are the same. The user type for both of these is Guest. Guest users are B2B users. Microsoft Teams differentiates between guest users and external users and it's important to understand how each of these are treated in Teams.
+In Azure AD, guest and external users are the same. The user type for both of these is Guest. Guest users are B2B users. Microsoft Teams differentiates between guest users and external users in the app. While it's important to understand how each of these are treated in Teams, both of these types of users are B2B users in Azure AD and the recommended policies for B2B users applies to both.
 
-### Guest Access
+### Guest Access in Teams
 
 In addition to the policies for users who are internal to your business or organization, administrators may enable guest access to allow, on a user-by-user basis, people who are external to your business or organization to access Teams resources and interact with internal people for things like group conversations, chat, and meetings. You can learn more about Guest Access at the following link: [Teams guest access](https://docs.microsoft.com/en-us/microsoftteams/guest-access)
 
-### External Access
+### External Access in Teams
 
 External access is sometimes confused with guest access, so it's important to be clear that these two non-internal access mechanisms are actually quite different. While guest access occurs on a per-user basis (you add one user at a time), when an administrator enables external access it allows you to add all the users of an external domain at the same time to Teams. However those external users have less access and functionality than an individual who's been added via guest access would have. External access users can chat with your internal users via Teams.
 
