@@ -128,7 +128,7 @@ Yes. The annual ISO/IEC 27001 certification process for the Microsoft Cloud Infr
 
 **Where do I start my organization’s own ISO/IEC 27001 compliance effort?**
 
-Adopting ISO/IEC 27001 is a strategic commitment. As a starting point, consult the [ISO/IEC 27000 Directory](/www.27000.org/index.htm).
+Adopting ISO/IEC 27001 is a strategic commitment. As a starting point, consult the [ISO/IEC 27000 Directory](http://www.27000.org/index.htm).
 
 **Can I use the ISO/IEC 27001 compliance of Microsoft services in my organization’s certification?**
 
