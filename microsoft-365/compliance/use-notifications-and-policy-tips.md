@@ -203,14 +203,14 @@ If the policy tips are configured to allow override, you can choose **Show Detai
   
 Note that when you add sensitive information to an email, there may be latency between when the sensitive information is added and when the policy tip appears.
 
-### Outlook 2013 and later supports showing policy tips for only some conditions
+### Outlook 2013 and later supports showing policy tips for only some conditions or exceptions
 
 Currently, Outlook 2013 and later supports showing policy tips only for these conditions:
 
 - Content contains
 - Content is shared
 
-We're currently working on support for showing policy tips for additional conditions. These include:
+Policy Tips are not currently supported for the following conditions or exceptions:
 
 - Any email attachment's content could not be scanned
 - Any email attachment's content didn't complete scanning
@@ -220,7 +220,8 @@ We're currently working on support for showing policy tips for additional condit
 - Recipient domain is
 - Sender IP address is
 
-Note that all of these conditions work in Outlook, where they will match content and enforce protective actions on content. But showing policy tips to users is not yet supported.
+> [!NOTE]
+> DLP policy will match content and enforce protective actions on content in Outlook, but policy tips will only show in the supported scenarios.
   
 ### Policy tips in the Exchange admin center vs. the Office 365 Security &amp; Compliance Center
 
