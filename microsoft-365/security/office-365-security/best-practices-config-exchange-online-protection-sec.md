@@ -1,5 +1,5 @@
 ---
-title: "Configuration best practices for EOP and Office 365 ATP security, best practices, settings, recommendations, Sender Policy Framework, Domain-based Message Reporting and Conformance, DomainKeys Identified Mail, steps, how does it work,"
+title: "Best practices for EOP and Office 365 ATP security, best practices, settings, recommendations, Sender Policy Framework, Domain-based Message Reporting and Conformance, DomainKeys Identified Mail, steps, how does it work,"
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -16,28 +16,11 @@ ms.collection:
 description: "What are best practices for Exchange Online Protection (EOP) and Advanced Threat Protection (ATP) security settings? What's recommended? What should be used aggressively? And what extras do you get if you also use Advanced Threat Protection (ATP)?"
 ---
 
-# Best-practices for configuring EOP and Office 365 ATP security
+# Best-practices for EOP and Office 365 ATP security
 
 Exchange Online Protection (EOP) is the core of security for E3 Office 365 subscriptions. It's optional, and even encouraged, for E3 customers to buy a subscription to Office 365 Advanced Threat Protection (ATP), ex. ATP Plan 1 or ATP Plan 2, in order to leverage the added security available in E5 Office 365 subscriptions.
 
 We'll discuss two security levels, called Recommended and Aggressive in EOP, covering comments on how to use features at both levels of security. The sections begin with email validation and authentication, which involves some tinkering outside of Office 365, in DNS, and secures outbound mail, making tenants good citizens to the resources they mail. These settings best protect your subscription.
-
-
-## Email Authentication
-
-SPF, DKIM, and DMARC are acronyms for Sender Policy Framework, DomainKeys Identified Mail, and Domain-based Message Authentication, Reporting, and Conformance (quite a mouthful), and are the basis of email authentication and validation.
-
-These methods handle outbound email from Office 365, and help destination systems trust that email from your domain is valid. They're the only best practices we'll be covering that involve configurations to be made *outside* of Office 365, in your DNS. For specific configuration steps, see the [Email validation and authentication](https://docs.microsoft.com/office365/securitycompliance/how-office-365-uses-spf-to-prevent-spoofing) section in the Security and Compliance table of contents.
-
-
-|Security feature name  |Recommended |Aggressive  |Comment  |
-|---------|---------|---------|---------|
-|[Create SPF records](https://docs.microsoft.com/office365/securitycompliance/set-up-spf-in-office-365-to-help-prevent-spoofing)    | Yes        |    Yes     |   -      |
-|[Configure DKIM Signing for Domains](https://docs.microsoft.com/office365/securitycompliance/use-dkim-to-validate-outbound-email)     |  Yes       |    Yes     |  -       |
-|[Implement DMARC with reject or quarantine action](https://docs.microsoft.com/office365/securitycompliance/use-dmarc-to-validate-email)     |   Yes      |     Yes    |   Use action=none for Recommended, and action=reject for Aggressive.     |
-
-> [!IMPORTANT]
-> To work with security roles and permissions, be sure you have the right role or roles in Office 365 or the Security and Compliance Center. If you are a *Security Administrator* in Azure Active Directory, a *Global Administrator* in Office 365, or an *Exchange Online Organizational Manager* in Exchange Online/Exchange Online Powershell, you're ready to go.
 
 ## Anti-Spam, Anti-Malware, and Anti-Phishing
 
@@ -84,12 +67,12 @@ Recommended for **OFF** in both Recommended and Aggressive Levels:
 |MarkAsSpamSensitiveWordList|
 |MarkAsSpamFromAddressAuthFail|
 |MarkAsSpamNdrBackscatter|
+| MarkAsSpamSpfRecordHardFail |
 
 Recommended for **ON** in both Recommended and Aggressive Levels:
 
 |Security feature name  |
 |---------|
-|MarkAsSpamSpfRecordHardFail|
 |MarkAsSpamBulkMail|
 
 ### Anti-Malware
@@ -142,9 +125,9 @@ Phishing is an attempt to masquerade as reputable company or person for the purp
 
 If you've added an Office 365 ATP subscription to your EOP, be sure to set the following configurations.
 
-|Security feature name  |Recommended |Aggressive  |Comment  |
+| Security feature name | Recommended | Aggressive | Comment |
 |---------|---------|---------|---------|
-|Set Advanced phishing threshold to | 2 | 4 | - |
+| Advanced phishing threshold | 2 | 3 | - |
 |Enable Anti-impersonation protection | Yes | Yes | - |
 |Enable Mailbox intelligence in Anti-Impersonation policies | Yes | Yes | - |
 |Enable Mailbox intelligence based Impersonation protection | Yes | Yes | - |
@@ -201,3 +184,19 @@ Security feature name  |Recommended |Aggressive  |Comment  |
 |Configure Sender Policy Framework to hard-fail |-all |-all |- |
 |Use Spoof Intelligence to whitelist senders whenever possible |Yes |Yes |- |
 |Directory-Based Edge Blocking (DBEB) |Enabled |Enabled |Domain Type = Authoritative |
+
+## Email Authentication
+
+SPF, DKIM, and DMARC are acronyms for Sender Policy Framework, DomainKeys Identified Mail, and Domain-based Message Authentication, Reporting, and Conformance (quite a mouthful), and are the basis of email authentication and validation.
+
+These methods handle outbound email from Office 365, and help destination systems trust that email from your domain is valid. They're the only best practices we'll be covering that involve configurations to be made *outside* of Office 365, in your DNS. For specific configuration steps, see the [Email validation and authentication](https://docs.microsoft.com/office365/securitycompliance/how-office-365-uses-spf-to-prevent-spoofing) section in the Security and Compliance table of contents.
+
+
+|Security feature name  |Recommended |Aggressive  |Comment  |
+|---------|---------|---------|---------|
+|[Create SPF records](https://docs.microsoft.com/office365/securitycompliance/set-up-spf-in-office-365-to-help-prevent-spoofing)    | Yes        |    Yes     |   -      |
+|[Configure DKIM Signing for Domains](https://docs.microsoft.com/office365/securitycompliance/use-dkim-to-validate-outbound-email)     |  Yes       |    Yes     |  -       |
+|[Implement DMARC with reject or quarantine action](https://docs.microsoft.com/office365/securitycompliance/use-dmarc-to-validate-email)     |   Yes      |     Yes    |   Use action=none for Recommended, and action=reject for Aggressive.     |
+
+> [!IMPORTANT]
+> To work with security roles and permissions, be sure you have the right role or roles in Office 365 or the Security and Compliance Center. If you are a *Security Administrator* in Azure Active Directory, a *Global Administrator* in Office 365, or an *Exchange Online Organizational Manager* in Exchange Online/Exchange Online Powershell, you're ready to go.
