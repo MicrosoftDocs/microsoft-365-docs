@@ -27,9 +27,9 @@ Secure Score helps organizations do the following:
 * Improve their security posture by providing discoverability, visibility, guidance, and control.  
 * Compare with benchmarks and establish key performance indicators (KPIs).
 
-Secure Score gives organizations access to robust visualizations of metrics and trends, integration with other Microsoft products, score comparison with similar organizations, and much more. The score can also reflect when third-party solutions have addressed recommended actions.
+Organizations gain access to robust visualizations of metrics and trends, integration with other Microsoft products, score comparison with similar organizations, and much more. The score can also reflect when third-party solutions have addressed recommended actions.
 
-Additionally, you can access your recommendations and score through the [Microsoft Graph API](https://docs.microsoft.com/graph/api/resources/securescores?view=graph-rest-beta).
+Additionally, you can access your recommendations and score through the [Microsoft Graph API](https://www.microsoft.com/security/partnerships/graph-security-api). Learn about the [Secure Score resource type](https://docs.microsoft.com/graph/api/resources/securescore?view=graph-rest-1.0).
 
 ## How it works
 
@@ -40,6 +40,10 @@ Your score is updated in real time to reflect the information presented in the v
 ### How improvement actions are scored
 
 Most are scored in a binary fashion — if you implement the improvement action, like creating a new policy or turning on a specific setting, you get 100% of the points . For other improvement actions, points are given as a percentage of the total configuration. For example, if the improvement action states you get 30 points by protecting all your users with multi-factor authentication and you only have 5 of 100 total users protected, you would be given a partial score of around 2 points (5 protected / 100 total * 30 max pts = 2 pts partial score).
+
+### Products included in Secure Score
+
+Currently there are recommendations for Office 365 (including SharePoint Online, Exchange Online, OneDrive for Business, Microsoft Information Protection, and more), Azure AD, Intune, and Cloud App Security. Recommendations for other security products, like Azure ATP and Microsoft Defender ATP, are coming soon. The recommendations will not cover all the attack surfaces associated with each product, but they are a good baseline. You can also mark the improvement actions as covered by a third party. 
 
 ## Required permissions
 
@@ -72,19 +76,17 @@ To access the Graph API, you need to have one of the following scopes in additio
 * SecurityEvents.Read.All (for read-only role)
 * SecurityEvents.ReadWrite.All (for read and write role)
 
-## Rich experiences & security recommendations
+## Gain visibility into your security posture
 
-In Microsoft Secure Score, there are recommendations from Office 365, Azure AD, Intune, and Cloud App Security, with recommendations from Azure Security Center and Microsoft Defender Security Center coming soon.
-
-To help you the information you need more quickly, Microsoft recommendations are organized into groups:
+To help you the information you need more quickly, Microsoft improvement actions are organized into groups:
 
 * Identity (Azure AD accounts and roles)
 * Data  (Office 365 documents)
-* Device (Microsoft Defender ATP devices)
+* Device (Microsoft Defender ATP devices, coming soon)
 * App (email and cloud apps)
 * Infrastructure (Azure resources)
 
-In the Microsoft Secure Score overview page, you can see how points are split between these groups and what points are available. The overview page is also the place to get an all-up view of the total score, historical trend of your secure score with benchmark comparisons, and prioritized improvement actions that can be taken to improve your score. You can use this data to act and make big differences in your security posture.  
+In the Microsoft Secure Score overview page, you can see how points are split between these groups and what points are available. The overview page is also the place to get an all-up view of the total score, historical trend of your secure score with benchmark comparisons, and prioritized improvement actions that can be taken to improve your score.
 
 ![Secure Score homepage](../media/secure-score/homepage-original.png)
 *Figure 1: Microsoft Secure Score overview page*
