@@ -21,6 +21,7 @@ If you have any difficulty with Enterprise State Roaming, contact [support](../w
 | | |
 | --- | --- |
 | ![done](images/checklistdone.png) | [Set up Microsoft Managed Desktop devices](set-up-devices.md) |
+| ![done](images/checklistdone.png) | [Get your users ready to use devices](get-started-devices.md) |
 | ![done](images/checklistdone.png) | [Assign licenses](assign-licenses.md) |
 | ![done](images/checklistdone.png) | [Adjust conditional access](conditional-access.md) |
 | ![to do](images/checklistbox.gif)| Enable Enterprise State Roaming (this topic) |

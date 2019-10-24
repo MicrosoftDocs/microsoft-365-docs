@@ -28,6 +28,7 @@ If you have any difficulty with conditional access, contact [support](../working
 | | |
 | --- | --- |
 | ![done](images/checklistdone.png) | [Set up Microsoft Managed Desktop devices](set-up-devices.md) |
+| ![done](images/checklistdone.png) | [Get your users ready to use devices](get-started-devices.md) |
 | ![done](images/checklistdone.png) | [Assign licenses](assign-licenses.md)|
 | ![to do](images/checklistbox.gif) | Adjust conditional access (this topic) |
 | ![to do](images/checklistbox.gif)| [Enable Enterprise State Roaming](enterprise-state-roaming.md) |

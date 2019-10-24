@@ -22,6 +22,7 @@ If you have any difficulty with license assignment, contact [support](../working
 | | |
 | --- | --- |
 | ![done](images/checklistdone.png) | [Set up Microsoft Managed Desktop devices](set-up-devices.md) |
+| ![done](images/checklistdone.png) | [Get your users ready to use devices](get-started-devices.md) |
 | ![to do](images/checklistbox.gif) | Assign licenses (this topic) |
 | ![to do](images/checklistbox.gif) | [Adjust conditional access](conditional-access.md) |
 | ![to do](images/checklistbox.gif)| [Enable Enterprise State Roaming](enterprise-state-roaming.md) |

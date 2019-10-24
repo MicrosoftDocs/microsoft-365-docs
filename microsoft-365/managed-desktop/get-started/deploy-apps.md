@@ -96,6 +96,18 @@ Add your users to these groups to either make the app availabe, install the app,
 4. For the specific app, select an assignment type (Available, Required, Uninstall) and assign the appropriate group.
 5. In the Assign Apps pane, select **OK**.
 
+## Steps to get started with Microsoft Managed Desktop
+
+| | |
+| --- | --- |
+| ![done](images/checklistdone.png) | [Set up Microsoft Managed Desktop devices](set-up-devices.md) |
+| ![done](images/checklistdone.png) | [Get your users ready to use devices](get-started-devices.md) |
+| ![done](images/checklistdone.png) | [Assign licenses](assign-licenses.md) |
+| ![done](images/checklistdone.png) | [Adjust conditional access](conditional-access.md) |
+| ![done](images/checklistdone.png) | [Enable Enterprise State Roaming](enterprise-state-roaming.md) |
+| ![to do](images/checklistbox.gif) | Deploy apps to Microsoft Managed Desktop devices (this topic) |
+
+
 <!--# Preparing apps for Microsoft Managed Desktop
 
 This topic is the target for 2 "Learn more" links in the Admin Portal (aka.ms/app-overview;app-package); also target for link from Online resources (aka.ms/app-overviewmmd-app-prep) do not delete.
