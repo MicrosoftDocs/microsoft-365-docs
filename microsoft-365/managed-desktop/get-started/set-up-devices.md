@@ -30,3 +30,14 @@ We recommend working with one of our approved device partners. You can work with
     - [Register existing devices yourself](register-reused-devices-self.md)
     - Work with a partner to register the devices
 3. [Get your users ready](get-started-devices.md) to use Microsoft Managed Desktop devices
+
+## Steps to get started with Microsoft Managed Desktop
+
+| | |
+| --- | --- |
+| ![to do](images/checklistbox.gif) | [Set up Microsoft Managed Desktop devices](set-up-devices.md) (this topic) |
+| ![to do](images/checklistbox.gif) | [Get your users ready to use devices](get-started-devices.md)
+| ![to do](images/checklistbox.gif)| [Assign licenses](assign-licenses.md)|
+| ![to do](images/checklistbox.gif) | [Adjust conditional access](conditional-access.md) |
+| ![to do](images/checklistbox.gif)| [Enable Enterprise State Roaming](enterprise-state-roaming.md) |
+| ![to do](images/checklistbox.gif) | [Deploy apps to Microsoft Managed Desktop devices](deploy-apps.md) |
