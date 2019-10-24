@@ -15,7 +15,7 @@ If you use [conditional access](https://docs.microsoft.com/azure/active-director
 To do this, follow these steps:
 
 1. Refer to the "Rollback steps" section of [How To: Plan your Conditional Access deployment in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/conditional-access/plan-conditional-access#rollback-steps).
-2. Follow the steps there to exclude the *Modern Workplace Service Accounts* group.
+2. Follow the steps there to exclude the *Modern Workplace Service Accounts* group for all policies.
 
 
 If you have any difficulty with conditional access, contact [support](../working-with-managed-desktop/admin-support.md).
