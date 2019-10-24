@@ -93,7 +93,7 @@ While all Azure Active Directory users in eligible organizations are allowed to 
 
 ### Why are self-service purchases not subject to admin approval?
 
-We’re being responsive to our customers who have requested this capability while allowing admins to maintain control over the services and respecting data governance and compliance. To learn more, see Manage Azure AD service principals.
+We’re being responsive to our customers who have requested this capability while allowing admins to maintain control over the services and respecting data governance and compliance. To learn more, see [Manage Azure AD service principals](https://docs.microsoft.com/en-us/previous-versions/azure/dn919672(v=azure.100)?redirectedfrom=MSDN#manage-service-principals).
 
 ### How is Microsoft respecting data governance and compliance by enabling self-service purchase?
 
