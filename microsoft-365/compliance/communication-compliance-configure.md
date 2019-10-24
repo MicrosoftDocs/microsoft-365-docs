@@ -39,13 +39,13 @@ Follow these steps to set up and use communication compliance in your Microsoft 
 
     Add yourself to the Supervisory Review role group so you can set up policies. Anyone who has this role assigned can access the **Communication compliance** page in the Microsoft 365 compliance center. If reviewable email is hosted on Exchange Online, each reviewer must have [remote PowerShell access to Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell).
 
-- **Step 3 (optional)**: [Create custom sensitive information types and custom keyword dictionaries](#step-3-create-custom-sensitive-information-types-and-custom-keyword-dictionaries-optional)
+- **Step 3 (required)**: [Set up a communication compliance policy](#step-3-set-up-a-communication-compliance-policy-required)
 
-    You'll pick from existing custom sensitive information types or custom keyword dictionaries in the communication compliance policy wizard, you can create these items before running the wizard if needed. If desired, you can also create new sensitive information types from within the communication compliance policy wizard.
+    You create communication compliance policies in the Microsoft 365 compliance center. These policies define which communications are subject to review in your organization and specifies who performs reviews. Communications include email, Microsoft Teams, Skype for Business, and 3rd-party platform communications (such as Facebook, Twitter, etc.).
 
-- **Step 4 (required)**: [Set up a communication compliance policy](#step-4-set-up-a-communication-compliance-policy-required)
+- **Step 4 (optional)**: [Create employee notice templates](#step-4-create-employee-notices-optional)
 
-    You create communication compliance policies in the Microsoft 365 Compliance Center. These policies define which communications are subject to review in your organization and specifies who performs reviews. Communications include email and Microsoft Teams communications, and 3rd-party platform communications (such as Facebook, Twitter, etc.)
+    Create custom notice templates to send email notifications to employees as a remediation option for policy matches.
 
 - **Step 5 (optional)**: [Test your communication compliance policy](#step-5-test-your-communication-compliance-policy-optional)
 
@@ -126,28 +126,7 @@ To do this, you can either add yourself as a member of the Supervisory Review ro
 
 For more information about role groups and permissions, see [Permissions in the Compliance Center](../security/office-365-security/protect-against-threats.md).
 
-## Step 3: Create custom sensitive information types and custom keyword dictionaries (optional)
-
-In order to pick from existing custom sensitive information types or custom keyword dictionaries in the communication compliance policy wizard, you can create these items if needed. If desired, you can also create new sensitive information types from within the communication compliance policy wizard.
-
-### Create custom keyword dictionary/lexicon (optional)
-
-Use a text editor (like Notepad), to create a file that includes the keyword terms you'd like to monitor in a communication compliance policy. Make sure that each term is on a separate line and save the file in the **Unicode/UTF-16 (Little Endian)** format.
-
-### Create custom sensitive information types
-
-1. Create a new sensitive information type and add your custom dictionary in the Office 365 Security & Compliance Center. Navigate to **Classifications** \> **Sensitive info types** and follow the steps in the **New sensitive info type wizard**. Here you will:
-
-    - Define a name and description for the sensitive info type
-    - Define the proximity, confidence level, and primary pattern elements
-    - Import your custom dictionary as a requirement for the matching element
-    - Review your selections and create the sensitive info type
-
-    For more detailed information, see [Create a custom sensitive information type](create-a-custom-sensitive-information-type.md) and [Create a keyword dictionary](create-a-keyword-dictionary.md)
-
-    After the custom dictionary/lexicon is created, you can view the configured keywords with the [Get-DlpKeywordDictionary](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpkeyworddictionary) cmdlet or add and remove terms using the [Set-DlpKeywordDictionary](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/set-dlpkeyworddictionary) cmdlet.
-
-## Step 4: Create a communication compliance policy (required)
+## Step 3: Create a communication compliance policy (required)
   
 1. Sign into [https://compliance.microsoft.com](https://compliance.microsoft.com) using credentials for an admin account in your Microsoft 365 organization.
 
@@ -169,13 +148,13 @@ Use a text editor (like Notepad), to create a file that includes the keyword ter
     - Give the policy a name and description.
     - Choose the users or groups to supervise, including choosing users or groups you'd like to exclude.
     - Define the communication compliance policy [conditions](communication-compliance-feature-reference.md#ConditionalSettings). You can choose from message address, keyword, file types, and size match conditions.
-    - Choose if you'd like to include sensitive information types. This is where you can select default and custom sensitive info types.
+    - Choose if you'd like to include sensitive information types. This is where you can select default and custom sensitive info types. You'll pick from existing custom sensitive information types or custom keyword dictionaries in the communication compliance policy wizard, you can create these items before running the wizard if needed. If desired, you can also create new sensitive information types from within the communication compliance policy wizard.
     - Choose if you'd like to enable the offensive language model. This detects inappropriate language sent or received in the body of email messages.
     - Define the percentage of communications to review.
     - Choose the reviewers for the policy. Reviewers can be individual users or [mail-enabled security groups](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups#create-a-mail-enabled-security-group). All reviewers must have mailboxes hosted on Exchange Online.
     - Review your policy selections and create the policy.
 
-## Step 5: Create employee notices (optional)
+## Step 4: Create employee notice templates (optional)
 
 If you want to have the option of responding to a policy alert by sending a reminder notice to the associated employee, you'll need to create at least one notice template in your organization. The notice template fields are editable prior to sending as part of the alert remediation process and creating a customized notice template for each communication compliance policy is recommended.
 
@@ -183,9 +162,9 @@ If you want to have the option of responding to a policy alert by sending a remi
 
 2. In the Microsoft 365 compliance center, go to **Communication compliance**.
 
-3. Select the **Notices** tab and then select **Create notice**.
+3. Select the **Notice templates** tab and then select **Create notice template**.
 
-4. In the **Notices** template, complete the following fields:
+4. On the **Modify a notice template** page, complete the following fields:
 
     - Notice template name (required)
     - Send from (required)
@@ -195,7 +174,7 @@ If you want to have the option of responding to a policy alert by sending a remi
 
 5. Select **Save** to create and save the notice template.
 
-## Step 6: Test your communication compliance policy (optional)
+## Step 5: Test your communication compliance policy (optional)
 
 After you create a communication compliance policy, it's a good idea to test to make sure that the conditions you defined are being properly enforced by the policy. You may also want to [test your data loss prevention (DLP) policies](create-test-tune-dlp-policy.md) if your communication compliance policies include sensitive information types. Follow these steps to test your communication compliance policy:
 
@@ -203,6 +182,6 @@ After you create a communication compliance policy, it's a good idea to test to 
 2. Send an email or Microsoft Teams chat that meets the criteria you've defined in the communication compliance policy. This can be a keyword, attachment size, domain, etc. Make sure that you determine if your configured conditional settings in the policy are too restrictive or too lenient.
 
     > [!NOTE]
-    > Emails subject to defined policies are processed in near real-time and can be tested immediately after the policy is configured. Chats in Microsoft Teams can take up to 24 hours to fully process in a policy. 
+    > Emails subject to defined policies are processed in near real-time and can be tested immediately after the policy is configured. Chats in Microsoft Teams can take up to 24 hours to fully process in a policy.
 
-3. Log into Microsoft 365 as a reviewer designated in the communication compliance policy. Navigate to **Communication compliance** > **Policies** > *Your Custom Policy* > **Open** to view the report for the policy.
+3. Log into Microsoft 365 as a reviewer designated in the communication compliance policy. Navigate to **Communication compliance** > **Policies** > *Your Custom Policy* to view the alerts for the policy.

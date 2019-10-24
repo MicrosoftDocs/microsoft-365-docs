@@ -60,7 +60,7 @@ With communication compliance policies, you can choose to scan messages in one o
 
 - **Exchange email:** Mailboxes hosted on Exchange Online as part of your Microsoft 365 or Office 365 subscription are all eligible for message scanning. Emails and attachments matching communication compliance policy conditions are instantly available in communication compliance reports. Supported attachment types for communication compliance are the same as the [file types supported for Exchange mail flow rule content inspections](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection).
 
-- **Microsoft Teams:** Chat communications and associated attachments in both public and private Microsoft Teams channels and individual chats can be supervised. Teams chats matching communication compliance policy conditions are processed once every 24 hours and then are available in communication compliance reports. Use the following group management configurations to supervise individual user chats and channel communications in Teams:
+- **Microsoft Teams:** Chat communications and associated attachments in both public and private Microsoft Teams channels and individual chats can be scanned. Teams chats matching communication compliance policy conditions are processed once every 24 hours and then are available in communication compliance reports. Use the following group management configurations to supervise individual user chats and channel communications in Teams:
 
     - **For Teams chat communications:** Assign individual users or assign a [distribution group](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) to the communication compliance policy. This is for 1-to-1 or 1-to-many user/chat relationships.
     - **For Teams Channel communications:** Assign every Microsoft Team channel or Office 365 group you want to scan that contains a specific user to the communication compliance policy. If you add the same user to other Microsoft Teams channels or Office 365 groups, be sure to add these new channels and groups to the communication compliance policy.
@@ -105,9 +105,9 @@ Configure custom keyword dictionaries (or lexicons) to provide simple management
 
 ### Classifiers
 
-Trainable classifiers scan sent or received email messages in your organization for different types of compliance issues. Classifiers use a combination of artificial intelligence and keywords to identify language in email messages likely to violate anti-harassment policies. Classifiers currently support English keywords and scans the body of email messages.
+Built-in classifiers scan sent or received messages across all communication channels in your organization for different types of compliance issues. Classifiers use a combination of artificial intelligence and keywords to identify language in messages likely to violate anti-harassment policies. Classifiers currently support only English keywords in messages.
 
-The current communication compliance classifiers scans email for terms and sentiment for the following types of language:
+Communication compliance built-in classifiers scan communications for terms and sentiment for the following types of language:
 
 - **Threat**: Scans for threats to commit violence or physical harm to a person or property.
 - **Harassment**: Scans for offensive conduct targeting people regarding race, color, religion, national origin
@@ -149,9 +149,7 @@ To scan both email messages and attachments for the same keywords, create a [dat
 If you enter multiple conditions, Microsoft 365 uses all the conditions together to determine when to apply the supervision policy to communication items. When you set up multiple conditions, all conditions must be met for the policy to apply, unless you enter an exception. For example, you need a policy that applies if a message contains the word "trade", and is larger than 2 MB. However, if the message also contains the words "Approved by Contoso financial", the policy should not apply. In this example, the three conditions would be defined as follows:
   
 - **Message contains any of these words**, with the keywords "trade"
-
 - **Message size is larger than**, with the value 2 MB
-
 - **Message contains none of these words**, with the keywords "Approved by Contoso financial team"
 
 ### Review percentage
@@ -160,17 +158,37 @@ If you want to reduce the amount of content to review, you can specify a percent
 
 ## Notices
 
-You can create notice templates if you want to send users an email reminder notice for policy matches as part of the issue resolution process. Notices can only be sent to the employee email address associated with the policy match that generated the specific alert for remediation. Notices templates are custom email templates where you can define the following message fields:
+You can create notice templates if you want to send users an email reminder notice for policy matches as part of the issue resolution process. Notices can only be sent to the employee email address associated with the policy match that generated the specific alert for remediation. When selecting a notice template to apply to a policy violation as part of the remediation workflow, you can choose to accept the field values defined in the template or overwrite the fields as needed.
+
+Notices templates are custom email templates where you can define the following message fields:
 
 |**Field**|**Required**| **Details** |
 |:-----|:-----|:-----|
-|**Template name** | Yes | Friendly name for the notice template that you'll select in the notify workflow during remediation, supports up to ### text characters |
-| **Sender address** | Yes | The address of one or more users or groups that sends the message to the employee with a policy match, selected from the Active Directory for your subscription |
-| **CC and BCC addresses** | No | Optional users or groups to be notified of the policy match, selected from the Active Directory for your subscription |
-| **Subject** | Yes | Information that appears in the subject line of the message, supports up to ### text characters |
-| **Message body** | Yes | Information that appears in the message body, supports up to ### text or HTML values |
+|**Template name** | Yes | Friendly name for the notice template that you'll select in the notify workflow during remediation, supports text characters. |
+| **Sender address** | Yes | The address of one or more users or groups that sends the message to the employee with a policy match, selected from the Active Directory for your subscription. |
+| **CC and BCC addresses** | No | Optional users or groups to be notified of the policy match, selected from the Active Directory for your subscription. |
+| **Subject** | Yes | Information that appears in the subject line of the message, supports text characters. |
+| **Message body** | Yes | Information that appears in the message body, supports text or HTML values. |
 
-When selecting a notice template to apply to a policy violation as part of the remediation workflow, you can choose to accept the field values defined in the template or overwrite the fields as needed.
+### HTML for notices
+
+If you'd like to create more than a simple text-based email message for notifications, you can create a more detailed message by using HTML in the message body field of a notice template. The following example provides the message body format for a basic HTML-based email notification template:
+
+```
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Action Required: Contoso Employee Code of Conduct Policy Training</h2>
+<p>A recent message you've sent has generated a policy alert for the Contoso Employee <a href='http://www.contoso.com'>Code of Conduct Policy</a>.</p>
+<p>You are required to attend the Contoso Employee Code of Conduct <a href='http://www.contoso.com'>training</a> within the next 14 days. Please contact <a href='mailto:hr@contoso.com'>Human Resources</a> with any questions about this training request.</p>
+<p>Thank you,</p>
+<p><em>Human Resources</em></p>
+</body>
+</html>
+```
+
+> [!NOTE]
+> HTML href attribute implementation in the Communication compliance notification templates currently support only single quotation marks instead of double quotation marks for URL references.
 
 ## Filters
 

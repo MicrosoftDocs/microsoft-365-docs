@@ -34,7 +34,7 @@ To learn more about upcoming communication compliance feature improvements and a
 
 ## Scenarios for communication compliance
 
-Communication compliance policies can assist with reviewing messages in your organization in several areas:
+Communication compliance policies can assist with reviewing messages in your organization in several important compliance areas:
 
 - **Corporate policies**
 
@@ -50,15 +50,38 @@ Communication compliance policies can assist with reviewing messages in your org
 
 ## New enhancements
 
-Communication compliance in Microsoft 365 builds on the features of [Supervision policies in Office 365](supervision-policies.md) with the following enhancements:
+Communication compliance in Microsoft 365 builds on the features of [Supervision policies in Office 365](supervision-policies.md) with several new enhancements:
 
-- **Policy templates**: Policy creation is now quicker with new anti-harassment and offensive language, sensitive information, and regulatory compliance templates.
+- Intelligent customizable playbooks​
+- Flexible remediation workflows
+- Actionable insights
+
+### Intelligent customizable playbooks
+
+Intelligent customizable playbooks in Communication compliance allow you to leverage machine learning to intelligently detect communication violations in your organization.
+
+- **Customizable pre-configured templates**: New policy templates help address the most common communications risks. Policy creation is now quicker with pre-defined anti-harassment and offensive language, sensitive information, and regulatory compliance templates.
+- **New machine learning support**: Built-in classifiers help reduce false positives in scanned messages, saving reviewers time during the investigation and remediation process.
+- Build your own machine learning model to detect violations unique to your organization
+
+### Flexible remediation workflows​
+
+Built-in remediation workflows allow you to quickly identify and take action on messages with policy matches in your organization. The following new features increase efficiency for investigation and remediation activities:
+
 - **Conversation threading**: Messages are now visually grouped by original message and all associated reply messages, giving you better context during investigation and remediation actions.
 - **Keyword highlighting**: Terms matching policy conditions are highlighted in the message text view to help reviewers quickly locate and remediate policy alerts.
 - **Exact and near duplicate detection**: In addition to scanning for exact terms matching communication compliance polices, near duplicate detection groups textually similar terms and messages together to help speed up your review process.
-- **Improved filters**: Investigate and remediate policy alerts faster with filters for alert state, severity, age, or user.
+- ​**Improved filters**: Investigate and remediate policy alerts faster with message filters for several fields, including sender, recipient, date, domains, and many more.
 - **Improved message views**: Investigation and remediation actions are now quicker with new message source, text, and annotation views.
-- **
+- **User history view**: Historical view of user message activities, such as past notifications and escalations for policy matches, now provide reviewers with more context during the remediation workflow process.
+
+### Actionable insights
+
+New interactive dashboards for alerts, policy matches, actions, and trends help you quickly view the status of pending and resolved alerts in your organization.
+
+- **Proactive intelligent alerts**: Alerts for policy matches requiring immediate attention include new dashboards for pending items sorted by severity and new automatic email notification sent to designated reviewers.
+- **Interactive dashboards**: New dashboards display policy matches, pending and resolved actions, and trends by users and policy.
+- **Auditing support**: A full log of policy and review activities are easily exported to help support audit review requests.
 
 ## Integration with Microsoft 365 services
 
@@ -67,7 +90,7 @@ Communication compliance policies scan and capture messages across several commu
 - **Exchange Online:** All mailboxes hosted on Exchange Online in your Microsoft 365 organization are eligible for scanning. Emails and attachments matching communication compliance policy conditions are instantly available for monitoring and in supervision reports. Exchange Online is now an optional source channel and is no longer required in communication compliance policies.
 - **Microsoft Teams:** Chat communications and associated attachments for public and private Microsoft Teams channels and individual chats are supported in communication compliance as a standalone channel source or with other Microsoft 365 services. Policies now automatically scan all Microsoft Teams channels and teams for specific users defined in a policy, eliminating the need to keep a separate mapping list for Microsoft Teams assignments.
 - **Skype for Business Online:** Communication compliance policies support scanning chat communications and associated attachments in Skype for Business Online.
-- **Third-party sources:** You can scan messages from third-party sources for data imported into mailboxes in your Microsoft 365 organization. Communication compliance supports connections to several popular platforms, including Instant Bloomberg, Facebook, Twitter, and others.
+- **Third-party sources:** You can scan messages from [third-party sources](archiving-third-party-data.md) for data imported into mailboxes in your Microsoft 365 organization. Communication compliance supports connections to several popular platforms, including Instant Bloomberg, Facebook, Twitter, and others.
 
 To learn more about messaging channel support in communication compliance policies, see [supported communication types](communication-compliance-feature-reference.md#supported-communication-types).
 
@@ -83,7 +106,7 @@ In this workflow step, you identify your compliance requirements and configure a
 
 - **Offensive language and anti-harassment**: Use this template to quickly create a supervision policy that uses the built-in trainable classifier to automatically detect content that may be considered abusive or offensive.
 - **Sensitive information**: Use this template to create a policy to scan communications containing defined sensitive information types or keywords to help make sure important data isn't shared with people that shouldn't have access.
-- **Regulatory compliance**: Use this template to create a policy to scan communications for references to standard financial terms associated with regulatory standards. 
+- **Regulatory compliance**: Use this template to create a policy to scan communications for references to standard financial terms associated with regulatory standards.
 - **Custom policy**: Use this template to configure specific communication channels, individual detection conditions, and the amount of content to review for supervision in your organization.
 
 ### Investigate
@@ -97,21 +120,17 @@ In this step, you look deeper into the issues detected as matching your communic
 
 ### Remediate
 
-You remediate communication compliance issues you've investigated using the following options:
+The next step is to remediate communication compliance issues you've investigated using the following options:
 
 - **Resolve**: After reviewing an issue, you can remediate by resolving the alert. Resolving an alert removes it from the pending alert queue and the action is preserved as an entry in the Resolved queue for the matching policy. Alerts are automatically resolved after marking the alert as a false positive, sending a notice to an employee about the alert, or opening a new case for the alert.
 - **Tag a message**: As part of the resolution of an issue, you can tag the detected message as compliant, non-compliant, or as questionable as it relates to the policies and standards for your organization. Tagging can help you micro-filter policy alerts for escalations or as part of other internal review processes.
 - **Notify the user**: In many cases, users accidentally or inadvertently violate a communication compliance policy. You can use the notify feature to provide a simple warning notice to the user and to resolve the issue.
 - **Escalate to another reviewer**: In some cases, the initial reviewer of an issue may need input from other reviewers to help resolve the incident. You can easily escalate message issues to reviewers in other areas of your organization as part of the resolution process.
 - **Mark as a false positive**: Messages incorrectly detected as matches of compliance policies will occasionally slip through to the review process. You can mark these types of alerts as false positives and automatically resolve the issue.
-- **Open a case in other Microsoft 365 compliance solutions**: In some situations, you may need to open a case for deeper investigation and review of an issue. Communication compliance is tightly integrated with other Microsoft 365 compliance review features to help you with end-to-end resolution management. Opening a case transfers management of the issue and automatically resolves the alert in the communication compliance workflow.
-    - **Insider risk management case**: Insider risk management uses logs and risk signals across Microsoft 365 services and other third-party sources to help identify, triage, and remediate risks. Cases in insider risk management contain alerts, user activities, and content sets and alert submissions from communication compliance help provide reviewers with a complete end-to-end perspective of risky activities. To learn more about insider risk management cases in Microsoft 365, see [insider risk management in Microsoft 365](insider-risk-overview.md).
-    - **Data Investigation case**: Data Investigations allow you to search for sensitive, malicious, or misplaced data across Microsoft 365 and to take appropriate action to remediate the data spillage. Creating a new investigation from a communication compliance alert allows reviewers to properly evaluate the extent of any data spillage. To learn more about data investigation cases, see [Overview of Data Investigations in Microsoft 365](overview-data-investigations.md).
-    - **Advanced eDiscovery case**: Advanced eDiscovery provides an end-to-end workflow to preserve, collect, review, analyze, and export content that's responsive to your organization's internal and external investigations. It also lets legal teams manage the entire legal hold notification workflow to communicate with custodians involved in a case. Assigning an employee as a custodian in an Advanced eDiscovery case from a communication compliance alert helps your legal team take appropriate actions and manage content preservation. To learn more about Advanced eDiscovery cases, see [Overview of the Advanced eDiscovery in Microsoft 365](overview-ediscovery-20.md).
 
 ### Monitor
 
-Keeping track and managing compliance issues identified by communication compliance policies spans the entire workflow process. As alerts are generated and investigation and remediation actions are implemented, existing policies may need review and updates and new policies may need to be created. Use communication compliance dashboards, reports, and events recorded in the unified Office 365 audit logs to evaluate and improve your compliance posture.
+Keeping track and managing compliance issues identified by communication compliance policies spans the entire workflow process. As alerts are generated and investigation and remediation actions are implemented, existing policies may need review and updates, and new policies may need to be created. Use communication compliance dashboards, reports, export logs, and events recorded in the unified Office 365 audit logs to continually evaluate and improve your compliance posture.
 
 ## Ready to get started?
 
