@@ -12,7 +12,7 @@ ms.localizationpriority: normal
 Once you're ready to enroll in the service, this section includes the steps to follow to obtain and set up devices, assign licences to users, adjust conditional access setings, enable Enterprise State Roaming, and deploy apps to devices.
 
 - [Set up Microsoft Managed Desktop devices](set-up-devices.md)
-- [Assign licenses](get-started/assign-licenses.md)
-- [Adjust conditional access](get-started/conditional-access.md)
-- [Enable Enterprise State Roaming](get-started/enterprise-state-roaming.md)
+- [Assign licenses](assign-licenses.md)
+- [Adjust conditional access](conditional-access.md)
+- [[Enable Enterprise State Roaming](enterprise-state-roaming.md)
 - [Deploy apps to Microsoft Managed Desktop devices](deploy-apps.md)
