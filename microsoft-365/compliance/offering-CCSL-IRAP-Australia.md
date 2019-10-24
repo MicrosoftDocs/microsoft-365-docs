@@ -66,11 +66,11 @@ Yes. If your organization requires or is seeking an accreditation in line with t
 
 **Where do I start with my organization’s own compliance effort?**
 
-Start with the [IRAP tool kit](http://www.asd.gov.au/infosec/irap/toolkit.htm) and follow it with the information below:
+Start with the [IRAP tool kit](https://www.cyber.gov.au/node/291) and follow it with the information below:
 
 - [What is an IRAP assessment](http://www.asd.gov.au/infosec/irap/irap_assessments.htm)
-- [Who provides IRAP training?](http://www.asd.gov.au/infosec/irap/training.htm)
-- [Compliance and noncompliance requirements information](http://www.asd.gov.au/infosec/irap/compliance.htm)
+- [Who provides IRAP training?](https://www.cyber.gov.au/irap/training)
+- [Compliance and noncompliance requirements information](https://www.cyber.gov.au/irap/compliance)
 
 ## Resources
 
