@@ -113,7 +113,7 @@ Global and billing admins can see subscriptions bought through self-service purc
 
 Admins can see the product, purchaser name, subscription purchased, expiry date, order history, the purchase price, and assigned users.
 
-## Support and Training
+## Support and training
 
 ### Are customers’ IT departments or partners expected to support products bought through self-service purchase?
 
