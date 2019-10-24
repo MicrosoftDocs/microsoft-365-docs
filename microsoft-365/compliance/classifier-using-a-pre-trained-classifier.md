@@ -37,5 +37,22 @@ Microsoft has trained and tested number of classifiers using very large sample d
 
 2. Place the test items into a dedicated SharePoint Online folder, wait at least an hour for the folder to be crawled. Make note of the folder URL.
 
-3. Sign in to Microsoft 365 compliance center with compliance admin or security admin role access and open [Microsoft 365 compliance center](https://compliance.microsoft.com/informationgovernance?viewid=overview) or [Microsoft 365 security center](https://security.microsoft.com/informationgovernance?viewid=overview) > **Information governance** > **Labels** tab.
+<!-- look for or create fwlink -->
+3. Sign in to Microsoft 365 compliance center with compliance admin or security admin role access and open [Microsoft 365 compliance center](https://compliance.microsoft.com/informationgovernance?viewid=labels) or [Microsoft 365 security center](https://security.microsoft.com/informationgovernance?viewid=labels) > **Information governance** > **Labels** tab.
+
+4. Choose `Create a label` and create a lable for use just with this test. When you do this, leave `Retention` set to off. You don't want to turn on any retention or other actions. In this case, you'll be using using the retention label simply as a text label, without enforcing any actions. For example, you can create a retention label named "SourceCode classifier test" with no actions, and then auto-apply that retention label to content with that has Sourcecode classifier as a condition.To learn more about creating retention labels, see [Overview of retention labels](\labels.md).
+  
+5. Choose `Auto-apply a label` and then `Choose a label to auto-apply`. To learn more about using condition based auto-apply a label see, [auto-apply retention label policy based on a condition](../labels#applying-a-retention-label-automatically-based-on-conditions).
+
+6. Choose your test label from the list and choose `Next`.
+
+7. Choose `Apply label to content that matches a trainable classifier`.
+
+![selecting classifier as a condition](media\classifier-pre-trained-apply-label-match-trainable-classifier.png).
+
+8. Choose your classifier from the list.
+
+9. Name the policy, for example "Sourcecode pre-trained classifier test".
+
+10. Choose `Let me choose specific locations`
 
