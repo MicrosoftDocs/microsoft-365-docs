@@ -16,13 +16,13 @@ ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
 - MSB365
+- OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 0f7b1d7c-4086-4331-8534-45d7886f9f34
 description: "Learn how to upload devices using AutoPilot in Microsoft 365 Business. You can assign a profile to a device or a group of devices."
-ms.custom: OKR_SMB_M365
 ---
 
 # Create and edit AutoPilot devices

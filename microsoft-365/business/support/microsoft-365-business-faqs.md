@@ -18,33 +18,39 @@ ms.date: 06/08/2018
 ## General
 
 ### What is Microsoft 365 Business? 
-Microsoft 365 is an integrated solution, that brings together best-in-class productivity tools, security, and device management capabilities for small to medium-sized businesses. 
+Microsoft 365 is an integrated solution, that brings together best-in-class productivity tools, security, and device management capabilities for small to medium-sized businesses. It includes:
 
 **A set of business productivity and collaboration tools** 
 * Word, Excel, PowerPoint, Outlook, OneNote, Publisher, and Access 
-* Exchange, OneDrive, Skype for Business, Microsoft Teams, SharePoint 
-* Business apps from Office (Bookings, Outlook Customer Manager, MileIQ<sup>[1](#footnote1)</sup>, Microsoft Invoicing<sup>[1](#footnote1)</sup>) 
+* Exchange, OneDrive, Skype for Business, Microsoft Teams, and SharePoint. 
+* Business apps from Office (Bookings,MileIQ<sup>[1](#footnote1)</sup>). 
  
 **Enterprise-grade device management and security capabilities** 
-- Helps provide protection from external threats like phishing & sophisticated malware with Office 365 Advanced Threat Protection and Windows Defender Exploit Guard 
--  Helps control & manage how sensitive information is accessed and transmitted with Office 365 Data Loss Prevention policies (to be available in summer, 2018) and Azure Information Protection Plan 1 
--  Helps protect, preserve, and backup your data with Exchange Online Archiving  
--   App protection for Office & other mobile apps with Intune App Protection 
--  Device management for Windows 10 PCs, MacOS & Mobiles Devices with Intune device management 
--  Consistent security configuration across devices -  Protection of company data across devices -  Windows Defender, always-on and up-to-date 
+- Helps provide protection from external threats like phishing & sophisticated malware with Office 365 Advanced Threat Protection Plan 1 and Windows Defender Exploit Guard. 
+-  Helps control & manage how sensitive information is accessed and transmitted with Office 365 Data Loss Prevention policies and Azure Information Protection Plan 1. 
+-  Helps protect, preserve, and backup your data with Exchange Online Archiving.  
+-   App protection for Office & other mobile apps with Intune App Protection. 
+-  Device management for Windows 10 PCs, MacOS & Mobiles Devices with Intune device management. 
+-  Identity Protection with multi-factor authentication,self service password reset and conditional access.
+-  Consistent security configuration across devices -  Protection of company data across devices -  Windows Defender, always-on and up-to-date. 
  
  
 **Simplified device deployment and user setup** 
 * Single admin console to setup and manage users and devices 
-* Auto-installation of Office apps on Windows 10 PCs 
-* Always up-to-date Office + Windows 10 
-* Streamlined deployment of PCs with Windows AutoPilot
+* Auto-installation of Office apps on Windows 10 PCs. 
+* Always up-to-date Office + Windows 10. 
+* Streamlined deployment of PCs with Windows AutoPilot.
 
-**Enabling Conditional Access**
-- Microsoft 365 Business customers can enable Conditional Access via the Azure Directory settings in the Azure portal. For more information on how to configure Conditional Access policies, please see the article [What is Conditional access](https://docs.microsoft.com/azure/active-directory/conditional-access/overview).
+**Other entitlements** 
+- Microsoft 365 Business customers also have access to Windows Virtual Desktop and Office Shared Computer Activation capabilities. Read the [Microsoft 365 Business blog](https://techcommunity.microsoft.com/t5/Microsoft-365-Business-Blog/bg-p/Microsoft365BusinessBlog) to learn more. See also the [Microsoft 365 Business Service Description](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description).
 
 ### Who should consider adopting Microsoft 365 Business? 
-Microsoft 365 Business was built for small and medium-sized customers that have little to no IT resources on staff and want best-in-class productivity and collaboration capabilities of Office 365 together with device management and security solutions that safeguard business data. The Microsoft 365 Business customer is ready to move their IT operations to the cloud and is interested in maintaining a proactive stance to help protect data on both company and employee-owned devices.
+Microsoft 365 Business is a comprehensive, cloud-based security solution that lets you:  
+- Defend your business against advanced cyberthreats with sophisticated phishing and ransomware protection. 
+- Control access to sensitive information by using encryption to keep data from being accidentally shared with someone not authorized to see it. 
+- Secure the devices that connect to your business and help keep your data on iOS, Android, Windows, and Mac devices secure, and your Windows devices up-to-date.
+
+Microsoft 365 Business is fully integrated with Office 365 to provide you with familiar location for administration, billing, and 24x7 support. It consists of enterprise-grade technology built for businesses with less than 300 employees. 
 
 ### How can I get Microsoft 365 Business for my business? 
 Microsoft 365 Business may be purchased through a <a href="https://www.microsoft.com/solution-providers/search" target="_blank">Microsoft Partner</a> or directly from <a href="https://www.microsoft.com//microsoft-365/business" target="_blank">Microsoft</a>. In choosing whether to purchase directly from Microsoft or via a Microsoft Partner, you should consider your on-staff capability and desire to maintain an IT infrastructure. A Microsoft Partner can help you deploy and manage your IT infrastructure including Microsoft solutions.
@@ -71,7 +77,11 @@ If the hardware you run today runs Windows 7 Pro or later, it likely meets the m
 Existing desktop (Win32) application compatibility is strong in Windows 10, with most existing applications working without any changes. Customers and their trusted IT advisors should read the recommended application testing process for <a href="https://docs.microsoft.com/windows/deployment/planning/windows-10-compatibility#recommended-application-testing-process" target="_blank">Windows 10 compatibility</a> and review the <a href="https://products.office.com/office-system-requirements#subscription-plans-section" target="_blank">Office system requirements</a> to ensure a smooth transition to Microsoft 365 Business. 
 
 ### What is Windows 10 Business? 
-Windows 10 Business is a set of cloud-services and device management capabilities that complement Windows 10 Pro and enable the centralized management and security controls of Microsoft 365 Business. Windows 10 Business also comes with Windows AutoPilot, a service that streamlines the deployment of new Windows 10 PCs. If you have devices that are licensed for Windows 7, 8 and 8.1 Professional, Microsoft 365 Business provides an upgrade to Windows 10 Pro which is the prerequisite for deploying Windows 10 Business.
+Windows 10 Business is a set of cloud-services and device management capabilities that complement Windows 10 Pro and enable the centralized management and security controls of Microsoft 365 Business.
+
+Windows 10 Business also comes with certain premium Microsoft Defender features like Controlled Folder Access and Network Protection for web based threads. It also includes Windows AutoPilot, a service that streamlines the deployment of new Windows 10 PCs.
+
+If you have devices that are licensed for Windows 7, 8 and 8.1 Professional, Microsoft 365 Business provides an upgrade to Windows 10 Pro which is the prerequisite for deploying Windows 10 Business.
 > [!IMPORTANT]
 > You need to supply the original product key when you upgrade, otherwise the upgrade won't work. 
 
@@ -95,7 +105,7 @@ Microsoft has a variety of productivity and security management offerings that s
 
 **Office 365 Business Premium** delivers best-in-class productivity with Office 365 apps and services but does not include the application protection and device management capabilities of Microsoft 365 Business.
 
-**Microsoft 365 Business** combines Office 365 apps and services with mobile application management and Windows 10 Pro to enable remote management and help protect devices against viruses and malware. It includes a simplified management console through which device and data policies may be administered. Many small to medium-sized businesses can be best served with Microsoft 365 Business. 
+**Microsoft 365 Business** combines Office 365 apps and services with advanced security capabilities to help protect your business against advanced cyberthreats, safeguard your data and manage your devices. It includes a simplified management console through which device and data policies may be administered. Many small to medium-sized businesses can be best served with Microsoft 365 Business. 
  
 **Microsoft 365 Enterprise** is a set of licensing plans that offer increased levels of Compliance and security management over Microsoft 365 Business and are designed for enterprise customers and those customers that have over 300 users. In addition, Microsoft 365 Enterprise plans provide additional functionality including business intelligence and analytics tools.
 
@@ -133,18 +143,13 @@ Windows AutoPilot is a service that streamlines the deployment of new Windows 10
 ## Compatibility
 
 ### Can I add Office 365 add-ons to Microsoft 365 Business? 
-All the add-ons that can be added to Office 365 Business Premium can be added to Microsoft 365 Business. This means that you can purchase Advanced Threat Protection, Office 365 Cloud App Security, Advanced Compliance, Threat Intelligence, MyAnalytics, PowerBI Pro, and Audio Conferencing. 
+All the add-ons that can be added to Office 365 Business Premium can be added to Microsoft 365 Business. This means that you can purchase Office 365 Cloud App Security, Advanced Compliance, Threat Intelligence, MyAnalytics, PowerBI Pro, and Audio Conferencing. 
  
 ### Can I add Phone System and Calling Plans to Microsoft 365 Business? 
 No, Phone System and Calling Plan are reserved for customers who have more advanced needs. Customers who require these capabilities should look at Microsoft 365 Enterprise offerings. 
  
 ### Can Microsoft 365 Business customers use Windows Defender Advanced Threat Protection? 
 No, customers that require Windows Defender Advanced Threat Protection need either Windows 10 Enterprise E5 or Microsoft 365 Enterprise E5. 
- 
-
-
-### Can customers create hosted Windows 10 VMs with a Microsoft 365 Business subscription? 
-No, customers that require virtualization should purchase Windows 10 Enterprise or a Microsoft 365 Enterprise subscription.
 
 ## Partner opportunity
 
@@ -156,7 +161,7 @@ IT service providers that are not already Microsoft partners can learn more abou
 Partners now selling Office 365 can use the same consultative selling methods to sell Microsoft 365 Business. In addition, we are introducing more resources and training for your sales team to understand the customers’ existing desktop environment, Active Directory reliance, mobility and security needs to effectively communicate the full value of Microsoft 365 Business in a way that is relevant to the customer. Find these resources on the Office Partner portal at [http://partners.office.com/microsoft365business](http://partners.office.com/microsoft365business). 
 
 ### How can Microsoft 365 Business help partners increase the profitability? 
-Microsoft 365 Business will help partners reduce costs through greater operational efficiencies and enhance revenue through the sale of additional services. The Forrester Research, Microsoft 365 Business Total Economic Impact (TEI) Study, June 2017 (https://partners.office.com/TEIBusiness), demonstrates that Microsoft 365 Business will have positive impact on partner profitability. 
+Microsoft 365 Business will help partners reduce costs through greater operational efficiencies and enhance revenue through the sale of additional services. The Forrester Research, Microsoft 365 Business Total Economic Impact (TEI) Study, June 2017 (https://www.microsoft.com/microsoft-365/partners/PartnerTEI), demonstrates that Microsoft 365 Business will have positive impact on partner profitability. 
 
 In the TEI study partners reported that with Microsoft 365 Business they expect: 
 
@@ -178,20 +183,11 @@ A Microsoft Cloud Solution Provider should always sell the plan that best suits 
  
 ### Some of my customers have devices that are not genuine; will Microsoft 365 Business make these devices genuine? 
 Microsoft 365 Business does not make an otherwise non-genuine version of Windows, genuine. Microsoft 365 Business does provide an upgrade benefit allowing those customers running genuine Windows 7, 8 or 8.1 Pro to upgrade to the most recent, genuine version of Windows 10 Pro. 
- 
-### What support is available to CSP partners for the Microsoft 365 Business Preview? 
-The same support channels available to CSP partners today (premier support and advanced support program) have been trained on Microsoft 365 Business and are ready to provide partners with support. 
 
 ### What is the GDPR and how does Microsoft 365 Business help customers with their compliance obligations?
-The General Data Protection Regulation (GDPR) is a comprehensive new privacy law that gives residents of the European Union (EU) greater control over their “personal data” and requires organizations to maintain the integrity of that personal data. The GDPR requires organizations that control, or process personal data tied to EU residents to only use third-party data processors that meet the GDPR’s requirements for personal data processing. In March 2017, Microsoft made available contractual guarantees that provide these assurances. Customers that have questions about how Microsoft can help them meet their additional GDPR obligations should learn about the advanced compliance and security capabilities available as add-ons (e.g. Azure Information Protection, Data Loss Prevention, Advanced Threat Protection, etc. ) and in other Suites (e.g. Microsoft 365 Enterprise E5). To learn more, visit [www.microsoft.com/gdpr](https://www.microsoft.com/gdpr).
-
-
+The General Data Protection Regulation (GDPR) is a comprehensive new privacy law that gives residents of the European Union (EU) greater control over their “personal data” and requires organizations to maintain the integrity of that personal data. The GDPR requires organizations that control, or process personal data tied to EU residents to only use third-party data processors that meet the GDPR’s requirements for personal data processing. In March 2017, Microsoft made available contractual guarantees that provide these assurances. Customers that have questions about how Microsoft can help them meet their additional GDPR obligations should learn about the advanced compliance and security capabilities available in Microsoft 365 Business (e.g. Azure Information Protection, Data Loss Prevention, Advanced Threat Protection, etc. ) and in other Suites (e.g. Microsoft 365 Enterprise E5). To learn more, visit [www.microsoft.com/gdpr](https://www.microsoft.com/gdpr).
 
 
 ## Footnotes
 <sup><a name="footnote1">**1**</a></sup> <small>Available in US, UK, and Canada.</small> </br>
 <sup><a name="footnote2">**2**</a></sup> <small>Devices running Windows 7 or 8.1 Pro are eligible for an upgrade to Windows 10 Pro within the Microsoft 365 Business preview.</small>
- 
-
-
-
