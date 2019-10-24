@@ -39,9 +39,9 @@ The rigorous audit covered the measures Microsoft has taken to secure personal h
 ## Microsoft in-scope cloud services
 
 - [Azure](https://aka.ms/AzureCompliance). The HDS certificate applies to Azure services listed as compliant with the ISO/IEC 27001 standard in Azure Compliance offerings and provisioned from the France Central, France South, Europe West, and Europe North Azure regions.
-- Dynamics 365. The HDS certificate applies to Dynamics 365 [Core Online Services](http://aka.ms/Online-Services-Terms) provisioned from France and European Union geographies.
+- Dynamics 365. The HDS certificate applies to Dynamics 365 [Core Online Services](https://aka.ms/Online-Services-Terms) provisioned from France and European Union geographies.
 - Intune
-- Microsoft 365. The HDS certificate applies to Office 365 [Core Online Services](http://aka.ms/Online-Services-Terms) provisioned from France and European Union geographies.
+- Microsoft 365. The HDS certificate applies to Office 365 [Core Online Services](https://aka.ms/Online-Services-Terms) provisioned from France and European Union geographies.
 - Power BI cloud service either as a standalone service or as included in an Office 365 branded plan or suite
 
 The HDS certificate does not apply to Microsoft online services in preview or pre-release.
@@ -69,4 +69,4 @@ The HDS certification is valid for three years.
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/E/7/B/E7BC3E72-A6E5-4A10-96C9-3B210C4DBE35/HDS-Compliance.pdf).
+Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/E/7/B/E7BC3E72-A6E5-4A10-96C9-3B210C4DBE35/HDS-Compliance.pdf).
