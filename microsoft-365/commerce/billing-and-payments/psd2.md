@@ -5,10 +5,10 @@ author: cmcatee-MSFT
 manager: mnirkhe
 audience: Admin
 ms.topic: article
-ms.service: o365-administration <!-- need to figure out what this value should be -->
+ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
-- commerce <!-- probably need to change this -->
+- commerce
 ms.custom:
 search.appverid:
 - MET150
