@@ -19,7 +19,7 @@ Microsoft Managed Desktop takes this further by combining the power of Microsoft
 
 <table>
 <tr><th>Delight end users</th><th>Empower IT</th><th>Backed by Microsoft</th></tr>
-<tr><td><p>Modern device</p><p>Windows 10</p><p>Office 365 ProPlus</p><p>Security built-in</p><p>Login with facial recognition</p><p>Always up-to-date</p></td><td><p>Built-in security</p><p>Actionable insights</p><p>Operations support</p><p>Guidance from Microsoft experts</p></td><td><p>Security Operations team</p><p>Health monitoring</p><p>Cloud backup for data</p><p>Stateless principles</p><p>24x7 End user support</p></td></tr>
+<tr><td><p>Modern device</p><p>Windows 10</p><p>Office 365 ProPlus</p><p>Security built-in</p><p>Login with facial recognition</p><p>Always up to date</p></td><td><p>Built-in security</p><p>Actionable insights</p><p>Operations support</p><p>Guidance from Microsoft experts</p></td><td><p>Security Operations team</p><p>Health monitoring</p><p>Cloud backup for data</p><p>24x7 End user support</p></td></tr>
 </table>
 
 Microsoft Managed Desktop gives customers a comprehensive IT solution that delights users and frees up IT resources for more important tasks. We’ve developed this service based on feedback we commonly hear:
