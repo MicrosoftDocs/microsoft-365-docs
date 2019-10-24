@@ -3,7 +3,7 @@ title: "Changes to Microsoft 365 Enterprise deployment content"
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 10/09/2019
+ms.date: 10/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -20,10 +20,21 @@ description: See the new content and changes to the content in the Microsoft 365
 
 ## October 2019
 
+### New content 
+
+- [Teams for highly regulated data scenario](secure-teams-highly-regulated-data-scenario.md)
+
+  [![The Teams for highly regulated data scenario](./media/secure-teams-highly-regulated-data-scenario/secure-team-final.png)](secure-teams-highly-regulated-data-scenario.md)
+
+- [Empower remote workers poster](empower-people-to-work-remotely.md#poster)
+
+  [![Empower remote workers poster](./media/empower-people-to-work-remotely/empower-remote-workers-poster-half.png)](media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf) 
+ 
+
 ### Updates and enhancements
 
 - Refresh of the [Contoso case study](contoso-case-study.md)
-- Refresh of the [Exchange Online](exchangeonline-workload.md) workload
+- Refresh of the [Microsoft Teams](teams-workload.md), [Exchange Online](exchangeonline-workload.md), and [SharePoint Online](sharepoint-online-onedrive-workload.md) workloads
 - Refresh of the [SharePoint sites for highly regulated data](teams-sharepoint-online-sites-highly-regulated-data.md) scenario
  
   [![The SharePoint sites for highly regulated data scenario](./media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration.png)](teams-sharepoint-online-sites-highly-regulated-data.md)

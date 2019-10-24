@@ -2,7 +2,7 @@
 title: "Deploy SharePoint and OneDrive for Microsoft 365 Enterprise"
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/30/2019
+ms.date: 10/11/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -22,7 +22,7 @@ SharePoint and Microsoft Teams are how you do file storage and sharing, content 
 
 SharePoint also has advanced security capabilities including access control with permissions and encryption in flight and at rest. SharePoint security is a key element of the Intelligent Security value of Microsoft 365 Enterprise.
 
-If you are brand new to SharePoint, see [SharePoint](https://products.office.com/sharepoint/sharepoint-online-collaboration-software) and [Get Started with SharePoint](https://support.office.com/article/Get-started-with-SharePoint-3a26444b-08c5-46ad-b80a-cda82b11b27b#ID0EAABAAA=Basics).
+If you are brand new to SharePoint, see [SharePoint](https://products.office.com/sharepoint/collaboration) and [Get Started with SharePoint](https://support.office.com/article/video-what-is-sharepoint-online-c17b6824-cc22-478f-8757-497cc6b57121).
 
 The following phases and steps guide you through the process of envisioning the role of SharePoint in your organization, onboarding your organization through a series of progressive rollouts, and driving usage and its value to your end users. Before you begin, make sure you've configured the right [foundation infrastructure](deploy-workloads.md#foundation-infrastructure-prerequisites) phases so that your SharePoint sites have the security capabilities you need. 
 
@@ -45,18 +45,17 @@ A list of people that represent the business, technical, and end user perspectiv
 
 SharePoint can be used for different purposes. You need to figure out which purposes map to your business needs. You should target SharePoint to address the document storage and sharing, content management, and collaboration needs of your teams, your division, or your entire organization. 
 
-See the list of scenarios and capabilities at [SharePoint](https://products.office.com/sharepoint/sharepoint-online-collaboration-software).
+See the list of scenarios and capabilities at [SharePoint](https://products.office.com/sharepoint/collaboration ).
 
 The following business pillars can address your organization’s needs:
 
 |||
 |:-----|:-----|
-| Share and Work Together | Take advantage of team sites, collaboration sites, and sync. |
+| Share and Work Together | Take advantage of team sites, communication sites, and sync. |
 | Inform and Engage | Information coming in the future. |
-| Transform | Uses Flow to create a store or workflow. |
+| Transform | Uses Flow to create automated workflows between apps and services. |
 | Harness Collective Knowledge | Uses Search to give the desired results within your organization. |
 | Protect | Ensures your organization is secured and has the correct compliance. |
-| External/Develop | Lets your organization develop customize solutions and apps with the SharePoint Framework. |
 |||
 
 See [SharePoint admin](https://docs.microsoft.com/sharepoint/sharepoint-online) for resources on how to configure SharePoint for your needs.
@@ -80,14 +79,11 @@ To protect access to SharePoint sites, ensure that you have configured [identity
 
 ### Step 1: Complete your technical planning
 
-Before you begin technical planning, determine whether you want to use FastTrack. If your organization has over 50 seats and is participating in an [eligible plan](https://docs.microsoft.com/fasttrack/O365-fasttrack-benefit-for-office-365), you can use FastTrack benefits, available at no additional cost to guide you through planning, migration, deployment, and service adoption. Or, you can complete this work yourself using FastTrack Onboarding Wizards, which are available from [FastTrack](https://docs.microsoft.com/fasttrack/m365-fasttrack-benefit-overview) once you sign in with your Microsoft 365 account.
+Before you begin technical planning, determine whether you want to use FastTrack. If your organization has more than 50 seats and is participating in an [eligible plan](https://docs.microsoft.com/fasttrack/O365-fasttrack-benefit-for-office-365), you can use FastTrack benefits, available at no additional cost to guide you through planning, migration, deployment, and service adoption. Or, you can complete this work yourself using FastTrack Onboarding Wizards, which are available from [FastTrack](https://docs.microsoft.com/fasttrack/m365-fasttrack-benefit-overview) once you sign in with your Microsoft 365 account.
 
-If you are doing your own planning, or in conjunction with FastTrack, you need to determine if your network and organization are ready for SharePoint. It is especially important that you meet the exit criteria for networking in your foundation infrastructure, with special attention to Internet bandwidth, throughput, and traffic delays to maximize performance for the additional traffic for SharePoint-based documents.
+If you are doing your own planning, or in conjunction with FastTrack, you need to determine if your network and organization are ready for SharePoint. It is especially important that you meet the [exit criteria for networking](networking-exit-criteria.md) in your foundation infrastructure, with special attention to Internet bandwidth, throughput, and traffic delays to maximize performance for the additional traffic for SharePoint-based documents.
 
-Use these resources to prepare for the technical aspects of a SharePoint rollout: 
-
-- [SharePoint planning guide](https://docs.microsoft.com/sharepoint/planning-guide)
-- [Migrate to SharePoint](https://docs.microsoft.com/sharepointmigration/migrate-to-sharepoint-online) 
+Use [Migrate to SharePoint](https://docs.microsoft.com/sharepointmigration/migrate-to-sharepoint-online) to prepare for your SharePoint rollout: 
 
 For a better understanding of security in SharePoint, review the following resources:
 
@@ -103,8 +99,8 @@ You understand SharePoint sites and on-premises folder and document migration an
 In most medium-sized and large organizations, you should run an IT pilot with your stakeholders from Phase 1, early adopters, and technical enthusiasts. During the IT pilot:
 
 - Choose a SharePoint business scenario in which your IT pilot participants can practice.
-- Give your pilot participants a set of exercises to test SharePoint document storage, sharing, collaboration, team-based scheduling, and other capabilities.
-- Determine your change management strategy and produce materials to drive organization-wide user adoption of SharePoint. Change management materials can include email announcement text, internal training plans, hallway posters, and presentations. These materials will inform your organization about SharePoint and its benefits with the goals of raising awareness and driving usage. See the change management strategy for [Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/change-management-strategy) article for some ideas.
+- Give your pilot participants a set of exercises to test SharePoint document storage, sharing, collaboration, and other capabilities.
+- Determine your change management strategy and produce materials to drive organization-wide user adoption of SharePoint. Change management materials can include email announcement text, internal training plans, hallway posters, and presentations. These materials will inform your organization about SharePoint and its benefits with the goals of raising awareness and driving usage. See the [SharePoint adoption resources](https://resources.techcommunity.microsoft.com/resources/SharePoint-adoption/) to get started.
 - Have your IT pilot participants review the change management materials based on their experiences. They can provide tips on best practices and advice on how to best describe the benefits of SharePoint and how to use it.
 
 #### Result

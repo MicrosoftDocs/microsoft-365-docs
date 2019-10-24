@@ -14,12 +14,12 @@ ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
 - MSB365
+- OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: "Learn about the security features that come with Microsoft 365 Business."
-ms.custom: OKR_SMB_M365
 ---
 
 # Microsoft 365 Business security and compliance features
@@ -43,7 +43,7 @@ You can manage many of the Microsoft 365 Business security features in the admin
     
 - [Set device protection settings for Windows 10 devices](protection-settings-for-windows-10-pcs.md) . 
     
-    You can enable [BitLocker](https://go.microsoft.com/fwlink/p/?linkid=871405) encryption to help protect data in case a device is lost or stolen, and enable [Windows Exploit Guard](https://go.microsoft.com/fwlink/p/?linkid=871404) to provide advanced protection against ransomware. 
+    You can enable [BitLocker](https://go.microsoft.com/fwlink/p/?linkid=871405) encryption to help protect data in case a device is lost or stolen, and enable [Windows Exploit Guard](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/enable-exploit-protection) to provide advanced protection against ransomware. 
     
 - [Remove company data from devices](remove-company-data.md)
     
