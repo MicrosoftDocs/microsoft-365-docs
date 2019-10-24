@@ -39,7 +39,7 @@ These methods handle outbound email from Office 365, and help destination system
 
 ## Anti-spam, anti-malware, and anti-phishing
 
-Both anti-spam and anti-malware are features of EOP. Spam filtering, on by default in Office 365, scans all mail and assigns a Spam Confidence Level (SCL) number value to each mail. Just to clarify, its purpose is to enumerate how confident the filter is that the mail is (or isn't) spam. Low values, like -1 are non-spam from safe senders and lands in a user Inbox. High scores, like 7, 8, or 9 are either highly suspect, or known spammers and heads for a user's Junk Mail, or administrator-accessible Quarantine.
+Both anti-spam and anti-malware are features of EOP. Spam filtering, on by default in Office 365, scans all email and assigns a Spam Confidence Level (SCL) number value to each message. To clarify, the SCL value enumerates how confident the filter is that the message is or isn't spam. Low values (-1, 0, or 1) are messages from safe senders or non-spam and are delivered to the recipient's Inbox. A high value like 9 indicates the message is highly suspect or from a known spammer, so the message is delivered to the recipient's Junk Email folder, or to the administrator-accessible Quarantine.
 
 Malware filtering is also on by default in Office 365. Like anti-spam filtering, anti-malware filters work on both inbound and outbound mail. In both cases this protection can be configured for a better fit, by admins.
 
@@ -50,11 +50,11 @@ Phishing filters are on by default in Office 365, but should be configured for a
 |Security feature name|Recommended|Aggressive|Comment|
 |---------|---------|---------|---------|
 |Quarantine retention period|Yes|Yes|30 days|
-|End user spam notification frequency|Yes|Yes|3 days|
+|End user spam notification frequency|Yes|Yes|1 day|
 |Zero Hour Autopurge should be enabled|Yes|Yes|True|
-|Spam detection action should be sent to|JMF|Quarantine|-|
+|Spam detection action should be sent to|MoveToJmf|Quarantine|-|
 |High confidence spam detection action should be sent to|Quarantine|Quarantine|-|
-|Bulk detection action should be set to|JMF|Quarantine|-|
+|Bulk detection action should be set to|MoveToJmf|Quarantine|-|
 |Set Bulk email threshold to|6|4|-|
 |Safety tips should be enabled|True|True|-|
 |Enable end user spam notification|True|False|-|
@@ -111,9 +111,9 @@ Recommended for **ON** in both Recommended and Aggressive Levels:
 |EnableSimilarUsersSafetyTips|True|True|-|
 |EnableSimilarDomainsSafetyTips|True|True|-|
 |EnableUnusualCharactersSafetyTips|True|True|-|
-|TargetedUserProtectionAction|NoAction|Block|-|
-|MailboxIntelligenceProtectionAction|NoAction|Block|-|
-|TargetedDomainProtectionAction|NoAction|Block|-|
+|TargetedUserProtectionAction|MovetoJmf|Quarantine|-|
+|MailboxIntelligenceProtectionAction|NoAction + SafetyTip|MoveToJmf|-|
+|TargetedDomainProtectionAction|MoveToJmf|Quarantine|-|
 |AuthenticationFailAction|MoveToJmf|Quarantine|-|
 |AntiSpoofEnforcementType|High|High|-|
 |EnableAuthenticationSafetyTip|False|True|-|
@@ -146,9 +146,9 @@ If you've added an Office 365 ATP subscription to your EOP, be sure to set the f
 |Enable Anti-impersonation protection|Yes|Yes|-|
 |Enable Mailbox intelligence in Anti-Impersonation policies|Yes|Yes|-|
 |Enable Mailbox intelligence based Impersonation protection|Yes|Yes|-|
-|Domain Impersonation action should be|JMF|Quarantine|-|
-|User Impersonation action should be|JMF|Quarantine|-|
-|Mailbox intelligence based impersonation protection action should be|Tip|JMF|-|
+|Domain Impersonation action should be|MoveToJmf|Quarantine|-|
+|User Impersonation action should be|MoveToJmf|Quarantine|-|
+|Mailbox intelligence based impersonation protection action should be|NoAction + SafetyTip|MoveToJmf|-|
 
 ### Safe Links and Safe Attachments
 
@@ -168,7 +168,7 @@ If you've added an Office 365 ATP subscription to your EOP, be sure to set the f
 
 |Security feature name|Recommended|Aggressive|Comment|
 |---------|---------|---------|---------|
-|ATP Safe Attachment policy action should be|Quarantine|Quarantine|-|
+|ATP Safe Attachment policy action should be|Block|Block|When policy is set to Block email message will also be quarantined|
 |ATP protection should be enabled for OneDrive, SharePoint, and Teams|Yes|Yes|-|
 
 ## Miscellaneous settings for EOP or Office 365 ATP
