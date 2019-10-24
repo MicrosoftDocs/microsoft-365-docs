@@ -58,8 +58,8 @@ Banks and other financial institutions in Japan that want to validate their appr
 
 The FISC has published two reports from its Council of Experts:
 
-- [Usage of Cloud Computing by Financial Institutions](http://aka.ms/cloud-computing-report-en)
-- [Countermeasures Against Cyber Attacks on Financial Institutions](http://aka.ms/cyberattack-counter)
+- [Usage of Cloud Computing by Financial Institutions](https://aka.ms/cloud-computing-report-en)
+- [Countermeasures Against Cyber Attacks on Financial Institutions](https://aka.ms/cyberattack-counter)
 
 **Where can I get the details of Microsoft's responses to the FISC framework?**
 
@@ -71,9 +71,9 @@ Yes. However, although Microsoft responses to this framework are confirmed compl
 
 ## Resources
 
-- [Microsoft Online Services Terms](http://aka.ms/Online-Services-Terms)
+- [Microsoft Online Services Terms](https://aka.ms/Online-Services-Terms)
 - [FISC Security Guidelines/Safety Standards](https://www.fisc.or.jp/english)
-- [FISC Report on Usage of Cloud Computing](http://aka.ms/cloud-computing-report-en)
+- [FISC Report on Usage of Cloud Computing](https://aka.ms/cloud-computing-report-en)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## Resources in Japanese
@@ -82,4 +82,4 @@ Yes. However, although Microsoft responses to this framework are confirmed compl
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/9/1/D/91D74F03-AA26-4D22-AB99-576FE9F88B58/FISC_Compliance_Backgrounder.pdf).
+Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/9/1/D/91D74F03-AA26-4D22-AB99-576FE9F88B58/FISC_Compliance_Backgrounder.pdf).
