@@ -148,22 +148,22 @@ For more information about how Office 365 implements encryption for emails and e
   
 1. Use a work or school account that has global administrator permissions in your Office 365 organization and start a Windows PowerShell session and connect to Exchange Online. For instructions, see [Connect to Exchange Online PowerShell](https://aka.ms/exopowershell).
 
-2. Run the Set-IRMConfiguration cmdlet with the DecryptAttachmentFromPortal parameter:
+2. Run the Set-IRMConfiguration cmdlet with the DecryptAttachmentForEncryptOnly parameter:
 
    ```powershell
-   Set-IRMConfiguration -DecryptAttachmentFromPortal <$true|$false>
+   Set-IRMConfiguration -DecryptAttachmentForEncryptOnly <$true|$false>
    ```
 
    For example, to configure the service to decrypt email attachments when a user downloads them from a web browser:
 
    ```powershell
-   Set-IRMConfiguration -DecryptAttachmentFromPortal $true
+   Set-IRMConfiguration -DecryptAttachmentForEncryptOnly $true
    ```
 
    To configure the service to leave encrypted email attachments as they are upon download:
 
    ```powershell
-   Set-IRMConfiguration -DecryptAttachmentFromPortal $false
+   Set-IRMConfiguration -DecryptAttachmentForEncryptOnly $false
    ```
 
 ## Ensure all external recipients use the OME Portal to read encrypted mail — Office 365 Advanced Message Encryption only
