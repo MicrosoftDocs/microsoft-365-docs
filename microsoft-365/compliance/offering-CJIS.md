@@ -17,7 +17,7 @@ hideEdit: true
 
 ## CJIS overview
 
-The Criminal Justice Information Services (CJIS) Division of the US Federal Bureau of Investigation (FBI) gives state, local, and federal law enforcement and criminal justice agencies access to criminal justice information (CJI) — for example, fingerprint records and criminal histories. Law enforcement and other government agencies in the United States must ensure that their use of cloud services for the transmission, storage, or processing of CJI complies with the [CJIS Security Policy](http://aka.ms/cjis-security-policy), which establishes minimum security requirements and controls to safeguard CJI.
+The Criminal Justice Information Services (CJIS) Division of the US Federal Bureau of Investigation (FBI) gives state, local, and federal law enforcement and criminal justice agencies access to criminal justice information (CJI) — for example, fingerprint records and criminal histories. Law enforcement and other government agencies in the United States must ensure that their use of cloud services for the transmission, storage, or processing of CJI complies with the [CJIS Security Policy](https://aka.ms/cjis-security-policy), which establishes minimum security requirements and controls to safeguard CJI.
 
 The CJIS Security Policy integrates presidential and FBI directives, federal laws, and the criminal justice community’s Advisory Policy Board decisions, along with guidance from the National Institute of Standards and Technology (NIST). The Policy is periodically updated to reflect evolving security requirements.
 
@@ -70,12 +70,12 @@ States with appropriate CJIS documentation, as of August 2017, include: Alaska, 
 
 **Where do I start with my agency’s compliance effort?**
 
-[CJIS Security Policy](http://aka.ms/cjis-security-policy) covers the precautions that your agency must take to protect CJI. In addition, your Microsoft account representative can put you in touch with those familiar with the requirements of your jurisdiction
+[CJIS Security Policy](https://aka.ms/cjis-security-policy) covers the precautions that your agency must take to protect CJI. In addition, your Microsoft account representative can put you in touch with those familiar with the requirements of your jurisdiction
 
 ## Resources
 
 - [Criminal Justice Information Services](https://aka.ms/cjis)
-- [CJIS Security Policy](http://aka.ms/cjis-security-policy)
+- [CJIS Security Policy](https://aka.ms/cjis-security-policy)
 - [CJIS security policy version 5.3 backgrounder](https://aka.ms/cjis-backgrounder)
 - [CJIS implementation guidelines for Azure Government](https://aka.ms/cjisimplementationguidelines)
 - [Microsoft Common Controls Hub Compliance Framework](https://www.microsoft.com/trustcenter/common-controls-hub)
@@ -84,4 +84,4 @@ States with appropriate CJIS documentation, as of August 2017, include: Alaska, 
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/4/D/0/4D008840-B8C4-480B-ACD1-D55CB34AD6BC/CJIS_Compliance_Backgrounder.pdf).
+Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/4/D/0/4D008840-B8C4-480B-ACD1-D55CB34AD6BC/CJIS_Compliance_Backgrounder.pdf).

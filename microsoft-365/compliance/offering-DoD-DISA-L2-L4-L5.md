@@ -85,7 +85,7 @@ Yes. All DoD agencies may rely on the certifications of Microsoft cloud services
 
 **Does Microsoft’s DoD certification meet NIST 800–171 requirements?**
 
-In October 2016, the Department of Defense (DoD) promulgated a final rule implementing Defense Federal Acquisition Regulation Supplement (DFARS) clauses that apply to all DoD contractors who process, store, or transmit “covered defense information” through their information systems. The rule states that such systems must meet the security requirements set forth in NIST SP 800–171, [Protecting Controlled Unclassified Information in nonfederal information systems and organizations](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-171.pdf), or an “alternative, but equally effective, security measure” that is approved by the DoD contracting officer. And where a DoD contractor uses an external cloud service provider to process, store, or transmit covered defense information, such provider must meet security requirements that are equivalent to the FedRAMP Moderate baseline.
+In October 2016, the Department of Defense (DoD) promulgated a final rule implementing Defense Federal Acquisition Regulation Supplement (DFARS) clauses that apply to all DoD contractors who process, store, or transmit “covered defense information” through their information systems. The rule states that such systems must meet the security requirements set forth in NIST SP 800–171, [Protecting Controlled Unclassified Information in nonfederal information systems and organizations](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-171.pdf), or an “alternative, but equally effective, security measure” that is approved by the DoD contracting officer. And where a DoD contractor uses an external cloud service provider to process, store, or transmit covered defense information, such provider must meet security requirements that are equivalent to the FedRAMP Moderate baseline.
 
 The following Microsoft cloud services have received a FedRAMP moderate authorization: Azure, Azure Government, Dynamics 365 U.S. Government, Office 365 MT, Office 365 U.S. Government, and Office 365 U.S. Government Defense.
 
@@ -93,9 +93,9 @@ Also, Microsoft offerings outside the FedRAMP-certified boundary that could pote
 
 ## Resources
 
-- [DoD Cloud Computing Security Requirements Guide (SRG)](http://iase.disa.mil/cloud_security/cloudsrg/Pages/home.aspx)
-- [DISA Cloud Service Support](http://www.disa.mil/Computing/Cloud-Services/Cloud-Support)
-- [Protecting Controlled Unclassified Information in nonfederal information systems and organizations](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-171.pdf)
+- [DoD Cloud Computing Security Requirements Guide (SRG) and other documents](https://public.cyber.mil/dccs/dccs-documents/)
+- [DISA Cloud Service Support](https://www.disa.mil/Computing/Cloud-Services/Cloud-Support)
+- [Protecting Controlled Unclassified Information in nonfederal information systems and organizations](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-171.pdf)
 - [NIST Cybersecurity Framework](https://www.nist.gov/cyberframework)
 - [Microsoft Common Controls Hub Compliance Framework](https://www.microsoft.com/trustcenter/common-controls-hub)
 - [Microsoft Government Cloud](https://go.microsoft.com/fwlink/p/?linkid=2087246)
@@ -103,4 +103,4 @@ Also, Microsoft offerings outside the FedRAMP-certified boundary that could pote
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/5/0/C/50C2C028-3048-49BC-B820-D83C76BF2E52/DISA_Compliance_Backgrounder.pdf).
+Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/5/0/C/50C2C028-3048-49BC-B820-D83C76BF2E52/DISA_Compliance_Backgrounder.pdf).
