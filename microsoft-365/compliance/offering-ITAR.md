@@ -53,4 +53,4 @@ Contact your Microsoft account representative.
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/A/7/4/A74AFF71-6EAC-4CFD-A09B-51852E1A1200/ITAR-Compliance.pdf).
+Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/A/7/4/A74AFF71-6EAC-4CFD-A09B-51852E1A1200/ITAR-Compliance.pdf).
