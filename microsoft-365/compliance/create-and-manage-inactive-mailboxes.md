@@ -68,7 +68,7 @@ To view a list of the inactive mailboxes in your organization:
   
 1. Go to [https://protection.office.com](https://protection.office.com) and sign in using the credentials for an administrator account in your Office 365 organization. 
     
-2. Click **Data governance** > **Retention**.
+2. Click **Information governance** > **Retention**.
     
 3. On the **Retention** page, click **More**![Navigation Bar ellipses](media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif), and then click **Inactive mailboxes**.
     
