@@ -39,7 +39,7 @@ These methods handle outbound email from Office 365, and help destination system
 
 ## Anti-spam, anti-malware, and anti-phishing
 
-Both anti-spam and anti-malware are features of EOP. Spam filtering, on by default in Office 365, scans all mail and assigns a Spam Confidence Level (SCL) number value to each mail. Just to clarify, its purpose is to enumerate how confident the filter is that the mail is (or isn't) spam. Low values, like -1, 0 or 1 are messages from safe senders or non-spam and land in a user Inbox. High score, like 9 is either highly suspect, or known spammers and heads for a user's Junk Mail, or administrator-accessible Quarantine.
+Both anti-spam and anti-malware are features of EOP. Spam filtering, on by default in Office 365, scans all email and assigns a Spam Confidence Level (SCL) number value to each message. To clarify, the SCL value enumerates how confident the filter is that the message is or isn't spam. Low values (-1, 0, or 1) are messages from safe senders or non-spam and are delivered to the recipient's Inbox. A high value like 9 indicates the message is highly suspect or from a known spammer, so the message is delivered to the recipient's Junk Email folder, or to the administrator-accessible Quarantine.
 
 Malware filtering is also on by default in Office 365. Like anti-spam filtering, anti-malware filters work on both inbound and outbound mail. In both cases this protection can be configured for a better fit, by admins.
 
