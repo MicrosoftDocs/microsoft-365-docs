@@ -22,7 +22,7 @@ The drive for Microsoft Professional Services’ global data protection incident
 
 ## Data Protection incident response overview 
 
-Microsoft Professional Services is committed to protecting its customers and takes considerable measures to prevent data protection incidents from occurring as a means of maintaining customer trust. A data protection incident in the Professional Services organization is a breach of security leading to the accidental or unlawful destruction, loss, alteration, unauthorized disclosure of, or access to Personal Data, or Support or Consulting Data, while processed by Microsoft. For Commercial customers that have purchased Premier Support, Unified Support or Microsoft Consulting Services, you should refer to your data protection incident response language in the Professional Services Data Protection Addendum located at <http://aka.ms/professionalservicesdpa/>.
+Microsoft Professional Services is committed to protecting its customers and takes considerable measures to prevent data protection incidents from occurring as a means of maintaining customer trust. A data protection incident in the Professional Services organization is a breach of security leading to the accidental or unlawful destruction, loss, alteration, unauthorized disclosure of, or access to Personal Data, or Support or Consulting Data, while processed by Microsoft. For Commercial customers that have purchased Premier Support, Unified Support or Microsoft Consulting Services, you should refer to your data protection incident response language in the Professional Services Data Protection Addendum located at <https://aka.ms/professionalservicesdpa/>.
 
 ## Scope & limits of data protection incident response process
 
@@ -49,7 +49,7 @@ Microsoft Professional Services continuously monitors for emerging data protecti
 The detection processes used by Microsoft Professional Services are designed to discover data protection incidents and trigger investigations. For example:
 
 - Security vulnerabilities are reported to the Microsoft-wide reporting system for referral or reported directly to the Professional Services data protection incident response team.
-- Customers submit reports via the [Customer Support Portal](http://support.microsoft.com) that describe suspicious activity.
+- Customers submit reports via the [Customer Support Portal](https://support.microsoft.com) that describe suspicious activity.
 - Professional Services personnel submit escalations. Microsoft employees are trained to identify and escalate potential security issues.
 - For tools and systems used in the process of providing Professional Services, the operations teams use automated system alerts via internal monitoring and alerting frameworks. These alerts could come in the way of signature-based alarms such as antimalware, intrusion detection or via algorithms designed to profile expected activity and alert upon anomalies.
 

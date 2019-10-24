@@ -1075,7 +1075,7 @@ PowerApps is a service for building apps that can be shared and used within your
 
 To help facilitate a DSR request related to PowerApps, you can use the administration operations exposed in the [PowerApps Admin Center](https://admin.powerapps.com/) and [PowerApps Admin PowerShell cmdlets](https://go.microsoft.com/fwlink/?linkid=871804). Access to these tools requires an account with the following permissions:
 
-- A paid PowerApps Plan 2 license or a PowerApps Plan 2 trial license. You can sign up for a 30-day trial license [here](http://web.powerapps.com/trial).
+- A paid PowerApps Plan 2 license or a PowerApps Plan 2 trial license. You can sign up for a 30-day trial license [here](https://web.powerapps.com/trial).
 - [Office 365 global administrator](https://support.office.com/article/assign-admin-roles-in-office-365-for-business-eac4d046-1afd-4f1a-85fc-8219c79e1504)
     or
 - [Azure Active Directory global administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal)
@@ -1171,7 +1171,7 @@ After relevant StaffHub content is found, you can view and take screenshots of r
 - **Shared files:** All files in StaffHub are stored on SharePoint Online and can thus be discovered, accessed, and exported by using Content Search as previously described above. They can also be viewed from within StaffHub under the tab **Files**.
 - **Messaging:** Currently, messages can be accessed by following the steps about accessing user-specific data in the next item. In the future, all messages in StaffHub will be stored in Microsoft Teams, which means you be able to use the Content Search tool to access them.
 - **User-specific data:** User-specific data consists of user settings, user activity feed and user shift request history, none of which can be viewed by team members or admins. To access or export user-specific data, have the data subject sign in to their StaffHub account to obtain it. Alternatively, if the data subject has left your organization, you can obtain this data by having your admin reset the user password for the data subject to allow you or the admin to sign in to their account.
-- **Kronos:** StaffHub supports connections to [Kronos](http://www.kronos.com/), which is a third-party workforce management tool. StaffHub and Kronos are independent processors and process your organization's data under individual terms that you have signed with each party. If your DSR relates to data held by Kronos, you need to contact Kronos for DSR assistance and vice versa.
+- **Kronos:** StaffHub supports connections to [Kronos](https://www.kronos.com/), which is a third-party workforce management tool. StaffHub and Kronos are independent processors and process your organization's data under individual terms that you have signed with each party. If your DSR relates to data held by Kronos, you need to contact Kronos for DSR assistance and vice versa.
 
 #### Delete
 
@@ -1208,7 +1208,7 @@ The following sections explain how to use the in-app functionality in Microsoft 
 
 #### Discover
 
-Content created using Sway (found at [www.sway.com](http://www.sway.com)) can only be seen by the owner and those that the author has permitted to view the Sway. See [Privacy Settings in Sway](https://support.office.com/article/privacy-settings-in-sway-394b551c-be6f-4bd7-a70a-f318d72bf217). To determine whether Sway is a place where personal data responsive to your DSR is likely to reside, you can ask the Data Subject and organizational users who are likely to have generated content about the Data Subject to search their Sways and share with you any Sways that are likely to contain personal data responsive to the Data Subject’s request. For information on how to share a Sway, see “Share a Sway from your Organizational Account” in this [Share your Sway](https://support.office.com/article/share-your-sway-1cf853b8-ef7e-46b0-b704-003e58d28998) article.
+Content created using Sway (found at [www.sway.com](https://www.sway.com)) can only be seen by the owner and those that the author has permitted to view the Sway. See [Privacy Settings in Sway](https://support.office.com/article/privacy-settings-in-sway-394b551c-be6f-4bd7-a70a-f318d72bf217). To determine whether Sway is a place where personal data responsive to your DSR is likely to reside, you can ask the Data Subject and organizational users who are likely to have generated content about the Data Subject to search their Sways and share with you any Sways that are likely to contain personal data responsive to the Data Subject’s request. For information on how to share a Sway, see “Share a Sway from your Organizational Account” in this [Share your Sway](https://support.office.com/article/share-your-sway-1cf853b8-ef7e-46b0-b704-003e58d28998) article.
 
 #### Access
 
@@ -1671,7 +1671,7 @@ Deleting a user’s account will not remove system-generated logs for Yammer and
 A global IT admin needs to do the following to delete system-generated logs in the following national clouds:
 
 - Office 365 Germany - When the user account is permanently deleted, the system-generated logs will also be deleted. 
-- Office 365 US Government - Submit a request to Microsoft Support via the [Office 365 admin portal](http://portal.office365.us).
+- Office 365 US Government - Submit a request to Microsoft Support via the [Office 365 admin portal](https://portal.office365.us).
 - Office 365 operated by 21Vianet (China) - Submit a request to Microsoft Support via the Office 365 admin portal at this [URL](https://portal.partner.microsoftonline.cn/AdminPortal/Home#/homepage). Go to **Commerce** and then select **Subscription** -> **Privacy** -> **GDPR** and enter the required information.
 
 ## Part 4: Additional resources to assist you with DSRs

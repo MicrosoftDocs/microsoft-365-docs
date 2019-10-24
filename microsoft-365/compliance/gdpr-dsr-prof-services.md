@@ -75,7 +75,7 @@ The Customer Contact’s personal data is part of Microsoft’s business relatio
 
 Customers should understand that the DSR only covers the personal data of the Customer Contact, and no changes or deletions will be made to any of the customer’s data submitted as part of engagements (for example, transcripts, case descriptions, files, work product), since Microsoft is the data processor. Additionally, to maintain the engagement’s historical record no changes at all will be made to closed engagements, including the record of who opened an engagement.
 
-Upon receiving an inquiry from a Customer Contact regarding a DSR, Microsoft personnel will refer a customer contact to [Microsoft Privacy Support](http://go.microsoft.com/fwlink/?LinkId=321116). This is Microsoft’s primary input mechanism for privacy inquiries and complaints. Upon receiving an inquiry, the Microsoft Privacy Team will identify that this is part of a commercial or organizational account and respond accordingly.
+Upon receiving an inquiry from a Customer Contact regarding a DSR, Microsoft personnel will refer a customer contact to [Microsoft Privacy Support](https://go.microsoft.com/fwlink/?LinkId=321116). This is Microsoft’s primary input mechanism for privacy inquiries and complaints. Upon receiving an inquiry, the Microsoft Privacy Team will identify that this is part of a commercial or organizational account and respond accordingly.
 
 To maintain customer’s business continuity, Microsoft will also not process a DSR associated with an engagement until a replacement contact is confirmed. Upon confirmation of a new contact, Microsoft will swap out the old contact with the new one in open engagements.
 
@@ -204,9 +204,9 @@ Microsoft Support performs all these deletions and, based on customer request, t
 
 ## Microsoft Consulting Services
 
-For Microsoft Consulting Services engagements contracted where the Microsoft Professional Services Data Protection Addendum (<http://aka.ms/professionalservicesdpa>) applies.
+For Microsoft Consulting Services engagements contracted where the Microsoft Professional Services Data Protection Addendum (<https://aka.ms/professionalservicesdpa>) applies.
 
-Microsoft is the data controller for Customer Contacts working with the engagement team. Those individuals should contact [Microsoft Privacy Support](http://go.microsoft.com/fwlink/?LinkId=321116) to fulfill data subject rights.
+Microsoft is the data controller for Customer Contacts working with the engagement team. Those individuals should contact [Microsoft Privacy Support](https://go.microsoft.com/fwlink/?LinkId=321116) to fulfill data subject rights.
 
 Microsoft is the data processor for a DSR located within data provided during a consulting engagement. The customer should contact the engagement manager to build in a plan to assist in responding to a DSR based on the data collected and then specific type of consulting services provided. To the extent your request constitutes a level of effort typically seen within a Microsoft Consulting Services engagement, there may be an additional work order required. Additionally, personal data will be deleted after each consulting engagement within a timeframe dependent on the type of consulting engagement. Customer can request data to be deleted sooner and request an attestation of deletion.
 
@@ -224,4 +224,4 @@ If you need to delete an Office 365 user account in response to a DSR delete req
 
 ## Other Consulting Services
 
-Customer receiving other Professional Services through Microsoft should work through the engagement team for fulfillment of all GDPR requirements. If the engagement team is not able to provide clear instructions on GDPR DSR fulfillment, customers may contact [Microsoft Privacy Support](http://go.microsoft.com/fwlink/?LinkId=321116) for assistance.
+Customer receiving other Professional Services through Microsoft should work through the engagement team for fulfillment of all GDPR requirements. If the engagement team is not able to provide clear instructions on GDPR DSR fulfillment, customers may contact [Microsoft Privacy Support](https://go.microsoft.com/fwlink/?LinkId=321116) for assistance.
