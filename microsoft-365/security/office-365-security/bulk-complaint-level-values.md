@@ -34,4 +34,4 @@ The following table describes the BCL values that are currently in use.
 |0|The message isn't from a bulk sender.|
 |1, 2, 3|The message is from a bulk sender that generates few complaints.|
 |4, 5, 6, 7|The message is from a bulk sender that generates a mixed number of complaints.|
-|8, 9|The message is from a bulk sender that generates a high number of complaints|
+|8, 9|The message is from a bulk sender that generates a high number of complaints.|
