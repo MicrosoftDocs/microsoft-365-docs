@@ -22,9 +22,12 @@ conceptualContent:
   #Card
     - title: What is Microsoft 365 Business?
       links:
-        - url: https://support.office.com/article/901e2522-c2cf-4b8c-894e-f482cda3347a
-          itemType: video
+        - url: microsoft-365-business-overview.md
+          itemType: overview
           text: Overview
+        - url: https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816
+          itemType: video
+          text: Microsoft 365 Business training
         - url: https://www.microsoft.com/microsoft-365/partners/resources/microsoft-365-business-licensing-deck
           itemType: overview
           text: Licenses and purchasing
@@ -38,35 +41,20 @@ conceptualContent:
           itemType: reference
           text: FAQ
   #Card
-    - title: How do I...
+    - title: Set up Microsoft 365 Business
       links:
-        - url: sign-up.md
-          itemType: get-started
-          text: Sign up for Microsoft 365 Business
+        - url: https://support.office.com/article/38003e30-9d10-44cf-b596-f1b5f662bfa1
+          itemType: video
+          text: 1. Run the setup wizard
+        - url: protection-settings-for-windows-10-pcs.md
+          itemType: how-to-guide
+          text: 2. Secure your PCs
+        - url: https://docs.microsoft.com/MicrosoftTeams/get-started-with-teams-quick-start
+          itemType: video
+          text: 3. Set up Teams
         - url: auto-install-or-uninstall-office.md
-          itemType: how-to-guide
-          text: Install Office
-        - url: https://support.office.com/article/where-to-store-files-c7c20284-bc94-47f4-9728-d28e9daf0790
-          itemType: video
-          text: Store files in the cloud
-        - url: https://support.office.com/article/9bc459c4-ce13-479b-b88b-b8ae49092732
-          itemType: video
-          text: Collaborate with Microsoft Teams
-        - url: https://docs.microsoft.com/Office365/Admin/subscriptions-and-billing/view-your-bill-or-invoice?toc=%2Fmicrosoft-365%2Fbusiness%2Ftoc.json&bc=%2Fmicrosoft-365%2Fbusiness%2Fbreadcrumb%2Ftoc.json&view=o365-worldwide
-          itemType: how-to-guide
-          text: View my bill
-  #Card
-    - title: User training
-      links:
-        - url: https://support.office.com/article/office-365-basics-video-training-396b8d9e-e118-42d0-8a0d-87d1f2f055fb
-          itemType: video
-          text: Office basics
-        - url: https://support.office.com/modernworkplace
-          itemType: video
-          text: Modern workplace
-        - url: https://support.office.com/office-training-center/featured-tips
-          itemType: tutorial
-          text: Tips
+          itemType: get-started
+          text: 4. Install Office
   #Card
     - title: Resources for partners (US only)
       links:
@@ -82,21 +70,6 @@ conceptualContent:
         - url: https://www.microsoft.com/microsoft-365/partners/resources/microsoft-365-business-technical-fundamentals-decks-zip
           itemType: download
           text: Tech fundamentals
-  #Card
-    - title: Set up Microsoft 365 Business
-      links:
-        - url: https://support.office.com/article/38003e30-9d10-44cf-b596-f1b5f662bfa1
-          itemType: video
-          text: 1. Run the setup wizard
-        - url: protection-settings-for-windows-10-pcs.md
-          itemType: how-to-guide
-          text: 2. Secure your PCs
-        - url: set-up-mfa.md
-          itemType: how-to-guide
-          text: 3. Set up MFA
-        - url: auto-install-or-uninstall-office.md
-          itemType: get-started
-          text: 4. Install Office
   # Card
     - title: Manage users
       links:
@@ -119,12 +92,15 @@ conceptualContent:
         - url: https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/office-365-atp
           itemType: overview
           text: Office 365 Advanced Threat Protection
-        - url: https://support.office.com/article/eaa43495-9bbb-4fca-922a-df90dee51980
+        - url: set-up-mfa.md
           itemType: how-to-guide
-          text: Send encrypted email
+          text: Set up MFA
         - url: https://docs.microsoft.com/en-us/microsoft-365/business/increase-threat-protection#protect-against-ransomware
           itemType: how-to-guide
           text: Protect against ransomware
+        - url: https://docs.microsoft.com/azure/active-directory/conditional-access/overview
+          itemType: overview
+          text: Conditional Access
       # footerLink (optional)
       footerLink:
         url: https://docs.microsoft.com/office365/admin/admin-home
@@ -135,6 +111,9 @@ conceptualContent:
         - url: https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies
           itemType: overview
           text: Data Loss Prevention 
+        - url: https://support.office.com/article/eaa43495-9bbb-4fca-922a-df90dee51980
+          itemType: how-to-guide
+          text: Send encrypted email
         - url: https://docs.microsoft.com/microsoft-365/business/set-up-compliance#set-up-email-retention-with-exchange-online-archiving
           itemType: how-to-guide
           text: Set up email retention
@@ -157,15 +136,18 @@ conceptualContent:
         - url: reset-devices-to-factory-settings.md
           itemType: how-to-guide
           text: Wipe and reset
-        - url: map-protection-features-to-intune-settings.md
-          itemType: how-to-guide
+        - url: https://docs.microsoft.com/en-us/intune/index
+          itemType: overview
           text: Intune
         - url: manage-windows-devices.md
           itemType: how-to-guide
           text: Set up hybrid Azure AD join
         - url: access-resources.md
           itemType: how-to-guide
-          text: Set up Azure AD join      
+          text: Set up Azure AD join 
+        - url: https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot
+          text: Windows Autopilot
+          itemType: overview    
       # footerLink (optional)
       footerLink:
         url: manage-windows-devices.md
@@ -176,9 +158,9 @@ conceptualContent:
         - url: https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score
           itemType: how-to-guide
           text: Secure score
-        - url: https://support.office.com/article/a32541df-079c-420d-9395-9d59354f7225
-          itemType: video
-          text: Multi-factor authentication
+        - url: https://docs.microsoft.com/intune/apps/app-protection-policies-monitor
+          itemType: overview
+          text: Intune App Protection Policies report
         - url: https://docs.microsoft.com/office365/enterprise/view-service-health
           itemType: how-to-guide
           text: Health monitoring alerts
@@ -201,6 +183,21 @@ conceptualContent:
         - url: https://techcommunity.microsoft.com/t5/Small-and-Medium-Businesses/ct-p/SMB
           itemType: overview
           text: Small and medium business tech community
+  #Card
+    - title: How do I...
+      links:
+        - url: sign-up.md
+          itemType: get-started
+          text: Sign up for Microsoft 365 Business
+        - url: https://support.office.com/article/where-to-store-files-c7c20284-bc94-47f4-9728-d28e9daf0790
+          itemType: video
+          text: Store files in the cloud
+        - url: https://support.office.com/article/9bc459c4-ce13-479b-b88b-b8ae49092732
+          itemType: video
+          text: Collaborate with Microsoft Teams
+        - url: https://docs.microsoft.com/Office365/Admin/subscriptions-and-billing/view-your-bill-or-invoice?toc=%2Fmicrosoft-365%2Fbusiness%2Ftoc.json&bc=%2Fmicrosoft-365%2Fbusiness%2Fbreadcrumb%2Ftoc.json&view=o365-worldwide
+          itemType: how-to-guide
+          text: View my bill
       # footerLink (optional)
       footerLink:
         url: https://docs.microsoft.com/microsoft-365/security/
