@@ -251,7 +251,7 @@ A retention policy that applies to Teams can use [Preservation Lock](#locking-a-
 ![Teams locations for chat and channel messages](media/127345da-e802-4b3a-afc7-6e354dc3f409.png)
   
 > [!NOTE]
-> If you create retention policies for Skype or Teams locations in your organization, one of those policies is shown as the default folder policy when a user views the properties of a mailbox folder in the Outlook desktop client. This is incorrect and [a known issue](https://support.microsoft.com/help/4491013/outlook-client-displays-teams-or-skype-for-business-retention-policies). The Skype or Teams retention policy is not applied to mailbox folders. What should be displayed is the Exchange MRM retention policy that's applied to the mailbox folder. 
+> If you create retention policies for Skype or Teams locations in your organization, one of those policies is shown as the default folder policy when a user views the properties of a mailbox folder in the Outlook desktop client. This is incorrect and [a known issue](https://support.microsoft.com/help/4491013/outlook-client-displays-teams-or-skype-for-business-retention-policies). What should be displayed as the default folder policy is the Exchange MRM retention policy that's applied to the mailbox folder. The Skype or Teams retention policy is not applied to mailbox folders.  
 
 ### Office 365 groups locations
 
