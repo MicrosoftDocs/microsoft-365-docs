@@ -60,7 +60,7 @@ The certification is valid for two years, with an annual surveillance audit.
 
 **How can I get copies of the audit reports and certifications?**
 
-The [Service Trust Portal](http://aka.ms/stphelp) provides the audit reports and certifications in both Spanish and English. Your auditors can use them to compare Microsoft cloud services results with your own legal and regulatory requirements.
+The [Service Trust Portal](https://aka.ms/stphelp) provides the audit reports and certifications in both Spanish and English. Your auditors can use them to compare Microsoft cloud services results with your own legal and regulatory requirements.
 
 **Where do I start with my organization’s own compliance effort?**
 
@@ -68,10 +68,10 @@ If your organization is using Azure or Office 365, you can use ENS Microsoft aud
 
 ## Resources
 
-- Esquema Nacional de Seguridad of Spain ([Spanish](http://administracionelectronica.gob.es/pae_Home/pae_Estrategias/pae_Seguridad_Inicio/pae_Esquema_Nacional_de_Seguridad.html?idioma=sp#.Vwxp82mcGM8) and [English](http://administracionelectronica.gob.es/pae_Home/pae_Estrategias/pae_Seguridad_Inicio/pae_Esquema_Nacional_de_Seguridad.html?idioma=en#.VwvcgmmcGM9))
-- [Microsoft Online Services Terms](http://aka.ms/Online-Services-Terms)
+- Esquema Nacional de Seguridad of Spain ([Spanish](https://administracionelectronica.gob.es/pae_Home/pae_Estrategias/pae_Seguridad_Inicio/pae_Esquema_Nacional_de_Seguridad.html?idioma=sp#.Vwxp82mcGM8) and [English](https://administracionelectronica.gob.es/pae_Home/pae_Estrategias/pae_Seguridad_Inicio/pae_Esquema_Nacional_de_Seguridad.html?idioma=en#.VwvcgmmcGM9))
+- [Microsoft Online Services Terms](https://aka.ms/Online-Services-Terms)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/2/3/2/23208181-BA86-4011-8B4A-3CA7E8E383A1/ENS-Spain-Compliance.pdf).
+Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/2/3/2/23208181-BA86-4011-8B4A-3CA7E8E383A1/ENS-Spain-Compliance.pdf).

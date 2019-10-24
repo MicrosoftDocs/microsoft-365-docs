@@ -17,15 +17,15 @@ hideEdit: true
 
 ## About the PDPA
 
-In agreement with the Argentine National Constitution, the [Personal Data Protection Act 25.326](http://unpan1.un.org/intradoc/groups/public/documents/un-dpadm/unpan044147.pdf) (PDPA) ([Ley de Protección de los Datos Personales](http://servicios.infoleg.gob.ar/infolegInternet/anexos/60000-64999/64790/norma.htm)) was executed in 2000 to help protect the privacy of personal data, and to give individuals access to any information stored in public and private databases and registries. The Argentine Agency of Access to Public Information ([Agencia de Acceso a la Información Pública](https://www.argentina.gob.ar/aaip), AAIP) within the Chief of Ministries’ Cabinet is responsible for enforcing this law.
+In agreement with the Argentine National Constitution, the [Personal Data Protection Act 25.326](https://unpan1.un.org/intradoc/groups/public/documents/un-dpadm/unpan044147.pdf) (PDPA) ([Ley de Protección de los Datos Personales](https://servicios.infoleg.gob.ar/infolegInternet/anexos/60000-64999/64790/norma.htm)) was executed in 2000 to help protect the privacy of personal data, and to give individuals access to any information stored in public and private databases and registries. The Argentine Agency of Access to Public Information ([Agencia de Acceso a la Información Pública](https://www.argentina.gob.ar/aaip), AAIP) within the Chief of Ministries’ Cabinet is responsible for enforcing this law.
 
 The PDPA aligns with the European legislative model for protecting data privacy, and Argentina was the first country in Latin America to achieve an “adequacy” qualification for data transfers from the EU.
 
-In 2016, the AAIP issued a new regulation, [Provision 60-E/2016](http://servicios.infoleg.gob.ar/infolegInternet/anexos/265000-269999/267922/norma.htm) (Spanish), governing cross-border transfers of personal data. Under the rule, it approved model forms (partly based on the data transfer model in the EU) for such transfers to data controllers and data processors.
+In 2016, the AAIP issued a new regulation, [Provision 60-E/2016](https://servicios.infoleg.gob.ar/infolegInternet/anexos/265000-269999/267922/norma.htm) (Spanish), governing cross-border transfers of personal data. Under the rule, it approved model forms (partly based on the data transfer model in the EU) for such transfers to data controllers and data processors.
 
 ## Microsoft and the PDPA
 
-Microsoft contractually commits through the [Microsoft Online Services Terms](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31) that our in-scope business cloud services have implemented technical and organizational security safeguards that can help our customers comply with the Argentine Personal Data Protection Act (PDPA) 25.326. Microsoft also makes a data-transfer agreement available to help with compliance with Provision 60-E/2016, which regulates the cross-border transfer of personal data. This means that Microsoft customers can use Microsoft Azure, Microsoft Dynamics 365, and Microsoft 365 in a manner that complies with the PDPA in Argentina.
+Microsoft contractually commits through the [Microsoft Online Services Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31) that our in-scope business cloud services have implemented technical and organizational security safeguards that can help our customers comply with the Argentine Personal Data Protection Act (PDPA) 25.326. Microsoft also makes a data-transfer agreement available to help with compliance with Provision 60-E/2016, which regulates the cross-border transfer of personal data. This means that Microsoft customers can use Microsoft Azure, Microsoft Dynamics 365, and Microsoft 365 in a manner that complies with the PDPA in Argentina.
 
 The technical and organizational security measures implemented in the business cloud services would also support other rules in the PDPA such as the prohibition of any secondary use of a data subject’s personal data and the prohibition against the transfer of personal data to countries that do not offer an adequate level of protection.
 
@@ -34,7 +34,7 @@ The Microsoft data-transfer agreement is an amendment (Amendment ID M314) to the
 ## Microsoft in-scope cloud services
 
 - [Azure & Azure DevOps](https://gallery.technet.microsoft.com/Overview-of-Azure-c1be3942)
-- [Dynamics 365](http://download.microsoft.com/download/E/1/9/E1977163-7A86-4812-AC18-C03ADC958AAF/Microsoft_Dynamics_365_Cloud_Service_Compliance_Datasheet.pdf)
+- [Dynamics 365](https://download.microsoft.com/download/E/1/9/E1977163-7A86-4812-AC18-C03ADC958AAF/Microsoft_Dynamics_365_Cloud_Service_Compliance_Datasheet.pdf)
 - [Microsoft 365](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=9f756cce-b15d-45a9-94d7-6a583dee4401&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)
 
 ## How to implement
@@ -52,9 +52,9 @@ In late 2018, Argentina has not yet enacted GDPR-related regulations, but it has
 
 - [Privacy at Microsoft](https://privacy.microsoft.com)
 - [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement)
-- [Privacy Considerations in the Cloud](http://download.microsoft.com/download/0/9/D/09DE47F6-F9E5-4C14-B9E8-E8119A130ACC/Privacy_considerations_in_the_cloud.pdf)
+- [Privacy Considerations in the Cloud](https://download.microsoft.com/download/0/9/D/09DE47F6-F9E5-4C14-B9E8-E8119A130ACC/Privacy_considerations_in_the_cloud.pdf)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/7/0/1/7018F836-AE7C-4E98-8159-C6AA04D803CB/PDPA-Compliance.pdf).
+Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/7/0/1/7018F836-AE7C-4E98-8159-C6AA04D803CB/PDPA-Compliance.pdf).

@@ -70,11 +70,11 @@ Audit cycle: Microsoft cloud services are audited at least annually against the 
 
 ### Azure DevOps Services
 
-- [Azure DevOps Services](http://www.bsigroup.com/Our-services/Management-system-certification/Certificate-and-Client-Directory-Search/Certificate-Client-Directory-Search-Results/?searchkey=licence%3d619017%26company%3dVisual%2bStudio%2bOnline&licencenumber=IS%20619017)
+- [Azure DevOps Services](https://www.bsigroup.com/Our-services/Management-system-certification/Certificate-and-Client-Directory-Search/Certificate-Client-Directory-Search-Results/?searchkey=licence%3d619017%26company%3dVisual%2bStudio%2bOnline&licencenumber=IS%20619017)
 
 ### Microsoft Professional Services
 
-- [Microsoft Professional Services](http://www.bsigroup.com/Our-services/Certification/Certificate-and-Client-Directory-Search/Certificate-Client-Directory-Search-Results/?searchkey=licence%3d601002%26company%3dMicrosoft&licencenumber=IS%20601002)
+- [Microsoft Professional Services](https://www.bsigroup.com/Our-services/Certification/Certificate-and-Client-Directory-Search/Certificate-Client-Directory-Search-Results/?searchkey=licence%3d601002%26company%3dMicrosoft&licencenumber=IS%20601002)
 
 ### Windows Defender ATP
 
@@ -123,12 +123,12 @@ The [Service Trust Portal](https://support.office.com/article/Get-started-with-t
 
 Yes. The annual ISO/IEC 27001 certification process for the Microsoft Cloud Infrastructure and Operations group includes an audit for operational resiliency. To preview the latest certificate, click the link below.
 
-- Microsoft Azure: [ISO/IEC 27001:2013 certificate for Microsoft Cloud Infrastructure and Operations](http://www.bsigroup.com/Our-services/Management-system-certification/Certificate-and-Client-Directory-Search/Certificate-Client-Directory-Search-Results/?searchkey=company%3dMicrosoft&licencenumber=IS%20533913)
+- Microsoft Azure: [ISO/IEC 27001:2013 certificate for Microsoft Cloud Infrastructure and Operations](https://www.bsigroup.com/Our-services/Management-system-certification/Certificate-and-Client-Directory-Search/Certificate-Client-Directory-Search-Results/?searchkey=company%3dMicrosoft&licencenumber=IS%20533913)
 - Azure German
 
 **Where do I start my organization’s own ISO/IEC 27001 compliance effort?**
 
-Adopting ISO/IEC 27001 is a strategic commitment. As a starting point, consult the [ISO/IEC 27000 Directory](http://www.27000.org/index.htm).
+Adopting ISO/IEC 27001 is a strategic commitment. As a starting point, consult the [ISO/IEC 27000 Directory](https://www.27000.org/index.htm).
 
 **Can I use the ISO/IEC 27001 compliance of Microsoft services in my organization’s certification?**
 
@@ -136,13 +136,13 @@ Yes. If your business requires ISO/IEC 27001 certification for implementations d
 
 ## Resources
 
-- [Mapping Microsoft Cyber Offerings to: NIST Cybersecurity (CSF),CIS Controls and ISO27001:2013 Frameworks](http://download.microsoft.com/download/B/1/8/B18F4C7D-5CBA-4E68-A437-31F1E908ACBA/Microsoft_Cyber_Offerings_Mapped_to_Security_Frameworks_EN_US.pdf)
-- [The ISO/IEC 27000 Directory](http://www.27000.org/index.htm)
-- [ISO/IEC 27001: 2013 standard](http://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.htm?csnumber=54534) (for purchase)
-- [Microsoft sets a high bar for information security](http://pages.bsigroup.com/l/73472/2015-07-24/v9btr) (BSI case study)
+- [Mapping Microsoft Cyber Offerings to: NIST Cybersecurity (CSF),CIS Controls and ISO27001:2013 Frameworks](https://download.microsoft.com/download/B/1/8/B18F4C7D-5CBA-4E68-A437-31F1E908ACBA/Microsoft_Cyber_Offerings_Mapped_to_Security_Frameworks_EN_US.pdf)
+- [The ISO/IEC 27000 Directory](https://www.27000.org/index.htm)
+- [ISO/IEC 27001: 2013 standard](https://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.htm?csnumber=54534) (for purchase)
+- [Microsoft sets a high bar for information security](https://pages.bsigroup.com/l/73472/2015-07-24/v9btr) (BSI case study)
 - [Microsoft Common Controls Hub Compliance Framework](https://www.microsoft.com/trustcenter/common-controls-hub)
-- [Microsoft Online Services Terms](http://aka.ms/Online-Services-Terms)
-- [Microsoft Cloud for Government](http://enterprise.microsoft.com/industries/government/start-your-microsoft-cloud-for-government-trial-today)
+- [Microsoft Online Services Terms](https://aka.ms/Online-Services-Terms)
+- [Microsoft Cloud for Government](https://enterprise.microsoft.com/industries/government/start-your-microsoft-cloud-for-government-trial-today)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## White papers
@@ -152,4 +152,4 @@ Yes. If your business requires ISO/IEC 27001 certification for implementations d
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/1/2/9/12926039-8F90-4BAF-AC8F-7124D48F400B/ISOIEC_27001_Compliance_Backgrounder.pdf).
+Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/1/2/9/12926039-8F90-4BAF-AC8F-7124D48F400B/ISOIEC_27001_Compliance_Backgrounder.pdf).
