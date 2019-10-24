@@ -68,18 +68,18 @@ Yes. If your organization requires or is seeking an accreditation in line with t
 
 Start with the [IRAP tool kit](https://www.cyber.gov.au/node/291) and follow it with the information below:
 
-- [What is an IRAP assessment](http://www.asd.gov.au/infosec/irap/irap_assessments.htm)
+- [What is an IRAP assessment](https://www.asd.gov.au/infosec/irap/irap_assessments.htm)
 - [Who provides IRAP training?](https://www.cyber.gov.au/irap/training)
 - [Compliance and noncompliance requirements information](https://www.cyber.gov.au/irap/compliance)
 
 ## Resources
 
-- [Australian Government ISM](http://www.asd.gov.au/infosec/ism/index.htm)
-- [ASD IRAP policy and procedures](http://aka.ms/irap-policy)
-- [ASD Certified Cloud Services](http://www.asd.gov.au/infosec/irap/certified_clouds.htm)
-- [Microsoft Online Services Terms](http://aka.ms/Online-Services-Terms)
+- [Australian Government ISM](https://www.asd.gov.au/infosec/ism/index.htm)
+- [ASD IRAP policy and procedures](https://aka.ms/irap-policy)
+- [ASD Certified Cloud Services](https://www.asd.gov.au/infosec/irap/certified_clouds.htm)
+- [Microsoft Online Services Terms](https://aka.ms/Online-Services-Terms)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/9/9/C/99CF1E4A-510C-45FD-9819-B81E1CDFC3C3/IRAP_CCSL_Compliance_Backgrounder.pdf).
+Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/9/9/C/99CF1E4A-510C-45FD-9819-B81E1CDFC3C3/IRAP_CCSL_Compliance_Backgrounder.pdf).

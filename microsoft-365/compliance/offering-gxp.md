@@ -17,7 +17,7 @@ hideEdit: true
 
 ## About GxP
 
-The term *GxP* is a general abbreviation for "good practice" guidelines and regulations. The "x" represents a particular field — clinical (GCP), manufacturing (GMP), distribution (GDP), laboratory (GLP), agriculture (GAP), and so on. There is no single regulatory entity or administration; each country has its own guidelines and regulators, although requirements are similar from country to country. GxP regulations include those outlined in the [US FDA CFR Title 21 Part 11](http://aka.ms/FDA-CFR) and [EudraLex Volume 4 — GMP Guidelines, Annex 11](https://ec.europa.eu/health/documents/eudralex/vol-4_en) in the EU.
+The term *GxP* is a general abbreviation for "good practice" guidelines and regulations. The "x" represents a particular field — clinical (GCP), manufacturing (GMP), distribution (GDP), laboratory (GLP), agriculture (GAP), and so on. There is no single regulatory entity or administration; each country has its own guidelines and regulators, although requirements are similar from country to country. GxP regulations include those outlined in the [US FDA CFR Title 21 Part 11](https://aka.ms/FDA-CFR) and [EudraLex Volume 4 — GMP Guidelines, Annex 11](https://ec.europa.eu/health/documents/eudralex/vol-4_en) in the EU.
 
 Regulatory goals aim to make sure that businesses in regulated industries manufacture products that are safe to use and meet stringent quality standards during the production process. Computerized systems that use GxP processes require validation of adherence to GxP requirements and are considered qualified when the system can demonstrate its ability to fulfill them.
 
@@ -39,7 +39,7 @@ Life sciences organizations building GxP solutions on Azure and Office 365 can t
 ## Microsoft in-scope cloud services
 
 - [Azure](https://aka.ms/AzureCompliance)
-- [Office 365](http://aka.ms/o365-compliance-framework)
+- [Office 365](https://aka.ms/o365-compliance-framework)
 
 ## How to implement
 
