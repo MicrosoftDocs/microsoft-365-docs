@@ -73,7 +73,7 @@ Built-in remediation workflows allow you to quickly identify and take action on 
 - **Exact and near duplicate detection**: In addition to scanning for exact terms matching communication compliance polices, near duplicate detection groups textually similar terms and messages together to help speed up your review process.
 - ​**Improved filters**: Investigate and remediate policy alerts faster with message filters for several fields, including sender, recipient, date, domains, and many more.
 - **Improved message views**: Investigation and remediation actions are now quicker with new message source, text, and annotation views.
-- **User history view**: Historical view of user message activities, such as past notifications and escalations for policy matches, now provide reviewers with more context during the remediation workflow process.
+- **User history view**: Historical view of user message remediation activities, such as past notifications and escalations for policy matches, now provide reviewers with more context during the remediation workflow process.
 
 ### Actionable insights
 
@@ -116,7 +116,7 @@ In this step, you look deeper into the issues detected as matching your communic
 - **Alerts**: When a message matches a supervision policy, an alert is automatically generated. For each alert, you can see the status, the severity, the time detected, and if a case is assigned and its status. New alerts are displayed on the communication compliance home page and the **Alerts** page and are listed in order of severity.
 - **Issue management**: For each alert, you can take investigative actions to help remediate the issue detected in the message
 - **Document review**: During the investigation of an issue, you can use several views of the message to help properly evaluate the detected issue. The views include a conversation summary, text-only, annotated, and detail views of the communication conversation.
-- **Reviewing user activity history**: In addition to message views, you can view the history... NEED MORE INFO - past remediation action for the user, includes supervision cases, escalations, notifications
+- **Reviewing user activity history**: View the history of user message activities and remediation actions, such as past notifications and escalations for policy matches.
 
 ### Remediate
 
