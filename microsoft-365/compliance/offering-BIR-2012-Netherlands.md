@@ -63,11 +63,11 @@ The report is provided to customers under a non-disclosure agreement (NDA), on t
 ## Resources
 
 - [ISO-IEC 27001](offering-iso-27001.md)
-- [Security prescription national 2013 (BVR)](http://wetten.overheid.nl/BWBR0033512/2013-06-01)
-- [Prescription information security national 2007 (VIR)](http://wetten.overheid.nl/BWBR0022141/2007-07-01)
-- [Baseline Information Security (BIR)](http://www.earonline.nl/index.php/Overzicht_Baseline_Informatiebeveiliging_Rijksdienst_\(BIR_2012\))
+- [Security prescription national 2013 (BVR)](https://wetten.overheid.nl/BWBR0033512/2013-06-01)
+- [Prescription information security national 2007 (VIR)](https://wetten.overheid.nl/BWBR0022141/2007-07-01)
+- [Baseline Information Security (BIR)](https://www.earonline.nl/index.php/BIR_2012)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/F/0/0/F00F62B6-254B-41AC-AC79-7A43CD6E376C/BIR2012-Compliance.pdf).
+Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/F/0/0/F00F62B6-254B-41AC-AC79-7A43CD6E376C/BIR2012-Compliance.pdf).
