@@ -88,8 +88,8 @@ It is an organization or agency that is funded by the UK government but acts ind
 
 The Microsoft Cloud in the UK provides reliability and performance combined with data residency in the UK. This provides customers with trusted cloud services that help them meet local compliance and policy requirements. In addition, replication of data in multiple datacenters across the UK gives customers geo-redundant data protection for business continuity, for both pure cloud and hybrid scenarios. We have datacenters in multiple locations across the UK.
 
-- You can see the new Azure regions, UK West, and UK South, on the [global Azure map](http://azuredatacentermap.azurewebsites.net/).
-- For Office 365, the UK datacenters collectively comprise the new UK Office 365 region. You can see more on the [global Office 365 map](http://o365datacentermap.azurewebsites.net/).
+- You can see the new Azure regions, UK West, and UK South, on the [global Azure map](https://azuredatacentermap.azurewebsites.net/).
+- For Office 365, the UK datacenters collectively comprise the new UK Office 365 region. You can see more on the [global Office 365 map](https://o365datacentermap.azurewebsites.net/).
 
 **Where are the other Microsoft EU datacenters located?**
 
@@ -102,12 +102,12 @@ The [Service Trust Portal](https://support.office.com/article/Get-started-with-t
 ## Resources
 
 - [Effective Compliance Controls to Address the UK Governments Common 14 Cloud Security Principles Using Microsoft Azure](https://aka.ms/complianceuk)
-- [UK Government Cloud Strategy](http://aka.ms/UK_govt_cloud_strategy)
-- [G-Cloud Security Principles](http://aka.ms/UK-G-Cloud)
+- [UK Government Cloud Strategy](https://aka.ms/UK_govt_cloud_strategy)
+- [G-Cloud Security Principles](https://aka.ms/UK-G-Cloud)
 - [Digital Marketplace](https://www.digitalmarketplace.service.gov.uk/)
-- [Microsoft Online Services](http://aka.ms/Online-Services-Terms)
+- [Microsoft Online Services](https://aka.ms/Online-Services-Terms)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/9/E/0/9E008CC0-6783-4472-B19D-F5B6970DD73A/UK_GCloud_Compliance_Backgrounder.pdf).
+Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/9/E/0/9E008CC0-6783-4472-B19D-F5B6970DD73A/UK_GCloud_Compliance_Backgrounder.pdf).

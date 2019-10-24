@@ -19,7 +19,7 @@ hideEdit: true
 
 The [Financial Authority](https://www.amf-france.org/en_US/?langSwitch=true) ([Autorité des Marchés Financiers, AMF](https://amf-france.org/)) and the [Prudential Authority](https://acpr.banque-france.fr/en/page-sommaire/about-acpr) ([Autorité de Contrôle Prudentiel et de Résolution, ACPR](https://acpr.banque-france.fr/)) are the primary financial regulators in France. In its capacity as the stock market regulator, the AMF is responsible for the supervision of financial markets and investment firms. The ACPR, an independent administrative authority under the central bank, the [Banque de France](https://www.banque-france.fr/), supervises the banking and insurance sectors.  
   
-The AMF and ACPR act in concert with the European Banking Authority (EBA), “an independent EU authority, which works to ensure effective and consistent prudential regulation and supervision across the European banking sector.” To that end, the EBA has outlined a comprehensive approach to the use of cloud computing by financial institutions in the EU, [Recommendations on outsourcing to cloud services providers](https://eba.europa.eu/documents/10180/2170121/Final+draft+Recommendations+on+Cloud+Outsourcing+\(EBA-Rec-2017-03\).pdf).  
+The AMF and ACPR act in concert with the European Banking Authority (EBA), “an independent EU authority, which works to ensure effective and consistent prudential regulation and supervision across the European banking sector.” To that end, the EBA has outlined a comprehensive approach to the use of cloud computing by financial institutions in the EU, [Recommendations on outsourcing to cloud services providers](https://eba.europa.eu/sites/default/documents/files/documents/10180/1848359/c1005743-567e-40fc-a995-d05fb93df5d1/Draft%20Recommendation%20on%20outsourcing%20to%20Cloud%20Service%20%20%28EBA-CP-2017-06%29.pdf ).  
   
 There are several requirements and guidelines that financial institutions in France should be aware of when moving operational functions to the cloud:
 
@@ -55,7 +55,7 @@ The Microsoft checklist helps French financial firms conducting due-diligence as
 
 **Is regulatory approval required?**
 
-The EBA publication, [Recommendations on outsourcing to cloud services providers](https://eba.europa.eu/documents/10180/2170121/Final+draft+Recommendations+on+Cloud+Outsourcing+\(EBA-Rec-2017-03\).pdf/5fa5cdde-3219-4e95-946d-0c0d05494362), outlines a comprehensive approach to material outsourcing by financial institutions in the EU. Also, in certain instances, financial firms must notify the AMF or ACPR of their outsourcing arrangements, as described on pages 8 and 9 of the [checklist](https://aka.ms/FinServ-Guide-France). While it is unlikely these circumstances would apply to the use of Microsoft cloud services, financial services should verify their applicability by reviewing the checklist.
+The EBA publication, [Recommendations on outsourcing to cloud services providers](https://eba.europa.eu/sites/default/documents/files/documents/10180/1848359/c1005743-567e-40fc-a995-d05fb93df5d1/Draft%20Recommendation%20on%20outsourcing%20to%20Cloud%20Service%20%20%28EBA-CP-2017-06%29.pdf /5fa5cdde-3219-4e95-946d-0c0d05494362), outlines a comprehensive approach to material outsourcing by financial institutions in the EU. Also, in certain instances, financial firms must notify the AMF or ACPR of their outsourcing arrangements, as described on pages 8 and 9 of the [checklist](https://aka.ms/FinServ-Guide-France). While it is unlikely these circumstances would apply to the use of Microsoft cloud services, financial services should verify their applicability by reviewing the checklist.
 
 **Are there any mandatory terms that must be included in the contract with the cloud services provider?**
 
@@ -71,5 +71,5 @@ Yes. Article 239 of the [ACPR Order of 3 November 2014](https://www.legifrance.g
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/3/D/8/3D81D753-0896-4D8C-9131-D9F9153942DB/AMF-ACPR-Compliance.pdf).
+Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/3/D/8/3D81D753-0896-4D8C-9131-D9F9153942DB/AMF-ACPR-Compliance.pdf).
 

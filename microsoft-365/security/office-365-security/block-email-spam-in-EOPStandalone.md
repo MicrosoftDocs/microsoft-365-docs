@@ -18,7 +18,7 @@ ms.collection:
 description: "Document for EOP Standalone admins to help prevent spam false negatives"
 ---
 
-## Customize the Office 365 anti-spam filter with these settings
+# Customize the Office 365 anti-spam filter with these settings
 
 An Admin can use several Office 365 spam filter settings to help prevent email spam from being sent to a user inbox. The Office 365 spam filter will become better able to block email spam and prevent false negative messages if you use the options listed here. In this context, a false negative refers to email spam or junk messages that are getting sent to a user inbox.
   
