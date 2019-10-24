@@ -138,12 +138,12 @@ For more information about role groups and permissions, see [Permissions in the 
 
     If you choose a policy template to create a policy, you will:
 
-    - Confirm or update the policy name
+    - Confirm or update the policy name.
     - Choose the users or groups to supervise, including choosing users or groups you'd like to exclude.
     - Choose the reviewers for the policy. Reviewers can be individual users or [mail-enabled security groups](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups#create-a-mail-enabled-security-group). All reviewers must have mailboxes hosted on Exchange Online.
     - Choose a limited condition field, usually a keyword dictionary to apply to the policy.
 
-    If you choose to use the wizard to create a custom policy, you will:
+    If you choose to use the policy wizard to create a custom policy, you will:
 
     - Give the policy a name and description.
     - Choose the users or groups to supervise, including choosing users or groups you'd like to exclude.
