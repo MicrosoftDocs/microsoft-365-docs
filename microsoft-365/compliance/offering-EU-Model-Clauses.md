@@ -65,7 +65,7 @@ A service provider that commits contractually to the Model Clauses gives its cus
 
 **Where can I see compliance information for Microsoft services?**
 
-Compliance is a contractual commitment. Microsoft Standard Contractual Clauses are available to all cloud customers in the [Online Services Terms](http://aka.ms/Online-Services-Terms); for other services, see your existing agreement with Microsoft.
+Compliance is a contractual commitment. Microsoft Standard Contractual Clauses are available to all cloud customers in the [Online Services Terms](https://aka.ms/Online-Services-Terms); for other services, see your existing agreement with Microsoft.
 
 **What is a "sub-processor"?**
 
@@ -73,20 +73,20 @@ A "sub-processor" is someone who processes personal data following the data cont
 
 **Where do I start with my own organization’s compliance efforts?**
 
-You can enter an agreement such, as the [Online Services Terms](http://aka.ms/Online-Services-Terms), or explore amending your existing agreement to incorporate the Standard Contractual Clauses.
+You can enter an agreement such, as the [Online Services Terms](https://aka.ms/Online-Services-Terms), or explore amending your existing agreement to incorporate the Standard Contractual Clauses.
 
 ## Resources
 
-- [EU Standards Organization](http://eur-lex.europa.eu/)
-- [EU Model Clauses](http://aka.ms/EU-model_clauses)
-- [EU Data Protection Directive](http://aka.ms/EU-DPD)
+- [EU Standards Organization](https://eur-lex.europa.eu/)
+- [EU Model Clauses](https://aka.ms/EU-model_clauses)
+- [EU Data Protection Directive](https://aka.ms/EU-DPD)
 - [European Data Protection Board](https://edpb.europa.eu/)
 - [EU Model Clauses FAQ for Dynamics 365 and Office 365](https://products.office.com/business/office-365-trust-center-eu-model-clauses-faq)
 - [Microsoft and the EU-U.S. Privacy Shield](https://go.microsoft.com/fwlink/p/?linkid=2099701)
 - [Microsoft Common Controls Hub Compliance Framework](https://www.microsoft.com/trustcenter/common-controls-hub)
-- [Microsoft Online Services Terms](http://aka.ms/Online-Services-Terms)
+- [Microsoft Online Services Terms](https://aka.ms/Online-Services-Terms)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/E/5/F/E5FA8D11-07A4-4496-82B3-0BCFABAA2FB7/EU_Model_Clauses_Compliance_Backgrounder.pdf).
+Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/E/5/F/E5FA8D11-07A4-4496-82B3-0BCFABAA2FB7/EU_Model_Clauses_Compliance_Backgrounder.pdf).
