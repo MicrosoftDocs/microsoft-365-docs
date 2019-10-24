@@ -3,7 +3,6 @@
   expanded: true
   items:
     - name: Products and services
-      expanded: true
       items: 
         - name: Manage third-party apps
           href: manage-saas-apps.md
@@ -19,16 +18,17 @@
           href: /office365/admin/subscriptions-and-billing/upgrade-to-different-plan?view=o365-worldwide&context=/microsoft-365/commerce/context/context-commerce
     - name: Bills and payments
       items: 
-        - name: Understand my invoice
-          href: /microsoft-store/billing-understand-your-invoice-msfb?context=/microsoft-365/commerce/context/context-commerce
+        - name: Understand your invoice
+          href: /microsoft-365/commerce/billing-and-payments/understand-your-invoice
         - name: Manage payment methods
           href: /microsoft-store/payment-methods?context=/microsoft-365/commerce/context/context-commerce
         - name: Manage billing profiles
-          href: /microsoft-store/billing-profile?context=/microsoft-365/commerce/context/context-commerce
+          href: /microsoft-365/commerce/billing-and-payments/manage-billing-profiles
         - name: Order history
           href: /microsoft-store/manage-orders-microsoft-store-for-business?context=/microsoft-365/commerce/context/context-commerce
         - name: Payment Services Directive 2 and Strong Customer Authentication
-          href: psd2.md
+          href: /microsoft-365/commerce/billing-and-payments/psd2.md
+    - name: Billing accounts
       items: 
         - name: Manage billing account info
           href: /microsoft-store/update-microsoft-store-for-business-account-settings?context=/microsoft-365/commerce/context/context-commerce

@@ -53,7 +53,7 @@ Learn how to accelerate your CSA STAR Self-Assessment deployment with our Azure 
 
 **Which industry standards does the CSA CCM align with?**
 
-The CCM corresponds to industry-accepted security standards, regulations, and control frameworks such as ISO 27001, PCI DSS, HIPAA, AICPA SOC 2, NERC CIP, FedRAMP, NIST, and many more. For the most current list, visit the [CSA website](http://cloudsecurityalliance.org/).
+The CCM corresponds to industry-accepted security standards, regulations, and control frameworks such as ISO 27001, PCI DSS, HIPAA, AICPA SOC 2, NERC CIP, FedRAMP, NIST, and many more. For the most current list, visit the [CSA website](https://cloudsecurityalliance.org/).
 
 **Why is the CSA STAR Self-Assessment important?**
 
@@ -67,7 +67,7 @@ It enables CSPs to document compliance with CSA published best practices in a tr
 
 ## Resources
 
-- [Cloud Security Alliance](http://cloudsecurityalliance.org/)
+- [Cloud Security Alliance](https://cloudsecurityalliance.org/)
 - [Cloud Controls Matrix (CCM)](https://cloudsecurityalliance.org/group/cloud-controls-matrix/)
 - [Consensus Assessments Initiative Questionnaire (CAIQ)](https://cloudsecurityalliance.org/group/consensus-assessments/)
 - [CSA Security, Trust & Assurance Registry (STAR)](https://cloudsecurityalliance.org/star/)
@@ -75,10 +75,10 @@ It enables CSPs to document compliance with CSA published best practices in a tr
 
 ## Microsoft CSA STAR self-assessments
 
-- [Azure](http://aka.ms/Azure_STAR)
-- [Dynamics 365](http://aka.ms/DynamicsCRM_Online_STAR)
+- [Azure](https://aka.ms/Azure_STAR)
+- [Dynamics 365](https://aka.ms/DynamicsCRM_Online_STAR)
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/7/C/E/7CE08DFE-86D6-4690-9455-5123DA0A7C09/CSA-STAR-SelfAssessment-Compliance.pdf).
+Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/7/C/E/7CE08DFE-86D6-4690-9455-5123DA0A7C09/CSA-STAR-SelfAssessment-Compliance.pdf).
 
