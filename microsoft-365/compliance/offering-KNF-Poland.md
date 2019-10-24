@@ -23,11 +23,11 @@ The KNF acts in concert with the [European Banking Authority](https://eba.europa
 
 There are several requirements and guidelines that financial institutions in Poland should be aware of when moving business functions and data to the cloud:
 
-- The Banking Act of 1997 ([Polish](http://www.nbp.pl/akty_prawne/ustawa_o_nbp/ustawa_o_nbp.pdf) and [English](http://www.nbp.pl/en/aktyprawne/thebankingact.pdf)) does not regulate cloud services directly but instead sets out legal requirements for outsourcing banking operations including how personal information can be processed. Cloud services could be subject to Banking Act provisions if the outsourced services are of key significance for the bank, or if outsourcing involves giving the service provider access to sensitive data that is subject to banking secrecy requirements.
+- The Banking Act of 1997 ([Polish](https://www.nbp.pl/akty_prawne/ustawa_o_nbp/ustawa_o_nbp.pdf) and [English](https://www.nbp.pl/en/aktyprawne/thebankingact.pdf)) does not regulate cloud services directly but instead sets out legal requirements for outsourcing banking operations including how personal information can be processed. Cloud services could be subject to Banking Act provisions if the outsourced services are of key significance for the bank, or if outsourcing involves giving the service provider access to sensitive data that is subject to banking secrecy requirements.
 - The Announcement, issued by the KNF Office in 2017, provides a detailed checklist and action plan for regulated institutions that intend to move business functions to the cloud.
 - [Recommendation D](https://www.knf.gov.pl/knf/en/komponenty/img/Recommendation_D_44255.pdf): Management of Information Technology and ICT Environment Security at Banks defines KNF expectations for prudent IT security management by banks, particularly as to how they manage risk. The KNF makes 22 recommendations for best security practices and has issued comparable guidelines for [insurance companies](https://www.knf.gov.pl/knf/en/komponenty/img/knf_136041_KNF_IT_Guidelines_for_Insurance_41850.pdf), [investment firms](https://www.knf.gov.pl/knf/en/komponenty/img/knf_158416_Wytyczne_IT_firmy_inwestycyjne_eng_47464.pdf), and [general pension companies](https://www.knf.gov.pl/knf/en/komponenty/img/knf_136042_KNF_IT_Guidelines_for_Pensions_41851.pdf).
 
-In addition, the use of cloud services by financial institutions must comply with Poland’s Personal Data Protection Act of 1997, which is fundamental to the processing of personal data. To align with the GDPR, it was amended in late 2018 by the Act on Facilitation of Performance of Business Activity ([Polish](http://orka.sejm.gov.pl/proc7.nsf/ustawy/2606_u.htm)) and will take effect 1 January 2019.
+In addition, the use of cloud services by financial institutions must comply with Poland’s Personal Data Protection Act of 1997, which is fundamental to the processing of personal data. To align with the GDPR, it was amended in late 2018 by the Act on Facilitation of Performance of Business Activity ([Polish](https://orka.sejm.gov.pl/proc7.nsf/ustawy/2606_u.htm)) and will take effect 1 January 2019.
 
 ## Microsoft and the KNF
 
@@ -73,4 +73,4 @@ Yes. Part 2 of the [Microsoft checklist](https://aka.ms/FinServ-Guide-Poland) (p
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/B/3/9/B392C073-FDF7-4F0C-8765-03ACEE5E0289/KNF-Compliance.pdf).
+Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/B/3/9/B392C073-FDF7-4F0C-8765-03ACEE5E0289/KNF-Compliance.pdf).

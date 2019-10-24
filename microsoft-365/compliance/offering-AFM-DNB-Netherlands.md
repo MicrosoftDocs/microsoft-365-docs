@@ -76,4 +76,4 @@ Yes. The provisions and arrangements to be included in cloud contracts depend on
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/A/E/5/AE505D51-DA54-4B2D-B1BD-C76D9102F36A/AFM-DNB-Compliance.pdf).
+Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/A/E/5/AE505D51-DA54-4B2D-B1BD-C76D9102F36A/AFM-DNB-Compliance.pdf).
