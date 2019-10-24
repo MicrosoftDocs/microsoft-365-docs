@@ -10,19 +10,19 @@ ms.collection: M365-modern-desktop
 
 # Service changes and communication
 
-Sometimes, Microsoft might need to change details about the way Microsoft Managed Desktop works. Similarly, you might need to make changes that would affect the service as well. We handle such changes differently depending on how serious they are. This topic defines the changes we consider “major,” and explains how we handle them versus other changes.
+Sometimes, Microsoft might need to change details about the way Microsoft Managed Desktop works. Similarly, you might need to make changes that would affect the service as well. We handle such changes differently depending on how significant they are. This topic defines the changes we consider major, and explains how we handle them versus other changes.
 
 
 
 ## Changes made by Microsoft
 
-Microsoft Managed Desktop will give you notice of any “major” changes 30 days ahead of time for any change requiring action by your admins. We’ll let you know by using the Microsoft Managed Desktop Admin portal messaging system.
+We'll give you notice at least 30 days ahead of time for any major change that requires action. We’ll let you know by using the Microsoft Managed Desktop Admin portal messaging system.
 
 **Major changes** are those that might impact any of these areas:
-- Daily productivity
-- Customizing applications
-- Increase or decrease of capacity
-- Changes in product branding that could cause user confusion or change in helpdesk processes and reference material or URLs
+- Changes affecting daily productivity
+- Changes to customized features and applications
+- Increase or decrease of visible capacity
+- Changes in product branding that might cause user confusion or change in helpdesk processes and reference material or URLs
 - Changes requiring permissions beyond those required by the service for daily operations, excluding actions that prevent or fix issues
 - Changes to where your data is stored
 - Adding a new component service or application to the scope of the service
@@ -32,7 +32,7 @@ Microsoft Managed Desktop will give you notice of any “major” changes 30 day
 > [!NOTE]
 > We might have to make changes to mitigate incidents or security issues that would be excluded from the 30-day notification policy.
 
-We’ll routinely make other changes to the service to improve user experience, security, reliability, and reporting. Some examples of these minor changes include:
+We’ll routinely make other changes to the service to improve user experience, security, reliability, and reporting. Some examples of these changes include:
 
 - Installation of Windows and Office updates
 - Updates to the security baseline applied to devices
@@ -46,7 +46,7 @@ Microsoft Managed Desktop changes and communications are governed by two Microso
 
 ## Changes you make
 
-Some changes that you might make in your deployment could impact Microsoft Managed Desktop. For these “major” changes, we ask that you give us 30 days’ notice by submitting a service request in the Microsoft Managed Desktop Admin portal. This allows us adequate time to plan and prepare for the change to avoid disruptions.
+Some changes that you might make in your environment could impact Microsoft Managed Desktop. For these major changes, we ask that you give us at least 30 days’ notice by submitting a service request in the Microsoft Managed Desktop Admin portal. See [Admin support for Microsoft Managed Desktop](../working-with-managed-desktop/admin-support.md) for instructions. This allows us adequate time to plan and prepare for the change to avoid disruptions.
 
 Major changes are those that might impact any of these areas:
 
@@ -65,5 +65,4 @@ These changes aren’t likely to be disruptive, so you don’t need to let us kn
 - Configuration of system that does not have a material impact on the delivery of the Microsoft Managed Desktop
 - Application version updates, with the exception of VPN or proxy applications
 
-If you have any questions about any changes, contact the Microsoft Managed Desktop [Operations team](../working-with-managed-desktop/admin-support.md).
 
