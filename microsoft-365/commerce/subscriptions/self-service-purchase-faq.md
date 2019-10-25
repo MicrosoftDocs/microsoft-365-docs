@@ -51,7 +51,7 @@ Currently, credit card is the only available payment method. Payment through inv
 
 ### Who can buy through self-service purchase?
 
-Any user with a non-guest user account in a managed Azure Active Directory tenant can buy. This capability will not be available to tenants that are government, nonprofit, or education, at this time. Users in organizations or markets who are not eligible for self-service purchase will see a message asking them to contact their IT admin as they do today.
+Any user with a non-guest user account in a managed AAD tenant can buy. This capability will not be available to tenants that are government, nonprofit, or education, at this time. Users in organizations or markets who are not eligible for self-service purchase will see a message asking them to contact their IT admin as they do today.
 
 ### Can guest users buy through self-service purchase?
 
@@ -59,11 +59,11 @@ No, guest users cannot complete a self-service purchase in a tenant in which the
 
 ### Can users synced from an on-premises Active Directory buy through self-service purchase?
 
-If a user has an active user account in an eligible Azure Active Directory tenant, they can complete a self-service purchase.
+If a user has an active user account in an eligible AAD tenant, they can complete a self-service purchase.
 
 ### Who can self-service purchasers assign licenses to?
 
-Self-service purchasers will only be able to assign licenses to users in the same Azure Active Directory tenant. The purchaser will be able to access a limited view of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> to assign licenses. They’ll only have visibility and can assign licenses to those products that they’ve bought through self-service purchase, and they’ll only be able to assign those licenses to users in the same Azure Active Directory tenant.
+Self-service purchasers will only be able to assign licenses to users in the same AAD tenant. The purchaser will be able to access a limited view of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> to assign licenses. They’ll only have visibility and can assign licenses to those products that they’ve bought through self-service purchase, and they’ll only be able to assign those licenses to users in the same AAD tenant.
 
 ### Where does the self-service purchaser see and manage their purchases?
 
@@ -85,7 +85,7 @@ The person who buys the subscription through self-service purchase will be bille
 
 Admins can view all self-service purchases made in their organization in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>. They can see the product, purchaser name, subscriptions purchased, expiry date, order history, purchase price, and assigned users for each self-service purchase.
 
-While all Azure Active Directory users in eligible organizations are allowed to make self-service purchases and will have full control over their subscriptions, admins have the same data management and access policies over products bought through self-service purchase or centrally.
+While all AAD users in eligible organizations are allowed to make self-service purchases and will have full control over their subscriptions, admins have the same data management and access policies over products bought through self-service purchase or centrally.
 
 ### Why are self-service purchases not subject to admin approval?
 
