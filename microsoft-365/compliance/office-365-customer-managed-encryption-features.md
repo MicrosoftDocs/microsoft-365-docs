@@ -16,6 +16,7 @@ description: "Summary: Understand data resiliency in Microsoft Office 365."
 # Customer-managed encryption features in Office 365
 
 Along with the encryption technologies in Office 365 managed by Microsoft, Office 365 also works with additional encryption technologies that you can manage and configure, such as:
+
 - [Azure Rights Management](https://docs.microsoft.com/azure/information-protection/what-is-azure-rms)
 - [Secure Multipurpose Internet Mail Extension](http://blogs.technet.com/b/exchange/archive/2014/12/15/how-to-configure-s-mime-in-office-365.aspx)
 - [Office 365 Message Encryption](http://products.office.com/en-us/exchange/office-365-message-encryption)

@@ -24,7 +24,7 @@ This topic covers basic troubleshooting steps you can take to identify and resol
 
 ## Error/issue: Ambiguous location
 
-If you try to add user's mailbox location to search and there are duplicate or conflicting objects with the same userID in the Exchange Online Protection (EOP) directory, you will receive this error: `The compliance search contains the following invalid location(s):useralias@contoso.com. The location "useralias@contoso.com" is ambiguous`. 
+If you try to add user's mailbox location to search and there are duplicate or conflicting objects with the same userID in the Exchange Online Protection (EOP) directory, you receive this error: `The compliance search contains the following invalid location(s):useralias@contoso.com. The location "useralias@contoso.com" is ambiguous`. 
 
 ### Resolution
 
@@ -32,19 +32,19 @@ Check for duplicate users or distribution list with the same user ID.
 
 1. Connect to [Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
-2. Retrieve all instances of the username, type:
+2. Run the following command to retrieve all instances of the username:
 
     ```powershell
     Get-Recipient <username>
     ```
 
-The output for 'useralias@contoso.com' would be similar to the following:
+   The output for 'useralias@contoso.com' would be similar to the following:
 
-> 
-> |Name  |RecipientType  |
-> |---------|---------|
-> |Alias, User     |MailUser         |
-> |Alias, User     |User         |
+   > 
+   > |Name  |RecipientType  |
+   > |---------|---------|
+   > |Alias, User     |MailUser         |
+   > |Alias, User     |User         |
 
 3. If multiple users are returned, locate and fix the conflicting object.
 
@@ -53,13 +53,13 @@ The output for 'useralias@contoso.com' would be similar to the following:
 An eDiscovery or content search may yield the following error:
 >This search completed with (#) errors.  Would you like to retry the search on the failed locations?
 
-![Search specific location fails error screenshot]( media/edisc-tshoot-specific-location-search-fails.png)
+![Search-specific location fails error screenshot]( media/edisc-tshoot-specific-location-search-fails.png)
 
 ### Resolution
 
 If you receive this error, we recommend that you verify the locations that failed in the search  then rerun the search only on the failed locations.
 
-1. Connect to [Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) and then enter the following command:
+1. Connect to [Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) and then run the following command:
 
     ```powershell
     Get-ComplianceSearch <searchname> | FL 
@@ -73,7 +73,7 @@ If you receive this error, we recommend that you verify the locations that faile
 
 ## Error/issue: File not found
 
-When running an eDiscovery search that includes SharePoint Online and One Drive For Business locations, you may receive the error `File Not Found` although the file is located on the site. This error will be in the export warnings and errors.csv or skipped items.csv. This may occur if the file cannot be located on the site or the index is out of date. Here's the text of an actual error, with emphasis added.
+When running an eDiscovery search that includes SharePoint Online and One Drive For Business locations, you may receive the error `File Not Found` although the file is located on the site. This error will be in the export warnings and errors.csv or skipped items.csv. This may occur if the file can't be found on the site or if the index is out of date. Here's the text of an actual error (with emphasis added).
   
 > 28.06.2019 10:02:19_FailedToExportItem_Failed to download content. Additional diagnostic info : Microsoft.Office.Compliance.EDiscovery.ExportWorker.Exceptions.ContentDownloadTemporaryFailure: Failed to download from content 6ea52149-91cd-4965-b5bb-82ca6a3ec9be of type Document. Correlation Id: 3bd84722-937b-4c23-b61b-08d6fba9ec32. ServerErrorCode: -2147024894 ---> Microsoft.SharePoint.Client.ServerException: ***File Not Found***. at Microsoft.SharePoint.Client.ClientRequest.ProcessResponseStream(Stream responseStream) at Microsoft.SharePoint.Client.ClientRequest.ProcessResponse()
 --- End of inner exception stack trace ---
@@ -82,7 +82,7 @@ When running an eDiscovery search that includes SharePoint Online and One Drive 
 
 1. Check location identified in the search to ensure the that the location of the file is correct and added in the search locations.
 
-2. Use the procedures at [Manually request crawling and re-indexing of a site, a library or a list](https://docs.microsoft.com/en-us/sharepoint/crawl-site-content) to re-index the site.
+2. Use the procedures at [Manually request crawling and re-indexing of a site, a library, or a list](https://docs.microsoft.com/en-us/sharepoint/crawl-site-content) to reindex the site.
 
 ## Error/issue: Search fails because recipient is not found
 
@@ -92,7 +92,7 @@ An eDiscovery search fails with error the `recipient not found`. This error may 
 
 1. Connect to [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 
-2. Check to see if the user object is synced to Exchange Online Protection type:
+2. Run the following command to check if the user is synced to Exchange Online Protection:
 
     ```powershell
     Get-Recipient <userId> | FL
@@ -108,7 +108,7 @@ When exporting search results from eDiscovery or Content Search in the Security 
 
 1.	Try using the steps identified in the article [Increase Download Speeds](https://docs.microsoft.com/en-us/office365/securitycompliance/increase-download-speeds-when-exporting-ediscovery-results).
 
-2.	If you still have issues, connect to [Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) and then enter the following command:
+2.	If you still have issues, connect to [Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) and then run the following command:
 
     ```powershell
     Get-ComplianceSearch <searchname> | FL
@@ -116,7 +116,7 @@ When exporting search results from eDiscovery or Content Search in the Security 
 
 4. Find the amount of data to be downloaded in the SearchResults and SearchStatistics parameters.
 
-5. Enter the following command:
+5. Run the following command:
 
    ```powershell
    Get-ComplianceSearchAction | FL
@@ -136,15 +136,15 @@ When running an eDiscovery search, if the search continually fails with error si
 
 1. Break the search into smaller searches and run the search again.  Try using a smaller date range or limit the number of locations being searched.
 
-2. Connect to [Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) and then enter the following command:
+2. Connect to [Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) and then run the following command:
 
-    ```powershell
+    ```powershell Set-CaseHoldPolicy <policyname> -RetryDistribution
     Get-ComplianceSearch <searchname> | FL
     ```
 
 3. Examine the output for results and errors.
 
-4. Examine the trace.log file. It will be in the same folder that you sent the export to.
+4. Examine the trace.log file. It's located  in the same folder that you exported the search results to.
 
 5. Contact Microsoft Support.
 
@@ -152,21 +152,42 @@ When running an eDiscovery search, if the search continually fails with error si
 
 eDiscovery Case Hold Policy Sync Distribution error. The error reads:
 
-> "Resources: It's taking longer than expected to deploy the policy. It might take an additional two hours to update the final deployment status, so check back in a couple hours.”
+> "Resources: It's taking longer than expected to deploy the policy. It might take an additional 2 hours to update the final deployment status, so check back in a couple hours.”
 
 ### Resolution
 
-1.	Connect to [Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) and then enter the following command:
+1.	Connect to [Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) and then run the following command for an eDiscovery case hold:
 
     ```powershell
-    Get-RetentionCompliancePolicy  <policyname> - DistributionDetail | FL
+    Get-CaseHoldPolicy <policyname> - DistributionDetail | FL
+    ```
+    
+    For a retention policy, run the following command:
+
+    ```powershell
+    Get-RetentionCompliancePolicy <policyname> - DistributionDetail | FL
     ```
 
 2. Examine the value in the DistributionDetail parameter for errors like the following:
+ 
+   > Error: Resources: It's taking longer than expected to deploy the policy. It might take an additional 2 hours to update the final deployment status, so check back in a couple hours.” 
+   
+3. Try running the RetryDistribution parameter on the policy in question:
+   
+    
+    For eDiscovery case holds:
 
-   > If error exists, create escalation to PG to force a manual re-sync on the Policy.
+    ```powershell
+    Set-CaseHoldPolicy <policyname> -RetryDistribution
+    ```
 
-3. Contact Microsoft Support.
+    For retention policies:
+
+    ```powershell
+    Set-RetentionCompliancePolicy <policyname> -RetryDistribution
+    ``` 
+
+4. Contact Microsoft Support.
 
 ## See Also
 
