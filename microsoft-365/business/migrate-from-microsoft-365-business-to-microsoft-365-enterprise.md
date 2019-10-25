@@ -42,36 +42,43 @@ This table shows the differences between Microsoft 365 Business and Microsoft 36
 | Feature	| Support in Microsoft 365 Business	| Support in Microsoft 365 Enterprise E3 | 
 |:-------|:-----|:-----|
 | **On-premises**		| | | 
-| Windows 10 licenses	| | 	Windows 10 Enterprise E3| 
-| Office apps	| [Office 365 Business](#office-365-business)	| Office 365 ProPlus | 
+| Windows 10	| Windows 10 Business  | 	Windows 10 Enterprise E3| 
+| Office apps*	| [Office 365 Business](#office-365-business)	| Office 365 ProPlus | 
 | **Cloud productivity apps**		| | | 
-| Exchange Online and Outlook	| 50 GB storage limit per mailbox and unlimited Exchange Online archiving	| Same as Microsoft 365 Business | 
+| Exchange Online and Outlook	| 50 GB storage limit per mailbox and unlimited Exchange Online archiving	| 100 GB storage limit per mailbox and unlimited Exchange Online archiving | 
 | Teams	| ![Included with Microsoft 365 Business](./media/check-mark.png)	| ![Included with Microsoft 365 Enterprise E3](./media/check-mark.png) | 
 | OneDrive for Business	| 1 TB storage limit per user	| Unlimited | 
 | Yammer, SharePoint Online, Planner, Stream	| ![Included with Microsoft 365 Business](./media/check-mark.png)	| ![Included with Microsoft 365 Enterprise E3](./media/check-mark.png) | 
 | StaffHub	| ![Included with Microsoft 365 Business](./media/check-mark.png)	| ![Included with Microsoft 365 Enterprise E3](./media/check-mark.png) | 
 | Outlook Customer Manager, MileIQ	| ![Included with Microsoft 365 Business](./media/check-mark.png)	| | 
 | **Threat Protection**		| | | 
-| Microsoft Advanced Threat Analytics, Device Guard, Credential Guard, App Locker, Enterprise Data Protection	| 	| ![Included with Microsoft 365 Enterprise E3](./media/check-mark.png) | 
+| Attack surface reduction capabilities	| [See this list](#threat-protection) | Additional capabilities: Network protection for web-based threats, Enterprise management of hardware-based isolation for Microsoft Edge, Host intrusion prevention rules | 
 | Office 365 Advanced Threat Protection (ATP) Plan 1 | ![Included with Microsoft 365 Business](./media/check-mark.png)	| Not included, but can be added on | 
 | **Identity management**		| | | 
-| Self-service password reset for hybrid Azure Active Directory (Azure AD) accounts, Azure multi factor authentication (MFA), conditional access| 	![Included with Microsoft 365 Business](./media/check-mark.png)	| ![Included with Microsoft 365 Enterprise E3](./media/check-mark.png) | 
+| Self-service password reset for hybrid Azure Active Directory (Azure AD) accounts, Azure multi-factor authentication (MFA), Conditional Access, password writeback for on-premises identities| 	![Included with Microsoft 365 Business](./media/check-mark.png)	| ![Included with Microsoft 365 Enterprise E3](./media/check-mark.png) | 
 | Cloud App Discovery, Azure AD Connect Health	| 	| ![Included with Microsoft 365 Enterprise E3](./media/check-mark.png) | 
-| Single Sign-On (SSO) for more than 10 Apps	| ![Included with Microsoft 365 Business](./media/check-mark.png)	| ![Included with Microsoft 365 Enterprise E3](./media/check-mark.png) | 
+| Azure AD Office 365 apps Single Sign-On (SSO): 10 apps per user (Gallery SaaS apps such as Salesforce)* | ![Included with Microsoft 365 Business](./media/check-mark.png)	| ![Included with Microsoft 365 Enterprise E3](./media/check-mark.png) | 
+| Azure AD Premium 1 SSO: no limit (On-premises apps through Azure AD Application Proxy and non-gallery apps using Self-Service App Integration templates)	| 	| ![Included with Microsoft 365 Enterprise E3](./media/check-mark.png) | 
 | **Device and app management**		| | | 
 | Microsoft Intune, Windows Autopilot| 	![Included with Microsoft 365 Business](./media/check-mark.png)	| ![Included with Microsoft 365 Enterprise E3](./media/check-mark.png) | 
-|Virtual Desktop Access (VDA)	| ![Included with Microsoft 365 Business](./media/check-mark.png) | 	![Included with Microsoft 365 Enterprise E3](./media/check-mark.png) | 
+|Virtual Desktop Access (VDA)	|  | 	![Included with Microsoft 365 Enterprise E3](./media/check-mark.png) | 
+|Windows Virtual Desktop (WVD)	| ![Included with Microsoft 365 Business](./media/check-mark.png) | 	![Included with Microsoft 365 Enterprise E3](./media/check-mark.png) | 
 |Shared Computer Activation (SCA)	| ![Included with Microsoft 365 Business](./media/check-mark.png) | 	![Included with Microsoft 365 Enterprise E3](./media/check-mark.png) | 
 | Microsoft Desktop Optimization Package	| | 	![Included with Microsoft 365 Enterprise E3](./media/check-mark.png) | 
 | **Information protection**		| | | 
 | Office 365 Data Loss Prevention, Azure Information Protection Plan 1	| ![Included with Microsoft 365 Business](./media/check-mark.png)	| ![Included with Microsoft 365 Enterprise E3](./media/check-mark.png) | 
+| Window Information Protection for endpoint DLP	| ![Included with Microsoft 365 Business](./media/check-mark.png)	| ![Included with Microsoft 365 Enterprise E3](./media/check-mark.png) | 
 | **Client Access License (CAL rights)**	| | | 	
 | Enterprise CAL Suite (Exchange, SharePoint, Skype, Windows, System Center Configuration Manager, Windows Rights Management)| | 		![Included with Microsoft 365 Enterprise E3](./media/check-mark.png) | 
 | **Compliance**		| | | 
 | Unlimited email archiving	| ![Included with Microsoft 365 Business](./media/check-mark.png)	| ![Included with Microsoft 365 Enterprise E3](./media/check-mark.png) | 
+| Compliance Manager	| ![Included with Microsoft 365 Business](./media/check-mark.png)	| ![Included with Microsoft 365 Enterprise E3](./media/check-mark.png) | 
+| eDiscovery	| ![Included with Microsoft 365 Business](./media/check-mark.png)	| ![Included with Microsoft 365 Enterprise E3](./media/check-mark.png) | 
+| In-place hold and litigation hold	| ![Included with Microsoft 365 Business](./media/check-mark.png)	| ![Included with Microsoft 365 Enterprise E3](./media/check-mark.png) | 
+| Messaging Records Management (MRM) retention tags and retention policies	| ![Included with Microsoft 365 Business](./media/check-mark.png)	| ![Included with Microsoft 365 Enterprise E3](./media/check-mark.png) | 
 ||||
 
-\* The Microsoft 365 Business version of the Office apps do not include volume activation through Group Policy, app telemetry, update controls, spreadsheet compare and inquire, and business Intelligence.
+\* Users who have been assigned access to SaaS apps can get SSO access to up to 10 apps. Admins can configure SSO and change user access to different SaaS apps, but SSO access is only allowed for 10 apps per user at a time. All Office 365 apps are counted as a single app.
 
 ## Migration
 
@@ -95,9 +102,26 @@ You can begin using Cloud App Discovery, Azure AD Connect Health, and SSO for mo
 >After migrating to Microsoft 365 Enterprise E3, you no longer Outlook Customer Manager and MileIQ.
 >
 
+<a name="threat-protection"></a>
 ### Threat protection
 
-You can now use Microsoft Advanced Threat Analytics, Device Guard, Credential Guard, App Locker, and Enterprise Data Protection for additional threat protection.
+Windows 10 Business includes these protections:
+
+- Integrity enforcement of operating system boot up process
+- Integrity enforcement of sensitive operating components
+- Advanced vulnerability and zero-day exploit mitigations
+- Reputation-based network protection for Microsoft Edge, Internet Explorer, and Chrome
+- Host-based firewall
+- Ransomware mitigations
+- Hardware-based isolation for Microsoft Edge
+- Application control powered by the Intelligent Security Graph
+- Device control (USB)
+
+Windows 10 Enterprise E3 also includes these protections:
+
+- Network protection for web-based threats
+- Enterprise management of hardware-based isolation for Microsoft Edge
+- Host intrusion prevention rules
 
 >[!Note]
 >After migrating to Microsoft 365 Enterprise E3, you no longer have Office 365 ATP. You can purchase additional Office 365 ATP licenses for your Microsoft 365 Enterprise E3 subscription and assign them to your user accounts.
