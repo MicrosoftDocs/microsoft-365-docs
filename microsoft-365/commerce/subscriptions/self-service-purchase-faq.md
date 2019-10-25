@@ -13,7 +13,7 @@ ms.custom:
 search.appverid:
 - MET150
 description: "Find answers to commonly asked questions about self-service purchases."
-ms.custom: aka.ms/
+ms.custom: aka.ms/self-service-purchase-faq
 ---
 
 # Self-service purchases FAQ
@@ -25,7 +25,7 @@ ms.custom: aka.ms/
 
 ### What changes did Microsoft announce around self-service purchases for the Power Platform products?
 
-Beginning November 19, 2019, self-service purchase, subscription, and license management capabilities for Power Platform products (Power BI, PowerApps, and Flow) will be available for most commercial cloud customers in the United States. Self-service purchases give users a chance to try out new technologies and enables them to develop solutions that will ultimately benefit their larger organizations. This capability will not be available to tenants that are government, nonprofit, or education, at this time. Central procurement and IT teams will have visibility to all users buying and deploying self-service purchase solutions through the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
+Beginning November 19, 2019, self-service purchase, subscription, and license management capabilities for Power Platform products (Power BI, PowerApps, and Flow) will be available for most commercial cloud customers in the United States. Self-service purchase gives users a chance to try out new technologies and enables them to develop solutions that will ultimately benefit their larger organizations. This capability will not be available to tenants that are government, nonprofit, or education, at this time. Central procurement and IT teams will have visibility to all users buying and deploying self-service purchase solutions through the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
 
 ### Why is Microsoft adding a self-service purchase option for the Power Platform products?
 
@@ -37,13 +37,13 @@ Microsoft is launching self-service purchase for Power BI on November 19, 2019, 
 
 ### Will self-service purchase be enabled for services beyond the Power Platform products?
 
-At this time, the Power Platform family of products are the only services being offered for users to buy through self-service purchase.
+At this time, the Power Platform family of products are the only services being offered through self-service purchase.
 
 ## Making a self-service purchase
 
 ### How does a customer make a self-service purchase?
 
-Customers will be able to make a self-service purchase online from the Microsoft Power BI, PowerApps, and Flow websites. Customers will first be asked to enter an email address to ensure they’re a user in an existing Azure Active Directory tenant, and then they’ll be directed to log in. After logging in, the customer will be asked to select how many subscriptions they want to purchase and provide credit card payment. When the purchase is complete, they’ll be able to start using their subscription. The purchaser will also be able to access a limited view of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> where they can enable other people in their organization to use the product. 
+Customers will be able to make a self-service purchase online from the Microsoft Power BI, PowerApps, and Flow websites. Customers will first be asked to enter an email address to ensure they’re a user in an existing Azure Active Directory (AAD) tenant, and then they’ll be directed to log in by using their AAD credentials. After logging in, the customer will be asked to select how many subscriptions they want to purchase and provide credit card payment. When the purchase is complete, they’ll be able to start using their subscription. The purchaser will also be able to access a limited view of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> where they can enable other people in their organization to use the product.
 
 ### What are the payment options for self-service purchases?
 
@@ -69,15 +69,11 @@ Self-service purchasers will only be able to assign licenses to users in the sam
 
 Self-service purchasers can manage their purchases in the limited view of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>. Purchasers can always get to the admin center from the **Admin** tile in the Office 365 app launcher built into all Office 365 and Dynamics online apps. They can view the purchases they’ve made, buy additional subscriptions to the same service, and assign licenses for those subscriptions to other users in their organization. Additionally, purchasers can view and pay their bill, update their payment method, and cancel their subscription.
 
-**View of limited Microsoft 365 admin center for self-service purchasers:**
-
-<insert image> 
-
 ## Pricing
 
 ### What is the pricing for self-service purchases?
 
-Pricing for each of the Power Platform products for self-service purchases will be available on Microsoft’s website and is also displayed as part of the checkout experience while making a self-service purchase. These prices may differ from the prices an organization pays when making central purchases or prices offered through a partner. 
+Pricing for each of the Power Platform products for self-service purchases will be available on Microsoft’s website and is also displayed as part of the checkout experience while making a self-service purchase. These prices may differ from the prices an organization pays when making central purchases or prices offered through a partner.
 
 ### Who is responsible for payment?
 
@@ -93,7 +89,7 @@ While all Azure Active Directory users in eligible organizations are allowed to 
 
 ### Why are self-service purchases not subject to admin approval?
 
-We’re being responsive to our customers who have requested this capability while allowing admins to maintain control over the services and respecting data governance and compliance. Admins have full visibility as to who has made a self-service purchase and which users on their tenants have been assigned a license from a self-service purchase. Organizations can then rely on their own internal policies, procedures and communications to ensure that those individuals making self-service purchases are complying with company policies. To learn more about managing Azure AD service principals, see [Set-MsolServicePrincipal](https://docs.microsoft.com/en-us/powershell/module/msonline/set-msolserviceprincipal?view=azureadps-1.0).
+We’re being responsive to our customers who have requested this capability while allowing admins to maintain control over the services and respecting data governance and compliance. To learn more about managing Azure AD service principals, see [Set-MsolServicePrincipal](https://docs.microsoft.com/en-us/powershell/module/msonline/set-msolserviceprincipal?view=azureadps-1.0). Additionally, admins have full visibility as to who has made a self-service purchase and which users on their tenants have been assigned a license from a self-service purchase. Organizations can then rely on their own internal policies, procedures and communications to ensure that those individuals making self-service purchases are complying with company policies. 
 
 ### How is Microsoft respecting data governance and compliance by enabling self-service purchase?
 
@@ -105,11 +101,11 @@ Data created from products bought through self-service purchase is owned and con
 
 ### How do I centralize the purchases made through self-service purchase?
 
-Admins can assign existing licenses or purchase additional subscriptions of Power Platform products (Power BI, PowerApps, and Microsoft Flow) through existing agreements and pricing for users assigned to self-service purchases. After assigning these centrally purchased licenses to those users assigned to a self-service purchase, admins can then request that the purchasers cancel their existing subscriptions. Microsoft is exploring ways to simplify and streamline this process for admins in the future.
+Admins can assign existing licenses or purchase additional subscriptions of Power Platform products (Power BI, PowerApps, and Microsoft Flow) through existing agreements and pricing for users assigned to self-service purchases. After assigning these centrally purchased licenses, admins can then request that the purchasers cancel their existing subscriptions. Microsoft is exploring ways to simplify and streamline this process for admins in the future.
 
 ### Where does the admin see self-service purchases?
 
-Global and billing admins can see subscriptions bought through self-service purchase in **Billing** > **Products & services** in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> together with all other subscriptions purchased through central procurement. They can filter the list to just the subscriptions purchased through central procurement or include subscriptions bought through self-service purchase. 
+Global and billing admins can see subscriptions bought through self-service purchase in **Billing** > **Products & services** in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> together with all other subscriptions purchased through central procurement. They can filter the list to just the subscriptions purchased through central procurement or include subscriptions bought through self-service purchase.
 
 Admins can see the product, purchaser name, subscription purchased, expiry date, order history, the purchase price, and assigned users.
 
@@ -125,10 +121,10 @@ Extensive training for users is provided on the Microsoft Power BI, PowerApps, a
 
 ### What happens to a self-service purchase if a user leaves the organization?
 
-Valid users will continue to have full use of the self-service purchase for the duration of the subscription. The subscription remains active until the purchaser directly cancels it or the admin requests the subscription be cancelled through customer support. Admins may also choose to assign a centrally purchased license to users of the cancelled subscription.
+Valid users will continue to have full use of the self-service purchase for the duration of the subscription. The subscription remains active until the purchaser directly cancels it or an admin requests that the subscription be cancelled through customer support. Admins may also choose to assign a centrally purchased license to users of the cancelled subscription.
 
 ## Partners
 
 ### What’s the role of Microsoft’s partners in self-service purchases?
 
-Partners who have delegated administration privileges can see self-service purchases in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, just like an admin. Partners can help support an organization that wants to centralize products bought through self-service purchases. Additionally, partners may offer solutions to extend the capabilities of a self-service purchase. 
+Partners who have delegated administration privileges can see self-service purchases in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, just like an admin. Partners can help support an organization that wants to centralize products bought through self-service purchases. Additionally, partners may offer solutions to extend the capabilities of a self-service purchase.
