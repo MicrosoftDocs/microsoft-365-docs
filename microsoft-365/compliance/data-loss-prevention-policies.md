@@ -104,7 +104,7 @@ The conditions now available can determine if:
 - Content is shared with people outside or inside your organization.
 
 > [!NOTE]
-> Users, who have non-guest accounts in host organization's Active Directory or Azure Active Directory tenant, are considered as people inside the organization.
+> Users who do not have guest accounts in a host organization's Active Directory or Azure Active Directory tenant are considered people inside the organization.
     
 #### Types of sensitive information
 
