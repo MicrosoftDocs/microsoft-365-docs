@@ -102,7 +102,7 @@ If a file format is supported, such as a Word, Excel, or PowerPoint file, the fi
   
 ## Are PDF file attachments supported?
 
-If you attach a PDF file to a protected message, the message itself will be protected, but no additional protection will be applied to the PDF file after the recipient has received it. This means that the recipient can Save As, Forward, Copy, and Print the PDF file.
+PDF encryption allows you to protect sensitive PDF documents through secure communication or secure collaboration. Messages inherit the OME protection of the data loss prevention (DLP) policy or mail flow rule in Exchange Online. If an Outlook or Outlook on the web user attaches an unprotected PDF attachment to a protected message, the message inherits the protection of the message. Users can only open the encrypted attachments in applications that support protected PDFs (for example, the OME Portal and the Azure Information Protection Viewer).
   
 ## Are OneDrive for Business attachments supported?
 
@@ -131,3 +131,7 @@ There is an Encryption report in the Security and Compliance Center. See [View e
 ## Can I use message encryption with compliance features such as eDiscovery?
 
 Yes. All encrypted email messages are discoverable by Office 365 compliance features.
+
+## Can I remove encryption from email?
+
+Admins can set up a mail flow rule to remove encryption from outgoing mail. You can't remove encryption using a mail flow rule from incoming messages.
