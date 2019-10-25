@@ -39,31 +39,31 @@ These methods handle outbound email from Office 365, and help destination system
 
 ## Anti-spam, anti-malware, and anti-phishing
 
-Both anti-spam and anti-malware are features of EOP. Spam filtering, on by default in Office 365, scans all email and assigns a Spam Confidence Level (SCL) number value to each message. To clarify, the SCL value enumerates how confident the filter is that the message is or isn't spam. Low values (-1, 0, or 1) are messages from safe senders or non-spam and are delivered to the recipient's Inbox. A high value like 9 indicates the message is highly suspect or from a known spammer, so the message is delivered to the recipient's Junk Email folder, or to the administrator-accessible Quarantine.
+Both anti-spam and anti-malware are features of EOP. Spam filtering, on by default in Office 365, scans all mail and assigns a Spam Confidence Level (SCL) number value to each mail. Just to clarify, its purpose is to enumerate how confident the filter is that the mail is (or isn't) spam. Low values, like -1, 0, 1 are whitelisted or non-spam messages that land in a user Inbox. High score, like  9 is either highly suspect, or known spammers and heads for a user's Junk Mail, or administrator-accessible Quarantine.
 
 Malware filtering is also on by default in Office 365. Like anti-spam filtering, anti-malware filters work on both inbound and outbound mail. In both cases this protection can be configured for a better fit, by admins.
 
-Phising filters are on by default in Office 365, but should be configured for a better fit. Here's what we would recommend for securing your tenant using EOP.
+Phishing filters are on by default in Office 365, but should be configured for a better fit. Here's what we would recommend for Anti-Phishing in EOP.
 
 ### Anti-Spam policy
 
 | Security feature name | Recommended | Aggressive | Comment |
 |---------|---------|---------|---------|
-| Spam detection action | Move message to Junk Email folder | Quarantine message | - |
-| High confidence spam detection action | Quarantine message | Quarantine message| - |
-| Phishing email detection action | Quarantine message | Quarantine message | - |
-| Bulk detection action | Move message to Junk Email folder | Quarantine message | - |
-| Bulk email threshold | 6 | 4 | - |
-| Quarantine retention period | Yes | Yes | 30 days |
-| Safety tips should be enabled| On | On | - |
-| Allowed Senders | None | None | - |
-| Allowed Senders Domains | None | None | - |
-| Blocked Senders | None | None | - |
-| Blocked Senders domains | None | None | - |
-| Outbound spam policy RRL | 500 | 500 | - |
-| End user spam notification frequency   |   Yes      |     Yes    |   3 days   |
-| Zero Hour Autopurge should be enabled   |   Yes      |     Yes    |   True  |
-| Enable end user spam notification| True | False | - |
+|Quarantine retention period    |   Yes      |     Yes    |   30 days   |
+|End user spam notification frequency   |   Yes      |     Yes    |   3 days   |
+|Zero Hour Autopurge should be enabled   |   Yes      |     Yes    |   True  |
+|Spam detection action should be sent to | MoveToJmf | Quarantine | - |
+|High confidence spam detection action should be sent to | Quarantine | Quarantine| - |
+|Bulk detection action should be set to | MoveToJmf | Quarantine | - |
+|Set Bulk email threshold to | 6 | 4 | - |
+|Safety tips should be enabled| True | True | - |
+|Enable end user spam notification| True | False | - |
+|Allowed Senders | None | None | - |
+|Allowed Senders Domains | None | None | - |
+|Blocked Senders | None | None | - |
+|Blocked Senders domains | None | None | - |
+|Outbound spam policy RRL | 500 | 500 | - |
+
 
 Recommended for **OFF** in both Recommended and Aggressive Levels:
 
@@ -111,9 +111,10 @@ Recommended for **ON** in both Recommended and Aggressive Levels:
 |EnableSimilarUsersSafetyTips | True | True | - |
 |EnableSimilarDomainsSafetyTips | True | True | - |
 |EnableUnusualCharactersSafetyTips | True | True | - |
-|TargetedUserProtectionAction |MoveToJmf |Quarantine | - |
-|MailboxIntelligenceProtectionAction |NoAction |MoveToJMF | - |
-|TargetedDomainProtectionAction |NoAction |Block | - |
+|TargetedUserProtectionAction |MoveToJmf |Quarantine| - |
+|MailboxIntelligenceProtectionAction |NoAction + Safety Tip|Block | - |
+|TargetedDomainProtectionAction |MoveToJmf |Quarantine| - |
+
 |AuthenticationFailAction |MoveToJmf |Quarantine | - |
 |AntiSpoofEnforcementType |High |High | - |
 |EnableAuthenticationSafetyTip |False |True | - |
@@ -146,9 +147,10 @@ If you've added an Office 365 ATP subscription to your EOP, be sure to set the f
 |Enable Anti-impersonation protection | Yes | Yes | - |
 |Enable Mailbox intelligence in Anti-Impersonation policies | Yes | Yes | - |
 |Enable Mailbox intelligence based Impersonation protection | Yes | Yes | - |
-|Domain Impersonation action should be | MoveToJMF | MoveToJMF | - |
-|User Impersonation action should be | MoveToJMF | Qurantine | - |
-|Mailbox intelligence based impersonation protection action should be | NoAction  | MoveToJMF | - |
+|Domain Impersonation action should be | MoveToJmf | Quarantine | - |
+|User Impersonation action should be | MoveToJmf | Qurantine | - |
+|Mailbox intelligence based impersonation protection action should be | No Action + Safety Tip  | MoveToJmf | - |
+
 
 ### Safe Links and Safe Attachments
 
@@ -187,18 +189,19 @@ These settings cover a range of features that don't necessarily fit into specifi
 
 Security feature name|Recommended|Aggressive|Comment|
 |---------|---------|---------|---------|
-|Create SPF records|Yes|Yes|-|
-|Configure DKIM Signing for Domains|Yes|Yes|-|
-|Implement Domain-based Message Reporting and Conformance (DMARC) with reject or quarantine action|action=none|action=reject||
-|Deploy Report Message add-on to improve End User Reporting of Suspicious Emails|Yes|Yes|-|
-|Schedule Malware and Spam Reports|Yes|Yes|-|
-|Auto-forwarding to external domains should be disallowed or monitored|-|Yes|-|
-|Unified Auditing should be enabled|Yes|Yes|-|
-|IMAP should be disabled where not required|-|disabled|-|
-|POP should be disabled where not required|-|disabled|-|
-|SMTP Authenticated Submission should be turned off when not required by Applications|-|disabled|-|
-|EWS should be disabled|-|disabled|-|
-|PowerShell|-|disabled|-|
-|Configure Sender Policy Framework to hard-fail|-all|-all|-|
-|Use Spoof Intelligence to whitelist senders whenever possible|Yes|Yes|-|
-|Directory-Based Edge Blocking (DBEB)|Enabled|Enabled|Domain Type = Authoritative|
+|Create SPF records |Yes |Yes |- |
+|Configure DKIM Signing for Domains |Yes |Yes |- |
+|Implement Domain-based Message Reporting and Conformance (DMARC) with reject or quarantine action |action=none |action=reject | |
+|Deploy Report Message add-on to improve End User Reporting of Suspicious Emails |Yes |Yes |- |
+|Schedule Malware and Spam Reports |Yes |Yes |- |
+|Auto-forwarding to external domains should be disallowed or monitored |- |Yes |- |
+|Unified Auditing should be enabled |Yes |Yes |- |
+|IMAP should be disabled where not required |- |disabled |- |
+|POP should be disabled where not required |- |disabled |- |
+|SMTP Authenticated Submission should be turned off when not required by Applications |- |disabled |- |
+|EWS should be disabled |- |disabled |- |
+|PowerShell |- |disabled |- |
+|Configure Sender Policy Framework to hard-fail |-all |-all |- |
+|Use Spoof Intelligence to whitelist senders whenever possible |Yes |Yes |- |
+|Directory-Based Edge Blocking (DBEB) |Enabled |Enabled |Domain Type = Authoritative |
+
