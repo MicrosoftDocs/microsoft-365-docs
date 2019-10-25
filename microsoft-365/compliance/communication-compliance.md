@@ -81,7 +81,7 @@ New interactive dashboards for alerts, policy matches, actions, and trends help 
 
 - **Proactive intelligent alerts**: Alerts for policy matches requiring immediate attention include new dashboards for pending items sorted by severity and new automatic email notification sent to designated reviewers.
 - **Interactive dashboards**: New dashboards display policy matches, pending and resolved actions, and trends by users and policy.
-- **Auditing support**: A full log of policy and review activities are easily exported to help support audit review requests.
+- **Auditing support**: A full log of policy and review activities are easily exported from the Microsoft 365 compliance center to help support audit review requests.
 
 ## Integration with Microsoft 365 services
 
@@ -96,7 +96,9 @@ To learn more about messaging channel support in Communication compliance polici
 
 ## Workflow
 
-Communication compliance helps you address common pain points associated with complying with internal policies and regulatory compliance requirements. With focused policy templates and a flexible workflow, you can use actionable insights to quickly resolve detected compliance issues. Identifying and resolving compliance issues with Communication compliance in Microsoft 365 uses the following workflow:
+Communication compliance helps you address common pain points associated with complying with internal policies and regulatory compliance requirements. With focused policy templates and a flexible workflow, you can use actionable insights to quickly resolve detected compliance issues. 
+
+Identifying and resolving compliance issues with Communication compliance in Microsoft 365 uses the following workflow:
 
 ![Communication compliance workflow](media/communication-compliance-workflow.png)
 
@@ -130,7 +132,9 @@ The next step is to remediate Communication compliance issues you've investigate
 
 ### Monitor
 
-Keeping track and managing compliance issues identified by Communication compliance policies spans the entire workflow process. As alerts are generated and investigation and remediation actions are implemented, existing policies may need review and updates, and new policies may need to be created. Use Communication compliance dashboards, reports, export logs, and events recorded in the unified Office 365 audit logs to continually evaluate and improve your compliance posture.
+Keeping track and managing compliance issues identified by Communication compliance policies spans the entire workflow process. As alerts are generated and investigation and remediation actions are implemented, existing policies may need review and updates, and new policies may need to be created. 
+
+- **Monitor and report**: Use Communication compliance dashboards, reports, export logs, and events recorded in the unified Office 365 audit logs to continually evaluate and improve your compliance posture.
 
 ## Ready to get started?
 

@@ -22,10 +22,10 @@ description: "Feature reference for Communication compliance in Microsoft 365. L
 
 ## Policies
 
-You create Communication compliance policies for Microsoft 365 organizations in the Microsoft 365 compliance center. If you have an Office 365 organization, you'll [configure supervision policies](configure-supervision-policies.md) in the Office 365 security and compliance center. Communication compliance policies define which communications and users are subject to review in your organization, define custom conditions that the communications must meet, and specifies who should perform reviews. Users included in the Supervisory Review role group can set up policies and anyone who has this role assigned can access the **Communication compliance** page in the Microsoft 365 compliance center. If needed, you can export the history of modifications to a policy to a .csv file that also includes the current status of alerts pending review, escalated items, and resolved items. Policies can be deleted when no longer needed.
+You create Communication compliance policies for Microsoft 365 organizations in the Microsoft 365 compliance center. If you have an Office 365 organization, you'll [configure Supervision policies](configure-supervision-policies.md) in the Office 365 security and compliance center. Communication compliance policies define which communications and users are subject to review in your organization, define custom conditions that the communications must meet, and specifies who should perform reviews. Users included in the Supervisory Review role group can set up policies and anyone who has this role assigned can access the **Communication compliance** page in the Microsoft 365 compliance center. If needed, you can export the history of modifications to a policy to a .csv file that also includes the current status of alerts pending review, escalated items, and resolved items. Policies can be deleted when no longer needed.
 
 > [!NOTE]
-> Supervision policies created in the Office 365 security and compliance center for Office 365 subscriptions cannot migrate to Microsoft 365. If you're migrating from an Office 365 subscription to a Microsoft 365 subscription, you'll need to create new Communication compliance polices to replace existing supervision policies.
+> Supervision policies created in the Office 365 security and compliance center for Office 365 subscriptions cannot migrate to Microsoft 365. If you're migrating from an Office 365 subscription to a Microsoft 365 subscription, you'll need to create new Communication compliance polices to replace existing Supervision policies.
 
 ## Policy templates
 
@@ -77,6 +77,8 @@ With Communication compliance policies, you can choose to scan messages in one o
     - SAP SuccessFactors
     - [Twitter](archive-twitter-data-with-sample-connector.md)
     - [Custom data connector](archiving-third-party-data.md)
+
+You must configure a third-party connector for your Microsoft 365 organization before you can assign the connector to a Communication compliance policy. The **3rd Party Sources** section of the Communication compliance policy wizard only displays currently configured 3rd party connectors.
 
 ## Policy settings
 

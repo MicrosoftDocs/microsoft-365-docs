@@ -141,18 +141,24 @@ For more information about role groups and permissions, see [Permissions in the 
     - Confirm or update the policy name.
     - Choose the users or groups to supervise, including choosing users or groups you'd like to exclude.
     - Choose the reviewers for the policy. Reviewers can be individual users or [mail-enabled security groups](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups#create-a-mail-enabled-security-group). All reviewers must have mailboxes hosted on Exchange Online.
-    - Choose a limited condition field, usually a keyword dictionary to apply to the policy.
+    - Choose a limited condition field, usually a sensitive info type or keyword dictionary to apply to the policy.
 
     If you choose to use the policy wizard to create a custom policy, you will:
 
     - Give the policy a name and description.
-    - Choose the users or groups to supervise, including choosing users or groups you'd like to exclude.
+    - Choose the users or groups to supervise, including choosing all users in your organization, specific users and groups, or other users and groups you'd like to exclude. -
+    - Choose the reviewers for the policy. Reviewers can be individual users or [mail-enabled security groups](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups#create-a-mail-enabled-security-group). All reviewers must have mailboxes hosted on Exchange Online.
+    - Choose the communication channels to scan, including Exchange, Microsoft Teams, or Skype for Business. You'll also choose to scan 3rd party sources if you've configured a connector in Microsoft 365.
+    - Choose the communication direction to monitor, including inbound, outbound, or internal communications.
     - Define the Communication compliance policy [conditions](communication-compliance-feature-reference.md#ConditionalSettings). You can choose from message address, keyword, file types, and size match conditions.
     - Choose if you'd like to include sensitive information types. This is where you can select default and custom sensitive info types. You'll pick from existing custom sensitive information types or custom keyword dictionaries in the Communication compliance policy wizard, you can create these items before running the wizard if needed. If desired, you can also create new sensitive information types from within the Communication compliance policy wizard.
     - Choose if you'd like to enable the offensive language model. This detects inappropriate language sent or received in the body of email messages.
     - Define the percentage of communications to review.
-    - Choose the reviewers for the policy. Reviewers can be individual users or [mail-enabled security groups](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups#create-a-mail-enabled-security-group). All reviewers must have mailboxes hosted on Exchange Online.
     - Review your policy selections and create the policy.
+
+5. Select **Create policy** when using the templates or **Submit** when using the custom policy wizard.
+
+6. The **Your policy was created** page is displayed with guidelines on when policy will be activated and communications will be captured.
 
 ## Step 4: Create employee notice templates (optional)
 
@@ -176,7 +182,9 @@ If you want to have the option of responding to a policy alert by sending a remi
 
 ## Step 5: Test your Communication compliance policy (optional)
 
-After you create a Communication compliance policy, it's a good idea to test to make sure that the conditions you defined are being properly enforced by the policy. You may also want to [test your data loss prevention (DLP) policies](create-test-tune-dlp-policy.md) if your Communication compliance policies include sensitive information types. Follow these steps to test your Communication compliance policy:
+After you create a Communication compliance policy, it's a good idea to test to make sure that the conditions you defined are being properly enforced by the policy. You may also want to [test your data loss prevention (DLP) policies](create-test-tune-dlp-policy.md) if your Communication compliance policies include sensitive information types. Make sure you give your policies time to activate so that the communications you want to test are captured.
+
+Follow these steps to test your Communication compliance policy:
 
 1. Open an email client or Microsoft Teams logged in as a supervised user defined in the policy you want to test.
 2. Send an email or Microsoft Teams chat that meets the criteria you've defined in the Communication compliance policy. This can be a keyword, attachment size, domain, etc. Make sure that you determine if your configured conditional settings in the policy are too restrictive or too lenient.
@@ -185,3 +193,5 @@ After you create a Communication compliance policy, it's a good idea to test to 
     > Emails subject to defined policies are processed in near real-time and can be tested immediately after the policy is configured. Chats in Microsoft Teams can take up to 24 hours to fully process in a policy.
 
 3. Log into Microsoft 365 as a reviewer designated in the Communication compliance policy. Navigate to **Communication compliance** > **Policies** > *Your Custom Policy* to view the alerts for the policy.
+
+4. Remediate the the alert using the remediation controls and verify that the alert is properly resolved.
