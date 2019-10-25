@@ -3,7 +3,7 @@ title: "SharePoint sites for highly regulated data"
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 10/04/2019
+ms.date: 10/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -20,10 +20,14 @@ description: Create a secure SharePoint team site to store your most valuable an
 
 *This scenario applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
 
-Microsoft 365 Enterprise includes a full suite of cloud-based services so that you can create, store, and secure your highly regulated data stored in files. This includes data that is:
+Microsoft 365 Enterprise includes a full suite of cloud-based services so that you can create, store, secure, and manage your highly regulated data stored in files. This includes data that is:
 
 - Subject to regional regulations.
 - The most valuable data for your organization, such as trade secrets, financial or human resources information, and organization strategy.
+
+>[!Note]
+> A similar scenario using Microsoft Teams is [here](secure-teams-highly-regulated-data-scenario.md).
+>
 
 A Microsoft 365 Enterprise cloud-based scenario that meets this business need requires that you:
 
@@ -42,14 +46,14 @@ The following table maps the requirements of this scenario to a feature of Micro
 |:-------|:-----|
 | **Requirement** | **Microsoft 365 Enterprise feature** |
 | Store files | SharePoint team sites |
-| Lock down the site | Azure Active Directory (Azure AD) groups and SharePoint team site permissions |
+| Lock down the site | Office 365 groups and SharePoint team site permissions |
 | Label the files of the site | Office 365 retention labels |
 | Block users when sending files outside the organization | Data Loss Prevention (DLP) policies in Office 365 |
-| Encrypt all of the files of the site | Office 365 sensitivity sublabels |
-| Add permissions to the files of the site | Office 365 sensitivity sublabels |
+| Encrypt all of the files of the site | Office 365 sensitivity labels or sublabels |
+| Add permissions to the files of the site | Office 365 sensitivity labels or sublabels |
 |||
 
-Here is the configuration for a secure SharePoint site.
+Here is an example configuration for a secure SharePoint site.
 
 ![The SharePoint sites for highly regulated data scenario](./media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration.png)
 
@@ -91,12 +95,11 @@ For SharePoint sites, you must configure a DLP policy for the Office 365 retenti
 
 ### Step 2: Your Office 365 sensitivity sublabel
 
-To provide encryption and a set of permissions to your most sensitive files, users must apply an Office 365 sensitivity sublabel.
+To provide encryption and a set of permissions to your most sensitive files, users must apply an Office 365 sensitivity label or sublabel. A sublabel exists under an existing label. 
 
-A sublabel exists under an existing label. For example, you can create a Research & Development sublabel under the Highly Regulated label. For SharePoint sites for highly regulated data, you configure the permissions so that only site members can open and change the file to which the sublabel is attached.
+Use a sensitivity label when you need is a small number of labels for both global use and individual private teams. Use a sensitivity sublabel when you have a large number of labels or want to organize labels for secure sites the under your highly regulated label. 
 
-The settings of the applied sublabel travel with the file. Even if it is leaked outside the site, only authenticated user accounts that have permissions can open it.
-
+The settings of the applied label or sublabel travel with the file. Even if it is leaked outside the site, only authenticated user accounts that have permissions can open it.
 
 ### Design results
 
@@ -117,10 +120,10 @@ Follow [these instructions]( https://support.office.com/article/create-a-site-in
 
 From the SharePoint site, configure these permission settings.
 
-1.	In the tool bar, click the settings icon, and then click **Site permissions**.
-2.	In the **Site permissions** pane, click **Advanced permissions settings**.
-3.	On the new **Permissions** tab of your browser, click **Access Request Settings**.
-4.	In the **Access Requests Settings** dialog box, clear **Allow member to share the site and individual files and folders** and **Allow access requests** (so that all three check boxes are cleared), and then click **OK**.
+1. In the tool bar, click the settings icon, and then click **Site permissions**.
+2. In the **Site permissions** pane, under **Sharing Settings**, click **Change sharing settings**.
+3. Under **Sharing permissions**, choose **Only site owners can share files, folders, and the site**.
+4. Turn off **Allow access requests**, and then click **Save**.
 
 With these settings, the ability for site group members to share the site with other members or for non-members to request access to the site is disabled.
 
@@ -137,13 +140,13 @@ Use the instructions in [Protect SharePoint files with Office 365 labels and DLP
 Unlike a sensitivity label for highly regulated data that anyone can apply to any file, a secure site needs its own sublabel so that files with the sublabel assigned:
 
 - Are encrypted and the encryption travels with the file.
-- 	Contain custom permissions so that only members of the site group can open it.
+- Contain custom permissions so that only members of the site group can open it.
 
-To accomplish this additional level of security for files stored in the site, you must configure a new sensitivity label that is a sublabel of the general label for highly regulated files. Only group members for the site will see it in the list of sublabels for the highly regulated label.
+To accomplish this additional level of security for files stored in the site, you must configure a new sensitivity label or a sublabel of the general label for highly regulated files. Only group members for the site will see it in the list of sublabels for the highly regulated label.
 
-Use the instructions [here](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels) to configure a sublabel of the label you are using for highly regulated files with the following settings:
+Use the instructions [here](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels) to configure a label or a sublabel of the label you are using for highly regulated files with the following settings:
 
-- The name of the sublabel contains the name of the site for easy association when assign the sublabel to a file.
+- The name of the label or sublabel contains the name of the site for easy association when assigning the label or sublabel to a file.
 - Encryption is enabled.
 - The site group has Co-Author permissions.
 
@@ -154,14 +157,13 @@ You have configured the following:
 - More restrictive permission settings on the SharePoint site
 - An Office 365 retention label assigned to the Documents portion of the SharePoint site
 - A DLP policy for the Office 365 retention label
-- An Office 365 sensitivity sublabel that users can apply to the most sensitive files stored in the site that encrypts the file and only allows Co-Author access for members of the team site group 
+- An Office 365 sensitivity label or sublabel that users can apply to the most sensitive files stored in the site, which encrypts the file and only allows Co-Author access for members of the team site group 
 
-Here is the resulting configuration.
+Here is the resulting configuration that uses a sublabel of the Highly regulated label.
 
 ![The SharePoint sites for highly regulated data scenario](./media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration.png)
 
-
-Here is an example of a user that has applied the sensitivity sublabel to a file stored in the site.
+Here is an example of a user that has applied the sublabel to a file stored in the site.
 
 ![The SharePoint sites for highly regulated data scenario](./media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration-example-file.png)
 
@@ -174,14 +176,14 @@ For example, employees that are used to storing sensitive files on USB drives or
 
 ### Step 1: Train your users
 
-After completing your configuration, train the set of users who are members of the site access groups:
+After completing your configuration, train the set of users who are members of the site:
 
 - On the importance of using the new site to protect valuable files and the consequences of a highly regulated data leak, such as legal ramifications, regulatory fines, ransomware, or loss of competitive advantage.
 - How to access the site and its files.
 - How to create new files on the site and upload new files stored locally.
 - How the DLP policy blocks them from sharing files externally.
-- How to label the most sensitive files with the sublabel for the site.
-- How the sublabel protects a file even when it is leaked off the site.
+- How to label the most sensitive files with the label or sublabel for the site.
+- How the label or sublabel protects a file even when it is leaked off the site.
 
 This training should include hands-on exercises so that the users can experience these operations and their results.
 
@@ -190,21 +192,27 @@ This training should include hands-on exercises so that the users can experience
 In the weeks after training, the SharePoint administrator for the SharePoint site can:
 
 - Analyze usage for the site and compare it with usage expectations.
-- Verify that highly sensitive files have been properly labeled with the sensitivity sublabel.
+- Verify that highly sensitive files have been properly labeled with the sensitivity label or sublabel.
+
+  You can see which files have a label assigned by viewing a folder in SharePoint and adding the **Sensitivity** column through the **Show/hide columns** option of **Add column**.
+
 
 Retrain your users as needed.
 
 ### User adoption results
 
-Highly regulated files are stored exclusively on SharePoint sites for highly regulated data and the most sensitive files have the sensitivity sublabel for the site applied.
+Highly regulated files are stored exclusively on SharePoint sites for highly regulated data and the most sensitive files have the sensitivity label or sublabel for the site applied.
 
 ## How the Contoso Corporation deployed Microsoft 365 Enterprise
 
-The Contoso Corporation is a fictional but representative global manufacturing conglomerate with its headquarters in Paris, France. See how Contoso designed, configured, and then drove the adoption of a [secure SharePoint site](contoso-sharepoint-online-site-for-highly-confidential-assets.md) for their research teams in Paris, Moscow, New York, Beijing, and Bangalore. 
+The Contoso Corporation is a fictional but representative global manufacturing conglomerate. See how Contoso designed, configured, and then drove the adoption of a [secure SharePoint site](contoso-sharepoint-online-site-for-highly-confidential-assets.md) for their research teams in Paris, Moscow, New York, Beijing, and Bangalore. 
 
 ## See also
 
+[Teams for highly regulated data](secure-teams-highly-regulated-data-scenario.md)
+
+[Microsoft 365 Enterprise workloads and scenarios](deploy-workloads.md)
+
+[Microsoft 365 Productivity Library](https://aka.ms/productivitylibrary) (https://aka.ms/productivitylibrary)
+
 [Deployment guide](deploy-microsoft-365-enterprise.md)
-
-[Test lab guides](m365-enterprise-test-lab-guides.md)
-

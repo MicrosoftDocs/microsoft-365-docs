@@ -16,13 +16,13 @@ ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
 - MSB365
+- OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 5cf7139e-cfa1-4765-8aad-001af1c74faa
-description: "Learn to create, edit, delete, or remove AutoPilot profiles. "
-ms.custom: OKR_SMB_M365
+description: "Learn to create, edit, delete, or remove AutoPilot profiles."
 ---
 
 # Create and edit AutoPilot profiles
