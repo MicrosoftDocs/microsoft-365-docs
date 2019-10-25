@@ -75,7 +75,7 @@ To begin implementation work on an improvement action, you must assign it to a u
 - An IT implementer
 - Another employee with responsibility to perform the task 
 
-Once the proper person is identified, be sure they have the adequate [permissions](compliance-score-setup.md#set-user-permissions) in Compliance Score to perform the work, then take the following steps: 
+Once the proper person is identified, be sure they have the adequate [permissions](compliance-score-setup.md#set-user-permissions-and-assign-roles) in Compliance Score to perform the work, then take the following steps: 
 
 1. From the improvement actions details page, select **Edit status**. 
 
@@ -86,7 +86,7 @@ Once the proper person is identified, be sure they have the adequate [permission
 ![Compliance Score - improvement actions assign to user](media/compliance-score-improvement-actions-assign.png)
 
 > [!NOTE]
-> The **Suggested people** list pulls from the users roles assigned when you set up permissions. Therefore, be sure the assigned user has the [role](compliance-score-setup.md#set-user-permissions) that gives them the proper level of access to perform necessary functions.
+> The **Suggested people** list pulls from the users roles assigned when you set up permissions. Therefore, be sure the assigned user has the [role](compliance-score-setup.md#set-user-permissions-and-assign-roles) that gives them the proper level of access to perform necessary functions.
 
 The assigned user then performs the tasks suggested in the implementation instructions.
 
