@@ -60,7 +60,7 @@ Communication compliance in Microsoft 365 builds on the features of [Supervision
 
 Intelligent customizable playbooks in Communication compliance allow you to leverage machine learning to intelligently detect communication violations in your organization.
 
-- **Customizable pre-configured templates**: New policy templates help address the most common communications risks. Policy creation is now quicker with pre-defined anti-harassment and offensive language, sensitive information, and regulatory compliance templates.
+- **Customizable pre-configured templates**: New policy templates help address the most common communications risks. Initial policy creation and follow-on updating is now quicker with pre-defined anti-harassment and offensive language, sensitive information, and regulatory compliance templates.
 - **New machine learning support**: Built-in classifiers help reduce false positives in scanned messages, saving reviewers time during the investigation and remediation process.
 - Build your own machine learning model to detect violations unique to your organization
 
@@ -104,7 +104,9 @@ Identifying and resolving compliance issues with Communication compliance in Mic
 
 ### Configure
 
-In this workflow step, you identify your compliance requirements and configure applicable Communication compliance policies. You can choose from the following policy templates in the Microsoft 365 compliance center:
+In this workflow step, you identify your compliance requirements and configure applicable Communication compliance policies. Policy templates are a great way to not only quickly configure a new compliance policy, but to also quickly modify and update policies as your requirements change. For example, you may want to quickly test a policy for offensive language and anti-harassment on communications for a small group of users before configuring a policy for all users in your organization. The 
+
+You can choose from the following policy templates in the Microsoft 365 compliance center:
 
 - **Offensive language and anti-harassment**: Use this template to quickly create a policy that uses the built-in classifier to automatically detect content that may be considered abusive or offensive.
 - **Sensitive information**: Use this template to create a policy to scan communications containing defined sensitive information types or keywords to help make sure important data isn't shared with people that shouldn't have access.

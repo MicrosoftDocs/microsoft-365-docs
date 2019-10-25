@@ -21,7 +21,7 @@ description: "Set up Communication compliance policies to configure employee com
 # Configure Communication compliance for Microsoft 365 (preview)
 
 > [!IMPORTANT]
-> This topic applies to configuring Communication compliance in a Microsoft 365 subscription. If you want to configure supervision policies for an Office 365 subscription, see [Configure supervision for Office 365](supervision-policies.md).
+> This topic applies to configuring Communication compliance in a Microsoft 365 subscription. If you want to configure Supervision policies for an Office 365 subscription, see [Configure supervision for Office 365](supervision-policies.md).
 
 Use Communication compliance policies to capture employee communications for examination by internal or external reviewers. For more information about how Communication compliance policies can help you monitor communications in your organization, see [Communication compliance policies in Microsoft 365](communication-compliance.md).
 
