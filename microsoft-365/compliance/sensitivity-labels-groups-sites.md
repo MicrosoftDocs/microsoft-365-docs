@@ -6,7 +6,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Priority
+localization_priority: Normal
 ms.collection: 
 - M365-security-compliance
 search.appverid: 
@@ -45,7 +45,7 @@ To opt-in to the public preview follow these steps:
   }
 ```
 
-Note: If you are using the classic Azure AD classification list ($setting["ClassificationList"]), those classifications will not be used for new Office 365 groups and SharePoint sites after you enable this feature. Old groups and sites will still display those classification tags unless you convert them. Learn how.  
+If you are using the classic Azure AD classification list ($setting["ClassificationList"]), after you opt-in, Office 365 won't use the old classifications for new groups and SharePoint sites. Old groups and sites will still display the old classification tags unless you convert them. Learn how.  
 
 ## Create sensitivity labels for SharePoint Online groups and sites
 

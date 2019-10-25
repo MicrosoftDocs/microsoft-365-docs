@@ -7,7 +7,7 @@ ms.date: 10/21/2019
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Priority
+localization_priority: Normal
 ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
@@ -113,10 +113,9 @@ Users can apply just one label at a time for each document or email.
 
 When you label an email message that has attachments, those attachments do not inherit the same label. The attachments remain either without a label or retain a separately applied label. However, if the label for the email applies protection, that protection is applied to Office attachments.
 
-## Apply classifications to groups and sites
+## Support for SharePoint and OneDrive files protected by sensitivity labels
 
-> [!WARNING]
-> @Kaarin to send @Krowley the links for the admin topics that tell admins how to tell users to apply labels to groups and sites that they set up. The actual end user topics (are they on SOC?) will end up in the More resources list as well.
+ - Link to the new file i haven't created yet (made from labels warning in PS.docx) https://microsoft.sharepoint-df.com/:w:/t/CrossPremises/EWodtIxK6qZCuxVTcJgrSDUBy8eXtG86T0jDO4gHXPw5JA?e=4%3AB3cPRV&at=9&wdLOR=cC9693645-A4E0-400A-81BC-B40EBD059B8B
 
 ## When Office 365 applies marks and encryption to content
 
