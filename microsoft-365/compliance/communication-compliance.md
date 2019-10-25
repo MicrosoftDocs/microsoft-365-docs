@@ -87,8 +87,8 @@ New interactive dashboards for alerts, policy matches, actions, and trends help 
 
 Communication compliance policies scan and capture messages across several communication channels to help you quickly review and remediate compliance issues:
 
-- **Exchange Online:** All mailboxes hosted on [Exchange Online](https://docs.microsoft.com/Exchange/exchange-online) in your Microsoft 365 organization are eligible for scanning. Emails and attachments matching Communication compliance policy conditions are instantly available for monitoring and in supervision reports. Exchange Online is now an optional source channel and is no longer required in Communication compliance policies.
 - **Microsoft Teams:** Chat communications and associated attachments for public and private [Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/Teams-overview) channels and individual chats are supported in Communication compliance as a standalone channel source or with other Microsoft 365 services. Policies now automatically scan all Microsoft Teams channels and teams for specific users defined in a policy, eliminating the need to keep a separate mapping list for Microsoft Teams assignments.
+- **Exchange Online:** All mailboxes hosted on [Exchange Online](https://docs.microsoft.com/Exchange/exchange-online) in your Microsoft 365 organization are eligible for scanning. Emails and attachments matching Communication compliance policy conditions are instantly available for monitoring and in supervision reports. Exchange Online is now an optional source channel and is no longer required in Communication compliance policies.
 - **Skype for Business Online:** Communication compliance policies support scanning chat communications and associated attachments in [Skype for Business Online](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online).
 - **Third-party sources:** You can scan messages from [third-party sources](archiving-third-party-data.md) for data imported into mailboxes in your Microsoft 365 organization. Communication compliance supports connections to several popular platforms, including Instant Bloomberg, Facebook, Twitter, and others.
 
@@ -119,6 +119,7 @@ In this step, you look deeper into the issues detected as matching your Communic
 - **Issue management**: For each alert, you can take investigative actions to help remediate the issue detected in the message
 - **Document review**: During the investigation of an issue, you can use several views of the message to help properly evaluate the detected issue. The views include a conversation summary, text-only, annotated, and detail views of the communication conversation.
 - **Reviewing user activity history**: View the history of user message activities and remediation actions, such as past notifications and escalations for policy matches.
+- **Filters** - Use filters such as sender, recipient, date, and subject to quickly narrow down the message alerts that you want to review.
 
 ### Remediate
 

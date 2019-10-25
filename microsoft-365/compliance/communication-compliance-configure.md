@@ -64,34 +64,6 @@ Use the following chart to help you configure groups in your organization for Co
   
 When you select an Office 365 group for supervised users, the policy monitors the content of the shared Office 365 mailbox and the Microsoft Teams channels associated with the group. When you select a distribution list, the policy monitors individual user mailboxes.
 
-To manage supervised users in large enterprise organizations, you may need to monitor all users across large groups. You can use PowerShell to configure a distribution group for a global Communication compliance policy for the assigned group. This enables you to monitor thousands of users with a single policy and keep the Communication compliance policy updated as new employees join your organization.
-
-1. Create a dedicated [distribution group](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/new-distributiongroup?view=exchange-ps) for your global Communication compliance policy with the following properties: Make sure that this distribution group isn't used for other purposes or other Office 365 services.
-
-    - **MemberDepartRestriction = Closed**. Ensures that users cannot remove themselves from the distribution group.
-    - **MemberJoinRestriction = Closed**. Ensures that users cannot add themselves to the distribution group.
-    - **ModerationEnabled = True**. Ensures that all messages sent to this group are subject to approval and that the group is not being used to communicate outside of the Communication compliance policy configuration.
-
-    ```
-    New-DistributionGroup -Name <your group name> -Alias <your group alias> -MemberDepartRestriction 'Closed' -MemberJoinRestriction 'Closed' -ModerationEnabled $true
-    ```
-2. Select an unused [Exchange custom attribute](https://docs.microsoft.com/Exchange/recipients/mailbox-custom-attributes?view=exchserver-2019&viewFallbackFrom=exchonline-ww) to track users added to the Communication compliance policy in your organization.
-
-3. Run the following PowerShell script on a recurring schedule to add users to the Communication compliance policy:
-
-    ```
-    $Mbx = (Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited -Filter {CustomAttribute9 -eq $Null})
-    $i = 0
-    ForEach ($M in $Mbx) 
-    {
-      Write-Host "Adding" $M.DisplayName
-      Add-DistributionGroupMember -Identity <your group name> -Member $M.DistinguishedName -ErrorAction SilentlyContinue
-      Set-Mailbox -Identity $M.Alias -<your custom attribute name> SRAdded 
-      $i++
-    }
-    Write-Host $i "Mailboxes added to supervisory review distribution group."
-    ```
-
 For more information about setting up groups, see:
 
 - [Create and manage distribution groups](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)

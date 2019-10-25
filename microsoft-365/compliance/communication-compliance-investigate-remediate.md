@@ -37,7 +37,7 @@ The first step to investigate issues detected by your policies is to review gene
 
 ### Using filters
 
-The next step is to sort the messages so that it's easier for you to investigate alerts. Communication compliance supports multi-level filtering for several message fields to help you quickly investigate and review messages with policy matches. Filtering is available for pending and and resolved items for each configured policy. You can configure ad-hoc filter queries for a policy or configure and save custom and default filter queries for use across all policies. After configuring fields for a filter, you'll see the filter fields displayed on the top of the alert message queue that you can configure for specific values.
+The next step is to sort the messages so that it's easier for you to investigate alerts. Communication compliance supports multi-level filtering for several message fields to help you quickly investigate and review messages with policy matches. Filtering is available for pending and and resolved items for each configured policy. You can configure ad-hoc filter queries for a policy or configure and save custom and default filter queries for use in each specific policy. After configuring fields for a filter, you'll see the filter fields displayed on the top of the alert message queue that you can configure for specific filter values.
 
 For a complete list of filters and field details, see [Filters](communication-compliance-feature-reference.md#filters) in the feature reference topic.
 
@@ -59,13 +59,15 @@ SCREENSHOT OF FILTER CONTROLS
 
 7. If you'd like to save the filter selected as the default filter, select **Save as default**. If you want to use this filter as an ad-hoc filter, select **Done**.
 
-8. If you'd like to save the selected filters as a filter query, select **Save the query** control after you've configured at least one filter value. Enter a name for the filter query and select **Save**. This filter will be available to use across all policies and will be listed as a selection in the **Saved filter queries** section of the **Filters** details page.
+8. If you'd like to save the selected filters as a filter query, select **Save the query** control after you've configured at least one filter value. Enter a name for the filter query and select **Save**. This filter will be available to use for only this policy and will be listed as a selection in the **Saved filter queries** section of the **Filters** details page.
 
-#### Using near and exact duplicate filters
+### Using near and exact duplicate analysis
 
-Communication compliance policies automatically scan and pre-filter near and exact message duplicates without any additional configuration steps. This allows you to quickly remediate similar messages one-by-one or as a group, reducing the message investigation burden for reviewers. As duplicates are detected, the **Near Duplicates** and/or the **Exact Duplicates** controls are displayed in the remediation action toolbar.
+Communication compliance policies automatically scan and pre-group near and exact message duplicates without any additional configuration steps. This allows you to quickly remediate similar messages one-by-one or as a group, reducing the message investigation burden for reviewers. As duplicates are detected, the **Near Duplicates** and/or the **Exact Duplicates** controls are displayed in the remediation action toolbar.
 
 SCREENSHOT OF EXACT DUPLICATE FILTER
+
+
 
 ## Remediate alerts
 
@@ -87,7 +89,7 @@ No matter where you start to review alerts or the filtering you configure, the n
     - **False Positive**: You can always resolve a message as a false positive at any point during the message review workflow. The message cannot be reopened and all false positive messages are displayed in the **Resolved** tab.
     - **Tag as**: Tag the message as *compliant*, *non-compliant*, or as *questionable* as it relates to the policies and standards for your organization. Adding tags and tagging comments can help you micro-filter policy alerts for escalations or as part of other internal review processes. After tagging is complete, you can also choose to resolve the message to move it out of the pending review queue.
     - **Notify**: You can use the **Notify** control to assign a custom notice template to the alert and to send a simple warning notice to the user. Choose the appropriate notice template and select **Send** to email a reminder to the employee that sent the message and to resolve the issue.
-    - **Escalate**: Using the **Escalate** control, you can choose who else in your organization should review the message. HOW IS THE ESCALATION LIST OF USERS GENERATED
+    - **Escalate**: Using the **Escalate** control, you can choose who else in your organization should review the message. Choose from a list of configured reviewers to send an email notification requesting an additional review of the message alert. The selected reviewer can use a link in the email notification to go directly to items escalated to them for review.
 
 SCREENSHOT OF REMEDIATION CONTROLS
 

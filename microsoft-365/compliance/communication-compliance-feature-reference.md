@@ -34,8 +34,8 @@ Policy templates are pre-defined policy settings that you can use to quickly cre
 |**Area**|**Policy Template**|**Details**|
 |:-----|:-----|:-----|
 | **Offensive language and anti-harassment** | Monitor communications for offensive language | - Locations: Exchange, Teams, Skype for Business <br> - Direction: Inbound, Outbound, Internal <br> - Review Percentage: 100% <br> - Conditions: Offensive language classifier |
-| **Sensitive information** | Monitor communications for sensitive information | - Locations: Exchange, Teams, Skype for Business <br> - Direction: Inbound, Outbound, Internal <br> - Review Percentage: 10% <br> - Conditions: Sensitive information, attachments larger than 1 MB |
-| **Regulatory compliance** | Monitor communications for info related to financial regulatory compliance | - Locations: Exchange, Teams, Skype for Business <br> - Direction: Inbound, Outbound <br> - Review Percentage: 10% <br> - Conditions: Standard regulatory leak terms, attachments larger than 1 MB |
+| **Sensitive information** | Monitor communications for sensitive information | - Locations: Exchange, Teams, Skype for Business <br> - Direction: Inbound, Outbound, Internal <br> - Review Percentage: 10% <br> - Conditions: Sensitive information OOB PATTERNS OR TYPES - BRING YOUR ONW DICTIONARY, attachments larger than 1 MB |
+| **Regulatory compliance** | Monitor communications for info related to financial regulatory compliance | - Locations: Exchange, Teams, Skype for Business <br> - Direction: Inbound, Outbound <br> - Review Percentage: 10% <br> - Conditions: BRING YOUR ONW DICTIONARY, attachments larger than 1 MB |
 
 ## Supervised users
 
@@ -58,18 +58,18 @@ When you select an Office 365 group for supervised users, the policy scans the c
 
 With Communication compliance policies, you can choose to scan messages in one or more of the following communication platforms as a group or as standalone sources. Communications captured across these platforms are retained for seven years for each policy by default, even if users leave your organization and their mailbox is deleted.
 
-- **Exchange email:** Mailboxes hosted on Exchange Online as part of your Microsoft 365 or Office 365 subscription are all eligible for message scanning. Emails and attachments matching Communication compliance policy conditions are instantly available in Communication compliance reports. Supported attachment types for Communication compliance are the same as the [file types supported for Exchange mail flow rule content inspections](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection).
-
-- **Microsoft Teams:** Chat communications and associated attachments in both public and private Microsoft Teams channels and individual chats can be scanned. Teams chats matching Communication compliance policy conditions are processed once every 24 hours and then are available in Communication compliance reports. Use the following group management configurations to supervise individual user chats and channel communications in Teams:
+- **Microsoft Teams**: Chat communications and associated attachments in both public and private Microsoft Teams channels and individual chats can be scanned. Teams chats matching Communication compliance policy conditions are processed once every 24 hours and then are available in Communication compliance reports. Use the following group management configurations to supervise individual user chats and channel communications in Teams:
 
     - **For Teams chat communications:** Assign individual users or assign a [distribution group](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) to the Communication compliance policy. This is for 1-to-1 or 1-to-many user/chat relationships.
     - **For Teams Channel communications:** Assign every Microsoft Team channel or Office 365 group you want to scan that contains a specific user to the Communication compliance policy. If you add the same user to other Microsoft Teams channels or Office 365 groups, be sure to add these new channels and groups to the Communication compliance policy.
 
-- **Skype for Business Online:** Chat communications and associated attachments in Skype for Business Online can be supervised. Skype for Business Online chats matching Communication compliance policy conditions are processed once every 24 hours and then are available in Communication compliance reports. Supervised chat conversations are sourced from [previous conversations saved in Skype for Business Online](https://support.office.com/article/Find-a-previous-Skype-for-Business-conversation-18892eba-5f18-4281-8c87-fd48bd72e6a2).  Use the following group management configuration to supervise user chat communications in Skype for Business Online:
+- **Exchange email**: Mailboxes hosted on Exchange Online as part of your Microsoft 365 or Office 365 subscription are all eligible for message scanning. Emails and attachments matching Communication compliance policy conditions are instantly available in Communication compliance reports. Supported attachment types for Communication compliance are the same as the [file types supported for Exchange mail flow rule content inspections](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection).
 
-    - **For Skype for Business Online chat communications:** Assign individual users or assign a [distribution group](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) to the Communication compliance policy. This is for 1-to-1 or 1-to-many user/chat relationships.
+- **Skype for Business Online**: Chat communications and associated attachments in Skype for Business Online can be supervised. Skype for Business Online chats matching Communication compliance policy conditions are processed once every 24 hours and then are available in Communication compliance reports. Supervised chat conversations are sourced from [previous conversations saved in Skype for Business Online](https://support.office.com/article/Find-a-previous-Skype-for-Business-conversation-18892eba-5f18-4281-8c87-fd48bd72e6a2).  Use the following group management configuration to supervise user chat communications in Skype for Business Online:
 
-- **Third-party sources:** You can scan communications from third-party sources for data imported into mailboxes in your Microsoft 365 organization. Connectors support the following third-party resources:
+    - **For Skype for Business Online chat communications**: Assign individual users or assign a [distribution group](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) to the Communication compliance policy. This is for 1-to-1 or 1-to-many user/chat relationships.
+
+- **Third-party sources**: You can scan communications from third-party sources for data imported into mailboxes in your Microsoft 365 organization. Connectors support the following third-party resources:
 
     - [Instant Bloomberg](archive-instant-bloomberg-data.md)
     - [Facebook](archive-facebook-data-with-sample-connector.md)
@@ -199,16 +199,16 @@ Communication compliance filters allow you to filter and sort alert messages for
 |**Filter**|**Details**|
 |:-----|:-----|
 | **Date** | The date the message was sent or received by a user in your organization. |
-| **File class** | The class of the message based on the message type, either email or chat. |
+| **File class** | The class of the message based on the message type, either message and attachment. |
 | **Has attachment** | The attachment presence in the message. |
-| **Item class** | The class of the message based on the message channel. Options are... |
+| **Item class** | The class of the message based on the message type, email, chat, bloonmberg, etc. |
 | **Recipient** domains | The domain to which the message was sent. This is normally your Microsoft 365 subscription domain by default. |
 | **Recipient** | The user to which the message was sent. |
 | **Sender** | The person who sent the message. |
 | **Sender domain** | The domain that sent the message. |
-| **Size** | The size of the message, measured in KBs???? INCLUDES ATTACHMENT SIZE??? |
+| **Size** | The size of the message in KB. |
 | **Subject/Title** | The message subject or chat title. |
-| **Labels** | Retention labels assigned to the message or the MESSAGE ATTACHMENT? |
+| **Tags** | Tags COMPLIANT, NONCOMPLIANT ETC assigned to the message or the MESSAGE ATTACHMENT? |
 | **Escalated To** | The user name of the person included as part of a message escalation action. |
 
 ## Monitor & manage
@@ -229,10 +229,10 @@ To view Communication compliance policy activities, select the **Export review a
 
 |**Field**|**Details**|
 |:-----|:-----|
-| **CreationDate** |  |
-| **UserIds** | |
-| **Operations** | |
-| **AuditData** | This is the main data source field for all policy activities. All activities are recorded and separated by comman delimiters. |
+| **CreationDate** | When the activity was performed in a policy. |
+| **UserIds** | The user that preformed the activity in a policy. |
+| **Operations** | ?? |
+| **AuditData** | This is the main data source field for all policy activities. All activities are recorded and separated by comma delimiters. |
 
 You can also view audit activities in the unified audit log or with the [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog) PowerShell cmdlet.
 
