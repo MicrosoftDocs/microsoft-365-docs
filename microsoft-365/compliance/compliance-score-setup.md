@@ -16,6 +16,8 @@ description: "Learn how to sign in, set up permissions, and understand your dash
 
 # Microsoft Compliance Score setup (Preview)
 
+Compliance Score is available to organizations that have a subscription to Microsoft 365 E3 or E5, or a Volume Licensing equivalent (which consists of Office 365 E3 or E5, Enterprise Mobility + Security E3 or E5, and Windows 10 Enterprise E3/E5).
+
 ## Before you begin
 
 The Microsoft 365 global administrator for your organization will likely be the first user to access Compliance Score. We recommend the global admin sign in and set user permissions as outlined below when visiting Compliance Score for the first time.
