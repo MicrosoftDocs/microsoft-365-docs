@@ -104,24 +104,24 @@ Recommended for **ON** in both Recommended and Aggressive Levels:
 
 |Security feature name|Recommended|Aggressive|Comment|
 |---------|---------|---------|---------|
-|Zero Hour Autopurge should be enabled - Phish|True|True|-|
-|Phish detection action should be set to|Quarantine - Request|Quarantine - Admin|-|
-|High confidence Phish detection action should be set to|Quarantine - Admin|Quarantine - Admin|-|
-|EnableMailboxIntelligence|True|True|-|
-|EnableSimilarUsersSafetyTips|True|True|-|
-|EnableSimilarDomainsSafetyTips|True|True|-|
-|EnableUnusualCharactersSafetyTips|True|True|-|
-|TargetedUserProtectionAction|MovetoJmf|Quarantine|-|
-|MailboxIntelligenceProtectionAction|NoAction + SafetyTip|MoveToJmf|-|
-|TargetedDomainProtectionAction|MoveToJmf|Quarantine|-|
-|AuthenticationFailAction|MoveToJmf|Quarantine|-|
-|AntiSpoofEnforcementType|High|High|-|
-|EnableAuthenticationSafetyTip|False|True|-|
-|EnableAntiSpoofEnforcement|True|True|-|
-|EnableUnauthenticatedSender|True|True|-|
-|EnableAuthenticationSoftPassSafetyTip|False|True|-|
-|TreatSoftPassAsAuthenticated|True|False|-|
-|EnableSuspiciousSafetyTip|True|True|-|
+|Zero Hour Autopurge should be enabled - Phish| True | True | - | 
+|Phish detection action should be set to | Quarantine - Request | Quarantine - Admin | - |
+|High confidence Phish detection action should be set to | Quarantine - Admin | Quarantine - Admin | - |
+|EnableMailboxIntelligence | True | True | - |
+|EnableSimilarUsersSafetyTips | True | True | - |
+|EnableSimilarDomainsSafetyTips | True | True | - |
+|EnableUnusualCharactersSafetyTips | True | True | - |
+|TargetedUserProtectionAction |MoveToJmf |Quarantine | - |
+|MailboxIntelligenceProtectionAction |NoAction |MoveToJMF | - |
+|TargetedDomainProtectionAction |NoAction |Block | - |
+|AuthenticationFailAction |MoveToJmf |Quarantine | - |
+|AntiSpoofEnforcementType |High |High | - |
+|EnableAuthenticationSafetyTip |False |True | - |
+|EnableAntiSpoofEnforcement |True |True | - |
+|EnableUnauthenticatedSender |True |True | - |
+|EnableAuthenticationSoftPassSafetyTip |False |True | - |
+|TreatSoftPassAsAuthenticated |True |False | - |
+|EnableSuspiciousSafetyTip |True |True | - |
 
 ## Office 365 Advanced Threat Protection (ATP) security
 
@@ -142,13 +142,13 @@ If you've added an Office 365 ATP subscription to your EOP, be sure to set the f
 
 |Security feature name|Recommended|Aggressive|Comment|
 |---------|---------|---------|---------|
-|Set Advanced phishing threshold to|2|4|-|
-|Enable Anti-impersonation protection|Yes|Yes|-|
-|Enable Mailbox intelligence in Anti-Impersonation policies|Yes|Yes|-|
-|Enable Mailbox intelligence based Impersonation protection|Yes|Yes|-|
-|Domain Impersonation action should be|MoveToJmf|Quarantine|-|
-|User Impersonation action should be|MoveToJmf|Quarantine|-|
-|Mailbox intelligence based impersonation protection action should be|NoAction + SafetyTip|MoveToJmf|-|
+|Set Advanced phishing threshold to | 2 | 4 | - |
+|Enable Anti-impersonation protection | Yes | Yes | - |
+|Enable Mailbox intelligence in Anti-Impersonation policies | Yes | Yes | - |
+|Enable Mailbox intelligence based Impersonation protection | Yes | Yes | - |
+|Domain Impersonation action should be | MoveToJMF | MoveToJMF | - |
+|User Impersonation action should be | MoveToJMF | Qurantine | - |
+|Mailbox intelligence based impersonation protection action should be | NoAction  | MoveToJMF | - |
 
 ### Safe Links and Safe Attachments
 
