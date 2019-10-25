@@ -27,14 +27,14 @@ The 23 [Privacy Shield Principles](https://www.privacyshield.gov/article?id=Requ
 
 To join the EU-U.S. and Swiss-U.S. Privacy Shield Frameworks — an action that is voluntary — US-based companies must publicly commit to complying with framework requirements and self-certify their compliance to the US Department of Commerce. Once they publicly commit and self-certify, that commitment becomes enforceable under US law.
 
-Microsoft has publicly committed to the [Privacy Shield Principles](https://www.privacyshield.gov/article?id=Requirements-of-Participation) and has self-certified its compliance with its requirements. Our participation applies to all personal data processed by Microsoft that is transferred to the United States from the European Union, European Economic Area (EEA), and Switzerland. In addition, customers of Microsoft business cloud services benefit from compliance with the Standard Contractual Clauses (also known as [EU Model Clauses](offering-eu-model-clauses.md)) under the [Microsoft Online Services Terms](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31), unless the customer has opted out of those clauses.
+Microsoft has publicly committed to the [Privacy Shield Principles](https://www.privacyshield.gov/article?id=Requirements-of-Participation) and has self-certified its compliance with its requirements. Our participation applies to all personal data processed by Microsoft that is transferred to the United States from the European Union, European Economic Area (EEA), and Switzerland. In addition, customers of Microsoft business cloud services benefit from compliance with the Standard Contractual Clauses (also known as [EU Model Clauses](offering-eu-model-clauses.md)) under the [Microsoft Online Services Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31), unless the customer has opted out of those clauses.
 
 Microsoft cooperates with EU and Swiss national data protection authorities (DPAs) and complies with their advice for resolving any disputes that arise under the Privacy Shield. We will also meet Privacy Shield obligations for transparency about government requests for access to personal information. Our [Law Enforcement Requests Report](https://www.microsoft.com/corporate-responsibility/lerr) and [U.S. National Security Orders Report](https://www.microsoft.com/corporate-responsibility/fisa/) make this information publicly available twice a year.
 
 ## Microsoft in-scope cloud services
 
 - [Azure and Azure DevOps](https://gallery.technet.microsoft.com/Overview-of-Azure-c1be3942)
-- [Dynamics 365 MT & GCC](http://download.microsoft.com/download/E/1/9/E1977163-7A86-4812-AC18-C03ADC958AAF/Microsoft_Dynamics_365_Cloud_Service_Compliance_Datasheet.pdf)
+- [Dynamics 365 MT & GCC](https://download.microsoft.com/download/E/1/9/E1977163-7A86-4812-AC18-C03ADC958AAF/Microsoft_Dynamics_365_Cloud_Service_Compliance_Datasheet.pdf)
 - Intune
 - [Microsoft 365](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=9f756cce-b15d-45a9-94d7-6a583dee4401&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)
 - Power BI cloud service as a standalone service or as included in an Office 365 branded plan or suite
@@ -82,9 +82,9 @@ If you have a complaint that is Privacy Shield-related, please let us know using
 - [Privacy Shield Frequently Asked Questions](https://www.privacyshield.gov/article?id=FAQs)
 - [Microsoft and the EU Model Clauses](offering-eu-model-clauses.md)
 - [Privacy at Microsoft](https://privacy.microsoft.com)
-- [Privacy considerations in the cloud](http://download.microsoft.com/download/0/9/D/09DE47F6-F9E5-4C14-B9E8-E8119A130ACC/Privacy_considerations_in_the_cloud.pdf)
+- [Privacy considerations in the cloud](https://download.microsoft.com/download/0/9/D/09DE47F6-F9E5-4C14-B9E8-E8119A130ACC/Privacy_considerations_in_the_cloud.pdf)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/3/F/4/3F4C5C35-6653-4E9B-8C4F-917B1064F537/PrivacyShield-Compliance.pdf).
+Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/3/F/4/3F4C5C35-6653-4E9B-8C4F-917B1064F537/PrivacyShield-Compliance.pdf).

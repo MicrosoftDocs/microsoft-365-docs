@@ -16,7 +16,7 @@ ms.assetid: 393b0050-7c7e-49e6-a03d-b1e09fe4de9e
 description: "This introductory document will help you understand Exchange Online Protection (EOP) and some important terminology. This is applicable for Office 365 customers who are protecting Exchange Online cloud-hosted mailboxes and EOP standalone customers who are protecting on-premises mailboxes such as Exchange Server 2016."
 ---
 
-## What is Exchange Online Protection (EOP)
+# What is Exchange Online Protection (EOP)
 
 Exchange Online Protection (EOP) is a cloud-based email filtering service that helps protect your organization against spam and malware. If you have mailboxes in Office 365, they are automatically protected by EOP since it is part of the service. This includes organizations that have mailboxes in both Office 365 and on-premise, which is commonly known as a hybrid scenario. EOP standalone is also available for customers who do not have mailboxes in the cloud but want to protect their on-premises mailboxes.
 
