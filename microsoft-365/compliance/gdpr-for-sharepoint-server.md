@@ -12,6 +12,11 @@ description: "Learn about how to address GDPR requirements in on-premises ShareP
 
 # GDPR for SharePoint Server
 
+Applies to:
+- SharePoint Server 2013
+- SharePoint Server 2016
+- SharePoint Server 2019
+
 As part of safeguarding personal information, we recommend the following:
 
 -   Classify your data, using Azure Information Protection.
