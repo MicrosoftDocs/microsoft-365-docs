@@ -15,7 +15,7 @@ search.appverid:
 description: "You can apply labels to Office 365 groups and SharePoint sites. Sensitivity labels can use encryption to protect groups and sites."
 ---
 
-# About the Office 354 groups and sites public preview for sensitivity labels
+# About the Office 365 groups and sites public preview for sensitivity labels
 
 With the release of this public preview, administrators that opt-in can apply sensitivity labels to Office 365 groups and SharePoint sites and add policies related to these labels. End-users can then select a label when they create an Office 365 group or SharePoint site. Sensitivity labels for groups and sites work with SharePoint Online, Microsoft Teams, and Outlook.
 
