@@ -15,17 +15,17 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-description: "Feature reference for communication compliance in Microsoft 365. Learn details and specifications for each of the feature components."
+description: "Feature reference for Communication compliance in Microsoft 365. Learn details and specifications for each of the feature components."
 ---
 
 # Communication compliance feature reference
 
 ## Policies
 
-You create communication compliance policies for Microsoft 365 organizations in the Microsoft 365 compliance center. If you have an Office 365 organization, you'll [configure supervision policies](configure-supervision-policies.md) in the Office 365 security and compliance center. Communication compliance policies define which communications and users are subject to review in your organization, define custom conditions that the communications must meet, and specifies who should perform reviews. Users included in the Supervisory Review role group can set up policies and anyone who has this role assigned can access the **Communication compliance** page in the Microsoft 365 compliance center. If needed, you can export the history of modifications to a policy to a .csv file that also includes the current status of alerts pending review, escalated items, and resolved items. Policies can be deleted when no longer needed.
+You create Communication compliance policies for Microsoft 365 organizations in the Microsoft 365 compliance center. If you have an Office 365 organization, you'll [configure supervision policies](configure-supervision-policies.md) in the Office 365 security and compliance center. Communication compliance policies define which communications and users are subject to review in your organization, define custom conditions that the communications must meet, and specifies who should perform reviews. Users included in the Supervisory Review role group can set up policies and anyone who has this role assigned can access the **Communication compliance** page in the Microsoft 365 compliance center. If needed, you can export the history of modifications to a policy to a .csv file that also includes the current status of alerts pending review, escalated items, and resolved items. Policies can be deleted when no longer needed.
 
 > [!NOTE]
-> Supervision policies created in the Office 365 security and compliance center for Office 365 subscriptions cannot migrate to Microsoft 365. If you're migrating from an Office 365 subscription to a Microsoft 365 subscription, you'll need to create new communication compliance polices to replace existing supervision policies.
+> Supervision policies created in the Office 365 security and compliance center for Office 365 subscriptions cannot migrate to Microsoft 365. If you're migrating from an Office 365 subscription to a Microsoft 365 subscription, you'll need to create new Communication compliance polices to replace existing supervision policies.
 
 ## Policy templates
 
@@ -39,14 +39,14 @@ Policy templates are pre-defined policy settings that you can use to quickly cre
 
 ## Supervised users
 
-Before you start using communication compliance, you must determine who needs their communications reviewed. In the policy, user email addresses identify individuals or groups of people to supervise. Some examples of these groups are Office 365 Groups, Exchange-based distribution lists, and Microsoft Teams channels. You also can exclude specific users or groups from scanning with a specific exclusion group or a list of groups.
+Before you start using Communication compliance, you must determine who needs their communications reviewed. In the policy, user email addresses identify individuals or groups of people to supervise. Some examples of these groups are Office 365 Groups, Exchange-based distribution lists, and Microsoft Teams channels. You also can exclude specific users or groups from scanning with a specific exclusion group or a list of groups.
 
 > [!IMPORTANT]
-> Users covered by communication compliance policies must have either a Microsoft 365 E5 Compliance license, an Office 365 Enterprise E3 license with the Advanced Compliance add-on, or be included in an Office 365 Enterprise E5 subscription.If you don't have an existing Enterprise E5 plan and want to try communication compliance, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
+> Users covered by Communication compliance policies must have either a Microsoft 365 E5 Compliance license, an Office 365 Enterprise E3 license with the Advanced Compliance add-on, or be included in an Office 365 Enterprise E5 subscription.If you don't have an existing Enterprise E5 plan and want to try Communication compliance, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
 
 ## Reviewers
 
-When you create a communication compliance policy, you must determine who will perform the reviews of the messages of the supervised users. In the policy, user email addresses identify individuals or groups of people to review supervised communications. All reviewers must have mailboxes hosted on Exchange Online.
+When you create a Communication compliance policy, you must determine who will perform the reviews of the messages of the supervised users. In the policy, user email addresses identify individuals or groups of people to review supervised communications. All reviewers must have mailboxes hosted on Exchange Online.
 
 ## Groups for supervised users and reviewers
 
@@ -56,18 +56,18 @@ When you select an Office 365 group for supervised users, the policy scans the c
 
 ## Supported communication types
 
-With communication compliance policies, you can choose to scan messages in one or more of the following communication platforms as a group or as standalone sources. Communications captured across these platforms are retained for seven years for each policy by default, even if users leave your organization and their mailbox is deleted.
+With Communication compliance policies, you can choose to scan messages in one or more of the following communication platforms as a group or as standalone sources. Communications captured across these platforms are retained for seven years for each policy by default, even if users leave your organization and their mailbox is deleted.
 
-- **Exchange email:** Mailboxes hosted on Exchange Online as part of your Microsoft 365 or Office 365 subscription are all eligible for message scanning. Emails and attachments matching communication compliance policy conditions are instantly available in communication compliance reports. Supported attachment types for communication compliance are the same as the [file types supported for Exchange mail flow rule content inspections](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection).
+- **Exchange email:** Mailboxes hosted on Exchange Online as part of your Microsoft 365 or Office 365 subscription are all eligible for message scanning. Emails and attachments matching Communication compliance policy conditions are instantly available in Communication compliance reports. Supported attachment types for Communication compliance are the same as the [file types supported for Exchange mail flow rule content inspections](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection).
 
-- **Microsoft Teams:** Chat communications and associated attachments in both public and private Microsoft Teams channels and individual chats can be scanned. Teams chats matching communication compliance policy conditions are processed once every 24 hours and then are available in communication compliance reports. Use the following group management configurations to supervise individual user chats and channel communications in Teams:
+- **Microsoft Teams:** Chat communications and associated attachments in both public and private Microsoft Teams channels and individual chats can be scanned. Teams chats matching Communication compliance policy conditions are processed once every 24 hours and then are available in Communication compliance reports. Use the following group management configurations to supervise individual user chats and channel communications in Teams:
 
-    - **For Teams chat communications:** Assign individual users or assign a [distribution group](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) to the communication compliance policy. This is for 1-to-1 or 1-to-many user/chat relationships.
-    - **For Teams Channel communications:** Assign every Microsoft Team channel or Office 365 group you want to scan that contains a specific user to the communication compliance policy. If you add the same user to other Microsoft Teams channels or Office 365 groups, be sure to add these new channels and groups to the communication compliance policy.
+    - **For Teams chat communications:** Assign individual users or assign a [distribution group](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) to the Communication compliance policy. This is for 1-to-1 or 1-to-many user/chat relationships.
+    - **For Teams Channel communications:** Assign every Microsoft Team channel or Office 365 group you want to scan that contains a specific user to the Communication compliance policy. If you add the same user to other Microsoft Teams channels or Office 365 groups, be sure to add these new channels and groups to the Communication compliance policy.
 
-- **Skype for Business Online:** Chat communications and associated attachments in Skype for Business Online can be supervised. Skype for Business Online chats matching communication compliance policy conditions are processed once every 24 hours and then are available in communication compliance reports. Supervised chat conversations are sourced from [previous conversations saved in Skype for Business Online](https://support.office.com/article/Find-a-previous-Skype-for-Business-conversation-18892eba-5f18-4281-8c87-fd48bd72e6a2).  Use the following group management configuration to supervise user chat communications in Skype for Business Online:
+- **Skype for Business Online:** Chat communications and associated attachments in Skype for Business Online can be supervised. Skype for Business Online chats matching Communication compliance policy conditions are processed once every 24 hours and then are available in Communication compliance reports. Supervised chat conversations are sourced from [previous conversations saved in Skype for Business Online](https://support.office.com/article/Find-a-previous-Skype-for-Business-conversation-18892eba-5f18-4281-8c87-fd48bd72e6a2).  Use the following group management configuration to supervise user chat communications in Skype for Business Online:
 
-    - **For Skype for Business Online chat communications:** Assign individual users or assign a [distribution group](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) to the communication compliance policy. This is for 1-to-1 or 1-to-many user/chat relationships.
+    - **For Skype for Business Online chat communications:** Assign individual users or assign a [distribution group](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) to the Communication compliance policy. This is for 1-to-1 or 1-to-many user/chat relationships.
 
 - **Third-party sources:** You can scan communications from third-party sources for data imported into mailboxes in your Microsoft 365 organization. Connectors support the following third-party resources:
 
@@ -90,7 +90,7 @@ By default, the **Direction is** condition is displayed and can't be removed. Co
 
 ### Sensitive information types
 
-You have the option of including sensitive information types as part of your communication compliance policy. Sensitive information types are either pre-defined or custom data types that can help identify and protect credit card numbers, bank account numbers, passport numbers, and more. As a part of Office 365 [data loss prevention (DLP)](data-loss-prevention-policies.md), the sensitive information configuration can use patterns, character proximity, confidence levels, and even custom data types to help identify and flag content that may be sensitive. The default sensitive information types are:
+You have the option of including sensitive information types as part of your Communication compliance policy. Sensitive information types are either pre-defined or custom data types that can help identify and protect credit card numbers, bank account numbers, passport numbers, and more. As a part of Office 365 [data loss prevention (DLP)](data-loss-prevention-policies.md), the sensitive information configuration can use patterns, character proximity, confidence levels, and even custom data types to help identify and flag content that may be sensitive. The default sensitive information types are:
 
 - Financial
 - Medical and health
@@ -101,7 +101,7 @@ To learn more about sensitive information details and the patterns included in t
 
 ### Custom keyword dictionaries
 
-Configure custom keyword dictionaries (or lexicons) to provide simple management of keywords specific to your organization or industry. Keyword dictionaries support up to 100,000 terms per dictionary. If needed, you can apply multiple custom keyword dictionaries to a single policy or have a single keyword dictionary per policy. These dictionaries are assigned in a communication compliance policy and can be sourced from a file (such as a .csv or .txt list), or from a list you can [import in the Compliance center](create-a-keyword-dictionary.md).
+Configure custom keyword dictionaries (or lexicons) to provide simple management of keywords specific to your organization or industry. Keyword dictionaries support up to 100,000 terms per dictionary. If needed, you can apply multiple custom keyword dictionaries to a single policy or have a single keyword dictionary per policy. These dictionaries are assigned in a Communication compliance policy and can be sourced from a file (such as a .csv or .txt list), or from a list you can [import in the Compliance center](create-a-keyword-dictionary.md).
 
 ### Classifiers
 
@@ -154,7 +154,7 @@ If you enter multiple conditions, Microsoft 365 uses all the conditions together
 
 ### Review percentage
 
-If you want to reduce the amount of content to review, you can specify a percentage of all the communications governed by a supervision policy. A real-time, random sample of content is selected from the total percentage of content that matches chosen policy conditions. If you want reviewers to review all items, you can configure **100%** in a communication compliance policy.
+If you want to reduce the amount of content to review, you can specify a percentage of all the communications governed by a supervision policy. A real-time, random sample of content is selected from the total percentage of content that matches chosen policy conditions. If you want reviewers to review all items, you can configure **100%** in a Communication compliance policy.
 
 ## Notices
 
@@ -221,7 +221,7 @@ It is easy to quickly review the alerts and policy matches generated of your Com
 
 ## Audit
 
-In some instances, you must provide information to regulatory or compliance auditors to prove supervision of employee activities and communications. This may be a summary of all activities associated with a defined organizational policy or anytime a communication compliance policy changes. Communication compliance policies have built-in audit trails for complete readiness for internal or external audits. Detailed audit histories of every create, edit, and delete action are captured by your communication policies to provide proof of supervisory procedures.
+In some instances, you must provide information to regulatory or compliance auditors to prove supervision of employee activities and communications. This may be a summary of all activities associated with a defined organizational policy or anytime a Communication compliance policy changes. Communication compliance policies have built-in audit trails for complete readiness for internal or external audits. Detailed audit histories of every create, edit, and delete action are captured by your communication policies to provide proof of supervisory procedures.
 
 To view Communication compliance policy activities, select the **Export review activities** control on the main page for any policy. This generates an audit file in the .csv format that contains the following information:
 
@@ -242,4 +242,4 @@ Search-UnifiedAuditLog -StartDate 3/1/2019 -EndDate ([System.DateTime]::Now) -Re
 
 ## Ready to get started?
 
-To configure communication compliance for your Microsoft 365 organization, see [Configure communication compliance for your Microsoft 365 organization (preview)](communication-compliance-configure.md).
+To configure Communication compliance for your Microsoft 365 organization, see [Configure Communication compliance for your Microsoft 365 organization (preview)](communication-compliance-configure.md).

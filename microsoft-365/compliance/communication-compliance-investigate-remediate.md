@@ -1,5 +1,5 @@
 ---
-title: "Investigate and remediate communication compliance alerts (preview)"
+title: "Investigate and remediate Communication compliance alerts (preview)"
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -15,25 +15,25 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-description: "Investigate and remediate communication compliance alerts in Microsoft 365."
+description: "Investigate and remediate Communication compliance alerts in Microsoft 365."
 ---
 
-# Investigate and remediate communication compliance alerts (preview)
+# Investigate and remediate Communication compliance alerts (preview)
 
-After you've configured your communication compliance policies, you'll start to receive alerts in the Microsoft 365 compliance center for message issues that match your policy conditions. Follow the workflow instructions here to investigate and remediate alert issues.
+After you've configured your Communication compliance policies, you'll start to receive alerts in the Microsoft 365 compliance center for message issues that match your policy conditions. Follow the workflow instructions here to investigate and remediate alert issues.
 
 ## Investigate alerts
 
 The first step to investigate issues detected by your policies is to review generated alerts in the Microsoft 365 compliance center. There are several areas in the compliance center to help you to quickly investigate alerts, depending on how you prefer to view alert grouping:
 
-- **Communication compliance home page**: When you sign into [https://compliance.microsoft.com](https://compliance.microsoft.com) using credentials for an admin account in your Microsoft 365 organization, select **Communication compliance** > **Overview** to display the communication compliance home page. Here you'll see:
+- **Communication compliance home page**: When you sign into [https://compliance.microsoft.com](https://compliance.microsoft.com) using credentials for an admin account in your Microsoft 365 organization, select **Communication compliance** > **Overview** to display the Communication compliance home page. Here you'll see:
     - Alerts needing review, listed from high to low severity. Select an alert to launch the alert details page and to start remediation actions.
     - Recent policy matches, listed by policy name
     - Resolved items, listed by policy name
     - Escalations, listed by policy name
     - Users with the most policy matches, listed from the most to the least number of matches
-- **Alerts tab**: Navigate to **Communication compliance** > **Alerts** to display alerts grouped by matched communication compliance policy. This view allows you to quickly see which communication compliance policies are generating the most alerts ordered by severity.  To start remediation actions, expand a policy to select a specific alert and to launch the alert details page.
-- **Policies tab**: Navigate to **Communication compliance** > **Policies** to display communication compliance policies configured for your Microsoft 365 organization. Each policy listed includes the count of alerts that need review. Selecting a policy displays all the pending alerts for matches to the policy, select a specific alert to launch the policy details page and to start remediation actions.
+- **Alerts tab**: Navigate to **Communication compliance** > **Alerts** to display alerts grouped by matched Communication compliance policy. This view allows you to quickly see which Communication compliance policies are generating the most alerts ordered by severity.  To start remediation actions, expand a policy to select a specific alert and to launch the alert details page.
+- **Policies tab**: Navigate to **Communication compliance** > **Policies** to display Communication compliance policies configured for your Microsoft 365 organization. Each policy listed includes the count of alerts that need review. Selecting a policy displays all the pending alerts for matches to the policy, select a specific alert to launch the policy details page and to start remediation actions.
 
 ### Using filters
 
@@ -76,9 +76,9 @@ No matter where you start to review alerts or the filtering you configure, the n
 2. **Examine the message details**: After reviewing the message basics, it's time to open a message to examine the details and to determine further remediation actions. Select a message to view the complete message header and body information. Several different views are available to help you decide the proper course of action:
 
     - **Source view**: This view is the standard message view commonly seen in most web-based messaging platforms. The header information is formatted in the normal style and the message body supports imbedded graphic files and word-wrapped text.
-    - **Text view**: Text view displays a line-numbered text-only view of the message and includes keyword highlighting for terms matched in the associated communication compliance policy. Keyword highlighting can help you quickly scan long messages for the area of interest. Embedded files aren't displayed and the line numbering this view is helpful for referencing pertinent details among multiple reviewers.
+    - **Text view**: Text view displays a line-numbered text-only view of the message and includes keyword highlighting for terms matched in the associated Communication compliance policy. Keyword highlighting can help you quickly scan long messages for the area of interest. Embedded files aren't displayed and the line numbering this view is helpful for referencing pertinent details among multiple reviewers.
     - **Annotate view**: This view allows reviewers to add annotations directly on the message that are saved to the view of the message.
-    - **User history**: User history view displays all other alerts generated by any communication compliance policy for the user sending the message.
+    - **User history**: User history view displays all other alerts generated by any Communication compliance policy for the user sending the message.
     - **Details**: This view displays the full details of the message, including all message fields logged by the message service source.
 
 3. **Decide on a remediation action**: Now that you've reviewed the details of the message for the alert, you can choose several remediation actions:
@@ -91,4 +91,4 @@ No matter where you start to review alerts or the filtering you configure, the n
 
 SCREENSHOT OF REMEDIATION CONTROLS
 
-4. **Determine if message details should be archived outside of communication compliance**: Message details can be exported or downloaded if you need to archive the messages in a separate storage solution. Selecting the **Download** control automatically adds selected messages to a .ZIP file that can be saved to storage outside of Microsoft 365.
+4. **Determine if message details should be archived outside of Communication compliance**: Message details can be exported or downloaded if you need to archive the messages in a separate storage solution. Selecting the **Download** control automatically adds selected messages to a .ZIP file that can be saved to storage outside of Microsoft 365.
