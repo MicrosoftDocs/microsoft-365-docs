@@ -120,7 +120,7 @@ Unlike a sensitivity label for highly regulated data that anyone can apply to an
 
 To accomplish this additional level of security for files stored in the Team Site, you must configure a new sensitivity label that is either its own label a sublabel of the general label for highly regulated files. Only Team Group members will see it in their list of labels.
 
-Use a sensitivity label when you need a small number of labels for both global use and individual private teams. Use a sensitivity sublabel when you have a large number of labels or want to organize labels for private teams the under the highly regulated label.
+Use a sensitivity label when you need a small number of labels for both global use and individual private teams. Use a sensitivity sublabel when you have a large number of labels or want to organize labels for private teams under the highly regulated label.
 
 [Use these instructions](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels) to configure a separate label or a sublabel with the following settings:
 
