@@ -1,5 +1,5 @@
 ---
-title: Self-service purchases FAQ
+title: Self-service purchase FAQ
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: mnirkhe
@@ -16,7 +16,7 @@ description: "Find answers to commonly asked questions about self-service purcha
 ms.custom: aka.ms/self-service-purchase-faq
 ---
 
-# Self-service purchases FAQ
+# Self-service purchase FAQ
 
 > [!NOTE]
 > The information in this article only applies to Microsoft Power Platform (Power BI, PowerApps and Flow) subscriptions.
