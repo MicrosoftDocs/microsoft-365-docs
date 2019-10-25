@@ -141,9 +141,10 @@ Phishing is an attempt to masquerade as reputable company or person for the purp
 
 If you've added an Office 365 ATP subscription to your EOP, be sure to set the following configurations.
 
-|Security feature name|Recommended|Aggressive|Comment|
+| Security feature name | Recommended | Aggressive | Comment |
 |---------|---------|---------|---------|
-|Advanced phishing thresholds | 2 | 4 | - |
+| Advanced phishing threshold | 2 | 3 | - |
+
 |Enable Anti-impersonation protection | Yes | Yes | - |
 |Enable Mailbox intelligence in Anti-Impersonation policies | Yes | Yes | - |
 |Enable Mailbox intelligence based Impersonation protection | Yes | Yes | - |
