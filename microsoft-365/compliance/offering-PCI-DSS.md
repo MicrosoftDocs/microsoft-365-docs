@@ -42,8 +42,8 @@ It is, however, important to understand that Azure and SharePoint Online and One
 
 ## Audit, reports, and certificates
 
-- [Azure](http://aka.ms/azure-pci)
-- [SharePoint Online and OneDrive for Business PCI DSS](http://aka.ms/spo-pci)
+- [Azure](https://aka.ms/azure-pci)
+- [SharePoint Online and OneDrive for Business PCI DSS](https://aka.ms/spo-pci)
 
 ## Get your PCI DSS solution running on Azure
 
@@ -87,7 +87,7 @@ Currently, only files and documents uploaded to SharePoint Online and OneDrive f
 
 ## Resources
 
-- [PCI Security Standards Council](http://www.pcisecuritystandards.org/)
+- [PCI Security Standards Council](https://www.pcisecuritystandards.org/)
 - [PCI Data Security Standard](https://www.pcisecuritystandards.org/documents/PCI_DSS_v3-1.pdf)
 - [Azure PCI DSS 3.2.1 Responsibility Matrix](https://aka.ms/pciresponsibilitymatrix)
 - [PCI DSS Quick Reference Guide](https://www.pcisecuritystandards.org/documents/PCISSC%20QRG%20August%202014%20-print.pdf)
@@ -95,4 +95,4 @@ Currently, only files and documents uploaded to SharePoint Online and OneDrive f
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/3/7/7/377F1BBC-37D5-4677-AB4A-7C01D089CA67/PCI_DSS_Compliance_Backgrounder.pdf).
+Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/3/7/7/377F1BBC-37D5-4677-AB4A-7C01D089CA67/PCI_DSS_Compliance_Backgrounder.pdf).
