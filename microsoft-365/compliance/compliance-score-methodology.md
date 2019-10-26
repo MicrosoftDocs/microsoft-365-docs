@@ -21,45 +21,41 @@ description: "Understand how Microsoft Compliance Score calculates a personalize
 
 ## Overview
 
-The Compliance Score dashboard displays a total compliance score for successfully completed improvement actions. This is the overall compliance score is the accumulation of points received for each implemented and tested control in each assessment. 
+The Compliance Score dashboard displays a score that measures your progress in completing improvement actions within controls. This overall compliance score is the accumulation of points received for each completed action in each assessment; your points accrue regardless of control completion. 
 
-For a new assessment, the Compliance Score has an initial value for the included Microsoft-managed controls tested by independent third parties. The Compliance Score is calculated based on Microsoft-managed action scores and customer-managed action scores. Compliance Score can help prioritize which Assessments and controls to focus on to improve your overall compliance posture.
+Your score is calculated based on the completion of Microsoft-managed actions and customer-managed actions, as well as customer actions that are monitored by Secure Score. Compliance Score can help prioritize which assessments and controls to focus on to improve your overall compliance posture.
 
-The displayed Compliance Score values for the control are applied *in their entirety* to the total Compliance Score on a pass/fail basis. Either the control is implemented and passes the subsequent assessment test or it does not. Assigned points are added to the Compliance Score when the control has:
+The displayed Compliance Score values for the control are applied *in their entirety* to your total score on a pass/fail basis. Either the control is implemented and passes the subsequent assessment test or it does not. Assigned points are added to Compliance Score when the control has:
 
 - **Implementation Status** equals **Implemented** or **Alternative Implementation** and,
 - **Test Result** equals **Passed**.
 
-## Microsoft 365 Data Protection Baseline
+## Microsoft 365 data protection baseline
   
-Compliance Score gives you an out-of-the-box score based on the Microsoft 365 Data Protection Baseline, which is a set of controls that includes key regulations and standards for data protection and general data governance. This baseline draws elements primarily from from NIST CSF (National Institute of Standards and Technology Cybersecurity Framework) and ISO (International Organization for Standardization), as well as from FedRAMP (Federal Risk and Authorization Management Program) and GDPR (General Data Protection Regulation of the European Union).
+Compliance Score gives you an out-of-the-box score based on the Microsoft 365 data protection baseline, which is a set of controls that includes key regulations and standards for data protection and general data governance. This baseline draws elements primarily from NIST CSF (National Institute of Standards and Technology Cybersecurity Framework) and ISO (International Organization for Standardization), as well as from FedRAMP (Federal Risk and Authorization Management Program) and GDPR (General Data Protection Regulation of the European Union).
   
-## Control types
+## Control types and points
 
-Compliance Score manages three types of controls:
+Compliance Score tracks two types of controls—Microsoft-managed and customer-managed—each of which have points that contribute to your overall score:
 
-1. **Microsoft-managed controls**: for each cloud service, these are controls for which only Microsoft has responsibility
-2. **Customer-managed controls**: controls for which only you have responsibility
-3. **Shared management controls**: controls where responsibility is shared between Microsoft and you. These are added by Microsoft, and you can edit or disable them
+1. **Customer-managed points** contribute to your compliance score based on controls managed by your organization.
+2. **Microsoft-managed points** contribute to your compliance score based on controls managed by Microsoft as a cloud service provider.
 
-Customer-managed and Microsoft-managed controls each have points that contribute to your overall compliance score:
-
-- **Customer-managed points** contribute to your compliance score based on controls managed by your organization.
-- **Microsoft-managed points** contribute to your compliance score based on controls managed by Microsoft as a cloud service provider.
+Controls are assigned a score value based on whether they are mandatory or discretionary, and whether they are preventative, detective, or corrective.
 
 ### Mandatory and discretionary controls
 
- **Mandatory Controls** are actions that cannot be bypassed either intentionally or accidentally. An example of a common mandatory control is a centrally managed password policy that sets requirements for password length, complexity, and expiration. Users must comply with these requirements to access the system.
+ - **Mandatory controls** are actions that cannot be bypassed either intentionally or accidentally. An example is a centrally-managed password policy that sets requirements for password length, complexity, and expiration. Users must comply with these requirements to access the system.
   
- **Discretionary Controls** rely upon users to understand policy and act accordingly. For example, a policy requiring users to lock their computer when they leave it is a discretionary control because it relies on the user.
+ - **Discretionary controls** rely upon users to understand policy and act accordingly. For example, a policy requiring users to lock their computer when they leave it is a discretionary control because it relies on the user.
   
 ### Preventative, detective, and corrective controls
   
- **Preventative controls** address specific risks. For example, protecting information at rest using encryption is a preventative control against attacks and breaches. Separation of duties is a preventative control to manage conflict of interest and to guard against fraud.
+ - **Preventative controls** address specific risks. For example, protecting information at rest using encryption is a preventative control against attacks and breaches. Separation of duties is a preventative control to manage conflict of interest and to guard against fraud.
   
- **Detective controls** actively monitor systems to identify irregular conditions or behaviors that represent risk or that can be used to detect intrusions or determine if a breach occurs. System access auditing and privileged administrative actions auditing are types of detective monitoring controls. Regulatory compliance audits are a type of detective control used to find process issues.
+ - **Detective controls** actively monitor systems to identify irregular conditions or behaviors that represent risk or that can be used to detect intrusions or determine if a breach occurs. System access auditing and privileged administrative actions auditing are types of detective monitoring controls. Regulatory compliance audits are a type of detective control used to find process issues.
   
-**Corrective controls** try to keep the adverse effects of a security incident to a minimum, take corrective action to reduce the immediate effect, and reverse the damage if possible. Privacy incident response is a corrective control to limit damage and restore systems to an operational state after a breach.
+- **Corrective controls** try to keep the adverse effects of a security incident to a minimum, take corrective action to reduce the immediate effect, and reverse the damage if possible. Privacy incident response is a corrective control to limit damage and restore systems to an operational state after a breach.
   
 Each control has an assigned value in Compliance Score based on the risk it represents:
 
