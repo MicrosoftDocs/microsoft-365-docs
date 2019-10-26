@@ -3,7 +3,7 @@ title: "Changes to Microsoft 365 Enterprise deployment content"
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 10/21/2019
+ms.date: 10/25/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -21,6 +21,14 @@ description: See the new content and changes to the content in the Microsoft 365
 ## October 2019
 
 ### New content 
+
+- [The Deploy Windows 10 with Autopilot poster](windows10-deploy-autopilot.md) 
+
+  [![Deploy Windows 10 with Autopilot poster](./media/windows10-deploy-autopilot/windows10-autopilot-flowchart.png)](https://opdhsblobprod04.blob.core.windows.net/contents/d0d41f25ce48460387a79ace64acad6b/d00f8fc01db0b512e4953663c8331588?sv=2015-04-05&sr=b&sig=bfzlEl8SrShCQyj8E2QUf6LJfxlKre6ortODE4qHjrc%3D&st=2019-10-24T22%3A18%3A33Z&se=2019-10-25T22%3A28%3A33Z&sp=r)
+
+- [The Windows 10 deployment with System Center Configuration Manager poster](windows10-deploy-inplaceupgrade.md)
+
+  [![The Windows 10 deployment with System Center Configuration Manager poster](./media/windows10-deploy-inplaceupgrade/windows10-deployment-config-manager.png)](https://opdhsblobprod04.blob.core.windows.net/contents/d0d41f25ce48460387a79ace64acad6b/810b475c713ebb3ad65d13746940ef91?sv=2015-04-05&sr=b&sig=tKD38RgLAoOCAWJ5ppEbLevBAHk7KHtWrXldy2Jl6mY%3D&st=2019-10-24T22%3A16%3A08Z&se=2019-10-25T22%3A26%3A08Z&sp=r)
 
 - [Teams for highly regulated data scenario](secure-teams-highly-regulated-data-scenario.md)
 
