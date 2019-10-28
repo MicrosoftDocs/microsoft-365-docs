@@ -34,7 +34,7 @@ description: Find documentation and resources for Microsoft 365--a complete, int
                                                 <div class="cardText">
                                                     <br />
                                                     <h3>Microsoft 365 Enterprise</h3>
-                                                    <p>Microsoft 365 Enterprise is designed for large organizations and integrates Office 365 Enterprise, Windows 10 Enterprise, and Enterprise Mobility + Security.</p>
+                                                    <p>Microsoft 365 Enterprise is designed for large organizations and integrates Office 365 Enterprise, Windows 10 Enterprise, and Enterprise Mobility + Security.<br></br></p>
                                                 </div>
                                             </div>
                                         </div>
@@ -74,7 +74,7 @@ description: Find documentation and resources for Microsoft 365--a complete, int
                                                 <div class="cardText">
                                                     <br />
                                                     <h3>Microsoft 365 Education</h3>
-                                                    <p>Microsoft 365 Education empowers educators to unlock creativity, promote teamwork, and provide a simple and safe experience in a single, affordable solution built for education.</p>
+                                                    <p>Microsoft 365 Education empowers educators to unlock creativity, promote teamwork, and provide a simple and safe experience in a single, affordable solution built for education.<br></br></p>
                                                 </div>
                                             </div>
                                         </div>
