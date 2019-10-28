@@ -61,37 +61,24 @@ The sensitivity label widget shows the number of items (email or document) by se
 
 Retention labels are used to manage the disposition of content in your organization. When applied, they can be used to control how long a document will be kept before deletion, whether it should be reviewed prior to deletion, when it's retention period expires, or whether it should be marked as a record which can never be deleted. For more information see, [Overview of retention labels](labels.md).
 
-The top applied retention labels widget show you how many items have a given retention label.
+The top applied retention labels card shows you how many items have a given retention label.
 
 ![top applied retention labels placeholder screenshot](media\data-classification-top-retention-labels-applied.png)
 
-## Sensitive data by location
-
-The point of the data classification reporting is to provide visibility into the quantity of labeled items as well as their location. This widget lets you know how many labeled items the are in Exchange, SharePoint, and OneDrive etc
-
-**PLACE HOLDER SCREENSHOT OF SENSITIVE DATA BY LOCATION**
-
-![PLACEHOLDER SCREENSHOT](media\data-classification-by-location.png)
- 
 ## Top activities detected
 
-This widget provides a quick summary of the most common actions that users are taking on the sensitive labeled items. You can use the Activity explorer **INSERT LINK TO ACTIVITY EXPLORER** to drill deep down on eight different activities that Microsoft 365 tracks on labeled content and content that is located on Windows 10 endpoints.
+This card provides a quick summary of the most common actions that users are taking on the sensitivity labeled items. You can use the [Activity explorer](data-classification-activity-explorer.md) to drill deep down on eight different activities that Microsoft 365 tracks on labeled content and content that is located on Windows 10 endpoints.
 
+## Sensitivity and retention labeled data by location
 
-**Placeholder screenshot of top acivities detected**
-
-![place holder screenshot top activities detected](media\data-classification-top-activities.png)
-
+The point of the data classification reporting is to provide visibility into the number of items that have which label as well as their location. These cards let you know how many labeled items the are in Exchange, SharePoint, and OneDrive etc
 
 ## See also
+
 - [Sensitivity labels](sensitivity-labels.md)
 - [Retention labels](labels.md)
 - [What the sensitive information types look for](what-the-sensitive-information-types-look-for.md)
 - [Overview of retention policies](retention-policies.md)
-
-
-
-
 
 <!--
 
