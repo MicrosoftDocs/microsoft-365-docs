@@ -211,6 +211,27 @@ Communication compliance filters allow you to filter and sort alert messages for
 | **Tags** | Tags COMPLIANT, NONCOMPLIANT ETC assigned to the message or the MESSAGE ATTACHMENT? |
 | **Escalated To** | The user name of the person included as part of a message escalation action. |
 
+## Alerts
+
+After configuring a policy, alerts are generated for messages that match conditions defined in the policy. By default, all policy matches alert triggers are assigned a severity level of medium. You can also change the settings for triggers on number of activities, period for the activities, and for specific users. If you'd like to change the severity level assigned to messages matching a policy, complete the following steps:
+
+1. Sign into [https://compliance.microsoft.com](https://compliance.microsoft.com) using credentials for an admin account in your Microsoft 365 organization.
+
+2. In the Microsoft 365 compliance center, go to **Policies**.
+
+3. Select **Office 365 alert** on the **Policies** page to open the **Alerts policies** page in the **Office 365 Security & Compliance center**.
+
+4. Select the checkbox for the Communication compliance policy you want to update, then select **Edit policy**.
+
+5. On the **Description** tab, select the **Severity** dropdown to configure the policy alert level.
+
+6. Select **Save** to apply the new severity level to the policy.
+
+7. Select **Close** to exit the alert policy details page.
+
+> [!Note]
+> The alert policy trigger settings for activities *More than or equal to* supports a minimum value of 3 or higher for Communication compliance policies.
+
 ## Monitor & manage
 
 It is easy to quickly review the alerts and policy matches generated of your Communication compliance policies. On the Communication compliance home page, you can quickly see:
