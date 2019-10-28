@@ -20,10 +20,10 @@ description: "The data classification dashboard gives you visibility into how mu
 
 As a Microsoft 365 administrator or compliance administrator, you can evaluate and then tag content in your organization in order to control where it goes, protect it no matter where it is and to ensure that it is preserved and deleted according your your organizations needs. You do this through the application of [sensitivity labels](sensitivity-labels.md), [retention labels](labels.md), and sensitive information type classification. There are various ways to do the discovery, evaluation and tagging, but the end result is that you may have very large numbers of documents and emails that are tagged and classified with one or both of these labels. After you apply  your retention labels and sensitivity labels, you’ll want to see how the labels are being used across your tenant and what is being done with those items. The data classification page provides visibility into that body of content, specifically:
 
-- the number items that has been classified as a sensitive information type and what those classifications are
+- the number items that have been classified as a sensitive information type and what those classifications are
 - the top applied sensitivity labels in both Microsoft 365 and Azure Information Protection
 - the top applied retention labels
-- a summary of activities that users are taking on your sensitive content.
+- a summary of activities that users are taking on your sensitive content
 - the locations of your sensitive and retained data
 
 ![data classification overview](media/data-classification-overview-small.png)
@@ -32,9 +32,9 @@ You can find data classification in the [Microsoft 365 compliance center](https:
 
 ## Sensitive information types used most in your content
 
-A sensitive information type is a pre-defined type of information, such as a social security number or a credit card number that comes with Microsoft 365. For more information on sensitive information types, see [What the sensitive information types look for](what-the-sensitive-information-types-look-for.md).
+Microsoft 365 comes with many definitions of sensitive information types, such as an item containing a social security number or a credit card number. For more information on sensitive information types, see [What the sensitive information types look for](what-the-sensitive-information-types-look-for.md).
 
-The sensitive information type widget shows the top sensitive information types that have been found and labeled across your organization.
+The sensitive information type card shows the top sensitive information types that have been found and labeled across your organization.
 
 ![top sensitive information types](media/data-classification-sens-info-types-card.png)
 
@@ -44,8 +44,8 @@ To find out how many items are in any given classification category, hover over 
 
 > [!NOTE]
 > If the card displays the message "No data found with sensitive information". It means that there are no items in your organization that have been classified as being a sensitive information type or no items that have been crawled. To get started with labels, see:
->- [sensitivity labels](sensitivity-labels.md)
->- [retention labels](labels.md)
+>- [Sensitivity labels](sensitivity-labels.md)
+>- [Retention labels](labels.md)
 >- [What the sensitive information types look for](what-the-sensitive-information-types-look-for.md)
 
 
@@ -58,7 +58,7 @@ When you apply a sensitivity label to an item either through Microsoft 365 or Az
 
 For more information on sensitivity labels, see: [Overview of sensitivity labels](sensitivity-labels.md)
 
-The sensitivity label widget shows the number of items (email or document) by sensitivity level.
+The sensitivity label card shows the number of items (email or document) by sensitivity level.
 
 ![breakdown of content by sensitivity label classification placeholder screenshot](media\data-classification-top-sensitivity-labels-applied.png)
 
