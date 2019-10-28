@@ -116,12 +116,10 @@ Windows 10 Business includes these protections:
 - Hardware-based isolation for Microsoft Edge
 - Application control powered by the Intelligent Security Graph
 - Device control (USB)
-
-Windows 10 Enterprise E3 also includes these protections:
-
 - Network protection for web-based threats
-- Enterprise management of hardware-based isolation for Microsoft Edge
 - Host intrusion prevention rules
+
+Windows 10 Enterprise E3 also includes enterprise management of hardware-based isolation for Microsoft Edge.
 
 >[!Note]
 >After migrating to Microsoft 365 Enterprise E3, you no longer have Office 365 ATP. You can purchase additional Office 365 ATP licenses for your Microsoft 365 Enterprise E3 subscription and assign them to your user accounts.
