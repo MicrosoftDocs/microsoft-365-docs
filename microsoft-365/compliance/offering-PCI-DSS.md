@@ -21,13 +21,13 @@ The Payment Card Industry (PCI) Data Security Standards (DSS) is a global inform
 
 ## Microsoft and PCI DSS
 
-Microsoft completed an annual PCI DSS assessment using an approved Qualified Security Assessor (QSA). The auditors reviewed Microsoft  Azure and SharePoint Online and OneDrive for Business environments, which include validating the infrastructure, development, operations, management, support, and in-scope services. The PCI DSS designates four levels of compliance based on transaction volume. Azure and SharePoint Online and OneDrive for Business are certified as compliant under PCI DSS version 3.2 at Service Provider Level 1 (the highest volume of transactions — more than 6 million a year).
+Microsoft completed an annual PCI DSS assessment using an approved Qualified Security Assessor (QSA). The auditors reviewed Microsoft Azure, Microsoft OneDrive for Business, and Microsoft SharePoint Online  environments, which include validating the infrastructure, development, operations, management, support, and in-scope services. The PCI DSS designates four levels of compliance based on transaction volume. Azure, OneDrive for Business, and SharePoint Online are certified as compliant under PCI DSS version 3.2 at Service Provider Level 1 (the highest volume of transactions — more than 6 million a year).
 
 The assessment results in an Attestation of Compliance (AoC), which is available to customers and Report on Compliance (RoC) issued by the QSA. The effective period for compliance begins upon passing the audit and receiving the AoC from the assessor and ends one year from the date the AoC is signed. 
 
 Customers who want to develop a cardholder environment or card processing service can use these validations in many of the underlying portions, thereby reducing the associated effort and costs of getting their own PCI DSS certification.
 
-It is, however, important to understand that Azure and SharePoint Online and OneDrive for Business’ PCI DSS compliance status does not automatically translate to PCI DSS certification for the services that customers build or host on these platforms. Customers are responsible for ensuring that they achieve compliance with PCI DSS requirements.
+It is important to understand that PCI DSS compliance status for Azure, OneDrive for Business, and SharePoint Online not automatically translate to PCI DSS certification for the services that customers build or host on these platforms. Customers are responsible for ensuring that they achieve compliance with PCI DSS requirements.
 
 ## Microsoft in-scope cloud services
 
@@ -38,12 +38,12 @@ It is, however, important to understand that Azure and SharePoint Online and One
 - Intune
 - PowerApps cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
 - Power BI cloud service either as a standalone service or as included in an Office 365 branded plan or suite
-- SharePoint Online and OneDrive for Business (United States only)
+- OneDrive for Business and SharePoint Online (United States only)
 
 ## Audit, reports, and certificates
 
-- [Azure](https://aka.ms/azure-pci)
-- [SharePoint Online and OneDrive for Business PCI DSS](https://aka.ms/spo-pci)
+- [Azure PCI DSS Attestation of Compliance (AoC)](https://aka.ms/azure-pci)
+- [OneDrive for Business and SharePoint Online PCI DSS Attestation of Compliance (AoC)](https://aka.ms/spo-pci)
 
 ## Get your PCI DSS solution running on Azure
 
@@ -77,13 +77,13 @@ The information that the PCI Security Standards Council makes available is a goo
 
 Compliance involves several factors, including assessing the systems and processes not hosted on Azure. Individual requirements vary based on which Azure services are used and how they are employed within the solution.
 
-**Are there plans for SharePoint Online and OneDrive for Business to be PCI DSS-compliant outside of the United States?**
+**Are there plans for OneDrive for Business and SharePoint Online to be PCI DSS-compliant outside of the United States?**
 
-Currently SharePoint Online and OneDrive for Business is PCI-DSS compliant only in the United States (US). Microsoft evaluates the requirements and timelines for regions outside of US and provide updates when and if other regions are added to the roadmap.
+Currently OneDrive for Business and SharePoint Online is PCI-DSS compliant only in the United States (US). Microsoft will evaluate the requirements and timelines for regions outside of US and provide updates when and if other regions are added to the roadmap.
 
-**What is in-scope for SharePoint Online and OneDrive for Business?**
+**What is in-scope for OneDrive for Business and SharePoint Online?**
 
-Currently, only files and documents uploaded to SharePoint Online and OneDrive for Business will be complaint with PCI DSS.  
+Currently, only files and documents uploaded to OneDrive for Business and SharePoint Online will be complaint with PCI DSS.
 
 ## Resources
 
