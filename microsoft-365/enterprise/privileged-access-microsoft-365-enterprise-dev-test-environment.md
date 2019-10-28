@@ -31,7 +31,7 @@ If you just want to configure privileged access management in a lightweight way 
 If you want to configure privileged access management in a simulated enterprise, follow the instructions in [Pass-through authentication](pass-through-auth-m365-ent-test-environment.md).
   
 > [!NOTE]
-> Testing privileged access management does not require the simulated enterprise test environment, which includes a simulated intranet connected to the Internet and directory synchronization for a AD DS forest. It is provided here as an option so that you can test privileged access management and experiment with it in an environment that represents a typical organization. 
+> Testing privileged access management does not require the simulated enterprise test environment, which includes a simulated intranet connected to the Internet and directory synchronization for an AD DS forest. It is provided here as an option so that you can test privileged access management and experiment with it in an environment that represents a typical organization. 
 
 ## Phase 2: Configure privileged access management
 
