@@ -199,16 +199,16 @@ Communication compliance filters allow you to filter and sort alert messages for
 |**Filter**|**Details**|
 |:-----|:-----|
 | **Date** | The date the message was sent or received by a user in your organization. |
-| **File class** | The class of the message based on the message type, either message and attachment. |
+| **File class** | The class of the message based on the message type, either *message* or *attachment*. |
 | **Has attachment** | The attachment presence in the message. |
-| **Item class** | The class of the message based on the message type, email, chat, bloonmberg, etc. |
+| **Item class** | The source of the message based on the message type, email, Microsoft Team chat, Bloonmberg, etc. |
 | **Recipient** domains | The domain to which the message was sent. This is normally your Microsoft 365 subscription domain by default. |
 | **Recipient** | The user to which the message was sent. |
 | **Sender** | The person who sent the message. |
 | **Sender domain** | The domain that sent the message. |
 | **Size** | The size of the message in KB. |
 | **Subject/Title** | The message subject or chat title. |
-| **Tags** | Tags COMPLIANT, NONCOMPLIANT ETC assigned to the message or the MESSAGE ATTACHMENT? |
+| **Tags** | The tags assigned to a message, either *Questionable*, *Compliant*, or *Non-compliant*. |
 | **Escalated To** | The user name of the person included as part of a message escalation action. |
 
 ## Alerts
