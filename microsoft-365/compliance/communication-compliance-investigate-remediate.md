@@ -67,7 +67,7 @@ For a complete list of filters and field details, see [Filters](communication-co
 
 Communication compliance policies automatically scan and pre-group near and exact message duplicates without any additional configuration steps. This allows you to quickly remediate similar messages one-by-one or as a group, reducing the message investigation burden for reviewers. As duplicates are detected, the **Near Duplicates** and/or the **Exact Duplicates** controls are displayed in the remediation action toolbar.
 
-![Communication compliance duplicates controls](comMunication-compliance-exact-duplicates-controls-800px.png)
+![Communication compliance exact duplicates controls](communication-compliance-exact-duplicates-controls-800px.png)
 
 ## Remediate alerts
 
