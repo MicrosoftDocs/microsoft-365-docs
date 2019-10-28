@@ -56,6 +56,8 @@ Communication compliance in Microsoft 365 builds on the features of [Supervision
 - Flexible remediation workflows
 - Actionable insights
 
+![Communication compliance home page](media/communication-compliance-home-800px.png)
+
 ### Intelligent customizable playbooks
 
 Intelligent customizable playbooks in Communication compliance allow you to leverage machine learning to intelligently detect communication violations in your organization.
