@@ -39,9 +39,9 @@ The first step to investigate issues detected by your policies is to review gene
 
 The next step is to sort the messages so that it's easier for you to investigate alerts. Communication compliance supports multi-level filtering for several message fields to help you quickly investigate and review messages with policy matches. Filtering is available for pending and and resolved items for each configured policy. You can configure ad-hoc filter queries for a policy or configure and save custom and default filter queries for use in each specific policy. After configuring fields for a filter, you'll see the filter fields displayed on the top of the alert message queue that you can configure for specific filter values.
 
-For a complete list of filters and field details, see [Filters](communication-compliance-feature-reference.md#filters) in the feature reference topic.
+![Communication compliance filter controls](media/communication-compliance-filter-controls-800px.png)
 
-SCREENSHOT OF FILTER CONTROLS
+For a complete list of filters and field details, see [Filters](communication-compliance-feature-reference.md#filters) in the feature reference topic.
 
 #### To configure a filter
 
@@ -65,9 +65,7 @@ SCREENSHOT OF FILTER CONTROLS
 
 Communication compliance policies automatically scan and pre-group near and exact message duplicates without any additional configuration steps. This allows you to quickly remediate similar messages one-by-one or as a group, reducing the message investigation burden for reviewers. As duplicates are detected, the **Near Duplicates** and/or the **Exact Duplicates** controls are displayed in the remediation action toolbar.
 
-SCREENSHOT OF EXACT DUPLICATE FILTER
-
-
+![Communication compliance filter controls](comMunication-compliance-exact-duplicates-controls-800px.png)
 
 ## Remediate alerts
 
@@ -91,6 +89,6 @@ No matter where you start to review alerts or the filtering you configure, the n
     - **Notify**: You can use the **Notify** control to assign a custom notice template to the alert and to send a simple warning notice to the user. Choose the appropriate notice template and select **Send** to email a reminder to the employee that sent the message and to resolve the issue.
     - **Escalate**: Using the **Escalate** control, you can choose who else in your organization should review the message. Choose from a list of configured reviewers to send an email notification requesting an additional review of the message alert. The selected reviewer can use a link in the email notification to go directly to items escalated to them for review.
 
-SCREENSHOT OF REMEDIATION CONTROLS
+![Communication compliance remediation controls](media/communication-compliance-remediation-controls-800px.png)
 
 4. **Determine if message details should be archived outside of Communication compliance**: Message details can be exported or downloaded if you need to archive the messages in a separate storage solution. Selecting the **Download** control automatically adds selected messages to a .ZIP file that can be saved to storage outside of Microsoft 365.
