@@ -121,6 +121,27 @@ description: Find documentation and resources for Microsoft 365--a complete, int
                                     </div>
                                 </a>
                             </li>
+                            <li>
+                                <a href="https://docs.microsoft.com/microsoft-365/campaigns/" target="blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="https://docs.microsoft.com/office/media/hub-tiles/M365-HubTile-Campaigns-Tile-400x140.svg" alt="Microsoft 365 for Campaigns documentation and resources" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <br />
+                                                    <h3>Microsoft 365 for Campaigns</h3>
+                                                    <p>Help keep your campaign or business data and communications secure with this recommended configuration for Microsoft 365 Business.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
                         </ul>
                     </li>
                 </ul>
