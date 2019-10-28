@@ -17,7 +17,7 @@ description: "This solution scenario illustrates how to manage the life cycle of
 
 # Manage the lifecycle of SharePoint documents with retention labels
 
-This article describes how you can manage the life cycle of product-related documents stored in SharePoint Online using Office 365 retention labels, and specifically by auto-applying labels and configuring event-based retention. The auto-apply functionality leverages document classification by th use of SharePoint metadata. The scenario in this article is based on product-related documents, but the same concepts can be used for other scenarios. For example, in the oil and gas industry, you could manage the life cycle of documents related to physical assets such as oil platforms, well logs, or production licenses. In the financial services industry, you can manage documents related to bank accounts, mortgages, or insurance contracts. In the public sector, you can manage documents related to construction permits or tax forms.
+This article describes how you can manage the life cycle of product-related documents stored in SharePoint Online using Office 365 retention labels, and specifically by auto-applying labels and configuring event-based retention. The auto-apply functionality leverages document classification by the use of SharePoint metadata. The scenario in this article is based on product-related documents, but the same concepts can be used for other scenarios. For example, in the oil and gas industry, you could manage the life cycle of documents related to physical assets such as oil platforms, well logs, or production licenses. In the financial services industry, you can manage documents related to bank accounts, mortgages, or insurance contracts. In the public sector, you can manage documents related to construction permits or tax forms.
 
 Let's look at the scenario for this article. We'll look at the information architecture and the definition of the retention labels. Then we'll look at classifying documents by auto-applying the labels, and finally generating the events that initiate the start of the retention period.
 
@@ -169,7 +169,7 @@ For more information about crawled and managed properties, see [Automatically cr
 
 ### Mapping crawled properties to pre-defined managed properties
 
-KQL can't use crawled properties in search queries. It has to use a managed property. In a normal search scenario, we create a managed property and map it to the crawled property that we need. However, for auto-applying retention labels, KQL can only use pre-defined managed properties and not custom managed properties. There is a set of predefined managed properties already created in the system for string RefinableString00 to RefinableString199 can be used. For a complete list, see [Default unused managed properties](https://docs.microsoft.com/sharepoint/manage-search-schema#default-unused-managed-properties). These default managed properties are typically used for defining search refiners.
+KQL can't use crawled properties in search queries. It has to use a managed property. In a normal search scenario, we create a managed property and map it to the crawled property that we need. However, for auto-applying retention labels, you can only specify in KQL pre-defined managed properties and not custom managed properties. There is a set of predefined managed properties already created in the system for string RefinableString00 to RefinableString199 can be used. For a complete list, see [Default unused managed properties](https://docs.microsoft.com/sharepoint/manage-search-schema#default-unused-managed-properties). These default managed properties are typically used for defining search refiners.
 
 For the KQL query to work and automatically apply the correct retention label to product document content, we map the crawled properties **ows\_Doc\_x0020\_Type** and **ows\_\_Status** to two refinable managed properties. In our test environment for this scenario, **RefinableString00** and **RefinableString01** aren't being used. We determined this by looking at **Managed Properties** in the **Manage Search Schema** in the SharePont admin center.
 
@@ -250,7 +250,7 @@ Another verification step is to look at the properties of the document in the Do
 
 ![](media/SPRetention21.png)
 
-Because the retention labels have been auto-applied to documents, the are documents are protected from being deleted because the retention label was configured to declare the documents as records. As an example of this protection, we receive an error message shown in the following screenshot when we try to delete one of these documents.
+Because the retention labels have been auto-applied to documents, the documents are protected from being deleted because the retention label was configured to declare the documents as records. As an example of this protection, we receive an error message shown in the following screenshot when we try to delete one of these documents.
 
 ![](media/SPRetention22.png)
 
@@ -338,8 +338,9 @@ The following table describes the parameters within the Body property of the act
 </tr>
 <tr class="even">
 <td>SharePointAssetIdQuery</td>
-<td>This parameter defines the Asset Id for the event. Event-based retention uses Asset Ids to identify the documents that a particular event is applicable to. For this scenario, we have to create a new managed property named ProductName to populate the Asset Id property. We also need to map this managed property to the ows_Product_x0020_Name crawled property. Therefore, the value of the Asset Id property will be ProductName:"xxx" where xxx is the product name. Here's a screenshot of this managed property.
-<img src="media/SPRetention25.png" style="width:6.49722in;height:0.45069in" /></td>
+<td>This parameter defines the Asset Id for the event. Event-based retention needs a unique identifier for the document. We can uses Asset Ids to identify the documents that a particular event is applicable to, or as we do for this scenario, a metadata column, our own Product Name. To do  this, we have to create a new managed property named ProductName that can be used in the KQL query (alternatively, we could have used RefinableString00 instead of creating a new managed property). We also need to map this new managed property to the ows_Product_x0020_Name crawled property. Here's a screenshot of this managed property.
+
+<img src="media/SPRetention25.png" style="width:6.49722in;height:0.45069in" /><br/><strong>Note:</strong> As explained in the [event-driven retention](event-driven-retention.md) article, the Asset Id is simply another document property in SharePoint and OneDrive. Your organization may already use other document properties and IDs to classify content.</td>
 </tr>
 <tr class="odd">
 <td>EventDateTime</td>
@@ -350,8 +351,7 @@ The following table describes the parameters within the Body property of the act
 
 ### Putting it all together
 
-Now that the retention label created and auto-applied and the flow is configured and created, here's what happens when the value in the **In Production** column for the Spinning Widget product in the Products list is changed from **Yes** to **No**. The flow is triggered and it populates the AssetId property on that document that the retention label was auto-applied to with the value 
-*ProductName:"Spinning Widget"*. The flow also triggers the creation of an event. To see this event in the security and compliance center, go to **Records Managements \> Events**.
+Now that the retention label created and auto-applied and the flow is configured and created, here's what happens when the value in the **In Production** column for the Spinning Widget product in the Products list is changed from **Yes** to **No**. The flow is triggered and creates the event. To see this event in the security and compliance center, go to **Records management** > **Events**.
 
 ![](media/SPRetention28.png)
 
@@ -364,18 +364,6 @@ But after some time, the event status section shows that for a SharePoint site a
 ![](media/SPRetention31.png)
  
 This means that the retention period for the label applied to the Spinning Widget product document has been initiated, based on the event date of the Cessation Production Spinning Widget event. Assuming that you implemented the scenario in your test environment by configuring a 1-day retention period, you can go to the document library for your product documents a few days after the event was created and verify that the document is deleted (after the deletion job in SharePoint has run).
-
-### More about Asset Ids
-
-By default, Office 365 allows you to store an Asset Id as part of the event-based retention label that's applied to a document. The Asset Id is displayed in the properties of a document.
-
-![](media/SPRetention26.png)
-
-We can use this field to further specify the target documents when the event is created. In the flow previously created in this scenario, we used the **Product Name** list column as the value for the asset Id, but we could have used any available list column. The key point is to be sure that you use a managed property for the Asset Id so that it can be used in a KQL query.
-
-As shown in the following screenshot below, the Asset Id managed property is called **ComplianceAssetId**.
-
-![](media/SPRetention27.png)
 
 ### Using advanced search in SharePoint
 

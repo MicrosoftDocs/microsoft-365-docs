@@ -106,7 +106,7 @@
 ### [File plan manager](file-plan-manager.md)
 ### [Retention labels](labels.md)
 ### [Comply with SEC Rule 17a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
-### [Create and publish retention labels by using PowerShell](https://docs.microsoft.com/en-us/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
+### [Create and publish retention labels by using PowerShell](bulk-create-publish-labels-using-powershell.md)
 ### [Event-based retention](event-driven-retention.md)
 ### [Automate event-based retention](automate-event-driven-retention.md)
 ### [Manage the lifecycle of SharePoint documents](auto-apply-retention-labels-scenario.md)
@@ -129,7 +129,7 @@
 ### File plan
 #### [File plan manager](file-plan-manager.md)
 #### [Retention labels](labels.md)
-#### [Create and publish retention labels by using PowerShell](https://docs.microsoft.com/en-us/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
+#### [Create and publish retention labels by using PowerShell](bulk-create-publish-labels-using-powershell.md)
 #### [View label usage with label analytics](label-analytics.md)
 #### [View label activity for documents](view-label-activity-for-documents.md)
 #### [View the data governance reports](view-the-data-governance-reports.md)
