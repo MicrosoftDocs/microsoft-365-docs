@@ -26,7 +26,7 @@ As a Microsoft 365 administrator or compliance administrator, you can evaluate a
 - a summary of activities that users are taking on your sensitive content.
 - the locations of your sensitive and retained data
 
-![data classification overview](media/data-classification-overview.png)
+![data classification overview](media/data-classification-overview-small.png)
 
 You can find data classification in the [Microsoft 365 compliance center](https://compliance.microsoft.com/dataclassification?viewid=overview) or [Microsoft 365 security center](https://security.microsoft.com/dataclassification?viewid=overview) > **Classification** > **Data Classification**.
 
