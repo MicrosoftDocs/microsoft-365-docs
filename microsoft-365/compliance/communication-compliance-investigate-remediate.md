@@ -67,6 +67,24 @@ For a complete list of filters and field details, see [Filters](communication-co
 
 Communication compliance policies automatically scan and pre-group near and exact message duplicates without any additional configuration steps. This allows you to quickly remediate similar messages one-by-one or as a group, reducing the message investigation burden for reviewers. As duplicates are detected, the **Near Duplicates** and/or the **Exact Duplicates** controls are displayed in the remediation action toolbar.
 
+#### To remediate duplicates
+
+1. Sign into [https://compliance.microsoft.com](https://compliance.microsoft.com) using credentials for an admin account in your Microsoft 365 organization.
+
+2. In the Microsoft 365 compliance center, go to **Communication compliance**.
+
+3. Select the **Policies** tab and then select a policy for investigation, double-click to open the **Policy** page.
+
+4. On the **Policy** page, select either the **Pending** or **Resolved** tab to display duplicate messages.
+
+5. Select the **Near Duplicates** or **Exact Duplicates** controls to open the duplicates details page.
+
+6. Select one or more messages to remediation action controls for these messages.
+
+7. Select **Resolve**, **Notify**, **Escalate**, or **Download** to apply the action to the selected duplicate messages.elected as the default filter.
+
+8. Select **Close** after completing the remediation actions on the messages.
+
 ![Communication compliance exact duplicates controls](media/communication-compliance-exact-duplicates-controls-800px.png)
 
 ## Remediate alerts
