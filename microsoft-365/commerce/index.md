@@ -25,7 +25,6 @@ ms.localizationpriority: medium
 | [Understand your invoice](/microsoft-365/commerce/billing-and-payments/understand-your-invoice) | Information about invoices for items purchased through the Microsoft 365 admin center. |
 | [Manage payment methods](https://docs.microsoft.com/microsoft-store/payment-methods) | Add, edit, or delete payment methods. |
 | [Manage billing profiles](/microsoft-365/commerce/billing-and-payments/manage-billing-profiles) | Customize how you are billed for different items on your invoice.  |
-| [Order history](https://docs.microsoft.com/microsoft-store/manage-orders-microsoft-store-for-business) | Track your commercial orders. |
 | [Manage billing account info](https://docs.microsoft.com/microsoft-store/update-microsoft-store-for-business-account-settings) | Billing accounts allows you to manage organization information, purchasing agreements that you have with Microsoft, and admin approvals. |
 | [Associate tenant with billing account](https://docs.microsoft.com/microsoft-store/manage-mpsa-software-microsoft-store-for-business) | The tenant or tenants that are added to your purchasing account control how you can assign products to people in your organization. |
 | [Manage partner relationships](https://docs.microsoft.com/microsoft-store/work-with-partner-microsoft-store-business) | Work with Microsoft-certified solution providers to purchase and manage products and services for your organization or school. |
