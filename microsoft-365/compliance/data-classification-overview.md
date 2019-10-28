@@ -1,5 +1,5 @@
 ---
-title: "Get started with data classification"
+title: "Get started with data classification (preview)"
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -16,66 +16,54 @@ search.appverid:
 description: "The data classification dashboard gives you visibility into how much sensitive data has been found and classified in your organization."
 ---
 
-# Data classification overview page
+# Data classification (preview) overview
 
-As a Microsoft 365 administrator or compliance administrator, you can evaluate and then tag content in your organization in order to control where it goes, protect it no matter where it is and to ensure that it is preserved and deleted according your your organizations needs. You do this through the application of [sensitivity labels](sensitivity-labels.md), [retention labels](labels.md), and sensitive information type classification. There are various ways to do the discovery, evaluation and tagging, but the end result is that you may have very large numbers of documents and emails that are tagged and classified with one or both of these labels. After you apply  your retention labels and sensitivity labels, you’ll want to see how the labels are being used across your tenant and what is being done with those items. With the data classification blade provides visibility into that body of content, specifically:
+As a Microsoft 365 administrator or compliance administrator, you can evaluate and then tag content in your organization in order to control where it goes, protect it no matter where it is and to ensure that it is preserved and deleted according your your organizations needs. You do this through the application of [sensitivity labels](sensitivity-labels.md), [retention labels](labels.md), and sensitive information type classification. There are various ways to do the discovery, evaluation and tagging, but the end result is that you may have very large numbers of documents and emails that are tagged and classified with one or both of these labels. After you apply  your retention labels and sensitivity labels, you’ll want to see how the labels are being used across your tenant and what is being done with those items. The data classification page provides visibility into that body of content, specifically:
 
-- the volume of content that has been classified and what those classifications are
-- the top applied sensitivity labels
+- the number items that has been classified as a sensitive information type and what those classifications are
+- the top applied sensitivity labels in both Microsoft 365 and Azure Information Protection
 - the top applied retention labels
-- the locations of your sensitive and retained data
 - a summary of activities that users are taking on your sensitive content.
+- the locations of your sensitive and retained data
 
-**placeholder image and text**
-
-![data classification blade placeholder](media/data-classification-overview.png)
+![data classification overview](media/data-classification-overview.png)
 
 You can find data classification in the [Microsoft 365 compliance center](https://compliance.microsoft.com/dataclassification?viewid=overview) or [Microsoft 365 security center](https://security.microsoft.com/dataclassification?viewid=overview) > **Classification** > **Data Classification**.
 
 
 
-## Sensitive information types classification
+## Sensitive information types used most in your content
 
 A sensitive information type is a pre-defined type of information, such as a social security number or a credit card number that comes with Microsoft 365. For more information on sensitive information types, see [What the sensitive information types look for](what-the-sensitive-information-types-look-for.md).
 
 The sensitive information type widget shows the top sensitive information types that have been found and labeled across your organization.
 
-**placeholder image**
+![top sensitive information types](media/data-classification-sens-info-types-card.png)
 
-![top sensitive information types placeholder](media/data-classification-top-sensitive-info-types.png)
+To find out how many items are in any given classification category, hover over the bar for the category.
 
-to find out how many items are in any given classification category, hover over the bar for the category.
+![top sensitive information types hover detail](media\data-classification-sens-info-types-hover.png)
 
-**placeholder image**
+## Top sensitivity labels applied to content
 
-![top sensitive information types hover detail placeholder](media\data-classification-hover-detail-top-sensitive-info-types.png)
-
-## Top applied sensitivity labels
-
-When you apply a sensitivity label to an item, two things happen:
+When you apply a sensitivity label to an item either through Microsoft 365 or Azure Information Protection (AIP), two things happen:
 
 - a tag that indicates the value of the item to your org is embedded in the document and will follow it everywhere it goes
 - the presence of the tag enables various protective behaviors, such as mandatory watermarking or encryption. With end point protection enabled you can even prevent an item from leaving your organizational control.
 
-for more information on sensitivity labels, see: [Overview of sensitivity labels](https://docs.microsoft.com/en-us/microsoft-365/compliance/sensitivity-labels)
+For more information on sensitivity labels, see: [Overview of sensitivity labels](sensitivity-labels.md)
 
 The sensitivity label widget shows the number of items (email or document) by sensitivity level.
 
-**placeholder image**
+![breakdown of content by sensitivity label classification placeholder screenshot](media\data-classification-top-sensitivity-labels-applied.png)
 
-![breakdown of content by sensitivity label classification placeholder screenshot](media\data-classification-top-applied-sensitivity-labels.png)
+## Top retention labels applied to content
 
+Retention labels are used to manage the disposition of content in your organization. When applied, they can be used to control how long a document will be kept before deletion, whether it should be reviewed prior to deletion, when it's retention period expires, or whether it should be marked as a record which can never be deleted. For more information see, [Overview of retention labels](labels.md).
 
-## Top applied retention labels
+The top applied retention labels widget show you how many items have a given retention label.
 
-Retention labels are used to manage the disposition of critical content in your organization. When applied, they can be used to control how long a document will be kept before deletion, whether it should be reviewed prior to deletion when it's retention period expires or whether it should be marked as a record which can never be deleted. For more information see, [Overview of retention labels](labels.md)
- 
-The top applied retention labels widget show you how many items have a given retention label applied.
-
-**placeholder image**
-
-![top applied retention labels placeholder screenshot](media\data-classification-top-applied-retention-labels.png)
-
+![top applied retention labels placeholder screenshot](media\data-classification-top-retention-labels-applied.png)
 
 ## Sensitive data by location
 
