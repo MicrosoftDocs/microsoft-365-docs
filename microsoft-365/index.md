@@ -128,13 +128,13 @@ description: Find documentation and resources for Microsoft 365--a complete, int
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="https://docs.microsoft.com/office/media/hub-tiles/M365-HubTile-Campaigns-Tile-400x140.svg" alt="Microsoft 365 for Campaigns documentation and resources" />
+                                                        <img src="https://docs.microsoft.com/office/media/hub-tiles/M365-HubTile-Campaigns-400x140.svg" alt="Microsoft 365 for Campaigns documentation and resources" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
                                                     <br />
                                                     <h3>Microsoft 365 for Campaigns</h3>
-                                                    <p>Help keep your campaign or business data and communications secure with this recommended configuration for Microsoft 365 Business.</p>
+                                                    <p>Help keep your campaign's or business's data and communications secure with this recommended configuration for Microsoft 365 Business.</p>
                                                 </div>
                                             </div>
                                         </div>
