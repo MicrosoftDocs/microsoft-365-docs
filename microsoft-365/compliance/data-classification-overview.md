@@ -30,8 +30,6 @@ As a Microsoft 365 administrator or compliance administrator, you can evaluate a
 
 You can find data classification in the [Microsoft 365 compliance center](https://compliance.microsoft.com/dataclassification?viewid=overview) or [Microsoft 365 security center](https://security.microsoft.com/dataclassification?viewid=overview) > **Classification** > **Data Classification**.
 
-
-
 ## Sensitive information types used most in your content
 
 A sensitive information type is a pre-defined type of information, such as a social security number or a credit card number that comes with Microsoft 365. For more information on sensitive information types, see [What the sensitive information types look for](what-the-sensitive-information-types-look-for.md).
@@ -43,6 +41,13 @@ The sensitive information type widget shows the top sensitive information types 
 To find out how many items are in any given classification category, hover over the bar for the category.
 
 ![top sensitive information types hover detail](media\data-classification-sens-info-types-hover.png)
+
+> [!NOTE]
+> If the card displays the message "No data found with sensitive information". It means that there are no items in your organization that have been classified as being a sensitive information type or no items that have been crawled. To get started with labels, see:
+>- [sensitivity labels](sensitivity-labels.md)
+>- [retention labels](labels.md)
+>- [What the sensitive information types look for](what-the-sensitive-information-types-look-for.md)
+
 
 ## Top sensitivity labels applied to content
 
@@ -57,6 +62,10 @@ The sensitivity label widget shows the number of items (email or document) by se
 
 ![breakdown of content by sensitivity label classification placeholder screenshot](media\data-classification-top-sensitivity-labels-applied.png)
 
+> [!NOTE]
+> If you haven't created or published any sensitivity labels or no content has had a sensitivity label applied, this card will display the message "No sensitivity labels detected". To get started with labels, see:
+>- [sensitivity labels](sensitivity-labels.md) or for AIP [Configure the Azure information protection policy](https://docs.microsoft.com/en-us/azure/information-protection/configure-policy)
+
 ## Top retention labels applied to content
 
 Retention labels are used to manage the disposition of content in your organization. When applied, they can be used to control how long a document will be kept before deletion, whether it should be reviewed prior to deletion, when it's retention period expires, or whether it should be marked as a record which can never be deleted. For more information see, [Overview of retention labels](labels.md).
@@ -65,13 +74,25 @@ The top applied retention labels card shows you how many items have a given rete
 
 ![top applied retention labels placeholder screenshot](media\data-classification-top-retention-labels-applied.png)
 
+> [!NOTE]
+> If this card displays the message, "No retention labels detected, it means you haven't created or published any retention  labels or no content has had a retention label applied. To get started with retention labels, see:
+>- [Overview of retention labels](labels.md)
+
 ## Top activities detected
 
 This card provides a quick summary of the most common actions that users are taking on the sensitivity labeled items. You can use the [Activity explorer](data-classification-activity-explorer.md) to drill deep down on eight different activities that Microsoft 365 tracks on labeled content and content that is located on Windows 10 endpoints.
 
+> [!NOTE]
+> If this card displays the message, "No activity detected" it means that there's been no activity on the files or that user and admin auditing isn't turned on. To turn the audit logs on , see:
+>- [Search the audit log in security & compliance center](search-the-audit-log-in-security-and-compliance.md)
+
 ## Sensitivity and retention labeled data by location
 
-The point of the data classification reporting is to provide visibility into the number of items that have which label as well as their location. These cards let you know how many labeled items the are in Exchange, SharePoint, and OneDrive etc
+The point of the data classification reporting is to provide visibility into the number of items that have which label as well as their location. These cards let you know how many labeled items the are in Exchange, SharePoint, and OneDrive etc.
+
+> [!NOTE]
+> If this card displays the message, "No locations detected, it means you haven't created or published any sensitivity labels or no content has had a retention label applied. To get started with sensitivity labels, see:
+>- [Sensitivity labels](sensitivity-labels.md)
 
 ## See also
 
