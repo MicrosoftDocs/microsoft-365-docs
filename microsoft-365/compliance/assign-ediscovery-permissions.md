@@ -53,11 +53,11 @@ The primary eDiscovery-related role group in Security & Compliance Center is cal
 3. In the left pane of the security and compliance center, click **Permissions**, and then click the checkbox next to **eDiscovery Manager**.
     
 4. On the **eDiscovery Manager** flyout page, do one of the following based on the eDiscovery permissions that you want to assign. 
-    
-  - **To make a user an eDiscovery Manager** Next to **eDiscovery Manager**, click **Edit**. Under **Selected eDiscovery Managers**, click **Edit**, and then click ![Add Icon](media/ITPro-EAC-AddIcon.gif) **Add**. Select the user (or users) you want to add as an eDiscovery manager, and then click **Add**. When you're finished adding users, click **Done**. Then, on the **Editing Choose eDiscovery Manager** flyout page, click **Save** to save the changes to the eDiscovery Manager membership. 
-    
-  - **To make a user an eDiscovery Administrator** Next to **eDiscovery Administrator**, click **Edit**. Under **Selected eDiscovery Administrators**, click **Edit**, and then click ![Add Icon](media/ITPro-EAC-AddIcon.gif) **Add**. Select the user (or users) you want to add as an eDiscovery Administrator, and then click **Add**. When you're finished adding users, click **Done**. Then, on the **Editing Choose eDiscovery Administrator** flyout page, click **Save** to save the changes to the eDiscovery Administrator membership. 
-    
+  
+    **To make a user an eDiscovery Manager:** Next to **eDiscovery Manager**, click **Edit**. In the **Choose eDiscovery Manager** section, click the **Choose eDiscovery Manager** hyperlink and then click ![Add Icon](media/ITPro-EAC-AddIcon.gif) **Add**. Select the user (or users) you want to add as an eDiscovery manager, and then click **Add**. When you're finished adding users, click **Done**. Then, on the **Editing Choose eDiscovery Manager** flyout page, click **Save** to save the changes to the eDiscovery Manager membership.
+  
+    **To make a user an eDiscovery Administrator:** Next to **eDiscovery Manager**, click **Edit**. In the **Choose eDiscovery Administrator** section, Under **eDiscovery Administrators**, click **Choose eDiscovery Administrator** click **Edit**, and then click ![Add Icon](media/ITPro-EAC-AddIcon.gif) **Add**. Select the user (or users) you want to add as an **eDiscovery Administrator**, and then click **Add**. When you're finished adding users, click **Done**. Then, on the **Editing Choose eDiscovery Administrator** flyout page, click **Save** to save the changes to the eDiscovery Administrator membership.
+      
 > [!NOTE]
 > You can also use the **Add-eDiscoveryCaseAdmin** cmdlet to make a user an eDiscovery Administrator. However, the user must be assigned the Case Management role before you can use this cmdlet to make them an eDiscovery Administrator. For more information, see [Add-eDiscoveryCaseAdmin](https://go.microsoft.com/fwlink/p/?LinkID=798217). 
   
