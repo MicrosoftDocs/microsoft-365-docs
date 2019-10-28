@@ -275,7 +275,7 @@ Therefore, before you lock a retention policy, it's **critical** that you unders
   
 You can lock a retention policy only by using PowerShell.
 
-First, [connect to Office 365 Security & Compliance Center PowerShell](http://go.microsoft.com/fwlink/p/?LinkID=799771).
+First, [connect to Office 365 Security & Compliance Center PowerShell](https://go.microsoft.com/fwlink/p/?LinkID=799771).
 
 Second, to view a list of your retention policies and find the name of the policy that you want to lock, run `Get-RetentionCompliancePolicy`.
 
@@ -379,13 +379,13 @@ These permissions are required only to create and apply a retention policy. Poli
 
 To use the retention policy cmdlets, you need to:
   
-1. [Connect to the Office 365 Security &amp; Compliance Center using remote PowerShell](http://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
+1. [Connect to the Office 365 Security &amp; Compliance Center using remote PowerShell](https://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
     
-2. Use these [Office 365 Security &amp; Compliance Center cmdlets](http://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)
+2. Use these [Office 365 Security &amp; Compliance Center cmdlets](https://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)
     
 ## More information
 
 - [Overview of labels](labels.md)
 - [SharePoint Online Limits](https://docs.microsoft.com/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)
-- [Limits and specifications for Microsoft Teams](https://docs.microsoft.com/en-us/microsoftteams/limits-specifications-teams) 
+- [Limits and specifications for Microsoft Teams](https://docs.microsoft.com/microsoftteams/limits-specifications-teams) 
     
