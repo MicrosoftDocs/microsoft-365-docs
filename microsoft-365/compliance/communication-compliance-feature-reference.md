@@ -211,9 +211,9 @@ Communication compliance filters allow you to filter and sort alert messages for
 | **Tags** | The tags assigned to a message, either *Questionable*, *Compliant*, or *Non-compliant*. |
 | **Escalated To** | The user name of the person included as part of a message escalation action. |
 
-## Alerts
+## Alert policies
 
-After configuring a policy, alerts are generated for messages that match conditions defined in the policy. By default, all policy matches alert triggers are assigned a severity level of medium. You can also change the settings for triggers on number of activities, period for the activities, and for specific users. If you'd like to change the severity level assigned to messages matching a policy, complete the following steps:
+After configuring a policy, alerts are generated for messages that match conditions defined in the policy. By default, all policy matches alert triggers are assigned a severity level of medium in the associated alert policy. You can also change the settings for triggers on number of activities, period for the activities, and for specific users in alert policies. If you'd like to change the severity level assigned in an alert policy, complete the following steps:
 
 1. Sign into [https://compliance.microsoft.com](https://compliance.microsoft.com) using credentials for an admin account in your Microsoft 365 organization.
 
