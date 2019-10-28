@@ -141,7 +141,6 @@ description: Find documentation and resources for Microsoft 365--a complete, int
                                     </div>
                                 </a>
                             </li>
-
                         </ul>
                     </li>
                 </ul>
