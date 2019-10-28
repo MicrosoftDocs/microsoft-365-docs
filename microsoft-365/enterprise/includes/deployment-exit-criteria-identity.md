@@ -68,7 +68,7 @@ If needed, [Step 2](../identity-secure-your-passwords.md#identity-sso) can help 
 <a name="crit-identity-custom-sign-in"></a>
 ### Optional: The Office 365 sign-in screen is personalized for your organization
 
-You have used [Add company branding to your sign-in and Access Panel pages](http://aka.ms/aadpaddbranding) to add your organization’s branding to the Office 365 sign-in page.
+You have used [Add company branding to your sign-in and Access Panel pages](https://aka.ms/aadpaddbranding) to add your organization’s branding to the Office 365 sign-in page.
 
 If you skip this option, your users will see a generic Office 365 sign-in screen and might not be confident that they’re signing into your organization’s site.
 
