@@ -61,13 +61,13 @@ For a complete list of filters and field details, see [Filters](communication-co
 
 8. If you'd like to save the selected filters as a filter query, select **Save the query** control after you've configured at least one filter value. Enter a name for the filter query and select **Save**. This filter will be available to use for only this policy and will be listed as a selection in the **Saved filter queries** section of the **Filters** details page.
 
-![Communication compliance filter detail controls](communication-compliance-filter-detail-controls-800px.png)
+![Communication compliance filter detail controls](media/communication-compliance-filter-detail-controls-800px.png)
 
 ### Using near and exact duplicate analysis
 
 Communication compliance policies automatically scan and pre-group near and exact message duplicates without any additional configuration steps. This allows you to quickly remediate similar messages one-by-one or as a group, reducing the message investigation burden for reviewers. As duplicates are detected, the **Near Duplicates** and/or the **Exact Duplicates** controls are displayed in the remediation action toolbar.
 
-![Communication compliance exact duplicates controls](communication-compliance-exact-duplicates-controls-800px.png)
+![Communication compliance exact duplicates controls](media/communication-compliance-exact-duplicates-controls-800px.png)
 
 ## Remediate alerts
 
