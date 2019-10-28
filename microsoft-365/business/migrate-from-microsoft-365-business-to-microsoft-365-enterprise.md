@@ -52,7 +52,7 @@ This table shows the differences between Microsoft 365 Business and Microsoft 36
 | StaffHub	| ![Included with Microsoft 365 Business](./media/check-mark.png)	| ![Included with Microsoft 365 Enterprise E3](./media/check-mark.png) | 
 | Outlook Customer Manager, MileIQ	| ![Included with Microsoft 365 Business](./media/check-mark.png)	| | 
 | **Threat Protection**		| | | 
-| Attack surface reduction capabilities	| [See this list](#threat-protection) | Additional capabilities: Network protection for web-based threats, Enterprise management of hardware-based isolation for Microsoft Edge, Host intrusion prevention rules | 
+| Attack surface reduction capabilities	| [See this list](#threat-protection) | Enterprise management of hardware-based isolation for Microsoft Edge | 
 | Office 365 Advanced Threat Protection (ATP) Plan 1 | ![Included with Microsoft 365 Business](./media/check-mark.png)	| Not included, but can be added on | 
 | **Identity management**		| | | 
 | Self-service password reset for hybrid Azure Active Directory (Azure AD) accounts, Azure multi-factor authentication (MFA), Conditional Access, password writeback for on-premises identities| 	![Included with Microsoft 365 Business](./media/check-mark.png)	| ![Included with Microsoft 365 Enterprise E3](./media/check-mark.png) | 
