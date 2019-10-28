@@ -33,7 +33,6 @@ Learn about the benefits of ISO-Iec-27001 on the Microsoft Cloud: [Download the 
 
 - [Azure, Azure Government, and Azure Germany](https://aka.ms/AzureCompliance)
 - Cloud App Security
-- Commercial Support: Premier and On Premises for Azure, Dynamics 365, Intune, and for medium business and enterprise customers of Office 365
 - [Dynamics 365 and Dynamics 365 U.S. Government](https://aka.ms/d365-compliance-list)
 - Genomics
 - Graph
