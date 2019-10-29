@@ -1,5 +1,5 @@
 ---
-title: "Apply labels to Office 365 groups and SharePoint sites (Public Preview)"
+title: "Use sensitivity labels with Office 365 groups and SharePoint sites (preview)"
 ms.author: laurawi
 author: kccross
 manager: laurawi
@@ -15,16 +15,16 @@ search.appverid:
 description: "You can apply labels to Office 365 groups and SharePoint sites. Sensitivity labels can use encryption to protect groups and sites."
 ---
 
-# About the Office 365 groups and sites public preview for sensitivity labels
+# Use sensitivity labels with Office 365 groups and SharePoint sites (preview)
 
-With the release of this public preview, administrators that opt-in can apply sensitivity labels to Office 365 groups and SharePoint sites and add policies related to these labels. End-users can then select a label when they create an Office 365 group or SharePoint site. Sensitivity labels for groups and sites work with SharePoint Online, Microsoft Teams, and Outlook.
+As a global or SharePoint admin, you can  can apply sensitivity labels to Office 365 groups and SharePoint sites and add policies related to these labels. End-users can then select a label when they create an Office 365 group or SharePoint site. Sensitivity labels for groups and sites work with SharePoint Online, Microsoft Teams, and Outlook.
 
 ## Opt-in to to the public preview
 
 As part of Microsoft's public preview, you'll need to opt-in to use sensitivity labels to restrict access to Office 365 groups and SharePoint sites. You use Azure PowerShell to opt-in.
 To opt-in to the public preview follow these steps:
 
-1. Using a work or school account with global admin permissions in your tenant, log in to your Azure subscription with Azure PowerShell. For instructions, see [Log in with Azure PowerShell](https://docs.microsoft.com/powershell/azure/authenticate-azureps).
+1. Using a work or school account with global admin permissions in your tenant, log in to your Azure subscription with Azure PowerShell. For instructions, see [Sign in with Azure PowerShell](/powershell/azure/authenticate-azureps).
 
 2. Run the following PowerShell at the command-line.
 
@@ -58,6 +58,7 @@ Unmanaged devices: This setting applies to any SharePoint site and controls ac
 Publishing the sensitivity label
 The steps to publish labels can be found here  
 Select a sensitivity label when creating a site  
+
 1. As an end user: Sign in and go to the SharePoint start page, and then select Create site. 
 As an admin: Go to the Active sites page in the new SharePoint admin center, and then select Create.  
 2. Click Create site.  
