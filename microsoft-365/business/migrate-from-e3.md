@@ -61,7 +61,7 @@ This table shows the differences between Microsoft 365 Business and Office 365 E
 
 ## Migration
 
-To migrate your subscription, see [switch to a different plan](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/switch-to-a-different-plan) for instructions, or, you can work with partner to move your E3 subscription and licenses to a Microsoft 365 Business subscription.
+To migrate your subscription, see [switch to a different plan manually](https://docs.microsoft.com/office365/admin/misc/switch-plans-manually) for instructions, or, you can work with partner to move your E3 subscription and licenses to a Microsoft 365 Business subscription.
 The following sections describe what changes you need to make, if any, and what you can do after the migration.
 
 ### Office 365 E3 subscription configuration and data
