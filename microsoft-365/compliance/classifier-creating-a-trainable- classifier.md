@@ -1,5 +1,5 @@
 ---
-title: "Creating a custom classifier (preview)"
+title: "Creating a trainable classifier (preview)"
 ms.author: chrfox
 author: chrfox
 manager: laurawi
