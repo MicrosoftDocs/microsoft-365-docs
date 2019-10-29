@@ -61,7 +61,7 @@ In addition to links in cards on the home page, you'll see a navigation pane on 
 
 ## How do I get the compliance center?
 
-- If you don't have the new Microsoft 365 compliance center already, you'll have it soon. The [new Microsoft 365 compliance center](../security/office-365-security/microsoft-security-and-compliance.md#microsoft-365-compliance-center) is generally available now.
+- If you don't have the new Microsoft 365 compliance center already, you'll have it soon. The Microsoft 365 compliance center is generally available now.
 
 - To visit the Microsoft 365 compliance center, as a global administrator or compliance administrator, go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and sign in. 
 
@@ -71,7 +71,7 @@ In addition to links in cards on the home page, you'll see a navigation pane on 
 
 **Why am I taken to the Office 365 Security & Compliance Center to complete some tasks, such as defining certain policies?**
 
-We're still developing the Microsoft 365 compliance center, and we'll be adding more functionality and solutions over the coming months. In the meantime, there are some tasks that must be completed in the Office 365 Security & Compliance Center ([https://protection.office.com](https://protection.office.com)). In those cases, you'll be directed automatically to the location where you can complete the task at hand, such as creating or editing a supervision policy.
+We're still developing the Microsoft 365 compliance center, and we'll be adding more functionality and solutions over the coming months. In the meantime, there are a few tasks that must be completed in the Office 365 Security & Compliance Center ([https://protection.office.com](https://protection.office.com)). In those cases, you'll be directed automatically to the location where you can complete the task at hand, such as creating or editing a supervision policy.
 
 **Why don't I see the new Microsoft 365 compliance center yet?**
 
