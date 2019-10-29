@@ -23,7 +23,7 @@ description: "Learn how to prevent False Positives and keep real email out of ju
 If you get a false positive, you should report the message to Microsoft by using the [Use the Report Message add-in](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2). Additionally, you can submit the message using [Submissions Explorer](/security/office-365-security/admin-submission.md).
 
 > [!NOTE]
-> Anyother fields in header that are not mentioned below are exclusively used by the Microsoft anti-spam team for diagnostic purposes.
+> Any other fields in the header that are not mentioned below are exclusively used by the Microsoft anti-spam team for diagnostic purposes.
 
 ## Determine the reason why the message was marked as spam
 
