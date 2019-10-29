@@ -219,7 +219,10 @@ After configuring a policy, alerts are generated for messages that match conditi
 |:-----|:-----|
 | Aggregation | Simple aggregation |
 | Threshold | 4 activities |
-|  | 60 minutes |
+| Window | 60 minutes |
+
+> [!Note]
+> The alert policy threshold trigger settings for activities supports a minimum value of 3 or higher for Communication compliance policies.
 
 You can change the default settings for triggers on number of activities, period for the activities, and for specific users in alert policies on the **Alert policies** page in the Office 365 Security & Compliance center.
 
@@ -240,19 +243,6 @@ If you'd like to change the severity level assigned in an alert policy for a spe
 6. Select **Save** to apply the new severity level to the policy.
 
 7. Select **Close** to exit the alert policy details page.
-
-> [!Note]
-> The alert policy trigger settings for activities *More than or equal to* supports a minimum value of 3 or higher for Communication compliance policies.
-
-## Monitor & manage
-
-It is easy to quickly review the alerts and policy matches generated of your Communication compliance policies. On the Communication compliance home page, you can quickly see:
-
-- Alerts needing review, listed from high to low severity. Select an alert to launch the alert details page and to start remediation actions.
-- Recent policy matches, listed by policy name
-- Resolved items, listed by policy name
-- Escalations, listed by policy name
-- Users with the most policy matches, listed from the most to the least number of matches
 
 ## Audit
 
