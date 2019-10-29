@@ -238,7 +238,7 @@ Now that we verified that the KQL query is working correctly, let's create the l
 
     ![](media/SPRetention18.png)
 
-9. Click **Auto-apply** to create the label policy. Note that it takes up to 7 days to automatically apply the Product Specification label to all documents that match the KQL search query that you provided.
+9. Click **Auto-apply** to create the label policy. It takes up to 7 days to automatically apply the Product Specification label to all documents that match the KQL search query that you provided.
 
 ### Verifying the retention label was automatically applied
 
@@ -335,12 +335,12 @@ The following table describes the parameters within the Body property of the act
 <tr class="odd">
 <td>EventType</td>
 <td>The value for this parameter corresponds to the event type that the event that's created will apply to. This event type was defined when you created the retention label. For this scenario, the event type is "Product Cessation".</td>
-</tr>
+</tr>[Overview of event-driven retention](event-driven-retention.md)
 <tr class="even">
 <td>SharePointAssetIdQuery</td>
 <td>This parameter defines the Asset Id for the event. Event-based retention needs a unique identifier for the document. We can uses Asset Ids to identify the documents that a particular event is applicable to, or as we do for this scenario, a metadata column, our own Product Name. To do  this, we have to create a new managed property named ProductName that can be used in the KQL query (alternatively, we could have used RefinableString00 instead of creating a new managed property). We also need to map this new managed property to the ows_Product_x0020_Name crawled property. Here's a screenshot of this managed property.
 
-<img src="media/SPRetention25.png" style="width:6.49722in;height:0.45069in" /><br/><strong>Note:</strong> As explained in the [event-driven retention](event-driven-retention.md) article, the Asset Id is simply another document property in SharePoint and OneDrive. Your organization may already use other document properties and IDs to classify content.</td>
+<img src="media/SPRetention25.png" style="width:6.49722in;height:0.45069in" /></td>
 </tr>
 <tr class="odd">
 <td>EventDateTime</td>
@@ -365,13 +365,25 @@ But after some time, the event status section shows that for a SharePoint site a
  
 This means that the retention period for the label applied to the Spinning Widget product document has been initiated, based on the event date of the Cessation Production Spinning Widget event. Assuming that you implemented the scenario in your test environment by configuring a 1-day retention period, you can go to the document library for your product documents a few days after the event was created and verify that the document is deleted (after the deletion job in SharePoint has run).
 
+### More about Asset Ids
+
+As explained in the [overview of event-driven retention](event-driven-retention.md), it's important to understand the relationship between event types, labels, events, and asset Ids. The Asset Id is simply another document property in SharePoint and OneDrive. It helps you to further identify the documents whose retention period will be triggered by the event. By default, SharePoint has an Asset Id property that you can use for event-driven retention:
+
+![](media/SPRetention26.png)
+
+As shown in the following screenshot, the Asset Id managed property is called **ComplianceAssetId**.
+
+![](media/SPRetention27.png)
+
+Instead of using the default Asset Id property, you can also use any other property, as we do in this scenario. But it's important to understand that if you don't specify an asset ID or keywords for an event, all of the content with a label of that event type will have its retention period triggered by the event.
+
 ### Using advanced search in SharePoint
 
 In the previous screenshot, we can also see that there is another managed property related to retention labels called **ComplianceTag** and that it's mapped to a crawled property. The **ComplianceAssetId** managed property is also mapped to a crawled property. This means you can use these managed properties in advanced search to retrieve all documents that have been tagged with a retention label.
 
 ## Summary
 
-This article illustrated a document management scenario where we automatically applied a retention label based on a site column in SharePoint, and then used event-based retention and Microsoft Flow to automatically trigger retention based on an external event.
+This article illustrated a document management scenario where we automatically applied a retention label based on a site column in SharePoint. Then we used event-based retention and Microsoft Flow to automatically trigger the start of the retention period based on an external event.
 
 ## Credits
 
