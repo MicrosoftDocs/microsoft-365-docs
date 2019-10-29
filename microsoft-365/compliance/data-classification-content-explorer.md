@@ -16,7 +16,7 @@ search.appverid:
 description: "Content explorer allows you to natively view labeled items."
 ---
 
-# Using data classification content explorer
+# Using data classification content explorer (preview)
 
 The data classification content explorer allows you to natively view the items that were summarized on the overview page.
 
