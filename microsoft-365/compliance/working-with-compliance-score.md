@@ -135,7 +135,7 @@ The assessor validates the work and examines the documentation, and selects the 
 
 ## Solutions page
 
-Approaching your work from the **Solutions page** is another way to begin actions to improve your compliance score. To get to your solutions page, select the **Solutions** tab on your dashboard, or select **View all solutions** underneath the **Solutions that affect your score** section in the upper-right section of your dashboard
+Approaching your work from the **Solutions page** is another way to begin actions to improve your compliance score. To get to your solutions page, select the **Solutions** tab on your dashboard, or select **View all solutions** underneath **Solutions that affect your score** in the upper-right section of your dashboard.
 
 The solutions page shows the share of earned and potential points as organized by solution—some of which will be specific to Microsoft (e.g., Azure AD Identity Protection, OneDrive for Business), while others describe solution areas in the Microsoft 365 and Office 365 security and compliance centers (e.g., data investigation, records management). Viewing your remaining points and improvement actions from this view helps you understand the overall solution areas which may need more immediate attention.
 
