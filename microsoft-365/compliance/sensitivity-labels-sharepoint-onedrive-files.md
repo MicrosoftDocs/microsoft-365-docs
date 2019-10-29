@@ -16,7 +16,7 @@ search.appverid:
 description: "Administrators can enable sensitivity label support for SharePoint and OneDrive. Once enabled, end-users can view and edit encrypted files stored in SharePoint and OneDrive."
 ---
 
-# Enable sensitivity labels for Office files in SharePoint and OneDrive (public preview)
+# Enable sensitivity labels for Office files in SharePoint and OneDrive (preview)
 
 What is included in the preview? 
 
@@ -36,18 +36,19 @@ We have added three new audit events called FileSensitivityApplied, FileSensitiv
 
 Team site search, organization-wide search and shared content search are coming soon 
 
-Requirements  
+See also: [Use sensitivity labels with Office 365 groups and SharePoint sites](sensitivity-labels-groups-sites.md)
+
+## Requirements  
 
 These new features are available only for sensitivity labels. If you used Azure Information Protection, you could convert your Azure Information Protection labels to sensitivity labels to enable these new features. Learn how  
 
 This preview requires the OneDrive sync app version 19.002.0121.0008 on Windows and version 19.002.0107.0008 on Mac (both released on Jan 28th, 2019) or later (OneDrive release notes). This version has been released to all rings. After your organization has enabled the preview, users who still run older versions of the sync app will be prompted to update it.  
 
-Page Break
- 
 
-Limitations 
+## Limitations 
 
-WARNING: Once the feature is enabled, users using Office apps on Windows, Mac, Android and iOS may experience save failures and other reliability problems right after applying protected labels to files in SharePoint. When it happens, users will be asked to Save As or Discard local changes. We recommend using Office online app to apply labels instead or close the document after applying the label and reopen it to avoid the save failures. We are proactively working on the solution. 
+> [!WARNING]
+> Once the feature is enabled, users using Office apps on Windows, Mac, Android and iOS may experience save failures and other reliability problems right after applying protected labels to files in SharePoint. When it happens, users will be asked to Save As or Discard local changes. We recommend using Office online app to apply labels instead or close the document after applying the label and reopen it to avoid the save failures. We are proactively working on the solution. 
 
 Labels with custom permissions and labels with expiration dates are not supported.  These documents will not be processed by SharePoint.  
 
@@ -69,8 +70,12 @@ Latency for label change or new label creation
 
 As admin, you can create new sensitivity labels and change existing label in Security and Compliance Center.  Once the labels are created or modified and published it can take up to 24 hours to sync across Office 365. We recommend not widely publish and newly created/modified label and wait for it to sync for at least 24 hours. If you publish and newly created/modified label to an end user and the sync is not complete yet then when the end user uses that label in a doc and uploads to SPO, the document can’t be opened in online version of Word, Excel and PowerPoint anymore. However, once the document is downloaded and reuploaded then it can be opened in online version of Word, Excel and PowerPoint. Also search, eDiscovery will not work on this document anymore.   
 
-Page Break
-PowerShell cmdlet for admins to enable this feature  
+Download the latest SharePoint Online Management Shell version.
+
+[!NOTE] If you installed a previous version of the SharePoint Online Management Shell, go to Add or remove programs and uninstall “SharePoint Online Management Shell.”
+On the Download Center page, select your language and then click the Download button. You’ll be asked to choose between downloading a x64 and x86 .msi file. Download the x64 file if you’re running the 64-bit version of Windows or the x86 file if you’re running the 32-bit version. If you don’t know, see https://support.microsoft.com/help/13443/windows-which-operating-system. After the file downloads, run it and follow the steps in the Setup Wizard.
+
+Connect to SharePoint Online as a global admin or SharePoint admin in Office 365. To learn how, see Getting started with SharePoint Online Management Shell.
 
  Set-SPOTenant -EnableSensitivityLabelIntegration $false {default} / $true  
 
