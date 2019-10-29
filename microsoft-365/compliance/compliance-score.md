@@ -51,7 +51,7 @@ Compliance Score gives you an out-of-the-box score based on the Microsoft 365 da
 
 For example, if your organization belongs to the financial services industry, you may want to add the FFIEC assessment. If your organization belongs to the healthcare industry, you can add the HIPAA/HITECH assessment. Learn how to [add assessments in Compliance Manager](working-with-compliance-manager.md#assessments).
 
-Learn more about [how your compliance score is calculated](compliance-score-methodology.md).
+Learn more about [how your compliance score is calculated and continuously monitored](compliance-score-methodology.md).
 
 
 ## Key components: controls, assessments, templates, groups

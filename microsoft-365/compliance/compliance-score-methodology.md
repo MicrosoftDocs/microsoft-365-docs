@@ -30,6 +30,14 @@ The displayed Compliance Score values for the control are applied *in their enti
 - **Implementation Status** equals **Implemented** or **Alternative Implementation** and,
 - **Test Result** equals **Passed**.
 
+## How Compliance Score continuously assesses controls
+
+Compliance Score automatically scans through your Microsoft 365 environment and detects your system settings, continuously and automatically updating your technical control status. For example, if you turned on multi-factor authentication (MFA) in the Azure AD portal, Compliance Score detects the setting and reflect that in the control access solution details. Conversely, if you didn’t turn on MFA, Compliance Score flags that as a recommended action for you to take.
+
+Compliance Score updates your control status every 24 hours. Once you follow a recommendation to implement a control, you will see the control status updated the next day.
+
+During public preview, continuous assessment is available to a portion of the technical controls, but not all.
+
 ## Microsoft 365 data protection baseline
   
 Compliance Score gives you an out-of-the-box score based on the Microsoft 365 data protection baseline, which is a set of controls that includes key regulations and standards for data protection and general data governance. This baseline draws elements primarily from NIST CSF (National Institute of Standards and Technology Cybersecurity Framework) and ISO (International Organization for Standardization), as well as from FedRAMP (Federal Risk and Authorization Management Program) and GDPR (General Data Protection Regulation of the European Union).
