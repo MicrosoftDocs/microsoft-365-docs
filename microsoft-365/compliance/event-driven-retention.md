@@ -37,7 +37,7 @@ Event-driven retention is typically used as part of a records-management process
 - Labels based on events usually trigger a disposition review at the end of the retention period, so that a records manager can manually review and dispose the content. For more information, see [Overview of disposition reviews](disposition-reviews.md).
     
 A label based on an event has the same capabilities as any label in Office 365. To learn more, see [Overview of labels](labels.md).
-    
+
 ## Understanding the relationship between event types, labels, events, and asset IDs
 
 To successfully use event-driven retention, it's important to understand the relationship between event types, labels, events, and asset IDs as illustrated here. An explanation follows the diagram.
@@ -70,6 +70,9 @@ Here's the high-level workflow for event-driven retention. More detailed steps f
   
 ![Diagram of workflow for setting up event-driven retention](media/161146d9-e0fc-4248-abc1-a18045eaad5c.png)
   
+> [!TIP]
+> See [Manage the lifecycle of SharePoint documents with retention labels](auto-apply-retention-labels-scenario.md) for a detailed scenario about using managed properties in SharePont to auto-apply retention labels and implement event-driven retention.
+
 ### Step 1: Create a label whose retention period is based on an event
 
 In the Microsoft 365 compliance center, Microsoft 365 security center, or Office 365 Security &amp; Compliance Center, in the left navigation, choose **Classification** > **Retention labels** > **Labels** tab > **Create a label**.
