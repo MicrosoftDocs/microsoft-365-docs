@@ -80,10 +80,10 @@ To access the Graph API, you need to have one of the following scopes in additio
 
 To help you the information you need more quickly, Microsoft improvement actions are organized into groups:
 
-* Identity (Azure AD accounts and roles)
-* Data  (Office 365 documents)
+* Identity (Azure AD accounts & roles, with Azure ATP coming soon)
+* Data  (Microsoft Information Protection)
 * Device (Microsoft Defender ATP devices, coming soon)
-* App (email and cloud apps)
+* App (email and cloud apps, including Office 365 and Microsoft Cloud App Security)
 * Infrastructure (Azure resources)
 
 In the Microsoft Secure Score overview page, you can see how points are split between these groups and what points are available. The overview page is also the place to get an all-up view of the total score, historical trend of your secure score with benchmark comparisons, and prioritized improvement actions that can be taken to improve your score.
