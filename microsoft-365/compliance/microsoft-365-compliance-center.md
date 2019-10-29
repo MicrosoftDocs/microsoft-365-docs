@@ -87,7 +87,7 @@ To go there, in the Microsoft 365 compliance center, in the navigation pane on t
 
 ## Next steps
 
-- **Review your Microsoft Compliance Score**, and use the new Compliance Manager (Preview) to improve your compliance score. To learn more, see [Compliance Manager (Preview)](compliance-score.md).
+- **Review your Microsoft Compliance Score**, and use the new Compliance Manager (Preview) to improve your compliance score. To learn more, see [Compliance Score (Preview)](compliance-score.md).
 
 - **Review your organization's Data Loss Prevention policies** and make required changes as necessary. To learn more about, see [Overview of data loss prevention policies](data-loss-prevention-policies.md).
 
