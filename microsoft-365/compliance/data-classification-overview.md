@@ -28,7 +28,7 @@ As a Microsoft 365 administrator or compliance administrator, you can evaluate a
 
 ![data classification overview](media\data-classification-overview-small.png)
 
-You can find data classification in the [Microsoft 365 compliance center](https://compliance.microsoft.com/dataclassification?viewid=overview) or [Microsoft 365 security center](https://security.microsoft.com/dataclassification?viewid=overview) > **Classification** > **Data Classification**.
+You can find data classification in the **Microsoft 365 compliance center** or **Microsoft 365 security center** > **Classification** > **Data Classification**.
 
 ## Sensitive information types used most in your content
 

@@ -28,7 +28,7 @@ Content explorer is a current snapshot of the items that have a sensitivity labe
 
 ### How to use content explorer
 
-1. Open [Microsoft 365 compliance center](https://compliance.microsoft.com/dataclassification?viewid=overview) > **Data classification** > **Content explorer**.
+1. Open **Microsoft 365 compliance center**  > **Data classification** > **Content explorer**.
 2. If you know the name of the label, or the sensitive information type, you can type that into the search box.
 3. Alternately, you can browse for the item by expanding the label type and selecting the label from the list, an item from the retention label portion of the list is show below.
 ![select retention item from list](media/data-classification-content-explorer-2.png)
