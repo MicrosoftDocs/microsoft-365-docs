@@ -201,7 +201,7 @@ Action Type dimension key.
 - The title of the Assessment.
 - The dimensions of the Assessment, including certification, environment, and product applied to the Assessment.
 - The date it was created and date when it was last modified.
-- The Assessment Score shown as a percentage. This score automatically includes your scores from Microsoft-managed controls and from Secure Score.
+- The Assessment Score shown as a percentage. This score automatically includes your scores from Microsoft-managed controls.
 - Progress indicators that show the number of assessed Microsoft-managed and customer-manged controls.
 
 ### Copying information from existing Assessments
