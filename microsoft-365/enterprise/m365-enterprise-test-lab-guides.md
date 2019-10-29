@@ -44,15 +44,15 @@ To demonstrate identity-related features and capabilities, see:
 
 - [Password hash synchronization](password-hash-sync-m365-ent-test-environment.md)
   
-   Enable and test password hash-based directory synchronization from a AD DS domain controller.
+   Enable and test password hash-based directory synchronization from an AD DS domain controller.
 
 - [Pass-through authentication](pass-through-auth-m365-ent-test-environment.md)
   
-   Enable and test pass-through authentication to a AD DS domain controller.
+   Enable and test pass-through authentication to an AD DS domain controller.
 
 - [Azure AD Seamless Single Sign-on](single-sign-on-m365-ent-test-environment.md)
   
-   Enable and test Azure AD Seamless Single Sign-on (SSO) with a AD DS domain controller.
+   Enable and test Azure AD Seamless Single Sign-on (SSO) with an AD DS domain controller.
 
 - [Multi-factor authentication](multi-factor-authentication-microsoft-365-test-environment.md)
   
