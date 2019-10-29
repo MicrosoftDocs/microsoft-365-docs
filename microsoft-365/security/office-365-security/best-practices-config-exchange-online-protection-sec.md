@@ -1,5 +1,5 @@
 ---
-title: "Best practices for EOP and Office 365 ATP security, best practices, settings, recommendations, Sender Policy Framework, Domain-based Message Reporting and Conformance, DomainKeys Identified Mail, steps, how does it work,"
+title: "Best practices for EOP and Office 365 ATP security settings, recommendations, Sender Policy Framework, Domain-based Message Reporting and Conformance, DomainKeys Identified Mail, steps, how does it work, etc"
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -13,22 +13,18 @@ search.appverid:
 ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
-description: "What are best practices for Exchange Online Protection (EOP) and Advanced Threat Protection (ATP) security settings? What's recommended? What should be used aggressively? And what extras do you get if you also use Advanced Threat Protection (ATP)?"
+description: "What are best practices for Exchange Online Protection (EOP) and Advanced Threat Protection (ATP) security settings? What's the current recommendations for standard protection? What should be used if you want to be more strict? And what extras do you get if you also use Advanced Threat Protection (ATP)?"
 ---
 
 # Best-practices for EOP and Office 365 ATP security
 
 **Exchange Online Protection (EOP)** is the core of security for E3 Office 365 subscriptions. It's optional, and even encouraged, for E3 customers to buy a subscription to **Office 365 Advanced Threat Protection (ATP)**, ex. ATP Plan 1 or ATP Plan 2, in order to leverage the added security available in E5 Office 365 subscriptions.
 
-We'll discuss two security levels, called Recommended and Aggressive in EOP, covering comments on how to use features at both levels of security. The sections begin with email validation and authentication, which involves some tinkering outside of Office 365, in DNS, and secures outbound mail, making tenants good citizens to the resources they mail. These settings best protect your subscription.
+We'll discuss two security levels, called Standard and Strict in EOP/ATP, covering comments on how to use features at both levels of security. The sections ends with email validation and authentication, which involves some tinkering outside of Office 365, in DNS, and secures outbound mail, making tenants good citizens to the resources they mail. These settings best protect your subscription.
 
-## Anti-spam, anti-malware, and anti-phishing
+## Anti-spam, anti-malware, and anti-phishing protection in EOP
 
-Both anti-spam and anti-malware are features of EOP. Spam filtering, on by default in Office 365, scans all mail and assigns a Spam Confidence Level (SCL) number value to each mail. Just to clarify, its purpose is to enumerate how confident the filter is that the mail is (or isn't) spam. Low values, like -1, 0, 1 are whitelisted or non-spam messages that land in a user Inbox. High score, like  9 is either highly suspect, or known spammers and heads for a user's Junk Mail, or administrator-accessible Quarantine.
-
-Malware filtering is also on by default in Office 365. Like anti-spam filtering, anti-malware filters work on both inbound and outbound mail. In both cases this protection can be configured for a better fit, by admins.
-
-Phishing filters are on by default in Office 365, but should be configured for a better fit. Here's what we would recommend for anti-phishing in EOP.
+Both anti-spam, anti-malware, and anti-phishing are features of EOP that can be configured by admins for a better fit. Here's what we would recommend for configuring EOP.
 
 ### Anti-spam policy
 
