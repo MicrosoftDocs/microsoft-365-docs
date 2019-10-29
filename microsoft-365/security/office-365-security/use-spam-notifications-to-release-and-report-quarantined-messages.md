@@ -31,23 +31,13 @@ The message you receive includes the number of spam-quarantined messages you hav
     
 - **Subject** The subject line text of the quarantined message. 
     
-- **Date** The date and time (in UTC) that the message was quarantined. 
-    
-- **Size** The size of the message, in kilobytes (KBs). 
-    
+- **Date** The date and time (in UTC) that the message was quarantined.     
+  
 These are the actions that you can take with a quarantined message:
 
-- **Preview** the message if you would like to preview the content or header prior to taking action.
-
-- **Download** the message if you would like to review the message and attachments (if any) on your device prior to taking action.
-
-- **Release** if the message isn’t spam and you want Office 365 to send the message to your mailbox.
-
-- **Release & Allow Sender** if the message isn’t spam and you want Office 365 to add the sender to your safe senders and recipients list for future emails. Keep in mind that your admin may have other organization wide allow/block configurations that override your safe sender list.
-
-- **Release & Report**, if the message isn’t spam and you want to send the message to your mailbox and report it to Microsoft for analysis.
-
 - **Block Sender** if you want Office 365 to add the sender to your blocked senders list.
+
+- **Review** to navigate to the Quarantine Portal within the Security and Compliance Center if you want to take other actions, such as Preview or Release.
 
 Be aware of the following:
   
