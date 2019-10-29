@@ -19,7 +19,7 @@ hideEdit: true
 
 The Content Delivery & Security Association (CDSA) is a worldwide forum advocating for the innovative and responsible delivery and storage of entertainment, software, and information content.
 
-The CDSA [Content Protection & Security (CPS) Standard](http://aka.ms/cdsa-standard) provides guidance and requirements for securing media assets within a Content Security Management System (CSMS). The standard specifies a set of controls designed to ensure the integrity of intellectual property and the confidentiality and security of media assets at every stage of the digital media supply chain.
+The CDSA [Content Protection & Security (CPS) Standard](https://aka.ms/cdsa-standard) provides guidance and requirements for securing media assets within a Content Security Management System (CSMS). The standard specifies a set of controls designed to ensure the integrity of intellectual property and the confidentiality and security of media assets at every stage of the digital media supply chain.
 
 The CPS certification audit is administered directly by the CDSA and consists of over 300 distinct controls that help secure and manage physical datacenters, harden services, and protect storage facilities. All controls are optimized to handle sensitive and valuable media assets. Once a system is validated by the CDSA assessor, the CDSA issues a certificate of compliance. To maintain compliance, the certified entity must submit the results of annual audits to the CDSA.
 
@@ -42,7 +42,7 @@ Azure Media Services was the first hyperscale cloud media platform to offer encr
 
 Microsoft has successfully completed the six-month renewal of the CDSA CPS certification, and Azure is now on an annual audit cycle.
 
-- [Azure Media Services Certificate of Compliance](http://aka.ms/cdsa-cert)
+- [Azure Media Services Certificate of Compliance](https://aka.ms/cdsa-cert)
 - [Azure CDSA CPS Audit Report](https://aka.ms/AzureCDSACPSAuditReport)
 - [Azure CDSA implementation guide](https://aka.ms/AzureCDSAImplementationGuide)
 
@@ -62,13 +62,13 @@ Yes. You can build on Azure CPS certification within your own CPS certification 
 
 ## Resources
 
-- [CDSA](http://www.cdsaonline.org/)
-- [CPS Standard](http://aka.ms/cdsa-standard)
-- [Azure Media Services Certificate of Compliance](http://aka.ms/cdsa-cert)
-- [How Azure Media Services earned CDSA security certification](http://johndeutscher.com/2015/04/14/how-azure-media-services-earned-cdsa-security-certification/)
+- [CDSA](https://www.cdsaonline.org/)
+- [CPS Standard](https://aka.ms/cdsa-standard)
+- [Azure Media Services Certificate of Compliance](https://aka.ms/cdsa-cert)
+- [How Azure Media Services earned CDSA security certification](https://johndeutscher.com/2015/04/14/how-azure-media-services-earned-cdsa-security-certification/)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 - Understanding CDSA and Azure compliance
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/2/6/3/263C244E-20A8-41B1-B2DA-2835E30CE92E/CDSA_Compliance_Backgrounder.pdf).
+Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/2/6/3/263C244E-20A8-41B1-B2DA-2835E30CE92E/CDSA_Compliance_Backgrounder.pdf).

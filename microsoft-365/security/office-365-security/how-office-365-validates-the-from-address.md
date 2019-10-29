@@ -218,7 +218,7 @@ You cannot override this policy for outbound mail you send in Office 365. In add
 ### Other ways to prevent and protect against cybercrimes in Office 365
 <a name="OtherProtection"> </a>
 
-For more information on how you can strengthen your organization against cybercrimes like phishing, spamming, data breaches, and other threats, see [Security best practices for Office 365](https://support.office.com/article/9295e396-e53d-49b9-ae9b-0b5828cdedc3).
+For more information on how you can strengthen your organization against cybercrimes like phishing, spamming, data breaches, and other threats, see [Security best practices for Office 365](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data).
   
 ## Related Topics
 
