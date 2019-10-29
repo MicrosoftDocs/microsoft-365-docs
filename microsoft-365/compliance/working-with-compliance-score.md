@@ -18,54 +18,49 @@ description: "Learn how to use the workflow tools in Microsoft Compliance Score 
 
 ## Managing your workflow with improvement actions
 
-Using improvement actions in Compliance Score centralizes your compliance workflows. Improvement actions suggest recommended actions to align with data protection regulations and standards, and provide detailed implementation guidance. You can assign them to users to perform the necessary implementation and testing work . You can also store documentation, notes, and record status updates right in the improvement action itself.
+Using improvement actions in Compliance Score centralizes your compliance workflows. Improvement actions suggest recommended actions to align with data protection regulations and standards, and provide detailed implementation guidance. You can assign them to users to perform the necessary implementation and testing work. You can also store documentation, notes, and record status updates right in the improvement action itself.
 
 ## View your improvement actions
 
 The Compliance Score dashboard shows your **key improvement actions**—the ones with the most available points which address the most important issues. 
 
-To view all of your improvement actions, select the **Improvement actions** tab on your dashboard, or select **View all improvement actions** underneath the list of key improvement actions. From the improvement actions page, you can see all of your organization’s improvement actions, which can be a long list.
+To view all of your improvement actions, select the **Improvement actions** tab on your dashboard, or select **View all improvement actions** underneath the list of key improvement actions on your dashboard. This brings you to the the improvement actions page, where you can see all of your organization’s improvement actions.
 
-It may be helpful to filter your view by selecting Filter, at the upper-right corner of the actions list, then selecting your desired criteria based on regulations and standards, solution, and group. You can also customize your view by selecting **Group**, and from that drop-down menu, select to view by group, solution, category, action type, or status.
+If you have a long list of actions, it may be helpful to filter your view. To do this, select **Filter** at the upper-right corner of the actions list, then select your desired criteria based on regulations and standards, solution, and group. You can also customize your view by selecting **Group** in the upper-right corner and, from the drop-down menu, select to view by group, solution, category, action type, or status.
 
-On the improvement actions screen, you can see all of your organization’s improvement actions, which can be a long list. It may be helpful to filter your view by selecting **Filter** above the list, and then selecting the desired criteria based on regulations and standards, solution, and group.
-
-You can also customize your view by selecting **Group** in the upper-right corner. From that drop-down menu, select to view by group, solution, category, action type, or status. 
-
-This screen shows the following data points for each improvement action:
+The improvement actions page shows the following data points for each improvement action:
 
 - **Score impact**: the points by which your overall score will increase by completing the action
-- **Regulations**: the regulation or standard that the action targets
+- **Regulations**: the regulation or standard pertaining to the action
 - **Group**: the group to which you assigned the action
 - **Solutions**: the solution where you can go to perform the action
 - **Assessments**: the assessment  (which organizes controls to meet a certain compliance objective) in which the action resides
 - **Categories**: the related data protection category (i.e., protect information, manage devices, etc.)
-- **Status**:
-    - **None**: has not been assigned for work (???)
-    - **Not assessed**: testing on the improvement action has not started (???)
+- **Test status**:
+    - **None**: no status update recorded
+    - **Not assessed**: testing has not started
     - **Not in scope**: is excluded from Compliance Score calculation and does not increase your score
     - **Partially tested**: testing is not yet complete; related to an action’s [Secure Score synchronization](compliance-score-release-notes.md#known-issues-in-compliance-score-preview)
-    - **Failed high risk**: testing of implementation has failed, and the risk of falling out of compliance with the applicable standard is high
-    - **Passed**: the improvement action implementation successfully tested 
-- **Pointed achieved**: lists progress in points achieved out of the maximum potential to be earned
+    - **Failed high risk**: testing of implementation has failed, and the risk of non-compliance with the applicable standard is high
+    - **Passed**: implementation successfully tested
+- **Pointed achieved**: shows points achieved out of the maximum that could be earned
 
-## Improvement actions details
+### Improvement actions details
 
-To begin the process of assigning an improvement action for work, go to an improvement action’s details page by following these steps:
+Each improvement action has a details page. This page contains detailed implementation instructions, which explain how to take the recommended actions to address the related standards and regulatory requirements listed under the **At a glance** header.
+
+The details page is where you can launch the recommended action or assign the work to another user, update status, and attach notes and documentation.
+
+To view an improvement action's details page:
 
 1. Go to your improvement actions page.
-2. Click anywhere in the row of your intended improvement action, or select the radio button to the left of the action’s title.
-3. When the improvement action’s details page opens, you can read detailed implementation instructions, assign it to a user for work, update its status, and attach notes and documentation.
+2. Click or tap anywhere in the row of your intended improvement action, which opens its details page.
 
-You can easily view the next or previous improvement action in the list by selecting the up or down arrow in the upper-right corner of the screen. If you filtered your list on the **Improvement actions** page, moving up or down will take you to the next item within that filtered list.
-
-### Implementation instructions
-
-Each improvement action contains detailed instructions under the **Implementation** header. This tells you how to take the recommended actions to address the related standards and regulatory requirements listed under the **At a glance** header. The first step then is to assign it to the proper person for action.
+You can easily view the next or previous improvement action in the list by selecting the up or down arrow in the upper-right corner of the screen. If you filtered your list on the improvement actions page, moving up or down will take you to the next item within that filtered list.
 
 ## Assign improvement actions
 
-To begin implementation work on an improvement action, you must assign it to a user to begin work. The assigned person could be:
+To begin implementation work on an improvement action, you can do the work yourself or assign it to another user. The assigned person could be:
 
 - A business policy owner
 - An IT implementer
@@ -73,46 +68,52 @@ To begin implementation work on an improvement action, you must assign it to a u
 
 Once the proper person is identified, be sure they hold an adequate [role](compliance-score-setup.md#set-user-permissions-and-assign-roles) in Compliance Score (compliance administrator, compliance data administrator, security administrator, or global administrator) to perform the work, then take the following steps: 
 
-1. From the improvement actions details page, select **Edit status**. 
+1. From the improvement actions details page, select **Edit status** near the upper-left section of the screen. 
 
-2. In the edit status flyout pane, click or tap in the **Assigned to** box, which populates a **Suggested people** list of all available users. You can either select the user from that list, or begin typing the name or email address of your selected user and selecting from results.
+2. In the edit status flyout pane, click or tap in the **Assigned to** box, which populates a **Suggested people** list of users. You can either select the user from the list, or type the name or email address of the person to whom you want to assign the action.
 
 3. Select **Save and close** to complete the assignment. The assigned user will receive an email that the improvement action has been assigned to them, and they can then open the improvement action from their dashboard.
 
-The assigned user can then perform the tasks suggested in the implementation instructions.
+The assigned user can then perform the recommended actions outlined in the implementation instructions.
 
 ## Perform work and store documentation
 
-When you perform implementation work, you can upload files and notes directly in the improvement action in the **Notes and documentation** section. This provides a secure, centralized repository to help you demonstrate satisfaction of controls to meet compliance standards and regulations. Any user with read-only access can read content in this section. The ability to upload, download, or delete fields, or to enter or edit notes, is restricted to roles with editing rights.
+When you perform implementation work, you can upload files and notes directly to the improvement action in the **Notes and documentation** section. This provides a secure, centralized repository to help you demonstrate satisfaction of controls to meet compliance standards and regulations. Any user with read-only access can read content in this section. The ability to upload, download, or delete fields, or to enter or edit notes, is restricted to roles with editing rights.
 
-Fields in this section include:
+Fields in the **Notes and documentation** section include:
 
-- **Uploaded documents**: select **Manage documents** to upload any relevant files. When the manage documents flyout pane opens, select **Add document** then select your file from your system. Once your file resolves in the pane, select **Close,** which automatically saves the file attachment. You will then see the file listed underneath **Uploaded documents.** Acceptable formats include (or exclude???) (???). File size limit is (???). To download or delete the document, select **Manage documents** from  underneath the list of documents. On the flyout pane, click or tap on the document row to highlight it, then select **Download** or **Delete.**
+**Uploaded documents**
 
-- **Implementation notes**: select **Edit implementation notes** to enter notes in this text field. To save notes and close the flyout pane, select **Save and close.** There is no character limit in text fields, so you.
+- Select **Manage documents** to upload any relevant files.
+- When the manage documents flyout pane opens, select **Add document**, then select your file from your system. 
+- Once your file resolves in the pane, select **Close,** which automatically saves the file attachment. You will then see the file listed underneath **Uploaded documents.** 
+- To download or delete the document, select **Manage documents** from  underneath the list of documents. On the flyout pane, click or tap on the document row to highlight it, then select **Download** or **Delete.**
 
-- **Test notes**: select **Edit test notes** to enter notes in this text field. To save notes and close the flyout pane, select **Save and close.**
+**Implementation, Test, and Additional notes**
 
-- **Additional notes**: select **Edit additional notes** to enter notes in this text field. To save notes and close the flyout pane, select **Save and close.**
-  - There is no character limit in this field; we recommend keeping notes brief to better view the entire screen
+- To add notes in any of these three fields, select **Edit implementation notes** underneath any of thse fields.
+- When the flyout pane opens, enter notes in the text field, then select **Save and close**.
+- To edit notes, select **Edit implementation notes**, make your edits, then select **Save and close**.
+
+There is no character limit in the notes fields. We recommend keeping notes brief so that you can easily view and edit them from the improvement actions details page.
 
 ## Change improvement action status
 
 You can record the implementation status and date, and the test status and date for each improvement action. Below are the available fields and status options:
 
-- **Implementation status**: select from these status options
-    - **Not implemented**
-    - **Implemented**
-    - **Alternative implementation** - ???
-    - **Planned**
+- **Implementation status**: select from these status options:
+    - **Not implemented** - action not yet implemented
+    - **Implemented** - action implemented
+    - **Alternative implementation** - select this option if you used other third-party tools or took other actions not recommended by Microsoft
+    - **Planned** - action is planned for implementation
     - **Not in scope** - an option for actions not relevant to your organization; selecting this status excludes the action from scoring; unselecting it will include the action in scoring
 - **Implementation date**: available field when implementation status is set to **Implemented** or **Alternative implementation**; toggle through the calendar pop-up to select the date
 - **Test status**: select from these options:
-    - **Not assessed** - ???
+    - **Not assessed**
     - **Passed**
-    - **Failed low risk** - ???
-    - **Failed medium risk** - ??
-    - **Failed high risk** - ??
+    - **Failed low risk**
+    - **Failed medium risk**
+    - **Failed high risk**
 - **Test date**: toggle through the calendar pop-up to select the date
 
 > [!NOTE]
@@ -129,17 +130,19 @@ Types of assessors include:
 
 The assessor validates the work and examines the documentation, and selects the appropriate test status. 
 
-**If the test status is "Passed"**: the assessment is complete and ??? is/are notified by email. The controls to satisfy the assessment are completed, and the **points achieved** shows the full number of possible points achieved and counted toward your overall compliance score.
+**If the test status is "Passed"**: the assessment is complete. The controls to satisfy the assessment are completed, and the **points achieved** shows the full number of possible points achieved and counted toward your overall compliance score.
 
-**If the test status is any degree of "Failed"**: the action does not meet the requirements, and the assessor should assign it back to the appropriate user for additional work.
+**If the test status is any degree of "Failed"**: the action does not meet the requirements, and the assessor can assign it back to the appropriate user for additional work.
 
 ## Solutions page
 
-Approaching your work from the **Solutions page** is another way to begin actions to improve your compliance score. To get to your solutions page, select the **Solutions** tab on your dashboard, or select **View all solutions** underneath **Solutions that affect your score** in the upper-right section of your dashboard.
+The **Solutions page** is another starting point for working on improvement actions to increase your score. 
 
-The solutions page shows the share of earned and potential points as organized by solution—some of which will be specific to Microsoft (e.g., Azure AD Identity Protection, OneDrive for Business), while others describe solution areas in the Microsoft 365 and Office 365 security and compliance centers (e.g., data investigation, records management). Viewing your remaining points and improvement actions from this view helps you understand the overall solution areas which may need more immediate attention.
+To get to your solutions page, select the **Solutions** tab on your dashboard, or select **View all solutions** underneath **Solutions that affect your score** in the upper-right section of your dashboard.
 
-### Filtering your view
+The solutions page shows the share of earned and potential points as organized by solution. Viewing your remaining points and improvement actions from this view helps you understand which solutions need more immediate attention.
+
+### Filtering your solutions view
 
 To filter you view of solutions: 
 
@@ -149,23 +152,19 @@ To filter you view of solutions:
 
 You can also modify your view to see assessments by group, product, or regulation by selecting the type of grouping from the **Group** drop-down menu above your assessments list.
 
-### How Compliance Score monitors solutions
-
-Compliance Score automatically scans through your Microsoft 365 environment and detect your system settings, continuously and automatically updating your technical control status. For example, if you turned on multi-factor authentication (MFA) in the Azure AD portal, Compliance Score detects the setting and reflect that in the control access solution details. Conversely, if you didn’t turn on MFA, Compliance Score flags that as a recommended action for you to take.
-
-### Taking actions
+### Taking actions from the solutions page
 
 The solutions page displays your organization’s solutions that are connected to improvement actions. The table lists each solution's contribution to your overall score, the score-enhancing points achieved and possible within that solution, and the remaining number of improvement actions grouped in that solution that can increase your score. 
 
 There are two ways you can take action from this screen:
 
-1. On the row of your intended solution, under the **Remaining actions** column, click or tap on the hyperlinked number. This takes you to a filtered view of the improvement actions screen showing untested improvement actions for that solution. You can then ???manage improvement actions???.
+1. On the row of your intended solution, under the **Remaining actions** column, click or tap on the hyperlinked number. This takes you to a filtered view of the improvement actions screen showing untested improvement actions for that solution.
 
 2. On the row of your intended solution, under the **Open solution** column, select **Open**. This takes you to the solution or location in the Microsoft 365 and Office 365 security and compliance centers where you can take the recommended action.
 
 ## Assessments page
 
-The assessments page lists the assessments that you and Microsoft set up for your organization. It lists only assessments that have not yet started, are in progress, or are not yet compliant. Any assessments you may have previously tested and implemented are archived in Compliance Manager.
+The assessments page lists the assessments you select to track for your organization. Your Compliance Score denominator is determined by all your tracked assessments. The more assessments you add, the more improvement actions you see on your improvement actions page, and the higher your score denominator is.
 
 To get to your assessments page, select the **Assessments** tab on your dashboard.
 
@@ -173,7 +172,7 @@ On this page you can quickly view important information about each assessment:
 
 - **Status**: the status toward completion of all the improvement actions in the assessment will be listed as either:
     - **Non-compliant**: the improvement actions in the assessment have not been implemented and successfully tested; work has not yet begun
-    - **In progress**: work is underway in implementing or testing the improvement actions; this could mean, for example, that an improvement action in the assessment has been assigned for work, is in the process of being tested
+    - **In progress**: work is underway in implementing or testing the improvement actions; this could mean, for example, that an improvement action in the assessment has been assigned for work, is in the process of being implemented and tested
 - **Assessment progress**: the percentage of the work done towards final completion of the assessment, as measured by the number of controls successfully tested.
 - **Customer-managed actions**: the number of completed actions to satisfy implementation of  your customer-managed controls
 - **Microsoft-managed actions**: the number of completed actions to satisfy implementation of Microsoft-managed controls
@@ -181,9 +180,15 @@ On this page you can quickly view important information about each assessment:
 - **Related services**: associated Microsoft 365 service
 - **Related regulations**: the regulatory standard, policy, or law which the assessment seeks to satisfy
 
-**Note:** during public preview, functionality for viewing, creating, exporting, and archiving assessments remains in the Compliance Manager tool. To manage your assessments, select **Manage Assessments in Compliance Manager** at the top of the assessments list.
+### Default assessments
 
-### Filtering your view
+By default, you will see the Microsoft **Data Protection Baseline** assessment on the assessments page. If you want to add more assessments to cover other regulations and standards, you can manage assessments in Compliance Manager. Compliance Score provides more than ten out-of-box assessments,  including ones for GDPR, CCPA, ISO 27001, ISO 27018, NIST 800-53, NIST 800-171, NIST CSF, CSA CCM, FFIEC, HIPAA/HITECH, and FedRAMP.
+
+### Managing assessments
+
+During public preview, functionality for viewing, creating, exporting, and archiving assessments remains in the Compliance Manager tool. To manage your assessments, select **Manage Assessments in Compliance Manager** at the top of the assessments list.
+
+### Filtering your assessments view
 
 To filter you view of assessments: 
 
