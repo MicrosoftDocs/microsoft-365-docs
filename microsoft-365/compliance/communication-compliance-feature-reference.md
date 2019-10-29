@@ -213,7 +213,9 @@ Communication compliance filters allow you to filter and sort alert messages for
 
 ## Alert policies
 
-After configuring a policy, alerts are generated for messages that match conditions defined in the policy. By default, all policy matches alert triggers are assigned a severity level of medium in the associated alert policy. Alerts are generated for a Communication compliance policy once the aggregation trigger threshold level is met in the associated Office 365 alert policy. 
+After configuring a policy, alerts are generated for messages that match conditions defined in the policy. By default, all policy matches alert triggers are assigned a severity level of medium in the associated alert policy. Alerts are generated for a Communication compliance policy once the aggregation trigger threshold level is met in the associated Office 365 alert policy.
+
+For Communication compliance policies, the following alert policy values are configured by default:
 
 |**Alert policy trigger**|**Default value**|
 |:-----|:-----|
