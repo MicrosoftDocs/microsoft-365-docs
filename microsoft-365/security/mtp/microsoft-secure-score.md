@@ -21,7 +21,7 @@ search.appverid:
 
 Microsoft Secure Score is a measurement of an organization’s security posture, with a higher number indicating more improvement actions taken. From a centralized dashboard in the Microsoft 365 security center, organizations can monitor and work on the security of their Microsoft 365 identities, data, apps, devices, and infrastructure.
 
-Secure Score helps organizations do the following:  
+Secure Score helps organizations:
 
 * Report on the current state of the organization’s security posture.
 * Improve their security posture by providing discoverability, visibility, guidance, and control.  
@@ -33,17 +33,17 @@ Additionally, you can access your recommendations and score through the [Microso
 
 ## How it works
 
-You are given points for configuring recommended security features, performing security-related tasks (such as viewing reports), or addressing the improvement action with a third-party application or software. Some improvement actions only give points when fully completed, and some give partial points if they are completed for some devices or users. Security should always be balanced with usability, and not every recommendation can work for your environment.
+You are given points for configuring recommended security features, performing security-related tasks (such as viewing reports), or addressing the improvement action with a third-party application or software. Some improvement actions only give points when fully completed, and some give partial points if they are completed for some devices or users. Security should be balanced with usability, and not every recommendation can work for your environment.
 
 Your score is updated in real time to reflect the information presented in the visualizations and improvement action pages. Secure Score also syncs daily to receive system data about your achieved points for each action.
 
 ### How improvement actions are scored
 
-Most are scored in a binary fashion — if you implement the improvement action, like creating a new policy or turning on a specific setting, you get 100% of the points . For other improvement actions, points are given as a percentage of the total configuration. For example, if the improvement action states you get 30 points by protecting all your users with multi-factor authentication and you only have 5 of 100 total users protected, you would be given a partial score of around 2 points (5 protected / 100 total * 30 max pts = 2 pts partial score).
+Most are scored in a binary fashion — if you implement the improvement action, like create a new policy or turn on a specific setting, you get 100% of the points. For other improvement actions, points are given as a percentage of the total configuration. For example, if the improvement action states you get 30 points by protecting all your users with multi-factor authentication and you only have 5 of 100 total users protected, you would be given a partial score of around 2 points (5 protected / 100 total * 30 max pts = 2 pts partial score).
 
 ### Products included in Secure Score
 
-Currently there are recommendations for Office 365 (including SharePoint Online, Exchange Online, OneDrive for Business, Microsoft Information Protection, and more), Azure AD, Intune, and Cloud App Security. Recommendations for other security products, like Azure ATP and Microsoft Defender ATP, are coming soon. The recommendations will not cover all the attack surfaces associated with each product, but they are a good baseline. You can also mark the improvement actions as covered by a third party. 
+Currently there are recommendations for Office 365 (including SharePoint Online, Exchange Online, OneDrive for Business, Microsoft Information Protection, and more), Azure AD, Intune, and Cloud App Security. Recommendations for other security products, like Azure ATP and Microsoft Defender ATP, are coming soon. The recommendations will not cover all the attack surfaces associated with each product, but they are a good baseline. You can also mark the improvement actions as covered by a third party.
 
 ## Required permissions
 
@@ -80,10 +80,10 @@ To access the Graph API, you need to have one of the following scopes in additio
 
 To help you the information you need more quickly, Microsoft improvement actions are organized into groups:
 
-* Identity (Azure AD accounts and roles)
-* Data  (Office 365 documents)
+* Identity (Azure AD accounts & roles, with Azure ATP coming soon)
+* Data  (Microsoft Information Protection)
 * Device (Microsoft Defender ATP devices, coming soon)
-* App (email and cloud apps)
+* App (email and cloud apps, including Office 365 and Microsoft Cloud App Security)
 * Infrastructure (Azure resources)
 
 In the Microsoft Secure Score overview page, you can see how points are split between these groups and what points are available. The overview page is also the place to get an all-up view of the total score, historical trend of your secure score with benchmark comparisons, and prioritized improvement actions that can be taken to improve your score.
@@ -97,7 +97,7 @@ The improvement actions tab lists the security recommendations that address poss
 
 ### Ranking
 
-Ranking is based on the number of remaining points left to achieve, implementation difficulty, user impact, and complexity. The highest ranked improvement actions have the large amount of points remaining with low difficulty, user impact, and complexity.
+Ranking is based on the number of remaining points left to achieve, implementation difficulty, user impact, and complexity. The highest ranked improvement actions have a large number of points remaining with low difficulty, user impact, and complexity.
 
 ### Actions
 
@@ -127,7 +127,7 @@ Microsoft Secure Score is a numerical summary of your security posture based on 
 
 ## What's coming?
 
-In order to make Microsoft Secure Score a better representative of your security posture and improve usability, we are making some changes in the near future. Your score and the maximum possible score will change. However, this does not imply a change in your security posture.
+To make Microsoft Secure Score a better representative of your security posture and improve usability, we are making some changes in the near future. Your score and the maximum possible score will change. However, this does not imply a change in your security posture.
 
 ### Removing “not scored” and “review” improvement actions
 
