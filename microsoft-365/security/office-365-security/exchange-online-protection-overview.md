@@ -51,13 +51,13 @@ EOP performs load balancing between datacenters but only within a region. If you
 
 ## EOP plans and features
 
-The following are the available EOP subscription plans:
+The available EOP subscription plans are:
 
-- **EOP standalone**: Where EOP protects your on-premises mailboxes.
+- **EOP standalone**: You enroll in EOP to protect your on-premises email organization.
 
-- **EOP features in Exchange Online**: Where EOP protects your Exchange Online cloud-hosted mailboxes.
+- **EOP features in Exchange Online**: Any subscription that includes Exchange Online (standalone or as part of Office 365) uses EOP to protect your Exchange Online mailboxes.
 
-- **Exchange Enterprise CAL with Services**: Where EOP protects your on-premises mailboxes, like EOP standalone, and includes data loss prevention (DLP) and reporting using web services.
+- **Exchange Enterprise CAL with Services**: If you have an on-premises Exchange organization where you've purchased additional Exchange Enterprise CAL with Services licenses, EOP is part of the included services.
 
 For information about requirements, important limits, and feature availability across all EOP subscription plans, see the [Exchange Online Protection Service Description](https://go.microsoft.com/fwlink/p/?LinkId=320619).
 
