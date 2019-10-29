@@ -49,7 +49,7 @@ From here, you can:
 
 You'll also add many additional cards, such as one showing your organization's cloud app compliance, and another showing data about users with shared files, with links to [Cloud App Security](https://docs.microsoft.com/cloud-app-security/) or other tools where you can explore data.
 
-![Additional compliance center card details](media/m365-compliance-center-additional-cards.png)
+    ![Additional compliance center card details](media/m365-compliance-center-additional-cards.png)
 
 ## Easy navigation to more compliance features and capabilities
 
