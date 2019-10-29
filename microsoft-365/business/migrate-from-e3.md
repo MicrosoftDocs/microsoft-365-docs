@@ -68,3 +68,36 @@ You don’t need to do any changes to your current subscription or data prior to
 - Subscription configuration, such as DNS records and domain names.
 - User and group accounts and authentication settings, such as multi factor authentication or conditional access policies.
 - Productivity service configurations and their data, such as Teams, Exchange Online mailboxes, SharePoint Online sites, OneDrive for Business folders, and OneNote notebooks.
+
+### Set up policies to protect user devices and files
+
+After you have assigned licenses to Microsoft 365 Business, you can start protecting the users' devices and files.
+  
+1. In the admin center, in the left nav, go to **Devices** \> **Policies**.
+    
+2. On the **Device policies** page, choose **Add**.
+    
+3. In the **Add policy** pane give the policy a name, and then choose a **Policy type** from the drop-down. 
+    
+    You can set up application policies for protecting files on Android and iPhone devices, as well as Windows 10, and you can set up device configuration policies for company owned Windows 10 devices. See the following links for details:
+    
+  - [Set app protection settings for Android or iOS devices](app-protection-settings-for-android-and-ios.md)
+    
+  - [Set application protection settings for Windows 10 devices](protection-settings-for-windows-10-devices.md)
+    
+  - [Set device protection settings for Windows 10 PCs](protection-settings-for-windows-10-pcs.md)
+  
+4. Once you set up policies, you and your employees can set up devices:
+    
+  - See [Set up Windows devices for Microsoft 365 Business users](set-up-windows-devices.md) for steps for Windows devices. 
+    
+  - See [Set up mobile devices for Microsoft 365 Business users](set-up-mobile-devices.md) for steps for Android phones and iPhones. 
+    
+
+### Threat protection
+
+After migrating to Microsoft 365 Business, you have Office 365 ATP. See Office 365 ATP for an overview and to set up see set up ATP safe links and set up ATP safe attachments.
+
+### Windows 10
+
+If your Windows aren't already on Windows Pro Creator update, you will need to [upgrade them to Windows Pro Creators Update](upgrade-to-windows-pro-creators-update.md).
