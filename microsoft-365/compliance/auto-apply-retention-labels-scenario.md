@@ -335,7 +335,7 @@ The following table describes the parameters within the Body property of the act
 <tr class="odd">
 <td>EventType</td>
 <td>The value for this parameter corresponds to the event type that the event that's created will apply to. This event type was defined when you created the retention label. For this scenario, the event type is "Product Cessation".</td>
-</tr>[Overview of event-driven retention](event-driven-retention.md)
+</tr>
 <tr class="even">
 <td>SharePointAssetIdQuery</td>
 <td>This parameter defines the Asset Id for the event. Event-based retention needs a unique identifier for the document. We can uses Asset Ids to identify the documents that a particular event is applicable to, or as we do for this scenario, a metadata column, our own Product Name. To do  this, we have to create a new managed property named ProductName that can be used in the KQL query (alternatively, we could have used RefinableString00 instead of creating a new managed property). We also need to map this new managed property to the ows_Product_x0020_Name crawled property. Here's a screenshot of this managed property.
