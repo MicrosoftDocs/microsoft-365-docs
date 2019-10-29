@@ -69,6 +69,10 @@ You don’t need to do any changes to your current subscription or data prior to
 - User and group accounts and authentication settings, such as multi factor authentication or conditional access policies.
 - Productivity service configurations and their data, such as Teams, Exchange Online mailboxes, SharePoint Online sites, OneDrive for Business folders, and OneNote notebooks.
 
+### Windows 10
+
+If your Windows aren't already on Windows Pro Creator update, you will need to [upgrade them to Windows Pro Creators Update](upgrade-to-windows-pro-creators-update.md).
+
 ### Set up policies to protect user devices and files
 
 After you have assigned licenses to Microsoft 365 Business, you can start protecting the users' devices and files.
@@ -92,12 +96,11 @@ After you have assigned licenses to Microsoft 365 Business, you can start protec
   - See [Set up Windows devices for Microsoft 365 Business users](set-up-windows-devices.md) for steps for Windows devices. 
     
   - See [Set up mobile devices for Microsoft 365 Business users](set-up-mobile-devices.md) for steps for Android phones and iPhones. 
-    
 
 ### Threat protection
 
-After migrating to Microsoft 365 Business, you have Office 365 ATP. See Office 365 ATP for an overview and to set up see set up ATP safe links and set up ATP safe attachments.
+After migrating to Microsoft 365 Business, you have Office 365 ATP. See [Office 365 ATP](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/office-365-atp) for an overview and to set up see [set up ATP safe links](https://support.office.com/article/61492713-53c2-47da-a6e7-fa97479e97fa), [set up ATP safe attachments](https://support.office.com/article/e7e68934-23dc-4b9c-b714-e82e27a8f8a5) and [set up ATP anti-phishing](https://support.office.com/article/86c425e1-1686-430a-9151-f7176cce4f2c).
 
-### Windows 10
+### Sensitivity labels
 
-If your Windows aren't already on Windows Pro Creator update, you will need to [upgrade them to Windows Pro Creators Update](upgrade-to-windows-pro-creators-update.md).
+To start using sensitivity labels, see [Overview of sensitivity labels](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels) and [create and manage sensitivity labels](https://support.office.com/article/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9) video.
