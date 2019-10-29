@@ -228,7 +228,7 @@ For Communication compliance policies, the following alert policy values are con
 
 You can change the default settings for triggers on number of activities, period for the activities, and for specific users in alert policies on the **Alert policies** page in the Office 365 Security & Compliance center.
 
-### Change the alert severity level for a policy
+### Change the severity level for an alert policy
 
 If you'd like to change the severity level assigned in an alert policy for a specific Communication compliance policy, complete the following steps:
 
