@@ -18,13 +18,14 @@ description: "What are best practices for Exchange Online Protection (EOP) and A
 
 # Best-practices for EOP and Office 365 ATP security
 
-**Exchange Online Protection (EOP)** is the core of security for E3 Office 365 subscriptions. It's optional, and even encouraged, for E3 customers to buy a subscription to **Office 365 Advanced Threat Protection (ATP)**, ex. ATP Plan 1 or ATP Plan 2, in order to leverage the added security available in E5 Office 365 subscriptions.
+**Exchange Online Protection (EOP)** is the core of security for E3 Office 365 subscriptions and helps keep malicious emails from reaching your employee's inboxes. But with new, more sophisticated attacks emerging every day, improved protections are a necessity. While it's optional, there are additional security features in **Office 365 Advanced Threat Protection (ATP)** ATP Plan 1 or ATP Plan 2, that provide more layers of security, control, and investigation. 
 
-We'll discuss two security levels, called Standard and Strict in EOP/ATP, covering comments on how to use features at both levels of security. The sections ends with email validation and authentication, which involves some tinkering outside of Office 365, in DNS, and secures outbound mail, making tenants good citizens to the resources they mail. These settings best protect your subscription.
+There are two security levels in EOP and Office365 ATP: **Standard** and **Strict**. These define different levels of mail filtering configurations that help prevent unwanted mail from reaching your employees inbox. 
+
+This topic contains Microsoft recommeded settings to help protect your Office 365 users. 
 
 ## Anti-spam, anti-malware, and anti-phishing protection in EOP
-
-Both anti-spam, anti-malware, and anti-phishing are features of EOP that can be configured by admins for a better fit. Here's what we would recommend for configuring EOP.
+Anti-spam, anti-malware, and anti-phishing are features of EOP that can be configured by admins. We recommend the following configurations.
 
 ### Anti-spam policy
 
@@ -45,7 +46,7 @@ Both anti-spam, anti-malware, and anti-phishing are features of EOP that can be 
 |Blocked Senders domains|None|None||
 |Outbound spam policy RRL|500|500||
 
-Recommended for **OFF** in both Recommended and Aggressive Levels:
+Recommended for **OFF** in both Standard and Strict Levels:
 
 |Security feature name|
 |---------|
@@ -65,7 +66,7 @@ Recommended for **OFF** in both Recommended and Aggressive Levels:
 |MarkAsSpamNdrBackscatter|
 |MarkAsSpamSpfRecordHardFail|
 
-Recommended for **ON** in both Recommended and Aggressive Levels:
+Recommended for **ON** in both Standard and Strict Levels:
 
 |Security feature name|
 |---------|
@@ -73,7 +74,7 @@ Recommended for **ON** in both Recommended and Aggressive Levels:
 
 ### Anti-malware policy
 
-|Security feature name|Recommended|Aggressive|Comment|
+|Security feature name|Standard|Strict|Comment|
 |---------|---------|---------|---------|
 |Malware Detection Response|Yes and use the default notification text|Yes and use the default notification text||
 |"Common Attachment Type Filter" for blocking suspicious file types|On|On||
@@ -83,7 +84,7 @@ Recommended for **ON** in both Recommended and Aggressive Levels:
 
 ### Anti-phishing policy
 
-|Security feature name|Recommended|Aggressive|Comment|
+|Security feature name|Standard|Strict|Comment|
 |---------|---------|---------|---------|
 |Zero Hour Autopurge should be enabled - Phish|True|True||
 |High confidence Phish detection action should be set to|Quarantine - Admin|Quarantine - Admin||
@@ -104,23 +105,22 @@ Recommended for **ON** in both Recommended and Aggressive Levels:
 |EnableSuspiciousSafetyTip|True|True||
 
 ## Office 365 Advanced Threat Protection (ATP) security
+Additional security benefits come with an Office 365 Advanced Threat Protection subscription. For the latest news and information, you can see [What's new in Office 365 ATP](whats-new-in-office-365-atp.md). 
 
-Earlier, I said that it was encouraged for E3 subscriptions to add an Office 365 ATP plan 1, or the more fully-realized ATP Plan 2. Advanced Anti-phishing is one reason why. Enabled by default, anti-phishing ***must*** be configured with policies to operate. Forgetting to configure anti-phishing policies exposes users to risk, be sure that's step-2 after you add an ATP subscription.
-
-> [!IMPORTANT]
-> If you have an E5 subscription, you currently have [ATP Plan 2](https://products.office.com/exchange/advance-threat-protection). Check this link when you want to find out [What's new in Office 365 ATP](whats-new-in-office-365-atp.md).
 
 ### Advanced Anti-phishing
-
 Phishing is an attempt to masquerade as reputable company or person for the purpose of stealing personal information like credit-card numbers, or computer or device pins or passwords. Phishing can involve:
 
 - **Spoofing**, where spoofers try to send mail on behalf of a specific target in a domain (for example, ellar@2020contoso.com trying to send mail for ellar@2020litware.com (a scenario email authentication methods can help thwart).
 
 - **Impersonation**, where mail is received whose sender is visually similar (or look-alike) to a target domain or username. The bad actor here, mimics a specific username, or pretends to be sending mail from a target domain. Here's a pretense domain: ellar@2020|itware.com, and here's a pretense user: ellαr@2020litware.com (look closely at the domain and user names in these examples to catch the domain and user impersonation).
 
-If you've added an Office 365 ATP subscription to your EOP, be sure to set the following configurations.
+> [!IMPORTANT]
+> Advanced Anti-phishing is one of the benefits of an Office 365 ATP subscription. Enabled by default, anti-phishing ***must*** be configured by using policies before it'll start filtering mail. Forgetting to configure anti-phishing policies could exposes users to risky emails. Make sure to configure your Anti-phishing policies after you add an Office 365 ATP subscription.
 
-|Security feature name|Recommended|Aggressive|Comment|
+If you've added an Office 365 ATP subscription to your EOP, set the following configurations.
+
+|Security feature name|Standard|Strict|Comment|
 |---------|---------|---------|---------|
 |Advanced phishing threshold|2|3||
 |Enable Anti-impersonation protection|Yes|Yes||
@@ -132,11 +132,11 @@ If you've added an Office 365 ATP subscription to your EOP, be sure to set the f
 
 ### Safe Links and Safe Attachments
 
- ATP includes the Safe Attachment and Safe Links policies to prevent email with potentially malicious attachments from being delivered, and to keep users from clicking and traveling to potentially unsafe URLs.
+Office 365 ATP includes the Safe Attachment and Safe Links policies to prevent email with potentially malicious attachments from being delivered, and to keep users from clicking potentially unsafe URLs.
 
 #### Safe Links settings
 
-|Security feature name|Recommended|Aggressive|Comment|
+|Security feature name|Standard|Strict|Comment|
 |---------|---------|---------|---------|
 |Use ATP Safe Links in Office Applications|Enabled|Enabled||
 |ATP Safe Links action for unknown potentially malicious URLs in messages|On|On||
@@ -147,7 +147,7 @@ If you've added an Office 365 ATP subscription to your EOP, be sure to set the f
 
 #### Safe Attachments
 
-|Security feature name|Recommended|Aggressive|Comment|
+|Security feature name|Standard|Strict|Comment|
 |---------|---------|---------|---------|
 |Turn on ATP for SharePoint, OneDrive, and Microsoft Teams|Enabled|Enabled||
 |ATP Safe attachments unknown malware response|Block|Block||
@@ -155,9 +155,9 @@ If you've added an Office 365 ATP subscription to your EOP, be sure to set the f
 
 ## Miscellaneous settings for EOP or Office 365 ATP
 
-These settings cover a range of features that don't necessarily fit into specific categories above. You may find some 1-off settings here as well.
+These settings cover a range of features that don't necessarily fit into specific categories above. 
 
-Security feature name|Recommended|Aggressive|Comment|
+Security feature name|Standard|Strict|Comment|
 |---------|---------|---------|---------|
 |Create SPF records|Yes|Yes||
 |Configure DKIM Signing for Domains|Yes|Yes||
@@ -179,13 +179,13 @@ Security feature name|Recommended|Aggressive|Comment|
 
 SPF, DKIM, and DMARC are acronyms for Sender Policy Framework, DomainKeys Identified Mail, and Domain-based Message Authentication, Reporting, and Conformance (quite a mouthful), and are the basis of email authentication and validation.
 
-These methods handle outbound email from Office 365, and help destination systems trust that email from your domain is valid. They're the only best practices we'll be covering that involve configurations to be made *outside* of Office 365, in your DNS. For specific configuration steps, see the [How Office 365 uses Sender Policy Framework (SPF) to prevent spoofing](how-office-365-uses-spf-to-prevent-spoofing.md) section in the Security and Compliance table of contents.
+These methods handle outbound email from Office 365, and help destination systems trust that email from your domain is valid. These  configurations are made *outside* of Office 365, in your DNS. For specific configuration steps, see the [How Office 365 uses Sender Policy Framework (SPF) to prevent spoofing](how-office-365-uses-spf-to-prevent-spoofing.md) section in the Security and Compliance table of contents.
 
-|Security feature name|Recommended|Aggressive|Comment|
+|Security feature name|Standard|Strict|Comment|
 |---------|---------|---------|---------|
 |[Set up SPF in Office 365 to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md)|Yes|Yes||
 |[Use DKIM to validate outbound email sent from your custom domain in Office 365](use-dkim-to-validate-outbound-email.md)|Yes|Yes||
-|[Use DMARC to validate email in Office 365](use-dmarc-to-validate-email.md)|Yes|Yes|Use action=none for Recommended, and action=reject for Aggressive.|
+|[Use DMARC to validate email in Office 365](use-dmarc-to-validate-email.md)|Yes|Yes|Use action=none for Standard, and action=reject for Strict.|
 
 > [!IMPORTANT]
 > To work with security roles and permissions, be sure you have the right role or roles in Office 365 or the Security and Compliance Center. If you are a *Security Administrator* in Azure Active Directory, a *Global Administrator* in Office 365, or an *Exchange Online Organizational Manager* in Exchange Online/Exchange Online Powershell, you're ready to go.
