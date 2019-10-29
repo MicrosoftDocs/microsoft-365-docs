@@ -1,5 +1,5 @@
 ---
-title: "Migrate to Microsoft 365 Business from Office 365 Enterprise E3"
+title: "Migrate to Microsoft 365 Business from Office 365 E3"
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -18,29 +18,29 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: "Learn how to move your business to Microsoft 365 Business from Office 365 Enterprise E3."
+description: "Learn how to move your business to Microsoft 365 Business from Office 365 E3."
 ---
 
-# Migrating from Office 365 Enterprise E3 to Microsoft 365 Business 
+# Migrating from Office 365 E3 to Microsoft 365 Business 
 
 Microsoft 365 Business has everything you need for your small business, combining the best-in-class cloud-based productivity apps with simple device management and security.  If you currently have an Office 365 E3 subscription, but don’t have more than 300 employees, consider switching to Microsoft 365 Business for added security features.
 
 Migrating is easy: First you switch licenses and all your data and user information in your current subscription is maintained. After the migration you will need to set up the features that are added in Microsoft 365 Business.
 
-## Differences between Office 365 Enterprise and Microsoft 365 Business
+## Differences between Office 365 E3 and Microsoft 365 Business
 
-This table shows the differences between Microsoft 365 Business and Office 365 Enterprise E3.
+This table shows the differences between Microsoft 365 Business and Office 365 E3.
 
-| Feature	| Support in Microsoft 365 Business	| Support in Office 365 Enterprise E3 | 
+| Feature	| Support in Microsoft 365 Business	| Support in Office 365 E3 | 
 |:-------|:-----|:-----|
 | **On-premises**		| | | 
-| Office apps*	| [Office 365 Business](#office-365-business)	| Office 365 ProPlus | 
+| Office apps<sup>1</sup>	| [Office 365 Business](#office-365-business)	| Office 365 ProPlus | 
 | **Cloud productivity apps**		| | | 
 | Exchange Online and Outlook	| 50 GB storage limit per mailbox and unlimited Exchange Online archiving	| 100 GB storage limit per mailbox and unlimited Exchange Online archiving | 
-| Teams	| ![Included with Microsoft 365 Business](./media/check-mark.png)	| ![Included with Microsoft 365 Enterprise E3](./media/check-mark.png) | 
+| Teams	| ![Included with Microsoft 365 Business](./media/check-mark.png)	| ![Included with Office 365 E3](./media/check-mark.png) | 
 | OneDrive for Business	| 1 TB storage limit per user	| Unlimited | 
-| Yammer, SharePoint Online, Planner, Stream	| ![Included with Microsoft 365 Business](./media/check-mark.png)	| ![Included with Office 365 Enterprise E3](./media/check-mark.png) | 
-| StaffHub	| ![Included with Microsoft 365 Business](./media/check-mark.png)	| ![Included with Office 365 Enterprise E3](./media/check-mark.png) | 
+| Yammer, SharePoint Online, Planner, Stream	| ![Included with Microsoft 365 Business](./media/check-mark.png)	| ![Included with Office 365 E3](./media/check-mark.png) | 
+| StaffHub	| ![Included with Microsoft 365 Business](./media/check-mark.png)	| ![Included with Office 365 E3](./media/check-mark.png) | 
 | Outlook Customer Manager, MileIQ	| ![Included with Microsoft 365 Business](./media/check-mark.png)	| | 
 | **Threat Protection**		| | | 
 | Office 365 Advanced Threat Protection (ATP) Plan 1 | ![Included with Microsoft 365 Business](./media/check-mark.png)	| Not included, but can be added on | 
@@ -48,14 +48,16 @@ This table shows the differences between Microsoft 365 Business and Office 365 E
 | Self-service password reset for hybrid Azure Active Directory (Azure AD) accounts, Azure multi-factor authentication (MFA), Conditional Access, password writeback for on-premises identities| 	![Included with Microsoft 365 Business](./media/check-mark.png)	|  | 
 | **Device and app management**		| | |
 | Microsoft Intune, Windows AutoPilot| 	![Included with Microsoft 365 Business](./media/check-mark.png)	|  |
-| Shared computer activation| 	![Included with Microsoft 365 Business](./media/check-mark.png)	| ![Included with Office 365 Enterprise E3](./media/check-mark.png)| 
+| Shared computer activation| 	![Included with Microsoft 365 Business](./media/check-mark.png)	| ![Included with Office 365 E3](./media/check-mark.png)| 
 | Upgrade rights to Windows 10 Pro from Win 7/8.1 Pro licenses| 	![Included with Microsoft 365 Business](./media/check-mark.png)	|| 
 | **Information protection**		| | |
-|Office 365 Data Loss Prevention|	![Included with Microsoft 365 Business](./media/check-mark.png)|![Included with Office 365 Enterprise E3](./media/check-mark.png)|
+|Office 365 Data Loss Prevention|	![Included with Microsoft 365 Business](./media/check-mark.png)|![Included with Office 365 E3](./media/check-mark.png)|
 |Azure Information Protection Plan 1, Bitlocker enforcement|![Included with Microsoft 365 Business](./media/check-mark.png)||
 |Azure Information Protection Plan 1, Sensitivity labels|![Included with Microsoft 365 Business](./media/check-mark.png)||
 |**Client Access License (CAL rights)**|||
-|Enterprise CAL Suite (Exchange, SharePoint, Skype)||![Included with Office 365 Enterprise E3](./media/check-mark.png)|
+|Enterprise CAL Suite (Exchange, SharePoint, Skype)||![Included with Office 365 E3](./media/check-mark.png)|
+
+<sup>1</sup> The Microsoft 365 Business version of the Office apps do not include volume activation through Group Policy, app telemetry, update controls, spreadsheet compare and inquire, and business Intelligence.
 
 ## Migration
 
