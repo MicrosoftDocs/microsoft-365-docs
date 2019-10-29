@@ -213,7 +213,19 @@ Communication compliance filters allow you to filter and sort alert messages for
 
 ## Alert policies
 
-After configuring a policy, alerts are generated for messages that match conditions defined in the policy. By default, all policy matches alert triggers are assigned a severity level of medium in the associated alert policy. You can also change the settings for triggers on number of activities, period for the activities, and for specific users in alert policies. If you'd like to change the severity level assigned in an alert policy, complete the following steps:
+After configuring a policy, alerts are generated for messages that match conditions defined in the policy. By default, all policy matches alert triggers are assigned a severity level of medium in the associated alert policy. Alerts are generated for a Communication compliance policy once the aggregation trigger threshold level is met in the associated Office 365 alert policy. 
+
+|**Alert policy trigger**|**Default value**|
+|:-----|:-----|
+| Aggregation | Simple aggregation |
+| Threshold | 4 activities |
+|  | 60 minutes |
+
+You can change the default settings for triggers on number of activities, period for the activities, and for specific users in alert policies on the **Alert policies** page in the Office 365 Security & Compliance center.
+
+### Change the alert severity level for a policy
+
+If you'd like to change the severity level assigned in an alert policy for a specific Communication compliance policy, complete the following steps:
 
 1. Sign into [https://compliance.microsoft.com](https://compliance.microsoft.com) using credentials for an admin account in your Microsoft 365 organization.
 
