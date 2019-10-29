@@ -28,8 +28,6 @@ To view all of your improvement actions, select the **Improvement actions** tab 
 
 It may be helpful to filter your view by selecting Filter, at the upper-right corner of the actions list, then selecting your desired criteria based on regulations and standards, solution, and group. You can also customize your view by selecting **Group**, and from that drop-down menu, select to view by group, solution, category, action type, or status.
 
-![Compliance Score - improvement actions navigation](media/compliance-score-improvement-actions-navigation.png)
-
 On the improvement actions screen, you can see all of your organization’s improvement actions, which can be a long list. It may be helpful to filter your view by selecting **Filter** above the list, and then selecting the desired criteria based on regulations and standards, solution, and group.
 
 You can also customize your view by selecting **Group** in the upper-right corner. From that drop-down menu, select to view by group, solution, category, action type, or status. 
@@ -137,9 +135,19 @@ The assessor validates the work and examines the documentation, and selects the 
 
 ## Solutions page
 
-Approaching your work from the **Solutions page** is another way to begin actions to improve your compliance score. This page shows the share of earned and potential points as organized by solution—some of which will be specific to Microsoft (e.g., Azure AD Identity Protection, OneDrive for Business), while others describe solution areas in the Microsoft 365 and Office 365 security and compliance centers (e.g., data investigation, records management). Viewing your remaining points and improvement actions from this view helps you understand the overall solution areas which may need more immediate attention.
+Approaching your work from the **Solutions page** is another way to begin actions to improve your compliance score. To get to your solutions page, select the **Solutions** tab on your dashboard, or select **View all solutions** underneath the **Solutions that affect your score** section in the upper-right section of your dashboard
 
-The **Solutions that affect your score** section on your Compliance Score dashboard shows the solutions with the greatest potential to positively impact your score. Selecting **View all solutions** in that section, or selecting the **Solutions** tab, takes you to the solutions page showing all your solutions.
+The solutions page shows the share of earned and potential points as organized by solution—some of which will be specific to Microsoft (e.g., Azure AD Identity Protection, OneDrive for Business), while others describe solution areas in the Microsoft 365 and Office 365 security and compliance centers (e.g., data investigation, records management). Viewing your remaining points and improvement actions from this view helps you understand the overall solution areas which may need more immediate attention.
+
+### Filtering your view
+
+To filter you view of solutions: 
+
+1. Select **Filter** at the top left corner of your assessments list.
+2. On the flyout **Filters** pane, place a check next to the desired criteria (standards and regulations, solution, action type, Compliance Manager group, category).
+3. Select the **Apply** button. The filter pane will close and you will see your filtered view.
+
+You can also modify your view to see assessments by group, product, or regulation by selecting the type of grouping from the **Group** drop-down menu above your assessments list.
 
 ### How Compliance Score monitors solutions
 
@@ -157,7 +165,9 @@ There are two ways you can take action from this screen:
 
 ## Assessments page
 
-The assessments page lists the assessments set up for your organization by both you and Microsoft. It lists only assessments that have not yet started, are in progress, or are not yet compliant. Any assessments you may have previously tested and implemented are archived in Compliance Manager.
+The assessments page lists the assessments that you and Microsoft set up for your organization. It lists only assessments that have not yet started, are in progress, or are not yet compliant. Any assessments you may have previously tested and implemented are archived in Compliance Manager.
+
+To get to your assessments page, select the **Assessments** tab on your dashboard.
 
 On this page you can quickly view important information about each assessment:
 
@@ -173,13 +183,13 @@ On this page you can quickly view important information about each assessment:
 
 **Note:** during public preview, functionality for viewing, creating, exporting, and archiving assessments remains in the Compliance Manager tool. To manage your assessments, select **Manage Assessments in Compliance Manager** at the top of the assessments list.
 
-### Customizing your view
+### Filtering your view
 
 To filter you view of assessments: 
 
 1. Select **Filter** at the top left corner of your assessments list.
-2. On the flyout **Filters** pane, place a check next to the desired .regulation and standard or group.
-3. Select the **Apply** button.
+2. On the flyout **Filters** pane, place a check next to the desired criteria (standards and regulations, Compliance Manager group).
+3. Select the **Apply** button. The filter pane will close and you will see your filtered view.
 
 You can also modify your view to see assessments by group, product, or regulation by selecting the type of grouping from the **Group** drop-down menu above your assessments list.
 
