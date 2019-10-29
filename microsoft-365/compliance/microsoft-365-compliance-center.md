@@ -15,7 +15,7 @@ ms.collection: M365-security-compliance
 
 ## Overview
 
-If you're interested in your organization's compliance posture, you're going to love the [Microsoft 365 compliance center](https://compliance.microsoft.com). The Microsoft 365 compliance center provides easy access to the data and tools you need to manage to your organization's compliance needs. 
+If you're interested in your organization's compliance posture, you're going to love the [Microsoft 365 compliance center](https://compliance.microsoft.com). The Microsoft 365 compliance center provides easy access to the data and tools you need to manage to your organization's compliance needs.
 
 Read this article to get acquainted with the Microsoft 365 compliance center, [how to get it](#how-do-i-get-the-compliance-center), [frequently asked questions](#frequently-asked-questions), and your [next steps](#next-steps).
 
@@ -29,39 +29,31 @@ When you go to your Microsoft 365 compliance center for the first time, you are 
 
 The welcome banner gives you some pointers on how to get started, with next steps, and an invitation for you to give us feedback.
 
-## Assess section
+## Card section
 
-The **Assess** section on the home page shows you at a glance how your organization is doing with [data protection and compliance](protect-access-to-data-and-services.md).
-
-![Assess section in Microsoft 365 compliance center](media/m365-compliance-center-assess.png)
+When you first visit the Microsoft 365 compliance center, the card section on the home page shows you at a glance how your organization is doing with data compliance, what solutions are available for your organization, and a summary of any active alerts.
 
 From here, you can:
 
-- Select the Microsoft Compliance Score card, which leads you to [Compliance Manager](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md), where you can review or edit your configurations and potentially improve your overall compliance score.
-- You can use the Compliance checklist to quickly see recommended steps to help your organization reduce potential compliance risks.
-- You'll also see additional cards, such as one showing your organization's cloud app compliance, and another showing data about users with shared files, with links to [Cloud App Security](https://docs.microsoft.com/cloud-app-security/) or other tools where you can explore data.
+- Select the **Microsoft Compliance Score** card, which leads you to the new [Compliance Score](compliance-score.md) solution. It calculates a risk-based score that measures your progress toward completing recommended actions that help reduce risks around data protection and regulatory standards. It also provides workflow capabilities and built-in control mapping to help you efficiently carry out those actions.
 
-## Protect section
+    ![Compliance Score card Microsoft 365 compliance center](media/m365-compliance-center-compliance-score-card.png)
 
-The **Protect** section on the home page contains cards that provide you with high-level information about [retention labels](labels.md), [data loss prevention (DLP)](data-loss-prevention-policies.md), high-risk apps, third-party apps in use, shared files, shadow IT apps, and more. 
+- Select the new **Solution catalog** card, which links to collections of [integrated solutions](microsoft-365-solution-catalog.md) you can use to help you manage end-to-end compliance scenarios. A solution's capabilities and tools might include a combination of policies, alerts, reports, and more.
 
-![Protect section in the Microsoft 365 compliance center](media/m365-compliance-center-protect.png)
+    ![Solution catalog card Microsoft 365 compliance center](media/m365-compliance-center-solution-catalog-card.png)
 
-Each card has a link to a report or additional information where you can learn more.
+- Select the **Active alerts** card, which includes a summary of the most [active alerts]((../security/office-365-security/alerts.md)) and includes a link where you can view more detailed information, such as Severity, Status, Category, and more.
 
-## Respond section
+    ![Active alerts card Microsoft 365 compliance center](media/m365-compliance-center-active-alerts-card.png)
 
-The **Respond** section surfaces [alerts](../security/office-365-security/alerts.md) and [pending dispositions](disposition-reviews.md) that you'll want to review and potentially act upon.
+You'll also add many additional cards, such as one showing your organization's cloud app compliance, and another showing data about users with shared files, with links to [Cloud App Security](https://docs.microsoft.com/cloud-app-security/) or other tools where you can explore data.
 
-![Respond section in the Microsoft 365 compliance center](media/m365-compliance-center-respond.png)
-
-Cards, such as the [Active alerts](../security/office-365-security/alerts.md) card, include a link to a page where you can view more detailed information, such as Severity, Status, Category, and more.
-
-![Active alerts details](media/m365-compliance-center-alerts-details.png) 
+![Additional compliance center card details](media/m365-compliance-center-additional-cards.png)
 
 ## Easy navigation to more compliance features and capabilities
 
-In addition to links in cards on the home page, you'll see a navigation pane on the left side of the screen that gives you easy access to your [alerts](../security/office-365-security/alerts.md), [reports](reports-in-security-and-compliance.md), [policies](alert-policies.md), compliance solutions, and more. 
+In addition to links in cards on the home page, you'll see a navigation pane on the left side of the screen that gives you easy access to your [alerts](../security/office-365-security/alerts.md), [reports](reports-in-security-and-compliance.md), [policies](alert-policies.md), compliance solutions, and more.
 
 |  |  |
 |---------|---------|
