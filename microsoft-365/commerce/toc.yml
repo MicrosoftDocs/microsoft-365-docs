@@ -25,7 +25,7 @@
         - name: Manage billing profiles
           href: /microsoft-365/commerce/billing-and-payments/manage-billing-profiles
         - name: Payment Services Directive 2 and Strong Customer Authentication
-          href: /microsoft-365/commerce/billing-and-payments/psd2.md
+          href: /microsoft-365/commerce/billing-and-payments/psd2
     - name: Billing accounts
       items: 
         - name: Manage billing account info
