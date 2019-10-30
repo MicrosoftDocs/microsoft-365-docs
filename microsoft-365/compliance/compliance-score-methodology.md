@@ -30,6 +30,7 @@ The displayed Compliance Score values for the control are applied *in their enti
 - **Implementation Status** equals **Implemented** or **Alternative Implementation** and,
 - **Test Result** equals **Passed**.
 
+The sum of points earned by taking improvement actions is the control score. The sum of your control scores is the assessment score. The sum of your assessment scores is your overall compliance score
 
 ## Initial score based on Microsoft 365 data protection baseline
   
@@ -50,7 +51,7 @@ Compliance Score tracks two types of controls—Microsoft-managed and customer-m
 1. **Customer-managed points** contribute to your compliance score based on controls managed by your organization.
 2. **Microsoft-managed points** contribute to your compliance score based on controls managed by Microsoft as a cloud service provider.
 
-Controls are assigned a score value based on whether they are mandatory or discretionary, and whether they are preventative, detective, or corrective.
+Controls are assigned a score value based on whether they are mandatory or discretionary, and whether they are preventative, detective, or corrective—as described below.
 
 ### Mandatory and discretionary controls
 
@@ -60,7 +61,7 @@ Controls are assigned a score value based on whether they are mandatory or discr
   
 ### Preventative, detective, and corrective controls
   
- - **Preventative controls** address specific risks. For example, protecting information at rest using encryption is a preventative control against attacks and breaches. Separation of duties is a preventative control to manage conflict of interest and to guard against fraud.
+ - **Preventative controls** address specific risks. For example, protecting information at rest using encryption is a preventative control against attacks and breaches. Separation of duties is a preventative control to manage conflict of interest and guard against fraud.
   
  - **Detective controls** actively monitor systems to identify irregular conditions or behaviors that represent risk or that can be used to detect intrusions or determine if a breach occurs. System access auditing and privileged administrative actions auditing are types of detective monitoring controls. Regulatory compliance audits are a type of detective control used to find process issues.
   
