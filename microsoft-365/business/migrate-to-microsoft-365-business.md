@@ -22,62 +22,50 @@ ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: "Learn how to move your business to Microsoft 365 Business."
 ---
 
-# Migrate to Microsoft 365 Business from Office 365 Business Premium
+# Upgrade to Microsoft 365 Business from Office 365 Business Premium
 
-If you already have an Office 365 for business subscription, for example, Office 365 Business Premium, you can easily add licenses to Microsoft 365 Business, and assign them to some, or all users.
-  
-> [!NOTE]
-> You can't use the [Switch plans](https://support.office.com/article/73318661-8f33-478b-bcc7-fb8d69dbb22a?.aspx#switchbutton) button to upgrade to Microsoft 365 Business yet. 
+If you have an Office 365 for business subscription, for example, Office 365 Business Premium, you can easily add licenses for Microsoft 365 Business, and assign them to some, or all users. Add licenses for Microsoft 365 Business if you want to add: 
+- Windows 10 Pro (to PCs running Windows 8 or later)
+- Simple controls that manage business data on devices
+- Advanced security capabilities.
+Find out more at about Microsoft 365 Business [Microsoft.com](https://www.microsoft.com/microsoft-365/business)
+
+## Upgrade to Microsoft 365 Business yourself, or get help
+
+You have three ways to get Microsoft 365 Business:
+ - [Add Microsoft 365 Business licenses](#add-microsoft-365-business-licenses) and assign them yourself by following the steps in this topic.
+ - [Add a Microsoft partner](get-microsoft-365-business.md) to your Office 365 subscription. The partner can purchase licenses for you and help you transition.
+ - [Head to a Microsoft Store](https://www.microsoft.com/store/locations/find-a-store) where they can complete the process for you.
   
 ## Add Microsoft 365 Business licenses
-
-You have two ways to get Microsoft 365 Business. A partner can purchase Microsoft 365 Business for you from [Microsoft Partner Center](get-microsoft-365-business.md). Your partner can also help you transition to Microsoft 365 Business.
-  
-If you manage your own subscription, you can [contact sales](https://www.microsoft.com/microsoft-365/business) to purchase Microsoft 365 Business licenses. 
-  
-See [Add, change, or delete a subscription advisor partner](https://support.office.com/article/f86e8177-936e-491e-9024-44dea2b296ff) to find out how you can start working with a partner. 
-  
-If you are given a link to purchase your licences, you will walk through a wizard like the one below. Choose **Yes, add it to my account**. You can also pick the number of licences and the method of payment.
-  
-![On the Microsoft 365 Business direct buy link, choose to add to your current account, or sign up for a new account.](media/8bc54fd1-9cab-44d5-af91-c471e89aea46.png)
+Buy your licenses by following these steps in the [new admin center](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview).
+1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
+2. On the left nav choose **Billing** \> **Products & Services**. Look for your Office 365 subscription and select it to view the details. (pic)
+3. On the next pafe, select **Upgrade** (pic) to view a list of all the versions of Office you can choose from. Find Microsoft 365 Business and scroll down if you want to see all the Office apps and services that are included with thislicense. Then select **Upgrade** again to add Mcirosoft 365 Business to your cart.
+4. We'll automitcally add licenses for all your users to the cart. Adjust the quantity if you want to purchase mroe or less. Everyone in your orgnization continues with their current license until you change that.
+5. Select **Go to Checkout** where you'll see a summary of your purchase, including credit card details.
+6. Select **Place order** to complete your purchase.
+It takes a few minutes to set up your new service plans so you can assign them to your employees. You can check on the status by selecting **Check upgrade status**. To assign the new licenses, select **Go to setup** and follow the steps in [Assign Microsoft 365 licenses](#assign-microsoft-365-licenses).
   
 ## Assign Microsoft 365 licenses
 
-1. Once you have purchased new licenses, and this is the first time you did, the setup banner for Microsoft 365 Business will display on top of the admin center.
-    
-    > [!NOTE]
-    > The setup banner is an opportunity to add new users, a new domain, and migrate email for new users. If you don't plan to do any, you should still go through the wizard and choose default options to make it disappear from the admin home page. 
-  
-   ![Choose Start setup on the Microsoft 365 Business is ready to set up banner.](media/8d3b0d97-7cca-497f-9364-4b00ad670209.png)
-  
-    Choose **Start setup**.
-    
-2. On the **Personalize your sign-in and email** page, you can add a domain by choosing **Connect a domain you already own** if you want to use this opportunity to add another domain to your subscription. 
-    
-    If you have already set up a domain, the second field will indicate that and will say **Continue using** \<  _your domain name_\> **for email and signing in**. If you haven't set up a domain with you subscription, it will say **Continue using** \<  _your company name.onmicrosoft.com_\> **for email and signing in**.
-    
-    Choose **Next**.
-    
-    ![On the Personalize your sign-in and email page, choose to either add a domain, or use the one you have been using.](media/c3f5cfb2-1189-4d2f-803b-c9feb008a7a3.png)
-  
-3. On the **Add new users** page, you can add new users, if you have new employees that you want to assign the Microsoft 365 Business licenses to. 
-    
-    If you don't have new employees to add and want to assign licences to existing users, choose **Next**.
-    
-4. On the ** Migrate email messages ** page you can choose to migrate email for any of the new users you added in step 3. You can skip this step also. Choose **Next**.
-    
-5. On the last page, choose **go to the admin center**, and continue setup there.
-    
-6. In the admin center, go to **Users** \> **Active users**.
-    
-7. Select the user to whom you want to assign the **Microsoft 365 Business** license to, and then choose **Edit** next to **Product Licenses**.
-    
-    ![In the user card, choose Edit next to Product licenses.](media/be0fe2d8-7ff8-447c-88f6-d212ed78451c.png)
-  
-8. In **Product licenses** slide **Microsoft 365 Business** to **On** \> **Save**, and then **Close**.
-    
-Once you have purchased the initial license for Microsoft 365 Business, you can now also add more in **Billing** \> **Purchase services**. On the **Purchase services** page you can click on the ellipses on the **Microsoft 365 Business** card, and choose **Change license quantity** to purchase more. 
-  
+Once you have purchased new licenses, select **Assign to Users** to open the **Active users** page. The page shows the current license assigned to each user. Follow the procedure for the change you want to make. Change licenses either for:
+- [All users](#assign-licenses-to-all-users)
+- [A specific group](#assign-licenses-to-a-specific-group) (if you have those set up).
+- [Individual users](#assign-licenses-to-individual-users)
+
+### Assign licenses to all users
+1. On the **Active users** page, select the checkmark to the left of **Display name** to select all users.
+2. Select **Manage product licenses** to open the side pane. Then select **Replace existing license assignments**.
+3. Select **Next** to view the **Replace existing products** page. Next to Microsoft 365 Business, switch the toggle to **Yes** to assign licenses to all users. All the features included with Microsoft 365 are automatically switched on too. We recommend leaving all features switched on unless there are specific options that you don't want to make available to everyone - for example - you might not want StaffHub or Yammer enterprise. If you switch something off now, you can add it back later. 
+4. Select **Replace** and then **Close** to complete this change. 
+
+### Assign licenses to a specific group
+On the **Active users** page, select **Assign to group** and then follow the instructions for [Assign licenses to all users](#assign-licenses-to-all-users)
+
+## Assign licenses to individual users
+On the **Active users** page,select an individual, to open their details in the side pane. Select **Licenses and Apps** and then select Microsoft 365 Business to switch the individual license.
+
 ## Protect user devices and files
 
 After you have assigned licenses to Microsoft 365 Business, you can start protecting the users' devices and files.
