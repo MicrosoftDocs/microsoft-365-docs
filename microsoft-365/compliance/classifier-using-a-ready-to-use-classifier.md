@@ -40,9 +40,13 @@ Microsoft has trained and tested number of classifiers using very large sample d
 2. Create a dedicated SharePoint Online folder, wait at least an hour for the folder to be added to the search index. Make note of the folder URL.
 
 
-3. Sign in to Microsoft 365 compliance center with compliance admin or security admin role access and open **Microsoft 365 compliance center** or Microsoft 365 security center > **Information governance** > **Labels** tab.
+3. Sign in to Microsoft 365 compliance center with compliance admin or security admin role access and open **Microsoft 365 compliance center** or **Microsoft 365 security center** > **Records management (preview)** > **Label policies** tab.
 
-4. Choose `Create a label` and create a label for use just with this test. When you do this, leave `Retention` set to off. You don't want to turn on any retention or other actions. In this case, you'll be using using the retention label simply as a text label, without enforcing any actions. For example, you can create a retention label named "SourceCode classifier test" with no actions, and then auto-apply that retention label to content with that has Source code classifier as a condition. To learn more about creating retention labels, see [Overview of retention labels](\labels.md).
+4. Choose `Auto-apply a label`.
+
+5. Choose `Choose a lable to auto-apply`.
+
+6. Choose `Create new labels` and create a label for use just with this test. When you do this, leave `Retention` set to off. You don't want to turn on any retention or other actions. In this case, you'll be using using the retention label simply as a text label, without enforcing any actions. For example, you can create a retention label named "SourceCode classifier test" with no actions, and then auto-apply that retention label to content with that has Source code classifier as a condition. To learn more about creating retention labels, see [Overview of retention labels](\labels.md).
   
 5. Choose `Auto-apply a label` and then `Choose a label to auto-apply`. To learn more about using condition based auto-apply a label see, [auto-apply retention label policy based on a condition](../labels#applying-a-retention-label-automatically-based-on-conditions).
 
@@ -66,7 +70,7 @@ Microsoft has trained and tested number of classifiers using very large sample d
 
 14. Place the test items into the dedicated SharePoint Online folder.
 
-15. Choose the label name from the `Information governance` page `Labels` tab to open up the details and choose `Explore items`.
+15. Choose the label name from the `Records management (preview)` page `Label policies` tab to open up the details and choose `Explore items`.
 
 ![explore items detail](media\classifier-test-label-explore-items.png)
 
