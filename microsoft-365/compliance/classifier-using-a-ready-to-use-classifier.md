@@ -48,35 +48,33 @@ Microsoft has trained and tested number of classifiers using very large sample d
 
 6. Choose `Create new labels` and create a label for use just with this test. When you do this, leave `Retention` set to off. You don't want to turn on any retention or other actions. In this case, you'll be using using the retention label simply as a text label, without enforcing any actions. For example, you can create a retention label named "SourceCode classifier test" with no actions, and then auto-apply that retention label to content with that has Source code classifier as a condition. To learn more about creating retention labels, see [Overview of retention labels](\labels.md).
   
-5. Choose `Auto-apply a label` and then `Choose a label to auto-apply`. To learn more about using condition based auto-apply a label see, [auto-apply retention label policy based on a condition](../labels#applying-a-retention-label-automatically-based-on-conditions).
+7. Choose `Auto-apply a label` and then `Choose a label to auto-apply`. To learn more about using condition based auto-apply a label see, [auto-apply retention label policy based on a condition](../labels#applying-a-retention-label-automatically-based-on-conditions).
 
-6. Choose your test label from the list and choose `Next`.
+8. Choose your test label from the list and choose `Next`.
 
-7. Choose `Apply label to content that matches a trainable classifier`.
+9. Choose `Apply label to content that matches a trainable classifier`.
 
 ![selecting classifier as a condition](media\classifier-pre-trained-apply-label-match-trainable-classifier.png).
 
-8. Choose your classifier from the list, in this case `Source Code`
+10. Choose your classifier from the list, in this case `Source Code`
 
-9. Name the policy, for example "Source code ready to use classifier test".
+11. Name the policy, for example "Source code ready to use classifier test".
 
-10. Choose `Let me choose specific locations`.
+12. Choose `Let me choose specific locations`.
 
-11. Turn off all locations except `SharePoint sites` and choose `Choose sites`.
+13. Turn off all locations except `SharePoint sites` and choose `Choose sites`.
 
-12. Enter the URL for the site from step 2.
+14. Enter the URL for the site from step 2.
 
-13. Finish the wizard and choose `Auto-apply`
+15. Finish the wizard and choose `Auto-apply`
 
-14. Place the test items into the dedicated SharePoint Online folder.
+16. Place the test items into the dedicated SharePoint Online folder.
 
-15. Choose the label name from the `Records management (preview)` page `Label policies` tab to open up the details and choose `Explore items`.
+17. Choose the label name from the `Records management (preview)` page `Label policies` tab to open up the details and choose `Explore items`.
 
-![explore items detail](media\classifier-test-label-explore-items.png)
+18. Review the items that were labeled to see if the classifier included and excluded the test content as you expected.
 
-16. Review the items that were labeled to see if the classifier included and excluded the test content as you expected.
-
-17. Delete the content, and the label policy if you are done with your testing.
+19. Delete the content, and the label policy if you are done with your testing.
 
 See also:
 
