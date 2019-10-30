@@ -366,7 +366,7 @@ First, follow the steps in Phase 2 and Phase 3 of the [Office 365 dev/test envir
 
 Next, add the Microsoft 365 E5 trial subscription and assign a Microsoft 365 license to your global administrator account.
 
-1. With a private instance of an Internet browser, sign in to the Microsoft 365 admin center at [http://admin.microsoft.com](http://admin.microsoft.com) with your global administrator account credentials.
+1. With a private instance of an Internet browser, sign in to the Microsoft 365 admin center at [https://admin.microsoft.com](https://admin.microsoft.com) with your global administrator account credentials.
     
 2. On the **Microsoft 365 admin center** page, in the left navigation, click **Billing > Purchase services**.
     
