@@ -1,5 +1,5 @@
 ---
-title: "Communication compliance feature reference"
+title: "Communication compliance feature reference (preview)"
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -18,7 +18,7 @@ search.appverid:
 description: "Feature reference for Communication compliance in Microsoft 365. Learn details and specifications for each of the feature components."
 ---
 
-# Communication compliance feature reference
+# Communication compliance feature reference (preview)
 
 ## Policies
 
