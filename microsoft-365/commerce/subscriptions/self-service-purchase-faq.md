@@ -43,7 +43,7 @@ At this time, the Power Platform family of products are the only services being 
 
 ### How does a customer make a self-service purchase?
 
-Customers will be able to make a self-service purchase online from the Microsoft Power BI, PowerApps, and Flow websites. Customers will first be asked to enter an email address to ensure they’re a user in an existing Azure Active Directory (AAD) tenant, and then they’ll be directed to log in by using their AAD credentials. After logging in, the customer will be asked to select how many subscriptions they want to purchase and provide credit card payment. When the purchase is complete, they’ll be able to start using their subscription. The purchaser will also be able to access a limited view of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> where they can enable other people in their organization to use the product.
+Customers will be able to make a self-service purchase online from the Microsoft Power BI, PowerApps, and Flow websites. Customers will first be asked to enter an email address to ensure they’re a user in an existing Azure Active Directory (AD) tenant, and then they’ll be directed to log in by using their Azure AD credentials. After logging in, the customer will be asked to select how many subscriptions they want to purchase and provide credit card payment. When the purchase is complete, they’ll be able to start using their subscription. The purchaser will also be able to access a limited view of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> where they can enable other people in their organization to use the product.
 
 ### What are the payment options for self-service purchases?
 
@@ -51,7 +51,7 @@ Currently, credit card is the only available payment method. Payment through inv
 
 ### Who can buy through self-service purchase?
 
-Any user with a non-guest user account in a managed AAD tenant can buy. This capability will not be available to tenants that are government, nonprofit, or education, at this time. Users in organizations or markets who are not eligible for self-service purchase will see a message asking them to contact their IT admin as they do today.
+Any user with a non-guest user account in a managed Azure AD tenant can buy. This capability will not be available to tenants that are government, nonprofit, or education, at this time. Users in organizations or markets who are not eligible for self-service purchase will see a message asking them to contact their IT admin as they do today.
 
 ### Can guest users buy through self-service purchase?
 
@@ -59,11 +59,11 @@ No, guest users cannot complete a self-service purchase in a tenant in which the
 
 ### Can users synced from an on-premises Active Directory buy through self-service purchase?
 
-If a user has an active user account in an eligible AAD tenant, they can complete a self-service purchase.
+If a user has an active user account in an eligible Azure AD tenant, they can complete a self-service purchase.
 
 ### Who can self-service purchasers assign licenses to?
 
-Self-service purchasers will only be able to assign licenses to users in the same AAD tenant. The purchaser will be able to access a limited view of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> to assign licenses. They’ll only have visibility and can assign licenses to those products that they’ve bought through self-service purchase, and they’ll only be able to assign those licenses to users in the same AAD tenant.
+Self-service purchasers will only be able to assign licenses to users in the same Azure AD tenant. The purchaser will be able to access a limited view of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> to assign licenses. They’ll only have visibility and can assign licenses to those products that they’ve bought through self-service purchase, and they’ll only be able to assign those licenses to users in the same Azure AD tenant.
 
 ### Where does the self-service purchaser see and manage their purchases?
 
@@ -89,11 +89,11 @@ The person who buys the subscription through self-service purchase will be bille
 
 Admins can view all self-service purchases made in their organization in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>. They can see the product, purchaser name, subscriptions purchased, expiry date, order history, purchase price, and assigned users for each self-service purchase.
 
-While all AAD users in eligible organizations are allowed to make self-service purchases and will have full control over their subscriptions, admins have the same data management and access policies over products bought through self-service purchase or centrally.
+While all Azure AD users in eligible organizations are allowed to make self-service purchases and will have full control over their subscriptions, admins have the same data management and access policies over products bought through self-service purchase or centrally.
 
 ### Why are self-service purchases not subject to admin approval?
 
-We’re being responsive to our customers who have requested this capability while allowing admins to maintain control over the services and respecting data governance and compliance. To learn more about managing Azure AD service principals, see [Set-MsolServicePrincipal](https://docs.microsoft.com/en-us/powershell/module/msonline/set-msolserviceprincipal?view=azureadps-1.0). Additionally, admins have full visibility as to who has made a self-service purchase and which users on their tenants have been assigned a license from a self-service purchase. Organizations can then rely on their own internal policies, procedures and communications to ensure that those individuals making self-service purchases are complying with company policies. 
+We’re being responsive to our customers who have requested this capability while allowing admins to maintain control over the services and respecting data governance and compliance. To learn more about managing Azure AD service principals, see [Set-MsolServicePrincipal](https://docs.microsoft.com/powershell/module/msonline/set-msolserviceprincipal?view=azureadps-1.0). Additionally, admins have full visibility as to who has made a self-service purchase and which users on their tenants have been assigned a license from a self-service purchase. Organizations can then rely on their own internal policies, procedures and communications to ensure that those individuals making self-service purchases are complying with company policies. 
 
 ### How is Microsoft respecting data governance and compliance by enabling self-service purchase?
 
