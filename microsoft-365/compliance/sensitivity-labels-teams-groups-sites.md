@@ -74,13 +74,17 @@ Select a sensitivity label when creating a site
 
 You can use sensitivity labels with Microsoft Teams to:
 
-- Regulate privacy settings when teams are created. For example, if you create a "Confidential" label that's associated with the Privacy setting "Private," when users create a new team and select the "Confidential" label, the team must be private. 
+- Control privacy settings when teams are created. For example, if you create a "Confidential" label that's associated with the Privacy setting "Private," when users create a new team and select the "Confidential" label, the team must be private. 
 
 ![The privacy setting when creating a new team](media/privacy-setting-new-team.png)
 
+- Control guest access. You can specify whether people outside the organization can access the team.
+
+![The guest access setting when creating a sensitivity label](media/sensitivity-label-guest-access.png)
+
 After the team is created, the sensitivity label in the upper-right corner of the channel.
 
-![The privacy setting when creating a new team](media/privacy-setting-teams.png)
+![The sensitivity label appears on the team](media/privacy-setting-teams.png)
 
 The same label is automatically applied to the Office 365 group and the connected SharePoint team site.
 
