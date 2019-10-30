@@ -194,7 +194,7 @@ The other link at the top of the assessments list, **Microsoft actions in Compli
 
 ### Filtering your assessments view
 
-To filter you view of assessments: 
+To filter you view of assessments:
 
 1. Select **Filter** at the top left corner of your assessments list.
 2. On the flyout **Filters** pane, place a check next to the desired criteria (standards and regulations, Compliance Manager group).
@@ -205,7 +205,3 @@ You can also modify your view to see assessments by group, product, or regulatio
 ### Managing improvement actions within an assessment
 
 From the assessment list, under the **Customer-managed actions** column, select the linked text on the row of the intended assessment. This takes you a filtered view of the improvement actions page showing the actions within that assessment.
-
-## Reporting
-
-??? anything we can/should say here? Should we also link to reporting in compliance center; do those tools pull data from Compliance Score? https://docs.microsoft.com/en-us/microsoft-365/compliance/reports-in-security-and-compliance
