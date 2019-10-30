@@ -21,14 +21,19 @@ description: "Understand how Microsoft Compliance Score calculates a personalize
 
 ## Overview
 
-The Compliance Score dashboard displays a score that measures your progress in completing improvement actions within controls. This overall compliance score is the accumulation of points received for each completed action in each assessment; your points accrue regardless of control completion. 
+The Compliance Score dashboard displays a score that measures your progress in completing improvement actions within controls. This overall compliance score is the accumulation of points received for each completed action in each assessment; your points accrue regardless of control completion.
 
-Your score is calculated based on the completion of Microsoft-managed actions and customer-managed actions, as well as customer actions that are monitored by Secure Score. Compliance Score can help prioritize which assessments and controls to focus on to improve your overall compliance posture.
+Your score is calculated based on the completion of Microsoft-managed actions and customer-managed actions. Each action has a different impact on your score, depending on the potential risks involved, so the score can help prioritize which action to focus on to improve your overall compliance posture.
 
 The displayed Compliance Score values for the control are applied *in their entirety* to your total score on a pass/fail basis. Either the control is implemented and passes the subsequent assessment test or it does not. Assigned points are added to Compliance Score when the control has:
 
 - **Implementation Status** equals **Implemented** or **Alternative Implementation** and,
 - **Test Result** equals **Passed**.
+
+
+## Initial score based on Microsoft 365 data protection baseline
+  
+Compliance Score gives you an out-of-the-box score based on the Microsoft 365 data protection baseline, which is a set of controls that includes key regulations and standards for data protection and general data governance. This baseline draws elements primarily from NIST CSF (National Institute of Standards and Technology Cybersecurity Framework) and ISO (International Organization for Standardization), as well as from FedRAMP (Federal Risk and Authorization Management Program) and GDPR (General Data Protection Regulation of the European Union).
 
 ## How Compliance Score continuously assesses controls
 
@@ -37,10 +42,6 @@ Compliance Score automatically scans through your Microsoft 365 environment and 
 Compliance Score updates your control status every 24 hours. Once you follow a recommendation to implement a control, you will see the control status updated the next day.
 
 During public preview, continuous assessment is available to a portion of the technical controls, but not all.
-
-## Microsoft 365 data protection baseline
-  
-Compliance Score gives you an out-of-the-box score based on the Microsoft 365 data protection baseline, which is a set of controls that includes key regulations and standards for data protection and general data governance. This baseline draws elements primarily from NIST CSF (National Institute of Standards and Technology Cybersecurity Framework) and ISO (International Organization for Standardization), as well as from FedRAMP (Federal Risk and Authorization Management Program) and GDPR (General Data Protection Regulation of the European Union).
   
 ## Control types and points
 
