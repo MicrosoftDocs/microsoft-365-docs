@@ -234,14 +234,14 @@ After a retention policy is assigned to a team, chat and channel messages can fo
 
 ![Diagram of retention flow for Teams chat and channel messages](media/TeamsRetentionLifecycle.png)
 
-1. **If a chat or channel message is edited or deleted** by the user during the retention period, the message is moved (or copied, in the case of edit) to the SubstrateHolds folder (which is a hidden folder in every user or group mailbox) and is stored in this folder until the retention period expires. Messages are permanently deleted on the day the retention period expires.
+1. **If a chat or channel message is modified or deleted** by the user during the retention period, the message is moved (or copied, in the case of edit) to the SubstrateHolds folder (which is a hidden folder in every user or group mailbox) and is stored in this folder until the retention period expires. Messages are permanently deleted on the day the retention period expires.
 
 2. **If a chat or channel message isn't deleted** during the retention period, the message is moved to the Substrateholds folder within one day after the retention period expires. The message is permanently deleted one day after it was moved to the SubstrateHolds folder. 
 
 > [!NOTE]
 > Messages in the SubstrateHolds folder are searchable by eDiscovery tools. After a message is permanently deleted, it won't be returned in an eDiscovery search.
 
-We're still working on retention in Teams, and additional features are coming. In the meantime, here are a few limitations to be aware of:
+We're continuously working on optimizing retention functionality in Teams, and we plan to release new features in the coming months. In the meantime, here are a few limitations to be aware of:
   
 - **Teams require a separate retention policy**. When you create a retention policy and toggle on the Teams location, all other locations toggle off. A retention policy that includes Teams can include only Teams and no other locations. 
     
@@ -251,7 +251,7 @@ We're still working on retention in Teams, and additional features are coming. I
 
 - **Teams content in private channels isn't supported**. At this time, retention policies created for Teams don't apply to private channel messages. Only messages in standards channels is subject to a retention policy created for Teams. Support for retention policies for private channels is coming soon. 
     
-- **It may take up to three days to clean up expired Teams messages**. A retention policy applied to Teams will delete chat and channel messages when the retention period expires. However, it may take up to three days to clean up these messages and permanently delete them. Also, chat and channel messages will be searchable with eDiscovery tools during the time between after the retention period expires and when messages are permanently deleted.
+- **Teams may take up to three days to clean up expired Teams messages**. A retention policy applied to Teams will delete chat and channel messages when the retention period expires. However, it may take up to three days to clean up these messages and permanently delete them. Also, chat and channel messages will be searchable with eDiscovery tools during the time after the retention period expires and when messages are permanently deleted.
 
    > [!NOTE]
    > It used to be true that a retention policy couldn't delete Teams content that's less than 30 days old, but we've removed this limitation. Now the retention period for Teams content can be any number of days you choose and as short as one day. If you do have a retention period of one day, it will take up to three days after the retention period expires before messages are permanently deleted.
