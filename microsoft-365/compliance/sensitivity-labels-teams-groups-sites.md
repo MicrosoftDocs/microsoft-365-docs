@@ -59,7 +59,7 @@ With this preview, sensitivity labels (also called unified Microsoft Information
   }
 ```
 
-If you've been using the classic Azure AD classification list ($setting["ClassificationList"]), Office 365 will no longer use the old classifications for new groups and SharePoint sites when you enable this preview. Old groups and sites will still display the old classification tags unless you convert them. [Learn how](#what-happens-to-classic-azure-ad-classifications).  
+If you've been using the Azure AD classification list ($setting["ClassificationList"]), Office 365 will no longer use the old classifications for new groups and SharePoint sites when you enable this preview. Existing groups and sites will still display the old classification tags unless you convert them. [Learn how](#what-happens-to-classic-azure-ad-classifications).  
 
 ## Set site and group settings when creating sensitivity labels
 
@@ -88,8 +88,6 @@ You can use sensitivity labels with Microsoft Teams to:
 ![The privacy setting when creating a new team](media/privacy-setting-new-team.png)
 
 - Control guest access to teams. You can specify whether people outside the organization can access teams that have the label applied.
-
-![The guest access setting when creating a sensitivity label](media/sensitivity-label-guest-access.png)
 
 After the team is created, the sensitivity label in the upper-right corner of the channel.
 
@@ -130,8 +128,9 @@ The same labels appear when users create groups from Yammer, Planner, and other 
 ## Change label settings related to Office 365 Groups
 After you create and publish a sensitivity label, and users apply it to several groups, we recommend not changing its setting. If you need to change it, and all existing groups must enforce the new setting, you'll need to use an Azure AD PowerShell script to manually apply updates to groups. 
 
-Support for the new sensitivity labels for groups 
-For this preview, the following services support the new sensitivity labels for groups:
+## Support for the new sensitivity labels 
+ 
+The following apps and services support the sensitivity labels in this preview:
 
 - SharePoint
 - Outlook Web App
