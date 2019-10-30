@@ -43,10 +43,13 @@ For this preview, use the OneDrive sync app version 19.002.0121.0008 or later on
 
 ## Limitations
 
-> [!WARNING]
-> When you enable this preview, users who apply a label to a file by using the Office desktop or mobile apps might be unable to save other changes they make to the file. When this happens, users will be asked to Save As or Discard local changes. Use the web versions of the Office apps to apply labels, or close a file after you apply a label and then reopen the file to make other changes in order to avoid losing work.
+- When you enable this preview, users who apply a label to a file by using the Office desktop or mobile apps might be unable to save other changes they make to the file. When this happens, the app prompts users to Save As or Discard local changes. To avoid losing work, do one of the following:
 
-- SharePoint doesn't automatically apply the new labels to your existing files in SharePoint that you've already encrypted using Azure Information Protection labels. Instead, to get the features to work after you convert to sensitivity labels and enable this preview, download the files and upload them.
+  - Use the web versions of the Office apps to apply labels.
+
+  - Close a file after you apply a label and then reopen the file to make other changes.
+
+- SharePoint doesn't automatically apply the new labels to existing files that you've already encrypted using Azure Information Protection labels. Instead, to get the features to work after you convert to sensitivity labels and enable this preview, download the files and upload them to SharePoint.
 
 - SharePoint can't process labels with custom permissions and labels with expiration dates.
 
@@ -83,7 +86,7 @@ To prepare the SharePoint Online Management Shell for the preview:
 
 1. Using a work or school account that has global administrator or SharePoint admin privileges in Office 365, connect to SharePoint. To learn how, see [Getting started with SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
 
-3. Run the following command:
+2. Run the following command:
 
     ```PowerShell
     Set-SPOTenant -EnableSensitivityLabelIntegration $true  
