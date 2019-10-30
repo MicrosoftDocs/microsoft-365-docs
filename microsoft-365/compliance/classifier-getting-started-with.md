@@ -20,11 +20,18 @@ Classifying content and then labeling it so it can be protected and handled prop
 
 ## Manually
 
-This requires human judgement and action. An admin may either use the pre-existing labels and sensitive information types or create their own and the publish them. Users and admins apply them to content as they encounter it. You can then protect the content and manage its disposition.
+This requires human judgement and action. An admin may either use the pre-existing labels and sensitive information types or create their own and then publish them. Users and admins apply them to content as they encounter it. You can then protect the content and manage its disposition.
 
 ## Automated pattern matching
 
-This category of classification mechanisms includes, finding content by keywords, or metadata values (keyword query language), using previously identified patterns of sensitive information like social security, credit card or bank account numbers [(sensitive information types)](what-the-sensitive-information-types-look-for.md). Recognizing an item because it is a variation on a template [(document finger printing)](document-fingerprinting.md) or using the presence of exact strings [(exact data match)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md). Sensitivity and retention Labels can then be automatically applied which then makes the content available for use in [data loss prevention (DLP)](data-loss-prevention-policies.md) and [retention policies](retention-policies.md).
+This category of classification mechanisms includes finding content by:
+
+- keywords or metadata values (keyword query language)
+- using previously identified patterns of sensitive information like social security, credit card or bank account numbers [(sensitive information types)](what-the-sensitive-information-types-look-for.md)
+- Recognizing an item because it is a variation on a template [(document finger printing)](document-fingerprinting.md)
+- using the presence of exact strings [(exact data match)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md).
+
+Sensitivity and retention Labels can then be automatically applied that make the content available for use in [data loss prevention (DLP)](data-loss-prevention-policies.md) and [retention policies](retention-policies.md).
 
 ## Trainable classifiers
 
@@ -35,27 +42,30 @@ This classification method is particularly well suited to content that, by it's 
 > [!IMPORTANT]
 > Trainable classifiers only work with items that are in english.
 
-## Types of trainable classifiers
+## Types of classifiers
 
-Getting a trainable classifier to a publishable state requires a time investment to train it. To help you get started using classifiers, Microsoft 365 comes with a few ready to use classifiers.
+There are ready to use classifiers and trainable classifiers. Getting a trainable classifier to a publishable state requires a time investment to train it. To help you get started using classifiers, Microsoft 365 comes with a few ready to use classifiers.
 
 > [!NOTE]
-> Before using a ready to use classifiers in your classification and labeling workflow, you should test it against a sample of your organizations content that you feel fits the category to verify that its classification predictions meet your expectations.
+> Before using any ready to use classifiers in your classification and labeling workflow, you should test it against a sample of your organizations content that you feel fits the category to verify that its classification predictions meet your expectations.
 
 ### Understanding ready to use classifiers
 
 Microsoft 365 comes with six ready to use classifiers:
 
-- **Offensive Language**: detects items which contain sentiment associated with profanities, slurs, and disguised expressions
+- **Offensive Language**: detects text items which contain profanities, slurs, taunts, and disguised expressions (which are expressions that have the same meaning as a more offensive term).
 - **Resumes**: detects items which are textual accounts of an applicant's personal, educational, professional qualifications, work experience and other personally identifying information
 - **SourceCode**: detects items which contain a set of instructions and statements written in widely used computer programming languages.
-- **Harassment**: detects items with a specific category of offensive language related to offensive conduct targeting one or multiple individuals regarding race, color, religion, national origin, gender, sexual orientation, age, disability and genetic information.
-- **Profanity**: detects items with a specific category of offensive language that contains swear words or vulgar language
-- **Threat**: detects items with a specific category of offensive language related to threat to commit violence or do physical harm/damage to a person/property
+- **Harassment**: detects a specific category of offensive language text items related to offensive conduct targeting one or multiple individuals based on the following traits: race, ethnicity, religion, national origin, gender, sexual orientation, age, disability.
+- **Profanity**: detects a specific category of offensive language text items which contain expressions that embarrass most people
+- **Threat**: detects a specific category of offensive language text items related to threats to commit violence or do physical harm or damage to a person or property
 
 These appear in the **Microsoft 365 compliance center** > **Data classification (preview)** > **Trainable classifiers** view with the status of `Ready to use`.
 
 ![PLACE HOLDER SCREEN SHOT classifiers-pre-trained-classifiers-placeholder](media/classifiers-pre-trained-classifiers-placeholder.png)
+
+> [!IMPORTANT]
+> Please note that the offensive language, harassment, profanity, and threat classifiers only work with searchable text are not exhaustive or complete.  Further, language and cultural standards continually change, and in light of these realities, Microsoft reserves the right to update these classifiers in its discretion. While the classifiers may assist your organization in monitoring offensive and other language used, the classifiers do not address consequences of such language and are not intended to provide your organization’s sole means of monitoring or responding to the use of such language. Your organization, and not Microsoft or its subsidiaries, remains responsible for all decisions related to monitoring, enforcement, blocking, removal and retention of any content identified by a pre-trained classifier.
 
 #### Process flow for using ready to use classifiers
 
@@ -66,6 +76,9 @@ Ready to use classifiers don't need to be trained, but you do need to confirm th
 ### Understanding trainable classifiers
 
 When the ready to use classifiers don't meet your needs, you can create and train your own classifiers. There is significantly more work involved with creating your own, but they'll be much better tailored to your organizations needs. For more detail on how to use a pre-trained classifier, see [Using a pre-trained classifier](classifier-using-a-pre-trained-classifier.md)
+
+> [!IMPORTANT]
+> Only the user who creates a trainable classifier can train and review predictions made by that classifier.
 
 #### Process flow for creating trainable classifiers
 

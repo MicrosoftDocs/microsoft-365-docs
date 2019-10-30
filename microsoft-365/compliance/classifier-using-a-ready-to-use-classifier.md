@@ -18,21 +18,21 @@ description: "Microsoft 365 comes with a number of ready to use machine learning
 
 Microsoft has trained and tested number of classifiers using very large sample data sets can help to identify certain categories of content. See [Getting started with trainable classifiers (preview)](classifier-getting-started-with.md). These classifiers show up in the `Ready to use` group by default.
 
-- **Offensive Language**: detects items which contain common profanities, slurs, taunts, and disguised expressions
+- **Offensive Language**: detects text items which contain profanities, slurs, taunts, and disguised expressions (which are expressions that have the same meaning as a more offensive term).
 - **Resumes**: detects items which are textual accounts of an applicant's personal, educational, professional qualifications, work experience and other personally identifying information
-- **SourceCode**: detects items which contain a set of instructions and statements written in widely used computer programming languages
-- **Targeted harassment**: detects items that contain a specific category of offensive language text directed at one or multiple individuals based on the following traits: race, ethnicity, religion, national origin, gender, sexual orientation, age, or disability
-- **Profanity**: detects items that contain a specific category of offensive language text which contains expressions that commonly embarrass people
-- **Threat**: detects items with a specific category of offensive language text containing threats to commit violence or do physical harm or damage to a person orproperty.
+- **SourceCode**: detects items which contain a set of instructions and statements written in widely used computer programming languages.
+- **Harassment**: detects a specific category of offensive language text items related to offensive conduct targeting one or multiple individuals based on the following traits: race, ethnicity, religion, national origin, gender, sexual orientation, age, disability.
+- **Profanity**: detects a specific category of offensive language text items which contain expressions that embarrass most people
+- **Threat**: detects a specific category of offensive language text items related to threats to commit violence or do physical harm or damage to a person or property
 
 > [!NOTE]
 > Before using ready to use classifiers in your classification and labeling workflow, you should test it against a sample of your organization's content that you feel fits the category to verify that its classification predictions meet your expectations.
 > [!IMPORTANT]
-> Please note that the offensive language, targeted harassment, profanity, and threat classifiers are not exhaustive or complete.  Further, language and cultural standards continually change, and in light of these realities, Microsoft reserves the right to update these classifiers in its discretion. While the classifiers may assist your organization in monitoring offensive and other language used, the classifier does not address consequences of such language and is not intended to provide your organization’s sole means of monitoring or responding to the use of such language. Your organization, and not Microsoft or its subsidiaries, remains responsible for all decisions related to monitoring, enforcement, blocking, removal and retention of any content identified by a pre-trained classifier language.
+> Please note that the offensive language, harassment, profanity, and threat classifiers only work with searchable text are not exhaustive or complete.  Further, language and cultural standards continually change, and in light of these realities, Microsoft reserves the right to update these classifiers in its discretion. While the classifiers may assist your organization in monitoring offensive and other language used, the classifiers do not address consequences of such language and are not intended to provide your organization’s sole means of monitoring or responding to the use of such language. Your organization, and not Microsoft or its subsidiaries, remains responsible for all decisions related to monitoring, enforcement, blocking, removal and retention of any content identified by a pre-trained classifier.
 
 ## How to prepare for and use a ready to use classifier
 
-1. Collect at least 200 disposable test content items consisting of item you feel belong in the category of the ready to use classifier (positive matches) and ones that should not be included (negative matches) in the category you are testing.
+1. Collect disposable test content items that you feel belong in the category of the ready to use classifier (positive matches) and ones that should not be included (negative matches) in the category you are testing.
 
 > [!IMPORTANT]
 > The sample items must not be encrypted and they must be in English.
