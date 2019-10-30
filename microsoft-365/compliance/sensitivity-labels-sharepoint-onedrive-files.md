@@ -24,13 +24,13 @@ Previously, when sensitivity labels that included encryption were applied to Off
 
 - When a file is downloaded from SharePoint or OneDrive, the sensitivity label travels with the file and the settings remain enforced.
 
-- By using the web versions of Word, Excel, and PowerPoint, users can apply sensitivity labels to Office files and open and edit files that have sensitivity labels applied (if the label's permission allow it).
+- By using the web versions of Word, Excel, and PowerPoint, users can apply sensitivity labels to Office files and open and edit files that have sensitivity labels applied (if the label's permission allow it). Auto labeling is also available when users edit documents in Word on the web. We're working on auto labeling for Excel and PowerPoint on the web.
 
 - Office 365 eDiscovery supports full-text search in files that have sensitivity labels applied. Data Loss Prevention (DLP) policies cover content in these files.
 
 - Three new audit events are available for monitoring sensitivity labels: FileSensitivityApplied, FileSensitivityLabelChanged, and FileSensitivityLabelRemoved.
 
-We're working on adding team site search, organization-wide search, and shared content search.  
+We're working on adding team site search, organization-wide search, and shared content search. We're also working auto labeling Office files stored in SharePoint and OneDrive.
 
 > [!NOTE]
 > You can also now apply sensitivity labels to Microsoft Teams, Office 365 groups, and SharePoint sites. [Learn more](sensitivity-labels-teams-groups-sites.md)
