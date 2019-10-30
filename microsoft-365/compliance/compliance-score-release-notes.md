@@ -18,7 +18,7 @@ description: "Release notes for the public preview of Microsoft Compliance Score
 
 The public preview of Microsoft Compliance Score provides you with early access to upcoming functionality and updates.
 
-Compliance Score is a new feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) that calculates a risk-based score to help understand your organization's state of compliance with key standards and regulations.
+Compliance Score is a new feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) that calculates a risk-based score, measuring your progress towards completing recommended actions that help reduce compliance risks.
 
 ## Compliance Score and Compliance Manager relationship
 
@@ -31,24 +31,14 @@ Keep these points in mind as you work with Compliance Score and Compliance Manag
     - Export assessments
     - Archive assessments
     - View archived assessments
- - **Creating templates for assessments**: users can only create, customize, and export templates—used for building assessments—in Compliance Manager ([view instructions](working-with-compliance-manager.md#templates)), not Compliance Score.
+ - **Creating templates for assessments**: users must go to Compliance Manager to create new templates and export existing templates. Existing templates cannot be customized. Read instructions for [managing templates in Compliance Manager](working-with-compliance-manager.md#templates).
  - **Setting permissions**: Compliance Score users who were not previously granted permissions in Compliance Manager must have their permissions set in the Microsoft 365 compliance center. Users whose roles were previously set in Compliance Manager can use that same level of access when working in Compliance Score.
-- **Transfer of data**: organizations with data residing in Compliance Manger will see that data resolve in Compliance Score. 
+- **Transfer of data**: organizations with data residing in Compliance Manger will see that data in Compliance Score, and vice-versa. 
 - **Signing in to Compliance Manager from Compliance Score**: if a user is signed in to Compliance Score and selects a link to go to Compliance Manager, the user will not have to sign in again. After clicking the link, a new tab opens in your browser featuring a dialogue box. In the top section with the header, “Already a Microsoft cloud services customer? Sign in to your account,” select the **Sign In** button to automatically sign in to Compliance Manager.
 
 ## Known issues in Compliance Score (Preview)
 
 The following sections cover known issues to be resolved in upcoming releases of Compliance Score.
-
-### Secure Score
-
-- Secure Score results are not available for some improvement actions in certain Microsoft 365 and Office 365 subscriptions. The Secure Score result is "Could not be detected" in these cases.
-
-- Sometimes Secure Score results are returned for corresponding policies and improvement actions not completed.
-
-- Compliance Score and Secure Score do not cover every feature in Office 365 or Microsoft Intune. The scores are meant to help you better understand your compliance posture so you can make more informed risk-based decisions.
-
-Learn more about [Secure Score](../security/mtp/microsoft-secure-score.md).
 
 ### Supported browsers
 

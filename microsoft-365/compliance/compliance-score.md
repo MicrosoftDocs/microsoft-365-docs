@@ -41,7 +41,10 @@ Compliance Score helps simplify compliance management by providing:
 
 Think of Compliance Score as a simplified version of Compliance Manager. While the two exist as distinct yet integrated tools, Compliance Score makes it easier to monitor your overall compliance posture and take steps to improve it.
 
+Compliance Score shares the same backend with Compliance Manager, so any data you may already have in Compliance Manager will show in Compliance Score.
+
 During public preview, some functionality remains solely in Compliance Manager, such as managing assessments and creating templates. We recommend beginning all of your compliance management activities in Compliance Score. When you come to functions handled by Compliance Manager, you will be guided to that tool. For that reason, some of this documentation directs you to Compliance Manager topics.
+
 
 Learn more about the relationship between Compliance Score and Compliance Manager in the [release notes](compliance-manager-release-notes.md).
 
@@ -106,7 +109,7 @@ The pre-configured templates for Compliance Score are:
 11. [California Consumer Privacy Act (CCPA)](https://go.microsoft.com/fwlink/?linkid=2108871)
 
 > [!NOTE]
-> During public preview, go to Compliance Manager to create and customize your templates.
+> During public preview, go to Compliance Manager to create templates.
 
 View detailed instructions for [creating and customizing templates in Compliance Manager](working-with-compliance-manager.md#templates).
 
