@@ -186,7 +186,11 @@ By default, you will see the Microsoft **Data Protection Baseline** assessment o
 
 ### Managing assessments
 
-During public preview, functionality for viewing, creating, exporting, and archiving assessments remains in the Compliance Manager tool. To manage your assessments, select **Manage Assessments in Compliance Manager** at the top of the assessments list.
+During public preview, functionality for viewing, creating, exporting, and archiving assessments remains in the Compliance Manager tool. 
+
+To manage your assessments, select **Manage Assessments in Compliance Manager** at the top of the assessments list.
+
+The other link at the top of the assessments list, **Microsoft actions in Compliance Manager**, takes you to the page in Compliance Manager showing Microsoft controls that contribute to your compliance score. While there is no action for you to take here, it provides a more detailed look into controls that impact your score.
 
 ### Filtering your assessments view
 
