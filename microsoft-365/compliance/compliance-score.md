@@ -92,7 +92,7 @@ View detailed instructions for [working with assessments in Compliance Manager](
 
 ### Templates
 
-Compliance Score provides pre-configured templates for assessments and allows you to create customized templates for customer-managed controls to suit your needs. You can create new templates by copying an existing template, or by importing controls information from an Excel file.
+Compliance Score provides pre-configured templates for assessments and allows you to create templates for customer-managed controls to suit your needs. You can create new templates by copying an existing template, or by importing controls information from an Excel file.
 
 The pre-configured templates for Compliance Score are:
 

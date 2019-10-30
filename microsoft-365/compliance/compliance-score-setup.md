@@ -54,7 +54,7 @@ The table below shows how each Microsoft 365 compliance center role maps to exis
 | **Assign users**| Global administrator | Portal admin | 
 
 > [!NOTE]
-> When you go from Compliance Score to Compliance Manager to complete a task (for example, to manage assessments), your browser will open a new tab and a dialog box appears. In the top section with the header, “Already a Microsoft cloud services customer? Sign in to your account,” simply select the **Sign In** button to enter Compliance Manager; you will not need to re-enter your credentials.
+> When you go from Compliance Score to Compliance Manager to complete a task (for example, to manage assessments), your browser will open a new tab and a dialog box appears. In the top section with the header, “Already a Microsoft cloud services customer? Sign in to your account,” select **Sign In** to access Compliance Manager; you will not need to re-enter your credentials.
 
 ### How to set permissions and roles in the Microsoft 365 compliance center
 
@@ -73,13 +73,13 @@ The Compliance Score dashboard is designed to provide you an at-a-glance view of
 
 ### Overall compliance score
 
-Your compliance score, featured prominently at the top, shows a percentage based on points achievable for completing improvement actions addressing key data protection standards and regulations. When you come to Compliance Score for the first time, your initial score is based on the built-in Microsoft 365 data protection baseline—a set of controls that includes common industry regulations and standards. Because Compliance Score scans your system to take inventory of your existing Microsoft 365 solutions, it gives an initial assessment of your compliance posture based on privacy and security settings currently enabled by your organization.
+Your compliance score, featured prominently at the top, shows a percentage based on points achievable for completing improvement actions addressing key data protection standards and regulations. When you come to Compliance Score for the first time, your initial score is based on the built-in Microsoft 365 data protection baseline—a set of controls that includes common industry regulations and standards. Because Compliance Score scans your system of your existing Microsoft 365 solutions, it gives an initial assessment of your compliance posture based on privacy and security settings currently enabled by your organization.
 
-As you create and customize templates for assessments, your score number becomes even more relevant and meaningful to your organization. Learn more about [how your score is calculated](compliance-score-methodology.md).
+As you add assessments that are relevant to your organization, your score becomes even more meaningful. Learn more about [how your score is calculated](compliance-score-methodology.md).
 
 ### Key improvement actions
 
-This section lists the top improvement actions you can take right now to make the largest positive impact on your overall compliance score. It lists status of actions that are not completed, completed, and not in scope.
+This section lists the top improvement actions you can take right now to make the largest positive impact on your overall compliance score. It lists actions that are not completed or failed with the assessment with high risks.
 
 ### Solutions that affect your score
 
@@ -89,16 +89,16 @@ This section shows which solutions contain actions that have the greatest opport
 
 This section gives you a more detailed view of your score in two different ways:
 
-- **Categories**: This view shows the percentage of your overall score within data protection categories, such as “protect information” or “manage devices.”
-- **Assessments**: This view shows the percentage of your progress in managing assessments for particular compliance and data protection standards, regulations, or laws, such as GDPR or NIST 800-53.
+- **Categories**: this view shows the percentage of your overall score within data protection categories, such as “protect information” or “manage devices.”
+- **Assessments**: this view shows the percentage of your progress in managing assessments for particular compliance and data protection standards, regulations, or laws, such as GDPR or NIST 800-53.
 
 ### Filtering your dashboard view
 
-You can filter your dashboard view to see only the items related to particular regulations and standards, solutions, type of action, groups, or data protection categories. Filtering your view in this way will also filter the score on your dashboard, showing how many points you’ve achieved out of total possible points based on your filter criteria. 
+You can filter your dashboard view to see only the items related to particular regulations and standards, solutions, type of action, groups, or data protection categories. Filtering your view in this way will also filter the score on your dashboard, showing how many points you’ve achieved out of total possible points based on your filter criteria.
 
 To apply filters:
 
-1. Select **Filter** on the upper-right side of the dashboard. 
+1. Select **Filter** on the upper-right side of the dashboard.
 2. Select your filter criteria from the flyout **Filters** pane, then select **Apply**.
 
 You will see your score adjusted in real-time, and you will only see improvement actions, solutions, and score breakdown information that correspond to your filter criteria. If you sign out of Compliance Score, your filtered view remains when you sign back in.

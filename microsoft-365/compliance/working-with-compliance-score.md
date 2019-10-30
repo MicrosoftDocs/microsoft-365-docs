@@ -30,7 +30,7 @@ If you have a long list of actions, it may be helpful to filter your view. To do
 
 The improvement actions page shows the following data points for each improvement action:
 
-- **Score impact**: the points by which your overall score will increase by completing the action
+- **Score impact**: the points by which your overall score will increase when completing the action
 - **Regulations**: the regulation or standard pertaining to the action
 - **Group**: the group to which you assigned the action
 - **Solutions**: the solution where you can go to perform the action
@@ -40,7 +40,7 @@ The improvement actions page shows the following data points for each improvemen
     - **None**: no status update recorded
     - **Not assessed**: testing has not started
     - **Not in scope**: is excluded from Compliance Score calculation and does not increase your score
-    - **Partially tested**: testing is not yet complete; related to an action’s [Secure Score synchronization](compliance-score-release-notes.md#known-issues-in-compliance-score-preview)
+    - **Partially tested**: testing is not yet complete
     - **Failed high risk**: testing of implementation has failed, and the risk of non-compliance with the applicable standard is high
     - **Passed**: implementation successfully tested
 - **Pointed achieved**: shows points achieved out of the maximum that could be earned
@@ -66,7 +66,7 @@ To begin implementation work on an improvement action, you can do the work yours
 - An IT implementer
 - Another employee with responsibility to perform the task 
 
-Once the proper person is identified, be sure they hold an adequate [role](compliance-score-setup.md#set-user-permissions-and-assign-roles) in Compliance Score (compliance administrator, compliance data administrator, security administrator, or global administrator) to perform the work, then take the following steps: 
+Once the proper person is identified, be sure they hold a sufficient [role](compliance-score-setup.md#set-user-permissions-and-assign-roles) in Compliance Score (compliance administrator, compliance data administrator, security administrator, or global administrator) to perform the work, then take the following steps: 
 
 1. From the improvement actions details page, select **Edit status** near the upper-left section of the screen. 
 
