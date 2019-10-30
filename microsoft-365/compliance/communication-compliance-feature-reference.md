@@ -256,7 +256,7 @@ To view Communication compliance policy activities, select the **Export review a
 |:-----|:-----|
 | **CreationDate** | When the activity was performed in a policy. |
 | **UserIds** | The user that performed the activity in a policy. |
-| **Operations** | ?? |
+| **Operations** | The operations performed on the policy. |
 | **AuditData** | This is the main data source field for all policy activities. All activities are recorded and separated by comma delimiters. |
 
 You can also view audit activities in the unified audit log or with the [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog) PowerShell cmdlet.
