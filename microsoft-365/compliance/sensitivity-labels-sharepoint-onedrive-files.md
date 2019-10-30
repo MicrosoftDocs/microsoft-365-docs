@@ -30,7 +30,7 @@ Previously, when sensitivity labels were applied to Office files stored in Share
 
 - Three new audit events are available for monitoring sensitivity labels: FileSensitivityApplied, FileSensitivityLabelChanged, and FileSensitivityLabelRemoved.
 
-Team site search, organization-wide search, and shared content search are coming soon. 
+We're working on adding team site search, organization-wide search, and shared content search.  
 
 You can also now apply sensitivity labels to Office 365 groups and SharePoint sites. [Learn more](sensitivity-labels-teams-groups-sites.md)
 
