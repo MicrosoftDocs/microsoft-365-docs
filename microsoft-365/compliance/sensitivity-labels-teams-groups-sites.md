@@ -17,7 +17,7 @@ description: "You can apply labels to teams, Office 365 groups, and SharePoint s
 
 # Use sensitivity labels with teams, groups, and sites (preview)
 
-When you create sensitivity labels in [Security and Compliance Center](https://protection.office.com/), you can now apply them to Microsoft Teams teams, Office 365 groups, and SharePoint sites. You can associate policies with the labels to enforce public/private settings and guest access. You can also associate sensitivity labels with specific users to ensure that the label is applied to the teams, groups, and sites they create. 
+When you create sensitivity labels in [Security and Compliance Center](https://protection.office.com/), you can now apply them to Microsoft Teams, Office 365 groups, and SharePoint sites. You can associate policies with the labels to enforce public/private settings and guest access. You can also associate sensitivity labels with specific users to ensure that the label is applied to the teams, groups, and sites they create. 
 
 > [!NOTE]
 > When a label is applied to a team or group, the label is automatically applied to the connected SharePoint team site and vice versa. 
@@ -55,9 +55,9 @@ With this preview, sensitivity labels (also called unified Microsoft Information
   }
 ```
 
-If you're using the classic Azure AD classification list ($setting["ClassificationList"]), after you enable this preview, Office 365 won't use the old classifications for new groups and SharePoint sites. Old groups and sites will still display the old classification tags unless you convert them. [Learn how]().  
+If you've been using the classic Azure AD classification list ($setting["ClassificationList"]), Office 365 will no longer use the old classifications for new groups and SharePoint sites when you enable this preview. Old groups and sites will still display the old classification tags unless you convert them. [Learn how]().  
 
-## Use the new Site and group settings when creating sensitivity labels
+## Set site and group settings when creating sensitivity labels
 
 After you enable this preview, you can specify the following settings when you create a new sensitivity label:
 
@@ -65,17 +65,24 @@ After you enable this preview, you can specify the following settings when you c
 - Guest access: You can control if guests can be added to a group. [Learn about managing guest access in Office 365 Groups](/office365/admin/create-groups/manage-guest-access-in-groups)
 - Unmanaged devices: This setting lets you block or limit access to SharePoint content from devices that aren't hybrid AD joined or compliant in Intune. [Learn about controlling access from unmanaged devices](/sharepoint/control-access-from-unmanaged-devices)
 
+![A sensitivity label when creating a team site from SharePoint](media/new-sensitivity-label-site-group.png)
 
-Publishing the sensitivity label
-The steps to publish labels can be found here  
+[Learn how to publish a sensitivity label](/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do) 
 Select a sensitivity label when creating a site  
 
-1. As an end user: Sign in and go to the SharePoint start page, and then select Create site. 
-As an admin: Go to the Active sites page in the new SharePoint admin center, and then select Create.  
-2. Click Create site.  
-3. Choose Team site or Communication site.  
+## Using sensitivity labels with teams
 
-4. In the Sensitivity box, choose a label. The admin has selected the default. If users want more info, they can also click the help icon to read details about the available labels and associated policies. 
+You can use sensitivity labels with Microsoft Teams to:
+
+- Regulate privacy settings when teams are created. For example, if you create a "Confidential" label that's associated with the Privacy setting "Private," when users create a new team and select the "Confidential" label, the team must be private. 
+
+![The privacy setting when creating a new team](media/privacy-setting-new-team.png)
+
+After the team is created, the sensitivity label in the upper-right corner of the channel.
+
+![The privacy setting when creating a new team](media/privacy-setting-teams.png)
+
+The same label is automatically applied to the Office 365 group and the connected SharePoint team site.
 
 Example of a SharePoint site with label applied:
 
