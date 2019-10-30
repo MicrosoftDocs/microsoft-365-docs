@@ -48,7 +48,7 @@ From here, you can go to a card for the following solutions:
 
 The **Internal risk management** section on the home page shows you at a glance how your organization can identify, analyze, and remediate internal risks before they cause harm.
 
-![Microsoft 365 solution catalog internal risk management section](media/m365-solution-catalog-information-protection-governance.png)
+![Microsoft 365 solution catalog internal risk management section](media/m365-solution-catalog-internal-risk-management.png)
 
 From here, you can go to a card for the following solution:
 
