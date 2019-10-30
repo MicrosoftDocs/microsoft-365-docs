@@ -39,12 +39,11 @@ Microsoft has trained and tested number of classifiers using very large sample d
 
 2. Create a dedicated SharePoint Online folder, wait at least an hour for the folder to be added to the search index. Make note of the folder URL.
 
-
 3. Sign in to Microsoft 365 compliance center with compliance admin or security admin role access and open **Microsoft 365 compliance center** or **Microsoft 365 security center** > **Records management (preview)** > **Label policies** tab.
 
 4. Choose `Auto-apply a label`.
 
-5. Choose `Choose a lable to auto-apply`.
+5. Choose `Choose a label to auto-apply`.
 
 6. Choose `Create new labels` and create a label for use just with this test. When you do this, leave `Retention` set to off. You don't want to turn on any retention or other actions. In this case, you'll be using using the retention label simply as a text label, without enforcing any actions. For example, you can create a retention label named "SourceCode classifier test" with no actions, and then auto-apply that retention label to content with that has Source code classifier as a condition. To learn more about creating retention labels, see [Overview of retention labels](\labels.md).
   
@@ -70,11 +69,13 @@ Microsoft has trained and tested number of classifiers using very large sample d
 
 16. Place the test items into the dedicated SharePoint Online folder.
 
-17. Choose the label name from the `Records management (preview)` page `Label policies` tab to open up the details and choose `Explore items`.
+17. Allow an hour for the label to be applied.
 
-18. Review the items that were labeled to see if the classifier included and excluded the test content as you expected.
+18. Check the properties of the documents for the label to see if the classifier included and excluded the test content as you expected.
 
-19. Delete the content, and the label policy if you are done with your testing.
+19. Review the items that were labeled .
+
+20. Delete the content, and the label policy if you are done with your testing.
 
 See also:
 
