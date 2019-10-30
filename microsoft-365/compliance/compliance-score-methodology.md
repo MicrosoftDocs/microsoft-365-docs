@@ -38,11 +38,11 @@ Compliance Score gives you an out-of-the-box score based on the Microsoft 365 da
 
 ## How Compliance Score continuously assesses controls
 
-Compliance Score automatically scans through your Microsoft 365 environment and detects your system settings, continuously and automatically updating your technical control status. For example, if you turned on multi-factor authentication (MFA) in the Azure AD portal, Compliance Score detects the setting and reflect that in the control access solution details. Conversely, if you didn’t turn on MFA, Compliance Score flags that as a recommended action for you to take.
+Compliance Score automatically scans through your Microsoft 365 environment and detects your system settings, continuously and automatically updating your technical control status. For example, if you turned on multi-factor authentication (MFA) in the Azure AD portal, Compliance Score detects the setting and reflects that in the control access solution details. Conversely, if you didn’t turn on MFA, Compliance Score flags that as a recommended action for you to take.
 
 Compliance Score updates your control status every 24 hours. Once you follow a recommendation to implement a control, you will see the control status updated the next day.
 
-During public preview, continuous assessment is available to a portion of the technical controls, but not all.
+During public preview, continuous assessment is available to a portion controls, but not all.
   
 ## Control types and points
 
