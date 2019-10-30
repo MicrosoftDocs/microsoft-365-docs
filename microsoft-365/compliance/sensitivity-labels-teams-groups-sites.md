@@ -1,5 +1,5 @@
 ---
-title: "Use sensitivity labels with Teams, Office 365 groups, and SharePoint sites (preview)"
+title: "Use sensitivity labels with teams, groups, and sites (preview)"
 ms.author: laurawi
 author: kccross
 manager: laurawi
@@ -12,14 +12,25 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "You can apply labels to Office 365 groups and SharePoint sites. Sensitivity labels can use encryption to protect groups and sites."
+description: "You can apply labels to teams, Office 365 groups, and SharePoint sites. "
 ---
 
-# Use sensitivity labels with Teams, Office 365 groups, and SharePoint sites (preview)
+# Use sensitivity labels with teams, groups, and sites (preview)
 
-As a global or SharePoint admin, you can now enable sensitivity labels for Office 365 groups and SharePoint sites and add policies related to these labels. Users can then select a label when they create an Office 365 group or SharePoint site. Sensitivity labels for groups and sites work with SharePoint Online, Microsoft Teams, and Outlook.
+When you create sensitivity labels in [Security and Compliance Center](https://protection.office.com/), you can now apply them to Microsoft Teams teams, Office 365 groups, and SharePoint sites. You can associate policies with the labels to enforce public/private settings and guest access. You can also associate sensitivity labels with specific users to ensure that the label is applied to the teams, groups, and sites they create. 
+
+> [!NOTE]
+> When a label is applied to a team or group, the label is automatically applied to the connected SharePoint team site and vice versa. 
 
 You can also now enable sensitivity label support for Office files in SharePoint and OneDrive. [Learn more](sensitivity-labels-sharepoint-onedrive-files.md)
+
+## Overview
+
+With this preview, sensitivity labels (also called unified Microsoft Information Protection labels) appear on files, emails, teams, Office 365 groups, and SharePoint sites. When labels are published to users, they follow the users across Office 365. 
+
+![A sensitivity label displayed in the Word desktop app](media/sensitivity-label-word.png)
+
+![A sensitivity label when creating a team site from SharePoint](media/sensitivity-label-new-team-site.png)
 
 ## Enable this preview by using Azure PowerShell
 
@@ -90,21 +101,21 @@ Teams
 SharePoint admin center
 Azure AD admin center
 Security & Compliance admin center
-The following apps and services can’t be used to create Office 365 groups with the new sensitivity labels: 
 
-Outlook for the Mac
-Outlook mobile  
-Outlook desktop for Windows
-Forms  
-Dynamics 365  
-Yammer  
-Stream  
-Planner  
-Project  
-PowerBI  
-Teams admin center  
-Microsoft 365 admin center  
-Exchange admin center
+The following apps and services can’t be used to create Office 365 groups with the new sensitivity labels: 
+- Outlook for the Mac
+- Outlook mobile  
+- Outlook desktop for Windows
+- Forms  
+- Dynamics 365  
+- Yammer  
+- Stream  
+- Planner  
+- Project  
+- PowerBI  
+- Teams admin center  
+- Microsoft 365 admin center  
+- Exchange admin center
 
 We’re working to make all these apps compatible with new sensitivity labels.  
 When is GA expected?
