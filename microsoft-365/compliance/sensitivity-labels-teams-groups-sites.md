@@ -1,5 +1,5 @@
 ---
-title: "Use sensitivity labels with Office 365 groups and SharePoint sites (preview)"
+title: "Use sensitivity labels with Teams, Office 365 groups, and SharePoint sites (preview)"
 ms.author: laurawi
 author: kccross
 manager: laurawi
@@ -15,18 +15,16 @@ search.appverid:
 description: "You can apply labels to Office 365 groups and SharePoint sites. Sensitivity labels can use encryption to protect groups and sites."
 ---
 
-# Use sensitivity labels with Office 365 groups and SharePoint sites (preview)
+# Use sensitivity labels with Teams, Office 365 groups, and SharePoint sites (preview)
 
-As a global or SharePoint admin, you can apply sensitivity labels to Office 365 groups and SharePoint sites and add policies related to these labels. Users can then select a label when they create an Office 365 group or SharePoint site. Sensitivity labels for groups and sites work with SharePoint Online, Microsoft Teams, and Outlook.
+As a global or SharePoint admin, you can now enable sensitivity labels for Office 365 groups and SharePoint sites and add policies related to these labels. Users can then select a label when they create an Office 365 group or SharePoint site. Sensitivity labels for groups and sites work with SharePoint Online, Microsoft Teams, and Outlook.
 
 You can also now enable sensitivity label support for Office files in SharePoint and OneDrive. [Learn more](sensitivity-labels-sharepoint-onedrive-files.md)
 
-## Enable the preview
+## Enable this preview by using Azure PowerShell
 
-As part of Microsoft's public preview, you'll need to opt-in to use sensitivity labels to restrict access to Office 365 groups and SharePoint sites. You use Azure PowerShell to opt-in.
-To opt-in to the public preview follow these steps:
 
-1. Using a work or school account with global admin permissions in your tenant, log in to your Azure subscription with Azure PowerShell. For instructions, see [Sign in with Azure PowerShell](/powershell/azure/authenticate-azureps).
+1. Connect to SharePoint Online as a global admin or SharePoint admin in Office 365. Using a work or school account with global admin permissions in your tenant, log in to your Azure subscription with Azure PowerShell. For instructions, see [Sign in with Azure PowerShell](/powershell/azure/authenticate-azureps).
 
 2. Run the following PowerShell at the command-line.
 
