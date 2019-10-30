@@ -56,7 +56,7 @@ Communication compliance in Microsoft 365 builds on the features of [Supervision
 - Flexible remediation workflows
 - Actionable insights
 
-![Communication compliance home page](media/communication-compliance-home-800px.png)
+![Communication compliance home page](media/communication-compliance-home.png)
 
 ### Intelligent customizable playbooks
 
