@@ -111,7 +111,7 @@ The pre-configured templates for Compliance Score are:
 > [!NOTE]
 > During public preview, go to Compliance Manager to create templates.
 
-View detailed instructions for [creating and customizing templates in Compliance Manager](working-with-compliance-manager.md#templates).
+View detailed instructions for [creating templates in Compliance Manager](working-with-compliance-manager.md#templates).
 
 ### Groups
 
