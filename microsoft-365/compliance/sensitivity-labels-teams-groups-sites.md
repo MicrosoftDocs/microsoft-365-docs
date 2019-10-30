@@ -104,7 +104,7 @@ When users create Office 365 groups from Outlook on the web, they’ll notice th
 
 ![Creating a group and selecting an option under Sensitivity](media/sensitivity-label-new-group.png) 
 
-The same labels appear when users create groups from Yammer, Planner, and other Office 365 services. 
+We're working on adding support for other apps and services ([see the list](#support-for-the-new-sensitivity-labels))so that the same labels appear when users create groups from Yammer, Planner, and so on. 
 
 ## Apply a sensitivity label to a new site
 
