@@ -84,9 +84,9 @@ Outlook
 <td><font size="-1"><b>Yes</b><br><font size="-1">1910+</font>
 <td><font size="-1"><b>Yes</b><br><font size="-1">16.21.0+</font>
 <td><font size="-1"><b>Yes</b><br><font size="-1">2.21+</font>
-<td><font size="-1">Rolling out<br><font size="-1">4.7.1+</font>
+<td><font size="-1"><b>Yes</b><br><font size="-1">4.7.1+</font>
 <td><font size="-1"><b>Yes</b><br><font size="-1">16.0.11231+</font>
-<td><font size="-1">Rolling out<br><font size="-1">4.0.39+</font>
+<td><font size="-1"><b>Yes</b><br><font size="-1">4.0.39+</font>
 <td><font size="-1">Coming soon<sup>3</sup>
 <td><b>Yes</b>
 
@@ -96,10 +96,10 @@ Outlook
 <td><font size="-1"><b>Yes</b><br><font size="-1">1910+</font>
 <td><font size="-1"><b>Yes</b><br><font size="-1">16.21.0+</font>
 <td><font size="-1"><b>Yes</b><br><font size="-1">2.21+</font>
-<td><font size="-1">Rolling out<br><font size="-1">4.7.1+</font>
+<td><font size="-1"><b>Yes</b><br><font size="-1">4.7.1+</font>
 <td><font size="-1"><b>Yes</b><br><font size="-1">16.0.11231+</font>
-<td><font size="-1">Rolling out<br><font size="-1">4.0.39+</font>
-<td><font size="-1">Coming soon<sup>3</sup>
+<td><font size="-1"><b>Yes</b><br><font size="-1">4.0.39+</font>
+<td><font size="-1">TBD</sup>
 <td><b>Yes</b>
 
 <tr><td><font size="-1"><a href="https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do">Require a justification for changing a label</a><sup>1</sup>
@@ -107,9 +107,9 @@ Outlook
 <td><font size="-1"><b>Yes</b><br><font size="-1">1910+</font>
 <td><font size="-1"><b>Yes</b><br><font size="-1">16.21.0+</font>
 <td><font size="-1"><b>Yes</b><br><font size="-1">2.21+</font>
-<td><font size="-1">Rolling out<br><font size="-1">4.7.1+</font>
+<td><font size="-1"><b>Yes</b><br><font size="-1">4.7.1+</font>
 <td><font size="-1"><b>Yes</b><br><font size="-1">16.0.11231+</font>
-<td><font size="-1">Rolling out<br><font size="-1">4.0.39+</font>
+<td><font size="-1"><b>Yes</b><br><font size="-1">4.0.39+</font>
 <td><font size="-1">Coming soon<sup>3</sup>
 <td><b>Yes</b>
 
@@ -118,9 +118,9 @@ Outlook
 <td><font size="-1"><b>Yes</b><br><font size="-1">1910+</font>
 <td><font size="-1"><b>Yes</b><br><font size="-1">16.21.0+</font>
 <td><font size="-1"><b>Yes</b><br><font size="-1">2.21+</font>
-<td><font size="-1">Rolling out<br><font size="-1">4.7.1+</font>
+<td><font size="-1"><b>Yes</b><br><font size="-1">4.7.1+</font>
 <td><font size="-1"><b>Yes</b><br><font size="-1">16.0.11231+</font>
-<td><font size="-1">Rolling out<br><font size="-1">4.0.39+</font>
+<td><font size="-1"><b>Yes</b><br><font size="-1">4.0.39+</font>
 <td><font size="-1">Coming soon<sup>3</sup>
 <td><b>Yes</b>
 
@@ -129,9 +129,9 @@ Outlook
 <td><font size="-1"><b>Yes</b><br><font size="-1">1910+</font>
 <td><font size="-1"><b>Yes</b><br><font size="-1">16.21.0+</font>
 <td><font size="-1"><b>Yes</b><br><font size="-1">2.21+</font>
-<td><font size="-1">Rolling out<br><font size="-1">4.7.1+</font>
+<td><font size="-1"><b>Yes</b><br><font size="-1">4.7.1+</font>
 <td><font size="-1"><b>Yes</b><br><font size="-1">16.0.11231+</font>
-<td><font size="-1">Rolling out<br><font size="-1">4.0.39+</font>
+<td><font size="-1"><b>Yes</b><br><font size="-1">4.0.39+</font>
 <td><font size="-1">Coming soon<sup>3</sup>
 <td><b>Yes</b>
 
@@ -140,9 +140,9 @@ Outlook
 <td><font size="-1"><b>Yes</b><br><font size="-1">1910+</font>
 <td><font size="-1"><b>Yes</b><br><font size="-1">16.21.0+</font>
 <td><font size="-1"><b>Yes</b><br><font size="-1">2.21+</font>
-<td><font size="-1">Rolling out<br><font size="-1">4.7.1+</font>
+<td><font size="-1"><b>Yes</b><br><font size="-1">4.7.1+</font>
 <td><font size="-1"><b>Yes</b><br><font size="-1">16.0.11231+</font>
-<td><font size="-1">Rolling out<br><font size="-1">4.0.39+</font>
+<td><font size="-1"><b>Yes</b><br><font size="-1">4.0.39+</font>
 <td><font size="-1">Coming soon<sup>3</sup>
 <td><b>Yes</b>
 
@@ -151,9 +151,9 @@ Outlook
 <td><font size="-1"><b>Yes</b><sup>2</sup><br><font size="-1">1910+</font>
 <td><font size="-1"><b>Yes</b><sup>2</sup><br><font size="-1">16.21.0+</font>
 <td><font size="-1">TBD
-<td><font size="-1">Rolling out<br><font size="-1">4.7.1+</font>
+<td><font size="-1"><b>Yes</b><br><font size="-1">4.7.1+</font>
 <td><font size="-1">TBD
-<td><font size="-1">Rolling out<br><font size="-1">4.0.39+</font>
+<td><font size="-1"><b>Yes</b><br><font size="-1">4.0.39+</font>
 <td><font size="-1">TBD
 <td><b>Yes</b>
 
