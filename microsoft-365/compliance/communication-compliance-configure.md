@@ -146,7 +146,7 @@ If you want to have the option of responding to a policy alert by sending a remi
 
     - Notice template name (required)
     - Send from (required)
-    - CC and BCC (optional)
+    - Cc and Bcc (optional)
     - Subject (required)
     - Message body (required)
 

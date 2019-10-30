@@ -34,8 +34,8 @@ Policy templates are pre-defined policy settings that you can use to quickly cre
 |**Area**|**Policy Template**|**Details**|
 |:-----|:-----|:-----|
 | **Offensive language and anti-harassment** | Monitor communications for offensive language | - Locations: Exchange, Teams, Skype for Business <br> - Direction: Inbound, Outbound, Internal <br> - Review Percentage: 100% <br> - Conditions: Offensive language classifier |
-| **Sensitive information** | Monitor communications for sensitive information | - Locations: Exchange, Teams, Skype for Business <br> - Direction: Inbound, Outbound, Internal <br> - Review Percentage: 10% <br> - Conditions: Sensitive information OOB PATTERNS OR TYPES - BRING YOUR ONW DICTIONARY, attachments larger than 1 MB |
-| **Regulatory compliance** | Monitor communications for info related to financial regulatory compliance | - Locations: Exchange, Teams, Skype for Business <br> - Direction: Inbound, Outbound <br> - Review Percentage: 10% <br> - Conditions: BRING YOUR ONW DICTIONARY, attachments larger than 1 MB |
+| **Sensitive information** | Monitor communications for sensitive information | - Locations: Exchange, Teams, Skype for Business <br> - Direction: Inbound, Outbound, Internal <br> - Review Percentage: 10% <br> - Conditions: Sensitive information, out-of-the-box content patterns and types, custom dictionary option, attachments larger than 1 MB |
+| **Regulatory compliance** | Monitor communications for info related to financial regulatory compliance | - Locations: Exchange, Teams, Skype for Business <br> - Direction: Inbound, Outbound <br> - Review Percentage: 10% <br> - Conditions: custom dictionary option, attachments larger than 1 MB |
 
 ## Supervised users
 
@@ -202,7 +202,7 @@ Communication compliance filters allow you to filter and sort alert messages for
 | **File class** | The class of the message based on the message type, either *message* or *attachment*. |
 | **Has attachment** | The attachment presence in the message. |
 | **Item class** | The source of the message based on the message type, email, Microsoft Team chat, Bloonmberg, etc. |
-| **Recipient** domains | The domain to which the message was sent. This is normally your Microsoft 365 subscription domain by default. |
+| **Recipient domains** | The domain to which the message was sent. This is normally your Microsoft 365 subscription domain by default. |
 | **Recipient** | The user to which the message was sent. |
 | **Sender** | The person who sent the message. |
 | **Sender domain** | The domain that sent the message. |
