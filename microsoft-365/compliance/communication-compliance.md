@@ -22,7 +22,7 @@ description: "Learn about Communication compliance in Microsoft 365"
 
 Communication compliance in Microsoft 365 helps you minimize communication risks by helping you detect, capture, and take remediation actions for inappropriate messages in your organization. Pre-defined and custom policies allow you to scan internal and external communications for policy matches so they can be examined by designated reviewers. Reviewers can investigate scanned email, Microsoft Teams, or third-party communications in your organization and take appropriate remediation actions to make sure that they are compliant with your organization's message standards.
 
-Communication compliance policies in Microsoft 365 help you overcome many modern compliance challenges associated with internal and external communications, including:
+Communication compliance policies in Microsoft 365 help you overcome many modern challenges associated with compliance and internal and external communications, including:
 
 - Scanning increasing types of communication channels
 - The increasing volume of message data
@@ -60,9 +60,9 @@ Communication compliance in Microsoft 365 builds on the features of [Supervision
 
 ### Intelligent customizable playbooks
 
-Intelligent customizable playbooks in Communication compliance allow you to leverage machine learning to intelligently detect communication violations in your organization.
+Intelligent customizable playbooks in Communication compliance allow you to apply machine learning to intelligently detect communication violations in your organization.
 
-- **Customizable pre-configured templates**: New policy templates help address the most common communications risks. Initial policy creation and follow-on updating is now quicker with pre-defined anti-harassment and offensive language, sensitive information, and regulatory compliance templates.
+- **Customizable pre-configured templates**: New policy templates help address the most common communications risks. Initial policy creation and follow-on updating are now quicker with pre-defined anti-harassment and offensive language, sensitive information, and regulatory compliance templates.
 - **New machine learning support**: Built-in classifiers help reduce false positives in scanned messages, saving reviewers time during the investigation and remediation process.
 - Build your own machine learning model to detect violations unique to your organization
 
@@ -72,7 +72,7 @@ Built-in remediation workflows allow you to quickly identify and take action on 
 
 - **Conversation threading**: Messages are now visually grouped by original message and all associated reply messages, giving you better context during investigation and remediation actions.
 - **Keyword highlighting**: Terms matching policy conditions are highlighted in the message text view to help reviewers quickly locate and remediate policy alerts.
-- **Exact and near duplicate detection**: In addition to scanning for exact terms matching Communication compliance polices, near duplicate detection groups textually similar terms and messages together to help speed up your review process.
+- **Exact and near duplicate detection**: In addition to scanning for exact terms matching Communication compliance policies, near duplicate detection groups textually similar terms and messages together to help speed up your review process.
 - ​**Improved filters**: Investigate and remediate policy alerts faster with message filters for several fields, including sender, recipient, date, domains, and many more.
 - **Improved message views**: Investigation and remediation actions are now quicker with new message source, text, and annotation views.
 - **User history view**: Historical view of user message remediation activities, such as past notifications and escalations for policy matches, now provide reviewers with more context during the remediation workflow process.
@@ -111,7 +111,7 @@ In this workflow step, you identify your compliance requirements and configure a
 You can choose from the following policy templates in the Microsoft 365 compliance center:
 
 - **Offensive language and anti-harassment**: Use this template to quickly create a policy that uses the built-in classifier to automatically detect content that may be considered abusive or offensive.
-- **Sensitive information**: Use this template to create a policy to scan communications containing defined sensitive information types or keywords to help make sure important data isn't shared with people that shouldn't have access.
+- **Sensitive information**: Use this template to create a policy to scan communications containing defined sensitive information types or keywords to help make sure that important data isn't shared with people that shouldn't have access.
 - **Regulatory compliance**: Use this template to create a policy to scan communications for references to standard financial terms associated with regulatory standards.
 - **Custom policy**: Use this template to configure specific communication channels, individual detection conditions, and the amount of content to review for supervision in your organization.
 
@@ -123,7 +123,7 @@ In this step, you look deeper into the issues detected as matching your Communic
 - **Issue management**: For each alert, you can take investigative actions to help remediate the issue detected in the message
 - **Document review**: During the investigation of an issue, you can use several views of the message to help properly evaluate the detected issue. The views include a conversation summary, text-only, annotated, and detail views of the communication conversation.
 - **Reviewing user activity history**: View the history of user message activities and remediation actions, such as past notifications and escalations for policy matches.
-- **Filters** - Use filters such as sender, recipient, date, and subject to quickly narrow down the message alerts that you want to review.
+- **Filters**: Use filters such as sender, recipient, date, and subject to quickly narrow down the message alerts that you want to review.
 
 ### Remediate
 
@@ -131,8 +131,8 @@ The next step is to remediate Communication compliance issues you've investigate
 
 - **Resolve**: After reviewing an issue, you can remediate by resolving the alert. Resolving an alert removes it from the pending alert queue and the action is preserved as an entry in the Resolved queue for the matching policy. Alerts are automatically resolved after marking the alert as a false positive, sending a notice to an employee about the alert, or opening a new case for the alert.
 - **Tag a message**: As part of the resolution of an issue, you can tag the detected message as compliant, non-compliant, or as questionable as it relates to the policies and standards for your organization. Tagging can help you micro-filter policy alerts for escalations or as part of other internal review processes.
-- **Notify the user**: In many cases, users accidentally or inadvertently violate a Communication compliance policy. You can use the notify feature to provide a simple warning notice to the user and to resolve the issue.
-- **Escalate to another reviewer**: In some cases, the initial reviewer of an issue may need input from other reviewers to help resolve the incident. You can easily escalate message issues to reviewers in other areas of your organization as part of the resolution process.
+- **Notify the user**: Often, users accidentally or inadvertently violate a Communication compliance policy. You can use the notify feature to provide a warning notice to the user and to resolve the issue.
+- **Escalate to another reviewer**: Sometimes, the initial reviewer of an issue needs input from other reviewers to help resolve the incident. You can easily escalate message issues to reviewers in other areas of your organization as part of the resolution process.
 - **Mark as a false positive**: Messages incorrectly detected as matches of compliance policies will occasionally slip through to the review process. You can mark these types of alerts as false positives and automatically resolve the issue.
 
 ### Monitor

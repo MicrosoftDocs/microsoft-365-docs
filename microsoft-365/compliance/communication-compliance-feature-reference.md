@@ -22,7 +22,7 @@ description: "Feature reference for Communication compliance in Microsoft 365. L
 
 ## Policies
 
-You create Communication compliance policies for Microsoft 365 organizations in the Microsoft 365 compliance center. If you have an Office 365 organization, you'll [configure Supervision policies](configure-supervision-policies.md) in the Office 365 security and compliance center. Communication compliance policies define which communications and users are subject to review in your organization, define custom conditions that the communications must meet, and specifies who should perform reviews. Users included in the **Supervisory Review Administrator** role group can set up policies and anyone who has this role assigned can access the **Communication compliance** page in the Microsoft 365 compliance center. If needed, you can export the history of modifications to a policy to a .csv file that also includes the current status of alerts pending review, escalated items, and resolved items. Policies can be deleted when no longer needed.
+You create Communication compliance policies for Microsoft 365 organizations in the Microsoft 365 compliance center. If you have an Office 365 organization, you'll [configure Supervision policies](configure-supervision-policies.md) in the Office 365 security and compliance center. Communication compliance policies define which communications and users are subject to review in your organization, define custom conditions that the communications must meet, and specifies who should perform reviews. Users included in the **Supervisory Review Administrator** role group can set up policies and anyone who has this role assigned can access the **Communication compliance** page in the Microsoft 365 compliance center. If needed, you can export the history of modifications to a policy to a .csv file that also includes the status of alerts pending review, escalated items, and resolved items. Policies cannot be renamed and can be deleted when no longer needed.
 
 > [!NOTE]
 > Supervision policies created in the Office 365 security and compliance center for Office 365 subscriptions cannot migrate to Microsoft 365. If you're migrating from an Office 365 subscription to a Microsoft 365 subscription, you'll need to create new Communication compliance polices to replace existing Supervision policies.
@@ -78,7 +78,7 @@ With Communication compliance policies, you can choose to scan messages in one o
     - [Twitter](archive-twitter-data-with-sample-connector.md)
     - [Custom data connector](archiving-third-party-data.md)
 
-You must configure a third-party connector for your Microsoft 365 organization before you can assign the connector to a Communication compliance policy. The **3rd Party Sources** section of the Communication compliance policy wizard only displays currently configured 3rd party connectors.
+You must configure a third-party connector for your Microsoft 365 organization before you can assign the connector to a Communication compliance policy. The **3rd Party Sources** section of the Communication compliance policy wizard only displays currently configured third party connectors.
 
 ## Policy settings
 
@@ -115,7 +115,7 @@ Communication compliance built-in classifiers scan communications for terms and 
 - **Harassment**: Scans for offensive conduct targeting people regarding race, color, religion, national origin
 - **Profanity**: Scans for profane expressions that embarrass most people.
 
-Please note that the built-in classifiers do not provide an exhaustive list of terms across these areas. Further, language and cultural standards continually change, and in light of these realities, Microsoft reserves the right to update classifiers in its discretion. While classifiers may assist your organization in monitoring these areas, classifiers are not intended to provide your organization’s sole means of monitoring or addressing such language. Your organization, not Microsoft, remains responsible for all decisions related to scanning and blocking language in these areas.
+Note that the built-in classifiers do not provide an exhaustive list of terms across these areas. Further, language and cultural standards continually change, and in light of these realities, Microsoft reserves the right to update classifiers in its discretion. While classifiers may assist your organization in monitoring these areas, classifiers are not intended to provide your organization’s sole means of monitoring or addressing such language. Your organization, not Microsoft, remains responsible for all decisions related to scanning and blocking language in these areas.
 
 For information about classifiers in Microsoft 365, see [Classifiers](classifier-getting-started-with.md).
 
@@ -255,7 +255,7 @@ To view Communication compliance policy activities, select the **Export review a
 |**Field**|**Details**|
 |:-----|:-----|
 | **CreationDate** | When the activity was performed in a policy. |
-| **UserIds** | The user that preformed the activity in a policy. |
+| **UserIds** | The user that performed the activity in a policy. |
 | **Operations** | ?? |
 | **AuditData** | This is the main data source field for all policy activities. All activities are recorded and separated by comma delimiters. |
 
