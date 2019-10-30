@@ -26,13 +26,13 @@ When you create sensitivity labels in the [Microsoft 365 compliance center](http
 > [!NOTE]
 > When a label is applied to a team or group, the label is automatically applied to the connected SharePoint team site and vice versa. 
 
-[Learn about enabling sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
+You can now also enable sensitivity labels for Office files in SharePoint and OneDrive[Learn more](sensitivity-labels-sharepoint-onedrive-files.md).
 
 ## Overview
 
-When you publish sensitivity labels to users, the same labels are available for those users across Office 365. 
+When you publish sensitivity labels to users, the same list of labels is available for those users across Office 365. 
 
-The following images show how the same labels appear to a user in Word and when creating a new team site from SharePoint. 
+The following images show how the list of labels appears to a user in Word and when they create a new team site from SharePoint. 
 
 ![A sensitivity label displayed in the Word desktop app](media/sensitivity-label-word.png)
 
@@ -61,7 +61,7 @@ The following images show how the same labels appear to a user in Word and when 
   }
 ```
 
-If you've been using [Azure AD site classification](/sharepoint/dev/solution-guidance/modern-experience-site-classification) ($setting["ClassificationList"]), Office 365 will no longer use the old classifications for new groups and SharePoint sites when you enable this preview. Existing groups and sites will still display the old classification tags unless you convert them. [Learn how](#if-you-used-azure-ad-site-classifications).  
+If you've been using [Azure AD site classification](/sharepoint/dev/solution-guidance/modern-experience-site-classification) ($setting["ClassificationList"]), Office 365 will no longer use the old classifications for new groups and SharePoint sites when you enable this preview. Existing groups and sites will still display the old classifications unless you convert them. [Learn how](#if-you-used-azure-ad-site-classifications).  
 
 ## Set site and group settings when creating sensitivity labels
 
@@ -92,11 +92,19 @@ Users can select sensitivity labels when they create new teams in Microsoft Team
 
 ![The privacy setting when creating a new team](media/privacy-setting-new-team.png)
 
-After the team is created, the sensitivity label appears in the upper-right corner of the channel.
+After the team is created, the sensitivity label appears in the upper-right corner of all channels.
 
 ![The sensitivity label appears on the team](media/privacy-setting-teams.png)
 
 The same label is automatically applied to the Office 365 group and the connected SharePoint team site.
+
+## Apply a sensitivity label to a new group
+
+When users create Office 365 groups from Outlook on the web, they’ll notice the new “Sensitivity” box that contains published labels. If users want more info, they can click the help icon to read details about the available labels and associated policies. 
+
+![Creating a group and selecting an option under Sensitivity](media/sensitivity-label-new-group.png) 
+
+The same labels appear when users create groups from Yammer, Planner, and other Office 365 services. 
 
 ## Apply a sensitivity label to a new site
 
@@ -110,15 +118,7 @@ When users create modern team and communication sites, a sensitivity label is al
 
 When users browse to the site, they can see the name of the label and applied policies. 
 
-![A site that has a sensitivity label applied](media/sensitivity-label-site.png)
-
-## Apply a sensitivity label to a new group
-
-When users create Office 365 groups from Outlook on the web, they’ll notice the new “Sensitivity” box that contains published labels. If users want more info, they can click the help icon to read details about the available labels and associated policies. 
-
-![Creating a group and selecting an option under Sensitivity](media/sensitivity-label-new-group.png) 
-
-The same labels appear when users create groups from Yammer, Planner, and other Office 365 services. They’re also available when users create teams in Microsoft Teams.  
+![A site that has a sensitivity label applied](media/sensitivity-label-site.png) 
 
 ## Manage sensitivity labels in the SharePoint admin center  
 
@@ -130,7 +130,7 @@ Global and SharePoint admins can go to the Active sites page in the new SharePoi
 
 ## Change a label's site and group settings
 
-After you create and publish a sensitivity label, and users apply it to several teams, groups, or sites, we recommend not changing the site and group settings. If you need to change it, and all existing teams, sites, and groups must enforce the new setting, you'll need to use an Azure AD PowerShell script to manually apply updates. 
+We recommend that you don't change a label's site and group settings after the label has been applied to several teams, groups, or sites. If you need to change it, and all existing teams, sites, and groups must enforce the new setting, you'll need to use an Azure AD PowerShell script to manually apply updates. 
 
 ## Support for the new sensitivity labels 
  
