@@ -32,8 +32,7 @@ Previously, when sensitivity labels that included encryption were applied to Off
 
 We're working on adding team site search, organization-wide search, and shared content search. We're also working auto labeling Office files stored in SharePoint and OneDrive.
 
-> [!NOTE]
-> You can also now apply sensitivity labels to Microsoft Teams, Office 365 groups, and SharePoint sites. [Learn more](sensitivity-labels-teams-groups-sites.md)
+You can also now apply sensitivity labels to Microsoft Teams, Office 365 groups, and SharePoint sites. [Learn more](sensitivity-labels-teams-groups-sites.md)
 
 ## Requirements  
 

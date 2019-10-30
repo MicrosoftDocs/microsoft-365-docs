@@ -68,7 +68,7 @@ Each item of content can have a single sensitivity label applied to it. An item 
 After you apply a sensitivity label to a group or site, you can:
 
 > [!WARNING]
-> SANJOYAN and Kaarin I need to know exactly what they do here. will fill this in or ask you to
+> SANJOYAN and Kaarin I need to know exactly what they do here. will fill this in or ask you to.
 
 After a sensitivity label is applied to an email or document, the protection settings for that label are enforced on the content. With a sensitivity label, you can:
 

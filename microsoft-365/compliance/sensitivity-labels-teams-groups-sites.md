@@ -1,6 +1,6 @@
 ---
 title: "Use sensitivity labels with teams, groups, and sites (preview)"
-ms.author: laurawi
+ms.author: krowley
 author: kccross
 manager: laurawi
 audience: Admin
