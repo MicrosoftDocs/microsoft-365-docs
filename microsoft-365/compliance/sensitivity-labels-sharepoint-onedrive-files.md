@@ -18,7 +18,7 @@ description: "Administrators can enable sensitivity label support for Word, Exce
 
 # Enable sensitivity labels for Office files in SharePoint and OneDrive (preview)
 
-Previously, when sensitivity labels were applied to Office files stored in SharePoint and OneDrive, the service couldn't process the content of these files. Co-authoring, eDiscovery, Data Loss Prevention, search, Delve, and other collaborative features didn't work. This preview enables these features:
+Previously, when sensitivity labels that included encryption were applied to Office files stored in SharePoint and OneDrive, the service couldn't process the content of these files. Co-authoring, eDiscovery, Data Loss Prevention, search, Delve, and other collaborative features didn't work. This preview enables these features:
 
 - The SharePoint service recognizes sensitivity labels applied to Word, Excel, and PowerPoint files in SharePoint and OneDrive and enforces the settings that correspond with each label.
 
@@ -32,7 +32,8 @@ Previously, when sensitivity labels were applied to Office files stored in Share
 
 We're working on adding team site search, organization-wide search, and shared content search.  
 
-You can also now apply sensitivity labels to Office 365 groups and SharePoint sites. [Learn more](sensitivity-labels-teams-groups-sites.md)
+> [!NOTE]
+> You can also now apply sensitivity labels to Microsoft Teams, Office 365 groups, and SharePoint sites. [Learn more](sensitivity-labels-teams-groups-sites.md)
 
 ## Requirements  
 

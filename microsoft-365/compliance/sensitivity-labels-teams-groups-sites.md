@@ -75,7 +75,9 @@ After you enable the preview, follow these steps:
 
     - Privacy (Public/Private): Private means only approved members in your organization can see what's inside the group. Anyone else in your organization can't see what's in the group. [Learn more](https://support.office.com/article/36236e39-26d3-420b-b0ac-8072d2d2bedc)
     - Guest access: You can control if guests can be added to a group. [Learn about managing guest access in Office 365 Groups](/office365/admin/create-groups/manage-guest-access-in-groups)
-    - Unmanaged devices: This setting lets you block or limit access to SharePoint content from devices that aren't hybrid AD joined or compliant in Intune. [Learn about controlling access from unmanaged devices](/sharepoint/control-access-from-unmanaged-devices)
+    - Unmanaged devices: This setting lets you block or limit access to SharePoint content from devices that aren't hybrid AD joined or compliant in Intune. 
+    > [!IMPORTANT]
+    > If you select to Unmanaged devices, you need to go to Azure AD to finish setting up the policy. For info, see [Control access from unmanaged devices](/sharepoint/control-access-from-unmanaged-devices).
 
 ![The Site and group settings tab](media/new-sensitivity-label-site-group.png)
 
@@ -84,17 +86,13 @@ After you enable the preview, follow these steps:
 
 [Learn how to publish a sensitivity label](/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do) 
 
-## Using sensitivity labels with teams
+## Apply a sensitivity label to a new team
 
-You can use sensitivity labels with Microsoft Teams to:
-
-- Control privacy settings of teams. For example, if you create a "Confidential" label that's associated with the Privacy setting "Private," when users create a new team and select the "Confidential" label, the team must be private. 
+Users can select sensitivity labels when they create new teams in Microsoft Teams. When they select the sensitivity level, the privacy setting will change accordingly. Depending on the guest access setting you selected for the label, users will or won't be able to add people outside the organization to the team. 
 
 ![The privacy setting when creating a new team](media/privacy-setting-new-team.png)
 
-- Control guest access to teams. You can specify whether people outside the organization can access teams that have the label applied.
-
-After the team is created, the sensitivity label in the upper-right corner of the channel.
+After the team is created, the sensitivity label appears in the upper-right corner of the channel.
 
 ![The sensitivity label appears on the team](media/privacy-setting-teams.png)
 
@@ -114,24 +112,25 @@ When users browse to the site, they can see the name of the label and applied po
 
 ![A site that has a sensitivity label applied](media/sensitivity-label-site.png)
 
-## Manage sensitivity labels in the SharePoint admin center  
-Global and SharePoint admins can go to the Active sites page in the new SharePoint admin center to view and edit the labels applied to sites.
-
-![The Sensitivity column on the Active sites page](media/manage-site-sensitivity-labels.png)
-
-[Learn more about managing sites in the new SharePoint admin center](/sharepoint/manage-sites-in-new-admin-center).
-
 ## Apply a sensitivity label to a new group
 
-When users create Office 365 groups from Outlook on the web, they’ll notice the new “Sensitivity” box that contains published labels. If users want more info, they can also click the help icon to read details about the available labels and associated policies. 
+When users create Office 365 groups from Outlook on the web, they’ll notice the new “Sensitivity” box that contains published labels. If users want more info, they can click the help icon to read details about the available labels and associated policies. 
 
 ![Creating a group and selecting an option under Sensitivity](media/sensitivity-label-new-group.png) 
 
 The same labels appear when users create groups from Yammer, Planner, and other Office 365 services. They’re also available when users create teams in Microsoft Teams.  
 
+## Manage sensitivity labels in the SharePoint admin center  
 
-## Change label settings related to Office 365 Groups
-After you create and publish a sensitivity label, and users apply it to several groups, we recommend not changing its setting. If you need to change it, and all existing groups must enforce the new setting, you'll need to use an Azure AD PowerShell script to manually apply updates to groups. 
+Global and SharePoint admins can go to the Active sites page in the new SharePoint admin center to view and edit the labels applied to teams, groups, and sites.
+
+![The Sensitivity column on the Active sites page](media/manage-site-sensitivity-labels.png)
+
+[Learn more about managing sites in the new SharePoint admin center](/sharepoint/manage-sites-in-new-admin-center).
+
+## Change a label's site and group settings
+
+After you create and publish a sensitivity label, and users apply it to several teams, groups, or sites, we recommend not changing the site and group settings. If you need to change it, and all existing teams, sites, and groups must enforce the new setting, you'll need to use an Azure AD PowerShell script to manually apply updates. 
 
 ## Support for the new sensitivity labels 
  
