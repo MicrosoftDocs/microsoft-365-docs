@@ -30,10 +30,9 @@ Previously, when sensitivity labels were applied to Office files stored in Share
 
 - Three new audit events are available for monitoring sensitivity labels: FileSensitivityApplied, FileSensitivityLabelChanged, and FileSensitivityLabelRemoved.
 
-> [!NOTE]
-> Team site search, organization-wide search, and shared content search are coming soon. 
+Team site search, organization-wide search, and shared content search are coming soon. 
 
-You can now also apply sensitivity labels to Office 365 groups and SharePoint sites. For info, see [Use sensitivity labels with Office 365 groups and SharePoint sites](sensitivity-labels-groups-sites.md)
+You can also now apply sensitivity labels to Office 365 groups and SharePoint sites. [Learn more](sensitivity-labels-groups-sites.md)
 
 ## Requirements  
 
@@ -44,7 +43,7 @@ This preview requires the OneDrive sync app version 19.002.0121.0008 or later on
 ## Limitations
 
 > [!WARNING]
-> When you enable this preview, users who apply a label to a file by using the Office desktop or mobile apps might be unable to save other changes they made to the file. When this happens, users will be asked to Save As or Discard local changes. We recommend that users use the web versions of the Office apps to apply labels, or close a file after applying a label and then reopen the file to make other changes and avoid losing work. We are working to fix this problem. 
+> When you enable this preview, users who apply a label to a file by using the Office desktop or mobile apps might be unable to save other changes they made to the file. When this happens, users will be asked to Save As or Discard local changes. We recommend that users use the web versions of the Office apps to apply labels, or close a file after applying a label and then reopen the file to make other changes and avoid losing work. We're working to fix this problem. 
 
 - The new features won't work for files already in SharePoint that were previously encrypted using Azure Information Protection labels. To get the features to work after you convert to sensitivity labels and enable this preview, you must download the files and upload them again. 
 
@@ -59,7 +58,7 @@ This preview requires the OneDrive sync app version 19.002.0121.0008 or later on
 - If a label includes encryption, Microsoft Cloud App Security isn't able to read the label information for the files in SharePoint.   
 
 > [!IMPORTANT]
-> After you create or change a sensitivity label in the Security and Compliance Center, we recommend waiting for at least 24 hours before you widely publish the label. If you publish labels that haven't fully synced, when user apply the labels to files and upload them to SharePoint, the files can’t be opened in the web versions of the Office apps. Search and eDiscovery also won't work for the files anymore. To open the files in the web versions of the Office apps again, users need to download the files and upload them again.
+> After you create or change a sensitivity label in the Security and Compliance Center, we recommend waiting for at least 24 hours before you widely publish the label. If you publish labels that haven't fully synced, when user apply the labels to files and upload them to SharePoint, the files can’t be opened in the web versions of the Office apps. Search and eDiscovery also won't work for the files anymore. To open the files in the web versions of the Office apps again, users need to download the files and re-upload them.
    
 
 ## Enable this preview by using Microsoft PowerShell

@@ -17,11 +17,11 @@ description: "You can apply labels to Office 365 groups and SharePoint sites. Se
 
 # Use sensitivity labels with Office 365 groups and SharePoint sites (preview)
 
-As a global or SharePoint admin, you can  can apply sensitivity labels to Office 365 groups and SharePoint sites and add policies related to these labels. End-users can then select a label when they create an Office 365 group or SharePoint site. Sensitivity labels for groups and sites work with SharePoint Online, Microsoft Teams, and Outlook.
+As a global or SharePoint admin, you can apply sensitivity labels to Office 365 groups and SharePoint sites and add policies related to these labels. Users can then select a label when they create an Office 365 group or SharePoint site. Sensitivity labels for groups and sites work with SharePoint Online, Microsoft Teams, and Outlook.
 
-See also: [Learn about enabling sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md)
+You can also now enable sensitivity label support for Office files in SharePoint and OneDrive. [Learn more](sensitivity-labels-sharepoint-onedrive-files.md)
 
-## Opt-in to to the public preview
+## Enable the preview
 
 As part of Microsoft's public preview, you'll need to opt-in to use sensitivity labels to restrict access to Office 365 groups and SharePoint sites. You use Azure PowerShell to opt-in.
 To opt-in to the public preview follow these steps:
