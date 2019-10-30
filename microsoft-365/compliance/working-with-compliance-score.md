@@ -190,7 +190,7 @@ During public preview, functionality for viewing, creating, exporting, and archi
 
 To manage your assessments, select **Manage Assessments in Compliance Manager** at the top of the assessments list.
 
-The other link at the top of the assessments list, **Microsoft actions in Compliance Manager**, takes you to the page in Compliance Manager showing Microsoft controls that contribute to your compliance score. While there is no action for you to take here, it provides a more detailed look into controls that impact your score.
+The other link at the top of the assessments list, **Microsoft actions in Compliance Manager**, takes you to the page in Compliance Manager showing Microsoft controls that contribute to your compliance score.
 
 ### Filtering your assessments view
 
