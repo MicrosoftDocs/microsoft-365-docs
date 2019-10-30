@@ -22,14 +22,14 @@ description: "What are best practices for Exchange Online Protection (EOP) and A
 
 There are two security levels in EOP and Office365 ATP: **Standard** and **Strict**. These define different levels of mail filtering configurations that help prevent unwanted mail from reaching your employees inbox. 
 
-This topic contains Microsoft recommeded settings to help protect your Office 365 users. 
+This topic contains Microsoft recommended settings to help protect your Office 365 users. 
 
 ## Anti-spam, anti-malware, and anti-phishing protection in EOP
 Anti-spam, anti-malware, and anti-phishing are features of EOP that can be configured by admins. We recommend the following configurations.
 
 ### Anti-spam policy
 
-|Security feature name|Recommended|Aggressive|Comment|
+|Security feature name|Standard|Strict|Comment|
 |---------|---------|---------|---------|
 |Quarantine retention period|Yes|Yes|30 days|
 |End user spam notification frequency|Yes|Yes|3 days|
@@ -93,7 +93,7 @@ Recommended for **ON** in both Standard and Strict Levels:
 |EnableSimilarDomainsSafetyTips|True|True||
 |EnableUnusualCharactersSafetyTips|True|True||
 |TargetedUserProtectionAction|MoveToJmf|Quarantine||
-|MailboxIntelligenceProtectionAction|NoAction + Safety Tip|Block||
+|MailboxIntelligenceProtectionAction|NoAction + Safety Tip|MoveToJmf||
 |TargetedDomainProtectionAction|MoveToJmf|Quarantine||
 |AuthenticationFailAction|MoveToJmf|Quarantine||
 |AntiSpoofEnforcementType|High|High||
