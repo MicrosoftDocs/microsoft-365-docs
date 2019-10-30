@@ -58,7 +58,7 @@ This preview requires the OneDrive sync app version 19.002.0121.0008 or later on
 - If a label includes encryption, Microsoft Cloud App Security isn't able to read the label information for the files in SharePoint.   
 
 > [!IMPORTANT]
-> After you create or change a sensitivity label in the Security and Compliance Center, we recommend that you publish it to only one or two people, wait for at least 24 hours, and then publish it more widely. If you publish labels that haven't fully synced, when users apply the labels to files and upload them to SharePoint, the files can’t be opened in the web versions of the Office apps. Search and eDiscovery also won't work for the files anymore. 
+> After you create or change a sensitivity label in the Microsoft 365 compliance center, we recommend that you publish it to only one or two people, wait for at least 24 hours, and then publish it more widely. If you publish labels that haven't fully synced, when users apply the labels to files and upload them to SharePoint, the files can’t be opened in the web versions of the Office apps. Search and eDiscovery also won't work for the files anymore. 
    
 
 ## Enable this preview by using Microsoft PowerShell
