@@ -18,17 +18,17 @@ description: "Learn how to use the workflow tools in Microsoft Compliance Score 
 
 ## Managing your workflow with improvement actions
 
-Using improvement actions in Compliance Score centralizes your compliance workflows. Improvement actions suggest recommended actions to align with data protection regulations and standards, and provide detailed implementation guidance. You can assign them to users to perform the necessary implementation and testing work. You can also store documentation, notes, and record status updates right in the improvement action itself.
+Using improvement actions in Compliance Score centralizes your compliance workflows. Improvement actions suggest recommended actions to align with data protection regulations and standards, and provide detailed implementation guidance. You can assign them to users to perform the necessary implementation and testing work. You can also store documentation and notes, and record status updates right in the improvement action itself.
 
 ## View your improvement actions
 
-The Compliance Score dashboard shows your **key improvement actions**—the ones with the most available points which address the most important issues. 
+The Compliance Score dashboard shows your **key improvement actions**—the ones with the most available points which address the most important issues.
 
-To view all of your improvement actions, select the **Improvement actions** tab on your dashboard, or select **View all improvement actions** underneath the list of key improvement actions on your dashboard. This brings you to the the improvement actions page, where you can see all of your organization’s improvement actions.
+To view all of your improvement actions, select the **Improvement actions** tab on your dashboard, or select **View all improvement actions** underneath the list of key improvement actions on your dashboard. This brings you to the the **Improvement actions** page, where you can see all of your organization’s improvement actions.
 
 If you have a long list of actions, it may be helpful to filter your view. To do this, select **Filter** at the upper-right corner of the actions list. When the **Filters** flyout pane appears, then select your desired criteria based on regulations and standards, solution, and group. You can also customize your view by selecting **Group** in the upper-right corner and, from the drop-down menu, select to view by group, solution, category, action type, or status.
 
-The default view for this page does not show improvement actions with a test status of **Passed**. To view assessments that have passed testing, check the **Passed** box in the **Filters** flyout pane. Only actions with a test status of **Passed** count toward your score.
+The default view for this page does not show improvement actions with a test status of **Passed**. To view actions that have passed testing, check the **Passed** box in the **Filters** flyout pane. Only actions with a test status of **Passed** count toward your score.
 
 The improvement actions page shows the following data points for each improvement action:
 
@@ -42,7 +42,7 @@ The improvement actions page shows the following data points for each improvemen
     - **None** - no status update recorded
     - **Not assessed** - testing has not started
     - **Not in scope** - is excluded from Compliance Score calculation and does not increase your score
-    - **Partially tested* - testing is not yet complete
+    - **Partially tested** - testing is not yet complete
     - **Failed high risk** - testing of implementation has failed, and the risk of non-compliance with the applicable standard is high
     - **Passed** - implementation successfully tested
 - **Pointed achieved**: shows points achieved out of the maximum that could be earned
@@ -101,7 +101,7 @@ There is no character limit in the notes fields. We recommend keeping notes brie
 
 ## Change improvement action status
 
-You can record the implementation status and date, and the test status and date for each improvement action. Below are the available fields and status options:
+You can record the implementation status and date, and the test status and date, for each improvement action. Below are the available fields and status options:
 
 - **Implementation status**: select from these status options:
     - **Not implemented** - action not yet implemented
@@ -130,9 +130,9 @@ Types of assessors include:
 - Internal assessors who perform validation of controls within your organization
 - External assessors who examine, verify, and certify compliance—such as third-party independent organizations that audit Microsoft cloud services
 
-The assessor validates the work and examines the documentation, and selects the appropriate test status. 
+The assessor validates the work and examines the documentation, and selects the appropriate test status.
 
-**If the test status is "Passed"**: the assessment is complete. The controls to satisfy the assessment are completed, and the **points achieved** shows the full number of possible points achieved and counted toward your overall compliance score.
+**If the test status is "Passed"**: the action is complete, and the **points achieved** shows the full number of possible points achieved and counted toward your overall compliance score.
 
 **If the test status is any degree of "Failed"**: the action does not meet the requirements, and the assessor can assign it back to the appropriate user for additional work.
 
@@ -184,7 +184,7 @@ On this page you can quickly view important information about each assessment:
 
 ### Default assessments
 
-By default, you will see the Microsoft **Data Protection Baseline** assessment on the assessments page. If you want to add more assessments to cover other regulations and standards, you can manage assessments in Compliance Manager. Compliance Score provides more than ten out-of-box assessments,  including ones for GDPR, CCPA, ISO 27001, ISO 27018, NIST 800-53, NIST 800-171, NIST CSF, CSA CCM, FFIEC, HIPAA/HITECH, and FedRAMP.
+By default, you will see the Microsoft 365 data protection baseline assessment on the assessments page. If you want to add more assessments to cover other regulations and standards, you can manage assessments in Compliance Manager. Compliance Score provides more than ten out-of-box assessments,  including ones for GDPR, CCPA, ISO 27001, ISO 27018, NIST 800-53, NIST 800-171, NIST CSF, CSA CCM, FFIEC, HIPAA/HITECH, and FedRAMP.
 
 ### Managing assessments
 
