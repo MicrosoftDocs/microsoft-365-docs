@@ -26,7 +26,9 @@ The Compliance Score dashboard shows your **key improvement actions**—the ones
 
 To view all of your improvement actions, select the **Improvement actions** tab on your dashboard, or select **View all improvement actions** underneath the list of key improvement actions on your dashboard. This brings you to the the improvement actions page, where you can see all of your organization’s improvement actions.
 
-If you have a long list of actions, it may be helpful to filter your view. To do this, select **Filter** at the upper-right corner of the actions list, then select your desired criteria based on regulations and standards, solution, and group. You can also customize your view by selecting **Group** in the upper-right corner and, from the drop-down menu, select to view by group, solution, category, action type, or status.
+If you have a long list of actions, it may be helpful to filter your view. To do this, select **Filter** at the upper-right corner of the actions list. When the **Filters** flyout pane appears, then select your desired criteria based on regulations and standards, solution, and group. You can also customize your view by selecting **Group** in the upper-right corner and, from the drop-down menu, select to view by group, solution, category, action type, or status.
+
+The default view for this page does not show improvement actions with a test status of **Passed**. To view assessments that have passed testing, check the **Passed** box in the **Filters** flyout pane. Only actions with a test status of **Passed** count toward your score.
 
 The improvement actions page shows the following data points for each improvement action:
 
@@ -37,12 +39,12 @@ The improvement actions page shows the following data points for each improvemen
 - **Assessments**: the assessment  (which organizes controls to meet a certain compliance objective) in which the action resides
 - **Categories**: the related data protection category (i.e., protect information, manage devices, etc.)
 - **Test status**:
-    - **None**: no status update recorded
-    - **Not assessed**: testing has not started
-    - **Not in scope**: is excluded from Compliance Score calculation and does not increase your score
-    - **Partially tested**: testing is not yet complete
-    - **Failed high risk**: testing of implementation has failed, and the risk of non-compliance with the applicable standard is high
-    - **Passed**: implementation successfully tested
+    - **None** - no status update recorded
+    - **Not assessed** - testing has not started
+    - **Not in scope** - is excluded from Compliance Score calculation and does not increase your score
+    - **Partially tested* - testing is not yet complete
+    - **Failed high risk** - testing of implementation has failed, and the risk of non-compliance with the applicable standard is high
+    - **Passed** - implementation successfully tested
 - **Pointed achieved**: shows points achieved out of the maximum that could be earned
 
 ### Improvement actions details
@@ -70,7 +72,7 @@ Once the proper person is identified, be sure they hold a sufficient [role](comp
 
 1. From the improvement actions details page, select **Edit status** near the upper-left section of the screen. 
 
-2. In the edit status flyout pane, click or tap in the **Assigned to** box, which populates a **Suggested people** list of users. You can either select the user from the list, or type the name or email address of the person to whom you want to assign the action.
+2. In the edit status flyout pane, click or tap in the **Assigned to** box, which populates a **Suggested people** list of users. You can select the user from the list, or type the email address of the person to whom you want to assign the action.
 
 3. Select **Save and close** to complete the assignment. The assigned user will receive an email that the improvement action has been assigned to them, and they can then open the improvement action from their dashboard.
 
@@ -104,16 +106,16 @@ You can record the implementation status and date, and the test status and date 
 - **Implementation status**: select from these status options:
     - **Not implemented** - action not yet implemented
     - **Implemented** - action implemented
-    - **Alternative implementation** - select this option if you used other third-party tools or took other actions not recommended by Microsoft
+    - **Alternative implementation** - select this option if you used other third-party tools or took other actions not included in Microsoft recommendations
     - **Planned** - action is planned for implementation
     - **Not in scope** - an option for actions not relevant to your organization; selecting this status excludes the action from scoring; unselecting it will include the action in scoring
 - **Implementation date**: available field when implementation status is set to **Implemented** or **Alternative implementation**; toggle through the calendar pop-up to select the date
 - **Test status**: select from these options:
-    - **Not assessed**
-    - **Passed**
-    - **Failed low risk**
-    - **Failed medium risk**
-    - **Failed high risk**
+    - **Not assessed** - testing has not started
+    - **Passed**- implementation successfully tested
+    - **Failed low risk** - testing failed, low risk
+    - **Failed medium risk** - testing failed, medium risk
+    - **Failed high risk** - testing failed, high risk
 - **Test date**: toggle through the calendar pop-up to select the date
 
 > [!NOTE]
@@ -205,3 +207,9 @@ You can also modify your view to see assessments by group, product, or regulatio
 ### Managing improvement actions within an assessment
 
 From the assessment list, under the **Customer-managed actions** column, select the linked text on the row of the intended assessment. This takes you a filtered view of the improvement actions page showing the actions within that assessment.
+
+## Reporting
+
+You can export a report of all your improvement actions in Compliance Score. From the **Improvement actions** page, select **Export** in the upper-left corner of your screen, above your list of actions. This will produce an Excel worksheet with all your improvement actions and the filter categories shown on the **Improvement actions** page, which you can view and save to your local machine.
+
+You can also export a report from Compliance Manager. In Compliance Manager, go to the **Controls Info** tab and select **Export** in the upper-right section of the screen. This produces an Excel worksheet you can view and save.
