@@ -44,6 +44,9 @@ Recommendations for secured teams draw on a variety of Microsoft 365 capabilitie
 
 ![Recommended configuration for teams](../media/secure-team-configurations.png)
 
+![Recommended configuration for SharePoint sites](../media/SharePoint-site-configurations.png)
+
+
 As illustrated:
   
 - Baseline protection includes a public team and private team. Public teams can be discovered and accessed by anybody in the organization. Private teams can only be discovered and accessed by members of the team. Both of these configurations allow for sharing of the underlying SharePoint site on which files are stored outside the team group.
