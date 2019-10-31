@@ -383,8 +383,8 @@
 # [Regulatory compliance action plans](compliance-solutions-overview.md)
 
 ## [ISO — Recommended action plan](iso-action-plan.md)
-## [NIST — Recommended action plan](nist-action-plan.md) 
-
+## [NIST — Recommended action plan](nist-action-plan.md)
+## [CCPA - Frequently asked questions](ccpa-faq.md)
 ## [GDPR](gdpr.md)
 ### [Recommended action plan for GDPR](gdpr-action-plan.md)
 
