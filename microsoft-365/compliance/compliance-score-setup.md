@@ -16,10 +16,6 @@ description: "Learn how to sign in, set up permissions, and understand your dash
 
 # Microsoft Compliance Score setup (Preview)
 
-## Required licenses
-
-Compliance Score is available to organizations that have a subscription to Microsoft 365 E3 or E5, or a Volume Licensing equivalent (which consists of Office 365 E3 or E5, Enterprise Mobility + Security E3 or E5, and Windows 10 Enterprise E3/E5).
-
 ## Before you begin
 
 The Microsoft 365 global administrator for your organization will likely be the first user to access Compliance Score. We recommend the global admin sign in and set user permissions as outlined below when visiting Compliance Score for the first time.
@@ -35,9 +31,9 @@ Compliance Score uses a role-based access control (RBAC) permission model. Only 
 
 ### Where to set permissions
 
-The global admin for your organization can set user permissions in the Microsoft 365 compliance center or in Azure Active Directory (Azure AD). Once roles are set in either of these locations, users will be able to access Compliance Score and Compliance Manager.
+The global admin for your organization can set user permissions in the Microsoft 365 compliance center or in Azure Active Directory (Azure AD). Once roles are set in either of these locations, users will be able to access Compliance Score (as well as  Compliance Manager).
 
-Note that existing Compliance Manger roles do not transfer over to Compliance Score.  This means that if you were previously assigned a role in Compliance Manager, that role will not grant you access to Compliance Score. Your global admin will need to set new permissions and a role for you in the Microsoft 365 compliance center or Azure AD so that you can access Compliance Score.
+Note that existing Compliance Manger roles **do not** transfer over to Compliance Score.  This means that if you were previously assigned a role in Compliance Manager, that role will not grant you access to Compliance Score. Your global admin will need to set permissions and a role for you in the Microsoft 365 compliance center or Azure AD so that you can access Compliance Score.
 
 ### Role types
 
@@ -73,7 +69,9 @@ The Compliance Score dashboard is designed to provide you an at-a-glance view of
 
 ### Overall compliance score
 
-Your compliance score, featured prominently at the top, shows a percentage based on points achievable for completing improvement actions addressing key data protection standards and regulations. When you come to Compliance Score for the first time, your initial score is based on the built-in Microsoft 365 data protection baseline—a set of controls that includes common industry regulations and standards. Because Compliance Score scans your system of your existing Microsoft 365 solutions, it gives an initial assessment of your compliance posture based on privacy and security settings currently enabled by your organization.
+Your compliance score, featured prominently at the top, shows a percentage based on points achievable for completing improvement actions addressing key data protection standards and regulations. 
+
+When you come to Compliance Score for the first time,your initial score is based on the built-in Microsoft 365 data protection baseline—a set of controls that includes common industry regulations and standards. Because Compliance Score scans your system of existing Microsoft 365 solutions, it gives an initial assessment of your compliance posture based on privacy and security settings currently enabled by your organization.
 
 As you add assessments that are relevant to your organization, your score becomes even more meaningful. Learn more about [how your score is calculated](compliance-score-methodology.md).
 
@@ -83,14 +81,14 @@ This section lists the top improvement actions you can take right now to make th
 
 ### Solutions that affect your score
 
-This section shows which solutions contain actions that have the greatest opportunity to positively impact your score, and how many outstanding improvement actions you have in each solution.
+This section shows which solutions contain actions with the greatest opportunity to positively impact your score, and how many outstanding improvement actions you have in each solution.
 
 ### Compliance Score breakdown
 
 This section gives you a more detailed view of your score in two different ways:
 
-- **Categories**: this view shows the percentage of your overall score within data protection categories, such as “protect information” or “manage devices.”
-- **Assessments**: this view shows the percentage of your progress in managing assessments for particular compliance and data protection standards, regulations, or laws, such as GDPR or NIST 800-53.
+- **Categories**: shows the percentage of your overall score within data protection categories, such as “protect information” or “manage devices.”
+- **Assessments**: shows the percentage of your progress in managing assessments for particular compliance and data protection standards, regulations, or laws, such as GDPR or NIST 800-53.
 
 ### Filtering your dashboard view
 
