@@ -83,7 +83,7 @@
 #### [Set up Azure Rights Management for the previous version of Office 365 Message Encryption](set-up-azure-rms-for-previous-version-message-encryption.md)
 
 ## [Understand data classification (preview)](data-classification-overview.md)
-### [View labrl activity (preview)](data-classification-activity-explorer.md)
+### [View label activity (preview)](data-classification-activity-explorer.md)
 
 # Manage information governance
 ## [Import data](importing-pst-files-to-office-365.md)
