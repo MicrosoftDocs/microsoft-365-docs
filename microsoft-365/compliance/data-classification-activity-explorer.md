@@ -51,7 +51,7 @@ Microsoft 365 monitors and reports on 12 types of activities across SharePoint O
 - Label applied
 - Label changed (upgraded, downgraded, or removed)
 
-The value of understanding what actions are being taken with your sensitive labeled content is that you can see if the controls that you have already put into place, such as [data loss prevention policies](data-loss-prevention-policies.md) are effective or not. If not, or if you discover something unexpected, such as a large number of items that are labeled highly classified are being copied to a third party cloud service, you can create new data loss prevention policies and take new actions to restrict the undesired behavior.
+The value of understanding what actions are being taken with your sensitive labeled content is that you can see if the controls that you have already put into place, such as [data loss prevention policies](data-loss-prevention-policies.md) are effective or not. If not, or if you discover something unexpected, such as a large number of items that are labeled `highly confidential` and are downgraded `general`, you can manage your various policies and take new actions to restrict the undesired behavior.
 
 Once your filters are set, you can:
 
