@@ -82,6 +82,12 @@
 #### [Legacy information for Office 365 Message Encryption](legacy-information-for-message-encryption.md)
 #### [Set up Azure Rights Management for the previous version of Office 365 Message Encryption](set-up-azure-rms-for-previous-version-message-encryption.md)
 
+## [Data classification (preview)](data-classification-overview.md)
+### [Getting started with trainable classifiers (preview)](classifier-getting-started-with.md)
+### [Using a ready to use classifier (preview)](classifier-using-a-ready-to-use-classifier)
+### [Creating and training a classifier (preview)](classifier-creating-a-trainable-classifier.md)
+
+
 # Manage information governance
 ## [Import data](importing-pst-files-to-office-365.md)
 ### [Use network upload to import PST files](use-network-upload-to-import-pst-files.md)
