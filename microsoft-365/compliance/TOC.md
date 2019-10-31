@@ -581,6 +581,7 @@
 #### [PASF (UK)](offering-pasf-uk.md)
 
 ### North America
+#### [California Consumer Privacy Act (CCPA)](offering-ccpa.md)
 #### [Canadian Privacy Laws](offering-canadian-privacy-laws.md)
 
 ### South America
