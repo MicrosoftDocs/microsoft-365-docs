@@ -27,7 +27,7 @@ The solution catalog is organized into sections that contain information cards f
 
 ![Microsoft 365 solution catalog home page](media/m365-solution-catalog-home.png)
 
-When you select **View** for a solution card, you'll see detailed information about the compliance solution and how to get started. This information includes an overview, pre-configuration requirements, learning resources, and controls that allow you to pin the card to the navigation pane and the option to share the solution as link, email, or Microsoft Teams message.
+When you select **View** for a solution card, you'll see detailed information about the compliance solution and how to get started. This information includes an overview, pre-configuration requirements, learning resources, controls that allow you to pin the card to the navigation pane, and an option to share the solution as a link, email, or Microsoft Teams message.
 
 ![Microsoft 365 communication compliance solution](media/m365-solution-catalog-communication-compliance.png)
 
@@ -37,7 +37,7 @@ The **Information protection & governance** section shows you at a glance how yo
 
 ![Microsoft 365 solution catalog information protection and governance section](media/m365-solution-catalog-information-protection-governance.png)
 
-From here, you can go to a card for the following solutions:
+From here, you'll see cards for the following solutions:
 
 - [Data loss prevention](data-loss-prevention-policies.md): Detects sensitive content as it's used and shared throughout your organization, in the cloud and on devices, and helps prevent accidental data loss.
 - [Information governance](manage-information-governance.md): Manages your content lifecycle using solutions to import, store, and classify business-critical data so you can keep what you need and delete what you don’t.​
@@ -52,7 +52,7 @@ The **Internal risk management** section on the home page shows you at a glance 
 
 From here, you can go to a card for the following solution:
 
-- [Communication supervision](supervision-policies.md): Minimizes communication risks by helping you automatically capture inappropriate messages, investigate possible policy violations, and take steps to remediate.
+- [Communication compliance](communication-compliance.md): Minimizes communication risks by helping you automatically capture inappropriate messages, investigate possible policy violations, and take steps to remediate.
 
 ## Discovery & response section
 
@@ -60,18 +60,18 @@ The **Discovery & response** section on the home page shows you at a glance how 
 
 ![Microsoft 365 solution catalog discovery and response section](media/m365-solution-catalog-discovery-response.png)
 
-From here, you can go to a card for the following solutions:
+From here, you'll see cards for the following solutions:
 
 - [Audit](search-the-audit-log-in-security-and-compliance.md): Records user and admin activity from your organization so you can search the audit log and investigate a comprehensive list of activities across all locations and services.
 - [Data investigations](overview-data-investigations.md): Searches across content locations to identify sensitive, malicious, or misplaced data across Microsoft 365 locations so you can investigate and remediate any incidents, such as data spillage.
 - [Data subject requests](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md): Finds and exports a user’s personal data to help you respond to data subject requests for GDPR.
 - [eDiscovery](manage-legal-investigations.md)
-    - [eDiscovery](ediscovery-cases.md): Searches across content locations to identify, preserve, and export data in response to legal discovery requests.ediscovery-cases
+    - [Core eDiscovery](ediscovery-cases.md): Searches across content locations to identify, preserve, and export data in response to legal discovery requests.
     - [Advanced eDiscovery](overview-ediscovery-20.md): Builds on eDiscovery capabilities by providing intelligent analytics and  machine learning to help you further analyze data that’s relevant to discovery requests.
 
 ## How do I get this?
 
-- If you don't have the new Microsoft 365 solution catalog already, you'll have it soon. We are enabling the solution catalog for all Microsoft 365 subscriptions in an incremental rollout.
+- If you don't have the new Microsoft 365 solution catalog already, you'll have it soon. We're enabling the solution catalog for all Microsoft 365 subscriptions in an incremental rollout.
 
 - To visit the Microsoft 365 solution catalog, go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and sign in as a global administrator or compliance administrator. Select **Catalog** in the navigation pane on the left side of the screen to open the catalog home page.
 
@@ -93,7 +93,7 @@ We're still adding functionality to the Microsoft 365 compliance center and the 
 
 - **Microsoft Information Protection**, learn how Microsoft 365 solutions help you discover, classify, and protect sensitive information wherever it lives or travels.
     - **Get acquainted with and set up Microsoft Cloud App Security**. See [Quickstart: Get started with Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security).
-    - **Get started with Classifiers**. Classifying content and then labeling it so it can be protected and handled properly is the starting place for the information protection discipline. See [Getting started with trainable classifiers](classifier-getting-started-with.md).
+    - **Get started with classifiers**. Classifying content and then labeling it so it can be protected and handled properly is the starting place for the information protection discipline. See [Getting started with trainable classifiers](classifier-getting-started-with.md).
 
 - **Learn about and create Communication compliance policies** to quickly identify and remediate corporate code-of-conduct policy violations. See [Communication compliance in Microsoft 365](communication-compliance.md).
 
