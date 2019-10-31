@@ -23,35 +23,35 @@ Error remediation gives Advanced eDiscovery users the ability to rectify data is
 
 ## Identify documents with errors
 
-Documents with processing errors in a review set are now identified (with a banner). You can remediate or ignore the error. Because the file is identified, you can also view the file metadata.
+Documents with processing errors in a review set are now identified (with a banner). You can remediate or ignore the error. Because the file is identified, you can also view the file metadata. The following screenshot shows the processing error banner for a Word document in a review set that is password-protected.
 
-![image1](media/SIERimage1.png)
+![Banner displayed for document with processing error](media/SIERimage1.png)
 
+You can also search for documents that have processing errors by using the **Processing status** condition when [querying the documents in a review set](review-set-search.md).
 
-You can also search for all documents in a review set that have processing errors by using the *Processing status* condition when searching the documents in a review set.
-
-![image2](media/SIERimage2.png)
+![Use the Processing status condition to search for error documents](media/SIERimage2.png)
 
 ### Ignoring errors
 
-To ignore an error, which will remove the item from Bulk error remediation workflow, click **Ignore** in the error banner. After the error is ignored, the document banner will still indicate that there was a processing error and that it was ignored. You have the option to revert the decision if the document was incorrectly ignored by clicking **Revert** in the banner.
+You can ignore a processing error by clicking **Ignore** in the processing error banner. When you ignore an error, the document is removed from the [bul rror remediation workflow](error-remediation-when-processing-data-in-advanced-ediscovery.md). After an error is ignored, the document banner changes color and indicates the processing error was ignored. At any time, you can revert the decision to ignore the error by clicking **Revert**.
 
-![image3](media/SIERimage3.png)
+![Click Ignore to ignore the processing error](media/SIERimage3.png)
 
 
-You can also search for all documents that had a processing error that was ignored by using the *Ignored processing errors* condition when searching the documents in a review set.
+You can also search for all documents that had a processing error that was ignored by using the *Ignored processing errors* condition when querying documents in a review set.
 
-![image4](media/SIERimage4.png)
-
+![Use the Ignored processing errors condition to search for ignored error documents](media/SIERimage4.png)
 
 ## Remediate a document with errors
 
-Sometimes you may be required to remediate a processing error in documents (by removing a password, removing encryption, or recovering a corrupted document) and then adding the remediated document to the review set so it can be reviewed and exported with all other documents in the review set. To do this, follow these steps:
+Sometimes you may be required to remediate a processing error in documents (by removing a password, decrypting an encrypted file, or recovering a corrupted document) and then add the remediated document to the review set. This allows you to review and export the error document together with the other documents in the review set. 
+
+To remediate a single document, follow these steps:
 
 
-1. Click **Download** to download a copy of the file to a local computer.
+1. Click **Download** > **Download original** to download a copy of the file to a local computer.
 
-   ![image5](media/SIERimage5.png)
+   ![Download the document with the processing error](media/SIERimage5.png)
 
 2.  Remediate the error in the file offline. For encrypted files, that would require decryption software, to remove password protection, either provide the password and save the file or use a password cracker. After the file is remediated, go to the next step.
 
