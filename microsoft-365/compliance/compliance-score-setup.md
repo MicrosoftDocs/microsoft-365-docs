@@ -73,7 +73,7 @@ Your compliance score, featured prominently at the top, shows a percentage based
 
 When you come to Compliance Score for the first time,your initial score is based on the built-in Microsoft 365 data protection baseline—a set of controls that includes common industry regulations and standards. Because Compliance Score scans your system of existing Microsoft 365 solutions, it gives an initial assessment of your compliance posture based on privacy and security settings currently enabled by your organization.
 
-As you add assessments that are relevant to your organization, your score becomes even more meaningful. Learn more about [how your score is calculated](compliance-score-methodology.md).
+As you add assessments that are relevant to your organization, your score becomes even more meaningful. Learn more about [how your score is calculated](compliance-score-methodology.md) "Compliance Score dashboard".
 
 ### Key improvement actions
 
