@@ -18,7 +18,7 @@ description: Find documentation and resources for Microsoft 365--a complete, int
                 <ul id="home">
                     <li>
                         <a href="#home-all"></a>
-                        <ul id="home-all" class="cardsW">
+                        <ul id="home-all" class="cardsK">
                             <li class="fullSpan intro"><a href="https://www.microsoft.com/microsoft-365/default.aspx" data-raw-source="[Microsoft 365](https://www.microsoft.com/microsoft-365/default.aspx)">Microsoft 365</a> is a complete, intelligent solution, including Office 365, Windows 10, and Enterprise Mobility + Security, that empowers everyone to be creative and work together, securely.
                             </li>
                             <li>
@@ -34,7 +34,7 @@ description: Find documentation and resources for Microsoft 365--a complete, int
                                                 <div class="cardText">
                                                     <br />
                                                     <h3>Microsoft 365 Enterprise</h3>
-                                                    <p>Microsoft 365 Enterprise is designed for large organizations and integrates Office 365 Enterprise, Windows 10 Enterprise, and Enterprise Mobility + Security.</p>
+                                                    <p>Microsoft 365 Enterprise is designed for large organizations and integrates Office 365 Enterprise, Windows 10 Enterprise, and Enterprise Mobility + Security.<br></br></p>
                                                 </div>
                                             </div>
                                         </div>
@@ -74,7 +74,7 @@ description: Find documentation and resources for Microsoft 365--a complete, int
                                                 <div class="cardText">
                                                     <br />
                                                     <h3>Microsoft 365 Education</h3>
-                                                    <p>Microsoft 365 Education empowers educators to unlock creativity, promote teamwork, and provide a simple and safe experience in a single, affordable solution built for education.</p>
+                                                    <p>Microsoft 365 Education empowers educators to unlock creativity, promote teamwork, and provide a simple and safe experience in a single, affordable solution built for education.<br></br></p>
                                                 </div>
                                             </div>
                                         </div>
@@ -115,6 +115,26 @@ description: Find documentation and resources for Microsoft 365--a complete, int
                                                     <br />
                                                     <h3>Microsoft 365 Security</h3>
                                                     <p>Microsoft 365 security solutions help to protect your enterprise across attack surfaces.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://docs.microsoft.com/microsoft-365/campaigns/" target="blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="https://docs.microsoft.com/office/media/hub-tiles/M365-HubTile-Campaigns-Tile-400x140-new2.svg" alt="Microsoft 365 for Campaigns documentation and resources" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <br />
+                                                    <h3>Microsoft 365 for Campaigns</h3>
+                                                    <p>Help keep your campaign's or business's data and communications secure with this recommended configuration for Microsoft 365 Business.</p>
                                                 </div>
                                             </div>
                                         </div>
