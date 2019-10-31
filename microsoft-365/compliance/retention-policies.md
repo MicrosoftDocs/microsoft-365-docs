@@ -236,7 +236,7 @@ After a retention policy is assigned to a team, chat and channel messages can fo
 
 1. **If a chat or channel message is modified or deleted** by the user during the retention period, the message is moved (or copied, in the case of edit) to the SubstrateHolds folder (which is a hidden folder in every user or group mailbox) and is stored in this folder until the retention period expires. Messages are permanently deleted on the day the retention period expires.
 
-2. **If a chat or channel message isn't deleted** during the retention period, the message is moved to the SubstrateHolds folder within one day (from 0 to 24 hours) after the retention period expires. The message is permanently deleted one day after it was moved to the SubstrateHolds folder. 
+2. **If a chat or channel message isn't deleted** during the retention period, the message is moved to the SubstrateHolds folder within one day after the retention period expires (it takes from 0 to 24 hours). The message is permanently deleted one day after it is moved to the SubstrateHolds folder. 
 
 > [!NOTE]
 > Messages in the SubstrateHolds folder are searchable by eDiscovery tools. After a message is permanently deleted, it won't be returned in an eDiscovery search.
