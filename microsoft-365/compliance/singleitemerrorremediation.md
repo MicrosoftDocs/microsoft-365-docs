@@ -48,7 +48,6 @@ You can also search for all documents that had a processing error that was ignor
 
 Sometimes you may be required to remediate a processing error in documents (by removing a password, removing encryption, or recovering a corrupted document) and then adding the remediated document to the review set so it can be reviewed and exported with all other documents in the review set. To do this, follow these steps:
 
->  
 
 1. Click **Download** to download a copy of the file to a local computer.
 
