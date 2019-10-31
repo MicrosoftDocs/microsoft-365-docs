@@ -44,7 +44,7 @@ From here, you'll see cards for the following solutions:
 - [Information protection](protect-information.md): Discovers, classifies, and protects sensitive and business-critical content throughout its lifecycle across your organization.
 - [Records management](records-management.md): Uses intelligent classification to automate and simplify the retention schedule for regulatory, legal, and business-critical records in your organization.
 
-## Internal risk management section
+## Insider risk management section
 
 The **Insider risk management** section on the home page shows you at a glance how your organization can identify, analyze, and remediate internal risks before they cause harm.
 
