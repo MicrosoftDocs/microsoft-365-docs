@@ -110,7 +110,7 @@ Once the trainable classifier has processed enough positive samples to build a p
 
 21. Publish the classifier.
 
-22. Once published your classifier will be available as a condition in the [auto-apply retention label policy based on a condition](labels#applying-a-retention-label-automatically-based-on-conditions) and the [communication compliance workflow](communication-compliance-feature-reference.md).
+22. Once published your classifier will be available as a condition in the [auto-apply retention label policy based on a condition](labels#applying-a-retention-label-automatically-based-on-conditions).
 
 > [!CAUTION]
 > Once a classifier is published, it can't go through any additional training, so be very sure that you have tested and reviewed as many items as possible to ensure that the accuracy is as high as possible.
