@@ -86,6 +86,9 @@
 #### [Legacy information for Office 365 Message Encryption](legacy-information-for-message-encryption.md)
 #### [Set up Azure Rights Management for the previous version of Office 365 Message Encryption](set-up-azure-rms-for-previous-version-message-encryption.md)
 
+## [Understand data classification (preview)](data-classification-overview.md)
+### [View labrl activity (preview)](data-classification-activity-explorer.md)
+
 # Manage information governance
 ## [Import data](importing-pst-files-to-office-365.md)
 ### [Use network upload to import PST files](use-network-upload-to-import-pst-files.md)
