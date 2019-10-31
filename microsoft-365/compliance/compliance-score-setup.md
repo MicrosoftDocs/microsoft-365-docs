@@ -65,7 +65,7 @@ For details, read [roles and permissions in the Microsoft 365 compliance center]
 
 The Compliance Score dashboard is designed to provide you an at-a-glance view of your current compliance posture.
 
-![Compliance Score - dashboard](media/compliance-score-dashboard.png)
+![Compliance Score - dashboard](media/compliance-score-dashboard.png "Compliance Score dashboard")
 
 ### Overall compliance score
 
