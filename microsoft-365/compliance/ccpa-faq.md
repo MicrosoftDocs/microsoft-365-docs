@@ -38,11 +38,11 @@ Many of the CCPA’s rights afforded to Californians are similar to the rights t
 
 To begin your CCPA journey, you should focus on five key steps:
 
-- **Discover**: Identify what Personal Information you have and where it resides
-- **Map**: Determine how you are sharing Personal Information with third parties and identify if the third party is subject to an exception from the CCPA opt-out requirements
-- **Manage**: Govern how the data is used and accessed
-- **Protect**: Establish security controls to prevent, detect, and respond to vulnerabilities and data breaches
-- **Document**: Document a data breach response program and ensure your contracts with applicable third parties are able to take advantage of the opt-out exceptions
+- **Discover**: Identify what Personal Information you have and where it resides.
+- **Map**: Determine how you are sharing Personal Information with third parties and identify if the third party is subject to an exception from the CCPA opt-out requirements.
+- **Manage**: Govern how the data is used and accessed.
+- **Protect**: Establish security controls to prevent, detect, and respond to vulnerabilities and data breaches.
+- **Document**: Document a data breach response program and ensure your contracts with applicable third parties are able to take advantage of the opt-out exceptions.
 
 You need to understand what your organization’s specific obligations are under the CCPA and how you meet them, though Microsoft is here to help you on your journey.
 
@@ -63,12 +63,12 @@ The CCPA requires regulated businesses that collect, use, transfer, and sell per
 
 The CCPA requires disclosure of the following:
 
-- Categories of personal information of the consumer that have been collected;
-- Categories of sources used in collection;
-- The business or commercial purposes for collecting;
-- The categories of third parties with whom the personal information is “shared”;
-- Categories of personal information that has been “sold” and the categories of “third parties” to whom each category of personal information was sold;
-- Categories of personal information that has been “disclosed for a business purpose” (i.e. transferred but not a “sale”) and the categories of “third parties” to whom each category of personal information was transferred; and
+- Categories of personal information of the consumer that have been collected.
+- Categories of sources used in collection.
+- The business or commercial purposes for collecting.
+- The categories of third parties with whom the personal information is “shared”.
+- Categories of personal information that has been “sold” and the categories of “third parties” to whom each category of personal information was sold.
+- Categories of personal information that has been “disclosed for a business purpose” (i.e. transferred but not a “sale”) and the categories of “third parties” to whom each category of personal information was transferred.
 - The specific pieces of personal information that has been collected about that consumer.
 
 **How is data “sold” under the CCPA?**
@@ -103,10 +103,10 @@ As Microsoft has implemented GDPR-related DSRs globally, we are currently in an 
 
 There are many differences. It’s easier to focus on the similarities, including:
 
-- Transparency/disclosure obligations,
-- Consumer rights to access, delete, and receive a copy of data,
-- Definition of “service providers” that is similar to how GDPR defines “processors” with a similar contractual obligation, and
-- Definition of “businesses” that encompasses the GDPR definition of “controllers.”
+- Transparency/disclosure obligations.
+- Consumer rights to access, delete, and receive a copy of data.
+- Definition of “service providers” that is similar to how GDPR defines “processors” with a similar contractual obligation.
+- Definition of “businesses” that encompasses the GDPR definition of “controllers”.
 
 The biggest difference in CCPA is the core requirement to enable an opt-out from sales of data to third parties (with “sale” broadly defined to include sharing of data for valuable consideration). This is a narrower and more specific obligation than the broad GDPR right to object to processing, which encompasses this type of “sale,” but is not specifically limited to covering this type of sharing.
 
