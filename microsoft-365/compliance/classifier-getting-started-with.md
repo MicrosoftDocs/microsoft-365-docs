@@ -38,7 +38,7 @@ Sensitivity and retention labels can then be automatically applied that make the
 This classification method is particularly well suited to content that, by it's nature, isn't predisposed to being easily identified by either the manual or automated pattern matching methods. This method of classification is more about training a classifier to identify an item based on what the item is, not by elements that are in the item (pattern matching). A classifier learns how to identify a type of content by looking a hundreds of examples of the content you are interested in classifying. You start by feeding it examples that are definitely in the category, then once it processes those, you test it by giving it a mix of both matching and non-matching examples. The classifier then makes predictions as to whether or not any given item falls into the category you are building. You then confirm its results, sorting out the positives, negatives, false positives and false negatives to help increase the accuracy of its predictions. When you publish the trained classifier, it sorts through items in locations, like SharePoint Online, Exchange, and OneDrive and classifies the content.
 
 > [!IMPORTANT]
-> Both types of classifiers are available as a condition for [auto-apply retention label policy based on a condition](labels#applying-a-retention-label-automatically-based-on-conditions).
+> Both types of classifiers are available as a condition for [auto-apply retention label policy based on a condition](labels.md#applying-a-retention-label-automatically-based-on-conditions).
 > [!IMPORTANT]
 > Trainable classifiers only work with items that are not encrypted and are in english.
 
