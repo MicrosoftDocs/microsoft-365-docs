@@ -54,7 +54,7 @@ Microsoft has trained and tested number of classifiers using very large sample d
 
 9. Choose `Apply label to content that matches a trainable classifier`.
 
-![selecting classifier as a condition](media\classifier-pre-trained-apply-label-match-trainable-classifier.png).
+![selecting classifier as a condition](media/classifier-pre-trained-apply-label-match-trainable-classifier.png).
 
 10. Choose your classifier from the list, in this case `Source Code`
 
