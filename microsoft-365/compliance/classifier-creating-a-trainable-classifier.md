@@ -22,7 +22,7 @@ To learn more about the different types of classifiers, see [Getting started wit
 
 This timeline reflects a sample deployment.
 
-![trainable-classifier-timeline](media\trainable-classifier-deployment-timeline_version3.png)
+![trainable-classifier-timeline](media/trainable-classifier-deployment-timeline_version3.png)
 
 
 ## Seed content
