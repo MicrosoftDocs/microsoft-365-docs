@@ -162,4 +162,3 @@ In October, 2019, a number of amendments were passed to the CCPA. One amendment 
 **As a Microsoft customer, do I need to implement the opt-out control for transfers to Microsoft?**
 
 No. As a provider of online services, we are taking steps to ensure that we qualify as a “Service Provider” under CCPA. As noted above, transfers of personal information to service providers are permitted, even where a consumer has opted out.
-
