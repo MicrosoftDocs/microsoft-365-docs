@@ -46,7 +46,7 @@ To include or exclude guests and external users in conditional access rules, cli
 ### Guests vs. external users
 In Azure AD, guest and external users are the same. The user type for both of these is Guest. Guest users are B2B users.
 
-Microsoft Teams differentiates between guest users and external users within the app, but these are both B2B users when authenticating. 
+Microsoft Teams differentiates between guest users and external users within the app, but these are both B2B users when authenticating. For more information about Teams guest and external users, see [Enabling guest and external access for Teams](teams-access-policies.md#enabling-guest-and-external-access-for-teams).
 
 ### Require MFA always for guest and external users
 This rule prompts guests to register for MFA in your tenant, regardless of whether they're registered for MFA in their home tenant. When accessing resources in your tenant, guests and external users are required to use MFA for every request. 
@@ -61,4 +61,5 @@ Only one organization can manage a device. If you don't exclude guest and extern
 
 ## Next steps
 
-[Learn about policy recommendations for securing email](secure-email-recommended-policies.md)
+[Learn how to enable Teams conditional access](teams-access-policies.md)
+

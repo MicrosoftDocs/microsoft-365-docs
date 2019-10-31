@@ -21,9 +21,9 @@ ms.collection:
 
 This article describes how to implement the recommended identity and device-access policies to protect Teams chats, groups, and content such as files and calendars. This guidance builds on the [Common identity and device access policies](identity-access-policies.md), with additional information that's Teams-specific. Because Teams integrates with our other products, also see [Policy recommendations for securing SharePoint sites and files](sharepoint-file-access-policies.md) and [Policy recommendations for securing email](secure-email-recommended-policies.md).
 
-These recommendations are based on three different tiers of security and protection for Teams that can be applied based on the granularity of your needs: baseline, sensitive, and highly regulated. You can learn more about these security tiers, and the recommended client operating systems, referenced by these recommendations in the [Identity and device access configurations](microsoft-365-policies-configurations.md).
+These recommendations are based on three different tiers of security and protection for Teams that can be applied based on the granularity of your needs: baseline, sensitive, and highly regulated. You can learn more about these security tiers and the recommended policies referenced by these recommendations in the [Identity and device access configurations](microsoft-365-policies-configurations.md).
 
-Additional recommendations specific to Teams deployment are included in this article, to cover specific authentication circumstances, including for users outside your organization, and you will need to follow this guidance for a complete security experience.
+Additional recommendations specific to Teams deployment are included in this article to cover specific authentication circumstances, including for users outside your organization. You will need to follow this guidance for a complete security experience.
 
 ## Getting started with Teams before other dependent services
 
@@ -74,7 +74,7 @@ For reference, the following diagram illustrates the services Teams relies on. F
 
 ## Enabling guest and external access for Teams
 
-In Azure AD, guest and external users are the same. The user type for both of these is Guest. Guest users are B2B users. Microsoft Teams differentiates between guest users and external users in the app. While it's important to understand how each of these are treated in Teams, both types of users are B2B users in Azure AD and the recommended policies for B2B users apply to both.
+In Azure AD, guest and external users are the same. The user type for both of these is Guest. Guest users are B2B users. Microsoft Teams differentiates between guest users and external users in the app. While it's important to understand how each of these are treated in Teams, both types of users are B2B users in Azure AD and the recommended policies for B2B users apply to both. For recommended policies to allow guest access, see [Policies for allowing guest and external B2B access](identity-access-policies-guest-access.md).
 
 ### Guest Access in Teams
 
@@ -111,3 +111,9 @@ Please review [Manage meeting policies in Teams](https://docs.microsoft.com/en-u
 Teams also allows you to use apps in various places, such as channels or personal chats. Having policies around what apps can be added and used, and where, is essential to maintaining a content-rich environment that is also secure.
 
 For more reading about App Permission Policies, check out [Manage app permission policies in Microsoft Teams](https://docs.microsoft.com/en-us/microsoftteams/teams-app-permission-policies).
+
+## Next steps
+
+[Learn how to enable conditional access for Exchange Online](secure-email-recommended-policies.md)
+
+
