@@ -32,7 +32,7 @@ Or, your business needs enterprise features, such as Office 365 ProPlus, Windows
 Migrating is easy: Just switch licenses. All your data and configuration in your current subscription is maintained. There is nothing for you to do to prepare for the migration and nothing to do afterward, except take advantage of the new features. 
 
 >[!Note]
->You can also use a Microsoft 365 Business subscription for up to 300 seats and get a Microsoft 365 Enterprise E3 subscription for more than 300 seats. However, Office 365 ATP is not included with Microsoft 365 Enterprise E3. You should add additional Office 365 ATP licenses for the users in your Microsoft 365 Enterprise E3 subscription.
+>You can also use a Microsoft 365 Business subscription for up to 300 seats and get a Microsoft 365 Enterprise E3 subscription for more than 300 seats. However, Office 365 ATP is not included with Microsoft 365 Enterprise E3. For continued threat protection, you should add additional Office 365 ATP licenses so that all of the users in scope of your Office 365 ATP polices are licensed.
 >
 
 ## Differences between Microsoft 365 Business and Microsoft 365 Enterprise
@@ -99,7 +99,7 @@ Your users can now enjoy unlimited storage in the Exchange Online mailboxes and 
 You can begin using Cloud App Discovery, Azure AD Connect Health, and SSO for more than 10 apps.
 
 >[!Note]
->After migrating to Microsoft 365 Enterprise E3, you no longer Outlook Customer Manager and MileIQ.
+>Users migrated to Microsoft 365 Enterprise E3 can no longer use Outlook Customer Manager and MileIQ.
 >
 
 <a name="threat-protection"></a>
@@ -122,7 +122,7 @@ Windows 10 Business includes these protections:
 Windows 10 Enterprise E3 also includes enterprise management of hardware-based isolation for Microsoft Edge.
 
 >[!Note]
->After migrating to Microsoft 365 Enterprise E3, you no longer have Office 365 ATP. You can purchase additional Office 365 ATP licenses for your Microsoft 365 Enterprise E3 subscription and assign them to your user accounts.
+>Users migrated to Microsoft 365 Enterprise E3 will each require an Office 365 ATP license for continued threat protection. Be sure to purchase additional Office 365 ATP licenses so that all of the users in scope of your Office 365 ATP polices are licensed. 
 >
 
 ### Device management with Intune
