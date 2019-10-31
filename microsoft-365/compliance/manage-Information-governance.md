@@ -16,7 +16,7 @@ description: "Learn about information governance in Microsoft 365."
 
 # Manage information governance
 
-Microsoft 365 includes capabilities to help you with managed information governance across your organization.
+ Manage your content lifecycle using Microsoft 365 features to import, store, and classify business-critical data so you can keep what you need and delete what you don't.
 
 |**Capability**|**More information**|
 |:-----|:-----|
