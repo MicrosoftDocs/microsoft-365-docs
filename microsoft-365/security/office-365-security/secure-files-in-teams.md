@@ -44,9 +44,6 @@ Recommendations for secured teams draw on a variety of Microsoft 365 capabilitie
 
 ![Recommended configuration for teams](../media/secure-team-configurations.png)
 
-![Recommended configuration for SharePoint sites](../media/SharePoint-site-configurations.png)
-
-
 As illustrated:
   
 - Baseline protection includes a public team and private team. Public teams can be discovered and accessed by anybody in the organization. Private teams can only be discovered and accessed by members of the team. Both of these configurations allow for sharing of the underlying SharePoint site on which files are stored outside the team group.
@@ -98,9 +95,9 @@ If you don't allow external sharing, users with a business need will find altern
   
 ### Device access settings
 
-Device access settings for SharePoint and OneDrive let you determine whether access is limited to browser only (files can't be downloaded) or if access is blocked. For more information, see [Control access from unmanaged devices](https://docs.microsoft.com/en-us/sharepoint/control-access-from-unmanaged-devices). 
+Device access settings for SharePoint and OneDrive let you determine whether access is limited to browser only (files can't be downloaded) or if access is blocked. For more information, see [Control access from unmanaged devices](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices). 
 
-To use device access settings with recommended conditional access policies in Azure Active Directory, see [Policy recommendations for securing SharePoint sites and files](https://docs.microsoft.com/en-us/microsoft-365/enterprise/sharepoint-file-access-policies).
+To use device access settings with recommended conditional access policies in Azure Active Directory, see [Policy recommendations for securing SharePoint sites and files](https://docs.microsoft.com/microsoft-365/enterprise/sharepoint-file-access-policies).
   
 Visit these settings to decide if you want to change the default settings for OneDrive sites. Currently, the sharing and device access settings are duplicated from the SharePoint admin center and apply to both environments.
   
