@@ -98,7 +98,7 @@ To learn more about messaging channel support in communication compliance polici
 
 ## Workflow
 
-Communication compliance helps you address common pain points associated with complying with internal policies and regulatory compliance requirements. With focused policy templates and a flexible workflow, you can use actionable insights to quickly resolve detected compliance issues. 
+Communication compliance helps you address common pain points associated with complying with internal policies and regulatory compliance requirements. With focused policy templates and a flexible workflow, you can use actionable insights to quickly resolve detected compliance issues.
 
 Identifying and resolving compliance issues with communication compliance in Microsoft 365 uses the following workflow:
 
@@ -106,7 +106,7 @@ Identifying and resolving compliance issues with communication compliance in Mic
 
 ### Configure
 
-In this workflow step, you identify your compliance requirements and configure applicable communication compliance policies. Policy templates are a great way to not only quickly configure a new compliance policy, but to also quickly modify and update policies as your requirements change. For example, you may want to quickly test a policy for offensive language and anti-harassment on communications for a small group of users before configuring a policy for all users in your organization. The 
+In this workflow step, you identify your compliance requirements and configure applicable communication compliance policies. Policy templates are a great way to not only quickly configure a new compliance policy, but to also quickly modify and update policies as your requirements change. For example, you may want to quickly test a policy for offensive language and anti-harassment on communications for a small group of users before configuring a policy for all users in your organization.
 
 You can choose from the following policy templates in the Microsoft 365 compliance center:
 
@@ -137,7 +137,7 @@ The next step is to remediate communication compliance issues you've investigate
 
 ### Monitor
 
-Keeping track and managing compliance issues identified by communication compliance policies spans the entire workflow process. As alerts are generated and investigation and remediation actions are implemented, existing policies may need review and updates, and new policies may need to be created. 
+Keeping track and managing compliance issues identified by communication compliance policies spans the entire workflow process. As alerts are generated and investigation and remediation actions are implemented, existing policies may need review and updates, and new policies may need to be created.
 
 - **Monitor and report**: Use communication compliance dashboards, reports, export logs, and events recorded in the unified Office 365 audit logs to continually evaluate and improve your compliance posture.
 
