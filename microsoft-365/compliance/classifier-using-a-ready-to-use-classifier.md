@@ -27,6 +27,7 @@ Microsoft has trained and tested number of classifiers using very large sample d
 
 > [!NOTE]
 > Before using ready to use classifiers in your classification and labeling workflow, you should test it against a sample of your organization's content that you feel fits the category to verify that its classification predictions meet your expectations.
+
 > [!IMPORTANT]
 > Please note that the offensive language, harassment, profanity, and threat classifiers only work with searchable text are not exhaustive or complete.  Further, language and cultural standards continually change, and in light of these realities, Microsoft reserves the right to update these classifiers in its discretion. While the classifiers may assist your organization in monitoring offensive and other language used, the classifiers do not address consequences of such language and are not intended to provide your organization’s sole means of monitoring or responding to the use of such language. Your organization, and not Microsoft or its subsidiaries, remains responsible for all decisions related to monitoring, enforcement, blocking, removal and retention of any content identified by a pre-trained classifier.
 
@@ -47,7 +48,7 @@ Microsoft has trained and tested number of classifiers using very large sample d
 
 6. Choose `Create new labels` and create a label for use just with this test. When you do this, leave `Retention` set to off. You don't want to turn on any retention or other actions. In this case, you'll be using using the retention label simply as a text label, without enforcing any actions. For example, you can create a retention label named "SourceCode classifier test" with no actions, and then auto-apply that retention label to content with that has Source code classifier as a condition. To learn more about creating retention labels, see [Overview of retention labels](\labels.md).
   
-7. Choose `Auto-apply a label` and then `Choose a label to auto-apply`. To learn more about using condition based auto-apply a label see, [auto-apply retention label policy based on a condition](../labels#applying-a-retention-label-automatically-based-on-conditions).
+7. Choose `Auto-apply a label` and then `Choose a label to auto-apply`. To learn more about using condition based auto-apply a label see, [auto-apply retention label policy based on a condition](labels#applying-a-retention-label-automatically-based-on-conditions).
 
 8. Choose your test label from the list and choose `Next`.
 
@@ -81,4 +82,4 @@ See also:
 
 - [Getting started with trainable classifiers (preview)](classifier-getting-started-with.md)
 - [Overview of retention labels](\labels.md)
-- [Auto-apply retention label policy based on a condition](../labels#applying-a-retention-label-automatically-based-on-conditions)
+- [Auto-apply retention label policy based on a condition](labels#applying-a-retention-label-automatically-based-on-conditions)
