@@ -82,7 +82,7 @@ When the ready to use classifiers don't meet your needs, you can create and trai
 
 #### Process flow for creating trainable classifiers
 
-Creating and publishing a trainable classifier for use in compliance solutions such as retention policies and communication supervision follows this flow. For more detail on creating a trainable classifier see, [Creating a trainable classifier](classifier-creating-a-trainable- classifier.md).
+Creating and publishing a trainable classifier for use in compliance solutions such as retention policies and communication supervision follows this flow. For more detail on creating a trainable classifier see, [Creating a trainable classifier](classifier-creating-a-trainable-classifier.md).
 
 ![process flow trainable classifier](media/classifier-trainable-classifier-flow.png)
 
