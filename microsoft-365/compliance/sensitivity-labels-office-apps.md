@@ -131,7 +131,7 @@ Labeled documents and emails can be opened in any version of of Office by any au
 
 ## Support for SharePoint and OneDrive files protected by sensitivity labels
 
-To use the Office built-in labeling client in Office on the web, the document must be located in a OneDrive for Business or SharePoint Online instance that has been opted-in to the [Office 365 groups and sites public preview for sensitivity labels](sensitivity-labels-sharepoint-onedrive-files.md).
+To use the Office built-in labeling client in Office on the web, the document must be located in a OneDrive for Business or SharePoint Online instance that has opted-in to the [Enable sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
 
 ## When Office 365 applies marks and encryption to content
 
