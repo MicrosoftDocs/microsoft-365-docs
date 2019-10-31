@@ -49,19 +49,19 @@ In order to use automatic or recommended sensitivity labeling, your users also n
 
 Where support exists for a capability, the following table provides the minimum version that supports the capability for that app. TBD indicates we don't yet have support for the capability on that platform.
 
-|Capability                                                                                                        |Windows Desktop |Mac Desktop |iOS    |Android      |Web                |
-|------------------------------------------------------------------------------------------------------------------|----------------|------------|-------|-------------|-------------------|
-|[Manually apply, change, or remove label](https://support.office.com/article/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| 1910+          | 16.21+   | 2.21+ | 16.0.11231+ | [Preview](sensitivity-labels-sharepoint-onedrive-files.md)    |
-|[Apply a default label](sensitivity-labels.md#what-label-policies-can-do)                                         | 1910+          | 16.21+   | 2.21+ | 16.0.11231+ | TBD    |
-|[Require a justification to change a label](sensitivity-labels.md#what-label-policies-can-do)                     | 1910+          | 16.21+   | 2.21+ | 16.0.11231+ | [Preview](sensitivity-labels-sharepoint-onedrive-files.md)    |
-|[Provide help link to a custom help page](https://docs.microsoft.com/en-us/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do)                       | 1910+          | 16.21+   | 2.21+ | 16.0.11231+ | [Preview](sensitivity-labels-sharepoint-onedrive-files.md)    |
-|[Mark the content](sensitivity-labels.md#what-label-policies-can-do)                                              | 1910+          | 16.21+   | 2.21+ | 16.0.11231+ | [Preview](sensitivity-labels-sharepoint-onedrive-files.md)    |
-|[Assign permissions now](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21+   | 2.21+ | 16.0.11231+ | [Preview](sensitivity-labels-sharepoint-onedrive-files.md)    |
-|[Let users assign permissions](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+          | 16.21+   | TBD   | TBD         | TBD               |
-|[View label usage with label analytics](label-analytics.md) and send data for administrators                      | TBD            | TBD        | TBD   | TBD         | TBD               |
-|[Require users to apply a label to their email and documents](sensitivity-labels.md#what-label-policies-can-do)   | TBD            | TBD        | TBD   | TBD         | TBD               |
-|[Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md)                    | Preview: rolling out to [Office Insider channel](https://office.com/insider)            | TBD        | TBD   | TBD         | [Preview](sensitivity-labels-sharepoint-onedrive-files.md)               |
-|Support [AutoSave](https://support.office.com/article/6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) and [co-authoring](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) on labeled and protected documents| TBD | TBD | TBD | TBD | [Preview](sensitivity-labels-sharepoint-onedrive-files.md) |
+|Capability                                                                                                        |Windows Desktop |Mac Desktop |iOS    |Android      |Web                                                         |
+|------------------------------------------------------------------------------------------------------------------|----------------|------------|-------|-------------|------------------------------------------------------------|
+|[Manually apply, change, or remove label](https://support.office.com/article/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Preview](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[Apply a default label](sensitivity-labels.md#what-label-policies-can-do)                                         | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | TBD                                                        |
+|[Require a justification to change a label](sensitivity-labels.md#what-label-policies-can-do)                     | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Preview](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[Provide help link to a custom help page](sensitivity-labels#what-label-policies-can-do)                          | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Preview](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[Mark the content](sensitivity-labels.md#what-label-policies-can-do)                                              | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Preview](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[Assign permissions now](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Preview](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[Let users assign permissions](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+          | 16.21+     | TBD   | TBD         | TBD                                                        |
+|[View label usage with label analytics](label-analytics.md) and send data for administrators                      | TBD            | TBD        | TBD   | TBD         | TBD                                                        |
+|[Require users to apply a label to their email and documents](sensitivity-labels.md#what-label-policies-can-do)   | TBD            | TBD        | TBD   | TBD         | TBD                                                        |
+|[Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md)                    | Preview: rolling out to [Office Insider channel](https://office.com/insider)                           | TBD | TBD | TBD | [Preview](sensitivity-labels-sharepoint-onedrive-files.md) |
+|Support [AutoSave](https://support.office.com/article/6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) and [co-authoring](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) on labeled and protected documents | TBD | TBD | TBD | TBD | [Preview](sensitivity-labels-sharepoint-onedrive-files.md) |
 |
 
 ## Support for sensitivity label capabilities in Outlook
@@ -70,16 +70,16 @@ Where support exists for a capability, the following table provides the minimum 
 
 |Capability                                                                                                        |Outlook on Windows Desktop |Outlook on Mac Desktop  |Outlook on iOS |Outlook on Android |Outlook on the web |
 |------------------------------------------------------------------------------------------------------------------|---------------------------|------------------------|---------------|-------------------|-------------------|
-|[Manually apply, change, or remove label](https://support.office.com/article/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| 1910+                     | 16.21+               | 4.71+         | 4.0.39+           | Yes               |
-|[Apply a default label](sensitivity-labels.md#what-label-policies-can-do)                                         | 1910+                     | 16.21+               | 4.71+         | 4.0.39+           | Yes               |
-|[Require a justification to change a label](sensitivity-labels.md#what-label-policies-can-do)                     | 1910+                     | 16.21+               | 4.71+         | 4.0.39+           | Yes               |
-|[Provide help link to a custom help page](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+                     | 16.21+               | 4.71+         | 4.0.39+           | Yes               |
-|[Mark the content](sensitivity-labels.md#what-label-policies-can-do)                                              | 1910+                     | 16.21+               | 4.71+         | 4.0.39+           | Yes               |
-|[Assign permissions now](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+                     | 16.21+               | 4.71+         | 4.0.39+           | Yes               |
-|[Let users assign permissions](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16.21+               | 4.71+         | 4.0.39+           | Yes               |
+|[Manually apply, change, or remove label](https://support.office.com/article/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| 1910+                     | 16.21+                 | 4.71+         | 4.0.39+           | Yes               |
+|[Apply a default label](sensitivity-labels.md#what-label-policies-can-do)                                         | 1910+                     | 16.21+                 | 4.71+         | 4.0.39+           | Yes               |
+|[Require a justification to change a label](sensitivity-labels.md#what-label-policies-can-do)                     | 1910+                     | 16.21+                 | 4.71+         | 4.0.39+           | Yes               |
+|[Provide help link to a custom help page](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+                     | 16.21+                 | 4.71+         | 4.0.39+           | Yes               |
+|[Mark the content](sensitivity-labels.md#what-label-policies-can-do)                                              | 1910+                     | 16.21+                 | 4.71+         | 4.0.39+           | Yes               |
+|[Assign permissions now](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+                     | 16.21+                 | 4.71+         | 4.0.39+           | Yes               |
+|[Let users assign permissions](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16.21+                 | 4.71+         | 4.0.39+           | Yes               |
 |[View label usage with label analytics](label-analytics.md) and send data for administrators                      | TBD                       | TBD                    | TBD           | TBD               | TBD               |
 |[Require users to apply a label to their email and documents](sensitivity-labels.md#what-label-policies-can-do)   | TBD                       | TBD                    | TBD           | TBD               | TBD               |
-|[Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md)                    | TBD                       | TBD                    | TBD           | TBD               | Preview rolling in [Targeted release](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide)               |
+|[Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md)                    | TBD                       | TBD                    | TBD           | TBD               | Preview rolling in [Targeted release](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide) |
 |
 
 ## About the Office built-in labeling client
