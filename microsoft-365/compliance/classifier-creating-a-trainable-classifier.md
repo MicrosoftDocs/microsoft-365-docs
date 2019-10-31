@@ -44,7 +44,7 @@ Once the trainable classifier has processed enough positive samples to build a p
 1. Collect between 50-500 seed content items. These must be only samples that strongly represent the type of content you want the trainable classifier to positively identify as being in the classification category. See, [Default crawled file name extensions and parsed file types in SharePoint Server](https://docs.microsoft.com/en-us/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) for the supported file types.
 
 > [!IMPORTANT]
-> The sample items must not be encrypted and they must be in English.
+> The seed and test sample items must not be encrypted and they must be in English.
 
 > [!IMPORTANT]
 > Make sure the items in your seed set are **strong** examples of the category. The trainable classifier initially builds its model based on what you seed it with. The classifier assumes all seed samples are strong positives and has no way of knowing if a sample is a weak or negative match to the category.
@@ -54,7 +54,7 @@ Once the trainable classifier has processed enough positive samples to build a p
 > [!TIP]
 > If you create a new site and folder for your seed data, allow at least an hour for that location to be indexed before creating the trainable classifier that will use that seed data.
 
-3. Sign in to Microsoft 365 compliance center with compliance admin or security admin role access and open [Microsoft 365 compliance center](https://compliance.microsoft.com/dataclassification?viewid=overview) or [Microsoft 365 security center](https://security.microsoft.com/dataclassification?viewid=overview) > **Data classification**
+3. Sign in to Microsoft 365 compliance center with compliance admin or security admin role access and open **Microsoft 365 compliance center** or **Microsoft 365 security center** > **Data classification**
 
 4. Choose the **Trainable classifiers** tab.
 
