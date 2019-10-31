@@ -142,7 +142,7 @@ The pre-configured templates included with Compliance Manager are:
 
 ## Compliance Score
 
-Microsoft Compliance Score is a [preview feature](compliance-score.md) in the Microsoft 365 compliance center to help you understand your organization’s compliance posture. It calculates a risk-based score measuring your progress in completing actions that help reduce risks around data protection and regulatory standards. Knowing your overall compliance score helps your organization understand and manage compliance. Understand [how your compliance score is calculated](compliance-score-methodology.md).
+[Microsoft Compliance Score (Preview)](compliance-score.md) is a feature in the Microsoft 365 compliance center that helps you understand your organization’s compliance posture. It calculates a risk-based score measuring your progress in completing actions that help reduce risks around data protection and regulatory standards. Knowing your overall compliance score helps your organization understand and manage compliance. Understand [how your compliance score is calculated](compliance-score-methodology.md).
   
 > [!IMPORTANT]
 > Compliance Score does not express an absolute measure of organizational compliance with any particular standard or regulation. It expresses the extent to which you have adopted controls which can reduce the risks to personal data and individual privacy. No service can guarantee that you are compliant with a standard or regulation, and the Compliance Score should not be interpreted as a guarantee in any way.
