@@ -47,7 +47,7 @@ In order to use automatic or recommended sensitivity labeling, your users also n
 
 ## Support for sensitivity label capabilities in Word, Excel, and PowerPoint
 
-Where support exists for a capability, the following table provides the minimum version that supports the capability for that app. TBD indicates we don't yet have support for the capability on that platform.
+For each capability, the following table provides the minimum version you need to use for that app. TBD indicates we don't yet have support for the capability on that platform.
 
 |Capability                                                                                                        |Windows Desktop |Mac Desktop |iOS    |Android      |Web                                                         |
 |------------------------------------------------------------------------------------------------------------------|----------------|------------|-------|-------------|------------------------------------------------------------|
@@ -66,7 +66,7 @@ Where support exists for a capability, the following table provides the minimum 
 
 ## Support for sensitivity label capabilities in Outlook
 
-Where support exists for a capability, the following table provides the minimum version that supports the capability for that app. TBD indicates we don't yet have support for the capability on that platform.
+For each capability, the following table provides the minimum version you need to use for that app. TBD indicates we don't yet have support for the capability on that platform.
 
 |Capability                                                                                                        |Outlook on Windows Desktop |Outlook on Mac Desktop  |Outlook on iOS |Outlook on Android |Outlook on the web |
 |------------------------------------------------------------------------------------------------------------------|---------------------------|------------------------|---------------|-------------------|-------------------|
@@ -92,7 +92,7 @@ The Office built-in labeling client downloads labels and policy settings from th
 
 - Microsoft 365 compliance center
 
-The Office built-in labeling client is enabled automatically for users who have one or more [label policy published](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do) to them. 
+The Office built-in labeling client is enabled automatically for users who have one or more [label policy published](sensitivity-labels#what-label-policies-can-do) to them.
 
 To use the built-in labeling client in Office on Windows, the Azure Information Protection add-in cannot be running in Office. You may either temporarily or permanently uninstall the Azure Information Protection client, or you can leave it installed and configure Office to prevent it from running.
 
@@ -104,11 +104,11 @@ To use the built-in labeling client in Office on Windows, the Azure Information 
 
 2. Restart all Office applications.
 
-For more information about client apps for information protection, see [Choose which labeling client to use](https://docs.microsoft.com/en-us/azure/information-protection/rms-client/use-client#choose-which-labeling-client-to-use) in "The client side of Azure Information Protection".
+For more information about client apps for information protection, see [Choose which labeling client to use](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#choose-which-labeling-client-to-use) in "The client side of Azure Information Protection".
 
 ## Protection templates and sensitivity labels
 
-Administrator-defined [protection templates](https://docs.microsoft.com/azure/information-protection/configure-policy-templates), such as those you define for Office 365 Message Encryption, are hidden from the Office user experience when sensitivity labels are enabled because they are redundant with sensitivity labels that have encryption enabled. 
+Administrator-defined [protection templates](https://docs.microsoft.com/azure/information-protection/configure-policy-templates), such as those you define for Office 365 Message Encryption, are hidden from the Office user experience when sensitivity labels are enabled because they are redundant with sensitivity labels that have encryption enabled.
 
 ## Apply sensitivity labels to files, emails, and attachments
 
@@ -120,11 +120,11 @@ When you label an email message that has attachments, those attachments do not i
 
 ### With Azure Information Protection client
 
-Sensitivity labels applied to documents and emails with the Office built-in labeling client can be viewed and changed with the Azure Information Protection client, and vice versa. 
+Sensitivity labels applied to documents and emails with the Office built-in labeling client can be viewed and changed with the Azure Information Protection client, and vice versa.
 
 ### With other versions of Office
 
-Labeled documents and emails can be opened in any version of of Office by any authorized user, but the label can only be viewed or changed in the supported Office versions listed in the table above or the Azure Information Protection client. 
+Labeled documents and emails can be opened in any version of of Office by any authorized user, but the label can only be viewed or changed in the supported Office versions listed in the table above or the Azure Information Protection client.
 
 > [!NOTE]
 > If a labeled _and encrypted_ document or email is opened in an [RMS-enlightened application](https://docs.microsoft.com/azure/information-protection/requirements-applications#rms-enlightened-applications) that doesn't support sensitivity labeling, encryption and rights management are enforced.
