@@ -71,20 +71,20 @@ These appear in the **Microsoft 365 compliance center** > **Data classification 
 
 Ready to use classifiers don't need to be trained, but you do need to confirm that they will identify the types of content that you need them to before you use them in compliance solutions. Testing a pre-trained classifier follows this flow.
 
-![process flow testing a pre-trained classifier](media/classifiers-ready-to-use-classifiers.png)
+![process flow testing a pre-trained classifier](media/classifier-pre-trained-classifier-flow.png)
 
 ### Understanding trainable classifiers
 
-When the ready to use classifiers don't meet your needs, you can create and train your own classifiers. There is significantly more work involved with creating your own, but they'll be much better tailored to your organizations needs. For more detail on how to use a pre-trained classifier, see [Using a pre-trained classifier](classifier-using-a-pre-trained-classifier.md)
+When the ready to use classifiers don't meet your needs, you can create and train your own classifiers. There is significantly more work involved with creating your own, but they'll be much better tailored to your organizations needs. For more detail on how to use a pre-trained classifier, see [Using a ready to use classifier](classifier-using-a-ready-to-use-classifier.md)
 
 > [!IMPORTANT]
 > Only the user who creates a trainable classifier can train and review predictions made by that classifier.
 
 #### Process flow for creating trainable classifiers
 
-Creating and publishing a trainable classifier for use in compliance solutions such as retention policies and communication supervision follows this flow. For more detail on creating a trainable classifier see, [Creating a trainable classifier](classifier-creating-a-custom-classifier.md)
+Creating and publishing a trainable classifier for use in compliance solutions such as retention policies and communication supervision follows this flow. For more detail on creating a trainable classifier see, [Creating a trainable classifier](classifier-creating-a-trainable- classifier.md).
 
-![process flow trainable classifier](media/pub-train-class.png)
+![process flow trainable classifier](media/classifier-trainable-classifier-flow.png)
 
 ## See also
 
