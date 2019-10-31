@@ -25,7 +25,7 @@ Read this article to get acquainted with the Microsoft 365 compliance center, [h
 
 When you go to your Microsoft 365 compliance center for the first time, you're greeted with the following welcome message:
 
-![Microsoft 365 compliance center intro](media/m365-compliancecenter-welcomesteps.png)
+![Microsoft 365 compliance center intro](media/m365-compliance-center-welcome-steps.png)
 
 The welcome banner gives you some pointers on how to get started, with next steps, and an invitation for you to give us feedback.
 
@@ -61,9 +61,9 @@ In addition to links in cards on the home page, you'll see a navigation pane on 
 
 ## How do I get the compliance center?
 
-- If you don't have the new Microsoft 365 compliance center already, you'll have it soon. The Microsoft 365 compliance center is generally available now.
+- If you don't have the new Microsoft 365 compliance center already, you'll have it soon. The Microsoft 365 compliance center is generally available now to Microsoft 365 SKU customers.
 
-- To visit the Microsoft 365 compliance center, as a global administrator or compliance administrator, go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and sign in. 
+- To visit the Microsoft 365 compliance center, as a global administrator, compliance administrator, or compliance data administrator go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and sign in.
 
 - To learn more about requirements, see [Required licenses and permissions](../security/office-365-security/microsoft-security-and-compliance.md#required-licenses-and-permissions).
 
