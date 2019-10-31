@@ -81,6 +81,10 @@ If your Windows aren't already on Windows Pro Creator update, you will need to [
 > If you set up Office 365 MDM policies and devices, those devices will be listed on the **Devices** page in the Microsoft 365 admin center. Any policies you set up will show up in the list of classic policies in the [Intune portal](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview).
 
 After you have assigned licenses to Microsoft 365 Business, you can start protecting the users' devices and files.
+
+If you upgraded everyone in your organization to Microsoft 365 Business, you will see the set up wizard on teh home page, and can follow the [Set up Microsoft 365 Business in the setup wizard](set-up.md) steps to protect files and mobile devices.
+
+You can also complete these steps on the Devices page:
   
 1. In the admin center, in the left nav, go to **Devices** \> **Policies**.
     
