@@ -258,6 +258,9 @@ You can choose to apply retention labels to content automatically when that cont
   
 Auto-applying retention labels requires an Office 365 Enterprise E5 subscription, and that it can take up to seven days for auto-apply retention labels to be applied to all content that matches the conditions, as described above.
   
+> [!TIP]
+> See [Manage the lifecycle of SharePoint documents with retention labels](auto-apply-retention-labels-scenario.md) for a detailed scenario about using managed properties in SharePont to auto-apply retention labels and implement event-driven retention.
+
 ### Auto-apply retention labels to content with specific types of sensitive information
 
 When you create auto-apply retention labels for sensitive information, you see the same list of policy templates as when you create a data loss prevention (DLP) policy. Each policy template is preconfigured to look for specific types of sensitive information. For example, the template shown here looks for U.S. ITIN, SSN, and passport numbers. To learn more about DLP, see [Overview of data loss prevention policies](data-loss-prevention-policies.md).
@@ -280,12 +283,12 @@ You can auto-apply labels to content that satisfies certain conditions. The cond
 
 For more information on query syntax, see:
 
-- [Keyword Query Language (KQL) syntax reference](https://docs.microsoft.com/en-us/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
+- [Keyword Query Language (KQL) syntax reference](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
 Query-based labels use the search index to identify content. For more information on valid searchable properties, see:
 
 - [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md)
-- [Overview of crawled and managed properties in SharePoint Server](https://docs.microsoft.com/en-us/SharePoint/technical-reference/crawled-and-managed-properties-overview)
+- [Overview of crawled and managed properties in SharePoint Server](https://docs.microsoft.com/SharePoint/technical-reference/crawled-and-managed-properties-overview)
 
 Examples queries:
 
