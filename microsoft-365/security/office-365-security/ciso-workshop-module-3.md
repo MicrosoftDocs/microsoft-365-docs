@@ -14,7 +14,7 @@ description: "Learn more about security principles and recommendations for moder
 
 # CISO Workshop Module 3: Identity and Zero Trust User Access
 
-Because most modern attacks involve compromising user identities, learn how to build a new identity security perimeter to protect assets outside your corporate network.
+Learn how to advance zero trust with your identity and user access strategy to better protect corporate data inside and outside your network perimeter.
 
 - Download PDF summary: [Module 3: Identity and Zero Trust User Access](../media/ciso-workshop-3-identity-and-zero-trust-user-access.pdf)
 - Download PowerPoint summary: [Module 3: Identity and Access Management](../media/ciso-workshop-3-identity-and-zero-trust-user-access.pptx)
