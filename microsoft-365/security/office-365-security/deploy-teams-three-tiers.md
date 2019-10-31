@@ -33,7 +33,7 @@ Follow the instructions in [this article](https://support.office.com/article/cre
 
 Here is your resulting configuration.
   
-![Baseline-level protection for a public team.](media/baseline-public-team.png)
+![Baseline-level protection for a public team.](../media/baseline-public-team.png)
   
 ### Private
 
@@ -41,7 +41,7 @@ Follow the instructions in [this article](https://support.office.com/article/cre
 
 Here is your resulting configuration.
 
-![Baseline-level protection for a private team.](media/baseline-private-team.png)
+![Baseline-level protection for a private team.](../media/baseline-private-team.png)
   
 ## Sensitive teams
 
@@ -57,7 +57,7 @@ Next, you configure the underlying SharePoint site to prevent sharing by team me
 
 Here is your resulting configuration.
   
-![Sensitive protection for a team.](media/sensitive-team.png)
+![Sensitive protection for a team.](../media/sensitive-team.png)
  
 
 ## Highly confidential teams
@@ -75,7 +75,7 @@ Next, you configure the underlying SharePoint site to prevent sharing by team me
 
 Here is your resulting configuration.
   
-![Highly confidential protection for a team.](media/highly-confidential-team.png)  
+![Highly confidential protection for a team.](../media/highly-confidential-team.png)  
   
 ## Next step
 

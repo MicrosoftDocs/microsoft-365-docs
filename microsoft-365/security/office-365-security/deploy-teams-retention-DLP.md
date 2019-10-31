@@ -109,7 +109,7 @@ Use these steps to apply the retention labels to the documents folders of your u
     
 Here is your resulting configuration.
   
-![Retention labels for the four types of underlying SharePoint sites.](media/retention-lables.png)
+![Retention labels for the four types of underlying SharePoint sites.](../media/retention-lables.png)
   
 ## DLP policies for your underlying SharePoint sites
 
