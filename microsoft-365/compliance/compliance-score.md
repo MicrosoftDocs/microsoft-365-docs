@@ -72,7 +72,7 @@ A control defines how you assess and manage system configuration, organizational
 
 Compliance Score tracks two types of controls:
 
-1. **Microsoft-managed controls**: these are controls for Microsoft cloud services that Microsoft is responsible for implementing
+1. **Microsoft-managed controls**: these are controls for Microsoft cloud services, which Microsoft is responsible for implementing
 2. **Customer-managed controls**: these are controls managed by your organization, which you are responsible for implementing
  
 ### Assessments
@@ -103,7 +103,7 @@ The pre-configured templates for Compliance Score are:
 
 1. [ISO 27001: 2013](https://go.microsoft.com/fwlink/?linkid=2109073)
 2. [ISO 27018: 2014](https://go.microsoft.com/fwlink/?linkid=2109074)
-3. [NIST 800-53 V4](https://go.microsoft.com/fwlink/?linkid=2109075)
+3. [NIST 800-53 Rev. 4](https://go.microsoft.com/fwlink/?linkid=2109075)
 4. [NIST 800-171](https://go.microsoft.com/fwlink/?linkid=2108867)
 5. [NIST Cybersecurity Framework (CSF)](https://go.microsoft.com/fwlink/?linkid=2108868)
 6. [Cloud Security Alliance (CSA) Cloud Controls Matrix (CCM) 3.0.1](https://go.microsoft.com/fwlink/?linkid=2109076)
