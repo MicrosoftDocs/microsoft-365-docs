@@ -142,10 +142,10 @@ The pre-configured templates included with Compliance Manager are:
 
 ## Compliance Score
 
-The [Compliance Score](compliance-score-methodology.md) is a core component of Compliance Manager that helps your organization understand and manage compliance. Like the [Microsoft Secure Score](../security/mtp/microsoft-secure-score.md), the Compliance Score is a behavior-based scoring system for activities related to data protection, privacy, and security in your organization. The Compliance Score for an Assessment is an expression of compliance with a given standard or regulation. The higher the numeric score, the better the compliance posture for the Assessment. Understanding the compliance scoring methodology is crucial for prioritizing required customer-managed control actions.
+Microsoft Compliance Score is a [preview feature](compliance-score.md) in the Microsoft 365 compliance center to help you understand your organization’s compliance posture. It calculates a risk-based score measuring your progress in completing actions that help reduce risks around data protection and regulatory standards. Knowing your overall compliance score helps your organization understand and manage compliance. Understand [how your compliance score is calculated](compliance-score-methodology.md).
   
 > [!IMPORTANT]
-> The Compliance Score does not express an absolute measure of organizational compliance with any particular standard or regulation. It expresses the extent to which you have adopted controls which can reduce the risks to personal data and individual privacy. No service can guarantee that you are compliant with a standard or regulation, and the Compliance Score should not be interpreted as a guarantee in any way.
+> Compliance Score does not express an absolute measure of organizational compliance with any particular standard or regulation. It expresses the extent to which you have adopted controls which can reduce the risks to personal data and individual privacy. No service can guarantee that you are compliant with a standard or regulation, and the Compliance Score should not be interpreted as a guarantee in any way.
 
 ## Secure Score integration
 
