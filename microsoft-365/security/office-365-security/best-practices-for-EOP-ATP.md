@@ -18,11 +18,11 @@ description: "What are best practices for Exchange Online Protection (EOP) and A
 
 # Best-practices for EOP and Office 365 ATP security
 
-**Exchange Online Protection (EOP)** is the core of security for E3 Office 365 subscriptions and helps keep malicious emails from reaching your employee's inboxes. But with new, more sophisticated attacks emerging every day, improved protections are a necessity. While it's optional, there are additional security features in **Office 365 Advanced Threat Protection (ATP)** ATP Plan 1 or ATP Plan 2, that provide more layers of security, control, and investigation. 
+**Exchange Online Protection (EOP)** is the core of security for Office 365 subscriptions and helps keep malicious emails from reaching your employee's inboxes. But with new, more sophisticated attacks emerging every day, improved protections are a necessity. While it's optional, there are additional security features in **Office 365 Advanced Threat Protection (ATP)** ATP Plan 1 or ATP Plan 2, that provide more layers of security, control, and investigation. 
 
-There are two security levels in EOP and Office365 ATP: **Standard** and **Strict**. These define different levels of mail filtering configurations that help prevent unwanted mail from reaching your employees inbox. 
+Although we empower security administrators to customize their security settings, there are two security levels in EOP and Office365 ATP that we recommend: **Standard** and **Strict**. Each customer environment and needs are different, but we beleive that these levels of mail filtering configurations will help prevent unwanted mail from reaching your employees inbox in most situations. 
 
-This topic contains Microsoft recommended settings to help protect your Office 365 users. 
+This topic contains those Microsoft recommended settings to help protect your Office 365 users.
 
 ## Anti-spam, anti-malware, and anti-phishing protection in EOP
 Anti-spam, anti-malware, and anti-phishing are features of EOP that can be configured by admins. We recommend the following configurations.
@@ -31,52 +31,36 @@ Anti-spam, anti-malware, and anti-phishing are features of EOP that can be confi
 
 |Security feature name|Standard|Strict|Comment|
 |---------|---------|---------|---------|
-|Quarantine retention period|Yes|Yes|30 days|
-|End user spam notification frequency|Yes|Yes|3 days|
-|Zero Hour Autopurge should be enabled|Yes|Yes|True|
-|Spam detection action should be sent to|MoveToJmf|Quarantine||
-|High confidence spam detection action should be sent to|Quarantine|Quarantine||
-|Bulk detection action should be set to|MoveToJmf|Quarantine||
+|Spam detection action|Move message to Junk Email folder|Quarantine||
+|High confidence spam detection action|Quarantine|Quarantine||
+|Phishing email detection action|Quarantine|Quarantine||
+|High confidence Phish email detection action|Quarantine|Quarantine||
+|Bulk email detection action|Move message to Junk Email folder|Quarantine||
 |Set Bulk email threshold to|6|4||
-|Safety tips should be enabled|True|True||
-|Enable end user spam notification|True|False||
+|Quarantine retention period|30 days|30 days||
+|Safety tips|On|On||
 |Allowed Senders|None|None||
-|Allowed Senders Domains|None|None||
+|Allowed Senders Domains|None|None|Adding domains you own (e.g. Accepted Domains) to the allowed list is not needed. This is considered high risk since it creates opportunities for bad actors to send you mail that would otherwise be filtered out. Use [spoof intelligence](learn-about-spoof-intelligence.md) in the Security & Compliance Center on the Anti-spam settings page to review all senders who are spoofing either domains that are part of your organization, or spoofing external domains.|
 |Blocked Senders|None|None||
 |Blocked Senders domains|None|None||
-|Outbound spam policy RRL|500|500||
+|End user spam notification frequency|Enabled|Enabled|3 days|
+|Zero Hour auto purge|On|On|For both Spam and Phish ZAP|
+|MarkAsSpamBulkMail|On|On|This setting is only available in PowerShell|
 
-Recommended for **OFF** in both Standard and Strict Levels:
+#### Outbound spam filter policy
 
-|Security feature name|
-|---------|
-|IncreaseScoreWithImageLinks|
-|IncreaseScoreWithNumericIps|
-|IncreaseScoreWithRedirectToOtherPort|
-|IncreaseScoreWithBizOrInfoUrls|
-|MarkAsSpamEmptyMessages|
-|MarkAsSpamJavaScriptInHtml|
-|MarkAsSpamFramesInHtml|
-|MarkAsSpamObjectTagsInHtml|
-|MarkAsSpamEmbedTagsInHtml|
-|MarkAsSpamFormTagsInHtml|
-|MarkAsSpamWebBugsInHtml|
-|MarkAsSpamSensitiveWordList|
-|MarkAsSpamFromAddressAuthFail|
-|MarkAsSpamNdrBackscatter|
-|MarkAsSpamSpfRecordHardFail|
-
-Recommended for **ON** in both Standard and Strict Levels:
-
-|Security feature name|
-|---------|
-|MarkAsSpamBulkMail|
+|Security feature name|Standard|Strict|Comment|
+|---------|---------|---------|---------|
+|Outbound spam policy Recipient Limits - External hourly limit|400|500||
+|Outbound spam policy Recipient Limits - Internal hourly limit|800|1000||
+|Outbound spam policy Recipient Limits - Daily limit|800|1000||
+|Action when a user exceeds the limits|Restrict the user from sending mail|Restrict the user from sending mail||
 
 ### Anti-malware policy
 
 |Security feature name|Standard|Strict|Comment|
 |---------|---------|---------|---------|
-|Malware Detection Response|Yes and use the default notification text|Yes and use the default notification text||
+|Malware Detection Response|No|No|If malware is detected in an email attachment, the message will be quarantined and can be released only by an admin.|
 |"Common Attachment Type Filter" for blocking suspicious file types|On|On||
 |Malware Zero-hour Auto Purge|On|On||
 |Notify internal senders of the undelivered message|Disabled|Disabled||
@@ -86,23 +70,9 @@ Recommended for **ON** in both Standard and Strict Levels:
 
 |Security feature name|Standard|Strict|Comment|
 |---------|---------|---------|---------|
-|Zero Hour Autopurge should be enabled - Phish|True|True||
-|High confidence Phish detection action should be set to|Quarantine - Admin|Quarantine - Admin||
-|EnableMailboxIntelligence|True|True||
-|EnableSimilarUsersSafetyTips|True|True||
-|EnableSimilarDomainsSafetyTips|True|True||
-|EnableUnusualCharactersSafetyTips|True|True||
-|TargetedUserProtectionAction|MoveToJmf|Quarantine||
-|MailboxIntelligenceProtectionAction|NoAction + Safety Tip|MoveToJmf||
-|TargetedDomainProtectionAction|MoveToJmf|Quarantine||
-|AuthenticationFailAction|MoveToJmf|Quarantine||
-|AntiSpoofEnforcementType|High|High||
-|EnableAuthenticationSafetyTip|False|True||
 |Enable antispoofing protection|On|On||
 |Enable Unauthenticated Sender tagging|On|On||
-|EnableAuthenticationSoftPassSafetyTip|False|True||
-|TreatSoftPassAsAuthenticated|True|False||
-|EnableSuspiciousSafetyTip|True|True||
+|If email is sent by someone who's not allowed to spoof your domain|Move message to the recipients' Junk Email folders|Quarantine the message||
 
 ## Office 365 Advanced Threat Protection (ATP) security
 Additional security benefits come with an Office 365 Advanced Threat Protection subscription. For the latest news and information, you can see [What's new in Office 365 ATP](whats-new-in-office-365-atp.md). 
@@ -126,9 +96,21 @@ If you've added an Office 365 ATP subscription to your EOP, set the following co
 |Enable Anti-impersonation protection|Yes|Yes||
 |Enable Mailbox intelligence in Anti-Impersonation policies|Yes|Yes||
 |Enable Mailbox intelligence based Impersonation protection|Yes|Yes||
-|Domain Impersonation action should be|MoveToJmf|Quarantine||
-|User Impersonation action should be|MoveToJmf|Quarantine||
-|Mailbox intelligence based impersonation protection action should be|No Action + Safety Tip|MoveToJmf||
+|Domain Impersonation action should be|Move message to Junk Email folder|Quarantine||
+|User Impersonation action should be|Move message to Junk Email folder|Quarantine||
+|Mailbox intelligence based impersonation protection action should be|No Action + Safety Tip|Move message to Junk Email folder||
+|EnableMailboxIntelligence|True|True||
+|EnableSimilarUsersSafetyTips|True|True||
+|EnableSimilarDomainsSafetyTips|True|True||
+|EnableUnusualCharactersSafetyTips|True|True||
+|TargetedUserProtectionAction|Move message to Junk Email folder|Quarantine||
+|MailboxIntelligenceProtectionAction|NoAction + Safety Tip|Move message to Junk Email folder||
+|TargetedDomainProtectionAction|Move message to Junk Email folder|Quarantine||
+|AntiSpoofEnforcementType|High|High||
+|EnableAuthenticationSafetyTip|False|True||
+|EnableAuthenticationSoftPassSafetyTip|False|True||
+|TreatSoftPassAsAuthenticated|True|False||
+|EnableSuspiciousSafetyTip|True|True||
 
 ### Safe Links and Safe Attachments
 
