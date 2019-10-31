@@ -49,7 +49,7 @@ Compliance Score shares the same backend with Compliance Manager, so any data yo
 
 During public preview, some functionality remains solely in Compliance Manager, such as managing assessments and creating templates. We recommend beginning all of your compliance management activities in Compliance Score. When you come to functions handled by Compliance Manager, you will be guided to that tool. For that reason, some of this documentation directs you to Compliance Manager topics.
 
-Learn more about the relationship between Compliance Score and Compliance Manager in the [release notes](compliance-manager-release-notes.md).
+Learn more about the relationship between Compliance Score and Compliance Manager in the [Compliance Score release notes](compliance-score-release-notes.md).
 
 ## Understanding your score
 
