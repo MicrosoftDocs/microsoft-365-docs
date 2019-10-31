@@ -26,7 +26,7 @@ The California Consumer Privacy Act (CCPA) is the first comprehensive privacy la
 
 **Who needs to know about the CCPA?**
 
-The CCPA only applies to companies doing business in California, which annually satisfy one or more of the following, (i) have a gross revenue of more than $25 million, (ii) derive 50% or more of its annual revenue from the sale of consumer personal information, or (iii) buys, sells, or shares the personal information of more than 50,000 consumers.
+The CCPA only applies to companies doing business in California, which annually satisfy one or more of the following, (1) have a gross revenue of more than $25 million, (2) derive 50% or more of its annual revenue from the sale of consumer personal information, or (3) buys, sells, or shares the personal information of more than 50,000 consumers.
 
 **When will the CCPA come into effect?**
 
