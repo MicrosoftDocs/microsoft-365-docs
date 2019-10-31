@@ -39,6 +39,9 @@ Once the trainable classifier has processed enough positive samples to build a p
 > [!TIP]
 > For best results, have 10,000 items in your test sample set with an even distribution of positive and negative matches.
 
+> [!TIP]
+> Opt-in is required the first time for trainable classifiers. classifiers. It takes twelve days for Microsoft 365 to complete a baseline evaluation of your organizations content.
+
 ## How to create a trainable classifier
 
 1. Collect between 50-500 seed content items. These must be only samples that strongly represent the type of content you want the trainable classifier to positively identify as being in the classification category. See, [Default crawled file name extensions and parsed file types in SharePoint Server](https://docs.microsoft.com/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) for the supported file types.
