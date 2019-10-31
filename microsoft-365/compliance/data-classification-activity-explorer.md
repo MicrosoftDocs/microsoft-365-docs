@@ -64,4 +64,3 @@ Once your filters are set, you can:
 - [Retention labels](labels.md)
 - [What the sensitive information types look for](what-the-sensitive-information-types-look-for.md)
 - [Overview of retention policies](retention-policies.md)
-

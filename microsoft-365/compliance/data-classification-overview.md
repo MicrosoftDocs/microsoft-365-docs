@@ -48,7 +48,6 @@ To find out how many items are in any given classification category, hover over 
 >- [Retention labels](labels.md)
 >- [What the sensitive information types look for](what-the-sensitive-information-types-look-for.md)
 
-
 ## Top sensitivity labels applied to content
 
 When you apply a sensitivity label to an item either through Microsoft 365 or Azure Information Protection (AIP), two things happen:
@@ -64,7 +63,7 @@ The sensitivity label card shows the number of items (email or document) by sens
 
 > [!NOTE]
 > If you haven't created or published any sensitivity labels or no content has had a sensitivity label applied, this card will display the message "No sensitivity labels detected". To get started with labels, see:
->- [sensitivity labels](sensitivity-labels.md) or for AIP [Configure the Azure information protection policy](https://docs.microsoft.com/en-us/azure/information-protection/configure-policy)
+>- [sensitivity labels](sensitivity-labels.md) or for AIP [Configure the Azure information protection policy](https://docs.microsoft.com/azure/information-protection/configure-policy)
 
 ## Top retention labels applied to content
 
