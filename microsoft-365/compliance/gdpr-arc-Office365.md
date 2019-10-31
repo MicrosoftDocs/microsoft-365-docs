@@ -8,7 +8,9 @@ ms.topic: article
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.collection: GDPR
+ms.collection: 
+- GDPR
+- M365-security-compliance
 hideEdit: true
 ---
 

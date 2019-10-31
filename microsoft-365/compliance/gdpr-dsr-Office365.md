@@ -9,7 +9,9 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience:  itpro
-ms.collection:  GDPR
+ms.collection: 
+- GDPR
+- M365-security-compliance
 ---
 
 # Office 365 Data Subject Requests for the GDPR and CCPA

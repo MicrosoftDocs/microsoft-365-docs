@@ -9,7 +9,9 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: GDPR
+ms.collection: 
+- GDPR
+- M365-security-compliance
 ---
 
 # Azure and Breach Notification Under the GDPR

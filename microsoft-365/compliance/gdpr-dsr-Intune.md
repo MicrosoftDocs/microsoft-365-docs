@@ -9,7 +9,9 @@ ms.author: dougeby
 author: dougeby
 manager: angrobe
 audience: itpro
-ms.collection: GDPR
+ms.collection: 
+- GDPR
+- M365-security-compliance
 hideEdit: true
 ---
 

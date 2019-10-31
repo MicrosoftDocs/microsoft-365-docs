@@ -10,7 +10,9 @@ ms.date: 05/24/2018
 author: PoulChapman
 ms.author: olholder
 manager: pchapman
-ms.collection: GDPR
+ms.collection: 
+- GDPR
+- M365-security-compliance
 ms.workload:
   - "multiple"
 ---

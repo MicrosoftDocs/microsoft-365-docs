@@ -9,7 +9,9 @@ ms.date: 06/11/2018
 author: jitojo
 ms.author: jominana
 manager: douge
-ms.collection: GDPR
+ms.collection: 
+- GDPR
+- M365-security-compliance
 ms.workload:
   - "multiple"
 ---

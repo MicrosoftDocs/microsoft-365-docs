@@ -1,6 +1,6 @@
 ---
 title: Compliance offering — California Consumer Privacy Act (CCPA)
-description: Azure and Intune can help customers meet their obligations under Canadian privacy laws.
+description: Microsoft services and the California Consumer Privacy Act (CCPA).
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
