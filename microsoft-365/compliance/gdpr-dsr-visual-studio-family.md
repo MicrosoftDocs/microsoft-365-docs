@@ -164,7 +164,7 @@ Once you click **Delete my account:**
 
 ### Personal Data We Collect
 
-Through the [Xamarin Forums](https://forums.xamarin.com) user community and [Xamarin Bugzilla](https://bugzilla.xamarin.com/) bug reporting websites, Microsoft collects data you provide to help us reproduce and troubleshoot issues you may have with Microsoft products and services. This data includes personal data and public feedback. The personal data we collect is user account data (for example, user names and email addresses associated with your Xamarin Forums or Bugzilla accounts), and the public feedback we collect includes bugs, problems, comments, and solutions you provide via the Xamarin Forums or Xamarin Bugzilla bug reporting website.
+Through the [Xamarin Forums](https://forums.xamarin.com/) user community, Microsoft collects data you provide to help us reproduce and troubleshoot issues you may have with Microsoft products and services. This data includes personal data and public feedback. The personal data we collect is user account data (for example, user names and email addresses associated with your Xamarin Forums), and the public feedback we collect includes bugs, problems, comments, and solutions you provide via the Xamarin Forums.
 
 ### How You Can Control Your Data
 
@@ -184,9 +184,12 @@ Xamarin Forums are hosted by a third party, Vanilla Forums. To request deletion 
 
 #### Bugzilla for Xamarin
 
+> [!NOTE]
+> Bugzilla for Xamarin no longer accepts new issues.  
+
 ##### View
 
-Users with active Xamarin Bugzilla accounts can view all bugs they've reported and all comments they've added to bugs by clicking the appropriate links on the Xamarin Bugzilla home page.
+Former Xamarin Bugzilla accounts holders can view an archive of all bugs they've reported and all comments they've added to bugs here: [https://xamarin.github.io/bugzilla-archives/](https://xamarin.github.io/bugzilla-archives/).
 
 ##### Export
 

@@ -83,19 +83,19 @@ This is particularly helpful if you want to find or change personal data for a s
 
 1. Sign in to the [Azure portal](https://portal.azure.com/) with an account that's a global admin for the directory.
 
-2. Select **All services**, enter **Users and groups** in the text box, and then select **Enter**.
+2. Select **Azure Active Directory**.
 
-     ![Select All services](media/azure-dsr_image3.png)
+     ![Select All services](media/gdpr-azure-dsr-azure-portal.png)
 
-3. On the **Users and groups** blade, select **Users**.
+3. Select **Users**.
 
-     ![Select users](media/azure-dsr_image9.png)
+     ![Select users](media/gdpr-azure-dsr-azure-all-users.png)
 
-4. On the **Users and groups — Users** blade, select a user from the list, and then, on the blade for the selected user, select **Profile** to view user profile information that might contain personal data.
+4. On the **All users** blade, select a user from the list, and then, on the blade for the selected user, select **Profile** to view user profile information that might contain personal data.
 
-    ![Select profile](media/azure-dsr_image5.png)
+    ![Select profile](media/gdpr-azure-dsr-azure-user-profile.png)
 
-5. If you need to add or change user profile information, you can do so, and then, in the command bar, select **Save.**
+5. If you need to add or change user profile information, you can do so by selecting **Edit** in the command bar, then select **Save** after making changes.
 
 #### Service-specific interfaces
 
@@ -131,25 +131,21 @@ You can correct, update, or delete identifiable information about end users, suc
 
 1. Sign in to the [Azure portal](https://portal.azure.com/) with an account that's a global admin for the directory.
 
-2. Select **All services**, enter **Users and groups** in the text box, and then select **Enter**.
+2. Select **Azure Active Directory**.
 
-    ![Select All services](media/azure-dsr_image3.png)
+    ![Select All services](media/gdpr-azure-dsr-azure-portal.png)
 
-3. On the **Users and groups** blade, select **Users**.
+3. Select **Users**.
 
-    ![Select users](media/azure-dsr_image9.png)
+    ![Select users](media/gdpr-azure-dsr-azure-all-users.png)
 
-4. On the **Users and groups — Users** blade, select a user from the list, and then, on the blade for the selected user, select **Profile** to view the user profile information that needs to be corrected or updated.
+4. On the **All users** blade, select a user from the list, and then, on the blade for the selected user, select **Profile** to view the user profile information that needs to be corrected or updated.
 
-    ![Select profile](media/azure-dsr_image5.png)
+    ![Select profile](media/gdpr-azure-dsr-azure-user-profile.png)
 
-5. Correct or update the information, and then, in the command bar, select **Save.**
+5. Correct or update the user profile information including work information by selecting **Edit** in the command bar, then select **Save** after making changes.
 
-6. On the blade for the selected user, select **Work Info** to view user work information that needs to be corrected or updated.
-
-    ![Select work info](media/azure-dsr_image4.png)
-
-7. Correct or update the user work information, and then, in the command bar, select **Save.**
+    ![Select profile](media/gdpr-azure-dsr-azure-edit-user-profile.png)
 
 #### Service-Specific Interfaces
 
@@ -182,26 +178,30 @@ Here’s the high-level process for deleting users from your tenant.
 
 ###### To delete a user from an Azure tenant
 
-1. Open the Azure portal, select the **Azure Active Directory** blade, and then select **Users**.
+1. Sign in to the [Azure portal](https://portal.azure.com/) with an account that's a global admin for the directory.
 
-    The **Users — All users** blade appears.
+2. Select **Azure Active Directory**.
 
-    ![Locate user](media/azure-dsr_image8.png)
+    ![Select All services](media/gdpr-azure-dsr-azure-portal.png)
 
-2. Check the box next to the user you want to delete, select **Delete user**, and then select **Yes** in the box asking if you want to delete the user.
+3. Select **Users**.
 
-    ![User management](media/azure-dsr_image9.png)
+    ![Select users](media/gdpr-azure-dsr-azure-all-users.png)
 
-3. In the **Show** drop-down box, select **Recently deleted users**.
+4. Check the box next to the user you want to delete, select **Delete user**, and then select **Yes** in the box asking if you want to delete the user.
 
-    ![View user profile](media/azure-dsr_image10.png)
+    ![User management](media/gdpr-azure-dsr-azure-selected-user.png)
 
-4. Select the same user again, select **Delete permanently**, and then select **Yes** in the box asking if you’re sure.
+5. On the **All users** blade, select **Deleted users**.
+
+    ![View user profile](media/gdpr-azure-dsr-azure-deleted-user.png)
+
+4. Select the same user again, select **Delete permanently** in the command bar, and then select **Yes** in the box asking if you’re sure.
 
 >[!IMPORTANT]  
 >Be aware that by clicking **Yes** you are permanently, and irrevocably, deleting the user and all associated data and system-generated logs. If you do this by mistake, you’ll have to manually add the user back to the tenant. The associated data and system-generated logs are non-recoverable.
 
-   ![View user work information](media/azure-dsr_image11.png)
+   ![View user work information](media/gdpr-azure-dsr-azure-permanently-deleted-user.png)
 
 #### Service-specific interfaces
 

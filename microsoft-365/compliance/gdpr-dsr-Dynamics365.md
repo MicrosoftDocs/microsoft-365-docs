@@ -103,7 +103,7 @@ In Dynamics 365 for Marketing, you have the following additional capabilities:
 
 ### Providing a copy of customer data
 
-Customer data in ***Dynamics 365 for Customer Engagement*** can be exported using the comprehensive entity export capabilities. Customer data can be exported to a static Excel file to facilitate a data portability request. Using Excel, you can then edit the personal data to be included in the portability request and then save as a commonly used, machine-readable format such as .csv or .xml.
+Customer data in ***Dynamics 365 for Customer Engagement*** can be exported using the comprehensive entity export capabilities. Customer data can be exported to a static Excel file to facilitate a data portability request. Using Excel, you can then edit the personal data to be included in the portability request and then save as a commonly used, machine-readable format such as .csv or .xml. Dynamics 365 for Customer Engagement records also can be exported via the [Common Data Service Web API](https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview).
 
 Additionally, for Dynamics 365 for Marketing a [dedicated API](https://docs.microsoft.com/dynamics365/customer-engagement/marketing/developer/retrieve-interactions-contact) is provided that allows customer to build extensions that retrieve additional records of captured customer interactions that may contain personal data. The API loads all the relevant information from the back-end system and assembles it into a single, portable document.
 
