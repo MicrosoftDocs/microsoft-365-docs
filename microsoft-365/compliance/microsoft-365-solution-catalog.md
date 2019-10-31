@@ -19,7 +19,7 @@ Are you looking for a way to quickly get started with compliance tasks in Micros
 
 Compliance solutions in Microsoft 365 are collections of integrated capabilities you can use to help you manage end-to-end compliance scenarios. A solution's capabilities and tools might include a combination of policies, alerts, reports, and more.
 
-Read this article to get acquainted with the new Microsoft 365 solution catalog, [how to get it](#how-do-i-get-this), [frequently asked questions](#frequently-asked-questions), and your [next steps](#next-steps).
+Read this article to get acquainted with the new solution catalog in the Microsoft 365 compliance center, [how to get it](#how-do-i-get-this), [frequently asked questions](#frequently-asked-questions), and your [next steps](#next-steps).
 
 ## Catalog organization
 
@@ -66,14 +66,14 @@ From here, you'll see cards for the following solutions:
 - [Data investigations](overview-data-investigations.md): Searches across content locations to identify sensitive, malicious, or misplaced data across Microsoft 365 locations so you can investigate and remediate any incidents, such as data spillage.
 - [Data subject requests](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md): Finds and exports a user’s personal data to help you respond to data subject requests for GDPR.
 - [eDiscovery](manage-legal-investigations.md)
-    - [Core eDiscovery](ediscovery-cases.md): Searches across content locations to identify, preserve, and export data in response to legal discovery requests.
+    - [Core eDiscovery](ediscovery-cases.md): Searches across content locations to identify, preserve, and export data in response to legal discovery requests and eDiscovery cases.
     - [Advanced eDiscovery](overview-ediscovery-20.md): Builds on eDiscovery capabilities by providing intelligent analytics and  machine learning to help you further analyze data that’s relevant to discovery requests.
 
 ## How do I get this?
 
 - If you don't have the new Microsoft 365 solution catalog already, you'll have it soon. We're enabling the solution catalog for all Microsoft 365 subscriptions in an incremental rollout.
 
-- To visit the Microsoft 365 solution catalog, go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and sign in as a global administrator or compliance administrator. Select **Catalog** in the navigation pane on the left side of the screen to open the catalog home page.
+- To visit the Microsoft 365 solution catalog, go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and sign in as a global administrator, compliance administrator, or compliance data administrator. Select **Catalog** in the navigation pane on the left side of the screen to open the catalog home page.
 
 - To learn more about requirements, see [Required licenses and permissions](../security/office-365-security/microsoft-security-and-compliance.md#required-licenses-and-permissions).
 
@@ -81,11 +81,13 @@ From here, you'll see cards for the following solutions:
 
 **Why don't I see the new Microsoft 365 solution catalog yet?**
 
-First, make sure that you have the appropriate [licenses and permissions](../security/office-365-security/microsoft-security-and-compliance.md#required-licenses-and-permissions). Then, sign in at [https://compliance.microsoft.com](https://compliance.microsoft.com) as a global administrator or compliance administrator. If you don't see the new solution catalog in the left navigation pane yet, you'll have it soon.
+First, make sure that you have the appropriate [licenses and permissions](../security/office-365-security/microsoft-security-and-compliance.md#required-licenses-and-permissions). Then, sign in at [https://compliance.microsoft.com](https://compliance.microsoft.com) as a global administrator, compliance administrator, or compliance data administrator. If you still don't see the new solution catalog in the left navigation pane yet, you'll have it soon.
 
 **Some of the compliance features listed on the solution catalog page aren't available in the Microsoft 365 compliance center. What do I do?**
 
 We're still adding functionality to the Microsoft 365 compliance center and the solution catalog. If you can't find a specific solution in the navigation area, it will be accessible when the solution is available in your subscription.
+
+If you are looking for an existing compliance solution and it’s not available in the Microsoft 365 compliance center yet, you can always access solutions in the existing Office 365 security and compliance center by going to [https://protection.office.com](https://protection.office.com). Alternatively, you can click on the **More resources** tab in the left navigation of the Microsoft 365 compliance center and select the Office 365 security and compliance center card.  
 
 ## Next steps
 
