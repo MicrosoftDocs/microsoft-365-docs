@@ -20,9 +20,9 @@ ms.collection:
 
 ## Fast FAQs
 
-**What is the CCPA?** 
+**What is the CCPA?**
 
-The California Consumer Privacy Act (CCPA) is the first comprehensive privacy law in United States. It was signed into law at the end of June 2018 and provides a variety of privacy rights to California consumers. Businesses regulated by the CCPA will have a number of obligations to those consumers, including disclosures, GDPR-like rights for consumers, an “opt-out” for certain data transfers and an “opt-in” requirement for minors.
+The California Consumer Privacy Act (CCPA) is the first comprehensive privacy law in United States. It was signed into law at the end of June 2018 and provides a variety of privacy rights to California consumers. Businesses regulated by the CCPA will have a number of obligations to those consumers, including disclosures, General Data Protection Regulation (GDPR)-like rights for consumers, an “opt-out” for certain data transfers and an “opt-in” requirement for minors.
 
 **Who needs to know about the CCPA?**
 
