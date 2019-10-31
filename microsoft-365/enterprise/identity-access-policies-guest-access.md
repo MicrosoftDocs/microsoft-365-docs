@@ -54,7 +54,7 @@ This rule prompts guests to register for MFA in your tenant, regardless of wheth
 ### Excluding guest and external users from risk-based MFA
 While organizations can enforce risk-based policies for B2B users using Identity Protection, there are limitations in the implementation of Identity Protection for B2B collaboration users in a resource directory due to their identity existing in their home directory. Due to these limitations, Microsoft recommends you exclude guest users from risk-based MFA policies and require these users to always use MFA. 
 
-For more information, see [Limitations of Identity Protection for B2B collaboration users](https://docs.microsoft.com/en-us/azure/active-directory/identity-protection/concept-identity-protection-b2b#limitations-of-identity-protection-for-b2b-collaboration-users). 
+For more information, see [Limitations of Identity Protection for B2B collaboration users](https://docs.microsoft.com/azure/active-directory/identity-protection/concept-identity-protection-b2b#limitations-of-identity-protection-for-b2b-collaboration-users). 
 
 ### Excluding guest and external users from device management 
 Only one organization can manage a device. If you don't exclude guest and external users from policies that require device compliance, these policies will block these users. 
