@@ -87,7 +87,7 @@ Fields in the **Notes and documentation** section include:
 **Uploaded documents**
 
 - Select **Manage documents** to upload any relevant files.
-- When the manage documents flyout pane opens, select **Add document**, then select your file from your system. 
+- When the manage documents flyout pane opens, select **Add document**, then select your file from your system. All file types are accepted.
 - Once your file resolves in the pane, select **Close,** which automatically saves the file attachment. You will then see the file listed underneath **Uploaded documents.** 
 - To download or delete the document, select **Manage documents** from  underneath the list of documents. On the flyout pane, click or tap on the document row to highlight it, then select **Download** or **Delete.**
 
