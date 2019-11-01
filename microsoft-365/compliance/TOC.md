@@ -85,7 +85,7 @@
 ## [Understand data classification (preview)](data-classification-overview.md)
 ### [View label activity (preview)](data-classification-activity-explorer.md)
 ### [Getting started with trainable classifiers (preview)](classifier-getting-started-with.md)
-### [Using a ready to use classifier (preview)](classifier-using-a-ready-to-use-classifier)
+### [Using a ready to use classifier (preview)](classifier-using-a-ready-to-use-classifier.md)
 ### [Creating and training a classifier (preview)](classifier-creating-a-trainable-classifier.md)
 
 # Manage information governance
