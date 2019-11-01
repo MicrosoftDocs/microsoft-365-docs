@@ -92,8 +92,8 @@ landingContent:
     linkLists:
       - linkListType: get-started
         links:
-          - text: Compliance Manager
-            url: compliance-manager-overview.md
+          - text: Compliance Score
+            url: compliance-score.md
           - text: GDPR compliance action plan
             url: gdpr-action-plan.md
           - text: Information protection for GDPR
