@@ -37,9 +37,9 @@ You can also now apply sensitivity labels to Microsoft Teams, Office 365 groups,
 
 If necessary, you can opt out of the preview at any time.
 
-## Requirements  
+## Requirements
 
-These features work only with [sensitivity labels](sensitivity-labels.md) (also called unified Microsoft Information Protection labels). If you used Azure Information Protection labels, you can convert them to sensitivity labels to enable these features for new files that you upload. [Learn how](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels)
+These features work only with [sensitivity labels](sensitivity-labels.md). If you used Azure Information Protection labels, you can convert them to sensitivity labels to enable these features for new files that you upload. [Learn how](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels)
 
 For this preview, use the OneDrive sync app version 19.002.0121.0008 or later on Windows and version 19.002.0107.0008 or later on Mac. Both of these versions were released on January 28, 2019, and are currently released to all rings. [See the OneDrive release notes](https://support.office.com/article/845dcf18-f921-435e-bf28-4e24b95e5fc0). After you enable this preview, users who run an older version of the sync app will be prompted to update it.
 
