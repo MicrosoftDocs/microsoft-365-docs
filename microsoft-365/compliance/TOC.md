@@ -4,6 +4,7 @@
 ## [What's new in the compliance center](whats-new.md)
 ## [Recent updates to compliance content](recently-updated-topics-mcc.md)
 ## [Microsoft 365 compliance center](microsoft-365-compliance-center.md)
+## [Microsoft 365 solution catalog (preview)](microsoft-365-solution-catalog.md)
 ## [Go to the Security & Compliance Center](go-to-the-securitycompliance-center.md)
 ## [Use your free Azure Active Directory subscription](use-your-free-azure-ad-subscription-in-office-365.md)
 ## [Plan for security and compliance in Office 365](plan-for-security-and-compliance.md)
@@ -17,9 +18,13 @@
 ## Customer Key
 ### [Controlling your data in Office 365 using Customer Key](controlling-your-data-using-customer-key.md)
 ### [Service encryption with Customer Key for Office 365 FAQ](service-encryption-with-customer-key-faq.md)
-## Supervise communications
-### [Learn about supervision policies](supervision-policies.md)
-### [Configure supervision policies for your organization](configure-supervision-policies.md)
+## [Communication compliance]()
+### [Learn about communication compliance (preview)](communication-compliance.md)
+### [Configure communication compliance in Microsoft 365 (preview)](communication-compliance-configure.md)
+### [Investigate and remediate communication compliance alerts (preview)](communication-compliance-investigate-remediate.md)
+### [Feature reference for communication compliance (preview)](communication-compliance-feature-reference.md)
+### [Supervision policies in Office 365](supervision-policies.md)
+### [Configure supervision policies for Office 365](configure-supervision-policies.md)
 ## [Information barriers](information-barriers.md)
 ### [Define information barrier policies](information-barriers-policies.md)
 ### [Attributes for information barrier policies](information-barriers-attributes.md)
@@ -91,6 +96,7 @@
 ### [Creating and training a classifier (preview)](classifier-creating-a-trainable-classifier.md)
 
 # Manage information governance
+## [Manage information governance](manage-information-governance.md)
 ## [Import data](importing-pst-files-to-office-365.md)
 ### [Use network upload to import PST files](use-network-upload-to-import-pst-files.md)
 ### [Use drive shipping to import PST files](use-drive-shipping-to-import-pst-files-to-office-365.md)

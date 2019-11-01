@@ -102,7 +102,11 @@ If a file format is supported, such as a Word, Excel, or PowerPoint file, the fi
   
 ## Are PDF file attachments supported?
 
-If you attach a PDF file to a protected message, the message itself will be protected, but no additional protection will be applied to the PDF file after the recipient has received it. This means that the recipient can Save As, Forward, Copy, and Print the PDF file.
+Yes! You can enable encryption for PDF attachments for your Office 365 organizations. To enable encryption for PDF attachments, run the following command in [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell):
+
+```powershell
+Set-IRMConfiguration -EnablePdfEncryption $true
+```
   
 ## Are OneDrive for Business attachments supported?
 
@@ -112,13 +116,21 @@ Not yet. OneDrive for Business attachments are not supported and end-users can't
 
 Yes. Use mail flow rules in Exchange Online to automatically encrypt a message based on certain conditions. For example, you can create policies that are based on recipient ID, recipient domain, or on the content in the body or subject of the message. See [Define mail flow rules to encrypt email messages in Office 365.](define-mail-flow-rules-to-encrypt-email.md)
   
+## Can I automatically remove encryption on incoming and outgoing mail?
+
+Admins can set up a mail flow rule to remove encryption for outgoing mail. You can't set up a rule to remove encryption for incoming mail.
+
 ## Can I automatically encrypt messages by setting up policies in Data Loss Prevention (DLP) through the Security &amp; Compliance Center?
 
 Yes! You can set up mail flow rules in Exchange Online or by using DLP in the Security &amp; Compliance Center.
   
 ## Can I open encrypted messages sent to a Shared Mailbox?
 
-Currently encrypted messages are not supported for a Shared Mailbox.
+Yes! Encrypted messages are supported for a Shared Mailbox. Some limitations apply.
+
+## Is delegated access supported?
+
+Not at this time.
 
 ## Can I customize encrypted messages with my company branding?
 
