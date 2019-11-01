@@ -126,7 +126,11 @@ Yes! You can set up mail flow rules in Exchange Online or by using DLP in the Se
   
 ## Can I open encrypted messages sent to a Shared Mailbox?
 
-Currently encrypted messages are not supported for a Shared Mailbox.
+Yes! Encrypted messages are supported for a Shared Mailbox. Some limitations apply.
+
+## Is delegated access supported?
+
+Not at this time.
 
 ## Can I customize encrypted messages with my company branding?
 
