@@ -167,11 +167,6 @@ Action Type dimension key.
 8. Select the **X** to close the Description blade.
 9. Select **Save** to save the Customer Action.
 
-#### Edit a customer action
-
-1. Select the ellipses (…) for the Action you want to modify and select **Edit**.
-2. Edit the Action as desired, and select **Save**.
-
 #### Delete a customer action
 
 1. Select the ellipses (…) for the Action you want to modify and select **Delete**.
@@ -550,6 +545,9 @@ Templates can be customized through the additional of custom controls. All custo
 11. Repeat Steps 9 and 10 for each additional Action you want to assign.
 12. When all applicable Actions have been selected, select **Assign**.
 13. Select **Save** to save the new control.
+
+> [!NOTE]
+> Any changes made to a template will not be reflected in existing assessments. Template updates must be made first, and then applied to a new assessment, in order for the changes to be seen.
 
 ### Export a Template to JSON
 
