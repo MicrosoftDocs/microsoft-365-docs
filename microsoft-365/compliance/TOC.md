@@ -17,9 +17,13 @@
 ## Customer Key
 ### [Controlling your data in Office 365 using Customer Key](controlling-your-data-using-customer-key.md)
 ### [Service encryption with Customer Key for Office 365 FAQ](service-encryption-with-customer-key-faq.md)
-## Supervise communications
-### [Learn about supervision policies](supervision-policies.md)
-### [Configure supervision policies for your organization](configure-supervision-policies.md)
+## [Communication compliance]()
+### [Learn about communication compliance (preview)](communication-compliance.md)
+### [Configure communication compliance in Microsoft 365 (preview)](communication-compliance-configure.md)
+### [Investigate and remediate communication compliance alerts (preview)](communication-compliance-investigate-remediate.md)
+### [Feature reference for communication compliance (preview)](communication-compliance-feature-reference.md)
+### [Supervision policies in Office 365](supervision-policies.md)
+### [Configure supervision policies for Office 365](configure-supervision-policies.md)
 ## [Information barriers](information-barriers.md)
 ### [Define information barrier policies](information-barriers-policies.md)
 ### [Attributes for information barrier policies](information-barriers-attributes.md)
@@ -393,9 +397,9 @@
 
 # [Regulatory compliance action plans](compliance-solutions-overview.md)
 
-## [ISO — Recommended action plan](iso-action-plan.md)
-## [NIST — Recommended action plan](nist-action-plan.md) 
-
+## [ISO - Recommended action plan](iso-action-plan.md)
+## [NIST - Recommended action plan](nist-action-plan.md)
+## [CCPA - Frequently asked questions](ccpa-faq.md)
 ## [GDPR](gdpr.md)
 ### [Recommended action plan for GDPR](gdpr-action-plan.md)
 
@@ -592,6 +596,7 @@
 #### [PASF (UK)](offering-pasf-uk.md)
 
 ### North America
+#### [California Consumer Privacy Act (CCPA)](offering-ccpa.md)
 #### [Canadian Privacy Laws](offering-canadian-privacy-laws.md)
 
 ### South America
