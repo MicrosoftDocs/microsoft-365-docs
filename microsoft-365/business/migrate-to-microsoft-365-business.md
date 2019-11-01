@@ -37,8 +37,8 @@ You have three ways to get Microsoft 365 Business:
  - [Add a Microsoft partner](get-microsoft-365-business.md) to your Office 365 subscription. The partner can purchase licenses for you and help you transition.
  - [Head to a Microsoft Store](https://www.microsoft.com/store/locations/find-a-store) where they can complete the process for you.
   
-## Add Microsoft 365 Business licenses
-Buy your licenses by following these steps in the [new admin center](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview).
+## Upgrade to Microsoft 365 Business
+Buy your licenses by following these steps in the [new admin center](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview):
 1. Sign into the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
 2. Go to the navigation pane and select **Billing** \> **Products & Services**. Find your Office 365 subscription and select it to view the details. (pic)
 3. On the next page, select **Upgrade** (pic) to view a list of Office plans that you can choose from. Find the Microsoft 365 Business plan. You can scroll down if you want to see all the Office apps and services that are included with this plan. Under Microsoft 365 Business, select **Upgrade** to add Microsoft 365 Business to your cart.
@@ -48,7 +48,7 @@ Buy your licenses by following these steps in the [new admin center](https://doc
 5. Select **Go to Checkout** where you'll see a summary of your purchase, including the payment method details for this account. You can also add a promo code here if you have one.
 6. Select **Place order** to complete your purchase.
 It takes Microsoft a few minutes to set up your new service plans so you can assign licenses to your employees. To check on progress, select **Check upgrade status**. 
-7. Once your plan is ready, select **Go to setup** and follow the steps in [Assign Microsoft 365 licenses](#assign-microsoft-365-licenses).
+1. Once your plan is ready, select **Go to setup** and follow the steps in [Assign Microsoft 365 licenses](#assign-microsoft-365-licenses).
   
 ## Assign Microsoft 365 licenses
 
