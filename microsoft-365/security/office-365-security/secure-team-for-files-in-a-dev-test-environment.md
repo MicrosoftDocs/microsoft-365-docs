@@ -21,7 +21,9 @@ description: "Summary: Create sensitive and highly confidential teams in Microso
 
 This article provides step-by-step instructions to create a dev/test environment that includes the sensitive and highly confidential teams for the [Secure files in Microsoft Teams](secure-files-in-teams.md) solution.
   
-![Sensitive and highly confidential teams in Microsoft Teams for files.](../media/sensitive-highly-confidential-teams-dev-test.png)
+![Sensitive and highly confidential teams in Microsoft Teams for files.](../media/sensitive-highly confidential-teams-dev-test.png)
+![Configuration for the Company Strategy team.](../media/highlyconfidential-team-config-dev-test.png) 
+
   
 Use this dev/test environment to experiment and fine-tune settings for your specific needs before deploying these types of teams in production.
   
@@ -49,7 +51,7 @@ First, create two groups for a typical organization with the Azure portal.
     
 4. On the **Group** blade:
     
-  - Select **Office 365** in **Group type**.
+  - Select **Security** in **Group type**.
     
   - Type **C-Suite** in **Name**.
     
@@ -137,7 +139,7 @@ In this phase, you create the retention labels for the different levels of secur
     
 7. On the **Review your settings** pane, click **Create the label**.
     
-8. Repeat steps 3-7 for an additional label named **Highly Confidential**.
+8. Repeat steps 3-7 for an additional retention label named **Highly Confidential**.
     
 9. From the **Home > Labels** pane, click **Publish labels**.
     
@@ -161,9 +163,9 @@ In this phase, you create and configure sensitive and highly confidential teams 
 
 ### Sensitive team for marketing campaigns
 
-To create a sensitive-level team for members of the marketing team to collaborate on ongoing marketing campaigns:
+To create a sensitive-level team for members of the marketing group to collaborate on ongoing marketing campaigns:
 
-1. [Creat a new private team](https://support.office.com//article/create-a-team-from-scratch-174adf5f-846b-4780-b765-de1a0a737e2b) with the name **Marketing Campaigns**.
+1. [Create a new private team](https://support.office.com//article/create-a-team-from-scratch-174adf5f-846b-4780-b765-de1a0a737e2b) with the name **Marketing Campaigns**.
 2. Open the **Marketing Campaigns** team.
 3.	In the tool bar for the team, click **Files**.
 4.	Click the ellipsis, and then click **Open in SharePoint**.
@@ -208,7 +210,7 @@ Next, configure a data loss prevention (DLP) policy that notifies users when the
     
 14. In the **Customize policy tips and email notifications** pane, click **Customize the policy tip text**.
     
-15. In the text box, type or paste in one of the following tips, depending on if you implemented Azure Information Protection to protect highly confidential files:
+15. In the text box, type or paste in the following:
     
   - To share with a user outside the organization, download the file and then open it. Click File, then Protect Document, and then Encrypt with Password, and then specify a strong password. Send the password in a separate email or other means of communication.
     
@@ -228,13 +230,14 @@ Here is the resulting configuration for the Marketing Campaigns team.
 
 To create a highly confidential-level team for members of the senior leadership team to collaborate on company strategy:
 
-1. [Creat a new private team](https://support.office.com//article/create-a-team-from-scratch-174adf5f-846b-4780-b765-de1a0a737e2b) with the name **Company Strategy**.
+1. [Create a new private team](https://support.office.com//article/create-a-team-from-scratch-174adf5f-846b-4780-b765-de1a0a737e2b) with the name **Company Strategy**.
 2. Open the **Company Strategy** team.
 3.	In the tool bar for the team, click **Files**.
 4.	Click the ellipsis, and then click **Open in SharePoint**.
 5.	In the tool bar of the underlying SharePoint site, click the settings icon, and then click **Site permissions**.
 6.	In the **Site permissions** pane, under **Sharing Settings**, click **Change sharing settings**.
-7.	Under **Sharing permissions**, choose **Only site owners can share files, folders, and the site**, and then click **Save**.
+7.	Under **Sharing permissions**, choose **Only site owners can share files, folders, and the site**.
+8.	Turn off **Allow access requests**, and then click **Save**.
 
 Next, configure the documents folder of the underlying Company Strategy SharePoint site for the Highly Confidential label.
 
@@ -243,7 +246,6 @@ Next, configure the documents folder of the underlying Company Strategy SharePoi
 3.	Under **Permissions and Management**, click **Apply label to items in this library**.
 4.	In **Settings-Apply Label**, select **Highly Confidential**, and then click **Save**. 
 
-   
 Next, configure a DLP policy that blocks users when they share a document on an underlying SharePoint site with the Highly Confidential label, which includes the Company Strategy site, outside the organization.
   
 1. Sign in to the [Microsoft 365 compliance portal](https://compliance.microsoft.com/) with your global admin.
@@ -274,7 +276,7 @@ Next, configure a DLP policy that blocks users when they share a document on an 
     
 14. In the **Customize policy tips and email notifications** pane, click **Customize the policy tip text**.
     
-15. In the text box, type or paste in one of the following tips, depending on if you implemented Azure Information Protection to protect highly confidential files:
+15. In the text box, type or paste in the following:
     
   - To share with a user outside the organization, download the file and then open it. Click File, then Protect Document, and then Encrypt with Password, and then specify a strong password. Send the password in a separate email or other means of communication.
     
@@ -286,7 +288,7 @@ Next, configure a DLP policy that blocks users when they share a document on an 
     
 19. In the **Review your settings** pane, click **Create**, and then click **Close**.
 
-Use these instructions to configure a sensitivity label with the following settings:
+Use [these instructions](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels) to configure a sensitivity label with the following settings:
 
 - The name of the label is Company Strategy
 - Encryption is enabled
@@ -296,7 +298,7 @@ After creating, publish the new label. If you sign in as a member of the Company
 
 Here is the resulting configuration for the Company Strategy team.
 
-![Configuration for the Company Strategy team.](../media/highlyconfidential-team-config-dev-test.png)   
+![Configuration for the Company Strategy team.](../media/highlyconfidential-team-config-dev-test.png) 
 
 Files in the documents section of the underlying Company Strategy SharePoint site are assigned the Highly confidential retention label and are subject to the configured DLP policy. Files can also have the Company Strategy sensitivity label assigned.    
   

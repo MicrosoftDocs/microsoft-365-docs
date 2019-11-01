@@ -27,7 +27,7 @@ Unlike a sensitivity label for highly regulated data that anyone can apply to an
 - Are individually encrypted.
 - Contain custom permissions so that only members of the team can open it.
 
-To accomplish this additional level of security for files stored in the underlying SharePoint site of a team, you must configure a customized sensitivity label that is either its own label or a sublabel of the general label for highly regulated files. Only team members will see the customized label or sublabel in their list of labels.
+To accomplish this additional level of security for files stored in the underlying SharePoint site of a team, you must configure a customized sensitivity label that is either its own label or a sublabel of the general label for highly regulated data. Only team members will see the customized label or sublabel in their list of labels.
 
 Use a sensitivity label when you need a small number of labels for both global use and individual private teams. 
 
