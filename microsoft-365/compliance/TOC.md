@@ -91,7 +91,7 @@
 ## [Understand data classification (preview)](data-classification-overview.md)
 ### [View label activity (preview)](data-classification-activity-explorer.md)
 ### [Getting started with trainable classifiers (preview)](classifier-getting-started-with.md)
-### [Using a ready to use classifier (preview)](classifier-using-a-ready-to-use-classifier)
+### [Using a ready to use classifier (preview)](classifier-using-a-ready-to-use-classifier.md)
 ### [Creating and training a classifier (preview)](classifier-creating-a-trainable-classifier.md)
 
 # Manage information governance
@@ -369,11 +369,16 @@
 
 # Manage compliance risks
 ## [Microsoft Service Trust Portal](get-started-with-service-trust-portal.md)
-## [Compliance Manager (Classic)](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
-## [Compliance Manager (Preview)](compliance-manager-overview.md)
-### [What's new in Compliance Manager (Preview)](compliance-manager-release-notes.md)
-### [Working with Compliance Manager (Preview)](working-with-compliance-manager.md)
-### [Compliance score methodology (Preview)](compliance-score-methodology.md)
+## Compliance Score and Compliance Manager
+### [Compliance Score (Preview)](compliance-score.md)
+### [Set up Compliance Score (Preview)](compliance-score-setup.md)
+### [Working with Compliance Score (Preview)](working-with-compliance-score.md)
+### [Compliance Score calculation (Preview)](compliance-score-methodology.md)
+### [Compliance Score release notes (Preview)](compliance-score-release-notes.md)
+### [Compliance Manager (Preview)](compliance-manager-overview.md)
+#### [What's new in Compliance Manager (Preview)](compliance-manager-release-notes.md)
+#### [Working with Compliance Manager (Preview)](working-with-compliance-manager.md)
+#### [Compliance Manager (Legacy)](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
 
 ## [GDPR data subject request tool](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)
 ## [Office 365 Information Protection for GDPR](office-365-information-protection-for-gdpr.md)
