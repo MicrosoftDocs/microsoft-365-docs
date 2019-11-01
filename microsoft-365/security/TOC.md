@@ -201,11 +201,11 @@
 ##### [Configure groups and users for a political campaign dev/test environment](./office-365-security/configure-groups-and-users-for-a-political-campaign-dev-test-environment.md)
 ##### [Create team sites in a political campaign dev/test environment](./office-365-security/create-team-sites-in-a-political-campaign-dev-test-environment.md)
 
-##### [Secure files in Microsoft Teams](secure-files-in-teams.md)
-###### [Deploy teams for three tiers of protection for files](deploy-teams-three-tiers.md)
-###### [Protect files in teams with retention labels and DLP](deploy-teams-retention-DLP.md)
-###### [Protect files in teams with sensitivity labels](deploy-teams-sensitivity-labels.md)
-###### [Secure Teams for files in a dev/test environment](secure-team-for-files-in-a-dev-test-environment.md)
+##### [Secure files in Microsoft Teams](./office-365-security/secure-files-in-teams.md)
+###### [Deploy teams for three tiers of protection for files](./office-365-security/deploy-teams-three-tiers.md)
+###### [Protect files in teams with retention labels and DLP](./office-365-security/deploy-teams-retention-DLP.md)
+###### [Protect files in teams with sensitivity labels](./office-365-security/deploy-teams-sensitivity-labels.md)
+###### [Secure Teams for files in a dev/test environment](./office-365-security/secure-team-for-files-in-a-dev-test-environment.md)
 
 #### [Secure SharePoint Online sites and files](./office-365-security/secure-sharepoint-online-sites-and-files.md)
 ##### [Secure SharePoint Online sites in a dev/test environment](./office-365-security/secure-sharepoint-online-sites-in-a-dev-test-environment.md)
