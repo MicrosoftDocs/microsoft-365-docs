@@ -22,6 +22,10 @@ This article provides you with recommendations and steps to configure a private 
 
 Beyond the private access based on the Office 365 group, this article describes how to configure the underlying private SharePoint team site, which you can access from the **Files** section of a team channel, for the additional security needed to store highly regulated data. On this SharePoint team site, you can store and collaborate on files, pages, a shared calendar, tasks, a notebook, and lists.
 
+>[!Note]
+> A similar scenario using SharePoint is [here](teams-sharepoint-online-sites-highly-regulated-data.md).
+>
+
 The elements of configuration for a team for highly regulated data are:
 
 - A private team with a corresponding Office 365 group that has owner and member user accounts.
