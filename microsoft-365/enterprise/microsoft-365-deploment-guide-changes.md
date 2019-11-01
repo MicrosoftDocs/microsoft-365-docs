@@ -43,7 +43,7 @@ description: See the new content and changes to the content in the Microsoft 365
 
 - [Empower remote workers poster](empower-people-to-work-remotely.md#poster)
 
-  [![Empower remote workers poster](./media/empower-people-to-work-remotely/empower-remote-workers-poster-half.png)](media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf) 
+  [![Empower remote workers poster](./media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf) 
  
 
 ### Updates and enhancements

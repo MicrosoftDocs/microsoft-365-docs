@@ -11,7 +11,9 @@ ms.author: mohitku
 author: MohitKumar
 manager: laurawi
 audience: itpro
-ms.collection: GDPR
+ms.collection: 
+- GDPR
+- M365-security-compliance
 ---
 
 # FastTrack Migration Toolset for Submitting Delete Request
