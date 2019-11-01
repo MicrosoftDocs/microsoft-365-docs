@@ -39,7 +39,7 @@ The following sections cover known issues to be resolved in upcoming releases of
 
 ### Compliance Score
 
-- For Action Items marked as **Not in Scope**, the score assigned to the Action Item is not excluded from the Compliance Score calculation. Action Items marked **Not in Scope** do not increase your Compliance Score.
+- For Action Items marked as **Not in Scope**, the score assigned to the Action Item is not excluded from the compliance score calculation. Action Items marked **Not in Scope** do not increase your compliance score.
 
 ### Secure Score
 
@@ -65,7 +65,7 @@ The following sections cover known issues to be resolved in upcoming releases of
 
 ### Templates
 
-- When you receive an alert notification (orange triangle icon in the Templates dashboard) that a template is ready to be updated, select **Update** to ensure proper functionality for upcoming releases. To complete the update process, go to your Assessments and accept **Update**.
+- When creating a template, you must include Dimensions for both **Product** and **Certification** to ensure your template displays in Compliance Score.
 - Archived templates are editable and they should not be editable.
 - Locked templates allow for Assessment creation when they should not. Locking a Template is meant to prevent it from being used to create Assessments.
 
