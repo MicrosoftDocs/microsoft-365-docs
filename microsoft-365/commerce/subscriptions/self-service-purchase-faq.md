@@ -25,7 +25,12 @@ ms.custom: aka.ms/self-service-purchase-faq
 
 ### What changes did Microsoft announce around self-service purchases for the Power Platform products?
 
-Beginning November 19, 2019, self-service purchase, subscription, and license management capabilities for Power Platform products (Power BI, PowerApps, and Flow) will be available for most commercial cloud customers in the United States. Self-service purchase gives users a chance to try out new technologies and enables them to develop solutions that will ultimately benefit their larger organizations. This capability will not be available to tenants in the US that are government, nonprofit, or education, at this time. Central procurement and IT teams will have visibility to all users buying and deploying self-service purchase solutions through the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
+UPDATE as of October 31, 2019: Over the past week, we’ve been listening to customer feedback regarding the rollout of our self-service purchase capabilities for Power Platform products. Based on the feedback, we’re making the following changes to our plan:
+
+- On November 19th, we will provide IT admins a way to turn off self-service purchasing on a per product basis via PowerShell. More details will be forthcoming.
+- To provide more time to prepare for this change, we are updating the launch for self-service purchase capabilities for Power Platform products to start with Power BI on January 14th for all commercial cloud customers.  
+
+Beginning January 14, 2020, self-service purchase, subscription, and license management capabilities for Power Platform products (Power BI, PowerApps, and Flow) will be available for commercial cloud customers in the United States. Self-service purchase gives users a chance to try out new technologies and enables them to develop solutions that will ultimately benefit their larger organizations. This capability will not be available to tenants in the US that are government, nonprofit, or education, at this time. Central procurement and IT teams will have visibility to all users buying and deploying self-service purchase solutions through the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> and will be able to turn off self-service purchasing on a per product basis via PowerShell.
 
 ### Why is Microsoft adding a self-service purchase option for the Power Platform products?
 
@@ -33,7 +38,7 @@ In today’s world, end users and departments are increasingly seeking out and b
 
 ### When will self-service purchase for the Power Platform products be available?
 
-Microsoft is launching self-service purchase for Power BI on November 19, 2019, to customers in the United States, with additional markets becoming available in the coming months. PowerApps and Microsoft Flow will be added on December 4, 2019. This capability will not be available to tenants in the US that are government, nonprofit, or education, at this time.
+Microsoft is launching self-service purchase for Power BI on January 14, 2020, to customers in the United States, with additional markets becoming available in the coming months. PowerApps and Microsoft Flow will be added in the following weeks. This capability will not be available to tenants in the US that are government, nonprofit, or education, at this time.
 
 ### Will self-service purchase be enabled for services beyond the Power Platform products?
 
@@ -87,13 +92,7 @@ The person who buys the subscription through self-service purchase will be bille
 
 ### What capabilities does an admin have for self-service purchases?
 
-Admins can view all self-service purchases made in their organization in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>. They can see the product, purchaser name, subscriptions purchased, expiry date, order history, purchase price, and assigned users for each self-service purchase.
-
-While all Azure AD users in eligible organizations are allowed to make self-service purchases and will have full control over their subscriptions, admins have the same data management and access policies over products bought through self-service purchase or centrally.
-
-### Why are self-service purchases not subject to admin approval?
-
-We’re being responsive to our customers who have requested self-service purchases while still respecting admin control over the services. Admins have full visibility as to who has made a self-service purchase and which users on their tenants have been assigned a license from a self-service purchase. Organizations can also rely on internal policies, procedures and communications to ensure that those individuals making self-service purchases are complying with company policies.  As one example of how to control access to services: [Set-MsolServicePrincipal](https://docs.microsoft.com/powershell/module/msonline/set-msolserviceprincipal?view=azureadps-1.0) can be used to prevent usage of the product across your entire tenant.
+Admins can view all self-service purchases made in their organization in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>. They can see the product, purchaser name, subscriptions purchased, expiry date, order history, purchase price, and assigned users for each self-service purchase. If required for their organization, admins will be able to turn off self-service purchasing on a per product basis via PowerShell. Admins have the same data management and access policies over products bought through self-service purchase or centrally.
 
 ### How is Microsoft respecting data governance and compliance by enabling self-service purchase?
 
@@ -118,6 +117,11 @@ Admins can see the product, purchaser name, subscription purchased, expiry date,
 ### Are customers’ IT departments or partners expected to support products bought through self-service purchase?
 
 IT departments and partners aren’t expected to provide support for products bought through self-service purchase. Microsoft will provide standard support for self-service purchasers.
+
+### If a self-service purchaser calls support, will they use the customer’s Premier support incidents?
+
+Self-service purchasers won’t use a customer’s Premier support incidents for receiving support for their self-service purchases.
+
 
 ### How are users expected to receive training on the products they buy through self-service purchase?
 
