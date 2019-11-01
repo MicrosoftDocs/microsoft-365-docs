@@ -131,7 +131,7 @@ This control structure is also used to organize the presentation of the internal
 | 4 <a name="4"> </a> | [Microsoft Cloud Security Policy](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=c83d1345-0cff-4beb-a521-27b837ed271a&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers) |
 | 5 <a name="5"> </a> | [Office 365 Information Protection for GDPR](https://docs.microsoft.com/office365/enterprise/office-365-information-protection-for-gdpr) |
 | 6 <a name="6"> </a> | [Who can access your data and on what terms?](https://www.microsoft.com/trustcenter/Privacy/Who-can-access-your-data-and-on-what-terms) |
-| 7 <a name="7"> </a> | [Contracts for sub-processors: Contracting with Microsoft](https://www.microsoft.com/en-us/procurement/supplier-contracting.aspx#SSPA) |
+| 7 <a name="7"> </a> | [Contracts for sub-processors: Contracting with Microsoft](https://www.microsoft.com/procurement/supplier-contracting.aspx#SSPA) |
 | 8 <a name="8"> </a> | [365 Data Subject Requests for GDPR](https://aka.ms/DSROffice365) |
 | 9 <a name="9"> </a> | [Office 365 and Breach Notification Under the GDPR](https://aka.ms/BreachOffice365) |
 | 10  <a name="10"> </a> | [Key Information from Office 365 for Customer Data Protection Impact Assessments](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dpia-office365) |

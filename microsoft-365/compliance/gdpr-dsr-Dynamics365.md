@@ -115,7 +115,7 @@ Customer data in ***Dynamics 365 for Finance and Operations*** can be exported u
 
 In ***Dynamics 365 Business Central***, you can make use of two features to provide a copy of customer data to a data subject:
 
-You can export customer data to an Excel file. In Excel, you can then edit the customer data to be included in the portability request, and save it in a commonly used, machine-readable format, such as .csv or .xml. For details, see [Exporting your business data to Excel.](https://docs.microsoft.com/en-us/dynamics365/business-central/about-export-data)
+You can export customer data to an Excel file. In Excel, you can then edit the customer data to be included in the portability request, and save it in a commonly used, machine-readable format, such as .csv or .xml. For details, see [Exporting your business data to Excel.](https://docs.microsoft.com/dynamics365/business-central/about-export-data)
 
 In ***Dynamics 365 for Talent***, you may use [Extend the Person search report](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/gdpr/gdpr-extend-person-search-report) to gather information in support of a request for a copy of the data subject's personal data.
 
@@ -137,7 +137,7 @@ In ***Dynamics 365 for Finance and Operations***, you may also use of [*customiz
 
 ***Dynamics 365 Business Central*** offers two ways to correct inaccurate or incomplete customer data.
 
-To quickly bulk-edit multiple Business Central records, you can export lists to Excel using the [Business Central Excel Add-in](https://docs.microsoft.com/en-us/dynamics365/business-central/finance-analyze-excel#the--excel-add-in) to correct multiple records, and then publish the modified data from Excel in Business Central. For details, see [Exporting your Business Data to Excel](https://docs.microsoft.com/en-us/dynamics365/business-central/about-export-data).
+To quickly bulk-edit multiple Business Central records, you can export lists to Excel using the [Business Central Excel Add-in](https://docs.microsoft.com/dynamics365/business-central/finance-analyze-excel#the--excel-add-in) to correct multiple records, and then publish the modified data from Excel in Business Central. For details, see [Exporting your Business Data to Excel](https://docs.microsoft.com/dynamics365/business-central/about-export-data).
 
 You can change customer data stored in any field — such as information about a customer in the Customer card — by manually editing the data element containing the target personal data. For details, see [Entering data](https://docs.microsoft.com/dynamics365/business-central/ui-enter-data).
 
@@ -168,7 +168,7 @@ Alternatively, in ***Dynamics 365 for Finance and Operations*** you may use [*cu
 
 In ***Dynamics 365 Business Central***, when a data subject asks you to delete their personal data which happens to be included in your customer data, there are several ways to address this request:
 
-- To quickly bulk-edit multiple Business Central records, you can export data to Excel using the [Business Central Excel Add-in](https://docs.microsoft.com/en-us/dynamics365/business-central/finance-analyze-excel#the--excel-add-in) to delete multiple records, and then publish these changes from Excel back in Business Central. For details, see [Exporting your Business Data to Excel](https://docs.microsoft.com/en-us/dynamics365/business-central/about-export-data).
+- To quickly bulk-edit multiple Business Central records, you can export data to Excel using the [Business Central Excel Add-in](https://docs.microsoft.com/dynamics365/business-central/finance-analyze-excel#the--excel-add-in) to delete multiple records, and then publish these changes from Excel back in Business Central. For details, see [Exporting your Business Data to Excel](https://docs.microsoft.com/dynamics365/business-central/about-export-data).
 - You can delete customer data stored in any field by manually deleting the data element containing the target customer data. For details, see [Entering data](https://docs.microsoft.com/dynamics365/business-central/ui-enter-data).
 - You can directly delete customer data, for example by deleting a contact and then running the Delete Canceled Interaction Log Entries batch job to delete interactions for that contact.
 - You can [delete documents](https://docs.microsoft.com/dynamics365/business-central/admin-manage-documents) containing customer data—for example, memos and posted sales and purchase invoices.
@@ -190,7 +190,7 @@ Both Dynamics 365 for Finance and Operations and ***Dynamics 365 for Talent*** o
 ***Dynamics 365 Business Central*** offers the following features:
 
 - You can export customer data to an Excel file. In Excel, you can then edit the customer data to be included in the portability request, and save it in a commonly used, machine-readable format, such as .csv or .xml. For details, see [Exporting your business data to Excel](https://docs.microsoft.com/dynamics365/business-central/about-export-data).
-- You can export customer data to an Excel file. In Excel, you can then edit the customer data to be included in the portability request, and save it in a commonly used, machine-readable format, such as .csv or .xml. For details, see [Exporting your business data to Excel](https://docs.microsoft.com/en-us/dynamics365/business-central/about-export-data).
+- You can export customer data to an Excel file. In Excel, you can then edit the customer data to be included in the portability request, and save it in a commonly used, machine-readable format, such as .csv or .xml. For details, see [Exporting your business data to Excel](https://docs.microsoft.com/dynamics365/business-central/about-export-data).
 
 ### Microsoft Social Engagement
 
@@ -372,4 +372,4 @@ Permanently deleting a user account removes the user’s data from system-genera
 
 ## Learn more
 
-- [Microsoft Trust Center](https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx)
+- [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
