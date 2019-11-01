@@ -24,27 +24,29 @@ description: "Learn how to move your business to Microsoft 365 Business."
 
 # Upgrade to Microsoft 365 Business from Office 365 Business Premium
 
-If you have an Office 365 for business subscription, for example, Office 365 Business Premium, you can easily add licenses for Microsoft 365 Business, and assign them to some, or all users. Add licenses for Microsoft 365 Business if you want to add: 
+If you have an Office 365 for business subscription, for example, Office 365 Business Premium, you can easily upgrade to Microsoft 365 Business. Upgrade to Microsoft 365 Business if you want to add: 
 - Windows 10 Pro (to PCs running Windows 8 or later)
 - Simple controls that manage business data on devices
 - Advanced security capabilities.
-Find out more at about Microsoft 365 Business [Microsoft.com](https://www.microsoft.com/microsoft-365/business)
+Find out more about Microsoft 365 Business at [Microsoft.com](https://www.microsoft.com/microsoft-365/business)
 
 ## Upgrade to Microsoft 365 Business yourself, or get help
 
-You have three ways to get Microsoft 365 Business:
- - [Add Microsoft 365 Business licenses](#add-microsoft-365-business-licenses) and assign them yourself by following the steps in this topic.
+You have three ways to upgrade your current plan to Microsoft 365 Business:
+ - [Upgrade to Microsoft 365 Business in the admin center](#add-microsoft-365-business-licenses) and complete the process yourself by following the steps in this topic. You can try the steps out, and until you select **Place order** in step 7 below, you can back out at any time.
  - [Add a Microsoft partner](get-microsoft-365-business.md) to your Office 365 subscription. The partner can purchase licenses for you and help you transition.
  - [Head to a Microsoft Store](https://www.microsoft.com/store/locations/find-a-store) where they can complete the process for you.
   
 ## When should I use upgrade?
+
 Upgrade is the right choice when you want to upgrade **all users** assigned to a single plan. When you use upgrade, all the users get switched to another plan at the same time. If you don't want to upgrade everyone assigned to a single plan, buy licenses for the new plan (in this case Microsoft 365 Business), and [assign those licenses individually](https://docs.microsoft.com/office365/admin/manage/assign-licenses-to-users) to each person that you want to upgrade.   
 
 ## Upgrade to Microsoft 365 Business
 Buy your licenses by following these steps in the [new admin center](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview):
 1. Sign into the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
 2. Go to the navigation pane and select **Billing** \> **Products & Services**. Find your Office 365 subscription and select it to view the details. 
-  ![A screenshot shows how to find your subscription in the admin center.](media/FindYourSubscription.png)
+
+    ![A screenshot shows how to find your subscription in the admin center.](media/FindYourSubscription.png)
 
 3. On the next page, select **Upgrade**. 
   ![A screenshot shows where you can select Upgrade in the admin center.](media/SelectUpgrade.png)
