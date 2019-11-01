@@ -33,7 +33,7 @@ You can also search for documents that have processing errors by using the **Pro
 
 ### Ignoring errors
 
-You can ignore a processing error by clicking **Ignore** in the processing error banner. When you ignore an error, the document is removed from the [bul rror remediation workflow](error-remediation-when-processing-data-in-advanced-ediscovery.md). After an error is ignored, the document banner changes color and indicates the processing error was ignored. At any time, you can revert the decision to ignore the error by clicking **Revert**.
+You can ignore a processing error by clicking **Ignore** in the processing error banner. When you ignore an error, the document is removed from the [bulk error remediation workflow](error-remediation-when-processing-data-in-advanced-ediscovery.md). After an error is ignored, the document banner changes color and indicates the processing error was ignored. At any time, you can revert the decision to ignore the error by clicking **Revert**.
 
 ![Click Ignore to ignore the processing error](media/SIERimage3.png)
 
@@ -55,9 +55,9 @@ To remediate a single document, follow these steps:
 
 2.  Remediate the error in the file offline. For encrypted files, that would require decryption software, to remove password protection, either provide the password and save the file or use a password cracker. After the file is remediated, go to the next step.
 
-3. In the review set, click **Remediation** in the banner of the file that you downloaded and remediated in the previous steps.
+3. In the review set, select the file with the processing error that you remediated, and then  click **Remediation**.
 
-   ![image6](media/SIERimage6.png)
+   ![Click Remediation in the banner of the document with processing error ](media/SIERimage6.png)
 
 
 4.  Click **Browse**, and go to the location of the remediated file on your local computer.
