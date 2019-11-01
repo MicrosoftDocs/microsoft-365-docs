@@ -21,7 +21,7 @@ description: "Summary: Office 365 Message Encryption policy for sensitive inform
 
 You can use either Exchange mail flow rules or Office 365 Data Loss Prevention (DLP) to create a sensitive information type policy with Office 365 Message Encryption. To create an Exchange mail flow rule, you can use either the Exchange admin center (EAC) or PowerShell.
 
-### To create the policy by using mail flow rules in the EAC
+## To create the policy by using mail flow rules in the EAC
 
 Sign in to the Exchange admin center (EAC) and go to **Mail flow** > **Rules**. On the Rules page, create a rule that applies Office 365 Message Encryption. You can create a rule based on conditions such as the presence of certain keywords or sensitive information types in the message or attachment.
 
@@ -29,7 +29,7 @@ Sign in to the Exchange admin center (EAC) and go to **Mail flow** > **Rules**. 
 
 Use a work or school account that has global administrator permissions in your Office 365 organization, start a Windows PowerShell session and connect to Exchange Online. For instructions, see [Connect to Exchange Online PowerShell](https://aka.ms/exopowershell). Use the Set-IRMConfiguration and New-TransportRule cmdlets to create the policy.
 
-### Example mail flow rule created with PowerShell
+## Example mail flow rule created with PowerShell
 
 Run the following commands in PowerShell to create an Exchange mail flow rule that automatically encrypts emails sent outside your organization with the *Encrypt-Only* policy if the emails or their attachments contain the following sensitive information types:
 
@@ -56,7 +56,7 @@ After Office 365 encrypts a message, recipients have unrestricted access to atta
 
 You may want to update any applicable end-user documentation and training materials to prepare people in your organization for this change. Share these Office 365 Message Encryption resources with your users as appropriate:
 
-- [Send, view, and reply to encrypted messages in Outlook for PC](https://support.office.com/article/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980)
+- [Send, view, and reply to encrypted messages in Outlook for PC](https://support.office.com/article/eaa43495-9bbb-4fca-922a-df90dee51980)
 - [Office 365 Essentials Video: Office Message Encryption](https://youtu.be/CQR0cG_iEUc)
 
 ## View these changes in the Audit log
