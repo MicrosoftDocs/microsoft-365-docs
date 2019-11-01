@@ -4,6 +4,7 @@
 ## [What's new in the compliance center](whats-new.md)
 ## [Recent updates to compliance content](recently-updated-topics-mcc.md)
 ## [Microsoft 365 compliance center](microsoft-365-compliance-center.md)
+## [Microsoft 365 solution catalog (preview)](microsoft-365-solution-catalog.md)
 ## [Go to the Security & Compliance Center](go-to-the-securitycompliance-center.md)
 ## [Use your free Azure Active Directory subscription](use-your-free-azure-ad-subscription-in-office-365.md)
 ## [Plan for security and compliance in Office 365](plan-for-security-and-compliance.md)
@@ -93,6 +94,7 @@
 ### [Creating and training a classifier (preview)](classifier-creating-a-trainable-classifier.md)
 
 # Manage information governance
+## [Manage information governance](manage-information-governance.md)
 ## [Import data](importing-pst-files-to-office-365.md)
 ### [Use network upload to import PST files](use-network-upload-to-import-pst-files.md)
 ### [Use drive shipping to import PST files](use-drive-shipping-to-import-pst-files-to-office-365.md)
@@ -376,7 +378,7 @@
 ### [Compliance Manager (Preview)](compliance-manager-overview.md)
 #### [What's new in Compliance Manager (Preview)](compliance-manager-release-notes.md)
 #### [Working with Compliance Manager (Preview)](working-with-compliance-manager.md)
-#### [Compliance Manager (Legacy)](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
+#### [Compliance Manager (Classic)](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
 
 ## [GDPR data subject request tool](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)
 ## [Office 365 Information Protection for GDPR](office-365-information-protection-for-gdpr.md)
