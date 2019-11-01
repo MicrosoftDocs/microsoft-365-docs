@@ -29,7 +29,7 @@ For example, your business has grown and needs more than 300 licenses (congratul
 
 Or, your business needs enterprise features, such as Office 365 ProPlus, Windows 10 Enterprise E3, or Enterprise Client Access Licenses (CALs).
 
-Migrating is easy: Just switch licenses. All your data and configuration in your current subscription is maintained. There is nothing for you to do to prepare for the migration and nothing to do afterward, except take advantage of the new features. 
+Upgrading is easy: You can initiate the upgrade [from the Admin center](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/upgrade-to-different-plan?view=o365-worldwide). All your data and configuration in your current subscription is maintained. There is nothing for you to do to prepare for the migration and nothing to do afterward, except take advantage of the new features. 
 
 >[!Note]
 >You can also use a Microsoft 365 Business subscription for up to 300 seats and get a Microsoft 365 Enterprise E3 subscription for more than 300 seats. However, Office 365 ATP is not included with Microsoft 365 Enterprise E3. For continued threat protection, you should add additional Office 365 ATP licenses so that all of the users in scope of your Office 365 ATP polices are licensed.
