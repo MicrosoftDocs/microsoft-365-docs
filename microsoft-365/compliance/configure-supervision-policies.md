@@ -21,7 +21,7 @@ description: "Configure communication supervision for Office 365"
 # Configure supervision policies for Office 365
 
 > [!IMPORTANT]
-> This topic applies to configuring supervision policies in an Office 365 subscription. If you want to configure communications compliance for a Microsoft 365 subscription, see [Configure communications compliance in Microsoft 365 (preview)](communications-compliance-configure.md).
+> This topic applies to configuring supervision policies in an Office 365 subscription. If you want to configure communications compliance for a Microsoft 365 subscription, see [Configure communications compliance in Microsoft 365 (preview)](communication-compliance-configure.md).
 
 Use supervision policies to capture employee communications for examination by internal or external reviewers. For more information about how supervision policies can help you monitor communications in your organization, see [Supervision policies in Office 365](supervision-policies.md).
 
@@ -31,7 +31,7 @@ Use supervision policies to capture employee communications for examination by i
   
 Follow these steps to set up and use supervision in your Office 365 organization:
   
-- **Step 1 (optional)**: [Set up groups for supervision](#step-1-set-up-groups-for-supervision-optional) 
+- **Step 1 (optional)**: [Set up groups for supervision](#step-1-set-up-groups-for-supervision-optional)
 
     Before you start using supervision policies, determine who needs communications reviewed and who performs reviews. If you want to get started with just a few users to see how supervision works, you can skip setting up groups for now.
 
@@ -51,9 +51,9 @@ Follow these steps to set up and use supervision in your Office 365 organization
 
     Test your supervision policy to make sure it functions as desired. It is important to ensure that your compliance strategy is meeting your standards.
 
-## Step 1: Set up groups for communication supervision (optional)
+## Step 1: Set up groups for supervision (optional)
 
- When you create a communication supervision policy, you define who has their communications scanned and who performs reviews. In the policy, you'll use email addresses to identify individuals or groups of people. To simplify your setup, you can create groups for people who have their communication scanned and groups for people who review those communications. If you're using groups, you may need several. For example, you want to monitor communications between two distinct groups of people or if you want to specify a group that isn't going to be supervised.
+ When you create a supervision policy, you define who has their communications scanned and who performs reviews. In the policy, you'll use email addresses to identify individuals or groups of people. To simplify your setup, you can create groups for people who have their communication scanned and groups for people who review those communications. If you're using groups, you may need several. For example, you want to monitor communications between two distinct groups of people or if you want to specify a group that isn't going to be supervised.
 
 Use the following chart to help you configure groups in your organization for communication supervision policies:
 
@@ -98,7 +98,7 @@ For more information about setting up groups, see:
 - [Manage mail-enabled security groups](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups)
 - [Overview of Office 365 Groups](https://docs.microsoft.com/office365/admin/create-groups/office-365-groups?view=o365-worldwide)
 
-## Step 2: Make communication supervision available in your organization (required)
+## Step 2: Make supervision available in your organization (required)
 
 To make **Supervision** available as a menu option in Office 365 security and compliance center, you must be assigned the Supervisory Review Administrator role.
   
@@ -151,7 +151,7 @@ Use a text editor (like Notepad), to create a file that includes the keyword ter
 
     After the custom dictionary/lexicon is created, you can view the configured keywords with the [Get-DlpKeywordDictionary](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpkeyworddictionary) cmdlet or add and remove terms using the [Set-DlpKeywordDictionary](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/set-dlpkeyworddictionary) cmdlet.
 
-## Step 4: Set up a communication supervision policy (required)
+## Step 4: Set up a supervision policy (required)
   
 1. Sign into [https://protection.office.com](https://protection.office.com) using credentials for an admin account in your Office 365 organization.
 

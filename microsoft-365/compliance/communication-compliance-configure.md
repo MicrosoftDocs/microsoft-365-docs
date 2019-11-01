@@ -39,11 +39,11 @@ Follow these steps to set up and use communication compliance in your Microsoft 
 
     Add yourself to the **Supervisory Review Administrator** role so you can set up policies. You'll also need to assign the **Case Management** and **Review** roles to people or groups that will take investigative and remediation action on messages with policy matches. Anyone who has these roles assigned can access the **Communication compliance** page in the Microsoft 365 compliance center. If reviewable email is hosted on Exchange Online, each reviewer must have [remote PowerShell access to Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell).
 
-- **Step 3 (required)**: [Set up a communication compliance policy](#step-3-set-up-a-communication-compliance-policy-required)
+- **Step 3 (required)**: [Set up a communication compliance policy](#step-3-create-a-communication-compliance-policy-required)
 
     You create communication compliance policies in the Microsoft 365 compliance center. These policies define which communications are subject to review in your organization and specifies who performs reviews. Communications include email, Microsoft Teams, Skype for Business, and 3rd-party platform communications (such as Facebook, Twitter, etc.).
 
-- **Step 4 (optional)**: [Create employee notice templates](#step-4-create-employee-notices-optional)
+- **Step 4 (optional)**: [Create employee notice templates](#step-4-create-employee-notice-templates-optional)
 
     Create custom notice templates to send email notifications to employees as a remediation option for policy matches.
 
