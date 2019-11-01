@@ -39,13 +39,15 @@ The following sections cover known issues to be resolved in upcoming releases of
 
 ### Compliance Score
 
-- For Action Items marked as **Not in Scope**, the score assigned to the Action Item is not excluded from the Compliance Score calculation. Action Items marked **Not in Scope** do not increase your Compliance Score.
+- For Action Items marked as **Not in Scope**, the score assigned to the Action Item is not excluded from the compliance score calculation. Action Items marked **Not in Scope** do not increase your compliance score.
 
 ### Secure Score
 
 - Secure Score results are not available for some Actions Items in certain Microsoft 365 and Office 365 subscriptions. The Secure Score result is **Could not be detected** in these cases.
 - Sometimes Secure Score results are returned for corresponding policies and Action Items not completed.
+- For new tenants, Secure Score updates for all actions is automatically turned on. The global administrator can set the Secure Score continuous update switch to off, which turns off updates for all actions.
 - When Secure Score updates are turned on, actions are actively monitored by Secure Score, although the action’s test date will not be updated to reflect monitoring.
+- When new assessments are created, scores automatically include Microsoft-managed control scores and Secure Score integration.
 
 ### Microsoft-managed Controls
 
@@ -63,7 +65,7 @@ The following sections cover known issues to be resolved in upcoming releases of
 
 ### Templates
 
-- When you receive an alert notification (orange triangle icon in the Templates dashboard) that a template is ready to be updated, select **Update** to ensure proper functionality for upcoming releases. To complete the update process, go to your Assessments and accept **Update**.
+- When creating a template, you must include Dimensions for both **Product** and **Certification** to ensure your template displays in Compliance Score.
 - Archived templates are editable and they should not be editable.
 - Locked templates allow for Assessment creation when they should not. Locking a Template is meant to prevent it from being used to create Assessments.
 
