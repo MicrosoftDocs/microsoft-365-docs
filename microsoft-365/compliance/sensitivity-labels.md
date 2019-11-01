@@ -17,9 +17,9 @@ description: "With sensitivity labels, you can classify and help protect your se
 
 # Overview of sensitivity labels
 
-To get their work done, people in your organization need to collaborate with others both inside and outside the organization. This means that content no longer stays behind a firewall – it roams everywhere, across devices, apps, and services. And when it roams, you want it to do so in a secure, protected way that meets your organization’s business and compliance policies.
+To get their work done, people in your organization collaborate with others both inside and outside the organization. This means that content no longer stays behind a firewall — it roams everywhere, across devices, apps, and services. And when it roams, you want it to do so in a secure, protected way that meets your organization’s business and compliance policies.
 
-With sensitivity labels, you can classify and help protect your sensitive content, while making sure that your people’s productivity and ability to collaborate isn’t hindered.
+With sensitivity labels, you can classify and help protect your sensitive content, without hindering your people’s productivity and ability to collaborate.
 
 ![Sensitivity label on Excel ribbon and status bar](media/Sensitivity-label-in-Excel.png)
 
@@ -65,10 +65,11 @@ Each item of content can have a single sensitivity label applied to it. An item 
 
 ## What sensitivity labels can do
 
-After you apply a sensitivity label to a group or site, you can:
+In addition to email and documents, sensitivity labels are available in multiple public preview releases. For more information on what sensitivity labels can do for files, teams, groups, and sites, see these articles:
 
-> [!WARNING]
-> SANJOYAN and Kaarin I need to know exactly what they do here. will fill this in or ask you to.
+- [Enable sensitivity labels for Office files in SharePoint and OneDrive (public preview)](sensitivity-labels-sharepoint-onedrive-files.md)
+
+- [Use sensitivity labels with Microsoft Teams, Office 365 groups, and SharePoint sites (public preview)](sensitivity-labels-teams-groups-sites.md)
 
 After a sensitivity label is applied to an email or document, the protection settings for that label are enforced on the content. With a sensitivity label, you can:
 
@@ -78,7 +79,7 @@ After a sensitivity label is applied to an email or document, the protection set
 
     ![Watermark and header applied to document](media/Sensitivity-label-watermark-header.png)
 
-- **Prevent data loss** by turning on endpoint protection in Intune. If sensitive content gets downloaded, you can help prevent the loss of data from Windows devices. For example, you can’t copy labeled content into Dropbox, Gmail, or a USB drive. Before your sensitivity labels can use Windows Information Protection (WIP), you first need to create an app protection policy in the Azure portal. For more information, see [How Windows Information Protection protects files with a sensitivity label](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/how-wip-works-with-labels?branch=vsts17546553).
+- **Prevent data loss** by turning on endpoint protection in InTune. If sensitive content gets downloaded, you can help prevent the loss of data from Windows devices. For example, you can’t copy labeled content into Dropbox, Gmail, or a USB drive. Before your sensitivity labels can use Windows Information Protection (WIP), you first need to create an app protection policy in the Azure portal. For more information, see [How Windows Information Protection protects files with a sensitivity label](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/how-wip-works-with-labels?branch=vsts17546553).
 
 - **Apply the label automatically to content that contains sensitive information.** You can choose what types of sensitive information that you want labeled, and the label can either be applied automatically, or you can prompt users to apply the label that you recommend. If you recommend a label, the prompt displays whatever text you choose. For more information, see [Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md).
 
@@ -185,10 +186,7 @@ If you're an existing Azure Information Protection customer, you can deploy the 
 
 ### Office apps on the web
 
-For information sensitivity labels with Office apps on the web, see [Apply sensitivity labels to your documents and email within Office - Web](https://support.office.com/en-us/article/apply-sensitivity-labels-to-your-documents-and-email-within-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9?ad=US&ui=en-US&rs=en-US#bkmk_whereavailable&ID0EAEAAA=Web).
-
-> [!WARNING]
-> @REVIEWERS - I don't have comparable data for the web apps. Instead, I decided to just link to the specific web instructions that David will need to write up with your help. Please confirm this is OK.
+For information sensitivity labels with Office apps on the web, see [Apply sensitivity labels to your documents and email within Office - Web](https://support.office.com/article/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9).
 
 ### Office apps on Mac
 
