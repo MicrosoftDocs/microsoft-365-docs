@@ -5,6 +5,7 @@ author: laurawi
 manager: laurawi
 audience: Admin
 ms.service: O365-seccomp
+ms.date: 11/01/2019
 localization_priority: Priority
 ms.collection: 
 - M365-security-compliance
@@ -27,8 +28,7 @@ The ability to apply sensitivity labels to content automatically is important be
 
 - Users no longer need to know about your policies - they can instead focus on their work.
 
-> [!NOTE]
-> The capability to apply labels automatically requires an Azure Information Protection P2 subscription. To use this feature, you must [Download and install the Azure Information Protection unified labeling client](https://docs.microsoft.com/en-us/azure/information-protection/rms-client/install-unifiedlabelingclient-app). We're working on native support for this feature in Office apps, so that it won't require the Azure Information Protection unified labeling client. Also, the unified labeling client runs only on Windows, so this feature is not yet supported on Mac, iOS, and Android.
+For information about license requirements, see [Sensitivity labels in Office apps](sensitivity-labels-office-apps.md).
 
 The auto-labeling settings are available when you create a sensitivity label in the Microsoft 365 compliance center, Microsoft 365 security center, or Office 365 Security & Compliance Center under **Classification** > **Sensitivity labels**.
 
