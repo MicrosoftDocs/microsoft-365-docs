@@ -20,7 +20,7 @@ description: "Learn about communication compliance in Microsoft 365"
 
 # Communication compliance in Microsoft 365 (preview)
 
-Communication compliance in Microsoft 365 helps you minimize communication risks by helping you detect, capture, and take remediation actions for inappropriate messages in your organization. Pre-defined and custom policies allow you to scan internal and external communications for policy matches so they can be examined by designated reviewers. Reviewers can investigate scanned email, Microsoft Teams, or third-party communications in your organization and take appropriate remediation actions to make sure that they are compliant with your organization's message standards.
+Communication compliance is part of the new insider risk solution set in Microsoft 365 that helps minimize communication risks by helping you detect, capture, and take remediation actions for inappropriate messages in your organization. Pre-defined and custom policies allow you to scan internal and external communications for policy matches so they can be examined by designated reviewers. Reviewers can investigate scanned email, Microsoft Teams, or third-party communications in your organization and take appropriate remediation actions to make sure that they are compliant with your organization's message standards.
 
 Communication compliance policies in Microsoft 365 help you overcome many modern challenges associated with compliance and internal and external communications, including:
 
@@ -29,8 +29,6 @@ Communication compliance policies in Microsoft 365 help you overcome many modern
 - Regulatory enforcement & the risk of fines
 
 In some organizations, there may be a separation of duties between IT support and the compliance management group. Microsoft 365 supports the separation between communication compliance configuration and the configuration of policies for scanning communications. For example, the IT group for an organization may be responsible for setting up role permissions and groups to support communication compliance policies configured and managed by the organization's compliance team.
-
-To learn more about upcoming communication compliance feature improvements and availability, see the [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap).
 
 ## Scenarios for communication compliance
 
