@@ -384,9 +384,6 @@ The dashboard displays each Template, along with the Certification and Product a
 
 The built-in Templates each have a built-in Assessment associated with them, but you can create additional Assessments based on built-in Templates, and you can import your own Templates, and create custom Assessments based off those.
 
-> [!IMPORTANT]
-> When you receive an alert notification (designated by an orange triangle icon on the Templates dashboard) that a template is ready for update, select **Update** to ensure your score is accurately calculated. Updates do not automatically extend to the Assessment level, so you should also accept updates to Assessments to ensure proper functionality.
-
 ### Create a Template
 
 You can create a Template by copying an existing Template or by importing a custom Template. There is a specific format and schema that must be used for Template data or it will not import into Compliance Manager. A file with the correct schema and sample data can be downloaded from here.
@@ -526,6 +523,9 @@ You can create a Template by copying an existing Template or by importing Templa
 6. Once the data passes validation, select **Add to Dashboard**.
 7. The imported Template appears on the **Templates** dashboard and it has a status of **Imported**. Select the ellipses (…) and select **Publish** to publish the Template. When the confirmation message appears, select **Publish**. The Template status changes to **Pending Approval**.
 8. Another user with the Compliance Manager Administrator role must approve the Template in the Templates dashboard. They must select the ellipses (…) and select **Approve**. When the confirmation message appears, select **Approve**. The Template is now ready for use.
+
+> [!IMPORTANT]
+> When creating a template, you must include Dimensions for both **Product** and **Certification** to ensure your template displays in Compliance Score.
 
 ### Customize a Template
 
