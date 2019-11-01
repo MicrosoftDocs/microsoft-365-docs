@@ -149,6 +149,7 @@ Microsoft offers a comprehensive set of compliance offerings to help your organi
                         <h3>Regional</h3>
                         <p><a href="offering-bir-2012-netherlands.md">BIR 2012 (Netherlands)</a></p>
                         <p><a href="offering-c5-germany.md">C5 (Germany)</a></p>
+                        <p><a href="offering-ccpa.md">CCPA (US-California)</a></p>
                         <p><a href="offering-ccsl-irap-australia.md">CCSL / IRAP (Australia)</a></p>
                         <p><a href="offering-cs-mark-gold-japan.md">CS Mark Gold (Japan)</a></p>
                         <p><a href="offering-cyber-essentials-plus-uk.md">Cyber Essentials Plus (UK)</a></p>

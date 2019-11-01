@@ -394,13 +394,11 @@
 ### [GDPR for on-premises Windows Server file shares](gdpr-for-on-premises-file-shares.md)
 
 # [Regulatory compliance action plans](compliance-solutions-overview.md)
-
-## [ISO — Recommended action plan](iso-action-plan.md)
-## [NIST — Recommended action plan](nist-action-plan.md)
-
+## [ISO - Recommended action plan](iso-action-plan.md)
+## [NIST - Recommended action plan](nist-action-plan.md)
+## [CCPA - Frequently asked questions](ccpa-faq.md)
 ## [GDPR](gdpr.md)
 ### [Recommended action plan for GDPR](gdpr-action-plan.md)
-
 ### Accountability readiness checklists
 #### [Accountability readiness checklists](gdpr-arc.md)
 #### [Azure](gdpr-arc-azure.md)
@@ -594,6 +592,7 @@
 #### [PASF (UK)](offering-pasf-uk.md)
 
 ### North America
+#### [California Consumer Privacy Act (CCPA)](offering-ccpa.md)
 #### [Canadian Privacy Laws](offering-canadian-privacy-laws.md)
 
 ### South America
