@@ -21,7 +21,7 @@ description: "Understand how Microsoft Compliance Score calculates a personalize
 
 ## Overview
 
-The Compliance Score dashboard displays a score that measures your progress in completing improvement actions within controls. This overall compliance score is the accumulation of points received for each completed action in each assessment; your points accrue regardless of control completion.
+The Compliance Score dashboard displays a score that measures your progress in completing improvement actions within controls. Your points accrue when you complete actions.
 
 Your score is calculated based on the completion of Microsoft-managed actions and customer-managed actions. Each action has a different impact on your score, depending on the potential risks involved, so the score can help prioritize which action to focus on to improve your overall compliance posture.
 
