@@ -9,7 +9,9 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: GDPR
+ms.collection: 
+- GDPR
+- M365-security-compliance
 hideEdit: true
 ---
 
@@ -118,7 +120,7 @@ This control structure is also used to organize the presentation of the internal
 ||||
 |:-----|:---|:---|
 |**ID**|**Description/Links**|**Notes**|
-| 1 <a name="1"> </a> | [Microsoft Professional Services Data Protection Addendum](http://aka.ms/professionalservicesdpa) | |
+| 1 <a name="1"> </a> | [Microsoft Professional Services Data Protection Addendum](https://aka.ms/professionalservicesdpa) | |
 | 2 <a name="2"> </a> | [Microsoft Professional Services Security Documentation on Microsoft Trust Center](https://www.microsoft.com/TrustCenter/professional-services-security) | |
 | 3 <a name="3"> </a> | Training and Awareness Program Description | Available on request through customer’s account management team.| |
 | 4 <a name="4"> </a> | [Microsoft Professional Services GDPR Control Set](https://aka.ms/GDPRControls) | |
