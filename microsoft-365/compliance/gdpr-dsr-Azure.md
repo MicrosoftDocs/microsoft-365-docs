@@ -21,7 +21,7 @@ hideEdit: true
 
 The European Union [General Data Protection Regulation (GDPR)](https://ec.europa.eu/justice/data-protection/reform/index_en.htm) gives rights to people (known in the regulation as *data subjects*) to manage the personal data that has been collected by an employer or other type of agency or organization (known as the *data controller* or just *controller*). Personal data is defined very broadly under the GDPR as any data that relates to an identified or identifiable natural person. The GDPR gives data subjects specific rights to their personal data; these rights include obtaining copies of personal data, requesting corrections to it, restricting the processing of it, deleting it, or receiving it in an electronic format so it can be moved to another controller. A formal request by a data subject to a controller to take an action on their personal data is called a *Data Subject Request* or DSR.
 
-Similarly, the California Consumer Privacy Act (CCPA), provides privacy rights and obligations to California consumers, including rights similar to GDPR’s Data Subject Rights, such as the right to delete, access and receive (portability) their personal information.  The CCPA also provides for certain disclosures, protections against discrimination when electing exercise rights, and “opt-out/ opt-ins” requirements for certain data transfers classified as “sales".
+Similarly, the California Consumer Privacy Act (CCPA), provides privacy rights and obligations to California consumers, including rights similar to GDPR’s Data Subject Rights, such as the right to delete, access and receive (portability) their personal information.  The CCPA also provides for certain disclosures, protections against discrimination when electing exercise rights, and “opt-out/ opt-in” requirements for certain data transfers classified as “sales".
 
 The guide discusses how to use Microsoft products, services and administrative tools to help our controller customers find and act on personal data to respond to DSRs. Specifically, this includes how to find, access, and act on personal data that reside in the Microsoft cloud. Here’s a quick overview of the processes outlined in this guide:
 
@@ -279,15 +279,15 @@ Here’s the high-level process for exporting data from your tenant.
 
 1. Open the Azure portal, select **All services**, type *policy* into the filter, and then select **Policy**.
 
-     ![All services filter ](media/azure-dsr_image12.png)
+     ![All services filter ](media/gdpr-azure-dsr-azure-policy.png)
 
 2. In the **Policy** blade, select **User privacy**, select **Manage User Requests**, and then select **Add export request**.
 
-    ![Add export request ](media/azure-dsr_image13.png)
+    ![Add export request ](media/gdpr-azure-dsr-azure-add-export-request.png)
 
 3. Complete the **Export data request**:
 
-    ![New export data request](media/azure-dsr_image14.png)
+    ![New export data request](media/gdpr-azure-dsr-azure-export-data-request.png)
 
 - **User.** Type the email address of the Azure Active Directory user that requested the export.
 - **Subscription.** Select the account you use to report resource usage and to bill for services. This is also the location of your Azure storage account.
