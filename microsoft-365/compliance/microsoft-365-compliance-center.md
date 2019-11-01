@@ -43,7 +43,7 @@ From here, you can:
 
     ![Solution catalog card Microsoft 365 compliance center](media/m365-compliance-center-solution-catalog-card.png)
 
-- Review the **Active alerts** card, which includes a summary of the most [active alerts]((alert-policies.md)) and includes a link where you can view more detailed information, such as Severity, Status, Category, and more.
+- Review the **Active alerts** card, which includes a summary of the most [active alerts](alert-policies.md) and includes a link where you can view more detailed information, such as Severity, Status, Category, and more.
 
     ![Active alerts card Microsoft 365 compliance center](media/m365-compliance-center-active-alerts-card.png)
 
