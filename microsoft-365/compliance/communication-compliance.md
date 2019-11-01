@@ -68,6 +68,7 @@ Intelligent customizable templates in communication compliance allow you to appl
 
 Built-in remediation workflows allow you to quickly identify and take action on messages with policy matches in your organization. The following new features increase efficiency for investigation and remediation activities:
 
+- **Flexible remediation workflow**: New remediation workflow helps you quickly take action on policy matches, including new message escalation and notification options.
 - **Conversation threading**: Messages are now visually grouped by original message and all associated reply messages, giving you better context during investigation and remediation actions.
 - **Keyword highlighting**: Terms matching policy conditions are highlighted in the message text view to help reviewers quickly locate and remediate policy alerts.
 - **Exact and near duplicate detection**: In addition to scanning for exact terms matching communication compliance policies, near duplicate detection groups textually similar terms and messages together to help speed up your review process.
