@@ -61,7 +61,7 @@ For each capability, the following table provides the minimum version you need t
 |[View label usage with label analytics](label-analytics.md) and send data for administrators                      | TBD            | TBD        | TBD   | TBD         | TBD                                                        |
 |[Require users to apply a label to their email and documents](sensitivity-labels.md#what-label-policies-can-do)   | TBD            | TBD        | TBD   | TBD         | TBD                                                        |
 |[Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md)                    | Preview: rolling out to [Office Insider channel](https://office.com/insider)                           | TBD | TBD | TBD | [Preview](sensitivity-labels-sharepoint-onedrive-files.md) |
-|Support [AutoSave](https://support.office.com/article/6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) and [co-authoring](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) on labeled and protected documents | TBD | TBD | TBD | TBD | [Preview](sensitivity-labels-sharepoint-onedrive-files.md) |
+|Support [AutoSave](https://support.office.com/article/6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) and [coauthoring](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) on labeled and protected documents | TBD | TBD | TBD | TBD | [Preview](sensitivity-labels-sharepoint-onedrive-files.md) |
 |
 
 ## Support for sensitivity label capabilities in Outlook

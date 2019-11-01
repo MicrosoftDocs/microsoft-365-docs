@@ -3,7 +3,7 @@ title: "Overview of sensitivity labels"
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 10/11/2019
+ms.date: 10/31/2019
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp

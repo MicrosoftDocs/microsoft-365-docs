@@ -1,8 +1,9 @@
 ---
-title: "Use sensitivity labels with teams, groups, and sites (preview)"
+title: "Use sensitivity labels with Microsoft Teams, Office 365 groups, and SharePoint sites (public preview)"
 ms.author: krowley
 author: kccross
 manager: laurawi
+ms.date: 10/31/2019
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -12,7 +13,7 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "You can apply labels to teams, Office 365 groups, and SharePoint sites. "
+description: "You can apply labels to Microsoft Teams, Office 365 groups, and SharePoint sites."
 ---
 
 # Use sensitivity labels with teams, groups, and sites (preview)
@@ -24,19 +25,19 @@ When you create sensitivity labels in the [Microsoft 365 compliance center](http
 - Access from unmanaged devices
 
 > [!NOTE]
-> When a label is applied to a team or group, the label is automatically applied to the connected SharePoint team site and vice versa. 
+> When a label is applied to a team or group, the label is automatically applied to the connected SharePoint team site and vice versa.
 
 You can now also enable sensitivity labels for Office files in SharePoint and OneDrive[Learn more](sensitivity-labels-sharepoint-onedrive-files.md).
 
 ## Overview
 
-When you publish sensitivity labels to users, the same list of labels is available for those users across Office 365. 
+When you publish sensitivity labels to users, the same list of labels is available for those users across Office 365.
 
-The following images show how the list of labels appears to a user in Word and when they create a new team site from SharePoint. 
-
-![A sensitivity label displayed in the Word desktop app](media/sensitivity-label-word.png)
+The following images show how the list of labels appears to a user in Word and when they create a new team site from SharePoint.
 
 ![A sensitivity label when creating a team site from SharePoint](media/sensitivity-label-new-team-site.png)
+
+![A sensitivity label displayed in the Word desktop app](media/sensitivity-label-word.png)
 
 ## Enable this preview by using Azure PowerShell
 
@@ -132,8 +133,8 @@ Global and SharePoint admins can go to the Active sites page in the new SharePoi
 
 We recommend that you don't change a label's site and group settings after the label has been applied to several teams, groups, or sites. If you need to change it, and all existing teams, sites, and groups must enforce the new setting, you'll need to use an Azure AD PowerShell script to manually apply updates. 
 
-## Support for the new sensitivity labels 
- 
+## Support for the new sensitivity labels
+
 The following apps and services support the sensitivity labels in this preview:
 
 - SharePoint
@@ -181,13 +182,13 @@ Apps and services that support the new sensitivity labels will get created with 
 
 As soon as you enable this preview, users will start seeing your existing labels available for sites and groups. We recommend that you go to each label in the Microsoft 365 compliance center and apply the policies you want for sites and groups.  
 
-### Convert Azure AD site classification to sensitivity labels 
+### Relabel existing Office 365 groups with the sensitivity labels
 
 1. [Download the latest SharePoint Online Management Shell](https://go.microsoft.com/fwlink/p/?LinkId=255251).
 
     > [!NOTE]
     > If you installed a previous version of the SharePoint Online Management Shell, go to Add or remove programs and uninstall “SharePoint Online Management Shell.” <br>On the Download Center page, select your language and then click the Download button. You’ll be asked to choose between downloading a x64 and x86 .msi file. Download the x64 file if you’re running the 64-bit version of Windows or the x86 file if you’re running the 32-bit version. If you don’t know, see https://support.microsoft.com/help/13443/windows-which-operating-system. After the file downloads, run it and follow the steps in the Setup Wizard. 
-    
+  
 2. Connect to SharePoint Online as a global admin or SharePoint admin in Office 365. To learn how, see [Getting started with SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
 
 3. Run the following command to get the list of sensitivity labels and their GUIDs.
@@ -199,9 +200,9 @@ As soon as you enable this preview, users will start seeing your existing labels
     Import-PSSession $Session
     Get-Label |ft Name, Guid  
     ```
- 
+
 4. Note the GUID for the "General" label, for example.
- 
+
 5. Get list of groups that have the “General” classification.
 
     ```PowerShell

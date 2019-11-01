@@ -18,7 +18,7 @@ description: "Administrators can enable sensitivity label support for Word, Exce
 
 # Enable sensitivity labels for Office files in SharePoint and OneDrive (public preview)
 
-Previously, when you applied sensitivity labels that included encryption to Office files stored in SharePoint and OneDrive, the service couldn't process the content of these files. Co-authoring, eDiscovery, Data Loss Prevention, search, Delve, and other collaborative features didn't work. This preview enables these features:
+Previously, when you applied sensitivity labels that included encryption to Office files stored in SharePoint and OneDrive, the service couldn't process the content of these files. Coauthoring, eDiscovery, Data Loss Prevention, search, Delve, and other collaborative features didn't work. This preview enables these features:
 
 - SharePoint recognizes sensitivity labels applied to Word, Excel, and PowerPoint files in SharePoint and OneDrive and enforces the settings that correspond with each label.
 
@@ -57,11 +57,9 @@ For this preview, use the OneDrive sync app version 19.002.0121.0008 or later on
 
 - RMS revocation, tracking, and reporting are unsupported​.
 
-- Co-authoring is not currently supported in the Office desktop apps and mobile apps, which continue to open files in exclusive editing mode.
+- Coauthoring is not currently supported in the Office desktop apps and mobile apps, which continue to open files in exclusive editing mode.
 
 - If a label includes encryption, Microsoft Cloud App Security isn't able to read the label information for the files in SharePoint.
-
-- If you later disable this preview, files that you uploaded during the preview continue to be protected by the label, and the corresponding settings continue to be enforced. If you apply labels to new files after you disable the preview, then full-text search, eDiscovery, and coauthoring will no longer work.
 
 > [!IMPORTANT]
 > After you create or change a sensitivity label in the Microsoft 365 compliance center, we recommend that you publish it to only one or two people, wait for at least 24 hours, and then publish it more widely. If you publish labels that haven't fully synced, when users apply the labels to files and upload them to SharePoint, the files can’t be opened in the web versions of the Office apps. Search and eDiscovery also won't work for the files anymore.
@@ -82,7 +80,9 @@ To prepare the SharePoint Online Management Shell for the preview:
 
 5. After you download the file, run the file and follow the steps in the Setup Wizard.
 
-## Enable the preview by using Microsoft PowerShell
+## Enable the preview by using Microsoft PowerShell (opt-in)
+
+To enable the preview, use the Set-SPOTenant cmdlet:
 
 1. Using a work or school account that has global administrator or SharePoint admin privileges in Office 365, connect to SharePoint. To learn how, see [Getting started with SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
 
@@ -90,4 +90,18 @@ To prepare the SharePoint Online Management Shell for the preview:
 
     ```PowerShell
     Set-SPOTenant -EnableSensitivityLabelIntegration $true  
+    ```
+
+## Disable the preview by using Microsoft PowerShell (opt-out)
+
+If you disable this preview, files that you uploaded during the preview continue to be protected by the label. The corresponding settings continue to be enforced. When you apply labels to new files after you disable the preview, full-text search, eDiscovery, and coauthoring will no longer work.
+
+To disable the preview, use the Set-SPOTenant cmdlet:
+
+1. Using a work or school account that has global administrator or SharePoint admin privileges in Office 365, connect to SharePoint. To learn how, see [Getting started with SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
+
+2. Run the following command:
+
+    ```PowerShell
+    Set-SPOTenant -EnableSensitivityLabelIntegration $false
     ```
