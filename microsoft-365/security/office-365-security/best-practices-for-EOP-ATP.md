@@ -18,11 +18,11 @@ description: "What are best practices for Exchange Online Protection (EOP) and A
 
 # Best-practices for EOP and Office 365 ATP security
 
-**Exchange Online Protection (EOP)** is the core of security for Office 365 subscriptions and helps keep malicious emails from reaching your employee's inboxes. But with new, more sophisticated attacks emerging every day, improved protections are a necessity. While it's optional, there are additional security features in **Office 365 Advanced Threat Protection (ATP)** ATP Plan 1 or ATP Plan 2, that provide more layers of security, control, and investigation. 
+**Exchange Online Protection (EOP)** is the core of security for Office 365 subscriptions and helps keep malicious emails from reaching your employee's inboxes. But with new, more sophisticated attacks emerging every day, improved protections are often required. **Office 365 Advanced Threat Protection (ATP)** ATP Plan 1 or ATP Plan 2 contain additional features that give admins more layers of security, control, and investigation. 
 
-Although we empower security administrators to customize their security settings, there are two security levels in EOP and Office365 ATP that we recommend: **Standard** and **Strict**. Each customer environment and needs are different, but we beleive that these levels of mail filtering configurations will help prevent unwanted mail from reaching your employees inbox in most situations. 
+Although we empower security administrators to customize their security settings, there are two security levels in EOP and Office365 ATP that we recommend: **Standard** and **Strict**. Each customer's environment and needs are different, but we beleive that these levels of mail filtering configurations will help prevent unwanted mail from reaching your employees' inbox in most situations. 
 
-This topic contains those Microsoft recommended settings to help protect your Office 365 users.
+This topic describes these Microsoft-recommended settings to help protect your Office 365 users.
 
 ## Anti-spam, anti-malware, and anti-phishing protection in EOP
 Anti-spam, anti-malware, and anti-phishing are features of EOP that can be configured by admins. We recommend the following configurations.
@@ -40,7 +40,7 @@ Anti-spam, anti-malware, and anti-phishing are features of EOP that can be confi
 |Quarantine retention period|30 days|30 days||
 |Safety tips|On|On||
 |Allowed Senders|None|None||
-|Allowed Senders Domains|None|None|Adding domains you own (e.g. Accepted Domains) to the allowed list is not needed. This is considered high risk since it creates opportunities for bad actors to send you mail that would otherwise be filtered out. Use [spoof intelligence](learn-about-spoof-intelligence.md) in the Security & Compliance Center on the Anti-spam settings page to review all senders who are spoofing either domains that are part of your organization, or spoofing external domains.|
+|Allowed Senders Domains|None|None|Adding domains that you own (also known as _accepted domains_) to the allowed senders list is not required. In fact, it's considered high risk since it creates opportunities for bad actors to send you mail that would otherwise be filtered out. Use [spoof intelligence](learn-about-spoof-intelligence.md) in the Security & Compliance Center on the **Anti-spam settings** page to review all senders who are spoofing either domains that are part of your organization, or spoofing external domains.|
 |Blocked Senders|None|None||
 |Blocked Senders domains|None|None||
 |End user spam notification frequency|Enabled|Enabled|3 days|
