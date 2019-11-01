@@ -3,7 +3,7 @@ title: "Teams for highly regulated data"
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 10/21/2019
+ms.date: 10/31/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -35,7 +35,14 @@ The elements of configuration for a team for highly regulated data are:
 Here is the resulting configuration with a sensitivity label.
 
 ![The secure team scenario configuration](./media/secure-teams-highly-regulated-data-scenario/secure-team-final.png)
- 
+
+<a name="poster"></a>
+For a 1-page summary of this scenario, see the [Teams for highly regulated data poster](./media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf).
+
+[![Teams for highly regulated data poster](././media/secure-teams-highly-regulated-data-scenario/teams-highly-regulated-data-poster.png)](./media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf)
+
+You can also download this poster as a [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf) and print it in letter, legal, or tabloid (11 x 17) formats.
+
 ## Phase 1: Configure a team for highly regulated data
 
 The end-to-end configuration consists of these steps:
