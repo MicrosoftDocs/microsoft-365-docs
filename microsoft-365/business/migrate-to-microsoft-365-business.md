@@ -37,44 +37,33 @@ You have three ways to get Microsoft 365 Business:
  - [Add a Microsoft partner](get-microsoft-365-business.md) to your Office 365 subscription. The partner can purchase licenses for you and help you transition.
  - [Head to a Microsoft Store](https://www.microsoft.com/store/locations/find-a-store) where they can complete the process for you.
   
+## When should I use upgrade?
+Upgrade is the right choice when you want to upgrade **all users** assigned to a single plan. When you use upgrade, all the users get switched to another plan at the same time. If you don't want to upgrade everyone assigned to a single plan, buy licenses for the new plan (in this case Microsoft 365 Business), and [assign those licenses individually](https://docs.microsoft.com/office365/admin/manage/assign-licenses-to-users) to each person that you want to upgrade.   
+
 ## Upgrade to Microsoft 365 Business
 Buy your licenses by following these steps in the [new admin center](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview):
 1. Sign into the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
-2. Go to the navigation pane and select **Billing** \> **Products & Services**. Find your Office 365 subscription and select it to view the details. (pic)
-3. On the next page, select **Upgrade** (pic) to view a list of Office plans that you can choose from. Find the Microsoft 365 Business plan. You can scroll down if you want to see all the Office apps and services that are included with this plan. Under Microsoft 365 Business, select **Upgrade** to add Microsoft 365 Business to your cart.
+2. Go to the navigation pane and select **Billing** \> **Products & Services**. Find your Office 365 subscription and select it to view the details. 
+  ![A screenshot shows how to find your subscription in the admin center.](media/FindYourSubscription.png)
+
+3. On the next page, select **Upgrade**. 
+  ![A screenshot shows where you can select Upgrade in the admin center.](media/SelectUpgrade.png)
+
+  Next you can view a list of Office plans that you can upgrade to from your current plan. Find the Microsoft 365 Business plan. You can scroll down if you want to see all the Office apps and services that are included with this plan. Under **Microsoft 365 Business**, select **Upgrade** to add Microsoft 365 Business to your cart.
 4. In the cart:
     1. We'll automatically include licenses for all your current users to the cart. Adjust the quantity of licenses if you want to purchase more or less. For example, buy less licenses if you want some of your users to continue with their current plan. Everyone in your organization continues with their current license until you [assign a different license](#assign-microsoft-365-licenses). 
     2. You can adjust how you'd like to pay - monthly or yearly. Select the drop-down menu to make your choice.
 5. Select **Go to Checkout** where you'll see a summary of your purchase, including the payment method details for this account. You can also add a promo code here if you have one.
 6. Select **Place order** to complete your purchase.
-It takes Microsoft a few minutes to set up your new service plans so you can assign licenses to your employees. To check on progress, select **Check upgrade status**. 
-1. Once your plan is ready, select **Go to setup** and follow the steps in [Assign Microsoft 365 licenses](#assign-microsoft-365-licenses).
-  
-## Assign Microsoft 365 licenses
-
-Once you have purchased new licenses, select **Assign to Users** to open the **Active users** page. The page shows the current license assigned to each user. Follow the procedure for the change you want to make. Change licenses either for:
-- [All users](#assign-licenses-to-all-users)
-- [A specific group](#assign-licenses-to-a-specific-group) (if you have those set up).
-- [Individual users](#assign-licenses-to-individual-users)
+It takes Microsoft a few minutes to set up your new service plans. To check on progress, select **Check upgrade status**. 
+7. Once your plan is ready, select **Go to setup** and follow the steps in [Assign Microsoft 365 licenses](#assign-microsoft-365-licenses).
 
 > [!NOTE]
 > You'll receive a prorated refund for the licenses that you no longer need. Your bank account or credit card will be charged about two days after you set up the new plan.
-
-### Assign licenses to all users
-1. On the **Active users** page, select the checkmark to the left of **Display name** to select all users.
-2. Select **Manage product licenses** to open the side pane. Then select **Replace existing license assignments**.
-3. Select **Next** to view the **Replace existing products** page. Next to Microsoft 365 Business, switch the toggle to **Yes** to assign licenses to all users. All the features included with Microsoft 365 are automatically switched on too. We recommend leaving all features switched on unless there are specific options that you don't want to make available to everyone - for example - you might not need [Yammer](https://docs.microsoft.com/yammer/yammer-landing-page), especially in a very small business. If you switch something off now, you can add it back later. 
-4. Select **Replace** and then **Close** to complete this change. 
-
-### Assign licenses to a specific group
-On the **Active users** page, select **Assign to group** and then follow the instructions for [Assign licenses to all users](#assign-licenses-to-all-users).
-
-### Assign licenses to individual users
-On the **Active users** page, select a user, to open their details in the side pane. Select **Licenses and Apps** and then select **Microsoft 365 Business** to switch the individual license.
-
+  
 ## Protect user devices and files
 
-After you have assigned Microsoft 365 Business licenses, complete steps to start protecting devices and files. You'll be using some new options included in the navigation pane.
+Now that Microsoft 365 Business licenses have been assigned, complete steps to start protecting devices and files. You'll be using some new options included in the navigation pane.
   
 1. In the admin center, in the navigation pane, go to **Devices** \> **Policies**.
     
