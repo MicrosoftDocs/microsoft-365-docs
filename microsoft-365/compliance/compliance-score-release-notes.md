@@ -40,6 +40,10 @@ Keep these points in mind as you work with Compliance Score and Compliance Manag
 
 The following sections cover known issues to be resolved in upcoming releases of Compliance Score.
 
+### Improvement actions
+
+- The **Launch Now** link for the **Configure External Sharing Links to Expire** improvement action gives an error. To access the SharePoint admin center, go to the [Microsoft 365 Admin Center](https://admin.microsoft.com). On the left navigation menu, select **Show all.** Under **Admin centers,** select **SharePoint**.
+
 ### Supported browsers
 
 - The latest versions of Microsoft Edge, Chrome, and Safari are supported.
