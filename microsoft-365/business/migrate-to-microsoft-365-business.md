@@ -34,12 +34,14 @@ Find out more about Microsoft 365 Business at [Microsoft.com](https://www.micros
 
 You have three ways to upgrade your current plan to Microsoft 365 Business:
  - [Upgrade to Microsoft 365 Business in the admin center](#add-microsoft-365-business-licenses) and complete the process yourself by following the steps in this topic. You can try the steps out, and until you select **Place order** in step 7 below, you can back out at any time.
- - [Add a Microsoft partner](get-microsoft-365-business.md) to your Office 365 subscription. The partner can purchase licenses for you and help you transition.
+ - [Add a Microsoft partner](get-microsoft-365-business.md) to your Office 365 subscription. The partner can complete the upgrade for you and help you transition.
  - [Head to a Microsoft Store](https://www.microsoft.com/store/locations/find-a-store) where they can complete the process for you.
   
-## When should I use upgrade?
+## Before you get started
 
-Upgrade is the right choice when you want to upgrade **all users** assigned to a single plan. When you use upgrade, all the users get switched to another plan at the same time. If you don't want to upgrade everyone assigned to a single plan, buy licenses for the new plan (in this case Microsoft 365 Business), and [assign those licenses individually](https://docs.microsoft.com/office365/admin/manage/assign-licenses-to-users) to each person that you want to upgrade.   
+- **When should I use upgrade?** Upgrade is the right choice when you want to upgrade **all users** assigned to a single plan. When you use upgrade, all the users get switched to another plan at the same time. If you don't want to upgrade everyone assigned to a single plan, buy licenses for the new plan (in this case Microsoft 365 Business), and [assign those licenses individually](https://docs.microsoft.com/office365/admin/manage/assign-licenses-to-users) to each person that you want to upgrade. 
+- **Some add-ons might prevent upgrade**. If your add-on prevents upgrade, you can remove it first, and add it back if you still want it after you upgrade. 
+- **If you prepaid your plan** (you'll know this because you received a product ID), there isn't a straightforward upgrade path. Contact a partner, go to the Microsoft store, or wait until your prepaid plan expires to switch to a new plan.
 
 ## Upgrade to Microsoft 365 Business
 Buy your licenses by following these steps in the [new admin center](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview):
@@ -51,14 +53,17 @@ Buy your licenses by following these steps in the [new admin center](https://doc
 3. On the next page, select **Upgrade**. 
   ![A screenshot shows where you can select Upgrade in the admin center.](media/SelectUpgrade.png)
 
-  Next you can view a list of Office plans that you can upgrade to from your current plan. Find the Microsoft 365 Business plan. You can scroll down if you want to see all the Office apps and services that are included with this plan. Under **Microsoft 365 Business**, select **Upgrade** to add Microsoft 365 Business to your cart.
-4. In the cart:
+  > [!NOTE]
+  > If you see a message that says "Upgrading your subscription is not supported with group-based licensing in Azure Active Directory", you can safely ignore this unless you have a very large business. Organizations who have selected this option will be aware that they're using group-based licensing.
+
+4. Next you can view a list of Office plans that you can upgrade to from your current plan. Find the Microsoft 365 Business plan. You can scroll down if you want to see all the Office apps and services that are included with this plan. Under **Microsoft 365 Business**, select **Upgrade** to add Microsoft 365 Business to your cart.
+5. In the cart:
     1. We'll automatically include licenses for all your current users to the cart. Adjust the quantity of licenses if you want to purchase more or less. For example, buy less licenses if you want some of your users to continue with their current plan. Everyone in your organization continues with their current license until you [assign a different license](#assign-microsoft-365-licenses). 
     2. You can adjust how you'd like to pay - monthly or yearly. Select the drop-down menu to make your choice.
-5. Select **Go to Checkout** where you'll see a summary of your purchase, including the payment method details for this account. You can also add a promo code here if you have one.
-6. Select **Place order** to complete your purchase.
+6. Select **Go to Checkout** where you'll see a summary of your purchase, including the payment method details for this account. You can also add a promo code here if you have one.
+7. Select **Place order** to complete your purchase.
 It takes Microsoft a few minutes to set up your new service plans. To check on progress, select **Check upgrade status**. 
-7. Once your plan is ready, select **Go to setup** and follow the steps in [Assign Microsoft 365 licenses](#assign-microsoft-365-licenses).
+1. Once your plan is ready, select **Go to setup** and follow the steps in [Assign Microsoft 365 licenses](#assign-microsoft-365-licenses).
 
 > [!NOTE]
 > You'll receive a prorated refund for the licenses that you no longer need. Your bank account or credit card will be charged about two days after you set up the new plan.
