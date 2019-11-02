@@ -18,7 +18,7 @@
 ## Customer Key
 ### [Controlling your data in Office 365 using Customer Key](controlling-your-data-using-customer-key.md)
 ### [Service encryption with Customer Key for Office 365 FAQ](service-encryption-with-customer-key-faq.md)
-## [Communication compliance]()
+## Communication compliance
 ### [Learn about communication compliance (preview)](communication-compliance.md)
 ### [Configure communication compliance in Microsoft 365 (preview)](communication-compliance-configure.md)
 ### [Investigate and remediate communication compliance alerts (preview)](communication-compliance-investigate-remediate.md)
@@ -319,7 +319,7 @@
 ## [Manage a data spillage incident](manage-data-spillage-incidents.md)
 ## [Create a new investigation](create-new-investigation.md)
 ## [Assign permissions for data investigations](permissions.md)
-
+ 
 ## [Search for data in an investigation](search-for-data.md)
 ### [Build search queries](build-search-queries.md)
 ### [Search statistics](search-statistics.md)
@@ -346,14 +346,14 @@
 ### [Export documents from evidence](export-documents-from-incident.md)
 ### [Download export jobs](download-export-jobs-from-a-data-investigation.md)
 
-## [Configure settings for data investigations](configure-settings-datainvestigations.md)
+## Configure investigation settings
 ### [Add or remove members from an investigation](add-remove-members.md)
 ### [Configure search and analytics settings](configure-search-analytics-settings.md)
 ### [Close or delete an investigation](close-or-delete-investigation.md)
 
-## Data Investigations reference
+## Data investigations reference
 ### [Release notes](data-investigations-release-notes.md)
-### [Limits in Data Investigations](limits-datainvestigations.md)
+### [Limits in data investigations](limits-datainvestigations.md)
 ### [Supported file types](supported-filetypes-datainvestigations.md)
 ### [Document metadata fields](document-metadata-fields.md)
 ### [Manage jobs](manage-jobs.md)
@@ -400,11 +400,13 @@
 ### [GDPR for on-premises Windows Server file shares](gdpr-for-on-premises-file-shares.md)
 
 # [Regulatory compliance action plans](compliance-solutions-overview.md)
+
 ## [ISO - Recommended action plan](iso-action-plan.md)
 ## [NIST - Recommended action plan](nist-action-plan.md)
 ## [CCPA - Frequently asked questions](ccpa-faq.md)
 ## [GDPR](gdpr.md)
 ### [Recommended action plan for GDPR](gdpr-action-plan.md)
+
 ### Accountability readiness checklists
 #### [Accountability readiness checklists](gdpr-arc.md)
 #### [Azure](gdpr-arc-azure.md)
@@ -605,7 +607,5 @@
 #### [PDPA (Argentina)](offering-pdpa-argentina.md)
 
 # [Office 365 Enterprise](https://docs.microsoft.com/Office365/Enterprise)
-
 # [Office 365 Business](https://docs.microsoft.com/office365/admin/admin-home)
-
 # [Microsoft 365 security](https://docs.microsoft.com/microsoft-365/security/)
