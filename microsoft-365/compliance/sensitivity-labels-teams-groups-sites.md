@@ -189,9 +189,9 @@ Apps and services that support the new sensitivity labels will get created with 
 
 As soon as you enable this preview, users will start seeing your existing labels available for sites and groups. We recommend that you go to each label in the Microsoft 365 compliance center and apply the policies you want for sites and groups.  
 
-### Prepare the SharePoint Online Management Shell before relabel Office 365 groups
+### Prepare the SharePoint Online Management Shell before you relabel Office 365 groups
 
-Before you apply new labels over old labels, ensure that you're running the latest SharePoint Online Management Shell. If you already have the latest version, you can go ahead and [apply new labels over old labels to existing Office 365 groups](#apply-new-labels-over-old-labels-to-existing-office-365-groups).
+Before you apply new labels, ensure that you're running the latest SharePoint Online Management Shell. If you already have the latest version, you can go ahead and [Relabel Office 365 groups with new sensitivity labels](#relabel-office-365-groups-with-new-sensitivity-labels).
 
 To prepare the SharePoint Online Management Shell for the preview:
 
@@ -207,7 +207,7 @@ To prepare the SharePoint Online Management Shell for the preview:
 
 ### Relabel Office 365 groups with new sensitivity labels
 
-1. Ensure that you're using the latest version of the SharePoint Online Management Shell. For instructions, see [Prepare the SharePoint Online Management Shell before you apply new labels](#prepare-the-sharepoint-online-management-shell-for-this-preview).
+1. Ensure that you're using the latest version of the SharePoint Online Management Shell. For instructions, see [Prepare the SharePoint Online Management Shell before you relabel Office 365 groups](#prepare-the-sharepoint-online-management-shell-before-you-relabel-office-365-groups).
 
 2. Using a work or school account that has global administrator or SharePoint admin privileges in Office 365, connect to SharePoint Online Management Shell. To learn how, see [Getting started with SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
 
