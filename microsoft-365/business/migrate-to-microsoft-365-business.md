@@ -54,7 +54,8 @@ Buy your licenses by following these steps in the [new admin center](https://doc
     ![A screenshot shows how to find your subscription in the admin center.](media/FindYourSubscription.png)
 
 3. On the next page, select **Upgrade**. 
-  ![A screenshot shows where you can select Upgrade in the admin center.](media/SelectUpgrade.png)
+
+      ![A screenshot shows where you can select Upgrade in the admin center.](media/SelectUpgrade.png)
 
   > [!NOTE]
   > If you see a message that says "Upgrading your subscription is not supported with group-based licensing in Azure Active Directory", you can safely ignore this unless you have a very large business. Organizations who have selected this option will be aware that they're using group-based licensing.
