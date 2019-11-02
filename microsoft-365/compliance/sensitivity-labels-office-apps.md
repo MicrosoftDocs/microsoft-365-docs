@@ -35,7 +35,7 @@ Users must have at least one of the following licenses assigned:
 
 - [Azure Information Protection Premium P1](https://azure.microsoft.com/pricing/details/information-protection/) or above
 
-Office 365 only supports sensitivity labels with a subscription and not with a non-subscription (standalone) version such as Office 2016 or Office 2019.
+The Office built-in labeling client only supports sensitivity labels with a subscription and not with a non-subscription (standalone) version such as Office 2016 or Office 2019.
 
 In order to use automatic or recommended sensitivity labeling, your users also need a least one of the following licenses:
 
@@ -124,7 +124,7 @@ Sensitivity labels applied to documents and emails with the Office built-in labe
 
 ### With other versions of Office
 
-Labeled documents and emails can be opened in any version of of Office by any authorized user, but the label can only be viewed or changed in the supported Office versions listed in the table above or the Azure Information Protection client.
+Labeled documents and emails can be opened in any version of Office by any authorized user, but the label can only be viewed or changed in the supported Office versions listed in the table above or the Azure Information Protection client.
 
 > [!NOTE]
 > If a labeled _and encrypted_ document or email is opened in an [RMS-enlightened application](https://docs.microsoft.com/azure/information-protection/requirements-applications#rms-enlightened-applications) that doesn't support sensitivity labeling, encryption and rights management are enforced.
