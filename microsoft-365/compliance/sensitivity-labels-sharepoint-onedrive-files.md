@@ -5,7 +5,7 @@ author: kccross
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 10/31/2019
+ms.date: 11/01/2019
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: 

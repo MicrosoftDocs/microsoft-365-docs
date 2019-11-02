@@ -75,7 +75,7 @@ After you enable the preview, follow these steps:
 
     - Privacy (Public/Private): Private means only approved members in your organization can see what's inside the group. Anyone else in your organization can't see what's in the group. [Learn more](https://support.office.com/article/36236e39-26d3-420b-b0ac-8072d2d2bedc)
     - Guest access: You can control if guests can be added to a group. [Learn about managing guest access in Office 365 Groups](/office365/admin/create-groups/manage-guest-access-in-groups)
-    - Unmanaged devices: This setting lets you block or limit access to SharePoint content from devices that aren't hybrid AD joined or compliant in InTune.
+    - Unmanaged devices: This setting lets you block or limit access to SharePoint content from devices that aren't hybrid AD joined or compliant in Intune.
     > [!IMPORTANT]
     > If you select Unmanaged devices, you need to go to Azure AD to finish setting up the policy. For info, see [Control access from unmanaged devices](/sharepoint/control-access-from-unmanaged-devices).
 
@@ -207,7 +207,7 @@ To prepare the SharePoint Online Management Shell for the preview:
 
 ### Relabel Office 365 groups with new sensitivity labels
 
-1. Ensure that you are using the latest version of the SharePoint Online Management Shell. For instructions, see [Prepare the SharePoint Online Management Shell before you apply new labels](#prepare-the-sharepoint-online-management-shell-for-this-preview).
+1. Ensure that you're using the latest version of the SharePoint Online Management Shell. For instructions, see [Prepare the SharePoint Online Management Shell before you apply new labels](#prepare-the-sharepoint-online-management-shell-for-this-preview).
 
 2. Using a work or school account that has global administrator or SharePoint admin privileges in Office 365, connect to SharePoint Online Management Shell. To learn how, see [Getting started with SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
 
@@ -232,6 +232,6 @@ To prepare the SharePoint Online Management Shell for the preview:
 6. For each group, add the new sensitivity label GUID.
 
     ```PowerShell
-    foreach ($g in $groups) 
+    foreach ($g in $groups)
     { Set-UnifiedGroup -Identity $g.DisplayName -SensitivityLabelId "457fa763-7c59-461c-b402-ad1ac6b703cc"}
     ```
