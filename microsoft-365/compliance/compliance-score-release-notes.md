@@ -64,7 +64,7 @@ Assessments created from custom templates may not appear correctly in Compliance
 
 4. Upload the template to Compliance Manager following these instructions:
    - In Compliance Manger, from the Templates dashboard, select **+Add Template**.
-   - On the Add Template flyout, under the **Dimension** header, for **Certification** select **CCPA**, and for **Product** select **Intune**.
+   - On the **Add Template** flyout, under the **Dimension** header, for **Certification** select **CCPA**, and for **Product** select **Intune**.
    - Select **Browse** and find the file you downloaded and saved in steps 1-3 above, then select **Add to Dashboard**.
    - Have another Compliance Manager admin approve the template.
    - Upon approval, you'll see your new template added to your list of templates. Find your new template, go to the ellipses on the far right side of its row, select **Reject**, then confirm the rejection. This removes the template from your inventory, yet the dimensions you added to that template remain in Compliance Manager so you can select them for a future template.
@@ -74,7 +74,7 @@ Assessments created from custom templates may not appear correctly in Compliance
 
 6. **Upload** your custom template to Compliance Manager using the correct **Product** and **Certification** tag.
 
-7. Ensure that *all* custom templates are tagged with a **Product** and **Certification**.
+7. Ensure that *all* custom templates are tagged with a **Product** and a **Certification**.
 
 8. Have another Compliance Manager admin approve the template.
 
