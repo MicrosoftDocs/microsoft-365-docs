@@ -44,7 +44,7 @@ To purchase the *Comprehensive Assessment of Microsoft Cloud* report, contact in
 ## How to implement
 
 - [Risk Assessment & Compliance Guide](https://aka.ms/RiskGovernanceGuide): Create a governance model for risk assessment of Microsoft cloud services, and regulator notification.
-- [Financial use cases](https://docs.microsoft.com/en-us/azure/industry/financial/): Use case overviews, tutorials, and other resources to build Azure solutions for financial services.
+- [Financial use cases](https://docs.microsoft.com/azure/industry/financial/): Use case overviews, tutorials, and other resources to build Azure solutions for financial services.
 - [US financial services regulation](https://aka.ms/FinServ-Guide-US): How Microsoft online services align with key regulatory expectations for US financial institutions.
 
 ## Frequently asked questions
