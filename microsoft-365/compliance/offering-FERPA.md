@@ -1,5 +1,5 @@
 ---
-title: Compliance offering — Family Educational Rights and Privacy Act (FERPA)
+title: Family Educational Rights and Privacy Act (FERPA)
 description: Microsoft aligns with the requirements of the US Family Educational Rights and Privacy Act.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority

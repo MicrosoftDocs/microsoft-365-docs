@@ -1,5 +1,5 @@
 ---
-title: Compliance offering — ISO 22301:2012 Business Continuity Management Standard
+title: ISO 22301:2012 Business Continuity Management Standard
 description: Microsoft is certified for its implementation of these business continuity management standards.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -64,7 +64,7 @@ Yes. If your business requires ISO 22301 certification for implementations deplo
 ## Resources
 
 - [ISO 22301:2012 standard](https://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.htm?csnumber=50038) (for purchase)
-- [Azure resiliency technical guidance](https://aka.ms/Azure-resiliency-guide) (Explains the Azure shared responsibility model for business continuity.)
+- [Azure resiliency technical guidance](https://docs.microsoft.com/azure/architecture/framework/resiliency/overview) (Explains the Azure shared responsibility model for business continuity.)
 - [Microsoft Common Controls Hub Compliance Framework](https://www.microsoft.com/trustcenter/common-controls-hub)
 - [Microsoft Online Services Terms](https://aka.ms/Online-Services-Terms)
 - [Microsoft Enterprise Business Continuity Management Program Description](https://go.microsoft.com/fwlink/p/?linkid=2092212)

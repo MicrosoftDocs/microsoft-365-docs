@@ -1,5 +1,5 @@
 ---
-title: Compliance offering — Police-Assured Secure Facilities (PASF) United Kingdom
+title: Police-Assured Secure Facilities (PASF) United Kingdom
 description: Microsoft business cloud services support UK law enforcement who require Police-Assured Secure Facilities to process and store their data in the cloud.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority

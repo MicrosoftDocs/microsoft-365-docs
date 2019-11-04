@@ -18,7 +18,7 @@
 ## Customer Key
 ### [Controlling your data in Office 365 using Customer Key](controlling-your-data-using-customer-key.md)
 ### [Service encryption with Customer Key for Office 365 FAQ](service-encryption-with-customer-key-faq.md)
-## [Communication compliance]()
+## Communication compliance
 ### [Learn about communication compliance (preview)](communication-compliance.md)
 ### [Configure communication compliance in Microsoft 365 (preview)](communication-compliance-configure.md)
 ### [Investigate and remediate communication compliance alerts (preview)](communication-compliance-investigate-remediate.md)
@@ -44,6 +44,8 @@
 ### [Restrict access to content by using encryption in sensitivity labels](encryption-sensitivity-labels.md)
 ### [Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md)
 ### [View label usage with label analytics](label-analytics.md)
+### [Use sensitivity labels with teams, groups, and sites](sensitivity-labels-teams-groups-sites.md)
+### [Enable sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md)
 ### [Sensitivity labels in Office apps](sensitivity-labels-office-apps.md)
 
 ## [Data loss prevention (DLP)](data-loss-prevention-policies.md)
