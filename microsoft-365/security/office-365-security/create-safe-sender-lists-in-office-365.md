@@ -28,7 +28,7 @@ The recommended method to configure a safe sender list is to use an Exchange Tra
 
 ## Options from most to least recommended
 
-You should always restrict your Allow lists because they bypass many security measures. You must recheck all Allow lists as a part of your standard maintenance, so that you are aware of who is permitted to bypass. The recomendation is to use restrictive ETRs where possible.
+You should always restrict your Allow lists because they bypass many security measures. You must recheck all Allow lists as a part of your standard maintenance, so that you are aware of who is permitted to bypass. The recommendation is to use restrictive ETRs where possible.
 
 - Exchange Transport Rules (ETRs also called mail-flow rules)
 - Outlook Safe Senders
@@ -54,7 +54,7 @@ The action on the rule must follow this pattern:
 
 1. Set the spam confidence level (SCL) to -1 (bypass spam filtering).
 
-2. Add an X-Header to say what the rule does. In the example below, you can add a simple header "X-ETR: Bypass spam filtering for authenticated sender `contoso.com`". If you have more than one domain in this rule, you can change the header text as appropriate.**When a message skips filtering due to an ETR, it stamps SFV:SKN in the X-Forefront-Antispam-Report header** (**if it's on an IP Allow list, it also stamps IPV:CAL**). This will assist with troubleshooting.
+2. Add an X-Header to say what the rule does. In the example below, you can add a simple header "X-ETR: Bypass spam filtering for authenticated sender `contoso.com`". If you have more than one domain in this rule, you can change the header text as appropriate. **When a message skips filtering due to an ETR, it stamps SFV:SKN in the X-Forefront-Antispam-Report header** (**if it's on an IP Allow list, it also stamps IPV:CAL**). This will assist with troubleshooting.
 
 ![GUI for bypassing spam filtering.](../media/1-AllowList-SkipFilteringFromContoso.png)
 
