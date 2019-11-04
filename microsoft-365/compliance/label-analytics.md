@@ -1,7 +1,7 @@
 ---
 title: "View label usage with label analytics"
-ms.author: laurawi
-author: laurawi
+ms.author: chrfox
+author: chrfox
 manager: laurawi
 ms.date: 
 audience: Admin
