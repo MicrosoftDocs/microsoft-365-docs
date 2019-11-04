@@ -1,5 +1,5 @@
 ---
-title: Compliance offering — Reserve Bank of India (RBI) and Insurance Regulatory and Development Authority of India (IRDAI)
+title: Reserve Bank of India (RBI) and Insurance Regulatory and Development Authority of India (IRDAI)
 description: Microsoft has published guidance to help financial institutions in India with cloud adoption.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority

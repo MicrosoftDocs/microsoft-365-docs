@@ -1,5 +1,5 @@
 ---
-title: Compliance offering — Personal Data Protection Act (PDPA) Argentina
+title: Personal Data Protection Act (PDPA) Argentina
 description: Microsoft business cloud services comply with PDPA standards for protecting the privacy of personal information.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority

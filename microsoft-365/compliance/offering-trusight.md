@@ -1,5 +1,5 @@
 ---
-title: Compliance offering — TruSight
+title: TruSight
 description: TruSight conducted a comprehensive risk assessment of Microsoft cloud services that were designed to meet the rigorous requirements of its financial services customers.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
