@@ -1,5 +1,5 @@
 ---
-title: Compliance offering — California Consumer Privacy Act (CCPA)
+title: California Consumer Privacy Act (CCPA)
 description: Microsoft services and the California Consumer Privacy Act (CCPA).
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority

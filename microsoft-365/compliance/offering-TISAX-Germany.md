@@ -1,5 +1,5 @@
 ---
-title: Compliance offering — Trusted Information Security Assessment Exchange (TISAX) Germany
+title: Trusted Information Security Assessment Exchange (TISAX) Germany
 description: An independent, ENX-accredited auditor assessed Microsoft cloud datacenters against TISAX security requirements.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority

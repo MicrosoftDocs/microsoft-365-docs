@@ -1,5 +1,5 @@
 ---
-title: Compliance offering — Cloud Security Alliance (CSA) STAR certification
+title: Cloud Security Alliance (CSA) STAR certification
 description: Azure, Intune, and Power BI were awarded Cloud Security Alliance STAR certification at the Gold level.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
