@@ -1,5 +1,5 @@
 ---
-title: Compliance offering — Health Data Hosting (HDS) France
+title: Health Data Hosting (HDS) France
 description: Microsoft cloud services are certified for their compliance with the Health Data Hosting (Hébergeurs de Données de Santé) standard.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority

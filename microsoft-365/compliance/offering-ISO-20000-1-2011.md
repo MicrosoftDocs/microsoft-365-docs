@@ -1,5 +1,5 @@
 ---
-title: Compliance offering — ISO/IEC 20000-1:2011 Information Technology Service Management
+title: ISO/IEC 20000-1:2011 Information Technology Service Management
 description: Microsoft is certified for its implementation of these service management standards.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority

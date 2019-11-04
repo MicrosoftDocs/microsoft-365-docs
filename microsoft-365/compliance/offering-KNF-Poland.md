@@ -1,5 +1,5 @@
 ---
-title: Compliance offering — Financial Supervision Authority (KNF) Poland
+title: Financial Supervision Authority (KNF) Poland
 description: Microsoft has published guidance to help financial institutions in Poland with cloud adoption.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority

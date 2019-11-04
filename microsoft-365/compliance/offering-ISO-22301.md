@@ -1,5 +1,5 @@
 ---
-title: Compliance offering — ISO 22301:2012 Business Continuity Management Standard
+title: ISO 22301:2012 Business Continuity Management Standard
 description: Microsoft is certified for its implementation of these business continuity management standards.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
