@@ -49,7 +49,7 @@ conceptualContent:
         - url: https://docs.microsoft.com/MicrosoftTeams/get-started-with-teams-quick-start
           itemType: video
           text: 3. Set up Teams
-        - url: auto-install-or-uninstall-office.md
+        - url: https://support.office.com/article/4d2a1b69-6d8c-45d1-88e0-6676a8efa5f1
           itemType: get-started
           text: 4. Install Office
   #Card
