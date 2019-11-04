@@ -48,12 +48,12 @@ The following sections cover known issues to be resolved in upcoming releases of
 Assessments created from custom templates may not appear correctly in Compliance Score. To correct the issue, follow the steps below when creating custom templates for assessments.
 
 1. Download [this sample import file](https://go.microsoft.com/fwlink/?linkid=2090531) and save a copy to your computer. **Note**: this will not be the file used to create your, so its file name should not be similar to the eventual assessment name to avoid confusion.
-2. Add the dimension values for Product and Certification you will need for your custom assessment.
-3. Save the file.
+2. Add the dimension values for **Product** and **Certification** you will need for your custom assessment.
+3. **Save** the file.
 4. Upload the template to Compliance Manager using any existing available product *except for Data Protection Baseline* (an acceptable example is Product = Microsoft 365 and Certificate = FFIEC)
 5. Have another admin approve the template.
 6. Create a custom template in Compliance Manager following [these instructions](working-with-compliance-manager.md#create-a-template-1).
-7. Upload your custom template using the correct Product and Certification tab.
+7. **Upload** your custom template using the correct **Product** and **Certification** tag.
 8. Ensure that *all* custom templates are tagged with a Product and Certification tag.
 9. Have another admin approve the template.
 10. The custom template is now ready to use.
