@@ -1,5 +1,5 @@
 ---
-title: Compliance offering — Federation Against Copyright Theft (FACT)
+title: Federation Against Copyright Theft (FACT)
 description: Microsoft Azure achieved certification from the Federation Against Copyright Theft in the UK.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority

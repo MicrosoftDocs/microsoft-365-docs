@@ -1,5 +1,5 @@
 ---
-title: Compliance offering — US Internal Revenue Service Publication 1075
+title: US Internal Revenue Service Publication 1075
 description: Microsoft has controls that meet the requirements of US Internal Revenue Service Publication 1075.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority

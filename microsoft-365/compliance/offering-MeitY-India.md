@@ -1,5 +1,5 @@
 ---
-title: Compliance offering — Ministry of Electronics and Information Technology (MeitY)
+title: Ministry of Electronics and Information Technology (MeitY)
 description: Microsoft was given full accreditation by the Ministry of Electronics and Information Technology in India.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority

@@ -1,5 +1,5 @@
 ---
-title: Compliance offering — Content Delivery & Security Association (CDSA) Content Protection & Security (CPS) Standard
+title: Content Delivery & Security Association (CDSA) Content Protection & Security (CPS) Standard
 description: Azure is certified to the Content Delivery and Security Association Content Protection and Security standard.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
