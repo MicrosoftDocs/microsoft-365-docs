@@ -51,7 +51,7 @@ For example, if you already have a template with a **Product**  dimension of Mic
 
 To ensure your custom assessment functions properly, be sure that any custom template contains at least one custom dimension that you have added, or a unique **Product**-**Certification** combination.
 
-### Adding custom dimensions for custom template
+### Adding new dimensions for custom templates
 
 Assessments created from custom templates may not appear correctly in Compliance Score because certain dimensions are not yet available. To correct the issue, follow the steps below when creating custom templates for assessments.
 
