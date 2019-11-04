@@ -1,5 +1,5 @@
 ---
-title: Compliance offering — Committee on National Security Systems Instruction No. 1253 (CNSSI 1253)
+title: Committee on National Security Systems Instruction No. 1253 (CNSSI 1253)
 description: Azure Government complies with CNSSI 1253 security controls for US government systems requiring High Confidentiality, High Integrity, and High Availability.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority

@@ -1,5 +1,5 @@
 ---
-title: Compliance offering — NIST SP 800–171
+title: NIST SP 800–171
 description: Microsoft cloud services comply with NIST SP 800–171 guidelines to protect controlled unclassified information (CUI) in nonfederal information systems.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority

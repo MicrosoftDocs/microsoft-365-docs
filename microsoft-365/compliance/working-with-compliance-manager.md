@@ -224,12 +224,7 @@ When you create an Assessment, you have the option to copy information from an e
 
 3. Select **Save** to create the Assessment.
 
-### Viewing Assessments
-
-> [!IMPORTANT]
-> When you receive an alert notification (designated by an orange triangle icon on the Assessments dashboard) that an Assessment is ready for update, select **Update**. This ensures that updates to templates are reflected in the Assessment.  
-
-#### View an Assessment
+### View an Assessment
   
 1. In the Assessments dashboard, select the assessment name to open it and view the Action Items and Controls Info.
 
