@@ -63,4 +63,8 @@ additionalContent:
         - title: Microsoft 365 Security
           summary: Microsoft 365 security solutions help to protect your enterprise across attack surfaces.
           url: ./security/index.yml
+        # Card
+        - title: Microsoft 365 for Campaigns
+          summary: Help keep your campaign's or business's data and communications secure with this recommended configuration for Microsoft 365 Business.
+          url: ./campaigns/index.md
 
