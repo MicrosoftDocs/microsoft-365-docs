@@ -1,5 +1,5 @@
 ---
-title: Compliance offering — Australian Prudential Regulation Authority (APRA)
+title: Australian Prudential Regulation Authority (APRA)
 description: Microsoft guidance to help financial services clients comply with the outsourcing standards of the Australian Prudential Regulation Authority.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
