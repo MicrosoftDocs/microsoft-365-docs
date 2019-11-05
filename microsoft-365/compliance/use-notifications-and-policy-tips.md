@@ -281,5 +281,3 @@ You can customize the text for policy tips separately from the email notificatio
 - [What the DLP policy templates include](what-the-dlp-policy-templates-include.md)
     
 - [What the sensitive information types look for](what-the-sensitive-information-types-look-for.md)
-    
-
