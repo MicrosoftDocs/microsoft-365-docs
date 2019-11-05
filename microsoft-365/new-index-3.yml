@@ -1,7 +1,7 @@
 ### YamlMime:Hub
 
 title: Microsoft 365 help center for admins and IT pros # < 60 chars
-summary: Microsoft 365 is a complete, intelligent solution, including Office 365, Windows 10, and Enterprise Mobility + Security. # < 160 chars
+summary: Use Office 365, Windows 10, and Enterprise Mobility + Security to protect your business and transform the way you work. # < 160 chars
 # brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-platform | sql | sql-server | vs | visual-studio | windows | xamarin
 brand: m365
 
@@ -71,6 +71,10 @@ additionalContent:
         - title: Microsoft 365 for Campaigns
           summary: Help keep your campaign's or business's data and communications secure with this recommended configuration for Microsoft 365 Business.
           url: ./campaigns/index.md
+        # Card
+        - title: (UPDATED) Set up Microsoft for your small business
+          summary: Use training videos to learn how to set up and manage your business on Microsoft 365 Business.
+          url: https://support.office.com/article/set-up-your-small-business-6ab4bbcd-79cf-4000-a0bd-d42ce4d12816
         # Card
         - title: (NEW) Microsoft 365 training on Microsoft Learn
           summary: Use our new learning paths to increase your Microsoft 365 skills and earn certifications.
