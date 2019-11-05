@@ -3,7 +3,7 @@ title: "Microsoft 365 Enterprise Test Lab Guides"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/19/2019
+ms.date: 11/04/2019
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
@@ -27,9 +27,10 @@ You can also use TLGs to create representative environments for development and 
   
 ![Test Lab Guides for the Microsoft cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
-> [!TIP]
-> Click [here](https://aka.ms/m365etlgstack) for a visual map to all the articles in the Microsoft 365 Enterprise Test Lab Guide stack.
-  
+Click [here](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) for a visual map to all the articles in the Microsoft 365 Enterprise Test Lab Guide stack.
+
+[![The Microsoft 365 Enterprise Test Lab Guide stack](./media/m365-enterprise-test-lab-guides/microsoft-365-enterprise-tlg-stack.png)](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)
+
 ## Base configuration
 
 First, you create a test environment for [Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365-enterprise/) that includes Office 365 E5, Enterprise Mobility + Security (EMS) E5, and Windows 10 Enterprise. You can create two different types of base configurations:
@@ -44,15 +45,15 @@ To demonstrate identity-related features and capabilities, see:
 
 - [Password hash synchronization](password-hash-sync-m365-ent-test-environment.md)
   
-   Enable and test password hash-based directory synchronization from a AD DS domain controller.
+   Enable and test password hash-based directory synchronization from an AD DS domain controller.
 
 - [Pass-through authentication](pass-through-auth-m365-ent-test-environment.md)
   
-   Enable and test pass-through authentication to a AD DS domain controller.
+   Enable and test pass-through authentication to an AD DS domain controller.
 
 - [Azure AD Seamless Single Sign-on](single-sign-on-m365-ent-test-environment.md)
   
-   Enable and test Azure AD Seamless Single Sign-on (SSO) with a AD DS domain controller.
+   Enable and test Azure AD Seamless Single Sign-on (SSO) with an AD DS domain controller.
 
 - [Multi-factor authentication](multi-factor-authentication-microsoft-365-test-environment.md)
   
@@ -112,6 +113,4 @@ To demonstrate information protection-related features and capabilities, see:
     
    Configure privileged access management for just-in-time access to elevated and privileged tasks in your Office 365 organization.
 
-## See also
 
-[Test Office 365 with cloud adoption TLGs](https://docs.microsoft.com/office365/enterprise/cloud-adoption-test-lab-guides-tlgs)

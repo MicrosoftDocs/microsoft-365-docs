@@ -1,5 +1,5 @@
 ---
-title: Compliance offering — US Department of Defense (DoD) Provisional Authorization
+title: US Department of Defense (DoD) Provisional Authorization
 description: Microsoft received Department of Defense (DoD) Provisional Authorizations at Impact Levels 5, 4, and 2.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority

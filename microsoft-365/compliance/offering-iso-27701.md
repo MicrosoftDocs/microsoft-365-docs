@@ -1,5 +1,5 @@
 ---
-title: Compliance offering — ISO/IEC 27701 Privacy Information Management System (PIMS)
+title: ISO/IEC 27701 Privacy Information Management System (PIMS)
 description: The ISO/IEC 27701 standard to support privacy accountability and regulatory compliance among controllers and processors within the global data processing supply chain.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
