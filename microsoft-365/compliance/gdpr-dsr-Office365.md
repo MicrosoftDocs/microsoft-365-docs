@@ -881,12 +881,14 @@ If the student has been removed from the Team Class site, the admin can add the 
 You can delete Assignments data for a specific student for all classes in which the student is enrolled by using a PowerShell script to get a list of classes for the student and then using a PowerShell script to delete the data. You should do this before you remove the student from the class. See:
 
 - [Configure Assignments for Teams](https://docs.microsoft.com/microsoft-365/education/deploy/configure-assignments-for-teams)
-- [Get a list of classes for a specific student](https://docs.microsoft.com/en-us/microsoft-365/education/deploy/assignments-script-get)
+- [Get a list of classes for a specific student](https://docs.microsoft.com/microsoft-365/education/deploy/assignments-script-get)
 - [Delete student data from Assignments](https://docs.microsoft.com/microsoft-365/education/deploy/assignments-script-delete)
 
 If the student has been removed from the Team Class site, the admin can add the student back to the site before running the export script. Or the admin can use the input file for the script to identify every class that the student was ever enrolled in. You can't use the Assignments deletion script to delete teacher data because all Assignments are shared across the Class Team site. As an alternative, an admin would have to add themselves to the Class Team site and then delete a specific Assignment.
 
-**Class Notebook:** Searching for content in Class Notebook is discussed previously in this guide. See the [OneNote Class Notebook](#onenote-class-notebook) section. You can also use the Content Search tool to export data from a Class Notebook. Alternatively, an admin or the data subject can export data from a Class Notebook. See [Save a copy of a Class Notebook](https://support.office.com/article/44733e18-0ef1-4d4b-be51-fc2ac5bfe9ec).
+#### Class Notebook
+
+Searching for content in Class Notebook is discussed previously in this guide. See the [OneNote Class Notebook](#onenote-class-notebook) section. You can also use the Content Search tool to export data from a Class Notebook. Alternatively, an admin or the data subject can export data from a Class Notebook. See [Save a copy of a Class Notebook](https://support.office.com/article/44733e18-0ef1-4d4b-be51-fc2ac5bfe9ec).
 
 ### Flow
 
@@ -1793,4 +1795,5 @@ The following table lists the changes to the Office 365 DSR guide since its init
 |1/9/2019|[StaffHub](#staffhub)|In the Delete section, updated the description of what happens when a user account is permanently deleted.|
 |5/8/2019| [Publisher](#publisher)|Added content about responding to DSRs for Publisher.|
 |7/11/2019| [MyAnalytics](#myanalytics)|The ability for an admin to use the DSR case tool in the Office 365 Security & Compliance Center to export MyAnalytics data was removed because all users can now view their data in the MyAnalytics app. |
+|11/5/2019|[Education](#education)|Linked to new topics on using PowerShell scripts to get a list of classes for a specific student and then exporting or deleting their data.|
 ||||
