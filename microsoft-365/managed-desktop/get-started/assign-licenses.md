@@ -15,7 +15,7 @@ As part of preparing to enroll in Microsoft Managed Desktop, you'll need to be s
 
 If your license are all lined up, it's time now to assign them to your users. To do this, we recommend that you take advantage of the [group-based licensing feature](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal) of Azure Active Directory.
 
-If you have any difficulty with license assignment, contact [support](../working-with-managed-desktop/admin-support.md).
+If you have any difficulty with license assignment, contact Admin [support](../working-with-managed-desktop/admin-support.md).
 
 ## Steps to get started with Microsoft Managed Desktop
 

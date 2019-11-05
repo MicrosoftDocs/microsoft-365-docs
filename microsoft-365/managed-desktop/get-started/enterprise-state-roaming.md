@@ -14,7 +14,7 @@ For the best experience with Microsoft Managed Desktop, enable [Enterprise State
 
 To enable Enterprise State Roaming, follow the steps in [Enable Enterprise State Roaming in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/devices/enterprise-state-roaming-enable), and then return to this documentation.
 
-If you have any difficulty with Enterprise State Roaming, contact [support](../working-with-managed-desktop/admin-support.md).
+If you have any difficulty with Enterprise State Roaming, contact Admin [support](../working-with-managed-desktop/admin-support.md).
 
 ## Steps to get started with Microsoft Managed Desktop
 

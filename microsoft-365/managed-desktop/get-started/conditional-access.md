@@ -18,7 +18,7 @@ To do this, follow these steps:
 2. Follow the steps there to exclude the *Modern Workplace Service Accounts* group for all policies.
 
 
-If you have any difficulty with conditional access, contact [support](../working-with-managed-desktop/admin-support.md).
+If you have any difficulty with conditional access, contact admin [support](../working-with-managed-desktop/admin-support.md).
 
 ## Steps to get started with Microsoft Managed Desktop
 
