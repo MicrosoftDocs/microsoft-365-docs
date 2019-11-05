@@ -45,17 +45,15 @@ The following sections cover known issues to be resolved in upcoming releases of
 
 ### Custom templates for assessments
 
-**Issue: Your custom assessment shows irrelevant actions in Compliance Score.**
+**Issue: Custom assessment shows irrelevant actions in Compliance Score**
 
 **Solution:**
 
-When creating a custom template for an assessment, be sure that it does not use a combination of **Product** and **Certification** that already exists in another template.
+When creating a custom template for an assessment, first create a new **Product** or **Certification** value (see "Adding new dimensions for custom templates" below for instructions). Then use a combination of one **Product** value and one **Certification** value that includes this new value and has not been used in another template.
 
-For example, avoid using a **Product** dimension of Microsoft 365 and a **Certification** dimension of FFIEC, as the standard template  for FFIEC already uses this dimension combination.  
+For example, avoid using a **Product** dimension of Microsoft 365 and a **Certification** dimension of FFIEC, as the standard template FFIEC already uses this dimension combination.  
 
-In addition to having a unique **Product** and **Certification** combination, your custom template must also contain at least one custom dimension, such as a custom product or another new dimension you added (see immediately below).
-
-**Issue: You need new dimensions for your custom template.**
+**Issue: Adding new dimensions for custom templates**
 
 **Solution:**
 
