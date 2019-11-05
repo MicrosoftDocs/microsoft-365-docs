@@ -1,12 +1,12 @@
 ### YamlMime:Hub
 
-title: Microsoft 365 documentation # < 60 chars
+title: Microsoft 365 documentation for admins and IT professionals # < 60 chars
 summary: Microsoft 365 is a complete, intelligent solution, including Office 365, Windows 10, and Enterprise Mobility + Security. # < 160 chars
 # brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-platform | sql | sql-server | vs | visual-studio | windows | xamarin
 brand: m365
 
 metadata:
-  title: Microsoft 365 documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  title: Microsoft 365 documentation for admins and IT professionals # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: Deploy, configure, and manage Microsoft 365 services in your organization. # Required; article description that is displayed in search results. < 160 chars.
   services: office-365-security-compliance
   ms.service: O365-seccomp #Required; service per approved list. service slug assigned to your service by ACOM.
@@ -23,15 +23,19 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
   items:
     # Card
-    - title: Test lab guides
+    - title: Get started with Test Lab Guides
       itemType: tutorial
       url: ./enterprise/m365-enterprise-test-lab-guides.md
     # Card
-    - title: Support for users
+    - title: Training for admins
+      itemType: learn
+      url: https://docs.microsoft.com/learn/paths/m365-fundamentals/
+    # Card
+    - title: Training for users
       itemType: learn
       url: https://support.microsoft.com
     # Card
-    - title: Developers
+    - title: References for Developers
       itemType: reference
       url: https://developer.microsoft.com/microsoft-365
 
@@ -40,8 +44,8 @@ highlightedContent:
 additionalContent:
   # Supports up to 3 sections
   sections:
-    - title: Documentation by subscription or area
-      summary: Find guidance for admins and IT professionals to deploy, configure, and manage the following products or feature areas. # < 160 chars (optional)
+    - title: Find guidance for your Microsoft 365 subscription or feature area
+      summary: # < 160 chars (optional)
       items:
         # Card
         - title: Microsoft 365 Enterprise
