@@ -1,5 +1,5 @@
 ---
-title: Compliance offering — National Health Service (NHS) Information Governance (IG) Toolkit
+title: National Health Service (NHS) Information Governance (IG) Toolkit
 description: Azure is certified to the Health Information Trust Alliance Common Security Framework.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority

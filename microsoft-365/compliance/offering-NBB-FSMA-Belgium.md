@@ -1,5 +1,5 @@
 ---
-title: Compliance offering — National Bank of Belgium (NBB) and the Financial Services and Markets Authority (FSMA)
+title: National Bank of Belgium (NBB) and the Financial Services and Markets Authority (FSMA)
 description: Microsoft guidance to help financial institutions in Belgium with cloud adoption.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
