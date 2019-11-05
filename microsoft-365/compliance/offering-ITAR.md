@@ -1,5 +1,5 @@
 ---
-title: Compliance offering — International Traffic in Arms Regulations (ITAR)
+title: International Traffic in Arms Regulations (ITAR)
 description: Azure Government supports customers building US International Traffic in Arms Regs-capable systems.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority

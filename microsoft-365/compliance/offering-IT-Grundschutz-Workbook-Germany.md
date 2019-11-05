@@ -1,5 +1,5 @@
 ---
-title: Compliance offering — IT-Grundschutz Compliance workbook
+title: IT-Grundschutz Compliance workbook
 description: Azure Germany published this workbook to help our clients achieve IT-Grundschutz certification.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority

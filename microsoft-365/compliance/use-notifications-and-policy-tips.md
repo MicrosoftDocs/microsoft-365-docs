@@ -2,8 +2,8 @@
 title: "Send email notifications and show policy tips for DLP policies"
 ms.author: chrfox
 author: chrfox
-manager: dansimp
-ms.date: 06/14/2019
+manager: laurawi
+ms.date: 
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -210,16 +210,6 @@ Currently, Outlook 2013 and later supports showing policy tips only for these co
 - Content contains
 - Content is shared
 
-We're currently working on support for showing policy tips for additional conditions. These include:
-
-- Any email attachment's content could not be scanned
-- Any email attachment's content didn't complete scanning
-- Attachment file extension is
-- Attachment is password protected
-- Document property is
-- Recipient domain is
-- Sender IP address is
-
 Note that all of these conditions work in Outlook, where they will match content and enforce protective actions on content. But showing policy tips to users is not yet supported.
   
 ### Policy tips in the Exchange admin center vs. the Office 365 Security &amp; Compliance Center
@@ -291,5 +281,3 @@ You can customize the text for policy tips separately from the email notificatio
 - [What the DLP policy templates include](what-the-dlp-policy-templates-include.md)
     
 - [What the sensitive information types look for](what-the-sensitive-information-types-look-for.md)
-    
-
