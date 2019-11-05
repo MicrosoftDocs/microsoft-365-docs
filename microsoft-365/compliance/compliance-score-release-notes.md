@@ -45,13 +45,19 @@ The following sections cover known issues to be resolved in upcoming releases of
 
 ### Custom templates for assessments
 
-When creating a custom template for an assessment, be sure that it does not use a combination of **Product** and **Certification** that already exists for another template.  
+**Issue: Your custom assessment shows irrelevant actions in Compliance Score.**
 
-For example, if you already have a template with a **Product**  dimension of Microsoft 365 and a **Certification** dimension of FFEIC, don't use this same combination in another template to avoid interfering with actions for the template containing that combination.
+**Resolution:** 
 
-To ensure your custom assessment functions properly, be sure that any custom template contains at least one custom dimension that you have added, or a unique **Product**-**Certification** combination.
+When creating a custom template for an assessment, be sure that it does not use a combination of **Product** and **Certification** that already exists in another template.  
 
-### Adding new dimensions for custom templates
+For example, avoid using a **Product**  dimension of Microsoft 365 and a **Certification** dimension of FFEIC, as the standard template for FFEIC already uses this dimension combination.
+
+To ensure your custom assessment functions properly, be sure that any custom template contains at least one custom dimension such as a custom product, or a custom dimension that you have added.
+
+**Issue: The dimensions you need for your custom template are not available.**
+
+**Resolution:**
 
 Assessments created from custom templates may not appear correctly in Compliance Score because certain dimensions are not yet available. To correct the issue, follow the steps below when creating custom templates for assessments.
 
@@ -66,19 +72,17 @@ Assessments created from custom templates may not appear correctly in Compliance
    - In Compliance Manger, from the Templates dashboard, select **+Add Template**.
    - On the **Add Template** flyout, under the **Dimension** header, for **Certification** select **CCPA**, and for **Product** select **Intune**.
    - Select **Browse** and find the file you downloaded and saved in steps 1-3 above, then select **Add to Dashboard**.
-   - Have another Compliance Manager admin approve the template.
-   - Upon approval, you'll see your new template added to your list of templates. Find your new template, go to the ellipses on the far right side of its row, select **Reject**, then confirm the rejection. This removes the template from your inventory, yet the dimensions you added to that template remain in Compliance Manager so you can select them for a future template.
+   - Find your new template on the Dashboard. Go to the ellipses on the far right side of its row, select **Reject**, then confirm the rejection. This removes the template from your inventory, yet the dimensions you added to that template remain in Compliance Manager so you can select them for a new template.
    - **Refresh** your browser so that the next time you create a template, the new dimension(s) will be an available option for you to select.
 
 5. Create your custom template in Compliance Manager following [these instructions](working-with-compliance-manager.md#create-a-template-1).
 
 6. **Upload** your custom template to Compliance Manager using the correct **Product** and **Certification** tag.
+   - Ensure that *all* custom templates are tagged with a **Product** and a **Certification**.
 
-7. Ensure that *all* custom templates are tagged with a **Product** and a **Certification**.
+7. Have another Compliance Manager admin approve the template.
 
-8. Have another Compliance Manager admin approve the template.
-
-9. The custom template is now ready to use.
+The custom template is now ready to use.
 
 ### Launch Now links in certain improvement actions
 
