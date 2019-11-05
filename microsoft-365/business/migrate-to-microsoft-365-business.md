@@ -1,5 +1,5 @@
 ---
-title: "Migrate to Microsoft 365 Business from Office 365 Business Premium"
+title: "Upgrade to Microsoft 365 Business from Office 365 Business Premium"
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -19,7 +19,7 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
-description: "Learn how to move your business to Microsoft 365 Business."
+description: "Steps that upgrade your business from Office 365 Business Premium to Microsoft 365 Business."
 ---
 
 # Upgrade to Microsoft 365 Business from Office 365 Business Premium
@@ -31,50 +31,50 @@ If you have an [Office 365 for business subscription](https://products.office.co
 Find out more about Microsoft 365 Business at [Microsoft.com](https://www.microsoft.com/microsoft-365/business)
 
 ## What's the difference between Office 365 Business Premium and Microsoft 365 Business?
-We've added a side-by-side comparison of these two plans to the [Microsoft 365 service description](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description). 
+We've added a side-by-side comparison of these two plans to the [Microsoft 365 Business service description](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description). 
 
 ## Upgrade to Microsoft 365 Business yourself, or get help
 
 You have three options:
- - [Upgrade to Microsoft 365 Business in the admin center](#Upgrade-to-Microsoft-365-Business) and complete the process yourself by following the steps in this topic. You can try the steps out, and there's no commitment until you select **Place order** in step 7 below.
+ - [Upgrade to Microsoft 365 Business in the admin center](#upgrade-to-microsoft-365-business) and complete the process yourself by following the steps in this topic. You can try the steps out, and there's no commitment until you select **Place order** in step 7 below.
  - [Add a Microsoft partner](get-microsoft-365-business.md) to your Office 365 subscription. The partner you select will complete the upgrade and help you with the transition.
  - [Head to a Microsoft Store](https://www.microsoft.com/store/locations/find-a-store) where technical experts can complete your upgrade.
   
 ## Before you get started
 
 - **When should I choose upgrade?** Upgrade is the right choice when you want to upgrade **all users** assigned to a single plan. When you choose upgrade, all plan users get switched to another plan at the same time. If you don't want to upgrade everyone assigned to a single plan, buy licenses for the new plan (in this case Microsoft 365 Business), and [assign those licenses individually](https://docs.microsoft.com/office365/admin/manage/assign-licenses-to-users) to each user that you want to upgrade. 
-- **Some add-ons might prevent upgrade** If your add-on prevents upgrade, you can remove it first, and then add it back after you upgrade if you still need it. 
-- **If you prepaid your plan** There isn't a straightforward upgrade path for prepaid plans. You'll know if you have a prepaid plan because you setup your plan using a product ID that you might have purchased in a store. Contact a partner, go to the Microsoft store, or wait until your prepaid plan expires to switch to a new plan.
+- **Some add-ons might prevent upgrade** If you try to start an upgrade and you have an add-on that prevents you from continuing, you can remove the add-on first, and then add it back later - if you still need it. 
+- **If you prepaid your plan** There isn't a straightforward upgrade path for prepaid plans. You'll know if you have a prepaid plan because you set up your plan using a product ID that you might have purchased in a store. Contact a partner, go to the Microsoft store, or wait until your prepaid plan expires to switch to a new plan.
 
 ## Upgrade to Microsoft 365 Business
 Buy your licenses by following these steps in the [new admin center](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview):
 1. Sign into the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
 2. Go to the navigation pane and select **Billing** \> **Products & Services**. Find your Office 365 subscription and select it to view the details. 
 
-    ![A screenshot shows how to find your subscription in the admin center.](media/FindYourSubscription.png)
+    ![A screenshot shows how to find and select your subscription in the admin center.](media/FindYourSubscription.png)
 
 3. On the next page, select **Upgrade**. 
 
-      ![A screenshot shows where you can select Upgrade in the admin center.](media/SelectUpgrade.png)
+      ![A screenshot shows where to select Upgrade in the admin center.](media/SelectUpgrade.png)
 
   > [!NOTE]
-  > If you see a message that says "Upgrading your subscription is not supported with group-based licensing in Azure Active Directory", you can safely ignore this unless you have a very large business. Organizations who have selected this option will be aware that they're using group-based licensing.
+  > If you see a message that says "Upgrading your subscription is not supported with group-based licensing in Azure Active Directory", you can safely ignore this unless you have a very large organization. Organizations who have selected this option will be aware that they're using group-based licensing.
 
-4. Next you can view a list of Office plans that you can upgrade to from your current plan. Find the Microsoft 365 Business plan. You can scroll down if you want to see all the Office apps and services that are included with this plan. Under **Microsoft 365 Business**, select **Upgrade** to add Microsoft 365 Business to your cart.
+4. Next, you can view a list of Office plans that you can upgrade to. In this case, find the Microsoft 365 Business plan. You can scroll down if you want to see all the Office apps and services that are included with this plan. Under **Microsoft 365 Business**, select **Upgrade** to add Microsoft 365 Business to your cart.
 5. In the cart:
-    1. We'll automatically include licenses for all your current users to the cart. Adjust the quantity of licenses if you want to purchase more or less. For example, buy less licenses if you want some of your users to continue with their current plan. Everyone in your organization continues with their current license until you [assign a different license](#assign-microsoft-365-licenses). 
+    1. We'll automatically include licenses for all your current users to the cart. If you need more, or less licenses, you'll need to [buy and assign those licenses individually](https://docs.microsoft.com/office365/admin/manage/assign-licenses-to-users).  
     2. You can adjust how you'd like to pay - monthly or yearly. Select the drop-down menu to make your choice.
-6. Select **Go to Checkout** where you'll see a summary of your purchase, including the payment method details for this account. You can also add a promo code here if you have one.
+6. Select **Go to Checkout** where you'll see a summary of your purchase, including the payment method for this account. You can also add a promo code here if you have one.
 7. Select **Place order** to complete your purchase.
 It takes Microsoft a few minutes to set up your new service plans. To check on progress, select **Check upgrade status**. 
-8. Once your plan is ready, you might need to complete some additional setup steps in the admin center. In the navigation pane, select **Home** to complete any additional setup steps.
+1. Once your plan is ready, you might need to complete some additional setup steps in the admin center. In the navigation pane, select **Home** to complete any additional setup steps.
 
 > [!NOTE]
-> You'll receive a prorated refund for the licenses that you no longer need. Your bank account or credit card will be charged about two days after you set up the new plan.
+> You'll receive a prorated refund for the Ofifce 365 licenses that you no longer need. Your bank account or credit card will be charged about two days after you set up the new plan.
   
 ## Protect user devices and files
 
-Now that Microsoft 365 Business licenses have been assigned, complete steps to start protecting devices and files. You'll be using some new options included in the navigation pane.
+Now that Microsoft 365 Business licenses have been assigned, complete steps to start protecting devices and files. You'll be using some new options included in the admin center navigation pane.
   
 1. In the admin center, in the navigation pane, go to **Devices** \> **Policies**.
     
