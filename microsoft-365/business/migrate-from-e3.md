@@ -34,7 +34,7 @@ This table shows the differences between Microsoft 365 Business and Office 365 E
 | Feature	| Support in Microsoft 365 Business	| Support in Office 365 E3 | 
 |:-------|:-----|:-----|
 | **On-premises**		| | | 
-| Office apps<sup>1</sup>	| [Office 365 Business](#office-365-business)	| Office 365 ProPlus | 
+| Office apps<sup>1</sup>	| Office 365 Business	| Office 365 ProPlus | 
 | **Cloud productivity apps**		| | | 
 | Exchange Online and Outlook	| 50 GB storage limit per mailbox and unlimited Exchange Online archiving	| 100 GB storage limit per mailbox and unlimited Exchange Online archiving | 
 | Teams	| ![Included with Microsoft 365 Business](./media/check-mark.png)	| ![Included with Office 365 E3](./media/check-mark.png) | 
