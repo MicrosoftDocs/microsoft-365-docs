@@ -1,5 +1,5 @@
 ---
-title: Compliance offering — European Standards EN 301 549 reports
+title: European Standards EN 301 549 reports
 description: The Microsoft Cloud comprises many services and is included in many individual conformance reports.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority

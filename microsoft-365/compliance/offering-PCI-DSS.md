@@ -1,5 +1,5 @@
 ---
-title: Compliance offering — Payment Card Industry (PCI) Data Security Standard (DSS)
+title: Payment Card Industry (PCI) Data Security Standard (DSS)
 description: Azure, SharePoint Online, and OneDrive for Business comply with Payment Card Industry Data Security Standards Level 1 version 3.2.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority

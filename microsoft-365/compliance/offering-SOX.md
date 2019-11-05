@@ -1,5 +1,5 @@
 ---
-title: Compliance offering — Sarbanes-Oxley Act of 2002 (SOX)
+title: Sarbanes-Oxley Act of 2002 (SOX)
 description: Financial services firms can use Microsoft compliance reports to address their compliance with the Sarbanes-Oxley Act.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority

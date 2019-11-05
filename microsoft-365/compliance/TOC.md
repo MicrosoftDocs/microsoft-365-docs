@@ -4,6 +4,7 @@
 ## [What's new in the compliance center](whats-new.md)
 ## [Recent updates to compliance content](recently-updated-topics-mcc.md)
 ## [Microsoft 365 compliance center](microsoft-365-compliance-center.md)
+## [Microsoft 365 solution catalog (preview)](microsoft-365-solution-catalog.md)
 ## [Go to the Security & Compliance Center](go-to-the-securitycompliance-center.md)
 ## [Use your free Azure Active Directory subscription](use-your-free-azure-ad-subscription-in-office-365.md)
 ## [Plan for security and compliance in Office 365](plan-for-security-and-compliance.md)
@@ -17,7 +18,7 @@
 ## Customer Key
 ### [Controlling your data in Office 365 using Customer Key](controlling-your-data-using-customer-key.md)
 ### [Service encryption with Customer Key for Office 365 FAQ](service-encryption-with-customer-key-faq.md)
-## [Communication compliance]()
+## Communication compliance
 ### [Learn about communication compliance (preview)](communication-compliance.md)
 ### [Configure communication compliance in Microsoft 365 (preview)](communication-compliance-configure.md)
 ### [Investigate and remediate communication compliance alerts (preview)](communication-compliance-investigate-remediate.md)
@@ -35,6 +36,8 @@
 ### [Restrict access to content by using encryption in sensitivity labels](encryption-sensitivity-labels.md)
 ### [Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md)
 ### [View label usage with label analytics](label-analytics.md)
+### [Use sensitivity labels with teams, groups, and sites](sensitivity-labels-teams-groups-sites.md)
+### [Enable sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md)
 ### [Sensitivity labels in Office apps](sensitivity-labels-office-apps.md)
 
 ## [Data loss prevention (DLP)](data-loss-prevention-policies.md)
@@ -87,12 +90,14 @@
 #### [Set up Azure Rights Management for the previous version of Office 365 Message Encryption](set-up-azure-rms-for-previous-version-message-encryption.md)
 
 ## [Understand data classification (preview)](data-classification-overview.md)
+### [View labeled content (preview)](data-classification-content-explorer.md)
 ### [View label activity (preview)](data-classification-activity-explorer.md)
 ### [Getting started with trainable classifiers (preview)](classifier-getting-started-with.md)
 ### [Using a ready to use classifier (preview)](classifier-using-a-ready-to-use-classifier.md)
 ### [Creating and training a classifier (preview)](classifier-creating-a-trainable-classifier.md)
 
 # Manage information governance
+## [Manage information governance](manage-information-governance.md)
 ## [Import data](importing-pst-files-to-office-365.md)
 ### [Use network upload to import PST files](use-network-upload-to-import-pst-files.md)
 ### [Use drive shipping to import PST files](use-drive-shipping-to-import-pst-files-to-office-365.md)
@@ -376,7 +381,7 @@
 ### [Compliance Manager (Preview)](compliance-manager-overview.md)
 #### [What's new in Compliance Manager (Preview)](compliance-manager-release-notes.md)
 #### [Working with Compliance Manager (Preview)](working-with-compliance-manager.md)
-#### [Compliance Manager (Legacy)](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
+#### [Compliance Manager (Classic)](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
 
 ## [GDPR data subject request tool](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)
 ## [Office 365 Information Protection for GDPR](office-365-information-protection-for-gdpr.md)

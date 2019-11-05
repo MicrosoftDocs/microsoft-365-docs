@@ -1,5 +1,5 @@
 ---
-title: Compliance offering — United Kingdom Cyber Essentials PLUS
+title: United Kingdom Cyber Essentials PLUS
 description: Cyber Essentials PLUS is a UK government-defined scheme to help organizations protect against common cyber-security threats.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
