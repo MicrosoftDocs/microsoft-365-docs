@@ -23,7 +23,7 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
   items:
     # Card
-    - title: Get started with Test Lab Guides (IT pros)
+    - title: Get started with Test Lab Guides for IT pros
       itemType: tutorial
       url: ./enterprise/m365-enterprise-test-lab-guides.md
     # Card
@@ -72,7 +72,7 @@ additionalContent:
           summary: Help keep your campaign's or business's data and communications secure with this recommended configuration for Microsoft 365 Business.
           url: ./campaigns/index.md
         # Card
-        - title: (UPDATED) Set up Microsoft for your small business
+        - title: (UPDATED) Set up Microsoft 365 for your small business
           summary: Use training videos to learn how to set up and manage your business on Microsoft 365 Business.
           url: https://support.office.com/article/set-up-your-small-business-6ab4bbcd-79cf-4000-a0bd-d42ce4d12816
         # Card
