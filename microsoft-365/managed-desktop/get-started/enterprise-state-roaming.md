@@ -18,12 +18,12 @@ If you have any difficulty with Enterprise State Roaming, contact [support](../w
 
 ## Steps to get started with Microsoft Managed Desktop
 
-1. [Add and verify admin contacts in the Admin portal](get-started/add-admin-contacts.md)
-2. [Adjust conditional access](get-started/conditional-access.md)
-3. [Assign licenses](get-started/assign-licenses.md)
-4. [Deploy Intune Company Portal](get-started/company-portal.md)
+1. [Add and verify admin contacts in the Admin portal](add-admin-contacts.md)
+2. [Adjust conditional access](conditional-access.md)
+3. [Assign licenses](assign-licenses.md)
+4. [Deploy Intune Company Portal](company-portal.md)
 5. Enable Enterprise State Roaming (this topic)
-6. [Set up devices](get-started/set-up-devices.md)
-7. [Get your users ready to use devices](get-started/get-started-devices.md)
-8. [Deploy apps](get-started/deploy-apps.md)
+6. [Set up devices](set-up-devices.md)
+7. [Get your users ready to use devices](get-started-devices.md)
+8. [Deploy apps](deploy-apps.md)
 

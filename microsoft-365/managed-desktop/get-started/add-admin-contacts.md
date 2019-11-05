@@ -43,7 +43,7 @@ Admin contacts are required when you [submit a Support request](../working-with-
 
 **To add admin contacts**
 
-1.	Sign in to [Microsoft Managed Desktop admin portal](http://aka.ms/mwaasportal). 
+1.	Sign in to [Microsoft Managed Desktop admin portal](https://aka.ms/mwaasportal). 
 
 2.	Under **Support**, select **Admin contacts**. 
 
@@ -61,11 +61,11 @@ Admin contacts are required when you [submit a Support request](../working-with-
 
 ## Steps to get started with Microsoft Managed Desktop
 
-1. [Add and verify admin contacts in the Admin portal](get-started/add-admin-contacts.md) (this topic)
-2. [Adjust conditional access](get-started/conditional-access.md)
-3. [Assign licenses](get-started/assign-licenses.md)
-4. [Deploy Intune Company Portal](get-started/company-portal.md)
-5. [Enable Enterprise State Roaming](get-started/enterprise-state-roaming.md)
-6. [Set up devices](get-started/set-up-devices.md)
-7. [Get your users ready to use devices](get-started/get-started-devices.md)
-8. [Deploy apps](get-started/deploy-apps.md)
+1. Add and verify admin contacts in the Admin portal (this topic)
+2. [Adjust conditional access](conditional-access.md)
+3. [Assign licenses](assign-licenses.md)
+4. [Install Intune Company Portal on on devices](company-portal.md)
+5. [Enable Enterprise State Roaming](enterprise-state-roaming.md)
+6. [Set up Microsoft Managed Desktop devices](set-up-devices.md)
+7. [Get your users ready to use devices](get-started-devices.md)
+8. [Deploy apps to devices](deploy-apps.md)

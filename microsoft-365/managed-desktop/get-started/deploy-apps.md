@@ -33,7 +33,7 @@ In this procedure, you'll select which kind of app you want to add, and then con
 
 You can sign in to Microsoft Managed Desktop portal, or sign in to Intune and then search for Microsoft Managed Desktop. We'll show signing in to Microsoft Managed Desktop portal. 
 
-1.	Sign in to [Microsoft Managed Desktop Admin portal](http://aka.ms/mmdportal). 
+1.	Sign in to [Microsoft Managed Desktop Admin portal](https://aka.ms/mmdportal). 
 2.	Under **Inventory**, select **Apps**.
 3.	In the Apps workload, select **Add**.
 4.	In **Add app**, select **Line-of-business app** or **Windows app (Win32)**.
@@ -90,23 +90,22 @@ Add your users to these groups to either make the app availabe, install the app,
 
 **To assign the app to your users**
 
-1. Sign in to [Microsoft Managed Desktop Admin portal](http://aka.ms/mmdportal).
+1. Sign in to [Microsoft Managed Desktop Admin portal](https://aka.ms/mmdportal).
 2. In Managed Desktop pane, select **Apps**.
 3. In the Apps workload, select the app you want to assign users to and select **Assign users groups**.
 4. For the specific app, select an assignment type (Available, Required, Uninstall) and assign the appropriate group.
 5. In the Assign Apps pane, select **OK**.
 
-## Steps to get started with Microsoft Managed Desktop
 
 ## Steps to get started with Microsoft Managed Desktop
 
-1. [Add and verify admin contacts in the Admin portal](get-started/add-admin-contacts.md)
-2. [Adjust conditional access](get-started/conditional-access.md)
-3. [Assign licenses](get-started/assign-licenses.md)
-4. [Deploy Intune Company Portal](get-started/company-portal.md)
-5. [Enable Enterprise State Roaming](get-started/enterprise-state-roaming.md)
-6. [Set up devices](get-started/set-up-devices.md)
-7. [Get your users ready to use devices](get-started/get-started-devices.md)
+1. [Add and verify admin contacts in the Admin portal](add-admin-contacts.md)
+2. [Adjust conditional access](conditional-access.md)
+3. [Assign licenses](assign-licenses.md)
+4. [Deploy Intune Company Portal](company-portal.md)
+5. [Enable Enterprise State Roaming](enterprise-state-roaming.md)
+6. [Set up devices](set-up-devices.md)
+7. [Get your users ready to use devices](get-started-devices.md)
 8. Deploy apps (this topic)
 
 
