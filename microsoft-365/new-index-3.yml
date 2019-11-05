@@ -58,7 +58,7 @@ additionalContent:
         # Card
         - title: Microsoft 365 Education
           summary: Microsoft 365 Education empowers educators to unlock creativity, promote teamwork, and provide a simple and safe experience in a single, affordable solution built for education.
-          url: ./enterprise/index.md
+          url: https://docs.microsoft.com/education/
         # Card
         - title: Microsoft 365 Compliance
           summary: Microsoft 365 compliance solutions help your organization comply with legal or regulatory standards.
