@@ -27,15 +27,15 @@ highlightedContent:
       itemType: tutorial
       url: ./enterprise/m365-enterprise-test-lab-guides.md
     # Card
-    - title: Training for admins
+    - title: Training for admins and IT pros
       itemType: learn
       url: https://docs.microsoft.com/learn/browse/?products=m365
     # Card
-    - title: Training for users
+    - title: Application training for your users
       itemType: learn
       url: https://support.microsoft.com
     # Card
-    - title: References for Developers
+    - title: References for developers
       itemType: reference
       url: https://developer.microsoft.com/microsoft-365
 
@@ -75,3 +75,20 @@ additionalContent:
         - title: (NEW) Microsoft 365 training on Microsoft Learn
           summary: Use our new learning paths to increase your Microsoft 365 skills and earn certifications.
           url: https://docs.microsoft.com/learn/m365/
+
+# additionalContent section (optional)
+# Card with summary style
+additionalContent:
+  # Supports up to 3 sections
+  sections:
+    - title: Resources # < 60 chars (optional)
+      summary: Need help with Microsoft 365? Use these resources for assistance. # < 160 chars (optional)
+      items:
+        # Card
+        - title: Find a solution provider
+          summary: Microsoft certified solution providers specialize in providing up-to-date Microsoft technology-based customer solutions all over the world.
+          url: https://www.microsoft.com/solution-providers/home
+        # Card
+        - title: Microsoft 365 Tech Community
+          summary: The place to share Microsoft 365 experiences and to engage and learn from experts. 
+          url: https://techcommunity.microsoft.com/t5/Microsoft-365/ct-p/microsoft365
