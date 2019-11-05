@@ -33,11 +33,11 @@ We recommend working with one of our approved device partners. You can work with
 
 ## Steps to get started with Microsoft Managed Desktop
 
-| | |
-| --- | --- |
-| ![to do](images/checklistbox.gif) | [Set up Microsoft Managed Desktop devices](set-up-devices.md) (this topic) |
-| ![to do](images/checklistbox.gif) | [Get your users ready to use devices](get-started-devices.md)
-| ![to do](images/checklistbox.gif)| [Assign licenses](assign-licenses.md)|
-| ![to do](images/checklistbox.gif) | [Adjust conditional access](conditional-access.md) |
-| ![to do](images/checklistbox.gif)| [Enable Enterprise State Roaming](enterprise-state-roaming.md) |
-| ![to do](images/checklistbox.gif) | [Deploy apps to Microsoft Managed Desktop devices](deploy-apps.md) |
+1. [Add and verify admin contacts in the Admin portal](get-started/add-admin-contacts.md)
+2. [Adjust conditional access](get-started/conditional-access.md)
+3. [Assign licenses](get-started/assign-licenses.md)
+4. [Deploy Intune Company Portal](get-started/company-portal.md)
+5. [Enable Enterprise State Roaming](get-started/enterprise-state-roaming.md)
+6. Set up devices (this topic)
+7. [Get your users ready to use devices](get-started/get-started-devices.md)
+8. [Deploy apps](get-started/deploy-apps.md)
