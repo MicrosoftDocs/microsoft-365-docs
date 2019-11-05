@@ -84,6 +84,9 @@ Office 365 ATP includes the Safe Attachment and Safe Links policies to prevent e
 
 If you've added an Office 365 ATP subscription to your EOP, set the following configurations.
 
+### Office ATP Anti-phishing policy
+EOP customers get a basic anti-phishing policy set but with Office 365 ATP, admins get more features and control to help prevent, detect, and remidiate against attacks.
+
 |Impersonation security feature name|Standard|Strict|Comment|
 |---------|---------|---------|---------|
 |(Edit impersonation policy) Add users to protect|On|On|Depends on your organization, but we recommend adding users in key roles. Internally, these might be your CEO, CFO, and other senior leaders. Externally, these could include council members or your board of directors.|
@@ -145,7 +148,7 @@ Security feature name|Standard|Strict|Comment|
 |[Use DMARC to validate email in Office 365](use-dmarc-to-validate-email.md)|Yes|Yes|Use action=quarantine for Standard, and action=reject for Strict.|
 |Deploy Report Message add-on to improve End User Reporting of Suspicious Emails|Yes|Yes||
 |Schedule Malware and Spam Reports|Yes|Yes||
-|Auto-forwarding to external domains should be disallowed or monitored||Yes||
+|Auto-forwarding to external domains should be disallowed or monitored|Yes|Yes||
 |Unified Auditing should be enabled|Yes|Yes||
 |IMAP connectivity to mailbox|Disabled|Disabled||
 |POP connectivity to mailbox|Disabled|Disabled||
