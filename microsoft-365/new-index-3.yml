@@ -75,20 +75,3 @@ additionalContent:
         - title: (NEW) Microsoft 365 training on Microsoft Learn
           summary: Use our new learning paths to increase your Microsoft 365 skills and earn certifications.
           url: https://docs.microsoft.com/learn/m365/
-
-# additionalContent section (optional)
-# Card with summary style
-additionalContent:
-  # Supports up to 3 sections
-  sections:
-    - title: Resources # < 60 chars (optional)
-      summary: Need help with Microsoft 365? Use these resources for assistance. # < 160 chars (optional)
-      items:
-        # Card
-        - title: Find a solution provider
-          summary: Microsoft certified solution providers specialize in providing up-to-date Microsoft technology-based customer solutions all over the world.
-          url: https://www.microsoft.com/solution-providers/home
-        # Card
-        - title: Microsoft 365 Tech Community
-          summary: The place to share Microsoft 365 experiences and to engage and learn from experts. 
-          url: https://techcommunity.microsoft.com/t5/Microsoft-365/ct-p/microsoft365
