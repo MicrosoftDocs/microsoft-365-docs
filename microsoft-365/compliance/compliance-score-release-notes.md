@@ -65,26 +65,6 @@ Assessments created from custom templates may not appear correctly in Compliance
    - **Note**: this file will only be used to import the dimensions you need to Compliance Manager. It will not be the file used to create your custom template, so its file name should not be similar to the eventual template name to avoid confusion.
 2. Add the dimension values for **Product** and **Certification** you'll need for your custom assessment.
 3. **Save** the file.
-**Resolution:** 
-
-When creating a custom template for an assessment, be sure that it does not use a combination of **Product** and **Certification** that already exists in another template.  
-
-For example, avoid using a **Product**  dimension of Microsoft 365 and a **Certification** dimension of FFEIC, as the standard template for FFEIC already uses this dimension combination.
-
-To ensure your custom assessment functions properly, be sure that any custom template contains at least one custom dimension such as a custom product, or a custom dimension that you have added.
-
-**Issue: The dimensions you need for your custom template are not available.**
-
-**Resolution:**
-
-Assessments created from custom templates may not appear correctly in Compliance Score because certain dimensions are not yet available. To correct the issue, follow the steps below when creating custom templates for assessments.
-
-1. Download [this sample import file](https://go.microsoft.com/fwlink/?linkid=2090531) and save a copy to your computer.
-   - **Note**: this file will only be used to import the dimensions you need to Compliance Manager. It will not be the file used to create your custom template, so its file name should not be similar to the eventual template name to avoid confusion.
-
-2. Add the dimension values for **Product** and **Certification** you'll need for your custom assessment.
-
-3. **Save** the file.
 
 4. Upload the template to Compliance Manager following these instructions:
    - In Compliance Manger, from the Templates dashboard, select **+Add Template**.
