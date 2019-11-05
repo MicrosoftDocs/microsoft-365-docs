@@ -871,7 +871,7 @@ Even if a student is no longer part of a class, their data might still be presen
 You can export Assignments data for a specific student for all classes in which the student is enrolled by using a PowerShell script to get a list of classes for the student and then using a PowerShell script to export the data. See:
 
 - [Configure Assignments for Teams](https://docs.microsoft.com/microsoft-365/education/deploy/configure-assignments-for-teams)
-- [Get a list of classes for a specific student](https://docs.microsoft.com/en-us/microsoft-365/education/deploy/assignments-script-get)
+- [Get a list of classes for a specific student](https://docs.microsoft.com/microsoft-365/education/deploy/assignments-script-get)
 - [Export student and teacher data from Assignments](https://docs.microsoft.com/microsoft-365/education/deploy/assignments-script-export)
 
 If the student has been removed from the Team Class site, the admin can add the student back to the site before running the export script. Or the admin can use the input file for the script to identify every class that the student was ever enrolled in. You can also use the Assignment export script to export submissions data for all assignments that a teacher has access to.
