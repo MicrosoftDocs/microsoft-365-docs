@@ -26,8 +26,6 @@ As a Microsoft 365 administrator or compliance administrator, you can evaluate a
 - a summary of activities that users are taking on your sensitive content
 - the locations of your sensitive and retained data
 
-
-
 You can find data classification in the **Microsoft 365 compliance center** or **Microsoft 365 security center** > **Classification** > **Data Classification**.
 
 ## Sensitive information types used most in your content
@@ -95,6 +93,8 @@ The point of the data classification reporting is to provide visibility into the
 
 ## See also
 
+- [View label activity (preview)](data-classification-activity-explorer.md)
+- [View labeled content (preview)](data-classification-content-explorer.md)
 - [Sensitivity labels](sensitivity-labels.md)
 - [Retention labels](labels.md)
 - [What the sensitive information types look for](what-the-sensitive-information-types-look-for.md)
