@@ -35,6 +35,10 @@ highlightedContent:
       itemType: learn
       url: https://support.microsoft.com
     # Card
+    - title: Join the Microsoft 365 tech community
+      itemType: get-started
+      url: https://techcommunity.microsoft.com/t5/Microsoft-365/ct-p/microsoft365
+    # Card
     - title: References for developers
       itemType: reference
       url: https://developer.microsoft.com/microsoft-365
