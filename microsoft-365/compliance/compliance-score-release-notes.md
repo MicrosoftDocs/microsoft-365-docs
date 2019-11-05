@@ -49,11 +49,11 @@ The following sections cover known issues to be resolved in upcoming releases of
 
 **Solution:**
 
-When creating a custom template for an assessment, be sure that it does not use a combination of **Product** and **Certification** that already exists for another template.
+When creating a custom template for an assessment, be sure that it does not use a combination of **Product** and **Certification** that already exists in another template.
 
-For example, avoid using a **Product** dimension of Microsoft 365 and a **Certification** dimension of FFEIC, as the standard template FFIEC IS is already using this dimension combination.  
+For example, avoid using a **Product** dimension of Microsoft 365 and a **Certification** dimension of FFIEC, as the standard template  for FFIEC already uses this dimension combination.  
 
-In addition to using a unique **Product** and **Certification** combination, your custom template must also contain at least one custom dimension, such as a custom product or another new dimension you added (see immediately below).
+In addition to having a unique **Product** and **Certification** combination, your custom template must also contain at least one custom dimension, such as a custom product or another new dimension you added (see immediately below).
 
 **Issue: You need new dimensions for your custom template.**
 
@@ -69,11 +69,11 @@ Assessments created from custom templates may not appear correctly in Compliance
    - In Compliance Manger, from the Templates dashboard, select **+Add Template**.
    - On the **Add Template** flyout, under the **Dimension** header, for **Certification** select **CCPA**, and for **Product** select **Intune**.
    - Select **Browse** and find the file you downloaded and saved in steps 1-3 above, then select **Add to Dashboard**.
-   - Find your new template, go to the ellipses on the far right side of its row, select **Reject**, then confirm the rejection. This removes the template from your inventory, yet the dimensions you added to that template remain in Compliance Manager so you can select them for a future template.
+   - Find your new template in the Dashboard, go to the ellipses on the far right side of its row, select **Reject**, then confirm the rejection. This removes the template from your inventory, yet the dimensions you added to that template remain in Compliance Manager so you can select them for a future template.
    - **Refresh** your browser so that the next time you create a template, the new dimension(s) will be an available option for you to select.
 
 5. Create your custom template in Compliance Manager following [these instructions](working-with-compliance-manager.md#create-a-template-1).
-6. **Upload** your custom template to Compliance Manager using the correct Product and Certification tag.
+6. **Upload** your custom template to Compliance Manager using the correct **Product** and **Certification** tag.
 7. Have another Compliance Manager admin approve the template.
 
 The custom template is now ready to use.
