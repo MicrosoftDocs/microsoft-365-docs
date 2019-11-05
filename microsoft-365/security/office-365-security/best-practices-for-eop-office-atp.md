@@ -71,103 +71,86 @@ Anti-spam, anti-malware, and anti-phishing are features of EOP that can be confi
 |Security feature name|Standard|Strict|Comment|
 |---------|---------|---------|---------|
 |Enable antispoofing protection|On|On||
-|Enable Unauthenticated Sender tagging|On|On||
+|Enable Unauthenticated Sender (tagging)|On|On||
 |If email is sent by someone who's not allowed to spoof your domain|Move message to the recipients' Junk Email folders|Quarantine the message||
 
 ## Office 365 Advanced Threat Protection (ATP) security
 Additional security benefits come with an Office 365 Advanced Threat Protection subscription. For the latest news and information, you can see [What's new in Office 365 ATP](whats-new-in-office-365-atp.md). 
 
-
-### Advanced Anti-phishing
-Phishing is an attempt to masquerade as reputable company or person for the purpose of stealing personal information like credit-card numbers, or computer or device pins or passwords. Phishing can involve:
-
-- **Spoofing**, where spoofers try to send mail on behalf of a specific target in a domain (for example, ellar@2020contoso.com trying to send mail for ellar@2020litware.com (a scenario email authentication methods can help thwart).
-
-- **Impersonation**, where mail is received whose sender is visually similar (or look-alike) to a target domain or username. The bad actor here, mimics a specific username, or pretends to be sending mail from a target domain. Here's a pretense domain: ellar@2020|itware.com, and here's a pretense user: ellαr@2020litware.com (look closely at the domain and user names in these examples to catch the domain and user impersonation).
+Office 365 ATP includes the Safe Attachment and Safe Links policies to prevent email with potentially malicious attachments from being delivered, and to keep users from clicking potentially unsafe URLs.
 
 > [!IMPORTANT]
 > Advanced Anti-phishing is one of the benefits of an Office 365 ATP subscription. Enabled by default, anti-phishing ***must*** be configured by using policies before it'll start filtering mail. Forgetting to configure anti-phishing policies could exposes users to risky emails. Make sure to configure your Anti-phishing policies after you add an Office 365 ATP subscription.
 
 If you've added an Office 365 ATP subscription to your EOP, set the following configurations.
 
+|Impersonation security feature name|Standard|Strict|Comment|
+|---------|---------|---------|---------|
+|(Edit impersonation policy) Add users to protect|On|On|Depends on your organization, but we recommend adding users in key roles. Internally, these might be your CEO, CFO, and other senior leaders. Externally, these could include council members or your board of directors.|
+|(Edit impersonation policy) Automatically include the domains I own|On|On||
+|(Edit impersonation policy) Include custom domains|On|On|Depends on your organization, but we recommend adding domains you interact with most that you don't own.|
+|If email is sent by an impersonated user|Quarantine the message|Quarantine the message||
+|If email is sent by an impersonated domain|Quarantine the message|Quarantine the message||
+|Show tip for impersonated users|On|On||
+|Show tip for impersonated domains|On|On||
+|Show tip for unusual characters|On|On||
+|Enable Mailbox intelligence|On|On||
+|Enable Mailbox intelligence based impersonation protection|On|On||
+|If email is sent by an impersonated user|Quarantine the message|Quarantine the message||
+|(Edit impersonation policy) Add trusted senders and domains|None|None|Depends on your organization, but we recommend adding users or domains that incorrectly get marked as phish due to impersonation only and not other filters.|
+
+|Spoof security feature name|Standard|Strict|Comment|
+|---------|---------|---------|---------|
+|Enable antispoofing protection|On|On||
+|Enable Unauthenticated Sender (tagging)|On|On||
+|If email is sent by someone who's not allowed to spoof your domain|Move message to the recipients' Junk Email folders|Quarantine the message||
+|EnableAuthenticationSafetyTip|True|True|This setting is only available in PowerShell|
+|EnableAuthenticationSoftPassSafetyTip|False|True|This setting is only available in PowerShell|
+|EnableSuspiciousSafetyTip|False|True|This setting is only available in PowerShell|
+|TreatSoftPassAsAuthenticated|True|False|This setting is only available in PowerShell|
+
+|Advanced settings security feature name|Standard|Strict|Comment|
+|---------|---------|---------|---------|
+|Advanced phishing thresholds|2 - Aggressive|3 - More aggressive||
+
+### Safe Links settings
+
 |Security feature name|Standard|Strict|Comment|
 |---------|---------|---------|---------|
-|Advanced phishing threshold|2|3||
-|Enable Anti-impersonation protection|Yes|Yes||
-|Enable Mailbox intelligence in Anti-Impersonation policies|Yes|Yes||
-|Enable Mailbox intelligence based Impersonation protection|Yes|Yes||
-|Domain Impersonation action should be|Move message to Junk Email folder|Quarantine||
-|User Impersonation action should be|Move message to Junk Email folder|Quarantine||
-|Mailbox intelligence based impersonation protection action should be|No Action + Safety Tip|Move message to Junk Email folder||
-|EnableMailboxIntelligence|True|True||
-|EnableSimilarUsersSafetyTips|True|True||
-|EnableSimilarDomainsSafetyTips|True|True||
-|EnableUnusualCharactersSafetyTips|True|True||
-|TargetedUserProtectionAction|Move message to Junk Email folder|Quarantine||
-|MailboxIntelligenceProtectionAction|NoAction + Safety Tip|Move message to Junk Email folder||
-|TargetedDomainProtectionAction|Move message to Junk Email folder|Quarantine||
-|AntiSpoofEnforcementType|High|High||
-|EnableAuthenticationSafetyTip|False|True||
-|EnableAuthenticationSoftPassSafetyTip|False|True||
-|TreatSoftPassAsAuthenticated|True|False||
-|EnableSuspiciousSafetyTip|True|True||
+|Use ATP Safe Links in Office 365 Apps, Office for iOS and Android|Enabled|Enabled|This falls under the ATP Safe Links Policies that apply to the entire organization|
+Do not track when users click safe links|Disabled|Disabled|This falls under the ATP Safe Links Policies that apply to the entire organization|
+|Do not let users click through safe links to original URL|Disabled|Enabled|This falls under the ATP Safe Links Policies that apply to the entire organization|
+|Action for unknown potentially malicious URLs in messages|On|On||
+|Apply real-time URL scanning for suspicious links and links that point to files|Enabled|Enabled||
+|Wait for URL scanning to complete before delivering the message|Enabled|Enabled||
+|Apply safe links to email messages sent within the organization|Disabled|Enabled||
 
-### Safe Links and Safe Attachments
-
-Office 365 ATP includes the Safe Attachment and Safe Links policies to prevent email with potentially malicious attachments from being delivered, and to keep users from clicking potentially unsafe URLs.
-
-#### Safe Links settings
-
-|Security feature name|Standard|Strict|Comment|
-|---------|---------|---------|---------|
-|Use ATP Safe Links in Office Applications|Enabled|Enabled||
-|ATP Safe Links action for unknown potentially malicious URLs in messages|On|On||
-|ATP Safe Links should apply real-time URL scanning for suspicious links and links that point to files|Enabled|Enabled||
-|ATP Safe Links should wait for URL scanning to complete before delivering the message|Enabled|Enabled||
-|ATP Safe Links should not track when users click for safe links|Disabled|Disabled||
-|ATP Safe Links should not let users click through safe links to original URL|Disabled|Enabled||
-
-#### Safe Attachments
+### Safe Attachments
 
 |Security feature name|Standard|Strict|Comment|
 |---------|---------|---------|---------|
 |Turn on ATP for SharePoint, OneDrive, and Microsoft Teams|Enabled|Enabled||
 |ATP Safe attachments unknown malware response|Block|Block||
+|Redirect attachment on detection|Enabled|Enabled|Redirect to email address for a security administrator that knows how to determine if the attachment is malware or not|
 |ATP Safe attachments response if malware scanning for attachments times out or error occurs|Enabled|Enabled||
 
 ## Miscellaneous settings for EOP or Office 365 ATP
 
-These settings cover a range of features that don't necessarily fit into specific categories above. 
+These settings cover a range of features that don't necessarily fit into specific categories above. Some of the settings are external to the Security & Compliance Center.
 
 Security feature name|Standard|Strict|Comment|
 |---------|---------|---------|---------|
-|Create SPF records|Yes|Yes||
-|Configure DKIM Signing for Domains|Yes|Yes||
-|Implement Domain-based Message Reporting and Conformance (DMARC) with reject or quarantine action|action=none|action=reject||
+|[Set up SPF in Office 365 to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md)|Yes|Yes||
+|[Use DKIM to validate outbound email sent from your custom domain in Office 365](use-dkim-to-validate-outbound-email.md)|Yes|Yes||
+|[Use DMARC to validate email in Office 365](use-dmarc-to-validate-email.md)|Yes|Yes|Use action=quarantine for Standard, and action=reject for Strict.|
 |Deploy Report Message add-on to improve End User Reporting of Suspicious Emails|Yes|Yes||
 |Schedule Malware and Spam Reports|Yes|Yes||
 |Auto-forwarding to external domains should be disallowed or monitored||Yes||
 |Unified Auditing should be enabled|Yes|Yes||
-|IMAP should be disabled where not required||disabled||
-|POP should be disabled where not required||disabled||
-|SMTP Authenticated Submission should be turned off when not required by Applications||disabled||
-|EWS should be disabled||disabled||
-|PowerShell||disabled||
-|Configure Sender Policy Framework to hard-fail|-all|-all||
+|IMAP connectivity to mailbox|Disabled|Disabled||
+|POP connectivity to mailbox|Disabled|Disabled||
+|SMTP Authenticated Submission to mailbox|Disabled|Disabled||
+|EWS connectivity to mailbox|Disabled|Disabled||
+|PowerShell connectivity|Disabled|Disabled||
 |Use Spoof Intelligence to whitelist senders whenever possible|Yes|Yes||
 |Directory-Based Edge Blocking (DBEB)|Enabled|Enabled|Domain Type = Authoritative|
-
-## Email Authentication
-
-SPF, DKIM, and DMARC are acronyms for Sender Policy Framework, DomainKeys Identified Mail, and Domain-based Message Authentication, Reporting, and Conformance (quite a mouthful), and are the basis of email authentication and validation.
-
-These methods handle outbound email from Office 365, and help destination systems trust that email from your domain is valid. These  configurations are made *outside* of Office 365, in your DNS. For specific configuration steps, see the [How Office 365 uses Sender Policy Framework (SPF) to prevent spoofing](how-office-365-uses-spf-to-prevent-spoofing.md) section in the Security and Compliance table of contents.
-
-|Security feature name|Standard|Strict|Comment|
-|---------|---------|---------|---------|
-|[Set up SPF in Office 365 to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md)|Yes|Yes||
-|[Use DKIM to validate outbound email sent from your custom domain in Office 365](use-dkim-to-validate-outbound-email.md)|Yes|Yes||
-|[Use DMARC to validate email in Office 365](use-dmarc-to-validate-email.md)|Yes|Yes|Use action=none for Standard, and action=reject for Strict.|
-
-> [!IMPORTANT]
-> To work with security roles and permissions, be sure you have the right role or roles in Office 365 or the Security and Compliance Center. If you are a *Security Administrator* in Azure Active Directory, a *Global Administrator* in Office 365, or an *Exchange Online Organizational Manager* in Exchange Online/Exchange Online Powershell, you're ready to go.
