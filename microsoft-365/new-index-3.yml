@@ -44,8 +44,8 @@ highlightedContent:
 additionalContent:
   # Supports up to 3 sections
   sections:
-    - title: Guidance for your Microsoft 365 subscription or feature area
-      summary: Select a card below to get started with Microsoft 365. # 160 chars (optional)
+    - title: Resources for Microsoft 365
+      summary: Select an area below to learn more about getting started or managing Microsoft 365. # 160 chars (optional)
       items:
         # Card
         - title: Microsoft 365 Business
@@ -61,7 +61,7 @@ additionalContent:
           url: https://docs.microsoft.com/education/
         # Card
         - title: Microsoft 365 Compliance
-          summary: Microsoft 365 compliance solutions help your organization comply with legal or regulatory standards.
+          summary: Microsoft 365 compliance solutions help your organization govern information, protect against risks, and comply with legal or regulatory standards.
           url: ./compliance/index.yml
         # Card
         - title: Microsoft 365 Security
