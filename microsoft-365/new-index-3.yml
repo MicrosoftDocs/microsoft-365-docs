@@ -45,7 +45,7 @@ additionalContent:
   # Supports up to 3 sections
   sections:
     - title: Find guidance for your Microsoft 365 subscription or feature area
-      summary: # < 160 chars (optional)
+      summary: Select a card below to get started # 160 chars (optional)
       items:
         # Card
         - title: Microsoft 365 Enterprise
