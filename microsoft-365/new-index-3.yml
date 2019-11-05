@@ -1,12 +1,12 @@
 ### YamlMime:Hub
 
-title: Microsoft 365 documentation for admins and IT professionals # < 60 chars
+title: Microsoft 365 help center for admins and IT pros # < 60 chars
 summary: Microsoft 365 is a complete, intelligent solution, including Office 365, Windows 10, and Enterprise Mobility + Security. # < 160 chars
 # brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-platform | sql | sql-server | vs | visual-studio | windows | xamarin
 brand: m365
 
 metadata:
-  title: Microsoft 365 documentation for admins and IT professionals # Required; page title displayed in search results. Include the brand. < 60 chars.
+  title: Microsoft 365 help center for admins and IT pros # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: Deploy, configure, and manage Microsoft 365 services in your organization. # Required; article description that is displayed in search results. < 160 chars.
   services: office-365-security-compliance
   ms.service: O365-seccomp #Required; service per approved list. service slug assigned to your service by ACOM.
@@ -23,13 +23,13 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
   items:
     # Card
-    - title: Get started with Microsoft 365 Test Lab Guides
+    - title: Get started with Test Lab Guides (IT pros)
       itemType: tutorial
       url: ./enterprise/m365-enterprise-test-lab-guides.md
     # Card
     - title: Training for admins
       itemType: learn
-      url: https://docs.microsoft.com/learn/paths/m365-fundamentals/
+      url: https://docs.microsoft.com/learn/browse/?products=m365
     # Card
     - title: Training for users
       itemType: learn
@@ -48,13 +48,13 @@ additionalContent:
       summary: Select a card below to get started with Microsoft 365. # 160 chars (optional)
       items:
         # Card
-        - title: Microsoft 365 Enterprise
-          summary: Microsoft 365 Enterprise is designed for large organizations and integrates Office 365 Enterprise, Windows 10 Enterprise, and Enterprise Mobility + Security.
-          url: ./enterprise/index.md
-        # Card
         - title: Microsoft 365 Business
           summary: Microsoft 365 Business is designed for small and midsize businesses, bringing together the productivity and collaboration capabilities of Office 365 with device management and security solutions to safeguard business data. 
           url: ./business/index.md
+        # Card
+        - title: Microsoft 365 Enterprise
+          summary: Microsoft 365 Enterprise is designed for large organizations and integrates Office 365 Enterprise, Windows 10 Enterprise, and Enterprise Mobility + Security.
+          url: ./enterprise/index.md
         # Card
         - title: Microsoft 365 Education
           summary: Microsoft 365 Education empowers educators to unlock creativity, promote teamwork, and provide a simple and safe experience in a single, affordable solution built for education.
@@ -71,4 +71,23 @@ additionalContent:
         - title: Microsoft 365 for Campaigns
           summary: Help keep your campaign's or business's data and communications secure with this recommended configuration for Microsoft 365 Business.
           url: ./campaigns/index.md
+        # Card
+        - title: (NEW) Microsoft 365 training on Microsoft Learn
+          summary: Use our new learning paths to increase your Microsoft 365 skills and earn certifications.
+          url: https://docs.microsoft.com/learn/m365/
 
+
+additionalContent:
+  # Supports up to 3 sections
+  sections:
+    - title: Resources # < 60 chars (optional)
+      summary: Need help with Microsoft 365? Use these resources for assistance. # < 160 chars (optional)
+      items:
+        # Card
+        - title: Find a solution provider
+          summary: Microsoft certified solution providers specialize in providing up-to-date Microsoft technology-based customer solutions all over the world.
+          url: https://www.microsoft.com/solution-providers/home
+        # Card
+        - title: Microsoft 365 Tech Community
+          summary: The place to share Microsoft 365 experiences and to engage and learn from experts. 
+          url: https://techcommunity.microsoft.com/t5/Microsoft-365/ct-p/microsoft365
