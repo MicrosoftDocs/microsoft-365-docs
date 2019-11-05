@@ -55,7 +55,7 @@ For example, avoid using a **Product** dimension of Microsoft 365 and a **Certif
 
 In addition to using a unique **Product** and **Certification** combination, your custom template must also contain at least one custom dimension, such as a custom product or another new dimension you added (see immediately below).
 
-**Issue: You need to add new dimensions to use in your custom template.**
+**Issue: You need new dimensions for your custom template.**
 
 **Solution:**
 
