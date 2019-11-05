@@ -30,6 +30,11 @@ Customer Key enhances the ability of your organization to meet the demands of co
 <a name="WhatDataIsCoveredbyCustomerKey"> </a>
 
 SharePoint Online site content and the files stored on that site and files uploaded to OneDrive for Business are covered. Exchange Online mailbox content (e-mail body, calendar entries, and content of email attachments) is covered. Text conversations from Skype for Business are covered, but Skype Meeting Broadcast recordings and Skype Meeting content uploads are not covered. Skype Meeting Broadcast and Skype Meeting content uploads are encrypted along with all other content in Office 365, but we currently don't offer customer control of the encryption keys.
+
+## What Office 365 data at rest is not covered by Customer Key?
+<a name="WhatDataIsNotCoveredbyCustomerKey"> </a>
+
+Customer Key is only used to encrypt files, it does not encrypt any other SharePoint Online content such as metadata in documents and libraries, data in lists except attachments, data stored in user profile, data stored in search index, data stored in other services such as Planner, Stream, Delve, Microsoft Teams, Yammer etc.
   
 ## What is the difference between Customer Key and Bring Your Own Key (BYOK) with Azure Information Protection for Exchange Online?
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
