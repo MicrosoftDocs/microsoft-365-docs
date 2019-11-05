@@ -23,7 +23,7 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
   items:
     # Card
-    - title: Get started with Test Lab Guides
+    - title: Get started with Microsoft 365 Test Lab Guides
       itemType: tutorial
       url: ./enterprise/m365-enterprise-test-lab-guides.md
     # Card
@@ -44,8 +44,8 @@ highlightedContent:
 additionalContent:
   # Supports up to 3 sections
   sections:
-    - title: Find guidance for your Microsoft 365 subscription or feature area
-      summary: Select a card below to get started # 160 chars (optional)
+    - title: Guidance for your Microsoft 365 subscription or feature area
+      summary: Select a card below to get started with Microsoft 365. # 160 chars (optional)
       items:
         # Card
         - title: Microsoft 365 Enterprise
