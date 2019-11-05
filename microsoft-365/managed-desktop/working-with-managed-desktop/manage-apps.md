@@ -20,7 +20,7 @@ There are a couple of ways to manage app updates for apps that you've onboarded 
 ## Update line-of-business apps in Microsoft Managed Desktop
 
 **To update your line-of-business apps in Microsoft Managed Desktop portal**
-1. Sign in to [Microsoft Managed Desktop Admin portal](http://aka.ms/mmdportal).
+1. Sign in to [Microsoft Managed Desktop Admin portal](https://aka.ms/mmdportal).
 2. Under **Inventory**, select **Apps**.  
 3. Select the app you want to updates, and then select **Edit**.
 4. Under **Manage**, select **Properties**. 
