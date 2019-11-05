@@ -24,3 +24,17 @@ Here are a few ways IT administrators can personalize *Get started with your dev
 - Give the user with the appropriate username, or domain name to enter at step 3
 - Add a support contact within your organization for support outside of Microsoft Managed Desktop support
 - Add instructions about where to pick up their device (if this is separate from these instructions)
+
+At this point, you're ready to continue with the getting started steps:
+
+
+## Steps to get started with Microsoft Managed Desktop
+
+1. [Add and verify admin contacts in the Admin portal](add-admin-contacts.md)
+2. [Adjust conditional access](conditional-access.md)
+3. [Assign licenses](assign-licenses.md)
+4. [Deploy Intune Company Portal](company-portal.md)
+5. [Enable Enterprise State Roaming](enterprise-state-roaming.md)
+6. [Set up devices](set-up-devices.md)
+7. Get your users ready to use devices (this topic)
+8. [Deploy apps](deploy-apps.md)
