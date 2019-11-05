@@ -24,7 +24,7 @@ highlightedContent:
   items:
     # Card
     - title: Get started with Test Lab Guides for IT pros
-      itemType: tutorial
+      itemType: how-to-guide
       url: ./enterprise/m365-enterprise-test-lab-guides.md
     # Card
     - title: Training for admins and IT pros
