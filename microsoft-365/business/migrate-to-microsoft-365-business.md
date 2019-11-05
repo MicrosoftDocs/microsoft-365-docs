@@ -64,7 +64,7 @@ If you are given a link to purchase your licences, you will walk through a wizar
     
     If you don't have new employees to add and want to assign licences to existing users, choose **Next**.
     
-4. On the ** Migrate email messages ** page you can choose to migrate email for any of the new users you added in step 3. You can skip this step also. Choose **Next**.
+4. On the **Migrate email messages** page you can choose to migrate email for any of the new users you added in step 3. You can skip this step also. Choose **Next**.
     
 5. On the last page, choose **go to the admin center**, and continue setup there.
     
