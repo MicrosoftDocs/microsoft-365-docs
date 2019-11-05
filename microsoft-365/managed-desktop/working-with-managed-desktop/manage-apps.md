@@ -53,7 +53,7 @@ If there's an error found when a new version of an app is deployed, you can roll
 
 **To roll back a line-of-business app to a previous version**
 
-1. Sign in to [Microsoft Managed Desktop Admin portal](http://aka.ms/mmdportal).
+1. Sign in to [Microsoft Managed Desktop Admin portal](https://aka.ms/mmdportal).
 2. Under **Inventory**, select **Apps**.  
 3. Select the app you need to roll back, and then select **Edit**.
 4. Under **Manage**, select **Properties**. 
