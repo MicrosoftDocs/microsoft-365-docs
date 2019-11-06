@@ -1,5 +1,5 @@
 ---
-title: Microsoft Secure Score
+title: Microsoft Secure Score (preview)
 description: Describes Microsoft Secure Score in the Microsoft 365 security center, how details are calculated, and what security admins can expect using it.
 keywords: security, malware, Microsoft 365, M365, secure score, security center, improvement actions
 ms.prod: w10
