@@ -102,7 +102,7 @@ If a file format is supported, such as a Word, Excel, or PowerPoint file, the fi
   
 ## Are PDF file attachments supported?
 
-Yes! You can enable encryption for PDF attachments for your Office 365 organizations. To enable encryption for PDF attachments, run the following command in [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell):
+Yes! PDF files are supported. You can view supported file formats mentioned [here](https://docs.microsoft.com/information-protection/rms-client/client-admin-guide-file-types). You can also enable encryption for PDF attachments for your Office 365 organizations. To enable encryption for PDF attachments, run the following command in [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell):
 
 ```powershell
 Set-IRMConfiguration -EnablePdfEncryption $true
