@@ -31,7 +31,7 @@ You can also search for documents that have processing errors by using the **Pro
 
 ![Use the Processing status condition to search for error documents](media/SIERimage2.png)
 
-### Ignoring errors
+### Ignore errors
 
 You can ignore a processing error by clicking **Ignore** in the processing error banner. When you ignore an error, the document is removed from the [bulk error remediation workflow](error-remediation-when-processing-data-in-advanced-ediscovery.md). After an error is ignored, the document banner changes color and indicates that the processing error was ignored. At any time, you can revert the decision to ignore the error by clicking **Revert**.
 
@@ -70,6 +70,8 @@ To remediate a single document, follow these steps:
 
     ![You can view the remediated file in the native format in the review set](media/SIERimage9.png)
 
-You can search for all documents in a review set that were remediated by using the **Keywords** condition and specifying the following property:value pair: **IsFromErrorRemediation:true**. This property is also available in the export load file when you export documents from a review set.
-
 For more information about what happens when a document is remediated, see [What happens when files are remediated](error-remediation.md#what-happens-when-files-are-remediated).
+
+## Search for remediated documents
+
+You can search for all documents in a review set that were remediated by using the **Keywords** condition and specifying the following property:value pair: **IsFromErrorRemediation:true**. This property is also available in the export load file when you export documents from a review set.

@@ -25,8 +25,8 @@ To learn more about processing support in Office 365 and partially indexed items
 
 - [Supported file types in Advanced eDiscovery](supported-filetypes-ediscovery20.md)
 - [Partially indexed items in Content Search in Office 365](partially-indexed-items-in-content-search.md)
-- [File formats indexed by Exchange Search](https://docs.microsoft.com/en-us/exchange/file-formats-indexed-by-exchange-search-exchange-2013-help)
-- [Default crawled file name extensions and parsed file types in SharePoint Server](https://docs.microsoft.com/en-us/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)
+- [File formats indexed by Exchange Search](https://docs.microsoft.com/exchange/file-formats-indexed-by-exchange-search-exchange-2013-help)
+- [Default crawled file name extensions and parsed file types in SharePoint Server](https://docs.microsoft.com/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)
 
 ## Viewing Advanced indexing results
 
