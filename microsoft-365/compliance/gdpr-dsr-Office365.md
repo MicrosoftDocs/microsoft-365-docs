@@ -1795,5 +1795,5 @@ The following table lists the changes to the Office 365 DSR guide since its init
 |1/9/2019|[StaffHub](#staffhub)|In the Delete section, updated the description of what happens when a user account is permanently deleted.|
 |5/8/2019| [Publisher](#publisher)|Added content about responding to DSRs for Publisher.|
 |7/11/2019| [MyAnalytics](#myanalytics)|The ability for an admin to use the DSR case tool in the Office 365 Security & Compliance Center to export MyAnalytics data was removed because all users can now view their data in the MyAnalytics app. |
-|11/5/2019|[Education](#education)|Linked to new topics on using PowerShell scripts to get a list of classes for a specific student and then exporting or deleting their data.|
+|11/6/2019|[Education](#education)|Linked to new topics on using PowerShell scripts to get a list of classes for a specific student and then exporting or deleting their data.|
 ||||
