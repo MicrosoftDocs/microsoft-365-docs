@@ -53,6 +53,8 @@ Need to find if a user viewed a specific document or purged an item from their m
 
 - User and admin activity in Microsoft PowerApps
 
+- User and admin activity in Microsoft Forms
+
 ## Before you begin
 
 Be sure to read the following items before you start searching the Office 365 audit log.
@@ -120,6 +122,7 @@ Be sure to read the following items before you start searching the Office 365 au
   |Sway||![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   |Workplace Analytics|![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Yammer||![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+  |Microsoft Forms|![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
 
 - Azure Active Directory (Azure AD) is the directory service for Office 365. The unified audit log contains user, group, application, domain, and directory activities performed in the Microsoft 365 admin center or in the Azure management portal. For a complete list of Azure AD events, see [Azure Active Directory Audit Report Events](https://go.microsoft.com/fwlink/p/?LinkID=616549).
 
@@ -296,7 +299,7 @@ Click one of the following links to go to a specific table.
 |[Advanced eDiscovery activities](#advanced-ediscovery-activities)|[Power BI activities](#power-bi-activities)|[Microsoft Workplace Analytics](#microsoft-workplace-analytics-activities)|
 |[Microsoft Teams activities](#microsoft-teams-activities)|[Microsoft Teams Healthcare activities](#microsoft-teams-healthcare-activities)|[Yammer activities](#yammer-activities)|
 |[Microsoft Flow activities](#microsoft-flow-activities)|[Microsoft PowerApps activities](#microsoft-powerapps)|[Microsoft Stream activities](#microsoft-stream-activities)|
-[Exchange admin activities](#exchange-admin-audit-log)|||
+[Exchange admin activities](#exchange-admin-audit-log)|[Microsoft Forms activities](#microsoft-forms-activities)|||
 ||||
 
 ### File and page activities
@@ -797,6 +800,43 @@ Here are some tips for searching for Exchange admin activities when searching th
   - [Search-AdminAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-adminauditlog)
 
    Keep in mind that the same Exchange admin activities are logged in both the Exchange admin audit log and and Office 365 audit log.
+
+### Microsoft Forms activities
+
+The following table lists the user and admin activities in Microsoft Forms that are logged in the Office 365 audit log. Microsoft Forms is a forms/quiz/survey tool used to collect data for anlaysis. 
+
+Where noted below in the descriptions, some operations contain additional activitiy paramaters.
+
+|**Friendly name**|**Operation**|**Description**|
+|:-----|:-----|:-----|
+|Create Comment|CreateComment|Form owner adds comment or score to a quiz.|
+|Create Form|CreateForm|Form owner creates a new form.|
+|Edit Form|EditForm|Form owner edits a form such as creating, removing, or editing a question. <br><br>Property EditOperation:string indicates the edit operation name. These include: CreateQuestion, CreateQuestionChoice, DeleteQuestion, DeleteQuestionChoice, DeleteFormImage, DeleteQuestionImage, UpdateQuestion, UpdateQuestionChoice, UploadFormImage/Bing/Onedrive, UploadQuestionImage, ChangeTheme.  <br><br>Most operation names are self-explanatory. <br><br>FormImage includes any place within Forms that user can upload image, such as in a query or as a background theme.|
+|Move Form|MoveForm|Form owner moves a form. <br><br>Property DestinationUserId:string indicates the user ID of the person who moved the form. Property NewFormId:string is the new ID for the newly copied form|
+|Delete Form|DeleteForm|Form owner deletes a form. This includes SoftDelete (delete option used and form now in recycle bin) and HardDelete (emptied recycle bin).|
+|View Form (design time)|ViewForm|Form owner opens an existing form for editing.|
+|Preview Form|PreviewForm|Form owner Previews a form using Preview function.|
+|Export Form|ExportForm|Form owner exports results to Excel. <br><br>Property ExportFormat:string incidates if the excel file is Download or Online.|
+|Allow Share Form For Copy|AllowShareFormForCopy|Form owner createst a template link to share the form with other users.  Event logged when form owner clicks to generate template url.|
+|Disallow Share Form For Copy|DisallowShareFormForCopy|Form owner deletes template link.|
+|Add Form Coauthor|AddFormCoauthor|User uses a collaboration link to help design for/view responses.  Logged when a user uses a collab URL (not when collab URL is first generated).|
+|Remove Form Coauthor|RemoveFormCoauthor|Form owner deletes collaboration link.|
+|View Runtime Form|ViewRuntimeForm|User has opened a to view. Logged regardles if the user submits a response or not.|
+|Create Response|CreateResponse|Analogous to recieviing a new response.  A User has submitted a response to a form. <br><br>Property ResponseId:string and Property ResponderId:string incidate which result is being viewed. <br><br>For anonymous responder, the ResponderId property will be null.|
+|Update Response|UpdateResponse|Form owner has updated a comment or score on a quiz. <br><br>Property ResponseId:string and Property ResponderId:string incidate which result is being viewed. <br><br>For anonymous responder, the ResponderId property will be null.|
+|Delete All Responses|DeleteAllResponses|Form owner deletes all response data.|
+|Delete Response|DeleteResponse|Form owner deletes one response. <br><br>Property ResponseId:string incidates the response being deleted.|
+|View Responses|ViewResponses|Form owner views aggregated list of responses. <br><br>Property ViewType:string indicates whether they are viewing Detail or Aggregate|
+|View Response|ViewResponse|Form owner views a particular response. <br><br>Property ResponseId:string and Property ResponderId:string incidate which result is being viewed. <br><br>For anonymous responder, the ResponderId property will be null.|
+|Get Summary Link|GetSummaryLink|Form owner creates summary results link to share results.|
+|Delete Summary Link|DeleteSummaryLink|Form owner deletes summary results link.|
+|Update Phishing Status|UpdatePhishingStatus|Logged whenever the internal security status detailed value has changed, regardless of whether this changed the final Security State (eg form is now Closed or Opened). This means you may see duplicate events without a final Security State change.|
+|Pro Invitation|ProInvitation|User clicks to activate Pro trial.|
+|Update Form Setting|UpdateFormSetting|Form owner updates a form setting. <br><br>Property FormSettingName:string indicates the setting name and new value|
+|Update User Setting|UpdateUserSetting|Form owner updates a user setting. <br><br>Property UserSettingName:string indicates the setting name and new value|
+|List Forms|ListForms|Form owner is viewing a list of forms. <br><br>Property ViewType:string incidates which view they are looking at: All Forms, Shared with Me, Group Forms|
+|Submit Response|SubmitResponse|A user submits a response to a form. <br><br>Property IsInternalForm:boolean incidates if the responder is within the same organization as the form owner.|
+||||
 
 ## Frequently asked questions
 
