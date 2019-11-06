@@ -23,27 +23,27 @@ sections:
     - href: intro/index.md
       html: <p>Introduction to Microsoft Managed Desktop for decision makers--what it is, how it works, and what it can do for you</p>
       image:
-        src: https://docs.microsoft.com/en-us/media/common/i_overview.svg
+        src: https://docs.microsoft.com/media/common/i_overview.svg
       title: What is Microsoft Managed Desktop?
     - href: service-description/index.md
       html: <p>Detailed description of all parts of Microsoft Managed Desktop</p>
       image:
-        src: https://docs.microsoft.com/en-us/media/common/i_get-started.svg
+        src: https://docs.microsoft.com/media/common/i_get-started.svg
       title: Service Description
     - href: get-ready/index.md
       html: <p>All the steps to get your environment and organization ready to work with the service</p>
       image:
-        src: https://docs.microsoft.com/en-us/media/common/i_support.svg
+        src: https://docs.microsoft.com/media/common/i_support.svg
       title: Get ready
     - href: get-started/index.md
       html: <p>Get your organization on board with Microsoft Managed Desktop, including setting up devices and deploying apps</p>
       image:
-        src: https://docs.microsoft.com/en-us/media/common/i_whats-new.svg
+        src: https://docs.microsoft.com/media/common/i_whats-new.svg
       title: Get started
     - href: working-with-managed-desktop/index.md
       html: <p>All about your day-to-day operations with the service</p>
       image:
-        src: https://docs.microsoft.com/en-us/media/common/i_portal.svg
+        src: https://docs.microsoft.com/media/common/i_portal.svg
       title: Working with Microsoft Managed Desktop
 - title: New articles and blog posts
   items:
@@ -57,11 +57,11 @@ sections:
     - href: https://www.microsoft.com/microsoft-365/blog/2018/09/17/collaborating-with-customers-and-partners-to-deliver-a-modern-desktop-microsoft-managed-desktop/
       title: "[Blog] Collaborating with customers and partners to deliver a modern desktop"
       image:
-        src: https://docs.microsoft.com/en-us/media/common/i_architecture.svg
+        src: https://docs.microsoft.com/media/common/i_architecture.svg
     - href: https://www.cio.com/article/3307121/systems-management/microsoft-managed-desktop-all-your-windows-10-devices-managed-by-microsoft.html
       title: "[Article] Microsoft Managed Desktop: All your Windows 10 devices, managed by Microsoft"
       image:
-        src: https://docs.microsoft.com/en-us/media/common/i_guide.svg
+        src: https://docs.microsoft.com/media/common/i_guide.svg
 - title: Videos
   items:
   - type: markdown
