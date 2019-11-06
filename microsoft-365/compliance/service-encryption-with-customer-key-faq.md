@@ -34,7 +34,7 @@ SharePoint Online site content and the files stored on that site and files uploa
 ## What Office 365 data at rest is not covered by Customer Key?
 <a name="WhatDataIsNotCoveredbyCustomerKey"> </a>
 
-Customer Key is only used to encrypt files, it does not encrypt any other SharePoint Online content such as metadata in documents and libraries, data in lists except attachments, data stored in user profile, data stored in search index, data stored in other services such as Planner, Stream, Delve, Microsoft Teams, Yammer etc.
+Customer Key is only used to encrypt files. It does not encrypt any other SharePoint Online content such as metadata in documents and libraries, data in lists except attachments, data stored in user profiles, data stored in search indices, and data stored in other services such as Planner, Stream, Delve, Microsoft Teams, Yammer, etc.
   
 ## What is the difference between Customer Key and Bring Your Own Key (BYOK) with Azure Information Protection for Exchange Online?
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
