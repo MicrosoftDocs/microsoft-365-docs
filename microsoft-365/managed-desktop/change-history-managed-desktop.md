@@ -14,6 +14,20 @@ ms.localizationpriority: normal
 
 This topic lists new and updated topics in the [Microsoft Managed Desktop documentation](index.yml). "Updated" topics are those which have had material additions or corrections--minor fixes such as correction of typos, style, or formatting issues are not listed. You can always view the history of specific commits (including details of any changes) by visiting the [repo on GitHub](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop).
 
+## October 2019
+New or changed topic | Description
+--- | ---
+[Exemptions to the service plan](service-description/customizing.md) | New topic
+[Getting help for end users](working-with-managed-desktop/end-user-support.md) | Updated topic
+[Admin support for Microsoft Managed Desktop](working-with-managed-desktop/admin-support.md) | Updated topic
+[Service changes and communication](service-description/servicechanges.md) | New topic
+[Register new devices yourself](get-started/register-devices-self.md) | Updated topic
+[Register existing devices yourself](get-started/register-reused-devices-self.md) | Updated topic
+[Microsoft Managed Desktop supported regions and languages](service-description/regions-languages.md) | Updated topic
+
+
+
+
 ## September 2019
 New or changed topic | Description
 --- | ---
