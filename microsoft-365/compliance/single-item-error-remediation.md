@@ -19,11 +19,11 @@ description: "You can fix a processing error directory in a review set in Advanc
 
 # Single item error remediation
 
-Error remediation gives Advanced eDiscovery users the ability to rectify data issues that prevent Advanced eDiscovery from properly processing the content. For example, files that are password protected can't be processed because those files are locked or encrypted. Previously, you could only remediate errors in bulk by using [this workflow](error-remediation-when-processing-data-in-advanced-ediscovery.md). But sometimes, it doesn't make sense to remediate errors in multiple files when you’re unsure if any of those files are responsive to the case you’re investigating. It also might not make sense to remediate errors before you’ve had a chance to review the file metadata (such as file location or who had access) to help you make up-front decisions about responsiveness. Now, a new feature called *single item error remediation* gives eDiscovery managers the ability to view the metadata of files with a processing error and if necessary remediate the error directly in the review set. The article discusses how to identify, ignore, and remediate files with processing errors in a review set.
+Error remediation gives Advanced eDiscovery users the ability to rectify data issues that prevent Advanced eDiscovery from properly processing the content. For example, files that are password protected can't be processed because those files are locked or encrypted. Previously, you could only remediate errors in bulk by using [this workflow](error-remediation-when-processing-data-in-advanced-ediscovery.md). But sometimes, it doesn't make sense to remediate errors in multiple files when you’re unsure if any of those files are responsive to the case you’re investigating. It also might not make sense to remediate errors before you’ve had a chance to review the file metadata (such as file location or who had access) to help you make up-front decisions about responsiveness. A new feature called *single item error remediation* gives eDiscovery managers the ability to view the metadata of files with a processing error and if necessary remediate the error directly in the review set. The article discusses how to identify, ignore, and remediate files with processing errors in a review set.
 
 ## Identify documents with errors
 
-Documents with processing errors in a review set are now identified (with a banner). You can remediate or ignore the error. Because the file is identified, you can also view the file metadata. The following screenshot shows the processing error banner for a Word document in a review set that is password-protected.
+Documents with processing errors in a review set are now identified (with a banner). You can remediate or ignore the error. Because the file is identified by the banner, you can also view the file metadata. The following screenshot shows the processing error banner for a Word document in a review set that is password-protected.
 
 ![Banner displayed for document with processing error](media/SIERimage1.png)
 
@@ -55,19 +55,21 @@ To remediate a single document, follow these steps:
 
 3. In the review set, select the file with the processing error that you remediated, and then  click **Remediation**.
 
-   ![Click Remediation in the banner of the document with processing error ](media/SIERimage6.png)
+   ![Click Remediation in the banner of the document with processing error](media/SIERimage6.png)
 
 
 4. Click **Browse**, go to the location of the remediated file on your local computer, and then select the file.
 
-   ![image7](media/SIERimage7.png)
+   ![Click Browse and select the remediated file on your local computer](media/SIERimage7.png)
 
     After selecting the remediated file, it is automatically uploaded to the review set. You can track the processing status of the file.
 
-    ![image8](media/SIERimage8.png)
+    ![The status of the remediation process is displayed](media/SIERimage8.png)
 
    After processing is completed, you can view the remediated document.
 
-You can search for all documents in a review set that were remediated by using the Keywords condition and specifying the following property:value pair: **IsFromErrorRemediation:true**. This property is also available in the export load file when you export documents from a review set.
+    ![You can view the remediated file in the native format in the review set](media/SIERimage9.png)
 
-For more information about what happens when a document is remediated and how a remediated file is displayed in a review set, see [What happens when files are remediated](error-remediation.md#what-happens-when-files-are-remediated).
+You can search for all documents in a review set that were remediated by using the **Keywords** condition and specifying the following property:value pair: **IsFromErrorRemediation:true**. This property is also available in the export load file when you export documents from a review set.
+
+For more information about what happens when a document is remediated, see [What happens when files are remediated](error-remediation.md#what-happens-when-files-are-remediated).
