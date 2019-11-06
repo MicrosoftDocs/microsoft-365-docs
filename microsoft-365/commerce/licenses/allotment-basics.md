@@ -18,7 +18,7 @@ description: "Learn about the new allotments feature."
 
 License allotments let you set license limits and delegate management of license assignment to only the products and license limits that you select.
 
-Allotments use group-based licensing to assign licenses to your users. License limits provide added control over how many licenses are assigned to the users in your groups. So even as the number of users in your groups increases, you can ensure that you stay within the license limit that you have set for your organization.
+Allotments use group-based licensing to assign licenses to your users. License limits provide added control over how many licenses are assigned to the users in your groups. So even as the number of users in your groups increases, you can ensure that you stay within the license limit that you have set for your allotment.
 
 You can also delegate management of your allotments. Delegated allotment owners gain access to the admin center, but can only see and manage the licenses in the allotments they own. This provides more granular delegation of license management within your organization.
 
