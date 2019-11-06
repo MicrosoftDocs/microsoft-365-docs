@@ -24,7 +24,7 @@ You can also delegate management of your allotments. Delegated allotment owners 
 
 ## Prerequisites
 
-You must meet the licensing requirements for [group-based licensing](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal#licensing-requirements).
+You must meet the licensing requirements for [group-based licensing](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal#licensing-requirements).
 
 You can use allotments with any Office 365 product available to users:
 
