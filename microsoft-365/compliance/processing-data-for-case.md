@@ -21,11 +21,12 @@ description: ""
 
 Processing is the process of file identification, expansion of embedded documents and attachments, text extraction, OCR (Optical Character Recognition) of image files and indexing of that content.  
 
-When a custodian is added to the case from the **Custodians** tab, all partially indexed items from Office 365 are processed to make them fully searchable.  Likewise, when content is added to a review set from Office 365 data sources or non-Office 365 data sources, the content is also processed.
+When you add a custodian to a case on the **Custodians** tab, all partially indexed items from Office 365 are processed to make them fully searchable. Likewise, when content is added to a review set from both Office 365 and  non-Office 365 data sources, this content is also processed.
 
-The **Processing** tab in Advanced eDiscovery provides transparency into the status of *Advanced Indexing* for all of these scenarios.
+The **Processing** tab in Advanced eDiscovery provides insight into the status of advanced indexing for different processing scenarios.
 
-See the following articles for more details.
+For more information, see the following articles:
 
 - [Advanced indexing of custodian data](indexing-custodian-data.md)
 - [Error remediation when processing data](error-remediation.md)
+- [Single item error remediation](single-item-error-remediation.md)

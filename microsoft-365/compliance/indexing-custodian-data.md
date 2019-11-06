@@ -35,7 +35,7 @@ After the Advanced indexing process is completed, you can get an understanding o
 The graph also includes the number of items that require remediation and another graph of errors by file type. For more information, see:
 
 - [Error remediation when processing data](error-remediation.md)
-- [Single item error remediation](singleitemerrorremediation.md)
+- [Single item error remediation](single-item-error-remediation.md)
 
 ## Updating Advanced indexes for custodians
 
