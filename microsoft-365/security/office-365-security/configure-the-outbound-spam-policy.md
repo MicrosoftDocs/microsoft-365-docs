@@ -60,7 +60,7 @@ Use the following procedure to edit the default outbound spam policy:
 
 4. Expand the **Recipient limits** section to specify the maximum number of recipients that a user can send to, per hour for internal and external recipients together with the maximum number per day.
 
-    [NOTE!] The maximum number for any input is 10,000.  For more information see [receiving and sending limits within Exchange online](https://docs.microsoft.com/en-us/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits)
+    [NOTE!] The maximum number for any input is 10,000.  For more information see [receiving and sending limits within Exchange online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits)
 
 7. Specify the **action** to take when a user exceeds the specified limits.  The actions that are possible are as follows:
     * **Restrict the user from sending mail till the following day**.  Once any sending limit has been exceeded (internal, external or daily) an alert will be generated for the admin and the user will be unable to send any further email until the following day, based on UTC time. There is no way for the administrator to override this block.
@@ -100,7 +100,7 @@ Use the following procedure to edit the default outbound spam policy:
 
 ## For more information
 
-[Removing a user from the Restricted Users portal after sending spam email](https://docs.microsoft.com/en-us/office365/SecurityCompliance/removing-user-from-restricted-users-portal-after-spam)
+[Removing a user from the Restricted Users portal after sending spam email](https://docs.microsoft.com/office365/SecurityCompliance/removing-user-from-restricted-users-portal-after-spam)
 
 [High-risk delivery pool for outbound messages](high-risk-delivery-pool-for-outbound-messages.md)
 

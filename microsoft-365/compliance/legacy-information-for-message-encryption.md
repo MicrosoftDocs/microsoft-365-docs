@@ -86,7 +86,7 @@ The following example shows a custom logo for ContosoPharma in the email attachm
   
 1. Connect to Exchange Online using Remote PowerShell, as described in [Connect to Exchange Online Using Remote PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-exchange-online-tenants-with-remote-windows-powershell-for-delegated).
 
-2. Use the Set-OMEConfiguration cmdlet as described here: [Set-OMEConfiguration](http://technet.microsoft.com/en-us/3ef0aec0-ce28-411d-abe8-7236f082af1b) or use the following table for guidance.
+2. Use the Set-OMEConfiguration cmdlet as described here: [Set-OMEConfiguration](http://technet.microsoft.com/3ef0aec0-ce28-411d-abe8-7236f082af1b) or use the following table for guidance.
 
    **Encryption customization options**
 
@@ -99,7 +99,7 @@ The following example shows a custom logo for ContosoPharma in the email attachm
 
  **To remove brand customizations from encryption email messages and the encryption portal**
   
-1. Connect to Exchange Online using Remote PowerShell, as described in [Connect to Exchange Online Using Remote PowerShell](http://technet.microsoft.com/en-us/library/jj984289%28v=exchg.150%29.aspx).
+1. Connect to Exchange Online using Remote PowerShell, as described in [Connect to Exchange Online Using Remote PowerShell](http://technet.microsoft.com/library/jj984289%28v=exchg.150%29.aspx).
 
 2. Use the Set-OMEConfiguration cmdlet as described here: [Set-OMEConfiguration](http://technet.microsoft.com/3ef0aec0-ce28-411d-abe8-7236f082af1b). To remove your organization's branded customizations from the DisclaimerText, EmailText, and PortalText values, set the value to an empty string,  `""`. For all image values, such as Logo, set the value to  `"$null"`.
 
@@ -130,7 +130,7 @@ The following table provides technical details for the Office 365 Message Encryp
 ## Frequently Asked Questions about legacy OME
 <a name="LegacyServiceInfo"> </a>
 
-Got questions about Office 365 Message Encryption? Here are some answers. If you can't find what you need, check the Office 365 community forums at [Office 365 community](http://community.office365.com/en-us/forums/default.aspx).
+Got questions about Office 365 Message Encryption? Here are some answers. If you can't find what you need, check the Office 365 community forums at [Office 365 community](http://community.office365.com/forums/default.aspx).
   
  **Q. My users send encrypted email messages to recipients outside our organization. Is there anything that external recipients have to do in order to read and reply to email messages that are encrypted with Office 365 Message Encryption?**
   

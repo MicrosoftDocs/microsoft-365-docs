@@ -119,12 +119,12 @@ Steps for mailboxes that are on an Exchange server
 
 1. Connect to the Exchange server using remote PowerShell. Follow the steps in [Connect to Exchange servers using remote PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-server/connect-to-exchange-servers-using-remote-powershell?view=exchange-ps).
 2. If you want to completely remove a single rule, multiple rules, or all rules from a mailbox use the [Remove-Inbox Rule cmdlet](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Remove-InboxRule?view=exchange-ps)- use this to completely remove one, multiple, or all rules from the mailbox.
-3. If you want to retain the rule and its contents for further investigation use the [Disable-InboxRule cmdlet](https://technet.microsoft.com/en-us/library/dd298120(v=exchg.160).aspx). 
+3. If you want to retain the rule and its contents for further investigation use the [Disable-InboxRule cmdlet](https://technet.microsoft.com/library/dd298120(v=exchg.160).aspx). 
 
 Steps for mailboxes in Exchange Online
 1. Follow the steps in [Connect to Exchange Online using PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
 2.	If you want to completely remove a single rule, multiple rules, or all rules from a mailbox use the [Remove-Inbox Rule cmdlet](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Remove-InboxRule?view=exchange-ps).
-3.	If you want to retain the rule and its contents for further investigation use the [Disable-InboxRule cmdlet](https://technet.microsoft.com/en-us/library/dd298120(v=exchg.160).aspx). 
+3.	If you want to retain the rule and its contents for further investigation use the [Disable-InboxRule cmdlet](https://technet.microsoft.com/library/dd298120(v=exchg.160).aspx). 
 
 ## How to minimize future attacks
 
@@ -156,19 +156,19 @@ Here are the patch versions for your Outlook 2013 and 2016 clients:
 
 For more information on the individual security patches, see:
 
-- [Outlook 2013 Security Patch](https://support.microsoft.com/en-us/help/3191938) 
-- [Outlook 2016 Security Patch](https://support.microsoft.com/en-us/help/3191883)
+- [Outlook 2013 Security Patch](https://support.microsoft.com/help/3191938) 
+- [Outlook 2016 Security Patch](https://support.microsoft.com/help/3191883)
 
 ### Third: Monitor your Outlook clients
 Note that even with the patches and updates installed, it is possible for an attacker to change the local machine configuration to re-enable the “Start Application” behavior. You can use [Advanced Group Policy Management](https://docs.microsoft.com/microsoft-desktop-optimization-pack/agpm/) to monitor and enforce local machine policies on your clients.  
-You can to see if “Start Application” has been re-enabled through an override in the registry by using the information in [How to view the system registry by using 64-bit versions of Windows](https://support.microsoft.com/en-us/help/305097/how-to-view-the-system-registry-by-using-64-bit-versions-of-windows).  Check these subkeys: 
+You can to see if “Start Application” has been re-enabled through an override in the registry by using the information in [How to view the system registry by using 64-bit versions of Windows](https://support.microsoft.com/help/305097/how-to-view-the-system-registry-by-using-64-bit-versions-of-windows).  Check these subkeys: 
 
 - Outlook 2016: HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Security\
 - Outlook 2013: HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Outlook\Security\
 
 Look for the key EnableUnsafeClientMailRules. If it is there and is set to 1, the Outlook security patch has been overridden and the computer is vulnerable to the Form/Rules attack. If the value is 0, the “Start Application” action is disabled.  If the updated and patched version of Outlook is installed and this registry key is not present, then a system is not vulnerable to these attacks.
 
-Customers with on-premises Exchange installations should consider blocking older versions of Outlook that do not have patches available. Details on this process can be found in the article [Configure Outlook client blocking](https://technet.microsoft.com/en-us/library/dd335207(v=exchg.150).aspx).
+Customers with on-premises Exchange installations should consider blocking older versions of Outlook that do not have patches available. Details on this process can be found in the article [Configure Outlook client blocking](https://technet.microsoft.com/library/dd335207(v=exchg.150).aspx).
 
 ## Secure Office 365 like a cybersecurity pro
 Your Office 365 subscription comes with a powerful set of security capabilities that you can use to protect your data and your users.  Use the [Office 365 security roadmap: Top priorities for the first 30 days, 90 days, and beyond](https://support.office.com/article/Office-365-security-roadmap-Top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352) to implement Microsoft recommended best practices for securing your Office 365 tenant.

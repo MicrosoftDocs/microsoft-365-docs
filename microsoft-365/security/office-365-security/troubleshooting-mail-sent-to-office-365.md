@@ -103,7 +103,7 @@ You received the NDR because suspicious activity has been detected from the IP a
 
 ### I can't receive email from senders in Office 365
 
- In order to receive messages from our users, make sure your network allows connections from the IP addresses that EOP uses in our datacenters. For more information, see [Exchange Online Protection IP addresses](https://docs.microsoft.com/en-us/office365/enterprise/urls-and-ip-address-ranges).
+ In order to receive messages from our users, make sure your network allows connections from the IP addresses that EOP uses in our datacenters. For more information, see [Exchange Online Protection IP addresses](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges).
 
 ## Best practices for bulk emailing to Office 365 users
 
