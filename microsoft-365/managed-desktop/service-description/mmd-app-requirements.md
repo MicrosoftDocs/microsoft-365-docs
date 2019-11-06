@@ -33,7 +33,7 @@ Certain application types are not permitted on Microsoft Managed Desktop devices
 
 ## Restricted app behaviors
 
-Certain app behaviors can negatively impact the user experience or may present a security risk to Microsoft Managed Desktop devices. Apps with the following behaviors are not permitted to run in the Microsoft Managed Desktop environment without a specific exemption from Microsoft.
+Certain app behaviors can negatively impact the user experience or may present a security risk to Microsoft Managed Desktop devices. Apps with the following behaviors are not permitted to run in the Microsoft Managed Desktop environment without a specific  from Microsoft.
 
 User Experience:
 - Install background services
@@ -53,5 +53,5 @@ Security:
 
 Microsoft Managed Desktop only supports device drivers that are available through Windows Update or installed inbox with the Microsoft Managed Device. 
 
-If an application requires a specific driver(s) to run it is considered a Restricted Application and requires an exemption to be deployed to Microsoft Managed Desktop. 
+If an application requires a specific driver(s) to run it is considered a Restricted Application and requires an  to be deployed to Microsoft Managed Desktop. 
 
