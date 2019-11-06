@@ -130,7 +130,7 @@ Steps for mailboxes in Exchange Online
 
 ### First: protect your accounts
 
-The Rules and Forms exploits are only used by an attacker after they have stolen or breached one of your user’s accounts. So, your first step to preventing the use of these exploits against your organization is to aggressively protect your user accounts.  Some of the most common ways that accounts are breached are through phishing or [password spraying](http://www.dabcc.com/microsoft-defending-against-password-spray-attacks/) attacks.
+The Rules and Forms exploits are only used by an attacker after they have stolen or breached one of your user’s accounts. So, your first step to preventing the use of these exploits against your organization is to aggressively protect your user accounts.  Some of the most common ways that accounts are breached are through phishing or [password spraying](https://www.dabcc.com/microsoft-defending-against-password-spray-attacks/) attacks.
 
 
 
