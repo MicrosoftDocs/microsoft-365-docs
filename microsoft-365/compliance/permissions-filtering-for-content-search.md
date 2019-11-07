@@ -20,7 +20,7 @@ description: "Use Content Search permissions filtering to let an eDiscovery mana
 
 # Configure permissions filtering for Content Search
 
-You can use search permissions filtering to let an eDiscovery manager search only a subset of mailboxes and sites in your Office 365 organization. You can also use permissions filtering to let that same eDiscovery manager search only for mailbox or site content that meets a specific search criteria. For example, you might let an eDiscovery manager search only the mailboxes of users in a specific location or department. You do this by creating a filter that uses a supported recipient filter to limit which mailboxes a specific user or group of users can search. You can also create a filter that specifies what mailbox content can be searched. This is done by creating a filter that uses a searchable message property. Similarly, you can let an eDiscovery manager search only specific SharePoint sites in your organization. You do this by creating a filter that limits which site can be searched. You can also create a filter that specifies what site content can be searched. This is done by creating a filter that uses a searchable site property.
+You can use search permissions filtering to let an eDiscovery manager search only a subset of mailboxes and sites in your Office 365 organization. You can also use permissions filtering to let that same eDiscovery manager search only for mailbox or site content that meets a specific search criteria. For example, you might let an eDiscovery manager search only the mailboxes of users in a specific location or department. You do this by creating a filter that uses a supported recipient filter to limit which mailboxes a specific user or group of users can search. You can also create a filter that specifies what mailbox content a user can search for. This is done by creating a filter that uses a searchable message property. Similarly, you can let an eDiscovery manager search only specific SharePoint sites in your organization. You do this by creating a filter that limits which site can be searched. You can also create a filter that specifies what site content can be searched. This is done by creating a filter that uses a searchable site property.
 
 You can also use search permissions filtering to create logical boundaries (called *compliance boundaries*) within an Office 365 organization that control the user content locations (such as mailboxes, SharePoint sites, and OneDrive accounts) that specific eDiscovery managers can search. For more information, see [Set up compliance boundaries for eDiscovery investigations in Office 365](tagging-and-assessment-in-advanced-ediscovery.md).
   
@@ -36,7 +36,7 @@ Search permissions filtering is supported by the Content Search feature in the S
 
 ## Before you begin
 
-- To run the compliance security filter cmdlets, you have to be a member of the Organization Management role group in the Security & Compliance Center. For more information, see [Permissions in the Security & Compliance Center](/security/office-365-security/protect-against-threats.md).
+- To run the compliance security filter cmdlets, you have to be a member of the Organization Management role group in the Security & Compliance Center. For more information, see [Permissions in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
     
 - You have to connect Windows PowerShell to both the Security & Compliance Center and to your Exchange Online organization to use the compliance security filter cmdlets. This is necessary because these cmdlets require access to mailbox properties, which is why you have to connect to Exchange Online. See the steps in the next section. 
     
@@ -73,7 +73,7 @@ If you receive errors, check the following requirements:
   
 - A common problem is an incorrect password. Run the two steps again and pay close attention to the user name and password you enter in Step 1.
     
-- Verify that your account has permission to access the Security & Compliance Center. For details, see [Give users access to the Security & Compliance Center](/security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
+- Verify that your account has permission to access the Security & Compliance Center. For details, see [Give users access to the Security & Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
     
 - To help prevent denial-of-service (DoS) attacks, you're limited to three open remote PowerShell connections to the Security & Compliance Center.
     
