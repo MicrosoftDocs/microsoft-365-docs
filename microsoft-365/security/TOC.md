@@ -3,6 +3,7 @@
 ## Get started
 ### [Microsoft 365 Security for BDMs](Microsoft-365-security-for-bdm.md)
 ### [Secure Score](./mtp/microsoft-secure-score.md)
+### [Secure Score (preview)](./mtp/microsoft-secure-score-preview.md)
 ### [Chief Information Security Officer (CISO) workshop training](./office-365-security/ciso-workshop.md)
 #### [Module 1 - Microsoft cybersecurity briefing](./office-365-security/ciso-workshop-module-1.md)
 #### [Module 2 - Security management](./office-365-security/ciso-workshop-module-2.md)
