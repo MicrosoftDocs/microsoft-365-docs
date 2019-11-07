@@ -86,7 +86,7 @@ During the completion of this step (by following the step-by-step instructions),
 
 Also, you upload the SampleConnector.zip file (that you downloaded in Step 1) in this step to deploy the source code for the Twitter connector app.
 
-After completing this step, be sure to copy the Azure app service URL (for example, https://twitterconnector.azurewebsites.net). You need to use this to complete Step 5, Step 6, and Step 7).
+After completing this step, be sure to copy the Azure app service URL (for example, `https://twitterconnector.azurewebsites.net`). You need to use this to complete Step 5, Step 6, and Step 7).
 
 ## Step 5: Create developer app on Twitter
 
@@ -115,7 +115,7 @@ During the completion of this step (by following the step-by-step instructions),
 - Twitter Access Token Secret (obtained in Step 5)
 - Azure Active Directory application ID (the AAD application ID obtained in Step 2)
 - Azure Active Directory application secret (the AAD application secret obtained in Step 2)
-- Azure Active Directory application Uri (the AAD application Uri obtained in Step 2; for example, https://microsoft.onmicrosoft.com/2688yu6n-12q3-23we-e3ee-121111123213)
+- Azure Active Directory application Uri (the AAD application Uri obtained in Step 2; for example, `https://microsoft.onmicrosoft.com/2688yu6n-12q3-23we-e3ee-121111123213)`
 
 ## Step 7: Set up a custom connector in the Security & Compliance Center
 
@@ -125,5 +125,5 @@ For step-by-step instructions, see [Step 7: Set up a custom connector in the sec
 
 During the completion of this step (by following the step-by-step instructions), you'll provide the following information (that you've copied to a text file after completing the steps).
 
-- Azure app service URL (obtained in Step 4; for example, https://twitterconnector.azurewebsites.net)
+- Azure app service URL (obtained in Step 4; for example, `https://twitterconnector.azurewebsites.net`)
 - APISecretKey (that you created in Step 4)
