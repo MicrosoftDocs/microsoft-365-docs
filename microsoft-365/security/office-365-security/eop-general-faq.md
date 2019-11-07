@@ -58,7 +58,7 @@ A. Office 365 is the name given to a collection of products and services that ma
   
 A. The Microsoft 365 admin center will have some of this information. If you are impacted by a Service Level Event then you should see a communication alert (typically accompanied by a bell icon) after signing in to the Microsoft 365 admin center. We recommend that you read and act on any items as appropriate.
   
-Regarding new EOP features, the [Office 365 for business roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=O365) is a good resource for finding out information about upcoming new features. We'll also be posting blog articles about new features to the [Microsoft 365 Blogs](https://www.microsoft.com/en-us/microsoft-365/blog/) website.
+Regarding new EOP features, the [Office 365 for business roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=O365) is a good resource for finding out information about upcoming new features. We'll also be posting blog articles about new features to the [Microsoft 365 Blogs](https://www.microsoft.com/microsoft-365/blog/) website.
   
 **Q. Does the service work with legacy Exchange versions (such as Exchange Server 2010) and non-Exchange environments?**
   

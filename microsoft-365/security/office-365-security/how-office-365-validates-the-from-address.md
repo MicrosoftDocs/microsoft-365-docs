@@ -222,6 +222,6 @@ For more information on how you can strengthen your organization against cybercr
   
 ## Related Topics
 
-[Backscatter messages and EOP](https://technet.microsoft.com/en-us/library/dn499795%28v=exchg.150%29.aspx)
+[Backscatter messages and EOP](https://technet.microsoft.com/library/dn499795%28v=exchg.150%29.aspx)
   
 

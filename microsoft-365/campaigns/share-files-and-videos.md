@@ -57,7 +57,7 @@ To share a secure link with a guest, without using Microsoft Teams, follow these
 
 To create and share videos, follow these steps.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWrv0F]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWrv0F]
 
 Download an infographic in [PDF](https://go.microsoft.com/fwlink/?linkid=2079435) or [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079438) to get a quick overview of ways to share your files.
 

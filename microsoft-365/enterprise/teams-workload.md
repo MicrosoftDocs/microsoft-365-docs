@@ -58,8 +58,8 @@ See the [Getting started with your Microsoft Teams upgrade](https://docs.microso
 
 To peek inside Microsoft and learn how we deployed and are using Teams for collaboration, see:
 
-- [Microsoft Teams adoption strategy prepares employees for a new culture of work](https://www.microsoft.com/en-us/itshowcase/microsoft-teams-adoption-strategy-prepares-employees-for-a-new-culture-of-work)
-- [With Microsoft Teams Rooms, comes a globally scalable modern meeting experience](https://www.microsoft.com/en-us/itshowcase/with-microsoft-teams-rooms-comes-a-globally-scalable-modern-meeting-experience)
+- [Microsoft Teams adoption strategy prepares employees for a new culture of work](https://www.microsoft.com/itshowcase/microsoft-teams-adoption-strategy-prepares-employees-for-a-new-culture-of-work)
+- [With Microsoft Teams Rooms, comes a globally scalable modern meeting experience](https://www.microsoft.com/itshowcase/with-microsoft-teams-rooms-comes-a-globally-scalable-modern-meeting-experience)
 
 ## Next steps
 

@@ -31,7 +31,7 @@ conceptualContent:
         - url: https://www.microsoft.com/microsoft-365/partners/resources/microsoft-365-business-licensing-deck
           itemType: overview
           text: Compare plans (English Only)
-        - url: https://docs.microsoft.com/en-us/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description
+        - url: https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description
           itemType: reference
           text: Service description
         - url: support/microsoft-365-business-faqs.md
@@ -86,13 +86,13 @@ conceptualContent:
  # Card
     - title: Manage threats
       links:
-        - url: https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/office-365-atp
+        - url: https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp
           itemType: overview
           text: Office 365 Advanced Threat Protection
         - url: set-up-mfa.md
           itemType: how-to-guide
           text: Set up MFA
-        - url: https://docs.microsoft.com/en-us/microsoft-365/business/increase-threat-protection#protect-against-ransomware
+        - url: https://docs.microsoft.com/microsoft-365/business/increase-threat-protection#protect-against-ransomware
           itemType: how-to-guide
           text: Protect against ransomware
         - url: https://docs.microsoft.com/azure/active-directory/conditional-access/overview
@@ -133,7 +133,7 @@ conceptualContent:
         - url: reset-devices-to-factory-settings.md
           itemType: how-to-guide
           text: Wipe and reset
-        - url: https://docs.microsoft.com/en-us/intune/index
+        - url: https://docs.microsoft.com/intune/index
           itemType: overview
           text: Intune
         - url: manage-windows-devices.md
