@@ -136,7 +136,7 @@ The following apps and services support the sensitivity labels in this preview:
 
 - Microsoft 365 compliance center
 - SharePoint
-- Outlook Web App
+- Outlook on the web
 - Teams
 - SharePoint admin center
 - Azure AD admin center
