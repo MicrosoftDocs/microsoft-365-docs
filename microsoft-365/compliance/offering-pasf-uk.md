@@ -17,7 +17,7 @@ hideEdit: true
 
 ## About PASF
 
-The National Policing Information Risk Management Team (NPIRMT) of the UK Home Office (the ministry responsible for security, immigration, and law and order) is charged with ensuring that the storage of and access to police information meet its standards. Through the [National Policing Information Risk Management Policy](http://library.college.police.uk/docs/APP-National-Policing-Information-Risk-Management-Policy.pdf), it sets the central standards and controls for law enforcement agencies across the UK that are assessing the risk of moving police information systems to the cloud. The policy requires that all national police services in the UK that store and process protectively marked or other sensitive law enforcement information take an extra step in their risk assessment: a physical inspection of the datacenter where their data will be stored. The successful assessment of a datacenter determines that it is PASF.
+The National Policing Information Risk Management Team (NPIRMT) of the UK Home Office (the ministry responsible for security, immigration, and law and order) is charged with ensuring that the storage of and access to police information meet its standards. Through the [National Policing Information Risk Management Policy](https://library.college.police.uk/docs/APP-National-Policing-Information-Risk-Management-Policy.pdf), it sets the central standards and controls for law enforcement agencies across the UK that are assessing the risk of moving police information systems to the cloud. The policy requires that all national police services in the UK that store and process protectively marked or other sensitive law enforcement information take an extra step in their risk assessment: a physical inspection of the datacenter where their data will be stored. The successful assessment of a datacenter determines that it is PASF.
 
 To assist local police services with their due-diligence review, the NPIRMT performed a PASF audit of Azure datacenters and has determined that they are compliant. Local police services can use this NPIRMT assessment to support their own review. Using the NPIRMT policy guidelines, the senior information risk owner for each police service is responsible for assessing the suitability of an individual datacenter in the context of their particular application, which they then submit to the NPIRMT for approval.
 
@@ -51,7 +51,7 @@ Yes. Law enforcement can use the NPIRMT assessment of Azure to support their own
 
 ## Resources
 
-- [National Policing Accreditation Policy](http://library.college.police.uk/docs/APP-National-Policing-Accreditation-Policy-2013.pdf)
+- [National Policing Accreditation Policy](https://library.college.police.uk/docs/APP-National-Policing-Accreditation-Policy-2013.pdf)
 - [Azure facilities, premises, and physical security](https://azure.microsoft.com/blog/azure-layered-approach-to-physical-security/)
 - [Microsoft and ISO/IEC 27001:2013 ISM Standards](offering-iso-27001.md)
 - [Microsoft Online Services Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)

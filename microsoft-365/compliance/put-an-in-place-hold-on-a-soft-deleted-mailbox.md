@@ -40,7 +40,7 @@ You might have a situation where a person has left your organization, and their 
     
 ## Put an In-Place Hold on a soft-deleted mailbox to make it an inactive mailbox
 
-Use the **New-MailboxSearch** cmdlet to make a soft-deleted mailbox an inactive mailbox. For more information, see [New-MailboxSearch](http://technet.microsoft.com/library/74303b47-bb49-407c-a43b-590356eae35c.aspx).
+Use the **New-MailboxSearch** cmdlet to make a soft-deleted mailbox an inactive mailbox. For more information, see [New-MailboxSearch](https://technet.microsoft.com/library/74303b47-bb49-407c-a43b-590356eae35c.aspx).
   
 1. Create a variable that contains the properties of the soft-deleted mailbox. 
     

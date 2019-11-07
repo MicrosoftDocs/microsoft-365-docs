@@ -14,7 +14,7 @@ description: "In-Place Hold, Litigation Hold, and Office 365 retention policies 
 
 # Preserve Bcc and expanded distribution group recipients for eDiscovery
   
-In-Place Hold, Litigation Hold, and [Office 365 retention policies](http://go.microsoft.com/fwlink/?LinkID=827811) (created in the Security & Compliance Center) allow you to preserve mailbox content to meet regulatory compliance and eDiscovery requirements. Information about recipients directly addressed in the To and Cc fields of a message is included in all messages by default, but your organization may require the ability to search for and reproduce details about all recipients of a message. This includes: 
+In-Place Hold, Litigation Hold, and [Office 365 retention policies](https://go.microsoft.com/fwlink/?LinkID=827811) (created in the Security & Compliance Center) allow you to preserve mailbox content to meet regulatory compliance and eDiscovery requirements. Information about recipients directly addressed in the To and Cc fields of a message is included in all messages by default, but your organization may require the ability to search for and reproduce details about all recipients of a message. This includes: 
   
 - **Recipients addressed using the Bcc field of a message** Bcc recipients are stored in the message in the sender's mailbox, but not included in headers of the message delivered to recipients. 
     
@@ -80,7 +80,7 @@ A. No. This information is not included in message headers, and isn't visible to
   
  **Q. How can I ensure expanded distribution group recipients are always preserved?**
   
-A. To ensure expanded distribution group members are always preserved with a message, [Place all mailboxes on hold](http://technet.microsoft.com/library/4c141604-3210-44cc-b98e-f3e0f15613b8.aspx) or create an organization-wide Office 365 retention policy. 
+A. To ensure expanded distribution group members are always preserved with a message, [Place all mailboxes on hold](https://technet.microsoft.com/library/4c141604-3210-44cc-b98e-f3e0f15613b8.aspx) or create an organization-wide Office 365 retention policy. 
   
  **Q. Which types of groups are supported?**
   

@@ -21,7 +21,7 @@ description: "Compare encryption options in Office 365 including Office Message 
 
 This article compares encryption options in Office 365 including Office Message Encryption (OME), S/MIME, Information Rights Management (IRM), and introduces Transport Layer Security (TLS).
   
-Office 365 delivers multiple encryption options to help you meet your business needs for email security. This article presents three ways to encrypt email in Office 365. If you want to learn more about all security features in Office 365, visit the [Office 365 Trust Center](http://go.microsoft.com/fwlink/p/?LinkID=282470). This article introduces the three types of encryption available for Office 365 administrators to help secure email in Office 365:
+Office 365 delivers multiple encryption options to help you meet your business needs for email security. This article presents three ways to encrypt email in Office 365. If you want to learn more about all security features in Office 365, visit the [Office 365 Trust Center](https://go.microsoft.com/fwlink/p/?LinkID=282470). This article introduces the three types of encryption available for Office 365 administrators to help secure email in Office 365:
   
 - Office Message Encryption (OME).
 

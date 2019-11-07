@@ -66,7 +66,7 @@ You can expect a smooth transition to the new centers. Eventually, the former Mi
 - Navigate directly to [https://security.microsoft.com](https://security.microsoft.com) and [https://compliance.microsoft.com](https://compliance.microsoft.com); <br>or  
 - Go to the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)), and navigate from there (in the navigation pane, click **Show all**, and then choose **Security** or **Compliance**).
 
-In addition, you can still configure and manage settings in the existing Office 365 Security & Compliance Center ([https://protection.office.com](http://protection.office.com)). Your configurations will be maintained in both the existing Office 365 Security & Compliance Center and in the new Microsoft 365 security center and Microsoft 365 compliance center.  
+In addition, you can still configure and manage settings in the existing Office 365 Security & Compliance Center ([https://protection.office.com](https://protection.office.com)). Your configurations will be maintained in both the existing Office 365 Security & Compliance Center and in the new Microsoft 365 security center and Microsoft 365 compliance center.  
 
 ## Required licenses and permissions
 
