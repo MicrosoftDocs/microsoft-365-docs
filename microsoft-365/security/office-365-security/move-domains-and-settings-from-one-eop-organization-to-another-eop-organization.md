@@ -46,7 +46,7 @@ In order to re-create the source organization in the target organization, make s
   > [!NOTE]
   > Cmdlet support for the export and import of the mail flow rule collection is currently only supported for EOP Premium subscription plans.
 
-The easiest way to collect all of your settings is to use PowerShell. To connect to Exchange Online Protection PowerShell, see [Connect to Exchange Online Protection PowerShell](http://technet.microsoft.com/library/054e0fd7-d465-4572-93f8-a00a9136e4d1.aspx).
+The easiest way to collect all of your settings is to use PowerShell. To connect to Exchange Online Protection PowerShell, see [Connect to Exchange Online Protection PowerShell](https://technet.microsoft.com/library/054e0fd7-d465-4572-93f8-a00a9136e4d1.aspx).
 
 Next, you can collect all your settings and export them to an .xml file to be imported into the target tenant. In general, you can pipe the output of the **Get** cmdlet for each setting to the **Export-Clixml** cmdlet to save the settings in .xml files, as shown in the following code sample.
 

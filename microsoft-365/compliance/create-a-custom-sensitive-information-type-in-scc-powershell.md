@@ -40,7 +40,7 @@ Here's the sample XML of the rule package that we'll create in this topic. Eleme
   
 ```xml
 <?xml version="1.0" encoding="UTF-16"?>
-<RulePackage xmlns="http://schemas.microsoft.com/office/2011/mce">
+<RulePackage xmlns="https://schemas.microsoft.com/office/2011/mce">
 <RulePack id="DAD86A92-AB18-43BB-AB35-96F7C594ADAA">
 	<Version build="0" major="1" minor="0" revision="0"/>
 	<Publisher id="619DD8C3-7B80-4998-A312-4DF0402BAC04"/>
@@ -317,7 +317,7 @@ The Version element is also important. When you upload your rule package for the
   
 ```xml
 <?xml version="1.0" encoding="utf-16"?>
-<RulePackage xmlns="http://schemas.microsoft.com/office/2011/mce">
+<RulePackage xmlns="https://schemas.microsoft.com/office/2011/mce">
   <RulePack id=". . .">
     <Version major="1" minor="0" build="0" revision="0" />
     <Publisher id=". . ." /> 
@@ -353,7 +353,7 @@ To upload your rule package, do the following steps:
   
 1. Save it as an .xml file with Unicode encoding.
     
-2. [Connect to Security & Compliance Center PowerShell](http://go.microsoft.com/fwlink/p/?LinkID=799771)
+2. [Connect to Security & Compliance Center PowerShell](https://go.microsoft.com/fwlink/p/?LinkID=799771)
     
 3. Use the following syntax:
 
@@ -444,7 +444,7 @@ In Security & Compliance Center PowerShell, there are two methods to remove cust
 
 - **Remove a custom rule package and all custom sensitive information types that it contains**: This method is documented in this section.
 
-1. [Connect to Security & Compliance Center PowerShell](http://go.microsoft.com/fwlink/p/?LinkID=799771)
+1. [Connect to Security & Compliance Center PowerShell](https://go.microsoft.com/fwlink/p/?LinkID=799771)
 
 2. To remove a custom rule package, use the [Remove-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/remove-dlpsensitiveinformationtyperulepackage?view=exchange-ps) cmdlet:
 
@@ -494,7 +494,7 @@ In Security & Compliance Center PowerShell, modifying a custom sensitive informa
 
 3. Import the updated XML file back into the existing rule package.
 
-To connect to Security & Compliance Center PowerShell, see [Connect to Security & Compliance Center PowerShell](http://go.microsoft.com/fwlink/p/?LinkID=799771).
+To connect to Security & Compliance Center PowerShell, see [Connect to Security & Compliance Center PowerShell](https://go.microsoft.com/fwlink/p/?LinkID=799771).
 
 #### Step 1: Export the existing rule package to an XML file
 
@@ -553,9 +553,9 @@ You can copy this markup, save it as an XSD file, and use it to validate your ru
   
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<xs:schema xmlns:mce="http://schemas.microsoft.com/office/2011/mce"
-           targetNamespace="http://schemas.microsoft.com/office/2011/mce" 
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+<xs:schema xmlns:mce="https://schemas.microsoft.com/office/2011/mce"
+           targetNamespace="https://schemas.microsoft.com/office/2011/mce" 
+           xmlns:xs="https://www.w3.org/2001/XMLSchema"
            elementFormDefault="qualified"
            attributeFormDefault="unqualified"
            id="RulePackageSchema">

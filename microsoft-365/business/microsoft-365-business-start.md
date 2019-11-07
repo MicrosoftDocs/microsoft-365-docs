@@ -35,7 +35,7 @@ Microsoft 365 Business is meant for up to 300 licenses, if you need more license
 
 - If you have a partner, they will get Microsoft 365 Business: [Get Microsoft 365 Business from Microsoft Partner Center](get-microsoft-365-business.md).
     
-- If you don't have a partner and want to get Microsoft 365 Business, you can [buy it here](https://www.microsoft.com/en-us/microsoft-365/business).
+- If you don't have a partner and want to get Microsoft 365 Business, you can [buy it here](https://www.microsoft.com/microsoft-365/business).
     
 ## Set up Microsoft 365 Business
 
