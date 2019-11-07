@@ -13,6 +13,7 @@ search.appverid:
 ms.collection: 
 - Ent_O365
 - Strat_O365_Enterprise
+- SPO_Content
 ms.custom:
 - Ent_Solutions
 ms.assetid: c9f837af-8d71-4df1-a285-dedb1c5618b3
