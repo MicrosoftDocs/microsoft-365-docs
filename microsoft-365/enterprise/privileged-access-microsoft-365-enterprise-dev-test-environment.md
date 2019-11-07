@@ -59,7 +59,7 @@ First, connect to Exchange Management PowerShell with the credentials of a user 
 
 2. In Exchange Management Powershell, create a new Journal rule for your organization:
 
-```Exchange Management PowerShell
+```ExchangeManagementPowerShell
 New-JournalRule -Name "JournalRule1" -Recipient joe@contoso.onmicrosoft.com -JournalEmailAddress barbara@adatum.com -Scope Global -Enabled $true
 ```
 
@@ -98,13 +98,13 @@ New-JournalRule -Name "JournalRule1" -Recipient joe@contoso.onmicrosoft.com -Jou
 
 2. In Exchange Management Powershell, create a new Journal rule for your organization:
 
-```Exchange Management PowerShell
+```ExchangeManagementPowerShell
 New-JournalRule -Name "JournalRule2" -Recipient user1@<your subscription domain> -JournalEmailAddress user1@<your subscription domain> -Scope Global -Enabled $true
 ```
 
 3. View "Insuffient permissions" error in Exchange Management PowerShell:
 
-```Exchange Management PowerShell
+```ExchangeManagementPowerShell
 Insufficient permissions. Please raise an elevated access request for this task.
     + CategoryInfo          : NotSpecified: (:) [], LocalizedException
     + FullyQualifiedErrorId : [Server=CY1PR00MB0220,RequestId=7b8c7470-ddd0-4528-a01e-5e20ecc9bd54,TimeStamp=9/19/2018
@@ -150,7 +150,7 @@ Insufficient permissions. Please raise an elevated access request for this task.
 
 2. In Exchange Management Powershell, create a new Journal rule for your organization:
 
-```Exchange Management PowerShell
+```ExchangeManagementPowerShell
 New-JournalRule -Name "JournalRule2" -Recipient user1@<your subscription domain> -JournalEmailAddress user1@<your subscription domain> -Scope Global -Enabled $true
 ```
 
