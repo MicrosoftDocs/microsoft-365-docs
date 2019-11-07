@@ -44,7 +44,7 @@ S:
 S: We need to verify your banking details.
 S: Please click the following link to verify that we have the right information for your account.
 S: 
-S: http://short.url/woodgrovebank/updateaccount/12-121.aspx
+S: https://short.url/woodgrovebank/updateaccount/12-121.aspx
 S:
 S: Thank you,
 S: Woodgrove Bank

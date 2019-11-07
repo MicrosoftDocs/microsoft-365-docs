@@ -30,7 +30,7 @@ Customize your Office 365 spam filter by adding the sender IP address to the con
     
 2. Search for the IP address following the CIP tag in the X-Forefront-Antispam-Report header using the [message header analyzer](https://testconnectivity.microsoft.com/?tabid=mha) or manually. 
     
-3. Add the IP address to the IP Block list by following the steps in "Use the EAC to edit the default connection filter policy" in [Configure the Connection Filter Policy](https://technet.microsoft.com/en-us/library/jj200718%28v=exchg.150%29.aspx).
+3. Add the IP address to the IP Block list by following the steps in "Use the EAC to edit the default connection filter policy" in [Configure the Connection Filter Policy](https://technet.microsoft.com/library/jj200718%28v=exchg.150%29.aspx).
     
 ### Block bulk mail with mail flow rules (transport rules) or the spam filter
 
@@ -40,7 +40,7 @@ Is the spam primarily bulk mail, for example, newsletters or promotions? You can
   
 ### Block email spam using spam filter block lists
 
-[Configure your spam filter policies](https://technet.microsoft.com/en-us/library/jj200684%28v=exchg.150%29.aspx) to add the sender address to the sender block list or domain to the domain block list in the spam filter. Emails from a sender or domain on a spam filter block list will marked as spam. 
+[Configure your spam filter policies](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) to add the sender address to the sender block list or domain to the domain block list in the spam filter. Emails from a sender or domain on a spam filter block list will marked as spam. 
   
 ## Email users can also help ensure that false negative and email spam is blocked with Office 365 spam filter
 
@@ -49,7 +49,7 @@ It will help your Office 365 anti-spam efforts to prevent false negatives and ju
 ![Blocking a sender in Outlook on the web](../media/fdf51381-2527-4819-ac2a-5dff84d2a36d.png)
   
 > [!NOTE]
-> For more detailed information about safe sender lists, see [Safe Sender and Blocked Sender Lists FAQ](https://technet.microsoft.com/en-us/library/dn133608%28v=exchg.150%29.aspx). 
+> For more detailed information about safe sender lists, see [Safe Sender and Blocked Sender Lists FAQ](https://technet.microsoft.com/library/dn133608%28v=exchg.150%29.aspx). 
   
 ## EOP-only customers: Set up directory synchronization
 
@@ -76,7 +76,7 @@ The EOP service is designed to honor the user's safe and blocked senders, if the
     Because the SCL is 0 in your on-premises Exchange server, non-spam will be delivered to your users' inboxes but still allow for users' local blocked senders list to send them to junk email. If you are using spam quarantine in EOP, it is still possible that senders who are on your user's safe list will be identified as spam and sent to quarantine. If you are using the Junk Mail Folder in your local mailbox, however, this will allow delivery to the Inbox for safe senders.
 
 > [!WARNING]
-> If you use a mail flow rule to change the SCL value to 0 (or any value other than -1), then all of the Outlook junk mail options will apply to the message. This means that blocked and safe lists will be honored, but also means that messages that do not have addresses from the blocked or safe lists will potentially be marked as junk by the client side junk mail filter processing. If you want to have Outlook process the blocked and safe lists, but not use the client side junk mail filter, you must set the option to "No Automatic Filtering" in Outlook Junk Mail Options. "No Automatic Filtering" is the default option in the latest versions of Outlook, but you should confirm that the this setting is in place to ensure the client side junk mail filter is not applied to the messages. As an administrator, you can enforce disabling the Outlook Junk Email filtering by following the instructions in [Outlook: Policy setting to disable the Junk E-mail UI and filtering mechanism](https://support.microsoft.com/en-us/kb/2180568).
+> If you use a mail flow rule to change the SCL value to 0 (or any value other than -1), then all of the Outlook junk mail options will apply to the message. This means that blocked and safe lists will be honored, but also means that messages that do not have addresses from the blocked or safe lists will potentially be marked as junk by the client side junk mail filter processing. If you want to have Outlook process the blocked and safe lists, but not use the client side junk mail filter, you must set the option to "No Automatic Filtering" in Outlook Junk Mail Options. "No Automatic Filtering" is the default option in the latest versions of Outlook, but you should confirm that the this setting is in place to ensure the client side junk mail filter is not applied to the messages. As an administrator, you can enforce disabling the Outlook Junk Email filtering by following the instructions in [Outlook: Policy setting to disable the Junk E-mail UI and filtering mechanism](https://support.microsoft.com/kb/2180568).
   
 ## See Also
 

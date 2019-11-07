@@ -25,7 +25,7 @@ description: "Learn how to use threat investigation and response capabilities to
 
 Make sure that the following requirements are met:
   
-- Your organization has [Office 365 Advanced Threat Protection](office-365-atp.md) and [licenses are assigned to users](https://docs.microsoft.com/en-us/office365/admin/subscriptions-and-billing/assign-licenses-to-users).
+- Your organization has [Office 365 Advanced Threat Protection](office-365-atp.md) and [licenses are assigned to users](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users).
     
 - [Office 365 audit logging](../../compliance/turn-audit-log-search-on-or-off.md) is turned on for your organization. 
     

@@ -59,7 +59,7 @@ When a message is incorrectly identified as junk by Office 365, submit a message
 
 [Learn about junk email and phishing](https://go.microsoft.com/fwlink/p/?LinkId=270068)
 
-[Junk email reporting add-in for Microsoft Outlook](https://docs.microsoft.com/en-us/office365/securitycompliance/junk-email-reporting-add-in-for-microsoft-outlook)
+[Junk email reporting add-in for Microsoft Outlook](https://docs.microsoft.com/office365/securitycompliance/junk-email-reporting-add-in-for-microsoft-outlook)
   
   
 

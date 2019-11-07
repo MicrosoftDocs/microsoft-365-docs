@@ -110,7 +110,7 @@ Microsoft differentiates between two different types of spoofing messages:
   
  **Intra-org spoofing**
   
-Also known as self-to-self spoofing, this occurs when the domain in the From: address is the same as, or aligns with, the recipient domain (when recipient domain is one of your organization's [Accepted Domains](https://technet.microsoft.com/en-us/library/jj945194%28v=exchg.150%29.aspx)); or, when the domain in the From: address is part of the same organization.
+Also known as self-to-self spoofing, this occurs when the domain in the From: address is the same as, or aligns with, the recipient domain (when recipient domain is one of your organization's [Accepted Domains](https://technet.microsoft.com/library/jj945194%28v=exchg.150%29.aspx)); or, when the domain in the From: address is part of the same organization.
   
 For example, the following has sender and recipient from the same domain (contoso.com). Spaces are inserted into the email address to prevent spambot harvesting on this page):
   
@@ -649,7 +649,7 @@ Microsoft's anti-spoofing technology was initially deployed to its organizations
   
 ### How can I report spam or non-spam messages back to Microsoft?
 
-You can either use the [Report Message Add-in for Outlook](https://support.office.com/article/use-the-report-message-add-in-b5caa9f1-cdf3-4443-af8c-ff724ea719d2), or if it isn't installed, [Submit spam, non-spam, and phishing scam messages to Microsoft for analysis](https://technet.microsoft.com/en-us/library/jj200769%28v=exchg.150%29.aspx).
+You can either use the [Report Message Add-in for Outlook](https://support.office.com/article/use-the-report-message-add-in-b5caa9f1-cdf3-4443-af8c-ff724ea719d2), or if it isn't installed, [Submit spam, non-spam, and phishing scam messages to Microsoft for analysis](https://technet.microsoft.com/library/jj200769%28v=exchg.150%29.aspx).
   
 ### I'm a domain administrator who doesn't know who all my senders are!
 
