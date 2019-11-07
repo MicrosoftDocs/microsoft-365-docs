@@ -101,7 +101,7 @@ When you run the script in this step, it will prompt you for the following infor
       }
   }
   # Load the SharePoint assemblies from the SharePoint Online Management Shell
-  # To install, go to http://go.microsoft.com/fwlink/p/?LinkId=255251
+  # To install, go to https://go.microsoft.com/fwlink/p/?LinkId=255251
   if (!$SharePointClient -or !$SPRuntime -or !$SPUserProfile)
   {
       $SharePointClient = [System.Reflection.Assembly]::LoadWithPartialName("Microsoft.SharePoint.Client")
@@ -109,7 +109,7 @@ When you run the script in this step, it will prompt you for the following infor
       $SPUserProfile = [System.Reflection.Assembly]::LoadWithPartialName("Microsoft.SharePoint.Client.UserProfiles")
       if (!$SharePointClient)
       {
-          Write-Error "SharePoint Online Management Shell isn't installed, please install from: http://go.microsoft.com/fwlink/p/?LinkId=255251 and then run this script again"
+          Write-Error "SharePoint Online Management Shell isn't installed, please install from: https://go.microsoft.com/fwlink/p/?LinkId=255251 and then run this script again"
           return;
       }
   }

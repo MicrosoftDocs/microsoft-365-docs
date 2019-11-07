@@ -139,6 +139,6 @@ Your Office 365 subscription comes with a powerful set of security capabilities 
 
 - [Security best practices for Office 365](https://support.office.com/article/Security-best-practices-for-Office-365-9295e396-e53d-49b9-ae9b-0b5828cdedc3)
 - [Detect and Remediate Outlook Rules and Custom Forms Injections Attacks in Office 365](/security/office-365-security/detect-and-remediate-outlook-rules-forms-attack.md)
-- [Internet Crime Complaint Center](http://www.ic3.gov/preventiontips.aspx)
-- [Securities and Exchange Commission - "Phishing" Fraud](http://www.sec.gov/investor/pubs/phishing.htm)
+- [Internet Crime Complaint Center](https://www.ic3.gov/preventiontips.aspx)
+- [Securities and Exchange Commission - "Phishing" Fraud](https://www.sec.gov/investor/pubs/phishing.htm)
 - To report spam email directly to Microsoft and your admin [Use the Report Message add-in](https://support.office.com/en-us/article/Use-the-Report-Message-add-in-b5caa9f1-cdf3-4443-af8c-ff724ea719d2)
