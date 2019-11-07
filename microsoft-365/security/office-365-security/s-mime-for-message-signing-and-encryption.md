@@ -73,4 +73,4 @@ S/MIME requires a certificate and publishing infrastructure that is often used i
 
 [Outlook on the web](https://technet.microsoft.com/library/3814b665-01e8-4881-9a44-163f14789ee4.aspx)
 
-[Secure Mail (2000)](https://technet.microsoft.com/en-us/library/cc962043.aspx)
+[Secure Mail (2000)](https://technet.microsoft.com/library/cc962043.aspx)

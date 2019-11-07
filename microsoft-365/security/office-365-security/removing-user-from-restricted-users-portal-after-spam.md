@@ -78,10 +78,10 @@ The PowerShell commands for Restricted Users are:
 
 [Responding to a compromised email account](../../compliance/responding-to-a-compromised-email-account.md)
 
-[Understanding the User restricted from sending email alert](https://docs.microsoft.com/en-us/office365/securitycompliance/alert-policies)
+[Understanding the User restricted from sending email alert](https://docs.microsoft.com/office365/securitycompliance/alert-policies)
 
 [High-risk delivery pool for outbound messages](high-risk-delivery-pool-for-outbound-messages.md)
 
 [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md)
 
-[Alert policies in the Security & Compliance Center](https://docs.microsoft.com/en-us/office365/securitycompliance/alert-policies)
+[Alert policies in the Security & Compliance Center](https://docs.microsoft.com/office365/securitycompliance/alert-policies)

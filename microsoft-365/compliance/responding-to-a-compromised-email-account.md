@@ -69,7 +69,7 @@ You must perform all the following steps to regain access to your account the so
 - If your on-premises identity is federated with Office 365, you must change your password on-premises, and then you must notify your administrator of the compromise.
 
 > [!TIP]
-> It is highly recommended that you enable Multi-Factor Authentication (MFA) in order to prevent compromise, especially for accounts with administrative privileges.  You can learn more [here](https://support.office.com/en-us/article/Set-up-multi-factor-authentication-for-Office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6).
+> It is highly recommended that you enable Multi-Factor Authentication (MFA) in order to prevent compromise, especially for accounts with administrative privileges.  You can learn more [here](https://support.office.com/article/Set-up-multi-factor-authentication-for-Office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6).
 
 ### Step 2 Remove suspicious email forwarding addresses
 

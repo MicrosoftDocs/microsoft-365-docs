@@ -61,7 +61,7 @@ Watch this video for an introduction to [Encryption in Office 365](https://www.y
 
 ## What encryption options are available for my Office 365 subscription?
 
-For information about email encryption options for your Office 365 subscription see the [Exchange Online service description](https://technet.microsoft.com/en-us/library/exchange-online-service-description.aspx). Here, you can find information about the following encryption features:
+For information about email encryption options for your Office 365 subscription see the [Exchange Online service description](https://technet.microsoft.com/library/exchange-online-service-description.aspx). Here, you can find information about the following encryption features:
   
 - Azure RMS, including both IRM capabilities and OME
 
@@ -87,7 +87,7 @@ For more information about the email encryption options in this article as well 
   
 **IRM**
   
-[Information Rights Management in Exchange Online](https://technet.microsoft.com/en-us/library/jj983436%28v=exchg.150%29.aspx)
+[Information Rights Management in Exchange Online](https://technet.microsoft.com/library/jj983436%28v=exchg.150%29.aspx)
   
 [What is Azure Rights Management?](https://technet.microsoft.com/library/jj585026)
   
@@ -101,4 +101,4 @@ For more information about the email encryption options in this article as well 
   
 **TLS**
   
-[Configure custom mail flow by using connectors in Office 365](https://technet.microsoft.com/en-us/library/jj723138%28v=exchg.150%29.aspx)
+[Configure custom mail flow by using connectors in Office 365](https://technet.microsoft.com/library/jj723138%28v=exchg.150%29.aspx)
