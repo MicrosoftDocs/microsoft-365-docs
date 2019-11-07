@@ -21,7 +21,7 @@ These downloadable hands-on labs focus on Windows 10 deployment and Office 365 d
 
 These labs are designed to help you plan, test and validate your deployment and management of desktops running Windows 10 Enterprise and Office 365 ProPlus. The labs cover the steps and tools outlined in the Desktop Deployment wheel, spanning System Center Configuration Manager, Desktop Analytics, Office Customization Tool, OneDrive, Windows Autopilot and more.
 
-As part of the [Desktop Deployment](http://www.aka.ms/howtoshift) process for Windows 10 and Office 365 ProPlus, building a sandboxed or isolated lab environment is the recommended starting point when you begin to explore deployment tool updates and test your deployment-related automation.
+As part of the [Desktop Deployment](https://www.aka.ms/howtoshift) process for Windows 10 and Office 365 ProPlus, building a sandboxed or isolated lab environment is the recommended starting point when you begin to explore deployment tool updates and test your deployment-related automation.
 
 The lab kit is free to download and uses trial software.
 
@@ -117,9 +117,9 @@ Detailed lab guides take you through multiple deployment and management scenario
 
 ## **Additional guidance**
 
-  - [Desktop Deployment Center](http://www.aka.ms/howtoshift)
+  - [Desktop Deployment Center](https://www.aka.ms/howtoshift)
 
-  - [Desktop Deployment series videos from Microsoft Mechanics](http://www.aka.ms/watchhowtoshift)
+  - [Desktop Deployment series videos from Microsoft Mechanics](https://www.aka.ms/watchhowtoshift)
 
   - [System Center Configuration Manager OS Deployment](https://docs.microsoft.com/sccm/osd/understand/introduction-to-operating-system-deployment)
 

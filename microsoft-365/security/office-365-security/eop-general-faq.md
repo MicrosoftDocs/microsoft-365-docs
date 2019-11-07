@@ -28,7 +28,7 @@ Here we answer the most common general questions about the Microsoft Exchange On
 
 - [Anti-malware protection FAQ](anti-malware-protection-faq-eop.md)
 
-- [Message Trace FAQ](http://technet.microsoft.com/library/aa49e3f9-a5b1-4410-aac2-ddbbf3f5bfb2.aspx)
+- [Message Trace FAQ](https://technet.microsoft.com/library/aa49e3f9-a5b1-4410-aac2-ddbbf3f5bfb2.aspx)
 
 **Q. What is EOP?**
   

@@ -86,7 +86,7 @@ The following example shows a custom logo for ContosoPharma in the email attachm
   
 1. Connect to Exchange Online using Remote PowerShell, as described in [Connect to Exchange Online Using Remote PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-exchange-online-tenants-with-remote-windows-powershell-for-delegated).
 
-2. Use the Set-OMEConfiguration cmdlet as described here: [Set-OMEConfiguration](http://technet.microsoft.com/3ef0aec0-ce28-411d-abe8-7236f082af1b) or use the following table for guidance.
+2. Use the Set-OMEConfiguration cmdlet as described here: [Set-OMEConfiguration](https://technet.microsoft.com/en-us/3ef0aec0-ce28-411d-abe8-7236f082af1b) or use the following table for guidance.
 
    **Encryption customization options**
 
@@ -99,9 +99,9 @@ The following example shows a custom logo for ContosoPharma in the email attachm
 
  **To remove brand customizations from encryption email messages and the encryption portal**
   
-1. Connect to Exchange Online using Remote PowerShell, as described in [Connect to Exchange Online Using Remote PowerShell](http://technet.microsoft.com/library/jj984289%28v=exchg.150%29.aspx).
+1. Connect to Exchange Online using Remote PowerShell, as described in [Connect to Exchange Online Using Remote PowerShell](https://technet.microsoft.com/en-us/library/jj984289%28v=exchg.150%29.aspx).
 
-2. Use the Set-OMEConfiguration cmdlet as described here: [Set-OMEConfiguration](http://technet.microsoft.com/3ef0aec0-ce28-411d-abe8-7236f082af1b). To remove your organization's branded customizations from the DisclaimerText, EmailText, and PortalText values, set the value to an empty string,  `""`. For all image values, such as Logo, set the value to  `"$null"`.
+2. Use the Set-OMEConfiguration cmdlet as described here: [Set-OMEConfiguration](https://technet.microsoft.com/3ef0aec0-ce28-411d-abe8-7236f082af1b). To remove your organization's branded customizations from the DisclaimerText, EmailText, and PortalText values, set the value to an empty string,  `""`. For all image values, such as Logo, set the value to  `"$null"`.
 
    **Encryption customization options**
 
@@ -120,9 +120,9 @@ The following table provides technical details for the Office 365 Message Encryp
 |**Service details**|**Description**|
 |:-----|:-----|
 |Client device requirements  <br/> |Encrypted messages can be viewed on any client device, as long as the HTML attachment can be opened in a modern browser that supports Form Post.  <br/> |
-|Encryption algorithm and Federal Information Processing Standards (FIPS) compliance  <br/> |Office 365 Message Encryption uses the same encryption keys as Windows Azure Information Rights Management (IRM) and supports Cryptographic Mode 2 (2K key for RSA and 256 bits key for SHA-1 systems). For more information about the underlying IRM cryptographic modes, see [AD RMS Cryptographic Modes](http://technet.microsoft.com/library/hh867439%28WS.10%29.aspx).  <br/> |
+|Encryption algorithm and Federal Information Processing Standards (FIPS) compliance  <br/> |Office 365 Message Encryption uses the same encryption keys as Windows Azure Information Rights Management (IRM) and supports Cryptographic Mode 2 (2K key for RSA and 256 bits key for SHA-1 systems). For more information about the underlying IRM cryptographic modes, see [AD RMS Cryptographic Modes](https://technet.microsoft.com/library/hh867439%28WS.10%29.aspx).  <br/> |
 |Supported message types  <br/> |Office 365 Message Encryption is only supported for items that have a message class ID of **IPM.Note**. For more information, see [Item types and message classes](https://msdn.microsoft.com/library/office/ff861573.aspx).  <br/> |
-|Message size limits  <br/> |Office 365 Message Encryption can encrypt messages of up to 25 megabytes. For more details about message size limits, see [Exchange Online Limits](http://technet.microsoft.com/library/exchange-online-limits.aspx).  <br/> |
+|Message size limits  <br/> |Office 365 Message Encryption can encrypt messages of up to 25 megabytes. For more details about message size limits, see [Exchange Online Limits](https://technet.microsoft.com/library/exchange-online-limits.aspx).  <br/> |
 |Exchange Online email retention policies  <br/> |Exchange Online doesn't store the encrypted messages.  <br/> |
 |Language support for Office 365 Message Encryption  <br/> | Office 365 Message encryption supports Office 365 languages, as follows:  <br/>  Incoming email messages and attached HTML files are localized based on the sender's language settings.  <br/>  The viewing portal is localized based on the recipient's browser settings.  <br/>  The body (content) of the encrypted message isn't localized.  <br/> |
 |Privacy information for OME Portal and OME Viewer App  <br/> |The [Office 365 Messaging Encryption Portal privacy statement](https://privacy.microsoft.com/en-US/privacystatement) provides detailed information about what Microsoft does and doesn't do with your private information.  <br/> |
@@ -130,7 +130,7 @@ The following table provides technical details for the Office 365 Message Encryp
 ## Frequently Asked Questions about legacy OME
 <a name="LegacyServiceInfo"> </a>
 
-Got questions about Office 365 Message Encryption? Here are some answers. If you can't find what you need, check the Office 365 community forums at [Office 365 community](http://community.office365.com/forums/default.aspx).
+Got questions about Office 365 Message Encryption? Here are some answers. If you can't find what you need, check the Office 365 community forums at [Office 365 community](https://community.office365.com/en-us/forums/default.aspx).
   
  **Q. My users send encrypted email messages to recipients outside our organization. Is there anything that external recipients have to do in order to read and reply to email messages that are encrypted with Office 365 Message Encryption?**
   
@@ -166,7 +166,7 @@ S/MIME is essentially a client-side encryption technology, and requires complica
   
  **Q. Can I read the encrypted messages over mobile devices?**
   
-Yes, you can view messages on Android and iOS by downloading the OME Viewer apps from the [Google Play store](http://go.microsoft.com/fwlink/?LinkID=525995&amp;clcid=0x409) and the [Apple App store](http://go.microsoft.com/fwlink/?LinkID=525996&amp;clcid=0x409). Open the HTML attachment in the OME Viewer app and then follow the instructions to open your encrypted message. For other mobile devices, you can open the HTML attachment as long as your mail client supports Form Post.
+Yes, you can view messages on Android and iOS by downloading the OME Viewer apps from the [Google Play store](https://go.microsoft.com/fwlink/?LinkID=525995&amp;clcid=0x409) and the [Apple App store](https://go.microsoft.com/fwlink/?LinkID=525996&amp;clcid=0x409). Open the HTML attachment in the OME Viewer app and then follow the instructions to open your encrypted message. For other mobile devices, you can open the HTML attachment as long as your mail client supports Form Post.
   
  **Q. Are replies and forwarded messages encrypted?**
   
@@ -184,7 +184,7 @@ Office 365 Message Encryption uses Rights Management Services (RMS) as its encry
 
 - If you use Active Directory (AD) RMS to obtain the keys, either Cryptographic Mode 1 or Cryptographic Mode 2 is used. The method used depends on your on-premises AD RMS deployment. Cryptographic Mode 1 is the original AD RMS cryptographic implementation. It supports RSA 1024 for signature and encryption, and supports SHA-1 for signature. This mode continues to be supported by all current versions of RMS.
 
-For more information, see [AD RMS Cryptographic Modes](http://go.microsoft.com/fwlink/p/?LinkId=398616).
+For more information, see [AD RMS Cryptographic Modes](https://go.microsoft.com/fwlink/p/?LinkId=398616).
   
  **Q. Why do some encrypted messages say they come from** Office365@messaging.microsoft.com?
   
@@ -192,7 +192,7 @@ When an encrypted reply is sent from the encryption portal or through the OME Vi
   
  **Q. I am an Exchange Hosted Encryption (EHE) subscriber. Where can I learn more about the upgrade to Office 365 Message Encryption?**
   
-All EHE customers have been upgraded to Office 365 Message Encryption. For more information, visit the [Exchange Hosted Encryption Upgrade Center](http://go.microsoft.com/fwlink/p/?LinkID=511077).
+All EHE customers have been upgraded to Office 365 Message Encryption. For more information, visit the [Exchange Hosted Encryption Upgrade Center](https://go.microsoft.com/fwlink/p/?LinkID=511077).
   
  **Q. Do I need to open any URLs, IP addresses, or ports in my organization's firewall to support Office 365 Message Encryption?**
   

@@ -44,4 +44,4 @@ In Exchange Online, only the SST is used for certificate validation.
 
 [S/MIME for message signing and encryption](s-mime-for-message-signing-and-encryption.md)
 
-[Get-SmimeConfig](http://technet.microsoft.com/library/4b29fa89-0840-4fe9-8885-019fcef2e02b.aspx)
+[Get-SmimeConfig](https://technet.microsoft.com/library/4b29fa89-0840-4fe9-8885-019fcef2e02b.aspx)

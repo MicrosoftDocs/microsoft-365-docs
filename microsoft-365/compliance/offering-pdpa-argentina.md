@@ -17,11 +17,11 @@ hideEdit: true
 
 ## About the PDPA
 
-In agreement with the Argentine National Constitution, the [Personal Data Protection Act 25.326](https://unpan1.un.org/intradoc/groups/public/documents/un-dpadm/unpan044147.pdf) (PDPA) ([Ley de Protección de los Datos Personales](http://servicios.infoleg.gob.ar/infolegInternet/anexos/60000-64999/64790/norma.htm)) was executed in 2000 to help protect the privacy of personal data, and to give individuals access to any information stored in public and private databases and registries. The Argentine Agency of Access to Public Information ([Agencia de Acceso a la Información Pública](https://www.argentina.gob.ar/aaip), AAIP) within the Chief of Ministries’ Cabinet is responsible for enforcing this law.
+In agreement with the Argentine National Constitution, the [Personal Data Protection Act 25.326](https://unpan1.un.org/intradoc/groups/public/documents/un-dpadm/unpan044147.pdf) (PDPA) ([Ley de Protección de los Datos Personales](https://servicios.infoleg.gob.ar/infolegInternet/anexos/60000-64999/64790/norma.htm)) was executed in 2000 to help protect the privacy of personal data, and to give individuals access to any information stored in public and private databases and registries. The Argentine Agency of Access to Public Information ([Agencia de Acceso a la Información Pública](https://www.argentina.gob.ar/aaip), AAIP) within the Chief of Ministries’ Cabinet is responsible for enforcing this law.
 
 The PDPA aligns with the European legislative model for protecting data privacy, and Argentina was the first country in Latin America to achieve an “adequacy” qualification for data transfers from the EU.
 
-In 2016, the AAIP issued a new regulation, [Provision 60-E/2016](http://servicios.infoleg.gob.ar/infolegInternet/anexos/265000-269999/267922/norma.htm) (Spanish), governing cross-border transfers of personal data. Under the rule, it approved model forms (partly based on the data transfer model in the EU) for such transfers to data controllers and data processors.
+In 2016, the AAIP issued a new regulation, [Provision 60-E/2016](https://servicios.infoleg.gob.ar/infolegInternet/anexos/265000-269999/267922/norma.htm) (Spanish), governing cross-border transfers of personal data. Under the rule, it approved model forms (partly based on the data transfer model in the EU) for such transfers to data controllers and data processors.
 
 ## Microsoft and the PDPA
 

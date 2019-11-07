@@ -61,9 +61,9 @@ Domain spoofing is a way of imitating a legitimate email address to make fraudul
   
 EOP uses Sender Protection Framework (SPF), DomainKeys Identified Mail (DKIM), and Domain-based Message Authentication, Reporting, and Conformance (DMARC), and other implicit authentications to verify that messages came from the domain they claim to come from. We recommend that all senders use SPF and DKIM to protect their recipients from junk email and phishing scams. We recommend senders consider publishing a DMARC to reject or quarantine mail sent from unauthorized senders.
   
-- To learn more about SPF, see [RFC 7208](https://tools.ietf.org/html/rfc7208) and [Sender Policy Framework](http://www.openspf.org/).
+- To learn more about SPF, see [RFC 7208](https://tools.ietf.org/html/rfc7208) and [Sender Policy Framework](https://www.openspf.org/).
     
-- To learn more about DKIM, see [RFC 6376](https://tools.ietf.org/html/rfc6376) and [DKIM.org](http://dkim.org/).
+- To learn more about DKIM, see [RFC 6376](https://tools.ietf.org/html/rfc6376) and [DKIM.org](https://dkim.org/).
     
 - To learn more about DMARC, see [DMARC.org](https://dmarc.org/).
     
