@@ -1,5 +1,5 @@
 ---
-title: Compliance offering — Minimum Acceptable Risk Standards for Exchanges (MARS-E) 2.0 Framework
+title: Minimum Acceptable Risk Standards for Exchanges (MARS-E) 2.0 Framework
 description: Microsoft complies with the US Minimum Acceptable Risk Standards for Exchanges (MARS-E).
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -50,7 +50,7 @@ Using the formal audit reports prepared by third parties for FedRAMP authorizati
 
 **What are Microsoft's responsibilities for maintaining compliance with this standard?**
 
-Microsoft ensures that the Azure platform meets the terms defined within the governing [Online Services Terms](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31) and applicable service level agreements (SLAs). These define our responsibility for implementing and maintaining controls adequate to secure the Azure platform and monitor the system.
+Microsoft ensures that the Azure platform meets the terms defined within the governing [Online Services Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31) and applicable service level agreements (SLAs). These define our responsibility for implementing and maintaining controls adequate to secure the Azure platform and monitor the system.
 
 **Can I use Microsoft's compliance in the MARS-E qualification efforts for my organization?**
 
@@ -61,10 +61,10 @@ Yes. Third-party audit reports to the FedRAMP standards attest to the effectiven
 - MARS-E regulatory guidance, MARS-E Document Suite, Version 2.0
     - [Volume II: Minimum acceptable risk standards for exchanges](https://www.cms.gov/CCIIO/Resources/Regulations-and-Guidance/Downloads/2-MARS-E-v2-0-Minimum-Acceptable-Risk-Standards-for-Exchanges-11102015.pdf)
     - [Volume III: Catalog of minimum acceptable risk security and privacy controls for exchanges](https://www.cms.gov/CCIIO/Resources/Regulations-and-Guidance/Downloads/3-MARS-E-v2-0-Catalog-of-Security-and-Privacy-Controls-11102015.pdf)
-- [Microsoft compliance framework for online services white paper](http://aka.ms/compliance-framework)
-- [Microsoft Online Services Terms](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
+- [Microsoft compliance framework for online services white paper](https://aka.ms/compliance-framework)
+- [Microsoft Online Services Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/7/C/2/7C2690A7-19CC-4EED-A47A-B43CC418790A/MARS-E-Compliance.pdf).
+Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/7/C/2/7C2690A7-19CC-4EED-A47A-B43CC418790A/MARS-E-Compliance.pdf).

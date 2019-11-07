@@ -1,5 +1,5 @@
 ---
-title: Compliance offering — IT-Grundschutz Compliance workbook
+title: IT-Grundschutz Compliance workbook
 description: Azure Germany published this workbook to help our clients achieve IT-Grundschutz certification.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -26,13 +26,13 @@ To help organizations identify and implement measures to help secure IT systems,
 
 ## Microsoft and IT-Grundschutz Compliance workbook
 
-To help our clients achieve their IT-Grundschutz certification, Microsoft Germany has published the [IT-Grundschutz Compliance workbook](http://aka.ms/grundschutzworkbook) for solutions and workloads deployed on Azure Germany. Developed by HiSolutions AG, an independent consulting, and auditing firm in Germany, the workbook is based on the most recent version of the [IT-Grundschutz Catalogues v.15](https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Grundschutz/International/GSK_15_EL_EN_Draft.pdf?__blob=publicationFile&v=2) (2015), which includes modules covering internet and cloud usage, such as M 1.17 Cloud Usage.
+To help our clients achieve their IT-Grundschutz certification, Microsoft Germany has published the [IT-Grundschutz Compliance workbook](https://aka.ms/grundschutzworkbook) for solutions and workloads deployed on Azure Germany. Developed by HiSolutions AG, an independent consulting, and auditing firm in Germany, the workbook is based on the most recent version of the [IT-Grundschutz Catalogues v.15](https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Grundschutz/International/GSK_15_EL_EN_Draft.pdf?__blob=publicationFile&v=2) (2015), which includes modules covering internet and cloud usage, such as M 1.17 Cloud Usage.
 
 This workbook can help Microsoft Cloud Germany customers implement the IT-Grundschutz methodology within the scope of their existing or planned ISO 27001 certification. It describes how to apply the IT-Grundschutz methodology to applications in the cloud and outlines how to implement all audit-relevant safeguards from the IT-Grundschutz module, M 1.17 Cloud Usage.
 
 ## Audits, reports, and certificates
 
-[Microsoft IT-Grundschutz Compliance workbook](http://aka.ms/grundschutzworkbook)
+[Microsoft IT-Grundschutz Compliance workbook](https://aka.ms/grundschutzworkbook)
 
 ## Microsoft in-scope cloud services
 
@@ -59,10 +59,10 @@ Microsoft Cloud Germany is physically based in Germany and adheres to the requir
 - [IT-Grundschutz Catalogues v.15](https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Grundschutz/International/GSK_15_EL_EN_Draft.pdf?__blob=publicationFile&v=2) (2015)
 - [BSI Standards](https://www.bsi.bund.de/EN/Publications/BSIStandards/BSIStandards_node.html)
 - [IT-Grundschutz certification process](https://www.bsi.bund.de/EN/Topics/ITGrundschutz/ITGrundschutzCertification/itgrundschutzcertification_node.html)
-- [Azure Germany IT-Grundschutz Compliance workbook](http://aka.ms/grundschutzworkbook)
+- [Azure Germany IT-Grundschutz Compliance workbook](https://aka.ms/grundschutzworkbook)
 - [ISO/IEC 27001:2013 Information Security Management Systems background](offering-iso-27001.md)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/B/3/5/B35DE78F-C346-4E31-ABC5-FF87BD1FF97F/ITGrundschutz-Compliance.pdf).
+Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/B/3/5/B35DE78F-C346-4E31-ABC5-FF87BD1FF97F/ITGrundschutz-Compliance.pdf).

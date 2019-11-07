@@ -1,5 +1,5 @@
 ---
-title: Compliance offering — Police-Assured Secure Facilities (PASF) United Kingdom
+title: Police-Assured Secure Facilities (PASF) United Kingdom
 description: Microsoft business cloud services support UK law enforcement who require Police-Assured Secure Facilities to process and store their data in the cloud.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -32,7 +32,7 @@ These certifications are backed by the measures that we take to protect the phys
 ## Microsoft in-scope cloud services
 
 - [Azure](https://gallery.technet.microsoft.com/Overview-of-Azure-c1be3942)
-- [Dynamics 365](http://download.microsoft.com/download/E/1/9/E1977163-7A86-4812-AC18-C03ADC958AAF/Microsoft_Dynamics_365_Cloud_Service_Compliance_Datasheet.pdf)
+- [Dynamics 365](https://download.microsoft.com/download/E/1/9/E1977163-7A86-4812-AC18-C03ADC958AAF/Microsoft_Dynamics_365_Cloud_Service_Compliance_Datasheet.pdf)
 - [Microsoft 365](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=9f756cce-b15d-45a9-94d7-6a583dee4401&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)
 
 ## Audits, reports, and certificates
@@ -54,9 +54,9 @@ Yes. Law enforcement can use the NPIRMT assessment of Azure to support their own
 - [National Policing Accreditation Policy](http://library.college.police.uk/docs/APP-National-Policing-Accreditation-Policy-2013.pdf)
 - [Azure facilities, premises, and physical security](https://azure.microsoft.com/blog/azure-layered-approach-to-physical-security/)
 - [Microsoft and ISO/IEC 27001:2013 ISM Standards](offering-iso-27001.md)
-- [Microsoft Online Services Terms](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
+- [Microsoft Online Services Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/C/9/7/C97C7B62-F582-4C25-8ABB-80DFB87628CA/PASF-Compliance.pdf).
+Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/C/9/7/C97C7B62-F582-4C25-8ABB-80DFB87628CA/PASF-Compliance.pdf).

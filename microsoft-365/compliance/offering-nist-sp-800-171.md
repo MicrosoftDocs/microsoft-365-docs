@@ -1,5 +1,5 @@
 ---
-title: Compliance offering — NIST SP 800–171
+title: NIST SP 800–171
 description: Microsoft cloud services comply with NIST SP 800–171 guidelines to protect controlled unclassified information (CUI) in nonfederal information systems.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -39,7 +39,7 @@ Any entity that processes or stores US government CUI — research institutions,
 - [Azure Government](https://aka.ms/AzureCompliance)
 - [Dynamics 365 U.S. Government](https://aka.ms/d365-compliance-list)
 - Intune
-- [Office 365 U.S. Government Community Cloud (GCC), Office 365 GCC High, and DoD](http://aka.ms/o365-compliance-framework)
+- [Office 365 U.S. Government Community Cloud (GCC), Office 365 GCC High, and DoD](https://aka.ms/o365-compliance-framework)
 
 ## Audits, reports, and certificates
 
@@ -57,7 +57,7 @@ Yes. Microsoft customers may use the audited controls described in the reports f
 
 ## Resources
 
-- [Microsoft DoD Certification Meets NIST 800-171 Requirements](offering-DoD-DISA-L2-L4-L5.md)
+- [Microsoft DoD Certification Meets NIST 800–171 Requirements](offering-DoD-DISA-L2-L4-L5.md)
 - [NIST 800–171 Compliance Starts with Cybersecurity Documentation](https://www.nist800171.com/)
 - [Microsoft Cloud Services FedRAMP Authorizations](https://marketplace.fedramp.gov/index.html?status=Compliant&sort=productName#/products)
 - [NIST 800-171 3.3 Audit and Accountability with Office 365 GCC High](https://info.summit7systems.com/blog/nist-3.3-audit-and-accountability-with-office-365)

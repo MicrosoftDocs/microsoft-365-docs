@@ -4,6 +4,7 @@
 ## [What's new in the compliance center](whats-new.md)
 ## [Recent updates to compliance content](recently-updated-topics-mcc.md)
 ## [Microsoft 365 compliance center](microsoft-365-compliance-center.md)
+## [Microsoft 365 solution catalog (preview)](microsoft-365-solution-catalog.md)
 ## [Go to the Security & Compliance Center](go-to-the-securitycompliance-center.md)
 ## [Use your free Azure Active Directory subscription](use-your-free-azure-ad-subscription-in-office-365.md)
 ## [Plan for security and compliance in Office 365](plan-for-security-and-compliance.md)
@@ -11,15 +12,19 @@
 # Manage internal risks
 ## [Protect user and device access](protect-access-to-data-and-services.md)
 ## [Customer Lockbox](customer-lockbox-requests.md)
-## [Privileged access management]()
+## Privileged access management
 ### [Learn about privileged access management](privileged-access-management-overview.md)
 ### [Configure privileged access management](privileged-access-management-configuration.md)
 ## Customer Key
 ### [Controlling your data in Office 365 using Customer Key](controlling-your-data-using-customer-key.md)
 ### [Service encryption with Customer Key for Office 365 FAQ](service-encryption-with-customer-key-faq.md)
-## [Supervision]()
-### [Learn about supervision policies](supervision-policies.md)
-### [Configure supervision policies for your organization](configure-supervision-policies.md)
+## Communication compliance
+### [Learn about communication compliance (preview)](communication-compliance.md)
+### [Configure communication compliance in Microsoft 365 (preview)](communication-compliance-configure.md)
+### [Investigate and remediate communication compliance alerts (preview)](communication-compliance-investigate-remediate.md)
+### [Feature reference for communication compliance (preview)](communication-compliance-feature-reference.md)
+### [Supervision policies in Office 365](supervision-policies.md)
+### [Configure supervision policies for Office 365](configure-supervision-policies.md)
 ## [Information barriers](information-barriers.md)
 ### [Define information barrier policies](information-barriers-policies.md)
 ### [Attributes for information barrier policies](information-barriers-attributes.md)
@@ -31,6 +36,8 @@
 ### [Restrict access to content by using encryption in sensitivity labels](encryption-sensitivity-labels.md)
 ### [Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md)
 ### [View label usage with label analytics](label-analytics.md)
+### [Use sensitivity labels with teams, groups, and sites](sensitivity-labels-teams-groups-sites.md)
+### [Enable sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md)
 ### [Sensitivity labels in Office apps](sensitivity-labels-office-apps.md)
 
 ## [Data loss prevention (DLP)](data-loss-prevention-policies.md)
@@ -82,7 +89,15 @@
 #### [Legacy information for Office 365 Message Encryption](legacy-information-for-message-encryption.md)
 #### [Set up Azure Rights Management for the previous version of Office 365 Message Encryption](set-up-azure-rms-for-previous-version-message-encryption.md)
 
+## [Understand data classification (preview)](data-classification-overview.md)
+### [View labeled content (preview)](data-classification-content-explorer.md)
+### [View label activity (preview)](data-classification-activity-explorer.md)
+### [Getting started with trainable classifiers (preview)](classifier-getting-started-with.md)
+### [Using a ready to use classifier (preview)](classifier-using-a-ready-to-use-classifier.md)
+### [Creating and training a classifier (preview)](classifier-creating-a-trainable-classifier.md)
+
 # Manage information governance
+## [Manage information governance](manage-information-governance.md)
 ## [Import data](importing-pst-files-to-office-365.md)
 ### [Use network upload to import PST files](use-network-upload-to-import-pst-files.md)
 ### [Use drive shipping to import PST files](use-drive-shipping-to-import-pst-files-to-office-365.md)
@@ -106,9 +121,10 @@
 ### [File plan manager](file-plan-manager.md)
 ### [Retention labels](labels.md)
 ### [Comply with SEC Rule 17a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
-### [Create and publish retention labels by using PowerShell](https://docs.microsoft.com/en-us/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
+### [Create and publish retention labels by using PowerShell](bulk-create-publish-labels-using-powershell.md)
 ### [Event-based retention](event-driven-retention.md)
 ### [Automate event-based retention](automate-event-driven-retention.md)
+### [Manage the lifecycle of SharePoint documents](auto-apply-retention-labels-scenario.md)
 ## [Dispose data](disposition-reviews.md)
 ## [Manage inactive mailboxes](inactive-mailboxes-in-office-365.md)
 ### [Create and manage inactive mailboxes](create-and-manage-inactive-mailboxes.md)
@@ -124,10 +140,11 @@
 ### [Watch videos from the Microsoft Data Governance team](https://go.microsoft.com/fwlink/?linkid=867039)
 ## Records management
 ### [Records management](records-management.md)
+### [Records](records.md)
 ### File plan
 #### [File plan manager](file-plan-manager.md)
 #### [Retention labels](labels.md)
-#### [Create and publish retention labels by using PowerShell](https://docs.microsoft.com/en-us/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
+#### [Create and publish retention labels by using PowerShell](bulk-create-publish-labels-using-powershell.md)
 #### [View label usage with label analytics](label-analytics.md)
 #### [View label activity for documents](view-label-activity-for-documents.md)
 #### [View the data governance reports](view-the-data-governance-reports.md)
@@ -349,17 +366,22 @@
 ## [Manage mailbox auditing](enable-mailbox-auditing.md)
 ## [Detailed properties in the audit log](detailed-properties-in-the-office-365-audit-log.md)
 ## [Export, configure, and view audit log records](export-view-audit-log-records.md)
-## [Use the audit log to troubleshoot common scenarios](auditing-troubleshooting-scenarios.md)
+## [Use the audit log to investigate common issues](auditing-troubleshooting-scenarios.md)
 ## [Use sharing auditing in the audit log](use-sharing-auditing.md)
 ## [Search for eDiscovery activities in the audit log](search-for-ediscovery-activities-in-the-audit-log.md)
 
 # Manage compliance risks
 ## [Microsoft Service Trust Portal](get-started-with-service-trust-portal.md)
-## [Compliance Manager (Classic)](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
-## [Compliance Manager (Preview)](compliance-manager-overview.md)
-### [What's new in Compliance Manager (Preview)](compliance-manager-release-notes.md)
-### [Working with Compliance Manager (Preview)](working-with-compliance-manager.md)
-### [Compliance score methodology (Preview)](compliance-score-methodology.md)
+## Compliance Score and Compliance Manager
+### [Compliance Score (Preview)](compliance-score.md)
+### [Set up Compliance Score (Preview)](compliance-score-setup.md)
+### [Working with Compliance Score (Preview)](working-with-compliance-score.md)
+### [Compliance Score calculation (Preview)](compliance-score-methodology.md)
+### [Compliance Score release notes (Preview)](compliance-score-release-notes.md)
+### [Compliance Manager (Preview)](compliance-manager-overview.md)
+#### [What's new in Compliance Manager (Preview)](compliance-manager-release-notes.md)
+#### [Working with Compliance Manager (Preview)](working-with-compliance-manager.md)
+#### [Compliance Manager (Classic)](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
 
 ## [GDPR data subject request tool](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)
 ## [Office 365 Information Protection for GDPR](office-365-information-protection-for-gdpr.md)
@@ -380,13 +402,13 @@
 
 # [Regulatory compliance action plans](compliance-solutions-overview.md)
 
-## [ISO — Recommended action plan](iso-action-plan.md)
-## [NIST — Recommended action plan](nist-action-plan.md) 
-
+## [ISO - Recommended action plan](iso-action-plan.md)
+## [NIST - Recommended action plan](nist-action-plan.md)
+## [CCPA - Frequently asked questions](ccpa-faq.md)
 ## [GDPR](gdpr.md)
 ### [Recommended action plan for GDPR](gdpr-action-plan.md)
 
-### [Accountability readiness checklists]()
+### Accountability readiness checklists
 #### [Accountability readiness checklists](gdpr-arc.md)
 #### [Azure](gdpr-arc-azure.md)
 #### [Dynamics 365](gdpr-arc-dynamics365.md)
@@ -395,7 +417,7 @@
 
 ### [Information protection](gdpr-information-protection.md)
 
-### [Data subject requests]()
+### Data subject requests
 #### [Data subject requests](gdpr-data-subject-requests.md)
 #### [Azure](gdpr-dsr-azure.md)
 #### [Azure DevOps Services](gdpr-dsr-vsts.md)
@@ -405,14 +427,14 @@
 #### [Office 365](gdpr-dsr-office365.md)
 #### [Visual Studio Family](gdpr-dsr-visual-studio-family.md)
 
-### [Breach notification]()
+### Breach notification
 #### [Breach notification](gdpr-breach-notification.md)
 #### [Azure](gdpr-breach-azure.md)
 #### [Dynamics 365](gdpr-breach-dynamics365.md)
 #### [Microsoft Support & Professional Services](gdpr-breach-microsoft-support-professional-services.md)
 #### [Office 365](gdpr-breach-office365.md)
 
-### [Data protection impact assessments]()
+### Data protection impact assessments
 #### [Data protection impact assessments](gdpr-data-protection-impact-assessments.md)
 #### [Azure](gdpr-dpia-azure.md)
 #### [Dynamics 365](gdpr-dpia-dynamics.md)
@@ -573,12 +595,13 @@
 #### [EU U.S. Privacy Shield](offering-eu-us-privacy-shield.md)
 #### [GDPR (EU)](offering-gdpr-eu.md)
 #### [G-Cloud (UK)](offering-g-cloud-uk.md)
-#### [IDW PS 951 (Germany)]()
+#### IDW PS 951 (Germany)
 #### [IT Grundschutz Workbook (Germany)](offering-it-grundschutz-workbook-germany.md)
 #### [LOPD (Spain)](offering-lopd-spain.md)
 #### [PASF (UK)](offering-pasf-uk.md)
 
 ### North America
+#### [California Consumer Privacy Act (CCPA)](offering-ccpa.md)
 #### [Canadian Privacy Laws](offering-canadian-privacy-laws.md)
 
 ### South America

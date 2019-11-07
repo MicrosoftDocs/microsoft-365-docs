@@ -35,9 +35,11 @@ To get you started, an ISO/IEC 27001:2103 Assessment for Office 365 appears by d
 
 ## Administration
 
-There are specific administrative functions that are only available to the global administrator and only visible when logged in with a global administrator account. Once the administrator assigns Compliance Manager roles to other users, those users can view data in Compliance Manager and perform actions determined by their role. The administrator can also give read-only access to Compliance Manager by assigning the user the [Global Reader role in Azure Active Directory (Azure AD)](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader).
+There are specific administrative functions that are only available to the global administrator and only visible when logged in with a global administrator account. The global administrator can assign user permissions, and can turn on automatic Secure Score updates for all actions.
   
 ### Assigning Compliance Manager roles to users
+
+Once the administrator assigns Compliance Manager roles to other users, those users can view data in Compliance Manager and perform actions determined by their role. The administrator can also give read-only access to Compliance Manager by assigning the user the [Global Reader role in Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader).
 
 Each Compliance Manager role has slightly different permissions. You can view the permissions assigned to each role, see which users are in which roles, and add or remove users from that role through the Service Trust Portal. Select the **Admin** menu item, and choose **Settings** to view.
   
@@ -62,6 +64,18 @@ To add or remove users from Compliance Manager roles.
 7. To remove users from this role, select the users and select **Delete**.
 
     ![Compliance Manager — delete users](media/compliance-manager-delete-users.png)
+
+### Controlling automatic Secure Score updates
+
+Secure Score updates can be turned on automatically for all actions, can be turned off for all actions, or can be set by individual action.
+
+1. Sign in to the [Service Trust Portal](https://servicetrust.microsoft.com) with your global administrator account.
+
+2. On the Service Trust Portal top menu bar, select **Admin** and then choose **Settings**.
+
+4. In the **Secure Score** tab, select the appropriate button for you chosen setting.
+
+**Note:** Only the global administrator can turn on or off automatic updates for all actions. The Compliance Manager administrator can turn on automatic updates for individual actions, but not for all actions globally.
 
 ## Groups
 
@@ -153,11 +167,6 @@ Action Type dimension key.
 8. Select the **X** to close the Description blade.
 9. Select **Save** to save the Customer Action.
 
-#### Edit a customer action
-
-1. Select the ellipses (…) for the Action you want to modify and select **Edit**.
-2. Edit the Action as desired, and select **Save**.
-
 #### Delete a customer action
 
 1. Select the ellipses (…) for the Action you want to modify and select **Delete**.
@@ -187,7 +196,7 @@ Action Type dimension key.
 - The title of the Assessment.
 - The dimensions of the Assessment, including certification, environment, and product applied to the Assessment.
 - The date it was created and date when it was last modified.
-- The Assessment Score shown as a percentage.
+- The Assessment Score shown as a percentage. This score automatically includes your scores from Microsoft-managed controls and from Secure Score.
 - Progress indicators that show the number of assessed Microsoft-managed and customer-manged controls.
 
 ### Copying information from existing Assessments
@@ -215,12 +224,7 @@ When you create an Assessment, you have the option to copy information from an e
 
 3. Select **Save** to create the Assessment.
 
-### Viewing Assessments
-
-> [!IMPORTANT]
-> When you receive an alert notification (designated by an orange triangle icon on the Assessments dashboard) that an Assessment is ready for update, select **Update**. This ensures that updates to templates are reflected in the Assessment.  
-
-#### View an Assessment
+### View an Assessment
   
 1. In the Assessments dashboard, select the assessment name to open it and view the Action Items and Controls Info.
 
@@ -370,9 +374,6 @@ The dashboard displays each Template, along with the Certification and Product a
 
 The built-in Templates each have a built-in Assessment associated with them, but you can create additional Assessments based on built-in Templates, and you can import your own Templates, and create custom Assessments based off those.
 
-> [!IMPORTANT]
-> When you receive an alert notification (designated by an orange triangle icon on the Templates dashboard) that a template is ready for update, select **Update** to ensure your score is accurately calculated. Updates do not automatically extend to the Assessment level, so you should also accept updates to Assessments to ensure proper functionality.
-
 ### Create a Template
 
 You can create a Template by copying an existing Template or by importing a custom Template. There is a specific format and schema that must be used for Template data or it will not import into Compliance Manager. A file with the correct schema and sample data can be downloaded from here.
@@ -513,6 +514,9 @@ You can create a Template by copying an existing Template or by importing Templa
 7. The imported Template appears on the **Templates** dashboard and it has a status of **Imported**. Select the ellipses (…) and select **Publish** to publish the Template. When the confirmation message appears, select **Publish**. The Template status changes to **Pending Approval**.
 8. Another user with the Compliance Manager Administrator role must approve the Template in the Templates dashboard. They must select the ellipses (…) and select **Approve**. When the confirmation message appears, select **Approve**. The Template is now ready for use.
 
+> [!IMPORTANT]
+> When creating a template, you must include Dimensions for both **Product** and **Certification** to ensure your template displays in Compliance Score.
+
 ### Customize a Template
 
 Templates can be customized through the additional of custom controls. All custom controls are considered customer-managed Controls.
@@ -537,6 +541,9 @@ Templates can be customized through the additional of custom controls. All custo
 12. When all applicable Actions have been selected, select **Assign**.
 13. Select **Save** to save the new control.
 
+> [!NOTE]
+> Any changes made to a template will not be reflected in existing assessments. Template updates must be made first, and then applied to a new assessment, in order for the changes to be seen.
+
 ### Export a Template to JSON
 
 Compliance Manager (Preview) also supports exporting Templates to JavaScript Object Notation (JSON) format. This enables you to exchange Compliance Manager data with other systems that support JSON.
@@ -559,7 +566,7 @@ The following table describes each Compliance Manager permission and what it all
 
 ||**Azure AD Global Reader**|**Compliance Manager Reader**|**Compliance Manager Contributor**|**Compliance Manager Assessor**|**Compliance Manager Administrator**|**Portal Admin**|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-|**Read data:** Users can read but not edit data (except for Template data and Tenant Management).  <br> | X | X | X | X | X  | X  |X |
+|**Read data:** Users can read but not edit data (except for Template data and Tenant Management).  <br> | X | X | X | X | X  | X |
 |**Edit data:** Users can edit all fields, except the Test Result and Test Date fields (except for Template data and Tenant Management).  <br> ||| X | X  | X | X |
 |**Edit test results:** Users can edit the Test Result and Test Date fields.  <br> |||| X | X | X |
 |**Manage assessments:** Users can create, archive, and delete Assessments.  <br> ||||| X | X |

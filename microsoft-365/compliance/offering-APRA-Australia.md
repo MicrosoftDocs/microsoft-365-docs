@@ -1,5 +1,5 @@
 ---
-title: Compliance offering — Australian Prudential Regulation Authority (APRA)
+title: Australian Prudential Regulation Authority (APRA)
 description: Microsoft guidance to help financial services clients comply with the outsourcing standards of the Australian Prudential Regulation Authority.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -17,7 +17,7 @@ hideEdit: true
 
 ## APRA overview
 
-The [Australian Prudential Regulation Authority](https://www.apra.gov.au/) (APRA) oversees banks, credit unions, insurance companies, and other financial services institutions in Australia. Recognizing the momentum towards cloud computing, APRA has called on regulated entities to implement a thoughtful cloud-adoption strategy with effective governance, thorough risk assessment, and regular assurance processes. Regulated institutions must comply with the APRA [Prudential Standard CPS 231 Outsourcing](https://www.apra.gov.au/sites/default/files/Prudential-Standard-CPS-231-Outsourcing-%28July-2017%29.pdf) when outsourcing a material business activity—any activity that has the potential, if disrupted, to have a significant impact on the financial institution’s business operations or ability to manage its risks effectively. Based on its review of outsourcing arrangements involving shared computing services submitted to APRA, APRA published specific, detailed guidance in its information paper, [Outsourcing involving shared computing services (including cloud)](https://www.apra.gov.au/sites/default/files/information-paper-outsourcing-involving-shared-computing-services.pdf) to help regulated entities assess cloud providers and services more effectively.
+The [Australian Prudential Regulation Authority](https://www.apra.gov.au/) (APRA) oversees banks, credit unions, insurance companies, and other financial services institutions in Australia. Recognizing the momentum towards cloud computing, APRA has called on regulated entities to implement a thoughtful cloud-adoption strategy with effective governance, thorough risk assessment, and regular assurance processes. Regulated institutions must comply with the APRA [Prudential Standard CPS 231 Outsourcing](https://www.apra.gov.au/sites/default/files/Prudential-Standard-CPS-231-Outsourcing-%28July-2017%29.pdf) when outsourcing a material business activity — any activity that has the potential, if disrupted, to have a significant impact on the financial institution’s business operations or ability to manage its risks effectively. Based on its review of outsourcing arrangements involving shared computing services submitted to APRA, APRA published specific, detailed guidance in its information paper, [Outsourcing involving shared computing services (including cloud)](https://www.apra.gov.au/sites/default/files/information-paper-outsourcing-involving-shared-computing-services.pdf) to help regulated entities assess cloud providers and services more effectively.
 
 ## Microsoft and APRA
 
@@ -27,7 +27,7 @@ Learn about the benefits of APRA-compliant financial services on Azure: [Read th
 
 ## Microsoft response to the APRA information paper on Cloud
 
-This Microsoft paper provides detailed guidance for financial services with a detailed response to each issue raised in the APRA information paper, [Outsourcing involving shared computing services (including cloud)](https://www.apra.gov.au/sites/default/files/information-paper-outsourcing-involving-shared-computing-services.pdf). The APRA guidelines identify three risk categories into which usage typically falls—low risk, heightened inherent risk, and extreme impact if disrupted—and highlight key issues that regulated entities must consider as part of their risk assessment.
+This Microsoft paper provides detailed guidance for financial services with a detailed response to each issue raised in the APRA information paper, [Outsourcing involving shared computing services (including cloud)](https://www.apra.gov.au/sites/default/files/information-paper-outsourcing-involving-shared-computing-services.pdf). The APRA guidelines identify three risk categories into which usage typically falls — low risk, heightened inherent risk, and extreme impact if disrupted — and highlight key issues that regulated entities must consider as part of their risk assessment.
 
 The Microsoft response focuses on the two highest risk categories. While cloud services are not prohibited by any risk category, APRA expects you to undertake a commensurately higher level of diligence, and you should expect an increasing level of APRA scrutiny, as you move up the risk categories. APRA lists a range of factors that typically indicate high risk for outsourcing. Microsoft addresses each of these factors in depth, providing information and tools to help you assess the risk of moving your data and workloads to Azure.
 
@@ -37,7 +37,7 @@ Get practical support for moving data and workloads to Azure in compliance with 
 
 ## Navigating your way to the cloud: A compliance checklist for financial institutions in Australia
 
-This Microsoft checklist introduces APRA regulatory requirements that financial firms must address when moving to the cloud. It maps Azure against not only the [Prudential Standard CPS 231 Outsourcing](https://www.apra.gov.au/sites/default/files/Prudential-Standard-CPS-231-Outsourcing-%28July-2017%29.pdf), but other relevant APRA standards, such as for business continuity and risk management. Completing this checklist will help your financial service institutions adopt Azure with the confidence that it meets the relevant APRA requirements.
+This Microsoft checklist introduces APRA regulatory requirements that financial firms must address when moving to the cloud. It maps Azure against not only the [Prudential Standard CPS 231 Outsourcing](https://www.apra.gov.au/sites/default/files/Prudential-Standard-CPS-231-Outsourcing-%28July-2017%29.pdf), but other relevant APRA standards, such as for business continuity and risk management. Completing this checklist helps your financial service institutions adopt Azure with the confidence that it meets the relevant APRA requirements.
 
 By relying on our comprehensive approach to risk assurance in the cloud, we are confident that Australian financial services organizations can move to Microsoft cloud services in a manner that is not only consistent with APRA guidance, but can provide customers with a more advanced security risk management profile than on-premises or other hosted solutions.
 
@@ -76,4 +76,4 @@ Yes. General privacy legislation (which applies across all sectors, not just to 
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/2/6/0/26056353-2F4C-4A6A-AE5D-019E35EB8E2C/APRA-Compliance.pdf).
+Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/2/6/0/26056353-2F4C-4A6A-AE5D-019E35EB8E2C/APRA-Compliance.pdf).

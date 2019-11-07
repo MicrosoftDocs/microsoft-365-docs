@@ -1,5 +1,5 @@
 ---
-title: Compliance offering — Cloud Security Mark Gold (CS Gold Mark)
+title: Cloud Security Mark Gold (CS Gold Mark)
 description: Microsoft received the CS Gold Mark in Japan for Azure (IaaS and PaaS) and Office 365 (SaaS).
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -17,7 +17,7 @@ hideEdit: true
 
 ## CS Gold Mark overview
 
-The Cloud Security Mark (CS Mark) is the first security standard for cloud service providers (CSPs) in Japan, and is based on ISO/IEC 27017, the international code of practice for information security controls. This in turn is based on ISO/IEC 27002 for cloud services, which addresses information security in cloud computing and the implementation of cloud-related information security controls.
+The Cloud Security Mark (CS Mark) is the first security standard for cloud service providers (CSPs) in Japan, and is based on ISO/IEC 27017, the international code of practice for information security controls. This in turn is based on ISO/IEC 27002 for cloud services, which address information security in cloud computing and the implementation of cloud-related information security controls.
 
 The CS Mark is accredited by the Japan Information Security Audit Association (JASA), a nonprofit organization established by the Ministry of the Interior and the Ministry of Economy, Trade, and Industry to strengthen information security in Japan. The CS Mark promotes the use of cloud services and provides:
 
@@ -37,27 +37,27 @@ After rigorous assessments by a JASA-certified auditor, Microsoft received the C
 - Intune
 - [Office 365](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 
-## Audits, Reports and certificates
+## Audits, reports, and certificates
 
 Accreditation is valid for three years, with a yearly surveillance audit to be conducted.
 
-- [CS Gold Mark for Azure and Office 365](http://jcispa.jasa.jp/cs_mark_co/cs_gold_mark_co/) (Japanese)
+- [CS Gold Mark for Azure and Office 365](https://jcispa.jasa.jp/cs_mark_co/cs_gold_mark_co/) (Japanese)
 
 ## Frequently asked questions
 
 **Where do I start with my organization’s own compliance effort?**
 
-If your organization is using Azure or Office 365, you will need to ensure that the CS Mark addresses your own security requirements. If CS Mark does address your security requirements, then you can use the Microsoft accreditation and audit report as part of your own accreditation process. You are responsible for engaging an auditor to evaluate your implementation for compliance, and for the controls and processes within your own organization.
+If your organization is using Azure or Office 365, you need to ensure that the CS Mark addresses your own security requirements. If CS Mark does address your security requirements, then you can use the Microsoft accreditation and audit report as part of your own accreditation process. You are responsible for engaging an auditor to evaluate your implementation for compliance, and for the controls and processes within your own organization.
 
 ## Resources
 
-- [CS Mark Accreditation Scheme](http://jcispa.jasa.jp/cloud_security/) (Japanese)
-- [CS Mark Standard accreditation rules](http://jcispa.jasa.jp/cloud_security/jcispa_regulation/) (Japanese)
-- [CS Mark accreditation forms and templates](http://jcispa.jasa.jp/cloud_security/jcispa_regulation_form/) (Japanese)
-- [ISO/IEC 27017: 2015](http://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.htm?csnumber=43757)
-- [Microsoft Online Services Terms](http://aka.ms/Online-Services-Terms)
+- [CS Mark Accreditation Scheme](https://jcispa.jasa.jp/cloud_security/) (Japanese)
+- [CS Mark Standard accreditation rules](https://jcispa.jasa.jp/cloud_security/jcispa_regulation/) (Japanese)
+- [CS Mark accreditation forms and templates](https://jcispa.jasa.jp/cloud_security/jcispa_regulation_form/) (Japanese)
+- [ISO/IEC 27017: 2015](https://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.htm?csnumber=43757)
+- [Microsoft Online Services Terms](https://aka.ms/Online-Services-Terms)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/D/A/A/DAAF35AB-60DE-4A70-AF1D-DD5CBAF16477/CSMarkGold-Compliance.pdf).
+Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/D/A/A/DAAF35AB-60DE-4A70-AF1D-DD5CBAF16477/CSMarkGold-Compliance.pdf).

@@ -1,5 +1,5 @@
 ---
-title: Compliance offering — Federal Financial Institutions Examination Council (FFIEC)
+title: Federal Financial Institutions Examination Council (FFIEC)
 description: Microsoft helps financial services clients comply with the audit requirements of the Federal Financial Institutions Examination Council (FFIEC).
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -70,4 +70,4 @@ To help you meet these obligations, Microsoft supplies the specifics about our c
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/6/2/7/62760960-C4B5-456B-9CF8-DCB7D692AAC4/FFIEC-Compliance.pdf).
+Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/6/2/7/62760960-C4B5-456B-9CF8-DCB7D692AAC4/FFIEC-Compliance.pdf).

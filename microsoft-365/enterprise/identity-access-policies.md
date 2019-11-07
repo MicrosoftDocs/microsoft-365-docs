@@ -158,7 +158,7 @@ The following tables describes the conditional access policy settings to impleme
 ## High risk users must change password
 To ensure that all high-risk users' compromised accounts are forced to perform a password change when signing-in, you must apply the following policy.
 
-Log in to the [Microsoft Azure portal (http://portal.azure.com)](http://portal.azure.com/) with your administrator credentials, and then navigate to **Azure AD Identity Protection > User Risk Policy**.
+Log in to the [Microsoft Azure portal (https://portal.azure.com)](https://portal.azure.com/) with your administrator credentials, and then navigate to **Azure AD Identity Protection > User Risk Policy**.
 
 **Assignments**
 
@@ -188,7 +188,7 @@ Create a policy for each platform:
 - Android
 - Windows 10
 
-To create a new app protection policy, log in to the Microsoft Azure portal with your administer credentials, and then navigate to **Mobile apps > App protection policies**. Choose **Add a policy**.
+To create a new app protection policy, sign in to the Microsoft Azure portal with your administrator credentials, and then navigate to **Client apps** > **App protection policies**. Choose **Create policy**.
 
 There are slight differences in the app protection policy options between iOS and Android. The below policy is specifically for Android. Use this as a guide for your other policies.
 

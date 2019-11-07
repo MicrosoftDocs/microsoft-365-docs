@@ -6,7 +6,7 @@
 ### [Chief Information Security Officer (CISO) workshop training](./office-365-security/ciso-workshop.md)
 #### [Module 1 - Microsoft cybersecurity briefing](./office-365-security/ciso-workshop-module-1.md)
 #### [Module 2 - Security management](./office-365-security/ciso-workshop-module-2.md)
-#### [Module 3 - Identity and access management](./office-365-security/ciso-workshop-module-3.md)
+#### [Module 3 - Identity and Zero Trust User Access](./office-365-security/ciso-workshop-module-3.md)
 #### [Module 4a - Threat protection strategy, Part I](./office-365-security/ciso-workshop-module-4a.md)
 #### [Module 4b - Threat protection strategy, Part II](./office-365-security/ciso-workshop-module-4b.md)
 #### [Module 5 - Information protection](./office-365-security/ciso-workshop-module-5.md)
@@ -15,6 +15,8 @@
 ## [Identity and device access configurations](../enterprise/microsoft-365-policies-configurations.md)
 ### [Prerequisite work](../enterprise/identity-access-prerequisites.md)
 ### [Common identity and device access policies](../enterprise/identity-access-policies.md)
+### [Policies for guest and external users](../enterprise/identity-access-policies-guest-access.md)
+### [Recommended Teams access policies](../enterprise/teams-access-policies.md)
 ### [Recommended Exchange Online access policies](../enterprise/secure-email-recommended-policies.md)
 ### [Recommended SharePoint Online access policies](../enterprise/sharepoint-file-access-policies.md)
 
@@ -99,6 +101,7 @@
 #### [Anti-spoofing protection in Office 365](./office-365-security/anti-spoofing-protection.md)
 ##### [Learn more about spoof intelligence](./office-365-security/learn-about-spoof-intelligence.md)
 ##### [Walkthrough spoof intelligence insight](./office-365-security/walkthrough-spoof-intelligence-insight.md)
+##### [Identify suspicious messages in Outlook.com and Outlook on the web](./office-365-security/unverified-sender-feature.md)
 
 #### [What is EOP?](./office-365-security/what-is-eop.md)
 ##### [Support for anonymous inbound email messages over IPv6](./office-365-security/support-for-anonymous-inbound-email-messages-over-ipv6.md)
@@ -160,7 +163,7 @@
 
 #### [Threat Explorer (and real-time detections)](./office-365-security/threat-explorer.md)
 ##### [Threat Explorer views](./office-365-security/threat-explorer-views.md)
-##### [Identify suspicious messages in Outlook.com and Outlook on the web](./office-365-security/unverified-sender-feature.md)
+
 
 #### [Integration for greater security]()
 ##### [Integrate Office 365 ATP with Microsoft Defender ATP](./office-365-security/integrate-office-365-ti-with-wdatp.md)
@@ -200,16 +203,16 @@
 ##### [Configure groups and users for a political campaign dev/test environment](./office-365-security/configure-groups-and-users-for-a-political-campaign-dev-test-environment.md)
 ##### [Create team sites in a political campaign dev/test environment](./office-365-security/create-team-sites-in-a-political-campaign-dev-test-environment.md)
 
+#### [Secure files in Microsoft Teams](./office-365-security/secure-files-in-teams.md)
+##### [Deploy teams for three tiers of protection for files](./office-365-security/deploy-teams-three-tiers.md)
+##### [Protect files in teams with retention labels and DLP](./office-365-security/deploy-teams-retention-DLP.md)
+##### [Protect files in teams with sensitivity labels](./office-365-security/deploy-teams-sensitivity-labels.md)
+##### [Secure Teams for files in a dev/test environment](./office-365-security/secure-team-for-files-in-a-dev-test-environment.md)
+
 #### [Secure SharePoint Online sites and files](./office-365-security/secure-sharepoint-online-sites-and-files.md)
 ##### [Secure SharePoint Online sites in a dev/test environment](./office-365-security/secure-sharepoint-online-sites-in-a-dev-test-environment.md)
 
-#### [Isolated SharePoint Online team sites](./office-365-security/isolated-sharepoint-online-team-sites.md)
-##### [Design an isolated SharePoint Online team site](./office-365-security/design-an-isolated-sharepoint-online-team-site.md)
-##### [Deploy an isolated SharePoint Online team site](./office-365-security/deploy-an-isolated-sharepoint-online-team-site.md)
-##### [Manage an isolated SharePoint Online team site](./office-365-security/manage-an-isolated-sharepoint-online-team-site.md)
-##### [Isolated SharePoint Online team site dev/test environment](./office-365-security/isolated-sharepoint-online-team-site-dev-test-environment.md)
 #### [SIEM server integration](./office-365-security/siem-server-integration.md)
-
 
 #### [Exchange Online Protection](./office-365-security/exchange-online-protection-overview.md)
 ##### [EOP features](./office-365-security/eop-features.md)

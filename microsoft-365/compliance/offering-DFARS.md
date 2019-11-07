@@ -1,5 +1,5 @@
 ---
-title: Compliance offering — Defense Federal Acquisition Regulation Supplement (DFARS)
+title: Defense Federal Acquisition Regulation Supplement (DFARS)
 description: Microsoft Azure Government supports Defense Federal Acquisition Regulation (DFARS) requirements.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -61,16 +61,16 @@ CDI is controlled technical information or other information (as described in th
 
 **Do all Microsoft services meet the “adequate security” requirements applicable to “covered defense information” under the DFARS regulation?**
 
-In October 2016, the Department of Defense (DoD) promulgated a final rule implementing Defense Federal Acquisition Regulation Supplement (DFARS) clauses that apply to all DoD contractors who process, store, or transmit “covered defense information” through their information systems. The rule states that such systems must meet the security requirements set forth in NIST SP 800–171, [Protecting Controlled Unclassified Information in nonfederal information systems and organizations](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-171.pdf), or an “alternative, but equally effective, security measure” that is approved by the DoD contracting officer. And where a DoD contractor uses an external cloud service provider to process, store, or transmit covered defense information, such provider must meet security requirements that are equivalent to the FedRAMP Moderate baseline.
+In October 2016, the Department of Defense (DoD) promulgated a final rule implementing Defense Federal Acquisition Regulation Supplement (DFARS) clauses that apply to all DoD contractors who process, store, or transmit “covered defense information” through their information systems. The rule states that such systems must meet the security requirements set forth in NIST SP 800–171, [Protecting Controlled Unclassified Information in nonfederal information systems and organizations](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-171.pdf), or an “alternative, but equally effective, security measure” that is approved by the DoD contracting officer. And where a DoD contractor uses an external cloud service provider to process, store, or transmit covered defense information, such provider must meet security requirements that are equivalent to the FedRAMP Moderate baseline.
 
 The following Microsoft cloud services have received a FedRAMP moderate authorization and are adequate for DFARS: Azure Government, Dynamics 365 U.S. Government, Office 365 U.S. Government, and Office 365 U.S. Government Defense.
 
-Additionally, Microsoft offerings outside the FedRAMP-certified boundary that could potentially be used by DoD contractors to process, store, or transmit “covered defense information” are undergoing a review to meet a December 31, 2017, compliance deadline. Microsoft is working to document how these internal and customer-facing services comply with NIST SP 800–171 or an acceptable security equivalent, to meet the DFARS relevant clauses.
+Also, Microsoft offerings outside the FedRAMP-certified boundary that could potentially be used by DoD contractors to process, store, or transmit “covered defense information” are undergoing a review to meet a December 31, 2017, compliance deadline. Microsoft is working to document how these internal and customer-facing services comply with NIST SP 800–171 or an acceptable security equivalent, to meet the DFARS relevant clauses.
 
 ## Resources
 
-- [Defense Federal Acquisition Regulation Supplement (DFARS)](http://www.acq.osd.mil/dpap/dars/dfarspgi/current/index.html)
-- [Microsoft Cloud for Government](http://enterprise.microsoft.com/industries/government/start-your-microsoft-cloud-for-government-trial-today)
-- [Online Services Terms](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
+- [Defense Federal Acquisition Regulation Supplement (DFARS)](https://www.acq.osd.mil/dpap/dars/dfarspgi/current/index.html)
+- [Microsoft Cloud for Government](https://enterprise.microsoft.com/industries/government/start-your-microsoft-cloud-for-government-trial-today)
+- [Online Services Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
 - [Controlled Unclassified Information (CUI)](https://www.archives.gov/cui/registry/category-list)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)

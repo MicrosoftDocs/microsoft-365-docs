@@ -1,5 +1,5 @@
 ---
-title: Compliance offering — United Kingdom Cyber Essentials PLUS
+title: United Kingdom Cyber Essentials PLUS
 description: Cyber Essentials PLUS is a UK government-defined scheme to help organizations protect against common cyber-security threats.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -26,7 +26,7 @@ Cyber Essentials is a UK government-backed scheme designed to help organizations
 The Cyber Essentials scheme is designed for UK government suppliers to identify potential weaknesses in their IT systems and software that could exploit customer data. The methodology has defined two different levels of certification:
 
 - Cyber Essentials is the first level and includes a self-assessment for organizations to check the most important IT security controls of their IT infrastructure. The responses are independently reviewed by an external certifying body.
-- Cyber Essentials PLUS offers the same controls coverage as Cyber Essentials and also includes additional assurance by carrying out systems tests of implemented controls through an authorized third party certifying body.
+- Cyber Essentials PLUS offers the same controls coverage as Cyber Essentials and also includes additional assurance by carrying out systems tests of implemented controls through an authorized third-party certifying body.
 
 ## Microsoft and UK Cyber Essentials PLUS
 
@@ -34,7 +34,7 @@ Microsoft Azure has attained Cyber Essentials PLUS badge and meets the requireme
 
 The [Azure Cyber Essentials PLUS certification](https://aka.ms/AzureCyberEPlusCert), which applies to our global operation of Azure, is available for download.
 
-## Audits, Reports and certificates
+## Audits, reports, and certificates
 
 - [Azure Cyber Essentials PLUS compliance report](https://aka.ms/AzureCyberEPlusReport)
 - [Azure Cyber Essentials PLUS certification](https://aka.ms/AzureCyberEPlusCert)
@@ -46,4 +46,4 @@ The [Azure Cyber Essentials PLUS certification](https://aka.ms/AzureCyberEPlusCe
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/6/B/5/6B54EF7B-8BC2-4C88-8ABD-A20B986AF9C7/CyberEssentialsPlusUK-Compliance.pdf).
+Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/6/B/5/6B54EF7B-8BC2-4C88-8ABD-A20B986AF9C7/CyberEssentialsPlusUK-Compliance.pdf).

@@ -59,7 +59,7 @@ Microsoft Managed Desktop identifies each device uniquely by referencing its har
 
 You'll need to have the data in the CSV files combined into a single file to complete registration. Here's a sample PowerShell script to make this easy:
 
-`Get-ChildItem -Filter *.csv |Select-Object -expandproperty FullName | Import-Csv |ConvertTo-Csv -NoTypeInformation | %{$_.Replace('"','')}| Out-File -Append .\joinedcsv\aggregatedDevices.csv`
+`Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformation | % {$_.Replace('"', '')} | Out-File .\aggregatedDevices.csv`
 
 ### Register devices
 

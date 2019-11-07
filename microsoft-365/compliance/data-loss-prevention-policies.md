@@ -102,6 +102,9 @@ The conditions now available can determine if:
 - Content contains a label. For more information, see the below section [Using a label as a condition in a DLP policy](#using-a-label-as-a-condition-in-a-dlp-policy).
     
 - Content is shared with people outside or inside your organization.
+
+> [!NOTE]
+> Users who have non-guest accounts in a host organization's Active Directory or Azure Active Directory tenant are considered as people inside the organization.
     
 #### Types of sensitive information
 
@@ -318,7 +321,11 @@ You can create a label and then:
     
 For more information about labels, see [Overview of retention labels](labels.md).
   
-After you create a label, you can then use that label as a condition in your DLP policies. For example, you might want to do this because:
+After you create a label, you can then use that label as a condition in your DLP policies. 
+
+![Labels as a condition](media/5b1752b4-a129-4a88-b010-8dcf8a38bb09.png)
+
+For example, you might want to do this because:
   
 - You published a label named **Confidential**, so that people in your organization can manually apply the label to confidential email and documents. By using this label as a condition in your DLP policy, you can restrict content labeled **Confidential** from being shared with people outside your organization. 
     
@@ -328,9 +335,10 @@ After you create a label, you can then use that label as a condition in your DLP
     
 - You published a label named **Executive Leadership Team - Sensitive** to the Exchange mailboxes and OneDrive accounts of a group of executives. By using this label as a condition in your DLP policy, you can enforce both retention and protection actions on the same subset of content and users. 
     
-By using labels as a condition in your DLP rules, can you selectively enforce protection actions on a specific set of content, locations, or users.
-  
-![Labels as a condition](media/5b1752b4-a129-4a88-b010-8dcf8a38bb09.png)
+By using labels as a condition in your DLP rules, can you selectively enforce protection actions on a specific set of content, locations, or users. 
+
+> [!NOTE]
+> If you specify a retention label as a condition in a DLP policy and you also include Exchange and/or Teams as a location, you will receive the following error: "Protecting labeled content in email and teams messages isn't supported. Either remove the label below or turn off Exchange and Teams as a location." This is because Exchange transport does not evaluate the label metadata during message submission and delivery. 
 
 ### Support for sensitivity labels is coming
 

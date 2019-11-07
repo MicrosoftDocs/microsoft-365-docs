@@ -1,5 +1,5 @@
 ---
-title: Compliance offering — Baseline Informatiebeveiliging Rijksdienst standard (BIR 2012)
+title: Baseline Informatiebeveiliging Rijksdienst standard (BIR 2012)
 description: Microsoft cloud services help public sector agencies in the Netherlands comply with the BIR 2012 standard.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -25,7 +25,7 @@ The BIR coverage report provides guidance where the BIR standards are covered by
 
 While Microsoft is not subject to BIR 2012 compliance, customers from the government sector seeking to use cloud services can use Microsoft’s existing certifications to determine their compliance with this standard. Azure and Office 365 undergo various periodic independent certifications and attestations, some of which are closely related to BIR 2012.
 
-[Download the Microsoft Cloud - Azure and Office 365 BIR-2012 Baseline Coverage User Guide](https://go.microsoft.com/fwlink/p/?linkid=2099461)
+[Download the Microsoft Cloud — Azure and Office 365 BIR-2012 Baseline Coverage User Guide](https://go.microsoft.com/fwlink/p/?linkid=2099461)
 
 ## Microsoft in-scope cloud services
 
@@ -33,7 +33,7 @@ While Microsoft is not subject to BIR 2012 compliance, customers from the govern
 - Intune
 - [Office 365](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 
-## Audits, reports and certificates
+## Audits, reports, and certificates
 
 - [Azure and Office 365 BIR-2012 Baseline Coverage](https://protection.office.com/DownloadFile/ServiceAssurance/Document/compliance/Azure%20and%20Office%20365%20BIR-2012%20Baseline%20Coverage/pdf)
 - [Azure and Office 365 BIR-2012 Baseline Coverage User Guide (Dutch)](https://protection.office.com/DownloadFile/ServiceAssurance/Document/compliance/Azure%20and%20Office%20365%20BIR-2012%20Baseline%20Coverage%20User%20Guide_Dutch/docx)
@@ -48,7 +48,7 @@ The responsibility for BIR compliance is applicable to the government sector. It
 
 Demonstrating BIR compliance is the responsibility of the customer. When using a cloud services vendor, customers typically demand assurances from the vendor, and add their own (additional) technology and organizational decisions, choices, and processes. This results in an overall assessment by the customer on its BIR compliance, which can be submitted for review or certification to a third-party auditor. The BIR coverage report provides insight into what BIR controls are covered by Microsoft Online Services, but as such does not cover end-to-end compliance.
 
-**The report does not show 100% coverage; is BIR 2012 compliance not feasible?**
+**The report does not show 100% coverage. Is BIR 2012 compliance not feasible?**
 
 Microsoft Online Services provides many controls that help organizations within the Netherlands with their BIR compliance needs. However, an organization needs to complement those vendor assurances with their own implementation choices, additional technology controls, and administrative processes. The report shows already over 91% direct coverage of the full list of applicable controls. For the remaining controls, Microsoft provides guidance in the report on how compliance with those controls can be demonstrated.
 
@@ -63,11 +63,11 @@ The report is provided to customers under a non-disclosure agreement (NDA), on t
 ## Resources
 
 - [ISO-IEC 27001](offering-iso-27001.md)
-- [Security prescription national 2013 (BVR)](http://wetten.overheid.nl/BWBR0033512/2013-06-01)
-- [Prescription information security national 2007 (VIR)](http://wetten.overheid.nl/BWBR0022141/2007-07-01)
-- [Baseline Information Security (BIR)](http://www.earonline.nl/index.php/Overzicht_Baseline_Informatiebeveiliging_Rijksdienst_\(BIR_2012\))
+- [Security prescription national 2013 (BVR)](https://wetten.overheid.nl/BWBR0033512/2013-06-01)
+- [Prescription information security national 2007 (VIR)](https://wetten.overheid.nl/BWBR0022141/2007-07-01)
+- [Baseline Information Security (BIR)](https://www.earonline.nl/index.php/BIR_2012)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/F/0/0/F00F62B6-254B-41AC-AC79-7A43CD6E376C/BIR2012-Compliance.pdf).
+Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/F/0/0/F00F62B6-254B-41AC-AC79-7A43CD6E376C/BIR2012-Compliance.pdf).

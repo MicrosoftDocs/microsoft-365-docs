@@ -1,5 +1,5 @@
 ---
-title: Compliance offering — Office of the Superintendent of Financial Institutions (OSFI) Canada
+title: Office of the Superintendent of Financial Institutions (OSFI) Canada
 description: Microsoft guidance to help financial institutions in Canada with cloud adoption.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -70,4 +70,4 @@ Yes, but only if the outsourcing arrangement is a material outsourcing or if it 
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/6/9/9/699E9434-6376-4F2A-A666-1F10D715B898/OFSI-Compliance.pdf).
+Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/6/9/9/699E9434-6376-4F2A-A666-1F10D715B898/OFSI-Compliance.pdf).

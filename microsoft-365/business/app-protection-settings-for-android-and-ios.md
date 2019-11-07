@@ -16,12 +16,12 @@ ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
 - MSB365
+- OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6f2b80b4-81c3-4714-a7bc-ae69313e8a33
 description: "Learn how to create, edit, or delete an app management policy, and protect work files on Android or iOS devices."
-ms.custom: OKR_SMB_M365
 ---
 
 # Set app protection settings for Android or iOS devices
@@ -66,7 +66,7 @@ ms.custom: OKR_SMB_M365
     
 ## Available settings
 
-The following tables give detailed information about the available settings to protect work files on devices and the settings that control how users access Office files from their mobile devices.
+The following tables give detailed information about settings available to protect work files on devices and the settings that control how users access Office files from their mobile devices.
   
  See [How do protection features in Microsoft 365 Business map to Intune settings](map-protection-features-to-intune-settings.md) for more information. 
   

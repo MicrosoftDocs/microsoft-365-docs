@@ -1,5 +1,5 @@
 ---
-title: Compliance offering — Gramm-Leach-Bliley Act (GLBA)
+title: Gramm-Leach-Bliley Act (GLBA)
 description: Microsoft helps financial services clients comply with the privacy and security requirements of the Gramm-Leach-Bliley Act (GLBA).
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -60,4 +60,4 @@ The FTC answers this in detail on its GLB Act page, [Who is covered by the priva
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/2/A/C/2AC21A04-CE23-4963-BE1A-515DB4A17C6E/GLBA-Compliance.pdf).
+Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/2/A/C/2AC21A04-CE23-4963-BE1A-515DB4A17C6E/GLBA-Compliance.pdf).

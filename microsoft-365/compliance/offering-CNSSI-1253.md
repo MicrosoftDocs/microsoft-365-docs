@@ -1,5 +1,5 @@
 ---
-title: Compliance offering — Committee on National Security Systems Instruction No. 1253 (CNSSI 1253)
+title: Committee on National Security Systems Instruction No. 1253 (CNSSI 1253)
 description: Azure Government complies with CNSSI 1253 security controls for US government systems requiring High Confidentiality, High Integrity, and High Availability.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -21,7 +21,7 @@ The Committee on National Security Systems (CNSS) is a governmental organization
   
 The CNSSI 1253 builds on NIST SP 800-53, which provides the control baseline for the FedRAMP High authorization. There are, however, some key differences between the CNSSI 1253 and NIST publications.  
   
-For example, the CNSSI 1253 approach explicitly defines the associations of Confidentiality, Integrity, and Availability with security controls, and refines the use of security control overlays for the national security community. The CNSS uses a separate Low, Medium, and High category for each of these three security objectives. This results in categorizations such as Moderate-Moderate-Low—Moderate Confidentiality, Moderate Integrity, and Low Availability. CNSSI 1253 then provides the appropriate security baselines for each possible system categorization using controls from NIST SP 800-53.
+For example, the CNSSI 1253 approach explicitly defines the associations of Confidentiality, Integrity, and Availability with security controls, and refines the use of security control overlays for the national security community. The CNSS uses a separate Low, Medium, and High category for each of these three security objectives. This results in categorizations such as Moderate-Moderate-Low — Moderate Confidentiality, Moderate Integrity, and Low Availability. CNSSI 1253 then provides the appropriate security baselines for each possible system categorization using controls from NIST SP 800-53.
 
 ## Microsoft and CNSSI 1253
 
@@ -64,4 +64,4 @@ Azure Government (FedRAMP package ID F1603087869) has been tested again these co
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/6/E/C/6EC27E89-826E-44CB-A107-2A37AC879206/CNSSI_1253-Compliance.pdf).
+Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/6/E/C/6EC27E89-826E-44CB-A107-2A37AC879206/CNSSI_1253-Compliance.pdf).

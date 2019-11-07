@@ -1,5 +1,5 @@
 ---
-title: Compliance offering — Sarbanes-Oxley Act of 2002 (SOX)
+title: Sarbanes-Oxley Act of 2002 (SOX)
 description: Financial services firms can use Microsoft compliance reports to address their compliance with the Sarbanes-Oxley Act.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -31,7 +31,7 @@ The audit report, produced by a third-party auditing firm, attests that Microsof
 
 To further help Azure clients address their SOX obligations, Microsoft has published [Azure Guidance for Sarbanes-Oxley](https://aka.ms/Azure-SOX-Guide). This paper provides migration best practices, including the implications of complying with SOX, and draws on internal experience migrating SOX-relevant applications — Microsoft Treasury and Microsoft Finance — to Azure.
 
-At Microsoft we share the responsibility of compliance with our customers. We supply the specifics about our compliance programs, which you can verify by requesting detailed audit results from the certifying third parties. Ultimately, however, it is up to you to determine whether our services comply with the specific laws and regulations applicable to your business. For example, there are SOX-related security controls, such as user access to cloud resources, that are your responsibility: your organization must develop appropriate auditing of these controls as part of your SOX compliance.
+At Microsoft, we share the responsibility of compliance with our customers. We supply the specifics about our compliance programs, which you can verify by requesting detailed audit results from the certifying third parties. Ultimately, however, it is up to you to determine whether our services comply with the specific laws and regulations applicable to your business. For example, there are SOX-related security controls, such as user access to cloud resources, that are your responsibility: your organization must develop appropriate auditing of these controls as part of your SOX compliance.
 
 Learn more about how to use Microsoft Azure compliance reports when addressing your SOX compliance obligations: [Download the Azure Guidance for Sarbanes-Oxley](https://aka.ms/Azure-SOX-Guide)
 
@@ -68,4 +68,4 @@ When you migrate your applications and data to covered Microsoft cloud services,
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/5/D/2/5D278460-AF57-470F-B166-5BD9258BCE3E/SOX-Compliance.pdf).
+Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/5/D/2/5D278460-AF57-470F-B166-5BD9258BCE3E/SOX-Compliance.pdf).
