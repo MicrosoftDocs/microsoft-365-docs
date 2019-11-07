@@ -14,7 +14,7 @@ search.appverid:
 description: "Release notes for the public preview of Microsoft Compliance Score, a dashboard in the M365 compliance center that helps simplify and automate risk assessments."
 ---
 
-# Microsoft Compliance Score release notes (Preview)
+# Microsoft Compliance Score (Preview) release notes
 
 The public preview of Microsoft Compliance Score provides you with early access to upcoming functionality and updates.
 
