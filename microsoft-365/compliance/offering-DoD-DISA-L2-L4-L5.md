@@ -94,7 +94,7 @@ Also, Microsoft offerings outside the FedRAMP-certified boundary that could pote
 ## Resources
 
 - [DoD Cloud Computing Security Requirements Guide (SRG) and other documents](https://public.cyber.mil/dccs/dccs-documents/)
-- [DISA Cloud Service Support](https://www.disa.mil/Computing/Cloud-Services/Cloud-Support)
+- [DISA Cloud Service Support](http://www.disa.mil/Computing/Cloud-Services/Cloud-Support)
 - [Protecting Controlled Unclassified Information in nonfederal information systems and organizations](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-171.pdf)
 - [NIST Cybersecurity Framework](https://www.nist.gov/cyberframework)
 - [Microsoft Common Controls Hub Compliance Framework](https://www.microsoft.com/trustcenter/common-controls-hub)
