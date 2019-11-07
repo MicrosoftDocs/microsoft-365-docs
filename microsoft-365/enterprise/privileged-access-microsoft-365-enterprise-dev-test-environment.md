@@ -39,15 +39,16 @@ In this phase, you configure an approvers group and enable privileged access man
 
 Follow these steps to set up and use privileged access in your Office 365 organization:
 
-- [Step 1: Create an approver's group](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration#step-1---create-an-approvers-group)
+- [Step 1: Create an approver's group](https://docs.microsoft.com/microsoft-365/compliance/privileged-access-management-configuration#step-1-create-an-approvers-group)
 
     Before you start using privilege access, determine who will have approval authority for incoming requests for access to elevated and privileged tasks. Any user who is part of the Approvers’ group will be able to approve access requests. This is enabled by creating a mail-enabled security group in Office 365. Create a new security group named "Privileged Access Approvers" in your test environment and add the "User 3" previously created in prior test lab guide steps.
 
-- [Step 2: Enable privileged access](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration#step-2---enable-privileged-access)
+- [Step 2: Enable privileged access](https://docs.microsoft.com/microsoft-365/compliance/privileged-access-management-configuration#step-2-enable-privileged-access)
 
     Privileged access needs to be explicitly turned on in Office 365 with the default approver group and including a set of system accounts that you’d want to be excluded from the privileged access management access control. Be sure to enable privileged access in your Office 365 organization before starting Phase 3 of this guide.
 
 ## Phase 3: Verify that approval is required for elevated and privileged tasks
+
 In this phase, you verify that the privileged access policy is working and users require approval to execute defined elevated and privileged tasks.
 
 ### Test ability to execute a task NOT defined in a privileged access policy
@@ -58,9 +59,10 @@ First, connect to Exchange Management PowerShell with the credentials of a user 
 
 2. In Exchange Management Powershell, create a new Journal rule for your organization:
 
-```
+```Exchange Management PowerShell
 New-JournalRule -Name "JournalRule1" -Recipient joe@contoso.onmicrosoft.com -JournalEmailAddress barbara@adatum.com -Scope Global -Enabled $true
 ```
+
 4. View that the new Journal Rule was successfully created in Exchange Management PowerShell.
 
 ### Create a new privileged access policy for the New-JournalRule task
@@ -77,7 +79,7 @@ New-JournalRule -Name "JournalRule1" -Recipient joe@contoso.onmicrosoft.com -Jou
 4. Select **Configure policies** and select **Add a policy**.
 
 5. From the drop-down fields, select or enter the following values:
-    
+
     **Policy type**: Task
 
     **Policy scope**: Exchange
@@ -96,12 +98,13 @@ New-JournalRule -Name "JournalRule1" -Recipient joe@contoso.onmicrosoft.com -Jou
 
 2. In Exchange Management Powershell, create a new Journal rule for your organization:
 
-```
+```Exchange Management PowerShell
 New-JournalRule -Name "JournalRule2" -Recipient user1@<your subscription domain> -JournalEmailAddress user1@<your subscription domain> -Scope Global -Enabled $true
 ```
+
 3. View "Insuffient permissions" error in Exchange Management PowerShell:
 
-```
+```Exchange Management PowerShell
 Insufficient permissions. Please raise an elevated access request for this task.
     + CategoryInfo          : NotSpecified: (:) [], LocalizedException
     + FullyQualifiedErrorId : [Server=CY1PR00MB0220,RequestId=7b8c7470-ddd0-4528-a01e-5e20ecc9bd54,TimeStamp=9/19/2018
@@ -147,9 +150,10 @@ Insufficient permissions. Please raise an elevated access request for this task.
 
 2. In Exchange Management Powershell, create a new Journal rule for your organization:
 
-```
+```Exchange Management PowerShell
 New-JournalRule -Name "JournalRule2" -Recipient user1@<your subscription domain> -JournalEmailAddress user1@<your subscription domain> -Scope Global -Enabled $true
 ```
+
 3. View that the new Journal Rule was successfully created in Exchange Management PowerShell.
 
 ## Next step
