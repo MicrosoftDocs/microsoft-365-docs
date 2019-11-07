@@ -14,6 +14,7 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 - M365-security-compliance
+- SPO_Content
 ms.custom:
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
