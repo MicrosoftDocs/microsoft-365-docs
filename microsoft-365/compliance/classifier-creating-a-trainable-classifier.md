@@ -40,7 +40,7 @@ Once the trainable classifier has processed enough positive samples to build a p
 > For best results, have 10,000 items in your test sample set with an even distribution of positive and negative matches.
 
 > [!TIP]
-> Opt-in is required the first time for trainable classifiers. classifiers. It takes twelve days for Microsoft 365 to complete a baseline evaluation of your organizations content.
+> Opt-in is required the first time for trainable classifiers. It takes twelve days for Microsoft 365 to complete a baseline evaluation of your organizations content.
 
 ## How to create a trainable classifier
 
