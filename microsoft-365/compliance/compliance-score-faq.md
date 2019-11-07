@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Compliance Score"
+title: "Microsoft Compliance Score FAQ"
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
@@ -11,7 +11,7 @@ ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
 - MET150
-description: "Microsoft Compliance Score helps organizations simplify and automate risk assessments, and suggests recommended actions to help address risks."
+description: "Find answers to frequently asked questions about Microsoft Compliance Score, which helps organizations simplify and automate risk assessments."
 ---
 
 # Microsoft Compliance Score (Preview) frequently asked questions
@@ -22,7 +22,7 @@ Microsoft Compliance Score is a preview feature in the [Microsoft 365 compliance
 
 ## How do I access Compliance Score?
 
-Go to the [Microsoft 365 compliance center](https://compliance.microsoft.com/) and **sign in** with your Microsoft 365 global admin account. Select **Compliance Score** on the left navigation pane. You should then see your [Compliance Score dashboard with your score](#understand-the-compliance-score-dashboard).
+Go to the [Microsoft 365 compliance center](https://compliance.microsoft.com/) and **sign in** with your Microsoft 365 global admin account. Select **Compliance Score** on the left navigation pane. You should then see your [Compliance Score dashboard with your score](compliance-score-setup.md#understand-the-compliance-score-dashboard).
 
 ## What roles or permissions are needed to use Compliance Score?
 
@@ -58,4 +58,16 @@ Compliance Score currently provides assessments for Office 365 and Intune. Expan
 
 ## Can I use Compliance Score for non-Microsoft products?
 
-Most of the capabilities are only available to Microsoft cloud, including continuous assessments and most of the recommended actions. However, you can add custom assessments via Compliance Manager for your on-prem services. In this way, you can leverage Microsoft Compliance Score as a SaaS compliance management tool that helps you manage all the controls across your digital assets. You can learn more about how to create custom assessments in this supporting document.
+While Compliance Score provides continuous assessments and recommended actions only for Microsoft cloud services, you can add custom assessments in Compliance Manager for your on-premises, third-party services. In this way, you can use Microsoft Compliance Score as a SaaS compliance management tool that helps you manage all the controls across your digital assets. View detailed instructions for [creating custom assessments in Compliance Manager](working-with-compliance-manager.md#assessments).
+
+## Why can't I delete a template or assessment I no longer need?
+
+While you can't delete an assessment, you can hide it, which essentially archives it. Review [instructions for archiving assessments].
+
+## Is my data in Compliance Score and Compliance Manager secure?
+
+Yes. .....
+
+## What do I do if I get an error message that my subscription level is not sufficient?
+
+TBD whether to include this question
