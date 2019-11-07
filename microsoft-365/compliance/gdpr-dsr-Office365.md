@@ -183,7 +183,7 @@ This example returns Excel files on SharePoint Online sites and OneDrive for Bus
 
 ***Keyword syntax***
 
-```
+```Query
 pilar@contoso.com AND filetype="xlxs"
 ```
 
@@ -205,7 +205,7 @@ This example returns Excel or Word files on SharePoint Online sites and OneDrive
 
 This example returns email messages that contain the specified ID number, which is a France Social Security Number (INSEE)
 
-```
+```Query
 "1600330345678 97" AND kind="email"
 ```
 
@@ -281,13 +281,13 @@ End users can discover, access, and rectify SharePoint Online user profile data 
 
 Another way for users to access their SharePoint profile data is to navigate to the **edit profile page** in their OneDrive for Business account, which can be accessed by going to the **EditProfile.aspx** path under the OneDrive for Business account URL. For example, for a user <strong>user1@contoso.com</strong>, the user's OneDrive for Business account is at:
 
-```
+```URL
 `https://contoso-my.sharepoint.com/personal/user1\_contoso\_com/\_layouts/15/OneDrive.aspx`
 ```
 
 The URL for the edit profile page would be:
 
-```
+```URL
 `https://contoso-my.sharepoint.com/personal/user1\_contoso\_com/\_layouts/15/EditProfile.aspx`
 ```
 
@@ -357,9 +357,11 @@ Here’s specific guidance to search for a Class Notebook.
 3. Select that item, and then copy the folder path that’s displayed in the details pane. This is the root folder for the Class Notebook.
 4. Edit the search that you created in step 1 and replace the class name in the keyword query with the folder path of the Class Notebook and precede the folder path with the **path** site property; for example, **path:"<https://contosoedu.onmicrosoft.com/sites/9C> Biology/SiteAssets/9C Biology Notebook/"**. Be sure to include the quotation marks and the trailing forward slash.
 5. Add a search condition and select the File Type condition and use one for the value of the file type. This returns all OneNote files in the search results. The resulting keyword syntax would look something like this:[](#building-search-queries-to-find-personal-data)
-    ```
+
+    ```Query
    path:"<https://contosoedu.onmicrosoft.com/sites/9C> Biology/SiteAssets/9C Biology Notebook/" AND filetype="one"
    ```
+
 6.  Rerun the Content Search. The search results should include all OneNote files for the Class Notebook from the class team.
 
 #### Microsoft To Do
@@ -1636,7 +1638,7 @@ The following summarizes accessing and exporting system-generated logs using the
 
 - **What will data in system-generated logs look like?:** Example of a system-generated log record in JSON format:
 
-   ```
+   ```JSON
    [{
             "DateTime": "2017-04-28T12:09:29-07:00",
              "AppName": "SharePoint",
