@@ -3,7 +3,7 @@ title: "Use sensitivity labels with Microsoft Teams, Office 365 groups, and Shar
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 10/31/2019
+ms.date: 11/08/2019
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -27,6 +27,10 @@ When you create sensitivity labels in the [Microsoft 365 compliance center](http
 When you apply a label to a team or group, the label automatically applies to the connected SharePoint team site and vice versa.
 
 You can now also enable sensitivity labels for Office files in SharePoint and OneDrive. [Learn more](sensitivity-labels-sharepoint-onedrive-files.md).
+
+## About the public preview for Microsoft Teams, Office 365 groups, and SharePoint sites
+
+This option is gradually rolling out to tenants and is subject to change.
 
 ## Overview
 
@@ -223,15 +227,18 @@ To prepare the SharePoint Online Management Shell for the preview:
 
 4. Make a note of the GUID for the label you want to overwrite. For example, the "General" label.
 
-5. Get the list of groups that have the “General” classification.
+5. Use the following command to get the list of groups that have the “General” classification. When you run this command, you'll connect to Exchange Online PowerShell and run the Get-UnifiedGroup cmdlet.
 
-    ```PowerShell
-    $groups = Get-UnifiedGroup | where {$_.Classification -eq "General"}  
-    ```
+   ```PowerShell
+   Set-ExecutionPolicy RemoteSigned
+   $O365Cred = Get-Credential
+   $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
+   Import-PSSession $Session
+   ```
 
 6. For each group, add the new sensitivity label GUID.
 
     ```PowerShell
     foreach ($g in $groups)
-    { Set-UnifiedGroup -Identity $g.DisplayName -SensitivityLabelId "457fa763-7c59-461c-b402-ad1ac6b703cc"}
+    {Set-UnifiedGroup -Identity $g.Identity -SensitivityLabelId "457fa763-7c59-461c-b402-ad1ac6b703cc"}
     ```
