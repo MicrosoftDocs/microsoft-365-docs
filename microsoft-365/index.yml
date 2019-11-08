@@ -58,7 +58,7 @@ additionalContent:
         # Card
         - title: Microsoft 365 Business
           summary: Designed for small and midsize businesses. Run your business with the latest version of Windows and Office apps like Excel and Outlook. Take advantage of data protection and security that extends to all your business devices. 
-          url: ./business/index.md
+          url: ./business/index.yml
         # Card
         - title: Microsoft 365 Enterprise
           summary: Designed for large organizations. Protect your business and transform the way you work with Office apps, Windows 10, and Enterprise Mobility + Security.
