@@ -293,7 +293,7 @@ The assessment report is downloaded as an Excel file in your browser session. Th
 
 When you are finished with a Template or Assessment and no longer need it for compliance purposes, you can hide it from your view. When a Template or Assessment is hidden, it is removed from the default view, and you must select **Include Hidden** checkbox to display it.
 
-![Compliance Manager Hidden Template View](media/compliance-manager-hidden-template.png "Compliance Manager hidden Template")
+![Compliance Manager Hidden Template View](media/compliance-manager-hidden-template.png "Compliance Manager hidden template")
 
 > [!IMPORTANT]
 > Hidden Assessments do not retain their links to uploaded evidence documents. It is highly recommended that you export the Assessment before hiding it to retain links to the evidence documents in the report.
@@ -301,27 +301,26 @@ When you are finished with a Template or Assessment and no longer need it for co
 #### Hiding a Template
 
 1. Open the **Templates** dashboard.
-2. Locate the Template you want to archive, and at the ellipses in its row, select **Hide**.
+2. Locate the Template you want to hide and at the ellipses in its row, select **Hide**.
 3. When you see the confirmation message, select **Hide**.
 
 #### Hide an Assessment
 
 1. Open the **Assessments** dashboard.
-2. Select the **Group** from the dropdown that contains the Assessment you want to archive.
-3. Locate the Assessment you want to archive, and at the ellipses, select **Hide**.
+2. Select the **Group** from the dropdown that contains the Assessment you want to hide.
+3. Locate the Assessment you want to hide and at the ellipses, select **Hide**.
 4. When you see the confirmation message, select **Hide**.
 
 #### View hidden Assessments
   
 1. Open the **Assessments** dashboard tab and select the **Include Hidden** checkbox.
 2. The hidden assessments appear in the **Hidden Assessments** section.
-3. Select the Assessment name to open and view the Assessment.
 
 #### Unhide an Assessment
 
 1. On the **Assessments** tab, select the **Include Hidden** checkbox.
 2. The hidden assessments appear in the **Hidden Assessments** section.
-3. Locate the Assessment you want to activate and from the ellipses, select **Unhide**.
+3. Locate the Assessment you want to unhide and at the ellipses, select **Unhide**.
 4. When you see the confirmation message, select **Unhide**.
 
 ## Controls and Actions
