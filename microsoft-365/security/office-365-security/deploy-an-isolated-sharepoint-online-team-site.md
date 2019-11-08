@@ -104,7 +104,7 @@ For PowerShell, first [Connect with the Azure Active Directory PowerShell for Gr
   
 Next, use the following command block to add an individual user account to an access group:
   
-```
+```powershell
 $userUPN="<UPN of the user account>"
 $grpName="<display name of the access group>"
 Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.UserPrincipalName -eq $userUPN }).ObjectID -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq $grpName }).ObjectID
@@ -115,7 +115,7 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.UserPrincipalN
   
 If you stored the UPNs of user accounts for any of the access groups in a text file, you can use the following PowerShell command block to add them all at one time:
   
-```
+```powershell
 $grpName="<display name of the access group>"
 $fileName="<path and name of the file containing the list of account UPNs>"
 $grpID=(Get-AzureADGroup | Where { $_.DisplayName -eq $grpName }).ObjectID
@@ -124,7 +124,7 @@ Get-Content $fileName | ForEach { $userUPN=$_; Add-AzureADGroupMember -RefObject
 
 For PowerShell, use the following command block to add an individual group to an access group:
   
-```
+```powershell
 $nestedGrpName="<display name of the group to add to the access group>"
 $grpName="<display name of the access group>"
 Add-AzureADGroupMember -RefObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq $nestedGrpName }).ObjectID -ObjectID (Get-AzureADGroup | Where { $_.DisplayName -eq $grpName }).ObjectID
@@ -141,7 +141,7 @@ The results should be the following:
     
 Validate the list of group members for each access group with the Microsoft 365 admin center or with the following PowerShell command block:
   
-```
+```powershell
 $grpName="<display name of the access group>"
 Get-AzureADGroupMember -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq $grpName }).ObjectID | Sort UserPrincipalName | Select UserPrincipalName,DisplayName,UserType
 ```
