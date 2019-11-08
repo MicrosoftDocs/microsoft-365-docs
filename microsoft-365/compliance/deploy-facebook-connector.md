@@ -113,11 +113,11 @@ Download the prebuilt package from the Release section in the GitHub repository 
 
 3. Go to the newly created web app resource, click **Application Settings** in the left navigation pane. Under Application settings, click Add new setting and add the following three settings: Use the values (that you copied to the text file from the previous steps): 
 
-    – **APISecretKey** – You can type any value as the secret. This is used to access the connector web app in Step 7.
+    - **APISecretKey** – You can type any value as the secret. This is used to access the connector web app in Step 7.
 
-    – **StorageAccountConnectionString — The connection string Uri that you copied after creating the Azure storage account in Step 3.
+    - **StorageAccountConnectionString** — The connection string Uri that you copied after creating the Azure storage account in Step 3.
 
-    – **tenantId** – The tenant ID of your Office 365 organization that you copied after creating the Facebook connector app in Azure Active Directory in Step 2.
+    - **tenantId** – The tenant ID of your Office 365 organization that you copied after creating the Facebook connector app in Azure Active Directory in Step 2.
 
     ![](media/FBCimage22.png)
 
@@ -149,7 +149,7 @@ Download the prebuilt package from the Release section in the GitHub repository 
 
    ![](media/FBCimage28.png)
 
-5. Add the Azure app service URL; for example https://fbconnector.azurewebsites.net.
+5. Add the Azure app service URL; for example `https://fbconnector.azurewebsites.net`.
 
    ![](media/FBCimage29.png)
 
@@ -157,7 +157,7 @@ Download the prebuilt package from the Release section in the GitHub repository 
 
    ![](media/FBCimage30.png)
 
-7. In the left navigation pane under **Facebook Login**, click **Settings**, and add the OAuth redirect URI in the **Valid OAuth Redirect URIs** box. Use the format **\<connectorserviceuri>/Views/FacebookOAuth**, where the value for connectorserviceuri is the Azure app service URL for your organization; for example, https://fbconnector.azurewebsites.net.
+7. In the left navigation pane under **Facebook Login**, click **Settings**, and add the OAuth redirect URI in the **Valid OAuth Redirect URIs** box. Use the format **\<connectorserviceuri>/Views/FacebookOAuth**, where the value for connectorserviceuri is the Azure app service URL for your organization; for example, `https://fbconnector.azurewebsites.net`.
 
    ![](media/FBCimage31.png)
 
@@ -165,11 +165,11 @@ Download the prebuilt package from the Release section in the GitHub repository 
 
    ![](media/FBCimage32.png)
 
-9. Add Webhooks Callback URL and add a verify token. The format of the callback URL, use the format **<connectorserviceuri>/api/FbPageWebhook**, where the value for connectorserviceuri is the Azure app service URL for your organization; for example https://fbconnector.azurewebsites.net. 
+9. Add Webhooks Callback URL and add a verify token. The format of the callback URL, use the format **<connectorserviceuri>/api/FbPageWebhook**, where the value for connectorserviceuri is the Azure app service URL for your organization; for example `https://fbconnector.azurewebsites.net`. 
 
     The verify token should similar to a strong password. Copy the verify token to a text file or other storage location.
 
-     ![](media/FBCimage33.png)
+        ![](media/FBCimage33.png)
 
 10. Test and subscribe to the endpoint for feed.
 
@@ -201,7 +201,7 @@ Download the prebuilt package from the Release section in the GitHub repository 
 
 ## Step 6: Configure the connector web app
 
-1. Go to https://\<AzureAppResourceName>.azurewebsites.net (where AzureAppResourceName is the name of your Azure app resource that you named in Step 4) For example, if the name is **fbconnector**, go to https://fbconnector.azurewebsites.net. The home page of the app will look like the following screenshot:
+1. Go to https://\<AzureAppResourceName>.azurewebsites.net (where AzureAppResourceName is the name of your Azure app resource that you named in Step 4) For example, if the name is **fbconnector**, go to `https://fbconnector.azurewebsites.net`. The home page of the app will look like the following screenshot:
 
 
    ![](media/FBCimage41.png)
@@ -217,13 +217,13 @@ Download the prebuilt package from the Release section in the GitHub repository 
 
 4. Under **Configuration Details**, enter the following configuration settings 
 
-   – **Facebook application ID** – The app ID for the Facebook application that you obtained in Step 5.
-   – **Facebook application secret** – The app secret for the Facebook application that you obtained in Step 5.
-   – **Facebook webhooks verify token** – The verify token that you created in Step 5.
-   – **AAD application ID** – The application ID for the Azure Active Directory app that you created in Step 2.
-   – **AAD application secret** – The value for the APISecretKey secret that you created in Step 4.
-   – **AAD application Uri** – The AAD application Uri obtained in Step 2; for example, https://microsoft.onmicrosoft.com/2688yu6n-12q3-23we-e3ee-121111123213.
-   – **App insights instrumentation key** – Leave this box blank.
+   - **Facebook application ID** – The app ID for the Facebook application that you obtained in Step 5.
+   - **Facebook application secret** – The app secret for the Facebook application that you obtained in Step 5.
+   - **Facebook webhooks verify token** – The verify token that you created in Step 5.
+   - **AAD application ID** – The application ID for the Azure Active Directory app that you created in Step 2.
+   - **AAD application secret** – The value for the APISecretKey secret that you created in Step 4.
+   - **AAD application Uri** – The AAD application Uri obtained in Step 2; for example, `https://microsoft.onmicrosoft.com/2688yu6n-12q3-23we-e3ee-121111123213`.
+   - **App insights instrumentation key** – Leave this box blank.
 
 5. Click **Save** to save the connector settings.
 
@@ -239,9 +239,9 @@ Download the prebuilt package from the Release section in the GitHub repository 
 
 3.  On the **Add Connector App** page, enter the following information and then click **Validate connector**.
 
-    – In the first box, type a name for the connector, such as **Facebook**.
-    – In the second box, type or paste the value of the APISecretKey that you added in Step 4.
-    – In the third box, type or paste the Azure app service URL; for example **https://fbconnector.azurewebsites.net**.
+    - In the first box, type a name for the connector, such as **Facebook**.
+    - In the second box, type or paste the value of the APISecretKey that you added in Step 4.
+    - In the third box, type or paste the Azure app service URL; for example `https://fbconnector.azurewebsites.net`.
  
     After the connector is successfully validated, click **Next**.
     
