@@ -67,7 +67,7 @@ The following screenshots show a folder list before and after messages are moved
 ![Folder list of archive mailbox after auto-expanding archive is provisioned](media/c03c5f51-23fa-4fc2-b887-7e7e5cce30da.png)
   
 > [!NOTE]
-> Not all folders that are moved to an auxiliary archive are moved to a subfolder in the original folder. If possible, the system moves content to a subfolder to help distribute the content of a folder. But this may not always be the case. Content may be moved to a new folder in an auxiliary archive (with a folder name that's different than the previously described naming convention) or an entire folder may be moved to an auxiliary archive and retain it's original name.
+> Not all folders that are moved to an auxiliary archive are moved to a subfolder in the original folder. If possible, the system moves content to a subfolder to help distribute the content of a folder. But this may not always be the case. Content may be moved to a new folder in an auxiliary archive (with a folder name that's different than the previously described naming convention) or an entire folder may be moved to an auxiliary archive and retain its original name.
 
 ## Outlook requirements for accessing items in an auto-expanded archive
 
