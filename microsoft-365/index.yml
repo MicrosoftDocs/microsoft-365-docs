@@ -1,0 +1,85 @@
+### YamlMime:Hub
+
+title: Microsoft 365 help center for admins and IT pros # < 60 chars
+summary: Explore Microsoft 365 help and training resources.
+# brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-platform | sql | sql-server | vs | visual-studio | windows | xamarin
+brand: m365
+
+metadata:
+  title: Microsoft 365 help center for admins and IT pros # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Set up, deploy, and manage Microsoft 365 to support your organization, small business, campaign, or educators and students # Required; article description that is displayed in search results. < 160 chars.
+  services: office-365-security-compliance
+  ms.service: O365-seccomp #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.topic: hub-page # Required
+  ms.collection: m365-security-compliance
+  author: robmazz #Required; your GitHub user alias, with correct capitalization.
+  ms.author: robmazz #Required; microsoft alias of author; optional team alias.
+  ms.date: 11/08/2019 #Required; mm/dd/yyyy format.
+  localization_priority: Priority
+
+# highlightedContent section (optional)
+# Maximum of 8 items
+highlightedContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+  items:
+    # Card
+    - title: Training for admins and IT pros
+      itemType: learn
+      url: https://docs.microsoft.com/learn/m365/
+    # Card
+    - title: Training for end users
+      itemType: learn
+      url: https://support.microsoft.com
+      # Card
+    - title: Training for small businesses
+      itemType: learn
+      url: https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816
+    # Card
+    - title: Test Lab Guides for IT pros
+      itemType: how-to-guide
+      url: ./enterprise/m365-enterprise-test-lab-guides.md
+    # Card  
+    - title: Microsoft 365 tech community
+      itemType: get-started
+      url: https://techcommunity.microsoft.com/t5/Microsoft-365/ct-p/microsoft365
+    # Card
+    - title: Resources for developers
+      itemType: reference
+      url: https://developer.microsoft.com/microsoft-365
+
+# additionalContent section (optional)
+# Card with summary style
+additionalContent:
+  # Supports up to 3 sections
+  sections:
+    - title: Get help with Microsoft 365
+      summary: Select a card to learn more about Microsoft 365. # 160 chars (optional)
+      items:
+        # Card
+        - title: Microsoft 365 Business
+          summary: Designed for small and midsize businesses. Run your business with the latest version of Windows and Office apps like Excel and Outlook. Take advantage of data protection and security that extends to all your business devices. 
+          url: ./business/index.yml
+        # Card
+        - title: Microsoft 365 Enterprise
+          summary: Designed for large organizations. Protect your business and transform the way you work with Office apps, Windows 10, and Enterprise Mobility + Security.
+          url: ./enterprise/index.md
+        # Card
+        - title: Microsoft 365 Education
+          summary: Designed for educators to unlock creativity, promote teamwork, and provide a simple and safe experience in a single, affordable solution built for education.
+          url: https://docs.microsoft.com/education/
+        # Card
+        - title: Microsoft 365 Compliance
+          summary: Help your organization govern information, protect against risks, and comply with legal or regulatory standards.
+          url: ./compliance/index.yml
+        # Card
+        - title: Microsoft 365 Security
+          summary: Help to protect your enterprise across attack surfaces.
+          url: ./security/index.yml
+        # Card
+        - title: Microsoft 365 for Campaigns
+          summary: Keep your campaign or business data and communications secure with this recommended configuration for Microsoft 365 Business.
+          url: ./campaigns/index.md
+        # Card
+        - title: NEW — Microsoft 365 training and certification at Microsoft Learn
+          summary: Brand new learning paths to increase your Microsoft 365 skills and earn certifications.
+          url: https://docs.microsoft.com/learn/m365/
