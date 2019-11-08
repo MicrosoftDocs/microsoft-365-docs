@@ -70,7 +70,7 @@ Advanced features in Microsoft 365 Business are available to help you protect yo
     Accessing the Intune admin center in the Azure portal allows you to set up additional security features, such as the management of MacOS devices, iPhone, and Android devices along with advanced device management for Windows, that are not available through Microsoft 365 Business admin center.
 - **Same [Conditional Access](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/overview) as Azure AD P1 plan**
 
-    Conditional Access can help protect your organization from sign-in risk, access attempts from an unexpected network or locale, access attempts form risky device types, and so on. Conditional Access policies are enforced after the first authentication is completed, and it uses signals from the first authentication event to determine if the attempted access should be approved, denies, or if more proof (such as second form of identification) is required.
+    Conditional Access can help protect your organization from sign-in risk, access attempts from an unexpected network or locale, access attempts from risky device types, and so on. Conditional Access policies are enforced after the first authentication is completed, and it uses signals from the first authentication event to determine if the attempted access should be approved, denied, or if more proof (such as a second form of identification) is required.
 
     The conditional access features included are:
 
