@@ -86,7 +86,7 @@ The following example shows a custom logo for ContosoPharma in the email attachm
   
 1. Connect to Exchange Online using Remote PowerShell, as described in [Connect to Exchange Online Using Remote PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-exchange-online-tenants-with-remote-windows-powershell-for-delegated).
 
-2. Use the Set-OMEConfiguration cmdlet as described here: [Set-OMEConfiguration](https://technet.microsoft.com/en-us/3ef0aec0-ce28-411d-abe8-7236f082af1b) or use the following table for guidance.
+2. Use the Set-OMEConfiguration cmdlet as described here: [Set-OMEConfiguration](https://technet.microsoft.com/3ef0aec0-ce28-411d-abe8-7236f082af1b) or use the following table for guidance.
 
    **Encryption customization options**
 
@@ -99,7 +99,7 @@ The following example shows a custom logo for ContosoPharma in the email attachm
 
  **To remove brand customizations from encryption email messages and the encryption portal**
   
-1. Connect to Exchange Online using Remote PowerShell, as described in [Connect to Exchange Online Using Remote PowerShell](https://technet.microsoft.com/en-us/library/jj984289%28v=exchg.150%29.aspx).
+1. Connect to Exchange Online using Remote PowerShell, as described in [Connect to Exchange Online Using Remote PowerShell](https://technet.microsoft.com/library/jj984289%28v=exchg.150%29.aspx).
 
 2. Use the Set-OMEConfiguration cmdlet as described here: [Set-OMEConfiguration](https://technet.microsoft.com/3ef0aec0-ce28-411d-abe8-7236f082af1b). To remove your organization's branded customizations from the DisclaimerText, EmailText, and PortalText values, set the value to an empty string,  `""`. For all image values, such as Logo, set the value to  `"$null"`.
 
@@ -125,12 +125,12 @@ The following table provides technical details for the Office 365 Message Encryp
 |Message size limits  <br/> |Office 365 Message Encryption can encrypt messages of up to 25 megabytes. For more details about message size limits, see [Exchange Online Limits](https://technet.microsoft.com/library/exchange-online-limits.aspx).  <br/> |
 |Exchange Online email retention policies  <br/> |Exchange Online doesn't store the encrypted messages.  <br/> |
 |Language support for Office 365 Message Encryption  <br/> | Office 365 Message encryption supports Office 365 languages, as follows:  <br/>  Incoming email messages and attached HTML files are localized based on the sender's language settings.  <br/>  The viewing portal is localized based on the recipient's browser settings.  <br/>  The body (content) of the encrypted message isn't localized.  <br/> |
-|Privacy information for OME Portal and OME Viewer App  <br/> |The [Office 365 Messaging Encryption Portal privacy statement](https://privacy.microsoft.com/en-US/privacystatement) provides detailed information about what Microsoft does and doesn't do with your private information.  <br/> |
+|Privacy information for OME Portal and OME Viewer App  <br/> |The [Office 365 Messaging Encryption Portal privacy statement](https://privacy.microsoft.com/privacystatement) provides detailed information about what Microsoft does and doesn't do with your private information.  <br/> |
 
 ## Frequently Asked Questions about legacy OME
 <a name="LegacyServiceInfo"> </a>
 
-Got questions about Office 365 Message Encryption? Here are some answers. If you can't find what you need, check the Office 365 community forums at [Office 365 community](https://community.office365.com/en-us/forums/default.aspx).
+Got questions about Office 365 Message Encryption? Here are some answers. If you can't find what you need, check the [Microsoft Tech Community forums for Office 365](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365).
   
  **Q. My users send encrypted email messages to recipients outside our organization. Is there anything that external recipients have to do in order to read and reply to email messages that are encrypted with Office 365 Message Encryption?**
   
@@ -166,7 +166,7 @@ S/MIME is essentially a client-side encryption technology, and requires complica
   
  **Q. Can I read the encrypted messages over mobile devices?**
   
-Yes, you can view messages on Android and iOS by downloading the OME Viewer apps from the [Google Play store](https://go.microsoft.com/fwlink/?LinkID=525995&amp;clcid=0x409) and the [Apple App store](https://go.microsoft.com/fwlink/?LinkID=525996&amp;clcid=0x409). Open the HTML attachment in the OME Viewer app and then follow the instructions to open your encrypted message. For other mobile devices, you can open the HTML attachment as long as your mail client supports Form Post.
+Yes, you can view messages on Android and iOS by downloading the OME Viewer apps from the Google Play store and the Apple App store. Open the HTML attachment in the OME Viewer app and then follow the instructions to open your encrypted message. For other mobile devices, you can open the HTML attachment as long as your mail client supports Form Post.
   
  **Q. Are replies and forwarded messages encrypted?**
   
@@ -196,7 +196,7 @@ All EHE customers have been upgraded to Office 365 Message Encryption. For more 
   
  **Q. Do I need to open any URLs, IP addresses, or ports in my organization's firewall to support Office 365 Message Encryption?**
   
-Yes. You have to add URLs for Exchange Online to the allow list for your organization to enable authentication for messages encrypted by Office 365 Message Encryption. For a list of Exchange Online URLs, see [Office 365 URLs and IP Address Ranges](https://support.office.com/article/f57e35b7-0a45-42f0-855e-11aa5e7f13fd.aspx).
+Yes. You have to add URLs for Exchange Online to the allow list for your organization to enable authentication for messages encrypted by Office 365 Message Encryption. For a list of Exchange Online URLs, see [Office 365 URLs and IP address ranges](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges).
   
  **Q. How many recipients can I send an Office 365 encrypted message to?**
   
@@ -212,5 +212,4 @@ There isn't a report that shows if an encrypted message has been viewed, but the
   
  **Q. What does Microsoft do with the information I provide through the OME Portal and the OME Viewer App?**
   
-The [Office 365 Messaging Encryption Portal privacy statement](https://privacy.microsoft.com/en-US/privacystatement) provides detailed information about what Microsoft does and doesn't do with your private information.
- 
+The [Office 365 Messaging Encryption Portal privacy statement](https://privacy.microsoft.com/privacystatement) provides detailed information about what Microsoft does and doesn't do with your private information.
