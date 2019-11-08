@@ -109,7 +109,7 @@ Your Office 365 subscription comes with a powerful set of security capabilities 
 
 ## See also:
 - [Unexpected application in my applications list](https://docs.microsoft.com/azure/active-directory/application-access-unexpected-application)  walks administrators through various actions they may want to take after realizing there are unexpected applications with access to data.
-- [Integrating applications with Azure Active Directory]  (https://docs.microsoft.com/azure/active-directory/active-directory-apps-permissions-consent)  is a high-level overview of consent and permissions.  Pay particular attention to the [Overview of the consent framework](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications#overview-of-the-consent-framework) section.
+- [Integrating applications with Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-apps-permissions-consent)  is a high-level overview of consent and permissions.
 - [Problems developing my application](https://docs.microsoft.com/azure/active-directory/active-directory-application-dev-development-content-map) provides links to various consent related articles.
 - [Application and service principal objects in Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/develop/active-directory-application-objects) provides an overview of the Application and Service principal objects that are core to the application model.
 - [Manage access to apps](https://docs.microsoft.com/azure/active-directory/active-directory-managing-access-to-apps) is an overview of the capabilities that administrators have to manage user access to apps.
