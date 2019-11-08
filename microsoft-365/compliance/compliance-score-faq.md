@@ -18,7 +18,7 @@ description: "Find answers to frequently asked questions about Microsoft Complia
 
 ## What is Compliance Score?
 
-Microsoft Compliance Score is a preview feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) to help you understand your organization’s compliance posture. It calculates a risk-based score measuring your progress in completing actions that help reduce risks around data protection and regulatory standards. You can use Compliance Score as a tool to track all of your risk assessments. It provides workflow capabilities to help you efficiently perform and complete your risk assessments through a common tool.
+Microsoft Compliance Score is a preview feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) that helps you understand your organization’s compliance posture. It calculates a risk-based score measuring your progress in completing actions that help reduce risks around data protection and regulatory standards. You can use Compliance Score as a tool to track all of your risk assessments. It provides workflow capabilities to help you efficiently perform and complete your risk assessments through a common tool.
 
 ## How do I access Compliance Score?
 
@@ -30,13 +30,13 @@ Compliance Score uses a role-based access control (RBAC) permission model, and t
 
 ## What is the difference between Compliance Score and Compliance Manager?
 
-Compliance Score and Compliance Manager share the same backend, but they are two distinct features. Think of Compliance Score as a simplified version of Compliance Manager which gives you a more wholistic and actionable view into your organization's current compliance posture. You can take many actions to improve your score directly within Compliance Score; however during public preview, some functionality resides only in Compliance Manager. Read details about the [relationship between Compliance Score and Compliance Manager](compliance-score.md#relationship-to-compliance-manager).
+Compliance Score and Compliance Manager share the same backend, but they are two distinct features. Think of Compliance Score as a simplified version of Compliance Manager, giving you a more complete view of your organization's current compliance posture and the steps you can take to improve it. While you can take many actions directly within Compliance Score, some functionality resides only in Compliance Manager during public preview. Read more about the [relationship between Compliance Score and Compliance Manager](compliance-score.md#relationship-to-compliance-manager).
 
 ## Who should use Compliance Score and who should use Compliance Manager?
 
-Compliance Score is useful for everyone in your organization who plays a role in monitoring compliance and carrying out activities to protect data and comply with regulatory standards. With Compliance Score, you don't need to be familiar with regulations and standards in order easily see what actions can be taken to help improve your organization's data protection. Compliance Score is the optimal starting place for all users; it's where you assess your compliance posture, see recommended actions for minimizing risks, and in many cases, launch right into the solutions where you can take those actions.
+Compliance Score is useful for everyone in your organization who plays a role in monitoring compliance and carrying out activities to protect data and comply with regulatory standards. With Compliance Score, you don't need to be familiar with regulations and standards in order to easily see how to improve your organization's data protection. Compliance Score is the optimal starting place for all users. From here, you can see your compliance score, learn which recommended actions can minimizing risks, and, in many cases, launch right into the solutions to take those actions.
 
-Compliance officers in your organization who are responsible for configuring controls to meet the specific needs of your organization will likely be the ones who need to work more frequently in Compliance Manager. This is because the work of managing assessments and creating custom templates to build assessments can only be done in Compliance Manager. Learn more about [which actions are supported only by Compliance Manager](compliance-score-release-notes.md#compliance-score-and-compliance-manager-relationship) during public preview.
+Compliance Manager is for users more directly responsible for configuring controls to meet the specific needs of your organization. This is because the work of managing assessments and creating custom templates to build assessments can only be done in Compliance Manager. Learn more about [which actions are supported only by Compliance Manager](compliance-score-release-notes.md#compliance-score-and-compliance-manager-relationship) during public preview.
 
 ## If I have a high score, does it mean I'm fully compliant?
 
@@ -58,16 +58,16 @@ Compliance Score currently provides assessments for Office 365 and Intune. Expan
 
 ## Can I use Compliance Score for non-Microsoft products?
 
-While Compliance Score provides continuous assessments and recommended actions only for Microsoft cloud services, you can add custom assessments in Compliance Manager for your on-premises, third-party services. In this way, you can use Microsoft Compliance Score as a SaaS compliance management tool that helps you manage all the controls across your digital assets. View detailed instructions for [creating custom assessments in Compliance Manager](working-with-compliance-manager.md#assessments).
+While Compliance Score provides continuous assessments and recommended actions only for Microsoft cloud services, you can add custom assessments in Compliance Manager for your on-premises, third-party services. In this way, you can use Microsoft Compliance Score as a SaaS compliance management tool to help you manage all the controls across your digital assets. View detailed instructions for [creating custom assessments in Compliance Manager](working-with-compliance-manager.md#assessments).
 
 ## Why can't I delete a template or assessment I no longer need?
 
-While you can't delete an assessment, you can hide it, which essentially archives it. Review [instructions for archiving assessments].
+While you can't delete an assessment, you can hide it from view. Review [instructions for hiding assessments](working-with-compliance-manager.md#hide-a-template-or-an-assessment).
 
 ## Is my data in Compliance Score and Compliance Manager secure?
 
-Yes. .....
+Yes. .....TBD whether to include this question.
 
 ## What do I do if I get an error message that my subscription level is not sufficient?
 
-TBD whether to include this question
+TBD whether to include this question.
