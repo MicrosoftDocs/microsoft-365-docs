@@ -28,9 +28,9 @@ conceptualContent:
         - url: https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816
           itemType: video
           text: Microsoft 365 Business training
-        - url: https://www.microsoft.com/microsoft-365/partners/resources/microsoft-365-business-licensing-deck
+        - url: https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/licensing-microsoft-365-in-smb
           itemType: overview
-          text: Compare plans (English Only)
+          text: Compare plans
         - url: https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description
           itemType: reference
           text: Service description
