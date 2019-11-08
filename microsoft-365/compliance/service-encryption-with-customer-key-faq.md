@@ -135,7 +135,7 @@ There are three ways that the availability key is used with Exchange Online:
   
 Office 365 uses the availability key both for service availability and recovery from an unhealthy Customer Key state for Exchange Online. There is a hierarchy of keys used by Customer Key. This hierarchy is illustrated in the following figure.
   
-![](media/a760156b-737f-469a-80ab-c28b7a8b9160.png)
+![A graphic shows the hierarchy of keys in Customer Key](media/a760156b-737f-469a-80ab-c28b7a8b9160.png)
   
 If both Azure Key Vault keys of a single Data Encryption Policy (DEP) are unavailable, Office 365 can use the availability key to change to a new DEP. Office 365 determines whether to use the availability key for service availability differently depending on whether a user-initiated activity, for example, when a user downloads email to the Outlook client, or a system-initiated activity, such as indexing mailbox contents, or for eDiscovery searches, triggered the process.
   
