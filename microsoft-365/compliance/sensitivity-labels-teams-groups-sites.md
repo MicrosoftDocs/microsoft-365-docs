@@ -171,7 +171,7 @@ For example, in PowerShell:
    ($setting["ClassificationList"])
 ```
 
-For more information about the old classification method, see [SharePoint "modern" sites classification](https://docs.microsoft.com/sharepoint/dev/solution-guidance/modern-experience-site-classification). 
+For more information about the old classification method, see [SharePoint "modern" sites classification](https://docs.microsoft.com/sharepoint/dev/solution-guidance/modern-experience-site-classification).
 
 Depending on your current deployment, you have two options to convert your old classifications to the new classifications as described in this section.
 
