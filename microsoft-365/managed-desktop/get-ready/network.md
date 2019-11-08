@@ -4,8 +4,8 @@ description:
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
+ms.author: jaimeo
 ms.localizationpriority: normal
-ms.date: 09/24/2018
 ms.collection: M365-modern-desktop
 ---
 
@@ -18,19 +18,19 @@ ms.collection: M365-modern-desktop
 
 Microsoft Managed Desktop is a cloud-managed service. There are a set of endpoints the Microsoft Managed Desktop services needs to be able to reach. This section lists the endpoints that need to be allowed for the various aspects of the Microsoft Managed Desktop service. 
 
-Customers can optimize their network by sending all trusted Microsoft 365 network requests directly through their firewall/proxy, bypassing authentication and all additional packet level inspection or processing. This reduces latency and your perimeter capacity requirements. 
+Customers can optimize their network by sending all trusted Microsoft 365 network requests directly through their firewall or proxy, bypassing authentication and all additional packet-level inspection or processing. This reduces latency and your perimeter capacity requirements. 
 
 Also, to optimize performance to Microsoft Managed Desktop cloud-based services, these endpoints need special handling by customer client browsers and the devices in their edge network. These devices include firewalls, SSL Break and Inspect, packet inspection devices, and data loss prevention systems.
 
 ### Proxy requirement
 
-The proxy or firewall must support TLS 1.2. Otherwise, customers may have to disable protocol detection.
+The proxy or firewall must support TLS 1.2. Otherwise, you might have to disable protocol detection.
 
 ### Endpoints allowed - specific for Microsoft Managed Desktop
 
 Microsoft Managed Desktop uses the Azure Portal to host its web console. The following URLs in the table below need to be on the allowed list of your proxy and firewall so that Microsoft Managed Desktop devices can communicate with Microsoft Services.  
 
-Note that the Microsoft Managed Desktop URL below is used for anything our service runs on the customer API. Customers must ensure this URL is always accessible on their corporate network.
+Note that the Microsoft Managed Desktop URL below is used for anything our service runs on the customer API. You must ensure this URL is always accessible on your corporate network.
 
 Microsoft service  | URLs required on allow list 
 --- | --- | ---
@@ -51,8 +51,7 @@ Delivery Optimization | [Configure Delivery Optimization for Windows 10 updates]
 Office 365 | [Office 365 URL and IP address ranges](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
 Azure Active Directory | [Hybrid identity required ports and protocols](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-ports) and [Active Directory and Active Directory Domain Services Port Requirements](https://aka.ms/AA26ygm) 
 Microsoft Intune | [Intune network configuration requirements](https://docs.microsoft.com/intune/network-bandwidth-use)
-Microsoft Defender Advanced Threat Protection (ATP) | [Microsoft Defender ATP endpoints](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection#enable-access-to-windows-defender-atp-service-urls-in-the-proxy-server
-)
+Microsoft Defender Advanced Threat Protection (ATP) | [Microsoft Defender ATP endpoints](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection#enable-access-to-windows-defender-atp-service-urls-in-the-proxy-server)
 
 <!---
 Microsoft service  | URLs required on allow list | Documentation source
