@@ -50,8 +50,8 @@ Here's a quick overview of the process.
 
 ## What gets moved to the additional archive storage space?
 
-To make efficient use of auto-expanding archive storage, folders may get moved. Office 365 determines which folders get moved when additional storage is added to the archive. When a folder is moved, a subfolder is typically created under the original folder in the archive portion of the folder list in Outlook. This new subfolder points to the items that were moved. The naming convention that Office 365 uses to name this folder is **\<folder name\>_yyyy (Created on mmm dd, yyyy h_mm)**, where: 
-  
+To make efficient use of auto-expanding archive storage, folders may get moved. Office 365 determines which folders get moved when additional storage is added to the archive. In some cases, when a folder is moved, one or more subfolders are automatically created and items from the original folder are distributed to these folders to facilitate the moving process. When viewing the archive portion of the folder list in Outlook, these subfolders are displayed under the original folder.  The naming convention that Office 365 uses to name these subfolders is **\<folder name\>_yyyy (Created on mmm dd, yyyy h_mm)**, where:
+
 - **yyyy** is the year the messages in the folder were received. 
     
 - **mmm dd, yyyy h_m** is the date and time that the subfolder was created by Office 365, in UTC format, based on the user's time zone and regional settings in Outlook. 
@@ -67,7 +67,7 @@ The following screenshots show a folder list before and after messages are moved
 ![Folder list of archive mailbox after auto-expanding archive is provisioned](media/c03c5f51-23fa-4fc2-b887-7e7e5cce30da.png)
   
 > [!NOTE]
-> Not all folders that are moved to an auxiliary archive are moved to a subfolder in the original folder. If possible, the system moves content to a subfolder to help distribute the content of a folder. However, this may not always be the case. Content will be moved to a new folder in an auxiliary archive, and the folder name may be different than the previously described naming convention.
+> Not all folders that are moved to an auxiliary archive are moved to a subfolder in the original folder. If possible, the system moves content to a subfolder to help distribute the content of a folder. But this may not always be the case. Content may be moved to a new folder in an auxiliary archive (with a folder name that's different than the previously described naming convention) or an entire folder may be moved to an auxiliary archive and retain it's original name.
 
 ## Outlook requirements for accessing items in an auto-expanded archive
 
