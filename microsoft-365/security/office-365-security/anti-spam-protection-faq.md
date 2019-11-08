@@ -84,7 +84,7 @@ You can send a notification to a specified email address when a sender is blocke
   
  **Q. Can I use a third-party anti-spam and anti-malware provider in conjunction with Exchange Online?**
   
-A. Yes, you may configure another spam and malware filtering service to protect your Exchange Online mailboxes. To do this for inbound mail, you should redirect your email messages to the third-party provider by changing your MX records to point to the third-party provider, and then redirect the messages to EOP for additional processing. To do this for outbound mail, please configure the message delivery destination to the third-party provider (smart host), as shown in [Scenario: Outbound Smart Hosting](https://technet.microsoft.com/library/431b3f02-4efd-4bd3-94e7-eecd03f8ef5e.aspx).
+A. Yes, you may configure another spam and malware filtering service to protect your Exchange Online mailboxes. To do this for inbound mail, you should redirect your email messages to the third-party provider by changing your MX records to point to the third-party provider, and then redirect the messages to EOP for additional processing. To do this for outbound mail, please configure the message delivery destination to the third-party provider (smart host).
   
  **Q. Does Microsoft have any documentation about how I can protect myself from phishing scams?**
   
@@ -120,7 +120,7 @@ A. The guidelines presented below are best practices for sending outbound email 
     
     [Set up SPF in Office 365 to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
     
-    [Create DNS records for Office 365](https://go.microsoft.com/fwlink/?LinkID=275414)
+    [Domains FAQ](/office365/admin/setup/domains-faq)
     
 5. **Signing email with DKIM, sign with relaxed canonicalization.**
     
