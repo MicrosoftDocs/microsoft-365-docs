@@ -1,8 +1,8 @@
 ---
-title: Compliance offering — Australian Government Certified Cloud Services List (CCSL)
+title: Australian Government Certified Cloud Services List (CCSL)
 description: Microsoft is included on the Australian Certified Cloud Services List for both Unclassified Dissemination Limiting Markers (DLM) and PROTECTED data based on an IRAP assessment and certification by the Australian Cyber Security Centre (ACSC).
 keywords: Microsoft 365, compliance, offerings
-localization_priority: Priority
+localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.author: robmazz

@@ -22,7 +22,7 @@ keywords: billing accounts, organization info, invoices
 
 The invoice provides a summary of your charges and instructions for payment. You can [view your online invoice](#view-your-online-invoice) in the Microsoft 365 admin center. You can also download it in the Portable Document Format (.pdf) to send via email.
 
-If you only have an Office 365 subscription, see [View your invoice for Office 365 for business](https://docs.microsoft.com/en-us/office365/admin/subscriptions-and-billing/view-your-bill-or-invoice).
+If you only have an Office 365 subscription, see [View your invoice for Office 365 for business](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/view-your-bill-or-invoice).
 
 ## Understand the invoice header
 
@@ -45,14 +45,14 @@ The **Billing Summary** shows the summary of charges since the previous billing 
 | --- | --- |
 | Charges|Total number of products purchased for this billing period, and their related charges and taxes. Purchases are aggregated to provide a concise view of your bill. |
 | Credits |Credits you received from returns |
-| Azure credits applied |Your Azure credits that are automatically applied to Azure charges each billing period. If you don't have any Azure credits, this field is hidden. For more information about Azure credits, see [Track Microsoft Customer Agreement Azure credit balance](https://docs.microsoft.com/en-us/azure/billing/billing-mca-check-azure-credits-balance). |
+| Azure credits applied |Your Azure credits that are automatically applied to Azure charges each billing period. If you don't have any Azure credits, this field is hidden. For more information about Azure credits, see [Track Microsoft Customer Agreement Azure credit balance](https://docs.microsoft.com/azure/billing/billing-mca-check-azure-credits-balance). |
 | Subtotal |The pre-tax amount due |
 | Tax |The type and amount of tax that you pay, depending on the country of your billing profile. If you don't have to pay tax, no tax is shown on your invoice. |
 
 ### Understand your charges
 
 The charges pages show the cost broken down by product. For Azure customers, the charges might be organized by invoice section. For more information about how invoice sections are used with Azure products, see
-[Invoice sections](https://docs.microsoft.com/en-us/azure/billing/billing-mca-overview#invoice-sections) in [Get started with your Microsoft Customer Agreement billing account](https://docs.microsoft.com/en-us/azure/billing/billing-mca-overview). Within each product order, cost is broken down by service family.
+[Invoice sections](https://docs.microsoft.com/azure/billing/billing-mca-overview#invoice-sections) in [Get started with your Microsoft Customer Agreement billing account](https://docs.microsoft.com/azure/billing/billing-mca-overview). Within each product order, cost is broken down by service family.
 
 | Term |Description |
 | --- | --- |
@@ -73,7 +73,7 @@ The total amount due for each service family is calculated by subtracting Azure 
 
 `Total = Charges/Credits - Azure Credit + Tax`
 
-If there are Azure charges on your invoice that you would like more details on, see [Understand charges on your Microsoft Customer Agreement invoice](https://docs.microsoft.com/en-us/azure/billing/billing-mca-understand-your-bill).
+If there are Azure charges on your invoice that you would like more details on, see [Understand charges on your Microsoft Customer Agreement invoice](https://docs.microsoft.com/azure/billing/billing-mca-understand-your-bill).
 
 ## Understand the last invoice page
 
@@ -108,4 +108,4 @@ see more details for each item. The online invoice includes:
 
 If you have questions or need help with your Azure credits, <a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">create a support request with Azure support</a>.
 
-If you have questions or need help with your invoice in Microsoft 365 admin center, [contact support for business products](https://docs.microsoft.com/en-us/office365/admin/contact-support-for-business-products).
+If you have questions or need help with your invoice in Microsoft 365 admin center, [contact support for business products](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).

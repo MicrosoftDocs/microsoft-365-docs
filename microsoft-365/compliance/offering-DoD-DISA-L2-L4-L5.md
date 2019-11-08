@@ -1,8 +1,8 @@
 ---
-title: Compliance offering — US Department of Defense (DoD) Provisional Authorization
+title: US Department of Defense (DoD) Provisional Authorization
 description: Microsoft received Department of Defense (DoD) Provisional Authorizations at Impact Levels 5, 4, and 2.
 keywords: Microsoft 365, compliance, offerings
-localization_priority: Priority
+localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.author: robmazz
@@ -94,7 +94,7 @@ Also, Microsoft offerings outside the FedRAMP-certified boundary that could pote
 ## Resources
 
 - [DoD Cloud Computing Security Requirements Guide (SRG) and other documents](https://public.cyber.mil/dccs/dccs-documents/)
-- [DISA Cloud Service Support](https://www.disa.mil/Computing/Cloud-Services/Cloud-Support)
+- [DISA Cloud Service Support](http://www.disa.mil/Computing/Cloud-Services/Cloud-Support)
 - [Protecting Controlled Unclassified Information in nonfederal information systems and organizations](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-171.pdf)
 - [NIST Cybersecurity Framework](https://www.nist.gov/cyberframework)
 - [Microsoft Common Controls Hub Compliance Framework](https://www.microsoft.com/trustcenter/common-controls-hub)

@@ -76,13 +76,13 @@ The nitty gritty: DKIM uses a private key to insert an encrypted signature into 
 Since both 1024 and 2048 bitness are supported for DKIM keys, these directions will tell you how to upgrade your 1024-bit key to 2048. The steps below are for two use-cases, please choose the one that best fits your configuration.
 
 1. When you **already have DKIM configured**, you rotate bitness as follows:
-    1. [Connect to Office 365 workloads via PowerShell](https://docs.microsoft.com/en-us/office365/enterprise/powershell/connect-to-all-office-365-services-in-a-single-windows-powershell-window). (The cmdlet comes from Exchange Online.)
+    1. [Connect to Office 365 workloads via PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-all-office-365-services-in-a-single-windows-powershell-window). (The cmdlet comes from Exchange Online.)
     1. And then execute the following cmdlet:
 
 &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`Rotate-DkimSigningConfig -KeySize 2048 -Identity {Guid of the existing Signing Config}`
 
 1. Or for a **new implementation of DKIM**:
-    1. [Connect to Office 365 workloads via PowerShell](https://docs.microsoft.com/en-us/office365/enterprise/powershell/connect-to-all-office-365-services-in-a-single-windows-powershell-window). (This is an Exchange Online cmdlet.)
+    1. [Connect to Office 365 workloads via PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-all-office-365-services-in-a-single-windows-powershell-window). (This is an Exchange Online cmdlet.)
     1. Execute the following cmdlet:
 
 &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -112,7 +112,7 @@ To configure DKIM, you will complete these steps:
 ### Publish two CNAME records for your custom domain in DNS
 <a name="Publish2CNAME"> </a>
 
-For each domain for which you want to add a DKIM signature in DNS, you need to publish two CNAME records. 
+For each domain for which you want to add a DKIM signature in DNS, you need to publish two CNAME records.
 
 Run the following commands:
 
@@ -126,6 +126,7 @@ Create CNAMEs referenced in Get-DkimSigningConfig output
 ```powershell
     Set-DkimSigningConfig -Identity <domain> -Enabled $true
 ```
+
 The CNAME records in your DNS will point to already created DKIM TXT records that exist in DNS on the Microsoft DNS servers for Office 365.
   
 Office 365 performs automatic key rotation using the two records that you establish. If you have provisioned custom domains in addition to the initial domain in Office 365, you must publish two CNAME records for each additional domain. So, if you have two domains, you must publish two additional CNAME records, and so on.
@@ -207,8 +208,8 @@ Once you have published the CNAME records in DNS, you are ready to enable DKIM s
    Where _domain_ is the name of the custom domain that you want to enable DKIM signing for. 
 
    For example, for the domain contoso.com:
-   
-   ```powershell
+
+    ```powershell
     Set-DkimSigningConfig -Identity contoso.com -Enabled $true
     ```
 
@@ -223,15 +224,15 @@ Wait a few minutes before you follow these steps to confirm that you have proper
 - Open the message and look at the header. Instructions for viewing the header for the message will vary depending on your messaging client. For instructions on viewing message headers in Outlook, see [View e-mail message headers](https://support.office.com/article/CD039382-DC6E-4264-AC74-C048563D212C).
 
   The DKIM-signed message will contain the host name and domain you defined when you published the CNAME entries. The message will look something like this example:
-    
-    ```text
+
+  ```text
     From: Example User <example@contoso.com>
     DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
         s=selector1; d=contoso.com; t=1429912795;
         h=From:To:Message-ID:Subject:MIME-Version:Content-Type;
         bh=<body hash>;
         b=<signed field>;
-    ```
+  ```
 
 - Look for the Authentication-Results header. While each receiving service uses a slightly different format to stamp the incoming mail, the result should include something like **DKIM=pass** or **DKIM=OK**.
 

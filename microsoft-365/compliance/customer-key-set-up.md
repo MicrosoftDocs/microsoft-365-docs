@@ -17,12 +17,16 @@ description: "Learn how to set up Customer Key for Office 365 for Exchange Onlin
 
 # Set up Customer Key for Office 365
 
+With Customer Key, you control your organization's encryption keys and then configure Office 365 to use them to encrypt your data at rest in Microsoft's data centers. In other words, Customer Key allows customers to add a layer of encryption that belongs to them, with their keys. Data at rest includes data from Exchange Online and Skype for Business that is stored in mailboxes and files that are stored in SharePoint Online and OneDrive for Business.
+
+You must set up Azure before you can use Customer Key for Office 365. This topic describes the steps you need to follow to create and configure the required Azure resources and then provides the steps for setting up Customer Key in Office 365. After you have completed Azure setup, you determine which policy, and therefore, which keys, to assign to mailboxes and files in your organization. Mailboxes and files for which you don't assign a policy will use encryption policies that are controlled and managed by Microsoft. For more information about Customer Key, or for a general overview, see the [Customer Key for Office 365 FAQ](service-encryption-with-customer-key-faq.md).
+  
 > [!IMPORTANT]
 > We strongly recommend that you follow the best practices in this topic. These are called out as **TIP** and **IMPORTANT**. Customer Key gives you control over root encryption keys whose scope can be as large as your entire organization. This means that mistakes made with these keys can have a broad impact and may result in service interruptions or irrevocable loss of your data.
   
 ## Before you set up Customer Key
 
-Before you get started, ensure that you have the appropriate licensing for your organization. Customer Key in Office 365 is offered in Office 365 E5 or the Advanced Compliance SKU. To understand the concepts and procedures in this topic, review the [Azure Key Vault](https://docs.microsoft.com/en-us/azure/key-vault/) documentation. Also, become familiar with the terms used in Azure, for example, [tenant](https://docs.microsoft.com/en-us/previous-versions/azure/azure-services/jj573650(v=azure.100)).
+Before you get started, ensure that you have the appropriate licensing for your organization. Customer Key in Office 365 is offered in Office 365 E5 or the Advanced Compliance SKU. To understand the concepts and procedures in this topic, review the [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/) documentation. Also, become familiar with the terms used in Azure, for example, [tenant](https://docs.microsoft.com/previous-versions/azure/azure-services/jj573650(v=azure.100)).
 
 FastTrack is only used to collect the required tenant and service configuration information used to register for Customer Key. The Customer Key Offers are published via FastTrack so that it is convenient for you and our partners to submit the required information using the same method. FastTrack also makes it easy to archive the data that you provide in the Offer.
   
@@ -86,7 +90,7 @@ Complete these tasks in Azure Key Vault. You will need to complete these steps r
   
 ### Create two new Azure subscriptions
 
-Customer Key requires two Azure subscriptions. As a best practice, Microsoft recommends that you create new Azure subscriptions for use with Customer Key. Azure Key Vault keys can only be authorized for applications in the same Azure Active Directory (AAD) tenant, you must create the new subscriptions using the same Azure AD tenant used with your Office 365 organization where the DEPs will be assigned. For example, using your work or school account that has global administrator privileges in your Office 365 organization. For detailed steps, see [Sign up for Azure as an organization](https://azure.microsoft.com/en-us/documentation/articles/sign-up-organization/).
+Customer Key requires two Azure subscriptions. As a best practice, Microsoft recommends that you create new Azure subscriptions for use with Customer Key. Azure Key Vault keys can only be authorized for applications in the same Azure Active Directory (AAD) tenant, you must create the new subscriptions using the same Azure AD tenant used with your Office 365 organization where the DEPs will be assigned. For example, using your work or school account that has global administrator privileges in your Office 365 organization. For detailed steps, see [Sign up for Azure as an organization](https://azure.microsoft.com/documentation/articles/sign-up-organization/).
   
 > [!IMPORTANT]
 > Customer Key requires two keys for each data encryption policy (DEP). In order to achieve this, you must create two Azure subscriptions. As a best practice, Microsoft recommends that you have separate members of your organization configure one key in each subscription. In addition, these Azure subscriptions should only be used to administer encryption keys for Office 365. This protects your organization in case one of your operators accidentally, intentionally, or maliciously deletes or otherwise mismanages the keys for which they are responsible. <br/> We recommend that you set up new Azure subscriptions that are solely used for managing Azure Key Vault resources for use with Customer Key. There is no practical limit to the number of Azure subscriptions that you can create for your organization. Following these best practices will minimize the impact of human error while helping to manage the resources used by Customer Key.
@@ -254,7 +258,7 @@ Add-AzureKeyVaultKey -VaultName <vaultname> -Name <keyname> -Destination <HSM|So
 ```
 
 Where:
-  
+
 - *vaultname* is the name of the key vault in which you want to create the key.
 
 - *keyname* is the name you want to give the new key.
@@ -322,7 +326,7 @@ Performing validation before using keys in a DEP is optional, but highly recomme
   
 To verify that your keys have get, wrapKey, and unwrapKey operations enabled:
   
-Run the [Get-AzureRmKeyVault](https://docs.microsoft.com/powershell/module/AzureRM.KeyVault/Get-AzureRmKeyVault) cmdlet as follows: 
+Run the [Get-AzureRmKeyVault](https://docs.microsoft.com/powershell/module/AzureRM.KeyVault/Get-AzureRmKeyVault) cmdlet as follows:
   
 ```powershell
 Get-AzureRMKeyVault -VaultName <vaultname>
@@ -392,7 +396,7 @@ Remember! When you create a DEP, you specify two keys that reside in two differe
   
 To create the DEP, follow these steps:
   
-1. On your local computer, using a work or school account that has global administrator permissions in your Office 365 organization, [connect to Exchange Online PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps) by opening Windows PowerShell and running the following command.
+1. On your local computer, using a work or school account that has global administrator permissions in your Office 365 organization, [connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps) by opening Windows PowerShell and running the following command.
 
    ```powershell
    $UserCredential = Get-Credential
@@ -440,7 +444,7 @@ Assign the DEP to a mailbox by using the Set-Mailbox cmdlet. Once you assign the
 Set-Mailbox -Identity <MailboxIdParameter> -DataEncryptionPolicy <PolicyName>
 ```
 
-Where *MailboxIdParameter* specifies a mailbox. For more information about the Set-Mailbox cmdlet, see [Set-Mailbox](https://docs.microsoft.com/en-us/powershell/module/exchange/mailboxes/set-mailbox?view=exchange-ps).
+Where *MailboxIdParameter* specifies a mailbox. For more information about the Set-Mailbox cmdlet, see [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox?view=exchange-ps).
   
 ### Validate mailbox encryption
 
@@ -474,7 +478,7 @@ Remember! When you create a DEP, you specify two keys that reside in two differe
   
 To create a DEP, you need to remotely connect to SharePoint Online by using Windows PowerShell.
   
-1. On your local computer, using a work or school account that has global administrator permissions in your Office 365 organization, [Connect to SharePoint Online Powershell](https://docs.microsoft.com/en-us/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps).
+1. On your local computer, using a work or school account that has global administrator permissions in your Office 365 organization, [Connect to SharePoint Online Powershell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps).
 
 2. In the Microsoft SharePoint Online Management Shell, run the Register-SPODataEncryptionPolicy cmdlet as follows:
 
@@ -486,7 +490,7 @@ To create a DEP, you need to remotely connect to SharePoint Online by using Wind
 
 ### Validate encryption of Group Sites, Team Sites, and OneDrive for Business
 
- You can [connect to SharePoint Online PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps), and then use the Get-SPODataEncryptionPolicy cmdlet to check the status of your tenant. The _State_ property returns a value of **registered** if Customer Key encryption is enabled and all files in all sites have been encrypted. If encryption is still in progress, this cmdlet provides information on what percentage of sites is complete.
+ You can [connect to SharePoint Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps), and then use the Get-SPODataEncryptionPolicy cmdlet to check the status of your tenant. The _State_ property returns a value of **registered** if Customer Key encryption is enabled and all files in all sites have been encrypted. If encryption is still in progress, this cmdlet provides information on what percentage of sites is complete.
 
 ## Related articles
 

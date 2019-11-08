@@ -1,5 +1,5 @@
 ---
-title: "Creating a trainable classifier (preview)"
+title: "Create a trainable classifier (preview)"
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -11,12 +11,12 @@ ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
 - MET150
-description: "Use trainable classifiers when one of the ready to use box classifiers won't meet your needs. A Microsoft 365 classifier is a tool you can train to recognize various types of content by giving it samples to look at. This topics shows you how to create a custom classifier."
+description: "Use trainable classifiers when one of the ready to use box classifiers won't meet your needs. A Microsoft 365 classifier is a tool you can train to recognize various types of content by giving it samples to look at. This topic shows you how to create a custom classifier."
 ---
 
 # Creating a trainable classifier (preview)
 
-Use trainable classifiers when one of the out of the box classifiers won't meet your needs. A Microsoft 365 classifier is a tool you can train to recognize various types of content by giving it samples to look at. Training the classifier involves first giving it samples that are human picked and positively match the category, then after it has processed those, testing it predictions by giving it a mix of positive and negative samples.
+Use trainable classifiers when one of the out of the box classifiers won't meet your needs. A Microsoft 365 classifier is a tool you can train to recognize various types of content by giving it samples to look at. Training the classifier involves first giving it samples that are human picked and positively match the category. Then after it has processed those, you test the predictions by giving it a mix of positive and negative samples.
 
 To learn more about the different types of classifiers, see [Getting started with trainable classifiers (preview)](classifier-getting-started-with.md)
 
@@ -40,7 +40,7 @@ Once the trainable classifier has processed enough positive samples to build a p
 > For best results, have 10,000 items in your test sample set with an even distribution of positive and negative matches.
 
 > [!TIP]
-> Opt-in is required the first time for trainable classifiers. classifiers. It takes twelve days for Microsoft 365 to complete a baseline evaluation of your organizations content.
+> Opt-in is required the first time for trainable classifiers. It takes twelve days for Microsoft 365 to complete a baseline evaluation of your organizations content.
 
 ## How to create a trainable classifier
 
@@ -52,7 +52,7 @@ Once the trainable classifier has processed enough positive samples to build a p
 > [!IMPORTANT]
 > Make sure the items in your seed set are **strong** examples of the category. The trainable classifier initially builds its model based on what you seed it with. The classifier assumes all seed samples are strong positives and has no way of knowing if a sample is a weak or negative match to the category.
 
-2. Place the seed content in a SharePoint Online folder that is dedicated to holding *the seed content only*. Make note of the site, library and folder url.
+2. Place the seed content in a SharePoint Online folder that is dedicated to holding *the seed content only*. Make note of the site, library, and folder url.
 
 > [!TIP]
 > If you create a new site and folder for your seed data, allow at least an hour for that location to be indexed before creating the trainable classifier that will use that seed data.
@@ -65,13 +65,13 @@ Once the trainable classifier has processed enough positive samples to build a p
 
 6. Fill in appropriate values for the `Name`, and `Description` fields of the category of items you want this trainable classifier to identify.
 
-7. Enter the exact SharePoint Online site, library and folder URL for the seed content site from step 2. Choose `Add`.
+7. Enter the exact SharePoint Online site, library, and folder URL for the seed content site from step 2. Choose `Add`.
 
 8. Review the settings and choose `Create trainable classifier`.
 
-9. Within 24 hours the the trainable classifier will process the seed data and build a prediction model. The classifier status will be `In progress` while it processes the seed data. When the classifier is finished processing the seed data, the status will change to `Need test items`.
+9. Within 24 hours the trainable classifier will process the seed data and build a prediction model. The classifier status is `In progress` while it processes the seed data. When the classifier is finished processing the seed data, the status changes to `Need test items`.
 
-10. You can now view the details page by clicking on the classifier.
+10. You can now view the details page by choosing the classifier.
 
 
 ![trainable classifier ready for testing](media/classifier-trainable-ready-to-test-detail.png)
@@ -110,7 +110,7 @@ Once the trainable classifier has processed enough positive samples to build a p
 
 21. Publish the classifier.
 
-22. Once published your classifier will be available as a condition in the [auto-apply retention label policy based on a condition](labels.md#applying-a-retention-label-automatically-based-on-conditions).
+22. Once published your classifier will be available as a condition in the [auto-apply retention label policy based on a condition](labels.md#applying-a-retention-label-automatically-based-on-conditions) and in [Communication compliance](communication-compliance.md).
 
 > [!CAUTION]
 > Once a classifier is published, it can't go through any additional training, so be very sure that you have tested and reviewed as many items as possible to ensure that the accuracy is as high as possible.

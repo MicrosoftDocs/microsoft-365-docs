@@ -15,10 +15,10 @@ ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
 description: "The Compliance Manager in the Microsoft Service Trust Portal provides tools to track, implement, and manage the controls to help your organization reach compliance with security and data protection industry standards (such as GDPR, ISO 27001 and 27018, and HIPAA) when measured against Microsoft cloud services, such as Office 365 and Microsoft Azure. The Compliance Manager helps the person who oversees the data protection and privacy strategy for your organization manage your compliance and risk assessment process."
 ---
 
-# Microsoft Compliance Manager (Legacy)
+# Microsoft Compliance Manager (Classic)
 
 > [!NOTE]
-> This documentation describes a legacy product. Users are strongly discouraged from using this version of Compliance Manager and instead encouraged to use the new  [Microsoft Compliance Score](compliance-score.md). 
+> This documentation describes a legacy product. Users are strongly discouraged from using this version of Compliance Manager and instead encouraged to use the new  [Microsoft Compliance Score](compliance-score.md).
 
  *Compliance Manager isn't available in Office 365 operated by 21Vianet, Office 365 Germany, Office 365 U.S. Government Community High (GCC High), or Office 365 Department of Defense.* 
   
@@ -829,4 +829,4 @@ Compliance Manager is designed to be regularly updated to keep pace with changes
 
 - [Announcing Compliance Manager general availability](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Announcing-Compliance-Manager-general-availability/ba-p/161922)
 
-- [Microsoft 365 provides an information protection strategy to help with the GDPR](https://blogs.office.com/en-us/2018/02/22/microsoft-365-provides-an-information-protection-strategy-to-help-with-the-gdpr)
+- [Microsoft 365 provides an information protection strategy to help with the GDPR](https://blogs.office.com/2018/02/22/microsoft-365-provides-an-information-protection-strategy-to-help-with-the-gdpr)

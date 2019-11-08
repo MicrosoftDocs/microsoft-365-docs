@@ -102,6 +102,9 @@ The conditions now available can determine if:
 - Content contains a label. For more information, see the below section [Using a label as a condition in a DLP policy](#using-a-label-as-a-condition-in-a-dlp-policy).
     
 - Content is shared with people outside or inside your organization.
+
+> [!NOTE]
+> Users who have non-guest accounts in a host organization's Active Directory or Azure Active Directory tenant are considered as people inside the organization.
     
 #### Types of sensitive information
 

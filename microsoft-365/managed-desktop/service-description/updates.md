@@ -4,6 +4,7 @@ description: Keeping Microsoft Managed Desktop up to date is a balance of speed 
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
+ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 ---

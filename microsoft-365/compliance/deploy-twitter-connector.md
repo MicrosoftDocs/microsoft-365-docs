@@ -113,11 +113,11 @@ Download the prebuilt package from the Release section in the GitHub repository 
 
 3. Go to the newly created web app resource and click **Application Settings** in the left navigation pane. Under **Application settings**, click **Add new setting** and add the following three settings. Use the values (that you copied to the text file from the previous steps): 
 
-    – **APISecretKey — You can type any value as the secret. This is used to access the connector web app in Step 7.
+    - **APISecretKey** – You can type any value as the secret. This is used to access the connector web app in Step 7.
 
-    – **StorageAccountConnectionString** – The connection string Uri that you copied after creating the Azure storage account in Step 3.
+    - **StorageAccountConnectionString** – The connection string Uri that you copied after creating the Azure storage account in Step 3.
 
-    – **tenantId** – The tenant ID of your Office 365 organization that you copied after creating the Twitter connector app in Azure Active Directory in Step 2.
+    - **tenantId** – The tenant ID of your Office 365 organization that you copied after creating the Twitter connector app in Azure Active Directory in Step 2.
 
     ![](media/TCimage23.png)
 
@@ -164,11 +164,11 @@ Download the prebuilt package from the Release section in the GitHub repository 
 
 8. Do the following tasks:
 
-   – Select the checkbox to allow the connector app to sign in to Twitter.
+   - Select the checkbox to allow the connector app to sign in to Twitter.
    
-   – Add the OAuth redirect Uri using the following format: **\<connectorserviceuri>/Views/TwitterOAuth**, where the value of *connectorserviceuri* is the Azure app service URL for your organization; for example, https://twitterconnector.azurewebsites.net/Views/TwitterOAuth.
+   - Add the OAuth redirect Uri using the following format: **\<connectorserviceuri>/Views/TwitterOAuth**, where the value of *connectorserviceuri* is the Azure app service URL for your organization; for example, https://twitterconnector.azurewebsites.net/Views/TwitterOAuth.
 
-   ![](media/TCimage32.png)
+    ![](media/TCimage32.png)
 
 The Twitter developer app is now ready to use.
 
@@ -188,14 +188,14 @@ The Twitter developer app is now ready to use.
 
 4. Under **Configuration Details**, enter the following configuration settings 
 
-   – **Twitter Api Key** – The app ID for the Twitter application that you created in Step 5.
-   – **Twitter Api Secret Key** – The API secret key for the Twitter application that you created in Step 5.
-   – **Twitter Access Token** – The access token that you created in Step 5.
-   – **Twitter Access Token Secret** – The access token secret that you created in Step 5.
-   – **AAD Application ID** – The application ID for the Azure Active Directory app that you created in Step 2
-   – **AAD Application Secret** – The value for the APISecretKey secret that you created in Step 4.
-   – **AAD Application Uri** – The AAD application Uri obtained in Step 2; for example, https://microsoft.onmicrosoft.com/2688yu6n-12q3-23we-e3ee-121111123213.
-   – **App Insights Instrumentation Key** – Leave this box blank.
+   - **Twitter Api Key** – The app ID for the Twitter application that you created in Step 5.
+   - **Twitter Api Secret Key** – The API secret key for the Twitter application that you created in Step 5.
+   - **Twitter Access Token** – The access token that you created in Step 5.
+   - **Twitter Access Token Secret** – The access token secret that you created in Step 5.
+   - **AAD Application ID** – The application ID for the Azure Active Directory app that you created in Step 2
+   - **AAD Application Secret** – The value for the APISecretKey secret that you created in Step 4.
+   - **AAD Application Uri** – The AAD application Uri obtained in Step 2; for example, `https://microsoft.onmicrosoft.com/2688yu6n-12q3-23we-e3ee-121111123213`.
+   - **App Insights Instrumentation Key** – Leave this box blank.
 
 5. Click **Save** to save the connector settings.
 
@@ -211,9 +211,9 @@ The Twitter developer app is now ready to use.
 
 3. On the **Add Connector App** page, enter the following information and then click **Validate connector**.
 
-    – In the first box, type a name for the connector, such as **Twitter**.
-    – In the second box, type or paste the value of the APISecretKey that you added in Step 4.
-    – In the third box, type or paste the Azure app service URL; for example, **https://twitterconnector.azurewebsites.net**.
+    - In the first box, type a name for the connector, such as **Twitter**.
+    - In the second box, type or paste the value of the APISecretKey that you added in Step 4.
+    - In the third box, type or paste the Azure app service URL; for example, **https://twitterconnector.azurewebsites.net**.
 
    After the connector is successfully validated, click **Next**.
 

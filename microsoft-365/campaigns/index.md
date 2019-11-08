@@ -61,7 +61,7 @@ Get started
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/walkthrough-map-blue.svg" alt="Roadmap" />
+                            <img src="https://docs.microsoft.com/office/media/icons/walkthrough-map-blue.svg" alt="Roadmap" />
                         </div>
                     </div>
                     <div class="cardText">

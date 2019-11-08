@@ -107,7 +107,7 @@ In accordance with security best practices and Microsoft 365 Enterprise deployme
 
 - Prevent intranet data leaks with Office 365 Data Loss Prevention
 
-  Contoso has configured [Data Loss Prevention](https://docs.microsoft.com/en-us/microsoft-365/compliance/data-loss-prevention-policies) policies for Exchange Online, SharePoint, and OneDrive for Business to prevent users from accidentally or intentionally sharing sensitive data.
+  Contoso has configured [Data Loss Prevention](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies) policies for Exchange Online, SharePoint, and OneDrive for Business to prevent users from accidentally or intentionally sharing sensitive data.
 
 - Prevent device data leaks Windows Information Protection
 

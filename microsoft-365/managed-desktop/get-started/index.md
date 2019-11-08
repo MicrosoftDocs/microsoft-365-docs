@@ -1,6 +1,6 @@
 ---
 title: Get started with Microsoft Managed Desktop 
-description:  
+description:  Steps to set up devices and configure Azure features to work with the service
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
@@ -9,8 +9,16 @@ ms.localizationpriority: normal
 
 # Get started with Microsoft Managed Desktop
 
-Once you're ready to enroll in the service, this section includes the steps to follow to actually join the service, obtain and set up devices, prep your end users, and deploy apps.
+Now that you've enrolled in the service, follow these steps to confirm admin contacts, adjust conditional access settings, assign licences to users, enable Enterprise State Roaming,  obtain and set up devices, prepare users, and deploy apps to devices.
 
-- [Add Admin contacts in Microsoft Managed Desktop Admin portal](add-admin-contacts.md)
-- [Set up Microsoft Managed Desktop devices](set-up-devices.md)
-- [Deploy apps to Microsoft Managed Desktop devices](deploy-apps.md)
+> [!NOTE]
+> This is the recommended order to follow, but you do have some flexibility in the sequence.
+
+1. [Add and verify admin contacts in the Admin portal](add-admin-contacts.md)
+2. [Adjust conditional access](conditional-access.md)
+3. [Assign licenses](assign-licenses.md)
+4. [Deploy Intune Company Portal](company-portal.md)
+5. [Enable Enterprise State Roaming](enterprise-state-roaming.md)
+6. [Set up devices](set-up-devices.md)
+7. [Get your users ready to use devices](get-started-devices.md)
+8. [Deploy apps](deploy-apps.md)

@@ -21,9 +21,7 @@ description: "Summary: Create sensitive and highly confidential teams in Microso
 
 This article provides step-by-step instructions to create a dev/test environment that includes the sensitive and highly confidential teams for the [Secure files in Microsoft Teams](secure-files-in-teams.md) solution.
   
-![Sensitive and highly confidential teams in Microsoft Teams for files.](../media/sensitive-highly confidential-teams-dev-test.png)
-![Configuration for the Company Strategy team.](../media/highlyconfidential-team-config-dev-test.png) 
-
+![Sensitive and highly confidential teams in Microsoft Teams for files.](../media/sensitive-highly-confidential-teams-dev-test.png)
   
 Use this dev/test environment to experiment and fine-tune settings for your specific needs before deploying these types of teams in production.
   

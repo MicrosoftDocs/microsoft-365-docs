@@ -23,9 +23,13 @@ In addition to using volume-level encryption, Exchange Online, Skype for Busines
 - The customer supplies root keys used with service encryption and the customer manages these keys using Azure Key Vault. Microsoft manages all other keys. This option is called Customer Key, and it is currently available for Exchange Online, SharePoint Online, and OneDrive for Business. (Previously referred to as Advanced Encryption with BYOK. See [Enhancing transparency and control for Office 365 customers](http://blogs.office.com/2015/04/21/enhancing-transparency-and-control-for-office-365-customers/) for the original announcement.)
 
 Service encryption provides multiple benefits. For example, Customer Key:
+
 - Provides rights protection and management features on top of strong encryption protection.
+
 - Includes a Customer Key option that enables multi-tenant services to provide per-tenant key management.
+
 - Provides separation of Windows operating system administrators from access to customer data stored or processed by the operating system.
+
 - Enhances the ability of Office 365 to meet the demands of customers that have compliance requirements regarding encryption.
 
 ## Customer Key
