@@ -1,31 +1,41 @@
 ---
-title: Admins - help users get started with their Microsoft Managed Desktop device
+title: Help users get started with their device
 description:  
 keywords: Microsoft Managed Desktop, device, get started, Microsoft 365
 ms.service: m365-md
 author: jaimeo
+ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 ---
 
 # Get your users ready to use devices
 
-Microsoft Managed Desktop devices come pre-configured with the current version of Windows. Configurations and apps will be installed from the cloud as the user completes setting up the device. 
+Once a Microsoft Managed Desktop device is in the hands of your end user, getting started with it is fast and easy. Devices come pre-configured with the current version of Windows, and configurations and apps are installed from the cloud as the user completes setup. 
  
-There are only a few steps a user needs to take during device set up to be productive with their device. Microsoft Managed Desktop recommends using *Get started with your device* guide linked below. This downloadable guide provides basic instructions for setting up a new Microsoft Managed Desktop device. We've designed this guide to be a baseline for IT administrators. Use it as is, or update it to add steps or info that will help your users set up their devices. 
+To make this even easier, we offer four versions of a user guide that walk your users through the initial setup and provide help resources both for the setup and for use later, if needed.
 
-## Get started guide 
-You can download the guide: [Microsoft Managed Desktop - Get started with your device](https://www.microsoft.com/download/details.aspx?id=57918).
+- A ready-to-use guide in two varieties: one for organizations using Microsoft's support system (the Get Help app), one for those providing their own end-user support
+- A customizable guide in the same varieties that you can edit to include details specific to your organization
 
-## What should I update in the Get started guide?
+## Ready-to-use guides
+1. Download the version appropriate to your organization:
+- [Microsoft Managed Desktop - Get started with your device](https://www.microsoft.com/download/details.aspx?id=57918).
+- 
+2. Distribute to your end users either as PDF or hard copy.
 
-Here are a few ways IT administrators can personalize *Get started with your device*:
-- Include the preferred internet the user should connect to in step 2
-- Give the user with the appropriate username, or domain name to enter at step 3
-- Add a support contact within your organization for support outside of Microsoft Managed Desktop support
-- Add instructions about where to pick up their device (if this is separate from these instructions)
+## Customizable guides
 
-At this point, you're ready to continue with the getting started steps:
+1. Download the version appropriate to your organization:
+- [Microsoft Managed Desktop - Get started with your device](https://www.microsoft.com/download/details.aspx?id=57918).
+- 
+2. Use any app capable of opening PDF files to fill in details relevant to your organization:
+    - 
+    -     
+    -
+3. Save the edited PDF, and then istribute to your end users either as PDF or hard copy. 
+
+At this point, you're ready to move on to deploying apps:
 
 
 ## Steps to get started with Microsoft Managed Desktop
