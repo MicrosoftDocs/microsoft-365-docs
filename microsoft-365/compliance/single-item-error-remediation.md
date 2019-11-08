@@ -23,7 +23,7 @@ Error remediation gives Advanced eDiscovery users the ability to rectify data is
 
 ## Identify documents with errors
 
-Documents with processing errors in a review set are now identified (with a banner). You can remediate or ignore the error. Because the file is identified by the banner, you can also view the file metadata. The following screenshot shows the processing error banner for a Word document in a review set that is password-protected.
+Documents with processing errors in a review set are now identified (with a banner). You can remediate or ignore the error. The following screenshot shows the processing error banner for a Word document in a review set that is password-protected. Also notice that you can view the file metadata of documents with processing errors.
 
 ![Banner displayed for document with processing error](media/SIERimage1.png)
 
@@ -51,7 +51,7 @@ To remediate a single document, follow these steps:
 
    ![Download the document with the processing error](media/SIERimage5.png)
 
-2. Remediate the error in the file offline. For encrypted files, that would require decryption software, to remove password protection, either provide the password and save the file or use a password cracker. After the file is remediated, go to the next step.
+2. Remediate the error in the file offline. For encrypted files, that would require decryption software, to remove password protection, either provide the password and save the file or use a password cracker. After you remediate the file, go to the next step.
 
 3. In the review set, select the file with the processing error that you remediated, and then  click **Remediation**.
 
