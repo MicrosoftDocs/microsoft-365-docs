@@ -37,7 +37,8 @@ highlightedContent:
     # Card
     - title: Test Lab Guides for IT pros
       itemType: how-to-guide
-      url: ./enterprise/m365-enterprise-test-lab-guides.md# Card
+      url: ./enterprise/m365-enterprise-test-lab-guides.md
+    # Card  
     - title: Microsoft 365 tech community
       itemType: get-started
       url: https://techcommunity.microsoft.com/t5/Microsoft-365/ct-p/microsoft365
