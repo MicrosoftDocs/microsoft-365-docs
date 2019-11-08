@@ -50,13 +50,13 @@ Here's a quick overview of the process.
 
 ## What gets moved to the additional archive storage space?
 
-To make efficient use of auto-expanding archive storage, folders might get moved. Office 365 determines which folders get moved when additional storage is added to the archive. When a folder is moved, a subfolder is automatically created under the original folder in the archive portion of the folder list in Outlook. This new subfolder points to the items that were moved. The naming convention that Office 365 uses to name this folder is **\<folder name\>_yyyy (Created on mmm dd, yyyy h_mm)**, where: 
+To make efficient use of auto-expanding archive storage, folders may get moved. Office 365 determines which folders get moved when additional storage is added to the archive. When a folder is moved, a subfolder is typically created under the original folder in the archive portion of the folder list in Outlook. This new subfolder points to the items that were moved. The naming convention that Office 365 uses to name this folder is **\<folder name\>_yyyy (Created on mmm dd, yyyy h_mm)**, where: 
   
 - **yyyy** is the year the messages in the folder were received. 
     
 - **mmm dd, yyyy h_m** is the date and time that the subfolder was created by Office 365, in UTC format, based on the user's time zone and regional settings in Outlook. 
     
-The following screenshots show a folder list before and after messages are moved in an auto-expanded archive.
+The following screenshots show a folder list before and after messages are moved to an auto-expanded archive.
   
  **Before additional storage is added**
   
@@ -66,6 +66,9 @@ The following screenshots show a folder list before and after messages are moved
   
 ![Folder list of archive mailbox after auto-expanding archive is provisioned](media/c03c5f51-23fa-4fc2-b887-7e7e5cce30da.png)
   
+> [!NOTE]
+> Not all folders that are moved to an auxiliary archive are moved to a subfolder of the original folder. If possible, the system moves content to a subfolder to help distribute the content of a folder. However, this may not always be the case. Content will be moved to a new folder in the auxiliary archive storage mapped and this folder will have a naming convention that is different than the one previously described.
+
 ## Outlook requirements for accessing items in an auto-expanded archive
 
 To access messages that are stored in an auto-expanded archive, users have to use one of the following Outlook clients:
@@ -97,11 +100,11 @@ This section explains the functionality between auto-expanding archiving and oth
   
 - **eDiscovery:** When you use an Office 365 eDiscovery tool, such as Content Search or In-Place eDiscovery, the additional storage areas in an auto-expanded archive are also searched.
     
-- **Retention**:** When you put a mailbox on hold by using tools such as Litigation Hold in Exchange Online or eDiscovery case holds and retention policies in the security and compliance center, content located in an auto-expanded archive is also placed on hold.
+- **Retention:** When you put a mailbox on hold by using tools such as Litigation Hold in Exchange Online or eDiscovery case holds and retention policies in the security and compliance center, content located in an auto-expanded archive is also placed on hold.
     
 - **Messaging records management (MRM):** If you use MRM deletion policies in Exchange Online to permanently delete expired mailbox items, expired items located in the auto-expanded archive will also be deleted.
     
-- **Import service**:** You can use the Office 365 Import service to import PST files to a user's auto-expanded archive. You can import up to 100 GB of data from PST files to the user's archive mailbox. 
+- **Import service:** You can use the Office 365 Import service to import PST files to a user's auto-expanded archive. You can import up to 100 GB of data from PST files to the user's archive mailbox. 
 
 ## More information
 
