@@ -2,7 +2,7 @@
 title: United Kingdom Government-Cloud (G-Cloud)
 description: The Crown Commercial Service renewed the Microsoft cloud services classification to Government Cloud v.6.
 keywords: Microsoft 365, compliance, offerings
-localization_priority: Priority
+localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.author: robmazz
