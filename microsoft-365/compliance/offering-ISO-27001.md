@@ -1,5 +1,5 @@
 ---
-title: Compliance offerings — ISO/IEC 27001:2013 Information Security Management Standards
+title: ISO/IEC 27001:2013 Information Security Management Standards
 description: Microsoft is certified for its implementation of these information security management standards.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
