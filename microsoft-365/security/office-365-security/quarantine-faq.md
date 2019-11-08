@@ -58,13 +58,13 @@ A. Wildcards are not supported when specifying search criteria in the Exchange a
   
 Using remote Windows PowerShell, admins can specify the [Get-QuarantineMessage](https://technet.microsoft.com/library/88026da1-8dbc-49e7-80e8-112a32773c34.aspx) cmdlet to search for quarantined messages for a specific domain (for example, contoso.com): 
   
-```
+```powershell
 Get-QuarantineMessage | ? {$_.Senderaddress -like "*@contoso.com"}
 ```
 
 The results can be passed to the [Release-QuarantineMessage](https://technet.microsoft.com/library/4a3aa05c-238f-46f2-b8dd-b0e3c38eab3e.aspx) cmdlet. Include the -ReleaseToAll parameter to release the message to all recipients. Once a message is released, it can't be released again. 
   
-```
+```powershell
 Get-QuarantineMessage | ? {$_.Senderaddress -like "*@contoso.com"}
 ```
 

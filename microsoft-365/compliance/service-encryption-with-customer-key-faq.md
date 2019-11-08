@@ -88,7 +88,7 @@ Yes. You can use the Windows PowerShell cmdlet Set-MailUser to assign a data enc
   
 If the mailboxes aren't encrypted after waiting 72 hours from the time you assigned the DEP, initiate a mailbox move. To do this, [connect to Exchange Online using remote PowerShell](https://technet.microsoft.com/library/jj984289%28v=exchg.160%29.aspx) and then use the New-MoveRequest cmdlet and provide the alias of the mailbox as follows: 
   
-```
+```powershell
 New-MoveRequest <alias>
 ```
 
@@ -201,7 +201,7 @@ For SharePoint Online, the Office 365 Administrator who configures Customer Key 
   
 For Exchange Online, "user" mailboxes and "mail user" mailboxes must be licensed. All others, such as shared mailboxes, are not required to have a license for Customer Key. To check that your Exchange Online mailbox is properly licensed, run the following cmdlet:
   
-```
+```powershell
 (Get-Mailbox <alias >).PersistedCapabilities
 ```
 
