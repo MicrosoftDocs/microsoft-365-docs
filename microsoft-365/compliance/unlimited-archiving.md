@@ -67,7 +67,7 @@ The following screenshots show a folder list before and after messages are moved
 ![Folder list of archive mailbox after auto-expanding archive is provisioned](media/c03c5f51-23fa-4fc2-b887-7e7e5cce30da.png)
   
 > [!NOTE]
-> As previously described, Office 365 moves items to subfolders (and names them using the naming convention described above) to help distribute content to an auxiliary archive. But moving items to subfolders may not always be the case. Sometimes an entire folder may be moved to an auxiliary archive. In this case, the folder will retain its original name and it won't be apparent in the folder list in Outlook that the folder and its contents were moved to an auxiliary archive.
+> As previously described, Office 365 moves items to subfolders (and names them using the naming convention described above) to help distribute content to an auxiliary archive. But moving items to subfolders may not always be the case. Sometimes an entire folder may be moved to an auxiliary archive. In this case, the folder will retain its original name.  It won't be apparent in the folder list in Outlook that the folder was moved to an auxiliary archive.
 
 ## Outlook requirements for accessing items in an auto-expanded archive
 
