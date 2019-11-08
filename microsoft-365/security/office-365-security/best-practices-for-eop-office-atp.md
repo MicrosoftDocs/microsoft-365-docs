@@ -31,11 +31,11 @@ Anti-spam, anti-malware, and anti-phishing are features of EOP that can be confi
 
 |Security feature name|Standard|Strict|Comment|
 |---------|---------|---------|---------|
-|Spam detection action|Move message to Junk Email folder|Quarantine||
-|High confidence spam detection action|Quarantine|Quarantine||
-|Phishing email detection action|Quarantine|Quarantine||
-|High confidence Phish email detection action|Quarantine|Quarantine||
-|Bulk email detection action|Move message to Junk Email folder|Quarantine||
+|Spam detection action|Move message to Junk Email folder|Quarantine message||
+|High confidence spam detection action|Quarantine message|Quarantine message||
+|Phishing email detection action|Quarantine message|Quarantine message||
+|High confidence Phish email detection action|Quarantine message|Quarantine message||
+|Bulk email detection action|Move message to Junk Email folder|Quarantine message||
 |Set Bulk email threshold to|6|4||
 |Quarantine retention period|30 days|30 days||
 |Safety tips|On|On||
