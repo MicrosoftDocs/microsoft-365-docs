@@ -289,40 +289,40 @@ You can export an Assessment to an Excel file for compliance stakeholders in you
 
 The assessment report is downloaded as an Excel file in your browser session. The files name for the Excel file defaults to the title of the Assessment.
 
-### Archive a Template or an Assessment
+### Hide a Template or an Assessment
 
-When you are finished with a Template or Assessment and no longer need it for compliance purposes, you can archive it. When a Template or Assessment is archived, it is removed from the default view, and you must check the Show Archived checkbox to display it.
+When you are finished with a Template or Assessment and no longer need it for compliance purposes, you can hide it from your view. When a Template or Assessment is hidden, it is removed from the default view, and you must select **Include Hidden** checkbox to display it.
 
-![Compliance Manager Microsoft Action View](media/compliance-manager-archive-assessment-view.png)
-  
+![Compliance Manager Hidden Template View](media/compliance-manager-hidden-template.png "Compliance Manager hidden Template")
+
 > [!IMPORTANT]
-> Archived Assessments do not retain their links to uploaded evidence documents. It is highly recommended that you export the Assessment before archiving to retain links to the evidence documents in the report.
+> Hidden Assessments do not retain their links to uploaded evidence documents. It is highly recommended that you export the Assessment before hiding it to retain links to the evidence documents in the report.
   
-#### Archive a Template
+#### Hiding a Template
 
 1. Open the **Templates** dashboard.
-2. Locate the Template you want to archive and select the archive icon.
-3. When you see the confirmation message, select **Archive**.
+2. Locate the Template you want to archive, and at the ellipses in its row, select **Hide**.
+3. When you see the confirmation message, select **Hide**.
 
-#### Archive an Assessment
+#### Hide an Assessment
 
 1. Open the **Assessments** dashboard.
 2. Select the **Group** from the dropdown that contains the Assessment you want to archive.
-3. Locate the Assessment you want to archive and select the archive icon.
-4. When you see the confirmation message, select **Archive**.
+3. Locate the Assessment you want to archive, and at the ellipses, select **Hide**.
+4. When you see the confirmation message, select **Hide**.
 
-#### View archived Assessments
+#### View hidden Assessments
   
-1. Open the **Assessments** dashboard tab and check the **Show Archived** checkbox.
-2. The archived assessments appear in the **Archived Assessments** section.
+1. Open the **Assessments** dashboard tab and select the **Include Hidden** checkbox.
+2. The hidden assessments appear in the **Hidden Assessments** section.
 3. Select the Assessment name to open and view the Assessment.
 
-#### Activate an archived Assessment
+#### Unhide an Assessment
 
-1. On the **Assessments** tab and select the **Show Archived** checkbox.
-2. The archived assessments appear in the **Archived Assessments** section.
-3. Locate the Assessment you want to activate and select the activate icon.
-4. When you see the confirmation message, select **Activate**.
+1. On the **Assessments** tab, select the **Include Hidden** checkbox.
+2. The hidden assessments appear in the **Hidden Assessments** section.
+3. Locate the Assessment you want to activate and from the ellipses, select **Unhide**.
+4. When you see the confirmation message, select **Unhide**.
 
 ## Controls and Actions
 
