@@ -55,18 +55,18 @@ If you have another subscription, such as a standalone plan that includes the Of
 
 ### Easy access!
 
-With improved navigation, integrated solutions, and a streamlined experience, you'll be able to see and access the information you're most interested in and take advantage of the powerful security and compliance solutions in Microsoft 365. And, while more functionality and solutions are being added over the coming months, the Office 365 Security & Compliance Center ([https://protection.microsoft.com](https://protection.microsoft.com)) is still available.
+With improved navigation, integrated solutions, and a streamlined experience, you'll be able to see and access the information you're most interested in and take advantage of the powerful security and compliance solutions in Microsoft 365. And, while more functionality and solutions are being added over the coming months, the Office 365 Security & Compliance Center ([https://protection.office.com](https://protection.office.com)) is still available.
 
 To access the Office 365 Security & Compliance Center, in the navigation pane on the left side of the screen, choose **More resources**. Then, under **Office 365 security & compliance center**, choose **Open**.
 
 ### Smooth transition!
 
-You can expect a smooth transition to the new centers. Eventually, the former Microsoft 365 Security & Compliance Center ([https://protection.microsoft.com](https://protection.microsoft.com)) will be retired. Although the administrator experience will change, this won’t impact your current security and compliance configurations. If your organization has Microsoft 365 Enterprise E3 or E5, your security and compliance administrators can:
+You can expect a smooth transition to the new centers. Eventually, the former Microsoft 365 Security & Compliance Center will be retired. Although the administrator experience will change, this won’t impact your current security and compliance configurations. If your organization has Microsoft 365 Enterprise E3 or E5, your security and compliance administrators can:
 
 - Navigate directly to [https://security.microsoft.com](https://security.microsoft.com) and [https://compliance.microsoft.com](https://compliance.microsoft.com); <br>or  
 - Go to the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)), and navigate from there (in the navigation pane, click **Show all**, and then choose **Security** or **Compliance**).
 
-In addition, you can still configure and manage settings in the existing Office 365 Security & Compliance Center ([https://protection.office.com](http://protection.office.com)). Your configurations will be maintained in both the existing Office 365 Security & Compliance Center and in the new Microsoft 365 security center and Microsoft 365 compliance center.  
+In addition, you can still configure and manage settings in the existing Office 365 Security & Compliance Center ([https://protection.office.com](https://protection.office.com)). Your configurations will be maintained in both the existing Office 365 Security & Compliance Center and in the new Microsoft 365 security center and Microsoft 365 compliance center.  
 
 ## Required licenses and permissions
 
@@ -90,7 +90,7 @@ The following table summarizes who can access various portals across Azure, Offi
 
 |Portal |Global Administrator |Security Administrator, Security Operator, or Security Reader|Compliance  Administrator or Compliance Data Administrator |
 |---------|---------|---------|---------|
-|[Security & Compliance Center](https://protection.office.com) |Yes |Yes  |Yes |
+|[Office 365 Security & Compliance Center](https://protection.office.com) |Yes |Yes  |Yes |
 |[Microsoft 365 security center](https://security.microsoft.com) |Yes  | Yes  | No        |
 |[Microsoft 365 compliance center](https://compliance.microsoft.com) | Yes | No | Yes |
 |[Compliance Manager](https://aka.ms/compliancemanager) |Yes | Yes |Yes  |

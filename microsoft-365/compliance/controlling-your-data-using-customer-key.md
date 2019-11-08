@@ -19,18 +19,18 @@ description: "Learn how to set up Customer Key for Office 365 for Exchange Onlin
 # Controlling your data in Office 365 using Customer Key
 
 With Customer Key, you control your organization's encryption keys and then configure Office 365 to use them to encrypt your data at rest in Microsoft's data centers. In other words, Customer Key allows customers to add a layer of encryption that belongs to them, with their keys. Data at rest includes data from Exchange Online and Skype for Business that is stored in mailboxes and files that are stored in SharePoint Online and OneDrive for Business.
-  
+
 You must set up Azure before you can use Customer Key for Office 365. This topic describes the steps you need to follow to create and configure the required Azure resources and then provides the steps for setting up Customer Key in Office 365. After you have completed Azure setup, you determine which policy, and therefore, which keys, to assign to mailboxes and files in your organization. Mailboxes and files for which you don't assign a policy will use encryption policies that are controlled and managed by Microsoft. For more information about Customer Key, or for a general overview, see the [Customer Key for Office 365 FAQ](service-encryption-with-customer-key-faq.md).
   
 > [!IMPORTANT]
-> We strongly recommend that you follow the best practices in this topic. These are called out as **TIP** and **IMPORTANT**. Customer Key gives you control over root encryption keys whose scope can be as large as your entire organization. This means that mistakes made with these keys can have a broad impact and may result in service interruptions or irrevocable loss of your data. 
+> We strongly recommend that you follow the best practices in this topic. These are called out as **TIP** and **IMPORTANT**. Customer Key gives you control over root encryption keys whose scope can be as large as your entire organization. This means that mistakes made with these keys can have a broad impact and may result in service interruptions or irrevocable loss of your data.
   
 ## Before you begin setting up Customer Key
 <a name="Beforeyoustart"> </a>
 
 Before you get started, be sure you have the appropriate licensing for your organization. Customer Key in Office 365 is offered in Office 365 E5 or the Advanced Compliance SKU.
   
-Then, to understand the concepts and procedures in this topic, you should review the [Azure Key Vault](https://azure.microsoft.com/en-us/documentation/services/key-vault/) documentation. Also, become familiar with the terms used in Azure, for example, [tenant](https://msdn.microsoft.com/library/azure/jj573650.aspx#BKMK_WhatIsAnAzureADTenant).
+Then, to understand the concepts and procedures in this topic, you should review the [Azure Key Vault](https://azure.microsoft.com/documentation/services/key-vault/) documentation. Also, become familiar with the terms used in Azure, for example, [tenant](https://msdn.microsoft.com/library/azure/jj573650.aspx#BKMK_WhatIsAnAzureADTenant).
   
 To provide feedback on Customer Key, including the documentation, send your ideas, suggestions and perspectives to customerkeyfeedback@microsoft.com.
   
@@ -44,33 +44,33 @@ To set up Customer Key you will complete these tasks. The rest of this topic pro
 You will complete most of these tasks by remotely connecting to Azure PowerShell. For best results, use version 4.4.0 or later of Azure PowerShell.
   
 - [Create two new Azure subscriptions](controlling-your-data-using-customer-key.md#Create2newsubs)
-    
+
 - [Register Azure subscriptions to use a mandatory retention period](controlling-your-data-using-customer-key.md#RegisterSubsforMRP)
-    
+
     Registration can take from one to five business days.
-    
+
 - [Submit a request to activate Customer Key for Office 365](controlling-your-data-using-customer-key.md#FastTrack)
-    
+
     Once you've created the two new Azure subscriptions, you'll need to submit the appropriate Customer Key offer request by completing a web form that is hosted in the Microsoft FastTrack portal. **The FastTrack team doesn't provide assistance with Customer Key. Office simply uses the FastTrack portal to allow you to submit the form and to help us track the relevant offers for Customer Key**.
   
 Once you have submitted a Customer Key offer, Microsoft reviews your request and notifies you when you can proceed with the rest of the setup tasks. This process can take up to five business days.
-    
+
 - [Create a premium Azure Key Vault in each subscription](controlling-your-data-using-customer-key.md#CreateKeyVault)
-    
+
 - [Assign permissions to each key vault](controlling-your-data-using-customer-key.md#KeyVaultPerms)
-    
+
 - [Enable and then confirm soft delete on your key vaults](controlling-your-data-using-customer-key.md#SoftDelete)
-    
+
 - [Add a key to each key vault either by creating or importing a key](controlling-your-data-using-customer-key.md#AddKeystoKeyVault)
-    
+
 - [Check the recovery level of your keys](controlling-your-data-using-customer-key.md#CheckKeyRecoveryLevel)
-    
+
 - [Backup Azure Key Vault](controlling-your-data-using-customer-key.md#BackupAzureKeyVaultkeys)
-    
+
 - [Validate Azure Key Vault configuration settings](controlling-your-data-using-customer-key.md#Validateconfiguration)
-    
+
 - [Obtain the URI for each Azure Key Vault key](controlling-your-data-using-customer-key.md#GetKeyURI)
-    
+
 **In Office 365:**
   
 Exchange Online and Skype for Business:
@@ -95,7 +95,7 @@ Complete these tasks in Azure Key Vault in order to set up Customer Key for Offi
 ### Create two new Azure subscriptions
 <a name="Create2newsubs"> </a>
 
-Two Azure subscriptions are required for Customer Key. As a best practice, Microsoft recommends that you create new Azure subscriptions for use with Customer Key. Azure Key Vault keys can only be authorized for applications in the same Azure Active Directory (AAD) tenant, you must create the new subscriptions using the same Azure AD tenant used with your Office 365 organization where the DEPs will be assigned. For example, using your work or school account that has global administrator privileges in your Office 365 organization. For detailed steps, see [Sign up for Azure as an organization](https://azure.microsoft.com/en-us/documentation/articles/sign-up-organization/).
+Two Azure subscriptions are required for Customer Key. As a best practice, Microsoft recommends that you create new Azure subscriptions for use with Customer Key. Azure Key Vault keys can only be authorized for applications in the same Azure Active Directory (AAD) tenant, you must create the new subscriptions using the same Azure AD tenant used with your Office 365 organization where the DEPs will be assigned. For example, using your work or school account that has global administrator privileges in your Office 365 organization. For detailed steps, see [Sign up for Azure as an organization](https://azure.microsoft.com/documentation/articles/sign-up-organization/).
   
 > [!IMPORTANT]
 > Customer Key requires two keys for each data encryption policy (DEP). In order to achieve this, you must create two Azure subscriptions. As a best practice, Microsoft recommends that you have separate members of your organization configure one key in each subscription. In addition, these Azure subscriptions should only be used to administer encryption keys for Office 365. This protects your organization in case one of your operators accidentally, intentionally, or maliciously deletes or otherwise mismanages the keys for which they are responsible. <br/> We recommend that you set up new Azure subscriptions that are solely used for managing Azure Key Vault resources for use with Customer Key. There is no practical limit to the number of Azure subscriptions that you can create for your organization. Following these best practices will minimize the impact of human error while helping to manage the resources used by Customer Key. 
@@ -138,7 +138,7 @@ Before contacting the Office 365 team, you must perform the following steps for 
     
 2. Run the Register-AzureRmProviderFeature cmdlet to register your subscriptions to use a mandatory retention period.
     
-  ```
+  ```powershell
   Register-AzureRmProviderFeature -FeatureName mandatoryRetentionPeriodEnabled -ProviderNamespace Microsoft.Resources
   ```
 
@@ -150,13 +150,13 @@ Before contacting the Office 365 team, you must perform the following steps for 
     
 4. Once you receive notification from Microsoft that registration is complete, verify the status of your registration by running the Get-AzureRmProviderFeature cmdlet as follows:
     
-  ```
+  ```powershell
   Get-AzureRmProviderFeature -ProviderNamespace Microsoft.Resources -FeatureName mandatoryRetentionPeriodEnabled
   ```
 
 5. After verifying that the **Registration State** property from the Get-AzureRmProviderFeature cmdlet returns a value of **Registered**, run the following command to complete the process:
     
-  ```
+  ```powershell
   Register-AzureRmResourceProvider -ProviderNamespace "Microsoft.KeyVault"
   ```
 
@@ -195,14 +195,14 @@ For each key vault, you will need to define three separate sets of permissions f
     
 - Run the Set-AzureRmKeyVaultAccessPolicy cmdlet to assign the necessary permissions.
     
-  ```
+  ```powershell
   Set-AzureRmKeyVaultAccessPolicy -VaultName <vaultname> 
   -UserPrincipalName <UPN of user> -PermissionsToKeys create,import,list,get,backup,restore
   ```
 
   For example:
     
-  ```
+  ```powershell
   Set-AzureRmKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 
   -UserPrincipalName alice@contoso.com -PermissionsToKeys create,import,list,get,backup,restore
   ```
@@ -211,7 +211,7 @@ For each key vault, you will need to define three separate sets of permissions f
     
 - If you intend to use Customer Key with Exchange Online and Skype for Business, you need to give permission to Office 365 to use the key vault on behalf of Exchange Online and Skype for Business. Likewise, if you intend to use Customer Key with SharePoint Online and OneDrive for Business, you need to add permission for the Office 365 to use the key vault on behalf of SharePoint Online and OneDrive for Business. To give permission to Office 365, run the **Set-AzureRmKeyVaultAccessPolicy** cmdlet using the following syntax: 
     
-  ```
+  ```powershell
   Set-AzureRmKeyVaultAccessPolicy -VaultName <vaultname> -PermissionsToKeys wrapKey,unwrapKey,get -ServicePrincipalName <Office 365 appID>
   ```
 
@@ -225,14 +225,14 @@ For each key vault, you will need to define three separate sets of permissions f
     
   Example: Setting permissions for Exchange Online and Skype for Business:
     
-  ```
+  ```powershell
   Set-AzureRmKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 
   -PermissionsToKeys wrapKey,unwrapKey,get -ServicePrincipalName 00000002-0000-0ff1-ce00-000000000000
   ```
 
   Example: Setting permissions for SharePoint Online and OneDrive for Business
-    
-  ```
+
+  ```powershell
   Set-AzureRmKeyVaultAccessPolicy -VaultName Contoso-O365SP-NA-VaultA1 
   -PermissionsToKeys wrapKey,unwrapKey,get -ServicePrincipalName 00000003-0000-0ff1-ce00-000000000000
   ```
@@ -245,24 +245,22 @@ When you can quickly recover your keys, you are less likely to experience an ext
 To enable Soft Delete on your key vaults, complete these steps:
   
 1. Log in to your Azure subscription with Windows Powershell. For instructions, see [Log in with Azure PowerShell](https://docs.microsoft.com/powershell/azure/authenticate-azureps).
-    
+
 2. Run the [Get-AzureRmKeyVault](https://docs.microsoft.com/powershell/module/azurerm.keyvault/get-azurermkeyvault) cmdlet. In this example, *vaultname* is the name of the key vault for which you are enabling soft delete: 
-    
-   ```
+
+   ```powershell
    $v = Get-AzureRmKeyVault -VaultName <vaultname>
    $r = Get-AzureRmResource -ResourceId $v.ResourceId
    $r.Properties | Add-Member -MemberType NoteProperty -Name enableSoftDelete -Value 'True'
    Set-AzureRmResource -ResourceId $r.ResourceId -Properties $r.Properties
-   ``` 
-    
-3. Confirm soft delete is configured for the key vault by running the **Get-AzureRmKeyVault** cmdlet. If soft delete is configured properly for the key vault, then the  Soft Delete Enabled? property returns a value of **True**: 
-    
    ```
+
+3. Confirm soft delete is configured for the key vault by running the **Get-AzureRmKeyVault** cmdlet. If soft delete is configured properly for the key vault, then the  Soft Delete Enabled? property returns a value of **True**: 
+
+   ```powershell
    Get-AzureRmKeyVault -VaultName <vaultname> | fl
    ```
 
-   
-    
 ### Add a key to each key vault either by creating or importing a key
 <a name="AddKeystoKeyVault"> </a>
 
@@ -270,24 +268,24 @@ There are two ways to add keys to an Azure Key Vault; you can create a key direc
   
 To create a key directly in your key vault, run the [Add-AzureKeyVaultKey](https://docs.microsoft.com/powershell/module/AzureRM.KeyVault/Add-AzureKeyVaultKey) cmdlet as follows: 
   
-```
+```powershell
 Add-AzureKeyVaultKey -VaultName <vaultname> -Name <keyname> -Destination <HSM|Software> -KeyOps wrapKey,unwrapKey
 ```
 
 Where:
   
--  *vaultname*  is the name of the key vault in which you want to create the key. 
-    
--  *keyname*  is the name you want to give the new key. 
-    
+- *vaultname*  is the name of the key vault in which you want to create the key.
+
+- *keyname*  is the name you want to give the new key.
+
     > [!TIP]
     > Name keys using a similar naming convention as described above for key vaults. This way, in tools that show only the key name, the string is self-describing. 
   
 - If you intend to protect the key with an HSM, ensure that you specify **HSM** as the value of the  _Destination_ parameter, otherwise, specify **Software**.
-    
+
 For example,
   
-```
+```powershell
 Add-AzureKeyVaultKey -VaultName Contoso-O365EX-NA-VaultA1 -Name Contoso-O365EX-NA-VaultA1-Key001 -Destination Software -KeyOps wrapKey,unwrapKey
 ```
 
@@ -296,9 +294,9 @@ To import a key directly into your key vault, you need to have a Thales nShield 
 Some organizations prefer this approach to establish the provenance of their keys, and the this method also provides the following:
   
 - The toolset used for import includes attestation from Thales that the Key Exchange Key (KEK) that is used to encrypt the key you generate is not exportable and is generated inside a genuine HSM that was manufactured by Thales.
-    
+
 - The toolset includes attestation from Thales that the Azure Key Vault security world was also generated on a genuine HSM manufactured by Thales. This attestation proves to you that Microsoft is also using genuine Thales hardware.
-    
+
 Check with your security group to determine if the above attestations are required. For detailed steps to create a key on-premises and import it into your key vault, see [How to generate and transfer HSM-protected keys for Azure Key Vault](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/). Use the Azure instructions to create a key in each key vault.
   
 ### Check the recovery level of your keys
@@ -308,8 +306,8 @@ Office 365 requires that the Azure Key Vault subscription is set to Do Not Cance
   
 To check the recovery level of a key, in Azure PowerShell, run the Get-AzureKeyVaultKey cmdlet as follows:
   
-```
-(Get-AzureKeyVaultKey -VaultName <vaultname> -Name <keyname>).Attributes 
+```powershell
+(Get-AzureKeyVaultKey -VaultName <vaultname> -Name <keyname>).Attributes
 ```
 
 If the  _Recovery Level_ property returns anything other than a value of **Recoverable+ProtectedSubscription**, you will need to review this topic and ensure that you have followed all of the steps to put the subscription on the Do Not Cancel list and that you have soft delete enabled on each of your key vaults.
@@ -320,10 +318,10 @@ If the  _Recovery Level_ property returns anything other than a value of **Recov
 Immediately following creation or any change to a key, perform a backup and store copies of the backup, both online and offline. Offline copies should not be connected to any network, such as in a physical safe or commercial storage facility. At least one copy of the backup should be stored in a location that will be accessible in the event of a disaster. The backup blobs are the sole means of restoring key material should a Key Vault key be permanently destroyed or otherwise rendered inoperable. Keys that are external to Azure Key Vault and were imported to Azure Key Vault do not qualify as a backup because the metadata necessary for Customer Key to use the key does not exist with the external key. Only a backup taken from Azure Key Vault can be used for restore operations with Customer Key. Therefore, it is essential that a backup of Azure Key Vault be made once a key is uploaded or created.
   
 To create a backup of an Azure Key Vault key, run the [Backup-AzureKeyVaultKey](https://docs.microsoft.com/powershell/module/AzureRM.KeyVault/Backup-AzureKeyVaultKey) cmdlet as follows:
-```
-Backup-AzureKeyVaultKey -VaultName <vaultname> -Name <keyname> 
--OutputFile <filename .backup>
 
+```powershell
+Backup-AzureKeyVaultKey -VaultName <vaultname> -Name <keyname>
+-OutputFile <filename .backup>
 ```
 
 Ensure that your output file uses the suffix  `.backup`.
@@ -331,11 +329,11 @@ Ensure that your output file uses the suffix  `.backup`.
 The output file resulting from this cmdlet is encrypted and cannot be used outside of Azure Key Vault. The backup can be restored only to the Azure subscription from which the backup was taken.
   
 > [!TIP]
-> For the output file, choose a combination of your vault name and key name. This will make the file name self-describing. It will also ensure that backup file names do not collide. 
+> For the output file, choose a combination of your vault name and key name. This will make the file name self-describing. It will also ensure that backup file names do not collide.
   
 For example:
   
-```
+```powershell
 Backup-AzureKeyVaultKey -VaultName Contoso-O365EX-NA-VaultA1 -Name Contoso-O365EX-NA-VaultA1-Key001 -OutputFile Contoso-O365EX-NA-VaultA1-Key001-Backup-20170802.backup
 ```
 
@@ -346,9 +344,9 @@ Performing validation before using keys in a DEP is optional, but highly recomme
   
 To verify that your keys have get, wrapKey, and unwrapKey operations enabled:
   
-Run the [Get-AzureRmKeyVault](https://docs.microsoft.com/powershell/module/AzureRM.KeyVault/Get-AzureRmKeyVault) cmdlet as follows: 
+Run the [Get-AzureRmKeyVault](https://docs.microsoft.com/powershell/module/AzureRM.KeyVault/Get-AzureRmKeyVault) cmdlet as follows:
   
-```
+```powershell
 Get-AzureRMKeyVault -VaultName <vaultname>
 ```
 
@@ -356,41 +354,41 @@ In the output, look for the Access Policy and for the Exchange Online identity (
   
 If the access policy configuration is incorrect, run the Set-AzureRmKeyVaultAccessPolicy cmdlet as follows:
   
-```
+```powershell
 Set-AzureRmKeyVaultAccessPolicy -VaultName <vaultname> -PermissionsToKeys wrapKey,unwrapKey,get -ServicePrincipalName <Office 365 appID>
 ```
 
 For example, for Exchange Online and Skype for Business:
   
-```
+```powershell
 Set-AzureRmKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 
 -PermissionsToKeys wrapKey,unwrapKey,get -ServicePrincipalName 00000002-0000-0ff1-ce00-000000000000
 ```
 
 For example, for SharePoint Online and OneDrive for Business:
   
-```
+```powershell
 Set-AzureRmKeyVaultAccessPolicy -VaultName Contoso-O365SP-NA-VaultA1 
 -PermissionsToKeys wrapKey,unwrapKey,get -ServicePrincipalName TBD
 ```
 
-To verify that an expiration date is not set for your keys run the [Get-AzureKeyVaultKey](https://docs.microsoft.com/powershell/module/AzureRM.KeyVault/Get-AzureKeyVaultKey) cmdlet as follows: 
+To verify that an expiration date is not set for your keys run the [Get-AzureKeyVaultKey](https://docs.microsoft.com/powershell/module/AzureRM.KeyVault/Get-AzureKeyVaultKey) cmdlet as follows:
   
-```
-Get-AzureKeyVaultKey -VaultName <vaultname> 
+```powershell
+Get-AzureKeyVaultKey -VaultName <vaultname>
 ```
 
 An expired key cannot be used by Customer Key and operations attempted with an expired key will fail, and possibly result in a service outage. We strongly recommend that keys used with Customer Key do not have an expiration date. An expiration date, once set, cannot be removed, but can be changed to a different date. If a key must be used that has an expiration date set, change the expiration value to 12/31/9999. Keys with an expiration date set to a date other than 12/31/9999 will not pass Office 365 validation.
   
-To change an expiration date that has been set to any value other than 12/31/9999, run the [Set-AzureKeyVaultKeyAttribute](https://docs.microsoft.com/powershell/module/AzureRM.KeyVault/Set-AzureKeyVaultKeyAttribute) cmdlet as follows: 
+To change an expiration date that has been set to any value other than 12/31/9999, run the [Set-AzureKeyVaultKeyAttribute](https://docs.microsoft.com/powershell/module/AzureRM.KeyVault/Set-AzureKeyVaultKeyAttribute) cmdlet as follows:
   
-```
+```powershell
 Set-AzureKeyVaultKeyAttribute -VaultName <vaultname> -Name <keyname> 
 -Expires (Get-Date -Date "12/31/9999")
 ```
 
 > [!CAUTION]
-> Don't set expiration dates on encryption keys you use with Customer Key. 
+> Don't set expiration dates on encryption keys you use with Customer Key.
   
 ### Obtain the URI for each Azure Key Vault key
 <a name="GetKeyURI"> </a>
@@ -399,7 +397,7 @@ Once you have completed all the steps in Azure to set up your key vaults and add
   
 In Azure PowerShell:
   
-```
+```powershell
 (Get-AzureKeyVaultKey -VaultName <vaultname>).Id
 ```
 
@@ -413,49 +411,49 @@ To set up Customer Key for Exchange Online and Skype for Business, you will need
 ### Create a data encryption policy (DEP) for use with Exchange Online and Skype for Business
 <a name="CreateDEP4EXOSkype"> </a>
 
-A DEP is associated with a set of keys stored in Azure Key Vault. You assign a DEP to a mailbox in Office 365. Office 365 will then use the keys identified in the policy to encrypt the mailbox. To create the DEP, you need the Key Vault URIs you obtained earlier. See [Obtain the URI for each Azure Key Vault key](controlling-your-data-using-customer-key.md#GetKeyURI) for instructions. 
+A DEP is associated with a set of keys stored in Azure Key Vault. You assign a DEP to a mailbox in Office 365. Office 365 will then use the keys identified in the policy to encrypt the mailbox. To create the DEP, you need the Key Vault URIs you obtained earlier. See [Obtain the URI for each Azure Key Vault key](controlling-your-data-using-customer-key.md#GetKeyURI) for instructions.
   
 Remember! When you create a DEP, you specify two keys that reside in two different Azure Key Vaults. Ensure that these keys are located in two separate Azure regions to ensure geo-redundancy.
   
 To create the DEP, follow these steps:
   
-1. On your local computer, using a work or school account that has global administrator permissions in your Office 365 organization, [connect to Exchange Online PowerShell](https://technet.microsoft.com/en-us/library/jj984289%28v=exchg.160%29.aspx) by opening Windows PowerShell and running the following command. 
-    
-   ```
+1. On your local computer, using a work or school account that has global administrator permissions in your Office 365 organization, [connect to Exchange Online PowerShell](https://technet.microsoft.com/library/jj984289%28v=exchg.160%29.aspx) by opening Windows PowerShell and running the following command.
+
+   ```powershell
    $UserCredential = Get-Credential
    ```
 
-2. In the Windows PowerShell Credential Request dialog box, enter your work or school account information, click **OK**, and then enter the following command. 
-    
-   ```
+2. In the Windows PowerShell Credential Request dialog box, enter your work or school account information, click **OK**, and then enter the following command.
+
+   ```powershell
    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
    ```
 
 3. Run the following command.
-    
-   ```
+
+   ```powershell
    Import-PSSession $Session
    ```
 
 4. To create a DEP, use the New-DataEncryptionPolicy cmdlet by typing the following command.
-    
-   ```
+
+   ```powershell
    New-DataEncryptionPolicy -Name <PolicyName> -Description "PolicyDescription " -AzureKeyIDs <KeyVaultURI1>, <KeyVaultURI2>
    ```
 
    Where:
-    
-   -  *PolicyName*  is the name you want to use for the policy. Names cannot contain spaces. For example, USA_mailboxes. 
-    
-   -  *PolicyDescription*  is a user friendly description of the policy that will help you remember what the policy is for. You can include spaces in the description. For example, Root key for mailboxes in USA and its territories. 
-    
-   -  *KeyVaultURI1*  is the URI for the first key in the policy. For example, https://contoso_EastUSvault01.vault.azure.net/keys/USA_key_01. 
-    
-   -  *KeyVaultURI2*  is the URI for the second key in the policy. For example, https://contoso_EastUS2vault01.vault.azure.net/keys/USA_Key_02. Separate the two URIs by a comma and a space. 
-    
+
+   -  *PolicyName*  is the name you want to use for the policy. Names cannot contain spaces. For example, USA_mailboxes.
+
+   -  *PolicyDescription*  is a user friendly description of the policy that will help you remember what the policy is for. You can include spaces in the description. For example, Root key for mailboxes in USA and its territories.
+
+   -  *KeyVaultURI1*  is the URI for the first key in the policy. For example, https://contoso_EastUSvault01.vault.azure.net/keys/USA_key_01.
+
+   -  *KeyVaultURI2*  is the URI for the second key in the policy. For example, https://contoso_EastUS2vault01.vault.azure.net/keys/USA_Key_02. Separate the two URIs by a comma and a space.
+
    Example:
   
-   ```
+   ```powershell
    New-DataEncryptionPolicy -Name USA_mailboxes -Description "Root key for mailboxes in USA and its territories" -AzureKeyIDs https://contoso_EastUSvault01.vault.azure.net/keys/USA_key_01, https://contoso_EastUS2vault01.vault.azure.net/keys/USA_Key_02
    ```
 
@@ -464,7 +462,7 @@ To create the DEP, follow these steps:
 
 Assign the DEP to a mailbox by using the Set-Mailbox cmdlet. Once you assign the policy, Office 365 can encrypt the mailbox with the key designated in the DEP.
   
-```
+```powershell
 Set-Mailbox -Identity <MailboxIdParameter> -DataEncryptionPolicy <PolicyName>
 ```
 
@@ -477,7 +475,7 @@ Encrypting a mailbox can take some time. For first time policy assignment, the m
   
 Use the Get-MailboxStatistics cmdlet to determine if a mailbox is encrypted.
   
-```
+```powershell
 Get-MailboxStatistics -Identity <GeneralMailboxOrMailUserIdParameter> | fl IsEncrypted
 ```
 
@@ -485,14 +483,14 @@ The IsEncrypted property returns a value of **true** if the mailbox is encrypted
 
 The time to complete mailbox moves depends on the number of mailboxes to which you assign a DEP for the first time, as well as the size of the mailboxes. If the mailboxes have not been encrypted after a week from the time you assigned the DEP, initiate a mailbox move for the unencrypted mailboxes by using the New-MoveRequest cmdlet.
 
-```
+```powershell
 New-MoveRequest <mailbox alias>
-``` 
+```
 
 ## Office 365: Setting up Customer Key for SharePoint Online and OneDrive for Business
 <a name="AzureSteps"> </a>
 
-Before you begin, ensure that you have completed the tasks required to set up Azure Key Vault. See [Complete tasks in Azure Key Vault and Microsoft FastTrack for Customer Key](controlling-your-data-using-customer-key.md#AzureSteps) for information. 
+Before you begin, ensure that you have completed the tasks required to set up Azure Key Vault. See [Complete tasks in Azure Key Vault and Microsoft FastTrack for Customer Key](controlling-your-data-using-customer-key.md#AzureSteps) for information.
   
 To set up Customer Key for SharePoint Online and OneDrive for Business, you will need to perform these steps by remotely connecting to SharePoint Online with Windows PowerShell.
   
@@ -506,51 +504,51 @@ Remember! When you create a DEP, you specify two keys that reside in two differe
 To create a DEP, you need to remotely connect to SharePoint Online by using Windows PowerShell.
   
 1. On your local computer, using a work or school account that has global administrator permissions in your Office 365 organization, [Connect to SharePoint Online Powershell](https://technet.microsoft.com/library/fp161372.aspx).
-    
-2. In the Microsoft SharePoint Online Management Shell, run the [Register-SPODataEncryptionPolicy](https://technet.microsoft.com/library/mt843950.aspx) cmdlet as follows: 
-    
-   ```
+
+2. In the Microsoft SharePoint Online Management Shell, run the [Register-SPODataEncryptionPolicy](https://technet.microsoft.com/library/mt843950.aspx) cmdlet as follows:
+
+   ```powershell
    Register-SPODataEncryptionPolicy -Identity <SPOAdminSiteUrl> -PrimaryKeyVaultName <PrimaryKeyVaultName> -PrimaryKeyName <PrimaryKeyName> -PrimaryKeyVersion <PrimaryKeyVersion> -SecondaryKeyVaultName <SecondaryKeyVaultName> -SecondaryKeyName <SecondaryKeyName> -SecondaryKeyVersion <SecondaryKeyVersion>
    ```
 
    When you register the DEP, encryption begins on the data in the geo. This can take some time.
-    
+
 ### Validate encryption of Group Sites, Team Sites, and OneDrive for Business
 <a name="validateencryptionSPO"> </a>
 
 You can check on the status of encryption by running the Get-SPODataEncryptionPolicy cmdlet as follows:
   
-```
+```powershell
 Get-SPODataEncryptionPolicy -Identity <SPOAdminSiteUrl>
 ```
 
 The output from this cmdlet includes:
   
 - The URI of the primary key.
-    
+
 - The URI of the secondary key.
-    
+
 - The encryption status for the geo. Possible states include:
-    
-  - **Unregistered:** Customer Key encryption has not yet been applied. 
-    
-  - **Registering:** Customer Key encryption has been applied and your files are in the process of being encrypted. If your geo is in this state, you'll also be shown information on what percentage of sites in the geo are complete so that you can monitor encryption progress. 
-    
-  - **Registered:** Customer Key encryption has been applied, and all files in all sites have been encrypted. 
-    
-  - **Rolling:** A key roll is in progress. If your geo is in this state, you'll also be shown information on what percentage of sites have completed the key roll operation so that you can monitor progress. 
-    
+
+  - **Unregistered:** Customer Key encryption has not yet been applied.
+
+  - **Registering:** Customer Key encryption has been applied and your files are in the process of being encrypted. If your geo is in this state, you'll also be shown information on what percentage of sites in the geo are complete so that you can monitor encryption progress.
+
+  - **Registered:** Customer Key encryption has been applied, and all files in all sites have been encrypted.
+
+  - **Rolling:** A key roll is in progress. If your geo is in this state, you'll also be shown information on what percentage of sites have completed the key roll operation so that you can monitor progress.
+
 ## Managing Customer Key for Office 365
 <a name="ManageCustomerKey"> </a>
 
 After you've set up Customer Key for Office 365, you can perform these additional management tasks.
   
 - [Restore Azure Key Vault keys](controlling-your-data-using-customer-key.md#RestoreAzureKeyVaultKeys)
-    
+
 - [Rolling or rotating a key in Azure Key Vault that you use with Customer Key](controlling-your-data-using-customer-key.md#RollCKkey)
-    
+
 - [Manage key vault permissions](controlling-your-data-using-customer-key.md#Managekeyvaultperms)
-    
+
 - [Determine the DEP assigned to a mailbox](controlling-your-data-using-customer-key.md#DeterminemailboxDEP)
     
 ### Restore Azure Key Vault keys
@@ -558,13 +556,13 @@ After you've set up Customer Key for Office 365, you can perform these additiona
 
 Before performing a restore, use the recovery capabilities provided by soft delete. All keys that are used with Customer Key are required to have soft delete enabled. Soft delete acts like a recycle bin and allows recovery for up to 90 days without the need to restore. Restore should only be required in extreme or unusual circumstances, for example if the key or key vault is lost. If you must restore a key for use with Customer Key, in Azure PowerShell, run the Restore-AzureKeyVaultKey cmdlet as follows:
   
-```
+```powershell
 Restore-AzureKeyVaultKey -VaultName <vaultname> -InputFile <filename>
 ```
 
 For example:
   
-```
+```powershell
 Restore-AzureKeyVaultKey -VaultName Contoso-O365EX-NA-VaultA1 -InputFile Contoso-O365EX-NA-VaultA1-Key001-Backup-20170802.backup
 ```
 
@@ -576,17 +574,17 @@ If a key with the same name already exists in the key vault, the restore operati
 Rolling keys is not required by either Azure Key Vault or by Customer Key. In addition, keys that are protected with an HSM are virtually impossible to compromise. Even if a root key were in the possession of a malicious actor there is no feasible means of using it to decrypt data, since only Office 365 code knows how to use it. However, rolling a key is supported by Customer Key.
   
 > [!CAUTION]
-> Only roll an encryption key that you use with Customer Key when a clear technical reason exists or a compliance requirement dictates that you have to roll the key. In addition, do not delete any keys that are or were associated with policies. When you roll your keys, there will be content encrypted with the previous keys. For example, while active mailboxes will be re-encrypted frequently, inactive, disconnected, and disabled mailboxes may still be encrypted with the previous keys. SharePoint Online performs backup of content for restore and recovery purposes, so there may still be archived content using older keys. <br/> To ensure the safety of your data, SharePoint Online will allow no more than one Key Roll operation to be in progress at a time. If you want to roll both of the keys in a key vault, you'll need to wait for the first key roll operation to fully complete. Our recommendation is to stagger your key roll operations at different intervals, so that this is not an issue. 
+> Only roll an encryption key that you use with Customer Key when a clear technical reason exists or a compliance requirement dictates that you have to roll the key. In addition, do not delete any keys that are or were associated with policies. When you roll your keys, there will be content encrypted with the previous keys. For example, while active mailboxes will be re-encrypted frequently, inactive, disconnected, and disabled mailboxes may still be encrypted with the previous keys. SharePoint Online performs backup of content for restore and recovery purposes, so there may still be archived content using older keys. <br/> To ensure the safety of your data, SharePoint Online will allow no more than one Key Roll operation to be in progress at a time. If you want to roll both of the keys in a key vault, you'll need to wait for the first key roll operation to fully complete. Our recommendation is to stagger your key roll operations at different intervals, so that this is not an issue.
   
 When you roll a key, you are requesting a new version of an existing key. In order to request a new version of an existing key, you use the same cmdlet, [Add-AzureKeyVaultKey](https://docs.microsoft.com/powershell/module/AzureRM.KeyVault/Add-AzureKeyVaultKey), with the same syntax that you used to create the key in the first place.
   
 For example:
   
-```
+```powershell
 Add-AzureKeyVaultKey -VaultName Contoso-O365EX-NA-VaultA1 -Name Contoso-O365EX-NA-VaultA1-Key001 -Destination HSM -KeyOps @('wrapKey','unwrapKey') -NotBefore (Get-Date -Date "12/27/2016 12:01 AM")
 ```
 
-In this example, since a key named **Contoso-O365EX-NA-VaultA1-Key001** already exists in the **Contoso-O365EX-NA-VaultA1** vault, a new key version will be created. The operation adds a new key version. This operation preserves the previous key versions in the key's version history, so that data previously encrypted with that key can still be decrypted. Once you have completed rolling any key that is associated with a DEP, you must then run an additional cmdlet to ensure Customer Key begins using the new key. 
+In this example, since a key named **Contoso-O365EX-NA-VaultA1-Key001** already exists in the **Contoso-O365EX-NA-VaultA1** vault, a new key version will be created. The operation adds a new key version. This operation preserves the previous key versions in the key's version history, so that data previously encrypted with that key can still be decrypted. Once you have completed rolling any key that is associated with a DEP, you must then run an additional cmdlet to ensure Customer Key begins using the new key.
   
 #### Enable Exchange Online and Skype for Business to use a new key after you roll or rotate keys in Azure Key Vault
 
@@ -594,23 +592,23 @@ When you roll either of the Azure Key Vault keys associated with a DEP used with
   
 To instruct Customer Key to use the new key to encrypt mailboxes in Office 365 run the Set-DataEncryptionPolicy cmdlet as follows:
   
-```
-Set-DataEncryptionPolicy <policyname> -Refresh 
+```powershell
+Set-DataEncryptionPolicy <policyname> -Refresh
 ```
 
-Within 48 hours, the active mailboxes encrypted using this policy will become associated with the updated key. Use the steps in [Determine the DEP assigned to a mailbox](controlling-your-data-using-customer-key.md#DeterminemailboxDEP) to check the value for the DataEncryptionPolicyID property for the mailbox. The value for this property will change once the updated key has been applied. 
+Within 48 hours, the active mailboxes encrypted using this policy will become associated with the updated key. Use the steps in [Determine the DEP assigned to a mailbox](controlling-your-data-using-customer-key.md#DeterminemailboxDEP) to check the value for the DataEncryptionPolicyID property for the mailbox. The value for this property will change once the updated key has been applied.
   
 #### Enable SharePoint Online and OneDrive for Business to use a new key after you roll or rotate keys in Azure Key Vault
 
 When you roll either of the Azure Key Vault keys associated with a DEP used with SharePoint Online and OneDrive for Business, you must run the [Update-SPODataEncryptionPolicy](https://technet.microsoft.com/library/mt843948.aspx) cmdlet to update the DEP and enable Office 365 to start using the new key. 
   
-```
+```powershell
 Update-SPODataEncryptionPolicy -Identity <SPOAdminSiteUrl> -KeyVaultName <ReplacementKeyVaultName> -KeyName <ReplacementKeyName> -KeyVersion <ReplacementKeyVersion> -KeyType <Primary | Secondary>
 ```
 
 This will start the key roll operation for SharePoint Online and OneDrive for Business. This action is not immediate. To see the progress of the key roll operation, run the Get-SPODataEncryptionPolicy cmdlet as follows:
   
-```
+```powershell
 Get-SPODataEncryptionPolicy -Identity <SPOAdminSiteUrl>
 ```
 
@@ -621,27 +619,27 @@ Several cmdlets are available that enable you to view and, if necessary, remove 
   
 To view key vault permissions, run the Get-AzureRmKeyVault cmdlet:
   
-```
+```powershell
 Get-AzureRmKeyVault -VaultName <vaultname>
 ```
 
 For example:
   
-```
+```powershell
 Get-AzureRmKeyVault -VaultName Contoso-O365EX-NA-VaultA1
 ```
 
 To remove an administrator's permissions, run the Remove-AzureRmKeyVaultAccessPolicy cmdlet:
   
-```
-Remove-AzureRmKeyVaultAccessPolicy -VaultName <vaultname> 
+```powershell
+Remove-AzureRmKeyVaultAccessPolicy -VaultName <vaultname>
 -UserPrincipalName <UPN of user>
 ```
 
 For example:
   
-```
-Remove-AzureRmKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 
+```powershell
+Remove-AzureRmKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1
 -UserPrincipalName alice@contoso.com
 ```
 
@@ -650,7 +648,7 @@ Remove-AzureRmKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1
 
 To determine the DEP assigned to a mailbox, use the Get-MailboxStatistics cmdlet. The cmdlet returns a unique identifier (GUID).
   
-```
+```powershell
 Get-MailboxStatistics -Identity <GeneralMailboxOrMailUserIdParameter> | fl DataEncryptionPolicyID
 ```
 
@@ -658,10 +656,8 @@ Where *GeneralMailboxOrMailUserIdParameter* specifies a mailbox. For more inform
   
 Use the GUID to find out the friendly name of the DEP to which the mailbox is assigned by running the following cmdlet.
   
-```
+```powershell
 Get-DataEncryptionPolicy <GUID>
 ```
 
-Where *GUID* is the GUID returned by the Get-MailboxStatistics cmdlet in the previous step. 
-  
-
+Where *GUID* is the GUID returned by the Get-MailboxStatistics cmdlet in the previous step.

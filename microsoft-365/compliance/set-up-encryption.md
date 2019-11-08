@@ -35,4 +35,4 @@ With Office 365, several encryption capabilities are available by default. Addit
 
 ## Additional information
 
-To learn more about file protection solutions that include encryption options, see [File Protection Solutions in Office 365](https://www.microsoft.com/en-us/download/details.aspx?id=55523).
+To learn more about file protection solutions that include encryption options, see [File Protection Solutions in Office 365](https://www.microsoft.com/download/details.aspx?id=55523).
