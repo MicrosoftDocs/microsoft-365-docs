@@ -33,37 +33,6 @@ Find out more about Microsoft 365 Business at [Microsoft.com](https://www.micros
 ## What's the difference between Office 365 Business Premium and Microsoft 365 Business?
 We've added a side-by-side comparison of these two plans to the [Microsoft 365 Business service description](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description). 
 
-1. Once you have purchased new licenses, and this is the first time you did, the setup banner for Microsoft 365 Business will display on top of the admin center.
-    
-    > [!NOTE]
-    > The setup banner is an opportunity to add new users, a new domain, and migrate email for new users. If you don't plan to do any, you should still go through the wizard and choose default options to make it disappear from the admin home page. 
-  
-   ![Choose Start setup on the Microsoft 365 Business is ready to set up banner.](media/8d3b0d97-7cca-497f-9364-4b00ad670209.png)
-  
-    Choose **Start setup**.
-    
-2. On the **Personalize your sign-in and email** page, you can add a domain by choosing **Connect a domain you already own** if you want to use this opportunity to add another domain to your subscription. 
-    
-    If you have already set up a domain, the second field will indicate that and will say **Continue using** \<  _your domain name_\> **for email and signing in**. If you haven't set up a domain with you subscription, it will say **Continue using** \<  _your company name.onmicrosoft.com_\> **for email and signing in**.
-    
-    Choose **Next**.
-    
-    ![On the Personalize your sign-in and email page, choose to either add a domain, or use the one you have been using.](media/c3f5cfb2-1189-4d2f-803b-c9feb008a7a3.png)
-  
-3. On the **Add new users** page, you can add new users, if you have new employees that you want to assign the Microsoft 365 Business licenses to. 
-    
-    If you don't have new employees to add and want to assign licences to existing users, choose **Next**.
-    
-4. On the **Migrate email messages** page you can choose to migrate email for any of the new users you added in step 3. You can skip this step also. Choose **Next**.
-    
-5. On the last page, choose **go to the admin center**, and continue setup there.
-    
-6. In the admin center, go to **Users** \> **Active users**.
-    
-7. Select the user to whom you want to assign the **Microsoft 365 Business** license to, and then choose **Edit** next to **Product Licenses**.
-    
-    ![In the user card, choose Edit next to Product licenses.](media/be0fe2d8-7ff8-447c-88f6-d212ed78451c.png)
-  
 ## Before you get started
 
 - **When should I choose upgrade?** Upgrade is the right choice when you want to upgrade **all users** assigned to a single plan. When you choose upgrade, all plan users get switched to another plan at the same time. If you don't want to upgrade everyone assigned to a single plan, buy licenses for the new plan (in this case Microsoft 365 Business), and [assign those licenses individually](https://docs.microsoft.com/office365/admin/manage/assign-licenses-to-users) to each user that you want to upgrade. 
