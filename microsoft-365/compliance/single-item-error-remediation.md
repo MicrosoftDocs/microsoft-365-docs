@@ -14,7 +14,7 @@ search.appverid:
 - MET150
 ms.assetid: 
 
-description: "You can fix a processing error directory in a review set in Advanced eDiscovery without having to follow the bulk error remediation process."
+description: "You can fix a processing error in a document in a review set in Advanced eDiscovery without having to follow the bulk error remediation process."
 ---
 
 # Single item error remediation
