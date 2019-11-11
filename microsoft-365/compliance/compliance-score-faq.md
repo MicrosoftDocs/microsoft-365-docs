@@ -60,9 +60,9 @@ Compliance Score currently provides assessments for Office 365 and Intune. Expan
 
 While Compliance Score provides continuous assessments and recommended actions only for Microsoft cloud services, you can add custom assessments in Compliance Manager for your on-premises, third-party services. In this way, you can use Microsoft Compliance Score as a SaaS compliance management tool to help you manage all the controls across your digital assets. View detailed instructions for [creating custom assessments in Compliance Manager](working-with-compliance-manager.md#assessments).
 
-## Why can't I delete a template or assessment I no longer need?
+## How do I delete a template or assessment I no longer need?
 
-While you can't delete an assessment, you can hide it from view. Review [instructions for hiding assessments](working-with-compliance-manager.md#hide-a-template-or-an-assessment).
+You can't delete an assessment or template, but you can hide it from your view. Review [instructions for hiding assessments](working-with-compliance-manager.md#hide-a-template-or-an-assessment).
 
 ## Is my data in Compliance Score and Compliance Manager secure?
 
