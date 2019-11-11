@@ -13,27 +13,25 @@ ms.collection: M365-modern-desktop
 
 Once a Microsoft Managed Desktop device is in the hands of your end user, getting started with it is fast and easy. Devices come pre-configured with the current version of Windows, and configurations and apps are installed from the cloud as the user completes setup. 
  
-To make this even easier, we offer four versions of a user guide that walk your users through the initial setup and provide help resources both for the setup and for use later, if needed.
+To make this even easier, we offer a guide that walks your users through the initial setup and provides help resources both for the setup and for use later, if needed. You can customize this guide to include certain details specific to your organization. You then distribute the guide directly to your users along with their device. There are two versions, one for organizations using Microsoft's support system (the Get Help app), one for those providing their own internal end-user support.
 
-- A ready-to-use guide in two varieties: one for organizations using Microsoft's support system (the Get Help app), one for those providing their own end-user support
-- A customizable guide in the same varieties that you can edit to include details specific to your organization
-
-## Ready-to-use guides
-1. Download the version appropriate to your organization:
-- [Microsoft Managed Desktop - Get started with your device](https://www.microsoft.com/download/details.aspx?id=57918).
-- 
-2. Distribute to your end users either as PDF or hard copy.
-
-## Customizable guides
+## To prepare the guide
 
 1. Download the version appropriate to your organization:
 - [Microsoft Managed Desktop - Get started with your device](https://www.microsoft.com/download/details.aspx?id=57918).
-- 
+- [non-MS support flavor]
 2. Use any app capable of opening PDF files to fill in details relevant to your organization:
-    - 
-    -     
-    -
-3. Save the edited PDF, and then istribute to your end users either as PDF or hard copy. 
+    - The name of the network your users should connect to in order to continue setup (Step 3 in the guide)
+    - The name of your organization's Azure tenant account (Step 4 in the guide)
+    - Contact information for your organization's internal IT support (top of second page)
+3. Save the edited PDF, and then distribute to your end users. 
+
+## "Ready-to-use guide"
+
+We also provide a more generic version of the guide for those organizations that don't need to customize it. There are two versions, one for organizations using Microsoft's support system (the Get Help app), one for those providing their own internal end-user support.
+
+- link
+- link
 
 At this point, you're ready to move on to deploying apps:
 
