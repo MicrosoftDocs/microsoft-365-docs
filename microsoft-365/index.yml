@@ -73,7 +73,7 @@ additionalContent:
           url: ./compliance/index.yml
         # Card
         - title: Microsoft 365 Security
-          summary: Help to protect your enterprise across attack surfaces.
+          summary: Learn about the robust security solutions and services in Microsoft 365 Security so that you can better protect your organization across attack surfaces.
           url: ./security/index.yml
         # Card
         - title: Microsoft 365 for Campaigns
