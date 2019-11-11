@@ -78,7 +78,7 @@ As of June 2016, Office 365 no longer accepts a SHA-1 certificate for outbound o
 A cipher suite is a collection of encryption algorithms that TLS uses to establish secure connections. Cipher suites supported by Office 365 are listed in the following table in order of strength with the strongest cipher suite listed first. When Office 365 receives a connection request, Office 365 first attempts to connect using the topmost cipher suite then, if unsuccessful, tries the second cipher suite in the list and so on down the list. When Office 365 sends a connection request to another server or to a client, it's up to the receiving server or client to choose the cipher suite or whether TLS will be used at all.
 
 > [!IMPORTANT]
-> Be aware that TLS versions deprecate, and that deprecated versions *should not be used* where newer versions are available. In other words, anywhere where it's listed that TLS 1.0, 1.1, and 1.2 are supported, choose the *most recent* supported version (TLS 1.2), TLS v1.3 is currently not supported.
+> Be aware that TLS versions deprecate, and that deprecated versions *should not be used* where newer versions are available. In other words, anywhere where it's listed that TLS 1.0, 1.1, and 1.2 are supported, choose the *most recent* supported version (TLS 1.2). TLS 1.3 is currently not supported.
   
 |**Protocols**|**Cipher suite name**|**Key exchange algorithm/Strength**|**Perfect Forward Secrecy support**|**Authentication algorithm/Strength**|**Cipher/Strength**|
 |:-----|:-----|:-----|:-----|:-----|:-----|
