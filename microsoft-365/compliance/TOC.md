@@ -430,8 +430,7 @@
 
 ### Breach notification
 #### [Breach notification](gdpr-breach-notification.md)
-#### [Azure](gdpr-breach-azure.md)
-#### [Dynamics 365](gdpr-breach-dynamics365.md)
+#### [Azure & Dynamics 365](gdpr-breach-azure-dynamics.md)
 #### [Microsoft Support & Professional Services](gdpr-breach-microsoft-support-professional-services.md)
 #### [Office 365](gdpr-breach-office365.md)
 
