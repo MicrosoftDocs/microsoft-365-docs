@@ -2,7 +2,7 @@
 title: Financial Industry Regulatory Authority (FINRA) Rule 4511(c) United States
 description: An independent assessment firm validated that Azure and Office 365 can help financial firms meet FINRA Rule 4511 records retention and immutable storage requirements.
 keywords: Microsoft 365, compliance, offerings
-localization_priority: Priority
+localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.author: robmazz

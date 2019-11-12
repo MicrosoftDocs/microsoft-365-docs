@@ -27,24 +27,24 @@ You might have a situation where a person has left your organization, and their 
 ## Before you begin
 
 - You have to use the **New-MailboxSearch** cmdlet in Windows PowerShell to put an In-Place Hold on a soft-deleted mailbox. You can't use the Exchange admin center (EAC) or the eDiscovery Center in SharePoint Online. 
-    
+
 - To learn how to use Windows PowerShell to connect to Exchange Online, see [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
-    
+
 - Run the following command to get identity information about the soft-deleted mailboxes in your organization. 
-    
-  ```
+
+  ```powershell
   Get-Mailbox -SoftDeletedMailbox | FL Name,WhenSoftDeleted,DistinguishedName,ExchangeGuid,PrimarySmtpAddress
   ```
 
 - For more information about inactive mailboxes, see [Overview of inactive mailboxes in Office 365](inactive-mailboxes-in-office-365.md).
-    
+
 ## Put an In-Place Hold on a soft-deleted mailbox to make it an inactive mailbox
 
-Use the **New-MailboxSearch** cmdlet to make a soft-deleted mailbox an inactive mailbox. For more information, see [New-MailboxSearch](http://technet.microsoft.com/library/74303b47-bb49-407c-a43b-590356eae35c.aspx).
+Use the **New-MailboxSearch** cmdlet to make a soft-deleted mailbox an inactive mailbox. For more information, see [New-MailboxSearch](https://technet.microsoft.com/library/74303b47-bb49-407c-a43b-590356eae35c.aspx).
   
-1. Create a variable that contains the properties of the soft-deleted mailbox. 
-    
-   ```
+1. Create a variable that contains the properties of the soft-deleted mailbox.
+
+   ```powershell
    $SoftDeletedMailbox = Get-Mailbox -SoftDeletedMailbox -Identity <identity of soft-deleted mailbox>
    ```
 
@@ -52,25 +52,26 @@ Use the **New-MailboxSearch** cmdlet to make a soft-deleted mailbox an inactive 
     > In the previous command, use the value of the **DistinguishedName** or **ExchangeGuid** property to identify the soft-deleted mailbox. These properties are unique for each mailbox in your organization, whereas it's possible that an active mailbox and a soft-deleted mailbox might have the same primary SMTP address. 
   
 2. Create an In-Place Hold and place it on the soft-deleted mailbox. In this example, no hold duration is specified. This means items will be held indefinitely or until the hold is removed from the inactive mailbox.
-    
-   ```
+
+   ```powershell
    New-MailboxSearch -Name "InactiveMailboxHold" -SourceMailboxes $SoftDeletedMailbox.DistinguishedName -InPlaceHoldEnabled $true
     ```
+
    You can also specify a hold duration when you create the In-Place Hold. This example holds items in the inactive mailbox for approximately 7 years.
-    
-   ```
+
+   ```powershell
    New-MailboxSearch -Name "InactiveMailboxHold" -SourceMailboxes $SoftDeletedMailbox.DistinguishedName -InPlaceHoldEnabled $true -ItemHoldPeriod 2777
    ```
 
 3. After a few moments, run one of the following commands to verify that the soft-deleted mailbox is an inactive mailbox.
-    
-   ```
+
+   ```powershell
    Get-Mailbox -InactiveMailboxOnly
    ```
 
     Or
     
-   ```
+   ```powershell
    Get-Mailbox -InactiveMailboxOnly -Identity $SoftDeletedMailbox.DistinguishedName  | FL IsInactiveMailbox
    ```
 
@@ -79,9 +80,9 @@ Use the **New-MailboxSearch** cmdlet to make a soft-deleted mailbox an inactive 
 After you make a soft-deleted mailbox an inactive mailbox, there are a number of ways you can manage the mailbox. For more information, see:
   
 - [Change the hold duration for an inactive mailbox](change-the-hold-duration-for-an-inactive-mailbox.md)
-    
+
 - [Recover an inactive mailbox](recover-an-inactive-mailbox.md)
-    
+
 - [Restore an inactive mailbox](restore-an-inactive-mailbox.md)
-    
+
 - [Delete an inactive mailbox](delete-an-inactive-mailbox.md) (by removing the hold)

@@ -67,7 +67,7 @@ To learn more about the security features that you get with Windows 10 Enterpris
 
 ## How Microsoft does Microsoft 365 Enterprise
 
-Peek inside Microsoft and learn how the company [deployed Windows 10 Enterprise and is using strong authentication, Intune, and Microsoft Defender ATP](https://www.microsoft.com/en-us/itshowcase/deploying-and-managing-microsoft-365#primaryR6).
+Peek inside Microsoft and learn how the company [deployed Windows 10 Enterprise and is using strong authentication, Intune, and Microsoft Defender ATP](https://www.microsoft.com/itshowcase/deploying-and-managing-microsoft-365#primaryR6).
 
 ## How Contoso did Microsoft 365 Enterprise
 

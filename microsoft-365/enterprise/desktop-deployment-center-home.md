@@ -19,14 +19,14 @@ description: Overview of the Desktop Deployment Center.
 # Desktop Deployment Center
 
 <strong>Upgrading from Windows 7 to Windows 10</strong>
-<p>Windows 7 extended support ends January 14, 2020. In-place upgrade from Windows 7 to Windows 10 is the fastest method to deploy. You can <a href="https://docs.microsoft.com/en-us/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-manual">upgrade a single PC</a> or <a href="https://docs.microsoft.com/en-us/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-automated">upgrade thousands of PCs using System Center Configuration Manager</a>. You don’t need to focus on app delivery, file migration, custom imaging, or enabling cloud-based services with in-place upgrades. You can use tools you already have to upgrade existing PCs and focus on the following deployment steps for upgrades: </p>
+<p>Windows 7 extended support ends January 14, 2020. In-place upgrade from Windows 7 to Windows 10 is the fastest method to deploy. You can <a href="https://docs.microsoft.com/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-manual">upgrade a single PC</a> or <a href="https://docs.microsoft.com/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-automated">upgrade thousands of PCs using System Center Configuration Manager</a>. You don’t need to focus on app delivery, file migration, custom imaging, or enabling cloud-based services with in-place upgrades. You can use tools you already have to upgrade existing PCs and focus on the following deployment steps for upgrades: </p>
 
 <p>
 </p>
 
 <ul class="panelContent cardsM">
     <li>
-        <a href="https://docs.microsoft.com/en-us/microsoft-365/enterprise/step-2-directory-and-network-readiness">
+        <a href="https://docs.microsoft.com/microsoft-365/enterprise/step-2-directory-and-network-readiness">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -45,7 +45,7 @@ description: Overview of the Desktop Deployment Center.
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/en-us/microsoft-365/enterprise/step-1-device-and-app-readiness">
+        <a href="https://docs.microsoft.com/microsoft-365/enterprise/step-1-device-and-app-readiness">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -64,7 +64,7 @@ description: Overview of the Desktop Deployment Center.
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/en-us/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-automated">
+        <a href="https://docs.microsoft.com/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-automated">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">

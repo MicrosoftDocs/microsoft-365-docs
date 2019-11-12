@@ -53,7 +53,7 @@ In addition, you can use the DLP reports to fine tune your DLP policies as you r
 
 DLP reports are in the security center and the compliance center. Navigate to Reports \> View reports. Under Data loss prevention (DLP), go to either DLP policy and rule matches or DLP false positives and overrides.
 
-For more information, see [View the reports for data loss prevention](https://support.office.com/en-us/article/View-the-reports-for-data-loss-prevention-41eb4324-c513-4fa5-91c8-8fbd8aaba83b).
+For more information, see [View the reports for data loss prevention](https://support.office.com/article/View-the-reports-for-data-loss-prevention-41eb4324-c513-4fa5-91c8-8fbd8aaba83b).
 
 ![Report showing DLP policy matches](../media/Monitor-for-leaks-of-personal-data-image2.png)
 
@@ -71,21 +71,21 @@ Information security and compliance teams can use these tools to proactively rev
 
 Information security teams can also search the audit log to investigate suspected data breaches and determine both root cause and the extent of the breach. This built in capability facilitates compliance with article 33 and 34 of the GDPR, which require notifications be provided to the GDPR supervisory authority and to the data subjects themselves of a data breach within a specific time period. Audit log entries are only retained for 90 days within the service - it is often recommended and many organizations required that these logs be retained for longer periods of time.
 
-Solutions are available which subscribe to the Unified Audit Logs through the Microsoft Management Activity API and can both store log entries as needed, and provide advanced dashboards and alerts. One example is [Microsoft Operations Management Suite (OMS)](https://docs.microsoft.com/en-us/azure/operations-management-suite/oms-solution-office-365).
+Solutions are available which subscribe to the Unified Audit Logs through the Microsoft Management Activity API and can both store log entries as needed, and provide advanced dashboards and alerts. One example is [Microsoft Operations Management Suite (OMS)](https://docs.microsoft.com/azure/operations-management-suite/oms-solution-office-365).
 
 More information about alert policies and searching the audit log:
 
--   [Alert policies in the Microsoft 365 security and compliance centers](https://support.office.com/en-us/article/Alert-policies-in-the-Office-365-Security-Compliance-Center-8927B8B9-C5BC-45A8-A9F9-96C732E58264)
+-   [Alert policies in the Microsoft 365 security and compliance centers](https://support.office.com/article/Alert-policies-in-the-Office-365-Security-Compliance-Center-8927B8B9-C5BC-45A8-A9F9-96C732E58264)
 
--   [Search the audit log for user and admin activity in Office 365](https://support.office.com/en-us/article/Search-the-audit-log-for-user-and-admin-activity-in-Office-365-57CA5138-0AE0-4D34-BD40-240441EF2FB6) (introduction)
+-   [Search the audit log for user and admin activity in Office 365](https://support.office.com/article/Search-the-audit-log-for-user-and-admin-activity-in-Office-365-57CA5138-0AE0-4D34-BD40-240441EF2FB6) (introduction)
 
--   [Turn Office 365 audit log search on or off](https://support.office.com/en-us/article/Turn-Office-365-audit-log-search-on-or-off-e893b19a-660c-41f2-9074-d3631c95a014)
+-   [Turn Office 365 audit log search on or off](https://support.office.com/article/Turn-Office-365-audit-log-search-on-or-off-e893b19a-660c-41f2-9074-d3631c95a014)
 
--   [Search the audit log](https://support.office.com/en-us/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c?ui=en-US&rs=en-US&ad=US)
+-   [Search the audit log](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c?ui=en-US&rs=en-US&ad=US)
 
--   [Search-UnifiedAuditLog](https://technet.microsoft.com/en-us/library/mt238501(v=exchg.160).aspx) (cmdlet) 
+-   [Search-UnifiedAuditLog](https://technet.microsoft.com/library/mt238501(v=exchg.160).aspx) (cmdlet) 
 
--   [Detailed properties in the Office 365 audit log](https://support.office.com/en-us/article/Detailed-properties-in-the-Office-365-audit-log-ce004100-9e7f-443e-942b-9b04098fcfc3)
+-   [Detailed properties in the Office 365 audit log](https://support.office.com/article/Detailed-properties-in-the-Office-365-audit-log-ce004100-9e7f-443e-942b-9b04098fcfc3)
 
 ## Microsoft Cloud App Security
 
@@ -119,11 +119,11 @@ Note: Be sure to enable ‘Automatically scan files for Azure Information Protec
 
 More information:
 
--   [Deploy Cloud App Security](https://docs.microsoft.com/en-us/cloud-app-security/getting-started-with-cloud-app-security)
+-   [Deploy Cloud App Security](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security)
 
--   [More information about Microsoft Cloud App Security](https://www.microsoft.com/en-us/cloud-platform/cloud-app-security)
+-   [More information about Microsoft Cloud App Security](https://www.microsoft.com/cloud-platform/cloud-app-security)
 
--   [Block downloads of sensitive information using the Microsoft Cloud App Security proxy](https://docs.microsoft.com/en-us/cloud-app-security/use-case-proxy-block-session-aad)
+-   [Block downloads of sensitive information using the Microsoft Cloud App Security proxy](https://docs.microsoft.com/cloud-app-security/use-case-proxy-block-session-aad)
 
 ## Example file and activity policies to detect sharing of personal data
 

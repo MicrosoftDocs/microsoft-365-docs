@@ -32,7 +32,7 @@ With Office 365 Advanced Message Encryption, anytime you apply custom branding, 
 
 ## Create a custom branding template to force mail expiration by using PowerShell
 
-1. [Connect to Exchange Online PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) with an account that has global administrator permissions in your Office 365 organization.
+1. [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) with an account that has global administrator permissions in your Office 365 organization.
 
 2. Run the New-OMEConfiguration cmdlet.
 
@@ -52,4 +52,4 @@ Where:
 
 - [Revoke email encrypted by Office 365 Advanced Message Encryption](revoke-ome-encrypted-mail.md)
 
-- [Message policy and compliance service description](https://docs.microsoft.com/en-us/office365/servicedescriptions/exchange-online-service-description/message-policy-and-compliance)
+- [Message policy and compliance service description](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/message-policy-and-compliance)
