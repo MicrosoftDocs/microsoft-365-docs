@@ -29,7 +29,7 @@ The new OME capabilities leverage the protection features in [Azure Rights Manag
 
 The only prerequisite for using the new OME capabilities is that [Azure Rights Management](https://docs.microsoft.com/azure/information-protection/what-is-azure-rms) must be activated in your organization's tenant. If it is, Office 365 activates the new OME capabilities automatically and you don't need to do anything.
 
-Azure RMS is also activated automatically for most eligible plans, so you probably don't have to do anything in this regard either. See [Activating Azure Rights Management](https://docs.microsoft.com/en-gb/azure/information-protection/activate-service) for more information.
+Azure RMS is also activated automatically for most eligible plans, so you probably don't have to do anything in this regard either. See [Activating Azure Rights Management](https://docs.microsoft.com/azure/information-protection/activate-service) for more information.
 
 >[!IMPORTANT]
 >If you use Active Directory Rights Management service (AD RMS) with Exchange Online, you need to [migrate to Azure Information Protection](https://docs.microsoft.com/azure/information-protection/migrate-from-ad-rms-to-azure-rms) before you can use the new OME capabilities. OME is not compatible with AD RMS.  
@@ -44,7 +44,7 @@ For more information, see:
 If you disabled Azure RMS, or if it was not automatically activated for any reason, you can activate it manually in the:
 
 - **Microsoft 365 admin center**: See [How to activate Azure Rights Management from the admin center](https://docs.microsoft.com/azure/information-protection/activate-office365) for instructions.
-- **Azure portal**: See [How to activate Azure Rights Management from the Azure portal](https://docs.microsoft.com/en-gb/azure/information-protection/activate-azure) for instructions.
+- **Azure portal**: See [How to activate Azure Rights Management from the Azure portal](https://docs.microsoft.com/azure/information-protection/activate-azure) for instructions.
 
 ## Configure management of your Azure Information Protection tenant key
 

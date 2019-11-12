@@ -10,6 +10,7 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: 
 - M365-security-compliance
+- SPO_Content
 search.appverid: 
 - MOE150
 - MET150

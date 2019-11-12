@@ -7,6 +7,8 @@ ms.date: 7/31/2018
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
+ms.collection:
+- SPO_Content
 localization_priority: Normal
 search.appverid:
 - MET150

@@ -211,7 +211,7 @@ Customer content is the data created by users of Office 365 services and applica
 
 - Inferences, and all subsequent inferences, if customer content remains
 
-For additional information about customer content in Office 365, see the [Office 365 Trust Center](https://products.office.com/en-US/business/office-365-trust-center-privacy/).
+For additional information about customer content in Office 365, see the [Office 365 Trust Center](https://products.office.com/business/office-365-trust-center-privacy/).
 
 #### Who is notified when there is a request to access my content?
 

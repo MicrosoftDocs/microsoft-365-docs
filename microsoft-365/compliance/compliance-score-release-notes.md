@@ -11,7 +11,7 @@ ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
 - MET150
-description: "Release notes for the public preview of Microsoft Compliance Score, a dashboard in the M365 compliance center that helps simplify and automate risk assessments."
+description: "Release notes and known issues for Microsoft Compliance Score (preview), a feature in the M365 compliance center that helps simplify and automate risk assessments."
 ---
 
 # Microsoft Compliance Score (Preview) release notes
@@ -42,40 +42,6 @@ Keep these points in mind as you work with Compliance Score and Compliance Manag
 ## Known issues in Compliance Score (Preview)
 
 The following sections cover known issues to be resolved in upcoming releases of Compliance Score.
-
-### Custom templates for assessments
-
-**Issue: Custom assessment shows irrelevant actions in Compliance Score**
-
-**Solution:**
-
-When creating a custom template for an assessment, first create a new **Product** or **Certification** value (see "Adding new dimensions for custom templates" below for instructions). Then use a combination of one **Product** value and one **Certification** value that includes this new value and has not been used in another template.
-
-For example, avoid using a **Product** dimension of Microsoft 365 and a **Certification** dimension of FFIEC, as the standard template FFIEC already uses this dimension combination.  
-
-**Issue: Adding new dimensions for custom templates**
-
-**Solution:**
-
-Assessments created from custom templates may not appear correctly in Compliance Score because certain dimensions are not yet available. To correct the issue, follow the steps below when creating custom templates for assessments.
-
-1. Download [this sample import file](https://servicetrust.microsoft.com/ViewPage/TrustDocumentsV3?command=Download&downloadType=Document&downloadId=6894fb7e-d21d-4646-a514-ceb212072043&tab=7f51cb60-3d6c-11e9-b2af-7bb9f5d2d913&docTab=7f51cb60-3d6c-11e9-b2af-7bb9f5d2d913_FAQ_and_White_Papers) and save a copy to your computer.
-   - **Note**: this file will only be used to import the dimensions you need to Compliance Manager. It will not be the file used to create your custom template, so its file name should not be similar to the eventual template name to avoid confusion.
-2. Add the dimension values for **Product** and **Certification** you'll need for your custom assessment.
-3. **Save** the file.
-
-4. Upload the template to Compliance Manager following these instructions:
-   - In Compliance Manger, from the Templates dashboard, select **+Add Template**.
-   - On the **Add Template** flyout, under the **Dimension** header, for **Certification** select **CCPA**, and for **Product** select **Intune**.
-   - Select **Browse** and find the file you downloaded and saved in steps 1-3 above, then select **Add to Dashboard**.
-   - Find your new template in the Dashboard, go to the ellipses on the far right side of its row, select **Reject**, then confirm the rejection. This removes the template from your inventory, yet the dimensions you added to that template remain in Compliance Manager so you can select them for a future template.
-   - **Refresh** your browser so that the next time you create a template, the new dimension(s) will be an available option for you to select.
-
-5. Create your custom template in Compliance Manager following [these instructions](working-with-compliance-manager.md#create-a-template-1).
-6. **Upload** your custom template to Compliance Manager using the correct **Product** and **Certification** tag.
-7. Have another Compliance Manager admin approve the template.
-
-The custom template is now ready to use.
 
 ### Launch Now links in certain improvement actions
 

@@ -80,7 +80,7 @@ App assignment type |	Group use	| Example Azure AD name
 --- | --- | ---
 Available |  The app will be available from Company Portal app or website. | MMD – *app name* – Available
 Required |  The app is installed on devices in the selected groups. | MMD – *app name* – Required
-Uninstall |  TThe app is uninstalled from devices in the selected groups. | MMD – *app name* – Uninstall
+Uninstall |  The app is uninstalled from devices in the selected groups. | MMD – *app name* – Uninstall
 
 Add your users to these groups to either make the app availabe, install the app, or remove the app from their Microsoft Managed Desktop device. 
 

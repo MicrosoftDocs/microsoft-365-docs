@@ -8,7 +8,9 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: M365-security-compliance 
+ms.collection: 
+- M365-security-compliance
+- SPO_Content
 search.appverid: 
 - MOE150
 - MET150
@@ -23,7 +25,7 @@ You can use an Advanced eDiscovery case to create holds to preserve content that
 
 ## Manage custodian-based holds
 
-In some cases, you may have a set of data custodians that you have identified and choosen to preserve. In Advanced eDiscovery, when these custodians are placed on hold, the user and their selected data sources are automatically added to a custodian hold policy. 
+In some cases, you may have a set of custodians that you have identified and have decided to preserve their data during the case. In Advanced eDiscovery, when these custodians are placed on hold, the user and their selected data sources are automatically added to a custodian hold policy. 
 
 To view the custodian hold policy:
 

@@ -11,6 +11,7 @@ ms.collection:
 - Strat_O365_Enterprise
 - GDPR
 - M365-security-compliance
+- SPO_Content
 ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
