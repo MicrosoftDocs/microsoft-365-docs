@@ -39,5 +39,5 @@ You may experience the error that is described in [KB2590466](https://support.mi
   
 ## See also
 
-[Sender filtering in Exchange 2016](http://technet.microsoft.com/library/b833f864-ff10-46a0-a653-28fb9ba30896.aspx)
+[Sender filtering in Exchange 2016](https://technet.microsoft.com/library/b833f864-ff10-46a0-a653-28fb9ba30896.aspx)
 

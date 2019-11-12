@@ -78,7 +78,7 @@ Microsoft actively works with industry bodies and service providers in order to 
 
 - [Online Trust Alliance](https://www.otalliance.org/resources)
 
-- [Email Sender &amp; Provider Coalition](http://www.espcoalition.org/)
+- [Email Sender &amp; Provider Coalition](https://www.espcoalition.org/)
 
 ## Abuse and spam reporting
 

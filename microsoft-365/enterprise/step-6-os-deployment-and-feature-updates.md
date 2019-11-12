@@ -48,9 +48,9 @@ During the build and capture process, tools like System Center Configuration Man
 
 The captured image will have the Windows image – or WIM – format like standard Windows installation media. Once you have your custom WIM file, you can use another task sequence as part of your OS deployment in System Center Configuration Manager or Microsoft Deployment Toolkit to perform deployment-related tasks, to apply the image and run tasks before and after your Windows image is applied.
 
-[Create a Windows 10 Reference Image](https://docs.microsoft.com/en-us/windows/deployment/deploy-windows-mdt/create-a-windows-10-reference-image)
+[Create a Windows 10 Reference Image](https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/create-a-windows-10-reference-image)
 
-[Create a Task Sequence to Install an Operating System](https://docs.microsoft.com/en-us/sccm/osd/deploy-use/create-a-task-sequence-to-install-an-operating-system)
+[Create a Task Sequence to Install an Operating System](https://docs.microsoft.com/sccm/osd/deploy-use/create-a-task-sequence-to-install-an-operating-system)
 
 ### Deployment Types
 
@@ -64,7 +64,7 @@ With your custom image ready, the installation or migration type will fall into 
 
 All three of these scenarios have something in common, they use a task sequence to run, and a custom image can be applied each time.
 
-[More About Windows 10 Deployment Scenarios](https://docs.microsoft.com/en-us/windows/deployment/windows-10-deployment-scenarios)
+[More About Windows 10 Deployment Scenarios](https://docs.microsoft.com/windows/deployment/windows-10-deployment-scenarios)
 
 ### In-place Upgrade using Task Sequence Automation
 
@@ -80,9 +80,9 @@ In-place upgrade uses windows setup. The setup engine runs several small pre-ins
 
 The in-place upgrade scenario can be used to migrate to Windows 10 from legacy versions of Windows, as well as upgrade from previous versions of Windows 10. After Windows Setup completes the upgrade, your task sequence can continue to run and upgrade applications like Office, replace drivers, and apply personalization settings. Likewise, you can use the Upgrade Task Sequence to perform pre-installation tasks or checks prior to carrying out the upgrade.
 
-[Perform an in-place upgrade to Windows 10 using Configuration Manager](https://docs.microsoft.com/en-us/windows/deployment/upgrade/upgrade-to-windows-10-with-system-center-configuraton-manager)
+[Perform an in-place upgrade to Windows 10 using Configuration Manager](https://docs.microsoft.com/windows/deployment/upgrade/upgrade-to-windows-10-with-system-center-configuraton-manager)
 
-[Create a task sequence to upgrade an OS in Configuration Manager](https://docs.microsoft.com/en-us/sccm/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system)
+[Create a task sequence to upgrade an OS in Configuration Manager](https://docs.microsoft.com/sccm/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system)
 
 ### Phased Deployment
 
@@ -94,9 +94,9 @@ As you're planning your deployment, you'll be targeting computers for bare metal
 
 Regardless of the deployment type you choose, you’ll want to make sure it’s as automated as possible for predictability and repeatability. Microsoft offers two solutions to automate OS deployment using automated task sequences:
 
-  - **[System Center Configuration Manager](https://docs.microsoft.com/en-us/sccm/core/understand/introduction)** (ConfigMgr) provides built-in operating system deployment capabilities to complement its capabilities for software distribution and software update management. ConfigMgr is widely used by organizations of all sizes and supports all four Windows deployment types. Optionally, you can integrate ConfigMgr with Microsoft Intune to add additional capabilities for deployment and device management.
+  - **[System Center Configuration Manager](https://docs.microsoft.com/sccm/core/understand/introduction)** (ConfigMgr) provides built-in operating system deployment capabilities to complement its capabilities for software distribution and software update management. ConfigMgr is widely used by organizations of all sizes and supports all four Windows deployment types. Optionally, you can integrate ConfigMgr with Microsoft Intune to add additional capabilities for deployment and device management.
 
-  - And one other popular deployment option is the free **[Microsoft Deployment Toolkit](https://docs.microsoft.com/en-us/windows/deployment/deploy-windows-mdt/get-started-with-the-microsoft-deployment-toolkit)** (MDT) which is typically used by small and medium sized organizations for OS deployment. This requires very little infrastructure. MDT integrates with Windows Deployment Services (WDS) for network boot. It supports all four deployment types as well as installation of applications, drivers, and settings. And of course, MDT can even be integrated with Configuration Manager.
+  - And one other popular deployment option is the free **[Microsoft Deployment Toolkit](https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/get-started-with-the-microsoft-deployment-toolkit)** (MDT) which is typically used by small and medium sized organizations for OS deployment. This requires very little infrastructure. MDT integrates with Windows Deployment Services (WDS) for network boot. It supports all four deployment types as well as installation of applications, drivers, and settings. And of course, MDT can even be integrated with Configuration Manager.
 
 ![](media/step-6-os-deployment-and-feature-updates-media/step-6-os-deployment-and-feature-updates-media-5.png)
 
@@ -106,21 +106,21 @@ A new option with Windows 10 is to configure new PCs as part of your hardware re
 
 Then, when a user signs in to the PC during setup using their Azure AD credentials, the device enrolls into Microsoft Intune, which can then take over the deployment process and apply applications, software updates configurations and compliance policies. Windows Autopilot can also optionally prevent the user from accessing the first session until provisioning is complete.
 
-[Overview of Windows Autopilot](https://docs.microsoft.com/en-us/windows/deployment/windows-autopilot/windows-10-autopilot)
+[Overview of Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)
 
-[Windows Autopilot Prerequisites](https://docs.microsoft.com/en-us/windows/deployment/windows-autopilot/windows-10-autopilot#prerequisites)
+[Windows Autopilot Prerequisites](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot#prerequisites)
 
 ## Windows Update for Business for Feature Updates
 
-Windows Update for Business is a free service that enables IT Pros to keep Windows 10 devices always up to date by directly connecting the devices to the Windows Update service. Windows Update for Business can be configured via Group Policy or through MDM solutions such as Microsoft Intune and allows IT Pros to create [deployment rings](https://docs.microsoft.com/en-us/windows/deployment/update/waas-deployment-rings-windows-10-updates) to validate new builds. It is integrated into existing management tools such as Windows Server Update Services (WSUS), System Center Configuration Manager (Current Branch), and Microsoft Intune. Additionally, Windows Update for Business supports peer-to-peer delivery to help optimize bandwidth efficiency and reduce network congestion.
+Windows Update for Business is a free service that enables IT Pros to keep Windows 10 devices always up to date by directly connecting the devices to the Windows Update service. Windows Update for Business can be configured via Group Policy or through MDM solutions such as Microsoft Intune and allows IT Pros to create [deployment rings](https://docs.microsoft.com/windows/deployment/update/waas-deployment-rings-windows-10-updates) to validate new builds. It is integrated into existing management tools such as Windows Server Update Services (WSUS), System Center Configuration Manager (Current Branch), and Microsoft Intune. Additionally, Windows Update for Business supports peer-to-peer delivery to help optimize bandwidth efficiency and reduce network congestion.
 
 For more detailed information on Windows Update for Business please review the following documentation:
 
-- [Deploy Updates Using Windows Update for Business](https://docs.microsoft.com/en-us/windows/deployment/update/waas-manage-updates-wufb)
-- [Configure Windows Update for Business](https://docs.microsoft.com/en-us/windows/deployment/update/waas-configure-wufb)
-- [Integrate Windows Update for Business with Existing Management Tools](https://docs.microsoft.com/en-us/windows/deployment/update/waas-integrate-wufb)
-- [Use Group Policy to configure Windows Update for Business](https://docs.microsoft.com/en-us/windows/deployment/update/waas-wufb-group-policy)
-- [Use Microsoft Intune to configure Windows Update for Business](https://docs.microsoft.com/en-us/intune/windows-update-for-business-configure)
+- [Deploy Updates Using Windows Update for Business](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb)
+- [Configure Windows Update for Business](https://docs.microsoft.com/windows/deployment/update/waas-configure-wufb)
+- [Integrate Windows Update for Business with Existing Management Tools](https://docs.microsoft.com/windows/deployment/update/waas-integrate-wufb)
+- [Use Group Policy to configure Windows Update for Business](https://docs.microsoft.com/windows/deployment/update/waas-wufb-group-policy)
+- [Use Microsoft Intune to configure Windows Update for Business](https://docs.microsoft.com/intune/windows-update-for-business-configure)
 
 ## Next Step 
 

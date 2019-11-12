@@ -21,7 +21,7 @@ As your cloud collaboration provider, Microsoft recognizes the need to continuou
 
 **"SharePoint Online Downtime**: Any period of time when users are unable to read or write any portion of a SharePoint Online site collection for which they have appropriate permissions."
 
-You can find the downtime definitions for each service in the [Service Level Agreements](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=37).
+You can find the downtime definitions for each service in the [Service Level Agreements](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=37).
 
 To minimize downtime, either planned or unexpected, Microsoft 365 services are designed and operated to be highly available and resilient to failure by focusing on four areas:
 
