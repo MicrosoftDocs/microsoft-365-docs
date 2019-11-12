@@ -144,15 +144,17 @@ You can’t edit an Owner name, but you can modify the description that is displ
 
 The Customer Actions area shows all the customer actions for all Templates and Assessments in Compliance Manager (Preview).
 
-![Compliance Manager — add users](media/compliance-manager-customer-actions.png)
+![Compliance Manager — add users](media/compliance-manager-customer-actions.png "Compliance Manager Customer Actions")
 
-At-a-glance, you can see an Action’s title, owner, category, enforcement, and score, and determine if it is integrated with Secure Score. You can expand an Action and select **Read More** to read the Action’s description and access any links in the description. You can also use this interface to enable and disable Secure Score integration on a per-action basis, and to add custom actions. Actions that have Secure Score integration capabilities have an ellipsis (…) next to them (note that custom actions also have an ellipsis next to them).
+At a glance, you can see an Action’s title, owner, category, enforcement, and score, and determine if it is integrated with Secure Score. You can expand an Action and select **Read More** to read the Action’s description and access any links in the description. You can also use this interface to enable and disable Secure Score integration on a per-action basis, and to add custom actions. Actions that have Secure Score integration capabilities have an ellipsis (…) next to them (note that custom actions also have an ellipsis next to them).
 
 #### Enable or disable Secure Score integration
 
 1. Select the ellipses (…) for the Action you want to modify and select **Edit**.
 2. Toggle the switch for Secure Score continuous update to On or Off to enable or disable continuous monitoring through Secure Score.
 3. Select **Save**.
+
+**Note**: when organizations first deploy Microsoft 365 or Office 365, it takes about seven days before Secure Score data is collected and factored into your compliance score. For actions to count toward your score in the interim, turning off the continuous monitoring switch and manually setting an action to **impelmented** will count it toward your score. After the initial seven days into your tenancy, turning the Secure Score continuous update switch to **On** will tenable continuous monitoring from that point forward.
 
 #### Add a customer action
 

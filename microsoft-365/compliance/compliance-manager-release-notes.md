@@ -46,6 +46,7 @@ The following sections cover known issues to be resolved in upcoming releases of
 - Secure Score results are not available for some Actions Items in certain Microsoft 365 and Office 365 subscriptions. The Secure Score result is **Could not be detected** in these cases.
 - Sometimes Secure Score results are returned for corresponding policies and Action Items not completed.
 - For new tenants, Secure Score updates for all actions is automatically turned on. The global administrator can set the Secure Score continuous update switch to off, which turns off updates for all actions.
+  - **Note**: when organizations first deploy Microsoft 365 or Office 365, it takes about seven days before Secure Score data is collected and factored into your compliance score. For actions to count toward your score in the interim, turning off the continuous monitoring switch and manually setting an action to **implemented** will count it toward your score. After the initial seven days into your tenancy, turning the Secure Score continuous update switch to **On** will tenable continuous monitoring from that point forward.
 - When Secure Score updates are turned on, actions are actively monitored by Secure Score, although the action’s test date will not be updated to reflect monitoring.
 - When new assessments are created, scores automatically include Microsoft-managed control scores and Secure Score integration.
 
