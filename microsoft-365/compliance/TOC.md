@@ -10,14 +10,14 @@
 ## [Plan for security and compliance in Office 365](plan-for-security-and-compliance.md)
 
 # Manage internal risks
-## [Protect user and device access](protect-access-to-data-and-services.md)
-## [Customer Lockbox](customer-lockbox-requests.md)
-## Privileged access management
-### [Learn about privileged access management](privileged-access-management-overview.md)
-### [Configure privileged access management](privileged-access-management-configuration.md)
-## Customer Key
-### [Controlling your data in Office 365 using Customer Key](controlling-your-data-using-customer-key.md)
-### [Service encryption with Customer Key for Office 365 FAQ](service-encryption-with-customer-key-faq.md)
+## Insider risk management
+### [Learn about insider risk management (preview)](insider-risk-management.md)
+### [Get started with insider risk management (preview)](insider-risk-management-configure.md)
+### [Create and manage policies](insider-risk-policies.md)
+### [Investigate insider risk alerts (preview)](insider-risk-management-alerts.md)
+### [Remediate insider risk cases (preview)](insider-risk-management-cases.md)
+### [Create notices](insider-risk-notices.md)
+### [Manage reporting](insider-risk-reporting.md)
 ## Communication compliance
 ### [Learn about communication compliance (preview)](communication-compliance.md)
 ### [Configure communication compliance in Microsoft 365 (preview)](communication-compliance-configure.md)
@@ -30,14 +30,14 @@
 ### [Attributes for information barrier policies](information-barriers-attributes.md)
 ### [Troubleshooting information barriers](information-barriers-troubleshooting.md)
 ### [Edit information barrier policies](information-barriers-edit-segments-policies.md)
-## [Insider risk management]()
-### [Learn about insider risk management (preview)](insider-risk-management.md)
-### [Get started with insider risk management (preview)](insider-risk-management-configure.md)
-### [Create and manage policies](insider-risk-policies.md)
-### [Investigate insider risk alerts (preview)](insider-risk-management-alerts.md)
-### [Remediate insider risk cases (preview)](insider-risk-management-cases.md)
-### [Create notices](insider-risk-notices.md)
-### [Manage reporting](insider-risk-reporting.md)
+## Privileged access management
+### [Learn about privileged access management](privileged-access-management-overview.md)
+### [Configure privileged access management](privileged-access-management-configuration.md)
+## Customer Key
+### [Controlling your data in Office 365 using Customer Key](controlling-your-data-using-customer-key.md)
+### [Service encryption with Customer Key for Office 365 FAQ](service-encryption-with-customer-key-faq.md)
+## [Protect user and device access](protect-access-to-data-and-services.md)
+## [Customer Lockbox](customer-lockbox-requests.md)
 
 # [Manage information protection](protect-information.md)
 ## [Sensitivity labels](sensitivity-labels.md)
