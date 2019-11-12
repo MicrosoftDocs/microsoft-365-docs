@@ -21,7 +21,7 @@ description: "Office 365 can help protect your environment from malware by detec
 # Virus detection in SharePoint Online
 
 > [!IMPORTANT]
-> To use this feautre, Office 365 Advanced Threat Protection (ATP) is required. To learn more, see [Turn on Office 365 ATP for SharePoint, OneDrive, and Microsoft Teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/turn-on-atp-for-spo-odb-and-teams).
+> To use this feature, Office 365 Advanced Threat Protection (ATP) is required. To learn more, see [Turn on Office 365 ATP for SharePoint, OneDrive, and Microsoft Teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/turn-on-atp-for-spo-odb-and-teams).
 
 Office 365 can help protect your environment from malware by detecting viruses in files that users upload to SharePoint Online. Files are scanned for viruses after they are uploaded. If a file is found to be infected, a property is set so that users can't download or sync the file.
   
