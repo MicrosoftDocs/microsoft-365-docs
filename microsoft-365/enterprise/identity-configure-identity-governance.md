@@ -15,7 +15,7 @@ ms.custom:
 description: Understand and configure identity governance for your Azure AD tenant.
 ---
 
-# Step 7: Configure identity governance
+# Step 6: Configure identity governance
 
 ![Phase 2-Identity](./media/deploy-foundation-infrastructure/identity_icon-small.png)
 
