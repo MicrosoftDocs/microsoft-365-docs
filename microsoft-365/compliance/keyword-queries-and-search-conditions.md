@@ -12,6 +12,7 @@ localization_priority: Normal
 ms.collection: 
 - Strat_O365_IP
 - M365-security-compliance
+- SPO_Content
 search.appverid: 
 - MOE150
 - MET150
