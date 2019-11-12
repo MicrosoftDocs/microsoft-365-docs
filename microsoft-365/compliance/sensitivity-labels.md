@@ -8,7 +8,9 @@ audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Priority
-ms.collection: M365-security-compliance
+ms.collection: 
+- M365-security-compliance
+- SPO_Content
 search.appverid: 
 - MOE150
 - MET150
