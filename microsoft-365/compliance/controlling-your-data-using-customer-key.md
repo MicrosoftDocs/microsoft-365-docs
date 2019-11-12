@@ -41,7 +41,7 @@ To set up Customer Key you will complete these tasks. The rest of this topic pro
   
 **In Azure and Microsoft FastTrack:**
   
-You will complete most of these tasks by remotely connecting to Azure PowerShell. For best results, use version 3.0 or later of Azure PowerShell Az module, for more information, see the [Introducing the new Azure PowerShell Az module](https://docs.microsoft.com/powershell/azure/new-azureps-module-az?view=azps-3.0.0).
+You will complete most of these tasks by remotely connecting to Azure PowerShell. For best results, use version 3.0 or later of Azure PowerShell Az module. For more information, see [Introducing the new Azure PowerShell Az module](https://docs.microsoft.com/powershell/azure/new-azureps-module-az?view=azps-3.0.0).
   
 - [Create two new Azure subscriptions](controlling-your-data-using-customer-key.md#Create2newsubs)
     
