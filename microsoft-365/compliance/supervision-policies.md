@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-description: "Learn about Supervision policies in Office 365"
+description: "Learn about supervision policies in Office 365"
 ---
 
 # Supervision policies in Office 365
 
-Supervision policies in Office 365 allow you to capture employee communications for examination by designated reviewers. You can define specific policies that capture internal and external email, Microsoft Teams, or 3rd-party communications in your organization. Reviewers can then examine the messages to make sure that they are compliant with your organization's message standards and resolve them with classification type. 
+Supervision policies in Office 365 allow you to capture employee communications for examination by designated reviewers. You can define specific policies that capture internal and external email, Microsoft Teams, or 3rd-party communications in your organization. Reviewers can then examine the messages to make sure that they are compliant with your organization's message standards and resolve them with classification type.
 
 These policies can also help you overcome many modern compliance challenges, including:
 
@@ -33,6 +33,8 @@ In some organizations, there may be a separation of duties between IT support an
 For a quick overview of Supervision policies, see the [Supervision policy video](https://youtu.be/C3Y8WZ7o_dI) on the [Microsoft Mechanics channel](https://www.youtube.com/user/OfficeGarageSeries).
 
 To learn more about upcoming Supervision feature improvements and availability, see the [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap).
+
+Want to try the new Communication compliance experience in Microsoft 365? Check out the new and improved features available in [Communication compliance in Microsoft 365 (preview)](communication-compliance.md).
 
 ## Scenarios for supervision policies
 
@@ -272,7 +274,7 @@ View audit activities in the unified audit log or with the [Search-UnifiedAuditL
 
 For example, the following example returns the activities for the all the supervisory review activities (policies and rules) and lists detailed information for each:
 
-```
+```PowerShell
 Search-UnifiedAuditLog -StartDate 3/1/2019 -EndDate ([System.DateTime]::Now) -RecordType DataGovernance -ResultSize 5000 | Where-Object {$_.Operations -like "*SupervisoryReview*"}  | fl CreationDate,Operations,UserIds,AuditData
 ```
 
@@ -281,3 +283,4 @@ In addition to information provided in the supervision reports and logs, you can
 ## Ready to get started?
 
 To configure supervision policies for your organization, see [Configure supervision policies](configure-supervision-policies.md).
+

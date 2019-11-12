@@ -66,20 +66,25 @@ If you've met all these prerequisites, you're ready to collect the information b
 4. In **Report Builder**, select **Data source:**. Select the default data source, which should start with "AutoGen". 
 5. Choose **Query type as Text**, and then enter this query:
 
-```
 
+
+
+```sql
 SELECT comp.manufacturer0      AS Manufacturer,  
        comp.model0             AS Model,  
        bios.serialnumber0      AS Serial_Number,  
        mdm.devicehardwaredata0 AS HardwareHash  
-FROM   Fn_rbac_gs_computer_system(@UserSIDs) comp  
+FROM   Fn_rbac_gs_computer_system(@UserSIDs) comp
+
        INNER JOIN Fn_rbac_gs_pc_bios(@UserSIDs) bios  
                ON comp.resourceid = bios.resourceid  
        INNER JOIN Fn_rbac_gs_mdm_devdetail_ext01(@UserSIDs) mdm  
                ON comp.resourceid = mdm.resourceid
-
-
 ```
+
+
+
+
 5. Navigate to the **Field** tab, wehre values for **Field Name** and **Field Source** should already be populated. If they aren't, then select **Add**, and then select **Query Field**. Enter the **Field Name** and **Field Source**.
 6. Repeat for each of these values: 
     - Manufacturer 

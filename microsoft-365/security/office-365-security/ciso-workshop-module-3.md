@@ -14,22 +14,22 @@ description: "Learn more about security principles and recommendations for moder
 
 # CISO Workshop Module 3: Identity and Zero Trust User Access
 
-Because most modern attacks involve compromising user identities, learn how to build a new identity security perimeter to protect assets outside your corporate network.
+Learn how to advance zero trust with your identity and user access strategy to better protect corporate data inside and outside your network perimeter.
 
 - Download PDF summary: [Module 3: Identity and Zero Trust User Access](../media/ciso-workshop-3-identity-and-zero-trust-user-access.pdf)
 - Download PowerPoint summary: [Module 3: Identity and Access Management](../media/ciso-workshop-3-identity-and-zero-trust-user-access.pptx)
 
 ## Part 1: Identity and Zero Trust History (9:33)
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE3Yyhs]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3Yyhs]
 
 ## Part 2: Zero Trust Definition and Models (15:37)
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE3YaUL]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3YaUL]
 
 ## Part 3: Strategy and Priorities (9:54)
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE3YvHy]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3YvHy]
 
 ## Part 4: Account Security: Measuring Cost of Attack Password-less Authentication (13:11)
 
@@ -37,7 +37,7 @@ Because most modern attacks involve compromising user identities, learn how to b
 
 ##  Part 5: Zero Trust User Access Reference Architecture (8:42)
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE3Yyhx]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3Yyhx]
 
 ##  Part 6: Build an Identity Perimeter (13:57)
 

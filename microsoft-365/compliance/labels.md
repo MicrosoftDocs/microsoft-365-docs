@@ -10,6 +10,7 @@ ms.service: O365-seccomp
 localization_priority: Priority
 ms.collection: 
 - M365-security-compliance
+- SPO_Content
 search.appverid: 
 - MOE150
 - MET150
@@ -254,8 +255,9 @@ You can choose to apply retention labels to content automatically when that cont
     
 - Specific keywords that match a query you create.
     
-![Choose condition page for auto-apply label](media/c0b7a3ef-bda0-494c-941d-f1f93753ecdd.png)
-  
+![Choose condition page for auto-apply label](media/classifier-pre-trained-apply-label-match-trainable-classifier.png)
+
+
 Auto-applying retention labels requires an Office 365 Enterprise E5 subscription, and that it can take up to seven days for auto-apply retention labels to be applied to all content that matches the conditions, as described above.
   
 > [!TIP]
