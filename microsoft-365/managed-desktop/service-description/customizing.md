@@ -63,7 +63,7 @@ These conditions could change in the future. If we do make such changes, we’ll
 
 ## Revoking approval for an exception
 
-After a requested exception is approved and deployed, it’s possible that we might discover problems that violate the key conditions that weren’t evident when we approved the change in the first place. In this situation, we might have to revoke approval for the exception.
+After a requested exception is approved and deployed, it’s possible that we might discover problems that violate the key conditions that weren’t evident when we approved the change in the first place. In this situation, we might have to revoke approval for the exception. 
  
 If this happens, we’ll notify you by using the Microsoft Managed Desktop admin portal. From the first time we notify you, you have 90 days to remove the exception before the devices with the exception are no longer bound by Microsoft Managed Desktop service level agreements. We'll send you several notifications according to a strict timeline--however, a severe incident or threat might require us to change the timeline or our decisions about an exception. We won't *remove* an exception without your consent, but any device with a revoked exception will no longer be bound by our service level agreement. Here is the timeline of notifications we will send you:
 
