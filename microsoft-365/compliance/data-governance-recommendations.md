@@ -7,6 +7,8 @@ ms.date: 1/15/2019
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
+ms.collection:
+- SPO_Content
 localization_priority: Priority
 search.appverid: 
 - MOE150

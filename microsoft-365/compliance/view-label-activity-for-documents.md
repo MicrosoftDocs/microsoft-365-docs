@@ -7,7 +7,9 @@ ms.date: 5/9/2018
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-ms.collection: M365-security-compliance
+ms.collection: 
+- M365-security-compliance
+- SPO_Content
 localization_priority: Priority
 search.appverid: 
 - MOE150
