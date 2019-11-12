@@ -146,7 +146,7 @@ After you've activated the Rights Management service, the next step is to set up
 
 The last step in this section is to download the Rights Management Services (RMS) Client 2.1. This software helps protect access to Azure RMS and protects information flowing through applications that use Azure RMS. Install the RMS client on the same computer that you'll use to encrypt and upload PST files in Step 5. 
   
-1. Download [Rights Management Service Client 2.1](https://www.microsoft.com/en-us/download/details.aspx?id=38396).
+1. Download [Rights Management Service Client 2.1](https://www.microsoft.com/download/details.aspx?id=38396).
     
 2. Run the Active Directory Rights Management Service Client 2.1 wizard to install the client.
 

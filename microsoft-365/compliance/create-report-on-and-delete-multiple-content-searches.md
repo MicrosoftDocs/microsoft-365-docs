@@ -7,6 +7,8 @@ ms.date: 6/26/2018
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
+ms.collection:
+- SPO_Content
 localization_priority: Normal
 search.appverid:
 - SPO160

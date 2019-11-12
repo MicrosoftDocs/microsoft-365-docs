@@ -14,6 +14,7 @@ search.appverid:
 ms.assetid: 07e76024-0c80-40dc-8c48-1dd0d0f863cb
 ms.collection: 
 - M365-security-compliance
+- SPO_Content
 description: "Learn how to turn on ATP for SharePoint, OneDrive, and Teams, including how to set alerts for detected files."
 ---
 

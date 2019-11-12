@@ -147,7 +147,7 @@ Microsoft provides a set of recommendations for [identity and device access](mic
 
 ## How Microsoft does Microsoft 365 Enterprise
 
-Learn how IT experts at Microsoft [manage devices with EMS](https://www.microsoft.com/en-us/itshowcase/deploying-and-managing-microsoft-365#primaryR8).
+Learn how IT experts at Microsoft [manage devices with EMS](https://www.microsoft.com/itshowcase/deploying-and-managing-microsoft-365#primaryR8).
 
 ## How Contoso did Microsoft 365 Enterprise
 

@@ -46,7 +46,7 @@ When you've completed these steps, go to the [exit criteria](infoprotect-exit-cr
 
 ## How Microsoft does Microsoft 365 Enterprise
 
-Learn how IT experts at Microsoft use [Azure Information Protection and safeguard data](https://www.microsoft.com/en-us/itshowcase/deploying-and-managing-microsoft-365#primaryR9).
+Learn how IT experts at Microsoft use [Azure Information Protection and safeguard data](https://www.microsoft.com/itshowcase/deploying-and-managing-microsoft-365#primaryR9).
 
 ## How Contoso did Microsoft 365 Enterprise
 

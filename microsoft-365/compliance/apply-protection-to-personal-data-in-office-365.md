@@ -11,6 +11,7 @@ ms.collection:
 - Strat_O365_Enterprise
 - GDPR
 - M365-security-compliance
+- SPO_Content
 ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
@@ -35,7 +36,7 @@ With DLP, you can:
 
 -   View DLP reports showing content that matches your organization’s DLP policies.
 
-For more information, see [Overview of data loss prevention policies](https://support.office.com/en-us/article/Overview-of-data-loss-prevention-policies-1966b2a7-d1e2-4d92-ab61-42efbb137f5e).
+For more information, see [Overview of data loss prevention policies](https://support.office.com/article/Overview-of-data-loss-prevention-policies-1966b2a7-d1e2-4d92-ab61-42efbb137f5e).
 
 ![Options for creating a Data Loss Prevention policy](Media/Apply-protection-to-personal-data-in-Office-365-image1.png)
 
@@ -136,7 +137,7 @@ Description: Display policy tips to employees, notify compliance teams when this
 <tr class="odd">
 <td align="left">Notify users when content matches the policy settings</td>
 <td align="left"><p>Check this box (“Show policy tips to users and send them an email notification.”)</p>
-<p>Click ‘Customize the tip and email’ and update these for your environment. See the default notifications in this article: <a href="https://support.office.com/en-us/article/Send-email-notifications-and-show-policy-tips-for-DLP-policies-87496bc5-9601-4473-8021-cb05c71369c1?ui=en-US&amp;rs=en-US&amp;ad=US">Send email notifications and show policy tips for DLP policies</a>.</p></td>
+<p>Click ‘Customize the tip and email’ and update these for your environment. See the default notifications in this article: <a href="https://support.office.com/article/Send-email-notifications-and-show-policy-tips-for-DLP-policies-87496bc5-9601-4473-8021-cb05c71369c1?ui=en-US&amp;rs=en-US&amp;ad=US">Send email notifications and show policy tips for DLP policies</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left">Detect when a specific amount of sensitive info is being shared at one time</td>
@@ -294,7 +295,7 @@ The following table summarizes the controls you can configure.
 
 More information:
 
--   [Manage external sharing for your SharePoint Online environment](https://support.office.com/en-us/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&rs=en-US&ad=US)
+-   [Manage external sharing for your SharePoint Online environment](https://support.office.com/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&rs=en-US&ad=US)
 
 -   [Share sites or documents with people outside your organization](https://support.office.com/en-US/article/Share-sites-or-documents-with-people-outside-your-organization-80e49744-e30f-44db-8d51-16661b1d4232)
 
@@ -345,7 +346,7 @@ Device access policies for SharePoint and OneDrive for Business require supporti
 </tbody>
 </table>
 
-More information: [SharePoint Online admin center: Control access from unmanaged devices](https://support.office.com/en-us/article/Control-access-from-unmanaged-devices-5ae550c4-bd20-4257-847b-5c20fb053622?ui=en-US&rs=en-US&ad=US).
+More information: [SharePoint Online admin center: Control access from unmanaged devices](https://support.office.com/article/Control-access-from-unmanaged-devices-5ae550c4-bd20-4257-847b-5c20fb053622?ui=en-US&rs=en-US&ad=US).
 
 ## Service access protection for identities and devices
 
@@ -353,9 +354,9 @@ Microsoft recommends you configure protection for identities and devices that ac
 
 Access protection for identities and devices provides a baseline of protection to ensure that identities are not compromised, devices are safe, and organization data that is accessed on devices is isolated and protected.
 
-For starting point recommendations and configuration guidance, see [Microsoft security guidance for political campaigns, nonprofits, and other agile organizations](https://docs.microsoft.com/en-us/microsoft-365-enterprise/microsoft-security-guidance).
+For starting point recommendations and configuration guidance, see [Microsoft security guidance for political campaigns, nonprofits, and other agile organizations](https://docs.microsoft.com/microsoft-365-enterprise/microsoft-security-guidance).
 
-For hybrid identity environments with AD FS, see [Recommended security policies and configurations](https://docs.microsoft.com/en-us/microsoft-365-enterprise/microsoft-security-guidance).
+For hybrid identity environments with AD FS, see [Recommended security policies and configurations](https://docs.microsoft.com/microsoft-365-enterprise/microsoft-security-guidance).
 
 The following illustration describes how cloud services (SaaS, PaaS), account types (tenant domain accounts vs. B2B accounts) and service access capabilities relate. It’s important to note which capabilities can be used with B2B accounts.
 

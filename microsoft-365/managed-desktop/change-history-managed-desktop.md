@@ -17,7 +17,7 @@ This topic lists new and updated topics in the [Microsoft Managed Desktop docume
 ## October 2019
 New or changed topic | Description
 --- | ---
-[Exemptions to the service plan](service-description/customizing.md) | New topic
+[Exceptions to the service plan](service-description/customizing.md) | New topic
 [Getting help for end users](working-with-managed-desktop/end-user-support.md) | Updated topic
 [Admin support for Microsoft Managed Desktop](working-with-managed-desktop/admin-support.md) | Updated topic
 [Service changes and communication](service-description/servicechanges.md) | New topic

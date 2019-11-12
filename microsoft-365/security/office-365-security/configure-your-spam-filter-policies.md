@@ -27,7 +27,7 @@ Spam filter settings include selecting the action to take on messages that are i
 
 Estimated time to complete: 30 minutes
   
-You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the Anti-spam entry in the [Feature Permissions in Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx) topic.
+You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the Anti-spam entry in the [Feature Permissions in Exchange Online](https://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx) topic.
 
 The spam filter policy settings are all in the Security & Compliance Center (SCC). More information can be found in [Go to the Office 365 Security & Compliance Center](../../compliance/go-to-the-securitycompliance-center.md). The Anti-spam settings page is inside the SCC \> **Threat management** \> **Policy** \> **Anti-spam** section.
 
@@ -99,15 +99,15 @@ The default policy cannot be disabled or deleted and custom policies always take
 
 You can also configure and apply spam filter policies in PowerShell. To learn how to use Windows PowerShell to connect to Exchange Online, see [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554). To learn how to use Windows PowerShell to connect to Exchange Online Protection, see [Connect to Exchange Online Protection PowerShell](https://go.microsoft.com/fwlink/p/?linkid=627290).
   
-- [Get-HostedContentFilterPolicy](http://technet.microsoft.com/library/d510471a-dda5-4df7-b3f8-2ee7a1948436.aspx) View your spam filter settings. 
+- [Get-HostedContentFilterPolicy](https://technet.microsoft.com/library/d510471a-dda5-4df7-b3f8-2ee7a1948436.aspx) View your spam filter settings. 
     
-- [Set-HostedContentFilterPolicy](http://technet.microsoft.com/library/f597aa65-baa7-49d0-8832-2a300073f211.aspx) Edit your spam filter settings. 
+- [Set-HostedContentFilterPolicy](https://technet.microsoft.com/library/f597aa65-baa7-49d0-8832-2a300073f211.aspx) Edit your spam filter settings. 
     
-- [New-HostedContentFilterPolicy](http://technet.microsoft.com/library/4d15128d-9e16-42a1-8ac5-36f07d4bbbf0.aspx) Create a new custom spam filter policy. 
+- [New-HostedContentFilterPolicy](https://technet.microsoft.com/library/4d15128d-9e16-42a1-8ac5-36f07d4bbbf0.aspx) Create a new custom spam filter policy. 
     
-- [Remove-HostedContentFilterPolicy](http://technet.microsoft.com/library/9fe1fe03-8f83-41e3-9bf5-084a392784d6.aspx) Delete a custom spam filter policy. 
+- [Remove-HostedContentFilterPolicy](https://technet.microsoft.com/library/9fe1fe03-8f83-41e3-9bf5-084a392784d6.aspx) Delete a custom spam filter policy. 
     
-To apply a custom spam filter policy to users, groups, and/or domains, use the [New-HostedContentFilterRule](http://technet.microsoft.com/library/2df13ba9-1eb0-4da3-bd72-a79d5fa15e26.aspx) cmdlet (to create a new filter rule that can be applied to custom policies) or the [Set-HostedContentFilterRule](http://technet.microsoft.com/library/ba259260-ffd3-43f3-8ef4-9d8659679d02.aspx) cmdlet (to edit an existing filter rule that can be applied to custom policies). Use the [Enable-HostedContentFilterRule](http://technet.microsoft.com/library/354ece28-dcde-4b5f-88ed-475115e7ea78.aspx) cmdlet or the [Disable-HostedContentFilterRule](http://technet.microsoft.com/library/c1f8dafc-ef5d-47e3-b0fb-71a88e145fc5.aspx) cmdlet to enable or disable the rule applied to the policy. 
+To apply a custom spam filter policy to users, groups, and/or domains, use the [New-HostedContentFilterRule](https://technet.microsoft.com/library/2df13ba9-1eb0-4da3-bd72-a79d5fa15e26.aspx) cmdlet (to create a new filter rule that can be applied to custom policies) or the [Set-HostedContentFilterRule](https://technet.microsoft.com/library/ba259260-ffd3-43f3-8ef4-9d8659679d02.aspx) cmdlet (to edit an existing filter rule that can be applied to custom policies). Use the [Enable-HostedContentFilterRule](https://technet.microsoft.com/library/354ece28-dcde-4b5f-88ed-475115e7ea78.aspx) cmdlet or the [Disable-HostedContentFilterRule](https://technet.microsoft.com/library/c1f8dafc-ef5d-47e3-b0fb-71a88e145fc5.aspx) cmdlet to enable or disable the rule applied to the policy. 
   
 ## How do you know this worked?
 

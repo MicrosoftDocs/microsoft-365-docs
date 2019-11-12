@@ -10,6 +10,7 @@ ms.service: O365-seccomp
 localization_priority: Priority
 ms.collection: 
 - M365-security-compliance
+- SPO_Content
 search.appverid: 
 - MOE150
 - MET150
@@ -68,9 +69,6 @@ When you create a retention label, you have the option to use the retention labe
 
 3. [Publish](labels.md#how-retention-labels-work-with-retention-label-policies) or [auto-apply](labels.md#applying-a-retention-label-automatically-based-on-conditions) the retention label to SharePoint sites and/or OneDrive accounts. 
 
-> [!NOTE]
-> Using a retention label that declares content as a record requires an Office 365 Enterprise E5 license for each user who has permissions to edit the content. Users who simply have read-only access don't require an E5 license.
-
 ### Applying a retention label to content
 
 For Exchange, any user with write-access to the mailbox can apply a record label to an email message. For content in SharePoint and OneDrive, any user in the default Members group (the Contribute permission level) can apply a record label to content. Only a site collection admin can remove or change that record label after it's been applied. As previously explained, a retention label that classifies content as a record can be auto-applied to content.
@@ -92,13 +90,13 @@ To use record versioning, the first step is to use the Microsoft 365 compliance 
 
   - **Maintain an evergreen document that contains all versions.** By default, each SharePoint and OneDrive document has a version history available on the item menu. In this version history, you can easily see which versions are records and view those documents.
 
-> [!NOTE]
-> Record versioning requires an Office 365 Enterprise E5 license for each user who has permissions to edit content that's been declared as a record in a SharePoint site or OneDrive account. Users who have read-only access don't require a license.
-
 Record versioning is automatically available for any document that has a retention label that declares the item as a record. When a user views the document properties through the details pane, they toggle the **Record status** from **Locked** to **Unlocked**. This single click creates a record in the Records folder in the Preservation Hold library, where it resides for the remainder of its retention period. While the document is unlocked, any user with permissions can edit the file. However, users can't delete the file, because it's considered a declared record. After the necessary changes are made, the user can then toggle the **Record status** from **Unlocked** to **Locked**, so that the document is again declared a record and can't be edited.
 <br/><br/>
 
 :::image type="content" source="media/recordversioning8.png" alt-text="Record status property on document tagged as a record":::
+
+> [!NOTE]
+> Record versioning requires an Office 365 Enterprise E5 license for each user who has permissions to edit content that's been declared a record in a SharePoint site or OneDrive account. Users who have read-only access don't require a license.
 
 ### Locking and unlocking a record
 

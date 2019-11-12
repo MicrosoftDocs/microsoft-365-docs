@@ -3,7 +3,7 @@ title: "Plan for security &amp; compliance in Office 365"
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 3/15/2018
+ms.date: 
 audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
@@ -46,7 +46,7 @@ Protecting access to your Office 365 data and services is crucial to defending a
 
 Review and plan for file protection capabilities organized by three levels of protection.
   
-[PDF](http://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.pdf) | [Visio](http://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.vsdx)
+[PDF](https://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.pdf) | [Visio](https://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.vsdx)
   
 ## Step 5: Leverage the Microsoft 365 Security &amp; Compliance Center
 
@@ -54,9 +54,9 @@ The Security &amp; Compliance Center gives you a single view into the controls y
   
 - [Go to the Office 365 Security &amp; Compliance Center](go-to-the-securitycompliance-center.md)
     
-- [Permissions in the Office 365 Security &amp; Compliance Center](/security/office-365-security/protect-against-threats.md)
+- [Permissions in the Office 365 Security &amp; Compliance Center](~/security/office-365-security/protect-against-threats.md)
     
-- [Give users access to the Office 365 Security &amp; Compliance Center](/security/office-365-security/grant-access-to-the-security-and-compliance-center.md)
+- [Give users access to the Office 365 Security &amp; Compliance Center](~/security/office-365-security/grant-access-to-the-security-and-compliance-center.md)
     
 ## Step 6: Use end-to-end security scenarios as starting points
 
@@ -64,7 +64,7 @@ Use these recommended configurations as a starting point for enterprise scale or
   
 - [Secure email policies and configurations](https://docs.microsoft.com/microsoft-365/enterprise/secure-email-recommended-policies)
     
-- [Contoso in the Microsoft Cloud](http://aka.ms/cloudarchcontoso)
+- [Contoso in the Microsoft Cloud](https://aka.ms/cloudarchcontoso)
     
 ## Microsoft 365 admin centers and dashboards
 
@@ -75,5 +75,3 @@ Configure your security and compliance settings in these admin centers and dashb
 |Office 365  <br/> |`https://admin.microsoft.com`  <br/> | Microsoft 365 admin center  <br/>  Security &amp; Compliance Center  <br/>  Exchange admin center  <br/>  SharePoint admin center and OneDrive for Business admin center  <br/> |
 |Enterprise Mobility + Security  <br/> |`https://portal.azure.com`  <br/> | Azure Active Directory  <br/>  Microsoft Mobile Application Management  <br/>  Microsoft Intune  <br/> |
 |Enterprise Mobility + Security  <br/> |`https://portal.cloudappsecurity.com`  <br/> | Cloud App Security  <br/> |
-   
-
