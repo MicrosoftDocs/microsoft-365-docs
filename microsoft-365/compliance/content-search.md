@@ -245,7 +245,6 @@ Keep the following things in mind when searching for content in Microsoft Teams 
   Alias                  : seniorleadershipteam
   PrimarySmtpAddress     : seniorleadershipteam@contoso.onmicrosoft.com
   SharePointSiteUrl      : https://contoso.sharepoint.com/sites/seniorleadershipteam
-  
   ```
 
     > [!NOTE]
