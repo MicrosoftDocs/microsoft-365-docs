@@ -37,7 +37,7 @@ To understand how this works with previously installed Office apps, read [Prepar
 
 2. Go to **Setup** in the left navigation pane, and on the **Setup** page, scroll to **Apps and updates**.
     > [!NOTE]
-    > You might nto see this card if all of your  users have installed Office apps.
+    > You might not see this card if all of your  users have installed Office apps.
   
 3. On the **Help users install their Office apps** card, choose **View**, and then **Get started**.
     
