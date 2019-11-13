@@ -30,13 +30,13 @@ Compliance Score uses a role-based access control (RBAC) permission model, and t
 
 ## What is the difference between Compliance Score and Compliance Manager?
 
-Compliance Score and Compliance Manager share the same backend, but they are two distinct features. Think of Compliance Score as a simplified version of Compliance Manager, giving you a more complete view of your organization's current compliance posture and the steps you can take to improve it. While you can take many actions directly within Compliance Score, some functionality resides in Compliance Manager for now. Read more about the [relationship between Compliance Score and Compliance Manager](compliance-score.md#relationship-to-compliance-manager).
+Compliance Score and Compliance Manager share the same backend, but they are two separate features. Think of Compliance Score as a simplified version of Compliance Manager, giving you a more complete view of your organization's current compliance posture and the steps you can take to improve it. While you can take many actions directly within Compliance Score, some functionality resides in Compliance Manager for now. Read more about the [relationship between Compliance Score and Compliance Manager](compliance-score.md#relationship-to-compliance-manager).
 
 ## Who should use Compliance Score and who should use Compliance Manager?
 
-Compliance Score is useful for everyone in your organization who plays a role in monitoring compliance and carrying out activities to protect data and comply with regulatory standards. With Compliance Score, you don't need to be familiar with regulations and standards in order to easily see how to improve your organization's data protection. Compliance Score is the optimal starting place for all users. From here, you can see your compliance score, learn which recommended actions can minimize risks, and, in many cases, launch right into the solutions to take those actions.
+Compliance Score is useful for everyone in your organization who plays a role in monitoring compliance and carrying out activities to comply with regulatory standards. With Compliance Score, you don't need to be familiar with regulations and standards in order to easily see how to improve your organization's data protection. Compliance Score is the optimal starting place for all users. From here, you can see your compliance score, learn which recommended actions can minimize risks, and, in many cases, launch right into the solutions to take those actions.
 
-For now, Compliance Manager is where users conduct the work of managing assessments and creating custom templates to build assessments. Learn more about [which actions are only supported by Compliance Manager](compliance-score-release-notes.md#compliance-score-and-compliance-manager-relationship) during public preview.
+For now, Compliance Manager is the place where users can manage assessments and create custom templates to build assessments. Learn more about [which actions are supported only by Compliance Manager](compliance-score-release-notes.md#compliance-score-and-compliance-manager-relationship) during public preview.
 
 ## If I have a high score, does it mean I'm fully compliant?
 
@@ -48,7 +48,7 @@ Compliance Score gives you an initial score based on the Microsoft 365 data prot
 
 Organizations can create and add custom assessments that are more relevant to their organization. You can use one of Compliance Score's [pre-configured templates](compliance-score.md#templates) to create assessments for particular standards, or [create your own template](working-with-compliance-manager.md#create-a-template-1).
 
-Read more about [how Compliance Score calculates your score](compliance-score-methodology.md), and learn more about [assessments](compliance-score.md#key-components-controls-assessments-templates-groups).
+Read more about [how Compliance Score calculates your score](compliance-score-methodology.md).
 
 ## What is the difference between Compliance Score and Secure Score?
 
@@ -58,7 +58,7 @@ Microsoft Secure Score is a security analytics tool for helping to understand yo
 
 ## Which cloud services are covered by Compliance Score?
 
-Compliance Score currently provides assessments for Office 365 and Intune. Expanded coverage is expected in future releases, and will be noted on the [Compliance Score release notes](compliance-score-release-notes.md).
+Compliance Score currently provides assessments for Office 365 and Intune. Expanded coverage is expected in future releases, and will be noted in the [Compliance Score release notes](compliance-score-release-notes.md).
 
 ## Can I use Compliance Score for non-Microsoft products?
 
