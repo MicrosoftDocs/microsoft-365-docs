@@ -30,8 +30,8 @@
 
 ### [How-to guides]()
 
-#### Turn on Microsoft Threat Protection(mtp/mtp-enable.md)
-#### Manage access(mtp/mtp-permissions.md)
+#### [Turn on Microsoft Threat Protection](mtp/mtp-enable.md)
+#### [Manage access](mtp/mtp-permissions.md)
 
 #### [Incidents]()
 ##### [Overview](mtp/incidents-overview.md)
