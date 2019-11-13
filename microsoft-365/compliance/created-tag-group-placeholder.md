@@ -23,39 +23,35 @@ Before you or other people can tag documents in a review set, the tags must be c
 
 To create a tag group:
 
-1.  Within the working set, select Manage Working Set.
+1.  In a review set, click **Manage review set**.
 
-> ![](media/ED-managews.png)
+    ![Click Manage review set](media/ED-managews.png)
 
-2.  Then select the Manage tags link.
+2.  In the **Tags** tile, click **Manage tags**.
 
-> ![](media/ED-managetags.png)
+    ![Click Manage tags in the Tags tile](media/ED-managetags.png)
 
-Once inside the tag management, tags can be created to meet the requirements of your case.
+Once inside the tag management, tags can be created to meet the requirements of your case. You can start by creating a tag group.
 
-> Start by creating a tag section
+1.  Click **Add section**.
 
-1.  Click the “Add section” button
+    ![Adding a tag group](media/ED-addtagsection.png)
 
-> ![A picture containing screenshot
-> Description automatically generated](media/ED-addtagsection.png)
+    The preview screen will update when you save so you can preview the tag panel without having to close the tag management screen and go back to the working set.
 
-|                                                                                                                             |                                                                                                                                                                 |
-| --------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ![](media/ED-tipicon.png)Tip | The preview screen will update when you save so you can preview the tag panel without having to close the tag management screen and go back to the working set. |
+2. Enter a title and optional description. 
 
-2.  Enter a title and optional description. To create a tag within that section, click the ellipses on the new tag section to create tags in that new section.
+3. To create a tag within that group, click the ellipses on the new tag group to create tags in that new section.
     
-    ![A screenshot of a cell phone
-    Description automatically generated](media/ED-createtag.png)
+    ![Creating tags in a tag group](media/ED-createtag.png)
 
-|                                                                                                                             |                                                                                                                                         |
-| --------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| ![](media/ED-tipicon.png)Tip | Option tags will force users to select one tag from a group of tags. Check box tags will allow users to select any combination of tags. |
+   - **Option tags** will force users to select one tag from a group of tags.
+   
+   - **Check box tags** will allow users to select any combination of tags. |
 
 ## Nested tags
 
-1.  To nest tags, click the ellipses of a **tag** and select a new tag to add.
-    
-    ![](media/ED-tagnesting.png)
+To nest tags, click the ellipses next to a tag and then select a new tag to add.
+
+![Nesting tags](media/ED-tagnesting.png)
 
