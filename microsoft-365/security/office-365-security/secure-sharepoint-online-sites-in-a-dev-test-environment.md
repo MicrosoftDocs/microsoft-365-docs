@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 06/18/2019
 audience: ITPro
 ms.topic: article
-ms.collection: 
+ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 - SPO_Content
@@ -245,7 +245,7 @@ To create a baseline public SharePoint Online team site, do the following:
     
 4. On the **Create a site** page, click **Team site**.
     
-5. In **Site name**, type **Organization wide**. 
+5. In **Site name**, type **Organization wide**.
     
 6. In **Team site description**, type **SharePoint site for the entire organization**.
     
