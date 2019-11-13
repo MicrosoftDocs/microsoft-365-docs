@@ -64,6 +64,10 @@
 ###### [EmailEvents](mtp/advanced-hunting-emailevents-table.md)
 ###### [EmailAttachmentInfo](mtp/advanced-hunting-emailattachmentinfo-table.md)
 ###### [EmailUrlInfo](mtp/advanced-hunting-emailurlinfo-table.md)
+###### [DeviceTvmSecureConfigurationAssessment](mtp/advanced-hunting-tvm-configassessment-table.md)
+###### [DeviceTvmSecureConfigurationAssessmentKB](mtp/advanced-hunting-tvm-secureconfigkb-table.md)
+###### [DeviceTvmSoftwareInventoryVulnerabilities](mtp/advanced-hunting-tvm-softwareinventory-table.md)
+###### [DeviceTvmSoftwareVulnerabilitiesKB](mtp/advanced-hunting-tvm-softwarevulnerability-table.md)
 ##### [Find miscellaneous events](mtp/advanced-hunting-misc-events.md)
 ##### [Apply query best practices](mtp/advanced-hunting-best-practices.md)
 
