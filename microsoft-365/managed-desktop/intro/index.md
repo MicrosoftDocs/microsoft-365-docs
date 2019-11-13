@@ -30,6 +30,8 @@ For your IT admins:
 
 - Insights dashboards constantly keeping you up to date on usage, reliability, device health, and other data on devices and users
 - About *one-tenth* the amount of time needed to update 95% of devices
+- More time to focus on other IT admin activities, thanks to [device management](#device-management) provided by the service.
+- Better awareness of device and app performance and early warning of security issues from [device monitoring](#device-monitoring).
 
 ## Device management
 Microsoft Managed Desktop takes on the burden of managing registered devices and the Microsoft software they use.
