@@ -52,7 +52,7 @@ For more information, see [Anti-malware protection](https://go.microsoft.com/fwl
 
 Ransomware restricts access to data by encrypting files or locking computer screens. It then attempts to extort money from victims by asking for "ransom," usually in the form of cryptocurrencies like Bitcoin, in exchange for access to data. 
   
-To protect against ransomware, create one or more mail flow rules to block file extensions that are commonly used for ransomware. (These rules were added in the [raise the level of protection against malware in mail](#raise-the-level-of-protection-against-malware-in-mail) step.) You can also warn users who receive these attachments in email.
+To protect against ransomware, create one or more mail flow rules to block file extensions that are commonly used for ransomware. (You added these rules in the [raise the level of protection against malware in mail](#raise-the-level-of-protection-against-malware-in-mail) step.) You can also warn users who receive these attachments in email.
 
 In addition to the files that you blocked in the previous step, it's a good practice to create a rule to warn users before opening Office file attachments that include macros. Ransomware can be hidden inside macros, so warn users not to open these files from people they don't know.
 
@@ -127,7 +127,7 @@ To create an ATP anti-phishing policy, watch  [this short training video](https:
     
 4. On the **Anti-phishing** page, select **+ Create**. A wizard launches that steps you through defining your anti-phishing policy.
     
-5. Specify the name, description, and settings for your policy as recommended in the following table: For more details, see [Learn about ATP anti-phishing policy options](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies#learn-about-atp-anti-phishing-policy-options). 
+5. Specify the name, description, and settings for your policy as recommended in the following table. For more details, see [Learn about ATP anti-phishing policy options](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies#learn-about-atp-anti-phishing-policy-options). 
     
 6. After you've reviewed your settings, choose **Create this policy** or **Save**, as appropriate.
     
@@ -221,7 +221,7 @@ For more information, see [Office 365 ATP safe links](https://go.microsoft.com/f
 
 ## Go to Intune admin center
 
-1. Sign into [Azure portal](https://portal.azure.com/).
+1. Sign in to [Azure portal](https://portal.azure.com/).
 
 2. Select **All services** and type in *Intune* in the **Search Box**.
 
