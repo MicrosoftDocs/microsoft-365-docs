@@ -23,5 +23,5 @@ Hunting provides security teams a view into possible threats in your organizatio
 Learn more:
 
 * [Devices](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting) in Microsoft Defender Advanced Threat Protection
-* [Email and data](https://docs.microsoft.com/en-us/office365/securitycompliance/office-365-atp) in Office 365 Advanced Threat Protection
-* [Identities](https://docs.microsoft.com/en-us/azure-advanced-threat-protection/investigate-a-user) in Azure Advanced Threat Protection
+* [Email and data](https://docs.microsoft.com/office365/securitycompliance/office-365-atp) in Office 365 Advanced Threat Protection
+* [Identities](https://docs.microsoft.com/azure-advanced-threat-protection/investigate-a-user) in Azure Advanced Threat Protection

@@ -34,11 +34,11 @@ A. As an administrator, you can search for and view details about all quarantine
   
 As an end user, you can manage your own spam-quarantined messages via: 
   
-- The spam quarantine user interface. For more information, see [Find and Release Quarantined Messages (End Users)](http://technet.microsoft.com/library/e439b560-827a-4807-abd3-6b861c1ff786.aspx).
+- The spam quarantine user interface. For more information, see [Find and Release Quarantined Messages (End Users)](https://technet.microsoft.com/library/e439b560-827a-4807-abd3-6b861c1ff786.aspx).
         
  **Q. How do I grant access to the spam quarantine for my end users?**
   
-A. In order to access the end user spam quarantine, end users must have a valid Office 365 user ID and password. EOP customers protecting on-premises mailboxes must be valid email users created via directory synchronization or the EAC. For more information about managing users, EOP admins can refer to [Manage mail users in EOP](manage-mail-users-in-eop.md). For EOP standalone customers, we recommend using directory synchronization and enabling Directory Based Edge Blocking; for more information, see [Use Directory Based Edge Blocking to Reject Messages Sent to Invalid Recipients](http://technet.microsoft.com/library/ca7b7416-92ed-40ad-abdb-695be46ea2e4.aspx).
+A. In order to access the end user spam quarantine, end users must have a valid Office 365 user ID and password. EOP customers protecting on-premises mailboxes must be valid email users created via directory synchronization or the EAC. For more information about managing users, EOP admins can refer to [Manage mail users in EOP](manage-mail-users-in-eop.md). For EOP standalone customers, we recommend using directory synchronization and enabling Directory Based Edge Blocking; for more information, see [Use Directory Based Edge Blocking to Reject Messages Sent to Invalid Recipients](https://technet.microsoft.com/library/ca7b7416-92ed-40ad-abdb-695be46ea2e4.aspx).
   
  **Q. Can anything other than spam be sent to the quarantine?**
   
@@ -50,21 +50,21 @@ A. By default, spam-quarantined messages are kept in the quarantine for 30 days,
   
  **Q. Can I release or report more than one quarantined message at a time?**
   
-A. Yes, up to 100 messages can be released at one time in the Quarantine portal. In addition, admins can create a remote Windows PowerShell script to accomplish this task. Use the [Get-QuarantineMessage](http://technet.microsoft.com/library/88026da1-8dbc-49e7-80e8-112a32773c34.aspx) cmdlet to search for messages, and the [Release-QuarantineMessage](http://technet.microsoft.com/library/4a3aa05c-238f-46f2-b8dd-b0e3c38eab3e.aspx) cmdlet to release them. 
+A. Yes, up to 100 messages can be released at one time in the Quarantine portal. In addition, admins can create a remote Windows PowerShell script to accomplish this task. Use the [Get-QuarantineMessage](https://technet.microsoft.com/library/88026da1-8dbc-49e7-80e8-112a32773c34.aspx) cmdlet to search for messages, and the [Release-QuarantineMessage](https://technet.microsoft.com/library/4a3aa05c-238f-46f2-b8dd-b0e3c38eab3e.aspx) cmdlet to release them. 
   
  **Q. Are wildcards supported when searching for quarantined messages? Can I search for quarantined messages for a specific domain?**
   
 A. Wildcards are not supported when specifying search criteria in the Exchange admin center. For example, when searching for a sender, you must specify the full email address.
   
-Using remote Windows PowerShell, admins can specify the [Get-QuarantineMessage](http://technet.microsoft.com/library/88026da1-8dbc-49e7-80e8-112a32773c34.aspx) cmdlet to search for quarantined messages for a specific domain (for example, contoso.com): 
+Using remote Windows PowerShell, admins can specify the [Get-QuarantineMessage](https://technet.microsoft.com/library/88026da1-8dbc-49e7-80e8-112a32773c34.aspx) cmdlet to search for quarantined messages for a specific domain (for example, contoso.com): 
   
-```
+```powershell
 Get-QuarantineMessage | ? {$_.Senderaddress -like "*@contoso.com"}
 ```
 
-The results can be passed to the [Release-QuarantineMessage](http://technet.microsoft.com/library/4a3aa05c-238f-46f2-b8dd-b0e3c38eab3e.aspx) cmdlet. Include the -ReleaseToAll parameter to release the message to all recipients. Once a message is released, it can't be released again. 
+The results can be passed to the [Release-QuarantineMessage](https://technet.microsoft.com/library/4a3aa05c-238f-46f2-b8dd-b0e3c38eab3e.aspx) cmdlet. Include the -ReleaseToAll parameter to release the message to all recipients. Once a message is released, it can't be released again. 
   
-```
+```powershell
 Get-QuarantineMessage | ? {$_.Senderaddress -like "*@contoso.com"}
 ```
 

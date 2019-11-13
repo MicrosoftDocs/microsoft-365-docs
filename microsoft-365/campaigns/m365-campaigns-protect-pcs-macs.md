@@ -43,9 +43,9 @@ If your Windows 10 PC or Mac is not managed by your organization, be sure to con
 ## [Windows 10](#tab/Windows10)
 **Turn on device encryption**<p>
 
-Device encryption is available on a wide range of Windows devices and helps protect your data by encrypting it. If you turn on device encryption, only authorized individuals will be able to access your device and data. See [turn on device encryption](https://support.microsoft.com/en-us/help/4028713/windows-10-turn-on-device-encryption) for instructions.
+Device encryption is available on a wide range of Windows devices and helps protect your data by encrypting it. If you turn on device encryption, only authorized individuals will be able to access your device and data. See [turn on device encryption](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption) for instructions.
 
- If device encryption is not available on your device, you can turn on standard [BitLocker encryption](https://support.microsoft.com/en-us/help/4028713/windows-10-turn-on-device-encryption) instead. (BitLocker is not available on Windows 10 Home edition.) 
+ If device encryption is not available on your device, you can turn on standard [BitLocker encryption](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption) instead. (BitLocker is not available on Windows 10 Home edition.) 
 
 
 
@@ -54,10 +54,10 @@ If you have Windows 10, you’ll get the latest antivirus protection with Window
 
 Windows Update downloads updates for Windows Security automatically to help keep your PC safe and protect it from threats.
 
-If you have an earlier version of Windows and are using Microsoft Security Essentials, it’s a good idea to move to Windows Security. See [help protect my device with Windows Security](https://support.microsoft.com/en-us/help/17464/windows-10-help-protect-my-device-with-windows-security) for more information.
+If you have an earlier version of Windows and are using Microsoft Security Essentials, it’s a good idea to move to Windows Security. See [help protect my device with Windows Security](https://support.microsoft.com/help/17464/windows-10-help-protect-my-device-with-windows-security) for more information.
 
 **Turn on Windows Firewall**<p>
-You should always run Windows Firewall even if you have another firewall turned on. Turning off Windows Firewall might make your device (and your network, if you have one) more vulnerable to unauthorized access. See [Turn Windows Firewall on or off](https://support.microsoft.com/en-us/help/4028544/windows-10-turn-windows-defender-firewall-on-or-off) for instructions
+You should always run Windows Firewall even if you have another firewall turned on. Turning off Windows Firewall might make your device (and your network, if you have one) more vulnerable to unauthorized access. See [Turn Windows Firewall on or off](https://support.microsoft.com/help/4028544/windows-10-turn-windows-defender-firewall-on-or-off) for instructions
 
 ## [Mac](#tab/Mac)
 **Use FileVault to encrypt your Mac disk**<p>

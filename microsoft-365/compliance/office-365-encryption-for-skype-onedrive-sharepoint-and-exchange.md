@@ -13,6 +13,7 @@ ms.collection:
 - Strat_O365_Enterprise
 - M365-security-compliance
 - Strat_O365_Enterprise
+- SPO_Content
 description: "Summary: A description of encryption for Skype, OneDrive, SharePoint, and Exchange Online."
 ---
 
@@ -58,7 +59,7 @@ The credentials used to access the Azure storage containers are also held in the
 > [!NOTE]
 > For Office 365 U.S. Government customers, data blobs are stored in Azure U.S. Government Storage. In addition, access to SharePoint Online keys in Office 365 U.S. Government is limited to Office 365 staff that have been specifically screened. Azure U.S. Government operations staff do not have access to the SharePoint Online key store that is used for encrypting data blobs.
 
-For more information about data encryption in SharePoint Online and OneDrive for Business, see [Data Encryption in OneDrive for Business and SharePoint Online](https://technet.microsoft.com/en-us/library/dn905447.aspx).
+For more information about data encryption in SharePoint Online and OneDrive for Business, see [Data Encryption in OneDrive for Business and SharePoint Online](https://technet.microsoft.com/library/dn905447.aspx).
 
 ### List Items in SharePoint Online
 

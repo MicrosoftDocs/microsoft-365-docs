@@ -41,7 +41,7 @@ Check back here monthly as more articles will be added over time.
 
 ## Incident response articles
 
-- [Responding to a Compromised Email Account in Office 365](/compliance/responding-to-a-compromised-email-account.md)
+- [Responding to a Compromised Email Account in Office 365](~/compliance/responding-to-a-compromised-email-account.md)
 
 ## Secure Office 365 like a cybersecurity pro
 Your Office 365 subscription comes with a powerful set of security capabilities that you can use to protect your data and your users.  Use the [Office 365 security roadmap: Top priorities for the first 30 days, 90 days, and beyond](https://support.office.com/article/Office-365-security-roadmap-Top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352) to implement Microsoft recommended best practices for securing your Office 365 tenant.

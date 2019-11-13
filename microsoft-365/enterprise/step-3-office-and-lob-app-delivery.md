@@ -38,7 +38,7 @@ If nothing is blocking you, we recommend you deploy 64-bit versions of all apps,
 
 There are many methods and models for installing apps on Windows, so let’s look at your delivery options.
 
-[Windows 10 application management](https://docs.microsoft.com/en-us/windows/application-management/)
+[Windows 10 application management](https://docs.microsoft.com/windows/application-management/)
 
 ## MSI-based Deployments
 
@@ -56,15 +56,15 @@ Another popular method of app delivery is PC imaging. In this case, applications
 
 If you do want to include Office 365 ProPlus in your image, remember that this uses a user-based activation; it cannot be pre-activated by the system admin. Use the Office Deployment Tool to pre-install Office on the device you are imaging and skip the user sign-in. Once the image is deployed end users can sign-in using their Office 365 credentials and activate Office 365 ProPlus.
 
-[Create a Task Sequence to Install an Operating System](https://docs.microsoft.com/en-us/sccm/osd/deploy-use/create-a-task-sequence-to-install-an-operating-system)
+[Create a Task Sequence to Install an Operating System](https://docs.microsoft.com/sccm/osd/deploy-use/create-a-task-sequence-to-install-an-operating-system)
 
-[Deploy Office 365 ProPlus as part of an operating system image](https://docs.microsoft.com/en-us/deployoffice/deploy-office-365-proplus-as-part-of-an-operating-system-image)
+[Deploy Office 365 ProPlus as part of an operating system image](https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-as-part-of-an-operating-system-image)
 
 ## Office Click-to-Run 
 
 Office 365 ProPlus is installed using Click-to-Run, and Click-to-Run replaces MSI-based packaging in every version of the upcoming Office 2019 release for Windows. It brings with it a number of advantages, including faster installations, faster and more efficient updating, and cleaner uninstallation. 
 
-Programs delivered via Click-to-Run execute in a virtual application environment on your computer and so co-exist with other applications without conflict; they also take about half the disk space they would as an MSI-based package. Office applications are delivered and managed via the [Office Deployment Tool](https://www.microsoft.com/en-us/download/details.aspx?id=49117) which is the Office setup engine needed to download, configure, and customize your Office apps. The Office Deployment Tool reads a configuration XML file which provides the metadata instructions on how to configure and customization your Office installation.
+Programs delivered via Click-to-Run execute in a virtual application environment on your computer and so co-exist with other applications without conflict; they also take about half the disk space they would as an MSI-based package. Office applications are delivered and managed via the [Office Deployment Tool](https://www.microsoft.com/download/details.aspx?id=49117) which is the Office setup engine needed to download, configure, and customize your Office apps. The Office Deployment Tool reads a configuration XML file which provides the metadata instructions on how to configure and customization your Office installation.
 
 Microsoft recommends using the [Office Customization Tool](https://config.office.com/) to customize your deployment settings and create your configuration XML file. Through the Office Customization Tool you can set which applications and languages will be installed, how the applications will be updated, application preferences, and installation expereince settings.
 
@@ -74,13 +74,13 @@ If you use System Center Configuration Manager, you can still use it for broad d
 
 ![](media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-6.png)
 
-[Deployment Guide for Office 365 ProPlus](https://docs.microsoft.com/en-us/deployoffice/deployment-guide-for-office-365-proplus)
+[Deployment Guide for Office 365 ProPlus](https://docs.microsoft.com/deployoffice/deployment-guide-for-office-365-proplus)
 
-[Remove existing MSI versions of Office when upgrading to Office 365 ProPlus](https://docs.microsoft.com/en-us/deployoffice/upgrade-from-msi-version)
+[Remove existing MSI versions of Office when upgrading to Office 365 ProPlus](https://docs.microsoft.com/deployoffice/upgrade-from-msi-version)
 
-[Manage Office 365 ProPlus with Configuration Manager](https://docs.microsoft.com/en-us/sccm/sum/deploy-use/manage-office-365-proplus-updates)
+[Manage Office 365 ProPlus with Configuration Manager](https://docs.microsoft.com/sccm/sum/deploy-use/manage-office-365-proplus-updates)
 
-[Assign Office 365 apps to Windows 10 devices with Microsoft Intune](https://docs.microsoft.com/en-us/intune/apps-add-office365)
+[Assign Office 365 apps to Windows 10 devices with Microsoft Intune](https://docs.microsoft.com/intune/apps-add-office365)
 
 ## Browser-based Apps
 
@@ -88,7 +88,7 @@ There are a few things to consider in order to make sure that your browser-based
 
 Additionally, if you know that your intranet sites aren't going to work properly with Microsoft Edge, you can set all intranet sites to open using Internet Explorer 11 automatically. This process uses an XML file to govern whether IE11 is used for each site, using Group Policy to enforce settings.
 
-[What is Enterprise Mode](https://docs.microsoft.com/en-us/internet-explorer/ie11-deploy-guide/what-is-enterprise-mode#what-is-enterprise-mode)
+[What is Enterprise Mode](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/what-is-enterprise-mode#what-is-enterprise-mode)
 
 So far, we have covered well known deployment methods. But there are two new approaches to app deployment you may wish to consider.
 

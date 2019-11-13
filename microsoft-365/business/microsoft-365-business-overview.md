@@ -28,7 +28,7 @@ description: "Learn to set up Microsoft 365 Business."
 
 ## What is Microsoft 365 Business
 
-Microsoft 365 Business is a comprehensive set of business productivity and collaboration tools, such as Outlook, Word, Excel, and other Office products that are always up to date. You can protect your work files on all of your iOS, Android, and Windows 10 devices with enterprise-grade security that is simple to manage.
+Microsoft 365 Business is a subscription service that includes Office 365 productivity tools plus advanced capabilities to help protect your business against cyberthreats, protect your data, and manage the devices.
   
 Microsoft 365 Business is meant for up to 300 licenses, if you need more licenses, see [Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=860986) documentation for more information.
 
@@ -93,4 +93,4 @@ To see the full list of security features, see [Microsoft 365 Business security 
 
 - If you don't have a partner and want to get Microsoft 365 Business, you can [buy it here](https://www.microsoft.com/microsoft-365/business) and follow the [sign up](sign-up.md) instructions.
 
-- You can also head over to a [Microsoft Store](https://www.microsoft.com/en-us/store/locations/find-a-store?icid=en-us_UF_FAS) to both buy Microsoft 365 Business and get set-up help.
+- You can also head over to a [Microsoft Store](https://www.microsoft.com/store/locations/find-a-store?icid=en-us_UF_FAS) to both buy Microsoft 365 Business and get set-up help.
