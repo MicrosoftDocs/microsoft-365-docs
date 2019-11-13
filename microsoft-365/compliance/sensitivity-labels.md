@@ -8,7 +8,9 @@ audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Priority
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- SPO_Content
 search.appverid: 
 - MOE150
 - MET150
@@ -123,7 +125,7 @@ With a label policy, you can:
 
 - **Apply a default label** to all new documents and email created by the users and groups included in the label policy. This default label can set a base level of protection settings that you want applied to all your content.
 
-- **Require a justification for changing a label.** If content is marked Confidential and a user wants to remove that label or replace it with a lower classification, such as a label named Public, you can require that the user provide a justification when performing this action. These justifications will be available for the admin to review. 
+- **Require a justification for changing a label.** If content is marked Confidential and a user wants to remove that label or replace it with a lower classification, such as a label named Public, you can require that the user provide a justification when performing this action. These justifications will be available for the admin to review.
 
     ![Prompt where users enter a justification](media/Sensitivity-label-justification-required.png)
 
@@ -278,6 +280,6 @@ To learn more about the Microsoft Information Protection SDK, see the [announcem
 
 Members of your compliance team who will create sensitivity labels need permissions to the Microsoft 365 compliance center, Microsoft 365 security center, or Office 365 Security & Compliance Center. By default, your tenant admin has access to these admin centers and can give compliance officers and other people access, without giving them all of the permissions of a tenant admin. To do this, we recommend that you go to the **Permissions** page of one of these admin centers, and then add members to the **Compliance Administrator** or **Security Administrator** role group.
 
-For more information, see  [Give users access to the Office 365 Security & Compliance Center](/security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
+For more information, see  [Give users access to the Office 365 Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center).
 
 These permissions are required only to create and apply labels and a label policy. Policy enforcement does not require access to the content.

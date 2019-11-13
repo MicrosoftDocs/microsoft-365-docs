@@ -32,6 +32,8 @@ Your file needs to include the **exact same column headings** as the sample one 
   ```
 
 
+
+
 >[!NOTE]
 >This format is only for the Partner process. The process for self-registration is documented in [Register devices in Microsoft Managed Desktop yourself](register-devices-self.md).
 

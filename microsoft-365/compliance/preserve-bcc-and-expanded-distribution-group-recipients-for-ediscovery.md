@@ -14,16 +14,15 @@ description: "In-Place Hold, Litigation Hold, and Office 365 retention policies 
 
 # Preserve Bcc and expanded distribution group recipients for eDiscovery
   
-In-Place Hold, Litigation Hold, and [Office 365 retention policies](http://go.microsoft.com/fwlink/?LinkID=827811) (created in the Security & Compliance Center) allow you to preserve mailbox content to meet regulatory compliance and eDiscovery requirements. Information about recipients directly addressed in the To and Cc fields of a message is included in all messages by default, but your organization may require the ability to search for and reproduce details about all recipients of a message. This includes: 
+In-Place Hold, Litigation Hold, and [Office 365 retention policies](https://go.microsoft.com/fwlink/?LinkID=827811) (created in the Security & Compliance Center) allow you to preserve mailbox content to meet regulatory compliance and eDiscovery requirements. Information about recipients directly addressed in the To and Cc fields of a message is included in all messages by default, but your organization may require the ability to search for and reproduce details about all recipients of a message. This includes: 
   
-- **Recipients addressed using the Bcc field of a message** Bcc recipients are stored in the message in the sender's mailbox, but not included in headers of the message delivered to recipients. 
+- **Recipients addressed using the Bcc field of a message:** Bcc recipients are stored in the message in the sender's mailbox, but not included in headers of the message delivered to recipients. 
     
-- **Expanded distribution group recipients** Recipients who receive the message because they're members of a distribution group to which the message was addressed, either in the To, Cc or Bcc fields. 
+- **Expanded distribution group recipients:** Recipients who receive the message because they're members of a distribution group to which the message was addressed, either in the To, Cc or Bcc fields. 
     
 Exchange Online and Exchange Server 2013 (Cumulative Update 7 and later versions) retain information about Bcc and expanded distribution group recipients. You can search for this information by using an In-Place eDiscovery search in the Exchange admin center (EAC) or a Content Search in the Security & Compliance Center. 
   
 ## How Bcc recipients and expanded distribution group recipients are preserved
-<a name="sectionSection0"> </a>
 
 As stated earlier, information about Bcc'ed recipients is stored with the message in the sender's mailbox. This information is indexed and available to eDiscovery searches and holds. 
   
@@ -36,7 +35,6 @@ Information about expanded distribution group recipients is stored with the mess
 |Expanded distribution group recipients  <br/> |Message properties in the sender's mailbox.  <br/> |No. Expanded distribution group recipient information is stored after a mailbox is placed on In-Place Hold or Litigation Hold, or assigned to an Office 365 retention policy.  <br/> |Compliance officers  <br/> |
    
 ## Searching for messages sent to Bcc and expanded distribution group recipients
-<a name="sectionSection1"> </a>
 
 When searching for messages sent to a recipient, eDiscovery search results now include messages sent to a distribution group that the recipient is a member of. The following table shows the scenarios where messages sent to Bcc and expanded distribution group recipients are returned in eDiscovery searches.
   
@@ -57,14 +55,13 @@ Scenario 2: Bob sends an email to John (To/Cc) and Jack (Bcc directly, or indire
 |:-----|:-----|:-----|:-----|
 |Bob's mailbox  <br/> |To/Cc:John  <br/> |Yes  <br/> |Presents an indication that Jack was Bcc'ed.  <br/> |
 |Bob's mailbox  <br/> |Bcc:Jack  <br/> |Yes  <br/> |Presents an indication that Jack was Bcc'ed.  <br/> |
-|Bob's mailbox  <br/> |Bcc:Jack (via distribution group)  <br/> |Yes  <br/> |List of members of the Bcc'ed distribution group, expanded when the message was sent, is visible in eDiscovery search preview, export and logs.  <br/> |
+|Bob's mailbox  <br/> |Bcc:Jack (via distribution group)  <br/> |Yes  <br/> |List of members of the Bcc'ed distribution group, expanded when the message was sent, is visible in eDiscovery search preview, export, and logs.  <br/> |
 |John's mailbox  <br/> |To/Cc:John  <br/> |Yes  <br/> |No indication of Bcc recipients.  <br/> |
 |John's mailbox  <br/> |Bcc:Jack (directly or via distribution group)  <br/> |No  <br/> |Bcc information is not stored in the message delivered to recipients. You must search the sender's mailbox.  <br/> |
 |Jack's mailbox  <br/> |To/Cc:John (directly or via distribution group)  <br/> |Yes  <br/> |To/Cc information is included in message delivered to all recipients.  <br/> |
 |Jack's mailbox  <br/> |Bcc:Jack (directly or via distribution group)  <br/> |No  <br/> |Bcc information is not stored in the message delivered to recipients. You must search the sender's mailbox.  <br/> |
    
 ## Frequently asked questions
-<a name="sectionSection2"> </a>
 
  **Q. When and where is Bcc recipient information stored?**
   
@@ -78,9 +75,9 @@ A. Group membership is expanded at the time the message is sent. The list of exp
   
 A. No. This information is not included in message headers, and isn't visible to To/Cc recipients. The sender can see the Bcc field stored in the original message stored in their mailbox. Compliance officers can see this information when searching the sender's mailbox.
   
- **Q. How can I ensure expanded distribution group recipients are always preserved?**
+ **Q. How can I ensure that expanded distribution group recipients are always preserved?**
   
-A. To ensure expanded distribution group members are always preserved with a message, [Place all mailboxes on hold](http://technet.microsoft.com/library/4c141604-3210-44cc-b98e-f3e0f15613b8.aspx) or create an organization-wide Office 365 retention policy. 
+A. To ensure that expanded distribution group members are always preserved with a message, [Place all mailboxes on hold](https://technet.microsoft.com/library/4c141604-3210-44cc-b98e-f3e0f15613b8.aspx) or create an organization-wide Office 365 retention policy. 
   
  **Q. Which types of groups are supported?**
   
@@ -100,6 +97,4 @@ A. Bcc and expanded distribution group recipients information is visible to Comp
   
  **Q. What happens if a member of a distribution group is hidden from the organization's global address list (GAL)?**
   
-A. There's no impact. If recipients are hidden from the GAL, they're still included in the list of recipients for the expanded distribution group.
-  
-
+A. There's no impact. If recipients are hidden from the GAL, they are still included in the list of recipients for the expanded distribution group.

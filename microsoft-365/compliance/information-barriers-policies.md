@@ -72,7 +72,7 @@ In addition to the [required licenses and permissions](information-barriers.md#r
 
    1. Run the following PowerShell cmdlets:
 
-      ```
+      ```powershell
       Login-AzureRmAccount 
       $appId="bcf62038-e005-436d-b970-2a472f8c1982" 
       $sp=Get-AzureRmADServicePrincipal -ServicePrincipalName $appId

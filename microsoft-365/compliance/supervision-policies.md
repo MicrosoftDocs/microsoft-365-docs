@@ -274,7 +274,7 @@ View audit activities in the unified audit log or with the [Search-UnifiedAuditL
 
 For example, the following example returns the activities for the all the supervisory review activities (policies and rules) and lists detailed information for each:
 
-```
+```PowerShell
 Search-UnifiedAuditLog -StartDate 3/1/2019 -EndDate ([System.DateTime]::Now) -RecordType DataGovernance -ResultSize 5000 | Where-Object {$_.Operations -like "*SupervisoryReview*"}  | fl CreationDate,Operations,UserIds,AuditData
 ```
 

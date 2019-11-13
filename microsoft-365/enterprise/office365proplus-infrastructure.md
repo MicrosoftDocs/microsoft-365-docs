@@ -62,7 +62,7 @@ If your organization uses Configuration Manager, we recommend upgrading to the C
 
 ## How Microsoft does Microsoft 365 Enterprise
 
-Learn how the experts at Microsoft are [deploying and mananging updates for Office 365 ProPlus](https://www.microsoft.com/en-us/itshowcase/deploying-and-managing-microsoft-365#primaryR7).
+Learn how the experts at Microsoft are [deploying and mananging updates for Office 365 ProPlus](https://www.microsoft.com/itshowcase/deploying-and-managing-microsoft-365#primaryR7).
 
 ## How Contoso did Microsoft 365 Enterprise
 

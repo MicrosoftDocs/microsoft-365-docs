@@ -57,7 +57,7 @@ This is a BIA document for `name of the service, system, process, or function`
 
 Next, you look across business processes to see where any cascading dependency relationships exist. Based on the outcome, you prioritize and form resiliency strategies, and standard operating procedures supporting your strategies.
 
-You can use [Microsoft Service Map](https://docs.microsoft.com/en-us/azure/azure-monitor/insights/service-map) to help you in with this mapping. Microsoft Service Map automatically discovers application components on Windows and Linux systems and maps all TCP dependencies, identifies connections,  and remote third-party systems that the app depends on. It also maps dependencies to areas of your network that are traditionally dark, such as Active Directory.
+You can use [Microsoft Service Map](https://docs.microsoft.com/azure/azure-monitor/insights/service-map) to help you in with this mapping. Microsoft Service Map automatically discovers application components on Windows and Linux systems and maps all TCP dependencies, identifies connections,  and remote third-party systems that the app depends on. It also maps dependencies to areas of your network that are traditionally dark, such as Active Directory.
 
 Here's a sample dependency analysis (DA) you can start from. In your dependency analysis (DA), you will identify and examine the process dependencies. Make sure you include people, suppliers, customers, partnerships and facilities. The data from this analysis will be used to identify gaps between the recovery requirements of a process and the recovery capabilities of supporting dependencies.
 

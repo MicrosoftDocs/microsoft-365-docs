@@ -3,7 +3,7 @@ title: "Teams for highly regulated data"
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 10/31/2019
+ms.date: 11/12/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -112,7 +112,7 @@ Here’s the resulting configuration so far.
  
 ### Step 4: Create a retention label and DLP policy
 
-Use [these instructions](https://docs.microsoft.com/microsoft-365/compliance/protect-sharepoint-online-files-with-office-365-labels-and-dlp) to:
+Use [these instructions](https://docs.microsoft.com/microsoft-365/security/office-365-security/deploy-teams-retention-dlp) to:
 
 1. Create and publish a retention label for highly regulated data (if needed).
 2. Configure the Team Site for the retention label created in step 1.

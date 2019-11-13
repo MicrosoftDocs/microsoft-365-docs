@@ -31,7 +31,7 @@ If you don't have a partner and want to get Microsoft 365 Business, you can [buy
 
 See [sign up for Microsoft 365 Business](sign-up.md) for detailed instructions.
 
-You can also head over to a [Microsoft Store](https://www.microsoft.com/en-us/store/locations/find-a-store?icid=en-us_UF_FAS) to both buy Microsoft 365 Business and get set-up help.
+You can also head over to a [Microsoft Store](https://www.microsoft.com/en-us/store/locations/find-a-store?icid=en_US_Store_UH_FAS) to both buy Microsoft 365 Business and get set-up help.
   
 ## Get Microsoft 365 Business from Microsoft Partner Center
 
@@ -41,7 +41,7 @@ You can also head over to a [Microsoft Store](https://www.microsoft.com/en-us/st
     
     ![In the Microsoft Partner center, add a new customer.](media/ec807d07-bbd2-411f-8fe1-c644cf9a3882.png)
   
-3. On the customer's **Subscription** page, select Add subscription, choose the Small business option under Catalog, and then choose **Microsoft 365 Business**.
+3. On the customer's **Subscription** page, select **Add subscription**, choose the Small business option under Catalog, and then choose **Microsoft 365 Business**.
     
     Select the number of licenses you need (up to 300). If you have more than 300 users, see [Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=862316) instead. 
     

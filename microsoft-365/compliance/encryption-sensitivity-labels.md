@@ -39,7 +39,7 @@ The encryption settings are available when you create a sensitivity label in the
 
 ## How encryption works
 
-Encryption uses Azure Rights Management (Azure RMS). Azure RMS uses encryption, identity, and authorization policies. To learn more, see [What is Azure Rights Management?](https://docs.microsoft.com/en-us/azure/information-protection/what-is-azure-rms)
+Encryption uses Azure Rights Management (Azure RMS). Azure RMS uses encryption, identity, and authorization policies. To learn more, see [What is Azure Rights Management?](https://docs.microsoft.com/azure/information-protection/what-is-azure-rms)
 
 ## How to turn on encryption for a sensitivity label
 
@@ -72,7 +72,7 @@ If no expiration date has been set, the default use license validity period for 
 
 In addition to reauthentication, the policy and user group membership is reevaluated. This means that users could experience different access results for the same document or email if there are changes in the policy or group membership from when they last accessed the content.
 
-To learn how to change the default 30-day setting, see [Rights Management use license](https://docs.microsoft.com/en-us/azure/information-protection/configure-usage-rights#rights-management-use-license).
+To learn how to change the default 30-day setting, see [Rights Management use license](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-management-use-license).
 
 ### Assign permissions to specific users or groups
 
@@ -101,10 +101,10 @@ As a best practice, use groups rather than users. This strategy keeps your confi
 
 When you choose which permissions to allow for those users or groups, you can select either:
 
-- A [predefined permissions level](https://docs.microsoft.com/en-us/azure/information-protection/configure-usage-rights#rights-included-in-permissions-levels) with a preset group of rights, such as Co-Author or Reviewer.
+- A [predefined permissions level](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-included-in-permissions-levels) with a preset group of rights, such as Co-Author or Reviewer.
 - A Custom group of rights, where you choose whichever permissions you want.
 
-For more information on each specific permission, see [Usage rights and descriptions](https://docs.microsoft.com/en-us/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions).  
+For more information on each specific permission, see [Usage rights and descriptions](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions).  
 
 ![Options to choose preset or custom permissions](media/Sensitivity-Choose-permissions-settings.png)
 
@@ -124,7 +124,7 @@ The Rights Management issuer is always granted Full Control permissions for the 
 - The Rights Management issuer can always access the document or email offline.
 - The Rights Management issuer can still open a document after it is revoked.
 
-For more information, see [Rights Management issuer and Rights Management owner](https://docs.microsoft.com/en-us/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner).
+For more information, see [Rights Management issuer and Rights Management owner](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner).
 
 ## Let users assign permissions
 
@@ -192,7 +192,7 @@ This table describe what happens to existing encryption when a sensitivity label
 
 Be aware that when encryption is applied to files stored in OneDrive and SharePoint, the service cannot process the contents of these files. This means that features such as co-authoring, eDiscovery, search, Delve, and other collaborative features do not work. Also, data loss prevention (DLP) policies can work only with the metadata (including Office 365 labels) but not the contents of encrypted files (such as credit card numbers within files).
 
-This applies only to content stored in OneDrive and SharePoint. In Exchange Online, mail flow rules (also known as transport rules) use the [super user account](https://docs.microsoft.com/en-us/azure/information-protection/configure-super-users) so that they can scan encrypted content and enforce DLP policies.
+This applies only to content stored in OneDrive and SharePoint. In Exchange Online, mail flow rules (also known as transport rules) use the [super user account](https://docs.microsoft.com/azure/information-protection/configure-super-users) so that they can scan encrypted content and enforce DLP policies.
 
 ## Important prerequisites
 
@@ -200,7 +200,7 @@ Before you can use encryption, you might need to perform these tasks.
 
 ### Activating Azure Rights Management
 
-To use encryption in sensitivity labels, the Azure Rights Management service needs to be activated in your tenant. In newer tenants, the service is on by default, but you might need to manually activate the service. For more information, see [Activating Azure Rights Management](https://docs.microsoft.com/en-us/azure/information-protection/activate-service).
+To use encryption in sensitivity labels, the Azure Rights Management service needs to be activated in your tenant. In newer tenants, the service is on by default, but you might need to manually activate the service. For more information, see [Activating Azure Rights Management](https://docs.microsoft.com/azure/information-protection/activate-service).
 
 ### Configure Exchange for Azure Information Protection
 
@@ -210,5 +210,5 @@ For example, users cannot view protected emails on mobile phones or with Outlook
 
 To ensure that Exchange can support these additional scenarios, see the following:
 
-- For Exchange Online, see the instructions for [Exchange Online: IRM Configuration](https://docs.microsoft.com/en-us/azure/information-protection/configure-office365#exchange-online-irm-configuration).
-- For Exchange on-premises, you must deploy the [RMS connector and configure your Exchange servers](https://docs.microsoft.com/en-us/azure/information-protection/deploy-rms-connector). 
+- For Exchange Online, see the instructions for [Exchange Online: IRM Configuration](https://docs.microsoft.com/azure/information-protection/configure-office365#exchange-online-irm-configuration).
+- For Exchange on-premises, you must deploy the [RMS connector and configure your Exchange servers](https://docs.microsoft.com/azure/information-protection/deploy-rms-connector). 

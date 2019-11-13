@@ -83,7 +83,7 @@ The new certificate is issued by a different certificate authority (CA) from the
 The new certificate requires connecting to the endpoints of the new CA as part of validating the certificate. Failure to do so can result in mail flow being negatively affected. If you protect your mail servers with firewalls that only let the mail servers connect with certain destinations you need to check if your server is able to validate the new certificate. To confirm that your server can use the new certificate, complete these steps:
 
 1. Connect to your local Exchange Server using Windows PowerShell and then run the following command:  
-  `certutil -URL http://crl.globalsign.com/gsorganizationvalsha2g3.crl`
+  `certutil -URL https://crl.globalsign.com/gsorganizationvalsha2g3.crl`
 2. On the window that appears, choose **Retrieve**.
 3. When the utility completes its check it returns a status. If the status displays **OK**, then your mail server can successfully validate the new certificate. If not, you need to determine what is causing the connections to fail. Most likely, you need to update the settings of a firewall. The full list of endpoints that need to be accessed include:
     - ocsp.globalsign.com

@@ -176,13 +176,13 @@ Notices templates are custom email templates where you can define the following 
 
 If you'd like to create more than a simple text-based email message for notifications, you can create a more detailed message by using HTML in the message body field of a notice template. The following example provides the message body format for a basic HTML-based email notification template:
 
-```
+```HTML
 <!DOCTYPE html>
 <html>
 <body>
 <h2>Action Required: Contoso Employee Code of Conduct Policy Training</h2>
-<p>A recent message you've sent has generated a policy alert for the Contoso Employee <a href='http://www.contoso.com'>Code of Conduct Policy</a>.</p>
-<p>You are required to attend the Contoso Employee Code of Conduct <a href='http://www.contoso.com'>training</a> within the next 14 days. Please contact <a href='mailto:hr@contoso.com'>Human Resources</a> with any questions about this training request.</p>
+<p>A recent message you've sent has generated a policy alert for the Contoso Employee <a href='https://www.contoso.com'>Code of Conduct Policy</a>.</p>
+<p>You are required to attend the Contoso Employee Code of Conduct <a href='https://www.contoso.com'>training</a> within the next 14 days. Please contact <a href='mailto:hr@contoso.com'>Human Resources</a> with any questions about this training request.</p>
 <p>Thank you,</p>
 <p><em>Human Resources</em></p>
 </body>
@@ -263,7 +263,7 @@ You can also view audit activities in the unified audit log or with the [Search-
 
 For example, the following example returns the activities for the all the supervisory review activities (policies and rules) and lists detailed information for each:
 
-```
+```PowerShell
 Search-UnifiedAuditLog -StartDate 3/1/2019 -EndDate ([System.DateTime]::Now) -RecordType DataGovernance -ResultSize 5000 | Where-Object {$_.Operations -like "*SupervisoryReview*"}  | fl CreationDate,Operations,UserIds,AuditData
 ```
 

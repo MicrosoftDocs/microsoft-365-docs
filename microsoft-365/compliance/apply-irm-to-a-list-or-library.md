@@ -16,6 +16,7 @@ search.appverid:
 ms.assetid: 3bdb5c4e-94fc-4741-b02f-4e7cc3c54aa1
 ms.collection:
 - M365-security-compliance
+- SPO_Content
 description: "You can use Information Rights Management (IRM) to help control and protect files that are downloaded from lists or libraries."
 ---
 

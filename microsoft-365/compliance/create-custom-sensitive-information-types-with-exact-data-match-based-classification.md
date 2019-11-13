@@ -77,7 +77,7 @@ As an example, the following .xml file defines the schema for a patient records 
 (You can copy, modify, and use our example.)
 
  ```xml
-<EdmSchema xmlns="http://schemas.microsoft.com/office/2018/edm">
+<EdmSchema xmlns="https://schemas.microsoft.com/office/2018/edm">
       <DataStore name="PatientRecords" description="Schema for patient records" version="1">
             <Field name="PatientID" searchable="true" />
             <Field name="MRN" searchable="true" />
@@ -181,7 +181,7 @@ You will be prompted to confirm, as follows:
 
 When you set up your rule package, make sure to correctly reference your .csv file and edm.xml file. You can copy, modify, and use our example. In this sample xml the following fields needs to be customized to create your EDM sensitive type:
 
-- **RulePack id & ExactMatch id**: Use [New-GUID](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6) to generate a GUID.
+- **RulePack id & ExactMatch id**: Use [New-GUID](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6) to generate a GUID.
 
 - **Datastore**: This field specifies EDM lookup data store to be used. You provide a data source name of a configured EDM Schema.
 
@@ -196,7 +196,7 @@ When you set up your rule package, make sure to correctly reference your .csv fi
   - Name & des Editing the schema criptions: customize as required.
 
 ```xml
-<RulePackage xmlns="http://schemas.microsoft.com/office/2018/edm">
+<RulePackage xmlns="https://schemas.microsoft.com/office/2018/edm">
   <RulePack id="fd098e03-1796-41a5-8ab6-198c93c62b11">
     <Version build="0" major="2" minor="0" revision="0" />
     <Publisher id="eb553734-8306-44b4-9ad5-c388ad970528" />
@@ -483,7 +483,7 @@ EDM sensitive information types for following scenarios are currently in develop
 
 [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)
 
-[New-DlpEdmSchema](https://docs.microsoft.com/en-us/powershell/module/exchange/policy-and-compliance-dlp/new-dlpedmschema?view=exchange-ps)
+[New-DlpEdmSchema](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/new-dlpedmschema?view=exchange-ps)
 
 ## Feedback
 

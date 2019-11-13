@@ -2,7 +2,7 @@
 title: Gramm-Leach-Bliley Act (GLBA)
 description: Microsoft helps financial services clients comply with the privacy and security requirements of the Gramm-Leach-Bliley Act (GLBA).
 keywords: Microsoft 365, compliance, offerings
-localization_priority: Priority
+localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.author: robmazz
