@@ -46,7 +46,7 @@ If you have a Microsoft 365 Business Preview CSP subscription, follow this guide
 9. Optionally, you can also validate the license agreement. To do this, follow these steps:
     1. Select **Users and licenses** from the company's **Subscriptions** page.
     2. On the **Users and licenses** page, select a user.
-    3. In the user's page, check the **Assign licenses** section and confirm that it shows **Microsoft 365 Business**.
+    3. On the user's page, check the **Assign licenses** section and confirm that it shows **Microsoft 365 Business**.
 
         ![Confirm the Microsoft 365 Business license is assigned to the user](images/pc_customer_userslicenses_m365b_validate.png)
 
