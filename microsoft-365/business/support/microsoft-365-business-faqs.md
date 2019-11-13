@@ -93,7 +93,7 @@ Microsoft 365 Business offers customers a simple but powerful means of enabling 
   
 * **Device Management for Windows 10 PCs** allows businesses to choose to set and enforce capabilities such as Windows Defender protection for malware, automatic updates, and turning off screens after a prescribed amount of time. In addition, lost or stolen Windows 10 devices can be completely wiped of business applications and data through the Admin center. 
 
-* **Device Management for iOS, Android & MacOS** features helps businesses securely manage a diverse device ecosystem that includes iOS, Android, Windows, and macOS devices. 
+* **Device Management for iOS, Android & MacOS** features helps businesses securely manage a diverse device ecosystem that includes iOS, Android, Windows, and MacOS devices. 
 
 ### How does Microsoft 365 Business help protect PCs in my organization from malicious attacks? 
 PCs managed with Microsoft 365 Business are protected with Windows Defender, which is the No. 1 antivirus feature on Windows 10, protecting more computers against viruses, malware, spyware, and other threats than any other solution.  With Microsoft 365 Business, organizations can ensure that Windows Defender protection is running and always up to date on all their Windows 10 devices.  
@@ -135,7 +135,7 @@ Microsoft 365 Business includes select Azure AD Premium P1 (AADP P1) features su
  
  
 ### Does Microsoft 365 Business allow customers to manage Macs? 
-Intune helps you securely manage iOS, Android, Windows, and macOS devices. 
+Intune helps you securely manage iOS, Android, Windows, and MacOS devices. 
  
 ### What is Windows AutoPilot? 
 Windows AutoPilot is a service that streamlines the deployment of new Windows 10 PCs. This process can be done when the end user logs on to Microsoft 365 Business for the first time&mdash;without IT ever touching the device&mdash;by leveraging the centralized management controls of Microsoft 365 Business. You can also use Windows AutoPilot for existing PCs that are running Windows 10 Professional Creators Update (or later) and have been factory reset. Details about Windows AutoPilot can be found in <a href="https://blogs.technet.microsoft.com/windowsitpro/2017/06/29/modernizing-windows-deployment-with-windows-autopilot/" target="_blank">this June  2017 blog post</a>.
