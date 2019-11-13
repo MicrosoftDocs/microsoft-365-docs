@@ -29,6 +29,10 @@
 #### [Microsoft 365 security prerequisites](mtp/prerequisites.md)
 
 ### [How-to guides]()
+
+#### Turn on Microsoft Threat Protection(mtp/mtp-enable.md)
+#### Manage access(mtp/mtp-permissions.md)
+
 #### [Incidents]()
 ##### [Overview](mtp/incidents-overview.md)
 ##### [Prioritize incidents](mtp/incident-queue.md)
