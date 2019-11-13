@@ -27,7 +27,7 @@ The links to devices here are for your reference only. If you want to order devi
 
 | Model  | Minimum specs  | Additional requirements  | Retirement date |
 |---------|---------|---------|---------|
-| [HP EliteBook 830 / 840 / 850 G5](https://store.hp.com/us/en/mdp/laptops/elitebook-840#!&tab=features) | 128 GB / Intel i5 / 8 GB RAM | SKU with 5VS01AV, IR Camera or fingerprint sensor required | None | **Feb 15, 2023** |
+| [HP EliteBook 830 / 840 / 850 G5](https://store.hp.com/us/en/mdp/laptops/elitebook-840#!&tab=features) | 128 GB / Intel i5 / 8 GB RAM | SKU with 5VS01AV, IR camera or fingerprint sensor required | None | **Feb 15, 2023** |
 |[Surface Laptop](https://www.microsoft.com/p/surface-laptop-1st-gen-for-business/8w36k32zm453/g4vs?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab) | 256 GB / Intel i5 / 8 GB RAM | None | **May 20, 2022** |
 |[Surface Pro](https://www.microsoft.com/p/surface-pro-5th-gen-for-business/907tds4dgwwv/kkzn?cid=msft_web_collection&CustomerIntent=Consumer) | 256 GB / Intel i5 / 8 GB RAM | None | **Jun 15, 2022** |
 
