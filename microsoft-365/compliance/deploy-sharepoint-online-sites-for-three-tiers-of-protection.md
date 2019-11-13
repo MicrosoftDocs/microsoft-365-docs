@@ -10,7 +10,7 @@ ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
-ms.collection: 
+ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 - SPO_Content
@@ -42,7 +42,7 @@ To create a baseline SharePoint Online team site with public access and permissi
     
 4. On the **Create a site** page, click **Team site**.
     
-5. In **Site name**, type a name for the public team site. 
+5. In **Site name**, type a name for the public team site.
     
 6. In **Team site description**, type a description of the purpose of the site.
     
@@ -66,7 +66,7 @@ To create a baseline SharePoint Online team site with private access and permiss
     
 4. On the **Create a site** page, click **Team site**.
     
-5. In **Site name**, type a name for the private team site. 
+5. In **Site name**, type a name for the private team site.
     
 6. In **Team site description,** type a description of the purpose of the site.
     

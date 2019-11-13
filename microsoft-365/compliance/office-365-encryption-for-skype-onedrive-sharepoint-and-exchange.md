@@ -13,6 +13,7 @@ ms.collection:
 - Strat_O365_Enterprise
 - M365-security-compliance
 - Strat_O365_Enterprise
+- SPO_Content
 description: "Summary: A description of encryption for Skype, OneDrive, SharePoint, and Exchange Online."
 ---
 
