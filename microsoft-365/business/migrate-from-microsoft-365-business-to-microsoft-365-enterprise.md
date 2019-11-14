@@ -82,7 +82,7 @@ This table shows the differences between Microsoft 365 Business and Microsoft 36
 
 ## Migration
 
-To migrate, work with your partner to move your Microsoft 365 Business subscription and licenses to suitable a Microsoft 365 Enterprise E3 subscription with its licenses.
+To migrate, work with your partner to move your Microsoft 365 Business subscription and licenses to a suitable Microsoft 365 Enterprise E3 subscription with its licenses.
 
 The following sections describe what changes you need to make, if any, and what you can do after the migration.
 
