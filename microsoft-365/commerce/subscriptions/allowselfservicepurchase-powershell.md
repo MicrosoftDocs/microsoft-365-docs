@@ -29,13 +29,13 @@ You can use the **MSCommerce** PowerShell module to:
 
 To use the **MSCommerce** PowerShell module, you'll need:
 
-- A Windows 10 device with [Windows Management Framework 5.0](https://www.microsoft.com/download/details.aspx?id=), which is included with Windows 10
+- A Windows 10 device with [Windows Management Framework 5.0](https://www.microsoft.com/download/details.aspx?id=48729), which is included with Windows 10
 - Administrator permission for the device
 - Global or Billing Admin role for Microsoft 365 admin center
 
-## Step 1: Install the MSCommerce PowerShell module
+## Install the MSCommerce PowerShell module
 
-You must install the **MSCommerce** PowerShell module on your Windows 10 device once and then import it into each PowerShell session you start. Download the **MSCommerce** PowerShell module from the PowerShell gallery.
+You must install the **MSCommerce** PowerShell module on your Windows 10 device once and then import it into each PowerShell session you start. Download the **MSCommerce** PowerShell module from the [PowerShell Gallery](https://go.microsoft.com/fwlink/?linkid=).
 
 To install the **MSCommerce** PowerShell module with **PowerShellGet**, run the following command:
 
@@ -44,7 +44,7 @@ To install the **MSCommerce** PowerShell module with **PowerShellGet**, run the 
 Install-Module -Name MSCommerce
 ```
 
-## Step 2: Import the MSCommerce PowerShell module into the PowerShell session
+## Import the MSCommerce PowerShell module into the PowerShell session
 
 After you install the module on your Windows 10 device, you then import it into each PowerShell session that you start. To import it into a PowerShell session, run the following command:
 
@@ -53,7 +53,7 @@ After you install the module on your Windows 10 device, you then import it into 
 Import-Module -Name MSCommerce
 ```
 
-## Step 3: Connect to MSCommerce with your credentials
+## Connect to MSCommerce with your credentials
 
 To connect to the PowerShell module with your credentials, run the following command.
 
@@ -79,7 +79,7 @@ To view a list of all available self-service purchase products and the current s
 
 ```powershell
 
-Get-MSCommercePolicyProducts -PolicyId AllowSelfServicePurchase
+Get-MSCommerceProductPolicies -PolicyId AllowSelfServicePurchase
 ```
 
 ## View or set the status for AllowSelfServicePurchase
@@ -90,23 +90,23 @@ To get the policy setting for a specific product, run the following command:
 
 ```powershell
 
-Get-MSCommercePolicyProduct -PolicyId AllowSelfServicePurchase -ProductId CFQ7TTC0KP0N
+Get-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId CFQ7TTC0KP0N
 ```
 
 To enable the policy setting for a specific product, run the following command:
 
 ```powershell
 
-Update-MSCommercePolicyProduct -PolicyId AllowSelfServicePurchase -ProductId CFQ7TTC0KP0N -Enabled $True
+Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId CFQ7TTC0KP0N -Enabled $True
 ```
 
 To disable the policy setting for a specific product, run the following command:
 
 ```powershell
-Update-MSCommercePolicyProduct -PolicyId AllowSelfServicePurchase -ProductId CFQ7TTC0KP0N -Enabled $False
+Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId CFQ7TTC0KP0N -Enabled $False
 ```
 
-# Uninstall the MSStore Module
+## Uninstall the MSStore Module
 
 To remove the **MSCommerce** PowerShell module from your computer, use the following PowerShell command:
 
