@@ -83,7 +83,7 @@ Also, you will now be able to **Export reports** to Microsoft Excel in order to 
 When you click on a URL in the list, you'll see a new Export button on the fly-out panel. Use this button to move data to an Excel spreadsheet for easier reporting.
 
 > [!TIP]
-> Network Message ID maps the click back to specific mails when you search through Explorer or associated 3rd party tools via Network Message ID. Searching through the Network Message ID will give admins the specific email associated with a click result. On export having, the correlating identification of Network Message ID makes for faster and more powerful analysis.
+> Network Message ID maps the click back to specific mails when you search through Explorer or associated 3rd party tools via Network Message ID. Searching through the Network Message ID will give admins the specific email associated with a click result. On export having, the correlating identification of Network Message ID makes for quicker and more powerful analysis.
 
 ![tp_ExportClickResultAndNetworkID.png](../../images/tp_ExportClickResultAndNetworkID.png)
 
