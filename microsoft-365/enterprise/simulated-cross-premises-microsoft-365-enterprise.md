@@ -3,7 +3,7 @@ title: "Simulated cross-premises virtual network in a Microsoft 365 test environ
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/11/2019
+ms.date: 11/14/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -64,7 +64,7 @@ Use the instructions in [Base Configuration dev/test environment](base-configura
   
 This is your current configuration. 
   
-![Phase 4 of the Base Configuration in Azure with the CLIENT1 virtual machine](media/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
+![The Base Configuration in Azure](media/simulated-cross-premises-microsoft-365-enterprise/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
   
 ## Phase 2: Create the XPrem virtual network
 
@@ -77,26 +77,26 @@ First, start an Azure PowerShell prompt on your local computer.
   
 Sign in to your Azure account with this command.
   
-```
+```powershell
 Connect-AzAccount
 ```
 
 Get your subscription name using this command.
   
-```
+```powershell
 Get-AzSubscription | Sort Name | Select Name
 ```
 
 Set your Azure subscription. Replace everything within the quotes, including the \< and > characters, with the correct names.
   
-```
+```powershell
 $subscrName="<subscription name>"
 Select-AzSubscription -SubscriptionName $subscrName
 ```
 
 Next, create the XPrem virtual network and protect it with a network security group with these commands.
   
-```
+```powershell
 $rgName="<name of the resource group that you used for your TestLab virtual network>"
 $locName=(Get-AzResourceGroup -Name $rgName).Location
 $Testnet=New-AzVirtualNetworkSubnetConfig -Name "Testnet" -AddressPrefix 192.168.0.0/24
@@ -111,7 +111,7 @@ $vnet | Set-AzVirtualNetwork
 
 Next, you create the VNet peering relationship between the TestLab and XPrem VNets with these commands.
   
-```
+```powershell
 $rgName="<name of the resource group that you used for your TestLab virtual network>"
 $vnet1=Get-AzVirtualNetwork -ResourceGroupName $rgName -Name TestLab
 $vnet2=Get-AzVirtualNetwork -ResourceGroupName $rgName -Name XPrem
@@ -121,7 +121,7 @@ Add-AzVirtualNetworkPeering -Name XPrem2TestLab -VirtualNetwork $vnet2 -RemoteVi
 
 This is your current configuration. 
   
-![Phase 2 of the simulated cross-premises virtual network dev/test environment, with the XPrem VNet and the VNet peering relationship](media/cac5e999-69c7-4f4c-bfce-a7f4006115ef.png)
+![Phase 2 of the simulated cross-premises virtual network dev/test environment, with the XPrem VNet and the VNet peering relationship](media/simulated-cross-premises-microsoft-365-enterprise/cac5e999-69c7-4f4c-bfce-a7f4006115ef.png)
   
 ## Phase 3: Configure DC2
 
@@ -129,7 +129,7 @@ In this phase, you create the DC2 virtual machine in the XPrem virtual network a
   
 First, create a virtual machine for DC2. Run these commands at the Azure PowerShell command prompt on your local computer.
   
-```
+```powershell
 $rgName="<your resource group name>"
 $locName=(Get-AzResourceGroup -Name $rgName).Location
 $vnet=Get-AzVirtualNetwork -Name XPrem -ResourceGroupName $rgName
@@ -151,7 +151,7 @@ Next, connect to the new DC2 virtual machine from the [Azure portal](https://por
   
 Next, configure a Windows Firewall rule to allow traffic for basic connectivity testing. From an administrator-level Windows PowerShell command prompt on DC2, run these commands. 
   
-```
+```powershell
 Set-NetFirewallRule -DisplayName "File and Printer Sharing (Echo Request - ICMPv4-In)" -enabled True
 ping dc1.corp.contoso.com
 ```
@@ -160,13 +160,13 @@ The ping command should result in four successful replies from IP address 10.0.0
   
 Next, add the extra data disk as a new volume with the drive letter F: with this command from the Windows PowerShell command prompt on DC2.
   
-```
+```powershell
 Get-Disk | Where PartitionStyle -eq "RAW" | Initialize-Disk -PartitionStyle MBR -PassThru | New-Partition -AssignDriveLetter -UseMaximumSize | Format-Volume -FileSystem NTFS -NewFileSystemLabel "WSAD Data"
 ```
 
 Next, configure DC2 as a replica domain controller for the corp.contoso.com domain. Run these commands from the Windows PowerShell command prompt on DC2.
   
-```
+```powershell
 Install-WindowsFeature AD-Domain-Services -IncludeManagementTools
 Install-ADDSDomainController -Credential (Get-Credential CORP\User1) -DomainName "corp.contoso.com" -InstallDns:$true -DatabasePath "F:\NTDS" -LogPath "F:\Logs" -SysvolPath "F:\SYSVOL"
 ```
@@ -175,7 +175,7 @@ Note that you are prompted to supply both the CORP\\User1 password and a Directo
   
 Now that the XPrem virtual network has its own DNS server (DC2), you must configure the XPrem virtual network to use this DNS server. Run these commands from the Azure PowerShell command prompt on your local computer.
   
-```
+```powershell
 $vnet=Get-AzVirtualNetwork -ResourceGroupName $rgName -name "XPrem"
 $vnet.DhcpOptions.DnsServers="192.168.0.4" 
 Set-AzVirtualNetwork -VirtualNetwork $vnet
@@ -184,7 +184,7 @@ Restart-AzVM -ResourceGroupName $rgName -Name "DC2"
 
 From the Azure portal on your local computer, connect to DC1 with the CORP\\User1 credentials. To configure the CORP domain so that computers and users use their local domain controller for authentication, run these commands from an administrator-level Windows PowerShell command prompt on DC1.
   
-```
+```powershell
 New-ADReplicationSite -Name "TestLab" 
 New-ADReplicationSite -Name "XPrem"
 New-ADReplicationSubnet -Name "10.0.0.0/8" -Site "TestLab"
@@ -193,7 +193,7 @@ New-ADReplicationSubnet -Name "192.168.0.0/16" -Site "XPrem"
 
 This is your current configuration. 
   
-![Phase 3 of the simulated cross-premises virtual network dev/test environment, with the DC2 virtual machine in the XPrem VNet](media/df458c56-022b-4688-ab18-056c3fd776b4.png)
+![Phase 3 of the simulated cross-premises virtual network dev/test environment, with the DC2 virtual machine in the XPrem VNet](media/simulated-cross-premises-microsoft-365-enterprise/df458c56-022b-4688-ab18-056c3fd776b4.png)
   
 Your simulated Azure hybrid cloud environment is now ready for testing.
   
