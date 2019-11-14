@@ -40,7 +40,6 @@ You install the **MSCommerce** PowerShell module on your Windows 10 device once 
 To install the **MSCommerce** PowerShell module with **PowerShellGet**, run the following command:
 
 ```powershell
-
 Install-Module -Name MSCommerce
 ```
 
@@ -49,7 +48,6 @@ Install-Module -Name MSCommerce
 After you install the module on your Windows 10 device, you then import it into each PowerShell session that you start. To import it into a PowerShell session, run the following command:
 
 ```powershell
-
 Import-Module -Name MSCommerce
 ```
 
@@ -58,7 +56,6 @@ Import-Module -Name MSCommerce
 To connect to the PowerShell module with your credentials, run the following command.
 
 ```powershell
-
 Connect-MSCommerce
 ```
 
@@ -69,7 +66,6 @@ You're prompted to sign in with your account and then to authorize the PowerShel
 To view a description of the **AllowSelfServicePurchase** policy and the default status, based on your organization, run the following command:
 
 ```powershell
-
 Get-MSCommercePolicy -PolicyId AllowSelfServicePurchase
 ```
 
@@ -78,7 +74,6 @@ Get-MSCommercePolicy -PolicyId AllowSelfServicePurchase
 To view a list of all available self-service purchase products and the status of each, run the following command:
 
 ```powershell
-
 Get-MSCommerceProductPolicies -PolicyId AllowSelfServicePurchase
 ```
 
@@ -89,14 +84,12 @@ After you view the list of products available for self-service purchase, you can
 To get the policy setting for a specific product, run the following command:
 
 ```powershell
-
 Get-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId CFQ7TTC0KP0N
 ```
 
 To enable the policy setting for a specific product, run the following command:
 
 ```powershell
-
 Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId CFQ7TTC0KP0N -Enabled $True
 ```
 
@@ -110,5 +103,6 @@ Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId CFQ
 
 To remove the **MSCommerce** PowerShell module from your computer, use the following PowerShell command:
 
+```powershell
 Get-InstalledModule -Name "MSCommerce" -RequiredVersion 1.0 | Uninstall-Module
 ```
