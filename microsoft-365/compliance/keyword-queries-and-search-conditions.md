@@ -376,13 +376,13 @@ Only documents that are shared by using the third option (shared with **Specific
 
 You can use the following keyword query to specifically search for content in Skype for Business conversations:
 
-```
+```powershell
 kind:im
 ```
 
 The previous search query also returns chats from Microsoft Teams. To prevent this, you can narrow the search results to include only Skype for Business conversations by using the following keyword query:
 
-```
+```powershell
 kind:im AND subject:conversation
 ```
 
@@ -390,7 +390,7 @@ The previous keyword query excludes chats in Microsoft Teams because Skype for B
 
 To search for Skype for Business conversations that occurred within a specific date range, use the following keyword query:
 
-```
+```powershell
 kind:im AND subject:conversation AND (received=startdate..enddate)
 ```
 

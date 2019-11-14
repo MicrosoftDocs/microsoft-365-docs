@@ -302,7 +302,7 @@ Here's more information about Content Searches.
     
   - Run the **Get-UnifiedGroup** cmdlet in Exchange Online to view properties for a Microsoft Team or an Office 365 Group. This is a good way to get the URL for the site that's associated with a team or a group. For example, the following command displays selected properties for an Office 365 Group named Senior Leadership Team: 
     
-  ```
+  ```powershell
   Get-UnifiedGroup "Senior Leadership Team" | FL DisplayName,Alias,PrimarySmtpAddress,SharePointSiteUrl
   DisplayName            : Senior Leadership Team
   Alias                  : seniorleadershipteam
@@ -318,7 +318,7 @@ Here's more information about Content Searches.
     
   - To get a list of the members of a Microsoft Team or an Office 365 Group, you can view the properties on the **Home \> Groups** page in the Microsoft 365 admin center. Alternatively, you can run the following command in Exchange Online PowerShell: 
     
-  ```
+  ```powershell
   Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress 
   ```
 
@@ -370,7 +370,7 @@ Here's more information about Content Searches.
     
     To change the language setting for an existing content search, run the following command in Security & Compliance Center PowerShell:
     
-  ```
+  ```powershell
   Set-ComplianceSearch <name of content search> -Language <culture code value>
   ```
 
