@@ -36,7 +36,7 @@ The first step is to connect to the Security & Compliance Center for your organi
   
 1. Save the following text to a Windows PowerShell script file by using a filename suffix of .ps1; for example, `ConnectSCC.ps1`. 
     
-      ```
+      ```powershell
       # Get login credentials 
       $UserCredential = Get-Credential 
       $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid -Credential $UserCredential -Authentication Basic -AllowRedirection 
@@ -48,10 +48,10 @@ The first step is to connect to the Security & Compliance Center for your organi
     
 3. Run the script; for example:
 
-    ```
+    ```powershell
     .\ConnectSCC.ps1
     ```
-   
+
 4. When prompted for your credentials, enter your email address and password, and then click **OK**. 
   
 ## Step 2: Run the script to report on holds associated with eDiscovery cases
@@ -60,7 +60,7 @@ After you've connected to Security & Compliance Center PowerShell, the next step
   
 1. Save the following text to a Windows PowerShell script file by using a filename suffix of .ps1; for example, CaseHoldsReport.ps1. 
     
-  ```
+  ```powershell
 #script begin
 " " 
 write-host "***********************************************"
@@ -152,7 +152,7 @@ Write-host "Script complete! Report files saved to this folder: '$Path'"
     
 3. Run the script; for example:
 
-    ```
+    ```powershell
     .\CaseHoldsReport.ps1
     ```
 

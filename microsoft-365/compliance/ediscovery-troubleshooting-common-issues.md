@@ -161,7 +161,7 @@ eDiscovery Case Hold Policy Sync Distribution error. The error reads:
     ```powershell
     Get-CaseHoldPolicy <policyname> - DistributionDetail | FL
     ```
-    
+
     For a retention policy, run the following command:
 
     ```powershell
