@@ -66,7 +66,7 @@ Use the **New-MailboxRestoreRequest** cmdlet with the  _SourceMailbox_ and  _Tar
    ```powershell
    New-MailboxRestoreRequest -SourceMailbox $InactiveMailbox.DistinguishedName -TargetMailbox newemployee@contoso.com -TargetRootFolder "Inactive Mailbox" -AllowLegacyDNMismatch
    ```
-  
+
 ## Restore the archive from an inactive mailbox
 
 If an inactive mailbox has an archive mailbox, you can also restore it to the archive mailbox of an existing mailbox. To restore the archive from an inactive mailbox, you have to add the  _SourceIsArchive_ and  _TargetIsAchive_ switches to the command used to restore an inactive mailbox. 

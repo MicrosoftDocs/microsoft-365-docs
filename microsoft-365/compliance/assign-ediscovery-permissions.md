@@ -139,7 +139,7 @@ This role lets users perform bulk removal of data matching the criteria of a con
     
 - **Can I add a group as a member of the eDiscovery Manager role group?** As previously explained, you can add a mail-enabled security group as a member of the eDiscovery Managers subgroup in the eDiscovery Manager role group by using the **Add-RoleGroupMember** cmdlet in Security & Compliance Center PowerShell. For example, you can run the following command to add a mail-enabled security group to the eDiscovery Manager role group. 
     
-  ```
+  ```powershell
   Add-RoleGroupMember "eDiscovery Manager" -Member <name of security group>
   ```
 

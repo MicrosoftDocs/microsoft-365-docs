@@ -43,16 +43,16 @@ Because different types of holds or one or more Office 365 retention policies mi
   
 Run the following command in Exchange Online PowerShell to display the hold information for all inactive mailboxes in your organization.
   
-```
+```powershell
 Get-Mailbox -InactiveMailboxOnly | FL DisplayName,Name,IsInactiveMailbox,LitigationHoldEnabled,LitigationHoldDuration,InPlaceHolds
 ```
-   
+
 The value of **True** for the **LitigationHoldEnabled** property indicates that the inactive mailbox is on Litigation Hold. If an In-Place Hold, eDiscovery hold, or Office 365 retention policy is placed on an inactive mailbox, a GUID for the hold or retention policy is displayed as the value for the **InPlaceHolds** property. For example, the following shows results for 5 inactive mailboxes. 
   
 ||
 |:-----|
 |
-```
+```text
 DisplayName           : Ann Beebe
 Name                  : annb
 IsInactiveMailbox     : True
@@ -88,7 +88,7 @@ LitigationHoldEnabled : False
 LitigationHoldDuration: Unlimited
 InPlaceHolds          : {UniH7d895d48-7e23-4a8d-8346-533c3beac15d}
 ```
-   
+
 The following table identifies the five different hold types that were used to make each mailbox inactive.
   
 |**Inactive mailbox**|**Hold type**|**How to identify the hold on the inactive mailbox**|
@@ -109,7 +109,7 @@ After you identify what type of hold is placed on the inactive mailbox (and whet
 
 Here's how to use Exchange Online PowerShell to change the hold duration for a Litigation Hold that is placed on an inactive mailbox. You can't use the EAC. Run the following command to change the hold duration. In this example, the hold duration is changed to an unlimited period of time.
   
-```
+```powershell
 Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -LitigationHoldDuration unlimited
 ```
 
@@ -126,7 +126,7 @@ The result is that items in the inactive mailbox are retained indefinitely or un
 
 1. If you know the name of the In-Place Hold that you want to change, go to the next step. Otherwise, run the following command to get the name of the In-Place Hold that is placed on the inactive mailbox. Use the In-Place Hold GUID that you obtained in [Step 1](#step-1-identify-the-holds-on-an-inactive-mailbox).
 
-    ```
+    ```powershell
     Get-MailboxSearch -InPlaceHoldIdentity <In-Place Hold GUID> | FL Name
     ```
 
@@ -150,13 +150,13 @@ The result is that items in the inactive mailbox are retained indefinitely or un
 
 1. If you know the name of the In-Place Hold that you want to change, go to the next step. Otherwise, run the following command to get the name of the In-Place Hold that is placed on the inactive mailbox. Use the In-Place Hold GUID that you obtained in [Step 1](#step-1-identify-the-holds-on-an-inactive-mailbox).
 
-    ```
+    ```powershell
     Get-MailboxSearch -InPlaceHoldIdentity <In-Place Hold GUID> | FL Name
     ```
 
 2. Run the following command to change the hold duration. In this example, the hold duration is changed to 2,555 days (approximately 7 years). 
     
-    ```
+    ```powershell
     Set-MailboxSearch <identity of In-Place Hold> -ItemHoldPeriod 2555
     ```
 
@@ -174,22 +174,22 @@ The result is that items in the inactive mailbox are retained indefinitely or un
     
 - **To check the new hold duration, run one of the following commands.** The first command is for Litigation Hold; the second is for In-Place Hold. 
 
-    ```
+    ```powershell
     Get-Mailbox -InactiveMailboxOnly -Identity <identity of inactive mailbox> | FL LitigationHoldDuration
     ```
 
-    ```
+    ```powershell
     Get-MailboxSearch <identity of In-Place Hold> | FL ItemHoldPeriod
     ```
 
 - **Like regular mailboxes, the Managed Folder Assistant (MFA) also processes inactive mailboxes.** In Exchange Online, the MFA processes mailboxes approximately once every 7 days. After you change the hold duration for an inactive mailbox, you can use the **Start-ManagedFolderAssistant** cmdlet to immediately start processing the new hold duration for the inactive mailbox. Run the following command. 
 
-    ```
+    ```powershell
     Start-ManagedFolderAssistant -InactiveMailbox <identity of inactive mailbox>
     ```
    
 - **If a lot of holds are placed on an inactive mailbox, not all of the hold GUIDs will be displayed.** You can run the following command to display the GUIDs for all holds (except Litigation Holds) that are placed on an inactive mailbox. 
     
-    ```
+    ```powershell
     Get-Mailbox -InactiveMailboxOnly -Identity <identity of inactive mailbox> | Select-Object -ExpandProperty InPlaceHolds
     ```
