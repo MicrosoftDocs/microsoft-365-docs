@@ -16,7 +16,7 @@ ms.collection:
 description: "What are best practices for Exchange Online Protection (EOP) and Advanced Threat Protection (ATP) security settings? What's the current recommendations for standard protection? What should be used if you want to be more strict? And what extras do you get if you also use Advanced Threat Protection (ATP)?"
 ---
 
-# Best-practices for EOP and Office 365 ATP security
+# Best practices for EOP and Office 365 ATP security
 
 **Exchange Online Protection (EOP)** is the core of security for Office 365 subscriptions and helps keep malicious emails from reaching your employee's inboxes. But with new, more sophisticated attacks emerging every day, improved protections are often required. **Office 365 Advanced Threat Protection (ATP)** ATP Plan 1 or ATP Plan 2 contain additional features that give admins more layers of security, control, and investigation. 
 
@@ -92,7 +92,7 @@ EOP customers get a basic anti-phishing policy set but with Office 365 ATP, admi
 |(Edit impersonation policy) Add users to protect|On|On|Depends on your organization, but we recommend adding users in key roles. Internally, these might be your CEO, CFO, and other senior leaders. Externally, these could include council members or your board of directors.|
 |(Edit impersonation policy) Automatically include the domains I own|On|On||
 |(Edit impersonation policy) Include custom domains|On|On|Depends on your organization, but we recommend adding domains you interact with most that you don't own.|
-|If email is sent by an impersonated user you specified|Quarantine the message|Quarantine the message||
+|If email is sent by an impersonated user you specified|Move message to the recipients' Junk Email folders|Quarantine the message||
 |If email is sent by an impersonated domain you specified|Quarantine the message|Quarantine the message||
 |Show tip for impersonated users|On|On||
 |Show tip for impersonated domains|On|On||
