@@ -122,11 +122,11 @@ EOP customers get a basic anti-phishing policy set but with Office 365 ATP, admi
 |---------|---------|---------|---------|
 |Use ATP Safe Links in Office 365 Apps, Office for iOS and Android|Enabled|Enabled|This falls under the ATP Safe Links Policies that apply to the entire organization|
 Do not track when users click safe links|Disabled|Disabled|This falls under the ATP Safe Links Policies that apply to the entire organization|
-|Do not let users click through safe links to original URL|Disabled|Enabled|This falls under the ATP Safe Links Policies that apply to the entire organization|
+|Do not let users click through safe links to original URL|Enabled|Enabled|This falls under the ATP Safe Links Policies that apply to the entire organization|
 |Action for unknown potentially malicious URLs in messages|On|On||
 |Apply real-time URL scanning for suspicious links and links that point to files|Enabled|Enabled||
 |Wait for URL scanning to complete before delivering the message|Enabled|Enabled||
-|Apply safe links to email messages sent within the organization|Disabled|Enabled||
+|Apply safe links to email messages sent within the organization|Enabled|Enabled||
 
 ### Safe Attachments
 
@@ -157,3 +157,4 @@ Security feature name|Standard|Strict|Comment|
 |PowerShell connectivity|Disabled|Disabled||
 |Use Spoof Intelligence to whitelist senders whenever possible|Yes|Yes||
 |Directory-Based Edge Blocking (DBEB)|Enabled|Enabled|Domain Type = Authoritative|
+|[Set up multi-factor authentication for all admin accounts](https://docs.microsoft.com/en-us/office365/admin/security-and-compliance/set-up-multi-factor-authentication)|Enabled|Enabled||
