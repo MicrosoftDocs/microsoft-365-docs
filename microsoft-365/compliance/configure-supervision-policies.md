@@ -72,14 +72,15 @@ To manage supervised users in large enterprise organizations, you may need to mo
     - **MemberJoinRestriction = Closed**. Ensures that users cannot add themselves to the distribution group.
     - **ModerationEnabled = True**. Ensures that all messages sent to this group are subject to approval and that the group is not being used to communicate outside of the supervision policy configuration.
 
-    ```
+    ```PowerShell
     New-DistributionGroup -Name <your group name> -Alias <your group alias> -MemberDepartRestriction 'Closed' -MemberJoinRestriction 'Closed' -ModerationEnabled $true
     ```
+
 2. Select an unused [Exchange custom attribute](https://docs.microsoft.com/Exchange/recipients/mailbox-custom-attributes?view=exchserver-2019&viewFallbackFrom=exchonline-ww) to track users added to the supervision policy in your organization.
 
 3. Run the following PowerShell script on a recurring schedule to add users to the supervision policy:
 
-    ```
+    ```PowerShell
     $Mbx = (Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited -Filter {CustomAttribute9 -eq $Null})
     $i = 0
     ForEach ($M in $Mbx) 
@@ -124,7 +125,7 @@ To do this, you can either add yourself as a member of the Supervisory Review ro
 
 4. In the **Members** section, add the people who you want to manage communication supervision for your organization.
 
-For more information about role groups and permissions, see [Permissions in the Compliance Center](../security/office-365-security/protect-against-threats.md).
+For more information about role groups and permissions, see [Permissions in the Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
 
 ### Enable remote PowerShell access for reviewers (if email is hosted on Exchange Online)
 

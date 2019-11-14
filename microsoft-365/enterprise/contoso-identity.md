@@ -73,7 +73,7 @@ Here is Contoso's resulting set of identity and device Conditional Access polici
  
 ## Next step
 
-[Learn](contoso-win10.md) how Contoso is leveraging its System Center Configuration Manager infrastructure to deploy and keep current Windows 10 Enterprise across its organization.
+[Learn](contoso-win10.md) how Contoso is leveraging its Microsoft Endpoint Configuration Manager infrastructure to deploy and keep current Windows 10 Enterprise across its organization.
 
 ## See also
 

@@ -11,7 +11,7 @@ ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
 - MET150
-description: "Release notes for the public preview of Microsoft Compliance Score, a dashboard in the M365 compliance center that helps simplify and automate risk assessments."
+description: "Release notes and known issues for Microsoft Compliance Score (preview), a feature in the M365 compliance center that helps simplify and automate risk assessments."
 ---
 
 # Microsoft Compliance Score release notes (Preview)
@@ -36,7 +36,7 @@ Keep these points in mind as you work with Compliance Score and Compliance Manag
    - Existing templates cannot be customized. Read instructions for [managing templates in Compliance Manager](working-with-compliance-manager.md#templates).
    - When creating a template, you must include Dimensions for both **Product** and **Certification** to ensure your template displays in Compliance Score.
  - **Setting permissions**: Compliance Score users who were not previously granted permissions in Compliance Manager must have their permissions set in the Microsoft 365 compliance center. Users whose roles were previously set in Compliance Manager can use that same level of access when working in Compliance Score.
-- **Transfer of data**: organizations with data residing in Compliance Manger will see that data in Compliance Score, and vice-versa. 
+- **Transfer of data**: organizations with data residing in Compliance Manger will see that data in Compliance Score, and vice-versa.
 - **Signing in to Compliance Manager from Compliance Score**: if a user is signed in to Compliance Score and selects a link to go to Compliance Manager, the user will not have to sign in again. After clicking the link, a new tab opens in your browser featuring a dialogue box. In the top section with the header, “Already a Microsoft cloud services customer? Sign in to your account,” select the **Sign In** button to automatically sign in to Compliance Manager.
 
 ## Known issues in Compliance Score (Preview)

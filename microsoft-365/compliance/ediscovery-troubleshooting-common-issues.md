@@ -69,7 +69,7 @@ If you receive this error, we recommend that you verify the locations that faile
 
 3. Retry the eDiscovery search on the failed locations only.
 
-4. If you continue to receive these errors, see [Retry failed locations](https://docs.microsoft.com/en-us/Office365/SecurityCompliance/retry-failed-content-search) for more troubleshooting steps.
+4. If you continue to receive these errors, see [Retry failed locations](https://docs.microsoft.com/Office365/SecurityCompliance/retry-failed-content-search) for more troubleshooting steps.
 
 ## Error/issue: File not found
 
@@ -82,7 +82,7 @@ When running an eDiscovery search that includes SharePoint Online and One Drive 
 
 1. Check location identified in the search to ensure the that the location of the file is correct and added in the search locations.
 
-2. Use the procedures at [Manually request crawling and re-indexing of a site, a library, or a list](https://docs.microsoft.com/en-us/sharepoint/crawl-site-content) to reindex the site.
+2. Use the procedures at [Manually request crawling and re-indexing of a site, a library, or a list](https://docs.microsoft.com/sharepoint/crawl-site-content) to reindex the site.
 
 ## Error/issue: Search fails because recipient is not found
 
@@ -106,7 +106,7 @@ When exporting search results from eDiscovery or Content Search in the Security 
 
 ### Resolution
 
-1.	Try using the steps identified in the article [Increase Download Speeds](https://docs.microsoft.com/en-us/office365/securitycompliance/increase-download-speeds-when-exporting-ediscovery-results).
+1.	Try using the steps identified in the article [Increase Download Speeds](https://docs.microsoft.com/office365/securitycompliance/increase-download-speeds-when-exporting-ediscovery-results).
 
 2.	If you still have issues, connect to [Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) and then run the following command:
 
@@ -161,7 +161,7 @@ eDiscovery Case Hold Policy Sync Distribution error. The error reads:
     ```powershell
     Get-CaseHoldPolicy <policyname> - DistributionDetail | FL
     ```
-    
+
     For a retention policy, run the following command:
 
     ```powershell

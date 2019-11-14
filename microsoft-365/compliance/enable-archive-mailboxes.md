@@ -96,27 +96,27 @@ After you're connected to Exchange Online, you can run the commands in the follo
 
 Run the following command to enable the archive mailbox for a single user.
     
-  ```
+  ```powershell
   Enable-Mailbox -Identity <username> -Archive
   ```
 
 Run the following command to enable the archive mailbox for all users in your organization (whose archive mailbox is currently not enabled).
     
-  ```
+  ```powershell
   Get-Mailbox -Filter {ArchiveStatus -Eq "None" -AND RecipientTypeDetails -eq "UserMailbox"} | Enable-Mailbox -Archive
   ```
-  
+
 ### Disable archive mailboxes
 
 Run the following command to disable the archive mailbox for a single user.
     
-  ```
+  ```powershell
   Disable-Mailbox -Identity <username> -Archive
   ```
 
 Run the following command to disable the archive mailbox for all users in your organization (whose archive mailbox is currently enabled).
     
-  ```
+  ```powershell
   Get-Mailbox -Filter {ArchiveStatus -Eq "Active" -AND RecipientTypeDetails -eq "UserMailbox"} | Disable-Mailbox -Archive
   ```
 

@@ -2,7 +2,7 @@
 title: Criminal Justice Information Services (CJIS) Security Policy
 description: Microsoft government cloud services adhere to the US Criminal Justice Information Services Security Policy.
 keywords: Microsoft 365, compliance, offerings
-localization_priority: Priority
+localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.author: robmazz
