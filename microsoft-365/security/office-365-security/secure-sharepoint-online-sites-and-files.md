@@ -10,7 +10,7 @@ ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
-ms.collection: 
+ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 - M365-security-compliance
@@ -25,7 +25,7 @@ description: "Summary: Configuration recommendations for protecting files in Sha
 
  **Summary:** Configuration recommendations for protecting files in SharePoint Online and Office 365.
   
-This article provides recommendations for configuring SharePoint Online team sites and file protection that balances security with ease of collaboration. This article defines four different configurations, starting with a public site within your organization with the most open sharing policies. Each additional configuration represents a meaningful step up in protection, but the ability to access and collaborate on resources is reduced to the relevant set of users. Use these recommendations as a starting point and adjust the configurations to meet the needs of your organization. 
+This article provides recommendations for configuring SharePoint Online team sites and file protection that balances security with ease of collaboration. This article defines four different configurations, starting with a public site within your organization with the most open sharing policies. Each additional configuration represents a meaningful step up in protection, but the ability to access and collaborate on resources is reduced to the relevant set of users. Use these recommendations as a starting point and adjust the configurations to meet the needs of your organization.
   
 The configurations in this article align with Microsoft's recommendations for three tiers of protection for data, identities, and devices:
   
@@ -35,7 +35,7 @@ The configurations in this article align with Microsoft's recommendations for th
     
 - Highly confidential protection
     
-For more information about these tiers and capabilities recommended for each tier, see the following resources. 
+For more information about these tiers and capabilities recommended for each tier, see the following resources.
   
 - [Identity and Device Protection for Office 365](https://docs.microsoft.com/office365/enterprise/microsoft-cloud-it-architecture-resources#BKMK_O365IDP)
     
@@ -49,7 +49,7 @@ Recommendations for SharePoint Online team sites draw on a variety of Microsoft 
 
 As illustrated:
   
-- Baseline protection includes two options for SharePoint Online team sites — a public site and private site. Public sites can be discovered and accessed by anybody in the organization. Private sites can only be discovered and accessed by members of the site. Both of these site configurations allow for sharing outside the group. 
+- Baseline protection includes two options for SharePoint Online team sites — a public site and private site. Public sites can be discovered and accessed by anybody in the organization. Private sites can only be discovered and accessed by members of the site. Both of these site configurations allow for sharing outside the group.
     
 - Sites for sensitive and highly confidential protection are private sites with access limited only to members of specific groups.
     

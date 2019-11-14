@@ -69,7 +69,7 @@ The final step is to use the Azure Storage Explorer and the SAS URL to connect t
 
     The **Blob containers** node (under **Storage Accounts** > **(Attached Containers)** \> is opened. 
 
-    ![](./media/AzureStorageConnect5.png)
+    ![Export jobs in the Blobs containers node](./media/AzureStorageConnect5.png)
 
     It contains a container named with the display name from step 4. This container contains a folder for each export job that you've created. These folders are named with an ID that corresponds to the ID of the export job. You can find these export IDs (and the name of the export) under **Support information** on the flyout page for each **Preparing data for export** job listed on the **Jobs** tab.
 
