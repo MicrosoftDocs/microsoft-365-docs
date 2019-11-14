@@ -92,14 +92,14 @@ EOP customers get a basic anti-phishing policy set but with Office 365 ATP, admi
 |(Edit impersonation policy) Add users to protect|On|On|Depends on your organization, but we recommend adding users in key roles. Internally, these might be your CEO, CFO, and other senior leaders. Externally, these could include council members or your board of directors.|
 |(Edit impersonation policy) Automatically include the domains I own|On|On||
 |(Edit impersonation policy) Include custom domains|On|On|Depends on your organization, but we recommend adding domains you interact with most that you don't own.|
-|If email is sent by an impersonated user|Quarantine the message|Quarantine the message||
-|If email is sent by an impersonated domain|Quarantine the message|Quarantine the message||
+|If email is sent by an impersonated user you specified|Quarantine the message|Quarantine the message||
+|If email is sent by an impersonated domain you specified|Quarantine the message|Quarantine the message||
 |Show tip for impersonated users|On|On||
 |Show tip for impersonated domains|On|On||
 |Show tip for unusual characters|On|On||
 |Enable Mailbox intelligence|On|On||
 |Enable Mailbox intelligence based impersonation protection|On|On||
-|If email is sent by an impersonated user|Quarantine the message|Quarantine the message||
+|If email is sent by an impersonated user protected by mailbox intelligence|Quarantine the message|Quarantine the message||
 |(Edit impersonation policy) Add trusted senders and domains|None|None|Depends on your organization, but we recommend adding users or domains that incorrectly get marked as phish due to impersonation only and not other filters.|
 
 |Spoof security feature name|Standard|Strict|Comment|
