@@ -157,4 +157,4 @@ Security feature name|Standard|Strict|Comment|
 |PowerShell connectivity|Disabled|Disabled||
 |Use Spoof Intelligence to whitelist senders whenever possible|Yes|Yes||
 |Directory-Based Edge Blocking (DBEB)|Enabled|Enabled|Domain Type = Authoritative|
-|[Set up multi-factor authentication for all admin accounts](https://docs.microsoft.com/en-us/office365/admin/security-and-compliance/set-up-multi-factor-authentication)|Enabled|Enabled||
+|[Set up multi-factor authentication for all admin accounts](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)|Enabled|Enabled||
