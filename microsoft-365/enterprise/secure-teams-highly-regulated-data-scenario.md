@@ -122,7 +122,7 @@ Here’s the resulting configuration so far.
 
 ![Step 4 of the secure team scenario configuration](./media/secure-teams-highly-regulated-data-scenario/secure-team-step4.png)
  
-### Step 5: Create the label or a sublabel of the highly regulated label
+### Step 5: Create a sensitivity label or a sublabel of the highly regulated sensitivity label
 
 Unlike a sensitivity label for highly regulated data that anyone can apply to any file, a secure team needs its own label or sublabel so that assigned files:
 

@@ -34,7 +34,7 @@ To deploy WIP in your organization with Microsoft 365 Enterprise:
   -	Ensure that you have filled out your Protected apps list.
   - Choose your WIP protection level.
 
-You can also use WIP with [System Center Configuration Manager](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/overview-create-wip-policy-sccm). 
+You can also use WIP with [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/overview-create-wip-policy-sccm). 
 
 See [WIP best practices]( https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/guidance-and-best-practices-wip) for more information.
 

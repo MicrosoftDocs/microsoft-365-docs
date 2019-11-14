@@ -75,32 +75,32 @@ First, start a Windows PowerShell command prompt on your local computer.
   
 Sign in to your Azure account with the following command.
   
-```
+```powershell
 Connect-AzAccount
 ```
 
 Get your subscription name using the following command.
   
-```
+```powershell
 Get-AzSubscription | Sort Name | Select Name
 ```
 
 Set your Azure subscription. Replace everything within the quotes, including the < and > characters, with the correct name.
   
-```
+```powershell
 $subscr="<subscription name>"
 Get-AzSubscription -SubscriptionName $subscr | Select-AzSubscription
 ```
 
 Next, create a new resource group for your simulated enterprise test lab. To determine a unique resource group name, use this command to list your existing resource groups.
   
-```
+```powershell
 Get-AzResourceGroup | Sort ResourceGroupName | Select ResourceGroupName
 ```
 
 Create your new resource group with these commands. Replace everything within the quotes, including the < and > characters, with the correct names.
   
-```
+```powershell
 $rgName="<resource group name>"
 $locName="<location name, such as West US>"
 New-AzResourceGroup -Name $rgName -Location $locName
@@ -108,7 +108,7 @@ New-AzResourceGroup -Name $rgName -Location $locName
 
 Next, you create the TestLab virtual network that will host the Corpnet subnet of the simulated enterprise environment and protect it with a network security group. Fill in the name of your resource group and run these commands at the PowerShell command prompt on your local computer.
   
-```
+```powershell
 $rgName="<name of your new resource group>"
 $locName=(Get-AzResourceGroup -Name $rgName).Location
 $corpnetSubnet=New-AzVirtualNetworkSubnetConfig -Name Corpnet -AddressPrefix 10.0.0.0/24
@@ -125,7 +125,7 @@ Next, you create the DC1 virtual machine and configure it as a domain controller
   
 To create an Azure virtual machine for DC1, fill in the name of your resource group and run these commands at the PowerShell command prompt on your local computer.
   
-```
+```powershell
 $rgName="<resource group name>"
 $locName=(Get-AzResourceGroup -Name $rgName).Location
 $vnet=Get-AzVirtualNetwork -Name TestLab -ResourceGroupName $rgName
@@ -167,13 +167,13 @@ Next, connect to the DC1 virtual machine.
     
 Next, add an extra data disk as a new volume with the drive letter F: with this command at an administrator-level Windows PowerShell command prompt on DC1.
   
-```
+```powershell
 Get-Disk | Where PartitionStyle -eq "RAW" | Initialize-Disk -PartitionStyle MBR -PassThru | New-Partition -AssignDriveLetter -UseMaximumSize | Format-Volume -FileSystem NTFS -NewFileSystemLabel "WSAD Data"
 ```
 
 Next, configure DC1 as a domain controller and DNS server for the **testlab.**\<your public domain> domain. Specify your public domain name, remove the \< and > characters, and then run these commands at an administrator-level Windows PowerShell command prompt on DC1.
   
-```
+```powershell
 $yourDomain="<your public domain>"
 Install-WindowsFeature AD-Domain-Services -IncludeManagementTools
 Install-ADDSForest -DomainName testlab.$yourDomain -DatabasePath "F:\NTDS" -SysvolPath "F:\SYSVOL" -LogPath "F:\Logs"
@@ -196,7 +196,7 @@ After DC1 restarts, reconnect to the DC1 virtual machine.
     
 Next, create a user account in Active Directory that will be used when logging in to TESTLAB domain member computers. Run this command at an administrator-level Windows PowerShell command prompt.
   
-```
+```powershell
 New-ADUser -SamAccountName User1 -AccountPassword (read-host "Set user password" -assecurestring) -name "User1" -enabled $true -PasswordNeverExpires $true -ChangePasswordAtLogon $false
 ```
 
@@ -204,7 +204,7 @@ Note that this command prompts you to supply the User1 account password. Because
   
 Next, configure the new User1 account as a domain, enterprise, and schema administrator. Run this command at the administrator-level Windows PowerShell command prompt.
   
-```
+```powershell
 $yourDomain="<your public domain>"
 $domainName = "testlab"+$yourDomain
 $userName="user1@" + $domainName
@@ -217,7 +217,7 @@ Close the Remote Desktop session with DC1 and then reconnect using the TESTLAB\\
   
 Next, to allow traffic for the Ping tool, run this command at an administrator-level Windows PowerShell command prompt.
   
-```
+```powershell
 Set-NetFirewallRule -DisplayName "File and Printer Sharing (Echo Request - ICMPv4-In)" -enabled True
 ```
 
@@ -231,7 +231,7 @@ In this step, you create and configure APP1, which is an application server that
 
 To create an Azure Virtual Machine for APP1, fill in the name of your resource group and run these commands at the  command prompt on your local computer.
   
-```
+```powershell
 $rgName="<resource group name>"
 $locName=(Get-AzResourceGroup -Name $rgName).Location
 $vnet=Get-AzVirtualNetwork -Name TestLab -ResourceGroupName $rgName
@@ -252,7 +252,7 @@ To check name resolution and network communication between APP1 and DC1, run the
   
 Next, join the APP1 virtual machine to the TESTLAB domain with these commands at the Windows PowerShell prompt.
   
-```
+```powershell
 $yourDomain="<your public domain name>"
 Add-Computer -DomainName ("testlab" + $yourDomain)
 Restart-Computer
@@ -264,13 +264,13 @@ After APP1 restarts, connect to it using the TESTLAB\\User1 account, and then op
   
 Next, make APP1 a web server with this command at an administrator-level Windows PowerShell command prompt on APP1.
   
-```
+```powershell
 Install-WindowsFeature Web-WebServer -IncludeManagementTools
 ```
 
 Next, create a shared folder and a text file within the folder on APP1 with these PowerShell commands.
   
-```
+```powershell
 New-Item -path c:\files -type directory
 Write-Output "This is a shared file." | out-file c:\files\example.txt
 New-SmbShare -name files -path c:\files -changeaccess TESTLAB\User1
@@ -289,7 +289,7 @@ In this step, you create and configure CLIENT1, which acts as a typical laptop, 
   
 To create an Azure Virtual Machine for CLIENT1, fill in the name of your resource group and run these commands at the  command prompt on your local computer.
   
-```
+```powershell
 $rgName="<resource group name>"
 $locName=(Get-AzResourceGroup -Name $rgName).Location
 $vnet=Get-AzVirtualNetwork -Name TestLab -ResourceGroupName $rgName
@@ -310,7 +310,7 @@ To check name resolution and network communication between CLIENT1 and DC1, run 
   
 Next, join the CLIENT1 virtual machine to the TESTLAB domain with these commands at the Windows PowerShell prompt.
   
-```
+```powershell
 $yourDomain="<your public domain name>"
 Add-Computer -DomainName ("testlab" + $yourDomain)
 Restart-Computer
