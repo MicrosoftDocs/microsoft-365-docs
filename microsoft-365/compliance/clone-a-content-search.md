@@ -53,7 +53,7 @@ To clone a search:
   
 1. Save the following text to a Windows PowerShell script file by using a filename suffix of .ps1; for example, `CloneSearch.ps1`.
     
-  ```
+  ```powershell
   # This PowerShell script clones an existing Content Search in the Office 365 security and compliance center.
   # Get login credentials from the user
   if(!$UserCredential)
@@ -115,7 +115,7 @@ To clone a search:
     
 3. Run the script; for example:
     
-    ```
+    ```powershell
     .\CloneSearch.ps1
     ```
 

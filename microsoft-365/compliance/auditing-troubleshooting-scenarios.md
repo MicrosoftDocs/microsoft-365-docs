@@ -115,7 +115,7 @@ d. The **UserId** field indicates the user who set email forwarding on the mailb
 
 If you determine that email forwarding shouldn't be set on the mailbox, you can remove it by running the following command in Exchange Online PowerShell:
 
-```
+```powershell
 Set-Mailbox <mailbox alias> -ForwardingSmtpAddress $null 
 ```
 

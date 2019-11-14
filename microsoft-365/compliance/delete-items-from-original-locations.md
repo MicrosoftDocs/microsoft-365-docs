@@ -8,7 +8,7 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: 
+ms.collection:
 - M365-security-compliance
 - SPO_Content
 search.appverid: 
@@ -27,7 +27,7 @@ Using data investigations, you can delete items from their original locations. T
 
 ## Before you begin
 
-- To delete items, you have to be assigned the **Search And Purge** role in the Security & Compliance Center. This role is assigned by default to the built-in Data Investigator role group. 
+- To delete items, you have to be assigned the **Search And Purge** role in the Security & Compliance Center. This role is assigned by default to the built-in Data Investigator role group.
 
 - The procedure in this topic assumes that you have run a search associated with an investigation and added the search results to an evidence set. After the search results are in evidence, you can select one or more items to delete. For more information, see [Search for data in an investigation](search-for-data.md).
 
@@ -39,7 +39,7 @@ Perform the following steps to delete items from their original location:
 
 1. In the **Data Investigations** tool, open the data investigation that contains the items you want to delete, and then click the **Evidence** tab.
 
-2. Select the items that you want to delete. You can select all items in the evidence set or select just a subset of items. 
+2. Select the items that you want to delete. You can select all items in the evidence set or select just a subset of items.
 
    > [!NOTE]
    > If you select the attachments of an email or a file attached to a document in SharePoint and OneDrive, the parent item will be also be selected and deleted when the item is deleted from its original location. Similarly, if you select an item that has attachments, the parent item item and all attachments are deleted.
@@ -55,11 +55,11 @@ Perform the following steps to delete items from their original location:
    > [!NOTE]
    > In the previous screenshot, the number of items indicates the number of items that are selected for deletion. The number of documents indicates to total number of items including any files that are attached to a parent item. For example, if you select one email message and that message has an attached Word document, the number of items and documents displayed under **Selected documents only** would be **1 items (2 documents)**.
 
-You can track the progress of the **Delete items from original locations** job on the **Jobs** tab. Click the job to display the flyout page. 
+You can track the progress of the **Delete items from original locations** job on the **Jobs** tab. Click the job to display the flyout page.
 
 ![Flyout page for Delete items from original locations job](media/DataInvestigationsDeleteItems3.png)
 
-When the items in the job are deleted, the job status is set to **Successful**. The time and date of the completed job is also displayed. 
+When the items in the job are deleted, the job status is set to **Successful**. The time and date of the completed job is also displayed.
 
 ![Completed delete items job](media/DataInvestigationsDeleteItems4.png)
 
