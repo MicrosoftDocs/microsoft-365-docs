@@ -60,11 +60,11 @@ You can use the resulting environment to test the features and functionality of 
 
 ## Phase 1: Configure the TestLab virtual network
 
-Use the instructions in [Base Configuration dev/test environment](base-configuration-dev-test-environment.md) to configure the DC1, APP1, and CLIENT1 computers in the Azure virtual network named TestLab.
+Use the instructions in **Phase 1** of [The simulated enterprise base configuration](simulated-ent-base-configuration-microsoft-365-enterprise.md) to configure the DC1, APP1, and CLIENT1 computers in the Azure virtual network named TestLab.
   
 This is your current configuration. 
   
-![The Base Configuration in Azure](media/simulated-cross-premises-microsoft-365-enterprise/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
+![The simulated enterprise base configuration in Azure](media/simulated-cross-premises-microsoft-365-enterprise/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
   
 ## Phase 2: Create the XPrem virtual network
 
@@ -73,7 +73,7 @@ In this phase, you create and configure the new XPrem virtual network and then c
 First, start an Azure PowerShell prompt on your local computer.
   
 > [!NOTE]
-> The following command sets use the latest version of Azure PowerShell. See [Get started with Azure PowerShell cmdlets](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/). 
+> The following command sets use the latest version of Azure PowerShell. See [Get started with Azure PowerShell cmdlets](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/). 
   
 Sign in to your Azure account with this command.
   

@@ -347,7 +347,7 @@ This is your current configuration.
 
 ## Phase 2: Create your Microsoft 365 E5 subscription
 
-In this phase, you create a new Microsoft 365 E5 subscription that use a new Azure AD tenant, one that is separate from your production subscription. You can do this in two ways:
+In this phase, you create a new Microsoft 365 E5 subscription that uses a new Azure AD tenant, one that is separate from your production subscription. You can do this in two ways:
 
 - Use a trial subscription of Microsoft 365 E5. 
 
@@ -526,9 +526,6 @@ Next, repeat steps 8 through 11 of the previous procedure for all of your other 
   
 > [!NOTE]
 > The Microsoft 365 E5 trial subscription is 30 days. For a permanent test environment, convert this trial subscription to a paid subscription with a small number of licenses. 
-  
-> [!NOTE]
-> The Microsoft 365 E5 trial subscription is 30 days. For a permanent test environment, convert this trial subscription to a paid subscription with a small number of licenses.
   
 ### Results
 
