@@ -60,7 +60,7 @@ You can use the resulting environment to test the features and functionality of 
 
 ## Phase 1: Configure the TestLab virtual network
 
-Use the instructions in **Phase 1** of [The simulated enterprise base configuration](simulated-ent-base-configuration-microsoft-365-enterprise.md) to configure the DC1, APP1, and CLIENT1 computers in the Azure virtual network named TestLab.
+Use the instructions in **Phase 1** of the [simulated enterprise base configuration](simulated-ent-base-configuration-microsoft-365-enterprise.md) to configure the DC1, APP1, and CLIENT1 computers in the Azure virtual network named TestLab.
   
 This is your current configuration. 
   
