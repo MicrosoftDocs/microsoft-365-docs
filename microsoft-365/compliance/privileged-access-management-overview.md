@@ -89,4 +89,4 @@ Start [configuring your organization for privileged access management](privilege
 
 ## Learn more
 
-[Interactive guide: Monitor and control administrator tasks with privileged access management](https://content.cloudguides.com/en-us/guides/Privileged%20Access%20Management)
+[Interactive guide: Monitor and control administrator tasks with privileged access management](https://content.cloudguides.com/guides/Privileged%20Access%20Management)

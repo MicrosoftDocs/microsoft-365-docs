@@ -36,13 +36,13 @@ Once you have identified the policy and rules that contain invalid characters, y
     
 2. To change the name of the spam filter policy, run the Set-HostedContentFilterPolicy cmdlet as follows:
     
-    ```
+    ```powershell
     Set-HostedContentFilterPolicy -Identity "Old policy name" -Name "New policy name"
     ```  
 
 3. To change the name of a spam filter rule, run the Set-HostedContentFilterRule cmdlet as follows:
     
-    ```
+    ```powershell
     Set-HostedContentFilterRule -Identity "Old rule name" -Name "New rule name"
     ```  
 

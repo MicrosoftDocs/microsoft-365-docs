@@ -208,6 +208,7 @@
 ### [Work with processing errors](processing-data-for-case.md)
 #### [Advanced indexing of custodian data](indexing-custodian-data.md)
 #### [Error remediation when processing data](error-remediation-when-processing-data-in-advanced-ediscovery.md)
+#### [Single item error remediation](single-item-error-remediation.md)
 
 ### [Collect data for a case](collecting-data-for-ediscovery.md)
 #### [Create a search](create-search-to-collect-data.md)
@@ -429,8 +430,7 @@
 
 ### Breach notification
 #### [Breach notification](gdpr-breach-notification.md)
-#### [Azure](gdpr-breach-azure.md)
-#### [Dynamics 365](gdpr-breach-dynamics365.md)
+#### [Azure & Dynamics 365](gdpr-breach-azure-dynamics.md)
 #### [Microsoft Support & Professional Services](gdpr-breach-microsoft-support-professional-services.md)
 #### [Office 365](gdpr-breach-office365.md)
 
@@ -465,7 +465,7 @@
 ### [SOC](offering-soc.md)
 ### [WCAG 2.1](offering-wcag-2-1.md)
 
-## Government
+## US Government
 ### [CJIS](offering-cjis.md)
 ### [CNSSI 1253](offering-cnssi-1253.md)
 ### [DFARS](offering-dfars.md)
