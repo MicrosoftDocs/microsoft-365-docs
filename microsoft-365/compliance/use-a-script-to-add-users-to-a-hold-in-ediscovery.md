@@ -28,9 +28,9 @@ Here are the steps to make this happen:
   
 [Step 1: Install the SharePoint Online Management Shell](#step-1-install-the-sharepoint-online-management-shell)
   
-[Step 2: Generate a list of users](use-a-script-to-add-users-to-a-hold-in-ediscovery.md#step2)
+[Step 2: Generate a list of users](#step-2-generate-a-list-of-users)
   
-[Step 3: Run the script to create a hold and add users](use-a-script-to-add-users-to-a-hold-in-ediscovery.md#step3)
+[Step 3: Run the script to create a hold and add users](#step-3-run-the-script-to-create-a-hold-and-add-users)
   
 ## Before you begin
 
