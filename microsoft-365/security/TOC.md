@@ -221,7 +221,7 @@
 
 ##### [Set up your EOP service](./office-365-security/set-up-your-eop-service.md)
 ###### [Best practices for configuring EOP](./office-365-security/best-practices-for-configuring-eop.md)
-###### [Best practices for configuring EOP and Office ATP Security](./best-practices-for-eop-office-atp.md)
+###### [Best practices for configuring EOP and Office365 ATP Security](./best-practices-for-eop-office365-atp.md)
 ###### [Sample script for applying EOP settings to multiple tenants](./office-365-security/sample-script-for-applying-eop-settings-to-multiple-tenants.md)
 ###### [Move domains and settings from one EOP organization to another EOP organization](./office-365-security/move-domains-and-settings-from-one-eop-organization-to-another-eop-organization.md)
 ###### [Switch to EOP from Google Postini, the Barracuda Spam and Virus Firewall, or Cisco IronPort](./office-365-security/switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco.md)
