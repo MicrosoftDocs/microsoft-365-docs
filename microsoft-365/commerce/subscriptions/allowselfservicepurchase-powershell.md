@@ -29,7 +29,7 @@ You can use the **MSCommerce** PowerShell module to:
 
 To use the **MSCommerce** PowerShell module, you need:
 
-- A Windows 10 device with [Windows Management Framework 5.0](https://www.microsoft.com/download/details.aspx?id=48729), which is included with Windows 10
+- A Windows 10 device
 - Administrator permission for the device
 - Global or Billing Admin role for Microsoft 365 admin center
 
@@ -44,7 +44,7 @@ To install the **MSCommerce** PowerShell module with **PowerShellGet**, run the 
 Install-Module -Name MSCommerce
 ```
 
-## Import the MSCommerce PowerShell module into the PowerShell session
+## Import MSCommerce into the PowerShell session
 
 After you install the module on your Windows 10 device, you then import it into each PowerShell session that you start. To import it into a PowerShell session, run the following command:
 
