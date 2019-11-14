@@ -25,7 +25,7 @@ description: "Learn to manage Microsoft 365 Business related admin tasks, mobile
 
 ## General Microsoft 365 Business admin tasks
 
-Most of the [admin content](/Office365/Admin/admin-home.md) for Office 365 for business also applies for Microsoft 365 Business.
+Most of the [admin content](/Office365/Admin/admin-home.md) for Office 365 for business also applies to Microsoft 365 Business.
 
 - [Add more users to Microsoft 365 Business](add-users-m365b.md)
     
