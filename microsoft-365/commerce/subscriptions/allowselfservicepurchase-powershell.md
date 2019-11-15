@@ -1,5 +1,5 @@
 ---
-title: Use AllowSelfServicePurchase for the MSCommerce PowerShell module
+title: Use AllowSelfServicePurchase to enable or disable self-service purchases
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: mnirkhe
@@ -22,7 +22,7 @@ The **MSCommerce** PowerShell module is now available on [PowerShell Gallery](ht
 
 You can use the **MSCommerce** PowerShell module to:
 
-- View the default state of the **AllowSelfServicePurchase** parameter — whether it's enabled or disabled
+- View the default state of the **AllowSelfServicePurchase** parameter value — whether it's enabled or disabled
 - View a list of applicable products and whether self-service purchase is enabled or disabled
 - View or modify the current setting for a specific product to either enable or disable it
 
