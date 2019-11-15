@@ -15,7 +15,7 @@ This topic describes the steps for Partners to follow to register devices. The p
 
 
 ## Prepare for registration 
-Before completing registration for a customer, you must first establish a relationship with them at the [Partner Center](https://partner.microsoft.com/dashboard). Be sure to select **Include delegated administration privileges for Azure Active Directory and Office 365**. Learn more at [Partner Center help](https://docs.microsoft.com/en-us/partner-center/request-a-relationship-with-a-customer).
+Before completing registration for a customer, you must first establish a relationship with them at the [Partner Center](https://partner.microsoft.com/dashboard). Be sure to select **Include delegated administration privileges for Azure Active Directory and Office 365**. Learn more at [Partner Center help](https://docs.microsoft.com/partner-center/request-a-relationship-with-a-customer).
 
 To complete registration for your customer, first create a CSV file.
 
@@ -30,6 +30,8 @@ Your file needs to include the **exact same column headings** as the sample one 
   
   
   ```
+
+
 
 
 >[!NOTE]

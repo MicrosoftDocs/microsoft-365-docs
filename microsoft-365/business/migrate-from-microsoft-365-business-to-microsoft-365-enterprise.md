@@ -29,10 +29,10 @@ For example, your business has grown and needs more than 300 licenses (congratul
 
 Or, your business needs enterprise features, such as Office 365 ProPlus, Windows 10 Enterprise E3, or Enterprise Client Access Licenses (CALs).
 
-Migrating is easy: Just switch licenses. All your data and configuration in your current subscription is maintained. There is nothing for you to do to prepare for the migration and nothing to do afterward, except take advantage of the new features. 
+Upgrading is easy: you can start the upgrade [from the Admin center](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/upgrade-to-different-plan?view=o365-worldwide). All your data and configuration in your current subscription is maintained. There's nothing for you to do to prepare for the migration and nothing to do afterward, except take advantage of the new features. 
 
 >[!Note]
->You can also use a Microsoft 365 Business subscription for up to 300 seats and get a Microsoft 365 Enterprise E3 subscription for more than 300 seats. However, Office 365 ATP is not included with Microsoft 365 Enterprise E3. You should add additional Office 365 ATP licenses for the users in your Microsoft 365 Enterprise E3 subscription.
+>You can also use a Microsoft 365 Business subscription for up to 300 seats and get a Microsoft 365 Enterprise E3 subscription for more than 300 seats. However, Office 365 ATP is not included with Microsoft 365 Enterprise E3. For continued threat protection, you should add additional Office 365 ATP licenses so that all of the users in scope of your Office 365 ATP polices are licensed.
 >
 
 ## Differences between Microsoft 365 Business and Microsoft 365 Enterprise
@@ -82,13 +82,13 @@ This table shows the differences between Microsoft 365 Business and Microsoft 36
 
 ## Migration
 
-To migrate, work with your partner to move your Microsoft 365 Business subscription and licenses to suitable a Microsoft 365 Enterprise E3 subscription with its licenses.
+To migrate, work with your partner to move your Microsoft 365 Business subscription and licenses to a suitable Microsoft 365 Enterprise E3 subscription with its licenses.
 
 The following sections describe what changes you need to make, if any, and what you can do after the migration.
 
 ### Microsoft 365 subscription configuration and data
 
-You don’t need to do any changes to your current subscription or data prior to migrating, which includes:
+You don’t need to make any changes to your current subscription or data before migrating, which includes:
 
 - Subscription configuration, such as DNS domain names.
 - User and group accounts and authentication settings, such as multi factor authentication or conditional access policies.
@@ -99,7 +99,7 @@ Your users can now enjoy unlimited storage in the Exchange Online mailboxes and 
 You can begin using Cloud App Discovery, Azure AD Connect Health, and SSO for more than 10 apps.
 
 >[!Note]
->After migrating to Microsoft 365 Enterprise E3, you no longer Outlook Customer Manager and MileIQ.
+>Users migrated to Microsoft 365 Enterprise E3 can no longer use Outlook Customer Manager and MileIQ.
 >
 
 <a name="threat-protection"></a>
@@ -122,16 +122,16 @@ Windows 10 Business includes these protections:
 Windows 10 Enterprise E3 also includes enterprise management of hardware-based isolation for Microsoft Edge.
 
 >[!Note]
->After migrating to Microsoft 365 Enterprise E3, you no longer have Office 365 ATP. You can purchase additional Office 365 ATP licenses for your Microsoft 365 Enterprise E3 subscription and assign them to your user accounts.
+>Users migrated to Microsoft 365 Enterprise E3 will each require an Office 365 ATP license for continued threat protection. Be sure to purchase additional Office 365 ATP licenses so that all of the users in scope of your Office 365 ATP polices are licensed. 
 >
 
 ### Device management with Intune
 
-You don’t need to do any changes to your current Intune configuration prior to migrating, which includes enrolled devices and device and app settings.
+You don’t need to make any changes to your current Intune configuration before migrating, which includes enrolled devices and device and app settings.
 
 ### Windows 10
 
-Microsoft 365 Business includes Windows 10 Business, which you can install with Windows Autopilot. When you migrate to Microsoft 365 Enterprise E3, each user license includes Windows 10 Enterprise E3, which you can also install with Windows Autopilot.
+Microsoft 365 Business includes Windows 10 Business, which you can install with Windows AutoPilot. When you migrate to Microsoft 365 Enterprise E3, each user license includes Windows 10 Enterprise E3, which you can also install with Windows Autopilot.
 
 <a name="office-365-business"></a>
 ### Office 365 Business

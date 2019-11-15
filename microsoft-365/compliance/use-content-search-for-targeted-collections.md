@@ -7,7 +7,9 @@ ms.date:
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-ms.collection: M365-security-compliance
+ms.collection: 
+- M365-security-compliance
+- SPO_Content
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
@@ -29,7 +31,7 @@ The Content Search feature in the Office 365 Security &amp; Compliance Center do
     
 - Each time you run the script in Step 1, a new remote PowerShell session is created. So you could use up all the remote PowerShell sessions available to you. To prevent this from happening, you can run the following command to disconnect your active remote PowerShell sessions.
     
-  ```
+  ```powershell
   Get-PSSession | Remove-PSSession
   ```
 
@@ -57,7 +59,7 @@ To display a list of mailbox folders or site documentlink (path) names:
   
 1. Save the following text to a Windows PowerShell script file by using a filename suffix of .ps1; for example, `GetFolderSearchParameters.ps1`.
     
-  ```
+  ```powershell
   #########################################################################################################
   # This PowerShell script will prompt you for:								#
   #    * Admin credentials for a user who can run the Get-MailboxFolderStatistics cmdlet in Exchange	#
@@ -172,7 +174,7 @@ To display a list of mailbox folders or site documentlink (path) names:
     
 3. Run the script; for example:
     
-      ```
+      ```powershell
       .\GetFolderSearchParameters.ps1
       ```
 
@@ -240,28 +242,28 @@ Here are some examples of using the  `folderid` and  `documentlink` properties i
   
 - This example searches three different mailbox folders. You could use similar query syntax to search the hidden folders in a user's Recoverable Items folder.
     
-  ```
+  ```powershell
   folderid:<folderid> OR folderid:<folderid> OR folderid:<folderid>
   ```
 
 - This example searches a mailbox folder for items that contain an exact phrase.
     
-  ```
+  ```powershell
   folderid:<folderid> AND "Contoso financial results"
   ```
 
 - This example searches a site folder (and any subfolders) for documents that contain the letters "NDA" in the title.
     
-  ```
+  ```powershell
   documentlink:<path> AND filename:nda
   ```
 
 - This example searches a site folder (and any subfolder) for documents there were changed within a date range.
     
-  ```
+  ```powershell
   documentlink:<path> AND (lastmodifiedtime>=01/01/2017 AND lastmodifiedtime<=01/21/2017)
   ```
-  
+
 ## More information
 
 Keep the following things in mind when using the script in this article to perform targeted collections.

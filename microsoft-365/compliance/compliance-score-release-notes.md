@@ -11,7 +11,7 @@ ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
 - MET150
-description: "Release notes for the public preview of Microsoft Compliance Score, a dashboard in the M365 compliance center that helps simplify and automate risk assessments."
+description: "Release notes and known issues for Microsoft Compliance Score (preview), a feature in the M365 compliance center that helps simplify and automate risk assessments."
 ---
 
 # Microsoft Compliance Score release notes (Preview)
@@ -31,18 +31,34 @@ Keep these points in mind as you work with Compliance Score and Compliance Manag
     - Export assessments
     - Archive assessments
     - View archived assessments
- - **Creating templates for assessments**: users must go to Compliance Manager to create new templates and export existing templates. Existing templates cannot be customized. Read instructions for [managing templates in Compliance Manager](working-with-compliance-manager.md#templates).
+ - **Creating templates for assessments**: 
+   - Users must go to Compliance Manager to create new templates and export existing templates. 
+   - Existing templates cannot be customized. Read instructions for [managing templates in Compliance Manager](working-with-compliance-manager.md#templates).
+   - When creating a template, you must include Dimensions for both **Product** and **Certification** to ensure your template displays in Compliance Score.
  - **Setting permissions**: Compliance Score users who were not previously granted permissions in Compliance Manager must have their permissions set in the Microsoft 365 compliance center. Users whose roles were previously set in Compliance Manager can use that same level of access when working in Compliance Score.
-- **Transfer of data**: organizations with data residing in Compliance Manger will see that data in Compliance Score, and vice-versa. 
+- **Transfer of data**: organizations with data residing in Compliance Manger will see that data in Compliance Score, and vice-versa.
 - **Signing in to Compliance Manager from Compliance Score**: if a user is signed in to Compliance Score and selects a link to go to Compliance Manager, the user will not have to sign in again. After clicking the link, a new tab opens in your browser featuring a dialogue box. In the top section with the header, “Already a Microsoft cloud services customer? Sign in to your account,” select the **Sign In** button to automatically sign in to Compliance Manager.
 
 ## Known issues in Compliance Score (Preview)
 
 The following sections cover known issues to be resolved in upcoming releases of Compliance Score.
 
-### Improvement actions
+### Launch Now links in certain improvement actions
 
-- The **Launch Now** link for the **Configure External Sharing Links to Expire** improvement action gives an error. To access the SharePoint admin center, go to the [Microsoft 365 Admin Center](https://admin.microsoft.com). On the left navigation menu, select **Show all.** Under **Admin centers,** select **SharePoint**.
+In certain improvement actions, selecting the **Launch Now** link that appears underneath the implementation instructions gives an error. To access the proper destination, which is the the SharePoint admin center, follow these steps:
+
+1. Go to the [Microsoft 365 Admin Center](https://admin.microsoft.com).
+2. On the left navigation menu, select **Show all**.
+3. Under **Admin centers,** select **SharePoint**.
+
+Below are the affected improvement actions, which all reside in the **Protect information** category:
+  - Apply encryption to SharePoint Library
+  - Classify Data in SharePoint Online
+  - Configure External Sharing Links to Expire
+  - Enable Versioning for Document Libraries
+
+### Long load times for non-admin users
+Compliance Score users who hold roles other than an admin role may experience long load times when trying to a sign in. Refreshing your browser will resolve this issue. (Learn more about [Compliance Score roles](compliance-score-setup.md#set-user-permissions-and-assign-roles).)
 
 ### Supported browsers
 

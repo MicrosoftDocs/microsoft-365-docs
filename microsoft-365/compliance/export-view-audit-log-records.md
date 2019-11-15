@@ -103,11 +103,11 @@ Here are some tips and examples of exporting and viewing the audit log before an
 
    In this example, run the following commands to return all records related to SharePoint sharing operations. 
    
-   ```
+   ```powershell
    $auditlog = Search-UnifiedAuditLog -StartDate 06/01/2019 -EndDate 06/30/2019 -RecordType SharePointSharingOperation
    ```
 
-   ```
+   ```powershell
    $auditlog | Select-Object -Property CreationDate,UserIds,RecordType,AuditData | Export-Csv -Path c:\AuditLogs\PowerShellAuditlog.csv -NoTypeInformation
    ```
 
@@ -117,10 +117,10 @@ Here are some tips and examples of exporting and viewing the audit log before an
    
    - You can only include a single value for this parameter. To search for audit records for other record types, you have to run the two previous commands again to specify a different record type and append those results to the original CSV file. For example, you would run these two commands to add SharePoint file activities from the same date range to the PowerShellAuditlog.csv file.
 
-       ```
+       ```powershell
       $auditlog = Search-UnifiedAuditLog -StartDate 06/01/2019 -EndDate 06/30/2019 -RecordType SharePointFileOperation
       ```
 
-      ```
+      ```powershell
       $auditlog | Select-Object -Property CreationDate,UserIds,RecordType,AuditData | Export-Csv -Append -Path c:\AuditLogs\PowerShellAuditlog.csv -NoTypeInformation
-      ```
+      ```powershell

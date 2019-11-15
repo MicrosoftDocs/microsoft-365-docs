@@ -91,13 +91,13 @@ For Skype for Business Online:
 
 2. Run this command.
 
-  ```
+  ```powershell
   Set-CsOAuthConfiguration -ClientAdalAuthOverride Allowed
   ```
 
 3. Verify that the change was successful with this command.
 
-  ```
+  ```powershell
   Get-CsOAuthConfiguration
   ```
 

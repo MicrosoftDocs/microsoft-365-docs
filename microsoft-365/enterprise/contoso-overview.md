@@ -60,7 +60,7 @@ Contoso's IT architects identified the following design requirements and conside
 
 - Multiple geographic locations with local regulations and compliance requirements
 - A central intranet datacenter in the headquarters office and regional application servers that host internal line of business applications
-- An existing System Center Configuration Manager infrastructure
+- An existing Microsoft Endpoint Configuration Manager infrastructure
 - A mix of client computing devices, including Windows, Mac, and Linux
 - A mix of personal and company-owned mobile devices, including iOS (iPhone and iPad) and Android smart phones and tablets
 - Many remote and mobile workers

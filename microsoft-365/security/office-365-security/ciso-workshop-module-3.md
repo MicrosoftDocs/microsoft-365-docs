@@ -21,15 +21,15 @@ Learn how to advance zero trust with your identity and user access strategy to b
 
 ## Part 1: Identity and Zero Trust History (9:33)
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE3Yyhs]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3Yyhs]
 
 ## Part 2: Zero Trust Definition and Models (15:37)
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE3YaUL]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3YaUL]
 
 ## Part 3: Strategy and Priorities (9:54)
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE3YvHy]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3YvHy]
 
 ## Part 4: Account Security: Measuring Cost of Attack Password-less Authentication (13:11)
 
@@ -37,7 +37,7 @@ Learn how to advance zero trust with your identity and user access strategy to b
 
 ##  Part 5: Zero Trust User Access Reference Architecture (8:42)
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE3Yyhx]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3Yyhx]
 
 ##  Part 6: Build an Identity Perimeter (13:57)
 

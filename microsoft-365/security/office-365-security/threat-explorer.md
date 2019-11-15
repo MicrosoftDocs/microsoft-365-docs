@@ -73,7 +73,19 @@ Delivery location shows the results of policies and detections that run post-del
 
 The **Email Timeline** is another new Explorer feature aimed at making the hunting experience better for admins. It cuts down on randomization because there is less time spent checking different locations to try to understand the event. When multiple events happen at, or close to, the same time on an email, those events will show up in a timeline view. In fact, some events that happen post-delivery to your mail will be captured in the 'Special action' column. Combining the information from the timeline of that mail with the special action taken on the mail post-delivery will give admins insight into how their policies work, where the mail was finally routed, and, in some cases, what the final assessment was.
 
-For more discussion about investigating malicious emails see [Find and investigate malicious email that was delivered in Office 365](https://docs.microsoft.com/en-us/office365/securitycompliance/investigate-malicious-email-that-was-delivered).
+For more discussion about investigating malicious emails see [Find and investigate malicious email that was delivered in Office 365](https://docs.microsoft.com/office365/securitycompliance/investigate-malicious-email-that-was-delivered).
+
+
+Also, you will now be able to **Export reports** to Microsoft Excel in order to view both their Network Message ID, and their Click Verdict, making the task of understanding where your traffic originated easier. Here's how it works. Starting in Threat Management on the Office 365 quick-launch, click through this chain:
+
+**Explorer > View Phish > Clicks > Top URLs**
+
+When you click on a URL in the list, you'll see a new Export button on the fly-out panel. Use this button to move data to an Excel spreadsheet for easier reporting.
+
+> [!TIP]
+> Network Message ID maps the click back to specific mails when you search through Explorer or associated 3rd party tools via Network Message ID. Searching through the Network Message ID will give admins the specific email associated with a click result. On export having, the correlating identification of Network Message ID makes for quicker and more powerful analysis.
+
+![tp_ExportClickResultAndNetworkID.png](../../images/tp_ExportClickResultAndNetworkID.png)
 
 ## See malware detected in email by technology
 
