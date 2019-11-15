@@ -13,6 +13,7 @@ ms.custom:
 search.appverid:
 - MET150
 description: "Learn how to use the AllowSelfServicePurchase PowerShell cmdlet to turn self-service purchase on or off."
+ROBOTS: NOINDEX, NOFOLLOW
 ---
 
 # Use AllowSelfServicePurchase for the MSCommerce PowerShell module
