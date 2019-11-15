@@ -80,7 +80,7 @@ To create a mail transport rule:
    
 For more information, see:
   
-- [How to deal with ransomware](https://go.microsoft.com/fwlink/?linkid=2016501&amp;clcid=0x409)
+- [How to deal with ransomware](https://go.microsoft.com/fwlink/?linkid=2016501)
     
 - [Restore your OneDrive](https://support.office.com/article/fa231298-759d-41cf-bcd0-25ac53eb8a15.aspx)
 
