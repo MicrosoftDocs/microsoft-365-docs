@@ -17,6 +17,8 @@ description: "Configure multi-factor authentication using text messages sent to 
 
 # Multi-factor authentication for your Microsoft 365 Enterprise test environment
 
+*This Test Lab Guide can be used for both Microsoft 365 Enterprise and Office 365 Enterprise test environments.*
+
 For an additional level of security for signing in to Office 365 or any service or application that uses the Azure AD tenant for your organization, you can enable Azure multi-factor authentication, which requires more than just a username and password to verify an account. With multi-factor authentication, users are required to acknowledge a phone call, type a verification code sent in a text message, or specify an app password on their smart phones after correctly entering their passwords. They can sign in only after this second authentication factor has been satisfied. 
   
 This article describes how to enable and test text message-based authentication for a specific account.

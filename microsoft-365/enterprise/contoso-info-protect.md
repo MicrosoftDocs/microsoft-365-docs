@@ -18,8 +18,6 @@ description: Understand how Contoso uses the information protection features in 
 
 # Information protection for the Contoso Corporation
 
-**Summary:** Understand how Contoso uses the information protection features in Microsoft 365 Enterprise to secure their digital assets in the cloud.
-
 Contoso is serious about their information security and protection. For example, leakage or destruction of their intellectual property describing product designs and proprietary manufacturing techniques would place them at a competitive disadvantage.
 
 Before moving their sensitive and most valuable digital assets to the cloud, they made sure that their on-premises information classification and protection requirements were supported and implemented in the cloud-based services of Microsoft 365 Enterprise.

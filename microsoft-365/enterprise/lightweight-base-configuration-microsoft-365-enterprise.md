@@ -19,6 +19,8 @@ description: Use this Test Lab Guide to create a lightweight test environment fo
 
 # The lightweight base configuration
 
+*This Test Lab Guide can be used for both Microsoft 365 Enterprise and Office 365 Enterprise test environments.*
+
 This article provides you with step-by-step instructions to create a simplified environment with a Microsoft 365 E5 subscription and a computer running Windows 10 Enterprise. 
 
 ![The lightweight Microsoft 3656 Enterprise test environment](media/lightweight-base-configuration-microsoft-365-enterprise/Phase4.png)

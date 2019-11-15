@@ -20,6 +20,8 @@ description: "Summary: Configure and test password reset for your Microsoft 365 
 
 # Password reset for your Microsoft 365 test environment
 
+*This Test Lab Guide can only be used for Microsoft 365 Enterprise test environments.*
+
 Azure Active Directory (Azure AD) self-service password reset (SSPR) allows users to reset or unlock their passwords or accounts. 
 
 This article describes how you can configure and test password resets in your Microsoft 365 test environment in three phases:

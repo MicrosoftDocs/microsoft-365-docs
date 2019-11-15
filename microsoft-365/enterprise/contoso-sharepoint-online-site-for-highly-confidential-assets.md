@@ -17,8 +17,6 @@ description: "Summary: How Contoso implemented a SharePoint site for highly regu
 
 # SharePoint site for highly confidential digital assets of the Contoso Corporation
 
- **Summary:** How Contoso implemented a SharePoint site for highly regulated data for easier collaboration between its research teams.
-  
 Contoso's most valuable assets are its intellectual property in the form of trade secrets, such as proprietary manufacturing techniques, and design specifications for products that are in development. These assets were in digital form, originally stored as files on a SharePoint Server 2016 site. When Contoso deployed Microsoft 365 Enterprise, they wanted to transition their on-premises digital assets to the cloud for easier access and more open collaboration across research teams in Paris, Moscow, New York, Beijing, and Bangalore. 
   
 However, due to their sensitive nature, access to these files must be:
