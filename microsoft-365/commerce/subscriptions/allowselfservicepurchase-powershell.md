@@ -81,8 +81,8 @@ The following table lists the available products and their **ProductId**.
 
 | Product | ProductId |
 |-----------------------------|--------------|
-| Microsoft Automate Per User | CFQ7TTC0KP0N |
-| Power Apps Per User | CFQ7TTC0KP0P |
+| Power Apps per user | CFQ7TTC0KP0P |
+| Power Automate per user | CFQ7TTC0KP0N |
 | Power BI Pro | CFQ7TTC0L3PB |
 
 ## View or set the status for AllowSelfServicePurchase
