@@ -76,6 +76,7 @@ To view a list of all available self-service purchase products and the status of
 ```powershell
 Get-MSCommerceProductPolicies -PolicyId AllowSelfServicePurchase
 ```
+
 The following table lists the supported products and their **ProductID**.
 
 | Product | ProductID |
