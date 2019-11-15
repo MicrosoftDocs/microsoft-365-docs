@@ -76,6 +76,13 @@ To view a list of all available self-service purchase products and the status of
 ```powershell
 Get-MSCommerceProductPolicies -PolicyId AllowSelfServicePurchase
 ```
+The following table lists the supported products and their **ProductID**.
+
+| Product | ProductID |
+| :----: | :----: |
+| Microsoft Automate Per User | CFQ7TTC0KP0N |
+| Power Apps Per User | CFQ7TTC0KP0P |
+| Power BI Pro | CFQ7TTC0L3PB |
 
 ## View or set the status for AllowSelfServicePurchase
 
@@ -99,10 +106,12 @@ To disable the policy setting for a specific product, run the following command:
 Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId CFQ7TTC0KP0N -Enabled $False
 ```
 <!--
-## Uninstall the MSStore Module
+## Uninstall the MSCommerce module
 
-To remove the **MSCommerce** PowerShell module from your computer, use the following PowerShell command:
+Before you uninstall the MSCommerce module, close your current PowerShell session, then open a new session with admin rights.
+
+To remove the **MSCommerce** PowerShell module from your computer, use the following command:
 
 ```powershell
-Get-InstalledModule -Name "MSCommerce" -RequiredVersion 1.0 | Uninstall-Module
+Uninstall-Module -Name MSCommerce
 ```-->
