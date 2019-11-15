@@ -18,8 +18,6 @@ description: How Contoso is using the security features across Microsoft 365 Ent
 
 # Summary of Microsoft 365 Enterprise security for the Contoso Corporation
 
-**Summary:** How Contoso is using the security features across Microsoft 365 Enterprise.
-
 To obtain the sign-off of the deployment of Microsoft 365 Enterprise by the IT security department, a thorough security review was conducted. Here are Contoso's security requirements for the cloud:
 
 - Use the strongest methods of authentication for employee access to cloud resources

@@ -18,8 +18,6 @@ description: Understand how Contoso uses Microsoft Endpoint Configuration Manage
 
 # Office 365 ProPlus deployment for Contoso
 
-**Summary:** Understand how Contoso uses Microsoft Endpoint Configuration Manager to deploy Office 365 ProPlus.
-
 Contoso upgraded their PCs to Windows 10 Enterprise and Office 365 ProPlus to enable more effective collaboration, better security, and a more modern desktop experience. After assessing their infrastructure and business needs, Contoso identified these key requirements for the deployment:
 
 - All PCs should run Office 365 ProPlus
