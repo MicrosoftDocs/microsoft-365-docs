@@ -106,6 +106,18 @@ To disable the policy setting for a specific product, run the following command:
 ```powershell
 Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId CFQ7TTC0KP0N -Enabled $False
 ```
+
+### Example script to disable AllowSelfServicePurchase for a specific product
+
+The following example walks you through importing the **MSCommerce** module, signing in with your account, getting the **ProductId** for Power Automate, and then disabling **AllowSelfServicePurchase** for that product.
+
+```powershell
+Import-Module -Name MSCommerce
+Connect-MSCommerce #sign-in with your global or billing administrator account when prompted
+$product = Get-MSCommerceProductPolicies -PolicyId AllowSelfServicePurchase | where {$_.ProductName -match 'Power Automate'}
+Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $product.ProductID -Enabled $false
+```
+
 <!--
 ## Uninstall the MSCommerce module
 
