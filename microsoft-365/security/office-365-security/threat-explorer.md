@@ -78,9 +78,13 @@ For more discussion about investigating malicious emails see [Find and investiga
 
 Also, you will now be able to **Export reports for URL clicks** to Microsoft Excel in order to view both their Network Message ID, and their Click Verdict, making the task of understanding where your URL click traffic originated easier. Here's how it works. Starting in Threat Management on the Office 365 quick-launch, click through this chain:
 
-**Explorer > View Phish > Clicks > Top URLs or URL Top Clicks**
+**Explorer > View Phish > Clicks > Top URLs or URL Top Clicks > Click on any record to open URL flyout**
 
 When you click on a URL in the list, you'll see a new Export button on the fly-out panel. Use this button to move data to an Excel spreadsheet for easier reporting.
+
+You can get to the same location in Real Time Detections like so:
+
+**Explorer > Real Time Detections > View Phish > URLs > Top URLs or Top Clicks > Click on any record to open URL flyout > Navigate to the Clicks Tab.**
 
 > [!TIP]
 > Network Message ID maps the click back to specific mails when you search through Explorer or associated 3rd party tools via Network Message ID. Searching through the Network Message ID will give admins the specific email associated with a click result. On export having, the correlating identification of Network Message ID makes for quicker and more powerful analysis.
