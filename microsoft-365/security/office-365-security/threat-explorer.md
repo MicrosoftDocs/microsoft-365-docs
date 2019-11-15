@@ -76,9 +76,9 @@ The **Email Timeline** is another new Explorer feature aimed at making the hunti
 For more discussion about investigating malicious emails see [Find and investigate malicious email that was delivered in Office 365](https://docs.microsoft.com/office365/securitycompliance/investigate-malicious-email-that-was-delivered).
 
 
-Also, you will now be able to **Export reports** to Microsoft Excel in order to view both their Network Message ID, and their Click Verdict, making the task of understanding where your traffic originated easier. Here's how it works. Starting in Threat Management on the Office 365 quick-launch, click through this chain:
+Also, you will now be able to **Export reports for URL clicks** to Microsoft Excel in order to view both their Network Message ID, and their Click Verdict, making the task of understanding where your URL click traffic originated easier. Here's how it works. Starting in Threat Management on the Office 365 quick-launch, click through this chain:
 
-**Explorer > View Phish > Clicks > Top URLs**
+**Explorer > View Phish > Clicks > Top URLs or URL Top Clicks**
 
 When you click on a URL in the list, you'll see a new Export button on the fly-out panel. Use this button to move data to an Excel spreadsheet for easier reporting.
 
