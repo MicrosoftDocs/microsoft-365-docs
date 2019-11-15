@@ -10,6 +10,7 @@ localization_priority: Priority
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+- SPO_Content
 search.appverid:
 - MOE150
 - MET150
@@ -81,13 +82,13 @@ Be sure to read the following items before you start searching the Office 365 au
 
 - If you want to turn off audit log search in Office 365 for your organization, you can run the following command in remote PowerShell connected to your Exchange Online organization:
 
-  ```
+  ```powershell
   Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $false
   ```
 
     To turn on audit search again, you can run the following command in Exchange Online PowerShell:
 
-  ```
+  ```powershell
   Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $true
   ```
 
@@ -438,7 +439,7 @@ The following table lists events related to assigning permissions in SharePoint 
 
 |**Friendly name**|**Operation**|**Description**|
 |:-----|:-----|:-----|
-|Added site collection admin|SiteCollectionAdminAdded|Site collection administrator or owner adds a person as a site collection administrator for a site. Site collection administrators have full control permissions for the site collection and all subsites. This activity is also logged when an admin gives themselves access to a user's OneDrive account (by editing the user profile in the SharePoint admin center or  [by using the Microsoft 365 admin center](https://docs.microsoft.com/office365/admin/add-users/get-access-to-and-back-up-a-former-user-s-data#part-1---get-access-to-the-former-employees-onedrive-for-business-documents)).|
+|Added site collection admin|SiteCollectionAdminAdded|Site collection administrator or owner adds a person as a site collection administrator for a site. Site collection administrators have full control permissions for the site collection and all subsites. This activity is also logged when an admin gives themselves access to a user's OneDrive account (by editing the user profile in the SharePoint admin center or by [using the Microsoft 365 admin center](https://docs.microsoft.com/office365/admin/add-users/get-access-to-and-back-up-a-former-user-s-data)).|
 |Added user or group to SharePoint group|AddedToGroup|User added a member or guest to a SharePoint group. This might have been an intentional action or the result of another activity, such as a sharing event.|
 |Broke permission level inheritance|PermissionLevelsInheritanceBroken|An item was changed so that it no longer inherits permission levels from its parent.|
 |Broke sharing inheritance|SharingInheritanceBroken|An item was changed so that it no longer inherits sharing permissions from its parent.|

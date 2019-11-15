@@ -119,7 +119,7 @@ Contoso always refers to customers by using a CCN in internal correspondence, ex
 
     ```
     <?xml version="1.0" encoding="utf-8"?>
-    <RulePackage xmlns="http://schemas.microsoft.com/office/2011/mce"> 
+    <RulePackage xmlns="https://schemas.microsoft.com/office/2011/mce"> 
     <RulePack id="GUID1">
     <Version major="1" minor="0" build="0" revision="0" />
     <Publisher id="GUID2" />

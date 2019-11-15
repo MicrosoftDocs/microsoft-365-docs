@@ -6,7 +6,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-ms.date: 04/11/2019
+ms.date: 
 localization_priority: Normal
 ms.collection: 
 - M365-security-compliance
@@ -68,13 +68,13 @@ Often when you need to create a large dictionary, it's to use keywords from a fi
     
 3. Read the file into a variable by running this cmdlet:
     
-    ```
+    ```powershell
     $fileData = Get-Content <filename> -Encoding Byte -ReadCount 0
     ```
 
 4. Create the dictionary by running this cmdlet:
     
-    ```
+    ```powershell
     New-DlpKeywordDictionary -Name <name> -Description <description> -FileData $fileData
     ```
 
@@ -86,7 +86,7 @@ For example, we'll modify some terms in PowerShell, save the terms locally where
 
 First, retrieve the dictionary object:
   
-```
+```powershell
 $dict = Get-DlpKeywordDictionary -Name "Diseases"
 ```
 
@@ -94,7 +94,7 @@ Printing  `$dict` will show the various variables. The keywords themselves are s
 
 Before you modify the dictionary, you need to turn the string of terms back into an array using the  `.split(',')` method. Then you'll clean up the unwanted spaces between the keywords with the  `.trim()` method, leaving just the keywords to work with. 
   
-```
+```powershell
 $terms = $dict.KeywordDictionary.split(',').trim()
 ```
 
@@ -104,71 +104,68 @@ In the last step, you saved the keywords to an array. There are several ways to 
   
 Run the command  `$terms` to show the current list of terms. The output of the command looks like this: 
   
-```
-aarskog's syndrome
-abandonment
-abasia
-abderhalden-kaufmann-lignac
-abdominalgia
-abduction contracture
-abetalipoproteinemia
-abiotrophy
-ablatio
-ablation
-ablepharia
-abocclusion
-abolition
-aborter
-abortion
-abortus
-aboulomania
-abrami's disease
-```
+`aarskog's syndrome`
+`abandonment`
+`abasia`
+`abderhalden-kaufmann-lignac`
+`abdominalgia`
+`abduction contracture`
+`abetalipoproteinemia`
+`abiotrophy`
+`ablatio`
+`ablation`
+`ablepharia`
+`abocclusion`
+`abolition`
+`aborter`
+`abortion`
+`abortus`
+`aboulomania`
+`abrami's disease`
 
 Run this command to specify the terms that you want to remove:
   
-```
+```powershell
 $termsToRemove = @('abandonment', 'ablatio')
 ```
 
 Run this command to actually remove the terms from the list:
   
-```
+```powershell
 $updatedTerms = $terms | Where-Object{ $_ -notin $termsToRemove }
 ```
 
 Run the command  `$updatedTerms` to show the updated list of terms. The output of the command looks like this (the specified terms have been removed): 
   
-```
-aarskog's syndrome
-abasia
-abderhalden-kaufmann-lignac
-abdominalgia
-abduction contracture
-abetalipo proteinemia
-abiotrophy
-ablation
-ablepharia
-abocclusion
-abolition
-aborter
-abortion
-abortus
-aboulomania
-abrami's disease
+`aarskog's syndrome`
+`abasia`
+`abderhalden-kaufmann-lignac`
+`abdominalgia`
+`abduction contracture`
+`abetalipo proteinemia`
+`abiotrophy`
+`ablation`
+`ablepharia`
+`abocclusion`
+`abolition`
+`aborter`
+`abortion`
+`abortus`
+`aboulomania`
+`abrami's disease`
 ```
 
 Now save the dictionary locally and add a few more terms. You could add the terms right here in PowerShell, but you'll still need to export the file locally to ensure it's saved with Unicode encoding and contains the BOM.
   
 Save the dictionary locally by running the following:
   
-```
+```powershell
 Set-Content $updatedTerms -Path "C:\myPath\terms.txt"
 ```
 
 Now simply open the file, add your additional terms, and save with Unicode encoding (UTF-16). Now you'll upload the updated terms and update the dictionary in place.
   
-```
+```powershell
 PS> Set-DlpKeywordDictionary -Identity "Diseases" -FileData (Get-Content -Path "C:myPath\terms.txt" -Encoding Byte -ReadCount 0)
 ```
 
@@ -178,7 +175,7 @@ Now the dictionary has been updated in place. Note that the  `Identity` field ta
 
 Keyword dictionaries can be used as part of the match requirements for a custom sensitive information type, or as a sensitive information type themselves. Both require you to create a [custom sensitive information type](create-a-custom-sensitive-information-type-in-scc-powershell.md). Follow the instructions in the linked article to create a sensitive information type. Once you have the XML, you'll need the GUID identifier for the dictionary to use it.
   
-```
+```xml
 <Entity id="9e5382d0-1b6a-42fd-820e-44e0d3b15b6e" patternsProximity="300" recommendedConfidence="75">
 	<Pattern confidenceLevel="75">
 		<IdMatch idRef=". . ."/>
@@ -188,27 +185,26 @@ Keyword dictionaries can be used as part of the match requirements for a custom 
 
 To get the identity of your dictionary, run this command and copy the **Identity** property value: 
   
-```
+```powershell
 Get-DlpKeywordDictionary -Name "Diseases"
 ```
 
 The output of the command looks like this:
   
-```
-RunspaceId        : 138e55e7-ea1e-4f7a-b824-79f2c4252255
-Identity          : 8d2d44b0-91f4-41f2-94e0-21c1c5b5fc9f
-Name              : Diseases
-Description       : Names of diseases and injuries from ICD-10-CM lexicon
-KeywordDictionary : aarskog's syndrome, abandonment, abasia, abderhalden-kaufmann-lignac, abdominalgia, abduction contracture, abetalipo
-                    proteinemia, abiotrophy, ablatio, ablation, ablepharia, abocclusion, abolition, aborter, abortion, abortus, aboulomania,
-                    abrami's disease, abramo
-IsValid           : True
-ObjectState       : Unchanged
-```
+`RunspaceId        : 138e55e7-ea1e-4f7a-b824-79f2c4252255`
+`Identity          : 8d2d44b0-91f4-41f2-94e0-21c1c5b5fc9f`
+`Name              : Diseases`
+`Description       : Names of diseases and injuries from ICD-10-CM lexicon`
+`KeywordDictionary : aarskog's syndrome, abandonment, abasia, abderhalden-kaufmann-lignac, abdominalgia, abduction contracture, abetalipo`
+                    `proteinemia, abiotrophy, ablatio, ablation, ablepharia, abocclusion, abolition, aborter, abortion, abortus, aboulomania,`
+                    `abrami's disease, abramo`
+`IsValid           : True`
+`ObjectState       : Unchanged`
+
 
 Paste the identity into your custom sensitive information type's XML and upload it. Now your dictionary will appear in your list of sensitive information types and you can use it right in your policy, specifying how many keywords are required to match.
   
-```
+```xml
 <Entity id="d333c6c2-5f4c-4131-9433-db3ef72a89e8" patternsProximity="300" recommendedConfidence="85">
       <Pattern confidenceLevel="85">
         <IdMatch idRef="8d2d44b0-91f4-41f2-94e0-21c1c5b5fc9f" />
@@ -221,5 +217,3 @@ Paste the identity into your custom sensitive information type's XML and upload 
       </Resource>
     </LocalizedStrings>
 ```
-
-

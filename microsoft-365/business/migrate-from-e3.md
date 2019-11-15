@@ -23,9 +23,9 @@ description: "Learn how to move your business to Microsoft 365 Business from Off
 
 # Migrating from Office 365 E3 to Microsoft 365 Business 
 
-Microsoft 365 Business has everything you need for your small business, combining the best-in-class cloud-based productivity apps with simple device management and security.  If you currently have an Office 365 E3 subscription, but don’t have more than 300 employees, consider switching to Microsoft 365 Business for added security features.
+Microsoft 365 Business has everything you need for your small business, combining the best-in-class cloud-based productivity apps with simple device management and security. If you currently have an Office 365 E3 subscription, but don’t have more than 300 employees, consider switching to Microsoft 365 Business for added security features.
 
-Migrating is easy: First you switch licenses and all your data and user information in your current subscription is maintained. After the migration you will need to set up the features that are added in Microsoft 365 Business.
+Migrating is easy: First you switch licenses and all your data and user information in your current subscription is maintained. After the migration, you'll need to set up the features that are added in Microsoft 365 Business.
 
 ## Differences between Office 365 E3 and Microsoft 365 Business
 
@@ -36,7 +36,7 @@ This table shows the differences between Microsoft 365 Business and Office 365 E
 | **On-premises**		| | | 
 | Office apps<sup>1</sup>	| Office 365 Business	| Office 365 ProPlus | 
 | **Cloud productivity apps**		| | | 
-| Exchange Online and Outlook	| 50 GB storage limit per mailbox and unlimited Exchange Online archiving	| 100 GB storage limit per mailbox and unlimited Exchange Online archiving | 
+| Exchange Online and Outlook	| 50 GB storage limit per mailbox and unlimited Exchange Online Archiving	| 100 GB storage limit per mailbox and unlimited Exchange Online Archiving | 
 | Teams	| ![Included with Microsoft 365 Business](./media/check-mark.png)	| ![Included with Office 365 E3](./media/check-mark.png) | 
 | OneDrive for Business	| 1 TB storage limit per user	| Unlimited | 
 | Yammer, SharePoint Online, Planner, Stream	| ![Included with Microsoft 365 Business](./media/check-mark.png)	| ![Included with Office 365 E3](./media/check-mark.png) | 
@@ -57,15 +57,15 @@ This table shows the differences between Microsoft 365 Business and Office 365 E
 |**Client Access License (CAL rights)**|||
 |Enterprise CAL Suite (Exchange, SharePoint, Skype)||![Included with Office 365 E3](./media/check-mark.png)|
 
-<sup>1</sup> The Microsoft 365 Business version of the Office apps do not include volume activation through Group Policy, app telemetry, update controls, spreadsheet compare and inquire, and business Intelligence.
+<sup>1</sup> The Microsoft 365 Business version of the Office apps doesn't include volume activation through Group Policy, app telemetry, update controls, spreadsheet compare and inquire, or business Intelligence.
 
 ## Migration
 
-To migrate your subscription, see [switch to a different plan manually](https://docs.microsoft.com/office365/admin/misc/switch-plans-manually) for instructions if you want to move just a few people to Microsoft 365 Business, you can [upgrade everyone automatically](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/upgrade-to-different-plan), or you can work with partner to move your E3 subscription and licenses to a Microsoft 365 Business subscription.
-The following sections describe what changes you need to make, if any, and what you can do after the migration.
+To migrate your subscription, see [switch to a different plan manually](https://docs.microsoft.com/office365/admin/misc/switch-plans-manually) for instructions if you want to move just a few people to Microsoft 365 Business. You can also [upgrade everyone automatically](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/upgrade-to-different-plan), or work with partner to move your E3 subscription and licenses to a Microsoft 365 Business subscription.
+The following sections describe the changes you need to make, if any, and what you can do after the migration.
 
 ### Office 365 E3 subscription configuration and data
-You don’t need to do any changes to your current subscription or data prior to migrating, which includes:
+You don’t need to do any changes to your current subscription or data before migrating, which includes:
 
 - Subscription configuration, such as DNS records and domain names.
 - User and group accounts and authentication settings, such as multi factor authentication or conditional access policies.
@@ -73,7 +73,7 @@ You don’t need to do any changes to your current subscription or data prior to
 
 ### Windows 10
 
-If your Windows aren't already on Windows Pro Creator update, you will need to [upgrade them to Windows Pro Creators Update](upgrade-to-windows-pro-creators-update.md).
+If your Windows aren't already on Windows Pro Creator update, [upgrade them to Windows Pro Creators Update](upgrade-to-windows-pro-creators-update.md).
 
 ### Set up policies to protect user devices and files
 
@@ -82,7 +82,7 @@ If your Windows aren't already on Windows Pro Creator update, you will need to [
 
 After you have assigned licenses to Microsoft 365 Business, you can start protecting the users' devices and files.
 
-If you upgraded everyone in your organization to Microsoft 365 Business, you will see the set up wizard on teh home page, and can follow the [Set up Microsoft 365 Business in the setup wizard](set-up.md) steps to protect files and mobile devices.
+If you upgraded everyone in your organization to Microsoft 365 Business, you'll see the setup wizard on the Home page, and can follow the [Set up Microsoft 365 Business in the setup wizard](set-up.md) steps to protect files and mobile devices.
 
 You can also complete these steps on the Devices page:
   
@@ -92,7 +92,7 @@ You can also complete these steps on the Devices page:
     
 3. In the **Add policy** pane give the policy a name, and then choose a **Policy type** from the drop-down. 
     
-    You can set up application policies for protecting files on Android and iPhone devices, as well as Windows 10, and you can set up device configuration policies for company owned Windows 10 devices. See the following links for details:
+     You can set up application policies for protecting files on Android and iPhone devices, as well as Windows 10, and you can set up device configuration policies for company owned Windows 10 devices. See the following links for details:
     
   - [Set app protection settings for Android or iOS devices](app-protection-settings-for-android-and-ios.md)
     
@@ -108,7 +108,7 @@ You can also complete these steps on the Devices page:
 
 ### Threat protection
 
-After migrating to Microsoft 365 Business, you have Office 365 ATP. See [Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) for an overview and to set up see [set up ATP safe links](https://support.office.com/article/61492713-53c2-47da-a6e7-fa97479e97fa), [set up ATP safe attachments](https://support.office.com/article/e7e68934-23dc-4b9c-b714-e82e27a8f8a5) and [set up ATP anti-phishing](https://support.office.com/article/86c425e1-1686-430a-9151-f7176cce4f2c).
+After migrating to Microsoft 365 Business, you have Office 365 ATP. See [Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) for an overview. To set up, see [set up ATP safe links](https://support.office.com/article/61492713-53c2-47da-a6e7-fa97479e97fa), [set up ATP safe attachments](https://support.office.com/article/e7e68934-23dc-4b9c-b714-e82e27a8f8a5), and [set up ATP anti-phishing](https://support.office.com/article/86c425e1-1686-430a-9151-f7176cce4f2c).
 
 ### Sensitivity labels
 

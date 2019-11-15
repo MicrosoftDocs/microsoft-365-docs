@@ -55,7 +55,7 @@ To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerS
 
 Run the following command to get information about the holds and Office 365 retention policies applied to a mailbox.
 
-```
+```powershell
 Get-Mailbox <username> | FL LitigationHoldEnabled,InPlaceHolds
 ```
 
@@ -76,7 +76,7 @@ The following table describes how to identify different types of holds based on 
 ### Get-OrganizationConfig
 If the *InPlaceHolds* property is empty when you run the **Get-Mailbox** cmdlet, there still may be one or more organization-wide Office 365 retention policies applied to the mailbox. Run the following command in Exchange Online PowerShell to get a list of GUIDs for organization-wide Office 365 retention policies.
 
-```
+```powershell
 Get-OrganizationConfig | FL InPlaceHolds
 ```
 
@@ -121,15 +121,15 @@ After you obtain the GUID for a hold that is applied to a mailbox, the next step
 
 Run the following commands in Security & Compliance Center PowerShell to identify an eDiscovery hold that's applied to the mailbox. Use the GUID (not including the UniH prefix) for the eDiscovery hold that you identified in Step 1. The first command creates a variable that contains information about the hold. This variable is used in the other commands. The second command displays the name of the eDiscovery case the hold is associated with. The third command displays the name of the hold and a list of the mailboxes the hold applies to.
 
-```
+```powershell
 $CaseHold = Get-CaseHoldPolicy <hold GUID without prefix>
 ```
 
-```
+```powershell
 Get-ComplianceCase $CaseHold.CaseId | FL Name
 ```
 
-```
+```powershell
 $CaseHold | FL Name,ExchangeLocation
 ```
 
@@ -139,16 +139,17 @@ To connect to Security & Compliance Center PowerShell, see  [Connect to Security
 
 Run the following command in Exchange Online PowerShell to identify the In-Place Hold that's applied to the mailbox. Use the GUID for the In-Place Hold that you identified in Step 1. The command displays the name of the hold and a list of the mailboxes the hold applies to.
 
-```
+```powershell
 Get-MailboxSearch -InPlaceHoldIdentity <hold GUID> | FL Name,SourceMailboxes
 ```
+
 If the GUID for the In-Place Hold starts with the `cld` prefix, be sure to include the prefix when running the previous command.
 
 ### Office 365 retention policies
 
 Run the following command in Security & Compliance Center PowerShell to identity the Office 365 retention policy (organization-wide or specific location) that's applied to the mailbox. Use the GUID (not including the mbx, skp, or grp prefix or the action suffix) that you identified in Step 1.
 
-```
+```powershell
 Get-RetentionCompliancePolicy <hold GUID without prefix or suffix> -DistributionDetail  | FL Name,*Location
 ```
 
@@ -162,7 +163,7 @@ Whenever a user applies a retention label that's configured to retain content or
 
 To view the value of the *ComplianceTagHoldApplied* property, run the following command in Exchange Online PowerShell:
 
-```
+```powershell
 Get-Mailbox <username> |FL ComplianceTagHoldApplied
 ```
 
@@ -174,20 +175,21 @@ After any type of hold is removed from a mailbox, the value of the *DelayHoldApp
 
 To view the value for the *DelayHoldApplied* property for a mailbox, run the following command in Exchange Online PowerShell.
 
-```
+```powershell
 Get-Mailbox <username> | FL DelayHoldApplied
 ```
 
 To remove the delay hold before it expires, you can run the following command in Exchange Online PowerShell: 
  
-```
+```powershell
 Set-Mailbox <username> -RemoveDelayHoldApplied
 ```
+
 You must be assigned the Legal Hold role in Exchange Online to use the *RemoveDelayHoldApplied* parameter 
 
 To remove the delay hold on an inactive mailbox, run the following command in Exchange Online PowerShell:
 
-```
+```powershell
 Set-Mailbox <DN or Exchange GUID> -InactiveMailbox -RemoveDelayHoldApplied
 ```
 

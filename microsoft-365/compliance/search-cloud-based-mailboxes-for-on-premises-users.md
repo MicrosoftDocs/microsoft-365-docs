@@ -81,7 +81,7 @@ After the feature has been enabled, you can use Content Search in the Security &
     
 3. Create the keyword query and add conditions to the search query if necessary. To only search for Team chats data, you can add the following query in the **Keywords** box: 
     
-    ```
+    ```text
     kind:im
     ``` 
 
@@ -107,15 +107,15 @@ You can use the **New-ComplianceSearch** and **Set-ComplianceSearch** cmdlets in
     
 2. Run the following PowerShell command to create a content search that searches the cloud-based mailboxes of on-premises users.
     
-    ```
+    ```powershell
     New-ComplianceSearch <name of new search> -ContentMatchQuery <search query> -ExchangeLocation <on-premises user> -IncludeUserAppContent $true -AllowNotFoundExchangeLocationsEnabled $true  
     ```
-   
+
     The  *IncludeUserAppContent*  parameter is used to specify the cloud-based mailbox for the user or users who are specified by the  *ExchangeLocation*  parameter. The  *AllowNotFoundExchangeLocationsEnabled*  allows cloud-based mailboxes for on-premises users. When you use the `$true` value for this parameter, the search doesn't try to validate the existence of the mailbox before it runs. This is required to search the cloud-based mailboxes for on-premises users because these types of mailboxes don't resolve as regular mailboxes. 
     
     The following example searches for Teams chats (which are instant messages) that contain keyword "redstone" in the cloud-based mailbox of Sara Davis, who is an on-premises user in the Contoso organization.
   
-    ```
+    ```powershell
     New-ComplianceSearch "Redstone_Search" -ContentMatchQuery "redstone AND kind:im" -ExchangeLocation sarad@contoso.com -IncludeUserAppContent $true -AllowNotFoundExchangeLocationsEnabled $true  
     ```
 
