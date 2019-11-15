@@ -92,7 +92,7 @@ You can also complete these steps on the Devices page:
     
 3. In the **Add policy** pane give the policy a name, and then choose a **Policy type** from the drop-down. 
     
-    You can set up application policies to protect files on Android, iPhone, and Windows 10 devices. You can set up device configuration policies for company-owned Windows 10 devices. See the following links for details:
+     You can set up application policies for protecting files on Android and iPhone devices, as well as Windows 10, and you can set up device configuration policies for company owned Windows 10 devices. See the following links for details:
     
   - [Set app protection settings for Android or iOS devices](app-protection-settings-for-android-and-ios.md)
     

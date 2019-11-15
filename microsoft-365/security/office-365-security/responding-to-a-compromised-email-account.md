@@ -1,7 +1,7 @@
 ---
 title: "Responding to a Compromised Email Account in Office 365"
-ms.author: dansimp
-author: dansimp
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: article
