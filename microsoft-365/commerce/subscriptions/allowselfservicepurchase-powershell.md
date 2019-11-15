@@ -60,7 +60,7 @@ To connect to the PowerShell module with your credentials, run the following com
 Connect-MSCommerce
 ```
 
-This command connects the current PowerShell session to an Azure Active Directory tenant. The command prompts you for a username and password for the tenant you want to connect to. If multi-factor authentication is enabled for your credentials, you must log in using the interactive option.
+This command connects the current PowerShell session to an Azure Active Directory tenant. The command prompts you for a username and password for the tenant you want to connect to. If multi-factor authentication is enabled for your credentials, you use the interactive option to log in.
 
 ## View details for AllowSelfServicePurchase
 
@@ -110,7 +110,7 @@ Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId CFQ
 
 ## Example script to disable AllowSelfServicePurchase
 
-The following example walks you through importing the **MSCommerce** module, signing in with your account, getting the **ProductId** for Power Automate, and then disabling **AllowSelfServicePurchase** for that product.
+The following example walks you through how to import the **MSCommerce** module, sign in with your account, get the **ProductId** for Power Automate, and then disable **AllowSelfServicePurchase** for that product.
 
 ```powershell
 Import-Module -Name MSCommerce
