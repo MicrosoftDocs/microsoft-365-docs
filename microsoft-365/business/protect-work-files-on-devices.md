@@ -29,14 +29,12 @@ description: "Learn about default configuration and adding application managemen
 
 # Protect work files on devices
 
-In today's world, users are tied to their devices, and as personal and work life collides, your company data can end up on an employee's personal device. The settings that you configure here can help you take back control and provide protection for work files, without affecting any of the user's personal settings or data.
+In today's world, users are tied to their devices, and as personal and work life collide, your company data can end up on an employee's personal device. The settings that you configure here can help you take back control and provide protection for work files, without affecting any of the user's personal settings or data.
   
 ## Configuring policies during setup
 
-During setup, three application management policies are added, one each for Android, iOS, and Windows 10. Each policy will have the same settings and they will apply to all users. The policies are activated when the user connects their work account to their mobile phone.
+During setup, three application management policies are added, one each for Android, iOS, and Windows 10. Each policy has the same settings and they apply to all users. The policies are activated when the user connects their work account to their mobile phone.
   
 We recommend that you accept the default configuration during setup. After setup completes, you can add more policies that let you fine-tune the configuration and let you apply varying levels of control for specific user groups.
   
 To add policies after setup, see [Manage policies and devices in the admin center](manage.md).
-  
-
