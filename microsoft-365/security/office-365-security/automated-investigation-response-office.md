@@ -1,5 +1,5 @@
 ---
-title: "Automated investigation and response (AIR) in Office 365"
+title: "Automated incident response (AIR) in Office 365"
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 ms.collection: M365-security-compliance
-description: "Learn about Automated Investigation and Response capabilities in Office 365 Advanced Threat Protection."
+description: "Get an overview of automated investigation and response capabilities in Office 365 Advanced Threat Protection Plan 2."
 ---
 
-# Automated investigation and response (AIR) in Office 365
+# Automated incident response (AIR) in Office 365
 
-Automated investigation and response (AIR) capabilities enable you to run automated investigation processes in response to well known threats that exist today. AIR can help your security operations team operate more efficiently and effectively.
+Automated incident response (AIR) capabilities enable you to run automated investigation processes in response to well known threats that exist today. AIR can help your security operations team operate more efficiently and effectively.
 - To get an overview how AIR works, use this article.
 - To get started using AIR, see [Automatically investigate and respond to threats in Office 365](office-365-air.md).
 
@@ -113,18 +113,21 @@ You can:
 - Export the data to a .csv file.
 
 The investigation status indicates the progress of the analysis and actions. As the investigation runs, status changes to indicate whether threats were found, and whether actions have been approved. 
-- **Starting**: The investigation is queued to begin soon
-- **Running**: The investigation has started and is conducting its analysis
-- **No Threats Found**: The investigation has completed its analysis and no threats were found
-- **Terminated By System**: The investigation was not closed and expired after 7 days
-- **Pending Action**: The investigation found threats with actions recommended
-- **Threats Found**: The investigation found threats, but the threats do not have actions available within AIR
-- **Remediated**: The investigation finished and was fully remediated (all actions were approved)
-- **Partially Remediated**: The investigation finished and some of the recommended actions were approved
-- **Terminated By User**: An admin terminated the investigation
-- **Failed**: An error occurred during the investigation that prevented it from reaching a conclusion on threats
-- **Queued By Throttling**: The investigation is waiting for analysis due to system processing limitations (to protect service performance)
-- **Terminated By Throttling**: The investigation could not be completed in sufficient time due to investigation volume and system processing limitations. You can re-trigger the investigation by selecting the email in Explorer and selecting the Investigate action.
+
+|Status  |What it means  |
+|---------|---------|
+|Starting | The investigation is queued to begin soon |
+|Running | The investigation has started and is conducting its analysis |
+|No Threats Found | The investigation has completed its analysis and no threats were found |
+|Terminated By System | The investigation was not closed and expired after 7 days |
+|Pending Action | The investigation found threats with actions recommended |
+|Threats Found | The investigation found threats, but the threats do not have actions available within AIR |
+|Remediated | The investigation finished and was fully remediated (all actions were approved) |
+|Partially Remediated | The investigation finished and some of the recommended actions were approved |
+|Terminated By User | An admin terminated the investigation |
+|Failed | An error occurred during the investigation that prevented it from reaching a conclusion on threats |
+|Queued By Throttling | The investigation is waiting for analysis due to system processing limitations (to protect service performance) |
+|Terminated By Throttling | The investigation could not be completed in sufficient time due to investigation volume and system processing limitations. You can re-trigger the investigation by selecting the email in Explorer and selecting the Investigate action. |
 
 ### Investigation graph
 
