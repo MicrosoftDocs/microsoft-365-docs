@@ -1,0 +1,115 @@
+### YamlMime:Hub
+
+title: Microsoft 365 Enterprise documentation and resources # < 60 chars
+summary: Learn how to plan, deploy, and use Microsoft Office 365, Windows 10, and Enterprise Mobility + Security together in your organization. # < 160 chars
+# brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-platform | sql | sql-server | vs | visual-studio | windows | xamarin
+brand: m365
+
+metadata:
+  title: Microsoft 365 Enterprise documentation and resources # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Learn about the product documentation and resources available for Microsoft 365 Enterprise IT admins, information workers, and partners. # Required; article description that is displayed in search results. < 160 chars.
+  services: service
+  ms.prod: microsoft-365-enterprise
+  ms.service: O365-seccomp #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.topic: hub-page # Required
+  ms.collection: M365-subscription-management
+  author: robmazz #Required; your GitHub user alias, with correct capitalization.
+  ms.author: robmazz #Required; microsoft alias of author; optional team alias.
+  ms.date: 11/15/2019 #Required; mm/dd/yyyy format.
+
+# highlightedContent section (optional)
+# Maximum of 8 items
+highlightedContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+  items:
+    # Card
+    - title: Deploy quickly with FastTrack
+      itemType: quickstart
+      url: https://www.microsoft.com/fasttrack/microsoft-365
+    # Card
+    - title: Training for admins and IT pros
+      itemType: learn
+      url: https://docs.microsoft.com/learn/m365/
+    # Card
+    - title: Microsoft 365 tech community
+      itemType: get-started
+      url: https://techcommunity.microsoft.com/t5/Microsoft-365/ct-p/microsoft365
+
+# conceptualContent section (optional)
+conceptualContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+  title: Get help with Microsoft 365 Enterprise and other resources # < 60 chars (optional)
+  summary: Select a card to learn more about Microsoft 365. # < 160 chars (optional)
+  items:
+    # Card
+    - title: Deploy Microsoft 365
+      links:
+        - url: deploy-microsoft-365-enterprise.md
+          itemType: deploy
+          text: Deploy Microsoft 365 Enterprise
+        - url: deploy-foundation-infrastructure.md
+          itemType: how-to-guide
+          text: Deploy foundational infrastructure
+        - url: m365-enterprise-test-lab-guides.md
+          itemType: how-to-guide
+          text: Test Lab Guides
+        - url: deploy-workloads.md
+          itemType: deploy
+          text: Deploy workloads
+    # Card
+    - title: Desktop Deployment Center
+      links:
+        - url: desktop-deployment-center-home.md
+          itemType: get-started
+          text: Get started with the deployment center
+        - url: step-1-device-and-app-readiness.md
+          itemType: deploy
+          text: Validate device and app readiness
+        - url: windows-7-to-windows-10-upgrade-automated.md
+          itemType: deploy
+          text: Upgrade Windows 7 PCs to Windows 10
+    # Card
+    - title: Enterprise Business Continuity Management
+      links:
+        - url: ebcm-understanding-ebcm-with-cloud-services.md
+          itemType: concept
+          text: Enterprise business continuity management (EBCM)
+        - url: ebcm-customer-and-cloud-partner-ebcm-responsibilities.md
+          itemType: reference
+          text: Partner responsibilities
+        - url: ebcm-developing-your-ebcm-plan.md
+          itemType: get-started
+          text: Developing your continuity plan
+    # Card
+    - title: Office 365 ProPlus
+      links:
+        - url: deployment-guide-for-office-365-proplus.md
+          itemType: get-started
+          text: Get started with ProPlus
+        - url: assess-office-365-proplus
+          itemType: deploy
+          text: Prepare
+        - url: overview-of-update-channels-for-office-365-proplus.md
+          itemType: how-to-guide
+          text: Manage
+
+# additionalContent section (optional)
+# Card with summary style
+additionalContent:
+  # Supports up to 3 sections
+  sections:
+    - title: Other Microsoft 365 resources # < 60 chars (optional)
+      summary: Learrn more about other Microsoft 365 features and services # < 160 chars (optional)
+      items:
+        # Card
+        - title: Microsoft 365 Compliance
+          summary: Help your organization govern information, protect against risks, and comply with legal or regulatory standards.
+          url: ./compliance/index.yml
+        # Card
+        - title: Microsoft 365 Security
+          summary: Learn about the robust security solutions and services in Microsoft 365 Security so that you can better protect your organization across attack surfaces.
+          url: ./security/index.yml
+        # Card
+        - title: Microsoft 365 for Campaigns
+          summary: Keep your campaign or business data and communications secure with this recommended configuration for Microsoft 365 Business.
+          url: ./campaigns/index.md
