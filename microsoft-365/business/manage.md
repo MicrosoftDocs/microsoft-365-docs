@@ -25,7 +25,7 @@ description: "Learn to manage Microsoft 365 Business related admin tasks, mobile
 
 ## General Microsoft 365 Business admin tasks
 
-Most of the [admin content](/Office365/Admin/admin-home.md) for Office 365 for business also applies to Microsoft 365 Business.
+Most of the [admin content](https://docs.microsoft.com/office365/admin/admin-home) for Office 365 for business also applies to Microsoft 365 Business.
 
 - [Add more users to Microsoft 365 Business](add-users-m365b.md)
     
@@ -50,9 +50,7 @@ See the following sections on how to use Microsoft 365 Business to protect your 
 ## Manage Windows 10 PCs
 
 - [Set up Windows devices for Microsoft 365 Business users](set-up-windows-devices.md)
-    
-- [Automatically install or uninstall Office on Windows 10 devices](auto-install-or-uninstall-office.md)
-    
+
     Read [Prepare for Office client deployment by Microsoft 365 Business](prepare-for-office-client-deployment.md) before you auto-install Office. 
     
 - [Set device protection settings for Windows 10 devices](protection-settings-for-windows-10-pcs.md)
