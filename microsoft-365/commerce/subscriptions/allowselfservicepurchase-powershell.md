@@ -98,11 +98,11 @@ To disable the policy setting for a specific product, run the following command:
 ```powershell
 Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId CFQ7TTC0KP0N -Enabled $False
 ```
-
+<!--
 ## Uninstall the MSStore Module
 
 To remove the **MSCommerce** PowerShell module from your computer, use the following PowerShell command:
 
 ```powershell
 Get-InstalledModule -Name "MSCommerce" -RequiredVersion 1.0 | Uninstall-Module
-```
+```-->
