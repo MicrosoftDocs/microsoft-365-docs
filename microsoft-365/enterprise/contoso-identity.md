@@ -18,8 +18,6 @@ description: How Contoso takes advantage of Identity as a Service (IDaaS) and pr
 
 # Identity for the Contoso Corporation
 
-**Summary:** How Contoso takes advantage of Identity as a Service (IDaaS) and provides cloud-based authentication for its employees and federated authentication for its partners and customers.
-
 Microsoft provides an Identity as a Service (IDaaS) across its cloud offerings with Azure Active Directory (Azure AD). To adopt Microsoft 365 Enterprise, Contoso's IDaaS solution had to leverage their on-premises identity provider and still include federated authentication with their existing trusted, third-party identity providers.
 
 ## Contoso's Active Directory Domain Services forest

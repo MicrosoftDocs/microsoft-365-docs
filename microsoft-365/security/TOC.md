@@ -49,9 +49,6 @@
 #### [Give users access to the Security center](./office-365-security/grant-access-to-the-security-and-compliance-center.md)
 
 
-
-
-
 ### [Protect against threats](./office-365-security/protect-against-threats.md)
 #### [Anti-spam and anti-malware protection](./office-365-security/anti-spam-and-anti-malware-protection.md)
 ##### [Advanced spam filtering options](./office-365-security/advanced-spam-filtering-asf-options.md)
@@ -141,7 +138,6 @@
 ##### [View information about malicious files](./office-365-security/malicious-files-detected-in-spo-odb-or-teams.md)
 
 
-
 ### [Advanced Threat Protection ](./office-365-security/office-365-atp.md)
 #### [See what's new]()
 ##### [What's new in Office 365 ATP](office-365-security/whats-new-in-office-365-atp.md)
@@ -182,6 +178,7 @@
 #### [Office 365 Security Incident Response](./office-365-security/office365-security-incident-response-overview.md)
 #### [Detect and Remediate Illicit Consent Grants in Office 365](./office-365-security/detect-and-remediate-illicit-consent-grants.md)
 #### [Detect and Remediate Outlook Rules and Custom Forms Injections Attacks in Office 365](./office-365-security/detect-and-remediate-outlook-rules-forms-attack.md)
+#### [Responding to a Compromised Email Account in Office 365](office-365-security/responding-to-a-compromised-email-account.md)
 
 ### [Mail flow]()
 #### [Enable the Report Message add-in](./office-365-security/enable-the-report-message-add-in.md)
