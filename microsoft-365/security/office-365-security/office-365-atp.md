@@ -31,7 +31,7 @@ Office 365 Advanced Threat Protection (ATP) safeguards your organization against
 
 - [Threat investigation and response capabilities](#use-threat-investigation-and-response-capabilities): Use leading-edge tools to investigate, understand, simulate, and prevent threats. 
 
-- [Automated investigation and response capabilities](#save-time-with-automated-investigation-and-response): Save time and effort investigating and mitigating threats.
+- [Automated incident response capabilities](#save-time-with-automated-incident-response): Save time and effort investigating and mitigating threats.
 
 ## Office 365 ATP Plan 1 and Plan 2
 
