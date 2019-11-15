@@ -52,10 +52,10 @@ conceptualContent:
           text: Deploy foundational infrastructure
         - url: m365-enterprise-test-lab-guides.md
           itemType: how-to-guide
-          text: Test Lab Guides
+          text: Set up a Microsoft 365 test environment
         - url: deploy-workloads.md
           itemType: deploy
-          text: Deploy workloads
+          text: Deploy workloads and scenarios
     # Card
     - title: Desktop Deployment Center
       links:
@@ -76,10 +76,10 @@ conceptualContent:
           text: Enterprise business continuity management (EBCM)
         - url: ebcm-customer-and-cloud-partner-ebcm-responsibilities.md
           itemType: reference
-          text: Partner responsibilities
+          text: Laern about partner responsibilities
         - url: ebcm-developing-your-ebcm-plan.md
           itemType: get-started
-          text: Developing your continuity plan
+          text: Develop your continuity plan
     # Card
     - title: Office 365 ProPlus
       links:
