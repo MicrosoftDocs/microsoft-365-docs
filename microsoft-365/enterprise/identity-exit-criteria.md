@@ -37,7 +37,7 @@ If needed, [Step 1](identity-create-protect-global-admins.md#identity-global-adm
 Use these steps to verify that you've protected your global administrator accounts:
 
 1. Run the following Azure Active Directory PowerShell for Graph command at the PowerShell command prompt. You should see only the list of dedicated global administrator accounts.
-   ```
+   ```powershell
    Get-AzureADDirectoryRole | where { $_.DisplayName -eq "Company Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
    ```
 2. Sign in to Office 365 using each of the accounts from step 1. Each sign in must require Azure Multi-Factor Authentication and the strongest form of secondary authentication available in your organization.

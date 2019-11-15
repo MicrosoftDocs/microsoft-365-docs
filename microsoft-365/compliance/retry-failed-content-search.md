@@ -19,7 +19,7 @@ description: "Use the Retry button for resolve Content Searches that have conten
 
 When you use Content Search in the security and compliance center to search a large number of mailboxes, you may get search errors that are similar to the following:
 
-```
+```text
 Error
 
 The search on the following locations failed:
