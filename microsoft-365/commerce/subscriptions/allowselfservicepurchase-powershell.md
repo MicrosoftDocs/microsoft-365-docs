@@ -77,10 +77,10 @@ To view a list of all available self-service purchase products and the status of
 Get-MSCommerceProductPolicies -PolicyId AllowSelfServicePurchase
 ```
 
-The following table lists the supported products and their **ProductID**.
+The following table lists the supported products and their **ProductId**.
 
-| Product | ProductID |
-| :----: | :----: |
+| Product | ProductId |
+|-----------------------------|--------------|
 | Microsoft Automate Per User | CFQ7TTC0KP0N |
 | Power Apps Per User | CFQ7TTC0KP0P |
 | Power BI Pro | CFQ7TTC0L3PB |
