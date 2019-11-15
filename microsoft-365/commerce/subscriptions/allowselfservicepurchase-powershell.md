@@ -17,12 +17,12 @@ description: "Learn how to use the AllowSelfServicePurchase PowerShell cmdlet to
 
 # Use AllowSelfServicePurchase for the MSCommerce PowerShell module
 
-The **MSCommerce** PowerShell module is now available on [PowerShell Gallery](https://go.microsoft.com/fwlink/?linkid=).
+The **MSCommerce** PowerShell module is now available on [PowerShell Gallery](https://go.microsoft.com/fwlink/?linkid=). The module includes a **PolicyID** parameter value for **AllowSelfServicePurchase** that lets you control whether users in your organization can make self-service purchases.
 
 You can use the **MSCommerce** PowerShell module to:
 
-- View the default state of the **AllowSelfServicePurchase** policy — whether it's enabled or disabled
-- View a list of applicable products and their current settings
+- View the default state of the **AllowSelfServicePurchase** parameter — whether it's enabled or disabled
+- View a list of applicable products and whether self-service purchase is enabled or disabled
 - View or modify the current setting for a specific product to either enable or disable it
 
 ## Requirements
@@ -31,7 +31,7 @@ To use the **MSCommerce** PowerShell module, you need:
 
 - A Windows 10 device
 - Administrator permission for the device
-- Global or Billing Admin role for Microsoft 365 admin center
+- Global or Billing Admin role for your tenant
 
 ## Install the MSCommerce PowerShell module
 
@@ -59,11 +59,11 @@ To connect to the PowerShell module with your credentials, run the following com
 Connect-MSCommerce
 ```
 
-You're prompted to sign in with your account and then to authorize the PowerShell Module to access your Microsoft 365 admin center account. After the module is imported into the current PowerShell session and authorized to call into your Microsoft 365 admin center account, the **MSCommerce** PowerShell cmdlets are loaded and ready to use.
+This command connects the current PowerShell session to an Azure Active Directory tenant. The command prompts you for a username and password for the tenant you want to connect to. If multi-factor authentication is enabled for your credentials, you must log in using the interactive option or use service principal authentication.
 
 ## View details for AllowSelfServicePurchase
 
-To view a description of the **AllowSelfServicePurchase** policy and the default status, based on your organization, run the following command:
+To view a description of the **AllowSelfServicePurchase** parameter value and the default status, based on your organization, run the following command:
 
 ```powershell
 Get-MSCommercePolicy -PolicyId AllowSelfServicePurchase
