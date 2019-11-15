@@ -24,12 +24,6 @@ Automated incident response (AIR) capabilities enable you to run automated inves
 > [!NOTE]
 > You must be a global administrator, security administrator, security operator, or security reader to access AIR capabilities. To learn more about these permissions, see [Microsoft 365 security center: roles and permissions](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions).
 
-AIR is included in the following subscriptions:
-- Microsoft 365 E5
-- Microsoft 365 E5 Security
-- Office 365 E5
-- Office 365 Advanced Threat Protection Plan 2
-
 ## The overall flow of AIR
 
 At a high level, the AIR flow works like this:
@@ -317,3 +311,4 @@ To learn more about feature availability, visit the [Feature availability across
 [Learn about AIR in Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations) 
 
 [Visit the Microsoft 365 Roadmap to see what's coming soon and rolling out](https://www.microsoft.com/microsoft-365/roadmap?filters=)
+
