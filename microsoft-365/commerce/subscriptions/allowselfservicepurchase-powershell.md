@@ -111,7 +111,7 @@ Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId CFQ
 
 Before you uninstall the MSCommerce module, close your current PowerShell session, then open a new session with admin rights.
 
-To remove the **MSCommerce** PowerShell module from your computer, use the following command:
+To remove the **MSCommerce** PowerShell module from your computer, run the following command:
 
 ```powershell
 Uninstall-Module -Name MSCommerce
