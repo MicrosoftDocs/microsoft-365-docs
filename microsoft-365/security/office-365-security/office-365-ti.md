@@ -3,7 +3,7 @@ title: "Office 365 threat investigation and response"
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 08/23/2019
+ms.date: 11/15/2019
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
