@@ -17,7 +17,7 @@ description: "Learn how to use the AllowSelfServicePurchase PowerShell cmdlet to
 
 # Use AllowSelfServicePurchase for the MSCommerce PowerShell module
 
-The **MSCommerce** PowerShell module is now available on [PowerShell Gallery](https://go.microsoft.com/fwlink/?linkid=). The module includes a **PolicyID** parameter value for **AllowSelfServicePurchase** that lets you control whether users in your organization can make self-service purchases.
+The **MSCommerce** PowerShell module is now available on [PowerShell Gallery](https://aka.ms/allowselfservicepurchase-powershell-gallery). The module includes a **PolicyID** parameter value for **AllowSelfServicePurchase** that lets you control whether users in your organization can make self-service purchases.
 
 You can use the **MSCommerce** PowerShell module to:
 
@@ -35,7 +35,7 @@ To use the **MSCommerce** PowerShell module, you need:
 
 ## Install the MSCommerce PowerShell module
 
-You install the **MSCommerce** PowerShell module on your Windows 10 device once and then import it into each PowerShell session you start. Download the **MSCommerce** PowerShell module from the [PowerShell Gallery](https://go.microsoft.com/fwlink/?linkid=).
+You install the **MSCommerce** PowerShell module on your Windows 10 device once and then import it into each PowerShell session you start. Download the **MSCommerce** PowerShell module from the [PowerShell Gallery](https://aka.ms/allowselfservicepurchase-powershell-gallery).
 
 To install the **MSCommerce** PowerShell module with **PowerShellGet**, run the following command:
 
@@ -59,7 +59,7 @@ To connect to the PowerShell module with your credentials, run the following com
 Connect-MSCommerce
 ```
 
-This command connects the current PowerShell session to an Azure Active Directory tenant. The command prompts you for a username and password for the tenant you want to connect to. If multi-factor authentication is enabled for your credentials, you must log in using the interactive option or use service principal authentication.
+This command connects the current PowerShell session to an Azure Active Directory tenant. The command prompts you for a username and password for the tenant you want to connect to. If multi-factor authentication is enabled for your credentials, you must log in using the interactive option.
 
 ## View details for AllowSelfServicePurchase
 
