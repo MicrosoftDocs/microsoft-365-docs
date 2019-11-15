@@ -23,7 +23,7 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
   items:
     # Card
-    - title: Deploy quickly with FastTrack
+    - title: Accelerate your deployment with FastTrack
       itemType: quickstart
       url: https://www.microsoft.com/fasttrack/microsoft-365
     # Card
@@ -42,7 +42,7 @@ conceptualContent:
   summary: Select a card to learn more about Microsoft 365. # < 160 chars (optional)
   items:
     # Card
-    - title: Deploy Microsoft 365
+    - title: Deploy Microsoft 365 Enterprise
       links:
         - url: deploy-microsoft-365-enterprise.md
           itemType: deploy
