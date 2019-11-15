@@ -69,7 +69,7 @@ To view a description of the **AllowSelfServicePurchase** parameter value and th
 Get-MSCommercePolicy -PolicyId AllowSelfServicePurchase
 ```
 
-## View list of self-service purchase products and their status
+## View a list of self-service purchase products and their status
 
 To view a list of all available self-service purchase products and the status of each, run the following command:
 
@@ -77,7 +77,7 @@ To view a list of all available self-service purchase products and the status of
 Get-MSCommerceProductPolicies -PolicyId AllowSelfServicePurchase
 ```
 
-The following table lists the supported products and their **ProductId**.
+The following table lists the available products and their **ProductId**.
 
 | Product | ProductId |
 |-----------------------------|--------------|
