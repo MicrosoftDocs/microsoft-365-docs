@@ -54,6 +54,9 @@ Need to find if a user viewed a specific document or purged an item from their m
 
 - User and admin activity in Microsoft PowerApps
 
+  > [!NOTE]
+  >You may see some audited activities available in the Security and Compliance Center Audit log search UI that are not yet functional (such as Forms events). Until the these classifications of events are present in the above named list, they should not be expected to present functionality and should not be used in a production environment.
+
 ## Before you begin
 
 Be sure to read the following items before you start searching the Office 365 audit log.
