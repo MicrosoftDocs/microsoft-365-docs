@@ -16,7 +16,7 @@ description: Use this Test Lab Guide to add Intune device compliance policies to
 
 # Device compliance policies for your Microsoft 365 Enterprise test environment
 
-*This Test Lab Guide can be only used with a Microsoft 365 Enterprise test environment.*
+*This Test Lab Guide can only be used for Microsoft 365 Enterprise test environments.*
 
 With the instructions in this article, you add an Intune device compliance policy to your Microsoft 365 Enterprise test environment.
 
