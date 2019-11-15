@@ -23,13 +23,13 @@ description: "Read this article to get an overview of SIEM server integration wi
 If your organization is using a Security Information and Event Management (SIEM) server, or if you are planning to get a SIEM server soon, you might be wondering how that'll integrate with your Microsoft 365, including Office 365 E5. This article provides a list of resources you can use to set up SIEM server integration with Microsoft 365 services and applications.
 
 > [!TIP]
-> If you don't have a SIEM server yet but are exploring your options, consider [Microsoft Azure Sentinel](https://docs.microsoft.com/azure/sentinel/overview).
+> If you don't have a SIEM server yet and are exploring your options, consider [Microsoft Azure Sentinel](https://docs.microsoft.com/azure/sentinel/overview).
 
 ## Do I need a SIEM server?
 
 Whether you need a SIEM server depends on many factors, such as your organization's security requirements and where your data resides. Microsoft 365 offers a wide variety of security features that meet many organizations' security needs without additional servers, such as a SIEM server. Here are some example scenarios where organizations use SIEM servers:
-- Fabrikam has content and applications both on premises and in the cloud (Fabrikam has a hybrid cloud deployment), ), you might consider implementing a SIEM server for extra protection. 
-- Or, if your organization has particularly stringent security requirements you must meet, you might consider adding a SIEM server to your environment.
+- Fabrikam has content and applications both on premises and in the cloud (Fabrikam has a hybrid cloud deployment). To get security reports across all their content and applications, Fabrikam has implemented a SIEM server. 
+- Contoso is a financial services organization that has particularly stringent security requirements. They have added a SIEM server to their environment to take advantage of extra security protection.
 
 ## SIEM server integration Microsoft 365
 
