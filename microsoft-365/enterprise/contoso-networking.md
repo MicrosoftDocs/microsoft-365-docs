@@ -18,8 +18,6 @@ description: Understand the Contoso networking infrastructure and how it uses it
 
 # Networking for the Contoso Corporation
 
-**Summary:** Understand the Contoso networking infrastructure and how it uses its SD-WAN technology for optimal networking performance to Microsoft 365 Enterprise cloud services.
-
 To adopt a cloud-inclusive infrastructure, Contoso's network engineers realized the fundamental shift in the way that network traffic to cloud services travels. Instead of an internal hub and spoke model that focusses network connectivity and traffic for the next level of the Contoso office hierarchy, they worked to map user locations to local Internet egress and local connections to the closest Microsoft 365 network location on the Internet.
 
 ## Contoso's networking infrastructure
