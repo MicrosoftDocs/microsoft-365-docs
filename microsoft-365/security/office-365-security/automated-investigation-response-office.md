@@ -3,7 +3,7 @@ title: "Automated incident response (AIR) in Office 365"
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 10/03/2019
+ms.date: 11/15/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -114,6 +114,7 @@ You can:
 
 The investigation status indicates the progress of the analysis and actions. As the investigation runs, status changes to indicate whether threats were found, and whether actions have been approved. 
 
+
 |Status  |What it means  |
 |---------|---------|
 |Starting | The investigation is queued to begin soon |
@@ -187,7 +188,8 @@ You can:
 
 ![AIR investigation email with flyout details](../media/air-investigationemailpageflyoutdetails.png)
 
-*Note: In the context of email, you may see a volume anomaly threat surface as part of the investigation. A volume anomaly indicates a spike in similar email messages around the investigation event time compared to earlier timeframes. This spike in email traffic with similar characteristics (e.g. subject and sender domain, body similarity and sender IP) is typical of the start of email campaigns or attacks. However, bulk, spam, and legitimate email campaigns commonly share these characteristics. Volume anomalies represent a potential threat, and accordingly could be less severe compared to malware or phish threats that are identified using anti-virus engines, detonation or malicious reputation.
+> [!NOTE]
+> In the context of email, you may see a volume anomaly threat surface as part of the investigation. A volume anomaly indicates a spike in similar email messages around the investigation event time compared to earlier timeframes. This spike in email traffic with similar characteristics (e.g. subject and sender domain, body similarity and sender IP) is typical of the start of email campaigns or attacks. However, bulk, spam, and legitimate email campaigns commonly share these characteristics. Volume anomalies represent a potential threat, and accordingly could be less severe compared to malware or phish threats that are identified using anti-virus engines, detonation or malicious reputation.
 
 ### User investigation
 
@@ -297,10 +299,10 @@ Similar to playbooks triggered by an alert, automatic investigations that are tr
 
 ## How to get AIR
 
-Office 365 AIR are included in the following subscriptions:
+Office 365 AIR is included in the following subscriptions:
 
-- Microsoft 365 Enterprise E5
-- Office 365 Enterprise E5
+- Microsoft 365 E5
+- Office 365 E5
 - Microsoft Threat Protection
 - Office 365 Advanced Threat Protection Plan 2
 
