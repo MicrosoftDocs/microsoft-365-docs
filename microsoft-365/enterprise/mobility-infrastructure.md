@@ -58,7 +58,7 @@ This step focuses on setting up Intune and getting it ready for you to manage yo
 
 3. **[Sign in to Intune](https://docs.microsoft.com/intune/account-sign-up)**. When you sign in, you may be prompted to enter information about your organization. Intune is included with Microsoft 365, and can be opened directly from the [Microsoft 365 admin center](https://admin.microsoft.com). You can also open Intune directly from the [Azure portal](https://portal.azure.com).
 
-4. **[Choose your mobile device management configuration](https://docs.microsoft.com/intune/mdm-authority-set)**. The first time you use Intune, you must enable device management. Intune can be used as a cloud-only service, a hybrid with Intune and System Center Configuration Manager, or using Mobile Device Management for Office 365. You can choose which setup works best for your organization.
+4. **[Choose your mobile device management configuration](https://docs.microsoft.com/intune/mdm-authority-set)**. The first time you use Intune, you must enable device management. Intune can be used as a cloud-only service, a hybrid with Intune and Microsoft Endpoint Configuration Manager, or using Mobile Device Management for Office 365. You can choose which setup works best for your organization.
 
 5. **[Add users](https://docs.microsoft.com/intune/users-add)** and **[add groups](https://docs.microsoft.com/intune/groups-add)**. 
 

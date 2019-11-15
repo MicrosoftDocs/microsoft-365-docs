@@ -1,7 +1,7 @@
 ---
 title: Deploy Windows 10 Enterprise for existing devices as an in-place upgrade
-description: Provides guidance on configuring and deploying a Windows 10 Enterprise image using System Center Configuration Manager as an in-place upgrade.
-keywords: Microsoft 365, Microsoft 365 Enterprise, Microsoft 365 documentation, Windows 10 Enterprise, deployment, in-place upgrade, Configuration Manager, System Center Configuration Manager
+description: Provides guidance on configuring and deploying a Windows 10 Enterprise image using Microsoft Endpoint Configuration Manager as an in-place upgrade.
+keywords: Microsoft 365, Microsoft 365 Enterprise, Microsoft 365 documentation, Windows 10 Enterprise, deployment, in-place upgrade, Configuration Manager, Configuration Manager
 author: greg-lindsay
 localization_priority: Normal
 ms.collection: M365-modern-desktop
@@ -18,13 +18,13 @@ ms.author: greglin
 
 ![Phase 3: Windows 10 Enterprise](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
 
-The simplest path to upgrade PCs currently running Windows 7 or Windows 8.1 to Windows 10 is through an in-place upgrade. You can use a System Center Configuration Manager (Configuration Manager) task sequence to completely automate the process. 
+The simplest path to upgrade PCs currently running Windows 7 or Windows 8.1 to Windows 10 is through an in-place upgrade. You can use a Configuration Manager (Configuration Manager) task sequence to completely automate the process. 
 
 If you have existing computers running Windows 7 or Windows 8.1, we recommend this path if your organization is deploying Windows 10. This leverages the Windows installation program (Setup.exe) to perform an in-place upgrade, which automatically preserves all data, settings, applications, and drivers from the existing operating system version. This requires the least IT effort, because there is no need for any complex deployment infrastructure.
 
 Follow these steps to configure and deploy a Windows 10 Enterprise image using Configuration Manager as an in-place upgrade.
 
-## The Windows 10 deployment with System Center Configuration Manager poster
+## The Windows 10 deployment with Configuration Manager poster
 
 The Configuration Manager poster is one page in landscape mode (17x11). Click the image below to view a PDF in your browser. 
 
@@ -38,9 +38,9 @@ First, use the Upgrade Readiness capability of Windows Analytics to provide powe
 
 See [Manage Windows upgrades with Upgrade Readiness](https://docs.microsoft.com/windows/deployment/upgrade/manage-windows-upgrades-with-upgrade-readiness) to learn more, get started, use, and troubleshoot Upgrade Readiness.
 
-Next, follow the guide to use System Center Configuration Manager (Current Branch) to upgrade Windows 7 or later operating system to Windows 10. As with any high-risk deployment, we recommend backing up user data before proceeding. OneDrive cloud storage is ready to use for licensed Microsoft 365 users and can be used to securely store their files. For more info, see [OneDrive quick start guide](https://aka.ms/ODfBquickstartguide). To access this page, you must sign in as a tenant admin or global admin in an Office 365 or Microsoft 365 tenant.
+Next, follow the guide to use Configuration Manager (Current Branch) to upgrade Windows 7 or later operating system to Windows 10. As with any high-risk deployment, we recommend backing up user data before proceeding. OneDrive cloud storage is ready to use for licensed Microsoft 365 users and can be used to securely store their files. For more info, see [OneDrive quick start guide](https://aka.ms/ODfBquickstartguide). To access this page, you must sign in as a tenant admin or global admin in an Office 365 or Microsoft 365 tenant.
 
-For a list of Configuration Manager versions and the corresponding Windows 10 client versions that are supported, see [Support for Windows 10 for System Center Configuration Manager](https://aka.ms/supportforwin10sccm).
+For a list of Configuration Manager versions and the corresponding Windows 10 client versions that are supported, see [Support for Windows 10 for Configuration Manager](https://aka.ms/supportforwin10sccm).
 
 **To verify readiness to upgrade Windows**
 
@@ -53,12 +53,12 @@ Review these requirements before starting your Windows 10 deployment:
     - Backups of user data - Although user data will be migrated in the upgrade, best practice is to configure a backup scenario. For example, export all user data to a OneDrive account, BitLocker To Go-encrypted USB flash drive, or network file server. For more information, see [Back up or transfer data in Windows](https://aka.ms/backuptransferdatawindows).
 - **Environment preparation** - You will use an existing Configuration Manager server structure to prepare for operating system deployment. In addition to the base setup, the following configurations should be made in the Configuration Manager environment:
     1. [Extend the Active Directory Schema](https://aka.ms/extendadschema) and [create a System Management container](https://aka.ms/createsysmancontainer).
-    2. Enable Active Directory Forest Discovery and Active Directory System Discovery. For more info, see [Configure discovery methods for System Center Configuration Manager](https://aka.ms/configurediscoverymethods).
-    3. Create IP range boundaries and boundary group for content and site assignment. For more info, see [Define site boundaries and boundary groups for System Center Configuration Manager](https://aka.ms/definesiteboundaries).
+    2. Enable Active Directory Forest Discovery and Active Directory System Discovery. For more info, see [Configure discovery methods for Configuration Manager](https://aka.ms/configurediscoverymethods).
+    3. Create IP range boundaries and boundary group for content and site assignment. For more info, see [Define site boundaries and boundary groups for Configuration Manager](https://aka.ms/definesiteboundaries).
     4. Add and configure the Configuration Manager reporting services point role. For more info, see [Configuring Reporting in Configuration Manager](https://aka.ms/configurereporting).
     5. Create a file system folder structure for packages.
     6. Create a Configuration Manager console folder structure for packages.
-    7. Install System Center Configuration Manager (Current Branch) updates and any additional Windows 10 prerequisites.
+    7. Install Configuration Manager (Current Branch) updates and any additional Windows 10 prerequisites.
 
 ## Part 2: Add a Windows 10 OS image using Configuration Manager
 Now you'll need to create an operating system upgrade package that contains the full Windows 10 installation media. In the following steps, you’ll use Configuration Manager to create an upgrade package for Windows 10 Enterprise x64.
@@ -89,7 +89,7 @@ To create an upgrade task sequence, perform the following steps:
 After you create the upgrade task sequence, you'll need to create a collection that contains the devices you will upgrade.
 
 > [!NOTE]
-> Use the following settings to test the deployment on a single device. You can use different membership rules to include groups of devices when you are ready. For more info, see [How to create collections in System Center Configuration Manager](https://aka.ms/sccm-create-collections).
+> Use the following settings to test the deployment on a single device. You can use different membership rules to include groups of devices when you are ready. For more info, see [How to create collections in Configuration Manager](https://aka.ms/sccm-create-collections).
 
 1. In the Configuration Manager console, in the **Assets and Compliance** workspace, right-click **Device Collections**, and then select **Create Device Collection**. 
 2. In the Create Device Collection wizard, on the **General** page, enter the following settings and then select **Next**:

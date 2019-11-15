@@ -58,11 +58,11 @@ You can also use the **New-ComplianceSearch** cmdlet to search all mailboxes in 
   
 Here's an example of using PowerShell to search all mailboxes in your organization. The search query returns all messages sent between January 1, 2015 and June 30, 2015 and that contain the phrase "financial report" in the subject line. The first command creates the search, and the second command runs the search. 
   
-```
+```powershell
 New-ComplianceSearch -Name "Search All-Financial Report" -ExchangeLocation all -ContentMatchQuery 'sent>=01/01/2015 AND sent<=06/30/2015 AND subject:"financial report"'
 ```
 
-```
+```powershell
 Start-ComplianceSearch -Identity "Search All-Financial Report"
 ```
 
@@ -76,7 +76,7 @@ To help you create a Content Search with no more than 1,000 source mailboxes, fo
   
 1. Save the following text to a PowerShell script file by using a filename suffix of .ps1. For example, you could save it to a file named `SourceMailboxes.ps1`.
     
-  ```
+  ```powershell
   [CmdletBinding()]
   Param(
       [Parameter(Mandatory=$True,Position=1)]
@@ -108,7 +108,7 @@ To help you create a Content Search with no more than 1,000 source mailboxes, fo
 
 2. In Security & Compliance Center PowerShell, go to the folder where the script you created in the previous step is located, and then run the script; for example:
     
-    ```
+    ```powershell
     .\SourceMailboxes.ps1
     ```
 
@@ -124,7 +124,7 @@ The next step is to connect Windows PowerShell to both the Security & Compliance
   
 1. Save the following text to a Windows PowerShell script file by using a filename suffix of .ps1. For example, you could save it to a file named `ConnectEXO-CC.ps1`.
     
-    ```
+    ```powershell
     $UserCredential = Get-Credential
     $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.outlook.com/powershell-liveid -Credential $UserCredential -Authentication Basic -AllowRedirection
     Import-PSSession $Session -DisableNameChecking
@@ -135,7 +135,7 @@ The next step is to connect Windows PowerShell to both the Security & Compliance
 
 2. On your local computer, open Windows PowerShell, go to the folder where the script that you created in the previous step is located, and then run the script; for example:
     
-    ```
+    ```powershell
     .\ConnectEXO-CC.ps1
     ```
 
@@ -163,7 +163,7 @@ After you create the dual PowerShell session in Step 2, the next step is to run 
     
 1. Save the following text to a Windows PowerShell script file by using a filename suffix of ps1. For example, you could save it to a file named `CreateMBSearchFromComplianceSearch.ps1`.
     
-  ```
+  ```powershell
   [CmdletBinding()]
   Param(
       [Parameter(Mandatory=$True,Position=1)]
@@ -227,12 +227,11 @@ After you create the dual PowerShell session in Step 2, the next step is to run 
   {
   	New-MailboxSearch "$msPrefix$i" -SourceMailboxes $mailboxes -SearchQuery $query -EstimateOnly;
   }
-  
   ```
 
 2. In the Windows PowerShell session that you created in Step 2, go to the folder where the script that you created in the previous step is located, and then run the script; for example:
     
-    ```
+    ```powershell
     .\CreateMBSearchFromComplianceSearch.ps1
     ```
 
