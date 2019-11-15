@@ -3,7 +3,6 @@ title: "Best practices for EOP and Office 365 ATP security settings, recommendat
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 10/23/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -46,6 +45,32 @@ Anti-spam, anti-malware, and anti-phishing are features of EOP that can be confi
 |End user spam notification frequency|Enabled|Enabled|3 days|
 |Zero Hour auto purge|On|On|For both Spam and Phish ZAP|
 |MarkAsSpamBulkMail|On|On|This setting is only available in PowerShell|
+
+We recommended setting the following to **OFF** for both Standard and Strict levels:
+
+|Security feature name|
+|---------|
+|IncreaseScoreWithImageLinks|
+|IncreaseScoreWithNumericIps|
+|IncreaseScoreWithRedirectToOtherPort|
+|IncreaseScoreWithBizOrInfoUrls|
+|MarkAsSpamEmptyMessages|
+|MarkAsSpamJavaScriptInHtml|
+|MarkAsSpamFramesInHtml|
+|MarkAsSpamObjectTagsInHtml|
+|MarkAsSpamEmbedTagsInHtml|
+|MarkAsSpamFormTagsInHtml|
+|MarkAsSpamWebBugsInHtml|
+|MarkAsSpamSensitiveWordList|
+|MarkAsSpamFromAddressAuthFail|
+|MarkAsSpamNdrBackscatter|
+
+We recommended setting the following to **ON** for both Standard and Strict levels:
+
+|Security feature name|
+|---------|
+|MarkAsSpamSpfRecordHardFail|
+|MarkAsSpamBulkMail|
 
 #### Outbound spam filter policy
 
