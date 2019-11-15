@@ -24,7 +24,6 @@ This timeline reflects a sample deployment.
 
 ![trainable-classifier-timeline](media/trainable-classifier-deployment-timeline_version3.png)
 
-
 ## Seed content
 
 When you want a trainable classifier to independently and accurately identify an item as being in particular category of content, you first have to present it with many samples of the type of content that are in the category. This feeding of samples to the trainable classifier is known as *seeding*. Seed content is selected by a human and is judged to represent the category of content.
