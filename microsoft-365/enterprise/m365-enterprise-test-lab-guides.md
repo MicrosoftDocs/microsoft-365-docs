@@ -41,7 +41,7 @@ First, you create a test environment for [Microsoft 365 Enterprise](https://docs
 
 - Use the [simulated enterprise base configuration](simulated-ent-base-configuration-microsoft-365-enterprise.md) when you want to configure and demonstrate Microsoft 365 Enterprise features and capabilities in a hybrid cloud environment, which uses on-premises components such as an Active Directory Domain Services (AD DS) domain.
 
-You can also create test environments for Office 365 E5 by not adding the Microsoft 365 E5 license to your trial or production dev/test environment.
+You can also create test environments for Office 365 E5 by not adding the Microsoft 365 E5 license to your trial or production test environment.
     
 ## Identity
 
