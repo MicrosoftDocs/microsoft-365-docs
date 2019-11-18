@@ -75,7 +75,6 @@ If your organization uses Windows Server Active Directory on-premises, you can s
   
 If you retain a local Active Directory that contains some on-premises resources (such as file shares and printers), you can give your **Azure AD-joined devices** access to these resources by following the steps here: [Access on-premises resources from an Azure AD-joined device in Microsoft 365 Business](access-resources.md).
   
-After you have set up Windows 10 PCs, you can [automatically install Office](auto-install-or-uninstall-office.md) to the devices. 
   
 ## Contact support
 
