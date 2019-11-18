@@ -3,7 +3,7 @@ title: "Changes to Microsoft 365 Enterprise deployment content"
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 11/12/2019
+ms.date: 11/18/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -17,6 +17,16 @@ description: See the new content and changes to the content in the Microsoft 365
 ---
 
 # Changes to Microsoft 365 Enterprise deployment content
+
+## October 2019
+
+### New content 
+
+- [Migrate from Microsoft 365 Business to Microsoft 365 Enterprise E3](https://docs.microsoft.com/microsoft-365/business/migrate-from-microsoft-365-business-to-microsoft-365-enterprise)
+
+- [Team for a top-secret project of the Contoso Corporation](contoso-team-for-top-secret-project.md)
+
+  [![Team for a top-secret project of the Contoso Corporation](./media/contoso-team-for-highly-confidential-assets/final-config-example-file.png)](contoso-team-for-top-secret-project.md)
 
 ## October 2019
 
