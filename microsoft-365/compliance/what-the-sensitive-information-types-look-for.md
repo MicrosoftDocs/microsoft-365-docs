@@ -5533,7 +5533,7 @@ Combination of 18 letters and digits in the specified format
 18 letters and digits:
 - Five letters (not case sensitive) or the digit "9" in place of a letter 
 - One digit 
-- Five digits in the date format DDMMY for date of birth 
+- Five digits in the date format MMDDY for date of birth (7th character is incremented by 50 if driver is female, i.e. 51 to 62 instead of 01 to 12)
 - Two letters (not case sensitive) or the digit "9" in place of a letter 
 - Five digits
 

@@ -125,9 +125,7 @@ The following table lists the fields for each export template.
 |Set_order_inclusives_first  <br/> |Email  <br/> |Emails and attachments: counter chronological order (Inclusives first). Documents: pivots first and the rest by similarity score, descending.  <br/> |No  <br/> |Yes  <br/> |
 |Tagged_By  <br/> |Relevance  <br/> |User who tagged the file in Relevance for the specific issue.  <br/> |No  <br/> |Yes  <br/> |
 |Word_count  <br/> |Analyze  <br/> |Number of words in the document.  <br/> |No  <br/> |Yes  <br/> |
-|||||||||||
-||||||
-||||||
+|
    
 ## Related Topics
 

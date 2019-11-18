@@ -18,8 +18,6 @@ description: Understand how Contoso used Microsoft Endpoint Configuration Manage
 
 # Windows 10 Enterprise deployment for Contoso
 
-**Summary:** Understand how Contoso used Microsoft Endpoint Configuration Manager to deploy in-place upgrades for Windows 10 Enterprise.
-
 Prior to the wide rollout of Microsoft 365 Enterprise, Contoso had Windows-compatible PCs and devices running a mixture of Windows 7 (10%), Windows 8.1 (65%), and Windows 10 (25%). Contoso wanted to upgrade their PCs for Windows 10 Enterprise take advantage of advanced security and lowered IT overhead from automated deployments of updates. 
 
 After assessing their infrastructure and business needs, Contoso identified these key requirements for the deployment:

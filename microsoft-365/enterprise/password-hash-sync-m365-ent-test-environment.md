@@ -68,6 +68,8 @@ Notice how the testlab.\<your public domain name> is now:
      
 ## Phase 3: Install Azure AD Connect on APP1
 
+*This Test Lab Guide can be used for both Microsoft 365 Enterprise and Office 365 Enterprise test environments.*
+
 In this phase, you install and configure the Azure AD Connect tool on APP1, and then verify that it works.
   
 First, you install and configure Azure AD Connect on APP1.
