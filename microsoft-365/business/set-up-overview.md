@@ -65,7 +65,6 @@ Most of the set up steps can be done in the setup wizard, but the other options 
 
 ## Stes 4: Install Office 365 Business
 - You can automatically install Office in the Windows devices by using the [setup wizard](set-up.md#deploy-office-365-client-apps).
-- Automatically [install Office](auto-install-or-uninstall-office.md) from the admin center.
 - Let users [install Office apps](https://docs.microsoft.com/office365/admin/setup/install-applications) for Windows and devices.
      
 ## Advanced

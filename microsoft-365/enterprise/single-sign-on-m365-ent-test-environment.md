@@ -20,6 +20,8 @@ description: "Summary: Configure and test Azure AD Seamless Single Sign-on for y
 
 # Azure AD Seamless Single Sign-on for your Microsoft 365 test environment
 
+*This Test Lab Guide can be used for both Microsoft 365 Enterprise and Office 365 Enterprise test environments.*
+
 Azure AD Seamless Single Sign-On (SSO) automatically signs in users when they are on their PCs or devices that are connected to their organization network. Azure AD Seamless SSO provides users with easy access to cloud-based applications without needing any additional on-premises components.
 
 This article describes how you can configure your Microsoft 365 test environment for Azure AD Seamless SSO.

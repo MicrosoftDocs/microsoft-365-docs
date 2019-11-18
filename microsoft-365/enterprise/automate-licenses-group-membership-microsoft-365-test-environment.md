@@ -17,6 +17,8 @@ description: "Configure group-based licensing and dynamic group membership in yo
 
 # Automate licensing and group membership for your Microsoft 365 Enterprise test environment
 
+*This Test Lab Guide can only be used for Microsoft 365 Enterprise test environments.*
+
 Group-based licensing automatically assigns or removes licenses for a user account based on group membership. Dynamic group membership adds or removes members to a group based on user account properties, such as Department or Country. This article steps you through a demonstration of both in your Microsoft 365 Enterprise test environment.
 
 There are two phases to setting up auto-licensing and dynamic group membership in your Microsoft 365 Enterprise test environment:
