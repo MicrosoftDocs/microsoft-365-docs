@@ -3,7 +3,7 @@ title: "SharePoint site for highly confidential digital assets of the Contoso Co
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 10/04/2019
+ms.date: 11/18/2019
 audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -50,7 +50,7 @@ Next, they created a new Office 365 DLP policy named **Research** that:
 
 For the configuration details, see [Protect SharePoint files with retention labels and DLP](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-office-365-labels-and-dlp).
 
-## Step 4: Created an Office 365 sensitivity sublabel for the site
+## Step 3: Created an Office 365 sensitivity sublabel for the site
 
 Contoso admins created a new Office 365 sensitivity sublabel named **Research Teams** of the **Highly Confidential** label that:
 
@@ -73,11 +73,11 @@ Here is an example of a file stored in the **Research** site with the **Research
 ![The resulting configuration of the Research team site for highly confidential assets](./media/contoso-sharepoint-online-site-for-highly-confidential-assets/final-config-example-file.png)
 
 
-## Step 5: Migrated the on-premises SharePoint research data
+## Step 4: Migrated the on-premises SharePoint research data
 
 Contoso admins moved all of the on-premises research files in the on-premises SharePoint Server 2016 site to folders in the new **Research** SharePoint site.
 
-## Step 6: Trained their researchers
+## Step 5: Trained their researchers
 
 Contoso security staff trained the members of the **Research** Office 365 group in a mandatory course that stepped them through:
 
