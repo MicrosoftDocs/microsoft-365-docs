@@ -13,12 +13,10 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom:
 
-description: Understand how Contoso uses System Center Configuration Manager to deploy Office 365 ProPlus.
+description: Understand how Contoso uses Microsoft Endpoint Configuration Manager to deploy Office 365 ProPlus.
 ---
 
 # Office 365 ProPlus deployment for Contoso
-
-**Summary:** Understand how Contoso uses System Center Configuration Manager to deploy Office 365 ProPlus.
 
 Contoso upgraded their PCs to Windows 10 Enterprise and Office 365 ProPlus to enable more effective collaboration, better security, and a more modern desktop experience. After assessing their infrastructure and business needs, Contoso identified these key requirements for the deployment:
 
@@ -29,7 +27,7 @@ Contoso upgraded their PCs to Windows 10 Enterprise and Office 365 ProPlus to en
 
 ## Deployment tools
 
-Based on their requirements, Contoso chose to deploy Windows 10 Enterprise and Office 365 ProPlus with System Center Configuration Manager (Current Branch). Configuration Manager scales for large environments and provides extensive control over installation, updates, and settings. It also has built-in features to make it easier and more efficient to deploy and manage Office, including:
+Based on their requirements, Contoso chose to deploy Windows 10 Enterprise and Office 365 ProPlus with Configuration Manager (Current Branch). Configuration Manager scales for large environments and provides extensive control over installation, updates, and settings. It also has built-in features to make it easier and more efficient to deploy and manage Office, including:
 
 - Peer cache, which can help with limited network capacity when deploying to devices in remote locations
 - The Office Client Management dashboard, which makes it easy to deploy Office and monitor updates and gives administrators access to the latest deployment and management features

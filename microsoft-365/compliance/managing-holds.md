@@ -8,7 +8,9 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: M365-security-compliance 
+ms.collection: 
+- M365-security-compliance
+- SPO_Content
 search.appverid: 
 - MOE150
 - MET150
@@ -23,7 +25,7 @@ You can use an Advanced eDiscovery case to create holds to preserve content that
 
 ## Manage custodian-based holds
 
-In some cases, you may have a set of data custodians that you have identified and choosen to preserve. In Advanced eDiscovery, when these custodians are placed on hold, the user and their selected data sources are automatically added to a custodian hold policy. 
+In some cases, you may have a set of custodians that you have identified and have decided to preserve their data during the case. In Advanced eDiscovery, when these custodians are placed on hold, the user and their selected data sources are automatically added to a custodian hold policy. 
 
 To view the custodian hold policy:
 
@@ -115,7 +117,7 @@ Keep the following things in mind about hold statistics:
   - Run the **Get-UnifiedGroup** cmdlet in Exchange Online to view properties for an Office 365 Group or Microsoft Team. This is a good way to get the URL for the site that's associated with an Office 365 Group or a Microsoft Team. For example, the following command displays selected properties for an Office 365 Group named Senior Leadership Team:
 
 
-    ```
+    ```text
     Get-UnifiedGroup "Senior Leadership Team" | FL DisplayName,Alias,PrimarySmtpAddress,SharePointSiteUrl
     DisplayName            : Senior Leadership Team
     Alias                  : seniorleadershipteam
@@ -130,7 +132,7 @@ Keep the following things in mind about hold statistics:
  
  - To get a list of the members of a Office 365 Group or Microsoft Team, you can view the properties on the Home > Groups page in the Microsoft 365 admin center. Alternatively, you can run the following command in Exchange Online PowerShell:
 
-   ``` 
+   ```powershell
    Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress
    ```
 

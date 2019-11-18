@@ -7,6 +7,8 @@ ms.date: 1/23/2017
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
+ms.collection:
+- SPO_Content
 localization_priority: Normal
 search.appverid:
 - MOE150
@@ -26,9 +28,9 @@ Here are the steps to make this happen:
   
 [Step 1: Install the SharePoint Online Management Shell](#step-1-install-the-sharepoint-online-management-shell)
   
-[Step 2: Generate a list of users](use-a-script-to-add-users-to-a-hold-in-ediscovery.md#step2)
+[Step 2: Generate a list of users](#step-2-generate-a-list-of-users)
   
-[Step 3: Run the script to create a hold and add users](use-a-script-to-add-users-to-a-hold-in-ediscovery.md#step3)
+[Step 3: Run the script to create a hold and add users](#step-3-run-the-script-to-create-a-hold-and-add-users)
   
 ## Before you begin
 
@@ -51,22 +53,18 @@ The first step is to install the SharePoint Online Management Shell if it's not 
 Go to [Set up the SharePoint Online Management Shell Windows PowerShell environment](https://go.microsoft.com/fwlink/p/?LinkID=286318) and perform Step 1 and Step 2 to install the SharePoint Online Management Shell on your local computer. 
 
 ## Step 2: Generate a list of users
-<a name="step2"> </a>
 
 The script in Step 3 will create a hold that's associated with an eDiscovery case, and the add the mailboxes and OneDrive for Business sites of a list of users to the hold. You can just type the email addresses in a text file, or you can run a command in Windows PowerShell to get a list of email addresses and save them to a file (located in same folder that you'll save the script to in Step 3).
   
 Here's a PowerShell command (that you run by using remote PowerShell connected to your Exchange Online organization) to get a list of email addresses for all users in your organization and save it to a text file named HoldUsers.txt.
   
-```
+```powershell
 Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbox'} | Select-Object PrimarySmtpAddress > HoldUsers.txt
 ```
 
 After you run this command, open the text file and remove the header that contains the property name,  `PrimarySmtpAddress`. Then remove all email addresses except the ones for the users that you want to add to the hold that you'll create in Step 3. Make sure there are no blank rows before or after the list of email addresses.
   
-
-  
 ## Step 3: Run the script to create a hold and add users
-<a name="step3"> </a>
 
 When you run the script in this step, it will prompt you for the following information. Be sure to have this information ready before you run the script.
   
@@ -82,11 +80,11 @@ When you run the script in this step, it will prompt you for the following infor
     
 - **Whether or not to turn the hold on** - You can have the script turn the hold on after it's created or you can have the script create the hold without enabling it. If you don't have the script turn on the hold, you can turn it on later in the Security & Compliance Center or by running the following PowerShell commands: 
     
-  ```
+  ```powershell
   Set-CaseHoldPolicy -Identity <name of the hold> -Enabled $true
   ```
 
-  ```
+  ```powershell
   Set-CaseHoldRule -Identity <name of the hold> -Disabled $false
   ```
 
@@ -96,7 +94,7 @@ After you've collected the information that the script will prompt you for, the 
   
 1. Save the following text to a Windows PowerShell script file by using a filename suffix of .ps1; for example, `AddUsersToHold.ps1`.
     
-  ```
+  ```powershell
   #script begin
   " " 
   write-host "***********************************************"
@@ -273,7 +271,7 @@ After you've collected the information that the script will prompt you for, the 
     
 3. Run the script; for example:
     
-      ```
+      ```powershell
     .\AddUsersToHold.ps1
       ```
 

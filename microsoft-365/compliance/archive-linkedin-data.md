@@ -66,14 +66,10 @@ To view more details, click the connector in the list on the **Archive third-par
 
 - Because of the previous behavior, you can search the `from` or `subject` email properties when using a Microsoft eDiscovery tool to search LinkedIn items that are archived in Office 365. For example if the name of the company page is "Contoso Company Page", then you can use one of the following *property:value* pairs in the keyword search query:
    
-   ```
-   from:"Contoso Company Page"
-   ```
+   > from:"Contoso Company Page"
 
     Or
 
-   ```
-   subject:"Contoso Company Page"
-   ```
+   > subject:"Contoso Company Page"
 
 - To make it easier to locate or manage LinkedIn items imported to Office 365, the owner of the storage mailbox (or anyone assigned the FullAccess permission) can set up an inbox rule to move the items from a LinkedIn Company Page to a specific folder. This is helpful if the storage mailbox is used to archive items imported from different third-party data sources. For example, you can create an inbox rule that moves all items that contain the name of a specific LinkedIn Company Page in the subject field to a specific folder.

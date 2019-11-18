@@ -28,7 +28,7 @@ description: "Learn what to expect after Business Cloud Suite setup is complete.
 
 # Help users connect to Microsoft 365 Business
 
-After completing setup, your default device policies are in place and ready to apply. On mobile devices, users will download Office apps and then policies are applied when the user signs in with their work or school account. There's a bit more work to do before policies apply to Windows PCs, such as an in-place upgrade. Please reference and share the following topics to help users get setup and connected.
+After you complete setup, your default device policies are in place and ready to apply. On mobile devices, users download Office apps. Policies are then applied when the user signs in with their work or school account. There's a bit more work to do before policies apply to Windows PCs, such as an in-place upgrade. See and share the following topics to help users get set up and connected:
   
 [Set up Windows devices for Microsoft 365 Business users](set-up-windows-devices.md)
   

@@ -26,6 +26,16 @@ Content explorer is a current snapshot of the items that have a sensitivity labe
 
 ![content explorer collapsed screenshot](media/data-classification-content-explorer-1.png)
 
+### Permissions
+
+There are two roles that grant access to Content explorer:
+
+- **Content Explorer List viewer**: Membership in this role allows you to see each item and its location.
+
+- **Content Explorer Content viewer**: Membership in this role allows you to view the contents of each item in the list.
+
+The account you use to access Content explorer must be in one or both of the roles. These are independent roles and are not cumulative. For example, if you want to grant an account the ability to view the items and their locations only, grant Content Explorer List viewer rights. If you want that same account to also be able to view the contents of the items in the list, grant Content Explorer Content viewer rights as well.
+
 ### How to use content explorer
 
 1. Open **Microsoft 365 compliance center**  > **Data classification** > **Content explorer**.

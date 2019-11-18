@@ -32,7 +32,10 @@ To learn more about processing support in Office 365 and partially indexed items
 
 After the Advanced indexing process is completed, you can get an understanding of the effectiveness of re-processing.  In the Custodian Indexing view, the graph lists all items added to the *hybrid index*.  The hybrid index is where Advanced eDiscovery stores the re-processed content.
 
-The graph also includes the number of items that require remediation and another graph of errors by file type. For more information, see [Error remediation when processing data](error-remediation.md).
+The graph also includes the number of items that require remediation and another graph of errors by file type. For more information, see:
+
+- [Error remediation when processing data](error-remediation.md)
+- [Single item error remediation](single-item-error-remediation.md)
 
 ## Updating Advanced indexes for custodians
 

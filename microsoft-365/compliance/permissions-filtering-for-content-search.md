@@ -11,6 +11,7 @@ localization_priority: Normal
 ms.collection: 
 - Strat_O365_IP
 - M365-security-compliance
+- SPO_Content
 search.appverid: 
 - MOE150
 - MET150
@@ -52,7 +53,7 @@ Search permissions filtering is supported by the Content Search feature in the S
 
 1. Save the following text to a Windows PowerShell script file by using a filename suffix of **.ps1**. For example, you could save it to a file named **ConnectEXO-CC.ps1**.
     
-    ```
+    ```powershell
     $UserCredential = Get-Credential
     $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.outlook.com/powershell-liveid -Credential $UserCredential -Authentication Basic -AllowRedirection
     Import-PSSession $Session -DisableNameChecking
@@ -63,10 +64,10 @@ Search permissions filtering is supported by the Content Search feature in the S
 
 2. On your local computer, open Windows PowerShell, go to the folder where the script that you created in the previous step is located, and then run the script; for example:
     
-    ```
+    ```powershell
     .\ConnectEXO-CC.ps1
     ```
- 
+
 How do you know if this worked? After you run the script, cmdlets from the Security & Compliance Center and Exchange Online are imported into your local Windows PowerShell session. If you don't receive any errors, you connected successfully. A quick test is to run a Security & Compliance Center cmdlet and an Exchange Online cmdlet. For example, you can run **Install-UnifiedCompliancePrerequisite** and **Get-Mailbox**. 
   
 If you receive errors, check the following requirements:
@@ -79,9 +80,10 @@ If you receive errors, check the following requirements:
     
 - Windows PowerShell must be configured to run scripts. This only has to be done once, not every time you connect. To enable Windows PowerShell to run signed scripts, run the following command in an elevated Windows PowerShell window (a Windows PowerShell window you opened by selecting **Run as administrator**).
 
-    ```
+    ```powershell
     Set-ExecutionPolicy RemoteSigned
     ```
+
 - TCP port 80 traffic needs to be open between your local computer and Office 365. It's probably open, but it's something to consider if your organization has a restrictive Internet access policy.
 
   
@@ -100,7 +102,7 @@ The **New-ComplianceSecurityFilter** is used to create a search permissions filt
 
 A *filters list* is a filter that includes a mailbox filter and a site filter separated by a comma. Using a filters list is the only supported method for combining different types of filters. In the following example, notice that a comma separates the **Mailbox** and **Site** filters:
 
-```
+```powershell
 -Filters "Mailbox_CustomAttribute10 -eq 'OttawaUsers'", "Site_Path -like 'https://contoso.sharepoint.com/sites/doctors*'"
 ```
 
@@ -114,13 +116,13 @@ Keep the following things in mind about using a filters list:
 
 - As previously suggested, you don't have to use a filters list to include a **Site** and a **SiteContent** filter in a single search permissions filter. For example, you can combine **Site** and a **SiteContent** filters using an **-or** operator.
 
-   ```
+   ```powershell
    -Filters "Site_ComplianceAttribute -eq 'FourthCoffee' -or Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee*'"
    ```
 
 - Each component of a filters list can contain a complex filter syntax. For example, the mailbox and site filters can contain multiple filters separated by an **-or** operator:
 
-   ```
+   ```powershell
    -Filters "Mailbox_Department -eq 'CohoWinery' -or Mailbox_CustomAttribute10 -eq 'CohoUsers'", "Site_ComplianceAttribute -eq 'CohoWinery' -or Site_Path -like 'https://contoso.sharepoint.com/sites/CohoWinery*'"
    ```
 
@@ -130,77 +132,78 @@ Here are examples of using the **New-ComplianceSecurityFilter** cmdlet to create
   
 This example allows the user annb@contoso.com to perform all Content Search actions only for mailboxes in Canada. This filter contains the three-digit numeric country code for Canada from ISO 3166-1.
 
-```
+```powershell
 New-ComplianceSecurityFilter -FilterName CountryFilter  -Users annb@contoso.com -Filters "Mailbox_CountryCode  -eq '124'" -Action All
 ```
 
 This example allows the users' donh and suzanf to search only the mailboxes that have the value 'Marketing' for the CustomAttribute1 mailbox property.
 
-```
+```powershell
 New-ComplianceSecurityFilter -FilterName MarketingFilter  -Users donh,suzanf -Filters "Mailbox_CustomAttribute1  -eq 'Marketing'" -Action Search
 ```
-   
+
 This example allows members of the "US Discovery Managers" role group to perform all Content Search actions only on mailboxes in the United States. This filter contains the three-digit numeric country code for the United States from ISO 3166-1.
   
-```
+```powershell
 New-ComplianceSecurityFilter -FilterName USDiscoveryManagers  -Users "US Discovery Managers" -Filters "Mailbox_CountryCode  -eq '840'" -Action All
 ```
 
 This example allows members of the eDiscovery Manager role group to search only the mailboxes of members of the Ottawa Users distribution group. 
   
-```
+```powershell
 $DG = Get-DistributionGroup "Ottawa Users"
 ```
 
-```
+```powershell
 New-ComplianceSecurityFilter -FilterName DGFilter  -Users eDiscoveryManager -Filters "Mailbox_MemberOfGroup -eq '$($DG.DistinguishedName)'" -Action Search
 ```
+
 This example prevents any user from deleting content from the mailboxes of members of the Executive Team distribution group.
 
-```
+```powershell
 $DG = Get-DistributionGroup "Executive Team"
 ```
 
-```
+```powershell
 New-ComplianceSecurityFilter -FilterName NoExecutivesPreview  -Users All -Filters "Mailbox_MemberOfGroup -ne '$($DG.DistinguishedName)'" -Action Purge
 ```
-   
+
 This example allows members of the OneDrive eDiscovery Managers custom role group to only search for content in OneDrive for Business locations in the organization.
 
-```
+```powershell
 New-ComplianceSecurityFilter -FilterName OneDriveOnly  -Users "OneDrive eDiscovery Managers" -Filters "Site_Path -like 'https://contoso-my.sharepoint.com/personal*'" -Action Search
 ```
-   
+
 > [!NOTE]
 > To restrict users to searching specific sites, use the filter  `Site_Path`, as shown in the previous example. Using  `Site_Site` will not work. 
   
 This example restricts the user to performing all Content Search actions only on email messages sent during the calendar year 2015.
 
-```
+```powershell
 New-ComplianceSecurityFilter -FilterName EmailDateRestrictionFilter -Users donh@contoso.com -Filters "MailboxContent_Received -ge '01-01-2015' -and MailboxContent_Received -le '12-31-2015'" -Action All
 ```
-   
+
 Similar to the previous example, this example restricts the user to performing all Content Search actions on documents that were last changed sometime in the calendar year 2015.
 
-```
+```powershell
 New-ComplianceSecurityFilter -FilterName DocumentDateRestrictionFilter -Users donh@contoso.com -Filters "SiteContent_LastModifiedTime -ge '01-01-2015' -and SiteContent_LastModifiedTime -le '12-31-2015'" -Action All
 ```
-   
+
 This example prevents members of the "OneDrive Discovery Managers" role group from performing content search actions on any mailbox in the organization. 
 
-```
+```powershell
 New-ComplianceSecurityFilter -FilterName NoEXO -Users "OneDrive Discovery Managers" -Filters "Mailbox_Alias -notlike '*'"  -Action All
 ```
 
 This example prevents anyone in the organization from searching for email messages that were sent or received by janets or sarad.
 
-```
+```powershell
 New-ComplianceSecurityFilter -FilterName NoSaraJanet -Users All -Filters "MailboxContent_Participants -notlike 'janets@contoso.onmicrosoft.com' -and MailboxContent_Participants -notlike 'sarad@contoso.onmicrosoft.com'" -Action Search
 ```
 
 This example uses a filters list to combine mailbox and site filters.
 
-```
+```powershell
 New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "Coho Winery eDiscovery Managers", "Coho Winery Investigators" -Filters "Mailbox_Department -eq 'CohoWinery'", "Site_ComplianceAttribute -eq 'CohoWinery' -or Site_Path -like 'https://contoso.sharepoint.com/sites/CohoWinery*'" -Action ALL
 ```
 
@@ -225,31 +228,32 @@ These examples show how to use the **Get-ComplianceSecurityFilter** and **Set-Co
   
 This example adds a user to the filter.
 
-```
+```powershell
 $filterusers = Get-ComplianceSecurityFilter -FilterName OttawaUsersFilter
 ```
-```
+
+```powershell
 $filterusers.users.add("pilarp@contoso.com")
 ```
 
-```
+```powershell
 Set-ComplianceSecurityFilter -FilterName OttawaUsersFilter -Users $filterusers.users
 ```
-   
+
 This example removes a user from the filter.
 
-```
+```powershell
 $filterusers = Get-ComplianceSecurityFilter -FilterName OttawaUsersFilter
 ```
 
-```
+```powershell
 $filterusers.users.remove("annb@contoso.com")
 ```
 
-```
+```powershell
 Set-ComplianceSecurityFilter -FilterName OttawaUsersFilter -Users $filterusers.users
 ```
-  
+
 ## Remove-ComplianceSecurityFilter
 
 The **Remove-ComplianceSecurityFilter** is used to delete a search filter. Use the  _FilterName_ parameter to specify the filter you want to delete. 
