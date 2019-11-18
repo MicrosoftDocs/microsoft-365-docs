@@ -37,7 +37,7 @@ For more information on submitting support requests with Microsoft Managed Deskt
 ## Step 3 - Communicate change to your users
 As the IT administrator for your organization, it’s important to let your users know how to use Company Portal in your organization. Microsoft Managed Desktop recommends:
 - Steps on installing applications from the Company Portal. For more information, see [Install and share apps on your device](https://docs.microsoft.com/intune-user-help/install-apps-cpapp-windows).
-- How to send requests to IT administrators for applications that are not currently available.
+- How to send requests to IT administrators for applications that are not currently available. For more information, see [Request an app for work or school](https://docs.microsoft.com/intune-user-help/install-apps-cpapp-windows#request-an-app-for-work-or-school).  
 
 ## Steps to get started with Microsoft Managed Desktop
 
