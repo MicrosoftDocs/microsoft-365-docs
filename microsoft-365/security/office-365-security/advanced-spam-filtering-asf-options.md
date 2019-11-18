@@ -19,7 +19,7 @@ description: "Advanced spam filtering  options give administrators the ability t
 # Advanced spam filtering options
 
 >[!NOTE]
-> The Anti-spam policy Advanced Spam filter settings are being deprecated at the time of this writing. Our recommended settings for these are to turn them **OFF**. The functions that were available in the Advanced Spam filter is being incorporated into the other parts of the filtering stack.
+> The Advanced Spam filter settings of the Anti-spam policy are currently being deprecated. Our recommended settings for these are to turn them **OFF**. The functions that were available in the Advanced Spam filter is being incorporated into other parts of the filtering stack.
 
 Advanced spam filtering  options give administrators the ability to inspect various content attributes of a message. The presence of these attributes in a message either increases the spam score of the message (thereby increasing the potential for it to be identified as spam) or marks the message as spam. The ASF options target specific message properties, such as HTML tags and URL redirection, which are commonly found in spam messages.
   
