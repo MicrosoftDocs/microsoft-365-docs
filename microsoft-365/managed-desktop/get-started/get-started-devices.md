@@ -13,7 +13,7 @@ ms.collection: M365-modern-desktop
 
 Once a Microsoft Managed Desktop device is in the hands of your end user, getting started with it is fast and easy. Devices come pre-configured with the current version of Windows, and configurations and apps are installed from the cloud as the user completes setup. 
  
-To make this even easier, we offer a guide that walks your users through the initial setup and provides help resources both for the setup and for use later, if needed. You can customize this guide to include certain details specific to your organization. You then distribute the guide directly to your users along with their device. There are two versions, one for organizations using Microsoft's support system (the Get Help app), one for those providing their own internal end-user support.
+To make this even easier, we offer a guide that walks your users through the initial setup and provides help resources both for the setup and for use later, if needed. You can customize this guide to include certain details specific to your organization. You then distribute the guide directly to your users along with their device. There are two versions, one for organizations using Microsoft's support system (the Get Help app), one for those providing alternative support for their users.
 
 ## To prepare the guide
 
