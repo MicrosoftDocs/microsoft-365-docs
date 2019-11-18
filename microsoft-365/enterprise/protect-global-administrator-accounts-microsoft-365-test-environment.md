@@ -17,6 +17,8 @@ description: "Use these steps to protect global administrator accounts in your M
 
 # Protect global administrator accounts in your Microsoft 365 Enterprise test environment
 
+*This Test Lab Guide can only be used for Microsoft 365 Enterprise test environments.*
+
 You can prevent digital attacks on your organization by ensuring that your administrator accounts are as secure as possible. This article describes how to use Azure Active Directory (Azure AD) conditional access policies to protect global administrator accounts.
 
 There are two phases to protecting global administrator accounts in your Microsoft 365 Enterprise test environment:
@@ -27,7 +29,7 @@ There are two phases to protecting global administrator accounts in your Microso
 ![Test Lab Guides for the Microsoft cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> Click [here](https://aka.ms/m365etlgstack) for a visual map to all the articles in the Microsoft 365 Enterprise Test Lab Guide stack.
+> Click [here](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) for a visual map to all the articles in the Microsoft 365 Enterprise Test Lab Guide stack.
 
 ## Phase 1: Build out your Microsoft 365 Enterprise test environment
 

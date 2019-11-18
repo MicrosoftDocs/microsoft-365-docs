@@ -16,12 +16,14 @@ description: Use this Test Lab Guide to create and use Office 365 retention labe
 
 # Data classification for your Microsoft 365 Enterprise test environment
 
+*This Test Lab Guide can be used for both Microsoft 365 Enterprise and Office 365 Enterprise test environments.*
+
 With the instructions in this article, you configure data classification using Office 365 retention labels in your Microsoft 365 Enterprise test environment.
 
 ![Test Lab Guides for the Microsoft cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> Click [here](https://aka.ms/m365etlgstack) for a visual map to all the articles in the Microsoft 365 Enterprise Test Lab Guide stack.
+> Click [here](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) for a visual map to all the articles in the Microsoft 365 Enterprise Test Lab Guide stack.
   
 ## Phase 1: Build out your Microsoft 365 Enterprise test environment
 

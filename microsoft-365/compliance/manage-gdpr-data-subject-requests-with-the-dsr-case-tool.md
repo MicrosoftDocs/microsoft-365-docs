@@ -129,13 +129,13 @@ After you create a DSR case and add members, the next step is to run the built-i
     
 Here's what the keyword query looks like for the built-in search that gets automatically created when you create a DSR case.
   
-```
+```powershell
 participants:"<email address>" OR author:"<display name>" OR createdby:"<display name>"
 ```
 
 For example, if the name of the data subject is Ina Leonte, the keyword query would look like this:
   
-```
+```powershell
 participants:"ina@contoso.com" OR author:"Ina Leonte" OR createdby:"Ina Leonte"
 ```
 
@@ -410,7 +410,7 @@ Here's a high-level process to search for items that the data subject posted to 
     
   - In the **Keywords** box, use the following search query: 
     
-    ```
+    ```powershell
     itemclass:ipm.post AND "<email address of the data subject>"
     ```
 

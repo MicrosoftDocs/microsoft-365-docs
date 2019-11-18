@@ -109,12 +109,15 @@ After a retention policy is assigned to a mailbox or public folder, content can 
 
 Versioning is a feature of all document libraries in SharePoint Online and OneDrive for Business. By default, versioning retains a minimum of 500 major versions, though you can increase this limit. For more information, see [Enable and configure versioning for a list or library](https://support.office.com/article/1555d642-23ee-446a-990a-bcab618c7a37).
   
-A retention policy retains all versions of a document in a SharePoint site collection or OneDrive account. Each time a document subject to a retention policy is edited or deleted, a version is copied to the Preservation Hold library. Each version of a document in the Preservation Hold library exists as a separate item with its own retention period:
+A retain policy (retention policy that retains content instead of delete-only) retains all versions of a document in a SharePoint site collection or OneDrive account. Each time a document subject to a hold or retain policy is edited, a version is copied to the Preservation Hold library. Each time a document subject to a hold or retain policy is deleted, all versions are copied to the Preservation Hold library if versioning is enabled. Each version of a document in the Preservation Hold library exists as a separate item with its own retention period:
   
 - If the retention policy is based on when the content was created, each version has the same expiration date as the original document. The original document and its versions all expire at the same time.
     
 - If the retention policy is based on when the content was last modified, each version has its own expiration date based on when the original document was modified to create that version. The original documents and its versions expire independently of each other.
-    
+
+> [!NOTE]
+> The preserved versions of SharePoint and OneDrive documents are not searchable by eDiscovery tools.
+
 ## Retaining content for a specific period of time
 
 With a retention policy, you can retain content indefinitely or for a specific number of days, months, or years. The duration for how long content is retained is calculated from the age of the content, not from when the retention policy is applied. You can choose whether the age is based on when the content was created or (for OneDrive and SharePoint) when it was last modified.

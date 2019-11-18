@@ -3,13 +3,14 @@ title: "Use sensitivity labels with Microsoft Teams, Office 365 groups, and Shar
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 11/08/2019
+ms.date: 11/13/2019
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: 
 - M365-security-compliance
+- SPO_Content
 search.appverid: 
 - MOE150
 - MET150
@@ -221,8 +222,8 @@ To prepare the SharePoint Online Management Shell for the preview:
 
     ```PowerShell
     Set-ExecutionPolicy RemoteSigned
-    $O365Cred = Get-Credential
-    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid -Authentication Basic -AllowRedirection -Credential $O365Cred
+    $UserCredential = Get-Credential
+    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid -Authentication Basic -AllowRedirection -Credential $UserCredential
     Import-PSSession $Session
     Get-Label |ft Name, Guid  
     ```
@@ -233,7 +234,7 @@ To prepare the SharePoint Online Management Shell for the preview:
 
    ```PowerShell
    Set-ExecutionPolicy RemoteSigned
-   $O365Cred = Get-Credential
+   $UserCredential = Get-Credential
    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
    Import-PSSession $Session
    ```
