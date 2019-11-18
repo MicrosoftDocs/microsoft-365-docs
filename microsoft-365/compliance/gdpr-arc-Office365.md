@@ -8,7 +8,10 @@ ms.topic: article
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.collection: GDPR
+ms.collection: 
+- GDPR
+- M365-security-compliance
+hideEdit: true
 ---
 
 # Accountability Readiness Checklist for Microsoft Office 365
@@ -122,19 +125,19 @@ This control structure is also used to organize the presentation of the internal
 |||
 |:-----|:-----|
 |**ID**|**Description/Link**|
-| 1 <a name="1"> </a> | [Online Service Terms](http://aka.ms/ost) |
+| 1 <a name="1"> </a> | [Online Service Terms](https://aka.ms/ost) |
 | 2 <a name="2"> </a> | [Office 365 Security Documentation](https://support.office.com/article/protect-access-to-data-and-services-in-office-365-a6ef28a4-2447-4b43-aae2-f5af6d53c68e) |
 | 3 <a name="3"> </a> | [FedRAMP Moderate FedRAMP System Security Plan (SSP)](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=053666de-e359-43ef-a7bb-3cf379208ed8&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_FedRAMP_Reports) |
 | 4 <a name="4"> </a> | [Microsoft Cloud Security Policy](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=c83d1345-0cff-4beb-a521-27b837ed271a&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers) |
 | 5 <a name="5"> </a> | [Office 365 Information Protection for GDPR](https://docs.microsoft.com/office365/enterprise/office-365-information-protection-for-gdpr) |
 | 6 <a name="6"> </a> | [Who can access your data and on what terms?](https://www.microsoft.com/trustcenter/Privacy/Who-can-access-your-data-and-on-what-terms) |
-| 7 <a name="7"> </a> | [Contracts for sub-processors: Contracting with Microsoft](https://www.microsoft.com/en-us/procurement/supplier-contracting.aspx#SSPA) |
+| 7 <a name="7"> </a> | [Contracts for sub-processors: Contracting with Microsoft](https://www.microsoft.com/procurement/supplier-contracting.aspx#SSPA) |
 | 8 <a name="8"> </a> | [365 Data Subject Requests for GDPR](https://aka.ms/DSROffice365) |
 | 9 <a name="9"> </a> | [Office 365 and Breach Notification Under the GDPR](https://aka.ms/BreachOffice365) |
 | 10  <a name="10"> </a> | [Key Information from Office 365 for Customer Data Protection Impact Assessments](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dpia-office365) |
 | 11 <a name="11"> </a> | [SOC 2 Type 2 Audit Report](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=0cf2cce9-972d-4a64-865f-b8e6eba4ed5e&docTab=4ce99610-c9c0-11e7-8c2c-) |
 | 12 <a name="12"> </a> | [Microsoft Office 365 ISO/IEC 27001:2013 ISMS Statement of Applicability](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=d7255c90-03e3-48a6-938d-e69d8f723c7a&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports) |
-| 13 <a name="13"> </a> | [Microsoft Trust Center Compliance offerings](https://www.microsoft.com/trustcenter/compliance/complianceofferings) |
+| 13 <a name="13"> </a> | [Microsoft Trust Center Compliance offerings](offering-home.md) |
 | 14 <a name="14"> </a> | [Office 365 ISMS Manual](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=72821313-c175-4857-b1f7-e3c5e6eb2db4&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports) |
 | 15 <a name="15"> </a> | [Use Tenant Restrictions to manage access to SaaS cloud applications](https://docs.microsoft.com/azure/active-directory/active-directory-tenant-restrictions) |
 | 16 <a name="16"> </a> | [Search the audit log in Office 365 Security and Compliance Center](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c) |

@@ -9,6 +9,7 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.collection: 
 - M365-security-compliance
+- SPO_Content
 localization_priority: Normal
 search.appverid: 
 - MOE150

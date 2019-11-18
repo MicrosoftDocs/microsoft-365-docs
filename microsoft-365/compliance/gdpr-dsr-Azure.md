@@ -1,7 +1,7 @@
 ---
-title: Azure Data Subject Requests for the GDPR
+title: Azure Data Subject Requests for the GDPR and CCPA
 description: 
-keywords: Microsoft 365, Microsoft 365 Education, Microsoft 365 documentation, GDPR
+keywords: Microsoft 365, Microsoft 365 Education, Microsoft 365 documentation, GDPR, CCPA
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -9,14 +9,19 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: GDPR
+ms.collection: 
+- GDPR
+- M365-security-compliance
+hideEdit: true
 ---
 
-# Azure Data Subject Requests for the GDPR
+# Azure Data Subject Requests for the GDPR and CCPA
 
 ## Introduction to Data Subject Requests (DSRs)
 
 The European Union [General Data Protection Regulation (GDPR)](https://ec.europa.eu/justice/data-protection/reform/index_en.htm) gives rights to people (known in the regulation as *data subjects*) to manage the personal data that has been collected by an employer or other type of agency or organization (known as the *data controller* or just *controller*). Personal data is defined very broadly under the GDPR as any data that relates to an identified or identifiable natural person. The GDPR gives data subjects specific rights to their personal data; these rights include obtaining copies of personal data, requesting corrections to it, restricting the processing of it, deleting it, or receiving it in an electronic format so it can be moved to another controller. A formal request by a data subject to a controller to take an action on their personal data is called a *Data Subject Request* or DSR.
+
+Similarly, the California Consumer Privacy Act (CCPA), provides privacy rights and obligations to California consumers, including rights similar to GDPR’s Data Subject Rights, such as the right to delete, access and receive (portability) their personal information.  The CCPA also provides for certain disclosures, protections against discrimination when electing exercise rights, and “opt-out/ opt-in” requirements for certain data transfers classified as “sales".
 
 The guide discusses how to use Microsoft products, services and administrative tools to help our controller customers find and act on personal data to respond to DSRs. Specifically, this includes how to find, access, and act on personal data that reside in the Microsoft cloud. Here’s a quick overview of the processes outlined in this guide:
 
@@ -25,7 +30,7 @@ The guide discusses how to use Microsoft products, services and administrative t
 - **Rectify:** Make changes or implement other requested actions on the personal data, where applicable.
 - **Restrict:** Restrict the processing of personal data, either by removing licenses for various Azure services or turning off the desired services where possible. You can also remove data from the Microsoft cloud and retain it on-premises or at another location.
 - **Delete:** Permanently remove personal data that resided in the Microsoft cloud.
-- **Export:** Provide an electronic copy (in a machine-readable format) of personal data to the data subject.
+- **Export/Receive (Portability):** Provide an electronic copy (in a machine-readable format) of personal data or personal information to the data subject.
 
 Each section in this guide outlines the technical procedures that a data controller organization can take to respond to a DSR for personal data in the Microsoft cloud.
 
@@ -80,19 +85,19 @@ This is particularly helpful if you want to find or change personal data for a s
 
 1. Sign in to the [Azure portal](https://portal.azure.com/) with an account that's a global admin for the directory.
 
-2. Select **All services**, enter **Users and groups** in the text box, and then select **Enter**.
+2. Select **Azure Active Directory**.
 
-     ![Select All services](media/azure-dsr_image3.png)
+     ![Select All services](media/gdpr-azure-dsr-azure-portal.png)
 
-3. On the **Users and groups** blade, select **Users**.
+3. Select **Users**.
 
-     ![Select users](media/azure-dsr_image9.png)
+     ![Select users](media/gdpr-azure-dsr-azure-all-users.png)
 
-4. On the **Users and groups — Users** blade, select a user from the list, and then, on the blade for the selected user, select **Profile** to view user profile information that might contain personal data.
+4. On the **All users** blade, select a user from the list, and then, on the blade for the selected user, select **Profile** to view user profile information that might contain personal data.
 
-    ![Select profile](media/azure-dsr_image5.png)
+    ![Select profile](media/gdpr-azure-dsr-azure-user-profile.png)
 
-5. If you need to add or change user profile information, you can do so, and then, in the command bar, select **Save.**
+5. If you need to add or change user profile information, you can do so by selecting **Edit** in the command bar, then select **Save** after making changes.
 
 #### Service-specific interfaces
 
@@ -128,25 +133,21 @@ You can correct, update, or delete identifiable information about end users, suc
 
 1. Sign in to the [Azure portal](https://portal.azure.com/) with an account that's a global admin for the directory.
 
-2. Select **All services**, enter **Users and groups** in the text box, and then select **Enter**.
+2. Select **Azure Active Directory**.
 
-    ![Select All services](media/azure-dsr_image3.png)
+    ![Select All services](media/gdpr-azure-dsr-azure-portal.png)
 
-3. On the **Users and groups** blade, select **Users**.
+3. Select **Users**.
 
-    ![Select users](media/azure-dsr_image9.png)
+    ![Select users](media/gdpr-azure-dsr-azure-all-users.png)
 
-4. On the **Users and groups — Users** blade, select a user from the list, and then, on the blade for the selected user, select **Profile** to view the user profile information that needs to be corrected or updated.
+4. On the **All users** blade, select a user from the list, and then, on the blade for the selected user, select **Profile** to view the user profile information that needs to be corrected or updated.
 
-    ![Select profile](media/azure-dsr_image5.png)
+    ![Select profile](media/gdpr-azure-dsr-azure-user-profile.png)
 
-5. Correct or update the information, and then, in the command bar, select **Save.**
+5. Correct or update the user profile information including work information by selecting **Edit** in the command bar, then select **Save** after making changes.
 
-6. On the blade for the selected user, select **Work Info** to view user work information that needs to be corrected or updated.
-
-    ![Select work info](media/azure-dsr_image4.png)
-
-7. Correct or update the user work information, and then, in the command bar, select **Save.**
+    ![Select profile](media/gdpr-azure-dsr-azure-edit-user-profile.png)
 
 #### Service-Specific Interfaces
 
@@ -179,26 +180,30 @@ Here’s the high-level process for deleting users from your tenant.
 
 ###### To delete a user from an Azure tenant
 
-1. Open the Azure portal, select the **Azure Active Directory** blade, and then select **Users**.
+1. Sign in to the [Azure portal](https://portal.azure.com/) with an account that's a global admin for the directory.
 
-    The **Users — All users** blade appears.
+2. Select **Azure Active Directory**.
 
-    ![Locate user](media/azure-dsr_image8.png)
+    ![Select All services](media/gdpr-azure-dsr-azure-portal.png)
 
-2. Check the box next to the user you want to delete, select **Delete user**, and then select **Yes** in the box asking if you want to delete the user.
+3. Select **Users**.
 
-    ![User management](media/azure-dsr_image9.png)
+    ![Select users](media/gdpr-azure-dsr-azure-all-users.png)
 
-3. In the **Show** drop-down box, select **Recently deleted users**.
+4. Check the box next to the user you want to delete, select **Delete user**, and then select **Yes** in the box asking if you want to delete the user.
 
-    ![View user profile](media/azure-dsr_image10.png)
+    ![User management](media/gdpr-azure-dsr-azure-selected-user.png)
 
-4. Select the same user again, select **Delete permanently**, and then select **Yes** in the box asking if you’re sure.
+5. On the **All users** blade, select **Deleted users**.
+
+    ![View user profile](media/gdpr-azure-dsr-azure-deleted-user.png)
+
+4. Select the same user again, select **Delete permanently** in the command bar, and then select **Yes** in the box asking if you’re sure.
 
 >[!IMPORTANT]  
 >Be aware that by clicking **Yes** you are permanently, and irrevocably, deleting the user and all associated data and system-generated logs. If you do this by mistake, you’ll have to manually add the user back to the tenant. The associated data and system-generated logs are non-recoverable.
 
-   ![View user work information](media/azure-dsr_image11.png)
+   ![View user work information](media/gdpr-azure-dsr-azure-permanently-deleted-user.png)
 
 #### Service-specific interfaces
 
@@ -274,15 +279,15 @@ Here’s the high-level process for exporting data from your tenant.
 
 1. Open the Azure portal, select **All services**, type *policy* into the filter, and then select **Policy**.
 
-     ![All services filter ](media/azure-dsr_image12.png)
+     ![All services filter ](media/gdpr-azure-dsr-azure-policy.png)
 
 2. In the **Policy** blade, select **User privacy**, select **Manage User Requests**, and then select **Add export request**.
 
-    ![Add export request ](media/azure-dsr_image13.png)
+    ![Add export request ](media/gdpr-azure-dsr-azure-add-export-request.png)
 
 3. Complete the **Export data request**:
 
-    ![New export data request](media/azure-dsr_image14.png)
+    ![New export data request](media/gdpr-azure-dsr-azure-export-data-request.png)
 
 - **User.** Type the email address of the Azure Active Directory user that requested the export.
 - **Subscription.** Select the account you use to report resource usage and to bill for services. This is also the location of your Azure storage account.

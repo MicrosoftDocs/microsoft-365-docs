@@ -111,7 +111,7 @@ Defining a digital culture is a major priority for every leader who strives to f
 
 At the same time, intelligent security features and product integration helps streamline management needs and minimize the total cost of ownership across the IT lifecycle. 
 
-Learn how Core Services Engineering and Operations (formerly Microsoft IT) [planned and deployed a foundation](https://www.microsoft.com/en-us/itshowcase/deploying-and-managing-microsoft-365) to support the applications and services that unlock creativity and foster teamwork in a secure environment.
+Learn how Core Services Engineering and Operations (formerly Microsoft IT) [planned and deployed a foundation](https://www.microsoft.com/itshowcase/deploying-and-managing-microsoft-365) to support the applications and services that unlock creativity and foster teamwork in a secure environment.
 
 > [!Note]
 > This web page is only available in English.
@@ -119,6 +119,10 @@ Learn how Core Services Engineering and Operations (formerly Microsoft IT) [plan
 ### How the Contoso Corporation deployed Microsoft 365 Enterprise
 
 The Contoso Corporation is a fictional but representative global manufacturing conglomerate with its headquarters in Paris, France. See how [Contoso deployed Microsoft 365 Enterprise](contoso-case-study.md) and addressed major design decisions and implementation details for networking, identity, Windows 10 Enterprise, Office 365 ProPlus, mobile device management, information protection, and security. 
+
+## Stay current with deployment content
+
+For the latest changes in content, see [this article](microsoft-365-deploment-guide-changes.md).
 
 ## Next step
 

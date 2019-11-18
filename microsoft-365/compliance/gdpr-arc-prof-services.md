@@ -9,7 +9,10 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: GDPR
+ms.collection: 
+- GDPR
+- M365-security-compliance
+hideEdit: true
 ---
 
 # Microsoft Support and Professional Services accountability readiness checklist for the GDPR
@@ -117,7 +120,7 @@ This control structure is also used to organize the presentation of the internal
 ||||
 |:-----|:---|:---|
 |**ID**|**Description/Links**|**Notes**|
-| 1 <a name="1"> </a> | [Microsoft Professional Services Data Protection Addendum](http://aka.ms/professionalservicesdpa) | |
+| 1 <a name="1"> </a> | [Microsoft Professional Services Data Protection Addendum](https://aka.ms/professionalservicesdpa) | |
 | 2 <a name="2"> </a> | [Microsoft Professional Services Security Documentation on Microsoft Trust Center](https://www.microsoft.com/TrustCenter/professional-services-security) | |
 | 3 <a name="3"> </a> | Training and Awareness Program Description | Available on request through customer’s account management team.| |
 | 4 <a name="4"> </a> | [Microsoft Professional Services GDPR Control Set](https://aka.ms/GDPRControls) | |
@@ -128,7 +131,7 @@ This control structure is also used to organize the presentation of the internal
 |  9 <a name="9"> </a> | [Key Information from Microsoft Professional Services for Customer Data Protection Impact Assessments](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dpia-prof-services) | |
 | 10 <a name="10"> </a> | [ISO 27001 Audit Report](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=7e71ff67-7609-43e6-9d68-4ceea0b41b50&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports) | |
 | 11 <a name="11"> </a> | Microsoft Professional Services ISO/IEC 27001:2013 ISMS Statement of Applicability | SOA on request through customer’s account management team.|
-| 12 <a name="12"> </a> | [Microsoft Trust Center Compliance offerings](https://www.microsoft.com/trustcenter/compliance/complianceofferings) | |
+| 12 <a name="12"> </a> | [Microsoft Trust Center Compliance offerings](offering-home.md) | |
 | 13 <a name="13"> </a> | [Microsoft DPO Information](https://docs.microsoft.com/microsoft-365/compliance/gdpr-data-protection-officer) | |
 
 ## Learn more

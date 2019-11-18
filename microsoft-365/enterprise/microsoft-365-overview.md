@@ -52,7 +52,7 @@ For more information, see [Features and capabilities for each plan](https://www.
 
 ## Get the big picture
 
-The [Microsoft 365 Enterprise poster](media/Microsoft365Enterprise.pdf) is a central location for you to view:
+The [Microsoft 365 Enterprise poster](media/m365-poster/Microsoft365Enterprise.pdf) is a central location for you to view:
 
 - The benefits of Microsoft 365 Enterprise and how apps and services map to its value pillars
 - Microsoft 365 Enterprise plans and which components they contain 
@@ -60,9 +60,9 @@ The [Microsoft 365 Enterprise poster](media/Microsoft365Enterprise.pdf) is a cen
 - The [Microsoft 365 Productivity Library](https://www.microsoft.com/microsoft-365/success/) and representative scenarios for some common organization departments
 - The adoption roadmap that highlights the Microsoft 365 Enterprise [Deployment Guide](deploy-microsoft-365-enterprise.md)
 
-[![Image for the Microsoft 365 Enterprise poster](./media/m365-poster/m365e-poster.png)](media/Microsoft365Enterprise.pdf)
+[![Image for the Microsoft 365 Enterprise poster](./media/m365-poster/m365e-poster.png)](media/m365-poster/Microsoft365Enterprise.pdf)
 
-To download a copy of the poster, click [here](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/Microsoft365Enterprise.pdf).
+To download a copy of the poster, click [here](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/m365-poster/Microsoft365Enterprise.pdf).
 
 
 ## Transition your entire organization

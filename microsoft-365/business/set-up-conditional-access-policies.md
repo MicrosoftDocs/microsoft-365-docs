@@ -15,12 +15,12 @@ ms.custom:
 - Adm_O365
 - MiniMaven
 - MSB365
+- OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: "Learn how to set  up conditional access policies for Microsoft 365 Campaigns."
-ms.custom: OKR_SMB_M365
 ---
 
 # Set up conditional access policies
@@ -48,9 +48,9 @@ For more information about these policies, see [What are baseline policies](http
     ![Page that lists baseline policies for conditional access.](media/baslinepolicies.png)
 1. See the following specific instructions for each policy:
 
-  - [Require MFA for admins](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-baseline-protect-administrators)
-- [Require MFA for users](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-baseline-protect-end-users)  
- - [Block legacy authentication](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-baseline-protect-legacy-auth)
+  - [Require MFA for admins](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-administrators)
+- [Require MFA for users](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-end-users)  
+ - [Block legacy authentication](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-legacy-auth)
   - [Require MFA for service management](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-azure)
 
 You can set up many additional policies, such as requiring approved client apps. See the [Conditional Access Documentation](https://docs.microsoft.com/azure/active-directory/conditional-access/) for more information.

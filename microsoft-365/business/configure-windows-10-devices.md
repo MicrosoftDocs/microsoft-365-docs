@@ -17,20 +17,20 @@ ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
 - MSB365
+- OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: da60e08e-2547-491a-9c97-94ac6d715623
 description: "Learn about device policies for Windows 10 that apply to all users in your organization."
-ms.custom: OKR_SMB_M365
 ---
 
 # Configure Windows 10 devices
 
-During setup, we'll create a device policy for Windows 10 that applies to all users in your organization. When a user signs in to an Office app on their Windows 10 device with their work or school account, the settings that you configure are automatically applied to make sure that the user is connecting in a secure way.
+During setup, you create a device policy for Windows 10 that applies to all users in your organization. When a user signs in to an Office app on their Windows 10 device with their work or school account, the settings you configure are automatically applied to make sure that the user is connecting in a secure way.
   
-We recommend that you accept the default configuration during setup. After setup, you can create additional policies and target them to specific groups of users.
+We recommend that you accept the default configuration during setup. After setup, you can create more policies and target them to specific groups of users.
   
 To add a policy to manage Windows 10 device configurations, see [Set device configurations for Windows 10 PCs](protection-settings-for-windows-10-pcs.md).
   

@@ -13,21 +13,21 @@ ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
 - MSB365
+- OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 27ff1678-865a-4707-8145-e1155aa815d6
-description: "Learn to manage Microsoft 365 Business related admin tasks, mobile devices, Windows 10PCs, and many such tasks."
-ms.custom: OKR_SMB_M365
+description: "Learn to manage Microsoft 365 Business related admin tasks, mobile devices, Windows 10 PCs, and many such tasks."
 ---
 
 # Manage Microsoft 365 Business
 
 ## General Microsoft 365 Business admin tasks
 
-Most of the [admin content](/Office365/Admin/admin-home.md) for Office 365 for business also applies for Microsoft 365 Business.
+Most of the [admin content](https://docs.microsoft.com/office365/admin/admin-home) for Office 365 for business also applies to Microsoft 365 Business.
 
-- [Add additional users to Microsoft 365 Business](add-users-m365b.md)
+- [Add more users to Microsoft 365 Business](add-users-m365b.md)
     
 - [View policies and devices](view-policies-and-devices.md)
     
@@ -35,7 +35,7 @@ Most of the [admin content](/Office365/Admin/admin-home.md) for Office 365 for b
     
 - [How do protection features in Microsoft 365 Business map to Intune settings](map-protection-features-to-intune-settings.md)
     
-See the following sections on how to use Microsoft 365 Business to protect your organizations's data on PCs and mobile devices.
+See the following sections on how to use Microsoft 365 Business to protect your organization's data on PCs and mobile devices.
   
 ## Manage mobile devices
 
@@ -43,25 +43,23 @@ See the following sections on how to use Microsoft 365 Business to protect your 
     
 - [Set app protection settings for Android or iOS devices](app-protection-settings-for-android-and-ios.md)
     
-    See [Validate app protection settings on an Android or iOS device](validate-settings-on-android-or-ios.md) to make sure this worked. 
+    To make sure this worked, see [Validate app protection settings on an Android or iOS device](validate-settings-on-android-or-ios.md). 
     
 - [Remove company data from devices](remove-company-data.md)
     
 ## Manage Windows 10 PCs
 
 - [Set up Windows devices for Microsoft 365 Business users](set-up-windows-devices.md)
-    
-- [Automatically install or uninstall Office on Windows 10 devices](auto-install-or-uninstall-office.md)
-    
+
     Read [Prepare for Office client deployment by Microsoft 365 Business](prepare-for-office-client-deployment.md) before you auto-install Office. 
     
 - [Set device protection settings for Windows 10 devices](protection-settings-for-windows-10-pcs.md)
     
-    See [Validate device protection settings on Windows 10 devices](validate-settings-on-windows-10-pcs.md) to make sure this worked. 
+    To make sure this worked, see [Validate device protection settings on Windows 10 devices](validate-settings-on-windows-10-pcs.md). 
     
 - [Set application protection settings for Windows 10 devices](protection-settings-for-windows-10-devices.md)
     
-    See [Validate app protection settings on Windows 10 PCs](validate-protection-settings-on-windows-10-pcs.md) to make sure this worked. 
+    To make sure this worked, see [Validate app protection settings on Windows 10 PCs](validate-protection-settings-on-windows-10-pcs.md). 
     
 - [Remove company data from devices](remove-company-data.md)
     
@@ -83,9 +81,9 @@ The following topics describe how you can use Windows AutoPilot in Microsoft 365
     
 - [About AutoPilot Profile settings](autopilot-profile-settings.md)
     
-## Set up and pre-requisite information
+## Set up and prerequisite information
 
-- [Pre-requisites for protecting data on devices with Microsoft 365 Business](pre-requisites-for-data-protection.md)
+- [Prerequisites for protecting data on devices with Microsoft 365 Business](pre-requisites-for-data-protection.md)
     
 - [Set up Microsoft 365 Business by using the setup wizard](set-up.md)
     
@@ -93,8 +91,4 @@ The following topics describe how you can use Windows AutoPilot in Microsoft 365
     
 - [Enable domain-joined Windows 10 devices to be managed by Microsoft 365 Business](manage-windows-devices.md)
     
-[Additional security features](security-features.md#additional-security-features)
-    
-
-  
-
+- [Additional security features](security-features.md#additional-security-features)

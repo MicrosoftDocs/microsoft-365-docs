@@ -68,13 +68,13 @@ A. Spam and non-spam messages can be submitted to Microsoft for analysis in seve
   
 A. Yes, for example you can get a spam detection report in the Microsoft 365 admin center. This report shows spam volume as a count of unique messages. For more information about reporting, see the following links:
   
-Exchange Online customers: [Monitoring, Reporting, and Message Tracing in Exchange Online](http://technet.microsoft.com/library/87bdeeae-bd80-4a3b-95c5-62fbaf97c2e8.aspx)
+Exchange Online customers: [Monitoring, Reporting, and Message Tracing in Exchange Online](https://technet.microsoft.com/library/87bdeeae-bd80-4a3b-95c5-62fbaf97c2e8.aspx)
   
 Exchange Online Protection customers: [Reporting and message trace in Exchange Online Protection](reporting-and-message-trace-in-exchange-online-protection.md)
   
  **Q. Someone sent me a message and I can't find it. I suspect that it may have been detected as spam. Is there a tool that I can use to find out?**
   
-A. Yes, the message trace tool enables you to follow email messages as they pass through the service, in order to find out what happened to them. For more information about how to use the message trace tool to find out why a message was marked as spam, see [Was a message marked as spam? ](http://technet.microsoft.com/library/aa49e3f9-a5b1-4410-aac2-ddbbf3f5bfb2.aspx#BKMB_Whywasamessagemarkedasspam)
+A. Yes, the message trace tool enables you to follow email messages as they pass through the service, in order to find out what happened to them. For more information about how to use the message trace tool to find out why a message was marked as spam, see [Was a message marked as spam?](https://technet.microsoft.com/library/aa49e3f9-a5b1-4410-aac2-ddbbf3f5bfb2.aspx#BKMB_Whywasamessagemarkedasspam)
   
  **Q. Will the service throttle (rate limit) my mail if my users send outbound spam?**
   
@@ -84,15 +84,15 @@ You can send a notification to a specified email address when a sender is blocke
   
  **Q. Can I use a third-party anti-spam and anti-malware provider in conjunction with Exchange Online?**
   
-A. Yes, you may configure another spam and malware filtering service to protect your Exchange Online mailboxes. To do this for inbound mail, you should redirect your email messages to the third-party provider by changing your MX records to point to the third-party provider, and then redirect the messages to EOP for additional processing. To do this for outbound mail, please configure the message delivery destination to the third-party provider (smart host), as shown in [Scenario: Outbound Smart Hosting](http://technet.microsoft.com/library/431b3f02-4efd-4bd3-94e7-eecd03f8ef5e.aspx).
+A. Yes, you may configure another spam and malware filtering service to protect your Exchange Online mailboxes. To do this for inbound mail, you should redirect your email messages to the third-party provider by changing your MX records to point to the third-party provider, and then redirect the messages to EOP for additional processing. To do this for outbound mail, please configure the message delivery destination to the third-party provider (smart host).
   
  **Q. Does Microsoft have any documentation about how I can protect myself from phishing scams?**
   
 A. Yes we do, please consult the following articles:
   
-[Get help with phishing scams, lottery fraud, and other types of scams](http://go.microsoft.com/fwlink/p/?LinkId=325606)
+[Get help with phishing scams, lottery fraud, and other types of scams](https://go.microsoft.com/fwlink/p/?LinkId=325606)
   
-[Email and web scams: How to help protect yourself](http://go.microsoft.com/fwlink/p/?LinkID=325607)
+[Email and web scams: How to help protect yourself](https://go.microsoft.com/fwlink/p/?LinkID=325607)
   
  **Q. Are spam and malware messages being investigated as to who sent them, or being transferred to law enforcement entities?**
   
@@ -120,7 +120,7 @@ A. The guidelines presented below are best practices for sending outbound email 
     
     [Set up SPF in Office 365 to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
     
-    [Create DNS records for Office 365](https://go.microsoft.com/fwlink/?LinkID=275414)
+    [Domains FAQ](/office365/admin/setup/domains-faq)
     
 5. **Signing email with DKIM, sign with relaxed canonicalization.**
     

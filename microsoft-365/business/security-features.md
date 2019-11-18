@@ -14,12 +14,12 @@ ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
 - MSB365
+- OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: "Learn about the security features that come with Microsoft 365 Business."
-ms.custom: OKR_SMB_M365
 ---
 
 # Microsoft 365 Business security and compliance features
@@ -43,7 +43,7 @@ You can manage many of the Microsoft 365 Business security features in the admin
     
 - [Set device protection settings for Windows 10 devices](protection-settings-for-windows-10-pcs.md) . 
     
-    You can enable [BitLocker](https://go.microsoft.com/fwlink/p/?linkid=871405) encryption to help protect data in case a device is lost or stolen, and enable [Windows Exploit Guard](https://go.microsoft.com/fwlink/p/?linkid=871404) to provide advanced protection against ransomware. 
+    You can enable [BitLocker](https://go.microsoft.com/fwlink/p/?linkid=871405) encryption to help protect data in case a device is lost or stolen, and enable [Windows Exploit Guard](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/enable-exploit-protection) to provide advanced protection against ransomware. 
     
 - [Remove company data from devices](remove-company-data.md)
     
@@ -68,7 +68,7 @@ Advanced features in Microsoft 365 Business are available to help you protect yo
 - **[The full capabilities of Intune in the Azure portal](https://go.microsoft.com/fwlink/p/?linkid=871403)**
     
     Accessing the Intune admin center in the Azure portal allows you to set up additional security features, such as the management of MacOS devices, iPhone, and Android devices along with advanced device management for Windows, that are not available through Microsoft 365 Business admin center.
-- **Same [Conditional Access](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/overview) as Azure AD P1 plan**
+- **Same [Conditional Access](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) as Azure AD P1 plan**
 
     Conditional Access can help protect your organization from sign-in risk, access attempts from an unexpected network or locale, access attempts form risky device types, and so on. Conditional Access policies are enforced after the first authentication is completed, and it uses signals from the first authentication event to determine if the attempted access should be approved, denies, or f more proof (such as second form of identification) is required.
 
@@ -97,9 +97,9 @@ Your Microsoft 365 Business subscription includes features that help you maintai
     
     Exchange Online Archiving license enables messages to be easily archived with continuous data backup. It stores all of a user's emails, including deleted items, in case they are needed later for discovery or restoration. Additionally, you can use different retention policies to preserve email data for litigation holds, eDiscovery, or to meet compliance requirements.
     
-- **[Azure Information Protection](https://go.microsoft.com/fwlink/p/?linkid=871406)**
-    
-    Information protection helps you control access to sensitive information in email and documents with controls like "Do not forward" and "Do not copy." You can also classify sensitive information as "Confidential" and specify how classified information can be shared outside and inside the business. Enterprise-grade encryption is easy to apply to email and documents to keep your information private. Microsoft 365 Business includes all the features of [Azure Information Protection Plan 1](https://go.microsoft.com/fwlink/p/?linkid=871407). You can also install the Azure Information Protection client add-in for Office apps. For more details, see [Azure Information Protection client administrator guide](https://docs.microsoft.com/azure/information-protection/rms-client/client-admin-guide).
+- **[Sensitivity labels](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)**
+
+   Microsoft 365 Business includes all the features of [Azure Information Protection Plan 1](https://go.microsoft.com/fwlink/p/?linkid=871407). With this plan you can create **Sensitivity labels**, that allow you to control access to sensitive information in email and documents with controls like "Do not forward" and "Do not copy." You can also classify sensitive information as "Confidential" and specify how classified information can be shared outside and inside the business. Enterprise-grade encryption is easy to apply to email and documents to keep your information private. You can also install the Azure Information Protection client add-in for Office apps. For more details, see [Azure Information Protection unified labeling client](https://docs.microsoft.com/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history). For Sensitivity labels, install the **AzInfoProtection_UL.exe**.
 
 You can manage these features in the Security &amp; Compliance center and the Intune admin center. Over time the simplified controls will be added to the Microsoft 365 Business admin center.
   

@@ -94,14 +94,14 @@ If needed, [Step 4](windows10-enable-windows-analytics.md) can help you with thi
 <a name="crit-windows10-step5a"></a>
 ## Required: You are using Windows Defender Antivirus or your own antimalware solution
 
-You deployed Windows Defender Antivirus or your own antivirus solution to protect your devices running Windows 10 Enterprise from malicious software. If you deployed Windows Defender Antivirus, you have implemented a reporting method, such as System Center Configuration Manager or Microsoft Intune, to monitor antivirus events and activity.
+You deployed Windows Defender Antivirus or your own antivirus solution to protect your devices running Windows 10 Enterprise from malicious software. If you deployed Windows Defender Antivirus, you have implemented a reporting method, such as Microsoft Endpoint Configuration Manager or Microsoft Intune, to monitor antivirus events and activity.
 
 If needed, [Step 5](windows10-enable-security-features.md#windows10-sec-av) can help you with this requirement.
 
 <a name="crit-windows10-step5b"></a>
 ## Required: You are using Windows Defender Exploit Guard
 
-You deployed Windows Defender Exploit Guard to protect your devices running Windows 10 Enterprise from intrusion and have implemented a reporting method, such as System Center Configuration Manager or Microsoft Intune, to monitor intrusion events and activity.
+You deployed Windows Defender Exploit Guard to protect your devices running Windows 10 Enterprise from intrusion and have implemented a reporting method, such as Configuration Manager or Microsoft Intune, to monitor intrusion events and activity.
 
 If needed, [Step 5](windows10-enable-security-features.md#windows10-sec-eg) can help you with this requirement.
 

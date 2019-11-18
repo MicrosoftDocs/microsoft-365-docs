@@ -28,7 +28,7 @@ This article helps you increase the protection in your Microsoft 365 subscriptio
 
 Before you begin, check your Office 365 Secure Score. Office 365 Secure Score analyzes your Office 365 organization's security based on your regular activities and security settings and assigns a score. Begin by taking note of your current score. Taking the actions recommended in this article increases your score. The goal is not to achieve the max score, but to be aware of opportunities to protect your environment that do not negatively affect productivity for your users. 
 
-For more information, see [Microsoft Secure Score](https://docs.microsoft.com/en-us/office365/securitycompliance/microsoft-secure-score).
+For more information, see [Microsoft Secure Score](https://docs.microsoft.com/office365/securitycompliance/microsoft-secure-score).
 
 
 ## Raise the level of protection against malware in mail
@@ -134,7 +134,7 @@ To create an ATP anti-phishing policy, watch  [this short training video](https:
     
 4. On the **Anti-phishing** page, select **+ Create**. A wizard launches that steps you through defining your anti-phishing policy.
     
-5. Specify the name, description, and settings for your policy as recommended in the chart below. See [Learn about ATP anti-phishing policy options](https://go.microsoft.com/fwlink/?linkid=2016505&amp;clcid=0x409) for more details. 
+5. Specify the name, description, and settings for your policy as recommended in the chart below. See [Learn about ATP anti-phishing policy options](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies) for more details. 
     
 6. After you have reviewed your settings, choose **Create this policy** or **Save**, as appropriate.
     
@@ -150,7 +150,7 @@ To create an ATP anti-phishing policy, watch  [this short training video](https:
 |Add trusted senders and domains  <br/> |Here you can add your own domain, or any other trusted domains.  <br/> |
 |Applied to  <br/> |Select **The recipient domain is**. Under **Any of these**, select **Choose**. Select **+ Add**. Select the check box next to the name of the domain, for example, *contoso.<span><span>com*, in the list, and then select **Add**. Select **Done**.  <br/> |
    
-For more information, see [Set up Office 365 ATP anti-phishing policies](https://go.microsoft.com/fwlink/?linkid=2016505&amp;clcid=0x409).
+For more information, see [Set up Office 365 ATP anti-phishing policies](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies).
   
 ## Protect against malicious attachments, files and links with Advanced Threat Protection (ATP)
 
@@ -203,7 +203,7 @@ To create an ATP safe attachment policy, either watch [this short video](https:/
 |Redirect attachment on detection  <br/> |Enable redirection (select this box)          Enter the admin account or a mailbox setup for quarantine.          Apply the above selection if malware scanning for attachments times out or error occurs (select this box).  <br/> |
 |Applied to  <br/> |The recipient domain is . . . select your domain.  <br/> |
    
-For more information, see [Set up Office 365 ATP anti-phishing policies](https://go.microsoft.com/fwlink/?linkid=2016505&amp;clcid=0x409).
+For more information, see [Set up Office 365 ATP anti-phishing policies](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies).
   
 ### Set up ATP Safe Links in the Security & Compliance Center
 

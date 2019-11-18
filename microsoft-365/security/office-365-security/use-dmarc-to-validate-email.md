@@ -25,12 +25,12 @@ Domain-based Message Authentication, Reporting, and Conformance ([DMARC](https:/
  An email message may contain multiple originator, or sender, addresses. These addresses are used for different purposes. For example, consider these addresses: 
   
 - **"Mail From" address**: Identifies the sender and specifies where to send return notices if any problems occur with the delivery of the message, such as non-delivery notices. This appears in the envelope portion of an email message and is not usually displayed by your email application. This is sometimes called the 5321.MailFrom address or the reverse-path address.
-    
+
 - **"From" address**: The address displayed as the From address by your mail application. This address identifies the author of the email. That is, the mailbox of the person or system responsible for writing the message. This is sometimes called the 5322.From address.
-    
+
 SPF uses a DNS TXT record to provide a list of authorized sending IP addresses for a given domain. Normally, SPF checks are only performed against the 5321.MailFrom address. This means that the 5322.From address is not authenticated when you use SPF by itself. This allows for a scenario where a user can receive a message which passes an SPF check but has a spoofed 5322.From sender address. For example, consider this SMTP transcript:
   
-```
+```text
 S: Helo woodgrovebank.com
 S: Mail from: phish@phishing.contoso.com
 S: Rcpt to: astobes@tailspintoys.com
@@ -44,7 +44,7 @@ S:
 S: We need to verify your banking details.
 S: Please click the following link to verify that we have the right information for your account.
 S: 
-S: http://short.url/woodgrovebank/updateaccount/12-121.aspx
+S: https://short.url/woodgrovebank/updateaccount/12-121.aspx
 S:
 S: Thank you,
 S: Woodgrove Bank
@@ -54,9 +54,9 @@ S: .
 In this transcript, the sender addresses are as follows:
   
 - Mail from address (5321.MailFrom): phish@phishing.contoso.com
-    
+
 - From address (5322.From): security@woodgrovebank.com
-    
+
 If you configured SPF, then the receiving server performs a check against the Mail from address phish@phishing.contoso.com. If the message came from a valid source for the domain phishing.contoso.com then the SPF check passes. Since the email client only displays the From address, the user sees that this message came from security@woodgrovebank.com. With SPF alone, the validity of woodgrovebank.com was never authenticated.
   
 When you use DMARC, the receiving server also performs a check against the From address. In the example above, if there is a DMARC TXT record in place for woodgrovebank.com, then the check against the From address fails.
@@ -68,7 +68,7 @@ Like the DNS records for SPF, the record for DMARC is a DNS text (TXT) record th
   
 Microsoft's DMARC TXT record looks something like this:
   
-```
+```text
 _dmarc.microsoft.com.   3600    IN      TXT     "v=DMARC1; p=none; pct=100; rua=mailto:d@rua.agari.com; ruf=mailto:d@ruf.agari.com; fo=1" 
 ```
 
@@ -84,25 +84,25 @@ You don't have to do a thing to set up DMARC for mail that you receive in Office
 
 If you use Office 365 but you aren't using a custom domain, that is, you use onmicrosoft.com, you don't need to do anything else to configure or implement DMARC for your organization. SPF is already set up for you and Office 365 automatically generates a DKIM signature for your outgoing mail. For more information about this signature, see [Default behavior for DKIM and Office 365](use-dkim-to-validate-outbound-email.md#DefaultDKIMbehavior).
   
- If you have a custom domain or you are using on-premises Exchange servers in addition to Office 365, you need to manually implement DMARC for your outbound mail. Implementing DMARC for your custom domain includes these steps: 
+ If you have a custom domain or you are using on-premises Exchange servers in addition to Office 365, you need to manually implement DMARC for your outbound mail. Implementing DMARC for your custom domain includes these steps:
   
 - [Step 1: Identify valid sources of mail for your domain](use-dmarc-to-validate-email.md#IdentifyValidSources)
-    
+
 - [Step 2: Set up SPF for your domain in Office 365](use-dmarc-to-validate-email.md#ConfigSPF)
-    
+
 - [Step 3: Set up DKIM for your custom domain in Office 365](use-dmarc-to-validate-email.md#ConfigDKIM)
-    
+
 - [Step 4: Form the DMARC TXT record for your domain in Office 365](use-dmarc-to-validate-email.md#CreateDMARCRecord)
-    
+
 ### Step 1: Identify valid sources of mail for your domain
 <a name="IdentifyValidSources"> </a>
 
 If you have already set up SPF then you have already gone through this exercise. However, for DMARC, there are additional considerations. When identifying sources of mail for your domain there are two questions you need to answer:
   
 - What IP addresses send messages from my domain?
-    
+
 - For mail sent from third parties on my behalf, will the 5321.MailFrom and 5322.From domains match?
-    
+
 ### Step 2: Set up SPF for your domain in Office 365
 <a name="ConfigSPF"> </a>
 
@@ -110,7 +110,7 @@ Now that you have a list of all your valid senders you can follow the steps to [
   
 For example, assuming contoso.com sends mail from Exchange Online, an on-premises Exchange server whose IP address is 192.168.0.1, and a web application whose IP address is 192.168.100.100, the SPF TXT record would look like this:
   
-```
+```text
 contoso.com  IN  TXT  " v=spf1 ip4:192.168.0.1 ip4:192.168.100.100 include:spf.protection.outlook.com -all"
 ```
 
@@ -130,39 +130,39 @@ For instructions on setting up DKIM for your domain, including how to set up DKI
 
 Although there are other syntax options that are not mentioned here, these are the most commonly used options for Office 365. Form the DMARC TXT record for your domain in the format:
   
-```
+```text
 _dmarc.domain  TTL  IN  TXT  "v=DMARC1; p=policy; pct=100"
 ```
 
 where:
   
-- *domain* is the domain you want to protect. By default, the record protects mail from the domain and all subdomains. For example, if you specify \_dmarc.contoso.com, then DMARC protects mail from the domain and all subdomains, such as housewares.contoso.com or plumbing.contoso.com. 
-    
-- *TTL* should always be the equivalent of one hour. The unit used for TTL, either hours (1 hour), minutes (60 minutes), or seconds (3600 seconds), will vary depending on the registrar for your domain. 
-    
+- *domain* is the domain you want to protect. By default, the record protects mail from the domain and all subdomains. For example, if you specify \_dmarc.contoso.com, then DMARC protects mail from the domain and all subdomains, such as housewares.contoso.com or plumbing.contoso.com.
+
+- *TTL* should always be the equivalent of one hour. The unit used for TTL, either hours (1 hour), minutes (60 minutes), or seconds (3600 seconds), will vary depending on the registrar for your domain.
+
 - *pct=100* indicates that this rule should be used for 100% of email.
-    
-- *policy* specifies what policy you want the receiving server to follow if DMARC fails. You can set the policy to none, quarantine, or reject. 
-    
+
+- *policy* specifies what policy you want the receiving server to follow if DMARC fails. You can set the policy to none, quarantine, or reject.
+
 For information about which options to use, become familiar with the concepts in [Best practices for implementing DMARC in Office 365](use-dmarc-to-validate-email.md#DMARCbestpractices).
   
 Examples:
   
 - Policy set to none
   
-    ```
+    ```text
     _dmarc.contoso.com 3600 IN  TXT  "v=DMARC1; p=none"
     ```
 
 - Policy set to quarantine
   
-    ```
+    ```text
     _dmarc.contoso.com 3600 IN  TXT  "v=DMARC1; p=quarantine"
     ```
 
 - Policy set to reject
   
-    ```
+    ```text
     _dmarc.contoso.com  3600 IN  TXT  "v=DMARC1; p=reject"
     ```
 
@@ -174,19 +174,19 @@ Once you have formed your record, you need to update the record at your domain r
 You can implement DMARC gradually without impacting the rest of your mail flow. Create and implement a roll out plan that follows these steps. Do each of these steps first with a sub-domain, then other sub-domains, and finally with the top-level domain in your organization before moving on to the next step.
   
 1. Monitor the impact of implementing DMARC
-    
+
     Start with a simple monitoring-mode record for a sub-domain or domain that requests that DMARC receivers send you statistics about messages that they see using that domain. A monitoring-mode record is a DMARC TXT record that has its policy set to none (p=none). Many companies publish a DMARC TXT record with p=none because they are unsure about how much email they may lose by publishing a more restrictive DMARC policy. 
-    
+
     You can do this even before you've implemented SPF or DKIM in your messaging infrastructure. However, you won't be able to effectively quarantine or reject mail by using DMARC until you also implement SPF and DKIM. As you introduce SPF and DKIM, the reports generated through DMARC will provide the numbers and sources of messages that pass these checks, and those that don't. You can easily see how much of your legitimate traffic is or isn't covered by them, and troubleshoot any problems. You'll also begin to see how many fraudulent messages are being sent, and from where.
-    
+
 2. Request that external mail systems quarantine mail that fails DMARC
-    
+
     When you believe that all or most of your legitimate traffic is protected by SPF and DKIM, and you understand the impact of implementing DMARC, you can implement a quarantine policy. A quarantine policy is a DMARC TXT record that has its policy set to quarantine (p=quarantine). By doing this, you are asking DMARC receivers to put messages from your domain that fail DMARC into the local equivalent of a spam folder instead of your customers' inboxes.
-    
+
 3. Request that external mail systems not accept messages that fail DMARC
-    
+
     The final step is implementing a reject policy. A reject policy is a DMARC TXT record that has its policy set to reject (p=reject). When you do this, you're asking DMARC receivers not to accept messages that fail the DMARC checks. 
-    
+
 ## How Office 365 handles outbound email that fails DMARC
 <a name="outbounddmarcfail"> </a>
 
@@ -202,9 +202,16 @@ If the DMARC policy of the sending server is p=reject, EOP marks the message as 
 Office 365 is configured like this because some legitimate email may fail DMARC. For example, a message might fail DMARC if it is sent to a mailing list that then relays the message to all list participants. If Office 365 rejected these messages, people could lose legitimate email and have no way to retrieve it. Instead, these messages will still fail DMARC but they will be marked as spam and not rejected. If desired, users can still get these messages in their inbox through these methods:
   
 - Users add safe senders individually by using their email client
-    
+
 - Administrators create an Exchange mail flow rule (also known as a transport rule) for all users that allows messages for those particular senders. 
-    
+
+## How Office 365 utilizes Authenticated Received Chain (ARC)
+<a name="ARC"> </a>
+
+All hosted mailboxes in Office 365 will now gain the benefit of ARC with improved deliverability of messages and enhanced anti-spoofing protection. ARC preserves the email authentication results from all participating intermediaries, or hops, when an email is routed from the originating server to the recipient mailbox. Before ARC, modifications performed by intermediaries in email routing, like forwarding rules or automatic signatures, could cause DMARC failures by the time the email reached the recipient mailbox. With ARC, the cryptographic preservation of the authentication results allows Office 365 to verify the authenticity of an email's sender. 
+
+Office 365 currently utilizes ARC to verify authentication results when Microsoft is the ARC Sealer, but plan to add support for third party ARC sealers in the future. 
+
 ## Troubleshooting your DMARC implementation
 <a name="dmarctroubleshoot"> </a>
 
@@ -212,7 +219,7 @@ If you have configured your domain's MX records where EOP is not the first entry
   
 If you're an Office 365 customer, and your domain's primary MX record does not point to EOP, you will not get the benefits of DMARC. For example, DMARC won't work if you point the MX record to your on-premises mail server and then route email to EOP by using a connector. In this scenario, the receiving domain is one of your Accepted-Domains but EOP is not the primary MX. For example, suppose contoso.com points its MX at itself and uses EOP as a secondary MX record, contoso.com's MX record looks like the following:
   
-```
+```text
 contoso.com     3600   IN  MX  0  mail.contoso.com
 contoso.com     3600   IN  MX  10 contoso-com.mail.protection.outlook.com
 ```
@@ -225,13 +232,13 @@ All, or most, email will first be routed to mail.contoso.com since it's the prim
 Want more information about DMARC? These resources can help.
   
 - [Anti-spam message headers](anti-spam-message-headers.md) includes the syntax and header fields used by Office 365 for DMARC checks. 
-    
+
 - Take the [DMARC Training Series](https://www.m3aawg.org/activities/training/dmarc-training-series) from M <sup>3</sup>AAWG (Messaging, Malware, Mobile Anti-Abuse Working Group).
-    
+
 - Use the checklist at [dmarcian](https://space.dmarcian.com/deployment/).
-    
+
 - Go directly to the source at [DMARC.org](https://dmarc.org).
-    
+
 ## See also
 <a name="sectionSection8"> </a>
 
@@ -240,4 +247,3 @@ Want more information about DMARC? These resources can help.
 [Set up SPF in Office 365 to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
   
 [Use DKIM to validate outbound email sent from your custom domain in Office 365](use-dkim-to-validate-outbound-email.md)
-

@@ -1,14 +1,34 @@
 # [Microsoft 365 security](index.yml)
 
+## Get started
+### [Microsoft 365 Security for BDMs](Microsoft-365-security-for-bdm.md)
+### [Secure Score](./mtp/microsoft-secure-score.md)
+### [Secure Score (preview)](./mtp/microsoft-secure-score-preview.md)
+### [Chief Information Security Officer (CISO) workshop training](./office-365-security/ciso-workshop.md)
+#### [Module 1 - Microsoft cybersecurity briefing](./office-365-security/ciso-workshop-module-1.md)
+#### [Module 2 - Security management](./office-365-security/ciso-workshop-module-2.md)
+#### [Module 3 - Identity and Zero Trust User Access](./office-365-security/ciso-workshop-module-3.md)
+#### [Module 4a - Threat protection strategy, Part I](./office-365-security/ciso-workshop-module-4a.md)
+#### [Module 4b - Threat protection strategy, Part II](./office-365-security/ciso-workshop-module-4b.md)
+#### [Module 5 - Information protection](./office-365-security/ciso-workshop-module-5.md)
+
+
+## [Identity and device access configurations](../enterprise/microsoft-365-policies-configurations.md)
+### [Prerequisite work](../enterprise/identity-access-prerequisites.md)
+### [Common identity and device access policies](../enterprise/identity-access-policies.md)
+### [Policies for guest and external users](../enterprise/identity-access-policies-guest-access.md)
+### [Recommended Teams access policies](../enterprise/teams-access-policies.md)
+### [Recommended Exchange Online access policies](../enterprise/secure-email-recommended-policies.md)
+### [Recommended SharePoint Online access policies](../enterprise/sharepoint-file-access-policies.md)
+
+
 ## Microsoft Threat Protection
 ### [Overview]()
 #### [What is Microsoft Threat Protection?](mtp/microsoft-threat-protection.md)
 #### [Microsoft 365 security center](mtp/overview-security-center.md)
 
-
 ### [Hunting in Microsoft 365](./mtp/hunting.md)
 
-### [Secure Score](./mtp/microsoft-secure-score.md)
 
 ### [Reports]()
 #### [Monitor and view reports](./mtp/monitoring-and-reporting.md)
@@ -19,6 +39,7 @@
 
 ### [Manage tickets through ServiceNow](./mtp/tickets.md)
 
+
 ## [Office 365 Security]()
 ### [Get started]()
 #### [Office 365 security roadmap](./office-365-security/security-roadmap.md)
@@ -26,14 +47,6 @@
 #### [New Microsoft 365 security center](./office-365-security/microsoft-security-and-compliance.md)
 #### [Permissions in the Security & Compliance Center](./office-365-security/permissions-in-the-security-and-compliance-center.md)
 #### [Give users access to the Security center](./office-365-security/grant-access-to-the-security-and-compliance-center.md)
-
-#### [Chief Information Security Officer (CISO) workshop training](./office-365-security/ciso-workshop.md)
-##### [Module 1 - Microsoft cybersecurity briefing](./office-365-security/ciso-workshop-module-1.md)
-##### [Module 2 - Security management](./office-365-security/ciso-workshop-module-2.md)
-##### [Module 3 - Identity and access management](./office-365-security/ciso-workshop-module-3.md)
-##### [Module 4a - Threat protection strategy, Part I](./office-365-security/ciso-workshop-module-4a.md)
-##### [Module 4b - Threat protection strategy, Part II](./office-365-security/ciso-workshop-module-4b.md)
-##### [Module 5 - Information protection](./office-365-security/ciso-workshop-module-5.md)
 
 
 ### [Protect against threats](./office-365-security/protect-against-threats.md)
@@ -43,7 +56,6 @@
 ##### [Anti-malware protection FAQ](./office-365-security/anti-malware-protection-faq-eop.md)
 ##### [Anti-spam and anti-malware protection in Office 365](./office-365-security/anti-malware-protection.md)
 ##### [Anti-spam protection FAQ](./office-365-security/anti-spam-protection-faq.md)
-##### [Control outbound spam in Office 365](./office-365-security/controlling-outbound-spam-in-Office-365.md)
 ##### [Avoid invalid characters in your spam filter rules and the spam filter policy](./office-365-security/invalid-characters-hosted-spam-filter-rules-policies.md)
 ##### [Safe sender and blocked sender lists in Exchange Online](./office-365-security/safe-sender-and-blocked-sender-lists-faq.md)
 ##### [Safety tips in email messages in Office 365](./office-365-security/safety-tips-in-office-365.md)
@@ -55,7 +67,7 @@
 ##### [Office 365 email anti-spam protection](./office-365-security/anti-spam-protection.md)
 ##### [How policies and protections are combined](./office-365-security/how-policies-and-protections-are-combined.md)
 ##### [How to reduce spam email in Office 365](./office-365-security/reduce-spam-email.md)
-##### [Controlling outbound spam in Office 365](./office-365-security/outbound-spam-controls.md)
+##### [Control outbound spam in Office 365](./office-365-security/outbound-spam-controls.md)
 ##### [Block email spam with the Office 365 spam filter to prevent false negative issues](./office-365-security/reduce-spam-email.md)
 ##### [Zero-hour auto purge - protection against spam and malware](./office-365-security/zero-hour-auto-purge.md)
 ##### [Ensure that spam is routed to each user's Junk Email folder](./office-365-security/ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)
@@ -87,6 +99,7 @@
 #### [Anti-spoofing protection in Office 365](./office-365-security/anti-spoofing-protection.md)
 ##### [Learn more about spoof intelligence](./office-365-security/learn-about-spoof-intelligence.md)
 ##### [Walkthrough spoof intelligence insight](./office-365-security/walkthrough-spoof-intelligence-insight.md)
+##### [Identify suspicious messages in Outlook.com and Outlook on the web](./office-365-security/unverified-sender-feature.md)
 
 #### [What is EOP?](./office-365-security/what-is-eop.md)
 ##### [Support for anonymous inbound email messages over IPv6](./office-365-security/support-for-anonymous-inbound-email-messages-over-ipv6.md)
@@ -125,7 +138,6 @@
 ##### [View information about malicious files](./office-365-security/malicious-files-detected-in-spo-odb-or-teams.md)
 
 
-
 ### [Advanced Threat Protection ](./office-365-security/office-365-atp.md)
 #### [See what's new]()
 ##### [What's new in Office 365 ATP](office-365-security/whats-new-in-office-365-atp.md)
@@ -148,7 +160,7 @@
 
 #### [Threat Explorer (and real-time detections)](./office-365-security/threat-explorer.md)
 ##### [Threat Explorer views](./office-365-security/threat-explorer-views.md)
-##### [Identify suspicious messages in Outlook.com and Outlook on the web](./office-365-security/unverified-sender-feature.md)
+
 
 #### [Integration for greater security]()
 ##### [Integrate Office 365 ATP with Microsoft Defender ATP](./office-365-security/integrate-office-365-ti-with-wdatp.md)
@@ -166,6 +178,7 @@
 #### [Office 365 Security Incident Response](./office-365-security/office365-security-incident-response-overview.md)
 #### [Detect and Remediate Illicit Consent Grants in Office 365](./office-365-security/detect-and-remediate-illicit-consent-grants.md)
 #### [Detect and Remediate Outlook Rules and Custom Forms Injections Attacks in Office 365](./office-365-security/detect-and-remediate-outlook-rules-forms-attack.md)
+#### [Responding to a Compromised Email Account in Office 365](office-365-security/responding-to-a-compromised-email-account.md)
 
 ### [Mail flow]()
 #### [Enable the Report Message add-in](./office-365-security/enable-the-report-message-add-in.md)
@@ -188,16 +201,16 @@
 ##### [Configure groups and users for a political campaign dev/test environment](./office-365-security/configure-groups-and-users-for-a-political-campaign-dev-test-environment.md)
 ##### [Create team sites in a political campaign dev/test environment](./office-365-security/create-team-sites-in-a-political-campaign-dev-test-environment.md)
 
+#### [Secure files in Microsoft Teams](./office-365-security/secure-files-in-teams.md)
+##### [Deploy teams for three tiers of protection for files](./office-365-security/deploy-teams-three-tiers.md)
+##### [Protect files in teams with retention labels and DLP](./office-365-security/deploy-teams-retention-DLP.md)
+##### [Protect files in teams with sensitivity labels](./office-365-security/deploy-teams-sensitivity-labels.md)
+##### [Secure Teams for files in a dev/test environment](./office-365-security/secure-team-for-files-in-a-dev-test-environment.md)
+
 #### [Secure SharePoint Online sites and files](./office-365-security/secure-sharepoint-online-sites-and-files.md)
 ##### [Secure SharePoint Online sites in a dev/test environment](./office-365-security/secure-sharepoint-online-sites-in-a-dev-test-environment.md)
 
-#### [Isolated SharePoint Online team sites](./office-365-security/isolated-sharepoint-online-team-sites.md)
-##### [Design an isolated SharePoint Online team site](./office-365-security/design-an-isolated-sharepoint-online-team-site.md)
-##### [Deploy an isolated SharePoint Online team site](./office-365-security/deploy-an-isolated-sharepoint-online-team-site.md)
-##### [Manage an isolated SharePoint Online team site](./office-365-security/manage-an-isolated-sharepoint-online-team-site.md)
-##### [Isolated SharePoint Online team site dev/test environment](./office-365-security/isolated-sharepoint-online-team-site-dev-test-environment.md)
 #### [SIEM server integration](./office-365-security/siem-server-integration.md)
-
 
 #### [Exchange Online Protection](./office-365-security/exchange-online-protection-overview.md)
 ##### [EOP features](./office-365-security/eop-features.md)
@@ -206,6 +219,7 @@
 
 ##### [Set up your EOP service](./office-365-security/set-up-your-eop-service.md)
 ###### [Best practices for configuring EOP](./office-365-security/best-practices-for-configuring-eop.md)
+###### [Recommended settings for configuring EOP and Office 365 ATP Security](./office-365-security/recommended-settings-for-eop-and-office365-atp.md)
 ###### [Sample script for applying EOP settings to multiple tenants](./office-365-security/sample-script-for-applying-eop-settings-to-multiple-tenants.md)
 ###### [Move domains and settings from one EOP organization to another EOP organization](./office-365-security/move-domains-and-settings-from-one-eop-organization-to-another-eop-organization.md)
 ###### [Switch to EOP from Google Postini, the Barracuda Spam and Virus Firewall, or Cisco IronPort](./office-365-security/switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco.md)
@@ -253,4 +267,8 @@
 
 ### [Office 365 Enterprise](https://docs.microsoft.com/office-365-security/Enterprise)
 ### [Office 365 for Business](https://docs.microsoft.com/office-365-security/admin/admin-home)
-## [Microsoft 365 compliance](https://docs.microsoft.com/microsoft-365/compliance/)
+
+
+
+
+## [Microsoft 365 Compliance](https://docs.microsoft.com/microsoft-365/compliance/)
