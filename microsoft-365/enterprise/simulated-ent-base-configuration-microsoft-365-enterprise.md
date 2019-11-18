@@ -19,6 +19,8 @@ description: Use this Test Lab Guide to create a simulated enterprise test envir
 
 # The simulated enterprise base configuration
 
+*This Test Lab Guide can be used for both Microsoft 365 Enterprise and Office 365 Enterprise test environments.*
+
 This article provides you with step-by-step instructions to create a simplified environment for Microsoft 365 Enterprise that includes:
 
 - A Microsoft 365 E5 trial or paid subscription.

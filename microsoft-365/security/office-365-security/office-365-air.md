@@ -4,7 +4,7 @@ keywords: AIR, autoIR, ATP, automated, investigation, response, remediation, thr
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 10/03/2019
+ms.date: 11/15/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -32,13 +32,15 @@ With AIR, when certain alerts are triggered, one or more security playbooks init
 - [View details about an alert related to an investigation](#view-details-about-an-alert-related-to-an-investigation)
 
 > [!NOTE]
-> You must be a global administrator, security administrator, security operator, or security reader to perform the tasks described in this article. To learn more, see [Microsoft 365 security center: roles and permissions](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions).
+> You must have appropriate permissions to perform the tasks described in this article. For example, you myst be a global administrator, security administrator, security operator, or security reader. [Learn more about Microsoft 365 security center roles and permissions](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions).
 
 AIR is included in the following subscriptions:
 - Microsoft 365 E5
 - Microsoft 365 E5 Security
 - Office 365 E5
 - Office 365 Advanced Threat Protection Plan 2
+
+If you don't have one of these subscriptions, [start a free trial](https://go.microsoft.com/fwlink/p/?LinkID=698279).
 
 ## View details of an investigation
 

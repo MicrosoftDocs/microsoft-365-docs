@@ -223,6 +223,11 @@
           "source_path": "microsoft-365/business/auto-install-or-uninstall-office.md",
           "redirect_url": "https://docs.microsoft.com/microsoft-365/business/help-users-install-office.md",
           "redirect_document_id": true
+        }, 
+        {
+          "source_path": "microsoft-365/compliance/responding-to-a-compromised-email-account.md",
+          "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/responding-to-a-compromised-email-account",
+          "redirect_document_id": true
         }
       ]
   }

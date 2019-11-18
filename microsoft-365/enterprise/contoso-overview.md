@@ -18,8 +18,6 @@ description: Understand the Contoso Corporation as a business and the tiered str
 
 # Overview of the Contoso Corporation
 
-**Summary:** Understand the Contoso Corporation as a business and the tiered structure of its worldwide offices.
-
 ![The Contoso Corporation](./media/contoso-overview/contoso-icon.png)
 
 The Contoso Corporation is a multi-national business with headquarters in Paris, France. It is a conglomerate manufacturing, sales, and support organization with over 100,000 products.
