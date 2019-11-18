@@ -35,6 +35,9 @@ You can define mail flow rules for triggering message encryption with the new OM
 
 1. In a web browser, using a work or school account that has been granted global administrator permissions, [sign in to Office 365](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426#ID0EAABAAA=Web_browser).
 
+> [!Note]
+> External inbound emails cannot be encrypted using mail flow rule and OME. This is the limitation by design. 
+
 2. Choose the **Admin** tile.
 
 3. In the Microsoft 365 admin center, choose **Admin centers** \> **Exchange**.
