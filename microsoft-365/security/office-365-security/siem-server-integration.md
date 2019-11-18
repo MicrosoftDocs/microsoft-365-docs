@@ -37,7 +37,7 @@ Whether you need a SIEM server depends on many factors, such as your organizatio
 
 A SIEM server can receive data from a wide variety of Microsoft 365 services and applications. The following table lists several Microsoft 365 services and applications along with SIEM server inputs, and resources to learn more about SIEM server integration. 
 
-| Microsoft 365 Service or Application | SIEM server inputs | Resources to learn more |
+| Microsoft 365 Service or Application | SIEM server inputs/methods | Resources to learn more |
 | --- | --- | --- |
 | [Office 365 Advanced Threat Protection](office-365-atp.md)  | Audit logs | [SIEM integration with Office 365 Advanced Threat Protection](siem-integration-with-office-365-ti.md) |
 | [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/) | HTTPS endpoint hosted in Azure <br/>REST API| [Pull alerts to your SIEM tools](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-siem) |
