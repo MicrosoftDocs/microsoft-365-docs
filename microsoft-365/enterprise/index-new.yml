@@ -76,7 +76,7 @@ conceptualContent:
           text: Enterprise business continuity management (EBCM)
         - url: ebcm-customer-and-cloud-partner-ebcm-responsibilities.md
           itemType: reference
-          text: Laern about partner responsibilities
+          text: Learn about partner responsibilities
         - url: ebcm-developing-your-ebcm-plan.md
           itemType: get-started
           text: Develop your continuity plan
@@ -99,7 +99,7 @@ additionalContent:
   # Supports up to 3 sections
   sections:
     - title: Other Microsoft 365 resources # < 60 chars (optional)
-      summary: Learrn more about other Microsoft 365 features and services # < 160 chars (optional)
+      summary: Learn more about other Microsoft 365 features and services # < 160 chars (optional)
       items:
         # Card
         - title: Microsoft 365 Compliance
