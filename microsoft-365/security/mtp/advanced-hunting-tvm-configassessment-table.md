@@ -24,7 +24,7 @@ ms.topic: article
 
 Each row in the DeviceTvmSecureConfigurationAssessment table contains an assessment event for a specific security configuration from [Threat & Vulnerability Management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt). Use this reference to check the latest assessment results and determine whether devices are compliant.
 
-For information on other tables in the Advanced hunting schema, see [the Advanced hunting reference](advanced-hunting-reference.md).
+For information on other tables in the Advanced hunting schema, see [the Advanced hunting reference](advanced-hunting-schema-tables.md).
 
 | Column name | Data type | Description |
 |-------------|-----------|-------------|
@@ -40,8 +40,11 @@ For information on other tables in the Advanced hunting schema, see [the Advance
 
 ## Related topics
 
-- [Advanced hunting overview](overview-hunting.md)
-- [All Advanced hunting tables](advanced-hunting-reference.md)
-- [Advanced hunting query best practices](advanced-hunting-best-practices.md)
-- [Query data using Advanced hunting](advanced-hunting.md)
+- [Proactively hunt for threats](advanced-hunting-overview.md)
+- [Learn the query language](advanced-hunting-query-language.md)
+- [Use shared queries](advanced-hunting-shared-queries.md)
+- [Hunt for threats across devices and emails](advanced-hunting-query-emails-devices.md)
+- [Understand the schema](advanced-hunting-schema-tables.md)
+- [Find miscellaneous events](advanced-hunting-misc-events.md)
+- [Apply query best practices](advanced-hunting-best-practices.md)
 - [Overview of Threat & Vulnerability Management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
