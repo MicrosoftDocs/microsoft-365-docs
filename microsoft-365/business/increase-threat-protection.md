@@ -80,7 +80,7 @@ To create a mail transport rule:
    
 For more information, see:
   
-- [How to deal with ransomware](https://go.microsoft.com/fwlink/?linkid=2016501&amp;clcid=0x409)
+- [How to deal with ransomware](https://go.microsoft.com/fwlink/?linkid=2016501)
     
 - [Restore your OneDrive](https://support.office.com/article/fa231298-759d-41cf-bcd0-25ac53eb8a15.aspx)
 
@@ -172,7 +172,7 @@ To create an ATP safe attachment policy, either watch [this short video](https:/
 |Redirect attachment on detection  <br/> |Enable redirection (select this box)          Enter the admin account or a mailbox setup for quarantine.          Apply the above selection if malware scanning for attachments times out or error occurs (select this box).  <br/> |
 |Applied to  <br/> |The recipient domain is . . . select your domain.  <br/> |
    
-For more information, see [Set up Office 365 ATP anti-phishing policies](https://go.microsoft.com/fwlink/?linkid=2016505&amp;clcid=0x409).
+For more information, see [Set up Office 365 ATP anti-phishing policies](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies).
   
 
 
@@ -227,4 +227,4 @@ For more information, see [Office 365 ATP safe links](https://go.microsoft.com/f
 
 3. Once the results appear, select the start next to **Microsoft Intune** to make it a favorite and easy to find later.
 
-In addition to the admin center, you can use Intune to enroll and manage your organization's devices. For more information, see [Capabilities by enrollment method for Windows devices](https://docs.microsoft.com/intune/enrollment-method-capabs) and [Enrollment options for devices managed by Intune](https://docs.microsoft.com/intune/enrollment-options).
+In addition to the admin center, you can use Intune to enroll and manage your organization's devices. For more information, see [Capabilities by enrollment method for Windows devices](https://docs.microsoft.com/intune/enrollment/enrollment-method-capab) and [Enrollment options for devices managed by Intune](https://docs.microsoft.com/intune/enrollment-options).
