@@ -1,7 +1,7 @@
 ---
-title: MachineNetworkInfo
-description: MachineNetworkInfo table in the Advanced hunting schema
-keywords: advanced hunting, atp query, query atp data, intellisense, atp telemetry, events, events telemetry, azure log analytics, column name, data type, description, machinenetworkinfo
+title: MachineNetworkInfo table in the Advanced hunting schema
+description: Learn about network configuration information in the MachineNetworkInfo table of the Advanced hunting schema
+keywords: advanced hunting, threat hunting, cyber threat hunting, search, query, telemetry, schema reference, kusto, table, column, data type, description, machinenetworkinfo, device, machine, mac, ip, adapter, dns, dhcp, gateway, tunnel
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -22,9 +22,9 @@ ms.topic: article
 **Applies to:**
 - Microsoft Threat Protection
 
-The MachineNetworkInfo table in the advanced hunting schema contains information about networking configuration of machines, including network adapters, IP and MAC addresses, and connected networks or domains. Use this reference to construct queries that return information from this table.
+The MachineNetworkInfo table in the [Advanced hunting](advanced-hunting-overview.md) schema contains information about networking configuration of machines, including network adapters, IP and MAC addresses, and connected networks or domains. Use this reference to construct queries that return information from this table.
 
-For information on other tables in the advanced hunting schema, [see the advanced hunting reference](advanced-hunting-schema-tables.md).
+For information on other tables in the Advanced hunting schema, [see the Advanced hunting reference](advanced-hunting-schema-tables.md).
 
 | Column name | Data type | Description |
 |-------------|-----------|-------------|
@@ -45,10 +45,9 @@ For information on other tables in the advanced hunting schema, [see the advance
 | IPAddresses | string | JSON array containing all the IP addresses assigned to the adapter, along with their respective subnet prefix and IP address space, such as public, private, or link-local |
 
 ## Related topics
-- [Proactively hunt for threats](advanced-hunting.md)
-- [Learn the query language](advanced-hunting-language-overview.md)
+- [Proactively hunt for threats](advanced-hunting-overview.md)
+- [Learn the query language](advanced-hunting-query-language.md)
 - [Use shared queries](advanced-hunting-shared-queries.md)
 - [Hunt for threats across devices and emails](advanced-hunting-query-emails-devices.md)
 - [Understand the schema](advanced-hunting-schema-tables.md)
-- [Find miscellaneous events](advanced-hunting-misc-events.md)
 - [Apply query best practices](advanced-hunting-best-practices.md)

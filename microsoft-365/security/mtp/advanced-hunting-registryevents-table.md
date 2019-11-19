@@ -1,7 +1,7 @@
 ---
-title: RegistryEvents
-description: RegistryEvents table in the Advanced hunting schema
-keywords: advanced hunting, atp query, query atp data, intellisense, atp telemetry, events, events telemetry, azure log analytics, column name, data type, description, registryevents
+title: RegistryEvents table in the Advanced hunting schema
+description: Learn about registry events you can query from the RegistryEvents table of the Advanced hunting schema
+keywords: advanced hunting, threat hunting, cyber threat hunting, search, query, telemetry, schema reference, kusto, table, column, data type, registryevents, registry, key, subkey, value
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -20,11 +20,11 @@ ms.topic: article
 # RegistryEvents
 
 **Applies to:**
-- Microsoft Threat Protection
+- Microsoft 365 security center
 
-The RegistryEvents table in the advanced hunting schema contains information about the creation and modification of registry entries. Use this reference to construct queries that return information from this table.
+The RegistryEvents table in the [Advanced hunting](advanced-hunting-overview.md) schema contains information about the creation and modification of registry entries. Use this reference to construct queries that return information from this table.
 
-For information on other tables in the advanced hunting schema, [see the advanced hunting reference](advanced-hunting-schema-tables.md).
+For information on other tables in the Advanced hunting schema, [see the Advanced hunting reference](advanced-hunting-schema-tables.md).
 
 | Column name | Data type | Description |
 |-------------|-----------|-------------|
@@ -57,10 +57,9 @@ For information on other tables in the advanced hunting schema, [see the advance
 | AppGuardContainerId | string | Identifier for the virtualized container used by Application Guard to isolate browser activity |
 
 ## Related topics
-- [Proactively hunt for threats](advanced-hunting.md)
-- [Learn the query language](advanced-hunting-language-overview.md)
+- [Proactively hunt for threats](advanced-hunting-overview.md)
+- [Learn the query language](advanced-hunting-query-language.md)
 - [Use shared queries](advanced-hunting-shared-queries.md)
 - [Hunt for threats across devices and emails](advanced-hunting-query-emails-devices.md)
 - [Understand the schema](advanced-hunting-schema-tables.md)
-- [Find miscellaneous events](advanced-hunting-misc-events.md)
 - [Apply query best practices](advanced-hunting-best-practices.md)

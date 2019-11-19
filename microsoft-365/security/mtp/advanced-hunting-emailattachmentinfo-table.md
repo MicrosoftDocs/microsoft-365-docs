@@ -1,7 +1,7 @@
 ---
-title: EmailAttachmentInfo
-description: EmailAttachmentInfo table in the advanced hunting schema
-keywords: advanced hunting, atp query, query atp data, intellisense, atp telemetry, events, events telemetry, azure log analytics, column name, data type, description, EmailAttachmentInfo
+title: EmailAttachmentInfo table in the Advanced hunting schema
+description: Learn about email attachment information in the EmailAttachmentInfo table of the Advanced hunting schema
+keywords: advanced hunting, threat hunting, cyber threat hunting, search, query, telemetry, schema reference, kusto, table, column, data type, description, EmailAttachmentInfo, network message id, sender, recipient, attachment id, attachment name, malware verdict
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -20,11 +20,11 @@ ms.topic: article
 # EmailAttachmentInfo
 
 **Applies to:**
-- Microsoft Threat Protection
+- Microsoft 365 security center
 
-The EmailAttachmentInfo table in the advanced hunting schema contains information about attachments on emails processed by Office 365 ATP. Use this reference to construct queries that return information from this table.
+The EmailAttachmentInfo table in the [Advanced hunting](advanced-hunting-overview.md) schema contains information about attachments on emails processed by Office 365 ATP. Use this reference to construct queries that return information from this table.
 
-For information on other tables in the advanced hunting schema, [see the advanced hunting reference](advanced-hunting-schema-tables.md).
+For information on other tables in the Advanced hunting schema, [see the Advanced hunting reference](advanced-hunting-schema-tables.md).
 
 | Column name | Data type | Description |
 |-------------|-----------|-------------|
@@ -40,10 +40,9 @@ For information on other tables in the advanced hunting schema, [see the advance
 | MalwareDetectionMethod | string | Method used to detect malware in the email: Antimalware engine, File reputation, ATP Safe Attachments |
 
 ## Related topics
-- [Proactively hunt for threats](advanced-hunting.md)
-- [Learn the query language](advanced-hunting-language-overview.md)
+- [Proactively hunt for threats](advanced-hunting-overview.md)
+- [Learn the query language](advanced-hunting-query-language.md)
 - [Use shared queries](advanced-hunting-shared-queries.md)
 - [Hunt for threats across devices and emails](advanced-hunting-query-emails-devices.md)
 - [Understand the schema](advanced-hunting-schema-tables.md)
-- [Find miscellaneous events](advanced-hunting-misc-events.md)
 - [Apply query best practices](advanced-hunting-best-practices.md)

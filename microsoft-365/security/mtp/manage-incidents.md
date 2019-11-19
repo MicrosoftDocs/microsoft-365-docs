@@ -29,10 +29,10 @@ You can manage incidents by selecting an incident from the **Incidents queue**.
 You can edit the name of an incident, set its classification, resolve it, or assign the incident to yourself. 
 
 ## Edit incident name
-By default, 
+By default, an incident is assigned a number. You can modify the incident name to better align with your preferred naming convention.
  
 ## Assign incidents
-If an incident has not been assigned yet, you can select **Assign to me** to assign the incident to yourself. Doing so assumes ownership of not just the incident, but also all the alerts associated with it.
+If an incident has not yet been assigned, you can select **Assign to me** to assign the incident to yourself. Doing so assumes ownership of not just the incident, but also all the alerts associated with it.
 
 ## Set status and classification
 ### Incident status

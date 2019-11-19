@@ -1,7 +1,7 @@
 ---
-title: Data tables in the Microsoft 365 security center advanced hunting schema
-description: Learn about the tables in the Microsoft 365 advanced hunting schema
-keywords: advanced hunting, atp query, query atp data, intellisense, atp telemetry, events, events telemetry, azure log analytics, schema reference
+title: Data tables in the Microsoft 365 Advanced hunting schema
+description: Learn about the tables in the Advanced hunting schema to understand the data you can run threat hunting queries on
+keywords: advanced hunting, threat hunting, cyber threat hunting, search, query, telemetry, schema reference, kusto, table, data
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Understand the advanced hunting schema
+# Understand the Advanced hunting schema
 
 **Applies to**:
 - Microsoft 365 security center
 
-The advanced hunting schema is made up of multiple tables that provide either event information, or information about certain entities. To effectively build queries that span multiple tables, you need to understand the tables and the columns in the Advanced hunting schema.
+The [Advanced hunting](advanced-hunting-overview.md) schema is made up of multiple tables that provide either event information or information about machines and entities. To effectively build queries that span multiple tables, you need to understand the tables and the columns in the Advanced hunting schema.
 
 ## Schema tables
 
@@ -45,9 +45,8 @@ The following reference lists all the tables in the schema. Each table name link
 | **[EmailUrlInfo](advanced-hunting-emailurlinfo-table.md)** | Information about URLs on Office 365 emails |
 
 ## Related topics
-- [Proactively hunt for threats](advanced-hunting.md)
-- [Learn the query language](advanced-hunting-language-overview.md)
+- [Proactively hunt for threats](advanced-hunting-overview.md)
+- [Learn the query language](advanced-hunting-query-language.md)
 - [Use shared queries](advanced-hunting-shared-queries.md)
 - [Hunt for threats across devices and emails](advanced-hunting-query-emails-devices.md)
-- [Find miscellaneous events](advanced-hunting-misc-events.md)
 - [Apply query best practices](advanced-hunting-best-practices.md)

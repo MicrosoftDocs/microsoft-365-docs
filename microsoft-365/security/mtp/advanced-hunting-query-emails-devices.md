@@ -1,7 +1,7 @@
 ---
-title: Find threats across devices and emails using advanced hunting
+title: Find threats across devices and emails using Advanced hunting
 description: Study common hunting scenarios and sample queries that cover devices and emails.
-keywords: advanced hunting, office 365 data, tolower, emails, atp query, query atp data, atp telemetry, events, events telemetry, azure log analytics
+keywords: advanced hunting, Office365 data, tolower, Windows devices, Office365 emails normalize, emails, threat hunting, cyber threat hunting, search, query, telemetry
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -22,12 +22,12 @@ ms.topic: article
 **Applies to**:
 - Microsoft 365 security center
 
-Advanced hunting on Microsoft 365 security center allows you to proactively hunt for threats across your Windows devices and Office 365 emails. Here are some hunting scenarios and sample queries that can help you explore how you might construct queries covering both devices and emails.
+[Advanced hunting](advanced-hunting-overview.md) on Microsoft 365 security center allows you to proactively hunt for threats across your Windows devices and Office 365 emails. Here are some hunting scenarios and sample queries that can help you explore how you might construct queries covering both devices and emails.
 
 ## Normalize common values
 Before running queries across [tables that cover devices and emails](advanced-hunting-schema-tables.md), you might need to consider the following techniques needed to normalize values:
 
--  File SHA-256 values in the **[EmailEvents](advanced-hunting-emailevents-table.md)** table are currently in upper case. To unify this table with other tables using file SHA-256 values, use the `tolower()` function ([see Kusto reference](https://docs.microsoft.com/en-us/azure/kusto/query/tolowerfunction)). The example below uses the `project` operator to hold the lower case SHA-256 values in a column called `LowerSha`. 
+-  File SHA-256 values in the **[EmailEvents](advanced-hunting-emailevents-table.md)** table are currently in upper case. To unify this table with other tables using file SHA-256 values, use the `tolower()` function ([see Kusto reference](https://docs.microsoft.com/azure/kusto/query/tolowerfunction)). The example below uses the `project` operator to hold the lower case SHA-256 values in a column called `LowerSha`. 
 
     ```
     | project LowerSha = tolower(SHA256);
@@ -92,10 +92,9 @@ ProcessCreationEvents
 ```
 
 ## Related topics
-- [Proactively hunt for threats](advanced-hunting.md)
-- [Learn the query language](advanced-hunting-language-overview.md)
+- [Proactively hunt for threats](advanced-hunting-overview.md)
+- [Learn the query language](advanced-hunting-query-language.md)
 - [Use shared queries](advanced-hunting-shared-queries.md)
 - [Hunt for threats across devices and emails](advanced-hunting-query-emails-devices.md)
 - [Understand the schema](advanced-hunting-schema-tables.md)
-- [Find miscellaneous events](advanced-hunting-misc-events.md)
 - [Apply query best practices](advanced-hunting-best-practices.md)

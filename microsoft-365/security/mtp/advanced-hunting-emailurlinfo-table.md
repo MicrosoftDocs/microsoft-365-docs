@@ -1,7 +1,7 @@
 ---
-title: EmailUrlInfo
-description: EmailUrlInfo table in the advanced hunting schema
-keywords: advanced hunting, atp query, query atp data, intellisense, atp telemetry, events, events telemetry, azure log analytics, column name, data type, description, emailurlinfo
+title: EmailUrlInfo table in the Advanced hunting schema
+description: Learn about URL or link information in the EmailUrlInfo table of the Advanced hunting schema
+keywords: advanced hunting, threat hunting, cyber threat hunting, search, query, telemetry, schema reference, kusto, table, column, data type, description, EmailUrlInfo, network message id, url, link
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -20,11 +20,11 @@ ms.topic: article
 # EmailUrlInfo
 
 **Applies to:**
-- Microsoft Threat Protection
+- Microsoft 365 security center
 
-The EmailUrlInfo table in the advanced hunting schema contains information about URLs on emails and attachments processed by Office 365 ATP. Use this reference to construct queries that return information from this table.
+The EmailUrlInfo table in the [Advanced hunting](advanced-hunting-overview.md) schema contains information about URLs on emails and attachments processed by Office 365 ATP. Use this reference to construct queries that return information from this table.
 
-For information on other tables in the advanced hunting schema, [see the advanced hunting reference](advanced-hunting-schema-tables.md).
+For information on other tables in the Advanced hunting schema, [see the Advanced hunting reference](advanced-hunting-schema-tables.md).
 
 | Column name | Data type | Description |
 |-------------|-----------|-------------|
@@ -34,10 +34,9 @@ For information on other tables in the advanced hunting schema, [see the advance
 | Url | string | Full URL in the email subject, body, or attachment |
 
 ## Related topics
-- [Proactively hunt for threats](advanced-hunting.md)
-- [Learn the query language](advanced-hunting-language-overview.md)
+- [Proactively hunt for threats](advanced-hunting-overview.md)
+- [Learn the query language](advanced-hunting-query-language.md)
 - [Use shared queries](advanced-hunting-shared-queries.md)
 - [Hunt for threats across devices and emails](advanced-hunting-query-emails-devices.md)
 - [Understand the schema](advanced-hunting-schema-tables.md)
-- [Find miscellaneous events](advanced-hunting-misc-events.md)
 - [Apply query best practices](advanced-hunting-best-practices.md)

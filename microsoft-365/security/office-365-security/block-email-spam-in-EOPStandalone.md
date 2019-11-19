@@ -38,7 +38,7 @@ Is the spam primarily bulk mail, for example, newsletters or promotions? You can
   
 ![Setting the bulk mail filter in Exchange Online](../media/a45095c2-269d-45b8-a76c-999b5e78da68.png)
   
-### Block email spam using spam filter block lists
+## Block email spam using spam filter block lists
 
 [Configure your spam filter policies](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) to add the sender address to the sender block list or domain to the domain block list in the spam filter. Emails from a sender or domain on a spam filter block list will marked as spam. 
   

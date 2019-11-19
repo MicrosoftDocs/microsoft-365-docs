@@ -1,7 +1,7 @@
 ---
-title: Advanced hunting best practices
-description: Learn about advanced hunting best practices to improve query performance and avoid exhausting resources.
-keywords: advanced hunting, best practices, keyword, filters, atp query, query atp data, intellisense, atp telemetry, events, events telemetry, azure log analytics
+title: Advanced hunting best practices in Microsoft 365
+description: Learn how to construct fast, efficient, and error-free threat hunting queries when using Advanced hunting
+keywords: advanced hunting, threat hunting, cyber threat hunting, search, query, telemetry, custom detections, schema, kusto, avoid timeout, command lines, process id
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -17,33 +17,32 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Apply query best practices in advanced hunting
+# Advanced hunting query best practices
 
 **Applies to**:
 - Microsoft 365 security center
 
-## Performance best practices
-The following best practices serve as a guideline of query performance best practices and for you to get faster results and be able to run complex queries. 
-- When trying new queries, always use `limit` to avoid extremely large result sets or use `count` to assess the size of the result set.
-- Use time filters first. Ideally, limit your queries to 7 days.
+## Optimize query performance
+Apply these recommendations to get results faster and avoid timeouts while running complex queries:
+- When trying new queries, always use `limit` to avoid extremely large result sets. You can also initially assess the size of the result set using `count`.
+- Use time filters first. Ideally, limit your queries to even days.
 - Put filters that are expected to remove most of the data in the beginning of the query, right after the time filter.
 - Use the `has` operator over `contains` when looking for full tokens.
-- Use looking in specific column rather than using full text search across all columns.
-- When joining between two tables, specify the table with fewer rows first.
-- When joining between two tables, project only needed columns from both sides of the join.
+- Look in a specific column rather than running full text searches across all columns.
+- When joining tables, specify the table with fewer rows first.
+- `project` only the necessary columns from tables you've joined.
 
 >[!Tip]
->For more guidance on improving query performance, read [Kusto query best practices](https://docs.microsoft.com/en-us/azure/kusto/query/best-practices).
+>For more guidance on improving query performance, read [Kusto query best practices](https://docs.microsoft.com/azure/kusto/query/best-practices).
 
 ## Query tips and pitfalls
 
-### Using process IDs
-Process IDs (PIDs) are recycled in Windows and reused for new processes and therefore can't serve as a unique identifier for a specific process.
-To address this issue, Microsoft Defender ATP created the time process. To get a unique identifier for a process on a specific machine, use the process ID together with the process creation time.
+### Queries with process IDs
+Process IDs (PIDs) are recycled in Windows and reused for new processes. On their own, they can't serve as unique identifiers for specific processes.
 
-So, when you join data based on a specific process or summarize data for each process, you'll need to use a machine identifier (either `MachineId` or `ComputerName`), a process ID (`ProcessId` or `InitiatingProcessId`) and the process creation time (`ProcessCreationTime` or `InitiatingProcessCreationTime`)
+To get a unique identifier for a process on a specific machine, use the process ID together with the process creation time. When you join or summarize data around processes, include columns for the machine identifier (either `MachineId` or `ComputerName`), the process ID (`ProcessId` or `InitiatingProcessId`), and the process creation time (`ProcessCreationTime` or `InitiatingProcessCreationTime`)
 
-The following example query is created to find processes that access more than 10 IP addresses over port 445 (SMB), possibly scanning for file shares.
+The following example query finds processes that access more than 10 IP addresses over port 445 (SMB), possibly scanning for file shares.
 
 Example query:
 ```
@@ -55,22 +54,20 @@ NetworkCommunicationEvents
 
 The query summarizes by both `InitiatingProcessId` and `InitiatingProcessCreationTime` so that it looks at a single process, without mixing multiple processes with the same process ID.
 
-### Using command lines
+### Queries with command lines
 
 Command lines can vary. When applicable, filter on file names and do fuzzy matching.
 
-There are numerous ways to construct a command line to accomplish a task.
+There are numerous ways to construct a command line to accomplish a task. For example, an attacker could reference an image file with or without a path, without a file extension, using environment variables, or with quotes. In addition, the attacker could also change the order of parameters or add multiple quotes and spaces.
 
-For example, a malicious attacker could specify the process image file name without a path, with full path, without the file extension, using environment variables, add quotes, and others. In addition, the attacker can also change the order of some parameters, add multiple quotes or spaces, and much more.
+To create more durable queries using command lines, apply the following practices:
 
-To create more durable queries using command lines, we recommended the following guidelines:
+- Identify the known processes (such as *net.exe* or *psexec.exe*) by matching on the filename fields, instead of filtering on the command-line field.
+- When querying for command-line arguments, don't look for an exact match on multiple unrelated arguments in a certain order. Instead, use regular expressions or use multiple separate contains operators.
+- Use case insensitive matches. For example, use `=~`, `in~`, and `contains` instead of `==`, `in`, and `contains_cs`
+- To mitigate DOS command-line obfuscation techniques, consider removing quotes, replacing commas with spaces, and replacing multiple consecutive spaces with a single space. Note that there are more complex DOS obfuscation techniques that require other approaches, but these can help address the most common ones.
 
-- Identify the known processes (such as net.exe, psexec.exe, and others) by matching on the filename fields, instead of filtering on the command line field.
-- When querying for command line arguments, don't look for an exact match on multiple unrelated arguments in a certain order. Instead, use regular expressions or use multiple separate contains operators.
-- Use case insensitive matches. For example, use `=~`, `in~`, `contains` instead of `==`, `in` or `contains_cs`
-- To mitigate DOS command line obfuscation techniques, consider removing quotes, replacing commas with spaces, and replacing multiple consecutive spaces with a single space. This is just the start of handling DOS obfuscation techniques, but it does mitigate the most common ones.
-
-The following example query shows various ways to construct a query that looks for the file *net.exe* to stop the Windows Defender Firewall service:
+The following examples show various ways to construct a query that looks for the file *net.exe* to stop the Windows Defender Firewall service:
 
 ```
 // Non-durable query - do not use
@@ -89,9 +86,8 @@ ProcessCreationEvents
 | where CanonicalCommandLine contains "stop" and CanonicalCommandLine contains "MpsSvc" 
 ```
 ## Related topics
-- [Proactively hunt for threats](advanced-hunting.md)
-- [Learn the query language](advanced-hunting-language-overview.md)
+- [Proactively hunt for threats](advanced-hunting-overview.md)
+- [Learn the query language](advanced-hunting-query-language.md)
 - [Use shared queries](advanced-hunting-shared-queries.md)
 - [Hunt for threats across devices and emails](advanced-hunting-query-emails-devices.md)
 - [Understand the schema](advanced-hunting-schema-tables.md)
-- [Find miscellaneous events](advanced-hunting-misc-events.md)

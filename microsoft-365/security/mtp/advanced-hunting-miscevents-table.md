@@ -1,7 +1,7 @@
 ---
-title: MiscEvents
-description: MiscEvents table in the advanced hunting schema
-keywords: advanced hunting, atp query, query atp data, intellisense, atp telemetry, events, events telemetry, azure log analytics, column name, data type, description, miscEvents
+title: MiscEvents table in the Advanced hunting schema
+description: Learn about antivirus, firewall, and other event types in the miscellaneous events (MiscEvents) table of the Advanced hunting schema
+keywords: advanced hunting, threat hunting, cyber threat hunting, search, query, telemetry, schema reference, kusto, table, column, data type, security events, antivirus, firewall, exploit guard
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -20,13 +20,11 @@ ms.topic: article
 # MiscEvents
 
 **Applies to:**
-- Microsoft Threat Protection
+- Microsoft 365 security center
 
-The MiscEvents table in the advanced hunting schema contains information about multiple event types, including events triggered by security controls, such as Windows Defender Antivirus and exploit protection. Use this reference to construct queries that return information from this table.
+The miscellaneous events or MiscEvents table in the [Advanced hunting](advanced-hunting-overview.md) schema contains information about various event types, including events triggered by security controls, such as Windows Defender Antivirus and exploit protection. Use this reference to construct queries that return information from this table.
 
-To understand how to use the MiscEvents table to locate specific events, such as antivirus detections or firewall blocks, [read about the ActionTypes in the MiscEvents table](advanced-hunting-misc-events.md).
-
-For information on other tables in the advanced hunting schema, [see the advanced hunting reference](advanced-hunting-schema-tables.md).
+For information on other tables in the Advanced hunting schema, [see the Advanced hunting reference](advanced-hunting-schema-tables.md).
 
 
 | Column name | Data type | Description |
@@ -34,7 +32,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | EventTime | datetime | Date and time when the event was recorded |
 | MachineId | string | Unique identifier for the machine in the service |
 | ComputerName | string | Fully qualified domain name (FQDN) of the machine |
-| ActionType | string | Type of activity that triggered the event. [View supported event types](advanced-hunting-misc-events.md) |
+| ActionType | string | Type of activity that triggered the event |
 | FileName | string | Name of the file that the recorded action was applied to |
 | FolderPath | string | Folder containing the file that the recorded action was applied to |
 | SHA1 | string | SHA-1 of the file that the recorded action was applied to |
@@ -79,10 +77,9 @@ For information on other tables in the advanced hunting schema, [see the advance
 | AppGuardContainerId | string | Identifier for the virtualized container used by Application Guard to isolate browser activity |
 
 ## Related topics
-- [Proactively hunt for threats](advanced-hunting.md)
-- [Learn the query language](advanced-hunting-language-overview.md)
+- [Proactively hunt for threats](advanced-hunting-overview.md)
+- [Learn the query language](advanced-hunting-query-language.md)
 - [Use shared queries](advanced-hunting-shared-queries.md)
 - [Hunt for threats across devices and emails](advanced-hunting-query-emails-devices.md)
 - [Understand the schema](advanced-hunting-schema-tables.md)
-- [Find miscellaneous events](advanced-hunting-misc-events.md)
 - [Apply query best practices](advanced-hunting-best-practices.md)
