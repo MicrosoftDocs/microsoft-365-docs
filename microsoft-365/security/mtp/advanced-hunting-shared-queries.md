@@ -61,5 +61,4 @@ Microsoft security researchers regularly share Advanced hunting queries in a [de
 - [Learn the query language](advanced-hunting-query-language.md)
 - [Hunt for threats across devices and emails](advanced-hunting-query-emails-devices.md)
 - [Understand the schema](advanced-hunting-schema-tables.md)
-- [Find miscellaneous events](advanced-hunting-misc-events.md)
 - [Apply query best practices](advanced-hunting-best-practices.md)
