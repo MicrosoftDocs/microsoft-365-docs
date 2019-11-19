@@ -16,6 +16,10 @@ ms.collection: m365-security-compliance
 
 Use Insider Risk policies to monitor employee activities and to remediate risk alerts in your organization. For more information about how Insider Risk policies can help you manage risk in your organization, see [Insider Risk Management in Microsoft 365](insider-risk-overview.md).
 
+## Before you begin
+
+CONFIRM REQUIREMENTS AND BEST PRACTICES
+
 Follow these steps to set up and use Insider Risk in your Microsoft 365 organization:
 
 ## Step 1 (required): Confirm your Microsoft 365 subscription
