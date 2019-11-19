@@ -20,6 +20,8 @@ description: "Summary: Configure and demonstrate password hash synchronization a
 
 # Password hash synchronization for your Microsoft 365 test environment
 
+*This Test Lab Guide can be used for both Microsoft 365 Enterprise and Office 365 Enterprise test environments.*
+
 Many organizations use Azure AD Connect and password hash synchronization to synchronize the set of accounts in their on-premises Active Directory Domain Services (AD DS) forest to the set of accounts in the Azure AD tenant of their Office 365 and EMS E5 subscriptions. This article describes how you can add password hash synchronization to your Microsoft 365 test environment, resulting in the following configuration:
   
 ![The simulated enterprise with password hash synchronization test environment](media/password-hash-sync-m365-ent-test-environment/Phase3.png)

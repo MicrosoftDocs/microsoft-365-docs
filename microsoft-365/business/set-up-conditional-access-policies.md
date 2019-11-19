@@ -25,7 +25,7 @@ description: "Learn how to set  up conditional access policies for Microsoft 365
 
 # Set up conditional access policies
 
-[Conditional access](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) policies add substancial additional security. Microsoft provides a set of baseline conditional access policies that are recommended for all customers. Baseline policies are a set of predefined policies that help protect organizations against many common attacks. These common attacks can include password spray, replay, and phishing.
+[Conditional access](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) policies add substantial additional security. Microsoft provides a set of baseline conditional access policies that are recommended for all customers. Baseline policies are a set of predefined policies that help protect organizations against many common attacks. These common attacks can include password spray, replay, and phishing.
 
 These policies require admins and users to enter a second form of authentication (called multifactor authentication, or MFA) when certain conditions are met. For example, if a user is signing in from a different country, the sign-in might be considered risky and the user must provide an additional form of authentication. 
 
@@ -53,4 +53,4 @@ For more information about these policies, see [What are baseline policies](http
  - [Block legacy authentication](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-legacy-auth)
   - [Require MFA for service management](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-azure)
 
-You can set up many additional policies, such as requiring approved client apps. See the [Conditional Access Documentation](https://docs.microsoft.com/azure/active-directory/conditional-access/) for more information.
+You can set up many additional policies, such as requiring approved client apps. For more information, see the [Conditional Access Documentation](https://docs.microsoft.com/azure/active-directory/conditional-access/).

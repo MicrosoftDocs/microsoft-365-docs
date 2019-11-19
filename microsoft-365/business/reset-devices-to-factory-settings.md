@@ -28,7 +28,7 @@ description: "Learn how to use Microsoft 365 Business to factory reset your Wind
 
 A factory reset reverts a device to the original settings it had when the device was purchased. All apps and data on the device that were installed after purchase are removed. You can use Microsoft 365 Business to factory reset Windows 10 devices you manage.
   
-1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.. 
+1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
     
 2. In the left nav, choose **Devices** \> **Manage**.
 

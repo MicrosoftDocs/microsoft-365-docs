@@ -18,8 +18,8 @@ description: "Summary: Create a simulated cross-premises virtual network in Micr
 
 # Simulated cross-premises virtual network in a Microsoft 365 test environment
 
- **Summary:** Create a simulated cross-premises virtual network in Microsoft Azure as a dev/test environment.
-  
+*This Test Lab Guide can be used for both Microsoft 365 Enterprise and Office 365 Enterprise test environments.*
+
 This article steps you through creating a simulated hybrid cloud environment with Microsoft Azure using two Azure virtual networks. Here is the resulting configuration. 
   
 ![Phase 3 of the simulated cross-premises virtual network dev/test environment, with the DC2 virtual machine in the XPrem VNet](media/simulated-cross-premises-microsoft-365-enterprise/df458c56-022b-4688-ab18-056c3fd776b4.png)
@@ -135,7 +135,7 @@ $locName=(Get-AzResourceGroup -Name $rgName).Location
 $vnet=Get-AzVirtualNetwork -Name XPrem -ResourceGroupName $rgName
 $pip=New-AzPublicIpAddress -Name DC2-PIP -ResourceGroupName $rgName -Location $locName -AllocationMethod Dynamic
 $nic=New-AzNetworkInterface -Name DC2-NIC -ResourceGroupName $rgName -Location $locName -SubnetId $vnet.Subnets[0].Id -PublicIpAddressId $pip.Id -PrivateIpAddress 192.168.0.4
-$vm=New-AzVMConfig -VMName DC2 -VMSize Standard_A1
+$vm=New-AzVMConfig -VMName DC2 -VMSize Standard_A2_V2
 $cred=Get-Credential -Message "Type the name and password of the local administrator account for DC2."
 $vm=Set-AzVMOperatingSystem -VM $vm -Windows -ComputerName DC2 -Credential $cred -ProvisionVMAgent -EnableAutoUpdate
 $vm=Set-AzVMSourceImage -VM $vm -PublisherName MicrosoftWindowsServer -Offer WindowsServer -Skus 2016-Datacenter -Version "latest"
