@@ -89,10 +89,10 @@ conceptualContent:
     # Card
     - title: See other Microsoft 365 products
       links:
-        - url: https://www.microsoft.com/microsoft-365/business
+        - url: https://docs.microsoft.com/microsoft-365/business
           itemType: get-started
           text: Business
-        - url: https://www.microsoft.com/education
+        - url: https://docs.microsoft.com/education
           itemType: get-started
           text: Education
         - url: https://www.microsoft.com/microsoft-365/government
