@@ -1,13 +1,13 @@
 ### YamlMime:Hub
 
 title: Microsoft 365 Enterprise documentation and resources # < 60 chars
-summary: Learn how to plan, deploy, and use Microsoft Office 365, Windows 10, and Enterprise Mobility + Security together in your organization. # < 160 chars
+summary: Deploy the complete, intelligent solution that empowers everyone to be creative and work together securely. # < 160 chars
 # brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-platform | sql | sql-server | vs | visual-studio | windows | xamarin
 brand: m365
 
 metadata:
   title: Microsoft 365 Enterprise documentation and resources # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: Learn about the product documentation and resources available for Microsoft 365 Enterprise IT admins, information workers, and partners. # Required; article description that is displayed in search results. < 160 chars.
+  description: Learn about the product documentation and resources available for Microsoft 365 Enterprise for IT pros, information workers, and partners. # Required; article description that is displayed in search results. < 160 chars.
   services: service
   ms.prod: microsoft-365-enterprise
   ms.service: O365-seccomp #Required; service per approved list. service slug assigned to your service by ACOM.
@@ -23,93 +23,102 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
   items:
     # Card
+    - title: Get an overview
+      itemType: get-started
+      url: microsoft-365-overview.md
+    # Card
     - title: Accelerate your deployment with FastTrack
       itemType: quickstart
       url: https://www.microsoft.com/fasttrack/microsoft-365
     # Card
-    - title: Training for admins and IT pros
+    - title: Train your IT pros and admins
       itemType: learn
       url: https://docs.microsoft.com/learn/m365/
-    # Card
-    - title: Microsoft 365 tech community
-      itemType: get-started
-      url: https://techcommunity.microsoft.com/t5/Microsoft-365/ct-p/microsoft365
 
 # conceptualContent section (optional)
 conceptualContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
   title: Get help with Microsoft 365 Enterprise and other resources # < 60 chars (optional)
-  summary: Select a card to learn more about Microsoft 365. # < 160 chars (optional)
+  summary: Select a card to learn more about Microsoft 365 Enterprise features and services. # < 160 chars (optional)
   items:
     # Card
-    - title: Deploy Microsoft 365 Enterprise
+    - title: Follow a deployment roadmap
       links:
         - url: deploy-microsoft-365-enterprise.md
           itemType: deploy
-          text: Deploy Microsoft 365 Enterprise
+          text: Deployment overview
         - url: deploy-foundation-infrastructure.md
           itemType: how-to-guide
-          text: Deploy foundational infrastructure
-        - url: m365-enterprise-test-lab-guides.md
-          itemType: how-to-guide
-          text: Set up a Microsoft 365 test environment
+          text: Foundation infrastructure
         - url: deploy-workloads.md
-          itemType: deploy
-          text: Deploy workloads and scenarios
-    # Card
-    - title: Desktop Deployment Center
-      links:
+          itemType: how-to-guide
+          text: Workloads and scenarios
         - url: desktop-deployment-center-home.md
           itemType: get-started
-          text: Get started with the deployment center
-        - url: step-1-device-and-app-readiness.md
-          itemType: deploy
-          text: Validate device and app readiness
-        - url: windows-7-to-windows-10-upgrade-automated.md
-          itemType: deploy
-          text: Upgrade Windows 7 PCs to Windows 10
+          text: Desktop Deployment Center
     # Card
-    - title: Enterprise Business Continuity Management
+    - title: Deploy key elements of Microsoft 365 Enterprise
       links:
-        - url: ebcm-understanding-ebcm-with-cloud-services.md
-          itemType: concept
-          text: Enterprise business continuity management (EBCM)
-        - url: ebcm-customer-and-cloud-partner-ebcm-responsibilities.md
-          itemType: reference
-          text: Learn about partner responsibilities
-        - url: ebcm-developing-your-ebcm-plan.md
-          itemType: get-started
-          text: Develop your continuity plan
-    # Card
-    - title: Office 365 ProPlus
-      links:
-        - url: deployment-guide-for-office-365-proplus.md
-          itemType: get-started
-          text: Get started with ProPlus
-        - url: assess-office-365-proplus
-          itemType: deploy
-          text: Prepare
-        - url: overview-of-update-channels-for-office-365-proplus.md
+        - url: identity-infrastructure.md
           itemType: how-to-guide
-          text: Manage
+          text: Identity
+        - url: https://docs.microsoft.com/windows/deployment/
+          itemType: get-started
+          text: Windows 10 Enterprise
+        - url: https://docs.microsoft.com/deployoffice/deployment-guide-for-office-365-proplus
+          itemType: deploy
+          text: Office 365 ProPlus
+        - url: https://docs.microsoft.com/intune/
+          itemType: deploy
+          text: Microsoft Intune
+    # Card
+    - title: Manage Microsoft 365 Enterprise
+      links:
+        - url: https://docs.microsoft.com/windows/deployment/update/
+          itemType: how-to-guide
+          text: Windows 10 Enterprise
+        - url: https://docs.microsoft.com/deployoffice/overview-of-update-channels-for-office-365-proplus
+          itemType: concept
+          text: Office 365 ProPlus
+        - url: https://docs.microsoft.com/intune/
+          itemType: get-started
+          text: Intune
+        - url: https://docs.microsoft.com/office365/
+          itemType: get-started
+          text: Office 365 services
+    # Card
+    - title: See other Microsoft 365 products
+      links:
+        - url: https://www.microsoft.com/microsoft-365/business
+          itemType: get-started
+          text: Business
+        - url: https://www.microsoft.com/education
+          itemType: get-started
+          text: Education
+        - url: https://www.microsoft.com/microsoft-365/government
+          itemType: get-started
+          text: Government
+        - url: ./campaigns/index.md
+          itemType: get-started
+          text: Campaigns
 
 # additionalContent section (optional)
 # Card with summary style
 additionalContent:
   # Supports up to 3 sections
   sections:
-    - title: Other Microsoft 365 resources # < 60 chars (optional)
-      summary: Learn more about other Microsoft 365 features and services # < 160 chars (optional)
+    - title: Additional resources # < 60 chars (optional)
+      summary: Learn more about other Microsoft 365 Enterprise features and services. # < 160 chars (optional)
       items:
         # Card
-        - title: Microsoft 365 Compliance
+        - title: Microsoft 365 Enterprise compliance
           summary: Help your organization govern information, protect against risks, and comply with legal or regulatory standards.
           url: ./compliance/index.yml
         # Card
-        - title: Microsoft 365 Security
-          summary: Learn about the robust security solutions and services in Microsoft 365 Security so that you can better protect your organization across attack surfaces.
+        - title: Microsoft 365 security
+          summary: Protect your organization across attack surfaces with robust security services and solutions.
           url: ./security/index.yml
         # Card
-        - title: Microsoft 365 for Campaigns
-          summary: Keep your campaign or business data and communications secure with this recommended configuration for Microsoft 365 Business.
-          url: ./campaigns/index.md
+        - title: Microsoft 365 technical community
+          summary: Connect with your peers on Microsoft 365 Enterprise questions or share best practices.
+          url: https://techcommunity.microsoft.com/t5/Microsoft-365/ct-p/microsoft365
