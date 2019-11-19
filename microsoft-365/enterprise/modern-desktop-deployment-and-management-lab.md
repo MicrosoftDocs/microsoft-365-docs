@@ -31,7 +31,7 @@ The lab kit is free to download and uses trial software.
 
 The lab provides you with an automatically provisioned virtual lab environment, including domain-joined desktop clients, domain controller, Internet gateway and a fully configured ConfigMgr instance. The lab contains Evaluation Versions of the following products:
 
-  - Windows 10 Enterprise, Version 1903
+  - Windows 10 Enterprise, Version 1909
   - Windows 7 Enterprise
   - System Center Configuration Manager, Version 1902
   - Windows Assessment and Deployment Kit for Windows 10, Version 1903
@@ -113,7 +113,7 @@ Detailed lab guides take you through multiple deployment and management scenario
 
 ### [**Download the Windows and Office Deployment Lab Kit**](https://www.microsoft.com/evalcenter/evaluate-lab-kit)
 
-*Please use a broad bandwidth to download this content to enhance your downloading experience and allow 30-45 minutes for automatic provisioning. The lab environment requires a minimum of 16 GB of available memory and 150 GB of free disk space. For optimal performance, 32 GB of available memory is recommended. The lab expires November 16, 2019. A new version will be published prior to expiration.*
+*Please use a broad bandwidth to download this content to enhance your downloading experience and allow 30-45 minutes for automatic provisioning. The lab environment requires a minimum of 16 GB of available memory and 150 GB of free disk space. For optimal performance, 32 GB of available memory is recommended. The lab expires February 15, 2020. A new version will be published prior to expiration.*
 
 ## **Additional guidance**
 
