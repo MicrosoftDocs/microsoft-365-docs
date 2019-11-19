@@ -14,14 +14,14 @@ ms.collection: m365-security-compliance
 
 # Insider risk policies
 
-## Overview
-
-Insider risk policies determine which employees are monitored and which types of risk signals are configured for alerts. 
+Insider risk policies determine which employees are monitored and which types of risk signals are configured for alerts. You can quickly create a policy that applies to all users in your organization, or define individual users or groups for management in a policy. Policies support content priority that allow you to focus policy conditions on multiple or specific Microsoft Teams, SharePoint sites, data sensitivity types, and data labels. You can also choose specific alert signals and how much weight they are assigned within a policy, effectively determining the weight of each alert trigger in the policy. Policies windows allow you to define the time frame to apply the policy to alert activities and are used to determine the duration of the policy once activated.
 
 ## Policy dashboard
 
-- **Policy name**
-- **Active alerts**
+The policy dashboard allows you to quickly see the policies in your organization and the current status of alerts associated with each policy.
+
+- **Policy name**: The name assigned to the policy in the policy wizard.
+- **Active alerts**: The number of active alerts 
 - **Total confirmed alerts**
 - **Total actioned alerts**
 - **Policy effectiveness**
@@ -38,11 +38,11 @@ Insider risk playbooks are pre-defined templates that define the types of risk s
 
 ## Create a new policy
 
-To create a new insider risk policy, complete the following steps:
+To create a new insider risk management policy, complete the following steps:
 
-1. In the Microsoft 365 compliance center, go to **Insider Risk** and select the **Policies** tab.
+1. In the Microsoft 365 compliance center, go to **Insider risk management** and select the **Policies** tab.
 2. Select **Add Policy** to open the policy wizard
-3. On the **Assign policy name** page, complete the following fields and then select **Next**:
+3. On the **Assign policy name** page, complete the following fields, and then select **Next**:
     - **Name (required)**: Enter a friendly name for the policy
     - **Description (optional)**: Enter a description for the policy.
     - **Select playbook (required)**: Select one of the playbooks to define the types of signals monitored by the policy.
@@ -56,11 +56,11 @@ To create a new insider risk policy, complete the following steps:
 7. On the **Monitoring window** page, choose the time period for the policy. Select **Next** to continue.
 8. On the **Review** page, review the settings you've chosen for the policy. Select **Edit** to change any of the policy values or select **Submit** to create and activate the policy.
 
-## Manage an existing policy
+## Manage a policy
 
-To manage an existing insider risk policy, complete the following steps:
+To manage an existing insider risk management policy, complete the following steps:
 
-1. In the Microsoft 365 compliance center, go to **Insider Risk** and select the **Policies** tab.
+1. In the Microsoft 365 compliance center, go to **Insider risk management** and select the **Policies** tab.
 2. On the policy dashboard, select the policy you want to manage.
 3. On the policy details page, select **Edit policy**
 4. In the policy wizard, you can edit the following fields:
@@ -78,3 +78,15 @@ To manage an existing insider risk policy, complete the following steps:
 9. On the **Choose alert indicators** page, select one or more alerts and define the policy weighting for each.
 10. On the **Monitoring window** page, choose the time period for the policy. Select **Next** to continue.
 11. On the **Review** page, review the settings you've chosen for the policy. Select **Edit** to change any of the policy values or select **Submit** to update and activate the policy.
+
+## Delete a policy
+
+> [!IMPORTANT]
+> Deleting a policy does remove existing policy match alerts?
+
+To delete an existing insider risk management policy, complete the following steps:
+
+1. In the Microsoft 365 compliance center, go to **Insider risk management** and select the **Policies** tab.
+2. On the policy dashboard, select the policy you want to manage.
+3. Select **Delete** on the dashboard toolbar.
+4. On the **Delete** dialog, Select **Yes** to delete the policy, or select **Cancel** to close the dialog.

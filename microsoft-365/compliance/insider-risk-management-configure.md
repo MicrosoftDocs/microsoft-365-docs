@@ -1,7 +1,7 @@
 ---
-title: Get Started with Insider Risk
-description: Learn about Insider Risk in Microsoft 365
-keywords: Microsoft 365, Insider Risk, risk management, compliance
+title: Get started with insider risk management (preview)
+description: Learn about insider risk in Microsoft 365
+keywords: Microsoft 365, insider risk management, risk management, compliance
 localization_priority: Normal
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -12,32 +12,32 @@ audience: itpro
 ms.collection: m365-security-compliance
 ---
 
-# Get Started with Insider Risk Management
+# Get started with insider risk management (preview)
 
 Use Insider Risk policies to monitor employee activities and to remediate risk alerts in your organization. For more information about how Insider Risk policies can help you manage risk in your organization, see [Insider Risk Management in Microsoft 365](insider-risk-overview.md).
 
 ## Before you begin
 
-CONFIRM REQUIREMENTS AND BEST PRACTICES
+TALHAH - CONFIRM REQUIREMENTS AND BEST PRACTICES
 
 Follow these steps to set up and use Insider Risk in your Microsoft 365 organization:
 
 ## Step 1 (required): Confirm your Microsoft 365 subscription
 
-Users monitored by Insider Risk policies must have a Microsoft 365 E5 Compliance license or be included in a Microsoft 365 E5 subscription. If you don't have an existing Microsoft 365 Enterprise E5 plan and want to try Insider Risk, you can [add Microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) to your existing Office 365 subscription or [sign up for a trial](https://www.microsoft.com/microsoft-365/enterprise) of Microsoft 365 Enterprise E5.
+Users monitored by insider risk management policies must have a Microsoft 365 E5 Compliance license or be included in a Microsoft 365 E5 subscription. If you don't have an existing Microsoft 365 Enterprise E5 plan and want to try Insider Risk, you can [add Microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) to your existing Office 365 subscription or [sign up for a trial](https://www.microsoft.com/microsoft-365/enterprise) of Microsoft 365 Enterprise E5.
 
-## Step 2 (optional): Set up groups for Insider Risk
+## Step 2 (optional): Set up groups for insider risk management
 
-Before you start using Insider Risk Management, you may want to create security groups for employees that need monitoring if you don't have appropriate Microsoft Active Directory groups already configured. Additionally, you may want to create custom security groups for users who have permission to review alerts, escalate cases, and manage data and employee investigations. 
+Before you start using Insider Risk Management, you may want to create security groups for employees that need monitoring if you don't have appropriate Microsoft Active Directory groups already configured. Additionally, you may want to create custom security groups for users who have permission to review alerts, escalate cases, and manage data and employee investigations.
 
 At a minimum, consider creating the following management groups:
 
-- **Data Investigation Admins**: Employees who will manage data investigation escalations.
-- **Employee Investigation Admins**: Employess who will manage employee investigation escalations.
+- **Data investigation admins**: Employees who will manage data investigation escalations.
+- **Employee investigation admins**: Employees who will manage employee investigation escalations.
 
 ## Step 3 (optional): Configure 3rd-party data connectors
 
-Insider Risk supports importing user signals and log data imported from 3rd-party risk management and Human Resources platforms. The following connections are supported:
+Insider risk management supports importing user signals and log data imported from 3rd-party risk management and human resources platforms. The following connections are supported:
 
 - **Human Resources Connector**:
 - **ObserveIT UAM Connector**:
@@ -46,11 +46,11 @@ Insider Risk supports importing user signals and log data imported from 3rd-part
 
 ### Configure the ObserveIT UAM Connector
 
-## Step 4 (required): Create an insider risk policy
+## Step 4 (required): Create an insider risk management policy
 
-Insider Risk Policies determine who is monitored and which types of signals are configured for alerts.
+Insider risk management policies determine who is monitored and which types of signals are configured for alerts. Before activities can trigger alerts, a policy must be configured.
 
-1. In the Microsoft 365 compliance center, go to **Insider Risk** and select the **Policies** tab.
+1. In the Microsoft 365 compliance center, go to **Insider risk management** and select the **Policies** tab.
 2. Select **Add Policy** to open the policy wizard
 3. On the **Assign policy name** page, complete the following fields:
     - **Name (required)**: Enter a friendly name for the policy
