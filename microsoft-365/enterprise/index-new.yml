@@ -111,7 +111,7 @@ additionalContent:
       summary: Learn more about other Microsoft 365 features and resources. # < 160 chars (optional)
       items:
         # Card
-        - title: Microsoft 365 ompliance
+        - title: Microsoft 365 compliance
           summary: Help your organization govern information, protect against risks, and comply with legal or regulatory standards.
           url: https://docs.microsoft.com/microsoft-365/compliance/index
         # Card
