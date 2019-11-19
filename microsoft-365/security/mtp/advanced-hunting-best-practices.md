@@ -33,7 +33,7 @@ Apply these recommendations to get results faster and avoid timeouts while runni
 - `project` only the necessary columns from tables you've joined.
 
 >[!Tip]
->For more guidance on improving query performance, read [Kusto query best practices](https://docs.microsoft.com/en-us/azure/kusto/query/best-practices).
+>For more guidance on improving query performance, read [Kusto query best practices](https://docs.microsoft.com/azure/kusto/query/best-practices).
 
 ## Query tips and pitfalls
 

@@ -69,7 +69,6 @@
 ###### [DeviceTvmSecureConfigurationAssessmentKB](mtp/advanced-hunting-tvm-secureconfigkb-table.md)
 ###### [DeviceTvmSoftwareInventoryVulnerabilities](mtp/advanced-hunting-tvm-softwareinventory-table.md)
 ###### [DeviceTvmSoftwareVulnerabilitiesKB](mtp/advanced-hunting-tvm-softwarevulnerability-table.md)
-##### [Find miscellaneous events](mtp/advanced-hunting-misc-events.md)
 ##### [Apply query best practices](mtp/advanced-hunting-best-practices.md)
 
 #### [Secure Score](mtp/microsoft-secure-score.md)

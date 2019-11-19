@@ -27,7 +27,7 @@ ms.topic: article
 ## Normalize common values
 Before running queries across [tables that cover devices and emails](advanced-hunting-schema-tables.md), you might need to consider the following techniques needed to normalize values:
 
--  File SHA-256 values in the **[EmailEvents](advanced-hunting-emailevents-table.md)** table are currently in upper case. To unify this table with other tables using file SHA-256 values, use the `tolower()` function ([see Kusto reference](https://docs.microsoft.com/en-us/azure/kusto/query/tolowerfunction)). The example below uses the `project` operator to hold the lower case SHA-256 values in a column called `LowerSha`. 
+-  File SHA-256 values in the **[EmailEvents](advanced-hunting-emailevents-table.md)** table are currently in upper case. To unify this table with other tables using file SHA-256 values, use the `tolower()` function ([see Kusto reference](https://docs.microsoft.com/azure/kusto/query/tolowerfunction)). The example below uses the `project` operator to hold the lower case SHA-256 values in a column called `LowerSha`. 
 
     ```
     | project LowerSha = tolower(SHA256);
