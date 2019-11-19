@@ -1,5 +1,5 @@
 ---
-title: Use AllowSelfServicePurchase to enable or disable self-service purchases
+title: Use AllowSelfServicePurchase for the MSCommerce PowerShell module
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: mnirkhe

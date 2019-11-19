@@ -19,7 +19,7 @@ ms.custom: aka.ms/self-service-purchase-faq
 # Self-service purchase FAQ
 
 > [!NOTE]
-> The information in this article only applies to Microsoft Power Platform (Power BI, PowerApps and Flow) subscriptions.
+> The information in this article only applies to Microsoft Power Platform (Power BI, Power Apps and Power Automate) subscriptions.
 
 ## General
 
@@ -27,10 +27,10 @@ ms.custom: aka.ms/self-service-purchase-faq
 
 UPDATE as of October 31, 2019: Over the past week, we’ve been listening to customer feedback regarding the rollout of our self-service purchase capabilities for Power Platform products. Based on the feedback, we’re making the following changes to our plan:
 
-- On November 19th, we will provide IT admins a way to turn off self-service purchasing on a per product basis via PowerShell. More details will be forthcoming.
+- On November 19th, we will provide IT admins a way to turn off self-service purchasing on a per product basis via PowerShell. <!--To learn how to use it, see [Use AllowSelfServicePurchase for the MSCommerce PowerShell module](allowselfservicepurchase-powershell.md).-->
 - To provide more time to prepare for this change, we are updating the launch for self-service purchase capabilities for Power Platform products to start with Power BI on January 14th for all commercial cloud customers.  
 
-Beginning January 14, 2020, self-service purchase, subscription, and license management capabilities for Power Platform products (Power BI, PowerApps, and Flow) will be available for commercial cloud customers in the United States. Self-service purchase gives users a chance to try out new technologies and enables them to develop solutions that will ultimately benefit their larger organizations. This capability will not be available to tenants in the US that are government, nonprofit, or education, at this time. Central procurement and IT teams will have visibility to all users buying and deploying self-service purchase solutions through the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> and will be able to turn off self-service purchasing on a per product basis via PowerShell.
+Beginning January 14, 2020, self-service purchase, subscription, and license management capabilities for Power Platform products (Power BI, Power Apps, and Power Automate) will be available for commercial cloud customers in the United States. Self-service purchase gives users a chance to try out new technologies and enables them to develop solutions that will ultimately benefit their larger organizations. This capability will not be available to tenants in the US that are government, nonprofit, or education, at this time. Central procurement and IT teams will have visibility to all users buying and deploying self-service purchase solutions through the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> and will be able to turn off self-service purchasing on a per product basis via PowerShell.
 
 ### Why is Microsoft adding a self-service purchase option for the Power Platform products?
 
@@ -38,7 +38,7 @@ In today’s world, end users and departments are increasingly seeking out and b
 
 ### When will self-service purchase for the Power Platform products be available?
 
-Microsoft is launching self-service purchase for Power BI on January 14, 2020, to customers in the United States, with additional markets becoming available in the coming months. PowerApps and Microsoft Flow will be added in the following weeks. This capability will not be available to tenants in the US that are government, nonprofit, or education, at this time.
+Microsoft is launching self-service purchase for Power BI on January 14, 2020, to customers in the United States, with additional markets becoming available in the coming months. Power Apps and Power Automate will be added in the following weeks. This capability will not be available to tenants in the US that are government, nonprofit, or education, at this time.
 
 ### Will self-service purchase be enabled for services beyond the Power Platform products?
 
@@ -48,7 +48,7 @@ At this time, the Power Platform family of products are the only services being 
 
 ### How does a customer make a self-service purchase?
 
-Customers will be able to make a self-service purchase online from the Microsoft Power BI, PowerApps, and Flow websites. Customers will first be asked to enter an email address to ensure they’re a user in an existing Azure Active Directory (AD) tenant, and then they’ll be directed to log in by using their Azure AD credentials. After logging in, the customer will be asked to select how many subscriptions they want to purchase and provide credit card payment. When the purchase is complete, they’ll be able to start using their subscription. The purchaser will also be able to access a limited view of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> where they can enable other people in their organization to use the product.
+Customers will be able to make a self-service purchase online from the Microsoft Power BI, Power Apps, and Power Automate websites. Customers will first be asked to enter an email address to ensure they’re a user in an existing Azure Active Directory (AD) tenant, and then they’ll be directed to log in by using their Azure AD credentials. After logging in, the customer will be asked to select how many subscriptions they want to purchase and provide credit card payment. When the purchase is complete, they’ll be able to start using their subscription. The purchaser will also be able to access a limited view of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> where they can enable other people in their organization to use the product.
 
 ### What are the payment options for self-service purchases?
 
@@ -104,7 +104,7 @@ Data created from products bought through self-service purchase is owned and con
 
 ### How do I centralize the purchases made through self-service purchase?
 
-Admins can assign existing licenses or purchase additional subscriptions of Power Platform products (Power BI, PowerApps, and Microsoft Flow) through existing agreements and pricing for users assigned to self-service purchases. After assigning these centrally purchased licenses, admins can then request that the purchasers cancel their existing subscriptions. Microsoft is exploring ways to simplify and streamline this process for admins in the future.
+Admins can assign existing licenses or purchase additional subscriptions of Power Platform products (Power BI, Power Apps, and Power Automate) through existing agreements and pricing for users assigned to self-service purchases. After assigning these centrally purchased licenses, admins can then request that the purchasers cancel their existing subscriptions. Microsoft is exploring ways to simplify and streamline this process for admins in the future.
 
 ### Where does the admin see self-service purchases?
 
@@ -122,10 +122,9 @@ IT departments and partners aren’t expected to provide support for products bo
 
 Self-service purchasers won’t use a customer’s Premier support incidents for receiving support for their self-service purchases.
 
-
 ### How are users expected to receive training on the products they buy through self-service purchase?
 
-Extensive training for users is provided on the Microsoft Power BI, PowerApps, and Flow websites. The products have guided learning, documentation, samples, and strong communities to get answers and tips directly from other users.
+Extensive training for users is provided on the Microsoft Power BI, Power Apps, and Power Automate websites. The products have guided learning, documentation, samples, and strong communities to get answers and tips directly from other users.
 
 ### What happens to a self-service purchase if a user leaves the organization?
 
