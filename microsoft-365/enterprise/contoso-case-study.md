@@ -3,7 +3,7 @@ title: "Microsoft 365 Enterprise for the Contoso Corporation"
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 10/01/2019
+ms.date: 11/18/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -61,6 +61,10 @@ See these articles for the details:
 - [Summary of Microsoft 365 Enterprise security](contoso-security-summary.md)
 
   Contoso uses the full spectrum of Microsoft 365 Enterprise security features for identity and access management, threat protection, information protection, and security management.
+
+- [Team for a top-secret project](contoso-team-for-top-secret-project.md)
+
+  To create a secure collaboration environment for a top secret project, Contoso used a team for highly regulated data.
 
 - [SharePoint Online site for highly confidential digital assets](contoso-sharepoint-online-site-for-highly-confidential-assets.md)
 
