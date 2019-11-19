@@ -108,10 +108,10 @@ additionalContent:
   # Supports up to 3 sections
   sections:
     - title: Additional resources # < 60 chars (optional)
-      summary: Learn more about other Microsoft 365 Enterprise features and services. # < 160 chars (optional)
+      summary: Learn more about other Microsoft 365 features and resources. # < 160 chars (optional)
       items:
         # Card
-        - title: Microsoft 365 Enterprise compliance
+        - title: Microsoft 365 ompliance
           summary: Help your organization govern information, protect against risks, and comply with legal or regulatory standards.
           url: https://docs.microsoft.com/microsoft-365/compliance/index
         # Card
