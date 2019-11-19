@@ -418,13 +418,13 @@ This tab includes columns that define individual Actions, and it includes detail
 
 - **actionDimensionValues:** Double semicolon-delimited list of applicable dimensions from the Dimensions tab, using the following format:
 
-    ```
+    ```Markdown
     Dimension Key::Dimension Value;;Dimension Key::Dimension Value.
     ```
     
     For example:
 
-    ```
+    ```Markdown
     Product::Office 365;;Certification::NIST CSF
     ```
 
@@ -458,7 +458,7 @@ Templates and Assessments support the use of Markdown language for some text ele
 
 Bullets are represented as asterisks instead of Word or Excel bullets. For example:
 
-```
+```Markdown
 * Item A
 * Item B
 * Item C
@@ -477,15 +477,16 @@ Numbers are represented as numbers, but with spaces for indentation (three space
 
 Hyperlinks are constructed by placing brackets around the hyperlink text and the hyperlink itself in parentheses immediately next to the close bracket.  For example:
 
-```
+```Markdown
 Click [here](https://www.microsoft.com) to go to Microsoft’s home page.
 ```
 This text renders as follows:  Click [here](https://www.microsoft.com) to go to Microsoft’s home page.
+
 As shown in the above example, Compliance Manager does not render URLs with underlining.
 
-Boldface text is just two asterisks on each side of the text to be bolded.  For example:
+Boldface text is two asterisks on each side of the text to be bolded.  For example:
 
-```
+```Markdown
 **This text will render in bold**
 ```
 **This text renders in bold**
