@@ -24,8 +24,6 @@ ms.topic: article
 
 The miscellaneous events or MiscEvents table in the [Advanced hunting](advanced-hunting-overview.md) schema contains information about various event types, including events triggered by security controls, such as Windows Defender Antivirus and exploit protection. Use this reference to construct queries that return information from this table.
 
-To understand how to use the MiscEvents table to locate specific events, such as antivirus detections or firewall blocks, [read about the ActionTypes in the MiscEvents table](advanced-hunting-misc-events.md).
-
 For information on other tables in the Advanced hunting schema, [see the Advanced hunting reference](advanced-hunting-schema-tables.md).
 
 
@@ -34,7 +32,7 @@ For information on other tables in the Advanced hunting schema, [see the Advance
 | EventTime | datetime | Date and time when the event was recorded |
 | MachineId | string | Unique identifier for the machine in the service |
 | ComputerName | string | Fully qualified domain name (FQDN) of the machine |
-| ActionType | string | Type of activity that triggered the event. [View supported event types](advanced-hunting-misc-events.md) |
+| ActionType | string | Type of activity that triggered the event |
 | FileName | string | Name of the file that the recorded action was applied to |
 | FolderPath | string | Folder containing the file that the recorded action was applied to |
 | SHA1 | string | SHA-1 of the file that the recorded action was applied to |
