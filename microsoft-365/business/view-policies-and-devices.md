@@ -31,16 +31,15 @@ description: "View device policies and actions by signing in to Microsoft 365 bu
 1.  Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
 2. On the left nav, choose **Devices** \> **Policies**.
 
-    On this page you can create, edit, change target group, or delete a policy.
+    On this page, you can create, edit, change target group, or delete a policy.
 
     ![Screenshot of the Policies page](media/devicepolicies.png)
   
 ## View and manage devices
 
-
 1. On the left nav, choose **Devices** \> **Manage**. 
     
-    On this page you can select one or more devices and either remove company data. For Windows 10 devices that you have set device protections settings for, you can also choose to reset the device to factory settings.
+    On this page, you can select one or more devices and remove company data. For Windows 10 devices that you have set device protections settings for, you can also choose to reset the device to factory settings.
   
    ![Manage devices page](media/devicesmanage.png)
 
