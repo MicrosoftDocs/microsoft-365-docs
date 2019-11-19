@@ -15,7 +15,7 @@ For more information on Microsoft Managed Desktop, see [Microsoft Managed Deskto
 
 <!-- Microsoft 365 E5; Device as a Service -->
 <!-- Split from device & technologies topic. Destination topic for aka.ms/device-list  -->
-To be enrolled in Microsoft Managed Desktop a device must be one of the following models and meet or exceed the listed specifications for RAM, processor family, and disk space. No other customization is supported.
+To be enrolled in Microsoft Managed Desktop a device must be one of the following models and meet or exceed the listed specifications for RAM, processor family, and disk space. 
 
 The links to devices here are for your reference only. If you want to order devices, work with your commercial channel contacts to ensure that you choose the correct configurations. In this table, the *archive date* is the date on which these models will be subject to a shorter Microsoft Managed Desktop service life; any such devices onboarded after this date will not receive a full three-year term of support from Microsoft Managed Desktop. Archived devices are also listed in [Microsoft Managed Desktop archived devices](archived-device-list.md). *Retirement date* is the date on which this model will no longer be supported by Microsoft Managed Desktop at all. On that date, all enrolled devices of this model will be removed from Microsoft Managed Desktop, no matter when they were enrolled.
 
@@ -36,7 +36,7 @@ The links to devices here are for your reference only. If you want to order devi
 | [HP EliteBook 830 / 840 / 850 G6 Notebook PC](https://store.hp.com/us/en/mdp/laptops/elitebook-840#!&tab=features) | 128 GB / Intel i5 / 8 GB RAM | SKU with 5VS01AV, IR camera or fingerprint sensor required | Nov 30, 2020 | Nov 30, 2023 |
 | [HP EliteBook x360 830 G6 Notebook PC](https://store.hp.com/us/en/pdp/hp-elitebook-x360-830-g6-notebook-pc) | 128 GB / Intel i5 / 8 GB RAM | SKU with 5VS01AV, IR camera or fingerprint sensor required | Nov 30, 2020 | Nov 30, 2023 |
 | [HP Elite x2 1013 G3](https://store.hp.com/us/en/mdp/laptops/hp-elite-x2-1013-3074457345617296670--1#!&tab=features) | 256 GB / Intel i5 / 8 GB RAM | SKU with 5VS03AV, IR camera required | May 14, 2020 | May 14, 2023 |
-| [HP EliteBook x360 1030 G3](https://store.hp.com/us/en/mdp/laptops/hp-elitebook-x360-1030-g2--1#tab=features) | 56 GB / Intel i5 / 8 GB RAM | SKU with 5VS01AV, IR camera required | May 14, 2020 | May 14, 2023 |
+| [HP EliteBook x360 1030 G3](https://store.hp.com/us/en/mdp/laptops/hp-elitebook-x360-1030-g2--1#tab=features) | 256 GB / Intel i5 / 8 GB RAM | SKU with 5VS01AV, IR camera required | May 14, 2020 | May 14, 2023 |
 | [HP EliteBook x360 1040 G5](https://store.hp.com/us/en/mdp/laptops/hp-elitebook-x360-1040-3074457345617328670--1#!&tab=features) | 256 GB / Intel i5 / 8 GB RAM | SKU with 5VS01AV, IR camera required | Oct 23, 2020 | Oct 23, 2023 |
 | [HP EliteDesk 800 G4 DM](https://store.hp.com/us/en/mdp/desktops/elitedesk-800-mini-349547--1#!&tab=features) | 128 GB / Intel i3 / 8 GB RAM | SKU with 5VS04AV | Jul 18, 2020 | Jul 18, 2023 |
 | [HP EliteDesk 800 G4 SFF](https://store.hp.com/us/en/mdp/desktops/elitedesk-800-small-form-factor-349548--1#!&tab=features) | 128 GB / Intel i3 / 8 GB RAM | SKU with 5VS04AV | Jul 18, 2020 | Jul 18, 2023 |

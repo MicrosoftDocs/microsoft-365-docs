@@ -208,7 +208,7 @@ Next, configure the new User1 account as a domain, enterprise, and schema admini
   
 ```powershell
 $yourDomain="<your public domain>"
-$domainName = "testlab"+$yourDomain
+$domainName = "testlab."+$yourDomain
 $userName="user1@" + $domainName
 $userSID=(New-Object System.Security.Principal.NTAccount($userName)).Translate([System.Security.Principal.SecurityIdentifier]).Value
 $groupNames=@("Domain Admins","Enterprise Admins","Schema Admins")

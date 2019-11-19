@@ -35,4 +35,4 @@ Multi-factor authentication (MFA) requires users to sign in with a second method
 
   :::image type="content" source="media/turnonmfa.png" alt-text="Screenshot of turn on MFA page.":::
 
-5. On the **Strenghen sign-in security** panel, check both or one of **Require multi-factor authentication for admins**, and then choose **Create policy**.
+5. On the **Strengthen sign-in security** panel, check both or one of **Require multi-factor authentication for admins**, and then choose **Create policy**.
