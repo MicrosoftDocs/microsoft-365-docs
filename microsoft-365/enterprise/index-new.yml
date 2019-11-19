@@ -98,7 +98,7 @@ conceptualContent:
         - url: https://www.microsoft.com/microsoft-365/government
           itemType: get-started
           text: Government
-        - url: ./campaigns/index.yml
+        - url: https://m365forcampaigns.microsoft.com/
           itemType: get-started
           text: Campaigns
 
@@ -113,11 +113,11 @@ additionalContent:
         # Card
         - title: Microsoft 365 Enterprise compliance
           summary: Help your organization govern information, protect against risks, and comply with legal or regulatory standards.
-          url: ./compliance/index.yml
+          url: https://docs.microsoft.com/microsoft-365/compliance/index
         # Card
         - title: Microsoft 365 security
           summary: Protect your organization across attack surfaces with robust security services and solutions.
-          url: ./security/index.yml
+          url: https://docs.microsoft.com/microsoft-365/security/index
         # Card
         - title: Microsoft 365 technical community
           summary: Connect with your peers on Microsoft 365 Enterprise questions or share best practices.
