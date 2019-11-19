@@ -96,4 +96,4 @@ The following table summarizes the impact to the Windows 10 device configuration
 | **Allow users to download apps from Microsoft Store** | Admin defines if a user can download apps from Microsoft Store | User can download apps from Microsoft Store anytime |
 | **Allow users to access Cortana** | Admin defines policy on user access to Cortana | User devices to turn on/off Cortana |
 | **Allow users to receive tips and advertisements from Microsoft** | Admin defines policy on user receive tips and advertisements from Microsoft | User can turn on/off tips and advertisements from Microsoft |
-| **Allow users to copy content from Office apps into personal apps** | Admin defines policy to keep Windows 10 devices up-to-date | Users can decide when to update Windows |
+| **Allow users to copy content from Office apps into personal apps** | Admin defines policy to keep Windows 10 devices up to date | Users can decide when to update Windows |
