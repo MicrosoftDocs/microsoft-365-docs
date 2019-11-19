@@ -27,7 +27,7 @@ ms.custom: aka.ms/self-service-purchase-faq
 
 UPDATE as of October 31, 2019: Over the past week, we’ve been listening to customer feedback regarding the rollout of our self-service purchase capabilities for Power Platform products. Based on the feedback, we’re making the following changes to our plan:
 
-- On November 19th, we will provide IT admins a way to turn off self-service purchasing on a per product basis via PowerShell. <!--To learn how to use it, see [Use AllowSelfServicePurchase for the MSCommerce PowerShell module](allowselfservicepurchase-powershell.md).-->
+- On November 19th, we will provide IT admins a way to turn off self-service purchasing on a per product basis via PowerShell. To learn how to use it, see [Use AllowSelfServicePurchase for the MSCommerce PowerShell module](allowselfservicepurchase-powershell.md).
 - To provide more time to prepare for this change, we are updating the launch for self-service purchase capabilities for Power Platform products to start with Power BI on January 14th for all commercial cloud customers.  
 
 Beginning January 14, 2020, self-service purchase, subscription, and license management capabilities for Power Platform products (Power BI, Power Apps, and Power Automate) will be available for commercial cloud customers in the United States. Self-service purchase gives users a chance to try out new technologies and enables them to develop solutions that will ultimately benefit their larger organizations. This capability will not be available to tenants in the US that are government, nonprofit, or education, at this time. Central procurement and IT teams will have visibility to all users buying and deploying self-service purchase solutions through the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> and will be able to turn off self-service purchasing on a per product basis via PowerShell.
@@ -56,7 +56,9 @@ Currently, credit card is the only available payment method. Payment through inv
 
 ### Who can buy through self-service purchase?
 
-Any user with a non-guest user account in a managed Azure AD tenant can buy. This capability will not be available to tenants that are government, nonprofit, or education, at this time. Users in organizations or markets who are not eligible for self-service purchase will see a message asking them to contact their IT admin as they do today.
+Any user with a non-guest user account in a managed Azure AD tenant can buy. This capability will not be available to tenants that are government, nonprofit, or education, at this time. If this applies to your organization, then no additional action is required to control self-service purchase, at this time.
+
+Users in organizations or markets who are not eligible for self-service purchase will see a message asking them to contact their IT admin as they do today.
 
 ### Can guest users buy through self-service purchase?
 
@@ -93,6 +95,8 @@ The person who buys the subscription through self-service purchase will be bille
 ### What capabilities does an admin have for self-service purchases?
 
 Admins can view all self-service purchases made in their organization in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>. They can see the product, purchaser name, subscriptions purchased, expiry date, order history, purchase price, and assigned users for each self-service purchase. If required for their organization, admins will be able to turn off self-service purchasing on a per product basis via PowerShell. Admins have the same data management and access policies over products bought through self-service purchase or centrally.
+
+Admins can also control whether users in their organization can make self-service purchases. For more information see [Use AllowSelfServicePurchase for the MSCommerce PowerShell module](allowselfservicepurchase-powershell.md).
 
 ### How is Microsoft respecting data governance and compliance by enabling self-service purchase?
 
