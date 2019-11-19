@@ -21,11 +21,11 @@ Insider risk policies determine which employees are monitored and which types of
 The policy dashboard allows you to quickly see the policies in your organization and the current status of alerts associated with each policy.
 
 - **Policy name**: The name assigned to the policy in the policy wizard.
-- **Active alerts**: The number of active alerts 
-- **Total confirmed alerts**
-- **Total actioned alerts**
-- **Policy effectiveness**
-- **Active status**
+- **Active alerts**: The number of active alerts for each policy.
+- **Total confirmed alerts**: The number of confirmed alerts that have opened a case for the policy.
+- **Total actioned alerts**: ??
+- **Policy effectiveness**:
+- **Active status**:
 
 ## Policy playbooks
 
