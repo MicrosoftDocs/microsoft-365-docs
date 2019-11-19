@@ -57,7 +57,7 @@ conceptualContent:
           itemType: get-started
           text: Desktop Deployment Center
     # Card
-    - title: Deploy key elements of Microsoft 365 Enterprise
+    - title: Deploy key elements
       links:
         - url: identity-infrastructure.md
           itemType: how-to-guide
@@ -98,7 +98,7 @@ conceptualContent:
         - url: https://www.microsoft.com/microsoft-365/government
           itemType: get-started
           text: Government
-        - url: ./campaigns/index.md
+        - url: ./campaigns/index.yml
           itemType: get-started
           text: Campaigns
 
