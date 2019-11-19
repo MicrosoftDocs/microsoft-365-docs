@@ -47,6 +47,51 @@ These images show:
 
 ![A sensitivity label displayed in the Word desktop app](media/sensitivity-label-word.png)
 
+
+## Install the preview version of the Azure Active Directory PowerShell for Graph
+
+These procedures require the preview version of the Azure Active Directory PowerShell for Graph. The GA version will not work.
+
+
+> [!IMPORTANT]
+> You cannot install both the preview and GA versions on the same computer at the same time. You can install the module on Windows 10, Windows Server 2016.
+
+  
+As a best practice, we recommend  *always*  staying current: uninstall the old AzureADPreview or old AzureAD version and get the latest one. 
+  
+1. In your search bar, type Windows PowerShell.
+    
+2. Right-click on **Windows PowerShell** and select **Run as Administrator**.
+    
+    ![Open PowerShell as "Run as administrator."](../media/52517af8-c7b0-4c8f-b2f3-0f82f9d5ace1.png)
+  
+2. Check installed module:
+    
+    ```
+    Get-InstalledModule -Name "AzureAD*"
+    ```
+
+3. To uninstall a previous version of AzureADPreview or AzureAD, run this command:
+  
+    ```
+    Uninstall-Module AzureADPreview
+    ```
+
+    or
+  
+    ```
+    Uninstall-Module AzureAD
+    ```
+
+4. To install the latest version of AzureADPreview, run this command:
+  
+    ```
+    Install-Module AzureADPreview
+    ```
+
+    At the message about an untrusted repository, type **Y**. It will take a minute or so for the new module to install.
+
+
 ## Enable this preview by using Azure PowerShell
 
 1. Sign in to Azure as a global admin by using Azure PowerShell. For instructions, see [Sign in with Azure PowerShell](/powershell/azure/authenticate-azureps).
@@ -69,6 +114,7 @@ These images show:
     Set-AzureADDirectorySetting -Id $setting.Id -DirectorySetting $setting
   }
 ```
+
 
 Office 365 no longer uses the old classifications for new groups and SharePoint sites when you enable this preview. If you used [Azure AD site classification](/sharepoint/dev/solution-guidance/modern-experience-site-classification) ($setting["ClassificationList"]), existing groups and sites still display the old classifications. To display the new classifications, convert them. For information about how to convert them, see [If you used classic Azure AD site classification](#if-you-used-classic-azure-ad-site-classification).
 
