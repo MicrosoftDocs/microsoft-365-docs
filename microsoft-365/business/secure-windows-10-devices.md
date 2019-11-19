@@ -28,7 +28,7 @@ ms.custom: OKR_SMB_M365
 
 # Secure Windows 10 devices
 
-The settings that you configure here are part of the default device policy for Windows 10. All users that connect a Windows 10 device, including mobile devices and PCs, by signing in with their work account, will automatically receive these settings. We recommend that you accept the default policy during setup and add policies later that target specific groups of users.
+The settings that you configure here are part of the default device policy for Windows 10. All users who connect a Windows 10 device, including mobile devices and PCs, by signing in with their work account will automatically receive these settings. We recommend that you accept the default policy during setup and add policies later that target specific groups of users.
   
 ## Settings to secure Windows 10 devices
 
@@ -41,7 +41,7 @@ By default all settings are **On**. The following settings are available:
 |Help protect PCs from web-based threats in Microsoft Edge  <br/> |Turns on settings in Edge that help protect users from malicious sites and downloads.  <br/> |
 |Turn off device screen when idle for this amount of time  <br/> |Makes sure that company data is protected if a user is idle. A user may be working in a public location, like a coffee shop, and step away or be distracted for just a moment, leaving their device vulnerable to random glances. This setting lets you control how long the user can be idle before the screen shuts off.  <br/> |
 |Allow users to download apps from Microsoft Store  <br/> |Lets users download and install apps from the Microsoft Store. Apps include everything from games to productivity tools, so we leave this setting **On**, but you can turn it off for extra security.  <br/> |
-|Allow users to access Cortana  <br/> |Cortana can be very helpful! She can turn settings on or off for you, give directions, and make sure you're on time for appointments, so we keep this **On** by default.  <br/> |
+|Allow users to access Cortana  <br/> |Cortana can be very helpful! She can turn settings on or off for you, give directions, and make sure you're on time for appointments, so we keep this setting **On** by default.  <br/> |
 |Allow users to receive Windows tips and advertisements from Microsoft  <br/> |Windows tips can be handy and help orient users when new features are released.  <br/> |
 |Keep Windows 10 devices up to date automatically  <br/> |Makes sure that Windows 10 devices automatically receive the latest updates.  <br/> |
    
