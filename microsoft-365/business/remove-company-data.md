@@ -36,9 +36,9 @@ You can use Microsoft 365 Business to remove company data that your users have o
   
 3. On the **Manage** page, choose or search for a user who's data you want to remove, and choose the name. 
     
-4. On the next pane, select the device or devices from the **Devices** list and on the device pane that opens you can choose to reset the device to factory settings, or remove company data depending on the device type. 
+4. On the next pane, select the device or devices from the **Devices** list. On the device pane that opens, you can choose to reset the device to factory settings or remove company data, depending on the device type. 
     
-    ![On the remove comapany data pane, select the device from which you want to remove the data.](media/resetorremove.png)
+    ![On the remove company data pane, select the device from which you want to remove the data.](media/resetorremove.png)
   
 5. On the confirmation pane, choose **Confirm** \> **Close**.
     
