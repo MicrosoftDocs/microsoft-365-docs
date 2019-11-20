@@ -188,10 +188,10 @@ conceptualContent:
           text: Sign up for Microsoft 365 Business
         - url: migrate-to-microsoft-365-business.md
           itemType: how-to-guide
-          text: Migrate from Office 365 Business Premium to Microsoft 365 Business
+          text: Migrate to Microsoft 365 Business from Office 365 Business Premium 
         - url: migrate-from-e3.md
           itemType: how-to-guide
-          text: Migrate from Office 365 E3 to Microsoft 365 Business
+          text: Migrate to Microsoft 365 Business from Office 365 E3 
         - url: migrate-from-microsoft-365-business-to-microsoft-365-enterprise.md
           itemType: how-to-guide
           text: Migrate from Microsoft 365 Business to Microsoft 365 Enterprise E3
