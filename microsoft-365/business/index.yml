@@ -197,7 +197,7 @@ conceptualContent:
           text: View my bill
       # footerLink (optional)
       footerLink:
-        url: https://docs.microsoft.com/microsoft-365/security/
+        url: microsoft-365-business-overview.md
         text: See more 
   
 
