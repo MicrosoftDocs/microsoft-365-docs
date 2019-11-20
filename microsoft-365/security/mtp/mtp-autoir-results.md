@@ -30,7 +30,7 @@ You can open the investigation details view by [selecting an item in the Action 
 
 ### Select an item in the Action center
 
-1. Go to [https://securityoperations.microsoft.com](https://securityoperations.microsoft.com) and sign in. 
+1. Go to [https://security.microsoft.com](https://security.microsoft.com) and sign in. 
 
 2. In the navigation pane, choose **Action center**. 
 
@@ -38,7 +38,7 @@ You can open the investigation details view by [selecting an item in the Action 
 
 ### Open an investigation from an incident details page
 
-1. Go to [https://securityoperations.microsoft.com](https://securityoperations.microsoft.com) and sign in. 
+1. Go to [https://security.microsoft.com](https://security.microsoft.com) and sign in. 
 
 2. In the navigation pane, choose **Incidents**. 
 
