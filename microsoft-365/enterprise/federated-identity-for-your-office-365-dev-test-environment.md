@@ -51,8 +51,6 @@ There are five phases to setting up this dev/test environment:
 > [!NOTE]
 > You cannot configure this test environment with an Azure Trial subscription. 
   
-## Phase 1: Create the simulated enterprise test environment with password hash synchronization
-
 ## Phase 1: Configure password hash synchronization for your Microsoft 365 test environment
 
 Follow the instructions in [password hash synchronization for Microsoft 365](password-hash-sync-m365-ent-test-environment.md). Here is your resulting configuration.
