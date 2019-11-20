@@ -42,7 +42,7 @@ Microsoft is launching self-service purchase for Power BI on January 14, 2020, t
 
 ### Will self-service purchase be enabled for services beyond the Power Platform products?
 
-At this time, only the Power Platform family products are being offered through self-service purchase.
+At this time, only the Power Platform family products is being offered through self-service purchase.
 
 ## Making a self-service purchase
 
