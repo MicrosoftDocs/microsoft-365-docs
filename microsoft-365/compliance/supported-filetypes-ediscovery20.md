@@ -79,7 +79,7 @@ Advanced eDiscovery supports many file types to many different levels, which are
 
 ## Image
 
-| Mime type | File identification | Metadata extraction | OCR Text extraction | Native viewer | Annotate viewer | Possible Extensions |
+| Mime type | File identification | Metadata extraction | OCR text extraction | Native viewer | Annotate viewer | Possible Extensions |
 | :- |  :- |  :- |  :- |  :- |  :- |  :- |
 | image/bmp | Yes | Yes | Yes | Yes | Yes | .bmp |
 | image/emf | Yes | Yes | Yes | Yes | Yes | .emf |
