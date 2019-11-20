@@ -1,7 +1,7 @@
 ### YamlMime:Hub
 
 title: Microsoft 365 Enterprise documentation and resources # < 60 chars
-summary: Deploy the complete, intelligent solution that empowers everyone to be creative and work together securely. # < 160 chars
+summary: Best-in-class productivity apps with intelligent cloud services that transform the way you work. # < 160 chars
 # brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-platform | sql | sql-server | vs | visual-studio | windows | xamarin
 brand: m365
 
@@ -65,7 +65,7 @@ conceptualContent:
         - url: https://docs.microsoft.com/windows/deployment/
           itemType: get-started
           text: Windows 10 Enterprise
-        - url: https://docs.microsoft.com/deployoffice/deployment-guide-for-office-365-proplus
+        - url: https://docs.microsoft.com/deployoffice/plan-office-365-proplus
           itemType: deploy
           text: Office 365 ProPlus
         - url: https://docs.microsoft.com/intune/
@@ -120,5 +120,5 @@ additionalContent:
           url: https://docs.microsoft.com/microsoft-365/security/index
         # Card
         - title: Microsoft 365 technical community
-          summary: Connect with your peers on Microsoft 365 Enterprise questions or share best practices.
+          summary: Connect and collaborate with peers and experts in the Microsoft Tech Community and share Microsoft 365 best practices.
           url: https://techcommunity.microsoft.com/t5/Microsoft-365/ct-p/microsoft365
