@@ -30,10 +30,10 @@ description: "Learn how to set  up conditional access policies for Microsoft 365
 These policies require admins and users to enter a second form of authentication (called multifactor authentication, or MFA) when certain conditions are met. For example, if a user is signing in from a different country, the sign-in might be considered risky and the user must provide an additional form of authentication. 
 
 Currently, baseline policies include the following:
-- **Require MFA for admins** — Requires multi-factor authentication for the most privileged administrator roles, including global administrator.
-- **End user protection** — Requires multi-factor authentication for users only when a sign-in is risky. 
-- **Block legacy authentication** — Older client apps and some new apps don't use newer, more secure, authentication protocols. These older apps can bypass conditional access policies and gain unauthorized access to your environment. This policy blocks access from clients that don't support conditional access. 
-- **Require MFA for Service Management** — Requires multi-factor authentication for access to management tools, including Azure portal (where you configure baseline policies). 
+- **Require MFA for admins** &ndash; Requires multi-factor authentication for the most privileged administrator roles, including global administrator.
+- **End user protection** &ndash; Requires multi-factor authentication for users only when a sign-in is risky. 
+- **Block legacy authentication** &ndash; Older client apps and some new apps don't use newer, more secure, authentication protocols. These older apps can bypass conditional access policies and gain unauthorized access to your environment. This policy blocks access from clients that don't support conditional access. 
+- **Require MFA for Service Management** &ndash; Requires multi-factor authentication for access to management tools, including Azure portal (where you configure baseline policies). 
 
 Microsoft recommends you enable all of these baseline policies. After these policies are enabled, admins and users will be prompted to register for Azure Multii-Factor authentication.
 
