@@ -119,6 +119,21 @@ $product = Get-MSCommerceProductPolicies -PolicyId AllowSelfServicePurchase | wh
 Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $product.ProductID -Enabled $false
 ```
 
+## Troubleshooting
+
+**Problem**
+
+You see the following error message:
+
+    HandleError : Failed to retrieve policy with PolicyId 'AllowSelfServicePurchase', ErrorMessage - The underlying
+    connection was closed: An unexpected error occurred on a send.
+
+This may be due to an older version of Transport Layer Security (TLS). To connect this service you need to use TLS 1.2 or greater
+
+**Solution**
+
+Upgrade to TLS 1.2: [https://docs.microsoft.com/configmgr/core/plan-design/security/enable-tls-1-2](https://docs.microsoft.com/configmgr/core/plan-design/security/enable-tls-1-2)
+
 <!--
 ## Uninstall the MSCommerce module
 

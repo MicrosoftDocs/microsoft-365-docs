@@ -42,13 +42,13 @@ Download an [infographic](m365-campaigns-protect-campaign-infographic.md) with t
 ## Set up iPhones and Android devices
 All users you add to your environment will need to take a few minutes to [setup iPhones and Android devices](../business/set-up-mobile-devices.md?toc=%2Fmicrosoft-365%2Fcampaigns%2Ftoc.json) to work securely:
 - Set up devices to use multi-factor authentication with the authenticator app.
-- Use Microsoft mobile apps, including Outlook Mobile, Word, OneDrive, and other Microsoft apps from the app store. The native mail apps that are included on iPhones and Android devices are not supported. 
+- Use Microsoft mobile apps, including Outlook Mobile, Word, OneDrive, and other Microsoft apps from the app store. The native mail apps that are included on iPhones and Android devices aren't supported. 
 - Require a PIN for users to unlock their device.
 
 After setting these up, your users will be prompted to use the authenticator app when accessing your organization data on these devices, including mail. 
 
 ## Keep BYOD Macs and Windows 10 PCs fresh 
-It's also important that users keep their primary work device up-to-date:
+It's also important that users keep their primary work device up to date:
 - Install the latest versions of Office desktop apps and keep these fresh with updates, when prompted. 
 - Stay on top of operating system updates, such as Windows updates.
 
@@ -68,8 +68,4 @@ Your users might be tempted to share and store your organization files in places
 
 
 ## Set up managed Windows 10 devices
-We recommend that your most important staff members use freshly acquired Windows 10 devices that you manage. We'll show you how to [manage and secure these devices](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json). This ensures that staff members that are the highest value target to hackers receive the most protection. 
-
-
-
-  
+We recommend that your most important staff members use freshly acquired Windows 10 devices that you manage. We'll show you how to [manage and secure these devices](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json). This ensures that staff members who are the highest value target to hackers receive the most protection. 
