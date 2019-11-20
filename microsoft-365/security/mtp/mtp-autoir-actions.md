@@ -29,7 +29,7 @@ During and after an automated investigation in Microsoft Threat Protection, depe
 
 ![Action Center](../images/air-actioncenter.png)
 
-1. Go to [https://securityoperations.microsoft.com](https://securityoperations.microsoft.com) and sign in. 
+1. Go to [https://security.microsoft.com](https://security.microsoft.com) and sign in. 
 
 2. In the navigation pane, choose **Action center**. 
 

@@ -32,7 +32,7 @@ Automated investigation and remediation (AIR) capabilities, such as those includ
 
 4.	Repeating the process as necessary for other alerts
 
-In Microsoft Threat Protection, investigations can be done on devices (also referred to as endpoints), user accounts, and mailboxes. AIR capabilities correlate signals across [Azure Advanced Threat Protection](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) (Azure ATP) for your user identities, [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations) (Defender ATP) for your devices (also referred to as endpoints), and [Office 365 Advanced Threat Protection](https://docs.microsoft.com/office365/securitycompliance/office-365-atp) (Office 365 ATP) for your Office files and email. 
+In Microsoft Threat Protection, investigations can be done on devices (also referred to as endpoints), user accounts, and mailboxes. AIR capabilities correlate signals across [Azure Advanced Threat Protection](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) (Azure ATP) for your user identities, [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations) (Defender ATP) for your devices (also referred to as endpoints), and [Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)  (Office 365 ATP) for your Office files and email. 
 
 AIR enables your security operations team to:
 

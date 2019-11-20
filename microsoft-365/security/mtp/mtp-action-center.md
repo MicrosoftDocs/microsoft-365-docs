@@ -27,7 +27,7 @@ In Microsoft Threat Protection, the Action center provides a view of current and
 
 ## Visit the Action center
 
-1. Go to [https://securityoperations.microsoft.com](https://securityoperations.microsoft.com) and sign in. 
+1. Go to [https://security.microsoft.com](https://security.microsoft.com) and sign in. 
 
 2. In the navigation pane, choose **Action center**. 
 
