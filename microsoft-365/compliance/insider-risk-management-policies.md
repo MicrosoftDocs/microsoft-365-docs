@@ -1,7 +1,7 @@
 ---
-title: Insider risk policies
-description: Learn about Insider Risk in Microsoft 365
-keywords: Microsoft 365, Insider Risk, risk management, compliance
+title: Insider risk management policies (preview)
+description: Learn about insider risk management policies in Microsoft 365
+keywords: Microsoft 365, insider risk management, risk management, compliance
 localization_priority: Normal
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -12,9 +12,9 @@ audience: itpro
 ms.collection: m365-security-compliance
 ---
 
-# Insider risk policies
+# Insider risk management policies (preview)
 
-Insider risk policies determine which employees are monitored and which types of risk signals are configured for alerts. You can quickly create a policy that applies to all users in your organization, or define individual users or groups for management in a policy. Policies support content priority that allow you to focus policy conditions on multiple or specific Microsoft Teams, SharePoint sites, data sensitivity types, and data labels. You can also choose specific alert signals and how much weight they are assigned within a policy, effectively determining the weight of each alert trigger in the policy. Policies windows allow you to define the time frame to apply the policy to alert activities and are used to determine the duration of the policy once activated.
+Insider risk management policies determine which employees are monitored and which types of risk signals are configured for alerts. You can quickly create a policy that applies to all users in your organization, or define individual users or groups for management in a policy. Policies support content priority that allow you to focus policy conditions on multiple or specific Microsoft Teams, SharePoint sites, data sensitivity types, and data labels. You can also choose specific alert signals and how much weight they are assigned within a policy, effectively determining the weight of each alert trigger in the policy. Policies windows allow you to define the time frame to apply the policy to alert activities and are used to determine the duration of the policy once activated.
 
 ## Policy dashboard
 
@@ -22,45 +22,49 @@ The policy dashboard allows you to quickly see the policies in your organization
 
 - **Policy name**: The name assigned to the policy in the policy wizard.
 - **Active alerts**: The number of active alerts for each policy.
-- **Total confirmed alerts**: The number of confirmed alerts that have opened a case for the policy.
-- **Total actioned alerts**: ??
-- **Policy effectiveness**:
-- **Active status**:
+- **Total confirmed alerts**: The number of confirmed alerts that opened a new case for the policy.
+- **Total actioned alerts**: TALHAH - ?
+- **Policy effectiveness**: TALHAH - ?
+- **Active status**: TALHAH - can you have a policy that is NOT active?
 
-## Policy playbooks
+## Policy templates
 
-Insider risk playbooks are pre-defined templates that define the types of risk signals monitored by a policy. Each policy must have a playbook assigned in the policy creation wizard before the policy is created. The following playbooks are available:
+Insider risk management templates are pre-defined policy conditions that define the types of risk signals monitored by a policy. Each policy must have a template assigned in the policy creation wizard before the policy is created. The following playbooks are available:
 
-- **Depart employee data theft**: When employees leave your organization, there are specific risk signals that typically...
-- **Data leaks**: 
-- **Security control violations**: 
-- **HR policy violations**: 
+- **Departing employee data theft**: When employees leave your organization, there are specific risk signals that are typically associated with data theft by departing employees. This policy template prioritizes these signals and focuses detection and alerts to this risk area. TALHAH - DETAILS?
+- **Data leaks**: TALHAH - DETAILS?
+- **Security violation on laptop/PC**: TALHAH - DETAILS?
+- **Offensive language in communication**: TALHAH - DETAILS?
 
 ## Create a new policy
 
-To create a new insider risk management policy, complete the following steps:
+To create a new insider risk management policy, you'll use the policy wizard in **Insider risk management** solution in the Microsoft 365 compliance center.
 
-1. In the Microsoft 365 compliance center, go to **Insider risk management** and select the **Policies** tab.
+Complete the following steps to create a new policy:
+
+1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select the **Policies** tab.
 2. Select **Add Policy** to open the policy wizard
 3. On the **Assign policy name** page, complete the following fields, and then select **Next**:
     - **Name (required)**: Enter a friendly name for the policy
     - **Description (optional)**: Enter a description for the policy.
-    - **Select playbook (required)**: Select one of the playbooks to define the types of signals monitored by the policy.
+    - **Select template (required)**: Select one of the templates to define the types of signals monitored by the policy.
 4. On the **Users** page, select **Add user or group** to define which users are subject to the policy. Select **Next** to continue.
-5. On the **Content priority** page, assign the sources for user activities and then select **Next**:
-    - Microsoft Teams
-    - SharePoint sites
-    - Sensitivity type
-    - Labels
-6. On the **Choose alert indicators** page, select one or more alerts and define the policy weighting for each.
-7. On the **Monitoring window** page, choose the time period for the policy. Select **Next** to continue.
+5. On the **Content priority** page, assign the sources for user activities in one or more of the content sources and then select **Next**:
+    - Microsoft Teams: Select **Add Teams group** and select the Teams organization you want to prioritize. For example, "group1@teams.com".
+    - SharePoint sites: Select **Add SharePoint site** and select the SharePoint organization you want to prioritize. For example, "group1@contoso.sharepoint.com/sites/group1".
+    - Sensitivity type: Select **Add sensitivity type** and select the sensitivity type you want to prioritize. For example, "U.S. Bank Account Number" and "Credit Card Number".
+    - Labels: Select **Add label** and select the label you want to prioritize. For example, "Confidential" and "Secret".
+6. On the **Choose alert indicators** page, select one or more alerts and define the policy weighting for each. TALHAH - CAN'T SELECT, WHAT IF YOU DON'T SELECT?
+7. On the **Monitoring window** page, choose the time period for the policy. Select **Next** to continue. TALHAH - DEFAULT SETTINGS? DETAILS FOR CHECK ACTIVITY POST TERMINATION?
 8. On the **Review** page, review the settings you've chosen for the policy. Select **Edit** to change any of the policy values or select **Submit** to create and activate the policy.
 
 ## Manage a policy
 
-To manage an existing insider risk management policy, complete the following steps:
+To manage an existing insider risk management policy, you'll use the policy wizard in **Insider risk management** solution in the Microsoft 365 compliance center. 
 
-1. In the Microsoft 365 compliance center, go to **Insider risk management** and select the **Policies** tab.
+Complete the following steps to manage an existing policy:
+
+1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select the **Policies** tab.
 2. On the policy dashboard, select the policy you want to manage.
 3. On the policy details page, select **Edit policy**
 4. In the policy wizard, you can edit the following fields:
@@ -82,11 +86,11 @@ To manage an existing insider risk management policy, complete the following ste
 ## Delete a policy
 
 > [!IMPORTANT]
-> Deleting a policy does remove existing policy match alerts?
+> TALHAH - Deleting a policy does remove existing policy match alerts?
 
 To delete an existing insider risk management policy, complete the following steps:
 
-1. In the Microsoft 365 compliance center, go to **Insider risk management** and select the **Policies** tab.
+1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select the **Policies** tab.
 2. On the policy dashboard, select the policy you want to manage.
 3. Select **Delete** on the dashboard toolbar.
 4. On the **Delete** dialog, Select **Yes** to delete the policy, or select **Cancel** to close the dialog.
